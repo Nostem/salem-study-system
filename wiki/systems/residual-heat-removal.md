@@ -22,7 +22,7 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 | Time to Cool (single train requirement) | 72 hr | UFSAR T5.5-1 |
 | Decay Heat at 20 hr After Shutdown | 72.1 x 10⁶ Btu/hr (original design) | UFSAR T5.5-1 |
 | CCW Supply Temperature (design) | 95°F | UFSAR T5.5-1 |
-| RWST Boron Concentration | ~2,000 ppm | UFSAR T5.5-1 |
+| RWST Boron Concentration | ~2000 ppm | UFSAR T5.5-1 |
 | Plant Design Life | 40 years | UFSAR T5.5-1 |
 
 ## Heat Exchangers
@@ -48,7 +48,7 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 | Design Pressure | 600 psig | UFSAR T5.5-1 |
 | Design Temperature | 400°F | UFSAR T5.5-1 |
 | Shutoff Head | 170 psi | UFSAR T5.5-1 |
-| Design Flow Rate | 3,000 gpm | UFSAR T5.5-1 |
+| Design Flow Rate | 3000 gpm | UFSAR T5.5-1 |
 | Design Head | 350 ft | UFSAR T5.5-1 |
 | Available NPSH at Design Flow | 25 ft | UFSAR T5.5-1 |
 | Fluid Temperature Range | 40–350°F | UFSAR T5.5-1 |
@@ -60,7 +60,7 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 |---------|----------|-------------|--------|
 | Pump Suction (isolated loop) | 450 psig* | 400°F | UFSAR T5.5-1 |
 | Pump Discharge (isolated loop) | 600 psig | 400°F | UFSAR T5.5-1 |
-| Isolation Valves and Piping (RCS boundary) | 2,485 psig | 650°F | UFSAR T5.5-1 |
+| Isolation Valves and Piping (RCS boundary) | 2485 psig | 650°F | UFSAR T5.5-1 |
 
 *Unit 2 piping downstream of 2RH75 & 76 designed to 600 psig.
 

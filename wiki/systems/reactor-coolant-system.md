@@ -25,16 +25,16 @@ The Reactor Coolant System (RCS) transfers heat generated in the reactor core to
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Design Pressure | 2,485 psig | UFSAR T5.1-1 |
-| Nominal Operating Pressure | <span class="val-normal">2,235 psig</span> | UFSAR T5.1-1 |
+| Design Pressure | 2485 psig | UFSAR T5.1-1 |
+| Nominal Operating Pressure | <span class="val-normal">2235 psig</span> | UFSAR T5.1-1 |
 | Design Temperature | 650°F | UFSAR T5.2-3 |
-| Hydrostatic Test Pressure | 3,107 psig | UFSAR T5.2-3 |
-| Total Heat Output (100% power) | 11,844 x 10⁶ Btu/hr | UFSAR T5.1-1 |
+| Hydrostatic Test Pressure | 3107 psig | UFSAR T5.2-3 |
+| Total Heat Output (100% power) | 11844 x 10⁶ Btu/hr | UFSAR T5.1-1 |
 | Plant Design Life | 40 years | UFSAR T5.1-1 |
-| Total System Volume (ambient), Unit 1 | 12,071 ft³ | UFSAR T5.1-1 |
-| Total System Volume (ambient), Unit 2 | 13,011 ft³ | UFSAR T5.1-1 |
-| System Liquid Volume (ambient), Unit 1 | 11,351 ft³ | UFSAR T5.1-1 |
-| System Liquid Volume (ambient), Unit 2 | 12,291 ft³ | UFSAR T5.1-1 |
+| Total System Volume (ambient), Unit 1 | 12071 ft³ | UFSAR T5.1-1 |
+| Total System Volume (ambient), Unit 2 | 13011 ft³ | UFSAR T5.1-1 |
+| System Liquid Volume (ambient), Unit 1 | 11351 ft³ | UFSAR T5.1-1 |
+| System Liquid Volume (ambient), Unit 2 | 12291 ft³ | UFSAR T5.1-1 |
 
 ## Reactor Coolant Temperatures (Full Power)
 
@@ -53,35 +53,35 @@ The Reactor Coolant System (RCS) transfers heat generated in the reactor core to
 |-----------|--------|--------|--------|
 | Total Design Flow (High Tavg) | 125.3 x 10⁶ lb/hr | 125.8 x 10⁶ lb/hr | UFSAR T5.1-1 |
 | Total Design Flow (Low Tavg) | 127.3 x 10⁶ lb/hr | 125.9 x 10⁶ lb/hr | UFSAR T5.1-1 |
-| Best Estimate Flow per Loop, Unit 1 | 94,200 gpm | — | UFSAR T5.2-2 |
-| Best Estimate Flow per Loop, Unit 2 | 94,800 gpm | — | UFSAR T5.2-2 |
+| Best Estimate Flow per Loop, Unit 1 | 94200 gpm | — | UFSAR T5.2-2 |
+| Best Estimate Flow per Loop, Unit 2 | 94800 gpm | — | UFSAR T5.2-2 |
 
 ## Pressure Control Setpoints
 
 | Parameter | Value (psig) | Source |
 |-----------|-------------|--------|
-| Design Pressure | 2,485 | UFSAR T5.2-1 |
-| Operating Pressure | <span class="val-normal">2,235</span> | UFSAR T5.2-1 |
-| Safety Valves (lift) | <span class="val-trip">2,485</span> | UFSAR T5.2-1 |
-| PORVs (lift / reset) | <span class="val-trip">2,335</span> / 2,315 | UFSAR T5.2-1, T5.2-8 |
-| High Pressure Trip | <span class="val-trip">2,385</span> | UFSAR T5.2-1 |
-| High Pressure Alarm | <span class="val-alarm">2,385</span> | UFSAR T5.2-1 |
-| Low Pressure Trip | <span class="val-trip">1,865</span> | UFSAR T5.2-1 |
-| Low Pressure Alarm | <span class="val-alarm">1,865</span> | UFSAR T5.2-1 |
-| Pressurizer Spray (begin to open) | <span class="val-normal">2,260</span> | UFSAR T5.2-1 |
-| Pressurizer Spray (full open) | <span class="val-normal">2,310</span> | UFSAR T5.2-1 |
-| Proportional Heaters (begin) | <span class="val-normal">2,250</span> | UFSAR T5.2-1 |
-| Proportional Heaters (full operation) | <span class="val-normal">2,220</span> | UFSAR T5.2-1 |
-| Backup Heaters On | <span class="val-normal">2,210</span> | UFSAR T5.2-1 |
-| Hydrostatic Test Pressure | 3,107 | UFSAR T5.2-1 |
+| Design Pressure | 2485 | UFSAR T5.2-1 |
+| Operating Pressure | <span class="val-normal">2235</span> | UFSAR T5.2-1 |
+| Safety Valves (lift) | <span class="val-trip">2485</span> | UFSAR T5.2-1 |
+| PORVs (lift / reset) | <span class="val-trip">2335</span> / 2315 | UFSAR T5.2-1, T5.2-8 |
+| High Pressure Trip | <span class="val-trip">2385</span> | UFSAR T5.2-1 |
+| High Pressure Alarm | <span class="val-alarm">2385</span> | UFSAR T5.2-1 |
+| Low Pressure Trip | <span class="val-trip">1865</span> | UFSAR T5.2-1 |
+| Low Pressure Alarm | <span class="val-alarm">1865</span> | UFSAR T5.2-1 |
+| Pressurizer Spray (begin to open) | <span class="val-normal">2260</span> | UFSAR T5.2-1 |
+| Pressurizer Spray (full open) | <span class="val-normal">2310</span> | UFSAR T5.2-1 |
+| Proportional Heaters (begin) | <span class="val-normal">2250</span> | UFSAR T5.2-1 |
+| Proportional Heaters (full operation) | <span class="val-normal">2220</span> | UFSAR T5.2-1 |
+| Backup Heaters On | <span class="val-normal">2210</span> | UFSAR T5.2-1 |
+| Hydrostatic Test Pressure | 3107 | UFSAR T5.2-1 |
 
 ## Key Components
 
 - **[[Reactor Vessel]]**: Cylindrical vessel with hemispherical heads, contains core and internals. 4 inlet/4 outlet nozzles. (UFSAR 5.1, 5.4)
-- **[[Pressurizer]]**: Vertical cylindrical vessel, 84" ID. Maintains liquid-vapor equilibrium for pressure control. 1,800 kW heaters, 800 gpm max spray. Connected to one hot leg via 14" surge line. (UFSAR 5.1, T5.2-4)
-- **[[Steam Generators]]**: 4 vertical shell and U-tube evaporators with integral moisture separation. Unit 1: Model F (5,626 U-tubes, Inconel). Unit 2: AREVA NP Model 61/19T (5,048 U-tubes, Inconel 690 TT). (UFSAR 5.1, T5.2-5)
-- **[[Reactor Coolant Pumps]]**: 4 vertical single-stage mixed-flow pumps, Model 93A. 6,000 HP motors, 88,500 gpm capacity, 277 ft developed head, 1,180 RPM. Controlled leakage seal assembly. (UFSAR 5.1, T5.2-6)
-- **Pressurizer Relief Tank**: Carbon steel, 1,800 ft³ total volume. Design pressure 100 psig. Two rupture discs (100 psig) discharge to containment. Normal water temperature at containment ambient (120°F max). (UFSAR 5.1, T5.2-4)
+- **[[Pressurizer]]**: Vertical cylindrical vessel, 84" ID. Maintains liquid-vapor equilibrium for pressure control. 1800 kW heaters, 800 gpm max spray. Connected to one hot leg via 14" surge line. (UFSAR 5.1, T5.2-4)
+- **[[Steam Generators]]**: 4 vertical shell and U-tube evaporators with integral moisture separation. Unit 1: Model F (5626 U-tubes, Inconel). Unit 2: AREVA NP Model 61/19T (5048 U-tubes, Inconel 690 TT). (UFSAR 5.1, T5.2-5)
+- **[[Reactor Coolant Pumps]]**: 4 vertical single-stage mixed-flow pumps, Model 93A. 6000 HP motors, 88500 gpm capacity, 277 ft developed head, 1180 RPM. Controlled leakage seal assembly. (UFSAR 5.1, T5.2-6)
+- **Pressurizer Relief Tank**: Carbon steel, 1800 ft³ total volume. Design pressure 100 psig. Two rupture discs (100 psig) discharge to containment. Normal water temperature at containment ambient (120°F max). (UFSAR 5.1, T5.2-4)
 
 ## RCS Piping
 
@@ -92,12 +92,12 @@ The Reactor Coolant System (RCS) transfers heat generated in the reactor core to
 | Pump Suction Piping ID | 31 in | UFSAR T5.2-7 |
 | Surge Line ID, Unit 1 | 11.500 in | UFSAR T5.2-7 |
 | Surge Line ID, Unit 2 | 11.188 in | UFSAR T5.2-7 |
-| Total Water Volume (all 4 loops + surge line) | 1,455 ft³ | UFSAR T5.2-7 |
+| Total Water Volume (all 4 loops + surge line) | 1455 ft³ | UFSAR T5.2-7 |
 
 ## Pressure Relief
 
-- **Safety Valves:** 3 per unit, Crosby HB-BP-86, set at 2,485 psig, rated capacity 420,000 lb/hr each (saturated steam). 6" inlet x 6" outlet. (UFSAR T5.2-8)
-- **PORVs:** 2 per unit, Copes-Vulcan diaphragm-operated, set at 2,335 psig (reset 2,315 psig), rated capacity 210,000 lb/hr each. 2" valve with 3" connections. (UFSAR T5.2-8)
+- **Safety Valves:** 3 per unit, Crosby HB-BP-86, set at 2485 psig, rated capacity 420000 lb/hr each (saturated steam). 6" inlet x 6" outlet. (UFSAR T5.2-8)
+- **PORVs:** 2 per unit, Copes-Vulcan diaphragm-operated, set at 2335 psig (reset 2315 psig), rated capacity 210000 lb/hr each. 2" valve with 3" connections. (UFSAR T5.2-8)
 - **PORV Block Valves:** 2 per unit, Velan 3" motor-operated gate valves with Limitorque operators. (UFSAR T5.2-8)
 - All safety/relief valves discharge to the pressurizer relief tank.
 

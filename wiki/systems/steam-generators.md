@@ -19,12 +19,12 @@ The steam generators transfer heat from the reactor coolant (primary side) to th
 |-----------|-------|--------|
 | Number | 4 | UFSAR T5.2-5A |
 | Model | Westinghouse Model F (replacement) | UFSAR T5.2-5A |
-| Design Pressure (primary/secondary) | 2,485 / 1,185 psig | UFSAR T5.2-5A |
-| Primary Hydrostatic Test Pressure (cold) | 3,107 psig | UFSAR T5.2-5A |
+| Design Pressure (primary/secondary) | 2485 / 1185 psig | UFSAR T5.2-5A |
+| Primary Hydrostatic Test Pressure (cold) | 3107 psig | UFSAR T5.2-5A |
 | Design Temperature (primary/secondary) | 650 / 600°F | UFSAR T5.2-5A |
-| Heat Transfer Surface Area | 55,050 ft² | UFSAR T5.2-5A |
-| Heat Transferred | 2,961 x 10⁶ Btu/hr | UFSAR T5.2-5A |
-| Number of U-tubes | 5,626 | UFSAR T5.2-5A |
+| Heat Transfer Surface Area | 55050 ft² | UFSAR T5.2-5A |
+| Heat Transferred | 2961 x 10⁶ Btu/hr | UFSAR T5.2-5A |
+| Number of U-tubes | 5626 | UFSAR T5.2-5A |
 | U-tube OD | 0.688 in | UFSAR T5.2-5A |
 | Tube Wall Thickness (min) | 0.041 in | UFSAR T5.2-5A |
 | Tube Material | Inconel | UFSAR 5.1 |
@@ -43,17 +43,17 @@ The steam generators transfer heat from the reactor coolant (primary side) to th
 |-----------|-------|--------|
 | Number | 4 | UFSAR T5.2-5 |
 | Model | AREVA NP Model 61/19T (replacement) | UFSAR T5.2-5 |
-| Design Pressure (primary/secondary) | 2,485 / 1,185 psig | UFSAR T5.2-5 |
-| Primary Hydrostatic Test Pressure (cold) | 3,107 psig | UFSAR T5.2-5 |
+| Design Pressure (primary/secondary) | 2485 / 1185 psig | UFSAR T5.2-5 |
+| Primary Hydrostatic Test Pressure (cold) | 3107 psig | UFSAR T5.2-5 |
 | Design Temperature (primary/secondary) | 650 / 600°F | UFSAR T5.2-5 |
-| Heat Transfer Surface Area | 66,236 ft² | UFSAR T5.2-5 |
-| Heat Transferred | 2,961 x 10⁶ Btu/hr | UFSAR T5.2-5 |
-| Number of U-tubes | 5,048 | UFSAR T5.2-5 |
+| Heat Transfer Surface Area | 66236 ft² | UFSAR T5.2-5 |
+| Heat Transferred | 2961 x 10⁶ Btu/hr | UFSAR T5.2-5 |
+| Number of U-tubes | 5048 | UFSAR T5.2-5 |
 | U-tube OD | 0.750 in | UFSAR T5.2-5 |
 | Tube Wall Thickness (min) | 0.043 in | UFSAR T5.2-5 |
 | Tube Material | Inconel 690 thermally treated | UFSAR 5.1 |
 | Shell OD (upper/lower max) | 175.75 / 135.0 in | UFSAR T5.2-5 |
-| RC Volume (rated load) | 1,201 ft³ | UFSAR T5.2-5 |
+| RC Volume (rated load) | 1201 ft³ | UFSAR T5.2-5 |
 | Steam Pressure at Full Load (High Tavg) | 900 psia | UFSAR T5.2-5 |
 | Steam Pressure at Full Load (Low Tavg) | 805 psia | UFSAR T5.2-5 |
 | Steam Flow at Full Load | 3.76–3.77 x 10⁶ lb/hr | UFSAR T5.2-5 |
@@ -64,10 +64,10 @@ The steam generators transfer heat from the reactor coolant (primary side) to th
 
 | Feature | Unit 1 (Model F) | Unit 2 (Model 61/19T) |
 |---------|------------------|----------------------|
-| Number of U-tubes | 5,626 | 5,048 |
+| Number of U-tubes | 5626 | 5048 |
 | Tube OD | 0.688 in | 0.750 in |
 | Tube Material | Inconel | Inconel 690 TT |
-| Heat Transfer Area | 55,050 ft² | 66,236 ft² |
+| Heat Transfer Area | 55050 ft² | 66236 ft² |
 | Steam Pressure (High Tavg) | 869 psia | 900 psia |
 | Primary cladding | Austenitic SS (channel heads), Inconel (tubesheet) | Austenitic SS (Type 308L/309L) or Inconel 600 |
 | Max Moisture Carryover | 0.25 wt% | < 0.1 wt% |

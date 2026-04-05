@@ -17,8 +17,8 @@ The reactor vessel contains the reactor core, core support structures, control r
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Design/Operating Pressure | 2,485 / 2,235 psig | UFSAR T5.2-3 |
-| Hydrostatic Test Pressure | 3,107 psig | UFSAR T5.2-3 |
+| Design/Operating Pressure | 2485 / 2235 psig | UFSAR T5.2-3 |
+| Hydrostatic Test Pressure | 3107 psig | UFSAR T5.2-3 |
 | Design Temperature | 650°F | UFSAR T5.2-3 |
 | Overall Height (bottom head OD to top of CRDM adapter) | 43 ft 10 in | UFSAR T5.2-3 |
 | ID at Shell | 173 in | UFSAR T5.2-3 |
@@ -38,11 +38,11 @@ The reactor vessel contains the reactor core, core support structures, control r
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Total Water Volume Below Core | 1,050 ft³ | UFSAR T5.2-3 |
+| Total Water Volume Below Core | 1050 ft³ | UFSAR T5.2-3 |
 | Water Volume in Active Core Region | 665 ft³ | UFSAR T5.2-3 |
-| Total Water Volume to Top of Core | 2,164 ft³ | UFSAR T5.2-3 |
-| Total Water Volume to Nozzle Centerline | 2,959 ft³ | UFSAR T5.2-3 |
-| Total Vessel Water Volume (with core and internals) | 4,945 ft³ | UFSAR T5.2-3 |
+| Total Water Volume to Top of Core | 2164 ft³ | UFSAR T5.2-3 |
+| Total Water Volume to Nozzle Centerline | 2959 ft³ | UFSAR T5.2-3 |
+| Total Vessel Water Volume (with core and internals) | 4945 ft³ | UFSAR T5.2-3 |
 
 ## Construction
 
