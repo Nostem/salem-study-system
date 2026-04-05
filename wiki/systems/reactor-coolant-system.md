@@ -26,7 +26,7 @@ The Reactor Coolant System (RCS) transfers heat generated in the reactor core to
 | Parameter | Value | Source |
 |-----------|-------|--------|
 | Design Pressure | 2,485 psig | UFSAR T5.1-1 |
-| Nominal Operating Pressure | 2,235 psig | UFSAR T5.1-1 |
+| Nominal Operating Pressure | <span class="val-normal">2,235 psig</span> | UFSAR T5.1-1 |
 | Design Temperature | 650°F | UFSAR T5.2-3 |
 | Hydrostatic Test Pressure | 3,107 psig | UFSAR T5.2-3 |
 | Total Heat Output (100% power) | 11,844 x 10⁶ Btu/hr | UFSAR T5.1-1 |
