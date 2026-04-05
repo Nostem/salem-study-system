@@ -1,17 +1,26 @@
 ---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../layouts/ArticleLayout.astro';
 
+const articles = await getCollection('wiki');
+const indexArticle = articles.find((a) => a.id === '_index');
+
+let Content;
+let headings: { depth: number; slug: string; text: string }[] = [];
+
+if (indexArticle) {
+  const rendered = await render(indexArticle);
+  Content = rendered.Content;
+  headings = rendered.headings;
+}
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<ArticleLayout
+  title="Salem Study Wiki"
+  category=""
+  status="verified"
+  slug="_index"
+  headings={headings}
+>
+  {Content ? <Content /> : <p>Welcome to the Salem Study Wiki. Add articles to get started.</p>}
+</ArticleLayout>

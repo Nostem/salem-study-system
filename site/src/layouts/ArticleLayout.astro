@@ -1,0 +1,77 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Sidebar from '../components/Sidebar.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import DraftBadge from '../components/DraftBadge.astro';
+import MobileNav from '../components/MobileNav.astro';
+
+interface Props {
+  title: string;
+  category: string;
+  status: 'draft' | 'verified';
+  slug: string;
+  headings: { depth: number; slug: string; text: string }[];
+}
+
+const { title, category, status, slug, headings } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title={title}>
+  <!-- Mobile nav drawer -->
+  <div class="lg:hidden">
+    <MobileNav>
+      <Sidebar currentSlug={slug} />
+    </MobileNav>
+  </div>
+
+  <!-- Top bar -->
+  <header class="flex items-center justify-between px-5 h-12 border-b border-[#1a2035] bg-[#0d1220] sticky top-0 z-30">
+    <div class="flex items-center gap-3">
+      <!-- Hamburger (mobile only) -->
+      <button onclick="openMobileNav()" class="lg:hidden text-[#6b7280] text-lg bg-transparent border-none cursor-pointer mr-1">
+        ☰
+      </button>
+      <!-- Logo -->
+      <a href={base} class="flex items-center gap-3 no-underline">
+        <div class="w-7 h-7 border-[1.5px] border-[#2a6f97] rounded-full flex items-center justify-center">
+          <div class="w-3 h-3 border border-[#2a6f97] rotate-45"></div>
+        </div>
+        <span class="text-sm font-semibold text-[#e0e4ea] tracking-[1.5px]">SALEM STUDY SYSTEM</span>
+      </a>
+    </div>
+    <button
+      id="search-trigger"
+      class="bg-[#111827] border border-[#1a2035] rounded-md px-3.5 py-1.5 text-xs text-[#6b7280] w-60 text-left cursor-pointer hidden sm:block"
+    >
+      ⌘K &nbsp;Search articles...
+    </button>
+    <!-- Mobile search icon -->
+    <button id="search-trigger-mobile" class="sm:hidden text-[#6b7280] text-sm bg-transparent border-none cursor-pointer">
+      ⌕
+    </button>
+  </header>
+
+  <div class="flex">
+    <!-- Sidebar (desktop) -->
+    <div class="hidden lg:block">
+      <Sidebar currentSlug={slug} />
+    </div>
+
+    <!-- Main content -->
+    <main class="flex-1 px-8 py-8 max-w-[800px] xl:px-12">
+      <Breadcrumbs category={category} title={title} />
+      <div class="flex items-center gap-2.5 mb-1.5">
+        <h1 class="text-2xl text-[#e0e4ea] font-semibold m-0">{title}</h1>
+        <DraftBadge status={status} />
+      </div>
+      <article class="prose mt-6">
+        <slot />
+      </article>
+    </main>
+
+    <!-- Table of Contents (desktop) -->
+    <TableOfContents headings={headings} />
+  </div>
+</BaseLayout>

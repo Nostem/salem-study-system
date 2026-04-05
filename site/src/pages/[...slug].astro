@@ -1,0 +1,33 @@
+---
+import { getCollection, render } from 'astro:content';
+import ArticleLayout from '../layouts/ArticleLayout.astro';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('wiki');
+  return articles
+    .filter((a) => a.id !== '_index')
+    .map((article) => {
+      const slug = article.id;
+      const category = slug.split('/')[0] ?? 'uncategorized';
+      const title = article.data.title ?? slug.split('/').pop()?.replace(/-/g, ' ') ?? slug;
+      return {
+        params: { slug },
+        props: { article, category, title },
+      };
+    });
+}
+
+const { article, category, title } = Astro.props;
+const { Content, headings } = await render(article);
+const status = article.data.status ?? 'draft';
+---
+
+<ArticleLayout
+  title={title}
+  category={category}
+  status={status}
+  slug={article.id}
+  headings={headings}
+>
+  <Content />
+</ArticleLayout>
