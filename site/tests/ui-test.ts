@@ -308,3 +308,77 @@ test('desktop: TOC rail visible', async ({ browser }) => {
 
   await context.close();
 });
+
+// --- 4. Link Integrity ---
+
+test('all internal links resolve to 200', async ({ page }) => {
+  const checkedLinks = new Set<string>();
+  const brokenLinks: { source: string; href: string; status: number }[] = [];
+
+  for (const pg of pages) {
+    await page.goto(BASE + pg.slug);
+    await page.waitForLoadState('networkidle');
+
+    const links = page.locator(`a[href^="${BASE}"]`);
+    const count = await links.count();
+
+    for (let i = 0; i < count; i++) {
+      const href = await links.nth(i).getAttribute('href');
+      if (!href || checkedLinks.has(href)) continue;
+      checkedLinks.add(href);
+
+      const response = await page.request.get(href);
+      if (response.status() !== 200) {
+        brokenLinks.push({ source: pg.name, href, status: response.status() });
+      }
+    }
+  }
+
+  if (brokenLinks.length > 0) {
+    const report = brokenLinks.map(b => `  ${b.source} → ${b.href} (${b.status})`).join('\n');
+    expect(brokenLinks.length, `Broken links found:\n${report}`).toBe(0);
+  }
+});
+
+// --- 5. Accessibility ---
+
+for (const pg of pages) {
+  test(`accessibility: ${pg.name}`, async ({ page }) => {
+    await page.goto(BASE + pg.slug);
+    await page.waitForLoadState('networkidle');
+
+    const results = await new AxeBuilder({ page })
+      .withTags(['wcag2a', 'wcag2aa'])
+      .analyze();
+
+    const critical = results.violations.filter(v => v.impact === 'critical' || v.impact === 'serious');
+
+    if (critical.length > 0) {
+      const report = critical.map(v =>
+        `  [${v.impact}] ${v.id}: ${v.description}\n    ${v.nodes.map(n => n.html).join('\n    ')}`
+      ).join('\n');
+      console.warn(`Accessibility issues on ${pg.name}:\n${report}`);
+    }
+
+    // Fail on critical violations only
+    const criticalOnly = critical.filter(v => v.impact === 'critical');
+    expect(criticalOnly.length, `Critical accessibility violations on ${pg.name}`).toBe(0);
+  });
+}
+
+// Heading hierarchy check
+for (const pg of pages) {
+  test(`heading hierarchy: ${pg.name}`, async ({ page }) => {
+    await page.goto(BASE + pg.slug);
+    await page.waitForLoadState('networkidle');
+
+    const headings = await page.locator('h1, h2, h3, h4, h5, h6').evaluateAll(els =>
+      els.map(el => parseInt(el.tagName.substring(1)))
+    );
+
+    for (let i = 1; i < headings.length; i++) {
+      const jump = headings[i] - headings[i - 1];
+      expect(jump, `Heading level skipped from h${headings[i - 1]} to h${headings[i]} on ${pg.name}`).toBeLessThanOrEqual(1);
+    }
+  });
+}
