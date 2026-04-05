@@ -1,0 +1,90 @@
+---
+// Pagefind search modal — initialized client-side
+const base = import.meta.env.BASE_URL;
+---
+
+<div id="search-modal" class="fixed inset-0 z-50 hidden">
+  <!-- Backdrop -->
+  <div class="absolute inset-0 bg-black/60" onclick="closeSearch()"></div>
+
+  <!-- Modal -->
+  <div class="relative mx-auto mt-[15vh] w-full max-w-lg bg-[#0d1220] border border-[#1a2035] rounded-lg shadow-2xl overflow-hidden">
+    <div class="p-4">
+      <input
+        id="search-input"
+        type="text"
+        placeholder="Search articles..."
+        class="w-full bg-[#111827] border border-[#1a2035] rounded-md px-4 py-2.5 text-sm text-[#e0e4ea] placeholder-[#6b7280] outline-none focus:border-[#2a6f97]"
+        autocomplete="off"
+      />
+    </div>
+    <div id="search-results" class="max-h-[50vh] overflow-y-auto px-4 pb-4">
+      <!-- Results populated by Pagefind -->
+    </div>
+  </div>
+</div>
+
+<script is:inline define:vars={{ base }}>
+  // Search modal open/close
+  function openSearch() {
+    document.getElementById('search-modal').classList.remove('hidden');
+    document.getElementById('search-input').focus();
+  }
+  function closeSearch() {
+    document.getElementById('search-modal').classList.add('hidden');
+    document.getElementById('search-input').value = '';
+    document.getElementById('search-results').innerHTML = '';
+  }
+
+  // Keyboard shortcut: Cmd+K / Ctrl+K
+  document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+      e.preventDefault();
+      const modal = document.getElementById('search-modal');
+      if (modal.classList.contains('hidden')) {
+        openSearch();
+      } else {
+        closeSearch();
+      }
+    }
+    if (e.key === 'Escape') closeSearch();
+  });
+
+  // Wire up search triggers
+  document.getElementById('search-trigger')?.addEventListener('click', openSearch);
+  document.getElementById('search-trigger-mobile')?.addEventListener('click', openSearch);
+
+  // Initialize Pagefind
+  async function initPagefind() {
+    try {
+      const pagefind = await import(base + 'pagefind/pagefind.js');
+      await pagefind.init();
+
+      const input = document.getElementById('search-input');
+      const results = document.getElementById('search-results');
+
+      input.addEventListener('input', async (e) => {
+        const query = e.target.value;
+        if (!query) {
+          results.innerHTML = '';
+          return;
+        }
+
+        const search = await pagefind.search(query);
+        const items = await Promise.all(search.results.slice(0, 10).map(r => r.data()));
+
+        results.innerHTML = items.map(item => `
+          <a href="${item.url}" class="block px-3 py-2.5 rounded-md hover:bg-[#111827] no-underline mb-1 transition-colors">
+            <div class="text-sm text-[#e0e4ea] font-medium">${item.meta?.title || 'Untitled'}</div>
+            <div class="text-xs text-[#6b7280] mt-0.5 line-clamp-2">${item.excerpt || ''}</div>
+          </a>
+        `).join('');
+      });
+    } catch (e) {
+      // Pagefind not available in dev mode — that's expected
+      console.log('Pagefind not loaded (expected in dev mode)');
+    }
+  }
+
+  initPagefind();
+</script>
