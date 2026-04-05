@@ -1,0 +1,29 @@
+---
+// Mobile nav is a slide-out drawer triggered by hamburger button
+// The sidebar content is reused via a slot
+---
+
+<div id="mobile-overlay" class="fixed inset-0 bg-black/50 z-40 hidden" onclick="closeMobileNav()"></div>
+
+<div id="mobile-drawer" class="fixed top-0 left-0 h-full w-[280px] bg-[#0b1020] border-r border-[#1a2035] z-50 transform -translate-x-full transition-transform duration-200">
+  <div class="flex items-center justify-between px-4 h-12 border-b border-[#1a2035]">
+    <span class="text-sm font-semibold text-[#e0e4ea] tracking-[1px]">SALEM</span>
+    <button onclick="closeMobileNav()" class="text-[#6b7280] text-lg bg-transparent border-none cursor-pointer">&times;</button>
+  </div>
+  <div class="overflow-y-auto h-[calc(100%-48px)]">
+    <slot />
+  </div>
+</div>
+
+<script is:inline>
+  function openMobileNav() {
+    document.getElementById('mobile-drawer').style.transform = 'translateX(0)';
+    document.getElementById('mobile-overlay').classList.remove('hidden');
+  }
+  function closeMobileNav() {
+    document.getElementById('mobile-drawer').style.transform = 'translateX(-100%)';
+    document.getElementById('mobile-overlay').classList.add('hidden');
+  }
+  window.openMobileNav = openMobileNav;
+  window.closeMobileNav = closeMobileNav;
+</script>

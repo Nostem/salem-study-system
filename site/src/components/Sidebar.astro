@@ -1,0 +1,80 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentSlug?: string;
+}
+
+const { currentSlug } = Astro.props;
+
+const articles = await getCollection('wiki');
+
+// Group articles by category (directory)
+const categories: Record<string, { title: string; slug: string; status: string }[]> = {};
+const categoryOrder = ['systems', 'tech-specs', 'exams', 'eops', 'concepts', 'abnormals'];
+const categoryLabels: Record<string, string> = {
+  systems: 'Systems',
+  'tech-specs': 'Tech Specs',
+  exams: 'Exams',
+  eops: 'EOPs',
+  concepts: 'Concepts',
+  abnormals: 'Abnormals',
+};
+
+for (const article of articles) {
+  const slug = article.id;
+  // Skip _index.md
+  if (slug === '_index') continue;
+
+  const category = slug.split('/')[0] ?? 'uncategorized';
+  const title = article.data.title ?? slug.split('/').pop()?.replace(/-/g, ' ') ?? slug;
+  const status = article.data.status ?? 'draft';
+
+  if (!categories[category]) categories[category] = [];
+  categories[category].push({ title, slug, status });
+}
+
+// Sort articles alphabetically within each category
+for (const cat of Object.keys(categories)) {
+  categories[cat].sort((a, b) => a.title.localeCompare(b.title));
+}
+
+const base = import.meta.env.BASE_URL;
+---
+
+<aside id="sidebar" class="w-[240px] min-w-[240px] border-r border-[#1a2035] bg-[#0b1020] geo-pattern text-xs overflow-y-auto h-[calc(100vh-48px)] sticky top-[48px]">
+  <nav class="py-4">
+    {categoryOrder.map((cat) => {
+      const items = categories[cat];
+      if (!items || items.length === 0) return null;
+      return (
+        <div class="mb-2">
+          <div class="px-4 py-1 text-[#2a6f97] font-semibold tracking-[1.5px] text-[10px] uppercase">
+            {categoryLabels[cat] ?? cat}
+          </div>
+          {items.map((item) => {
+            const isActive = currentSlug === item.slug;
+            return (
+              <a
+                href={`${base}${item.slug}`}
+                class:list={[
+                  'block px-4 pl-6 py-[5px] no-underline transition-colors',
+                  isActive
+                    ? 'bg-[#111d35] text-[#60a5fa] border-l-2 border-[#2a6f97]'
+                    : 'text-[#8b95a5] hover:text-[#c8cdd5] hover:bg-[#0d1525]',
+                ]}
+              >
+                {item.title}
+              </a>
+            );
+          })}
+        </div>
+      );
+    })}
+    <div class="mt-4 px-4 pt-2 border-t border-[#1a2035]">
+      <a href={`${base}graph`} class="flex items-center gap-1.5 px-3 py-1.5 text-[#6b7280] hover:text-[#c8cdd5] no-underline text-[11px]">
+        <span class="text-sm">◉</span> Graph View
+      </a>
+    </div>
+  </nav>
+</aside>

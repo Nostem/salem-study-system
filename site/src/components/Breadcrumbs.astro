@@ -1,0 +1,23 @@
+---
+interface Props {
+  category: string;
+  title: string;
+}
+
+const { category, title } = Astro.props;
+
+const categoryLabels: Record<string, string> = {
+  systems: 'Systems',
+  'tech-specs': 'Tech Specs',
+  exams: 'Exams',
+  eops: 'EOPs',
+  concepts: 'Concepts',
+  abnormals: 'Abnormals',
+};
+
+const label = categoryLabels[category] ?? category;
+---
+
+<div class="text-[10px] text-[#6b7280] tracking-[1px] uppercase mb-2">
+  {label} <span class="mx-1">&gt;</span> {title}
+</div>
