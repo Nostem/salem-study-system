@@ -9,3 +9,5 @@ node_modules/
 site/dist/
 site/.astro/
 .superpowers/
+site/test-screenshots/
+site/test-results/
