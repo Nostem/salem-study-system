@@ -61,18 +61,18 @@ The Reactor Coolant System (RCS) transfers heat generated in the reactor core to
 | Parameter | Value (psig) | Source |
 |-----------|-------------|--------|
 | Design Pressure | 2,485 | UFSAR T5.2-1 |
-| Operating Pressure | 2,235 | UFSAR T5.2-1 |
-| Safety Valves (lift) | 2,485 | UFSAR T5.2-1 |
-| PORVs (lift / reset) | 2,335 / 2,315 | UFSAR T5.2-1, T5.2-8 |
-| High Pressure Trip | 2,385 | UFSAR T5.2-1 |
-| High Pressure Alarm | 2,385 | UFSAR T5.2-1 |
-| Low Pressure Trip | 1,865 | UFSAR T5.2-1 |
-| Low Pressure Alarm | 1,865 | UFSAR T5.2-1 |
-| Pressurizer Spray (begin to open) | 2,260 | UFSAR T5.2-1 |
-| Pressurizer Spray (full open) | 2,310 | UFSAR T5.2-1 |
-| Proportional Heaters (begin) | 2,250 | UFSAR T5.2-1 |
-| Proportional Heaters (full operation) | 2,220 | UFSAR T5.2-1 |
-| Backup Heaters On | 2,210 | UFSAR T5.2-1 |
+| Operating Pressure | <span class="val-normal">2,235</span> | UFSAR T5.2-1 |
+| Safety Valves (lift) | <span class="val-trip">2,485</span> | UFSAR T5.2-1 |
+| PORVs (lift / reset) | <span class="val-trip">2,335</span> / 2,315 | UFSAR T5.2-1, T5.2-8 |
+| High Pressure Trip | <span class="val-trip">2,385</span> | UFSAR T5.2-1 |
+| High Pressure Alarm | <span class="val-alarm">2,385</span> | UFSAR T5.2-1 |
+| Low Pressure Trip | <span class="val-trip">1,865</span> | UFSAR T5.2-1 |
+| Low Pressure Alarm | <span class="val-alarm">1,865</span> | UFSAR T5.2-1 |
+| Pressurizer Spray (begin to open) | <span class="val-normal">2,260</span> | UFSAR T5.2-1 |
+| Pressurizer Spray (full open) | <span class="val-normal">2,310</span> | UFSAR T5.2-1 |
+| Proportional Heaters (begin) | <span class="val-normal">2,250</span> | UFSAR T5.2-1 |
+| Proportional Heaters (full operation) | <span class="val-normal">2,220</span> | UFSAR T5.2-1 |
+| Backup Heaters On | <span class="val-normal">2,210</span> | UFSAR T5.2-1 |
 | Hydrostatic Test Pressure | 3,107 | UFSAR T5.2-1 |
 
 ## Key Components

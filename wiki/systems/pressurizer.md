@@ -39,15 +39,15 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
 ## Pressure Control
 
 - **Pressure increase:** Spray valves open, condensing steam in the pressurizer steam space
-  - Spray valves begin to open at 2,260 psig
-  - Spray valves full open at 2,310 psig
+  - Spray valves begin to open at <span class="val-normal">2,260 psig</span>
+  - Spray valves full open at <span class="val-normal">2,310 psig</span>
 - **Pressure decrease:** Heaters energize, generating steam
-  - Proportional heaters begin at 2,250 psig
-  - Proportional heaters full at 2,220 psig
-  - Backup heaters on at 2,210 psig
+  - Proportional heaters begin at <span class="val-normal">2,250 psig</span>
+  - Proportional heaters full at <span class="val-normal">2,220 psig</span>
+  - Backup heaters on at <span class="val-normal">2,210 psig</span>
 - **Overpressure protection:**
-  - PORVs lift at 2,335 psig (reset 2,315 psig)
-  - Safety valves lift at 2,485 psig
+  - PORVs lift at <span class="val-trip">2,335 psig</span> (reset 2,315 psig)
+  - Safety valves lift at <span class="val-trip">2,485 psig</span>
 - (UFSAR T5.2-1)
 
 ## Pressurizer Relief Tank
