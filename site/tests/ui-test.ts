@@ -222,3 +222,89 @@ test('table of contents renders h2 headings', async ({ page }) => {
     }
   }
 });
+
+// --- 3. Responsive Layout ---
+
+test('mobile: sidebar hidden, hamburger visible', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 812 } });
+  const page = await context.newPage();
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  // Desktop sidebar wrapper (hidden lg:block) should not be visible on mobile
+  const desktopSidebar = page.locator('.hidden.lg\\:block >> #sidebar');
+  await expect(desktopSidebar).not.toBeVisible();
+
+  // Hamburger button should be visible
+  const hamburger = page.getByText('☰');
+  await expect(hamburger).toBeVisible();
+
+  await context.close();
+});
+
+test('mobile: hamburger opens drawer', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 812 } });
+  const page = await context.newPage();
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  const drawer = page.locator('#mobile-drawer');
+
+  // Click hamburger
+  await page.getByText('☰').click();
+
+  // Drawer should slide in (transform removed)
+  await expect(drawer).toBeVisible();
+  const transform = await drawer.evaluate(el => getComputedStyle(el).transform);
+  expect(transform).not.toContain('-');
+
+  await context.close();
+});
+
+test('mobile: tables do not overflow viewport', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 375, height: 812 } });
+  const page = await context.newPage();
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  const tables = page.locator('.prose table');
+  const count = await tables.count();
+
+  for (let i = 0; i < count; i++) {
+    const box = await tables.nth(i).boundingBox();
+    if (box) {
+      expect(box.x + box.width, `Table ${i} should not exceed viewport width`).toBeLessThanOrEqual(375 + 5); // 5px tolerance
+    }
+  }
+
+  await context.close();
+});
+
+test('desktop: sidebar visible, hamburger hidden', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  const page = await context.newPage();
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  // Desktop sidebar wrapper (hidden lg:block) should be visible on desktop
+  const desktopSidebar = page.locator('.hidden.lg\\:block >> #sidebar');
+  await expect(desktopSidebar).toBeVisible();
+
+  // Hamburger should not be visible
+  const hamburger = page.getByText('☰');
+  await expect(hamburger).not.toBeVisible();
+
+  await context.close();
+});
+
+test('desktop: TOC rail visible', async ({ browser }) => {
+  const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  const page = await context.newPage();
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  const toc = page.locator('#toc-nav');
+  await expect(toc).toBeVisible();
+
+  await context.close();
+});
