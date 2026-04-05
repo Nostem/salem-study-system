@@ -1,0 +1,9 @@
+#!/bin/bash
+# Download from NRC ADAMS by ML number
+# Usage: ./scripts/dl ML11175A207 tech-specs
+ML=$1; CAT=${2:-ufsar}
+[ -z "$ML" ] && echo "Usage: ./scripts/dl <ML_NUMBER> [category]" && echo "Categories: ufsar, tech-specs, exams, operating-tests, ergs" && exit 1
+PREFIX=${ML:0:6}; DIR="raw/${CAT}"; mkdir -p "$DIR"
+echo "📥 ${ML} → ${DIR}/"
+curl -sL -o "${DIR}/${ML}.pdf" "https://www.nrc.gov/docs/${PREFIX}/${ML}.pdf"
+[ -s "${DIR}/${ML}.pdf" ] && echo "✅ $(du -h "${DIR}/${ML}.pdf" | cut -f1)" || { echo "❌ Failed"; rm -f "${DIR}/${ML}.pdf"; }

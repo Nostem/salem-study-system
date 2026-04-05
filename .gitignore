@@ -1,0 +1,11 @@
+.env
+.venv/
+__pycache__/
+raw/**/*.pdf
+.cognee/
+*.db
+.DS_Store
+node_modules/
+site/dist/
+site/.astro/
+.superpowers/

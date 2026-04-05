@@ -1,0 +1,26 @@
+#!/bin/bash
+# Batch download all confirmed Salem ADAMS documents
+DIR="$(cd "$(dirname "$0")/.." && pwd)"
+DL="$DIR/scripts/dl"
+
+echo "📥 Downloading confirmed Salem documents..."
+echo ""
+
+echo "═══ TECH SPECS ═══"
+$DL ML11175A207 tech-specs
+
+echo ""
+echo "═══ NRC EXAMS ═══"
+$DL ML082250612 exams
+$DL ML113340040 exams
+$DL ML113330798 exams
+$DL ML13206A339 exams
+$DL ML15009A286 exams
+$DL ML16081A397 exams
+$DL ML18074A052 exams
+$DL ML22175A152 exams
+
+echo ""
+echo "✅ Done. Still needed from ADAMS search:"
+echo "   UFSAR chapters, 2006/2009/2010/2015/2019/2020/2023 exams"
+echo "   Operating test packages (JPMs + scenarios) for all years"
