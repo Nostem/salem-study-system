@@ -73,7 +73,7 @@ if (data && data.nodes.length > 0) {
     .attr('stroke-width', 1.5)
     .style('cursor', 'pointer')
     .on('click', (_event: any, d: GraphNode) => {
-      window.location.href = `${basePath}${d.slug}`;
+      window.location.href = `${basePath.endsWith('/') ? basePath : basePath + '/'}${d.slug}`;
     })
     .on('mouseover', (_event: any, d: GraphNode) => {
       const connected = new Set<string>();

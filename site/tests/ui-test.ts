@@ -123,13 +123,19 @@ test('sidebar links resolve to valid pages', async ({ page }) => {
   const count = await sidebarLinks.count();
   expect(count).toBeGreaterThan(0);
 
+  const brokenLinks: string[] = [];
   for (let i = 0; i < count; i++) {
     const href = await sidebarLinks.nth(i).getAttribute('href');
-    if (href && href.startsWith(BASE)) {
+    if (href) {
+      // Verify link has proper path separator after base
+      expect(href, `Sidebar link should start with base path + slash`).toMatch(/^\/salem-study-system\//);
       const response = await page.request.get(href);
-      expect(response.status(), `Sidebar link ${href} should resolve`).toBe(200);
+      if (response.status() !== 200) {
+        brokenLinks.push(`${href} (${response.status()})`);
+      }
     }
   }
+  expect(brokenLinks.length, `Broken sidebar links:\n${brokenLinks.join('\n')}`).toBe(0);
 });
 
 test('wikilinks resolve to valid pages', async ({ page }) => {
