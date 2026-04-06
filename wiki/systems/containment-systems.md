@@ -19,7 +19,7 @@ The containment systems ensure that fission product releases are limited followi
 | Parameter | Value | Source |
 |-----------|-------|--------|
 | Type | Steel-lined reinforced concrete | UFSAR 6.2.1.1 |
-| <span class="hi">Design Pressure</span> | 47 <span class="val-alarm">psig</span> | UFSAR 6.2.1.1 |
+| <span class="hi">Design Pressure</span> | 47 psig | UFSAR 6.2.1.1 |
 | Maximum Allowable Leakage Rate | 0.1% of free volume per day at design pressure | UFSAR 6.2.1.1 |
 | Liner | Steel | UFSAR 6.2.1.1 |
 | Seismic Design | Class I | UFSAR 3.8 |
