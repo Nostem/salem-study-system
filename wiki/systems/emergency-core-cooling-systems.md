@@ -137,7 +137,7 @@ Provides suction source for all ECCS pumps during injection phase. Minimum volum
 
 ## Single Failure Criteria
 
-- During injection phase: tolerant of any single active failure
+- <span class="hi">During injection phase: tolerant of any single active failure</span>
 - During recirculation phase: tolerant of one active or one passive failure (but not in addition to an injection phase failure)
 - All active ECCS components located outside containment in Auxiliary Building
 (UFSAR 6.1.1.4, 6.3.2)
