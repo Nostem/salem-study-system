@@ -149,13 +149,17 @@ document.addEventListener('selectionchange', () => {
     ancestor = ancestor.parentElement;
   }
 
-  // Position tooltip above the selection
+  // Position tooltip below the selection (so it doesn't block the highlighted text)
   const rect = range.getBoundingClientRect();
   const tooltipWidth = 240;
+  const tooltipHeight = 76;
   let left = rect.left + (rect.width / 2) - (tooltipWidth / 2);
   left = Math.max(8, Math.min(left, window.innerWidth - tooltipWidth - 8));
-  let top = rect.top - 44;
-  if (top < 8) top = rect.bottom + 8;
+  let top = rect.bottom + 8;
+  // If not enough room below, put it above with enough clearance
+  if (top + tooltipHeight > window.innerHeight - 8) {
+    top = rect.top - tooltipHeight - 8;
+  }
 
   tooltip.style.left = `${left}px`;
   tooltip.style.top = `${top}px`;
