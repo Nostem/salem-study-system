@@ -21,3 +21,19 @@ The goals are multi-fold:
 ### Quizzes
 - create quizzes from ingseted question banks. DO NOT create or invent new questions. use existing questions
 - Allen Murrow style tracking
+- fluency guide section
+
+### Files
+- DoE handbooks
+- K/A catalog
+- NUREG 1021 & 1122
+- links on homepage for all files: exams, etc.
+
+### Admin
+- create an admin section that handles all admin procedures from exams. begin compiling wiki articles on each procedure mentioned in exams
+
+### JPM List
+- wiki article containing all JPMs, grouped by admin/simulator/in-plant. links that reference the actual exam files
+
+### Tech Specs
+- after tech spec ingestion, review nrc adams to make sure we have all amendments covered
