@@ -388,3 +388,76 @@ for (const pg of pages) {
     }
   });
 }
+
+// --- 6. Inline Highlighter ---
+
+test('edit toggle button is visible', async ({ page }) => {
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  const toggle = page.locator('#edit-toggle');
+  await expect(toggle).toBeVisible();
+});
+
+test('article element has data-slug attribute', async ({ page }) => {
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  const article = page.locator('article.prose');
+  const slug = await article.getAttribute('data-slug');
+  expect(slug).toBe('systems/reactor-coolant-system');
+});
+
+test('highlight tooltip is hidden by default', async ({ page }) => {
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  const tooltip = page.locator('#highlight-tooltip');
+  await expect(tooltip).toBeHidden();
+});
+
+test('token modal is hidden by default', async ({ page }) => {
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  const modal = page.locator('#token-modal');
+  await expect(modal).toBeHidden();
+});
+
+test('edit toggle activates edit mode styling', async ({ page }) => {
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  // Set a fake token so edit mode doesn't prompt
+  await page.evaluate(() => localStorage.setItem('github-token', 'fake-token'));
+
+  const toggle = page.locator('#edit-toggle');
+  await toggle.click();
+
+  // Toggle should have accent color
+  const color = await toggle.evaluate(el => el.style.color);
+  expect(color).toBe('rgb(96, 165, 250)');
+
+  // Click again to deactivate
+  await toggle.click();
+  const colorAfter = await toggle.evaluate(el => el.style.color);
+  expect(colorAfter).toBe('');
+});
+
+test('token modal appears when no token stored', async ({ page }) => {
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  // Clear any existing token
+  await page.evaluate(() => localStorage.removeItem('github-token'));
+
+  const toggle = page.locator('#edit-toggle');
+  await toggle.click();
+
+  const modal = page.locator('#token-modal');
+  await expect(modal).toBeVisible();
+
+  // Cancel
+  await page.locator('#token-cancel').click();
+  await expect(modal).toBeHidden();
+});
