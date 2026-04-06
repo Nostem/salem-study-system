@@ -1,0 +1,41 @@
+---
+import { generateGraphData } from '../utils/graph-data';
+
+interface Props {
+  currentSlug: string;
+}
+
+const { currentSlug } = Astro.props;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+const fullGraph = await generateGraphData();
+
+// Filter to just the current article and its direct connections
+const connectedSlugs = new Set<string>();
+connectedSlugs.add(currentSlug);
+
+for (const edge of fullGraph.edges) {
+  if (edge.source === currentSlug) connectedSlugs.add(edge.target);
+  if (edge.target === currentSlug) connectedSlugs.add(edge.source);
+}
+
+const localNodes = fullGraph.nodes.filter(n => connectedSlugs.has(n.id));
+const localEdges = fullGraph.edges.filter(e => connectedSlugs.has(e.source) && connectedSlugs.has(e.target));
+
+const localGraph = { nodes: localNodes, edges: localEdges, currentSlug };
+---
+
+{localNodes.length > 1 && (
+  <div class="mb-4">
+    <div class="font-semibold text-[#4b5563] tracking-[1px] uppercase text-[9px] mb-2">
+      Connections
+    </div>
+    <div id="local-graph" class="w-full rounded-md border border-[#1a2035] bg-[#0a0e17]" style="height: 200px;"></div>
+  </div>
+)}
+
+<script define:vars={{ localGraph, base }}>
+  window.__LOCAL_GRAPH__ = localGraph;
+  window.__LOCAL_GRAPH_BASE__ = base;
+</script>
+<script src="../scripts/local-graph.ts"></script>

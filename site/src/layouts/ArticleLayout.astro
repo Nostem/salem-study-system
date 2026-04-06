@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Sidebar from '../components/Sidebar.astro';
 import TableOfContents from '../components/TableOfContents.astro';
+import LocalGraph from '../components/LocalGraph.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import DraftBadge from '../components/DraftBadge.astro';
 import MobileNav from '../components/MobileNav.astro';
@@ -84,8 +85,11 @@ const base = import.meta.env.BASE_URL;
       </article>
     </main>
 
-    <!-- Table of Contents (desktop) -->
-    <TableOfContents headings={headings} />
+    <!-- Right rail: local graph + TOC (desktop) -->
+    <aside class="w-[280px] min-w-[280px] border-l border-[#1a2035] px-4 py-6 text-[11px] text-[#6b7280] h-[calc(100vh-48px)] sticky top-[48px] overflow-y-auto hidden xl:block">
+      <LocalGraph currentSlug={slug} />
+      <TableOfContents headings={headings} />
+    </aside>
   </div>
 
   <script src="../scripts/highlighter.ts"></script>

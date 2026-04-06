@@ -10,7 +10,7 @@ const tocItems = headings.filter((h) => h.depth === 2);
 ---
 
 {tocItems.length > 0 && (
-  <aside class="w-[200px] min-w-[200px] border-l border-[#1a2035] px-4 py-6 text-[11px] text-[#6b7280] h-[calc(100vh-48px)] sticky top-[48px] overflow-y-auto hidden xl:block">
+  <div>
     <div class="font-semibold text-[#4b5563] tracking-[1px] uppercase text-[9px] mb-2.5">
       On This Page
     </div>
@@ -25,7 +25,7 @@ const tocItems = headings.filter((h) => h.depth === 2);
         </a>
       ))}
     </nav>
-  </aside>
+  </div>
 )}
 
 <script is:inline>
