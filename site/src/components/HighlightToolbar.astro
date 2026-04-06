@@ -5,16 +5,29 @@
 
 <!-- Floating highlight tooltip (hidden by default) -->
 <div id="highlight-tooltip" class="fixed z-50 hidden">
-  <div class="flex gap-1 bg-[#0d1220] border border-[#1a2035] rounded-lg shadow-2xl p-1.5">
-    <button data-highlight="hi" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(96,165,250,0.15)] text-[#93bbfc] border border-[rgba(96,165,250,0.3)] hover:bg-[rgba(96,165,250,0.25)] cursor-pointer transition-colors">
-      Important
-    </button>
-    <button data-highlight="hi-exam" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(251,191,36,0.15)] text-[#fde68a] border border-[rgba(251,191,36,0.3)] hover:bg-[rgba(251,191,36,0.25)] cursor-pointer transition-colors">
-      Exam
-    </button>
-    <button data-highlight="hi-trap" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(248,113,113,0.15)] text-[#fca5a5] border border-[rgba(248,113,113,0.3)] hover:bg-[rgba(248,113,113,0.25)] cursor-pointer transition-colors">
-      Trap
-    </button>
+  <div class="flex flex-col gap-1 bg-[#0d1220] border border-[#1a2035] rounded-lg shadow-2xl p-1.5">
+    <div class="flex gap-1">
+      <button data-highlight="hi" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(96,165,250,0.15)] text-[#93bbfc] border border-[rgba(96,165,250,0.3)] hover:bg-[rgba(96,165,250,0.25)] cursor-pointer transition-colors">
+        Important
+      </button>
+      <button data-highlight="hi-exam" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(251,191,36,0.15)] text-[#fde68a] border border-[rgba(251,191,36,0.3)] hover:bg-[rgba(251,191,36,0.25)] cursor-pointer transition-colors">
+        Exam
+      </button>
+      <button data-highlight="hi-trap" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(248,113,113,0.15)] text-[#fca5a5] border border-[rgba(248,113,113,0.3)] hover:bg-[rgba(248,113,113,0.25)] cursor-pointer transition-colors">
+        Trap
+      </button>
+    </div>
+    <div class="flex gap-1 border-t border-[#1a2035] pt-1">
+      <button data-highlight="val-normal" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(52,211,153,0.15)] text-[#34d399] border border-[rgba(52,211,153,0.3)] hover:bg-[rgba(52,211,153,0.25)] cursor-pointer transition-colors">
+        Normal
+      </button>
+      <button data-highlight="val-alarm" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(251,191,36,0.15)] text-[#fbbf24] border border-[rgba(251,191,36,0.3)] hover:bg-[rgba(251,191,36,0.25)] cursor-pointer transition-colors">
+        Alarm
+      </button>
+      <button data-highlight="val-trip" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(248,113,113,0.15)] text-[#f87171] border border-[rgba(248,113,113,0.3)] hover:bg-[rgba(248,113,113,0.25)] cursor-pointer transition-colors">
+        Trip
+      </button>
+    </div>
   </div>
 </div>
 

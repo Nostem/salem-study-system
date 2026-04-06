@@ -6,6 +6,9 @@ const HIGHLIGHT_TYPES: Record<string, string> = {
   'hi': 'important',
   'hi-exam': 'exam-tested',
   'hi-trap': 'exam-trap',
+  'val-normal': 'normal-operating',
+  'val-alarm': 'alarm-setpoint',
+  'val-trip': 'trip-setpoint',
 };
 
 let editMode = false;
@@ -136,7 +139,8 @@ document.addEventListener('selectionchange', () => {
 
   // Check if already highlighted
   const parentEl = range.commonAncestorContainer.parentElement;
-  if (parentEl && (parentEl.classList.contains('hi') || parentEl.classList.contains('hi-exam') || parentEl.classList.contains('hi-trap'))) {
+  const highlightClasses = ['hi', 'hi-exam', 'hi-trap', 'val-normal', 'val-alarm', 'val-trip'];
+  if (parentEl && highlightClasses.some(c => parentEl.classList.contains(c))) {
     tooltip.classList.add('hidden');
     return;
   }
