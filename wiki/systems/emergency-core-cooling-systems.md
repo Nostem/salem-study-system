@@ -133,7 +133,7 @@ Provides suction source for all ECCS pumps during injection phase. Minimum volum
 5. SI and charging pumps take suction from RHR pump discharge (piggyback)
 
 ### Hot Leg Recirculation
-Initiated at ~14.0 hours (Unit 1) or ~6.5 hours (Unit 2) after switchover to cold leg recirculation to assure termination of boiling. Minimum one SI pump aligned for hot leg recirculation flow. (UFSAR 6.3.2)
+<span class="hi-trap">Initiated at ~14.0 hours (Unit 1) or ~6.5 hours (Unit 2)</span> after switchover to cold leg recirculation to assure termination of boiling. Minimum one SI pump aligned for hot leg recirculation flow. (UFSAR 6.3.2)
 
 ## Single Failure Criteria
 
