@@ -137,12 +137,16 @@ document.addEventListener('selectionchange', () => {
     return;
   }
 
-  // Check if already highlighted
-  const parentEl = range.commonAncestorContainer.parentElement;
+  // Check if already highlighted — walk up ancestors to catch nested spans
   const highlightClasses = ['hi', 'hi-exam', 'hi-trap', 'val-normal', 'val-alarm', 'val-trip'];
-  if (parentEl && highlightClasses.some(c => parentEl.classList.contains(c))) {
-    tooltip.classList.add('hidden');
-    return;
+  let ancestor: Element | null = range.commonAncestorContainer.parentElement;
+  while (ancestor && ancestor !== proseEl) {
+    if (highlightClasses.some(c => ancestor!.classList.contains(c))) {
+      showToast('Already highlighted', 'error');
+      tooltip.classList.add('hidden');
+      return;
+    }
+    ancestor = ancestor.parentElement;
   }
 
   // Position tooltip above the selection
@@ -247,6 +251,12 @@ async function commitHighlight(
     // Find the selected text in the markdown
     const index = findTextInMarkdown(content, selectedText);
     if (index === -1) return false;
+
+    // Check if already wrapped in a highlight span in the markdown source
+    const before = content.substring(Math.max(0, index - 50), index);
+    if (/class="(hi|hi-exam|hi-trap|val-normal|val-alarm|val-trip)">[^<]*$/.test(before)) {
+      return false; // Already highlighted in source
+    }
 
     // Wrap with highlight span
     const wrapped = `<span class="${highlightClass}">${selectedText}</span>`;

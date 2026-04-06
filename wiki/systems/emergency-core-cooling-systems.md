@@ -58,7 +58,7 @@ Isolated from RCS by two check valves in series. Inject when RCS pressure falls 
 | Design Head | 5800 ft | UFSAR T6.3-5 |
 | Max Flow Rate | 560 gpm | UFSAR T6.3-5 |
 | Head at Max Flow | 1300 ft | UFSAR T6.3-5 |
-| <span class="hi"><span class="hi"><span class="hi">Shutoff Discharge Pressure</span></span></span> | <span class="hi">2670 psig</span> | UFSAR T6.3-5 |
+| Shutoff Discharge Pressure | <span class="hi">2670 psig</span> | UFSAR T6.3-5 |
 | Motor HP | 600 | UFSAR T6.3-5 |
 | Material | Stainless steel | UFSAR T6.3-5 |
 
