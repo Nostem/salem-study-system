@@ -102,7 +102,7 @@ RHR pumps deliver when RCS depressurizes to ~170 psig. Inject via accumulator di
 |-----------|-------|--------|
 | Number | 1 | UFSAR T6.3-4 |
 | <span class="hi">Tank Capacity</span> | <span class="hi">400000 gal</span> | UFSAR T6.3-4 |
-| <span class="hi">Minimum Volume</span> | 364500 gal | UFSAR T6.3-4 |
+| <span class="hi">Minimum Volume</span> | <span class="hi">364500 gal</span> | UFSAR T6.3-4 |
 | Operating Pressure | Atmospheric | UFSAR T6.3-4 |
 | Operating Temperature | 40–100°F | UFSAR T6.3-4 |
 | Design Temperature | 120°F | UFSAR T6.3-4 |
