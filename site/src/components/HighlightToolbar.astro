@@ -1,0 +1,45 @@
+---
+// Highlight toolbar — floating tooltip, token prompt, toast container
+// All behavior is in highlighter.ts
+---
+
+<!-- Floating highlight tooltip (hidden by default) -->
+<div id="highlight-tooltip" class="fixed z-50 hidden">
+  <div class="flex gap-1 bg-[#0d1220] border border-[#1a2035] rounded-lg shadow-2xl p-1.5">
+    <button data-highlight="hi" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(96,165,250,0.15)] text-[#93bbfc] border border-[rgba(96,165,250,0.3)] hover:bg-[rgba(96,165,250,0.25)] cursor-pointer transition-colors">
+      Important
+    </button>
+    <button data-highlight="hi-exam" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(251,191,36,0.15)] text-[#fde68a] border border-[rgba(251,191,36,0.3)] hover:bg-[rgba(251,191,36,0.25)] cursor-pointer transition-colors">
+      Exam
+    </button>
+    <button data-highlight="hi-trap" class="px-2.5 py-1 rounded text-[11px] font-medium bg-[rgba(248,113,113,0.15)] text-[#fca5a5] border border-[rgba(248,113,113,0.3)] hover:bg-[rgba(248,113,113,0.25)] cursor-pointer transition-colors">
+      Trap
+    </button>
+  </div>
+</div>
+
+<!-- Token prompt modal (hidden by default) -->
+<div id="token-modal" class="fixed inset-0 z-50 hidden">
+  <div class="absolute inset-0 bg-black/60" onclick="document.getElementById('token-modal').classList.add('hidden')"></div>
+  <div class="relative mx-auto mt-[20vh] w-full max-w-sm bg-[#0d1220] border border-[#1a2035] rounded-lg shadow-2xl p-6">
+    <h3 class="text-sm font-semibold text-[#e0e4ea] mb-1">GitHub Token Required</h3>
+    <p class="text-xs text-[#6b7280] mb-4">Enter a personal access token with write access to the repo. Stored in your browser only.</p>
+    <input
+      id="token-input"
+      type="password"
+      placeholder="ghp_xxxxxxxxxxxx"
+      class="w-full bg-[#111827] border border-[#1a2035] rounded-md px-3 py-2 text-sm text-[#e0e4ea] placeholder-[#6b7280] outline-none focus:border-[#2a6f97] mb-3"
+    />
+    <div class="flex justify-end gap-2">
+      <button id="token-cancel" class="px-3 py-1.5 text-xs text-[#6b7280] bg-transparent border border-[#1a2035] rounded cursor-pointer hover:text-[#c8cdd5]">
+        Cancel
+      </button>
+      <button id="token-save" class="px-3 py-1.5 text-xs text-[#e0e4ea] bg-[#2a6f97] border-none rounded cursor-pointer hover:bg-[#35809e]">
+        Save
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Toast container -->
+<div id="toast-container" class="fixed bottom-4 right-4 z-50 flex flex-col gap-2"></div>

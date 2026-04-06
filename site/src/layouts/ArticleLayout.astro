@@ -6,6 +6,7 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import DraftBadge from '../components/DraftBadge.astro';
 import MobileNav from '../components/MobileNav.astro';
 import SearchModal from '../components/SearchModal.astro';
+import HighlightToolbar from '../components/HighlightToolbar.astro';
 
 interface Props {
   title: string;
@@ -21,6 +22,7 @@ const base = import.meta.env.BASE_URL;
 
 <BaseLayout title={title}>
   <SearchModal />
+  <HighlightToolbar />
 
   <!-- Mobile nav drawer -->
   <div class="lg:hidden">
@@ -44,16 +46,24 @@ const base = import.meta.env.BASE_URL;
         <span class="text-sm font-semibold text-[#e0e4ea] tracking-[1.5px]">SALEM STUDY SYSTEM</span>
       </a>
     </div>
-    <button
-      id="search-trigger"
-      class="bg-[#111827] border border-[#1a2035] rounded-md px-3.5 py-1.5 text-xs text-[#6b7280] w-60 text-left cursor-pointer hidden sm:block"
-    >
-      ⌘K &nbsp;Search articles...
-    </button>
-    <!-- Mobile search icon -->
-    <button id="search-trigger-mobile" class="sm:hidden text-[#6b7280] text-sm bg-transparent border-none cursor-pointer">
-      ⌕
-    </button>
+    <div class="flex items-center gap-2">
+      <button
+        id="edit-toggle"
+        class="bg-transparent border-none cursor-pointer text-[#6b7280] hover:text-[#c8cdd5] text-sm transition-colors"
+        title="Toggle edit mode"
+      >
+        ✎
+      </button>
+      <button
+        id="search-trigger"
+        class="bg-[#111827] border border-[#1a2035] rounded-md px-3.5 py-1.5 text-xs text-[#6b7280] w-60 text-left cursor-pointer hidden sm:block"
+      >
+        ⌘K &nbsp;Search articles...
+      </button>
+      <button id="search-trigger-mobile" class="sm:hidden text-[#6b7280] text-sm bg-transparent border-none cursor-pointer">
+        ⌕
+      </button>
+    </div>
   </header>
 
   <div class="flex">
@@ -69,7 +79,7 @@ const base = import.meta.env.BASE_URL;
         <h1 class="text-2xl text-[#e0e4ea] font-semibold m-0">{title}</h1>
         <DraftBadge status={status} />
       </div>
-      <article class="prose mt-6">
+      <article class="prose mt-6" data-slug={slug}>
         <slot />
       </article>
     </main>
@@ -77,4 +87,6 @@ const base = import.meta.env.BASE_URL;
     <!-- Table of Contents (desktop) -->
     <TableOfContents headings={headings} />
   </div>
+
+  <script src="../scripts/highlighter.ts"></script>
 </BaseLayout>
