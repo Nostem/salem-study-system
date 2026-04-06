@@ -8,3 +8,16 @@ The goals are multi-fold:
 - if the nrc question/answer/explanation gives some new info about a system that we dont already have, that should be incorporated & organized into the reference wiki. for example, the answer to a question may confirm that ssps train a will trip reactor trip breaker a and bypass beraker b. if that info is not already in our ssps/rps wiki, it should be added. this way we can continually reverse-engineer the systems.
 - this is one is really important, procedures and setpoints change over time. its important before ingesting info from a question to check it against existing info for conflicts. if there are conflicts, do not assume, flag them and bring them up to the user. i will manually confirm what the most current answer is.
 - use inline highlights and callout blocks as previously discussed
+
+### Questions
+- how to handle wiki building. does each question/answer/explanation trio get its own wiki article?
+
+## Future Ideas
+
+### Incorporate GFES Banks
+- question/answer . build justifications
+- ingest DOE handbooks
+
+### Quizzes
+- create quizzes from ingseted question banks. DO NOT create or invent new questions. use existing questions
+- Allen Murrow style tracking
