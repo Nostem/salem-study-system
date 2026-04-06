@@ -91,7 +91,7 @@ SI pump discharge is limited to <1500 psig to prevent lifting RCS safety valves.
 | Design Flow Rate | 3000 gpm | UFSAR T6.3-5 |
 | Design Head | 350 ft | UFSAR T6.3-5 |
 | Max Flow Rate | 4500 gpm | UFSAR T6.3-5 |
-| Shutoff Discharge Pressure | 170 psig | UFSAR T6.3-5 |
+| Shutoff Discharge Pressure | <span class="hi">170 psig</span> | UFSAR T6.3-5 |
 | Motor HP | 400 | UFSAR T6.3-5 |
 
 RHR pumps deliver when RCS depressurizes to ~170 psig. Inject via accumulator discharge lines to cold legs. (UFSAR 6.3.2)
