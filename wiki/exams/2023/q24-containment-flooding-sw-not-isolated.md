@@ -44,4 +44,5 @@ Which system is the source of water into containment that is NOT isolated by Pha
 ## Connections
 
 - Related systems: [[Service Water]], [[Containment Systems]]
+- Related procedures: [[EOP-FRCE-2 — Response to Containment Flooding]]
 - Related exam: [[2023 NRC Written Exam]]

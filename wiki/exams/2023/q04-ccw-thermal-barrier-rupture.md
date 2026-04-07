@@ -48,4 +48,5 @@ Which of the following indications would provide corroborating evidence for this
 ## Connections
 
 - Related systems: [[Component Cooling Water]], [[Reactor Coolant Pumps]]
+- Related procedures: [[AB.CC-0001 — Loss of Component Cooling Water]]
 - Related exam: [[2023 NRC Written Exam]]

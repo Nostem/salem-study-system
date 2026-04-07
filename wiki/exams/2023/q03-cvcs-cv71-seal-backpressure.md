@@ -45,4 +45,5 @@ Which of the following completes the below statement? When 1CV71 is throttled ..
 ## Connections
 
 - Related systems: [[Chemical and Volume Control System]], [[Reactor Coolant Pumps]]
+- Related procedures: [[AB.RC-0001 — Reactor Coolant System Leak]]
 - Related exam: [[2023 NRC Written Exam]]

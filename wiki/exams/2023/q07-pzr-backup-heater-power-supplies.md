@@ -45,4 +45,5 @@ Which of the following describes the current status of the PZR Backup Heaters?
 ## Connections
 
 - Related systems: [[Pressurizer]], [[AC Power]]
+- Related procedures: [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related exam: [[2023 NRC Written Exam]]

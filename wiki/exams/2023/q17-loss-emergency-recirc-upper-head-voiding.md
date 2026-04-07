@@ -44,4 +44,5 @@ Is upper head voiding expected and what should be monitored?
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]]
+- Related procedures: [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related exam: [[2023 NRC Written Exam]]

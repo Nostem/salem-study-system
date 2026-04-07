@@ -40,4 +40,5 @@ What does this symbol mean?
 
 ## Connections
 
+- Related procedures: [[OP-SA-108-101-2000 — EOP Usage and Flowchart Symbols]]
 - Related exam: [[2023 NRC Written Exam]]

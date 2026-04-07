@@ -44,4 +44,5 @@ What is the effect on grid voltage and Unit 2 MVARs?
 ## Connections
 
 - Related systems: [[AC Power]], [[Turbine-Generator]]
+- Related procedures: [[AB.GRID-0001 — Grid Disturbance]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -44,4 +44,5 @@ Are CS/Phase B setpoints met, and what opens the CS2 valves?
 ## Connections
 
 - Related systems: [[Containment Spray]], [[Instrumentation and Controls]]
+- Related procedures: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam: [[2023 NRC Written Exam]]

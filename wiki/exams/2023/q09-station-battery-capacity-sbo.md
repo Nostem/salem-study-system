@@ -41,4 +41,5 @@ Note: 2-EOP-LOPA-1, Loss of ALL AC Power
 ## Connections
 
 - Related systems: [[DC Power]]
+- Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related exam: [[2023 NRC Written Exam]]

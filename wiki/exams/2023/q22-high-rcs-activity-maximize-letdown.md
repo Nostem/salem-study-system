@@ -44,4 +44,5 @@ What is the required action?
 ## Connections
 
 - Related systems: [[Chemical and Volume Control System]], [[Reactor Coolant System]]
+- Related procedures: [[AB.RC-0002 — High Activity in the RCS]]
 - Related exam: [[2023 NRC Written Exam]]

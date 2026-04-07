@@ -45,4 +45,5 @@ What is the required action?
 ## Connections
 
 - Related systems: [[Chemical and Volume Control System]]
+- Related procedures: [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exam: [[2023 NRC Written Exam]]

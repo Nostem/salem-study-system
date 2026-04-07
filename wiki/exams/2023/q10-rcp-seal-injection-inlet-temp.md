@@ -47,4 +47,5 @@ Based on the above conditions, restoring seal injection flow to the RCPs <em>(1)
 ## Connections
 
 - Related systems: [[Reactor Coolant Pumps]], [[Chemical and Volume Control System]]
+- Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related exam: [[2023 NRC Written Exam]]

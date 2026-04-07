@@ -46,4 +46,5 @@ Which of the following describes the expected response?
 ## Connections
 
 - Related systems: [[Instrumentation and Controls]], [[Reactor Coolant Pumps]]
+- Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam: [[2023 NRC Written Exam]]

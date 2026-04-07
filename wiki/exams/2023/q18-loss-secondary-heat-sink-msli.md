@@ -46,4 +46,5 @@ What happens and how does the crew continue depressurization?
 ## Connections
 
 - Related systems: [[Main Steam]], [[Instrumentation and Controls]]
+- Related procedures: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam: [[2023 NRC Written Exam]]
