@@ -7,7 +7,6 @@ aliases:
   - 2023-Q1
 ---
 
-# 2023 Q1 — RCS Low Flow / P-7 and P-8 Logic
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">

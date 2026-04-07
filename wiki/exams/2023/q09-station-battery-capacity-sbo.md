@@ -7,7 +7,6 @@ aliases:
   - 2023-Q9
 ---
 
-# 2023 Q9 — Station Battery Capacity During SBO
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">

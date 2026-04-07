@@ -20,6 +20,32 @@ export async function getStaticPaths() {
 const { article, category, title } = Astro.props;
 const { Content, headings } = await render(article);
 const status = article.data.status ?? 'draft';
+
+// Check if this is an exam master article with child question articles
+// e.g., exams/2023-written-exam has children in exams/2023/
+const slug = article.id;
+let embeddedQuestions: { Content: any; title: string; slug: string }[] = [];
+
+if (slug.startsWith('exams/') && slug.includes('-written-exam')) {
+  const yearMatch = slug.match(/exams\/(\d{4})-written-exam/);
+  if (yearMatch) {
+    const year = yearMatch[1];
+    const allArticles = await getCollection('wiki');
+    const questionArticles = allArticles
+      .filter((a) => a.id.startsWith(`exams/${year}/q`))
+      .sort((a, b) => a.id.localeCompare(b.id));
+
+    for (const q of questionArticles) {
+      const rendered = await render(q);
+      const qTitle = q.data.title ?? q.id;
+      embeddedQuestions.push({
+        Content: rendered.Content,
+        title: qTitle,
+        slug: q.id,
+      });
+    }
+  }
+}
 ---
 
 <ArticleLayout
@@ -30,4 +56,14 @@ const status = article.data.status ?? 'draft';
   headings={headings}
 >
   <Content />
+
+  {embeddedQuestions.length > 0 && (
+    <div class="embedded-questions" style="margin-top: 2rem;">
+      {embeddedQuestions.map((q) => (
+        <div class="embedded-question" data-slug={q.slug}>
+          <q.Content />
+        </div>
+      ))}
+    </div>
+  )}
 </ArticleLayout>

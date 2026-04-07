@@ -7,7 +7,6 @@ aliases:
   - 2023-Q5
 ---
 
-# 2023 Q5 — PZR Pressure Channel Fails High / OT Delta-T Effect
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
