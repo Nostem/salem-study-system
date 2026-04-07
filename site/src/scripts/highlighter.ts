@@ -176,7 +176,7 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) return;
 
-    const selectedText = selection.toString().trim();
+    const selectedText = normalizeQuotes(selection.toString().trim());
     if (!selectedText) return;
 
     const range = selection.getRangeAt(0);
@@ -398,6 +398,14 @@ function findOriginalIndex(markdown: string, stripped: string, strippedIdx: numb
   }
 
   return -1;
+}
+
+function normalizeQuotes(str: string): string {
+  return str
+    .replace(/[\u2018\u2019\u201A\u201B]/g, "'")  // curly single quotes → straight
+    .replace(/[\u201C\u201D\u201E\u201F]/g, '"')   // curly double quotes → straight
+    .replace(/\u2013/g, '-')                         // en-dash → hyphen
+    .replace(/\u2014/g, '--');                        // em-dash → double hyphen
 }
 
 function escapeRegex(str: string): string {
