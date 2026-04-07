@@ -27,7 +27,7 @@ Transports steam from the four steam generators to the turbine-generator and oth
 ### Steam Dump System
 - Dumps steam to the condenser to prevent reactor trip on turbine trip or rapid load reduction
 - Controlled by: Tavg error signal (difference between Tavg and Tref)
-- Steam dump to condenser blocked by C-9 (high condenser pressure or loss of circulating water)
+- <span class="hi">Steam dump to condenser blocked by C-9</span> (high condenser pressure or loss of circulating water)
 - Steam dump blocked below P-12 (low Tavg)
 - Cooldown mode: controlled by steam pressure for controlled cooldown rate
 (UFSAR 7.7.2.7)
