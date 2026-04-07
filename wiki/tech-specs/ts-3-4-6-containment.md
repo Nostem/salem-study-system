@@ -1,0 +1,128 @@
+---
+title: "TS 3/4.6 — Containment"
+category: tech-specs
+status: draft
+aliases:
+  - containment tech specs
+  - containment integrity TS
+  - containment spray TS
+  - containment isolation TS
+---
+
+# TS 3/4.6 — Containment Systems
+
+## 3/4.6.1 — Primary Containment
+
+### Containment Integrity (3.6.1.1)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.1.1</div>
+Primary CONTAINMENT INTEGRITY shall be maintained.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Action:** Without CONTAINMENT INTEGRITY, restore within <span class="val-trip">1 hour</span> or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours.
+
+### Containment Leakage (3.6.1.2)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.1.2</div>
+Containment leakage rates shall be limited to:<br>
+a. Overall integrated leakage rate (Type A) per Containment Leakage Rate Testing Program<br>
+b. Combined leakage rate for Type B and C tests per Containment Leakage Rate Testing Program
+</div>
+
+**Action:** If leakage not within limits, restore prior to increasing RCS temperature above 200°F.
+
+---
+
+## 3/4.6.2 — Depressurization and Cooling Systems
+
+### Containment Spray (3.6.2.1)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.2.1</div>
+<span class="hi">Two independent containment spray systems</span> shall be OPERABLE, each capable of taking suction from RWST and transferring suction to RHR pump discharge.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Action:** With one inoperable, restore within <span class="val-alarm">72 hours</span> or Hot Standby in 6 hours. Restore within next 48 hours or Cold Shutdown in 30 hours.
+
+**Key SR:** Each spray pump differential pressure ≥204 psid per IST program.
+
+### Spray Additive System (3.6.2.2)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.2.2</div>
+Spray additive system shall be OPERABLE with:<br>
+a. Spray additive tank: <span class="hi">2568–4000 gallons</span> of <span class="hi">30–32% by weight NaOH</span><br>
+b. Two spray additive eductors OPERABLE
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Action:** If inoperable, restore within <span class="val-alarm">72 hours</span> or Hot Standby in 6 hours. Restore within 48 hours or Cold Shutdown in 30 hours.
+
+**Key SR:** Spray additive tank eductor flow shall be 35 ±3.5 gpm to each containment spray system.
+
+### Containment Fan Coolers (3.6.2.3)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.2.3</div>
+At least <span class="hi">three containment fan coil units</span> shall be OPERABLE.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Action:** With one fan cooler inoperable, restore within <span class="val-alarm">7 days</span>. With two inoperable, restore one within <span class="val-alarm">72 hours</span>. Otherwise Hot Standby in 6 hours and Cold Shutdown in 30 hours.
+
+---
+
+## 3/4.6.3 — Containment Isolation Valves
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.3</div>
+Each containment isolation valve shall be OPERABLE.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| ≥1 containment isolation valve inoperable | Restore OR isolate affected penetration by: closed/deactivated auto valve, closed manual valve, or blind flange | <span class="val-alarm">4 hrs</span> |
+| Unable to isolate | Be in Hot Standby, then Cold Shutdown | 6 hrs + 30 hrs |
+
+<div class="callout callout-exam">
+<div class="callout-label">Phase A vs Phase B Isolation</div>
+Phase A isolation valves actuate on Safety Injection signal ("T"). Phase B isolation valves actuate on Hi-Hi Containment Pressure (Containment Spray actuation signal, "P"). Containment purge valves are required to be closed and immobilized with control air isolated.
+</div>
+
+---
+
+## Bases
+
+### Containment Integrity
+
+CONTAINMENT INTEGRITY ensures that the containment will perform its designed safety function of preventing fission product release to the environment following a LOCA or other DBA.
+
+### Containment Spray
+
+<span class="hi-exam">Two independent containment spray systems ensure pressure reduction and iodine removal following a LOCA even with a single active failure.</span> The NaOH spray additive maintains post-LOCA sump pH between 7.0 and 10.0, minimizing iodine re-evolution and chloride stress corrosion.
+
+### Containment Fan Coolers
+
+<span class="hi-exam">Three of five CFCUs provide sufficient post-LOCA heat removal capacity (132 x 10⁶ Btu/hr) to reduce containment pressure below design limits.</span>
+
+---
+
+<a href="/salem-study-system/ts-pdfs/ts-3-4-6-1.pdf" target="_blank">View TS PDF (Containment)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-2.pdf" target="_blank">View TS PDF (Spray/Cooling)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-3.pdf" target="_blank">View TS PDF (Isolation)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-6.pdf" target="_blank">View Bases PDF</a>
+
+## Connections
+
+- Related systems: [[Containment Systems]], [[Emergency Core Cooling Systems]]
+- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related concepts: [[Accident Analysis]]
