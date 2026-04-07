@@ -82,7 +82,7 @@ Provides feedwater to steam generators when the main feedwater system is unavail
 - **1 turbine-driven pump:** Steam-driven from main steam. Can supply all 4 steam generators. Powered by vital DC (no AC required).
 
 ### Actuation (from UFSAR T7.2-1)
-- **Turbine-driven:** 2/3 Lo-Lo level in any 2 SGs; RCP bus undervoltage 1/2 twice; manual
+- **Turbine-driven:** <span class="hi-exam">2/3 Lo-Lo level in any 2 SGs; RCP bus undervoltage 1/2 twice; manual</span>
 - **Motor-driven:** 2/3 Lo level in any SG; trip of both main FW pumps; SI signal; blackout signal; manual
 
 ### Water Source
