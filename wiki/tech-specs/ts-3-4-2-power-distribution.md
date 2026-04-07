@@ -20,7 +20,7 @@ aliases:
 The indicated AXIAL FLUX DIFFERENCE (AFD) shall be maintained within the target band about the target flux difference specified in the COLR.
 </div>
 
-**Applicability:** Mode 1 above 15% RTP (when AFD monitor alarm is OPERABLE); above 50% RTP (when alarm inoperable)
+**Applicability:** Mode 1 above 50% RTP
 
 **Actions:**
 
