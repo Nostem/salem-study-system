@@ -86,7 +86,7 @@ Actuated by: SI signal, OR 2/3 Hi-Hi SG level, OR low auctioneered Tavg AND reac
 
 ## Overtemperature Delta-T Trip
 
-Protects the core against DNB. Continuously calculated setpoint per loop (2/4 coincidence):
+<span class="hi">Protects the core against DNB</span>. Continuously calculated setpoint per loop (2/4 coincidence):
 
 Delta-T setpoint = K1 - K2*(Tavg) + K3*(P) - f(delta-phi)
 
