@@ -21,7 +21,7 @@ Chapter 9 covers fuel storage and handling, water systems (service water, CCW, C
 Provides cooling water from the Delaware River to: containment fan coil units (CFCUs), component cooling water heat exchangers, diesel generator jacket water coolers, and other plant heat loads. Safety-related, Seismic Category I. (UFSAR 9.2.1)
 
 ### Key Design Points
-- Supplies minimum 1300 gpm to each CFCU during accident conditions
+- <span class="hi">Supplies minimum 1300 gpm to each CFCU during accident conditions</span>
 - Ultimate heat sink: Delaware River
 - Safety-related supply for post-accident cooling
 
