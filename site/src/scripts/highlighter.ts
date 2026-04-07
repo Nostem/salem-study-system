@@ -192,6 +192,13 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
       return;
     }
 
+    // Capture surrounding context BEFORE optimistic DOM update
+    // This helps disambiguate when the same text appears multiple times
+    const textNode = range.startContainer;
+    const fullText = textNode.textContent || '';
+    const contextBefore = fullText.substring(Math.max(0, range.startOffset - 30), range.startOffset);
+    const contextAfter = fullText.substring(range.endOffset, Math.min(fullText.length, range.endOffset + 30));
+
     // Optimistic DOM update
     const span = document.createElement('span');
     span.className = highlightClass;
@@ -216,7 +223,7 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
       return;
     }
 
-    const success = await commitHighlight(slug!, selectedText, highlightClass, token);
+    const success = await commitHighlight(slug!, selectedText, highlightClass, token, contextBefore, contextAfter);
     toast.remove();
 
     if (success) {
@@ -234,6 +241,8 @@ async function commitHighlight(
   selectedText: string,
   highlightClass: string,
   token: string,
+  contextBefore: string = '',
+  contextAfter: string = '',
 ): Promise<boolean> {
   const filePath = `wiki/${slug}.md`;
   const apiBase = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}`;
@@ -252,8 +261,8 @@ async function commitHighlight(
     const sha = fileData.sha;
     const content = decodeBase64(fileData.content);
 
-    // Find the selected text in the markdown
-    const index = findTextInMarkdown(content, selectedText);
+    // Find the selected text in the markdown using surrounding context to disambiguate
+    const index = findTextInMarkdown(content, selectedText, contextBefore, contextAfter);
     if (index === -1) return false;
 
     // Check if already wrapped in a highlight span in the markdown source
@@ -283,7 +292,7 @@ async function commitHighlight(
 
     if (putRes.status === 409) {
       // Stale SHA — retry once
-      return commitHighlight(slug, selectedText, highlightClass, token);
+      return commitHighlight(slug, selectedText, highlightClass, token, contextBefore, contextAfter);
     }
 
     return putRes.ok;
@@ -292,16 +301,96 @@ async function commitHighlight(
   }
 }
 
-function findTextInMarkdown(markdown: string, selectedText: string): number {
-  // Direct match first
-  const directIndex = markdown.indexOf(selectedText);
-  if (directIndex !== -1) return directIndex;
+function findTextInMarkdown(markdown: string, selectedText: string, contextBefore: string = '', contextAfter: string = ''): number {
+  // Strip HTML tags from markdown for plain text matching (handles already-highlighted text)
+  const stripped = markdown.replace(/<[^>]+>/g, '');
 
-  // Try matching ignoring extra whitespace
-  const pattern = escapeRegex(selectedText).replace(/\s+/g, '\\s+');
-  const regex = new RegExp(pattern);
-  const match = regex.exec(markdown);
-  if (match) return match.index;
+  // Find all occurrences of the selected text in the stripped version
+  const occurrences: number[] = [];
+  let searchFrom = 0;
+  while (true) {
+    const idx = stripped.indexOf(selectedText, searchFrom);
+    if (idx === -1) break;
+    occurrences.push(idx);
+    searchFrom = idx + 1;
+  }
+
+  if (occurrences.length === 0) return -1;
+
+  // If only one occurrence, find its position in the original markdown
+  if (occurrences.length === 1) {
+    return findOriginalIndex(markdown, stripped, occurrences[0], selectedText);
+  }
+
+  // Multiple occurrences — use context to disambiguate
+  let bestIdx = occurrences[0];
+  let bestScore = -1;
+
+  for (const idx of occurrences) {
+    let score = 0;
+    if (contextBefore) {
+      const beforeInStripped = stripped.substring(Math.max(0, idx - contextBefore.length), idx);
+      // Count matching characters from the end of contextBefore
+      for (let i = 0; i < Math.min(contextBefore.length, beforeInStripped.length); i++) {
+        if (contextBefore[contextBefore.length - 1 - i] === beforeInStripped[beforeInStripped.length - 1 - i]) {
+          score++;
+        } else {
+          break;
+        }
+      }
+    }
+    if (contextAfter) {
+      const afterInStripped = stripped.substring(idx + selectedText.length, idx + selectedText.length + contextAfter.length);
+      for (let i = 0; i < Math.min(contextAfter.length, afterInStripped.length); i++) {
+        if (contextAfter[i] === afterInStripped[i]) {
+          score++;
+        } else {
+          break;
+        }
+      }
+    }
+    if (score > bestScore) {
+      bestScore = score;
+      bestIdx = idx;
+    }
+  }
+
+  return findOriginalIndex(markdown, stripped, bestIdx, selectedText);
+}
+
+function findOriginalIndex(markdown: string, stripped: string, strippedIdx: number, selectedText: string): number {
+  // Map stripped index back to original markdown index
+  // Walk through the original markdown, skipping HTML tags, counting plain text chars
+  let plainCount = 0;
+  let i = 0;
+  while (i < markdown.length && plainCount < strippedIdx) {
+    if (markdown[i] === '<') {
+      // Skip HTML tag
+      const closeIdx = markdown.indexOf('>', i);
+      if (closeIdx !== -1) {
+        i = closeIdx + 1;
+      } else {
+        i++;
+      }
+    } else {
+      plainCount++;
+      i++;
+    }
+  }
+
+  // Verify the text matches at this position (it might span across tags)
+  // Try direct match first
+  if (markdown.substring(i, i + selectedText.length) === selectedText) {
+    return i;
+  }
+
+  // If not a direct match (text might have HTML tags interspersed), fall back to indexOf from this region
+  const nearbyStart = Math.max(0, i - 20);
+  const nearbyEnd = Math.min(markdown.length, i + selectedText.length + 100);
+  const nearbyIdx = markdown.indexOf(selectedText, nearbyStart);
+  if (nearbyIdx !== -1 && nearbyIdx < nearbyEnd) {
+    return nearbyIdx;
+  }
 
   return -1;
 }
