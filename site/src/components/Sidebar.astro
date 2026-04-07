@@ -11,7 +11,7 @@ const articles = await getCollection('wiki');
 
 // Group articles by category (top-level directory)
 const categories: Record<string, { title: string; slug: string; status: string; depth: number }[]> = {};
-const categoryOrder = ['systems', 'tech-specs', 'exams', 'eops', 'concepts', 'admin', 'abnormals'];
+const categoryOrder = ['systems', 'tech-specs', 'exams', 'eops', 'concepts', 'admin', 'abnormals', 'procedures'];
 const categoryLabels: Record<string, string> = {
   systems: 'Systems',
   'tech-specs': 'Tech Specs',
@@ -20,6 +20,7 @@ const categoryLabels: Record<string, string> = {
   concepts: 'Concepts',
   admin: 'Admin Procedures',
   abnormals: 'Abnormals',
+  procedures: 'Procedures',
 };
 
 // Categories where individual sub-directory items should be hidden from sidebar
