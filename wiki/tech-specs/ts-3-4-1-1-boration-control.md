@@ -99,7 +99,7 @@ The RCS lowest operating loop temperature (Tavg) shall be greater than or equal 
 
 **Action:**
 
-With Tavg less than <span class="val-trip">541°F</span>, restore Tavg within <span class="val-alarm">15 minutes</span> or be in Hot Standby within the next 15 minutes.
+With Tavg less than <span class="val-trip">541°F</span>, restore Tavg within <span class="val-alarm">15 minutes</span> or be in Hot Standby within the next <span class="val-alarm">15 minutes</span>.
 
 **Surveillance Requirements:**
 
