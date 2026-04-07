@@ -227,14 +227,14 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
       return;
     }
 
-    const success = await commitHighlight(slug!, selectedText, highlightClass, token, contextBefore, contextAfter);
+    const result = await commitHighlight(slug!, selectedText, highlightClass, token, contextBefore, contextAfter);
     toast.remove();
 
-    if (success) {
+    if (result === true) {
       showToast('Committed ✓', 'success');
     } else {
       span.outerHTML = span.innerHTML;
-      showToast('Commit failed — check token permissions', 'error');
+      showToast(`Commit failed: ${result}`, 'error');
     }
   });
 });
@@ -247,7 +247,7 @@ async function commitHighlight(
   token: string,
   contextBefore: string = '',
   contextAfter: string = '',
-): Promise<boolean> {
+): Promise<true | string> {
   const filePath = `wiki/${slug}.md`;
   const apiBase = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${filePath}`;
   const headers = {
@@ -259,7 +259,7 @@ async function commitHighlight(
   try {
     // Read current file
     const getRes = await fetch(apiBase, { headers });
-    if (!getRes.ok) return false;
+    if (!getRes.ok) return `API read failed (${getRes.status})`;
 
     const fileData = await getRes.json();
     const sha = fileData.sha;
@@ -267,12 +267,12 @@ async function commitHighlight(
 
     // Find the selected text in the markdown using surrounding context to disambiguate
     const index = findTextInMarkdown(content, selectedText, contextBefore, contextAfter);
-    if (index === -1) return false;
+    if (index === -1) return `Text not found in source: "${selectedText.substring(0, 40)}..."`;
 
     // Check if already wrapped in a highlight span in the markdown source
     const before = content.substring(Math.max(0, index - 50), index);
     if (/class="(hi|hi-exam|hi-trap|val-normal|val-alarm|val-trip)">[^<]*$/.test(before)) {
-      return false; // Already highlighted in source
+      return 'Already highlighted';
     }
 
     // Wrap with highlight span
@@ -299,9 +299,10 @@ async function commitHighlight(
       return commitHighlight(slug, selectedText, highlightClass, token, contextBefore, contextAfter);
     }
 
-    return putRes.ok;
-  } catch {
-    return false;
+    if (!putRes.ok) return `API write failed (${putRes.status})`;
+    return true;
+  } catch (e) {
+    return `Error: ${e instanceof Error ? e.message : String(e)}`;
   }
 }
 
