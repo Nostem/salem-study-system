@@ -203,7 +203,11 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
     const span = document.createElement('span');
     span.className = highlightClass;
     try {
-      range.surroundContents(span);
+      // surroundContents fails if selection crosses node boundaries
+      // Use extractContents + insertNode as a more robust alternative
+      const contents = range.extractContents();
+      span.appendChild(contents);
+      range.insertNode(span);
     } catch {
       showToast("Can't highlight this selection", 'error');
       tooltip.classList.add('hidden');
