@@ -281,8 +281,8 @@ async function commitHighlight(
 
     // Commit
     const label = HIGHLIGHT_TYPES[highlightClass] || highlightClass;
-    const shortText = selectedText.length > 50 ? selectedText.substring(0, 50) + '...' : selectedText;
-    const message = `highlight: mark "${shortText}" as ${label}`;
+    const shortText = selectedText.substring(0, 40).replace(/[\n\r"\\]/g, ' ').trim();
+    const message = `highlight: mark as ${label}`;
 
     const putRes = await fetch(apiBase, {
       method: 'PUT',
