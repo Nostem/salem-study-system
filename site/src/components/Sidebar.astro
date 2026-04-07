@@ -9,8 +9,8 @@ const { currentSlug } = Astro.props;
 
 const articles = await getCollection('wiki');
 
-// Group articles by category (directory)
-const categories: Record<string, { title: string; slug: string; status: string }[]> = {};
+// Group articles by category (top-level directory)
+const categories: Record<string, { title: string; slug: string; status: string; depth: number }[]> = {};
 const categoryOrder = ['systems', 'tech-specs', 'exams', 'eops', 'concepts', 'admin', 'abnormals'];
 const categoryLabels: Record<string, string> = {
   systems: 'Systems',
@@ -22,25 +22,57 @@ const categoryLabels: Record<string, string> = {
   abnormals: 'Abnormals',
 };
 
+// Categories where individual sub-directory items should be hidden from sidebar
+// (they're embedded in parent articles or accessed via parent links)
+const hideSubItems = new Set(['exams']);
+
 for (const article of articles) {
   const slug = article.id;
-  // Skip _index.md
   if (slug === '_index') continue;
 
-  const category = slug.split('/')[0] ?? 'uncategorized';
-  const title = article.data.title ?? slug.split('/').pop()?.replace(/-/g, ' ') ?? slug;
+  const parts = slug.split('/');
+  const category = parts[0] ?? 'uncategorized';
+  const depth = parts.length - 1; // 0 = top-level in category, 1 = one folder deep, etc.
+  const title = article.data.title ?? parts[parts.length - 1]?.replace(/-/g, ' ') ?? slug;
   const status = article.data.status ?? 'draft';
 
+  // Skip sub-directory items for categories in hideSubItems
+  // e.g., exams/2023/q01-... has depth 2, skip it. exams/2023-written-exam has depth 1, keep it.
+  if (hideSubItems.has(category) && depth > 1) continue;
+
   if (!categories[category]) categories[category] = [];
-  categories[category].push({ title, slug, status });
+  categories[category].push({ title, slug, status, depth });
 }
 
-// Sort articles alphabetically within each category
+// Natural numeric sort — handles "TS 3/4.1" before "TS 3/4.10", "Q1" before "Q10"
+function naturalSort(a: string, b: string): number {
+  const re = /(\d+)|(\D+)/g;
+  const aParts = a.match(re) || [];
+  const bParts = b.match(re) || [];
+
+  for (let i = 0; i < Math.max(aParts.length, bParts.length); i++) {
+    const aPart = aParts[i] ?? '';
+    const bPart = bParts[i] ?? '';
+
+    const aNum = parseInt(aPart, 10);
+    const bNum = parseInt(bPart, 10);
+
+    if (!isNaN(aNum) && !isNaN(bNum)) {
+      if (aNum !== bNum) return aNum - bNum;
+    } else {
+      const cmp = aPart.localeCompare(bPart);
+      if (cmp !== 0) return cmp;
+    }
+  }
+  return 0;
+}
+
+// Sort articles within each category using natural sort
 for (const cat of Object.keys(categories)) {
-  categories[cat].sort((a, b) => a.title.localeCompare(b.title));
+  categories[cat].sort((a, b) => naturalSort(a.title, b.title));
 }
 
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 ---
 
 <aside id="sidebar" class="w-[240px] min-w-[240px] border-r border-[#1a2035] bg-[#0b1020] geo-pattern text-xs overflow-y-auto h-[calc(100vh-48px)] sticky top-[48px]">
@@ -57,7 +89,7 @@ const base = import.meta.env.BASE_URL;
             const isActive = currentSlug === item.slug;
             return (
               <a
-                href={`${base.endsWith('/') ? base : base + '/'}${item.slug}`}
+                href={`${base}${item.slug}`}
                 class:list={[
                   'block px-4 pl-6 py-[5px] no-underline transition-colors',
                   isActive
@@ -73,7 +105,7 @@ const base = import.meta.env.BASE_URL;
       );
     })}
     <div class="mt-4 px-4 pt-2 border-t border-[#1a2035]">
-      <a href={`${base.endsWith('/') ? base : base + '/'}graph`} class="flex items-center gap-1.5 px-3 py-1.5 text-[#6b7280] hover:text-[#c8cdd5] no-underline text-[11px]">
+      <a href={`${base}graph`} class="flex items-center gap-1.5 px-3 py-1.5 text-[#6b7280] hover:text-[#c8cdd5] no-underline text-[11px]">
         <span class="text-sm">◉</span> Graph View
       </a>
     </div>
