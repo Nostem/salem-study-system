@@ -29,7 +29,7 @@ With the SHUTDOWN MARGIN less than <span class="val-trip">1.3% delta k/k</span>,
 
 | SR | Requirement | Frequency |
 |----|-------------|-----------|
-| 4.1.1.1.1.a | Determine SDM ≥ 1.3% delta k/k after inoperable rod detected. If rod is immovable or untrippable, increase required SDM by at least the withdrawn worth of that rod. | Within 1 hr, then every 12 hrs while inoperable |
+| 4.1.1.1.1.a | <span class="hi-exam">Determine SDM ≥ 1.3% delta k/k after inoperable rod detected</span>. If rod is immovable or untrippable, increase required SDM by at least the withdrawn worth of that rod. | Within 1 hr, then every 12 hrs while inoperable |
 | 4.1.1.1.1.b | Verify control banks within COLR limits (Mode 1, 2 with keff ≥ 1.0) | Per SFCP |
 | 4.1.1.1.1.c | Verify predicted critical rod position within COLR limits (Mode 2, keff < 1.0) | Within 4 hrs prior to criticality |
 | 4.1.1.1.1.d | Consider SDM factors with control banks at max insertion limit | Prior to initial >5% RTP after each fuel loading |
