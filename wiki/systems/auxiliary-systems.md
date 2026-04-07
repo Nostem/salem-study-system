@@ -116,5 +116,5 @@ Removes decay heat from spent fuel stored in the spent fuel pool. Maintains pool
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Steam Generators]], [[Reactor Coolant Pumps]], [[Emergency Core Cooling Systems]], [[Containment Systems]], [[Electrical Power Systems]]
+- Related systems: [[Chemical and Volume Control System]], [[Auxiliary Feedwater]], [[Component Cooling Water]], [[Service Water]], [[Reactor Coolant System]], [[Steam Generators]], [[Reactor Coolant Pumps]], [[Emergency Core Cooling Systems]], [[Containment Systems]], [[Electrical Power Systems]]
 - Related tech specs: [[TS 3/4.7 — Plant Systems]], [[TS 3/4.1 — Reactivity Control]]

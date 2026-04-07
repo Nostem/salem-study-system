@@ -4,10 +4,6 @@ category: systems
 status: draft
 aliases:
   - electrical
-  - AC power
-  - DC power
-  - diesel generators
-  - EDG
 ---
 
 # Electrical Power Systems

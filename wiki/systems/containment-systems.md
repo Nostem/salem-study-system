@@ -4,7 +4,6 @@ category: systems
 status: draft
 aliases:
   - containment
-  - containment spray
   - containment isolation
 ---
 

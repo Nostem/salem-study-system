@@ -2,12 +2,7 @@
 title: Main Steam and Feedwater
 category: systems
 status: draft
-aliases:
-  - main steam
-  - feedwater
-  - MSIV
-  - steam dump
-  - turbine generator
+aliases: []
 ---
 
 # Main Steam and Feedwater
