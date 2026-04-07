@@ -53,5 +53,4 @@ Transports steam from the four steam generators to the turbine-generator and oth
 ## Connections
 
 - Related systems: [[Steam Generators]], [[Turbine-Generator]], [[Auxiliary Feedwater]], [[Instrumentation and Controls]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]

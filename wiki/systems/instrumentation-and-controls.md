@@ -122,11 +122,10 @@ Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass brea
 ## Tech Spec LCOs
 
 - **[[TS 3/4.3 — Instrumentation]]** — Trip setpoints, response times, channel operability
-- **TS 3/4.3.1** — Reactor Trip System Instrumentation
-- **TS 3/4.3.2** — ESF Actuation System Instrumentation
+- **[[TS 3/4.3 — Instrumentation|TS 3/4.3.1]]** — Reactor Trip System Instrumentation
+- **[[TS 3/4.3 — Instrumentation|TS 3/4.3.2]]** — ESF Actuation System Instrumentation
 
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Containment Systems]], [[Auxiliary Feedwater]]
 - Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]

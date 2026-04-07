@@ -48,4 +48,3 @@ Each fan-cooler unit includes: motor, fan, motor heat exchanger, cooling coils, 
 ## Connections
 
 - Related systems: [[Containment Systems]], [[Service Water]]
-- Related tech specs: [[TS 3/4.6 — Containment]]

@@ -53,4 +53,3 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 ## Connections
 
 - Related systems: [[AC Power]], [[Diesel Generators]], [[Electrical Power Systems]], [[Instrumentation and Controls]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]

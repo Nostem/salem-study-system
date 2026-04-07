@@ -103,14 +103,13 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 ## Tech Spec LCOs
 
 - **[[TS 3/4.6 — Containment]]** — Containment integrity, leakage
-- **TS 3/4.6.1** — Containment Integrity
-- **TS 3/4.6.2** — Depressurization and Cooling Systems (spray, fan coolers)
-- **TS 3/4.6.3** — Containment Isolation Valves
-- **TS 3/4.6.4** — Combustible Gas Control
-- **TS 3/4.6.5** — Containment Structural Integrity
+- **[[TS 3/4.6 — Containment|TS 3/4.6.1]]** — Containment Integrity
+- **[[TS 3/4.6 — Containment|TS 3/4.6.2]]** — Depressurization and Cooling Systems (spray, fan coolers)
+- **[[TS 3/4.6 — Containment|TS 3/4.6.3]]** — Containment Isolation Valves
+- **[[TS 3/4.6 — Containment|TS 3/4.6.4]]** — Combustible Gas Control
+- **[[TS 3/4.6 — Containment|TS 3/4.6.5]]** — Containment Structural Integrity
 
 ## Connections
 
 - Related systems: [[Emergency Core Cooling Systems]], [[Service Water]], [[Reactor Coolant System]]
-- Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]]

@@ -145,13 +145,12 @@ Provides suction source for all ECCS pumps during injection phase. Minimum volum
 ## Tech Spec LCOs
 
 - **[[TS 3/4.5 — ECCS]]** — ECCS subsystem operability
-- **TS 3/4.5.1** — Accumulators (Modes 1, 2, 3 with pressurizer pressure ≥1000 psig)
-- **TS 3/4.5.2** — ECCS Subsystems (Tavg ≥350°F)
-- **TS 3/4.5.3** — ECCS Subsystems (Tavg <350°F)
-- **TS 3/4.5.4** — RWST
+- **[[TS 3/4.5 — ECCS|TS 3/4.5.1]]** — Accumulators (Modes 1, 2, 3 with pressurizer pressure ≥1000 psig)
+- **[[TS 3/4.5 — ECCS|TS 3/4.5.2]]** — ECCS Subsystems (Tavg ≥350°F)
+- **[[TS 3/4.5 — ECCS|TS 3/4.5.3]]** — ECCS Subsystems (Tavg <350°F)
+- **[[TS 3/4.5 — ECCS|TS 3/4.5.4]]** — RWST
 
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Residual Heat Removal]], [[Chemical and Volume Control System]], [[Containment Systems]]
-- Related tech specs: [[TS 3/4.5 — ECCS]], [[TS 3/4.3 — Instrumentation]]
 - Related EOPs: [[EOP-LOCA Series]]

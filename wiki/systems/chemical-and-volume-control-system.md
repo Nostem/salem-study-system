@@ -57,5 +57,4 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Reactor Coolant Pumps]], [[Emergency Core Cooling Systems]]
-- Related tech specs: [[TS 3/4.1.1 — Boration Control]], [[TS 3/4.1.2 — Boration Systems]]
 - Related concepts: [[Nuclear Design]]

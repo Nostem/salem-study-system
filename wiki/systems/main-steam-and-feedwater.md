@@ -70,8 +70,8 @@ Actuated by:
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — Main steam safety valves, AFW, MSIVs
-- **TS 3/4.7.1.1** — Main Steam Safety Valves
-- **TS 3/4.7.1.5** — Main Steam Isolation Valves
+- **[[TS 3/4.7 — Plant Systems|TS 3/4.7.1.1]]** — Main Steam Safety Valves
+- **[[TS 3/4.7 — Plant Systems|TS 3/4.7.1.5]]** — Main Steam Isolation Valves
 
 ## Connections
 

@@ -123,15 +123,15 @@ Three principal high points: pressurizer, reactor vessel head, and steam generat
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System]]** — RCS pressure, temperature, flow limits
-- **TS 3/4.4.1** — Reactor Coolant Loops (Modes 1-4)
-- **TS 3/4.4.2** — Safety Valves
-- **TS 3/4.4.3** — PORVs and Block Valves
-- **TS 3/4.4.4** — Pressurizer
-- **TS 3/4.4.5** — Steam Generators
-- **TS 3/4.4.6** — RCS Leakage Detection
-- **TS 3/4.4.7** — RCS Leakage
-- **TS 3/4.4.8** — Chemistry
-- **TS 3/4.4.9** — Specific Activity
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (Modes 1-4)
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.2]]** — Safety Valves
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.3]]** — PORVs and Block Valves
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.4]]** — Pressurizer
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.6]]** — RCS Leakage Detection
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.7]]** — RCS Leakage
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.8]]** — Chemistry
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.9]]** — Specific Activity
 
 ## Related EOPs
 
@@ -142,5 +142,4 @@ Three principal high points: pressurizer, reactor vessel head, and steam generat
 ## Connections
 
 - Related systems: [[Pressurizer]], [[Steam Generators]], [[Reactor Coolant Pumps]], [[Reactor Vessel]], [[Chemical and Volume Control System]], [[Residual Heat Removal]], [[Emergency Core Cooling Systems]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)

@@ -75,9 +75,8 @@ During LOCA recirculation, the RHR pumps take suction from the containment sump 
 ## Tech Spec LCOs
 
 - **[[TS 3/4.5 — ECCS]]** — RHR subsystems as part of ECCS
-- **TS 3/4.9** — RHR requirements during refueling
+- **[[TS 3/4.9 — Refueling|TS 3/4.9]]** — RHR requirements during refueling
 
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Component Cooling Water]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]

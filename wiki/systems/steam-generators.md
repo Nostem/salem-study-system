@@ -83,10 +83,9 @@ The steam generators transfer heat from the reactor coolant (primary side) to th
 
 ## Tech Spec LCOs
 
-- **TS 3/4.4.5** — Steam Generators (tube integrity, inspection requirements)
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators (tube integrity, inspection requirements)
 
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Main Steam]], [[Feedwater]], [[Auxiliary Feedwater]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
 - Related EOPs: [[EOP-SGTR-1]]

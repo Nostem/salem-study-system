@@ -63,4 +63,3 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 ## Connections
 
 - Related systems: [[Containment Systems]], [[Emergency Core Cooling Systems]], [[Residual Heat Removal]]
-- Related tech specs: [[TS 3/4.6 — Containment]]

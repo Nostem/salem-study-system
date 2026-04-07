@@ -45,4 +45,3 @@ Converts steam energy from the steam generators into electrical energy. (UFSAR 1
 ## Connections
 
 - Related systems: [[Main Steam]], [[Feedwater and Condensate]], [[Electrical Power Systems]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]

@@ -50,5 +50,4 @@ Provides feedwater to steam generators when the main feedwater system is unavail
 ## Connections
 
 - Related systems: [[Steam Generators]], [[Main Steam and Feedwater]], [[Service Water]], [[Electrical Power Systems]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]

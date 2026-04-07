@@ -36,4 +36,3 @@ Provides cooling water from the Delaware River (ultimate heat sink) to remove he
 ## Connections
 
 - Related systems: [[Component Cooling Water]], [[Containment Systems]], [[Auxiliary Feedwater]], [[Electrical Power Systems]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]

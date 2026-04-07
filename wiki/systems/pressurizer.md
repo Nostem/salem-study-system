@@ -70,10 +70,9 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
 
 ## Tech Spec LCOs
 
-- **TS 3/4.4.4** — Pressurizer (level and heater requirements)
-- **TS 3/4.4.3** — PORVs and Block Valves
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.4]]** — Pressurizer (level and heater requirements)
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.3]]** — PORVs and Block Valves
 
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Chemical and Volume Control System]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]

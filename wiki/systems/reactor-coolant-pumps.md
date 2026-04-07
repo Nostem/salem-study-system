@@ -69,9 +69,8 @@ Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barr
 
 ## Tech Spec LCOs
 
-- **TS 3/4.4.1** — Reactor Coolant Loops (minimum loops in operation by mode)
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (minimum loops in operation by mode)
 
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Component Cooling Water]], [[Chemical and Volume Control System]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]

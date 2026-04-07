@@ -51,4 +51,3 @@ On SI signal with loss of offsite power:
 ## Connections
 
 - Related systems: [[AC Power]], [[Electrical Power Systems]], [[Emergency Core Cooling Systems]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]

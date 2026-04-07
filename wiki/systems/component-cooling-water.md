@@ -42,4 +42,3 @@ Closed-loop cooling water system that provides an intermediate barrier between p
 ## Connections
 
 - Related systems: [[Reactor Coolant Pumps]], [[Residual Heat Removal]], [[Service Water]], [[Chemical and Volume Control System]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]

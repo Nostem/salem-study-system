@@ -108,13 +108,12 @@ Removes decay heat from spent fuel stored in the spent fuel pool. Maintains pool
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — AFW, SW, CCW, and other plant systems
-- **TS 3/4.7.1.2** — Auxiliary Feedwater
-- **TS 3/4.7.3** — Component Cooling Water
-- **TS 3/4.7.4** — Service Water
+- **[[TS 3/4.7 — Plant Systems|TS 3/4.7.1.2]]** — Auxiliary Feedwater
+- **[[TS 3/4.7 — Plant Systems|TS 3/4.7.3]]** — Component Cooling Water
+- **[[TS 3/4.7 — Plant Systems|TS 3/4.7.4]]** — Service Water
 - **[[TS 3/4.1 — Reactivity Control]]** — Boration systems (CVCS)
-- **TS 3/4.9** — Refueling Operations (SFP cooling)
+- **[[TS 3/4.9 — Refueling|TS 3/4.9]]** — Refueling Operations (SFP cooling)
 
 ## Connections
 
 - Related systems: [[Chemical and Volume Control System]], [[Auxiliary Feedwater]], [[Component Cooling Water]], [[Service Water]], [[Reactor Coolant System]], [[Steam Generators]], [[Reactor Coolant Pumps]], [[Emergency Core Cooling Systems]], [[Containment Systems]], [[Electrical Power Systems]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]], [[TS 3/4.1 — Reactivity Control]]

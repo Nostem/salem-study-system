@@ -71,7 +71,7 @@ The reactor vessel contains the reactor core, core support structures, control r
 
 ## Tech Spec LCOs
 
-- **TS 3/4.4.9** — RCS Specific Activity
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.9]]** — RCS Specific Activity
 - Pressure-temperature limits governed by Appendix G analysis
 
 ## Connections

@@ -68,11 +68,10 @@ On SI signal with loss of offsite power:
 ## Tech Spec LCOs
 
 - **[[TS 3/4.8 — Electrical]]** — AC and DC power source operability
-- **TS 3/4.8.1** — AC Sources (offsite and onsite)
-- **TS 3/4.8.2** — DC Sources (batteries and chargers)
-- **TS 3/4.8.3** — Onsite Power Distribution
+- **[[TS 3/4.8 — Electrical|TS 3/4.8.1]]** — AC Sources (offsite and onsite)
+- **[[TS 3/4.8 — Electrical|TS 3/4.8.2]]** — DC Sources (batteries and chargers)
+- **[[TS 3/4.8 — Electrical|TS 3/4.8.3]]** — Onsite Power Distribution
 
 ## Connections
 
 - Related systems: [[Emergency Core Cooling Systems]], [[Instrumentation and Controls]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
