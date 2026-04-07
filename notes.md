@@ -16,6 +16,9 @@ The goals are multi-fold:
 - use inline highlights and callout blocks as previously discussed
 - new wiki articles and system articles may need to be generated that werent initially built.
 - how to handle images/drawings etc
+- How do we handle jpms?
+- Sim scenarios? Valuable info but how do we incorporate? Have a separate section for sim scenarios, each scenario gets its own article maybe? 
+
 
 ### Questions
 - how to handle wiki building. does each question/answer/explanation trio get its own wiki article?
