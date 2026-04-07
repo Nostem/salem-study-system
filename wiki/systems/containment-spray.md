@@ -16,7 +16,7 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 
 ## Actuation
 
-- Actuated on Hi-Hi Containment Pressure ("P" signal, 2/4 at 18.0 psig)
+- Actuated on Hi-Hi Containment Pressure ("P" signal, 2/4 at <span class="val-trip">15.0 psig</span>)
 - Phase B containment isolation also actuates on the "P" signal
 (UFSAR T7.2-1, TS Table 3.3-4)
 
