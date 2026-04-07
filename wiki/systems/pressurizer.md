@@ -18,7 +18,7 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
 |-----------|-------|--------|
 | Design/Operating Pressure | 2485 / <span class="val-normal">2235 psig</span> | UFSAR T5.2-4 |
 | Hydrostatic Test Pressure (cold) | 3107 psig | UFSAR T5.2-4 |
-| Design/Operating Temperature | 680 / 653°F | UFSAR T5.2-4 |
+| Design/Operating Temperature | 680 / <span class="val-normal">653°F</span> | UFSAR T5.2-4 |
 | Shell ID | 84 in | UFSAR T5.2-4 |
 | Water Volume (full power) | 1080 ft³ (60% of net internal volume) | UFSAR T5.2-4 |
 | Steam Volume (full power) | 720 ft³ | UFSAR T5.2-4 |
