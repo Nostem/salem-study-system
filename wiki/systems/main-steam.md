@@ -46,6 +46,11 @@ Transports steam from the four steam generators to the turbine-generator and oth
 - Cooldown mode: controlled by steam pressure for controlled cooldown rate
 (UFSAR 7.7.2.7)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q18</div>
+<span class="hi-exam">MSLI signals for high steam flow with Lo-Lo Tavg CANNOT be blocked</span> — not even by manually actuating and resetting SI. If steam dump rate is too high during EOP-directed depressurization, high steam flow + P-12 (Lo-Lo Tavg) will actuate MSLI, closing all MSIVs and making steam dumps unavailable. Continue depressurization via MS10 atmospheric dump valves. High steamline differential pressure causes SI, not MSLI — different signals.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.1 MSSVs, TS 3.7.1.5 MSIVs

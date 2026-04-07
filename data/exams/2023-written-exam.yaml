@@ -140,3 +140,207 @@ questions:
     ka_importance: 4.1
     type: RO
     tier_group: "Tier 1/Group 1"
+
+  - number: 11
+    topic: "Loss of Vital Instrument Bus / NI Channel Response"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - Byron Oct 2019 NRC RO55"
+    systems:
+      - instrumentation-and-controls
+      - ac-power
+    tech_specs: []
+    ka: "APE 57 AK2.08"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 12
+    topic: "Loss of 125VDC / EDG Starting"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - dc-power
+      - diesel-generators
+    tech_specs: []
+    ka: "APE 58 AK3.01"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 13
+    topic: "R13 Radiation Monitors / CFCU SW Pathway"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - service-water
+      - containment-fan-coil-units
+    tech_specs: []
+    ka: "APE 62 AK2.08"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 14
+    topic: "Control Air / PORV Accumulators and Spray Valves"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - pressurizer
+      - auxiliary-systems
+    tech_specs: []
+    ka: "APE 65 AA1.03"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 15
+    topic: "Grid Disturbance / Unit Trip Effects on MVARs"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified - Salem 2022 NRC RO17"
+    systems:
+      - ac-power
+      - turbine-generator
+    tech_specs: []
+    ka: "APE 77 AA2.05"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 16
+    topic: "LOCA Outside Containment / SI Pump Leak Isolation"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+    tech_specs: []
+    ka: "W E04 EA1.04"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 17
+    topic: "Loss of Emergency Recirc / Upper Head Voiding"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - reactor-coolant-system
+      - emergency-core-cooling-systems
+    tech_specs: []
+    ka: "W E11 EK1.07"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 18
+    topic: "Loss of Secondary Heat Sink / MSLI on High Steam Flow"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - main-steam
+      - instrumentation-and-controls
+    tech_specs: []
+    ka: "W E05 EK1.09"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 19
+    topic: "EOP-TRIP-2 / Inadequate Rapid Boration Flow"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Byron 2019 NRC RO21"
+    systems:
+      - chemical-and-volume-control-system
+    tech_specs: []
+    ka: "APE 24 AA2.12"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 20
+    topic: "Condenser Backpressure / Effect on Turbine"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - turbine-generator
+    tech_specs: []
+    ka: "APE 51 AK1.02"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 21
+    topic: "Containment Spray Logic / Channel Removed from Service"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-spray
+      - instrumentation-and-controls
+    tech_specs: []
+    ka: "W E14 EA1.08"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 22
+    topic: "High RCS Activity / Maximize Letdown Flow"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem"
+    systems:
+      - chemical-and-volume-control-system
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "APE 76 AK3.04"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 23
+    topic: "EOP Flowchart Symbols / Concurrent Step"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: []
+    tech_specs: []
+    ka: "W E01 & E02 G2.4.19"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 24
+    topic: "Containment Flooding / SW Not Isolated by Phase A/B"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems:
+      - service-water
+      - containment-systems
+    tech_specs: []
+    ka: "W E15 EK2.03"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 25
+    topic: "High Containment Radiation / CFCU Low Speed HEPA"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-fan-coil-units
+    tech_specs: []
+    ka: "W E16 EA1.05"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 1/Group 2"

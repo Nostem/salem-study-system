@@ -56,6 +56,18 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 CV71 acts as a backpressure control valve affecting both charging and seal injection flows. <span class="hi-exam">Throttling CV71 CLOSED raises backpressure → seal injection flow RISES and charging flow LOWERS. Throttling CV71 OPEN lowers backpressure → seal injection flow LOWERS and charging flow RISES.</span> This relationship is critical during RCS leak response when adjusting charging to stabilize PZR level.
 </div>
 
+## Rapid Boration
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q19</div>
+Rapid boration via BAT pump and 2CV175 requires <span class="hi-exam">adequate flow of 36 gpm</span>. If rapid boration flow is inadequate (e.g., only 20 gpm indicated), per EOP-TRIP-2: stop BAT pump, realign charging pump suction to the RWST, and maintain charging flow > 87 gpm. Note: EOP-FRSM-1 has a different pathway (cold leg injection via BIT valves) — do not confuse with EOP-TRIP-2 actions.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q22</div>
+During high RCS activity (below TS limits), per AB.RC-0002: <span class="hi-exam">maximize letdown flow to accelerate RCS cleanup through the demineralizers</span>. Do NOT reduce letdown — increasing letdown is the correct response to accelerate cleanup.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.2 — Boration Systems]]** — Flow paths, charging pumps, borated water sources

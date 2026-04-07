@@ -29,6 +29,11 @@ Provide standby AC power to vital buses on loss of offsite power or upon receipt
 - 7-day fuel oil supply required for OPERABILITY
 - Each DG independent with separate fuel supply, starting air, and cooling
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q12</div>
+<span class="hi-exam">EDG starting circuits are supplied from 125 VDC power.</span> On loss of the associated 125V DC bus, the EDG will NOT start automatically from SI/SEC signal or remotely from the control room. The SI signal goes to the SEC (powered by vital instrument power), which sends a start signal to the EDG start circuitry (DC powered). Without DC, the start circuit cannot function.
+</div>
+
 ## Diesel Generator Trip Functions
 
 DGs have protective trips that are bypassed during emergency start (SI or loss of voltage) to ensure the DG remains running when needed. Only certain trips remain active during emergency operation. (UFSAR 8.3.1.5.2)

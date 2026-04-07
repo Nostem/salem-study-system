@@ -39,6 +39,21 @@ Each fan-cooler unit includes: motor, fan, motor heat exchanger, cooling coils, 
 - Normal operation: recirculate and cool containment atmosphere
 - Accident operation: reduced airflow but higher heat removal due to elevated containment temperature
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q25</div>
+<span class="hi-exam">In LOW speed, CFCU dampers realign flow through HEPA filters (bypassing roughing filters) to reduce radioactivity inside containment.</span> In HIGH speed (normal), flow goes through roughing filters. EOP-FRCE-3 directs placing all CFCUs in LOW speed for containment atmosphere cleanup.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q13</div>
+<span class="hi-exam">R13 radiation monitors monitor CFCU service water DISCHARGE for radioactivity from containment into the SW system. CFCU SW flow discharges into the OPPOSITE unit's Circulating Water system.</span> Loss of the opposite unit's CW flow prevents monitoring of this effluent pathway.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q24</div>
+<span class="hi-exam">Service water to CFCUs is NOT isolated by Phase A or Phase B containment isolation signals.</span> Following a LOCA with both Phase A and B actuated, SW from CFCUs is the only source of water into containment that remains unisolated (Fire Protection isolated on Phase A, CCW on Phase B, Primary Water on Phase A).
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.6 — Containment]]** — TS 3.6.2.3 requires at least 3 CFCUs OPERABLE

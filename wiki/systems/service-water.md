@@ -28,6 +28,11 @@ Provides cooling water from the Delaware River (ultimate heat sink) to remove he
 - Two independent loops required for single-failure capability
 - Supplies backup water source for AFW system
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q24</div>
+<span class="hi-exam">Service water to CFCUs is NOT isolated by Phase A or Phase B containment isolation signals.</span> Following a LOCA with both Phase A and B actuated, SW is the only remaining source of water into containment. This is the cause of unexpected containment water level rise addressed in EOP-FRCE-2.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.4 requires two independent SW loops OPERABLE in Modes 1–4
