@@ -94,7 +94,7 @@ Where K1 = setpoint bias, K2 = temperature effect on DNB, K3 = pressure effect o
 
 ## Overpower Delta-T Trip
 
-Protects against excessive power (fuel rod rating). Continuously calculated per loop (2/4 coincidence):
+<span class="hi">Protects against excessive power (fuel rod rating)</span>. Continuously calculated per loop (2/4 coincidence):
 
 Delta-T setpoint = K4 - K5*(rate of change of Tavg) + K6*(Tavg - Tavg-setpoint) - f(delta-phi)
 
