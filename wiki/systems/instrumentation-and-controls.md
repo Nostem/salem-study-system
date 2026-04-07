@@ -78,7 +78,7 @@ Note: Automatic rod withdrawal is disabled at Salem. (UFSAR T7.2-2)
 | Pump | Actuation Signals | Source |
 |------|------------------|--------|
 | Turbine-Driven | 2/3 Lo-Lo level in any 2 SGs; OR RCP bus undervoltage (1/2 twice); OR manual | UFSAR T7.2-1 |
-| Motor-Driven | 2/3 Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence; OR blackout sequence; OR manual | UFSAR T7.2-1 |
+| Motor-Driven | 2/3 Lo-Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence; OR blackout sequence; OR manual | UFSAR T7.2-1 |
 
 ## Main Feedwater Isolation
 
