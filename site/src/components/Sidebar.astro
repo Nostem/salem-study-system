@@ -11,13 +11,14 @@ const articles = await getCollection('wiki');
 
 // Group articles by category (directory)
 const categories: Record<string, { title: string; slug: string; status: string }[]> = {};
-const categoryOrder = ['systems', 'tech-specs', 'exams', 'eops', 'concepts', 'abnormals'];
+const categoryOrder = ['systems', 'tech-specs', 'exams', 'eops', 'concepts', 'admin', 'abnormals'];
 const categoryLabels: Record<string, string> = {
   systems: 'Systems',
   'tech-specs': 'Tech Specs',
   exams: 'Exams',
   eops: 'EOPs',
   concepts: 'Concepts',
+  admin: 'Admin Procedures',
   abnormals: 'Abnormals',
 };
 

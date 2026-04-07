@@ -44,4 +44,6 @@ Per OP-AA-101-111, Roles and Responsibilities of On-Shift Personnel, which of th
 
 ## Connections
 
+- Related procedures: [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
+- Related tech specs: [[TS 6.0 — Administrative Controls]]
 - Related exam: [[2023 NRC Written Exam]]
