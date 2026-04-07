@@ -4,10 +4,6 @@ category: systems
 status: draft
 aliases:
   - auxiliary
-  - service water
-  - component cooling water
-  - CVCS
-  - auxiliary feedwater
 ---
 
 # Auxiliary Systems
