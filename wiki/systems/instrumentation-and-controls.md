@@ -110,7 +110,7 @@ Provides low-temperature overpressure protection by enabling PORVs to open at a 
 
 ## Reactor Trip Breakers
 
-Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass breaker (52/BYA and 52/BYB). Trip signal deenergizes undervoltage coils and actuates shunt trip. If a bypass breaker is closed for testing and the other train's bypass breaker is also closed, both trip breakers and bypass breakers are automatically tripped by the General Warning Alarm. (UFSAR 7.2.2)
+Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass breaker (52/BYA and 52/BYB). Trip signal deenergizes undervoltage coils and actuates shunt trip. <span class="hi-exam">If a bypass breaker is closed for testing and the other train's bypass breaker is also closed, both trip breakers and bypass breakers are automatically tripped by the General Warning Alarm.</span> (UFSAR 7.2.2)
 
 ## Nuclear Instrumentation Ranges
 
