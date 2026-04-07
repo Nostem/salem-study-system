@@ -134,7 +134,7 @@ The MTC limits ensure this coefficient remains within the conditions assumed in 
 
 ---
 
-*[View Tech Spec PDF](/salem-study-system/ts-pdfs/ts-3-4-1-1.pdf)*
+<a href="/salem-study-system/ts-pdfs/ts-3-4-1-1.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 
