@@ -50,6 +50,16 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
   - Safety valves lift at <span class="val-trip">2485 psig</span>
 - (UFSAR T5.2-1)
 
+## Pressurizer Heater Power Supplies
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q7</div>
+PZR Backup Heater Group power supplies:<br>
+- <span class="hi-exam">Group 1 (21): Normal — 2G 4KV Group Bus. Emergency backup — 2C 460V Vital Bus.</span><br>
+- <span class="hi-exam">Group 2 (22): Normal — 2E 4KV Group Bus. Emergency backup — 2A 460V Vital Bus.</span><br>
+Transfer to emergency backup source is MANUAL (not automatic). EOP-LOSC-2 step 26 directs restoring normal power or transferring to emergency backup.
+</div>
+
 ## Pressurizer Relief Tank
 
 | Parameter | Value | Source |

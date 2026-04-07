@@ -92,13 +92,18 @@ Delta-T setpoint = K1 - K2*(Tavg) + K3*(P) - f(delta-phi)
 
 Where K1 = setpoint bias, K2 = temperature effect on DNB, K3 = pressure effect on DNB, f(delta-phi) = axial flux difference penalty. Changes in f(delta-phi) can only decrease the setpoint. (UFSAR 7.2.2.5)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q5</div>
+<span class="hi-exam">OT Delta-T has a PRESSURE input (+K3*P). As RCS pressure LOWERS, the OT Delta-T setpoint LOWERS (becomes more restrictive).</span> OP Delta-T does NOT have a pressure input. If PZR pressure controlling channel fails HIGH, actual pressure drops → OT Delta-T setpoint lowers → OT Delta-T trips reactor before low PZR pressure trip.
+</div>
+
 ## Overpower Delta-T Trip
 
 <span class="hi">Protects against excessive power (fuel rod rating)</span>. Continuously calculated per loop (2/4 coincidence):
 
 Delta-T setpoint = K4 - K5*(rate of change of Tavg) + K6*(Tavg - Tavg-setpoint) - f(delta-phi)
 
-(UFSAR 7.2.2.5)
+<span class="hi-exam">OP Delta-T does NOT have a pressure input.</span> (UFSAR 7.2.2.5)
 
 ## AMSAC (ATWS Mitigation System Actuation Circuitry)
 

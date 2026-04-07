@@ -36,10 +36,22 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 - Loss of 28V DC supply causes reactor trip breaker to open (fail-safe design)
 (UFSAR 8.3.2.1)
 
+## Station Battery Capacity
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q9</div>
+125V DC vital batteries are rated for <span class="hi-exam">2 hours during worst-case loading (no load shed)</span> following a Loss of All AC Power. With manual load shedding per EOP-LOPA-1, battery life extends to <span class="hi-exam">4 hours</span> (SBO coping duration). Loss of All AC Power is NOT a Design Basis Accident.
+</div>
+
+| Condition | Battery Duration | Source |
+|-----------|-----------------|--------|
+| Worst case, no load shed | <span class="hi">2 hours</span> | VTD 314204 |
+| With EOP-LOPA-1 load shedding | <span class="hi">4 hours</span> (SBO coping duration) | VTD 314204 |
+
 ## Key Design Points
 
 - DC power is critical for safety functions — provides control power independent of AC
-- 125V batteries sized for station blackout duration
+- 125V batteries sized for station blackout coping duration (4 hours with load shedding)
 - Battery OPERABILITY verified by regular capacity testing
 - Loss of a 28V supply directly trips the associated reactor trip breaker
 

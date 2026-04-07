@@ -59,6 +59,22 @@ Each reactor coolant loop contains a vertical, single-stage, mixed-flow pump wit
 - **Anti-reverse rotation device:** Prevents reverse rotation on loss of power
 - (UFSAR 5.1, 5.5.1)
 
+## RCP Seal System
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q10</div>
+If ANY RCP seal inlet temperature is ≥ <span class="val-trip">225°F</span>, restoring seal injection flow is NOT permitted. Seal injection must be isolated before starting the charging pump. This prevents thermal shock and damage to the #1 seal from cold seal injection water contacting hot seal components.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q4</div>
+RCP thermal barrier rupture indications: (1) CCW radiation monitors (R17 A/B) in warning — RCS leaking into CCW, (2) CCW surge tank level rising, (3) CC131 thermal barrier isolation valve goes CLOSED on high CCW flow. PZR level does NOT rise (RCS is leaking OUT). Charging flow does NOT lower.
+</div>
+
+- **Seal inlet temp limit:** <span class="val-trip">≥225°F</span> — do not restore seal injection (prevents #1 seal thermal shock damage)
+- **Seal outlet temp limit:** <span class="val-trip">190°F</span> — monitored to prevent Safe Shutdown Seal actuation
+- **CC131 Thermal Barrier Valve:** Closes automatically on high CCW flow to thermal barrier (indicates thermal barrier leak)
+
 ## Loss of Offsite Power
 
 On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel moment of inertia (82000 lb-ft²) provides coastdown flow sufficient to prevent fuel damage. (UFSAR 5.5.1.3.13)

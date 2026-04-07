@@ -46,8 +46,15 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 - **Normal charging flow:** One charging pump maintains RCS inventory and PZR level
 - **Seal injection:** 8 gpm per RCP (32 gpm total for 4 RCPs)
 - **Seal return:** 3 gpm per RCP
+- **CV55 (Charging Flow Control Valve):** Controls total charging flow to the RCS
+- **CV71 (Charging Header PCV):** Backpressure control valve downstream of seal injection takeoff
 - **Letdown:** Controlled by letdown orifices, cooled by letdown HX, processed through demineralizers
 - **Excess letdown:** Alternate path available if normal letdown is unavailable
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q3</div>
+CV71 acts as a backpressure control valve affecting both charging and seal injection flows. <span class="hi-exam">Throttling CV71 CLOSED raises backpressure → seal injection flow RISES and charging flow LOWERS. Throttling CV71 OPEN lowers backpressure → seal injection flow LOWERS and charging flow RISES.</span> This relationship is critical during RCS leak response when adjusting charging to stabilize PZR level.
+</div>
 
 ## Tech Spec LCOs
 
