@@ -10,34 +10,82 @@ aliases:
 
 # TS 3/4.11 — Radioactive Effluents
 
-Most of the original TS 3/4.11 specifications have been deleted and relocated to the Offsite Dose Calculation Manual (ODCM) and other programs. The remaining active specifications are:
+Most original TS 3/4.11 specifications have been deleted and relocated to the Offsite Dose Calculation Manual (ODCM) and other programs. The remaining active specifications are:
 
-## 3/4.11.1 — Liquid Holdup Tanks
+## 3/4.11.1.4 — Liquid Holdup Tanks
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.11.1.4</div>
-The quantity of radioactive material contained in each outside temporary liquid storage tank shall be limited per the ODCM methodology.
+The quantity of radioactive material contained in each outdoor temporary tank* shall be limited to ≤ <span class="hi">10 curies</span>, excluding tritium and dissolved or entrained noble gases.
 </div>
 
-## 3/4.11.2 — Explosive Gas Mixture
+*Tanks included: outdoor temporary tanks not surrounded by liners, dikes, or walls capable of holding tank contents, and that do not have overflows/drains connected to the liquid radwaste treatment system.
+
+**Applicability:** At all times
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| Radioactive material in any tank exceeds 10 curies | Immediately suspend all additions to the tank; reduce contents to within limit | Immediately; <span class="val-alarm">48 hours</span> to reduce |
+
+LCO 3.0.3 not applicable.
+
+**Surveillance Requirements:**
+
+| SR | Requirement | Frequency |
+|----|-------------|-----------|
+| 4.11.1.4 | Analyze representative sample of tank contents to verify within limit | Per SFCP, when radioactive materials are being added |
+
+*(Amendment No. 282)*
+
+---
+
+## 3/4.11.2.5 — Explosive Gas Mixture
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.11.2.5</div>
-The concentration of oxygen in the waste gas holdup system shall be limited to <span class="hi">≤2% by volume</span> whenever the hydrogen concentration exceeds 4% by volume.
+The concentration of oxygen in the waste gas holdup system shall be limited to ≤ <span class="hi">2% by volume</span>.
 </div>
 
-**Action:** With oxygen >2% (when H₂ >4%), restore within <span class="val-alarm">48 hours</span> or reduce gaseous radwaste system to less than the limits.
+**Applicability:** At all times*
+
+*Not applicable to portions of the Waste Gas System removed from service for maintenance, provided those portions are isolated and purged of hydrogen to <4% by volume.
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| Oxygen >2% but ≤4% by volume | Reduce oxygen concentration to ≤2% | <span class="val-alarm">48 hours</span> |
+| Oxygen >4% by volume | Immediately suspend all additions of waste gases; reduce oxygen to ≤2% | <span class="val-trip">Immediately</span> |
+
+LCO 3.0.3 not applicable.
+
+**Surveillance Requirements:**
+
+| SR | Requirement | Frequency |
+|----|-------------|-----------|
+| 4.11.2.5 | Continuously monitor oxygen in waste gas holdup system with oxygen monitor | Continuous |
+| (alt) | If oxygen monitor inoperable: grab samples analyzed within 4 hours | Per SFCP |
 
 <div class="callout callout-exam">
 <div class="callout-label">Key Concept</div>
-The 2% oxygen / 4% hydrogen limit prevents formation of a flammable/explosive gas mixture in the waste gas system. Hydrogen is produced by radiolysis of the reactor coolant.
+The 2% oxygen limit prevents formation of a flammable/explosive gas mixture. Hydrogen is produced by radiolysis of reactor coolant. If hydrogen is not measured, it shall be assumed to exceed 4% by volume. The 4% oxygen threshold escalates the required action from a 48-hour to immediate response.
 </div>
+
+*(Amendment No. 282)*
 
 ---
 
 ## Bases
 
-The explosive gas mixture limits ensure that the concentration of potentially explosive gas mixtures in the gaseous radwaste system is maintained below the flammability limit of hydrogen. The 2% oxygen limit provides adequate margin below the combustion point.
+### Liquid Holdup Tanks (3/4.11.1.4)
+
+The 10-curie limit on outdoor temporary tanks ensures that in the event of an uncontrolled release of the tank contents, the resulting concentrations at the nearest unrestricted area boundary would be within the limits of 10CFR20.
+
+### Explosive Gas Mixture (3/4.11.2.5)
+
+The concentration of oxygen in the waste gas holdup system is limited to ensure that the mixture remains below the flammability limit for hydrogen-oxygen. The 2% oxygen limit provides margin below the lower flammable limit. The continuous monitoring requirement ensures early detection of increasing oxygen concentration. Hydrogen in the waste gas system is produced by radiolysis of reactor coolant water.
 
 ---
 
