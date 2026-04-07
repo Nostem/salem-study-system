@@ -16,7 +16,7 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Design/Operating Pressure | 2485 / 2235 psig | UFSAR T5.2-4 |
+| Design/Operating Pressure | 2485 / <span class="val-normal">2235 psig</span> | UFSAR T5.2-4 |
 | Hydrostatic Test Pressure (cold) | 3107 psig | UFSAR T5.2-4 |
 | Design/Operating Temperature | 680 / 653°F | UFSAR T5.2-4 |
 | Shell ID | 84 in | UFSAR T5.2-4 |
