@@ -49,5 +49,5 @@ Which of the following completes both statements?<br>
 ## Connections
 
 - Related systems: [[Component Cooling Water]]
-- Related procedures: [[S1.OP-AB.CC-0001 — Loss of CCW]]
+- Related procedures: [[AB.CC-0001 — Loss of Component Cooling Water]]
 - Related exam: [[2023 NRC Written Exam]]
