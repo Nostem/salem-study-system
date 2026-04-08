@@ -70,6 +70,7 @@ status: draft
 ## EOPs
 - [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - [[EOP-TRIP-2 — Reactor Trip Response]]
+- [[EOP-TRIP-4 — Natural Circulation]]
 - [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
 - [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - [[EOP-LOCA-6 — LOCA Outside Containment]]
@@ -85,6 +86,7 @@ status: draft
 - [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - [[AB.RC-0002 — High Activity in the RCS]]
 - [[AB.GRID-0001 — Grid Disturbance]]
+- [[AB.RCP-0001 — RCP Abnormality]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
@@ -92,4 +94,5 @@ status: draft
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
+- [[S2.OP-SO.PZR-0003 — PRT Operation]]
 - [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]]

@@ -344,3 +344,183 @@ questions:
     ka_importance: 3.2
     type: RO
     tier_group: "Tier 1/Group 2"
+
+  - number: 26
+    topic: "EOP-TRIP-4 Natural Circulation / RCP Restart Priority"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: [reactor-coolant-pumps, pressurizer]
+    tech_specs: []
+    ka: "W E09 EK3.06"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 27
+    topic: "AB.RCP-0001 / CCW Loss Time Limit and Bearing Temp"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Beaver Valley 2018 NRC RO29"
+    systems: [reactor-coolant-pumps, component-cooling-water]
+    tech_specs: []
+    ka: "003 G2.1.7"
+    ka_importance: 4.4
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 28
+    topic: "CVCS Letdown HX Temp Detector Fails Low / Boron Release"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem"
+    systems: [chemical-and-volume-control-system]
+    tech_specs: []
+    ka: "004 A3.06"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 29
+    topic: "CVCS VCT Level Transmitter Fails High / Auto Swapover"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [chemical-and-volume-control-system, emergency-core-cooling-systems]
+    tech_specs: []
+    ka: "004 K3.13"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 30
+    topic: "RHR Cooldown Rate Control / RH18 and RH20 Valves"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified - Salem 2020 NRC RO31"
+    systems: [residual-heat-removal]
+    tech_specs: []
+    ka: "005 A4.02"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 31
+    topic: "SBLOCA Break Location / Highest Peak Clad Temperature"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Braidwood 2018 RO41"
+    systems: [emergency-core-cooling-systems, reactor-coolant-system]
+    tech_specs: []
+    ka: "006 K5.07"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 32
+    topic: "PRT Level High / Drain Path via RCDT Pump"
+    answer: B
+    cognitive_level: "Fundamental/Analysis"
+    source: "New"
+    systems: [pressurizer]
+    tech_specs: []
+    ka: "007 K1.06"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 33
+    topic: "CCW System Response to LOCA + LOOP / SEC Mode 3"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [component-cooling-water, service-water, diesel-generators]
+    tech_specs: []
+    ka: "008 K5.10"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 34
+    topic: "MPC Fails Low / PZR Pressure Response"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [pressurizer, instrumentation-and-controls]
+    tech_specs: []
+    ka: "010 K4.03"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 35
+    topic: "Reactor Trip Logic at 7% Power"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Point Beach 2017 RO1"
+    systems: [instrumentation-and-controls]
+    tech_specs: []
+    ka: "012 A3.06"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 36
+    topic: "RCP Underfrequency Logic / 1/2 Taken Twice"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems: [instrumentation-and-controls, ac-power, reactor-coolant-pumps]
+    tech_specs: []
+    ka: "012 K1.09"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 37
+    topic: "LOCA + LOOP After SI/SEC Reset / EDG and Safeguards"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Comanche Peak 2020 RO20"
+    systems: [diesel-generators, emergency-core-cooling-systems]
+    tech_specs: []
+    ka: "013 A1.14"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 38
+    topic: "CFCU Response to Inadvertent SI / SEC Mode 1"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified - Braidwood 2016 NRC RO20"
+    systems: [containment-fan-coil-units, instrumentation-and-controls]
+    tech_specs: []
+    ka: "022 A2.07"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 39
+    topic: "CFCU Power Supplies / 4KV Vital Bus Loss"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems: [containment-fan-coil-units, ac-power]
+    tech_specs: []
+    ka: "022 K2.01"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 40
+    topic: "Containment Spray Pump Sequencing / SEC Not Reset"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [containment-spray, ac-power, instrumentation-and-controls]
+    tech_specs: []
+    ka: "026 K2.01"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
