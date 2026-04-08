@@ -46,5 +46,5 @@ Based on the above condition, which of the following completes both statements i
 ## Connections
 
 - Related systems: [[Containment Systems]], [[Main Steam]]
-- Related procedures:
+- Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam: [[2023 NRC Written Exam]]

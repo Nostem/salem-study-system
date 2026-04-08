@@ -79,4 +79,3 @@ OPERABILITY requires both the component itself AND all necessary support systems
 
 ## Connections
 
-- Related tech specs: [[TS 3/4.0 — Applicability]], all other TS sections reference these definitions

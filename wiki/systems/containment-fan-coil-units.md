@@ -54,6 +54,16 @@ Each fan-cooler unit includes: motor, fan, motor heat exchanger, cooling coils, 
 <span class="hi-exam">Service water to CFCUs is NOT isolated by Phase A or Phase B containment isolation signals.</span> Following a LOCA with both Phase A and B actuated, SW from CFCUs is the only source of water into containment that remains unisolated (Fire Protection isolated on Phase A, CCW on Phase B, Primary Water on Phase A).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q38</div>
+<span class="hi-exam">SEC Mode 1 (SI only): running CFCUs are tripped, then all five auto-start in LOW speed after a 20-second delay</span> (coastdown period before restart). To restore manual HIGH speed control: must reset <span class="hi-exam">BOTH trains of SI AND all SECs</span>. Resetting SI alone is NOT sufficient. EOP-TRIP-3 step 1 accomplishes this.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q39</div>
+CFCU power distribution from 4KV Vital Buses: <span class="hi-exam">21 CFCU (A bus), 22 CFCU (B bus), 23 CFCU (B bus, CIT), 24 CFCU (B bus), 25 CFCU (C bus)</span>. Loss of 2B 4KV Vital Bus = 22 and 24 CFCUs unavailable. Only 21 (A bus) and 25 (C bus) remain available.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.6 — Containment]]** — TS 3.6.2.3 requires at least 3 CFCUs OPERABLE
@@ -62,4 +72,6 @@ Each fan-cooler unit includes: motor, fan, motor heat exchanger, cooling coils, 
 
 ## Connections
 
-- Related systems: [[Containment Systems]], [[Service Water]]
+- Related systems: [[Containment Systems]], [[Service Water]], [[AC Power]]
+- Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]]
+- Related exam: [[2023 NRC Written Exam]]

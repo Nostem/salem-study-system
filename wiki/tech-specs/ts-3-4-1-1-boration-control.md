@@ -140,4 +140,3 @@ The MTC limits ensure this coefficient remains within the conditions assumed in 
 
 - Related systems: [[Reactor Core and Fuel]], [[Chemical and Volume Control System]], [[Reactor Coolant System]]
 - Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
-- Related tech specs: [[TS 3/4.1 — Reactivity Control]]

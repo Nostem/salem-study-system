@@ -117,4 +117,3 @@ DG OPERABILITY includes verification of fuel oil supply (7-day supply), starting
 ## Connections
 
 - Related systems: [[Electrical Power Systems]]
-- Related tech specs: [[TS 3/4.5 — ECCS]], [[TS 3/4.6 — Containment]]

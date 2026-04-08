@@ -129,4 +129,3 @@ Two independent loops of each system ensure single-failure capability for safety
 ## Connections
 
 - Related systems: [[Auxiliary Systems]], [[Steam Generators]], [[Main Steam and Feedwater]], [[Containment Systems]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]], [[TS 3/4.6 — Containment]]

@@ -81,11 +81,23 @@ The steam generators transfer heat from the reactor coolant (primary side) to th
 - Units are primarily carbon steel
 - (UFSAR 5.1)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q2</div>
+Natural circulation verification: <span class="hi-exam">RCS subcooling >0°F</span> (T-sat at RCS pressure minus highest CET), <span class="hi-exam">SG pressures stable or lowering</span>, T-hots stable or dropping, CETs lowering, <span class="hi-exam">T-colds at saturation temperature for SG pressure</span>. RCS T-cold matching SG saturation temp confirms heat transfer from primary to secondary through SG tubes is established.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q42</div>
+SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG</span> → main turbine trip → reactor trip. FW Isolation closes BF13, BF19, BF40 and trips SGFPs. If BF19 fails open, SG level continues to rise until trip on high level.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators (tube integrity, inspection requirements)
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Main Steam]], [[Feedwater]], [[Auxiliary Feedwater]]
+- Related systems: [[Reactor Coolant System]], [[Main Steam]], [[Feedwater and Condensate]], [[Auxiliary Feedwater]]
 - Related EOPs: [[EOP-SGTR-1]]
+- Related exam questions: [[2023 Q2]], [[2023 Q42]]
+- Related exam: [[2023 NRC Written Exam]]

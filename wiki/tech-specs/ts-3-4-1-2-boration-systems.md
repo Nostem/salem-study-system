@@ -120,4 +120,3 @@ The 37000 gallon RWST limit for Modes 5 and 6 is based on: 21210 gal (undetectab
 ## Connections
 
 - Related systems: [[Chemical and Volume Control System]], [[Emergency Core Cooling Systems]]
-- Related tech specs: [[TS 3/4.1.1 — Boration Control]], [[TS 3/4.5 — ECCS]]

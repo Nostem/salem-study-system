@@ -80,6 +80,11 @@ Isolated from RCS by two check valves in series. Inject when RCS pressure falls 
 
 SI pump discharge is limited to <1500 psig to prevent lifting RCS safety valves. (UFSAR 6.3.2)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q16</div>
+SI pump shutoff head is <span class="hi-exam">1520 psig</span>. If RCS pressure is above 1520 psig (e.g., 1700 psig) and SI flow is indicated, this confirms a <span class="hi-exam">cold leg discharge leak</span> (flow should be zero above shutoff head). Per EOP-LOCA-6 step 2, close <span class="hi-exam">2SJ135 (Cold Leg Discharge Valve)</span> to isolate SI pump cold leg leak. Note: 21/22 SJ49 valves isolate RHR cold legs, not SI cold legs.
+</div>
+
 ### Residual Heat Removal Pumps (Low Head — Cold Leg Injection)
 
 | Parameter | Value | Source |
@@ -114,6 +119,11 @@ RHR pumps deliver when RCS depressurizes to ~170 psig. Inject via accumulator di
 
 Provides suction source for all ECCS pumps during injection phase. Minimum volume based on refueling canal fill requirement. (UFSAR 6.3.2)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q29</div>
+Automatic swapover of charging pump suction from VCT to RWST requires <span class="hi-exam">2/2 coincidence (LT-112 AND LT-114) at low-low VCT level</span>. If LT-112 fails high, the 2/2 logic is not satisfied and no auto swapover occurs — the VCT drains and the charging pump loses suction. See [[Chemical and Volume Control System]] for full VCT level control logic.
+</div>
+
 ## ECCS Operation Phases
 
 ### Injection Phase
@@ -124,6 +134,11 @@ Provides suction source for all ECCS pumps during injection phase. Minimum volum
 5. SI pumps inject when RCS < ~1500 psig
 6. RHR pumps inject when RCS < ~170 psig
 7. Time delay: ~25 seconds for active pumps to deliver flow
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q31</div>
+During a SBLOCA, a <span class="hi-exam">cold leg break produces the highest peak clad temperature</span>. Because ECCS pumps inject into the cold legs, a cold leg break allows injected ECCS water to be <span class="hi-exam">lost directly out the break before reaching the core</span>, reducing the effectiveness of core cooling. Hot leg, CRDM housing, and PZR steam space breaks are analyzed scenarios but do not produce the worst PCT.
+</div>
 
 ### Changeover to Recirculation Phase
 1. Containment sump level shows adequate submergence of sump strainer
@@ -154,3 +169,5 @@ Provides suction source for all ECCS pumps during injection phase. Minimum volum
 
 - Related systems: [[Reactor Coolant System]], [[Residual Heat Removal]], [[Chemical and Volume Control System]], [[Containment Systems]]
 - Related EOPs: [[EOP-LOCA Series]]
+- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]]
+- Related exam: [[2023 NRC Written Exam]]

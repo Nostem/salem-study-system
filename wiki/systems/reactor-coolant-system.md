@@ -120,6 +120,11 @@ Three principal high points: pressurizer, reactor vessel head, and steam generat
 - **Reactor vessel head vent:** Dedicated ¾" Schedule 160 vent tap with 3/8" restricting orifice. Vents to PRT or containment via redundant solenoid valves. Remote-manually actuated from control room via key lock switch. Powered from two redundant vital DC buses. Designed to NUREG-0737 requirements. Vent size within LOCA definition (3/8" orifice) — inadvertent opening does not require ECCS actuation. Can vent ½ gas volume of RCS in 1 hour. (UFSAR 5.1)
 - **Steam generator tube invert:** Cannot be vented at that location. Westinghouse study (WCAP-9600/9601) concluded small amount of noncondensables would not significantly impact natural circulation.
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q17</div>
+During RCS depressurization without RCPs running (e.g., EOP-LOCA-5), <span class="hi-exam">upper head voiding IS expected</span>. Without forced circulation, the upper head contains hotter liquid that <span class="hi-exam">flashes to steam during depressurization</span>, displacing water into the pressurizer and causing a <span class="hi-exam">rapidly rising PZR level</span>. Monitor PZR level to stop depressurization before going solid.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System]]** — RCS pressure, temperature, flow limits
@@ -143,3 +148,5 @@ Three principal high points: pressurizer, reactor vessel head, and steam generat
 
 - Related systems: [[Pressurizer]], [[Steam Generators]], [[Reactor Coolant Pumps]], [[Reactor Vessel]], [[Chemical and Volume Control System]], [[Residual Heat Removal]], [[Emergency Core Cooling Systems]]
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)
+- Related exam questions: [[2023 Q17]]
+- Related exam: [[2023 NRC Written Exam]]

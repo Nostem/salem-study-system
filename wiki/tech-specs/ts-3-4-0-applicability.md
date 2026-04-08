@@ -91,4 +91,3 @@ The 25% extension provides operational flexibility for scheduling surveillances 
 
 ## Connections
 
-- Related tech specs: [[TS 1.0 — Definitions]] — all LCO and SR rules reference definitions

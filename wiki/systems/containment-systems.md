@@ -66,6 +66,21 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 
 Each unit includes: motor, fan, motor heat exchanger, cooling coils, roughing filters, dampers, duct distribution system, instrumentation, and controls. Cooled by service water. (UFSAR 6.2.2.2.2)
 
+## Containment Internal Pressure Limits
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q54</div>
+<span class="hi-exam">TS 3.6.1.4 requires containment internal pressure between -1.5 and +0.3 psig during Modes 1-4.</span> The upper limit (+0.3 psig) ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during a DBA (LOCA or steam line break). The lower limit (-1.5 psig) ensures the design negative pressure differential of <span class="val-trip">3.5 psig</span> is not exceeded. If outside limits, must restore within <span class="val-trip">1 hour</span>.
+</div>
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Upper Pressure Limit | <span class="val-alarm">+0.3 psig</span> | TS 3.6.1.4 |
+| Lower Pressure Limit | <span class="val-alarm">-1.5 psig</span> | TS 3.6.1.4 |
+| Design Pressure | <span class="val-trip">47 psig</span> | UFSAR 6.2.1.1 |
+| Design Negative Differential | <span class="val-trip">3.5 psig</span> | TS 3.6.1.4 Bases |
+| Restoration Time | <span class="val-trip">1 hour</span> | TS 3.6.1.4 |
+
 ## Containment Isolation System
 
 ### Design Basis
@@ -82,6 +97,11 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 - Recirculation through HEPA filter units removes particulates
 - Sump pH maintained 7.0–10.0 to minimize iodine re-evolution and chloride stress corrosion cracking
 (UFSAR 6.2.3)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q52</div>
+<span class="hi-exam">CA330 Instrument Air Containment Isolation valves close on Phase A signal ONLY — NOT on SI or Phase B.</span> 21 CA330 supplies the 2A control air header; 22 CA330 supplies the 2B control air header. <span class="hi-exam">BOTH CA330s must be closed</span> to fully isolate instrument air to containment (each is in a separate air supply line with its own check valve). Backup air receivers inside containment provide PORV air supply during EOP actions.
+</div>
 
 ## Combustible Gas Control
 
@@ -112,4 +132,7 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 ## Connections
 
 - Related systems: [[Emergency Core Cooling Systems]], [[Service Water]], [[Reactor Coolant System]]
+- Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]]
+- Related exam questions: [[2023 Q52]], [[2023 Q54]]
+- Related exam: [[2023 NRC Written Exam]]

@@ -64,6 +64,11 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 
 *Unit 2 piping downstream of 2RH75 & 76 designed to 600 psig.
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q30</div>
+To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining constant RHR flow: <span class="hi-exam">lower RH18 demand</span> (closes HX flow control valves, reducing flow through the RHR HX) and <span class="hi-exam">raise RH20 demand</span> (opens HX bypass valve, routing more flow around the HX). Total RHR flow stays constant but less passes through the heat exchanger. Reverse actions (raise RH18 / lower RH20) would increase cooldown rate.
+</div>
+
 ## RCS Isolation
 
 The RHR system is isolated from the RCS by two normally closed motor-operated valves in each suction line. These valves are interlocked to prevent opening when RCS pressure is above the RHR system design pressure. (UFSAR 5.5.7.3.2)
@@ -80,3 +85,5 @@ During LOCA recirculation, the RHR pumps take suction from the containment sump 
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Component Cooling Water]]
+- Related exam questions: [[2023 Q30]]
+- Related exam: [[2023 NRC Written Exam]]

@@ -38,6 +38,16 @@ Converts steam energy from the steam generators into electrical energy. (UFSAR 1
 - Interlocked with P-9: reactor trip on turbine trip is blocked below ~50% RTP
 (UFSAR T7.2-1)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q15</div>
+Grid disturbance — loss of a Salem unit causes <span class="hi-exam">500KV switchyard voltage to lower</span>. As grid voltage drops, remaining generating units share reactive load: <span class="hi-exam">Unit 2 MVARs rise</span> to compensate for the lost reactive support from the tripped unit. (Ref: S2.OP-AB.GRID-0001)
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q20</div>
+Rising condenser backpressure reduces LP turbine efficiency, confirmed by <span class="hi-exam">lowering generator MWe output</span>. The primary operational concern is <span class="hi-exam">overpressurization and damage to the LP turbine/main condenser</span>, not condensate pump cavitation.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.3 — Instrumentation]]** — Turbine trip reactor trip interlock
@@ -45,3 +55,5 @@ Converts steam energy from the steam generators into electrical energy. (UFSAR 1
 ## Connections
 
 - Related systems: [[Main Steam]], [[Feedwater and Condensate]], [[Electrical Power Systems]]
+- Related exam questions: [[2023 Q15]], [[2023 Q20]]
+- Related exam: [[2023 NRC Written Exam]]

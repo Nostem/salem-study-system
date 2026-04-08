@@ -231,5 +231,4 @@ Plant design requires all 4 RCS loops operating during Modes 1 and 2 for adequat
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Pressurizer]], [[Residual Heat Removal]], [[Steam Generators]]
-- Related tech specs: [[TS 3/4.1.1 — Boration Control]], [[TS 3/4.5 — ECCS]]
 - Related concepts: [[Accident Analysis]]

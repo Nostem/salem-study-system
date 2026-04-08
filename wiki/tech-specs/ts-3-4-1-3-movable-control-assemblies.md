@@ -131,4 +131,3 @@ Misalignment of a rod requires measurement of peaking factors or a restriction i
 
 - Related systems: [[Reactor Core and Fuel]], [[Instrumentation and Controls]]
 - Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
-- Related tech specs: [[TS 3/4.1.1 — Boration Control]], [[TS 3/4.2 — Power Distribution]]

@@ -41,6 +41,11 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 - **Automatic Makeup:** Maintains VCT level by automatically adjusting primary water and boric acid flows
 (UFSAR 9.3.4.2.4)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q29</div>
+VCT level control logic: <span class="hi-exam">only LT-112 actuates automatic make-up</span>. Automatic swapover to RWST requires <span class="hi-exam">2/2 coincidence (LT-112 AND LT-114) at low-low VCT level</span>. CV35 (high level divert valve) opens on LT-112 high signal. If LT-112 fails HIGH: CV35 opens and drains the VCT, auto make-up will NOT actuate (controller sees high level), and auto swapover to RWST will NOT occur (2/2 coincidence not met with LT-112 failed high). The charging pump loses suction as VCT empties, resulting in <span class="hi-exam">charging pump cavitation and damage</span>.
+</div>
+
 ## Charging and Letdown
 
 - **Normal charging flow:** One charging pump maintains RCS inventory and PZR level
@@ -68,6 +73,16 @@ Rapid boration via BAT pump and 2CV175 requires <span class="hi-exam">adequate f
 During high RCS activity (below TS limits), per AB.RC-0002: <span class="hi-exam">maximize letdown flow to accelerate RCS cleanup through the demineralizers</span>. Do NOT reduce letdown — increasing letdown is the correct response to accelerate cleanup.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q28</div>
+If <span class="hi-exam">2TE-130 (temperature detector for 2CC71, Letdown HX Temp Control Valve) fails LOW</span>, the controller sees low temperature and drives 2CC71 closed (reduces CCW cooling flow through the letdown HX). With less cooling, <span class="hi-exam">letdown HX outlet temperature rises</span>. Hotter letdown water flowing through the mixed bed demineralizers <span class="hi-exam">causes boron release into the RCS</span> (boration effect), which <span class="hi-exam">lowers Tavg</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q45</div>
+<span class="hi-exam">23 charging pump is supplied from the 2A 460V bus.</span> Loss of the 2A 460V MCC de-energizes 23 charging pump, causing loss of charging flow and letdown isolation. Per S2.OP-AB.460-0001: start a centrifugal charging pump and restore PZR level, then re-establish letdown.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.2 — Boration Systems]]** — Flow paths, charging pumps, borated water sources
@@ -77,3 +92,5 @@ During high RCS activity (below TS limits), per AB.RC-0002: <span class="hi-exam
 
 - Related systems: [[Reactor Coolant System]], [[Reactor Coolant Pumps]], [[Emergency Core Cooling Systems]]
 - Related concepts: [[Nuclear Design]]
+- Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]]
+- Related exam: [[2023 NRC Written Exam]]

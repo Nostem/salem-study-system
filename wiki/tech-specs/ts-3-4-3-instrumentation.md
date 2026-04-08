@@ -242,4 +242,3 @@ The OPERABILITY of the ESFAS instrumentation ensures that: (1) the associated ES
 ## Connections
 
 - Related systems: [[Instrumentation and Controls]], [[Emergency Core Cooling Systems]], [[Containment Systems]], [[Containment Spray]], [[Auxiliary Feedwater]]
-- Related tech specs: [[TS 2.0 — Safety Limits and LSSS]], [[TS 3/4.5 — ECCS]], [[TS 3/4.6 — Containment]]

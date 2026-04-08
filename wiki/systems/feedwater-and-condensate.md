@@ -37,6 +37,16 @@ Actuated by:
 
 Closes main FW control valves (fast closure), bypass valves, and inlet stop valves. (UFSAR T7.2-1)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q8</div>
+High level in <span class="hi-exam">21A Low Pressure feedwater heater closes ONLY the associated 21CN22</span> inlet valve (not all three LP FW heater strings). With one LP FW heater string bypassed, <span class="hi-exam">cooler feedwater enters the reactor, raising actual reactor thermal power due to positive MTC effect</span>. NI power indication reads lower than actual because cooler moderator provides shielding to PR NIS. Reactor power should be determined from RCS delta-Ts, and turbine load reduced to prevent exceeding thermal power limits.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q42</div>
+BF19 (MFW Regulating Valve) fails fully OPEN → SG level rises → <span class="hi-exam">SG High Level Trip (P-14) actuates at 2/3 NR levels ≥<span class="val-trip">67%</span> on any one SG</span>. P-14 trips the main turbine, which causes an auto reactor trip AND actuates <span class="hi-exam">Feedwater Isolation</span> (closes all BF13s, BF19s, BF40s, trips both SGFPs, and trips the Main Turbine). Note: FW Interlock alone only closes the BF19s and BF40s — FW Isolation is the broader actuation.
+</div>
+
 ## Condenser and Condensate
 
 - Main condensers receive exhaust steam from turbine and steam dump
@@ -52,3 +62,5 @@ Closes main FW control valves (fast closure), bypass valves, and inlet stop valv
 
 - Related systems: [[Steam Generators]], [[Main Steam]], [[Auxiliary Feedwater]], [[Instrumentation and Controls]]
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]
+- Related exam questions: [[2023 Q8]], [[2023 Q42]]
+- Related exam: [[2023 NRC Written Exam]]

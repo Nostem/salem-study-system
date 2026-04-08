@@ -30,7 +30,17 @@ Provides cooling water from the Delaware River (ultimate heat sink) to remove he
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q24</div>
-<span class="hi-exam">Service water to CFCUs is NOT isolated by Phase A or Phase B containment isolation signals.</span> Following a LOCA with both Phase A and B actuated, SW is the only remaining source of water into containment. This is the cause of unexpected containment water level rise addressed in EOP-FRCE-2.
+<span class="hi-exam">Service Water from CFCUs is the ONLY source of water into containment NOT isolated by Phase A or Phase B containment isolation signals.</span> Fire Protection and Primary Water are isolated by Phase A; CCW is isolated by Phase B. Following a LOCA with both Phase A and B actuated, SW to CFCUs is the only remaining water source into containment — this is the cause of unexpected containment water level rise addressed in EOP-FRCE-2.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q50</div>
+CFCU SW flow orifices maintain <span class="hi-exam">constant SW flow rate through CFCUs in both high and low speed operation</span>. Because SW flow is the same regardless of CFCU speed, <span class="hi-exam">SW header pressure is also the same</span> when a CFCU switches between high and low speed. (Prior to orifice installation, low speed had higher SW flow.)
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q51</div>
+<span class="hi-exam">SW122 (SW Inlet Control Valve to CCW HX) fails OPEN on loss of instrument air</span> (fails closed on loss of 125VDC). Loss of air to SW122 → valve fails open → increased SW flow through CCW HX → lower CCW temperature → lower RHR HX outlet temperature → <span class="hi-exam">increased RCS cooldown rate</span>. Per AB.CA-0001, SW122 can be manually operated.
 </div>
 
 ## Tech Spec LCOs
@@ -40,4 +50,6 @@ Provides cooling water from the Delaware River (ultimate heat sink) to remove he
 
 ## Connections
 
-- Related systems: [[Component Cooling Water]], [[Containment Systems]], [[Auxiliary Feedwater]], [[Electrical Power Systems]]
+- Related systems: [[Component Cooling Water]], [[Containment Systems]], [[Auxiliary Feedwater]], [[Electrical Power Systems]], [[Containment Fan Coil Units]], [[Residual Heat Removal]]
+- Related exam questions: [[2023 Q24]], [[2023 Q50]], [[2023 Q51]]
+- Related exam: [[2023 NRC Written Exam]]

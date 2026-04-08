@@ -103,4 +103,3 @@ Trip setpoints are set conservatively with respect to the analytical limits used
 
 - Related systems: [[Instrumentation and Controls]], [[Reactor Coolant System]]
 - Related concepts: [[Nuclear Design]], [[Thermal-Hydraulic Design]], [[Accident Analysis]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]

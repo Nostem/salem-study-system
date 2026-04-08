@@ -71,13 +71,28 @@ If ANY RCP seal inlet temperature is ≥ <span class="val-trip">225°F</span>, r
 RCP thermal barrier rupture indications: (1) CCW radiation monitors (R17 A/B) in warning — RCS leaking into CCW, (2) CCW surge tank level rising, (3) CC131 thermal barrier isolation valve goes CLOSED on high CCW flow. PZR level does NOT rise (RCS is leaking OUT). Charging flow does NOT lower.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q27</div>
+Per AB.RCP-0001: loss of CCW to motor bearings — <span class="hi-exam">5 minutes to restore CCW or trip reactor and stop RCP</span>. Motor bearing temp limit: <span class="val-trip">175°F</span>. Additional trip criteria: motor winding temp ><span class="val-trip">302°F</span>, seal outlet ><span class="val-trip">190°F</span>, shaft vibration ><span class="val-trip">20 mils</span>, #1 seal leakoff <span class="val-trip">&lt;0.8 or ≥6 gpm</span>. <span class="hi-trap">165°F is the ARP limit that directs entry into AB.RCP-0001, NOT the trip limit (175°F).</span>
+</div>
+
 - **Seal inlet temp limit:** <span class="val-trip">≥225°F</span> — do not restore seal injection (prevents #1 seal thermal shock damage)
 - **Seal outlet temp limit:** <span class="val-trip">190°F</span> — monitored to prevent Safe Shutdown Seal actuation
 - **CC131 Thermal Barrier Valve:** Closes automatically on high CCW flow to thermal barrier (indicates thermal barrier leak)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q26</div>
+EOP-TRIP-4 RCP restart priority for PZR spray: <span class="hi-exam">23 RCP preferred (single pump for normal spray)</span>. If 23 unavailable: 21+22 or 21+24 (two pumps needed for spray via auxiliary spray line). Forced convection permits faster cooldown with less potential for upper head voiding. Single pump operation preferred over two.
+</div>
+
 ## Loss of Offsite Power
 
 On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel moment of inertia (82000 lb-ft²) provides coastdown flow sufficient to prevent fuel damage. (UFSAR 5.5.1.3.13)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q1</div>
+<span class="hi-exam">Low RC flow trip requires 2/3 channels ≤90% of design loop flow per loop.</span> Between P-7 (10%) and P-8 (36%), loss of flow on a single loop does NOT cause an automatic trip — Tech Specs do not allow 3-loop operation in Mode 1, so per S2.OP-AR.ZZ-0004, the operator must manually trip the reactor and stop the affected RCP.
+</div>
 
 ## Loss of Component Cooling Water
 
@@ -90,3 +105,5 @@ Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barr
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Component Cooling Water]], [[Chemical and Volume Control System]]
+- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]]
+- Related exam: [[2023 NRC Written Exam]]

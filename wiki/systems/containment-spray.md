@@ -55,6 +55,11 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 - NaOH additive maintains post-LOCA sump pH between 7.0 and 10.0
 - pH control minimizes iodine re-evolution and chloride stress corrosion cracking
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q40</div>
+CS pump power supplies: <span class="hi-exam">21 CS pump on A 4KV Vital Bus, 22 CS pump on C 4KV Vital Bus</span>. A failed 2B SEC does NOT affect either CS pump. With SECs NOT reset after initial SI sequence, the CS pump start contact remains re-closed — <span class="hi-exam">CS pumps WILL auto-start on Hi-Hi containment pressure signal</span> even after the initial SI sequence completes.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.6 — Containment]]** — TS 3.6.2.1 (Spray System), TS 3.6.2.2 (Spray Additive)
@@ -62,4 +67,6 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 
 ## Connections
 
-- Related systems: [[Containment Systems]], [[Emergency Core Cooling Systems]], [[Residual Heat Removal]]
+- Related systems: [[Containment Systems]], [[Emergency Core Cooling Systems]], [[Residual Heat Removal]], [[AC Power]]
+- Related exam questions: [[2023 Q40]]
+- Related exam: [[2023 NRC Written Exam]]

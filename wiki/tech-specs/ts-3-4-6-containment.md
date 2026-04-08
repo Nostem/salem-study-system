@@ -24,6 +24,22 @@ Primary CONTAINMENT INTEGRITY shall be maintained.
 
 **Action:** Without CONTAINMENT INTEGRITY, restore within <span class="val-trip">1 hour</span> or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours.
 
+### Internal Pressure (3.6.1.4)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.1.4</div>
+Primary containment internal pressure shall be maintained between <span class="val-alarm">-1.5 psig</span> and <span class="val-alarm">+0.3 psig</span>.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Action:** With containment internal pressure not within limits, restore within <span class="val-trip">1 hour</span> or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours.
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q54</div>
+<span class="hi-exam">Containment internal pressure limits: -1.5 to +0.3 psig (Modes 1-4).</span> If pressure exceeds +0.3 psig, containment design limits could be exceeded during a DBA. The upper limit ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during the limiting pipe break (LOCA or steam line break). The lower limit ensures the containment structure is prevented from exceeding its design negative pressure differential of <span class="val-trip">3.5 psig</span> with respect to outside atmosphere. Restoration time is <span class="hi-exam">1 hour</span>.
+</div>
+
 ### Containment Leakage (3.6.1.2)
 
 <div class="callout callout-important">
@@ -124,5 +140,7 @@ CONTAINMENT INTEGRITY ensures that the containment will perform its designed saf
 ## Connections
 
 - Related systems: [[Containment Systems]], [[Emergency Core Cooling Systems]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]
+
 - Related concepts: [[Accident Analysis]]
+- Related exam questions: [[2023 Q54]]
+- Related exam: [[2023 NRC Written Exam]]

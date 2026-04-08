@@ -48,6 +48,20 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 | Worst case, no load shed | <span class="hi">2 hours</span> | VTD 314204 |
 | With EOP-LOPA-1 load shedding | <span class="hi">4 hours</span> (SBO coping duration) | VTD 314204 |
 
+## Ground Detection
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q46</div>
+125VDC ground detection: <span class="hi-exam">resistance ≤50K ohms = ground detected; >50K ohms = normal (no ground)</span>. Per S2.OP-SO.125-0004, when a ground is detected, breakers are <span class="hi-exam">opened one at a time</span> until resistance reads >50K ohms, isolating the ground source. Breakers are NOT all opened at once.
+</div>
+
+## Bus Transfer Interlocks
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q47</div>
+125VDC distribution includes a <span class="hi-exam">mechanical interlock preventing normal and backup bus paralleling</span>. The interlock requires the normal supply breaker to be OPEN before the backup (emergency) breaker can close. <span class="hi-exam">Transfer to backup DC bus is ONLY permitted during Modes 5, 6, or defueled</span> — paralleling in Modes 1-4 would make DC buses inoperable.
+</div>
+
 ## Key Design Points
 
 - DC power is critical for safety functions — provides control power independent of AC
@@ -65,3 +79,5 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 ## Connections
 
 - Related systems: [[AC Power]], [[Diesel Generators]], [[Electrical Power Systems]], [[Instrumentation and Controls]]
+- Related exam questions: [[2023 Q9]], [[2023 Q46]], [[2023 Q47]]
+- Related exam: [[2023 NRC Written Exam]]

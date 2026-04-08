@@ -60,6 +60,11 @@ PZR Backup Heater Group power supplies:<br>
 Transfer to emergency backup source is MANUAL (not automatic). EOP-LOSC-2 step 26 directs restoring normal power or transferring to emergency backup.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q14</div>
+Following a reactor trip + SI with instrument air to containment isolated, PORVs cycle on accumulators. When air is restored (<span class="hi-exam">accumulators automatically isolate and realign to normal containment control air when pressure is restored — above 90 psig normal supply vs. below 85 psig accumulator</span>). No manual action is required for accumulator realignment. <span class="hi-exam">Pressurizer spray valves reopen when air is restored</span> because the Master Pressure Controller (MPC) will have demand to open spray valves post-trip.
+</div>
+
 ## Pressurizer Relief Tank
 
 | Parameter | Value | Source |
@@ -78,6 +83,16 @@ Transfer to emergency backup source is MANUAL (not automatic). EOP-LOSC-2 step 2
 - Internal spray and drain for cooling after a discharge
 - (UFSAR 5.1)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q32</div>
+PRT drain path per S2.OP-SO.PZR-0003: open <span class="hi-exam">2PR14 to drain PRT to RCDT</span>, which automatically opens 2WL12 and starts the RCDT pump (defeats low level cutoff). RCDT pump discharge destinations: <span class="hi-exam">RWST, CVCS Hold-Up Tanks, or Waste Hold-Up Tanks</span>. PRT does NOT gravity drain — the RCDT pump is required.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q34</div>
+MPC fails low (0% output): <span class="hi-exam">spray valves close</span> (controlled by MPC) and <span class="hi-exam">backup heaters energize</span> → RCS pressure rises → PORVs open at <span class="val-trip">2335 psig</span>. <span class="hi-trap">PORVs are interlocked directly from PZR pressure, NOT from MPC output</span> — MPC failure does not prevent PORV actuation.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.4]]** — Pressurizer (level and heater requirements)
@@ -86,3 +101,5 @@ Transfer to emergency backup source is MANUAL (not automatic). EOP-LOSC-2 step 2
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Chemical and Volume Control System]]
+- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q32]], [[2023 Q34]]
+- Related exam: [[2023 NRC Written Exam]]
