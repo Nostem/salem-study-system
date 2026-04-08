@@ -54,7 +54,12 @@ RCP Thermal Barrier rupture indications: <span class="hi-exam">CCW surge tank le
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.3 requires two independent CCW loops OPERABLE in Modes 1–4
 - 1 loop inoperable: 72 hours to restore, or Hot Standby in 6 hours + Cold Shutdown in 30 hours
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q59</div>
+SFP Heat Exchanger tube rupture: components supplied by CCW with pressure less than CCW header pressure are sources for system-to-system out leakage. <span class="hi-exam">A tube rupture in the SFP HX results in CCW leaking OUT into the SFP system</span> — CCW Surge Tank level lowers, SFP level rises. Non-borated CCW reduces SFP boron concentration, requiring addition of borated water. SFP alarms: low level <span class="val-alarm">128' 2"</span>, high level <span class="val-alarm">129' 2"</span>.
+</div>
+
 ## Connections
 
-- Related exam questions: [[2023 Q4]], [[2023 Q33]], [[2023 Q51]]
+- Related exam questions: [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]]
 - Related exam: [[2023 NRC Written Exam]]

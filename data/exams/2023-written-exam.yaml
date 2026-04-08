@@ -705,3 +705,198 @@ questions:
     ka_importance: 3.1
     type: RO
     tier_group: "Tier 2/Group 2"
+
+  - number: 56
+    topic: "Rod Position Indication / Group Demand Step Counter"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - instrumentation-and-controls
+    tech_specs:
+      - ts-3-4-1-reactivity-control
+    ka: "014A2.11"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 57
+    topic: "In-Core Temperature Monitoring / CET Reference Junction"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Indian Point 2 2021 NRC ROSS"
+    systems:
+      - instrumentation-and-controls
+    tech_specs: []
+    ka: "017 K6.01"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 58
+    topic: "Hydrogen Recombiner / EOP-LOCA-1"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem"
+    systems:
+      - containment-systems
+    tech_specs: []
+    ka: "028 K3.02"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 59
+    topic: "SFP Heat Exchanger Tube Rupture / CCW Leakage"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Turkey Point 2016 NRC RO61"
+    systems:
+      - component-cooling-water
+    tech_specs: []
+    ka: "033 K6.11"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 60
+    topic: "CW Waterbox Tube Leak / Condensate Alarms"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - feedwater-and-condensate
+    tech_specs: []
+    ka: "056 G2.4.46"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 61
+    topic: "Liquid Radwaste Release / Circulator Trip"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - radioactive-waste-management
+    tech_specs: []
+    ka: "068 K5.07"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 62
+    topic: "Area Radiation Monitoring / CAV Accident Pressurized"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - instrumentation-and-controls
+    tech_specs: []
+    ka: "072 A4.02"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 63
+    topic: "Fire Protection / Containment Isolation Valve 2FP147"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified - Salem 2019 NRC RO75"
+    systems:
+      - containment-systems
+    tech_specs: []
+    ka: "086 A1.06"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 64
+    topic: "SGFP Trip / Turbine Runback / 2CN47"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems:
+      - feedwater-and-condensate
+      - turbine-generator
+    tech_specs: []
+    ka: "G2.1.19"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 65
+    topic: "SI / SSPS Train Disagreement Indication"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - instrumentation-and-controls
+      - emergency-core-cooling-systems
+    tech_specs: []
+    ka: "G2.1.31"
+    ka_importance: 4.6
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 66
+    topic: "Stator Water Cooling / Unit 1 vs Unit 2 Differences"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - turbine-generator
+    tech_specs: []
+    ka: "G2.2.3"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 67
+    topic: "Independent Verification / Throttled Valve Position"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Millstone U2 NRC RO69"
+    systems: []
+    tech_specs: []
+    ka: "G2.2.14"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 68
+    topic: "Radwaste Flow Recorder / ODCM Requirements"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems:
+      - radioactive-waste-management
+    tech_specs: []
+    ka: "G2.3.11"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 69
+    topic: "Emergency Notification / 15-Minute Requirement"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Beaver Valley 2017 RO75"
+    systems: []
+    tech_specs: []
+    ka: "G2.4.29"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 70
+    topic: "Xenon-135 Following Reactor Trip"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - NRC GFES Bank P3563"
+    systems: []
+    tech_specs: []
+    ka: "192006 K1.07"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 4"

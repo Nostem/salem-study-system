@@ -52,7 +52,12 @@ Rising condenser backpressure reduces LP turbine efficiency, confirmed by <span 
 
 - **[[TS 3/4.3 — Instrumentation]]** — Turbine trip reactor trip interlock
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q66</div>
+Stator Water Cooling: <span class="hi-exam">Unit 2 (GE SCW) is the ONLY unit with an automatic turbine runback feature</span> — triggered by low flow, low pressure, or high temperature. If runback fails to lower amps to specified value within the time delay, a turbine trip occurs. <span class="hi-trap">Unit 1 (Westinghouse SCW): low flow inputs into a 45-second time-delayed turbine TRIP circuit — no runback feature. Unit 1 does not have a SLMS System.</span>
+</div>
+
 ## Connections
 
-- Related exam questions: [[2023 Q15]], [[2023 Q20]]
+- Related exam questions: [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]]
 - Related exam: [[2023 NRC Written Exam]]

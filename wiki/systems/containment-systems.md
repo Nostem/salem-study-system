@@ -129,9 +129,19 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 - **[[TS 3/4.6 — Containment|TS 3/4.6.4]]** — Combustible Gas Control
 - **[[TS 3/4.6 — Containment|TS 3/4.6.5]]** — Containment Structural Integrity
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q58</div>
+Hydrogen Recombiner System: per EOP-LOCA-1 step 17, <span class="hi-exam">only one hydrogen recombiner is allowed in service</span> when containment hydrogen concentration is between >0.5% and <4%. Operation of both hydrogen recombiners is not permitted. The purpose is to reduce hydrogen concentration to prevent formation of a flammable mixture that could ignite and cause a pressure excursion challenging containment integrity.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q63</div>
+Fire Protection Containment Isolation (2FP147): on a valid fire detected inside containment (Zones 59 and 74 on 2RP5), <span class="hi-trap">2FP147 must be manually opened from the 2RP5 panel — it does NOT automatically open</span>. However, <span class="hi-exam">2FP147 WILL automatically close on a Phase A containment isolation signal</span>.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]]
-- Related exam questions: [[2023 Q52]], [[2023 Q54]]
+- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]]
 - Related exam: [[2023 NRC Written Exam]]

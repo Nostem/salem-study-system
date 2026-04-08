@@ -177,6 +177,26 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.1]]** — Reactor Trip System Instrumentation
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.2]]** — ESF Actuation System Instrumentation
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q56</div>
+Rod Position Indication: <span class="hi-exam">Only Group 1 Demand Steps input into the Plant Computer</span>. Per S2.OP-DL.ZZ-0003, either the Group Demand Counter or Plant Computer will satisfy the TS 3.1.3.2.1 surveillance for Group 1 only.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q57</div>
+In-Core Temperature Monitoring (CET) System: reference junction box is located outside containment. Ambient temperature changes are compensated by a <span class="hi-exam">temperature compensator circuit</span> — CET readings are NOT affected by reference junction box temperature changes. In-Core system design upper range is <span class="hi-exam">2300°F</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q62</div>
+1R1A (Control Room Area) radiation monitor in alarm: <span class="hi-trap">does NOT automatically actuate CAV in AP Mode</span>. Requires manual actuation — press ACCIDENT PRESSURIZED pushbutton at 1RP2 to actuate BOTH units' CAV into AP Mode. Emergency intake dampers open on the unaffected unit.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q65</div>
+SSPS Train Disagreement: <span class="hi-exam">"SI & FW ISOL" Red lamp on 2RP4 FLASHES when one Train of SI has actuated and the other has not</span> (train disagreement). Lamp is LIT solid when both trains actuate. The "SI RESET" Green bezel light on the failed train's Safeguards panel will be LIT (indicating that train did not actuate).
+</div>
+
 ## Connections
 
 - Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
@@ -191,3 +211,7 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
   - [[2023 Q49 — SGBD Radiation Monitor Check Source|2023 Q49]] — SGBD rad monitor check source response and interlocks
   - [[2023 Q53 — Containment Vacuum Relief Isolation Signals|2023 Q53]] — Vacuum relief isolates on SI or CVI, not Phase A
   - [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]] — Urgent Failure prevents all rod motion / stationary gripper coil holds rods
+  - [[2023 Q56]] — Rod Position Indication / Group Demand Step Counter / Plant Computer Group 1 only
+  - [[2023 Q57]] — In-Core Temperature Monitoring CET / reference junction compensation / 2300°F limit
+  - [[2023 Q62]] — Area Rad Monitor 1R1A / manual CAV AP mode from 1RP2
+  - [[2023 Q65]] — SSPS train disagreement / SI & FW ISOL lamp flashing / SI RESET green light

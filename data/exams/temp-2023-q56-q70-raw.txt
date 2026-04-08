@@ -1,0 +1,1648 @@
+=== PAGE 142 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+56 01-019 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• Control Bank D rods are at 200 steps 
+Then: 
+• The Group Demand Step Counter on 2CC2 console for Control Bank D Group 1 rods fails (blank screen) 
+In accordance with S2.OP-DL.ZZ-0003, Control Room Logs, which of the following completes both statements? 
+A. 
+B. 
+C. 
+D. 
+1. The Plant Computer displays the rod demand step position for Group(s) _ (1 )_ . 
+2. Based on the above condition, the Plant Computer _ (2)_ be used to satisfy the Tech Spec requirements for 
+the failed console group demand step counter. 
+(1) 1 Only 
+(2) can 
+(1) 1 and 2 
+(2) can NOT 
+(1) 1 and 2 
+(2) can 
+(1) 1 Only 
+(2) can NOT 
+PAGE 142 
+
+=== PAGE 143 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: A 
+Explanation I Justification: 
+A. Correct. . Only the Group 1 Demand Steps input into the Plant Computer. Per S2.OP-DL.ZZ-0003 for Control Rod 
+Counter channel checks, either the Group Demand Counter or Plant Computer will satisfy the surveillance for 
+Group 1 only. Only the Group 1 Demand Steps input into the Plant Compute r. TS 3.1.3.2.1.b, bases states in 
+part, " ... either the contro l console group 1 demand step counter or the plant computer "bank step" display is 
+sufficient to comply with this specification for group 1 rod position." 
+B. Incorrect. Part 1 is incorrect. Plausible because the operator may believe that both groups are also displayed on 
+the plant compute r. Part 2 is incorrect. Plausible because the operator may believe that the Plant Computer 
+cannot satisfy the surveillance requirement. Incorrect in that per S2.OP-DL.ZZ -0003, the Plant Computer Group 
+Demand for Group 1 only will satisfy the surveillance and also that only group 1 demand is displayed on the plant 
+computer. 
+C. Incorrect. Part 1 is incorrect. Plausible because the operator may believe that both groups are also displayed on 
+the plant compute r. Part 2 is correct. 
+D. Incorrect. Part 1 is incorrect. Plausible because the operato r may believe that the failed step counter will generate 
+E-24. Incorrect in that E-24 does not use input directly from the console step counters. Part 2 is incorrect. 
+Plausible because the operator may believe that the Plant Computer cannot satisfy the surveillance requirement. 
+Incorrect in that per S2.OP-DL.ZZ-0003, the Plant Computer Group Demand for Group 1 only will satisfy the 
+surveillance . 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-DL.ZZ-0003 (R126), TS 3.1.3.2.1 bases 
+None 
+NOS05RODS00-14, Objective 6, Describe the function of the following 
+components and how their normal and abnorma l operations affects the Rod 
+Control and Position Indication Systems: Rod Insertion Limit Comparator 
+New 
+Comprehension/ Analysis 
+41.5 / 45.6 
+RO 
+01-Position Indication System 
+014A2.11 
+Ability to (a) predict the impacts of the following on the Position Indication 
+System and (b) based on those predictions, use procedures to correct, 
+control, or mitigate the consequences of those abnormal operations: Failed 
+group demand position indication 
+3.0 
+Emergency and Abnorma l Plant Evolutions -Tier 2/Group 2 
+KIA Match: The KIA is matched because the candidate is being asked to predict how the console step counter will 
+effect rod position system and determine if the channe l check surveillance can be satisfied using the plant computer. 
+PAGE 143 
+
+=== PAGE 144 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: S2.OP-DL.ZZ-0003 Control Room Logs Modes 1-4 
+ATTA CHMENT 1 Sl.OP- DL.ZZ-0003(Q) 
+!IIO J\D.\YDATE : _ /_ /_ 
+CONTROL ROOM LOG (MODES 1-4) 
+SURV. ISSTR MOX TilE WED l1IU FRI SAT SUN 
+D[S(,1UPTI0:S RQ:\fr iSO. tJ~TI'S UIN :\1-\.'\: 1830 06:lO 1830 0630 1830 0630 1830 0630 1830 0634 1830 0630 1830 0630 
+SHUTDOWN ROD COUNTERS 
+ROD DEMAND 
+COUN'TERS/IRP1 
+STEPS PER Pl.Am 
+COMP 
+.1..t.A.11 STEPS \,91$AT SAT 
+• IF All Plant Computer IRPI indicate ±12 steps (for >85% RTP) OR ±18 steps (for <=85% RTP) of their respective group demand counters, 
+THEN RECORD "SAT". IRPI indication of <0 steps or >235 steps are considered 0 or 235 steps respectively. 
+CONTROL ROD COUNTERS 
+GROUP NOTE - SIR 4.1.3.1.1, 4.1.3.2.1.1 & 4 .1.3.5 - Maintain Contro l Bank Overlap of 101 Steps. IF ALLrods in the indicated bank are 
+with in ±12 steps (for >851/o RTP) OR ±18 steps (for <=85% RTP) of the group step counters , THEN RECORD " SAT". IF Reactor Trip Breakers 
+are open , THEN RECORD "STBY". IF in Mode 1 or 2 AND EITHER the Rod Position Deviaiion Alarm (OHA-E24) OR the Rod Insertion 
+Limit Monitor is inoperable. THEN RECORD Step Counter and StepcounterllRPI compar ison every 4 hours on Att achment 4. 
+GROUP NOTE - FOR Group oemano coumer :£ illier tne Group cou nter or me Plant comp uter will sausry tile surveillance ror Grp 1 only. 
+FOR IRPI INDICATION: Either the Dixon or the Plant Computer will satisfy the surveillance . Both are recorded to provide 
+flex ibility if an indication fails. IRPI indication of <O steps or >235 steps are conside red 0 or 235 steps res pectivel y. IF an IRPI 
+(Dixon or Plant Computer) is UNSAT, THEN RECORD in the comme nts, the specif ic rod (s) which are affected , 
+THEN GO TO S2.0 P-AB.ROD-0001(Q). 
+BANK A DHw-10 .1.1.t.1.b STEPS 1,91SAT SAT 
+PAGE 144 
+
+=== PAGE 145 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+57 07-027 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+Then: 
+• The ventilation system that supplies cool air to the room that the Reference Junction Panel is located for the 
+In-Core Temperature Monitoring System is lost 
+• Room temperature have risen by 15 °F 
+Which of the following describes the impact on the In-Core Monitoring instrumentation and what is its design limit? 
+A. CET readings will indicate higher than actual; up to 3300 °F. 
+B. CET readings will indicate higher than actual; up to 2300 °F. 
+C. NO effect on CET readings as they are temperature compensated; up to 2300 °F. 
+D. NO effect on CET readings as they are temperature compensated; up to 3300 °F. 
+PAGE 145 
+
+=== PAGE 146 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because higher tempe ratures in the room where the reference junction box is located will 
+cause the in temperature indicated to rise. Incorrect in that the system has a tempe rature compensator circuit such 
+that the reference junction box temperature changes are adjusted to the true thermocouple reading. In-core 
+system has a design range to 2300 °F. 
+B. Incorrect. . Plausible because higher temperatu res in the room where the reference junction box is located will 
+cause the in temperature indicated to rise. Incorrect in that the system has a tempe rature compensator circuit such 
+that the reference junction box temperature changes are adjusted to the true thermocouple reading. In-core 
+system has a design range to 2300 °F. 
+C. Correct. The reference junct ion box is located outside of containment. Ambient temperature changes in the room 
+will affect the reference junction box, however the system uses a temperature compensato r to adjust for the 
+changes in temperatu res where the reference junction box is located. A rise in ambient room temperatu re will 
+raise temperature, but the tempe rature compensat ing circuit will adjust for these reference junction box 
+temperature changes. In-Core system design upper range is 2300 °F. 
+D. Incorrect. In-Core system design upper range is 2300 °F. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+INPO Sensors and Detectors (R3) 
+None 
+NOS0SINCORE-09, Objective 7. Describe how the following components 
+affect the Core Exit Thermocoup le System during Normal and Abnormal 
+conditions: Reference Junction Boxes 
+Bank - Indian Point 2 2021 NRC ROSS 
+Comprehension/ Analysis 
+41.7 / 45.7 
+RO 
+07-ln Core Temperature Monitoring System 
+017 K6.01 
+Knowledge of the effect of the following plant condit ions, system malfunctions, 
+or component malfunctions on the In Core Temperature Monitoring System : 
+Temperature measuring device (for example thermocouple ) 
+3.2 
+Emergency and Abnorma l Plant Evolutions -Tier 2/Group 2 
+KIA Match: The KIA is matched because the candidate is being asked how the In Core Monitoring System is impacted 
+based on ambient temperatures changes at the reference junct ion box. 
+PAGE 146 
+
+=== PAGE 147 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: INPO Sensors and Detectors 
+Thermocouple Operation Example 
+Thermocoup les will cause an electric current to flow in the attached circuit 
+when subjected to changes in temperature. The amount of current produced 
+depends on the temperature difference between the measuremen t and 
+reference j unction, the characteris tics of the two metals used, and the 
+characteristics of the attached circuit. The figure below shows a basic 
+thermoco uple circuit. 
+Reference (Cold} 
+Junction 
+T 
+Volage 
+_! 
+Potenliotneter 
+(TtMptratur• IM~ton) 
+Figure: Simple Thermocoup le Circuit 
+Heating the measuring junction of the thermocouple produces a voltage that 
+is greater than the voltage across the reference junction. The voltmeter 
+measures the difference between the--two voltages in1nillivolts); the 
+voltage is proportional to the difference in temperature. 
+Tempera t ure Indicated 
+o< Hot junction Vol t age - Cold]unc t ion Voltage 
+If temperature at the reference (cold) junction were to decrease, indicated 
+temperature would increase and vice versa. For ease of operator use, some 
+voltmeters are set up to read out directly in temperature through use of 
+electronic circuitry. Other applications provide only the millivolt readout. 
+In order to convert the millivolt reading to its corresponding temperature, 
+the operator must refer to vendor-supplied thermocou ple tables. T he 
+thermocouple manufacturer supplies these tables, and they list the specific 
+temperature corresponding to a series of millivolt readings. 
+PAGE 147 
+
+=== PAGE 148 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: NOS0SINCORE-06 
+•U;$$O.N•NA.Maf••····••1N.CQSiiNU~Rm$.TRY.MJ;N.TAllQN•$Y.$.TiMi•ffiC.J:;U.PlNG.{:::1:• 
+!!!ll!!!i!iii!!i!i::i!l!i:J!il!l:l:l!
+1
+i J: i•!: j: !!i!!:jili!!!!■lll.lll!: !ll! il!l! l~!ll! ~ll~ll !lllliil.i;,~j!lll:l:l: il!jii 
+INSTRUCTIONAL CONTENT : 
+2) To measure the cold junction temperature with a 
+semiconductor temperature probe, and provide that 
+temperature signal to the CETPS so that the temperature 
+error introduced by the cold junction may be 
+compensated. 
+NOTE: The cold junction temperature is the temperature at the point where the 
+thermocouple wires are connected to copper wires at the terminal strip. This is 
+different than the temperature sensed by the thermocouple , because , in essence, a 
+new thermocouple is formed by the junction between the thermocouple wires and 
+the copper wire. This "new" thermocouple produces a voltage proportional to Its 
+junction temperature , which adds to the voltage already present from the FTTC. By 
+measuring this temperature , the CETPS can compensate for this erro r to produce a 
+true core temperature . 
+PAGE 148 
+
+=== PAGE 149 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+58 05-027 Points: 1.00 
+Which of the following comp letes both statements concerning operation of the Hydrogen Recombiner System during 
+a Design Bases Accident (assume hydrogen concentrat ion is within the range that allows operation of the hydrogen 
+recombiner system)? 
+1. The maximum number of hydrogen recombiners that can be placed in service is _ ( 1 )_ . 
+2. What is the concern if hydrogen recombiner system cannot be placed in service when required? 
+A. (1) 1 
+(2) Gas vapor binding of ECCS pumps resulting in loss of core cooling. 
+B. (1) 1 
+(2) Explosive atmosphere resulting in containment failure. 
+C. (1) 2 
+(2) Explosive atmosphere resulting in containment failure. 
+D. (1) 2 
+(2) Gas vapor binding of ECCS pumps resulting in loss of core cooling. 
+PAGE 149 
+
+=== PAGE 150 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Plausible because gas intrusion into the ECCS system can adversely affect the operat ion of ECCS 
+pumps. 
+B. Correct. Per 2-EOP-LOCA- 1 step 17, only one Hydrogen Recombiner is allowed to be placed in service when the 
+Hydrogen concentration is between > 0.5 % and < 4%. T he bases for running a Hydrogen Recombiner is to 
+reduce the hydrogen concentration to prevent the formation of a flammable mixture that could ignite and cause an 
+explosion and pressure excursion that could challenge containment integrity. 
+C. Incorrect. Plausible because the operator may believe that both hydrogen combiners can be operated to maximize 
+the reduction of hydrogen when hydrogen concentration is at the upper end (4%). Incorrect in that operat ion of 
+both hydrogen recombiners is not permitted. 
+D. Incorrect. Plausible because gas intrusion into the ECCS system can adverse ly affect the operation of ECCS 
+pumps. Plausible because the operato r may believe that both hydrogen combiners can be operated to maximize 
+the reduction of hydrogen when hydrogen concentration is at the upper end (4%). Incorrect in that operat ion of 
+both hydrogen recombiners is not permitted. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+2-EOP-LOCA-1 (R41) 
+None 
+NOS0SLOCA01-07, Objective 6.j. Describe the plant response to actions 
+taken in the following EOP step sequence(s): Containment Hydrogen 
+Concentration 
+Bank- Salem 
+Comprehension/ Analysis 
+41.7 / 45.4 
+RO 
+OS-Hydrogen Recombine r and Purge Control System 
+028 K3.02 
+Knowledge of the effect that a loss or malfunction of the Hydrogen 
+Recombine r and Purge Control System will have on the following systems or 
+system parameter s: CNT 
+2.9 
+Plant Systems-Tier 2/Group 2 
+KIA Match: The KIA is matched because the question is asking the applicant what the effect on containment will be 
+when hydrogen recombiners cannot be placed in service when hydrogen concentration requires it in EOP-LOCA -1. 
+PAGE 150 
+
+=== PAGE 151 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 2-EOP-LOCA- 1 
+CONTAIN!!EMT 
+HY0ROGE~ 
+C0NCrnTRATI 0H 
+N!I 
+ST<RT OSE HfQllOC:E'I 
+RE.C0"81 \'EW F£R 
+$2.0"-50.~IHIO!J l (Ql 
+"NYOllOClat< RttOMillliE:R 
+L OFERATI@•' 
+PAGE 151 
+C:DNS~LT TSC F"OP ~ll0 ITC!!IOI. 
+L RE.COVERT A.CTIOh'S 
+
+=== PAGE 152 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+ERG Step No; 
+EOP Step: 
+Step 17 
+IS CON"T AINMENT HYDROGEN CONCENTRATION LESS T!HAN 4 .. 0% 
+[CONTADU\IENT ID'DROGEN CONCENTRAIIONl 
+Purpo se: 
+To check if an e.xoessi.ve containment illydrogen concentration is pr,esent. 
+ERG Basis: 
+This step insm.1cts the operator to obtain a ctUTent hydrogen concentration me.asurement. Depending 
+upon the m.1.gnilude of ithe hydrogen concentration, ilie operator will ,either c,ontinue with EOP-LOCA-1, 
+tum on the hydrogen recombine.rs or n.otiify the plant engineering staff to determine a.dditional reoove1y 
+actions before continuing with the procedures. 
+When inadequate ,c-0re ,cooling has ocCWTed, the containment hydrogelll coocen:lration may be as much as 
+10 to 12 volume percent, depending on the amo1mi ofmeta l-wateneactioo (to produce hydrogen) that 
+a~ occurred in rthe· core. The lfytiroge1rco-ncentr:1hon is of concenrs ince a flammable mi"<ture· c·an burn, 
+if an ignition somce as a.:ailable, and cause a sudden.rise in containment 1_.uessnre.which.may challe.11ge-l 
+containment integr.ity. The operator is instructed to obtain a current containment hydrogen C()noe:ntra,tion 
+measurement at this point in order to ascertain ihe potential flllllllllabili.ty of 1ille c.ombuslible gases in the 
+containment Noie that in order to have tb.e potential for flammable hy,d:rogen concentraiious, :m. 
+inadequate core cooling situation must have already existed. Without illll inade,quate core cooling 
+situation, sufficient hydrogen would not be ,expected to have been produced to cause potentially 
+fiallllllable miN.tu:r;es. 
+A detennin:ation is :ma.de of the flammability of t:h.e hydrogen mixmre with re.,spect to the possi.ble 
+containment pressure rise. If the hydrogen mix.tare is between 0. 5 vo.lume percent and 6 .0 volume 
+percent in d.ty aiir, er!her no hydrogen bum is possible or a limited bum may oc,c:m which does not 
+produce a significant pressure rise. A hydrogen. coucentration uot to eN.oeed! 6.0 volume percent in dry 
+air corresponds !o th.e ll~ limit of operability for the hydrogen recombine!, represented QY th.e footnote 
+(T.18). If containm.enl hydrogen concentration i~ between 0.5 \·olume percent and(T.18) \·olume 
+percent. the operator is instructed to start the· Hydroeen RecombinerSystem to slowly reduce 
+contaimnent h:ydrogeo concentration. If the hydrogen concentration is ress than 0.5 volume percentin 
+dry air, a flaDllllahre :situation is not imminent and the operator continues with procedure EOP.-LOCA-1. 
+If the concentra lion is, greater than (T.1 S) volume percent in dry air, the opera.tor is instructed to 
+immediatel!y notify the plant engineering staff of the situation. In this case the operator is instructed to 
+consult the plant ,engineering staff for addi!iooal recovery actions while proceeding with this procedm e. 
+PAGE 152 
+
+=== PAGE 153 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+59 08-023 
+Given: 
+• Salem Unit 1 is in MODE 5 
+• Spent Fuel Pool level is 128' 5" 
+• Spent Fuel Pool boron concentration is 2300 ppm 
+Then: 
+• A tube inside the in-service Spent Fuel Pool Heat Exchanger ruptures 
+Which of the following completes both statements? 
+1. Level in the Spent Fuel Pool will _ (1 )_ . 
+Points: 1.00 
+2. The Spent Fuel Pool boron concentration will require adjustments from a _ (2)_ water source. 
+A. (1) rise 
+(2) non-borated 
+B. (1) rise 
+(2) borated 
+C. (1) lower 
+(2) borated 
+D. (1) lower 
+(2) non-borated 
+PAGE 153 
+
+=== PAGE 154 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Plausible because the SFP level will rise. Incorrect in that CCW is a non-borated water source and will 
+reduce the boron concentra tion. 
+B. Correct. Per S2.OP-AB.CC-0001, a leak in the SFP HX will result in the out leakage of CCW into the SFP system 
+resulting in the CCW Surge Tank level lowering and the SFP level rising. The non-borated CCW water will reduce 
+the boron concentration of the SFP. If boron concentration lowers below TS then the crew will need to add 
+borated water into the SFP to raise the boron concentrat ion. Note: SFP low and high level alarms 128' 2" and 129' 
+2". 
+C. Incorrect. Plausible because the operator may incorrectly recall that the SFP HX will leak into the CCW system . 
+Incorrect per S1 .OP-AB.CC-0001, SFP HX will be out leakage from CCW. 
+D. Incorrect. Plausible because the operator may incorrectly recall that the SFP HX will leak into the CCW system . 
+Incorrect per S1 .OP-AB.CC-0001, SFP HX will be out leakage from CCW and that the boron concentration will 
+reduce requiring addition from a borated source. 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S1 .OP-IO.ZZ-0010 (R30), TS 3.9.11 
+None 
+NOS05SFP000- 12, Objective 5.e. Describe the function of the following 
+components and how their abnormal operat ion affects the Spent Fuel Pool 
+Cooling System: Spent Fuel Pool Heat Exchange r 
+Bank - Turkey Point 2016 NRC RO61 
+Comprehension/ Analysis 
+41.7 / 45.7 
+RO 
+08-Spent Fuel Pool Cooling System 
+033 K6.11 
+Knowledge of the effect of the following plant conditions, system malfunctions, 
+or component malfunctions on the Spent Fuel Pool Cooling System: CCWS 
+3.4 
+Plant Systems-Tier 2/Group 2 
+KIA Match: The KIA is matched because the question is asking the applicant what the effect will be on the SFP when 
+a tube leak exists in the SFP heat exchange r. In this case , CCW will leak into the SFP system . 
+PAGE 154 
+
+=== PAGE 155 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: Turkey Point 2016 RO61 
+Question# 61 
+Given th~ following initial conditions: 
+• Unit 3 is in Mode 5. 
+• Spent Fuel Pit (SFP) level is 56' 11". 
+• SFP boron concentration is 2300 ppm. 
+Subsequently: 
+• A tube inside of the in-service Spent Fuel Pool Heat Exchanger breaks. 
+• ANN H 8/6 CCW HEAD TANK HI/LO LEVEL alarms. 
+• A crew is dispatched to isolate the heat exchanger. 
+Which one of the following correctly completes the statement below? 
+The crew must take action to prevent Spent Fuel Pool (1) from violating 
+the Tech Spec LCO by performing a (2) to the SFP in accordance with 3-
+NOP-033, Spent Fuel Pit Cooling System. 
+A. (1) level 
+(2) direct boration 
+B. (1) level 
+(2) primary water fill 
+C. (1) boron concentration 
+(2) direct boration 
+D. (1) boron concentratio n 
+(2) primary water fill 
+PAGE 155 
+
+=== PAGE 156 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: S1 .OP-IO.ZZ-0010 
+ATTACHMENT 1 
+(Paoe 5of 51 
+SUPPORT SYSTEMS STATUS 
+S 1 .0P-IO.ZZ-0010(0 ) 
+3.0 SYSTEMS/COMPONENTS REOUlRED OPERABLE: 
+:systen u1,omponent ( 141 Actual :status Notes 1_;omments 
+FHS VEllTILATION (10) 
+FUEL HANDLING CRANES TRM3.Q7 
+SFP BORON CONCENTRA TlON --- 'i] 
+Cb Cb Required: -- TIS3 .7.11. TlfiIT,FSAlHU .3 
+Dato: --
+CONTROL ROOM EMERGENCY AIR TIS 3.7,e.1 
+CONDITIONING SYS~ M (12) 
+1R 1B RAD MONITORING (13) TIS 3.3.3. 1 
+CMILLEO WATER SYSTEM TIS 3 7 10 
+(10) The FHB Supply Fan ANO both FHB Exhaust Fans should be AVAILABLE ANO QPerat111g. Each FHB Exhaust Fan 1s to be 
+aligned to c11 availableVifal Bus. A FHB Exhaust Fan may be aigned to 1CVitaf Bus as an alternate pcywer source 
+IAW S1 .MD-FRZZ-0001(O), Alternate Power Sources During Refueling Outages. IF Fuel Handling Ventilation becomes 
+unavailable. operations may continue after the Fuel Handling Area venfilation system has been evaluated and building DIP 
+verified to be negattve. 
+The SFP Boron concentration (Cb) shall be greater than or equal to800 ppm. Applicable when fuel assemblies are stored in the 
+SFP and a fuel storage pool verification has1!.QI been pelformed since, he last movement of fuel assemblies in the SFP 
+ms 3.1.111. 
+In Mode 6, the SFP Boron concentration (Cb) shall be within the limits specified in lhe Core ()pefating Limits Report (COLR). 
+Applicable when the SFP is connected to the Reactor Coolant System (TIS 3.9.1 ). 
+For Dry Cask Storage Campagns, SFP required Boron concentration (Cb) shall be provided by Reactor Eng'neering IAW 
+SC.RE-FR.DCS-0002(O) 
+The SFP Boron concentration (C~ is maintained 313 minimum of 800 ppm (FSAR 9. 1 .3). 
+(12) For fuel movemeo~ the CREACS fans do NOT require m Emergency Backup power supply to be considered OPERABLE. 
+(13) Raeliation monnors are inoperable With tne system in ACCIDENT PRESSURIZED mode. This is an acceptaJ~e coootion. 
+(14) REFER to S1.OP-SO.DG-0005(0), Preparation For Removing A Diesel Generator Fran Service, for 
+"Required Minimum Components Necessary For Movement Of Irradiated Fuel', based on Emergency Diesel Generator status. 
+PAGE 156 
+
+=== PAGE 157 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: S1 .OP-AB.CC-0001 
+3.35 CONTINUE efforts to locate and isolate the leak, as applicable. 
+3.36 EVALUATE initiating Unit shutdown IAW the applicable IOP. 
+NOTE 
+S 1 .OP-AB.CC-0001 
+Components supplied by ccw with pressure less than ccw HOR pressure are sources tor 
+system to system out leakage (e.g., Spent Fuel Pool Heat Exchanger) . 
+3.37 ISOLATE the affected Component using ATTACHM ENT 3, Equipment Isolation Table. 
+3.38 WHEN source of component leakage has been identified and isolated, 
+THEN ENSURE any valves that were CLOSED to support leak detection IAW 
+ATTACHMENT 4, Leak Detection Method, are realigned to support nom1al Component 
+Cooling System operation. 
+3.39 NOTIFY SM/CRS to refer to the following: 
+♦ Technical Specifications 
+♦ Event Classificanon Guide 
+PAGE 157 
+
+=== PAGE 158 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+60 
+Given: 
+• Salem Unit 2 is at 100% power 
+Then: 
+04-079 
+• A tube in one of the Circulating Water (CW) waterboxes completely severs 
+Points: 1.00 
+Which of the following control room console alarms would confirm a gross tube leak in a CW waterbox? 
+1) Dissolved Oxygen Hi 
+2) Hydrazine Lo 
+3) Condensate Pump Disch Sodium Hi 
+4) Hotwell Outlet Conductivity Hi 
+A. 1 and 3 Only 
+B. 2 and 4 Only 
+C. 1, 3, and 4 Only 
+D. 2, 3, and 4 Only 
+PAGE 158 
+
+=== PAGE 159 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because these two alarms would confirm a waterbox tube leak. Incorrect in that the answer is 
+incomplete and missing Hotwell Outlet Conductivity Hi. 
+B. Incorrect. Plausible because Dissolve Oxygen alarm would be expected and Hydrazine Lo alarm is an alarm for 
+the feedwater system. Incorrect in that it's not expected for river water into the condensate system to impact the 
+concent ration of Hydrazine. 
+C. Correct. Based on a severed tube in a waterbox, these alarms would confirm a tube leak in a CW waterbox . 
+D. Incorrect. Plausible because these alarms would confirm a tube leak. Incorrect i n that it's not expected for river 
+water into the condensate system to impact the concentrat ion of Hydrazine. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-AB.CHEM-0001 (R30) 
+None 
+NOS05CONTMT-17 , Objective 3.g, 
+New 
+Comprehension/ Analysis 
+41.10 / 43.5 / 45.3 / 45.12 
+RO 
+04-Condensate System / Emergency Procedures/Plan 
+056 G2.4.46 
+Ability to verify that the alarms are consistent with the plant conditions 
+4.2 
+Plant Systems-Tier 2/Group 2 
+KIA Match: The KIA is matched because the question is asking the applicant to verify which alarms in the control room 
+would be present on the Condensate System if a CW waterbox tube leak exists. 
+PAGE 159 
+
+=== PAGE 160 ===
+RO EXAMINATION ANSWER KEY 
+Add itional Refere nce: 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+ATTACHMENT 2 
+CONDENSER TUBE LE.AK 
+(Page 1 of 5) 
+s2 .oP-Al8.CHEM-0001(Q) 
+1.0 Actions for Condenser Tube Leak 
+NOTE 
+A gross Condenser Tube Failure/Leak is indicated by rapidly rising Secondary Plant 
+Chemistry recorder trends, 2CC1 and OHA aJam,s, it is also defined as: 
+230 ppb Condensate Pump Disch sodium with condensate polisher in service, OR 
+22 ppb Cond'.ensate Pump Disch sodium with condensate polisher out of service, OR 
+A rapidly increasing Condensate Pump discharge sodium in either condition 
+(condensate polishers in o, out of service) that is expected to exceed til e limits above 
+(>30 or >2 ppb). 
+2RP5 Recorders 
+2cc 1 Alarms 
+OHAAlanns 
+Conductivity 2KA-8551 
+Sodium, Specific CNDCT 
+CONDENSATE PUMP DISCH SODIUM HI 
+HOTWELL OUTLET CONDUCTIVllY HI 
+CONDENSATE PUMP DISCH CONDUCTIVllY HI 
+COND POL AUTO SWAP (G-19) 
+PAGE 160 
+
+=== PAGE 161 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+61 09-007 
+Given: 
+• Salem Unit 1 is at 100% power and Unit 2 is in MODE 5. 
+• Release of 11 eves Monitor Tank is in progress. 
+• The release path is through 11 CC Heat Exchanger and Unit 2 CW system 
+• 22A and 228 Circulators are the only circulators in service 
+Then: 
+• 22A Circulator trips 
+Points: 1.00 
+Based on the above condition, which one of the following describes the impact to the liquid release in progress? 
+1) The release _ (1 )_ automatically isolate upon the loss of the circulator. 
+2) The release _ (2)_ . 
+A. (1) will NOT 
+(2) may continue 
+B. (1) will NOT 
+(2) may NOT continue 
+C. (1) will 
+(2) may NOT recommence 
+D. (1) will 
+(2) may recommence 
+PAGE 161 
+
+=== PAGE 162 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: A 
+Explanation I Justification: 
+A. Correct. Per S1 .OP-SO.Wl-0001 only one circulator is required to be in service to allow the release to continue. 
+The 1 R 18 does not isolate or close the 1 WL51 on loss of flow. 
+B. Incorrect. Plausible because the operator may believe that you need both circulators in service to continue the 
+discharge. 
+C. Incorrect. Plausible because the operator may believe that the 1R18 radiation monitor will trip the 1 WL51 closed 
+when loss of flow is detected or may believe the operator may believe that you need both circu lators in service to 
+continue the discharge. 
+D. Incorrect. Plausible because the operator may believe that the 1 R18 radiation monitor will trip the 1WL51 closed 
+when loss of flow is detected . 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S1 .OP-SO.WL-0001 (R29) 
+None 
+NOS05WAS LIQ-11, Objective 12. Discuss the procedural requirements 
+associated with the Radioactive Liquid Waste System , including an 
+explanation of major precaution and limitations in the Radioactive Liquid 
+Waste System procedures . 
+New 
+Comprehension/ Analysis 
+41.5 / 45.3 
+RO 
+08-Liquid Radwaste System 
+068 K5.07 
+Knowledge of the operational implications or cause and effect relationships of 
+the following concepts as they apply to the Liquid Radwaste System: Loss of 
+secondary mixing water system 
+2.6 
+Plant Systems-Tier 2/Group 2 
+KIA Match: The KIA is matched because the applicant is being asked how the loss of one circulator will affect the 
+liquid release in progress. 
+PAGE 162 
+
+=== PAGE 163 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+62 
+Given: 
+• Salem Units 1 and 2 are at 100% power 
+Then: 
+07-028 
+• 1R1A, Control Room Area, Radiation Monitor is in Alarm 
+Which of the following actions is required? 
+Note: CAV = Control Room Area Ventilation 
+AP = Accident Pressurized 
+A. Verify automatic actuation of ONLY Unit 1 CAV in AP Mode. 
+B. Verify automatic actuation of ONLY Unit 2 CAV in AP Mode. 
+C. Manually press AP pushbutton at 1 RP2 panel to actuate BOTH units CAV in AP Mode. 
+D. Manually press AP pushbutton at 2RP2 panel to actuate BOTH units CAV in AP Mode. 
+PAGE 163 
+Points: 1.00 
+
+=== PAGE 164 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because the operator may confuse the 1 R1 A with the 1 R1 B radiation monitors and believe 
+that it will actuate CAV in AP Mode only on the affected unit. Incorrect in that 1 R1A area radiation monitors will not 
+actuate CAV in AP Mode. 
+B. Incorrect. Plausible because the operator may confuse the 1 R1 A with the 1 R1 B radiation monitors and believe 
+that it will actuate CAV in AP Mode only on the affected unit. Incorrect in that 1 R1A area radiation monitors will not 
+actuate CAV in AP Mode. 
+C. Correct. Per the ARP for 1 R1 A radiation monitor in alarm, the control room crew will be required to place the 
+Control Room Ventilation (CAV) System into Accident Pressurized (AP) Mode. Since the area radiation monitor is 
+alarm sensing radiation on Salem Unit 1 side, the crew will actuate CAV in AP Mode from Unit 1 which will actuate 
+both units CAV into AP Mode and open the emergency intake dampers on the unaffected unit, in this case unit 2. 
+D. Incorrect. Plausible because the operator may confuse which unit to actuate CAV in AP Mode to align the 
+emergency intake dampers on the unaffected unit, in this case unit 2. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-AB.RAD-0001 (R30), S2.OP-SO.CAV-0001 (R43) 
+None 
+NOS05REFUEL-13, 
+New 
+Comprehension/ Analysis 
+41.7 / 45.5 to 45.8 
+RO 
+07-Area Radiation Monitoring System 
+072 A4.02 
+Ability to manually operate and/or monitor the Area Radiation Monitoring 
+System in the control room: Radiation monitor function 
+3.4 
+Plant Systems-Tier 2/Group 2 
+KIA Match: The KIA is matched because the question is asking what action is required when the control room area 
+radiation monitor goes into alarm. 
+PAGE 164 
+
+=== PAGE 165 ===
+RO EXAMINATION ANSWER KEY 
+Additional Reference: 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+ATTACHMENT 3 
+(Page 11 of 1) 
+AREA RADIATIION MONITORS 
+S 1 .o P-AB.RAD-'0001 (Q) 
+1.0 IF 1R1A, Control Room Area, is the affected monitor, 
+THEIN: 
+1.1 Coordinate with Unit 2 NCO to ALIGN! Control Room Ventilatcon for 
+ACCIDENl PRESSURIZED mode IAW the following procedures: 
+♦ SU.OP-SO.CAV~000l (Q), Control Room Ventilation Operation 
+♦ S2.OP-SO.CAV-000l (Q), Control Room Ventilation Operation 
+1.2 DIRECT Radiation !Protection to survey are·a to determine source of :activity rise. 
+PAGE 165 
+
+=== PAGE 166 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+S 1 .0 P·SO.CAV-0001(Q) 
+5.7 Manual Initiation of ACCIDENT PRESSURIZED Mode Operation 
+NOTE 
+_ This Section provides direction for placing both Units in the ACCIDENT PRESSURIZED mode 
+manually initiated by Unit 1. If ACCIDENT PRESSURIZED mode was initiated from Unit 2, Step 
+5.7.1 should NOT to be performed. 
+5. 7 .1 PRESS ACCIDENT PRESSURIZED pushbutton at 1 RP2. 
+NOTE 
+IF ACCIDENT PRESSURIZED mode was initiated from Unit 2, 
+THEN NORMAL lamp will remain illuminated. 
+5.7.2 ENSURE red ACCIDENT PRESSURIZED lamp illuminates. 
+5.7.3 ENSURE CONTROL AREA ISOLATION Train A ISOLATION PUSH TO RESET 
+red lamp is illuminated AND Train B ISOLATION PUSH TO RESET red lamp is 
+illuminated. 
+5.7.4 lE an accident has occurred on Unit 1, 
+THEN NOTIFY Unit 2 NCO to PERFORM S2.OP-SO.CAV-0DO'l(Q), 
+Control Area Ventilation Operation, section on Automatic Initiation of 
+ACCIDENT PRESSURIZED Mode Operation. 
+5.7.5 lE manual initiation of ACCIDENT PRESSURIZED mode operation is NOT initiated 
+due to an accident, 
+THEN NOTIFY Unit 2 NCO to PERFORM the following: 
+A. ENSURE Unit 2 CAACS is aligned to ACCIDENT PRESSURIZED mode 
+of operation IAW S2.OP-SO.CAV-0001 (Q), 
+Control Area Ventilation Operation, Exhibit 1 for Component Positions. 
+PAGE 166 
+
+=== PAGE 167 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+63 08-024 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• OHA A-7, FIRE PROT FIRE, is alarming 
+• Fire alarm zones on 2RP5 Panel indicates a fire detected inside Panel 335 in containment 
+Which of the following completes the following statement concerning the operation of the 2FP147, Fire Protection 
+Containment Isolation Valve? 
+1. Based on a valid fire detected inside containment, the 2FP147 will _ (1 )_ . 
+2. On a Phase A signal, the 2FP147 _ (2)_ automatically close. 
+A. (1) automatically open 
+(2) w ill NOT 
+B. (1) automatically open 
+(2) w ill 
+C. ( 1) need to be manually opened from the 2RP5 panel 
+(2) w ill 
+D. ( 1) need to be manually opened from the 2RP5 panel 
+(2) w ill NOT 
+PAGE 167 
+
+=== PAGE 168 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because fire protection systems will actuate if the fire detector sensor is triggered. Incorrect in 
+that even though the fire zone fire water header is triggered, the 2FP147 still needs to be manua lly opened from 
+the contro l room. 
+B. Incorrect. Plausible because fire protection systems will actuate if the fire detector sensor is triggered. Incorrect in 
+that even though the fire zone fire water header is triggered, the 2FP147 still needs to be manually opened from 
+the contro l room. 
+C. Correct. The 2FP147 requires to be manua lly opened at the 2RP5 panel when a valid fire is detected inside 
+containment. The 2FP147 will close on a Phase A signal. 
+D. Incorrect. Plausible because the operator may believe that fire water inside containment is the priority and will not 
+auto isolate. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+NOS05FIRPRO-12 
+None 
+NOS05FIRPRO-12, Objective 13. Given plant conditions, relate the Fire 
+Protection System with the following: Containment and Containment Press 
+Relief 
+Modified - Salem 2019 NRC RO75 
+Fundamental /Memory 
+41.5 / 45.5 
+RO 
+08-Fire Protection System 
+086 A1.06 
+Ability to predict and/or monitor changes in parameters associated with 
+operating the Fire Protection System , including: Lights and alarms 
+3.0 
+Plant Systems-Tier 2/Group 2 
+KIA Match: The KIA is matched because the question is asking the applicant how the fire water is supplied into 
+containment when a valid fire is detected. The operator requires knowledge of hoe the 2FP147 fire header isolation 
+valve functions during a valid fire detected and whether the 2FP147 will isolate on a Phase A containment isolation 
+signal.. 
+PAGE 168 
+
+=== PAGE 169 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+ALARM 
+A-7 
+DEVICES: NIA 
+SETPOINT: NIA 
+REFERENCES: D-wg_203753, 2054-47, 601270, 203750, 203751 
+1.0 CAUSE(S): 
+1-1 Any. 
+A. Coded fire alarm 
+B. Fire alarm on 2RP5 
+2.0 AUTOMATIC ACirlON: 
+NONE 
+3.0 OPERATOR ACTIONS: 
+A-7 FIRE PROT FIRE 
+:t 1 SCAN 2RP5 to detem1ine Fire Zone. Area. and Elevation 
+OR DETERMINE location IAW Alam1 Code Ust 
+7 
+FIRE PROT 
+FIRE 
+32 IF AT ANY TIME. fire indicatr.on for both Zones 59 and 74 on 2RP5 are received, 
+THEN OPEN 2FP1-47, Fire Protection Containment Isolation. 
+PAGE 169 
+
+=== PAGE 170 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Parent Question: Salem 2019 NRC RO75 
+Modified question based on the stem asking about isolation on a Phase A. 
+Question: #75 
+Given: 
+• Unit 2 is operating at 100 % Power. 
+• OHA A-7, FIRE PROT FIRE, annunciates. 
+• Panel 2RP5 is checked and indicates a Fire in Containment. 
+o Zone 59 - Air and Water Deluge, Containment El. 100 Panel 335 is lit. 
+o Zone 74 - Smoke and Fire Detector, Containment El. 100 Panel 335 is lit. 
+• The crew enters S2.OP-AB.FIRE-0001, Control Room Fire Response. 
+• The crew Trips the Reactor, Turbine, and all RCPs. 
+• 2-EOP-TRIP-1 is entered while continuing with S2.OP-AB.FIRE-0001, Control Room Fire Response. 
+Which ONE of the following describes the NEXT required action for the above conditions in accordance with S2.OP-
+AB.FIRE-0001? 
+A. OPEN the 2FP147 from the control room 
+B. Dispatch an NEO to OPEN the associated deluge valves. 
+C. Dispatch an NEO to place both PORV BLOCK Valve breaker key switches in EMER CLOSE. 
+D. Verify OHA A-15, FIRE PUMP 1/2 RUN, is in alarm indicating that a Diesel Fire Pump has started and is supplying 
+fire protection water to the associated deluge valves in containment. 
+Answer: A 
+PAGE 170 
+
+=== PAGE 171 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+64 14-087 
+Given: 
+• Salem Unit 2 is at 100% power 
+• All systems are in normal alignment and in Auto 
+Then: 
+• 21 SGFP trips 
+Which of the following indications is the expected response? 
+1. The DEHC will automatically runback the turbine at _ (1 )_ per minute. 
+Points: 1.00 
+2. 2CN47, 23/24/25 Heater String Bypass valve, _ (2)_ immediately open when the feedpump trips. 
+A. (1) 15% 
+(2) w ill NOT 
+B. (1) 15% 
+(2) w ill 
+C. (1 ) 200% 
+(2) w ill 
+D. (1 ) 200% 
+(2) w ill NOT 
+PAGE 171 
+
+=== PAGE 172 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because this is the ramp rate when manually initiating a turbine runback at the DEHC panel. 
+Plausible because on a condensate pump trip, the 2CN47 will only open if SGFP suction pressure lowers to less 
+than 320 psig. Incorrect in that the 2CN47 will open following a SGFP trip regardless of suction pressure. 
+B. Incorrect. Plausible because this is the ramp rate when manually initiating a turbine runback at the DEHC panel. 
+C. Correct. A SGFP will automat ically initiate a turbine runback at 200% per minute to 66% power. When a SGFP 
+trips the 2CN47 will open and the polisher will be bypassed . 
+D. Incorrect. Plausible because on a condensate pump trip, the 2CN47 will only open if SGFP suction pressure 
+lowers to less than 320 psig. Incorrect in that the 2CN47 will open following a SGFP trip regard less of suction 
+pressure. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-AB.CN-0001 (R32) 
+None 
+NOS05ABCN01-07, Objective 1.d. Describe the operation of the following 
+system as applied to AB.CN-0001: SGFP Trip 
+Bank- Salem 
+Fundamenta l/Memory 
+41.10 / 45.12 
+RO 
+14-Conduct of Operations 
+G2.1.19 
+Ability to use available indications to evaluate system or component status. 
+3.9 
+General Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the candidate is being asked what the expected indications and status of 
+components are following a SGFP trip. In this case, the candidate must be able to determine from various contro l room 
+indications (i.e., CN47 opening, turbine runback status) if the system is responding as expected. 
+PAGE 172 
+
+=== PAGE 173 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+65 14-088 Points: 1.00 
+Given: 
+• Salem Unit 1 experienced a valid demand for a reactor trip and Safety Injection (SI) 
+• The RO suspects that only one Train of SI actuated 
+Which of the following indications would corroborate that one train of SI failed to actuate? 
+The "SI & FW ISOL" Red lamp on 2RP4 panel will be _ (1 )_ and the "SI RESET" Green bezel light on the failed Train 
+of Safeguards on 2CC1 console will be _ (2)_ . 
+A. (1) Flashing 
+(2) LIT 
+B. (1) Flashing 
+(2) Extinguished 
+C. (1) LIT 
+(2) Extinguished 
+D. (1) LIT 
+(2) LIT 
+PAGE 173 
+
+=== PAGE 174 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: A 
+Explanation I Justification: 
+A. Correct. The "SI & FW ISOL" Red lamp on 2RP4 would be flashing indicating SSPS train disagreement and that 
+one Train of SI has failed to actuate. Also, the "SI REST" Green light on the train that failed to actuate will be LIT 
+B. Incorrect. Plausible because the "SI & FW ISOL" Red lamp on 2RP4 would be flashing indicating SSPS train 
+disagreement and that one Train of SI has failed to actuate. The SI RESET light would be extinguished but for the 
+Train that did actuate 
+C. Incorrect. Plausible because "SI & FW ISOL" Red lamp on 2RP4 would be LIT solid if both trains of SI did actuate 
+and the SI RESET light would also be extinguished for the train that SI actuated on. 
+D. Incorrect. Plausible because "SI & FW ISOL" Red lamp on 2RP4 would be LIT solid if both trains of SI did actuate 
+and the SI RESET light would be LIT for the train that SI did not actuated on. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+NOS05RXPROT -15, 218489 
+None 
+NOS05RXPROT -15, Objectives 19a & b. Identify and describe the Control 
+Room controls, indications, and alarms associated with the Reactor 
+Protection System 
+New 
+Fundamental /Memory 
+41.10 / 45.12 
+RO 
+14-Conduct of Operations 
+G2.1.31 
+Ability to locate control room switches, controls, and indications and to 
+determine whether they correctly reflect the desired plant lineup. 
+4.6 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the candidate is being asked to determine how to validate if one train of SI 
+has actuated and the location of the indication. In this case, the applicant must know the indication in the stem is 
+located on 2RP4 and should be flashing to indicate train disagreement , 
+PAGE 174 
+
+=== PAGE 175 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: Excerpt from NOS0SRXPROT 
+C. RP4 
+1. Indication only 
+2. Used to verify a reactor trip demand 
+3. Used to verify safeguards equipment status 
+4. If light flashes, Train~ & B do not agree. One multiplexer switch must 
+be in "A + B" for this to occur. 
+a. This Train Disagreement feature of RP4 applies to all the bistable 
+indicating lights, plus the blue AUTO SI BLOCK light. 
+b. It does NOT apply to the blue block lights associated with the 
+~ reactor trips (for example, SR Hi Flux) and the ~ 
+Si's (for example, Low PZR Pressure). For these functions, RP4 
+shows "Train B" as an input to the 2/2 logic function - in other 
+words - it takes both Train A and Train B to illuminate the light, and 
+there is no flashing feature. 
+D. General Warn ing Alarm System 
+"'- 1. Warns operator if SSPS is not entirely operational 
+2. Illuminates a light on logic bay panel 
+PAGE 175 
+
+=== PAGE 176 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+66 08-025 Points: 1.00 
+Which of the following completes the statement concerning Salem Unit 1 vs. Unit 2 Stator Water Cooling System 
+design? 
+Salem Unit _ ( 1 )_ is the ONLY unit that has an automatic Turbine Run back feature when the following stator water 
+system condition(s) exist; _ (2)_ . 
+A. (1) 1 
+(2) low flow, low pressure, or high temperature 
+B. (1) 2 
+(2) low flow, low pressure, or high temperature 
+C. (1) 2 
+(2) low flow Only 
+D. (1) 1 
+(2) low flow Only 
+PAGE 176 
+
+=== PAGE 177 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Part 1 is incorrect. Plausible because the operator may confuse which unit has this design feature . 
+Part 2 is correct. 
+B. Correct. Salem Unit 2 is the only unit that has an automatic turbine runback when any of the following conditions 
+exist; low flow, low pressure, and high temperatu re. 
+C. Incorrect. Part 1 is correct. Part 2 is incorrect. Plausible because this condition is used on both units, but unit 2 
+uses it for the turbine runback whereas unit 1 uses it for a turbine trip feature only. 
+D. Incorrect. Part 1 is incorrect. Plausible because the operator may confuse which unit has this design feature . Part 
+2 is incorrect. Plausible because this condition is used on both units, but unit 2 uses it for the turbine runback 
+whereas unit 1 uses it for a turbine trip feature only. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+NOS05SWCU02 -09 
+None 
+NOS05SWCU02 -09, Object ive 11. Identify the differences between Unit 1 and 
+Unit 2 Stator Cooling Water System components, parameters, and operation 
+New 
+Fundamenta l/Memory 
+41.5 / 41.6 / 41.7 / 41.10 / 45.12 
+RO 
+14-Equipment Control 
+G2.2.3 
+Knowledge of the design, procedure, and/or operat ional differences between 
+units. 
+3.8 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the candidate is being asked the operational design difference between the 
+units stator water cooling system. In this case, the applicant needs to know that only unit 2 has an automat ic turbine 
+runback feature. 
+PAGE 177 
+
+=== PAGE 178 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: NOS0SSWCU02 
+V. UNITS 1 & 2 DIFFERENCE 
+A. Unit 2 is a General Electric sew Unit. Loss of flow, low pressure and hi 
+temperature are inputs to the turbine runback circuit. If runback fails to 
+lower amps to the specified value within the specified time delay then a 
+turbine (generator) trip will occur. 
+B. Unit 1: 
+1. Is a Westinghouse SCW Unit (covered in a separate lesson plant 
+2. Low flow inputs into a 45 second time delayed turbine trip circuit. 
+3. Does not have a SLMS System. 
+PAGE 178 
+
+=== PAGE 179 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+67 14-089 Points: 1.00 
+Given: 
+• A valve lineup is being performed on a system that requires Independent Verification 
+• The valve lineup contains a valve that is required to be throttled open two turns 
+• Permission has been granted to move the valve as required to verify its position 
+What are the actions necessary to verify the position of this throttled open valve? 
+A. One operator will go out ALONE and fully close the valve, then reopen it two full turns. Then, the second 
+operator will go out ALONE and verify the valve is properly positioned by visual observation of the valve 
+stem. 
+B. One operator will go out ALONE and fully open the valve, then close the valve the same number turns. 
+Then, the second operator will go out ALONE and verify the valve is properly positioned by visual 
+observation of the valve stem. 
+C. One operator will go out ACCOMPANIED by a second operator. One of the operators will fully close the 
+valve, then reopen it two full turns while the second operator observe the actions. 
+D. One operator will go out ACCOMPANIED by a second operator. One of the operators will fully open the 
+valve, then close the valve the same number of turns while the second operator observe the actions 
+PAGE 179 
+
+=== PAGE 180 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because typical independent verification of valve positions is performed after the first operator 
+performs the valve manipulation and the second operator goes out alone to independently verify its position. 
+B. Incorrect. Plausible because typical independent verification of valve positions is performed after the first operator 
+performs the valve manipulation and the second operator goes out alone to independently verify its position. 
+C. Correct. Per OP-AA-108-101-1001 and OP-AA-1008-101 -1002, when a throttled valve position requires 
+verification, then the valve is fully closed, then reopened to the required number of turns. The independent 
+verification is performed by a second operator by either; independently counting the number of turns, verification of 
+process variable, or verification of valve position for valves with incrementa l indicators against the tagout footnote 
+or procedure . 
+D. Incorrect. Plausible because the operator may confuse the direction of how the throttled valve must be positioned 
+prior to returning to its throttled position. Fully closed vs. fully open. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+OP-AA-108-101-1001 (R2), OP-AA-101-1002 (R11) 
+None 
+NOS05CONDOP-14 , Objective 5. Describe requirements for the following 
+Control Room or Field Activities in accordance with applicable Conduct of 
+Operations Manual Administrative Procedu res: Shift Relief and Turnover 
+Bank - Millstone U2 NRC RO69 
+Fundamenta l/Memory 
+41.10 / 43.3 / 45.13 
+RO 
+14-Equipment Control 
+G2.2.14 
+Knowledge of the process for controlling equipment configurat ion or status. 
+3.9 
+General Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the candidate is being asked how to verify a throttled open valve position 
+and independent verification. 
+PAGE 180 
+
+=== PAGE 181 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: OP-AA-108-101-1001 
+4.4 Checking Manual Throttle Valve Position 
+4.4.1. Valves that are required to be placed in a throttled position will non'nally be checked in 
+the proper position by using the appropriate process parameter (flow, pressure, etc.). 
+4.4.2, When operation of a throttled valve Is necessary to determine its position, CONSULT 
+with the appropriate Operations supervisor prior to manipulating the throttled valve for 
+guidance, inc;luding discussion with cognizant Engineering personnel as necessary. 
+NOTE Personnel must be aware of the effect that mechanical valve operato r slack 
+will have on the number of hand-wheel turns required to position a valve. 
+Compensate as necessary to allow for the slack. 
+1. Provided system configuration allows valve movement, check throttled valve 
+position by counting th.e number of 360-degree turns required to fully close the 
+valve. 
+2. RE-POSITION the valve to the throttled position by opening the valve the 
+same number of turns counted in the previous step. Restoring locked throttled 
+valves requires concurrent verification. 
+PAGE 181 
+
+=== PAGE 182 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: OP-AA-108-101-1002 
+OJ>-AA-1 08:-101-1002 
+Revision 11 
+Page 61 of 67 
+ATTACHM ENT 5 
+IINOEPENDENT/CONCUIRRENT VERIFICATION 
+Page 3 of 4 
+2.4.3. For 1--!ope Creek valves BC~HV-F077, BC-HV-F060A, 6C-HV-F060B valves should be 
+verifi,ed ~,open" by observation of lhe valve locaJ position indication ,or by use of Ihle 
+valve remote position indication and verified "locked"' by observation that a Locking 
+Wire is Secured Between the Valve Yoke and the Wire Loop Installed on Valve 
+Actuator stem. [DCIP 80072:763) 
+2.5 When a manual valve is to be verified dosed, move the handwlheel in the close 
+direction only. Do not exceed nomml closing torque. (CD.0958, CID-088B] 
+!NOTE 
+Valves lhal are• binding on tlhe backseat wm give a false indication of being c.losecl. [CD-769FJ 
+Valves with Safety Tags are controlled by the tagging process and do1 not. reql!Jire verification. 
+2.6 When a manual valve is to be verified open move ilhe hand:wheel in the closed 
+direction enough to verify valve move me mt. Then return the valve to the open 
+position. [CID-095B, CD-0888) 
+2.7 Throttle valves: 
+2. J .1 . Initial alignment or verificat ion: 
+1. Fully close the val\le. 
+2. Opened the valve the required number ottums, or if applicabre. match the 
+alignment marks. 
+2. 7.2. !nde,p.end ent verification, the second operator 1111 ay ,observe the first operator 
+positionirng lhe valve, them perform either an irndependent: (CD-286B] 
+- Count of the turns open 
+- Verification of process varial,re. 
+- Verification of valve position for valves with incremental indicators against the 
+WCM footnote or procedure. 
+PAGE 182 
+
+=== PAGE 183 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+68 14-090 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• Release of 21 ev es Monitor Tank is in progress per S2.OP-SO.WL-0001, Release of Radioactive Liquid 
+Waste from 21 e v es Monitor Tank 
+Then: 
+• 2FR1064, Radwaste Overboard Discharge Flow Recorder, fails low 
+Which of the following completes both statements? 
+1. Based on the above condition, the 2WL51, Overboard Valve, _ (1 )_ automatically close .. 
+2. Per the ODeM with 2FR1064 Flow recorder inoperable, the release _ (2)_ . 
+A. (1) w ill 
+(2) may recommence if effluent flows are estimated once per 4 hours. 
+B. (1) w ill NOT 
+(2) may NOT recommence unless 2FR1064 is OPERABLE 
+e . ( 1) w ill 
+(2) may NOT recommence unless 2FR1064 is OPERABLE 
+D. ( 1) w ill NOT 
+(2) may recommence if effluent flows are estimated once per 4 hours. 
+PAGE 183 
+
+=== PAGE 184 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: D 
+Explanation I Justification: 
+A. Incorrect. Plausible because the operator may believe that a low flow cond ition will automatically close the 
+2WL51 . Incorrect in that loss of flow is not an enab led design feature with the radiation monitor. 
+B. Incorrect. Plausible because the operator may believe that the procedure requires both 2R18 and 2FR1064 
+operable in order to recommence the release and satisfy the requirements of the ODCM. 
+C. Incorrect. Plausible because the operator may believe that a low flow cond ition will automatically close the 
+2WL51. Plausible because the operator may believe that the procedure requires both 2R18 and 2FR1064 
+operable in order to recommence the release and satisfy the requirements of the ODCM. 
+D. Correct. Loss of discharge flow is not a design feature associated with the 2R18 process radiation monitor. Some 
+process radiation monitors do have a feature that when programmed will isolate the process on low of flow. Per 
+ODCM bases for liquid effluent (3.3.8), the contro ls and monitoring are determined to ensure that the 10 CFR 20 
+limits are not exceeded . Per Action 29 of the ODCM for an inoperab le liquid radwaste effluent line monitor, the 
+release may continue provided effluent flow is estimated once per 4 hours. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+ODCM (R29), S2.OP-SO.WL- 0001 (R32) 
+None 
+NOS05CONDOP-14, Objective 5. Describe requirements for the following 
+Control Room or Field Activities in accordance with applicable Conduct of 
+Operations Manual Administrative Procedures 
+Bank - Salem 
+Fundamental /Memory 
+41.11 / 43.4 I 45.10 
+RO 
+14-Radiation Control 
+G2.3.11 
+Ability to control radiation releases . 
+3.8 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the candidate is being asked the bases of the ODCM administrative limits for 
+the release of liquid radwaste and whether the release may proceed if actions are taken per the procedure/ODCM. 
+PAGE 184 
+
+=== PAGE 185 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: Salem ODCM 3.3.8 
+PART I RADIOLOGICAL EFFLUENT CONTROLS Salem REC ODCM Rev. 29 
+03/21 
+3f4.3 CNSTRUMENTATION 
+3'4.3.3.8 RADIOACTIVE LIQUID EIFFLUENT MONITORING INSTRUMENTATION 
+TABLE 3.3-12: Radioact ive Liquid Efflue-nt Monitoring Instru mentation 
+INSTRUMENT MINlMUM CHANNELS ACTION 
+OPERA.BLE 
+1. Gross Radioactivity Monitors Providing Automatic 
+Termination of Release 
+a. Liquid Radwaste Effluent Line 1 (Unit 1) - 1R18 26 
+1 (Unit 2) - 2R18 
+b. steam Generator Slowdown Line 4 (Unit 1) - 1R19A-0 27 
+4 (Unit 2) - 2.R19A-O 
+2. Gross Radioactivity Monitors not Providing Automatic 
+Termination of Release 
+a. Containment Fan Coolers - Savice Water Line 2 (Unit 1) - 1 R13A, B 28 
+Discharge 2 (Unit 2) - 2R13A, B 
+b. Ch.emical Waste Basin 1 (IR37) 31 
+3. Flow Rate Measurement DeVices 
+a. Liquid Radwaste Effluent Line 1 (Unit 1) - 1 FR1064 29 
+1 (Unit ~ 2FR1064 
+b. Steam Generator Slowdown Line 4 (Unit 1) - 1FA-3178, -3180, - 29 
+3182, -3184 
+4 (Unit2) -2FA-3178 , -3180, -
+3182, -3184 
+PAGE 185 
+I 
+
+=== PAGE 186 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: Salem ODCM 3.3.8 Bases 
+BASES 
+3/4 .. 3 
+3/4.3.3 _8 
+INSTRUMENTATION 
+RADIOACTIVE LIQUID EFFLUENT MONITORING INSTIRUMENTATllON 
+The radioactive liquid effiuem instrumentation i5 p:ro\/:ided to monitor and oontrol, as applfcab~ , 
+Ille releases of radioactive materials in liquid effluents during 0ctual or potential releases of liquid 
+effluernls. The 0larm/trip seq,oints for lflese instrurn1ents s'tlalJ.be talculated and aejl:lsled in 
+accOfdanGeJMfu-tne prored ures in lfle ODC M to enoo re tflat tile alarm/lJip will~ pcioc to 
+exceedirlgJbeJ_imits__of the "old" 10 CFR Part 20 (ODCIM Ap~n dix F). The OPERABILITY and 
+use of this instrumenlatlon is com:isterlt witll the requirementsof General Design Criteria 60, 63, 
+and 64 of Appendix A to 10 CFR Part 50 .. 
+CiROSS RIEFERENCE - TABLES 3.3-12 and 4.3-12 
+Unit 1 lnstmmen l [)esoripti oni Accepi:able· RMS Channe1s. TIS Tab le Item No. 
+1a Liquid Radwaste Effluent Une Gross 11R18 
+Acti'rl'ity 
+1b Steam Generator Blowdown Line Gross 11R19A, B, C, and D<11 
+Activity 
+2a Con!ainmenl: Fan Coolers SeNice Water 11R13A and B111 
+Line Discharg,e Gross A.c:,tivily 
+Ulnit 2 lns.til'ument Description Acceptab'.le RMS Chamiels 
+T/sj Table Item No. 
+1a Liquid Radwoote Effluent Line Gross 2R18 
+Aciivity 
+1b steam Generator Blowdowrn ll.ille Gross 2R19A,B,C, 
+Acii\lity and l[i 1l 
+2a Coota'inment Fan Coorers - Serw::e Water 2R13Aa nd Bm 
+Line Discharge Gross Activity 
+2b Chemical Wasl.e Basin Liine Groos Activify R37 
+(1) lihe channels listed are required to lbe operable to meet a single operable channel for the ODCM's 
+iMinimuim Channels Operable" requirement 
+PAGE 186 
+
+=== PAGE 187 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+69 
+Given: 
+• You are the Primary Communicator 
+Then: 
+14-091 
+• A station event has just been classified as a Site Area Emergency 
+Which of the following describes the time requirement for State and Local notifications? 
+A. 30 minutes from the initiation of the event. 
+B. 15 minutes from the completion of the initial contact message form. 
+Points: 1.00 
+C. 15 minutes from the time the communicator acknowledges the briefing from the Shift Manager. 
+D. 15 minutes from the classification of the event. 
+PAGE 187 
+
+=== PAGE 188 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: D 
+Explanation I Justification: 
+A. Incorrect. Plausible because the operator may believe that the notification time includes the 15 minutes to classify 
+and 15 minutes for the notification to the States. Incorrect in that the classification time can be less than 15 
+minutes, therefore 30 minutes for notifications is not always correct. 
+B. Incorrect. Plausible because the operator as the primary communicator usually waits until the ICMF is completed 
+by the Shift Manager and is read to the commun icator before notifying the States. Incorrect in that the notification 
+time of 15 minutes starts when the Shift Manager declares the emergency classification. 
+C. Incorrect. Plausible because the operator as the primary communicator usually waits until the ICMF is completed 
+by the Shift Manager and is read to the commun icator before notifying the States. Incorrect in that the notification 
+time of 15 minutes starts when the Shift Manager declares the emergency classificat ion. 
+D. Correct. The 15 minute notification time to the States and Local agencies starts when the Shift Manager classifies 
+or declares the emergency classification for the event. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+EP-SA-325-F6 (R16) 
+None 
+None 
+Bank - B eaver Valley 2017 RO75 
+Fundamental/Memory 
+41.10 / 43.3 / 45.11 
+RO 
+14-Emergency Procedures/Plan 
+G2.4.29 
+Knowledge of the emergency plan implementing procedures. 
+3.1 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the applicant is being asked about Primary Communicator duties for time 
+requirements to notify the States and Local agencies of the emergency classification. 
+PAGE 188 
+
+=== PAGE 189 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+70 16-018 Points: 1.00 
+Given: 
+• Salem Unit 1 has been operating at 100% power for the past six months 
+Then: 
+• The reactor trips 
+• Shortly afterwards, a reactor startup is performed 
+• Twelve (12) hours after the trip, the startup has been paused with reactor power at 5% 
+Which of the following completes both statements? 
+1. Xenon-135 concentration will be _ (1 )_ . 
+2. To maintain reactor power and T-avg stable over the next hour, the operator must add _ (2)_ reactivity. 
+A. 
+B. 
+C. 
+D. 
+(1) rising 
+(1) lowering 
+(1) lowering 
+(1) rising 
+(2) negative 
+(2) negative 
+(2) positive 
+(2) positive 
+PAGE 189 
+
+=== PAGE 190 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Part 1 is correct. Part 2 is incorrect. Plausible if the operator confuses the concept on how the fission 
+product poison (xenon-135) effects reactivity and believes that a higher xenon concentration will require negative 
+reactivity. Incorrect in that after 12 hours xenon has already peaked and xenon concentration will be decreas ing 
+adding positive reactiv ity, and therefore, require adding negative reactiv ity .. 
+B. Correct. Directly following a reactor trip, the neutron flux is reduced essentially to zero. Therefo re, Xe-135 is no 
+longer produced directly from fission, but is no longer removed by burnup. The only remaining production 
+mechanism is ~-decay of the iodine-135; the only removal mechanism for xenon-135 is ~-decay. Because the 
+decay rate of iodine-135 is faster than the decay rate of xenon-135 , the concentration builds to a peak (about -
+4700 pcm if tripped at 100% power). The time to peak is slightly less than the square root of the power from the 
+trip (8-9 hours from 100% ). Following the peak, the Xe-135 concentrat ion will decrease at a rate controlled by the 
+decay of Xe-135 . Therefo re, an additional twelve (12) hours after the power change , Xe-135 concentrat ion will be 
+decreasing due to the decay of 1-135 and Xe-135 . Additionally , returning to 5% power will result in a small amount 
+of the burnout term removing Xe-135. A reduction in Xe-135 inserts positive reactivity (Xe-135 is a fission product 
+poison). Therefo re, to maintains table reactor coolant temperature, the operator must insert negative reactivity 
+because xenon-135 concentrat ion is decreasing. 
+C. Incorrect. Part 1 is incorrect. Part 2 is correct. Plausible if the operator confuses the concept on how the fission 
+product poison (xenon-135) effects reactivity and believes that a lower xenon concentrat ion will require adding 
+positive reactivity. Incorrect in that after 12 hours xenon has already peaked and xenon concentrat ion will be 
+decreasing adding positive reactivity, and therefore, require adding negative reactiv ity. 
+D. Incorrect. Part 1 is incorrect. Part 2 is incorrect. Plausible if the operator confuses the concept on how the fission 
+product poison (xenon-135) effects reactivity and believes that a higher xenon concentrat ion will require positive 
+reactivity. Incorrect in that after 12 hours xenon has already peaked and xenon concentration will be decreas ing 
+adding positive reactiv ity, and therefore, require adding negative reactivity. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+INPO GFES Fission Product Poisons (R3) 
+None 
+NOS05PO ISON-02. INPO GFES Fission Product Poisons Rev. 3, ELO 1.4 
+Xenon Terms 
+Bank - NRC GFES Bank P3563 
+Fundamenta l/Memory 
+41.1 
+RO 
+16-Reactor Theory I Fission Product Poison 
+192006 K1 .07 
+Describe the following processes and state their effect on reactor operat ions -
+xenon following a trip. 
+3.4 
+Theory-T ier 4 
+KIA Match: The KIA is a match because the candidate is being asked knowledge of how xenon-135 concentration is 
+effecting reactiv ity following a reactor trip and what action the operator will need to take to compensate for the xenon. 
+PAGE 190 
+
+=== PAGE 191 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: INPO GFES Fission Product Poison - Solution Bank 
+.g Ill NATIONAL ACADEMY 
+FOR NUO.EAR 
+tliiiiiiiliiiil TMINING 
+PW R GFE SOLUTION 
+REACTOR T HEORY 
+192 006- FISSION 
+PRODUCT POISONS 
+P3563 
+K/A: K1 . 14 [ 3.2/3.3) 
+A nuclear power plant had been operating at 100 percent power for two months when a reactor trip occurred. Soon 
+afterward, a reactor startup was performed. Twelve hours after the trip, the startup has been paused with reactor 
+power at 5 percent. 
+To maintain reactor power and reactor coolant temperature stable over the next hour, the operator must add 
+_____ reactiVity because the xenon-135 concentration will be _____ _ 
+A. X positive; X increasing. 
+B. ✓ negative: X Increasing. 
+C. X positive; ✓ decreasing. 
+D. ✓ negative: ✓ decreasing. 
+Discus sion/Calcu lation: 
+PO'NER DECREASE TO 50"..i 
+100'1'0 EQUL IBRI UM ~ " XEUOtl '.. 
+POWER 
+lttCREASE 
+2 TO 100% 
+0 
+5 a: ,-
+z w 
+'-' z 
+0 
+'-' 
+i w ,. 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+l'»"l 30-dOh~ I 
+,.. , , ' i 
+!.¼.,·~.: 
+TIME (HOURS) 
+I 
+I 
+I 
+I 
+I 
+POWER 
+ll'ICRE.ASE 
+TO 100% 
+lsn .... :I 30-40 ~ 
+, .. , , a, 
+I ·l .. .., I 
+I • D I I 
+• 
+Directly following a reactor trip, the neutron flux is reduced essentially to zero. Therefore. Xe-135 Is no longer 
+produced directly from fission, but is no longer removed by burn up. The only remaining production mechanism is 
+the~- decay of the iodine-135; the only removal mechanism for xenon-135 is~- decay. Because the decay rate of 
+iodine-135 is faster than the decay rate of xenon-135, the xenon concentration builds to a peak (about -4700 pcm if 
+tripped from 100% power). 
+The time to 'peak" is slightly /ess than the square root of the power from the trip (8-9 hours from 100% power). 
+Following the peak, the Xe-135 concentration will decrease at a rate controlled by the decay of Xe-135. 
+Therefore, an additional twelve (12) hours after the power change, Xe-135 concentration will be decreasing due to 
+the decay of 1-135 and Xe-135. Add111onally. returning to 5% power wrn result In a small amount of the burnout term 
+removing Xe-135. A reduction in Xe-135 inventory inserts positive reactivity (Xe-135 is a fission product poison). 
+Therefore, to maintain a stable reactor coolant temperature, the operator must insert negative reactivity because 
+xenon-135 concentration is decreasing. 
+PAGE 191 
+
+=== PAGE 192 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+71 16-019 Points: 1.00 
+Given: 
+• Salem Unit 2 was operating at 100% power when a Loss of All Offsite Power occurs. 
+• Due to plant complications, the Shift Manager has directed the crew to cooldown the RCS to Cold Shutdown 
+per 2-EOP-TRIP-4 , Natural Circulation Cooldown. 
+• The crew is borating the RCS for the RCS cooldown to Cold Shutdown. 
+Which of the following completes both statements? 
+A. 
+B. 
+C. 
+D. 
+1. As compared to adding boron to the RCS during forced circulation, adding boron during natural circulation 
+requires _ (1 )_ time to achieve complete mixing in the RCS. 
+2. Once the RCS boron mixing is complete, a 1 ppm increase in RCS boron concentrat ion during natural 
+circulation will cause a/an _ (2)_ change in reactivity that it would during forced circulation operation. 
+(1) less 
+(2) smaller 
+(1) less 
+(2) equal 
+(1) more 
+(2) smaller 
+(1) more 
+(2) equal 
+PAGE 192 

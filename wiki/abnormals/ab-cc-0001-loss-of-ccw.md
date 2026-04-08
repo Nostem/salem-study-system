@@ -20,8 +20,13 @@ Provides operator actions for responding to a loss of Component Cooling Water, i
 Thermal barrier rupture indications: R17 A/B CCW radiation monitors in warning, CCW surge tank level rising, CC131 thermal barrier valve closes on high CCW flow.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q59</div>
+Per S1.OP-AB.CC-0001, components supplied by CCW with pressure less than CCW header pressure are sources for system-to-system out leakage (e.g., Spent Fuel Pool Heat Exchanger). <span class="hi-exam">A tube rupture in the SFP HX results in CCW leaking OUT into the SFP system</span>, causing CCW Surge Tank level to lower and SFP level to rise. The non-borated CCW water will reduce SFP boron concentration, requiring addition of borated water.
+</div>
+
 ## Connections
 
 - Related systems: [[Component Cooling Water]], [[Reactor Coolant Pumps]]
-- Related exam questions: [[2023 Q4]]
+- Related exam questions: [[2023 Q4]], [[2023 Q59]]
 - Related exam: [[2023 NRC Written Exam]]

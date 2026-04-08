@@ -165,8 +165,13 @@ During a SBLOCA, a <span class="hi-exam">cold leg break produces the highest pea
 - **[[TS 3/4.5 — ECCS|TS 3/4.5.3]]** — ECCS Subsystems (Tavg <350°F)
 - **[[TS 3/4.5 — ECCS|TS 3/4.5.4]]** — RWST
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q65</div>
+SI indication on one train failure: <span class="hi-exam">"SI & FW ISOL" Red lamp on 2RP4 FLASHES when SSPS trains disagree</span> (one train actuated, one did not). LIT solid means both trains actuated. The "SI RESET" Green bezel light is LIT on the train that FAILED to actuate, and extinguished on the train that DID actuate.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-LOCA Series]]
-- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]]
+- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]]
 - Related exam: [[2023 NRC Written Exam]]

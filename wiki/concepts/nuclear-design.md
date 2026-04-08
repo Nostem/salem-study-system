@@ -107,6 +107,13 @@ Maximum core reactivity (cold, zero power, BOC): **1.200 keff** (typical reload)
 - **TS 3/4.2.2** — Heat Flux Hot Channel Factor (FQ)
 - **TS 3/4.2.3** — Nuclear Enthalpy Rise Hot Channel Factor (F-delta-H)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q70</div>
+Xenon-135 following a reactor trip from 100% power: Xe-135 concentration peaks at approximately <span class="hi-exam">4700 pcm</span> at about <span class="hi-exam">8-9 hours</span> after the trip. After the peak, Xe-135 concentration decreases due to decay of I-135 and Xe-135. <span class="hi-exam">Decreasing Xe-135 inserts positive reactivity</span> (Xe-135 is a fission product poison). At 12 hours post-trip with reactor at 5% power, Xe-135 is lowering — operator must add <span class="hi-exam">negative reactivity</span> to maintain power and T-avg stable.
+</div>
+
 ## Connections
 
 - Related systems: [[Reactor Core and Fuel]], [[Chemical and Volume Control System]]
+- Related exam questions: [[2023 Q70]]
+- Related exam: [[2023 NRC Written Exam]]

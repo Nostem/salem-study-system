@@ -44,6 +44,18 @@ Environmental monitoring program samples air, water, soil, vegetation, fish, and
 
 - **[[TS 3/4.11 — Radioactive Effluents]]** — Liquid and gaseous effluent limits, monitoring
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q61</div>
+Liquid Radwaste Release (CVES Monitor Tank): release path through CC Heat Exchanger and CW system. <span class="hi-exam">Only one circulator is required to be in service to allow a release to continue.</span> The 1R18 radiation monitor does not isolate/close the 1WL51 overboard valve on loss of flow.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q68</div>
+ODCM liquid effluent monitoring (3.3.8): <span class="hi-exam">loss of 2FR1064 flow recorder does NOT automatically close the 2WL51 overboard valve</span> — loss of flow is not a design feature of the 2R18 process radiation monitor. Per ODCM Action 29, release may continue if <span class="hi-exam">effluent flow is estimated once per 4 hours</span>.
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Protection]]
+- Related exam questions: [[2023 Q61]], [[2023 Q68]]
+- Related exam: [[2023 NRC Written Exam]]
