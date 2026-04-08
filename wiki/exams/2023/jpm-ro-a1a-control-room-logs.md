@@ -27,7 +27,7 @@ aliases:
 
 <div style="padding:10px 14px;background:#052e16;border-left:3px solid #34d399;border-radius:0 4px 4px 0;margin-bottom:14px;font-size:13px;">
 <strong style="color:#34d399;">Task Standard:</strong><br>
-<span style="color:#c8cdd5;">The task is satisfactorily met when the applicant completes the control room logs, determines that <span class="hi-exam">23 RC Loop OT Delta-T setpoint channel check is outside the REM OT Delta-T Setpoint band</span>, and records the reading as <span class="hi-exam">UNSAT</span>.</span>
+<span style="color:#c8cdd5;">The task is satisfactorily met when the applicant completes the control room logs, determines that 23 RC Loop OT Delta-T setpoint channel check is outside the REM OT Delta-T Setpoint band, and records the reading as UNSAT.</span>
 </div>
 
 <details>
@@ -78,13 +78,11 @@ aliases:
 </div>
 
 <div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">
-Ref: S2.OP-DL.ZZ-0003 (R126) | Task: N1150410501 | K/A: G2.1.25 — Ability to interpret reference materials, such as graphs, curves, tables | Source: New
+Ref: S2.OP-DL.ZZ-0003 (R126) | Task: N1150410501 | K/A: G2.1.25 — Ability to interpret reference materials, such as graphs, curves, tables | Source: New | <a href="/salem-study-system/exam-pdfs/2023-jpm-ro-a1a.pdf" target="_blank" style="color:#60a5fa;">View JPM PDF</a>
 </div>
 </div>
 </details>
 </div>
-
-<a href="/salem-study-system/exam-pdfs/2023-operating.pdf" target="_blank">View Operating Test PDF</a> (Pages 1-13)
 
 ## Connections
 
