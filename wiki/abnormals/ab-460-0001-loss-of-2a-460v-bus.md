@@ -35,10 +35,13 @@ Provides guidance for responding to a loss of the 2A 460V and/or 230V vital bus 
 - Start a centrifugal charging pump and restore PZR level
 - Re-establish letdown
 
-> [!exam] 2023 NRC Exam Q45
-> An overcurrent fault on the 2A 460V MCC causes feeder breaker 2A4D to trip open, de-energizing both the 2A 460V and 230V MCCs. This results in loss of 23 charging pump and letdown isolation. Per S2.OP-AB.460-0001, start a centrifugal charging pump and re-establish letdown.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q45</div>
+An overcurrent fault on the 2A 460V MCC causes feeder breaker 2A4D to trip open, de-energizing both the 2A 460V and 230V MCCs. This results in <span class="hi-exam">loss of 23 charging pump and letdown isolation</span>. Per S2.OP-AB.460-0001, start a centrifugal charging pump and re-establish letdown.
+</div>
 
 ## Connections
 
 - Related systems: [[AC Power]], [[Chemical and Volume Control System]], [[DC Power]]
-- Related exam questions: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q45]]
+- Related exam: [[2023 NRC Written Exam]]

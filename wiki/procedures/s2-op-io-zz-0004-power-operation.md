@@ -19,13 +19,16 @@ Provides guidance for power operation on Salem Unit 2, including monitoring reac
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Maximum power level | 3,459 MWt (100% RTP) | S2.OP-IO.ZZ-0004 |
+| Maximum power level | 3459 MWt (100% RTP) | S2.OP-IO.ZZ-0004 |
 
-> [!exam] 2023 NRC Exam Q43
-> If an event causes reactor power to rise above 100% RTP (e.g., AFW turbine steam inlet valve failing open and injecting cold feedwater), the operator should reduce reactor power per S2.OP-IO.ZZ-0004 to prevent an overpower condition.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q43</div>
+If an event causes reactor power to rise above 100% RTP (e.g., AFW turbine steam inlet valve failing open and injecting cold feedwater), the operator should <span class="hi-exam">reduce reactor power per S2.OP-IO.ZZ-0004</span> to prevent an overpower condition.
+</div>
 
 ## Connections
 
 - Related systems: [[Reactor Core and Fuel]], [[Instrumentation and Controls]]
 - Related abnormals: [[AB.CA-0001 — Loss of Control Air]]
-- Related exam questions: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q43]]
+- Related exam: [[2023 NRC Written Exam]]

@@ -22,10 +22,13 @@ Provides alarm response guidance for console alarms on Salem Unit 2, including t
 - Rods are held in position by the stationary gripper coil energized at reduced current
 - Moveable gripper coil is de-energized
 
-> [!exam] 2023 NRC Exam Q55
-> Per S2.OP-AR.ZZ-0012, an Urgent Failure alarm prevents all rod motion in Manual or Automatic. Rods are held in position by the stationary gripper coil energized at reduced current.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q55</div>
+Per S2.OP-AR.ZZ-0012, an <span class="hi-exam">Urgent Failure alarm prevents all rod motion in Manual or Automatic</span>. Rods are held in position by the stationary gripper coil energized at reduced current. Moveable gripper coil is de-energized.
+</div>
 
 ## Connections
 
 - Related systems: [[Instrumentation and Controls]], [[Reactor Core and Fuel]]
-- Related exam questions: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q55]]
+- Related exam: [[2023 NRC Written Exam]]

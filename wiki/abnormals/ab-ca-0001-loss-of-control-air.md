@@ -36,17 +36,24 @@ Provides guidance for responding to a loss of control/instrument air on Salem Un
 |-------|-------|-------------|-----------|
 | 21/22SW122 | FO | SW Inlet Control Valve to CCW HX | Yes |
 
-> [!exam] 2023 NRC Exam Q43
-> 2MS132 (23 AFW Turbine Steam Inlet Valve) fails OPEN on loss of air. This causes 23 AFW pump to start and inject cold feedwater into all SGs, raising reactor power above 100% RTP. Operator should reduce power per S2.OP-IO.ZZ-0004.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q43</div>
+2MS132 (23 AFW Turbine Steam Inlet Valve) <span class="hi-exam">fails OPEN on loss of air</span>. This causes 23 AFW pump to start and inject cold feedwater into all SGs, raising reactor power above 100% RTP. Operator should reduce power per S2.OP-IO.ZZ-0004.
+</div>
 
-> [!exam] 2023 NRC Exam Q44
-> 2DR6 (AFW Tank Makeup valve) fails OPEN on loss of air. This causes AFWST level to rise and potentially overflow. Per Attachment 2, 2DR6 can be manually operated from the field to control tank level.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q44</div>
+2DR6 (AFW Tank Makeup valve) <span class="hi-exam">fails OPEN on loss of air</span>. This causes AFWST level to rise and potentially overflow. Per Attachment 2, 2DR6 can be manually operated from the field to control tank level.
+</div>
 
-> [!exam] 2023 NRC Exam Q51
-> 21SW122 (SW Inlet Control Valve to CCW HX) fails OPEN on loss of air (fails CLOSED on loss of 125VDC). When open, SW flow rises through CCW HX, lowering CCW temperature, which lowers RHR HX outlet temperature and raises cooldown rate. Can be manually operated per Attachment 2.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q51</div>
+21SW122 (SW Inlet Control Valve to CCW HX) <span class="hi-exam">fails OPEN on loss of air</span> (fails CLOSED on loss of 125VDC). When open, SW flow rises through CCW HX, lowering CCW temperature, which lowers RHR HX outlet temperature and raises cooldown rate. Can be manually operated per Attachment 2.
+</div>
 
 ## Connections
 
 - Related systems: [[Auxiliary Feedwater]], [[Service Water]], [[Component Cooling Water]], [[Residual Heat Removal]], [[Containment Systems]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]]
-- Related exam questions: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
+- Related exam: [[2023 NRC Written Exam]]
