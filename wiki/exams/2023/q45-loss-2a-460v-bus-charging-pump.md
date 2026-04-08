@@ -23,7 +23,7 @@ Per S2.OP-AB.460-0001, Loss of 2A 460 V Bus, which of the following describes th
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> Loss of 281 125 VDC Battery Charger; place 282 125 VDC Battery Charger in service.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> Loss of 2B1 125 VDC Battery Charger; place 282 125 VDC Battery Charger in service.</div>
 <div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> Loss of charging flow; start a centrifugal charging pump and restore PZR level.</div>
 <div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> Loss of all IRPI indications; transfer to emergency power source.</div>
 <div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> Loss of 22 PZR Backup Heaters; re-energize from emergency power bus.</div>
