@@ -64,7 +64,6 @@ Instrument air supply line rupture to <span class="hi-exam">2MS132 (23 AFW Turbi
 
 ## Connections
 
-- Related systems: [[Steam Generators]], [[Main Steam and Feedwater]], [[Service Water]], [[Electrical Power Systems]]
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]
 - Related exam questions: [[2023 Q41]], [[2023 Q43]], [[2023 Q44]]
 - Related exam: [[2023 NRC Written Exam]]

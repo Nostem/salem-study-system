@@ -146,7 +146,6 @@ During RCS depressurization without RCPs running (e.g., EOP-LOCA-5), <span class
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[Steam Generators]], [[Reactor Coolant Pumps]], [[Reactor Vessel]], [[Chemical and Volume Control System]], [[Residual Heat Removal]], [[Emergency Core Cooling Systems]]
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)
 - Related exam questions: [[2023 Q17]]
 - Related exam: [[2023 NRC Written Exam]]

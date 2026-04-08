@@ -72,6 +72,5 @@ CFCU power distribution from 4KV Vital Buses: <span class="hi-exam">21 CFCU (A b
 
 ## Connections
 
-- Related systems: [[Containment Systems]], [[Service Water]], [[AC Power]]
 - Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]]
 - Related exam: [[2023 NRC Written Exam]]

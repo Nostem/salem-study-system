@@ -54,6 +54,5 @@ Rising condenser backpressure reduces LP turbine efficiency, confirmed by <span 
 
 ## Connections
 
-- Related systems: [[Main Steam]], [[Feedwater and Condensate]], [[Electrical Power Systems]]
 - Related exam questions: [[2023 Q15]], [[2023 Q20]]
 - Related exam: [[2023 NRC Written Exam]]

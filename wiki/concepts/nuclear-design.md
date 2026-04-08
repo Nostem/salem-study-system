@@ -110,4 +110,3 @@ Maximum core reactivity (cold, zero power, BOC): **1.200 keff** (typical reload)
 ## Connections
 
 - Related systems: [[Reactor Core and Fuel]], [[Chemical and Volume Control System]]
-- Related concepts: [[Thermal-Hydraulic Design]], [[Reactivity and Reactor Control]]

@@ -133,5 +133,4 @@ Functions: support core, maintain fuel alignment, limit fuel assembly movement, 
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Reactor Vessel]], [[Chemical and Volume Control System]]
 - Related concepts: [[Nuclear Design]], [[Thermal-Hydraulic Design]], [[Reactivity and Reactor Control]]

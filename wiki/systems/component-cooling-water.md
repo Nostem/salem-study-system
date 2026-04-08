@@ -56,6 +56,5 @@ RCP Thermal Barrier rupture indications: <span class="hi-exam">CCW surge tank le
 
 ## Connections
 
-- Related systems: [[Reactor Coolant Pumps]], [[Residual Heat Removal]], [[Service Water]], [[Chemical and Volume Control System]]
 - Related exam questions: [[2023 Q4]], [[2023 Q33]], [[2023 Q51]]
 - Related exam: [[2023 NRC Written Exam]]

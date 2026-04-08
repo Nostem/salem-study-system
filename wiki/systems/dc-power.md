@@ -78,6 +78,5 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 
 ## Connections
 
-- Related systems: [[AC Power]], [[Diesel Generators]], [[Electrical Power Systems]], [[Instrumentation and Controls]]
 - Related exam questions: [[2023 Q9]], [[2023 Q46]], [[2023 Q47]]
 - Related exam: [[2023 NRC Written Exam]]

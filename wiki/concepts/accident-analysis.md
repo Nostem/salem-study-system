@@ -97,5 +97,4 @@ Accident analyses provide the bases for many Tech Spec limits including:
 ## Connections
 
 - Related systems: [[Emergency Core Cooling Systems]], [[Reactor Coolant System]], [[Instrumentation and Controls]], [[Containment Systems]], [[Auxiliary Feedwater]]
-- Related concepts: [[Nuclear Design]], [[Thermal-Hydraulic Design]]
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-LOCA Series]], [[EOP-SGTR-1]], [[Critical Safety Function Status Trees]]

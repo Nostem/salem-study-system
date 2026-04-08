@@ -123,4 +123,3 @@ The design basis for DNB is that there is at least a 95% probability at the 95% 
 ## Connections
 
 - Related systems: [[Reactor Core and Fuel]], [[Reactor Coolant System]]
-- Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]

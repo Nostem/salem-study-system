@@ -76,5 +76,4 @@ The reactor vessel contains the reactor core, core support structures, control r
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]]
 - Related concepts: [[Reactivity and Reactor Control]]

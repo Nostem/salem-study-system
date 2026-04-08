@@ -50,6 +50,5 @@ CFCU SW flow orifices maintain <span class="hi-exam">constant SW flow rate throu
 
 ## Connections
 
-- Related systems: [[Component Cooling Water]], [[Containment Systems]], [[Auxiliary Feedwater]], [[Electrical Power Systems]], [[Containment Fan Coil Units]], [[Residual Heat Removal]]
 - Related exam questions: [[2023 Q24]], [[2023 Q50]], [[2023 Q51]]
 - Related exam: [[2023 NRC Written Exam]]

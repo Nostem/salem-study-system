@@ -104,6 +104,5 @@ Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barr
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Component Cooling Water]], [[Chemical and Volume Control System]]
 - Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]]
 - Related exam: [[2023 NRC Written Exam]]

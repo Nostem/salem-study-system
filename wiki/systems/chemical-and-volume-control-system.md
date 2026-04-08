@@ -90,7 +90,6 @@ If <span class="hi-exam">2TE-130 (temperature detector for 2CC71, Letdown HX Tem
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Reactor Coolant Pumps]], [[Emergency Core Cooling Systems]]
 - Related concepts: [[Nuclear Design]]
 - Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]]
 - Related exam: [[2023 NRC Written Exam]]

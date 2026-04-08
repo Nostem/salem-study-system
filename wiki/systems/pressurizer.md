@@ -100,6 +100,5 @@ MPC fails low (0% output): <span class="hi-exam">spray valves close</span> (cont
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Chemical and Volume Control System]]
 - Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q32]], [[2023 Q34]]
 - Related exam: [[2023 NRC Written Exam]]

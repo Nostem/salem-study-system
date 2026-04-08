@@ -167,7 +167,6 @@ During a SBLOCA, a <span class="hi-exam">cold leg break produces the highest pea
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Residual Heat Removal]], [[Chemical and Volume Control System]], [[Containment Systems]]
 - Related EOPs: [[EOP-LOCA Series]]
 - Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]]
 - Related exam: [[2023 NRC Written Exam]]

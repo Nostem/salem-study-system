@@ -64,4 +64,3 @@ Provides AC electrical power to all station auxiliaries during startup, operatio
 
 ## Connections
 
-- Related systems: [[Diesel Generators]], [[DC Power]], [[Electrical Power Systems]]

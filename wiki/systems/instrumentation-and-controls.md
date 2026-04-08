@@ -179,7 +179,6 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Containment Systems]], [[Auxiliary Feedwater]], [[Pressurizer]], [[AC Power]], [[Reactor Coolant Pumps]], [[Steam Generators]], [[Reactor Core and Fuel]]
 - Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
 - Related exams: [[2023 NRC Written Exam]]
   - [[2023 Q1]] — Low RC flow 2/3 coincidence / P-7 vs P-8 permissive logic

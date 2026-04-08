@@ -60,7 +60,6 @@ BF19 (MFW Regulating Valve) fails fully OPEN → SG level rises → <span class=
 
 ## Connections
 
-- Related systems: [[Steam Generators]], [[Main Steam]], [[Auxiliary Feedwater]], [[Instrumentation and Controls]]
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]
 - Related exam questions: [[2023 Q8]], [[2023 Q42]]
 - Related exam: [[2023 NRC Written Exam]]

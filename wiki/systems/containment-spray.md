@@ -67,6 +67,5 @@ CS pump power supplies: <span class="hi-exam">21 CS pump on A 4KV Vital Bus, 22 
 
 ## Connections
 
-- Related systems: [[Containment Systems]], [[Emergency Core Cooling Systems]], [[Residual Heat Removal]], [[AC Power]]
 - Related exam questions: [[2023 Q40]]
 - Related exam: [[2023 NRC Written Exam]]

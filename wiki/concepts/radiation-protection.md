@@ -59,4 +59,3 @@ The radiation protection program ensures that occupational radiation exposures a
 ## Connections
 
 - Related systems: [[Radioactive Waste Management]], [[Containment Systems]]
-- Related concepts: [[Emergency Classifications]]

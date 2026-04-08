@@ -65,6 +65,5 @@ On SI signal with loss of offsite power:
 
 ## Connections
 
-- Related systems: [[AC Power]], [[Electrical Power Systems]], [[Emergency Core Cooling Systems]]
 - Related exam questions: [[2023 Q12]], [[2023 Q37]], [[2023 Q48]]
 - Related exam: [[2023 NRC Written Exam]]

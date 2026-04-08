@@ -51,5 +51,4 @@ Provides a diverse backup to the Reactor Protection System for mitigating Antici
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[Auxiliary Feedwater]], [[Turbine-Generator]]
 - Related concepts: [[Accident Analysis]] (ATWS section)

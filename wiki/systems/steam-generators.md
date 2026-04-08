@@ -97,7 +97,6 @@ SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG<
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Main Steam]], [[Feedwater and Condensate]], [[Auxiliary Feedwater]]
 - Related EOPs: [[EOP-SGTR-1]]
 - Related exam questions: [[2023 Q2]], [[2023 Q42]]
 - Related exam: [[2023 NRC Written Exam]]

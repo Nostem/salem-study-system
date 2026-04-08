@@ -84,6 +84,5 @@ During LOCA recirculation, the RHR pumps take suction from the containment sump 
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Component Cooling Water]]
 - Related exam questions: [[2023 Q30]]
 - Related exam: [[2023 NRC Written Exam]]

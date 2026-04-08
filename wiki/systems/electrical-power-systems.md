@@ -74,4 +74,3 @@ On SI signal with loss of offsite power:
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Instrumentation and Controls]]

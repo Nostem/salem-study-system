@@ -75,6 +75,5 @@ Actuated by:
 
 ## Connections
 
-- Related systems: [[Steam Generators]], [[Reactor Coolant System]], [[Auxiliary Feedwater]], [[Instrumentation and Controls]]
 - Related concepts: [[Thermal-Hydraulic Design]]
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]

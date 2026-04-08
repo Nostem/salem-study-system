@@ -131,7 +131,6 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Service Water]], [[Reactor Coolant System]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]]
 - Related exam questions: [[2023 Q52]], [[2023 Q54]]

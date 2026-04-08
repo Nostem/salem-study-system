@@ -31,5 +31,4 @@ Provides guidance for performing check source testing on radiation monitors at S
 ## Connections
 
 - Related systems: [[Instrumentation and Controls]]
-- Related procedures: [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
 - Related exam questions: [[2023 NRC Written Exam]]

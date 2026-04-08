@@ -46,5 +46,4 @@ Environmental monitoring program samples air, water, soil, vegetation, fish, and
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]], [[Containment Systems]]
 - Related concepts: [[Radiation Protection]]
