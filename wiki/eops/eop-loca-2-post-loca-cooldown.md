@@ -25,8 +25,14 @@ Step 19.1 evaluates natural circulation conditions: subcooling >0 degrees F, SG 
 PZR vapor space SBLOCA procedure path: EOP-LOCA-1 SI termination criteria met (subcooling, PZR level rising, RCS pressure stable) → transition to <span class="hi-exam">EOP-TRIP-3 (SI Termination)</span> → reduce ECCS flow → RCS pressure lowers with unisolable leak → EOP-TRIP-3 transitions to <span class="hi-exam">EOP-LOCA-2</span>. The path is LOCA-1 → TRIP-3 → LOCA-2, not directly from LOCA-1 to LOCA-2.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-c</div>
+Step 20 RCS depressurization: with no RCPs running, normal spray is unavailable. Attempt PORV (2PR2) — if it fails to open, RCS pressure NOT dropping → use <span class="hi-exam">Auxiliary Spray: OPEN 2CV75, CLOSE 2CV77 and 2CV79</span>. Stop depressurization when <span class="hi-exam">PZR level >77% (74% adverse) or RCS subcooling <10F</span>. Restore aux spray to normal: close 2CV75, reopen 2CV77 or 2CV79.
+</div>
+
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]]
+- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Chemical and Volume Control System]]
 - Related exam questions: [[2023 Q2]], [[2023 Q76]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-c]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

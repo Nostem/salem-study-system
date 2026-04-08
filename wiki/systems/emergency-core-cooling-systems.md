@@ -180,9 +180,20 @@ ECCS injection at <span class="hi-exam">1450 psig</span>: both <span class="hi-e
 EOP-TRIP-4 CAS directs <span class="hi-exam">SI actuation</span> when PZR level cannot be maintained > 4% (or subcooling reaches 0 degrees F). With charging maxed out (2CV55 and 2CV71 fully open) and PZR level still lowering at 10%, the CAS criterion is met — actuate SI and return to EOP-TRIP-1. <span class="hi-trap">Trap: TRIP-4 does NOT direct transition to EOP-LOCA-1 — it directs SI actuation and return to TRIP-1.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 SRO-A1.a</div>
+EOP-LOCA-5 Step 16.1: minimum ECCS injection flow from Figure 1 at <span class="hi-exam">100 minutes post-trip is 290 gpm</span> (280-320 gpm acceptable). With one SI pump at 160 gpm and one charging pump at 220 gpm, neither alone meets 290 gpm — <span class="hi-exam">NONE can be stopped</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-b</div>
+EOP-LOCA-4 hot leg recirculation: realign 21 SI pump from cold leg to hot leg injection — <span class="hi-exam">STOP pump → CLOSE 21SJ134 (cold leg discharge) → OPEN 21SJ40 (hot leg discharge, key-locked) → START pump</span>.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-LOCA Series]]
+- Related EOPs: [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
 - Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -82,6 +82,6 @@ Ref: S2.OP-ST.CBV-0001 (R9), S2.RA-ST.CBV-0001 (R7) | Task: N1230010302 | K/A: G
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]]
-- Related tech specs: [[TS 3.6.3 — Containment Isolation Valves]]
+- Related tech specs: [[TS 3/4.6 — Containment]]
 - Related systems: [[Containment Systems]]
 - Related exam: [[2023 NRC Operating Exam]]

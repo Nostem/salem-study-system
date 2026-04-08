@@ -85,6 +85,7 @@ status: draft
 - [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - [[EOP-FRHS-2 — Response to Steam Generator Overpressure]]
 - [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
+- [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 
 ## Abnormal Procedures
 - [[AB.LOOP-0001 — Loss of All Offsite Power]]
@@ -107,6 +108,7 @@ status: draft
 - [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
 - [[AB.CR-0001 — Control Room Evacuation]]
 - [[AB.LOAD-0001 — Rapid Load Reduction]]
+- [[AB.ROD-0003 — Continuous Rod Motion]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
@@ -116,6 +118,10 @@ status: draft
 - [[EP-SA-325-F6 — Emergency Notification]]
 - [[OP-SA-108-106-1001 — Equipment Control and Large Motor Starting Criteria]]
 - [[WC-AA-101 — On-Line Work Management Process]]
+- [[EP-SA-325-F2 — Initial Contact Message Form]]
+- [[EP-SA-325-F8 — Secondary Communicator Log]]
+- [[LS-AA-119-1003 — Calculating Work Hours]]
+- [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
@@ -132,3 +138,12 @@ status: draft
 - [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]]
 - [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
 - [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
+- [[S2.OP-SO.CVC-0006 — Boron Concentration Control]]
+- [[S2.OP-SO.CBV-0001 — Containment Ventilation Operation]]
+- [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
+- [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]]
+- [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
+- [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
+- [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
+- [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
+- [[SC.OP-SO.CA-0001 — SBO Diesel Control Air]]

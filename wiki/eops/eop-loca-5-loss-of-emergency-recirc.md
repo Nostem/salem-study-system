@@ -20,8 +20,14 @@ Provides operator actions when emergency coolant recirculation capability is los
 Step 23 — during RCS depressurization, upper head voiding IS expected with no RCPs running. Monitor pressurizer level — rapidly rising PZR level indicates upper head voiding. Stop depressurization before the pressurizer goes solid.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 SRO-A1.a</div>
+Step 16.1 minimum ECCS flow from Figure 1: at <span class="hi-exam">100 minutes</span> post-trip, minimum flow is <span class="hi-exam">290 gpm (acceptable band 280-320 gpm)</span>. With 21 SI Pump at 160 gpm and 22 Charging Pump at 220 gpm, <span class="hi-exam">NONE can be stopped</span> — neither alone meets the 290 gpm minimum. Both must remain in service (combined 380 gpm).
+</div>
+
 ## Connections
 
 - Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]]
 - Related exam questions: [[2023 Q17]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM SRO-A1.a]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

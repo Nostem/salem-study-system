@@ -106,5 +106,5 @@ Ref: 2-EOP-LOCA-2 (R41) | Task: N1150090501 | System: 010 PZR Pressure Control S
 ## Connections
 
 - Related procedures: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
-- Related systems: [[Pressurizer Pressure Control System]], [[Chemical and Volume Control System]]
+- Related systems: [[Pressurizer]], [[Chemical and Volume Control System]]
 - Related exam: [[2023 NRC Operating Exam]]

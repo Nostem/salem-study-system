@@ -87,7 +87,14 @@ During LOCA recirculation, the RHR pumps take suction from the containment sump 
 Loss of RHR breaker reclosure: per OP-SA-108-106-1001 step 4.2.2, during an <span class="hi-exam">emergency condition</span> the <span class="hi-exam">Shift Manager</span> can authorize one attempt at reclosing a failed breaker without an investigation, if the equipment is essential for plant stability. <span class="hi-trap">Does NOT require Plant Manager authorization or STA concurrence.</span> In the exam scenario, Time to Core Boiling <15 minutes with both RHR pumps lost constitutes an emergency condition.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-b</div>
+EOP-LOCA-4 hot leg recirculation with 21 RHR pump C/T: Step 4.0 directs <span class="hi-exam">CLOSE 22CS36 (RHR Supply to CS Valve)</span> and <span class="hi-exam">OPEN 22SJ49 (Cold Leg Isolation Valve)</span> for the running 22 RHR pump alignment.
+</div>
+
 ## Connections
 
+- Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related exam questions: [[2023 Q30]], [[2023 Q79]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-b]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

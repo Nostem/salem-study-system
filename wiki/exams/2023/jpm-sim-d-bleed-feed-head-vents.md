@@ -108,5 +108,5 @@ Ref: 2-EOP-FRHS-1 (R41) | Task: 1150290501 | System: 002 Reactor Coolant System 
 ## Connections
 
 - Related procedures: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related systems: [[Reactor Coolant System]], [[Pressurizer Pressure Control System]]
+- Related systems: [[Reactor Coolant System]], [[Pressurizer]]
 - Related exam: [[2023 NRC Operating Exam]]

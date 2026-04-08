@@ -148,5 +148,5 @@ Ref: 2-EOP-FRHS-1 (R42) | Task: N1150290501 | System: 041 Steam Dump/Turbine Byp
 ## Connections
 
 - Related procedures: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related systems: [[Steam Dump and Turbine Bypass Control]], [[Main Feedwater]]
+- Related systems: [[Main Steam]], [[Feedwater and Condensate]]
 - Related exam: [[2023 NRC Operating Exam]]

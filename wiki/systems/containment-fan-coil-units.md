@@ -70,7 +70,14 @@ CFCU power distribution from 4KV Vital Buses: <span class="hi-exam">21 CFCU (A b
 - 1 inoperable (of required 3): 7 days to restore
 - 2 inoperable: 72 hours to restore
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-f</div>
+CFCU surveillance (S2.OP-ST.CBV-0003): if measured SW header DP is between Exhibit 1 values, per P&L 3.4 select minimum flow for the <span class="hi-exam">next HIGHER DP value</span>. At 106 psi DP (between 105 and 110), required minimum is <span class="hi-exam">1811 gpm (at 110 psi)</span>. Actual ~1785 gpm = <span class="hi-exam">UNSAT / inoperable</span>. Also: CFCU SW flow must be <span class="hi-exam">>=1465 gpm</span> in all cases (P&L 3.3).
+</div>
+
 ## Connections
 
+- Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
 - Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-f]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

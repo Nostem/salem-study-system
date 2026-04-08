@@ -113,8 +113,20 @@ EOP-TRIP-4 CAS: if PZR level cannot be maintained <span class="hi-exam">> 4%</sp
 PZR pressure channel failure reportability: with one PZR pressure channel already tripped and a second failing LOW, the <span class="hi-exam">2/4 low PZR pressure trip coincidence is met</span> causing a reactor trip and SI. The SI is NOT valid (pressure was not actually low) and NOT reportable under RAL 11.3.1. The <span class="hi-exam">RPS actuation is reportable under RAL 11.3.2 as a 4-hour report</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-c</div>
+EOP-LOCA-2 Step 20 depressurization via Auxiliary Spray: open <span class="hi-exam">2CV75 (RCS Aux Spray Valve)</span>, close 2CV77/2CV79 (charging to loops). Stop when <span class="hi-exam">PZR level >77% (74% adverse) or subcooling <10F</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-d</div>
+EOP-FRHS-1 Bleed and Feed: if PORV 2PR2 fails to open, open <span class="hi-exam">reactor head vent valves 2RC40 through 2RC43</span> (key-locked on 2RP2 backpanel) as alternate bleed path. 2PR1 must already be open for the "bleed" portion.
+</div>
+
 ## Connections
 
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
+- Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q32]], [[2023 Q34]], [[2023 Q76]], [[2023 Q87]], [[2023 Q92]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

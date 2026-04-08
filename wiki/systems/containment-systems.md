@@ -149,10 +149,22 @@ FHB BLDG AIR D/P LO alarm during fuel moves: per S2.OP-AR.ZZ-0011, the <span cla
 Fire protection: with both Salem fire pumps inoperable, per AB.FP-0001: <span class="hi-exam">open backup fire suppression water supply cross-tie valves from Hope Creek</span>. If cross-tie cannot be established within <span class="hi-exam">24 hours</span>, unit must be in <span class="hi-exam">Hot Standby within 6 hours</span>, then Hot Shutdown within the following 6 hours, then Cold Shutdown within the subsequent 24 hours.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 SRO-A2</div>
+IST containment ventilation valve surveillance review: <span class="hi-exam">2VC13 in REQUIRED ACTION RANGE</span> — declare inoperable, enter TS LCO 3.6.3 (4 hours to restore/isolate or begin shutdown). <span class="hi-exam">2VC12 in REQUIRED EVALUATION RANGE</span> — immediately retest or declare inoperable.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-h</div>
+Containment pressure relief: upon <span class="hi-exam">OHA A-6 (RMS HI RAD OR TRBL) alarm on 2R41D</span> with automatic isolation defeated, must <span class="hi-exam">manually close PRESSURE RELIEF DAMPER, 2VC6, and 2VC5</span> to isolate the radiological release.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]]
 - Related concepts: [[Adverse Containment]]
+- Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

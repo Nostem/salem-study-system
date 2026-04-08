@@ -48,7 +48,14 @@ CFCU SW flow orifices maintain <span class="hi-exam">constant SW flow rate throu
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.4 requires two independent SW loops OPERABLE in Modes 1–4
 - 1 loop inoperable: 72 hours to restore, or Hot Standby in 6 hours + Cold Shutdown in 30 hours
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-f</div>
+CFCU surveillance: SW flow minimum <span class="hi-exam">>=1465 gpm</span> required for CFCU operability. When measured SW header DP falls between Exhibit 1 values, use the <span class="hi-exam">next higher DP value</span> to determine minimum required flow.
+</div>
+
 ## Connections
 
+- Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
 - Related exam questions: [[2023 Q24]], [[2023 Q50]], [[2023 Q51]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-f]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

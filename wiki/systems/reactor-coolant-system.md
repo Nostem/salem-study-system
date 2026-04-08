@@ -144,8 +144,15 @@ During RCS depressurization without RCPs running (e.g., EOP-LOCA-5), <span class
 - [[EOP-LOCA Series]] — RCS inventory loss scenarios
 - [[EOP-SGTR-1]] — primary-to-secondary leakage through SG tubes
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-d</div>
+EOP-FRHS-1 Bleed and Feed: actuate SI, open PZR PORVs. If 2PR2 fails to open, open <span class="hi-exam">reactor head vent valves 2RC40 through 2RC43</span> (key-locked on 2RP2 backpanel) as alternate bleed path. Requires going to backpanel to insert key and turn each valve individually.
+</div>
+
 ## Connections
 
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)
+- Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2023 Q17]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-d]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

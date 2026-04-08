@@ -137,6 +137,6 @@ Ref: S2.OP-AB.ROD-0003 (R23) | Task: N1150090501 | System: 012 Reactor Protectio
 
 ## Connections
 
-- Related procedures: [[S2.OP-AB.ROD-0003 — Continuous Rod Motion]]
-- Related systems: [[Control Rod Drive System]], [[Reactor Protection System]]
+- Related procedures: [[AB.ROD-0003 — Continuous Rod Motion]]
+- Related systems: [[Instrumentation and Controls]], [[Instrumentation and Controls]]
 - Related exam: [[2023 NRC Operating Exam]]
