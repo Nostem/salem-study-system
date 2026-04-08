@@ -62,9 +62,14 @@ Provides AC electrical power to all station auxiliaries during startup, operatio
 - 2 offsite circuits inoperable: 24 hours
 - TS 3.8.3.1 requires vital buses energized and OPERABLE
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q93</div>
+CW bus loss scenario: when the 4KV infeed breaker to the 24 CW bus fails open, the bus auto-transfers to the 23 CW bus. However, <span class="hi-exam">all 'B' circulator breakers trip open on undervoltage during the transfer</span> and must be manually restarted. With one CW pump already C/T, this results in <span class="hi-exam">4 or more circulators out of service</span>. Per AB.CW-0001 Attachment 1, with 4+ circulators OOS at P-10 or above: <span class="hi-exam">trip the reactor and enter EOP-TRIP-1</span>.
+</div>
+
 ## Connections
 
-- Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.LOAD-0001 — Rapid Load Reduction]]
-- Related exam questions: [[2023 Q88]]
+- Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.LOAD-0001 — Rapid Load Reduction]], [[AB.CW-0001 — Circulating Water Malfunction]]
+- Related exam questions: [[2023 Q88]], [[2023 Q93]]
 - Related exam: [[2023 NRC Written Exam]]
 

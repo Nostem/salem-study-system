@@ -45,7 +45,7 @@ What action will the CRS direct the crew?
 
 ## Connections
 
-- Related systems: [[Turbine-Generator]]
+- Related systems: [[AC Power]]
 - Related procedures: [[AB.CW-0001]]
 - Related EOPs: [[EOP-TRIP-1]]
 - Related exam: [[2023 NRC Written Exam]]
