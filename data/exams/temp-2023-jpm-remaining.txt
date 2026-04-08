@@ -1,0 +1,4670 @@
+============================================================
+JPM: ro-a4 (Pages 41-53)
+============================================================
+
+--- PAGE 41 ---
+PSEG Nuclear LLC
+Job Performance Measure
+Activate ERDS IAW EP-SA-325-F8
+JPM Number: 21-01 NRC RO-A4
+Revision Number: 04
+Date: 1/10/23
+Developed By: R. Chan Date: 1/10/23
+Instructor
+Validated By: E. Gallagher Date: 1/10/23
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 1/19/23
+Operations Representative
+Approved By: M. Wadusky Date: 1/19/23
+Training Department (Print/Sign)
+
+--- PAGE 42 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+03 11/28/22 Used bank JPM. Converted to new JPM template and updated procedure references. Plant
+computer modifications are in progress in the simulator. EP performed validation of the
+procedure that activates ERDS and procedure has no issues, however, the ERDS system was
+not connecting to the NRC. EP is working the issue and expect resolution prior to the next EP
+drill in December 2022.
+04 1/10/23 Incorporated NRC comments from Prep Week. Added possible cues to steps 1.2.b.5 and
+1.2.b.6 in the event ERDS connectivity to NRC Operations Center cannot be established.
+
+--- PAGE 43 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) EP-SA-325-F8 R2 Date Checked: 10/14/22
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+NA 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+R. Chan 11/28/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 44 ---
+SIMULATOR SETUP INSTUCTIONS
+1. See below for special instructions for notifying the NRC Operations Center
+SPECIAL INSTRUCTIONS
+1. Copies of EP-SA-325 for each applicant.
+2. PRIOR to conducting this JPM; CONTACT the NRC ERDS Test monitor and NOTIFY ERDS being used for
+Training. (Day time: 301-287-9386, Night time: , Day time cell: ,
+Erds.resource@nrc.gov)
+3. OPEN the ERDS program using the SPDS computer terminal in the back computer room. Single click the ERDS
+program using the mouse and ensure the dialogue box opens. This will now enable the computer in the simulator
+to connect ERDS to NRC using EP-SA-325-F8.
+4. Log onto the ERDS computer in simulator.
+5. ENSURE the “ERDS XXX” computer is available and working.
+When all operators have completed this JPM, THEN:
+Simulator Operator:
+• NOTIFY NRC ERDS Test monitor of that Training evolution has ended.
+• CLOSE the ERDS dialogue box on the SPDS computer in back computer room.
+
+--- PAGE 45 ---
+INITIAL CONDITIONS
+• Salem Unit 2 experienced a reactor trip and safety injection due to a LOCA
+• An ALERT has been declared
+INITIATING CUE
+ You are the Secondary Communicator.
+ ACTIVATE ERDS IAW Step 1.2.b of EP-SA-325-F8, Secondary Communicator Log.
+ Notify the Shift Manager (Lead Examiner) when ERDS is activated.
+
+--- PAGE 46 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant successfully activates ERDS by completing step 1.2.b of
+EP-SA-325-F8.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 47 ---
+ANSWER KEY (optional):
+[Page left intentionally blank]
+
+--- PAGE 48 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Simulator Operator:
+• NOTIFY NRC ERDS Test monitor
+of pending Training evolution.
+N/A N/A
+• OPEN ERDS program on SPDS
+computer.
+LOG ON to ERDS computer.
+Cue:
+Examiners Note:
+Comments:
+1.2.b Within 60 minutes, ACTIVATE ERDS from
+Operator proceeds to ERDS XXX
+a LAN computer:
+computer located inside Salem Simulator
+horseshoe area.
+1.2.b.1 PROCEED to a computer with its monitor
+Operator selects the ERDS_ Salem
+* labeled “ERDS XXX”
+desktop icon.
+(XXX is the computer’s asset tag number)
+in the Salem Control
+Room and START the program by
+SELECTING the
+ERDS_Salem desktop icon.
+Cue:
+Examiners Note:
+Comments:
+1.2.b.2 On the “Login For ERDS Display” popup Operator enters the PASSWORD and
+*
+window ENTER the PASSWORD selects “Login” to proceed.
+(Password is the same as the Username)
+and SELECT “Login” to proceed.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+
+--- PAGE 49 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+1.2.b.3 SELECT the Action button labeled
+Operator selects the button labeled
+*
+<CONNECT> on the appropriate Salem 1
+<CONNECT> for Salem 2 “ERDS Link
+or Salem 2 “ERDS Link Control and Status
+Control and Status Display Screen”.
+Display Screen”.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+1.2.b.4 SELECT the <YES> button in the “Current
+Operator selects <YES> button in the
+*
+Link Control State is Disconnect. Do You
+“Current Link Control State is
+Want To Connect?” box.
+Disconnect. Do You Want To Connect?”
+box.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+1.2.b.5 OBSERVE that Status changes to
+Operator checks that the Status changes
+*
+“Transmitting Data.”
+to “Transmitting Data”
+Cue: IF REQUIRED, then state the following, “The status has changed to Transmitting Data”
+Examiners Note: N/A
+Comments:
+1.2.b.6 VERIFY successful communications
+Operator verifies that the “Message
+*
+status by observing that the “Messages
+Sent” value is increasing from zero “0” to
+Sent” value is increasing from zero “0” to
+some positive integer > “0”.
+some positive integer > “0”.
+Cue: IF REQUIRED, then state the following, “The Message Sent value is increasing greater than 0”
+Examiners Note: N/A
+Comments:
+
+--- PAGE 50 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+1.2.b.7 INFORM the CRS of successful ERDS
+Notifies CRS that ERDS is activated.
+activation status
+OR
+IF ERDS activation is not successful,
+THEN CONTACT IT Support: Network
+Operations (Ext. #7008), EOF IT
+Supervisor (NETS # 5009), or the IT Help
+Desk (Ext. 5555) for assistance.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+Terminating Cue JPM COMPLETE when the applicant Terminate JPM when operator notifies N/A
+completes the task. you that ERDS is activated.
+RECORD JPM Stop Time: ____________
+
+--- PAGE 51 ---
+Operator’s Name: Job Title: RO X SRO
+Facility: Salem JPM No.: 21-01 NRC RO-A4 Revision No.: 04
+Task Title: Activate ERDS per EP-SA-325-F8
+Task No.: N1240110501 Source:
+Bank X New Mod
+System: Emergency Procedures/Plan
+K/A Number G2.4.43 Knowledge of emergency communications systems and techniques
+/ Description:
+K/A Rating RO 3.2 SRO 3.8
+Task Applicability: SRO Only RO/SRO X AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 10 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom Simulator x In-Plant RCA
+Required Materials: EP-SA-325-F8
+Reference(s): EP-SA-325-F8
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 52 ---
+STUDENT HANDOUT/WORKSHEET
+Operator’s Name: _____________________
+INITIAL CONDITIONS
+• Salem Unit 2 experienced a reactor trip and safety injection due to a LOCA
+• An ALERT has been declared
+INITIATING CUE
+ You are the Secondary Communicator.
+ ACTIVATE ERDS IAW Step 1.2.b of EP-SA-325-F8, Secondary Communicator Log.
+ Notify the Shift Manager (Lead Examiner) when ERDS is activated.
+============================================================
+JPM: sro-a1a (Pages 54-66)
+============================================================
+
+--- PAGE 54 ---
+PSEG Nuclear LLC
+Job Performance Measure
+DETERMINE MINIMUM ECCS INJECTION FLOW
+JPM Number: 21-01 NRC SRO-A1.a
+Revision Number: 01
+Date: 01/18/2023
+Developed By: R. Chan Date: 1-18-23
+Instructor
+Validated By: E. Gallagher Date: 1-18-23
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 1/19/23
+Operations Representative
+Approved By: M. Wadusky Date: 1/19/23
+Training Department (Print/Sign)
+
+--- PAGE 55 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 7/26/22 Modified JPM conditions in stem from NRC 17-01 JPM that results in none of the ECCS pumps
+can be stopped. Converted to new template.
+01 1/18/23 Revised JPM to add Figure 1 from EOP-LOCA-5 as a student handout.
+
+--- PAGE 56 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+RC Procedure(s) 2-EOP-LOCA-5 Sheet 2 Rev. 41 Date Checked: 8/18/22
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+N/A 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+N/A 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+R. Chan 8/18/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 57 ---
+SIMULATOR SETUP INSTUCTIONS
+1. None, this is an Admin JPM.
+SPECIAL INSTRUCTIONS
+1. None.
+
+--- PAGE 58 ---
+INITIAL CONDITIONS
+ At Time 0500, Salem Unit 2 was manually tripped and Safety Injection automatically actuated as a result of a
+LOCA
+ At Time 0600, the RWST Low Level Alarm actuates and the crew transitions to 2-EOP-LOCA-3.
+ The crew is unable to transfer to Cold Leg Recirculation and transitions to 2-EOP-LOCA-5, Loss of Emergency
+Recirculation, due to NO recirculation capability.
+ ECCS has been reduced to one train with the following ECCS Pump flow rates:
+21 SI Pump – 160 gpm
+o
+22 Charging Pump – 220 gpm
+o
+BOTH RHR Pumps were stopped
+o
+INITIATING CUE
+You are the CRS at Step 16.1 of 2-EOP-LOCA-5.
+ DETERMINE the following:
+1. At Time 0640 hours, what is the MINIMUM SI flow required from Figure 1?
+2. Which ECCS Pumps can be stopped , if any, to reduce injection flow as close as possible to minimum
+flow determined from Item 1 (assume that ECCS Pump flows remain stable).
+
+--- PAGE 59 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has determined that the minimum flow per Figure 1 is 290
+gpm (320 – 280 gpm acceptable band), and NONE of the running ECCS Pumps can be stopped.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 60 ---
+ANSWER KEY (optional):
+You are the CRS at Step 16.1 of 2-EOP-LOCA-5.
+ DETERMINE the following:
+1. At Time 0640 hours, what is the MINIMUM SI flow required from Figure 1?
+290 gpm (320 – 280 gpm acceptable band)
+2. Which ECCS Pumps can be stopped , if any, to reduce injection flow as close as possible to minimum
+flow determined from Item 1 (assume that ECCS Pump flows remain stable).
+NONE of the ECCS Pumps can be stopped because neither an SI nor a Charging Pump alone can supply
+the minimum required flow injection of 290 gpm. Therefore, 21 SI and 22 Charging are required to
+remain in service.
+Conditions from the stem:
+ECCS has been reduce to one train with the following ECCS Pump flow rates:
+ 21 SI Pump – 160 gpm
+ 22 Charging Pump – 220 gpm
+ BOTH RHR Pumps were stopped
+
+--- PAGE 61 ---
+ANSWER KEY (additional info)
+From 2-EOP-LOCA-5, sheet 2 Rev. 41:
+
+--- PAGE 62 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: Provide candidate copy of 2-EOP-LOCA-5 sheet 2 (D size sheet or greater)
+Examiners Note: N/A
+Comments: N/A
+1.0 At Time 0640 hours, what is the Determines that 100 minutes has
+*
+MINIMUM SI flow required from Figure 1? elapsed since the Reactor Trip and using
+Figure 1 determines that 290 gpm (320-
+280 gpm) is the minimum ECCS flow
+injection.
+Cue: N/A
+Examiners Note: Figure 1 may be hard to read and readability errors will come into play. Lead Examiner will need to
+evaluate the applicants response to this answer to determine if the flow rate is reasonable based on the size of the
+figure.
+Comments:
+2.0 Which ECCS Pumps can be stopped ,if any, Determines that NONE of the ECCS
+*
+to reduce injection flow as close as Pumps can be stopped because neither
+possible to minimum flow determined an SI nor a Charging Pump alone can
+from Item 1 (assume that ECCS Pump supply the minimum required flow
+flows remain stable) injection of 290 gpm. Therefore, 21 SI
+and 22 Charging are required to remain
+in service
+Cue: N/A
+Examiners Note: N/A
+Comments:
+
+--- PAGE 63 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Terminating Cue JPM COMPLETE when applicant submits N/A
+the worksheet.
+RECORD JPM Stop Time: ____________
+
+--- PAGE 64 ---
+Operator’s Name: Job Title: RO SRO X
+Facility: Salem JPM No.: 21-01 NRC SRO-A1.a Revision No.: 01
+Task Title: Determine Minimum ECCS Injection Flow
+Task No.: N1150680502 Source:
+Bank New Mod X
+System: Conduct of Operations (Generic)
+K/A Number G2.1.7 Ability to evaluate plant performance and make operational judgements based on
+/ Description: operating characteristics, reactor behavior, and instrument interpretation
+K/A Rating RO 4.4 SRO 4.7
+Task Applicability: SRO Only X RO/SRO AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 5 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom X Simulator In-Plant RCA
+Required Materials: None
+Reference(s): 2-EOP-LOCA-5
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 65 ---
+STUDENT HANDOUT/WORKSHEET
+Operator’s Name: _____________________
+INITIAL CONDITIONS
+ At Time 0500, Salem Unit 2 was manually tripped and Safety Injection automatically actuated as a result of a
+LOCA
+ At Time 0600, the RWST Low Level Alarm actuates and the crew transitions to 2-EOP-LOCA-3.
+ The crew is unable to transfer to Cold Leg Recirculation and transitions to 2-EOP-LOCA-5, Loss of Emergency
+Recirculation, due to NO recirculation capability.
+ ECCS has been reduced to one train with the following ECCS Pump flow rates:
+21 SI Pump – 160 gpm
+o
+22 Charging Pump – 220 gpm
+o
+BOTH RHR Pumps were stopped
+o
+INITIATING CUE
+You are the CRS at Step 16.1 of 2-EOP-LOCA-5.
+ DETERMINE the following:
+1. At Time 0640 hours, what is the MINIMUM SI flow required from Figure 1?
+2. Which ECCS Pumps can be stopped , if any, to reduce injection flow as close as possible to minimum
+flow determined from Item 1 (assume that ECCS Pump flows remain stable).
+RECORD YOUR ANSWERS ON THIS WORKSHEET
+
+--- PAGE 66 ---
+STUDENT HANDOUT - 2-EOP-LOCA-5, Figure 1
+============================================================
+JPM: sro-a1b (Pages 67-81)
+============================================================
+
+--- PAGE 67 ---
+PSEG Nuclear LLC
+Job Performance Measure
+APPLY OVERTIME LIMIT RESTRICTIONS
+JPM Number: 21-01 NRC SRO-A1.b
+Revision Number: 0
+Date: 07/26/2022
+Developed By: R. Chan Date: 7/26/22
+Instructor
+Validated By: T. Shetrone / Date: 8/18/22
+SME or Instructor
+Reviewed By: M. Winkelspecth Date: 11/29/22
+Operations Representative
+Approved By: M. Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 68 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 7/26/22 New JPM for Salem. Used bank JPM from Diablo Canyon 2020 NRC NRCL181-A5. Converted
+to new JPM template.
+
+--- PAGE 69 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) LS-AA-119-1003 Rev. 10 Date Checked: 8/18/22
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+N/A 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+N/A 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+R. Chan 8/18/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 70 ---
+SIMULATOR SETUP INSTUCTIONS
+1. None, this is an Admin JPM.
+SPECIAL INSTRUCTIONS
+1. Copies of LS-AA-119-1003
+
+--- PAGE 71 ---
+INITIAL CONDITIONS
+ It is 0600 on Monday 2/17
+ Salem Unit 1 is at 100% power
+ Salem Unit 2 is in a refueling outage and currently defueled
+ The oncoming Unit 1 RO has just called in sick
+ The Fatigue Rule Management System or EmpCenter is unavailable
+ The following licensed operators are currently available (see Next Page):
+INITIATING CUE
+The Shift Manager directs you to perform the following:
+ Review the hours worked by the available Operators and determine their ability to fill the watch bill. Document
+the reason(s) each operator is unavailable, if any. List of available Operators on Next Page.
+
+--- PAGE 72 ---
+Lists of Available Licensed Operators
+Operator #1
+Day Start Time End Time Position
+Sunday, 2/9 0700 1900 RO
+Monday, 2/10 0700 1900 RO
+Tuesday, 2/11 0700 1900 BOP
+Wednesday 0900 2200 Work Control NCO
+Thursday, 2/13 Day Off
+Friday, 2/14 0700 2000 BOP
+Saturday, 2/15 1400 1500 Telecon Personnel Statement
+Sunday, 2/16 0700 1900 BOP
+Monday, 2/17 (proposed) 0700 1900 RO
+Operator #2
+Day Start Time End Time Position
+Sunday, 2/9 1900 0700 Work Control NCO
+Monday, 2/10 1900 0700 Work Control NCO
+Tuesday, 2/11 Day Off
+Wednesday 1900 0700 RO
+Thursday, 2/13 1900 0700 Work Control NCO
+Friday, 2/14 1900 0700 Work Control NCO
+Saturday, 2/15 1900 0700 RO
+Sunday, 2/16 Day Off
+Monday, 2/17 (proposed) 0700 1900 RO
+Operator #3
+Day Start Time End Time Position
+Sunday, 2/9 1000 1700 Work Control NCO
+Monday, 2/10 Day Off
+Tuesday, 2/11 0700 2100 BOP
+Wednesday 0700 1900 BOP
+Thursday, 2/13 0700 1900 RO
+Friday, 2/14 0700 2000 BOP
+Saturday, 2/15 1000 2000 RO
+Sunday, 2/16 Day Off
+Monday, 2/17 (proposed) 0700 1900 RO
+
+--- PAGE 73 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has; (1) determined that Operators 1 and 3 DO NOT meet the
+work hour rule requirements of LS-AA-119-1003, Calculating Work Hours, AND (2) determines that Operator
+2 does MEET the work hour rule requirements and available to take the watch on Monday 2/7. All
+documentation recorded to the reason why the operator is NOT available is in accordance with the attached
+answer key.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 74 ---
+ANSWER KEY (optional):
+Only Operator #2 can accept the watch without a waiver on the allowable work hours during Non-Outage
+Conditions.
+Available to Fill
+Operator the Watch Why NOT selected
+(Circle one)
+ Cannot exceed 16 hours in any continuous 24 period: Satisfactory (max was
+13 hours)
+ Cannot exceed 26 hours in any continuous 48 period: Satisfactory (max was
+25 hours)
+ Cannot exceed 72 hours in any continuous 168 period: Satisfactory (max was
+1 YES /NO 63 hours)
+ 34 hour continuous break required in any 9 day period: Unsatisfactory
+(taking the relief watch at 0700 on Monday would result in a continuous
+break of 33 hours in the past 9 day period)
+ 10 hour continuous break minimum break required between shifts:
+Satisfactory (min was 12 hours)
+ Cannot exceed 16 hours in any continuous 24 period: Satisfactory (max was
+12 hours)
+ Cannot exceed 26 hours in any continuous 48 period: Satisfactory (max was
+24 hours)
+ Cannot exceed 72 hours in any continuous 168 period: Satisfactory (max was
+2 YES /NO 72 hours)
+ 34 hour continuous break required in any 9 day period: Satisfactory (min was
+36 hours)
+ 10 hour continuous break minimum break required between shifts:
+Satisfactory (min was 12 hours)
+ Cannot exceed 16 hours in any continuous 24 period: Satisfactory (max was
+14 hours)
+ Cannot exceed 26 hours in any continuous 48 period: Satisfactory (max was
+24 hours)
+ Cannot exceed 72 hours in any continuous 168 period: Unsatisfactory (max
+3 YES /NO was 73.0 hours)
+ 34 hour continuous break required in any 9 day period: Satisfactory(max was
+38 hours)
+ 10 hour continuous break minimum break required between shifts:
+Satisfactory (min was 10 hours)
+
+--- PAGE 75 ---
+Additional Reference(s): LS-AA-119-1003, Calculating Work Hours
+
+--- PAGE 76 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: Provide candidate copy of LS-AA-119-1003
+Examiners Note: N/A
+Comments: N/A
+1.0 Determine if Operator 1 can be selected. Documented Operator 1 will violate the
+*
+work hour rule requirement in LS-AA-
+119-1003 for not having a 34 hour break
+in any 9 calendar day period. Operator
+1 is ELIMINATED.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+2.0 Determine if Operator 2 can be selected. Documented Operator 2 MEETS the
+*
+work hour rule requirements per LS-AA-
+119-1003. Operator 2 is AVAILABLE to
+take the watch.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+3.0 Determine if Operator 3 can be selected. Documented Operator 3 will violate the
+*
+work hour rule requirement in LS-AA-
+119-1003 for working more than 72
+hours in a 7 day period. Operator 2 is
+ELIMINATED.
+Cue: N/A
+Examiners Note: N/A
+
+--- PAGE 77 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Comments:
+Terminating Cue JPM COMPLETE when the applicant N/A
+submits the worksheet.
+RECORD JPM Stop Time: ____________
+
+--- PAGE 78 ---
+Operator’s Name: Job Title: RO SRO X
+Facility: Salem JPM No.: 21-01 NRC SRO-A1.b Revision No.: 0
+Task Title: Apply Overtime Limit Restrictions
+Task No.: N1230040302 Source:
+Bank X New Mod
+System: Conduct of Operations (Generic)
+K/A Number G2.1.5 Ability to use procedures related to shift staffing, such as minimum crew
+/ Description: complement or overtime limitations (reference potential).
+K/A Rating RO 2.9 SRO 3.9
+Task Applicability: SRO Only X RO/SRO AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 30 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom X Simulator In-Plant RCA
+Required Materials: LS-AA-119-1003
+Reference(s): LS-AA-119-1003
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 79 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+ It is 0600 on Monday 2/17
+ Salem Unit 1 is at 100% power
+ Salem Unit 2 is in a refueling outage and currently defueled
+ The oncoming Unit 1 RO has just called in sick
+ The Fatigue Rule Management System or EmpCenter is unavailable
+ The following licensed operators are currently available (see Next Page):
+INITIATING CUE
+The Shift Manager directs you to perform the following:
+ Review the hours worked by the available Operators and determine their ability to fill the watch bill. Document
+the reason(s) each operator is unavailable, if any.
+ List of available Operators on Next Page.
+ Document your selection and reason on the attached worksheet.
+
+--- PAGE 80 ---
+Lists of Available Licensed Operators
+Operator #1
+Day Start Time End Time Position
+Sunday, 2/9 0700 1900 RO
+Monday, 2/10 0700 1900 RO
+Tuesday, 2/11 0700 1900 BOP
+Wednesday 0900 2200 Work Control NCO
+Thursday, 2/13 Day Off
+Friday, 2/14 0700 2000 BOP
+Saturday, 2/15 1400 1500 Telecon Personnel Statement
+Sunday, 2/16 0700 1900 BOP
+Monday, 2/17 (proposed) 0700 1900 RO
+Operator #2
+Day Start Time End Time Position
+Sunday, 2/9 1900 0700 Work Control NCO
+Monday, 2/10 1900 0700 Work Control NCO
+Tuesday, 2/11 Day Off
+Wednesday 1900 0700 RO
+Thursday, 2/13 1900 0700 Work Control NCO
+Friday, 2/14 1900 0700 Work Control NCO
+Saturday, 2/15 1900 0700 RO
+Sunday, 2/16 Day Off
+Monday, 2/17 (proposed) 0700 1900 RO
+Operator #3
+Day Start Time End Time Position
+Sunday, 2/9 1000 1700 Work Control NCO
+Monday, 2/10 Day Off
+Tuesday, 2/11 0700 2100 BOP
+Wednesday 0700 1900 BOP
+Thursday, 2/13 0700 1900 RO
+Friday, 2/14 0700 2000 BOP
+Saturday, 2/15 1000 2000 RO
+Sunday, 2/16 Day Off
+Monday, 2/17 (proposed) 0700 1900 RO
+
+--- PAGE 81 ---
+STUDENT WORKSHEET
+Operator’s Name: _____________________
+Available to Fill
+Operator the Watch Why NOT selected
+(Circle one)
+1 YES /NO
+2 YES /NO
+3 YES /NO
+============================================================
+JPM: sro-a2 (Pages 82-94)
+============================================================
+
+--- PAGE 82 ---
+PSEG Nuclear LLC
+Job Performance Measure
+REVIEW A COMPLETED SURVEILLANCE TEST
+JPM Number: 21-01 NRC SRO-A2
+Revision Number: 00
+Date: 07/26/2022
+Developed By: R. Chan Date: 7/26/22
+Instructor
+Validated By: T. Shetrone Date: 8/18/22
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 11/29/22
+Operations Representative
+Approved By: M. Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 83 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 7/26/22 Converted to new template.
+
+--- PAGE 84 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) S2.OP-ST.CBV-0001 Rev. 9 Date Checked: 7/25/22
+S2.RA-ST.CBV-0001 Rev. 7
+Dwg 238805
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+NA 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+R. Chan 11/28/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 85 ---
+SIMULATOR SETUP INSTUCTIONS
+1. None, this is an Admin JPM.
+SPECIAL INSTRUCTIONS
+1. Copies of Unit 2 Tech Specs for each applicant.
+2. Copies of drawing 238805 are available if requested by applicant.
+
+--- PAGE 86 ---
+INITIAL CONDITIONS
+ Salem Unit 2 is at 100% power
+ The BOP operator just completed performing S2.OP-ST.CBV-0001, Inservice Testing Containment Ventilation
+Valves Modes 1-6.
+INITIATING CUE
+You are the CRS, complete the review of the completed surveillance procedure for accuracy and completeness starting
+at Step 5.4.3.A.
+Document any discrepancies and evaluate Tech Specs if necessary.
+
+--- PAGE 87 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has determined the 2VC13 stroke time is in the Required
+Action Range and as a minimum TS LCO 3.6.3 Action 1.a is applicable, and 2VC12 is in the Required Evaluation
+Range and must be immediately retested with the results evaluated by the IST Implementation Engineer or
+the valve must be declared inoperable.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 88 ---
+ANSWER KEY (optional)
+Additional Reference(s):
+
+--- PAGE 90 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: Provide candidate completed surveillance procedure (S2.OP-ST.CBV-0001), S2.RA-ST.CBV-0001 and Unit 2 Tech
+Specs.
+Examiners Note: Drawing 238805 is available upon request.
+Comments: N/A
+5.4.3.A REVIEW this procedure with Attachments Applicant determines that 2VC13 stroke
+1-4 for completeness and accuracy. time was incorrectly recorded as SAT
+and should be “REQUIRED ACTION
+RANGE” and 2VC12 was incorrectly
+recorded as SAT and should be in the
+“REQUIRED EVALUATION RANGE”
+Cue: N/A
+Examiners Note: N/A
+Comments:
+5.4.3.B IF valve stroke times are within the Applicant determines that 2VC13 is
+ACCEPTABLE RANGE, THEN DECLARE the INOPERABLE.
+applicable valve(s) OPERABLE.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+
+--- PAGE 91 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.4.3.C IF ANY valve's stroke time is within the Determines 2VC12 is in the required
+*
+REQUIRED EVALUATION RANGE, evaluation range and must be retested
+THEN: immediately or declared inoperable,
+Immediately RETEST the respective valve results of retest must be evaluated by
+OR Declare the valve inoperable the IST Implementation Engineer
+Cue: N/A
+Examiners Note: N/A
+Comments:
+5.4.3.D.1 IF ANY valve's stroke time is in the Applicant determines 2VC13
+*
+REQUIRED ACTION RANGE, INOPERABLE based on the stroke time in
+THEN: the REQUIRED ACTION RANGE.
+Immediately DECLARE the respective
+valve(s) inoperable.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+5.4.3.D.2 EVALUATE Technical Specification Applicant determine that TS LCO 3.6.3 is
+*
+requirements for system operability. NOT MET for 2VC13.
+TS action 1a – restore the inoperable
+valve(s) to operable status within 4
+hours,
+OR
+TS action 1.b the 2VC14 must be closed
+and deactivated within four hours of the
+stroke time.
+OR
+TS action 1.c the penetration must be
+isolated within four hours of the stroke
+time.
+OR
+TS action 1.d - HOT STANDBY in the next
+6 hours and COLD SHUTDOWN in the
+following 30 hours.
+
+--- PAGE 92 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Cue: N/A
+Examiners Note: N/A
+Comments:
+Terminating Cue JPM COMPLETE when the applicant N/A
+submits the worksheet.
+RECORD JPM Stop Time: ____________
+
+--- PAGE 93 ---
+Operator’s Name: Job Title: RO SRO X
+Facility: Salem JPM No.: 21-01 NRC SRO-A2 Revision No.: 00
+Task Title: Review a Completed Surveillance Test
+Task No.: N1230010302 Source:
+Bank X New Mod
+System: Equipment Control (Generic)
+K/A Number G2.2.12 Knowledge of surveillance procedures.
+/ Description:
+K/A Rating RO 3.7 SRO 4.1
+Task Applicability: SRO Only X RO/SRO AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 10 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom X Simulator In-Plant RCA
+Required Materials: S2.OP-ST.CBV-0001, S2.RA-ST.CBV-0001, and Salem Unit 2 Tech Specs
+Reference(s): S2.OP-ST.CBV-0001 S2.RA-ST.CBV-0001 Salem Unit 2 Tech Specs
+DWG 205338, sheet 1
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 94 ---
+STUDENT HANDOUT/WORKSHEET
+Operator’s Name: _____________________
+INITIAL CONDITIONS
+ Salem Unit 2 is at 100% power
+ The BOP operator just completed performing S2.OP-ST.CBV-0001, Inservice Testing Containment Ventilation
+Valves Modes 1-6.
+INITIATING CUE
+You are the CRS, review the completed surveillance procedure for accuracy and completeness starting at Step 5.4.3.A.
+Document any discrepancies and evaluate Tech Specs if necessary.
+RECORD YOU’RE RESPONSE ON THIS WORKSHEET
+============================================================
+JPM: sro-a3 (Pages 95-108)
+============================================================
+
+--- PAGE 95 ---
+PSEG Nuclear LLC
+Job Performance Measure
+SELECT A VOLUNTEER FOR EMERGENCY RADIATION EXPOSURE
+JPM Number: 21-01 NRC SRO-A3
+Revision Number: 0
+Date: 08/18/2022
+Developed By: R. Chan Date: 8/18/22
+Instructor
+Validated By: T. Shetrone / Date: 8/18/22
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 11/29/22
+Operations Representative
+Approved By: M. Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 96 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 8/18/22 New JPM for Salem. Used bank JPM from Commanche Peak 2019 NRC SA4. Converted to new
+JPM template.
+
+--- PAGE 97 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+RC Procedure(s) NC.EP-EP.ZZ-0304 Rev. 17 Date Checked: 8/18/22
+NC.EP-EP.ZZ-0102 Rev. 27
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+N/A 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+N/A 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+R. Chan 8/18/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 98 ---
+SIMULATOR SETUP INSTUCTIONS
+1. None, this is an Admin JPM.
+SPECIAL INSTRUCTIONS
+1. Copies of NC.EP-EP.ZZ-0304 for each applicant.
+
+--- PAGE 99 ---
+INITIAL CONDITIONS
+ Salem Unit 1 is experiencing a LBLOCA
+ Transfer to Cold Leg Recirculation has been established
+ An operator venting 11 RHR Pump is injured and needs assistance to exit the RCA
+ Emergency Coordinator (EC) authorized one volunteer to attempt lifesaving task
+ Rad Pro predicts dose of 15-20 REM given general radiation levels in the area of the injured person
+INITIATING CUE
+The EC directs you to perform the following:
+ Evaluate and select the most preferred volunteer from the list of available volunteers per NC.EP-EP.ZZ-0304,
+Operational Support Center (OSC) Radiation Protection Response.
+List of Available Volunteers
+Volunteer 1: 46 year old male, newly hired Custodian. No prior radiation protection training.
+Volunteer 2: 27 year old female; informs you she is pregnant.
+Volunteer 3: 24 year old male, recently qualified NEO.
+Volunteer 4: 52 year old male, lifetime exposure 150 REM, including a Protecting Valuable Property dose of 15
+REM at another facility.
+Volunteer 5: 49 year old male, works in Maintenance; informs you that he is on prescription medication that may
+cause dizziness.
+Volunteer 6: 42 year old female, not capable of becoming pregnant.
+Volunteer 7: 50 year old male, SRO at Salem. Recently removed from License duties due to a failed periodic
+written exam.
+
+--- PAGE 100 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has; (1) determined that Volunteers 1-6 did NOT meet the
+requirements of NC.EP-EP.ZZ-0304, AND (2) determines that Volunteer 7 does MEET the requirements of
+NC.EP-EP.ZZ-0304 to perform lifesaving tasks. All documentation recorded to the reason why or why NOT is in
+accordance with the attached answer key.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 101 ---
+ANSWER KEY (optional):
+Volunteer Selected (Circle one) Why or Why NOT selected
+Determined individual NOT familiar with consequences of exposure to
+1 NO radiation.
+2 NO Determined female volunteer has declared pregnancy.
+3 NO Determined individual has NOT reached age of 45 years or older.
+Determined individual already received emergency exposure for Protecting
+4 NO
+Valuable Property.
+Determined individual is NOT physically qualified based on prescription
+5 NO
+medication that causes dizziness.
+Determined individual has NOT reached age of 45 years of older.
+6 NO
+Selected Volunteer 7 as most preferred candidate for Emergency exposure
+because he is over the age of 45, has not received a previous emergency
+7 YES exposure in his lifetime, he is familiar with the task and consequences of
+radiation exposure as a licensed operator, and he is not a female capable of
+reproduction
+
+--- PAGE 102 ---
+Additional References:
+NC.EP-EP.ZZ-0102:
+
+--- PAGE 103 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: Provide candidate copy of NC.EP-EP.ZZ-0304
+Examiners Note: N/A
+Comments: N/A
+1.0 Determine if Volunteer 1 can be selected. Documented Volunteer 1 is NOT familiar
+*
+with the consequences of exposure to
+radiation and/or have attended and
+passed Rad Worker Training. Volunteer
+1 is ELIMINATED.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+2.0 Determine if Volunteer 2 can be selected. Documented Volunteer 2 is a declared
+*
+pregnant women and SHALL NOT be
+allowed to volunteer. Volunteer 2 is
+ELIMINATED.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+3.0 Determine if Volunteer 3 can be selected. Documented Volunteer 3 is NOT above
+*
+the age of 45 years, although qualified
+for the task as an NEO. Volunteer 3 is
+ELIMINATED.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+
+--- PAGE 104 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+4.0 Determine if Volunteer 4 can be selected. Documented Volunteer 4 already
+*
+received emergency exposure for
+Protecting Valuable Property. Volunteer
+4 is ELIMINATED.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+5.0 Determine if Volunteer 5 can be selected. Documented Volunteer 5 is NOT
+*
+physically qualified due to taking
+prescription medication. Volunteer 5 is
+ELIMINATED.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+6.0 Determine if Volunteer 6 can be selected. Documented Volunteer 6 is NOT above
+*
+the age of 45 years. Volunteer 6 is
+ELIMINATED.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+7.0 Determine if Volunteer 7 can be selected. SELECTED Volunteer 7 for emergency
+*
+exposure and DOCUMENTED as the
+most preferred candidate because he is
+over the age of 45, has not received a
+previous emergency exposure in his
+lifetime, he is familiar with the task and
+consequences of radiation exposure as a
+
+--- PAGE 105 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+licensed operator, and he is not a female
+capable of reproduction.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+Terminating Cue JPM COMPLETE when the applicant N/A
+submits the worksheet.
+RECORD JPM Stop Time: ____________
+
+--- PAGE 106 ---
+Operator’s Name: Job Title: RO SRO X
+Facility: Salem JPM No.: 21-01 NRC SRO-A3 Revision No.: 0
+Task Title: Select a Volunteer for Emergency Radiation Exposure
+Task No.: Source:
+Bank X New Mod
+System: Radiation Control (Generic)
+K/A Number G2.3.14 Knowledge of radiation or contamination hazards that may arise during normal,
+/ Description: abnormal, or emergency conditions or activities, such as analysis and
+interpretation of radiation and activity readings as they pertain to administrative,
+normal, abnormal, and emergency procedures or to analysis and interpretation of
+coolant activity, including comparison to emergency plan or regulatory limits (SRO
+Only).
+K/A Rating RO N/A SRO 3.8
+Task Applicability: SRO Only X RO/SRO AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 20 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom X Simulator In-Plant RCA
+Required Materials: NC.EP-EP.ZZ-0304
+Reference(s): NC.EP-EP.ZZ-0102 NC.EP-EP.ZZ-0304
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 107 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+ Salem Unit 1 is experiencing a LBLOCA
+ Transfer to Cold Leg Recirculation has been established
+ An operator venting 11 RHR Pump is injured and needs assistance to exit the RCA
+ Emergency Coordinator (EC) authorized one volunteer to attempt lifesaving task
+ Rad Pro predicts dose of 15-20 REM given general radiation levels in the area of the injured person
+INITIATING CUE
+The EC directs you to perform the following:
+ Evaluate and select the most preferred volunteer from the list of available volunteers per NC.EP-EP.ZZ-0304,
+Operational Support Center (OSC) Radiation Protection Response.
+List of Available Volunteers
+Volunteer 1: 46 year old male, newly hired Custodian. No prior radiation protection training.
+Volunteer 2: 27 year old female; informs you she is pregnant.
+Volunteer 3: 24 year old male, recently qualified NEO.
+Volunteer 4: 52 year old male, lifetime exposure 150 REM, including a Protecting Valuable Property dose of 15
+REM at another facility.
+Volunteer 5: 49 year old male, works in Maintenance; informs you that he is on prescription medication that may
+cause dizziness.
+Volunteer 6: 42 year old female, not capable of becoming pregnant.
+Volunteer 7: 50 year old male, SRO at Salem. Recently removed from License duties due to a failed periodic
+written exam.
+
+--- PAGE 108 ---
+STUDENT WORKSHEET
+Operator’s Name: _____________________
+Volunteer Selected (Circle one) Why or Why NOT selected
+1 YES /NO
+2 YES /NO
+3 YES /NO
+4 YES /NO
+5 YES /NO
+6 YES /NO
+7 YES /NO
+============================================================
+JPM: sro-a4 (Pages 109-124)
+============================================================
+
+--- PAGE 109 ---
+PSEG Nuclear LLC
+Job Performance Measure
+REVIEW INITIAL CONTACT MESSAGE FORM (ICMF)
+JPM Number: 21-01 NRC SRO-A4
+Revision Number: 0
+Date: 07/26/2022
+Developed By: R. Chan Date: 7/26/22
+Instructor
+Validated By: T. Shetrone Date: 8/18/22
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 11/29/22
+Operations Representative
+Approved By: M. Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 110 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 7/26/22 New JPM. Converted to new JPM template.
+
+--- PAGE 111 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+RC Procedure(s) EP-SA-325-F2 Rev. 1 Date Checked: 7/24/22
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+N/A 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+N/A 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+R. Chan 8/18/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 112 ---
+SIMULATOR SETUP INSTUCTIONS
+1. None, this is an Admin JPM.
+SPECIAL INSTRUCTIONS
+1. Copies of Salem ECG Flowchart and Bases documents for each SRO.
+2. Marked up EP-SA-325-F2 Attachment 2 Alert (includes all pages of Attachment 2)
+
+--- PAGE 113 ---
+INITIAL CONDITIONS
+ At 1055, Salem Unit 2 initiated a manual SI due to a Steam Generator Tube Rupture on 23 SG
+ RCS temperature is 543 °F
+ BOTH motor driven auxiliary feedpumps failed to start and the Turbine Driven auxiliary feedpump (23 AFW
+Pump) automatically started and is feeding all intact SGs at 22E4 lbm/hr
+ At 1100, the Shift Manager declared an ALERT
+ 33 Ft. level wind direction is from 180 degrees at 5 mph
+ No additional operator actions have been taken
+INITIATING CUE
+The Shift Manager directs you to perform an accuracy peer check on the provided Initial Contact Message Form (ICMF).
+Document any errors on the attached worksheet, should any exist.
+This is a TIME CRITICAL JPM
+
+--- PAGE 114 ---
+Additional Reference(s): EP-SA-325-F2 Rev. 01
+
+--- PAGE 115 ---
+Additional Reference(s): EP-SA-325-F2 Release in Progress Determination Flowchart
+
+--- PAGE 116 ---
+Additional Reference(s): EP-SA-325-102 Rev. 1, page 7, Event Classification Guide Use
+
+--- PAGE 117 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has identified the following errors on the ICMF; (1)
+declaration time is incorrect, (2) description of the event is not in accordance with Table 1 of EP-SA-325-102,
+and (3) a release not in progress is incorrectly checked off. The ICMF should be in accordance with the
+attached answer key. This is a TIME CRITICAL JPM which must be completed ≤ 15 minutes.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 118 ---
+ANSWER KEY (optional):
+
+--- PAGE 119 ---
+Answer Key
+Errors
+ICMF
+Identified Brief Description of Error(s)
+Section
+(Circle one)
+I NO
+1. Declaration time is incorrect should be 1100,
+2. Description of Event is incorrect should read “Loss of the Reactor Coolant System
+II YES Barrier” per Table 1 of EP-SA-325-102
+1. A release is in progress due to the Turbine Driven auxiliary feedpump the ONLY
+pump in service and supplied from 21 and 23 SGs. No actions have been taken
+III YES yet to close the 23MS45 steam supply from 23 SG. Per EP-SA-325-F2, a release is
+in progress due to a Primary to Secondary leak and the steam driven feedpump in
+service with no radiation monitor to monitor the release path.
+IV NO
+V NO
+
+--- PAGE 120 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: Provide candidate MARKED UP copy of EP-SA-325-F2 Attachment 2 Alert(include all pages from Attachment 2)
+and Salem ECG Flowcharts and Bases Books.
+Examiners Note: N/A
+Comments: N/A
+1.0 Determine if Section I has any errors. No errors
+*
+Cue: N/A
+Examiners Note: N/A
+Comments:
+2.0 Determine if Section II has any errors. Documents that Section II has two
+*
+errors: (1) declaration time is incorrect
+should be 1100, and (2) the Description
+of Event is incorrect should read “Loss of
+the Reactor Coolant System Barrier”.
+Cue: N/A
+Examiners Note: N/A
+Comments:
+3.0 Determine if Section III has any errors. Documents that Section III incorrectly
+*
+checked that NO release is in progress.
+A primary to secondary leak and the
+steam driven feedpump in service is a
+release in progress.
+Cue: N/A
+Examiners Note: N/A
+
+--- PAGE 121 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Comments:
+4.0 Determine if Section IV has any errors. No errors
+*
+Cue: N/A
+Examiners Note: N/A
+Comments:
+5.0 Determine if Section V has any errors. No errors
+*
+Cue: N/A
+Examiners Note: N/A
+Comments:
+Terminating Cue JPM COMPLETE when the applicant N/A
+submits the worksheet.
+RECORD JPM Stop Time: ____________
+
+--- PAGE 122 ---
+Operator’s Name: Job Title: RO SRO X
+Facility: Salem JPM No.: 21-01 NRC SRO-A4 Revision No.: 0
+Task Title: Review Initial Contact Message Form (ICMF)
+Task No.: N1240010502 Source:
+Bank New X Mod
+System: Emergency Procedures/Plan (Generic)
+K/A Number G2.4.40 Knowledge of SRO responsibilities in emergency plan implementing procedures
+/ Description: (SRO Only).
+K/A Rating RO N/A SRO 4.5
+Task Applicability: SRO Only X RO/SRO AO/RO/SRO Other
+Time-Critical: Yes X No Alternate Path: Yes No X
+Estimated Time to Complete: 15 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom X Simulator In-Plant RCA
+Required Materials: Salem ECG & Basis Document
+Reference(s): Salem ECG
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 123 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+ At 1055, Salem Unit 2 initiated a manual SI due to a Steam Generator Tube Rupture on 23 SG
+ RCS temperature is 543 °F
+ BOTH motor driven auxiliary feedpumps failed to start and the turbine driven auxiliary feedpump (23 AFW
+Pump) automatically started and is feeding all intact SGs at 22E4 lbm/hr
+ At 1100, the Shift Manager declared an ALERT
+ 33 Ft. level wind direction is from 180 degrees at 5 mph
+ No additional operator actions have been taken
+INITIATING CUE
+The Shift Manager directs you to perform an accuracy peer check on the provided Initial Contact Message Form (ICMF).
+Document any errors on the attached worksheet, should any exist.
+This is a TIME CRITICAL JPM
+
+--- PAGE 124 ---
+STUDENT WORKSHEET
+Operator’s Name: _____________________
+Errors
+ICMF
+Identified Brief Description of Error(s)
+Section
+(Circle one)
+I YES /NO
+II YES /NO
+III YES /NO
+IV YES / NO
+V YES / NO
+============================================================
+JPM: sim-a (Pages 125-137)
+============================================================
+
+--- PAGE 125 ---
+PSEG Nuclear LLC
+Job Performance Measure
+Perform Control Rod System Surveillance Test
+JPM Number: 21-01 NRC Sim-a
+Revision Number: 02
+Date: 01/10/23
+Developed By: R. Chan Date: 1/10/23
+Instructor
+Validated By: E. Gallagher Date: 1/10/23
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 1/19/23
+Operations Representative
+Approved By: M. Wadusky Date: 1/19/23
+Training Department (Print/Sign)
+
+--- PAGE 126 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+01 7/25/22 Reformat JPM, update procedure rev and task standard after NUREG revision.
+02 1/10/23 Incorporated NRC comments.
+
+--- PAGE 127 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+RC Procedure(s) S2.OP-ST.RCS-0001 Rev. 27 Date Checked: 1-5-23
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+NA 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+R. Chan 1-5-23
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 128 ---
+SIMULATOR SETUP INSTUCTIONS
+ RESET simulator to IC-250 and VERIFY the below events on the Instructor Station.
+ Salem Unit 2 is at 100% power.
+ No major equipment are out of service and no Tech Specs are active.
+ The following malfunctions, overrides, and remotes were required to develop this IC.
+MALF Description Delay Initial Ramp Trigger Severity
+ID # Time Value Time
+01 RD0045, Uncontrolled Rod Insert in Auto N/A N/A N/A ET-1 TRUE
+1. Verify Overrides / Remotes:
+ID # Description Delay Initial Ramp Trigger Condition
+Time Value Time / Severity
+01 B433 5 DI, Rod Bank Selector Sw in Auto ET-1 ON
+2. Verify Event Triggers:
+ET# Description Command
+1 KB433W1D, Rod bank Selector SW to Auto
+SPECIAL INSTRUCTIONS
+1. Rod bank selector switch selected to CBC position.
+2. Ensure ARPI screen up on Plant computer.
+3. For efficiency, provide procedures to the operators up front to allow time to read and review.
+4. If procedures not supplied ahead of time then ensure marked up surveillance and OP-AP-300-1001 procedure are
+available for students.
+
+--- PAGE 129 ---
+INITIAL CONDITIONS
+• Unit 2 is at 100% power BOL.
+• No major equipment is out of service and no Tech Specs are active.
+• The rod control system surveillance is in progress.
+• All sections are complete, except for exercising Control Bank D.
+INITIATING CUE
+• You are the Reactor Operator.
+• The CRS directs you to complete the rod control system surveillance IAW S2.OP-ST.RCS-0001, Reactivity
+Control System Rod Control Assemblies.
+• A Maintenance Technician is stationed at the Rod Control Power Cabinets (Relay Room)
+• CRS directs that 15 steps of rod insertion will be performed to ensure each rod moves at least 10 steps.
+• Notify the CRS when the testing is complete.
+• Your evaluator will take care of all alarms not related to your task.
+
+--- PAGE 130 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has exercised Control Bank D at least 10 steps, and upon
+completion of the test, recognizes unexpected continuous rod movement and manually trips the reactor.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 131 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the Operator reads P&Ls and reviews OP-
+operator acknowledges READY TO START AP-300-1001 prior to start
+JPM.
+Cue: Provide candidate MARKED UP surveillance procedure (S2.OP-ST.RCS-0001) and OP-AP-300-1001.
+Examiners Note:
+Comments:
+4.1.10.1 Operator checks Tave/Tref recorder on
+IF the reactor is critical, THEN ENSURE
+2RP4 and determines Tavg is within +/-1
+TAVG is within ±1°F of TREF.
+F of Tref.
+Cue:
+Examiners Note:
+Comments:
+4.1.10.2
+* Operator rotates selector switch
+PLACE Bank Selector Switch in the "CBD"
+clockwise to the CBD position
+position.
+Cue:
+Examiners Note:
+Comments:
+4.1.10.3
+Contacts Maint Technician at Power
+ENSURE GRP. SELECT "B" lights are
+Cabinets.
+illuminated on Rod Control System Power
+Cabinets 21BD and 22BD.
+
+--- PAGE 132 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Cue: Technician reports GRP SELECT ‘B’ lights are illuminated on Cabinets 21 BD and 22BD.
+Examiners Note:
+Comments:
+4.1.10.4
+Operator inserts one step.
+Insert Control Bank D 1 step.
+Cue:
+Examiners Note: Steps 4.1.10.4 and 4.1.10.5 will be performed three times consecutively prior to the 15 step
+insertion in step 6.
+Comments:
+4.1.10.5
+Operator withdraws one step.
+Withdraw Control Bank D 1 step.
+Cue:
+Examiners Note:
+1  2  3 
+Comments:
+4.1.10.6
+* Operator inserts Control Bank D 15 +/- 1
+MANEUVER Control Bank D at least 10
+steps.
+steps in any one direction.
+Cue:
+Examiners Note: OHA E-24 may annunciate. Acknowledge as CRS.
+Comments:
+
+--- PAGE 133 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+4.1.10.7
+ENSURE each rod in Control Bank D Operator monitors rod position on plant
+indicated rod movement of at least 10 computer and determines D bank rods
+steps. all moved at least 10 steps.
+Cue: Reactor Engineer reports rods indicate 10 step movement.(optional)
+Examiners Note: Operator may request to insert rods additional steps, IF so, just restate the request.
+Comments:
+4.1.10.8
+* Operator records test results as SAT.
+RECORD CONTROL BANK D "Test Results"
+by initialing the SAT or UNSAT column
+using the Acceptance Criteria in
+Attachment 1, Rod Control Assembly
+Data.
+Cue:
+Examiners Note:
+Comments:
+4.1.10.9
+* RESTORE Control Bank D to the pre-test Operator withdraws Bank D to previous
+position. position (ARO)
+Cue:
+Examiners Note:
+Comments:
+4.1.11.1
+Operator checks Tave/Tref recorder on
+IF the reactor is critical, THEN ENSURE
+2RP4 and determines Tavg is within 1 F
+TAVG is within ±1°F of TREF.
+of Tref.
+Cue:
+Examiners Note:
+
+--- PAGE 134 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Comments:
+4.1.11.2
+N/A
+IF Turbine Power is ≤15%, THEN PLACE
+Bank Selector Switch in the "MAN"
+position.
+Cue:
+Examiners Note:
+Comments:
+ALTERNATE PATH STARTS HERE
+4.1.11.3
+* Operator determines that Rx power is >
+IF Turbine Power is >15%, THEN PLACE
+15% and rotates selector switch
+Bank Selector Switch in the "AUTO" OR
+counterclockwise to the AUTO position.
+"MAN" position as directed by the
+SM/CRS.
+Cue #1: IF asked, CRS directs rod bank selected to AUTO.
+Cue #2: After rod motion commences: IF operator recommends to CRS to place rods in Manual, THEN state;
+understand placing rods to manual.
+Simulator Operator: ENSURE ET-1 is TRUE when rods selected to Auto. This will insert MALF: RD0045, Uncontrolled
+Rod Insertion in AUTO AND MANUAL.
+Examiners Note: The operator may refer to S2.OP-AB.ROD-0003, Continuous Rod Motion and take the actions in the
+AB to manually trip the reactor.
+JPM Complete once Reactor is Tripped.
+Comments:
+* Operator announces that rods are Operator Manually trips the Reactor.
+stepping in and no runback in progress.
+Operator places rod bank switch to
+Manual and reports rod motion has NOT
+stopped.
+Operator recognizes rod insertion is
+continuing
+Cue:
+
+--- PAGE 135 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Examiners Note:
+Comments:
+Terminating Cue JPM COMPLETE
+RECORD JPM Stop Time: ____________
+
+--- PAGE 136 ---
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: 21-01 NRC Sim-a Revision No.: 02
+Task Title: Perform Rod Control System Surveillance Test
+Task No.: N1140340401 Source:
+Bank X New Mod
+System: 001 Control Rod Drive System (SF1)
+K/A Number A4.16 Ability to manually operate and/or monitor in the control room: Rod speed and
+/ Description: direction
+K/A Rating RO 3.8 SRO N/A
+Task Applicability: SRO Only RO/SRO X AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes X No
+Estimated Time to Complete: 15 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom Simulator X In-Plant RCA
+Required Materials: S2.OP-ST.RCS-0001
+Reference(s): S2.OP-ST.RCS-0001 OP-AP-300-1001
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 137 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+• Unit 2 is at 100% power BOL.
+• No major equipment is out of service and no Tech Specs are active.
+• The rod control system surveillance is in progress.
+• All sections are complete, except for exercising Control Bank D.
+INITIATING CUE
+• You are the Reactor Operator.
+• The CRS directs you to complete the rod control system surveillance IAW S2.OP-ST.RCS-0001, Reactivity
+Control System Rod Control Assemblies.
+• A Maintenance Technician is stationed at the Rod Control Power Cabinets (Relay Room)
+• CRS directs that 15 steps of rod insertion will be performed to ensure each rod moves at least 10 steps.
+• Notify the CRS when the testing is complete.
+• Your evaluator will take care of all alarms not related to your task.
+============================================================
+JPM: sim-b (Pages 138-150)
+============================================================
+
+--- PAGE 138 ---
+PSEG Nuclear LLC
+Job Performance Measure
+Transfer To Hot Leg Recirculation
+JPM Number: 21-01 NRC Sim-b
+Revision Number: 03
+Date: 7/26/222
+Developed By: K. Hantho Date: 7/26/22
+Instructor
+Validated By: Westlake/Militti Date: 8/19/22
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 11/29/22
+Operations Representative
+Approved By: M. Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 139 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+03 7/26/22 Update and validate to new JPM format.
+
+--- PAGE 140 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+EG 1. Task description and number, JPM description and number are identified.
+EG 2. Knowledge and Abilities (K/A) references are included.
+EG 3. Performance location specified. (in-plant, control room, or simulator)
+EG 4. Initial setup conditions are identified.
+EG 5. Initiating and terminating cues are properly identified.
+EG 6. Task standards identified and verified by SME review.
+EG 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+EG 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) 2-EOP-LOCA-4 Rev. 41 Date Checked: 7/26/22
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+NA 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+E. Gallagher 1-5-23
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 141 ---
+SIMULATOR SETUP INSTUCTIONS
+ RESET simulator to IC-251 and VERIFY the below events on the Instructor Station.
+ Salem Unit 2 is shutdown.
+ No major equipment are out of service and no Tech Specs are active.
+ The following malfunctions, overrides, and remotes were required to develop this IC.
+MALF Description Delay Initial Ramp Trigger Severit
+ID # Time Value Time y
+01 RC0001A, RCS rupture of RC loop 21 N/A N/A N/A N/A TRUE
+02 SJ0062B, 22 SI pump trip N/A N/A N/A N/A TRUE
+03 Rh0026a 21 RHR PUMP TRIP N/A N/A N/A N/A TRUE
+ID# Description Delay Initial Ramp Trigger Conditi
+Time Value Time on/
+OVRD Severity
+or
+REMT
+01 RH26D, 21 RHR pump breaker control power OFF
+02 RH27D, 21 RHR pump rack out TAGGE
+D
+ET# Description Command
+none
+SPECIAL INSTRUCTIONS
+1. Place Bezel cover on 21 RHR pump as C/T
+
+--- PAGE 142 ---
+INITIAL CONDITIONS
+ You are the incoming crew.
+ Unit 2 experienced a Large Break LOCA.
+ The previous crew completed the actions to transfer to Cold Leg Recirculation IAW EOP-LOCA-3 and have
+transitioned back to EOP-LOCA-1.
+ 22 SI pump tripped following completion of LOCA-3 and is being investigated.
+ 21 RHR pump is C/T for scheduled maintenance prior to the event.
+INITIATING CUE
+ You are the Reactor Operator.
+ The CRS has directed you to IMPLEMENT 2-EOP-LOCA-4, TRANSFER TO HOT LEG RECIRCULATION.
+ Your evaluator will respond to all alarms not related to your task.
+
+--- PAGE 143 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has aligned the plant for Hot leg Recirculation IAW Steps 4
+and 8 of 2-EOP-LOCA-4
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 144 ---
+ANSWER KEY:
+
+--- PAGE 145 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: Provide candidate sheet of 2-EOP-LOCA-4.
+Examiners Note: None
+Comments:
+LOCA-4 ARE BOTH RHR PUMPS RUNNING? Determines that ONLY 22 RHR Pump is
+running. (21 RHR pump is C/T)
+1.0
+GOES TO Step 4.
+Cue:
+Examiners Note:
+Comments:
+4.0 IS 22 RHR Pump Running YES, determines that 22 RHR Pump is
+running.
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 146 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+4.0 CLOSE 22CS36 (RHR SUPPLY TO CS VALVE) Operator depresses CLOSE PB for
+*
+Cont’d 22CS36 (RHR SUPPLY TO CS VALVE)
+and verifies CLOSE PB illuminates.
+Cue:
+Examiners Note:
+Comments:
+4.0 IS 21SJ45 (RHR DISCHARGE TO SI PUMPS NO. Verifies 21SJ45 closed
+Cont’d VALVE) OPEN
+Cue:
+Examiners Note:
+Comments:
+4.0 OPEN 22SJ49 (COLD LEG ISOLATION Operator depresses OPEN PB for
+*
+Cont’d VALVE) 22SJ49 (COLD LEG ISOLATION VALVE)
+and verifies OPEN PB illuminates.
+Cue:
+Examiners Note:
+Comments:
+ALTERNATE PATH STARTS HERE
+5.0 IS 22 SI Pump Running NO, Verifies 22 SI pump tripped
+GOES TO Step 8.
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 147 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+8.0 STOP 21 SI Pump Operator depresses 21 SI Pump STOP
+*
+PB on 2CC1 and verifies STOP PB
+illuminates.
+Cue:
+Examiners Note:
+Comments:
+8.0 CLOSE 21SJ134 (Cold Leg Discharge Valve) Operator depresses CLOSE PB for
+*
+Cont’d 21SJ134 (Cold Leg Discharge Valve) on
+2CC1 and verifies CLOSE PB
+illuminates.
+Cue:
+Examiners Note:
+Comments:
+8.0 OPEN 21SJ40 (Hot Leg Discharge Valve) Operator Opens 21SJ40 (Hot Leg
+*
+Cont’d Discharge Valve) by inserting key and
+rotating; verifies OPEN PB illuminates.
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 148 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+8.0 Operator depresses START PB for 21 SI
+*
+Cont’d START 21 SI Pump Pump and verifies START PB
+illuminates.
+Cue:
+Examiners Note:
+Comments:
+Terminating Cue JPM COMPLETE
+RECORD JPM Stop Time: ____________
+
+--- PAGE 149 ---
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: 21-01 NRC Sim-b Revision No.: 03
+Task Title: Transfer To Hot Leg Recirculation
+Task No.: 1150110501 Source:
+Bank X New Mod
+System: 006 Emergency Core Cooling System (SF2)
+K/A Number A4.05 Ability to manually operate and/or monitor in the control room: Transfer of ECCS
+/ Description: flowpaths
+K/A Rating RO 4.1 SRO N/A
+Task Applicability: SRO Only RO/SRO X AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes X No
+Estimated Time to Complete: 6 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom Simulator X In-Plant RCA
+Required Materials: 2-EOP-LOCA-4
+Reference(s): 2-EOP-LOCA-4
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 150 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+ You are the incoming crew.
+ Unit 2 experienced a Large Break LOCA.
+ The previous crew completed the actions to transfer to Cold Leg Recirculation IAW EOP-LOCA-3 and have
+transitioned back to EOP-LOCA-1.
+ 22 SI pump tripped following completion of LOCA-3 and is being investigated.
+ 21 RHR pump is C/T for scheduled maintenance prior to the event.
+INITIATING CUE
+ You are the Reactor Operator.
+ The CRS has directed you to IMPLEMENT 2-EOP-LOCA-4, TRANSFER TO HOT LEG RECIRCULATION.
+ Your evaluator will respond to all alarms not related to your task.
+============================================================
+JPM: sim-c (Pages 151-162)
+============================================================
+
+--- PAGE 151 ---
+PSEG Nuclear LLC
+Job Performance Measure
+Depressurize RCS using Aux spray IAW EOP-LOCA-2
+JPM Number: 21-01 NRC Sim-c
+Revision Number: 01
+Date: 01/10/23
+Developed By: R. Chan Date: 1/10/23
+Instructor
+Validated By: E. Gallagher Date: 1/10/23
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 1/19/23
+Operations Representative
+Approved By: M. Wadusky Date: 1/19/23
+Training Department (Print/Sign)
+
+--- PAGE 152 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 10/12/22 New JPM
+01 1/10/23 Incorporated NRC comments from Prep week. Revised step 20 RCS subcooling is now 9 F and
+lowering.
+
+--- PAGE 153 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+EG 1. Task description and number, JPM description and number are identified.
+EG 2. Knowledge and Abilities (K/A) references are included.
+EG 3. Performance location specified. (in-plant, control room, or simulator)
+EG 4. Initial setup conditions are identified.
+EG 5. Initiating and terminating cues are properly identified.
+EG 6. Task standards identified and verified by SME review.
+EG 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+EG 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) 2-EOP-LOCA-2 Rev. 41 Date Checked: 11/21/22
+EG 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+NA 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+Ed Gallagher 11/21/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 154 ---
+SIMULATOR SETUP INSTUCTIONS
+ RESET simulator to IC-252 and VERIFY the below events on the Instructor Station.
+ Salem Unit 2 is shutdown.
+ No major equipment are out of service and no Tech Specs are active.
+ The following malfunctions, overrides, and remotes were required to develop this IC.
+MALF Description Delay Initial Ramp Trigger Severity
+ID # Time Value Time
+01 RC0002 RCS Leak in Containment 350
+02 VL0016 22SJ54 Fails to Position 0
+03 VL0016 21SJ54 Fails to Position 0
+04 VL0016 23SJ54 Fails to Position 0
+05 VL0016 24SJ54 Fails to Position 0
+06 PR0019D PZR Spray valve 2PS3 Fails Closed True
+07 VL0298 2PR2 Fails to position 0.00
+Place a Bezel Cover over 2PR1, to indicate isolated status
+SPECIAL INSTRUCTIONS
+1. Marked up copy of 2-EOP-LOCA-2 on center console, complete thru step 19
+
+--- PAGE 155 ---
+INITIAL CONDITIONS
+• The reactor was tripped when a RCS leak occurred.
+• All RCPs have been stopped
+• 2PR1 is inoperable with 2PR6 isolated with power removed
+• The operating crew has progressed through the EOP’s and is now in 2-EOP-LOCA-2, POST LOCA COOLDOWN
+AND DEPRESSURIZATION
+INITIATING CUE
+• You are the Reactor Operator.
+• The CRS directs you to depressurize the RCS to minimize subcooling IAW Step 20 of 2-EOP-LOCA-2, POST LOCA
+COOLDOWN AND DEPRESSURIZATION
+• Notify the CRS when Step 20 is completed.
+• Your evaluator will take care of all alarms not related to your task.
+
+--- PAGE 156 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has depressurized RCS using Auxiliary spray IAW step 20 of 2-
+EOP-LOCA-2
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 157 ---
+ANSWER KEY (if required):
+Flowchart portion below
+
+--- PAGE 158 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: Provide candidate MARKED UP sheet of 2-EOP-LOCA-2.
+Examiners Note:
+Comments:
+C20-1 CAUTION
+IF SI HAS BEEN TERMINATED, THE
+ACCUMULATORS SHOULD BE
+Verifies 21-24SJ54s closed
+ISOLATED PRIOR TO
+DEPRESSURIZING THE RCS TO LESS
+THAN 700 PSIG
+Cue:
+Examiners Note: The 21-24 SJ54s are closed
+Comments:
+N20-1 NOTE
+THE UPPER HEAD REGION MAY VOID
+DURING RCS DEPRESSURIZATION IF
+Acknowledge the Note
+RCPs ARE NOT RUNNING THIS WILL
+RESULT IN A RAPIDLY RISING PZR
+LEVEL.
+Cue:
+Examiners Note: The 21-24 SJ54s are closed
+Comments:
+
+--- PAGE 159 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+20
+IS NORMAL PZR SPRAY AVAILABLE NO.
+Cue:
+Examiners Note: With no RCPs running, normal spray is not available
+Comments:
+20
+* IS AT LEAST ONE PZR PORV YES.
+CONT’D
+AVAILABLE
+Cue:
+Examiners Note:
+Comments:
+20
+* DEPRESSURIZE RCS USING ONE PZR Operator Opens the 2PR2 to attempt to
+CONT’D
+PORV depressurize the RCS but it will not
+open. 2PR1 remains isolated and
+unavailable.
+Cue:
+Examiners Note:
+Comments:
+ALTERNATE PATH STARTS HERE
+20
+* IS RCS PRESSURE DROPPING NO.
+CONT’D
+Cue:
+Examiners Note: Operator observes valve not repositioning. May attempt to depress the OPEN PB again.
+Comments:
+
+--- PAGE 160 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+20 DEPRESSURIZE RCS USING AUX
+*
+CONT’D SPRAY: Operator opens 2CV75 and closes
+2CV77 and 79.
+1. OPEN 2CV75 (RCS AUX SPRAY
+VALVE) Operator monitors RCS pressure and
+2. CLOSE 2CV77 (CHARGING TO verifies pressure is lowering.
+LOOP 23)
+3. CLOSE 2CV79 (CHARGING TO
+LOOP 24)
+Cue :
+Examiners Note:
+Comments:
+20 OPERATE PZR HEATERS AS NECESSARY TO Operator will check PZR temperature
+CONT’D MAINTAIN PZR LIQUID SATURATED and determine if pressurizer heaters are
+required to be energized
+Cue : When the operator checks that RCS pressure is lowering, and determines whether or not heaters need to be
+energized then, provide the following cue:
+• RCS subcooling is now 9°F and lowering.
+Examiners Note:
+Comments:
+20.1 WHEN PZR LEVEL IS GREATER THAN 77% Operator should realign aux spray to
+*
+(74% ADVERSE) OR RCS SUBCOOLING LESS normal as follows:
+THAN 10°F THEN STOP RCS
+DEPRESSURIZATION Operator closes 2CV75 and opens
+2CV77 or 79.
+Cue:
+Examiners Note:
+Comments:
+Terminating Cue JPM COMPLETE
+RECORD JPM Stop Time: ____________
+
+--- PAGE 161 ---
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: 21-01 NRC Sim-c Revision No.: 01
+Task Title: Depressurize RCS using Aux spray IAW EOP-LOCA-2
+Task No.: N1150090501 Source:
+010 PZR PCS Pressurizer Pressure Control Bank New X Mod
+System:
+System
+K/A Number A4.05 Ability to manually operate and/or monitor in the control room:
+/ Description: PZR Auxiliary Spray Valves
+K/A Rating RO 3.2 SRO N/A
+Task Applicability: SRO Only RO/SRO X AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes X No
+Estimated Time to Complete: 5 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom Simulator X In-Plant RCA
+Required Materials: 2-EOP-LOCA-2
+Reference(s): 2-EOP-LOCA-2
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 162 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+• The reactor was tripped when a RCS leak occurred.
+• All RCPs have been stopped
+• 2PR1 is inoperable with 2PR6 isolated with power removed
+• The operating crew has progressed through the EOP’s and is now in 2-EOP-LOCA-2, POST LOCA COOLDOWN
+AND DEPRESSURIZATION
+INITIATING CUE
+• You are the Reactor Operator.
+• The CRS directs you to depressurize the RCS to minimize subcooling IAW Step 20 of 2-EOP-LOCA-2, POST LOCA
+COOLDOWN AND DEPRESSURIZATION
+• Notify the CRS when Step 20 is completed.
+• Your evaluator will take care of all alarms not related to your task.
+============================================================
+JPM: sim-d (Pages 163-173)
+============================================================
+
+--- PAGE 163 ---
+PSEG Nuclear LLC
+Job Performance Measure
+INITIATE BLEED AND FEED USING REACTOR HEAD VENTS
+JPM Number: 21-01 NRC Sim-d
+Revision Number: 07
+Date: 01/10/23
+Developed By: R. Chan Date: 1/10/23
+Instructor
+Validated By: E. Gallagher Date: 1/10/23
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 1/19/23
+Operations Representative
+Approved By: M. Wadusky Date: 1/19/23
+Training Department (Print/Sign)
+
+--- PAGE 164 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+06 7/26/22 Update to new JPM format, update to NUREG 1021 changes.
+07 1/10/23 Incorporated NRC comment on pg. 10.
+
+--- PAGE 165 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) 2-EOP-FRHS-1 Rev. 41 Date Checked: 7/26/22
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+NA 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+R. Chan 11/28/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 166 ---
+SIMULATOR SETUP INSTUCTIONS
+ RESET simulator to IC-253 and VERIFY the below events on the Instructor Station.
+ Salem Unit 2 is shutdown.
+ No major equipment are out of service and no Tech Specs are active.
+ The following malfunctions, overrides, and remotes were required to develop this IC.
+MALF Description Delay Initial Ramp Trigger Severit
+ID # Time Value Time y
+01 AF0181A, 21 AFW pump trip N/A N/A N/A N/A TRUE
+02 AF0181B, 22 AFW pump trip N/A N/A N/A N/A TRUE
+03 AF0183, 23 AFW pump overspeed trip N/A N/A N/A N/A TRUE
+04 VL0298, 2PR2 fails to position N/A N/A N/A N/A 0%
+1. Verify the following OVERRIDES / REMOTES:
+ID # Description Delay Initial Ramp Trigger Condition
+Time Value Time / Severity
+01 AF20D, 21 AFW control power N/A N/A N/A N/A OFF
+02 AF25D, 22 AFW control power N/A N/A N/A N/A OFF
+2. These malfunctions will simulate a total loss of all feed water and reaching the Bleed and Feed criteria of 3 SGs <
+20% WR levels IAW FRHS-1. ALTERNATE PATH: 2PR2 will fail to open requiring the use of Rx Head Vent valves.
+SPECIAL INSTRUCTIONS
+1. ENSURE four (4) Reactor Head Vent keys are provided to the evaluator.
+2. Extra Instructor to respond to alarms.
+
+--- PAGE 167 ---
+INITIAL CONDITIONS
+• Unit 2 was manually tripped at 90% power due to elevated main turbine vibrations IAW S2.OP-AB.TL-0001.
+• An inadvertent feedwater isolation actuation occurred resulting in the loss of all main feedwater.
+• Loss of all AFW flow occurred when all AFW pumps tripped.
+• The crew has entered 2-EOP-FRHS-1 due to valid RED Path on Heat Sink CFST based on all SG NR levels < 9%
+and AFW flow < 22E4 lbm/hr.
+• Plant conditions have continued to deteriorate and three (3) steam generator Wide Range levels are now
+less than 20%.
+• MSPI AFW pump failed to start.
+• The CRS is implementing the CAS action to Initiate Bleed and Feed.
+INITIATING CUE
+• You are the Reactor Operator.
+• The CRS has directed you to Initiate Bleed and Feed starting at Step 11 IAW 2-EOP-FRHS-1, Response to Loss of
+Secondary Heat Sink.
+• Your evaluator will respond to all alarms not related to your task.
+
+--- PAGE 168 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has actuated Safety Injection, opened one Pressurizer PORV,
+and opened 2RC40 - 43 RCS head vent valves IAW steps 11, 13, and 14 of 2-EOP-FRHS-1
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 169 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: Provide candidate MARKED UP sheet of 2-EOP-FRHS-1.
+Examiners Note: None
+Comments:
+C11-1 CAUTION Operator reads the Caution and
+Steps 11 thru 14 Must Be Performed continues on.
+Quickly in order to establish RCS Heat
+Removal by RCS Bleed and Feed.
+11 Actuate Both trains of SI Operator initiates SI on both Trains by
+*
+inserting key and turning switch
+clockwise until the SI Operate bezel
+illuminates and the SI Reset bezel
+extinguishes.
+Cue:
+Examiners Note: Operator only needs to initiate SI on one Train.
+Comments:
+12 Is centrifugal Charging Pump flow YES. Operator reports BIT flow is
+indicated on SI systems Charging flow established by indication of flow on
+meter Charging flowmeter. (During validations
+flow was about 270 gpm)
+Cue:
+Examiners Note:
+Comments:
+12 Are all SI pumps Running YES. Operator reports that both SI
+Cont’d pumps are running by START PBs
+illuminated Red.
+
+--- PAGE 170 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Cue:
+Examiners Note:
+Comments:
+13 Is power available to BOTH PZR PORV stop Yes operator reports power is available
+valves to both Stop valves
+Cue:
+Examiners Note:
+Comments:
+13 Are ALL PZR PORV Stop Valves OPEN Operator reports that both PZR PORV
+Cont’d Stop Valves are OPEN as indicated by
+2PR6 and 2PR7 OPEN bezels illuminated.
+Cue:
+Examiners Note:
+Comments:
+ALTERNATE PATH STARTS HERE
+13 Open ALL PZR PORVs Operator places both PZR PORVs in
+*
+Cont’d Manual and depresses OPEN PBs for
+2PR1 and 2PR2.
+Operator reports that 2PR2 will NOT
+OPEN.
+Cue:
+Examiners Note: The PZR PORVS may be cycling during this time. The operator should determine that both PORVs
+are required to be fully open in Manual and maintained open and not credit auto operation.
+
+--- PAGE 171 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Comments:
+14 Are ALL PZR PORVs Open NO. Operator reports that 2PR2 will
+NOT OPEN.
+Cue:
+Examiners Note:
+Comments:
+14 Open 2RC40 Thru 2RC43 (Reactor Head At the 2RP2 backpanel, Operator obtains
+*
+Cont’d Vents) keys and inserts key into each keyswitch
+one at a time and turns clockwise until
+the OPEN indicator illuminates.
+Cue:
+Examiners Note: Lead Evaluator needs to provide the four (4) keys to the Operator.
+Comments:
+Terminating Cue JPM COMPLETE
+RECORD JPM Stop Time: ____________
+
+--- PAGE 172 ---
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: 21-01 NRC Sim-d Revision No.: 07
+Task Title: Initiate Bleed and Feed Using Reactor Head Vents
+Task No.: 1150290501 Source:
+Bank X New Mod
+System: 002 Reactor Coolant System (SF4P)
+K/A Number A2.04 Ability to (a) predict the impacts of the following on the Reactor Coolant System
+/ Description: and (b) based on those predictions, use procedures to correct, control, or mitigate
+the consequences of those abnormal operations: Loss of heat sinks
+K/A Rating RO 4.5 SRO 4.5
+Task Applicability: SRO Only RO/SRO X AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes X No
+Estimated Time to Complete: 8 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom Simulator X In-Plant RCA
+Required Materials: 2-EOP-FRHS-1
+Reference(s): 2-EOP-FRHS-1
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 173 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+• Unit 2 was manually tripped at 90% power due to elevated main turbine vibrations IAW S2.OP-AB.TL-0001.
+• An inadvertent feedwater isolation actuation occurred resulting in the loss of all main feedwater.
+• Loss of all AFW flow occurred when all AFW pumps tripped.
+• The crew has entered 2-EOP-FRHS-1 due to valid RED Path on Heat Sink CFST based on all SG NR levels < 9%
+and AFW flow < 22E4 lbm/hr.
+• Plant conditions have continued to deteriorate and three (3) steam generator Wide Range levels are now
+less than 20%.
+• MSPI AFW pump failed to start.
+• The CRS is implementing the CAS action to Initiate Bleed and Feed.
+INITIATING CUE
+• You are the Reactor Operator.
+• The CRS has directed you to Initiate Bleed and Feed starting at Step 11 IAW 2-EOP-FRHS-1, Response to Loss of
+Secondary Heat Sink.
+• Your evaluator will respond to all alarms not related to your task.
+============================================================
+JPM: sim-e (Pages 174-186)
+============================================================
+
+--- PAGE 174 ---
+PSEG Nuclear LLC
+Job Performance Measure
+Establish FW flow IAW EOP-FRHS 1 using a Condensate Pump
+JPM Number: NRC SIM-e
+Revision Number: 01
+Date: 01/10/23
+Developed By: R. Chan Date: 1/10/23
+Instructor
+Validated By: E. Gallagher Date: 1/10/23
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 1/19/23
+Operations Representative
+Approved By: M. Wadusky Date: 1/19/23
+Training Department (Print/Sign)
+
+--- PAGE 175 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 8/19/22 New JPM
+01 1/10/23 Incorporated NRC comments, Added examiners note on pg. 9 and modified estimated JPM
+time to 15 minutes on pg. 12.
+
+--- PAGE 176 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+EG 1. Task description and number, JPM description and number are identified.
+EG 2. Knowledge and Abilities (K/A) references are included.
+EG 3. Performance location specified. (in-plant, control room, or simulator)
+EG 4. Initial setup conditions are identified.
+EG 5. Initiating and terminating cues are properly identified.
+EG 6. Task standards identified and verified by SME review.
+EG 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+EG 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) 2-EOP-FRHS-1 rev 42 Date Checked: 11/21/22
+EG 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+NA 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+Ed Gallagher 11/21/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 177 ---
+SIMULATOR SETUP INSTUCTIONS
+1. IC-254
+Malfunctions
+MALF ID Description Delay Initial Ramp Trigger Severity
+# Time Value Time
+BF0105A 21 STM Gen Feed Pump trip N/A N/A N/A N/A TRUE
+BF0105A 22 STM Gen Feed Pump trip N/A N/A N/A N/A TRUE
+AF0183 21-23 AFW pump trips N/A N/A N/A N/A TRUE
+AF0181A
+&B
+Remotes
+ID # Description Delay Initial Ramp Trigger Condition/
+Time Value Time Severity
+BF01A 21 through 24 BF19s and 40s N/A -1 30s RT-1 100
+through through
+BF08A 8
+SPECIAL INSTRUCTIONS
+1. FRHS-1 EOP
+
+--- PAGE 178 ---
+INITIAL CONDITIONS
+• Salem Unit 2 is in Mode 3.
+• No SGFP’s or AFW pumps are available.
+• Actions are being implemented IAW 2-EOP-FRHS-1.
+• The crew has completed actions through step 7.1
+INITIATING CUE
+• CRS directs you to continue performing actions of 2-EOP-FRHS-1 at Note 7-2
+
+--- PAGE 179 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has selected and depressurized a steam generator using the
+steam dumps IAW step 7.3 and 7.4 of 2-EOP-FRHS-1, established flow with a condensate pump and places
+steam dumps in auto to stabilize pressure less than 575 psig, IAW continuous action step 7.2 of 2-EOP-FRHS-1.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+∗
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be sued to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps I this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 180 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Note 21 AND 23 SGS SHOULD BE STEAMED Candidate should pick 22 or 24 to
+7-2 LAST TO MAXIMIZE AVAILABILITY OF A depressurize
+STEAM SUPPLY FOR 23 AFW PP
+Cue:
+Examiners Note:
+Comments:
+Note THE FOLLOWING STEPS MAY RESULT IN A Acknowledge note
+7-3 LOW STEAMLINE DIFF PRESS SI
+Cue:
+Examiners Note:
+Comments:
+7.2 WHEN SELECTED SG PRESSURE IS LESS Reads CAS
+THAN 575 PSIG AND SELECTED SG WIDE
+RANGE LEVEL IS RISING.
+THEN STABILIZE SELECTED SG IS LESS
+THAN 575 PSIG.
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 181 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+7.2 SELECT ONLY ONE SG FOR Chooses 22 or 24
+Contd DEPRESSURIZATION TO LESS THAN 575
+PSIG
+Cue:
+Examiners Note:
+Comments:
+7.3 ARE CONDENSER STEAM DUMPS Should answer yes path
+AVAILABLE
+Cue:
+Examiners Note:
+Comments:
+7.3 ACTUATE MAIN STEAM ISOLATION FOR Actuate MSLI for 21&23 and 22or 24 MS
+*
+contd ALL LOOPS EXCEPT SELECTED SG Lines
+Cue:
+Examiners Note:
+Comments:
+7.3 PLACE STEAM DUMPS IN MANUAL
+*
+contd
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 182 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+7.3 ADJUST STEAM PRESSURE VALVE
+contd DEMAND TO 0%
+Cue:
+Examiners Note:
+Comments:
+7.3 PLACE STEAM DUMPS IN MS PRESS
+*
+contd CONTROL
+Cue:
+Examiners Note: Should be at 0 valve demand for MS pressure control
+Comments:
+7.4 WHEN RCS TAVG LOW LOW IS REACHED Bypasses if/when reqd
+*
+THEN DEPRESS BYPASS TAVG
+PUSHBUTTON
+Cue:
+Examiners Note:
+Comments:
+7.4 ADJUST STEAM PRESSURE VALVE Adjusts to at least 25%
+*
+contd DEMAND TO ESTABLISH MAX RATE
+Cue:
+Examiners Note: The PO could adjust the steam dump demand to above 25% until Tavg lowers to less than 543 F (P-
+12) and steam dumps close, then after Tavg is Bypassed, only the Group 1 cooldown dump valves will be available
+which will limit the depressurization rate to less than 25% steam dump demand.
+Comments:
+
+--- PAGE 183 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+7.4 SEND OPERATOR TO OPEN SELECTED Dispatches operator
+*
+contd BF40 Main Feed Bypass Valve
+Cue: when asked tell candidates operator being dispatched
+Examiners Note: Insert RT for valve selected
+Comments:
+7.4 OPEN SELECTED BF13 Feed Water Opens BF13 Feed Water Isolation Valve
+*
+contd Isolation Valve
+Cue:
+Examiners Note:
+Comments:
+7.4 Is selected BF13 Feed Water Isolation Will be yes but if they do not push
+contd Valve OPEN button properly may dispatch operator
+if reqd.
+Cue:
+Examiners Note:
+Comments:
+7.4 Release selected BF22 Feed Line Stop Verifies open
+contd Check valve
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 184 ---
+7.4 Open 21 and 22 CN48 Feed Pump Bypass Opens valves
+contd valves
+Cue:
+Examiners Note:
+Comments:
+7.4 Close 21&22CN32 Feed Pump Suction Performs this task
+contd Valves
+Cue:
+Examiners Note:
+Comments:
+7.5 IS CONDENSATE FLOW ESTABLISHED TO When YES AND WR LEVEL IS RISING
+*
+ANY SG then Steam dumps should be placed in
+auto
+Cue: Once Steam dumps in auto and WR level rising state JPM complete.
+Examiners Note:
+Comments:
+RECORD JPM Stop Time: ____________
+
+--- PAGE 185 ---
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: NRC SIM-e Revision No.: 01
+Task Title: Establish FW flow IN FRHS using Condensate pump
+Task No.: N1150290501
+System: Radiation Control
+041 Ability to manually operate and/or monitor in the control room:
+K/A Number
+A4.02 Steam dump cooldown valves
+/ Description:
+K/A Rating RO 3.6 SRO 3.6
+Task Applicability: SRO Only RO/SRO X AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Actual Time Used: Minutes
+Estimated Time to Complete: 15 Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom Simulator X In-Plant
+Required Materials: EOP-FRHS-1
+Reference(s): EOP-FRHS-1
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 186 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+• Salem Unit 2 is in Mode 3.
+• No SGFP’s or AFW pumps are available.
+• Actions are being implemented IAW 2-EOP-FRHS-1.
+• The crew has completed actions through step 7.1
+INITIATING CUE
+• CRS directs you to continue performing actions of 2-EOP-FRHS-1 at Note 7.2
+============================================================
+JPM: sim-f (Pages 187-200)
+============================================================
+
+--- PAGE 187 ---
+PSEG Nuclear LLC
+Job Performance Measure
+Perform 22 CFCU surveillance test IAW S2.OP-ST.CBV-0003
+JPM Number: 21-01 NRC Sim-f
+Revision Number: 01
+Date: 07/26/2022
+Developed By: K. Hantho Date: 7/26/22
+Instructor
+Validated By: Westlake/Militti Date: 8/19/22
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 11/29/22
+Operations Representative
+Approved By: M. Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 188 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+01 07/26/22 Reformat JPM, update procedure rev and task standard after NUREG revision and validation
+performed comments incorporated.
+
+--- PAGE 189 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) S2.OP-ST.CBV-0003 Rev. 20 Date Checked: 10/12/22
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+NA 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+R. Chan 1-18-23
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 190 ---
+SIMULATOR SETUP INSTUCTIONS
+ RESET simulator to IC-255 and VERIFY the below events on the Instructor Station.
+ Salem Unit 2 is at 100% power.
+ No major equipment are out of service and no Tech Specs are active.
+ The following malfunctions, overrides, and remotes were required to develop this IC.
+1. Verify Malfunctions:
+MALF Description Delay Initial Ramp Trigger Severity
+ID # Time Value Time
+01 VL0570, 22SW223 fails to position 00:00:15 N/A N/A ET-1 89
+2. Verify Overrides / Remotes:
+ID # Description Delay Initial Ramp Trigger Condition
+Time Value Time / Severity
+3. Verify Event Triggers:
+ET# Description Command
+1 KAD06PBR, 22 CFCU low speed pushbutton
+SPECIAL INSTRUCTIONS
+1. Provide operator marked up copy of S2.OP-ST.CBV-0003 for 22 CFCU.
+
+--- PAGE 191 ---
+INITIAL CONDITIONS
+• Unit 2 is at 100% power.
+• No major equipment out of service and no active Tech Specs are in effect.
+INITIATING CUE
+• You are the Reactor Operator.
+• The CRS has directed you to PERFORM a scheduled surveillance test on 22 CFCU IAW S2.OP-ST.CBV-0003,
+Containment Systems – Cooling Systems.
+• All Prerequisites are completed SAT and all required M&TE are installed in the field.
+• A field NEO is standing by to provide SW header differential pressure when directed.
+• Notify CRS of test results.
+
+--- PAGE 192 ---
+TASK STANDARD:
+This task is satisfactorily met when the applicant has placed the CFCU in the required test condition IAW step 4.1.2 of
+S2.OP-SO.CBV-0001, obtained the required test data, and determines 22 CFCU Test Result is UNSAT due to flow
+obtained being below the minimum flow for current delta P IAW S2.OP-ST.CBV-0003.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 194 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+3.0 PRECAUTIONS AND LIMITATIONS Operator reads and initials all P&Ls.
+3.4 After recording Differential Pressure Evaluator’s Note: Understanding P&L
+(DP) reading, select corresponding 3.4 is important to properly determining
+minimum flow value specified in Exhibit 1. which DP value to choose from Exhibit 1.
+• IF measured DP value is between DP
+values specified in Exhibit 1, THEN
+select minimum flow value for next
+higher DP value listed (e.g., if
+measured DP is 101 psid, use
+minimum flow required at 105 psid).
+Cue: Provide candidate MARKED UP surveillance procedure S2.OP-ST.CBV-0003.
+Examiners Note:
+Comments:
+EQUIPMENT/MATERIAL REQUIRED
+4.0
+Cue: Completed SAT by I&C Technicians.
+Examiners Note:
+Comments:
+5.1
+CFCU Operability and Service Water Flow
+Verification
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 195 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.1.1 PERFORM test on each Containment Fan
+Coil Unit required to be tested IAW the
+following instructions:
+Cue:
+Examiners Note:
+Comments:
+5.1.1.A ENSURE CFCU being tested is in LOW Operator places CFCU in LOW SPEED
+SPEED IAW S2.OP-SO.CBV-0001(Q), IAW S2.OP-SO.CBV-0001.
+Containment Ventilation Operation.
+Operator GOES TO S2.OP-SO.CBV-0001
+Cue:
+Examiners Note: These next steps are from S2.OP-SO.CBV-0001, Containment Ventilation Operation.
+Comments:
+5.1.2.A IF shifting CFCU(s) from High Speed to Operator depresses HIGH SPEED STOP
+*
+Low Speed, THEN for each CFCU to be bezel for 22 CFCU and verifies STOP
+shifted: bezel illuminates.
+PRESS FAN HIGH SPEED STOP bezel.
+Cue:
+Examiners Note: Steps 5.1.2B and 5.1.2C should be coordinated for 25 second delay prior to energizing slow speed
+windings.
+Comments:
+5.1.2.B
+* ENSURE FAN STOP bezel is Operator verifies HIGH SPEED
+illuminated. STOP bezel is illuminated.
+
+--- PAGE 196 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Cue:
+Examiners Note:
+Comments:
+5.1.2.C Operator waits 25 seconds from when
+* When 25 seconds have elapsed from
+HIGH SPEED STOP bezel was depressed.
+pressing HIGH SPEED STOP bezel, PRESS
+FAN LOW SPEED START bezel.
+Operator depresses LOW SPEED START
+bezel for 22 CFCU and verifies START
+bezel illuminates.
+Cue:
+Examiners Note:
+Simulator Operator: ENSURE ET-1 is TRUE when low speed start pushbutton is depressed. This will insert MALF:
+VL0570, 22SW223 fails to position set at 89.
+Comments:
+5.1.2.D ENSURE following dampers are in Operator verifies the following for 22
+indicated positions: CFCU:
+ ROUGH FLTR DAMPER CLOSED  ROUGH FLT DAMPER CLOSED
+ HEPA INLET DAMPER OPEN bezel extinguished.
+ HEPA OUTLET DAMPER OPEN  HEPA INLET DAMPER OPEN
+bezel illuminated.
+ HEPA OUTLET DAMPER OPEN
+bezel illuminated.
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 197 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.1.2.E IF Service Water flow is less than 1465
+Operator determines that SW flow is >
+gm, THEN:
+1465 gpm and marks step N/A and
+continues on.
+1. STOP the CFCU
+2. REFER to S2.OP-SO.SW-0005, SW
+System Operability Guidelines
+Cue:
+Examiners Note:
+Comments:
+5.1.2.F ENSURE Service Water flow greater than
+Operator verifies that SW flow is > 1465
+or equal to 1465 gpm.
+gpm.
+Cue:
+Examiners Note: Operator returns to S2.OP-ST.CBV-0003
+Comments:
+5.1.1.B RECORD Start Time in applicable
+Operator records START time.
+Attachment(s), Section 3.0, for CFCU
+being tested.
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 198 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+ALTERNATE PATH STARTS HERE
+4.1.11.3 WHEN at least 15 minutes has elapsed, Operator records STOP time.
+*
+THEN RECORD the following in applicable
+Attachment, Section 3.0, Operator records SW flow on 22 CFCU
+for CFCU being tested: (1785 +/- 5 gpm)
+• Stop Time Operator contacts field NEO and
+Records SW header DP of 106 psi
+• Cooling Water Flow Rate (gpm)
+Operator determines that 23, 24, and 25
+• IF testing 21 OR 22 CFCU, THEN CFCUs are not being tested.
+RECORD 21 SW HDR DP.
+Operator records Test Results as
+• IF testing 23 CFCU, THEN RECORD UNSAT. 22 CFCU is Inoperable based on
+both 21 SW HDR DP AND 22 SW HDR Cooling Water Flow Rate is less than the
+DP (Refer to Step 3.5). Minimum Flow Rate (1811 gpm)
+required in Exhibit 1 selecting a SW DP
+• IF testing 24 OR 25 CFCU, THEN of 110 psi (refer to P&L 3.4).
+RECORD 22 SW HDR DP.
+P&L 3.3 requires CFCU SW flow rate ≥
+RECORD Test Results by initialing the SAT
+1465 gpm AND ≥ Min Flow Rate
+OR UNSAT column IAW Acceptance
+specified in Exhibit 1 to be Operable.
+Criteria stated in the attachment.
+See Answer Key for completed
+Attachment 2, Section 3.0
+Cue #1: Inform operator that 15 minutes have elapsed.
+Cue #2: When field operator is contacted; report 21 SW Header DP is reading 106 psi.
+Examiners Note:
+Terminate the JPM when the operator Records Test Results as SAT or UNSAT.
+Comments:
+Terminating Cue JPM COMPLETE
+RECORD JPM Stop Time: ____________
+
+--- PAGE 199 ---
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: 21-01 NRC Sim-f Revision No.: 01
+Perform 22 CFCU Surveillance Test IAW S2.OP-ST.CBV-0003
+Task Title:
+Task No.: N0220130201 Source:
+Bank X New Mod
+System: 022 Containment Cooling System (SF5)
+K/A Number A1.04 Ability to predict and/or monitor changes in parameters associated with
+/ Description: operation of the Containment Cooling System, including:
+Cooling water flow
+K/A Rating RO 3.3 SRO N/A
+Task Applicability: SRO Only RO/SRO X AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 10 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom Simulator X In-Plant RCA
+Required Materials: S2.OP-ST.CBV-0003
+Reference(s): S2.OP-ST.CBV-0003 S2.OP-SO.CBV-0001
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 200 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+• Unit 2 is at 100% power.
+• No major equipment out of service and no active Tech Specs are in effect.
+INITIATING CUE
+• You are the Reactor Operator.
+• The CRS has directed you to PERFORM a scheduled surveillance test on 22 CFCU IAW S2.OP-ST.CBV-0003,
+Containment Systems – Cooling Systems.
+• All Prerequisites are completed SAT and all required M&TE are installed in the field.
+• A field NEO is standing by to provide SW header differential pressure when directed.
+• Notify CRS of test results.
+============================================================
+JPM: sim-g (Pages 201-213)
+============================================================
+
+--- PAGE 201 ---
+PSEG Nuclear LLC
+Job Performance Measure
+Respond to a failed high RCS T-avg channel IAW S2.OP-AB.ROD-0003
+JPM Number: 21-01 NRC Sim-g
+Revision Number: 00
+Date: 10/12/22
+Developed By: K. Hantho Date: 10/12/22
+Instructor
+Validated By: Gallagher/Saulsbery Date: 11/21/22
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 11/29/22
+Operations Representative
+Approved By: M. Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 202 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 10/12/22 New JPM
+
+--- PAGE 203 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+EG 1. Task description and number, JPM description and number are identified.
+EG 2. Knowledge and Abilities (K/A) references are included.
+EG 3. Performance location specified. (in-plant, control room, or simulator)
+EG 4. Initial setup conditions are identified.
+EG 5. Initiating and terminating cues are properly identified.
+EG 6. Task standards identified and verified by SME review.
+EG 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+EG 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) S2.OP-AB.ROD-0003 R23 Date Checked: 10/12/22
+EG 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+NA 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+Ed Gallagher 11-21-22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 204 ---
+SIMULATOR SETUP INSTUCTIONS
+ RESET simulator to IC-256 and VERIFY the below events on the Instructor Station.
+ Salem Unit 2 is at 100%.
+ No major equipment are out of service and no Tech Specs are active.
+ The following malfunctions, overrides, and remotes were required to develop this IC.
+MALF ID Description Delay Initial Ramp Trigger Severity
+# Time Value Time
+RC0014a 21 HOT LEG RTD AVG SUMMATOR FAILS NA NA NA RT-1 630
+SPECIAL INSTRUCTIONS
+1. None.
+
+--- PAGE 205 ---
+INITIAL CONDITIONS
+• Salem unit 2 is at 100%
+• No major equipment is out of service and no Tech Specs are active.
+INITIATING CUE
+• You are the Reactor Operator.
+• Respond to all alarms and indications.
+• Your evaluator will respond to all alarms not related to your task.
+
+--- PAGE 206 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has taken the Rod control system to manual IAW step 3.1 of S2.OP-
+AB.ROD-0003, restored Tavg IAW step 3.5 of S2.OP-AB.ROD-0003, stabilized PZR level and defeated the failed Tavg
+channel IAW step 3.10 thru 3.12 of S2.OP-AB.ROD-0003.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 207 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: Insert RT-1
+Examiners Note: Operator recognizes unwarranted rod motion and takes rod control to manual
+Comments:
+N/A
+* Operator attempts to identify failure, and Operator verifies no runback in progress
+will take action to stop rod insertion if not and takes rods to manual.
+evident immediately by verifying no
+runback in progress
+Cue:
+Examiners Note:
+Comments:
+3.1
+Enter S2.OP-AB.ROD-0003 and Place the Enters AB.ROD-3 and Places the Rod
+rod bank selector switch in Manual control bank selector switch in Manual.
+Cue:
+Examiners Note:
+Comments:
+3.2
+Did rod motion stop Operator states Yes and continues to
+step 3.4
+Cue:
+Examiners Note:
+Comments:
+
+--- PAGE 208 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+ALTERNATE PATH STARTS HERE
+3.4 MONITOR Tavg for necessary adjustments Operator will initial and monitor T avg
+until the cause of the transient is known
+and the Plant is stable.
+Cue:
+Examiners Note:
+Comments:
+3.5 ADJUST Rods in manual to control Tavg Operator will verify within 1.5 and
+*
+within 1.5°F of T program. continue or adjust to with 1.5 ° F by
+avg
+(Attachment 1, Tavg Program VS % withdrawing rods and then move on.
+Reactor Power)
+Cue: If asked CRS directs you to restore Rods to ≤ 1 ° F
+Examiners Note: Tavg may be within 1.5°F depending on how quickly rods were placed in manual.
+Comments:
+3.6 Has a NIS channel Failed High? Operator verbalizes and initials NO and
+goes to step 3.8
+Cue :
+Examiners Note:
+Comments:
+3.8 STOP any dilution of the Reactor Coolant Operator verifies makeup system Out of
+System. service and states no dilution in progress
+Cue:
+Examiners Note:
+Comments:
+3.9 Has a Tavg channel failed high? Answers Yes and goes to step 3.10
+
+--- PAGE 209 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Cue:
+Examiners Note:
+Comments:
+3.10 RETURN Pressurizer level to program as Places Master flow controller or CV55 in
+follows: (Attachment 2, Pressurizer Level manual and adjusts to restore level to
+Program) program band
+___ A. PLACE the Charging System Master
+Flow Controller in MANUAL.
+___ B. ADJUST Charging System Master
+Flow Controller to restore Pressurizer
+level to program.
+Cue:
+Examiners Note: The PZR level will remain at 59% as the control signal is capped at the 100% value
+Comments:
+3.11 SELECT DEVIATION DEFEAT for the Selects deviation defeat on 2CC2 for
+*
+affected LOOP channel 1 Differential temperature. and
+at the following 2CC2 bezel section: average temperature.
+♦ REACTOR COOLANT DIFFERENTIAL
+TEMPERATURES
+Cue:
+Examiners Note:
+Comments:
+3.11 SELECT DEVIATION DEFEAT for the Selects deviation defeat on 2CC2 for
+*
+cont. affected LOOP channel 1 average temperature.
+at the following 2CC2 bezel section:
+
+--- PAGE 210 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+♦ REACTOR COOLANT AVERAGE
+TEMPERATURES
+Cue:
+Examiners Note:
+Comments:
+3.12 SELECT a valid Channel on the Recorder Selects recorder to Channel 2, 3 or 4 for
+*
+Select at the Control Console for the Differential temperature.
+following:
+♦ REACTOR COOLANT DIFFERENTIAL
+TEMPERATURES
+Cue:
+Examiners Note:
+Comments:
+3.12 SELECT a valid Channel on the Recorder Selects recorder to Channel 2, 3 or 4 for
+*
+cont. Select at the Control Console for the average temperature.
+following:
+♦ REACTOR COOLANT AVERAGE
+TEMPERATURES
+Cue:
+Examiners Note:
+Comments:
+3.13 When pressurizer level has been restored Verifies level is at program and returns
+to program, RETURN the Charging System charging master flow controller to Auto
+Master Flow Controller in AUTO.
+
+--- PAGE 211 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+Cue: If desired, may walkthrough remaining steps or provide cue that level has been returned to program
+Examiners Note: depending on level error this step may take a while to restore
+Comments:
+3.14 Are control rods above Rod Insertion Verifies Rods are above insertion limits
+Limits?
+Cue:
+Examiners Note:
+Comments:
+3.16 IF manual rod control is NOT required, Places rod control in Auto
+THEN PLACE the Rod Control System in
+automatic control.
+Cue: CRS directs rods restored to auto control
+Examiners Note: May restore the rods to the all rods out position before returning to AUTO
+Comments:
+Terminating Cue JPM COMPLETE
+
+--- PAGE 212 ---
+RECORD JPM Stop Time: ____________
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: 21-01 NRC Sim-g Revision No.: 00
+Respond to a failed high RCS T-avg channel and defeat the failed channel IAW
+Task Title: S2.OP-AB.ROD-0003
+Task No.: N1150090501 Source:
+Bank New X Mod
+System: 012 RPS Reactor Protection System
+K/A Number A4.05 Ability to manually operate and/or monitor in the control room:
+/ Description: Channel defeat controls
+K/A Rating RO 3.8 SRO N/A
+Task Applicability: SRO Only RO/SRO X AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 6 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom Simulator X In-Plant RCA
+Required Materials: S2.OP-AB.ROD-0003
+Reference(s): S2.OP-AB.ROD-0003
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 213 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+• Salem unit 2 is at 100%
+• No major equipment is out of service and no Tech Specs are active.
+INITIATING CUE
+• You are the Reactor Operator.
+• Respond to all alarms and indications.
+• Your evaluator will respond to all alarms not related to your task.
+============================================================
+JPM: sim-h (Pages 214-228)
+============================================================
+
+--- PAGE 214 ---
+PSEG Nuclear LLC
+Job Performance Measure
+PERFORM A CONTAINMENT PRESSURE RELIEF
+JPM Number: 21-01 NRC Sim-h
+Revision Number: 00
+Date: 07/26/2022
+Developed By: R. Chan Date: 7/26/22
+Instructor
+Validated By: M. Wilocx / J. DeLisle Date: 1/9/23
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 1/19/23
+Operations Representative
+Approved By: M. Wadusky Date:
+Training Department (Print/Sign)
+
+--- PAGE 215 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 7/26/22 Converted to new JPM template.
+
+--- PAGE 216 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+EG 1. Task description and number, JPM description and number are identified.
+EG 2. Knowledge and Abilities (K/A) references are included.
+EG 3. Performance location specified. (in-plant, control room, or simulator)
+EG 4. Initial setup conditions are identified.
+EG 5. Initiating and terminating cues are properly identified.
+EG 6. Task standards identified and verified by SME review.
+EG 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+EG 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) S2.OP-SO.CBV-0002 Rev. 18 Date Checked: 1/05/23
+S2.OP-AB.RAD-0001 Rev. 30
+S2.OP-AR.ZZ-0001 Rev. 60
+EG 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+EG 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+EG 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+Ed Gallagher 01-09-23
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 217 ---
+SIMULATOR SETUP INSTUCTIONS
+• RESET simulator to IC-257 and VERIFY the below events on the Instructor Station.
+• Salem Unit 2 is at 100% power.
+• No major equipment are out of service and no Tech Specs are active.
+• The following malfunctions, overrides, and remotes were required to develop this IC.
+MALF Description Delay Initial Ramp Trigger Final
+ID # Time Value Time Value
+01 VL0282 2VC6 fails to position(0-100%) N/A N/A N/A ET-1 100
+02 VL0283 2VC5 fails to position(0-100%) N/A N/A N/A ET-1 100
+03 RM0203C Process Rad mon 2R41A fails 20 sec Current 1 ET-3 300
+anywhere minute
+04 VL0284 2CBV36 fails to position(0-100%) 5 sec N/A N/A ET-3 100
+05 RC0002 RCS LEAK INTO CONTAINMENT N/A N/A N/A ET-3 2
+06 RM0209C PROCESS RAD MON 2R31 FAILS ANY N/A N/A N/A 1.00E+7
+REM Description Delay Init Val Ramp Trigger Final
+01 RC07A RCS Activity Factor N/A N/A N/A N/A 20
+OVR Description Assigned value
+01 AB14 A1 LO ON
+ET # Description Assigned malfunction
+1 KAB13PNR//2VC6 CNTMNT pressure vacuum reli VL0282
+2 KAB14PNR//2VC5 CNTMNT pressure vacuum reli VL0283
+3 KAB14ANR//CNTMNT pressure relief damper open RM0203C
+4 KAB13TCR//2VC6 CNTMNT pressure vacuum reli DMF VL0282
+Optional command DMF VL0282
+5 KAB14TCR//2VC5 CNTMNT pressure vacuum reli DMF VL0283
+optional command DMF VL0283
+6 KAB14DCR//CNTMT pressure relief damp clos DMF VL0284
+7 KAB14DCR//CNTMT pressure relief damp clos DOR QAB14ARR
+
+--- PAGE 218 ---
+SPECIAL INSTRUCTIONS
+1. S2.OP-SO.CBV-0002 is MARKED UP in the simulator book with all sections completed up to section 5.2.
+
+--- PAGE 219 ---
+INITIAL CONDITIONS
+ Salem Unit 2 is at 100% power
+ Preparations to perform a containment pressure relief per Section 5.1 of S2.OP-SO.CBV-0002, Containment
+Pressure – Vacuum Relief System Operation, are complete.
+INITIATING CUE
+The CRS directs you to perform a containment pressure relief per Section 5.2 of S2.OP-SO.CBV-0002.
+
+--- PAGE 220 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has placed containment pressure relief in service per step
+5.2.3.B of S2.OP-SO.CBV-0002, and upon a high radiation alarm, manually closes 2VC5 and 2VC6 valves to isolate
+the radiological release from containment per step 5.2.5 of S2.OP-SO.CBV-0002 OR per Attachment 1 of S2.OP-
+AB.RAD-0001.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 221 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: MARKED UP copy of S2.OP-SO.CBV-0002 using the controlled copy in the simulator.
+Examiners Note: None.
+Comments: N/A
+5.2.2 RECORD the following Release Data on Operator records the required data.
+Attachment 2, Section 1.0:
+♦ Pressure Relief Start
+♦ Initial Containment Pressure
+♦ Initial reading on available radiation
+monitors 2R41D (preferred) and
+2R12A
+Cue: None.
+Examiners Note: None
+Comments:
+5.2.3.A INITIATE Containment Relief as follows: Operator can setup a trend using the
+Plant Computer OR monitor the
+MONITOR available radiation monitors Radiation Monitors on 2RP1.
+2R41D (preferred) and 2R12A.
+Cue: None.
+Examiners Note: 2R12A and 2R41D are located on 2RP1 Panel.
+Comments:
+
+--- PAGE 222 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.2.3.B IF Containment pressure is <0.5 psig, Operator confirms containment
+*
+THEN: pressure is less than 0.5 psig by
+reading the containment pressure
+1. OPEN 2VC6, ISOL VLV indicators on 2CC1.
+2. OPEN 2VC5, ISOL VLV
+3. OPEN PRESSURE RELIEF DAMPER Operator depresses the OPEN bezels
+for 2VC6, 2VC5, and the PRESSURE
+RELIEF DAMPER on 2CC1 and verifies
+the Red OPEN bezels are LIT.
+Cue: None
+Examiners Note: None
+Comments:
+5.2.3.C Step is N/A Pressure is <0.5
+Cue: None.
+Examiners Note: None
+Comments:
+5.2.4 RECORD time 2VC5 and 2VC6 are
+OPENED in Control Room Narrative Log
+IAW OP-SA-470-1001, CYCLIC Data
+Monitoring Program.
+Cue: The extra NCO will record the open time for 2VC5 and 2VC6.
+Examiners Note: None
+Comments:
+
+--- PAGE 223 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+ALTERNATE PATH STARTS HERE
+Cue: SIMULATOR OPERATOR ensure ET-3 is true and MALF 03 RM0203C is ramping in.
+This will cause the 2R41D Rad Monitor channel to go into Alarm, actuate OHA A-6 RMS HI RAD OR TRBL, previous
+malfunctions have been enabled to prevent the automatic closures of the pressure relief dampers, 2VC5 and 2VC6
+valves on a high radiation alarm.
+Examiners Note: The candidate may take the action per step 5.2.5 of S2.OP-SO.CBV-0002, OR refer to the OHA A-6
+and then take the actions per S2.OP-AB.RAD-0001, Abnormal Radiation, to manually close the dampers per
+Attachment 1 step 10, both paths are acceptable.
+Comments:
+ACTIONS PER S2.OP-SO.CBV-0002
+5.2.5 When Containment pressure decreases Operator depresses the CLOSE bezel
+*
+to required value: pushbuttons for PRESSURE RELIEF
+DAMPER, 2VC6, and 2VC5 and verifies
+A. CLOSE PRESSURE RELIEF DAMPER the Green bezel is LIT.
+B. CLOSE 2VC6, ISOL VLV
+C. CLOSE 2VC5, ISOL VLV
+Cue: None
+Examiners Note: The candidate is required to close 2VC5 and 2VC6 to satisfy the Task Standard.
+Comments:
+ACTIONS PER S2.OP-AB.RAD-0001
+3.1 DETERMINE affected Radiation monitor. Operator determines 2R41D is the
+affected monitor
+Cue: None
+Examiners Note: None
+Comments:
+
+--- PAGE 224 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+3.2 Is the alarm, warning, or rising indication Operator determines the alarm is
+valid? (EVALUATE the following): VALID.
+♦ Chemistry Sampling
+♦ Rising activity on related Radiation
+Monitors
+♦ Maintenance activities in vicinity of
+radiation detector
+♦ Transfer of radioactive resins or
+other materials in affected area
+♦ No indication of failure or fault on
+affected Radiation Monitor
+♦ Radioactive release from Salem or
+Hope Creek
+Cue: IF operator questions if alarm is VALID or Not, THEN state: CRS directs continuing with procedure since Rad
+Monitor does not appear to be failed.
+Examiners Note: None
+Comments:
+3.3 ANNOUNCE the following on Plant PA Operator makes page announcement
+system:
+♦ Affected Radiation Monitor number
+and name
+♦ Location of Radiation Monitor area
+with elevated indication
+Cue: None
+Examiners Note: None
+Comments:
+
+--- PAGE 225 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+3.4 IF a release to the environment is in Operator notifies Rad Pro of actions.
+progress, THEN DIRECT Shift Radiation
+Protection Technician to complete and
+provide Page 2 of the Station Status
+Checklist (SSCL) for release rate
+determination.
+Cue: CRS will direct Radiation Protection to perform Station Status Checklist.
+Examiners Note: None
+Comments:
+3.5 NOTIFY SM/CRS to REFER TO Event Notifies CRS of required actions.
+Classification Guide,
+ODCM and Technical Specifications.
+Cue: CRS will refer to ECG, Tech Specs, and ODCM.
+Examiners Note: None
+Comments:
+3.6 INITIATE the applicable attachment for Operator initiates Attachment 1 Step
+affected Radiation Monitor: 10 based on 2R41D in alarm.
+Cue: None.
+Examiners Note: None
+Comments:
+10.0 IF 2R41D, Plant Vent Release Rate is the
+affected monitor, THEN:
+Cue: None
+Examiners Note: None
+Comments:
+
+--- PAGE 226 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+10.1 ENSURE 2VC1, 2VC4, 2VC5 AND 2VC6 Operator depresses the CLOSE bezel
+*
+are CLOSED. pushbuttons for 2VC5 and 2VC6 and
+verifies Green bezel is LIT.
+Cue: None
+Examiners Note: Only 2VC5 and 2VC6 are required to be CLOSED to satisfy the Task Standard.
+Comments:
+Terminating Cue JPM COMPLETE
+RECORD JPM Stop Time: ____________
+
+--- PAGE 227 ---
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: 21-01 NRC Sim-h Revision No.: 00
+Task Title: Perform a Containment Pressure Relief
+Task No.: N0220080101 Source:
+Bank New X Mod
+System: 029 Containment Purge System (SF8)
+K/A Number A2.02 Ability to (a) predict the impacts of the following on the Containment Purge
+/ Description: System and (b) based on those predictions,, use procedures to correct, control, or
+mitigate the consequences of those abnormal operations: Adverse environmental
+conditions affecting radioactive release
+K/A Rating RO 3.0 SRO 3.0
+Task Applicability: SRO Only RO/SRO X AO/RO/SRO Other
+Time-Critical: Yes No X Alternate Path: Yes X No
+Estimated Time to Complete: 10 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance Actual Performance X
+Location: Classroom Simulator X In-Plant RCA
+Required Materials: S2.OP-SO.CBV-0002
+Reference(s): S2.OP-SO.CBV-0002 S2.OP-AB.RAD-0001 S2.OP-AR.ZZ-0001
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 228 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+ Salem Unit 2 is at 100% power
+ Preparations to perform a containment pressure relief per Section 5.1 of S2.OP-SO.CBV-0002, Containment
+Pressure – Vacuum Relief System Operation, are complete.
+INITIATING CUE
+ The CRS directs you to perform a containment pressure relief per Section 5.2 of S2.OP-SO.CBV-0002.
+============================================================
+JPM: ip-i (Pages 229-242)
+============================================================
+
+--- PAGE 229 ---
+PSEG Nuclear LLC
+Job Performance Measure
+Start the SBO Air Compressor IAW AB.LOOP-1
+JPM Number: 21-01 NRC IP-i
+Revision Number: 1
+Date: 10/14/2022
+Developed By: K. Hantho Date: 10/14/22
+Instructor
+Validated By: N/A (see revision comment) Date: 11/28/22
+SME or Instructor
+Reviewed By: M. Winkelspecht Date: 11/29/22
+Operations Representative
+Approved By: M. Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 230 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+01 11/28/22 Converted to new JPM template. No validation required since previously used during annual
+exams and procedure has not changed since last use.
+
+--- PAGE 231 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+KH 1. Task description and number, JPM description and number are identified.
+KH 2. Knowledge and Abilities (K/A) references are included.
+KH 3. Performance location specified. (in-plant, control room, or simulator)
+KH 4. Initial setup conditions are identified.
+KH 5. Initiating and terminating cues are properly identified.
+KH 6. Task standards identified and verified by SME review.
+KH 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+KH 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) SC.OP-SO.CA-0001 Rev. 14 Date Checked: 1/05/23
+9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+K. Hantho 10-14-22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 232 ---
+SIMULATOR SETUP INSTUCTIONS
+1. None, this is an In-plant JPM.
+SPECIAL INSTRUCTIONS
+ This JPM is NOT located inside the RCA.
+ Need L-3 key to unlock SBO Compressor Building
+
+--- PAGE 233 ---
+INITIAL CONDITIONS
+• Both Salem Units have tripped due to a loss of off-site power. Equipment problems have resulted in NO
+Emergency Control Air Compressors (ECACs) running.
+INITIATING CUE
+ The Unit 2 CRS has directed you to start the Station Blackout Compressor (SBO) IAW SC.OP-SO.CA-0001, SBO
+Diesel Control Air Compressor, starting with Step 5.1.3.
+ The Component Off Normal and Off Normal Tagged review has been performed SAT.
+ It is NOT the summer operating period.
+ The inspection covers have already been removed, Step 5.1.1 was performed SAT, and the inspection covers
+replaced IAW Step 5.1.2
+
+--- PAGE 234 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant starts the SBO Diesel Control Air Compressor IAW step
+5.1.10 of SC.OP-SO.CA-0001, aligns the discharge to the air headers IAW steps 5.1.13 thru 5.1.15 of SC.OP-
+SO.CA-0001, and loads the compressor IAW step 5.1.16 of SC.OP-SO.CA-0001.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 235 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue: READ TO APPLICANT: No plant controls or equipment are to be operated during the performance of this JPM.
+All actions taken by the examinee should be clearly demonstrated and verbalized to the evaluator.
+Examiners Note: The candidate may wish to review all P&Ls prior to start.
+Comments: N/A
+N/A Provide marked up copy of the SC.OP- Operator reviews and signs Precautions N/A
+SO.CA-0001, SBO Diesel Control Air and Limitations.
+Compressor with Prerequisites signed off.
+Additionally, Step 5.1.1 for removing Operator must address obtaining
+Inspection Covers will be previously hearing protection per P&L 3.1
+completed, as will Step 5.1.2 to re-install
+inspection covers. All other P&Ls require no action other
+than reading and initialing with the
+exception of P&L 3.10 is verified at the
+SBO.
+Cue:
+Examiners Note: None
+Comments:
+5.1.3 OPEN both Engine intake louvers (located Locates louvers and demonstrates how
+outside building on west wall.) to open.
+Cue: After locating and describing how to open Engine intake louvers, state that the Engine intake louvers are open.
+Examiners Note: None
+Comments:
+
+--- PAGE 236 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.1.4 OPEN 1CA1920, BLACKOUT AIR Since the cue would be the same
+COMPRESSOR DRAIN VALVE, to drain any whether or not the drain cap was
+water accumulation, then CLOSE removed (nothing came out the end of
+1CA1920. pipe) only comment here for review if
+pipe cap was not removed.
+Cue: After locating 1CA1920, BLACKOUT AIR COMPRESSOR DRAIN VALVE, and describing how to open, including
+that the drain cap must be removed, state 1CA1920, BLACKOUT AIR COMPRESSOR DRAIN VALVE, has been cycled
+and no water came out of pipe.
+Examiners Note: None
+Comments:
+5.1.5 OPEN 2FZSBO10, BATTERY CHARGER, Locates 2FZSBO10, BATTERY CHARGER,
+breaker. and simulates opening.
+Cue: 2FZSBO10, BATTERY CHARGER, breaker, is open.
+Examiners Note: breaker in Panel 2FZSBO, SBO Compressor Bldg Distribution Panel
+Comments:
+5.1.6 PLACE SBO Control Air Dryer switch in ON Locates SBO Control Air Dryer switch
+position. and simulates turning switch to ON
+position.
+Cue: SBO Control Air Dryer switch is ON, and Control Air On light is illuminated.
+Examiners Note:
+Comments:
+
+--- PAGE 237 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.1.7 RECORD Engine Hourmeter reading on Locates Engine Hourmeter, 1XA16993,
+Attachment 1, Section 1.0, and in log book Tachometer/Hourmeter, inside engine
+at SBO compressor. control panel labeled Compressor Noise
+Emission Control Information, and
+records current reading in Section 1.0 of
+Att. 1. Locates logbook hanging from
+side of panel 2FZSBO, SBO Compressor
+Bldg Distribution Panel, and identifies
+where Engine Hourmeter should be
+logged.
+Cue:
+Examiners Note:
+Comments:
+5.1.8 PLACE UNLOADER VALVE selector switch Locates UNLOADER VALVE selector
+in START position. switch, and ensures switch in START
+position.
+Cue: None
+Examiners Note: UNLOADER VALVE selector switch is normally in Start when engine is shutdown.
+Comments:
+5.1.9 PRESS AND HOLD BY-PASS VALVE Locates BY-PASS VALVE pushbutton in
+*
+pushbutton. control panel, and simulates depressing
+AND holding depressed.
+Cue: None
+Examiners Note: None
+Comments:
+
+--- PAGE 238 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.1.10 PLACE SBO-IGN-SWT, ENGINE IGNITION While keeping the Bypass Valve
+*
+SWITCH in START position until engine pushbutton depressed, simulates
+starts, then RELEASE to RUN position. placing the SBO-IGN-SWT SBO Air Comp
+Inst Pnl Engine Ignition Switch in
+START.
+After cue is given, releases SBO-IGN-
+SWT SBO Air Comp Inst Pnl Engine
+Ignition Switch to RUN.
+Cue: Engine has started.
+Examiners Note: If also releases the BYPASS VALVE pushbutton at this point, without checking oil pressure >15 psig,
+then CUE that the engine has stopped.
+Comments:
+5.1.11 When engine oil pressure is >15 psig, Identifies oil pressure reading on gauge
+*
+RELEASE BY-PASS VALVE pushbutton. labeled” oil pressure” gauge inside
+control panel.
+After cue releases BY-PASS VALVE
+pushbutton.
+Cue: Oil pressure is 40 psig.
+Examiners Note: None
+Comments:
+5.1.12 ALLOW engine to run for 5 minutes to N/A
+warm up.
+Cue: 5 minutes has elapsed.
+Examiners Note: None
+Comments:
+
+--- PAGE 239 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.1.13 OPEN 1CA1913 SBO COMPRESSOR Locates and describes opening
+*
+DISCHARGE VALVE, to pressurize Control 1CA1913 SBO COMPRESSOR
+Air header. DISCHARGE VALVE.
+Cue: 1CA1913, SBO COMPRESSOR DISCHARGE VALVE, is open.
+Examiners Note: None
+Comments:
+5.1.14 OPEN 1CA1886, BLACKOUT AIR Locates and describes opening
+*
+COMPRESSOR ISOLATION. 1CA1886, BLACKOUT AIR COMPRESSOR
+ISOLATION.
+Cue: 1CA1886, BLACKOUT AIR COMPRESSOR ISOLATION is open.
+Examiners Note: 1CA1886 is located near the entrance to Service Building on right side past the U2 mixing bottle.
+Comments:
+5.1.15 OPEN 2CA584, YARD CONTROL AIR Locates and describes opening 2CA584,
+*
+SUPPLY VALVE, to pressurize Aux. Building YARD CONTROL AIR SUPPLY VALVE.
+1A and 2A Control Air headers.
+Cue: 2CA584, YARD CONTROL AIR SUPPLY VALVE is open.
+Examiners Note: 2CA584 is located near the entrance to Service Building on right side past the U2 mixing bottle.
+Comments:
+
+--- PAGE 240 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.1.16 PLACE UNLOADER VALVE selector switch Returns to SBO Compressor Building
+*
+in RUN position. and points out UNLOADER VALVE
+selector switch and describes placing it
+in RUN position.
+Cue:
+Examiners Note: None.
+Comments:
+Terminating Cue JPM COMPLETE
+RECORD JPM Stop Time: ____________
+
+--- PAGE 241 ---
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: 21-01 NRC IP-i Revision No.: 1
+Task Title: Start the SBO Air Compressor IAW AB.LOOP-1
+Task No.: N1150140501 Source:
+Bank X New Mod
+System: 056 Loss of Offsite Power
+K/A Number AA 1.37 Ability to operate and/or monitor the following as they apply to Loss of Offsite
+/ Description: Power: Instrument Air
+K/A Rating RO 3.4 SRO N/A
+Task Applicability: SRO Only RO/SRO AO/RO/SRO X Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 15 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance X Actual Performance
+Location: Classroom Simulator In-Plant X RCA
+Required Materials: SC.OP-SO.CA-0001
+Reference(s): SC.OP-SO.CA-0001
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 242 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+• Both Salem Units have tripped due to a loss of off-site power. Equipment problems have resulted in NO
+Emergency Control Air Compressors (ECACs) running.
+INITIATING CUE
+ The Unit 2 CRS has directed you to start the Station Blackout Compressor (SBO) IAW SC.OP-SO.CA-0001, SBO
+Diesel Control Air Compressor, starting with Step 5.1.3.
+ The Component Off Normal and Off Normal Tagged review has been performed SAT.
+ It is NOT the summer operating period.
+ The inspection covers have already been removed, Step 5.1.1 was performed SAT, and the inspection covers
+replaced IAW Step 5.1.2
+============================================================
+JPM: ip-j (Pages 243-257)
+============================================================
+
+--- PAGE 243 ---
+PSEG Nuclear LLC
+Job Performance Measure
+START UP AND PARALLEL A ROD DRIVE M-G SET
+JPM Number: 21-01 NRC IP-j
+Revision Number: 0
+Date: 07/26/2022
+Developed By: R. Chan Date: 7/26/22
+Instructor
+Validated By: Shetrone/Militti/Westlake Date: 8/18/22
+SME or Instructor
+Reviewed By: Winkelspecht Date: 11/29/22
+Operations Representative
+Approved By: Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 244 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 7/26/22 Converted to new JPM template.
+
+--- PAGE 245 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+JM 1. Task description and number, JPM description and number are identified.
+JM 2. Knowledge and Abilities (K/A) references are included.
+JM 3. Performance location specified. (in-plant, control room, or simulator)
+JM 4. Initial setup conditions are identified.
+JM 5. Initiating and terminating cues are properly identified.
+JM 6. Task standards identified and verified by SME review.
+JM 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+JM 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) S1.OP-SO.RCS-0001 Rev. 36 Date Checked: 1/05/23
+JM 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+N/A 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+JM 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+J. Militti 8/18/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 246 ---
+SIMULATOR SETUP INSTUCTIONS
+1. None, this is an In-plant JPM.
+SPECIAL INSTRUCTIONS
+1. Marked up copies of S1.OP-SO.RCS-0001.
+2. This JPM is located in the 84 ft. Unit 1 Switchgear Room (No RCA entry).
+
+--- PAGE 247 ---
+INITIAL CONDITIONS
+ Salem Unit 1 is at 75% power.
+ 12 Rod Drive M-G set is in service.
+ 11 Rod Drive M-G Set tripped 3 days ago.
+ Maintenance has completed repairs and is requesting 11 M-G set be placed in service.
+INITIATING CUE
+The CRS directs you to place 11 Rod Drive M-G set in service and parallel with 12 M-G set using section 4.4 of S1.OP-
+SO.RCS-0001, Rod Control System Operation.
+
+--- PAGE 248 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has started and paralleled 11 Rod Drive M-G set IAW S1.OP-
+SO-RCS-0001 section 4.4.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 249 ---
+ANSWER KEY (optional):
+[Page Left Intentionally Blank]
+
+--- PAGE 250 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue #1: Provide candidate MARKED UP copy of S1.OP-SO-RCS-0001.
+Cue #2: READ TO APPLICANT: No plant controls or equipment are to be operated during the performance of this
+JPM. All actions taken by the examinee should be clearly demonstrated and verbalized to the evaluator.
+Examiners Note: The candidate may wish to review all P&Ls prior to start.
+Comments: N/A
+4.4.1 ENSURE the following: Operator locates A AND B REACTOR TRIP
+BREAKERS and verifies the CLOSED
+1. A AND B REACTOR TRIP BREAKERS are indicator on each breaker.
+CLOSED.
+Operator locates 12 Rod Drive Motor
+2. Running Rod Drive Motor Generator Generator Set GENERATOR LINE VOLT AND
+Set GENERATOR LINE VOLTS is 260V GENERATOR LINE AMPS meters and check
+(247V - 273V) AND GENERATOR LINE readings.
+AMPS is ~80 DC AMPS.
+Cue #1: A and B Reactor Trip Breakers indicate CLOSED.
+Cue #2: 12 M-G set volts is reading 260V and Generator Line Amps is 80 DC amps.
+Examiners Note: 11 and 12 Rod Drive M-G sets are located in the 84 ft. Switchgear Room.
+Comments:
+
+--- PAGE 251 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+4.4.2 ALIGN MG Set Controls for MG Set to be Operator aligns M-G set controls per
+started IAW Attachment 1. Attachment 1.
+Cue:
+Cue the following for each component alignment when performed:
+ Voltmeter selector switch is on ‘A-B’ position
+ Voltage adjust is in ‘Vertical’ position
+ Ammeter selector switch is in ‘A’ position
+ Motor Breaker Control Switch target is ‘GREEN’
+ Motor Breaker is ‘OPEN’.
+ Synchronize switch is in ‘OFF’ position
+ Generator Breaker Control Switch target is ‘GREEN’.
+ Generator Breaker is ‘OPEN’.
+Examiners Note: None
+Comments:
+4.4.3 CLOSE MOTOR Breaker AND ALLOW at Operator simulates closing 11 M-G set
+*
+least 20 seconds for MG Set to reach breaker by rotating the MOTOR Breaker
+rated speed. switch to CLOSE.
+Cue: 11 M-G set MOTOR Breaker is CLOSED.
+Examiners Note: None
+Comments:
+4.4.4 PRESS AND HOLD GEN FIELD FLASH Operator simulates pressing and holding
+*
+pushbutton UNTIL Generator voltage the GEN FIELD FLASH pushbutton until
+stops rising Generator voltage stops rising.
+(GENERATOR LINE VOLTS should indicate
+~260V).
+Cue: Generator Lines Volts indicates 260 Volts
+Examiners Note: None
+Comments:
+
+--- PAGE 252 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+4.4.5 CHECK VOLTAGE ADJUST range of
+adjustment as follows:
+Cue: None
+Examiners Note: None
+Comments:
+4.4.5.1 ADJUST VOLTAGE ADJUST full Operator simulates adjusting VOLTAGE
+counterclockwise to LOW. ADJUST full counterclockwise to LOW
+(GENERATOR LINE VOLTS meter should
+indicate ~220V.)
+Cue: Generator Line Volts is 220 volts
+Examiners Note: None
+Comments:
+4.4.5.2 ADJUST VOLTAGE ADJUST full clockwise Operator simulates adjusting VOLTAGE
+to HIGH. (GENERATOR LINE VOLTS meter ADJUST full clockwise to HIGH.
+should indicate ~300V)
+Cue: Generator Line Volts is 295 volts
+Examiners Note: None
+Comments:
+4.4.5.3 ADJUST VOLTAGE ADJUST UNTIL Operator simulates adjusting VOLTAGE
+GENERATOR LINE VOLTS meter indicates ADJUST (counterclockwise) until
+~260V. GENERATOR LINE VOLTS meter indicates
+~260V.
+Cue: Generator Line Volts is 260 volts.
+Examiners Note: Adjusting VOLTAGE ADJUST in the COUNTERCLOCKWISE direction will LOWER the voltage.
+Comments:
+
+--- PAGE 253 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+NOTE
+DMM (OR equivalent, set to voltage)
+voltage readings will be less (by ≈ ½) than
+installed voltmeter readings.
+4.4.5.4 Direct Maintenance to obtain voltage Operator directs Maintenance to obtain
+reading on Running MG Set using a DMM voltage reading on Running MG Set using
+(OR equivalent, set to voltage), at back of a DMM at back of installed voltmeter.
+installed voltmeter.
+Cue: Maintenance reports voltage reading on Running MG Set is 130 V.
+Examiners Note: None
+Comments:
+4.4.5.5 Direct Maintenance to monitor voltage Operator directs Maintenance to
+reading on In-coming MG Set using a monitor voltage reading on In-coming
+DMM (OR equivalent, set to voltage), at MG Set using a DMM at back of installed
+back of installed voltmeter. voltmeter.
+Cue: Maintenance is monitoring voltage reading on In-coming M-G set and reports value of 129.5V.
+Examiners Note: None
+Comments:
+4.4.5.6 ADJUST the VOLTAGE ADJUST UNTIL Operator simulates adjusting the
+*
+indicated voltage on DMM (OR VOLTAGE ADJUST in the CLOCKWISE
+equivalent, set to voltage), is 0-2.5 volts direction until indicated voltage on
+higher than the reading obtained in Step DMM is 0-2.5 volts higher than the
+4.4.5.4. reading obtained in step 4.4.5.4.
+Cue: Maintenance reports voltage reading on In-coming MG Set is now 130.25 V
+Examiners Note: Voltage from step 4.4.5.4 was 130 V. Range is 0-2.5V higher than 130 V.
+IF OPERATOR DOES NOT ADJUST, THEN DIRECT OPERATOR TO ADJUST VOLTAGE ABOVE 130 V (0-2.5V). Adjusting
+the VOLTAGE ADJUST switch in the CLOCKWISE direction will raise voltage.
+Comments:
+
+--- PAGE 254 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+4.4.5.7 DIRECT Maintenance to REMOVE DMM Operator directs Maintenance to remove
+(OR equivalent, set to voltage), AND DMM AND close panel doors.
+CLOSE panel doors.
+Cue: Maintenance has removed DMM AND closed panel doors.
+Examiners Note: None.
+Comments:
+NOTE
+A single handle is shared between both
+MG set SYNCHRONIZE switches. The
+handle can only be removed when the
+switch is in the OFF position.
+The Generator Pistol Grip indication will
+remain GREEN when the Generator
+Breaker auto closes. This indicates a
+neutral position and is expected since the
+Pistol Grip has not been physically turned
+to the CLOSED position.
+CAUTION
+Do NOT attempt to manually close
+generator output breaker. Manually
+closing generator output breaker could
+result in both MG Sets tripping. If the MG
+Sets are NOT closely synchronized,
+automatic breaker closure could take as
+long as 60 seconds
+
+--- PAGE 255 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+4.4.6 PLACE MG Set SYNCHRONIZE Switch to IF required, operator simulates moving
+*
+ON, AND OBSERVE following: the Synchronize Switch from 12 MG set
+and inserting into 11 MG set and places
+• GENERATOR Breaker it in ON.
+automatically closes
+• Load is divided equally between
+MG Sets (~40 DC Amps each)
+Cue: 11 MG set generator breaker is closed and load stabilizes at 40 amps on each generator.
+Examiners Note: None.
+Comments:
+4.4.7 PLACE MG Set SYNCHRONIZE Switch to Operator simulates rotating the
+OFF. SYNCHRONIZE Switch to the OFF
+position.
+Cue: SYNCHRONIZE Switch is in the OFF position.
+Examiners Note: None.
+Comments:
+Terminating Cue JPM COMPLETE
+RECORD JPM Stop Time: ____________
+
+--- PAGE 256 ---
+Operator’s Name: Job Title: RO SRO
+Facility: Salem JPM No.: 21-01 NRC IP-j Revision No.: 0
+Task Title: Start Up and Parallel a Rod Drive M-G Set
+Task No.: N0015010104 Source:
+Bank X New Mod
+System: 012 Reactor Protection System (SF7)
+K/A Number A4.07 Ability to manually operate and/or monitor in the control room: M/G set
+/ Description: breakers
+K/A Rating RO 3.8 SRO N/A
+Task Applicability: SRO Only RO/SRO AO/RO/SRO X Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 15 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance X Actual Performance
+Location: Classroom Simulator In-Plant X RCA
+Required Materials: S1.OP-SO.RCS-0001
+Reference(s): S1.OP-SO.RCS-0001
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 257 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+ Salem Unit 1 is at 75% power.
+ 12 Rod Drive M-G set is in service.
+ 11 Rod Drive M-G Set tripped 3 days ago.
+ Maintenance has completed repairs and is requesting 11 M-G set be placed in service.
+INITIATING CUE
+The CRS directs you to place 11 Rod Drive M-G set in service and parallel with 12 M-G set using Section 4.4 of S1.OP-
+SO.RCS-0001, Rod Control System Operation.
+============================================================
+JPM: ip-k (Pages 258-277)
+============================================================
+
+--- PAGE 258 ---
+PSEG Nuclear LLC
+Job Performance Measure
+PERFORM A RADIOACTIVE WASTE GAS RELEASE
+JPM Number: 21-01 NRC IP-k
+Revision Number: 0
+Date: 07/26/2022
+Developed By: R. Chan Date: 7/26/22
+Instructor
+Validated By: Shetrone/Militti/Westlake Date: 8/18/22
+SME or Instructor
+Reviewed By: Winkelspecht Date: 11/29/22
+Operations Representative
+Approved By: Wadusky Date: 11/29/22
+Training Department (Print/Sign)
+
+--- PAGE 259 ---
+REVISION RECORD (Summary)
+Revision
+Number Date Reason
+00 7/26/22 Converted to new JPM template.
+
+--- PAGE 260 ---
+JOB PERFORMANCE MEASURE VALIDATION CHECKLIST
+NOTE
+All steps of this checklist should be performed upon initial validation. Prior to JPM usage, revalidate JPM using steps 8
+and 11 below.
+RC 1. Task description and number, JPM description and number are identified.
+RC 2. Knowledge and Abilities (K/A) references are included.
+RC 3. Performance location specified. (in-plant, control room, or simulator)
+RC 4. Initial setup conditions are identified.
+RC 5. Initiating and terminating cues are properly identified.
+RC 6. Task standards identified and verified by SME review.
+RC 7. Critical steps meet the criteria for critical steps and are identified with an asterisk (*)
+RC 8. Verify the procedure referenced by this JPM matches the most current revision of that procedure:
+Procedure(s) S2.OP-SO.WG-0008 Rev. 27 Date Checked: 1/05/23
+RC 9. Pilot test the JPM:
+a. Verify cues both verbal and visual are free of conflict, and
+b. Ensure performance time is accurate.
+NA 10. If the JPM cannot be performed as written with proper responses, then revise the JPM.
+KH 11. When JPM is revalidated, SME or instructor sign and date JPM cover page
+K. Hantho 10/14/22
+SME/Instructor Date
+SME/Instructor Date
+SME/Instructor Date
+
+--- PAGE 261 ---
+SIMULATOR SETUP INSTUCTIONS
+1. None, this is an In-plant JPM.
+SPECIAL INSTRUCTIONS
+1. Marked up copies of S2.OP-SO.WG-0008.
+2. SPDS screenshot of MET DATA
+3. This JPM is located at the 64 ft. Elev. Unit 2 Auxiliary Building (RCA entry required).
+
+--- PAGE 262 ---
+INITIAL CONDITIONS
+ Both Salem Units are operating at 100% power
+ 21 Waste Gas Decay Tank is in Standby at 90 psig
+ 22 Waste Gas Decay Tank is in Holdup at 15 psig
+ 23 Waste Gas Decay Tank is O/S at 15 psig
+ 24 Waste Gas Decay Tank is O/S at 15 psig
+ 2R41 Plant Vent radiation monitor is OPERABLE
+ Plant vent flow rate and sample flow rate monitors are OPERABLE
+INITIATING CUE
+The CRS directs you to RELEASE 21 Waste Gas Decay Tank starting at Step 5.2.11 of S2.OP-SO.WG-0008, 21 Gas Decay
+Tank to Plant Vent.
+ Sections 5.1 and Steps 5.2.1 through 5.2.10 are complete.
+
+--- PAGE 263 ---
+TASK STANDARD:
+The task is satisfactorily met when the applicant has aligned the release path from 21 Waste Gas Decay Tank
+(WGDT) IAW step 5.2.11 of S2.OP-SO.WG-0008, released the radioactive gas from 21 WGDT IAW step 5.2.12
+of S2.OP-SO.WG-0008, and upon REACHING 10 PSIG, terminates the release by locally closing the 2WG41 IAW
+step 5.2.14 of S2.OP-SO.WG-0008.
+**************************************************************************************************
+Information for Evaluators Use:
+UNSAT requires written comments on the respective step.
+(*)
+Denotes critical steps
+If Time Critical, estimated time is the Time Critical time.
+The comment section should be used to document the reason that a step is marked as unsatisfactory and to document
+unsatisfactory performance relating to management expectations.
+Some operations that are performed from outside of the control room may require multiple steps. These items may be
+listed as individual steps in this JPM. It is acceptable for the candidate to direct the local operator to perform groups of
+procedure steps instead of calling for each individual item to be performed.
+The time clock starts when the candidate acknowledges the initiating cue.
+
+--- PAGE 264 ---
+RECORD JPM Start Time:____________
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+RECORD the JPM Start Time when the
+N/A operator acknowledges READY TO START N/A
+JPM.
+Cue #1: Provide candidate MARKED UP copy of S2.OP-SO.WG-0008.
+Cue #2: READ TO APPLICANT: No plant controls or equipment are to be operated during the performance of this
+JPM. All actions taken by the examinee should be clearly demonstrated and verbalized to the evaluator.
+Examiners Note: The candidate may wish to review all P&Ls prior to start.
+Comments: N/A
+5.2.11 PERFORM the following preparations at
+Panel 104-2 for the GDT release:
+Cue: None.
+Examiners Note: 104-2 Panel is located at the 64 ft. Elev. inside the Auxiliary Building (RCA entry required).
+Comments:
+5.2.11.A ENSURE 21 GDT is NOT in service
+Cue: 21 GDT is NOT in service.
+Examiners Note: None
+Comments:
+5.2.11.B ENSURE 21 GDT is NOT selected for
+"Standby".
+Cue: 21 GDT is NOT selected for STANDBY.
+Examiners Note: None
+Comments:
+
+--- PAGE 265 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.2.11.C RECORD 21 GDT "Initial Pressure"
+(PIS1036) on Attachment 3.
+Cue: 21 GDT pressure (PIS1036) indicates 90 psig.
+Examiners Note: None
+Comments:
+5.2.11.D LATCH AND SET 2WG41, GDT VENT CONT
+VALVE, as follows:
+Cue: None
+Examiners Note: None
+Comments:
+5.2.11.D.1 TURN 2WG41 Waste Gas Vent Valve Flow Operator simulates turning the Waste
+*
+Bias fully counterclockwise until indicator Gas Vent Valve Flow Bias knob fully
+<0%. COUNTER-CLOCKWISE until indicator is
+less than 0%.
+Cue: 2WG41 flow bias is less than 0%
+Examiners Note: None
+Comments:
+5.2.11.D.2 POSITION Selector Switch to OPEN Operator simulates positioning the
+*
+AND RELEASE to AUTO position (spring selector switch to the OPEN position and
+return to AUTO). then RELEASE to AUTO position.
+Cue: Selector switch move to the OPEN position and now is released back to the AUTO position.
+Examiners Note: 2WG41-SWT is the selector switch “2WG41 local control switch” at 104-2 panel
+Comments:
+
+--- PAGE 266 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.2.11.D.3 TURN 2WG41 Waste Gas Vent Valve Flow Operator simulates turning 2WG41 flow
+*
+Bias clockwise until indicator ≥100%. bias CLOCKWISE until indicator reads ≥
+100%
+Cue: 2WG41 flow bias indicates 100%.
+Examiners Note: None.
+Comments:
+NOTE
+N/A N/A
+2WG41 will not immediately open.
+Cue: None
+Examiners Note: The 2WG41 will NOT go full open until the flow bias is adjusted to 100%.
+Comments:
+5.2.11.D.4 ENSURE with Unit 2 Control Room that Operator calls Control Room to verify
+2WG41 valve has lost the CLOSED 2WG41 has lost the closed indication and
+indication AND audible alarm received audible alarm received.
+Cue: Control Room reports they’ve lost 2WG41 CLOSED indication and audible alarm was received.
+Examiners Note: None
+Comments:
+5.2.11.D.5 TURN 2WG41 Waste Gas Vent Valve Flow Operator simulates turning 2WG41 flow
+*
+Bias fully counterclockwise until indicator bias COUNTER-CLOCKWISE until
+<0%. indicator reads < 0%.
+Cue: 2WG41 flow bias reads less than 0%.
+Examiners Note: None
+Comments:
+
+--- PAGE 267 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.2.11.D.6 ENSURE with Unit 2 Control Room that Operator calls Control Room to verify
+2WG41 has closed indication 2WG41 has closed indication.
+Cue: Control Room reports that 2WG41 has CLOSED indication
+Examiners Note: None.
+Comments:
+5.2.11.D.7 POSITION 2WG41 Selector Switch to Operator simulates positioning 2WG41
+*
+CLOSE. selector switch to CLOSE.
+Cue: 2WG41 selector switch is in the CLOSED position.
+Examiners Note: None.
+Comments:
+5.2.11.E PERFORM an Independent Verification of Operator request another operator
+the 2WG41 Waste Gas Vent Valve Flow perform IV of the 2WG41 Waste Gas
+Bias position, AND RECORD the Vent Valve Flow Bias position.
+Independent Verification on Attachment
+1, Section 2.0.
+Cue: IV completed SAT.
+Examiners Note: None.
+Comments:
+5.2.11.F OPEN 21WG31, GDT INLET VALVE Operator simulates rotating valve
+*
+COUNTER-CLOCKWISE to open
+21WG31.
+Cue: 21WG31 is Open and Tag is released.
+Examiners Note: None.
+Comments:
+
+--- PAGE 268 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+NOTE
+While 2WG41 is opening, pressure
+downstream of 2WG38 will fluctuate
+between “0” psig and “10” psig until
+2WG41 is fully open (100%). Once
+2WG41 is fully open, 2WG38 will throttle
+to maintain <8 psig during the release.
+5.2.11.G Slowly OPEN 21WG34 Operator simulates slowly rotating
+*
+COUNTER-CLOCKWISE to open 21WG34
+Cue: 21WG34 is Open.
+Examiners Note: None.
+Comments:
+5.2.11.H RECORD Independent Verification (IV) of Operator request IV of 21 GDT
+21 GDT discharge valves 21WG31 and discharge valve 21WG31 and 21WG34.
+21WG34 on Attachment 1, Section 3.0,
+prior to commencing 21 GDT release
+Cue: IVs completed SAT.
+Examiners Note: None.
+Comments:
+5.2.12 COMMENCE 21 GDT release as follows:
+Cue: None
+Examiners Note: None.
+Comments:
+
+--- PAGE 269 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.2.12.A POSITION 2WG41 Selector Switch to Operator simulates rotating the
+*
+OPEN AND RELEASE to AUTO position selector switch to the Open position
+(spring return to AUTO). and then release to the Auto position.
+Cue: Selector switch moved to the OPEN position and now is released back to the AUTO position.
+Examiners Note: None.
+Comments:
+5.2.12.B SLOWLY SET 2WG41 Waste Gas Vent Operator simulates adjusting the
+*
+Valve Flow Bias to ≤100% 2WG41 Waste Gas Vent Valve Flow Bias
+position which corresponds to a to ≤100%.
+maximum release rate of 32 SCFM
+Cue: 2WG41 flow bias is 100%.
+Examiners Note: None.
+Comments:
+5.2.12.C PERFORM an Independent Verification of Operator request IV on 2WG41 flow
+the positioning of 2WG41 Waste Gas bias position.
+Vent Valve Flow Bias on Attachment 1,
+Section 4.0.
+Cue: IV completed SAT.
+Examiners Note: None.
+Comments:
+5.2.12.D RECORD In Progress Release Data on Operator records Data on Attachment 2
+Attachment 2, Section 5.1
+Cue: None.
+Examiners Note: None.
+Comments:
+
+--- PAGE 270 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.2.13 PERFORM the following during 21 GDT
+release
+Cue: None.
+Examiners Note: None.
+Comments:
+5.2.13.A CALCULATE 21 GDT Average Release Rate Operator reads step and action
+every 10 minutes on Attachment 3, AND required every 10 minutes.
+ADJUST 2WG41 Waste Gas Vent Valve
+Flow Bias position as required based on No action is required at this time.
+results.
+Cue: None.
+Examiners Note: No action is required at this time, every 10 minutes.
+Comments:
+5.2.13.B RECORD Meteorological Data in Applicant records the MET Data from
+Attachment 2, Section 5.2. the SPDS screenshot
+IF Meteorological Monitor is NOT
+OPERABLE, THEN NOTIFY the SM/CRS
+(UFSAR 7.7.2.12).
+Cue: PROVIDE the following MET DATA screenshot to applicant
+Examiners Note: None.
+Comments:
+
+--- PAGE 271 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.2.13.C IF Plant Vent Flow Rate Monitor is Applicant records step as N/A since
+inoperable, THEN RECORD Plant Vent Plant Vent Flow Rate Monitor is
+Flow Rate Discharge Estimation Operable.
+on Attachment 4 at least once every four
+hours during GDT release
+Cue: Plant Vent Flow Rate Monitor is OPERABLE.
+Examiners Note: None.
+Comments:
+5.2.13.D IF at any time during the release pressure Applicant reads step and continues.
+downstream of 2WG38 is >8.0 psig
+(2PL8678), OR 2WG41 CLOSES,
+THEN TERMINATE the GDT release as
+follows:
+1. TURN 2WG41 Waste Gas Vent Valve
+Flow Bias fully counter-clockwise
+until indicator is <0%.
+2. PLACE 2WG41-SWT in CLOSE
+position, AND ENSURE 2WG41 is
+CLOSED.
+3. CLOSE 22WG34.
+4. RECORD Final Release Data in
+Attachment 2, Section 5.3.
+5. INITIATE an NOTF to correct the
+malfunction.
+Cue: None.
+Examiners Note: None.
+Comments:
+
+--- PAGE 272 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.2.14 When 21 GDT pressure ≈10 psig OR as
+directed by SM/CRS, SECURE the GDT
+release:
+Cue: 21 GDT pressure is now 10 psig.
+Examiners Note: None.
+Comments:
+5.2.14.A TURN 2WG41 Waste Gas Vent Valve Flow Operator simulates adjusting the Flow
+*
+Bias fully counter-clockwise until Bias fully COUNTER-CLOCKWISE until
+indicator is <0%. indicator is <0%.
+Cue: 2WG41 flow bias is now 0%.
+Examiners Note: None.
+Comments:
+5.2.14.B PLACE 2WG41-SWT in CLOSE position, Operator simulates placing switch
+*
+AND ENSURE 2WG41 is CLOSED 2WG41-SWT in the CLOSED position
+and verifies that 2WG41 is CLOSED.
+Cue: Switch 2WG41-SWT is in the CLOSED position and the 2WG41 is now CLOSED.
+Examiners Note: None.
+Comments:
+5.2.14.C CLOSE 21WG34 Operator simulates closing the 21WG34
+*
+by turning the valve in the CLOCKWISE
+direction.
+Cue: 21WG34 is now CLOSED.
+Examiners Note: None.
+Comments:
+
+--- PAGE 273 ---
+GRADE
+STEP CRITICAL ELEMENT STANDARD
+(S/U)
+5.2.14.D RECORD Final Release Data in
+Attachment 2, Section 5.3
+Cue: None.
+Examiners Note: None.
+Comments:
+Terminating Cue JPM COMPLETE
+
+--- PAGE 274 ---
+RECORD JPM Stop Time: ____________
+Operator’s Name: Job Title: RO SRO X
+Facility: Salem JPM No.: 21-01 NRC IP-k Revision No.: 0
+Task Title: Perform a Radioactive Waste Gas Release
+Task No.: N0715070104 Source:
+Bank X New Mod
+System: 071 Waste Gas Disposal System (SF9)
+K/A Number A1.03 Ability to predict and/or monitor changes in parameters associated with
+/ Description: operation of the Waste Gas Disposal System, including: Holdup tank pressure
+and level
+K/A Rating RO 2.6 SRO N/A
+Task Applicability: SRO Only RO/SRO AO/RO/SRO X Other
+Time-Critical: Yes No X Alternate Path: Yes No X
+Estimated Time to Complete: 20 Minutes Actual Time Used: Minutes
+Method of Testing: Simulated Performance X Actual Performance
+Location: Classroom Simulator In-Plant X RCA X
+Required Materials: S2.OP-SO.WG-0008
+Reference(s): S2.OP-SO.WG-0008
+EVALUATION SUMMARY:
+Were all the Critical Elements (steps) performed satisfactorily? Yes ____ No ____
+The operator’s performance was evaluated against the standards
+contained in this JPM, and has been determined to be: Satisfactory _____ Unsatisfactory _____
+Comments:
+Evaluator’s Name: ________________________________
+Evaluator’s Signature: ________________________________ Date: ____________
+
+--- PAGE 275 ---
+STUDENT HANDOUT
+INITIAL CONDITIONS
+ Both Salem Units are operating at 100% power
+ 21 Waste Gas Decay Tank is in Standby at 90 psig
+ 22 Waste Gas Decay Tank is in Holdup at 15 psig
+ 23 Waste Gas Decay Tank is O/S at 15 psig
+ 24 Waste Gas Decay Tank is O/S at 15 psig
+ 2R41 Plant Vent radiation monitor is OPERABLE
+ Plant vent flow rate and sample flow rate monitors are OPERABLE
+INITIATING CUE
+The CRS directs you to RELEASE 21 Waste Gas Decay Tank starting at Step 5.2.11 of S2.OP-SO.WG-0008, 21 Gas Decay
+Tank to Plant Vent.
+ Sections 5.1 and Steps 5.2.1 through 5.2.10 are complete.
+
+--- PAGE 276 ---
+SIMULATOR
+EXAMINATION SCENARIO GUIDE
+SCENARIO TITLE: NRC-1 [AB.COND-1, AB.NIS-1, AB.RC-1, TRIP-1,
+LOCA-1, LOCA-3]
+SCENARIO NUMBER: 21-01 NRC ESG-1
+EFFECTIVE DATE: See Approval Dates
+EXPECTED DURATION: 80 minutes
+REVISION NUMBER: 06
+PROGRAM: L.O. REQUAL
+X INITIAL LICENSE
+STA
+OTHER
+Revision Summary:
+ Rev 05 Incorporated NRC comments following phone call on 10-2-21 to delete SG
+pressure channel failure and modify RCS leak to 20 gpm to allow observing actions
+in AB.RC-1 and exercise Tech Specs.
+ Rev 6 Modified scenario guide for use in Next ILOT exam 21-01
+PREPARED BY: K. Hantho 9-15-22
+Lead Regulatory Exam Author Date
+APPROVED BY: M. Wadusky
+Operations Training Manager or Date
+designee
+APPROVED BY: M. Winkelspecht
+Facility Representative Date
+
+--- PAGE 277 ---
+SCAN OF SIGNED SCENARIO COVER SHEET
