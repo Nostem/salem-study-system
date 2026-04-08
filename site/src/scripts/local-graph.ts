@@ -38,7 +38,7 @@ if (data && data.nodes.length > 1) {
   const container = document.getElementById('local-graph');
   if (container) {
     const width = container.clientWidth;
-    const height = 405;
+    const height = container.clientHeight || width;
 
     const svg = d3.select('#local-graph')
       .append('svg')
