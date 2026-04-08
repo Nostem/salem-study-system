@@ -21,7 +21,7 @@ Trip reactor and stop affected RCP if ANY of the following validated conditions 
 - RCP Seal Injection AND Thermal Barrier CCW lost concurrently (secure within <span class="val-trip">2 minutes</span>)<br>
 - Shaft vibration > <span class="val-trip">20 mils</span> or motor flange vibration > <span class="val-trip">5 mils</span><br>
 - Motor bearing temperature > <span class="val-trip">175°F</span><br>
-- Motor winding temperature > <span class="val-trip">307°F</span> (Modes 1-5)<br>
+- Motor winding temperature > <span class="val-trip">302°F</span> (Modes 1-5)<br>
 - Seal water outlet temperature > <span class="val-trip">190°F</span><br>
 - #1 Seal leakoff < 0.8 gpm AND reverses to ≥ 6.0 gpm<br>
 - #1 Seal leakoff < 0.8 gpm with rising pump bearing/seal inlet temps<br>
