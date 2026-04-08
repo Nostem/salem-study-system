@@ -46,3 +46,258 @@ jpms:
     alternate_path: false
     source: Bank
     task_number: "N0150010201"
+
+  - id: "RO-A4"
+    title: "Activate ERDS IAW EP-SA-325-F8"
+    type: Admin-RO
+    location: Classroom
+    procedure: "EP-SA-325-F8"
+    pages: "41-52"
+    ka: "G2.4.43"
+    ka_importance_ro: 3.2
+    ka_importance_sro: 3.8
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N1240110501"
+
+  - id: "SRO-A1.a"
+    title: "Determine Minimum ECCS Injection Flow"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "2-EOP-LOCA-5"
+    pages: "53-63"
+    ka: "G2.1.7"
+    ka_importance_ro: 4.4
+    ka_importance_sro: 4.7
+    applicability: SRO Only
+    time_critical: false
+    alternate_path: false
+    source: Mod
+    task_number: "N1150680502"
+
+  - id: "SRO-A1.b"
+    title: "Apply Overtime Limit Restrictions"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "LS-AA-119-1003"
+    pages: "64-80"
+    ka: "G2.1.5"
+    ka_importance_ro: 2.9
+    ka_importance_sro: 3.9
+    applicability: SRO Only
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N1230040302"
+
+  - id: "SRO-A2"
+    title: "Review a Completed Surveillance Test"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S2.OP-ST.CBV-0001"
+    pages: "81-95"
+    ka: "G2.2.12"
+    ka_importance_ro: 3.7
+    ka_importance_sro: 4.1
+    applicability: SRO Only
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N1230010302"
+
+  - id: "SRO-A3"
+    title: "Select a Volunteer for Emergency Radiation Exposure"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "NC.EP-EP.ZZ-0304"
+    pages: "96-112"
+    ka: "G2.3.14"
+    ka_importance_ro: ~
+    ka_importance_sro: 3.8
+    applicability: SRO Only
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: ~
+
+  - id: "SRO-A4"
+    title: "Review Initial Contact Message Form (ICMF)"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "EP-SA-325-F2"
+    pages: "113-128"
+    ka: "G2.4.40"
+    ka_importance_ro: ~
+    ka_importance_sro: 4.5
+    applicability: SRO Only
+    time_critical: true
+    alternate_path: false
+    source: New
+    task_number: "N1240010502"
+
+  - id: "Sim-a"
+    title: "Perform Control Rod System Surveillance Test"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-ST.RCS-0001"
+    pages: "129-142"
+    ka: "A4.16"
+    ka_importance_ro: 3.8
+    ka_importance_sro: ~
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "N1140340401"
+
+  - id: "Sim-b"
+    title: "Transfer To Hot Leg Recirculation"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-LOCA-4"
+    pages: "143-153"
+    ka: "A4.05"
+    ka_importance_ro: 4.1
+    ka_importance_sro: ~
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "1150110501"
+
+  - id: "Sim-c"
+    title: "Depressurize RCS Using Aux Spray IAW EOP-LOCA-2"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-LOCA-2"
+    pages: "154-164"
+    ka: "A4.05"
+    ka_importance_ro: 3.2
+    ka_importance_sro: ~
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N1150090501"
+
+  - id: "Sim-d"
+    title: "Initiate Bleed and Feed Using Reactor Head Vents"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-FRHS-1"
+    pages: "165-176"
+    ka: "A2.04"
+    ka_importance_ro: 4.5
+    ka_importance_sro: 4.5
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "1150290501"
+
+  - id: "Sim-e"
+    title: "Establish FW Flow IAW EOP-FRHS-1 Using a Condensate Pump"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-FRHS-1"
+    pages: "177-192"
+    ka: "A4.02"
+    ka_importance_ro: 3.6
+    ka_importance_sro: 3.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1150290501"
+
+  - id: "Sim-f"
+    title: "Perform 22 CFCU Surveillance Test IAW S2.OP-ST.CBV-0003"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-ST.CBV-0003"
+    pages: "193-206"
+    ka: "A1.04"
+    ka_importance_ro: 3.3
+    ka_importance_sro: ~
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0220130201"
+
+  - id: "Sim-g"
+    title: "Respond to a Failed High RCS T-avg Channel IAW S2.OP-AB.ROD-0003"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AB.ROD-0003"
+    pages: "207-220"
+    ka: "A4.05"
+    ka_importance_ro: 3.8
+    ka_importance_sro: ~
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1150090501"
+
+  - id: "Sim-h"
+    title: "Perform a Containment Pressure Relief"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-SO.CBV-0002"
+    pages: "221-236"
+    ka: "A2.02"
+    ka_importance_ro: 3.0
+    ka_importance_sro: 3.0
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N0220080101"
+
+  - id: "IP-i"
+    title: "Start the SBO Air Compressor IAW AB.LOOP-1"
+    type: In-Plant
+    location: In-Plant
+    procedure: "SC.OP-SO.CA-0001"
+    pages: "237-252"
+    ka: "056 AA1.37"
+    ka_importance_ro: 3.4
+    ka_importance_sro: ~
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N1150140501"
+
+  - id: "IP-j"
+    title: "Start Up and Parallel a Rod Drive M-G Set"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S1.OP-SO.RCS-0001"
+    pages: "253-268"
+    ka: "012 A4.07"
+    ka_importance_ro: 3.8
+    ka_importance_sro: ~
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0015010104"
+
+  - id: "IP-k"
+    title: "Perform a Radioactive Waste Gas Release"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S2.OP-SO.WG-0008"
+    pages: "269-290"
+    ka: "071 A1.03"
+    ka_importance_ro: 2.6
+    ka_importance_sro: ~
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0715070104"
