@@ -139,6 +139,11 @@ Delta-T setpoint = K4 - K5*(rate of change of Tavg) + K6*(Tavg - Tavg-setpoint) 
 
 Diverse from the Reactor Protection System. Provides backup trip of turbine and actuation of AFW in the event the RPS fails to trip the reactor. Armed by P-20 (turbine steamline inlet pressure above setpoint). Actuates on low SG water level. Not safety-related but important for ATWS mitigation per 10CFR50.62. (UFSAR 7.8)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q80</div>
+ATWS turbine trip verification per EOP-FRSM-1 Step 6: confirm turbine trip by checking that <span class="hi-exam">ALL turbine stop valve closed bi-stables are LIT on 2RP4</span>. <span class="hi-trap">2/3 Auto Stop Oil low pressure bi-stables LIT is a demand for a turbine trip, not confirmation that the turbine actually tripped.</span> If turbine trip is not confirmed, dispatch operator to <span class="hi-exam">locally trip the turbine at the front standard</span>.
+</div>
+
 ## POPS (Pressurizer Overpressure Protection System)
 
 Provides low-temperature overpressure protection by enabling PORVs to open at a reduced setpoint when RCS temperature is low. Prevents exceeding Appendix G pressure-temperature limits during heatup, cooldown, and cold shutdown. (UFSAR 7.6.3)
@@ -158,6 +163,11 @@ Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass brea
 - **Intermediate Range:** Two channels, used during startup
 - **Power Range:** Four channels, used during power operation (provides input to OT Delta-T, OP Delta-T, high flux trips, and rod control)
 (UFSAR 7.2.1.2)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q72</div>
+Subcritical rod withdrawal response: after a short rod withdrawal with the reactor still subcritical, <span class="hi-exam">SR counts rapidly increase then stabilize at a new higher value</span> (subcritical multiplication reaches new equilibrium at higher keff). <span class="hi-exam">Startup rate (SUR) rapidly increases then gradually decreases to zero</span>. SUR returns to zero because the reactor is still subcritical — a sustained positive SUR only exists at criticality. <span class="hi-trap">SR counts do NOT return to the previous value (they stabilize higher) and SUR does NOT remain at a positive value (it decays to zero).</span>
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q11</div>
@@ -215,3 +225,5 @@ SSPS Train Disagreement: <span class="hi-exam">"SI & FW ISOL" Red lamp on 2RP4 F
   - [[2023 Q57]] — In-Core Temperature Monitoring CET / reference junction compensation / 2300°F limit
   - [[2023 Q62]] — Area Rad Monitor 1R1A / manual CAV AP mode from 1RP2
   - [[2023 Q65]] — SSPS train disagreement / SI & FW ISOL lamp flashing / SI RESET green light
+  - [[2023 Q72]] — Subcritical SR counts stabilize higher / SUR decays to zero after rod withdrawal
+  - [[2023 Q80]] — ATWS FRSM-1 turbine trip verification via stop valve bi-stables on 2RP4

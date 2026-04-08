@@ -120,6 +120,18 @@ The design basis for DNB is that there is at least a 95% probability at the 95% 
 - **TS 3/4.2.3** — Nuclear Enthalpy Rise Hot Channel Factor (F-delta-H)
 - **TS 3/4.2.5** — DNB Parameters (pressurizer pressure, RCS Tavg, RCS flow)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q73</div>
+Steam table subcooling calculation: at <span class="hi-exam">1805 psig (1820 psia), RCS Tsat = 623°F</span>. For 100°F subcooling margin, cold leg temperature must be ≤523°F. Since SGs are saturated and negligible delta-T exists across SG tubes, SG temperature must also be ~523°F. <span class="hi-exam">Saturation pressure at 523°F is approximately 820 psia (805 psig)</span>. <span class="hi-trap">Common trap: failing to convert psia to psig (off by ~15 psi).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q74</div>
+Condensate depression effects: decreasing condensate depression (from 5°F to 2°F) means the condensate is <span class="hi-exam">closer to saturation temperature</span>. This produces <span class="hi-exam">less NPSH at the condensate pump suction (closer to cavitation)</span> because there is less subcooling to prevent flashing. However, because the feedwater is hotter, the SGs must add <span class="hi-exam">less sensible heat to reach saturation — improving steam cycle thermal efficiency</span>. <span class="hi-trap">Trap: lower condensate depression means higher efficiency but worse pump cavitation margin — effects go in opposite directions.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Reactor Core and Fuel]], [[Reactor Coolant System]]
+- Related exam questions: [[2023 Q73]], [[2023 Q74]]
+- Related exam: [[2023 NRC Written Exam]]

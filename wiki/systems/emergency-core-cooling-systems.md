@@ -170,8 +170,13 @@ During a SBLOCA, a <span class="hi-exam">cold leg break produces the highest pea
 SI indication on one train failure: <span class="hi-exam">"SI & FW ISOL" Red lamp on 2RP4 FLASHES when SSPS trains disagree</span> (one train actuated, one did not). LIT solid means both trains actuated. The "SI RESET" Green bezel light is LIT on the train that FAILED to actuate, and extinguished on the train that DID actuate.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q76</div>
+ECCS injection at <span class="hi-exam">1450 psig</span>: both <span class="hi-exam">charging pumps (shutoff head 2670 psig) AND SI pumps (shutoff head 1520 psig) are injecting</span>. RHR pumps (shutoff head 170 psig) are NOT injecting at this pressure. <span class="hi-trap">Common trap: believing only charging pumps inject at 1450 psig because it is "close" to SI pump shutoff head — 1450 psig is below 1520 psig, so SI pumps deliver flow.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-LOCA Series]]
-- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]]
+- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]]
 - Related exam: [[2023 NRC Written Exam]]

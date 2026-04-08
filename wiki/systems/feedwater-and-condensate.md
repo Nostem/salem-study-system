@@ -68,8 +68,13 @@ CW waterbox tube leak alarms: a gross tube leak is confirmed by <span class="hi-
 SGFP trip response: DEHC automatically initiates turbine runback at <span class="val-trip">200% per minute</span> to 66% power. <span class="hi-exam">2CN47 (23/24/25 Heater String Bypass valve) immediately opens</span> and the polisher is bypassed. <span class="hi-trap">Manual runback from the DEHC panel uses 15% per minute rate. On a condensate pump trip, 2CN47 only opens if SGFP suction pressure drops below <span class="val-alarm">320 psig</span>; on a SGFP trip, 2CN47 opens regardless of suction pressure.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q74</div>
+Condensate depression: the temperature difference between the condenser saturation temperature and the actual condensate temperature. <span class="hi-exam">Decreasing condensate depression (e.g., 5°F to 2°F) raises thermal efficiency</span> (hotter feedwater means SGs add less sensible heat) but moves the condensate pumps <span class="hi-exam">closer to cavitation</span> (less subcooling = less NPSH at pump suction).
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]
-- Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]]
+- Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]]
 - Related exam: [[2023 NRC Written Exam]]

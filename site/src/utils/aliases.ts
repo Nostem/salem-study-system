@@ -16,4 +16,7 @@ export const ENTITY_ALIASES: Record<string, string> = {
   'SW': 'Service Water',
   'AFW': 'Auxiliary Feedwater',
   'PORVs': 'Power Operated Relief Valves',
+  'loss of RHR': 'AB.RHR-0001 — Loss of RHR',
+  'ATWS response': 'EOP-FRSM-1 — Response to Nuclear Power Generation',
+  'response to nuclear power generation': 'EOP-FRSM-1 — Response to Nuclear Power Generation',
 };

@@ -82,7 +82,12 @@ During LOCA recirculation, the RHR pumps take suction from the containment sump 
 - **[[TS 3/4.5 — ECCS]]** — RHR subsystems as part of ECCS
 - **[[TS 3/4.9 — Refueling|TS 3/4.9]]** — RHR requirements during refueling
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q79</div>
+Loss of RHR breaker reclosure: per OP-SA-108-106-1001 step 4.2.2, during an <span class="hi-exam">emergency condition</span> the <span class="hi-exam">Shift Manager</span> can authorize one attempt at reclosing a failed breaker without an investigation, if the equipment is essential for plant stability. <span class="hi-trap">Does NOT require Plant Manager authorization or STA concurrence.</span> In the exam scenario, Time to Core Boiling <15 minutes with both RHR pumps lost constitutes an emergency condition.
+</div>
+
 ## Connections
 
-- Related exam questions: [[2023 Q30]]
+- Related exam questions: [[2023 Q30]], [[2023 Q79]]
 - Related exam: [[2023 NRC Written Exam]]

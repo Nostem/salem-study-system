@@ -80,6 +80,7 @@ status: draft
 - [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - [[EOP-FRCE-2 — Response to Containment Flooding]]
 - [[EOP-FRCE-3 — Response to High Containment Radiation Levels]]
+- [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
 
 ## Abnormal Procedures
 - [[AB.LOOP-0001 — Loss of All Offsite Power]]
@@ -95,6 +96,7 @@ status: draft
 - [[AB.RAD-0001 — Radiation Monitor Abnormality]]
 - [[AB.FIRE-0001 — Control Room Fire Response]]
 - [[AB.CN-0001 — Condensate System Abnormality]]
+- [[AB.RHR-0001 — Loss of RHR]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]

@@ -65,7 +65,12 @@ CS pump power supplies: <span class="hi-exam">21 CS pump on A 4KV Vital Bus, 22 
 - **[[TS 3/4.6 — Containment]]** — TS 3.6.2.1 (Spray System), TS 3.6.2.2 (Spray Additive)
 - 1 spray system inoperable: 72 hours, then 48 more hours, or Cold Shutdown
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q77</div>
+EOP-LOCA-1 Step 7.4 (stop CS pumps when containment pressure below 13 psig) is a <span class="hi-exam">continuous action step</span>. Per OP-SA-108-101-2002: continuous action steps are <span class="hi-exam">NOT performed during a Red or Purple path FRP</span>. Even if conditions to stop CS pumps are met, the crew must transition to the FRP and not perform Step 7.4.
+</div>
+
 ## Connections
 
-- Related exam questions: [[2023 Q40]]
+- Related exam questions: [[2023 Q40]], [[2023 Q77]]
 - Related exam: [[2023 NRC Written Exam]]

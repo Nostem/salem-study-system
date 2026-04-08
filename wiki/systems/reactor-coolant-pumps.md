@@ -85,6 +85,11 @@ Per AB.RCP-0001: loss of CCW to motor bearings — <span class="hi-exam">5 minut
 EOP-TRIP-4 RCP restart priority for PZR spray: <span class="hi-exam">23 RCP preferred (single pump for normal spray)</span>. If 23 unavailable: 21+22 or 21+24 (two pumps needed for spray via auxiliary spray line). Forced convection permits faster cooldown with less potential for upper head voiding. Single pump operation preferred over two.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q78</div>
+RCP vibration abnormal response: with shaft vibration at <span class="hi-exam">16 mils (below 20 mil trip limit)</span> and motor flange vibration at <span class="hi-exam">3 mils (below 5 mil trip limit)</span>, the Attachment 1 trip criteria of AB.RCP-0001 are NOT exceeded. Per Step 3.10, the CRS/SM determines if a <span class="hi-exam">controlled Unit shutdown</span> is required — immediate RCP trip and reactor trip are not warranted. <span class="hi-trap">OHA D-36 directs entry into AB.RCP-0001 but does NOT direct tripping the reactor or stopping the RCP.</span>
+</div>
+
 ## Loss of Offsite Power
 
 On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel moment of inertia (82000 lb-ft²) provides coastdown flow sufficient to prevent fuel damage. (UFSAR 5.5.1.3.13)
@@ -104,5 +109,5 @@ Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barr
 
 ## Connections
 
-- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]]
+- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]]
 - Related exam: [[2023 NRC Written Exam]]

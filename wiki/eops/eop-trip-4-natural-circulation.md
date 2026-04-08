@@ -19,7 +19,12 @@ Provides guidance for plant cooldown using natural circulation when forced RCS f
 <span class="hi-exam">RCP restart priority order: 23, 21+22 or 21+24, 21</span> (to provide normal PZR spray). Single pump operation preferred in the loop providing best spray. Primary reason for starting RCPs: <span class="hi-exam">forced convection permits faster cooldown with less potential for upper head voiding.</span> Note N1-1 allows two RCPs for better spray if 23 unavailable.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q71</div>
+Borating during natural circulation cooldown to Cold Shutdown: <span class="hi-exam">more time is required for complete boron mixing</span> due to significantly lower RCS flow rate without RCPs. Once mixing is complete, the reactivity effect per ppm boron change is <span class="hi-exam">equal to</span> what it would be during forced circulation. The key distinction is mixing time, not reactivity worth.
+</div>
+
 ## Connections
 - Related systems: [[Reactor Coolant System]], [[Reactor Coolant Pumps]], [[Pressurizer]]
-- Related exam questions: [[2023 Q26]]
+- Related exam questions: [[2023 Q26]], [[2023 Q71]]
 - Related exam: [[2023 NRC Written Exam]]

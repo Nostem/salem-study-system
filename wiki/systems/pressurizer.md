@@ -93,6 +93,11 @@ PRT drain path per S2.OP-SO.PZR-0003: open <span class="hi-exam">2PR14 to drain 
 MPC fails low (0% output): <span class="hi-exam">spray valves close</span> (controlled by MPC) and <span class="hi-exam">backup heaters energize</span> → RCS pressure rises → PORVs open at <span class="val-trip">2335 psig</span>. <span class="hi-trap">PORVs are interlocked directly from PZR pressure, NOT from MPC output</span> — MPC failure does not prevent PORV actuation.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q76</div>
+PZR vapor space leak (SBLOCA): at RCS pressure <span class="hi-exam">1450 psig</span> stable with subcooling 10°F and PZR level 30% rising, both <span class="hi-exam">charging and SI pumps are injecting</span>. SI termination criteria in EOP-LOCA-1 are met — transition to EOP-TRIP-3, not directly to EOP-LOCA-2. Ultimately: LOCA-1 → TRIP-3 → LOCA-2.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.4]]** — Pressurizer (level and heater requirements)
@@ -100,5 +105,5 @@ MPC fails low (0% output): <span class="hi-exam">spray valves close</span> (cont
 
 ## Connections
 
-- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q32]], [[2023 Q34]]
+- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q32]], [[2023 Q34]], [[2023 Q76]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -25,7 +25,12 @@ The Concurrent Step symbol means initiate the stated action while continuing wit
 - **Wait Step** — wait for the stated conditions to be met before proceeding
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q77</div>
+Per step 2.16.2: <span class="hi-exam">continuous action steps should NOT be performed when a Red or Purple path FRP is in progress</span>. Example: EOP-LOCA-1 Step 7.4 (stop CS pumps) is a continuous action — even if conditions to stop CS pumps are met, the step is not performed when transitioning to a Purple path FRP (Thermal Shock). <span class="hi-trap">The CRS does not have discretion to override this rule. EOP-LOCA-3 has a separate specific Note (N1-1) that prohibits all FRPs during cold leg recirculation switchover — that is a different prohibition.</span>
+</div>
+
 ## Connections
 
-- Related exam questions: [[2023 Q23]]
+- Related exam questions: [[2023 Q23]], [[2023 Q77]]
 - Related exam: [[2023 NRC Written Exam]]
