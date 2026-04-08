@@ -33,7 +33,12 @@ if (slug.startsWith('exams/') && slug.includes('-written-exam')) {
     const allArticles = await getCollection('wiki');
     const questionArticles = allArticles
       .filter((a) => a.id.startsWith(`exams/${year}/q`))
-      .sort((a, b) => a.id.localeCompare(b.id));
+      .sort((a, b) => {
+        // Numeric sort: extract question number from filename (q1, q10, q100)
+        const numA = parseInt(a.id.match(/\/q(\d+)/)?.[1] ?? '0');
+        const numB = parseInt(b.id.match(/\/q(\d+)/)?.[1] ?? '0');
+        return numA - numB;
+      });
 
     for (const q of questionArticles) {
       const rendered = await render(q);
@@ -54,10 +59,18 @@ if (slug.startsWith('exams/') && slug.includes('-operating-exam')) {
     const year = yearMatch[1];
     const allArticles = await getCollection('wiki');
 
-    // Embed JPMs
+    // Embed JPMs — sort: admin (ro, sro) → in-plant → sim
+    const jpmTypeOrder: Record<string, number> = { 'ro': 0, 'sro': 1, 'ip': 2, 'sim': 3 };
     const jpmArticles = allArticles
       .filter((a) => a.id.startsWith(`exams/${year}/jpm-`))
-      .sort((a, b) => a.id.localeCompare(b.id));
+      .sort((a, b) => {
+        const typeA = a.id.match(/jpm-(ro|sro|ip|sim)/)?.[1] ?? '';
+        const typeB = b.id.match(/jpm-(ro|sro|ip|sim)/)?.[1] ?? '';
+        const orderA = jpmTypeOrder[typeA] ?? 99;
+        const orderB = jpmTypeOrder[typeB] ?? 99;
+        if (orderA !== orderB) return orderA - orderB;
+        return a.id.localeCompare(b.id);
+      });
 
     for (const jpm of jpmArticles) {
       const rendered = await render(jpm);
