@@ -16,9 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 When proceeding through 2-EOP-TRIP-3, SI Termination, you come across the following symbol at Step 1:<br><br>
 <div style="display:flex;justify-content:center;margin:16px 0;">
-<svg width="180" height="110" viewBox="0 0 180 110">
-  <path d="M 10 10 L 120 10 L 170 40 L 120 70 L 90 70 L 90 100 L 60 70 L 10 70 Z" fill="none" stroke="#c8cdd5" stroke-width="2"/>
-</svg>
+<img src="/salem-study-system/exam-images/2023-q23-symbol.png" alt="Concurrent Step Symbol" style="max-width:250px;background:white;padding:8px;border-radius:4px;">
 </div>
 What does the symbol denote?
 </div>
