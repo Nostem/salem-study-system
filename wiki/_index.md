@@ -60,6 +60,7 @@ status: draft
 
 ## NRC Exams
 - [[2023 NRC Written Exam]]
+- [[2023 NRC Operating Exam]]
 
 ## Concepts
 - [[Nuclear Design]]

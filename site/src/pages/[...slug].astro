@@ -46,6 +46,45 @@ if (slug.startsWith('exams/') && slug.includes('-written-exam')) {
     }
   }
 }
+
+// Auto-embed JPMs and scenarios for operating exam master articles
+if (slug.startsWith('exams/') && slug.includes('-operating-exam')) {
+  const yearMatch = slug.match(/exams\/(\d{4})-operating-exam/);
+  if (yearMatch) {
+    const year = yearMatch[1];
+    const allArticles = await getCollection('wiki');
+
+    // Embed JPMs
+    const jpmArticles = allArticles
+      .filter((a) => a.id.startsWith(`exams/${year}/jpm-`))
+      .sort((a, b) => a.id.localeCompare(b.id));
+
+    for (const jpm of jpmArticles) {
+      const rendered = await render(jpm);
+      const jpmTitle = jpm.data.title ?? jpm.id;
+      embeddedQuestions.push({
+        Content: rendered.Content,
+        title: jpmTitle,
+        slug: jpm.id,
+      });
+    }
+
+    // Embed scenarios
+    const scenarioArticles = allArticles
+      .filter((a) => a.id.startsWith(`exams/scenarios/${year}-scenario-`))
+      .sort((a, b) => a.id.localeCompare(b.id));
+
+    for (const sc of scenarioArticles) {
+      const rendered = await render(sc);
+      const scTitle = sc.data.title ?? sc.id;
+      embeddedQuestions.push({
+        Content: rendered.Content,
+        title: scTitle,
+        slug: sc.id,
+      });
+    }
+  }
+}
 ---
 
 <ArticleLayout
