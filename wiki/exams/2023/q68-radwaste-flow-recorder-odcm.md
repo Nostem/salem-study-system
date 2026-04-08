@@ -16,7 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
 - Salem Unit 2 is at 100% power<br>
-- Release of 21 CVES Monitor Tank is in progress per S2.OP-SO.WL-0001, Release of Radioactive Liquid Waste from 21 CVES Monitor Tank<br>
+- Release of 21 CVCS Monitor Tank is in progress per S2.OP-SO.WL-0001, Release of Radioactive Liquid Waste from 21 CVCS Monitor Tank<br>
 <br>
 <strong>Then:</strong><br>
 - 2FR1064, Radwaste Overboard Discharge Flow Recorder, fails low<br>

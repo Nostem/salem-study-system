@@ -10,7 +10,7 @@ aliases:
 
 ## Purpose
 
-Provides direction for release of radioactive liquid waste from Unit 2 CVES Monitor Tanks.
+Provides direction for release of radioactive liquid waste from Unit 2 CVCS Monitor Tanks.
 
 ## Key Actions / Information
 

@@ -46,7 +46,7 @@ Environmental monitoring program samples air, water, soil, vegetation, fish, and
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q61</div>
-Liquid Radwaste Release (CVES Monitor Tank): release path through CC Heat Exchanger and CW system. <span class="hi-exam">Only one circulator is required to be in service to allow a release to continue.</span> The 1R18 radiation monitor does not isolate/close the 1WL51 overboard valve on loss of flow.
+Liquid Radwaste Release (CVCS Monitor Tank): release path through CC Heat Exchanger and CW system. <span class="hi-exam">Only one circulator is required to be in service to allow a release to continue.</span> The 1R18 radiation monitor does not isolate/close the 1WL51 overboard valve on loss of flow.
 </div>
 
 <div class="callout callout-exam">

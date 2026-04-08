@@ -773,7 +773,7 @@ questions:
     tier_group: "Tier 2/Group 2"
 
   - number: 61
-    topic: "Liquid Radwaste Release / Circulator Trip"
+    topic: "Liquid Radwaste Release / CW Circulator Trip"
     answer: A
     cognitive_level: "Comprehension/Analysis"
     source: "New"

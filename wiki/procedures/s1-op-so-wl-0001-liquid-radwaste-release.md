@@ -11,7 +11,7 @@ aliases:
 
 ## Purpose
 
-Provides direction for release of radioactive liquid waste from CVES Monitor Tanks through the CC Heat Exchanger and CW system discharge path.
+Provides direction for release of radioactive liquid waste from CVCS Monitor Tanks through the CC Heat Exchanger and CW system discharge path.
 
 ## Key Actions / Information
 
