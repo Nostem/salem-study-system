@@ -1,0 +1,48 @@
+exam: 2023
+type: operating
+ilot_class: "21-01"
+jpms:
+  - id: "RO-A1.a"
+    title: "Perform Control Room Logs"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-DL.ZZ-0003"
+    pages: "1-13"
+    ka: "G2.1.25"
+    ka_importance_ro: 3.9
+    ka_importance_sro: 4.2
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1150410501"
+
+  - id: "RO-A1.b"
+    title: "Determine Time to Makeup to Unit 2 RWST"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-SO.CVC-0006"
+    pages: "14-26"
+    ka: "G2.1.23"
+    ka_importance_ro: 4.3
+    ka_importance_sro: 4.4
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0040170101"
+
+  - id: "RO-A2"
+    title: "Perform Seven Day AFD Surveillance"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-ST.NIS-0001"
+    pages: "27-40"
+    ka: "G2.2.12"
+    ka_importance_ro: 3.7
+    ka_importance_sro: 4.1
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0150010201"
