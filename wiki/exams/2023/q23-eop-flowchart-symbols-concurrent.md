@@ -44,5 +44,5 @@ What does the symbol denote?
 
 ## Connections
 
-- Related procedures: [[OP-SA-108-101-2000 — EOP Usage and Flowchart Symbols]]
+- Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
 - Related exam: [[2023 NRC Written Exam]]

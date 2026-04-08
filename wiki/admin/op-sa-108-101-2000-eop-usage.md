@@ -1,5 +1,5 @@
 ---
-title: "OP-SA-108-101-2000 — EOP Usage and Flowchart Symbols"
+title: "OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program"
 category: admin
 status: draft
 aliases:
@@ -8,7 +8,7 @@ aliases:
   - flowchart symbols
 ---
 
-# OP-SA-108-101-2000 — EOP Usage and Flowchart Symbols
+# OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program
 
 ## Purpose
 

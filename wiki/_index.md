@@ -88,7 +88,7 @@ status: draft
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
-- [[OP-SA-108-101-2000 — EOP Usage and Flowchart Symbols]]
+- [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
