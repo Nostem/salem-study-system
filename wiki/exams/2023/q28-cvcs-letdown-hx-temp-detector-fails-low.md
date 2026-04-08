@@ -15,10 +15,12 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 2 at 100% power<br>
-• 2CC71 Letdown HX Temp Control Valve is in AUTO<br>
-• 2TE-130 fails LOW<br><br>
-What is the effect on letdown temperature and RCS Tavg?
+• Salem Unit 2 is at 100% power<br>
+• 2CC71, Letdown HX Temp Control Valve, is in Auto<br>
+Then:<br>
+• 2TE-130, temperature detector for 2CC71, fails LOW<br><br>
+Which of the following describes the impact of this failure?<br><br>
+1. Letdown temperature will _(1)_ and the RCS T-avg temperature will _(2)_.
 </div>
 
 <div style="margin-bottom:14px;">

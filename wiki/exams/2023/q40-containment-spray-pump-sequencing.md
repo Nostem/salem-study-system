@@ -15,12 +15,12 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 2 LOCA in progress<br>
-• Containment pressure 10 psig and rising<br>
-• All safeguards started except 2B SEC has failed<br>
-• SECs have NOT been reset<br><br>
-CS pumps: 21 on A bus (A SEC), 22 on C bus (C SEC).<br><br>
-How many CS pumps are available and will they auto-start on Hi-Hi containment pressure?
+• Salem Unit 2 experienced a LOCA<br>
+• Containment pressure is 10 psig and slowly rising<br>
+• ALL available safeguards equipment have started with the exception that 2B SEC failed to actuate<br>
+• SECs have NOT been RESET<br><br>
+Based on the conditions above, which of the following completes the statement?<br><br>
+_(1)_ containment spray pump(s) is/are still available from a Class 1E vital power source and _(2)_ automatically start when containment pressure exceeds the containment pressure HI-HI setpoint.
 </div>
 
 <div style="margin-bottom:14px;">

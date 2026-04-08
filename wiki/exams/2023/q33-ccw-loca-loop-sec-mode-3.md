@@ -15,9 +15,9 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 2 LOCA concurrent with LOOP<br>
-• Crew is in EOP-TRIP-1<br><br>
-What is the status of the CCW system?
+• Salem Unit 2 experienced a LOCA and a Loss of Off-site Power<br>
+• The crew is implementing 2-EOP-TRIP-1, Reactor Trip or Safety Injection<br><br>
+Which of the following describes the operational impact on the Component Cooling Water System (CCW) and the reason why?
 </div>
 
 <div style="margin-bottom:14px;">

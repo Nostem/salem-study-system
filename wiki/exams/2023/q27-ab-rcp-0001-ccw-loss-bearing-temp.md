@@ -15,10 +15,12 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 2 at 100% power<br>
-• OHA D-20 alarming<br>
-• All RCP motor bearing temperatures are rising<br><br>
-Per AB.RCP-0001, how long does the operator have to restore CCW before tripping the reactor, and at what motor bearing temperature must the reactor be tripped?
+• Salem Unit 2 is at 100% power<br>
+Then:<br>
+• OHA D-20, 21 RCP BRG CLG WTR FLO LO, is Alarming<br>
+• RO reports that all RCP motor bearing temperatures are rising<br><br>
+Which of the following completes the statement?<br><br>
+Per S2.OP-AB.RCP-0001, RCP Abnormality, the crew has a MAXIMUM of _(1)_ minutes to restore CCW flow OR is required to trip the reactor and stop the RCP anytime RCP motor bearing temperatures exceeds _(2)_.
 </div>
 
 <div style="margin-bottom:14px;">

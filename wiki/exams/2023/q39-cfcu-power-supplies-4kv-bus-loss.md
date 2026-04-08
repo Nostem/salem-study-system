@@ -15,11 +15,10 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 2 LOCA with SI actuated<br>
+• Salem Unit 2 experienced a reactor trip and safety injection actuation due to a LOCA<br>
 • 23 CFCU is CIT for maintenance<br>
-• 2B 4KV Vital Bus de-energized on bus differential<br><br>
-CFCU power supplies: 21-A bus, 22-B bus, 23-C bus, 24-B bus, 25-C bus.<br><br>
-Which CFCUs are running?
+• 2B 4KV Vital Bus de-energized on Bus Differential protection<br><br>
+Which of the following identifies the status of the CFCUs?
 </div>
 
 <div style="margin-bottom:14px;">

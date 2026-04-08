@@ -15,10 +15,13 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 1 in Mode 4<br>
-• 11 RHR pump and HX in service<br>
-• Cooldown rate approaching maximum TS limit<br><br>
-How do you lower the cooldown rate while maintaining constant RHR flow?
+• Salem Unit 1 is in MODE 4 performing a shutdown.<br>
+• 11 RHR Pump is in service<br>
+• 11 RHR Heat Exchanger is in service<br>
+• 11RH18 and 12RH18, RHR HX Flow Cont. Valves, are being throttled<br>
+• 1RH20, RHR HX Bypass Valve, is being throttled<br>
+• The BOP operator has determined that the cooldown is approaching the maximum allowable Technical Specification limit<br><br>
+Which of the following describes the actions that the operator will take to LOWER the cooldown rate while maintaining a constant RHR flow rate?
 </div>
 
 <div style="margin-bottom:14px;">

@@ -15,10 +15,11 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 2 at 100% power<br>
-• PRT LEVEL HI-LO alarm LIT<br>
-• PRT level at 90%<br><br>
-What is the drain path for the PRT?
+• Salem Unit 2 is at 100% power<br>
+• Console Alarm PRT LEVEL HI-LO is LIT<br>
+• PRT level is 90%<br><br>
+Which of the following completes the statement?<br><br>
+PRT level will be lowered ...
 </div>
 
 <div style="margin-bottom:14px;">

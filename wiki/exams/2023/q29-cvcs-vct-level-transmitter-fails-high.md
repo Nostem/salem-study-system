@@ -15,10 +15,10 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 2 at 100% power<br>
-• 21 Charging Pump in service<br>
-• 2LT-112 VCT level fails HIGH<br><br>
-What is the expected plant response?
+• Salem Unit 2 is at 100% power<br>
+• 21 Charging Pump is in service<br>
+• 2LT-112, VCT level, transmitter fails HIGH<br><br>
+Which of the following describes the operational impact to the CVCS system and the effect on the running charging pump, if any (assume no operator action taken)?
 </div>
 
 <div style="margin-bottom:14px;">

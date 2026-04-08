@@ -15,11 +15,14 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 2 at 100% power<br>
-• MPC in AUTO<br>
-• PZR Pressure Ch I selected for control, Ch IV for alarm<br>
-• MPC output fails LOW (0%)<br><br>
-What is the RCS pressure response?
+• Salem Unit 2 is at 100% power<br>
+• Master Pressure Controller (MPC) is in AUTO<br>
+• PZR Pressure Channel I is selected for Control<br>
+• PZR Pressure Channel IV is selected for Alarm<br>
+Then:<br>
+• A malfunction with the MPC causes the output demand to fail LOW (0%)<br><br>
+Which of the following identifies the effect on RCS pressure and the expected system response, assuming no operator action?<br><br>
+RCS pressure will...
 </div>
 
 <div style="margin-bottom:14px;">

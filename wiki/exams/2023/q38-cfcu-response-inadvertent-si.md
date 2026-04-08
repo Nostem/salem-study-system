@@ -15,11 +15,12 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-• Unit 2 at 100% power<br>
-• 21-24 CFCUs running in high speed<br>
-• 25 CFCU in standby<br>
-• An inadvertent SI occurs<br><br>
-When do CFCUs restart, and what is required to regain manual control for high speed?
+• Salem Unit 2 is at 100% power<br>
+• 21, 22, 23 and 24 CFCUs are running in HIGH speed with 25 CFCU in standby<br>
+• An inadvertent SI actuation occurs<br><br>
+Which of the following completes both statements?<br><br>
+1. Following SI actuation, all CFCUs will start in LOW speed _(1)_.<br>
+2. To restore CFCUs to HIGH speed operation, _(2)_ must be RESET.
 </div>
 
 <div style="margin-bottom:14px;">
