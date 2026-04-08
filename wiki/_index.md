@@ -87,6 +87,8 @@ status: draft
 - [[AB.RC-0002 — High Activity in the RCS]]
 - [[AB.GRID-0001 — Grid Disturbance]]
 - [[AB.RCP-0001 — RCP Abnormality]]
+- [[AB.CA-0001 — Loss of Control Air]]
+- [[AB.460-0001 — Loss of 2A 460V Bus]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
@@ -96,3 +98,7 @@ status: draft
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
 - [[S2.OP-SO.PZR-0003 — PRT Operation]]
 - [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]]
+- [[S2.OP-IO.ZZ-0004 — Power Operation]]
+- [[S2.OP-SO.125-0004 — 125VDC Ground Detection]]
+- [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]]
+- [[S2.OP-AR.ZZ-0012 — Console Alarm Response]]
