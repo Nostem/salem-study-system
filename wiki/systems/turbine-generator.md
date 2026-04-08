@@ -64,5 +64,5 @@ ATWS turbine trip verification (EOP-FRSM-1 Step 6): confirmed by <span class="hi
 
 ## Connections
 
-- Related exam questions: [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]]
+- Related exam questions: [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -19,4 +19,12 @@ export const ENTITY_ALIASES: Record<string, string> = {
   'loss of RHR': 'AB.RHR-0001 — Loss of RHR',
   'ATWS response': 'EOP-FRSM-1 — Response to Nuclear Power Generation',
   'response to nuclear power generation': 'EOP-FRSM-1 — Response to Nuclear Power Generation',
+  'SG tube leak': 'AB.SG-0001 — Steam Generator Tube Leak',
+  'NIS malfunction': 'AB.NIS-0001 — Nuclear Instrumentation System Malfunction',
+  'control room evacuation': 'AB.CR-0001 — Control Room Evacuation',
+  'rapid load reduction': 'AB.LOAD-0001 — Rapid Load Reduction',
+  'inadequate core cooling': 'EOP-FRCC-1 — Response to Inadequate Core Cooling',
+  'SG overpressure': 'EOP-FRHS-2 — Response to Steam Generator Overpressure',
+  'adverse containment': 'Adverse Containment',
+  'adverse containment conditions': 'Adverse Containment',
 };

@@ -63,7 +63,12 @@ On SI signal with loss of offsite power:
 - 1 DG inoperable: 72 hours; demonstrate OPERABILITY of remaining DGs within 24 hours
 - 1 DG AND 1 offsite circuit inoperable: 12 hours
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q89</div>
+Common mode failure surveillance scheduling: per S2.OP-ST.DG-0001/2/3 P&L 2.1.6, <span class="hi-exam">only one DG per unit may be synchronized to the grid at a time</span> (Reg Guide 1.108, Section C.2.b). Most expeditious method for 5 remaining EDGs: <span class="hi-exam">run one EDG at a time on both units simultaneously</span> (e.g., 1B and 2B at the same time). <span class="hi-trap">Trap: running all EDGs on one unit simultaneously violates the P&L — you cannot run 1B and 1C simultaneously even though it would be faster.</span>
+</div>
+
 ## Connections
 
-- Related exam questions: [[2023 Q12]], [[2023 Q37]], [[2023 Q48]]
+- Related exam questions: [[2023 Q12]], [[2023 Q37]], [[2023 Q48]], [[2023 Q89]]
 - Related exam: [[2023 NRC Written Exam]]

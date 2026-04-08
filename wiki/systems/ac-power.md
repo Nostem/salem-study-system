@@ -64,3 +64,7 @@ Provides AC electrical power to all station auxiliaries during startup, operatio
 
 ## Connections
 
+- Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.LOAD-0001 — Rapid Load Reduction]]
+- Related exam questions: [[2023 Q88]]
+- Related exam: [[2023 NRC Written Exam]]
+

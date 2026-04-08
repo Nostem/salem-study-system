@@ -143,5 +143,6 @@ Fire Protection Containment Isolation (2FP147): on a valid fire detected inside 
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]]
-- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]]
+- Related concepts: [[Adverse Containment]]
+- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]]
 - Related exam: [[2023 NRC Written Exam]]

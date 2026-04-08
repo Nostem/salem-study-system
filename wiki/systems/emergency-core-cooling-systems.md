@@ -175,8 +175,14 @@ SI indication on one train failure: <span class="hi-exam">"SI & FW ISOL" Red lam
 ECCS injection at <span class="hi-exam">1450 psig</span>: both <span class="hi-exam">charging pumps (shutoff head 2670 psig) AND SI pumps (shutoff head 1520 psig) are injecting</span>. RHR pumps (shutoff head 170 psig) are NOT injecting at this pressure. <span class="hi-trap">Common trap: believing only charging pumps inject at 1450 psig because it is "close" to SI pump shutoff head — 1450 psig is below 1520 psig, so SI pumps deliver flow.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q87</div>
+EOP-TRIP-4 CAS directs <span class="hi-exam">SI actuation</span> when PZR level cannot be maintained > 4% (or subcooling reaches 0 degrees F). With charging maxed out (2CV55 and 2CV71 fully open) and PZR level still lowering at 10%, the CAS criterion is met — actuate SI and return to EOP-TRIP-1. <span class="hi-trap">Trap: TRIP-4 does NOT direct transition to EOP-LOCA-1 — it directs SI actuation and return to TRIP-1.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-LOCA Series]]
-- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]]
+- Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
+- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]]
 - Related exam: [[2023 NRC Written Exam]]

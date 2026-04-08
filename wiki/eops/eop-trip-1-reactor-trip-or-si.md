@@ -25,9 +25,19 @@ Referenced for entry on manual reactor trip. Step 12 covers Safeguard Valve Alig
 Used to assess containment spray actuation status.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q83</div>
+Per AB.CR-0001, <span class="hi-exam">EOPs (including EOP-TRIP-1) are NOT applicable</span> during Control Room Evacuation — they should be used for information only or as directed by the TSC.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q87</div>
+EOP-TRIP-4 CAS directs <span class="hi-exam">actuate SI and return to EOP-TRIP-1</span> when PZR level cannot be maintained > 4% or subcooling reaches 0 degrees F. This is the correct transition — TRIP-4 does NOT direct entry into EOP-LOCA-1.
+</div>
+
 ## Connections
 
 - Related systems: [[Instrumentation and Controls]], [[Emergency Core Cooling Systems]]
-- Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]]
-- Related exam questions: [[2023 Q1]], [[2023 Q21]]
+- Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]]
+- Related exam questions: [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -207,9 +207,15 @@ In-Core Temperature Monitoring (CET) System: reference junction box is located o
 SSPS Train Disagreement: <span class="hi-exam">"SI & FW ISOL" Red lamp on 2RP4 FLASHES when one Train of SI has actuated and the other has not</span> (train disagreement). Lamp is LIT solid when both trains actuate. The "SI RESET" Green bezel light on the failed train's Safeguards panel will be LIT (indicating that train did not actuate).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q82</div>
+P-6 permissive and IR NIS overlap: when P-6 is LIT, IR channels should indicate approximately <span class="hi-exam">1E-5% power</span>. If an IR channel reads 1E-8% power with P-6 LIT, that channel is not indicating the expected SR/IR overlap and is INOPERABLE. Per TS 3.3.1.1 bases, the <span class="hi-exam">24-hour action time</span> for one inoperable IR channel accounts for the <span class="hi-exam">low probability of failure of the operable IR channel</span> during this period. <span class="hi-trap">Trap: the bases cite low probability of channel failure, NOT low probability of reactivity events.</span>
+</div>
+
 ## Connections
 
 - Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
+- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
 - Related exams: [[2023 NRC Written Exam]]
   - [[2023 Q1]] — Low RC flow 2/3 coincidence / P-7 vs P-8 permissive logic
   - [[2023 Q5]] — OT Delta-T pressure input / OP Delta-T has no pressure input
@@ -227,3 +233,4 @@ SSPS Train Disagreement: <span class="hi-exam">"SI & FW ISOL" Red lamp on 2RP4 F
   - [[2023 Q65]] — SSPS train disagreement / SI & FW ISOL lamp flashing / SI RESET green light
   - [[2023 Q72]] — Subcritical SR counts stabilize higher / SUR decays to zero after rod withdrawal
   - [[2023 Q80]] — ATWS FRSM-1 turbine trip verification via stop valve bi-stables on 2RP4
+  - [[2023 Q82]] — IR NIS P-6 permissive / TS 3.3.1.1 bases for 24-hour action time

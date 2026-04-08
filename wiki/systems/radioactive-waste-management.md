@@ -54,8 +54,13 @@ Liquid Radwaste Release (CVCS Monitor Tank): release path through CC Heat Exchan
 ODCM liquid effluent monitoring (3.3.8): <span class="hi-exam">loss of 2FR1064 flow recorder does NOT automatically close the 2WL51 overboard valve</span> — loss of flow is not a design feature of the 2R18 process radiation monitor. Per ODCM Action 29, release may continue if <span class="hi-exam">effluent flow is estimated once per 4 hours</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q90</div>
+Containment pressure relief and ODCM 3.3.9: per Table 3.3-13 Item 3.a, either <span class="hi-exam">2R12A OR 2R41A & D channels</span> is required for containment pressure relief. If only 2R12A fails (power supply failure) and 2R41 channels remain operable, ODCM 3.3.9 is MET — <span class="hi-exam">no compensatory actions required to recommence the relief</span>. <span class="hi-trap">Trap: Action 37 (two independent samples + verified release rate calculations) only applies if BOTH 2R12A AND 2R41A & D are inoperable. Action 33 (grab samples every 8 hours) applies to the Plant Vent Radiation Monitor, not the containment atmosphere monitor.</span>
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Protection]]
-- Related exam questions: [[2023 Q61]], [[2023 Q68]]
+- Related exam questions: [[2023 Q61]], [[2023 Q68]], [[2023 Q90]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -95,8 +95,19 @@ SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG<
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators (tube integrity, inspection requirements)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q81</div>
+SG tube leak action levels per AB.SG-0001 Attachment 1: with leak rate <span class="hi-exam">>= 75 gpd AND rate of change >= 30 gpd/hr</span>, Action Level 3 requires <span class="hi-exam">reduce power to <= 50% in 1 hour and MODE 3 in the following 2 hours</span>. <span class="hi-trap">Trap: a 125 gpd leak rate trending at 30 gpd/hr meets the rate-of-change criterion for Action Level 3, not the 150 gpd absolute threshold (which requires MODE 3 in 6 hours).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q85</div>
+Security-redacted question testing SRO knowledge of EOP-FRHS-2, Response to Steam Generator Overpressure, in conjunction with security event procedures (K/A W/E13 G2.4.28). Reference: 2-EOP-FRHS-2 (R41).
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-SGTR-1]]
-- Related exam questions: [[2023 Q2]], [[2023 Q42]]
+- Related EOPs: [[EOP-SGTR-1]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]]
+- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]]
+- Related exam questions: [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]]
 - Related exam: [[2023 NRC Written Exam]]

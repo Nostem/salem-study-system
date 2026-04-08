@@ -24,7 +24,12 @@ Provides guidance for plant cooldown using natural circulation when forced RCS f
 Borating during natural circulation cooldown to Cold Shutdown: <span class="hi-exam">more time is required for complete boron mixing</span> due to significantly lower RCS flow rate without RCPs. Once mixing is complete, the reactivity effect per ppm boron change is <span class="hi-exam">equal to</span> what it would be during forced circulation. The key distinction is mixing time, not reactivity worth.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q87</div>
+EOP-TRIP-4 CAS (foldout page): if subcooling is <span class="hi-exam">0 degrees F OR PZR level cannot be maintained > 4%</span>, then <span class="hi-exam">actuate SI and go to EOP-TRIP-1</span>. With 2CV55 and 2CV71 fully open and PZR level at 10% and lowering, PZR level cannot be maintained — actuate SI. <span class="hi-trap">Trap: PZR heaters will NOT energize with level < 17%; aligning charging to RWST/BIT and going to EOP-LOCA-1 is plausible but TRIP-4 does not direct entry into LOCA-1.</span>
+</div>
+
 ## Connections
-- Related systems: [[Reactor Coolant System]], [[Reactor Coolant Pumps]], [[Pressurizer]]
-- Related exam questions: [[2023 Q26]], [[2023 Q71]]
+- Related systems: [[Reactor Coolant System]], [[Reactor Coolant Pumps]], [[Pressurizer]], [[Emergency Core Cooling Systems]], [[Chemical and Volume Control System]]
+- Related exam questions: [[2023 Q26]], [[2023 Q71]], [[2023 Q87]]
 - Related exam: [[2023 NRC Written Exam]]

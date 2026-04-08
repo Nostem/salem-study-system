@@ -103,11 +103,17 @@ On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel mom
 
 Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barrier. (UFSAR 5.5.1.3.14)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q86</div>
+RCP #3 seal leak identification: <span class="hi-exam">STANDPIPE LEVEL-LO alarm</span> is the primary indicator of a #3 seal leak. Key diagnostic: #1 seal leakoff flow <span class="hi-exam">steady at 1.5 gpm</span> (normal — indicating intact #2 seal) while standpipe level is low. Action: <span class="hi-exam">make-up to the standpipe per ARP; power operation may continue</span>. AB.RCP-0001 does not direct actions for a #3 seal leak specifically. <span class="hi-trap">Trap: orderly shutdown and stop RCP within 8 hours is the action for a degraded #2 seal, not a #3 seal leak.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (minimum loops in operation by mode)
 
 ## Connections
 
-- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]]
+- Related procedures: [[AB.RCP-0001 — RCP Abnormality]]
+- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
 - Related exam: [[2023 NRC Written Exam]]
