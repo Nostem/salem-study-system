@@ -49,6 +49,6 @@ Based on the above conditions, the _(1)_ can authorize one attempt at reclosing 
 
 ## Connections
 
-- Related system: [[Residual Heat Removal]]
-- Related procedure: [[AB.RHR-0001]]
+- Related systems: [[Residual Heat Removal]]
+- Related procedures: [[AB.RHR-0001 — Loss of RHR]], [[OP-SA-108-106-1001 — Equipment Control and Large Motor Starting Criteria]]
 - Related exam: [[2023 NRC Written Exam]]
