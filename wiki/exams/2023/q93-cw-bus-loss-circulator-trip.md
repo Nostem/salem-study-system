@@ -16,7 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
 - Salem Unit 2 is at 100% power<br>
-- 21A CW Pump is CIT for waterbox cleaning<br>
+- 21A CW Pump is C/T for waterbox cleaning<br>
 <br>
 <strong>Then:</strong><br>
 - The 4KV Infeed breaker to the 24 CW bus fails opens<br>
