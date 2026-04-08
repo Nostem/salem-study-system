@@ -84,7 +84,7 @@ if (data && data.nodes.length > 1) {
         }
       });
 
-    // Labels
+    // Labels — only current article visible by default
     const label = g.append('g')
       .selectAll('text')
       .data(data.nodes)
@@ -95,10 +95,33 @@ if (data && data.nodes.length > 1) {
       .attr('font-weight', (d: GraphNode) => d.id === data.currentSlug ? '600' : '400')
       .attr('dx', 10)
       .attr('dy', 3)
-      .style('pointer-events', 'none');
+      .style('pointer-events', 'none')
+      .style('opacity', (d: GraphNode) => d.id === data.currentSlug ? 1 : 0);
 
-    // Tooltip on hover
-    node.append('title').text((d: GraphNode) => d.title);
+    // Hover — show labels for hovered node and its connections
+    node
+      .on('mouseover', (_event: any, d: GraphNode) => {
+        const connected = new Set<string>();
+        connected.add(d.id);
+        data.edges.forEach((e: any) => {
+          const src = typeof e.source === 'string' ? e.source : e.source.id;
+          const tgt = typeof e.target === 'string' ? e.target : e.target.id;
+          if (src === d.id) connected.add(tgt);
+          if (tgt === d.id) connected.add(src);
+        });
+        label.style('opacity', (n: GraphNode) => connected.has(n.id) ? 1 : 0);
+        node.attr('opacity', (n: GraphNode) => connected.has(n.id) ? 1 : 0.2);
+        link.attr('opacity', (e: any) => {
+          const src = typeof e.source === 'string' ? e.source : e.source.id;
+          const tgt = typeof e.target === 'string' ? e.target : e.target.id;
+          return connected.has(src) && connected.has(tgt) ? 1 : 0.05;
+        });
+      })
+      .on('mouseout', () => {
+        label.style('opacity', (n: GraphNode) => n.id === data.currentSlug ? 1 : 0);
+        node.attr('opacity', 1);
+        link.attr('opacity', 1);
+      });
 
     simulation.on('tick', () => {
       link
