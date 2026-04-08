@@ -13,7 +13,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Location:</strong> Simulator (Administrative)<br>
+<strong>Location:</strong> Classroom (Administrative)<br>
 <strong>Time-Critical:</strong> No<br>
 <strong>Alternate Path:</strong> No<br>
 <strong>Estimated Time:</strong> 10 minutes<br><br>
