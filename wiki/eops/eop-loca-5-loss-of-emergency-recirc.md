@@ -24,3 +24,4 @@ Step 23 — during RCS depressurization, upper head voiding IS expected with no 
 
 - Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]]
 - Related exam questions: [[2023 Q17]]
+- Related exam: [[2023 NRC Written Exam]]

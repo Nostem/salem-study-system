@@ -24,3 +24,4 @@ Step 4 — rapid boration via BAT pump and CV175. Adequate flow is 36 gpm. If fl
 
 - Related systems: [[Chemical and Volume Control System]]
 - Related exam questions: [[2023 Q19]]
+- Related exam: [[2023 NRC Written Exam]]

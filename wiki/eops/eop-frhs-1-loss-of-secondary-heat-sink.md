@@ -24,3 +24,4 @@ If the depressurization rate is set too high, high steam flow coincident with Lo
 
 - Related systems: [[Main Steam]], [[Auxiliary Feedwater]]
 - Related exam questions: [[2023 Q18]]
+- Related exam: [[2023 NRC Written Exam]]

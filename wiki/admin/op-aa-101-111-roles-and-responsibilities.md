@@ -41,3 +41,4 @@ When the on-duty SM leaves the Control Area, the Unit 2 CRS assumes Control Room
 
 - Related tech specs: [[TS 6.0 — Administrative Controls]]
 - Related exam questions: [[2023 Q6]]
+- Related exam: [[2023 NRC Written Exam]]

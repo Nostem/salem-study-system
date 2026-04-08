@@ -24,3 +24,4 @@ Service Water from CFCUs is NOT isolated by Phase A or Phase B containment isola
 
 - Related systems: [[Service Water]], [[Containment Fan Coil Units]], [[Containment Systems]]
 - Related exam questions: [[2023 Q24]]
+- Related exam: [[2023 NRC Written Exam]]

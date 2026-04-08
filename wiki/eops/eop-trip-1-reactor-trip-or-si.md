@@ -30,3 +30,4 @@ Used to assess containment spray actuation status.
 - Related systems: [[Instrumentation and Controls]], [[Emergency Core Cooling Systems]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]]
 - Related exam questions: [[2023 Q1]], [[2023 Q21]]
+- Related exam: [[2023 NRC Written Exam]]

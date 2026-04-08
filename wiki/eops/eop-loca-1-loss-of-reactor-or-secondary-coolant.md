@@ -25,3 +25,4 @@ After performing actions in EOP-LOCA-1 including SI reset and SEC reset, if a su
 
 - Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]]
 - Related exam questions: [[2023 Q37]]
+- Related exam: [[2023 NRC Written Exam]]

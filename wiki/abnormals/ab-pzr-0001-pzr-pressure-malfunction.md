@@ -24,3 +24,4 @@ When a PZR pressure channel fails high, actual RCS pressure lowers. This causes 
 
 - Related systems: [[Pressurizer]], [[Instrumentation and Controls]]
 - Related exam questions: [[2023 Q5]]
+- Related exam: [[2023 NRC Written Exam]]

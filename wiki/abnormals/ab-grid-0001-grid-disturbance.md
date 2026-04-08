@@ -24,3 +24,4 @@ Loss of a Salem unit causes 500KV voltage to lower. The remaining unit's MVARs r
 
 - Related systems: [[AC Power]], [[Turbine-Generator]]
 - Related exam questions: [[2023 Q15]]
+- Related exam: [[2023 NRC Written Exam]]

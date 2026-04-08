@@ -31,3 +31,4 @@ Trip reactor and stop affected RCP if ANY of the following validated conditions 
 ## Connections
 - Related systems: [[Reactor Coolant Pumps]], [[Component Cooling Water]]
 - Related exam questions: [[2023 Q27]]
+- Related exam: [[2023 NRC Written Exam]]

@@ -29,3 +29,4 @@ EOP-TRIP-3 uses a Concurrent Step symbol at Step 1 — initiate the stated actio
 
 - Related systems: [[Emergency Core Cooling Systems]], [[Containment Fan Coil Units]], [[Instrumentation and Controls]]
 - Related exam questions: [[2023 Q38]], [[2023 Q23]]
+- Related exam: [[2023 NRC Written Exam]]

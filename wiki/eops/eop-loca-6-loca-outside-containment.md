@@ -24,3 +24,4 @@ Step 2 — close 2SJ135 Cold Leg Discharge Valve to isolate an SI pump cold leg 
 
 - Related systems: [[Emergency Core Cooling Systems]]
 - Related exam questions: [[2023 Q16]]
+- Related exam: [[2023 NRC Written Exam]]

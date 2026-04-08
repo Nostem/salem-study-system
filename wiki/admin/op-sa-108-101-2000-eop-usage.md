@@ -28,3 +28,4 @@ The Concurrent Step symbol means initiate the stated action while continuing wit
 ## Connections
 
 - Related exam questions: [[2023 Q23]]
+- Related exam: [[2023 NRC Written Exam]]

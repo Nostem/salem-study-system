@@ -24,3 +24,4 @@ Step 2 — place all CFCUs in LOW speed. In LOW speed, dampers realign airflow t
 
 - Related systems: [[Containment Fan Coil Units]]
 - Related exam questions: [[2023 Q25]]
+- Related exam: [[2023 NRC Written Exam]]

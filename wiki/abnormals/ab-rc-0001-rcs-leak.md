@@ -24,3 +24,4 @@ CV71 backpressure control valve is used to adjust the split between charging flo
 
 - Related systems: [[Chemical and Volume Control System]], [[Reactor Coolant System]]
 - Related exam questions: [[2023 Q3]]
+- Related exam: [[2023 NRC Written Exam]]

@@ -24,3 +24,4 @@ Step 19.1 evaluates natural circulation conditions: subcooling >0 degrees F, SG 
 
 - Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]]
 - Related exam questions: [[2023 Q2]]
+- Related exam: [[2023 NRC Written Exam]]

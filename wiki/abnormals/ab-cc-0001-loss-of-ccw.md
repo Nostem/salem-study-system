@@ -24,3 +24,4 @@ Thermal barrier rupture indications: R17 A/B CCW radiation monitors in warning, 
 
 - Related systems: [[Component Cooling Water]], [[Reactor Coolant Pumps]]
 - Related exam questions: [[2023 Q4]]
+- Related exam: [[2023 NRC Written Exam]]

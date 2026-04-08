@@ -30,3 +30,4 @@ If ANY RCP seal inlet temperature is >=225 degrees F, seal injection is NOT perm
 
 - Related systems: [[DC Power]], [[Reactor Coolant Pumps]], [[Chemical and Volume Control System]]
 - Related exam questions: [[2023 Q9]], [[2023 Q10]]
+- Related exam: [[2023 NRC Written Exam]]

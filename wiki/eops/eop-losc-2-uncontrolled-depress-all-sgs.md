@@ -24,3 +24,4 @@ Step 26 — restore normal power to PZR heaters or transfer to emergency backup.
 
 - Related systems: [[Pressurizer]], [[AC Power]]
 - Related exam questions: [[2023 Q7]]
+- Related exam: [[2023 NRC Written Exam]]

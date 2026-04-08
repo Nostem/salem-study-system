@@ -22,3 +22,4 @@ Provides guidance for plant cooldown using natural circulation when forced RCS f
 ## Connections
 - Related systems: [[Reactor Coolant System]], [[Reactor Coolant Pumps]], [[Pressurizer]]
 - Related exam questions: [[2023 Q26]]
+- Related exam: [[2023 NRC Written Exam]]
