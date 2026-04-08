@@ -55,6 +55,13 @@ Transports steam from the four steam generators to the turbine-generator and oth
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.1 MSSVs, TS 3.7.1.5 MSIVs
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-e</div>
+EOP-FRHS-1 condensate pump feed: isolate all MS lines EXCEPT the selected SG (22 or 24 preferred). Place steam dumps in Manual, adjust valve demand to 0%, then place in <span class="hi-exam">MS Pressure Control</span>. Depressurize selected SG below <span class="hi-exam">575 psig</span>. Bypass <span class="hi-exam">Tavg Low-Low</span> when reached. When condensate flow established and WR level rising, place steam dumps in auto.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]
+- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related JPMs: [[2023 JPM Sim-e]]
+- Related exam: [[2023 NRC Operating Exam]]

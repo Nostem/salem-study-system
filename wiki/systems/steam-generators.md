@@ -105,9 +105,15 @@ SG tube leak action levels per AB.SG-0001 Attachment 1: with leak rate <span cla
 Security-redacted question testing SRO knowledge of EOP-FRHS-2, Response to Steam Generator Overpressure, in conjunction with security event procedures (K/A W/E13 G2.4.28). Reference: 2-EOP-FRHS-2 (R41).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 SRO-A4</div>
+ICMF peer check during SGTR: a release IS in progress because the <span class="hi-exam">TD AFW pump takes steam from 21 and 23 SGs</span> — with 23 SG ruptured and <span class="hi-exam">23MS45 not closed</span>, primary-to-secondary leakage exits through the TD AFW pump steam supply. No radiation monitor monitors this release path = <span class="hi-exam">unmonitored release in progress</span>.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-SGTR-1]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]]
-- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]]
+- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325-F2 — Initial Contact Message Form]]
 - Related exam questions: [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM SRO-A4]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

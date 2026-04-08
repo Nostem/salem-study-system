@@ -62,8 +62,15 @@ Instrument air supply line rupture to <span class="hi-exam">2MS132 (23 AFW Turbi
 - 2 pumps inoperable: Hot Standby in 6 hours
 - 3 pumps inoperable: immediately restore at least one
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 SRO-A4</div>
+ICMF during SGTR: TD AFW pump (23 AFW) takes steam from <span class="hi-exam">21 and 23 SGs</span>. With 23 SG ruptured and <span class="hi-exam">23MS45 not yet closed</span>, primary-to-secondary leakage exits through the TD AFW pump steam supply — constitutes an <span class="hi-exam">unmonitored release in progress</span>.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]
+- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related procedures: [[EP-SA-325-F2 — Initial Contact Message Form]]
 - Related exam questions: [[2023 Q41]], [[2023 Q43]], [[2023 Q44]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM SRO-A4]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

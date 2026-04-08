@@ -20,9 +20,15 @@ Provides operator actions for responding to area and process radiation monitor a
 If <span class="hi-exam">1R1A, Control Room Area, radiation monitor is in alarm</span>: coordinate with Unit 2 NCO to align Control Room Ventilation for ACCIDENT PRESSURIZED mode IAW S1.OP-SO.CAV-0001 and S2.OP-SO.CAV-0001. Direct Radiation Protection to survey area to determine source of activity rise. <span class="hi-trap">1R1A is an area radiation monitor — it does NOT automatically actuate CAV in AP Mode. Manual actuation from the affected unit's RP2 panel is required.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-h</div>
+Containment pressure relief high radiation: Attachment 1, Step 10 directs ensuring <span class="hi-exam">2VC1, 2VC4, 2VC5, and 2VC6 are CLOSED</span>. This provides an alternate procedural path for isolating the containment pressure relief if the applicant enters AB.RAD-0001 instead of using step 5.2.5 of S2.OP-SO.CBV-0002.
+</div>
+
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
-- Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]]
+- Related systems: [[Instrumentation and Controls]], [[Containment Systems]]
+- Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related exam questions: [[2023 Q62]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-h]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

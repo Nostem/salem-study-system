@@ -98,8 +98,15 @@ CVCS Monitor Tank release with 2R18 inoperable: the <span class="hi-exam">SM/CRS
 - **[[TS 3/4.1.2 — Boration Systems]]** — Flow paths, charging pumps, borated water sources
 - **[[TS 3/4.1.1 — Boration Control]]** — Shutdown margin (boration requirements)
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-c</div>
+EOP-LOCA-2 auxiliary spray depressurization: open <span class="hi-exam">2CV75 (Aux Spray Valve)</span>, close <span class="hi-exam">2CV77 (Charging to Loop 23) and 2CV79 (Charging to Loop 24)</span> to redirect charging flow through the aux spray line to the pressurizer. Restore by closing 2CV75 and reopening 2CV77 or 2CV79.
+</div>
+
 ## Connections
 
 - Related concepts: [[Nuclear Design]]
+- Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
 - Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-c]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

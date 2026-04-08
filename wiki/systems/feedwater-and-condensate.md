@@ -73,8 +73,14 @@ SGFP trip response: DEHC automatically initiates turbine runback at <span class=
 Condensate depression: the temperature difference between the condenser saturation temperature and the actual condensate temperature. <span class="hi-exam">Decreasing condensate depression (e.g., 5°F to 2°F) raises thermal efficiency</span> (hotter feedwater means SGs add less sensible heat) but moves the condensate pumps <span class="hi-exam">closer to cavitation</span> (less subcooling = less NPSH at pump suction).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-e</div>
+EOP-FRHS-1 condensate pump feed: establish condensate flow to selected SG by opening <span class="hi-exam">BF40 (Main Feed Bypass Valve, locally)</span>, <span class="hi-exam">BF13 (Feed Water Isolation Valve)</span>, <span class="hi-exam">21 and 22 CN48 (Feed Pump Bypass Valves)</span>, and closing <span class="hi-exam">21 and 22 CN32 (Feed Pump Suction Valves)</span>. Verify condensate flow established with WR level rising.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]]
+- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-e]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -64,8 +64,15 @@ Containment pressure relief and ODCM 3.3.9: per Table 3.3-13 Item 3.a, either <s
 CVCS Monitor Tank release with 2R18 (Radioactive Liquid Effluent Monitor) inoperable: per S2.OP-SO.WL-0001, the <span class="hi-exam">SM/CRS authorizes the liquid radioactive waste release</span> (not the Radiation Protection Manager). Per ODCM 3.3.8 Action 26, with 2R18 inoperable: <span class="hi-exam">at least two independent samples must be analyzed and at least two technically qualified members of staff must independently verify release rate calculations and discharge line valving</span>. <span class="hi-trap">Trap: continuous surveys of discharge piping are performed for other reasons -- the ODCM requirement for inoperable 2R18 is two independent samples, not piping surveys.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 IP-k</div>
+Waste Gas Decay Tank release (S2.OP-SO.WG-0008): latch-and-set sequence on 2WG41 must be performed before commencing release. Max release rate <span class="hi-exam">32 SCFM</span> (Flow Bias <=100%). Terminate release at <span class="hi-exam">10 psig</span> tank pressure: reduce Flow Bias to <0%, close 2WG41-SWT, close 21WG34.
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Protection]]
+- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
 - Related exam questions: [[2023 Q61]], [[2023 Q68]], [[2023 Q90]], [[2023 Q98]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2023 JPM IP-k]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

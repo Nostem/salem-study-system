@@ -217,11 +217,22 @@ SSPS Train Disagreement: <span class="hi-exam">"SI & FW ISOL" Red lamp on 2RP4 F
 P-6 permissive and IR NIS overlap: when P-6 is LIT, IR channels should indicate approximately <span class="hi-exam">1E-5% power</span>. If an IR channel reads 1E-8% power with P-6 LIT, that channel is not indicating the expected SR/IR overlap and is INOPERABLE. Per TS 3.3.1.1 bases, the <span class="hi-exam">24-hour action time</span> for one inoperable IR channel accounts for the <span class="hi-exam">low probability of failure of the operable IR channel</span> during this period. <span class="hi-trap">Trap: the bases cite low probability of channel failure, NOT low probability of reactivity events.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-g</div>
+Failed high Tavg channel (AB.ROD-0003): recognize unwarranted rod insertion, take rods to manual. Adjust rods to control <span class="hi-exam">Tavg within 1.5F of Tprogram</span>. Stabilize PZR level (Master Flow Controller to manual). Defeat <span class="hi-exam">BOTH Differential Temperature AND Average Temperature</span> deviation alarms on 2CC2. Select valid recorder channel (2, 3, or 4) for both parameters.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 IP-j</div>
+Rod Drive M-G Set paralleling (S1.OP-SO.RCS-0001): incoming set voltage adjusted <span class="hi-exam">0-2.5V higher</span> than running set via DMM (not installed voltmeter). Move <span class="hi-exam">single SYNCHRONIZE handle</span> from running to incoming set, place in ON — generator breaker auto-closes. Do NOT manually close generator breaker.
+</div>
+
 ## Connections
 
 - Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
-- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
-- Related exams: [[2023 NRC Written Exam]]
+- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
+- Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]]
+- Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
   - [[2023 Q1]] — Low RC flow 2/3 coincidence / P-7 vs P-8 permissive logic
   - [[2023 Q5]] — OT Delta-T pressure input / OP Delta-T has no pressure input
   - [[2023 Q11 — Loss of Vital Instrument Bus / NI Channel Response|2023 Q11]] — Vital instrument bus loss / NI channels fail low / IR trip logic

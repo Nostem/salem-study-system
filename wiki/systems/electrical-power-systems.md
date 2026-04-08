@@ -72,5 +72,13 @@ On SI signal with loss of offsite power:
 - **[[TS 3/4.8 — Electrical|TS 3/4.8.2]]** — DC Sources (batteries and chargers)
 - **[[TS 3/4.8 — Electrical|TS 3/4.8.3]]** — Onsite Power Distribution
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 IP-i</div>
+SBO Diesel Control Air Compressor: backup control air source when all ECACs are unavailable during LOOP. Located in SBO Compressor Building (outside RCA, requires L-3 key). Discharge valves <span class="hi-exam">1CA1913, 1CA1886, and 2CA584</span> pressurize Control Air and Aux Building headers.
+</div>
+
 ## Connections
 
+- Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
+- Related JPMs: [[2023 JPM IP-i]]
+- Related exam: [[2023 NRC Operating Exam]]
