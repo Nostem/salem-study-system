@@ -47,5 +47,5 @@ Which of the following completes the following statement concerning the operatio
 ## Connections
 
 - Related systems: [[Containment Systems]]
-- Related procedures: [[S2.OP-AB.FIRE-0001 — Control Room Fire Response]]
+- Related procedures: [[AB.FIRE-0001 — Control Room Fire Response]]
 - Related exam: [[2023 NRC Written Exam]]

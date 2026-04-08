@@ -48,6 +48,6 @@ Which of the following indications is the expected response?<br>
 
 ## Connections
 
-- Related systems: [[Feedwater and Condensate]], [[Turbine Generator]]
-- Related procedures: [[S2.OP-AB.CN-0001 — Condensate System Abnormality]]
+- Related systems: [[Feedwater and Condensate]], [[Turbine-Generator]]
+- Related procedures: [[AB.CN-0001 — Condensate System Abnormality]]
 - Related exam: [[2023 NRC Written Exam]]

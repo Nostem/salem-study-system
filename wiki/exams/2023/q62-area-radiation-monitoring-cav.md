@@ -47,5 +47,5 @@ AP = Accident Pressurized
 ## Connections
 
 - Related systems: [[Instrumentation and Controls]]
-- Related procedures: [[S1.OP-AB.RAD-0001 — Radiation Monitor Abnormality]], [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]]
 - Related exam: [[2023 NRC Written Exam]]

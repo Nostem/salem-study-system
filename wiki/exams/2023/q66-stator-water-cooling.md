@@ -40,5 +40,5 @@ Salem Unit _ (1) _ is the ONLY unit that has an automatic Turbine Runback featur
 
 ## Connections
 
-- Related systems: [[Turbine Generator]]
+- Related systems: [[Turbine-Generator]]
 - Related exam: [[2023 NRC Written Exam]]

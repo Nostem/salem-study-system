@@ -43,5 +43,5 @@ What are the actions necessary to verify the position of this throttled open val
 
 ## Connections
 
-- Related procedures: [[OP-AA-108-101-1001 — Equipment Lineup Verification]], [[OP-AA-108-101-1002 — Independent Verification]]
+- Related procedures: [[OP-AA-108-101-1001 — Equipment Lineup Verification]], [[OP-AA-108-101-1002 — Independent/Concurrent Verification]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -49,5 +49,5 @@ Which of the following control room console alarms would confirm a gross tube le
 ## Connections
 
 - Related systems: [[Feedwater and Condensate]]
-- Related procedures: [[S2.OP-AB.CHEM-0001 — Chemistry Abnormality]]
+- Related procedures: [[AB.CHEM-0001 — Secondary Chemistry Abnormality]]
 - Related exam: [[2023 NRC Written Exam]]
