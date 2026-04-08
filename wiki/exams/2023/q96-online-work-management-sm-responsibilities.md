@@ -43,5 +43,5 @@ Per WC-AA-101, On-Line Work Management Process, which of the following choices a
 
 ## Connections
 
-- Related tech specs: [[TS 6.0 — Administrative Controls]]
+- Related procedures: [[WC-AA-101 — On-Line Work Management Process]]
 - Related exam: [[2023 NRC Written Exam]]
