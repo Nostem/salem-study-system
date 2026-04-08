@@ -16,8 +16,8 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 When proceeding through 2-EOP-TRIP-3, SI Termination, you come across the following symbol at Step 1:<br><br>
 <div style="display:flex;justify-content:center;margin:16px 0;">
-<svg width="180" height="70" viewBox="0 0 180 70">
-  <path d="M 10 5 L 130 5 L 130 15 L 170 35 L 130 55 L 130 65 L 10 65 Z" fill="none" stroke="#c8cdd5" stroke-width="2"/>
+<svg width="180" height="110" viewBox="0 0 180 110">
+  <path d="M 10 10 L 120 10 L 170 40 L 120 70 L 90 70 L 90 100 L 60 70 L 10 70 Z" fill="none" stroke="#c8cdd5" stroke-width="2"/>
 </svg>
 </div>
 What does the symbol denote?
