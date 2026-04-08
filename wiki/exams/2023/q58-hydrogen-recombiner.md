@@ -16,15 +16,15 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 Which of the following completes both statements concerning operation of the Hydrogen Recombiner System during a Design Bases Accident (assume hydrogen concentration is within the range that allows operation of the hydrogen recombiner system)?<br>
 <br>
-1. The maximum number of hydrogen recombiners that can be placed in service is _(1)_.<br>
+1. The maximum number of hydrogen recombiners that can be placed in service is <span class="blank">(1)</span>.<br>
 2. What is the concern if hydrogen recombiner system cannot be placed in service when required?
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) 1 (2) Gas vapor binding of ECCS pumps resulting in loss of core cooling.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) 1 (2) Explosive atmosphere resulting in containment failure.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) 2 (2) Explosive atmosphere resulting in containment failure.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) 2 (2) Gas vapor binding of ECCS pumps resulting in loss of core cooling.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> 1 <span class="blank">(2)</span> Gas vapor binding of ECCS pumps resulting in loss of core cooling.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> 1 <span class="blank">(2)</span> Explosive atmosphere resulting in containment failure.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> 2 <span class="blank">(2)</span> Explosive atmosphere resulting in containment failure.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> 2 <span class="blank">(2)</span> Gas vapor binding of ECCS pumps resulting in loss of core cooling.</div>
 </div>
 
 <details>

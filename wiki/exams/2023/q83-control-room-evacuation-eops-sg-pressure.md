@@ -18,15 +18,15 @@ aliases:
 <strong>Given:</strong><br>
 • BOTH Salem Control Rooms have been evacuated due to toxic gas<br><br>
 Per S2.OP-AB.CR-0001, Control Room Evacuation, which of the following completes both statements?<br><br>
-1. EOPs _(1)_ applicable during Control Room Evacuation.<br>
-2. The "Caution" statement in Attachment 3 alerts the CRS to monitor SG pressures at the Hot Shutdown Panel to avoid _(2)_.
+1. EOPs <span class="blank">(1)</span> applicable during Control Room Evacuation.<br>
+2. The "Caution" statement in Attachment 3 alerts the CRS to monitor SG pressures at the Hot Shutdown Panel to avoid <span class="blank">(2)</span>.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) are NOT — (2) exceeding Tech Spec RCS cooldown rate of 100 degrees F per hour</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) are NOT — (2) Safety Injection on steam line differential pressure</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) are — (2) exceeding Tech Spec RCS cooldown rate of 100 degrees F per hour</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) are — (2) Safety Injection on steam line differential pressure</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> are NOT — <span class="blank">(2)</span> exceeding Tech Spec RCS cooldown rate of 100 degrees F per hour</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> are NOT — <span class="blank">(2)</span> Safety Injection on steam line differential pressure</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> are — <span class="blank">(2)</span> exceeding Tech Spec RCS cooldown rate of 100 degrees F per hour</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> are — <span class="blank">(2)</span> Safety Injection on steam line differential pressure</div>
 </div>
 
 <details>

@@ -24,15 +24,15 @@ aliases:
 <br>
 Based on the above condition, which one of the following describes the impact to the liquid release in progress?<br>
 <br>
-1) The release _(1)_ automatically isolate upon the loss of the circulator.<br>
-2) The release _(2)_.
+1) The release <span class="blank">(1)</span> automatically isolate upon the loss of the circulator.<br>
+2) The release <span class="blank">(2)</span>.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) will NOT (2) may continue</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) will NOT (2) may NOT continue</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) will (2) may NOT recommence</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) will (2) may recommence</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> will NOT <span class="blank">(2)</span> may continue</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> will NOT <span class="blank">(2)</span> may NOT continue</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> will <span class="blank">(2)</span> may NOT recommence</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> will <span class="blank">(2)</span> may recommence</div>
 </div>
 
 <details>

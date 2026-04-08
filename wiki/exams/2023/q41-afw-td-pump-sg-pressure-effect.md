@@ -19,14 +19,14 @@ aliases:
 • ONLY the 23 AFW Turbine-Driven feedpump is running supplying all SGs<br>
 • ALL SG pressures are 900 psig and lowering rapidly<br><br>
 Which of the following completes the statement concerning the effect on the AFW system (assuming no operator action)?<br><br>
-When SG pressures lowers to 700 psig, 23 AFW turbine speed will <strong>_(1)_</strong> and feedflow will <strong>_(2)_</strong>.
+When SG pressures lowers to 700 psig, 23 AFW turbine speed will <strong><span class="blank">(1)</span></strong> and feedflow will <strong><span class="blank">(2)</span></strong>.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) lower (2) lower</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) remain constant (2) rise</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) remain constant (2) remain constant</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) lower (2) rise</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> lower <span class="blank">(2)</span> lower</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> remain constant <span class="blank">(2)</span> rise</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> remain constant <span class="blank">(2)</span> remain constant</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> lower <span class="blank">(2)</span> rise</div>
 </div>
 
 <details>

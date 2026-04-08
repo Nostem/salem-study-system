@@ -22,15 +22,15 @@ aliases:
 <strong>Then:</strong><br>
 • Instrument air supply line to the actuator of 21SW122, SW Inlet Control Valve, to CCW HX, severs<br><br>
 Assuming NO operator action, which of the following completes both statements?<br><br>
-1. RCS cooldown rate will <strong>_(1)_</strong>.<br>
-2. The 21SW122 <strong>_(2)_</strong> be manually operated.
+1. RCS cooldown rate will <strong><span class="blank">(1)</span></strong>.<br>
+2. The 21SW122 <strong><span class="blank">(2)</span></strong> be manually operated.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) rise (2) can NOT</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) rise (2) can</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) lower (2) can</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) lower (2) can NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> rise <span class="blank">(2)</span> can NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> rise <span class="blank">(2)</span> can</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> lower <span class="blank">(2)</span> can</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> lower <span class="blank">(2)</span> can NOT</div>
 </div>
 
 <details>

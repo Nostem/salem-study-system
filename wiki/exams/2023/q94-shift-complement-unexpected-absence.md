@@ -25,15 +25,15 @@ aliases:
 <br>
 In accordance with OP-AA-101-111, Roles and Responsibilities of On-Shift Personnel, which of the following completes both statements?<br>
 <br>
-1. The on-duty Unit 2 RO shift position _ (1)_ be unmanned upon shift change.<br>
-2. The shift complement may be one less than the minimum requirements for a period not to exceed _ (2)_ .
+1. The on-duty Unit 2 RO shift position <span class="blank">(1)</span> be unmanned upon shift change.<br>
+2. The shift complement may be one less than the minimum requirements for a period not to exceed <span class="blank">(2)</span> .
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) can (2) 2 hours</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) can (2) 1 hour</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) can NOT (2) 1 hour</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) can NOT (2) 2 hours</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> can <span class="blank">(2)</span> 2 hours</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> can <span class="blank">(2)</span> 1 hour</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> can NOT <span class="blank">(2)</span> 1 hour</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> can NOT <span class="blank">(2)</span> 2 hours</div>
 </div>
 
 <details>

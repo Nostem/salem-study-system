@@ -25,14 +25,14 @@ aliases:
 - STA reports Time to Core Boiling is less than 15 minutes<br>
 - Field operator reports no protective relay flags are present and no obvious reason for the 4KV breaker for 22 RHR Pump to trip free, and an acrid smell is observed near the 21 RHR 4KV breaker cubicle<br><br>
 In accordance with OP-SA-108-106-1001, Equipment Control and Large Motor Starting Criteria, complete the following statement concerning breaker re-closure for 22 RHR Pump?<br><br>
-Based on the above conditions, the _(1)_ can authorize one attempt at reclosing the breaker without an investigation ONLY during _(2)_.
+Based on the above conditions, the <span class="blank">(1)</span> can authorize one attempt at reclosing the breaker without an investigation ONLY during <span class="blank">(2)</span>.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) Shift Manager (2) emergency conditions</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) Plant Manager (2) emergency conditions</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) Shift Manager (2) emergency conditions AND with Shift Technical Advisor concurrence</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) Plant Manager (2) emergency conditions AND with Shift Technical Advisor concurrence</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> Shift Manager <span class="blank">(2)</span> emergency conditions</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> Plant Manager <span class="blank">(2)</span> emergency conditions</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> Shift Manager <span class="blank">(2)</span> emergency conditions AND with Shift Technical Advisor concurrence</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> Plant Manager <span class="blank">(2)</span> emergency conditions AND with Shift Technical Advisor concurrence</div>
 </div>
 
 <details>

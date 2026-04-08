@@ -24,10 +24,10 @@ In accordance with 2-EOP-FRSM-1, which of the following completes both statement
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) ALL turbine stop valve closed bi-stables LIT on 2RP4. (2) Dispatch an operator to locally trip the turbine at the front standard.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) ALL turbine stop valve closed bi-stables LIT on 2RP4. (2) Direct the control room operator to stop all EHC pumps.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) 2 out 3 Auto Stop Oil low pressure bi-stables LIT on 2RP4. (2) Direct the control room operator to stop all EHC pumps.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) 2 out 3 Auto Stop Oil low pressure bi-stables LIT on 2RP4. (2) Dispatch an operator to locally trip the turbine at the front standard.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> ALL turbine stop valve closed bi-stables LIT on 2RP4. <span class="blank">(2)</span> Dispatch an operator to locally trip the turbine at the front standard.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> ALL turbine stop valve closed bi-stables LIT on 2RP4. <span class="blank">(2)</span> Direct the control room operator to stop all EHC pumps.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> 2 out 3 Auto Stop Oil low pressure bi-stables LIT on 2RP4. <span class="blank">(2)</span> Direct the control room operator to stop all EHC pumps.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> 2 out 3 Auto Stop Oil low pressure bi-stables LIT on 2RP4. <span class="blank">(2)</span> Dispatch an operator to locally trip the turbine at the front standard.</div>
 </div>
 
 <details>

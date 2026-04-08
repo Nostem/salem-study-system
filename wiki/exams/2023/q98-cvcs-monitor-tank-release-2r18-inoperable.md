@@ -21,17 +21,17 @@ aliases:
 <br>
 Which of the following completes both statements?<br>
 <br>
-1. Before performing the liquid radioactive waste release, the _ (1)_ authorizes the discharge.<br>
-2. Based on the above condition, the ODCM requires that ___ (2) ___<br>
+1. Before performing the liquid radioactive waste release, the <span class="blank">(1)</span> authorizes the discharge.<br>
+2. Based on the above condition, the ODCM requires that __<span class="blank">(2)</span>__<br>
 <br>
 Note: ODCM = Offsite Dose Calculation Manual
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) Shift Manager/Control Room Supervisor (2) at least two independent samples of the monitor tank are analyzed prior to the release</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) Shift Manager/Control Room Supervisor (2) continuous surveys of the discharge piping are performed during the release</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) Radiation Protection Manager (2) continuous surveys of the discharge piping are performed during the release</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) Radiation Protection Manager (2) at least two independent samples of the monitor tank are analyzed prior to the release</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> Shift Manager/Control Room Supervisor <span class="blank">(2)</span> at least two independent samples of the monitor tank are analyzed prior to the release</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> Shift Manager/Control Room Supervisor <span class="blank">(2)</span> continuous surveys of the discharge piping are performed during the release</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> Radiation Protection Manager <span class="blank">(2)</span> continuous surveys of the discharge piping are performed during the release</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> Radiation Protection Manager <span class="blank">(2)</span> at least two independent samples of the monitor tank are analyzed prior to the release</div>
 </div>
 
 <details>

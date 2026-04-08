@@ -20,7 +20,7 @@ aliases:
 • ALL available safeguards equipment have started with the exception that 2B SEC failed to actuate<br>
 • SECs have NOT been RESET<br><br>
 Based on the conditions above, which of the following completes the statement?<br><br>
-_(1)_ containment spray pump(s) is/are still available from a Class 1E vital power source and _(2)_ automatically start when containment pressure exceeds the containment pressure HI-HI setpoint.
+<span class="blank">(1)</span> containment spray pump(s) is/are still available from a Class 1E vital power source and <span class="blank">(2)</span> automatically start when containment pressure exceeds the containment pressure HI-HI setpoint.
 </div>
 
 <div style="margin-bottom:14px;">

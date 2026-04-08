@@ -21,15 +21,15 @@ aliases:
 <br>
 Which of the following completes the following statement concerning the operation of the 2FP147, Fire Protection Containment Isolation Valve?<br>
 <br>
-1. Based on a valid fire detected inside containment, the 2FP147 will _ (1) _ .<br>
-2. On a Phase A signal, the 2FP147 _ (2) _ automatically close.
+1. Based on a valid fire detected inside containment, the 2FP147 will <span class="blank">(1)</span> .<br>
+2. On a Phase A signal, the 2FP147 <span class="blank">(2)</span> automatically close.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) automatically open (2) will NOT</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) automatically open (2) will</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) need to be manually opened from the 2RP5 panel (2) will</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) need to be manually opened from the 2RP5 panel (2) will NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> automatically open <span class="blank">(2)</span> will NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> automatically open <span class="blank">(2)</span> will</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> need to be manually opened from the 2RP5 panel <span class="blank">(2)</span> will</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> need to be manually opened from the 2RP5 panel <span class="blank">(2)</span> will NOT</div>
 </div>
 
 <details>

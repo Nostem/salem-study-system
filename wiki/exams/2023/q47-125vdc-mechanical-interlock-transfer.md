@@ -15,15 +15,15 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 Which of the following completes both statements concerning the 125 VDC Electrical Distribution System?<br><br>
-1. The 125 VDC Distribution System design <strong>_(1)_</strong> include a mechanical interlock when transferring from normal to the backup (emergency) bus.<br>
-2. Transferring 125 VDC distribution loads to the backup bus is permitted during <strong>_(2)_</strong>.
+1. The 125 VDC Distribution System design <strong><span class="blank">(1)</span></strong> include a mechanical interlock when transferring from normal to the backup (emergency) bus.<br>
+2. Transferring 125 VDC distribution loads to the backup bus is permitted during <strong><span class="blank">(2)</span></strong>.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) does NOT (2) ALL Modes</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) does NOT (2) Modes 5, 6, or defueled Only</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) does (2) ALL Modes</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) does (2) Modes 5, 6, or defueled Only</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> does NOT <span class="blank">(2)</span> ALL Modes</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> does NOT <span class="blank">(2)</span> Modes 5, 6, or defueled Only</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> does <span class="blank">(2)</span> ALL Modes</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> does <span class="blank">(2)</span> Modes 5, 6, or defueled Only</div>
 </div>
 
 <details>

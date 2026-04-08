@@ -18,14 +18,14 @@ aliases:
 • Salem Unit 2 is at 100% power<br>
 • 21BF19, MFW Regulating Valve, fails fully OPEN<br><br>
 Which of the following completes the statement regarding how the plant will respond?<br><br>
-The reactor will trip and the crew will enter 2-EOP-TRIP-1, Reactor Trip or Safety Injection, when high level on SG NR levels reach <strong>_(1)_</strong> followed by a <strong>_(2)_</strong>.
+The reactor will trip and the crew will enter 2-EOP-TRIP-1, Reactor Trip or Safety Injection, when high level on SG NR levels reach <strong><span class="blank">(1)</span></strong> followed by a <strong><span class="blank">(2)</span></strong>.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) 67% (2) Feedwater Isolation</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) 67% (2) Feedwater Interlock ONLY</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) 92% (2) Feedwater Isolation</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) 92% (2) Feedwater Interlock ONLY</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> 67% <span class="blank">(2)</span> Feedwater Isolation</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> 67% <span class="blank">(2)</span> Feedwater Interlock ONLY</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> 92% <span class="blank">(2)</span> Feedwater Isolation</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> 92% <span class="blank">(2)</span> Feedwater Interlock ONLY</div>
 </div>
 
 <details>

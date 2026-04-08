@@ -18,15 +18,15 @@ aliases:
 • Salem Unit 1 is at 100% power<br>
 • The PO needs to perform a check source on the 1R19A, SGBD Radiation Monitor<br><br>
 Per S1.OP-ST.RM-0001, Radiation Monitors - Check Source, which of the following completes both statements?<br><br>
-1. When the operator pushes the check source pushbutton, the radiation monitor will respond by <strong>_(1)_</strong>.<br>
-2. During the check source, actuation of interlocks <strong>_(2)_</strong> expected.
+1. When the operator pushes the check source pushbutton, the radiation monitor will respond by <strong><span class="blank">(1)</span></strong>.<br>
+2. During the check source, actuation of interlocks <strong><span class="blank">(2)</span></strong> expected.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) a rise in counts until the check source pushbutton is released (2) are</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) a rise in counts until the check source pushbutton is released (2) are NOT</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) a rise in counts then a return to original reading (2) are NOT</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) a rise in counts then a return to original reading (2) are</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> a rise in counts until the check source pushbutton is released <span class="blank">(2)</span> are</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> a rise in counts until the check source pushbutton is released <span class="blank">(2)</span> are NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> a rise in counts then a return to original reading <span class="blank">(2)</span> are NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> a rise in counts then a return to original reading <span class="blank">(2)</span> are</div>
 </div>
 
 <details>

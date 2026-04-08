@@ -19,15 +19,15 @@ aliases:
 - Due to plant complications, the Shift Manager has directed the crew to cooldown the RCS to Cold Shutdown per 2-EOP-TRIP-4, Natural Circulation Cooldown.<br>
 - The crew is borating the RCS for the RCS cooldown to Cold Shutdown.<br><br>
 Which of the following completes both statements?<br><br>
-1. As compared to adding boron to the RCS during forced circulation, adding boron during natural circulation requires _(1)_ time to achieve complete mixing in the RCS.<br>
-2. Once the RCS boron mixing is complete, a 1 ppm increase in RCS boron concentration during natural circulation will cause a/an _(2)_ change in reactivity that it would during forced circulation operation.
+1. As compared to adding boron to the RCS during forced circulation, adding boron during natural circulation requires <span class="blank">(1)</span> time to achieve complete mixing in the RCS.<br>
+2. Once the RCS boron mixing is complete, a 1 ppm increase in RCS boron concentration during natural circulation will cause a/an <span class="blank">(2)</span> change in reactivity that it would during forced circulation operation.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) less (2) smaller</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) less (2) equal</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) more (2) smaller</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) more (2) equal</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> less <span class="blank">(2)</span> smaller</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> less <span class="blank">(2)</span> equal</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> more <span class="blank">(2)</span> smaller</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> more <span class="blank">(2)</span> equal</div>
 </div>
 
 <details>

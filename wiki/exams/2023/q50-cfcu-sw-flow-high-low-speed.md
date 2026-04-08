@@ -22,14 +22,14 @@ aliases:
 <strong>Then:</strong><br>
 • The PO is directed to place one running CFCU in LOW speed for surveillance testing<br><br>
 Which of the following completes the statement concerning the response on the Service Water System (assume three SW pumps remain running at all times)?<br><br>
-As compared to the SW header pressure while operating in HIGH speed, the SW header pressure will be <strong>_(1)_</strong> when operating in LOW speed and SW flow rate through the CFCU will be <strong>_(2)_</strong>.
+As compared to the SW header pressure while operating in HIGH speed, the SW header pressure will be <strong><span class="blank">(1)</span></strong> when operating in LOW speed and SW flow rate through the CFCU will be <strong><span class="blank">(2)</span></strong>.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) lower (2) the same</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) lower (2) higher</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) the same (2) the same</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) the same (2) higher</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> lower <span class="blank">(2)</span> the same</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> lower <span class="blank">(2)</span> higher</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> the same <span class="blank">(2)</span> the same</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> the same <span class="blank">(2)</span> higher</div>
 </div>
 
 <details>

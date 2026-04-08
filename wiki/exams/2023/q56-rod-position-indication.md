@@ -22,15 +22,15 @@ aliases:
 <br>
 In accordance with S2.OP-DL.ZZ-0003, Control Room Logs, which of the following completes both statements?<br>
 <br>
-1. The Plant Computer displays the rod demand step position for Group(s) _(1)_.<br>
-2. Based on the above condition, the Plant Computer _(2)_ be used to satisfy the Tech Spec requirements for the failed console group demand step counter.
+1. The Plant Computer displays the rod demand step position for Group(s) <span class="blank">(1)</span>.<br>
+2. Based on the above condition, the Plant Computer <span class="blank">(2)</span> be used to satisfy the Tech Spec requirements for the failed console group demand step counter.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) 1 Only (2) can</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) 1 and 2 (2) can NOT</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) 1 and 2 (2) can</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) 1 Only (2) can NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> 1 Only <span class="blank">(2)</span> can</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> 1 and 2 <span class="blank">(2)</span> can NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> 1 and 2 <span class="blank">(2)</span> can</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> 1 Only <span class="blank">(2)</span> can NOT</div>
 </div>
 
 <details>

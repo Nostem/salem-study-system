@@ -23,10 +23,10 @@ Which of the following completes both statements?<br><br>
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) Running (2) Reduce reactor power to prevent overpower condition per S2.OP-IO.ZZ-0004, Power Operation</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) Running (2) Take manual control of the Main Feedwater Regulating valves to prevent SG overfill per S2.OP-AB.CA-0001, Loss of Control Air.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) NOT Running (2) Enter Tech Spec LCO 3.7.1.2, Auxiliary Feedwater System for INOPERABLE AFW Pump.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) NOT Running (2) Fail open the 2MS132 by using the handwheel on the valve actuator per S2.OP-AB.CA-0001, Loss of Control Air.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> Running <span class="blank">(2)</span> Reduce reactor power to prevent overpower condition per S2.OP-IO.ZZ-0004, Power Operation</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> Running <span class="blank">(2)</span> Take manual control of the Main Feedwater Regulating valves to prevent SG overfill per S2.OP-AB.CA-0001, Loss of Control Air.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> NOT Running <span class="blank">(2)</span> Enter Tech Spec LCO 3.7.1.2, Auxiliary Feedwater System for INOPERABLE AFW Pump.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> NOT Running <span class="blank">(2)</span> Fail open the 2MS132 by using the handwheel on the valve actuator per S2.OP-AB.CA-0001, Loss of Control Air.</div>
 </div>
 
 <details>

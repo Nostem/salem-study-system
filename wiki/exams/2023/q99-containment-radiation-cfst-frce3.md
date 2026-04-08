@@ -19,14 +19,14 @@ aliases:
 <br>
 Which of the following completes the statement?<br>
 <br>
-If Containment Radiation Monitors _ (1)_ exceeds 2 R/HR, the CRS _ (2)_ 2-EOP-FRCE-3, Response to High Containment Radiation Level.
+If Containment Radiation Monitors <span class="blank">(1)</span> exceeds 2 R/HR, the CRS <span class="blank">(2)</span> 2-EOP-FRCE-3, Response to High Containment Radiation Level.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) R10A/B (2) must GO TO</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) R44A/B (2) must GO TO</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) R44A/B (2) may elect to GO TO</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) R10A/B (2) may elect to GO TO</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> R10A/B <span class="blank">(2)</span> must GO TO</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> R44A/B <span class="blank">(2)</span> must GO TO</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> R44A/B <span class="blank">(2)</span> may elect to GO TO</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> R10A/B <span class="blank">(2)</span> may elect to GO TO</div>
 </div>
 
 <details>

@@ -107,6 +107,16 @@ html {
   color: #fca5a5;
 }
 
+/* Fill-in-the-blank markers */
+.blank {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fde68a;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
 /* Callout blocks */
 .callout {
   border-left: 3px solid;

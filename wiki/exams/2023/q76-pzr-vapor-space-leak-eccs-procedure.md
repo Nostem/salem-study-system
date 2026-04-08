@@ -28,10 +28,10 @@ Based on the above conditions, which of the following completes both statements?
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) Charging and SI (2) 2-EOP-LOCA-2, Post LOCA Cooldown and Depressurization</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) Charging ONLY (2) 2-EOP-TRIP-3, SI Termination</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) Charging and SI (2) 2-EOP-TRIP-3, SI Termination</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) Charging ONLY (2) 2-EOP-LOCA-2, Post LOCA Cooldown and Depressurization</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> Charging and SI <span class="blank">(2)</span> 2-EOP-LOCA-2, Post LOCA Cooldown and Depressurization</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> Charging ONLY <span class="blank">(2)</span> 2-EOP-TRIP-3, SI Termination</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> Charging and SI <span class="blank">(2)</span> 2-EOP-TRIP-3, SI Termination</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> Charging ONLY <span class="blank">(2)</span> 2-EOP-LOCA-2, Post LOCA Cooldown and Depressurization</div>
 </div>
 
 <details>

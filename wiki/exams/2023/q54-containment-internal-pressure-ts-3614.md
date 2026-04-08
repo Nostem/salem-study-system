@@ -20,15 +20,15 @@ aliases:
 • A steam leak is occurring inside containment<br>
 • Containment pressure is slowly rising<br><br>
 Based on the above condition, which of the following completes both statements in accordance with TS 3.6.1.4, Containment Systems - Internal Pressure?<br><br>
-1. If containment pressure exceeds a MINIMUM of (+) <strong>_(1)_</strong> psig, then containment DESIGN LIMITS could be exceeded during a Design Based Accident.<br>
-2. Containment internal pressure must be restored to within the limits within <strong>_(2)_</strong>.
+1. If containment pressure exceeds a MINIMUM of (+) <strong><span class="blank">(1)</span></strong> psig, then containment DESIGN LIMITS could be exceeded during a Design Based Accident.<br>
+2. Containment internal pressure must be restored to within the limits within <strong><span class="blank">(2)</span></strong>.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) 1.5 (2) 1 hour</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) 1.5 (2) 15 minutes</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) 0.3 (2) 15 minutes</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) 0.3 (2) 1 hour</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> 1.5 <span class="blank">(2)</span> 1 hour</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> 1.5 <span class="blank">(2)</span> 15 minutes</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> 0.3 <span class="blank">(2)</span> 15 minutes</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> 0.3 <span class="blank">(2)</span> 1 hour</div>
 </div>
 
 <details>

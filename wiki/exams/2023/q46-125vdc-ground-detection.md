@@ -18,15 +18,15 @@ aliases:
 • Salem Unit 2 was at 100% power<br>
 • During control room log taking, the operator observes the 2A 125 VDC Bus ground ohmmeter reading 40K &#937; (ohms)<br><br>
 Based on the above condition, which of the following completes both statements?<br><br>
-1. The reading indicates that a ground on the bus <strong>_(1)_</strong> detected.<br>
-2. If a ground is detected, S2.OP-SO.125-0004, 125VDC Ground Detection, will <strong>_(2)_</strong>.
+1. The reading indicates that a ground on the bus <strong><span class="blank">(1)</span></strong> detected.<br>
+2. If a ground is detected, S2.OP-SO.125-0004, 125VDC Ground Detection, will <strong><span class="blank">(2)</span></strong>.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) is NOT (2) open all breakers in the panel, then reclose them one at a time, if no change to ground readings then continue</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) is NOT (2) open one breaker at a time, evaluate ground readings, leave open if ground clears</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) is (2) open one breaker at a time, evaluate ground readings, leave open if ground clears</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) is (2) open all breakers in the panel, then reclose them one at a time, if no change to ground readings then continue</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> is NOT <span class="blank">(2)</span> open all breakers in the panel, then reclose them one at a time, if no change to ground readings then continue</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> is NOT <span class="blank">(2)</span> open one breaker at a time, evaluate ground readings, leave open if ground clears</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> is <span class="blank">(2)</span> open one breaker at a time, evaluate ground readings, leave open if ground clears</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> is <span class="blank">(2)</span> open all breakers in the panel, then reclose them one at a time, if no change to ground readings then continue</div>
 </div>
 
 <details>

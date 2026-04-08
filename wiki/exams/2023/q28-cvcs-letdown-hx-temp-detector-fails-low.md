@@ -20,7 +20,7 @@ aliases:
 Then:<br>
 • 2TE-130, temperature detector for 2CC71, fails LOW<br><br>
 Which of the following describes the impact of this failure?<br><br>
-1. Letdown temperature will _(1)_ and the RCS T-avg temperature will _(2)_.
+1. Letdown temperature will <span class="blank">(1)</span> and the RCS T-avg temperature will <span class="blank">(2)</span>.
 </div>
 
 <div style="margin-bottom:14px;">

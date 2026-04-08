@@ -22,15 +22,15 @@ When the P-6 permissive was LIT, the RO observed the following:<br>
 • 2N35, Intermediate Range, NIS channel indicates 1E-5% power<br>
 • 2N36, Intermediate Range, NIS channel indicates 1E-8% power<br><br>
 Which of the following completes both statements?<br><br>
-1. The _(1)_ Intermediate Range (IR) NIS channel is not indicating as expected and is INOPERABLE.<br>
+1. The <span class="blank">(1)</span> Intermediate Range (IR) NIS channel is not indicating as expected and is INOPERABLE.<br>
 2. Per TS 3.3.1.1 Instrumentation Bases, why is the 24 hour action time allowed when one IR NIS channel is INOPERABLE?
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) 2N35 — (2) Takes into account the low probability of failure of the operable IR channel during this period.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) 2N35 — (2) Takes into account the low probability of reactivity events during this period.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) 2N36 — (2) Takes into account the low probability of reactivity events during this period.</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) 2N36 — (2) Takes into account the low probability of failure of the operable IR channel during this period.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> 2N35 — <span class="blank">(2)</span> Takes into account the low probability of failure of the operable IR channel during this period.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> 2N35 — <span class="blank">(2)</span> Takes into account the low probability of reactivity events during this period.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> 2N36 — <span class="blank">(2)</span> Takes into account the low probability of reactivity events during this period.</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> 2N36 — <span class="blank">(2)</span> Takes into account the low probability of failure of the operable IR channel during this period.</div>
 </div>
 
 <details>

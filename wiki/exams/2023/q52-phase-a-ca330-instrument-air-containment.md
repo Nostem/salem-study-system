@@ -19,15 +19,15 @@ aliases:
 • The crew enters 2-EOP-TRIP-1, Reactor Trip or Safety Injection<br>
 • Phase A signal failed to actuate on BOTH trains<br><br>
 Which of the following completes the statement concerning instrument air to containment?<br><br>
-1. 21 and 22 CA330s, Instrument Air Containment Isolation, valves are currently in the <strong>_(1)_</strong> position.<br>
-2. MINIMUM requirement per 2-EOP-TRIP-1 for isolating instrument air to containment requires <strong>_(2)_</strong> CA330(s) to be closed.
+1. 21 and 22 CA330s, Instrument Air Containment Isolation, valves are currently in the <strong><span class="blank">(1)</span></strong> position.<br>
+2. MINIMUM requirement per 2-EOP-TRIP-1 for isolating instrument air to containment requires <strong><span class="blank">(2)</span></strong> CA330(s) to be closed.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) closed (2) both</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) closed (2) ONLY one</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) open (2) ONLY one</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) open (2) both</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> closed <span class="blank">(2)</span> both</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> closed <span class="blank">(2)</span> ONLY one</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> open <span class="blank">(2)</span> ONLY one</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> open <span class="blank">(2)</span> both</div>
 </div>
 
 <details>

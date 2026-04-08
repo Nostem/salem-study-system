@@ -22,7 +22,7 @@ aliases:
 • The crew is preparing to depressurize the steam generators in order to inject accumulators<br>
 • Containment Pressure is 5 psig<br><br>
 Which of the following completes both statements?<br><br>
-1. The operators will depressurize the steam generators using steam dumps at a _(1)_.<br>
+1. The operators will depressurize the steam generators using steam dumps at a <span class="blank">(1)</span>.<br>
 2. Following SG depressurization, the SG NR levels are as follows:<br><br>
 <table style="color:#9ca3af;font-size:12px;margin-bottom:8px;">
 <tr><td style="padding-right:16px;"><strong>21 SG</strong></td><td style="padding-right:16px;"><strong>22 SG</strong></td><td style="padding-right:16px;"><strong>23 SG</strong></td><td><strong>24 SG</strong></td></tr>
@@ -32,10 +32,10 @@ Per 2-EOP-FRCC-1, step 18, RCP Start for Temporary Core Cooling, what is the MAX
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) maximum rate while attempting to avoid a Main Steam Isolation — (2) One</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) maximum rate while attempting to avoid a Main Steam Isolation — (2) Three</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) rate not to exceed 100 degrees F per hour — (2) Three</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) rate not to exceed 100 degrees F per hour — (2) One</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> maximum rate while attempting to avoid a Main Steam Isolation — <span class="blank">(2)</span> One</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> maximum rate while attempting to avoid a Main Steam Isolation — <span class="blank">(2)</span> Three</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> rate not to exceed 100 degrees F per hour — <span class="blank">(2)</span> Three</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> rate not to exceed 100 degrees F per hour — <span class="blank">(2)</span> One</div>
 </div>
 
 <details>

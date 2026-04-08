@@ -19,8 +19,8 @@ aliases:
 • 21, 22, 23 and 24 CFCUs are running in HIGH speed with 25 CFCU in standby<br>
 • An inadvertent SI actuation occurs<br><br>
 Which of the following completes both statements?<br><br>
-1. Following SI actuation, all CFCUs will start in LOW speed _(1)_.<br>
-2. To restore CFCUs to HIGH speed operation, _(2)_ must be RESET.
+1. Following SI actuation, all CFCUs will start in LOW speed <span class="blank">(1)</span>.<br>
+2. To restore CFCUs to HIGH speed operation, <span class="blank">(2)</span> must be RESET.
 </div>
 
 <div style="margin-bottom:14px;">

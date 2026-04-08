@@ -20,14 +20,14 @@ aliases:
 <br>
 Which of the following indications would corroborate that one train of SI failed to actuate?<br>
 <br>
-The "SI & FW ISOL" Red lamp on 2RP4 panel will be _ (1) _ and the "SI RESET" Green bezel light on the failed Train of Safeguards on 2CC1 console will be _ (2) _ .
+The "SI & FW ISOL" Red lamp on 2RP4 panel will be <span class="blank">(1)</span> and the "SI RESET" Green bezel light on the failed Train of Safeguards on 2CC1 console will be <span class="blank">(2)</span> .
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) Flashing (2) LIT</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) Flashing (2) Extinguished</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) LIT (2) Extinguished</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) LIT (2) LIT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> Flashing <span class="blank">(2)</span> LIT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> Flashing <span class="blank">(2)</span> Extinguished</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> LIT <span class="blank">(2)</span> Extinguished</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> LIT <span class="blank">(2)</span> LIT</div>
 </div>
 
 <details>

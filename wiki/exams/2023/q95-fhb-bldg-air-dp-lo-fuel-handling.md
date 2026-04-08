@@ -26,14 +26,14 @@ aliases:
 Based on the above condition and per S2.OP-AR.ZZ-0011, 2CC1 Console Alarm, which of the following completes both statements?<br>
 <br>
 1) What is the NEXT required action?<br>
-2) If the BLDG AIR D/P LO alarm is INVALID and will NOT clear, then the local indicator _ (2)_ be used to continuously monitor FHB D/P.
+2) If the BLDG AIR D/P LO alarm is INVALID and will NOT clear, then the local indicator <span class="blank">(2)</span> be used to continuously monitor FHB D/P.
 </div>
 
 <div style="margin-bottom:14px;">
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> (1) Validate the alarm using the local indicator. (2) may NOT</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> (1) Suspend movement of irradiated fuel assemblies. (2) may</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> (1) Suspend movement of irradiated fuel assemblies. (2) may NOT</div>
-<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> (1) Validate the alarm using the local indicator. (2) may</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>A.</strong> <span class="blank">(1)</span> Validate the alarm using the local indicator. <span class="blank">(2)</span> may NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>B.</strong> <span class="blank">(1)</span> Suspend movement of irradiated fuel assemblies. <span class="blank">(2)</span> may</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>C.</strong> <span class="blank">(1)</span> Suspend movement of irradiated fuel assemblies. <span class="blank">(2)</span> may NOT</div>
+<div style="padding:10px 14px;border-left:3px solid #1a2035;margin-bottom:4px;font-size:12px;color:#c8cdd5;background:#0d1220;border-radius:0 4px 4px 0;"><strong>D.</strong> <span class="blank">(1)</span> Validate the alarm using the local indicator. <span class="blank">(2)</span> may</div>
 </div>
 
 <details>
