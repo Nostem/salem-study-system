@@ -33,6 +33,11 @@ aliases:
 
 The STA serves in an advisory capacity to the Senior Nuclear Shift Supervisor on engineering aspects of safe operation. (TS 6.2.3)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q94</div>
+Shift complement unexpected absence: per OP-AA-101-111, the shift complement may be <span class="hi-exam">one less than the minimum for up to 2 hours</span> to accommodate an unexpected absence, provided immediate action is taken to restore. <span class="hi-trap">This provision does NOT permit any shift position to be unmanned upon shift change</span> -- the on-duty member must remain until a relief is available. The preferred action is to hold the off-going shift personnel.
+</div>
+
 ## 6.6 — Reportable Event Action
 
 For REPORTABLE EVENTS:
@@ -152,7 +157,14 @@ Administrative controls establish the organizational structure, staffing require
 
 <a href="/salem-study-system/ts-pdfs/ts-1-0.pdf" target="_blank">View Tech Spec PDF (Section 6 in TS document)</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q96</div>
+SM responsibilities for online work management (WC-AA-101 step 3.6): the Shift Manager is responsible for: (1) <span class="hi-exam">ensuring site FLEX capability is maintained</span>, (2) <span class="hi-exam">ensuring risk is reassessed when emergent conditions result in a plant configuration not previously assessed</span>, (3) <span class="hi-exam">ensuring Protected Equipment barriers are applied per OP-AA-108-116</span>. <span class="hi-trap">Managing special or complex projects during on-line implementation is the responsibility of the Online Maintenance Project Coordinator, NOT the SM.</span>
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Protection]]
 - Related systems: [[Containment Systems]]
+- Related exam questions: [[2023 Q94]], [[2023 Q96]]
+- Related exam: [[2023 NRC Written Exam]]

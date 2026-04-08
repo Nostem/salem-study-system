@@ -144,6 +144,11 @@ Diverse from the Reactor Protection System. Provides backup trip of turbine and 
 ATWS turbine trip verification per EOP-FRSM-1 Step 6: confirm turbine trip by checking that <span class="hi-exam">ALL turbine stop valve closed bi-stables are LIT on 2RP4</span>. <span class="hi-trap">2/3 Auto Stop Oil low pressure bi-stables LIT is a demand for a turbine trip, not confirmation that the turbine actually tripped.</span> If turbine trip is not confirmed, dispatch operator to <span class="hi-exam">locally trip the turbine at the front standard</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q92</div>
+PZR pressure channel failure and NRC reportability: with Channel I already in tripped condition and Channel III failing LOW, a <span class="hi-exam">reactor trip and SI actuate on low PZR pressure</span> (2/4 coincidence met with 2 channels tripped). Since actual RCS pressure was NOT low, the SI is <span class="hi-exam">NOT valid and NOT reportable</span>. However, the RPS actuation IS valid and reportable under <span class="hi-exam">RAL 11.3.2 as a 4-hour report</span>. <span class="hi-trap">Trap: RAL 11.3.1 (also 4-hour) is for valid ECCS actuations -- the SI here is NOT valid. RAL 11.3.3 (8-hour) does not apply because the event is already captured under RAL 11.3.2.</span>
+</div>
+
 ## POPS (Pressurizer Overpressure Protection System)
 
 Provides low-temperature overpressure protection by enabling PORVs to open at a reduced setpoint when RCS temperature is low. Prevents exceeding Appendix G pressure-temperature limits during heatup, cooldown, and cold shutdown. (UFSAR 7.6.3)
@@ -234,3 +239,4 @@ P-6 permissive and IR NIS overlap: when P-6 is LIT, IR channels should indicate 
   - [[2023 Q72]] — Subcritical SR counts stabilize higher / SUR decays to zero after rod withdrawal
   - [[2023 Q80]] — ATWS FRSM-1 turbine trip verification via stop valve bi-stables on 2RP4
   - [[2023 Q82]] — IR NIS P-6 permissive / TS 3.3.1.1 bases for 24-hour action time
+  - [[2023 Q92]] — PZR pressure channel failure / spurious trip+SI / RAL 11.3.2 reportability

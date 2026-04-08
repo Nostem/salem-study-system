@@ -98,6 +98,8 @@ status: draft
 - [[AB.CHEM-0001 — Secondary Chemistry Abnormality]]
 - [[AB.RAD-0001 — Radiation Monitor Abnormality]]
 - [[AB.FIRE-0001 — Control Room Fire Response]]
+- [[AB.FP-0001 — Fire Protection System Malfunction]]
+- [[AB.CW-0001 — Circulating Water Malfunction]]
 - [[AB.CN-0001 — Condensate System Abnormality]]
 - [[AB.RHR-0001 — Loss of RHR]]
 - [[AB.SG-0001 — Steam Generator Tube Leak]]

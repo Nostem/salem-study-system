@@ -37,8 +37,13 @@ aliases:
 
 When the on-duty SM leaves the Control Area, the Unit 2 CRS assumes Control Room Command and Control unless the SM designates a different SRO.
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q94</div>
+Unexpected absence during shift change: per Attachment 2 Note 1, the shift complement may be <span class="hi-exam">one less than minimum for up to 2 hours</span> to accommodate an unexpected absence of an on-duty shift member. <span class="hi-trap">This does NOT permit any shift position to be unmanned upon shift change due to an oncoming member being late or absent.</span> The preferred action is to <span class="hi-exam">hold the off-going shift personnel until relief is available</span>. The on-duty RO cannot leave at shift change if no relief is available.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 6.0 — Administrative Controls]]
-- Related exam questions: [[2023 Q6]]
+- Related exam questions: [[2023 Q6]], [[2023 Q94]]
 - Related exam: [[2023 NRC Written Exam]]

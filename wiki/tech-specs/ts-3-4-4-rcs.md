@@ -8,6 +8,7 @@ aliases:
   - PORVs tech specs
   - RCS leakage TS
   - pressurizer TS
+  - TS 3.4.7.2
 ---
 
 # TS 3/4.4 — Reactor Coolant System
@@ -224,6 +225,11 @@ Plant design requires all 4 RCS loops operating during Modes 1 and 2 for adequat
 
 <span class="hi-exam">PRESSURE BOUNDARY LEAKAGE of any magnitude requires immediate action because it indicates a potential failure of the RCS pressure boundary.</span> The 1 gpm unidentified leakage limit is well below the smallest leak that could propagate to a LOCA. The 150 gpd primary-to-secondary limit through any one SG minimizes radioactive contamination of the secondary system and limits accident dose consequences.
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q97</div>
+CVCS leak vs. RCS operational leakage: a leak from 2CV6 (Letdown Relief Valve) is a <span class="hi-exam">CVCS auxiliary system leak, NOT RCS pressure boundary leakage</span>. TS 3.4.7.2 remains MET because CVCS piping is outside the RCS boundary. Once letdown is isolated and the leak stops, no TS action or Emergency Declaration is required. <span class="hi-trap">The CVCS is NOT part of the RCS -- it is an auxiliary system that interfaces with the RCS.</span>
+</div>
+
 ### Chemistry (3/4.4.8)
 
 **DELETED** — Relocated from Technical Specifications.
@@ -304,3 +310,5 @@ b. RCS depressurized with an RCS vent ≥ <span class="hi">3.14 square inches</s
 
 - Related systems: [[Reactor Coolant System]], [[Pressurizer]], [[Residual Heat Removal]], [[Steam Generators]]
 - Related concepts: [[Accident Analysis]]
+- Related exam questions: [[2023 Q97]]
+- Related exam: [[2023 NRC Written Exam]]

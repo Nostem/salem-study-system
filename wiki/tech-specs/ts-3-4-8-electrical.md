@@ -117,3 +117,5 @@ DG OPERABILITY includes verification of fuel oil supply (7-day supply), starting
 ## Connections
 
 - Related systems: [[Electrical Power Systems]]
+- Related exam questions: [[2023 Q89]]
+- Related exam: [[2023 NRC Written Exam]]

@@ -108,8 +108,13 @@ PZR vapor space leak (SBLOCA): at RCS pressure <span class="hi-exam">1450 psig</
 EOP-TRIP-4 CAS: if PZR level cannot be maintained <span class="hi-exam">> 4%</span> (with 2CV55 and 2CV71 fully open and level still lowering), <span class="hi-exam">actuate SI and return to EOP-TRIP-1</span>. <span class="hi-trap">PZR heaters will NOT energize with level < 17% — operating heaters to maintain saturated conditions is not possible when level is at 10% and lowering.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q92</div>
+PZR pressure channel failure reportability: with one PZR pressure channel already tripped and a second failing LOW, the <span class="hi-exam">2/4 low PZR pressure trip coincidence is met</span> causing a reactor trip and SI. The SI is NOT valid (pressure was not actually low) and NOT reportable under RAL 11.3.1. The <span class="hi-exam">RPS actuation is reportable under RAL 11.3.2 as a 4-hour report</span>.
+</div>
+
 ## Connections
 
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
-- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q32]], [[2023 Q34]], [[2023 Q76]], [[2023 Q87]]
+- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q32]], [[2023 Q34]], [[2023 Q76]], [[2023 Q87]], [[2023 Q92]]
 - Related exam: [[2023 NRC Written Exam]]

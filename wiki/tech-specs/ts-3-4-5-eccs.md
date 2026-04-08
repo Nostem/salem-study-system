@@ -7,6 +7,7 @@ aliases:
   - accumulators TS
   - RWST tech specs
   - safety injection TS
+  - TS 3.5.4
 ---
 
 # TS 3/4.5 — Emergency Core Cooling Systems
@@ -114,6 +115,11 @@ RCP seal injection flow shall be <span class="hi">≤40 gpm</span> with charging
 
 **Action:** Adjust manual seal injection throttle valves within <span class="val-alarm">4 hrs</span>, or Hot Standby in 6 hrs + Hot Shutdown in 6 hrs.
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q91</div>
+Seal injection flow surveillance: individual RCP seal injection flows of 10 + 10.5 + 9.8 + 10.2 = <span class="hi-exam">40.5 gpm total exceeds the &le;40 gpm limit</span>. Required action: adjust manual seal injection throttle valves within 4 hours. <span class="hi-trap">This is NOT a charging pump operability issue (TS 3.5.2) -- the charging pump is functioning properly; the seal injection throttle valves need adjustment.</span>
+</div>
+
 ## Refueling Water Storage Tank
 
 <div class="callout callout-important">
@@ -161,3 +167,5 @@ The RWST minimum volume of 364500 gallons is based on: filling the refueling can
 
 - Related systems: [[Emergency Core Cooling Systems]], [[Residual Heat Removal]], [[Chemical and Volume Control System]]
 - Related concepts: [[Accident Analysis]]
+- Related exam questions: [[2023 Q91]]
+- Related exam: [[2023 NRC Written Exam]]

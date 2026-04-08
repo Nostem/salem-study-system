@@ -59,8 +59,13 @@ ODCM liquid effluent monitoring (3.3.8): <span class="hi-exam">loss of 2FR1064 f
 Containment pressure relief and ODCM 3.3.9: per Table 3.3-13 Item 3.a, either <span class="hi-exam">2R12A OR 2R41A & D channels</span> is required for containment pressure relief. If only 2R12A fails (power supply failure) and 2R41 channels remain operable, ODCM 3.3.9 is MET — <span class="hi-exam">no compensatory actions required to recommence the relief</span>. <span class="hi-trap">Trap: Action 37 (two independent samples + verified release rate calculations) only applies if BOTH 2R12A AND 2R41A & D are inoperable. Action 33 (grab samples every 8 hours) applies to the Plant Vent Radiation Monitor, not the containment atmosphere monitor.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q98</div>
+CVCS Monitor Tank release with 2R18 (Radioactive Liquid Effluent Monitor) inoperable: per S2.OP-SO.WL-0001, the <span class="hi-exam">SM/CRS authorizes the liquid radioactive waste release</span> (not the Radiation Protection Manager). Per ODCM 3.3.8 Action 26, with 2R18 inoperable: <span class="hi-exam">at least two independent samples must be analyzed and at least two technically qualified members of staff must independently verify release rate calculations and discharge line valving</span>. <span class="hi-trap">Trap: continuous surveys of discharge piping are performed for other reasons -- the ODCM requirement for inoperable 2R18 is two independent samples, not piping surveys.</span>
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Protection]]
-- Related exam questions: [[2023 Q61]], [[2023 Q68]], [[2023 Q90]]
+- Related exam questions: [[2023 Q61]], [[2023 Q68]], [[2023 Q90]], [[2023 Q98]]
 - Related exam: [[2023 NRC Written Exam]]

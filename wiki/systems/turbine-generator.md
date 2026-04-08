@@ -62,7 +62,13 @@ Stator Water Cooling: <span class="hi-exam">Unit 2 (GE SCW) is the ONLY unit wit
 ATWS turbine trip verification (EOP-FRSM-1 Step 6): confirmed by <span class="hi-exam">ALL turbine stop valve closed bi-stables LIT on 2RP4</span>. <span class="hi-trap">Auto Stop Oil low pressure bi-stables (2/3) on 2RP4 indicate a turbine trip demand, NOT confirmation the turbine actually tripped (stop valves may not have closed).</span> If turbine trip is not confirmed, dispatch operator to locally trip at the front standard.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q93</div>
+CW bus loss scenario: when the 4KV infeed breaker to the 24 CW bus fails open, the bus auto-transfers to the 23 CW bus. However, <span class="hi-exam">all 'B' circulator breakers trip open on undervoltage during the transfer</span> and must be manually restarted. With one CW pump already CIT, this results in <span class="hi-exam">4 or more circulators out of service</span>. Per AB.CW-0001 Attachment 1, with &ge;4 circulators out of service at &ge;P-10: <span class="hi-exam">trip the reactor and enter EOP-TRIP-1</span>.
+</div>
+
 ## Connections
 
-- Related exam questions: [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]]
+- Related procedures: [[AB.CW-0001]]
+- Related exam questions: [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2023 Q93]]
 - Related exam: [[2023 NRC Written Exam]]

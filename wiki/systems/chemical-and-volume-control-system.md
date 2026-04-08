@@ -83,6 +83,16 @@ If <span class="hi-exam">2TE-130 (temperature detector for 2CC71, Letdown HX Tem
 <span class="hi-exam">23 charging pump is supplied from the 2A 460V bus.</span> Loss of the 2A 460V MCC de-energizes 23 charging pump, causing loss of charging flow and letdown isolation. Per S2.OP-AB.460-0001: start a centrifugal charging pump and restore PZR level, then re-establish letdown.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q97</div>
+RCS leak from CVCS (2CV6 Letdown Relief Valve): a <span class="hi-exam">CVCS leak that can be isolated does NOT require entry into TS 3.4.7.2 (Operational Leakage)</span>. The CVCS is considered an <span class="hi-exam">auxiliary system, not part of the RCS pressure boundary</span>. Once letdown is isolated and the leakage stops, TS 3.4.7.2 remains MET and an Emergency Declaration (UE EAL SU5.1) is NOT required. <span class="hi-trap">Trap: the 12 gpm leak from 2CV6 is NOT RCS pressure boundary leakage because the CVCS is auxiliary piping outside the RCS boundary.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q98</div>
+CVCS Monitor Tank release with 2R18 inoperable: the <span class="hi-exam">SM/CRS authorizes the liquid radioactive waste release</span> (not the Radiation Protection Manager). Per ODCM 3.3.8, with 2R18 inoperable, Action 26 requires <span class="hi-exam">at least two independent samples analyzed AND at least two technically qualified staff independently verify release rate calculations and discharge line valving</span>.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.2 — Boration Systems]]** — Flow paths, charging pumps, borated water sources
@@ -91,5 +101,5 @@ If <span class="hi-exam">2TE-130 (temperature detector for 2CC71, Letdown HX Tem
 ## Connections
 
 - Related concepts: [[Nuclear Design]]
-- Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]]
+- Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]]
 - Related exam: [[2023 NRC Written Exam]]

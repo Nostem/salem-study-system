@@ -108,6 +108,13 @@ Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barr
 RCP #3 seal leak identification: <span class="hi-exam">STANDPIPE LEVEL-LO alarm</span> is the primary indicator of a #3 seal leak. Key diagnostic: #1 seal leakoff flow <span class="hi-exam">steady at 1.5 gpm</span> (normal — indicating intact #2 seal) while standpipe level is low. Action: <span class="hi-exam">make-up to the standpipe per ARP; power operation may continue</span>. AB.RCP-0001 does not direct actions for a #3 seal leak specifically. <span class="hi-trap">Trap: orderly shutdown and stop RCP within 8 hours is the action for a degraded #2 seal, not a #3 seal leak.</span>
 </div>
 
+## Seal Injection Flow Surveillance
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q91</div>
+TS 3.5.4 limits total RCP seal injection flow to <span class="hi-exam">&le;40 gpm</span> (with charging header pressure &ge;2430 psig and 2CV55 fully open). Individual RCP seal injection flows totaling 40.5 gpm (e.g., 10 + 10.5 + 9.8 + 10.2) exceed the limit. Required action: <span class="hi-exam">adjust manual seal injection throttle valves within 4 hours</span>. <span class="hi-trap">Trap: this is NOT a charging pump operability issue (TS 3.5.2) -- it is a seal injection flow limit issue (TS 3.5.4). The TS 4.0.4 exemption allows up to 4 hours for adjustment, but this is NOT the same as "no TS action required."</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (minimum loops in operation by mode)
@@ -115,5 +122,5 @@ RCP #3 seal leak identification: <span class="hi-exam">STANDPIPE LEVEL-LO alarm<
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]]
-- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
+- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]]
 - Related exam: [[2023 NRC Written Exam]]

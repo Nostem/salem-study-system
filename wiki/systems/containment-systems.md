@@ -139,10 +139,20 @@ Hydrogen Recombiner System: per EOP-LOCA-1 step 17, <span class="hi-exam">only o
 Fire Protection Containment Isolation (2FP147): on a valid fire detected inside containment (Zones 59 and 74 on 2RP5), <span class="hi-trap">2FP147 must be manually opened from the 2RP5 panel — it does NOT automatically open</span>. However, <span class="hi-exam">2FP147 WILL automatically close on a Phase A containment isolation signal</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q95</div>
+FHB BLDG AIR D/P LO alarm during fuel moves: per S2.OP-AR.ZZ-0011, the <span class="hi-exam">FIRST action is to suspend movement of irradiated fuel assemblies</span>, THEN validate the alarm using the local indicator. If the alarm is invalid and will not clear, per S2.OP-IO.ZZ-0010, the <span class="hi-exam">local indicator MAY be used to continuously monitor FHB D/P</span> as a compensatory measure -- fuel moves may resume with continuous local monitoring. <span class="hi-trap">Trap: validating the alarm is performed AFTER suspending fuel moves, not before.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q100</div>
+Fire protection: with both Salem fire pumps inoperable, per AB.FP-0001: <span class="hi-exam">open backup fire suppression water supply cross-tie valves from Hope Creek</span>. If cross-tie cannot be established within <span class="hi-exam">24 hours</span>, unit must be in <span class="hi-exam">Hot Standby within 6 hours</span>, then Hot Shutdown within the following 6 hours, then Cold Shutdown within the subsequent 24 hours.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]]
 - Related concepts: [[Adverse Containment]]
-- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]]
+- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]]
 - Related exam: [[2023 NRC Written Exam]]
