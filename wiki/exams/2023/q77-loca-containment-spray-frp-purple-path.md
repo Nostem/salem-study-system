@@ -7,8 +7,6 @@ aliases:
   - 2023-Q77
 ---
 
-# 2023 Q77 — LOCA Containment Spray vs FRP Purple Path Priority
-
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
 <span style="color:#60a5fa;font-size:14px;font-weight:600;">Q77 — LOCA Containment Spray vs FRP Purple Path Priority</span>
