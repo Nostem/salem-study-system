@@ -524,3 +524,184 @@ questions:
     ka_importance: 3.9
     type: RO
     tier_group: "Tier 2/Group 1"
+
+  - number: 41
+    topic: "AFW TD Pump / SG Pressure Effect on Speed and Flow"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [auxiliary-feedwater, main-steam]
+    tech_specs: []
+    ka: "039 K3.03"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 42
+    topic: "SG High Level Trip / P-14 Setpoint and FW Isolation"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems: [feedwater-and-condensate, instrumentation-and-controls]
+    tech_specs: []
+    ka: "059 G2.4.2"
+    ka_importance: 4.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 43
+    topic: "AFW 2MS132 Air Supply Rupture"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [auxiliary-feedwater, main-steam]
+    tech_specs: []
+    ka: "061 K6.01"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 44
+    topic: "AFW 2DR6 Air Leak / Tank Overflow"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [auxiliary-feedwater]
+    tech_specs: []
+    ka: "061 A2.14"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 45
+    topic: "Loss of 2A 460V Bus / Charging Pump Impact"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: [ac-power, chemical-and-volume-control-system, pressurizer, dc-power]
+    tech_specs: []
+    ka: "062 K1.02"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 46
+    topic: "125VDC Ground Detection"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: [dc-power]
+    tech_specs: []
+    ka: "063 A1.01"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 47
+    topic: "125VDC Mechanical Interlock / Transfer Restrictions"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: [dc-power]
+    tech_specs: []
+    ka: "063 K4.02"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 48
+    topic: "EDG Starting Air Compressor Power Supply"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: [diesel-generators, ac-power]
+    tech_specs: []
+    ka: "064 K2.01"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 49
+    topic: "SG Blowdown Radiation Monitor Check Source"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [steam-generators]
+    tech_specs: []
+    ka: "073 A4.02"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 50
+    topic: "CFCU SW Flow in High vs Low Speed"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: [containment-fan-coil-units, service-water]
+    tech_specs: []
+    ka: "076 K4.06"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 51
+    topic: "SW122 Loss of Air / RHR Cooldown Rate"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [service-water, residual-heat-removal]
+    tech_specs: []
+    ka: "076 A2.02"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 52
+    topic: "Phase A / CA330 Instrument Air Containment Isolation"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [containment-systems, auxiliary-systems]
+    tech_specs: []
+    ka: "103 A3.01"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 53
+    topic: "Containment Vacuum Relief Isolation Signals"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: [containment-systems]
+    tech_specs: []
+    ka: "103 K3.04"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 54
+    topic: "Containment Internal Pressure TS 3.6.1.4"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: [containment-systems]
+    tech_specs:
+      - ts-3-4-6-containment
+    ka: "103 A2.04"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 55
+    topic: "Urgent Failure / Rod Control Gripper Coils"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: [instrumentation-and-controls, reactor-core-and-fuel]
+    tech_specs: []
+    ka: "001 K6.01"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 2"
