@@ -45,6 +45,5 @@ Which of the following describes the response on the Source Range (SR) counts an
 
 ## Connections
 
-- Related system: [[Instrumentation and Controls]]
-- Related system: [[Reactor Core and Fuel]]
+- Related systems: [[Instrumentation and Controls]], [[Reactor Core and Fuel]]
 - Related exam: [[2023 NRC Written Exam]]

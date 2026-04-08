@@ -44,6 +44,5 @@ If condensate depression decreases from 5 degrees F to 2 degrees F, the steam cy
 
 ## Connections
 
-- Related system: [[Feedwater and Condensate]]
-- Related system: [[Turbine-Generator]]
+- Related systems: [[Feedwater and Condensate]], [[Turbine-Generator]]
 - Related exam: [[2023 NRC Written Exam]]

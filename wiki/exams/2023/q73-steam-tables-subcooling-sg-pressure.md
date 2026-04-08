@@ -44,7 +44,5 @@ What is the HIGHEST pressure in the SGs to obtain a MINIMUM 100 degrees F subcoo
 
 ## Connections
 
-- Related system: [[Steam Generators]]
-- Related system: [[Reactor Coolant System]]
-- Related system: [[Main Steam]]
+- Related systems: [[Steam Generators]], [[Reactor Coolant System]], [[Main Steam]]
 - Related exam: [[2023 NRC Written Exam]]

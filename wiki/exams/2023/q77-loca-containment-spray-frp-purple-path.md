@@ -48,7 +48,7 @@ Note: FRP = Functional Restoration Procedure(s)
 
 ## Connections
 
-- Related system: [[Containment Spray]]
-- Related system: [[Containment Systems]]
-- Related EOP: [[EOP-LOCA-1]]
+- Related systems: [[Containment Spray]], [[Containment Systems]]
+- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
+- Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
 - Related exam: [[2023 NRC Written Exam]]

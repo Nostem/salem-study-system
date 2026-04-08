@@ -50,9 +50,6 @@ Based on the above conditions, which of the following completes both statements?
 
 ## Connections
 
-- Related system: [[Pressurizer]]
-- Related system: [[Emergency Core Cooling Systems]]
-- Related EOP: [[EOP-LOCA-1]]
-- Related EOP: [[EOP-LOCA-2]]
-- Related EOP: [[EOP-TRIP-3]]
+- Related systems: [[Pressurizer]], [[Emergency Core Cooling Systems]]
+- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-3 — SI Termination]]
 - Related exam: [[2023 NRC Written Exam]]
