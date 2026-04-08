@@ -22,9 +22,12 @@ aliases:
 - During the CRS review of the Control Room Logs, it was discovered that the Reactor Coolant Temperatures section of the Control Room Logs was not completed<br><br>
 <strong>Initiating Cue:</strong><br>
 - You are directed to complete the log readings IAW S2.OP-DL.ZZ-0003, Control Room Logs (Modes 1-4).<br>
-- Notify the CRS (lead examiner) the results of the log readings.<br><br>
-<strong>Task Standard:</strong><br>
-The task is satisfactorily met when the applicant completes the control room logs, determines that 23 RC Loop OT Delta-T setpoint channel check is outside the REM OT Delta-T Setpoint band, and records the reading as UNSAT.
+- Notify the CRS (lead examiner) the results of the log readings.
+</div>
+
+<div style="padding:10px 14px;background:#052e16;border-left:3px solid #34d399;border-radius:0 4px 4px 0;margin-bottom:14px;font-size:13px;">
+<strong style="color:#34d399;">Task Standard:</strong><br>
+<span style="color:#c8cdd5;">The task is satisfactorily met when the applicant completes the control room logs, determines that <span class="hi-exam">23 RC Loop OT Delta-T setpoint channel check is outside the REM OT Delta-T Setpoint band</span>, and records the reading as <span class="hi-exam">UNSAT</span>.</span>
 </div>
 
 <details>
@@ -47,10 +50,10 @@ The task is satisfactorily met when the applicant completes the control room log
 <td style="padding:6px;color:#c8cdd5;">Records LOOP 21-24 OPDT STPT CHAN CHECKs</td>
 <td style="padding:6px;color:#9ca3af;">Determines all OPDT setpoints are within the REM +/- 1.5°F criteria and Channel Checks are SAT.</td>
 </tr>
-<tr style="border-bottom:1px solid #0d1220;">
+<tr style="border-bottom:1px solid #0d1220;background:rgba(251, 191, 36, 0.06);">
 <td style="padding:6px;color:#c8cdd5;"><span class="jpm-critical">3.0 *</span></td>
-<td style="padding:6px;color:#c8cdd5;">Records LOOP 21-24 OTDT STPT CHAN CHECKs</td>
-<td style="padding:6px;color:#9ca3af;">Determines all OT Delta-T setpoints are within the REM Fig 5A-D and Channel Checks are SAT, EXCEPT for 23 OT Delta-T which the setpoint is outside the REM Fig 5C and notes that channel as UNSAT.</td>
+<td style="padding:6px;color:#c8cdd5;"><span class="hi-exam">Records LOOP 21-24 OTDT STPT CHAN CHECKs</span></td>
+<td style="padding:6px;color:#c8cdd5;"><span class="hi-exam">Determines all OT Delta-T setpoints are within the REM Fig 5A-D and Channel Checks are SAT, EXCEPT for 23 OT Delta-T which the setpoint is outside the REM Fig 5C and notes that channel as UNSAT.</span></td>
 </tr>
 <tr style="border-bottom:1px solid #0d1220;">
 <td style="padding:6px;color:#c8cdd5;"><span class="jpm-critical">4.0 *</span></td>
@@ -75,11 +78,13 @@ The task is satisfactorily met when the applicant completes the control room log
 </div>
 
 <div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">
-Ref: S2.OP-DL.ZZ-0003 (R126) | Task: N1150410501 | K/A: G2.1.25 — Ability to interpret reference materials, such as graphs, curves, tables | Source: New | <a href="/salem-study-system/exam-pdfs/2023-operating.pdf#page=1" target="_blank" style="color:#60a5fa;">PDF Pages 1-13</a>
+Ref: S2.OP-DL.ZZ-0003 (R126) | Task: N1150410501 | K/A: G2.1.25 — Ability to interpret reference materials, such as graphs, curves, tables | Source: New
 </div>
 </div>
 </details>
 </div>
+
+<a href="/salem-study-system/exam-pdfs/2023-operating.pdf" target="_blank">View Operating Test PDF</a> (Pages 1-13)
 
 ## Connections
 
