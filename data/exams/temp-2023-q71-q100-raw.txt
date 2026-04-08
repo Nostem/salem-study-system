@@ -1,0 +1,4283 @@
+=== PAGE 192 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+71 16-019 Points: 1.00 
+Given: 
+• Salem Unit 2 was operating at 100% power when a Loss of All Offsite Power occurs. 
+• Due to plant complications, the Shift Manager has directed the crew to cooldown the RCS to Cold Shutdown 
+per 2-EOP-TRIP-4 , Natural Circulation Cooldown. 
+• The crew is borating the RCS for the RCS cooldown to Cold Shutdown. 
+Which of the following completes both statements? 
+A. 
+B. 
+C. 
+D. 
+1. As compared to adding boron to the RCS during forced circulation, adding boron during natural circulation 
+requires _ (1 )_ time to achieve complete mixing in the RCS. 
+2. Once the RCS boron mixing is complete, a 1 ppm increase in RCS boron concentrat ion during natural 
+circulation will cause a/an _ (2)_ change in reactivity that it would during forced circulation operation. 
+(1) less 
+(2) smaller 
+(1) less 
+(2) equal 
+(1) more 
+(2) smaller 
+(1) more 
+(2) equal 
+PAGE 192 
+
+=== PAGE 193 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: D 
+Explanation I Justification: 
+A. Incorrect. Part 1 is incorrect. Plausible if the operator misreads the question and therefore believes the question 
+is asking about time to mix when forced circulation. Part 2 is incorrect. Plausible if the operato r believes that 
+reactivity effects will be smaller due to the lower RCS flowrates. Incorrect in that the change in reactivity will be the 
+same when the boron is thorough ly mixed. 
+B. Incorrect. Part 1 is incorrect. Part 2 is correct. Plausible if the operator misreads the question and therefore 
+believes the question is asking about time to mix when forced circulation 
+C. Incorrect. Part 1 is correct. Part 2 is incorrect. Plausible if the operator believes that reactiv ity effects will be 
+smaller due to the lower RCS flowrates. Incorrect in that the change in reactivity will be the same when the boron 
+is thorough ly mixed. 
+D. Correct. Due to loss of offsite power, no RCPs will be running resulting in a significantly lower RCS flowrate (NC 
+conditions ). Therefo re, more time will be required to achieve complete mixing in the RCS for a given boron 
+concent ration change. Once the RCS mixing is complete , a 1 ppm increase (or decrease) in RCS boron 
+concent ration during NC operat ion will cause the same change in core reactiv ity that it would during forced 
+circulation operation. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+INPO GFES Fuel Depletion and Burnable Poisons (R3) 
+None 
+NOS05PO ISON-02. Refer to INPO GFES Fuel Depletion and Burnable 
+Poisons Rev. 3, ELO 1.6 Boron and Natural Circulation 
+Bank - NRC GFES Reactor Theory P3364 
+Fundamenta l/Memory 
+41.1 
+RO 
+16-Reactory Theory I Fuel Depletion and Burnable Poisons 
+192007 K1 .05 
+Describe the effects of boration/dilution on reactivity during forced-flow and 
+natural circulation cond itions. 
+3.2 
+Theory-Tier 4 
+KIA Match: The KIA is a match because the candidate is being asked how boration is effected during natural 
+circulation. 
+PAGE 193 
+
+=== PAGE 194 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: INPO GFES Fuel Depletion and Burnable Poisons 
+ELO 1.6 Boron and Natural Circulation 
+Introduct ion 
+This section contains a short discussion of boron concentration changes 
+during natural circulation conditions . 
+.<111 Boron Concentration Changes During Natural Circulation 
+Normally, boration and dilution are not performed during natural circulation 
+conditions. Without the Reactor Coolant Pumps (RCPs) nmning the RCS 
+flow rate will be much lower and the boron mixture distribution will be 
+uneven throughout the core. This could lead to a loss of shutdown margin. 
+To prevent a dilution accident, reducing boron concentration during natural 
+circulation conditions is not normally allowed. Any boron changes in 
+natural circulation will have the same reactivity effect as with forced 
+circulation , once completely mixed. 
+The concentration of boron used for RCS boration remains the same 
+throughout core life (from BOL to EOL) so the rate at which negative 
+reactivity is added during boration does not change over core life. However, 
+because the concentration of boron in the RCS decreases over core life by 
+approxima tely a factor of 10, the rate at which dilution occurs (and thus, 
+reactivity is added) is much slower (by approximately a factor of 10 as 
+well). 
+So even though the reacto r will respond quicker at the end of cycle (EOC) 
+for a given reactivity positive addition from a boron dilution, the reactivity 
+can be added quicker at the beginning of cycle (BOC) due to quicker 
+changes in boron concentration . 
+PAGE 194 
+
+=== PAGE 195 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+72 16-020 Points: 1.00 
+Given: 
+• Salem Unit 1 is performing a reactor startup with the reactor slightly subcritical. 
+• 2N31 and 2N32 Source Range count rates are stable. 
+Then: 
+• The RO performs a short control rod withdrawal. 
+Which of the following describes the response on the Source Range (SR) counts and startup rate after the rod 
+withdrawal has stopped (assume the reactor remains subcritical)? 
+A. SR counts will slowly increase then gradually increase and stabilize at a higher value; startup rate will 
+rapidly increase then gradually decrease to a slightly positive value. 
+B. SR counts will rapidly increase then stabilize at a higher value; startup rate will rapidly increase then 
+gradually decrease and stabilize at zero. 
+C. SR counts will rapidly increase then gradually decrease and stabilize at the previous value; startup rate will 
+rapidly increase then gradually decrease and stabilize at zero. 
+D. SR counts will rapidly increase then stabilize at a higher value; startup rate will not change until criticality is 
+achieved. 
+PAGE 195 
+
+=== PAGE 196 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. First part is incorrect. Plausible because the operator may believe that the SR counts will continue to 
+increase somet ime after the rod pull has stopped. Incorrect in that this describes the SR count rate when the 
+reactor is near critical conditions. Second part is incorrect. Plausible because the operator may believe that a 
+stable positive SUR is necessary to achieve a higher equilib rium SR count rate. Incorrect in that in subcritical 
+multiplication, SUR will initially rise then decay to zero with a new stable SR count rate. 
+B. Correct. The reactor will have a stable count rate in the SR while subcritica l (keff < 1.0). When the operator stops 
+rod motion in a subcritical reactor , the source range count rate will achieve a new higher equilibrium level due to 
+the insertion of positive reactivity (keff increases , but still not critical). W ith each rod pull positive reactiv ity is 
+inserted and the startup rate will increase then decay to zero indicating subcritical multiplication has reached 
+equilibrium. 
+C. Incorrect. Plausible because the operator may believe that if the SUR is not constant, then the SR count rate will 
+not achieve a higher value. 
+D. Incorrect. Plausible if the operator believes that the SR startup rate will not change until the reactor is critical. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+INPO Reactor Operational Physics (R3) 
+None 
+NOS05RXO PER-02. Refer to INPO Reactor Operational Physics Rev. 3, ELO 
+1.2 Reactor Startup Nuclear Instrumentat ion Response. 
+New 
+Fundamenta l/Memory 
+41.1 
+RO 
+16-Reactory Theory I Reactor Operational Physics (Startup and Approach to 
+Criticality) 
+192008 K1 .03 
+Describe count rate and instrument response that should be observed for rod 
+withdrawal during the approach to criticality. 
+4.0 
+Theory-Tier 4 
+KIA Match: The KIA is matched because the operato r is being asked how the SR count rate and startup rate behave 
+during a subcritical reactor during a reactor startup. 
+PAGE 196 
+
+=== PAGE 197 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: INPO GFES Solution Bank 
+l)--!'!!!!'!!!!119 
+Ill 
+~~~~L 
+FOR NUCLEAR 
+9 9 TRAINING 
+PWR GFE SOLUTION 
+R EACTOR T HEORY 
+192008 - REACTOR 
+O PERATIONAL PH YSICS 
+P265 
+KIA: K1 .03 (3.9/4.0) 
+A reactor startup is in progress and the reactor is slightly subcritical in the source range. Assuming the reactor 
+remains subcritical, a short control rod withdrawal will cause the reactor startup rate indication to increase sharply in 
+the positive direction, and then ... 
+A. X rapidly decrease and stabilize at a negative 1/3 dpm. 
+B. ✓ gradually decrease and stabilize at zero. 
+C. X stabilize until the point of adding heat (POAH) is reached; then decrease to zero. 
+D. X continue increasing until the POAH is reached; then decrease to zero. 
+Discussion/Calculation: 
+A reactor will have a stable count rate in the source range while subcritical (kott < 1.0). Because k.11 < 1.0, each 
+neutron generation will produce less fission neutrons than the previous gene ration; source neutrons make up for the 
+losses each generation in fission neutrons to stabilize the count rate. Subcritical multiplication is the process of 
+utilizing source neutrons and fuel (fission neutrons) to maintain constant neutron population with kett less than 1.0. If 
+positive reactivity is inserted in the core (kett increases, but still not critical) the source range count rate will increase: 
+N, = sb(-
+I
+-) or N, = SbM I - K,ff 
+SUR indication during a rod withdrawal in a 
+subcritical reactor looks like this: 
+1 - Jump Up (when rods movement started) 
+2 - S mile (during continuous rod withdrawal) 
+3 - Jump Down (when rod movement stopped) 
+4 - Decay to o as count rate stabilizes in the 
+subcritical reactor. 
+w 
+< er 
+.. z :::, 
+0 <.> 
+400 
+~ 200 
+~ z 100 
+No-tee that each reactrvrty addition 
+taJu1a longo, for eo1o1nffl to elllbiti zc 
+(\ak.eg more genenbcns before ., 
+new ,ubte Ken Is r!tiched) 
+"x" amounl of l'IO.!litl1m reacttvlty I 
+is added to a shutdown re.actor. I 
+N11mbtt of n.t.111Qnt frOffi ti1ti0 11 I 
+inereae.e and Kett 1-bbi liz:es at I 
+oow higher value whereby 
+Sub'-raic:•1 M~1.kip lic111Uo11 from 
+&OUrcc neutrons matt$ UP tor 
+ioe.e, . WIien counts doubl• 
+you an~ hdlf "'" c!o,- e lo 
+eri11ea11t~ as you were bcfort 
+th• 11cldlt~1'1. 
+"n" GENERATIONS 
+Where, N1 = total neutrons, So = source neutrons, 1/(1-K.n) is referred to as the subcritical multiplication factor (M) 
+When positive reactivity is added to a subcritical reactor, an equilibrium condition occurs when fission neutron 
+losses equal source neutron strength, causing startup rate (SUR) to initially increase then stabilize once the new 
+steady state neutron count rate is reached (the stem indicates the reactor remains subcritical). The indication of 
+SUR is basically the inverse of the graph above. 
+PAGE 197 
+
+=== PAGE 198 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: INPO GFES Solution Bank 
+Ill 
+~i ~:YL 
+FOR NUCLEAR 
+9 5 -,AININC 
+REACTOR THEORY P10 65 
+PWR GFE SOLUTION 
+19200 8 - REACTOR 
+O PERATIONAL PHYSICS KIA: K1.0 3 (3.9/4.0) 
+During a reactor startup, equal amounts of positive reactivity are being sequentially added, and the source range 
+count rate is allowed to reach equilibrium after each addition. Which one of the following statements applies for 
+each successive reactivity addition? 
+A. X The time required to reach equilibrium count rate is the same. 
+B. X The time required to reach equilibrium count rate is shorter. 
+C. ✓ The numerical change in equilibrium count rate is greater. 
+D. X The numerical change in equilibrium count rate is the same. 
+Discussion/Calculation: 
+A reactor will have a stable count rate in the source range while subcritical (kett < 1.0). Because kett < 1.0, each 
+neutron generation will produce less fission neutrons than the previous generation; source neutrons make up for the 
+losses each generation in fission neutrons to stabilize the count rate. Subcritical multiplication is the process of 
+utilizing source neutrons and fuel (fission neutrons) to maintain constant neutron population with kett less than 1 .0. If 
+positive reactivity is inserted in the core (kett increases, but still not critical) the source range count rate will increase: 
+i ... z :, 
+8 
+400 
+~ 200 
+s 
+'!! 100 
+NcKlc• ltl31 o;,cl'I ,oacciv1Y ocklltle>n 
+1•••0"9M Nlrccv.-..10,ett,, li" 
+(10,M more o•..-.i~ne b~ • 
+new •'-bl • l(~ff •• r...,;hc,d) 
+" c" ~t1•oo•it ~ 1..,,,;1;,,~ ~ .,,;fiwity I 
+1$ odde410 a ~IWldolllft ICOCtOI'. I 
+N11m1Hr 01 nti1.1ttone from ftffklft I 
+!f'ICr•- ,1111e1 tt,n sr..m.- at I 
+s:;;::.~:.::,•1~:=:.n I 
+1M>11.-c."'tultO!tt.M..._,, 11p fo, I 
+1osoc,. WIICIHHM.tnb (NI.Ible I 
+en::1~11=~~':.':~ I 
+tlw'•dd ,don. I 
+*n"' GENERATIONS 
+Where, Nt = total neutrons, Sa = source neutrons, 1/(1 -Kett) is referred to as the subcritical multiplication factor (M) 
+When positive reactivity is added to a subcritical reactor, an equilibrium condition occurs when fission neutron 
+losses equal source neutron strength, causing startup rate (SUR) to initially increase then stabilize once the new 
+steady state neutron count rate is reached (the stem indicates the reactor remains subcrilical). Note thaq doubling 
+the count rate by reactivity additions will reduce the margin to criticality by approximately one half. 
+It can be seen both in the equation and the graph above that as kott approaches 1.0 (criticality), the neutron 
+population will increase at a much greater rate the closer the reactor is to criticality. 
+N, = SO [ _ I t) ➔ N, fr 
+l K eJJ' 
+PAGE 198 
+
+=== PAGE 199 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+73 16-021 Points: 1.00 
+Given: 
+• Salem Unit 2 is shutdown. 
+• RCS pressure is 1805 psig and stable. 
+• Core decay heat is being removed v ia the Steam Generators (SGs) using the MS10s, Atmospheric Dump 
+Valves 
+What is the HIGHEST pressure in the SGs to obtain a MINIMUM 100 °F subcooling margin in the reactor coolant 
+leaving the SGs (assume the reactor coolant leaves the SGs at the SG saturation temperature)? 
+A. 790 psig 
+B. 805 psig 
+C. 820 psig 
+D. 835 psig 
+PAGE 199 
+
+=== PAGE 200 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Plausible if the operator incorrectly calculates the required subcooling temperature or incorrectly reads 
+the Steam Table value. 
+B. Correct. At 1805 psig or 1820 psia the RCS saturation temperature is 623 °F. Therefore, to obtain a 100 °F 
+subcooling margin in the RCS loop cold legs, tempe rature must be 100 °F lower than 623 °F (which is equal to 523 
+°F). Because a negligible temperature difference exist across the steam generator tubes, steam generator 
+temperature must also be approximately 523 °F. Because core heat is being removed by the SGs, the SGs are a 
+saturated system . Therefore, to determine correct SG pressure to obtain 100 °F subcooling margin, one must 
+determine the saturation pressure at 523 °F, which is approximately 820 psia (which is equal to approximately 805 
+psig) .. 
+C. Incorrect. Plausible if the operator fails to convert 820 psia to psig. 
+D. Incorrect. Plausible if the operator incorrectly calculates the required subcooling temperature or incorrectly reads 
+the Steam Table value. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+ASME Steam Tables 
+ASME Steam Tables Rev. 2000 
+NOS05STEAM0-02. 
+Modified Bank - INPO GFES Bank P575 
+Comprehension/ Analysis 
+41.14 
+RO 
+16-Thermodynam ics / Steam 
+193003 K1 .24 
+Explain the usefulness of steam tables to the control room operator. 
+3.1 
+Theory-T ier 4 
+KIA Match: The KIA is matched because the operato r is being asked to determine the saturation pressure in the 
+steam generators that would allow for a 100 °.F subcooling in the RCS by using steam tables. This question shows 
+the operators how useful steam tables can be when determining subcooling. 
+PAGE 200 
+
+=== PAGE 201 ===
+RO EXAMINATION ANSWER KEY 
+Parent Question: 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+e Ill NATIONAL ACADEMY 
+FOK NUCLEAR 
+....._. TRAINING 
+PWR GFE SOLUTION 
+T HERMODYNAMICS P575 
+193003 - STEAM KIA: K1.17 (3.0/ 3.2] 
+A reactor is shut down with reactor coolant system (RCS) pressure at 1,500 psia and core decay heat is being 
+removed via the steam generators (SGs). What pressure must be maintained in the SGs to obtain a 110°F 
+subcooling margin in the reactor coolant leaving the SGs? (Assume the reactor coolant leaves the SGs at the SG 
+saturation temperature.) 
+A. X 580 psia 
+B. ✓ 600 psia 
+C. X 620 psia 
+D. X 640 psia 
+PAGE 201 
+
+=== PAGE 202 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+74 16-022 Points: 1.00 
+Given: 
+• Salem Unit 2 is operating at 80% power. 
+• All Circulators are in service. 
+Which of the following completes the statement? 
+If condensate depression decreases from 5 °F to 2 °F, the steam cycle thermal efficiency will _ (1 )_ and the 
+condensate pumps will operate _ (2)_ cavitation. 
+A. (1) lower (2) closer to 
+B. (1) lower (2) farther from 
+C. (1) rise (2) closer to 
+D. (1) rise (2) farther from 
+PAGE 202 
+
+=== PAGE 203 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. First part is incorrect. Plausible because the operator may believe with a lower condensate depression, 
+the feedwater temperature w ill lower causing a rise in reactor power, and therefore, increase in plant efficiency. 
+Second part is correct. 
+B. Incorrect. First part is incorrect. Plausible because the operator may believe with a lower condensate depression, 
+the feedwater tempe rature will lower causing a rise in reactor power, and therefore, increase in plant efficiency. 
+Second part is incorrect. Plausible because the operator may incorrectly recall how a lower condensate depression 
+will affect suction pressure at the condensate pump and the likelihood of pump cavitat ion. Incorrect in that a lower 
+condensate depression will increase the likelihood of pump cavitation. 
+C. Correct. Chang ing the condensate depression from 5 °F to 2 °F will decrease the condensate depression. If 
+condensate depression decreases , then the condensate will be closer to saturation temperatu re. This produces 
+less NPSH at the suction of the condensate pump, raising the probability of cavitation. However, because the 
+condensate is now at a higher temperatu re, the steam generators must add less sensible heat to the feedwater to 
+reach saturated conditions, increasing plant efficiency. 
+D. Incorrect. First Part is correct. Second Part is incorrect. Plausible because the operator may incorrectly recall how 
+a lower condensate depression will affect suction pressure at the condensate pump and the likelihood of pump 
+cavitat ion. Incorrect in that a lower condensate depress ion will increase the likelihood of pump cavitation. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+INPO GFES Thermodynamic Process (R3) 
+None 
+NOS05THRMPR-03. Refer to INPO Thermodynam ic Process Rev. 3, ELO 
+2.2 Condenser Design and Characteristics 
+Bank - INPO GFES P2576 
+Comprehension/ Analysis 
+41.14 
+RO 
+16-Thermodynam ics / Thermodynamic Process 
+1930004 K1 .11 
+Describe the process of condensate depress ion (subcooling) and its effect on 
+plant operation. 
+2.5 
+Theory-Tier 4 
+KIA Match: The KIA is matched because the operato r is being asked about the concept of condensate depress ion and 
+how it impacts plant operation. 
+PAGE 203 
+
+=== PAGE 204 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+" Ill ~ ~:yl 
+FOR NUCLEAR 
+eiiiiiiiiiil9 TRAININC 
+PWR GFE SOLUTION 
+THERM ODYNAMICS P2576 
+193004 - P ROCESSES KIA: Kl .11 (2 .. 4/2.5] 
+A nuclear power plant is operating at 80 percent power with 52F of condensate depression in the main condenser. 
+If the condensate depression decreases to 2°F, the steam cycle thermal efficiency will ______ ; and the 
+condensate pumps will operate _____ cavitation. 
+A. ✓ increase ; ✓ closer to 
+B. ✓ increase; X farther from 
+C. X dec rease ; ✓ closer to 
+D. X decrease; X farther from 
+Discussion/ Calculation : 
+Condensate depression is defined as the temperature difference between the saturation temperature (for the 
+condenser pressure) and the temperature of the condensate. It is the process whereby the water droplets cling to 
+the tube and lose more heat than the latent heat of condensation. They become subcooled and denser then drop 
+off the tubes into the hotwell. 
+Condensate depression decreases the overall plant efficiency because more sensible heat must be added to reach 
+saturated conditions in the steam generators. However, the advantage of having a small degree of condensate 
+depression is to ensure adequate net positive suction head (NPSH) for the main condensate pumps and prevent 
+cavitation. Excessive conde nsate depression causes more air absorbed in condensate and accelerates oxygen 
+corrosion of secondary plant materials. 
+If condensate depression decreases, then the condensa te will be closer to saturation temperature. This produces 
+less NPSH at the suction of the condensate pump, raising the probability of cavitation. However, because the 
+condensate is now at a higher temperature, the steam generators must add less sensible heat to the feedwater to 
+reach saturated conditions, increasing plant efficiency. 
+At a higher temperature, plant efficiency will increase because less sensible heat must be added in the steam 
+generators. However, probability of cavitation will increase as subcooling (or condensate depression decreases). 
+Answer!Distractor Analysis: 
+A. CORRECT. (2/2) See discussion above. 
+B. WRONG. (1/2) The probability of cavitation will increase as subcooling (or condensate depression decreases). 
+C. WRONG. (1/2) At a higher temperature, plant efficiency will increase because less sensible heat must be 
+added in the steam generators 
+D. WRONG. (0/2) At a higher temperature, plant efficiency will increase because less sensible heat must be 
+added in the steam generators. However, probability of cavitation will increase as subcooling (or condensate 
+depression decreases). 
+PAGE 204 
+
+=== PAGE 205 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+75 16-023 Points: 1.00 
+Given: 
+• Salem Unit 1 is operating at 80% power, middle of life of the fuel cycle. 
+• All control rods are withdrawn except D bank is at 190 steps and in manual control. 
+• Core axial power distribution is peaked below the core midplane. 
+Which of the following will INCREASE the core maximum axial peaking factor? (Assume no operator action is taken 
+unless stated and that main turbine load and core xenon distribution do not change unless stated 
+A. Turbine load/reactor power is reduced by 10 percent. 
+B. The control bank D is withdrawn 4 steps. 
+C. Reactor coolant system boron concentration is reduced by 15 ppm. 
+D. A fully withdrawn control rod located at the edge of the core drops to the bottom of the core. 
+PAGE 205 
+
+=== PAGE 206 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because the operator may believe that the load reduction will lower hot leg temperatures 
+causing the flux in this portion to increase and resulting in an increase in the axial peaking factor. Incorrect in that 
+the lower hot leg temperature will result in a higher density causing the neutron flux to shift higher in the core due 
+to the increased neutron moderation in these regions (OT gets smaller as power id reduced ). This will reduce the 
+axial peaking factor as the flux in the lower potions of the core lowers relative to the average core flux. 
+B. Incorrect. Plausible because the operator may believe that withdrawing contro l rods 4 steps will increase the hot 
+leg temperature resulting in a higher flux in this portion and higher peaking factors. Incorrect in that withdrawing 
+one bank of contro l rods 4 steps will cause the flux to be depressed less (with no change in average flux). This 
+results in a decrease in axial peaking factor. 
+C. Correct. Reducing boron concentration (diluting) by 15 ppm will insert positive reactiv ity in the core, resulting on 
+both heat balance (calorimetric) reactor power and average coolant temperatu re increasing. Also, diluting raises 
+hot leg temperature, making the water in the upper regions of the core less dense (less neutron moderation ), 
+thereby shifting the flux to the already flux-dense portion below midplane. Another way to think about this is that 
+the water is colder in the bottom of the core resulting in a greater change in the atoms per cubic centimeter being 
+removed in the bottom of the core. This again adds positive reactiv ity in the bottom of the core and will shift the 
+flux downward. 
+D. Incorrect. Plausible because the operator may believe that one control rod dropped in the core will increase the 
+flux in that portion of the core adjacent to the dropped rod resulting in a higher axial peaking factor. Incorrect in 
+that one control rod inserting will affect radial flux peaking, but will have no effect on axial flux peaking because the 
+overall axial flux profile does not shift significantly since it is an axially uniform poison . 
+Technical References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+INPO GFES Core Thermal Limits (R3) 
+None 
+NOS05CORTHR-02. Refer to INPO GFES Core Thermal Limits Rev. 3. ELO 
+1.3 Reactor Operation Effects on Peaking Factors. 
+Bank - INPO GFES P7650 
+Comprehens ion/ Analysis 
+41.14 
+RO 
+16-Thermodynam ics / Core Therma l Limits 
+193009 K1 .07 
+Describe factors that affect peaking and hot channe l factors. 
+3.3 
+Theory-Tier 4 
+KIA Match: The KIA is matched because the operato r is being asked which plant conditions will affect the axial 
+peaking ( or hot channel ) factor. 
+PAGE 206 
+
+=== PAGE 207 ===
+RO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: INPO GFES Core Limits Solution Bank 
+., Ill NATIONA L ACADEMY 
+FOR NUCLEAR 
+eiiiliiiiiiie 1'RAINING 
+THERMODYNAMICS P7650 
+PWR GFE SOLUTION 
+193009 - COA E THE AMAL 
+LIMITS KIA: K1 .02 (2.3/2.8) 
+A reactor is operating al 80 percent power near the middle of a fuel cycle. All control rods are nearly fully withdrawn 
+and in manua l control. Core axial power distribution is peaked below the core midplane. 
+Which one of the following will increase the core maximum axial peaking (or hot channel) factor? (Assume no 
+operato r action is taken unless stated, and that main turbine load and core xenon distribution do not change unless 
+stated.) 
+A. X Turbine load/reactor power is reduced by 10 percent. 
+B. X The controlling bank of control rods is withdrawn 4 inches. 
+C . ..J Reactor coolant system boron concentration is reduced by 15 ppm. 
+D. X A fully withdrawn control rod located at the edge of the core drops to the bottom of the core. 
+Discussion/Ca/cu/at/on: 
+The steady-state axial peaking (or hot channel) factor is a measure of maximum total power produced in fuel rod, 
+ensuring enthalpy rise in the entire core is low enough to preclude reaching DNB. Measurements for this parameter 
+can be obtained using in-core detectors taking a series of measuremen ts across the full length of the core, and 
+determining the ratio of average flux for one elevation to the average flux for all elevations. This factor depends on 
+several parameters including fuel loading, control rod bank insertion, and fuel burn-up . 
+Reducing boron concentration (diluting) by 15 ppm will insert positive reactivity in the core, resulting in both heat 
+balance (calorimetric) reactor power and average coo lant temperature increasing. Also, diluting raises hot leg 
+temperature, making the wate r in the upper regions of the core less dense (less neutron moderat ion), thereby 
+shifting the flux to the already flux-dense portion below midplane. Another way to think about this is the fact that the 
+water is colder in the bottom of the core resulting in a greater change in the atoms per cubic centimeter being 
+removed in the bottom of the core. This again adds positive reactivity in the bottom of the core and will shift the flux 
+downward . Therefore, Choice "C" is correct. 
+Answer/Dlstrac tor Analysis: 
+A. WRONG. Reducing reactor power by 10% results in a significant reduct ion in hot leg tempe rature with a 
+relatively constan t cold leg temperature. As hot leg temperature is reduced, wate r in the upper portions of the 
+core is at a reduced temperature, resulting in a higher density, causing the neutron flux to shift higher in the 
+core due to increased neutron moderation in these regions (Delta-T gets smaller as power is reduced) . This will 
+reduce the axial peaking factor as the flux in the lower portions of the core lowers relative to the average core 
+flux. 
+B. WRONG. The stem indicates that the core axial distribution is already peaked below the core midplane. 
+Withdraw ing one bank of control rods 4 inches will cause the flux to be depressed less (with no change in 
+average flux). This results in an decrease in axial peaking factor. 
+C. CORRECT. See discuss ion above. 
+D. WRONG. One control rod fully inserting will affect radial flux peaking , but will have no affect on axial flux 
+peaking because the overall axial flux profile does not shift significantly since it is an axial ly uniform poison. 
+PAGE 207 
+
+=== PAGE 208 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+76 10-144 Points: 1.00 
+Given: 
+• Salem Unit 2 experienced an automatic reactor trip and Safety Injection due to lowering RCS pressure 
+• The crew suspects a PZR vapor space leak 
+Then: 
+• The crew is implementing 2-EOP-LOCA-1, Loss of Reactor or Secondary Coolant 
+• Subcooling is 10 °F 
+• RCS pressure is 1450 psig and stable 
+• PZR level is 30% and rising 
+Based on the above conditions, which of the following completes both statements? 
+1. Which ECCS Pump(s) is/are injecting? 
+2. Per 2-EOP-LOCA-1, what procedure will the CRS direct NEXT? 
+A. (1 ) Charging and SI 
+(2) 2-EOP-LOCA-2, Post LOCA Cooldown and Depressurization 
+B. (1 ) Charging ONLY 
+(2) 2-EOP-TRIP-3, SI Termination 
+C. (1 ) Charging and SI 
+(2) 2-EOP-TRIP-3, SI Termination 
+D. (1 ) Charging ONLY 
+(2) 2-EOP-LOCA-2, Post LOCA Cooldown and Depressurization 
+PAGE 1 
+
+=== PAGE 209 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. First part is correct. Second part is incorrect. Plausible because you would ultimately end up on 2-EOP-
+LOCA-2. Incorrect in that it would not be the next procedure path to transition to. 
+B. Incorrect. First part is incorrect. Plausible if the operato r incorrectly recalls the shutoff head for an SI pump. 
+Second part is correct. 
+C. Correct. Basically the conditions in the stem describes a small break LOCA and the conditions will meet SI 
+Termination criteria in EOP-LOCA-1 and the SRO will transition to EOP-TRIP-3 (SI Termination). In EOP-TRIP-3, 
+the crew will reduce ECCS injection flow, which with the unisolable PZR vapor space leak (SBLOCA), RCS 
+pressure will lower when ECCS injection flow is reduced. EOP-TRIP-3 will then transition the crew to EOP-LOCA-
+2. RCS pressure at 1450 psig, will be above the shutoff head for the SI and Charging Pumps and will both be 
+injection flow into the RCS. 
+D. Incorrect. First part is incorrect. Second part is incorrect. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+1 0CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA# : 
+Importance: 
+Tier/Group 
+2-EOP-LOCA-1 (R42), 2-EOP-LOCA-2 (R41 ), 2-EOP-TRIP-3 (R41) 
+None 
+NOS05LOCA01-07, Objective 3. For the following analyzed 
+transients/accidents: Inadvertent Depressurization of the RCS - Stuck 
+Open Safety (Condition II - Faults of Moderate Frequency. 
+Describe/State the following: Describe the expected plant response 
+Modified Bank - Callaway 2021 NRC SRO76 
+Comprehension / Analysis 
+41.10 / 43.5 / 45.13 
+SRO 
+11-Pressurizer Vapor Space Accident 
+APE 8 AA2.15 
+Ability to determine and/or interpret the following as they apply to the 
+Pressurizer Vapor Space Acc ident: ECCS status. 
+3.9 
+Emergency and Abnorma l Plant Evolutions-Tier 1 /Group 1 
+KIA Match: The KIA is matched because the candidate is being asked to determine how ECCS flow injection will 
+behave following SI actuation and RCS pressure due to a vapor space leak and what procedure will the SRO direct 
+based on RCS pressure checks in EOP-LOCA-1. 
+PAGE2 
+
+=== PAGE 210 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justificat ion: 
+Figu re 4.2-3 Screen ing for SRO-Only Quest ions Linked to 10 CFR 55.43(b)(5) 
+(A ssessment and Selec tion of Procedures) 
+Can the question be answered solely from 
+I I systems knowledge (i.e., how the system works, Yes RO question I flowpath, logic, location)? I 
+~ • 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? 
+I 
+~ 
+Can the question be answered solely by knowing Yes I -' the entry conditions for AOPs or plant parameters RO question I 
+that require entry into major EOPs? -1 
+~ 
+, 
+Can the question be answered solely by knowing Yes I -' the purpose, overall sequence of events, or RO question I 
+overa ll mitigative strategy of a procedure? I 
+7 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal, abnormal. or 
+emergency ) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices , including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+• knowledge of-administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnormal. and emergency procedures 
+~ ,. 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE3 
+
+=== PAGE 211 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Parent Question: Callaway 2021 NRC SRO76 
+Modified Question: Part 1 of the question was changed to address the KIA part on ECCS status. The question is 
+asking the applicant to determine the status of ECCS flow(s) following the SI actuation during a PZR PORV Vapor 
+Space accident and then what procedure will the CRS direct next based on the conditions in the stem. 
+Question # 76 
+An automat ic reactor trip and safety injection has occurred as a result of lowering 
+RCS pressure. 
+The crew has just entered E-1, Loss of Reactor or Secondary Coolant and plant 
+conditions are as follows: 
+Prior to SI 
+Pzr Pressure Lowering 
+RCS Temperature Stable 
+Pzr Level Stable 
+(1) What accident would result in these conditions? 
+And 
+(2) The CRS will direct what procedure NEXT? 
+A. (1) RCS Cold Leg Leak 
+(2) ES-1.1 , SI Termination 
+B. ( 1) RCS Cold Leg Leak 
+After SI Occurs 
+500 psig and 
+LowerinQ 
+Stable 
+Rising 
+(2) ES-1.2, Post LOCA Cooldown and Depressurization 
+C. (1) PZR Vapor Space Leak 
+(2) ES-1.1 , SI Termination 
+D. (1) PZR Vapor Space Leak 
+(2) ES-1.2 , Post LOCA Cooldown and Depress urization 
+Answer: D 
+PAGE4 
+
+=== PAGE 212 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+77 10-145 Points: 1.00 
+Given: 
+• A LOCA is in progress on Salem Unit 2. 
+• The crew is implementing 2-EOP-LOCA-1, Loss of Reactor or Secondary Coolant, and is currently at Step 
+7.4 for assessing conditions for stopping containment spray pumps. 
+• Containment pressure is 23 psig. 
+::e ·:. i : •. :-- .• • ·v .• :• .• :· •.• .• • 
+• WHEN CONTAINMENT PRESSURE 
+. · JS LESS THAN 13 PS [G. 
+• • • • • THEN PERFOflM STEPS 
+• ·.: • : 7. 1 THRU 1. 3 
+•.• .··L l!:::::::====::.1 . 
+........ _: •.. ·.: .· ... : . ·:-: _::-: _::.- .-1:-- _: :· .· .:•. :::,. :, :-; 
+Then: 
+• A valid PURPLE path exists on Thermal Shock 
+• Containment pressure is below 13 psig. 
+In accordance with OP-SA-108-101-2002, EOP Users Guide, which of the following is required and why? 
+Note: FRP = Functional Restoration Procedure(s) 
+A. Step 7.4 may be performed if the CRS determines there is no conflict with implementing the FRP. 
+B. Immediately perform Step 7.4; a Note step in EOP-LOCA-1 specifically states NO FRPs are to be 
+implemented during performance of EOP-LOCA-1. 
+C. Immediately perform Step 7.4; Step 7.4 is a continuous action step and still in effect. 
+D. DO NOT perform Step 7.4; transition to FRP for PURPLE path. 
+PAGES 
+
+=== PAGE 213 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: D 
+Explanation I Justification: 
+A. Incorrect. Plausible because the operator may believe that if a conflict arises between actions of an EOP and FRP 
+that the CRS will always have the option to determine the best path to take, for example "Thinking Compliance". 
+B. Incorrect. Plausible because EOP-LOCA-3 has a Note (N1-1) that does state to NOT implement FRPs while 
+performing actions to establish cold leg recirculation. 
+C. Incorrect. Plausible because step 7.4 is a continuous action step and would be performed when conditions are 
+met. Incorrect in that continuous actions are not performed when transitions are made to a Red or Purple path 
+FRP. 
+D. Correct. Per OP-SA-108 -101-2002 step 2.16.2, a continuous action step should not be performed when a Red or 
+Purple path FRP is in progress . Therefo re, even though conditions of LOCA-1 step 7 .4 are met, the crew should 
+not stop CS pumps. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+OP-SA-108-101-2002 (RO), 2-EOP-CFST-1 (R41) 
+Embedded step from EOP-LOCA-1 
+NOS05TRP00 1-09, Objective 10. Given EOP-CFST-1 and a set of 
+plant conditions, determine whether Functional Restoration 
+Procedures (FRPs) should be implemented and/or terminated, in 
+accordance with OP-SA-108-101-2002 and EOP-CFST-1 
+Bank - Salem 
+Fundamental/Memory 
+41.10 / 43.1 / 45.13 
+SRO 
+10-Large Break LOCA / Emergency Procedures/Plan 
+EPE 11 G2.4.14 
+Knowledge of general guidelines for emergency and abnormal 
+operating procedures usage 
+4.5 
+Emergency and Abnorma l Plant Evolutions-Tier 1 /Group 1 
+KIA Match: The KIA is matched because the candidate is being asked the rules of EOP usage when a Red or Purple 
+path FRP exists and which procedure takes priority when a CAS action condition in the EOP is met. 
+PAGE6 
+
+=== PAGE 214 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Scree ning for SRO-Only Quest ions Linked to 10 CFR 55.43(b)( 5) 
+(Assessment and Selection of Procedures ) 
+Can the question be answered solely from 
+I I RO question I 
+systems knowledge (i.e., how the system works, Yes 
+flowpath, logic, location)? 
+~ 
+Can the question be answered solely by knowing Yes I ! RO question I immediate operator actions? 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the entry conditions for AOPs or plant parameters 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the purpose, overall sequence of events, or 
+overall mitigative strategy of a procedure? 
+7 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal, abnormal , or 
+emergency ) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices , including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+. knowledge of administrative procedures that specify 
+hierarchy, implementation, o~ coordination of plant normal 
+abnormal, and emergency procedu resl 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE7 
+
+=== PAGE 215 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: OP-SA-108-101-2002 
+2.16 Continuous Action Steps : 
+2.16.1. Most guidelines have been provided with a Continuous Action Summary . This is 
+annotated in the upper left corner of each EOP Flowchart page. The particular items 
+of the Continuous Action Summary associated with any guideline are provided in the 
+FOLDOUT PAGE ITEMS document of the Generic Issues Section of the 
+Westinghouse ERG Executive Volume. These foldout page items should be applied 
+to the plant specific EOPs on a per guideline basis. The Continuous Action 
+Summary contains several pieces of information or actions which are normally 
+applicable at any step of the particular guideline. The most important of these 
+actions are guideline transitiOns which allow immediate response to new symptoms 
+as they appear. The placement of these transitions in the Continuous Action 
+Summary allows prompt response to the appearance of subsequent symptoms. 
+2.16.2. Certain operator actions provided in a guideline direct or imply continuous 
+performance throughout the remainder of the guideline. A continuous action is an 
+action that is applicable from the point at which it is first encountered until 
+superseded by alternate guidance or stated to be inapplicable A continuous action 
+generally remains applicable throughout its associated guideline unless otherwise 
+stated, and may apply after a transition is made to another guideline if it does not 
+contain any actions that are inappropriate for the.subsequent guideline. E.or 
+example, a transition contained within a continuous action will not apply after a 
+transition is made to a RED or PURPLE path Functional Restoration Guideline or 
+the LOPA series. Furthermore, actions requmng eqwpment to be started should not 
+be performed in the LOPA series unless directed in that series. Additionally , 
+Optimal Recovery Guideline actions (EOPs) are not to be performed while a Critical 
+Safety Function is being restored from a RED or PURPLE condition. 
+PAGES 
+
+=== PAGE 216 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+78 11-196 
+Given: 
+• Salem Unit 2 is operat ing at 30% power 
+• OHA 0-36 , RCP VIB HI, is LIT 
+• 21 RCP paramete rs are: 
+o Motor flange vibration is 3 m ils and steady 
+o Shaft vibration is 16 mils and steady 
+• Engineering has determined the vibrations are valid 
+• The crew enters S2.OP-AB.RCP-0001, RCP Abnormality 
+What action will the CRS direct? 
+Note: TS 3.4.1.1, Reactor Coolant Loops and Coolant Circulation 
+2-EOP-TRIP-1, Reactor Trip or Safety Injection 
+A. Trip the reactor and stop 21 RCP per Attachment 2, Stopping RCPs, of S2.OP-AB.RCP-0001. 
+B. Preparations for a controlled Unit shutdown to remove 21 RCP from service. 
+C. Stop 21 RCP within 1 hour per TS 3.4.1.1 and place the Unit in MODE 3 within 6 hours. 
+Points: 1.00 
+D. Trip the reactor and stop 21 RCP per OHA 0 -36 Alarm Response Procedure and enter 2-EOP-TRIP-1. 
+PAGE9 
+
+=== PAGE 217 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Plausible because motor and flange vibrations are parameters on Attachment 1 of S2.OP-AB.RCP-0001 
+that may require stopping RCPs per Attachment 2. Incorrect in that the Attachment 1 RCP vibration levels have 
+not been exceeded as of yet. 
+B. Correct. The RCP vibration levels are below the requirements in Attachmen t 1 of AB.RCP-1 that require stopping 
+the affected RCP per Attachment 2. The OHA ARP for D-36 directs entry into S2.OP.AB-RCP-0001. Per S2.OP-
+AB.RCP-0001 Step 3.10 allows the CRS/SM to determine if a Unit shutdown is required. 
+C. Incorrect. Plausible if the applicant believes that since RCP trip criteria has not been reached per Attachment 1 of 
+S2.OP-AB.RCP-0001, then take the action of TS 3.4.1.1 for a loss of an RCP. Incorrect in that the TS action is to 
+place the unit in MODE 3 within one hour on a loss of RCS flow. 
+D. Incorrect. Plausible if the applicant believes that the ARP will direct stopping and tripping the reactor which it does 
+not, only directs entry into S2.OP-AB.RCP-000 1 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-AB.RCP-0001 (R28), TS 3.4.1.1. 
+None 
+NOS05ABRCP0-08, Objective 4b. Given a set of initial plant 
+conditions: Describe the final plant condition that is established by 
+the abnormal procedure. 
+New 
+Comprehension/ Analysis 
+41.10 / 43.5 / 45.13 
+SRO 
+11-Reacto r Coolant Pump Malfunctions 
+APE 15 AA2.16 
+Ability to determine and/or interpret the following as they apply to 
+RCP Malfunctions: RCP vibration 
+3.5 
+Emergency and Abnorma l Plant Evolutions-Tier 1 /Group 1 
+KIA Match: The KIA is matched because the candidate is being asked to interpret RCP vibrations and determine the 
+required course of action per S2.OP-AB.RCP-0001. 
+PAGE10 
+
+=== PAGE 218 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessme nt and Selection of Procedures) 
+Can the question be answered solely from 
+I .1 systems knowledge (i.e., how the system works, Yes RO question I flowpath, logic , location)? -1 
+~ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? 
+I 
+~ 
+Can the question be answered solely by knowing Yes I .i the entry conditions for AOPs or plant parameters RO question I 
+that require entry into major EOPs? I 
+~ 
+Can the question be answered solely by knowing Yes I I the purpose , overall sequence of events, or RO question I 
+overall mitigative strategy of a procedure? I 
+7 
+Does the question require one or more of the following? 
+. assessment of plant conditions (normal, abnormal, or 
+emergency) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of wnen to implement attachments and 
+appendices, including how to coordinate these items with 
+I - SRO-only procedure steps Yes 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+. knowledge of administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnormal, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 11 
+
+=== PAGE 219 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: S2.OP-AB .RCP-0001 
+ATTACHMENT 1 
+(Page 1 of 2) 
+CONTINUOUS ACTION SUMMARY 
+1.0 I F AT f>INY TIME, any of the fo(lowing validated RCP conditions exist, 
+THEN GO TO Attachment 2, Stopping Reactor Coolant Pumps. 
++ Component Cooling Water flow is lost to ALL IRCPs. 
+♦ Component Cooling Water flow not restored within 5 minutes of initial loss: 
+♦ OHA-0-20, 21 RCP BRG CLG WTR FLO LO 
+• OHA-0-21, 22 RCP BRG CLG WTR FLO LO 
+♦ OHA-0-22, 23 RCP BRG CLG WTR FLO LO 
+♦ OHA-0-23, 24 RCP BRG CLG WTR FLO LO 
+Time 
+♦ RCP Seal Injection Flow AND RCP Thermal Barrier Component Cooling flows are 
+lost concurrently (ROPs should be secured within 2 minutes to prevent RCP 
+damage). 
++ Shafi vibration-greater than 20 mils ormotor flange vibration greater 
+than 5 mils 
++ Motor Bearing temperature greater than 175°F 
+♦ Motor Winding temperature greater than 302•F, (Modes 1-5) 
+[C0379] 
+(AJso, REFER TO Attachment 3 (page 2 of 2) for Alternate Indications to validate 
+indicated rise in RCP Motor Winding Temperature) 
+♦ Seal Water Outtet temperarume greater than 190· F 
+♦ #1 Seal Water Leakoff flow less than 0.8 gpm and reverses to greater lhan or equal 
+to 6.0 gpm or pump bearing/seal inlet temperature rise 
++ #1 Seal Water Leakoff flow less than 0.8 gpm with rising pump bearing/seal 
+inlet temperatures 
+♦ #1 Seal Water Leakoff flow greater than or equal to 6 gpm 
+PAGE12 
+
+=== PAGE 220 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Additional Reference: 
+3.9 IF the RCP malfunction is NOT detem1ined, 
+THEN RETURN to Step 3.1. 
+NOTE 
+Follo\Ning a Loss of Seal Injection event, with RCPs having a seal leakoff less than 2.5 g:pm, 
+RCS coolc!lown will hetp to lowe, seal leakoff temperatures. 
+3. W IF Unit shu1ldown is detem1ined by CRSISM, 
+THEN: 
+A. INITIATE Unit shutdown IAW applicable Integrated Operating Procedures. 
+B. NOTIFY ORS/SM to refer to the following: 
+• Technical Specifications 
+• Even~ Classification Guide 
+G. S tep 3.10, provides direction to perform a controlled Unit shutdown when 
+unacceptable RCP conditions exist. The unit is shutdown in a period of 8 hours or 
+less and the affected RCP(s) are removed from service allowing a more detailed 
+inspection and analysis. Notification for CRS/SM to evaluate plant conditions. Plant 
+Technical Specifications and the Event Classification Guide are evaluated for 
+applicability. 
+PAGE13 
+
+=== PAGE 221 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+79 14-081 Points: 1.00 
+Given: 
+• Salem Unit 2 is in MODE 5 
+• 21 RHR Pump is in shutdown cooling 
+• 22 RHR Pump is in standby 
+Then: 
+• 21 RHR Pump trips 
+• The crew enters S2.OP-AB.RHR-0001 , Loss of RHR 
+• Attempt to start 22 RHR Pump results in the breaker tripping free 
+• ST A reports Time to Core Boiling is less than 15 minutes 
+• Field operator reports no protective relay flags are present and no obvious reason for the 4KV breaker for 22 
+RHR Pump to trip free, and an acrid smell is observed near the 21 RHR 4KV breaker cubicle 
+In accordance with OP-SA-108-106-1001, Equipment Control and Large Motor Starting Criteria, complete the 
+following statement concerning breaker re-closure for 22 RHR Pump? 
+Based on the above conditions, the _ ( 1 )_ can authorize one attempt at reclosing the breaker without an 
+investigation ONLY during _ (2)_ . 
+A. (1 ) Shift Manager 
+(2) emergency conditions 
+B. (1 ) Plant Manager 
+(2) emergency conditions 
+C. (1 ) Shift Manager 
+(2) emergency conditions AND with Shift Technical Advisor concurrence 
+D. (1 ) Plant Manager 
+(2) emergency conditions AND with Shift Technical Advisor concurrence 
+PAGE14 
+
+=== PAGE 222 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: A 
+Explanation I Justification: 
+A. Correct. Per OP-SA-108 -106-1001 step 4.2.2, if an emergency condition exists, as determined by the SM/CRS, 
+and a breaker fails to close, one attempt at reclosure may be made without conduct ing an investigation, if that 
+piece of equipment is essential for maintaining plant stability . 
+B. Incorrect. Plausible because the cond itions in the stem are severe and the SRO may believe that the Plant 
+Manager level of management is required to accept responsib ility if the RHR motor is damaged. 
+C. Incorrect. Plausible because the SRO may think that before reclosing the breake r to an important safety 
+equipment that the on-shift Shift Technica l Advisor should be involved in the decision process. 
+D. Incorrect. Plausible because the SRO may think that before reclosing the breaker to an important safety equipment 
+that the on-shift Shift Technica l Advisor should be involved in the decision process. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+OP-SA-108-106-1001 (R1) 
+None 
+NOS05CONDOP-15, Objective 5. Describe requirements for the 
+following Control Room or Field Activities in accordance with 
+applicable Conduct of Operations Manual Administrative Procedures 
+New 
+Comprehension/ Analysis 
+41.10 / 43.10 / 45.13 
+SRO 
+14-Loss of RH R System / Conduct of Operations 
+APE 25 G2.1.1 
+Knowledge of conduct of operat ions requirements 
+4.2 
+Emergency and Abnormal Plant Evolutions-Tier 1 /Group 1 
+KIA Match: The KIA is matched because the candidate is being ask knowledge of the breaker reclosure policy when 
+the breaker trips free while attempting to start an RHR pump during loss of RHR cooling. 
+PAGE15 
+
+=== PAGE 223 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-On ly Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I I systems knowledge (i.e., how the system works, Yes RO question I flowpath, logic, location)? -1 
+~ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? 
+I 
+~ 
+Can the question be answered solely by knowing Yes 
+I ~I RO question I the entry conditions for AOPs or plant paramete rs 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes I I the purpose , overall sequence of events, or RO question I 
+overall mitigative strategy of a procedure? I 
+7 
+Does the question require one or more of the following? 
+• assessmen t of plant conditions (normal, abnormal, or 
+emergency) and then prescribing a procedu re or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to impleme nt attachmen ts and 
+appendices, including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnormal, and emergency procedu res 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE16 
+
+=== PAGE 224 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+80 10-146 Points: 1.00 
+Given: 
+• Salem Unit 2 reactor failed to automatically trip following a valid RPS trip signal 
+• All attempts to trip the reactor from the main control room have been unsuccessful 
+• The crew enters 2-EOP-FRSM-1, Response to Nuclear Power Generation, and all immediate actions are 
+complete 
+In accordance with 2-EOP-FRSM-1 , which of the following completes both statements? 
+1. Which of the following describes how the turbine trip status is checked? 
+2. What subsequent action will the CRS direct if the turbine trip status check is NOT met following immediate 
+actions of 2-EOP-FRSM-1? 
+A. (1) ALL turbine stop valve closed bi-stables LIT on 2RP4. 
+(2) Dispatch an operator to locally trip the turbine at the front standard. 
+B. (1) ALL turbine stop valve closed bi-stables LIT on 2RP4. 
+(2) Direct the control room operator to stop all EHC pumps. 
+C. (1) 2 out 3 Auto Stop Oil low pressure bi-stables LIT on 2RP4. 
+(2) Direct the control room operator to stop all EHC pumps. 
+D. (1) 2 out 3 Auto Stop Oil low pressure bi-stables LIT on 2RP4. 
+(2) Dispatch an operator to locally trip the turbine at the front standard. 
+PAGE17 
+
+=== PAGE 225 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: A 
+Explanation I Justification: 
+A. Correct. Per 2-EOP-FRSM-1 Step 6, the turbine is tripped when all stop valves are closed. This can be verified by 
+observing the bi-stables on 2RP4. If the turbine fails to trip at Step 6, then the CRS will dispatch an operator to the 
+turbine deck to locally trip the turbine at the front standard . 
+B. Incorrect. First part is correct. Second part is incorrect. Plausible because stopping EHC pumps is possible from 
+the control room. Incorrect i n that FRSM-1 step 6 directs locally tripping the turbine at the front standard. 
+C. Incorrect. First part is incorrect. Plausible because 2 out of 3 ASO bi-stables tripped is a demand for a turbine trip. 
+Incorrect in that ASO indications is not a direct indication of a turbine trip. Second part is incorrect. Plausible 
+because stopping EHC pumps is possible from the control room. Incorrect in that FRSM-1 step 6 directs locally 
+tripping the turbine at the front standard. 
+D. Incorrect. First part is incorrect. Plausible because 2 out of 3 ASO bi-stables tripped is a demand for a turbine trip. 
+Incorrect in that ASO indications is not a direct indication of a turbine trip. Second part is correct. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+2-EOP-FRSM-1 (R43) 
+None 
+NOS05FRSM00-05, Objective 4.iii. Describe the plant response to 
+actions taken in the following EOP step sequence (s): Turbine Trip 
+Verification. 
+New 
+Comprehension/ Analysis 
+41.10 / 43.5 / 45.13 
+SRO 
+10-Anticipated Transient Without Scram 
+EPE 29 EA2.09 
+Ability to determine and/or interpret the following as they apply to 
+A TWS: Occurrence of a main turbine trip. 
+4.1 
+Emergency and Abnorma l Plant Evolutions-Tier 1 /Group 1 
+KIA Match: The KIA is matched because the candidate is being asked how to determine if the main turbine is tripped 
+per EOP-FRSM-1 and what action is required if the turbine fails to trip. 
+PAGE18 
+
+=== PAGE 226 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening fo r SRO-Onl y Quest ions linked t o 10 CFR 55.43(b)(5) 
+(Assess ment and Selection of Procedures) 
+Can the question be answered solely from 
+I ::I RO question I systems knowledge (i.e., how the system works, Yes 
+flowpath, logic, location)? 
+~ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? - I 
+~ 
+Can the question be answered solely by knowing Yes 
+1.
+1 
+RO question I the entry conditions for AOPs or plant parameters 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes 
+1.
+1 
+RO question I the purpose , overall sequence of events , or 
+overall mitigative strategy of a procedure? 
+7 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal, abnormal, or 
+emergency) and then prescribing a procedure or section of 
+a procedure to mitigate or recover o~ with..which to proceed 
+• knowledge of when to implement attachments and 
+appendices , including how to coordinate these items with 
+I -
+SRO-only procedure steps Yes 
+• knowledge of diagnostic steps and decision points in the - question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+. knowledge of administrative procedures that specify 
+hierarchy, implementation , or coordination of plant normal, 
+abnormal, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5} for SRO-only 
+PAGE19 
+
+=== PAGE 227 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+81 11-197 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• The crew is performing S2.OP-AB.SG-0001, Steam Generator Tube Leak, due to a confirmed tube leak on 
+one SG 
+• Chemistry is performing hourly trends of primary to secondary leak rates 
+Chemistry leak rates are as follows: 
+Time SG Leak Rate (ged} 
+0200 40 
+0300 60 
+0400 90 
+0500 125 
+Based on the above trends, what is the HIGHEST action that the CRS should direct in accordance with S2.OP-
+AB.SG-0001? 
+[REFERENCE PROVIDED] 
+A. Be in MODE 3 in less than or equal to 24 hours. 
+B. Be in MODE 3 within 6 hours. 
+C. Reduce power to less than or equal to 50% within 1 hour AND be in MODE 3 in the following 2 hours. 
+D. Trip the reactor and actuate Safety Injection. 
+PAGE 20 
+
+=== PAGE 228 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because this is an action per Attachment 1 for Action Level 1. 
+B. Incorrect. Plausible because this is an action per Attachment 1 for Action Level 3 if leakrate is ::: 150 gpd. 
+C. Correct. Per S2.OP-AB.SG-0001 Attachment 1 step 1.B (Action Level 3) with leak rate at greater than or equal to 
+75 gpd and a rate of change greater than or equal to 30 gpd/hr, then reduce power less than or equal to 50% in 1 
+hour and place the unit in MODE 3 in the following 2 hours. 
+D. Incorrect. Plausible because this is an action directed i n Attachment 1. 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-AB.SG-000 1 (R34) 
+Attachment 1 from S2.OP-AB.SG-0001 
+NOS05ABSGTL-06 , Objective 3, Given a set of initial plant 
+conditions: Describe the plant response to actions taken in the 
+abnormal procedu re 
+New 
+Comprehension/ Analysis 
+41.10 / 43.5 / 45.12 
+SRO 
+11-Steam Generator Tube leak / Conduct of Operations 
+APE 037 G2.1.25 
+Ability to interpret reference materials, such as graphs, curves, and 
+tables (reference potential). 
+4.2 
+Emergency and Abnorma l Plant Evolutions-Tier 1 /Group 1 
+KIA Match: The KIA is matched because the SRO is required to interpret plant data and determine what action is 
+required based on SG tube leak rate and rate of change per S2.OP-A B.SG-0001. 
+PAGE 21 
+
+=== PAGE 229 ===
+SRO EXAMINATION ANSWER KEY 
+Additional Reference: 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+s2 .OP-AB.SG-0001 (Q) 
+ATTA CHMENT 1, CONTINUOU S ACTION SUMMARY 
+(Page 4 of 7) 
+NOTE 
+♦ Unit shutdown is required when the following action levels are exceeded . Chemistry is to 
+obtain grab samples to confirm the leak rate during the unit shutdown. 
+♦ It is mandatory that plants without a second radiation monitor shutdown based on the 
+indications of one monitor. 
+♦ Unit shutdown is NOT to be delayed while waiting for sample results. Shutdown actions may 
+only be suspended when sample results confirm that total Primary to Secondary leakage is 
+below the unit shutdown criteria as listed in Step 1. 7. 
+♦ 2R53 data is valid only in Mode 1, N-16 is only generated in sufficient amounts greater than 
+or equal to 25% power. 
+1.7 Action Levels 2 and 3, shutdown required 
+A. Action Level 2, 
+1. !E.8I.8!£!.Il.M5. the leak rate is quantitatively confirmed at greater than or 
+equal to 75 gpd in ANY SG and sustained for greater than or equal to 1 hr but 
+at a rate of Less than or equal to 30 gpd/hr, 
+!!::!fil! PERFORM the following: 
+♦ PLACE Unit 2 in Mode 3 in Less than or equal to 24 hr 
+♦ MONITOR rate of increase in leak rate 
+♦ IDENTIFY leaking SG and quantify leakage 
+♦ CONTAIN systems to minimize spread of contaminat ion 
+♦ INCREASE frequency of available RMS monito ring 
+PAGE 22 
+
+=== PAGE 230 ===
+SRO EXAMINATION ANSWER KEY 
+Additional Reference: 
+1.7 (continued) 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+s2 .oP-AB.SG-0001 (Q) 
+ATTACHMENT 1, CONTINUOUS ACTION SUMMARY 
+(Page 5 of 7) 
+B. Action Level 3, [CRCA 70148825] 
+1. !f. AT ANY TIME the leak rate is quantitatively confirmed at greater than or 
+equal to 75 gpd and a rate of change greater than or equal to 30 gpd/hr 
+QB the leak rate is quantitatively confirmed at greater than or equal to 75 gpd 
+and the continuous radiation monitors are unavailable, (both R53 and R19 
+monitors are unavailable) 
+THEN PERFORM the following: 
+♦ REDUCE power to less than or equal to 50% in 1 hr IAW 
+S2.OP-AB.LOAD-0001 (Q) Rapid Power Reduction 
+♦ PLACE Unit 2 in Mode 3 in following 2 hrs 
+♦ IDENTIFY leaking SG and quantify leakage 
+♦ CONTAIN systems to minimize spread of contamination 
+♦ INCREASE frequency of available RMS monitoring 
+2. !EAT ANY TIME the leak rate is quantitatively confirmed at 
+greater than or equal to 150 gpd, 
+THEN PERFORM the following: 
+♦ PLACE Unit 2 in Mode 3 in less than or equal to 6 hrs 
+♦ IDENTIFY leaking SG and quantify leakage 
+♦ CONTAIN systems to minimize spread of contamination 
+♦ INCREASE frequency of available RMS monitoring 
+PAGE 23 
+I 
+
+=== PAGE 231 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-Only Questio ns Linked to 10 CFR 55.43(b)(5) 
+(Assessme nt and Selecti on of Procedures) 
+Can the question be answered solely from 
+I I systems knowledge (i.e., how the system works, Yes RO question I flowpath, logic, location)? 
+I 
+~ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? 
+I 
+~ 
+Can the question be answered solely by knowing Yes I .1 the entry conditions for AOPs or plant parameters RO question I 
+that require entry into major EOPs? I 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the purpose , overall sequence of events, or 
+overall mitigative strategy of a procedure? 
+7 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal, abnormal, or 
+emergency) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+I SRO-only procedur.e..steps Yes 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+. knowledge of administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnormal, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5 ) for SRO-only 
+PAGE 24 
+
+=== PAGE 232 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+82 11-198 Points: 1.00 
+Given: 
+• Salem Unit 2 is performing a reactor startup 
+• A valid P-6 permissive light is now LIT on 2RP4 
+When the P-6 permissive was LIT, the RO observed the following: 
+• 2N35, Intermediate Range, NIS channel indicates 1 E-5% power 
+• 2N36, Intermediate Range, NIS channel indicates 1 E-8% power 
+Which of the following comp letes both statements ? 
+1. The _ (1 )_ Intermediate Range (IR) NIS channel is not indicating as expected and is INOPERABLE. 
+2. Per TS 3.3.1.1 Instrumentation Bases, why is the 24 hour action time allowed when one IR NIS channel is 
+INOPERABLE? 
+A. (1) 2N35 
+(2) Takes into account the low probability of failure of the operable IR channel during this period. 
+B. (1) 2N35 
+(2) Takes into account the low probability of reactivity events during this period. 
+C. (1) 2N36 
+(2) Takes into account the low probability of reactivity events during this period. 
+D. (1) 2N36 
+(2) Takes into account the low probability of failure of the operable IR channel during this period. 
+PAGE 25 
+
+=== PAGE 233 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: D 
+Explanation I Justification: 
+A. Incorrect. Part 1 is incorrect. Plausible because the operator can incorrectly recall the point where the SR and IR 
+overlap when P-6 is present. Part 2 is correct. 
+B. Incorrect. Part 1 is incorrect. Plausible because the operator can incorrectly recall the point where the SR and IR 
+overlap when P-6 is present. Part 2 is incorrect. Plausible because the IR channel does provide redundant trip 
+function to the PR NIS low setting trip, but this is not the bases for the 24 hour action limit. 
+C. Incorrect. Part 1 is correct. Part 2 is incorrect. Plausible because the IR channel does provide redunda nt trip 
+function to the PR NIS low setting trip, but this is not the bases for the 24 hour action limit. 
+D. Correct. When P-6 is LIT, the IR NIS would indicate 1 E-5% power. Therefore, 2N36 IR channel is not indicating 
+for the expected overlap between the SR channels. Per TS 3.3.1.1 bases, the IR NIS channel high flux trip 
+ensures that protect ion is provided against an uncontrolled RCCA bank rod withdrawal accident from a subcritical 
+condition during startup. The trip function provides redundant protection to the Power Range High Flux - Low 
+Setpoint trip function. The 24 hour action times for one inoperable IR channel allow for a slow and controlled 
+adjustment above P-10 or below P-6 and take into account the redundant capability afforded by the operable IR 
+channel and its low probabil ity of failure during this period. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+TS 3.3.1.1 bases 
+None 
+NOS05ABNIS1-04, Objective 2. Describe, in general terms, the 
+actions taken in S2.OP-AB.NIS-0001 (Q) and their Bases , in 
+accordance with this lesson plan 
+New 
+Comprehension/ Analysis 
+41.10 / 43.5 / 45.13 
+SRO 
+11-Loss of Intermed iate Range Nuclear Instrumenta tion 
+APE 33 AA2.01 
+Ability to determine and interpret the following as they apply to the 
+Loss of Intermediate Range Nuclear Instrumentation: Equivalency 
+among source range, intermediate range, and power range channel 
+readings. 
+3.4 
+Emergency and Abnorma l Plant Evolutions-Tier 1 /Group 2 
+KIA Match: The KIA is matched because the candidate is being asked what the equivalency reading would be 
+between the SR and IR NIS when the P-6 bistable is LIT and what is the TS bases for the 24 hour action time. 
+PAGE 26 
+
+=== PAGE 234 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Additional Reference: 
+SR/IR/PR Ove rl ap 
+QJ 
+10 2 
+I 
+t:l.O 
+t 
+C: 
+ro a:: 
+10 I 
+-QJ 
+10° 3 
+0 
+a.. 
+QJ 
+10·1 t:l.O 
+C: 
+ro 
+10·2 a:: 
+QJ 
+...... 
+1o•cPs 
+ro 
+10 • 104 ~ 
+QJ 
+SR Trip 10 5 10"' 
+E 
+-QJ 
+...... 
+C: 
+10 • 104 
+~ 
+7.Jxl O"' eset 
+10, 10• 
+10 2 10·7 
+! 
+10 1 10• 
+□ 
+10 ° 10 • 
+0 .1 CPS 10 ·1 10"'· 
+PAGE 27 
+
+=== PAGE 235 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-2 Screening for SRO-Only Questions Linked to 10 CFR 55.43(b)(2) (TS) 
+Can the question be answered solely by 
+Yes I -I I 
+knowing s 1-hour TS/TRM action? RO question 
+I No 
+,, 
+Can the question be answered solely by Yes I -I I 
+RO question knowing the LCO/TRM information listed 
+"above the line?" 
+I No 
+Ir 
+Can the question be answered solely by Yes I ~1 I 
+knowing the TS safety limits? RO question 
+I No 
+Can the question be answered solely by Yes I 
+I I 
+RO question knowing the TS bases information associated 
+with the "above-the-line" LCO information or 
+general systems knowledge? 
+I No 
+1 
+Does the question involve one or more of the following for TS, 
+TRM, or ODCM: Yes I 
+application of required actions (TS Section 3) and SRs (TS SRO-• 
+Section 4) in accordance with rules of application level 
+requirements (TS Section 1) question 
+• application of generic LCO requirements (LCOs 3.0.1 
+through 3.0.7 and LCOs 4J0.1 through 4.0.4) 
+• knowledge of TS bases that is required to analyze TS 
+required actions and terminology 
+I No 
+, 
+Question might not be linked to 
+10 CFR 55.43(b )(2) for SRO-on ly 
+PAGE 28 
+
+=== PAGE 236 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+83 11-199 Points: 1.00 
+Given: 
+• BOTH Salem Control Rooms have been evacuated due to toxic gas 
+Per S2.OP-AB.CR-0001, Control Room Evacuation, which of the following completes both statements? 
+1. EOPs _ (1 )_ applicable during Control Room Evacuation. 
+2. The "Caution" statement in Attachment 3 alerts the CRS to monitor SG pressures at the Hot Shutdown Panel 
+to avoid _ (2)_ . 
+A. (1) are NOT 
+(2) exceeding Tech Spec RCS cooldown rate of 100 °F per hour 
+B. (1) are NOT 
+(2) Safety Injection on steam line differential pressure 
+C. (1) are 
+(2) exceeding Tech Spec RCS cooldown rate of 100 °F per hour 
+D. (1) are 
+(2) Safety Injection on steam line differential pressure 
+PAGE 29 
+
+=== PAGE 237 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Plausible because the SRO may that TS limit of 100 ° F per hour still apply in this procedure. Incorrect 
+in that the RCS cooldown limit is 25 °F per hour IAW Attachment 3 step 24.0. 
+B. Correct. Per the Note in section 2.0 Immediate Actions in S2.OP-AB.CR-000 1, EOPs are NOT applicable during 
+Control Room Evacuation. EOPs shou ld be used for informat ion only or as directed by the TSC while performing 
+this procedure . The CRS will monitor SG pressures at the Hot Shutdown Panel IAW Attachment 3 step 5.0. A 
+Caution statement in step 5.0 cautions the CRS that a steam line differential pressure SI may occur if DP exceeds 
+100 psi differentia l pressure 
+C. Incorrect. Plausible because EOP-TRIP-1 is the typical procedure to enter following a reactor trip. Plausible 
+because the SRO may that TS limit of 100 ° F per hour still apply in this procedure. Incorrect in that the RCS 
+cooldown limit is 25 °F per hour IAW Attachment 3 step 24.0. 
+D. Incorrect. Plausible because EOP-TRIP-1 is the typical procedure to enter following a reactor trip. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-AB.CR-0001 (R24) 
+None 
+NOS05ABCR01-06 Objective 2. Describe, in general terms, the 
+actions taken in S1/S2.OP-AB.CR-0001 and t he bases for the actions. 
+New 
+Comprehens ion/ Analysis 
+41.10 / 43.5 / 45.13 
+SRO 
+11-Control Room Evacuation / Emergency Procedures/Plan 
+APE 68 G2.4.20 
+Knowledge of the operational implications of emergency and 
+abnormal operating procedu res warnings , cautions, and notes. 
+4.3 
+Emergency and Abnorma l Plant Evolutions-Tier 1 /Group 2 
+KIA Match: The KIA is matched because the question is asking the SRO knowledge of a note in the Control Room 
+Evacuation abnormal procedure and how to apply the note. 
+PAGE 30 
+
+=== PAGE 238 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-Only Questio ns Linked to 10 CFR 55.43(b)( 5) 
+(Assess ment and Selection of Procedures) 
+Can the question be answered solely from 
+I I RO question I systems knowledge (i.e., how the system works, Yes 
+flowpath, logic, location)? 
+~ 
+Can the question be answered solely by knowing Yes I ! RO question I immediate operator actions? 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the entry conditions for AOPs or plant parameters 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the purpose, overall sequence of events, or 
+overall mitigative strategy of a procedure ? 
+7 
+Does the question require one or more of the following? 
+. assessment of plant conditions (normal, abnormal, or 
+emergency) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+. knowledge of when to implement attachments and 
+appendices , including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+,_subprocedures or emergency contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnorma l, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 31 
+
+=== PAGE 239 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+84 10-147 Points: 1.00 
+Given: 
+• Salem Unit 2 is performing 2-EOP-FRCC-1, Response to Inadequate Core Cooling 
+• All steam generators are intact and at approximately 1040 psig 
+• MSIVs are open 
+• The crew is preparing to depressurize the steam generators in order to inject accumulators 
+• Containment Pressure is 5 psig 
+Which of the following completes both statements? 
+1. The operators will depressurize the steam generators using steam dumps at a _ (1 )_ . 
+2. Following SG depressurization, the SG NR levels are as follows: 
+21 SG 22 SG 23 SG 24SG 
+7% 12% 16% 10% 
+Per 2-EOP-FRCC-1, step 18, RCP Start for Temporary Core Cooling, what is the MAXIMUM number of RCPs 
+that the CRS will direct to be started (assume CETs remain above 1200 F)? 
+A. (1 ) maximum rate while attempting to avoid a Main Steam Isolation 
+(2) One 
+B. (1 ) maximum rate while attempting to avoid a Main Steam Isolation 
+(2) Three 
+C. (1 ) rate not to exceed 100 °F per hour 
+(2) Three 
+D. (1 ) rate not to exceed 100 °F per hour 
+(2) One 
+PAGE 32 
+
+=== PAGE 240 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: A 
+Explanation I Justification: 
+A. Correct. Part 1 is correct. Part 2 is correct. Per 2-EOP-FRCC-1 step 11 , the crew will depressur ize the intact SGs 
+by using the steam dumps or MS10s at a maximum rate. At step 18 with CETs above 1200 °F, then the crew will 
+determine how many RCPs can be started to reduce CETs. With containment at adverse conditions, the required 
+NR level to start RCPs will be 15%, therefore, after performing step 18, only one RCP meets the requirements in 
+step 18 to be started. 
+B. Incorrect. Plausible because if use normal containmen t conditions, the required NR level is 9% and then three 
+RCPs would be started. 
+C. Incorrect. Part 1 is incorrect. Plausible because this RCS cooldown rate is used on other EOPs to avoid violating 
+tech spec limits. Part 2 is incorrect. Plausible because if use normal containment conditions, the required NR 
+level is 9% and then three RCPs would be started. 
+D. Incorrect. Part 1 is incorrect. Plausible because this RCS cooldown rate is used on other EOPs to avoid violating 
+tech spec limits. Part 2 is correct. 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+2-EOP-FRCC-1 (R41) 
+None 
+NOS05FRCC00-06 Objective 2.a. Describe the EOP mitigation 
+strategy for the following: Response to Inadequate Core Cooling 
+Modified Bank - D iablo Canyon 2019 NRC SRO84 
+Comprehension/ Analysis 
+41.10 / 43.5 / 45.13 
+SRO 
+10-lnadequate Core Cooling 
+EPE 74 EA2.12 
+Ability to determine and/or interpret the following as they apply to the 
+Inadequate Core Cooling: RCS cooldown rate 
+3.8 
+Emergency and Abnorma l Plant Evolutions-Tier 1 /Group 2 
+KIA Match: The KIA is matched because the SRO must determine the RCS cooldown rate during depressurizing SGs 
+to inject the accumu lators and select the procedure to enter if all attempts to restore core cooling fails in order to 
+mitigate inadequate core cooling. 
+PAGE 33 
+
+=== PAGE 241 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Parent Question: Diablo Canyon 2019 NRC SRO84 
+Modified Justification: Part 1 of this questions was changed to test the SRO on the cooldown rate in 2-EOP-FRCC-1. 
+Question 84 
+GIVEN 
+• The crew is perfonning EOP FR-C.1, Response to Inadeqjuate Core Cooling 
+• All RCPs are available 
+• Containment pressure is 1.1 psig and stable 
+• Narrow Range Steam Generator Levels are: 
+o l- 1 - 24% 
+o l-2- 12% 
+0 1-3 - 18% 
+o l-4 ~0% 
+l) In accordance with step 19, Restore Temporaiy Core Cooling. ofEOP FR-C 1, what is 
+the MAXIMUM number of RCS cooling loops available? 
+2) If, after the RCPs are starte.d in the available RCS cooling loops and all PORVs and head 
+vents are open, core exit thenn ocouples are greater than 1200°F and rising. the Shift 
+Foreman should: 
+A. 1) two 
+2) GO TO SACRG-1, Severe Accident Control Room Guideline Initial Response 
+B. 1) n;vo 
+2) return to step 1, Ensure ECCS Valve Alignment - Proper Emergency Alignment 
+C. l) three 
+2) GO TO SACRG-1, Severe Accident Control Room Guideline Initial Response 
+D. l) three 
+2) retum to step 1, Ensure ECCS Valve Alignment - Proper Emergency Alignment 
+Proposed Answer: A. 1) two 
+2) GO TO SACRG- l , Severe Accident Control Room Guideline 
+Initial Response 
+PAGE 34 
+
+=== PAGE 242 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I I RO question I 
+systems knowledge (i.e., how the system works, Yes 
+flowpath, logic, location)? 
+~ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? -, 
+~ 
+Can the question be answered solely by knowing Yes 
+I _I RO question I the entry conditions for AOPs or plant parameters 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the purpose, overall sequence of events, or 
+overall mitigative strategy of a procedure? 
+~ 
+Does the question require one or more of the following? 
+• assessment oL Ian! conditions (normal, abnormal, or 
+emergency) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of"w hen to implement attachments and 
+appendices, including how to coordinate these items with 
+I SRO-only procedure steps Yes 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specif ic 
+subprocedu res or emergenc y contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnormal , and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 35 
+
+=== PAGE 243 ===
+85 
+Given: 
+I 
+I 
+I 
+1111 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+10-148 Points: 1.00 
+Redacted Due to Security-Related Information 
+Redacted Due to Security-Related Information 
+PAGE 36 
+
+=== PAGE 244 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: A Redacted Due to Security-Related Information 
+Explanation / Justification: 
+Technica l References: 2-EOP-FRHS-2 (R41 ), 
+Proposed References to be provided: None 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+NOS05ABCR04-03, Objective 1. 
+actions taken in 
+New 
+Comprehension/ Analysis 
+41.10 / 43.5 / 45.13 
+SRO 
+Describe, in general terms, the 
+and the bases for the actions . 
+10-Steam Generator Overpressure / Emergency Procedures/Plan 
+W E13 G2.4.28 
+Knowledge of the procedures relating to a security event ( ensure that 
+the test item includes no safegua rds informat ion). 
+4.1 
+Emergency and Abnorma l Plant Evolutions-T ier 1 /Group 2 
+KIA Match: The KIA is matched because the SRO is being asked knowledge of site security procedures and how to 
+implement them during a SG overpressure event. 
+Redacted Due to Security-Related Information 
+PAGE 37 
+
+=== PAGE 245 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Additional References: 2-EOP-FRHS-2 
+,iFFE.CTEO ~G 
+Fll1 ISOLATION 
+1/ERIFJCATJON 
+~FFE.CTED 'SG 
+LEVEL 
+CHE.Cl< 
+~FF E.CTED 'SG 
+STEAM f.lELE.ASE 
+' I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I [ __ _ 
+.---
+1 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I 
+I I __ _ 
+YES 00 RETI.'Rhl 10 M OCEIMIRE. Jl----,.--i 
+L ~ S TEP HI EFFE<:1 
+0 
+TES NO 
+L Fl'IOW $TEI' 5,, 
+1-E. Ji 
+fM' Jsq...ml!fjr Y/tLYES 
+• Bf'19 Cf'EED'iA TER Ollrl1TIIOL I 
+,. BF~O tB'tPIISSI 
+,a iir D rrw INLET STOP ) 
+TES (l(! TO EO"-fi'lHS- ~, 
+>-- ----,-L- STE? I 
+1
+0 .-,,,-TT-E._W_T_T_f!!I_IIU...._WI'_' -Sl -E!UII_ F_R--,!:&I 
+THE ,AfFECTEO S't 1 6 I US [NG 
+THE f'OLLQilJ t.C, 
+• lil&l O l ~ELIEF J 
+mr-
+• N$ 1$ l!O lh l,!P l 
+_R 
+PAGE 38 
+
+=== PAGE 246 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered sole/yfrom 
+I I RO question I systems knowledge (i.e., how the system works, Yes 
+flowpath, logic, location)? 
+~ • 
+Can the question be answered solely by knowing Yes I ! RO question I immediate operator actions? 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the entry conditions for AOPs or plant parameters 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes 
+I ;I RO question I the purpose, overall sequence of events, or 
+overall mitigative strategy of a procedure? 
+7 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal, abnormal. or 
+emergency) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implemeniattachments and 
+appendices, including how to coordinate these items with 
+I SRO-only procedure steps Yes 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+. knowledge of administrative procedures that specify 
+hierarchy, implementation , or coordination of plant normal, 
+abnormal, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 39 
+
+=== PAGE 247 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+86 04-071 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+Then: 
+• Console Alarm, STANDPIPE LEVEL-LO, is now LIT 
+• The RO reports the following for 21 RCP: 
+o Seal Leak-off recorder indicates 1.5 gpm and steady 
+o Seal Injection Flow indicates 8.5 gpm 
+Which of the following completes both statements? 
+1. Which RCP seal failed? 
+2. What action(s) will the CRS direct the crew? 
+Note: ARP = Alarm Response Procedure 
+S2.OP-AB.RCP-0001, Reactor Coolant Pump Abnormality 
+A. 1) #3 seal 
+2) Perform an orderly shutdown and stop 21 RCP within 8 hours per S2.OP-AB.RCP-0001. 
+B. 1) #3 seal 
+2) Make-up to the standpipe per the ARP; power operation may continue. 
+C. 1) #2 seal 
+2) Make-up to the standpipe per the ARP; power operation may continue. 
+D. 1) #2 seal 
+2) Perform an orderly shutdown and stop 21 RCP within 8 hours per S2.OP-AB.RCP-0001. 
+PAGE 40 
+
+=== PAGE 248 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Part 1 is correct. Part 2 is incorrect. Plausible because this is an action in S2.OP-AB.RCP-0001 for a 
+leaking or degraded #2 seal. 
+B. Correct. The conditions in the stem describes a #3 seal leak. Standpipe level low is a primary indicator that the #3 
+seal is leaking only since the #1 seal leakoff flow is steady at 1.5 gpm which is normal conditions for an intact #2 
+seal. The crew will take action per the console ARP and perform a makeup to the clear the low standpipe level 
+alarm and initiate S2.OP-ST.RC-0008 for RCS leak rate. The CRS could enter S2.OP-AB.RCP-0001 based on the 
+console alarm, but the AB will not provide any direction for a leaking #3 seal. 
+C. Incorrect. Part 1 is incorrect. Plausible because the operato r may confuse the standpipe level indications in the 
+stem as signs of a #2 seal leak. Part 2 is correct. 
+D. Incorrect. Part 1 is incorrect. Plausible because the operato r may confuse the standpipe level indications in the 
+stem as signs of a #2 seal leak. Part 2 is incorrect. Plausible because this is an action in S2.OP-AB.RCP-0001 for 
+a leaking or degraded #2 seal. 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-AB.RCP-0001 (R28) 
+N/A 
+NOS05ABRCPUMP-18, Objective 17 .b. Given any of the following 
+and appropriate control room reference material, evaluate and 
+determine the effect on the Reactor Coolant Pump: Degraded 
+Reactor Coolant Pump seals and seal water 
+Modified Bank- Diablo Canyon 2019 NRC SRO86 
+Comprehension/ Analysis 
+41.5 / 45.6 
+SRO 
+04-Reacto r Coolant Pump System 
+003 A2.01 
+Ability to (a) predict the impacts of the following on the Reactor 
+Coolant Pump System and (b) based on those predictions, use 
+procedures to correct, control, or mitigate the consequences of those 
+abnormal operations: Problems with RCP seals, especially seal 
+leakoff rates 
+4.0 
+Plant Systems-Tier 2/Group 1 
+KIA Match: The KIA is matched because the candidate is being asked to predict the impact of a low RCP standpipe 
+level and based on plant conditions to determine the course of action based on the failed or degraded #3 RCP seal. 
+PAGE 41 
+
+=== PAGE 249 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Parent Question: Diablo Canyon 2019 SRO86 
+Modified question to include Part 2 to ask knowledge of what specific action in the AB is required based on the type of 
+seal failure. 
+Exa min ation Outlin e C ro ss-R eferen ce 
+003 A.2.01 - Ability to (a) predict the impacts of the following 
+malfunctions 0 1· operations on the RCPS; and (b) based on those 
+predictions, use procedures to correct, control, or mitigate the 
+consequences of those malfunctions or operations: Problems with 
+RCP seals, especially rates of seal leak-off 
+Question 86 
+Unit 1 is at 100% power. 
+The following events occur: 
+Level 
+Tier # 
+Group # 
+KIA# 
+Rating 
+SRO 
+2 
+1 
+003 A2.0l 
+3.9 
+• PK 05-01, RCP No .11, alarms, due to input 1259, RCP 1-1 No. 2 Seal Leakoff Flow High 
+• RCP 1-1 Number 1 seal leakoff is approximately 1.0 gpm 
+• RCP 1-2, 1-3, 1-4 Number l seal leakoff is approximately 3.0 gpm per RCP 
+• Aux watch reports an increase in RCDT fill rate 
+• Charging flow is approximately 87 gpm 
+In acc.ordance with AR PK05-01, what action should be taken by the Shift Foreman? 
+A. Direct the operator to raise seal injection flow. 
+B. Direct the operator to trip the reactor, stop RCP 1-1 and enter E-0, Reactor Trip or Safety 
+Injection. 
+C. Go to OP AP-28, RCP Malfunction, Section B, "RCP Number l Seal Failure". 
+D. Go to OP AP-28. RCP Malfunction, Section C. "RCP Number 2 or 3 Seal Failure". 
+Proposed Answer: 
+Explanation: 
+D. Go to OP AP-28, RCP Malfunction, Section C, "RCP Number 2 or 3 
+Seal Failure". 
+A. Incorrect. Injection flow is lower, but raising it will not address the failure. 
+B. Incorrect. This is the action in the PK if there are multiple diverse alarms. 
+C. Incorrect. the 1259 Input directs going to step 2.12 in the AR PK. This step, has actions for 
+both a # l and #2 or #3 seal failure.This is the action at this step in AR PK for a number 1 
+seal failure. Indications: Rise in pump radial bearing AND seal outlet temperatures, • Drop 
+in Number 1 Seal DP, • Rise in Number 1 Seal leakoff flow, • Rise in Number 2 Seal 
+leakoff flow, • Rise in Seal injection flow 
+D. Correct. Lower Number 1 Seal leakoff flow con-esponding to the rise in Number 2 Seal 
+leakoff flow, • More frequent filling of umber 3 Seal Standpipe, • Rise in pump vibration, 
+• Recent rise in Containment Sump fill rate 
+PAGE 42 
+
+=== PAGE 250 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screen ing for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I -' systems knowledge (i.e., how the system works , Yes RO question I flowpath, logic, location)? -1 
+I No 
++ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? 
+I 
+I No 
+Can the question be answered solely by knowing Yes I -' the entry conditions for AOPs or plant parameters RO question I 
+that require entry into major EOPs? -I 
+I No 
+Can the question be answered solely by knowing Yes I I the purpose, overall sequence of events, or RO question I overall mitigative strategy of a procedure? I 
+I No 
+' 
+Does the question require one or more of the following? 
+• assessment ol plant conditions (normal, abnormal, or 
+emergency ) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-speci fic 
+subprocedures or emergency contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnormal, and emergency procedures 
+I No 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 43 
+
+=== PAGE 251 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+87 10-149 Points: 1.00 
+Given: 
+• A Loss of Offsite Power has occurred on Salem Unit 2 
+• The crew is performing actions in 2-EOP-TRIP-4, Natural Circulation Cooldown 
+• 21 Charging Pump is running 
+• RCS cooldown to establish required subcooling is in progress 
+• Low PZR Pressure SI signal is BLOCKED 
+• RCS temperatu re is 537 °F 
+Then: 
+• RCS pressure is 1183 psig and lowering 
+• 2CV55 , Charging Flow Control Valve, is fully open 
+• 2CV71 , Seal Injection Backpressure Valve, is fully open 
+• Pressurizer level is 10% and lowering 
+Which of the following describes the correct action(s) for these conditions per 2-EOP-TRIP-4? 
+A. Stop the RCS cooldown and wait until PZR level and subcooling are restored. 
+B. Align the Charging Pump suction to the RWST, open the BIT isolation valves, and transition to 2-EOP-
+LOCA-1, Loss of Reactor or Secondary Coolant. 
+C. Operate Pressurizer heaters as necessary to maintain saturated conditions in the pressurizer per 2-EOP-
+TRIP-4. 
+D. Actuate Safety Injection and return to 2-EOP-TRIP-1, Reactor Trip or Safety Injection. 
+PAGE 44 
+
+=== PAGE 252 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: D 
+Explanation I Justification: 
+A. Incorrect. Plausible because operator may believe that the reason for the PZR level lowering is due to excessive 
+cooldown of the RCS. 
+B. Incorrect. Plausible because this is similar to CAS step 6.1 in EOP-TRIP-4 . Incorrect in that TRIP-4 does not 
+direct entry into EOP-LOCA -1. 
+C. Incorrect. Plausible because this is similar to CAS step 3 in EOP-TRIP-4. Incorrect in that PZR heaters will not 
+energize with level < 17%. 
+D. Correct. Per the foldout page (CAS) of 2-EOP-TRIP-4, if subcooling is O °For PZR level can NOT be maintained 
+greater than 4%, then Actuate SI and go to 2-EOP-TRIP-1. In this case subcooling is greater than O °F, but PZR 
+level is lowering and cannot be maintained based on the 2CV55 and 2CV71 fully open. Letdown is isolated. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+2-EOP-TRIP-4 (R41) 
+None 
+NOS05TRP004 -08, Objective 4. Determine the basis for each step, 
+cautio n, note or cont inuous action step relative to a NATURAL 
+CIRCULATION COOLDOWN. 
+Bank - DC Cook 2008 NRC SRO86 
+Comprehension/ Analysis 
+41.5 / 45.6 
+SRO 
+02-ECCS 
+006 A2.12 
+Ability to (a) predict the impacts of the following on the ECCS system 
+and (b) based on those predictions, use procedu res to correct, 
+control, or mitigate the consequences of those abnormal operations: 
+Conditions requiring actuation of ECCS. 
+4.5 
+Plant Systems-Tier 2/Group 1 
+KIA Match: The KIA is matched because the candidate is being asked if the conditions in the stem require SI actuation 
+of ECCS equipment. 
+PAGE 45 
+
+=== PAGE 253 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-Only Questions Linked to 1 O CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I _
+1 
+RO question I systems knowledge (Le., how the system works, Yes 
+flowpath, logic, location)? 
+~ • 
+Can the question be answered solely by knowing Yes I ! RO question I immediate operator actions? 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the entry conditions for AOPs or plant parameters 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the purpose, overall sequence of events, or 
+overall mitigative strategy of a procedure? 
+7 
+Does the question require one or more of the following? 
+. assessment of plant conditions (normal, abnormal, or 
+emergency) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+. knowledge of administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnormal, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 46 
+
+=== PAGE 254 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+88 06-027 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+Then: 
+• The Electric System Operator (ESO) reports a Solar Magnetic Disturbance (SMD) of greater than K-5 
+intensity 
+• Salem control room has confirmed an Excess MVAR condition 
+The CRS will direct the crew to ... 
+A. trip the reactor and perform 2-EOP-TRIP-1, Reactor Trip or Safety Injection, and S2.OP-AB.GRID-0001 , 
+Abnormal Grid, concurrently. 
+B. trip the reactor and perform 2-EOP-TRIP-1, Reactor Trip or Safety Injection, Only. 
+C. initiate load reduction per S2.OP-AB.GRID-0001 Abnormal Grid, and S2.OP-AB.LOAD-0001, Rapid Load 
+Reduction. 
+D. initiate load reduction per S2.OP-AB.GRID-0001 Abnormal Grid, Only. 
+PAGE 47 
+
+=== PAGE 255 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because tripping the reactor and going to 2-EOP-TRIP-1 is directed per Attachment 1 if 
+frequency is less than or equal to 57.55 Hz. I ncorrect in that performing S2.OP-AB.GRID-0001 is not required to 
+be performed concurrently with 2-EOP-TRIP-1 
+B. Incorrect. Plausible because the SRO may believe that the grid conditions in the stem require the generator to be 
+immediately isolated from the grid for asset protection and therefore a immediate reactor trip is required. 
+C. Correct. Per S2.OP-AB.GRID-0001, conditions for SMD are met in step 1.3, the CRS will direct the crew perform 
+Attachment 2, Solar Magnetic Disturbance, and initiate a load reduction to less than or equa l to 77.6 % (942 MWe) 
+at 15% per min using S2.OP-AB.LOAD- 0001, Rapid Load Reduction. 
+D. Incorrect. Plausible because S2.OP-AB.GRID-0001 does direct initiating a load reduction to 77.6%. Incorrect in 
+that S2.OP-AB.GRID-0001 Attachment 2 also directs initiating the rapid load reduction per S2.OP-AB.LOAD-000 1. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-AB.GRID-0001 (R23) 
+None 
+NOS05ABGRID-13, Objective 2. Describe, in general terms , the 
+actions taken in S2.OP-AB.GR ID-0001 (Q) and the bases for the 
+actions. 
+New 
+Comprehension/ Analysis 
+43.5 I 45.12 I 45.13 
+SRO 
+06-AC Electrical Distribution System / Conduct of Operations 
+062 G2.1.6 
+Ability to manage the contro l room crew during plant transients (SRO 
+only). 
+4.8 
+Plant Systems-Tier 2/Group 1 
+KIA Match: The KIA is matched because the question is asking the SRO how to direct the crew in the control room 
+during a Solar Magnetic Disturbance grid transient per S2.OP-AB.GR ID-0001. 
+PAGE 48 
+
+=== PAGE 256 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screen ing for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I -' systems knowledge (i.e., how the system works , Yes RO question I flowpath, logic, location)? -1 
+I No 
++ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? 
+I 
+I No 
+Can the question be answered solely by knowing Yes I -' the entry conditions for AOPs or plant parameters RO question I 
+that require entry into major EOPs? -I 
+I No 
+Can the question be answered solely by knowing Yes I I the purpose, overall sequence of events, or RO question I overall mitigative strategy of a procedure? I 
+I No 
+' 
+Does the question require one or more of the following? 
+• assessment ol plant conditions (normal, abnormal, or 
+emergency ) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-speci fic 
+subprocedures or emergency contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnormal, and emergency procedures 
+I No 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 49 
+
+=== PAGE 257 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+89 06-028 Points: 1.00 
+Given: 
+• Both Salem Units are at 100% power. 
+• Severe Thunderstorms are expected to arrive onsite in 6 hours 
+When: 
+• During the monthly surveillance test on the 1A EDG, the diesel failed to start due to a failed component 
+• This same component is also installed in all of the other five EDGs 
+• The CRS enters TS 3.8.1.1 and is making preparations for performing surveillance tests on all of the five 
+EDGs to comply with Tech Spec for common mode failure 
+Then: 
+• The Shift Manager instructs the CRSs to schedule the surveillance runs in the most expeditious manner that 
+does NOT violate station procedures and/or commitments 
+In order to expeditiously complete the EOG surveillance runs prior to the arrival of the severe weather, how should the 
+Shift Manager direct the crews on running the EDGs? 
+A. ONE EDG at a time on both units (i.e., 1 B and 2B simultaneously). 
+B. ONE EDG at a time (i.e., all 5 EDGs in series). 
+C. ALL EDGs at the same time on one unit (i.e., 1 B and 1 C simultaneous ly, then 2A, 2B, and 2C simultaneous ly). 
+D. ALL EDGs at the same time on both units simultaneous ly. 
+PAGE 50 
+
+=== PAGE 258 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: A 
+Explanation I Justification: 
+A. Correct. Per S2.OP-ST .DG-0001/2/3 P&L 2.1.6, only one DG per Unit may be synchronized to the grid at a time. 
+This prohibition minimizes any potential common failure resulting from undetected interdepe ndence among diesel 
+generator units (Reg Guide 1.1.08, Section C.2.b) [C0624]. Therefore, the most expeditious manner to complete 
+the surveillance runs is to perform one EOG at a time simultaneous ly on each unit (i.e. 1 B and 2B simultaneously). 
+B. Incorrect. Plausible because this method would not violate station procedures or commitments, but would not be 
+the most exped itious method. 
+C. Incorrect. Plausible because the SRO may not recall the station procedure P&L or commitment on running EDGs 
+and believe that you can run multiple EDGs on a unit. 
+D. Incorrect. Plausible because the SRO may not recall the station procedure P&L or commitment on running EDGs 
+and believe that you can run multiple EDGs on a unit. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-ST.DG-000 1 (R57) 
+None 
+NOS05EDG000 -15 Objective 12. Discuss the procedural 
+requirements associated with the Emergency Diesel Generator, 
+including an explanation of major precaution and limitations in the 
+Emergency Diesel Generator procedures 
+Bank - Braidwood 2020 NRC SRO89 
+Comprehension/ Analysis 
+43.1/ 45.5 I 45.12 / 45.13 
+SRO 
+06-Emergency Diesel Generator / Conduct of Operations 
+064 G2.1.9 
+Ability to direct licensed personnel activities inside the control room 
+(SRO Only). 
+4.5 
+Plant Systems-Tier 2/Group 1 
+KIA Match: The KIA is matched because the question is asking the SRO what action needs to be directed to the 
+licensed operators in the control room with regards to completing EOG surveillance runs prior to the arrival of a severe 
+storm. 
+PAGE 51 
+
+=== PAGE 259 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figu re 4.2-3 Screening for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessme nt and Selection of Procedu res) 
+Can the question be answered solely from 
+I I systems knowledge (i.e , how the system works, Yes RO question I flowpath, logic, location)? I 
+~ • 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? 
+I 
+~ 
+Can the question be answered solely by knowing Yes I 1 the entry conditions for AOPs or plant parameters RO question I 
+that require entry into major EOPs? I 
+~ 
+Can the question be answered solely by knowing Yes I I the purpose, overall sequence of events, or RO question I 
+overall mitigative strategy of a procedure? I 
+7 
+Does the question require one or more of the following? 
+. assessment of plant conditions (normal, abnormal, or 
+emergency) and then prescr ibing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices , including how to coordinate tlilese items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+. knowledge of administrative procedures that--specify 
+hierarchy, implementation, or coordination of plant normal, 
+ab ormal, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 52 
+
+=== PAGE 260 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+90 07-022 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• A Containment Pressure Relief is in progress 
+Then: 
+• 2R12A, Containment Atmosphere Radiation Monitor, fails due to a power supply failure 
+• The Containment Pressure Relief is stopped 
+Based on the above condition, which of the following is ONLY required per the ODCM to recommence the containment 
+pressure relief (assume all other Radiation Monitors are OPERABLE)? 
+[REFERENCE PROVIDED ] 
+Per the ODCM requirements, the Containment Pressure Relief ... 
+A. may recommence without any compensatory actions. 
+B. may recommence provided two independent samples of containment are analyzed and two release rate 
+calculations are independently verified. 
+C. may recommence provided grab samples are taken at least once per 8 hours and analyzed for principal 
+gaseous emitters. 
+D. may NOT recommence until 2R12A radiation monitor is restored to OPERABLE status. 
+PAGE 53 
+
+=== PAGE 261 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: A 
+Explanation I Justification: 
+A. Correct. Per Table 3.3-13 (Item 3.a) in 3.3.9 of Salem's ODCM, either 2R12A OR 2R41 A & D channels is 
+required. Since 2R41 channels are operable (assumption in stem) then ODCM 3.3.9 is MET and no additional 
+action is required to recomme nce the containment pressure relief. 
+B. Incorrect. Plausible because this would be the required action (Action 37) if both 2R12A and 2R41A & D channels 
+are INOPERABLE. 
+C. Incorrect. Plausible because this would be the required action (Action 33) if the SRO incorrectly selects Item 4.a as 
+the affected ODCM instrument. Incorrect in that this is for the Plant Vent Radiation Monitor (R41 ). 
+D. Incorrect. Plausible because this is a required action (Action 34) for a containment purge. Incorrect in that this is 
+for a containment pressure relief. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+Salem ODCM 3.3.9 (R29) 
+ODCM 3.3.9 and Bases 
+NOS05TECHSPEC-12 , Objectives 14. Describe the general 
+component and parameter categories that are addressed by 
+Technica l Specificat ion Sections 3/4.1 through 3/4.12. (Licensed 
+Operator & STA only) 
+Modified Bank - DC Cook 2018 NRC SRO90 
+Comprehension/ Analysis 
+41.5 / 43.5 / 43.3 I 45.13 I 9 
+SRO 
+07-Prcess Radiation Monitoring System 
+073 A2.01 
+Ability to (a) predict the impacts of the following malfunctions or 
+operations on the PRM System , and (b) based on those predictions, 
+use procedures to correct, control, or mitigate the consequences of 
+those malfunctions or operations: PRM component failures 
+3.1 
+Plant Systems-Tier 2/Group 1 
+KIA Match: The KIA is matched because the question is asking the SRO what action is required per the ODCM when 
+the Containment Radiation Monitor fails. The SRO must be able to evaluate the ODCM actions and determine if the 
+pressure relief may continue and any compensatory actions. 
+PAGE 54 
+
+=== PAGE 262 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Parent Question: DC Cook 2018 NRC SRO90 
+Modified Question based on Salem's ODCM actions being different for the failure, therefore the correct answer is 
+different. 
+90 ID: 2008NRC-06 05-SRO Points: 1.00 
+SRO Only 
+Given the following conditions on Unit 1: 
+• The unit is operating at 100% power. 
+• A Containment Pressure Relief is in progress. 
+• VRS-1201 Upper Containment Normal Range Monitor failed due to a power supply 
+failure. 
+• The Containment Pressure Relief is stopped. 
+Which ONE of the following describes the restrictions placed on Containment Purge/Pressure 
+Relief Operations? 
+A. Containment Purge/Pressure Relief operations may NOT be performed until VRS-1201 is 
+restored to operable status. 
+8. Containment Purge/Pressure Relief operations may continue under administrative controls 
+provided that VRS-1201 is restored to operable status prior to entering Mode 4 following the 
+next refueling outage. 
+C. Containment Purge/Pressure Relief operations may continue under administrative controls 
+for up to 7 days, provided that area surveys of upper containment are performed at least 
+once every 24 hours. 
+D. Containment Purge/Pressure Relief operations may continue for up to 48 hours before 
+VRS-1201 is required to be restored to operable status. 
+Answer: B 
+Answer Explanation: 
+A. INCORRECT - Condition A of TS 3.3.6 allows Purge Operations if 2/3 channels per train are 
+operable. 
+8 . CORRECT - Condition A of TS 3.3.6 allows Purge Operations if 2/3 channels per train are 
+operable. The failed channel must be fixed during the next refueling outage. 
+C. INCORRECT - Sampling every 24 hours is required per TRM 8.3.8 if BOTH VRS-1 101 & 1201 
+are inoperable. Other Channels within TRM 8.3.8 have a 7 day limit. 
+D. INCORRECT - Purge operations are not limited. These requirements are from the Technical 
+Specification 3.3.6 Condition C. 
+PAGE 55 
+
+=== PAGE 263 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Additional References: Salem ODCM 
+PART I RADIOILOGICAIL. EFFLUENT CONTROLS Salem ~EC ODCM Rev. 29 I 
+03121 
+S/4.3 INSTRUMENTATION 
+BASES 
+S/4.3.3.9 RADIOACTIVE GASEOUS EFFLUENT MONITORING INSTRUMENTATION 
+The radioa.clive gaseous efflueM1t inslrume ntation is (Provided to monitor arnd oontrol, as 
+applicable, the releases of radio-active materials in gas.eolJ$ effluents during actual or potential 
+releases of gaseous effluents. Tlhe a1am1/trip set(Points tor these instruments shall be calculated 
+and udjusted in :accordance with the procedures in ~he ODCM to ensure that the alarm/trip will 
+occur prior to exceeding ~he limits of the •old" 10 CFR Part 20 ,(ODCM Appendix F). The 
+OPERABILITY and use of this instrumentation is consistent wi~h the requiremeM1ts of General 
+Design Criteria 60, 63, and 64 of Appendix A lo 10 CFR Part SO. 
+CROSS REFERENCE - TABLES 3.3-13 and 4.3-13-
+Uniit 1 Instrum ent Description Ac,cept abr.e RMIS Channels 
+TfS Table Item No. 
+1a Wusre Gas Holdup System Noble Gas 11R41A and [i m 1 
+Activity 
+2a Containment Purge and Pressure - Vrrcuum 11R12A 
+Relief Noble Gas Activity or 
+11R41Aand [)c,ia i 
+3-a Plant. Vent Header System Noble Gas 11R41Aand [i 1,c21 
+Activity 
+3b Plant Vent Header System lodir1e Sampler CJJ 11RME 4, S (11R41) 
+or 
+11RMESO, 51 (1 R45) 
+3c Plant Vent Header System Particulate 11RME 4, S (11R41) 
+Sampler <31 
+or 
+11 RMESO, 51 1(1R45) 
+(1) The channels listed are required to be operable to meet a single operable charmel for the OOCM's 
+Minimum Channels Operable" requirement 
+(2) 11R:411D is the setpoirrt channel. 11R41A is the measurem.ent channel. 
+(3) Laboratory arna.lysis ,of the .sampler filters ensures that the limits of ODCM CONTROL 3.1 1 .. 2.1 are not 
+exceeded . Alarm/trip setpoinls do mot apply to these 1Passive components. 
+PAGE 56 
+
+=== PAGE 264 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: Salem ODCM 
+3/4.3 INSTRUMENTATION 
+3/4.3.3.9 RADIOACTlVE GASEOUS EFFLUENT MONITORING INSTIRUMENTATION 
+TABLE 3.3-13: Radioact ive· Gaseous Efflue,nt Monitoring lnistrul'lilentation 
+Table· Notatio n 
+ACTION 31 -
+ACTION 32-
+ACTION 33-
+ACTION 34 -
+ACTION 36 -
+ACTION 37 -
+With I.he number of chanrnels OPERABLE less than required by t:he Minimum Channels 
+OPERABLE requirement, the oonternl.s of lhe tank(s) may be released to the environment 
+p:rovided that prio:r to initiating the release: 
+a.. At least two independent samples of the tank.'s contents are analyzed, and 
+b. At least two technically qualified members of tfle Facility Staff independently verify the 
+re1ease rate calculations and disc.harge valving lineup. 
+Otherwise, suspend release of radioaetive effluents via I.his patl'lway. 
+With I.he number of channels OPERABLE less than required by the Minimum Channels 
+OPERABLE requirement, efflueni releases via. this pathway may continue provided the Row 
+rate is estimated at least once per 4 rnours. 
+With I.he number of channels OPERABLE less than required by the Minimum Channels 
+OPERABLE requirement, et!Juent releases via trnis pathway may continue provided grab 
+samples are taken at least once per 8 hours and these samples are ana'lyzed for gaseous 
+principal gamm.a. emitters at tl'le lower limits of detection required in ODCM CONTROL 1iABLE 
+4.11-2.A , B, or C within 24 hollrn . Otherwise, suspend release of radjoaetive effluents via I.his 
+pathway. 
+With the number of channels OPERABILE less than required by the Minimum Channels 
+OPERABLE requirement, immediately suspend PURGING of radioactive effluents via this 
+pathway. 
+With the number of channels OPERABLE less than required by the Minimum Cha nnels 
+OPERABLE requirement, effluent releases via this 1Patrnway may co:ntinlle-provided that wilhin 4 
+hours samples are continuously collected witll auxiliary sampJing equjpment as required in 
+Table 4 .. 11-2. 
+With the number of channels OPERABLE less than required by fue Mini11num Channels 
+OPERABLE requirement, Containment Pressure Reliefs may be 1Perfonmed provided that 1priior 
+to initiating the release: 
+a. At least two independent samples of containment are analyzed, and 
+b. At least two technically qualified members of tfle Facility Staff independently verify the 
+re1ea-se rate calculations. 
+Otherwise, suspend release of radioactive effluents via I.his pathway. 
+PAGE 57 
+
+=== PAGE 265 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-2 Screening for SRO-Only Questions Linked to 10 CFR 55.43(b)(2} (TS} 
+Can the question be answered solely by 
+Yes I knowings 1-hour TS/TRM action? 
+I 
+RO question 
+I ~ 
+Can the question be answered solely by Yes I I RO question 
+I 
+knowing the LCO/TRM information listed 
+I "above the line?" 
+I No 
+Can the question be answered solely by Yes I I I 
+knowing the TS safety limits? RO question 
+I No 
+T 
+Can the question be answered solely by Yes I I I 
+RO question knowing the TS bases information associated 
+with the "above-the-line" LCO information or 
+general systems knowledge? 
+~ 
+Does the question involve one or more of the following for TS, 
+TRM, or ODCM : Yes l 
+• application of required actions (TS Section 3) and SRs (TS SRO-
+Section 4) in accordance with rules of application level 
+requirements (TS Section 1) question 
+. application of generic LCO requirements (LCOs 3.0. 1 
+through 3.0.7 and LCOs 4.0.1 through 4.0.4) 
+• knowledge ofTS oases that is required to analyze TS 
+required actions and terminology 
+I No 
+• 
+Question might not be linked to 
+10 CFR 55.43(b )(2) for SRO-only 
+PAGE 58 
+
+=== PAGE 266 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+91 02-030 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• 21 Charging Pump is in service 
+• Surveillance test S2.OP-ST.RC -0007, Seal Injection Flow, was just completed. 
+The following test data was recorded: 
+• Charging Header pressure = 2450 psig 
+• 2CV55 fully open 
+• 21 RCP seal injection flow = 10 gpm 
+• 22 RCP seal injection flow = 10.5 gpm 
+• 23 RCP seal injection flow = 9.8 gpm 
+• 24 RCP seal injection flow = 10.2 gpm 
+Based on the surveillance test data, what action is required? 
+[REFERENCE PROVIDED] 
+A. Restore the inoperable Charging Pump to Operable status within 72 hours per TS 3.5.2 ECCS Subsystems Tavg > 
+350 °F. 
+B. No action is required, the surveillance test is satisfactory. 
+C. Adjust manual seal injection throttle valves to within the limit within 4 hours as required by TS 3.5.4, Seal Injection 
+Flow. 
+D. No TS action is required unless the seal injection flows can NOT be adjusted to within the limits within 4 hours. 
+PAGE 59 
+
+=== PAGE 267 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Plausible because the SRO may incorrectly determine that the unsat seal injection flows is a result of a 
+degraded Charging Pump and therefore declare 21 Charging Pump Inoperable and enter TS 3.5.2 Action a. 
+B. Incorrect. Plausible if the SRO misinterprets the surveillance data and thinks the test data results meet the Tech 
+Spec surveillance requireme nts for total seal flows. 
+C. Correct. The surveillance data for total RCP seal injection flows is Unsat due to exceeding the Tech Spec 3.5.4 
+limit of:::: 40 gpm. Tech Spec 3.5.4 is not met and the required action is to make adjustments to restore seal 
+injection flows to within limits within 4 hours. 
+D. Incorrect. Plausible if the SRO misinterprets the note in Tech Spec 3.5.4 about TS 4.0.4 exemption is allowed for 
+up to 4 hours. 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+TS 3.5.4 and bases 
+TS 3.5.2 and 3.5.4 
+NOS05TECHSPEC-12 , Objective 14. Describe the general 
+component and parameter categor ies that are addressed by 
+Technical Specificat ion Sections 3/4.1 through 3/4.12 
+New 
+Comprehension/ Analysis 
+43.2 I 43.5 I 45.12 
+SRO 
+02-Reacto r Coolant System 
+002 G2.2.37 
+Ability to determine operabili ty or availability of safety related 
+equipment (SRO Only) 
+4.6 
+Plant Systems-Tier 2/Group 2 
+KIA Match: The KIA is matched because the SRO is being asked knowledge on applying TS 3.5.4 with an unsat RCP 
+seal injection surveillance test. 
+PAGE 60 
+
+=== PAGE 268 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: Salem TS 3.5.4 
+EMERGENCY CORE COOLING SYSTEMS 
+SEAL INJECTION FLOW 
+!JMLTING CONDITION FOR OPERA TIQN 
+3.5.4 Reactor coolant pump seal injection flow shall be S40 gpm with centrifugal charging pump 
+discharge header pressure .: 2430 psig and the charging flow control valve full open. 
+APPLICABILITY: MODES 1, 2, and 3 
+ACTION: 
+With seal injection flow not within the limit, adjust manual seal injection throttle valves to give a 
+flow within the limit with the charging pump discharge pressure.: 2430 psig and the charging 
+flow control valve full open within 4 hours, or be in at least HOT STANDBY within the next 
+6 hours and in HOT SHUTDOWN within the following 6 hours. 
+SURVEILLANCE REQUIREMENTS 
+4.5.4 In accordance with the Surveillance Frequency Control Program, verify manual seal 
+injection throttle valves are adjusted to give a flow within the limit with centrifugal charging pump 
+discharge header pressure~ 2430 psig, and the charging flow control valve full open. 
+The provisions of Specification 4.0.4 are not applicable for entry into Mode 3. This exemption is 
+allowed for up to 4 hours after the Reactor Coolant System pressure stabilizes at 
+2235 ± 20 psig. 
+PAGE 61 
+
+=== PAGE 269 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-2 Screening for SRO-Only Questions Linked to 10 CFR 55.43(b)(2) (TS) 
+Can the question be answered solely by 
+Yes I knowing ~ 1-hour TS/TRM action? 
+I 
+RO question 
+I I No 
+Can the question be answered solely by Yes I I RO question 
+I 
+knowing the LCO/TRM information listed 
+I "above the line?" 
+I No 
+Can the question be answered solely by Yes I -I I 
+knowing the TS safety limits? RO question 
+I No 
+Can the question be answered solely by Yes I -I 
+RO question 
+I 
+knowing the TS bases information associated 
+with the "above-the-line" LCO information or 
+general systems knowledge? 
+~ 
+Does the question involve one or more of the following for TS, 
+TRM, or ODCM: Yes 
+I 
+application of required actions (TS Section 3) and SRs (TS 
+r SRO-• 
+Section 4) in accordance with rules of application level 
+requirements (TS Section 1) question 
+• application of generic LCO requirements (LCOs 3.0.1 
+through 3.0.7 and LCOs 4.0.1 through 4.0.4) 
+• knowledge of TS bases that is required to analyze TS 
+required actions and terminology 
+I No 
+.. 
+Question might not be linked to 
+10 CFR 55.43(b )(2) for SRO-only 
+PAGE 62 
+
+=== PAGE 270 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+92 07-023 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• PZR Pressure Channel I failed and has been removed from service per S2.OP-SO.RPS-0003 , Placing 
+Pressurizer Channel in Tripped Condition 
+Then: 
+• PZR Pressure Channel Ill fails LOW 
+Based on the conditions above, which of the following correctly identifies the MOST limiting time requirement for 
+reportability to the NRC? 
+[REFERENCE PROVIDED] 
+A. 4 hour report under RAL# 11.3.1 
+B. 4 hour report under RAL# 11.3.2 
+C. 8 hour report under RAL# 11.3.3 
+D. 60 day report under RAL# 11 .3.4 
+PAGE 63 
+
+=== PAGE 271 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Plausible because the SRO may believe that this was a valid SI actuation and reportable under RAL 
+11.3.1 as 4 hour report. 
+B. Correct. Following the second PZR pressure failing low, a Safety Injection and Rx Trip will occur on low PZR 
+pressure. Since the RCS pressure was not actually low to meet SI actuation, the SI is NOT valid and NOT 
+reportable. However, actuation of RPS is still reportable under RAL 11.3.2 as a 4 hour report based on actuation 
+of the RPS system only, but SI is NOT. Although RPS is a system listed in Techn ical Bases 11.3.3 , it is not 
+reported under this RAL since it will be reported under RAL 11.3.2. 
+C. Incorrect. Plausible because the SRO may incorrectly interpret that with the SI actuating ECCS, that this is 
+reportable under RAL 11.3.3 as 8 hour report. 
+D. Incorrect. Plausible because the SRO may believe that the RPS and SI actuations are both INVALID, and since 
+it's a system listed in Techn ical Bases 11.3.3, then only a 60 day report under RAL 11.3.4 is required. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+Salem RAL 11.3 (R4) 
+Salem RAL 11.3 and Bases 
+NOS05SENSOR-03. 
+New 
+Comprehension/ Analysis 
+41.5 /45.6 
+SRO 
+07-Nonnuclear Instrumentat ion System 
+016 A2.01 
+Ability to (a) predict the impacts of the following on the Nonnuclear 
+Instrumentat ion System; and (b) based on those predictions, use 
+procedures to correct, control, or mitigate the consequences of those 
+malfunctions or operations: Detector/transmitter failure 
+3.4 
+Plant Systems-Tier 2/Group 2 
+KIA Match: The KIA is matched because the SRO is being asked to predict the impact on two Nonnuclear 
+Instrumentat ion (i.e., PZR pressure channel is not related to the detection, control, or indication of neutron flux or 
+power) failures (Rx trip and inadvertent SI) and using the procedure for Reportabi lity Action Levels (RALs) what type of 
+reportab ility should the SRO make to the NRC. 
+PAGE 64 
+
+=== PAGE 272 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+Iniriaring 
+Condition 
+MODE 
+ML.it 
+R 
+E 
+p 
+0 
+R 
+T 
+N 
+G 
+A 
+C 
+T 
+0 
+N 
+L 
+E 
+V 
+E 
+L 
+s 
+Action 
+Required 
+11.0 Report able Action Levels 
+11.3 System Actuation 
+EVENI'IHATRISULTS ORSHOUI.DHAVERISUl.'IEDCN 
+ECCS DISCHARGE INIO RCS ,-\S RESlJ1. T OF A VALID 
+SIGNAL E.XCEPT PREl'L= (10 CFR 50.72(b)(2Xiv)(A)) 
+( All ) 
+11.3.1 
+IF 
+Valid SI Actuation signal received { or 
+dema1 1ded). 
+~-----'l 
+AND 
+tart or Accucmulator Ai'l'Y ECCS ptuup s 
+depressmiza tion tha 
+have resulted in. disc 
+t results in, or should 
+harge imo the reactor 
+coolan t ~')'stem 
+______ l 
+AND 
+mt of a pre-planned Actu,,ti on is NOT p 
+e during sequenc 
+testing or reac tor operation. 
+I 
+THEN 
+l 
+ACTUATION OF REACTOR PROTECTION SYSTEM 
+\WIEN CR!TICAL EXCEPT PREPL\.,'<NED 
+(IO CFR 50.72(b)(2)(iv)(B)) 
+( 1,2 ) 
+11...U 
+IF 
+Any evelll or condition that results in 
+actuation of tl1e reactor protection 
+system (RPS) when tile reactor is 
+critical except when the actuation 
+results from and is part of a pre•pla1med 
+sequence dming testing or 1cac1or 
+onerntion. 
+THEN 
+I 
+Refer to Attaclunent 14 I 
+4-Hour Report 
+PAGE 65 
+SGS ECG 
+R,v. 04 
+Page I of 2 
+VALID ACTUATION OF LISTED SYSTEM EXCEPT 
+PREPLANNED (10 CFR 50.72(1,XJ)(iv)(A)) 
+( All ) 
+11 .3.3 
+IF 
+Any event or condition that results in 
+valid acniation of any system lisred in 
+Technical Basis I 1.3.3 eKcept when rile 
+actuaiion results from and is pait of a 
+pre-plal1lled , equence during resting or 
+reactor operation. 
+THEN 
+I 
+Refer to Attacluuent 26 I 
+8-Hour Reoo1t 
+
+=== PAGE 273 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+11.0 Reportable Action Levels 
+11.3 System Actuations 
+REPORT ABLE ACTION LEVEL - 11 .3.1 
+IC ANY EVENT THAT RESULTS OR SHOULD HAVE RE SUL TED IN ECCS DISCHARGE 
+INTO THE RCS AS THE RESULT OF A VALID SIGNAL EXCEPT WHEN THE 
+ACTUATION RESULTS FROM AND IS PART OF A PRE-PLANNED SEQUENCE 
+DURING TESTING OR REACTOR OPERATION 
+RAL 
+(10 CFR 50.72(b)(2)(iv)(A)] 
+Valid SI Actuation signal received (or demanded) 
+AND 
+ANY ECCS Pump start or Accumulator depressurization that results in or should have 
+resulted in, discharge to the RCS 
+a!iQ 
+Actuation is NOT part of a pre-planned sequence during testing or reactor operation. 
+MODE -All 
+BASIS 
+A 4-hour report is required for those events that result in either a valid automatic or manual SI 
+actuation or would have resulted in SI actuation if some component had not failed or an 
+operator action had not been taken are reportable. Review RAL 11.3.3 for the list of systems if 
+a valid automatic or manual actuation occurs. 
+For example, while performing a RCS cooldown following a controlled Reactor Shutdown, a 
+Main Steam Line 6P SI is inadvertently generated. However, the Charging Pumps fail to start 
+and RCS pressure remains above the SI Pump shutoff head pressure. Although no ECCS 
+discharge to the vessel occurred, the event is reportable. 
+A system actuation should be apparent at the time of occurrence. Therefore, if all events are 
+reported properly, it is expected that all reports under 10 CFR 50. 72 are as a result of an 
+ongoing condition. 
+A valid signal refers to actual plant conditions or parameters satisfying the requirements for SI 
+initiation. Valid actuations also include intentional manual actuations unless the actuation is part 
+of a preplanned test. Excluded from this reporting requirement would be those instances in 
+which instrument drift, spurious signals, human error or other invalid signals caused SI actuation 
+(e.g. jarring a cabinet. an error in the use of jumpers or lifted leads, error in actuation of controls 
+switches, or equipment failures or radio frequency interference). 
+PAGE 66 
+
+=== PAGE 274 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+Preplanned actuations are those which are expected to actually occur due to preplanned 
+activities covered by procedures. Such actuations are those for which a procedural step or 
+other appropriate documentation indicates the specific actuation is actually expected to occur. 
+Control room personnel are aware of the specific signal generation before its occurrence or 
+indication in the control room. Manual actuations as directed by abnormal or emergency 
+operating procedures (i.e., not part of a preplanned test or operational evolution) are reportable. 
+lE the SI Actuation discharges or should have discharged into the RCS as result of an INVALID 
+signal, THEN a report under this RAL is not required. 
+REFERENCES 
+SGS UFSAR 
+10 CFR 50.72(b)(2)(iv)(A) 
+10 CFR 50.73 
+NUREG 1022, Rev. 3, section 3.2.6 
+PAGE 67 
+
+=== PAGE 275 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+11.0 Reportable Action Levels 
+11.3 System Actuations 
+REPORT ABLE ACTION LEVEL - 11.3.3 
+IC VALID ACTUATION OF LISTED SYSTEM EXCEPT PREPLANNED 
+[10 CFR 50.72(b)(3)(iv)(A)] 
+RAL 
+Any event or condition that results in valid actuation of any system listed in Technical Basis 
+11.3.3 except when the actuation results from and is part of a pre-planned sequence during 
+testing or reactor operation 
+MODE- All 
+BASIS 
+An 8-hour report is required for a valid actuation of any of the systems named in 
+10 CFR 50.72(b)(3)(iv)(B) unless the actuation resulted from and was part of a pre-planned 
+sequence during testing or reactor operation. Except for critical scrams (RAL 11.3.2), invalid 
+actuations are not reportable by telephone under 10 CFR 50.72. If an 8-hour ENS report is 
+needed due to a valid system actuation concurrent with an ECCS or RPS actuation, it can be 
+included with the 4-hour ENS report made under 10 CFR 50.72(b)(2)(iv)(A) or (B). 
+The system actuation flow chart provides guidance to determine reportability. 
+REFEREN CES 
+10 CFR 50.72(b)(3)(iv) 
+10 CFR 50.73(a)(2)(iv) 
+NUREG-1022, Rev. 3, section 3.2.6 
+PAGE 68 
+
+=== PAGE 276 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+Applicable Systems and Components 
+NOTE: Numbers in parentheses indicate UFSAR Chapter 
+Reactor Protection System {unless reported under RAL 11.3.2} 
+Containment Systems (6.2} 
+Containment Heat Removal {6.2.2) 
+Containment Isolation System* (6.2.4) 
+ECCS (6.3} 
+Residual Heat Removal 
+Safety Injection System 
+Plant Systems 
+Auxiliary Feedwater 
+Emergency AC Electrical Power (8.3) 
+* Containment isolation valves in more than one system or multiple MSIVs 
+REFERENCES 
+SGS UFSAR 
+10 CFR 50.72{b)(3)(iv)(A) 
+10 CFR 50.73 
+NUREG 1022, Rev. 3, section 3.2.6 
+PAGE 69 
+
+=== PAGE 277 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justificat ion: 
+Figure 4.2-3 Screening for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I I RO question I systems knowledge (i.e., how the system works, Yes 
+flowpath, logic, location)? 
+~ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? - 1 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the entry conditions for AOPs or plant parameters 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes 
+I_! RO question I the purpose, overall sequence of events, or 
+overall mitigative strategy of a procedure? 
+~ 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal, abnormal, or 
+emergency) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+• knowledge of administrative procedures-that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnoJmal, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43{b)(5) for SRO-only 
+PAGE 70 
+
+=== PAGE 278 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+93 08-020 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• 21A CW Pump is CIT for waterbox cleaning 
+Then: 
+• The 4KV lnfeed breaker to the 24 CW bus fails opens 
+What action will the CRS direct the crew? 
+A. Power operation at 100% may continue since the 24 CW Bus will auto transfer to the 23 CW Bus. 
+B. Initiate a load reduction to less than 49% power and trip the main turbine per S2.OP-AB.TRB-0001, Turbine 
+Trip Below P-9. 
+C. Initiate a load reduction to less than or equal to 83% power per S2.OP-AB.CW-0001, Circulating Water 
+Malfunction. 
+D. Trip the reactor and enter 2-EOP-TRIP-1, Reactor Trip or Safety Injection, per S2.OP-AB.CW-0001, 
+Circulating Water Malfunction. 
+PAGE 71 
+
+=== PAGE 279 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: D 
+Explanation I Justification: 
+A. Incorrect. Plausible because the SRO may believe that the CW Bus Auto Transfer scheme will transfer the 24 CW 
+bus to 23 CW bus without losing power to the 'B' Circulators and therefore, no impact to the current power level. 
+B. Incorrect. Plausible because the SRO may believe that removing the main turbine from service is allowed using 
+S2.OP-AB.TRB-0001. 
+C. Incorrect. Plausible because a loss of both 21A and 22A circulators requires a load reduction to less than or equal 
+to 83% power. 
+D. Correct. When the infeed breaker (24CW9AD ) fails open, the 24 CW bus will de-energize, when the bus voltage is 
+< 70% the bus will transfer automatically to the 23 CW bus. However, all the 'B' Circulator (21 B, 228, and 238 ) 
+breakers will trip open on undervo ltage and must be manually started following the bus transfer. The traveling 
+screen power will be supplied from the 23 CW bus providing power to the 'A' Circulators. Per S2.OP-AB.CW -0001 
+Attachment 1, with 4 or more circulators out of service with power greater than or equal to P-10 (10%), then trip the 
+reactor and enter 2-EOP-TRIP-1. 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-AB.CW-0001 (R41) 
+None 
+NOS05ABCW01 -13, Objective 4. Describe, in general terms, the 
+actions taken in S2.OP-AB.CW-000 1 and the bases for the actions in 
+accordance with the Techn ical Bases Document. 
+New 
+Comprehension/ Analysis 
+41.5 / 43.5 / 45.3 / 45.13 
+SRO 
+08-Circulating Water System 
+075 A2.02 
+Ability to (a) predict the impacts of the following on the CW System; 
+and (b) based on those predictions, use procedures to correct, 
+control, or mitigate the consequences of those abnormal operations: 
+Loss of circulating water pumps 
+3.4 
+Plant Systems-Tier 2/Group 2 
+KIA Match: The KIA is matched because the SRO is being asked to assess plant conditions and then select the 
+specific procedu ral to mitigate the loss of 4 or more Circulators. 
+PAGE 72 
+
+=== PAGE 280 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screenin g for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessme nt and Selection of Procedures) 
+Can the question be answered solely from 
+I _ 1 RO question I 
+systems knowledge (i.e., how the system works, Yes 
+flowpath, logic, location)? 
+I No 
+.. 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? -1 
+I ~o 
+Can the question be answered solely by knowing Yes 
+1.
+1 
+RO question I the entry conditions for AOPs or plant parameters 
+that require entry into major EOPs? 
+I No 
+' 
+Can the question be answered solely by knowing Yes 
+1.
+1 
+RO question I the purpose, overall sequence of events, or 
+overall mitigative strategy of a procedure? 
+I No 
+' 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal , abnormal , or 
+emergency) and then prescribing a procedure or section of 
+a procedure to...mitigaie Qr..r_ecoves or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementatio n, or coordination of plant normal, 
+abnorma l, and emergency procedures 
+I No 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 73 
+
+=== PAGE 281 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+94 14-082 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• The crew is at minimum shift complement 
+Then: 
+• A shift change is in progress 
+• An on-duty Unit 2 Reactor Operator reports that his relief is unable to report to work 
+• There are NO available qualified licensed ROs on-site 
+In accordance with OP-AA-101-11 1, Roles and Responsibilities of On-Shift Personnel, which of the following 
+completes both statements? 
+A. 
+B. 
+C. 
+D. 
+1. The on-duty Unit 2 RO shift position _ (1)_ be unmanned upon shift change. 
+2. The shift complement may be one less than the minimum requirements for a period not to exceed _ (2)_ . 
+(1) can 
+(1) can 
+(1) can NOT 
+(1) can NOT 
+(2) 2 hours 
+(2) 1 hour 
+(2) 1 hour 
+(2) 2 hours 
+PAGE 74 
+
+=== PAGE 282 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: D 
+Explanation I Justification: 
+A. Incorrect. Plausible because the SRO may misinterpret the requirements in OP-AA-101-111 and believe that since 
+2 hours is allowed to fill the unexpected absence that the on duty RO can leave at the end of the shift. 
+B. Incorrect. Plausible because the SRO may misinterpret the requirements in OP-AA-101-111 and believe that since 
+2 hours is allowed to fill the unexpected absence that the on duty RO can leave at the end of the shift. 
+C. Incorrect. Plausible because 1 hour requirements are used in Tech Specs and the SRO may believe that this 1 
+hour action is warranted. 
+D. Correct. Per OP-AA-101-11 1, Attachment 2 Note 1, the Salem Shift complement may be one less than the 
+minimum requiremen ts for a period not to exceed 2 hours to accommodate the unexpected absence of on duty 
+shift members provided that immediate action is taken to restore the Shift Complement to within the minimum 
+requirements. Also, this provision does not permit any shift position to be unmanned upon shift change due to an 
+oncoming shift member being late or absent. The preferred action is to hold the off-going shift personnel until a 
+relief is available. 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+OP-AA-101-111 (R11 ), TS 6.2.2 
+None 
+NOS05CONDOP- 14, Objective 5.g. Describe requirements for the 
+following Control Room or Field Activities in accordance with 
+applicable Conduct of Operations Manual Administrative: 
+Procedures: Shift Relied and Turnovers 
+New 
+Fundamental/Memory 
+41.10 / 43.5 / 45.12 
+SRO 
+14-Conduct of Operations 
+G2.1.5 
+Ability to use procedures related to shift staffing, such as minimum 
+crew complement or overtime limitations (reference potential). 
+3.9 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the candidate requires knowledge of administrative procedu res related to 
+minimum shift staffing requirements. The question is asking the SRO the required time to fill a vacant licensed position 
+per TS and whether the on duty shift personnel can leave if his relief is absent. 
+PAGE 75 
+
+=== PAGE 283 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Add itional Refere nce: 
+OP·AA- 101-111 
+ROLES AND RESPONS IBILITIES OF ON SHIFT PERSONN EL 
+Attachme nt 2, Salem Shift Comp lement 
+[CD 419Y, 70145753, TIS 6.2.2) (Notes 1, 6, and 7) 
+C0·252X 
+C0-252X 
+C0•252X 
+Salem Unit 1 Mode 
+Salem Unit 2 Mode 
+SM 
+CRS 
+STA 
+OSCC (Note 4) 
+RO/PO 
+NEO 
+Comm unicator (Note 2) 
+Shift Electrician 
+Shift l&C Technicia n 
+RP Techn ician (Note 3) 
+Fire Brioade Liaison (FBU (Note 8) 
+1-4 1-4 
+1-4 5-6, D 
+1 1 
+2 2 
+1 1 
+1 1 
+4 4 
+6 6 
+2 2 
+1 (each ) 1 (each) 
+1 (each) 1 (eac h) 
+2 2 
+1 1 
+Page 24 of 29 
+Rev: 11 
+5-6, D 5-6, D 
+1-4 5-6, D 
+1 1 
+2 1 
+1 1 
+1 1 
+4 4 
+6 6 
+2 2 
+1 (each) 1 (each) 
+1 (each) 1 (each) 
+2 2 
+1 1 
+Fire Brioade IAW FP-AA-012 
+Debris Removal Operator (ORO) (Note 5) 1 1 1 1 
+Towina Operato r (TO) (Note 5) 1 1 1 1 
+This attachment combines the minimum shift staffing requirements of the Technical Specifications, 
+Emergency Planning, Appendix R Simultaneous Alternate Shutdown, and Beyond Design Basis External 
+Event (BDBEE) FLEX Strategies. Clarifying statements are identified separately below: 
+1. Except for the SM the Salem Shift Complement may be one less ttian tfie minimum requirements 
+t9£,.._a period not to exceed 2 hours to accommodate the-unexpected absence.of on duty shift 
+members provided that immediate action is taken to restore the Shift Complement to within the 
+minimum requirements of the tables. This provision does not permit any shift position to be 
+unmanned upon shift change due to an oncoming shift member being late or absent. The 
+preferred action is to hold over the off-going shift personnel until a relief is available. [CD 252X] 
+PAGE 76 
+
+=== PAGE 284 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-Only Questio ns Linked to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I ;.I RO question I systems knowledge (i.e., how the system works, Yes 
+flowpath, logic , location)? 
+~ 
+Can the question be answered solely by knowing Yes I ! RO question I immediate operator actions? 
+~ 
+Can the question be answered solely by knowing Yes 
+I _I RO question I the entry cond itions for AOPs or plant parameters 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes 
+I _ 1 RO question I the purpose , overall sequence of events, or 
+overall mitigative strategy of a proced ure? 
+7 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal, abnormal, or 
+emergency } and then prescribing a procedure or section of 
+a procedure to mitigate or recove r or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+I SRO-only procedure steps Yes 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-spec ific 
+subprocedur es or emergency contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementation , or coordination of plant normal, 
+abnormal, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b)(5} for SRO-on ly 
+PAGE 77 
+
+=== PAGE 285 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+95 14-083 Points: 1.00 
+Given: 
+• Salem Unit 2 is in MODE 6 
+• Conditions are established per S2.OP-IO.ZZ-0010, Spent Fuel Movements, to support fuel handling operations 
+in the Fuel Handling Building (FHB) 
+• Movement of irradiated fuel in the FHB is in progress 
+Then: 
+• FHB console alarm, BLDG AIRD/PLO , is Alarming 
+• No operator action has been taken 
+Based on the above condition and per S2.OP-AR.ZZ-0011, 2CC1 Console Alarm, which of the following completes 
+both statements? 
+1) What is the NEXT required action? 
+2) If the BLDG AIR D/P LO alarm is INVALID and will NOT clear, then the local indicator _ (2)_ be used to 
+continuously monitor FHB DIP. 
+A. (1) V alidate the alarm using the local indicator. 
+(2) may NOT 
+B. (1) Suspend movement of irradiated fuel assemblies. 
+(2) may 
+C. (1) Suspend movement of irradiated fuel assemblies. 
+(2) may NOT 
+D. (1) V alidate the alarm using the local indicator. 
+(2) may 
+PAGE 78 
+
+=== PAGE 286 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Plausible because validating the console alarm is an action performed. Incorrect in that the first action 
+is to suspend fuel moves in the FHB and then validate the alarm. 
+B. Correct. Per S2.OP-AR.ZZ-0011 for BLDG AIRD /PLO , if movement of irradiated fuel assemblies are in progress, 
+then suspend movement of irradiated fuel assemblies in the FHB. The next action is to validate the alarm by 
+checking the local indicator. If the alarm is considered invalid, then compensatory actions are required. Per 
+S2.OP-IO.ZZ-0010, if the BLDG AIRD /P LO is not clear, then the local indicator may be used to continuously 
+monitor FHB DIP. 
+C. Incorrect. Plausible because the SRO may believe that without the console alarm operable, then fuel moves inside 
+the FHB cannot continue until the alarm function is restored. Incorrect in that procedures allow the use of the local 
+indicator so long as it's continuously monitored. 
+D. Incorrect. Plausible because validating the console alarm is an action performed. Incorrect in that the first action is 
+to suspend fuel moves in the FHB and then validate the alarm. 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-IO.ZZ-0010 (R38), S2.OP-AR.ZZ-0011 (R64) 
+None 
+NOS05IOP010-05 , Objective 7. Evaluate the actions requi red by 
+TSs or TRM during perfo rm ance of S1/S2 .OP-IO.ZZ-0010 , 
+Spent Fuel Pool Man ipulations if any of the follo w ing limits are 
+exceeded : F HB DP greate r than -0.125 (less negat ive). 
+New 
+Comprehension/ Analysis 
+43.7 
+SRO 
+14-Conduct of Operations 
+G2.1.35 
+Knowledge of the fuel handling responsibilities of SROs (SRO Only). 
+3.9 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the SRO is being asked knowledge of fuel handling responsibilities 
+associated with the movement of irradiated fuel in the FHB and what action is required when the FHB building D/P 
+alarm is in and not valid. 
+PAGE 79 
+
+=== PAGE 287 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: S2.0 P-AR.ZZ-0011 (2CC1) 
+SYSTEM FUIH !HANDLING Bll lLUIING VENTILATION 
+Exhaust Filter Trains 
+I 
+BL[)GAIR 
+D!P 
+BEZEL Controls 
+DEVICES: 2PD'"'6531 
+SIETPOINT: -0.1twr H,D 
+1.0 1CAUSE1(S)1: 
+1.1 Loss of slight. negatw,e pressure in L1he Fuel Hlandling Buildling 
+2.0 AUTOMATIC ACTIONS: 
+:2.1 None 
+3.0 OPERATO R ACTiiONS: 
+3.1 ![rnovement of irradiated ruel assemblies is ln orQgr,ess 
+THIIEN PERFORM the following: 
+LO 
+A. SUSPEND movement of irradiatei'.l fuel assemblie,s in the FHB. 
+B. SEND an Operator ta Panel 436-,2. (1301' FHIB): 
+1. CHE<CK alarm s.etpoint.at:2PD6531, FHIB VE.Ni LO OP SW. 
+2. VALIDATE the BLDG AIR.Die LQalarm using 
+local indicator 2PD653 1. 
+C. IF alarm is validated, DEPRESS INLET VANE OPEN bezel for 21 ANO 
+22 flHB EXHAUST FANS. --
+0 . IF alarm clears OR FHIB can b:e maintained at. a slight negative 
+pressL11re 
+TIHEN movement of irradiated assemblies may continue•. 
+E. IF alarm remains illuminated with FHB at negative pressure 
+iTHEN IMPLEMENT compensatory actions as required. 
+PAGE 80 
+
+=== PAGE 288 ===
+SRO EXAMINATION ANSWER KEY 
+Additional Reference : 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+A TT ACHMEt,IT 3 
+(Page 1 of 31 
+REVIEWS FOR cot-rnNUING f lJH HAN[)Ll t.tG 
+s2.0P-10 .ZZ-001 O(Q) 
+Sheet _ of _ 
+1.0 SH[FT REVIEW: 
+1.1 REVIEW entire procedure 
+AND EHSURE All conditions still valid. 
+1.2 IENS'URE the following: 
+A. BOTH FHB Ext.at.Et Fans AND one Supply Fan must be AVAIILABLE 
+AND operating. 
+B. Fuel Handling Buikfing is mainb ined al.sligtt negative press.ure witti respect 
+to atmosphere pressure. 
+C. BLDG AIR O/P LO alarm is clear OR local ill<icator 2PD6531 being used to continuously 
+rmnitor f HB M'. 
+1.3 IENS'URE ALL Open Items listed in Sectioo 2.ID of attm:hmenti resdved prio.-fo resuming Spenrt Fuel 
+Pool ManfpiJations. 
+PAGE 81 
+
+=== PAGE 289 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+f. Procedures and Limitations Involved in Initial Core Loading, Alterations in Core 
+Configuration, Control Rod Programming, and Determination of Various Internal and 
+External Effects on Core Reactivity (10 CFR 55.43(b)(6)] 
+Some examples of SRO-on ly examination items for this topic include the following: 
+• evaluation of core conditions and emergency classifications based on core conditions 
+• administrative requirements associated with low-power physics testing processes 
+• administrative requirements associated with refueling activities, such as approvals 
+required to amend core loading sheets or administrat ive controls of potential dilution 
+paths or activities 
+• administrative controls associated with the installation of neutron sources 
+• knowledge of TS bases for reactivity contro ls 
+g. Fuel Handling Facilities and Procedures (10 CFR 55.43(b)(7)] 
+Some examples of SRO-on ly examination items for this topic include the following: 
+• refuel floor SRO respons ibilities 
+• assessment of fuel handling equipment SR acceptance criteria 
+• prerequisites for vessel disassemb ly and reassembly 
+• decay heat assessmen t 
+• assessmen t of SRs for the refueling mode 
+• reporting requirements 
+• emergency classifications 
+PAGE 82 
+
+=== PAGE 290 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+96 14-084 Points: 1.00 
+Per WC-AA-101, On-Line Work Management Process, which of the following choices are responsibilities of the Shift 
+Manager in support of online maintenance? 
+1. Ensures site FLEX capability is maintained. 
+2. Ensures risk is reassessed when an emergent condition results in a plant configuration not previously 
+assessed. 
+3. Ensures Protected Equipment barriers are applied per OP-AA-108-116, Protected Equipment Program. 
+4. Manages special or complex projects during on-line implementation. 
+A. 1, 2, 3, and 4 
+B. 1, 2, and 3 Only 
+C. 2 and 3 Only 
+D. 1 and 4 Only 
+PAGE 83 
+
+=== PAGE 291 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: B 
+Explanation I Justification: 
+A. Incorrect. Plausible because the SRO may believe that the SM has this respons ibility based on the complex 
+project. Incorrect in that per WC-AA-101 , the respons ibility belongs to the Online Maintenance Project 
+Coordinator. 
+B. Correct. Per WC-AA-101, step 3.6, the Shift Manager respons ibilities include the following: 3.6.1 Ensures shift 
+operations reassesses risk if an emergent condition results in a plant configuration that has not been previously 
+assessed , 3.6.2 Ensures shift operations apply Protected Equipment barriers IAW OP-AA-108-116, 3.6.3 Ensures 
+fire in a(4) Risk Management Actions are implemented as applicable IAW the appropriate site specific procedu re, 
+3.6.4 Ensures the site FLEX capability is maintained . 
+C. Incorrect. Plausible because these are respons ibilities of the SM. Incorrect in that choice 1 is also a responsib ility 
+of the SM. 
+D. Incorrect. Plausible because choice 1 is a respons ibility of the SM. Incorrect in that per WC-AA-101, the 
+responsibility belongs to the Online Maintenance Project Coordinator. 
+Technica l References : 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+WC-AA-10 1 (R30) 
+None 
+NOS05WORK00 -07, Object ive4. Describe the conditions under which 
+the SM/CRS permiss ion must be obtained prior to starting work, in 
+accordance with WC-AA- 10, Work Management Process Description , 
+and WC-AA-101, On-Line Work Management Process . 
+Modified - Byron 2017 NRC SRO96 
+Fundamental /Memory 
+41.10 / 43.5 / 45.13 
+SRO 
+14-Equipment Control 
+G2.2.19 
+Knowledge of maintenance work order requirements . 
+3.4 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the question is asking the SRO knowledge on administrative controls for 
+performing maintenance on systems and plant components per WC-AA-101. 
+PAGE 84 
+
+=== PAGE 292 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Additional Reference: WC-AA- 101 page 6 
+3.4 Work Week Manager (WWM) 
+3.4.1. Ensures that a risk assessment of planne<I work has been performe<I and evaluates 
+the results against the cmeria of Attacnment 3, Configuration Management Criteria 
+3.4.2. Oversees the preparation and coordination activities of Project Coordinators 
+require<! by this procedure. 
+3.4.3. Ensures completion and approval of Attachment 2, On-Line Maintenance Approval 
+Fo;m, when required. 
+3.5 Online Maintenance Project Coordinator 
+3.5.1. Designate<! by Cycle Man-ageror WWM to manage..special or complex-projects 
+during oo-line o~ tion. 
+3.5.2. Serves as the single point of contact bet.veen the Shift, Work Week Manager, and 
+v.ork groups. 
+3.6 Shift Manager 
+3.6.1. Ensures shift operations reassesses risk if an emergent condi1ion results in a plant 
+configuration that has not been previously assessed. 
+3.6.2. Ensures shift operations apply Protected Equipment barriers IAW OP-AA- 108-116, 
+"Protected Equipment Program·. 
+3.6.3. Ensures fire in a(4) Risk Management Actions are implemented as applicable IAW 
+the appropriate site specific procedure. 
+3.6.4. Ensures the site FLEX capability is maintained. 
+3.7 Ope-rations Servic es Manager 
+3. 7 .1. Ensures any threats to generation are provided to the Electrical System Operations 
+Center (ESOC) as prescribed by OP-AA-108-107-1001, Electric System Emergency 
+Operations and Electric Systems Operator Interface. 
+3.7.2. Ensures planne<l k>ad re<luctions are coordinate<! with the ESOC. 
+PAGE 85 
+
+=== PAGE 293 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Parent Question: Byron 2017 NRC SRO96 
+Modified question by adding a third correct choice and some of the choices from the parent question are different that 
+PSEG site procedure. 
+96 ID: 2017 NRC Q96C Points: 1.00 
+Per WC-AA-1 01, ONLINE WORK CONTROL PROCESS, which of the following are responsibilities of 
+Operations Shift Management? 
+1. Audits the work planning and scheduling processes to ensure maintenance is completed. 
+2. Ensures appropriate actions are taken to mitigate online risk. 
+3. Responsible for declaring Structure, System, and Component (SSC) functionality/availability. 
+4. Ensures project critiques are performed for projects requiring a fragnet. 
+A. 1 and 2 
+B. 2 and 3 
+C. 3 and 4 
+D. 4 and 1 
+Answer: B 
+PAGE 86 
+
+=== PAGE 294 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+c. Facility Licensee Procedures Required1o Obtain Authority for DesigR and Operating 
+Changes in the Facility [10 CFR 55.43(b)(3)} 
+Some examples of SRO-only examination items for this topic include the following: 
+ES-4.2, Page 21 of 29 
+• screening and evaluation processes under 10 CFR 50.59, "Changes , tests, and 
+experiments" 
+• administrative processes for tempora ry modifications 
+• administrative processes for disabling annunciators 
+• administrative processes for the installation of temporary instrumenta tion 
+• processes for changing the plant or plant procedures 
+PAGE 87 
+
+=== PAGE 295 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+97 
+Given: 
+• Salem Unit 2 is at 100% power 
+At Time 0500: 
+14-085 
+• The crew enters S2.OP-AB.RC-0001, RCS Leak, for a suspected RCS leak 
+At Time 0505: 
+• The estimated leak rate is 12 gpm 
+• The leak is identified from the 2CV6, Letdown Relief Valve 
+At Time 0516: 
+• Letdown is isolated and the leakage has stopped 
+Which of the following completes both statements? 
+1. At time 0505, what is the status of TS 3.4.7.2, Operational Leakage? 
+2. At time 0516, the CRS __ required to make an Emergency Declaration. 
+A. (1) NOT Met 
+(2) is NOT 
+B. (1) NOT Met 
+(2) is 
+C. (1) Met 
+(2) is 
+D. (1) Met 
+(2) is NOT 
+[REFERENCE PROVIDED] 
+PAGE 88 
+Points: 1.00 
+
+=== PAGE 296 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: D 
+Explanation I Justification: 
+A. Incorrect. Part 1 is incorrect. Plausible because the SRO may believe that the CVCS system is part of the RCS 
+system . Incorrect in that the CVCS system is considered an auxiliary system and not part of the RCS system. 
+Part 2 is correct. 
+B. Incorrect. Part 1 is incorrect. Plausible because the SRO may believe that the CVCS system is part of the RCS 
+system . Incorrect in that the CVCS system is considered an auxiliary system and not part of the RCS system. 
+Part 2 is incorrect. Plausible because the SRO may incorrectly determine that the RCS leakage exceeded the 
+criteria EAL SU5.1 . 
+C. Incorrect. Part 1 is incorrect. Plausible because the SRO may believe that the CVCS system is part of the RCS 
+system . Incorrect in that the CVCS system is considered an auxiliary system and not part of the RCS system. 
+Part 2 is incorrect. Plausible because the SRO may incorrect ly determine that the RCS leakage exceeded the 
+criteria EAL SU5.1 . 
+D. Correct. Per the bases of S2.OP-AB.RC-0001, a RCS leak on the CVCS system that can be isolated does not 
+require entry into TS 3.4.7.2 or requires an Emergency Notification (UE EAL SU5.1 ). 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+1 0CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA# : 
+Importance: 
+Tier/Group 
+S2.OP-AB.RC-0001 (R18), EP-SA-325-218 (RO) 
+EP-SA-325-218 (Bases) and EP-SA-325-118 (EAL SUS.1) 
+NOS05ABRC01-04, Objective 2. Describe, in general terms, the 
+actions taken in S1/S2.OP-AB.RC-0001 and the bases for the actions 
+in accordance with the Techn ical Bases Document 
+New 
+Comprehension/ Analysis 
+41.5 / 43.5 / 45.12 
+SRO 
+14-Equipment Contro l 
+G2.2.44 
+Ability to interpret control room indications to verify the status and 
+operation of a system and understand how operator actions and 
+directives affect plant and system conditions. 
+4.4 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the question is asking the SRO to verify the status of the RCS leak on the 
+CVCS system and determine whether or not this event is reportable to the States . 
+PAGE 89 
+
+=== PAGE 297 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: S2.OP-AB.RC-0001 bases 
+At Step 3.24, ~hie CRS/SM is notified to refer to the Event Classification Guide and 
+to Tedhnical Specifications. RCS Leakage definition for ECG classification purposes 
+is "Any leakage that is unisola'ble should be considered Reactor Coolant System (RCS) 
+Leakage when reviewirng the Salem ECG for class!lfication assessmen t". Leakagtlom 
+Chemical Volume and Control System (CVCS) letaown piping~ or components such as the 
+2CV6 irelief valve or vent and drain valves associated with eves deminera'lizer vessels, is 
+NOT considered Reactor Coolant System (RCS1 t-eakage. The CVCS..system piping and 
+compone nts are capable of being isolate d from the RCS piping and are classified j n the 
+Salem UFSAR as auxiliar:y to the--Ieactor coolant system pressure bounda ry_ Jn addition, 
+Industry OE shows several plants have misclassi'fied leakage from the eves as Res 
+Leakage and later retracted the TS Actfon Statement entry and Event notification As a 
+resurt, the entryi nto-the Salem TS Action Stateme nt for Identified Leakage.is NOT required 
+due to the source of the leakage being part of an isolable r:iortion of the CVCS (non-RCS 
+Leakage) and NOT from the RCS as defined in Teclimca Specifica tions. 
+PAGE 90 
+
+=== PAGE 298 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-On ly Questio ns Link ed to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I I systems knowledge (i.e., how the system works, Yes RO question I flowpath, logic, location)? I I No 
++ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? 
+I 
+I No 
+' 
+Can the question be answered solely by knowing Yes IJ the entry conditions for AOPs or plant parameters RO question I 
+that require entry into major EOPs? I 
+I No 
+Can the question be answered solely by knowing Yes I I the purpose, overall sequence of events, or RO question I 
+overall mitigative strategy of a procedure? I 
+I No 
+Does the question require one or more of the following? 
+• assessmen t of plant conditions (normal, abnormal, or 
+emergency} and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+I SRO-only procedure steps Yes 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementation. or coordination of plant normal, 
+abnormal, and emergency procedures 
+I No 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 91 
+
+=== PAGE 299 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+98 14-086 Points: 1.00 
+Given: 
+• Salem Unit 2 is at 100% power 
+• A release of 21 eves Monitor Tank needs to be performed 
+• 2R18, Radioactive Liquid Effluent Monitor, was declared inoperable 3 days ago 
+Which of the following completes both statements? 
+1. Before performing the liquid radioactive waste release, the _ (1 )_ authorizes the discharge. 
+2. Based on the above condition, the ODCM requires that ___ (2) __ _ 
+Note: ODCM = Offsite Dose Calculation Manual 
+A. (1) Shift Manager/Control Room Supervisor 
+(2) at least two independent samples of the monitor tank are analyzed prior to the release 
+B. (1) Shift Manager/Control Room Supervisor 
+(2) continuous surveys of the discharge piping are performed during the release 
+C. (1) Radiation Protection Manager 
+(2) continuous surveys of the discharge piping are performed during the release 
+D. (1) Radiation Protection Manager 
+(2) at least two independent samples of the monitor tank are analyzed prior to the release 
+PAGE 92 
+
+=== PAGE 300 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: A 
+Explanation I Justification: 
+A. Correct. Per the ODCM 3.3.8 Radioactive Liquid Effluent Monitoring Instrumenta tion, with 2R18 inoperable action 
+26 applies which requires at least two independent samples are analyzed and at least two technically qualified 
+members of the Facility Staff independently verify the release rate calculations and discharge line valving. Per 
+S2.OP-SO .WL-0001, step 2.5 the SM/CRS authorizes the release. 
+B. Incorrect. Part 1 is correct. Part 2 is incorrect. Plausible because surveys of piping are performed but for different 
+reason. Incorrect in that the ODCM requires two independent samples analyzed prior to the release which is 
+verified by Chemistry. 
+C. Incorrect. Part 1 is incorrect. Plausible because the SRO may confuse the respons ibility of a radioactive liquid 
+release with a Rad Pro function. Part 2 is incorrect. Plausible because surveys of piping are performed but for 
+different reason. Incorrect in that the ODCM requires two independent samples analyzed prior to the release 
+which is verified by Chemistry. 
+D. Incorrect. Part 1 is incorrect. Plausible because the SRO may confuse the respons ibility of a radioactive liquid 
+release with a Rad Pro function. Part 2 is correct. 
+Technica l References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+S2.OP-SO.WL-0001 (R32), ODCM 3.3.8 (R29) 
+None 
+NOS05TECHSPEC-12 , Objective 14. Describe the general 
+component and parameter categor ies that are addressed by 
+Technica l Specificat ion Sections 3/4.1 through 3/4.12Question 
+Source: Bank - Salem 
+Fundamental/Memory 
+41.13 / 43.4 / 45.10 
+SRO 
+14-Radiation Control 
+G2.3.6 
+Ability to approve release permits. 
+3.8 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the SRO requires knowledge of authorizing releases of liquid radioactive 
+waste and add itional requirements to perform the release if the radiation monitor is inoperable. 
+PAGE 93 
+
+=== PAGE 301 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+d. Radiation Hazards that May Arise during Normal and Abnormal Situations, including 
+Maintenance Activities and Various Contaminatio n Conditions [10 CFR 55.43(b)(4)] 
+Some examples of SRO-on ly examination items for this topic include the following: 
+• process for gaseous /liquid release approvals (i.e., release permits) 
+• a nalys is and interpretation of radiation and activity readings as they pertain to the 
+selection of administrative, normal , abnormal , and emergency procedures 
+• analysis and interpretation of coolant activity, including comparison to emergency plan 
+criteria or regulatory limits (or both) 
+• process for authoriz ing emergency exposure limits 
+PAGE 94 
+
+=== PAGE 302 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+99 15-044 Points: 1.00 
+Given: 
+• The ST A is monitoring Critical Safety Function Status trees 
+Which of the following completes the statement? 
+If Containment Radiation Monitors _ (1 )_ exceeds 2 R/HR, the CRS _ (2)_ 2-EOP-FRCE-3, Response to High 
+Containment Radiation Level. 
+A. (1) R10A/B 
+(2) must GO TO 
+B. (1) R44A/B 
+(2) must GO TO 
+C. (1) R44A/B 
+(2) may elect to GO TO 
+D. (1) R10A/B 
+(2) may elect to GO TO 
+PAGE 95 
+
+=== PAGE 303 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: C 
+Explanation I Justification: 
+A. Incorrect. Part 1 and 2 are incorrect. 
+B. Incorrect. Part 1 is correct. Part 2 is incorrect. Plausible because if the SRO believes a Red or Purple path exists, 
+then entry into the FRP is required. Incorrect in that a yellow path exist and entry is optional. 
+C. Correct. Per 2-EOP-CFST-1, for containment environmen t, the R44A and R44B radiation monitors are used to 
+determine whether entry into 2-EOP-FRCE -3 is required if radiation levels are above 2R/HR. FRCE-3 is a yellow 
+path procedure , not RO knowledge, and the SRO must apply the rules of usage for FRPs to determine how the 
+procedure is performed. Yellow path procedures are optional. 
+D. Incorrect. Part 1 is incorrect. Plausible because the R10A/B radiation monitors are located inside containment. 
+Incorrect in that the R44A/B are the high range radiation monitors used in the CFSTs . Part 2 is correct. 
+Technical References: 
+Proposed References to be provided: 
+Learning Objective: 
+Question Source: 
+Question Cognitive Level: 
+1 0CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA# : 
+Importance: 
+Tier/Group 
+2-EOP-CFST-1 (R41), OP-SA-108-101 -2002 (RO) 
+None 
+NOS05TRP00 1-09, Objective 10, Given EOP-CFST-1 and a set of 
+plant conditions, determine whether Functional Restoration 
+Procedures (FRPs) should be implemented and/or terminated, in 
+accordance with OP-SA-108-101-2002 and EOP-CFST-1. 
+Bank - Diablo Canyon 2018 NRC SRO85 
+Fundamental/Memory 
+41.7 / 45.7 / 45.8 
+SRO 
+15-Emergency Procedures/Plan 
+G2.4.2 
+Knowledge of system setpoints, interlocks, and automatic actions 
+associated with emergency and abnormal operat ing procedure entry 
+conditions. 
+4.6 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the question is asking the SRO which compone nt is used to determine entry 
+into a FRP procedure and based on the status of the trees, determine whether entry is required or optional. 
+PAGE 96 
+
+=== PAGE 304 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional References: 2-EOP-CFST-1 
+FIGURE 5 
+COINTAINMENT ENVIRONMENT' 'SlATUS 'TIREE 
+R-44 
+HAOIA1 ION 
+LESS THPN 
+2 RIHr 
+CR££N 
+SAT 
+ND 
+Y!:LLON 
+FRC'E-3 
+CON l Al""-t.N I 
+·SWAP 
+ES·S THm 78t 
+IJ5t. AOVERSEI 
+NO 
+CfJ\!T ti UJl.1EN1 
+PRES'S.LIRE 
+l[':)S , THU .I 
+1:J, P'SlG 
+1'fES NO 
+CONJ .O:iNM[ NT 
+SPR~Y PUMP 
+RUt,,NittG 
+PUR' LE I YELLOW PURPLE 
+FRCE-1 FRCE-2 j FRCE- 1 
+PAGE 97 
+C(INT1d N~'fh T 
+PRES'.'":.URE 
+Ll:SS THAN 
+◄ 7 PSJQ 
+Rf.D 
+FRCE-1 
+[Of CFSl -1 
+
+=== PAGE 305 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Add itional Reference: 
+OP-SA-108-101-2002 
+EMERGENCY OPERATING PROCIE[)l.lRE USER'S GUIDE 
+Page 16 of 40 
+Re.v,:0 
+4 .2.14. If a FRG is being perfom1ed, and a higher priori:ly RED ,or PURPILE pain romes in, 
+the currrenti FRG s1hould be suspended and a. trans.ifion made to the nigh.er priiority 
+FRG unless stated otherwise in lhe applicable guideline. Aifter tile new FRG has 
+!been ,corrnpleted and guidance is provided to •return to p:rooedure and step in elfect, • 
+the operator should go back to me previous FIRG, which llad reen implemented, and 
+was therefore the procedure in effect 
+4.2:1 5. Status Tree monitoriflg should be continuous if any PU RPLE or RED condition is 
+found to exist If a oonlinuous RED or PURPLE priority is indieated, Hle 
+[performance of ffle .approp:riate CSF shouki be completed ba$ed ,on the priority rules 
+of usage as dis&USsed above. If 1no condition mo.re serious ttum YEil.LOW is 
+enoournteired, monitorirng frequency may be reduced to 15 minutes, unless some 
+stgnificant change in plant status occurs. 
+4.2. ·16. A ~ ELl OW terminus does'ffOt require imme(fiate operator aftention. Frequently it is 
+incUcatJve of an off~normal-anGl/or iemporary condition wihioh wiltibe restored to 
+oomu.11 status by ac<tions aJready in progress .. In other ca~s, the YELILOW status 
+migM provide an early indication of a devefoping RED or PURPLE condition. 
+Following FRG ir1n:plemenmtion, a YELLOW might imficate a, restdual off-no-rm al 
+condition. The operator is allowed to decide whether or not to implement any 
+YELLOW condition FRP. 
+4.2.17. Implementation of a yellow path function re<Storation procedure is ba~ on operator 
+judgement when it is detem1ined that.adequate-time ex.isls lo implement it n other 
+Y,10rds, tile operator does noti have to implement a yellow 1pattl proce<l:ure if a 
+judgement has Ileen ma<le that ii is inapprop·riate b.a~ d on .available time or current 
+p1ant state; and, if an event of higlter priority is in pmgre.s.s, tlte operator should 
+.atten<I to the more important matters prior to implementing a yellow path function 
+restoration proeedure. 
+PAGE 98 
+
+=== PAGE 306 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification: 
+Figure 4.2-3 Screening for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I I systems knowledge (i.e., how the system works, Yes RO question I flowpath, logic, location)? I 
+~ 
+Can the question be answered solely by knowing Yes I ! RO question I immediate operator actions? 
+~ 
+Can the question be answered solely by knowing Yes I I the entry conditions for AOPs or plant parameters RO question I 
+that require entry into major EOPs? I 
+~ 
+Can the question be answered solely by knowing Yes I I the purpose, overall sequence of events, or RO question I 
+overall mitigative strategy of a procedure? I 
+7 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal, abnormal, or 
+emergency) and then prescribing a procedure or section of 
+a procedure to mitigate or recover or with which to proceed 
+. knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+I . SRO-only procedure steps Yes 
+• knowledge of diagnostic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementation, or coordination of plant normal, 
+abnormal. and emergency procedures 
+~ 
+' 
+Question might not be linked to 
+10 CFR 55.43(b)(5) for SRO-only 
+PAGE 99 
+
+=== PAGE 307 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+100 15-045 Points: 1.00 
+Redacted Due to Security-Related Inform ation 
+Given: 
+• A truck accident has rendered BOTH Salem Fire Pumps INOPERABLE 
+• The crew is implementing S2.OP-AB.FP-0001, Fire Protection System Malfunction 
+In accordance with S2.OP-AB.FP-0001, which of the following completes both statements? 
+1. What action will the CRS direct? 
+2. If the action cannot be established within 24 hours, then the unit must be in ____ within the next 6 
+hours? 
+A. (1) Open the backup supply cross-tie valves from Hope Creek. 
+(2) HOT STANDBY 
+B. (1) Open the backup supply cross-tie valves from Hope Creek. 
+(2) HOT SHUTDOWN 
+C. (1) 
+(2) 
+D. (1) 
+(2) 
+Redacted Due to Security-Related Information 
+PAGE 100 
+
+=== PAGE 308 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21 -01 ILOT) - (Rev. 1) 
+Answer: A Redacted Due to Security-Related Inform ation 
+Explanation I Justification: 
+A. Correct. Per S2.OP-AB.FIRE-0002, step 3.4 if at least one fire pump and one fire pump water supply is NOT 
+available, then step 3.5 will direct opening the backup fire suppression w ater supply cross-tie valves from Hope 
+Creek. If this cannot be established within 24 hours (step 3.6) then a unit shutdown is required and Hot Standby 
+within the next 6 hours, Hot Shutdown within the following 6 hours, and Cold Shutdown within the subsequent 24 
+hours. 
+B. Incorrect. Part 1 is correct. Part 2 is incorrect. Plausible because Hot Shutdown is a required MODE, but in the 
+next 6 hours after reaching Hot Standby in 6 hours. 
+C. Incorrect. Part 1 is incorrect. Plausible because 
+directed by procedure . Part 2 is incorrect. Plaus1 e 
+hours after reaching Hot Standby in 6 hours. 
+D. Incorrect. Part 1 is incorrect. Plausible because 
+directed by procedure. Part 2 is correct. 
+Technica l References: 
+Proposed References to be provided: 
+S2.OP-AB.FIRE-0002 (R2) 
+None 
+, but not 
+e next 6 
+, but not 
+Learning Objective: 
+Question Source: 
+NOS05ABFP01-06, Objective 2. Describe, in general terms, the 
+actions taken in S2.OP-AB.FP -0001 and the bases for the actions. 
+Bank - Salem 
+Question Cognitive Level: 
+10CFR Part 55 Content: 
+Level: 
+Category/System: 
+KIA#: 
+Importance: 
+Tier/Group 
+Fundamental/Memory 
+41.10 / 43.5 / 45.13 
+SRO 
+15-Emergency Procedures/Plan 
+G2.4.25 
+Knowledge of fire protection procedures . 
+3.7 
+Generic Knowledge and Abilities-Tier 3 
+KIA Match: The KIA is matched because the SRO is being asked the required action for when both Salem Fire Pumps 
+are inoperable and the plant impact if the cross-tie cannot be opened within 24 hours . 
+Redacted Due to Security-Related Information 
+PAGE 101 
+
+=== PAGE 309 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+Additional Reference: 
+s2.oP-AB.FP-0001(0) 
+3 . .S NOTIFY Site Pro(ection to es1abli1h a Backup Fire SUppreaston Water 
+System .mpply from Hope Creek, OPEN cross tie valves: 
+♦ 1FP30, FP HDR TO HOPE CREEK [V 
+♦ 0-KC-Vll~. HOPB CREEK/SALEM CROSSCONNECT VALVE 
+:3 .6 Can 1 bacl31p Fltt: S'uppre~&ion Weter Syatem aupply be estahU,bed within 
+24h~ 
+' NO YES-> 
+I V 
+3.7 NOTIJ'Y Opemtio1u: Management of the wu1.vailabJH1y of BOTH Fire Pro~ticm 
+W.a.tm- Systems, 
+'.LS INITCATE Unit Shutdown JAW 1he appropriate IOP as follows: 
+A. Be in 1t lea11l HOT STANDBY within the next 6 bour8. 
+B. Be In lllt lent HOT SHUTDOWN within thti following 6 houri;, 
+C. Be in 1t l.ea!!L COLD SHUTDOWN witbin tb.e subsequent 24 hours, 
+PAGE 102 
+Timo 
+[C-0651) 
+
+=== PAGE 310 ===
+SRO EXAMINATION ANSWER KEY 
+SALEM 2023 NRC Exam (21-01 ILOT) - (Rev. 1) 
+SRO Match Justification 
+Figure 4.2-3 Scree ning for SRO-Only Questions Linked to 10 CFR 55.43(b)(5) 
+(Assessment and Selection of Procedures) 
+Can the question be answered solely from 
+I I RO question I systems knowledge (i.e., how the system works, Yes 
+flowpath, logic, location)? 
+~ 
+Can the question be answered solely by knowing Yes I I RO question I immediate operator actions? ~I 
+~ 
+Can the question be answered solely by knowing Yes 
+1.
+1 
+RO question I the entry conditions for AOPs or plant parameters 
+that require entry into major EOPs? 
+~ 
+Can the question be answered solely by knowing Yes 
+I I RO question I the purpose , overall sequence of events, or 
+overall mitigative strategy of a procedure? 
+7 
+Does the question require one or more of the following? 
+• assessment of plant conditions (normal, abnormal, or 
+emergency ) ana then prescribing a procedure or section of 
+procedure to mitigate or recover or with which to proceed 
+• knowledge of when to implement attachments and 
+appendices, including how to coordinate these items with 
+Yes I SRO-only procedure steps 
+• knowledge of diagnost ic steps and decision points in the question 
+EOPs that involve transitions to event-specific 
+subprocedures or emergency contingency procedures 
+• knowledge of administrative procedures that specify 
+hierarchy, implementation , or coordination of plant normal, 
+abnormal, and emergency procedures 
+~ 
+Question might not be linked to 
+10 CFR 55.43(b) (5) for SRO-only 
+PAGE 103 
