@@ -45,4 +45,5 @@ What is the EDG and safeguards load response?
 ## Connections
 
 - Related systems: [[Diesel Generators]], [[Emergency Core Cooling Systems]], [[Electrical Power Systems]]
+- Related procedures: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related exam: [[2023 NRC Written Exam]]
