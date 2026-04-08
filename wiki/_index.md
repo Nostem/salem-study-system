@@ -127,3 +127,4 @@ status: draft
 - [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
 - [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
 - [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]]
+- [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]]

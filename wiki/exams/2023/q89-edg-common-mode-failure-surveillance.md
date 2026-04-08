@@ -50,4 +50,5 @@ In order to expeditiously complete the EDG surveillance runs prior to the arriva
 
 - Related systems: [[Diesel Generators]]
 - Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]]
 - Related exam: [[2023 NRC Written Exam]]
