@@ -123,6 +123,13 @@ The specifications ensure that: (1) acceptable power distribution limits are mai
 
 Misalignment of a rod requires measurement of peaking factors or a restriction in THERMAL POWER to provide assurance of fuel rod integrity during continued operation.
 
+### Position Indication Bases (3.1.3.2.1.b)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q56</div>
+TS 3.1.3.2.1.b bases states: <span class="hi-exam">"either the control console group 1 demand step counter or the plant computer 'bank step' display is sufficient to comply with this specification for group 1 rod position."</span> Only Group 1 demand steps input into the Plant Computer — Group 2 demand position is NOT available on the Plant Computer. When a group demand step counter fails, the Plant Computer can satisfy the channel check surveillance for <span class="hi-trap">Group 1 only</span>.
+</div>
+
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-3.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
@@ -131,3 +138,5 @@ Misalignment of a rod requires measurement of peaking factors or a restriction i
 
 - Related systems: [[Reactor Core and Fuel]], [[Instrumentation and Controls]]
 - Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
+- Related exam questions: [[2023 Q56]]
+- Related exam: [[2023 NRC Written Exam]]
