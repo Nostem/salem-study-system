@@ -22,6 +22,6 @@ If BLDG AIR D/P LO alarm is invalid and will not clear, <span class="hi-exam">th
 
 ## Connections
 
-- Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (Miscellaneous)]]
+- Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
 - Related exam questions: [[2023 Q95]]
 - Related exam: [[2023 NRC Written Exam]]

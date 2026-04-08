@@ -1,12 +1,12 @@
 ---
-title: "S2.OP-AR.ZZ-0011 — Alarm Response (Miscellaneous)"
+title: "S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)"
 category: procedures
 status: draft
 aliases:
   - S2.OP-AR.ZZ-0011
 ---
 
-# S2.OP-AR.ZZ-0011 — Alarm Response (Miscellaneous)
+# S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)
 
 ## Purpose
 
