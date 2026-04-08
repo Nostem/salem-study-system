@@ -73,6 +73,57 @@ b. One turbine-driven pump, powered from an OPERABLE steam supply
 
 *LCO 3.0.4.b is not applicable (cannot defer entry into the applicable mode).*
 
+## 3/4.7.1.3 — Auxiliary Feed Storage Tank
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.1.3</div>
+The auxiliary feed storage tank (AFST) shall be OPERABLE with a contained volume of at least <span class="hi">200000 gallons</span> of water.
+</div>
+
+**Applicability:** Modes 1, 2, and 3
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| AFST inoperable | Restore AFST OR demonstrate OPERABILITY of backup supply (demin water or fire protection/domestic water tank) | <span class="val-alarm">4 hours</span> |
+| Backup supply in use | Restore AFST | <span class="val-alarm">7 days</span> |
+| Unable to meet actions | Hot Shutdown in 12 hours | 12 hrs |
+
+**Backup water sources:** Demineralized water storage tank (≥200000 gallons) or fire protection/domestic water storage tank (≥200000 gallons), with proper valve alignment verified.
+
+## 3/4.7.1.4 — Secondary Coolant Activity
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.1.4</div>
+The specific activity of the secondary coolant system shall be ≤ <span class="val-alarm">0.10 μCi/gram</span> DOSE EQUIVALENT I-131.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Action:** With specific activity > 0.10 μCi/gram DE I-131, be in Hot Standby within 6 hours and Cold Shutdown within 30 hours.
+
+**SR:** Per Table 4.7-2 sampling and analysis program (gross activity per SFCP; isotopic analysis when gross activity >10% of limit).
+
+## 3/4.7.1.5 — Main Steam Line Isolation Valves
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.1.5</div>
+Each main steam line isolation valve shall be OPERABLE.
+</div>
+
+**Applicability:** Mode 1; Modes 2 and 3 except when all MSIVs are closed
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| One MSIV inoperable (Mode 1) | Restore OR close inoperable valve | <span class="val-alarm">4 hours</span>; otherwise Mode 2 in 6 hrs |
+| One or more MSIVs inoperable (Modes 2-3) | Maintain closed and verify closed every 7 days | Ongoing |
+| Unable to meet actions (Modes 2-3) | Hot Standby in 6 hours, Hot Shutdown in 6 hours | 6 + 6 hrs |
+
+**Key SR:** Verify full closure within <span class="hi">5 seconds</span> per Inservice Testing Program.
+
 ## 3/4.7.2 — SG Pressure/Temperature Limitation
 
 <div class="callout callout-important">
@@ -105,6 +156,76 @@ At least <span class="hi">two independent service water loops</span> shall be OP
 **Applicability:** Modes 1, 2, 3, and 4
 
 **Action:** With only one loop, restore within <span class="val-alarm">72 hours</span> or Hot Standby in 6 hours + Cold Shutdown in 30 hours.
+
+## 3/4.7.5 — Flood Protection
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.5</div>
+Flood protection shall be provided for all safety related systems, components and structures when the water level of the Delaware River exceeds <span class="val-alarm">10.5 ft</span> Mean Sea Level USGS datum at the service water intake structure.
+</div>
+
+**Applicability:** At all times
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| Water level > 10.5 ft MSL | Close all watertight doors | <span class="val-alarm">2 hours</span> |
+| Water level > 11.5 ft MSL | Hot Standby in 6 hours, Cold Shutdown in 30 hours | 6 + 30 hrs |
+
+## 3/4.7.6 — Control Room Emergency Air Conditioning System (CREACS)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.6</div>
+The common CREACS* shall be OPERABLE with:<br>
+a. Two independent filtration trains (one from each unit): two fans, one cooling coil, one charcoal adsorber/HEPA filter array, return air isolation damper<br>
+b. All automatic dampers for pressurization/recirculation modes<br>
+c. Control room envelope (CRE) intact
+</div>
+
+*CREACS is a shared system with Salem Unit 1.*
+
+**Applicability:** ALL Modes and during movement of irradiated fuel assemblies
+
+**Actions (Modes 1-4):**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| One filtration train inoperable | Align for single-train operation; restore | <span class="val-alarm">4 hours</span>; <span class="val-alarm">30 days</span> |
+| Single-train with one fan/damper inoperable | Restore fan/damper | <span class="val-alarm">72 hours</span> |
+| CRE boundary inoperable | Implement mitigating actions; verify exposures within limits; restore | Immediately; 24 hrs; <span class="val-alarm">90 days</span> |
+| Unable to meet actions | Hot Standby in 6 hours, Cold Shutdown in 30 hours | 6 + 30 hrs |
+
+**Note:** CRE boundary may be opened intermittently under administrative control.
+
+## 3/4.7.7 — Auxiliary Building Ventilation System
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.7</div>
+The Auxiliary Building Ventilation System shall be OPERABLE.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+## 3/4.7.8 — Sealed Source Contamination
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.8</div>
+Each sealed source containing radioactive material with a half-life >30 days (excluding H-3) and in excess of 100 μCi shall have ≤ <span class="val-alarm">0.005 μCi</span> of removable contamination.
+</div>
+
+**Applicability:** At all times
+
+**Action:** With removable contamination exceeding limits, withdraw the source from use and either decontaminate or dispose.
+
+## 3/4.7.9 — Snubbers
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.9</div>
+All snubbers shall be OPERABLE. Snubbers excluded from this requirement are listed in the Snubber Inservice Inspection Program.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4 (for snubbers on safety-related systems)
 
 ---
 

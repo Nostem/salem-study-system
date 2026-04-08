@@ -224,6 +224,78 @@ Plant design requires all 4 RCS loops operating during Modes 1 and 2 for adequat
 
 <span class="hi-exam">PRESSURE BOUNDARY LEAKAGE of any magnitude requires immediate action because it indicates a potential failure of the RCS pressure boundary.</span> The 1 gpm unidentified leakage limit is well below the smallest leak that could propagate to a LOCA. The 150 gpd primary-to-secondary limit through any one SG minimizes radioactive contamination of the secondary system and limits accident dose consequences.
 
+### Chemistry (3/4.4.8)
+
+**DELETED** — Relocated from Technical Specifications.
+
+### Specific Activity (3/4.4.9)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.4.9</div>
+The specific activity of the primary coolant shall be limited to:<br>
+a. ≤ <span class="val-alarm">1.0 μCi/gram</span> DOSE EQUIVALENT I-131, and<br>
+b. ≤ <span class="val-alarm">600 μCi/gram</span> DOSE EQUIVALENT XE-133.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| DE I-131 > 1.0 μCi/gm | Verify DE I-131 ≤ 60 μCi/gm every 4 hours AND restore ≤ 1.0 μCi/gm | <span class="val-alarm">48 hours</span> |
+| DE XE-133 > 600 μCi/gm | Restore ≤ 600 μCi/gm | <span class="val-alarm">48 hours</span> |
+| Unable to restore | Hot Standby in 6 hours, Cold Shutdown in 30 hours | 6 + 30 hrs |
+
+**Note:** SR 4.4.9.1 not required in Mode 4; not required in Mode 3 until 24 hours after Tavg > 500°F.
+
+### Pressure/Temperature Limits (3/4.4.10)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.4.10.1 — RCS P/T Limits</div>
+RCS temperature and pressure (except the pressurizer) shall be limited in accordance with the PTLR with:<br>
+a. Maximum heatup rate per PTLR<br>
+b. Maximum cooldown rate per PTLR<br>
+c. Maximum temperature change per PTLR during hydrostatic testing above design pressure
+</div>
+
+**Applicability:** At all times
+
+**Action:** With limits exceeded, restore within <span class="val-trip">30 minutes</span>; perform engineering evaluation on structural integrity; if unacceptable, Hot Standby in 6 hours and reduce to <200°F and <500 psig within 30 hours.
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.4.10.2 — Pressurizer P/T Limits</div>
+Pressurizer temperature limited to:<br>
+a. Maximum heatup: <span class="val-alarm">100°F/hr</span><br>
+b. Maximum cooldown: <span class="val-alarm">200°F/hr</span><br>
+c. Maximum spray water temperature differential: <span class="val-alarm">320°F</span>
+</div>
+
+**Applicability:** At all times
+
+**Action:** With limits exceeded, restore within <span class="val-trip">30 minutes</span>; engineering evaluation; if unacceptable, Hot Standby in 6 hours and reduce PZR pressure to <500 psig within 30 hours.
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.4.10.3 — Overpressure Protection Systems (POPS / LTOP)</div>
+At least one of the following shall be OPERABLE:<br>
+a. Two POPS relief valves with lift setting per PTLR, or<br>
+b. RCS depressurized with an RCS vent ≥ <span class="hi">3.14 square inches</span>
+</div>
+
+**Applicability:** When any RCS cold leg temperature ≤ POPS enable temperature per PTLR (except when reactor vessel head is removed)
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| One POPS inoperable (Mode 4) | Restore OR depressurize and vent through ≥3.14 in² vent | <span class="val-alarm">7 days</span> then 8 hrs |
+| One POPS inoperable (Modes 5-6, head installed) | Restore OR depressurize and vent | <span class="val-alarm">24 hours</span> then 8 hrs |
+| Both POPS inoperable | Depressurize and vent through ≥3.14 in² vent | <span class="val-trip">8 hours</span> |
+
+### RCS Vents (3/4.4.11)
+
+**DELETED** — Relocated from Technical Specifications.
+
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-4-1.pdf" target="_blank">View Tech Spec PDF (Loops)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-3.pdf" target="_blank">View Tech Spec PDF (Safety Valves)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-5.pdf" target="_blank">View Tech Spec PDF (PORVs)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-7.pdf" target="_blank">View Tech Spec PDF (Leakage)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-4.pdf" target="_blank">View Bases PDF</a>

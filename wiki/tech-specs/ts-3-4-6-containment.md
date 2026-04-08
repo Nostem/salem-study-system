@@ -40,6 +40,54 @@ Primary containment internal pressure shall be maintained between <span class="v
 <span class="hi-exam">Containment internal pressure limits: -1.5 to +0.3 psig (Modes 1-4).</span> If pressure exceeds +0.3 psig, containment design limits could be exceeded during a DBA. The upper limit ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during the limiting pipe break (LOCA or steam line break). The lower limit ensures the containment structure is prevented from exceeding its design negative pressure differential of <span class="val-trip">3.5 psig</span> with respect to outside atmosphere. Restoration time is <span class="hi-exam">1 hour</span>.
 </div>
 
+### Containment Air Locks (3.6.1.3)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.1.3</div>
+Each containment air lock shall be OPERABLE with:<br>
+a. Both doors closed except during normal transit (then at least one door closed)<br>
+b. Overall air lock leakage rate per Containment Leakage Rate Testing Program
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| One air lock door inoperable | Verify OPERABLE door closed; lock closed | <span class="val-trip">1 hour</span>; then 24 hours |
+| Air lock interlock inoperable | Verify an OPERABLE door closed; lock closed | <span class="val-trip">1 hour</span>; then 24 hours |
+| Air lock inoperable (other reasons) | Evaluate overall containment leakage; verify one door closed; restore | Immediately; 1 hour; <span class="val-alarm">24 hours</span> |
+| Unable to meet actions | Hot Standby in 6 hours, Cold Shutdown in 30 hours | 6 + 30 hrs |
+
+**Notes:** Entry/exit permitted for repairs. Separate condition entry allowed for each air lock.
+
+### Containment Air Temperature (3.6.1.5)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.1.5</div>
+Primary containment average air temperature shall not exceed <span class="val-alarm">120°F</span>.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Action:** With average air temperature > 120°F, reduce to within limit within <span class="val-alarm">8 hours</span>, or Hot Standby in 6 hours and Cold Shutdown in 30 hours.
+
+### Containment Structural Integrity (3.6.1.6)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.6.1.6</div>
+The structural integrity of the containment shall be maintained at a level consistent with the acceptance criteria in SR 4.6.1.6.1.
+</div>
+
+**Applicability:** Modes 1, 2, 3, and 4
+
+**Action:** With structural integrity not conforming, restore within <span class="val-alarm">24 hours</span> or Hot Standby in 6 hours and Cold Shutdown in 30 hours.
+
+**SRs:**
+- 4.6.1.6.1 — Inspect exposed accessible interior/exterior surfaces and liner plate per Containment Leakage Rate Testing Program
+- 4.6.1.6.2 — Any abnormal degradation evaluated for reportability per 10CFR50.72/50.73
+
 ### Containment Leakage (3.6.1.2)
 
 <div class="callout callout-important">
@@ -116,6 +164,14 @@ Each containment isolation valve shall be OPERABLE.
 <div class="callout-label">Phase A vs Phase B Isolation</div>
 Phase A isolation valves actuate on Safety Injection signal ("T"). Phase B isolation valves actuate on Hi-Hi Containment Pressure (Containment Spray actuation signal, "P"). Containment purge valves are required to be closed and immobilized with control air isolated.
 </div>
+
+## 3/4.6.4 — Combustible Gas Control
+
+Pages 3/4 6-16 through 6-22 are intentionally blank. This section has been deleted/relocated from Technical Specifications.
+
+## 3/4.6.5 — Containment Structural Integrity (Visual Inspection)
+
+Covered under SR 4.6.1.6.1 above.
 
 ---
 
