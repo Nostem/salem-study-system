@@ -87,6 +87,8 @@ status: draft
 - [[EOP-FRHS-2 — Response to Steam Generator Overpressure]]
 - [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
 - [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
+- [[EOP-LOSC-1 — Loss of Secondary Coolant]]
+- [[EOP-LOPA-1 — Loss of All AC Power]]
 
 ## Abnormal Procedures
 - [[AB.LOOP-0001 — Loss of All Offsite Power]]
@@ -110,6 +112,12 @@ status: draft
 - [[AB.CR-0001 — Control Room Evacuation]]
 - [[AB.LOAD-0001 — Rapid Load Reduction]]
 - [[AB.ROD-0003 — Continuous Rod Motion]]
+- [[AB.CVC-0001 — Loss of Charging]]
+- [[AB.SW-0001 — Loss of SW Header Pressure]]
+- [[AB.STM-0001 — Excessive Steam Flow]]
+- [[AB.TRB-0001 — Main Turbine Abnormality]]
+- [[AB.SW-0003 — Service Water Bay Leak]]
+- [[AB.SSP-0001 — Station Shutdown Power]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]

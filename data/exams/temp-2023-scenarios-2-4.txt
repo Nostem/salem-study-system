@@ -1,0 +1,2800 @@
+============================================================
+SCENARIO 2 (Pages 319-359)
+============================================================
+
+--- PAGE 319 ---
+Form 3.3-1 Scenario Outline
+Facility: Salem Scenario #: 2
+Scenario Source: 20-01 ESG-2 Op. Test #: 21-01
+Examiners: Applicants/
+Operators:
+Initial Conditions: Salem Unit 2 is at 100% power MOL
+Turnover: The crew is directed to reduce power to 95% power at 10% per hour IAW S2.OP-IO.ZZ-0004 using
+boration, control rods and turbine load control in preparation for removing 21 Heater drain pump from service.
+The 21 Service Water pump is C/T for maintenance.
+Critical Tasks:
+1. Isolate faulted Steam Generator prior to exiting LOSC-1
+2. Terminate safety injection before transition out of TRIP-3
+Event Event
+Malf. No. Event Type*
+No. Description
+ATC(R) Load reduction to 95% at 10%/hr IAW IOP-4 for heater drain pump
+1 N/A BOP(R) removal from service
+CRS(N)
+ATC (I,MC) Pressurizer level control channel fails high
+2 PR0017A
+CRS (I,TS)
+ATC(N) 21 RCP standpipe level low
+3 N/A
+CRS(N)
+SW0215C BOP (C,MC) 23 SW pump trips and 26 SW pump fails to start.
+4
+SW0339F CRS (C,TS)
+23 Condensate pump trips
+5 CN0017 ALL(C)
+Steam leak inside containment
+6 MS0088Ar ALL(C)
+Steam leak worsens requiring Rx Trip & MSLI (CT-1 and CT-2)
+7 MS0088Ar ALL(M)
+RP0279A ATC(I,MC) Train initially selected for MSLI fails to manually actuate other train
+8 or B CRS(I) will actuate MSLI
+AB.CVC-1 → ARP → AB.SW-1 → AB.CN-1 → AB.LOAD-1
+ABs
+→AB.STM-1
+EOPs TRIP-1 → LOSC-1 → TRIP-3
+* (N)ormal, (R)eactivity, (I)nstrument, (C)omponent, (M)ajor, (TS)Tech Spec, (MC)Manual Control
+
+--- PAGE 320 ---
+I. OBJECTIVES
+A. Given the order or indications of a charging system malfunction, PERFORM actions as the
+nuclear control operator to RESPOND to the loss or malfunction of the charging system in
+accordance with the approved station procedures.
+B. Given indication of a loss or malfunction of the Charging system DIRECT corrective action for a
+Charging System malfunction in accordance with the approved station procedures.
+C. Given indication of a loss of a SW Pump, PERFORM actions as the nuclear control operator to
+RESPOND to the malfunction in accordance with approved station procedures.
+D. Given indication of a loss of a SW Pump, DIRECT corrective action for a SW System
+malfunction in accordance with the approved station procedures.
+E. Given indication of a loss of a Condensate Pump, PERFORM actions as the nuclear control
+operator to RESPOND to the malfunction in accordance with approved station procedures
+F. Given indication of a loss or malfunction of the Condensate system DIRECT corrective action
+for a Condensate System malfunction in accordance with the approved station procedures
+G. Given the order or indications of a reactor trip, PERFORM actions as the nuclear control
+operator to RESPOND to the reactor trip in accordance with the approved station procedures.
+H. Given indication of a reactor trip, DIRECT the response to the reactor trip in accordance with
+the approved station procedures
+I. Given the order or indications of a safety injection PERFORM actions as the nuclear control
+operator to RESPOND to the safety injection in accordance with the approved station
+procedures.
+J. Given indication of a safety injection DIRECT the response to the safety injection in accordance
+with the approved station procedures.
+K. Given the order or indications of a loss of secondary heat sink, perform actions as the nuclear
+control operator to RESPOND to the loss of heat sink in accordance with the approved station
+procedures.
+L. Given indication of a loss of secondary heat sink, DIRECT the response to the heat sink loss in
+accordance with the approved station procedures.
+M. During performance of emergency operating procedures, monitor the critical safety function
+status trees in accordance the EOP in effect.
+
+--- PAGE 321 ---
+II. MAJOR EVENTS
+1. PZR Level channel I fails high (2LT-459)
+2. 21 RCP standpipe level Low
+3. 23 SW Pump trips and 26 SW Pump fails to auto start
+4. 23 Condensate Pump trips
+5. 21 Steam Line break (inside containment)
+6. MSLI fails on first train actuated
+7. Isolate faulted SG
+8. Terminate SI
+III. SCENARIO SUMMARY
+A. The crew will receive the unit at 100% power MOL. 21 SW Pump is C/T for pump repack.
+B. The crew will perform a load reduction to 95% in preparation for removing 21 Heater Drain pump
+from service for planned maintenance.
+C. Following the down power the controlling PZR level channel will fail high. The crew will respond per
+S2.OP-AB.CVC-0001, Loss of Charging, and take manual control of charging to raise charging
+flow. The crew will select an operable control channel. The CRS will evaluate Tech Specs and
+enter 3.3.1.1 action 6.
+D. After Tech Specs have been evaluated 21 RCP standpipe level low will alarm, operators will take
+actions to makeup to the standpipe IAW S2.OP-AR.ZZ-0011, Control Console 2CC1 alarm
+response. Alarm will clear once actions are taken to align flow and complete the makeup to the
+standpipe.
+E. The 23 SW pump will trip and the standby SW pump in Auto (26 SW Pump) will fail to auto start.
+The crew will manually start 26 SW pump to restore SW header pressure. The CRS may enter
+S2.OP-AB.SW-0001, Loss of SW Header Pressure, but the only action is to start a SW pump. The
+CRS will evaluate Tech Specs with 21 SW pump C/T and the trip of 23 SW pump and enter TS
+3.7.4 for an inoperable SW loop.
+F. After Tech Specs are evaluated, the 23 condensate pump will trip. The CRS will enter S2.OP-
+AB.CN-0001, Main Feedwater/Condensate System Abnormality, and take actions to bypass the
+condensate polisher and initiate a turbine load reduction to 1080 MWe per Attachment 2. The crew
+performs load reduction IAW S2.OP-AB.LOAD-0001, Rapid Load Reduction.
+G. After the turbine load reduction is complete, there will be a steam leak inside containment on 21
+steamline upstream of the orifice. Operators will observe reactor power rising and containment
+pressure and temperatures begin to rise. The crew will diagnose a steam leak inside containment
+
+--- PAGE 322 ---
+and enter S2.OP-AB.STM-0001, Excessive steam flow. Actions will need to be taken to maintain
+power less than 75% limit in place from tripped condensate pump.
+H. Once actions have been discussed about an additional downpower then the larger leakrate will be
+entered requiring the unit to be tripped and MS isolation to be completed. The crew will trip the
+reactor and enter 2-EOP-TRIP-1, Reactor Trip or Safety Injection. The crew will initiate MSLI for
+faulted SG, the first train of main steam isolation selected will fail to actuate, the crew must actuate
+the other train.
+I. Following the MSLI, the crew will recognize that 21 SG is the faulted SG and isolate AFW flow by
+closing 21AF21 and 21AF11 [Critical Task #1, this includes a time critical action to isolate
+AFW flow to the faulted SG by closing the AF21 and AF11 ≤ 10 minutes)]. The crew will
+transition to 2-EOP-LOSC-1, Loss of Secondary Coolant.
+J. Once all actions are completed to isolate the faulted SG the crew will transition to 2-EOP-TRIP-3,
+Safety injection termination to terminate safety injection [Critical Task #2].
+K. In EOP-TRIP-3, Safety Injection Termination, the crew will terminate SI by stopping ECCS pumps,
+isolating BIT flow and placing normal letdown in service.
+L. The scenario may be terminated when the crew places normal letdown in service or at direction by
+Lead Examiner.
+
+--- PAGE 323 ---
+M. INITIAL CONDITIONS
+____ IC-241
+PREP FOR TRAINING (i.e. computer setpoints, procedures, bezel covers ,tagged equipment)
+Initial Description
+V C 1and VC4 C/T
+RCPs (SELF CHECK)
+R TB s (SELF CHECK)
+M S 167s (SELF CHECK)
+5 00 KV SWYD (SELF CHECK)
+S G FP Trip (SELF CHECK)
+2 3 CV PP (SELF CHECK)
+2 1 SW Pump C/T
+C om plete Attachment 2 “Simulator Ready-for-Training/Examination Checklist.”
+
+--- PAGE 324 ---
+Note: Tables with blue headings may be populated by external program, do not change column name without consulting Simulator Support group
+EVENT TRIGGERS:
+Initial ET # Description
+
+--- PAGE 325 ---
+EVENT ACTION: kaj02pnh //21WR62 21 RCP STANDPIPE SUPPLY
+1 COMMAND: DMF RC009A
+PURPOSE: <update as needed>
+EVENT ACTION: ka505ava //TRAIN "A" - LOOP 21 MAINSTEAM IS
+2 COMMAND: DOR ka705ava
+PURPOSE: <update as needed>
+EVENT ACTION: ka705ava //TRAIN "B" - LOOP 21 MAINSTEAM IS
+3 COMMAND: DOR ka505ava
+PURPOSE: <update as needed>
+EVENT ACTION: ka505dva //TRAIN "A" - LOOP 22 MAINSTEAM IS
+4 COMMAND: DOR ka705dva
+PURPOSE: <update as needed>
+EVENT ACTION: ka705dva //TRAIN "B" - LOOP 22 MAINSTEAM IS
+5 COMMAND: DOR ka505dva
+PURPOSE: <update as needed>
+EVENT ACTION: ka505hva //TRAIN "A" - LOOP 23 MAINSTEAM IS
+6 COMMAND: DOR ka705hva
+PURPOSE: <update as needed>
+EVENT ACTION: ka705hva //TRAIN "B" - LOOP 23 MAINSTEAM IS
+7 COMMAND: DOR ka505hva
+PURPOSE: <update as needed>
+EVENT ACTION: ka505lva //TRAIN "A" - LOOP 24 MAINSTEAM IS
+8 COMMAND: DOR ka705lva
+PURPOSE: <update as needed>
+EVENT ACTION: ka705lva //TRAIN "B" - LOOP 24 MAINSTEAM IS
+9 COMMAND: DOR ka505lva
+PURPOSE: <update as needed>
+EVENT ACTION: et_array(2).and.ET_array(3) //Event trigger
+10 COMMAND: DMF MS0092E
+PURPOSE: <update as needed>
+EVENT ACTION: et_array(4).and.et_array(5) //Event trigger
+11 COMMAND: DMF MS0092F
+PURPOSE: <update as needed>
+EVENT ACTION: et_array(6).and.et_array(7) //Event trigger
+12 COMMAND: DMF MS0092G
+PURPOSE: <update as needed>
+EVENT ACTION: et_array(8).and.et_array(9) //Event trigger
+13 COMMAND: DMF MS0092H
+PURPOSE: <update as needed>
+
+--- PAGE 326 ---
+MALFUNCTIONS:
+SELF- Description Delay Initial Ramp Trigger Severity
+CHECK Time Value Time
+______ 01 PR0017A PZR LEVEL CH I (LT459) FAILS H/L N/A N/A N/A RT-1 100
+RC009A 21 RC PUMP - #3 SEAL FAILS - w/
+______ 02 N/A N/A N/A RT-2 100
+DEGRADATION
+PRESS SW
+______ 03 SW0339F 26 SW PUMP- Press SW Fails H/L N/A N/A N/A N/A
+FAIL HI
+______ 04 SW0215C 23 SERVICE WATER PUMP TRIP N/A N/A N/A RT-3
+______ 05 CN0117C 23 CONDENSATE PUMP TRIP N/A N/A N/A RT-4
+MS0088Ar 21 Main Steam Line Leak Inside Cont
+______ 06 N/A N/A N/A RT-5 1
+BEFORE orifice
+______ 07 RP0279A AUTO MSLIS FAILS TO ACT, TRN A N/A N/A N/A N/A
+______ 08 RP0279B AUTO MSLIS FAILS TO ACT, TRN B N/A N/A N/A N/A
+______ 09 MS0092E 21MS167 FAILS OPEN N/A N/A N/A N/A
+______ 10 MS0092F 22MS167 FAILS OPEN N/A N/A N/A N/A
+______ 11 MS0092G 23MS167 FAILS OPEN N/A N/A N/A N/A
+______ 12 MS0092H 24MS167 FAILS OPEN N/A N/A N/A N/A
+REMOTES:
+SELF- Description Delay Initial Ramp Trigger Condition
+CHECK Time Value Time
+______ 01 SW32D 23 SW PUMP BKR CONTROL POWER 00:00:15 N/A N/A RT-9 OFF
+______ 02 SW31D 23 SW PUMP RACK OUT N/A N/A N/A RT-9 TAGGED
+______ 03 MS05A 21MS45 21 STM GEN STM SUP-23 AFP N/A 100 00:01:00 RT-11 0
+OVERRIDES:
+SELF- Description Delay Initial Ramp Trigger Condition/
+CHECK Time Value Time Severity
+CG01 F DI KCG01TC1 21MS167 21 SG STOP
+______ 01 N/A N/A N/A N/A OFF
+VALVE CLOSE
+CG02 F DI KCG02TC1 22MS167 22 SG STOP
+______ 02 N/A N/A N/A N/A OFF
+VALVE CLOSE
+CG03 F DI KCG03TC1 23MS167 23 SG STOP
+______ 03 N/A N/A N/A N/A OFF
+VALVE CLOSE
+CG04 F DI KCG04TC1 24MS167 24 SG STOP
+______ 04 N/A N/A N/A N/A OFF
+VALVE CLOSE
+______ 05 BD12 B DI KBD12DC1 21MS167 HYDRAULIC CLOSE N / A N/A N/A N/A OFF
+______ 06 BE12 B DI KBE12DC1 22MS167 HYDRAULIC CLOSE N /A N/A N/A N/A OFF
+______ 07 BM12 B DI KBM12DC1 23MS167 HYDRAULIC CLOSE N / A N/A N/A N/A OFF
+
+--- PAGE 327 ---
+______ 08 BN12 B DI KBN12DC1 24MS167 HYDRAULIC CLOSE N / A N/A N/A N/A OFF
+OTHER CONDITIONS:
+Description
+
+--- PAGE 328 ---
+SEQUENCE OF EVENTS
+a. State shift job assignments.
+b. Hold a shift briefing, detailing instruction to the shift: (provide crew members a copy of the shift turnover
+sheet).
+c. Inform the crew “The simulator is running. You may commence panel walkdowns at this time. SM please
+inform me when your crew is ready to assume the shift”.
+d. Allow sufficient time for panel walk-downs. When informed by the SM that the crew is ready to assume the
+shift, ensure the simulator is cleared of unauthorized personnel.
+
+--- PAGE 329 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+1. Load Reduction to Remove 21
+Heater Drain Pump from Service:
+Note: Crew will use reactivity Crew briefs reactivity plan to reduce load to 95%.
+plan and should determine
+approx. 85 gals of boron to be
+added
+RO will most likely use boration RO initiates a boration and/or inserts control rods.
+“hard card” Attachment 3 of • PRESS Make up mode STOP
+S2.OP-SO.CVC-0006 • ADJUST 2CV172 boric acid flow setpoint to
+desired value
+• SET boric acid flow register to desired
+gallons
+• PRESS Makeup control mode BORATE
+pushbutton
+• PRESS Makeup control mode START
+• ENSURE boric acid flow register indicates
+flow
+PO will most likely use Routine PO initiates a turbine load reduction to 95%.
+Load Reduction “hard card” • ENSURE Main Turb data display on Plant
+Attachment 3 of S2.OP-SO.TRB- computer
+0002 • ADJUST turbine ramp rate for TIP control to
+10%/hr
+• ADJUST setter to 89%
+• Select GO
+• ENSURE setter – actual and Reference
+displays are updating
+Proceed on to next event following RO monitors Tavg and control rods for proper
+load reduction or as directed by response.
+Lead Examiner.
+
+--- PAGE 330 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+2. Pressurizer Level CH 1 fails
+high:
+Simulator Operator: Insert RT-1
+at direction from Lead Examiner.
+PR0017A, PZR LEVEL CH I
+(LT459) fails H/L
+Value = 100
+RO reports unexpected alarms OHA E-4 PZR LVL HI,
+E-20, PZR HTR ON LVL HI.
+PO refers to 2CC1 ARP
+RO reports PZR Level Channel I has failed high.
+RO reports charging flow has lowered.
+RO places Master Flow Control in Manual and
+raises charging flow to restore PZR level to
+program.
+CRS enters S2.OP-AB.CVC-0001
+PO initiates Attachment 1 CAS.
+RO reports charging pump is running and no signs of
+cavitation.
+RO reports that a PZR level controlling channel has
+failed high.
+CRS directs RO to take manual control of charging
+
+--- PAGE 331 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+(if not already performed)
+RO selects operable Channel 3 for control and an
+operable Channel 2 or 3 for recorder.
+RO reports letdown in service.
+CRS directs PO to review S2.OP-RPS-0003 to remove
+the failed channel from service. (No action by PO)
+TS evaluation #1:
+CRS enters:
+• TS 3.3.1.1 action 6 (72 hours to place the
+channel in the tripped condition)
+Proceed to next event after Tech
+Specs has been evaluated or by
+direction from Lead Examiner.
+
+--- PAGE 332 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+3. 21 RCP standpipe level low
+Simulator Operator: Insert RT-2
+on direction from Lead Examiner.
+This will insert the following
+malfunction:
+RC009A 21 RC PUMP - #3 SEAL
+FAILS - w/ DEGRADATION
+Value = 100
+Crew reports unexpected console alarm, 21 RCP
+Standpipe level low.
+Simulator Operator: Verify ET-1 is Crew refers to alarm response and makes up to
+true when 21 WR62 is opened, this standpipe and monitors for leakage
+will delete MALF RC009A IAW S2.OP-AR.ZZ-0011.
+• RO VERIFIES Seal Water Leakoff alarm is
+clear
+• START 21 or 22 Primary Water Pump
+• OPEN 2WR80 PW to Contmt Stop Valve
+• OPEN 21WR62 Standpipe Supply Valve
+• LOG RCP standpipe Fill
+When low level clears and high level alarms:
+• STOP Primary Water Pump
+• CLOSE 2WR80 PW to Contmt Stop Valve
+• CLOSE 21WR62 Standpipe Supply Valve
+Crew will monitor parameters and possibly initiate a
+Reactor coolant leakrate surveillance procedure.
+Proceed to next event when
+direction by Lead Examiner.
+
+--- PAGE 333 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+4. 23 SW Pump trips and 26 SW
+fails to Auto start:
+Simulator Operator: Enter RT-3
+on direction from Lead Examiner.
+SW0215C, 23 SW pump trips
+SW0339F, 26 SW pressure
+switch fails high
+RO reports unexpected OHA alarms for:
+• B-13, 21 SW HDR PRESS LO
+• B-14, 22 SW HDR PRESS LO
+• B-15, TURB AREA SW HDR PRESS LO
+RO reports 23 SW Pump tripped and 26 SW Pump in
+Auto failed to start.
+RO starts 26 SW pump.
+RO reports low SW pressure alarms are cleared.
+Examiner’s Note: Crew does not
+have to enter S2.OP-AB.SW-0001
+since the only action that the AB
+requires is to start standby SW
+Pump.
+CRS enters S2.OP-AB.SW-0001, Loss of SW
+Header Pressure
+PO initiates Attachment 1 CAS
+
+--- PAGE 334 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+PO reports no indication of SW Bay leak.
+PO starts SW Pumps to maintain header pressure
+between 95-150 psi.
+PO reports all SW OHA alarms are cleared.
+PO reports no indication of leak or valve malfunction
+on the turbine header.
+Role Play: IF an operator is
+dispatched to investigate the trip of
+23 SW Pump, then report back in 2
+minutes the following: “the 4KV
+breaker for 23 SW Pump is open
+and no relay flags are up”, if
+dispatched to SW report no
+abnormalities locally at the pump
+after 4 minutes.
+Insert RT-9 to tag SW pump if
+requested
+TS evaluation #2:
+CRS enters:
+• TS 3.7.4 (72 hours). This is due to having 21
+and 23 SW Pumps inoperable in one bay
+resulting in only one operable SW loop (refer to
+S2.OP-SO.SW-0005 Attachment 2)
+Proceed to next event at Lead
+Examiner direction.
+
+--- PAGE 335 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+5. 23 Condensate Pump trips:
+Simulator Operator: Insert RT-4
+by direction from Lead Examiner.
+CN0117C, 23 condensate pump
+trips
+PO reports 23 Condensate Pump tripped.
+CRS enters S2.OP-AB.CN-0001, Main
+Feedwater/Condensate Abnormality.
+PO initiates Attachment 1 CAS
+PO reports SGFP did not trip
+PO reports 23 Condensate Pump tripped.
+Role Play: IF an operator is
+dispatched, then report the
+following after 1-2 minutes; “23
+Condensate Pump breaker is
+open and the overcurrent relay
+flag is up”.
+PO reports SGFP suction pressure is less than 320
+psig.
+PO opens 21-23 CN108’s (Polisher Bypass valves)
+PO reports 2CN47 is not open.
+
+--- PAGE 336 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+CRS evaluates plant conditions IAW Attachment 2
+section 4.0
+CRS determines that a load reduction to 85% Rx
+power at ≤ 5%/min is required.
+CRS brief load reduction and Reactivity plan.
+Boration should be approx. RO initiates boration IAW S2.OP-SO.CVC-0006,
+17gal/%power at a rate Boration Concentration Control.
+commensurate with selected • PRESS Make up mode STOP
+power reduction rate • ADJUST 2CV172 boric acid flow setpoint to
+desired value
+• SET boric acid flow register to desired gallons
+• PRESS Makeup control mode BORATE
+pushbutton
+• PRESS Makeup control mode START
+• ENSURE boric acid flow register indicates
+flow
+PO initiates load reduction using turbine load
+control IAW S2.OP-SO.TRB-0002, Turbine-
+Generator Shutdown Operations
+• ENSURE Main Turb data display on Plant
+computer
+• ADJUST turbine ramp rate for TIP control to
+desired %/minute
+• ADJUST setter to 85%
+• Select GO
+ENSURE setter – actual and Reference displays are
+updating
+CRS enters S2.OP-AB.LOAD-0001, Rapid Load
+Reduction.
+
+--- PAGE 337 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+PO initiates Attachment 1 CAS
+RO maintains Tavg on program IAW Attachment 3
+CRS directs WCC to transfer heating steam to Unit 1
+IAW SC.OP-SO.HS-0001.
+Proceed to next event after the load
+reduction is complete or at Lead
+Examiner’s direction.
+
+--- PAGE 338 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+6. 21 SG Steam Line Break
+(inside containment):
+Simulator Operator: Insert RT-5
+by direction from Lead Examiner.
+MS0088Ar 21 Main Steam Line
+Leak Inside Cont BEFORE
+orifice
+Value = 1
+RO reports unexpected alarms for C-38 CFCU LK
+DET HI, CONT PRESS HI, and then shortly after C-
+30 for CFCU LK DET HI-HI.
+PO determines no rise in CNTMT radiation and that
+leak is inside containment based on rising
+containment pressure.
+RO reports C-2 CNTMT SUMP PUMP START
+Evaluator’s Note: Around this
+time Cntmt Pressure is rising
+quickly and Rx power is slowly
+rising.
+CRS enters S2.OP.AB.STM-0001, Excessive
+Steam Flow.
+CRS directs initiation of Attachment 1 of S2.OP-
+AB.STM-0001.
+
+--- PAGE 339 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+PO verifies EHC system operating correctly, and
+MS10s and Steam Dumps are closed.
+Evaluator’s Note: It will be
+apparent quickly that a unit
+shutdown will not be performed
+before a Rx trip is required based
+on rising containment pressure.
+PO reports no SG Safety Valve is open or leaking
+RO reports Rx Power is not stable.
+RO reports normal cntmt radiation levels AND the
+following alarms and indications:
+ Rising Cntmt pressure
+ OHA C-38 CFCU LK DET HI
+ OHA C-30 CFCU Lk DET HI-HI
+ OHA C-2 CNTMT SUMP START
+RO places all CFCUs in SLOW speed
+RO reports steam leak in containment is not isolable
+CRS determines a Unit shutdown is required and
+plans rate and reactivity management strategy.
+RO calculates boration required.
+
+--- PAGE 340 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+7. Unisolable steam leak inside
+containment (Initiate Rx Trip,
+MSLI and SI):
+CRS determines need to implement CAS of
+AB.STM-1 based on CNTMT Pressure rising
+towards Auto SI (4 psig)
+RO Trips the Rx and confirms Rx is Tripped
+RO manually initiates MSLI.
+Simulator Operator: Once 21
+MS167 is closed then modify MALF
+MS0088Ar to 20%.
+Record time when steam leak is
+modified to steam break:
+Time:_____;________;______
+RO verifies steam leak is not isolated
+RO initiates SI.
+RO reports steam leak is on 21 SG.
+PO throttles AFW flow to no less than 22E4
+lbm/hr.
+
+--- PAGE 341 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+Critical Task # 1 (CT-17): Isolate
+feed and steam flow to faulted SG
+before transition out of EOP-LOSC-
+1, Loss of Secondary Coolant. This
+CT also includes a time critical
+action for isolating AFW feedflow to
+the ruptured SG by closing the
+respective AF21 and AF11 ≤ 10
+minutes.
+SAT_____ UNSAT_______
+This CT is comprised of 2 parts;
+isolate feed flow (Part 1) and then
+steam flow (Part 2) later in EOP-
+LOSC-1.
+Critical Task #1 Part 1 - PO closes 21AF21 and
+21AF11 to isolate faulted 21 SG.
+Record time AFW valves are
+closed:
+Time:_____:________:_______
+RO reports SEC loading is not complete for B vital
+bus, but that all available equipment started.
+PO reports 21 and 22 AFW pumps are operating.
+
+--- PAGE 342 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+RO reports 21 and 22 CA330s are closed.
+RO reports containment pressure has NOT remained
+less than 15 psig.
+PO reports main steam line isolation requirements
+were met and MSLI previously initiated.
+PO reports all 4KV vital busses are energized.
+RO reports CAV is in Accident Pressurized mode.
+RO reports correct switchgear room ventilation
+operation.
+RO reports 2 CCW pumps are running.
+RO reports both CCW HXs are in Auto.
+RO reports correct ECCS pump alignment and
+expected flows for RCS conditions.
+Examiner’s Note: PO should have
+lowered AFW flow to as close to
+22E4 lbm/hr as possible.
+PO reports AFW flow is >22E4 lbm/hr.
+RO reports all RCPs are stopped because of phase B
+actuation.
+RO reports Tavg is not stable and is rising.
+RO reports Tavg is trending to 547 F.
+
+--- PAGE 343 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+RO reports both PZR PORVs are closed and block
+valves are open.
+PO reports 21 SG pressure is lowering in an
+uncontrolled manner or completely depressurized.
+RO reports that MSLI was previously initiated.
+CRS transitions to 2-EOP-LOSC-1, Loss of
+Secondary Coolant.
+RO reports MSLI has been initiated.
+PO reports all valves in Table A are closed.
+PO reports 21 SG pressure is dropping in an
+uncontrolled manner.
+PO reports that all SGs pressures are NOT dropping in
+an uncontrolled manner OR completely depressurized.
+Critical Task #1 - PO closes or verifies closed the
+following valves: 21BF13, 21BF19, 21BF40, 21MS7,
+21MS10, 21MS18, 21MS167, and 21GB4 [Critical
+Task #2, Part 2 complete]
+
+--- PAGE 344 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+Critical Task #1, Part 2 (CT-17):
+Isolate feed and steam flow to
+faulted SG before transition out of
+EOP-LOSC-1, Loss of Secondary
+Coolant.
+SAT_____ UNSAT_______
+PO reports that 21 SG is faulted.
+PO reports that both 21 and 23 SGs are NOT faulted.
+CRS dispatches operator to close 21MS45.
+Simulator Operator: Insert RT-11
+to close 21MS45.
+MS05A 21 STM GEN SUP-23 AFP
+Final = 0
+Ramp = 1 min
+RO resets Phase A.
+RO opens 21 and 22 CA330s.
+RO resets SG sample isolation bypass.
+RO opens 21 thru 24 SS94’s.
+CRS directs Chemistry to sample 21-24 SGs for
+activity.
+
+--- PAGE 345 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+PO reports all radiation monitors in Table B are
+Normal.
+PO reports no SG sample radiation results are
+available.
+RO reports RCS subcooling is > 0 F.
+PO reports that total AFW flow is > 22E4 lbm/hr
+RO reports that RCS pressure is stable or rising.
+RO reports that PZR level is > 11% (19% adverse).
+
+--- PAGE 346 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+8. SI Termination EOP-TRIP-3:
+CRS transitions to EOP-TRIP-3, SI Termination.
+RO resets SI & SEC, Phase A, and Phase B
+Critical Task-2, (CT-48):
+Terminate ECCS flow before
+transition out of EOP-TRIP-3.
+SAT______ UNSAT______
+Shaded steps are required to
+satisfy CT
+RO Stops all but one Charging Pump [Critical
+Task-2, Part 1]
+Critical Task-2, Part 1 (CT-48):
+Secure all but 1 charging Pump
+before transition out of EOP-TRIP-3
+SAT______ UNSAT______
+Shaded steps are required to
+satisfy CT
+RO reports RCS pressure is stable or rising.
+RO reports Charging pump suction is aligned to
+RWST.
+
+--- PAGE 347 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+RO opens 2CV139 and 2CV140
+Critical Task-2, Part 2 (CT-48):
+Isolate the BIT by closing 2SJ4 and
+2SJ5 or 2SJ12 and 2SJ13
+SAT______ UNSAT______
+Shaded steps are required to
+satisfy CT
+RO closes 2SJ4, 2SJ5, 2SJ12 and 2SJ13 [Critical
+Task-2, Part 2]
+RO closes 2CV71
+RO opens 2CV68 and 2CV69
+RO adjusts 2CV55 to maintain PZR level and RCP
+Seal Injection
+RO reports PZR level is stable or rising
+RO reports RCS pressure is stable or rising
+RO reports RCS pressure is > 1540 psig (1660 psig
+adverse)
+RO stops 21 and 22 SI pumps [Critical Task 2, Part
+3]
+
+--- PAGE 348 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+Critical Task-2, Part 3 (CT-48):
+Secure SI Pumps before transition
+out of EOP-TRIP-3
+SAT______ UNSAT______
+Shaded steps are required to
+satisfy CT
+RO reports both RHR pump suction aligned to RWST.
+RO stops 21 and 22 RHR pumps [Critical Task 2,
+Part 4]
+Critical Task-2, Part 4 (CT-48):
+Secure RHR Pumps before
+transition out of EOP-TRIP-3
+SAT______ UNSAT______
+Shaded steps are required to
+satisfy CT
+Scenario may be terminated
+when CT-2 is completed or by
+direction from Lead Examiner.
+
+--- PAGE 349 ---
+N. SCENARIO REFERENCES
+A. Alarm Response Procedures (Various)
+B. Technical Specifications
+C. Emergency Plan (ECG)
+D. OP-AA-101-111-1003, Use of Procedures
+E. 2-EOP-TRIP-1, Rx Trip or Safety Injection
+F. 2-EOP-LOSC-1, Loss of Secondary Coolant
+G. 2-EOP-TRIP-3, SI Termination
+H. S2.OP-AB.SW-0001, Loss of SW Header Pressure
+I. S2.OP-AB.CVC-0001, Loss of Charging
+J. S2.OP-SO.CN-0001, Main Feedwater/Condensate System Abnormality
+K. S2.OP-AB.LOAD-0001, Rapid Load Reduction
+L. S2.OP-IO.ZZ-0004, Power Operation
+M. S2.OP-AR.ZZ-0011, Control Console 2CC1
+
+--- PAGE 350 ---
+MODE: 1 POWER: 100% RCS BORON: 802 MWe 1220
+SHUTDOWN SAFETY SYSTEM STATUS (5, 6 & DEFUELED):
+NA
+REACTIVITY PARAMETERS
+MOST LIMITING LCO AND DATE/TIME OF EXPIRATION:
+EVOLUTIONS/PROCEDURES/SURVEILLANCES IN PROGRESS:
+1. Load reduction to 95% to support removal of 21 Heater Drain Pump
+ABNORMAL PLANT CONFIGURATIONS:
+CONTROL ROOM:
+Unit 1 and Hope Creek at 100% power.
+No penalty minutes in the last 24 hrs.
+PRIMARY:
+SECONDARY:
+ Polisher in service
+ Blowdown 35K per loop to 23 Condenser
+RADWASTE:
+No discharges in progress
+CIRCULATING WATER/SERVICE WATER:
+ 21 SW Pump C/T for pump repack.
+
+--- PAGE 351 ---
+1. Verify simulator is in “TRAIN” Load
+2. Simulator is in RUN
+3. Overhead Annunciator Horns ON
+4. All required computer terminals in operation
+5. Simulator clocks synchronized
+6. All tagged equipment properly secured and documented
+7. TSAS Status Board up-to-date
+8. Shift manning sheet available
+9. Procedures in progress open and signed-off to proper step
+10. All OHA lamps operating (OHA Test) and burned out lamps replaced
+11. All printers have adequate paper AND functional ribbon
+12. Required procedures clean
+13. Multiple color procedure pens available
+14. Required keys available
+15. Simulator cleared of unauthorized material/personnel
+16. All charts advanced to clean traces and chart recorders are on.
+17. Rod step counters correct (channel check) and reset as necessary
+18. Exam security set for simulator
+19. Ensure a current RCS Leak Rate Worksheet is placed by Aux Alarm Typewriter
+with Baseline Data filled out
+20. Recording Media available (if applicable)
+21. Ensure ECG classification is correct
+22. Reference verification performed with required documents available
+23. Verify phones disconnected from plant after drill.
+24. Ensure ECG related paperwork is marked “For Training Use Only”.
+
+--- PAGE 352 ---
+In reviewing each proposed CT, the examination team assesses the task to ensure, that it is
+essential to safety. A task is essential to safety if, in the judgment of the examination team, the
+improper performance or omission of this task by a licensee will result in direct adverse
+consequences or in significant degradation in the mitigative capability of the plant.
+The examination team determines if an automatically actuated plant system would have been
+required to mitigate the consequences of an individual’s incorrect performance. If incorrect
+performance of a task by an individual necessitates the crew taking compensatory action that
+would complicate the event mitigation strategy, the task is safety significant.
+I. Examples of CTs involving essential safety actions include those for which operation or
+correct performance prevents...
+•
+degradation of any barrier to fission product release
+•
+degraded emergency core cooling system (ECCS) or emergency power capacity
+•
+a violation of a safety limit
+•
+a violation of the facility license condition
+•
+incorrect reactivity control (such as failure to initiate Emergency Boration or Standby
+Liquid Control, or manually insert control rods)
+•
+a significant reduction of safety margin beyond that irreparably introduced by the
+scenario
+II. Examples of CTs involving essential safety actions include those for which a crew
+demonstrates the ability to...
+•
+effectively direct or manipulate engineered safety feature (ESF) controls that would
+prevent any condition described in the previous paragraph.
+•
+recognize a failure or an incorrect automatic actuation of an ESF system or component.
+•
+take one or more actions that would prevent a challenge to plant safety.
+•
+prevent inappropriate actions that create a challenge to plant safety (such as an
+unintentional Reactor Protection System (RPS) or ESF actuation.
+
+--- PAGE 353 ---
+SCENARIO IDENTIFIER: 21-01 NRC Scenario 2 REVIEWER: K. Hantho
+Initials Qualitative Attributes
+K 1. The scenario has clearly stated objectives in the scenario.
+K 2. The initial conditions are realistic, in that some equipment and/or instrumentation
+may be out of service, but it does not cue crew into expected events.
+K 3. The scenario consists mostly of related events.
+K 4. Each event description consists of:
+• the point in the scenario when it is to be initiated
+• the malfunction(s) that are entered to initiate the event
+• the symptoms/cues that will be visible to the crew
+• the expected operator actions (by shift position)
+• the event termination point
+K 5. No more than one non-mechanistic failure (e.g., pipe break) is incorporated into
+the scenario without a credible preceding incident such as a seismic event.
+K 6. The events are valid with regard to physics and thermodynamics.
+K 7. Sequencing/timing of events is reasonable, and allows for the examination team to
+obtain complete evaluation results commensurate with the scenario objectives.
+K 8. The simulator modeling is not altered.
+K 9. All crew competencies can be evaluated.
+K 10. The scenario has been validated.
+N/A 11. If the sampling plan indicates that the scenario was used for training during the
+requalification cycle, evaluate the need to modify or replace the scenario.
+K 12. ESG-PSA Evaluation Form is completed for the scenario at the applicable facility.
+
+--- PAGE 354 ---
+21-01 NRC Scenario 2
+Critical Tasks:
+CT-1 (CT-17)
+Isolate the faulted SG before transition out of LOSC-1 (this CT includes time critical operator action time
+for isolating AFW flow to fauled SG ≤ 10 minutes per OP-SA-102-106-F1)
+Safety Significance
+Failure to isolate a faulted SG that can be isolated causes challenges to CSFs beyond those irreparably
+introduced by the postulated conditions. Also, depending upon the plant conditions, it could constitute a
+failure by the crew to “demonstrate the ability to recognize a failure or an incorrect automatic actuation of
+an ESF system or component.”
+Failure to isolate a faulted SG can result in challenges to the following CSFs:
+• Integrity
+• Subcriticality
+• Containment (if the break is inside containment)
+Cues:
+• Both of the following:
+− Indication of uncontrolled depressurization of multiple SGs
+AND
+− Valve position or flow rate indication that:
+Main steamline isolation has not actuated
+o
+Feedline isolation has not actuated
+o
+OR
+• Both of the following:
+− Steam pressure and flow rate indications that make it possible to identify a single SG as
+faulted
+AND
+− Valve position and flow rate indication that AFW continues to be delivered to the
+faulted SG
+Measurable Performance Indicator
+Manipulation of controls as required to isolate the faulted SG
+• MSIVs indicate closed
+• Indication of feedline isolation
+− Feedwater control valves indicate closed (respective AF21 and AF11 are closed ≤ 10
+minutes)
+− Feedline isolation valves indicate closed
+− Main feed pumps indicate tripped
+• Indication that AFW flow to the faulted SG is stopped
+− AFW flow control valves for faulted SG indicate closed
+Feedback
+• Any depressurization of intact SGs stops
+• Steam flow indication from faulted SG decreases to zero
+• RCS cooldown stops
+• Main feedwater flow rate indication of zero
+
+--- PAGE 355 ---
+• AFW flow rate indication to faulted SG of zero
+CT-2 (CT-48)
+Critical Task
+Terminate ECCS flow before transition out of TRIP-3
+Safety Significance
+Failure to terminate ECCS flow when SI termination criteria are met causes the PRZR to fill and RCS
+pressure to increase. Additionally, the unnecessary continuation of ECCS flow needlessly aggravates
+the thermal stress on the reactor vessel. This constitutes an incorrect performance that causes a
+“significant reduction of safety margin beyond that irreparably introduced by the scenario.”
+Cues:
+• Indication and/or annunciation of an extreme (RED path) or severe (ORANGE path) challenge to the
+integrity CSF
+AND
+• Indication and/or annunciation of reactor trip and SI
+AND
+• Indication and/or annunciation that SI termination criteria are met
+Measurable Performance Indicator
+Manipulation of controls as necessary to terminate ECCS flow
+• Breaker position lamps for all but one charging/SI pump indicate open
+AND
+• Breaker position lamps for all high-head ECCS pumps indicate open
+AND
+• Breaker position lamps for all low-head ECCS pumps indicate open
+AND
+• Valve position lamps for BIT isolation valves indicate closed
+Feedback
+• Indication of charging/SI ECCS flow rate through BIT decreasing or zero
+• Indication of high-head ECCS flow rate decreasing or zero
+• Indication of low-head ECCS flow rate decreasing or zero
+
+--- PAGE 356 ---
+ATTACHMENT 6
+ESG-PSA RELATIONSHIP EVALUATION
+EVENTS LEADING TO CORE DAMAGE
+Y/N Event Y/N Event
+N TRANSIENTS with PCS Unavailable N Loss of Service Water
+N Steam Generator Tube Rupture N Loss of CCW
+N Loss of Offsite Power N Loss of Control Air
+N Loss of Switchgear and Pen Area Ventilation N Station Black Out
+N LOCA
+COMPONENT/TRAIN/SYSTEM UNAVAILABILITY THAT INCREASES CORE DAMAGE
+FREQUENCY
+COMPONENT, SYSTEM, OR
+Y/N COMPONENT, SYSTEM, OR TRAIN Y/N
+TRAIN
+N Containment Sump Strainers N Gas Turbine
+N SSWS Valves to Turbine Generator Area N Any Diesel Generator
+N RHR Suction Line valves from Hot Leg N Auxiliary Feed Pump
+N CVCS Letdown line Control and Isolation Valves N SBO Air Compressor
+OPERATOR ACTIONS IMPORTANT IN PREVENTING CORE DAMAGE
+Y/N OPERATOR ACTION
+N Restore AC power during SBO
+N Connect to gas turbine
+N Trip Reactor and RCPs after loss of component cooling system
+N Re-align RHR system for re-circulation
+N Un-isolate the available CCW Heat Exchanger
+N Isolate the CVCS letdown path and transfer charging suction to RWST
+N Cooldown the RCS and depressurize the system
+N Isolate the affected Steam Generator that has the tube rupture(s)
+N Early depressurize the RCS
+N Initiate feed and bleed
+
+--- PAGE 357 ---
+SIMULATOR
+EXAMINATION SCENARIO GUIDE
+SCENARIO TITLE: NRC-3 [AR.ZZ-11, AB.CVC-1, AB.PZR-1, AB.TRB-
+1, TRIP-1, FRSM-1 using BAT pumps, TRIP-2]
+SCENARIO NUMBER: 21-01 NRC ESG-3
+EFFECTIVE DATE: See Approval Below
+EXPECTED DURATION: 60 minutes
+REVISION NUMBER: 0
+PROGRAM: L.O. REQUAL
+X INITIAL LICENSE
+STA
+OTHER
+Revision Summary:
+ Rev. 0
+PREPARED BY: K. Hantho 9-16-22
+Lead Regulatory Exam Author Date
+APPROVED BY: M. Wadusky
+Operations Training Manager or Date
+designee
+APPROVED BY: M. Winkelspecht
+Facility Representative Date
+
+--- PAGE 358 ---
+SCAN OF SIGNED SCENARIO COVER SHEET
+
+--- PAGE 359 ---
+Form 3.3-1 Scenario Outline
+Facility: Salem Scenario #: 3
+Scenario Source: New Op. Test #: 21-01
+Examiners: Applicants/
+Operators:
+Initial Conditions: Unit 2 is at 93% power MOL
+Turnover: The crew is directed to raise power to 98% power at 10% per hour IAW S2.OP-IO.ZZ-0004 using
+dilution, control rods and turbine load control. The 23 Charging pump is C/T for maintenance.
+Critical Tasks:
+1. Insert negative reactivity into the core by inserting control rods and/or performing emergency boration
+and dispatching operators to locally trip the reactor and/or the turbine
+2. Close pressurizer PORV block valve prior to step 7 of EOP-TRIP-2
+Event Event
+Malf. No. Event Type*
+No. Description
+ATC(R) Raise load to 98% at 10%/hr IAW IOP-4.
+1 N/A BOP(R)
+CRS(N)
+ATC (C,MC) 21 CCW Pump trips and 23 CCW fails to Auto start
+2 CC0172A
+CRS (C)
+ATC(C) 21 Charging Pump trips
+3 CV0208A
+CRS(C,TS)
+ATC(I,MC) PZR Pressure Controlling Channel fails HIGH
+4 PR0016A
+CRS(I,TS)
+Main Turbine high vibrations
+5 TU0083A All(M)
+RP058 Rx fails to trip by all means from the control room
+RP0059A ATC(C)
+6 RP0059B BOP(C)
+RP0060A CRS(C)
+RP0060B
+ATC(I,MC) Rods speed controller fails to 8 spm (CT-1)
+7 RD0061
+CRS(I)
+ATC(C,MC) 2PR2 PZR PORV fails open following exiting EOP-FRSM-1(CT-2)
+8 VL0298
+CRS(C)
+ABs ARP → AB.CVC-1 → AB.PZR-1 → AB.TURB-1
+EOPs TRIP-1 → FRSM using BAT pumps → TRIP-2
+* (N)ormal, (R)eactivity, (I)nstrument, (C)omponent, (M)ajor, (TS)Tech Spec, (MC)Manual Control
+============================================================
+SCENARIO 3 (Pages 359-392)
+============================================================
+
+--- PAGE 359 ---
+Form 3.3-1 Scenario Outline
+Facility: Salem Scenario #: 3
+Scenario Source: New Op. Test #: 21-01
+Examiners: Applicants/
+Operators:
+Initial Conditions: Unit 2 is at 93% power MOL
+Turnover: The crew is directed to raise power to 98% power at 10% per hour IAW S2.OP-IO.ZZ-0004 using
+dilution, control rods and turbine load control. The 23 Charging pump is C/T for maintenance.
+Critical Tasks:
+1. Insert negative reactivity into the core by inserting control rods and/or performing emergency boration
+and dispatching operators to locally trip the reactor and/or the turbine
+2. Close pressurizer PORV block valve prior to step 7 of EOP-TRIP-2
+Event Event
+Malf. No. Event Type*
+No. Description
+ATC(R) Raise load to 98% at 10%/hr IAW IOP-4.
+1 N/A BOP(R)
+CRS(N)
+ATC (C,MC) 21 CCW Pump trips and 23 CCW fails to Auto start
+2 CC0172A
+CRS (C)
+ATC(C) 21 Charging Pump trips
+3 CV0208A
+CRS(C,TS)
+ATC(I,MC) PZR Pressure Controlling Channel fails HIGH
+4 PR0016A
+CRS(I,TS)
+Main Turbine high vibrations
+5 TU0083A All(M)
+RP058 Rx fails to trip by all means from the control room
+RP0059A ATC(C)
+6 RP0059B BOP(C)
+RP0060A CRS(C)
+RP0060B
+ATC(I,MC) Rods speed controller fails to 8 spm (CT-1)
+7 RD0061
+CRS(I)
+ATC(C,MC) 2PR2 PZR PORV fails open following exiting EOP-FRSM-1(CT-2)
+8 VL0298
+CRS(C)
+ABs ARP → AB.CVC-1 → AB.PZR-1 → AB.TURB-1
+EOPs TRIP-1 → FRSM using BAT pumps → TRIP-2
+* (N)ormal, (R)eactivity, (I)nstrument, (C)omponent, (M)ajor, (TS)Tech Spec, (MC)Manual Control
+
+--- PAGE 360 ---
+I. OBJECTIVES
+A. Given the order, the crew will commence a power ascension IAW S2.OP-IO.ZZ-0004.
+B. Given the indication of a CCW component or system malfunction, perform actions to RESPOND
+to the loss of a CCW pump in accordance with S2.OP-AB.CC-0001.
+C. Given the order or indications of a charging system malfunction, perform actions as the nuclear
+control operator to RESPOND to the loss or malfunction of the charging system in accordance
+with the approved station procedures.
+D. Given indication of a loss or malfunction of the Charging system DIRECT corrective action for a
+Charging System malfunction in accordance with the approved station procedures.
+E. Given a failure of PZR pressure malfunction, the crew will take corrective action, IAW S2.OP-
+AB.PZR-0001.
+F. Given the order or indications of a PZR pressure system malfunction, perform actions as the
+nuclear control operator to RESPOND to the malfunction in accordance with the approved
+station procedures.
+G. Given indication of a PZR pressure problem, system malfunction DIRECT the response to the
+malfunction in accordance with the approved station procedures.
+H. Given the order or indications of a main turbine or generator malfunction, perform actions as the
+nuclear control operator to RESPOND to the malfunction in accordance with the approved
+station procedures.
+I. Given indications of a main turbine or generator malfunction, DIRECT the response to the
+malfunction in accordance with the approved station procedures.
+J. Given the order or indications of an anticipated transient without trip (ATWT), complete actions
+as the nuclear control operator to PERFORM the immediate response to the ATWT in
+accordance with the approved station procedures.
+K. Given indication of an anticipated transient without trip (ATWT), DIRECT the immediate
+response to the ATWT in accordance with the approved station procedures.
+L. Given the order or indications of a reactor trip, perform actions as the nuclear control operator to
+RESPOND to the reactor trip in accordance with the approved station procedures.
+M. Given indication of a reactor trip, DIRECT the response to the reactor trip in accordance with the
+approved station procedures.
+N. During performance of emergency operating procedures, monitor the critical safety function
+status trees in accordance the EOP in effect.
+
+--- PAGE 361 ---
+II. MAJOR EVENTS
+1. Power ascension to 100% at 10%/hour.
+2. 21CCW pump will trip requiring manual start of 23 CCW pump
+3. 21 Charging pump trips
+4. Pressurizer pressure channel 1 fails high
+5. Main turbine rising vibrations
+6. Reactor fails to TRIP by all means in the control room
+7. 2PR2 pressurizer PORV fails open
+III. SCENARIO SUMMARY
+1. The crew will continue the power ascension to raise reactor power to 98% at 10% per hour. The
+reactivity plan calls for performing a dilution first, before raising turbine load. After the crew
+commences the power ascension, Event #2 will be entered.
+2. 21 CCW pump will trip. The crew will receive multiple console alarms for pump trip and note
+backflashing stop pushbutton for 21 CCW pump. The crew will take actions as directed in the Alarm
+Response Procedure to start 23 CCW pump. Once the 23 CCW pump is started, Event #3 can be
+entered.
+3. 21 charging pump trips. The crew will respond IAW S2.OP-AB.CVC-0001, Loss of Charging, and start
+the only remaining charging pump. The crew will then restore letdown flow. The CRS will evaluate
+Tech Specs and enter 3.5.2.a action a, 3.1.2.2.b, and 3.1.2.4. After Tech Specs have been evaluated,
+Event #4 will be entered.
+4. The controlling PZR pressure channel will fail high. The crew will respond per S2.OP-AB.PZR-0001,
+Pressurizer Pressure malfunction, and take manual control of the master pressure controller. The
+crew will select an operable control channel. The CRS will evaluate Tech Specs and enter 3.3.1.1
+action 6, and 3.3.2.1.b action 19, 3.4.5 action b and 3.2.5.b. After Tech Specs have been evaluated,
+Event #5 and 6 will be entered.
+5. Main turbine vibrations will begin to rise and the crew will enter S2.OP-AB.TRB-0001, Main Turbine
+abnormality. The crew will recognize the degrading conditions and recommend a downpower to
+remove the turbine from service.
+6. Main turbine vibrations will continue to rise requiring the operators to trip the turbine and reactor based
+on power level greater than 49%. The crew will perform the trip using guidance in the abnormal
+procedure and enter 2-EOP-TRIP-1, Reactor Trip or safety injection. The Reactor will fail to trip using
+the trip switches and reactor trip breaker Bezel pushbuttons requiring entry into 2-EOP-FRSM 1,
+Response to nuclear power generation-ATWS.
+7. While in 2-EOP-TRIP-1, Reactor Trip or safety injection actions will be required to insert negative
+reactivity and rods will not step in automatically. The crew will be required to take control rods to
+manual and begin inserting negative reactivity using the Rod control manual pushbutton for rod
+insertion. Once actions have been completed in 2-EOP-FRSM 1, Response to nuclear power
+
+--- PAGE 362 ---
+generation-ATWS to establish a boration CT#1 then the reactor trip breakers will be open locally by the
+dispatched operator. Event #8 will be entered once the transition is made back to 2-EOP-TRIP-2,
+Reactor Trip response.
+8. During EOP-TRIP-2 Reactor trip response, the crew will recognize that 2PR2 is open and attempt to
+close and when it will not close the crew will close the 2PR7 block valve CT#2.
+
+--- PAGE 363 ---
+A. INITIAL CONDITIONS
+____ IC-242
+PREP FOR TRAINING (i.e. computer setpoints, procedures, bezel covers ,tagged equipment)
+Initial Description
+____ V C1and VC4 C/T
+RCPs (SELF CHECK)
+____
+____ R TBs (SELF CHECK)
+____ M S167s (SELF CHECK)
+____ 5 00 KV SWYD (SELF CHECK)
+____ S GFP Trip (SELF CHECK)
+____ 2 1 CV PP (SELF CHECK)
+____ 2 3 CV Pump C/T
+Suggested Protected Equipment:
+____
+ None
+____ C omplete Attachment 2 “Simulator Ready-for-Training/Examination Checklist.”
+
+--- PAGE 364 ---
+Note: Tables with blue headings may be populated by external program, do not change column name without consulting Simulator Support group
+EVENT TRIGGERS:
+Initial ET # Description
+EVENT ACTION: PCRTIME > 5200
+2 COMMAND:
+PURPOSE: <update as needed>
+EVENT ACTION: KB440TTD //REACTOR TRIP BREAKER "A"-TRIP
+3 COMMAND:
+PURPOSE: <update as needed>
+MALFUNCTIONS:
+SELF- Description Delay Initial Ramp Trigger Severity
+CHECK Time Value Time
+CC0361C 23 COMPONENT COOLING PUMP Fails to
+______ 01 N/A N/A N/A N/A
+Start on Low Pressure
+______ 02 CC0172A 21 COMPONENT COOLING PUMP TRIP N/A N/A N/A RT-1
+______ 03 CV0208A 21 CHARGING PUMP TRIP N/A N/A N/A RT-2
+______ 04 TU0083A MN TURBINE HI VIBRATION - BRG # N/A 0 00:05:00 RT-4 10
+RP0060A FAILURE OF TRAIN "A" RX TRIP BREAKER
+______ 05 N/A N/A N/A N/A
+TO TRIP
+RP0060B FAILURE OF TRAIN "B" RX TRIP BREAKER
+______ 06 N/A N/A N/A N/A
+TO TRIP
+______ 07 RP0058 FAILURE OF AUTOMATIC RX TRIP N/A N/A N/A N/A
+______ 08 RP0059A FAILURE OF MANUAL RX TRIP N/A N/A N/A N/A
+______ 09 RP0059B FAILURE OF MANUAL SI/RX TRIP N/A N/A N/A N/A
+______ 10 RD0061 ROD SPEED CONTROL PROGRAM FAILS N/A N/A N/A ET-3 8
+______ 11 VL0298 2PR2 Fails to Position ( 0-100% ) N/A N/A N/A RT-5 100
+______ 12 PR0016A PZR PRESS CH I (PT455) FAILS H/L N/A 0 00:00:10 RT-3 2500
+REMOTES:
+SELF- Description Delay Initial Ramp Trigger Condition
+CHECK Time Value Time
+______ 01 PR34D PORV STOP VALVE 2PR6 TAGGED N/A N/A N/A RT-13 TAGGED
+______ 02 RP07D 21 MG SET MOTOR BKR N/A N/A N/A RT-10 STOP
+______ 03 RP08D 22 MG SET MOTOR BKR N/A N/A N/A RT-10 STOP
+______ 04 RP09D 21 MG SET GEN OUTPUT BKR N/A N/A N/A RT-10 TRIPPED
+
+--- PAGE 365 ---
+______ 05 RP10D 22 MG SET GEN OUTPUT BKR N/A N/A N/A RT-10 TRIPPED
+______ 06 RP18D Open MAIN RX TRIP BKR A N/A N/A N/A RT-9 TRIP OPEN
+______ 07 RP19D Open MAIN RX TRIP BKR B N/A N/A N/A RT-9 TRIP OPEN
+OVERRIDES:
+SELF- Description Delay Initial Ramp Trigger Condition/
+CHECK Time Value Time Severity
+C310 F DI KC310TN0 2E6D PRESSURE HEATER BUS
+______ 01 N/A N/A N/A N/A OFF
+480V-OPEN
+C510 F DI KC510TN0 2G6D PRESSURE HEATER BUS
+______ 02 N/A N/A N/A N/A OFF
+480V-OPEN
+OTHER CONDITIONS:
+Description
+
+--- PAGE 366 ---
+SEQUENCE OF EVENTS
+a. State shift job assignments.
+b. Hold a shift briefing, detailing instruction to the shift: (provide crew members a copy of the shift
+turnover sheet).
+c. Inform the crew “The simulator is running. You may commence panel walkdowns at this time.
+SM please inform me when your crew is ready to assume the shift”.
+d. Allow sufficient time for panel walk-downs. When informed by the SM that the crew is ready to
+assume the shift, ensure the simulator is cleared of unauthorized personnel.
+
+--- PAGE 367 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+1. Power Ascension to 98%
+CRS briefs crew on power ascension to 98% at
+10%/hour IAW S2.OP-IO.ZZ-0004, Power Operation.
+RO briefs reactivity plan for power ascension.
+PO briefs turbine load control plan.
+Turnover reactivity plan calls for 1000 RO initiates dilution IAW S2.OP-SO.CVC-0006 and
+gal dilution to be performed for Load uses control rods.
+increase • PRESS Make up mode STOP
+• ADJUST 2CV179 primary water flow setpoint to
+RO will most likely use boration “hard desired value
+card” Attachment 3 of S2.OP-SO.CVC- • SET primary water flow register to desired
+0006 and select Alternate Dilute gallons
+• PRESS Makeup control mode DILUTE or
+Alternate Dilute pushbutton
+• PRESS Makeup control mode START
+• ENSURE 2CV172 Boric Acid Flow closes
+• ENSURE Primary Water flow register indicates
+flow
+
+--- PAGE 368 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+PO initiates turbine load control IAW S2.OP-SO.TRB-
+0001, Turbine Generator Startup Operation.
+• ADJUST turbine ramp rate for TIP control to
+10%/hr
+• ADJUST setter to 98%
+• Select GO
+• ENSURE setter – actual and Reference displays
+are updating
+RO monitors Tavg and control rods for proper response.
+Proceed to next event by direction from
+Lead Examiner.
+
+--- PAGE 369 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+2. 21 CCW pump trips, 23 CCW pump
+fails to Auto start
+Simulator Operator: Insert RT-1 at the
+direction from Lead Evaluator.
+CC0172A, 21 CCW pump trip
+RO reports unexpected console alarms for 21 CC HDR
+Pressure Lo and RCP Thermal Barrier Discharge Flow
+Lo.
+RO reports 21 CCW pump tripped and the standby pump
+failed to Auto start.
+CRS enters S2.OP-AB.CC-0001.
+Evaluator’s Note: The crew can also
+enter the console ARP procedure and take
+actions to start the standby CCW pump.
+RO places 23 CCW in Manual and starts 23 CCW
+pump.
+RO reports Discharge Flow Lo is cleared.
+Proceed to next event at Lead Examiner’s
+direction.
+
+--- PAGE 370 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+3. 21 Charging pump trip
+Simulator Operator: Insert RT-2 on
+direction from Lead Evaluator.
+MALF: CV0208A 21 CHARGING PUMP
+TRIP
+RO reports 21 charging pump trip.
+RO reports letdown is isolated as expected.
+CRS enters S2.OP-AB.CVC-0001, Loss of Charging.
+PO initiates AB.CVC-1 CAS.
+CRS initiates S2.OP-AB.RCP-0001 from CAS item 4.0.
+(No action will be performed in AB other than monitoring
+RCP parameters.)
+RO reports No charging pumps are running.
+RO reports no indication of cavitation prior to 21
+charging pump trip.
+RO reports letdown is isolated.
+RO reports 21 Charging pump tripped.
+RO reports 22 Charging pump is available.
+RO verifies RCP seal inlet temps <225°F
+RO closes 2CV55
+
+--- PAGE 371 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+RO Starts 22 Charging Pump
+RO adjusts 2CV55 to desired flow and insures RCP
+seal injection is 6-12 gpm
+RO ensures open 2CV7
+Role Play: If dispatched by crew then
+report back after 2-3 minutes that 21 CVpp
+breaker is tripped and nothing abnormal
+noted at the pump or the breaker.
+RO opens 2CV2 and 2CV277 and places in Auto.
+RO adjusts charging flow to 85-90 gpm
+RO opens one letdown orifice and maintains letdown
+pressure < 300 psig by adjusting 2CV18 in manual.
+RO places 2CV18 in Auto when one orifice valve is in
+service.
+RO reports PZR level can be maintained stable or rising,
+and returns 2CV55 to auto when PZR level is on
+program.
+TS evaluation #1:
+CRS enters TS 3.5.2.a act a (72 hours) 3.1.2.4 (72
+hours) and 3.1.2.2 (72 hours).
+Proceed to next event after Tech Specs
+has been evaluated or by direction from
+Lead Examiner.
+
+--- PAGE 372 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+4. PZR Pressure Channel 1 Fails High
+Simulator Operator: Insert RT-3 on
+direction from Lead Evaluator.
+MALF: PR0016A, PZR PRESS CH I
+FAILS H/L
+Severity: 2500
+Ramp: 10 seconds
+RO reports unexpected OHA alarms D-8 RC Press HI,
+and E-42 2PR1 ½ Trip.
+RO determines actual pressure is not high and reports
+spray valves open and heaters off, and recommends
+placing Master Pressure Controller in manual.
+CRS directs RO to place Master Pressure Controller
+(MPC) in manual.
+RO places MPC to Manual and lowers demand
+(increase pressure) to close sprays and energize
+PZR heaters.
+CRS enters S2.OP-AB.PZR-0001, Pressurizer
+Pressure Malfunction.
+CRS directs initiation of Att. 1 CAS.
+CRS gives band for control of PZR pressure.
+RO reports PZR Press Channel I failed high.
+
+--- PAGE 373 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+RO selects Channel III for control.
+RO matches MPC demand to current pressure and
+returns Master Pressure Controller to AUTO.
+RO closes 2PR6 to comply with Tech Specs.
+Evaluator’s Note: The requirement to shut
+2PR6 and deenergize it is within one hour
+of the PZR Pressure Channel I instrument
+failure IAW Tech Specs.
+CRS directs WCC to remove control power from
+2PR6.
+Simulator Operator: Insert RT-13
+2 minutes after being directed to remove
+power from 2PR6
+PR34D PORV Stop Valve 2PR6
+Condition: Tagged
+CRS directs PO to initiate removing failed channel from
+service and contact I&C for support IAW S2.OP-
+SO.RPS-0003.
+PO checks that tripping associated bistables will not
+result in an ESF or RPS actuation.
+Evaluator’s Note: Crew may wait for I&C
+response before performing any actions in
+S2.OP-SO.RPS-0003.
+PO verifies that Channel III is selected for Master
+Pressure Control.
+
+--- PAGE 374 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+PO selects PZR Pressure recorder to channel other
+than I.
+TS evaluation #1:
+CRS enters LCOs 3.3.1.1 Action 6 (72 hours),
+3.3.2.1.b Action 19* (72 hours), 3.4.5.b (1 hour), and
+3.2.5.b DNB (2 hours).
+Proceed to next event after Tech Specs
+has been evaluated or by direction from
+Lead Examiner.
+
+--- PAGE 375 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+5. Main turbine high vibrations
+Simulator Operator: Insert RT-4 when
+directed by lead examiner.
+Evaluators Note: OHA G-35 TSI trouble
+will alarm with high vibration approx. 3
+minutes after malfunction is entered.
+PO will announce unexpected alarm G-35 TSI Trouble
+and dispatch secondary operator to evaluate
+PO will check vibrations on plant computer and note that
+vibrations have risen and continue to rise
+CRS will hold brief to discuss limits and requirements to
+trip the turbine when > 9 Mils on any bearing
+CRS may direct a downpower to reduce the vibrations
+Vibrations will continue to rise and
+reach the turbine trip required setpoint
+of > 9 mils
+CRS will direct reactor trip and turbine trip when
+vibrations continue to rise and are rising above the trip
+criteria.
+
+--- PAGE 376 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+6. Reactor fails to trip by all means from
+the control room
+RO attempts to trip Rx and it fails to trip
+Crew announces ATWT
+Simulator operator: Ensure ET-3 is true
+when RO attempts to open A Rx trip
+breaker. This will insert MALF RD0061
+ROD SPEED CONTROL PROGRAM
+FAILS and fail the auto rod speed insertion
+rate to 8 steps per minute.
+RO attempts to trip using Both Rx trip switches and Rx
+trip breaker bezels
+RO recommends entering EOP-FRSM-1
+CRS enters EOP-FRSM-1, Response to Nuclear
+Power Generation.
+Evaluator note: If RO allows rods to insert
+in auto the speed will be failed to 8 steps
+per minute, should recognize failure and
+place in manual and insert rods.
+RO initiates manual rod insertion. [This action also
+satisfies CT-1]
+The crew dispatches NEO to locally open the Reactor
+Trip Breakers and M-G Set breakers
+
+--- PAGE 377 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+PO reports PZR heater bus breakers will not open.
+PO trips the Main Turbine.
+PO starts 21 and 22 AFW pumps.
+PO reports three S/G’s greater than 14%
+PO reports total AFW flow.
+RO reports immediate actions of EOP-TRIP-1 and
+FRSM-1 are complete.
+RO ensures 22 Charging pump is running. (21 CV is
+C/T).
+RO reports SI has not actuated.
+RO starts both boric acid pumps in fast speed.
+RO opens 2CV175 Rapid Boration Valve
+RO closes 21 and 22CV160s
+RO reports flow is indicated on Rapid Borate flowmeter.
+RO places 2CV55 or Master flow controller in manual
+and verifies flow from charging pump is greater than 87
+gpm
+
+--- PAGE 378 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+Critical Task-1 (CT-52): Insert negative
+reactivity into to the core by at least one of
+the following methods, and dispatch
+operators to locally trip the reactor and/or
+the turbine:
+• De-energize RDMG sets
+• Insert control rods
+• Establish Emergency Boration flow
+to the RCS
+SAT UNSAT_____
+Locally Open Rx Trip breakers:
+Simulator Operator: Insert RT-9 to open
+both RTBs breakers when directed by lead
+evaluator. Timeframe from being
+dispatched may need to be delayed to
+ensure the evaluators have time evaluate
+completion of Critical task-1(CT-52) by the
+crew
+NOTIFY control room when RTBs are
+open.
+Simulator Operator: Insert RT-10. To
+open the Rod Drive MG set motor and
+generator breakers.
+
+--- PAGE 379 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+RO reports PZR pressure is less than 2335 psig.
+RO reports 2VC5 and 2VC6 are closed.
+RO reports RTBs and bypass breakers are open.
+Evaluator’s Note: The crew will continue
+in FRSM-1 but should recognize that the
+RTBs are now open and report PRNI < 5%
+and IR SUR negative (step 7 CAS) and
+then GO TO step 16 to exit procedure.
+PO reports all turbine stop valves are closed.
+RO reports PRNIs indicate < 5%.
+RO reports IRNI SUR is negative.
+CRS GOES TO Step 16.
+CRS directs boration to continue to obtain Adequate
+SDM
+CRS returns to procedure in effect, EOP-TRIP-1.
+CRS transitions to EOP-TRIP-2
+Proceed to next event after CRS has
+transitioned to EOP-TRIP-2, RO has
+acknowledged or silenced alarms and RCS
+pressure has recovered to >2100 psig or
+as directed by lead evaluator
+
+--- PAGE 380 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT Comment
+LOG
+7. PZR PORV (2PR2) fails open:
+Simulator Operator: Insert RT-5 at
+direction from Lead Evaluator.
+MALF: VL0298 2PR2 fails to position (0-
+100%)
+Final Value: 100
+RO reports unexpected OHA for 2PR1/2 NOT CLSD.
+RO reports PZR pressure is not stable or trending to
+2235 psig.
+RO reports PZR pressure is not > 2235 psig.
+RO reports PZR pressure lowering, and identifies 2PR2
+failed open.
+RO reports 2PR2 will NOT close in manual.
+Critical Task-2 (CT-10): Close the block
+valve upstream of the stuck open PZR
+PORV.
+SAT_____ UNSAT_____
+RO closes PZR PORV block valve 2PR7. [Critical
+Task-2]
+The scenario may be terminated after
+the crew has Completed CT-2 or by
+direction from Lead Examiner.
+
+--- PAGE 382 ---
+B. SCENARIO REFERENCES
+A. Alarm Response Procedures (Various)
+B. Technical Specifications
+C. Emergency Plan (ECG)
+D. OP-AA-101-111-1003, Use of Procedures
+E. S2.OP-IO.ZZ-0004, Power Operation
+F. S2.OP-AB.CVC-0001, Loss of Charging
+G. S2.OP-AB.CN-0001, Main Feedwater/Condensate System Abnormality
+H. S2.OP-AB.RCP-0001, RCP Abnormality
+I. S2.OP-AR.ZZ-0011, 2CC1 Alarm Response Procedure
+J. S2.OP-AR.ZZ-0013, 2CC2 Alarm Response Procedure
+K. 2-EOP-TRIP-1, Reactor Trip or Safety Injection
+L. 2-EOP-FRHS-1, Response to Loss of Secondary Heat Sink
+
+--- PAGE 383 ---
+MODE: 1 POWER: 90% RCS BORON: 750 MWe 1090
+SHUTDOWN SAFETY SYSTEM STATUS (5, 6 & DEFUELED): N/A
+REACTIVITY PARAMETERS
+• Rx Plan: To raise Rx power to 98% in preparation for calorimetric at 10%/hour add 1000
+gallons of water along with withdrawing control rods to maintain Tavg on program. Reactor
+Engineering directs the crew to start a dilution first. Fuel is conditioned no rod withdrawal
+limitations apply.
+MOST LIMITING LCO AND DATE/TIME OF EXPIRATION:
+• None
+EVOLUTIONS/PROCEDURES/SURVEILLANCES IN PROGRESS:
+• Continue power ascension to 98% at 10%/hour IAW S2.OP-IO.ZZ-0004, Power Operation
+• Engineering is monitoring BF19s vibrations during startup
+• .
+ABNORMAL PLANT CONFIGURATIONS:
+CONTROL ROOM:
+Unit 1 and Hope Creek at 100% power.
+No penalty minutes in the last 24 hrs.
+PRIMARY:
+• 23 CV Pump C/T for lube.
+SECONDARY:
+• Blowdown 35K per loop to 23 condenser / flashtank
+• Polisher in service
+RADWASTE:
+No discharges in progress
+CIRCULATING WATER/SERVICE WATER:
+None
+
+--- PAGE 384 ---
+1. Verify simulator is in “TRAIN” Load
+2. Simulator is in RUN
+3. Overhead Annunciator Horns ON
+4. All required computer terminals in operation
+5. Simulator clocks synchronized
+6. All tagged equipment properly secured and documented
+7. TSAS Status Board up-to-date
+8. Shift manning sheet available
+9. Procedures in progress open and signed-off to proper step
+10. All OHA lamps operating (OHA Test) and burned out lamps replaced
+11. Required chart recorders advanced and ON (proper paper installed)
+12. All printers have adequate paper AND functional ribbon
+13. Required procedures clean
+14. Multiple color procedure pens available
+15. Required keys available
+16. Simulator cleared of unauthorized material/personnel
+17. All charts advanced to clean traces and chart recorders are on.
+18. Rod step counters correct (channel check) and reset as necessary
+19. Exam security set for simulator
+20. Ensure a current RCS Leak Rate Worksheet is placed by Aux Alarm Typewriter
+with Baseline Data filled out
+21. Shift logs available if required
+22. Recording Media available (if applicable)
+23. Ensure ECG classification is correct
+24. Reference verification performed with required documents available
+25. Verify phones disconnected from plant after drill.
+26. Verify EGC paperwork is marked “Training Use Only” and is current revision.
+27. Ensure sufficient copies of ECG paperwork are available.
+
+--- PAGE 385 ---
+In reviewing each proposed CT, the examination team assesses the task to ensure, that it is
+essential to safety. A task is essential to safety if, in the judgment of the examination team, the
+improper performance or omission of this task by a licensee will result in direct adverse
+consequences or in significant degradation in the mitigative capability of the plant.
+The examination team determines if an automatically actuated plant system would have been
+required to mitigate the consequences of an individual’s incorrect performance. If incorrect
+performance of a task by an individual necessitates the crew taking compensatory action that
+would complicate the event mitigation strategy, the task is safety significant.
+I. Examples of CTs involving essential safety actions include those for which operation or
+correct performance prevents...
+•
+degradation of any barrier to fission product release
+•
+degraded emergency core cooling system (ECCS) or emergency power capacity
+•
+a violation of a safety limit
+•
+a violation of the facility license condition
+•
+incorrect reactivity control (such as failure to initiate Emergency Boration or Standby
+Liquid Control, or manually insert control rods)
+•
+a significant reduction of safety margin beyond that irreparably introduced by the
+scenario
+II. Examples of CTs involving essential safety actions include those for which a crew
+demonstrates the ability to...
+•
+effectively direct or manipulate engineered safety feature (ESF) controls that would
+prevent any condition described in the previous paragraph.
+•
+recognize a failure or an incorrect automatic actuation of an ESF system or component.
+•
+take one or more actions that would prevent a challenge to plant safety.
+•
+prevent inappropriate actions that create a challenge to plant safety (such as an
+unintentional Reactor Protection System (RPS) or ESF actuation.
+
+--- PAGE 386 ---
+SCENARIO IDENTIFIER: 21-01 NRC Scenario #3 REVIEWER: K. Hantho
+Initials Qualitative Attributes
+KH 1. The scenario has clearly stated objectives in the scenario.
+KH 2. The initial conditions are realistic, in that some equipment and/or instrumentation
+may be out of service, but it does not cue crew into expected events.
+KH 3. The scenario consists mostly of related events.
+KH 4. Each event description consists of:
+• the point in the scenario when it is to be initiated
+• the malfunction(s) that are entered to initiate the event
+• the symptoms/cues that will be visible to the crew
+• the expected operator actions (by shift position)
+• the event termination point
+KH 5. No more than one non-mechanistic failure (e.g., pipe break) is incorporated into
+the scenario without a credible preceding incident such as a seismic event.
+KH 6. The events are valid with regard to physics and thermodynamics.
+KH 7. Sequencing/timing of events is reasonable, and allows for the examination team to
+obtain complete evaluation results commensurate with the scenario objectives.
+KH 8. The simulator modeling is not altered.
+KH 9. All crew competencies can be evaluated.
+KH 10. The scenario has been validated.
+NA 11. If the sampling plan indicates that the scenario was used for training during the
+requalification cycle, evaluate the need to modify or replace the scenario.
+KH 12. ESG-PSA Evaluation Form is completed for the scenario at the applicable facility.
+
+--- PAGE 387 ---
+ATTACHMENT 5
+ESG CRITICAL TASKS
+21-01 NRC Scenario 3
+CT-1 (CT-52)
+Critical Task
+Insert negative reactivity into the core by at least one of the following methods, and dispatch operators to locally
+trip the reactor and/or the turbine:
+• De-energize the control rod drive MG sets
+• Insert control rods
+• Establish emergency boration flow to the RCS
+Safety Significance
+Failure to insert negative reactivity, under the postulated plant conditions, results in an unnecessary
+situation in which the reactor remains critical or returns to a critical condition. Performance of the
+critical task would make the reactor subcritical and provide sufficient shutdown margin to prevent (or
+at least minimize the power excursion associated with) any subsequent return to criticality.
+Failure to insert negative reactivity constitutes misoperation or incorrect crew performance which fails
+to prevent “incorrect reactivity control (such as failure to initiate emergency boration… or manually
+insert control rods).”
+Cues:
+• Indication of ATWS
+AND
+• Indication that the reactor is not tripped and that a manual reactor trip is not effective
+Measurable Performance Indicator
+Manipulation of controls in the control room as required to initiate the insertion of negative reactivity into the core
+• For scenarios in which it is possible for the crew to de-energize the rod drive MG sets from the control
+room:
+− Circuit breaker position indication lamps show the appropriate breakers to be open
+− Individual rod position indication system shows control rods to be on the bottom
+• For scenarios in which it is possible for the crew to insert control rods:
+− Group and individual rod position indication systems show control rods moving inward
+− Control rod banks sequentially reach core bottom
+• For scenarios in which it is possible for the crew to initiate emergency boration
+− Valve position indication that the emergency boration flow path is established
+− Indication that the appropriate pump(s) are running
+− Flow rate indication of emergency boration
+Feedback
+• Indication of a negative SUR on the intermediate range of the excore NIS
+• Indication of less than 5% power on the power range of the excore NIS
+
+--- PAGE 388 ---
+CT-2 (CT-10)
+Critical Task
+Close the block MOV upstream of the stuck open PRZR PORV by completion of the first step in the
+ERG network that directs the crew to close the block MOV
+Safety Significance
+Closing the block MOV under the postulated plant conditions constitutes a task that “is essential to
+safety,” because “its improper performance or omission by an operator will result in direct adverse
+consequences or significant degradation in the mitigative capability of the plant.” In particular, the
+crew has failed to prevent “degradation of any barrier to fission product release.” In this case, the
+RCS fission product barrier can be restored to full integrity simply by closing the block MOV.
+Therefore, failure to close the MOV also represents a failure by the crew to “take one or more actions
+that would prevent a challenge to plant safety.”
+Degradation of the RCS fission product barrier is not initiated by operator action. However, the crew’s
+failure to close the block MOV results in unnecessary continuation of the degraded condition of the
+RCS barrier.
+Cues:
+• Valve position indication and/or annunciation that the PRZR PORV is open, even after attempts to close
+it manually from the control room
+AND
+• Indication and/or annunciation of decreasing RCS pressure
+AND
+• Indication and/or annunciation consistent with the discharge of PRZR fluid to the PRT
+− PRT temperature, level, pressure
+− Tailpipe RTDs and/or acoustic monitors
+AND
+• Valve position indication that the block MOV upstream of the stuck open PRZR PORV is Open
+Measurable Performance Indicator
+Manipulation of controls as required to close the block MOV for the stuck open PRZR PORV
+• Valve position indication that the block MOV upstream of the stuck open PRZR PORV is
+Closed
+Feedback
+Valve position indication that the block MOV upstream of the stuck open PRZR PORV is closed
+
+--- PAGE 389 ---
+ATTACHMENT 6
+ESG-PSA RELATIONSHIP EVALUATION
+EVENTS LEADING TO CORE DAMAGE
+Y/N Event Y/N Event
+N TRANSIENTS with PCS Unavailable N Loss of Service Water
+N Steam Generator Tube Rupture N Loss of CCW
+N Loss of Offsite Power N Loss of Control Air
+N Loss of Switchgear and Pen Area Ventilation N Station Black Out
+N LOCA
+COMPONENT/TRAIN/SYSTEM UNAVAILABILITY THAT INCREASES CORE DAMAGE
+FREQUENCY
+COMPONENT, SYSTEM, OR
+Y/N COMPONENT, SYSTEM, OR TRAIN Y/N
+TRAIN
+N Containment Sump Strainers N Gas Turbine
+N SSWS Valves to Turbine Generator Area N Any Diesel Generator
+N RHR Suction Line valves from Hot Leg N Auxiliary Feed Pump
+N CVCS Letdown line Control and Isolation Valves N SBO Air Compressor
+OPERATOR ACTIONS IMPORTANT IN PREVENTING CORE DAMAGE
+Y/N OPERATOR ACTION
+N Restore AC power during SBO
+N Connect to gas turbine
+N Trip Reactor and RCPs after loss of component cooling system
+N Re-align RHR system for re-circulation
+N Un-isolate the available CCW Heat Exchanger
+N Isolate the CVCS letdown path and transfer charging suction to RWST
+N Cooldown the RCS and depressurize the system
+N Isolate the affected Steam Generator that has the tube rupture(s)
+N Early depressurize the RCS
+N Initiate feed and bleed
+
+--- PAGE 390 ---
+SIMULATOR
+EXAMINATION SCENARIO GUIDE
+SCENARIO TITLE: NRC-4 [IOP-3, AR.ZZ-3, AB.CVC-1, AB.SW-3,
+LOPA-1]
+SCENARIO NUMBER: 21-01 NRC ESG-4
+EFFECTIVE DATE: See Approval Dates
+EXPECTED DURATION: 70 minutes
+REVISION NUMBER: 05
+PROGRAM: L.O. REQUAL
+X INITIAL LICENSE
+STA
+OTHER
+Revision Summary:
+Rev. 04 (last used 19-01 NRC) Used for 20-01 NRC exam. Modified to include
+malfunctions not used on the previous two NRC exams which include; 23A CW traveling
+screen high DP, 21 CFCU failure to start, PZR spray valve 2PS3 fails to close during
+depressurization.
+Rev. 05 Modified for use in 21-01 NRC exam.
+PREPARED BY: K. Hantho 9-21-22
+Lead Regulatory Exam Author Date
+APPROVED BY: M. Wadusky 1/19/23
+Operations Training Manager Date
+APPROVED BY: M. Winkelspecht 1/19/23
+Facility Representative Date
+
+--- PAGE 391 ---
+SCAN OF SIGNED SCENARIO COVER SHEET
+
+--- PAGE 392 ---
+Form 3.3-1 Scenario Outline
+Facility: Salem Scenario #: 4
+Scenario Source: 20-01 ESG-4 Op. Test #: 21-01
+Examiners: Applicants/
+Operators:
+Initial Conditions: Salem Unit 2 is at 2% power BOL; 21 SGFP in service
+Turnover: The crew is directed to continue power ascension to 10% reactor power IAW S2.OP-IO.ZZ-0003
+using control rods, steam dumps, and turbine load control.
+Critical Tasks:
+1. Establish 220,000 lbm/hr AFW flow before steam generator dryout occurs (WR ≤ 11%) during SBO
+2. Depressurize the intact SG(s) such that a maximum of 100°F per hour cooldown rate is established and
+SG pressure(s) does not go below 310 psig
+Event Event
+Malf. No. Event Type*
+No. Description
+ATC(R) Continue power ascension to 10% IAW IOP-3 and enter MODE 1.
+1 N/A BOP(R)
+CRS(N)
+ATC (I) Containment pressure channel fails high
+2 VC0311A
+CRS (I,TS)
+ATC(C,MC) Charging Master flow controller fails low
+3 CV0035
+CRS(C)
+BOP(C) # 2 SW bay leak
+4 SW0216A
+CRS(I,TS)
+Loss of offsite power
+5 EL0134 All(M)
+EL0144 ATC(C) Loss of all AC power(CT-2)
+6 EL0145 BOP(C)
+EL0163 CRS(C)
+BOP(I,MC) 23 AFW pump fails to start(CT-1)
+7 AF0353C
+CRS(I)
+ABs IOP-3 → ARP → AB.CVC-1 → AB.SW-2
+EOPs LOPA-1
+* (N)ormal, (R)eactivity, (I)nstrument, (C)omponent, (M)ajor, (TS)Tech Spec, (MC)Manual Control
+============================================================
+SCENARIO 4 (Pages 392-425)
+============================================================
+
+--- PAGE 392 ---
+Form 3.3-1 Scenario Outline
+Facility: Salem Scenario #: 4
+Scenario Source: 20-01 ESG-4 Op. Test #: 21-01
+Examiners: Applicants/
+Operators:
+Initial Conditions: Salem Unit 2 is at 2% power BOL; 21 SGFP in service
+Turnover: The crew is directed to continue power ascension to 10% reactor power IAW S2.OP-IO.ZZ-0003
+using control rods, steam dumps, and turbine load control.
+Critical Tasks:
+1. Establish 220,000 lbm/hr AFW flow before steam generator dryout occurs (WR ≤ 11%) during SBO
+2. Depressurize the intact SG(s) such that a maximum of 100°F per hour cooldown rate is established and
+SG pressure(s) does not go below 310 psig
+Event Event
+Malf. No. Event Type*
+No. Description
+ATC(R) Continue power ascension to 10% IAW IOP-3 and enter MODE 1.
+1 N/A BOP(R)
+CRS(N)
+ATC (I) Containment pressure channel fails high
+2 VC0311A
+CRS (I,TS)
+ATC(C,MC) Charging Master flow controller fails low
+3 CV0035
+CRS(C)
+BOP(C) # 2 SW bay leak
+4 SW0216A
+CRS(I,TS)
+Loss of offsite power
+5 EL0134 All(M)
+EL0144 ATC(C) Loss of all AC power(CT-2)
+6 EL0145 BOP(C)
+EL0163 CRS(C)
+BOP(I,MC) 23 AFW pump fails to start(CT-1)
+7 AF0353C
+CRS(I)
+ABs IOP-3 → ARP → AB.CVC-1 → AB.SW-2
+EOPs LOPA-1
+* (N)ormal, (R)eactivity, (I)nstrument, (C)omponent, (M)ajor, (TS)Tech Spec, (MC)Manual Control
+
+--- PAGE 393 ---
+I. OBJECTIVES
+1. Given the order, perform actions to raise reactor power IAW S2.OP-IO.ZZ-0003, Hot Standby
+to Minimum Load.
+2. Given the order or indications of a Containment Pressure Channel malfunction, perform actions
+as the nuclear control operator to RESPOND to the malfunction in accordance with the
+approved station procedures.
+3. Given the order or indications of a charging system malfunction, perform actions as the nuclear
+control operator to RESPOND to the malfunction in accordance with the approved station
+procedures.
+4. Given the order or indications of a charging system malfunction, DIRECT the response to the
+malfunction in accordance with the approved station procedures.
+5. Given the unit at power and a leak of a Service Water Bay, take corrective action IAW AB.SW-
+0003.
+6. Given the order or indications of a SW Bay leak, perform actions as the nuclear control
+operator to RESPOND to the malfunction, IAW approved station procedures.
+7. Given the order or indications of a SW Bay leak, DIRECT the response to the malfunction IAW
+approved station procedures.
+8. Given the order or indications of a reactor trip, perform actions as the nuclear control operator
+to RESPOND to the reactor trip in accordance with the approved station procedures.
+9. Given indication of a reactor trip, DIRECT the response to the reactor trip in accordance with
+the approved station procedures.
+10. Given the order or indications of a loss of all AC power, complete actions as the nuclear control
+operator to PERFORM the immediate response in accordance with the approved station
+procedures.
+11. Given the order with the immediate response to a loss of all AC accident completed and no
+safety injection actuated or required, perform actions as the nuclear control operator to
+RECOVER from the loss of AC in accordance with the approved station procedures.
+12. Given indication of a loss of all AC power, DIRECT the immediate response in accordance with
+the approved station procedures.
+13. Given the plant with the immediate response completed for a loss of all AC power which did not
+result in a required safety injection, DIRECT the recovery of the loss of AC in accordance with
+the approved station procedures.
+
+--- PAGE 394 ---
+II. MAJOR EVENTS
+1. Power Ascension
+2. Containment pressure channel 1 fails high
+3. Charging master flow controller failure requiring manual control of charging
+4. #2 SW bay leak
+5. Loss of Offsite power
+6. Loss of all AC Power
+7. Failure of 23 AFW pump to auto start
+III. SCENARIO SUMMARY
+1. The crew will take the watch with the unit stable at 3% reactor power during a plant startup,
+BOL. 21 SGFP is in service and 22 SGFP is not in service. Steam dumps are in Main Steam
+Pressure Control, Automatic, set at 1000 psig. The crew will be instructed to raise power to
+10% and enter Mode 1.
+2. The crew will initiate power ascension to 10%, and enter Mode 1, using Main Steam Dumps
+and control rods IAW S2.OP-IO.ZZ-0003, Hot Standby to Minimum Load and S2.OP-SO.MS-
+0002, Steam Dump System Operation, Attachments 3 or 4.
+3. Containment pressure channel 1 will fail high. Operators will respond IAW S2.OP-AR.ZZ-0003,
+Overhead annunciator window C alarm response procedure. CRS will evaluate TS and Enter
+TS 3.3.2.1 Act b 16. After Tech Specs has been evaluated, Event #3 will be entered.
+4. After the containment Pressure channel is addressed, The Charging Master flow controller fails
+LOW. The crew will enter S2.OP-AB.CVC-0001, Loss of Charging, the crew will take actions
+place the master flow controller in manual and adjust flow. The CRS will establish band for
+operation of the Charging Master flow controller. The crew will hold a brief after band
+established and AB actions completed, upon completion of the brief or update event #4 will be
+entered.
+5. After the Master flow controller failure is addressed, the number 2 Service water bay will
+experience a leak and require isolation IAW S2.OP-AB.SW-0003, Service Water bay leak. The
+crew will start all bay 4 pumps and shutdown all bay 2 pumps, as well as performing isolation of
+the bay utilizing MOV’s operated from the control room. The CRS will evaluate Tech Specs with
+the Service Water bay isolated and enter TS 3.7.4. The crew will direct removal of a CCHX
+from service and removal of control power from all bay 2 pumps. After Tech Specs is
+evaluated, Event #5 can be entered.
+6. A loss of offsite power will occur. The crew will experience an automatic trip of the unit 2
+reactor when all offsite power is lost. The crew will enter EOP-TRIP -1, Reactor Trip response,
+and transition to EOP-LOPA-1, Loss of all AC power, when it is recognized that no vital buses
+have power. In LOPA-1 the crew will take actions to check plant conditions, restore AC power,
+maintain conditions for optimal recovery, Determine if ELAP declaration is required, Commence
+cooldown when AC power is not yet available. (CT-2)
+
+--- PAGE 395 ---
+7. While in the EOP network the 23 AFW pump will fail to start. The 23 AFW pump should
+automatically start with the Loss of offsite power. The crew will take the actions to start the 23
+AFW pump to maintain a source of inventory control for the Steam generators. (CT-1)
+8. The scenario may be terminated when cooldown has been commenced and CT 2 evaluated or
+by direction from the Lead Examiner.
+
+--- PAGE 396 ---
+IV. INITIAL CONDITIONS
+____ IC-239
+PREP FOR TRAINING (i.e. computer setpoints, procedures, bezel covers ,tagged equipment)
+Initial Description
+____ 1 VC 1and VC4 C/T
+RCPs (SELF CHECK)
+____ 2
+____ 3 RTB s (SELF CHECK)
+____ 4 MS 167s (SELF CHECK)
+____ 5 500 KV SWYD (SELF CHECK)
+____ 6 SG FP Trip (SELF CHECK)
+____ 7 23 CV PP (SELF CHECK)
+____ 8 21 SGFP is in service
+____ 9 IOP -3 open and complete up to step 4.3.16, Power Operation. Attachment 4 is marked up.
+Steam Dumps are in MS Pressure Mode and Auto, and S2.OP-SO.MS-0002 is open and
+___ 10
+marked up to step 4.4.1
+___ 11 Rod control in manual.
+___ 12 Com plete Attachment 2 “Simulator Ready-for-Training/Examination Checklist.”
+Note: Tables with blue headings may be populated by external program, do not change column name without consulting Simulator Support group
+
+--- PAGE 397 ---
+EVENT TRIGGERS:
+Initial ET # Description
+EVENT ACTION: kb423dmj //CHARGING FLOW DEM-MANUAL (MAST
+1 COMMAND: DMF CV0035
+PURPOSE: <update as needed>
+EVENT ACTION: MONP254 < 10. //CONT ROD BANK C < 10 ( RX TRIP )
+2 COMMAND:
+PURPOSE: <update as needed>
+MALFUNCTIONS:
+SELF- Description Delay Initial Ramp Trigger Severity
+CHECK Time Value Time
+VC0311A Containment Presssure CH I (PT948D) FAILS
+______ 01 N/A N/A N/A RT-1 55
+(NR only)
+______ 02 CV0035 CHRG MASTER FLO CNTRLR FAILS H/L N/A 37 00:05:00 RT-2 0
+______ 03 SW0216A 21 SW HDR LEAK IN SW STRUCTURE N/A 500 00:03:00 RT-3 8000
+______ 04 EL0134 LOSS OF ALL 500KV OFF-SITE POWE N/A N/A N/A RT-4
+AF0353C 23 AFP FAILURE TO AUTO START ON ANY
+______ 05 N/A N/A N/A N/A
+(ALL) SIGNALS
+______ 06 EL0144 LOSS OF 2A 4160V VITAL BUS N/A N/A N/A ET-2
+______ 07 EL0145 LOSS OF 2B 4160V VITAL BUS N/A N/A N/A ET-2
+______ 08 EL0163 2C EMERG DIESEL GENERATOR TRIP 00:00:20 N/A N/A ET-2
+______ 09 VL0045 2CV116 Fails to Position ( 0-100% ) N/A N/A N/A RT-13 0
+______ 10 VL0087 2CC131 Fails to Position ( 0-100% ) N/A N/A N/A RT-13 0
+REMOTES:
+SELF- Description Delay Initial Ramp Trigger Condition
+CHECK Time Value Time
+______ 01 SW23D 21 SW PUMP BKR CONTROL POWER 00:00:30 N/A N/A RT-10 OFF
+______ 02 SW27D 22 SW PUMP BKR CONTROL POWER 00:01:00 N/A N/A RT-10 OFF
+______ 03 SW32D 23 SW PUMP BKR CONTROL POWER 00:01:30 N/A N/A RT-10 OFF
+______ 04 DG01D DEENERGIZE "A" SEC CABINET N/A N/A N/A RT-9 YES
+______ 05 DG02D DEENERGIZE "B" SEC CABINET 00:00:30 N/A N/A RT-9 YES
+______ 06 DG03D DEENERGIZE "C" SEC CABINET 00:01:00 N/A N/A RT-9 YES
+______ 07 AF20D 21 AFW PUMP BKR CONTROL POWER N/A N/A N/A RT-12 OFF
+______ 08 AF25D 22 AFW PUMP BKR CONTROL POWER N/A N/A N/A RT-12 OFF
+______ 09 AF28D 22 AFW PUMP BKR LOCAL TRIP N/A N/A N/A RT-12 TRIP
+______ 10 AF23D 21 AFW PUMP BKR LOCAL TRIP N/A N/A N/A RT-12 TRIP
+______ 11 CV28A 21CV98 RCP SEAL INJ MAN ISOL N/A N/A N/A RT-11 0
+______ 12 CV29A 22CV98 RCP SEAL INJ MAN ISOL N/A N/A N/A RT-11 0
+
+--- PAGE 398 ---
+______ 13 CV30A 23CV98 RCP SEAL INJ MAN ISOL N/A N/A N/A RT-11 0
+______ 14 CV31A 24CV98 RCP SEAL INJ MAN ISOL N/A N/A N/A RT-11 0
+______ 15 ANCGA289 CGA HW&CNDS-CPD COND HI ALARM N/A N/A N/A N/A OVRD OFF
+______ 16 MT02D MAIN TURB TURNING GEAR ENGAGE N/A N/A N/A N/A ENGAGE
+OVERRIDES:
+SELF- Description Delay Initial Ramp Trigger Condition/
+CHECK Time Value Time Severity
+OTHER CONDITIONS:
+Description
+____ 1. None
+
+--- PAGE 399 ---
+V. SEQUENCE OF EVENTS
+1. State shift job assignments.
+2. Hold a shift briefing, detailing instruction to the shift: (provide crew members a copy of the shift
+turnover sheet).
+3. Inform the crew “The simulator is running. You may commence panel walkdowns at this time.
+CRS please inform me when your crew is ready to assume the shift”.
+4. Allow sufficient time for panel walk-downs. When informed by the CRS that the crew is ready
+to assume the shift, ensure the simulator is cleared of unauthorized personnel.
+
+--- PAGE 400 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+1. Power Ascension
+Examiner’s Note: The crew will be using
+S2.OP-IO.ZZ-0003, Hot Standby to
+Minimum Load, to perform the power
+ascension.
+Step 4.3.16 provides guidance on raising
+reactor power using Steam Dumps IAW
+S2.OP-SO.MS-0002. The crew can use
+Attachments 3 or 4 of S2.OP-SO.MS-
+0002 to operate Steam Dumps.
+The intent is for the crew to enter Mode 1,
+≈ 6% Rx power, THEN; proceed to next
+event.
+Examiner’s Note: IF console alarm RC
+LOOPS Tavg – Tref DEVIATION is in at
+the time the crew takes the watch, the
+crew will be provided instructions during
+turnover that verification of Tavg is 541 F
+once per 30 minutes until alarm is reset in
+Control Room Narrative Log is being
+performed by the extra NCO.
+This alarm will clear during the power
+ascension into Mode 1.
+CRS directs power ascension using Main Steam
+Dumps in MS Pressure Control and control rods.
+Examiner’s Note: The CRS will direct the
+crew in the order in which to raise Rx
+power by withdrawing control rods or
+raising steam dump demand first.
+
+--- PAGE 401 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+Crew will most likely make steam PO raises steam dump demand IAW S2.OP-
+dump adjustments in Manual due to SO.MS-0002, section 5.4 using Attachments 3 or 4.
+Caution: “Small adjustments on the Slowly ADJUST STM DUMP PRESSURE SETPOINT
+Steam Dump controller while in automatic to maintain less than 1000 psig IAW Attachment 3,
+may not produce the expected results.” MS PRESS CONTROL MODE in AUTO:
+• SELECT PRESSURE MODE - MANUAL.
+• Slowly ADJUST VALVE DEMAND until
+desired setpoint is reached.
+• SELECT PRESSURE MODE - AUTO.
+OR
+ADJUST Steam Dumps to raise Reactor Power
+Demand IAW Attachment 4, MS PRESS CONTROL
+MODE in MANUAL:
+• Slowly ADJUST VALVE DEMAND until
+desired setpoint is reached.
+RO withdraws control rods at the specified
+increments to maintain Tave on program.
+Examiner’s Note: Program Tavg at 10%
+Rx power is about 549 F.
+During simulator runs, Steam Dump
+pressure setting was about 982 psig for a
+Rx Power of 5.4%.
+RO announces when NIS indicates 5% Reactor
+Power and RECORDs time of Mode 1 entry in
+Control Room Narrative Log.
+Proceed on to next event when Reactor
+Power is 6% or by direction from Lead
+Examiner.
+
+--- PAGE 402 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+2. Containment pressure channel fails
+high:
+Simulator Operator: Insert RT-1 on
+direction from Lead Examiner.
+VC0311
+A, Containment press channel 1
+Value = 55
+RO announces unexpected OHA alarm for CNTMT
+PRESS HI-HI OHA C-6.
+CRS places power ascension on hold.
+RO reports actual containment pressure is normal and
+appears the channel is failed.
+PO reviews S2.OP-AR-ZZ-0003, and determines
+notification must be written and TS evaluation
+performed
+TS evaluation #1:
+CRS enters:
+• TS 3.3.2.1 Act b 16
+Proceed to next event after CRS
+evaluates Tech Specs or by direction from
+Lead Examiner.
+
+--- PAGE 403 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+3. Charging Master Flow Controller
+fails low
+Simulator Operator: Insert RT-2 on
+direction from Lead Evaluator.
+MALF: CV0035 CHRG MASTER FLO
+CNTRLR FAILS H/L
+Starting Value: 37
+Final Value: 0
+Ramp: 5 minutes
+RO reports lowering charging flow and/or low RCP
+seal injection flow.
+RO diagnoses Master Flow Controller (MFC) output
+lowering with PZR level on (or below) program.
+CRS directs RO to place Master Flow Controller in
+manual and restore charging flow.
+Simulator Operator: Ensure ET-2 is true
+when MFC is placed in manual this will
+delete MALF CV0035
+RO places MFC in manual, and adjusts demand to
+required flow.
+CRS enters S2.OP-AB.CVC-0001, Loss of
+Charging, based on the reduction of charging
+flow.
+CRS directs initiation of Attachment 1 CAS.
+RO reports 23 charging pump in service with no
+indication of cavitation.
+
+--- PAGE 404 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+RO reports NO PZR level channel failure.
+RO reports VCT level channel has NOT failed.
+RO reports NO indication of charging header leak.
+RO reports charging MFC failed.
+RO reports manual control of 23 charging pump has
+been established, and reports PZR level can be
+maintained stable or rising.
+CRS assigns responsibility and band for manual PZR
+level control.
+Proceed to next event at Lead Evaluators
+direction.
+
+--- PAGE 405 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+4. #2 SW Bay Leak
+Simulator Operator: Insert RT-3 on
+direction from Lead Evaluator.
+MALF: SW0216A, 21 SW LEAK IN SW
+STRUCTURE
+Ramp = 3 min
+Final Value = 8000
+Evaluator’s Note: The first OHA will
+annunciate ~1 minute after the leak is
+inserted.
+RO reports unexpected OHA alarm B-29, followed
+shortly by B-13 and B-14.
+ARP for OHA B29, 21-23 SW PMP SUMP AREA LVL
+HI, directs entry into S2.OP-AB.SW-0003 if alarm is
+concurrent with OHA B-13, 21 SW HDR PRESS LO.
+RO either starts a SW pump based on lowering SW
+header pressure, or announces the auto start of 25
+SW pump when it occurs, and the clearing of the low
+SW header pressures alarms.
+Evaluator’s Note: OHA B-29 also directs
+entry into S2.OP-AB.ZZ-002, Flooding.
+CRS enters S2.OP-AB.SW-0003 SW Bay Leak per
+ARP direction or enters S2.OP-AB.SW-001, Loss
+of SW Header Pressure, then transitions to S2.OP-
+AB.SW-0003, and initiates CAS.
+RO reports both SW Bays are in service and
+dispatches NEO to investigate 2 Bay alarms.
+
+--- PAGE 406 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+PO monitors Main Turbine / SGFP temps on SPDS
+and Plant Computer per CAS.
+Role Play: 2 minutes after being
+contacted, report as NEO that there is a
+large leak in the back of #2 SW bay.
+The water level is approx. 2.5 feet
+above the pump pedestal and rising.
+(Bay is considered disabled at 2 ft.)
+PO opens 21 and 22 SW23’s.
+PO closes 21 and 22 SW17’s.
+PO starts all Bay 4 SW pumps.
+PO reports all Bay 4 SW pumps are running.
+PO stops all Bay 2 SW pumps.
+Crew dispatches NEO to open control power bkrs
+for 21-23 SW pumps.
+Simulator Operator: Call for First Check
+(IF directed), THEN insert RT-10 to open
+control power.
+SW23D, 21 SW pump control power
+SW27D, 22 SW pump control power
+SW32D, 23 SW pump control power
+NOTIFY control room after last remote is
+active and report control power breakers
+have been opened for 21, 22 and 23 SW
+pumps.
+
+--- PAGE 407 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+PO closes 21SW22 and 21SW20.
+Role Play: Once 2 SW Bay is isolated,
+NEO reports that the leak has stopped.
+IF ask about the water level, state the
+water level is up to the bottom of the
+motor housing.
+PO reports the leak is isolated.
+PO reports SW remains available to the EDGs.
+PO reports SW is being supplied to the Turbine
+Building through 23SW20.
+PO monitors Main Turbine parameters on SPDS and
+the Plant Computer.
+PO initiates action to remove one CCHX from service
+IAW CAS item 4.0.
+TS evaluation #2:
+CRS enters LCO 3.7.4 (72 hours) due to having
+only one operable SW loop.
+CRS may enters S2.OP-AB.ZZ-002, Flooding, due to
+flooding in 2 Bay.
+Proceed to next event after Tech Spec
+and ECG classification has been identified
+or at Lead Evaluators direction.
+
+--- PAGE 408 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+5. Manual Rx Trip AND Loss of All AC
+Power (LOPA)
+Simulator Operator: Insert RT-4 at the
+direction of the lead examiner this will
+cause the Loss of Offsite power and
+automatic Reactor trip.
+CRS directs RO to trip the Rx and perform
+immediate actions of EOP-TRIP-1, Reactor Trip or
+Safety Injection.
+RO turns reactor trip switch to backup the
+automatic Rx Trip.
+Simulator Operator: Ensure ET-2 is
+TRUE following the Rx trip.
+This Inserts the following malfunctions:
+EL0144: Loss of 2A 4KV bus
+EL0145: Loss of 2B 4KV bus
+EL0163: 2C EDG trip
+RO performs Immediate Actions for EOP-TRIP-1:
+ Confirms the reactor tripped
+ Trips the main turbine
+PO reports NO Vital Busses are Energized and entry
+into EOP-LOPA-1 required
+CRS and RO verify performance of immediate
+actions.
+CRS transitions to EOP-LOPA-1, Loss of All AC
+Power.
+
+--- PAGE 409 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+RO performs immediate actions of LOPA-1:
+ Trip the Reactor
+ Trip the Turbine
+CRS and RO verify performance of immediate
+actions.
+RO may close 2CV2 and 2CV277
+RO reports both PORVs closed
+RO reports Excess letdown is isolated
+PO reports that 23 AFW pump failed to Auto start.
+CT-1 (CT-23)
+Critical Task
+Establish 22E4 lbm/hr AFW flow before steam
+generator dryout occurs (WR ≤ 11%)
+SAT_________ UNSAT_________
+PO manually starts 23 AFW pump. CT #1
+PO throttles AFW flow to no less than 22E4
+lbm/hr. CT #1
+CRS assigns CAS for loss of 23 AFW pump
+
+--- PAGE 410 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+Evaluator’s Note: 2A & 2B 4KV vital
+buses are deenergized with a bus
+differential. 2C EDG tripped on
+overspeed. Crew should determine that
+2A and B EDG need to be stopped.
+PO reports 2A and B EDG running with breaker open
+and 2C EDG tripped.
+PO reports no vital buses energized.
+Role Play (2C EDG): IF dispatched,
+report that 2C EDG tripped on
+overspeed and the linkage looks bent.
+Role Play (Maintenance on 2A and B
+4KV Bus): When contacted about status
+state that you will go to the field to get
+a status.
+RO reports SI has not been actuated.
+RO actuates SI.
+CRS assigns CAS for SI reset and AB.SSP-1 action if
+required.
+Evaluator’s Note: Around this point the
+crew should be discussing strategy to
+recover a vital bus. 2C EDG tripped on
+overspeed and will take some time to
+troubleshoot. 2A and 2B vital bus is
+deenergized on Bus Differential protection
+and therefore not expected back soon.
+Crew should determine that success path
+is to restore 2C EDG with maintenance
+assistance.
+
+--- PAGE 411 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+After 74 seconds a crew member performs reset
+of SI.
+PO reports no vital buses energized
+CRS assigns CAS to stop EDG’s without SW once
+SEC’s deenergized.
+CRS reads Continuous Caution C6-1 When power is
+restored to any 4KV vital bus. Recovery actions
+should continue starting with Step 26.
+CRS dispatches operator to deenergize all SECs.
+Deenergize SECs:
+Simulator Operator: After being
+contacted, Insert RT-9
+to deenergize all SECs with a time delay.
+REMOTES:
+DG01D Deenergize A SEC
+DG02D Deenergize B SEC
+DG03D Deenergize C SEC
+NOTIFY CRS when complete.
+CRS directs performance of S2.OP-AB.LOOP-1
+
+--- PAGE 412 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+Role Play for AB.LOOP-1 (Attachment
+2 Part A):
+If called by a crew member
+Section1.A (Field Operator) - After 10-15
+minutes report back as field operator that
+Steps 1.A.1 thru 1.A.4 are complete.
+Section 1.B steps are performed by the
+NCO in the control room if resources
+available. CRS may direct WCC to do
+this, if so then report back after 20
+minutes that Section 1.A and 1.B are
+complete (simulate that panels and doors
+are open)
+CRS directs WCC to ensure 21 and 22 AFW pump
+breakers open and remove control power for 21
+and 22 AFW pumps.
+Simulator Operator: Insert RT-12 to
+open 21 and 22 AFW pump breakers and
+remove control power to 21 and 22 AFW
+pumps.
+Remote:
+AF20D and AF23D – 21 AFW
+AF25D and AF28D – 22 AFW
+Crew waits until all SECs are deenergized.
+CRS receives report that all SECs are deenergized.
+Stop running EDGs:
+PO stops 2A and 2B EDG based on no service
+water pump running IAW CAS of LOPA-1.
+
+--- PAGE 413 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+RO depresses stop pushbutton for all loads in
+Table A of LOPA-1.
+Crew waits until report from WCC that 21 and 22 AFW
+pump breakers are open and control power removed
+Simulator Operator: Notify crew when
+RT-12 has been completed to open 21
+and 22 AFW pump breakers and remove
+control power from 21 and 22 AFW
+pumps.
+PO reports status of 4 KV Vital Busses and priority
+should be placed on restoring 2C EDG with help from
+maintenance.
+PO reports that no EDG’s are available and no EDG’s
+running
+CRS dispatch operator for local start when EDG
+becomes available.
+CRS assigns CAS to PO for vital bus energization,
+SW pump start, and turbine header isolation.
+Evaluator’s Note: There will be no
+console indications to verify valve
+positions during LOPA-1 only field reports.
+PO reports 23 and 24 SPT are deenergized
+CRS has SM contact ESO for power availability
+CRS directs crew to restore power IAW S2.OP-
+AB.LOOP-0001, Loss of Offsite Power, while
+continuing with LOPA-1.
+
+--- PAGE 414 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+SM discusses with TSC additional power source
+availability/strategy.
+CRS dispatches operator for Seal injection
+isolation and seal return and CCW thermal barrier
+isolation.
+Simulator Operator: Insert RT-11 to
+close 21-24 CV98. This will simulate
+closure for 2CV83, 2CV89 and 2CV95 to
+isolate seal injection filters.
+Remotes:
+CV28A – 21CV98 fails to position
+CV29A – 22CV98 fails to position
+CV30A – 23CV98 fails to position
+CV31A – 24CV98 fails to position
+Final = 0
+Ramp: 1 min
+Delay = 0-3 mins
+Simulator Operator: Insert RT-13 to
+close 2CC131 and 2CV116 valves.
+VL0045 2CV116 fails to position
+Final = 0
+Ramp = 1 min
+VL0087 2CC131 fails to position
+Final = 0
+Ramp: 01:00 min
+Crew contacts WCC/SM/DSM for status of 2C EDG
+and 2A and 2B Vital buses.
+
+--- PAGE 415 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+Simulator Operator: Notify crew that
+maintenance has investigated the 2C
+EDG trip mechanism and believe they can
+restore it in 2 hours.
+PO reports valves in Table B are closed except 21-
+24 MS167 crew closes 21-24 MS167
+PO places 21-24 BF19 and 40s in manual and
+closed
+RO states 21-24 SS94 closed
+PO states 21-24 GB4s closed
+PO states NO SG pressures are dropping in an
+uncontrolled manner or completely depressurized
+PO gives AFW status to CRS and current SG levels, if
+less than 9% will feed at max rate to allow cooldown
+to establish greater than 9% for cooldown later
+PO reports secondary rad monitors normal
+CRS dispatches personnel to perform checkoff
+sheet 3
+PO reports AFWST greater than 21%
+PO reports SG levels greater than 9%
+
+--- PAGE 416 ---
+Evaluator/Instructor Activity Expected Plant/Student Response SBT LOG Comment
+CT-2 (CT-26)
+Depressurize the intact SG(s) such that all the
+following limiting conditions are met:
+• The cooldown rate in all RCS cold
+legs is maintained less than 100°F per
+hour
+• SG depressurization is not initiated
+until narrow-range level in at least one
+intact SG is greater than 9%(15% for
+adverse containment)
+• If narrow-range level cannot be
+maintained greater than 9%(15% for
+adverse containment) in at least one
+intact SG (after depressurization is
+commenced), then SG
+depressurization is stopped until
+narrow-range level is restored to
+greater than 9%(15% for adverse
+containment) in at least one intact SG
+SAT__________ UNSAT_________
+PO opens 21-24MS10s and begins cooldown at
+less than 100 degrees per hour. CT #2
+PO monitors SGWL and stops if required and
+maintains achievable cooldown rate.
+The scenario maybe terminated when
+CT # 2 has been evaluated or as
+directed by the Lead Examiner.
+
+--- PAGE 417 ---
+VI. SCENARIO REFERENCES
+1. Alarm Response Procedures (Various)
+2. Technical Specifications
+3. Emergency Plan (ECG)
+4. OP-AA-101-111-1003, Use of Procedures
+5. S2.OP-IO.ZZ-0003, Hot Standby to Minimum Load
+6. S2.OP-AB.CVC-0001, Loss of Charging
+7. S2.OP-SO.MS-0002, Steam Dump System Operation
+8. S2.OP-AB.SW-0003, Service Water Bay Leak
+9. 2-EOP-TRIP-1, Reactor Trip or Safety Injection
+10. 2-EOP-LOPA-1, Loss of All AC Power
+
+--- PAGE 418 ---
+MODE: 2 POWER: 3% RCS BORON: 1311 MWe 0
+SHUTDOWN SAFETY SYSTEM STATUS (5, 6 & DEFUELED):
+N/A
+REACTIVITY PARAMETERS
+• Control Bank D at 130 steps.
+• Reactor Engineering directs use of control rods and steam dumps to raise power to
+10%. No Fuel Conditioning Limits are imposed until 50%.
+MOST LIMITING LCO AND DATE/TIME OF EXPIRATION:
+None
+EVOLUTIONS/PROCEDURES/SURVEILLANCES IN PROGRESS:
+• S2.OP-IO.ZZ-0003, Hot Standby to Minimum Load complete up to Section 4.3, step
+4.3.18 and S2.OP-SO.MS-0002, Steam Dump System Operation is open at (4.4.1)
+• IF RC Loop Tavg – Tref Deviation console alarm is in, then extra NCO will log Tavg >
+541 F once per 30 minutes.
+• Crew to continue Power ascension to 10% using control rods and steam dumps, and
+enter Mode 1.
+• Reactor Engineering is standing by to support power ascension.
+• Mode 1 entry is authorized.
+ABNORMAL PLANT CONFIGURATIONS:
+CONTROL ROOM:
+Unit 1 and Hope Creek at 100% power.
+PRIMARY:
+SECONDARY:
+• On main feedwater using 21 SGFP; 22 SGFP is Out of Service
+RADWASTE:
+No discharges in progress
+CIRCULATING WATER/SERVICE WATER:
+
+--- PAGE 419 ---
+1. Verify simulator is in “TRAIN” Load
+2. Simulator is in RUN
+3. Overhead Annunciator Horns ON
+4. All required computer terminals in operation
+5. Simulator clocks synchronized
+6. All tagged equipment properly secured and documented
+7. TSAS Status Board up-to-date
+8. Shift manning sheet available
+9. Procedures in progress open and signed-off to proper step
+10. All OHA lamps operating (OHA Test) and burned out lamps replaced
+11. Required chart recorders advanced and ON (proper paper installed)
+12. All printers have adequate paper AND functional ribbon
+13. Required procedures clean
+14. Multiple color procedure pens available
+15. Required keys available
+16. Simulator cleared of unauthorized material/personnel
+17. All charts advanced to clean traces and chart recorders are on.
+18. Rod step counters correct (channel check) and reset as necessary
+19. Exam security set for simulator
+20. Ensure a current RCS Leak Rate Worksheet is placed by Aux Alarm Typewriter
+with Baseline Data filled out
+21. Shift logs available if required
+22. Recording Media available (if applicable)
+23. Ensure ECG classification is correct
+24. Reference verification performed with required documents available
+25. Verify phones disconnected from plant after drill.
+26. Verify EGC paperwork is marked “Training Use Only” and is current revision.
+27. Ensure sufficient copies of ECG paperwork are available.
+
+--- PAGE 420 ---
+In reviewing each proposed CT, the examination team assesses the task to ensure, that it is
+essential to safety. A task is essential to safety if, in the judgment of the examination team, the
+improper performance or omission of this task by a licensee will result in direct adverse
+consequences or in significant degradation in the mitigative capability of the plant.
+The examination team determines if an automatically actuated plant system would have been
+required to mitigate the consequences of an individual’s incorrect performance. If incorrect
+performance of a task by an individual necessitates the crew taking compensatory action that
+would complicate the event mitigation strategy, the task is safety significant.
+I. Examples of CTs involving essential safety actions include those for which operation or
+correct performance prevents...
+•
+degradation of any barrier to fission product release
+•
+degraded emergency core cooling system (ECCS) or emergency power capacity
+•
+a violation of a safety limit
+•
+a violation of the facility license condition
+•
+incorrect reactivity control (such as failure to initiate Emergency Boration or Standby
+Liquid Control, or manually insert control rods)
+•
+a significant reduction of safety margin beyond that irreparably introduced by the
+scenario
+II. Examples of CTs involving essential safety actions include those for which a crew
+demonstrates the ability to...
+•
+effectively direct or manipulate engineered safety feature (ESF) controls that would
+prevent any condition described in the previous paragraph.
+•
+recognize a failure or an incorrect automatic actuation of an ESF system or component.
+•
+take one or more actions that would prevent a challenge to plant safety.
+•
+prevent inappropriate actions that create a challenge to plant safety (such as an
+unintentional Reactor Protection System (RPS) or ESF actuation.
+
+--- PAGE 421 ---
+SCENARIO IDENTIFIER: 21-01 NRC Scenario #4 REVIEWER: K. Hantho
+Initials Qualitative Attributes
+KH 1. The scenario has clearly stated objectives in the scenario.
+KH 2. The initial conditions are realistic, in that some equipment and/or instrumentation
+may be out of service, but it does not cue crew into expected events.
+KH 3. The scenario consists mostly of related events.
+KH 4. Each event description consists of:
+• the point in the scenario when it is to be initiated
+• the malfunction(s) that are entered to initiate the event
+• the symptoms/cues that will be visible to the crew
+• the expected operator actions (by shift position)
+• the event termination point
+KH 5. No more than one non-mechanistic failure (e.g., pipe break) is incorporated into
+the scenario without a credible preceding incident such as a seismic event.
+KH 6. The events are valid with regard to physics and thermodynamics.
+KH 7. Sequencing/timing of events is reasonable, and allows for the examination team to
+obtain complete evaluation results commensurate with the scenario objectives.
+KH 8. The simulator modeling is not altered.
+KH 9. All crew competencies can be evaluated.
+KH 10. The scenario has been validated.
+NA 11. If the sampling plan indicates that the scenario was used for training during the
+requalification cycle, evaluate the need to modify or replace the scenario.
+KH 12. ESG-PSA Evaluation Form is completed for the scenario at the applicable facility.
+
+--- PAGE 422 ---
+21-01 NRC Scenario #4
+Critical Tasks:
+CT-1 (CT-23)
+Critical Task
+Establish 220,000 lbm/hr AFW flow before steam generator dryout occurs (WR ≤ 11%) during SBO
+Safety Significance
+Establishing the minimum required AFW flow rate, under the postulated plant conditions, constitutes a
+task that “is essential to safety,” because “its improper performance or omission by an operator will result
+in direct adverse consequences or significant degradation in the mitigative capability of the plant.”
+Failure to establish minimum AFW flow (under the postulated conditions) is a violation of the basic
+objective of ECA-0.0 and of the assumptions of the analyses upon which ECA-0.0 is based. Both intend
+to mitigate deterioration of RCS conditions while ac emergency power is not available. Without AFW
+flow, the SGs could not support any significant plant cooldown. Thus, the crew would lose the ability to
+delay the adverse consequences of core uncovery. Also without AFW flow, decay heat would still open
+the SG safety valves and would rapidly deplete the SG inventory, leading to a loss of secondary heat
+sink, or SG dryout. Decay heat would then increase RCS temperature and pressure until the pressurizer
+PORVs open, imposing a larger LOCA than RCP seal leakage. Both of these examples violate the basic
+assumptions of the analyses on which ECA-0.0 is based, complicating the mitigation actions.
+Cues:
+• Indication and/or annunciation of station blackout
+AND
+• Indication and/or annunciation that insufficient AFW flow to SGs is present
+Measurable Performance Indicator
+Manipulation of controls in the control room as required to establish the minimum required
+AFW flow rate to the SGs
+• Valve position indication
+OR
+• Pump speed increasing
+Feedback
+Indication that at least the minimum required AFW flow is being delivered to the SGs
+
+--- PAGE 423 ---
+CT-2 (CT-26)
+Critical Task
+Depressurize the intact SG(s) such that all the following limiting conditions are met:
+• The cooldown rate in all RCS cold legs is maintained less than 100°F per hour
+• SG depressurization is not initiated until narrow-range level in at least one intact SG is greater
+than 9%(15% for adverse containment)
+• If narrow-range level cannot be maintained greater than 9%(15% for adverse containment) in at
+least one intact SG (after depressurization is commenced), then SG depressurization is stopped
+until narrow-range level is restored to greater than 9%(15% for adverse containment) in at least
+one intact SG
+• SG pressure does not decrease to less than 310 psig
+• RCS cold leg temperature does not decrease to less than 280 Degrees F
+• If a positive SUR is indicated on either the source range or the intermediate range (after
+depressurization is commenced), then SG depressurization is stopped and the RCS is allowed
+to heat up
+Safety Significance
+Failure to depressurize the secondary and cool down the RCS, under the postulated plant conditions,
+results in a greater possibility for core damage. Depressurization and cooldown provide the following
+benefits, which extend the time to core uncovery and maximize the time available to restore ac power:
+• Reduction in the rates of RCS inventory loss and RCP seal degradation
+• Replenishment (temporary) of RCS inventory by injection of accumulator liquid
+Failure to perform the critical task denies these benefits, reducing the time available to restore AC power
+before the core uncovers.
+Failure to depressurize the secondary and cool down the RCS results in “adverse consequence(s)” and
+in a “significant degradation in the mitigative capability of the plant.” Such a failure constitutes
+misoperation or incorrect crew performance which leads to “degradation of {the RCS} barrier to fission
+product release” and to a “significant reduction of safety margin beyond that irreparably introduced by
+the scenario.”
+Cues:
+• Indication and/or annunciation that all ac emergency buses are de-energized
+− Bus-energized lamps extinguished
+− Circuit breaker position
+− Bus voltage
+− EDG status
+AND
+• Step 17 of ECA-0.0 is reached
+Measurable Performance Indicator
+Manipulation of controls as required to depressurize the intact SG(s) at the highest rate achievable within
+the 100°F per hour RCS cold leg cooldown limit
+
+--- PAGE 424 ---
+• Valve position indication that the PORV(s) on the intact SG(s) are open the maximum amount
+consistent with controllability and the 100°F per hour RCS cold leg cooldown limit
+• Indication that the RCS cold leg cooldown rate remains less than 100°F per hour Indication that
+narrow-range level in at least one intact SG is greater than 9%(15% for adverse containment)
+• Indication that SG pressure remains above 310 psig
+• Indication that RCS cold leg temperature remains above 280 Degrees F
+• Indication of a zero or a negative SUR on the source and intermediate ranges
+Feedback
+• Indication of decreasing pressure in the intact SG(s)
+• Indication of decreasing RCS pressure and temperature
+• Accumulators inject
+
+--- PAGE 425 ---
+ATTACHMENT 6
+ESG-PRA RELATIONSHIP EVALUATION
+EVENTS LEADING TO CORE DAMAGE
+Y/N Event Y/N Event
+N TRANSIENTS with PCS Unavailable N Loss of Service Water
+N Steam Generator Tube Rupture N Loss of CCW
+N Loss of Offsite Power N Loss of Control Air
+N Loss of Switchgear and Pen Area Ventilation Y Station Black Out
+N LOCA
+COMPONENT/TRAIN/SYSTEM UNAVAILABILITY THAT INCREASES CORE DAMAGE
+FREQUENCY
+COMPONENT, SYSTEM, OR
+Y/N COMPONENT, SYSTEM, OR TRAIN Y/N
+TRAIN
+N Containment Sump Strainers N Gas Turbine
+N SSWS Valves to Turbine Generator Area Y Any Diesel Generator
+N RHR Suction Line valves from Hot Leg N Auxiliary Feed Pump
+N CVCS Letdown line Control and Isolation Valves N SBO Air Compressor
+OPERATOR ACTIONS IMPORTANT IN PREVENTING CORE DAMAGE
+Y/N OPERATOR ACTION
+N Restore AC power during SBO
+N Connect to gas turbine
+N Trip Reactor and RCPs after loss of component cooling system
+N Re-align RHR system for re-circulation
+N Un-isolate the available CCW Heat Exchanger
+N Isolate the CVCS letdown path and transfer charging suction to RWST
+Y Cooldown the RCS and depressurize the system
+N Isolate the affected Steam Generator that has the tube rupture(s)
+N Early depressurize the RCS
+N Initiate feed and bleed
+Complete this evaluation form for each ESG
