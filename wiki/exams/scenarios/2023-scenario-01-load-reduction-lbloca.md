@@ -21,7 +21,7 @@ aliases:
 <strong style="color:#c8cdd5;font-size:12px;">Major Events:</strong>
 <ol style="font-size:12px;color:#9ca3af;margin-top:6px;">
 <li>Planned Load Reduction to 89% at 10%/hour</li>
-<li>24 Vacuum Pump trips</li>
+<li><span class="hi">24 Vacuum Pump trips</span></li>
 <li>2N41 Power Range Channel Fails High (TS)</li>
 <li>RCS Leak — 20 gpm (TS)</li>
 <li>Large Break LOCA (leak worsens to 350 gpm)</li>
