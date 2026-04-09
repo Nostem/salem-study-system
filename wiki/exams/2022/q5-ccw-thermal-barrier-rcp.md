@@ -1,5 +1,5 @@
 ---
-title: "2022 Q05 — CCW Thermal Barrier / RCP Impact"
+title: "2022 Q5 — CCW Thermal Barrier / RCP Impact"
 category: exams
 status: draft
 aliases:
@@ -11,14 +11,14 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q05 — CCW Thermal Barrier / RCP Impact</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q5 — CCW Thermal Barrier / RCP Impact</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">APE15 AK2.08 (2.6)</span>
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Unit 1 is in MODE 3 at normal operating temperature and pressure.<br>
-While performing troubleshooting activities, the 1CC190, CCW Thermal Barrier Isolation Valve, closes.<br><br>
+<strong>Given:</strong><br><br>
+• Unit 1 is in MODE 3 at normal operating temperature and pressure.<br>
+• While performing troubleshooting activities, the 1CC190, CCW Thermal Barrier Isolation Valve, closes.<br><br>
 Which ONE of the following completes the statement concerning the impact this failure will have on the RCPs?<br><br>
 Thermal Barrier CCW return flow has been lost from ...
 </div>

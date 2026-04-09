@@ -14,9 +14,9 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Unit 2 is at 100% Power.<br>
-A Main Feedwater Line Break inside containment occurs on 21 Steam Generator.<br><br>
+<strong>Given:</strong><br><br>
+• Unit 2 is at 100% Power.<br>
+• A Main Feedwater Line Break inside containment occurs on 21 Steam Generator.<br><br>
 Which ONE of the following completes both statements?<br><br>
 1. On a Main Feedwater Line Break, Narrow Range levels in the 21 SG will lower <span class="blank">__(1)__</span> when compared to a Steam Line Break.<br>
 2. Immediately following the reactor trip, the RCS cooldown rate will be <span class="blank">__(2)__</span> when compared to an equivalent size Steam Line Break.

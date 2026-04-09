@@ -1,5 +1,5 @@
 ---
-title: "2022 Q04 — EOP-APPX-7 Reflux Cooling"
+title: "2022 Q4 — EOP-APPX-7 Reflux Cooling"
 category: exams
 status: draft
 aliases:
@@ -11,17 +11,17 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q04 — EOP-APPX-7 Reflux Cooling</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q4 — EOP-APPX-7 Reflux Cooling</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">EPE11 EK1.01 (4.1)</span>
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Unit 1 is performing 1-EOP-APPX-7, CONTAINMENT SUMP BLOCKAGE.<br>
-ALL RCPs are stopped.<br>
+<strong>Given:</strong><br><br>
+• Unit 1 is performing 1-EOP-APPX-7, CONTAINMENT SUMP BLOCKAGE.<br>
+• ALL RCPs are stopped.<br>
 Attempts to establish containment sump recirculation have failed.<br>
 1-EOP-APPX-7, Step 43, MAINTAINING RCS HEAT REMOVAL, is in progress.<br>
-The crew is dumping steam to the condensers from the intact SGs.<br><br>
+• The crew is dumping steam to the condensers from the intact SGs.<br><br>
 In accordance with 1-EOP-APPX-7, which ONE of the following is the reason for dumping steam from the intact SGs?
 </div>
 

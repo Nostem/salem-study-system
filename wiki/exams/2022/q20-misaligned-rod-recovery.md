@@ -14,9 +14,9 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Unit 2 is performing a controlled load reduction.<br><br>
-The following sequence of events occurs:<br>
+<strong>Given:</strong><br><br>
+• Unit 2 is performing a controlled load reduction.<br><br>
+• The following sequence of events occurs:<br>
 - OHA E-24, ROD DEV OR SEQ, is LIT.<br>
 - The RO reports a group 1 control rod in D bank is at 175 steps.<br>
 - The group demand counter is reading 160 steps.<br>

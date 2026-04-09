@@ -16,7 +16,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
+<strong>Given:</strong><br><br>
 - Unit 2 is at 100% Power.<br>
 - A release of 21 Waste Gas Decay Tank is in progress in accordance with S2.OP-SO.WG-0008, Discharge of 21 Gas Decay Tank to Plant Vent.<br>
 - A Containment Pressure Relief is also in progress in accordance with S2.OP-SO.CBV-0002, Containment Pressure – Vacuum Relief System Operation, due to containment pressure at 0.2 psig.<br>

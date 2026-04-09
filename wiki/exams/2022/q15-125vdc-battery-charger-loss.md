@@ -14,12 +14,12 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Unit 2 is at 100% Power.<br>
-OHA B-2, 2A 125VDC CNTRL BUS VOLT LO, is LIT.<br>
-RO reports the following indications on 2RP9 for the 2A 125 VDC Battery:<br>
-&bull; DC Volts meter indicates 124 VDC and slowly lowering.<br>
-&bull; DC Amperes meter indicates 50 Amps.<br>
+<strong>Given:</strong><br><br>
+• Unit 2 is at 100% Power.<br>
+• OHA B-2, 2A 125VDC CNTRL BUS VOLT LO, is LIT.<br>
+• RO reports the following indications on 2RP9 for the 2A 125 VDC Battery:<br>
+&nbsp;&nbsp;- DC Volts meter indicates 124 VDC and slowly lowering.<br>
+&nbsp;&nbsp;- DC Amperes meter indicates 50 Amps.<br>
 Based on the above conditions, which ONE of the following completes both statements?<br><br>
 1. The 2A 125 VDC bus is being supplied from the <span class="blank">__(1)__</span>.<br>
 2. Plant operation may continue by <span class="blank">__(2)__</span>.

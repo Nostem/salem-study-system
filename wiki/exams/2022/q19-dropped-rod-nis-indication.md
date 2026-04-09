@@ -14,13 +14,13 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Unit 1 is at 45% Power.<br>
-Control Rod Bank D is at 155 steps.<br>
+<strong>Given:</strong><br><br>
+• Unit 1 is at 45% Power.<br>
+• Control Rod Bank D is at 155 steps.<br>
 Rod Control is in AUTO.<br><br>
 Subsequently at time 0930:<br>
-OHA E-48, ROD BOTTOM, is LIT.<br>
-The crew suspects a dropped rod in control rod Bank D near the outer periphery of the core.<br><br>
+• OHA E-48, ROD BOTTOM, is LIT.<br>
+• The crew suspects a dropped rod in control rod Bank D near the outer periphery of the core.<br><br>
 Which ONE of the following completes both statements?<br>
 1. The Power Range NIS Channel NEAREST the dropped rod will indicate <span class="blank">_(1)_</span> as compared to the other Power Range Channels.<br>
 2. At time 1305, repairs are made and permission to recover the drop rod is authorized. Rod withdrawal restrictions <span class="blank">_(2)_</span> apply.

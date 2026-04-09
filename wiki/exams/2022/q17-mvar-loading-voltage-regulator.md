@@ -14,11 +14,11 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Both Units 1 and 2 are at 100% power with Voltage Regulators in AUTO.<br>
-Unit 1 reactive load is 250 MVARs OUT.<br>
-Unit 2 reactive load is 250 MVARs OUT.<br>
-The 500 KV Ring Bus is closed.<br><br>
+<strong>Given:</strong><br><br>
+• Both Units 1 and 2 are at 100% power with Voltage Regulators in AUTO.<br>
+• Unit 1 reactive load is 250 MVARs OUT.<br>
+• Unit 2 reactive load is 250 MVARs OUT.<br>
+• The 500 KV Ring Bus is closed.<br><br>
 Subsequently, Unit 2 trips.<br><br>
 Which ONE of the following completes both statements?<br>
 1. Unit 1 Main Generator Reactive (MVAR) loading will <span class="blank">_(1)_</span>.<br>

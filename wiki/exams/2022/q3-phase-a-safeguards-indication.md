@@ -1,5 +1,5 @@
 ---
-title: "2022 Q03 — Phase A Safeguards Indication"
+title: "2022 Q3 — Phase A Safeguards Indication"
 category: exams
 status: draft
 aliases:
@@ -11,18 +11,18 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q03 — Phase A Safeguards Indication</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q3 — Phase A Safeguards Indication</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">EPE09 EA1.08 (4.0)</span>
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Unit 2 reactor tripped and Safety Injection actuated due to a small break LOCA.<br>
-The crew has entered 2-EOP-TRIP-1, Reactor Trip or Safety Injection.<br>
-The crew is performing step 12, Safeguard Valve Alignment.<br>
-The RO notices on 2CC1 SAFEGUARDS ACTUATION Bezels that the "OA ISOLATION OPERATE" Red light is lit for one train and is out for the other train.<br><br>
+<strong>Given:</strong><br><br>
+• Unit 2 reactor tripped and Safety Injection actuated due to a small break LOCA.<br>
+• The crew has entered 2-EOP-TRIP-1, Reactor Trip or Safety Injection.<br>
+• The crew is performing step 12, Safeguard Valve Alignment.<br>
+• The RO notices on 2CC1 SAFEGUARDS ACTUATION Bezels that the "ØA ISOLATION OPERATE" Red light is lit for one train and is out for the other train.<br><br>
 Which ONE of the following completes both statements?<br><br>
-1. The train of Phase A (OA) with the Red light <span class="blank">__(1)__</span> failed to actuate.<br>
+1. The train of Phase A (ØA) with the Red light <span class="blank">__(1)__</span> failed to actuate.<br>
 2. In accordance with 2-EOP-TRIP-1, control room operators will attempt to reposition the components associated with the lights on 2RP4 that are <span class="blank">__(2)__</span> on the train that failed to actuate.
 </div>
 
@@ -47,6 +47,6 @@ Which ONE of the following completes both statements?<br><br>
 
 ## Connections
 
-- Related systems: [[Containment Systems]]
+- Related systems: [[Instrumentation and Controls]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam: [[2022 NRC Written Exam]]

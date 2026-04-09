@@ -167,6 +167,11 @@ Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass brea
 SSPS Train A de-energizes UV coils for <span class="hi-exam">RTB 'A' and BYB 'B'</span>, energizes shunt coil for <span class="hi-exam">RTB 'A' only</span>. SSPS Train B de-energizes UV coils for <span class="hi-exam">RTB 'B' and BYB 'A'</span>, energizes shunt coil for <span class="hi-exam">RTB 'B' only</span>. <span class="hi-trap">Shunt coils also energize from: Manual SI, Pistol Grip switches, or RTB PB bezels on CC2 — these are separate from SSPS train outputs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q3</div>
+Phase A (ØA) indication on 2CC1 SAFEGUARDS ACTUATION Bezels: <span class="hi-exam">Red light LIT = train actuated</span>. <span class="hi-exam">Red light OUT = train failed to actuate</span>. On 2RP4, status lights LIT = component repositioned to safeguard position. Per EOP-TRIP-1 step 12, if any safeguards valve not in required position, <span class="hi-exam">place valves in safeguards position manually</span>.
+</div>
+
 ## Nuclear Instrumentation Ranges
 
 - **Source Range:** Two channels, used during shutdown and startup
@@ -257,3 +262,4 @@ Rod Drive M-G Set paralleling (S1.OP-SO.RCS-0001): incoming set voltage adjusted
   - [[2023 Q82]] — IR NIS P-6 permissive / TS 3.3.1.1 bases for 24-hour action time
   - [[2023 Q92]] — PZR pressure channel failure / spurious trip+SI / RAL 11.3.2 reportability
   - [[2022 Q1]] — SSPS Train A/B UV coil and shunt coil assignments to RTBs/BYBs
+  - [[2022 Q3]] — Phase A (ØA) safeguards actuation indication on 2CC1/2RP4

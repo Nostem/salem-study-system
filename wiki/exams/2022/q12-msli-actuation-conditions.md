@@ -14,17 +14,17 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given</strong><br>
-Unit 2 reactor tripped due to a Main Generator fault<br>
-All immediate actions of 2-EOP-TRIP-1, Reactor Trip or Safety Injection, are complete<br>
-The RO now reports the following plant status:<br>
-&bull; RCS Pressure is 1950 psig and lowering<br>
-&bull; RCS Tavg is 542 &deg;F and lowering<br>
-&bull; PZR Level is 30% and lowering<br>
-&bull; Containment Pressure is 5.3 psig and rising<br>
-&bull; 21-23 SG Pressures are 895 psig and lowering<br>
-&bull; 24 SG Pressure is 810 psig and lowering<br>
-&bull; 24 SG Steam Flow is indicating 42% and 21-23 SG Steam Flows are indicating 41%<br><br>
+<strong>Given:</strong><br><br>
+• Unit 2 reactor tripped due to a Main Generator fault<br>
+• All immediate actions of 2-EOP-TRIP-1, Reactor Trip or Safety Injection, are complete<br>
+• The RO now reports the following plant status:<br>
+&nbsp;&nbsp;- RCS Pressure is 1950 psig and lowering<br>
+&nbsp;&nbsp;- RCS Tavg is 542 °F and lowering<br>
+&nbsp;&nbsp;- PZR Level is 30% and lowering<br>
+&nbsp;&nbsp;- Containment Pressure is 5.3 psig and rising<br>
+&nbsp;&nbsp;- 21-23 SG Pressures are 895 psig and lowering<br>
+&nbsp;&nbsp;- 24 SG Pressure is 810 psig and lowering<br>
+&nbsp;&nbsp;- 24 SG Steam Flow is indicating 42% and 21-23 SG Steam Flows are indicating 41%<br><br>
 Based on the above conditions, which ONE of the following completes the statement?<br><br>
 Main Steam Line Isolation actuated due to...
 </div>

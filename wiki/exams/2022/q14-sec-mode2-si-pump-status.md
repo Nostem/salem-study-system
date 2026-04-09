@@ -14,13 +14,13 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Unit 2 is at 100% Power.<br>
-The crew is performing S2.OP-ST.SJ-0001, Inservice Testing &ndash; 21 Safety Injection Pump.<br>
-21 SI Pump is running.<br>
+<strong>Given:</strong><br><br>
+• Unit 2 is at 100% Power.<br>
+• The crew is performing S2.OP-ST.SJ-0001, Inservice Testing &ndash; 21 Safety Injection Pump.<br>
+• 21 SI Pump is running.<br>
 Subsequently, the following occurs;<br>
-&bull; Loss of Offsite Power.<br>
-&bull; OHA J-2, 2B 4KV VTL BUS DIFF PROT, is LIT<br>
+• Loss of Offsite Power.<br>
+• OHA J-2, 2B 4KV VTL BUS DIFF PROT, is LIT<br>
 After 2 minutes has elapsed, which ONE of the following describes the operational status of the Safety Injection Pumps?
 </div>
 

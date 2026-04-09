@@ -16,13 +16,10 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-<br>
-- Unit 2 is in a refueling outage.<br>
-- A fuel handling incident occurs in the spent fuel pool from a dropped fuel assembly.<br>
-<br>
-Which of the following describes the expected alarm(s) and/or indication(s) for this event?<br>
-<br>
+<strong>Given:</strong><br><br>
+• Unit 2 is in a refueling outage.<br>
+• A fuel handling incident occurs in the spent fuel pool from a dropped fuel assembly.<br><br>
+Which of the following describes the expected alarm(s) and/or indication(s) for this event?<br><br>
 1. CAV shifts to ACCIDENT PRESSURIZED Mode<br>
 2. 2R5 or 2R9 radiation monitors in Warning or Alarm<br>
 3. 2R2 or 2R10A/B radiation monitors in Warning or Alarm<br>

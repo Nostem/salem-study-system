@@ -16,7 +16,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
+<strong>Given:</strong><br><br>
 - Unit 2 has completed all actions in 2-EOP-LOSC-1, Faulted Steam Generator Isolation, to isolate a steam leak on 21 steam generator.<br>
 - The crew has just transitioned to 2-EOP-TRIP-3, SI Termination.<br>
 - The crew now reports the following plant conditions:<br>

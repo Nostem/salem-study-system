@@ -14,9 +14,9 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-A LOCA Outside Containment has occurred on Unit 2.<br>
-The crew is performing actions to isolate the leak in accordance with 2-EOP-LOCA-6, LOCA Outside Containment.<br><br>
+<strong>Given:</strong><br><br>
+• A LOCA Outside Containment has occurred on Unit 2.<br>
+• The crew is performing actions to isolate the leak in accordance with 2-EOP-LOCA-6, LOCA Outside Containment.<br><br>
 In accordance with 2-EOP-LOCA-6, which ONE of the following completes both statements?<br>
 1. In order to operate the SJ49s, Cold Leg Isolation Valves, what action(s) MUST be performed?<br>
 2. Following valve closure, what parameter is monitored to determine if leak isolation was successful?

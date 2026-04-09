@@ -91,11 +91,6 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 - **Phase B** — initiated by High-High containment pressure (Containment Spray actuation). Closes remaining isolation valves.
 (UFSAR 6.3.2, 6.2.4)
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q3</div>
-Phase A (OA) indication on 2CC1 SAFEGUARDS ACTUATION Bezels: <span class="hi-exam">Red light LIT = train actuated</span>. <span class="hi-exam">Red light OUT = train failed to actuate</span>. On 2RP4, status lights LIT = component repositioned to safeguard position. Per EOP-TRIP-1 step 12, if any safeguards valve not in required position, <span class="hi-exam">place valves in safeguards position manually</span>.
-</div>
-
 ## Containment Atmosphere Iodine Removal
 
 - Chemically treated spray (NaOH solution) removes elemental iodine vapor by washing action
@@ -170,6 +165,5 @@ Containment pressure relief: upon <span class="hi-exam">OHA A-6 (RMS HI RAD OR T
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]]
 - Related concepts: [[Adverse Containment]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q3]]
-- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]]
+- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

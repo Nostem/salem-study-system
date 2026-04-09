@@ -1,5 +1,5 @@
 ---
-title: "2022 Q01 — Reactor Trip Breakers / SSPS Train Failure"
+title: "2022 Q1 — Reactor Trip Breakers / SSPS Train Failure"
 category: exams
 status: draft
 aliases:
@@ -11,20 +11,20 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q01 — Reactor Trip Breakers / SSPS Train Failure</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q1 — Reactor Trip Breakers / SSPS Train Failure</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">EPE07 EK2.02 (2.6)</span>
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
-Unit 2 is at 100% Reactor Power.<br>
-Reactor Trip Breaker testing is in progress.<br>
-Reactor Trip Breakers (RTB) 'A' and 'B' are closed.<br>
-Operators have just closed Reactor Trip Bypass Breaker (BYB) 'A'.<br>
+<strong>Given:</strong><br><br>
+• Unit 2 is at 100% Reactor Power.<br>
+• Reactor Trip Breaker testing is in progress.<br>
+• Reactor Trip Breakers (RTB) 'A' and 'B' are closed.<br>
+• Operators have just closed Reactor Trip Bypass Breaker (BYB) 'A'.<br><br>
 Subsequently the following occurs:<br>
-A valid Reactor Trip demand signal is actuated.<br>
-SSPS Train A actuates as designed.<br>
-SSPS Train B fails to actuate.<br><br>
+• A valid Reactor Trip demand signal is actuated.<br>
+• SSPS Train A actuates as designed.<br>
+• SSPS Train B fails to actuate.<br><br>
 Which ONE of the following describes how the RTB 'B' and BYB 'A' will respond?
 </div>
 

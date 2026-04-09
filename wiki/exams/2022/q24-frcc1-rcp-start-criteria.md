@@ -16,7 +16,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
+<strong>Given:</strong><br><br>
 - Unit 2 experienced a small break LOCA.<br>
 - The crew is implementing 2-EOP-FRCC-1, Response to Inadequate Core Cooling, and is currently attempting to restore core cooling.<br>
 - RCS pressure is 1600 psig.<br>

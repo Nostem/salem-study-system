@@ -16,7 +16,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>Given:</strong><br>
+<strong>Given:</strong><br><br>
 - Unit 2 is operating at 100% Power.<br>
 - ALL systems are in AUTO.<br>
 - A leak develops on the reference leg on the controlling Pressurizer (PZR) Level Channel.<br>
