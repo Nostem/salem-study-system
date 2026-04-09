@@ -76,6 +76,7 @@ status: draft
 - [[EOP-TRIP-4 — Natural Circulation]]
 - [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
+- [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
 - [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - [[EOP-LOCA-6 — LOCA Outside Containment]]
 - [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
