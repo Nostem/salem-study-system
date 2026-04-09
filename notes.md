@@ -56,4 +56,71 @@ The goals are multi-fold:
 
 ### Personal accounts
 - allen murrow style tracking of questions
-- have a study tracker where you can mark off reviewing certin sections and/or wiki articles. can view a dashboard of study history. useful review tool. 
+- have a study tracker where you can mark off reviewing certin sections and/or wiki articles. can view a dashboard of study history. useful review tool.
+
+## Recommended System Breakdown
+Redo all systems wikis and split into these standard conventions. remove hte general articles like "auxiliary systems", fit all the info into the specified systems. if a system does not have any info, create the base article so we can link and backfill into it as we continue to ingest. some of the current ones are fine. some may need to be re-worded. all systems connections movig forward should point to one of these. 
+also drop the concepts and fit those in the appropariate systems
+re-organize all the current systems info into these systems below. the categories are proivded fo sidebar and index organization
+review the ufsar as necessary to fill in basics
+
+### List
+#### Electrical
+- 4KV
+- 13KV
+- 115V AC
+- 460/230V AC
+- 500KV
+- DC Power (includes 125vdc, 250 vdc, 28 vdc)
+- EDGs (diesel gen)
+- SECs (safeguards equipment controllers)
+#### Primary
+- CVCS
+- FHV (fuel handling ventilation)
+- Pressurizer level & press control
+- Pressurizer & PRT
+- RCPs
+- RCS (includes temperature control)
+- Refueling
+- RVLIS
+- Rx Vessel & Internals
+- Steam Generator & Blowdown
+#### Emergency
+- CAV (control area ventilation)
+- CCW (component cooling)
+- Chill Water
+- Containment (contains cfcus, iodine removal, rod drive ventilation, rx nozzle support ventilation, reactor shield ventilation, containment pressure-vacuum relief, hydrogen recomb)
+- Containment Spray
+- ECCS
+- ESF & Design
+- RHR
+- Service Water
+- Spent Fuel Pool
+- SPAV (switchgear & penetration area ventilation)
+#### Control
+- AMSAC
+- Control Rod Drive
+- Excore NIs (nuclear instruments)
+- Incores (incore flux mapping, CETs, subcooling margin monitor0
+- Radiation Monitoring
+- RPS/SSPS (includes reactor protection, solid state protection, instrumentation & control)
+#### Secondary
+- Feed & Condensate (includes feed pumps, ADFCS, feed pump lube oil)
+- Main Steam (includes bleed steam, moisture separator reheaters (MSR), gland steam (GS), )
+- Condenser Air Removal
+- Circ Water (circulating water)
+- Main Turbine (includes main generator, digital ehc, turbine supervisory)
+- Steam Dumps
+- TAC (Turbine Aux Cooling)
+- TGA Ventilation (turbine building ventilation)
+- MTLO (main turbine lube oil)
+#### Auxiliary
+- ABV (aux building ventilation)
+- AFW
+- Annunciators (overhead and auxiliary)
+- Control air (includes service air, and station air)
+- Demin Water
+- Fire Protection
+- Stator Cooling Water (differences between unit 1 and 2, have different sections in the wiki for each unit)
+- Waste Gas
+- Waste Liquid
