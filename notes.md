@@ -53,4 +53,7 @@ The goals are multi-fold:
 - heavy brainstorm session around tech specs
 - tech specs can be hard to read as curently written. come up with a formatting style that is easy to read and on the eyes
 - include a link that takes you to the actual tech spec pdf section. perhaps we can split the large tech spec pdf into multiple smaller pdfs, by tech spec section/subsection?
-- 
+
+### Personal accounts
+- allen murrow style tracking of questions
+- have a study tracker where you can mark off reviewing certin sections and/or wiki articles. can view a dashboard of study history. useful review tool. 
