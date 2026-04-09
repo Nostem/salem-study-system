@@ -1,0 +1,289 @@
+exam: "SALEM 2022 NRC Exam (20-01 ILOT) - Rev. 1"
+ml_number: "ML22175A152"
+ro_questions: 75
+sro_questions: 25
+questions:
+  - number: 1
+    topic: "Reactor Trip Breakers / SSPS Train Failure"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Beaver Valley 2018 NRC RO36"
+    systems:
+      - instrumentation-and-controls
+    ka: "EPE07 EK2.02"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 2
+    topic: "PZR Safety Valve Tailpipe Temperature"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Bryon 2019 NRC RO1"
+    systems:
+      - pressurizer
+    ka: "APE08 AK2.02"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 3
+    topic: "Phase A Safeguards Indication"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Diablo Canyon 2019 NRC RO28"
+    systems:
+      - containment-systems
+    ka: "EPE09 EA1.08"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 4
+    topic: "EOP-APPX-7 Reflux Cooling"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Byron 2019 NRC RO3"
+    systems:
+      - emergency-core-cooling-systems
+    ka: "EPE11 EK1.01"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 5
+    topic: "CCW Thermal Barrier / RCP Impact"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - DC Cook 2018 NRC RO4"
+    systems:
+      - component-cooling-water
+      - reactor-coolant-pumps
+    ka: "APE15 AK2.08"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 6
+    topic: "Charging Pump Speed Controller"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+    ka: "APE22 AA1.04"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 7
+    topic: "RHR Suction Isolation Interlocks"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - residual-heat-removal
+    ka: "APE25 AK3.02"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 8
+    topic: "CCW Loss / RCP Motor Bearing Temp"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - component-cooling-water
+      - reactor-coolant-pumps
+    ka: "APE26 AA2.04"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 9
+    topic: "PZR Spray Valve Failure"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - pressurizer
+    ka: "APE27 AK3.03"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 10
+    topic: "EOP-FRSM-1 ATWS Actions"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems:
+      - instrumentation-and-controls
+    ka: "EPE29 G2.4.6"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 11
+    topic: "SGTR Natural Circulation"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - steam-generators
+    ka: "EPE38 EA1.33"
+    ka_importance: 4.4
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 12
+    topic: "MSLI Actuation Conditions"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - main-steam
+    ka: "APE40 AK3.01"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 13
+    topic: "FW Line Break vs Steam Break"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - feedwater-and-condensate
+      - main-steam
+    ka: "APE54 AK1.01"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 14
+    topic: "SEC Mode 2 / SI Pump Status"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem 2016 NRC RO19"
+    systems:
+      - emergency-core-cooling-systems
+      - diesel-generators
+    ka: "APE56 AA2.03"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 15
+    topic: "125VDC Battery Charger Loss"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - dc-power
+    ka: "APE58 AA2.01"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 16
+    topic: "SW Valve Room Leak Source"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem"
+    systems:
+      - service-water
+      - containment-fan-coil-units
+    ka: "APE62 AA2.02"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 17
+    topic: "MVAR Loading / Voltage Regulator"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Byron 2019 NRC RO15"
+    systems:
+      - turbine-generator
+      - ac-power
+    ka: "APE77 G2.1.27"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 18
+    topic: "LOCA Outside Containment / SJ49"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - residual-heat-removal
+      - emergency-core-cooling-systems
+    ka: "WE04 EA1.1"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 19
+    topic: "Dropped Rod / NIS Indication"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - instrumentation-and-controls
+    ka: "APE03 AA2.03"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 20
+    topic: "Misaligned Rod Recovery"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - instrumentation-and-controls
+    ka: "APE05 AK2.02"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 21
+    topic: "PZR Reference Leg Leak"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem 2015 NRC RO8"
+    systems:
+      - pressurizer
+      - chemical-and-volume-control-system
+    ka: "APE28 AK1.01"
+    ka_importance: 2.8
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 22
+    topic: "Fuel Handling Incident Alarms"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - radiation-protection
+    ka: "APE36 G2.4.46"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 23
+    topic: "Plant Vent Rad Monitor Response"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems:
+      - radioactive-waste-management
+    ka: "APE60 AK2.02"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 24
+    topic: "FRCC-1 RCP Start Criteria"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+    ka: "EPE74 EA1.06"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 25
+    topic: "EOP-TRIP-7 Rediagnosis"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Byron 2019 NRC RO25"
+    systems:
+      - steam-generators
+    ka: "WE01 EK3.2"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 1/Group 2"

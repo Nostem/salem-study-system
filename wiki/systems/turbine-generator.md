@@ -48,6 +48,11 @@ Grid disturbance — loss of a Salem unit causes <span class="hi-exam">500KV swi
 Rising condenser backpressure reduces LP turbine efficiency, confirmed by <span class="hi-exam">lowering generator MWe output</span>. The primary operational concern is <span class="hi-exam">overpressurization and damage to the LP turbine/main condenser</span>, not condensate pump cavitation.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q17</div>
+When one unit trips, reactive load (MVARs) is shared among remaining generators on the grid — the operating unit picks up <span class="hi-exam">LESS than the full amount</span> (grid absorbs the rest). The voltage regulator senses terminal voltage drop from increased MVAR loading and <span class="hi-exam">increases generator field current to restore terminal voltage to setpoint</span>.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.3 — Instrumentation]]** — Turbine trip reactor trip interlock
@@ -64,5 +69,5 @@ ATWS turbine trip verification (EOP-FRSM-1 Step 6): confirmed by <span class="hi
 
 ## Connections
 
-- Related exam questions: [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]]
+- Related exam questions: [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]]
 - Related exam: [[2023 NRC Written Exam]]

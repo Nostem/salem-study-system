@@ -25,10 +25,15 @@ If <span class="hi-exam">1R1A, Control Room Area, radiation monitor is in alarm<
 Containment pressure relief high radiation: Attachment 1, Step 10 directs ensuring <span class="hi-exam">2VC1, 2VC4, 2VC5, and 2VC6 are CLOSED</span>. This provides an alternate procedural path for isolating the containment pressure relief if the applicant enters AB.RAD-0001 instead of using step 5.2.5 of S2.OP-SO.CBV-0002.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q23</div>
+<span class="hi-exam">2R41D (Plant Vent) in ALARM</span> automatically closes <span class="hi-exam">2WG41, 2VC1/VC4 (purge dampers), and 2VC5/VC6 (pressure relief dampers)</span>. Also aligns <span class="hi-exam">2R45 skid to accident sampling</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[Instrumentation and Controls]], [[Containment Systems]]
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2023 Q62]]
+- Related exam questions: [[2022 Q23]], [[2023 Q62]]
 - Related JPMs: [[2023 JPM Sim-h]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

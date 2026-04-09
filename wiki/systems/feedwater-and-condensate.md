@@ -47,6 +47,11 @@ High level in <span class="hi-exam">21A Low Pressure feedwater heater closes ONL
 BF19 (MFW Regulating Valve) fails fully OPEN → SG level rises → <span class="hi-exam">SG High Level Trip (P-14) actuates at 2/3 NR levels ≥<span class="val-trip">67%</span> on any one SG</span>. P-14 trips the main turbine, which causes an auto reactor trip AND actuates <span class="hi-exam">Feedwater Isolation</span> (closes all BF13s, BF19s, BF40s, trips both SGFPs, and trips the Main Turbine). Note: FW Interlock alone only closes the BF19s and BF40s — FW Isolation is the broader actuation.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q13</div>
+Main feedwater line break vs steam line break: FW line break causes SG levels to <span class="hi-exam">lower FASTER</span> (direct loss of feedwater inventory). RCS cooldown is <span class="hi-exam">LESS than an equivalent steam line break</span> (loss of FW doesn't involve removal of latent heat as steam break does). FW break generates <span class="hi-exam">Low-Low SG Level reactor trip</span>; post-trip RCS Tavg rises due to decreased heat transfer in the affected SG.
+</div>
+
 ## Condenser and Condensate
 
 - Main condensers receive exhaust steam from turbine and steam dump
@@ -81,6 +86,6 @@ EOP-FRHS-1 condensate pump feed: establish condensate flow to selected SG by ope
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]]
+- Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]]
 - Related JPMs: [[2023 JPM Sim-e]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

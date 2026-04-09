@@ -29,6 +29,11 @@ Provides operator actions to restore core cooling when core exit thermocouples (
 - Start RCPs only in loops with SGs meeting the NR level requirement
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q24</div>
+Step 18, RCP START FOR TEMPORARY CORE COOLING: if CETs > <span class="hi-exam">1200°F</span> and at least one SG NR level > <span class="hi-exam">9%</span> (<span class="hi-exam">15%</span> adverse containment), start one RCP at a time for idle loops with SG NR > 9%. Loop around step 18 until CETs < 1200°F. <span class="hi-trap">If NO SG has NR > 9%: reset Phase A, open both CA330s, open both PZR PORVs and Rx Head Vents to reduce RCS pressure.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q84</div>
 In EOP-FRCC-1, SG depressurization is performed at <span class="hi-exam">maximum rate</span> (not 100 degrees F/hr). For RCP start at step 18 under <span class="hi-exam">adverse containment</span> (>= 4 psig), the required SG NR level is <span class="hi-exam">>= 15%</span>. <span class="hi-trap">Trap: if you use normal containment NR level criteria (9%) instead of adverse (15%), you would incorrectly calculate three RCPs available instead of one.</span>
 </div>
@@ -37,5 +42,5 @@ In EOP-FRCC-1, SG depressurization is performed at <span class="hi-exam">maximum
 
 - Related systems: [[Steam Generators]], [[Reactor Coolant Pumps]], [[Containment Systems]]
 - Related concepts: [[Adverse Containment]]
-- Related exam questions: [[2023 Q84]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2022 Q24]], [[2023 Q84]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

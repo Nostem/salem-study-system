@@ -21,6 +21,16 @@ Thermal barrier rupture indications: R17 A/B CCW radiation monitors in warning, 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q5</div>
+<span class="hi-exam">1CC190 is on the COMMON CCW return line</span> — isolates ALL RCP thermal barriers. <span class="hi-trap">Individual RCP isolation is via CC130 valves, not 1CC190.</span> RCPs may continue running if charging flow is maintained.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q8</div>
+Attachment 1 — RCP motor bearing temperature limit <span class="hi-exam">175°F</span> for reactor trip and stopping affected RCP. AB.RCP-0001 Attachment 1 also uses motor bearing temp > <span class="hi-exam">175°F</span>.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q59</div>
 Per S1.OP-AB.CC-0001, components supplied by CCW with pressure less than CCW header pressure are sources for system-to-system out leakage (e.g., Spent Fuel Pool Heat Exchanger). <span class="hi-exam">A tube rupture in the SFP HX results in CCW leaking OUT into the SFP system</span>, causing CCW Surge Tank level to lower and SFP level to rise. The non-borated CCW water will reduce SFP boron concentration, requiring addition of borated water.
 </div>
@@ -28,5 +38,5 @@ Per S1.OP-AB.CC-0001, components supplied by CCW with pressure less than CCW hea
 ## Connections
 
 - Related systems: [[Component Cooling Water]], [[Reactor Coolant Pumps]]
-- Related exam questions: [[2023 Q4]], [[2023 Q59]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2022 Q5]], [[2022 Q8]], [[2023 Q4]], [[2023 Q59]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

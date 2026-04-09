@@ -140,6 +140,16 @@ Automatic swapover of charging pump suction from VCT to RWST requires <span clas
 During a SBLOCA, a <span class="hi-exam">cold leg break produces the highest peak clad temperature</span>. Because ECCS pumps inject into the cold legs, a cold leg break allows injected ECCS water to be <span class="hi-exam">lost directly out the break before reaching the core</span>, reducing the effectiveness of core cooling. Hot leg, CRDM housing, and PZR steam space breaks are analyzed scenarios but do not produce the worst PCT.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q14</div>
+SEC Mode 2 (Blackout only) — load sequencer starts <span class="hi-exam">Charging Pumps ONLY</span>. <span class="hi-trap">SI and RHR pumps are NOT started without an SI accident signal.</span> SI pumps powered from <span class="hi-exam">2A and 2C 4KV Vital buses</span> (not 2B). SEC Modes: Mode 1 = Accident only, Mode 2 = Blackout only, Mode 3/4 = Accident plus Blackout.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q18</div>
+SJ49s (Cold Leg Isolation Valves) are <span class="hi-exam">normally open and NOT Phase A valves</span>. To operate: only CMC switch on 2RP4 to VALVE OPERABLE (no Phase A reset needed). <span class="hi-exam">Monitor RCS pressure rise to determine if LOCA outside containment is isolated.</span>
+</div>
+
 ### Changeover to Recirculation Phase
 1. Containment sump level shows adequate submergence of sump strainer
 2. RWST level low alarm alerts operator
@@ -149,6 +159,11 @@ During a SBLOCA, a <span class="hi-exam">cold leg break produces the highest pea
 
 ### Hot Leg Recirculation
 <span class="hi-trap">Initiated at ~14.0 hours (Unit 1) or ~6.5 hours (Unit 2)</span> after switchover to cold leg recirculation to assure termination of boiling. Minimum one SI pump aligned for hot leg recirculation flow. (UFSAR 6.3.2)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q24</div>
+EOP-FRCC-1 step 18 RCP start criteria: if CETs <span class="val-trip">>1200°F</span> and at least one SG NR level <span class="hi-exam">>9% (15% adverse containment)</span>, start one RCP at a time for each idle loop with SG NR >9%. If no SG meets criteria, <span class="hi-exam">reset Phase A, open both CA330s, open both PZR PORVs and Rx Head Vents</span>.
+</div>
 
 ## Single Failure Criteria
 
@@ -194,6 +209,6 @@ EOP-LOCA-4 hot leg recirculation: realign 21 SI pump from cold leg to hot leg in
 
 - Related EOPs: [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
-- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]]
+- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]]
 - Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

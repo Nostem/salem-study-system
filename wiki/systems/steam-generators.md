@@ -91,6 +91,11 @@ Natural circulation verification: <span class="hi-exam">RCS subcooling >0°F</sp
 SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG</span> → main turbine trip → reactor trip. FW Isolation closes BF13, BF19, BF40 and trips SGFPs. If BF19 fails open, SG level continues to rise until trip on high level.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q11</div>
+Natural circulation monitoring (EOP-SGTR-1 step 38.1): RCS T-Cold in unaffected loops should be approximately <span class="hi-exam"><span class="val-normal">548°F</span> (saturation at MS10 setpoint <span class="val-normal">1015 psig</span> / 1030 psia)</span>. Affected SG MS10 set to <span class="val-normal">1045 psig</span> (1060 psia) → Tsat ~<span class="val-normal">552°F</span>. <span class="hi-exam">With LOOP, steam dumps unavailable — use atmospheric relief valves (MS10s) on intact SGs.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators (tube integrity, inspection requirements)
@@ -114,6 +119,6 @@ ICMF peer check during SGTR: a release IS in progress because the <span class="h
 
 - Related EOPs: [[EOP-SGTR-1]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]]
+- Related exam questions: [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

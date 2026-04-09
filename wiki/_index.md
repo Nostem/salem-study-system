@@ -59,6 +59,7 @@ status: draft
 - [[Technical Specifications Overview]]
 
 ## NRC Exams
+- [[2022 NRC Written Exam]]
 - [[2023 NRC Written Exam]]
 - [[2023 NRC Operating Exam]]
 
@@ -89,6 +90,9 @@ status: draft
 - [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - [[EOP-LOSC-1 — Loss of Secondary Coolant]]
 - [[EOP-LOPA-1 — Loss of All AC Power]]
+- [[EOP-APPX-7 — Containment Sump Blockage]]
+- [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
+- [[EOP-TRIP-7 — Rediagnosis]]
 
 ## Abnormal Procedures
 - [[AB.LOOP-0001 — Loss of All Offsite Power]]
@@ -118,6 +122,9 @@ status: draft
 - [[AB.TRB-0001 — Main Turbine Abnormality]]
 - [[AB.SW-0003 — Service Water Bay Leak]]
 - [[AB.SSP-0001 — Station Shutdown Power]]
+- [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
+- [[AB.ROD-0002 — Dropped Rod]]
+- [[AB.FUEL-0001 — Fuel Handling Incident]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
@@ -154,3 +161,4 @@ status: draft
 - [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
 - [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
 - [[SC.OP-SO.CA-0001 — SBO Diesel Control Air]]
+- [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]]

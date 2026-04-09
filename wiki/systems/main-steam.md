@@ -51,6 +51,11 @@ Transports steam from the four steam generators to the turbine-generator and oth
 <span class="hi-exam">MSLI signals for high steam flow with Lo-Lo Tavg CANNOT be blocked</span> — not even by manually actuating and resetting SI. If steam dump rate is too high during EOP-directed depressurization, high steam flow + P-12 (Lo-Lo Tavg) will actuate MSLI, closing all MSIVs and making steam dumps unavailable. Continue depressurization via MS10 atmospheric dump valves. High steamline differential pressure causes SI, not MSLI — different signals.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q12</div>
+MSLI actuation setpoints: High steam flow (<span class="val-trip">>40%</span>) coincident with either <span class="hi-exam">Low-Low Tavg (<span class="val-trip">≤543°F</span> on 2/4 loops) OR Low SG Pressure (<span class="val-trip"><600 psig</span>)</span>. Also actuates on Containment Pressure <span class="val-trip">>15 psig</span>. <span class="hi-trap">SG Pressure differential >100 psig between one SG and the others actuates SI only (not MSLI) — different signals.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.1 MSSVs, TS 3.7.1.5 MSIVs
@@ -63,5 +68,6 @@ EOP-FRHS-1 condensate pump feed: isolate all MS lines EXCEPT the selected SG (22
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related exam questions: [[2022 Q12]]
 - Related JPMs: [[2023 JPM Sim-e]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

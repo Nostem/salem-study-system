@@ -38,7 +38,12 @@ If vibration parameters are below Attachment 1 trip criteria (shaft <span class=
 A <span class="hi-exam">#3 seal leak</span> is indicated by STANDPIPE LEVEL-LO alarm with #1 seal leakoff steady at 1.5 gpm (normal, indicating intact #2 seal). Action: <span class="hi-exam">make-up to the standpipe per the ARP; power operation may continue</span>. AB.RCP-0001 does not provide specific direction for a #3 seal leak. <span class="hi-trap">Trap: the orderly shutdown and stop RCP within 8 hours action applies to a degraded #2 seal, not a #3 seal leak.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q5</div>
+Loss of CCW thermal barrier: if <span class="hi-exam">1CC190 closes (common return), ALL RCP thermal barriers lose CCW</span>. RCPs may continue running if charging flow is maintained. <span class="hi-trap">Trip RCP within 2 minutes only if BOTH CCW and charging are lost.</span>
+</div>
+
 ## Connections
 - Related systems: [[Reactor Coolant Pumps]], [[Component Cooling Water]]
-- Related exam questions: [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2022 Q5]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

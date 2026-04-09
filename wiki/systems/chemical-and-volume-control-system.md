@@ -57,6 +57,11 @@ VCT level control logic: <span class="hi-exam">only LT-112 actuates automatic ma
 - **Excess letdown:** Alternate path available if normal letdown is unavailable
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q6</div>
+23 Charging Pump speed controller has a low speed stop maintaining <span class="hi-exam">minimum charging flow of <span class="val-normal">47 gpm</span> for RCP seal injection</span>. When MFC demand lowers, charging flow stops at 47 gpm (not zero). Per AB.CVC-0001 step 3.109, if MFC malfunction with 23 Charging Pump in service, <span class="hi-exam">take manual control of 23 Charging Pump Speed Controller</span>. <span class="hi-trap">Not 2CV55 — 2CV55 only controls flow with centrifugal charging pumps, not the positive displacement 23 Charging Pump.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q3</div>
 CV71 acts as a backpressure control valve affecting both charging and seal injection flows. <span class="hi-exam">Throttling CV71 CLOSED raises backpressure → seal injection flow RISES and charging flow LOWERS. Throttling CV71 OPEN lowers backpressure → seal injection flow LOWERS and charging flow RISES.</span> This relationship is critical during RCS leak response when adjusting charging to stabilize PZR level.
 </div>
@@ -107,6 +112,6 @@ EOP-LOCA-2 auxiliary spray depressurization: open <span class="hi-exam">2CV75 (A
 
 - Related concepts: [[Nuclear Design]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
-- Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]]
+- Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]]
 - Related JPMs: [[2023 JPM Sim-c]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

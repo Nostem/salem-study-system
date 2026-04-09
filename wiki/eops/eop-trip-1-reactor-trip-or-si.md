@@ -40,9 +40,14 @@ EOP-TRIP-4 CAS directs <span class="hi-exam">actuate SI and return to EOP-TRIP-1
 Entry from CW malfunction: per AB.CW-0001, with <span class="hi-exam">4 or more circulators out of service at &ge;P-10 power</span>, trip the reactor and enter EOP-TRIP-1.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q3</div>
+Step 12, Safeguard Valve Alignment: check <span class="hi-exam">2CC1 SAFEGUARDS ACTUATION Bezels — Red light LIT = train actuated, OUT = failed</span>. On 2RP4, lights OUT = component failed to reposition. If any safeguards valve not in required position, <span class="hi-exam">place valves in safeguards position manually</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[Instrumentation and Controls]], [[Emergency Core Cooling Systems]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]]
-- Related exam questions: [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2022 Q3]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

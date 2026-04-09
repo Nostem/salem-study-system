@@ -35,6 +35,16 @@ Closed-loop cooling water system that provides an intermediate barrier between p
 - Loss of CCW to RCPs requires RCP trip to protect seals and thermal barrier (UFSAR 5.5.1.3.14)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q5</div>
+<span class="hi-exam">1CC190 (CCW Thermal Barrier Isolation Valve) is on the COMMON CCW return line</span> — closing it isolates thermal barrier return from <span class="hi-exam">ALL RCPs</span> (not just one). <span class="hi-trap">Individual RCP isolation valves are the CC130s (one per RCP).</span> RCPs may continue operating as long as charging flow is maintained for seal injection.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q8</div>
+Per AB.CC-0001 Attachment 1, RCP motor bearing temperature limit requiring <span class="hi-exam">reactor trip and stopping the affected RCP is <span class="val-trip">175°F</span></span>.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q4</div>
 RCP Thermal Barrier rupture indications: <span class="hi-exam">CCW surge tank level rises</span> (RCS leaks OUT to CCW), <span class="hi-exam">R17A/B CCW radiation monitors rise</span> (detecting RCS activity in CCW), and <span class="hi-exam">CC131 (RCP Thermal Barrier Valve) closes</span> on high CCW flow to the thermal barrier. PZR level does NOT rise — RCS is leaking out, not in. Charging flow does NOT lower.
 </div>
@@ -61,5 +71,5 @@ SFP Heat Exchanger tube rupture: components supplied by CCW with pressure less t
 
 ## Connections
 
-- Related exam questions: [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]]
+- Related exam questions: [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]]
 - Related exam: [[2023 NRC Written Exam]]

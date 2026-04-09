@@ -32,6 +32,11 @@ Collects, processes, monitors, and releases gaseous radioactive waste. Sources i
 - **Effluent monitors:** Monitor liquid and gaseous releases at the point of discharge
 (UFSAR 11.4)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q23</div>
+2R41D (Plant Vent radiation monitor) in ALARM automatically closes: <span class="hi-exam">2WG41 (GDT Vent Control Valve — terminates waste gas release)</span>, <span class="hi-exam">2VC1 and 2VC4 dampers (containment purge)</span>, and <span class="hi-exam">2VC5 and 2VC6 dampers (containment pressure relief)</span>. Also aligns 2R45 skid to accident sampling loop.
+</div>
+
 ## Solid Radwaste System
 
 Processes and packages solid radioactive waste including spent resins, filter cartridges, dry active waste, and evaporator concentrates for storage and offsite disposal. (UFSAR 11.5)
@@ -73,6 +78,6 @@ Waste Gas Decay Tank release (S2.OP-SO.WG-0008): latch-and-set sequence on 2WG41
 
 - Related concepts: [[Radiation Protection]]
 - Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
-- Related exam questions: [[2023 Q61]], [[2023 Q68]], [[2023 Q90]], [[2023 Q98]]
+- Related exam questions: [[2023 Q61]], [[2023 Q68]], [[2023 Q90]], [[2023 Q98]], [[2022 Q23]]
 - Related JPMs: [[2023 JPM IP-k]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -62,6 +62,11 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 125VDC distribution includes a <span class="hi-exam">mechanical interlock preventing normal and backup bus paralleling</span>. The interlock requires the normal supply breaker to be OPEN before the backup (emergency) breaker can close. <span class="hi-exam">Transfer to backup DC bus is ONLY permitted during Modes 5, 6, or defueled</span> — paralleling in Modes 1-4 would make DC buses inoperable.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q15</div>
+Normal 125VDC bus with charger supplying: <span class="hi-exam">~<span class="val-normal">134 VDC</span>, 0 amps on 2RP9</span> (battery floating). Battery supplying: lower voltage, amps > 0. OHA B-2 (125VDC CNTRL BUS VOLT LO) alarms at <span class="val-alarm">≤128 VDC</span>. To remain at power: <span class="hi-exam">manually align standby (2A2 125 VDC) battery charger</span>. <span class="hi-trap">DC bus cross-tie only permitted in Modes 5, 6, or Defueled.</span>
+</div>
+
 ## Key Design Points
 
 - DC power is critical for safety functions — provides control power independent of AC
@@ -78,5 +83,5 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 
 ## Connections
 
-- Related exam questions: [[2023 Q9]], [[2023 Q46]], [[2023 Q47]]
+- Related exam questions: [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]]
 - Related exam: [[2023 NRC Written Exam]]

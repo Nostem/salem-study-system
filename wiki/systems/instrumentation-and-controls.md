@@ -162,6 +162,11 @@ Master Pressure Controller (MPC) controls PZR spray valves and backup heaters. I
 
 Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass breaker (52/BYA and 52/BYB). Trip signal deenergizes undervoltage coils and actuates shunt trip. <span class="hi-exam">If a bypass breaker is closed for testing and the other train's bypass breaker is also closed, both trip breakers and bypass breakers are automatically tripped by the General Warning Alarm.</span> (UFSAR 7.2.2)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q1</div>
+SSPS Train A de-energizes UV coils for <span class="hi-exam">RTB 'A' and BYB 'B'</span>, energizes shunt coil for <span class="hi-exam">RTB 'A' only</span>. SSPS Train B de-energizes UV coils for <span class="hi-exam">RTB 'B' and BYB 'A'</span>, energizes shunt coil for <span class="hi-exam">RTB 'B' only</span>. <span class="hi-trap">Shunt coils also energize from: Manual SI, Pistol Grip switches, or RTB PB bezels on CC2 — these are separate from SSPS train outputs.</span>
+</div>
+
 ## Nuclear Instrumentation Ranges
 
 - **Source Range:** Two channels, used during shutdown and startup
@@ -251,3 +256,4 @@ Rod Drive M-G Set paralleling (S1.OP-SO.RCS-0001): incoming set voltage adjusted
   - [[2023 Q80]] — ATWS FRSM-1 turbine trip verification via stop valve bi-stables on 2RP4
   - [[2023 Q82]] — IR NIS P-6 permissive / TS 3.3.1.1 bases for 24-hour action time
   - [[2023 Q92]] — PZR pressure channel failure / spurious trip+SI / RAL 11.3.2 reportability
+  - [[2022 Q1]] — SSPS Train A/B UV coil and shunt coil assignments to RTBs/BYBs

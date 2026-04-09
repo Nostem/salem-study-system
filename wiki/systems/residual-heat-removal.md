@@ -73,6 +73,11 @@ To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining consta
 
 The RHR system is isolated from the RCS by two normally closed motor-operated valves in each suction line. These valves are interlocked to prevent opening when RCS pressure is above the RHR system design pressure. (UFSAR 5.5.7.3.2)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q7</div>
+2RH1 and 2RH2 (RHR Suction Isolation Valves) are interlocked to <span class="hi-exam">PREVENT OPENING until PT-403 and PT-405 < <span class="val-normal">375 psig</span></span> — they do <span class="hi-trap">NOT auto-close on high RCS pressure. Must be manually closed during RCS heatup.</span> Design pressures: suction piping <span class="hi-exam">450 psig</span>, discharge piping <span class="hi-exam">600 psig</span> (design temp 400°F). Suction relief valve lifts at <span class="val-trip">350 psig</span>. POPs actuates at RCS > <span class="val-trip">375 psig</span> opening both PZR PORVs.
+</div>
+
 ## LOCA Recirculation Mode
 
 During LOCA recirculation, the RHR pumps take suction from the containment sump and pump radioactive borated water (with H₂ and NaOH in solution) through the RHR heat exchangers and into the RCS. (UFSAR T5.5-1)
@@ -95,6 +100,6 @@ EOP-LOCA-4 hot leg recirculation with 21 RHR pump C/T: Step 4.0 directs <span cl
 ## Connections
 
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
-- Related exam questions: [[2023 Q30]], [[2023 Q79]]
+- Related exam questions: [[2023 Q30]], [[2023 Q79]], [[2022 Q7]]
 - Related JPMs: [[2023 JPM Sim-b]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

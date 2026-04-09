@@ -43,6 +43,11 @@ CFCU SW flow orifices maintain <span class="hi-exam">constant SW flow rate throu
 <span class="hi-exam">SW122 (SW Inlet Control Valve to CCW HX) fails OPEN on loss of instrument air</span> (fails closed on loss of 125VDC). Loss of air to SW122 → valve fails open → increased SW flow through CCW HX → lower CCW temperature → lower RHR HX outlet temperature → <span class="hi-exam">increased RCS cooldown rate</span>. Per AB.CA-0001, SW122 can be manually operated.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q16</div>
+OHA B-48 (SW VLV RM FLOODED) indicates leak in <span class="hi-exam">SW valve room on 78' Mechanical Penetration Area</span>. CFCU piping passes through this room before entering containment. <span class="hi-exam">A SW leak in this room is most likely from CFCU piping.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.4 requires two independent SW loops OPERABLE in Modes 1–4
@@ -56,6 +61,6 @@ CFCU surveillance: SW flow minimum <span class="hi-exam">>=1465 gpm</span> requi
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
-- Related exam questions: [[2023 Q24]], [[2023 Q50]], [[2023 Q51]]
+- Related exam questions: [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]]
 - Related JPMs: [[2023 JPM Sim-f]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

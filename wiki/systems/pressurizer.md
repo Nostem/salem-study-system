@@ -65,6 +65,11 @@ Transfer to emergency backup source is MANUAL (not automatic). EOP-LOSC-2 step 2
 Following a reactor trip + SI with instrument air to containment isolated, PORVs cycle on accumulators. When air is restored (<span class="hi-exam">accumulators automatically isolate and realign to normal containment control air when pressure is restored — above 90 psig normal supply vs. below 85 psig accumulator</span>). No manual action is required for accumulator realignment. <span class="hi-exam">Pressurizer spray valves reopen when air is restored</span> because the Master Pressure Controller (MPC) will have demand to open spray valves post-trip.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q2</div>
+PZR safety valve leak is a <span class="hi-exam">throttling/constant enthalpy process</span>. Tailpipe temperature determined by following the enthalpy line on a Mollier diagram to PRT pressure. At RCS <span class="val-normal">1900 psig</span> (1915 psia, hg ~1140 BTU/lb), throttling to PRT <span class="val-normal">35 psig</span> (50 psia) yields tailpipe temperature of approximately <span class="hi-exam">282°F</span>.
+</div>
+
 ## Pressurizer Relief Tank
 
 | Parameter | Value | Source |
@@ -98,6 +103,16 @@ MPC fails low (0% output): <span class="hi-exam">spray valves close</span> (cont
 PZR vapor space leak (SBLOCA): at RCS pressure <span class="hi-exam">1450 psig</span> stable with subcooling 10°F and PZR level 30% rising, both <span class="hi-exam">charging and SI pumps are injecting</span>. SI termination criteria in EOP-LOCA-1 are met — transition to EOP-TRIP-3, not directly to EOP-LOCA-2. Ultimately: LOCA-1 → TRIP-3 → LOCA-2.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q9</div>
+AB.PZR-0001 directs <span class="hi-exam">manual reactor trip when RCS pressure reaches <span class="val-trip">2000 psig</span> and lowering</span> (spray valve failed open scenario). Reason: prevent challenging the <span class="hi-exam">automatic reactor trip on OT Delta-T</span>. <span class="hi-trap">Not low PZR pressure — the auto trip on low PZR pressure is <span class="val-trip">1865 psig</span> (rate-compensated), which is well below 2000 psig. OT Delta-T trips first as pressure lowers because the OT Delta-T setpoint has a +K3*P pressure input.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q21</div>
+PZR reference leg leak causes indicated level to read <span class="hi-exam">HIGHER</span> (lower reference leg head → lower DP across transmitter → controller interprets as higher level). Master Flow Controller responds by <span class="hi-exam">lowering charging flow</span>, so <span class="hi-trap">actual PZR level LOWERS while indication rises — a divergence between actual and indicated level</span>.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.4]]** — Pressurizer (level and heater requirements)
@@ -127,6 +142,6 @@ EOP-FRHS-1 Bleed and Feed: if PORV 2PR2 fails to open, open <span class="hi-exam
 
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q32]], [[2023 Q34]], [[2023 Q76]], [[2023 Q87]], [[2023 Q92]]
+- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q32]], [[2023 Q34]], [[2023 Q76]], [[2023 Q87]], [[2023 Q92]], [[2022 Q2]], [[2022 Q9]], [[2022 Q21]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
