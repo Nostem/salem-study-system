@@ -95,7 +95,7 @@ SI pump shutoff head is <span class="hi-exam">1520 psig</span>. If RCS pressure 
 | Design Temperature | 400°F | UFSAR T6.3-5 |
 | Design Flow Rate | 3000 gpm | UFSAR T6.3-5 |
 | Design Head | 350 ft | UFSAR T6.3-5 |
-| Max Flow Rate | 4500 gpm | UFSAR T6.3-5 |
+| Max Flow Rate | <span class="hi">4500 gpm</span> | UFSAR T6.3-5 |
 | Shutoff Discharge Pressure | <span class="hi">170 psig</span> | UFSAR T6.3-5 |
 | Motor HP | 400 | UFSAR T6.3-5 |
 
