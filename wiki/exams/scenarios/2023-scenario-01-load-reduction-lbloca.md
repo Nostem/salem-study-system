@@ -24,7 +24,7 @@ aliases:
 <li><span class="hi">24 Vacuum Pump trips</span></li>
 <li><span class="hi">2N41 Power Range Channel Fails High (TS)</span></li>
 <li><span class="hi">RCS Leak — 20 gpm (TS)</span></li>
-<li>Large Break LOCA (leak worsens to 350 gpm)</li>
+<li><span class="hi">Large Break LOCA</span> (leak worsens to 350 gpm)</li>
 <li>Auto SI fails to actuate on both trains</li>
 <li>#2 ECAC Fails to Start on SEC Signal</li>
 <li>Two Phase A valves (2CV116 and 284) fail to close</li>
