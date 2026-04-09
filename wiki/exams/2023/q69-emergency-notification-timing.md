@@ -44,5 +44,5 @@ Which of the following describes the time requirement for State and Local notifi
 
 ## Connections
 
-- Related procedures: [[EP-SA-325-F6 — Emergency Notification]]
+- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam: [[2023 NRC Written Exam]]

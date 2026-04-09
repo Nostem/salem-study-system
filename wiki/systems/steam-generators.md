@@ -113,7 +113,7 @@ ICMF peer check during SGTR: a release IS in progress because the <span class="h
 ## Connections
 
 - Related EOPs: [[EOP-SGTR-1]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]]
-- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325-F2 — Initial Contact Message Form]]
+- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam questions: [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

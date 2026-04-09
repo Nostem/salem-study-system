@@ -115,11 +115,9 @@ status: draft
 - [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
 - [[OP-AA-108-101-1001 — Equipment Lineup Verification]]
 - [[OP-AA-108-101-1002 — Independent/Concurrent Verification]]
-- [[EP-SA-325-F6 — Emergency Notification]]
+- [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - [[OP-SA-108-106-1001 — Equipment Control and Large Motor Starting Criteria]]
 - [[WC-AA-101 — On-Line Work Management Process]]
-- [[EP-SA-325-F2 — Initial Contact Message Form]]
-- [[EP-SA-325-F8 — Secondary Communicator Log]]
 - [[LS-AA-119-1003 — Calculating Work Hours]]
 - [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]]
 

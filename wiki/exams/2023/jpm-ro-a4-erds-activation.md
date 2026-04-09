@@ -97,5 +97,5 @@ Ref: EP-SA-325-F8 (R2) | Task: N1240110501 | K/A: G2.4.43 — Knowledge of emerg
 
 ## Connections
 
-- Related procedures: [[EP-SA-325-F8 — Secondary Communicator Log]]
+- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam: [[2023 NRC Operating Exam]]

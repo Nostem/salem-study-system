@@ -59,5 +59,5 @@ Which of the following completes both statements?<br>
 - Related systems: [[Chemical and Volume Control System]], [[Reactor Coolant System]]
 - Related procedures: [[AB.RC-0001]]
 - Related tech specs: [[TS 3.4.7.2]]
-- Related admin: [[EP-SA-325-F6 — Emergency Notification]]
+- Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam: [[2023 NRC Written Exam]]

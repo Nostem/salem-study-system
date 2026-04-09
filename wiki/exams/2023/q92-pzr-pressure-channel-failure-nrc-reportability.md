@@ -49,5 +49,5 @@ Based on the conditions above, which of the following correctly identifies the M
 
 - Related systems: [[Pressurizer]], [[Instrumentation and Controls]], [[Emergency Core Cooling Systems]]
 - Related procedures: [[AB.RC-0002]]
-- Related admin: [[EP-SA-325-F6 — Emergency Notification]]
+- Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam: [[2023 NRC Written Exam]]

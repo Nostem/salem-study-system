@@ -91,6 +91,6 @@ Ref: EP-SA-325-F2 (R1), EP-SA-325-102 (R1) | Task: N1240010502 | K/A: G2.4.40 �
 
 ## Connections
 
-- Related procedures: [[EP-SA-325-F2 — Initial Contact Message Form]]
+- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related systems: [[Steam Generators]], [[Auxiliary Feedwater]]
 - Related exam: [[2023 NRC Operating Exam]]
