@@ -194,8 +194,20 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
       return;
     }
 
+    // Determine the correct source file slug
+    // On master exam pages, the selection may be inside an embedded child article
+    // which has its own data-slug attribute on the .embedded-question container
+    let targetSlug = slug!;
+    let ancestor: Element | null = range.startContainer.parentElement;
+    while (ancestor && ancestor !== proseEl) {
+      if (ancestor.classList.contains('embedded-question') && ancestor.dataset.slug) {
+        targetSlug = ancestor.dataset.slug;
+        break;
+      }
+      ancestor = ancestor.parentElement;
+    }
+
     // Capture surrounding context BEFORE optimistic DOM update
-    // This helps disambiguate when the same text appears multiple times
     const textNode = range.startContainer;
     const fullText = textNode.textContent || '';
     const contextBefore = fullText.substring(Math.max(0, range.startOffset - 30), range.startOffset);
@@ -229,10 +241,11 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
       return;
     }
 
+    console.log('[Highlighter] Target slug:', targetSlug);
     console.log('[Highlighter] Selected text:', JSON.stringify(selectedText));
     console.log('[Highlighter] Context before:', JSON.stringify(contextBefore));
     console.log('[Highlighter] Context after:', JSON.stringify(contextAfter));
-    const result = await commitHighlight(slug!, selectedText, highlightClass, token, contextBefore, contextAfter);
+    const result = await commitHighlight(targetSlug, selectedText, highlightClass, token, contextBefore, contextAfter);
     toast.remove();
 
     if (result === true) {
