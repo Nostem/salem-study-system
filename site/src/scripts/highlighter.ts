@@ -275,9 +275,26 @@ async function commitHighlight(
       return 'Already highlighted';
     }
 
-    // Wrap with highlight span
-    const wrapped = `<span class="${highlightClass}">${selectedText}</span>`;
-    const newContent = content.substring(0, index) + wrapped + content.substring(index + selectedText.length);
+    // Determine the actual span of text in the original markdown
+    // (may be longer than selectedText if HTML tags are interspersed)
+    let endIndex = index;
+    let plainChars = 0;
+    while (endIndex < content.length && plainChars < selectedText.length) {
+      if (content[endIndex] === '<') {
+        const closeIdx = content.indexOf('>', endIndex);
+        if (closeIdx !== -1) { endIndex = closeIdx + 1; } else { endIndex++; }
+      } else {
+        plainChars++;
+        endIndex++;
+      }
+    }
+
+    const originalSpan = content.substring(index, endIndex);
+
+    // If the original span is just the plain text (no tags), wrap simply
+    // If it contains tags, we can still wrap the outer span around it
+    const wrapped = `<span class="${highlightClass}">${originalSpan}</span>`;
+    const newContent = content.substring(0, index) + wrapped + content.substring(endIndex);
 
     // Commit
     const label = HIGHLIGHT_TYPES[highlightClass] || highlightClass;
@@ -306,12 +323,45 @@ async function commitHighlight(
   }
 }
 
+function normalizeWhitespace(str: string): string {
+  return str.replace(/\s+/g, ' ').trim();
+}
+
 function findTextInMarkdown(markdown: string, selectedText: string, contextBefore: string = '', contextAfter: string = ''): number {
-  // Strip HTML tags from markdown for plain text matching (handles already-highlighted text)
+  // Strategy 1: Direct match in the raw markdown (works for plain markdown text)
+  const directIdx = markdown.indexOf(selectedText);
+  if (directIdx !== -1) return directIdx;
+
+  // Strategy 2: Whitespace-normalized match (handles <br> and newline differences)
+  const normSelected = normalizeWhitespace(selectedText);
+  const normMarkdown = normalizeWhitespace(markdown);
+  const normIdx = normMarkdown.indexOf(normSelected);
+  if (normIdx !== -1) {
+    // Map normalized index back to original — walk original counting non-excess-whitespace chars
+    let normCount = 0;
+    let origIdx = 0;
+    let inWhitespace = false;
+    // Skip leading whitespace in original to match normalization
+    while (origIdx < markdown.length && /\s/.test(markdown[origIdx])) origIdx++;
+    for (; origIdx < markdown.length && normCount < normIdx; origIdx++) {
+      if (/\s/.test(markdown[origIdx])) {
+        if (!inWhitespace) { normCount++; inWhitespace = true; }
+      } else {
+        normCount++;
+        inWhitespace = false;
+      }
+    }
+    // Verify
+    if (markdown.substring(origIdx, origIdx + selectedText.length) === selectedText) {
+      return origIdx;
+    }
+  }
+
+  // Strategy 3: Strip HTML tags, then match (handles inline HTML cards)
   const stripped = markdown.replace(/<[^>]+>/g, '');
 
-  // Find all occurrences of the selected text in the stripped version
-  const occurrences: number[] = [];
+  // Try exact match in stripped
+  let occurrences: number[] = [];
   let searchFrom = 0;
   while (true) {
     const idx = stripped.indexOf(selectedText, searchFrom);
@@ -320,81 +370,109 @@ function findTextInMarkdown(markdown: string, selectedText: string, contextBefor
     searchFrom = idx + 1;
   }
 
+  // Also try whitespace-normalized match in stripped
+  if (occurrences.length === 0) {
+    const normStripped = normalizeWhitespace(stripped);
+    const normStIdx = normStripped.indexOf(normSelected);
+    if (normStIdx !== -1) {
+      occurrences.push(normStIdx);
+    }
+  }
+
   if (occurrences.length === 0) return -1;
 
-  // If only one occurrence, find its position in the original markdown
-  if (occurrences.length === 1) {
-    return findOriginalIndex(markdown, stripped, occurrences[0], selectedText);
-  }
-
-  // Multiple occurrences — use context to disambiguate
-  let bestIdx = occurrences[0];
-  let bestScore = -1;
-
-  for (const idx of occurrences) {
-    let score = 0;
-    if (contextBefore) {
-      const beforeInStripped = stripped.substring(Math.max(0, idx - contextBefore.length), idx);
-      // Count matching characters from the end of contextBefore
-      for (let i = 0; i < Math.min(contextBefore.length, beforeInStripped.length); i++) {
-        if (contextBefore[contextBefore.length - 1 - i] === beforeInStripped[beforeInStripped.length - 1 - i]) {
-          score++;
-        } else {
-          break;
+  // Use context to disambiguate if multiple
+  let bestStrippedIdx = occurrences[0];
+  if (occurrences.length > 1 && (contextBefore || contextAfter)) {
+    let bestScore = -1;
+    for (const idx of occurrences) {
+      let score = 0;
+      if (contextBefore) {
+        const beforeInStripped = stripped.substring(Math.max(0, idx - contextBefore.length), idx);
+        for (let i = 0; i < Math.min(contextBefore.length, beforeInStripped.length); i++) {
+          if (contextBefore[contextBefore.length - 1 - i] === beforeInStripped[beforeInStripped.length - 1 - i]) {
+            score++;
+          } else break;
         }
       }
-    }
-    if (contextAfter) {
-      const afterInStripped = stripped.substring(idx + selectedText.length, idx + selectedText.length + contextAfter.length);
-      for (let i = 0; i < Math.min(contextAfter.length, afterInStripped.length); i++) {
-        if (contextAfter[i] === afterInStripped[i]) {
-          score++;
-        } else {
-          break;
+      if (contextAfter) {
+        const afterInStripped = stripped.substring(idx + selectedText.length, idx + selectedText.length + contextAfter.length);
+        for (let i = 0; i < Math.min(contextAfter.length, afterInStripped.length); i++) {
+          if (contextAfter[i] === afterInStripped[i]) {
+            score++;
+          } else break;
         }
       }
-    }
-    if (score > bestScore) {
-      bestScore = score;
-      bestIdx = idx;
+      if (score > bestScore) { bestScore = score; bestStrippedIdx = idx; }
     }
   }
 
-  return findOriginalIndex(markdown, stripped, bestIdx, selectedText);
+  return findOriginalIndex(markdown, stripped, bestStrippedIdx, selectedText);
 }
 
 function findOriginalIndex(markdown: string, stripped: string, strippedIdx: number, selectedText: string): number {
   // Map stripped index back to original markdown index
-  // Walk through the original markdown, skipping HTML tags, counting plain text chars
+  // Walk through the original, skipping HTML tags, counting plain text chars
   let plainCount = 0;
   let i = 0;
   while (i < markdown.length && plainCount < strippedIdx) {
     if (markdown[i] === '<') {
-      // Skip HTML tag
       const closeIdx = markdown.indexOf('>', i);
-      if (closeIdx !== -1) {
-        i = closeIdx + 1;
-      } else {
-        i++;
-      }
+      if (closeIdx !== -1) { i = closeIdx + 1; } else { i++; }
     } else {
       plainCount++;
       i++;
     }
   }
 
-  // Verify the text matches at this position (it might span across tags)
-  // Try direct match first
+  // Strategy A: Direct match at this position (text is contiguous, no tags in the way)
   if (markdown.substring(i, i + selectedText.length) === selectedText) {
     return i;
   }
 
-  // If not a direct match (text might have HTML tags interspersed), fall back to indexOf from this region
-  const nearbyStart = Math.max(0, i - 20);
+  // Strategy B: Nearby direct match (offset might be slightly off)
+  const nearbyStart = Math.max(0, i - 50);
   const nearbyEnd = Math.min(markdown.length, i + selectedText.length + 100);
   const nearbyIdx = markdown.indexOf(selectedText, nearbyStart);
   if (nearbyIdx !== -1 && nearbyIdx < nearbyEnd) {
     return nearbyIdx;
+  }
+
+  // Strategy C: Text spans across HTML tags (e.g., "<strong>CT#1:</strong> Close...")
+  // Verify by extracting plain text from position i forward and comparing
+  let verifyPlain = '';
+  let verifyEnd = i;
+  while (verifyEnd < markdown.length && verifyPlain.length < selectedText.length) {
+    if (markdown[verifyEnd] === '<') {
+      const closeIdx = markdown.indexOf('>', verifyEnd);
+      if (closeIdx !== -1) { verifyEnd = closeIdx + 1; } else { verifyEnd++; }
+    } else {
+      verifyPlain += markdown[verifyEnd];
+      verifyEnd++;
+    }
+  }
+
+  if (verifyPlain === selectedText) {
+    // The text matches but has HTML tags interspersed.
+    // We can't simply wrap — we need to find the innermost element that fully contains the text.
+    // For now, try to find the opening tag before position i and wrap at a clean boundary.
+
+    // Walk backward to find the nearest opening tag
+    let tagStart = i;
+    while (tagStart > 0 && markdown[tagStart - 1] !== '>') tagStart--;
+
+    // Check if the text from tagStart is just whitespace then our text
+    const between = markdown.substring(tagStart, i);
+    if (/^\s*$/.test(between)) {
+      // Clean boundary — the text starts right after a tag close
+      // Find where our text ends in the original (verifyEnd is past the last char)
+      // Return i as the start position, but we need special handling for the length
+      // For simplicity, return i and let the caller handle tag-spanning text
+      return i;
+    }
+
+    // Fallback: return i anyway — the commit will attempt to replace just the plain text
+    return i;
   }
 
   return -1;
