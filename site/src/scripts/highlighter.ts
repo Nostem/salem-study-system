@@ -176,8 +176,10 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
     const selection = window.getSelection();
     if (!selection || selection.isCollapsed) return;
 
-    const selectedText = normalizeQuotes(selection.toString().trim());
-    if (!selectedText) return;
+    const rawSelectedText = selection.toString().trim();
+    if (!rawSelectedText) return;
+    // Strip list markers that browsers prepend from <ol>/<ul> selections (e.g., "1. ", "2. ", "• ")
+    const selectedText = rawSelectedText.replace(/^(\d+\.\s+|[•●◦▪]\s+)/gm, '');
 
     const range = selection.getRangeAt(0);
 
@@ -227,6 +229,9 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
       return;
     }
 
+    console.log('[Highlighter] Selected text:', JSON.stringify(selectedText));
+    console.log('[Highlighter] Context before:', JSON.stringify(contextBefore));
+    console.log('[Highlighter] Context after:', JSON.stringify(contextAfter));
     const result = await commitHighlight(slug!, selectedText, highlightClass, token, contextBefore, contextAfter);
     toast.remove();
 
@@ -451,12 +456,13 @@ function findAllOccurrences(text: string, search: string): number[] {
   return results;
 }
 
+// Only normalize invisible Unicode variants — do NOT change visible characters
+// like em-dashes, as the source markdown contains them literally
 function normalizeQuotes(str: string): string {
   return str
     .replace(/[\u2018\u2019\u201A\u201B]/g, "'")  // curly single quotes → straight
-    .replace(/[\u201C\u201D\u201E\u201F]/g, '"')   // curly double quotes → straight
-    .replace(/\u2013/g, '-')                         // en-dash → hyphen
-    .replace(/\u2014/g, '--');                        // em-dash → double hyphen
+    .replace(/[\u201C\u201D\u201E\u201F]/g, '"');  // curly double quotes → straight
+    // NOTE: do NOT convert en-dash/em-dash — they exist literally in the source
 }
 
 function escapeRegex(str: string): string {
