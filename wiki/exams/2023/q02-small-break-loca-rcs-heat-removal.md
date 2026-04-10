@@ -47,6 +47,6 @@ What is the primary method for RCS heat removal for current plant conditions?
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Steam Generators]]
+- Related systems: [[RCS]], [[ECCS]], [[Steam Generator & Blowdown]]
 - Related procedures: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
 - Related exam: [[2023 NRC Written Exam]]

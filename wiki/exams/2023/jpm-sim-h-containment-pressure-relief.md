@@ -128,5 +128,5 @@ Ref: S2.OP-SO.CBV-0002 (R18), S2.OP-AB.RAD-0001 (R30), S2.OP-AR.ZZ-0001 (R60) | 
 ## Connections
 
 - Related procedures: [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[AB.RAD-0001 — Radiation Monitor Abnormality]]
-- Related systems: [[Containment Systems]], [[Instrumentation and Controls]]
+- Related systems: [[Containment]], [[RPS/SSPS]]
 - Related exam: [[2023 NRC Operating Exam]]

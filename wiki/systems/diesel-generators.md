@@ -7,7 +7,6 @@ aliases:
   - diesel generators
   - diesel generator
   - EDG
-  - Diesel Generators
 ---
 
 # EDGs

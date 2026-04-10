@@ -3,7 +3,6 @@ title: Main Turbine
 category: systems
 status: draft
 aliases:
-  - Turbine-Generator
   - turbine generator
   - turbine
   - T/G

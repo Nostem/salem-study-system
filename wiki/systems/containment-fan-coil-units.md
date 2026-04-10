@@ -3,7 +3,6 @@ title: CFCUs
 category: systems
 status: draft
 aliases:
-  - Containment Fan Coil Units
   - containment cooling
   - containment fan coolers
 ---

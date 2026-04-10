@@ -42,5 +42,5 @@ Which of the following describes the operational impact to the CVCS system and t
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]], [[Emergency Core Cooling Systems]]
+- Related systems: [[CVCS]], [[ECCS]]
 - Related exam: [[2023 NRC Written Exam]]

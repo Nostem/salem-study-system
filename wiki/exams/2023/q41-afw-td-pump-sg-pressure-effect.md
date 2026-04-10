@@ -43,6 +43,6 @@ When SG pressures lowers to 700 psig, 23 AFW turbine speed will <strong><span cl
 
 ## Connections
 
-- Related systems: [[Auxiliary Feedwater]], [[Main Steam]], [[Steam Generators]]
+- Related systems: [[AFW]], [[Main Steam]], [[Steam Generator & Blowdown]]
 - Related procedures:
 - Related exam: [[2023 NRC Written Exam]]

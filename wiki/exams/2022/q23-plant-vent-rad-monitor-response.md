@@ -49,6 +49,6 @@ Note: 2WG41, GDT VENT CONT VLV<br>
 
 ## Connections
 
-- Related systems: [[Radioactive Waste Management]]
+- Related systems: [[Waste Gas]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related exam: [[2022 NRC Written Exam]]

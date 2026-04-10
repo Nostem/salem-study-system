@@ -49,6 +49,6 @@ Which of the following describes the expected alarm(s) and/or indication(s) for 
 
 ## Connections
 
-- Related systems: [[Radiation Protection]]
+- Related systems: [[Radiation Monitoring]]
 - Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]]
 - Related exam: [[2022 NRC Written Exam]]

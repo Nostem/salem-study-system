@@ -22,6 +22,6 @@ R13 radiation monitors monitor CFCU Service Water discharge. CFCU Service Water 
 
 ## Connections
 
-- Related systems: [[Service Water]], [[Containment Fan Coil Units]]
+- Related systems: [[Service Water]], [[CFCUs]]
 - Related exam questions: [[2023 Q13]]
 - Related exam: [[2023 NRC Written Exam]]

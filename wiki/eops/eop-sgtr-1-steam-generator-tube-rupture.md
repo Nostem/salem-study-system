@@ -27,7 +27,7 @@ EOP-TRIP-7 Rediagnosis transitions to EOP-SGTR-1 when symptoms include <span cla
 
 ## Connections
 
-- Related systems: [[Steam Generators]], [[Reactor Coolant System]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]]
 - Related exam questions: [[2022 Q11]], [[2022 Q25]]
 - Related exam: [[2022 NRC Written Exam]]

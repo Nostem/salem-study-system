@@ -22,7 +22,7 @@ OHA D-28 RCP BKR OPEN/FLO LO — if RCS flow degradation exists, trip the reacto
 
 ## Connections
 
-- Related systems: [[Reactor Coolant Pumps]]
+- Related systems: [[RCPs]]
 - Related procedures: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam questions: [[2023 Q1]]
 - Related exam: [[2023 NRC Written Exam]]

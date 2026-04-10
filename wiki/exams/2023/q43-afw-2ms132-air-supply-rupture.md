@@ -43,6 +43,6 @@ Which of the following completes both statements?<br><br>
 
 ## Connections
 
-- Related systems: [[Auxiliary Feedwater]], [[Main Steam]]
+- Related systems: [[AFW]], [[Main Steam]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[AB.CA-0001 — Loss of Control Air]]
 - Related exam: [[2023 NRC Written Exam]]

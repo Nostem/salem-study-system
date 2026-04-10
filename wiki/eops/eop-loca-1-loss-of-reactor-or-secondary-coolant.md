@@ -38,6 +38,6 @@ Step 7.4 (stopping containment spray pumps) is a <span class="hi-exam">continuou
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Containment Systems]]
+- Related systems: [[RCS]], [[ECCS]], [[Containment]]
 - Related exam questions: [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related exam: [[2023 NRC Written Exam]]

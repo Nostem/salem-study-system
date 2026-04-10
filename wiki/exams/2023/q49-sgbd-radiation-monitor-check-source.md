@@ -43,6 +43,6 @@ Per S1.OP-ST.RM-0001, Radiation Monitors - Check Source, which of the following 
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[Steam Generators]]
+- Related systems: [[RPS/SSPS]], [[Steam Generator & Blowdown]]
 - Related procedures: [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
 - Related exam: [[2023 NRC Written Exam]]

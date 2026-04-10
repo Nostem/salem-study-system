@@ -42,5 +42,5 @@ What is the confirming indication and operational concern?
 
 ## Connections
 
-- Related systems: [[Turbine-Generator]]
+- Related systems: [[Main Turbine]]
 - Related exam: [[2023 NRC Written Exam]]

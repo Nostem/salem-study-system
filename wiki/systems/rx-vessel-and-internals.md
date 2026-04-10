@@ -8,9 +8,6 @@ aliases:
   - RV
   - reactor core
   - fuel assemblies
-  - Reactor Core and Fuel
-  - Reactor Vessel
-  - Nuclear Design
   - nuclear design parameters
   - reactivity coefficients
   - fuel rods
@@ -300,7 +297,7 @@ Axial peaking factor increase: with the core axial power distribution already pe
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.9]]** — RCS Specific Activity
 - Pressure-temperature limits governed by Appendix G analysis
-- **TS 3/4.1** — [[TS 3/4.1 — Reactivity Control]] (shutdown margin, rod operability, rod insertion limits)
+- **TS 3/4.1** — [[TS 3/4.1.1 — Boration Control]] (shutdown margin, rod operability, rod insertion limits)
 - **TS 3/4.2** — [[TS 3/4.2 — Power Distribution]] (FQ, F-delta-H, axial flux difference)
 - **TS 3/4.1.1** — Shutdown Margin
 - **TS 3/4.1.2** — Boration Systems ([[CVCS]])
@@ -311,6 +308,6 @@ Axial peaking factor increase: with the core axial power distribution already pe
 
 ## Connections
 
-- Related concepts: [[Reactivity and Reactor Control]]
+- Related concepts: [[Rx Vessel & Internals]]
 - Related exam questions: [[2023 Q70]], [[2023 Q71]], [[2023 Q75]]
 - Related exam: [[2023 NRC Written Exam]]

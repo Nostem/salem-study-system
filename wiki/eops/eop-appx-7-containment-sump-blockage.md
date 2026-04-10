@@ -22,7 +22,7 @@ Step 43, MAINTAINING RCS HEAT REMOVAL: when all RCPs are stopped and sump recirc
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Steam Generators]]
+- Related systems: [[ECCS]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
 - Related exam questions: [[2022 Q04]]
 - Related exam: [[2022 NRC Written Exam]]

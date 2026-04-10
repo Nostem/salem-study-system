@@ -48,6 +48,6 @@ Which ONE of the following completes both statements?<br><br>
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]]
+- Related systems: [[CVCS]]
 - Related procedures: [[AB.CVC-0001 — Loss of Charging]]
 - Related exam: [[2022 NRC Written Exam]]

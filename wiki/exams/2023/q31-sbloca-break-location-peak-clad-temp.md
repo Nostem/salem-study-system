@@ -40,5 +40,5 @@ Which RCS break location results in the highest peak clad temperature during a S
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Reactor Coolant System]]
+- Related systems: [[ECCS]], [[RCS]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -43,6 +43,6 @@ Per S2.OP-AB.460-0001, Loss of 2A 460 V Bus, which of the following describes th
 
 ## Connections
 
-- Related systems: [[AC Power]], [[Chemical and Volume Control System]], [[Pressurizer]], [[DC Power]]
+- Related systems: [[500KV]], [[CVCS]], [[Pressurizer & PRT]], [[DC Power]]
 - Related procedures: [[AB.460-0001 — Loss of 2A 460V Bus]]
 - Related exam: [[2023 NRC Written Exam]]

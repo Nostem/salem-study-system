@@ -32,7 +32,7 @@ Containment pressure relief high radiation: Attachment 1, Step 10 directs ensuri
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[Containment Systems]]
+- Related systems: [[RPS/SSPS]], [[Containment]]
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related exam questions: [[2022 Q23]], [[2023 Q62]]
 - Related JPMs: [[2023 JPM Sim-h]]

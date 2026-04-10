@@ -47,6 +47,6 @@ Which ONE of the following completes both statements?<br>
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related procedures: [[AB.ROD-0002 — Dropped Rod]]
 - Related exam: [[2022 NRC Written Exam]]

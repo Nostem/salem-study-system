@@ -48,6 +48,6 @@ Which of the following completes both statements?<br>
 
 ## Connections
 
-- Related systems: [[Radioactive Waste Management]]
+- Related systems: [[Waste Gas]]
 - Related procedures: [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
 - Related exam: [[2023 NRC Written Exam]]

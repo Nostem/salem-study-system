@@ -109,7 +109,7 @@ Source: 20-01 ESG-2 | <a href="/salem-study-system/exam-pdfs/2023-scenario-02.pd
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[Chemical and Volume Control System]], [[Service Water]], [[Feedwater and Condensate]], [[Main Steam]], [[Steam Generators]], [[Auxiliary Feedwater]], [[Containment Systems]], [[Emergency Core Cooling Systems]], [[Containment Fan Coil Units]], [[Reactor Coolant Pumps]], [[Reactor Coolant System]]
+- Related systems: [[Pressurizer & PRT]], [[CVCS]], [[Service Water]], [[Feed & Condensate]], [[Main Steam]], [[Steam Generator & Blowdown]], [[AFW]], [[Containment]], [[ECCS]], [[CFCUs]], [[RCPs]], [[RCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-3 — SI Termination]]
 - Related procedures: [[AB.CN-0001 — Condensate System Abnormality]], [[AB.LOAD-0001 — Rapid Load Reduction]]
 - Related exam: [[2023 NRC Operating Exam]]

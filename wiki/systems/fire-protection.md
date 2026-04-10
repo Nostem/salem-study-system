@@ -14,4 +14,4 @@ Provides fire detection, alarm, and suppression systems throughout the plant. In
 
 ## Connections
 
-- Related systems: [[Plant Protection Systems]]
+- Related systems: [[Fire Protection]]

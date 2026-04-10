@@ -23,6 +23,6 @@ For a dropped fuel assembly in the spent fuel pool: <span class="hi-exam">2R5 or
 
 ## Connections
 
-- Related systems: [[Radiation Protection]]
+- Related systems: [[Radiation Monitoring]]
 - Related exam questions: [[2022 Q22]]
 - Related exam: [[2022 NRC Written Exam]]

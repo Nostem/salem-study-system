@@ -43,6 +43,6 @@ AFW storage tank level will ...
 
 ## Connections
 
-- Related systems: [[Auxiliary Feedwater]]
+- Related systems: [[AFW]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]]
 - Related exam: [[2023 NRC Written Exam]]

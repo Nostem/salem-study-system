@@ -34,6 +34,6 @@ The question stem, answer choices, and detailed justifications are not available
 
 ## Connections
 
-- Related systems: [[Steam Generators]]
+- Related systems: [[Steam Generator & Blowdown]]
 - Related procedures: [[EOP-FRHS-2 — Response to Steam Generator Overpressure]]
 - Related exam: [[2023 NRC Written Exam]]

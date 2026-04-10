@@ -42,6 +42,6 @@ What speed and filter alignment is required for CFCUs?
 
 ## Connections
 
-- Related systems: [[Containment Fan Coil Units]]
+- Related systems: [[CFCUs]]
 - Related procedures: [[EOP-FRCE-3 — Response to High Containment Radiation Levels]]
 - Related exam: [[2023 NRC Written Exam]]

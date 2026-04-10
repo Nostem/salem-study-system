@@ -32,7 +32,7 @@ Steps 7.2-7.5 condensate pump feed: select one SG (22 or 24 preferred — <span 
 
 ## Connections
 
-- Related systems: [[Main Steam]], [[Auxiliary Feedwater]], [[Reactor Coolant System]], [[Feedwater and Condensate]]
+- Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[Feed & Condensate]]
 - Related exam questions: [[2023 Q18]]
 - Related JPMs: [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

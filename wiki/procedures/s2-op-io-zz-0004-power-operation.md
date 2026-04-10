@@ -28,7 +28,7 @@ If an event causes reactor power to rise above 100% RTP (e.g., AFW turbine steam
 
 ## Connections
 
-- Related systems: [[Reactor Core and Fuel]], [[Instrumentation and Controls]]
+- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]]
 - Related abnormals: [[AB.CA-0001 — Loss of Control Air]]
 - Related exam questions: [[2023 Q43]]
 - Related exam: [[2023 NRC Written Exam]]

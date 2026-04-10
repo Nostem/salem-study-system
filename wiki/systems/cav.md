@@ -21,4 +21,4 @@ Provides ventilation, heating, cooling, and filtration for the control room and 
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[Radiation Monitoring]]
+- Related systems: [[RPS/SSPS]], [[Radiation Monitoring]]

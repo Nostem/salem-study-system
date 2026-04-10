@@ -48,5 +48,5 @@ Note: ODCM = Offsite Dose Calculation Manual
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]], [[Radioactive Waste Management]]
+- Related systems: [[CVCS]], [[Waste Gas]]
 - Related exam: [[2023 NRC Written Exam]]

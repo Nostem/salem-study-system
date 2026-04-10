@@ -50,6 +50,6 @@ S2.OP-AB.RCP-0001, Reactor Coolant Pump Abnormality
 
 ## Connections
 
-- Related systems: [[Reactor Coolant Pumps]]
+- Related systems: [[RCPs]]
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]]
 - Related exam: [[2023 NRC Written Exam]]

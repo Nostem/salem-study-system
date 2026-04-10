@@ -37,6 +37,6 @@ Per S2.OP-AB.CR-0001, <span class="hi-exam">EOPs are NOT applicable</span> durin
 
 ## Connections
 
-- Related systems: [[Steam Generators]], [[Instrumentation and Controls]]
+- Related systems: [[Steam Generator & Blowdown]], [[RPS/SSPS]]
 - Related exam questions: [[2023 Q83]]
 - Related exam: [[2023 NRC Written Exam]]

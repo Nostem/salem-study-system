@@ -38,6 +38,6 @@ What are the power supplies to the 2A EDG starting air compressors 21A and 21B?
 
 ## Connections
 
-- Related systems: [[Diesel Generators]], [[AC Power]]
+- Related systems: [[EDGs]], [[500KV]]
 - Related procedures:
 - Related exam: [[2023 NRC Written Exam]]

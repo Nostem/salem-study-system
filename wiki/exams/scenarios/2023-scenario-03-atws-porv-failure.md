@@ -97,7 +97,7 @@ Source: New / 21-01 ESG-3 | <a href="/salem-study-system/exam-pdfs/2023-scenario
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Pressurizer]], [[Component Cooling Water]], [[Chemical and Volume Control System]], [[Turbine-Generator]], [[Auxiliary Feedwater]], [[Instrumentation and Controls]]
+- Related systems: [[RCS]], [[Pressurizer & PRT]], [[CCW]], [[CVCS]], [[Main Turbine]], [[AFW]], [[RPS/SSPS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[AB.CC-0001 — Loss of Component Cooling Water]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[AB.RCP-0001 — RCP Abnormality]]
 - Related exam: [[2023 NRC Operating Exam]]

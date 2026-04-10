@@ -47,6 +47,6 @@ Assuming NO operator action, which of the following completes both statements?<b
 
 ## Connections
 
-- Related systems: [[Service Water]], [[Component Cooling Water]], [[Residual Heat Removal]]
+- Related systems: [[Service Water]], [[CCW]], [[RHR]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]]
 - Related exam: [[2023 NRC Written Exam]]

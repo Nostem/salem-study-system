@@ -3,7 +3,6 @@ title: RPS/SSPS
 category: systems
 status: draft
 aliases:
-  - Instrumentation and Controls
   - I&C
   - reactor trip system
   - RTS
@@ -189,7 +188,7 @@ Rod Position Indication: <span class="hi-exam">Only Group 1 Demand Steps input i
 ## Connections
 
 - Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]]
-- Related concepts: [[Reactivity and Reactor Control]]
+- Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]]
 - Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

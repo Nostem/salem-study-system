@@ -87,5 +87,5 @@ Ref: S2.OP-DL.ZZ-0003 (R126) | Task: N1150410501 | K/A: G2.1.25 — Ability to i
 ## Connections
 
 - Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]]
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related exam: [[2023 NRC Operating Exam]]

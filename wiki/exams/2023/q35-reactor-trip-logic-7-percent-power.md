@@ -40,5 +40,5 @@ Which of the following conditions DIRECTLY causes a reactor trip?
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related exam: [[2023 NRC Written Exam]]

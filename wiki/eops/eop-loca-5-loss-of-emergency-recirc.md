@@ -27,7 +27,7 @@ Step 16.1 minimum ECCS flow from Figure 1: at <span class="hi-exam">100 minutes<
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]]
+- Related systems: [[RCS]], [[ECCS]]
 - Related exam questions: [[2023 Q17]]
 - Related JPMs: [[2023 JPM SRO-A1.a]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

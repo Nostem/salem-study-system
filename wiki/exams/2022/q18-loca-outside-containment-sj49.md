@@ -43,6 +43,6 @@ In accordance with 2-EOP-LOCA-6, which ONE of the following completes both state
 
 ## Connections
 
-- Related systems: [[Residual Heat Removal]], [[Emergency Core Cooling Systems]]
+- Related systems: [[RHR]], [[ECCS]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]]
 - Related exam: [[2022 NRC Written Exam]]

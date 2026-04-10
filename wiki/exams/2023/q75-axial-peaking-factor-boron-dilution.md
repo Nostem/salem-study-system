@@ -42,5 +42,5 @@ Which of the following will INCREASE the core maximum axial peaking factor? (Ass
 
 ## Connections
 
-- Related systems: [[Reactor Core and Fuel]], [[Chemical and Volume Control System]]
+- Related systems: [[Rx Vessel & Internals]], [[CVCS]]
 - Related exam: [[2023 NRC Written Exam]]

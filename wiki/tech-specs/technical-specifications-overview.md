@@ -19,8 +19,8 @@ UFSAR Chapter 16 states that the Technical Specifications exist as separate docu
 |---------|-------|----------------------|
 | 1.0 | Definitions | [[TS 1.0 — Definitions]] |
 | 2.0 | Safety Limits and LSSS | [[TS 2.0 — Safety Limits and LSSS]] |
-| 3/4.0 | Applicability | [[TS 3-4.0 — Applicability]] |
-| 3/4.1 | Reactivity Control | [[TS 3/4.1 — Reactivity Control]] |
+| 3/4.0 | Applicability | [[TS 3/4.0 — Applicability]] |
+| 3/4.1 | Reactivity Control | [[TS 3/4.1.1 — Boration Control]] |
 | 3/4.2 | Power Distribution | [[TS 3/4.2 — Power Distribution]] |
 | 3/4.3 | Instrumentation | [[TS 3/4.3 — Instrumentation]] |
 | 3/4.4 | Reactor Coolant System | [[TS 3/4.4 — Reactor Coolant System]] |
@@ -49,4 +49,4 @@ Note: Detailed Tech Spec articles will be populated during Phase 2 (Tech Spec in
 ## Connections
 
 - Related systems: All plant systems
-- Related concepts: [[Accident Analysis]], [[Modes and Applicability]]
+- Related concepts: [[ESF & Design]], [[TS 3/4.0 — Applicability]]

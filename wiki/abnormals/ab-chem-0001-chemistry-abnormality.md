@@ -23,6 +23,6 @@ A gross Condenser Tube Failure/Leak is indicated by rapidly rising Secondary Pla
 
 ## Connections
 
-- Related systems: [[Feedwater and Condensate]]
+- Related systems: [[Feed & Condensate]]
 - Related exam questions: [[2023 Q60]]
 - Related exam: [[2023 NRC Written Exam]]

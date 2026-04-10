@@ -40,5 +40,5 @@ Salem Unit <span class="blank">(1)</span> is the ONLY unit that has an automatic
 
 ## Connections
 
-- Related systems: [[Turbine-Generator]]
+- Related systems: [[Main Turbine]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -48,6 +48,6 @@ Note: TS 3.4.1.1, Reactor Coolant Loops and Coolant Circulation<br>
 
 ## Connections
 
-- Related system: [[Reactor Coolant Pumps]]
+- Related system: [[RCPs]]
 - Related procedure: [[AB.RCP-0001]]
 - Related exam: [[2023 NRC Written Exam]]

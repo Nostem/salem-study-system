@@ -45,5 +45,5 @@ After 2 minutes has elapsed, which ONE of the following describes the operationa
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Diesel Generators]]
+- Related systems: [[ECCS]], [[EDGs]]
 - Related exam: [[2022 NRC Written Exam]]

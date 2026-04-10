@@ -122,6 +122,6 @@ Ref: S1.OP-SO.RCS-0001 (R36) | Task: N0015010104 | K/A: 012 A4.07 — Ability to
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Instrumentation and Controls]]
+- Related systems: [[RCS]], [[RPS/SSPS]]
 - Related procedures: [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
 - Related exam: [[2023 NRC Operating Exam]]

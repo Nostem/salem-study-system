@@ -47,6 +47,6 @@ SW leak is on piping associated with a...
 
 ## Connections
 
-- Related systems: [[Service Water]], [[Containment Fan Coil Units]]
+- Related systems: [[Service Water]], [[CFCUs]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]]
 - Related exam: [[2022 NRC Written Exam]]

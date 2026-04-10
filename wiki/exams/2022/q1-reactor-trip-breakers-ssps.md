@@ -49,5 +49,5 @@ Which ONE of the following describes how the RTB 'B' and BYB 'A' will respond?
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related exam: [[2022 NRC Written Exam]]

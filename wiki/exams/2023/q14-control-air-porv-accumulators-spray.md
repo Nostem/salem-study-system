@@ -43,5 +43,5 @@ What is the effect on PORV accumulators and pressurizer spray valves?
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[CAV]]
+- Related systems: [[Pressurizer & PRT]], [[CAV]]
 - Related exam: [[2023 NRC Written Exam]]

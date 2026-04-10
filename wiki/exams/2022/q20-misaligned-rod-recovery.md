@@ -53,6 +53,6 @@ OFF = disconnected
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
 - Related exam: [[2022 NRC Written Exam]]

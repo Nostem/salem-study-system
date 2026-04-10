@@ -207,4 +207,4 @@ The 23-foot water level above irradiated fuel provides adequate shielding for pe
 
 ## Connections
 
-- Related systems: [[Residual Heat Removal]], [[Chemical and Volume Control System]], [[Reactor Core and Fuel]]
+- Related systems: [[RHR]], [[CVCS]], [[Rx Vessel & Internals]]

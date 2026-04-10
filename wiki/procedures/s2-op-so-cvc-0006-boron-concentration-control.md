@@ -22,6 +22,6 @@ Section 5.8.3 — RWST Makeup: determine boric acid flowrate from S2.RE-RA.ZZ-00
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]], [[Emergency Core Cooling Systems]]
+- Related systems: [[CVCS]], [[ECCS]]
 - Related exam questions: [[2023 JPM RO-A1.b]]
 - Related exam: [[2023 NRC Operating Exam]]

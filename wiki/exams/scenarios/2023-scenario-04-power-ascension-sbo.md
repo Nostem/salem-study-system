@@ -97,7 +97,7 @@ Source: 20-01 ESG-4 | <a href="/salem-study-system/exam-pdfs/2023-scenario-04.pd
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]], [[Service Water]], [[Auxiliary Feedwater]], [[AC Power]], [[Diesel Generators]], [[Containment Systems]], [[Pressurizer]], [[Steam Generators]], [[Reactor Coolant System]]
+- Related systems: [[CVCS]], [[Service Water]], [[AFW]], [[500KV]], [[EDGs]], [[Containment]], [[Pressurizer & PRT]], [[Steam Generator & Blowdown]], [[RCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related exam: [[2023 NRC Operating Exam]]

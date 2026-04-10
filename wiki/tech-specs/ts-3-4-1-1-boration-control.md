@@ -138,5 +138,5 @@ The MTC limits ensure this coefficient remains within the conditions assumed in 
 
 ## Connections
 
-- Related systems: [[Reactor Core and Fuel]], [[Chemical and Volume Control System]], [[Reactor Coolant System]]
-- Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
+- Related systems: [[Rx Vessel & Internals]], [[CVCS]], [[RCS]]
+- Related concepts: [[Rx Vessel & Internals]], [[Rx Vessel & Internals]]

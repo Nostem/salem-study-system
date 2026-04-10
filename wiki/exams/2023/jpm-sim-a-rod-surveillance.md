@@ -113,5 +113,5 @@ Ref: S2.OP-ST.RCS-0001 (R27), OP-AP-300-1001 | Task: N1140340401 | K/A: A4.16 �
 ## Connections
 
 - Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]], [[AB.ROD-0003 — Continuous Rod Motion]]
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related exam: [[2023 NRC Operating Exam]]

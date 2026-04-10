@@ -40,7 +40,7 @@ In EOP-FRCC-1, SG depressurization is performed at <span class="hi-exam">maximum
 
 ## Connections
 
-- Related systems: [[Steam Generators]], [[Reactor Coolant Pumps]], [[Containment Systems]]
-- Related concepts: [[Adverse Containment]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCPs]], [[Containment]]
+- Related concepts: [[Containment]]
 - Related exam questions: [[2022 Q24]], [[2023 Q84]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

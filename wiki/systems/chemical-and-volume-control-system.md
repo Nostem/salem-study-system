@@ -4,7 +4,6 @@ category: systems
 status: draft
 aliases:
   - CVCS
-  - Chemical and Volume Control System
   - Boration Systems
   - charging and letdown
 ---

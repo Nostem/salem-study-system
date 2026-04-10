@@ -52,6 +52,6 @@ Based on the above trends, what is the HIGHEST action that the CRS should direct
 
 ## Connections
 
-- Related systems: [[Steam Generators]]
+- Related systems: [[Steam Generator & Blowdown]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -43,6 +43,6 @@ PRT level will be lowered ...
 
 ## Connections
 
-- Related systems: [[Pressurizer]]
+- Related systems: [[Pressurizer & PRT]]
 - Related procedures: [[S2.OP-SO.PZR-0003 — PRT Operation]]
 - Related exam: [[2023 NRC Written Exam]]

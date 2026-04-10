@@ -36,7 +36,7 @@ EOP-FRHS-1 condensate pump feed: isolate all MS lines EXCEPT the selected SG (22
 ## Connections
 
 - Related systems: [[Main Steam]], [[RCS]]
-- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2023 Q18]]
 - Related JPMs: [[2023 JPM Sim-e]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

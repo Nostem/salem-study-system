@@ -176,6 +176,6 @@ Ref: S2.OP-SO.WG-0008 (R27) | Task: N0715070104 | K/A: 071 A1.03 — Ability to 
 
 ## Connections
 
-- Related systems: [[Radioactive Waste Management]]
+- Related systems: [[Waste Gas]]
 - Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
 - Related exam: [[2023 NRC Operating Exam]]

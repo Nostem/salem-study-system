@@ -44,6 +44,6 @@ Which of the following completes both statements?<br><br>
 
 ## Connections
 
-- Related systems: [[Containment Fan Coil Units]], [[Instrumentation and Controls]]
+- Related systems: [[CFCUs]], [[RPS/SSPS]]
 - Related procedures: [[EOP-TRIP-3 — SI Termination]]
 - Related exam: [[2023 NRC Written Exam]]

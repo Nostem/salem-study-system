@@ -46,6 +46,6 @@ As compared to the SW header pressure while operating in HIGH speed, the SW head
 
 ## Connections
 
-- Related systems: [[Service Water]], [[Containment Fan Coil Units]]
+- Related systems: [[Service Water]], [[CFCUs]]
 - Related procedures:
 - Related exam: [[2023 NRC Written Exam]]

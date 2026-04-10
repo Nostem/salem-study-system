@@ -42,6 +42,6 @@ Which of the following automatically generated signals will isolate the Containm
 
 ## Connections
 
-- Related systems: [[Containment Systems]], [[Instrumentation and Controls]]
+- Related systems: [[Containment]], [[RPS/SSPS]]
 - Related procedures:
 - Related exam: [[2023 NRC Written Exam]]

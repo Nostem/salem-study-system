@@ -16,4 +16,4 @@ Provides clean, dry compressed air for instrument and control valve operation th
 
 ## Connections
 
-- Related systems: [[Auxiliary Systems]]
+- Related systems: [[CCW]]

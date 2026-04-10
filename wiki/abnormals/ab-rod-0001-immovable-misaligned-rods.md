@@ -23,7 +23,7 @@ Misaligned rod recovery procedure: <span class="hi-exam">Lift Coil Disconnect Sw
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related procedures: [[AB.ROD-0003 — Continuous Rod Motion]]
 - Related exam questions: [[2022 Q20]]
 - Related exam: [[2022 NRC Written Exam]]

@@ -93,5 +93,5 @@ The concentration of oxygen in the waste gas holdup system is limited to ensure 
 
 ## Connections
 
-- Related systems: [[Radioactive Waste Management]]
-- Related concepts: [[Radiation Protection]]
+- Related systems: [[Waste Gas]]
+- Related concepts: [[Radiation Monitoring]]

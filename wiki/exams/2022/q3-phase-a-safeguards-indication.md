@@ -47,6 +47,6 @@ Which ONE of the following completes both statements?<br><br>
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam: [[2022 NRC Written Exam]]

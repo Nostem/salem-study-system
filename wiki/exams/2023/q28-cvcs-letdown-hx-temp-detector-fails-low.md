@@ -44,5 +44,5 @@ Which of the following describes the impact of this failure?<br><br>
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]]
+- Related systems: [[CVCS]]
 - Related exam: [[2023 NRC Written Exam]]

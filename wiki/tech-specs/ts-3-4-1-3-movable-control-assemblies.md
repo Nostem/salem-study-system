@@ -136,7 +136,7 @@ TS 3.1.3.2.1.b bases states: <span class="hi-exam">"either the control console g
 
 ## Connections
 
-- Related systems: [[Reactor Core and Fuel]], [[Instrumentation and Controls]]
-- Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
+- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]]
+- Related concepts: [[Rx Vessel & Internals]], [[Rx Vessel & Internals]]
 - Related exam questions: [[2023 Q56]]
 - Related exam: [[2023 NRC Written Exam]]

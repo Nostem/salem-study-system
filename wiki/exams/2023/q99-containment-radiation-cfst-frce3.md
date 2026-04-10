@@ -43,7 +43,7 @@ If Containment Radiation Monitors <span class="blank">(1)</span> exceeds 2 R/HR,
 
 ## Connections
 
-- Related systems: [[Containment Systems]]
+- Related systems: [[Containment]]
 - Related EOPs: [[EOP-FRCE-3]]
 - Related admin: [[OP-SA-108-101-2000]]
 - Related exam: [[2023 NRC Written Exam]]

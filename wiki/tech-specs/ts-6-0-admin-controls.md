@@ -159,7 +159,7 @@ Administrative controls establish the organizational structure, staffing require
 
 ## Connections
 
-- Related concepts: [[Radiation Protection]]
-- Related systems: [[Containment Systems]]
+- Related concepts: [[Radiation Monitoring]]
+- Related systems: [[Containment]]
 - Related exam questions: [[2023 Q94]]
 - Related exam: [[2023 NRC Written Exam]]

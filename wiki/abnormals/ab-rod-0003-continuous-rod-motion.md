@@ -35,7 +35,7 @@ During rod surveillance (S2.OP-ST.RCS-0001), after returning the rod bank select
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]]
 - Related exam: [[2023 NRC Operating Exam]]

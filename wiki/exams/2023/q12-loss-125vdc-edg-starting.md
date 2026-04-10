@@ -41,5 +41,5 @@ What is the effect on the 2A EDG?
 
 ## Connections
 
-- Related systems: [[DC Power]], [[Diesel Generators]]
+- Related systems: [[DC Power]], [[EDGs]]
 - Related exam: [[2023 NRC Written Exam]]

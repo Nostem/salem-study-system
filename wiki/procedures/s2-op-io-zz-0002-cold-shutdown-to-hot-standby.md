@@ -22,6 +22,6 @@ During RCS heat up, 2RH1 and 2RH2 (RHR Suction Isolation Valves) must be <span c
 
 ## Connections
 
-- Related systems: [[Residual Heat Removal]], [[Reactor Coolant System]]
+- Related systems: [[RHR]], [[RCS]]
 - Related exam questions: [[2022 Q07]]
 - Related exam: [[2022 NRC Written Exam]]

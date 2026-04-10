@@ -27,6 +27,6 @@ With PZR spray valve failed open and heaters energized but unable to maintain pr
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[Instrumentation and Controls]]
+- Related systems: [[Pressurizer & PRT]], [[RPS/SSPS]]
 - Related exam questions: [[2022 Q9]], [[2023 Q5]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

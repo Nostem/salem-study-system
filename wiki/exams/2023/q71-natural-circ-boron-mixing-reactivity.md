@@ -44,6 +44,6 @@ Which of the following completes both statements?<br><br>
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Chemical and Volume Control System]]
+- Related systems: [[RCS]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-4 — Natural Circulation]]
 - Related exam: [[2023 NRC Written Exam]]

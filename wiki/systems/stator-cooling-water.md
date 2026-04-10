@@ -14,4 +14,4 @@ Provides deionized cooling water to the main generator stator windings.
 
 ## Connections
 
-- Related systems: [[Electrical Power Systems]]
+- Related systems: [[500KV]]

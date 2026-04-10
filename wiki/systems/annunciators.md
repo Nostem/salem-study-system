@@ -16,4 +16,4 @@ Overhead and auxiliary annunciator systems provide alarm indication for plant pa
 
 ## Connections
 
-- Related systems: [[Instrumentation and Control Systems]]
+- Related systems: [[RPS/SSPS]]

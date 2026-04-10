@@ -44,6 +44,6 @@ The CRS will direct the crew to ...
 
 ## Connections
 
-- Related systems: [[AC Power]], [[Turbine-Generator]]
+- Related systems: [[500KV]], [[Main Turbine]]
 - Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.LOAD-0001 — Rapid Load Reduction]], [[EOP-TRIP-1]]
 - Related exam: [[2023 NRC Written Exam]]

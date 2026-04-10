@@ -32,6 +32,6 @@ During a check source on 1R19A (SGBD Radiation Monitor), <span class="hi-exam">c
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related exam questions: [[2023 Q49]]
 - Related exam: [[2023 NRC Written Exam]]

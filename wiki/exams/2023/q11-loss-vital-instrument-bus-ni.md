@@ -41,5 +41,5 @@ What is the effect on the nuclear instrumentation and reactor trip status?
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[AC Power]]
+- Related systems: [[RPS/SSPS]], [[500KV]]
 - Related exam: [[2023 NRC Written Exam]]

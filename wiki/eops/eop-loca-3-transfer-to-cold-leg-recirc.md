@@ -27,6 +27,6 @@ Key steps: depress SUMP AUTO ARMED PB for 21 and 22 SJ44s, remove lockouts from 
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Containment Spray]], [[Residual Heat Removal]]
+- Related systems: [[ECCS]], [[Containment Spray]], [[RHR]]
 - Related scenarios: [[2023 Scenario 1]]
 - Related exam: [[2023 NRC Operating Exam]]

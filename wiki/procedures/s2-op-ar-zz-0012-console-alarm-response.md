@@ -29,6 +29,6 @@ Per S2.OP-AR.ZZ-0012, an <span class="hi-exam">Urgent Failure alarm prevents all
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[Reactor Core and Fuel]]
+- Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]]
 - Related exam questions: [[2023 Q55]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -46,6 +46,6 @@ Which of the following completes both statements concerning the effect on the ro
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[Reactor Core and Fuel]]
+- Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]]
 - Related procedures: [[S2.OP-AR.ZZ-0012 — Console Alarm Response]]
 - Related exam: [[2023 NRC Written Exam]]

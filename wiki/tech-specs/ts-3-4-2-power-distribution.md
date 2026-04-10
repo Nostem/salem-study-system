@@ -213,5 +213,5 @@ The AFD target band limits power distribution peaking caused by xenon redistribu
 
 ## Connections
 
-- Related concepts: [[Nuclear Design]], [[Thermal-Hydraulic Design]]
-- Related systems: [[Reactor Core and Fuel]], [[Instrumentation and Controls]]
+- Related concepts: [[Rx Vessel & Internals]], [[RCS]]
+- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]]

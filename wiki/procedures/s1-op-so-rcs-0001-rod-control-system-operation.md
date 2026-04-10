@@ -30,6 +30,6 @@ Paralleling Rod Drive M-G Sets: adjust incoming set voltage <span class="hi-exam
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related JPMs: [[2023 JPM IP-j]]
 - Related exam: [[2023 NRC Operating Exam]]

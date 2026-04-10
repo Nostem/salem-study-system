@@ -27,7 +27,7 @@ CFCU test result determination: with measured SW header DP of <span class="hi-ex
 
 ## Connections
 
-- Related systems: [[Containment Fan Coil Units]], [[Service Water]]
+- Related systems: [[CFCUs]], [[Service Water]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related JPMs: [[2023 JPM Sim-f]]
 - Related exam: [[2023 NRC Operating Exam]]

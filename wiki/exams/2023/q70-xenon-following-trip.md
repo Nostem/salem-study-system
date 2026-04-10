@@ -49,5 +49,5 @@ Which of the following completes both statements?<br>
 
 ## Connections
 
-- Related concepts: [[Nuclear Design]]
+- Related concepts: [[Rx Vessel & Internals]]
 - Related exam: [[2023 NRC Written Exam]]

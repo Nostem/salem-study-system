@@ -22,7 +22,7 @@ P&L 2.1.6: <span class="hi-exam">Only one DG per Unit may be synchronized to the
 
 ## Connections
 
-- Related systems: [[Diesel Generators]]
+- Related systems: [[EDGs]]
 - Related tech specs: [[TS 3/4.8 — Electrical]]
 - Related exam questions: [[2023 Q89]]
 - Related exam: [[2023 NRC Written Exam]]

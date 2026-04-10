@@ -48,6 +48,6 @@ Based on current plant conditions and in accordance with S2.OP-AB.CC-0001, which
 
 ## Connections
 
-- Related systems: [[Component Cooling Water]], [[Reactor Coolant Pumps]]
+- Related systems: [[CCW]], [[RCPs]]
 - Related procedures: [[AB.CC-0001 — Loss of Component Cooling Water]]
 - Related exam: [[2022 NRC Written Exam]]

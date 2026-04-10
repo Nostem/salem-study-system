@@ -22,6 +22,6 @@ Provides direction for release of radioactive liquid waste from CVCS Monitor Tan
 
 ## Connections
 
-- Related systems: [[Radioactive Waste Management]]
+- Related systems: [[Waste Gas]]
 - Related exam questions: [[2023 Q61]]
 - Related exam: [[2023 NRC Written Exam]]

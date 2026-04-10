@@ -44,5 +44,5 @@ The "SI & FW ISOL" Red lamp on 2RP4 panel will be <span class="blank">(1)</span>
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[Emergency Core Cooling Systems]]
+- Related systems: [[RPS/SSPS]], [[ECCS]]
 - Related exam: [[2023 NRC Written Exam]]

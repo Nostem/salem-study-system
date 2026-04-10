@@ -165,7 +165,7 @@ The RWST minimum volume of 364500 gallons is based on: filling the refueling can
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Residual Heat Removal]], [[Chemical and Volume Control System]]
-- Related concepts: [[Accident Analysis]]
+- Related systems: [[ECCS]], [[RHR]], [[CVCS]]
+- Related concepts: [[ESF & Design]]
 - Related exam questions: [[2023 Q91]]
 - Related exam: [[2023 NRC Written Exam]]

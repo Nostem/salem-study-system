@@ -45,5 +45,5 @@ Which of the following describes the actions that the operator will take to LOWE
 
 ## Connections
 
-- Related systems: [[Residual Heat Removal]]
+- Related systems: [[RHR]]
 - Related exam: [[2023 NRC Written Exam]]

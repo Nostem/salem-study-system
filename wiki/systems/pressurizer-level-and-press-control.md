@@ -65,7 +65,7 @@ PZR reference leg leak causes indicated level to read <span class="hi-exam">HIGH
 
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[CVCS]], [[Instrumentation and Controls]]
+- Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]]
 - Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]]
 - Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

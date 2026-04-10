@@ -22,6 +22,6 @@ Referenced during CFCU surveillance testing. CFCU flow acceptance criteria use P
 
 ## Connections
 
-- Related systems: [[Containment Fan Coil Units]], [[Containment Systems]]
+- Related systems: [[CFCUs]], [[Containment]]
 - Related exam questions: [[2023 JPM Sim-f]]
 - Related exam: [[2023 NRC Operating Exam]]

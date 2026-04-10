@@ -42,6 +42,6 @@ An overcurrent fault on the 2A 460V MCC causes feeder breaker 2A4D to trip open,
 
 ## Connections
 
-- Related systems: [[AC Power]], [[Chemical and Volume Control System]], [[DC Power]]
+- Related systems: [[500KV]], [[CVCS]], [[DC Power]]
 - Related exam questions: [[2023 Q45]]
 - Related exam: [[2023 NRC Written Exam]]

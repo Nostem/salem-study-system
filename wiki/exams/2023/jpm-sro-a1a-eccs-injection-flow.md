@@ -73,6 +73,6 @@ Ref: 2-EOP-LOCA-5 (R41) | Task: N1150680502 | K/A: G2.1.7 — Ability to evaluat
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]]
+- Related systems: [[ECCS]]
 - Related EOPs: [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related exam: [[2023 NRC Operating Exam]]

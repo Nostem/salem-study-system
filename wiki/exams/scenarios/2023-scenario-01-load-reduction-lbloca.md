@@ -103,7 +103,7 @@ Source: 20-01 ESG-1 | <a href="/salem-study-system/exam-pdfs/2023-scenario-01.pd
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Containment Systems]], [[Containment Spray]], [[Instrumentation and Controls]], [[Feedwater and Condensate]], [[Auxiliary Feedwater]]
+- Related systems: [[RCS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[RPS/SSPS]], [[Feed & Condensate]], [[AFW]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
 - Related procedures: [[AB.RC-0001 — Reactor Coolant System Leak]], [[AB.CHEM-0001 — Secondary Chemistry Abnormality]]
 - Related exam: [[2023 NRC Operating Exam]]

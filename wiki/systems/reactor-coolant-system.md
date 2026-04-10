@@ -4,8 +4,6 @@ category: systems
 status: draft
 aliases:
   - RCS
-  - Reactor Coolant System
-  - Thermal-Hydraulic Design
   - thermal hydraulic design
   - T-H design
   - DNB

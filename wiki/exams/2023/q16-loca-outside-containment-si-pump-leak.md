@@ -43,6 +43,6 @@ What indicates a leak and which valve isolates it?
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]]
+- Related systems: [[ECCS]]
 - Related procedures: [[EOP-LOCA-6 — LOCA Outside Containment]]
 - Related exam: [[2023 NRC Written Exam]]

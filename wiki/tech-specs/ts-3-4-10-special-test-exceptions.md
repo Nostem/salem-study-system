@@ -146,5 +146,5 @@ Allows measurement of isothermal and power coefficients with fewer than all RCS 
 
 ## Connections
 
-- Related systems: [[Reactor Core and Fuel]], [[Instrumentation and Controls]]
-- Related concepts: [[Nuclear Design]]
+- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]]
+- Related concepts: [[Rx Vessel & Internals]]

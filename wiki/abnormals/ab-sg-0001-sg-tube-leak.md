@@ -36,6 +36,6 @@ SG tube leak action levels are based on <span class="hi-exam">both leak rate AND
 
 ## Connections
 
-- Related systems: [[Steam Generators]]
+- Related systems: [[Steam Generator & Blowdown]]
 - Related exam questions: [[2023 Q81]]
 - Related exam: [[2023 NRC Written Exam]]

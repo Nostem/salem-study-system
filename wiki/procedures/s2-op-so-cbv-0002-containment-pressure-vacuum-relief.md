@@ -27,7 +27,7 @@ Containment pressure relief with defeated auto-isolation: upon <span class="hi-e
 
 ## Connections
 
-- Related systems: [[Containment Systems]]
+- Related systems: [[Containment]]
 - Related procedures: [[S2.OP-AB.RAD-0001 — Abnormal Radiation]]
 - Related JPMs: [[2023 JPM Sim-h]]
 - Related exam: [[2023 NRC Operating Exam]]

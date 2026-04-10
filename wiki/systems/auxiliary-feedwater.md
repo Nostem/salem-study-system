@@ -3,7 +3,6 @@ title: AFW
 category: systems
 status: draft
 aliases:
-  - Auxiliary Feedwater
   - auxiliary feedwater system
   - AFW
 ---
@@ -70,7 +69,7 @@ ICMF during SGTR: TD AFW pump (23 AFW) takes steam from <span class="hi-exam">21
 
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam questions: [[2023 Q41]], [[2023 Q43]], [[2023 Q44]]
 - Related JPMs: [[2023 JPM SRO-A4]]

@@ -52,6 +52,6 @@ Which ONE of the following describes how the crew will operate the RCP(s) in acc
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Reactor Coolant System]]
+- Related systems: [[ECCS]], [[RCS]]
 - Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - Related exam: [[2022 NRC Written Exam]]

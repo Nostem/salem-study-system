@@ -249,4 +249,4 @@ Two independent loops of each system ensure single-failure capability for safety
 
 ## Connections
 
-- Related systems: [[Auxiliary Feedwater]], [[CCW]], [[Service Water]], [[Steam Generators]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
+- Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]

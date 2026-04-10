@@ -28,7 +28,7 @@ During a Solar Magnetic Disturbance (SMD) > K-5 intensity with excess MVAR condi
 
 ## Connections
 
-- Related systems: [[AC Power]], [[Turbine-Generator]]
+- Related systems: [[500KV]], [[Main Turbine]]
 - Related procedures: [[AB.GRID-0001 — Grid Disturbance]]
 - Related exam questions: [[2023 Q88]]
 - Related exam: [[2023 NRC Written Exam]]

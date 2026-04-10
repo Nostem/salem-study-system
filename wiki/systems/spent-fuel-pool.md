@@ -19,4 +19,4 @@ Removes decay heat from spent fuel stored in the spent fuel pool. Maintains pool
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]]
-- Related tech specs: [[TS 3/4.9 — Refueling]]
+- Related tech specs: [[TS 3/4.9 — Refueling Operations]]

@@ -22,6 +22,6 @@ For Control Rod Counter channel checks, <span class="hi-exam">either the Group D
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related exam questions: [[2023 Q56]]
 - Related exam: [[2023 NRC Written Exam]]

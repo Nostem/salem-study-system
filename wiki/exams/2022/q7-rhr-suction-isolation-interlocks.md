@@ -52,5 +52,5 @@ Which ONE of the following completes both statements?<br><br>
 
 ## Connections
 
-- Related systems: [[Residual Heat Removal]], [[Pressurizer]]
+- Related systems: [[RHR]], [[Pressurizer & PRT]]
 - Related exam: [[2022 NRC Written Exam]]

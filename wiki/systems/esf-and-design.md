@@ -4,7 +4,6 @@ category: systems
 status: draft
 aliases:
   - engineered safety features
-  - Accident Analysis
   - Chapter 15
   - accident analysis
   - LOCA
@@ -91,12 +90,12 @@ Analysis per 10CFR50.62 demonstrates that AMSAC (backup turbine trip and AFW act
 
 Accident analyses provide the bases for many Tech Spec limits including:
 - Trip setpoints and response times ([[TS 3/4.3 — Instrumentation]])
-- Shutdown margin requirements ([[TS 3/4.1 — Reactivity Control]])
+- Shutdown margin requirements ([[TS 3/4.1.1 — Boration Control]])
 - Power distribution limits ([[TS 3/4.2 — Power Distribution]])
 - ECCS operability ([[TS 3/4.5 — ECCS]])
 - Containment integrity ([[TS 3/4.6 — Containment]])
 
 ## Connections
 
-- Related systems: [[ECCS]], [[RCS]], [[Instrumentation and Controls]], [[Containment]], [[Auxiliary Feedwater]]
+- Related systems: [[ECCS]], [[RCS]], [[RPS/SSPS]], [[Containment]], [[AFW]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA Series]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[Critical Safety Function Status Trees]]

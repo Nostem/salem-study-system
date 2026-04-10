@@ -40,6 +40,6 @@ The 2R13 radiation monitors detect radioactivity from which components, discharg
 
 ## Connections
 
-- Related systems: [[Service Water]], [[Containment Fan Coil Units]]
+- Related systems: [[Service Water]], [[CFCUs]]
 - Related procedures: [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
 - Related exam: [[2023 NRC Written Exam]]

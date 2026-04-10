@@ -44,6 +44,6 @@ Per S2.OP-AB.RCP-0001, RCP Abnormality, the crew has a MAXIMUM of <span class="b
 
 ## Connections
 
-- Related systems: [[Reactor Coolant Pumps]], [[Component Cooling Water]]
+- Related systems: [[RCPs]], [[CCW]]
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]]
 - Related exam: [[2023 NRC Written Exam]]

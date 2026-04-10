@@ -20,6 +20,6 @@ To drain PRT: open 2PR14 → automatically opens 2WL12 → starts RCDT pump (def
 </div>
 
 ## Connections
-- Related systems: [[Pressurizer]]
+- Related systems: [[Pressurizer & PRT]]
 - Related exam questions: [[2023 Q32]]
 - Related exam: [[2023 NRC Written Exam]]

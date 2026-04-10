@@ -308,7 +308,7 @@ b. RCS depressurized with an RCS vent ≥ <span class="hi">3.14 square inches</s
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Pressurizer]], [[Residual Heat Removal]], [[Steam Generators]]
-- Related concepts: [[Accident Analysis]]
+- Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
+- Related concepts: [[ESF & Design]]
 - Related exam questions: [[2023 Q97]]
 - Related exam: [[2023 NRC Written Exam]]

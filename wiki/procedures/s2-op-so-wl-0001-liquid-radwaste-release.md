@@ -21,6 +21,6 @@ Provides direction for release of radioactive liquid waste from Unit 2 CVCS Moni
 
 ## Connections
 
-- Related systems: [[Radioactive Waste Management]]
+- Related systems: [[Waste Gas]]
 - Related exam questions: [[2023 Q68]]
 - Related exam: [[2023 NRC Written Exam]]

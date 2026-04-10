@@ -44,6 +44,6 @@ Loss of CCW thermal barrier: if <span class="hi-exam">1CC190 closes (common retu
 </div>
 
 ## Connections
-- Related systems: [[Reactor Coolant Pumps]], [[Component Cooling Water]]
+- Related systems: [[RCPs]], [[CCW]]
 - Related exam questions: [[2022 Q5]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

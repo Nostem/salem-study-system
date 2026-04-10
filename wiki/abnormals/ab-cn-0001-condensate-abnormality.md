@@ -22,6 +22,6 @@ On a SGFP trip: <span class="hi-exam">DEHC will automatically initiate a turbine
 
 ## Connections
 
-- Related systems: [[Feedwater and Condensate]], [[Turbine-Generator]]
+- Related systems: [[Feed & Condensate]], [[Main Turbine]]
 - Related exam questions: [[2023 Q64]]
 - Related exam: [[2023 NRC Written Exam]]

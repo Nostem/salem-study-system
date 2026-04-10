@@ -23,7 +23,7 @@ The Power Range NIS channel nearest a dropped rod will indicate <span class="hi-
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0003 — Continuous Rod Motion]]
 - Related exam questions: [[2022 Q19]]
 - Related exam: [[2022 NRC Written Exam]]

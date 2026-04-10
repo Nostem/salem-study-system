@@ -44,6 +44,6 @@ Which of the following completes the statement concerning instrument air to cont
 
 ## Connections
 
-- Related systems: [[Containment Systems]], [[Pressurizer]]
+- Related systems: [[Containment]], [[Pressurizer & PRT]]
 - Related procedures: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -23,6 +23,6 @@ For a fire detected inside containment (OHA A-7, FIRE PROT FIRE): <span class="h
 
 ## Connections
 
-- Related systems: [[Containment Systems]]
+- Related systems: [[Containment]]
 - Related exam questions: [[2023 Q63]]
 - Related exam: [[2023 NRC Written Exam]]

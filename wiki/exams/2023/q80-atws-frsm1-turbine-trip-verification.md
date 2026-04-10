@@ -44,6 +44,6 @@ In accordance with 2-EOP-FRSM-1, which of the following completes both statement
 
 ## Connections
 
-- Related systems: [[Turbine-Generator]], [[Reactor Core and Fuel]]
+- Related systems: [[Main Turbine]], [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
 - Related exam: [[2023 NRC Written Exam]]

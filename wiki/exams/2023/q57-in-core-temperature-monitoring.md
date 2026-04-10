@@ -44,5 +44,5 @@ Which of the following describes the impact on the In-Core Monitoring instrument
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related exam: [[2023 NRC Written Exam]]

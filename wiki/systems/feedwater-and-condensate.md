@@ -3,7 +3,6 @@ title: Feed & Condensate
 category: systems
 status: draft
 aliases:
-  - Feedwater and Condensate
   - feedwater
   - main feedwater
   - condensate
@@ -86,7 +85,7 @@ EOP-FRHS-1 condensate pump feed: establish condensate flow to selected SG by ope
 
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]]
 - Related JPMs: [[2023 JPM Sim-e]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

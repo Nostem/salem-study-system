@@ -195,8 +195,8 @@ CONTAINMENT INTEGRITY ensures that the containment will perform its designed saf
 
 ## Connections
 
-- Related systems: [[Containment Systems]], [[Emergency Core Cooling Systems]]
+- Related systems: [[Containment]], [[ECCS]]
 
-- Related concepts: [[Accident Analysis]]
+- Related concepts: [[ESF & Design]]
 - Related exam questions: [[2023 Q54]]
 - Related exam: [[2023 NRC Written Exam]]

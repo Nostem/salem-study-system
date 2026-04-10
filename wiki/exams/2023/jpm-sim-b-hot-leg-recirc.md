@@ -111,5 +111,5 @@ Ref: 2-EOP-LOCA-4 (R41) | Task: 1150110501 | K/A: A4.05 — Ability to manually 
 ## Connections
 
 - Related procedures: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
-- Related systems: [[Emergency Core Cooling Systems]], [[Residual Heat Removal]]
+- Related systems: [[ECCS]], [[RHR]]
 - Related exam: [[2023 NRC Operating Exam]]

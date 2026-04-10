@@ -53,6 +53,6 @@ Based on the surveillance test data, what action is required?<br>
 
 ## Connections
 
-- Related systems: [[Reactor Coolant Pumps]], [[Chemical and Volume Control System]], [[Emergency Core Cooling Systems]]
+- Related systems: [[RCPs]], [[CVCS]], [[ECCS]]
 - Related tech specs: [[TS 3.5.4]]
 - Related exam: [[2023 NRC Written Exam]]

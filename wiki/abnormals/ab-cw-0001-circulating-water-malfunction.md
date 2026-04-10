@@ -23,7 +23,7 @@ Per Attachment 1: with <span class="hi-exam">4 or more circulators out of servic
 
 ## Connections
 
-- Related systems: [[Turbine-Generator]]
+- Related systems: [[Main Turbine]]
 - Related EOPs: [[EOP-TRIP-1]]
 - Related exam questions: [[2023 Q93]]
 - Related exam: [[2023 NRC Written Exam]]

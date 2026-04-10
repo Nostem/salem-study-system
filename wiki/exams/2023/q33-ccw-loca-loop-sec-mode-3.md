@@ -41,6 +41,6 @@ Which of the following describes the operational impact on the Component Cooling
 
 ## Connections
 
-- Related systems: [[Component Cooling Water]], [[Service Water]], [[Diesel Generators]]
+- Related systems: [[CCW]], [[Service Water]], [[EDGs]]
 - Related procedures: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam: [[2023 NRC Written Exam]]

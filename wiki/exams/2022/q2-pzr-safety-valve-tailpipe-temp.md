@@ -48,5 +48,5 @@ Currently, safety valve tailpipe temperature indication should be reading approx
 
 ## Connections
 
-- Related systems: [[Pressurizer]]
+- Related systems: [[Pressurizer & PRT]]
 - Related exam: [[2022 NRC Written Exam]]

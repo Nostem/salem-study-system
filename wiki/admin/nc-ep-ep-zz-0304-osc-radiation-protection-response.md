@@ -33,6 +33,6 @@ Emergency volunteer selection for lifesaving task (15-20 REM predicted dose): sy
 ## Connections
 
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related concepts: [[Radiation Protection]]
+- Related concepts: [[Radiation Monitoring]]
 - Related JPMs: [[2023 JPM SRO-A3]]
 - Related exam: [[2023 NRC Operating Exam]]

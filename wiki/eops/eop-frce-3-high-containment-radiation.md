@@ -27,6 +27,6 @@ CFST containment environment monitoring: the <span class="hi-exam">R44A/B (high 
 
 ## Connections
 
-- Related systems: [[Containment Fan Coil Units]]
+- Related systems: [[CFCUs]]
 - Related exam questions: [[2023 Q25]], [[2023 Q99]]
 - Related exam: [[2023 NRC Written Exam]]

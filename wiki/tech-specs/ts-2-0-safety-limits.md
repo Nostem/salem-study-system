@@ -101,5 +101,5 @@ Trip setpoints are set conservatively with respect to the analytical limits used
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[Reactor Coolant System]]
-- Related concepts: [[Nuclear Design]], [[Thermal-Hydraulic Design]], [[Accident Analysis]]
+- Related systems: [[RPS/SSPS]], [[RCS]]
+- Related concepts: [[Rx Vessel & Internals]], [[RCS]], [[ESF & Design]]

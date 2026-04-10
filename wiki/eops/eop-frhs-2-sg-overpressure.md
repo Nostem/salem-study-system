@@ -29,6 +29,6 @@ This question was security-redacted. It tested SRO knowledge of actions during a
 
 ## Connections
 
-- Related systems: [[Steam Generators]]
+- Related systems: [[Steam Generator & Blowdown]]
 - Related exam questions: [[2023 Q85]]
 - Related exam: [[2023 NRC Written Exam]]

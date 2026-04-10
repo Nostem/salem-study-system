@@ -44,5 +44,5 @@ Based on the conditions above, which of the following completes the statement?<b
 
 ## Connections
 
-- Related systems: [[Containment Spray]], [[AC Power]], [[Instrumentation and Controls]]
+- Related systems: [[Containment Spray]], [[500KV]], [[RPS/SSPS]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -44,6 +44,6 @@ What is the EDG and safeguards load response?
 
 ## Connections
 
-- Related systems: [[EDGs]], [[Emergency Core Cooling Systems]], [[SECs]]
+- Related systems: [[EDGs]], [[ECCS]], [[SECs]]
 - Related procedures: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related exam: [[2023 NRC Written Exam]]

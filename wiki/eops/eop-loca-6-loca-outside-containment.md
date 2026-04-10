@@ -27,6 +27,6 @@ SJ49s (Cold Leg Isolation Valves) are <span class="hi-exam">normally open</span>
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]]
+- Related systems: [[ECCS]]
 - Related exam questions: [[2022 Q18]], [[2023 Q16]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

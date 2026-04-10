@@ -29,7 +29,7 @@ When P-6 is LIT, IR NIS channels should indicate approximately <span class="hi-e
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
 - Related exam questions: [[2023 Q82]]
 - Related exam: [[2023 NRC Written Exam]]

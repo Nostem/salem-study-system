@@ -53,7 +53,7 @@ Provides guidance for responding to a loss of control/instrument air on Salem Un
 
 ## Connections
 
-- Related systems: [[Auxiliary Feedwater]], [[Service Water]], [[Component Cooling Water]], [[Residual Heat Removal]], [[Containment Systems]]
+- Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]]
 - Related exam questions: [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
 - Related exam: [[2023 NRC Written Exam]]

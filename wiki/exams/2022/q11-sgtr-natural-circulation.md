@@ -44,6 +44,6 @@ Which ONE of the following completes both statements?<br><br>
 
 ## Connections
 
-- Related systems: [[Steam Generators]]
+- Related systems: [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
 - Related exam: [[2022 NRC Written Exam]]

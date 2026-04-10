@@ -47,5 +47,5 @@ Indicated PZR Level will be <span class="blank">_(1)_</span> and actual PZR Leve
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[Chemical and Volume Control System]]
+- Related systems: [[Pressurizer & PRT]], [[CVCS]]
 - Related exam: [[2022 NRC Written Exam]]

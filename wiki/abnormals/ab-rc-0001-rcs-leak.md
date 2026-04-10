@@ -27,6 +27,6 @@ CVCS leak from 2CV6 (Letdown Relief Valve) at 12 gpm: per AB.RC-0001 bases, a <s
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]], [[Reactor Coolant System]]
+- Related systems: [[CVCS]], [[RCS]]
 - Related exam questions: [[2023 Q3]], [[2023 Q97]]
 - Related exam: [[2023 NRC Written Exam]]

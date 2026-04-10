@@ -43,5 +43,5 @@ Which ONE of the following completes both statements?<br><br>
 
 ## Connections
 
-- Related systems: [[Feedwater and Condensate]], [[Main Steam]]
+- Related systems: [[Feed & Condensate]], [[Main Steam]]
 - Related exam: [[2022 NRC Written Exam]]

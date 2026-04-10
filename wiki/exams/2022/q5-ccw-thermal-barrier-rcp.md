@@ -44,6 +44,6 @@ Thermal Barrier CCW return flow has been lost from ...
 
 ## Connections
 
-- Related systems: [[Component Cooling Water]], [[Reactor Coolant Pumps]]
+- Related systems: [[CCW]], [[RCPs]]
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]]
 - Related exam: [[2022 NRC Written Exam]]

@@ -41,6 +41,6 @@ Waste gas release sequence: the <span class="hi-exam">latch-and-set (step 5.2.11
 
 ## Connections
 
-- Related systems: [[Radioactive Waste Management]]
+- Related systems: [[Waste Gas]]
 - Related JPMs: [[2023 JPM IP-k]]
 - Related exam: [[2023 NRC Operating Exam]]

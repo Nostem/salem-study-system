@@ -47,7 +47,7 @@ Based on the conditions above, which of the following correctly identifies the M
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[Instrumentation and Controls]], [[Emergency Core Cooling Systems]]
+- Related systems: [[Pressurizer & PRT]], [[RPS/SSPS]], [[ECCS]]
 - Related procedures: [[AB.RC-0002]]
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam: [[2023 NRC Written Exam]]

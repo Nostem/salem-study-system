@@ -43,5 +43,5 @@ What is the plant response?
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[AC Power]], [[Reactor Coolant Pumps]]
+- Related systems: [[RPS/SSPS]], [[500KV]], [[RCPs]]
 - Related exam: [[2023 NRC Written Exam]]

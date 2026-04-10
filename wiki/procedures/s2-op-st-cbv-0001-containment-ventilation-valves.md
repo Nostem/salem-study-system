@@ -27,7 +27,7 @@ Surveillance test review catches two errors: <span class="hi-exam">2VC13 stroke 
 
 ## Connections
 
-- Related systems: [[Containment Systems]]
+- Related systems: [[Containment]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related JPMs: [[2023 JPM SRO-A2]]
 - Related exam: [[2023 NRC Operating Exam]]

@@ -47,5 +47,5 @@ Per the ODCM requirements, the Containment Pressure Relief ...
 
 ## Connections
 
-- Related systems: [[Containment Systems]], [[Radioactive Waste Management]]
+- Related systems: [[Containment]], [[Waste Gas]]
 - Related exam: [[2023 NRC Written Exam]]

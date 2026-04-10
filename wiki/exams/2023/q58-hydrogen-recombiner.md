@@ -41,6 +41,6 @@ Which of the following completes both statements concerning operation of the Hyd
 
 ## Connections
 
-- Related systems: [[Containment Systems]]
+- Related systems: [[Containment]]
 - Related procedures: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related exam: [[2023 NRC Written Exam]]

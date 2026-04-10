@@ -42,6 +42,6 @@ How many RCPs are started and why?
 
 ## Connections
 
-- Related systems: [[Reactor Coolant Pumps]], [[Pressurizer]]
+- Related systems: [[RCPs]], [[Pressurizer & PRT]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
 - Related exam: [[2023 NRC Written Exam]]

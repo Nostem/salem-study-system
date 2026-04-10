@@ -23,7 +23,7 @@ Manual Initiation of ACCIDENT PRESSURIZED Mode (Section 5.7): <span class="hi-ex
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]]
 - Related exam questions: [[2023 Q62]]
 - Related exam: [[2023 NRC Written Exam]]

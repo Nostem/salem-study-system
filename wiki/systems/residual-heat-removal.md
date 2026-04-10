@@ -3,7 +3,6 @@ title: RHR
 category: systems
 status: draft
 aliases:
-  - Residual Heat Removal
   - shutdown cooling
 ---
 
@@ -85,7 +84,7 @@ During LOCA recirculation, the RHR pumps take suction from the containment sump 
 ## Tech Spec LCOs
 
 - **[[TS 3/4.5 — ECCS]]** — RHR subsystems as part of ECCS
-- **[[TS 3/4.9 — Refueling|TS 3/4.9]]** — RHR requirements during refueling
+- **[[TS 3/4.9 — Refueling Operations|TS 3/4.9]]** — RHR requirements during refueling
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q79</div>

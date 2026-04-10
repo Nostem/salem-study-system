@@ -51,6 +51,6 @@ Which of the following describes the correct action(s) for these conditions per 
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[Emergency Core Cooling Systems]], [[Chemical and Volume Control System]]
+- Related systems: [[Pressurizer & PRT]], [[ECCS]], [[CVCS]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[EOP-TRIP-1]]
 - Related exam: [[2023 NRC Written Exam]]

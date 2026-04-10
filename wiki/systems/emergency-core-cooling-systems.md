@@ -3,7 +3,6 @@ title: ECCS
 category: systems
 status: draft
 aliases:
-  - Emergency Core Cooling Systems
   - safety injection
   - SI
 ---
@@ -121,7 +120,7 @@ Provides suction source for all ECCS pumps during injection phase. Minimum volum
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q29</div>
-Automatic swapover of charging pump suction from VCT to RWST requires <span class="hi-exam">2/2 coincidence (LT-112 AND LT-114) at low-low VCT level</span>. If LT-112 fails high, the 2/2 logic is not satisfied and no auto swapover occurs — the VCT drains and the charging pump loses suction. See [[Chemical and Volume Control System]] for full VCT level control logic.
+Automatic swapover of charging pump suction from VCT to RWST requires <span class="hi-exam">2/2 coincidence (LT-112 AND LT-114) at low-low VCT level</span>. If LT-112 fails high, the 2/2 logic is not satisfied and no auto swapover occurs — the VCT drains and the charging pump loses suction. See [[CVCS]] for full VCT level control logic.
 </div>
 
 ## ECCS Operation Phases

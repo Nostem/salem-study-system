@@ -3,11 +3,9 @@ title: Containment
 category: systems
 status: draft
 aliases:
-  - Containment Systems
   - containment isolation
   - adverse containment
   - adverse containment conditions
-  - Adverse Containment
 ---
 
 # Containment
@@ -118,9 +116,9 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 | ESF System | Function | Source |
 |-----------|----------|--------|
 | Containment Structure | Leak-tight barrier for fission products | UFSAR 6.1 |
-| [[Emergency Core Cooling Systems]] | Borated water injection for core cooling | UFSAR 6.3 |
+| [[ECCS]] | Borated water injection for core cooling | UFSAR 6.3 |
 | Containment Spray | Pressure reduction + iodine removal | UFSAR 6.2.2.1 |
-| [[Containment Fan Coil Units]] | Atmosphere recirculation and cooling | UFSAR 6.2.2.2 |
+| [[CFCUs]] | Atmosphere recirculation and cooling | UFSAR 6.2.2.2 |
 | Containment Isolation | Double barriers on penetrations | UFSAR 6.2.4 |
 
 ## Tech Spec LCOs

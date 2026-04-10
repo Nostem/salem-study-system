@@ -30,7 +30,7 @@ After completing the surveillance and placing the rod bank selector switch in AU
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]]
+- Related systems: [[RPS/SSPS]]
 - Related procedures: [[AB.ROD-0003 — Continuous Rod Motion]]
 - Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
 - Related JPMs: [[2023 JPM Sim-a]]

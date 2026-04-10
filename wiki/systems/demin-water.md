@@ -14,4 +14,4 @@ Provides demineralized water for plant makeup and chemistry control.
 
 ## Connections
 
-- Related systems: [[Chemistry and Water Control Systems]]
+- Related systems: [[Demin Water]]

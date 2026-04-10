@@ -30,6 +30,6 @@ EOP-TRIP-4 CAS (foldout page): if subcooling is <span class="hi-exam">0 degrees 
 </div>
 
 ## Connections
-- Related systems: [[Reactor Coolant System]], [[Reactor Coolant Pumps]], [[Pressurizer]], [[Emergency Core Cooling Systems]], [[Chemical and Volume Control System]]
+- Related systems: [[RCS]], [[RCPs]], [[Pressurizer & PRT]], [[ECCS]], [[CVCS]]
 - Related exam questions: [[2023 Q26]], [[2023 Q71]], [[2023 Q87]]
 - Related exam: [[2023 NRC Written Exam]]

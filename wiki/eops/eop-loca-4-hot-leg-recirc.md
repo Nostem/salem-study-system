@@ -23,7 +23,7 @@ Hot leg recirculation alignment with one SI pump tripped and one RHR pump C/T: a
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Residual Heat Removal]]
+- Related systems: [[ECCS]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related JPMs: [[2023 JPM Sim-b]]
 - Related exam: [[2023 NRC Operating Exam]]

@@ -32,7 +32,7 @@ Step 20 RCS depressurization: with no RCPs running, normal spray is unavailable.
 
 ## Connections
 
-- Related systems: [[Reactor Coolant System]], [[Emergency Core Cooling Systems]], [[Chemical and Volume Control System]]
+- Related systems: [[RCS]], [[ECCS]], [[CVCS]]
 - Related exam questions: [[2023 Q2]], [[2023 Q76]]
 - Related JPMs: [[2023 JPM Sim-c]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

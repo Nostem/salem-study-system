@@ -52,7 +52,7 @@ Per 2-EOP-FRCC-1, step 18, RCP Start for Temporary Core Cooling, what is the MAX
 
 ## Connections
 
-- Related systems: [[Steam Generators]], [[Reactor Coolant Pumps]], [[Containment Systems]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCPs]], [[Containment]]
 - Related procedures: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
-- Related concepts: [[Adverse Containment]]
+- Related concepts: [[Containment]]
 - Related exam: [[2023 NRC Written Exam]]

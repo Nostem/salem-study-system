@@ -44,5 +44,5 @@ aliases:
 
 ## Connections
 
-- Related systems: [[Feedwater and Condensate]], [[Reactor Core and Fuel]]
+- Related systems: [[Feed & Condensate]], [[Rx Vessel & Internals]]
 - Related exam: [[2023 NRC Written Exam]]

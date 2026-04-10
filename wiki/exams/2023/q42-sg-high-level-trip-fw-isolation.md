@@ -42,6 +42,6 @@ The reactor will trip and the crew will enter 2-EOP-TRIP-1, Reactor Trip or Safe
 
 ## Connections
 
-- Related systems: [[Feedwater and Condensate]], [[Steam Generators]], [[Instrumentation and Controls]]
+- Related systems: [[Feed & Condensate]], [[Steam Generator & Blowdown]], [[RPS/SSPS]]
 - Related procedures: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam: [[2023 NRC Written Exam]]

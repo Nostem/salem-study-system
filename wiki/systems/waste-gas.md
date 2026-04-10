@@ -4,7 +4,6 @@ category: systems
 status: draft
 aliases:
   - gaseous waste
-  - Radioactive Waste Management
   - rad waste
 ---
 
@@ -51,7 +50,7 @@ Waste Gas Decay Tank release (S2.OP-SO.WG-0008): latch-and-set sequence on 2WG41
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[Containment]]
-- Related concepts: [[Radiation Protection]]
+- Related concepts: [[Radiation Monitoring]]
 - Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
 - Related exam questions: [[2023 Q90]], [[2022 Q23]]
 - Related JPMs: [[2023 JPM IP-k]]

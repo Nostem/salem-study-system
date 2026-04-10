@@ -22,6 +22,6 @@ Following confirmation of elevated activity below Tech Spec limits, maximize let
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]], [[Reactor Coolant System]]
+- Related systems: [[CVCS]], [[RCS]]
 - Related exam questions: [[2023 Q22]]
 - Related exam: [[2023 NRC Written Exam]]

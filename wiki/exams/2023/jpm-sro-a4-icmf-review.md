@@ -92,5 +92,5 @@ Ref: EP-SA-325-F2 (R1), EP-SA-325-102 (R1) | Task: N1240010502 | K/A: G2.4.40 â€
 ## Connections
 
 - Related procedures: [[EP-SA-325 â€” Emergency Plan Implementing Procedures]]
-- Related systems: [[Steam Generators]], [[Auxiliary Feedwater]]
+- Related systems: [[Steam Generator & Blowdown]], [[AFW]]
 - Related exam: [[2023 NRC Operating Exam]]

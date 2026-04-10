@@ -115,5 +115,5 @@ Ref: NC.EP-EP.ZZ-0304 (R17), NC.EP-EP.ZZ-0102 (R27) | Task: N/A | K/A: G2.3.14 â
 ## Connections
 
 - Related procedures: [[NC.EP-EP.ZZ-0304 â€” OSC Radiation Protection Response]]
-- Related systems: [[Residual Heat Removal]]
+- Related systems: [[RHR]]
 - Related exam: [[2023 NRC Operating Exam]]

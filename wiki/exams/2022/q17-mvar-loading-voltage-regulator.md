@@ -46,5 +46,5 @@ Which ONE of the following completes both statements?<br>
 
 ## Connections
 
-- Related systems: [[Turbine-Generator]], [[AC Power]]
+- Related systems: [[Main Turbine]], [[500KV]]
 - Related exam: [[2022 NRC Written Exam]]

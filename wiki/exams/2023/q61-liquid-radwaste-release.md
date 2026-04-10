@@ -49,6 +49,6 @@ Based on the above condition, which one of the following describes the impact to
 
 ## Connections
 
-- Related systems: [[Radioactive Waste Management]]
+- Related systems: [[Waste Gas]]
 - Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
 - Related exam: [[2023 NRC Written Exam]]

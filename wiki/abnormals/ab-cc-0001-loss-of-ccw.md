@@ -37,6 +37,6 @@ Per S1.OP-AB.CC-0001, components supplied by CCW with pressure less than CCW hea
 
 ## Connections
 
-- Related systems: [[Component Cooling Water]], [[Reactor Coolant Pumps]]
+- Related systems: [[CCW]], [[RCPs]]
 - Related exam questions: [[2022 Q5]], [[2022 Q8]], [[2023 Q4]], [[2023 Q59]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

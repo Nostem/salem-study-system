@@ -32,6 +32,6 @@ PZR vapor space SBLOCA with RCS pressure stable at 1450 psig, 10°F subcooling, 
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Containment Fan Coil Units]], [[Instrumentation and Controls]]
+- Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]]
 - Related exam questions: [[2023 Q38]], [[2023 Q23]], [[2023 Q76]]
 - Related exam: [[2023 NRC Written Exam]]

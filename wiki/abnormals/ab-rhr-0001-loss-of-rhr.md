@@ -21,6 +21,6 @@ Per OP-SA-108-106-1001 (Equipment Control and Large Motor Starting Criteria) ste
 
 ## Connections
 
-- Related systems: [[Residual Heat Removal]]
+- Related systems: [[RHR]]
 - Related exam questions: [[2023 Q79]]
 - Related exam: [[2023 NRC Written Exam]]

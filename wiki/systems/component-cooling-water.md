@@ -2,8 +2,6 @@
 title: CCW
 category: systems
 status: draft
-aliases:
-  - Component Cooling Water
 ---
 
 # CCW

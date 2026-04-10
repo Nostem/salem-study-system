@@ -110,5 +110,5 @@ Ref: S2.OP-ST.CBV-0003 (R20), S2.OP-SO.CBV-0001 | Task: N0220130201 | System: 02
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-SO.CBV-0001 — Containment Ventilation Operation]]
-- Related systems: [[Containment Fan Coil Units]], [[Service Water]]
+- Related systems: [[CFCUs]], [[Service Water]]
 - Related exam: [[2023 NRC Operating Exam]]

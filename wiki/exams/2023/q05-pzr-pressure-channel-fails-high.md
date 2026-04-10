@@ -42,6 +42,6 @@ Based on the conditions above, the <em>(1)</em> reactor trip setpoint on the una
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[Instrumentation and Controls]]
+- Related systems: [[Pressurizer & PRT]], [[RPS/SSPS]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - Related exam: [[2023 NRC Written Exam]]

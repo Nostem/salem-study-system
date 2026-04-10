@@ -56,7 +56,7 @@ Which of the following completes both statements?<br>
 
 ## Connections
 
-- Related systems: [[Chemical and Volume Control System]], [[Reactor Coolant System]]
+- Related systems: [[CVCS]], [[RCS]]
 - Related procedures: [[AB.RC-0001]]
 - Related tech specs: [[TS 3.4.7.2]]
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]

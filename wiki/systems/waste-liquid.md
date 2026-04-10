@@ -42,6 +42,6 @@ CVCS Monitor Tank release with 2R18 (Radioactive Liquid Effluent Monitor) inoper
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
-- Related concepts: [[Radiation Protection]]
+- Related concepts: [[Radiation Monitoring]]
 - Related exam questions: [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
 - Related exam: [[2023 NRC Written Exam]]

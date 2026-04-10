@@ -5,7 +5,6 @@ status: draft
 aliases:
   - SGs
   - SG
-  - Steam Generators
 ---
 
 # Steam Generator & Blowdown

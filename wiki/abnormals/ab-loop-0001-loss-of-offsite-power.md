@@ -33,7 +33,7 @@ SBO Air Compressor start (SC.OP-SO.CA-0001): when all ECACs are unavailable duri
 
 ## Connections
 
-- Related systems: [[DC Power]], [[Reactor Coolant Pumps]], [[Chemical and Volume Control System]]
+- Related systems: [[DC Power]], [[RCPs]], [[CVCS]]
 - Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]]
 - Related exam questions: [[2023 Q9]], [[2023 Q10]]
 - Related JPMs: [[2023 JPM IP-i]]

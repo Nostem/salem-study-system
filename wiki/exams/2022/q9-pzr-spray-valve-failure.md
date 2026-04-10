@@ -48,6 +48,6 @@ In accordance with S1.OP-AB.PZR-0001, Pressurizer Pressure Malfunction, which ON
 
 ## Connections
 
-- Related systems: [[Pressurizer]]
+- Related systems: [[Pressurizer & PRT]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - Related exam: [[2022 NRC Written Exam]]

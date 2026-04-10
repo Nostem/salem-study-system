@@ -42,5 +42,5 @@ Which of the following identifies the status of the CFCUs?
 
 ## Connections
 
-- Related systems: [[Containment Fan Coil Units]], [[AC Power]]
+- Related systems: [[CFCUs]], [[500KV]]
 - Related exam: [[2023 NRC Written Exam]]

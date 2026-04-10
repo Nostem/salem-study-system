@@ -47,7 +47,7 @@ Step 12, Safeguard Valve Alignment: check <span class="hi-exam">2CC1 SAFEGUARDS 
 
 ## Connections
 
-- Related systems: [[Instrumentation and Controls]], [[Emergency Core Cooling Systems]]
+- Related systems: [[RPS/SSPS]], [[ECCS]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]]
 - Related exam questions: [[2022 Q3]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

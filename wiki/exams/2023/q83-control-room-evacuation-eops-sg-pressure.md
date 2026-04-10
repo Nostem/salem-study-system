@@ -43,6 +43,6 @@ Per S2.OP-AB.CR-0001, Control Room Evacuation, which of the following completes 
 
 ## Connections
 
-- Related systems: [[Steam Generators]], [[Instrumentation and Controls]]
+- Related systems: [[Steam Generator & Blowdown]], [[RPS/SSPS]]
 - Related procedures: [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-1]]
 - Related exam: [[2023 NRC Written Exam]]

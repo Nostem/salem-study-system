@@ -49,6 +49,6 @@ Based on the above conditions, the <span class="blank">(1)</span> can authorize 
 
 ## Connections
 
-- Related systems: [[Residual Heat Removal]]
+- Related systems: [[RHR]]
 - Related procedures: [[AB.RHR-0001 — Loss of RHR]], [[OP-SA-108-106-1001 — Equipment Control and Large Motor Starting Criteria]]
 - Related exam: [[2023 NRC Written Exam]]

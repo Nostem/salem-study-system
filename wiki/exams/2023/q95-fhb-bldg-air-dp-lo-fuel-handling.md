@@ -50,6 +50,6 @@ Based on the above condition and per S2.OP-AR.ZZ-0011, 2CC1 Console Alarm, which
 
 ## Connections
 
-- Related systems: [[Containment Systems]]
+- Related systems: [[Containment]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
 - Related exam: [[2023 NRC Written Exam]]
