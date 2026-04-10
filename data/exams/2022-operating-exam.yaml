@@ -218,3 +218,151 @@ jpms:
     task_number: "N0685140104"
     safety_function: 9
     estimated_time_min: 25
+
+  - id: "Sim-a"
+    title: "Perform Control Rod System Surveillance"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-ST.RCS-0001"
+    procedure_rev: 25
+    pages: "108-119"
+    ka: "001 A2.11"
+    ka_importance_ro: 4.4
+    ka_importance_sro: 4.7
+    applicability: RO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "50638"
+    safety_function: 1
+    estimated_time_min: 10
+
+  - id: "Sim-b"
+    title: "Perform Manual Makeup to VCT"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-SO.CVC-0006"
+    procedure_rev: 25
+    secondary_ref: "S2.RE-RA.ZZ-0012"
+    secondary_ref_rev: 225
+    pages: "120-132"
+    ka: "004 A4.04"
+    ka_importance_ro: 3.2
+    ka_importance_sro: 3.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "0040130101"
+    safety_function: 2
+    estimated_time_min: 15
+
+  - id: "Sim-c"
+    title: "Isolate ECCS Accumulators in EOP-LOCA-1"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-LOCA-1"
+    procedure_rev: 40
+    pages: "133-141"
+    ka: "006 A3.10"
+    ka_importance_ro: 4.0
+    ka_importance_sro: 3.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "N0060100101"
+    safety_function: 3
+    estimated_time_min: 8
+
+  - id: "Sim-d"
+    title: "Respond to RCP Standpipe Low Level Alarm"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AR.ZZ-0011"
+    procedure_rev: 63
+    pages: "142-154"
+    ka: "003 A1.10"
+    ka_importance_ro: 2.5
+    ka_importance_sro: 2.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0020160101"
+    safety_function: 4-Pri
+    estimated_time_min: 6
+
+  - id: "Sim-e"
+    title: "Loss of SGFP Immediate Actions"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AB.CN-0001"
+    procedure_rev: 31
+    pages: "155-164"
+    ka: "059 A4.14"
+    ka_importance_ro: 3.1
+    ka_importance_sro: 3.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Modified
+    task_number: "N1140100401"
+    safety_function: 4-Sec
+    estimated_time_min: 5
+
+  - id: "Sim-f"
+    title: "Manually Actuate Containment Spray"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-TRIP-1"
+    procedure_rev: 41
+    pages: "165-173"
+    ka: "026 A2.03"
+    ka_importance_ro: 4.4
+    ka_importance_sro: 4.4
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Modified
+    task_number: "N1150500502"
+    safety_function: 5
+    estimated_time_min: 8
+
+  - id: "Sim-g"
+    title: "Respond to Loss of 2A 4KV Vital Bus"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AB.4KV-0001"
+    procedure_rev: 11
+    pages: "174-194"
+    ka: "062 A2.04"
+    ka_importance_ro: 3.1
+    ka_importance_sro: 3.4
+    applicability: RO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N1140050401"
+    safety_function: 6
+    estimated_time_min: 10
+
+  - id: "Sim-h"
+    title: "Respond to Fire Alarm"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AB.FIRE-0001"
+    procedure_rev: 12
+    secondary_ref: "S2.OP-AR.ZZ-0001"
+    secondary_ref_rev: 59
+    pages: "195-198"
+    ka: "086 A4.02"
+    ka_importance_ro: 3.5
+    ka_importance_sro: 3.5
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0220080101"
+    safety_function: 8
+    estimated_time_min: 10

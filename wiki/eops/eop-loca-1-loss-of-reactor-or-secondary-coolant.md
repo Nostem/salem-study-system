@@ -36,8 +36,14 @@ PZR vapor space leak (SBLOCA) with RCS at <span class="hi-exam">1450 psig</span>
 Step 7.4 (stopping containment spray pumps) is a <span class="hi-exam">continuous action step</span>. Per OP-SA-108-101-2002 step 2.16.2: <span class="hi-exam">continuous action steps should NOT be performed when a Red or Purple path FRP is in progress</span>. Even though containment pressure is below 13 psig and conditions for stopping CS pumps are met, a valid PURPLE path on Thermal Shock takes priority — <span class="hi-exam">transition to the FRP, do NOT perform Step 7.4</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-c</div>
+Step 14 — accumulator isolation: when at least two RCS T-Hots < <span class="hi-exam">405F</span>, remove lockout from 21-24 SJ54 and close all. If <span class="hi-exam">24SJ54 fails to close</span> (alternate path), vent the unisolated accumulator: open <span class="hi-exam">2NT35 (N2 HDR Valve)</span> and <span class="hi-exam">24SJ93 (N2 Supply Valve)</span>, verify accumulator pressure reaches zero.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]]
 - Related exam questions: [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2022 JPM Sim-c]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

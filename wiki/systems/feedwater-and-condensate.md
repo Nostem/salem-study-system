@@ -93,6 +93,11 @@ Condensate depression: the temperature difference between the condenser saturati
 EOP-FRHS-1 condensate pump feed: establish condensate flow to selected SG by opening <span class="hi-exam">BF40 (Main Feed Bypass Valve, locally)</span>, <span class="hi-exam">BF13 (Feed Water Isolation Valve)</span>, <span class="hi-exam">21 and 22 CN48 (Feed Pump Bypass Valves)</span>, and closing <span class="hi-exam">21 and 22 CN32 (Feed Pump Suction Valves)</span>. Verify condensate flow established with WR level rising.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-e</div>
+Loss of SGFP at >70% power: auto turbine runback <span class="hi-exam">fails</span>. Per AB.CN-0001 Step 2.3.1.B: manually initiate load reduction at DEHC panel — toggle <span class="hi-exam">%/HR to %/MIN</span>, set ramp rate to <span class="hi-exam">15%/min</span>, setter to <span class="hi-exam">66%</span>. Also: rods fail to insert in AUTO during downpower — take rods to MANUAL and insert at 48 steps/min to control Tavg.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q58</div>
 Ovation (ADFCS) steam pressure channel failure: Ovation uses <span class="hi-exam">one pressure channel from each SG (4 total) into a Medium Signal Select (MSS) algorithm</span>. If one SG steam pressure channel fails HIGH, the <span class="hi-exam">associated MS10 (atmospheric dump) loop switches to MANUAL</span> control (OHAs G-7 ADFCS Alternate Action and G-15 ADFCS TRBL). The MSS algorithm selects a good input for the remaining MS10 loops — <span class="hi-exam">other MS10s remain in AUTO</span>. <span class="hi-trap">A single pressure channel failure does NOT open the MS10 or cause ALL MS10s to swap to manual.</span>
@@ -102,5 +107,5 @@ Ovation (ADFCS) steam pressure channel failure: Ovation uses <span class="hi-exa
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
-- Related JPMs: [[2023 JPM Sim-e]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

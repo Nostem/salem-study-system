@@ -26,8 +26,14 @@ For a fire detected inside containment (OHA A-7, FIRE PROT FIRE): <span class="h
 Attachment 1, Step 3 Caution: If the Fire Department requests off-site firefighting assistance, permission must be obtained from the <span class="hi-exam">EDO/Shift Manager (SM)</span> prior to calling for off-site assistance. <span class="hi-trap">The CRS performs the procedure but does NOT have authority to authorize off-site fire assistance — only the Shift Manager can authorize this.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-h</div>
+Fire alarm code #91 on 2RP5 = <span class="hi-exam">Aux. Bldg., Relay & Battery Rooms, 100 ft. elevation</span>. Relay Room is serviced by CAACS → select <span class="hi-exam">FIRE INSIDE CONTROL AREA</span> at 2RP2, direct Unit 1 to do same. Relay Room fire requires PORV isolation: place <span class="hi-exam">2PR1 and 2PR2 in MANUAL/CLOSE</span>, close <span class="hi-exam">2PR6 and 2PR7 (block valves)</span>, dispatch operator for EMERG CLOSE per Attachment 15.
+</div>
+
 ## Connections
 
-- Related systems: [[Containment]], [[Fire Protection]], [[EDGs]]
+- Related systems: [[Containment]], [[Fire Protection]], [[EDGs]], [[Pressurizer Level & Press Control]], [[CAV]]
 - Related exam questions: [[2022 Q99]], [[2023 Q63]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related JPMs: [[2022 JPM Sim-h]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

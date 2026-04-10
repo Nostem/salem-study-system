@@ -163,6 +163,7 @@ status: draft
 - [[AB.FUEL-0001 — Fuel Handling Incident]]
 - [[AB.115-0001 — Loss of 115V Vital Instrument Bus]]
 - [[AB.SW-0005 — Loss of All Service Water]]
+- [[AB.4KV-0001 — Loss of 4KV Vital Bus]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]

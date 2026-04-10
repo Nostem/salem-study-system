@@ -33,9 +33,14 @@ Failed high Tavg channel response: recognize unwarranted rod insertion (rods ste
 During rod surveillance (S2.OP-ST.RCS-0001), after returning the rod bank selector switch to AUTO, if unexpected <span class="hi-exam">continuous rod insertion</span> occurs with no runback in progress — place switch in Manual. If rod motion does NOT stop, <span class="hi-exam">manually trip the reactor</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-a</div>
+During rod surveillance (S2.OP-ST.RCS-0001), after placing rod bank selector switch in AUTO at step 4.1.11.3, uncontrolled rod insertion occurs (rods insert in <span class="hi-exam">both AUTO and MANUAL</span>). Applicant must recognize rods continue inserting after placing switch in Manual and <span class="hi-exam">manually trip the reactor</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]]
 - Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
-- Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2022 JPM Sim-a]]
+- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

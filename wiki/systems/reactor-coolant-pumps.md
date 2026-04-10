@@ -135,8 +135,14 @@ RCP #1 seal failure identification: <span class="hi-exam">seal leak-off flow >=6
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (minimum loops in operation by mode)
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-d</div>
+RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <span class="hi-exam">low seal flow across #2 seal or excessive #3 seal flow</span>. Key check: if standpipe low AND seal leakoff flow alarm together → go to AB.RCP-0001. If standpipe low ONLY → fill: open <span class="hi-exam">2WR80 (PW to CONTMT STOP V)</span> on 2CC2, then <span class="hi-exam">21WR62 (Standpipe Supply Valve)</span> on 21 RCP bezel. When hi level alarm, close all and stop PW pump.
+</div>
+
 ## Connections
 
-- Related procedures: [[AB.RCP-0001 — RCP Abnormality]]
+- Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
 - Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2022 JPM Sim-d]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

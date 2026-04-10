@@ -57,9 +57,15 @@ EDG paralleled to grid during surveillance: when LOOP occurs, SEC actuates in <s
 
 - **[[TS 3/4.8 — Electrical]]** — TS 3.8.3.1 requires vital buses energized and OPERABLE
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-g</div>
+Loss of 2A 4KV Vital Bus response per AB.4KV-0001: A EDG auto-starts. 23 Charging Pump was providing seal injection/charging to Unit 2 (lost on bus loss). Close <span class="hi-exam">2CV55</span>, then start <span class="hi-exam">21 Charging Pump</span>. Alternate path: 21 Charging Pump <span class="hi-exam">trips on start</span> → start <span class="hi-exam">22 Charging Pump</span> to restore RCP seal injection and charging flow. Note: 2CV55 has ~2 minute stroke time.
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
-- Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]]
+- Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]]
 - Related exam questions: [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2022 JPM Sim-g]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

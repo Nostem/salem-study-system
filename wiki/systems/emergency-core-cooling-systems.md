@@ -209,10 +209,15 @@ EOP-LOCA-5 Step 16.1: minimum ECCS injection flow from Figure 1 at <span class="
 EOP-LOCA-4 hot leg recirculation: realign 21 SI pump from cold leg to hot leg injection — <span class="hi-exam">STOP pump → CLOSE 21SJ134 (cold leg discharge) → OPEN 21SJ40 (hot leg discharge, key-locked) → START pump</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-c</div>
+EOP-LOCA-1 Step 14 accumulator isolation: when at least two RCS T-Hots < <span class="hi-exam">405F</span>, remove lockout and close 21-24 SJ54. If <span class="hi-exam">24SJ54 fails to close</span> (alternate path), vent the unisolated accumulator: open <span class="hi-exam">2NT35 (N2 HDR Valve)</span> and <span class="hi-exam">24SJ93 (N2 Supply Valve)</span> to depressurize the accumulator to zero.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
 - Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
-- Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

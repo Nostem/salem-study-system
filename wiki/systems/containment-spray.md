@@ -80,7 +80,14 @@ EOP-LOCA-1 Step 7.4 (stop CS pumps when containment pressure below 13 psig) is a
 EOP-LOCA-5 vs EOP-FRCE-1 containment spray operation: per EOP-FRCE Caution C3-1, <span class="hi-exam">if LOCA-5 is in effect, operation of containment spray pumps should be IAW LOCA-5</span> (not FRCE-1). LOCA-5 has <span class="hi-exam">less restrictive criteria allowing reduction of CS pump operation based on RWST level and CFCUs to conserve RWST inventory</span>. FRCE-1 establishes maximum available heat removal (more aggressive CS operation) which conflicts with LOCA-5 priority to conserve RWST inventory.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-f</div>
+EOP-TRIP-1 Step 9 — manual CS/Phase B actuation during LBLOCA: containment pressure NOT < <span class="hi-exam">15 psig</span> → manually initiate Phase B and Spray using safeguards key switches on 2CC1. Alternate path: Phase B valves (<span class="hi-exam">2CC131, 2CC190</span>) fail to auto-close and NaOH valves (<span class="hi-exam">2CS16, 2CS17</span>) fail to auto-open on CS signal. Operator must verify Table B valve groups and manually reposition: close at least one 2CC131/2CC190 and open at least one 2CS16/2CS17.
+</div>
+
 ## Connections
 
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam questions: [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2022 JPM Sim-f]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

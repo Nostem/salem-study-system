@@ -50,9 +50,15 @@ Step 12, Safeguard Valve Alignment: check <span class="hi-exam">2CC1 SAFEGUARDS 
 CS pump manual start requires <span class="hi-exam">SECs to be blocked/reset first</span>. The SEC load sequencer overrides manual keyswitch control.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-f</div>
+Step 9 — CNMT Spray/Phase B actuation during LBLOCA: containment pressure NOT < <span class="hi-exam">15 psig</span> → manually initiate Phase B and Spray using safeguards key switches on 2CC1. Alternate path: Phase B valves (<span class="hi-exam">2CC131, 2CC190</span>) fail to auto-close and NaOH valves (<span class="hi-exam">2CS16, 2CS17</span>) fail to auto-open on CS signal. Per Step 9.e, manually reposition valves to safeguards positions.
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[ECCS]]
+- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment Spray]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]]
 - Related exam questions: [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related JPMs: [[2022 JPM Sim-f]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -19,8 +19,15 @@ Provides operator response actions for miscellaneous control room alarms, includ
 BLDG AIR D/P LO alarm response: if movement of irradiated fuel assemblies is in progress, <span class="hi-exam">first action is to suspend movement of irradiated fuel assemblies in the FHB</span>. Then validate the alarm by checking the local indicator. <span class="hi-trap">Suspending fuel moves is the FIRST action — validating the alarm comes AFTER, not before.</span> If the alarm is invalid and will not clear, the local indicator may be used to continuously monitor FHB D/P per S2.OP-IO.ZZ-0010.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-d</div>
+Page 138 — RCP Standpipe Level Low alarm: causes include <span class="hi-exam">low seal flow across #2 seal or excessive #3 seal flow</span>. Key decision at Step 3.1: if standpipe low AND seal water leakoff flow alarm together → go to AB.RCP-0001. If standpipe low only → fill standpipe: open 2WR80, open affected standpipe supply valve (21WR62 for 21 RCP). When hi level alarm, close all.
+</div>
+
 ## Connections
 
-- Related procedures: [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
+- Related systems: [[RCPs]]
+- Related procedures: [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.RCP-0001 — RCP Abnormality]]
 - Related exam questions: [[2023 Q95]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2022 JPM Sim-d]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
