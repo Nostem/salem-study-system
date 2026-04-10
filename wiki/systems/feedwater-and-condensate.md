@@ -1,8 +1,9 @@
 ---
-title: Feedwater and Condensate
+title: Feed & Condensate
 category: systems
 status: draft
 aliases:
+  - Feedwater and Condensate
   - feedwater
   - main feedwater
   - condensate
@@ -10,7 +11,7 @@ aliases:
   - feedwater isolation
 ---
 
-# Feedwater and Condensate
+# Feed & Condensate
 
 ## Function
 

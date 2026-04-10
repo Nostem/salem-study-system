@@ -1,14 +1,16 @@
 ---
-title: Turbine-Generator
+title: Main Turbine
 category: systems
 status: draft
 aliases:
+  - Turbine-Generator
   - turbine generator
   - turbine
   - T/G
+  - main generator
 ---
 
-# Turbine-Generator
+# Main Turbine
 
 ## Function
 

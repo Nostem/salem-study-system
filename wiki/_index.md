@@ -50,8 +50,11 @@ status: draft
 - [[Radiation Monitoring]]
 - [[Incores]]
 - [[AMSAC]]
-- [[Main Steam and Feedwater]]
-- [[Radioactive Waste Management]]
+- [[Main Steam]]
+- [[Feed & Condensate]]
+- [[Steam Dumps]]
+- [[Waste Gas]]
+- [[Waste Liquid]]
 
 ## Tech Specs
 - [[TS 1.0 — Definitions]]
