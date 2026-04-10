@@ -1,5 +1,5 @@
 ---
-title: "2022 Q33 — ECCS Flow at <span class="hi">300 psig</span> with Loss of 4KV Bus"
+title: "2022 Q33 — ECCS Flow at 300 psig with Loss of 4KV Bus"
 category: exams
 status: draft
 aliases:

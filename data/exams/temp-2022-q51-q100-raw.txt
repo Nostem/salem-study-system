@@ -1,0 +1,4982 @@
+
+
+===== PAGE 124 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 124 
+ 
+51 07-015 Points: 1.00 
+ 
+Given: 
+ BOTH Units 1 and 2 are at 100% Power. 
+ Unit 2 RO reports OHA A-6, RMS HI RAD OR TRBL, is LIT 
+ The 2R1B-1, Control Room Intake Radiation Monitor Channel 1, is in ALARM. 
+ BOTH control rooms Control Area Vent ilation (CAV) Systems are operating in NORMAL Mode. 
+ 
+Which ONE of the following completes both statements? 
+ 
+1. What is the expected response of the CAV systems? 
+2. Based on the above condition, how should the control room operators respond in accordance with 
+S2.OP-AR.ZZ-0001, Overhead Annunciators - Window A? 
+ 
+Note: AP = ACCIDENT PRESSURIZE 
+ 
+ 
+A. 1)  BOTH Units 1 and 2 CAV systems should be operating in AP Mode. 
+2)  Manually initiate AP Mode from Unit 1. 
+B. 1)  BOTH Units 1 and 2 CAV systems should be operating in AP Mode. 
+2)  Manually initiate AP Mode from Unit 2. 
+C. 1)  ONLY Unit 2 CAV system should be operating in AP Mode. 
+2)  Manually initiate AP Mode from Unit 2. 
+D. 1)  ONLY Unit 2 CAV system should be operating in AP Mode. 
+2)  Manually initiate AP Mode from Unit 1. 
+ 
+  
+
+===== PAGE 125 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 125 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  First part is correct.  Second part is incorrect.  Plausible if the operator believes that you need 
+to actuate CAV in AP Mode form the opposite unit.  Actuating CAV from Unit 1 is not the correct 
+response to a high radiation signal from the Unit 2 intake duct.  Actuating CAV from Unit 1 will open the 
+Unit 2 intake dampers on the unit that potentially has the accident or radiological release.  
+B. Correct. A tear in the detector foil will cause the detector to read or fail high.  A detector failing high 
+would result in the 2R1B-1 going into Alarm.  This should result in the automatic actuation of the CAV 
+systems in Accident Pressurize (AP) Mode on BOTH units.  The unit that initiated the actuation signal 
+will have its intake close and the opposite units intake dampers will open.  Since the high radiation 
+actuation signal came from Unit 2 and based on the stem that both CAV systems are still operating in 
+Normal Mode, then the control room operators should manually initiate CAV to AP Mode from Unit 2 
+only. This will ensure that the intake dampers on Unit 2 are closed during an accident from Unit 2.  
+Manually actuating AP Mode from Unit 2 will place both units CAV systems in the AP Mode. 
+C. Incorrect.  Plausible if the operator believes that on a 2R1B-1 high alarm that only the Unit 2 CAV will 
+actuate in AP Mode only.  Second part is correct. 
+D. Incorrect.  Plausible if the operator believes that on a 2R1B-1 high alarm that only the Unit 2 CAV will 
+actuate in AP Mode and to actuate the Unit 1 CAV the operator will need to manually actuate from Unit 
+1. 
+ 
+Technical References:   S2.OP-SO.CAV-0001 (R43), S2.OP-AB.RAD-0001 (R30) 
+Proposed References to be provided: None 
+Learning Objective: NOS05RM000-20, Objective 15. Given a Radiation Monitoring 
+System failure, predict the effect of the Radiation Monitoring 
+System failure on the following: Radioactive effluent releases 
+Question Source: New  
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 43.5 / 45.3 / 45.13 
+Level:      RO 
+Category/System:    07-Process Radiation Monitoring 
+K/A #:      073 A2.02 
+ Ability to (a) predict the impacts of the following malfunctions or 
+operations on the PRM system; and (b) based on those 
+predictions, use procedures to correct, control, or mitigate the 
+consequences of those malfunctions or operations:  Detector 
+failure 
+Importance: 2.7 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to predict the response of the CAV 
+system when an control room intake radiation monitor is in alarm and what actions per S2.OP-SO.CAV-
+0001 Is required to place the CAV systems in the proper mode of operation.  In this case, the candidate 
+
+===== PAGE 126 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 126 
+ 
+needs to know from which unit to actuate AP Mode since it determines which emergency intake dampers 
+will be open during an accident.  
+
+===== PAGE 127 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 127 
+ 
+52 04-048 Points: 1.00 
+ 
+Which ONE of the following identifies when the 21(22)SW122, CC HX Inlet Valves, automatically reposition 
+and why? 
+ 
+The 21(22)SW122 valves… 
+ 
+ 
+A. close on a SI signal coincident with a LOOP to ensure SW pump runout does not occur with all 
+CFCUs running. 
+B. fully open on a SI signal coincident with a LOOP  to ensure cool CCW is supplied to the RHR HXs 
+and pump seals. 
+C. fully open on a SI signal to ensure cool CCW  is supplied to the RHR HXs and pump seals. 
+D. close on a SI signal to ensure SW pump runout does not occur with all CFCUs running. 
+ 
+  
+
+===== PAGE 128 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 128 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  The SW122s will only close on a SEC Mode III (SI and Blackout or LOOP).  The purpose of 
+this is to ensure that the SW pumps do not reach runout conditions with all CFCUs running and 
+considering only two SW pumps are running (single active failure). 
+B. Incorrect. Plausible because the SW122s will be throttled to maintain CC HX outlet temperature at 
+setpoint during SEC Mode I (SI only) or Mode II (blackout only).  The applicant may confuse the SEC 
+Mode ops and determine that the SW122s will go fully open during a SEC Mode Op III condition. 
+C. Incorrect.  Plausible because the SW122s will be throttled to maintain CC HX outlet temperature at 
+setpoint during SEC Mode I (SI only).  The SW122s will not go fully open upon receipt of an SI signal.  
+The applicant may confuse the operation of the SW122 during SEC Mode ops and believe that the valve 
+will go fully open. It is also plausible to believe that SW122 opening does allow for maximum cooling of 
+the CCW system. 
+D. Incorrect.  Plausible because the applicant may confuse the SEC Modes of operation and believe that 
+the Mode I (SI only) closes the SW122’s. 
+ 
+Technical References:   NOS05SW0NUC-15 
+Proposed References to be provided: None 
+Learning Objective: NOS05SW0NUC-15, Object ive 4.f. Describe the function of the 
+following components and how their normal and abnormal 
+operation affects the Service Water – Nuclear Header System:  
+CC HX and SW122, SW127, SW380/383, SW376/379 
+Question Source: Bank – Salem 2015 NRC RO16  
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.2 to 41.9 / 45.7 to 45.8 
+Level:      RO 
+Category/System:    04-Service Water 
+K/A #:      076 K1.16 
+ Knowledge of the physical connection and/or cause-effect 
+relationships between the SWS and the following systems:  
+ESF 
+Importance: 3.6 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the applicant must have knowledge of how the SWS responds to 
+SEC Mode Op signal and how the CC HX SW valves respond and why. 
+ 
+  
+
+===== PAGE 129 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 129 
+ 
+53 08-012 Points: 1.00 
+ 
+Given: 
+ Both Units are at 100% Power. 
+ #1 Station Air Compressor (SAC) is running. 
+ #2 SAC is in AUTO and next to load. 
+ #3 SAC is C/T for maintenance. 
+ There is no air usage at either unit’s condensate polisher system. 
+ Control Air headers A and B on both units are indicating 105 psig. 
+Subsequently, the following occurs; 
+ Unit 1 reactor trips and the 4KV Group Busses fail to automatically transfer resulting in ALL 4KV 
+Group Busses being de-energized.   
+ Unit 2 is NOT affected. 
+ 
+15 minutes later, which ONE of the following would be an expected air pressure indication for both control 
+air headers on Units 1 and 2? 
+ 
+ 
+A. 60 psig and lowering rapidly. 
+B. 80 psig and lowering slowly. 
+C. Stable at approximately 85-88 psig. 
+D. Stable at approximately 100 psig. 
+ 
+  
+
+===== PAGE 130 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 130 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect.  Plausible if you believe that the ECACs cannot maintain control air headers around 85-90 
+psig when all SACs are lost. 
+B. Incorrect.  Plausible if you believe that the ECACs cannot maintain control air headers around 85-90 
+psig when all SACs are lost. 
+C. Incorrect.  Plausible if you believe that no SACs are running and both units Emergency Air Compressors 
+(ECACs) have started and are maintaining both CA headers around the auto start setpoint of 85 to 90 
+psig.  The Unit 1 ECAC (B CA header) is supplied from 1C 460 V Vital Bus and the Unit 2 ECAC (A CA 
+header) is supplied from the 2C 460 V Vital Bus 
+D. Correct.  Instrument air is supplied from one of three station air compressors.  Unit 1 has two station air 
+compressors (SAC), #1 SAC supplied from 1H 4KV group bus and #3 SAC supplied from 1G 4KV group 
+buses and Unit 2 has one SAC (#2 SAC) supplied from the 2G 4KV group bus.  Therefore, with a loss of 
+the 4KV Group Buses on Unit 1 only, the #2 SAC on Unit 2 would start (if not already running) and 
+supply station air to both units control air headers.  One SAC is capable of supplying both unit’s station 
+air and control air headers to maintain around 100 psig (assuming no demands from the polisher). 
+ 
+Technical References:   NOS05STAAIR-18 & NOS05CONAIR-13 
+Proposed References to be provided: None 
+Learning Objective: NOS05STAAIR-18, Objective 5. State the power supply to the 
+following Station Air/Service Air System components:  Station 
+Air Compressors (SACs) 
+Question Source: Bank – Diablo Canyon 2016 NRC RO26  
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.7 
+Level:      RO 
+Category/System:    08-Instrument Air 
+K/A #:      078 K2.01 
+ Knowledge of bus power supplies to the following:  Instrument 
+air compressor 
+Importance: 2.7 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to identify the vital bus power supply 
+for the Station Air Compressors which supply the instrument air system. 
+ 
+  
+
+===== PAGE 131 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 131 
+ 
+Additional Reference:  NOS05CONAIR 
+ 
+ 
+
+
+===== PAGE 132 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 132 
+ 
+54 05-012 Points: 1.00 
+Given: 
+ A reactor trip and Safety Injection are actuated 
+ PZR level is 25% and stable. 
+ 1CV2 and 1CV277, Letdown Isolation Valves, are open. 
+ 1CV3 and 1CV5, Letdown Orifice Isolation Valves, were closed prior to the reactor trip. 
+ 1CV4, Letdown Orifice Isolation Valve, is open. 
+ 1CV7, Letdown Containment Isolation Valve, is open. 
+Which ONE of the following completes the statement? 
+The 1CV4… 
+ 
+A. is responding as designed since it is interlocked with the closure of the 1CV2 or 1CV277. 
+B. is responding as designed since it is interlocked with the closure of the 1CV7. 
+C. has failed open since it receives a signal directly from Safety Injection. 
+D. has failed open since it receives a signal directly from Phase A. 
+ 
+  
+
+===== PAGE 133 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 133 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect. Plausible because the 1CV2 or 1CV277 closing will close the orifice isolation valves.  The 
+1CV2 and 1CV277 close only on PZR low level <17%.  The applicant may confuse this interlock and 
+believe that since the 1CV2 and 1CV277 are still open in the stem that this is the reason for the 1CV4 
+not closing as designed by the interlock. 
+B. Incorrect. Plausible because the 1CV7 does close on Phase A signal and is interlocked with the 1CC71 
+valve to close isolating CCW to the letdown HX.  The applicant may confuse 1CV7 is interlocked with 
+the closure of the letdown orifice valves 1CV3, 4, and 5.  Since the 1CV7 didn’t close, then its plausible 
+to believe that’s the reason for the 1CV4 not closing as designed. 
+C. Incorrect. Per logic drawing 221057, plausible because the applicant may confuse that a SI signal 
+directly actuates the letdown isolation valves (i.e., 1CV4).  The SI signal does directly actuate some 
+valves, for example the 1CV68 and 1CV69 valves receive a closure signal directly from SI only and not 
+Phase A. The Phase A is actuated from either an Auto or Manual SI signal or manual actuation from the 
+safeguards bezel in the control room. 
+D. Correct. The 1CV4 closes on the following signals/in terlocks; Phase A, 1CV2 or 1CV277 closing, PZR 
+level < 17%, the trip all charging pumps, or manual actuation (Phase A) from the safeguards bezel in the 
+control room.  The stem states that a SI has actuated which results in the actuation of Phase A signal to 
+isolate containment penetrations and valves.  The 1CV4 closes directly from a Phase A signal, which is 
+actuated from the SI signal.  Since the 1CV4 is open, this means that the 1CV4 failed to close. 
+ 
+Technical References:   Simplified dwg CV-2, 221057 (R23) 
+Proposed References to be provided: None 
+Learning Objective: NOS05CVCS00-18, Objective 4. Describe the function and 
+how their normal and abnormal operations affects the Chemical 
+and Volume Control System:  containment orifice isolation 
+valves CV3, CV4, CV5 
+Question Source: Modified Bank – Byron 2017 NRC RO30 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.5 
+Level:      RO 
+Category/System:    05-Containment 
+K/A #:      103 A3.01 
+ Ability to monitor automatic operation of the containment 
+system, including: Containment isolation 
+Importance: 3.9 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the applicant must have knowledge of which ESFAS signal 
+directly actuates Containment Ventilation Isolation signal and how the letdown isolation valves respond to a 
+Phase A signal to verify proper containment isolation. 
+
+===== PAGE 134 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 134 
+ 
+Modified Question Justification:  The question is modified based on the condition in the stem is a design 
+difference and changes the answer based on Salem’s design associated with interlocks with Phase A 
+valves. 
+ 
+ 
+Parent Question: 
+ 
+ 
+ 
+  
+
+
+===== PAGE 135 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 135 
+ 
+Additional Reference:  Logic drawing 221057 (R23) 
+ 
+ 
+Note: 
+Yellow highlight is from the Auto SI signal 
+Black highlight is the Manual Phase A from the control room  
+
+
+===== PAGE 136 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 136 
+ 
+55 05-013 Points: 1.00 
+Given: 
+ Unit 2 is at 100% Power 
+ 21, 22, 23, and 24 CFCUs are running in high speed with the 25 CFCU in standby. 
+ 
+Subsequently, a LOCA inside Containment occurs and a Safety Injection (SI) signal actuates. 
+Which ONE of the following describes the response of the CFCUs following the SI actuation? 
+ 
+A. 21, 22, 23, and 24 CFCUs start 20 seconds later in low speed, and the 25 CFCU starts immediately 
+in low speed. 
+B. 21, 22, 23, and 24 CFCUs start immediately in low speed, and the 25 CFCU starts 20 seconds later 
+in low speed. 
+C. ALL CFCUs will start 20 seconds later in low speed. 
+D. ALL CFCUs start immediately in low speed. 
+ 
+  
+
+===== PAGE 137 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 137 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  Plausible because the operator may believe that there is no time delay when for a CFCU in 
+standby.  ALL CFCU high speed 460V breakers will trip during ALL MODES of SEC operation.  The 
+CFCU Low speed 460V breakers will close after 20 seconds.  CFCUs do not immediately start in low 
+speed, even in standby. 
+B. Incorrect. Plausible if the operator believes that running CFCUs can shift over to Low speed since the 
+CFCUs are already running and no time delay is necessary.  See Ans. C for further explanation. 
+C. Correct.  An SI signal will actuate the SEC in MODE 1 operation.  MODE 1 does not use the SEC load 
+sequencers.  The SEC will trip open all High speed 460V breakers during all Modes of SEC operation 
+(see 203670).  The SEC assumes that the CFCUs were running in high speed.  After a 20 second time 
+delay the SEC will start all CFCUs in Low speed (see 203667 & 203673). In this case, the operator must 
+determine how a CFCU in standby will operate following an SI signal, the 25 CFCU in standby will start 
+in low speed after a 20 second delay. 
+D. Incorrect. Plausible if the operator believes that during Mode 1 there is no time delay to start CFCUs.  
+See Ans. C for further explanation. 
+ 
+Technical References:   NOS05SEC00, 203667, 239670, 203673 
+Proposed References to be provided: N/A 
+Learning Objective: NOS05SEC00-09, Objective 4, Describe in detail each Mode of 
+Safeguards Equipment Control System operation, including 
+setpoints for automatic actuation 
+Question Source: Modified Bank – Salem 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.2 to 41.9 / 45.7 to 45.8 
+Level:      RO 
+Category/System:    05-Containment 
+K/A #:      103 K1.01 
+ Knowledge of the physical connections and/or cause and effect 
+relationships between the containment system and the 
+following systems: CCS 
+Importance: 3.6 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because LOCA inside containment resulting in an SI actuation signal 
+requires applicant knowledge of the operation of SEC during an SI (Mode I) and how the 
+safeguards/ESFAS equipment is stripped from the bus and re-loaded in accordance with SEC operation.  
+Specifically, the operator needs to know that the CFCUs need 20 seconds to coast down before they can be 
+re-started in Low speed to prevent damage to the CFCU motors.   
+ 
+ 
+
+===== PAGE 138 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 138 
+ 
+Parent Question:  Salem Bank 
+ 
+Given: 
+ Unit 2 is at 100% Power 
+ 21, 23, and 24 CFCUs are running in HIGH speed 
+ 22 CFCU is running in LOW speed to support surveillance testing in accordance with S2.OP-ST.CBV-0003, 
+Containment Systems – Cooling Systems 
+ 
+Subsequently, a LOCA occurs and a Safety Injection (SI) signal actuates. 
+Which ONE of the following describes the response of the CFCUs following SI actuation? 
+ 
+A. All HIGH and LOW speed breakers receive a trip signal; ALL CFCUs start in LOW speed after a time delay. 
+B. All HIGH and LOW speed breakers receive a trip signal; ALL CFCUs immediately start in LOW speed. 
+C. ONLY the HIGH speed breakers receive a trip signal; 22 CFCU remains running in LOW speed; ALL 
+remaining CFCUs start in LOW speed after a time delay. 
+D. ONLY the HIGH speed br eakers receive a trip signal; ALL remaining CFCUs immediately start in LOW speed. 
+ 
+Answer: C
+  
+
+===== PAGE 139 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 139 
+ 
+56 01-014 Points: 1.00 
+Given: 
+ Unit 2 is at 85% Power following a rapid load reduction. 
+ OHA E-8, ROD INSERT LMT LO, is now LIT. 
+ Tavg is 571 °F and stable. 
+ Tref is 570 °F and stable. 
+ 
+Which ONE of the following completes both statements? 
+1. The Control Rod Insertion Limit of the Core Operating Limits Report (COLR) __(1)__ been 
+exceeded. 
+2. Per the OHA Alarm Response Procedure for E-8, the NEXT action that the operating crew is 
+required to perform is ____(2)____. 
+ 
+A. 1)  has NOT 
+2)  initiate an emergency boration IAW S2.OP-SO.CVC-0008, Rapid Borate 
+B. 1)  has NOT 
+2)  initiate a normal boration IAW S2.OP-SO.CVC-0006, Boron Concentration Control 
+C. 1)  has 
+2)  initiate a normal boration IAW S2.OP-SO.CVC-0006, Boron Concentration Control 
+D. 1)  has 
+2)  initiate an emergency boration IAW S2.OP-SO.CVC-0008, Rapid Borate 
+ 
+  
+
+===== PAGE 140 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 140 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  Part 1 is correct.  Part 2 is incorrect. Plausible because emergency boration was required 
+when OHA E-16, ROD INSERT LO-LO, was in alarm.  This requirement has been removed from the 
+OHA alarm procedures. 
+B. Correct. OHA E-8 alarms when the rods are 10 steps from the Rod Insertion Limit.  Therefore, the RIL 
+for the COLR has not been exceeded.  IAW with the OHA alarm response procedure, the crew is 
+required initiate a normal boration IAW S2.OP-SO.CVC-0006 to restore rods to their normal band. 
+C. Incorrect.  Part 1 is incorrect.  The OHA E-8 alarm indicates the rods are within 10 steps of the RIL.  Part 
+2 is correct. 
+D. Incorrect. Part 1 is incorrect.  The OHA E-8 alarm indicates the rods are within 10 steps of the RIL.  Part 
+2 is incorrect. Plausible because emergency boration was required when OHA E-16, ROD INSERT LO-
+LO, was in alarm.  This requirement has been removed from the OHA alarm procedures. 
+ 
+Technical References:   S2.OP-AR.ZZ-0005 (R26) 
+Proposed References to be provided: None 
+Learning Objective: NOS05RODS00-14, Objective 6, Describe the function of the 
+following components and how their normal and abnormal 
+operations affects the Rod Control and Position Indication 
+Systems: Rod Insertion Limit Comparator 
+Question Source: Bank – Beaver Valley 2018 NRC RO61 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 45.7 
+Level:      RO 
+Category/System:    01-Control Rod Drive 
+K/A #:      001 K5.04 
+ Knowledge of the following operational implications as they 
+apply to the CRDS: Rod insertion limits 
+Importance: 4.3 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked if the rod insertion limit has been 
+exceeded based on OHA E-8 being lit.  The question also asks what action will the crew take in response to 
+the OHA E-8 being lit. 
+ 
+  
+
+===== PAGE 141 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 141 
+ 
+57 07-016 Points: 1.00 
+Given: 
+ Unit 2 is performing a planned shutdown for a refueling outage. 
+ Current reactor power is 30%. 
+ 2N35, Intermediate Range NIS channel fails HIGH. 
+Which ONE of the following describes the plant impact from this failure? 
+ 
+A. Reactor trips immediately on 1/2 Intermediat e Range channels exceeding the high flux trip. 
+B. Reactor trips ONLY when 2/2 Intermediate Range channels exceed the high flux trip. 
+C. Reactor trips when 3/4 Power Range channels are less than the P-10 permissive. 
+D. Reactor trips when 2/4 Power Range channels are less than the P-10 permissive. 
+ 
+  
+
+===== PAGE 142 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 142 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  P-10 (2/4 PR channels > 10%) is blocking the 1/2 IR high flux trip.  Plausible because the 
+operator may incorrectly assess the plant conditions and believe that a Rx trip will occur when one IR 
+channel fails high. 
+B. Incorrect.  P-10 (2/4 PR channels > 10%) is blocking the 1/2 IR high flux trip.  Plausible because the 
+operator may incorrectly believe that both (2/2) IR channels exceeding the high flux setpoint are 
+required to cause a Rx trip. 
+C. Correct.  When at least 3/4 PR NIS channels are less than P-10 setpoint (approx. 9%), P-10 will 
+automatically unblock and reinstate the 1/2 IR high flux trip (25%) and 2/4 PR high flux low setpoint trip 
+(25%).  In this case, with the 2N35 failed high, the Rx will automatically trip when below P-10 
+permissive. 
+D. Incorrect. When at least 3/4 PR NIS channels are less than P-10 setpoint (approx. 9%), P-10 will 
+automatically unblock and reinstate the 1/2 IR high flux trip (25%) and 2/4 PR high flux low setpoint trip 
+(25%).  Plausible because the operator may incorrectly determine that P-10 permissive will clear when 
+2/4 PR channels are less than the P-10 permissive. 
+ 
+Technical References:   NOS05EXCORE-14 
+Proposed References to be provided: None 
+Learning Objective: NOS05EXCORE-14, Objective 7. Outline the control interlocks 
+associated with the following Excore Nuclear Instrumentation 
+System components:  P-10, Enable At-Power trips 
+Question Source: Bank - Salem 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 
+Level:      RO 
+Category/System:    07-Nuclear Instrumentation 
+K/A #:      015 K4.07 
+ Knowledge of the NIS design feature(s) and/or interlock(s) 
+which provide for the following:  Permissives 
+Importance: 3.7 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to describe the plant impact when a 
+IR NIS channel is failed and power is continued to lower.  In this case, the candidate needs to understand 
+how the P-10 permissive operates when reactor power is lowering.  When 3/4 PR channels are less 10% 
+(about 9%), then the P-10 permissive will clear to unblock or reinstate the 1/2 IR high flux trip. 
+ 
+  
+
+===== PAGE 143 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 143 
+ 
+58 07-017 Points: 1.00 
+Given: 
+ Unit 2 is at 100% Power. 
+ ALL systems are in normal alignment and in AUTO. 
+ The steam pressure channel associated with the Ovation Digital Feedwater Control System fails 
+HIGH on 21 Steam Generator. 
+Which ONE of the following describes how the Ovation Digital Feedwater Control System will respond to 
+this failure? 
+Note: MS10 – Atmospheric Steam Dump Relief Valve 
+A. 21MS10 will switch to MANUAL. 
+B. 21MS10 will OPEN. 
+C. ALL MS10’s will remain in AUTO. 
+D. ALL MS10s will switch to MANUAL. 
+ 
+  
+
+===== PAGE 144 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 144 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  The operator needs to have knowledge on how the ADFCS system handles instrument 
+failures. Many instrumentation failures are fault tolerant and a few are not.  In this case, a failure of one 
+channel of steam pressure will result in the associated MS-10 loop switching to Manual control, and 
+OHAs G-7 ADFCS Alternate Action and G-15 ADFCS TRBL.  Ovation uses one pressure channel from 
+each SG (4 total) into a Medium Signal Select (MSS) algorithm and with a failure, will select another 
+good input and the other remaining MS10’s will remain in auto. 
+B. Incorrect. One steam pressure channel failure will not cause the associated MS-10 to open.  Plausible 
+because since only one pressure channel from each SG is used into Ovation system that the operator 
+may incorrectly believe that only one pressure channel failing will cause the MS10 to open on the 
+affected SG pressure channel. 
+C. Incorrect.  Plausible because the Ovation system is redundant and fault tolerant to loss of inputs.  
+However, in this case, a loss of one SG pressure channel will cause the associated MS10 to swap to 
+Manual. 
+D. Incorrect. Plausible because since only one pressure channel from each SG is used into Ovation system 
+that the operator may incorrectly believe that the Medium Signal Select (MSS) algorithm is not used and 
+therefore with only one pressure channel failing will cause Ovation to select all the MS10s to swap to 
+Manual. 
+ 
+Technical References:   NOS05ODFWCS-03 
+Proposed References to be provided: None 
+Learning Objective: NOS05ODFWCS-03, Objective 8.g. Describe the function and 
+operating characteristics for the following Advanced Digital 
+Feedwater Control System components:  Steam Pressure 
+Question Source: Bank - Salem 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.6 
+Level:      RO 
+Category/System:    07-Nonnuclear Instrumentation 
+K/A #:      016 K3.12 
+ Knowledge of the effect that a loss or malfunction of the NNIS 
+will have on the following:  S/G 
+Importance: 3.4 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked how the MS10s will operate 
+following a loss of one of the steam generator pressure channels that inputs into Ovation Digital Feedwater 
+Control System. 
+ 
+  
+
+===== PAGE 145 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 145 
+ 
+Additional References:  NOS05ODFWCS-03 
+ 
+ 
+ 
+  
+
+
+===== PAGE 146 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 146 
+ 
+59 05-014 Points: 1.00 
+Which ONE of the following completes the statement regarding operation of the Containment Iodine 
+Removal Units (IRUs)? 
+The Containment IRUs should only be placed in service when directed by ____(1)____ and can be 
+operated from the ___(2)___. 
+ 
+A. 1)  the EOPs 
+2)  Control Room OR Hot Shutdown Panel 
+B. 1)  the EOPs 
+2)  Control Room ONLY 
+C. 1)  Radiation Protection 
+2)  Control Room ONLY 
+D. 1)  Radiation Protection 
+2)  Control Room OR Hot Shutdown Panel 
+  
+
+===== PAGE 147 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 147 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  Part 1 is incorrect. Plausible because the operator may believe that only EOPs give the 
+direction to start IRUs during an accident condition.  Part 2 is incorrect.  The IRUs can only be operated 
+from the control room, but plausible because equipment can be operated from the Hot Shutdown Panel. 
+B. Incorrect.  Part 1 is incorrect. Plausible because the operator may believe that only EOPs give the 
+direction to start IRUs during an accident condition.  Part 2 is correct. 
+C. Correct.  Per S2.OP-SO.CBV-0001, section 4.3 note states “IRUs should only be run when iodine is 
+present in Containment, when requested by Radiation Protection, OR at the discretion of the SM/CRS to 
+support testing.  The IRUs can only be operated from the main control room. 
+D. Incorrect. Part 1 is correct.  Part 2 is incorrect.  The IRUs can only be operated from the control room, 
+but plausible because equipment can be operated from the Hot Shutdown Panel. 
+ 
+Technical References:   NOS05CONTMT-14, S2.OP-SO.CBV-0001 (R36) 
+Proposed References to be provided: None 
+Learning Objective: NOS05CONTMT-14, Objective 7.b. Identify and describe the 
+Control Room controls, indications, and alarms associated with 
+the Containment and Containment Support Systems, including: 
+The function of each Containment and Containment Support 
+Systems Control Room control and indication 
+Question Source: Bank – Salem 2010 NRC RO48 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.7 / 45.5 to 45.8 
+Level:      RO 
+Category/System:    05-Containment Iodine Removal 
+K/A #:      027 A4.03 
+ Ability to manually operate and/or monitor in the control room: 
+CIRS fans 
+Importance: 3.3 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked when IRUs are placed in service and 
+how the IRUs are operated. 
+ 
+  
+
+===== PAGE 148 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 148 
+ 
+Additional References:  S2.OP-SO.CBV-0001 for IRUs 
+ 
+ 
+ 
+  
+
+
+===== PAGE 149 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 149 
+ 
+60 05-015 Points: 1.00 
+Given 
+ A LOCA has occurred 
+ 21 Hydrogen Recombiner is inoperable 
+ The crew is preparing to place 22 Hydrogen Recombiner in service 
+o Containment Temperature PRIOR to the LOCA was 90 ºF 
+o Containment Temperature is currently 120 ºF 
+o Containment pressure peaked at 10 psig 
+o Containment pressure is currently 5 psig as indicated on 2PI-948A 
+ 
+Which ONE of the following completes the statement below? 
+The crew will set the 22 Hydrogen Recombiner Power Setting to _____ KW.   
+REFERENCE PROVIDED 
+ 
+A. 62 
+B. 60 
+C. 54 
+D. 52 
+
+
+===== PAGE 150 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 150 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  This is power setting if you use Cp at 10 psig and 90 °F (Cp=1.425).  1.425 x 42.63 = 60.74 
+KW or rounded off the next higher setting would be 62 KW. 
+B. Incorrect. This is power setting if you use Cp at 10 psig and 120 °F (Cp=1.4).  1.4 x 42.63 = 59.68 KW 
+or rounded off the next higher setting would be 60 KW. 
+C. Correct.  IAW S2.OP-SO.CAN-0001, Attachment 1 and 2, for 22 Hydrogen Recombiner the power 
+setting is calculated as follows:  Power Correction factor (Cp) x Reference Power = Recombiner Power 
+Setting; Cp at 5 psig and 90 °F (Cp=1.24) and Reference Power = 42.63 KW; therefore Power Setting = 
+1.24 x 42.63 = 52.86 KW; per step 5 of Attachment 1 round off to next higher setting which can be read 
+on meter which would be 54 KW. (assuming a lower Cp value of 1.225; then 1.225 x 42.63 = 52.22 KW 
+or still 54 KW) 
+D. Incorrect. This is power setting if you use Cp at 5 psig and 120 °F (Cp=1.21).  1.21 x 42.63 = 51.58 KW 
+or rounded off the next higher setting would be 52 KW. 
+ 
+Technical References:   S2.OP-SO.CAN-0001 (R9) 
+Proposed References to be provided: S2.O P-SO.CAN-0001; embedded reference 22 Hydrogen 
+Combiner Control Power Out KW Meter 
+Learning Objective: NOS05CONTMT-17, Objective 3.g, Describe how the following 
+components impact the Containment and Containment Support 
+Systems during normal and abnormal conditions: Hydrogen 
+Recombiner System 
+Question Source: Modified Bank – Salem 2019 NRC RO32 (modified question to 
+use 22 Hydrogen Recombiner, changed Containment 
+Pressure, and changed answer choices) 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.5 to 45.8 
+Level:      RO 
+Category/System:    05-Hydrogen Recombiner and Purge Control 
+K/A #:      028 A4.01 
+ Ability to manually operate and/or monitor in the control room: 
+HRPS controls 
+Importance: 4.0 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked how to manually operate the 
+Hydrogen Recombiner by determining the power setting when placing 22 Hydrogen Recombiner in service 
+and performing a calculation per S2.OP-SO.CAN-0001 using the provided plant conditions in the question 
+stem. The operator must also know how to round off the setting to the next higher setting which can be read 
+on the meter (photo embedded in question). 
+ 
+
+===== PAGE 151 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 151 
+ 
+Parent Question: Salem 2019 NRC Exam RO32 
+REFERENCES PROVIDED 
+Given 
+ A LOCA has occurred 
+ 22 Hydrogen Recombiner is inoperable 
+ The crew is preparing to place 21 Hydrogen Recombiner in service 
+o Containment Temperature PRIOR to the LOCA was 90 ºF 
+o CURRENT Containment Temperature is 120 ºF 
+o CURRENT Containment pressure as indicated on 2PI-948A is 4.0 psig 
+ 
+Which ONE of the following completes the statement below? 
+The crew will set the 21 Recombiner Power setting to _____ KW.   
+ 
+A. 56 
+B. 54 
+C. 52 
+D. 50 
+ 
+  
+
+
+===== PAGE 152 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 152 
+ 
+61 08-013 Points: 1.00 
+Given: 
+ Unit 1 is at 100% Power. 
+ Spent Fuel Pool makeup is required when responding to OHA C-36, SFP LVL LO, which has been 
+determined to be caused by normal evaporation over the course of several months. 
+ 
+In accordance with S1.OP-SO.SF-0001, Fill and Transfer of the Spent Fuel Pool, which ONE of the 
+following is the LEAST preferred source of makeup water to the Spent Fuel Pool? 
+ 
+A. Demineralized Storage Tank 
+B. Primary Water Storage Tank 
+C. CVCS Holdup Tanks 
+D. Refueling Water Storage Tank 
+  
+
+===== PAGE 153 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 153 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect.  Plausible because the Demineralized Storage Tank is one of the sources of makeup, but it is 
+the first preferred source of makeup to the SFP. 
+B. Incorrect.  Plausible because the Primary Water Storage Tank is one of the sources of makeup, but it is 
+the second preferred source of makeup to the SFP. 
+C. Incorrect.  Plausible because the CVCS Holdup Tanks are one of the sources of makeup, but it is the 
+third preferred source of makeup to the SFP. 
+D. Correct. Per S1.OP-SO.SF-0001 prerequisite step 2.3, the preferred order of SFP makeup water 
+sources are: Demineralized Water, Primary Water, CVCS Holdup Tanks, and RWST or Refueling 
+Cavity.  Therefore, using the RWST as a makeup source is the least preferred. 
+ 
+Technical References:   S1.OP-SO.SF-0001 (R20) 
+Proposed References to be provided: None 
+Learning Objective: NOS05SFP000-12, Objective 11. Discuss the procedural 
+requirements associated with the Spent Fuel Pool Cooling 
+System, including an explanation of major precaution and 
+limitations in the Spent Fuel Pool Cooling procedures 
+Question Source: Bank – Salem 2016 NRC RO46 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.2 to 41.9 / 45.7 to 45.8 
+Level:      RO 
+Category/System:    08-Spent Fuel Pool Cooling 
+K/A #:      033 K1.05 
+ Knowledge of the physical connections and/or cause-effect 
+relationship between the Spent Fuel Pool Cooling System and 
+the following system:  RWST 
+Importance: 2.7 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the applicant is being asked how the RWST relates to the Spent 
+Fuel Pool with regards to a source of makeup water as compared to other makeup sources. 
+ 
+  
+
+===== PAGE 154 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 154 
+ 
+62 08-014 Points: 1.00 
+Which ONE of the following describes an interlock on the Unit 2 Spent Fuel Handling Crane? 
+ 
+A. Overload Cutoff prevents crane travel with loads in excess of 2200 pounds over the fuel 
+assemblies. 
+B. A high radiation signal on 2R32A, Fuel Handling Crane, Radiation Area monitor will lockout ALL 
+crane motion. 
+C. Slack Cable prevents BOTH upward and downward motion of the hoist. 
+D. A high radiation signal on 2R9, New Fuel Storage Area, Radiation Area monitor prevents upward 
+motion of the hoist. 
+  
+
+===== PAGE 155 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 155 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  Overload Cutoff prevents crane travel with loads in excess of 2200 pounds over the fuel 
+assemblies.  This is a TRM surveillance requirement per TR Surveillance 4.9.7 and checked within 7 
+days IAW SC.MD-ST.CRN-0003 prior to crane use. 
+B. Incorrect.  2R32A in alarm ONLY prevents upward motion of the hoist.  Lowering the hoist is still 
+enabled.  Plausible in that the operator may believe that ALL crane motion is locked out. 
+C. Incorrect.  Slack Cable interlock ONLY prevents downward direction of the hoist.  Plausible if the 
+operator believes that this interlock prevents hoist motion in either direction. 
+D. Incorrect. 2R5 or 2R9 Area radiation monitors only actuate the FHB Ventilation System and has no 
+interlocks with the Fuel Handling crane operation.  The operator may believe that these radiation 
+monitors also interlock with the crane like the 2R32A. 
+ 
+Technical References:   NOS05REFUEL-13 
+Proposed References to be provided: None 
+Learning Objective: NOS05REFUEL-13, Objective 5. Outline the interlocks 
+associated with the following Refueling System components: 
+Fuel Handling Crane 
+Question Source: Bank - Salem 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.7 
+Level:      RO 
+Category/System:    08-Fuel-Handling Equipment 
+K/A #:      034 K4.02 
+ Knowledge of design feature(s) and/or interlock(s) which 
+provide for the following: Fuel movement 
+Importance: 2.5 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the question is asking the candidate on knowledge of interlocks 
+associated with the Spent Fuel Handing Crane. 
+ 
+  
+
+===== PAGE 156 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 156 
+ 
+63 04-049 Points: 1.00 
+Given: 
+ Unit 2 reactor was tripped and is cooling down for a planned refueling outage. 
+ Steam Dumps are in MANUAL MS PRESSURE Control Mode 
+ RCS cooldown rate is 70 °F per hour. 
+ 
+Which ONE of the following completes the following statement concerning the expected operation of the 
+steam dump system during the cooldown? 
+  
+1. The RCS cooldown will stop when Tavg is less than the MAXIMUM setpoint of__(1)__. 
+2. In order to re-establish RCS cooldown, the operator will depress TRAIN ___(2)___ BYPASS ON 
+pushbutton(s). 
+ 
+A. 1.  543 °F 
+2.  A OR B 
+B. 1.  543 °F 
+2.  A AND B 
+C. 1.  547 °F 
+2.  A AND B 
+D. 1.  547 °F 
+2.  A OR B 
+  
+
+===== PAGE 157 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 157 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  First part is correct.  Second part is incorrect.  Plausible because the applicant may 
+incorrectly believe that when the BYPASS TAVG are depressed, then all group dump valves can be  
+reopen and forget that only the cooldown (Group 1) valves can only be opened. 
+B. Correct.  When Tavg drops below 543 °F (low-low Tavg 2/4 < 543 °F, P-12), then all of the steam dump 
+valves will close and the cooldown will stop and Tavg will eventually start to rise again.  In order to 
+reopen the steam dump valves following low-low Tavg, the operator is required to depress both Train A 
+and Train B Bypass ON pushbuttons.  This will allow only the Group 1 cooldown valves to be opened 
+when Tavg Bypass is depressed. 
+C. Incorrect.  First part is incorrect.  Second part is correct.  Plausible because 547 °F is the setpoint for 
+maintaining Tavg when the steam dumps are operating in Tavg Plant Trip Mode. 
+D. Incorrect.  First part is incorrect.  Second part is incorrect. Plausible because 547 °F is the setpoint for 
+maintaining Tavg when the steam dumps are operating in Tavg Plant Trip Mode. Plausible because the 
+applicant may incorrectly believe that when the BYPASS TAVG are depressed, then all group dump 
+valves can be  reopen and forget that only the cooldown (Group 1) valves can only be opened. 
+ 
+Technical References:   NOS05STDUMP-13 
+Proposed References to be provided: None 
+Learning Objective: NOS05STDUMP-13, Objective 8.d. Describe the function of the 
+following components and how their normal and abnormal 
+operation affects the Steam Dump System:  Low-Low Tavg 
+Question Source: New 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.5 / 45.5 
+Level:      RO 
+Category/System:    04-Steam Dump/Turbine Bypass Control 
+K/A #:      041 A1.01 
+ Ability to predict and/or monitor changes in parameters (to 
+prevent exceeding design limits) associated with operating the 
+SDS controls including: T-ave., verification above low/low 
+setpoint 
+Importance: 2.9 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to predict the response of the steam 
+dump valves following receiving the P-12 (2/4 Tavg channels < 543 F) and depressing the Bypass Tavg 
+pushbuttons.  In this case, the operator should know that only the Group 1 cooldown valves are allowed to 
+be operated. 
+ 
+  
+
+===== PAGE 158 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 158 
+ 
+64 04-050 Points: 1.00 
+Given: 
+ Unit 2 is at 89% Power. 
+ Main Turbine Valve testing is in progress in accordance with S2.OP-PT.TRB-0003, Main Turbine 
+Valve Stroke Testing. 
+ 
+In accordance with S2.OP-PT.TRB-0003, which ONE of the following completes the statement? 
+ 
+While performing the valve stroke test, if a __(1)__ valve does NOT reopen, then the operator is required to 
+__(2)__. 
+ 
+A. 1)  Reheat or Intercept 
+2)  reduce turbine load to < 75% within an hour 
+B. 1)  Reheat or Intercept 
+2)  trip the reactor 
+C. 1)  Governor or Stop 
+2)  reduce turbine load to < 75% within an hour 
+D. 1)  Governor or Stop 
+2)  trip the reactor 
+  
+
+===== PAGE 159 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 159 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  Plausible if the operator believes that the requirement to reduce power to 75% within one 
+hour is for a Reheat of Intercept valves.  First part is incorrect.  IAW S2.OP-PT.TRB-0003 P&L step 
+3.12.6, except for short periods during testing, the Main Turbine should NOT be operated above 80% 
+load with a Reheat Stop Valve or Intercept Valve closed.  Do Not exceed 5 minutes with any valve 
+closed before beginning to reduce load at 10%/hr.  Continue load reduction until either the valve is open 
+or less than 80% load is achieved.   Second part is correct. 
+B. Incorrect.  Plausible if the operator believes that the requirement to reduce power to 75% within one 
+hour is for a Reheat of Intercept valves.  First part is incorrect.  IAW S2.OP-PT.TRB-0003, P&L step 
+3.12.3, except for short periods during testing, if any HP turbine inlet valve (MS28/MS29) closes and 
+does not reopen or must be isolated by the operator, then turbine load should be reduced to 75% within 
+one hour.  Second part is incorrect.  Reactor trip is not required by procedure. 
+C. Correct.  IAW S2.OP-PT.TRB-0003, P&L step 3.12.3, except for short periods during testing, if any HP 
+turbine inlet valve (MS28/MS29) closes and does not reopen or must be isolated by the operator, then 
+turbine load should be reduced to 75% within one hour. 
+D. Incorrect.  Plausible if the operator believes that a reactor trip is required when a Governor or Stop valve 
+is closed.  See Ans. C for further explanation. 
+ 
+Technical References:   S2.OP-SO.TRB-0001 (R49) 
+Proposed References to be provided: None 
+Learning Objective: NOS05GEN002-07, Objective 12. Identify and describe the 
+Control Room controls, indications, and alarms associated with 
+the Unit 2 Main Generator and Hydrogen Cooling System, 
+including:  The plant conditions or permissives required for Unit 
+2 Main Generator and Hydrogen Cooling System Control Room 
+controls to perform their intended function 
+Question Source: New 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 43.5 / 45.2 / 45.6 
+Level:      RO 
+Category/System:    04-Main Turbine Generator 
+K/A #:      045 G2.1.23 
+ Ability to perform specific system and integrated plant 
+procedures during all modes of operation. 
+Importance: 4.3 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked what action is required when 
+performing main turbine valve testing at power if a Governor or Stop valve does not reopen. 
+ 
+  
+
+===== PAGE 160 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 160 
+ 
+65 04-051 Points: 1.00 
+Given: 
+ Unit 2 is at 75% Power. 
+ Power was reduced 2 days ago when 21 Condensate Pump tripped. 
+ 21 Condensate Pump remains out of service. 
+ Condensate Polisher is in service with full flow. 
+ 
+Subsequently, 22 Condensate Pump trips. 
+ 
+Which ONE of the following completes both statements? 
+ 
+1. Based on the above condition, which plant parameter is expected to be impacted FIRST? 
+2. In accordance with S2.OP-AB.CN-0001, Main Feedwater/Condensate System Abnormality, what is 
+the NEXT required action to mitigate this event? 
+  
+A. Lowering SG NR levels.  Initiate a rapid load reduction at 15%/min to a maximum power level not 
+to exceed 30%. 
+B. Lowering SG NR levels.  Open 21-23 CN108s Polisher Bypass Valves. 
+C. Lowering SGFP suction pressure. Initiate a rapid load reduction at 15%/min to a maximum power 
+level not to exceed 30%. 
+D. Lowering SGFP suction pressure. Open 21-23 CN108s Polisher Bypass Valves. 
+  
+
+===== PAGE 161 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 161 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect.  First part is incorrect.  Second part is incorrect.  Plausible because the SG levels will be 
+impacted but SGFP suction pressure will be the first parameter to see the effect. Part 2 is plausible 
+because the procedure will direct a load reduction to 30% power, however the applicant may believe 
+that reducing load is the priority to stabilize the plant and that 15%/min ramp is reasonable since its 
+used for a SGFP trip runback which is not the rate specified in the procedure of a maximum of 5%/min.  
+Restoring SGFP suction pressure is the priority to prevent loss of the SGFPs. 
+B. Incorrect.  First part is incorrect.  Second part is correct.  Plausible because the operator may believe 
+that SG levels will be impacted first.  SGFP suction pressure will be the first indication seen by the 
+operators and has the priority to open the CN108s to bypass the polishers and restore SGFP suction 
+pressure to avoid losing the feedpumps. 
+C. Incorrect.  First part is correct.  Second part is incorrect.  Part 2 is plausible because the procedure will 
+direct a load reduction to 30% power, however the applicant may believe that reducing load is the 
+priority to stabilize the plant and that 15%/min ramp is reasonable since its used for a SGFP trip runback 
+which is not the rate specified in the procedure of a maximum of 5%/min.  Restoring SGFP suction 
+pressure is the priority to prevent loss of the SGFPs..  
+D. Correct.  At 75% power and with only one condensate pump running, the first operational impact will be 
+seen by rapidly lowering SGFP suction pressure.  The SGFPs speed will increase in an attempt to 
+increase flow and the BF19s will throttle open more to increase feedwater flow.  Subsequently, SG NR 
+levels will start to lower based on reduction of condensate flow, until the 21-23 CN108s are opened, and 
+if necessary, the 2CN47 bypass is opened.  The CN108s and CN47 do not open automatically on a 
+condensate pump trip.  Opening the CN108’s first will bypass the condensate polishers and help restore 
+SGFP suction pressure to prevent the loss of the feedpumps. 
+ 
+Technical References:   S2.OP-AB.CN-0001 (R31) 
+Proposed References to be provided: None 
+Learning Objective: NOS05ABCN01-07, Object ive 2. Describe, in general terms, 
+the actions taken in AB.CN-0001 and the bases for the actions 
+in accordance with the technical bases document. 
+Question Source: Bank – Salem 2011 NRC RO53 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 43.5 / 45.3 / 45.13 
+Level:      RO 
+Category/System:    04-Condensate 
+K/A #:      056 A2.04 
+ Ability to (a) predict the impacts of the following malfunctions or 
+operations on the Condensate System; and (b) based on those 
+predictions, use procedures to correct, control, or mitigate the 
+consequences of those malfunctions or operations: Loss of 
+condensate pumps. 
+Importance: 2.6 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+
+===== PAGE 162 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 162 
+ 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to predict the impact to plant 
+operations following a condensate pump trip and what action is required in response to the loss of 
+condensate pump IAW S2.OP-AB.CN-0001.  In this case, with a loss of a condensate pump at 75% power, 
+the first parameter that will be impacted will be SGFP suction pressure.  SG NR levels will subsequently be 
+impacted if the condensate polishers are not bypassed and a load reduction is not commenced to 30%. 
+ 
+  
+
+===== PAGE 163 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 163 
+ 
+66 14-048 Points: 1.00 
+In accordance with OP-AA-104-101, Communications, which ONE of the following evolutions would require 
+a plant announcement? 
+ 
+ 
+A. Swapping a 28 VDC battery charger to the standby charger. 
+B. Commencing a fill of the Main Generator bulk hydrogen bottles from a vendor supply truck. 
+C. Commencing a Containment Pressure Relief to lower Containment pressure. 
+D. Performing radiography in the Turbine Building. 
+  
+
+===== PAGE 164 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 164 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect.  Plausible because the operator may believe that this evolution meets the requirement for 
+energizing of major electrical switchgear and buses.  Swapping 28 VDC battery chargers does not meet 
+the requirements of OP-AA-104-10 for page announcements. 
+B. Incorrect.  Plausible because the operator may believe that this evolution meets the requirements for 
+alerting plant personnel of an unexpected event or condition.  The candidate may believe that since 
+Chemical off-loading at the polisher is announced, that off-loading Hydrogen would also be announced. 
+Filling bulk hydrogen bottles does not meet the requirements of OP-AA-104-10 for page 
+announcements. 
+C. Incorrect.  Plausible because the operator may believe that this evolution meets the requirements for 
+alerting plant personnel of an unexpected event or condition or possibly changing radiation levels in the 
+plant. Containment pressure relief does not meet the requirements of OP-AA-104-10 for page 
+announcements. 
+D. Correct.  IAW OP-AA-104-101, Communications, step 4.1.3.6, states in part the following; make public 
+address announcements prior to activities that could change plant radiation levels.  In this case, 
+radiography performed in the Turbine Building will change radiation levels in the area and can expose 
+personnel in the area to high radiation fields.  Radiography performed in the Turbine Building are 
+typically performed during refueling outages. 
+ 
+Technical References:   OP-AA-104-101 (R5) 
+Proposed References to be provided: None 
+Learning Objective: NOS05CONDOP-14, Objective 5. Describe requirements for 
+the following Control Room or Field Activities in accordance 
+with applicable Conduct of Operations Manual Administrative 
+Procedures:  Supervisor Involvement 
+Question Source: New 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 45.13 
+Level:      RO 
+Category/System:    14-Conduct of Operations 
+K / A  # :       G 2 . 1 . 1  
+ Knowledge of conduct of operations requirements. 
+Importance: 3.8 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked which type of evolutions require a 
+public page announcement per station conduct of operations procedures. 
+ 
+  
+
+===== PAGE 165 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 165 
+ 
+Additional References:  OP-AA-104-101 
+ 
+ 
+ 
+  
+
+
+===== PAGE 166 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 166 
+ 
+67 14-049 Points: 1.00 
+In accordance with OP-AA-112-101, Shift Turnover and Relief, a shift turnover SHALL NOT be conducted 
+in which of the following circumstances? 
+ 
+ 
+A. A plant startup is in progress.  The generator has just been synched to the grid, and SG level 
+control is in manual. 
+B. A reactor startup in progress. SR NIS have indicated 3 doublings since rod withdrawal 
+commenced. 
+C. A diesel surveillance is in progress, diesel is running unloaded. 
+D. A power ascension is in progress at 10% per hour. 
+ 
+ 
+ 
+  
+
+===== PAGE 167 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 167 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  Plausible if the applicant believes that with the SG level control in manual that this task is 
+critical enough that the operator should not be distracted for turnover. 
+B. Correct.  IAW OP-AA-112-101 step 4.1.2, evolutions that may interfere with or distract the operators 
+during turnovers such as the approach to criticality, rapid down-power, significant plant evolution, 
+transient response, etc. should not be performed.  The diesel surveillance, SG level control in manual 
+and a 10% per hour power ascension does not interfere with the operators from performing a shift 
+turnover.  Shift turnovers should not be performed during the approach to criticality and closing of the 
+first generator output breaker during synchronization evolutions since these are important evolutions 
+requiring continued operator attention 
+C. Incorrect.  Plausible if the applicant believes that running a diesel surveillance is a critical task that the 
+operator should not be distracted for turnover. 
+D. Incorrect.  Plausible if the applicant believes that a 10% per hour power ascension is a critical task that 
+the operator should not be distracted for turnover 
+ 
+Technical References:   OP-AA-112-101 (R7) 
+Proposed References to be provided: None 
+Learning Objective: NOS05CONDOP-14, Objective 5. Describe requirements for 
+the following Control Room or Field Activities in accordance 
+with applicable Conduct of Operations Manual Administrative 
+Procedures:  Shift Relief and Turnover 
+Question Source: Bank – Beaver Valley NRC 2017 RO67 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 45.13 
+Level:      RO 
+Category/System:    14-Conduct of Operations 
+K / A  # :       G 2 . 1 . 3  
+ Knowledge of shift or short-term relief turnover practices. 
+Importance: 3.7 
+Tier/Group     Plant Systems-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked which plant evolutions can be 
+performed during shift turnover. 
+ 
+  
+
+===== PAGE 168 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 168 
+ 
+Additional References:  OP-AA-112-101 
+ 
+ 
+ 
+  
+
+
+===== PAGE 169 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 169 
+ 
+68 14-050 Points: 1.00 
+In accordance with SA-AA-114, Confined Space Program, which ONE of the following completes both 
+statements regarding a PERMITTED confined space entry? 
+ 
+1. Who must be present at the confined space entry point while Entrants are in the space? 
+2. Who may enter the space if an emergency rescue must be performed? 
+ 
+A. 1)  Attendant 
+2)  Fire Brigade 
+B. 1)  Attendant 
+2)  Site Safety Professional 
+C. 1)  Entry Supervisor 
+2)  Fire Brigade 
+D. 1)  Entry Supervisor 
+2)  Site Safety Professional 
+  
+
+===== PAGE 170 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 170 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  IAW SA-AA-114, when entry into a Permit Required Confined Space is performed, the 
+Attendant must always be present when entrants are in the confined space, and the Fire Brigade will 
+serve as the Rescue Team. 
+B. Incorrect.  Part 1 is correct. Part 2 is incorrect.  Credible distractor if the operator believes that the Site 
+Safety Professional is authorized to enter for rescue based on being knowledgeable on safety 
+procedures.  
+C. Incorrect.  Part 1 is incorrect.  Plausible because t he Entry Supervisor has the responsibility to ensure all 
+individuals are qualified and briefed on the confined space entry, however he is not required to remain 
+present during the entry.  Part 2 is correct. 
+D. Incorrect.  Part 1 is incorrect.  Plausible because t he Entry Supervisor has the responsibility to ensure all 
+individuals are qualified and briefed on the confined space entry, however he is not required to remain 
+present during the entry.  Part 2 is incorrect. .  Credible distractor if the operator believes that the Site 
+Safety Professional is authorized to enter for rescue based on being knowledgeable on safety 
+procedures. 
+ 
+Technical References:   SA-AA-114 (R18) 
+Proposed References to be provided: None 
+Learning Objective: NOS05CONDOP-14, Objective 5. Describe requirements for 
+the following Control Room or Field Activities in accordance 
+with applicable Conduct of Operations Manual Administrative 
+Procedures:  Industrial Safety Practices 
+Question Source: Bank – Salem 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 45.12 
+Level:      RO 
+Category/System:    14-Conduct of Operations 
+K / A  # :       G 2 . 1 . 2 6  
+ Knowledge of industrial safety procedures (such as rotating 
+equipment, electrical, high temperature, high pressure, caustic, 
+chlorine, oxygen and hydrogen). 
+Importance: 3.4 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked the industrial safety requirements 
+associated with entering a permitted confined space. 
+  
+
+===== PAGE 171 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 171 
+ 
+Additional References:  SA-AA-114 
+ 
+  
+
+
+===== PAGE 172 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 172 
+ 
+Additional References:  SA-AA-114 (continued) 
+ 
+ 
+ 
+ 
+  
+
+
+===== PAGE 173 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 173 
+ 
+69 11-157 Points: 1.00 
+ 
+In accordance with AD-AA-101-101, Implementing and Technical Procedure On-The-Spot Change (OTSC) 
+Process, which ONE of the following would be considered a change to the INTENT of a procedure? 
+ 
+ 
+A. Altering an Inspection Hold Point in a procedure. 
+B. Increasing the amount or level of m anagement oversight or level of approval. 
+C. Adding text to clarify the purpose of a procedure step. 
+D. Changing an implementing procedure step reference to the correct attachment. 
+  
+
+===== PAGE 174 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 174 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  Deleting a Hold Point is conserved a change to the intent of the procedure and needs to go 
+through the formal procedure change process. 
+B. Incorrect.  Plausible if the applicant believes that changing a title of a position is a change of intent. 
+C. Incorrect.  Plausible if the applicant believes that clarifying a purpose of a procedure is changing the 
+purpose of a procedure and  is a change of intent. 
+D. Incorrect.  Plausible if the applicant believes that changing a step in a procedure in which the step 
+incorrectly refers to the incorrect attachment is a change of intent. 
+ 
+Technical References:   AD-AA-101-101 (R7) 
+Proposed References to be provided: None 
+Learning Objective: NOS05ECCS00-10, Objective 12. Summarize  the differences 
+between Unit 1 and Unit 2 Emergency Core Cooling System 
+components, parameters, and operation 
+Question Source: Bank – ANO Unit 1 2017 NRC RO69 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 43.3 / 45.13 
+Level:      RO 
+Category/System:    11-Equipment Control 
+K / A  # :       G 2 . 2 . 6  
+ Knowledge of the process for making changes to procedures. 
+Importance: 3.0 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the applicant must know the process for making changes to 
+procedures.  In this case, the applicant is being asked which condition is a change to intent of a procedure 
+that prevents the use of a OTSC process. 
+  
+
+===== PAGE 175 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 175 
+ 
+Additional Reference: 
+ 
+ 
+
+
+===== PAGE 176 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 176 
+ 
+70 14-051 Points: 1.00 
+In an emergency, which position has the authority to authorize the repositioning of a component with a Red 
+Blocking Tag attached? 
+ 
+ 
+A. Shift Manager 
+B. Control Room Supervisor 
+C. Senior Director of Operations 
+D. Shift Operations Manager 
+  
+
+===== PAGE 177 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 177 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  IAW OP-AA-109-115, Attachment 3, Tagging Rules, in an emergency, the Shift Manager can 
+authorize the repositioning of a RBT component if it presents an immediate challenge to safety or 
+personnel or plant equipment. 
+B. Incorrect.  Plausible because CRS do authorization to approve tagouts and releases.  
+C. Incorrect.  Plausible because the applicant may believe that a higher level in the operations organization 
+is needed to perform such an action with repositioning of a RBT. 
+D. Incorrect.  Plausible because the applicant may believe that a higher level in the operations organization 
+is needed to perform such an action with repositioning of a RBT. 
+ 
+Technical References:   OP-AA-109-115 (R15) 
+Proposed References to be provided: None 
+Learning Objective: NOS05CONDOP-14, Objective 5. Describe requirements for 
+the following Control Room or Field Activities in accordance 
+with applicable Conduct of Operations Manual Administrative 
+Procedures:  Industrial Safety Practices 
+Question Source: New 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 45.13 
+Level:      RO 
+Category/System:    14-Equipment Control 
+K / A  # :       G 2 . 2 . 1 3  
+ Knowledge of tagging and clearance procedures. 
+Importance: 4.1 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked knowledge of the tagging 
+procedures with regards to who can reposition a component with a RBT affixed. 
+ 
+  
+
+===== PAGE 178 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 178 
+ 
+Additional Reference:  OP-AA-109-115 
+ 
+ 
+ 
+  
+
+
+===== PAGE 179 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 179 
+ 
+71 15-027 Points: 1.00 
+Given: 
+ A large break LOCA is in progress and core damage has occurred with high radiation levels in 
+accessible plant areas. 
+ To prevent further core damage, the Operations Support Center (OSC) is dispatching an NEO to 
+locally operate a failed MOV in an area surveyed at 100 R/hr. 
+ 
+Which ONE of the following is the MAXIMUM stay time (in minutes) for the operator to perform the task 
+without exceeding the authorized planned emergency exposure limit? 
+ 
+A. 3 
+B. 6 
+C. 15 
+D. 45 
+ 
+  
+
+===== PAGE 180 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 180 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  Plausible if you use the 10 CFR 20 Federal annual limit of 5 Rem TEDE as the maximum 
+exposure limit. 
+B. Incorrect. Plausible is you use 10 Rem as the ma ximum limit for protecting valuable property IAW RP-
+AA-203.   
+C. Correct.  IAW NC.EP-EP.ZZ-0304, Attachment 3, 25 Rem is the planned emergency exposure limit 
+(PEEL) for accident mitigation.  Therefore, maximum stay time is  [(25 R / 100 R/hr) x 60 min/hr = 15 
+minutes] 
+D. Incorrect.  Plausible if you use 75 Rem as the planned emergency exposure limit (PEEL) for life saving. 
+ 
+Technical References:   NC.EP-EP.ZZ-0304 (R17), RP-AA-203 (R6) 
+Proposed References to be provided: None 
+Learning Objective: NOS05RADCON-06, Objective 3. Discuss the emergency 
+exposure limits in accordance with applicable station 
+procedures pertaining to: Guidelines for personnel receiving 
+emergency exposure 
+Question Source: Modified Bank – Byron 2019 NRC RO72 (October exam) 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.12 / 43.4 / 45.10 
+Level:      RO 
+Category/System:    15-Radiation Control 
+K / A  # :       G 2 . 3 . 4  
+ Knowledge of radiation exposure limits under normal or 
+emergency conditions. 
+Importance: 3.2 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked the emergency exposure limits for 
+accident mitigation under emergency conditions IAW NC.EP-EP.ZZ-020304 procedure limits. 
+ 
+  
+
+===== PAGE 181 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 181 
+ 
+Additional Reference:  NC.EP-EP.ZZ-0304 
+ 
+ 
+ 
+  
+
+
+===== PAGE 182 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 182 
+ 
+Parent Question:  Bryon 2019 RO72 (October exam) 
+ 
+ 
+
+
+===== PAGE 183 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 183 
+ 
+72 15-028 Points: 1.00 
+Given: 
+ An Equipment Operator is needed to place a Cation Bed Demineralizer in service. 
+ Radiological readings in the area are 1100 mR/hr. 
+In accordance with RP-AA-460, Controls for High and Very High Radiation Areas, which ONE of the 
+following completes both statements? 
+ 
+1. The radiological posting requirement for this area is __(1)__. 
+2. Personnel entering this area will require __(2)__ RP coverage. 
+ 
+A. 1)  High Radiation Area 
+2)  continuous 
+B. 1)  High Radiation Area 
+2)  periodic 
+C. 1)  Locked High Radiation Area 
+2)  periodic 
+D. 1)  Locked High Radiation Area 
+2)  continuous 
+ 
+  
+
+===== PAGE 184 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 184 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect.  Part 1 is incorrect.  Plausible if the operator believes that greater than 1000 mR/hr is the 
+posting requirement for a High Radiation Area (HRA).  Part 2 is correct. 
+B. Incorrect.  Part 1 is incorrect.  Plausible if the operator believes that greater than 1000 mR/hr is the 
+posting requirement for a High Radiation Area (HRA).  Part 2 is incorrect.  Plausible because the 
+operator may believe the posting is a HRA and the RP coverage would only require periodic 
+surveillance. 
+C. Incorrect.  Part 1 is correct.  Part 2 is incorrect.  Plausible is the operator believes that the RP coverage 
+for the area is periodic and not continuous. 
+D. Correct.  IAW RP-AA-460 step 4.2, LHRA is defined as dose rates > 1000 mR/hr @ 30 cm.  Step 4.2.5 
+states access into this area requires continuous surveillance/coverage 
+ 
+Technical References:   RP-AA-460 (R20) & RP-AA-376 (R10) 
+Proposed References to be provided: None 
+Learning Objective: NOS05RADCON-06, Objective 4. Describe the following 
+posting requirements, as well as any applicable restrictions:  
+Locked High Radiation Area 
+Question Source: New 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.12 / 45.9 / 45.10 
+Level:      RO 
+Category/System:    15-Radiation Control 
+K / A  # :       G 2 . 3 . 1 2  
+ Knowledge of radiological safety principles pertaining to 
+licensed operator duties, such as containment entry 
+requirements, access to locked high radiation areas, aligning 
+filters, etc. 
+Importance: 3.2 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked knowledge of radiological postings 
+for a room with a dose rate > 1 R/hr and the required RP coverage to access this area. 
+ 
+  
+
+===== PAGE 185 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 185 
+ 
+73 14-052 Points: 1.00 
+Given: 
+ The crew has just entered 2-EOP-FRSM-1, Response to Nuclear Power Generation – ATWS. 
+ The below Caution symbol appears prior to step 1. 
+ 
+ 
+ 
+In accordance with OP-SA-108-101-2002, Emergency Operating Procedure User’s Guide, which ONE of 
+the following completes the statement? 
+Because the Caution appears before step 1, the Caution __________________. 
+ 
+A. provides no instruction or operator action,  only information to support the operator action 
+B. applies only to step 1 
+C. applies to step 1 and may apply to subsequent procedure steps 
+D. informs the operator of an action that must be taken if conditions are met at any time while in the 
+procedure 
+  
+
+
+===== PAGE 186 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 186 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  Plausible if the operator believes this is the description of a Caution but it is a description of a 
+Note used in EOPs. 
+B. Incorrect.  Plausible if the operator believes this is a Caution symbol (single border) versus a Continuous 
+Caution symbol (double border).  This Caution will only apply to the step it proceeded and not 
+throughout the EOP. 
+C. Correct.  IAW OP-SA-108-101-2002 section 2.15 (Notes and Cautions), Cautions contain information 
+about potential hazards to personnel or equipment.  They also advise on action or transitions which may 
+become necessary depending on changes in plant conditions. Based on the symbol (double borders) in 
+the stem, this is a Continuous Caution.  Per step 2.15.12, a Continuous Caution which precedes the first 
+operator action step may also apply to the entire EOP guideline. 
+D. Incorrect.  Plausible if the operator believes this is the description of a Caution, but it is a description of a 
+continuous action step used in EOPs. 
+ 
+Technical References:   OP-SA-108-101-2002 (R0) 
+Proposed References to be provided: None 
+Learning Objective: NOS05RADCON-06, Objective 4. Describe the following 
+posting requirements, as well as any applicable restrictions:  
+Locked High Radiation Area 
+Question Source: Bank – Diablo Canyon 2016 NRC RO67 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 45.13 
+Level:      RO 
+Category/System:    14-Emergency Procedures/Plan 
+K / A  # :       G 2 . 4 . 1 7  
+ Knowledge of EOP terms and definitions. 
+Importance: 3.9 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked knowledge of terms and definitions 
+used in Salem EOPs.  In this case, the operator is being asked how Caution steps apply in EOPs. 
+ 
+  
+
+===== PAGE 187 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 187 
+ 
+Additional References:  OP-SA-108-101-2002 
+ 
+ 
+
+
+===== PAGE 188 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 188 
+ 
+74 14-053 Points: 1.00 
+Given: 
+ You are the assigned Primary Communicator. 
+ At time 1330, the Shift Manager declared an ALERT on Unit 2. 
+ At time 1335, the Shift Manager completed the Initial Contact Message Form (ICMF) and hands it to 
+you to perform the State and Local notifications. 
+ 
+In accordance with EP-SA-325-F6, Primary Communicator Log, which ONE of the following completes both 
+statements? 
+ 
+1. What time are the notifications to NJ and DE required to be completed by? 
+2. When does the notification time end? 
+ 
+ 
+A. 1)  1345 
+2)  When the contacted organization is provided ALL information from the ICMF. 
+B. 1)  1345 
+2)  When the contacted organization is provided the Emergency Classification Level ONLY. 
+C. 1)  1350 
+2)  When the contacted organization is provided the Emergency Classification Level ONLY. 
+D. 1)  1350 
+2)  When the contacted organization is provided ALL information from the ICMF. 
+ 
+  
+
+===== PAGE 189 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 189 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  First part is correct.  Second part is incorrect, only the Emergency Level Classification needs 
+to be provided.  Plausible because the operator may believe that the entire ICMF needs to be read. 
+B. Correct. IAW EP-SA-325-F6, the notification must be completed within 15 minutes from the declared 
+emergency.  In this case, the ALERT was declared at 1330, therefore, the notifications must be 
+completed by 1345.  The notification ends when the contacted organization is provided the Emergency 
+Classification Level. 
+C. Incorrect. First Part is incorrect.  Same reason as Ans. B.  Second Part is correct.  Plausible if the 
+operator believes that the notification time starts from when the SM hands the ICMF to the 
+communincator. 
+D. Incorrect. First Part is incorrect.  Same reason as An s. B.  Second Part is incorrect same reason as Ans. 
+B.  Plausible because the operator may believe that the entire ICMF needs to be read. 
+ 
+Technical References:   EP-SA-325-F6 (R9) 
+Proposed References to be provided: None 
+Learning Objective: NEPCOMMDTYQG, B.3 De monstrate a satisfactory level of 
+knowledge by discussing each item with a Subject matter 
+Expert designated to evaluate the task. 3) List all time 
+requirements for the following status reports:  Initial Contact 
+Message Form 
+Question Source: Bank - Salem 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 45.11 
+Level:      RO 
+Category/System:    14-Emergency Procedures/Plan 
+K / A  # :       G 2 . 4 . 3 9  
+ Knowledge of RO responsibilities in emergency plan 
+implementation. 
+Importance: 3.9 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the operator is being tested on the knowledge of performing 
+Primary Communicator duties IAW EP-SA-325-F6 during an emergency. 
+ 
+  
+
+===== PAGE 190 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 190 
+ 
+75 14-054 Points: 1.00 
+Given: 
+ An ALERT has been declared on Unit 2. 
+ You are the Primary Communicator. 
+ You are directed to perform the State and Local notifications. 
+ 
+Which ONE of the following is the preferred or primary communication method? 
+ 
+Note: NETS – Nuclear Emergency Telecommunications System 
+ NAWAS – North America Warning Alert System (DE only) 
+ EMRAD – Emergency Radio (NJ only) 
+ ESSX -1 – PSEG microwave phone system 
+ 
+  
+A. Radios (EMRAD and NAWAS) 
+B. ESSX-1 phone 
+C. NETS phone 
+D. Satellite phone 
+ 
+  
+
+===== PAGE 191 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 191 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  Plausible because use of radios (NAWAS and EMRAD) is used as the backup to NETS. 
+B. Incorrect.  Plausible because the ESSX-1 is a microwave private phone system operated by PSEG and 
+serves as the secondary means to the NETS phones.. 
+C. Correct.  IAW EP-SA-325-F6, Primary Communicator Log, and NEPOVERVIEW, EP Overview, the 
+primary communicator will use the NETS phone first, then use either ESSX 1 or DID system phones, 
+then NAWAS radio for DE and EMRAD radio for NJ 
+D. Incorrect.  Plausible because Satellite phone is the last option if all other communications are 
+unavailable. 
+ 
+Technical References:   EP-AA-325-F6 (R11), NEPOVERVIEW (R12) 
+Proposed References to be provided: None 
+Learning Objective: None 
+Question Source: New 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 45.13 
+Level:      RO 
+Category/System:    14-Emergency Procedures/Plan 
+K / A  # :       G 2 . 4 . 4 3  
+ Knowledge of emergency communications systems and 
+techniques. 
+Importance: 3.2 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked knowledge of how the notification to 
+the States are performed using the communication systems on the island and the preferred or primary 
+communications used. . 
+ 
+  
+
+===== PAGE 192 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 192 
+ 
+Additional Reference: 
+ 
+ 
+
+
+===== PAGE 193 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 1 
+ 
+76 10-113 Points: 1.00 
+ 
+Given: 
+At time 1000; 
+ A Reactor Trip First Out annunciator is in alarm with the reactor at power. 
+ The reactor did NOT trip. 
+ The crew entered 1-EOP-FRSM-1, Response to Nuclear Power Generation - ATWS. 
+At time 1010; 
+ Power Range NIS are indicating 5.2%. 
+ Intermediate Range Startup Rate is -0.19 DPM. 
+ OHA D-36, RCP VIB HI, is LIT. 
+ PO reports 11 RCP motor flange vibration is at 6 mils and stable. 
+ 
+Which ONE of the following completes both statements in accordance with 1-EOP-FRSM-1? 
+ 
+Based on the above conditions, 11 RCP ___(1)___ be stopped because _____(2)____. 
+ 
+ 
+A. 1.  should NOT 
+2.  RCP operation will ensure thorough mixing of boron in the core 
+B. 1.  should NOT 
+2.  RCP operation can provide temporary core cooling during voided RCS conditions 
+C. 1.  should 
+2.  RCP trip  criteria have been met 
+D. 1.  should 
+2.  the remaining RCPs would provide adequate heat removal 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 194 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 2 
+ 
+Answer:  B 
+Explanation / Justification:   
+A. Incorrect.  Part 1 is correct.  Part 2 is incorrect.  Plausible because stopping an RCP could result in 
+boron stratification in the inactive RC loop which could cause lower boron RCS to backflow into the core 
+and adding positive reactivity.  
+B. Correct.  Per 1-EOP-FRSM-1 Caution C1-1, RCPs should not be tripped with reactor power greater than 
+5%.  During an ATWS, RCP operation could be beneficial by temporarily cooling the core under voided 
+RCS conditions.  If reactor power is > 5%, the RCP should not be tripped even if all normal running 
+conditions are not satisfied.  Manually tripping the RCP during some ATWS events could result in 
+reduced heat removal and a challenge to fuel integrity.  Based on the stem, 11 RCP trip criteria is met 
+due to exceeding abnormal parameter for motor flange vibration > 5 mils and therefore, should not be 
+stopped since reactor power is still greater than 5%. 
+C. Incorrect.  Part 1 is incorrect. Part 2 is incorrect.  Plausible because the motor flange vibration does 
+exceed the RCP trip criteria of > 5 mils motor flange vibration and the SRO could believe the RCP 
+should be tripped to prevent excessive motor and shaft vibration to damage the seals and potential loss 
+of inventory. 
+D. Incorrect.  Part 1 is incorrect. Part 2 is incorrect.  Plausible because the motor flange vibration does 
+exceed the RCP trip criteria of > 5 mils motor flange vibration and the SRO could believe the RCP can 
+be tripped with the remaining RCPs running will provide sufficient RC flow with the reactor subcritical 
+(negative SUR).   
+ 
+Technical References: 1-EOP-FRSM-1 (R40) 
+Proposed References to be provided: None 
+Learning Objective: NOS05FRSM00-05, Object ive 5. Determine the indications that 
+are monitored to ensure proper system/component operation 
+for each step in: Response to Nuclear Power Generation 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.10 / 43.1 / 45.13 
+Level:      SRO 
+Category/System:    10-Anticipated Transient Without Scram 
+K/A #:      EPE 29 G2.4.18 
+ Knowledge of the specific bases for EOPs. 
+Importance:     4.0 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 1 
+ 
+K/A Match:  The K/A is matched because the question requires the SRO to assess plant conditions and 
+determine if the RCP can be stopped based on the knowledge of EOP bases for the Caution step to stop 
+RCPs when power is > 5%. 
+ 
+  
+
+===== PAGE 195 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 3 
+ 
+SRO Match Justification:   
+ 
+ 
+
+
+===== PAGE 196 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 4 
+ 
+Additional References: (1-EOP-FRSM-1, Sheet 2) 
+ 
+ 
+ 
+  
+
+
+===== PAGE 197 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 5 
+ 
+77 10-114 Points: 1.00 
+Given: 
+ BOTH Units were at 100% Power when a Loss of Offsite and ALL AC Power occurs. 
+ Both crews enter EOP-LOPA- 1, Loss of All AC Power. 
+ The RO on Unit 2 reports that the 2A and 2B control air headers are indicating 20 psig and 
+lowering. 
+ The crew is at step 17.2, ARE SG MS10s (RELIEF VALVES) OPERABLE FROM THE CONTROL 
+ROOM. 
+Which ONE of the following describes how the CRS will proceed and what is the MAXIMUM cooldown 
+rate? 
+ 
+A. 1)  Manually open MS10s from the control room. 
+2)  50 °F/hr. 
+B. 1)  Locally open MS10s from the field. 
+2)  50 °F/hr. 
+C. 1)  Manually open MS10s from the control room. 
+2)  100 °F/hr. 
+D. 1)  Locally open MS10s from the field. 
+2)  100 °F/hr. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 198 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 6 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect. Part 1 is correct.  Part 2 is incorrect.  Plausible because the 50 °F/hr cooldown rate is used in 
+other EOPs (For example, step 3 of EOP-TRIP-6, Natural Circulation Without RVLIS).  The applicant 
+may believe that the 50 °F/hr cooldown rate is required based on the limiting the cooldown with the plant 
+in a Loss of all AC power condition, as well as considering the effects of a rapid cooldown on damaging 
+the RCP seals. 
+B. Incorrect. Part 1 is incorrect.  Plausible because there are actions in procedures to operate the MS10s 
+locally when a loss of instrument air is lost.  Part 2 is incorrect.  Plausible because the 50 °F/hr 
+cooldown rate is used in other EOPs (For example, step 3 of EOP-TRIP-6, Natural Circulation Without 
+RVLIS).  The applicant may believe that the 50 °F/hr cooldown rate is required based on the limiting the 
+cooldown with the plant in a Loss of all AC power condition, as well as considering the effects of a rapid 
+cooldown on damaging the RCP seals. 
+C. Correct. Loss of all control air will cause both CA330s to fail close isolating air to containment.  The 
+MS10’s controls are available with DC battery power (also requires vital instrument power which is 
+available from inverters via batteries).  Each MS10 has bottle rack with four bottles of nitrogen at greater 
+than or equal to 2000 psig. 
+*A regulator reduces pressure to 20% less than normal operating pressure 
+to maintain tank inventory until needed. On loss of control air, nitrogen will be supplied for control and to 
+air operator. Bottle rack capacity designed for minimum of 72 hours of MS10 operation. Individual 
+nitrogen bottles can be changed out to extend time until manual operation required. IAW 2-EOP-LOPA-
+1, step 17.2, the cooldown rate will not exceed 100 °F/hr.
+ 
+D. Incorrect. Part 1 is incorrect.  Plausible because there are actions in procedures to operate the MS10s 
+locally when a loss of instrument air is lost.  Part 2 is correct.  See Ans. C for further explanation. 
+ 
+Technical References:   EOP-LOPA-1, Rev 40, NOS05CONAIR, S2.OP-AB.CA-0001 
+Proposed References to be provided: None 
+Learning Objective: NOS05LOPA00, Objective 10, Given a specific step from the 
+EOP-LOPA-1, determine the indications that are monitored to 
+ensure proper system/component operation 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   43.5 / 45.13 
+Level:      SRO 
+Category/System:    10-Station Blackout 
+K/A #:      EPE 55 EA2.04 
+ Ability to determine and interpret the following as they apply to 
+a Station Blackout: Instruments and controls operable with only 
+dc battery power available. 
+Importance:     4.1 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate requires knowledge of the impact on PZR PORV 
+and SG Atmospheric Dump Valve availability to operate from the control room during a LOPA in conjunction 
+with a loss of instrument air.. 
+
+===== PAGE 199 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 7 
+ 
+SRO Match Justification: 
+ 
+ 
+  
+
+
+===== PAGE 200 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 8 
+ 
+Additional Reference: (from EOP-LOPA-1 Bases, Step 17, Rev 40) 
+ 
+  
+ 
+ 
+  
+
+
+===== PAGE 201 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 9 
+ 
+78 11-158 Points: 1.00 
+ 
+Given: 
+ Unit 2 refueling is in progress. 
+ 2N31 is Operable and selected to the Audio Count Rate Drawer. 
+ 2N32 is Operable. 
+ BOTH channels of Gamma-Metrics are out of service for testing. 
+ Subsequently, a loss of 2A 115V Vital Instrument Bus occurs. 
+ 
+In accordance with Technical Specification, which ONE of the following describes if CORE ALTERATIONS 
+can recommence and the reason why? 
+ 
+A. YES, when EITHER Gamma-Metric channel is restored to OPERABLE status. 
+B. YES, when ONLY both Gamma-Metric channels are restored to OPERABLE status. 
+C. NO, because Gamma-Metric channels are only used for post-accident monitoring. 
+D. NO, because Gamma-Metric channels are not backed up by an emergency power source. 
+ 
+  
+
+===== PAGE 202 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 10 
+ 
+Answer: A 
+Explanation / Justification:  
+A. Correct. Loss of the 2A 115 VAC Instrument Bus will render 2N31 Source Range NIS channel 
+Inoperable.  When power to 2N31 is lost, refueling would be suspended until the CRS determines if the 
+required Source Range channels are Operable to continue refueling activities.  IAW Technical 
+Specification bases for LCO 3.9.2.2, any combination of NIS source range neutron flux monitors and/or 
+Gamma-Metrics post-accident neutron flux monitors may be used to satisfy the LCO.  Two of the four 
+total source range neutron flux monitors are required to be Operable.  In this case, only one operable 
+Gamma-Metric channel is required to be restored to operable status and can be substituted for the 
+Inoperable 2N31 SR channel meeting the requirements for two SR/Gamma-Metric channels being 
+Operable and core alterations or refueling can recommence. 
+B. Incorrect. Plausible if the operator believes that the TS bases requires both Gamma-Metric channels 
+operable to satisfy an Inoperable SR channel.  Only two of the four source range neutron flux monitors 
+and Gamma-Metric channels needs to be Operable. 
+C. Incorrect.  The Gamma-Metric channels are used for post-accident monitoring of neutron flux, but TS 
+3.9.2 bases allows for the use Gamma-Metric channels to substitute for a SR channel.  This is plausible 
+because the operator may incorrectly believe that the Gamma-Metric channels can only be used for 
+post-accident monitoring and cannot be used to satisfy TS 3.9.2.2 requirements. 
+D. Incorrect. Plausible if the operator believes that Gamma-Metric channels are not supplied from an 
+emergency backup source (Inverter or EDG) and therefore cannot be used to satisfy TS 3.9.2.2 
+requirements.  The Gamma-Metric channels are supplied from 115 VAC Vital Instrument Power which is 
+backed up by batteries and the associated EDG. 
+ 
+Technical References:   Technical Specification TS 3.9.2.2 & Bases 
+Proposed References to be provided: None 
+Learning Objective: NOS05TECHSPEC-14, Objective 11. Describe the general 
+component and parameter categories that are addressed by 
+Technical Specification Sections 3/4.1 through 3/4.12. 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 41.7 / 43.2 
+Level:      SRO 
+Category/System:    11-Loss of Vital AC Instrument Bus  
+K/A #:      APE 57 G2.2.25 
+ Knowledge of the bases in Techni cal Specifications for limiting 
+conditions for operations and safety limits. 
+Importance:     4.2 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is required to know the basis for TS 3.9.2.2 and 
+also know minimum operability requirements that supports the basis. 
+ 
+  
+
+===== PAGE 203 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 11 
+ 
+SRO Match Justification: 
+ 
+ 
+ 
+  
+
+
+===== PAGE 204 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 12 
+ 
+Additional Reference:  Unit 2 Technical Specification TS 3.9.2.2 
+ 
+ 
+ 
+  
+
+
+===== PAGE 205 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 13 
+ 
+Additional Reference:  Salem TS Bases for 3.9.2.2 
+ 
+ 
+  
+
+
+===== PAGE 206 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 14 
+ 
+79 11-159 Points: 1.00 
+Given: 
+ Unit 2 is at 100% Power. 
+ 2MS132, 23 AFP TURBINE STEAM INLET VALVE, air supply line ruptures. 
+Based on the above failure, which ONE of the following completes the statement concerning the status of 
+the Turbine Driven Auxiliary Feed Pump and the actions the crew take to mitigate this event? 
+1. The Turbine-Driven Auxiliary Feed Pump is __(1)__. 
+2. The crew will ____(2)____. 
+ 
+ 
+A. 1.  shutdown 
+2.  ONLY enter TS 3.7.1.2, for INOPERABLE AFW Pump because 23 AFW Pump will not respond 
+to any start signals, and repair the airline within 72 hours. 
+B. 1.  shutdown 
+2.  continue power operations because the TDAFW remains operable due to availability of the 
+opposite train steam supply. 
+C. 1.  running 
+2.  implement S2.OP-AB.CA-0001, Loss of Control Air, Attachment 12, Local Control of SG Pressure 
+and Level, to locally shutdown 23 AFW Pump. 
+D. 1.  running 
+2.  reduce turbine load using S2.OP-IO.ZZ-0004, Power Operation, until the reactor thermal 
+overpower condition has cleared 
+ 
+  
+
+===== PAGE 207 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 15 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect. Part 1 is incorrect.  Plausible if the applicant incorrectly determines that the MS132 fails 
+closed instead of open on loss of air.  Part 2 is incorrect.  Plausible because this is the correct action 
+(not the only action) for an Inoperable AFW pump, however, the overpower condition must also be 
+addressed first and can be mitigated by performing a load reduction.   
+B. Incorrect. Part 1 is incorrect.  Plausible if the applicant incorrectly determines that the MS132 fails 
+closed instead of open on loss of air.  Part 2 is incorrect.  Plausible because the applicant may confuse 
+how the MS132 impacts the steam supply to the TDAFW pump.  Steam is supplied from #1 and #3 SGs 
+thru the MS45s.  The applicant may believe that the MS132 failure impacts one of the steam supplies 
+and that the other steam supply remains available. 
+C. Incorrect. Part 1 is correct.  2MS132 fails open on loss of air.  Part 2 is incorrect.  Plausible because 
+S2.OP-AB.CA-0001 can be used for a loss of control air, however, this procedure does not provide 
+direction to shutdown 23 AFW pump and only directs local control of 23 AFW pump governor and 
+AF21’s. 
+D. Correct. IAW S2.OP-AB.CA-0001, Attachment 2, on loss of instrument air the 2MS132 fails open which 
+results in 23 AFW pump running.  This will result in cold AFW entering the SGs causing reactor power to 
+rise and exceed the reactor power limit of 3459 MWt (reactor overpower condition).  The CRS should 
+direct the crew to reduce turbine load to lower reactor power below the administrative limit using S2.OP-
+IO.ZZ-0004, Power Operation.  Note: S2.OP-AB.LOAD-0001 is used only if turbine load rate is ≥ 5%/min 
+which in this case the crew should not require reducing turbine load at this rate. 
+ 
+Technical References: S2.OP-AB.CA-0001 (R22), S2.OP-AB.CN-0001 (R31), S2.OP-
+IO.ZZ-004 (R87) 
+Proposed References to be provided: None 
+Learning Objective: NOS05ABCA01-08, Objective 2. Describe, in general terms, 
+the actions taken in S2.OP-AB.CA-0001(Q) and the bases for 
+the actions in accordance with the Technical Bases Document 
+Question Source: Bank – Beaver Valley U1 2016 SRO89 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.10 / 45.3 
+Level:      SRO 
+Category/System:    11-Loss of Instrument Air 
+K/A #:      APE 65 G2.4.31 
+ Knowledge of annunciator alarms, indications, or response 
+procedures. 
+Importance:     4.1 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being ask knowledge of the abnormal procedure 
+step for loss of control air.  In this case, the SRO must know the action required upon the loss of control air 
+to the turbine driven AFW pump per the abnormal procedure and that the CRS should direct lowering 
+
+===== PAGE 208 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 16 
+ 
+reactor power due to cold AFW being supplied to the SGs will result in reactor overpower exceeding he 
+thermal limit of 3459 MWt. 
+ 
+  
+
+===== PAGE 209 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 17 
+ 
+SRO Match Justification: 
+ 
+ 
+  
+
+
+===== PAGE 210 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 18 
+ 
+80 10-115 Points: 1.00 
+ 
+Given: 
+ A LOCA has occurred on Unit 2. 
+ The crew is performing 2-EOP-LOCA-5, Loss of Emergency Recirculation. 
+ Containment pressure is now 15.1 psig and rising. 
+ 
+Based on the above condition, which ONE of the following describes how the CRS should direct the 
+operation of the Containment Spray Pumps and why? 
+ 
+The Containment Spray Pumps are operated as directed in… 
+ 
+ 
+Note: 2-EOP-FRCE-1 – Response to Excessive Containment Pressure 
+ FRPs – Functional Restoration Procedures 
+ 
+ 
+A.   2-EOP-LOCA-5 since FRPs are NOT implemented during performance of LOCA-5. 
+B.   2-EOP-LOCA-5 because it establishes minimum required Containment Spray flow to conserve RWST 
+inventory. 
+C.   2-EOP-FRCE-1 because restoration of the critical safety function takes precedence. 
+D.   2-EOP-FRCE-1 because it uses the same criteria for operating containment spray pumps as LOCA-5. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 211 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 19 
+ 
+Answer: B 
+ 
+Explanation / Justification:  
+ 
+A. Incorrect. Transition to FRPs are allowed in EOP-LOCA-5.  Plausible in that EOP-LOCA-3 does not 
+allow transition to FRPs during the transfer to cold leg recirculation. 
+B. Correct. IAW 2-EOP-FRCE, step C3-1 Caution, if LOCA-5 is in effect, then operation of containment 
+spray pumps should be IAW LOCA-5.  LOCA-5 has less restrictive criteria which allows for reducing the 
+number of operating containment spray pumps based on RWST level and CFCUs.  The CRS can 
+transition to EOP-FRCE-1, but will follow the direction from LOCA-5 when it comes to the operation of 
+CS pumps. 
+C. Incorrect.  Plausible because the CRS can transition to EOP-FRCE-1. 
+D. Incorrect. Plausible because the CRS can transit ion to EOP-FRCE-1.  EOP-FRCE-1 will establish 
+maximum available heat removal system operation to reduce containment pressure which is in 
+contradiction to LOCA-5 priority to conserve RWST inventory. IAW 2-EOP-FRCE, step C3-1 Caution, if 
+LOCA-5 is in effect, then operation of containment spray pumps should be IAW LOCA-5 
+    
+Technical References:   2-EOP-LOCA-5 (R40) 
+Proposed References to be provided: None 
+Learning Objective: NOS05LOCA05-05, Objective 6. Given any step, caution, note, 
+or Continuous Action Summary for LOSS OF EMERGENCY 
+COOLANT RECIRCULATION, describe the basis. 
+Question Source: Bank – Salem 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   43.5 / 45.13 
+Level:      SRO 
+Category/System:    10-Loss of Emergency Coolant Recirculation 
+K/A #:      W E11 EA2.1 
+ Ability to determine and interpret the following as they apply to 
+the (Loss of Emergency Coolant Recirculation):  Facility 
+conditions and selection of appropriate procedures during 
+abnormal and emergency operations. 
+Importance:     4.2 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 1 
+ 
+K/A Match:  The K/A is matched because the SRO is required to have knowledge of procedure selection or 
+sections of procedures and how to implement those sections to mitigate the event.  In this case, the SRO 
+must decide how to operate the CS pumps and the reason why. 
+ 
+  
+
+===== PAGE 212 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 20 
+ 
+Additional References:  2-EOP-FRCE-1 Bases Document 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+
+===== PAGE 213 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 21 
+ 
+SRO Match Justification: 
+ 
+ 
+ 
+  
+
+
+===== PAGE 214 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 22 
+ 
+81 10-116 Points: 1.00 
+Given: 
+ Unit 2 reactor tripped. 
+ During performance of 2-EOP-TRIP-2, Reactor Trip Response, the crew transitions to 2-EOP-
+FRHS-1, Loss of Secondary Heat Sink, due to Loss of ALL AFW flow. 
+Subsequently; 
+ 21 SGFP is running providing feed flow to 22 SG. 
+ All SG Narrow Range levels are offscale low. 
+ 22 SG Wide Range level is slowly rising. 
+Which ONE of the following completes both statements? 
+1. In accordance with 2-EOP-FRHS-1, operator actions to establish a heat sink __(1)__ complete. 
+2. Transition back to 2-EOP-TRIP-2 __(2)__ allowed. 
+ 
+ 
+A. 1)  are 
+2)  is 
+B. 1)  are 
+2)  is NOT 
+C. 1)  are NOT 
+2)  is 
+D. 1)  are NOT 
+2)  is NOT 
+ 
+  
+
+===== PAGE 215 =====
+
+Answer: A 
+Explanation / Justification:  
+A. Correct. IA W 2-EOP-FRHS-1, Step 6, if NR level in at least one SG is greater than 9% (15% adverse), then
+return to procedure in effect; OR, if feed flow is verified to at least one SG by either CETs lowering or WR
+level rising in one SG, then maintain flow to restore NR to greater than 9% and return to procedure in
+effect.  Per the stem, 22 SG WR level is rising slowly so heat sink has been established in one SG and the
+CRS can return to EOP-TRIP-2.
+B. Incorrect. Firs t part is correct.  Second part is incorrect.  Plausible because the SRO may incorrectly
+interpret Step 6.1 (Maintain flow to restore NR level to greater than 9% [15% adverse]) and believe that
+although heat sink has been established, FRHS-1 requires the SG NR level to be greater than 9% to exit
+the procedure.
+C. Incorrect. First part is incorrect.  Heat sink has been established.  Second part is correct. Plausible
+because SRO may believe that the heat sink requirements are not met due to insufficient SG levels in one
+SG, but can exit the procedure because adequate feedflow has been established.
+D. Incorrect. First part is incorrect.  Heat sink has been established.  Plausible because SRO may believe that
+the heat sink requirements are not met due to insufficient SG levels. Second part is incorrect.  Return to
+TRIP-2 is allowed based on one SG WR level is rising.  Plausible because if the operator believes heat
+sink is not established, then you cannot exit the procedure per FRHS-1.
+Technical
+ References: 2-EOP-FRHS-1 (R40)
+Proposed References to be provided: None
+Learning Objective: NOS05FRHS00-04, Objective 9, Determine the indications that
+are monitored to ensure proper system/component operation for
+each step in 2-EOP-FRHS-1 Thru 5.
+Question Source: Bank – Commanche Peak 2016 NRC SRO81
+Question Cognitive Level: Comprehension/Analysis
+10CFR Part 55 Content: 43.5 / 45.13
+Level:  SRO
+Category/System: 10-Loss of Secondary Heat Sink
+K/A #:  W E05 EA2.2
+Ability to determine and interpret the following as they apply to the
+(Loss of Secondary Heat Sink):  Adherence to appropriate
+procedures and operation within the limitations in the facility’s
+license and amendments.
+Importance: 3.7
+Tier/Group Emergency and Abnormal Plant Evolutions-Tier 1/Group 1
+K/A Ma
+tch:  The K/A is matched because the SRO is required to assess plant conditions, determine if a heat 
+sink is established, and then determine whether to return to procedure in effect or continue in 2-EOP-FRHS-1. 
+  ____________________________________________________________________________________
+ PAGE 23
+
+===== PAGE 216 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 24 
+ 
+Additional References:  2-EOP-FRHS-1 sheet 2 
+ 
+ 
+
+
+===== PAGE 217 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 25 
+ 
+SRO Match Justification: 
+ 
+ 
+  
+
+
+===== PAGE 218 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 26 
+ 
+Additional References:  2-EOP-FRHS-1 sheet 2 
+ 
+ 
+  
+
+
+===== PAGE 219 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 27 
+ 
+82 15-022 Points: 1.00 
+Given: 
+ Unit 2 is performing a reactor startup per S2.OP-IO.ZZ-0003, Hot Standby to Minimum Load. 
+ Reactor power is 1E-4%. 
+Subsequently, the following sequence of events occur; 
+ OHA E-6, LOSS OF IR, is LIT. 
+ 2N35, Intermediate Range (IR) NIS Channel, indicates zero on 2CC2. 
+In accordance with Technical Specifications LCO 3.3.1.1, Reactor Trip System Instrumentation, which 
+ONE of the following identifies the required action, if any? 
+[REFERENCE PROVIDED] 
+Note:  RTP – Reactor Thermal Power 
+ 
+ 
+A. Immediately suspend the reactor startup and insert all control rods. 
+B. Reduce RTP below P-6 OR raise RTP above P-10 within a maximum of 24 hours. 
+C. Reduce RTP below P-6 within a maximum of 2 hours. 
+D. No action is required since RTP is below P-6. 
+ 
+ 
+ 
+  
+
+===== PAGE 220 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 28 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect. Plausible because the SRO may believe th is the conservative action but not required by Tech 
+Specs.  Two IR channels inoperable will require the immediate suspension of adding positive reactivity 
+and reducing RTP below P-6 within 2 hours. 
+B. Correct. IAW Tech Specs 3.3.1.1 Functional Unit 5, Action 3, with only one IR NIS channel operable and 
+Rx power above P-6 (1E-5% RTP per S2.OP-IO.ZZ-0003), then RTP will need to be reduced to below 
+P-6 OR raise RTP above P-10 within 24 hours 
+C. Incorrect. Plausible because the SRO may incorrectly apply the TS action.  This action is required for 
+two inoperable IR channels. 
+D. Incorrect.  Plausible because the SRO may incorrectly apply the TS action.  This LCO is not applicable 
+when RTP is below P-6.  However, reactor power at 1E-4% is above P-6 (1E-5%)  
+ 
+Technical References:   Tech Specs 3.3.1.1 Action 3 
+Proposed References to be provided: Tech Spec 3.3.1.1 
+Learning Objective: NOS05ABNIS, Objective 1. Describe the operation of the 
+following as applied to S2.OP-AB.NIS-0001(Q), in accordance 
+with this lesson plan: Intermediate Range Instrumentation 
+Question Source: Bank - Salem 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   43.5 / 45.13 
+Level:      SRO 
+Category/System:    11-Loss of Intermediate Range Nuclear Instrumentation 
+K/A #:      APE 33 AA2.08 
+ Ability to determine and interpret the following as they apply to 
+the Loss of Intermediate Range Nuclear Instrumentation:  
+Intermediate range channel operability. 
+Importance:     3.4 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate requires knowledge of how to apply TS action 
+statements for when one IR NIS channel fails during Rx startup. 
+ 
+  
+
+===== PAGE 221 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 29 
+ 
+SRO Match Justification: 
+ 
+ 
+ 
+  
+
+
+===== PAGE 222 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 30 
+ 
+Additional Reference: (TS 3.3.1.1) 
+ 
+ 
+  
+
+
+===== PAGE 223 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 31 
+ 
+Additional Reference: (TS 3.3.1.1) 
+ 
+ 
+  
+
+
+===== PAGE 224 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 32 
+ 
+Additional Reference: (TS 3.3.1.1) 
+ 
+ 
+ 
+ 
+  
+
+
+===== PAGE 225 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 33 
+ 
+Additional Reference: (TS 3.3.1.1 bases) 
+ 
+ 
+ 
+ 
+ 
+  
+
+
+===== PAGE 226 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 34 
+ 
+83 15-029 Points: 1.00 
+Given: 
+ Unit 2 reactor tripped due to a LBLOCA. 
+ RCS pressure is 60 psig. 
+ Containment pressure is 30 psig and lowering. 
+ CETs are 720 °F and lowering. 
+ 2R44A, Containment High Range, Radiation Monitor is indicating 2020 R/hr. 
+ 2R44B, Containment High Range, Radiation Monitor is indicating 2010 R/hr. 
+ 
+Which ONE of the following is the correct classification and barrier status? 
+[REFERENCE PROVIDED] 
+ 
+A. Site Area Emergency; Loss of 2 barriers Only. 
+B. Site Area Emergency; Loss of 1 barrier and Potential Loss of 2nd barrier. 
+C. General Emergency; Loss of 2 barriers and Potential Loss of 3rd barrier. 
+D. General Emergency; Loss of 3 barriers. 
+ 
+ 
+  
+
+===== PAGE 227 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 35 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  The classification should be for GE and the barrier status is incorrect since potential loss of 
+3rd barrier also exists.  Plausible if one of the barriers is missed. 
+B. Incorrect.  .  The classification should be for GE and the barrier status is incorrect since two barriers are 
+lost and potential loss of 3rd barrier also exists.  Plausible if one of the barriers is missed. 
+C. Correct. IAW EP-SA-325-123, Fission Product Barrier Table, with a LBLOCA actuating SI and 2R44A 
+and B reading above 2000 R/hr, then the following EALs apply; FB2.L (Loss 5 points), and RB1.L or 
+RB2.L (Loss 5 points), and CB2.P (Potential 2 points).  Total points = 12 point GE with a Loss of 2 
+barriers and a Potential Loss of 3
+rd barrier. 
+D. Incorrect.  3 barriers have not been lost yet.  Plausible if the SRO incorrectly evaluates the barrier status 
+are 3 barriers are lost. 
+ 
+Technical References:   EP-SA-325-123 (R00) 
+Proposed References to be provided: EP-SA-325-123 
+Learning Objective: NOS05TRP001-09 Objective 20. Given the Salem Event 
+Classification guide, classify the event. 
+Question Source: Bank – ANO 1 2017 Retake NRC SRO84 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.10 / 43.5 / 45.11 
+Level:      SRO 
+Category/System:    15-High Containment Radiation 
+K/A #:      W E16 G2.4.41 
+ Knowledge of the emergency action level thresholds and 
+classifications. 
+Importance:     4.6 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 2 
+ 
+K/A Match:  The K/A is matched because the question is asking the SRO to assess plant conditions and 
+using the ECG procedures classify the emergency event and determine the status of the barriers. 
+ 
+  
+
+===== PAGE 228 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 36 
+ 
+SRO Match Justification: 
+ 
+
+
+===== PAGE 229 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 37 
+ 
+Additional Reference:  Fission Product Barrier Table 
+ 
+ 
+
+
+===== PAGE 230 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 38 
+ 
+84 10-117 Points: 1.00 
+ 
+Given: 
+ Unit 2 reactor tripped due to loss of all offsite power. 
+ The crew has verified natural circulation flow and is cooling down the plant per 2-EOP-TRIP-4, 
+Natural Circulation Cooldown. 
+ Train A RVLIS is out of service for Maintenance. 
+ The Shift Manager directs the crew to perform a rapid cooldown and depressurization due to 
+secondary inventory concerns. 
+Current plant conditions are: 
+ RCS Pressure is 1840 psig and stable. 
+ RCS Hot Leg temperatures are 540 °F and lowering. 
+ 2PT-405 Wide Range RCS Pressure has failed.  
+ 
+Based on the above conditions, what procedure will the CRS implement and what is the MAXIMUM 
+allowable RCS cooldown rate in the procedure entered? 
+ 
+ 
+A. 2-EOP-TRIP-5, Natural Circulation Cooldown with Steam Voids in Vessel (with RVLIS); 100 °F/hr. 
+B. 2-EOP-TRIP-5, Natural Circulation Cooldown with Steam Voids in Vessel (with RVLIS); 50 °F/hr. 
+C. 2-EOP-TRIP-6, Natural Circulation Cooldown with Steam Voids in Vessel (without RVLIS); 50 
+°F/hr. 
+D. 2-EOP-TRIP-6, Natural Circulation Cooldown with Steam Voids in Vessel (without RVLIS); 100 
+°F/hr. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 231 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 39 
+ 
+Answer: C 
+ 
+Explanation / Justification:  
+ 
+A. Incorrect.  Based on the stem conditions, both trains of RVLIS are not available.  Therefore, EOP-TRIP-
+5 is not the correct procedure to implement without RVLIS.  Plausible because the SRO may believe 
+that Train B RVLIS is still available because the SRO may confuse which Train of RVLIS the 2PT-405 
+inputs into and believe that it feeds Train A.  The RCS cooldown rate is incorrect. 
+B. Incorrect.  Based on the stem conditions, both trains of RVLIS are not available.  Therefore, EOP-TRIP-
+5 is not the correct procedure to implement without RVLIS.  Plausible because the SRO may believe 
+that Train B RVLIS is still available because the SRO may confuse which Train of RVLIS the 2PT-405 
+inputs into and believes that it feeds Train A.  The RCS cooldown rate is correct. 
+C. Correct. Based on plant conditions, Train B RVLIS is not available because 2PT-405 wide range 
+pressure has failed and is an input into the RVLIS Train B.  Both Trains of RVLIS are not available and 
+the CRS should enter 2-EOP-TRIP-6.  With RCS T-Hots > 500 °F, then the maximum allowable RCS 
+cooldown rate is 50 °F/hr until RCS T-Hots are less than 450 °F, then the RCS cooldown rate is a 
+maximum of 100 °F/hr. 
+D. Incorrect.  Cooldown rate of 100 °F/hr is allowed when RCS T-Hots are less than 450 °F.  Plausible 
+because both Trains of RVLIS are unavailable and could believe that the cooldown rate of 100 °F/hr is 
+allowed based on the T-Hot temperatures. 
+    
+Technical References:   2-EOP-TRIP-5 (R40), EOP-TRIP6 (R40) 
+Proposed References to be provided: None 
+Learning Objective: NOS05LOCA05-05 Objective 7. Determine a discrete path 
+through the EOP for LOSS OF EMERGENCY COOLANT 
+RECIRCULATION
+ 
+Question Source: Bank – Beaver Valley U2 2015 NRC SRO85 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   43.5 / 45.13 
+Level:      SRO 
+Category/System:    10-Natural Circulation 
+K/A #:      W E10 EA2.2 
+ Ability to determine and interpret the following as they apply to 
+the (Natural Circulation with Steam Void in Vessel with/without 
+RVLIS):  Adherence to appropriate procedures and operation 
+within the limitations in the facility’s license and amendments. 
+Importance:     3.9 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 2 
+ 
+K/A Match:  The K/A is matched because the SRO must interpret the plant conditions to what the required 
+action to control void growth in the vessel and select which procedure to perform based on the rapid 
+cooldown and expected void in the vessel. 
+ 
+  
+
+===== PAGE 232 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 40 
+ 
+SRO Match Justification: 
+ 
+ 
+  
+
+
+===== PAGE 233 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 41 
+ 
+85 10-118 Points: 1.00 
+ 
+Given: 
+ 
+ Unit 2 experienced a reactor trip and safety inje ction due to a steam line break downstream of the 
+Main Steam Line Isolation Valves (MSIVs). 
+ ALL MSIVs failed to close. 
+ The crew is performing SI Termination steps per 2-EOP-LOSC-2, Uncontrolled Depressurization of 
+All Steam Generators. 
+ Field operator reports that 23MS167 is now closed. 
+Subsequently, the STA observes the following; 
+ AFW flow to each SG is 1E+4 lbm/hr. 
+ All SG NR Levels are off-scale low. 
+ 21, 22, and 24 SG Pressures are 100 psig. 
+ 23 SG Pressure is 200 psig and rising. 
+ RCS Pressure is 1100 psig. 
+ ALL RCS T-Colds temperatures are < 230 °F. 
+ Intermediate Range SUR is +0.1 DPM. 
+ 
+Which ONE of the following describes the NEXT CRS action? 
+ 
+A.  Return to 2-EOP-LOSC-1, Faulted Steam Generator Isolation. 
+B.  Transition to 2-EOP-FRSM-1, Response to Nuclear Generation. 
+C.  Transition to 2-EOP-FRHS-5, Response to Steam Generator Low Level. 
+D.  Transition to 2-EOP-FRTS-1, Response to Thermal Shock. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 234 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 42 
+ 
+Answer: D 
+ 
+Explanation / Justification:  
+ 
+A. Incorrect. Plausible because this is a required transition when a faulted SG is recovered.  With 23 SG 
+isolated and pressure rising, the CRS will not return to 2-EOP-LOSC-1 because SI Termination is in 
+progress. 
+B. Incorrect.  Plausible because the SRO may believe this is the higher RED path.  SUR of +0.1 DPM is a 
+PURPLE Path in the Shutdown Margin Status Tree, which is not higher than a RED Path in Thermal 
+Shock Status Tree. 
+C. Incorrect. Plausible because the low level in the SG are valid but not the highest priority.  Low SG levels 
+is a YELLOW Path in the Heat Sink Status Tree and therefore not a priority. 
+D. Correct. A RED Path in the Thermal Shock Status Tree exists due to all RCS T-Cold cooldown rates not 
+less than 100 °F in the last 60 minutes and all RCS pressure/temperature points are not to the right of 
+Limit A in Figure 4A (T-Colds less than 230 °F and RCS pressure at 1100 psig). 
+ 
+ 
+Technical References:   2-EOP-CFST-1 (R41) 
+Proposed References to be provided: None 
+Learning Objective: NOS05FRTS00-03, Objective 1, State the RED paths for the 
+Thermal Shock Status Tree. 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 43.5 / 45.12 
+Level:      SRO 
+Category/System:    10-
+ Pressurized Thermal Shock 
+K/A #:      W E08 G2.4.21 
+ Knowledge of the parameters and logic used to assess the 
+status of safety functions, such as reactivity control, core 
+cooling and heat removal, reactor coolant system integrity, 
+containment conditions, radioactivity release control, etc. 
+Importance:     4.6 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 2 
+ 
+K/A Match:  The K/A is matched because the SRO must assess plant conditions and determine which 
+safety system status tree to implement next. 
+       
+  
+
+===== PAGE 235 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 43 
+ 
+Additional References:  2-EOP-CFST-1 
+ 
+ 
+ 
+  
+
+
+===== PAGE 236 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 44 
+ 
+Additional References:  2-EOP-CFST-1 
+ 
+ 
+
+
+===== PAGE 237 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 45 
+ 
+SRO Match Justification: 
+ 
+ 
+ 
+  
+
+
+===== PAGE 238 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 46 
+ 
+86 04-052 Points: 1.00 
+ 
+Given: 
+ 
+ Unit 2 is at 100% Power. 
+ The RO reports the following for 21 RCP: 
+o Console Alarm, SEAL LEAK-OFF FLOW HI-LO, is LIT. 
+o Seal Leak-off recorder indicates > 6 gpm. 
+o Seal Injection Flow indicates 8.5 gpm. 
+o Seal Inlet and Outlet Temperatures are indicating 109 °F and rising. 
+ The crew enters S2.OP-AB.RCP-0001, Reactor Coolant Pump Abnormality. 
+ 
+Which ONE of the following completes both statements? 
+ 
+1. Which RCP seal failed? 
+2. In accordance with S2.OP-AB.RCP-0001, what actions will the CRS direct the crew? 
+ 
+ 
+A. 1)  #1 
+2)  Immediately TRIP the reactor and stop 21 RCP. 
+B. 1)  #1 
+2)  Perform an orderly shutdown and stop 21 RCP within 8 hours. 
+C. 1)  #2 
+2)  Immediately TRIP the reactor and stop 21 RCP. 
+D. 1)  #2 
+2)  Perform an orderly shutdown and stop 21 RCP within 8 hours. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 239 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 47 
+ 
+Answer: A 
+ 
+Explanation / Justification:  
+ 
+A. Correct. IAW S2.OP-AB.RCP-0001 Attachment 1, #1 seal leak-off flow greater or equal to 6 gpm then 
+go to Attachment 2, Stopping RCPs.  Attachment 2 will direct a manual reactor trip, stopping 21 RCP, 
+then between 3-5 minutes after stopping RCP close the 21CV104 and go to 2-EOP-TRIP-1. 
+B. Incorrect. First part is correct.  Second part is incorrect.  This action will be performed at step 3.6 if RCP 
+seal leak-off flow is less than 0.8 gpm or is slowly approaching 6 gpm. Credible distractor since this is an 
+action in AB.RCP-1 for a degraded #2 seal. 
+C. Incorrect. First part is incorrect.  High seal-off flow is indicative of a #1 seal failure.  Second part is 
+correct. Plausible because this is an action if it meets the RCP trip criteria per the AB.RCP. 
+D. Incorrect. First part is incorrect.  High seal-off flow is indicative of a #1 seal failure.  Second part is 
+incorrect. Second part is incorrect.  This action will be performed at step 3.6 if RCP seal leak-off flow is 
+less than 0.8 gpm or is slowly approaching 6 gpm. Credible distractor since this is an action in AB.RCP-
+1 for a degraded #2 seal. 
+ 
+    
+Technical References:   S2.OP-AB.RCP-0001 (R28) 
+Proposed References to be provided: N/A 
+Learning Objective: NOS05SGTR01-06, Object ive 6, Determine the indications that 
+are monitored to ensure proper system/component operation 
+for each step in 2-EOP-SGTR-1 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 43.5 / 45.3 / 45.13 
+Level:      SRO 
+Category/System:    04-Reactor Coolant Pump 
+K/A #:      003 A2.02 
+ Ability to (a) predict the impacts of the following malfunctions or 
+operations on the RCPS; and (b) based on those predictions, 
+use procedures to correct, control, or mitigate the 
+consequences of those malfunctions or operations:  Conditions 
+which exist for an abnormal shutdown of an RCP in comparison 
+to a normal shutdown of an RCP. 
+Importance:     3.9 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to predict the impact of a high RCP 
+seal leak-off flow and based on plant conditions to determine whether immediate action is required as 
+opposed to an orderly shutdown. 
+       
+  
+
+===== PAGE 240 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 48 
+ 
+SRO Match Justification: 
+ 
+ 
+  
+
+
+===== PAGE 241 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 49 
+ 
+87 07-018 Points: 1.00 
+Given 
+ In accordance with the outage schedule, the Unit  2 reactor was manually tripped at 20% power for 
+the start of a planned refueling outage. 
+ Following the reactor trip, the crew observes RCS pressure dropping rapidly and manually actuates 
+Safety Injection. 
+ All other systems responded as designed post trip. 
+ 
+Based on the above events, which ONE of the following correctly identifies the reportability to the NRC? 
+ 
+[REFERENCE PROVIDED] 
+ 
+ 
+A. Nonreportable. 
+B. 4 hour report under RAL#s 11.3.1 AND 11.3.2. 
+C. 4 hour report under RAL# 11.3.2 ONLY. 
+D. 4 hour report under RAL# 11.3.1 ONLY. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 242 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 50 
+ 
+Answer: D 
+ 
+Explanation / Justification:  
+ 
+A. Incorrect. Plausible because the SRO may misinterpret the reportability requirements for a valid 
+actuation such that if the reactor trip and Safety Injection were not due to automatic actuation signals, 
+then, no report is required to the NRC. 
+B. Incorrect.  Plausible because the SRO may believe that if at anytime the reactor is tripped regardless of 
+preplanned or not, then a 4 hour report is required under RAL# 11.3.2.  The SRO may misinterpret the 4 
+hour report criteria under RAL# 11.3.1 based on the Safety Injection being manually actuated. 
+C. Incorrect.  Plausible because the SRO may believe that since an SI was manually actuated that this 
+manual action did not meet the criteria of a valid actuation signal under RAL#11.3.1 for a 4 hour report. 
+The SRO may believe that the manual reactor trip is reportable under RAL # 11.3.2 eventhough if it was 
+preplanned. 
+D. Correct.  IAW SECG RAL# 11.3.2, since the manual reactor trip was part of a preplanned event, then a 
+4 hour report to the NRC is not required.  However, since the crew was required to manually actuate 
+Safety Injection due to degrading RCS conditions, this would be reportable to the NRC as a 4 hour 
+report under SECG RAL# 11.3.1, since this was not part of a series of preplanned events during testing 
+or reactor operation. 
+ 
+ 
+    
+Technical References: SECG Section 11.3 
+Proposed References to be provided: SECG RALs Section 11.3 and Bases 
+Learning Objective: NOS05TRP001-09, Objective 20. Given the Salem Event 
+Classification guide, classify the event. 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.10 / 43.5 / 45.11 
+Level:      SRO  
+Category/System:    07-Reactor Protection 
+K/A #:      012 G2.4.30 
+ Knowledge of events related to system operation/status that 
+must be reported to internal organizations or external agencies, 
+such as the State, the NRC, or the transmission system 
+operator. 
+Importance:     4.1 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked knowledge of reportability 
+requirements of 10 CFR 50.72 to State and Local authorities. 
+     
+ 
+
+===== PAGE 243 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 51 
+ 
+Additional Reference: 
+ 
+ 
+
+
+===== PAGE 244 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 52 
+ 
+Additional Reference:  
+ 
+ 
+
+
+===== PAGE 245 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 53 
+ 
+Additional Reference: 
+ 
+ 
+ 
+ 
+  
+
+
+===== PAGE 246 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 54 
+ 
+Additional Reference: 
+ 
+ 
+  
+
+
+===== PAGE 247 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 55 
+ 
+Additional Reference: 
+ 
+ 
+ 
+  
+
+
+===== PAGE 248 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 56 
+ 
+Additional Reference: 
+ 
+  
+ 
+  
+
+
+===== PAGE 249 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 57 
+ 
+Additional Reference: 
+ 
+  
+
+
+===== PAGE 250 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 58 
+ 
+Additional Reference: 
+ 
+ 
+  
+
+
+===== PAGE 251 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 59 
+ 
+SRO Match Justification: 
+ 
+  
+
+
+===== PAGE 252 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 60 
+ 
+88 05-016 Points: 1.00 
+Given: 
+ Unit 1 is at 100% Power. 
+ 11 Charging Pump is in service. 
+ A Loss of All Control Air has occurred. 
+ The crew enters S1.OP-AB.CA-0001, Loss of Control Air. 
+ The CRS directs manually tripping the reactor and entering 1-EOP-TRIP-1, Reactor Trip or Safety 
+Injection. 
+ Operators are locally controlling AFW valves to maintain post trip SG Narrow Range levels. 
+ 
+Which ONE of the following completes both statements? 
+ 
+1. What will be the subsequent impact on PZR level? 
+2. What is the preferred course of action? 
+ 
+A. 1)  PZR level will rise 
+2)  Locally control charging flow by adjusting the 1CV54, CENT CHG PUMP FLOW CONT VLV. 
+B. 1)  PZR level will rise 
+2)  Transfer to 13 Charging Pump and locally control the speed changer. 
+C. 1)  PZR level will lower 
+2)  Transfer to 13 Charging Pump and locally control the speed changer. 
+D. 1)  PZR level will lower  
+2)  Locally control charging flow by adjusting the 1CV54, CENT CHG PUMP FLOW CONT VLV. 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 253 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 61 
+PSEG CONFIDENTIAL- Possession Requires Specific Permission from Nuclear Training 
+Answer: A and B 
+ 
+Question 88 was determined to have to two correct answers, ‘A’ and ‘B,’ based on review of the post-
+examination comments. 
+ 
+Explanation / Justification:  
+ 
+A. ***Correct.  Incorrect. Part 1 is correct.  Part 2 is incorrect.  Plausible because the centrifugal charging 
+and adjusting the 1CV54 can be used to supply charging flow, however, in this case per S1.OP-AB.CA-
+0001 Attachment 8, CRS Decisions, recommends operating 13 PDP since its speed controller is failed 
+at the low speed and therefore minimum RCP seal flow.  Part 1 is correct.  On loss of all control air, with 
+letdown isolated, the 1CV55 failed open, and the 1CV71 failed closed, the operating centrifugal charging 
+pump will result in higher flow and pressure to the RCP seals.  This will result in higher flow into the 
+RCS and thus raise PZR level faster.  Part 2 is correct.  S1.OP-AB.CA-0001, “Loss of Control Air,” 
+provides guidance in both the “Selected Continuous Action Summary (CAS) Items” and the “Attachment 
+1 Continuous Action Summary” sections of the procedure, to maintain Pressurizer level by locally 
+adjusting the 1CV54, CENT CHG PUMP FLOW CONT VLV, to control charging flow. 
+B. ***Correct.  Per S1.OP-AB.CA-0001, Attachment 8, CRS Decisions, on loss of all control air, with 
+letdown isolated, the 1CV55 failed open, and the 1CV71 failed closed, operating a centrifugal charging 
+pump will result in higher flow and pressure to the RCP seals.  This will result in higher flow into the 
+RCS and thus raise PZR level faster.  It is recommended to operate 13 PDP since its speed controller is 
+failed at the low speed stop that will minimize RCP seal flow. It is for this reason that 13 PDP should be 
+placed in service to allow reducing the charging flow and extend the time for the PZR level to reach the 
+limit of 90%. 
+C. Incorrect. Part 1 is incorrect.  Part 2 is correct.  Plausible because the SRO may not correctly assess the 
+impact of the components on a loss of air and incorrectly determine that PZR level will lower. The SRO 
+may determine that both the 1CV55 and 1CV71 fails closed, resulting in the centrifugal charging pumps 
+in recirculation back to the VCT and no flow to the RCP seals.  
+D. Incorrect.  Part 1 and Part 2 are incorrect.  Part 1 is plausible because the SRO may not correctly 
+assess the impact of the components on a loss of air and incorrectly determine that PZR level will lower. 
+The SRO may determine that both the 1CV55 and 1CV71 fails closed, resulting in the centrifugal 
+charging pumps in recirculation back to the VCT and no flow to the RCP seals,  Part 2 is plausible 
+because the centrifugal charging and adjusting the 1CV54 can be used to supply charging flow. 
+ 
+***S1.OP-AB.CA-0001, “Loss of Control Air,” contains three sections that provide guidance for controlling 
+Pressurizer level; 1) Selected Continuous Action Summary (CAS) Items, 2) Attachment 1 Continuous 
+Action Summary, and 3) Attachment 8, “CRS Decisions.”  The first section to be implemented by the 
+CRS when entering the procedure would be either of the CAS sections identified in Items 1 and 2 above, 
+both of which state: 
+ 
+“SEND Operators to maintain Pressurizer level between 24 and 90% while maintaining RCP seal 
+Injection flow 6-12 gpm/pump, NOT to exceed 40 gpm total, by local operation of appropriate 
+components: 
+ 
+• 1CV73, CHG HDR PCV BYP VALVE 
+• Speed Changer on 13 Charging Pump 
+• 1CV54, CENT CHG PUMP FLOW CONT VALVE INLET” 
+
+===== PAGE 254 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 62 
+PSEG CONFIDENTIAL- Possession Requires Specific Permission from Nuclear Training 
+ 
+Answers ‘A’ and ‘B’ are both correct on the basis that: 
+1) the actions to control Pressurizer level would be taken in accordance with either of the 
+aforementioned CAS sections upon initial entry into S1.OP-AB.CA-0001,  
+2) the CAS actions to control Pressurizer level are bulleted items, indicating that local operation of either 
+1CV54 or the PDP Speed Changer would be appropriate and acceptable given the conditions 
+specified in the stem, 
+3) local operation of 1CV54 as the preferred course of action is a viable option considering that CCP 11 
+was already in service, and  
+4) local operation of the PDP Speed Changer as the preferred course of action using Attachment 8, 
+“CRS Decisions,” is a viable option because a) the associated guidance contained therein 
+recommends operation of the PDP, and b) the Selected CAS Items section of S1.OP-AB.CA-0001 
+provides direction to reference the Exhibit 1 Briefing Sheet, which in turn provides direction to 
+reference Attachment 8. 
+ 
+ 
+Technical References:   S1.OP-AB.CA-0001 (R25) 
+Proposed References to be provided: None 
+Learning Objective: NOS05ABCA01-08, Objective 3, Given a set of initial plant 
+conditions, Describe the final plant condition that is established 
+by the abnormal procedure 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 43.5 / 45.12 
+Level:      SRO 
+Category/System:    08-Instrument Air  
+K/A #:      078 G2.2.44 
+ Ability to interpret control room indications to verify the status 
+and operation of a system, and understand how operator 
+actions and directives affect plant and system conditions. 
+Importance:     4.4 
+Tier/Group     Plant Systems-Tier 2 / Group 1 
+ 
+K/A Match:  The K/A is matched because the SRO must assess or interpret plant conditions to determine 
+how the control air system is impacting PZR level control system operation and then direct actions and 
+procedure selection to control PZR level.  
+     
+  
+
+===== PAGE 255 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 63 
+ 
+SRO Match Justification: 
+ 
+ 
+ 
+  
+
+
+===== PAGE 256 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 64 
+ 
+89 06-024 Points: 1.00 
+ 
+Given: 
+ Unit 1 is at 100% power. 
+ During the performance of the 1A Emergency Diesel  Generator (EDG) surveillance run, the 1A EDG 
+failed to start. 
+ The 1A EDG was declared INOPERABLE today (Monday) at 0600. 
+ Troubleshooting determined that the K1C relay in the diesel start circuit failed to actuate. 
+ The 1B and 1C EDGs have these same relay models installed. 
+ 
+In accordance with Technical Specification, which ONE of the following is the required action(s)? 
+[REFERENCE PROVIDED] 
+ 
+A. Restore the 1A EDG to OPERABLE status by 0600 Thursday ONLY. 
+B. Perform an operability run on the 1B and 1C EDGs by 0600 Tuesday AND restore 1A EDG by 0600 
+Thursday. 
+C. The unit must be in at least HOT STANDBY by 1300 today. 
+D. Restore two of the inoperable EDGs to OPERABLE status by 0800 today AND restore the remaining 
+inoperable EDG by 0600 Thursday. 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 257 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 65 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect. Plausible because the SRO may believe that a common mode failure does not exist from the 
+information in the stem and that only TS 3.8.1.1 action “b.4” only applies to require restoring the 1A EDG 
+to operable status by 0600 Thursday.  
+B. Correct.  Based on 1A EDG being declared inoperable due to the K1C relay failure and the Part 21 on 
+the same relay models installed on the 1B and 1C EDGs, the SRO should conclude that a common 
+mode failure exists or can’t be ruled out.  As a result the SRO should apply TS 3.8.1.1 action “b.3” and 
+“b.4”, which requires performing a surveillance run within 24 hours on the two operable EDGs.  In any 
+case, restore the inoperable EDG to operable status within 72 hours or be in Hot Standby in the next 6 
+hours.  So in this case the 1B and 1C EDGs require operability runs by 0600 Tuesday and the 1A EDG 
+needs to be restored to operability status by 0600 Thursday. 
+C. Incorrect. Plausible because the SRO may believe that the common mode failure makes all EDGs 
+inoperable and that TS 3.0.3 now applies requiring the unit to be in Hot Standby by 1300 today 
+(Monday).  TS 3.0.3 would not apply here because action “e” exists for two or more diesels inoperable. 
+D. Incorrect. Plausible because the SRO may misinter prets implementing TS 3.8.1.1 action “b.3” and “b.4” 
+and believes that since all EDGs are inoperable, that action “e” is required to restore two inoperable 
+diesels to operable status within 2 hours and then implement action “b.4” to restore the remaining EDG 
+within 72 hours or 0600 Thursday. 
+ 
+Technical References:   TS LCOs 3.8.1.1 and 3.0.3 
+Proposed References to be provided: TS LCO 3.8.1.1 
+Learning Objective: NOS05TECHSPEC-14, Objective 14. Describe the general 
+component and parameter categories that are addressed by 
+Technical Specification Sections 3/4.1 through 3/4.12 
+Question Source: Modified Bank – DC Cook 2018 SRO89 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.10 / 43.2 / 45.13 
+Level:      SRO 
+Category/System:    06-Emergency Diesel Generator 
+K/A #:      064 G2.2.36 
+ Ability to analyze the effect of maintenance activities, such as 
+degraded power sources, on the status of limiting conditions of 
+operations. 
+Importance:     4.2 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the SRO must analyze plant conditions and determine what TS 
+action required based on determining if a common mode failure exists based on the failed relay and 
+conditions provided in the stem. 
+ 
+  
+
+===== PAGE 258 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 66 
+ 
+Modified Question – The question stem condition was modified for the SRO to assess the conditions that 
+caused the EDG to fail to start and then determine what Tech Spec action is required based on a common 
+mode failure with the K1C relays.  The original question provided the SRO indications that a common mode 
+failure most likely existed without requiring much mental activity. 
+ 
+  
+
+===== PAGE 259 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 67 
+ 
+Parent Question:  DC Cook 2018 NRC SRO89 
+ 
+ 
+
+
+===== PAGE 260 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 68 
+ 
+SRO Match Justification: 
+ 
+ 
+         
+
+
+===== PAGE 261 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 69 
+ 
+90 04-053 Points: 1.00 
+ 
+Given: 
+ Unit 2 is at 40% Power. 
+ #4 SW Bay was isolated due to a leak. 
+ 2A EDG is paralleled to the 4KV bus for surveillance testing. 
+ 22 Charging Pump is in service. 
+ 21 and 23 SW Pumps are in service. 
+ 22 SW Pump is in AUTO and standby. 
+Subsequently, the following occurs; 
+ 23 SW Pump trips. 
+ OHA J-1, 2A 4KV VTL BUS DIFF PROT, is LIT 
+Based on the above conditions, which ONE of the following completes both statements? 
+1. What is the effect on the SW system? 
+2. How will the CRS proceed? 
+ 
+Note: S2.OP-AB.SW-0001 – Loss of Service Water Header Pressure 
+ S2.OP-AB.SW-0005 – Loss of All Service Water 
+ 
+ 
+A. 1)  22 SW Pump will auto start on low SW header pressure. 
+2)  Enter S2.OP-AB.SW-0001, reduces loads on the SW system listed on Attachment 2, Loads 
+Affected by a Loss of Service Water. 
+B. 1)  22 SW Pump will auto start on low SW header pressure. 
+2)  Enter S2.OP-AB.SW-0001, place 23 Charging Pump in service and remove 22 Charging Pump 
+from service. 
+C. 1)  All SW flow capability is lost. 
+2)  Enters S2.OP-AB.SW-0005, then trips the reactor and stops the RCPs to limit the heat input to 
+the CCW system. 
+D. 1)  All SW flow capability is lost. 
+2)  Enters S2.OP-AB.SW-0005, then trips the Main Turbine and reduces reactor power to < 5% to 
+lower heat input into the RCS. 
+ 
+ 
+
+===== PAGE 262 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 70 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  Part 1 is incorrect.  Plausible because the SRO may believe that the Unit 2 SW pumps power 
+supplies are the same as Unit 1.  This is a unit difference.  Part 2 is incorrect.  A loss of all SW flow 
+would require entry into AB.SW-5.  See Ans. C for further explanation. 
+B. Incorrect.  Part 1 is incorrect.  Plausible because the SRO may believe that the Unit 2 SW pumps power 
+supplies are the same as Unit 1.  This is a unit difference.  Part 2 is incorrect.  A loss of all SW flow 
+would require entry into AB.SW-5.  See Ans. C for further explanation. 
+C. Correct. 2A EDG supplies power to 21 and 22 SW Pumps (Unit 1 is 15 and 16 SW Pumps).  Therefore, 
+when 23 SW Pump tripped and the 2A 4KV bus locked out on bus differential protection, a loss of all 
+SW flow capability occurred.  Based on the loss of all SW, the CRS should enter S2.OP-AB.SW-0005 to 
+trip the reactor and stop all RCPs. 
+D. Incorrect. Part 1 is correct.  Part 2 is incorrect.  Plausible because the SRO may believe that based on 
+the current power level of 40% that a turbine trip is the correct action versus tripping the reactor.  This is 
+not an action in AB.SW-5.  See Ans. C for further explanation. 
+ 
+Technical References:   S2.OP-AB.SW-0005 
+Proposed References to be provided: N/A 
+Learning Objective: NOS05ABSW4-04, Objectives 4: Describe, in general terms, 
+the actions taken in AB.SW-0004 and AB.SW-0005 and the 
+bases for the actions in accordance with the Technical Bases 
+Document. 
+Question Source: Bank – Salem 2016 NRC SRO92 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 43.5 / 45.3 / 45.13 
+Level:      SRO 
+Category/System:    04-Loss of Service Water 
+K/A #:      076 A2.01 
+ Ability to (a) predict the impacts of the following malfunctions or 
+operations on the SWS, and (b) based on those predictions, 
+use procedures to correct, control, or mitigate the 
+consequences of those malfunctions or operations:  Loss of 
+SWS 
+Importance:     3.7 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is asked to assess the plant conditions and based 
+on the plant conditions select the appropriate procedure and select actions to mitigate the event.  In this 
+case, the SRO must determine that there is a loss of all SW pumps and enter into AB.SW-005 to trip the 
+reactor and stop RCPs. 
+ 
+
+===== PAGE 263 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 71 
+ 
+SRO Match Justification: 
+ 
+ 
+        
+
+
+===== PAGE 264 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 72 
+ 
+91 02-026 Points: 1.00 
+Given: 
+ Salem Unit 2 is in MODE 5 with a unit startup in progress. 
+ A review of surveillance paperwork found that the setpoint for POPS Channel I is out of tolerance. 
+ Channel I POPS has been declared INOPERABLE. 
+ 
+In accordance with Technical Specification 3.4.10.3,  Overpressure Protection Systems, which ONE of the 
+following statements is correct regarding MODE 4 entry? 
+ 
+ 
+[REFERENCE PROVIDED] 
+ 
+A. Mode change can be made. The channel must be restored to OPERABLE status within 7 days following 
+the mode change.  
+B. Mode change can be made after a risk assessment is performed. 
+C. Mode change can be made. The channel must be restored to OPERABLE status within 24 hours 
+following the mode change.  
+D. Mode change can NOT be made until the channel is OPERABLE. 
+ 
+ 
+ 
+  
+
+===== PAGE 265 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 73 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect. Plausible because the SRO may incorrectly apply TS 3.4.10.3 action “a” and believe that you 
+can make the mode change so long as you restore the channel within 7 days following entering Mode 4.  
+Mode change cannot be performed until the channel is restored to operable status. 
+B. Incorrect. Plausible because TS 3.0.4.b does allow the use of a risk assessment to make a mode 
+change.  However, this is prohibited by TS 3.4.10.3 action “e”. 
+C. Incorrect. Plausible because the SRO may incorrectly apply TS 3.4.10.3 action “b” and believe that you 
+can make the mode change so long as you restore the channel within 24 hours following entering Mode 
+4.  Mode change cannot be performed until the channel is restored to operable status. 
+D. Correct.  MODE 4 entry may NOT be performed.  TS 3.4.10.3 action “e” states that LCO 3.0.4.b is not 
+applicable when entering MODE 4.  TS Reactor Coolant System bases also states that there is an 
+increased risk associated with entering MODE 4 from MODE 5 with an inoperable LTOP system.  It 
+further states that performance of a risk assessment should not be applied in this circumstance.  In 
+order to make the mode change, the LTOP channel needs to be restored to operable status. 
+ 
+Technical References:   TS 3.4.10.3 and bases 
+Proposed References to be provided: TS 3.4.10.3 only 
+Learning Objective: NOS05TECHSPEC-14, Objective 14. Describe the general 
+component and parameter categories that are addressed by 
+Technical Specification Sections 3/4.1 through 3/4.12 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.10 / 43.2 / 43.5 / 45.3 
+Level:      SRO 
+Category/System:    02-Reactor Coolant 
+K/A #:      002 G2.2.40 
+ Ability to apply Technical Specifications for a system. 
+Importance:     4.7 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the SRO is being asked knowledge on applying LCO 3.0.4 and 
+the applicable TS LCO 3.4.10.3 actions.  In this case, the SRO must know that TS 3.0.4.b is for allowing risk 
+assessment, however, TS 3.4.10.3 action “e” prohibits this use. 
+         
+  
+
+===== PAGE 266 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 74 
+ 
+Additional References:  Salem TS 3.4.10.3 
+ 
+ 
+
+
+===== PAGE 267 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 75 
+ 
+SRO Match Justification: 
+ 
+
+
+===== PAGE 268 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 76 
+ 
+92 01-015 Points: 1.00 
+Given: 
+ Unit 2 is at 100% Power. 
+ Rod Control Exercise Testing is in progress pe r S2.OP-ST.RCS-0001, Reactivity Control System 
+Rod Control Assemblies. 
+ After withdrawing Control Bank C rods to the ARO position, the RO reports the following; 
+o Group Demand Counter for Control Bank C indicates 230 steps. 
+o ARPI indication on P-250 indicates one Control Bank C rod at 215 steps. 
+ The crew enters S2.OP-AB.ROD-0001, Immoveable/Misaligned Control Rods.  
+ Reactor Engineering confirms the misaligned rod. 
+ 
+Which ONE of the following describes the required action per S2.OP-AB.ROD-0001? 
+ 
+A. Insert Control Bank C to 215 steps to realign the bank to the misaligned control rod. 
+B. Reduce power to less than 75% Rated Thermal Power. 
+C. Place the unit in HOT STANDBY within 6 hours. 
+D. Power operation at 100% may continue, provided shutdown margin is satisfied.  
+  
+
+===== PAGE 269 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 77 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect. This is not allowed per S2.OP-AB.ROD-0001.  If the rod is to be recovered, then the rods are 
+aligned to the current bank position.  Credible distractor if the SRO believes that moving the bank to the 
+misaligned rods is allowed by procedure, which actually the procedure aligns the misaligned rod to the 
+bank. 
+B. Correct.  IAW S2.OP-AB.ROD-0001 step 3.37, ONLY one rod indicates misalignment 12 or more steps 
+if greater than 85% RTP, then step 3.41 refers to evaluate TS (including TS 3.1.3.1 movable control 
+assemblies) and step 3.42 directs initiating power reduction to < 75% RTP to comply with TS 3.1.3.1 
+action c.3.d.  
+C. Incorrect. This action is for two misaligned rods.  Credible distractor because it is a step in the procedure 
+but for two or more misaligned control rods. 
+D. Incorrect. This action is required by TS 3.1.3.1 action c.3, but it is not the only action required.  The unit 
+must be reduced to less than 75% RTP as well to comply with TS 3.1.3.1 action c.3.d 
+ 
+ 
+Technical References:   S2.OP-AB.ROD-0001 (R11), TS 3.1.3.1 
+Proposed References to be provided: None 
+Learning Objective: NOS05ABROD01-05, Objective 3, Given a set of initial plant 
+conditions:  Describe the final plant condition that is established 
+by the abnormal procedure. 
+Question Source: Bank - Salem 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 /43.5 / 45.3 / 45.13 
+Level:      SRO 
+Category/System:    01-Rod Position Indication 
+K/A #:      014 A2.04 
+ Ability to (a) predict the impacts of the following malfunctions or 
+operations on the RPIS; and (b) based on those predictions, 
+use procedures to correct, control, or mitigate the 
+consequences of those malfunctions or operations:  Misaligned 
+rod 
+Importance:     3.9 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the SRO is required to know details of steps in procedure.  In this 
+case, the SRO must determine what action is directed per the abnormal procedure for one misaligned 
+control rod. 
+ 
+  
+
+===== PAGE 270 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 78 
+ 
+SRO Match Justification: 
+ 
+ 
+    
+
+
+===== PAGE 271 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 79 
+ 
+93 08-015 Points: 1.00 
+Given: 
+ Both Salem Units are operating at 100% Power. 
+ Hope Creek is operating at 100% Power. 
+ Fire Brigade current manning consists of 6 qualified personnel. 
+ During a training exercise on-site, two members of the Fire Brigade are injured and require off-site 
+transportation to Salem Memorial Hospital. 
+In accordance with the Salem FSAR, which ONE of the following completes both statements? 
+1. The MINIMUM staffing requirements of the fire brigade __(1)__ MET. 
+2. The fire brigade staffing may be less than the minimum required for a period of time not to exceed 
+__(2)__ hour(s) provided immediate action is taken to restore the fire brigade to minimum 
+requirements. 
+ 
+ 
+A. 1)  are 
+2)  1 
+B. 1)  are NOT 
+2)  1 
+C. 1)  are 
+2)  2 
+D. 1)  are NOT 
+2)  2 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 272 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 80 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect. Part 1 is incorrect.  Part 2 is incorrect.  Plausible because the SRO may incorrectly determine 
+the minimum staffing requirements for the fire brigade.  See Ans. D for further explanation. 
+B. Incorrect. Part 1 is correct.  Part 2 is incorrect.  Plausible because the SRO may believe that the 1 hour 
+action, which is used a lot in Tech Specs, is the correct requirement.  See Ans. D for further explanation. 
+C. Incorrect.  Part 1 is incorrect.  Part 2 is correct.  Plausible because the SRO may incorrectly determine 
+the minimum staffing requirements for the fire brigade.  See Ans. D for further explanation. 
+D. Correct. The fire brigade composition may be less than the minimum 5 qualified members (IAW the 
+Salem and Hope Creek UFSAR requirements) for a period of time not to exceed two hours in order to 
+accommodate the unexpected absence of the fire brigade members PROVIDED immediate action is 
+taken to restore the fire brigade to the minimum requirements. 
+ 
+Technical References:   Salem FSAR 9.5.1.1.6 and FP-AA-012 (R6) 
+Proposed References to be provided: None 
+Learning Objective: None 
+Question Source: Bank – Salem 2008 NRC SRO24 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.7 / 41.10 / 43.1 / 45.13 
+Level:      SRO 
+Category/System:    08-Fire Protection 
+K/A #:      086 G2.2.38 
+ Knowledge of conditions and limitations in the facility license. 
+Importance:     4.5 
+Tier/Group     Plant Systems-Tier 2/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked knowledge of the minimum 
+requirements for the Fire Brigade and what action is required if the minimum staffing requirements is not 
+met.  This is a SRO responsibility. 
+   
+ 
+  
+
+===== PAGE 273 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 81 
+ 
+SRO Match Justification: 
+ 
+ 
+
+
+===== PAGE 274 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 82 
+ 
+94 14-044 Points: 1.00 
+ 
+In accordance with S2.OP-IO.ZZ-0007, Cold Shutdown to Refueling, which ONE of the following defueling 
+activities is the FIRST evolution performed requiring the direct  supervision of the Refueling SRO in 
+Containment because it is a CORE ALTERATION? 
+ 
+A. Unlatching RCCAs 
+B. Lifting the upper internals 
+C. Moving the first fuel assembly 
+D. Disconnecting CRDMs 
+ 
+ 
+ 
+  
+
+===== PAGE 275 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 83 
+ 
+Answer: A 
+Explanation / Justification:  
+A. Correct. IAW S1(2).OP-IO.ZZ-0007, CORE ALTERATION shall be the movement of any fuel, sources, 
+OR reactivity control components, within the reactor vessel with the vessel head removed and fuel in the 
+vessel. Suspension of CORE ALTERATION shall NOT preclude completion of movement of a 
+component to a safe conservative location. Unlatching RCCAs and moving fuel assemblies are Core 
+Alterations requiring a refueling SRO present.  Unlatching RCCAs is performed prior to the first fuel 
+move. 
+B. Incorrect. Moving upper internals is not a Core Alteration.  Plausible because this is an evolution 
+performed as part of reactor disassembly. 
+C. Incorrect. Moving fuel assembly is a Core Alterati on, but it’s not the first Core Alteration. Plausible 
+because this is an evolution performed as part of reactor disassembly. 
+D. Incorrect. Disconnecting CRDMs is not a Core Al teration. Plausible because this is an evolution 
+performed as part of reactor disassembly and does involve reactivity components, but does not involve 
+the movement of reactivity control components inside the reactor vessel. 
+ 
+Technical References:   S2.OP-IO.ZZ-0007 (R21) 
+Proposed References to be provided: None 
+Learning Objective: NOS05IOP007, Objective 4, State/Identify the following 
+parameters IAW S2.OP-IO.ZZ-0007(Q), Cold Shutdown to 
+Refueling, and Technical Specifications): Define Core 
+Alterations 
+Question Source: Bank - Salem 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 43.7 
+Level:      SRO 
+Category/System:    15-Conduct of Operations 
+K / A  # :       G 2 . 1 . 3 5  
+ Knowledge of fuel handling responsibilities of SROs. 
+Importance:     3.9 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate requires knowledge of administrative procedures 
+regarding defueling activities that require a refueling SRO. 
+      
+  
+
+===== PAGE 276 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 84 
+ 
+SRO Match Justification: 
+ 
+  
+
+
+===== PAGE 277 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 85 
+ 
+95 14-055 Points: 1.00 
+ 
+In accordance with OP-AA-300, Reactivity Management, which ONE of the following completes both 
+statements? 
+1. During significant reactivity changes, the role of the Reactivity Management SRO may be filled by 
+___(1)___. 
+2. The Reactivity Management SRO __(2)__ allow ed to perform peer checks during reactivity 
+manipulations. 
+ 
+A. 1)  EITHER an active OR inactive SRO license holder 
+2)  is NOT 
+B. 1)  EITHER an active OR inactive SRO license holder 
+2)  is 
+C. 1)  ONLY an active SRO license holder 
+2)  is NOT 
+D. 1)  ONLY an active SRO license holder 
+2)  is 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 278 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 86 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  First part is incorrect.  An individual wi th an Inactive SRO License is not allowed to perform 
+the function as a Reactivity SRO.  Second part is correct.  Plausible because the SRO may believe that 
+an Inactive SRO License can still perform the action as a Reactivity Manager SRO. 
+B. Incorrect. First part is incorrect.  An individual wi th an Inactive SRO License is not allowed to perform 
+the function as a Reactivity SRO.  Second part is incorrect.  Reactivity SRO is not allowed to perform 
+peer checks. Plausible because the SRO may believe that an Inactive SRO License can still perform the 
+action as a Reactivity Manager SRO as well as performing peer checks. 
+C. Correct. IAW OP-AA-300 Step 4.5 Note, it is acceptable to utilize another SRO to perform the Unit 
+Supervisor Reactivity Management function for significant reactivity changes such as start-up, 
+shutdown, etc.  In addition, per Step 4.5.11, during load changes, RCS boron concentration changes, or 
+any other activities that affect reactivity, a second licensed individual should be positioned as such to 
+perform peer checks.  Therefore, only an active licensed SRO may fill the position as Reactivity SRO 
+and is NOT allowed to perform peer checks. 
+D. Incorrect. First part correct.  Second part is incorr ect.  Reactivity SRO is not allowed to perform peer 
+checks.  Plausible because the SRO may believe performing peer checks while acting as the Reactivity 
+Manager SRO is permitted. 
+ 
+Technical References:   OP-AA-300 (R8) 
+Proposed References to be provided: None 
+Learning Objective: NOS05CONDOP-15, Objective5. Describe requirements for the 
+following Control Room or Field Activities in accordance with 
+applicable Conduct of Operations Manual Administrative 
+Procedures. 
+Question Source: Bank – Palo Verde 2018 SRO95  
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.1 / 43.6 / 45.6 
+Level:      SRO 
+Category/System:    14-Conduct of Operations 
+K / A  # :       G 2 . 1 . 3 7  
+ Knowledge of procedures, guidelines, or limitations associated 
+with reactivity management. 
+Importance:     4.6 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the SRO is being asked knowledge or SRO responsibilities for 
+reactivity management.  In this case, the SRO is being asked who can fill the position as reactivity SRO and 
+whether this position can perform peer checks IAW operations reactivity management procedure. 
+ 
+  
+
+===== PAGE 279 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 87 
+ 
+Additional Reference: OP-AA-300 
+ 
+ 
+
+
+===== PAGE 280 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 88 
+ 
+SRO Match Justification: 
+ 
+ 
+    
+  
+
+
+===== PAGE 281 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 89 
+ 
+96 14-056 Points: 1.00 
+ 
+In accordance with CC-AA-112, Temporary Configuration Changes, which ONE of the following completes 
+both statements? 
+ 
+1. The __(1)__ is responsible for approving installation of Temporary Configuration Changes (TCCs). 
+2. For TCCs in direct support of a maintenance activity, a 50.59 review is required if the TCC is 
+installed for more than __(2)__ days. 
+ 
+ 
+A. 1)  Control Room Supervisor  
+2)  90 
+B. 1)  Design Engineering Manager  
+2)  90 
+C. 1)  Control Room Supervisor  
+2)  30 
+D. 1)  Design Engineering Manager  
+2)  30 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 282 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 90 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct. Per CC-AA-112, CRS is responsible for approving installation of TCCs.  Per step 2.11.1 
+temporary configuration changes that are established during the maintenance activity (MR90s), are not 
+subject to a 50.59 review provided that (a) the MR90 is in direct support of maintenance and (b) the 
+MR90 will be installed for no more than 90 days at power. 
+B. Incorrect.  Part 1 is incorrect.  Design Engineering Manager does not approve installation of TCCs.  Part 
+2 is correct.  Plausible because the SRO may believe that the Engineering Manager is the correct 
+position to authorize installation of the TCCP since the Engineering Manager is also an approver in the 
+development of the TCCP. 
+C. Incorrect.  Part 1 is correct.  Part 2 is incorrect.  TCCs installed greater than 90 days requires a 50.59 
+review.  Plausible because the SRO may believe that 30 days is reasonable amount of time. 
+D. Incorrect. Part 1 is incorrect.  Design Engineering Manager does not approve installation of TCCs.  Part 
+2 is incorrect.  TCCs installed greater than 90 days requires a 50.59 review.  Plausible because the 
+SRO may believe that the Engineering Manager is the correct position to authorize installation of the 
+TCCP since the Engineering Manager is also an approver in the development of the TCCP 
+ 
+Technical References:   CC-AA-112 (R18) 
+Proposed References to be provided: None 
+Learning Objective: NOS05ENGDCP-04, Objective 4, Describe the roles and 
+responsibilities of Operations Personnel with respect to the 
+Engineering Configuration Change Control (Design Change) 
+Process 
+Question Source: New 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 43.3 / 45.13 
+Level:      SRO 
+Category/System:    14-Equipment Control 
+K / A  # :       G 2 . 2 . 1 1  
+ Knowledge of the process for controlling temporary design 
+changes 
+Importance:     3.3 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked knowledge of the TCCP process and 
+who authorizes the installation of TCCs which is a SRO responsibility. 
+    
+ 
+  
+
+===== PAGE 283 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 91 
+ 
+SRO Match Justification: 
+ 
+ 
+
+
+===== PAGE 284 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 92 
+ 
+97 14-057 Points: 1.00 
+ 
+Given: 
+ 
+ Unit 2 is at 100% Power. 
+ OHA H-27, GEN VREG TRBL, is LIT 
+ PO reports that the main generator Automatic Voltage Regulator (AVR) swapped to Manual. 
+ 
+In accordance with OP-AA-108-107-1002, Salem and Hope Creek 500 KV Switchyard Operations Interface 
+Procedure, which one of the following completes both statements? 
+ 
+1. The Shift Manager is required to notify __(1)__ that the AVR is not in AUTO. 
+2. Per S2.OP-AR.ZZ-0008, Overhead Annunciator Window H, the operating shift is required to make 
+the notification within __(2)__ minutes of receiving OHA H-27. 
+ 
+Note: ESOC - Electric System Operation Center  
+ 
+A. 1)  ESOC 
+2)  15 
+B. 1)  ESOC  
+2)  30 
+C. 1)  Hope Creek  
+2)  15 
+D. 1)  Hope Creek  
+2)  30 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 285 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 93 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  IAW OP-AA-108-107-1002 step 3.1.17, the operations shift notifies ESOC when the generator 
+Automatic Voltage Regulator (AVR) is NOT in Automatic mode.  Log the times when the station voltage 
+regulation equipment is not in Automatic mode.  Also, notifies the ER&T Generation Desk who will make 
+appropriate notifications to PJM.  IAW OHA H-27 ARP, 15 minute notification to ESOC is required. 
+B. Incorrect.  Part 1 is correct.  Part 2 is incorrect.  Plausible for 30 minutes since it’s reasonable to believe 
+that prompt notification of 15 minutes is not warranted for this condition. 
+C. Incorrect.  Part 1 is incorrect.  Part 2 is correct.  Plausible because the SRO does make notifications to 
+the Hope Creek control room on conditions that may impact plant operations. 
+D. Incorrect.  Part 1 is incorrect.  Part 2 is incorrect.  Plausible because the SRO does make notifications to 
+the Hope Creek control room on conditions that may impact plant operations. Plausible for 30 minutes 
+since it’s reasonable to believe that prompt notification of 15 minutes is not warranted for this condition. 
+ 
+Technical References:   OP-AA-108-107-1002 (R2) 
+Proposed References to be provided: None 
+Learning Objective: None 
+Question Source: New  
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 43.5 / 45.13 
+Level:      SRO 
+Category/System:    14-Equipment Control 
+K / A  # :       G 2 . 2 . 1 7  
+ Knowledge of the process for managing maintenance activities 
+during power operations, such as risk assessments, work 
+prioritization, and coordination with the transmission system 
+operator. 
+Importance:     3.8 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate requires knowledge of the notification requirements 
+to ESOC (load dispatcher) when the automatic voltage regulator is in Manual and the time requirements to 
+complete the notifications.  This is a SRO responsibility to ensure this notification is completed. 
+    
+ 
+  
+
+===== PAGE 286 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 94 
+ 
+SRO Match Justification: 
+ 
+ 
+     
+
+
+===== PAGE 287 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 95 
+ 
+98 14-058 Points: 1.00 
+ 
+Given: 
+ Unit 2 is in MODE 5. 
+ A Containment Purge is in progress in accordan ce with S2.OP-SO.WG-0006, Containment Purge to 
+Plant Vent. 
+ 
+Which ONE of the following completes both statements concerning Containment Purge administrative 
+requirements? 
+ 
+1. A temporary termination of Containment Purge of short duration __(1)__ permitted without the need 
+for a new effluent permit. 
+2. Reinstatement of Containment Purge must be authorized by the __(2)__. 
+ 
+ 
+A. 1)  is 
+2)  RP Supervisor 
+B. 1)  is 
+2)  Control Room Supervisor 
+C. 1)  is NOT 
+2)  RP Supervisor 
+D. 1)  is NOT 
+2)  Control Room Supervisor 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 288 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 96 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  Part 1 is correct.  Part 2 is incorrect.  See Ans. B for further explanation.  Plausible because 
+Rad Pro Supervision authorizations are required for other activities involving radiation release or 
+exposure. 
+B. Correct. IAW S2.OP-SO.WG-0006, P&L step 3.2, a temporary termination of Containment Purge, 
+without the need for a new effluent permit, is acceptable provided that the temporary termination is of 
+short duration; for example ≈ 4 hours, AND there is operational assurance that no radiological changes 
+to the containment environment has occurred.  Per Attachment 2, reinstatement of purge requires SM or 
+CRS approval. 
+C. Incorrect. Part 1 is incorrect.  Part 2 is incorrect.  See Ans. B for further explanation.  Plausible because 
+Rad Pro Supervision authorizations are required for other activities involving radiation release or 
+exposure. 
+D. Incorrect. Part 1 is incorrect.  Plausible because the SRO may believe that a new effluent permit will be 
+required anytime the purge is terminated.  Part 2 is correct.  See Ans. B for further explanation. 
+ 
+ 
+Technical References:   S2.OP-SO.WG-0006 (R30) 
+Proposed References to be provided: None 
+Learning Objective: None  
+Question Source: New 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.13 / 43.4 / 45.10 
+Level:      SRO 
+Category/System:    14-Radiation Control 
+K / A  # :       G 2 . 3 . 6  
+ Ability to approve release permits. 
+Importance:     3.8 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the candidate requires knowledge of procedural requirements to 
+temporarily terminate Containment Purge and then who authorizes the reinstatement of purge. 
+      
+ 
+  
+
+===== PAGE 289 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 97 
+ 
+SRO Match Justification: 
+ 
+ 
+
+
+===== PAGE 290 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 98 
+ 
+99 14-059 Points: 1.00 
+ 
+Given: 
+ Units 1 and 2 are at 100% Power. 
+ A fire is reported in the 2A EDG engine room. 
+ The Fire Brigade Leader requests off-site assistance to combat the fire. 
+ 
+Which ONE of the following authorizations, by position, is required prior to requesting off-site fire fighting 
+assistance? 
+ 
+ 
+ 
+A. Security Shift Manager 
+B. Control Room Supervisor 
+C. Operations Shift Manager 
+D. Fire Department Superintendent 
+ 
+  
+ 
+ 
+  
+
+===== PAGE 291 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 99 
+ 
+Answer: C 
+Explanation / Justification:   
+(A) Incorrect.  Plausible because Security does have to authorize vehicles on-site, however, the procedure 
+specifically states that the Shift Manager (SM) positon is required to request for off-site assistance. 
+(B) Incorrect.  Plausible because the CRS would be performing the procedure and you would believe the 
+CRS would authorize this action, however, the procedure specifically states that the SM positon is required 
+to request for off-site assistance. 
+(C) Correct.  Per S2.OP-AB.FIRE-0001 Attachment 1, Step 3 Caution, if the Fire Department requests the 
+control room to obtain off-site firefighting assistance, permission should be obtained from EDO/SM prior to 
+calling for off-site assistance. 
+(D) Incorrect.  Plausible because the SRO may believe that the Fire Department Superintendent position is 
+required to request for off-site assistance. 
+ 
+ 
+Technical References:   S2.OP-AB.FIRE-0001 (R12) 
+Proposed References to be provided: None 
+Learning Objective: NOS05ABFIRE-05, Objective 3, Describe, in general terms, the 
+actions taken in S1(2).OP-AB.FIRE-0001(Q) and S1(2).OP-
+AB.FIRE-0002(Q) and the bases for those actions 
+Question Source: New  
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 to 43.5 / 45.12 
+Level:      SRO 
+Category/System:    14-Emergency Procedures/Plan 
+K / A  # :       G 2 . 4 . 2 6  
+ Knowledge of facility protection requirements, including fire 
+brigade and portable firefighting equipment usage. 
+Importance:     3.6 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+ 
+K/A Match:  The K/A is matched because the question requires knowledge of the facility fire protection 
+requirements and who can authorize off-site firefighting assistance per S2.OP-AB.FIRE-0001. 
+ 
+  
+
+===== PAGE 292 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 100 
+ 
+Additional References:  S2.OP-AB.FIRE-0001 
+ 
+  
+
+
+===== PAGE 293 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 101 
+ 
+SRO Match Justification: 
+ 
+ 
+ 
+
+
+===== PAGE 294 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 102 
+ 
+100 15-016 Points: 1.00 
+ 
+In accordance with NC.EP-EP.ZZ-0102, Emergency Coordinator Response, complete the following 
+statement regarding accountability.  
+The Emergency Response Organization (ERO) accountability process must be completed within a 
+MAXIMUM of __(1)__ minutes from the time a(an) __(2)__ is declared. 
+ 
+A. 1)  30 
+2)  Alert 
+B. 1)  45 
+2)  Alert 
+C. 1)  45 
+2)  Site Area Emergency 
+D. 1)  30 
+2)  Site Area Emergency 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 295 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 103 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect. Part 1 is correct.  Part 2 is incorrect.  Plausible because Assembly is performed when an Alert 
+is declared. 
+B. Incorrect. Part 1 is incorrect.  Part 2 is incorrect.  Plausible because Assembly is performed when an 
+Alert is declared. 
+C. Incorrect. Part 1 is incorrect.  Accountability is required to be performed within 30 minutes.  Part 2 is 
+correct. 
+D. Correct. IAW NC.EP-EP.ZZ-0102, Accountability must be performed when a Site Area Emergency 
+(SAE) has been declared and must be completed within 30 minutes from the time of declaration. 
+ 
+ 
+Technical References:   NC.EP-EP.ZZ-0102 (R27) 
+Proposed References to be provided: None 
+Learning Objective: None  
+Question Source: Bank - Salem 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.10 / 43.5 / 45.11 
+Level:      SRO 
+Category/System:    15-Emergency Procedures/Plan 
+K / A  # :       G 2 . 4 . 3 8  
+ Ability to take actions called for in the facility emergency plan, 
+including supporting or acting as emergency coordinator if 
+required. 
+Importance:     4.4 
+Tier/Group     Generic Knowledge and Abilities-Tier 3 
+  
+K/A Match:  The K/A is matched because the SRO is being asked the responsibilities that the Emergency 
+Coordinator (EC) may have to implement during an emergency.  Specifically, in this case the SRO needs to 
+know when to implement accountability and the time requirements to complete when acting as the EC. 
+ 
+  
+
+===== PAGE 296 =====
+
+SRO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT)  – (Rev 1) 
+ 
+ 
+ PAGE 104 
+ 
+SRO Match Justification 
+ 
+ 

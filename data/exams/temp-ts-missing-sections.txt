@@ -1,0 +1,1793 @@
+
+===== TS 3.4.9 Specific Activity (pages 179-183) =====
+--- Page 179 ---
+
+REACTOR COOLANT SYSTEM 
+ 
+3/4.4.9 SPECIFIC ACTIVITY 
+ 
+LIMITING CONDITION FOR OPERATION         
+ 
+3.4.9  The specific activity of the primary coolant shall be limited to: 
+ 
+a. ≤ 1.0 μCi/gram DOSE EQUIVALENT I-131, and 
+ 
+b. ≤ 600 μCi/gm DOSE EQUIVALENT XE-133. 
+ 
+APPLICABILITY: MODES 1, 2, 3, and 4. 
+ 
+ACTION: 
+ 
+------------------------------------------------------------------------------------------------------------------------------- 
+NOTE 
+Specification 3.0.4.c is applicable 
+------------------------------------------------------------------------------------------------------------------------------- 
+ 
+a. With the specific activity of the primary coolant > 1.0 μCi/gram DOSE     EQUIVALENT I-
+131: 
+ 
+1. Verify DOSE EQUIVALENT I-131 ≤ 60 μCi/gram at least once eve ry 4 hours and      
+restore DOSE EQUIVALENT I-131 to ≤ 1.0 μCi/gram within 48 hours, or 
+ 
+2. Be in HOT STANDBY within 6 hours and in COLD SHUTDOWN within the   following 
+30 hours. 
+ 
+b. With the specific activity of the primary coolant > 600 μCi/gram DOSE EQUIVALENT  XE-
+133: 
+ 
+1. Restore DOSE EQUIVALENT XE-133 to ≤ 600 μCi/gram within 48 h ours, or 
+ 
+2. Be in HOT STANDBY within 6 hours and in COLD SHUTDOWN within  the following 
+30 hours. 
+ 
+SURVEILLANCE REQUIREMENTS          
+ 
+---------------------------------------------------------------------------------------------------------------------------- 
+NOTES 
+SR 4.4.9.1 is not required to be performed in MODE 4, and is not required to be     
+performed in MODE 3 until 24 hours after Tavg > 500oF. 
+------------------------------------------------------------------------------------------------------------------------------ 
+4.4.9.1        Verify the specific activity of the primary coolant <600 μCi/gm DOSE EQUIVALENT 
+XE-133 in accordance with the Surveillance Frequency Control Program. 
+ 
+4.4.9.2 Verify the specific activity of the primary coolant <1.0 μCi/gm DOSE EQUIVALENT     
+I-131 in accordance with the Surveillance Frequency Control P
+--- Page 180 ---
+This page intentionally left blank.
+SALEH - UNIT 2 3/4 4-24 Amendment No. 112
+JN 8 1992 I
+--- Page 181 ---
+This page intentionally left blank. 
+SALEM - UNIT 2 3/4 4-25   Amendment No. 318 
+--- Page 182 ---
+This page intentionally left blank. 
+SALEM - UNIT 2 3/4 4-26 Amendment No. 318 
+--- Page 183 ---
+REACTOR COOLANT SYSTEM 
+ 
+3/4.4.10  PRESSURE/TEMPERATURE LIMITS 
+ 
+REACTOR COOLANT SYSTEM 
+ 
+LIMITING CONDITION FOR OPERATION         
+ 
+3.4.10.1  The Reactor Coolant System (except the pressurizer) temperature and pressure shall 
+be limited in accordance with the limits specified in the PTLR with: 
+ 
+a. A maximum heatup rate within the limits specified in the PTLR, 
+ 
+b. A maximum cooldown rate within the limits specified in the PTLR, and 
+ 
+c. A maximum temperature change within the limits specified in the PTLR, during 
+hydrostatic testing operations above system design pressure. 
+ 
+APPLICABILITY
+: At all times. 
+ 
+ACTION: 
+ 
+With any of the above limits exceeded, restore the temperature and/or pressure to within the 
+limit within 30 minutes; perform an engineering evaluation to determine the effects of the out-of-
+limit condition on the structural integrity of the Reactor Coolant System; determine that the 
+Reactor Coolant System remains acceptable for continued operation or be in at least HOT 
+STANDBY within the next 6 hours and reduce the RCS T
+avg and pressure to less than 200°F 
+and 500 psig, respectively, within the following 30 hours. 
+ 
+ 
+SURVEILLANCE REQUIREMENTS          
+ 
+4.4.10.1.1  The Reactor Coolant System temperature and pressure shall be determined to be 
+within the limits specified in the PTLR in accordance with the Surveillance Frequency Control 
+Program during system heatup, cooldown, and inservice leak and hydrostatic testing operations. 
+ 
+4.4.10.1.2  The reactor vessel material irradiation surveillance specimens shall be removed and 
+examined, to determine changes in material properties, at the intervals required by 10 CFR 50, 
+Appendix H.  The results of these examinations shall be used to update the P-T Limit Curves 
+specified in the PTLR. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SALEM - UNIT 2 3/4 4-27 Amendment No. 328 
+
+===== TS 3.4.10 P/T Limits (pages 183-200) =====
+--- Page 183 ---
+REACTOR COOLANT SYSTEM 
+ 
+3/4.4.10  PRESSURE/TEMPERATURE LIMITS 
+ 
+REACTOR COOLANT SYSTEM 
+ 
+LIMITING CONDITION FOR OPERATION         
+ 
+3.4.10.1  The Reactor Coolant System (except the pressurizer) temperature and pressure shall 
+be limited in accordance with the limits specified in the PTLR with: 
+ 
+a. A maximum heatup rate within the limits specified in the PTLR, 
+ 
+b. A maximum cooldown rate within the limits specified in the PTLR, and 
+ 
+c. A maximum temperature change within the limits specified in the PTLR, during 
+hydrostatic testing operations above system design pressure. 
+ 
+APPLICABILITY
+: At all times. 
+ 
+ACTION: 
+ 
+With any of the above limits exceeded, restore the temperature and/or pressure to within the 
+limit within 30 minutes; perform an engineering evaluation to determine the effects of the out-of-
+limit condition on the structural integrity of the Reactor Coolant System; determine that the 
+Reactor Coolant System remains acceptable for continued operation or be in at least HOT 
+STANDBY within the next 6 hours and reduce the RCS T
+avg and pressure to less than 200°F 
+and 500 psig, respectively, within the following 30 hours. 
+ 
+ 
+SURVEILLANCE REQUIREMENTS          
+ 
+4.4.10.1.1  The Reactor Coolant System temperature and pressure shall be determined to be 
+within the limits specified in the PTLR in accordance with the Surveillance Frequency Control 
+Program during system heatup, cooldown, and inservice leak and hydrostatic testing operations. 
+ 
+4.4.10.1.2  The reactor vessel material irradiation surveillance specimens shall be removed and 
+examined, to determine changes in material properties, at the intervals required by 10 CFR 50, 
+Appendix H.  The results of these examinations shall be used to update the P-T Limit Curves 
+specified in the PTLR. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SALEM - UNIT 2 3/4 4-27 Amendment No. 328 
+--- Page 184 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+THIS PAGE LEFT INTENTIONALLY BLANK 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SALEM - UNIT 2 3/4 4-28 Amendment No. 328 
+--- Page 185 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+THIS PAGE LEFT INTENTIONALLY BLANK 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SALEM - UNIT 2 3/4 4-29 Amendment No. 328 
+--- Page 186 ---
+REACTOR COOLANT SYSTEM  
+PRESSURIZER 
+LIMITING CONDITION FOR OPERATION 
+3.4.10.2 The pressurizer temperature shall be limited to: 
+a. A maximum heatup of 100°F in anyone hour period, 
+b. A maximum cooldown of 200°F in anyone hour period, and 
+c. A maximum spray water temperature differential of 320°F. 
+APPLICABILITY: At all times. 
+ACTION: 
+With the pressurizer temperature limits in excess of any of the above limits, restore the 
+temperature to within the limits within 30 minutes; perform an engineering evaluation to 
+determine the effects of the out-of-limit condition on the structural integrity of the pressurizer; 
+determine that the pressurizer remains acceptable for continued operation or be in at least HOT 
+STANDBY within the next 6 hours and reduce the pressurizer pressure to less than 500 psig 
+within the following 30 hours. 
+4.4.10.2 The pressurizer temperatures shall be determined to be within the limits in accordance 
+with the Surveillance Frequency Control Program during system heatup or cooldown. The 
+spray water temperature differential shall be determined to be within the limit in accordance with 
+the Surveillance Frequency Control Program during auxiliary spray operation. 
+SALEM - UNIT 2 3/44-30 Amendment No. 282 
+
+--- Page 187 ---
+REACTOR COOLANT SYSTEM 
+ 
+OVERPRESSURE PROTECTION SYSTEMS 
+ 
+LIMITING CONDITION FOR OPERATION         
+ 
+3.4.10.3  At least one of the following overpressure protection systems shall be OPERABLE: 
+ 
+a. Two Pressurizer Overpressure Protection System relief valves (POPS) with a lift 
+setting of less than or equal to the value specified in the PTLR, or 
+ 
+b. The Reactor Coolant System (RCS) depressurized with an RCS vent of greater 
+than or equal to 3.14 square inches. 
+ 
+APPLICABILITY
+: When the temperature of one or more of the RCS cold legs is less than or 
+equal to the POPS enable temperature specified in the PTLR, except when 
+the reactor vessel head is removed. 
+ 
+ACTION: 
+ 
+a. With one POPS inoperable in MODE 4 and the temperature of one or more of the 
+RCS cold legs is less than or equal to the POPS enable temperature specified in 
+the PTLR, restore the inoperable POPS to OPERABLE status within 7 days or 
+depressurize and vent the RCS through a 3.14 square inch vent(s) within the 
+next 8 hours; maintain the RCS in a vented condition until both POPSs have 
+been restored to OPERABLE status. 
+ 
+b. With one POPS inoperable in MODES 5 or 6 with the Reactor Vessel Head 
+installed, restore the inoperable POPS to OPERABLE status within 24 hours, or 
+complete depressurization and venting of the RCS through at least a 3.14 square 
+inch vent(s) within the next 8 hours; maintain the RCS in a vented condition until 
+both POPSs have been restored to OPERABLE status. 
+ 
+c. With both POPSs inoperable, depressurize and vent the RCS through a 3.14 
+square inch vent(s) within 8 hours; maintain the RCS in a vented condition until 
+both POPSs have been restored to OPERABLE status. 
+ 
+d. In the event either the POPS or the RCS vent(s) are used to mitigate a RCS 
+pressure transient, a Special Report shall be prepared and submitted to the 
+Commission pursuant to Specification 6.9.2 within 30 days.  The report shall 
+describe the circumstances initiating the transient, the effect of th
+--- Page 188 ---
+REACTOR COOL.ANT SYSTEM 
+SURVEILLANCE REQUIREMENTS (Continued}· 
+a. Performance of a CHANNEL FUNCTIONAL TEST on the POPS actuati.on 
+channel, but excluding valve operation, within 31 days prior to entering a 
+condition in which the POPS is required OPERABLE and in accordance with the 
+Surveillance Frequency Control Program thereafter when the POPS is required 
+OPERABLE. 
+b. Perfor,nimce of a CHANNEL CALIBRATION on the POPS actuation channel in 
+accordance with the Surveillance Frequency Control Program. 
+c. Verifying the POPS isolation valve is open in accordance with the Surveillance 
+Frequency Control Program when the POPS is being used for overptessure 
+protection. · 
+d. Testing pursuant to the INSERVICE TESTING PROGRAM, 
+4.4.1.0.3.2 The RCS vent(s) shall be verified to be open in accordan.ce with the Surveillance 
+Frequency Control Pr99ramt; when the verit(s) is being used for overpressure protection. 
+Except when the vent pathway is provided with a valve which is locked, sealed, or 
+otherwise secured in the open position, then verify these valves open in accordance with 
+the Surveillance Frequency Control Program. 
+SALEM - UNIT 2 3/4 4-32 Amendment No. 300 
+--- Page 189 ---
+REACTOR COOLANT SYSTEM 
+3.4.11 DELETED 
+SALEM - UNIT 2 3/44-33 Amendment No. 281  
+--- Page 190 ---
+3/4.4.12  DELETED 
+SALEM - UNIT 2 3/4 4-34 Amendment N
+o. 326 
+--- Page 191 ---
+3/4.5 EMERGENCY CORE COOLING SYSTEMS (ECCS) 
+ACCUMULATORS 
+LIMITING CONDITION FOR OPERATION 
+3.5.1 Each reactor coolant system accumulator shall be OPERABLE with: 
+a. 	 The isolation valve open, 
+b. 	 A contained volume of between 6223 and 6500 gallons of borated water, 
+c. 	 A boron concentration of between 2200 and 2500 ppm, and 
+d. A nitrogen cover-pressure of between 595.5 and 647.5 psig. 
+APPLICABILITY: MODES 1,2 and 3*. 
+ACTION: 
+a. 	 With one accumulator inoperable, except as a result of a closed isolation valve or 
+boron concentration outside the required limits, restore the inoperable 
+accumUlator to OPERABLE status within 24 hours or be in HOT SHUTDOWN 
+within the next 12 hours. 
+b. 	 With one accumulator inoperable due to the isolation valve being closed, either 
+immediately open the isolation valve or be in HOT STANDBY within 24 hours 
+and be in HOT SHUTDOWN within the next 12 hours. 
+c. 	 With the boron concentration of one accumulator outside the required limits, 
+restore the boron concentration to within the required limits within 72 hours or be 
+in at least HOT STANDBY within the next 6 hours and reduce pressurizer 
+pressure to less than or equal to 1000 psig within the next 6 hours. 
+SURVEI LLANCE REQUIREMENTS 
+4.5.1 Each accumulator shall be demonstrated OPERABLE: 
+a. 	 In accordance with the Surveillance Frequency Control Program by: 
+1. 	 Verifying the water level and nitrogen cover-pressure in the tanks, and 
+2. 	 Verifying that each accumulator isolation valve is open. 
+* Pressurizer Pressure above 1000 psig. 
+SALEM - UNIT 2 	 3/45-1 Amendment No. 282 
+
+--- Page 192 ---
+EMERGENCY CORE COOLING SYSTEMS 
+SURVEILLANCE REQUIREMENTS (Continued) 
+b. In accordance with the Surveillance Frequency Control Program and within 
+6 hours after each solution volume increase of greater than or equal to 1 % of 
+tank volume by verifying the boron concentration of the accumulator solution. 
+c. In accordance with the Surveillance Frequency Control Program when the RCS 
+pressure is greater than 1000 psig by verifying that the power lockout switch is in 
+lockout. 
+d. 	 In accordance with the Surveillance Frequency Control Program by verifying that 
+each accumulator isolation valve opens automatically upon receipt of a safety 
+injection test signal. 
+SALEM - UNIT 2 	 3/4 5-2 Amendment No. 282 
+
+--- Page 193 ---
+EMERGENCY CORE COOLING SYSTEMS
+ECCS SUBSYSTEMS - TV , 350"F
+LIMITING CONDITION FOR OPERATION
+3.5.2 Two independent ECCS subsystems shall be OPERABLE with each subsystem
+comprised of the following injection systems:
+a. One OPERABLE centrifugal charging pump and associated flow path
+capable of taking suction from the refueling water storage tank and
+transferring suction to the residual heat removal pump discharge
+piping and;
+1. Discharging into each Reactor Coolant System (RCS) cold leg.
+b. One OPERABLE safety injection pump and associated flow path capable
+of taking suction from the refueling water storage tank and
+transferring suction to the residual heat removal pump discharge
+piping and;
+1. Discharging into each RCS cold leg, and; upon manual
+initiation,
+2. Discharging into its two associated RCS hot legs.
+c. One OPERABLE residual heat removal pump and associated residual heat
+removal heat exchanger and flow path capable of taking suction from
+the refueling water storage tank on a safety injection signal and
+transferring suction to the containment sump during the
+recirculation phase of operation and;
+1. Discharging into each RCS cold leg.
+APPLICABILITY: MODES 1, 2 and 3.
+ACTION:
+a. With one ECCS subsystem inoperable, restore the inoperable subsystem
+to OPERABLE status within 72 hours or be in HOT SHUTDOWN within the
+next 12 hours.
+b. In the event the ECCS is actuated and injects water into the Reactor
+Coolant System, a Special Report shall be prepared and submitted to
+the Commission pursuant to Specification 6.9.2 within 90 days
+describing the circumstances of the actuation and the total
+accumulated actuation cycles to date. The current value of the usage
+factor for each affected safety injection nozzle shall be provided
+in this Special Report whenever its value exceeds 0.70.
+SALEM - UNIT 2 3/4 5-3 Amendment No. 184
+SEP 1 1 1997
+--- Page 194 ---
+EMERGENCY CORE COOLING SYSTEMS
+ECCS SUBSYSTEMS - T ' 350°F
+ACTION (Continued):
+c. With both ECCS subsystems inoperable for surveillance testing,
+restore at least one subsystem to OPERABLE status within 1 hour or
+be in at least HOT STANDBY within the next 6 hours and in at least
+HOT SHUTDOWN within the following 6 hours and at least COLD SHUTDOWN
+within the subsequent 24 hours.
+SALEM - UNIT 2 3/4 5-3a Amendment No. 70
+MAY 2 1980
+--- Page 195 ---
+EMERGENCY CORE COOLING SYSTEMS  
+4.5.2 	 Each ECCS subsystem shall be demonstrated OPERABLE: 
+a. 	 In accordance with the Surveillance Frequency Control Program by: 
+1. 	 Verifying that the following valves are in the indicated positions with 
+power to the valve operators removed: 
+Valve Number Valve Function Valve Position 
+a. 2 SJ 69 a. RHR pump suction a. open 
+b. 2 SJ 30 b. SI pump suction b. open 
+c. 21 SJ 40 c. SI discharge to hot legs c. closed 
+d. 22 SJ 40 d. SI discharge to hot legs d. closed 
+e. 2 RH 26 e. RHR discharge to hot legs e. closed 
+f. 21 SJ 49 f. RHR discharge to cold legs f. open 
+g. 22 SJ 49 g. RHR discharge to cold legs g. open 
+h. 2 CS 14# h. Spray additive tank discharge h. open 
+i. 2 SJ 135 i. SI discharge to cold legs i. open 
+j. 2 SJ 67 j. SI recirc. line isolation j. open 
+k. 2 SJ 68 k. SI recirc. line isolation k. open 
+2. 	 Verifying that the following valves are in the indicated positions: 
+Valve Number Valve Function Valve Position 
+a. 21 	RH 19 a. RHR crosstie valve a. Open 
+b. 22 RH 19 b. RHR crosstie valve b. Open 
+b. 	 In accordance with the Surveillance Frequency Control Program by: 
+1. 	 Verifying that each valve (manual, power operated or automatic) in the 
+flow path that is not locked, sealed, or otherwise secured in position, is in 
+its correct position. 
+2. 	 Verifying that the ECCS piping is full of water by venting the ECCS pump 
+casings and accessible discharge piping high points. 
+# 	 If inoperable, the applicable Technical Specification is 3.6.2.2. 
+SALEM - UNIT 2 3/4 5-4 Amendment No. 282 
+Corrected by letter dated 
+--- Page 196 ---
+EMERGENCY CORE COOLING SYSTEMS 
+SURVEILLANCE REQUIREMENTS (Continued) 
+c. 	 By a visual inspection which verifies that no loose debris (rags, trash, clothing, 
+etc.) is present in the containment which could be transported to the containment 
+sump and cause restriction of the pump suctions during LOCA conditions. This 
+visual inspection shall be performed: 
+1. 	 For all accessible areas of the containment prior to establishing 
+CONTAINMENT INTEGRITY, and 
+2. 	 In accordance with the Surveillance Frequency Control Program the 
+areas affected within containment by containment entry and during the 
+final entry when CONTAINMENT INTEGRITY is established. 
+d. 	 In accordance with the Surveillance Frequency Control Program by: 
+1. 	 A visual inspection of the containment sump and verifying that the 
+subsystem suction inlets are not restricted by debris and that the sump 
+components (trash racks, screens, etc.) show no evidence of structural 
+distress or corrosion. 
+e. 	 In accordance with the Surveillance Frequency Control Program, during 
+shutdown, by: 
+1. 	 Verifying that each automatic valve in the flow path actuates to its correct 
+position on a safety injection test signal. 
+2. 	 Verifying that each of the following pumps start automatically upon receipt 
+of a safety injection test signal: 
+a) Centrifugal charging pump 
+b) Safety injection pump 
+c) Residual heat removal pump 
+SALEM UNIT 2 	 3/4 5-5 Amendment No. 282w 
+
+--- Page 197 ---
+· EMERGENCY CORE COOLING SYSTEMS 
+SURVEILI.A~OUIREMENTS lCMtinued) 
+f. By verifying that each of the following pumps develops the indicated Total 
+Dynamic Head (TDH) when tested at the test flow point pursuant to the 
+INSERVICE TESTING PROGRAM: 
+1. Centrifugal Charging pump 2 2338 psi TDH 
+2. Safety lnj~ction pujnp 2 1369 psi TOH 
+3. Residual Heat Removal pump ~ 165 psi TOH 
+g. By verifying the correct position of each of the following ECCS throttle valves: 
+1. Within 4 hours following completion of each valve stroking operation or 
+maintenance on the valve when the ECCS subsystems are required to be 
+OPERABLE. 
+2. In accord,mce w:ith the Surveillance Frequency Control Program. 
+HPSJ System 
+Valve Number 
+21 SJ 16 
+22 SJ 16 
+23 SJ 16 
+24 SJ 16 
+LPSI System 
+Valve Number 
+21 SJ 138 
+22 SJ 138 
+23.SJ 138 
+24 SJ 138 
+21 s~ 143 
+22 SJ 143 
+23 SJ 143 
+24 $J 14.3 
+h. By performing a flow balance test, during shutdown, following completion of 
+modifications to the ECCS subsystems that alter the subsystem flow 
+characterlstics and verifying that: 
+1. For Safety Injection pumps, with a single p\Jmp running: 
+SALEM - UNIT 2 
+a) The sum of the injection ·1ine fiow rates, e)(Cluding the highest flow 
+rate, is 2 453 gpm, and 
+b) The total flow rate through all four injection lines is s 647 gpm, and 
+c) The diff~renc-e bet\Yeen any- pair of .injection !ine f!O'-.. , rates ;s 
+s 12.0 gpm, and 
+d) The total pump flow rate is s 664 gpm in the cold leg alignment, 
+and 
+e) The total pump flow rate is s 654 gpm in the hot leg alignment. 
+3/4 5-6 Amendment No. 300 
+7 
+--- Page 198 ---
+EMERGENCY CORE COOLING SYSTEMS
+SURVEILLANCE REQUIREMENTS (Continued)
+2. For centrifugal charging pump, with a single pump running:
+a) The sum of the injection line flow rates, excluding the
+highest flow rate, is 2 306 gpm, and
+b) The total flow rate through all four injection lines is
+S 444 gpm, and
+c) The difference between any pair of injection line flow
+rates is - 10.5 gpm, and
+d) The total punp flow rate is S 554 gpm.
+I
+i. The automatic interlock function of the PER System shall be verified
+within the seven (7) days prior to placing the RER System in service
+for cooling of the Reactor Coolant System. This shall be done by
+verifying with a test signal corresponding to a reactor coolant
+pressure of 375 psig or greater, that the 2RHl and 2RE2 valves
+cannot be opened.
+SALEM - UNIT 2 3/4 5-6a Amendment No. UR, 189
+I,.AR 1 £ 1S83
+--- Page 199 ---
+EMERGENCY CORE COOLING SYSTEMS 
+ 
+ECCS SUBSYSTEMS - Tavg < 350°F 
+ 
+LIMITING CONDITION FOR OPERATION         
+ 
+3.5.3  As a minimum, one ECCS subsystem comprised of the following shall be OPERABLE: 
+ 
+a. One OPERABLE centrifugal charging pump# and associated flow path capable of 
+taking suction from the refueling water storage tank and transferring suction to 
+the residual heat removal pump discharge piping and; 
+ 
+1. Discharging into each Reactor Coolant System (RCS) cold leg. 
+ 
+b. One OPERABLE residual heat removal pump and associated residual heat 
+removal heat exchanger and flow path capable of taking suction from the 
+refueling water storage tank on a safety injection signal and transferring suction 
+to the containment sump during the recirculation phase of operation and; 
+ 
+1. Discharging into each RCS cold leg, and; upon manual initiation, 
+ 
+2. Discharging into two RCS hot legs. 
+ 
+APPLICABILITY
+: MODE 4. 
+ 
+ACTION
+: 
+ 
+a. With no ECCS subsystem OPERABLE because of the inoperability of either the 
+centrifugal charging pump or the flow path from the refueling water storage tank, 
+restore at least one ECCS subsystem to OPERABLE status within 1 hour or be in 
+COLD SHUTDOWN within the next 20 hours. 
+ 
+b. With no ECCS subsystem OPERABLE because of the inoperability of either the 
+residual heat removal heat exchanger or residual heat removal pump, restore at 
+least one ECCS subsystem to OPERABLE status or maintain the Reactor 
+Coolant System T
+avg less than 350°F by use of alternate heat removal methods. 
+ 
+c. In the event the ECCS is actuated and injects water into the Reactor Coolant 
+System, a Special Report shall be prepared and submitted to the Commission 
+pursuant to Specification 6.9.2 within 90 days describing the circumstances of 
+the actuation and the total accumulated actuation cycles to date.  The current 
+value of the usage factor for each affected safety injection nozzle shall be 
+provided in this Special Report whenever its value exceeds 0.70. 
+ 
+
+--- Page 200 ---
+EMERGENCY CORE COOLING SYSTEMS 
+ 
+ECCS SUBSYSTEMS - Tavg < 350°F 
+ 
+SURVEILLANCE REQUIREMENTS          
+ 
+4.5.3.1  The ECCS subsystem shall be demonstrated OPERABLE per applicable Surveillance 
+Requirements of 4.5.2. 
+ 
+4.5.3.2  All safety injection pumps and centrifugal charging pumps, except the above required 
+OPERABLE pump, shall be demonstrated to be inoperable
+ in accordance with the Surveillance 
+Frequency Control Program while in MODE 4 and the temperature of one or more of the RCS 
+cold legs is less than or equal to the POPS enable temperature specified in the PTLR, MODE 5, 
+or MODE 6 when the head is on the reactor vessel by either of the following methods: 
+ 
+a. By verifying that the motor circuit breakers have been removed from their 
+electrical power supply circuits or, 
+ 
+b. By verifying that the pump is in a recirculation flow path and that two independent 
+means of preventing RCS injection are utilized. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SALEM - UNIT 2 3/4 5-8 Amendment No. 328 
+
+===== TS 3.6.1.3 Air Locks (pages 203-209) =====
+--- Page 203 ---
+3/4.6 CONTAINMENT SYSTEMS  
+3/4.6.1 PRIMARY CONTAINMENT 
+CONTAINMENT INTEGRITY 
+LIMITING CONDITION FOR OPERATION 
+3.6.1.1 Primary CONTAINMENT INTEGRITY shall be maintained.  
+APPLICABILITY: MODES 1, 2, 3 and 4.  
+ACTION:  
+Without primary CONTAINMENT INTEGRITY, restore CONTAINMENT INTEGRITY within  
+one hour or be in at least HOT STANDBY within the next 6 hours and in COLD SHUTDOWN 
+within the following 30 hours. 
+4.6.1.1 Primary CONTAINMENT INTEGRITY shall be demonstrated: 
+a1. 	 In accordance with the Surveillance Frequency Control Program by verifying that 
+each containment manual valve or blind flange that is located outside 
+containment and required to be closed during accident conditions is closed, 
+except for containment isolation valves that are open under administrative 
+controls. Valves and blind flanges in high radiation areas may be verified by use 
+of administrative controls. 
+a2. 	 Prior to entering Mode 4 from Mode 5 if not performed within the last 92 days by 
+verifying that each containment manual valve or blind flange that is located inside 
+containment and required to be closed during accident conditions is closed, 
+except for containment isolation valves that are open under administrative 
+controls. Valves and blind flanges in high radiation areas may be verified by use 
+of administrative controls. 
+b. 	 By verifying that each containment air lock is OPERABLE per Specification 
+3.6.1.3. 
+c. 	 After each closing of a penetration subject to Type B testing, except containment 
+air locks, if opened following a Type A or B test, by leak rate testing in 
+accordance with the Containment Leakage Rate Testing Program. 
+d. 	 In accordance with the Surveillance Frequency Control Program by verifying that 
+the surveillance requirements of 4.6.2.3.a are met for penetrations associated 
+with the containment fan coil units. 
+e. 	 In accordance with the Surveillance Frequency Control Program by verifying that 
+the surveillance requirements of 4.6.2.3.d are met f
+--- Page 204 ---
+CONTAINMENT SYSTEMS
+CONTAINMENT LEAKAGE
+LIMITING CONDITION FOR OPERATION
+3.6.1.2 Containment leakage rates shall be limited to:
+a. An overall integrated leakage rate (Type A test) in accordance with
+the Containment Leakage Rate Testing Program.
+b. A combined leakage rate in accordance with the Containment Leakage
+Rate Testing Program for all penetrations and valves subject to Type
+B and C tests.
+APPLICABILITY: MODES 1, 2, 3 and 4.
+ACTION:
+With either (a) the measured overall integrated containment leakage rate (Type
+A test) not in accordance with the Containment Leakage Rate Testing Program or
+(b) with the measured combined leakage rate for all penetrations and valves
+subject to Types B and C tests not in accordance with the Containment Leakage
+Rate Testing Program, restore the leakage rate(s) to within the limit(s) prior
+to increasing the Reactor Coolant System temperature above 2000F.
+SURVEILLANCE REQUIREMENTS
+4.6.1.2 The containment leakage rates shall be demonstrated as follows:
+a. Type A tests shall be in accordance with the Containment Leakage
+Rate Testing Program.
+b. Type B and C tests shall be conducted in accordance with the
+Containment Leakage Rate Testing Program.
+c. Air locks shall be tested and demonstrated OPERABLE in accordance
+with the Containment Leakage Rate Testing Program.
+I'
+I
+I
+I
+I
+I
+SALEM - UNIT 2 3/4 6-2 Amendment No. 0 , 17Z , 1 88
+FEB 2 7 1998
+--- Page 205 ---
+PAGE 3/4 6-3 IS INTENTIONALLY BLANK
+SALEM - UNIT 2 3/4 6-3 Amendment No. 166
+[J'UL 1 1 1906
+--- Page 206 ---
+- -
+CONTAINMENT SYSTEMS
+CONTAINMENT AIR LOCKS
+LIMITING CONDITION FOR OPERATION
+3.6.1.3 Each containment air lock shall be OPERABLE with:
+a. Both doors closed except when the air lock is being used for normal
+transit entry and exit through the containment, then at least one air
+lock door shall be closed, and:
+b. An overall air lock leakage rate in accordance with the Containment
+Leakage Rate Testing Program.
+APPLICABILITY: MODES 1, 2, 3, and.4
+ACTION:
+Notes
+(1) Entry and exit is permissible to perform repairs on the affected air
+lock components.
+(2) Separate condition entry is allowed for each air lock.
+(3) Required ACTIONS a.1, a.2, and a.3 are not applicable if both doors
+in the same air lock are inoperable and condition c. is entered.
+(4) Required ACTIONS b.1, b.2, and b.3 are not applicable if both doors
+in the same air lock are inoperable and condition c. is entered.
+(5) Enter applicable Conditions and required Actions of LCO 3.6.1,
+"Primary Containment," when air lock leakage results in exceeding
+the overall containment leakage rate.
+a. One or more containment air locks with one containment airlock door
+inoperable:
+1. Verify the OPERABLE door is closed in the affected air lock within 1
+hour, and:
+2. Lock the OPERABLE door closed in the affected air lock within 24 hours,
+and:
+3. Verify the OPERABLE door is locked closed in the affected air lock once
+per 31 days. Entry and exit is permissible for 7 days (from initial
+LCO entry) under administrative controls if one door is inoperable in
+each air lock. Air lock doors in high radiation areas may be verified
+locked closed by administrative means.
+b. One or more containment air locks with only the containment air lock
+interlock mechanism inoperable.
+1. Verify an OPERABLE door is closed in the affected air lock within 1
+hour, and:
+2. Lock an OPERABLE door closed in the affected air lock within 24 hours,
+and:
+3. Verify an OPERABLE door is locked closed in the affected air lock once
+per 31 days. Entry and exit of contain
+--- Page 207 ---
+CONTAINMENT SYSTEMS 
+CONTAINMENT AIR LOCKS 
+LIMITING CONDITION FOR OPERATIONS (Continued) 
+c. 	 One or more containment air locks inoperable for reasons other than condition a. 
+or b. 
+1. 	 Immediately initiate action to evaluate overall containment leakage per 
+LCO 3.6.1, and: 
+2. 	 Verify that at least one door is closed in the affected air lock within 1 hour, 
+and: 
+3. 	 Restore the air lock to OPERABLE status within 24 hours. 
+d. 	 If the ACTIONS and associated completion times of a., b., or c. cannot be met, 
+be in Hot Standby within 6 hours and in Cold Shutdown within the following 
+30 hours. 
+SURVEILLANCE REQUIREMENTS 
+4.6.1.3 Each containment air lock shall be demonstrated OPERABLE: 
+a. 	 By verifying seal leakage rate in accordance with the Containment Leakage Rate 
+Testing program. 
+b. 	 By conducting an overall air lock leakage test in accordance with the 
+Containment Leakage Rate Testing Program. 
+c. 	 In accordance with the Surveillance Frequency Control Program by verifying that 
+only one door in each air lock can be opened at a time. 
+SALEM - UNIT 2 	 3/46-5 Amendment No. 282 
+
+--- Page 208 ---
+CONTAINMENT SYSTEMS  
+INTERNAL PRESSURE  
+3.6.1.4 Primary containment internal pressure shall be maintained between -1.5 and +0.3 psig.  
+APPLICABILITY: MODES 1, 2, 3 and 4.  
+ACTION:  
+With the containment internal pressure outside of the limits above, restore the internal pressure  
+to within the limits within 1 hour or be in at least HOT STANDBY within the next 6 hours and in 
+COLD SHUTDOWN within the following 30 hours. 
+4.6.1.4 The primary containment internal pressure shall be determined to be within the limits in 
+accordance with the Surveillance Frequency Control Program. 
+SALEM - UNIT 2 3/4 6-6 Amendment No. 282 
+
+--- Page 209 ---
+CONTAINMENT SYSTEMS  
+AIR TEMPERATURE 
+LIMITING CONDITION FOR OPERATION 
+3.6.1.5 Primary containment average air temperature shall not exceed 120°F.  
+APPLICABILITY: MODES 1, 2, 3 and 4.  
+ACTION:  
+With the containment average air temperature greater than 120°F, reduce the average air  
+temperature to within the limit within 8 hours, or be in at least HOT STANDBY within the next 
+6 hours and in COLD SHUTDOWN within the following 30 hours. 
+4.6.1.5 Verify containment average air temperature is within limit in accordance with the 
+Surveillance Frequency Control Program. 
+SALEM - UNIT 2 3/4 6-7 Amendment No. 282 
+
+
+===== TS 3.6.1.5 Air Temp (pages 209-210) =====
+--- Page 209 ---
+CONTAINMENT SYSTEMS  
+AIR TEMPERATURE 
+LIMITING CONDITION FOR OPERATION 
+3.6.1.5 Primary containment average air temperature shall not exceed 120°F.  
+APPLICABILITY: MODES 1, 2, 3 and 4.  
+ACTION:  
+With the containment average air temperature greater than 120°F, reduce the average air  
+temperature to within the limit within 8 hours, or be in at least HOT STANDBY within the next 
+6 hours and in COLD SHUTDOWN within the following 30 hours. 
+4.6.1.5 Verify containment average air temperature is within limit in accordance with the 
+Surveillance Frequency Control Program. 
+SALEM - UNIT 2 3/4 6-7 Amendment No. 282 
+
+--- Page 210 ---
+CONTAINMENT SYSTEMS
+CONTAINMENT STRUCTURAL INTEGRITY
+LIMITING CONDITIONS FOR OPERATION
+3.6.1.6 The structural integrity of the containment shall be maintained
+at a level consistent with the acceptance criteria in Specification
+4.6.1.6.1.
+APPLICABILITY: MODES 1, 2, 3 and 4.
+ACTION:
+With the structural integrity of the containment not conforming to the
+above requirements, restore the structural integrity to within the limits
+within 24 hours or be in at least HOT STANDBY within the next 6 hours and
+in COLD SHUTDOWN within the following 30 hours.
+I
+SURVEILLANCE REQUIREMENTS
+4.6.1.6.1 Containment Surfaces The structural integrity of the exposed
+accessible interior and exterior surfaces of the containment, including
+the liner plate, shall be determined in accordance with the Containment
+Leakage Rate Testing Program
+4.6.1.6.2 Reports Any abnormal degradation of the containment structure
+KU detected during the above required inspections shall be evaluated for
+reportability pursuant to 10CFR50.72 and 10CFR50.73. The evaluation shall
+be documented and shall include a description of the condition of the
+concrete, the inspection procedure, the tolerances on cracking, and the
+corrective action taken.
+SALEM - UNIT 2 3/4 6-8 Amendment No.206
+NOV 0 2 1339
+
+===== TS 3.6.1.6 Structural Integrity (pages 210-211) =====
+--- Page 210 ---
+CONTAINMENT SYSTEMS
+CONTAINMENT STRUCTURAL INTEGRITY
+LIMITING CONDITIONS FOR OPERATION
+3.6.1.6 The structural integrity of the containment shall be maintained
+at a level consistent with the acceptance criteria in Specification
+4.6.1.6.1.
+APPLICABILITY: MODES 1, 2, 3 and 4.
+ACTION:
+With the structural integrity of the containment not conforming to the
+above requirements, restore the structural integrity to within the limits
+within 24 hours or be in at least HOT STANDBY within the next 6 hours and
+in COLD SHUTDOWN within the following 30 hours.
+I
+SURVEILLANCE REQUIREMENTS
+4.6.1.6.1 Containment Surfaces The structural integrity of the exposed
+accessible interior and exterior surfaces of the containment, including
+the liner plate, shall be determined in accordance with the Containment
+Leakage Rate Testing Program
+4.6.1.6.2 Reports Any abnormal degradation of the containment structure
+KU detected during the above required inspections shall be evaluated for
+reportability pursuant to 10CFR50.72 and 10CFR50.73. The evaluation shall
+be documented and shall include a description of the condition of the
+concrete, the inspection procedure, the tolerances on cracking, and the
+corrective action taken.
+SALEM - UNIT 2 3/4 6-8 Amendment No.206
+NOV 0 2 1339
+--- Page 211 ---
+This page left intentionally blank.
+Note that the elements of TS 3.6.1.7 and 4.6.1.7 were relocated to TS 3/4.6.3.
+SALEM - UNIT 2 3/4 6-9 Amendment No. 260
+
+
+===== TS 3.7.1.3 AFW Storage Tank (pages 226-227) =====
+--- Page 226 ---
+PLANT SYSTEMS 
+ 
+AUXILIARY FEED STORAGE TANK 
+ 
+LIMITING CONDITION FOR OPERATION         
+ 
+3.7.1.3  The auxiliary feed storage tank (AFST) shall be OPERABLE with a contained volume of 
+at least 200,000 gallons of water. 
+ 
+APPLICABILITY: MODES 1, 2 and 3. 
+ 
+ACTION: 
+ 
+With the auxiliary feed storage tank inoperable, within 4 hours either: 
+ 
+a. Restore the AFST to OPERABLE status or be in HOT SHUTDOWN within the 
+next 12 hours, or 
+ 
+b. Demonstrate the OPERABILITY of a demineralized water or a fire 
+protection/domestic water storage tank as a backup supply to the auxiliary 
+feedwater pumps and restore the auxiliary feed storage tank to OPERABLE 
+status within 7 days or be in HOT SHUTDOWN within the next 12 hours. 
+ 
+ 
+SURVEILLANCE REQUIREMENTS          
+ 
+4.7.1.3.1  The auxiliary feed storage tank shall be demonstrated OPERABLE in accordance with 
+the Surveillance Frequency Control Program by verifying the water level is within its limits when 
+the tank is the supply source for the auxiliary feedwater pumps. 
+ 
+4.7.1.3.2  A demineralized water storage tank shall be demonstrated OPERABLE in accordance 
+with the Surveillance Frequency Control Program by verifying the tank contains greater than or 
+equal to 200,000 gallons of water and by verifying proper alignment of valves for taking suction 
+from this tank when it is the supply source for the auxiliary feedwater pumps. 
+ 
+4.7.1.3.3  A fire protection/domestic water storage tank shall be demonstrated OPERABLE in 
+accordance with the Surveillance Frequency Control Program by verifying the tank contains 
+greater than or equal to 200,000 gallons of water and by verifying proper alignment of valves for 
+taking suction from this tank when it is the supply source for the auxiliary feedwater pumps. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SALEM - UNIT 2 3/4 7-7 Amendment No. 324 
+--- Page 227 ---
+film
+PLANT SYSTEMS
+ACTIVITY
+LIMITING CONDITION FOR OPERATION . .
+3.7.1.4 The specific activity of the secondary coolant system
+than or equal to 0.10 pCi/gram DOSE EQUIVALENT I-131.
+shall be-less
+APPLICABILITY: MODES 1, 2, 3, and 4.
+ACTION:
+With the specific activity~of the.secondary coolant system greater than .
+0.10 pCi/gram DOSE EQUIVALENT I-131, be in at least HOT STANDBY within 6 hours
+and in COLD SHUTDOWN within the following 30 hours.
+SURVEILLANCE REQUIREMENTS I1;
+4.7.1.4 The specific activity of the secondary coolant system shall be deter-
+mined to be within the limit by performance of the sampling and analysis
+program of Table..4.7-2.
+- ..
+SALEM - UNIT 2 3/4 7-8
+-. .. .
+
+===== TS 3.7.1.4 Secondary Activity (pages 227-229) =====
+--- Page 227 ---
+film
+PLANT SYSTEMS
+ACTIVITY
+LIMITING CONDITION FOR OPERATION . .
+3.7.1.4 The specific activity of the secondary coolant system
+than or equal to 0.10 pCi/gram DOSE EQUIVALENT I-131.
+shall be-less
+APPLICABILITY: MODES 1, 2, 3, and 4.
+ACTION:
+With the specific activity~of the.secondary coolant system greater than .
+0.10 pCi/gram DOSE EQUIVALENT I-131, be in at least HOT STANDBY within 6 hours
+and in COLD SHUTDOWN within the following 30 hours.
+SURVEILLANCE REQUIREMENTS I1;
+4.7.1.4 The specific activity of the secondary coolant system shall be deter-
+mined to be within the limit by performance of the sampling and analysis
+program of Table..4.7-2.
+- ..
+SALEM - UNIT 2 3/4 7-8
+-. .. .
+--- Page 228 ---
+TABLE 4.7-2  
+SECONDARY COOLANT SYSTEM SPECIFIC ACTIVITY  
+SAMPLE AND ANALYSIS PROGRAM  
+TYPE OF MEASUREMENT 
+AND ANALYSIS SAIVIPLE AND ANALYSIS FREQUENCY 
+1. 	 Gross Activity Determination In accordance with the Surveillance Frequency 
+Control Program 
+2. Isotopic Analysis for DOSE 	 a. In accordance with the Surveillance Frequency 
+EQUIVALENT 1-131 Concentration Control Program, whenever the gross activity 
+determination indicates iodine concentrations 
+greater than 10% of the allowable limit. 
+b. 	 In accordance with the Surveillance Frequency 
+Control Program, whenever the gross activity 
+determination indicates iodine concentrations 
+below 10% of the allowable limit. 
+SALEM - UNIT 2 	 3/4 7-9 Amendment No. 282 
+
+--- Page 229 ---
+PLANT SYSTEMS 
+MAIN STEAM LINE ISOLATION VALVES 
+LIMITING CONDITION FOR OPERATION 
+3.7.1.5 Each main steam line isolation valve shall be OPERABLE. 
+APPLICABILITY: MODE 1 
+MODES 2 and 3 except when all MS IVs are closed. 
+ACTION: 
+MODE 1 - With one main steam line isolation valve inoperable, POWER OPERATION may 
+continue provided the inoperable valve is either restored to OPERABLE status or 
+closed within 4 hours; 
+Otherwise, be in MODE 2 within the next 6 hours. 
+MODES 2 - With one or more main steam line isolation valve(s) inoperable, subsequent 
+and 3 operation in MODES 2 or 3 may proceed provided; 
+a. The isolation valve(s) is (are) maintained closed, and 
+b. The isolation valve(s) is (are) verified closed once per 7 days. 
+Otherwise, be in MODE 3, HOT STANDBY, within the next 6 hours, and 
+MODE 4, HOT SHUTDOWN, within the following 6 hours. 
+SURVEILLANCE REQUIREMENTS 
+4. 7 .1.5 Each main steam line isolation valve shall be demonstrated OPERABLE by verifying full 
+closure within 5 seconds when tested pursuant to the INSERVICE TESTING PROGRAM. The 
+provisions of Specification 4.0.4 are not applicable. 
+SALEM - UNIT 2 3/47-10 Amendment No. 310 
+
+===== TS 3.7.1.5 FW related (pages 229-233) =====
+--- Page 229 ---
+PLANT SYSTEMS 
+MAIN STEAM LINE ISOLATION VALVES 
+LIMITING CONDITION FOR OPERATION 
+3.7.1.5 Each main steam line isolation valve shall be OPERABLE. 
+APPLICABILITY: MODE 1 
+MODES 2 and 3 except when all MS IVs are closed. 
+ACTION: 
+MODE 1 - With one main steam line isolation valve inoperable, POWER OPERATION may 
+continue provided the inoperable valve is either restored to OPERABLE status or 
+closed within 4 hours; 
+Otherwise, be in MODE 2 within the next 6 hours. 
+MODES 2 - With one or more main steam line isolation valve(s) inoperable, subsequent 
+and 3 operation in MODES 2 or 3 may proceed provided; 
+a. The isolation valve(s) is (are) maintained closed, and 
+b. The isolation valve(s) is (are) verified closed once per 7 days. 
+Otherwise, be in MODE 3, HOT STANDBY, within the next 6 hours, and 
+MODE 4, HOT SHUTDOWN, within the following 6 hours. 
+SURVEILLANCE REQUIREMENTS 
+4. 7 .1.5 Each main steam line isolation valve shall be demonstrated OPERABLE by verifying full 
+closure within 5 seconds when tested pursuant to the INSERVICE TESTING PROGRAM. The 
+provisions of Specification 4.0.4 are not applicable. 
+SALEM - UNIT 2 3/47-10 Amendment No. 310 
+--- Page 230 ---
+PLANT SYSTEMS  
+3/4.7.2 STEAM GENERATOR PRESSURE/TEMPERATURE LIMITATION 
+LIMITING CONDITION FOR OPERATION 
+3.7.2 The temperatures of both the primary and secondary coolants in the steam generators 
+shall be greater than 70°F when the pressure of either coolant in the steam generator is greater 
+than 200 psig. 
+APPLICABILITY: At all times.  
+ACTION:  
+With the requirements of the above specification not satisfied:  
+a. Reduce the steam generator pressure of the applicable side to less than or equal 
+to 200 psig within 30 minutes, and 
+b. Perform an engineering evaluation to determine the effect of the 
+overpressurization on the structural integrity of the steam generator. Determine 
+that the steam generator remains acceptable for continued operation prior to 
+increasing its temperatures above 200°F. 
+4,7.2 The pressure in each side of the steam generator shall be determined to be less than 
+200 psig in accordance with the Surveillance Frequency Control Program when the temperature 
+of either the primary or secondary coolant is less than 70°F. 
+SALEM- UNIT 2 3/4 7-11 Amendment No. 282 
+
+--- Page 231 ---
+PLANT SYSTEMS  
+3/4.7.3 COMPONENT COOLING WATER SYSTEM  
+3.7.3 At least two independent component cooling water loops shall be OPERABLE.  
+APPLICABILITY: MODES 1, 2, 3 and 4.  
+ACTION:  
+With only one component cooling water loop OPERABLE, restore at least two loops to  
+OPERABLE status within 72 hours or be in at least HOT STANDBY within the next 6 hours and 
+in COLD SHUTDOWN within the following 30 hours. * 
+4.7.3 At least two component cooling water loops shall be demonstrated OPERABLE: 
+a. 	 In accordance with the Surveillance Frequency Control Program by verifying that 
+each valve (manual, power operated or automatic) servicing safety related 
+equipment that is not locked, sealed, or otherwise secured in position, is in its 
+correct position. 
+* 	 The time for completion of repairs to number 22 component cooling water heat 
+exchanger shall be extended from 0700 hours on November 23, 1982 to 1900 hours on 
+November 23, 1982. If repairs are not completed by that time, the unit shall be placed in 
+HOT STANDBY within the next 6 hours and in COLD SHUTDOWN within the following 
+30 hours. 
+SALEM - UNIT 2 	 3/47-12 Amendment No. 282 
+
+--- Page 232 ---
+PLANT SYSTEMS  
+3/4.7.4 SERVICE WATER SYSTEM 
+LIMITING CONDITION FOR OPERATION 
+3.7.4 At least two independent service water loops shall be OPERABLE.  
+APPLICABILITY: MODES 1, 2, 3 and 4.  
+ACTION:  
+With only one service water loop OPERABLE, restore at least two loops to OPERABLE status  
+within 72 hours or be in at least HOT STANDBY within the next 6 hours and in COLD 
+SHUTDOWN within the following 30 hours. 
+SURVEILLANCE REQUIREMENTS 
+4.7.4 At least two service water loops shall be demonstrated OPERABLE: 
+a. In accordance with the Surveillance Frequency Control Program by verifying that 
+each valve (manual, power operated or automatic) servicing safety related 
+equipment that is not locked, sealed, or otherwise secured in position, is in its 
+correct position. 
+b. In accordance with the Surveillance Frequency Control Program during 
+shutdown, by verifying that each automatic valve servicing safety related 
+equipment actuates to its correct position on Safeguards Initiation signal. 
+SALEM - UNIT 2 3/47-13 Amendment No. 282 
+
+--- Page 233 ---
+PLANT SYSTEMS  
+3/4.7.5 FLOOD PROTECTION 
+LIMITING CONDITION FOR OPERATION 
+3.7.5 Flood protection shall be provided for all safety related systems, components and 
+structures when the water level of the Delaware River exceeds 10.5' Mean Sea Level USGS 
+datum, at the service water intake structure. 
+APPLICABILITY: At all times. 
+ACTION: 
+a. With the water level at the service water intake structure above elevation 10.5' 
+Mean Sea Level USGS datum, close all watertight doors within 2 hours. 
+b. With the water level at the service water intake structure above elevation 11.5' 
+Mean Sea Level USGS datum, be in at least HOT STANDBY within 6 hours and 
+in COLD SHUTDOWN within the following 30 hours. 
+SURVEILLANCE REQUIREMENTS 
+4.7.5 The water level at the service water intake structure shall be determined to be within the 
+limits by: 
+a. 	 Measurement in accordance with the Surveillance Frequency Control Program 
+when the water level is below elevation 10.5' Mean Sea Level USGS datum, and 
+b. 	 Measurement in accordance with the Surveillance Frequency Control Program 
+when the water level is equal to or above elevation 10.5' Mean Sea Level USGS 
+datum. 
+SALEM - UNIT 2 	 3/47-14 Amendment No. 282 
+
+
+===== TS 3.7.5 Flood Protection (pages 233-234) =====
+--- Page 233 ---
+PLANT SYSTEMS  
+3/4.7.5 FLOOD PROTECTION 
+LIMITING CONDITION FOR OPERATION 
+3.7.5 Flood protection shall be provided for all safety related systems, components and 
+structures when the water level of the Delaware River exceeds 10.5' Mean Sea Level USGS 
+datum, at the service water intake structure. 
+APPLICABILITY: At all times. 
+ACTION: 
+a. With the water level at the service water intake structure above elevation 10.5' 
+Mean Sea Level USGS datum, close all watertight doors within 2 hours. 
+b. With the water level at the service water intake structure above elevation 11.5' 
+Mean Sea Level USGS datum, be in at least HOT STANDBY within 6 hours and 
+in COLD SHUTDOWN within the following 30 hours. 
+SURVEILLANCE REQUIREMENTS 
+4.7.5 The water level at the service water intake structure shall be determined to be within the 
+limits by: 
+a. 	 Measurement in accordance with the Surveillance Frequency Control Program 
+when the water level is below elevation 10.5' Mean Sea Level USGS datum, and 
+b. 	 Measurement in accordance with the Surveillance Frequency Control Program 
+when the water level is equal to or above elevation 10.5' Mean Sea Level USGS 
+datum. 
+SALEM - UNIT 2 	 3/47-14 Amendment No. 282 
+
+--- Page 234 ---
+PLANT SYSTEMS 
+3/4.7.6 CONTROL ROOM EMERGENCY AIR CONDITIONING SYSTEM 
+LIMITING CONDITION FOR OPERATION 
+3.7.6 The common control room emergency air conditioning system (CREACS)* shall be 
+OPERABLE with: 
+a. Two independent air conditioning filtration trains (one from each unit) consisting 
+of: 
+1 . Two fans and associated outlet dampers, 
+2. One cooling coil, 
+3. One charcoal adsorber and HEPA filter array, 
+4. Return air isolation damper. 
+b. All other automatic dampers required for operation in the pressurization or 
+recirculation modes. 
+c. The control room envelope intact. 
+NOTE: The control room envelope (CRE) boundary may be opened intermittently under 
+administrative control. 
+APPLICABILITY: ALL MODES and during movement of irradiated fuel assemblies. 
+ACTION: MODES 1, 2, 3, and 4 
+* 
+** 
+a. 
+b. 
+c. 
+With one filtration train inoperable, align CREACS for single filtration train 
+operation** within 4 hours, and restore the inoperable filtration train to 
+OPERABLE status within 30 days or be in at least HOT STANDBY within the 
+next 6 hours and in COLD SHUTDOWN within the following 30 hours. 
+With CREACS aligned for single filtration train operation and with one of the two 
+remaining fans or associated outlet damper inoperable, restore the inoperable 
+fan or damper to OPERABLE status within 72 hours or be in at least HOT 
+STANDBY within the next 6 hours and in COLD SHUTDOWN within the following 
+30 hours. 
+With the Control Room Envelope boundary inoperable: 
+1. Immediately, initiate action to implement mitigating actions, and 
+2. Within 24 hours, verify mitigating actions ensure CRE occupant 
+exposures to radiological, chemical, and smoke hazards will not exceed 
+limits, and 
+3. Within 90 days, restore the Control Room Envelope boundary to 
+OPERABLE status, or be in at least HOT STANDBY within the next 
+6 hours and in COLD SHUTDOWN within the following 30 hours. 
+The CREACS is a shared system with Salem Unit 1 
+Alignment only permitted if the Unit with the oper
+
+===== TS 3.7.6 CR Emergency Air (pages 234-238) =====
+--- Page 234 ---
+PLANT SYSTEMS 
+3/4.7.6 CONTROL ROOM EMERGENCY AIR CONDITIONING SYSTEM 
+LIMITING CONDITION FOR OPERATION 
+3.7.6 The common control room emergency air conditioning system (CREACS)* shall be 
+OPERABLE with: 
+a. Two independent air conditioning filtration trains (one from each unit) consisting 
+of: 
+1 . Two fans and associated outlet dampers, 
+2. One cooling coil, 
+3. One charcoal adsorber and HEPA filter array, 
+4. Return air isolation damper. 
+b. All other automatic dampers required for operation in the pressurization or 
+recirculation modes. 
+c. The control room envelope intact. 
+NOTE: The control room envelope (CRE) boundary may be opened intermittently under 
+administrative control. 
+APPLICABILITY: ALL MODES and during movement of irradiated fuel assemblies. 
+ACTION: MODES 1, 2, 3, and 4 
+* 
+** 
+a. 
+b. 
+c. 
+With one filtration train inoperable, align CREACS for single filtration train 
+operation** within 4 hours, and restore the inoperable filtration train to 
+OPERABLE status within 30 days or be in at least HOT STANDBY within the 
+next 6 hours and in COLD SHUTDOWN within the following 30 hours. 
+With CREACS aligned for single filtration train operation and with one of the two 
+remaining fans or associated outlet damper inoperable, restore the inoperable 
+fan or damper to OPERABLE status within 72 hours or be in at least HOT 
+STANDBY within the next 6 hours and in COLD SHUTDOWN within the following 
+30 hours. 
+With the Control Room Envelope boundary inoperable: 
+1. Immediately, initiate action to implement mitigating actions, and 
+2. Within 24 hours, verify mitigating actions ensure CRE occupant 
+exposures to radiological, chemical, and smoke hazards will not exceed 
+limits, and 
+3. Within 90 days, restore the Control Room Envelope boundary to 
+OPERABLE status, or be in at least HOT STANDBY within the next 
+6 hours and in COLD SHUTDOWN within the following 30 hours. 
+The CREACS is a shared system with Salem Unit 1 
+Alignment only permitted if the Unit with the oper
+--- Page 235 ---
+PLANT SYSTEMS 
+LIMITING CONDITION FOR OPERATION (Continued) 
+d. With one or both series isolation damper(s) on a normal Control Area Air 
+Conditioning System (CAACS) outside air intake or exhaust duct inoperable, 
+close the affected duct within 4 hours by use of at least one isolation damper 
+secured in the closed position or be in at least HOT STANDBY within the next 
+6 hours and in COLD SHUTDOWN within the following 30 hours. (Refer to 
+ACTION 28 of Table 3.3-6.) 
+e. With one or both isolation damper(s) on an outside emergency air conditioning 
+air intake duct inoperable, close the affected duct within 4 hours by use of at 
+least one isolation damper secured in the closed position and restore the 
+damper(s) to OPERABLE status within 7 days or be in at least HOT STANDBY 
+within the next 6 hours and in COLD SHUTDOWN within the following 30 hours. 
+MODES 5 and 6 or during movement of irradiated fuel assemblies 
+a. With one filtration train inoperable, align CREACS for single filtration train 
+operation** within 4 hours, or suspend movement of irradiated fuel assemblies. 
+b. With CREACS aligned for single filtration train operation with one of the two 
+remaining fans or associated outlet damper inoperable, restore the fan or damper 
+to OPERABLE status within 72 hours, or suspend movement of irradiated fuel 
+assemblies. 
+c. With two filtration trains inoperable, immediately suspend movement of irradiated 
+fuel assemblies. 
+d. With the Control Room Envelope boundary inoperable, immediately suspend 
+movement of irradiated fuel assemblies. 
+e. With one or both series isolation damper(s) on a normal CAACS outside air 
+intake or exhaust duct inoperable, immediately suspend movement of irradiated 
+fuel assemblies until the affected duct is closed by use of at least one isolation 
+damper secured in the closed position. (Refer to ACTION 28 of Table 3.3-6.) 
+f. With one or both series isolation damper(s) on an outside emergency air 
+conditioning air intake duct inoperable, imme
+--- Page 236 ---
+PLANT SYSTEMS  
+4.7.6.1 The control room emergency air conditioning system shall be demonstrated 
+OPERABLE: 
+a. 	 In accordance with the Surveillance Frequency Control Program by initiating flow 
+through the HEPA filter and charcoal adsorber train(s) and verifying that the 
+train(s) operates with each fan operating for at least 15 minutes. 
+b. 	 In accordance with the Surveillance Frequency Control Program or prior to return 
+to service (1) after any structural maintenance on the HEPA filter or charcoal 
+adsorber housings, or (2) following painting, fire or chemical release in any 
+ventilation zone communicating with the system, by: 
+1. 	 Verifying that the charcoal adsorbers remove;;:: 99% of a halogenated 
+hydrocarbon refrigerant test gas when they are tested in-place while 
+operating the ventilation system at a flow rate of 8000 cfm ± 10%. 
+2. 	 Verifying that the HEPA filter banks remove;;:: 99% of the OOP when they 
+are tested in-place while operating the ventilation system at a flow rate of 
+8000 cfm ± 10%. 
+3. 	 Verifying within 31 days after removal from the CREACS unit, that a 
+laboratory test of a sample of the charcoal adsorber, when obtained in 
+accordance with Regulatory Position C.6.b of Regulatory Guide 1.52, 
+Revision 2, March 1978, shows the methyl iodide penetration less than 
+2.5% when tested in accordance with ASTM 03803-1989 at a 
+temperature of 30°C and a relative humidity of 95%. 
+c. 	 After every 720 hours of charcoal adsorber operation by verifying within 31 days 
+after removal from the CREACS unit, that a laboratory analysis of a 
+representative carbon sample, when obtained in accordance with Regulatory 
+Position C.6.b of Regulatory Guide 1.52, Revision 2, March 1978, shows a 
+methyl iodide penetration less than 2.5% when tested in accordance with ASTM 
+03803-1989 at a temperature of 30°C and a relative humidity of 95%. 
+d. 	 In accordance with the Surveillance Frequency Control Program by: 
+1. 	 Verifying that the pressure drop across the 
+--- Page 237 ---
+PLANT SYSTEMS
+SURVEILLANCE REQUIREMENTS (Continued)
+4. Verifying that on a manual actuation signal, the system will
+actuate to the required pressurization or recirculation
+operating mode.
+5. Verify each CREACS train has the capability to remove the
+assumed heat load.
+e. After each complete or partial replacement of a HEPA filter bank by
+verifying that the HEPA filter banks remove Ž 99% of the DOP when
+they are tested in-place while operating the filter system at a
+flow rate of 8000 cfm ± 10%.
+f. After each complete or partial replacement of a charcoal absorber
+bank by verifying that the charcoal absorbers remove Ž 99% of a
+halogenated hydrocarbon refrigerant test gas when they are tested
+in-place while operating the filter system at a flow rate of 8000
+cfm ± 10%.
+4.7.6.2 Perform required CRE unfiltered air inleakage testing inaccordance
+with the Control Room Habitability Program (Refer to TS 6.17).
+SALEM - UNIT 2 3/4 7-17a Amendment No. 269
+
+--- Page 238 ---
+PLANT SYSTEMS
+3/4.7.7 AUXILIARY BUILDING VENTILATION SYSTEM
+LIMITING CONDITION FOR OPERATION
+3.7.7 At least two supply fans, and three exhaust fans shall be OPERABLE(*)
+to maintain the Auxiliary Building at slightly negative pressure.
+--------------------------------NOTE---------------------------------------
+The intermittent opening of the Auxiliary Building pressure boundary causing
+a loss of negative pressure may be performed under administrative controls.
+_____________________________________________________________________________
+APPLICABILITY: At all times.
+ACTION:
+Modes 1 thru 4
+a) With one supply fan and/or one exhaust fan inoperable, restore the
+fan(s) to OPERABLE status within 14 days or be in HOT STANDBY within
+the next 6 hours and in COLD SHUTDOWN within the following 30 hours.
+b) With two supply and/or two exhaust fans inoperable restore at least
+one inoperable supply and two exhaust fans to operable status within
+24 hours or be in HOT STANDBY within the next 6 hours and in COLD
+SHUTDOWN within the following 30 hours.
+c) With the Auxiliary Building pressure not maintained slightly
+negative, restore the building to slightly negative pressure within
+the next 4 hours or be in HOT STANDBY within the next 6 hours and in
+COLD SHUTDOWN within the following 30 hours.
+During CORE ALTERATIONS
+d) With the Auxiliary Building pressure not maintained slightly
+negative, restore the Auxiliary Building to slightly negative
+pressure within the next 4 hours or suspend all operations involving
+CORE ALTERATIONS.
+At all times
+e) With the Auxiliary Building pressure not maintained slightly
+negative, suspend all operations involving radioactive gaseous
+releases via the Auxiliary Building immediately.
+(*) One of the supply fans may be considered OPERABLE with its auto
+start circuit administratively controlled (removed form service) to
+prevent more than one supply fan from operating at any time.
+SALEM - UNIT 2 3 /4 7-18 Amendment No. 252
+
+===== TS 3.7.7 Aux Bldg Vent (pages 238-241) =====
+--- Page 238 ---
+PLANT SYSTEMS
+3/4.7.7 AUXILIARY BUILDING VENTILATION SYSTEM
+LIMITING CONDITION FOR OPERATION
+3.7.7 At least two supply fans, and three exhaust fans shall be OPERABLE(*)
+to maintain the Auxiliary Building at slightly negative pressure.
+--------------------------------NOTE---------------------------------------
+The intermittent opening of the Auxiliary Building pressure boundary causing
+a loss of negative pressure may be performed under administrative controls.
+_____________________________________________________________________________
+APPLICABILITY: At all times.
+ACTION:
+Modes 1 thru 4
+a) With one supply fan and/or one exhaust fan inoperable, restore the
+fan(s) to OPERABLE status within 14 days or be in HOT STANDBY within
+the next 6 hours and in COLD SHUTDOWN within the following 30 hours.
+b) With two supply and/or two exhaust fans inoperable restore at least
+one inoperable supply and two exhaust fans to operable status within
+24 hours or be in HOT STANDBY within the next 6 hours and in COLD
+SHUTDOWN within the following 30 hours.
+c) With the Auxiliary Building pressure not maintained slightly
+negative, restore the building to slightly negative pressure within
+the next 4 hours or be in HOT STANDBY within the next 6 hours and in
+COLD SHUTDOWN within the following 30 hours.
+During CORE ALTERATIONS
+d) With the Auxiliary Building pressure not maintained slightly
+negative, restore the Auxiliary Building to slightly negative
+pressure within the next 4 hours or suspend all operations involving
+CORE ALTERATIONS.
+At all times
+e) With the Auxiliary Building pressure not maintained slightly
+negative, suspend all operations involving radioactive gaseous
+releases via the Auxiliary Building immediately.
+(*) One of the supply fans may be considered OPERABLE with its auto
+start circuit administratively controlled (removed form service) to
+prevent more than one supply fan from operating at any time.
+SALEM - UNIT 2 3 /4 7-18 Amendment No. 252
+--- Page 239 ---
+PLANT SYSTEMS  
+4.7.7 The above required Auxiliary Building Ventilation System shall be demonstrated 
+OPERABLE: 
+a) In accordance with the Surveillance Frequency Control Program by verifying 
+negative pressure in the Auxiliary Building. 
+b) In accordance with the Surveillance Frequency Control Program by starting each 
+fan, from the control room, each fan operates for at least 15 minutes. 
+c) In accordance with the Surveillance Frequency Control Program by verifying that 
+the system starts following a Safety Injection Test Signal. 
+SALEM - UNIT 2 3/47-19 Amendment No. 282 
+
+--- Page 240 ---
+PLANT SYSTEMS
+SURVEILLANCE REQUIREMENTS
+THIS PAGE LEFT BLANK INTENTIONALLY
+SALEM - UNIT 2 3 /4 7-2 0 Amendment No.252
+--- Page 241 ---
+PLANT SYSTEMS  
+3/4.7.8 SEALED SOURCE CONTAMINATION  
+3.7.8 Each sealed source containing radioactive material either in excess of 100 microcuries of 
+beta and/or gamma emitting material or 5 microcuries of alpha emitting material shall be free of 
+greater than or equal to 0.005 microcuries of removable contamination. 
+APPLICABILITY: At all times. 
+ACTION: 
+a. With a sealed source having removable contamination in excess of the above 
+limits, immediately withdraw the sealed source from use and: 
+1. Either decontaminate and repair the sealed source, or 
+2. Dispose of the sealed source in accordance with Commission 
+Regulations. 
+b. The provisions of Specification 3.0.3 are not applicable. 
+4.7.8.1 Test Requirements - Each sealed source shall be tested for leakage and/or 
+contamination by: 
+a. 	 The licensee, or 
+b. Other persons specifically authorized by the Commission or an Agreement State. 
+The test method shall have a detection sensitivity of at least 0.005 microcuries per test sample. 
+4.7.8.2 Test Frequencies - Each category of sealed sources (excluding startup sources and 
+fission detectors previously subjected to core flux) shall be tested at the frequency described 
+below. 
+a. 	 Sources in use - In accordance with the Surveillance Frequency Control Program 
+for all sealed sources containing radioactive materials: 
+SALEM - UNIT 2 	 3/4 7-21 Amendment No. 282 
+
+
+===== TS 3.7.8 Sealed Source (pages 241-243) =====
+--- Page 241 ---
+PLANT SYSTEMS  
+3/4.7.8 SEALED SOURCE CONTAMINATION  
+3.7.8 Each sealed source containing radioactive material either in excess of 100 microcuries of 
+beta and/or gamma emitting material or 5 microcuries of alpha emitting material shall be free of 
+greater than or equal to 0.005 microcuries of removable contamination. 
+APPLICABILITY: At all times. 
+ACTION: 
+a. With a sealed source having removable contamination in excess of the above 
+limits, immediately withdraw the sealed source from use and: 
+1. Either decontaminate and repair the sealed source, or 
+2. Dispose of the sealed source in accordance with Commission 
+Regulations. 
+b. The provisions of Specification 3.0.3 are not applicable. 
+4.7.8.1 Test Requirements - Each sealed source shall be tested for leakage and/or 
+contamination by: 
+a. 	 The licensee, or 
+b. Other persons specifically authorized by the Commission or an Agreement State. 
+The test method shall have a detection sensitivity of at least 0.005 microcuries per test sample. 
+4.7.8.2 Test Frequencies - Each category of sealed sources (excluding startup sources and 
+fission detectors previously subjected to core flux) shall be tested at the frequency described 
+below. 
+a. 	 Sources in use - In accordance with the Surveillance Frequency Control Program 
+for all sealed sources containing radioactive materials: 
+SALEM - UNIT 2 	 3/4 7-21 Amendment No. 282 
+
+--- Page 242 ---
+PLANT SYSTEMS
+SURVEILLANCE REQUIREMENTS (Continued)
+1. With a half-life greater-than 30 days (excluding Hydrogen 3),-
+and
+2. In any form other than gas.
+b. Stored sources not in use'- Each sealed source and fission detector'
+shall be tested prior to use or transfer to another licensee unless
+tested within the previous six months. Sealed sources and fission
+detectors transferred without a certificate indicating the last test
+date shall be tested prior to being placed into use.
+c. Startup sources and fission detectors - Each sealed startup source.
+and fission detector shall be tested within'31 days'prior to being
+subjected to core flux and following repair or maintenance to the
+source or detector.
+.4.7.8.3 Re'orts - A report shall'be prepared and submitted tolthe Commission
+;on an annual basis if sealed source or fission detector leakage tests reveal
+the presence of greater than orequal to 0.005 microcuries of removable
+contamination.
+SALEM - UNIT 2 3/4;7-22
+--- Page 243 ---
+PLANT SYSTEMS 
+3/4.7.9 SNUBBERS 
+LIMITING CONDITION FOR OPERATION 
+3.7.9 All snubbers shall be OPERABLE. 
+APPLICABILITY: 	 MODES 1, 2, 3 and 4. (MODES 5 and 6 for snubbers located on systems 
+required OPERABLE in those MODES). 
+ACTION: 
+With one or more snubbers inoperable, within 72 hours, replace or restore the inoperable 
+snubber{s) to OPERABLE status and perform an engineering evaluation per Specification 4.7.9 
+on the supported component or declare the supported system inoperable and follow appropriate 
+ACTION statement for that system. 
+SURVEILLANCE REQUIREMENTS 
+4.7.9 Each snubber shall be demonstrated OPERABLE by performance of the Snubber Testing 
+Program for examination, testing and service life monitoring of snubbers. 
+SALEM - UNIT 2 	 3/47-23 Amendment No. 284 
+
+===== TS 3.7.9 Snubbers (pages 243-250) =====
+--- Page 243 ---
+PLANT SYSTEMS 
+3/4.7.9 SNUBBERS 
+LIMITING CONDITION FOR OPERATION 
+3.7.9 All snubbers shall be OPERABLE. 
+APPLICABILITY: 	 MODES 1, 2, 3 and 4. (MODES 5 and 6 for snubbers located on systems 
+required OPERABLE in those MODES). 
+ACTION: 
+With one or more snubbers inoperable, within 72 hours, replace or restore the inoperable 
+snubber{s) to OPERABLE status and perform an engineering evaluation per Specification 4.7.9 
+on the supported component or declare the supported system inoperable and follow appropriate 
+ACTION statement for that system. 
+SURVEILLANCE REQUIREMENTS 
+4.7.9 Each snubber shall be demonstrated OPERABLE by performance of the Snubber Testing 
+Program for examination, testing and service life monitoring of snubbers. 
+SALEM - UNIT 2 	 3/47-23 Amendment No. 284 
+--- Page 244 ---
+Pages 3/47-25 through 3/4 7-27 have been deleted. 
+SALEM UNIT 2 3/47-24 Amendment No. 284  
+--- Page 245 ---
+PLANT SYSTEMS 
+3/4.7.10 CHILLED WATER SYSTEM - AUXILIARY BUILDING SUBSYSTEM 
+LIMITING CONDITION FOR OPERATION 
+3.7.10 The chilled water system loop which services the safety-related loads in the Auxiliary 
+Building shall be OPERABLE with one of the following configurations: 
+a b c 
+Configuration 1. Three 1. Two OPERABLE chillers and, 1. Three OPERABLE chillers 
+OPERABLE and, 
+chillers and, 2. Two OPERABLE chilled water 
+pumps 2. Two OPERABLE chilled 
+2. Two OPERABLE water pumps 
+chilled water 
+pumps from either Unit 1 or Unit 2 
+(Units Cross-tied)<2l 
+APPLICABILITY 1 . ALL MODES and 1 . From November 1 through 1. From November 1 through 
+during movement April 30 in ALL MODES and April 30 in ALL MODES and 
+of irradiated fuel during movement of irradiated during movement of 
+assemblies fuel assemblies# irradiated fuel assemblies## 
+2. The Unit 2 Emergency Control 2. The Unit 1 and Unit 2 ECACs 
+Air Compressor (ECAC) is are isolated from the chilled 
+isolated from the chilled water water system 
+system 
+3. Non-Essential heat loads are 
+3. Chilled water flow to the third isolated from the chilled 
+chiller that is not in service is water system on BOTH Units 
+isolated<1 l 
+4. BOTH CREACS trains are 
+4. Control Room Emergency Air operable per TS 3.7.6 (single 
+Conditioning System filtration train alignment is not 
+(CREACS) alignment permitted) 
+a. BOTH CREACS trains 5. Unit chilled water cross-tie 
+OPERABLE, no valves are OPEN 
+additional chilled water 
+heat load removal 6. Administrative controls are in 
+required, OR place for the Unit providing 
+the required components to 
+b. Single CREACS train notify the other Unit if a chiller 
+OPERABLE (TS 3.7.6 or pump becomes inoperable 
+ACTION a.) the following 
+restrictions apply: 
+i. Alignment only 
+permitted to Unit 1 
+ii. Unit 1 must be in the 
+LCO 3.7.10a 
+configuration 
+iii. Non-essential heat 
+loads are isolated from 
+the chilled water 
+system on BOTH Units 
+# The LCO 3.7.1 Ob configuration may only be used for periods of 
+--- Page 246 ---
+PLANT SYSTEMS 
+LIMITING CONDITION FOR OPERATION (Continued) 
+ACTION<3): MODES 1, 2, 3, and 4 
+a. With one of the required chillers inoperable: 
+1. Remove<4) the appropriate non-essential heat loads from the chilled water 
+system within 4 hours and; 
+2. Restore the chiller to OPERABLE status within 14 days or; 
+3. Be in at least HOT STANDBY within the next 6 hours and in COLD 
+SHUTDOWN within the following 30 hours. 
+b. With two of the required chillers inoperable<5H6): 
+1. Remove the appropriate non-essential heat loads from the chilled water 
+system within 4 hours and; 
+2. Align the control room emergency air conditioning system (CREACs) for 
+single filtration operation using the Salem Unit 1 train within 4 hours and; 
+3. Restore at least one chiller to OPERABLE status within 72 hours or; 
+4. Be in at least HOT STANDBY within the next 6 hours and in COLD 
+SHUTDOWN within the following 30 hours. 
+c. With one chilled water pump inoperable, restore the chilled water pump to 
+OPERABLE status within 7 days or be in at least HOT STANDBY within the next 
+6 hours and in COLD SHUTDOWN within the following 30 hours 
+ACTION(3): MODES 5 and 6 or during movement of irradiated fuel assemblies.* 
+a. With one of the required chillers inoperable: 
+1. Remove<4) the appropriate non-essential heat loads from the Chilled Water 
+System within 4 hours and; 
+2. Restore the chiller to OPERABLE status within 14 days or; 
+3. Suspend CORE ALTERATIONS and movement of irradiated fuel assemblies. 
+SALEM - UNIT 2 3/4 7-28a Amendment No. 297 
+--- Page 247 ---
+PLANT SYSTEMS 
+LIMITING CONDITION FOR OPERATION (Continued) 
+b. With two of the required chillers inoperable(5H6): 
+1. Remove the appropriate non-essential heat loads from the chilled water 
+system within 4 hours and; 
+2. Align the control room emergency air conditioning system (CREACs) for 
+single filtration operation using the Salem Unit 1 train within 4 hours and; 
+3. Restore at least one chiller to OPERABLE status within 72 hours or; 
+4. Suspend CORE ALTERATIONS and movement of irradiated fuel assemblies. 
+c. With one chilled water pump inoperable, restore the chilled water pump to 
+OPERABLE status within 7 days or suspend CORE ALTERATIONS and movement 
+of irradiated fuel assemblies. 
+SURVEILLANCE REQUIREMENTS 
+4.7.1 O The chilled water loop which services the safety-related loads in the Auxiliary Building shall 
+be demonstrated OPERABLE: 
+a. In accordance with the Surveillance Frequency Control Program by verifying that 
+each manual valve in the chilled water system flow path servicing safety related 
+components that is not locked, sealed, or otherwise secured in position, is in its 
+correct position. 
+b. In accordance with the Surveillance Frequency Control Program, by verifying that 
+each automatic valve actuates to its correct position on a Safeguards Initiation signal. 
+c. In accordance with the Surveillance Frequency Control Program by verifying that 
+each chillers starts and runs. 
+d. When in the LCO 3. 7 .1 Ob configuration verify once per 24 hours: 
+(i) The Unit 2 ECAC is isolated from the chilled water system, 
+(ii) Chilled water flow is isolated to the third chiller that is not in service and, 
+(iii) If CREACS is in single filtration alignment verify non-essential heat loads are 
+isolated from the chilled water system on BOTH Units. 
+e. When in the LCO 3.7.1 Oc configuration verify once per 24 hours: 
+(i) The Unit 1 and Unit 2 ECACs are isolated from the chilled water system, 
+(ii) Non-essential heat loads are isolated from the chilled water system an
+--- Page 248 ---
+PLANT SYSTEMS 
+Surveillance Requirements (Continued) 
+NOTES 
+(1) When transitioning from the LCO 3.7.1 Ob to the LCO 3.7.1 Oa configuration, the chiller may 
+be un-isolated (restored to service) under administrative controls 
+(2) The LCO 3.7.1 Oc (Cross-Tied) configuration is common to both Units; either Unit 1 chilled 
+water components are required operable, OR Unit 2. A combination of both Units chilled 
+water components is not permitted. When transitioning from the LCO 3.7.1 Oc configuration 
+to either the LCO 3.7.1 Oa or LCO 3.7.1 Ob configurations, chilled water components may be 
+restored to service under administrative controls 
+(3) When in the LCO 3.7.1 Oc configuration ACTIONs are applicable for both Units 
+(4) When in the LCO 3.7.1 Oc configuration this ACTION has already been implemented 
+(5) When in the LCO 3.7.1 Ob configuration, implement Action b.2 AND Action b.4 OR transition 
+to the LCO 3.7.1 Oc configuration 
+(6) When in LCO 3.7.1 Oc configuration, proceed directly to Action b.4 
+* During Modes 5 and 6 and during movement of irradiated fuel assemblies, chilled water 
+components are not considered to be inoperable solely on the basis that the backup 
+emergency power source, diesel generator, is inoperable. This is not applicable to the LCO 
+3.7.1 Oc configuration. 
+SALEM - UNIT 2 3/4 7-29 Amendment No. 297 
+--- Page 249 ---
+PLANT SYSTEMS 
+3/4.7.11 FUEL STORAGE POOL BORON CONCENTRATION 
+LIMITING CONDITION FOR OPERATION 
+3.7.11 The fuel storage pool boron concentration shall be;::: 800 ppm 
+APPLICABILITY: When fuel assemblies are stored in the fuel storage pool and a fuel storage 
+pool verification has not been performed since the last movement of fuel 
+assemblies in the fuel storage pool. 
+ACTION: 
+With fuel storage pool boron concentration not within limit: 
+a. Immediately suspend movement of fuel assemblies in the fuel storage pool and 
+b. Initiate action to: 
+1. immediately restore fuel storage pool boron concentration to within limit or 
+2. immediately perform a fuel storage pool verification. 
+c. The provisions of Specification 3.0.3 is not applicable. 
+4.7.11 Verify the fuel storage pool boron concentration is within limit in accordance with the 
+Surveillance Frequency Control Program. 
+SALEM - UN IT 2 3/47-30 Amendment No. 282 
+
+--- Page 250 ---
+PLANT SYSTEMS
+3/4.7.12 FUEL ASSEMBLY STORAGE IN THE SPENT FUEL POOL
+LIMITING CONDITION FOR OPERATION
+3.7.12 The combination of initial enrichment, burnup, and Integral Fuel Burnable
+Absorber (IFBA) of each fuel assembly stored in Region 1 or Region 2, shall be within
+the acceptable limits described in the surveillance requirements below.
+APPLICABILITY: When any fuel assembly is stored in Region 1 or Region 2 of the,
+spent fuel storage pool.
+ACTION:
+If the requirements of the LCO are not met:
+a. Immediately verify the fuel storage boron concentration meets the requirements of
+TS 3.7.11 and
+b. Immediately initiate action to move the non-complying fuel assembly to a location
+that complies with the surveillance requirements.
+c. The provisions of Specification 3.0.3 are not applicable.
+SURVEILLANCE REQUIREMENTS
+4.7.12.1 Prior to storing fuel assemblies in Region 1, verify by administrative
+means that the fuel assemblies meet one of the following storage constraints:
+a. Unirradiated fuel assemblies with a maximum enrichment of 4.25 wt% U-235 have
+unrestricted storage.
+b. Unirradiated fuel assemblies with enrichments greater than 4.25 wt% U-235 and
+less than or equal to 5.0 wt% U-235, that do not contain IFBA pins, may only be
+stored in the peripheral cells facing the concrete wall.
+c. Unirradiated fuel assemblies with enrichments (E) greater than 4.25 wt% U-235 and
+less than or equal to 5.0 wt% U-235, which contain a minimum number of IFBA pins
+have unrestricted storage. This minimum number of IFBA pins shall have an
+equivalent reactivity hold-down which is greater than or equal to the reactivity
+hold-down associated with N IFBA pins, at a nominal 2.35 mg B-10/linear inch
+loading (l.5x), determined by the equation below:
+N = 42.67 (E - 4.25)
+Salem - Unit 2 3/4 7-31 Amendment No.258
+

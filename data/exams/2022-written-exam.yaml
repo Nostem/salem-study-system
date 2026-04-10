@@ -581,3 +581,553 @@ questions:
     ka_importance: 3.0
     type: RO
     tier_group: "Tier 2/Group 1"
+  - number: 51
+    topic: "CAV System Rad Monitor AP Mode"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - radiation-monitoring
+    ka: "073 A2.02"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 1"
+  - number: 52
+    topic: "SW122 CC HX Inlet Valve SEC Response"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Salem 2015 NRC RO16"
+    systems:
+      - service-water
+    ka: "076 K1.16"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 1"
+  - number: 53
+    topic: "SAC Power Supply & Control Air Pressure"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Diablo Canyon 2016 NRC RO26"
+    systems:
+      - control-air
+    ka: "078 K2.01"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 1"
+  - number: 54
+    topic: "CVCS Letdown Orifice Phase A Isolation"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank – Byron 2017 NRC RO30"
+    systems:
+      - containment
+    ka: "103 A3.01"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 1"
+  - number: 55
+    topic: "CFCU SEC Mode 1 SI Response"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank – Salem"
+    systems:
+      - containment
+    ka: "103 K1.01"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 1"
+  - number: 56
+    topic: "Rod Insertion Limit Alarm"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Beaver Valley 2018 NRC RO61"
+    systems:
+      - unknown
+    ka: "001 K5.04"
+    ka_importance: 4.3
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 57
+    topic: "IR NIS Channel Failure and P-10 Permissive"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem"
+    systems:
+      - excore-nis
+    ka: "015 K4.07"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 58
+    topic: "ADFCS Steam Pressure Channel Failure"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem"
+    systems:
+      - excore-nis
+    ka: "016 K3.12"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 59
+    topic: "Containment IRU Operation"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Salem 2010 NRC RO48"
+    systems:
+      - containment
+    ka: "027 A4.03"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 60
+    topic: "Hydrogen Recombiner Power Setting"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank – Salem 2019 NRC RO32 (modified question to"
+    systems:
+      - containment
+    ka: "028 A4.01"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 61
+    topic: "SFP Makeup Water Sources"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Salem 2016 NRC RO46"
+    systems:
+      - spent-fuel-pool
+    ka: "033 K1.05"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 62
+    topic: "Fuel Handling Crane Interlocks"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems:
+      - unknown
+    ka: "034 K4.02"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 63
+    topic: "Steam Dump P-12 / Bypass Tavg"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - steam-dumps
+    ka: "041 A1.01"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 64
+    topic: "Main Turbine Valve Stroke Testing"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - main-turbine
+    ka: "045 G2.1.23"
+    ka_importance: 4.3
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 65
+    topic: "Condensate Pump Trip Response"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem 2011 NRC RO53"
+    systems:
+      - feed-and-condensate
+    ka: "056 A2.04"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 66
+    topic: "Plant Announcement Requirements"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 67
+    topic: "Shift Turnover Restrictions"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Beaver Valley NRC 2017 RO67"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Plant Systems-Tier 3"
+  - number: 68
+    topic: "Confined Space Entry Requirements"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Salem"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 69
+    topic: "OTSC Change to Intent"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – ANO Unit 1 2017 NRC RO69"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 70
+    topic: "Red Blocking Tag Emergency Repositioning"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 71
+    topic: "Emergency Exposure Stay Time"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank – Byron 2019 NRC RO72 (October exam)"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 72
+    topic: "Locked High Radiation Area Posting"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 73
+    topic: "EOP Continuous Caution Definition"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Diablo Canyon 2016 NRC RO67"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 74
+    topic: "Emergency Notification Timing"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 75
+    topic: "Emergency Communications NETS Phone"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - unknown
+    ka: "EPE 29 G2.4.18"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 76
+    topic: "EOP-FRSM-1 RCP Trip During ATWS"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - unknown
+    ka: "EPE 29 G2.4.18"
+    ka_importance: 4.0
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 1"
+  - number: 77
+    topic: "EOP-LOPA-1 MS10 Cooldown Rate"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - unknown
+    ka: "EPE 55 EA2.04"
+    ka_importance: 4.1
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 1"
+  - number: 78
+    topic: "TS 3.9.2.2 Source Range / Gamma-Metrics"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - unknown
+    ka: "APE 57 G2.2.25"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 1"
+  - number: 79
+    topic: "Loss of Air / TDAFW Pump Overpower"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Beaver Valley U1 2016 SRO89"
+    systems:
+      - control-air
+    ka: "APE 65 G2.4.31"
+    ka_importance: 4.1
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 1"
+  - number: 80
+    topic: "EOP-LOCA-5 Containment Spray / FRCE-1"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem"
+    systems:
+      - unknown
+    ka: "W E11 EA2.1"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 1"
+  - number: 81
+    topic: "EOP-FRHS-1 Heat Sink Established"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Commanche Peak 2016 NRC SRO81"
+    systems:
+      - unknown
+    ka: "W E05 EA2.2"
+    ka_importance: 3.7
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 1"
+  - number: 82
+    topic: "IR NIS TS 3.3.1.1 During Startup"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem"
+    systems:
+      - excore-nis
+    ka: "APE 33 AA2.08"
+    ka_importance: 3.4
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 2"
+  - number: 83
+    topic: "LBLOCA Emergency Classification"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – ANO 1 2017 Retake NRC SRO84"
+    systems:
+      - containment
+    ka: "W E16 G2.4.41"
+    ka_importance: 4.6
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 2"
+  - number: 84
+    topic: "EOP-TRIP-6 Nat Circ Cooldown Without RVLIS"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Beaver Valley U2 2015 NRC SRO85"
+    systems:
+      - unknown
+    ka: "W E10 EA2.2"
+    ka_importance: 3.9
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 2"
+  - number: 85
+    topic: "CFST Priority / FRTS-1 Thermal Shock"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - unknown
+    ka: "W E08 G2.4.21"
+    ka_importance: 4.6
+    type: SRO
+    tier_group: "Emergency and Abnormal Plant Evolutions-Tier 1/Group 2"
+  - number: 86
+    topic: "RCP Seal Failure AB.RCP Actions"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - rcps
+    ka: "003 A2.02"
+    ka_importance: 3.9
+    type: SRO
+    tier_group: "Plant Systems-Tier 2/Group 1"
+  - number: 87
+    topic: "NRC Reporting Manual Trip & SI"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - unknown
+    ka: "012 G2.4.30"
+    ka_importance: 4.1
+    type: SRO
+    tier_group: "Plant Systems-Tier 2/Group 1"
+  - number: 88
+    topic: "Loss of Control Air PZR Level"
+    answer: A
+    cognitive_level: "?"
+    source: "?"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: ?
+    type: ?
+    tier_group: "?"
+  - number: 89
+    topic: "EDG Common Mode Failure TS 3.8.1.1"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank – DC Cook 2018 SRO89"
+    systems:
+      - edgs
+    ka: "064 G2.2.36"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Plant Systems-Tier 2/Group 1"
+  - number: 90
+    topic: "Loss of All SW Bus Lockout"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem 2016 NRC SRO92"
+    systems:
+      - service-water
+    ka: "076 A2.01"
+    ka_importance: 3.7
+    type: SRO
+    tier_group: "Plant Systems-Tier 2/Group 1"
+  - number: 91
+    topic: "TS POPS Inoperable MODE 4 Entry"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - unknown
+    ka: "002 G2.2.40"
+    ka_importance: 4.7
+    type: SRO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 92
+    topic: "Misaligned Rod Power Reduction"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem"
+    systems:
+      - control-rod-drive
+    ka: "014 A2.04"
+    ka_importance: 3.9
+    type: SRO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 93
+    topic: "Fire Brigade Minimum Staffing"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Salem 2008 NRC SRO24"
+    systems:
+      - unknown
+    ka: "086 G2.2.38"
+    ka_importance: 4.5
+    type: SRO
+    tier_group: "Plant Systems-Tier 2/Group 2"
+  - number: 94
+    topic: "Defueling Core Alteration SRO Supervision"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.9
+    type: SRO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 95
+    topic: "Reactivity Management SRO Requirements"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Palo Verde 2018 SRO95"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 4.6
+    type: SRO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 96
+    topic: "Temporary Configuration Changes"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.3
+    type: SRO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 97
+    topic: "AVR ESOC Notification"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.8
+    type: SRO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 98
+    topic: "Containment Purge Reinstatement"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.8
+    type: SRO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 99
+    topic: "Off-Site Firefighting Authorization"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 3.6
+    type: SRO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
+  - number: 100
+    topic: "Emergency Accountability Timing"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem"
+    systems:
+      - unknown
+    ka: "?"
+    ka_importance: 4.4
+    type: SRO
+    tier_group: "Generic Knowledge and Abilities-Tier 3"
