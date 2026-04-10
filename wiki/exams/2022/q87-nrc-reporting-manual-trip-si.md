@@ -19,7 +19,7 @@ aliases:
 • Following the reactor trip, the crew observes RCS pressure dropping rapidly and manually actuates Safety Injection.<br>
 • All other systems responded as designed post trip.<br><br>
 Based on the above events, which ONE of the following correctly identifies the reportability to the NRC?<br><br>
-[REFERENCE PROVIDED]
+<span class="val-normal">[REFERENCE PROVIDED]</span>
 </div>
 
 <div style="margin-bottom:14px;">
