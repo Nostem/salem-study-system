@@ -20,3 +20,5 @@ Removes decay heat from spent fuel stored in the spent fuel pool. Maintains pool
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related exam questions: [[2022 Q61]]
+- Related exam: [[2022 NRC Written Exam]]

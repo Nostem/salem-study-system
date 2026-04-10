@@ -223,3 +223,4 @@ Rod Position Indication: <span class="hi-exam">Only Group 1 Demand Steps input i
   - [[2022 Q38]] — RTB B opens / RTB A fails closed / 20-ET trips turbine
   - [[2022 Q39]] — Containment pressure channel logic / SI vs Phase B coincidence
   - [[2022 Q40]] — SSPS auctioneered 48VDC power supply / single loss no impact
+  - [[2022 Q63]] — Steam dump P-12 (Lo-Lo Tavg) / Bypass Tavg requires both Train A AND B

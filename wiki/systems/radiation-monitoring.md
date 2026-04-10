@@ -79,6 +79,7 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
 
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]]
-- Related exams: [[2023 NRC Written Exam]]
+- Related exams: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
   - [[2023 Q49 — SGBD Radiation Monitor Check Source|2023 Q49]] — SGBD rad monitor check source response and interlocks
   - [[2023 Q62]] — Area Rad Monitor 1R1A / manual CAV AP mode from 1RP2
+  - [[2022 Q62]] — Fuel Handling Crane interlocks (2R32A vs 2R9 rad monitors)
