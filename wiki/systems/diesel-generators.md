@@ -74,9 +74,14 @@ Common mode failure surveillance scheduling: per S2.OP-ST.DG-0001/2/3 P&L 2.1.6,
 SBO Diesel Control Air Compressor: backup control air source when all ECACs are unavailable during LOOP. Located in SBO Compressor Building (outside RCA, requires L-3 key). Discharge valves <span class="hi-exam">1CA1913, 1CA1886, and 2CA584</span> pressurize Control Air and Aux Building headers.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q89</div>
+EDG common mode failure TS 3.8.1.1 actions: when a failure cause (e.g. K1C relay) is identified that could affect operable EDGs with the same components, the SRO must apply <span class="hi-exam">action b.3 (perform operability run on remaining EDGs within 24 hours)</span> AND <span class="hi-exam">action b.4 (restore inoperable EDG within 72 hours)</span>. A common mode failure does NOT automatically make all EDGs inoperable — the remaining EDGs are presumed operable until demonstrated otherwise. <span class="hi-trap">TS 3.0.3 does NOT apply because action "e" exists for two or more diesels inoperable. Do not declare all EDGs inoperable based solely on a common mode concern.</span>
+</div>
+
 ## Connections
 
-- Related exam questions: [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]]
+- Related exam questions: [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
 - Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
 - Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related JPMs: [[2023 JPM IP-i]]

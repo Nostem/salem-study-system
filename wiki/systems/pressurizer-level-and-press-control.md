@@ -68,9 +68,14 @@ AB.PZR-0001 directs <span class="hi-exam">manual reactor trip when RCS pressure 
 PZR reference leg leak causes indicated level to read <span class="hi-exam">HIGHER</span> (lower reference leg head → lower DP across transmitter → controller interprets as higher level). Master Flow Controller responds by <span class="hi-exam">lowering charging flow</span>, so <span class="hi-trap">actual PZR level LOWERS while indication rises — a divergence between actual and indicated level</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q88</div>
+Loss of all control air impact on PZR level: with a centrifugal charging pump in service, <span class="hi-exam">CV55 fails OPEN and CV71 fails CLOSED</span>. With letdown isolated (no letdown path), higher charging flow to RCP seals causes <span class="hi-exam">PZR level to RISE</span>. Per AB.CA-0001: locally adjust CV54 (Centrifugal Charging Pump Flow Control Valve) OR <span class="hi-exam">transfer to 23 PDP charging pump</span> (speed controller fails at low speed stop → minimizes RCP seal flow → extends time before PZR reaches 90%).
+</div>
+
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]]
-- Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]]
-- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]]
+- Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]]
+- Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]]
+- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]]
 - Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

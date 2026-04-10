@@ -50,11 +50,29 @@ P-6 permissive and IR NIS overlap: when P-6 is LIT, IR channels should indicate 
 
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.1]]** — Reactor Trip System Instrumentation (NIS channels)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q57</div>
+P-10 permissive and IR high flux trip: when <span class="hi-exam">at least 3/4 PR NIS channels are less than the P-10 setpoint (~9%)</span>, P-10 automatically unblocks the <span class="hi-exam">1/2 IR high flux trip (25%)</span> and the 2/4 PR high flux low setpoint trip (25%). With one IR channel failed HIGH (e.g. 2N35), the reactor will <span class="hi-exam">automatically trip when power decreases below P-10</span> during a planned shutdown. <span class="hi-trap">P-10 clears on 3/4 PR channels below setpoint, NOT 2/4. Do not confuse the P-10 block logic (2/4 above) with the unblock logic (3/4 below).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q78</div>
+TS 3.9.2.2 (refueling source range neutron flux monitors): per TS bases, <span class="hi-exam">any combination of NIS source range monitors AND/OR Gamma-Metrics post-accident neutron flux monitors may be used to satisfy the LCO</span>. Two of the four total monitors are required OPERABLE. If one SR channel becomes inoperable (e.g. loss of 2A vital instrument bus), <span class="hi-exam">restoring ONE Gamma-Metrics channel to OPERABLE satisfies the requirement</span> and core alterations may recommence.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q82</div>
+TS 3.3.1.1 Action 3 for one IR NIS channel inoperable above P-6: <span class="hi-exam">reduce RTP below P-6 OR raise RTP above P-10 within 24 hours</span>. P-6 setpoint is <span class="hi-exam">1E-5% RTP</span>. At 1E-4% power, the reactor IS above P-6 and the LCO applies. <span class="hi-trap">Reactor power at 1E-4% is above P-6 (1E-5%) — do not incorrectly assess that power is below P-6.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
-- Related exams: [[2023 NRC Written Exam]]
+- Related exams: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
   - [[2023 Q72]] — Subcritical SR counts stabilize higher / SUR decays to zero after rod withdrawal
   - [[2023 Q11 — Loss of Vital Instrument Bus / NI Channel Response|2023 Q11]] — Vital instrument bus loss / NI channels fail low / IR trip logic
   - [[2023 Q82]] — IR NIS P-6 permissive / TS 3.3.1.1 bases for 24-hour action time
+  - [[2022 Q57]] — IR NIS fails high / P-10 unblocks 1/2 IR trip on 3/4 PR below setpoint
+  - [[2022 Q78]] — Gamma-Metrics substitution for SR channel per TS 3.9.2.2 bases
+  - [[2022 Q82]] — One IR channel inoperable above P-6 / TS 3.3.1.1 Action 3

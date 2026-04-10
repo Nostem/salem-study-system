@@ -151,6 +151,16 @@ PZR pressure channel failure and NRC reportability: with Channel I already in tr
 Provides low-temperature overpressure protection by enabling PORVs to open at a reduced setpoint when RCS temperature is low. Prevents exceeding Appendix G pressure-temperature limits during heatup, cooldown, and cold shutdown. (UFSAR 7.6.3)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q91</div>
+TS 3.4.10.3 action "e": <span class="hi-exam">LCO 3.0.4.b is NOT applicable when entering MODE 4 from MODE 5</span> with an inoperable POPS/LTOP channel. Mode change from Mode 5 to Mode 4 <span class="hi-exam">may NOT be performed</span> until the channel is restored to OPERABLE status. Risk assessment per 3.0.4.b <span class="hi-exam">is explicitly prohibited</span> by the TS bases due to increased risk associated with entering Mode 4 with inoperable LTOP.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q85</div>
+CFST priority for Thermal Shock (EOP-FRTS-1): a <span class="hi-exam">RED path exists when RCS T-Cold cooldown rate exceeds 100F in the last 60 minutes AND the RCS pressure/temperature point is NOT to the right of Limit A in Figure 4A</span>. With all T-Colds <230F and RCS pressure at 1100 psig (well into the unacceptable region), EOP-FRTS-1 is the highest priority FRP. <span class="hi-exam">RED Thermal Shock takes priority over PURPLE Shutdown Margin (+0.1 DPM SUR) and YELLOW Heat Sink (low SG levels).</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q34</div>
 Master Pressure Controller (MPC) controls PZR spray valves and backup heaters. If MPC fails low (0% output): spray valves close, both backup heater groups energize, and RCS pressure rises. <span class="hi-exam">PORVs are interlocked directly from PZR pressure channels, NOT from MPC.</span> PORVs open independently at <span class="val-trip">2335 psig</span> regardless of MPC status. MPC failure does not prevent PORV actuation.
 </div>
@@ -224,3 +234,5 @@ Rod Position Indication: <span class="hi-exam">Only Group 1 Demand Steps input i
   - [[2022 Q39]] — Containment pressure channel logic / SI vs Phase B coincidence
   - [[2022 Q40]] — SSPS auctioneered 48VDC power supply / single loss no impact
   - [[2022 Q63]] — Steam dump P-12 (Lo-Lo Tavg) / Bypass Tavg requires both Train A AND B
+  - [[2022 Q85]] — CFST Thermal Shock RED path priority over PURPLE SM and YELLOW HS
+  - [[2022 Q91]] — TS 3.4.10.3 POPS / Mode 5 to Mode 4 entry prohibited with inoperable LTOP

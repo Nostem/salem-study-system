@@ -42,6 +42,16 @@ Failed high Tavg channel (AB.ROD-0003): recognize unwarranted rod insertion, tak
 Rod Drive M-G Set paralleling (S1.OP-SO.RCS-0001): incoming set voltage adjusted <span class="hi-exam">0-2.5V higher</span> than running set via DMM (not installed voltmeter). Move <span class="hi-exam">single SYNCHRONIZE handle</span> from running to incoming set, place in ON — generator breaker auto-closes. Do NOT manually close generator breaker.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q56</div>
+OHA E-8 (ROD INSERT LMT LO) alarms when rods are <span class="hi-exam">10 steps from the Rod Insertion Limit</span>. The COLR Rod Insertion Limit has <span class="hi-exam">NOT been exceeded</span> when E-8 alarms — it is a warning. Per the alarm response procedure, the crew initiates a <span class="hi-exam">normal boration per S2.OP-SO.CVC-0006 (Boron Concentration Control)</span> to restore rods to their normal band. <span class="hi-trap">Emergency boration (Rapid Borate) was previously required for OHA E-16 (ROD INSERT LO-LO) but this requirement has been removed from the OHA alarm procedures.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q92</div>
+Misaligned rod response per AB.ROD-0001: with one rod misaligned <span class="hi-exam">>=12 steps from the group demand counter</span> and reactor power >85% RTP, per TS 3.1.3.1 action c.3.d: <span class="hi-exam">reduce power to <75% RTP</span>. The misaligned rod is aligned to the BANK position (not the other way around). <span class="hi-trap">You do NOT insert the bank to match the misaligned rod. If two or more rods are misaligned, the action is Hot Standby within 6 hours.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
@@ -50,7 +60,9 @@ Rod Drive M-G Set paralleling (S1.OP-SO.RCS-0001): incoming set voltage adjusted
 
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
-- Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
   - [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]] — Urgent Failure prevents all rod motion / stationary gripper coil holds rods
   - [[2023 JPM Sim-g]] — Failed high Tavg channel / AB.ROD-0003 recovery
   - [[2023 JPM IP-j]] — Rod Drive M-G Set paralleling
+  - [[2022 Q56]] — OHA E-8 Rod Insertion Limit / normal boration response
+  - [[2022 Q92]] — Misaligned rod / power reduction to <75% RTP

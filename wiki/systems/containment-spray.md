@@ -75,7 +75,12 @@ CS pump power supplies: <span class="hi-exam">21 CS pump on A 4KV Vital Bus, 22 
 EOP-LOCA-1 Step 7.4 (stop CS pumps when containment pressure below 13 psig) is a <span class="hi-exam">continuous action step</span>. Per OP-SA-108-101-2002: continuous action steps are <span class="hi-exam">NOT performed during a Red or Purple path FRP</span>. Even if conditions to stop CS pumps are met, the crew must transition to the FRP and not perform Step 7.4.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q80</div>
+EOP-LOCA-5 vs EOP-FRCE-1 containment spray operation: per EOP-FRCE Caution C3-1, <span class="hi-exam">if LOCA-5 is in effect, operation of containment spray pumps should be IAW LOCA-5</span> (not FRCE-1). LOCA-5 has <span class="hi-exam">less restrictive criteria allowing reduction of CS pump operation based on RWST level and CFCUs to conserve RWST inventory</span>. FRCE-1 establishes maximum available heat removal (more aggressive CS operation) which conflicts with LOCA-5 priority to conserve RWST inventory.
+</div>
+
 ## Connections
 
-- Related exam questions: [[2023 Q40]], [[2023 Q77]], [[2022 Q42]]
+- Related exam questions: [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
 - Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

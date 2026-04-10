@@ -50,10 +50,15 @@ MSLI actuation setpoints: High steam flow (<span class="val-trip">>40%</span>) c
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.1 MSSVs, TS 3.7.1.5 MSIVs
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q77</div>
+MS10 atmospheric dump valves during EOP-LOPA-1 (Loss of All AC Power): on loss of all control air, CA330s fail closed isolating air to containment. MS10s remain operable from the control room via <span class="hi-exam">DC battery power for controls and nitrogen bottle racks (4 bottles >=2000 psig per MS10) for the air operator</span>. Bottle rack capacity: <span class="hi-exam">minimum 72 hours</span> of MS10 operation. Maximum cooldown rate per EOP-LOPA-1 step 17.2 is <span class="hi-exam">100F/hr</span>. <span class="hi-trap">50F/hr is the cooldown rate for EOP-TRIP-6 (Nat Circ without RVLIS above 500F), NOT EOP-LOPA-1.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Dumps]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2022 Q12]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]]
+- Related exam questions: [[2022 Q12]], [[2022 Q77]]
 - Related JPMs: [[2023 JPM Sim-e]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

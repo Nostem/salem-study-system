@@ -121,6 +121,16 @@ RCP #3 seal leak identification: <span class="hi-exam">STANDPIPE LEVEL-LO alarm<
 TS 3.5.4 limits total RCP seal injection flow to <span class="hi-exam">&le;40 gpm</span> (with charging header pressure &ge;2430 psig and 2CV55 fully open). Individual RCP seal injection flows totaling 40.5 gpm (e.g., 10 + 10.5 + 9.8 + 10.2) exceed the limit. Required action: <span class="hi-exam">adjust manual seal injection throttle valves within 4 hours</span>. <span class="hi-trap">Trap: this is NOT a charging pump operability issue (TS 3.5.2) -- it is a seal injection flow limit issue (TS 3.5.4). The TS 4.0.4 exemption allows up to 4 hours for adjustment, but this is NOT the same as "no TS action required."</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q76</div>
+EOP-FRSM-1 (ATWS) RCP trip restriction: per Caution C1-1, <span class="hi-exam">RCPs should NOT be tripped when reactor power is >5%</span>. During an ATWS, RCP operation provides <span class="hi-exam">temporary core cooling under voided RCS conditions</span>. Even if RCP trip criteria are met (e.g. motor flange vibration >5 mils), the RCP should NOT be stopped while power exceeds 5%. <span class="hi-trap">Tripping an RCP during ATWS with power >5% could reduce heat removal and challenge fuel integrity — the ATWS caution takes precedence over normal RCP trip criteria.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q86</div>
+RCP #1 seal failure identification: <span class="hi-exam">seal leak-off flow >=6 gpm indicates #1 seal failure</span>. Per AB.RCP-0001 Attachment 1: if #1 seal leak-off >=6 gpm, go to Attachment 2 (Stopping RCPs) → <span class="hi-exam">manual reactor trip, stop the affected RCP, then 3-5 minutes later close the associated CV104</span>. <span class="hi-trap">Orderly shutdown and stop RCP within 8 hours is the action for a degraded #2 seal (leak-off <0.8 gpm or slowly approaching 6 gpm at step 3.6) — NOT for a failed #1 seal.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (minimum loops in operation by mode)
@@ -128,5 +138,5 @@ TS 3.5.4 limits total RCP seal injection flow to <span class="hi-exam">&le;40 gp
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]]
-- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]]
+- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

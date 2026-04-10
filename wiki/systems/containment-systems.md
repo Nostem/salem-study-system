@@ -104,6 +104,11 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 <span class="hi-exam">CA330 Instrument Air Containment Isolation valves close on Phase A signal ONLY — NOT on SI or Phase B.</span> 21 CA330 supplies the 2A control air header; 22 CA330 supplies the 2B control air header. <span class="hi-exam">BOTH CA330s must be closed</span> to fully isolate instrument air to containment (each is in a separate air supply line with its own check valve). Backup air receivers inside containment provide PORV air supply during EOP actions.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q59</div>
+Containment Iodine Removal Units (IRUs): should only be placed in service when <span class="hi-exam">directed by Radiation Protection</span> (or at the discretion of SM/CRS for testing). IRUs can <span class="hi-exam">ONLY be operated from the main control room</span> — NOT from the Hot Shutdown Panel. <span class="hi-trap">IRUs are NOT directed by EOPs — they are placed in service at Radiation Protection's request when iodine is present in containment.</span>
+</div>
+
 ## Combustible Gas Control
 
 - Hydrogen generated post-LOCA from: zirconium-water reaction, corrosion of aluminum/zinc, radiolysis
@@ -133,6 +138,11 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q58</div>
 Hydrogen Recombiner System: per EOP-LOCA-1 step 17, <span class="hi-exam">only one hydrogen recombiner is allowed in service</span> when containment hydrogen concentration is between >0.5% and <4%. Operation of both hydrogen recombiners is not permitted. The purpose is to reduce hydrogen concentration to prevent formation of a flammable mixture that could ignite and cause a pressure excursion challenging containment integrity.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q60</div>
+Hydrogen recombiner power setting calculation (per S2.OP-SO.CAN-0001): <span class="hi-exam">Power Setting = Cp (pressure correction factor) x Reference Power</span>. Use the <span class="hi-exam">CURRENT containment pressure</span> and the <span class="hi-exam">PRIOR-to-LOCA containment temperature</span> to select Cp from Attachment 2. Round up to the <span class="hi-exam">next higher setting readable on the meter</span>. Example: 22 Hydrogen Recombiner at 5 psig and 90F pre-LOCA: Cp=1.24, Ref Power=42.63 KW → 52.86 KW → rounded to <span class="hi-exam">54 KW</span>. <span class="hi-trap">Use pre-LOCA temperature (not current), and current pressure (not peak) for Cp selection.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -196,6 +206,6 @@ With containment pressure at <span class="hi-exam">5 psig</span> (adverse condit
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]]
+- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

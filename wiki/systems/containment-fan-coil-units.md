@@ -79,9 +79,14 @@ CFCU SW flow via 2SW223: mechanical stop limits valve travel to <span class="hi-
 CFCU surveillance (S2.OP-ST.CBV-0003): if measured SW header DP is between Exhibit 1 values, per P&L 3.4 select minimum flow for the <span class="hi-exam">next HIGHER DP value</span>. At 106 psi DP (between 105 and 110), required minimum is <span class="hi-exam">1811 gpm (at 110 psi)</span>. Actual ~1785 gpm = <span class="hi-exam">UNSAT / inoperable</span>. Also: CFCU SW flow must be <span class="hi-exam">>=1465 gpm</span> in all cases (P&L 3.3).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q55</div>
+SEC Mode 1 (SI only, no LOOP) CFCU response: <span class="hi-exam">SEC trips ALL high-speed 460V breakers (including standby CFCUs), then after a 20-second time delay, starts ALL five CFCUs in low speed</span>. The SEC does NOT use load sequencers in Mode 1. A CFCU in standby receives the same treatment — high-speed breaker trips, then <span class="hi-exam">low-speed breaker closes after 20 seconds</span>. <span class="hi-trap">There is NO immediate start for standby CFCUs — ALL CFCUs (running and standby) start in low speed after the same 20-second delay.</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
-- Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]]
+- Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
 - Related JPMs: [[2023 JPM Sim-f]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
