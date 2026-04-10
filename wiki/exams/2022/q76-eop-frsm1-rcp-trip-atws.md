@@ -18,7 +18,7 @@ aliases:
 At time 1000;<br>
 • A Reactor Trip First Out annunciator is in alarm with the reactor at power.<br>
 • The reactor did NOT trip.<br>
-• The crew entered 1-EOP-FRSM-1, Response to Nuclear Power Generation - ATWS.<br><br>
+• The crew entered <span class="val-trip">1-EOP-FRSM-1</span>, Response to Nuclear Power Generation - ATWS.<br><br>
 At time 1010;<br>
 • Power Range NIS are indicating 5.2%.<br>
 • Intermediate Range Startup Rate is -0.19 DPM.<br>
