@@ -117,6 +117,13 @@ The 37000 gallon RWST limit for Modes 5 and 6 is based on: 21210 gal (undetectab
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A2</div>
+Post-boration TS evaluation: with RWST at 2350 ppm and BAST at 6650 ppm, <span class="hi-exam">TS 3.1.2.6 Figure 3.1-2 requires combined BAST level > 96.5%</span>. After rapid boration for 3 stuck rods (4200 gal total), BASTs drop from 70% to 43% each (86% combined) — below required level. <span class="hi-exam">LCO 3.1.2.6.a.1 NOT met: restore boric acid storage system within 72 hours or Hot Standby in 6 hours.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]]
+- Related JPMs: [[2022 JPM SRO-A2]]
+- Related exam: [[2022 NRC Operating Exam]]

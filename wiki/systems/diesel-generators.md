@@ -79,10 +79,15 @@ SBO Diesel Control Air Compressor: backup control air source when all ECACs are 
 EDG common mode failure TS 3.8.1.1 actions: when a failure cause (e.g. K1C relay) is identified that could affect operable EDGs with the same components, the SRO must apply <span class="hi-exam">action b.3 (perform operability run on remaining EDGs within 24 hours)</span> AND <span class="hi-exam">action b.4 (restore inoperable EDG within 72 hours)</span>. A common mode failure does NOT automatically make all EDGs inoperable — the remaining EDGs are presumed operable until demonstrated otherwise. <span class="hi-trap">TS 3.0.3 does NOT apply because action "e" exists for two or more diesels inoperable. Do not declare all EDGs inoperable based solely on a common mode concern.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A5</div>
+Loss of ALL AC power to Unit 2 — General Emergency classification: <span class="hi-exam">2A EDG tripped on overspeed (bent fuel rack linkage, 5 hrs to repair), 2B 4KV Vital Bus damaged (ground fault), 2C EDG engine failure (piston failure)</span>. Combined with loss of both offsite sources (23 SPT in maintenance, 24 SPT internal fault), this constitutes <span class="hi-exam">EAL SG1.1 — Loss of AC Power at GE level</span>. AC power cannot be restored within the EAL timeframe.
+</div>
+
 ## Connections
 
 - Related exam questions: [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
-- Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
-- Related JPMs: [[2023 JPM IP-i]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
+- Related JPMs: [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
 - Related operating exam: [[2023 NRC Operating Exam]]

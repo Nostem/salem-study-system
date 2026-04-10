@@ -71,9 +71,14 @@ Provides the Secondary Communicator with a structured log and checklist for emer
 ERDS activation: must select the correct unit's <span class="hi-exam">CONNECT button on the appropriate Salem 1 or Salem 2 ERDS Link Control and Status Display Screen</span>. Selecting the wrong unit is a critical error. Verify successful activation by observing Status = "Transmitting Data" and "Messages Sent" value increasing above zero.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A5</div>
+Emergency classification and ICMF completion (time-critical, <span class="hi-exam">15/15 minutes</span>): loss of all AC power to Unit 2 (3 EDGs + 2 SPTs lost) classifies as <span class="hi-exam">GENERAL EMERGENCY per EAL SG1.1 (Section S — System Malfunction, S1 Loss of AC Power)</span>. ICMF Attachment 4 (EP-SA-325-F4) Sections I-V. PAR determination via Appendix 1: not based on loss of 3 fission product barriers, not hostile action — select <span class="hi-exam">Default PAR (No RPSA): Evacuate 0-5 miles, Monitor & Prepare 5-10 miles</span>.
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]]
+- Related systems: [[RPS/SSPS]], [[EDGs]], [[4KV]]
 - Related exam questions: [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]]
-- Related JPMs: [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]]
+- Related exam: [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

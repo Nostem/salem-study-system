@@ -32,5 +32,7 @@ An area with <span class="hi-exam">1100 mR/hr</span> readings is a <span class="
 
 ## Connections
 
+- Related procedures: [[RP-AA-203 — Exposure Control and Authorization]], [[RP-SA-102 — Containment Entries at Power]]
 - Related exam questions: [[2022 Q72]]
-- Related exam: [[2022 NRC Written Exam]]
+- Related JPMs: [[2022 JPM SRO-A4]]
+- Related exam: [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -193,10 +193,16 @@ CONTAINMENT INTEGRITY ensures that the containment will perform its designed saf
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-6-1.pdf" target="_blank">View TS PDF (Containment)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-2.pdf" target="_blank">View TS PDF (Spray/Cooling)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-3.pdf" target="_blank">View TS PDF (Isolation)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-6.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A3</div>
+TS LCO 3.6.3 containment isolation valve operability: <span class="hi-exam">2VC5 stroke time of 2.83 seconds is in the REQUIRED ACTION RANGE (> 2.0 seconds)</span> — immediately declare inoperable. Actions: (1a) TS action applicable, (1b) close and deactivate companion valve 2VC6 within <span class="hi-exam">4 hours</span>, OR (1c) isolate penetration within 4 hours, OR (1d) Hot Standby in 6 hours and Cold Shutdown in 30 hours.
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]], [[ECCS]]
 
 - Related concepts: [[ESF & Design]]
 - Related exam questions: [[2023 Q54]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2022 JPM SRO-A3]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

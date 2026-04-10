@@ -25,9 +25,14 @@ Performs inservice testing (IST) of containment ventilation isolation valves per
 Surveillance test review catches two errors: <span class="hi-exam">2VC13 stroke time is in the REQUIRED ACTION RANGE</span> (not SAT) — declare inoperable, enter TS LCO 3.6.3 (4 hours to restore, close 2VC14, isolate penetration, or begin shutdown). <span class="hi-exam">2VC12 stroke time is in the REQUIRED EVALUATION RANGE</span> (not SAT) — must immediately retest with results evaluated by IST Implementation Engineer, or declare inoperable.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A3</div>
+Surveillance review catches <span class="hi-exam">2VC5 stroke time of 2.83 seconds in the REQUIRED ACTION RANGE (> 2.0 seconds)</span> — immediately declare 2VC5 inoperable, enter TS LCO 3.6.3. Actions: close and deactivate companion valve 2VC6 within 4 hours (action 1.b), OR isolate penetration within 4 hours (action 1.c), OR Hot Standby in 6 hours and Cold Shutdown in 30 hours (action 1.d).
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related JPMs: [[2023 JPM SRO-A2]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM SRO-A2]], [[2022 JPM SRO-A3]]
+- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
