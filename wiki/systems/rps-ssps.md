@@ -1,15 +1,18 @@
 ---
-title: Instrumentation and Controls
+title: RPS/SSPS
 category: systems
 status: draft
 aliases:
+  - Instrumentation and Controls
   - I&C
   - reactor trip system
   - RTS
   - ESFAS
+  - reactor protection
+  - solid state protection
 ---
 
-# Instrumentation and Controls
+# RPS/SSPS
 
 ## Function
 
@@ -78,11 +81,6 @@ RCP underfrequency reactor trip logic: <span class="hi-exam">1/2 on (H or E bus)
 | C-5 | 1/1 turbine pressure below setpoint | Blocks automatic rod withdrawal | UFSAR T7.2-2 |
 
 Note: Automatic rod withdrawal is disabled at Salem. (UFSAR T7.2-2)
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q55</div>
-<span class="hi-exam">Urgent Failure alarm prevents ALL rod motion in both Manual and Automatic.</span> When Urgent Failure is present, rods are held in position by the <span class="hi-exam">stationary gripper coil energized at a reduced current</span>. The moveable gripper coil is de-energized. Rods cannot be inserted even in Manual. (Ref: S2.OP-AR.ZZ-0012)
-</div>
 
 ## ESF Actuation Signals
 
@@ -172,28 +170,14 @@ SSPS Train A de-energizes UV coils for <span class="hi-exam">RTB 'A' and BYB 'B'
 Phase A (ØA) indication on 2CC1 SAFEGUARDS ACTUATION Bezels: <span class="hi-exam">Red light LIT = train actuated</span>. <span class="hi-exam">Red light OUT = train failed to actuate</span>. On 2RP4, status lights LIT = component repositioned to safeguard position. Per EOP-TRIP-1 step 12, if any safeguards valve not in required position, <span class="hi-exam">place valves in safeguards position manually</span>.
 </div>
 
-## Nuclear Instrumentation Ranges
-
-- **Source Range:** Two channels, used during shutdown and startup
-- **Intermediate Range:** Two channels, used during startup
-- **Power Range:** Four channels, used during power operation (provides input to OT Delta-T, OP Delta-T, high flux trips, and rod control)
-(UFSAR 7.2.1.2)
-
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q72</div>
-Subcritical rod withdrawal response: after a short rod withdrawal with the reactor still subcritical, <span class="hi-exam">SR counts rapidly increase then stabilize at a new higher value</span> (subcritical multiplication reaches new equilibrium at higher keff). <span class="hi-exam">Startup rate (SUR) rapidly increases then gradually decreases to zero</span>. SUR returns to zero because the reactor is still subcritical — a sustained positive SUR only exists at criticality. <span class="hi-trap">SR counts do NOT return to the previous value (they stabilize higher) and SUR does NOT remain at a positive value (it decays to zero).</span>
+<div class="callout-label">Exam — 2023 Q65</div>
+SSPS Train Disagreement: <span class="hi-exam">"SI & FW ISOL" Red lamp on 2RP4 FLASHES when one Train of SI has actuated and the other has not</span> (train disagreement). Lamp is LIT solid when both trains actuate. The "SI RESET" Green bezel light on the failed train's Safeguards panel will be LIT (indicating that train did not actuate).
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q11</div>
-Loss of a vital instrument bus (e.g. 1B) causes associated NI channels to <span class="hi-exam">fail low</span> (SR, IR, and PR monitors lose power). The bi-stables trip to SSPS. Above <span class="hi-exam">P-6 (approximately 1E-10 amps / ~1% power)</span> the SR trip is blocked. Below <span class="hi-exam">P-10 (10% power)</span> the IR high flux trip is active with <span class="hi-exam">1/2 coincidence</span>. At 8% power (above P-6, below P-10): SR trip blocked, PR needs 2/4 (only 1 channel affected), but the IR trip actuates on 1/2 IR bi-stables tripped — reactor trips.
-</div>
-
-## Process Radiation Monitors
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q49</div>
-SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: when the check source pushbutton is pressed, counts rise then <span class="hi-exam">return to the original reading</span> (not held high while button is pressed). During the check source, <span class="hi-exam">interlocks are NOT expected to actuate</span>. (Ref: S1.OP-ST.RM-0001)
+<div class="callout-label">Exam — 2023 Q56</div>
+Rod Position Indication: <span class="hi-exam">Only Group 1 Demand Steps input into the Plant Computer</span>. Per S2.OP-DL.ZZ-0003, either the Group Demand Counter or Plant Computer will satisfy the TS 3.1.3.2.1 surveillance for Group 1 only.
 </div>
 
 ## Tech Spec LCOs
@@ -202,64 +186,23 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.1]]** — Reactor Trip System Instrumentation
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.2]]** — ESF Actuation System Instrumentation
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q56</div>
-Rod Position Indication: <span class="hi-exam">Only Group 1 Demand Steps input into the Plant Computer</span>. Per S2.OP-DL.ZZ-0003, either the Group Demand Counter or Plant Computer will satisfy the TS 3.1.3.2.1 surveillance for Group 1 only.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q57</div>
-In-Core Temperature Monitoring (CET) System: reference junction box is located outside containment. Ambient temperature changes are compensated by a <span class="hi-exam">temperature compensator circuit</span> — CET readings are NOT affected by reference junction box temperature changes. In-Core system design upper range is <span class="hi-exam">2300°F</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q62</div>
-1R1A (Control Room Area) radiation monitor in alarm: <span class="hi-trap">does NOT automatically actuate CAV in AP Mode</span>. Requires manual actuation — press ACCIDENT PRESSURIZED pushbutton at 1RP2 to actuate BOTH units' CAV into AP Mode. Emergency intake dampers open on the unaffected unit.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q65</div>
-SSPS Train Disagreement: <span class="hi-exam">"SI & FW ISOL" Red lamp on 2RP4 FLASHES when one Train of SI has actuated and the other has not</span> (train disagreement). Lamp is LIT solid when both trains actuate. The "SI RESET" Green bezel light on the failed train's Safeguards panel will be LIT (indicating that train did not actuate).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q82</div>
-P-6 permissive and IR NIS overlap: when P-6 is LIT, IR channels should indicate approximately <span class="hi-exam">1E-5% power</span>. If an IR channel reads 1E-8% power with P-6 LIT, that channel is not indicating the expected SR/IR overlap and is INOPERABLE. Per TS 3.3.1.1 bases, the <span class="hi-exam">24-hour action time</span> for one inoperable IR channel accounts for the <span class="hi-exam">low probability of failure of the operable IR channel</span> during this period. <span class="hi-trap">Trap: the bases cite low probability of channel failure, NOT low probability of reactivity events.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 Sim-g</div>
-Failed high Tavg channel (AB.ROD-0003): recognize unwarranted rod insertion, take rods to manual. Adjust rods to control <span class="hi-exam">Tavg within 1.5F of Tprogram</span>. Stabilize PZR level (Master Flow Controller to manual). Defeat <span class="hi-exam">BOTH Differential Temperature AND Average Temperature</span> deviation alarms on 2CC2. Select valid recorder channel (2, 3, or 4) for both parameters.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 IP-j</div>
-Rod Drive M-G Set paralleling (S1.OP-SO.RCS-0001): incoming set voltage adjusted <span class="hi-exam">0-2.5V higher</span> than running set via DMM (not installed voltmeter). Move <span class="hi-exam">single SYNCHRONIZE handle</span> from running to incoming set, place in ON — generator breaker auto-closes. Do NOT manually close generator breaker.
-</div>
-
 ## Connections
 
-- Related concepts: [[Nuclear Design]], [[Reactivity and Reactor Control]]
+- Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]]
+- Related concepts: [[Reactivity and Reactor Control]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]]
-- Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
   - [[2023 Q1]] — Low RC flow 2/3 coincidence / P-7 vs P-8 permissive logic
   - [[2023 Q5]] — OT Delta-T pressure input / OP Delta-T has no pressure input
-  - [[2023 Q11 — Loss of Vital Instrument Bus / NI Channel Response|2023 Q11]] — Vital instrument bus loss / NI channels fail low / IR trip logic
   - [[2023 Q21 — Containment Spray Logic / Channel Removed from Service|2023 Q21]] — Containment spray 2/4 logic reduces to 2/3 with channel bypassed
   - [[2023 Q34 — MPC Fails Low / PZR Pressure Response|2023 Q34]] — MPC fails low / PORVs interlock from PZR pressure not MPC
   - [[2023 Q35 — Reactor Trip Logic at 7% Power / Which Trip Active|2023 Q35]] — PZR pressure high trip active at all power levels (no permissive)
   - [[2023 Q36 — RCP Underfrequency Logic / 1/2 Taken Twice|2023 Q36]] — RCP underfrequency 1/2 taken twice logic / individual breakers trip on UV not UF
-  - [[2023 Q49 — SGBD Radiation Monitor Check Source|2023 Q49]] — SGBD rad monitor check source response and interlocks
   - [[2023 Q53 — Containment Vacuum Relief Isolation Signals|2023 Q53]] — Vacuum relief isolates on SI or CVI, not Phase A
-  - [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]] — Urgent Failure prevents all rod motion / stationary gripper coil holds rods
   - [[2023 Q56]] — Rod Position Indication / Group Demand Step Counter / Plant Computer Group 1 only
-  - [[2023 Q57]] — In-Core Temperature Monitoring CET / reference junction compensation / 2300°F limit
-  - [[2023 Q62]] — Area Rad Monitor 1R1A / manual CAV AP mode from 1RP2
   - [[2023 Q65]] — SSPS train disagreement / SI & FW ISOL lamp flashing / SI RESET green light
-  - [[2023 Q72]] — Subcritical SR counts stabilize higher / SUR decays to zero after rod withdrawal
   - [[2023 Q80]] — ATWS FRSM-1 turbine trip verification via stop valve bi-stables on 2RP4
-  - [[2023 Q82]] — IR NIS P-6 permissive / TS 3.3.1.1 bases for 24-hour action time
   - [[2023 Q92]] — PZR pressure channel failure / spurious trip+SI / RAL 11.3.2 reportability
   - [[2022 Q1]] — SSPS Train A/B UV coil and shunt coil assignments to RTBs/BYBs
   - [[2022 Q3]] — Phase A (ØA) safeguards actuation indication on 2CC1/2RP4

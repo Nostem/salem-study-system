@@ -44,7 +44,11 @@ status: draft
 - [[EDGs]]
 - [[SECs]]
 - [[DC Power]]
-- [[Instrumentation and Controls]]
+- [[RPS/SSPS]]
+- [[Excore NIs]]
+- [[Control Rod Drive]]
+- [[Radiation Monitoring]]
+- [[Incores]]
 - [[AMSAC]]
 - [[Main Steam and Feedwater]]
 - [[Radioactive Waste Management]]
@@ -73,9 +77,6 @@ status: draft
 - [[2022 NRC Written Exam]]
 - [[2023 NRC Written Exam]]
 - [[2023 NRC Operating Exam]]
-
-## Concepts
-- [[Radiation Protection]]
 
 ## EOPs
 - [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]

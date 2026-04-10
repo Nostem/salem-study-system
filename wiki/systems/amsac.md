@@ -5,6 +5,7 @@ status: draft
 aliases:
   - ATWS Mitigation System
   - ATWS mitigation
+  - AMSAC
 ---
 
 # AMSAC (ATWS Mitigation System Actuation Circuitry)
@@ -51,4 +52,5 @@ Provides a diverse backup to the Reactor Protection System for mitigating Antici
 
 ## Connections
 
+- Related systems: [[RPS/SSPS]]
 - Related concepts: [[Accident Analysis]] (ATWS section)

@@ -1,0 +1,56 @@
+---
+title: Control Rod Drive
+category: systems
+status: draft
+aliases:
+  - CRDM
+  - rod control
+---
+
+# Control Rod Drive
+
+## Function
+
+The Control Rod Drive Mechanism (CRDM) provides the means for inserting, withdrawing, and holding control rod assemblies. Rod motion is controlled by energizing and de-energizing the lift coil, moveable gripper coil, and stationary gripper coil in a programmed sequence. Rod control interlocks (rod stops) prevent unsafe rod withdrawal conditions. (UFSAR 7.7)
+
+## Rod Control Interlocks (Rod Stops)
+
+These interlocks are duplicated here from [[RPS/SSPS]] (the master reference) for study convenience.
+
+| Designation | Derivation | Function | Source |
+|------------|-----------|----------|--------|
+| C-1 | 1/2 intermediate range above setpoint | Blocks auto and manual rod withdrawal | UFSAR T7.2-2 |
+| C-2 | 1/4 power range above setpoint | Blocks auto and manual rod withdrawal | UFSAR T7.2-2 |
+| C-3 | 2/4 OT Delta-T above setpoint | Blocks rod withdrawal; actuates turbine runback | UFSAR T7.2-2 |
+| C-4 | 2/4 OP Delta-T above setpoint | Blocks rod withdrawal; starts turbine runback | UFSAR T7.2-2 |
+| C-5 | 1/1 turbine pressure below setpoint | Blocks automatic rod withdrawal | UFSAR T7.2-2 |
+
+Note: Automatic rod withdrawal is disabled at Salem. (UFSAR T7.2-2)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q55</div>
+<span class="hi-exam">Urgent Failure alarm prevents ALL rod motion in both Manual and Automatic.</span> When Urgent Failure is present, rods are held in position by the <span class="hi-exam">stationary gripper coil energized at a reduced current</span>. The moveable gripper coil is de-energized. Rods cannot be inserted even in Manual. (Ref: S2.OP-AR.ZZ-0012)
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-g</div>
+Failed high Tavg channel (AB.ROD-0003): recognize unwarranted rod insertion, take rods to manual. Adjust rods to control <span class="hi-exam">Tavg within 1.5F of Tprogram</span>. Stabilize PZR level (Master Flow Controller to manual). Defeat <span class="hi-exam">BOTH Differential Temperature AND Average Temperature</span> deviation alarms on 2CC2. Select valid recorder channel (2, 3, or 4) for both parameters.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 IP-j</div>
+Rod Drive M-G Set paralleling (S1.OP-SO.RCS-0001): incoming set voltage adjusted <span class="hi-exam">0-2.5V higher</span> than running set via DMM (not installed voltmeter). Move <span class="hi-exam">single SYNCHRONIZE handle</span> from running to incoming set, place in ON — generator breaker auto-closes. Do NOT manually close generator breaker.
+</div>
+
+## Tech Spec LCOs
+
+- **[[TS 3/4.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
+
+## Connections
+
+- Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
+- Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
+- Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+  - [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]] — Urgent Failure prevents all rod motion / stationary gripper coil holds rods
+  - [[2023 JPM Sim-g]] — Failed high Tavg channel / AB.ROD-0003 recovery
+  - [[2023 JPM IP-j]] — Rod Drive M-G Set paralleling
