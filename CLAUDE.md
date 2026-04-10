@@ -197,3 +197,21 @@ Before creating or modifying any wiki article, run:
 To rebuild the index: `python3 scripts/wiki_index.py rebuild`
 To see article structure: `python3 scripts/wiki_index.py sections <slug>`
 To find missing backlinks: `python3 scripts/wiki_index.py backlinks <slug>`
+
+## Subagent Workflow for Exam Ingestion
+
+When ingesting exam questions, do NOT write custom prompts that re-summarize the skill rules. Point subagents directly at the skill file. The skill IS the specification.
+
+**Question creation + backfill subagent prompt:**
+```
+Read the exam ingestion skill at /Users/fredm/.claude/skills/salem-exam-ingestion/SKILL.md.
+Execute Steps 4 through 6 for questions XX-YY.
+Source data: data/exams/temp-YYYY-qXX-qYY-raw.txt
+Follow every rule in the skill exactly — especially the Connections procedure extraction
+checklist and the backfill requirements in Step 5.
+Work from: /Users/fredm/projects/salem-study-system
+```
+
+**Why this matters:** Custom prompts that summarize the skill are a lossy compression — they
+consistently drop the procedure extraction checklist, knowledge gap check, and half the common
+mistakes list. The skill file is 550+ lines for a reason. Let the agent read it directly.
