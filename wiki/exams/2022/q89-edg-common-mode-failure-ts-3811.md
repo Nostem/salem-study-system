@@ -21,7 +21,7 @@ aliases:
 • Troubleshooting determined that the K1C relay in the diesel start circuit failed to actuate.<br>
 • The 1B and 1C EDGs have these same relay models installed.<br><br>
 In accordance with Technical Specification, which ONE of the following is the required action(s)?<br><br>
-[REFERENCE PROVIDED]
+<span class="val-normal">[REFERENCE PROVIDED]</span>
 </div>
 
 <div style="margin-bottom:14px;">
