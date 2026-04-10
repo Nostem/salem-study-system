@@ -51,9 +51,14 @@ Provides guidance for responding to a loss of control/instrument air on Salem Un
 21SW122 (SW Inlet Control Valve to CCW HX) <span class="hi-exam">fails OPEN on loss of air</span> (fails CLOSED on loss of 125VDC). When open, SW flow rises through CCW HX, lowering CCW temperature, which lowers RHR HX outlet temperature and raises cooldown rate. Can be manually operated per Attachment 2.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q88</div>
+On loss of all control air with letdown isolated: <span class="hi-exam">1CV55 fails OPEN and 1CV71 fails CLOSED</span>, resulting in higher charging flow and pressure to RCP seals, causing <span class="hi-exam">PZR level to RISE</span>. Two preferred actions: (1) locally control charging flow by adjusting <span class="hi-exam">1CV54, CENT CHG PUMP FLOW CONT VLV</span>, or (2) transfer to <span class="hi-exam">13 PDP</span> whose speed controller fails at the low speed stop, minimizing seal flow. <span class="hi-trap">PZR level rises (not lowers) because charging flow increases with letdown isolated and CV55 failed open.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]]
+- Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]]
-- Related exam questions: [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

@@ -43,4 +43,5 @@ In accordance with RP-AA-460, Controls for High and Very High Radiation Areas, w
 
 ## Connections
 
+- Related admin: [[RP-AA-460 — Controls for High and Very High Radiation Areas]]
 - Related exam: [[2022 NRC Written Exam]]

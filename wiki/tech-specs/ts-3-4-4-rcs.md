@@ -298,6 +298,11 @@ b. RCS depressurized with an RCS vent ≥ <span class="hi">3.14 square inches</s
 | One POPS inoperable (Modes 5-6, head installed) | Restore OR depressurize and vent | <span class="val-alarm">24 hours</span> then 8 hrs |
 | Both POPS inoperable | Depressurize and vent through ≥3.14 in² vent | <span class="val-trip">8 hours</span> |
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q91</div>
+Action "e": <span class="hi-exam">LCO 3.0.4.b is NOT applicable when entering MODE 4 from MODE 5</span> with an inoperable POPS channel. A risk assessment cannot be used to justify this mode change. The LTOP channel <span class="hi-exam">must be restored to OPERABLE status before entering Mode 4</span>. <span class="hi-trap">Do not confuse with actions "a" (7-day restore in Mode 4) or "b" (24-hour restore in Modes 5-6) — those apply AFTER entering the applicable mode, not for making the mode change.</span>
+</div>
+
 ### RCS Vents (3/4.4.11)
 
 **DELETED** — Relocated from Technical Specifications.
@@ -310,5 +315,5 @@ b. RCS depressurized with an RCS vent ≥ <span class="hi">3.14 square inches</s
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2023 Q97]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2022 Q91]], [[2023 Q97]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

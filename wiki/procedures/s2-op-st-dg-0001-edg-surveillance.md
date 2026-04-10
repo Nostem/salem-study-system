@@ -25,9 +25,14 @@ P&L 2.1.6: <span class="hi-exam">Only one DG per Unit may be synchronized to the
 EDG minimum load requirement: <span class="hi-exam">500 KW</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q89</div>
+TS 3.8.1.1 common mode failure: when an EDG fails due to a component (e.g., K1C relay) and the same component is installed in other EDGs, a <span class="hi-exam">common mode failure exists or cannot be ruled out</span>. Action b.3 requires performing an <span class="hi-exam">operability run within 24 hours</span> on the remaining operable EDGs. Action b.4 requires restoring the inoperable EDG within <span class="hi-exam">72 hours</span>. <span class="hi-trap">Common mode failure does not automatically make all EDGs inoperable — TS 3.0.3 does NOT apply because action "e" exists for two or more inoperable diesels.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[EDGs]]
 - Related tech specs: [[TS 3/4.8 — Electrical]]
-- Related exam questions: [[2022 Q50]], [[2023 Q89]]
+- Related exam questions: [[2022 Q50]], [[2022 Q89]], [[2023 Q89]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

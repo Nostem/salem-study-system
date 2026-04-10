@@ -43,7 +43,13 @@ A <span class="hi-exam">#3 seal leak</span> is indicated by STANDPIPE LEVEL-LO a
 Loss of CCW thermal barrier: if <span class="hi-exam">1CC190 closes (common return), ALL RCP thermal barriers lose CCW</span>. RCPs may continue running if charging flow is maintained. <span class="hi-trap">Trip RCP within 2 minutes only if BOTH CCW and charging are lost.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q86</div>
+Attachment 1: #1 seal leak-off flow <span class="hi-exam">>= 6 gpm</span> indicates a <span class="hi-exam">#1 seal failure</span> — go to Attachment 2 (Stopping RCPs). Attachment 2 directs: <span class="hi-exam">manual reactor trip, stop affected RCP, then 3-5 minutes after stopping close the CV104 valve</span>, then go to EOP-TRIP-1. <span class="hi-trap">High seal leak-off indicates #1 seal failure (not #2). An orderly shutdown within 8 hours applies to a degraded #2 seal (leak-off < 0.8 gpm or slowly approaching 6 gpm), NOT a failed #1 seal at >= 6 gpm.</span>
+</div>
+
 ## Connections
-- Related systems: [[RCPs]], [[CCW]]
-- Related exam questions: [[2022 Q5]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
+- Related systems: [[RCPs]], [[CCW]], [[CVCS]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
+- Related exam questions: [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
