@@ -14,7 +14,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-In accordance with NC.EP-EP.ZZ-0102, Emergency Coordinator Response, complete the following statement regarding accountability.<br><br>
+In accordance with <span class="hi">NC.EP-EP.ZZ-0102, Emergency Coordinator Response</span>, complete the following statement regarding accountability.<br><br>
 The Emergency Response Organization (ERO) accountability process must be completed within a MAXIMUM of <span class="blank">_(1)_</span> minutes from the time a(an) <span class="blank">_(2)_</span> is declared.
 </div>
 
