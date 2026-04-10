@@ -20,7 +20,7 @@ aliases:
 • The crew closed 2PR6, PZR PORV Block Valve, to isolate the failed open 2PR1.<br>
 <br>
 Subsequently, Console Bezel Alarm, PRT PRESS HI, is now LIT<br>
-• PRT Pressure is indicating 12 psig.<br>
+• PRT Pressure is indicating <span class="val-alarm">12 psig</span>.<br>
 <br>
 Which ONE of the following completes both statements?<br>
 <br>
