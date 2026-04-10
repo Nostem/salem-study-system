@@ -1,0 +1,2234 @@
+
+
+===== PAGE 60 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 60 
+ 
+26 10-111 Points: 1.00 
+ 
+Given: 
+ Unit 2 is implementing 2-EOP-FRHS-2, Respons e to Steam Generator Overpressure, due to high 
+pressure in 21 Steam Generator. 
+ The crew is at Caution step C6-1 that reads “AFW FLOW SHOULD REMAIN ISOLATED TO 
+AFFECTED SG(s) UNTIL A STEAM RELEASE PATH IS ESTABLISHED”. 
+ 
+In accordance with 2-EOP-FRHS-2, which ONE of the following is the reason for this step? 
+ 
+A. Operation of the Turbine Driven AFW Pump at high steam pressure may cause turbine damage. 
+B. AFW is a high pressure system which may cause fu rther overpressure in a SG with no steam release 
+path. 
+C. Differential temperatures between the existing high pressure conditions in the SG and the cold AFW will 
+cause tube failure due to thermal stress. 
+D. AFW pumps would operate near their shutoff head wh ich could result in pump overheating or damage. 
+ 
+ 
+  
+
+===== PAGE 61 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 61 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect. Plausible the 23 AFW Pump is used as a means to vent the SG(s) and the candidate may 
+believe that high pressure in the affected SG could cause damage to the turbine blades. 
+B. Correct.  IAW 2-EOP-FRHS-2, step C6-1 bases,  if AFW flow is reestablished to an affected SG prior 
+to establishing a steam release path, the AFW flow could further increase the affected SG pressure. 
+C. Incorrect. Plausible since this bases is used on other FRHS procedures but it is not the reason for this 
+action in FRHS-2. 
+D. Incorrect. Plausible because the applicant may fail to recall that the AFW pumps have min flow 
+protection. 
+ 
+ 
+Technical References:   2-EOP-FRHS-2, Rev 40 
+Proposed References to be provided: None 
+Learning Objective: NOS05FRHS00, Objective 10. Describe the basis for each 
+step, caution, and note, in 2-EOP-FRHS-1 Thru 5. 
+Question Source: Bank – DC Cook 2018 NRC RO25 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.5 / 41.10 / 45.6 / 45.13 
+Level:      RO 
+Category/System:    10- Steam Generator Overpressure 
+K/A #:      W E13 EK3.2 
+ Knowledge of the reasons for the following responses as they 
+apply to the (Steam Generator Overpressure): Normal, 
+abnormal and emergency operating procedures associated 
+with (Steam Generator Overpressure). 
+Importance:     2.9 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 22 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked the reason for isolating AFW flow to 
+the affected SGs during a SG Overpressure event in EOP-FRHS-2. 
+ 
+  
+
+===== PAGE 62 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 62 
+ 
+27 10-112 Points: 1.00 
+ 
+Given: 
+ Salem Unit 2 is performing 2-EOP-LOCA-2, Post LOCA Cooldown and Depressurization. 
+ ALL ECCS Pumps are running. 
+ 21 Charging Pump was stopped at step 13, Charging Pump Reduction. 
+ The crew is at step 14, SI Pump Reduction. 
+ Conditions are met for stopping one Safety Injection (SI) Pump. 
+ 
+In accordance with 2-EOP-LOCA-2, which ONE of the following identifies the SI Pump that should be 
+stopped and the reason for the selection? 
+ 
+ 
+A. 21 SI Pump to reduce the load on the bus for starting additional loads later. 
+B. 22 SI Pump to reduce the load on the bus for starting additional loads later. 
+C. 22 SI Pump to ensure ECCS injection flow if any single vital bus failure occurs. 
+D. 21 SI Pump to ensure ECCS injection flow if any single vital bus failure occurs. 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 63 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 63 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect. First part is incorrect.  21 SI pump is supplied from A bus.  If C bus is lost, then both 22 
+Charging and 22 SI pump will be lost and resulting in a complete or significant loss of ECCS flow 
+Second part is incorrect.  Credible distractor if the operator believes that stopping the SI pump is to 
+reduce load on the bus.  Reducing load on the bus is not the reason for stopping an SI pump on an 
+alternate bus. 
+B. Incorrect. First part is correct.  Second part is incorrect.  Reducing load on the bus is not the reason for 
+stopping an SI pump on an alternate bus. 
+C. Correct.  IAW 2-EOP-LOCA-2 Note on step N13-2, “The centrifugal charging pumps and SI pumps 
+should be stopped on alternate ECCS trains when possible”.  Since 21 Charging pump (B bus) was 
+stopped and that leaves 22 Charging pump running on C bus. 21 SI pump is supplied from A bus and 22 
+SI pump supplied from C bus, the operator should stop 22 SI pump (C bus) to ensure ECCS flow if a 
+loss of a vital bus occurs (21 CV pump B bus and 21 SI pump A bus). 
+D. Incorrect. 21 SI pump is supplied from A bus.  If C bus is lost, then both 22 Charging and 22 SI pump 
+will be lost and resulting in a complete or significant loss of ECCS flow. 
+ 
+ 
+Technical References:   2-EOP-LOCA-2, Rev 40 
+Proposed References to be provided: None 
+Learning Objective: NOS05LOCA02-06, Objective 1, Determine the indications that 
+are monitored to ensure proper system/component operation 
+for each step in the EOP for POST LOCA COOLDOWN AND 
+DEPRESSURIZATION 
+Question Source: Bank – Salem 2011 NRC RO23 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.5 / 45.6 
+Level:      RO 
+Category/System:    10-LOCA Cooldown - Depressurization 
+K/A #:      W E03 EA1.1 
+ Ability to operate and/or monitor the following as they apply to 
+the (LOCA Cooldown and Depressurization): Components, and 
+functions of control and safety systems, including 
+instrumentation, signals, interlocks, failure modes, and 
+automatic and manual features. 
+Importance:     4.0 
+Tier/Group     Emergency and Abnormal Plant Evolutions-Tier 1/Group 2 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked which SI Pump should be selected 
+next to be stopped next and the reason why.  In this case, since 22 Charging Pump is running supplied from 
+2C 4KV bus, the candidate needs to stop 22 SI Pump is supplied from 2C 4KV bus. This will ensure that on 
+a loss of a vital bus on either CV or SI pump will be running.  
+
+===== PAGE 64 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 64 
+ 
+Additional Reference: 2-EOP-LOCA-2 Rev 40 Sheet 2 
+ 
+ 
+ 
+  
+
+
+===== PAGE 65 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 65 
+ 
+28 04-041 Points: 1.00 
+ 
+Which ONE of the following is a design feature of the Reactor Coolant Pump #2 seal?  
+ 
+A. Film riding seal with a design leak-off of 3 gph to the RCP standpipe; allows the RCP to operate 
+indefinitely without restrictions upon a loss of the #1 seal. 
+B. Film riding seal with a design leak-off of 100 cc/hr to the RCP standpipe; serves as only an 
+emergency backup upon a total loss of the #1 seal. 
+C. Face rubbing seal with a design leak-off of 3 gph to the RCP standpipe; serves as only an 
+emergency backup upon a total loss of the #1 seal. 
+D. Face rubbing seal with a design leak-off of 100 cc/hr to the RCP standpipe; allows the RCP to 
+operate indefinitely without restrictions upon a loss of the #1 seal. 
+ 
+ 
+  
+
+===== PAGE 66 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 66 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect. First part is incorrect.  #2 seal is not a film riding seal.  Second part is incorrect.  Plausible 
+because the #1 seal is a film riding seal design. 
+B. Incorrect. First part is incorrect.  #2 seal is not a film riding seal.  Second part is correct.  Plausible 
+because the #1 seal is a film riding seal design and the 100 cc/hr is for a #3 seal leakage. 
+C. Correct. The #2 RCP seal is designed as a face r ubbing seal.  Normal leakage past the #2 seal is 3 gph 
+and is directed to the #3 seal and the RCP standpipe. Upon a failure of the #1 seal, the #2 seal converts 
+from face rubbing to film riding seal.  In this condition, the #2 seal is NOT a controlled leakage seal.  Not 
+designed for high flow and high temperatures conditions when #1 seal fails.  Acts as only an emergency 
+backup to the loss of #1 seal.  The RCP must be shutdown.  RCP standpipe provides backpressure to 
+limit #2 seal leakage and to maintain a certain pressure against #3 seal. 
+D. Incorrect. First part is incorrect.  #2 seal leakage is 3 gph, 100 cc/hr is the design leakage for #3 seal.  
+Second part is incorrect.  RCP cannot operate indefinitely following loss of #1 seal, the RCP must be 
+shutdown. 
+ 
+ 
+Technical References:   NOS05RCPUMP-16, RCP-1 simplified 
+Proposed References to be provided: None 
+Learning Objective: NOS05RCPUMP-16, Objective 4.  Describe the function of the 
+following components and how their normal and abnormal 
+operation affects the Reactor Coolant Pump: Controlled 
+Leakage Seal Assembly 
+Question Source: Bank – Salem  
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.7 
+Level:      RO 
+Category/System:    04-Reactor Coolant Pump 
+K/A #:      003 K4.07 
+ Knowledge of the RCPS design feature(s) and/or interlock(s) 
+which provide for the following:  Minimizing RCS leakage 
+(mechanical seals) 
+Importance:     3.2 
+Tier/Group     Plant Systems - Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked about the design features of the #2 
+RCP seal.  In this case the candidate is being asked to specific design features such as design leakage 
+past the seal and whether the #2 seal serves as an emergency backup for the #1 seal failure. 
+ 
+ 
+  
+
+===== PAGE 67 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 67 
+ 
+Additional Reference: Simplified RCP-1 
+ 
+ 
+  
+
+
+===== PAGE 68 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 68 
+ 
+29 01-012 Points: 1.00 
+Given: 
+ Salem Unit 2 is at 100% Power. 
+ All systems are in normal alignment and in Automatic. 
+ 21 Mixed Bed Demineralizer is in service. 
+ A malfunction occurs with the 2CC71, Letdown HX Temperature Controller, while operating in 
+AUTO. 
+ 2TI130A, Letdown Temperature, indicates 120 °F and RISING. 
+ 
+Which ONE of the following completes both statements? 
+ 
+1. Based on the above condition, RCS boron concentration will __(1)__. 
+2. What is the expected operator response to prevent exceeding procedural limits, assuming the 
+2CC71 does not respond? 
+ 
+ 
+A. 1)  rise 
+2)  Ensure 2CV21 diverts to VCT 
+B. 1)  rise 
+2)  Ensure 2CV35 diverts to Hold-up Tanks 
+C. 1)  lower 
+2)  Ensure 2CV21 diverts to VCT 
+D. 1)  lower 
+2)  Ensure 2CV35 diverts to Hold-up Tanks 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 69 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 69 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct. Letdown temperature rising will result in the demineralizer releasing boron into the RCS and 
+raising RCS boron concentration.  If letdown temperature continues to rise, then the operator should 
+ensure that the 2CV21 automatically diverts to the VCT to bypass the demineralizers when letdown 
+temperature reaches 136 °F.  The operator can manually select 2CV21 to divert to VCT if the auto 
+function fails.  S2.OP-SO.CVC-0012 states a Limitation of 140 °F to prevent resin damage. 
+B. Incorrect. First part is correct.  Second part is incorrect.  The 2CV35 is downstream of the 
+demineralizers and therefore will not bypass the demineralizers.  2CV35 diverts to CVCS HUT on only a 
+high VCT level.  Plausible because the operator may incorrectly determine that the 2CV35 is used to 
+bypass the demineralizers. 
+C. Incorrect. First part is incorrect.  RCS boron will be released on rising letdown temperature. Second part 
+is correct. 
+D. Incorrect. First part is incorrect.  RCS boron will be released on rising letdown temperature. Second part 
+is incorrect.  The 2CV35 is downstream of the demineralizers and therefore will not bypass the 
+demineralizers.  2CV35 diverts to CVCS HUT on high VCT level.  Plausible because the operator may 
+incorrectly determine that the 2CV35 is used to bypass the demineralizers. 
+ 
+Technical References:   NOS05CVCS00-18, S2.OP-SO.CVC-0012 
+Proposed References to be provided: None 
+Learning Objective: NOS05CVCS00-18, Objective 16. Given a Chemical and 
+Volume Control System failure, predict the effect of the 
+Chemical and Volume Control System failure on the following: 
+Reactor Coolant System 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.10 43.2 / 45.12 
+Level:      RO 
+Category/System:    01-Chemical and Volume Control 
+K/A #:      004 G2.1.32 
+ Ability to explain and apply system limits and precautions. 
+Importance:     3.8 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to describe the effects of the failure 
+of the 2CC71 and rising letdown temperature will have on RCS boron concentration.  In addition, the 
+candidate is being asked what action is expected if letdown temperature continues to rise to prevent 
+exceeding procedural limits. 
+ 
+  
+
+===== PAGE 70 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 70 
+ 
+Additional References:  S2.OP-SO.CVC-0001 
+ 
+ 
+ 
+  
+
+
+===== PAGE 71 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 71 
+ 
+Additional Reference:  S2.OP-SO.CVC-0012 
+ 
+ 
+ 
+  
+
+
+===== PAGE 72 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 72 
+ 
+30 01-013 Points: 1.00 
+Given: 
+ Salem Unit 2 is at 100% Power. 
+ The 2CV4, Letdown Orifice Isolation Valve, is in service. 
+ The crew is transferring CVCS Letdown to the 2CV3, Letdown Orifice Isolation Valve, in accordance 
+with S2.OP-SO.CVC-0001, Charging, Letdown, and Seal Injection. 
+ 2CV18, Letdown Pressure Control Valve, is in MANUAL. 
+ 2CC71, Letdown HX Temperature Control Valve, is in AUTO 
+ The RO opens 2CV3. 
+ 
+Which ONE of the following describes how the 2CV18 will be adjusted and how the 2CC71 will respond to 
+maintain letdown pressure and temperature within limits? 
+ 
+The 2CV18 will be… 
+ 
+A. throttled CLOSE as pressure rises and the 2CC71 will modulate OPEN in response to higher 
+temperature. 
+B. throttled OPEN as pressure rises and the 2CC71 will modulate OPEN in response to higher 
+temperature. 
+C. throttled CLOSE as pressure lowers and the 2CC71 will modulate CLOSE in response to lower 
+temperature. 
+D. throttled OPEN as pressure lowers and the 2CC71 will modulate CLOSE in response to lower 
+temperature. 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 73 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 73 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect. First part is incorrect.  The 2CV18 will be throttled open as pressure rises.  Second part is 
+correct.  Plausible because the operator may incorrectly determine how letdown pressure will respond 
+when two orifice valves are open. 
+B. Correct. When the 2CV3 (45 gpm orifice) is opened, along with 2CV4 already being open, letdown 
+pressure and flow will rise.  With the 2CV18 in Manual, the operator will be required to throttle open the 
+2CV18 to maintain letdown pressure around 300 psig.  The 2CV6 letdown relief valve lifts at 600 psig.  
+As letdown flow rises through the Letdown HX (Non-Regen HX), letdown temperature will rise resulting 
+in the 2CC71 controller demand to rise and open the 2CC71 more to raise CCW flow through the 
+Letdown HX.  If letdown temperature reaches 136 °F, then the 2CV21 will automatically divert flow to 
+the VCT to prevent damage to the Mixed Bed Resin. 
+C. Incorrect. First part is incorrect.  The 2CV18 will be throttled open as pressure rises.  Second part is 
+incorrect.  The 2CC71 will throttle open to lower letdown temperature.  Plausible because the operator 
+may incorrectly determine how letdown pressure will respond when two orifice valves are open. 
+D. Incorrect. First part is incorrect.  The 2CV18 will be throttled open as pressure rises.  Second part is 
+incorrect.  The 2CC71 will throttle open to lower letdown temperature.  Plausible because the operator 
+may incorrectly determine how the 2CV18 should respond when letdown pressure rises. 
+ 
+Technical References:   NOS05CVCS00-18 
+Proposed References to be provided: None 
+Learning Objective: NOS05CVCS00-18, Objective 4, Describe the function and 
+how their normal and abnormal operations affects the Chemical 
+and Volume Control System:  (ix) Letdown Heat Exchanger, (x) 
+Low Pressure Letdown Control Valve, CV18 
+Question Source: Bank – Salem 2006 NRC RO31 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 
+Level:      RO 
+Category/System:    01-Chemical and Volume Control 
+K/A #:      004 K4.11 
+ Knowledge of CVCS design feature(s) and/or interlock(s) which 
+provide for the following:  Temperature/pressure control in 
+letdown line, prevent boiling, lifting reliefs, hydraulic shock, 
+piping damage, and burst. 
+Importance:     3.1 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked how letdown pressure and 
+temperature are controlled when placing a letdown orifice in service to prevent exceeding temperature and 
+pressure limits.  Proper operation of letdown pressure and temperature within limits prevents inadvertent 
+lifting of the letdown relief valve (2CV6) and prevents high letdown temperatures from damaging 
+demineralizers. 
+
+===== PAGE 74 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 74 
+ 
+31 04-042 Points: 1.00 
+Given: 
+ Salem Unit 2 is in MODE 4. 
+ 21 RHR loop is in Shutdown Cooling. 
+ 22 RHR loop is aligned for ECCS injection. 
+ 21RH18, RHR HX Outlet Valve, and 2RH20, RHR HX Bypass Valve, are being throttled to maintain 
+RHR flow at 3000 gpm. 
+ A loss of the 2A 115V Vital Instrument Bus occurs. 
+ 
+Which ONE of the following describes the impact to the RHR loop in service and the RCS temperature? 
+ 
+ 
+A. 21RH18 will CLOSE; 2RH20 will remain as-is; RCS temperature will rise. 
+B. 21RH18 will CLOSE; 2RH20 will OPEN; RCS temperature will rise. 
+C. 21RH18 will OPEN; 2RH20 will remain as-is; RCS temperature will lower. 
+D. 21RH18 will OPEN; 2RH20 will OPEN; RCS temperature will lower. 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 75 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 75 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect. 21RH18 fails open on a loss of 2A VIB and the 2RH20 fails open on a loss of 2D VIB.  Since 
+only 2A VIB was lost, the 21RH18 will open and the 2RH20 will remain as-is.  RCS temperature will 
+lower due to 21RH18 failing open.  Plausible because the operator may incorrectly determine how the 
+valve fails on loss of power. 
+B. Incorrect. Same reason as Ans. A with the exception that the 2RH20 will fail open only when a loss of 
+2D VIB. Plausible because the operator may incorrectly determine how the valve fails on loss of power. 
+C. Correct. Per S2.OP-AB.115-0001, a loss of 2A 115V Vital Instrument Bus will cause the 21RH18 to fail 
+open.  2RH20 will remain as-is and will only fail open when there is a loss of the 2D 115V Vital 
+Instrument Bus.  Failed open 21RH18 will result in an increase in flow through the RHR HX and RCS 
+temperature lowering. 
+D. Incorrect. The 2RH20 will only fail open on a loss of the 2D VIB.  21RH18 failing open will result in the 
+RCS temperature lowering.  Plausible if the operator believes that both valves will fail open on loss of 
+the 2A VIB. 
+ 
+Technical References:   NOS05RHR000-19, S2.OP-AB.115-0001 
+Proposed References to be provided: None 
+Learning Objective: NOS05RHR000-19, Objective 4, Describe how the following 
+components impact the Residual Heat Removal System during 
+normal and abnormal conditions: (e) Air Operated Valves: 
+RH18 & RH20 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.6 
+Level:      RO 
+Category/System:    04-Residual Heat Removal 
+K/A #:      005 K3.01 
+ Knowledge of the effect that a loss or malfunction of the RHRS 
+will have on the following: RCS 
+Importance:     3.9 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked how air operated valves in the RHR 
+system is impacted by a loss of an vital instrument bus and based on this impact how does it affect the RCS 
+temperature. 
+ 
+  
+
+===== PAGE 76 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 76 
+ 
+32 04-043 Points: 1.00 
+Given: 
+ Salem Unit 2 is in MODE 5. 
+ The RCS is in solid plant operation at 300 psig. 
+ One train of RHR is in service. 
+ One Charging Pump is running. 
+ RHR letdown is in service through the 2CV8, Letdown Isolation for RHR, with all letdown orifices 
+open. 
+ Letdown Booster Pump is NOT in service. 
+ 2CV18, Letdown Pressure Control Valve, is in AUTOMATIC. 
+ 
+Subsequently, the running RHR Pump trips. 
+ 
+Which ONE of the following completes the following statement? 
+ 
+Initially, RCS pressure will _____, and Letdown pressure will ____. 
+ 
+A. lower; rise  
+B. lower; lower  
+C. rise; rise  
+D. rise; lower  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 77 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 77 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect. First part is incorrect.   RCS pressu re rises due to charging adding inventory, while no RHR 
+pump is running to remove inventory.  Second part is incorrect.  Plausible because the operator may 
+believe that when RCS pressure lowers the 2CV18 will close more resulting in more line resistance in 
+the letdown line and an increase in pressure due to non-compressibility of water. 
+B. Incorrect. First part is incorrect.   Second part is correct.  Plausible because if RCS pressure lowers, 
+2CV18 would normally be expected to throttle closed. 
+C. Incorrect. First part is correct.  Second part is in correct.  The 2CV18 will throttle closed.  When the RHR 
+pump trips, RHR discharge pressure, and the pressure at the letdown line will lower. 2CV18 will throttle 
+closed to attempt to maintain pressure. Plausible because the operator may believe that when RCS 
+pressure rise, the 2CV18 will close more to reduce pressure resulting in more line resistance in the 
+letdown line and an increase in pressure due to non-compressibility of water. 
+D. Correct. Flow into (charging) and out of (RHR letdown) the RCS was initially balanced.  When RHR 
+pump tripped two things resulted: 1) the RCS pressure rose due to the flow imbalance, and 2) letdown 
+line pressure lowered due to the loss of discharge pressure when the RHR pump tripped.  2CV18 will 
+respond to the lowering letdown line pressure by closing to attempt to maintain pressure at setpoint. 
+ 
+Technical References:   S2.OP-IO.ZZ-0006 (R52) 
+Proposed References to be provided: None 
+Learning Objective: NOS05CVCS00-18, Objective 4, Describe the function and 
+how their normal and abnormal operations affects the Chemical 
+and Volume Control System:  (x) Low Pressure Letdown 
+Control Valve, CV18 
+Question Source: Bank – Diablo Canyon 2016 NRC RO04 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 45.7 
+Level:      RO 
+Category/System:    04-Residual Heat Removal 
+K/A #:      005 K5.05 
+ Knowledge of the operational implications of the following 
+concepts as they apply to the RHRS:  Plant response during 
+“solid plant” pressure change due to the relative 
+incompressibility of water 
+Importance:     2.7 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked how RCS pressure will respond 
+during solid plant operations when a RHR pump trips.  In addition, the candidate is being ask based on 
+letdown pressure response how to operate the 2CV18 to restore RCS pressure to 300 psig. 
+ 
+  
+
+===== PAGE 78 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 78 
+ 
+33 02-023 Points: 1.00 
+Given: 
+ Salem Unit 2 is experiencing a LOCA. 
+ 2C 4KV Vital Bus is de-energized. 
+ ALL available ECCS pumps are running. 
+ RCS pressure is currently 300 psig. 
+ 
+Which ONE of the following identifies the approximate ECCS flow based on current RCS pressure? 
+ 
+ 
+A. 560 gpm 
+B. 1235 gpm 
+C. 1910 gpm 
+D. 10,235 gpm 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 79 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 79 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect. Plausible if the operator believes that  the charging pump is the only ECCS pump providing 
+flow and all other pumps are above their shutoff head.  This is the total flow for 1 charging pump. 
+B. Correct. With 2C 4KV Vital Bus de-energized only 21 Charging Pump, 21 SI Pump, and both RHR 
+Pumps are running.  With RCS pressure at 300 psig, the Charging pump is running at runout flow 
+condition which is 560 gpm per pump.  The SI pumps are operating at runout flow conditions which is 
+675 gpm per pump.  The RHR pumps are running at shutoff head (>170 psid) so no flow is expected.  
+Therefore, total ECCS flow at 300 psig = 560 gpm + 675 gpm = 1235 gpm. 
+C. Incorrect. Plausible if the operator believes that both SI pumps are still running and doesn’t take into 
+account that the 2C 4KV bus supplies one of the SI pumps.  This is the total flow with 1 charging pump 
+and 2 SI pumps running. 
+D. Incorrect. Plausible if the operator believes that the RHR pumps are below their shutoff head.  RHR is 
+placed in service during shutdown when RCS pressure is below 340 psig.  The RHR pumps are at 
+shutoff head so no flow is expected with RCS pressure at 300 psig.  The RHR pumps can only deliver 
+design accident flow of 4500 gpm when RCS pressure is less than 170 psid or 170 psig during injection. 
+This is the total flow with 1 Charging, 1 SI, and 2 RHR pumps running [560 gpm + 675 gpm + 4500 x 2 = 
+10,235 gpm].  
+ 
+Technical References:   NOS05ECCS00-10 & NOS05RHR000-19 
+Proposed References to be provided: None 
+Learning Objective: NOS05ECCS00-10, Ob jective 16. Given a Emergency Core 
+Cooling System failure, predict the effect of the Emergency 
+Core Cooling System failure on the following: Reactor Coolant 
+System 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 45.7 
+Level:      RO 
+Category/System:    02-Emergency Core Cooling 
+K/A #:      006 K5.06 
+ Knowledge of the operational implications of the following 
+concepts as they apply to the ECCS:  Relationship between 
+ECCS flow and RCS pressure 
+Importance:     3.3 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to determine the total ECCS flow 
+based on current RCS pressure.  In this case, the candidate needs to know the approximate runout flows at 
+runout pressure for each ECCS pump. 
+ 
+  
+
+===== PAGE 80 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 80 
+ 
+Additional References:  NOS05ECCS00 
+ 
+ 
+ 
+ 
+  
+
+
+===== PAGE 81 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 81 
+ 
+Additional References:  NOS05ECCS00 
+ 
+ 
+ 
+  
+
+
+===== PAGE 82 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 82 
+ 
+34 05-009 Points: 1.00 
+Given: 
+ Unit 2 is responding to a Loss of Heat Sink. 
+ During cycling of the PZR PORVs due to high PZR pressure, 2PR1 failed open. 
+ The crew closed 2PR6, PZR PORV Block Valve, to isolate the failed open 2PR1. 
+Subsequently, Console Bezel Alarm, PRT PRESS HI, is now LIT 
+ PRT Pressure is indicating 12 psig. 
+ 
+Which ONE of the following completes both statements? 
+ 
+1. What would be the impact to the PRT if the PZR PORV could not be isolated? 
+2. In accordance with the Alarm Response Procedure for “PRT PRESS HI”, what action can be 
+performed to reduce PRT pressure? 
+ 
+ 
+A. 1)  A rupture disc will rupture at 100 psig. 
+2)  Drain the PRT to lower level and pressure. 
+B. 1)  A relief valve will open at 100 psig. 
+2)  Drain the PRT to lower level and pressure. 
+C. 1)  A rupture disc will rupture at 100 psig. 
+2)  Open the 2PR15 to vent the PRT. 
+D. 1)  A relief valve will open at 100 psig. 
+2)  Open the 2PR15 to vent the PRT. 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 83 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 83 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct. A stuck open PZR PORV will cause the PRT pressure, level, and temperature to rise.  PRT 
+pressure at 10 psig will close the 2PR15 and cannot be open until PRT pressure is less than 10 psig.  
+IAW S2.OP-SO.PZR-0003 step 4.2.2, if 2PR15 cannot open due to PRT pressure of 10 psig, then the 
+PRT level adjustment is necessary to lower PRT pressure and clear the interlock to allow 2PR15 to 
+open.  IAW step 4.1.2 for PRT level high, the 2PR14 drain valve is opened first to lower level then the 
+2PR15 is opened to vent PRT down to 3 psig.  The ARP for PRT PRESS HI also states to drain the PRT 
+to lower level and pressure.  The PRT rupture discs rupture at 100 psig. 
+B. Incorrect. Plausible if the operator believes that the PRT has a relief valve.  First part is incorrect. The 
+PRT does not have a relief valve and instead uses a rupture disc that opens at 100 psig.  Second part is 
+correct. 
+C. Incorrect. First part is correct.  Second part is incorrect.  2PR15 vent valve will not open when PRT 
+pressure is ≥ 10 psig. 
+D. Incorrect. Plausible if the operator believes that the PRT has a relief valve and that the 2PR15 vent 
+valve is still available when PRT pressure is above 10 psig.  First part is incorrect. The PRT does not 
+have a relief valve and instead uses a rupture disc that opens at 100 psig.  Second part is incorrect.  
+2PR15 vent valve will not open when PRT pressure is ≥ 10 psig. 
+ 
+Technical References:   NOS05PZRPRT-08, S2.OP-SO.PZR-0003, S2.OP-AR.ZZ-0012 
+Proposed References to be provided: None 
+Learning Objective: NOS05PZRPRT-08, Objective 15. Given a Pressurizer and 
+Pressurizer Relief Tank failure, predict the effect of the 
+Pressurizer and Pressurizer Relief Tank failure on the 
+following:  Containment 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 43.5 / 45.3 / 45.13 
+Level:      RO 
+Category/System:    05-Pressurizer Relief/Quench Tank 
+K/A #:      007 A2.03 
+ Ability to (a) predict the impacts of the following malfunctions or 
+operations on the PRTS; and (b) based on those predictions, 
+use procedures to correct, control, or mitigate the 
+consequences of those malfunctions or operations:  
+Overpressurization of the PZR 
+Importance:     3.6 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to predict the impact to the PRT 
+during overpressurization of the PZR.  The candidate is specifically asked how the PRT is protected if the 
+PZR overpressurization event was not terminated.  In addition, the candidate is asked what actions from 
+
+===== PAGE 84 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 84 
+ 
+S2.OP-SO.PZR-0003 are performed to correct or mitigate the PRT high pressure from rupturing the rupture 
+discs. 
+ 
+  
+
+===== PAGE 85 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 85 
+ 
+Additional References:  S2.OP-SO.PZR-0003 
+ 
+ 
+ 
+  
+
+
+===== PAGE 86 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 86 
+ 
+35 08-010 Points: 1.00 
+Given: 
+ Unit 2 is at 100% Power. 
+ Console bezel alarm, SURGE TANK LEVEL HI-LO, is LIT. 
+ CCW Surge Tank Level Channels A and B are LOWERING rapidly. 
+ The crew is implementing S2.OP-AB.CC- 0001, Component Cooling Abnormality. 
+ 
+In accordance with S2.OP-AB.CC-0001, which ONE of the following completes the statement assuming the 
+surge tank levels continue to lower? 
+ 
+When Surge Tank levels lowers to less than __(1)__, the operator is required to trip the reactor and 
+____(2)____. 
+ 
+A. 1)  17% 
+2)  stop all RCPs, isolate Letdown, and swap Charging pump suction to the RWST 
+B. 1)  17% 
+2)  stop all RCPs ONLY 
+C. 1)  5% 
+2)  stop all RCPs ONLY 
+D. 1)  5% 
+2)  stop all RCPs, isolate Letdown, and swap Charging pump suction to the RWST 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 87 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 87 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect. First part is incorrect.  Surge tank level less than 5% requires stopping RCPs IAW Attachment 
+2.  Plausible since the 17% level is expected knowledge to the operators to take immediate actions 
+associated with low VCT level.  Second part is correct.   
+B. Incorrect. First part is incorrect.  Surge tank level less than 5% requires stopping RCPs IAW Attachment 
+2.  Plausible since the 17% level is expected knowledge to the operators to take immediate actions 
+associated with low VCT level. Second part is incorrect.  Per Attachment 2, if loss of CCW was the 
+cause of the event, then in addition to stopping RCPs, letdown needs to be isolated and the charging 
+pumps suction swapped over to the RWST. 
+C. Incorrect. First part is correct.  Second part is incorrect.  Per Attachment 2, if loss of CCW was the 
+cause of the event, then in addition to stopping RCPs, letdown needs to be isolated and the charging 
+pumps suction swapped over to the RWST. 
+D. Correct. IAW S2.OP-AB.CC-0001 Attachment 1, if surge tank level can NOT be maintained greater than 
+5%, then stop RCPs IAW Attachment 2.  Per Attachment 2, the Rx is tripped, all RCPs are stopped, 
+letdown is isolated, charging pump suctions are swapped to the RWST and then go to EOP-TRIP-1. 
+ 
+Technical References:   S2.OP-AB.CC-0001(R19) 
+Proposed References to be provided: None 
+Learning Objective: NOS05ABCC01-10, Objective 5. Given a set of initial plant 
+conditions:  Describe the final plant condition that is established 
+by the abnormal procedure 
+Question Source: Bank – Wolf Creek 2017 NRC RO8 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 43.5 / 45.3 / 45.13 
+Level:      RO 
+Category/System:    08-Component Cooling Water 
+K/A #:      008 A2.02 
+ Ability to (a) predict the impacts of the following malfunctions or 
+operations on the CCWS; and (b) based on those predictions, 
+use procedures to correct, control, or mitigate the 
+consequences of those malfunctions or operations:  High/Low 
+surge tank level 
+Importance:     3.2 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to predict the impact to the CCW 
+system operation when surge tank levels are lowering and based on the low level what are the procedural 
+requirements to mitigate the event. 
+ 
+  
+
+===== PAGE 88 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 88 
+ 
+36 08-011 Points: 1.00 
+ 
+Which of the following choices identifies potential sources of RCS INLEAKAGE into the Component 
+Cooling System? 
+ 
+1. Seal Water Heat Exchanger  
+2. CCW Heat Exchangers  
+3. Regenerative Heat Exchanger  
+4. Spent Fuel Pool Heat Exchanger  
+5. RCP Thermal Barrier Heat Exchanger 
+ 
+ 
+A. 4 and 5 ONLY 
+B. 1 and 2 ONLY 
+C. 2 and 3 ONLY 
+D. 1 and 5 ONLY 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 89 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 89 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect. A leak at the spent fuel pool HX would cause out leakage of the CCW system.  Plausible since 
+a leak in the thermal barrier would cause RCS leakage into CCW. 
+B. Incorrect. Plausible since a leak in the CCW HX would result in leakage into the CCW but it would be 
+Service Water and not RCS. 
+C. Incorrect. Plausible since the CCW HX would result in leakage into CCW, but CCW HX is SW leakage 
+into RCS.  In addition, the applicant many confuse the operation of the Regen HX and believe that the 
+discharge of charging would leak into CCW which CCW does not cool the Regen HX, but letdown flow 
+does. 
+D. Correct. IAW S2.OP-AB.CC-0001 Step 3.10, the RCP Thermal Barriers, Letdown HX, and Seal Water 
+HX are all sources of RCS inleakage into the CCW system. 
+ 
+Technical References:   S2.OP-AB.CC-0001(R19) 
+Proposed References to be provided: None 
+Learning Objective: NOS05ABCC01-10, Objective 1. Describe the operation of the 
+following system as applied to S2.OP-AB.CC-0001: CC System 
+loads 
+Question Source: Bank – Salem 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.2 to 41.9 / 45.7 to 45.8 
+Level:      RO 
+Category/System:    08-Component Cooling Water 
+K/A #:      008 K1.04 
+ Knowledge of the physical connections and/or cause-effect 
+relationships between the CCWS and the following systems:  
+RCS, in order to determine source(s) of RCS leakage into the 
+CCWS 
+Importance: 3.3 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to identify which components 
+supplied by CCW would cause RCS inleakage into the CCW system. 
+ 
+  
+
+===== PAGE 90 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 90 
+ 
+37 03-021 Points: 1.00 
+ 
+Given: 
+ Unit 2 is at 100% Power 
+ All systems are in normal alignment and in AUTO 
+ The controlling PZR Pressure channel fails HIGH 
+ 
+ 
+Which ONE of the following completes both statements? 
+ 
+1. In order to restore RCS pressure to progr am, the RO will manually __(1)__ demand on the Master 
+Pressure Controller. 
+2. If RCS pressure lowers to less than __(2)__ psig, LCO 3.2.5, DNB Parameters, for minimum DNBR 
+will NOT be MET. 
+ 
+ 
+A. 1)  lower 
+2)  2200 
+B. 1)  lower 
+2)  2185 
+C. 1)  raise 
+2)  2200 
+D. 1)  raise 
+2)  2185 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 91 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 91 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  First part is correct.  Second part is incorrect.  The TS limit for minimum DNBR for RCS 
+Pressure is ≥ 2200 psia (or < 2185 psig). 
+B. Correct.  A failed high controlling PZR pressure channel will raise the demand of the MPC to 100% and 
+opening all spray valves.  The Master Pressure Controller (MPC) demand will have to be lowered in 
+order to close the spray valves and turn on all the PZR heaters to restore RCS pressure to program.  
+The TS limit for minimum DNBR for RCS Pressure is ≥ 2200 psia (or < 2185 psig). 
+C. Incorrect.  First part is incorrect.  A failed high controlling PZR pressure channel will raise the demand of 
+the MPC to 100% and opening all spray valves.  Second part is incorrect.  The TS limit for minimum 
+DNBR for RCS Pressure is ≥ 2200 psia (or < 2185 psig). 
+D. Incorrect. First part is incorrect.  A failed high controlling PZR pressure channel will raise the demand of 
+the MPC to 100% and opening all spray valves.  Second part is correct. 
+ 
+Technical References:   NOS05PZRP&L-12, TS LCO 3.2.5 
+Proposed References to be provided: None 
+Learning Objective: NOS05PZRP&L-12, Objective 15. Given a Pressurizer 
+Pressure and Level Control System failure, predict the effect of 
+the Pressurizer Pressure and Level Control System failure on 
+the following:  Reactor Coolant System 
+Question Source: New 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.5 / 45.5 
+Level:      RO 
+Category/System:    03-Pressurizer Pressure Control 
+K/A #:      010 A1.07 
+ Ability to predict and/or monitor changes in parameters (to 
+prevent exceeding design limits) associated with operating the 
+PZR PCS controls including: RCS pressure 
+Importance: 3.7 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to predict how the MPC will respond 
+to a failed high PZR Pressure channel and what effect the lowering RCS pressure will have on TS limits for 
+minimum DNBR. 
+ 
+  
+
+===== PAGE 92 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 92 
+ 
+38 07-014 Points: 1.00 
+ 
+Given: 
+ 
+ Unit 2 is at 100% Power 
+ The reactor automatically trips 
+ ONLY Reactor Trip Breaker “B” OPENS 
+ 
+ 
+Based on the above condition, which ONE of the following components will trip the Main Turbine? 
+ 
+ 
+A. 20-AST 
+B. 20-2AST 
+C. 20-ET 
+D. 2EH61 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 93 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 93 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  The 20-AST energizes from RTB “A” which failed to open. 
+B. Incorrect.  The 20-2AST energizes from RTB “A” which failed to open. 
+C. Correct.  Trip of RTB “B” will energize the Emergency Trip Fluid Solenoid valve (20-ET) dumping EH 
+fluid directly to the reservoir causing all turbine steam valves to close and tripping the turbine.  The 20-
+ET serves as a backup to the interface valve (2EH61).  The 2EH61 interface valve will open when either 
+the 20-AST or 20-2AST solenoids energize to dump ASO oil from the top of the 2EH61 valve resulting in 
+the 2EH61 valve opening and dumping EH fluid to the reservoir.  Trip of RTB “A” will energize either the 
+20-AST or 20-2AST solenoids.  Since RTB “A” did not open, the only component that will actuate to 
+cause a turbine trip will be the actuation of the 20-ET solenoid. 
+D. Incorrect. The 2EH61 opens when the 20-AST or the 20-2AST energizes from RTB A which failed to 
+open. 
+ 
+Technical References:   NOS05DEHC00-16, 221065, 205318, 604273 
+Proposed References to be provided: None 
+Learning Objective: NOS05RXPROT-15, Objective 27. Given a Reactor Protection 
+System failure, predict the effect of the Reactor Protection 
+System failure on the following: Main Turbine/Generator 
+Question Source: New 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.7 / 45.6 
+Level:      RO 
+Category/System:    07-Reactor Protection 
+K/A #:      012 K3.02 
+ Knowledge of the affect that a loss or malfunction of the RPS 
+will have on the following: T/G 
+Importance: 3.2 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to describe how the Main Turbine 
+will trip when only the “B” Reactor Trip Breaker opens following an automatic reactor trip. 
+ 
+  
+
+===== PAGE 94 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 94 
+ 
+39 02-024 Points: 1.00 
+ 
+Given: 
+ Unit 2 is at 100% Power. 
+ Containment Pressure channel I has failed. 
+ ALL required actions to remove the channel from service in accordance with S2.OP-SO.RPS-0005, 
+Placing Containment Pressure Channel in Tripped Condition, were completed. 
+ Subsequently, Containment Pressure channel IV fails HIGH. 
+Which ONE of the following describes the Phase B and Safety Injection response? 
+ 
+ 
+A. NEITHER Safety Injection or Phase B will actuate 
+B. BOTH Safety Injection and Phase B will actuate. 
+C. ONLY Phase B will actuate. 
+D. ONLY Safety Injection will actuate. 
+ 
+ 
+ 
+ 
+  
+
+===== PAGE 95 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 95 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  Following the removal of the Contai nment Pressure channel 1 from service IAW S2.OP-
+SO.RPS-0005, the CS/Phase B actuation logic will change from 2/4 to 2/3 and Safety Injection actuation 
+logic will remain at 2/3 since only channels II, III, and IV provide the inputs for containment pressure 
+high SI actuation.  Therefore, when Containment Pressure channel IV fails high, no CS/Phase B will 
+actuate since the 2/3 logic is not satisfied.  As for the Safety Injection logic, channel 1 does not input into 
+the 2/3 logic and therefore, channel IV failure will not satisfy the Safety Injection actuation logic of 2/3. 
+B. Incorrect.  Plausible if the operator believes that both of these channels input into the SI and Phase B 
+logic.  Channel IV only inputs into CS/Phase logic. 
+C. Incorrect.  Plausible because a SI on 2/3 high cont ainment pressure is from channels II thru IV only.  
+Containment Spray/Phase B is actuated from 2/4 high containment pressure channels I thru IV.  
+Therefore, the operator may incorrectly interpret that a Phase B will actuate because channels I and IV 
+satisfy the coincidence for Phase B actuation, however, the stem states that channel I was removed 
+from service which makes the Phase B logic now 2/3 and channel I no longer provides an input into 
+Phase B. The operator will also determine that Channel I does not input into the SI logic, which is 
+correct.  
+D. Incorrect.  Plausible if the operator believes both these channels input into the SI logic and that Phase B 
+does not actuate since channel was removed from service, it takes the CS/Phase logic to 2/3. 
+ 
+Technical References:   S2.OP-SO.RPS-0005  
+Proposed References to be provided: None 
+Learning Objective: NOS05RXPROT-15, Objective 27. Given a Reactor Protection 
+System failure, predict the effect of the Reactor Protection 
+System failure on the following: Engineering Safeguards 
+System 
+Question Source: Bank – Beaver Valley U1 2018 NRC RO37 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.5 to 45.8 
+Level:      RO 
+Category/System:    02-Engineered Safety Features Actuation 
+K/A #:      013 K6.01 
+ Knowledge of the effect of a loss or malfunction on the 
+following will have on the ESFAS: Sensors and detectors 
+Importance: 2.7 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to determine the effect on RPS and 
+ESFAS systems when a Containment Pressure channel was previously removed from service and the 
+expected response when another Containment Pressure channel fails high. 
+ 
+ 
+
+===== PAGE 96 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 96 
+ 
+  
+
+===== PAGE 97 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 97 
+ 
+40 02-025 Points: 1.00 
+ 
+Given: 
+ 
+ Unit 2 is at 100% Power. 
+ OHA A-42, SSPS TRN B TRBL, is LIT 
+ Investigation reveals that a 48 VDC power supply on SSPS Train B is tripped. 
+ 
+Which ONE of the following describes the impact, if any, of this failure? 
+ 
+ 
+A. The Train B Reactor Trip breaker shunt trip is unavailable. 
+B. NONE of the Train B SSPS components will automatically actuate when required. 
+C. ALL of Train B SSPS components will aut omatically actuate when required. 
+D. A portion of the Train B SSPS components will NOT automatically actuate when required. 
+ 
+  
+
+===== PAGE 98 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 98 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  Plausible if the operator believes that the shunt coil is supplied from 48 VDC from SSPS.  The 
+48 VDC power supplies feed the UV coils for each reactor trip breaker.  A loss of both 48 VDC power 
+supplies in one SSPS train will cause a reactor trip due to the UV coils de-energizing.  The Shunt coils 
+are supplied by 125 VDC and are energized to actuate. 
+B. Incorrect.  Plausible because the operator may believe that the loss of 48 VDC will prevent the actuation 
+of the SSPS train by affecting either the logic or the output cabinet slave relays which are supplied for 
+their respective 115 VAC train (A or B).  Loss of one 48 or 15 VDC power supply will have no adverse 
+effect on the function of SSPS due to the auctioneered design.  However, a loss of the 115 VAC B Vital 
+Instrument bus will prevent the slave relays from energizing and will prevent the Train B SSPS from 
+actuating components and equipment which is not the case. 
+C. Correct.  Two of four vital instrument buses (VIB) supply one set of 48V and 15V power supplies.  SSPS 
+Train A is supplied from A and D VIB and SSPS Train B is supplied from B and C VIB.  B and D VIBs 
+are supplied from the same “B” 230 V VIB, so a loss of the “B” 230V VIB would cause a loss of all 48V 
+and 15V power supplies resulting in an RPS actuation.  The 48V and 15V power supplies are 
+auctioneered such that a loss of one power supply will NOT cause or prevent an RPS/ESFAS actuation.  
+Therefore, a loss of one 48 VDC power supply will have no adverse effects on the Train B SSPS to 
+function as design, with the exception of a loss of 48 VDC power supply redundancy. 
+D. Incorrect. Plausible if the operator believes that a loss of one power supply could affect the SSPS train 
+from fully actuating components.  See Ans. C for further explanation. 
+ 
+Technical References:   NOS05RXPROT 
+Proposed References to be provided: None 
+Learning Objective: NOS05RXPROT-15, Objective 26. Given plant conditions, 
+relate the Reactor Protection System with the following: 115V 
+vital power 
+Question Source: Bank – DC Cook 2008 NRC RO46 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 
+Level:      RO 
+Category/System:    02-Engineered Safety Features Actuation 
+K/A #:      013 K4.07 
+ Knowledge of ESFAS design feature(s) and/or interlock(s) 
+which provide for the following: Power supply loss 
+Importance: 3.7 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to describe the design features of 
+the SSPS power supplies.  Specifically, the candidate is being asked the impact to a loss of one 48 VDC 
+power supply on the ability of a SSPS train to function as designed.  The candidate needs to know that the 
+48 and 15 VDC power supplies are redundant and that a loss of one power supply has no adverse effects 
+on the SSPS to function as designed. 
+ 
+
+===== PAGE 99 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 99 
+ 
+Additional References:  NOS05RXPROT power point slide 
+ 
+ 
+ 
+  
+
+
+===== PAGE 100 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 100 
+ 
+41 05-010 Points: 1.00 
+ 
+Given: 
+ Unit 2 is at 100% Power. 
+ The crew is performing surveillance testing on 21 CFCU in accordance with S2.OP-ST.CBV-0003, 
+Containment Systems – Cooling System. 
+ 
+Which ONE of the following describes how the CFCU will respond when the operator shifts from HIGH to 
+LOW speed operation? 
+ 
+The 21SW223, CFCU Outlet Flow Control Valve, will ____(1)____ and the service water flow through the 
+CFCU will ____(2)____ as compared to the flow when operating at HIGH speed. 
+ 
+A. 1)  throttle or modulate 
+2)  be higher 
+B. 1)  throttle or modulate 
+2)  remain the same 
+C. 1)  open to a fixed position 
+2)  be higher 
+D. 1)  open to a fixed position 
+2)  remain the same 
+ 
+  
+
+===== PAGE 101 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 101 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect.  First part is incorrect.  SW223 has a mechanical stop set to approximately 50% travel.  
+Second part is incorrect.  Credible distractor if the operator believes that service flow will increase during 
+accident (Low Speed) conditions. 
+B. Incorrect.  First part is incorrect.  SW223 has a mechanical stop set to approximately 50% travel.  
+Second part is correct. 
+C. Incorrect.  First part is correct. Second part is incorrect.  Credible distractor if the operator believes that 
+service flow will increase during accident (Low Speed) conditions.  
+D. Correct. The CFCUs employ a fixed resistance flow  scheme, with two orifices on the inlet of each 
+CFCU, and two orifices on the outlet of each CFCU; these orifices, along with a mechanical stop on the 
+open travel of the SW223 valves, ensure that the SW flow is greater than that required by Tech Specs 
+for the minimum flow to the CFCU for Containment Cooling requirements in an accident condition and 
+that SW flow to all safety related equipment can be met.  The SW223 valves are closed when the CFCU 
+is O/S and open to the mechanical stop when the CFCU is in service; the mechanical stops are set at 
+approximately 50% travel.  Based on the operation of the SW223, service flow will remain the same in 
+High and Low speed operation. 
+ 
+Technical References:   NOS05SW0NUC 
+Proposed References to be provided: None 
+Learning Objective: NOS05SW0NUC-15, Objective 4. Describe the function of the 
+following components and how their normal and abnormal 
+operation affects the Service Water – Nuclear Header System:  
+Containment Fan Coil Units and SW58, SW72, and SW223 
+Question Source: Modified – Salem 2014 NRC RO46 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.7 / 45.5 to 45.8 
+Level:      RO 
+Category/System:    05-Containment Cooling 
+K/A #:      022 A4.04 
+ Ability to manually operate and/or monitor in the control room: 
+Valves in the CCS 
+Importance: 3.1 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to determine the expected service 
+water flow when operating the CFCUs in High and Low speed.  In this case, the operator needs to know 
+how the outlet flow control valves (SW223) operates and that the service water flow remains the same in 
+both High and Low speeds. 
+ 
+  
+
+===== PAGE 102 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 102 
+ 
+Parent Question:  Salem 2014 NRC RO46 
+ 
+ 
+ 
+  
+
+
+===== PAGE 103 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 103 
+ 
+42 05-011 Points: 1.00 
+ 
+Given: 
+ Unit 2 experienced a Large Break LOCA. 
+ The crew is performing actions per 2-EOP-TRIP-1, Reactor Trip or Safety Injection. 
+ The crew is at step 9, Containment Spray Actuation Verification. 
+ BOTH trains of Phase B/CS have actuated.  
+ Containment Pressure is 25 psig and rising. 
+ NO Containment Spray (CS) Pumps are running. 
+ 2C 4KV Vital Bus is de-energized on bus differential protection. 
+ 
+Which ONE of the following action(s) is/are required to start a CS Pump? 
+ 
+ 
+A. Start 21 CS Pump by depressing the start pushbutton ONLY. 
+B. Start 22 CS Pump by depressing the start pushbutton ONLY. 
+C. Block and reset its associated SEC, then start 21 CS Pump using the keyswitch. 
+D. Block and reset its associated SEC, then start 22 CS Pump using the keyswitch. 
+ 
+  
+
+===== PAGE 104 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 104 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  2A SEC must be blocked and reset first then the keyswitch must be operated to start 21 CS 
+Pump. Plausible if the operator believes that since CS has actuated that starting the pump is only 
+required. 
+B. Incorrect.  22 CS Pump is powered from 2C 4KV Vital bus which is locked out on bus differential.  
+Plausible if the operator believes that since CS has actuated that starting the pump is only required. 
+C. Correct.  The operator must evaluate the plant conditions and determine that the SECs have not been 
+reset.  21 CS Pump is powered from 2A 4KV Vital Bus.  Since SECs actuated, the operator must first 
+regain control by blocking and resetting 2A SEC only, then the operator must use the key switch to start 
+21 CS Pump.  
+D. Incorrect.  22 CS pump is powered from 2C 4KB bus which is locked out on bus differential.  
+ 
+Technical References:   NOS05CSPRAY 
+Proposed References to be provided: None 
+Learning Objective: NOS05CSPRAY-07, Objective 5. State the power supply to the 
+following Containment Spray System components: 
+Containment Spray Pumps 
+Question Source: Bank - Salem 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 
+Level:      RO 
+Category/System:    05-Containment Spray 
+K/A #:      026 K2.01 
+ Knowledge of bus supplies to the following: Containment spray 
+pumps 
+Importance: 3.4 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to determine what actions are 
+required to start a CS Pump based on the available 4KV Vital buses. 
+ 
+  
+
+===== PAGE 105 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 105 
+ 
+43 04-044 Points: 1.00 
+Given: 
+ Unit 2 is at 15% Power with a startup in progress. 
+ Tavg is 552 °F and stable. 
+ Steam Dumps are in AUTO MS PRESS control mode set to 980 psig. 
+ 2PT-507, Steam Header Pressure transmitter, fails LOW. 
+Which ONE of the following describes how the steam dump system will respond? 
+ 
+The steam dump valves will __(1)__ and the steam generator pressure will IMMEDIATELY __(2)__. 
+ 
+A. 1)  CLOSE 
+2)  LOWER due to the reactor adding less heat to the RCS. 
+B. 1)  CLOSE 
+2)  RISE due to less heat removal from the RCS. 
+C. 1)  OPEN 
+2)  LOWER due to more heat removal from the RCS. 
+D. 1)  OPEN 
+2)  RISE due to the reactor adding more heat the RCS. 
+  
+
+===== PAGE 106 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 106 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  First part is correct.  Second part is in correct.  SG pressure will rise due steam flows lowering 
+and less heat removal from the SGs.  Plausible because the operator may incorrectly determines that 
+SG pressure will lower when steam flow decreases. 
+B. Correct.  2PT-507 failing low will cause the steam dumps to close.  When the steam dumps closes, 
+steam flow from the SGs will lower, Rx power will lower, and SG pressure will immediately rise due to 
+less heat removal from the SGs until SG pressure is maintained by the MS10s opening. 
+C. Incorrect.  First part is incorrect.  Steam dumps will close on failure of 2PT-507. Second part is incorrect.  
+SG pressure will rise due steam flows lowering and less heat removal from the SGs. 
+D. Incorrect.  First part is incorrect.  Second part is correct.  Steam dumps will close on failure of 2PT-507.  
+Credible distractor because the operator may incorrectly determines how the steam dumps will respond 
+on the instrument failure.  Second part is plausible because the applicant may incorrectly determine that 
+with the steam dumps open, reactor power will increase and also increase the RCS temperature 
+(incorrect assumption) which will result in more heat transfer to the SG and a rise in SG pressure. 
+ 
+Technical References:   NOS05STDUMP-13 
+Proposed References to be provided: None 
+Learning Objective: NOS05STDUMP-13, Objective 10.b. Identify and describe the 
+Control Room controls, indications, and alarms associated with 
+the Steam Dump System, including: The function of each 
+Steam Dump System Control Room control and indication 
+Question Source: Modified Bank – Byron 2017 NRC RO62 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.5 to 45.8 
+Level:      RO 
+Category/System:    04-Main and Reheat Steam 
+K/A #:      039 A4.07 
+ Ability to manually operate and/or monitor in the control room: 
+Steam dump valves 
+Importance: 2.8 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the applicant is being asked how the steam dump valves respond 
+when 2PT-507 fails low and additionally how the SG pressure will be affected based on the operation of the 
+steam dump valves. 
+ 
+Modified Question Justification - The question was deemed modified based on changing a condition in the 
+stem (i.e., 2PT-507 failing low), which changes the answer from the original question. 
+  
+
+===== PAGE 107 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 107 
+ 
+Parent Question:  Byron 2017 NRC RO62 
+ 
+  
+
+
+===== PAGE 108 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 108 
+ 
+44 04-045 Points: 1.00 
+ 
+Given: 
+ Unit 2 is at 100% Reactor Power. 
+Subsequently, the following occurs: 
+ A malfunction with 21BF19 causes the SG level to rise uncontrollably. 
+ The reactor automatically trips. 
+ 
+Which ONE of the following describes the expected plant response? 
+ 
+ 
+A. BOTH SGFPs trip and the BF13s, BF19s, and BF40s close. 
+  
+B. BOTH SGFPs trip and ONLY the BF19s and BF40s close. 
+ 
+C. ONLY the BF19s and BF40s close. 
+ 
+D. ONLY the BF13s, BF19s and BF40s close.  
+ 
+ 
+ 
+  
+
+===== PAGE 109 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 109 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  SG HI-HI Level Rx Trip (P-14, 2/3 NR levels on 1 SG > 67%) will actuate Feedwater Isolation 
+that will trip the Main Turbine and both SGFPs, and then close all the BF13s, BF19s, and BF40s. 
+B. Incorrect.  Plausible because the applicant may confuse the valves that close on a Feedwater Interlock 
+which are the BF19s and Bf40s only. 
+C. Incorrect.  The BF19s and BF40s will ONLY close when there is a Feedwater Interlock signal (P-4 and 
+Tavg < 554 F).  In this case, a P-14 signal was generated from a SG level HI-HI resulting in a FW 
+Isolation signal. 
+D. Incorrect. Plausible because the applicant may confuse the actions of a Feedwater Isolation with 
+Feedwater Interlock and that the Main Turbine and SGFPs will not trip on a Feedwater Isolation. 
+ 
+Technical References:   NOS05CNFDW-19 
+Proposed References to be provided: None 
+Learning Objective: NOS05CNFDW-19, Objective 4.S. Describe how the following 
+components impact the Condensate and Feedwater System 
+during normal and abnormal conditions:  Main Feedwater 
+Containment Isolation Valves 
+Question Source: Bank – Salem 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.57 
+Level:      RO 
+Category/System:    04-Main Feedwater 
+K/A #:      059 K4.19 
+ Knowledge of MFW design feature(s) and/or interlocks which 
+provide for the following: Automatic feedwater isolation of MFW 
+Importance: 3.2 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the applicant is being asked about the actions that occur on a 
+Feedwater Isolation from a P-14 (SG Hi-HI signal).. 
+ 
+  
+
+===== PAGE 110 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 110 
+ 
+45 04-046 Points: 1.00 
+ 
+Given: 
+ Unit 2 is at 30% Power and stable. 
+ ALL Steam Generator Narrow Range levels are 45%. 
+ 
+ Based on the above condition, which ONE of the following completes both statements? 
+ 
+1. Steam Generator Narrow Range levels are __(1)__ program setpoint. 
+2. Assuming SGFP speed remains constant, to return Steam Generator levels to program setpoint, the 
+demand on the BF19’s will automatically __(2)__. 
+ 
+A. 1)  above 
+2)  decrease 
+B. 1)  above 
+2)  increase 
+C. 1)  below 
+2)  decrease 
+D. 1)  below 
+2)  increase 
+ 
+  
+
+===== PAGE 111 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 111 
+ 
+Answer: A 
+Explanation / Justification:   
+A. Correct.  IAW S2.OP-AB.CN-0001, Attachment 2, SG program level with power above 20% is 44% NR 
+level.  With a SG NR level at 45%, the actual SG NR level is above the program setpoint of 44%.  The 
+digital feedwater system will lower the demands to the BF19’s to throttle the valves closed to reduce 
+feedwater flow with SGFP speed remaining constant. 
+B. Incorrect. First part is correct.  Second part is incorrect.  The BF19 demand will lower to throttle the 
+valves closed more to reduce feed flow to lower SG levels.  Plausible in that the applicant may 
+incorrectly believe that the operation of the BF19 works opposite to the demand signal. 
+C. Incorrect. First part is incorrect. SG program level above 20% is 44%.  Plausible because the operator 
+may incorrectly recall the proper level setpoint for digital feedwater.  Plausible in that the applicant may 
+incorrectly believe that the operation of the BF19 works opposite to the demand signal.  Second part is 
+correct.  
+D. Incorrect. First part is incorrect. SG program level above 20% is 44%.  Plausible because the operator 
+may incorrectly recall the proper level setpoint for digital feedwater and how the BF19s should respond.  
+Second part is incorrect.  The BF19 demand will lower to throttle the valves closed more to reduce feed 
+flow to lower SG levels.  Plausible in that the applicant may incorrectly believe that the operation of the 
+BF19 works opposite to the demand signal. 
+ 
+Technical References:   S2.OP-AB.CN-0001 
+Proposed References to be provided: None 
+Learning Objective: NOS05CNFDW-19, Objective 15. Given plant conditions, relate 
+the Condensate and Feedwater System with the following: 
+Advance Digital Feedwater Control System 
+Question Source: Bank – Commanche Peak 2016 RO17 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.5 
+Level:      RO 
+Category/System:    04-Main Feedwater 
+K/A #:      059 A3.02 
+ Ability to monitor automatic operation of the MFW, including:  
+Programmed levels of the S/G. 
+Importance: 2.9 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to determine if the current SG NR 
+levels are on program and if not how will the FW regulating valves change to restore NR levels to program. 
+ 
+ 
+  
+
+===== PAGE 112 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 112 
+ 
+46 04-047 Points: 1.00 
+ 
+Given: 
+ Unit 2 was at 100% Power when a reactor trip occurred. 
+ BOTH Motor Driven AFW Pumps are running. 
+ 21 AFW Pump discharge pressure transmitter (2PA-3450) for the pump runout protection circuit fails 
+to ZERO. 
+ 
+Based on the above condition, which ONE of the following completes both statements? 
+ 
+1. The 21 AFW Pump flow control valves (AF21s) will __(1)__. 
+2. To regain control of these valves from the c ontrol room, the operator will __(2)__ for 21 AFW Pump. 
+ 
+A. 1)  open 
+2)  select LOCAL MANUAL 
+B. 1)  open 
+2)  depress PRESS OVERRIDE DEFEAT 
+C. 1)  close 
+2)  depress PRESS OVERRIDE DEFEAT 
+D. 1)  close 
+2)  select LOCAL MANUAL 
+ 
+  
+
+===== PAGE 113 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 113 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  First part is incorrect.  The 23AF21 and 24AF21 will fail closed when the pressure transmitter 
+fails to zero. Second part is incorrect.  The LOCAL MANUAL is indication only in the control room.  
+When illuminated no auto start signals will start the AFW Pump. Plausible because the operator may 
+believe that when the AFW pump is in LOCAL MANUAL that this will allow the operators in the control 
+room to manually control the AF valves. 
+B. Incorrect. First part is incorrect.  The 23AF21 and 24AF21 will fail closed when the pressure transmitter 
+fails to zero. Second part is correct.  Plausible is the operator believes that the AF21s will go open when 
+the pressure instrument fails to zero. 
+C. Correct. The AFW discharge pressure transmitter inputs into the Pressure Override Protection circuit.  
+The Pressure Override circuit will limit the position of the AF21s based on the discharge pressure of the 
+AFW pump to prevent pump runout conditions.  If discharge pressure is insufficient, then the circuit will 
+throttle the AF21s closed. With the pressure transmitter failed to zero, then the Pressure Override circuit 
+associated with 21 AFW pump will close both the 23AF21 and 24AF21.  In order for the operator to 
+regain control of these valves, the operator is required to depress the PRESS OVERRIDE DEFEAT 
+pushbutton which will removes the runout protection circuit and allows operator to control the AF21s. 
+D. Incorrect. First part is correct.  Second part is incorrect.  The LOCAL MANUAL is indication only in the 
+control room.  When illuminated no auto start signals will start the AFW Pump. Plausible because the 
+operator may believe that when the AFW pump is in LOCAL MANUAL that this will allow the operators 
+in the control room to manually control the AF valves.  
+ 
+Technical References:   NOS05AFW000-18 
+Proposed References to be provided: None 
+Learning Objective: NOS05AFW000-18, Objective 17. Given any of the following 
+and appropriate control room reference material, evaluate and 
+determine the effect on the Auxiliary Feedwater System: 
+Failure of sensors and detectors 
+Question Source: Bank – Salem 
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.7 
+Level:      RO 
+Category/System:    04-Auxliary/Emergency Feedwater 
+K/A #:      061 K6.01 
+ Knowledge of the effect of a loss of or malfunction of the 
+following will have on the AFW components:  Controllers and 
+positioners. 
+Importance: 2.5 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked how the failure of the AFW pump 
+discharge pressure transmitter will affect the operation of the flow control valves and what action is required 
+in order for the operator to regain control of the valves.  The runout protection circuit uses a pressure sensor 
+input from the discharge of the AFW pumps and the circuit will throttle or maintain the AFW valves close if 
+
+===== PAGE 114 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 114 
+ 
+the AFW discharge pressure is less than setpoint to prevent runout of the AFW pump.  This runout 
+protection circuit meets the K/A as a controller since its controlling the AFW valves to prevent pump runout. 
+
+===== PAGE 115 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 115 
+ 
+47 06-020 Points: 1.00 
+ 
+Given: 
+ Unit 2 is at 100% Power. 
+ 2A Emergency Diesel Generator (EDG) monthly surv eillance test is in progress in accordance with 
+S2.OP-ST.DG-0001, 2A Diesel Generator Surveillance Test. 
+ The 2A EDG is currently running and paralleled to the grid. 
+ Subsequently, a Loss of Offsite Power occurs. 
+ 
+Which ONE of the following describes the effect on the 2A EDG? 
+ 
+ 
+A. The diesel generator output breaker opens and the diesel remains running; after the bus loads 
+are stripped, the output breaker must be manually closed to allow the load sequencer to 
+sequentially start safeguard loads. 
+B. The diesel generator output breaker opens and the diesel remains running; after the bus loads 
+are stripped, the output breaker automatically closes and the load sequencer sequentially starts 
+safeguard loads. 
+C. The diesel generator output breaker remains closed; non safeguards loads are automatically 
+stripped. 
+D. The diesel generator output breaker remains closed; non safeguards loads must be manually 
+stripped. 
+ 
+  
+
+===== PAGE 116 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 116 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  The EDG output breaker will automatically reclose when the bus is stripped and infeed 
+breakers are open by the SEC. Plausible because the operator may believe that the output breaker 
+needs to be manually closed when the EDG was paralleled to the grid. Same Ans. B for further 
+explanation. 
+B. Correct. With the EDG running paralleled to the grid and a loss of offsite power occurs, the SEC will 
+actuate in Mode 2 (blackout), the EDG output breaker will open, the diesel will remain running, then the 
+SEC will open both infeed breakers to the 2A 4KV bus, strip all loads from the 4KV vital bus, then re-
+close the output breaker, and re-start loads using the SEC load sequencer. 
+C. Incorrect.  Plausible because the operator may believe that since the EDG is in test and running with its 
+output breaker already closed, that the SEC will not open the output breaker and only need to strip the 
+loads off the bus. 
+D. Incorrect.  Plausible because the operator may believe that since the EDG is in test and running with its 
+output breaker already closed, that the SEC will not strip the bus with the EDG in test and manual action 
+will be needed to manually strip and load the safeguard loads. 
+ 
+Technical References:   NOS05SEC000-08 
+Proposed References to be provided: None 
+Learning Objective: NOS05SEC000-08, Objective 4. Describe in detail each Mode 
+of Safeguards Equipment Control System operation, including 
+setpoints for automatic actuation 
+Question Source: Bank – Salem 
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.7 / 45.6 
+Level:      RO 
+Category/System:    06-AC Electrical Distribution 
+K/A #:      062 K3.02 
+ Knowledge of the effect of a loss of or malfunction of the ac 
+distribution system will have on the following:  ED/G. 
+Importance: 4.1 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked how a loss of offsite power will affect 
+the operation of a EDG paralleled to the grid. 
+  
+
+===== PAGE 117 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 117 
+ 
+48 06-021 Points: 1.00 
+ 
+Given: 
+ Unit 2 is at 100% Power. 
+ 2C 4KV Vital Bus is aligned to 24 SPT (24CSD breaker is closed) 
+ Subsequently, the following sequence of events occurs: 
+o OHA B-18, 2C 125VDC CNTRL BUS VOLT LO, is LIT. 
+o 2C 125 VDC bus indicates 0 volts. 
+o 24 SPT de-energizes on fault protection. 
+ 
+Based on the above condition, which ONE of the following describes the effect on the 2C 4KV Vital Bus? 
+ 
+ 
+A. Energized from the 2C Emergency Diesel Generator. 
+B. De-energized with ALL infeed breakers tripped. 
+C. Energized from 23 SPT (23CSD breaker is closed). 
+D. De-energized with the infeed breaker 24CSD closed. 
+ 
+  
+
+===== PAGE 118 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 118 
+ 
+Answer: D 
+Explanation / Justification:   
+A. Incorrect.  With a loss of 2C 125 VDC, the 2C EDG will not start and the output breaker cannot close to 
+energize the 2C bus.  The operator may believe that the EDG still has the capability to start and re-
+energize the bus. 
+B. Incorrect. The 24CSD breaker will remain in the closed position.  The operator may believe that the 
+24CSD breaker will still open on loss of 125 VDC. 
+C. Incorrect. The other (23) SPT cannot close its infeed breaker to the bus (fast transfer scheme) because 
+it has an interlock which requires the other SPTs infeed breaker to be open. 
+D. Correct. DC power is required to operate relays and contacts for the 4KV Vital Bus breakers.  When DC 
+power is lost, breakers will remain “as-is”.  The EDG breaker cannot close even though it is de-
+energized because one of the interlocks to close the EDG output breaker is both infeed breakers open.  
+The other (23) SPT cannot close its infeed breaker to the bus (fast transfer scheme) because it has an 
+interlock which requires the other SPTs infeed breaker (24CSD) to be open. 
+ 
+Technical References:   NOS05DCELEC-11, S2.OP-AR.ZZ-0002 (R38) 
+Proposed References to be provided: None 
+Learning Objective: NOS05DCELEC-11, Objective 14. Given a DC Electrical 
+System failure, predict the effect of the DC Electrical System 
+failure on the following:  Emergency Diesel Generators & 
+Components using DC control power 
+Question Source: Bank – Salem 2011 NRC RO56  
+Question Cognitive Level:   Comprehension/Analysis 
+10CFR Part 55 Content:   41.7 / 45.6 
+Level:      RO 
+Category/System:    06-DC Electrical Distribution 
+K/A #:      063 K3.02 
+ Knowledge of the effect of a loss of or malfunction of the DC 
+electrical system will have on the following:  Components using 
+DC control power. 
+Importance: 3.5 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked how the loss of 125 VDC and a loss 
+of the 24 SPT will affect the 2C 4KV vital bus. 
+ 
+  
+
+===== PAGE 119 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 119 
+ 
+49 06-022 Points: 1.00 
+ 
+Given: 
+ Unit 2 is at 100% Power. 
+ The 2A1 125 VDC Battery Charger is being transfe rred to the standby charger in accordance with 
+S2.OP-SO.125-0001, 2A 125VDC Battery Charger Operation. 
+ 
+Which ONE of the following completes both statements? 
+ 
+1. The 2A1 and 2A2 125 VDC Battery Chargers are located in the __(1)__. 
+2. The proper sequence for placing the standby charger in service is to __(2)__. 
+ 
+A. 1)  100 ft. Relay Room 
+2)  remove 2A1 charger from service, then place 2A2 charger in service 
+B. 1)  84 ft. Switchgear Room 
+2)  remove 2A1 charger from service, then place 2A2 charger in service 
+C. 1)  100 ft. Relay Room 
+2)  place 2A2 charger in service, then remove 2A1 charger from service 
+D. 1)  84 ft. Switchgear Room 
+2)  place 2A2 charger in service, then remove 2A1 charger from service 
+ 
+  
+
+===== PAGE 120 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 120 
+ 
+Answer: B 
+Explanation / Justification:   
+A. Incorrect.  First part is incorrect.  All the 125 VDC Battery Chargers are located in the 84 ft. Switchgear 
+Room.  Credible distractor since the A and B 125 VDC batteries are located in the 100 ft. Relay Room.  
+Second part is correct. 
+B. Correct. All the 125 VDC Battery Chargers are located in the 84 ft. Switchgear Room. IAW S2.OP-
+SO.125-0001, Precaution and Limitation, 3.2, Do NOT operate the 2A1 and 2A2 Battery Chargers in 
+parallel in Modes 1-4.  This is to prevent cross connecting the 230 VAC Vital buses. Therefore, the 
+procedure removes the inservice battery charger first, then place the standby charger in service.  
+C. Incorrect.  First part is incorrect.  All the 125 VDC Battery Chargers are located in the 84 ft. Switchgear 
+Room.  Credible distractor since the A and B 125 VDC batteries are located in the 100 ft. Relay Room.  
+Second part is incorrect.  Paralleling battery chargers is not permitted by procedure.  Plausible because 
+the applicant may believe that the battery chargers are paralleled first before removing the inservice 
+charger. 
+D. Incorrect.  First part is correct.  Second part is in correct.  Paralleling battery chargers is not permitted by 
+procedure.  Plausible because the applicant may believe that the battery chargers are paralleled first 
+before removing the inservice charger. 
+ 
+Technical References:   NOS05DCELEC-11 
+Proposed References to be provided: None 
+Learning Objective: NOS05DCELEC-11, Objective 13. Given plant conditions, 
+relate the DC Electrical System with the following: Battery 
+charger and battery 
+Question Source: New  
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.7 / 45.7 
+Level:      RO 
+Category/System:    06-DC Electrical Distribution 
+K/A #:      063 G2.1.30 
+ Ability to locate and operate components, including local 
+controls. 
+Importance: 4.4 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked how the location of the 125 VDC 
+Battery Chargers and how to operate the chargers when placing the standby battery charger in service. 
+ 
+  
+
+===== PAGE 121 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 121 
+ 
+50 06-023 Points: 1.00 
+ 
+Given: 
+ Unit 1 is at 100% Power. 
+ The 1A EDG surveillance test is in progress in accordance with S1.OP-ST.DG-0001, 1A Diesel 
+Generator Surveillance Test. 
+ The operator has just closed the generator output breaker. 
+ 1A diesel generator output meter (1WM182) indicates 50 KW. 
+ 
+In accordance with S1.OP-ST.DG-0001, which ONE of the following completes both statements? 
+ 
+The operator is required to immediately raise diesel generator load to __(1)__ KW to prevent __(2)__. 
+ 
+A. 1)  250 
+2)  excessive accumulation of oil in the exhaust system during low load conditions 
+B. 1)  250 
+2)  tripping the output breaker on reverse power 
+C. 1)  500 
+2)  tripping the output breaker on reverse power 
+D. 1)  500 
+2)  excessive accumulation of oil in the exhaust system during low load conditions 
+ 
+  
+
+===== PAGE 122 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 122 
+ 
+Answer: C 
+Explanation / Justification:   
+A. Incorrect.  First and second parts are incorrect.  Minimum is 500 KW to prevent tripping output breaker 
+on reverse power. Plausible because the operator may incorrectly determine the required KW loading 
+and the reason for raising EDG output promptly to prevent the output breaker from tripping.  S1.OP-
+SO.DG-0001 P&L 2.19 states the following; Exhaust Fire: Low load operation allows oil to accumulate in 
+the exhaust system. If a significant amount of oil is allowed to accumulate in the exhaust system 
+followed immediately by sudden high diesel loading, there is a potential of initiating an exhaust fire. 
+Gradual diesel loading will help avoid an exhaust fire. If an exhaust fire starts, it should be allowed to 
+burn itself out by continuing to run the engine. 
+ 
+B. Incorrect. First part is incorrect.  Minimum is 500 KW to prevent tripping output breaker on reverse 
+power.  Second part is correct.  Plausible because the operator may incorrectly determine the required 
+KW loading. 
+C. Correct.  IAW S2.OP-ST.DG-0001 step 4.3.8.1.c Caution, to prevent tripping the EDG output breaker on 
+reverse power, generator load must be immediately raised to ≥ 500 KW after the breaker is closed. 
+D. Incorrect.  First part is correct.  Second part is incorrect.  Minimum load is to prevent tripping the output 
+breaker on reverse power.  Plausible because the applicant may confuse the P&L from S1.OP-SO.DG-
+0001 for low load operation to prevent exhaust fire. 
+ 
+Technical References:   NOS05E DG000-15, S1.OP-SO.DG-00001 (R39) 
+Proposed References to be provided: None 
+Learning Objective: NOS05EDG000-15, Objective 12. Discuss the procedural 
+requirements associated with the Emergency Diesel Generator, 
+including an explanation of major precaution and limitations in 
+the Emergency Diesel Generator procedure 
+Question Source: New  
+Question Cognitive Level:   Fundamental/Memory 
+10CFR Part 55 Content:   41.5 / 45.5 
+Level:      RO 
+Category/System:    06-Emergency Diesel Generator 
+K/A #:      064 A1.08 
+ Ability to predict and/or monitor changes in parameters (to 
+prevent exceeding design limits) associated with operating the 
+ED/G system controls including:  Maintaining minimum load on 
+the ED/G (to prevent reverse power) 
+Importance: 3.1 
+Tier/Group     Plant Systems-Tier 2/Group 1 
+ 
+K/A Match:  The K/A is matched because the candidate is being asked to assess current conditions 
+following closure of the EDG output breaker and determine the minimum load required to prevent the EDG 
+output breaker from tripping on reverse power. 
+  
+
+===== PAGE 123 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 123 
+ 
+Additional References:  S2.OP-ST.DG-0001 
+ 
+ 
+ 
+  
+
+
+===== PAGE 124 =====
+
+RO EXAMINATION ANSWER KEY 
+SALEM 2022 NRC Exam (20-01 ILOT) – (Rev. 1) 
+ 
+ 
+ PAGE 124 
+ 
+51 07-015 Points: 1.00 
+ 
+Given: 
+ BOTH Units 1 and 2 are at 100% Power. 
+ Unit 2 RO reports OHA A-6, RMS HI RAD OR TRBL, is LIT 
+ The 2R1B-1, Control Room Intake Radiation Monitor Channel 1, is in ALARM. 
+ BOTH control rooms Control Area Vent ilation (CAV) Systems are operating in NORMAL Mode. 
+ 
+Which ONE of the following completes both statements? 
+ 
+1. What is the expected response of the CAV systems? 
+2. Based on the above condition, how should the control room operators respond in accordance with 
+S2.OP-AR.ZZ-0001, Overhead Annunciators - Window A? 
+ 
+Note: AP = ACCIDENT PRESSURIZE 
+ 
+ 
+A. 1)  BOTH Units 1 and 2 CAV systems should be operating in AP Mode. 
+2)  Manually initiate AP Mode from Unit 1. 
+B. 1)  BOTH Units 1 and 2 CAV systems should be operating in AP Mode. 
+2)  Manually initiate AP Mode from Unit 2. 
+C. 1)  ONLY Unit 2 CAV system should be operating in AP Mode. 
+2)  Manually initiate AP Mode from Unit 2. 
+D. 1)  ONLY Unit 2 CAV system should be operating in AP Mode. 
+2)  Manually initiate AP Mode from Unit 1. 
+ 
+  

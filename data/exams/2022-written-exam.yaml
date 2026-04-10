@@ -287,3 +287,297 @@ questions:
     ka_importance: 3.0
     type: RO
     tier_group: "Tier 1/Group 2"
+  - number: 26
+    topic: "EOP-FRHS-2 AFW Isolation"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - afw
+      - steam-generator-and-blowdown
+    ka: "WE13 EK3.2"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 27
+    topic: "EOP-LOCA-2 RCS Depressurization"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - eccs
+      - 4kv
+    ka: "WE03 EA1.1"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 28
+    topic: "RCP Bearing Cooling / Seal Injection"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - rcps
+      - cvcs
+    ka: "003 K4.07"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 29
+    topic: "CVCS Boration / Dilution"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - cvcs
+    ka: "004 G2.1.32"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 30
+    topic: "CVCS Charging / Letdown"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - cvcs
+      - ccw
+    ka: "004 K4.11"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 31
+    topic: "RHR Miniflow Valve"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - rhr
+      - 115v-ac
+    ka: "005 K2.03"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 32
+    topic: "RHR Mode Switch"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - rhr
+      - cvcs
+    ka: "005 A1.05"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 33
+    topic: "ECCS Accumulator Isolation"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - eccs
+      - 4kv
+    ka: "006 A3.10"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 34
+    topic: "PRT Rupture Disc"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - pressurizer-and-prt
+    ka: "007 K5.01"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 35
+    topic: "CCW Surge Tank Level"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - ccw
+      - cvcs
+    ka: "008 K1.02"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 36
+    topic: "CCW Thermal Barrier HX"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - ccw
+    ka: "008 K1.04"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 37
+    topic: "PZR Pressure Control / Heaters"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - pressurizer-level-and-press-control
+    ka: "010 A1.07"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 38
+    topic: "Reactor Trip Functions"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - rps-ssps
+      - main-turbine
+    ka: "012 K3.02"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 39
+    topic: "ESF Actuation Signals"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - rps-ssps
+      - esf-and-design
+    ka: "013 K6.01"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 40
+    topic: "ESF Phase B / Containment"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - rps-ssps
+      - esf-and-design
+    ka: "013 K4.07"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 41
+    topic: "CFCU Operation"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - cfcus
+      - service-water
+    ka: "022 A4.04"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 42
+    topic: "Containment Spray Actuation"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-spray
+      - secs
+      - 4kv
+    ka: "026 K2.01"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 43
+    topic: "Main Steam Safety Valves"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - steam-dumps
+      - main-steam
+    ka: "039 A4.07"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 44
+    topic: "Feedwater Regulating Valves"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - feed-and-condensate
+    ka: "059 K4.19"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 45
+    topic: "Feedwater Isolation"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - feed-and-condensate
+    ka: "059 A3.02"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 46
+    topic: "AFW Pump Operation"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - afw
+    ka: "061 K3.02"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 47
+    topic: "AC Electrical Distribution"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - 4kv
+      - edgs
+      - secs
+    ka: "062 K1.02"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 48
+    topic: "DC Electrical Distribution"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - dc-power
+      - 4kv
+      - edgs
+    ka: "063 K3.01"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 49
+    topic: "DC Bus Loading"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - dc-power
+    ka: "063 A2.01"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 50
+    topic: "EDG Surveillance"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - edgs
+    ka: "064 A4.07"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 2/Group 1"
