@@ -4,6 +4,7 @@ category: procedures
 status: draft
 aliases:
   - S2.OP-SO.PZR-0003
+  - S2.OP-SO.PZR-0003 — PRT Operations
   - PRT operation
 ---
 
@@ -19,7 +20,12 @@ System operating procedure for Pressurizer Relief Tank level control and operati
 To drain PRT: open 2PR14 → automatically opens 2WL12 → starts RCDT pump (defeats low level cutoff). RCDT pumps can discharge to: (1) RWST, (2) CVCS Hold-Up Tanks, or (3) Waste Hold-Up Tanks.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q34</div>
+PRT drain limitation: <span class="hi-exam">2PR15 cannot open if PRT pressure is ≥10 psig</span>.
+</div>
+
 ## Connections
 - Related systems: [[Pressurizer & PRT]]
-- Related exam questions: [[2023 Q32]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2022 Q34]], [[2023 Q32]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

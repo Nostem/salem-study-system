@@ -4,6 +4,8 @@ category: abnormals
 status: draft
 aliases:
   - AB.CC-0001
+  - S2.OP-AB.CC-0001
+  - S2.OP-AB.CC-0001 — Component Cooling Abnormality
   - loss of CCW
 ---
 
@@ -35,8 +37,13 @@ Attachment 1 — RCP motor bearing temperature limit <span class="hi-exam">175°
 Per S1.OP-AB.CC-0001, components supplied by CCW with pressure less than CCW header pressure are sources for system-to-system out leakage (e.g., Spent Fuel Pool Heat Exchanger). <span class="hi-exam">A tube rupture in the SFP HX results in CCW leaking OUT into the SFP system</span>, causing CCW Surge Tank level to lower and SFP level to rise. The non-borated CCW water will reduce SFP boron concentration, requiring addition of borated water.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q35</div>
+Attachment 1: CCW surge tank level at <span class="hi-exam">5%</span> requires <span class="hi-exam">reactor trip, tripping ALL RCPs, isolating letdown, and swapping charging suction to RWST</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[RCPs]]
-- Related exam questions: [[2022 Q5]], [[2022 Q8]], [[2023 Q4]], [[2023 Q59]]
+- Related exam questions: [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

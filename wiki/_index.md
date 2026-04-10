@@ -157,6 +157,7 @@ status: draft
 - [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
 - [[AB.ROD-0002 — Dropped Rod]]
 - [[AB.FUEL-0001 — Fuel Handling Incident]]
+- [[AB.115-0001 — Loss of 115V Vital Instrument Bus]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
@@ -184,11 +185,14 @@ status: draft
 - [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]]
 - [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
 - [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
+- [[S2.OP-SO.CVC-0001 — CVCS Normal Operations]]
 - [[S2.OP-SO.CVC-0006 — Boron Concentration Control]]
+- [[S2.OP-SO.CVC-0012 — Letdown HX Temperature Control]]
 - [[S2.OP-SO.CBV-0001 — Containment Ventilation Operation]]
 - [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]]
 - [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
+- [[S2.OP-SO.RPS-0005 — RPS Surveillance]]
 - [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
 - [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
 - [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]

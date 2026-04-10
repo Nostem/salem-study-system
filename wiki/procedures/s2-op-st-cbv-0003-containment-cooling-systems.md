@@ -25,9 +25,15 @@ Performs periodic surveillance testing of Containment Fan Coil Units to verify S
 CFCU test result determination: with measured SW header DP of <span class="hi-exam">106 psi</span> (between 105 and 110 in Exhibit 1), per P&L 3.4 must use the next HIGHER DP value (<span class="hi-exam">110 psi = 1811 gpm minimum required</span>). Actual flow ~1785 gpm is less than 1811 gpm → <span class="hi-exam">test result is UNSAT / CFCU inoperable</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q41</div>
+CFCU SW flow and <span class="hi-exam">SW223 mechanical stop</span> limitations during surveillance testing.
+</div>
+
 ## Connections
 
 - Related systems: [[CFCUs]], [[Service Water]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
+- Related exam questions: [[2022 Q41]]
 - Related JPMs: [[2023 JPM Sim-f]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]
