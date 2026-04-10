@@ -29,5 +29,5 @@ Step 6 checks turbine trip status by verifying <span class="hi-exam">ALL turbine
 ## Connections
 
 - Related systems: [[Main Turbine]], [[RPS/SSPS]]
-- Related exam questions: [[2022 Q10]], [[2023 Q80]]
+- Related exam questions: [[2022 Q10]], [[2022 Q73]], [[2023 Q80]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

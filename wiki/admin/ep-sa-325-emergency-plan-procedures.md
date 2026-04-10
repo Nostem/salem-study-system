@@ -74,6 +74,6 @@ ERDS activation: must select the correct unit's <span class="hi-exam">CONNECT bu
 ## Connections
 
 - Related systems: [[RPS/SSPS]]
-- Related exam questions: [[2023 Q69]], [[2023 Q92]]
+- Related exam questions: [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]]
 - Related JPMs: [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

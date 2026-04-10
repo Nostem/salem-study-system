@@ -37,5 +37,5 @@ FRP rules of usage (yellow path): EOP-FRCE-3 (High Containment Radiation) is a <
 
 ## Connections
 
-- Related exam questions: [[2023 Q23]], [[2023 Q77]], [[2023 Q99]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2022 Q73]], [[2023 Q23]], [[2023 Q77]], [[2023 Q99]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

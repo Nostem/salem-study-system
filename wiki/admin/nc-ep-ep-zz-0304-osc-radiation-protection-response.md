@@ -34,5 +34,6 @@ Emergency volunteer selection for lifesaving task (15-20 REM predicted dose): sy
 
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related concepts: [[Radiation Monitoring]]
+- Related exam questions: [[2022 Q71]]
 - Related JPMs: [[2023 JPM SRO-A3]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]
