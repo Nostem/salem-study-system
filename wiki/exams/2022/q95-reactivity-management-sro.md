@@ -14,7 +14,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-In accordance with OP-AA-300, Reactivity Management, which ONE of the following completes both statements?<br><br>
+In accordance with <span class="hi">OP-AA-300, Reactivity Management</span>, which ONE of the following completes both statements?<br><br>
 1. During significant reactivity changes, the role of the Reactivity Management SRO may be filled by <span class="blank">_(1)_</span>.<br>
 2. The Reactivity Management SRO <span class="blank">_(2)_</span> allowed to perform peer checks during reactivity manipulations.
 </div>
