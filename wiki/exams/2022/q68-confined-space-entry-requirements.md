@@ -14,7 +14,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-In accordance with SA-AA-114, Confined Space Program, which ONE of the following completes both statements regarding a PERMITTED confined space entry?<br><br>
+In accordance with <span class="hi">SA-AA-114, Confined Space Program</span>, which ONE of the following completes both statements regarding a PERMITTED confined space entry?<br><br>
 <span class="blank">_(1)_</span> Who must be present at the confined space entry point while Entrants are in the space?<br>
 <span class="blank">_(2)_</span> Who may enter the space if an emergency rescue must be performed?
 </div>
