@@ -18,7 +18,7 @@ aliases:
 • Unit 2 is at 100% Power.<br>
 • OHA H-27, GEN VREG TRBL, is LIT.<br>
 • PO reports that the main generator Automatic Voltage Regulator (AVR) swapped to Manual.<br><br>
-In accordance with OP-AA-108-107-1002, Salem and Hope Creek 500 KV Switchyard Operations Interface Procedure, which one of the following completes both statements?<br><br>
+In accordance with <span class="hi">OP-AA-108-107-1002</span>, Salem and Hope Creek 500 KV Switchyard Operations Interface Procedure, which one of the following completes both statements?<br><br>
 1. The Shift Manager is required to notify <span class="blank">_(1)_</span> that the AVR is not in AUTO.<br>
 2. Per S2.OP-AR.ZZ-0008, Overhead Annunciator Window H, the operating shift is required to make the notification within <span class="blank">_(2)_</span> minutes of receiving OHA H-27.<br><br>
 Note: ESOC - Electric System Operation Center
