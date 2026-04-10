@@ -1,14 +1,14 @@
 ---
-title: Emergency Core Cooling Systems
+title: ECCS
 category: systems
 status: draft
 aliases:
-  - ECCS
+  - Emergency Core Cooling Systems
   - safety injection
   - SI
 ---
 
-# Emergency Core Cooling Systems
+# ECCS
 
 ## Function
 

@@ -1,13 +1,16 @@
 ---
-title: Containment Systems
+title: Containment
 category: systems
 status: draft
 aliases:
-  - containment
+  - Containment Systems
   - containment isolation
+  - adverse containment
+  - adverse containment conditions
+  - Adverse Containment
 ---
 
-# Containment Systems
+# Containment
 
 ## Function
 
@@ -159,11 +162,42 @@ IST containment ventilation valve surveillance review: <span class="hi-exam">2VC
 Containment pressure relief: upon <span class="hi-exam">OHA A-6 (RMS HI RAD OR TRBL) alarm on 2R41D</span> with automatic isolation defeated, must <span class="hi-exam">manually close PRESSURE RELIEF DAMPER, 2VC6, and 2VC5</span> to isolate the radiological release.
 </div>
 
+## Fire Protection
+
+- Fire detection and alarm system throughout the plant
+- Water supply (fire water pumps, sprinklers, standpipes)
+- CO₂, Halon, and dry chemical suppression in specific areas
+- Safe shutdown capability analysis per 10CFR50 Appendix R
+- RCP oil collection system prevents fire spread from oil leaks
+(UFSAR 9.5.1)
+
+## Adverse Containment Conditions
+
+### Definition
+Adverse containment conditions exist when containment pressure is elevated above normal, typically >= 4 psig. This affects multiple EOP setpoints and action criteria because elevated containment pressure degrades instrument accuracy and changes thermal-hydraulic behavior.
+
+### Impact on EOP Parameters
+When adverse containment conditions exist, EOP setpoints for level instruments are adjusted upward to account for the effect of containment pressure on instrument readings:
+
+| Parameter | Normal Containment | Adverse Containment |
+|---|---|---|
+| SG NR level for RCP start (EOP-FRCC-1) | >= 9% | >= 15% |
+
+### Why It Matters
+- SG narrow range level transmitters are affected by containment pressure because the reference leg is inside containment
+- Higher containment pressure depresses the indicated level reading
+- EOPs use higher setpoint values under adverse containment to ensure actual conditions support the intended action
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q84</div>
+With containment pressure at <span class="hi-exam">5 psig</span> (adverse conditions), the required SG NR level for RCP start in EOP-FRCC-1 is <span class="hi-exam">>= 15%</span> instead of the normal 9%. <span class="hi-trap">Trap: using normal containment criteria when adverse conditions exist will overestimate the number of available RCPs.</span>
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]]
-- Related concepts: [[Adverse Containment]]
+- Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]]
+- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]]
+- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

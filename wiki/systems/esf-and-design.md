@@ -1,15 +1,17 @@
 ---
-title: Accident Analysis
-category: concepts
+title: ESF & Design
+category: systems
 status: draft
 aliases:
+  - engineered safety features
+  - Accident Analysis
   - Chapter 15
   - accident analysis
   - LOCA
   - transient analysis
 ---
 
-# Accident Analysis
+# ESF & Design
 
 ## Overview
 
@@ -96,5 +98,5 @@ Accident analyses provide the bases for many Tech Spec limits including:
 
 ## Connections
 
-- Related systems: [[Emergency Core Cooling Systems]], [[Reactor Coolant System]], [[Instrumentation and Controls]], [[Containment Systems]], [[Auxiliary Feedwater]]
-- Related EOPs: [[EOP-TRIP-1 — Standard Post Trip Actions]], [[EOP-LOCA Series]], [[EOP-SGTR-1]], [[Critical Safety Function Status Trees]]
+- Related systems: [[ECCS]], [[RCS]], [[Instrumentation and Controls]], [[Containment]], [[Auxiliary Feedwater]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA Series]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[Critical Safety Function Status Trees]]

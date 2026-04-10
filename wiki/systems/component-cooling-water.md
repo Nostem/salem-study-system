@@ -1,12 +1,12 @@
 ---
-title: Component Cooling Water
+title: CCW
 category: systems
 status: draft
 aliases:
-  - CCW
+  - Component Cooling Water
 ---
 
-# Component Cooling Water
+# CCW
 
 ## Function
 

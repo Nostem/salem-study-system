@@ -1,13 +1,13 @@
 ---
-title: Residual Heat Removal
+title: RHR
 category: systems
 status: draft
 aliases:
-  - RHR
+  - Residual Heat Removal
   - shutdown cooling
 ---
 
-# Residual Heat Removal
+# RHR
 
 ## Function
 

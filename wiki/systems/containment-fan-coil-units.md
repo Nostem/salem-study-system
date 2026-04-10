@@ -1,14 +1,14 @@
 ---
-title: Containment Fan Coil Units
+title: CFCUs
 category: systems
 status: draft
 aliases:
-  - CFCUs
+  - Containment Fan Coil Units
   - containment cooling
   - containment fan coolers
 ---
 
-# Containment Fan Coil Units
+# CFCUs
 
 ## Function
 
