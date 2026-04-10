@@ -99,6 +99,7 @@ status: draft
 
 ## NRC Exams
 - [[2022 NRC Written Exam]]
+- [[2022 NRC Operating Exam]]
 - [[2023 NRC Written Exam]]
 - [[2023 NRC Operating Exam]]
 
@@ -127,6 +128,7 @@ status: draft
 - [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
 - [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
 - [[EOP-TRIP-7 — Rediagnosis]]
+- [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 
 ## Abnormal Procedures
 - [[AB.LOOP-0001 — Loss of All Offsite Power]]
@@ -220,3 +222,7 @@ status: draft
 - [[S2.OP-AR.ZZ-0008 — Overhead Annunciators Window H]]
 - [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]]
 - [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]]
+- [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
+- [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]]
+- [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
+- [[RP-AA-300 — Radiological Survey Program]]

@@ -84,9 +84,14 @@ CFCU surveillance (S2.OP-ST.CBV-0003): if measured SW header DP is between Exhib
 SEC Mode 1 (SI only, no LOOP) CFCU response: <span class="hi-exam">SEC trips ALL high-speed 460V breakers (including standby CFCUs), then after a 20-second time delay, starts ALL five CFCUs in low speed</span>. The SEC does NOT use load sequencers in Mode 1. A CFCU in standby receives the same treatment — high-speed breaker trips, then <span class="hi-exam">low-speed breaker closes after 20 seconds</span>. <span class="hi-trap">There is NO immediate start for standby CFCUs — ALL CFCUs (running and standby) start in low speed after the same 20-second delay.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A4</div>
+Containment entry for 22 CFCU tagging (Mode 1, 100% power): at the 22 CFCU area on 130' elevation, survey map shows <span class="hi-exam">gamma dose rate = 5 mrem/hr, neutron dose rate = 40 mrem/hr</span>. With RP-imposed limits of 0.002 REM gamma / 0.008 REM neutron, the <span class="hi-exam">neutron dose is the most limiting factor at 12 minutes</span> (shorter than gamma 24 min and heat stress 15 min).
+</div>
+
 ## Connections
 
-- Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
+- Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
-- Related JPMs: [[2023 JPM Sim-f]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

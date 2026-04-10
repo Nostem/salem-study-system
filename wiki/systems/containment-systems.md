@@ -201,11 +201,16 @@ When adverse containment conditions exist, EOP setpoints for level instruments a
 With containment pressure at <span class="hi-exam">5 psig</span> (adverse conditions), the required SG NR level for RCP start in EOP-FRCC-1 is <span class="hi-exam">>= 15%</span> instead of the normal 9%. <span class="hi-trap">Trap: using normal containment criteria when adverse conditions exist will overestimate the number of available RCPs.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A1</div>
+EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free volume at STP: <span class="hi-exam">V = 2.62E06 x Tfact</span> where Tfact = 492/Tabs. At 140F containment temp: Tabs = 600R, Tfact = 0.82, V = 2148400 ft3. Maximum allowable hydrogen concentration is <span class="hi-exam">3.0%</span> — vent volume limited to (3.0% - current H2%) x V / 100%.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
+- Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
-- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

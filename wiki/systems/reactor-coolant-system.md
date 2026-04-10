@@ -274,10 +274,15 @@ Steam table subcooling calculation: at <span class="hi-exam">1805 psig (1820 psi
 Condensate depression effects: decreasing condensate depression (from 5°F to 2°F) means the condensate is <span class="hi-exam">closer to saturation temperature</span>. This produces <span class="hi-exam">less NPSH at the condensate pump suction (closer to cavitation)</span> because there is less subcooling to prevent flashing. However, because the feedwater is hotter, the SGs must add <span class="hi-exam">less sensible heat to reach saturation — improving steam cycle thermal efficiency</span>. <span class="hi-trap">Trap: lower condensate depression means higher efficiency but worse pump cavitation margin — effects go in opposite directions.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A1</div>
+EOP-FRCI-3 Attachment 1 maximum vent time calculation for reactor vessel upper head voiding: at <span class="hi-exam">1600 psig RCS pressure</span>, hydrogen flow rate from Figure 1 is <span class="hi-exam">3333 cfm</span>. Maximum containment hydrogen increase limited to keep total below <span class="hi-exam">3.0%</span>. With 2.3% current H2 and 140F containment temperature, maximum vent time = <span class="hi-exam">4.5 minutes</span>.
+</div>
+
 ## Connections
 
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)
-- Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related exam questions: [[2023 Q17]], [[2023 Q73]], [[2023 Q74]]
-- Related JPMs: [[2023 JPM Sim-d]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM Sim-d]], [[2022 JPM RO-A1]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

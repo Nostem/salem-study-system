@@ -65,14 +65,20 @@ TS 3.9.2.2 (refueling source range neutron flux monitors): per TS bases, <span c
 TS 3.3.1.1 Action 3 for one IR NIS channel inoperable above P-6: <span class="hi-exam">reduce RTP below P-6 OR raise RTP above P-10 within 24 hours</span>. P-6 setpoint is <span class="hi-exam">1E-5% RTP</span>. At 1E-4% power, the reactor IS above P-6 and the LCO applies. <span class="hi-trap">Reactor power at 1E-4% is above P-6 (1E-5%) — do not incorrectly assess that power is below P-6.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A3</div>
+Manual QPTR calculation (S2.OP-ST.NIS-0002): for each Power Range detector (N41-N44), upper and lower: divide measured current by REM 100% current value to get detector ratio. Sum ratios, divide by <span class="hi-exam">4 operable detectors</span> to get average. Divide each ratio by average = power tilt. A dropped rod (2D4) causes asymmetric flux in N42 quadrant: <span class="hi-exam">N42T = 1.041, N42B = 1.032</span>, both exceeding TS 3.2.4 limit of <span class="hi-exam">1.02</span> → surveillance UNSAT.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
-- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
-- Related exams: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]]
+- Related exams: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
   - [[2023 Q72]] — Subcritical SR counts stabilize higher / SUR decays to zero after rod withdrawal
   - [[2023 Q11 — Loss of Vital Instrument Bus / NI Channel Response|2023 Q11]] — Vital instrument bus loss / NI channels fail low / IR trip logic
   - [[2023 Q82]] — IR NIS P-6 permissive / TS 3.3.1.1 bases for 24-hour action time
   - [[2022 Q57]] — IR NIS fails high / P-10 unblocks 1/2 IR trip on 3/4 PR below setpoint
   - [[2022 Q78]] — Gamma-Metrics substitution for SR channel per TS 3.9.2.2 bases
   - [[2022 Q82]] — One IR channel inoperable above P-6 / TS 3.3.1.1 Action 3
+- Related JPMs: [[2022 JPM RO-A3]]

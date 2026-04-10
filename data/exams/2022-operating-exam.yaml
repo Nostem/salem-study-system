@@ -1,0 +1,129 @@
+exam: 2022
+type: operating
+ilot_class: "20-01"
+jpms:
+  - id: "RO-A1"
+    title: "Determine maximum reactor vessel vent time IAW 2-EOP-FRCI-3 Attachment 1"
+    type: Admin-RO
+    location: Classroom
+    procedure: "2-EOP-FRCI-3"
+    procedure_rev: 40
+    pages: "4-8"
+    ka: "G2.1.25"
+    ka_importance_ro: 3.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N1150410501"
+    estimated_time_min: 10
+
+  - id: "RO-A2"
+    title: "Determine boration time for 3 stuck rods and final BAST level IAW 2-EOP-TRIP-2"
+    type: Admin-RO
+    location: Classroom
+    procedure: "2-EOP-TRIP-2"
+    procedure_rev: 41
+    secondary_ref: "S2.OP-TM.ZZ-0002"
+    secondary_ref_rev: 8
+    pages: "16-22"
+    ka: "G2.1.20"
+    ka_importance_ro: 4.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1150030501"
+    estimated_time_min: 8
+
+  - id: "RO-A3"
+    title: "Perform manual QPTR calculation surveillance IAW S2.OP-ST.NIS-0002"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-ST.NIS-0002"
+    procedure_rev: 15
+    secondary_ref: "REM Salem 2 Cycle 25"
+    secondary_ref_rev: 33
+    pages: "27-34"
+    ka: "G2.2.12"
+    ka_importance_ro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0150020201"
+    estimated_time_min: 20
+
+  - id: "RO-A4"
+    title: "Determine radiological dose and stay times for containment entry"
+    type: Admin-RO
+    location: Classroom
+    procedure: "RP-AA-300"
+    procedure_rev: 6
+    pages: "43-47"
+    ka: "G2.3.13"
+    ka_importance_ro: 3.4
+    ka_importance_sro: 3.8
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1200100104"
+    estimated_time_min: 10
+
+  - id: "IP-i"
+    title: "Transfer PZR Backup Heater to Emergency Power Supply"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S2.OP-SO.PZR-0010"
+    procedure_rev: 32
+    pages: "199-207"
+    ka: "010 A4.03"
+    ka_importance_ro: 3.6
+    ka_importance_sro: 3.4
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1130040501"
+    safety_function: 3
+    estimated_time_min: 15
+
+  - id: "IP-j"
+    title: "Locally Open Reactor Trip Breakers IAW AB.CR-0001"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S1.OP-AB.CR-0001"
+    procedure_rev: 19
+    pages: "208-217"
+    ka: "012 A4.06"
+    ka_importance_ro: 4.3
+    ka_importance_sro: 4.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "1130070501"
+    safety_function: 7
+    unit: 1
+    estimated_time_min: 25
+
+  - id: "IP-k"
+    title: "Perform a Radioactive Liquid Release IAW S2.OP-SO.WL-0001"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S2.OP-SO.WL-0001"
+    procedure_rev: 28
+    secondary_ref: "S2.OP-TM.ZZ-0002"
+    secondary_ref_rev: 8
+    pages: "218-226"
+    ka: "068 A4.03"
+    ka_importance_ro: 3.9
+    ka_importance_sro: 3.8
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N0685140104"
+    safety_function: 9
+    estimated_time_min: 25

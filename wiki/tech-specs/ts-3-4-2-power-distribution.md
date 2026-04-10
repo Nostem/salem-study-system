@@ -211,7 +211,14 @@ The AFD target band limits power distribution peaking caused by xenon redistribu
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-2.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A3</div>
+Manual QPTR surveillance following dropped rod 2D4: calculated QPTR for N42 quadrant upper = <span class="hi-exam">1.041</span>, lower = <span class="hi-exam">1.032</span>, both exceeding the <span class="hi-exam">1.02 limit</span>. Surveillance marked UNSAT, TS LCO 3.2.4 NOT met. QPTR >1.02 but <1.09 → Action a applies: calculate QPTR hourly, restore within <span class="hi-exam">2 hours</span> or reduce power.
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]], [[RCS]]
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]]
+- Related JPMs: [[2022 JPM RO-A3]]
+- Related exam: [[2022 NRC Operating Exam]]

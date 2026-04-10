@@ -123,10 +123,26 @@ EOP-LOCA-2 auxiliary spray depressurization: open <span class="hi-exam">2CV75 (A
 Letdown orifice isolation valves (CV3, CV4, CV5) close on: <span class="hi-exam">Phase A signal, CV2 or CV277 closing, PZR level <17%, trip all charging pumps, or manual Phase A actuation from the safeguards bezel</span>. CV4 receives a closure signal <span class="hi-exam">directly from Phase A</span> (not directly from SI). SI actuates Phase A, which then closes CV4. <span class="hi-trap">CV2 and CV277 (letdown isolation valves) close on PZR low level <17% — NOT directly on SI or Phase A. Do not confuse CV2/CV277 interlocks with the letdown orifice valve (CV4) Phase A closure signal.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A2</div>
+BAST level-to-volume conversions using S2.OP-TM.ZZ-0002 tank curves: <span class="hi-exam">94% = 7400 gal, 76% = 6000 gal</span>. After 105 minutes rapid boration at 40 GPM (4200 gal total, 2100 gal per BAST): 21 BAST final = <span class="hi-exam">5300 gal = 67%</span>, 22 BAST final = <span class="hi-exam">3900 gal = 49%</span>. EOP-TRIP-2 Step 4 requires <span class="hi-exam">35 minutes of rapid boration per stuck rod</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 IP-j</div>
+During Unit 1 Control Room Evacuation (AB.CR-0001 Att. 5), after locally opening all four reactor trip/bypass breakers: open <span class="hi-exam">1AX1AX7X (#13 Charging Pump breaker)</span> to stop uncontrolled charging, and open <span class="hi-exam">1CY2AX4I (1CV175 Rapid Borate Stop Valve breaker)</span> to de-energize the valve and stop potential uncontrolled boration.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-b</div>
+Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and 6700 ppm BAST concentration, determine boric acid flow setpoint using <span class="hi-exam">Figure 100A</span> from S2.RE-RA.ZZ-0012 for 62 gpm PW flow — setpoint is <span class="hi-exam">~9.6 gpm (9-11 gpm acceptable)</span>. Place 2CV179 and 2CV172 in MANUAL/CLOSE, align blender outlet via <span class="hi-exam">2CV185 (preferred — to charging pump suction)</span> or 2CV181. Start PW pump in MANUAL, BA pump in MANUAL/FAST. Adjust BA flow on FI110A, PW flow on FI111A to 62 gpm. When VCT at 53%, secure makeup.
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]]
-- Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
+- Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
+- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]]
 - Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
-- Related JPMs: [[2023 JPM Sim-c]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
