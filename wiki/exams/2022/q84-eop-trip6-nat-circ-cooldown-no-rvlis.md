@@ -16,7 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br><br>
 • Unit 2 reactor tripped due to loss of all offsite power.<br>
-• The crew has verified natural circulation flow and is cooling down the plant per 2-EOP-TRIP-4, Natural Circulation Cooldown.<br>
+• The crew has verified natural circulation flow and is cooling down the plant per <span class="val-trip">2-EOP-TRIP-4</span>, Natural Circulation Cooldown.<br>
 • Train A RVLIS is out of service for Maintenance.<br>
 • The Shift Manager directs the crew to perform a rapid cooldown and depressurization due to secondary inventory concerns.<br><br>
 Current plant conditions are:<br>
