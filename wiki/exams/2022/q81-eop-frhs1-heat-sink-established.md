@@ -16,7 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br><br>
 • Unit 2 reactor tripped.<br>
-• During performance of 2-EOP-TRIP-2, Reactor Trip Response, the crew transitions to 2-EOP-FRHS-1, Loss of Secondary Heat Sink, due to Loss of ALL AFW flow.<br><br>
+• During performance of <span class="val-trip">2-EOP-TRIP-2</span>, Reactor Trip Response, the crew transitions to 2-EOP-FRHS-1, Loss of Secondary Heat Sink, due to Loss of ALL AFW flow.<br><br>
 Subsequently;<br>
 • 21 SGFP is running providing feed flow to 22 SG.<br>
 • All SG Narrow Range levels are offscale low.<br>
