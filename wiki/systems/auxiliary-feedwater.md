@@ -1,13 +1,14 @@
 ---
-title: Auxiliary Feedwater
+title: AFW
 category: systems
 status: draft
 aliases:
-  - AFW
+  - Auxiliary Feedwater
   - auxiliary feedwater system
+  - AFW
 ---
 
-# Auxiliary Feedwater
+# AFW
 
 ## Function
 
