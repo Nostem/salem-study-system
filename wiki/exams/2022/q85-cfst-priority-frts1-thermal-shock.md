@@ -17,7 +17,7 @@ aliases:
 <strong>Given:</strong><br><br>
 • Unit 2 experienced a reactor trip and safety injection due to a steam line break downstream of the Main Steam Line Isolation Valves (MSIVs).<br>
 • ALL MSIVs failed to close.<br>
-• The crew is performing SI Termination steps per 2-EOP-LOSC-2, Uncontrolled Depressurization of All Steam Generators.<br>
+• The crew is performing SI Termination steps per <span class="val-trip">2-EOP-LOSC-2</span>, Uncontrolled Depressurization of All Steam Generators.<br>
 • Field operator reports that 23MS167 is now closed.<br><br>
 Subsequently, the STA observes the following;<br>
 • AFW flow to each SG is 1E+4 lbm/hr.<br>
