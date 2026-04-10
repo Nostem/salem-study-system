@@ -55,10 +55,16 @@ MSLI actuation setpoints: High steam flow (<span class="val-trip">>40%</span>) c
 MS10 atmospheric dump valves during EOP-LOPA-1 (Loss of All AC Power): on loss of all control air, CA330s fail closed isolating air to containment. MS10s remain operable from the control room via <span class="hi-exam">DC battery power for controls and nitrogen bottle racks (4 bottles >=2000 psig per MS10) for the air operator</span>. Bottle rack capacity: <span class="hi-exam">minimum 72 hours</span> of MS10 operation. Maximum cooldown rate per EOP-LOPA-1 step 17.2 is <span class="hi-exam">100F/hr</span>. <span class="hi-trap">50F/hr is the cooldown rate for EOP-TRIP-6 (Nat Circ without RVLIS above 500F), NOT EOP-LOPA-1.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #3</div>
+Main turbine fails to auto trip AND fails to manually trip following reactor trip from AB.RCP-0001. MSLI fails to auto actuate. <span class="hi-exam">CT#1 (CT-12): crew manually actuates MSLI using Fast Close pushbuttons on 2CC2</span> (or Loops 21-24 MSLI on 2CC1 Safeguards bezels). Failure to close MSIVs causes uncontrolled depressurization of all SGs, excessive RCS cooldown, and challenges to Integrity and Subcriticality CSFs. MS10 atmospheric dump valves used in EOP-FRHS-1 to depressurize selected SG to < <span class="hi-exam">575 psig</span> for condensate feed recovery.
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Dumps]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]]
 - Related exam questions: [[2022 Q12]], [[2022 Q77]]
 - Related JPMs: [[2023 JPM Sim-e]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

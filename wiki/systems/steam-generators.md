@@ -120,10 +120,16 @@ ICMF peer check during SGTR: a release IS in progress because the <span class="h
 EOP-FRHS-1 heat sink established criteria (Step 6): heat sink is established when <span class="hi-exam">NR level in at least one SG is >9% (15% adverse)</span> OR <span class="hi-exam">feed flow is verified to at least one SG by CETs lowering or WR level rising</span>. If WR level is rising in one SG (even with all NR levels offscale low), heat sink IS established and transition back to the procedure in effect (e.g. EOP-TRIP-2) IS allowed. <span class="hi-trap">NR level does not need to reach 9% before returning — WR level rising is sufficient to confirm feed flow and allow exit from FRHS-1.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #4</div>
+23 SG tube leak (25-30 gpm) progressing to design basis 650 gpm tube rupture. Diagnostic indications: RMS alarms <span class="hi-exam">2R15, 2R19C (23 SG B/D), 2R53C (MS Line)</span>, PZR level lowering. Transfer to centrifugal charging pump stabilizes PZR level at 35 gpm. At 650 gpm, leak exceeds makeup capability — trip reactor and actuate SI. SGTR-1 isolation: close <span class="hi-exam">23AF21, 23AF11</span> (feed), <span class="hi-exam">23MS167, 23MS18, 23MS7, 23GB4</span> (steam), trip 23 AFW pump, dispatch to close <span class="hi-exam">23MS45</span>, close <span class="hi-exam">2SS333</span>. Set 23MS10 to 1045 psig. Target cooldown temp from Table B: SG press > 1000 psig = <span class="hi-exam">503 F CETs</span>.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-SGTR-1]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam questions: [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
 - Related JPMs: [[2023 JPM SRO-A4]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related scenarios: [[2022 Scenario 4]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

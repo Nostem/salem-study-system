@@ -108,9 +108,15 @@ Loss of RHR breaker reclosure: per OP-SA-108-106-1001 step 4.2.2, during an <spa
 EOP-LOCA-4 hot leg recirculation with 21 RHR pump C/T: Step 4.0 directs <span class="hi-exam">CLOSE 22CS36 (RHR Supply to CS Valve)</span> and <span class="hi-exam">OPEN 22SJ49 (Cold Leg Isolation Valve)</span> for the running 22 RHR pump alignment.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #1</div>
+21 RHR pump C/T for motor bearing inspection. During LBLOCA, <span class="hi-exam">22 RHR pump fails to start on 2B SEC signal</span> (CT#2, CT-5). PO blocks and resets 2B SEC, RO manually starts 22 RHR. Later in EOP-LOCA-1, <span class="hi-exam">22 RHR pump trips on overcurrent</span> — no RHR pumps available for emergency recirculation. CRS transitions to EOP-LOCA-5, Loss of Emergency Recirculation. Loss of both RHR pumps is the driver for CT#3 (RWST conservation actions).
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
+- Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related exam questions: [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

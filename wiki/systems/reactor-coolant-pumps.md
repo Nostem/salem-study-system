@@ -140,9 +140,15 @@ RCP #1 seal failure identification: <span class="hi-exam">seal leak-off flow >=6
 RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <span class="hi-exam">low seal flow across #2 seal or excessive #3 seal flow</span>. Key check: if standpipe low AND seal leakoff flow alarm together → go to AB.RCP-0001. If standpipe low ONLY → fill: open <span class="hi-exam">2WR80 (PW to CONTMT STOP V)</span> on 2CC2, then <span class="hi-exam">21WR62 (Standpipe Supply Valve)</span> on 21 RCP bezel. When hi level alarm, close all and stop PW pump.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #3</div>
+23 RCP motor bearing oil level OHA actuates. Motor bearing temperatures and vibrations rising — exceed AB.RCP-0001 trip criteria of <span class="hi-exam">motor bearing temp > 175 degF</span> or <span class="hi-exam">motor vibrations > 5 mils</span>. CRS directs RO to trip reactor and stop 23 RCP IAW AB.RCP-0001 Attachment 2. Event triggers entry to EOP-TRIP-1.
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
 - Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related JPMs: [[2022 JPM Sim-d]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

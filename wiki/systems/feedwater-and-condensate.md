@@ -103,9 +103,15 @@ Loss of SGFP at >70% power: auto turbine runback <span class="hi-exam">fails</sp
 Ovation (ADFCS) steam pressure channel failure: Ovation uses <span class="hi-exam">one pressure channel from each SG (4 total) into a Medium Signal Select (MSS) algorithm</span>. If one SG steam pressure channel fails HIGH, the <span class="hi-exam">associated MS10 (atmospheric dump) loop switches to MANUAL</span> control (OHAs G-7 ADFCS Alternate Action and G-15 ADFCS TRBL). The MSS algorithm selects a good input for the remaining MS10 loops — <span class="hi-exam">other MS10s remain in AUTO</span>. <span class="hi-trap">A single pressure channel failure does NOT open the MS10 or cause ALL MS10s to swap to manual.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #3</div>
+Condensate recovery in EOP-FRHS-1 after loss of all AFW. Both SGFPs tripped due to auto SI following main turbine failure to trip. Crew resets SI/Phase A/Phase B, opens <span class="hi-exam">CA330s</span>. Selects one SG for depressurization to < <span class="hi-exam">575 psig</span> using MS10. Dispatches operator to open <span class="hi-exam">BF40 or BF19</span> (120 ft TGA). Opens <span class="hi-exam">BF13</span>, opens <span class="hi-exam">CN48 (SGFP bypass valves)</span>, closes <span class="hi-exam">CN32 (SGFP suction valves)</span>. Condensate flow established when SG pressure is around 600 psi. Validation note: approximately 10 minutes to depressurize via MS10, condensate flow visible at 5-6% WR rising.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

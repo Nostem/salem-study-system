@@ -243,4 +243,5 @@ The OPERABILITY of the ESFAS instrumentation ensures that: (1) the associated ES
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]]
 - Related exam questions: [[2023 Q82]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

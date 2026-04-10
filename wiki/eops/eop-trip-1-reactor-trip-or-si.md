@@ -55,10 +55,26 @@ CS pump manual start requires <span class="hi-exam">SECs to be blocked/reset fir
 Step 9 — CNMT Spray/Phase B actuation during LBLOCA: containment pressure NOT < <span class="hi-exam">15 psig</span> → manually initiate Phase B and Spray using safeguards key switches on 2CC1. Alternate path: Phase B valves (<span class="hi-exam">2CC131, 2CC190</span>) fail to auto-close and NaOH valves (<span class="hi-exam">2CS16, 2CS17</span>) fail to auto-open on CS signal. Per Step 9.e, manually reposition valves to safeguards positions.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #3</div>
+Manual reactor trip from AB.RCP-0001 (23 RCP motor bearing temp > <span class="hi-exam">175 degF</span>). During TRIP-1 immediate actions, main turbine fails to auto trip AND fails to manually trip (pistol grip and console pushbutton). MSLI fails to auto actuate. <span class="hi-exam">CT#1 (CT-12): RO manually initiates MSLI using Fast Close pushbuttons on 2CC2</span> before Red path to subcriticality or integrity CFST. Auto SI actuates (trips both SGFPs). 23 AFP fails to auto start — PO manually starts. Subsequently 22 AFP trips on overcurrent, 23 AFP trips on overspeed → loss of all AFW → CFST Heat Sink Red Path → transition to EOP-FRHS-1.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #1</div>
+LBLOCA with <span class="hi-exam">auto SI failure on both trains</span> (CT#1, CT-2): crew must manually actuate SI on at least one train before transition out of TRIP-1. Also, <span class="hi-exam">22 RHR pump fails to start on SEC signal</span> (CT#2, CT-5) — PO blocks and resets 2B SEC, RO manually starts 22 RHR. CAS actions: stop RCPs at &lt;<span class="val-trip">1350 psig</span>, close charging mini-flows at &lt;<span class="val-trip">1500 psig</span>. Transition to EOP-LOCA-1 based on containment pressure &gt;4 psig.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #4</div>
+Entered following manual reactor trip and SI on 23 SG tube rupture (650 gpm exceeding makeup). During TRIP-1 immediate actions: PO throttles AFW to no less than <span class="hi-exam">22E4 lbm/hr</span>. PO identifies <span class="hi-exam">21 CFCU failed to start on SEC — blocks 2A SEC, resets, manually starts 21 CFCU in LOW speed</span>. Feed side of ruptured SG isolated during TRIP-1 (23AF21, 23AF11 closed). Transition to SGTR-1 when 23 SG NR level rising uncontrolled. Note: 2PR7 PORV block valve already closed from earlier PORV leakage event — only 2PR6 block valve open.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment Spray]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]]
 - Related exam questions: [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
 - Related JPMs: [[2022 JPM Sim-f]]
+- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

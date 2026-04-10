@@ -285,4 +285,5 @@ EOP-FRCI-3 Attachment 1 maximum vent time calculation for reactor vessel upper h
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related exam questions: [[2023 Q17]], [[2023 Q73]], [[2023 Q74]]
 - Related JPMs: [[2023 JPM Sim-d]], [[2022 JPM RO-A1]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

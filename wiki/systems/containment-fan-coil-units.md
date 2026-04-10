@@ -89,9 +89,15 @@ SEC Mode 1 (SI only, no LOOP) CFCU response: <span class="hi-exam">SEC trips ALL
 Containment entry for 22 CFCU tagging (Mode 1, 100% power): at the 22 CFCU area on 130' elevation, survey map shows <span class="hi-exam">gamma dose rate = 5 mrem/hr, neutron dose rate = 40 mrem/hr</span>. With RP-imposed limits of 0.002 REM gamma / 0.008 REM neutron, the <span class="hi-exam">neutron dose is the most limiting factor at 12 minutes</span> (shorter than gamma 24 min and heat stress 15 min).
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #4</div>
+21 CFCU fails to start in LOW speed on SEC signal following reactor trip/SI for SGTR. <span class="hi-exam">21 CFCU is powered from 2A 4KV bus</span>. Recovery: PO blocks 2A SEC, PO resets 2A SEC, RO manually starts 21 CFCU in LOW speed. This demonstrates the SEC block/reset/manual start sequence tested across multiple 2022 scenarios.
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]]
+- Related scenarios: [[2022 Scenario 4]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -96,11 +96,17 @@ EOP-FRHS-1 Bleed and Feed: if PORV 2PR2 fails to open, open <span class="hi-exam
 Transfer of 22 Backup Group PZR heaters to emergency power (2A 460V Vital Bus) per S2.OP-SO.PZR-0010 Section 5.3: place <span class="hi-exam">11 of 14 disconnects in OFF</span> (only 3 remain ON to limit load within emergency bus capacity), place <span class="hi-exam">2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH in ON</span> using JAM key, then insert interlock key and <span class="hi-exam">UNLOCK breaker 2AX1AX14X</span>.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #4</div>
+PZR spray valve 2PS3 fails to close during SGTR-1 RCS depressurization. Both spray valves opened for depressurization per Table D criteria. When termination criteria met, RO closes both valves — <span class="hi-exam">2PS3 fails to close</span>. Recovery: <span class="hi-exam">stop 21 and 23 RCPs</span> to eliminate spray flow path (spray valves are in the RCP seal injection lines from the cold legs of loops 1 and 3). Also: earlier in scenario, 2PR2 PORV seat leakage diagnosed via tailpipe temperature and isolated by closing block valve <span class="hi-exam">2PR7</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
-- Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
-- Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
+- Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
 - Related exam questions: [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]]
+- Related scenarios: [[2022 Scenario 4]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

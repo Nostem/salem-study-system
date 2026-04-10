@@ -366,3 +366,81 @@ jpms:
     task_number: "N0220080101"
     safety_function: 8
     estimated_time_min: 10
+
+scenarios:
+  - number: 1
+    title: "Load Reduction / LBLOCA"
+    scenario_id: "ESG-1"
+    pages: "229-275"
+    num_events: 8
+    num_critical_tasks: 3
+    initial_conditions: "IC-240: Unit 2 at 100% power, EOL. 21 Charging Pump I/S. 23 Charging Pump and 21 RHR Pump C/T."
+    turnover: "Reduce power to 89% at 10%/hr IAW S2.OP-IO.ZZ-0004 for Main Turbine Valve testing."
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-LOCA-1
+      - EOP-LOCA-5
+    abnormals_entered:
+      - AB.COND-0001
+      - AB.ROD-0003
+      - AB.RC-0001
+    critical_tasks:
+      - id: "CT-2"
+        description: "Manually actuate at least one train of SI before transition out of TRIP-1"
+        time_critical: false
+      - id: "CT-5"
+        description: "Manually start at least one low head ECCS pump before transition out of TRIP-1"
+        time_critical: false
+      - id: "CT-29"
+        description: "Make up to the RWST, minimize RWST outflow, and if RWST Lo-Lo level alarm received stop ECCS pumps prior to cavitation"
+        time_critical: false
+
+  - number: 3
+    title: "Power Ascension / Loss of Heat Sink"
+    scenario_id: "ESG-3"
+    pages: "276-311"
+    num_events: 8
+    num_critical_tasks: 2
+    initial_conditions: "IC-242: Unit 2 at 93% power, MOL; 2A EDG running unloaded for maintenance run. 21 AFW Pump C/T for oil bubbler replacement. 21 CS Pump C/T for lube."
+    turnover: "Continue power ascension to 98% power at 10%/hr IAW S2.OP-IO.ZZ-0004 by use of dilution, control rods and turbine load control."
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-FRHS-1
+    abnormals_entered:
+      - AB.CVC-0001
+      - AB.CN-0001
+      - AB.RCP-0001
+    alarm_response:
+      - AR.ZZ-0011
+      - AR.ZZ-0013
+    critical_tasks:
+      - id: "CT-12"
+        description: "Manually actuate main steamline isolation before a Red path to either subcriticality or the integrity CFST, or transition to LOSC-2"
+        time_critical: false
+      - id: "CT-43"
+        description: "Establish feed flow to one SG before RCS bleed and feed is required"
+        time_critical: false
+
+  - number: 4
+    title: "Startup / SGTR"
+    scenario_id: "ESG-4"
+    pages: "312-348"
+    num_events: 7
+    num_critical_tasks: 2
+    initial_conditions: "IC-243: Unit 2 at 2% power, BOL; 21 SGFP in service."
+    turnover: "Continue power ascension to 10% reactor power IAW S2.OP-IO.ZZ-0003 using control rods, steam dumps, and turbine load control."
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-SGTR-1
+    abnormals_entered:
+      - S2.OP-IO.ZZ-0003
+      - AB.PZR-0001
+      - AB.CW-0001
+      - AB.SG-0001
+    critical_tasks:
+      - id: "CT-18"
+        description: "Isolate feed and steam flow to ruptured SG before transition to SGTR-3 occurs"
+        time_critical: false
+      - id: "CT-19"
+        description: "Cooldown RCS to target temperature so that transition from SGTR-1 does not occur"
+        time_critical: false

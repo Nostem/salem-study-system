@@ -214,10 +214,16 @@ EOP-LOCA-4 hot leg recirculation: realign 21 SI pump from cold leg to hot leg in
 EOP-LOCA-1 Step 14 accumulator isolation: when at least two RCS T-Hots < <span class="hi-exam">405F</span>, remove lockout and close 21-24 SJ54. If <span class="hi-exam">24SJ54 fails to close</span> (alternate path), vent the unisolated accumulator: open <span class="hi-exam">2NT35 (N2 HDR Valve)</span> and <span class="hi-exam">24SJ93 (N2 Supply Valve)</span> to depressurize the accumulator to zero.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #1</div>
+LBLOCA with <span class="hi-exam">auto SI failure on both trains</span> (CT#1, CT-2): RO must manually actuate SI before transition out of TRIP-1. FSAR analyses assume at least one train of safeguards actuates. Additionally, <span class="hi-exam">22 RHR pump (low-head ECCS) fails to start on SEC signal</span> (CT#2, CT-5) — RO must manually start 22 RHR before transition out of TRIP-1. FSAR LBLOCA analysis requires minimum pumped injection from one each high-head, intermediate-head, and low-head pump. In EOP-LOCA-5, crew reduces ECCS to one train (CT#3): stops all but one charging pump, runs only one SI pump.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
 - Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
 - Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]]
+- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -118,4 +118,5 @@ DG OPERABILITY includes verification of fuel oil supply (7-day supply), starting
 
 - Related systems: [[500KV]], [[4KV]], [[EDGs]], [[DC Power]]
 - Related exam questions: [[2023 Q89]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

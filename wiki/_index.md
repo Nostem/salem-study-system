@@ -146,6 +146,7 @@ status: draft
 - [[AB.FP-0001 — Fire Protection System Malfunction]]
 - [[AB.CW-0001 — Circulating Water Malfunction]]
 - [[AB.CN-0001 — Condensate System Abnormality]]
+- [[AB.COND-0001 — Loss of Condenser Vacuum]]
 - [[AB.RHR-0001 — Loss of RHR]]
 - [[AB.SG-0001 — Steam Generator Tube Leak]]
 - [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]

@@ -129,4 +129,6 @@ export const ENTITY_ALIASES: Record<string, string> = {
   'core alteration': 'S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling',
   'cold shutdown to refueling': 'S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling',
   'communications': 'OP-AA-104-101 — Communications',
+  'loss of condenser vacuum': 'AB.COND-0001 — Loss of Condenser Vacuum',
+  'condenser vacuum': 'AB.COND-0001 — Loss of Condenser Vacuum',
 };

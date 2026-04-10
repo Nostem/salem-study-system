@@ -35,9 +35,15 @@ On a condensate pump trip with only one pump running, <span class="hi-exam">SGFP
 Loss of SGFP at >70% power (Step 2.3): auto turbine runback <span class="hi-exam">fails</span>. Operator must verify auto runback NOT occurring (SGFP RUNBACK OPERATE red light NOT lit), then manually initiate load reduction at DEHC panel: toggle from <span class="hi-exam">%/HR to %/MIN</span>, set ramp rate to <span class="hi-exam">15%/min</span>, setter to <span class="hi-exam">66%</span>, select GO. Also: rods fail to insert in AUTO during downpower — take rods to MANUAL and insert.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #3</div>
+21CN22 LP FWH inlet valve fails closed. OHA G-22 FW HTR IN VLV TRIP & LVL HI. CRS enters AB.CN-0001. CRS reviews Attachment 2 for load limitations — load reduction required to <span class="hi-exam">1098 MWe</span> (about 2-3% downpower). If SGFP suction pressure < <span class="hi-exam">320 psig</span>, PO takes CAS actions to open 21-23 CN108s (polisher bypass).
+</div>
+
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]]
 - Related exam questions: [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related JPMs: [[2022 JPM Sim-e]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

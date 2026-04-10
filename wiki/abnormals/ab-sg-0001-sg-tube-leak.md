@@ -34,8 +34,14 @@ Action levels are based on SG leak rate (gpd) and rate of change (gpd/hr):
 SG tube leak action levels are based on <span class="hi-exam">both leak rate AND rate of change</span>. At Action Level 3 with leak rate <span class="hi-exam">>= 75 gpd</span> and rate of change <span class="hi-exam">>= 30 gpd/hr</span>, the required action is to reduce power to <= 50% in 1 hour and be in MODE 3 in the following 2 hours. <span class="hi-trap">Trap: a leak rate of 125 gpd with a 30 gpd/hr trend meets Action Level 3 (rate of change criterion), NOT the 150 gpd threshold for the 6-hour shutdown.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #4</div>
+23 SG tube leak (25-30 gpm). Entry cue: RMS alarms 2R15, 2R19C (23 SG B/D Rad Monitor), 2R53C (MS Line Rad Monitor) with PZR level lowering. Key actions: transfer to centrifugal charging pump IAW step 3.5 to stabilize PZR level. CRS evaluates <span class="hi-exam">TS 3.4.7.2.c action a — be in Hot Standby within 6 hours</span>. Continuous Action Summary: if leak exceeds makeup capability → trip reactor and actuate SI. In this scenario, the leak worsens to a 650 gpm tube rupture, triggering the CAS trip criteria.
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]]
 - Related exam questions: [[2023 Q81]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related scenarios: [[2022 Scenario 4]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
