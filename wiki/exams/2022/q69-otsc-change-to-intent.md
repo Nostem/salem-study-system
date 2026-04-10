@@ -14,7 +14,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-In accordance with AD-AA-101-101, Implementing and Technical Procedure On-The-Spot Change (OTSC) Process, which ONE of the following would be considered a change to the INTENT of a procedure?
+In accordance with <span class="hi">AD-AA-101-101, Implementing and Technical Procedure On-The-Spot Change (OTSC) Process,</span> which ONE of the following would be considered a change to the INTENT of a procedure?
 </div>
 
 <div style="margin-bottom:14px;">
