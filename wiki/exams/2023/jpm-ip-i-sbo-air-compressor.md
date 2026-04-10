@@ -127,6 +127,6 @@ Ref: SC.OP-SO.CA-0001 (R14) | Task: N1150140501 | K/A: 056 AA1.37 — Ability to
 
 ## Connections
 
-- Related systems: [[Radioactive Waste Management]], [[Electrical Power Systems]]
+- Related systems: [[Radioactive Waste Management]], [[EDGs]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related exam: [[2023 NRC Operating Exam]]

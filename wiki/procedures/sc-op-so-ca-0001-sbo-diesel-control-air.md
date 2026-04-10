@@ -31,7 +31,7 @@ SBO Compressor start sequence: must keep <span class="hi-exam">BY-PASS VALVE pus
 
 ## Connections
 
-- Related systems: [[Electrical Power Systems]]
+- Related systems: [[EDGs]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]], [[AB.CA-0001 — Loss of Control Air]]
 - Related JPMs: [[2023 JPM IP-i]]
 - Related exam: [[2023 NRC Operating Exam]]

@@ -1,14 +1,16 @@
 ---
-title: Diesel Generators
+title: EDGs
 category: systems
 status: draft
 aliases:
-  - EDG
   - emergency diesel generators
+  - diesel generators
   - diesel generator
+  - EDG
+  - Diesel Generators
 ---
 
-# Diesel Generators
+# EDGs
 
 ## Function
 
@@ -68,7 +70,15 @@ On SI signal with loss of offsite power:
 Common mode failure surveillance scheduling: per S2.OP-ST.DG-0001/2/3 P&L 2.1.6, <span class="hi-exam">only one DG per unit may be synchronized to the grid at a time</span> (Reg Guide 1.108, Section C.2.b). Most expeditious method for 5 remaining EDGs: <span class="hi-exam">run one EDG at a time on both units simultaneously</span> (e.g., 1B and 2B at the same time). <span class="hi-trap">Trap: running all EDGs on one unit simultaneously violates the P&L — you cannot run 1B and 1C simultaneously even though it would be faster.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 IP-i</div>
+SBO Diesel Control Air Compressor: backup control air source when all ECACs are unavailable during LOOP. Located in SBO Compressor Building (outside RCA, requires L-3 key). Discharge valves <span class="hi-exam">1CA1913, 1CA1886, and 2CA584</span> pressurize Control Air and Aux Building headers.
+</div>
+
 ## Connections
 
 - Related exam questions: [[2023 Q12]], [[2023 Q37]], [[2023 Q48]], [[2023 Q89]]
 - Related exam: [[2023 NRC Written Exam]]
+- Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
+- Related JPMs: [[2023 JPM IP-i]]
+- Related operating exam: [[2023 NRC Operating Exam]]

@@ -23,6 +23,6 @@ Breaker Reclosure Policy (Step 4.2.2): if an <span class="hi-exam">emergency con
 
 ## Connections
 
-- Related systems: [[Residual Heat Removal]], [[Electrical Power Systems]]
+- Related systems: [[Residual Heat Removal]], [[4KV]], [[EDGs]]
 - Related exam questions: [[2023 Q79]]
 - Related exam: [[2023 NRC Written Exam]]
