@@ -19,7 +19,7 @@ aliases:
 • A review of surveillance paperwork found that the setpoint for POPS Channel I is out of tolerance.<br>
 • Channel I POPS has been declared INOPERABLE.<br><br>
 In accordance with Technical Specification 3.4.10.3, Overpressure Protection Systems, which ONE of the following statements is correct regarding MODE 4 entry?<br><br>
-[REFERENCE PROVIDED]
+<span class="val-normal">[REFERENCE PROVIDED]</span>
 </div>
 
 <div style="margin-bottom:14px;">
