@@ -188,3 +188,12 @@ Power Operated Relief Valves = PORVs = TS 3/4.4.3
 - EOP knowledge labeled "reconstructed from exam materials"
 - All content from publicly available NRC documents only
 - Articles I've reviewed marked ✅ at top; unreviewed marked ⚠️ DRAFT
+
+## Wiki Index Queries
+Before creating or modifying any wiki article, run:
+- `python3 scripts/wiki_index.py refs <system-or-topic>` — check for existing content
+- `python3 scripts/wiki_index.py conflicts <value> <unit>` — check for value disagreements
+
+To rebuild the index: `python3 scripts/wiki_index.py rebuild`
+To see article structure: `python3 scripts/wiki_index.py sections <slug>`
+To find missing backlinks: `python3 scripts/wiki_index.py backlinks <slug>`
