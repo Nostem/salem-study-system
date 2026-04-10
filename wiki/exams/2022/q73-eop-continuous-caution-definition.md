@@ -17,7 +17,8 @@ aliases:
 <strong>Given:</strong><br><br>
 • The crew has just entered 2-EOP-FRSM-1, Response to Nuclear Power Generation – ATWS.<br>
 • The below Caution symbol appears prior to step 1.<br><br>
-[Continuous Caution symbol — double-bordered box]<br><br>
+<div style="text-align:center;margin:12px 0;"><img src="/salem-study-system/exam-images/2022-q73-caution-symbol.png" alt="Continuous Caution symbol — double-bordered box" style="max-width:250px;background:white;padding:8px;border-radius:4px;"></div>
+
 In accordance with <span class="hi">OP-SA-108-101-2002</span>, Emergency Operating Procedure User's Guide, which ONE of the following completes the statement?<br><br>
 Because the Caution appears before step 1, the Caution __________________.
 </div>
