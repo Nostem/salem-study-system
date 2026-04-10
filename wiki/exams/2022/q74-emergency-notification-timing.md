@@ -18,7 +18,7 @@ aliases:
 • You are the assigned Primary Communicator.<br>
 • At time 1330, the Shift Manager declared an ALERT on Unit 2.<br>
 • At time 1335, the Shift Manager completed the Initial Contact Message Form (ICMF) and hands it to you to perform the State and Local notifications.<br><br>
-In accordance with EP-SA-325-F6, Primary Communicator Log, which ONE of the following completes both statements?<br><br>
+In accordance with <span class="hi">EP-SA-325-F6, Primary Communicator Log</span>, which ONE of the following completes both statements?<br><br>
 1. What time are the notifications to NJ and DE required to be completed by?<br>
 2. When does the notification time end?
 </div>
