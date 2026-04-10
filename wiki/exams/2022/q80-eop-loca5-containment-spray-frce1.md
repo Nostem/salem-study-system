@@ -16,7 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br><br>
 • A LOCA has occurred on Unit 2.<br>
-• The crew is performing 2-EOP-LOCA-5, Loss of Emergency Recirculation.<br>
+• The crew is performing <span class="val-trip">2-EOP-LOCA-5</span>, Loss of Emergency Recirculation.<br>
 • Containment pressure is now 15.1 psig and rising.<br><br>
 Based on the above condition, which ONE of the following describes how the CRS should direct the operation of the Containment Spray Pumps and why?<br><br>
 The Containment Spray Pumps are operated as directed in...<br><br>
