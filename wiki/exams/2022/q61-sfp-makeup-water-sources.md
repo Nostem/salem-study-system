@@ -16,7 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br><br>
 • Unit 1 is at 100% Power.<br>
-• Spent Fuel Pool makeup is required when responding to OHA C-36, SFP LVL LO, which has been determined to be caused by normal evaporation over the course of several months.<br><br>
+• Spent Fuel Pool makeup is required when responding to <span class="hi">OHA C-36, SFP LVL LO</span>, which has been determined to be caused by normal evaporation over the course of several months.<br><br>
 In accordance with S1.OP-SO.SF-0001, Fill and Transfer of the Spent Fuel Pool, which ONE of the following is the LEAST preferred source of makeup water to the Spent Fuel Pool?
 </div>
 
