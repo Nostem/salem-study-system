@@ -17,7 +17,7 @@ aliases:
 <strong>Given:</strong><br><br>
 • BOTH Units 1 and 2 are at 100% Power.<br>
 • Unit 2 RO reports OHA A-6, RMS HI RAD OR TRBL, is LIT<br>
-• The 2R1B-1, Control Room Intake Radiation Monitor Channel 1, is in ALARM.<br>
+• The <span class="hi">2R1B-1</span>, Control Room Intake Radiation Monitor Channel 1, is in ALARM.<br>
 • BOTH control rooms Control Area Ventilation (CAV) Systems are operating in NORMAL Mode.<br><br>
 Which ONE of the following completes both statements?<br><br>
 1. What is the expected response of the CAV systems?<br>
