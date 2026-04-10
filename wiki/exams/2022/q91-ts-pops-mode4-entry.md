@@ -18,7 +18,7 @@ aliases:
 • Salem Unit 2 is in MODE 5 with a unit startup in progress.<br>
 • A review of surveillance paperwork found that the setpoint for POPS Channel I is out of tolerance.<br>
 • Channel I POPS has been declared INOPERABLE.<br><br>
-In accordance with Technical Specification 3.4.10.3, Overpressure Protection Systems, which ONE of the following statements is correct regarding MODE 4 entry?<br><br>
+In accordance with <span class="hi">Technical Specification 3.4.10.3</span>, Overpressure Protection Systems, which ONE of the following statements is correct regarding MODE 4 entry?<br><br>
 <span class="val-normal">[REFERENCE PROVIDED]</span>
 </div>
 
