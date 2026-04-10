@@ -63,6 +63,11 @@ Each fan-cooler unit includes: motor, fan, motor heat exchanger, cooling coils, 
 CFCU power distribution from 4KV Vital Buses: <span class="hi-exam">21 CFCU (A bus), 22 CFCU (B bus), 23 CFCU (B bus, CIT), 24 CFCU (B bus), 25 CFCU (C bus)</span>. Loss of 2B 4KV Vital Bus = 22 and 24 CFCUs unavailable. Only 21 (A bus) and 25 (C bus) remain available.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q41</div>
+CFCU SW flow via 2SW223: mechanical stop limits valve travel to <span class="hi-exam">~50%</span>. SW223 opens to the mechanical stop when the CFCU is in service and closes when the CFCU is out of service. <span class="hi-exam">SW flow is the same in both HIGH and LOW speed fan operation</span> — the SW223 valve position does not change with fan speed. <span class="hi-trap">SW flow does NOT increase in LOW speed (accident) mode. The fixed-resistance flow scheme (inlet/outlet orifices + mechanical stop) ensures constant SW flow regardless of fan speed.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.6 — Containment]]** — TS 3.6.2.3 requires at least 3 CFCUs OPERABLE
@@ -77,6 +82,6 @@ CFCU surveillance (S2.OP-ST.CBV-0003): if measured SW header DP is between Exhib
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
-- Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]]
+- Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]]
 - Related JPMs: [[2023 JPM Sim-f]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

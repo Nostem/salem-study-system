@@ -67,6 +67,16 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 Normal 125VDC bus with charger supplying: <span class="hi-exam">~<span class="val-normal">134 VDC</span>, 0 amps on 2RP9</span> (battery floating). Battery supplying: lower voltage, amps > 0. OHA B-2 (125VDC CNTRL BUS VOLT LO) alarms at <span class="val-alarm">≤128 VDC</span>. To remain at power: <span class="hi-exam">manually align standby (2A2 125 VDC) battery charger</span>. <span class="hi-trap">DC bus cross-tie only permitted in Modes 5, 6, or Defueled.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q48</div>
+Loss of 2C 125 VDC: all breakers powered by 2C DC <span class="hi-exam">remain AS-IS</span> (no automatic trips or closures — DC control power is required to operate breaker trip and close coils). EDG <span class="hi-exam">will NOT start</span> (DC starting circuits de-energized). Fast bus transfer to alternate SPT <span class="hi-exam">prevented</span> (interlock requires other SPT infeed breaker open, but 24CSD cannot open without DC). <span class="hi-trap">Breakers do not trip open on loss of DC — they remain in their last position. This is opposite of 28VDC RTB behavior (RTBs trip open on loss of 28VDC).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q49</div>
+125 VDC battery charger transfer: standby charger (2A2) located in <span class="hi-exam">84 ft Switchgear Room</span> (same as normal charger). Transfer sequence requires <span class="hi-exam">no-parallel</span> — must de-energize normal charger (2A1) output FIRST, then energize standby charger (2A2). <span class="hi-trap">A and B 125VDC batteries are in the 100 ft Relay Room, but chargers are in the 84 ft Switchgear Room — do not confuse locations. Paralleling chargers is prohibited in Modes 1-4 to prevent cross-connecting 230 VAC Vital buses.</span>
+</div>
+
 ## Key Design Points
 
 - DC power is critical for safety functions — provides control power independent of AC
@@ -83,5 +93,5 @@ Normal 125VDC bus with charger supplying: <span class="hi-exam">~<span class="va
 
 ## Connections
 
-- Related exam questions: [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

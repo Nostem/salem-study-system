@@ -60,6 +60,11 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 CS pump power supplies: <span class="hi-exam">21 CS pump on A 4KV Vital Bus, 22 CS pump on C 4KV Vital Bus</span>. A failed 2B SEC does NOT affect either CS pump. With SECs NOT reset after initial SI sequence, the CS pump start contact remains re-closed — <span class="hi-exam">CS pumps WILL auto-start on Hi-Hi containment pressure signal</span> even after the initial SI sequence completes.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q42</div>
+21 CS Pump powered from <span class="hi-exam">2A 4KV Vital Bus</span>, 22 CS Pump from <span class="hi-exam">2C 4KV Vital Bus</span>. With 2C bus de-energized, only 21 CS Pump is available. To manually start: must <span class="hi-exam">block and reset the associated SEC first</span>, then use the <span class="hi-exam">keyswitch</span> to start the CS pump. <span class="hi-trap">The start pushbutton alone will NOT start the CS pump when SECs have actuated — SEC sequences override manual pushbutton control. Must block/reset SEC and use keyswitch.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.6 — Containment]]** — TS 3.6.2.1 (Spray System), TS 3.6.2.2 (Spray Additive)
@@ -72,5 +77,5 @@ EOP-LOCA-1 Step 7.4 (stop CS pumps when containment pressure below 13 psig) is a
 
 ## Connections
 
-- Related exam questions: [[2023 Q40]], [[2023 Q77]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q40]], [[2023 Q77]], [[2022 Q42]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

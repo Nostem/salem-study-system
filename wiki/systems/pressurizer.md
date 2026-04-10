@@ -57,6 +57,11 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
 - (UFSAR 5.1)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q34</div>
+PRT has a <span class="hi-exam">rupture disc (NOT a relief valve)</span> rated at <span class="val-trip">100 psig</span>. 2PR15 (PRT Vent to RCDT) <span class="hi-exam">cannot be opened if PRT pressure ≥ <span class="val-alarm">10 psig</span></span> — interlock prevents opening. Per S2.OP-SO.PZR-0003, if PRT pressure ≥ 10 psig: drain PRT first via 2PR14 to lower level and pressure, then open 2PR15 to vent PRT to 3 psig. <span class="hi-trap">2PR15 is NOT available for venting when PRT pressure is above 10 psig — must drain first to clear the interlock.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q32</div>
 PRT drain path per S2.OP-SO.PZR-0003: open <span class="hi-exam">2PR14 to drain PRT to RCDT</span>, which automatically opens 2WL12 and starts the RCDT pump (defeats low level cutoff). RCDT pump discharge destinations: <span class="hi-exam">RWST, CVCS Hold-Up Tanks, or Waste Hold-Up Tanks</span>. PRT does NOT gravity drain — the RCDT pump is required.
 </div>
@@ -91,6 +96,6 @@ EOP-FRHS-1 Bleed and Feed: if PORV 2PR2 fails to open, open <span class="hi-exam
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2023 Q32]], [[2023 Q76]], [[2022 Q2]]
+- Related exam questions: [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

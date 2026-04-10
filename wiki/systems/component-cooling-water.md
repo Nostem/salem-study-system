@@ -43,6 +43,16 @@ Per AB.CC-0001 Attachment 1, RCP motor bearing temperature limit requiring <span
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q35</div>
+Per AB.CC-0001 Attachment 1: CCW surge tank level low at <span class="hi-exam"><span class="val-trip">5%</span></span> requires <span class="hi-exam">reactor trip AND tripping all RCPs</span>. Per Attachment 2: also <span class="hi-exam">isolate letdown and swap charging pump suction to RWST</span>, then go to EOP-TRIP-1. <span class="hi-trap">17% is the low VCT level action — not the CCW surge tank trip limit. CCW surge tank trip level is 5%.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q36</div>
+Two sources of <span class="hi-exam">RCS inleakage to CCW</span>: (1) <span class="hi-exam">Seal Water HX</span> and (2) <span class="hi-exam">RCP Thermal Barrier HX</span>. These are the only two CCW-cooled components where RCS pressure exceeds CCW pressure, allowing primary-to-CCW leakage. <span class="hi-trap">CCW HX leak = Service Water into CCW (not RCS). SFP HX leak = CCW out-leakage into SFP (CCW pressure > SFP). Regen HX is NOT cooled by CCW.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q4</div>
 RCP Thermal Barrier rupture indications: <span class="hi-exam">CCW surge tank level rises</span> (RCS leaks OUT to CCW), <span class="hi-exam">R17A/B CCW radiation monitors rise</span> (detecting RCS activity in CCW), and <span class="hi-exam">CC131 (RCP Thermal Barrier Valve) closes</span> on high CCW flow to the thermal barrier. PZR level does NOT rise — RCS is leaking out, not in. Charging flow does NOT lower.
 </div>
@@ -69,5 +79,5 @@ SFP Heat Exchanger tube rupture: components supplied by CCW with pressure less t
 
 ## Connections
 
-- Related exam questions: [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

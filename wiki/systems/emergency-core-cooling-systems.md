@@ -140,6 +140,11 @@ During a SBLOCA, a <span class="hi-exam">cold leg break produces the highest pea
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q33</div>
+ECCS flow at <span class="val-normal">300 psig</span> RCS with 2C 4KV bus de-energized: 22 SI Pump (on 2C bus) unavailable. Remaining ECCS: <span class="hi-exam">21 Charging Pump at runout = 560 gpm + 21 SI Pump at runout = 675 gpm = <span class="hi-exam">1235 gpm total</span></span>. RHR pumps at shutoff head (><span class="hi-exam">170 psid</span>) — <span class="hi-exam">no RHR flow at 300 psig</span>. <span class="hi-trap">RHR pumps only deliver flow when RCS pressure < 170 psig during injection. 300 psig is below RHR initiation for shutdown cooling (~340 psig) but above RHR pump shutoff head for LOCA injection.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q14</div>
 SEC Mode 2 (Blackout only) — load sequencer starts <span class="hi-exam">Charging Pumps ONLY</span>. <span class="hi-trap">SI and RHR pumps are NOT started without an SI accident signal.</span> SI pumps powered from <span class="hi-exam">2A and 2C 4KV Vital buses</span> (not 2B). SEC Modes: Mode 1 = Accident only, Mode 2 = Blackout only, Mode 3/4 = Accident plus Blackout.
 </div>
@@ -208,6 +213,6 @@ EOP-LOCA-4 hot leg recirculation: realign 21 SI pump from cold leg to hot leg in
 
 - Related EOPs: [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
-- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]]
+- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]]
 - Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

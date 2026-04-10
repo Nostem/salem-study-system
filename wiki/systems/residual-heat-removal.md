@@ -68,6 +68,18 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining constant RHR flow: <span class="hi-exam">lower RH18 demand</span> (closes HX flow control valves, reducing flow through the RHR HX) and <span class="hi-exam">raise RH20 demand</span> (opens HX bypass valve, routing more flow around the HX). Total RHR flow stays constant but less passes through the heat exchanger. Reverse actions (raise RH18 / lower RH20) would increase cooldown rate.
 </div>
 
+## Valve Failure Modes
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q31</div>
+21RH18 (RHR HX Outlet Valve) fails <span class="hi-exam">OPEN on loss of 2A VIB</span> (115V Vital Instrument Bus) — increases flow through RHR HX, <span class="hi-exam">RCS temperature lowers</span>. 2RH20 (RHR HX Bypass Valve) fails <span class="hi-exam">OPEN on loss of 2D VIB</span> — independent power supply from 21RH18. <span class="hi-trap">Loss of 2A VIB only affects 21RH18, NOT 2RH20. 2RH20 remains as-is unless 2D VIB is lost.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q32</div>
+Solid plant ops with RHR pump trip: RCS pressure <span class="hi-exam">rises</span> (charging continues adding inventory with no RHR pump to provide letdown path). Letdown line pressure <span class="hi-exam">lowers</span> (loss of RHR discharge pressure). 2CV18 throttles closed attempting to maintain letdown pressure at setpoint. 2CV6 (Letdown Relief Valve) opens at <span class="val-trip">600 psig</span> to protect downstream piping if pressure not controlled.
+</div>
+
 ## RCS Isolation
 
 The RHR system is isolated from the RCS by two normally closed motor-operated valves in each suction line. These valves are interlocked to prevent opening when RCS pressure is above the RHR system design pressure. (UFSAR 5.5.7.3.2)
@@ -99,6 +111,6 @@ EOP-LOCA-4 hot leg recirculation with 21 RHR pump C/T: Step 4.0 directs <span cl
 ## Connections
 
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
-- Related exam questions: [[2023 Q30]], [[2023 Q79]], [[2022 Q7]]
+- Related exam questions: [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

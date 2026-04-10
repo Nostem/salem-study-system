@@ -48,6 +48,11 @@ On SI signal with loss of offsite power:
 CW bus loss scenario: when the 4KV infeed breaker to the 24 CW bus fails open, the bus auto-transfers to the 23 CW bus. However, <span class="hi-exam">all 'B' circulator breakers trip open on undervoltage during the transfer</span> and must be manually restarted. With one CW pump already C/T, this results in <span class="hi-exam">4 or more circulators out of service</span>. Per AB.CW-0001 Attachment 1, with 4+ circulators OOS at P-10 or above: <span class="hi-exam">trip the reactor and enter EOP-TRIP-1</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q47</div>
+EDG paralleled to grid during surveillance: when LOOP occurs, SEC actuates in <span class="hi-exam">Mode 2 (Blackout)</span>. EDG output breaker <span class="hi-exam">opens</span>, diesel remains running, SEC opens both infeed breakers, strips all loads from the 4KV vital bus, then <span class="hi-exam">automatically recloses the output breaker</span> and re-starts loads using the SEC load sequencer. <span class="hi-trap">The output breaker does NOT remain closed during a LOOP even though the EDG was already paralleled. The SEC strips and re-sequences the bus regardless of EDG test status.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.8 — Electrical]]** — TS 3.8.3.1 requires vital buses energized and OPERABLE
@@ -56,5 +61,5 @@ CW bus loss scenario: when the 4KV infeed breaker to the 24 CW bus fails open, t
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]]
-- Related exam questions: [[2023 Q88]], [[2023 Q93]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

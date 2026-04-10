@@ -49,6 +49,11 @@ Instrument air supply line rupture to <span class="hi-exam">2MS132 (23 AFW Turbi
 <span class="hi-exam">2DR6 (AFW Tank Makeup Valve) fails OPEN on loss of air</span>. This causes the AFW storage tank level to rise and potentially overflow. Per S2.OP-AB.CA-0001, Attachment 2, the <span class="hi-exam">2DR6 can be manually operated from the field</span> to control tank level.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q46</div>
+2PA-3450 (AFW pump discharge pressure transmitter) fails to zero: runout protection circuit <span class="hi-exam">closes AF21 valves (flow control)</span> to protect pump from runout. To recover: place <span class="hi-exam">PRESS OVERRIDE DEFEAT switch to DEFEAT</span> to bypass the runout protection circuit and allow operator control of AF21s. <span class="hi-trap">LOCAL MANUAL is indication only in the control room (no auto-start signals) — it does NOT allow manual control of the AF21 valves. PRESS OVERRIDE DEFEAT is the correct recovery action.</span>
+</div>
+
 ## Key Design Points
 
 - Turbine-driven pump is available during station blackout (no AC power required)
@@ -71,6 +76,6 @@ ICMF during SGTR: TD AFW pump (23 AFW) takes steam from <span class="hi-exam">21
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2023 Q41]], [[2023 Q43]], [[2023 Q44]]
+- Related exam questions: [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]]
 - Related JPMs: [[2023 JPM SRO-A4]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

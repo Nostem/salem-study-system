@@ -40,6 +40,11 @@ Provide standby AC power to vital buses on loss of offsite power or upon receipt
 EDG starting air compressor power supplies: <span class="hi-exam">both 21A and 21B starting air compressors for 2A EDG are powered from the same 2A 230V Vital Bus</span> (NOT from separate buses). Each EDG's two starting air compressors are supplied from its own associated 230V vital bus.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q50</div>
+EDG minimum load after paralleling: <span class="hi-exam">≥500 KW</span> must be loaded immediately after closing the output breaker to prevent <span class="hi-exam">tripping the output breaker on reverse power</span>. Separate concern: gradual loading prevents <span class="hi-exam">excessive accumulation of oil in the exhaust system</span> (exhaust fire risk from sudden high loading after low-load operation). <span class="hi-trap">250 KW is NOT the minimum — it is 500 KW. The reason for minimum load is reverse power trip protection, NOT exhaust fire prevention (which is a separate P&L for gradual loading).</span>
+</div>
+
 ## Diesel Generator Trip Functions
 
 DGs have protective trips that are bypassed during emergency start (SI or loss of voltage) to ensure the DG remains running when needed. Only certain trips remain active during emergency operation. (UFSAR 8.3.1.5.2)
@@ -71,8 +76,8 @@ SBO Diesel Control Air Compressor: backup control air source when all ECACs are 
 
 ## Connections
 
-- Related exam questions: [[2023 Q12]], [[2023 Q48]], [[2023 Q89]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
 - Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related JPMs: [[2023 JPM IP-i]]
 - Related operating exam: [[2023 NRC Operating Exam]]

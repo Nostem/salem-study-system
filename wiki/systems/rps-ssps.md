@@ -160,6 +160,21 @@ Master Pressure Controller (MPC) controls PZR spray valves and backup heaters. I
 Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass breaker (52/BYA and 52/BYB). Trip signal deenergizes undervoltage coils and actuates shunt trip. <span class="hi-exam">If a bypass breaker is closed for testing and the other train's bypass breaker is also closed, both trip breakers and bypass breakers are automatically tripped by the General Warning Alarm.</span> (UFSAR 7.2.2)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q38</div>
+When only RTB B opens (RTB A fails closed): the <span class="hi-exam">20-ET (Emergency Trip Fluid Solenoid)</span> trips the turbine by dumping EH fluid directly to the reservoir, closing all turbine steam valves. 20-AST and 20-2AST energize from RTB A — with RTB A failed closed, neither energizes. 2EH61 (Interface Valve) opens only when 20-AST or 20-2AST energizes. <span class="hi-trap">The auto turbine trip via SSPS comes from the reactor trip signal through the 20-ET solenoid on RTB B opening — NOT through the generator lockout relay or 2EH61.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q39</div>
+Containment pressure channel logic: <span class="hi-exam">SI uses channels II, III, IV only (2/3 coincidence)</span>. CS/Phase B uses channels I-IV (2/4 coincidence). With Channel I properly removed from service (tripped): CS/Phase B logic reduces to <span class="hi-exam">2/3</span>; SI logic remains 2/3 (Channel I not an input). If Channel IV then fails high: SI = 1/3 tripped (NOT met). CS/Phase B = 1/3 tripped (NOT met). <span class="hi-exam">Neither SI nor Phase B actuates.</span> <span class="hi-trap">Channel I removed from service removes its input from both SI and CS/Phase B — it does NOT count as a "tripped" channel for actuation purposes.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q40</div>
+SSPS auctioneered power supply design: 48V and 15V DC power supplies are <span class="hi-exam">redundant within each SSPS train</span>. Loss of one 48 VDC power supply to Train B <span class="hi-exam">has no adverse effect</span> on SSPS Train B function — all components will still automatically actuate when required. <span class="hi-trap">Only loss of BOTH 48V power supplies (or loss of 115 VAC to the slave relays) would prevent SSPS train actuation. A single power supply loss only eliminates redundancy.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q1</div>
 SSPS Train A de-energizes UV coils for <span class="hi-exam">RTB 'A' and BYB 'B'</span>, energizes shunt coil for <span class="hi-exam">RTB 'A' only</span>. SSPS Train B de-energizes UV coils for <span class="hi-exam">RTB 'B' and BYB 'A'</span>, energizes shunt coil for <span class="hi-exam">RTB 'B' only</span>. <span class="hi-trap">Shunt coils also energize from: Manual SI, Pistol Grip switches, or RTB PB bezels on CC2 — these are separate from SSPS train outputs.</span>
 </div>
@@ -205,3 +220,6 @@ Rod Position Indication: <span class="hi-exam">Only Group 1 Demand Steps input i
   - [[2023 Q92]] — PZR pressure channel failure / spurious trip+SI / RAL 11.3.2 reportability
   - [[2022 Q1]] — SSPS Train A/B UV coil and shunt coil assignments to RTBs/BYBs
   - [[2022 Q3]] — Phase A (ØA) safeguards actuation indication on 2CC1/2RP4
+  - [[2022 Q38]] — RTB B opens / RTB A fails closed / 20-ET trips turbine
+  - [[2022 Q39]] — Containment pressure channel logic / SI vs Phase B coincidence
+  - [[2022 Q40]] — SSPS auctioneered 48VDC power supply / single loss no impact

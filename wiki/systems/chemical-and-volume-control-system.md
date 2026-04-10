@@ -48,6 +48,16 @@ VCT level control logic: <span class="hi-exam">only LT-112 actuates automatic ma
 
 ## Charging and Letdown
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q29</div>
+Letdown temperature auto-divert: 2CV21 automatically diverts letdown flow to VCT (bypassing mixed bed demineralizers) at <span class="hi-exam"><span class="val-alarm">136°F</span></span>. Procedural limit per S2.OP-SO.CVC-0012 is <span class="hi-exam"><span class="val-trip">140°F</span></span> to prevent resin damage. Rising letdown temperature causes demineralizers to <span class="hi-exam">release boron into the RCS</span> (RCS boron concentration rises). <span class="hi-trap">2CV35 diverts to Hold-Up Tanks on high VCT level — it is downstream of the demineralizers and does NOT bypass them.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q30</div>
+2CV3 letdown orifice = <span class="hi-exam">45 gpm</span>. When placing second orifice in service, letdown pressure and flow rise. 2CV18 (Letdown Pressure Control Valve) must be <span class="hi-exam">manually throttled OPEN</span> to maintain letdown pressure at target ~<span class="val-normal">300 psig</span>. 2CV6 (Letdown Relief Valve) setpoint = <span class="val-trip">600 psig</span>. 2CC71 (Letdown HX Temp Control Valve) auto-modulates OPEN to increase CCW flow through the letdown HX as temperature rises.
+</div>
+
 - **Normal charging flow:** One charging pump maintains RCS inventory and PZR level
 - **Seal injection:** 8 gpm per RCP (32 gpm total for 4 RCPs)
 - **Seal return:** 3 gpm per RCP
@@ -112,6 +122,6 @@ EOP-LOCA-2 auxiliary spray depressurization: open <span class="hi-exam">2CV75 (A
 
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
-- Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]]
+- Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]]
 - Related JPMs: [[2023 JPM Sim-c]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

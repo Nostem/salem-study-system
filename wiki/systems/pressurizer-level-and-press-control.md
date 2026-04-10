@@ -54,6 +54,11 @@ PZR pressure channel failure reportability: with one PZR pressure channel alread
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q37</div>
+PZR pressure channel fails HIGH: MPC output rises to 100% (spray valves open, heaters de-energize). To restore RCS pressure, operator must <span class="hi-exam">manually LOWER MPC demand</span> (close spray valves, energize heaters). TS 3.2.5 DNB Parameters: minimum DNBR limit is RCS pressure ≥ 2200 psia = <span class="hi-exam"><span class="val-trip">≥2185 psig</span></span>. <span class="hi-trap">2200 psia ≠ 2200 psig. The TS limit is 2200 psia which equals 2185 psig (subtract ~15 psi for atmospheric).</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q9</div>
 AB.PZR-0001 directs <span class="hi-exam">manual reactor trip when RCS pressure reaches <span class="val-trip">2000 psig</span> and lowering</span> (spray valve failed open scenario). Reason: prevent challenging the <span class="hi-exam">automatic reactor trip on OT Delta-T</span>. <span class="hi-trap">Not low PZR pressure — the auto trip on low PZR pressure is <span class="val-trip">1865 psig</span> (rate-compensated), which is well below 2000 psig. OT Delta-T trips first as pressure lowers because the OT Delta-T setpoint has a +K3*P pressure input.</span>
 </div>
@@ -67,5 +72,5 @@ PZR reference leg leak causes indicated level to read <span class="hi-exam">HIGH
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]]
-- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]]
+- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]]
 - Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

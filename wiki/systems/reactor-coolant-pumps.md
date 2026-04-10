@@ -63,6 +63,11 @@ Each reactor coolant loop contains a vertical, single-stage, mixed-flow pump wit
 ## RCP Seal System
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q28</div>
+RCP #2 seal is a <span class="hi-exam">face rubbing seal</span> with a design leak-off of <span class="hi-exam">3 gph</span> to the RCP standpipe. Upon #1 seal failure, #2 seal converts from face rubbing to <span class="hi-exam">film riding seal</span> — acts as <span class="hi-exam">emergency backup only</span>. Not designed for sustained high flow/high temperature operation; <span class="hi-exam">RCP must be shut down</span> if #1 seal fails. <span class="hi-trap">100 cc/hr is #3 seal design leakage, not #2 seal. #1 seal is the film riding seal — do not confuse #1 and #2 seal types.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q10</div>
 If ANY RCP seal inlet temperature is ≥ <span class="val-trip">225°F</span>, restoring seal injection flow is NOT permitted. Seal injection must be isolated before starting the charging pump. This prevents thermal shock and damage to the #1 seal from cold seal injection water contacting hot seal components.
 </div>
@@ -123,5 +128,5 @@ TS 3.5.4 limits total RCP seal injection flow to <span class="hi-exam">&le;40 gp
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]]
-- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

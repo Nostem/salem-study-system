@@ -48,6 +48,16 @@ BF19 (MFW Regulating Valve) fails fully OPEN → SG level rises → <span class=
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q44</div>
+FW Isolation vs FW Interlock: <span class="hi-exam">SG Hi-Hi Level (P-14) triggers FW Isolation</span> — trips SGFPs AND closes BF13s, BF19s, BF40s, AND trips Main Turbine. <span class="hi-exam">FW Interlock (P-4, reactor trip + low Tavg) ONLY closes BF19s and BF40s</span> — does NOT trip SGFPs and does NOT close BF13s. <span class="hi-trap">FW Isolation is the broader actuation (trips pumps + closes all valves). FW Interlock is narrower (only closes regulating and bypass valves). Do not confuse the two.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q45</div>
+SG program level above 20% power is <span class="hi-exam"><span class="val-normal">44% NR</span></span>. With SG NR level at 45% (above 44% program), BF19 (FW Bypass Regulating Valve) demand <span class="hi-exam">decreases</span> — digital FW system throttles BF19s closed to reduce feedwater flow and lower SG level to program. <span class="hi-trap">44% is the program setpoint above 20% power — do not confuse with 50% or other SG level setpoints.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q13</div>
 Main feedwater line break vs steam line break: FW line break causes SG levels to <span class="hi-exam">lower FASTER</span> (direct loss of feedwater inventory). RCS cooldown is <span class="hi-exam">LESS than an equivalent steam line break</span> (loss of FW doesn't involve removal of latent heat as steam break does). FW break generates <span class="hi-exam">Low-Low SG Level reactor trip</span>; post-trip RCS Tavg rises due to decreased heat transfer in the affected SG.
 </div>
@@ -86,6 +96,6 @@ EOP-FRHS-1 condensate pump feed: establish condensate flow to selected SG by ope
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]]
+- Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]]
 - Related JPMs: [[2023 JPM Sim-e]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
