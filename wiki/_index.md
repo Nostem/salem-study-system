@@ -169,6 +169,9 @@ status: draft
 - [[WC-AA-101 — On-Line Work Management Process]]
 - [[LS-AA-119-1003 — Calculating Work Hours]]
 - [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]]
+- [[CC-AA-112 — Temporary Configuration Changes]]
+- [[OP-AA-108-107-1002 — Salem and Hope Creek 500 KV Switchyard Operations Interface]]
+- [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
@@ -198,3 +201,4 @@ status: draft
 - [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
 - [[SC.OP-SO.CA-0001 — SBO Diesel Control Air]]
 - [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]]
+- [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]]
