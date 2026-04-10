@@ -24,7 +24,7 @@ aliases:
 &nbsp;&nbsp;&nbsp;&nbsp;○ Containment pressure is currently 5 psig as indicated on 2PI-948A<br><br>
 Which ONE of the following completes the statement below?<br><br>
 The crew will set the 22 Hydrogen Recombiner Power Setting to _____ KW.<br><br>
-REFERENCE PROVIDED
+<span class="val-normal">REFERENCE PROVIDED</span>
 </div>
 
 <div style="margin-bottom:14px;">
