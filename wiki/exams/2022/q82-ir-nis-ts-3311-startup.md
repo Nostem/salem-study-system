@@ -21,7 +21,7 @@ Subsequently, the following sequence of events occur;<br>
 • OHA E-6, LOSS OF IR, is LIT.<br>
 • 2N35, Intermediate Range (IR) NIS Channel, indicates zero on 2CC2.<br><br>
 In accordance with Technical Specifications LCO 3.3.1.1, Reactor Trip System Instrumentation, which ONE of the following identifies the required action, if any?<br><br>
-[REFERENCE PROVIDED]<br><br>
+<span class="val-normal">[REFERENCE PROVIDED]</span><br><br>
 Note: RTP &ndash; Reactor Thermal Power
 </div>
 
