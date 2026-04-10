@@ -43,5 +43,5 @@ Note: MS10 — Atmospheric Steam Dump Relief Valve
 
 ## Connections
 
-- Related systems: [[Feed & Condensate]], [[Steam Dumps]]
+- Related systems: [[Feed & Condensate]], [[Main Steam]]
 - Related exam: [[2022 NRC Written Exam]]

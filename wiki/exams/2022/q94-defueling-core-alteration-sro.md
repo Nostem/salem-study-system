@@ -39,5 +39,6 @@ In accordance with S2.OP-IO.ZZ-0007, Cold Shutdown to Refueling, which ONE of th
 ## Connections
 
 - Related systems: [[Refueling]], [[Control Rod Drive]]
+- Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
 - Related exam: [[2022 NRC Written Exam]]

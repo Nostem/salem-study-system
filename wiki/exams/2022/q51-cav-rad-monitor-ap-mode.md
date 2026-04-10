@@ -47,4 +47,5 @@ Note: AP = ACCIDENT PRESSURIZE
 ## Connections
 
 - Related systems: [[Radiation Monitoring]]
+- Related procedures: [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]]
 - Related exam: [[2022 NRC Written Exam]]

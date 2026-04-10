@@ -53,5 +53,5 @@ Note: S2.OP-AB.SW-0001 — Loss of Service Water Header Pressure<br>
 ## Connections
 
 - Related systems: [[Service Water]], [[EDGs]], [[4KV]], [[RCPs]], [[CCW]]
-- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]]
+- Related procedures: [[AB.SW-0005 — Loss of All Service Water]]
 - Related exam: [[2022 NRC Written Exam]]

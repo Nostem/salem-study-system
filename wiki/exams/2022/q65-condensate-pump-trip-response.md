@@ -47,4 +47,5 @@ Which ONE of the following completes both statements?<br><br>
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Steam Generator & Blowdown]]
+- Related abnormals: [[AB.CN-0001 — Condensate System Abnormality]]
 - Related exam: [[2022 NRC Written Exam]]

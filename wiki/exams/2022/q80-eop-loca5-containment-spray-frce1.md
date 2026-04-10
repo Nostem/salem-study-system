@@ -46,5 +46,5 @@ FRPs - Functional Restoration Procedures
 ## Connections
 
 - Related systems: [[Containment Spray]], [[CFCUs]]
-- Related EOPs: [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
+- Related EOPs: [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]
 - Related exam: [[2022 NRC Written Exam]]

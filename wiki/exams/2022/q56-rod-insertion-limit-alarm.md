@@ -46,4 +46,5 @@ Which ONE of the following completes both statements?<br><br>
 ## Connections
 
 - Related systems: [[Control Rod Drive]], [[CVCS]]
+- Related procedures: [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]]
 - Related exam: [[2022 NRC Written Exam]]

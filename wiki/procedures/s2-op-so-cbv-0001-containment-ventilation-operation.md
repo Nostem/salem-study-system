@@ -20,8 +20,13 @@ Provides direction for normal operation of containment ventilation systems inclu
 Referenced during CFCU surveillance testing. CFCU flow acceptance criteria use P&L 3.4 — for a measured differential pressure, use the next higher DP value from the table to determine minimum required flow.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q59</div>
+Section 4.3 note: <span class="hi-exam">IRUs should only be run when iodine is present in Containment, when requested by Radiation Protection, OR at the discretion of the SM/CRS to support testing.</span> The IRUs can <span class="hi-exam">only be operated from the main control room</span>. <span class="hi-trap">IRUs are NOT directed by EOPs and cannot be operated from the Hot Shutdown Panel.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CFCUs]], [[Containment]]
-- Related exam questions: [[2023 JPM Sim-f]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related exam questions: [[2022 Q59]], [[2023 JPM Sim-f]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -42,4 +42,5 @@ In accordance with S1.OP-<span class="hi">SO.SF-0001</span>, Fill and Transfer o
 ## Connections
 
 - Related systems: [[Spent Fuel Pool]], [[CVCS]], [[ECCS]]
+- Related procedures: [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]]
 - Related exam: [[2022 NRC Written Exam]]

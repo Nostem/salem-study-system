@@ -46,5 +46,6 @@ Note: ESOC - Electric System Operation Center
 ## Connections
 
 - Related systems: [[500KV]], [[Main Turbine]]
+- Related procedures: [[S2.OP-AR.ZZ-0008 — Overhead Annunciators Window H]]
 - Related admin: [[OP-AA-108-107-1002 — Salem and Hope Creek 500 KV Switchyard Operations Interface]]
 - Related exam: [[2022 NRC Written Exam]]

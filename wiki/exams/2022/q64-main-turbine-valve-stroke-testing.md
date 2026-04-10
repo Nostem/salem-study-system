@@ -43,4 +43,5 @@ While performing the valve stroke test, if a <span class="blank">_(1)_</span> va
 ## Connections
 
 - Related systems: [[Main Turbine]]
+- Related procedures: [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]]
 - Related exam: [[2022 NRC Written Exam]]

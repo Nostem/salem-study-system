@@ -40,5 +40,5 @@ In accordance with <span class="hi">OP-AA-300, Reactivity Management</span>, whi
 
 ## Connections
 
-- Related systems: [[Control Rod Drive]]
+- Related admin: [[OP-AA-300 — Reactivity Management]]
 - Related exam: [[2022 NRC Written Exam]]

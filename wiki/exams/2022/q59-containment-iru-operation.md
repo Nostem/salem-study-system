@@ -40,4 +40,5 @@ The Containment IRUs should only be placed in service when directed by <span cla
 ## Connections
 
 - Related systems: [[Containment]]
+- Related procedures: [[S2.OP-SO.CBV-0001 — Containment Ventilation Operation]]
 - Related exam: [[2022 NRC Written Exam]]

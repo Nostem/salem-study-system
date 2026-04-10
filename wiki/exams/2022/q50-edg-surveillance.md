@@ -45,4 +45,5 @@ The operator is required to immediately raise diesel generator load to <span cla
 ## Connections
 
 - Related systems: [[EDGs]]
+- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]]
 - Related exam: [[2022 NRC Written Exam]]

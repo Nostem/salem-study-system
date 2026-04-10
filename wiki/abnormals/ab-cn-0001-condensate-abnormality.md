@@ -25,8 +25,13 @@ On a SGFP trip: <span class="hi-exam">DEHC will automatically initiate a turbine
 SG level vs BF19 response during condensate/feedwater abnormalities.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q65</div>
+On a condensate pump trip with only one pump running, <span class="hi-exam">SGFP suction pressure lowers first</span> (before SG NR levels). The immediate required action is to <span class="hi-exam">open 21-23 CN108s (Polisher Bypass Valves)</span> to restore SGFP suction pressure and prevent loss of the feedpumps. <span class="hi-trap">Reducing load is also required (to 30% max), but bypassing the polishers takes priority over load reduction. The CN108s do NOT open automatically on a condensate pump trip. The load reduction rate is 5%/min (not 15%/min, which is the SGFP trip runback rate).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]]
-- Related exam questions: [[2022 Q45]], [[2023 Q64]]
+- Related exam questions: [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

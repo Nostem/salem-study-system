@@ -45,4 +45,5 @@ In accordance with Technical Specification, which ONE of the following describes
 ## Connections
 
 - Related systems: [[Excore NIs]], [[115V AC]], [[Refueling]]
+- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
 - Related exam: [[2022 NRC Written Exam]]

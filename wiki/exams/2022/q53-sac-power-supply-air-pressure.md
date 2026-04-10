@@ -48,5 +48,5 @@ Subsequently, the following occurs;<br>
 
 ## Connections
 
-- Related systems: [[4KV]]
+- Related systems: [[4KV]], [[Control Air]]
 - Related exam: [[2022 NRC Written Exam]]

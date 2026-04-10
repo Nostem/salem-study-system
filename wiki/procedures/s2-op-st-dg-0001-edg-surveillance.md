@@ -22,7 +22,7 @@ P&L 2.1.6: <span class="hi-exam">Only one DG per Unit may be synchronized to the
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q50</div>
-EDG minimum load requirement: <span class="hi-exam">500 KW</span>.
+Step 4.3.8.1.c Caution: After closing the generator output breaker, immediately raise generator load to <span class="hi-exam">&ge; 500 KW</span> to prevent <span class="hi-exam">tripping the output breaker on reverse power</span>. <span class="hi-trap">The concern at low load is reverse power trip, not exhaust fire. Oil accumulation in the exhaust system from low load operation is a separate P&L concern (P&L 2.19) from S1.OP-SO.DG-0001 regarding gradual loading to avoid exhaust fire.</span>
 </div>
 
 <div class="callout callout-exam">
