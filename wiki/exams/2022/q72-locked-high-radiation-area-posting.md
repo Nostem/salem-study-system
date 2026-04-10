@@ -16,7 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br><br>
 • An Equipment Operator is needed to place a Cation Bed Demineralizer in service.<br>
-• Radiological readings in the area are 1100 mR/hr.<br><br>
+• Radiological readings in the area are <span class="hi">1100 mR/hr</span>.<br><br>
 In accordance with RP-AA-460, Controls for High and Very High Radiation Areas, which ONE of the following completes both statements?<br><br>
 1. The radiological posting requirement for this area is <span class="blank">_(1)_</span>.<br>
 2. Personnel entering this area will require <span class="blank">_(2)_</span> RP coverage.
