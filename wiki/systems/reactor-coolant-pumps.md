@@ -1,13 +1,14 @@
 ---
-title: Reactor Coolant Pumps
+title: RCPs
 category: systems
 status: draft
 aliases:
   - RCPs
   - RCP
+  - Reactor Coolant Pumps
 ---
 
-# Reactor Coolant Pumps
+# RCPs
 
 ## Function
 

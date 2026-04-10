@@ -10,13 +10,16 @@ status: draft
 > Articles marked ✅ have been reviewed. Articles marked ⚠️ are drafts.
 
 ## Systems
-- [[Reactor Coolant System]]
-- [[Pressurizer]]
-- [[Reactor Coolant Pumps]]
-- [[Steam Generators]]
-- [[Reactor Vessel]]
-- [[Reactor Core and Fuel]]
-- [[Chemical and Volume Control System]]
+- [[RCS]]
+- [[Pressurizer & PRT]]
+- [[Pressurizer Level & Press Control]]
+- [[RCPs]]
+- [[Steam Generator & Blowdown]]
+- [[Rx Vessel & Internals]]
+- [[CVCS]]
+- [[FHV]]
+- [[Refueling]]
+- [[RVLIS]]
 - [[Emergency Core Cooling Systems]]
 - [[Residual Heat Removal]]
 - [[Containment Systems]]
@@ -68,8 +71,6 @@ status: draft
 - [[2023 NRC Operating Exam]]
 
 ## Concepts
-- [[Nuclear Design]]
-- [[Thermal-Hydraulic Design]]
 - [[Accident Analysis]]
 - [[Radiation Protection]]
 - [[Adverse Containment]]

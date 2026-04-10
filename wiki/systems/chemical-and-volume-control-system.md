@@ -1,14 +1,15 @@
 ---
-title: Chemical and Volume Control System
+title: CVCS
 category: systems
 status: draft
 aliases:
   - CVCS
+  - Chemical and Volume Control System
   - Boration Systems
   - charging and letdown
 ---
 
-# Chemical and Volume Control System
+# CVCS
 
 ## Function
 
@@ -110,7 +111,7 @@ EOP-LOCA-2 auxiliary spray depressurization: open <span class="hi-exam">2CV75 (A
 
 ## Connections
 
-- Related concepts: [[Nuclear Design]]
+- Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
 - Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]]
 - Related JPMs: [[2023 JPM Sim-c]]

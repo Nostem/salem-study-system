@@ -1,13 +1,14 @@
 ---
-title: Steam Generators
+title: Steam Generator & Blowdown
 category: systems
 status: draft
 aliases:
   - SGs
   - SG
+  - Steam Generators
 ---
 
-# Steam Generators
+# Steam Generator & Blowdown
 
 ## Function
 
