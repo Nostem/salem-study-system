@@ -22,7 +22,7 @@ aliases:
 • 2R44A, Containment High Range, Radiation Monitor is indicating 2020 R/hr.<br>
 • 2R44B, Containment High Range, Radiation Monitor is indicating 2010 R/hr.<br><br>
 Which ONE of the following is the correct classification and barrier status?<br><br>
-[REFERENCE PROVIDED]
+<span class="val-normal">[REFERENCE PROVIDED]</span>
 </div>
 
 <div style="margin-bottom:14px;">
