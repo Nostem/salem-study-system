@@ -45,11 +45,6 @@ EDG starting air compressor power supplies: <span class="hi-exam">both 21A and 2
 
 DGs have protective trips that are bypassed during emergency start (SI or loss of voltage) to ensure the DG remains running when needed. Only certain trips remain active during emergency operation. (UFSAR 8.3.1.5.2)
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q37</div>
-After SI and SEC reset, a subsequent LOOP causes EDGs to auto-start on blackout signal. <span class="hi-exam">SECs operate in Mode 2 (blackout only) — only charging pumps are auto-started.</span> SI pumps, RHR pumps, and CFCUs must be <span class="hi-exam">manually started</span> since SI/SECs were reset prior to the LOOP. EDG auto-start on loss of voltage is independent of SI status.
-</div>
-
 ## Safeguards Loading Sequence
 
 On SI signal with loss of offsite power:
@@ -77,7 +72,7 @@ SBO Diesel Control Air Compressor: backup control air source when all ECACs are 
 
 ## Connections
 
-- Related exam questions: [[2023 Q12]], [[2023 Q37]], [[2023 Q48]], [[2023 Q89]]
+- Related exam questions: [[2023 Q12]], [[2023 Q48]], [[2023 Q89]]
 - Related exam: [[2023 NRC Written Exam]]
 - Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related JPMs: [[2023 JPM IP-i]]
