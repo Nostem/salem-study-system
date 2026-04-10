@@ -39,9 +39,15 @@ ODCM liquid effluent monitoring (3.3.8): <span class="hi-exam">loss of 2FR1064 f
 CVCS Monitor Tank release with 2R18 (Radioactive Liquid Effluent Monitor) inoperable: per S2.OP-SO.WL-0001, the <span class="hi-exam">SM/CRS authorizes the liquid radioactive waste release</span> (not the Radiation Protection Manager). Per ODCM 3.3.8 Action 26, with 2R18 inoperable: <span class="hi-exam">at least two independent samples must be analyzed and at least two technically qualified members of staff must independently verify release rate calculations and discharge line valving</span>. <span class="hi-trap">Trap: continuous surveys of discharge piping are performed for other reasons -- the ODCM requirement for inoperable 2R18 is two independent samples, not piping surveys.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 IP-k</div>
+Release of 21 CVCS MT via SW to CW per S2.OP-SO.WL-0001 Section 5.5: Maximum Release Rate <span class="hi-exam">45 gpm</span> (limited due to high activity content). Control flow using <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span> and <span class="hi-exam">21WR53 (MT RECIRC V)</span> — throttling 21WR53 CLOSED diverts more flow overboard. If <span class="hi-exam">2R18 Monitor ALARMS</span>, immediately direct NCO to <span class="hi-exam">CLOSE 2WL51 (LIQUID RELEASE STOP VALVE)</span>. Tank volume from S2.OP-TM.ZZ-0002: at 90% level, volume is approximately <span class="hi-exam">19500 gallons</span>.
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
-- Related concepts: [[Radiation Monitoring]]
+- Related procedures: [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
 - Related exam questions: [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2022 JPM IP-k]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

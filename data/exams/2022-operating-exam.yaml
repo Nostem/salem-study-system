@@ -71,6 +71,97 @@ jpms:
     task_number: "N1200100104"
     estimated_time_min: 10
 
+  - id: "SRO-A1"
+    title: "Isolate Non-Essential Chilled Water Loads"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S2.OP-SO.CH-0001"
+    procedure_rev: 36
+    pages: "45-54"
+    ka: "G2.1.7"
+    ka_importance_sro: 4.7
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "0980020202"
+    estimated_time_min: 15
+
+  - id: "SRO-A2"
+    title: "Boration Time for Stuck Rods and BAST Level Evaluation"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "2-EOP-TRIP-2"
+    procedure_rev: 40
+    secondary_ref: "S2.OP-TM.ZZ-0002"
+    secondary_ref_rev: 8
+    pages: "55-68"
+    ka: "G2.1.20"
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1150510502"
+    estimated_time_min: 10
+
+  - id: "SRO-A3"
+    title: "Review Containment Ventilation Valve Surveillance"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S2.OP-ST.CBV-0001"
+    procedure_rev: 9
+    secondary_ref: "S2.RA-ST.CBV-0001"
+    secondary_ref_rev: 7
+    pages: "69-78"
+    ka: "G2.2.12"
+    ka_importance_sro: 4.1
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1230010302"
+    estimated_time_min: 15
+
+  - id: "SRO-A4"
+    title: "Personnel Exposure for Containment Entry at Power"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "RP-SA-102"
+    procedure_rev: 0
+    secondary_ref: "SC.SA-ST.ZZ-0001"
+    secondary_ref_rev: 5
+    pages: "80-90"
+    ka: "G2.3.4"
+    ka_importance_sro: 3.7
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1200100104"
+    estimated_time_min: 20
+
+  - id: "SRO-A5"
+    title: "Classify Event and Determine PARs"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "EP-SA-325-114"
+    procedure_rev: 0
+    pages: "91-104"
+    ka: "G2.4.41"
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: true
+    time_windows:
+      - action: "Classify emergency event"
+        limit_minutes: 15
+      - action: "Complete ICMF and submit"
+        limit_minutes: 15
+    alternate_path: false
+    source: Modified
+    task_number: "1240020502"
+    estimated_time_min: 10
+
   - id: "IP-i"
     title: "Transfer PZR Backup Heater to Emergency Power Supply"
     type: In-Plant

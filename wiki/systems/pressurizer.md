@@ -91,11 +91,16 @@ EOP-LOCA-2 Step 20 depressurization via Auxiliary Spray: open <span class="hi-ex
 EOP-FRHS-1 Bleed and Feed: if PORV 2PR2 fails to open, open <span class="hi-exam">reactor head vent valves 2RC40 through 2RC43</span> (key-locked on 2RP2 backpanel) as alternate bleed path. 2PR1 must already be open for the "bleed" portion.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 IP-i</div>
+Transfer of 22 Backup Group PZR heaters to emergency power (2A 460V Vital Bus) per S2.OP-SO.PZR-0010 Section 5.3: place <span class="hi-exam">11 of 14 disconnects in OFF</span> (only 3 remain ON to limit load within emergency bus capacity), place <span class="hi-exam">2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH in ON</span> using JAM key, then insert interlock key and <span class="hi-exam">UNLOCK breaker 2AX1AX14X</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
-- Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
+- Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
-- Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

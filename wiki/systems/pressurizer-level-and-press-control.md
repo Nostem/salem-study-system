@@ -73,9 +73,15 @@ PZR reference leg leak causes indicated level to read <span class="hi-exam">HIGH
 Loss of all control air impact on PZR level: with a centrifugal charging pump in service, <span class="hi-exam">CV55 fails OPEN and CV71 fails CLOSED</span>. With letdown isolated (no letdown path), higher charging flow to RCP seals causes <span class="hi-exam">PZR level to RISE</span>. Per AB.CA-0001: locally adjust CV54 (Centrifugal Charging Pump Flow Control Valve) OR <span class="hi-exam">transfer to 23 PDP charging pump</span> (speed controller fails at low speed stop → minimizes RCP seal flow → extends time before PZR reaches 90%).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 IP-i</div>
+During LOOP, PZR backup heaters are transferred to emergency power per S2.OP-SO.PZR-0010 Section 5.3. Transfer is <span class="hi-exam">MANUAL (not automatic)</span>. Group 22 transfers to <span class="hi-exam">2A 460V Vital Bus</span>. Only <span class="hi-exam">3 of 14 heater disconnects remain ON</span> to limit load within the emergency bus capacity.
+</div>
+
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]]
-- Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]]
+- Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
+- Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
 - Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2022 JPM IP-i]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
