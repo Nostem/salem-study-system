@@ -14,7 +14,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-In accordance with CC-AA-112, Temporary Configuration Changes, which ONE of the following completes both statements?<br><br>
+In accordance with <span class="hi">CC-AA-112, Temporary Configuration Changes</span>, which ONE of the following completes both statements?<br><br>
 1. The <span class="blank">_(1)_</span> is responsible for approving installation of Temporary Configuration Changes (TCCs).<br>
 2. For TCCs in direct support of a maintenance activity, a 50.59 review is required if the TCC is installed for more than <span class="blank">_(2)_</span> days.
 </div>
