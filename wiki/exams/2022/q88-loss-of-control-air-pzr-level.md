@@ -19,7 +19,7 @@ aliases:
 • 11 Charging Pump is in service.<br>
 • A Loss of All Control Air has occurred.<br>
 • The crew enters S1.OP-AB.CA-0001, Loss of Control Air.<br>
-• The CRS directs manually tripping the reactor and entering 1-EOP-TRIP-1, Reactor Trip or Safety Injection.<br>
+• The CRS directs manually tripping the reactor and entering <span class="val-trip">1-EOP-TRIP-1</span>, Reactor Trip or Safety Injection.<br>
 • Operators are locally controlling AFW valves to maintain post trip SG Narrow Range levels.<br><br>
 Which ONE of the following completes both statements?<br><br>
 1. What will be the subsequent impact on PZR level?<br>
