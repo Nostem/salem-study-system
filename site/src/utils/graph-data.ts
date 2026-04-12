@@ -6,11 +6,13 @@ interface GraphNode {
   category: string;
   slug: string;
   connections: number;
+  isExam: boolean;
 }
 
 interface GraphEdge {
   source: string;
   target: string;
+  type: 'system' | 'procedure' | 'eop' | 'tech-spec' | 'exam' | 'inline';
 }
 
 export interface GraphData {
@@ -19,6 +21,27 @@ export interface GraphData {
 }
 
 const WIKILINK_RE = /\[\[([^\]]+)\]\]/g;
+
+const EDGE_TYPE_MAP: Record<string, GraphEdge['type']> = {
+  'related systems': 'system',
+  'related procedures': 'procedure',
+  'related abnormals': 'procedure',
+  'related eops': 'eop',
+  'related tech specs': 'tech-spec',
+  'related exam questions': 'exam',
+  'related exam': 'exam',
+  'related jpms': 'exam',
+  'related scenarios': 'exam',
+  'related concepts': 'system',
+};
+
+function getEdgeType(line: string): GraphEdge['type'] {
+  const lower = line.toLowerCase().trim();
+  for (const [prefix, type] of Object.entries(EDGE_TYPE_MAP)) {
+    if (lower.startsWith(`- ${prefix}:`)) return type;
+  }
+  return 'inline';
+}
 
 export async function generateGraphData(): Promise<GraphData> {
   const articles = await getCollection('wiki');
@@ -38,19 +61,48 @@ export async function generateGraphData(): Promise<GraphData> {
     }
   }
 
-  // Extract edges from wikilinks in article body
+  // Extract edges from wikilinks with type awareness and deduplication
   for (const article of articles) {
     if (article.id === '_index') continue;
-
     const body = article.body ?? '';
-    const matches = [...body.matchAll(WIKILINK_RE)];
-    for (const match of matches) {
-      const displayName = match[1];
-      const targetSlug = titleToSlug.get(displayName.toLowerCase());
-      if (targetSlug && targetSlug !== article.id) {
-        edges.push({ source: article.id, target: targetSlug });
-        connectionCount[article.id] = (connectionCount[article.id] ?? 0) + 1;
-        connectionCount[targetSlug] = (connectionCount[targetSlug] ?? 0) + 1;
+    const lines = body.split('\n');
+    const edgeSet = new Set<string>(); // for deduplication: "source|target"
+
+    let inConnections = false;
+    let currentLineType: GraphEdge['type'] = 'inline';
+
+    for (const line of lines) {
+      // Detect Connections section
+      if (/^##\s+Connections/.test(line)) {
+        inConnections = true;
+        continue;
+      }
+      // Exit Connections on next ## heading
+      if (inConnections && /^##\s+/.test(line) && !/^##\s+Connections/.test(line)) {
+        inConnections = false;
+      }
+
+      // Determine edge type for this line
+      if (inConnections && line.trim().startsWith('- ')) {
+        currentLineType = getEdgeType(line);
+      } else if (!inConnections) {
+        currentLineType = 'inline';
+      }
+
+      // Extract wikilinks from this line
+      const matches = [...line.matchAll(WIKILINK_RE)];
+      for (const match of matches) {
+        const displayName = match[1];
+        const targetSlug = titleToSlug.get(displayName.toLowerCase());
+        if (targetSlug && targetSlug !== article.id) {
+          const edgeKey = `${article.id}|${targetSlug}`;
+          if (!edgeSet.has(edgeKey)) {
+            edgeSet.add(edgeKey);
+            edges.push({ source: article.id, target: targetSlug, type: currentLineType });
+            connectionCount[article.id] = (connectionCount[article.id] ?? 0) + 1;
+            connectionCount[targetSlug] = (connectionCount[targetSlug] ?? 0) + 1;
+          }
+        }
       }
     }
   }
@@ -68,6 +120,7 @@ export async function generateGraphData(): Promise<GraphData> {
       category,
       slug,
       connections: connectionCount[slug] ?? 0,
+      isExam: category === 'exams',
     });
   }
 
