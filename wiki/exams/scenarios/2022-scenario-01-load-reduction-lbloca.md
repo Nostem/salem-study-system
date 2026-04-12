@@ -24,7 +24,7 @@ aliases:
 <li><span class="hi">24 Vacuum Pump trips</span></li>
 <li><span class="hi">RC Loop 24 Cold Leg RTD Fails High (TS)</span></li>
 <li><span class="hi">RCS Leak — 20 gpm (TS)</span></li>
-<li>LBLOCA (leak worsens to 350 gpm)</li>
+<li><span class="hi-exam">LBLOCA (leak worsens to 350 gpm)</span></li>
 <li>Auto SI fails to actuate</li>
 <li>22 RHR Pump Fails to Start on SEC Signal</li>
 <li>Loss of Emergency Recirculation capability (22 RHR Pump Trips)</li>
