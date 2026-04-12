@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Council Report — Wiki Linking Strategy</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #fafafa; color: #1a1a1a; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 24px; }
+h1 { font-size: 24px; margin-bottom: 4px; }
+.meta { color: #666; font-size: 14px; margin-bottom: 32px; }
+h2 { font-size: 18px; margin: 28px 0 12px; padding-bottom: 6px; border-bottom: 2px solid #e5e5e5; }
+h3 { font-size: 15px; margin: 16px 0 8px; }
+p, li { font-size: 15px; margin-bottom: 8px; }
+ul, ol { padding-left: 20px; }
+code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; font-size: 13px; }
+.verdict { background: #f0f7ff; border: 1px solid #bdd4f0; border-radius: 8px; padding: 20px; margin: 20px 0; }
+.verdict h2 { border-bottom: none; margin-top: 0; color: #1a56a0; }
+.agree { background: #f0faf0; border: 1px solid #b8e0b8; border-radius: 8px; padding: 16px; margin: 12px 0; }
+.clash { background: #fff8f0; border: 1px solid #e0d0b8; border-radius: 8px; padding: 16px; margin: 12px 0; }
+.rec { background: #f0f7ff; border: 1px solid #b8d0e0; border-radius: 8px; padding: 16px; margin: 12px 0; }
+.first { background: #1a56a0; color: white; border-radius: 8px; padding: 16px; margin: 16px 0; }
+.first h2 { color: white; border-bottom-color: rgba(255,255,255,0.3); }
+.grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; margin: 16px 0; }
+.advisor-card { border: 1px solid #ddd; border-radius: 6px; padding: 10px; text-align: center; font-size: 12px; }
+.advisor-card .name { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+.advisor-card.green { border-color: #22c55e; background: #f0fdf4; }
+.advisor-card.amber { border-color: #f59e0b; background: #fffbeb; }
+.advisor-card.red { border-color: #ef4444; background: #fef2f2; }
+.phase { border: 1px solid #ddd; border-radius: 6px; padding: 14px; margin: 10px 0; }
+.phase h3 { margin-top: 0; }
+.phase.p1 { border-color: #22c55e; background: #f0fdf4; }
+.phase.p2 { border-color: #60a5fa; background: #f0f7ff; }
+.phase.p3 { border-color: #a78bfa; background: #f5f3ff; }
+.skip { color: #dc2626; font-weight: 600; }
+details { margin: 12px 0; }
+summary { cursor: pointer; font-weight: 600; font-size: 14px; color: #1a56a0; padding: 8px 0; }
+.advisor-response { background: #f5f5f5; border-radius: 6px; padding: 16px; margin-top: 8px; font-size: 14px; }
+.footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid #e5e5e5; font-size: 12px; color: #999; }
+</style>
+</head>
+<body>
+
+<h1>Council Verdict: Wiki Linking Strategy</h1>
+<div class="meta">April 12, 2026 &mdash; 5 advisors, 5 peer reviews, 1 chairman synthesis</div>
+
+<div class="verdict">
+<h2>Bottom Line</h2>
+<p><strong>Kill the "no same-category links" rule.</strong> Parse edge types from existing Connections prefixes. Demote exam questions from graph nodes to annotations. Three phases, each independently shippable.</p>
+<p><span class="skip">Skip:</span> YAML frontmatter migration. Too expensive for the payoff.</p>
+</div>
+
+<h2>Advisor Alignment</h2>
+<div class="grid">
+<div class="advisor-card amber"><div class="name">Contrarian</div><div class="pos">Fix taxonomy<br>Remove exam nodes</div></div>
+<div class="advisor-card green"><div class="name">First Principles</div><div class="pos">Typed edges<br>Semantic layer</div></div>
+<div class="advisor-card amber"><div class="name">Expansionist</div><div class="pos">YAML links<br>Causal model</div></div>
+<div class="advisor-card green"><div class="name">Outsider</div><div class="pos">Inline labels<br>Exam sidebar</div></div>
+<div class="advisor-card green"><div class="name">Executor</div><div class="pos">Parse existing<br>Zero edits</div></div>
+</div>
+<p style="font-size:13px;color:#666;">Green = aligned with recommendation. Amber = good insights incorporated but approach too expensive.</p>
+
+<div class="agree">
+<h2>Where the Council Agrees</h2>
+<ul>
+<li><strong>Kill the "no same-category links" rule.</strong> Every advisor wants it gone. It was a bandage for an untyped graph. With filterable edge types, system&harr;system links (RCS&harr;Pressurizer, ECCS&harr;RHR) become essential, not noise.</li>
+<li><strong>Exam questions are polluting the graph.</strong> Whether called "annotations" or "a different layer," exam nodes belong in a secondary view &mdash; not competing for D3 force-simulation space with plant systems.</li>
+<li><strong>Edge deduplication is missing.</strong> Every peer reviewer caught this: <code>graph-data.ts</code> pushes duplicate edges silently, inflating node degree and visual density. This is a bug, not a design question.</li>
+</ul>
+</div>
+
+<div class="clash">
+<h2>Where the Council Clashes</h2>
+<h3>Cost of change</h3>
+<p><strong>Executor:</strong> Zero article edits &mdash; parse existing Connections prefixes. True but incomplete; prefixes are inconsistent.</p>
+<p><strong>First Principles + Expansionist:</strong> New schema (typed prefixes or YAML frontmatter) &mdash; richer semantics but 450+ file edits.</p>
+<p><strong>Contrarian:</strong> Taxonomy reform first &mdash; intellectually correct but blocks all progress.</p>
+<p><strong>Resolution:</strong> Executor's approach works <em>now</em> with a normalization pass. Richer schemas become Phase 2 only if Phase 1 proves insufficient.</p>
+</div>
+
+<div class="rec">
+<h2>The Recommendation</h2>
+
+<div class="phase p1">
+<h3>Phase 1 &mdash; Fix the graph engine (zero article edits)</h3>
+<ol>
+<li><strong>Deduplicate edges</strong> in <code>graph-data.ts</code>. Visibly reduces clutter immediately.</li>
+<li><strong>Parse edge types</strong> from existing Connections prefixes ("Related systems:", "Related EOPs:", etc.). Normalize ~15 variants to ~6 canonical types.</li>
+<li><strong>Color-code edges</strong> by type + <strong>add filter checkboxes</strong> to graph UI.</li>
+<li><strong>Demote exam question nodes</strong> from force simulation. Render as count badge or sidebar on parent node hover.</li>
+</ol>
+</div>
+
+<div class="phase p2">
+<h3>Phase 2 &mdash; Kill the rule, add missing links</h3>
+<ol>
+<li><strong>Abolish</strong> "no same-category links" rule in CLAUDE.md and memory.</li>
+<li><strong>Add system&harr;system links</strong> where plant topology demands (RCS&harr;Pressurizer, ECCS&harr;RHR, AFW&harr;SG, etc.).</li>
+<li><strong>Normalize</strong> any inconsistent Connections prefixes found in Phase 1.</li>
+</ol>
+</div>
+
+<div class="phase p3">
+<h3>Phase 3 &mdash; Richer semantics (only if needed)</h3>
+<ol>
+<li>Asymmetric relation labels inline: <code>[[ECCS]] (trains-with)</code>. Controlled vocabulary enforced by wikilink check.</li>
+<li>Exam-frequency weighting on edges &mdash; for study-path mode.</li>
+</ol>
+</div>
+
+<p><span class="skip">Skip entirely:</span> YAML frontmatter link migration. Cost-to-benefit ratio is terrible for a single-user wiki maintained by an LLM agent.</p>
+</div>
+
+<div class="first">
+<h2>The One Thing to Do First</h2>
+<p>Open <code>site/src/utils/graph-data.ts</code>. Add edge deduplication and parse edge types from existing Connections prefixes. That single file change &mdash; touching zero wiki articles &mdash; fixes the bug every reviewer spotted, enables filtering, and proves out the strategy before committing to any article edits.</p>
+</div>
+
+<details>
+<summary>Full Advisor Responses</summary>
+
+<h3>The Contrarian</h3>
+<div class="advisor-response">450 nodes is a content org problem, not a graph problem. Typed edges double cognitive load. Create parent concept articles as hubs. REMOVE exam questions from graph &mdash; they're annotations, not nodes. Strip them and graph drops to 200 readable nodes. Fix taxonomy first.</div>
+
+<h3>The First Principles Thinker</h3>
+<div class="advisor-response">Two users need different things. Replace headers with typed prefixes (depends-on, tested-by). Abolish no-same-category rule. Weight edges by exam frequency. Use links as queryable semantic layer, not navigation decoration.</div>
+
+<h3>The Expansionist</h3>
+<div class="advisor-response">YAML frontmatter links with target/type/weight. Asymmetric edges: RCS "feeds-into" ECCS, ECCS "protects" RCS. Turns graph into causal plant model. D3 filtering, study paths via prerequisite edges.</div>
+
+<h3>The Outsider</h3>
+<div class="advisor-response">Kill no-same-category rule. Add inline relation labels. Move exam questions out of D3 force simulation &mdash; render as sidebar on hover. Graph shows conceptual layer only; exams are annotations.</div>
+
+<h3>The Executor</h3>
+<div class="advisor-response">Connections prefixes ARE edge type metadata &mdash; graph-data.ts throws them away. Three steps: parse types, color edges, add filters. Zero article edits. Monday deliverable.</div>
+</details>
+
+<details>
+<summary>Peer Review Highlights</summary>
+<div class="advisor-response">
+<strong>Strongest:</strong> Executor (E) &mdash; only response that read the actual code. Zero article edits verifiably true.<br><br>
+<strong>Key blind spot:</strong> Connections prefixes are inconsistent across articles ("Related systems" vs "Related exam" vs "Related scenarios"). Needs normalization.<br><br>
+<strong>What ALL five missed:</strong> <code>graph-data.ts</code> has no edge deduplication. Duplicate edges silently inflate node degree and density. Also no directional connection counting &mdash; hub nodes appear artificially large. This is a bug prerequisite to any strategy working.
+</div>
+</details>
+
+<div class="footer">
+Council convened April 12, 2026 &mdash; 5 advisors + 5 peer reviews + Chairman synthesis.<br>
+Question: "How should we restructure the wiki linking strategy for a cleaner knowledge graph?"
+</div>
+
+</body>
+</html>
