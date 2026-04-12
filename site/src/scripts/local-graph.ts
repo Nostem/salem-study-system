@@ -15,7 +15,17 @@ interface GraphNode {
 interface GraphEdge {
   source: string | GraphNode;
   target: string | GraphNode;
+  type: 'system' | 'procedure' | 'eop' | 'tech-spec' | 'exam' | 'inline';
 }
+
+const EDGE_COLORS: Record<string, string> = {
+  system: '#60a5fa',
+  procedure: '#6b7280',
+  eop: '#ef4444',
+  'tech-spec': '#10b981',
+  exam: '#f59e0b',
+  inline: '#1a2035',
+};
 
 const CATEGORY_COLORS: Record<string, string> = {
   systems: '#60a5fa',
@@ -65,7 +75,7 @@ if (data && data.nodes.length > 1) {
       .selectAll('line')
       .data(data.edges)
       .join('line')
-      .attr('stroke', '#1a2035')
+      .attr('stroke', (d: any) => EDGE_COLORS[d.type] ?? '#1a2035')
       .attr('stroke-width', 1);
 
     // Nodes
