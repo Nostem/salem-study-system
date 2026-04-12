@@ -23,7 +23,7 @@ aliases:
 <li>Planned Load Reduction to 89% at 10%/hour</li>
 <li><span class="hi">24 Vacuum Pump trips</span></li>
 <li><span class="hi">RC Loop 24 Cold Leg RTD Fails High (TS)</span></li>
-<li>RCS Leak — 20 gpm (TS)</li>
+<li><span class="hi">RCS Leak — 20 gpm (TS)</span></li>
 <li>LBLOCA (leak worsens to 350 gpm)</li>
 <li>Auto SI fails to actuate</li>
 <li>22 RHR Pump Fails to Start on SEC Signal</li>
