@@ -6,6 +6,7 @@ interface GraphNode {
   category: string;
   slug: string;
   connections: number;
+  isExam: boolean;
   x?: number;
   y?: number;
   fx?: number | null;
@@ -15,6 +16,7 @@ interface GraphNode {
 interface GraphEdge {
   source: string | GraphNode;
   target: string | GraphNode;
+  type: 'system' | 'procedure' | 'eop' | 'tech-spec' | 'exam' | 'inline';
 }
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -24,6 +26,15 @@ const CATEGORY_COLORS: Record<string, string> = {
   eops: '#ef4444',
   concepts: '#a78bfa',
   abnormals: '#6b7280',
+};
+
+const EDGE_COLORS: Record<string, string> = {
+  system: '#60a5fa',
+  procedure: '#6b7280',
+  eop: '#ef4444',
+  'tech-spec': '#10b981',
+  exam: '#f59e0b',
+  inline: '#1a2035',
 };
 
 const data = (window as any).__GRAPH_DATA__;
@@ -59,18 +70,20 @@ if (data && data.nodes.length > 0) {
     .selectAll('line')
     .data(data.edges)
     .join('line')
-    .attr('stroke', '#1a2035')
-    .attr('stroke-width', 1);
+    .attr('stroke', (d: any) => EDGE_COLORS[d.type] ?? '#1a2035')
+    .attr('stroke-width', (d: any) => d.type === 'exam' ? 0.5 : 1)
+    .attr('stroke-opacity', (d: any) => d.type === 'exam' ? 0.2 : 0.8);
 
   // Nodes
   const node = g.append('g')
     .selectAll('circle')
     .data(data.nodes)
     .join('circle')
-    .attr('r', (d: GraphNode) => Math.max(5, Math.min(15, 4 + d.connections * 2)))
+    .attr('r', (d: GraphNode) => d.isExam ? 3 : Math.max(5, Math.min(15, 4 + d.connections * 2)))
     .attr('fill', (d: GraphNode) => CATEGORY_COLORS[d.category] ?? '#6b7280')
+    .attr('fill-opacity', (d: GraphNode) => d.isExam ? 0.4 : 1)
     .attr('stroke', '#0a0e17')
-    .attr('stroke-width', 1.5)
+    .attr('stroke-width', (d: GraphNode) => d.isExam ? 0.5 : 1.5)
     .style('cursor', 'pointer')
     .on('click', (_event: any, d: GraphNode) => {
       window.location.href = `${basePath.endsWith('/') ? basePath : basePath + '/'}${d.slug}`;
@@ -91,12 +104,16 @@ if (data && data.nodes.length > 0) {
         const tgt = typeof e.target === 'string' ? e.target : e.target.id;
         return connected.has(src) && connected.has(tgt) ? 1 : 0.05;
       });
-      label.attr('opacity', (n: GraphNode) => connected.has(n.id) ? 1 : 0.1);
+      // Show labels for connected non-exam nodes only
+      label.style('opacity', (n: GraphNode) => connected.has(n.id) && !n.isExam ? 1 : 0);
     })
     .on('mouseout', () => {
-      node.attr('opacity', 1);
-      link.attr('opacity', 1);
-      label.attr('opacity', 1);
+      node.attr('opacity', (n: GraphNode) => n.isExam ? 0.4 : 1);
+      link.attr('opacity', (e: any) => {
+        const type = (e as any).type ?? 'inline';
+        return type === 'exam' ? 0.2 : 0.8;
+      });
+      label.style('opacity', 0);
     })
     .call(d3.drag<SVGCircleElement, GraphNode>()
       .on('start', (event, d) => {
@@ -115,17 +132,21 @@ if (data && data.nodes.length > 0) {
       })
     );
 
-  // Labels
+  // Tooltips for all nodes (especially useful for exam nodes which have no label)
+  node.append('title').text((d: GraphNode) => d.title);
+
+  // Labels — hidden by default, shown on hover
   const label = g.append('g')
     .selectAll('text')
     .data(data.nodes)
     .join('text')
-    .text((d: GraphNode) => d.title)
+    .text((d: GraphNode) => d.isExam ? '' : d.title)
     .attr('font-size', 10)
     .attr('fill', '#8b95a5')
     .attr('dx', 12)
     .attr('dy', 4)
-    .style('pointer-events', 'none');
+    .style('pointer-events', 'none')
+    .style('opacity', 0);
 
   simulation.on('tick', () => {
     link
@@ -142,4 +163,32 @@ if (data && data.nodes.length > 0) {
       .attr('x', (d: any) => d.x)
       .attr('y', (d: any) => d.y);
   });
+
+  // Edge type filtering
+  function applyFilters() {
+    const checkboxes = document.querySelectorAll<HTMLInputElement>('[data-edge-type]');
+    const hiddenTypes = new Set<string>();
+    checkboxes.forEach(cb => {
+      if (!cb.checked) hiddenTypes.add(cb.dataset.edgeType!);
+    });
+
+    link
+      .attr('stroke-opacity', (d: any) => hiddenTypes.has(d.type) ? 0 : (d.type === 'exam' ? 0.2 : 0.8))
+      .attr('pointer-events', (d: any) => hiddenTypes.has(d.type) ? 'none' : 'auto');
+
+    // When exam edges hidden, make exam nodes even more transparent
+    if (hiddenTypes.has('exam')) {
+      node.attr('fill-opacity', (d: GraphNode) => d.isExam ? 0.1 : 1);
+    } else {
+      node.attr('fill-opacity', (d: GraphNode) => d.isExam ? 0.4 : 1);
+    }
+  }
+
+  // Attach filter listeners
+  document.querySelectorAll('[data-edge-type]').forEach(cb => {
+    cb.addEventListener('change', applyFilters);
+  });
+
+  // Apply initial state (exam unchecked by default)
+  applyFilters();
 }
