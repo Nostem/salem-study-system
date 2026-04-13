@@ -123,11 +123,16 @@ EOP-LOCA-4 hot leg recirculation with 21 RHR pump C/T: Step 4.0 directs <span cl
 21 RHR pump C/T for motor bearing inspection. During LBLOCA, <span class="hi-exam">22 RHR pump fails to start on 2B SEC signal</span> (CT#2, CT-5). PO blocks and resets 2B SEC, RO manually starts 22 RHR. Later in EOP-LOCA-1, <span class="hi-exam">22 RHR pump trips on overcurrent</span> — no RHR pumps available for emergency recirculation. CRS transitions to EOP-LOCA-5, Loss of Emergency Recirculation. Loss of both RHR pumps is the driver for CT#3 (RWST conservation actions).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q25</div>
+LOCA outside containment indication from RHR piping: <span class="hi-exam">OHA C-34 (22 RHR SUMP OVRFLO) and 23/24 RHR Sump Pump starts</span> indicate a leak in the RHR system outside containment. During SI termination (EOP-TRIP-3), these alarms combined with 2R41D Plant Vent alarm and inability to recover PZR level trigger the CAS to restart ECCS pumps and transition to EOP-LOCA-1, then to EOP-LOCA-6.
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]]
-- Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2020 Q06]], [[2020 Q17]], [[2020 Q18]], [[2020 Q31]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
+- Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
+- Related exam questions: [[2020 Q06]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

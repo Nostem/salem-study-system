@@ -25,8 +25,14 @@ Step 2 — place all CFCUs in LOW speed. In LOW speed, dampers realign airflow t
 CFST containment environment monitoring: the <span class="hi-exam">R44A/B (high range containment radiation monitors)</span> are used in EOP-CFST-1 to determine entry into EOP-FRCE-3 when radiation exceeds <span class="hi-exam">2 R/HR</span>. FRCE-3 is a <span class="hi-exam">yellow path procedure -- entry is optional</span> (CRS may elect to GO TO). <span class="hi-trap">Trap: R10A/B are also inside containment but are NOT the monitors used in the CFSTs for this purpose. Red/orange paths require mandatory entry; yellow paths are at the CRS's discretion.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q26</div>
+Adverse containment conditions exist when R44A/B containment high range monitors read <span class="hi-exam">> 1E05 R/HR</span>. This affects SMM operation — the SMM switches to ADVERSE mode. <span class="hi-trap">When radiation levels subsequently lower below the adverse threshold, the SMM does NOT automatically reset — manual action is required.</span> Containment pressure auto-resets at < 3 psig, but radiation does not.
+</div>
+
 ## Connections
 
-- Related systems: [[CFCUs]]
-- Related exam questions: [[2023 Q25]], [[2023 Q99]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related systems: [[CFCUs]], [[Radiation Monitoring]], [[Incores]]
+- Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
+- Related exam questions: [[2023 Q25]], [[2023 Q99]], [[2020 Q26]]
+- Related exam: [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]

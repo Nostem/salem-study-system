@@ -230,6 +230,7 @@ status: draft
 - [[S2.OP-AR.ZZ-0008 — Overhead Annunciators Window H]]
 - [[S2.OP-AR.ZZ-0009 — Overhead Annunciators Window J]]
 - [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]]
+- [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]]
 - [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]]
 - [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
 - [[S2.OP-SO.RHR-0001 — Initiating RHR]]

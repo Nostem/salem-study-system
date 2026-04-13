@@ -41,6 +41,11 @@ Loss of all AFW flow during EOP-TRIP-1 (22 AFP trips on overcurrent, 23 AFP trip
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q10</div>
+Secondary heat sink restoration with CETs lowering and SG WR levels at 7%: feed flow to <span class="hi-exam">ONE SG between <span class="val-normal">1E04 and 5E04 lbm/hr</span> (25-100 gpm plant-specific equivalent)</span> to prevent <span class="hi-exam">thermal shocking SG tubes</span>. Per bases: "With stable or decreasing RCS temperatures, the feedwater flow rate is limited to minimize the potential impact of excessive thermal stresses since a direct measure of the steam generator temperature is not available." <span class="hi-trap">If CETs are still RISING, the procedure requires feeding at maximum/desired rate (not limited). The flow limitation only applies when CETs are stable or lowering. The concern is SG tube thermal stress, NOT reactor vessel thermal shock.</span> Remaining dry SGs may have their levels recovered at the direction of TSC.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q18</div>
 Step 3: "IS RCS PRESSURE GREATER THAN ANY INTACT OR RUPTURED SG PRESSURE?" — If <span class="hi-exam">NO, return to procedure in effect</span>. Per bases: for larger LOCA break sizes, the RCS depressurizes below intact SG pressures; SGs no longer function as a heat sink; core decay heat is removed by the <span class="hi-exam">RCS break flow</span>. Secondary heat sink is not required. <span class="hi-trap">Step 3.1 (place RHR in service if T-Hots < 350F) is only performed if Step 3 answer is YES, not NO.</span> <span class="hi-trap">Bleed and Feed is also not required — the LOCA itself provides the heat removal mechanism.</span>
 </div>
@@ -49,7 +54,7 @@ Step 3: "IS RCS PRESSURE GREATER THAN ANY INTACT OR RUPTURED SG PRESSURE?" — I
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2020 Q18]], [[2022 Q81]], [[2023 Q18]]
+- Related exam questions: [[2020 Q10]], [[2020 Q18]], [[2022 Q81]], [[2023 Q18]]
 - Related JPMs: [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

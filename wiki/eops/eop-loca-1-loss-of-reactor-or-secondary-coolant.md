@@ -46,10 +46,16 @@ Step 14 — accumulator isolation: when at least two RCS T-Hots < <span class="h
 Entered from EOP-TRIP-1 following LBLOCA based on <span class="hi-exam">containment pressure &gt;4 psig</span> (or two or more Table J channels not normal). In LOCA-1: RO confirms all RCPs stopped, PO maintains AFW flow. RO resets Phase A, opens 21 and 22 CA330s. RO resets both trains of SI, PO resets SECs. PO stops unloaded EDGs. <span class="hi-exam">22 RHR pump trips</span> during LOCA-1 — CRS determines no RHR pumps available and transitions to EOP-LOCA-5 (loss of emergency recirculation). Possible <span class="hi">CFST Purple Path on Thermal Shock</span> (FRTS-1) during LOCA-1 — enter/exit with no actions performed.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q25</div>
+LOCA outside containment recognition from EOP-LOCA-1: alarms indicating a LOCA outside containment include <span class="hi-exam">2R41D (Plant Vent) in alarm, RHR sump overflow (OHA C-34), and RHR sump pump starts</span>. Combined with inability to recover PZR level, the transition path is from <span class="hi-exam">EOP-LOCA-1 to EOP-LOCA-6</span>. Key recognition: the crew arrives at LOCA-1 via the TRIP-3 CAS (PZR level cannot be maintained > 11%).
+</div>
+
 ## Connections
 
-- Related systems: [[RCS]], [[ECCS]], [[Containment]]
-- Related exam questions: [[2020 Q18]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
+- Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
+- Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]]
+- Related exam questions: [[2020 Q18]], [[2020 Q25]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
