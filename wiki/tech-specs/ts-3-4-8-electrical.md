@@ -38,6 +38,16 @@ b. Three separate and independent diesel generators, each with a separate fuel s
 When one DG is inoperable, the OPERABILITY of the remaining DGs must be demonstrated within 24 hours. This is to ensure the redundant DGs are not affected by a common-cause failure.
 </div>
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.1 AC Sources</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.8.1</div>
+<span class="hi-exam">Two independent offsite circuits and three diesel generators provide defense-in-depth for electrical power. The 72-hour completion time for one inoperable source is based on the remaining sources providing adequate redundancy.</span> The shorter 12-hour time for one offsite AND one DG inoperable reflects the reduced defense-in-depth when both offsite and onsite redundancy are degraded simultaneously.
+
+DG OPERABILITY includes verification of fuel oil supply (7-day supply), starting capability (10-second start to rated speed and voltage), and load-carrying capability.
+</div>
+</details>
+
 ### AC Sources — Shutdown (3.8.1.2)
 
 <div class="callout callout-important">
@@ -50,6 +60,8 @@ b. One diesel generator with fuel supply
 **Applicability:** Modes 5 and 6
 
 **Action:** With less than required, suspend CORE ALTERATIONS, handling of irradiated fuel, and operations with positive reactivity changes. Immediately initiate action to restore.
+
+---
 
 ## 3/4.8.2 — DC Sources
 
@@ -71,6 +83,14 @@ b. Three 28-volt battery supplies for reactor trip breaker UV coils
 | 1 battery bank or charger inoperable | Restore | <span class="val-alarm">2 hrs</span> (battery) or <span class="val-alarm">24 hrs</span> (charger with spare) |
 | 1 of 3 28V supplies inoperable | Restore | <span class="val-alarm">48 hrs</span> |
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.2 DC Sources</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.8.2</div>
+<span class="hi-exam">The 125V DC batteries provide control power for switchgear operation, diesel generator starting, reactor trip breaker control, and emergency instrumentation.</span> The 2-hour completion time for a battery reflects the critical importance of DC power for safety functions. The 28V supplies power the reactor trip breaker undervoltage coils — loss of these supplies causes a reactor trip (fail-safe design).
+</div>
+</details>
+
 ### DC Sources — Shutdown (3.8.2.2)
 
 <div class="callout callout-important">
@@ -80,6 +100,8 @@ One 125-volt battery bank with associated charger
 </div>
 
 **Applicability:** Modes 5 and 6
+
+---
 
 ## 3/4.8.3 — Onsite Power Distribution
 
@@ -95,20 +117,6 @@ The following electrical busses shall be energized and OPERABLE:<br>
 **Applicability:** Modes 1, 2, 3, and 4
 
 **Action:** With one bus inoperable, restore within <span class="val-alarm">8 hours</span> or be in Hot Standby within 6 hours and Hot Shutdown within 6 hours.
-
----
-
-## Bases
-
-### AC Sources
-
-<span class="hi-exam">Two independent offsite circuits and three diesel generators provide defense-in-depth for electrical power. The 72-hour completion time for one inoperable source is based on the remaining sources providing adequate redundancy.</span> The shorter 12-hour time for one offsite AND one DG inoperable reflects the reduced defense-in-depth when both offsite and onsite redundancy are degraded simultaneously.
-
-DG OPERABILITY includes verification of fuel oil supply (7-day supply), starting capability (10-second start to rated speed and voltage), and load-carrying capability.
-
-### DC Sources
-
-<span class="hi-exam">The 125V DC batteries provide control power for switchgear operation, diesel generator starting, reactor trip breaker control, and emergency instrumentation.</span> The 2-hour completion time for a battery reflects the critical importance of DC power for safety functions. The 28V supplies power the reactor trip breaker undervoltage coils — loss of these supplies causes a reactor trip (fail-safe design).
 
 ---
 

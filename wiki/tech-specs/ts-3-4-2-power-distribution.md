@@ -45,6 +45,14 @@ The indicated AXIAL FLUX DIFFERENCE shall be maintained within the target band a
 
 *(Amendment No. 289)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.1 Axial Flux Difference</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.2.1</div>
+The AFD target band limits power distribution peaking caused by xenon redistribution. The penalty deviation tracking system limits the time the core operates outside optimal conditions while providing operational flexibility. The AFD limits ensure fuel centerline melting does not occur and that the peak local power density during a LOCA remains below the ECCS acceptance criteria (peak clad temp <2200°F).
+</div>
+</details>
+
 ---
 
 ## 3/4.2.2 — Heat Flux Hot Channel Factor FQ(Z)
@@ -79,6 +87,14 @@ Where FQ<sup>RTP</sup> = FQ limit at RTP per COLR, P = fraction of RTP, K(Z) = n
 
 *(Amendment No. 289)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.2 Heat Flux Hot Channel Factor FQ(Z)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.2.2</div>
+FQ limits are established in the COLR based on the reload-specific core design and safety analysis. The FQ(Z) limit ensures that the DNB design criterion is met during normal operation and AOOs, and that the peak local power density during a LOCA remains below the ECCS acceptance criteria (peak clad temp <2200°F). The manufacturing and measurement uncertainties applied to measured FQ values account for instrumentation and fabrication tolerances.
+</div>
+</details>
+
 ---
 
 ## 3/4.2.3 — Nuclear Enthalpy Rise Hot Channel Factor F-delta-H
@@ -109,6 +125,14 @@ Where F<sup>RTP</sup><sub>ΔH</sub> = limit at RTP per COLR, P<sub>FΔH</sub> = 
 | 4.2.3.2 | Increase measured F-delta-H by applicable uncertainties per COLR | After each measurement |
 
 *(Amendment No. 282)*
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.3 Nuclear Enthalpy Rise Hot Channel Factor F-delta-H</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.2.3</div>
+F-delta-H limits are established in the COLR based on the reload-specific core design and safety analysis. The F-delta-H limit ensures that the DNB design criterion is met during normal operation and AOOs. The power-dependent formula [1.0 + P<sub>FΔH</sub>(1.0 - P)] allows a higher F-delta-H at reduced power levels because the coolant enthalpy rise is less at lower power, providing additional DNB margin.
+</div>
+</details>
 
 ---
 
@@ -162,6 +186,14 @@ Action b (rod misalignment, QPTR >1.09) requires power reduction within <span cl
 | 4.2.4.1.b | Calculate QPTR during steady-state (alarm inoperable) | Per SFCP |
 | 4.2.4.2 | Confirm normalized symmetric power distribution with one Power Range channel inoperable, above 75% RTP | Per SFCP |
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.4 Quadrant Power Tilt Ratio (QPTR)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.2.4</div>
+The QPTR limit of 1.02 ensures the core power distribution remains consistent with the assumptions used in the safety analyses. The different action times for QPTR >1.09 reflect the severity and identifiability of the cause — rod misalignment is a known cause with a faster required response (30 minutes), while unknown causes require more conservative action (power reduction to <50% RTP) because the extent of the peaking and its impact on safety limits cannot be readily bounded.
+</div>
+</details>
+
 ---
 
 ## 3/4.2.5 — DNB Parameters
@@ -195,17 +227,13 @@ c. RCS Total Flow Rate
 | 4.2.5.1 | Verify each parameter within limits | Per SFCP |
 | 4.2.5.2 | Determine RCS total flow rate by precision heat balance ≥90% RTP, within 24 hrs after steady state | Per SFCP |
 
----
-
-## Bases
-
-The power distribution limits ensure that: (1) the DNB design criterion is met during normal operation and AOOs, (2) fuel centerline melting does not occur, and (3) the peak local power density during a LOCA remains below the ECCS acceptance criteria (peak clad temp <2200°F).
-
-FQ and F-delta-H limits are established in the COLR based on the reload-specific core design and safety analysis.
-
-The QPTR limit of 1.02 ensures the core power distribution remains consistent with the assumptions used in the safety analyses. The different action times for QPTR >1.09 reflect the severity and identifiability of the cause — rod misalignment is a known cause with a faster required response, while unknown causes require more conservative action (power reduction to <50%).
-
-The AFD target band limits power distribution peaking caused by xenon redistribution. The penalty deviation tracking system limits the time the core operates outside optimal conditions while providing operational flexibility.
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.5 DNB Parameters</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.2.5</div>
+The DNB parameter limits ensure that the DNB design criterion is met during normal operation and AOOs. RCS Tavg, pressurizer pressure, and total flow rate are the primary variables that determine the margin to DNB. Maintaining these parameters within limits ensures that the minimum DNBR assumed in the safety analyses is preserved. The precision heat balance surveillance provides a more accurate determination of flow rate than the installed flow instrumentation.
+</div>
+</details>
 
 ---
 

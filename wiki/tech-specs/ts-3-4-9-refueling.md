@@ -23,6 +23,14 @@ The boron concentration of the RCS, fuel storage pool, refueling canal, and refu
 
 **Surveillance:** Verify boron concentration within COLR limit per SFCP. *(Amendment No. 282)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.1 Boron Concentration</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.9.1</div>
+The refueling boron concentration ensures keff ≤ 0.95 with all control rods withdrawn, providing adequate shutdown margin during refueling operations. The boron concentration is specified in the COLR based on the reload-specific core design.
+</div>
+</details>
+
 ## 3/4.9.2.1 — Unborated Water Source Isolation Valves
 
 <div class="callout callout-important">
@@ -68,6 +76,14 @@ LCO 3.0.3 not applicable.
 
 *(Amendment No. 292)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.2.2 Source Range Instrumentation</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.9.2.2</div>
+Two source range monitors provide redundant monitoring of core reactivity during refueling. With both inoperable, boron concentration verification every 12 hours provides an alternate means of monitoring reactivity status.
+</div>
+</details>
+
 ## 3/4.9.4 — Containment Building Penetrations
 
 <div class="callout callout-important">
@@ -96,6 +112,14 @@ The equipment hatch does not need to be closed during irradiated fuel movement �
 </div>
 
 *(Amendment No. 282)*
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.4 Containment Building Penetrations</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.9.4</div>
+The requirements ensure containment closure capability during fuel movement to limit potential release from a fuel handling accident. The equipment hatch closure capability (not actual closure) allows refueling operations while maintaining the ability to establish containment integrity if needed.
+</div>
+</details>
 
 ## 3/4.9.8 — Residual Heat Removal and Coolant Circulation
 
@@ -145,6 +169,14 @@ Two RHR loops are required when water level drops below 23 feet (reduced invento
 
 *(Amendment No. 300)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.8 RHR and Coolant Circulation</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.9.8</div>
+One operating RHR loop ensures adequate decay heat removal and provides mixing of the borated coolant to prevent stratification. The 1000 gpm minimum flow and 140°F temperature limit ensure adequate cooling margin. Two OPERABLE loops at low water level (less than 23 feet above vessel flange) provide redundancy when the reduced water inventory provides less thermal margin.
+</div>
+</details>
+
 ## 3/4.9.10 — Water Level — Reactor Vessel
 
 <div class="callout callout-important">
@@ -164,6 +196,14 @@ At least <span class="hi">23 feet of water</span> shall be maintained over the t
 
 *(Amendment No. 282)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.10 Water Level — Reactor Vessel</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.9.10</div>
+The 23-foot water level above irradiated fuel provides adequate shielding for personnel radiation protection and provides a source of water for iodine removal in the event of a fuel handling accident.
+</div>
+</details>
+
 ## 3/4.9.11 — Storage Pool Water Level
 
 <div class="callout callout-important">
@@ -177,29 +217,13 @@ At least <span class="hi">23 feet of water</span> shall be maintained over the t
 
 **Surveillance:** Verify water level per SFCP when irradiated fuel assemblies are in the pool. *(Amendment No. 282)*
 
----
-
-## Bases
-
-### Boron Concentration (3/4.9.1)
-
-The refueling boron concentration ensures keff ≤ 0.95 with all control rods withdrawn, providing adequate shutdown margin during refueling operations. The boron concentration is specified in the COLR based on the reload-specific core design.
-
-### Source Range Monitors (3/4.9.2.2)
-
-Two source range monitors provide redundant monitoring of core reactivity during refueling. With both inoperable, boron concentration verification every 12 hours provides an alternate means of monitoring reactivity status.
-
-### Containment Penetrations (3/4.9.4)
-
-The requirements ensure containment closure capability during fuel movement to limit potential release from a fuel handling accident. The equipment hatch closure capability (not actual closure) allows refueling operations while maintaining the ability to establish containment integrity if needed.
-
-### RHR and Coolant Circulation (3/4.9.8)
-
-One operating RHR loop ensures adequate decay heat removal and provides mixing of the borated coolant to prevent stratification. The 1000 gpm minimum flow and 140°F temperature limit ensure adequate cooling margin. Two OPERABLE loops at low water level provide redundancy when the reduced water inventory provides less thermal margin.
-
-### Water Level (3/4.9.10 and 3/4.9.11)
-
-The 23-foot water level above irradiated fuel provides adequate shielding for personnel radiation protection and provides a source of water for iodine removal in the event of a fuel handling accident.
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.11 Storage Pool Water Level</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.9.11</div>
+The 23-foot water level above irradiated fuel assemblies in the storage pool provides adequate shielding for personnel radiation protection and provides a source of water for iodine removal in the event of a fuel handling accident.
+</div>
+</details>
 
 ---
 

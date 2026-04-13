@@ -39,6 +39,14 @@ LCO 3.0.3 not applicable.
 
 *(Amendment No. 282)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.11.1.4 Liquid Holdup Tanks</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.11.1.4</div>
+The 10-curie limit on outdoor temporary tanks ensures that in the event of an uncontrolled release of the tank contents, the resulting concentrations at the nearest unrestricted area boundary would be within the limits of 10CFR20.
+</div>
+</details>
+
 ---
 
 ## 3/4.11.2.5 — Explosive Gas Mixture
@@ -75,17 +83,13 @@ The 2% oxygen limit prevents formation of a flammable/explosive gas mixture. Hyd
 
 *(Amendment No. 282)*
 
----
-
-## Bases
-
-### Liquid Holdup Tanks (3/4.11.1.4)
-
-The 10-curie limit on outdoor temporary tanks ensures that in the event of an uncontrolled release of the tank contents, the resulting concentrations at the nearest unrestricted area boundary would be within the limits of 10CFR20.
-
-### Explosive Gas Mixture (3/4.11.2.5)
-
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.11.2.5 Explosive Gas Mixture</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.11.2.5</div>
 The concentration of oxygen in the waste gas holdup system is limited to ensure that the mixture remains below the flammability limit for hydrogen-oxygen. The 2% oxygen limit provides margin below the lower flammable limit. The continuous monitoring requirement ensures early detection of increasing oxygen concentration. Hydrogen in the waste gas system is produced by radiolysis of reactor coolant water.
+</div>
+</details>
 
 ---
 

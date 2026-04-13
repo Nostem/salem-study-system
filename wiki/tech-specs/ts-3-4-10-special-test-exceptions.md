@@ -35,6 +35,14 @@ The SHUTDOWN MARGIN requirement of Spec 3.1.1.1 may be suspended for measurement
 
 *(Amendment No. 282)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.1 Shutdown Margin</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.10.1</div>
+This special test exception provides that a minimum amount of reactivity equivalent to the highest estimated control rod worth is available for trip insertion during rod worth and shutdown margin measurements. This ensures the reactor can be shut down even with the most reactive rod stuck out during these tests.
+</div>
+</details>
+
 ---
 
 ## 3/4.10.2 — Group Height, Insertion and Power Distribution Limits
@@ -61,6 +69,14 @@ b. Limits of Specs 3.2.2 (FQ) and 3.2.3 (F-delta-H) are maintained
 *Note: A 100% RTP limit is permissible during Power Coefficient and Load Swing tests as part of Initial Startup Test Program, with specific conditions on axial offset, Bank D position, and test duration ≤2 hours each, completed before 3000 MWD/MTU.*
 
 *(Amendment No. 282)*
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.2 Group Height, Insertion and Power Distribution Limits</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.10.2</div>
+The special test exception permits reactor physics tests to verify core nuclear parameters (rod worth, boron worth, critical boron concentration) match predictions following refueling. The compensating requirements — reduced power (≤85% RTP) and maintained FQ/F-delta-H limits — ensure adequate safety margins during testing even with other power distribution specs suspended.
+</div>
+</details>
 
 ---
 
@@ -98,6 +114,14 @@ The minimum temperature for physics tests is <span class="hi">531°F</span> (TS 
 
 *(Amendment No. 282)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.3 Physics Tests</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.10.3</div>
+The special test exception permits low-power reactor physics tests to verify core nuclear parameters (MTC, rod worth) match predictions following refueling. The compensating requirements — reduced power (≤5% RTP), reduced trip setpoints (≤25% RTP), and minimum Tavg (531°F) — ensure adequate safety margins during testing. The 531°F minimum temperature for low-power physics tests is lower than the normal 541°F minimum (3.1.1.4) because the physics tests are conducted at very low power where the consequences of a cooldown event are less severe.
+</div>
+</details>
+
 ---
 
 ## 3/4.10.4 — No Flow Tests
@@ -122,23 +146,13 @@ b. Intermediate and Power Range trip setpoints set ≤ <span class="hi">25% RTP<
 
 *(Amendment No. 282)*
 
----
-
-## Bases
-
-### Shutdown Margin (3/4.10.1)
-
-This special test exception provides that a minimum amount of reactivity equivalent to the highest estimated control rod worth is available for trip insertion during rod worth and shutdown margin measurements. This ensures the reactor can be shut down even with the most reactive rod stuck out during these tests.
-
-### Physics Tests (3/4.10.2 and 3/4.10.3)
-
-The special test exceptions permit reactor physics tests to verify core nuclear parameters (MTC, rod worth, boron worth, critical boron concentration) match predictions following refueling. The compensating requirements — reduced power, reduced trip setpoints, and available shutdown capability — ensure adequate safety margins during testing.
-
-The 531°F minimum temperature for low-power physics tests (3.10.3) is lower than the normal 541°F minimum (3.1.1.4) because the physics tests are conducted at very low power (≤5% RTP) where the consequences of a cooldown event are less severe.
-
-### No Flow Tests (3/4.10.4)
-
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.4 No Flow Tests</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.10.4</div>
 Allows measurement of isothermal and power coefficients with fewer than all RCS loops operating. Power is limited below the P-7 interlock to ensure automatic reactor trips on loss of flow remain available.
+</div>
+</details>
 
 ---
 
