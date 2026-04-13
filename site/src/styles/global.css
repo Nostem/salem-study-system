@@ -153,6 +153,18 @@ html {
   background: rgba(248, 113, 113, 0.06);
 }
 .callout-trap .callout-label { color: #f87171; }
+.callout-bases { border-color: #a78bfa; background: rgba(167, 139, 250, 0.06); }
+.callout-bases .callout-label { color: #a78bfa; }
+
+/* ESF function heading emphasis */
+.esf-function {
+  font-size: 14px;
+  font-weight: 700;
+  color: #c8cdd5;
+  border-left: 3px solid #a78bfa;
+  padding-left: 10px;
+  margin: 16px 0 8px;
+}
 .callout-jpm {
   border-color: #34d399;
   background: rgba(52, 211, 153, 0.06);

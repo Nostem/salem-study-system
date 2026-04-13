@@ -64,6 +64,14 @@ The Reactor Trip System instrumentation channels and interlocks shown in Table 3
 | Underfrequency — RCPs | 1/bus | 1/bus x 2 | 1/bus x 2 | 1 |
 | Turbine Trip (Auto Stop Oil) | 3 | 2 | 2 | 1 |
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.1 RTS Instrumentation</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.3.1</div>
+The OPERABILITY of the RTS instrumentation ensures that: (1) the associated reactor trip action will be initiated when the parameter monitored by each channel reaches its setpoint, (2) the specified coincidence logic is maintained, and (3) sufficient redundancy is maintained to permit a channel to be out of service for testing or maintenance.
+</div>
+</details>
+
 ---
 
 ## 3/4.3.2 — ESF Actuation System Instrumentation
@@ -75,7 +83,11 @@ The ESFAS instrumentation channels and interlocks shown in Table 3.3-3 shall be 
 
 ### ESF Actuation Setpoints (Table 3.3-4) — Complete
 
+<div class="esf-function">
+
 #### 1. Safety Injection
+
+</div>
 
 | Functional Unit | Trip Setpoint | Allowable Value | Source |
 |----------------|---------------|-----------------|--------|
@@ -87,7 +99,11 @@ The ESFAS instrumentation channels and interlocks shown in Table 3.3-3 shall be 
 | Steam Flow High (2 lines) coincident with Tavg Lo-Lo | ≥40% steam flow function; Tavg ≤<span class="val-trip">543°F</span> | ≥44% function; Tavg ≤541°F | TS T3.3-4 |
 | Steam Flow High coincident with Steam Line Pressure Low | ≤<span class="val-trip">600 psig</span> steam line pressure | ≤579 psig | TS T3.3-4 |
 
+<div class="esf-function">
+
 #### 2. Containment Spray
+
+</div>
 
 | Functional Unit | Trip Setpoint | Allowable Value | Source |
 |----------------|---------------|-----------------|--------|
@@ -95,7 +111,11 @@ The ESFAS instrumentation channels and interlocks shown in Table 3.3-3 shall be 
 | Automatic Actuation Logic | N/A | N/A | TS T3.3-4 |
 | Containment Pressure — High-High | ≤<span class="val-trip">15.0 psig</span> | ≤16.0 psig | TS T3.3-4 |
 
+<div class="esf-function">
+
 #### 3. Containment Isolation
+
+</div>
 
 | Functional Unit | Trip Setpoint | Allowable Value | Source |
 |----------------|---------------|-----------------|--------|
@@ -106,7 +126,11 @@ The ESFAS instrumentation channels and interlocks shown in Table 3.3-3 shall be 
 | Containment Ventilation Isolation — Manual | N/A | N/A | TS T3.3-4 |
 | Containment Ventilation Isolation — Gaseous Radioactivity High | Per Table 3.3-6 | Per Table 3.3-6 | TS T3.3-4 |
 
+<div class="esf-function">
+
 #### 4. Steam Line Isolation
+
+</div>
 
 | Functional Unit | Trip Setpoint | Allowable Value | Source |
 |----------------|---------------|-----------------|--------|
@@ -116,7 +140,11 @@ The ESFAS instrumentation channels and interlocks shown in Table 3.3-3 shall be 
 | Steam Flow High (2 lines) coincident with Tavg Lo-Lo | ≥40% steam flow function; Tavg ≤<span class="val-trip">543°F</span> | ≥44% function; Tavg ≤541°F | TS T3.3-4 |
 | Steam Flow High coincident with Steam Line Pressure Low | ≤<span class="val-trip">600 psig</span> steam line pressure | ≤579 psig | TS T3.3-4 |
 
+<div class="esf-function">
+
 #### 5. Turbine Trip and Feedwater Isolation
+
+</div>
 
 | Functional Unit | Trip Setpoint | Allowable Value | Source |
 |----------------|---------------|-----------------|--------|
@@ -124,18 +152,30 @@ The ESFAS instrumentation channels and interlocks shown in Table 3.3-3 shall be 
 | Automatic Actuation Logic | N/A | N/A | TS T3.3-4 |
 | SG Water Level — High-High | ≤<span class="val-trip">67%</span> NR span (each SG) | ≤68% NR span | TS T3.3-4 |
 
+<div class="esf-function">
+
 #### 6. Safeguards Equipment Control System (SEC)
+
+</div>
 
 See Functions 1 and 7 for all initiation functions.
 
+<div class="esf-function">
+
 #### 7. Undervoltage — Vital Bus
+
+</div>
 
 | Functional Unit | Trip Setpoint | Allowable Value | Source |
 |----------------|---------------|-----------------|--------|
 | Loss of Voltage | ≥<span class="val-trip">65%</span> of bus voltage | ≥70% of bus voltage | TS T3.3-4 |
 | Sustained Degraded Voltage | ≥<span class="val-trip">94%</span> of bus voltage for ≤15 sec | ≥94.6% for <13 sec | TS T3.3-4 |
 
+<div class="esf-function">
+
 #### 8. Auxiliary Feedwater
+
+</div>
 
 | Functional Unit | Trip Setpoint | Allowable Value | Source |
 |----------------|---------------|-----------------|--------|
@@ -146,7 +186,11 @@ See Functions 1 and 7 for all initiation functions.
 | Trip of Main Feedwater Pump | N/A | N/A | TS T3.3-4 |
 | Station Blackout | See Functions 6 and 7 | See Functions 6 and 7 | TS T3.3-4 |
 
+<div class="esf-function">
+
 #### 9. Semiautomatic Transfer to Recirculation
+
+</div>
 
 | Functional Unit | Trip Setpoint | Allowable Value | Source |
 |----------------|---------------|-----------------|--------|
@@ -203,6 +247,14 @@ Safety Injection actuates on Hi containment pressure of <span class="val-trip">4
 Motor-driven AFW pumps start on Lo-Lo level in ANY 1 steam generator (2/3 per SG). Turbine-driven AFW pump starts on Lo-Lo level in ANY 2 steam generators (2/3 per SG in 2 SGs). The turbine-driven pump requires a more severe condition (2 SGs affected) before starting.
 </div>
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.2 ESF Actuation Instrumentation</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.3.2</div>
+The OPERABILITY of the ESFAS instrumentation ensures that: (1) the associated ESF action will be initiated when required, (2) the specified coincidence logic and actuation relay logic are maintained, and (3) sufficient redundancy is maintained to permit a channel to be out of service for testing or maintenance consistent with the ACTION requirements. The different coincidence logic (2/3 for SI on containment pressure Hi vs 2/4 for containment spray on Hi-Hi) and different setpoints (4.0 psig vs 15.0 psig) reflect the graded safety approach — more protective functions require lower thresholds, while more severe actuations (spray, Phase B) require higher confirmation.
+</div>
+</details>
+
 ---
 
 ## 3/4.3.3 — Monitoring Instrumentation
@@ -222,20 +274,6 @@ Post-accident monitoring instrumentation per Regulatory Guide 1.97 including RCS
 ### Power Distribution Monitoring System (3.3.3.5)
 
 Monitors core power distribution for verification of FQ and F-delta-H limits.
-
----
-
-## Bases
-
-### RTS Instrumentation (3/4.3.1)
-
-The OPERABILITY of the RTS instrumentation ensures that: (1) the associated reactor trip action will be initiated when the parameter monitored by each channel reaches its setpoint, (2) the specified coincidence logic is maintained, and (3) sufficient redundancy is maintained to permit a channel to be out of service for testing or maintenance.
-
-### ESF Actuation Instrumentation (3/4.3.2)
-
-The OPERABILITY of the ESFAS instrumentation ensures that: (1) the associated ESF action will be initiated when required, (2) the specified coincidence logic and actuation relay logic are maintained, and (3) sufficient redundancy is maintained to permit a channel to be out of service for testing or maintenance consistent with the ACTION requirements.
-
----
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-3.pdf" target="_blank">View Tech Spec PDF (61 pages — full tables)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-3.pdf" target="_blank">View Bases PDF</a>
 
