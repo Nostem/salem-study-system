@@ -15,6 +15,14 @@ Provides guidance for response to reactor coolant pump abnormal conditions.
 ## Continuous Action Summary (Attachment 1)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q04</div>
+AB.RCP-0001 Attachment 2 CAS requires stopping RCPs for motor winding temp <span class="val-trip">>302°F</span>. Common distractors:<br>
+- Motor bearing temp 170°F — does NOT exceed CAS limit of <span class="val-trip">>175°F</span><br>
+- Motor flange vibration 3 mils — entry condition for AB.RCP-0001 but CAS trip requires <span class="val-trip">>5 mils</span><br>
+- CC-131 closure (thermal barrier valve) alone — CAS requires <span class="hi-exam">concurrent loss of BOTH seal injection AND thermal barrier CCW</span> to secure within 2 minutes; loss of thermal barrier CCW alone does not require immediate trip
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q27</div>
 Trip reactor and stop affected RCP if ANY of the following validated conditions exist:<br>
 - CCW flow lost to ALL RCPs AND not restored within <span class="val-trip">5 minutes</span><br>
@@ -53,9 +61,15 @@ Attachment 1: #1 seal leak-off flow <span class="hi-exam">>= 6 gpm</span> indica
 23 RCP motor bearing oil level low. Motor bearing temperatures rising above <span class="hi-exam">175 degF</span> trip criterion and vibrations > <span class="hi-exam">5 mils</span> per AB.RCP-0001. CRS directs reactor trip and stop 23 RCP IAW Attachment 2. This initiates entry into EOP-TRIP-1 where the main turbine then fails to trip.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q28</div>
+RCP #2 seal failure diagnostics: standpipe level HIGH alarm combined with #1 seal leak-off flow LOWERED = <span class="hi-exam">#2 seal failure</span>. <span class="hi-trap">Standpipe level LOW alarm = #3 seal problem. Do not confuse standpipe high vs low alarm implications.</span>
+</div>
+
 ## Connections
 - Related systems: [[RCPs]], [[CCW]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
+- Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
+- Related exam questions: [[2020 Q04]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

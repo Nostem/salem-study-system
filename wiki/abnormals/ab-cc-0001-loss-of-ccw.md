@@ -42,8 +42,13 @@ Per S1.OP-AB.CC-0001, components supplied by CCW with pressure less than CCW hea
 Attachment 1: CCW surge tank level at <span class="hi-exam">5%</span> requires <span class="hi-exam">reactor trip, tripping ALL RCPs, isolating letdown, and swapping charging suction to RWST</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q34</div>
+Thermal barrier HX leak alarm pattern: CC HDR ACTIVITY HI + SURGE TANK LEVEL HI-LO + <span class="hi-exam">DISCHARGE FLOW LO = unique signature of 2CC131 automatic closure</span>. The DISCHARGE FLOW HI alarm fires first (RCS in-leakage increases CCW flow), auto-closes 2CC131, then DISCHARGE FLOW LO follows. The Hi alarm was acknowledged and is presently clear. <span class="hi-trap">Letdown HX leak would show activity and level alarms but NOT the Discharge Flow Lo pattern — no auto-isolation valve on the letdown HX CCW line.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[RCPs]]
-- Related exam questions: [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2020 Q34]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

@@ -78,8 +78,30 @@ RCP thermal barrier rupture indications: (1) CCW radiation monitors (R17 A/B) in
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q04</div>
+AB.RCP-0001 Attachment 2 CAS trip criteria — distinguishing near-miss values from actual limits:<br>
+- Motor winding temp <span class="val-trip">>302°F</span> → trip RCP (320°F exceeds this)<br>
+- Motor bearing temp <span class="val-trip">>175°F</span> → trip RCP (<span class="hi-trap">170°F does NOT exceed this — common distractor</span>)<br>
+- Motor flange vibration <span class="val-trip">>5 mils</span> → trip RCP (<span class="hi-trap">3 mils is an AB.RCP-0001 entry condition, NOT a CAS trip criterion</span>)<br>
+- CC-131 closure (thermal barrier valve) alone for >2 min does NOT require tripping the RCP — CAS requires <span class="hi-exam">concurrent loss of seal injection AND thermal barrier CCW</span> to secure RCPs within 2 minutes.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q27</div>
 Per AB.RCP-0001: loss of CCW to motor bearings — <span class="hi-exam">5 minutes to restore CCW or trip reactor and stop RCP</span>. Motor bearing temp limit: <span class="val-trip">175°F</span>. Additional trip criteria: motor winding temp ><span class="val-trip">302°F</span>, seal outlet ><span class="val-trip">190°F</span>, shaft vibration ><span class="val-trip">20 mils</span>, #1 seal leakoff <span class="val-trip">&lt;0.8 or ≥6 gpm</span>. <span class="hi-trap">165°F is the ARP limit that directs entry into AB.RCP-0001, NOT the trip limit (175°F).</span>
+</div>
+
+### Seal Failure Diagnostics Summary
+
+| Indication | Seal Problem |
+|---|---|
+| Standpipe Level HI + #1 seal leak-off LOW | <span class="hi-exam">#2 seal failure</span> |
+| Standpipe Level LO | <span class="hi-exam">#3 seal problem</span> |
+| #1 seal leak-off >= 6 gpm | <span class="hi-exam">#1 seal failure</span> |
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q28</div>
+RCP STANDPIPE LEVEL HI alarm with #1 seal leak-off flow lowered = <span class="hi-exam">#2 seal failure indication</span>. Both standpipe level high AND reduced #1 seal leak-off flow confirm #2 seal failure. <span class="hi-trap">Standpipe level LOW is a #3 seal indication — do not confuse high vs low standpipe alarms. High standpipe = #2 seal; Low standpipe = #3 seal.</span>
 </div>
 
 - **Seal inlet temp limit:** <span class="val-trip">≥225°F</span> — do not restore seal injection (prevents #1 seal thermal shock damage)
@@ -148,7 +170,7 @@ RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <s
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
+- Related exam questions: [[2020 Q04]], [[2020 Q28]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related JPMs: [[2022 JPM Sim-d]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

@@ -58,6 +58,11 @@ RCP Thermal Barrier rupture indications: <span class="hi-exam">CCW surge tank le
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q34</div>
+Thermal barrier HX leak diagnostic: the <span class="hi-exam">"Discharge Flow Lo" alarm on 2CC1 is the unique indicator of automatic 2CC131 (RCP Thermal Barrier Valve) closure</span>. CC HDR ACTIVITY HI + SURGE TANK LEVEL HI-LO + DISCHARGE FLOW LO = thermal barrier HX leak. The Discharge Flow Hi alarm fires first (high CCW flow from RCS in-leakage) triggering auto-closure of 2CC131, then DISCHARGE FLOW LO follows. <span class="hi-trap">Letdown HX and RHR HX are also high-pressure CCW in-leakage sources, but they would NOT cause the "Discharge Flow Lo" alarm. RHR HX is not in service at 100% power. Seal Water HX is NOT a high-pressure source — #1 seal leakoff pressure is below CCW pressure.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q33</div>
 <span class="hi-exam">SEC Mode 3 (SI + LOOP): all CCW pumps are tripped</span> — CCW pumps are NOT sequenced onto EDGs due to loading concerns. <span class="hi-exam">SW to CCW HXs is auto-isolated to prevent SW pump runout</span> with only 3 SW pumps available on emergency power. CCW pumps are started later per EOP-APPX-1 when needed for cold leg recirculation.
 </div>
@@ -65,6 +70,11 @@ RCP Thermal Barrier rupture indications: <span class="hi-exam">CCW surge tank le
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q51</div>
 <span class="hi-exam">SW122 (SW Inlet Control Valve to CCW HX) fails OPEN on loss of air</span> (fails closed on loss of 125VDC). When SW122 fails open: increased SW flow through CCW HX → CCW temperature lowers → RHR HX outlet temperature lowers → <span class="hi-exam">RCS cooldown rate rises</span>. Per AB.CA-0001, SW122 can be manually operated.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q35</div>
+SEC Mode III (Blackout + SI): CCW pumps are <span class="hi-exam">stripped and NOT reloaded</span>. Additionally, <span class="hi-exam">a pump selected for AUTO is transferred to Manual</span> during Modes II, III, and VI. After successful SEC loading: all CCW pumps stopped, all in Manual. <span class="hi-trap">Trap: Mode II (Blackout only) DOES restart CCW pumps. Mode I (SI only) retains AUTO selection. Only Modes II, III, and VI force AUTO to Manual.</span>
 </div>
 
 ## Tech Spec LCOs
@@ -79,5 +89,5 @@ SFP Heat Exchanger tube rupture: components supplied by CCW with pressure less t
 
 ## Connections
 
-- Related exam questions: [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2020 Q34]], [[2020 Q35]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

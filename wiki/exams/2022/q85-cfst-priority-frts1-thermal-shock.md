@@ -52,5 +52,5 @@ Which ONE of the following describes the NEXT CRS action?
 ## Connections
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[Excore NIs]]
-- Related EOPs: [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
+- Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
 - Related exam: [[2022 NRC Written Exam]]

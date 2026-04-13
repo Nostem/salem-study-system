@@ -42,7 +42,6 @@ SEC Mode III (Blackout + SI) CCW pump behavior: <span class="hi-exam">CCW pumps 
 
 ## Connections
 
-- Related systems: [[4KV]], [[EDGs]], [[ECCS]]
-- Related systems: [[CCW]]
+- Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]]
 - Related exam questions: [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

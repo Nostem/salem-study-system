@@ -24,7 +24,8 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 
 ## Major Components
 
-- **Centrifugal Charging Pumps:** 2 per unit. Also serve as high-head SI pumps during LOCA. Design pressure 2800 psig, design flow 150 gpm, shutoff head 2670 psig. (UFSAR T6.3-5)
+- **Centrifugal Charging Pumps:** 2 per unit (21 and 22). Also serve as high-head SI pumps during LOCA. Design pressure 2800 psig, design flow 150 gpm, shutoff head 2670 psig. (UFSAR T6.3-5)
+- **Positive Displacement Charging Pump:** 1 per unit (23). Powered from 460V bus.
 - **Letdown Orifices:** Control letdown flow rate
 - **Letdown Heat Exchanger:** Cools letdown flow (via CCW) before processing
 - **Mixed Bed Demineralizers:** Remove ionic impurities and fission products
@@ -44,6 +45,31 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q29</div>
 VCT level control logic: <span class="hi-exam">only LT-112 actuates automatic make-up</span>. Automatic swapover to RWST requires <span class="hi-exam">2/2 coincidence (LT-112 AND LT-114) at low-low VCT level</span>. CV35 (high level divert valve) opens on LT-112 high signal. If LT-112 fails HIGH: CV35 opens and drains the VCT, auto make-up will NOT actuate (controller sees high level), and auto swapover to RWST will NOT occur (2/2 coincidence not met with LT-112 failed high). The charging pump loses suction as VCT empties, resulting in <span class="hi-exam">charging pump cavitation and damage</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q12</div>
+VCT level monitoring and overpressure protection: <span class="hi-exam">LT-114 is only available in the control room via the plant computer</span> (NOT on the control console). LT-114 is also located in Panel 216 in charging pump alley. VCT overpressure protection is provided by <span class="hi-exam">2CV241, VCT relief valve, set to <span class="val-trip">75 psig</span>, relieving to the CVCS HUT</span>. <span class="hi-trap">When either VCT level controller (LT-112 or LT-114) is placed in MANUAL, it overrides the auto function of the other controller. With LT-112 in MANUAL FLOW TO VCT, the LT-114 Hagen controller will NOT automatically divert 2CV35 to the CVCS HUT at 77-87% VCT level.</span>
+</div>
+
+## Charging Pump Power Supplies
+
+| Pump | Power Supply | Source |
+|---|---|---|
+| 21 CV Pump | <span class="hi">2B 4KV Vital Bus</span> | NOS05CVCS00-17 |
+| 22 CV Pump | <span class="hi">2C 4KV Vital Bus</span> | NOS05CVCS00-17 |
+| 23 CV Pump | <span class="hi">2A 460V Bus</span> | NOS05CVCS00-17 |
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q29</div>
+On loss of 2C 4KV bus (bus differential): <span class="hi-exam">22 CV Pump is lost (powered from 2C)</span>. Available charging pumps: <span class="hi-exam">21 CV Pump (2B 4KV bus) and 23 CV Pump (2A 460V bus)</span>. <span class="hi-trap">23 CV Pump is powered from the 2A 460V bus, NOT 2C 4KV — a common distractor. It remains available on loss of 2C.</span>
+</div>
+
+## Charging Flow Paths and SI Isolation
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q30</div>
+Post-SI effect on CV71 (Seal Pressure Control Valve): <span class="hi-exam">CV-68 and CV-69 (Charging Header Isolation Valves) go CLOSED on an SI signal</span>. These valves are in series with the CV-71 flow path to the charging header/regenerative HX. Therefore, <span class="hi-exam">throttling CV-71 after SI has NO effect on charging pump discharge pressure or total charging flow</span> — the flow path through CV-71 is already isolated by CV-68/69. <span class="hi-trap">During normal power alignment, throttling CV-71 closed would raise charging pump discharge pressure and redirect flow to RCP seals. After SI, this relationship does not apply because the downstream path is isolated.</span>
 </div>
 
 ## Charging and Letdown
@@ -67,6 +93,11 @@ Letdown temperature auto-divert: 2CV21 automatically diverts letdown flow to VCT
 - **Excess letdown:** Alternate path available if normal letdown is unavailable
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q05</div>
+Excess letdown flow path during SI: <span class="hi-exam">Excess Letdown Isolation Valves (2CV278, 2CV131) do NOT receive automatic closure signals</span> on SI/Phase A. <span class="hi-exam">Seal Return Isolation Valves (2CV284, 2CV116) close automatically on Phase A</span>. After SI, seal return path is blocked → excess letdown flow continues through CV278/CV131 but downstream path is closed → <span class="hi-exam">CV115 (Seal Return Relief Valve) cycles, relieving flow to the PRT (not RCDT)</span>. CV134 (3-way valve directing excess letdown to VCT or RCDT) <span class="hi-exam">fails to VCT on loss of power and air</span>. <span class="hi-trap">Trap: eventually control air bleeddown from Phase A CA-330 isolation may fail CV278/CV131 closed, but this takes considerable time — the immediate effect is continued flow relieving to PRT via CV115.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q6</div>
 23 Charging Pump speed controller has a low speed stop maintaining <span class="hi-exam">minimum charging flow of <span class="val-normal">47 gpm</span> for RCP seal injection</span>. When MFC demand lowers, charging flow stops at 47 gpm (not zero). Per AB.CVC-0001 step 3.109, if MFC malfunction with 23 Charging Pump in service, <span class="hi-exam">take manual control of 23 Charging Pump Speed Controller</span>. <span class="hi-trap">Not 2CV55 — 2CV55 only controls flow with centrifugal charging pumps, not the positive displacement 23 Charging Pump.</span>
 </div>
@@ -81,6 +112,11 @@ CV71 acts as a backpressure control valve affecting both charging and seal injec
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q19</div>
 Rapid boration via BAT pump and 2CV175 requires <span class="hi-exam">adequate flow of 36 gpm</span>. If rapid boration flow is inadequate (e.g., only 20 gpm indicated), per EOP-TRIP-2: stop BAT pump, realign charging pump suction to the RWST, and maintain charging flow > 87 gpm. Note: EOP-FRSM-1 has a different pathway (cold leg injection via BIT valves) — do not confuse with EOP-TRIP-2 actions.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q21</div>
+EOP-TRIP-2 rapid boration when 2CV175 fails to open: <span class="hi-exam">OPEN 2SJ1 and 2SJ2 (RWST to charging suction), then CLOSE 2CV40 and 2CV41 (VCT to charging suction)</span> to realign charging suction from VCT to RWST. <span class="hi-trap">Alternate rapid boration paths via 2CV174 (Blender Bypass), 2CV172/2CV185 (normal boration), or 2CV172/2CV181 (blender to VCT) exist in S2.OP-SO.CVC-0008 but are NOT directed in TRIP-2. Also note: 2CV181 directs boration flow to the top of VCT (spray nozzle) — boration flow is never directed there.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -142,8 +178,8 @@ Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and
 
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]]
-- Related exam questions: [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
+- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
+- Related exam questions: [[2020 Q05]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

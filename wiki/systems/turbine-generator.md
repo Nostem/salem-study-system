@@ -40,6 +40,11 @@ Converts steam energy from the steam generators into electrical energy. (UFSAR 1
 (UFSAR T7.2-1)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q01</div>
+OHA F-36 (TURB TRIP & P-9) confirms turbine trip above P-9: either <span class="hi-exam">4/4 Turbine Stop Valves ≤ 85% open OR 2/3 Auto Stop Oil Pressures ≤ <span class="val-trip">50 psig</span></span>. On 2RP4, turbine stop valve closed lights: <span class="hi-exam">LIT solid = both SSPS trains agree valve closed; FLASHING = train disagreement</span>. Redundant trip solenoids: 20-ET, 20-AST-1, 20-AST-2. <span class="hi-trap">45 psig is the Tech Spec value for auto stop oil — the actual setpoint is ≤ 50 psig.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q15</div>
 Grid disturbance — loss of a Salem unit causes <span class="hi-exam">500KV switchyard voltage to lower</span>. As grid voltage drops, remaining generating units share reactive load: <span class="hi-exam">Unit 2 MVARs rise</span> to compensate for the lost reactive support from the tripped unit. (Ref: S2.OP-AB.GRID-0001)
 </div>
@@ -70,6 +75,6 @@ ATWS turbine trip verification (EOP-FRSM-1 Step 6): confirmed by <span class="hi
 
 ## Connections
 
-- Related exam questions: [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]]
+- Related exam questions: [[2020 Q01]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

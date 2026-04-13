@@ -60,6 +60,67 @@ questions:
     ka_importance: 2.8
     type: RO
     tier_group: "Tier 1/Group 1"
+  - number: 11
+    topic: "EDG Loading Limits for PZR Heaters"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - diesel-generators
+      - pressurizer
+    ka: "000056G2.1.25"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 12
+    topic: "Loss of VIB VCT Level and Overpressure Protection"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+      - 115v-ac
+    ka: "000057AA2.13"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 13
+    topic: "Loss of 2A 125 VDC Bus Equipment Impact"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem 2019 NRC Exam - Q59"
+    systems:
+      - dc-power
+      - diesel-generators
+    ka: "000058AA2.03"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 14
+    topic: "Service Water Bay Leak and Tech Spec"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - service-water
+    tech_specs:
+      - ts-3-4-7-plant-systems
+      - ts-3-4-0-applicability
+    ka: "000062G2.2.40"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 15
+    topic: "Loss of Control Air ECAC Actions"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank - Salem 16-01 NRC Exam - Q61"
+    systems:
+      - control-air
+    ka: "000065AA1.04"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
   - number: 16
     topic: "LOCA Outside Containment Indication"
     answer: A
@@ -127,6 +188,66 @@ questions:
     ka_importance: 3.9
     type: RO
     tier_group: "Tier 1/Group 2"
+  - number: 26
+    topic: "SMM Adverse Containment"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - incores
+      - containment-systems
+      - radiation-monitoring
+    ka: "WE16EK2.1"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 27
+    topic: "LOCA Voiding Indication"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - 2012 Harris NRC Exam / 2019 BV2 NRC Exam"
+    systems:
+      - reactor-coolant-system
+      - pressurizer
+    ka: "WE03EK1.3"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 28
+    topic: "RCP Standpipe Level Hi"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified - Salem Vision Database"
+    systems:
+      - reactor-coolant-pumps
+    ka: "003000A1.10"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 29
+    topic: "Charging Pump Power Supplies"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+      - 4kv
+    ka: "004000K2.03"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 30
+    topic: "CVCS CV71 Post-SI"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem Vision Database"
+    systems:
+      - chemical-and-volume-control-system
+      - emergency-core-cooling-systems
+    ka: "004000G2.1.28"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
   - number: 31
     topic: "RHR HX Cooldown Rate Control"
     answer: D
@@ -247,6 +368,66 @@ questions:
       - containment-systems
     ka: "022000A1.01"
     ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 41
+    topic: "ECCS Semi-Automatic Switchover"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Salem Vision Database"
+    systems:
+      - emergency-core-cooling-systems
+      - containment-spray
+    ka: "026000K4.08"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 42
+    topic: "EOP-LOCA-5 Table C CS Pumps Required"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - containment-spray
+      - containment-fan-coil-units
+    ka: "026000G2.1.25"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 43
+    topic: "MS10 Atmospheric Relief Valve Flow and AB.STM-0001"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - main-steam
+    ka: "039000K1.02"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 44
+    topic: "AFW Pump Auto Start on Both SGFP Trip"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank, Salem 2015 NRC Exam"
+    systems:
+      - auxiliary-feedwater
+      - feedwater-and-condensate
+    ka: "059000K1.02"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 45
+    topic: "Loss of Control Air BF19 Closure"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - control-air
+      - feedwater-and-condensate
+    ka: "059000A2.12"
+    ka_importance: 3.1
     type: RO
     tier_group: "Tier 2/Group 1"
   - number: 46

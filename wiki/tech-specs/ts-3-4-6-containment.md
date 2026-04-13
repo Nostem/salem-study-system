@@ -130,6 +130,11 @@ The maximum peak pressure expected from a LOCA or steam line break event is appr
 <span class="hi-exam">Containment internal pressure limits: -1.5 to +0.3 psig (Modes 1-4).</span> If pressure exceeds +0.3 psig, containment design limits could be exceeded during a DBA. The upper limit ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during the limiting pipe break (LOCA or steam line break). The lower limit ensures the containment structure is prevented from exceeding its design negative pressure differential of <span class="val-trip">3.5 psig</span> with respect to outside atmosphere. Restoration time is <span class="hi-exam">1 hour</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q33</div>
+Calculation question: PRT rupture disk relieves to containment. Starting at 0 psig and rising 0.1 psig/5 min, after 1 hour: 0 + 1.2 = <span class="hi-exam">1.2 psig > +0.3 psig limit (LCO 3.6.1.4 exceeded)</span>. Starting at 99 &deg;F and rising 1 &deg;F/5 min, after 1 hour: 99 + 12 = <span class="hi-exam">111 &deg;F < 120 &deg;F limit (LCO 3.6.1.5 NOT exceeded)</span>. <span class="hi-trap">Distractors: the -1.5 psig is the NEGATIVE pressure limit — candidates may confuse it as a general 1.5 psig threshold. The 120 &deg;F air temp limit is commonly confused with 110 &deg;F.</span>
+</div>
+
 ### Containment Air Temperature (3.6.1.5)
 
 <div class="callout callout-important">
@@ -331,6 +336,6 @@ TS LCO 3.6.3 containment isolation valve operability: <span class="hi-exam">2VC5
 - Related systems: [[Containment]], [[ECCS]]
 
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2023 Q54]]
+- Related exam questions: [[2020 Q33]], [[2023 Q54]]
 - Related JPMs: [[2022 JPM SRO-A3]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
