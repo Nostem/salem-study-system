@@ -24,6 +24,14 @@ Primary CONTAINMENT INTEGRITY shall be maintained.
 
 **Action:** Without CONTAINMENT INTEGRITY, restore within <span class="val-trip">1 hour</span> or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours.
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.1.1 Containment Integrity</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.6.1.1</div>
+CONTAINMENT INTEGRITY ensures that the containment will perform its designed safety function of preventing fission product release to the environment following a LOCA or other DBA.
+</div>
+</details>
+
 ### Internal Pressure (3.6.1.4)
 
 <div class="callout callout-important">
@@ -116,6 +124,14 @@ b. Combined leakage rate for Type B and C tests per Containment Leakage Rate Tes
 
 **Key SR:** Each spray pump differential pressure ≥204 psid per IST program.
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.2.1 Containment Spray</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.6.2.1</div>
+<span class="hi-exam">Two independent containment spray systems ensure pressure reduction and iodine removal following a LOCA even with a single active failure.</span> The NaOH spray additive maintains post-LOCA sump pH between 7.0 and 10.0, minimizing iodine re-evolution and chloride stress corrosion.
+</div>
+</details>
+
 ### Spray Additive System (3.6.2.2)
 
 <div class="callout callout-important">
@@ -141,6 +157,14 @@ At least <span class="hi">three containment fan coil units</span> shall be OPERA
 **Applicability:** Modes 1, 2, 3, and 4
 
 **Action:** With one fan cooler inoperable, restore within <span class="val-alarm">7 days</span>. With two inoperable, restore one within <span class="val-alarm">72 hours</span>. Otherwise Hot Standby in 6 hours and Cold Shutdown in 30 hours.
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.2.3 Containment Fan Coolers</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.6.2.3</div>
+<span class="hi-exam">Three of five CFCUs provide sufficient post-LOCA heat removal capacity (132 x 10⁶ Btu/hr) to reduce containment pressure below design limits.</span>
+</div>
+</details>
 
 ---
 
@@ -172,22 +196,6 @@ Pages 3/4 6-16 through 6-22 are intentionally blank. This section has been delet
 ## 3/4.6.5 — Containment Structural Integrity (Visual Inspection)
 
 Covered under SR 4.6.1.6.1 above.
-
----
-
-## Bases
-
-### Containment Integrity
-
-CONTAINMENT INTEGRITY ensures that the containment will perform its designed safety function of preventing fission product release to the environment following a LOCA or other DBA.
-
-### Containment Spray
-
-<span class="hi-exam">Two independent containment spray systems ensure pressure reduction and iodine removal following a LOCA even with a single active failure.</span> The NaOH spray additive maintains post-LOCA sump pH between 7.0 and 10.0, minimizing iodine re-evolution and chloride stress corrosion.
-
-### Containment Fan Coolers
-
-<span class="hi-exam">Three of five CFCUs provide sufficient post-LOCA heat removal capacity (132 x 10⁶ Btu/hr) to reduce containment pressure below design limits.</span>
 
 ---
 

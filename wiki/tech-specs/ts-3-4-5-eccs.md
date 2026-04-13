@@ -35,6 +35,16 @@ d. Nitrogen cover-pressure: <span class="hi">595.5–647.5 psig</span>
 
 *Amendment No. 282*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.5.1 Accumulators</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.5.1</div>
+The OPERABILITY of each accumulator ensures that a sufficient volume of borated water will be immediately forced into the RCS through each cold leg in the event the RCS pressure falls below accumulator pressure. Each accumulator is passive — requires no electrical power or actuation signal.
+</div>
+</details>
+
+---
+
 ## ECCS Subsystems — Tavg ≥ 350°F
 
 <div class="callout callout-important">
@@ -79,6 +89,18 @@ c. One RHR pump + RHR HX + flow path (cold leg injection)
 
 *Amendment No. 282*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.5.2 ECCS Subsystems (Tavg ≥ 350°F)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.5.2</div>
+<span class="hi-exam">Two independent ECCS subsystems ensure that sufficient emergency core cooling capability is available assuming any single active failure in either subsystem.</span> The ECCS flow paths ensure borated water delivery to both cold legs (injection phase) and hot legs (recirculation phase).
+
+The RHR interlock (tested per SR 4.5.2.i) prevents opening the RHR suction isolation valves (2RH1, 2RH2) when RCS pressure is ≥375 psig, protecting the low-pressure RHR system from RCS pressure.
+</div>
+</details>
+
+---
+
 ## ECCS Subsystems — Tavg < 350°F
 
 <div class="callout callout-important">
@@ -104,6 +126,16 @@ A maximum of one SI pump or one centrifugal charging pump shall be OPERABLE in M
 
 *Amendment No. 328*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.5.3 ECCS Subsystems (Tavg &lt; 350°F)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.5.3</div>
+<span class="hi-exam">Two independent ECCS subsystems ensure that sufficient emergency core cooling capability is available assuming any single active failure in either subsystem.</span> The ECCS flow paths ensure borated water delivery to both cold legs (injection phase) and hot legs (recirculation phase). In Mode 4 the requirement is reduced to one subsystem because decay heat levels and RCS conditions are less severe than in Modes 1–3.
+</div>
+</details>
+
+---
+
 ## Seal Injection Flow
 
 <div class="callout callout-important">
@@ -119,6 +151,8 @@ RCP seal injection flow shall be <span class="hi">≤40 gpm</span> with charging
 <div class="callout-label">Exam -- 2023 Q91</div>
 Seal injection flow surveillance: individual RCP seal injection flows of 10 + 10.5 + 9.8 + 10.2 = <span class="hi-exam">40.5 gpm total exceeds the &le;40 gpm limit</span>. Required action: adjust manual seal injection throttle valves within 4 hours. <span class="hi-trap">This is NOT a charging pump operability issue (TS 3.5.2) -- the charging pump is functioning properly; the seal injection throttle valves need adjustment.</span>
 </div>
+
+---
 
 ## Refueling Water Storage Tank
 
@@ -141,23 +175,13 @@ c. Temperature: <span class="hi">≥35°F and ≤100°F</span>
 
 *Amendment No. 309*
 
----
-
-## Bases
-
-### Accumulators (3/4.5.1)
-
-The OPERABILITY of each accumulator ensures that a sufficient volume of borated water will be immediately forced into the RCS through each cold leg in the event the RCS pressure falls below accumulator pressure. Each accumulator is passive — requires no electrical power or actuation signal.
-
-### ECCS Subsystems (3/4.5.2 and 3/4.5.3)
-
-<span class="hi-exam">Two independent ECCS subsystems ensure that sufficient emergency core cooling capability is available assuming any single active failure in either subsystem.</span> The ECCS flow paths ensure borated water delivery to both cold legs (injection phase) and hot legs (recirculation phase).
-
-The RHR interlock (tested per SR 4.5.2.i) prevents opening the RHR suction isolation valves (2RH1, 2RH2) when RCS pressure is ≥375 psig, protecting the low-pressure RHR system from RCS pressure.
-
-### RWST (3/4.5.5)
-
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.5.5 RWST</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.5.5</div>
 The RWST minimum volume of 364500 gallons is based on: filling the refueling canal, adequate injection phase volume, sufficient boron for cold shutdown (with most reactive rod stuck out), filling the containment sump, and fulfilling spray requirements. The boron concentration ensures both shutdown reactivity and post-LOCA sump pH of 7.0–10.0.
+</div>
+</details>
 
 ---
 

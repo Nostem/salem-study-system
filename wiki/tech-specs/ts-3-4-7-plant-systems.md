@@ -50,6 +50,16 @@ All main steam line code safety valves (MSSVs) associated with each steam genera
 
 *Amendment No. 259*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.1.1 Main Steam Safety Valves</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.7.1.1</div>
+<span class="hi-exam">The MSSVs provide overpressure protection for the secondary side of the steam generators. The power reduction requirements with inoperable MSSVs ensure that the remaining valves have sufficient capacity to prevent secondary side overpressurization.</span>
+</div>
+</details>
+
+---
+
 ## 3/4.7.1.2 — Auxiliary Feedwater System
 
 <div class="callout callout-important">
@@ -73,6 +83,16 @@ b. One turbine-driven pump, powered from an OPERABLE steam supply
 
 *LCO 3.0.4.b is not applicable (cannot defer entry into the applicable mode).*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.1.2 Auxiliary Feedwater System</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.7.1.2</div>
+<span class="hi-exam">Three independent AFW pumps (2 motor-driven, 1 turbine-driven) ensure decay heat removal via the steam generators when main feedwater is unavailable.</span> The turbine-driven pump is powered by steam and does not require AC power — it is available during a station blackout. Each motor-driven pump is powered from a separate vital bus backed by its own diesel generator.
+</div>
+</details>
+
+---
+
 ## 3/4.7.1.3 — Auxiliary Feed Storage Tank
 
 <div class="callout callout-important">
@@ -92,6 +112,8 @@ The auxiliary feed storage tank (AFST) shall be OPERABLE with a contained volume
 
 **Backup water sources:** Demineralized water storage tank (≥200000 gallons) or fire protection/domestic water storage tank (≥200000 gallons), with proper valve alignment verified.
 
+---
+
 ## 3/4.7.1.4 — Secondary Coolant Activity
 
 <div class="callout callout-important">
@@ -104,6 +126,8 @@ The specific activity of the secondary coolant system shall be ≤ <span class="
 **Action:** With specific activity > 0.10 μCi/gram DE I-131, be in Hot Standby within 6 hours and Cold Shutdown within 30 hours.
 
 **SR:** Per Table 4.7-2 sampling and analysis program (gross activity per SFCP; isotopic analysis when gross activity >10% of limit).
+
+---
 
 ## 3/4.7.1.5 — Main Steam Line Isolation Valves
 
@@ -124,6 +148,8 @@ Each main steam line isolation valve shall be OPERABLE.
 
 **Key SR:** Verify full closure within <span class="hi">5 seconds</span> per Inservice Testing Program.
 
+---
+
 ## 3/4.7.2 — SG Pressure/Temperature Limitation
 
 <div class="callout callout-important">
@@ -134,6 +160,8 @@ Primary and secondary coolant temperatures in the SGs shall be <span class="hi">
 **Applicability:** At all times
 
 **Action:** Reduce applicable SG pressure to ≤200 psig within 30 minutes. Perform engineering evaluation before increasing temperature above 200°F.
+
+---
 
 ## 3/4.7.3 — Component Cooling Water
 
@@ -146,6 +174,16 @@ At least <span class="hi">two independent CCW loops</span> shall be OPERABLE.
 
 **Action:** With only one loop, restore within <span class="val-alarm">72 hours</span> or Hot Standby in 6 hours + Cold Shutdown in 30 hours.
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.3 Component Cooling Water</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.7.3</div>
+Two independent loops of CCW ensure single-failure capability for safety-related cooling functions. CCW provides the intermediate barrier between potentially radioactive systems and the service water (ultimate heat sink).
+</div>
+</details>
+
+---
+
 ## 3/4.7.4 — Service Water
 
 <div class="callout callout-important">
@@ -156,6 +194,16 @@ At least <span class="hi">two independent service water loops</span> shall be OP
 **Applicability:** Modes 1, 2, 3, and 4
 
 **Action:** With only one loop, restore within <span class="val-alarm">72 hours</span> or Hot Standby in 6 hours + Cold Shutdown in 30 hours.
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.4 Service Water</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.7.4</div>
+Two independent loops of service water ensure single-failure capability for safety-related cooling functions. Service water is the ultimate heat sink for plant safety systems, removing heat via the CCW heat exchangers and directly from other safety-related components.
+</div>
+</details>
+
+---
 
 ## 3/4.7.5 — Flood Protection
 
@@ -172,6 +220,8 @@ Flood protection shall be provided for all safety related systems, components an
 |-----------|----------------|-----------------|
 | Water level > 10.5 ft MSL | Close all watertight doors | <span class="val-alarm">2 hours</span> |
 | Water level > 11.5 ft MSL | Hot Standby in 6 hours, Cold Shutdown in 30 hours | 6 + 30 hrs |
+
+---
 
 ## 3/4.7.6 — Control Room Emergency Air Conditioning System (CREACS)
 
@@ -198,6 +248,8 @@ c. Control room envelope (CRE) intact
 
 **Note:** CRE boundary may be opened intermittently under administrative control.
 
+---
+
 ## 3/4.7.7 — Auxiliary Building Ventilation System
 
 <div class="callout callout-important">
@@ -206,6 +258,8 @@ The Auxiliary Building Ventilation System shall be OPERABLE.
 </div>
 
 **Applicability:** Modes 1, 2, 3, and 4
+
+---
 
 ## 3/4.7.8 — Sealed Source Contamination
 
@@ -218,6 +272,8 @@ Each sealed source containing radioactive material with a half-life >30 days (ex
 
 **Action:** With removable contamination exceeding limits, withdraw the source from use and either decontaminate or dispose.
 
+---
+
 ## 3/4.7.9 — Snubbers
 
 <div class="callout callout-important">
@@ -226,22 +282,6 @@ All snubbers shall be OPERABLE. Snubbers excluded from this requirement are list
 </div>
 
 **Applicability:** Modes 1, 2, 3, and 4 (for snubbers on safety-related systems)
-
----
-
-## Bases
-
-### Main Steam Safety Valves
-
-<span class="hi-exam">The MSSVs provide overpressure protection for the secondary side of the steam generators. The power reduction requirements with inoperable MSSVs ensure that the remaining valves have sufficient capacity to prevent secondary side overpressurization.</span>
-
-### Auxiliary Feedwater
-
-<span class="hi-exam">Three independent AFW pumps (2 motor-driven, 1 turbine-driven) ensure decay heat removal via the steam generators when main feedwater is unavailable.</span> The turbine-driven pump is powered by steam and does not require AC power — it is available during a station blackout. Each motor-driven pump is powered from a separate vital bus backed by its own diesel generator.
-
-### CCW and Service Water
-
-Two independent loops of each system ensure single-failure capability for safety-related cooling functions. CCW provides the intermediate barrier between potentially radioactive systems and the service water (ultimate heat sink).
 
 ---
 
