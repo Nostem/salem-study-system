@@ -100,5 +100,5 @@ Ref: 2-EOP-FRCI-3 (Rev 40) | Task: N1150410501 | K/A: G2.1.25 — Ability to int
 ## Connections
 
 - Related systems: [[RCS]], [[Containment]]
-- Related EOPs: [[EOP-FRCI-3 — Response to Void in Reactor Vessel]], [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]
+- Related EOPs: [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related exam: [[2022 NRC Operating Exam]]
