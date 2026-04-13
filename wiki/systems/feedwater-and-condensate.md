@@ -108,10 +108,21 @@ Ovation (ADFCS) steam pressure channel failure: Ovation uses <span class="hi-exa
 Condensate recovery in EOP-FRHS-1 after loss of all AFW. Both SGFPs tripped due to auto SI following main turbine failure to trip. Crew resets SI/Phase A/Phase B, opens <span class="hi-exam">CA330s</span>. Selects one SG for depressurization to < <span class="hi-exam">575 psig</span> using MS10. Dispatches operator to open <span class="hi-exam">BF40 or BF19</span> (120 ft TGA). Opens <span class="hi-exam">BF13</span>, opens <span class="hi-exam">CN48 (SGFP bypass valves)</span>, closes <span class="hi-exam">CN32 (SGFP suction valves)</span>. Condensate flow established when SG pressure is around 600 psi. Validation note: approximately 10 minutes to depressurize via MS10, condensate flow visible at 5-6% WR rising.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q45</div>
+BF19 (Main FW Regulating Valves) on loss of all station air: <span class="hi-exam">BF19s start to close at <span class="val-alarm">80 psig</span> control air header pressure</span>. BF19s receive air from Unit 1 via redundant Lunkenheimer air panels, but on total loss of ALL station air, no backup supply is available. <span class="hi-trap">ECACs cannot supply BF19 CA headers due to a check valve isolating the turbine building headers.</span> Per AB.CA-0001 CAS: if both CA headers < 80 psig or BF19s closing with inability to control SG level → trip the reactor.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q44</div>
+On trip of both SGFPs, only the <span class="hi-exam">MDAFW pumps auto-start</span>. The TDAFW pump does NOT auto-start on SGFP trip — it requires <span class="hi-exam">2/3 Lo-Lo level in 2/4 SGs (14% NR)</span>, RCP bus undervoltage, or manual start. Per S2.OP-SO.CN-0002, a removed-from-service SGFP is placed in the tripped condition, satisfying half of the "trip of both SGFPs" auto-start logic.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
+- Related procedures: [[AB.CA-0001 — Loss of Control Air]]
+- Related exam questions: [[2020 Q44]], [[2020 Q45]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

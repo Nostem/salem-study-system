@@ -188,6 +188,67 @@ questions:
     ka_importance: 3.9
     type: RO
     tier_group: "Tier 1/Group 2"
+  - number: 21
+    topic: "Rapid Boration per EOP-TRIP-2"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified – Salem Vision Database"
+    systems:
+      - chemical-and-volume-control-system
+      - emergency-core-cooling-systems
+    ka: "000024AK2.03"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 22
+    topic: "IR Channel Bypass Alarm"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank"
+    systems:
+      - excore-nis
+      - rps-ssps
+    ka: "APE33AA2.09"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 23
+    topic: "Area Rad Monitor Crane Interlock"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - radiation-monitoring
+      - refueling
+    ka: "APE61AK3.02"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 24
+    topic: "Core Cooling Red Path Validation"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - rvlis
+      - emergency-core-cooling-systems
+    ka: "EPE74G2.1.19"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 25
+    topic: "LOCA Outside Containment from TRIP-3"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - residual-heat-removal
+      - radiation-monitoring
+    ka: "WE02G2.4.45"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 1/Group 2"
   - number: 26
     topic: "SMM Adverse Containment"
     answer: D

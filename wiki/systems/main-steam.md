@@ -37,6 +37,18 @@ Transports steam from the four steam generators to the turbine-generator and oth
 
 (UFSAR 10.3, TS Table 3.7-4)
 
+## Atmospheric Relief Valves (MS10s)
+
+- 4 valves total (one per SG: 21MS10 through 24MS10)
+- Design capacity: <span class="hi">10% of rated steam flow total (all 4 valves combined)</span>, <span class="hi">2.5% rated steam flow per individual valve</span>
+- Total flow at no-load steam pressure: 390147 lb/hr at 1005 psig
+- Controllable from the control room; backup nitrogen bottle racks for loss of control air
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q43</div>
+Each MS10 (SG Atmospheric Relief Valve) has a design capacity of <span class="hi-exam">2.5% rated steam flow</span> (total for all 4 valves is <span class="hi-exam">10% rated steam flow at no-load steam pressure — 390147 lb/hr at 1005 psig</span>). <span class="hi-trap">Common trap: 10% is the total design capacity for all 4 valves, not the capacity of a single valve.</span> Per AB.STM-0001, if an MS10 fails open and MSLI does not isolate the leak, a manual SI is required.
+</div>
+
 ## Steam Dump System
 
 See [[Steam Dumps]] for condenser steam dump valve operation, interlocks (C-9, P-12), and cooldown mode.
@@ -64,7 +76,7 @@ Main turbine fails to auto trip AND fails to manually trip following reactor tri
 
 - Related systems: [[Steam Dumps]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related exam questions: [[2022 Q12]], [[2022 Q77]]
+- Related exam questions: [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
 - Related JPMs: [[2023 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

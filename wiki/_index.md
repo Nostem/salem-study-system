@@ -132,6 +132,7 @@ status: draft
 - [[EOP-TRIP-7 — Rediagnosis]]
 - [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]]
+- [[EOP-CFST-1 — Critical Safety Function Status Trees]]
 
 ## Abnormal Procedures
 - [[AB.LOOP-0001 — Loss of All Offsite Power]]
@@ -239,3 +240,5 @@ status: draft
 - [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]]
 - [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
 - [[RP-AA-300 — Radiological Survey Program]]
+- [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
+- [[S2.OP-SO.CVC-0008 — Rapid Boration]]

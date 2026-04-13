@@ -34,8 +34,19 @@ On loss of instrument air, <span class="hi-exam">2MS132 (23 AFP Turbine Steam In
 On loss of all control air with a centrifugal charging pump in service: <span class="hi-exam">CV55 fails OPEN and CV71 fails CLOSED</span>. With letdown isolated, the charging pump delivers higher flow to the RCP seals → <span class="hi-exam">PZR level RISES</span>. Per AB.CA-0001: locally adjust <span class="hi-exam">CV54 (Centrifugal Charging Pump Flow Control Valve)</span> to control charging flow, OR transfer to <span class="hi-exam">23 PDP charging pump</span> (speed controller failed at low speed stop — minimizes seal flow and extends time before PZR reaches 90%).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q15</div>
+ECAC header sensing and CAS actions: <span class="hi-exam">#2 ECAC senses CA Header A</span> and <span class="hi-exam">#1 ECAC senses CA Header B</span>. Per AB.CA-0001: if 2B CA Header is <span class="val-alarm">&le; 88 psig</span>, notify Unit 1 NCO to start #1 ECAC. CAS (Continuous Action Statement): if <span class="hi-exam">BOTH CA headers lower to &lt; <span class="val-trip">80 psig</span></span>, trip the reactor. <span class="hi-trap">Trap: #1 ECAC is for 2B header (not 2A), and #2 ECAC is for 2A header (not 2B) — the ECAC number does NOT match the header letter. Also, the CAS requires BOTH headers &lt; 80 psig, not EITHER header.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q45</div>
+BF19 (Main Feedwater Regulating Valves) behavior on loss of all station air: <span class="hi-exam">BF19s start to close at <span class="val-alarm">80 psig</span> control air header pressure</span>. Per AB.CA-0001 CAS: monitor BF19s for closure and inability to control SG level, or if both CA headers drop below <span class="val-trip">80 psig</span>, trip the reactor. <span class="hi-trap">85 psig is the ECAC auto-start setpoint, NOT the BF19 closure threshold — do not confuse.</span> BF19s receive air from Unit 1 via redundant (Lunkenheimer) air panels, but on total loss of ALL station air, no Unit 1 CA is available. <span class="hi-trap">A check valve prevents either unit's ECAC from supplying the BF19 turbine building control air header, so ECACs cannot maintain BF19 air supply even if running.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]]
-- Related exam questions: [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
-- Related exam: [[2022 NRC Written Exam]]
+- Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]]
+- Related procedures: [[AB.CA-0001 — Loss of Control Air]]
+- Related exam questions: [[2020 Q15]], [[2020 Q45]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
