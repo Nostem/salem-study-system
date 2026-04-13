@@ -68,7 +68,42 @@ The Reactor Trip System instrumentation channels and interlocks shown in Table 3
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.1 RTS Instrumentation</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.3.1</div>
-The OPERABILITY of the RTS instrumentation ensures that: (1) the associated reactor trip action will be initiated when the parameter monitored by each channel reaches its setpoint, (2) the specified coincidence logic is maintained, and (3) sufficient redundancy is maintained to permit a channel to be out of service for testing or maintenance.
+
+**OPERABILITY Requirements**
+
+The OPERABILITY of the protective instrumentation systems and interlocks ensures that: (1) the associated reactor trip will be initiated when the parameter monitored by each channel or combination thereof exceeds its setpoint, (2) the specified coincidence logic and sufficient redundancy is maintained to permit a channel to be out of service for testing or maintenance consistent with maintaining an appropriate level of reliability, and (3) sufficient system functional capability is available from diverse parameters. <span class="hi-exam">The integrated operation of each of these systems is consistent with the assumptions used in the accident analyses.</span>
+
+**Trip Setpoint Methodology**
+
+<span class="hi-exam">Trip Setpoints are the nominal values at which the bistables are set. Any bistable is considered properly adjusted when the "as-left" value is within the band for CHANNEL CALIBRATION accuracy (rack calibration + comparator setting accuracy).</span> The Trip Setpoints are based on the analytical limits stated in the UFSAR. To allow for calibration tolerances, instrumentation uncertainties, instrument drift, and severe environment errors for RPS channels that must function in harsh environments as defined by <span class="hi">10 CFR 50.49</span>, the Trip Setpoints and Allowable Values are conservatively adjusted with respect to the analytical limits. <span class="hi-exam">The methodology is consistent with ISA-S67.04-1982, endorsed via NRC Regulatory Guide 1.105, Rev. 2.</span>
+
+The actual nominal Trip Setpoint entered into the bistable is more conservative than the Allowable Value to account for changes in random measurement errors detectable by a CHANNEL FUNCTIONAL TEST (e.g., drift during the surveillance interval). <span class="hi-exam">If the measured setpoint does not exceed the Allowable Value, the bistable is considered OPERABLE.</span> All known uncertainties are factored into each Trip Setpoint determination.
+
+**TSTF-493 Footnotes (Table 4.3-1, Functional Units 5 and 6)**
+
+The as-found tolerance is calculated using <span class="hi-exam">square root sum of the squares (SRSS)</span> combination of rack calibration accuracy, rack M&TE accuracy, rack comparator setting accuracy, and rack drift. The as-left tolerance uses the same SRSS method but excludes drift. If the as-found setting is outside its tolerance but conservative with respect to the Allowable Value, a channel performance evaluation is required before returning to service. <span class="hi-exam">If the as-left setting cannot be returned to within tolerance of the nominal Trip Setpoint, the channel shall be declared inoperable.</span>
+
+**Surveillance and Testing**
+
+Surveillance and maintenance outage times are determined per <span class="hi">WCAP-10271</span> and supplements. <span class="hi">WCAP-14333-P-A, Rev. 1</span> and <span class="hi">WCAP-15376-P-A, Rev. 1</span> provide the risk-informed basis for increased completion times, bypass test times, and surveillance test intervals for RTS and ESFAS.
+
+<span class="hi-exam">Channel testing in a bypassed condition shall be performed without lifting leads or jumpering bistables.</span> For Power Range Neutron Flux CHANNEL CALIBRATION in Modes 1 and 2 (Note 17), the SSPS input relays are excluded when the installed bypass test capability is used, to reduce the potential for inadvertent reactor trip. The SSPS input relays must be included at least once every <span class="hi">18 months</span>. The same exclusion applies to CHANNEL FUNCTIONAL TEST for Power Range Neutron Flux and High Positive Rate (Note 18).
+
+**Response Time Verification**
+
+Response time verification provides assurance that reactor trip actuation is completed within the time assumed in the safety analysis. <span class="hi-exam">Response time acceptance criteria have been relocated to UFSAR Section 7.2 tables and 7.3 tables.</span> Response time may be verified by actual response time tests (sequential, overlapping, or total channel measurements) or by summation of allocated sensor response times with actual tests on the remainder of the channel. <span class="hi">WCAP-13632-P-A, Rev. 2</span> provides the basis for using allocated sensor response times for specific sensors. The allocation must be verified prior to placing a component in service and re-verified after maintenance that may adversely affect response time.
+
+**Intermediate Range Neutron Flux Trip**
+
+<span class="hi-exam">The IR trip provides protection against uncontrolled RCCA bank rod withdrawal from a subcritical condition during startup, providing redundant protection to the Power Range Neutron Flux Low Setting trip.</span> In Mode 1 below P-10 and in Mode 2 above P-6, the IR trip must be OPERABLE. Above P-10, the PR High Setpoint provides protection. Below P-6 in Mode 2, the Source Range trip provides protection. In Modes 3, 4, or 5, the IR trip is not required because control rods must be fully inserted and only shutdown rods may be withdrawn.
+
+Action times: one inoperable IR channel allows <span class="hi">24 hours</span> for a slow, controlled power adjustment above P-10 or below P-6. <span class="hi-exam">If both IR channels are inoperable between P-6 and P-10, immediately suspend positive reactivity additions and reduce power below P-6 within 2 hours.</span>
+
+**Source Range Neutron Flux Trip**
+
+In Mode 2 below P-6, two OPERABLE SR channels ensure no single random failure disables the trip. <span class="hi-exam">If one SR channel is inoperable in Mode 2, immediately suspend positive reactivity additions.</span> If both SR channels are inoperable, the RTBs must be immediately opened. In Modes 3, 4, and 5 with RTBs closed and CRDS capable of rod withdrawal, one inoperable SR channel requires restoration within <span class="hi">48 hours</span> or all rods fully inserted and CRDS incapable of rod withdrawal within the next hour. <span class="hi-exam">If both SR channels are inoperable, RTBs must be immediately opened.</span> With RTBs open and CRDS incapable of rod withdrawal, the SR channels provide flux monitoring only.
+
+*(TS Bases B 3/4 3-1 through B 3/4 3-1c, Amendment Nos. 294, 306, 316, 321)*
 </div>
 </details>
 
@@ -251,7 +286,28 @@ Motor-driven AFW pumps start on Lo-Lo level in ANY 1 steam generator (2/3 per SG
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.2 ESF Actuation Instrumentation</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.3.2</div>
-The OPERABILITY of the ESFAS instrumentation ensures that: (1) the associated ESF action will be initiated when required, (2) the specified coincidence logic and actuation relay logic are maintained, and (3) sufficient redundancy is maintained to permit a channel to be out of service for testing or maintenance consistent with the ACTION requirements. The different coincidence logic (2/3 for SI on containment pressure Hi vs 2/4 for containment spray on Hi-Hi) and different setpoints (4.0 psig vs 15.0 psig) reflect the graded safety approach — more protective functions require lower thresholds, while more severe actuations (spray, Phase B) require higher confirmation.
+
+**OPERABILITY Requirements**
+
+The OPERABILITY of the ESFAS instrumentation ensures that: (1) the associated ESF action and/or reactor trip will be initiated when the parameter monitored by each channel or combination thereof exceeds its setpoint, (2) the specified coincidence logic and sufficient redundancy is maintained to permit a channel to be out of service for testing or maintenance consistent with maintaining an appropriate level of reliability, and (3) sufficient system functional capability is available from diverse parameters. <span class="hi-exam">The OPERABILITY of these systems is required to provide the overall reliability, redundancy, and diversity assumed available in the facility design for protection and mitigation of accident and transient conditions.</span>
+
+**Coincidence Logic Rationale**
+
+The different coincidence logic requirements reflect a graded safety approach: Safety Injection actuates on <span class="hi">2/3</span> containment pressure Hi channels at <span class="hi">4.0 psig</span>, while containment spray and Phase B isolation require <span class="hi">2/4</span> containment pressure Hi-Hi channels at <span class="hi">15.0 psig</span>. <span class="hi-exam">The lower threshold and less restrictive coincidence for SI ensures early protective action, while the higher threshold and more restrictive coincidence for spray and Phase B prevents inadvertent actuation of more severe (and potentially damaging) functions.</span>
+
+**Setpoint Methodology**
+
+The Trip Setpoints and Allowable Values incorporate all known uncertainties applicable to each channel, determined using the same ISA-S67.04-1982 methodology as the RTS. The actual nominal Trip Setpoint is more conservative than the Allowable Value to account for random measurement errors detectable by CHANNEL FUNCTIONAL TEST. <span class="hi-exam">Setpoints in accordance with the Allowable Value ensure the safety analyses demonstrating safety limits are not violated remain valid, provided the unit is operated within the LCOs at the onset of any design basis event.</span>
+
+**Surveillance and Testing**
+
+The surveillance requirements are sufficient to demonstrate overall system functional capability comparable to original design standards. <span class="hi-exam">Surveillance and outage times are based on WCAP-10271 and supplements; completion times and bypass test times were increased per WCAP-14333-P-A, Rev. 1 and WCAP-15376-P-A, Rev. 1 using probabilistic risk analysis.</span> Out of service times maintain an appropriate level of reliability.
+
+**Response Time Verification**
+
+Response time verification ensures the ESF actuation associated with each channel is completed within the time assumed in the safety analysis. The same methods as RTS apply: actual tests (sequential, overlapping, or total channel), or summation of allocated sensor response times with actual tests on the remainder. <span class="hi-exam">The Note 8 response times for feedwater isolation are based on WCAP-16503, Rev. 3 — SGFP trip and FIV closure are credited in containment analyses for LOCA and MSLB in case an FRV fails open.</span>
+
+*(TS Bases B 3/4 3-1 through B 3/4 3-1a, Amendment Nos. 294, 306)*
 </div>
 </details>
 
@@ -263,17 +319,102 @@ The OPERABILITY of the ESFAS instrumentation ensures that: (1) the associated ES
 
 Radiation monitoring instrumentation includes area monitors, process monitors, and effluent monitors required for various modes of operation.
 
-### Remote Shutdown Instrumentation (3.3.3.2)
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.1 Radiation Monitoring</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.3.3.1</div>
+
+The OPERABILITY of the radiation monitoring channels ensures that: (1) radiation levels are continually measured in the areas served by the individual channels, and (2) the alarm or automatic action is initiated when the radiation level trip setpoint is exceeded.
+
+<span class="hi-exam">For the postulated Fuel Handling Accident, revised dose calculations using 10 CFR 50.67 and Regulatory Guide 1.183 (Alternative Source Term) do not take credit for automatic containment purge isolation, allowing continuous monitoring of containment activity until containment closure is achieved.</span> If required, containment purge isolation can be initiated manually from the control room.
+
+"Immediate action(s)" in accordance with LCO Action Statements means the required action should be pursued without delay and in a controlled manner.
+
+*(TS Bases B 3/4 3-2, TSBC S2013-057 and Amendment No. 301)*
+</div>
+</details>
+
+### Remote Shutdown Instrumentation (3.3.3.5)
 
 Instrumentation required for hot shutdown from outside the control room.
 
-### Accident Monitoring Instrumentation (3.3.3.3)
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.5 Remote Shutdown Instrumentation</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.3.3.5</div>
+
+<span class="hi-exam">The OPERABILITY of the remote shutdown instrumentation ensures that sufficient capability is available to permit shutdown and maintenance of HOT STANDBY from locations outside the control room.</span> This capability is required in the event control room habitability is lost and is consistent with <span class="hi">General Design Criterion 19 of 10 CFR 50</span>.
+
+*(TS Bases B 3/4 3-3, Amendment No. 301)*
+</div>
+</details>
+
+### Accident Monitoring Instrumentation (3.3.3.7)
 
 Post-accident monitoring instrumentation per Regulatory Guide 1.97 including RCS pressure, containment pressure, containment radiation level, and other Category 1 variables.
 
-### Power Distribution Monitoring System (3.3.3.5)
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.7 Accident Monitoring Instrumentation</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.3.3.7</div>
+
+<span class="hi-exam">The OPERABILITY of the accident monitoring instrumentation ensures that sufficient information is available on selected plant parameters to monitor and assess these variables following an accident.</span> This capability is consistent with the recommendations of <span class="hi">Regulatory Guide 1.97</span>, "Instrumentation for Light-Water-Cooled Nuclear Power Plants to Assess Plant Conditions During and Following an Accident" (December 1975) and <span class="hi">NUREG-0578</span>, "TMI-2 Lessons Learned Task Force Status Report and Short-Term Recommendations."
+
+The Wide Range Neutron Flux Monitors are the Gamma-Metrics Post-Accident Neutron Monitors.
+
+*(TS Bases B 3/4 3-3, Amendment No. 301)*
+</div>
+</details>
+
+### Radioactive Liquid Effluent Monitoring (3.3.3.8)
+
+Tank level indicating devices for detection and control of leaks that could transport radioactive materials to unrestricted areas.
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.8 Radioactive Liquid Effluent Monitoring</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.3.3.8</div>
+
+The purpose of tank level indicating devices is to assure the detection and control of leaks that, if not controlled, could potentially result in the transport of radioactive materials to unrestricted areas.
+
+*(TS Bases B 3/4 3-3a, Amendment No. 323)*
+</div>
+</details>
+
+### Power Distribution Monitoring System (3.3.3.14)
 
 Monitors core power distribution for verification of FQ and F-delta-H limits.
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.14 Power Distribution Monitoring System (PDMS)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.3.3.14</div>
+
+<span class="hi-exam">The PDMS provides continuous core power distribution measurement using a highly accurate 3-D nodal simulation of the current reactor power distribution.</span> The simulated distribution is continuously adjusted by nodal and thermocouple calibration factors derived from incore power distribution measurements using the incore movable detectors. Nodal calibration factors are updated in accordance with the Surveillance Frequency Control Program.
+
+Between calibrations, the fidelity of the measured power distribution is maintained by adjusting the calibrated distribution using continuously input plant and core condition data. This data is cross-checked using redundant information.
+
+**PDMS Operability Requirements — Four Categories:**
+
+1. Assure an adequate number of operable critical sensors
+2. Assure sufficiently accurate calibration of these sensors
+3. Assure an adequate calibration database regarding the number of data sets
+4. Assure the overall accuracy of the calibration
+
+**Minimum Required Inputs:**
+
+1. Control Bank Positions
+2. At least <span class="hi">50%</span> of the cold leg temperatures
+3. At least <span class="hi">75%</span> of the power range excore detector channel signals (top and bottom detector sections)
+4. Reactor Power Level
+5. A minimum number and distribution of operable core exit thermocouples
+6. A minimum number and distribution of measured fuel assembly power distribution information from incore movable detectors
+
+<span class="hi-exam">Thermocouple calibration is accomplished in two parts: (1) a sensor-specific correction to K-type thermocouple indications based on cross-calibration to average RCS temperature measured via RTDs under isothermal conditions, and (2) generation of thermocouple flow mixing factors that cause the radial power distribution measured via thermocouples to agree with the distribution from a full core flux map using incore movable detectors.</span> The PDMS uses NIS Power Range excore detectors for axial power distribution information, averaging data from the four detectors and eliminating bad data.
+
+*(TS Bases B 3/4 3-4 through B 3/4 3-5, Amendment No. 282)*
+</div>
+</details>
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-3.pdf" target="_blank">View Tech Spec PDF (61 pages — full tables)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-3.pdf" target="_blank">View Bases PDF</a>
 
