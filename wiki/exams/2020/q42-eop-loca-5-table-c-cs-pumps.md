@@ -29,7 +29,7 @@ At T+6 minutes:<br>
 <br>
 At T+6 minutes, determine the relative RWST Level and the number of Containment Spray Pumps required in accordance with EOP-LOCA-5, Table C?<br>
 <br>
-[REFERENCES PROVIDED]
+<span class="val-normal">[REFERENCES PROVIDED]</span>
 </div>
 
 <div style="margin-bottom:14px;">
