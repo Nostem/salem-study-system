@@ -16,7 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
 &bull; A Unit 2 Pressurizer Safety Valve has failed open.<br>
-&bull; A Reactor Trip and Safety Injection (SI) have automatically actuated.<br><br>
+&bull; A <span class="hi-exam">Reactor Trip and Safety Injection (SI) have automatically actuated</span>.<br><br>
 The Reactor Operator is <span class="hi">throttling closed</span> on 2CV71, Seal Pressure Control Valve.<br><br>
 What is the effect on Charging Pump discharge pressure and charging flow to the RCS?<br><br>
 Charging Pump discharge pressure will...
