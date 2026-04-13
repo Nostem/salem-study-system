@@ -48,6 +48,11 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 | Worst case, no load shed | <span class="hi">2 hours</span> | VTD 314204 |
 | With EOP-LOPA-1 load shedding | <span class="hi">4 hours</span> (SBO coping duration) | VTD 314204 |
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q49</div>
+Battery discharge indication on 2RP9: during normal "float charge" mode, volt meters read <span class="val-normal">~134 VDC</span> and <span class="hi-exam">amp meters read 0 amps</span> (charger supplies all loads). On loss of all AC power, batteries begin discharging — indicated by <span class="hi-exam">rising amps (&gt; 0) on 2RP9 amp meters</span> (NOT by voltage rising above zero). By design, batteries are sized for <span class="hi-exam">2 hours</span> of operation after loss of AC power. <span class="hi-trap">Trap: volt meters do NOT read 0 during normal operation — they read ~134 VDC. Amp meters read 0 because the charger supplies loads. Discharge is indicated by amps rising, not volts rising. Also: 2 hours (no load shed) vs 4 hours (with EOP-LOPA-1 load shed) — do not confuse the two durations.</span>
+</div>
+
 ## Ground Detection
 
 <div class="callout callout-exam">
@@ -77,6 +82,11 @@ Loss of 2C 125 VDC: all breakers powered by 2C DC <span class="hi-exam">remain A
 125 VDC battery charger transfer: standby charger (2A2) located in <span class="hi-exam">84 ft Switchgear Room</span> (same as normal charger). Transfer sequence requires <span class="hi-exam">no-parallel</span> — must de-energize normal charger (2A1) output FIRST, then energize standby charger (2A2). <span class="hi-trap">A and B 125VDC batteries are in the 100 ft Relay Room, but chargers are in the 84 ft Switchgear Room — do not confuse locations. Paralleling chargers is prohibited in Modes 1-4 to prevent cross-connecting 230 VAC Vital buses.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q13</div>
+Loss of 2A 125 VDC Bus loads: <span class="hi-exam">2A EDG is NOT available for start</span> (EDG starting circuits require 125 VDC). #1 SGFP Emergency Oil Pump and Main Turbine Emergency Oil Pump are NOT powered from the 2A 125 VDC bus — they are powered from other DC voltage levels (250 VDC or 28 VDC). <span class="hi-trap">All three malfunctions listed (SGFP Emergency Oil Pump, Turbine Emergency Oil Pump, EDG start) can be caused by loss of SOME DC bus, but only the EDG start is affected by loss of the 2A 125 VDC bus specifically. Know which loads are on which DC bus voltage level.</span>
+</div>
+
 ## Key Design Points
 
 - DC power is critical for safety functions — provides control power independent of AC
@@ -93,5 +103,5 @@ Loss of 2C 125 VDC: all breakers powered by 2C DC <span class="hi-exam">remain A
 
 ## Connections
 
-- Related exam questions: [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

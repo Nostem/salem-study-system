@@ -3,3 +3,189 @@ ml_number: "unknown"
 ro_questions: 75
 sro_questions: 25
 questions:
+  - number: 16
+    topic: "LOCA Outside Containment Indication"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank - Salem Vision Database"
+    systems:
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+      - rvlis
+    ka: "WE04EK2.1"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 17
+    topic: "Loss of Emergency Recirculation Mitigation Strategies"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+      - containment-fan-coil-units
+      - diesel-generators
+      - residual-heat-removal
+    ka: "WE11EK1.2"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 18
+    topic: "FRHS-1 RCS Pressure vs SG Pressure Check"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - Salem 2008 NRC Exam, Q23"
+    systems:
+      - reactor-coolant-system
+      - auxiliary-feedwater
+      - residual-heat-removal
+    ka: "WE05EA2.1"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 19
+    topic: "Dropped Rod Step Counter Reset"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank - Salem Vision Database"
+    systems:
+      - control-rod-drive
+    ka: "APE03AK3.04"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 20
+    topic: "Misaligned Rods Required Action"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - control-rod-drive
+      - stator-cooling-water
+    tech_specs:
+      - ts-3-4-1-3-movable-control-assemblies
+      - ts-3-4-2-power-distribution
+    ka: "APE05AA1.04"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 2"
+  - number: 36
+    topic: "PZR Pressure Channel Fails Low"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem Vision Database"
+    systems:
+      - pressurizer-level-and-press-control
+      - pressurizer
+    ka: "010000A3.02"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 37
+    topic: "OT Delta-T Inputs"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Indian Point Vision Database"
+    systems:
+      - rps-ssps
+    tech_specs:
+      - ts-2-0-safety-limits
+    ka: "012000K5.01"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 38
+    topic: "Loss of Tripping Capability RTB"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem 2010 NRC Exam Q42"
+    systems:
+      - rps-ssps
+    ka: "012000G2.4.31"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 39
+    topic: "ESFAS SI Block / Containment High Pressure"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - rps-ssps
+      - containment-systems
+    ka: "013000K4.12"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 40
+    topic: "CFCU Containment Temperature Rise"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-fan-coil-units
+      - service-water
+      - containment-systems
+    ka: "022000A1.01"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 46
+    topic: "AFW Pressure Override / SG Levels"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified - Salem 2014 NRC Exam Q56"
+    systems:
+      - auxiliary-feedwater
+    ka: "061000A3.03"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 47
+    topic: "4KV Degraded Voltage / SEC Mode"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem 2016 NRC Exam Q55"
+    systems:
+      - 4kv
+      - secs
+      - diesel-generators
+    ka: "062000K1.02"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 48
+    topic: "EDG KVAR Loading / Voltage Control"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem Vision Database"
+    systems:
+      - diesel-generators
+      - 4kv
+    ka: "062000A4.07"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 49
+    topic: "125VDC Battery Discharge Indication"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - dc-power
+    ka: "063000A4.03"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 50
+    topic: "EDG Starting Air Receiver Capability"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - diesel-generators
+    ka: "064000K6.07"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 1"

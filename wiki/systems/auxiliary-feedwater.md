@@ -29,6 +29,11 @@ Provides feedwater to steam generators when the main feedwater system is unavail
 | Turbine-Driven | 2/3 Lo-Lo level in any 2 SGs; OR RCP bus undervoltage (1/2 twice); OR manual (local and remote) | UFSAR T7.2-1 |
 | Motor-Driven | 2/3 Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence signal; OR blackout sequence signal; OR manual (local and remote) | UFSAR T7.2-1 |
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q44</div>
+Trip of both SGFPs generates an automatic start of <span class="hi-exam">ONLY the MDAFW pumps</span>. The <span class="hi-exam">TDAFW pump does NOT start on trip of both SGFPs</span> — the TDAFW pump starts on <span class="hi-exam">2/3 Lo-Lo level in any 2/4 SGs (14% NR)</span>, RCP bus undervoltage, or manual actuation. <span class="hi-trap">Common trap: believing all AFW pumps start on both SGFPs trip, or that the TDAFW pump starts on 1/4 SGs at 14% — it requires 2/4 SGs at 14%.</span> Per S2.OP-SO.CN-0002, a removed-from-service SGFP is placed in the tripped condition, so the "trip of both SGFPs" interlock is already half-satisfied.
+</div>
+
 ## Water Sources
 
 - **Primary:** Condensate storage tank
@@ -52,6 +57,13 @@ Instrument air supply line rupture to <span class="hi-exam">2MS132 (23 AFW Turbi
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q46</div>
 2PA-3450 (AFW pump discharge pressure transmitter) fails to zero: runout protection circuit <span class="hi-exam">closes AF21 valves (flow control)</span> to protect pump from runout. To recover: place <span class="hi-exam">PRESS OVERRIDE DEFEAT switch to DEFEAT</span> to bypass the runout protection circuit and allow operator control of AF21s. <span class="hi-trap">LOCAL MANUAL is indication only in the control room (no auto-start signals) — it does NOT allow manual control of the AF21 valves. PRESS OVERRIDE DEFEAT is the correct recovery action.</span>
+</div>
+
+## Pump-to-SG Alignment
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q46</div>
+<span class="hi-exam">21 AFW Pump (motor-driven) feeds 23 and 24 SGs.</span> 23 AFW Pump (turbine-driven) feeds all 4 SGs. Pressure override runout protection closes AF21 valves when discharge pressure is <span class="hi-exam">&lt; 1085 psig</span>, preventing pump runout. With pressure override active on 21 AFW and 23 AFW running, <span class="hi-exam">23 and 24 SG levels rise SLOWER</span> than 21 and 22 SG levels (only turbine-driven pump feeding them vs. turbine-driven feeding all 4). <span class="hi-trap">Common trap: believing 21 AFW feeds 21 and 22 SGs (pump number does NOT match SG number).</span> 23 AFW auto-starts on LOOP due to 4KV Group Bus Undervoltage.
 </div>
 
 ## Key Design Points
@@ -86,7 +98,7 @@ Loss of all AFW: 21 AFP C/T for oil bubbler replacement (initial condition). 23 
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
+- Related exam questions: [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

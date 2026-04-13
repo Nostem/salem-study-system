@@ -45,6 +45,25 @@ EDG starting air compressor power supplies: <span class="hi-exam">both 21A and 2
 EDG minimum load after paralleling: <span class="hi-exam">≥500 KW</span> must be loaded immediately after closing the output breaker to prevent <span class="hi-exam">tripping the output breaker on reverse power</span>. Separate concern: gradual loading prevents <span class="hi-exam">excessive accumulation of oil in the exhaust system</span> (exhaust fire risk from sudden high loading after low-load operation). <span class="hi-trap">250 KW is NOT the minimum — it is 500 KW. The reason for minimum load is reverse power trip protection, NOT exhaust fire prevention (which is a separate P&L for gradual loading).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q11</div>
+EDG loading ratings: <span class="hi-exam">2000 hr rating = <span class="val-alarm">2750 KW</span></span>, 2 hr rating = 2860 KW, 30 min rating = 3100 KW, Continuous rating = 2600 KW. Per S2.OP-SO.PZR-0010, PZR backup heaters add approximately <span class="hi-exam">210 KW</span> to bus load. Before adding PZR heater load, current EDG loading must be adjusted to no greater than <span class="hi-exam">2750 - 210 = 2540 KW</span>. <span class="hi-trap">Trap: candidates confuse the four EDG loading limits. The 2000 hr limit (2750 KW) is the relevant one for sustained post-LOOP operation, not the 30-min (3100 KW), 2-hr (2860 KW), or Continuous (2600 KW) rating.</span>
+</div>
+
+## EDG Controls When Paralleled
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q48</div>
+When the EDG is paralleled to the grid for surveillance testing: <span class="hi-exam">Voltage Control Switch adjusts KVAR (reactive) load</span> — Raise increases KVAR OUT. <span class="hi-exam">Speed Control Switch adjusts KW (real) load.</span> <span class="hi-trap">Common confusion: speed control adjusts frequency/real power, NOT reactive power. Voltage control adjusts reactive power, NOT voltage (when paralleled to the grid, generator voltage is locked to grid voltage).</span>
+</div>
+
+## Starting Air System
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q50</div>
+Each EDG has <span class="hi-exam">4 air start motors total</span>, supplied by <span class="hi-exam">2 starting air receivers</span>. Each receiver supplies <span class="hi-exam">2 air start motors (one train)</span>. Each receiver is capable of <span class="hi-exam">3 cold starts</span>. Two air start motors start the diesel in <span class="hi-exam">&lt; 10 seconds</span>. Just one air start motor can start the diesel within <span class="hi-exam">14 seconds</span>. Rated speed is <span class="hi-exam">900 RPM</span>. With one air receiver isolated, the remaining receiver and its 2 motors <span class="hi-exam">will start the EDG and achieve rated speed in &le; 13 seconds</span>. <span class="hi-trap">Each receiver supplies only 2 of the 4 air start motors — NOT all four. Loss of one receiver does not prevent EDG start.</span>
+</div>
+
 ## Diesel Generator Trip Functions
 
 DGs have protective trips that are bypassed during emergency start (SI or loss of voltage) to ensure the DG remains running when needed. Only certain trips remain active during emergency operation. (UFSAR 8.3.1.5.2)
@@ -91,9 +110,9 @@ Loss of ALL AC power to Unit 2 — General Emergency classification: <span class
 
 ## Connections
 
-- Related exam questions: [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
-- Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
+- Related exam questions: [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related JPMs: [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related operating exam: [[2023 NRC Operating Exam]]

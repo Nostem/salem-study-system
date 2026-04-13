@@ -53,6 +53,20 @@ CW bus loss scenario: when the 4KV infeed breaker to the 24 CW bus fails open, t
 EDG paralleled to grid during surveillance: when LOOP occurs, SEC actuates in <span class="hi-exam">Mode 2 (Blackout)</span>. EDG output breaker <span class="hi-exam">opens</span>, diesel remains running, SEC opens both infeed breakers, strips all loads from the 4KV vital bus, then <span class="hi-exam">automatically recloses the output breaker</span> and re-starts loads using the SEC load sequencer. <span class="hi-trap">The output breaker does NOT remain closed during a LOOP even though the EDG was already paralleled. The SEC strips and re-sequences the bus regardless of EDG test status.</span>
 </div>
 
+## Voltage Protection
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q47</div>
+Degraded voltage relays actuate at <span class="val-alarm">&lt; 95%</span> of nominal 4160V (sustained for <span class="hi-exam">&gt; 13 seconds</span>). Fast bus transfer relays actuate at <span class="hi-exam">&lt; 70%</span> of nominal. When degraded voltage is detected on a single bus (e.g., 3600V from failing SPT), and <span class="hi-exam">SI and SECs have been reset</span>, the SEC actuates in <span class="hi-exam">Mode II* (Single Bus Degraded UV)</span> — strips the bus from offsite power and loads it onto its EDG. <span class="hi-trap">Mode III and Mode IV require an active SI signal — after SI/SEC reset, SEC can only actuate in Mode I (Blackout) or Mode II* (Single Bus Degraded UV). 3600V is above the 70% fast transfer threshold (2912V) so no fast transfer occurs.</span>
+</div>
+
+## 2C 4KV Bus Loads
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q29</div>
+Key loads on the 2C 4KV Vital Bus include: <span class="hi-exam">22 Charging Pump, 22 SI Pump, 22 Containment Spray Pump</span>. On loss of 2C bus (bus differential), these loads are lost. Charging pump availability: <span class="hi-exam">21 CV Pump (2B bus) and 23 CV Pump (2A 460V bus) remain available</span>. <span class="hi-trap">23 CV Pump is powered from the 2A 460V bus, NOT from a 4KV bus — it remains available on loss of any 4KV bus.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.8 — Electrical]]** — TS 3.8.3.1 requires vital buses energized and OPERABLE
@@ -65,7 +79,7 @@ Loss of 2A 4KV Vital Bus response per AB.4KV-0001: A EDG auto-starts. 23 Chargin
 ## Connections
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
-- Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]]
-- Related exam questions: [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
+- Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]]
+- Related exam questions: [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
 - Related JPMs: [[2022 JPM Sim-g]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

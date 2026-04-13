@@ -30,9 +30,16 @@ Step 4.3.8.1.c Caution: After closing the generator output breaker, immediately 
 TS 3.8.1.1 common mode failure: when an EDG fails due to a component (e.g., K1C relay) and the same component is installed in other EDGs, a <span class="hi-exam">common mode failure exists or cannot be ruled out</span>. Action b.3 requires performing an <span class="hi-exam">operability run within 24 hours</span> on the remaining operable EDGs. Action b.4 requires restoring the inoperable EDG within <span class="hi-exam">72 hours</span>. <span class="hi-trap">Common mode failure does not automatically make all EDGs inoperable — TS 3.0.3 does NOT apply because action "e" exists for two or more inoperable diesels.</span>
 </div>
 
+## Surveillance Test Steps
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q48</div>
+Step 5.3.11: When EDG is paralleled to the bus for load testing, <span class="hi-exam">Voltage Control Switch adjusts KVAR (reactive) load</span>. To raise KVAR OUT from 1200 to 1400-1500 KVAR OUT, use <span class="hi-exam">Raise on the Voltage Control Switch</span>. Speed Control Switch adjusts KW (real) load, NOT reactive load. <span class="hi-trap">Speed control and voltage control functions are easily confused when a generator is paralleled to the grid.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[EDGs]]
 - Related tech specs: [[TS 3/4.8 — Electrical]]
-- Related exam questions: [[2022 Q50]], [[2022 Q89]], [[2023 Q89]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2020 Q48]], [[2022 Q50]], [[2022 Q89]], [[2023 Q89]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
