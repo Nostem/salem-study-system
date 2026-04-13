@@ -243,6 +243,7 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
   - [[2020 Q01]] — 2RP4 turbine stop valve status lights flashing = SSPS train disagreement
+  - [[2020 Q07]] — PORV failed open: manual trip at 2000 psig to prevent auto trip on OT Delta-T (trips at ~1950 psig) / low PZR pressure trip at 1865 psig
   - [[2020 Q37]] — OT Delta-T inputs: Tavg, PZR Pressure, Delta-I / OP Delta-T has no pressure or delta flux input
   - [[2020 Q38]] — Loss of Tripping Capability alarm = loss of shunt coil power / UV coil still functional
   - [[2020 Q39]] — Containment High Pressure SI (2/3, 4 psig) cannot be blocked / Low PZR Pressure SI blocked via P-11

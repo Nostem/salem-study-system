@@ -30,9 +30,15 @@ CVCS leak from 2CV6 (Letdown Relief Valve) at 12 gpm: per AB.RC-0001 bases, a <s
 Event 4: <span class="hi-exam">20 gpm RCS leak inside containment</span>. RO reports 2R11A containment radiation monitor rising, PZR level lowering. CRS enters AB.RC-0001. RO adjusts charging flow to stabilize PZR level, determines leak rate. CRS enters <span class="hi-exam">TS 3.4.7.2.b Action b</span> (reduce leakage within 4 hours or be in Hot Standby). Event 5: leak worsens to 350 gpm — RO reports leak exceeds makeup capability. CRS implements <span class="hi-exam">Att 1 CAS: trip the reactor and actuate SI</span>. LBLOCA follows reactor trip.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q06</div>
+AB.RC-0001 can be entered for any indication of an RCS leak, but <span class="hi-trap">in Mode 4 with uncontrolled PZR level reduction, the procedure directs transfer to AB.LOCA-0001 (Shutdown LOCA)</span>. AB.RC-0001 actions for stopping the RHR pump and closing 21SJ49 (RHR Discharge to Cold Legs) are for Modes 1-3 RHR suction isolation, not Mode 4.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[RCS]]
-- Related exam questions: [[2023 Q3]], [[2023 Q97]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
+- Related exam questions: [[2020 Q06]], [[2023 Q3]], [[2023 Q97]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

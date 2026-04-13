@@ -125,11 +125,16 @@ EOP-FRHS-1 heat sink established criteria (Step 6): heat sink is established whe
 23 SG tube leak (25-30 gpm) progressing to design basis 650 gpm tube rupture. Diagnostic indications: RMS alarms <span class="hi-exam">2R15, 2R19C (23 SG B/D), 2R53C (MS Line)</span>, PZR level lowering. Transfer to centrifugal charging pump stabilizes PZR level at 35 gpm. At 650 gpm, leak exceeds makeup capability — trip reactor and actuate SI. SGTR-1 isolation: close <span class="hi-exam">23AF21, 23AF11</span> (feed), <span class="hi-exam">23MS167, 23MS18, 23MS7, 23GB4</span> (steam), trip 23 AFW pump, dispatch to close <span class="hi-exam">23MS45</span>, close <span class="hi-exam">2SS333</span>. Set 23MS10 to 1045 psig. Target cooldown temp from Table B: SG press > 1000 psig = <span class="hi-exam">503 F CETs</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q10</div>
+Restoring feed to a dry SG (EOP-FRHS-1): when CETs are stable or lowering, feed flow to <span class="hi-exam">ONE SG is limited to <span class="val-normal">1E04 to 5E04 lbm/hr</span> (25-100 gpm) to prevent thermal shocking SG tubes</span>. Per bases: feedwater flow rate limited to minimize excessive thermal stresses since a direct measure of SG temperature is not available. <span class="hi-trap">The thermal shock concern is the SG tubes, NOT the reactor pressure vessel. Remaining dry SGs may only be recovered at TSC direction.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-SGTR-1]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
+- Related exam questions: [[2020 Q10]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2022 Scenario 4]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
