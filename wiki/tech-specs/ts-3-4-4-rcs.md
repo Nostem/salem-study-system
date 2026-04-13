@@ -78,6 +78,14 @@ An RCP shall not be started with any RCS cold leg temp ≤ POPS enable temperatu
 
 One RHR loop may be inoperable for up to 2 hours for surveillance testing if the other is OPERABLE and in operation. Four filled RCS loops with ≥2 SGs at ≥5% NR level may substitute for one RHR loop. *(Amendment No. 328)*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.1 Reactor Coolant Loops and Coolant Circulation</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.4.1</div>
+Plant design requires all 4 RCS loops operating during Modes 1 and 2 for adequate core cooling and to ensure accident analysis assumptions are met. In Mode 3, at least 2 loops provide adequate decay heat removal. The RCP start restriction during low-temperature conditions prevents pressure transients that could exceed POPS capacity.
+</div>
+</details>
+
 ---
 
 ## 3/4.4.2 & 3/4.4.3 — Safety Valves
@@ -156,6 +164,14 @@ When a PORV is inoperable due to seat leakage, the block valve is closed but pow
 
 *Amendment No. 177*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.5 Relief Valves (PORVs and Block Valves)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.4.5</div>
+<span class="hi-exam">The distinction between seat leakage and other causes determines whether the block valve power is maintained or removed.</span> With seat leakage, block valve power is maintained so the PORV path remains available for overpressure protection if needed. With other failures, power is removed to ensure the failed-open path is positively isolated.
+</div>
+</details>
+
 ---
 
 ## 3/4.4.6 — Steam Generator Tube Integrity
@@ -209,32 +225,22 @@ f. <span class="hi">≤1 gpm</span> from any RCS Pressure Isolation Valve (at 22
 
 *Amendment No. 304*
 
----
-
-## Bases
-
-### RCS Loops (3/4.4.1)
-
-Plant design requires all 4 RCS loops operating during Modes 1 and 2 for adequate core cooling and to ensure accident analysis assumptions are met. In Mode 3, at least 2 loops provide adequate decay heat removal. The RCP start restriction during low-temperature conditions prevents pressure transients that could exceed POPS capacity.
-
-### PORVs (3/4.4.5)
-
-<span class="hi-exam">The distinction between seat leakage and other causes determines whether the block valve power is maintained or removed.</span> With seat leakage, block valve power is maintained so the PORV path remains available for overpressure protection if needed. With other failures, power is removed to ensure the failed-open path is positively isolated.
-
-### RCS Leakage (3/4.4.7)
-
-<span class="hi-exam">PRESSURE BOUNDARY LEAKAGE of any magnitude requires immediate action because it indicates a potential failure of the RCS pressure boundary.</span> The 1 gpm unidentified leakage limit is well below the smallest leak that could propagate to a LOCA. The 150 gpd primary-to-secondary limit through any one SG minimizes radioactive contamination of the secondary system and limits accident dose consequences.
-
 <div class="callout callout-exam">
 <div class="callout-label">Exam -- 2023 Q97</div>
 CVCS leak vs. RCS operational leakage: a leak from 2CV6 (Letdown Relief Valve) is a <span class="hi-exam">CVCS auxiliary system leak, NOT RCS pressure boundary leakage</span>. TS 3.4.7.2 remains MET because CVCS piping is outside the RCS boundary. Once letdown is isolated and the leak stops, no TS action or Emergency Declaration is required. <span class="hi-trap">The CVCS is NOT part of the RCS -- it is an auxiliary system that interfaces with the RCS.</span>
 </div>
 
-### Chemistry (3/4.4.8)
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.7 RCS Leakage</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.4.7</div>
+<span class="hi-exam">PRESSURE BOUNDARY LEAKAGE of any magnitude requires immediate action because it indicates a potential failure of the RCS pressure boundary.</span> The 1 gpm unidentified leakage limit is well below the smallest leak that could propagate to a LOCA. The 150 gpd primary-to-secondary limit through any one SG minimizes radioactive contamination of the secondary system and limits accident dose consequences.
+</div>
+</details>
 
-**DELETED** — Relocated from Technical Specifications.
+---
 
-### Specific Activity (3/4.4.9)
+## 3/4.4.9 — Specific Activity
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.9</div>
@@ -255,7 +261,9 @@ b. ≤ <span class="val-alarm">600 μCi/gram</span> DOSE EQUIVALENT XE-133.
 
 **Note:** SR 4.4.9.1 not required in Mode 4; not required in Mode 3 until 24 hours after Tavg > 500°F.
 
-### Pressure/Temperature Limits (3/4.4.10)
+---
+
+## 3/4.4.10 — Pressure/Temperature Limits
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.10.1 — RCS P/T Limits</div>
@@ -302,10 +310,6 @@ b. RCS depressurized with an RCS vent ≥ <span class="hi">3.14 square inches</s
 <div class="callout-label">Exam — 2022 Q91</div>
 Action "e": <span class="hi-exam">LCO 3.0.4.b is NOT applicable when entering MODE 4 from MODE 5</span> with an inoperable POPS channel. A risk assessment cannot be used to justify this mode change. The LTOP channel <span class="hi-exam">must be restored to OPERABLE status before entering Mode 4</span>. <span class="hi-trap">Do not confuse with actions "a" (7-day restore in Mode 4) or "b" (24-hour restore in Modes 5-6) — those apply AFTER entering the applicable mode, not for making the mode change.</span>
 </div>
-
-### RCS Vents (3/4.4.11)
-
-**DELETED** — Relocated from Technical Specifications.
 
 ---
 
