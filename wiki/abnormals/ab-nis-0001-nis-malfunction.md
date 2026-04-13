@@ -27,9 +27,15 @@ Provides operator actions for responding to malfunctions of the Nuclear Instrume
 When P-6 is LIT, IR NIS channels should indicate approximately <span class="hi-exam">1E-5% power</span> (the SR/IR overlap region). If an IR channel reads 1E-8% power when P-6 is LIT, that channel is inoperable. Per TS 3.3.1.1 bases, the <span class="hi-exam">24-hour action time</span> for one inoperable IR channel takes into account the redundant capability afforded by the operable IR channel and its <span class="hi-exam">low probability of failure during this period</span>. <span class="hi-trap">Trap: the bases cite low probability of failure of the operable channel, NOT low probability of reactivity events.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q22</div>
+AB.NIS-0001 directs removal of a failed IR channel (e.g. N35 failed high) from service IAW <span class="hi-exam">S2.OP-SO.RPS-0001, Nuclear Instrumentation Channel Trip / Restoration</span>. For IR channels, SO.RPS-0001 places the <span class="hi-exam">LEVEL TRIP switch in bypass</span> (causing OHA E-29 to annunciate). <span class="hi-trap">Do not confuse with PR channel removal — PR channels use control power fuse removal and POWER MISMATCH BYPASS switch.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]]
+- Related systems: [[RPS/SSPS]], [[Excore NIs]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
-- Related exam questions: [[2023 Q82]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
+- Related exam questions: [[2023 Q82]], [[2020 Q22]]
+- Related exam: [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]

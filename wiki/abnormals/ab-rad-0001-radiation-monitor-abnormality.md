@@ -30,10 +30,15 @@ Containment pressure relief high radiation: Attachment 1, Step 10 directs ensuri
 <span class="hi-exam">2R41D (Plant Vent) in ALARM</span> automatically closes <span class="hi-exam">2WG41, 2VC1/VC4 (purge dampers), and 2VC5/VC6 (pressure relief dampers)</span>. Also aligns <span class="hi-exam">2R45 skid to accident sampling</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q23</div>
+2R32A (Fuel Handling Crane area rad monitor) failure to alarm setpoint: <span class="hi-exam">ONLY crane hoist-up operation is prevented</span>. No bypass interlock pushbutton exists. <span class="hi-exam">2R5 and 2R9 cause FHB exhaust to swap to 22 HEPA plus Charcoal but have NO crane interlocks.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[Containment]]
+- Related systems: [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]], [[Refueling]]
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2022 Q23]], [[2023 Q62]]
+- Related exam questions: [[2020 Q23]], [[2022 Q23]], [[2023 Q62]]
 - Related JPMs: [[2023 JPM Sim-h]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

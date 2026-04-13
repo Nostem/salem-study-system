@@ -38,9 +38,15 @@ Step 18, RCP START FOR TEMPORARY CORE COOLING: if CETs > <span class="hi-exam">1
 In EOP-FRCC-1, SG depressurization is performed at <span class="hi-exam">maximum rate</span> (not 100 degrees F/hr). For RCP start at step 18 under <span class="hi-exam">adverse containment</span> (>= 4 psig), the required SG NR level is <span class="hi-exam">>= 15%</span>. <span class="hi-trap">Trap: if you use normal containment NR level criteria (9%) instead of adverse (15%), you would incorrectly calculate three RCPs available instead of one.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q24</div>
+Core Cooling Red Path validation (no RCPs running, subcooling < 0°F): <span class="hi-exam">five (5) hottest CETs > 700°F AND RVLIS Full Range ≤ 39%</span>. <span class="hi-trap">RVLIS Upper Range is NOT applicable for core cooling status. Purple Path uses RVLIS Dynamic Range ≤ 44% (requires RCPs running). For CET-based inadequate core cooling (Red Path entry into FRCC-1), five CETs must be > 1200°F, not three.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RCPs]], [[Containment]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCPs]], [[Containment]], [[RVLIS]]
 - Related concepts: [[Containment]]
-- Related exam questions: [[2022 Q24]], [[2023 Q84]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
+- Related exam questions: [[2020 Q24]], [[2022 Q24]], [[2023 Q84]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

@@ -30,8 +30,14 @@ EOP-TRIP-3 uses a Concurrent Step symbol at Step 1 — initiate the stated actio
 PZR vapor space SBLOCA with RCS pressure stable at 1450 psig, 10°F subcooling, PZR level 30% rising: these conditions meet SI termination criteria in EOP-LOCA-1, so the <span class="hi-exam">next procedure transition is to EOP-TRIP-3</span>. In EOP-TRIP-3, the crew reduces ECCS injection flow. Since the leak is unisolable, RCS pressure will lower when ECCS flow is reduced, and EOP-TRIP-3 will then transition the crew to <span class="hi-exam">EOP-LOCA-2</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q25</div>
+CAS in EOP-TRIP-3: <span class="hi-exam">if PZR level cannot be maintained > 11%, start ECCS pumps as necessary and GO TO EOP-LOCA-1</span>. From LOCA-1, alarms indicating a LOCA outside containment (2R41D Plant Vent in alarm, RHR sump overflow, RHR sump pump starts) direct transition to <span class="hi-exam">EOP-LOCA-6</span>. <span class="hi-trap">There is no direct transition from TRIP-3 to LOCA-6 — the path is TRIP-3 CAS → LOCA-1 → LOCA-6.</span> Steps 7 and 9 of TRIP-3 direct transitions to LOCA-2, but these would already have been completed by the time the letdown restoration step is reached.
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]]
-- Related exam questions: [[2023 Q38]], [[2023 Q23]], [[2023 Q76]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]], [[RHR]]
+- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-6 — LOCA Outside Containment]]
+- Related exam questions: [[2020 Q25]], [[2023 Q38]], [[2023 Q23]], [[2023 Q76]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

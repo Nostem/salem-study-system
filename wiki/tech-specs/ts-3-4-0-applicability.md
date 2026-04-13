@@ -72,6 +72,11 @@ When an LCO is not met and no applicable ACTION exists, within <span class="hi">
 LCO 3.0.3 is the "default" shutdown action when no specific ACTION applies. The 1-hour clock to BEGIN the shutdown starts when the LCO is not met. If corrective measures are completed, the ACTION may be taken per the specified time limits measured from the time of failure.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q14</div>
+LCO 3.0.3 applied to Service Water: with #2 SW Bay isolated (leak) AND 24 SWP C/Ted, <span class="hi-exam">both SW loops are inoperable</span>. TS 3.7.4 only addresses one inoperable loop. With no specific ACTION for two inoperable loops, <span class="hi-exam">LCO 3.0.3 applies</span>. Per S2.OP-SO.SW-0005 P&L 3.2: "When a Service Water Bay is removed from service in Modes 1-4, and the SW Pump fed from 'B' bus in the OPERABLE SW Bay is unavailable (23 or 24 SWP), then LCO 3.0.3 is applicable."
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — LCO 3.0.3 Default Shutdown Action</summary>
 <div class="callout callout-bases">

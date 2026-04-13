@@ -135,6 +135,7 @@ status: draft
 - [[EOP-CFST-1 — Critical Safety Function Status Trees]]
 
 ## Abnormal Procedures
+- [[AB.LOCA-0001 — Shutdown LOCA]]
 - [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - [[AB.RC-0001 — Reactor Coolant System Leak]]
 - [[AB.CC-0001 — Loss of Component Cooling Water]]

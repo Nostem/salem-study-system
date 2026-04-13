@@ -60,6 +60,72 @@ questions:
     ka_importance: 2.8
     type: RO
     tier_group: "Tier 1/Group 1"
+  - number: 6
+    topic: "Shutdown LOCA procedure entry and actions"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - residual-heat-removal
+    tech_specs: []
+    ka: "000025AA2.04"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 7
+    topic: "PZR PORV fails open actions and manual trip criteria"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - pressurizer
+      - pressurizer-level-and-press-control
+    tech_specs: []
+    ka: "000027AK3.03"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 8
+    topic: "ATWS turbine trip to maintain SG inventory"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - turbine-generator
+      - auxiliary-feedwater
+      - steam-generators
+    tech_specs: []
+    ka: "000029EK3.12"
+    ka_importance: 4.4
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 9
+    topic: "MSLB containment cooling design bases with LOOP"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-fan-coil-units
+      - containment-spray
+      - 4kv
+    tech_specs: []
+    ka: "000040G2.4.46"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 10
+    topic: "Loss of MFW dry SG feed flow restriction"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - steam-generators
+      - auxiliary-feedwater
+    tech_specs: []
+    ka: "000054AK1.02"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 1/Group 1"
   - number: 11
     topic: "EDG Loading Limits for PZR Heaters"
     answer: D
