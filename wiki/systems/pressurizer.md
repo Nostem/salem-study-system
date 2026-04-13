@@ -72,6 +72,11 @@ PZR vapor space leak (SBLOCA): at RCS pressure <span class="hi-exam">1450 psig</
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q02</div>
+PORV discharge temperature is determined by a <span class="hi-exam">constant enthalpy (throttling) process</span> from RCS pressure to PRT pressure (Mollier Diagram). Key relationships: <span class="hi-exam">lowering PRT pressure → lower discharge temperature; raising PRT pressure → higher discharge temperature</span>. Changes in RCS pressure or PORV leak rate do NOT directly lower the indicated discharge temperature. A leaking PRT rupture disk lowers PRT pressure, thereby lowering discharge temperature.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q2</div>
 PZR safety valve leak is a <span class="hi-exam">throttling/constant enthalpy process</span>. Tailpipe temperature determined by following the enthalpy line on a Mollier diagram to PRT pressure. At RCS <span class="val-normal">1900 psig</span> (1915 psia, hg ~1140 BTU/lb), throttling to PRT <span class="val-normal">35 psig</span> (50 psia) yields tailpipe temperature of approximately <span class="hi-exam">282°F</span>.
 </div>
@@ -106,7 +111,7 @@ PZR spray valve 2PS3 fails to close during SGTR-1 RCS depressurization. Both spr
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
+- Related exam questions: [[2020 Q02]], [[2020 Q05]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]]
 - Related scenarios: [[2022 Scenario 4]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

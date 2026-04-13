@@ -64,6 +64,11 @@ AB.PZR-0001 directs <span class="hi-exam">manual reactor trip when RCS pressure 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q07</div>
+Confirms 2022 Q9: AB.PZR-0001 PORV failed open sequence: 1) attempt to close PORV in manual, 2) <span class="hi-exam">close the associated block valve</span>, 3) if block valve fails to close THEN open control power breaker. CAS: trip reactor at <span class="val-trip">2000 psig</span> and lowering. Procedure bases: simulator showed auto trip at <span class="hi-exam">1950 psig on OT&Delta;T</span> — this is why 2000 psig was chosen.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q21</div>
 PZR reference leg leak causes indicated level to read <span class="hi-exam">HIGHER</span> (lower reference leg head → lower DP across transmitter → controller interprets as higher level). Master Flow Controller responds by <span class="hi-exam">lowering charging flow</span>, so <span class="hi-trap">actual PZR level LOWERS while indication rises — a divergence between actual and indicated level</span>.
 </div>
@@ -78,11 +83,16 @@ Loss of all control air impact on PZR level: with a centrifugal charging pump in
 During LOOP, PZR backup heaters are transferred to emergency power per S2.OP-SO.PZR-0010 Section 5.3. Transfer is <span class="hi-exam">MANUAL (not automatic)</span>. Group 22 transfers to <span class="hi-exam">2A 460V Vital Bus</span>. Only <span class="hi-exam">3 of 14 heater disconnects remain ON</span> to limit load within the emergency bus capacity.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q36</div>
+PORV channel assignments: <span class="hi-exam">2PR1 is controlled by Channel I (2PT-455). 2PR2 is controlled by Channels II & IV.</span> If Channel I fails LOW, <span class="hi-exam">2PR1 AUTO operation is blocked</span> (failed channel prevents PORV from seeing actual high pressure). 2PR2 remains functional on Channels II & IV and will <span class="hi-exam">open as pressure rises to the open setpoint</span>. <span class="hi-trap">PZR spray valves only function in AUTO via the controlling channel — if the controlling channel fails low, spray valves will NOT open to control pressure rise.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
-- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]]
+- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q07]], [[2020 Q36]]
 - Related JPMs: [[2022 JPM IP-i]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

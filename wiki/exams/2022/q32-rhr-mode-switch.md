@@ -52,4 +52,5 @@ Initially, RCS pressure will <span class="blank">_(1)_</span>, and Letdown press
 ## Connections
 
 - Related systems: [[RHR]], [[CVCS]]
+- Related procedures: [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
 - Related exam: [[2022 NRC Written Exam]]

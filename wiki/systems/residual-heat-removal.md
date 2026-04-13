@@ -68,6 +68,11 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining constant RHR flow: <span class="hi-exam">lower RH18 demand</span> (closes HX flow control valves, reducing flow through the RHR HX) and <span class="hi-exam">raise RH20 demand</span> (opens HX bypass valve, routing more flow around the HX). Total RHR flow stays constant but less passes through the heat exchanger. Reverse actions (raise RH18 / lower RH20) would increase cooldown rate.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q31</div>
+RHR HX tube blockage from foreign material reduces heat transfer, lowering cooldown rate. To <span class="hi-exam">RESTORE the cooldown rate: raise 21RH18 demand</span> (increases flow through the partially blocked RHR HX to compensate) and <span class="hi-exam">lower 2RH20 demand</span> (decreases HX bypass flow, forcing more total flow through the HX). Per S2.OP-SO.RHR-0001. <span class="hi-trap">Trap: "raise demand" on RH18 OPENS the valve (more HX flow); "lower demand" on RH20 CLOSES the bypass (less bypass flow). Both actions increase heat removal through the HX.</span>
+</div>
+
 ## Valve Failure Modes
 
 <div class="callout callout-exam">
@@ -93,6 +98,11 @@ The RHR system is isolated from the RCS by two normally closed motor-operated va
 
 During LOCA recirculation, the RHR pumps take suction from the containment sump and pump radioactive borated water (with H₂ and NaOH in solution) through the RHR heat exchangers and into the RCS. (UFSAR T5.5-1)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q06</div>
+Shutdown LOCA in Mode 4 (RCS temp 325°F, pressure 300 psig): enter <span class="hi-exam">AB.LOCA-0001 (Shutdown LOCA)</span> for any uncontrolled reduction in PZR level in Mode 4. CAS directs if PZR level <span class="hi-exam">&lt;11%: stop the operating RHR Pump aligned for Shutdown Cooling and close 2RH1 and 2RH2 (RHR Common Suction)</span>. <span class="hi-trap">AB.RHR-0001 redirects to AB.LOCA-0001 in Mode 4. AB.RHR-0001 actions (isolate letdown, start SI/charging, maintain PZR level 5-50%) apply only to Modes 5 or 6.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.5 — ECCS]]** — RHR subsystems as part of ECCS
@@ -115,8 +125,9 @@ EOP-LOCA-4 hot leg recirculation with 21 RHR pump C/T: Step 4.0 directs <span cl
 
 ## Connections
 
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
+- Related exam questions: [[2020 Q06]], [[2020 Q17]], [[2020 Q18]], [[2020 Q31]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

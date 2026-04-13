@@ -119,6 +119,11 @@ RHR pumps deliver when RCS depressurizes to ~170 psig. Inject via accumulator di
 Provides suction source for all ECCS pumps during injection phase. Minimum volume based on refueling canal fill requirement. (UFSAR 6.3.2)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q42</div>
+RWST level reference: <span class="hi-exam">20 ft = 190000 gallons</span>. With 2A Vital Bus lost (losing "A" bus loads), ECCS draw rate = 1100 gpm (both charging pumps) + 650 gpm (1 SI pump) + 2600 gpm (1 CS pump) = <span class="hi-exam">4350 gpm total</span>. After 6 minutes: 190000 - 26100 = <span class="hi-exam">163900 gallons (>16 ft, still above 15.24 ft)</span>. <span class="hi-trap">If "B" bus loads were lost instead, the higher draw rate would drop RWST to 147700 gallons in 6 minutes — below 15.24 ft. Knowing which bus powers which ECCS/CS pumps is critical for RWST depletion rate calculations.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q29</div>
 Automatic swapover of charging pump suction from VCT to RWST requires <span class="hi-exam">2/2 coincidence (LT-112 AND LT-114) at low-low VCT level</span>. If LT-112 fails high, the 2/2 logic is not satisfied and no auto swapover occurs — the VCT drains and the charging pump loses suction. See [[CVCS]] for full VCT level control logic.
 </div>
@@ -133,6 +138,11 @@ Automatic swapover of charging pump suction from VCT to RWST requires <span clas
 5. SI pumps inject when RCS < ~1500 psig
 6. RHR pumps inject when RCS < ~170 psig
 7. Time delay: ~25 seconds for active pumps to deliver flow
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q03</div>
+SBLOCA with 2A 4KV bus faulted and LOOP: <span class="hi-exam">only one SI pump available</span> (the SI pump on the remaining vital bus). With only 1 SI pump running and all RCPs stopped, EOP-LOCA-2 Table C adverse containment subcooling requirement is <span class="hi-exam">141°F</span> for charging pump reduction. At 1035 psig (1049.7 psia), T-Sat = 550.56°F → max CET for stopping one charging pump = <span class="hi-exam">409°F</span>. <span class="hi-trap">Trap: with 2 SI pumps running the subcooling requirement would be 135°F, not 141°F. Candidates must determine the number of available SI pumps based on 4KV bus alignment.</span>
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q31</div>
@@ -152,6 +162,25 @@ SEC Mode 2 (Blackout only) — load sequencer starts <span class="hi-exam">Charg
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q18</div>
 SJ49s (Cold Leg Isolation Valves) are <span class="hi-exam">normally open and NOT Phase A valves</span>. To operate: only CMC switch on 2RP4 to VALVE OPERABLE (no Phase A reset needed). <span class="hi-exam">Monitor RCS pressure rise to determine if LOCA outside containment is isolated.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q32</div>
+Per EOP-FRTS-1 bases: <span class="hi-exam">ECCS flow may contribute to RCS cooldown or prevent subsequent reduction in RCS pressure</span> during a PTS condition. FRTS-1 directs SI termination to reduce cold ECCS injection, and RCP restart to <span class="hi-exam">mix cold incoming ECCS water with warm reactor coolant</span>, decreasing the likelihood of brittle fracture. <span class="hi-trap">SI termination is NOT because a "soak" requires it — some SBLOCA conditions prevent SI termination even in FRTS-1.</span>
+</div>
+
+### Semi-Automatic Switchover (Unit 2)
+
+At <span class="val-alarm">15.2 ft</span> RWST level (2/4 RWST level channels), the following automatic actions occur on Unit 2:
+
+- <span class="hi">21 & 22 SJ113s (SI to Charging Pump Crossover Valves) OPEN automatically</span> — these valves are "armed" in the normal 100% power ECCS lineup for semi-automatic switchover
+- SJ44s (RHR Pump Sump Suction Valves) do NOT open automatically — operator must manually "arm" them if sump level > 62%, then they will auto-open
+- RH4s (RHR Pump Suction Valves) do NOT close automatically at this level
+- CS36s (RHR Discharge to Containment Spray Header) are manipulated manually at LO-LO RWST level
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q41</div>
+At <span class="hi-exam">RWST level < 15.2 ft on 2/4 channels</span>, Unit 2 semi-automatic switchover opens <span class="hi-exam">SJ113 valves (SI to Charging Pump Crossover)</span> automatically because they are "armed" in the normal 100% power ECCS lineup. <span class="hi-trap">SJ44s (RHR Pump Sump Suction) require manual arming by the operator first — they are NOT automatically armed at normal power. Unit 1 has an interlock requiring RH4 closed before SJ44 opens.</span>
 </div>
 
 ### Changeover to Recirculation Phase
@@ -221,9 +250,9 @@ LBLOCA with <span class="hi-exam">auto SI failure on both trains</span> (CT#1, C
 
 ## Connections
 
-- Related EOPs: [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
+- Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
-- Related exam questions: [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
+- Related exam questions: [[2020 Q03]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
 - Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

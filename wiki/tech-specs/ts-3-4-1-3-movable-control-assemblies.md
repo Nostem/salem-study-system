@@ -187,9 +187,13 @@ Control banks shall be limited in physical insertion as specified in the <span c
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-3.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q20</div>
+TS 3.1.3.1 action for more than one rod misaligned: <span class="hi-exam">be in Hot Standby within 6 hours</span>. AB.ROD-0001 implements this TS action. <span class="hi-trap">If only ONE rod is misaligned, the action is different — reduce power to &le;75% RTP within 1 hour (action c.3.d). Do not confuse the 1-rod and >1-rod actions.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]]
-- Related concepts: [[Rx Vessel & Internals]], [[Rx Vessel & Internals]]
-- Related exam questions: [[2023 Q56]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]]
+- Related exam questions: [[2020 Q20]], [[2023 Q56]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

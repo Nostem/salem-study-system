@@ -3,6 +3,63 @@ ml_number: "unknown"
 ro_questions: 75
 sro_questions: 25
 questions:
+  - number: 1
+    topic: "Reactor Trip Status Panel / Turbine Stop Valve Indication"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem Vision Database, modification made to stem only"
+    systems:
+      - rps-ssps
+      - turbine-generator
+    ka: "000007EK2.03"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 2
+    topic: "PORV Discharge Temperature / Constant Enthalpy Process"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified – Salem 2004 NRC Exam"
+    systems:
+      - pressurizer
+    ka: "000008AK2.02"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 3
+    topic: "SBLOCA Subcooling / Steam Tables / EOP-LOCA-2"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+    ka: "000009EK1.02"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 4
+    topic: "RCP Motor Winding Temperature / AB.RCP-0001 CAS"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified – Vision Database & Salem 2004 NRC Exam"
+    systems:
+      - reactor-coolant-pumps
+    ka: "000015AK3.01"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 5
+    topic: "Excess Letdown / SI Isolation / Phase A Effects"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+      - pressurizer
+    ka: "000022AA1.07"
+    ka_importance: 2.8
+    type: RO
+    tier_group: "Tier 1/Group 1"
   - number: 16
     topic: "LOCA Outside Containment Indication"
     answer: A
@@ -70,6 +127,67 @@ questions:
     ka_importance: 3.9
     type: RO
     tier_group: "Tier 1/Group 2"
+  - number: 31
+    topic: "RHR HX Cooldown Rate Control"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank Modified - 2015 Beaver Valley RO #31"
+    systems:
+      - residual-heat-removal
+    ka: "005000K6.03"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 32
+    topic: "EOP-FRTS-1 PTS Mitigation Basis"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem Vision Database"
+    systems:
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+    ka: "006000K5.04"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 33
+    topic: "Containment TS Pressure and Temperature Limits"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Robinson 2016 NRC Exam Q35"
+    systems:
+      - containment-systems
+      - pressurizer
+    tech_specs:
+      - ts-3-4-6-containment
+    ka: "007000K3.01"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 34
+    topic: "CCW Thermal Barrier Leak Indications"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - component-cooling-water
+      - reactor-coolant-pumps
+    ka: "008000K1.04"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 35
+    topic: "CCW Pump Status After SEC Mode 3 Loading"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank, Salem ILT 16-01 NRC Exam, Q7"
+    systems:
+      - component-cooling-water
+      - secs
+    ka: "008000K4.09"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
   - number: 36
     topic: "PZR Pressure Channel Fails Low"
     answer: D

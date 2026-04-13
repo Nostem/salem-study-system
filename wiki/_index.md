@@ -105,6 +105,7 @@ status: draft
 - [[2023 NRC Operating Exam]]
 
 ## EOPs
+- [[EOP-CFST-1 — Critical Safety Function Status Trees]]
 - [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - [[EOP-TRIP-2 — Reactor Trip Response]]
 - [[EOP-TRIP-3 — SI Termination]]
@@ -130,6 +131,7 @@ status: draft
 - [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
 - [[EOP-TRIP-7 — Rediagnosis]]
 - [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
+- [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]]
 
 ## Abnormal Procedures
 - [[AB.LOOP-0001 — Loss of All Offsite Power]]
@@ -166,6 +168,7 @@ status: draft
 - [[AB.115-0001 — Loss of 115V Vital Instrument Bus]]
 - [[AB.SW-0005 — Loss of All Service Water]]
 - [[AB.4KV-0001 — Loss of 4KV Vital Bus]]
+- [[AB.4KV-0003 — Loss of 2C 4KV Bus]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
@@ -219,13 +222,16 @@ status: draft
 - [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
 - [[SC.OP-SO.CA-0001 — SBO Diesel Control Air]]
 - [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]]
+- [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
 - [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]]
 - [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]]
 - [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]]
 - [[S2.OP-AR.ZZ-0008 — Overhead Annunciators Window H]]
+- [[S2.OP-AR.ZZ-0009 — Overhead Annunciators Window J]]
 - [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]]
 - [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]]
 - [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
+- [[S2.OP-SO.RHR-0001 — Initiating RHR]]
 - [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]]
 - [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
 - [[RP-AA-300 — Radiological Survey Program]]

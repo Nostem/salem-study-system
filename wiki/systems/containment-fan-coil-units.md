@@ -94,10 +94,24 @@ Containment entry for 22 CFCU tagging (Mode 1, 100% power): at the 22 CFCU area 
 21 CFCU fails to start in LOW speed on SEC signal following reactor trip/SI for SGTR. <span class="hi-exam">21 CFCU is powered from 2A 4KV bus</span>. Recovery: PO blocks 2A SEC, PO resets 2A SEC, RO manually starts 21 CFCU in LOW speed. This demonstrates the SEC block/reset/manual start sequence tested across multiple 2022 scenarios.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q17</div>
+During a DBA LBLOCA with 2B EDG tripped (LOOP conditions), <span class="hi-exam">22 and 24 CFCUs are NOT available</span> — they are powered from the 2B 4KV Vital Bus. The LOCA-5 mitigation strategy to "Run All CFCUs in High Speed" is therefore <span class="hi-trap">not implementable</span> under these conditions.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q40</div>
+Factors affecting CFCU heat removal and containment temperature:<br>
+- <span class="hi-exam">LOW speed = <span class="val-normal">47000 cfm</span> vs HIGH speed = <span class="val-normal">110000 cfm</span></span> — lower airflow reduces heat transfer across cooling coils → containment temp RISES.<br>
+- <span class="hi-exam">Increase in SW temperature</span> → reduced delta-T across cooling coils → heat transfer decreases → containment temp RISES.<br>
+- <span class="hi-trap">Starting additional SW pumps INCREASES SW header pressure and flow across the orifice → INCREASES heat transfer → containment temp LOWERS (not rises).</span><br>
+- <span class="hi-trap">Erosion of the flow orifice upstream of SW223 INCREASES SW flow → INCREASES heat transfer → containment temp LOWERS (not rises).</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
-- Related exam questions: [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
+- Related exam questions: [[2020 Q17]], [[2020 Q40]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]]
 - Related scenarios: [[2022 Scenario 4]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

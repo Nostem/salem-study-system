@@ -52,6 +52,16 @@ OHA E-8 (ROD INSERT LMT LO) alarms when rods are <span class="hi-exam">10 steps 
 Misaligned rod response per AB.ROD-0001: with one rod misaligned <span class="hi-exam">>=12 steps from the group demand counter</span> and reactor power >85% RTP, per TS 3.1.3.1 action c.3.d: <span class="hi-exam">reduce power to <75% RTP</span>. The misaligned rod is aligned to the BANK position (not the other way around). <span class="hi-trap">You do NOT insert the bank to match the misaligned rod. If two or more rods are misaligned, the action is Hot Standby within 6 hours.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q19</div>
+Dropped rod recovery (AB.ROD-0002): before withdrawing the dropped rod, <span class="hi-exam">reset the group step counter to zero</span> so it matches actual rod position and the rod is withdrawn to the proper height. For Control Bank D Group 1 rods, also <span class="hi-exam">reset the P/A converter to zero locally at the RPI-2 cabinet</span> — this ensures bank overlap is maintained. <span class="hi-trap">Group step counter does NOT input into the P/A converter; P/A input is from the Group 1 Data Logging card.</span> After P/A converter reset: OHAs E-8 (RIL LO) and E-16 (RIL LO-LO) WILL annunciate (expected alarm). OHA E-40 (ROD BANK URGENT FAILURE) annunciates after rod withdrawal begins.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q20</div>
+Misaligned rods (AB.ROD-0001): <span class="hi-exam">more than one rod stuck/misaligned = place unit in Hot Standby</span>. Only one rod misaligned = reduce power to <span class="hi-exam">&lt; 75% RTP</span>. <span class="hi-trap">Do not confuse Hot Standby (>1 rod) with Hot Shutdown or power reduction (1 rod).</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
@@ -61,7 +71,9 @@ Misaligned rod response per AB.ROD-0001: with one rod misaligned <span class="hi
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+  - [[2020 Q19]] — Dropped rod step counter/P/A converter reset procedure
+  - [[2020 Q20]] — >1 misaligned rod = Hot Standby
   - [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]] — Urgent Failure prevents all rod motion / stationary gripper coil holds rods
   - [[2023 JPM Sim-g]] — Failed high Tavg channel / AB.ROD-0003 recovery
   - [[2023 JPM IP-j]] — Rod Drive M-G Set paralleling

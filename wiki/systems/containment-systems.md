@@ -82,6 +82,16 @@ Each unit includes: motor, fan, motor heat exchanger, cooling coils, roughing fi
 | Design Negative Differential | <span class="val-trip">3.5 psig</span> | TS 3.6.1.4 Bases |
 | Restoration Time | <span class="val-trip">1 hour</span> | TS 3.6.1.4 |
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q33</div>
+PRT rupture disk relief to containment raises containment pressure and temperature. After one hour at 0.1 psig/5 min rise: 0 + 1.2 = <span class="hi-exam">1.2 psig exceeds the +0.3 psig upper limit</span> (LCO 3.6.1.4). At 1 &deg;F/5 min rise: 99 + 12 = <span class="hi-exam">111 &deg;F does NOT exceed the 120 &deg;F limit</span> (LCO 3.6.1.5). <span class="hi-trap">Trap: the -1.5 psig is the NEGATIVE pressure limit, not a general magnitude — the positive limit is only 0.3 psig. Also: containment air temperature limit is 120 &deg;F, not 110 &deg;F.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q39</div>
+Containment High Pressure SI actuation: <span class="hi-exam"><span class="val-trip">4 psig</span> on 2/3 containment pressure channels</span>. This signal <span class="hi-exam">CANNOT be blocked</span> — unlike Low PZR Pressure SI and High Steam Flow SI which can be blocked via P-11 during cooldown per IOP-6. During a Mode 3 cooldown with SI blocks in place, rapid depressurization of all SGs inside containment will raise containment pressure above 4 psig and actuate SI.
+</div>
+
 ## Containment Isolation System
 
 ### Design Basis
@@ -184,6 +194,13 @@ Containment pressure relief: upon <span class="hi-exam">OHA A-6 (RMS HI RAD OR T
 ### Definition
 Adverse containment conditions exist when containment pressure is elevated above normal, typically >= 4 psig. This affects multiple EOP setpoints and action criteria because elevated containment pressure degrades instrument accuracy and changes thermal-hydraulic behavior.
 
+### Adverse Containment Triggers for SMM
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q26</div>
+Adverse containment conditions for the Subcooling Margin Monitor (SMM) are triggered by <span class="hi-exam">EITHER containment pressure > 4 psig OR containment radiation (R44A/B) > 1E05 R/HR</span> — only one condition is required. Pressure-driven adverse signal auto-resets when pressure drops below 3 psig. <span class="hi-trap">Radiation-driven adverse signal does NOT auto-reset — requires manual action even after radiation levels drop below the adverse threshold.</span>
+</div>
+
 ### Impact on EOP Parameters
 When adverse containment conditions exist, EOP setpoints for level instruments are adjusted upward to account for the effect of containment pressure on instrument readings:
 
@@ -211,6 +228,6 @@ EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free vol
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
+- Related exam questions: [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

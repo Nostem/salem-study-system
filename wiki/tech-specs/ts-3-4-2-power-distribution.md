@@ -331,6 +331,7 @@ Manual QPTR surveillance following dropped rod 2D4: calculated QPTR for N42 quad
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]], [[RCS]]
-- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]]
+- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]]
+- Related exam questions: [[2020 Q20]]
 - Related JPMs: [[2022 JPM RO-A3]]
-- Related exam: [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]

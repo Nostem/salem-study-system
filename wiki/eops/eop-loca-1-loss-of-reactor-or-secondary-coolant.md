@@ -49,7 +49,7 @@ Entered from EOP-TRIP-1 following LBLOCA based on <span class="hi-exam">containm
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]]
-- Related exam questions: [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
+- Related exam questions: [[2020 Q18]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

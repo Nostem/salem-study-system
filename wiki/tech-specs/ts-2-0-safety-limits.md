@@ -157,3 +157,5 @@ The actual nominal Trip Setpoint entered into the bistable is more conservative 
 
 - Related systems: [[RPS/SSPS]], [[RCS]]
 - Related concepts: [[Rx Vessel & Internals]], [[RCS]], [[ESF & Design]]
+- Related exam questions: [[2020 Q37]]
+- Related exam: [[2020 NRC Written Exam]]
