@@ -20,7 +20,7 @@ aliases:
 &bull; ALL Auxiliary Feed Pumps have been lost and can't be recovered.<br>
 &bull; The CRS has transitioned to 2-EOP-FRHS-1, Response to Loss of Secondary Heat Sink at step 20 of 2-EOP-TRIP-1, Reactor Trip or Safety Injection.<br>
 <br>
-2-EOP-FRHS-1 Step 3 (Step 1 in current EOP rev) asks; "IS RCS PRESSURE GREATER THAN ANY INTACT OR RUPTURED SG PRESSURE?"<br>
+2-EOP-FRHS-1 Step 3 <span class="hi-trap">(Step 1 in current EOP rev)</span> asks; "IS RCS PRESSURE GREATER THAN ANY INTACT OR RUPTURED SG PRESSURE?"<br>
 <br>
 Which ONE of the following actions is required if the operator answers NO and why?
 </div>
