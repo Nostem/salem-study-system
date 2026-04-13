@@ -27,7 +27,20 @@ The boron concentration of the RCS, fuel storage pool, refueling canal, and refu
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.1 Boron Concentration</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.9.1</div>
-The refueling boron concentration ensures keff ≤ 0.95 with all control rods withdrawn, providing adequate shutdown margin during refueling operations. The boron concentration is specified in the COLR based on the reload-specific core design.
+
+<span class="hi-exam">The soluble boron concentration offsets core reactivity and is measured by chemical analysis of a representative sample of coolant in each volume.</span> The COLR limit ensures overall core reactivity of <span class="hi">Keff ≤ 0.95</span> during fuel handling, with control rods and fuel assemblies in the most adverse configuration (least negative reactivity) allowed by plant procedures.
+
+<span class="hi-exam">10 CFR 50, Appendix A, General Design Criterion 26 requires two independent reactivity control systems of different design principles — one must be capable of holding the core subcritical under cold conditions. The CVCS satisfies this requirement by maintaining the boron concentration.</span>
+
+The refueling cavity and canal are flooded with borated water from the refueling water storage tank (RWST) through the open reactor vessel by gravity feed or RHR System pumps. The pumping action of the RHR System and natural circulation in the vessel and refueling cavity mix the added boric acid to maintain concentrations above the COLR limit.
+
+During refueling, the water volume in the spent fuel pool, transfer canal, refueling canal, refueling cavity, and reactor vessel form a single mass — the soluble boron concentration is relatively the same in each volume. The boron concentration limit in the COLR is based on core reactivity at the beginning of each fuel cycle (end of refueling) and includes an uncertainty allowance.
+
+<span class="hi-exam">The LCO applies only to the refueling canal, fuel storage pool, and refueling cavity when those volumes are connected to the RCS. When isolated from the RCS, no potential path for boron dilution exists.</span>
+
+Suspension of CORE ALTERATIONS and positive reactivity additions does not preclude: (1) moving a component to a safe position, or (2) operations that individually add limited positive reactivity (e.g., temperature fluctuations from inventory addition) but when combined with all other operations result in overall net negative reactivity addition.
+
+Once boration to restore concentration is initiated, it must be continued until the boron concentration is restored. The restoration time depends on the amount of boron that must be injected.
 </div>
 </details>
 
@@ -48,6 +61,21 @@ Each valve used to isolate unborated water sources shall be <span class="hi">sec
 | (continued) | Perform SR 4.9.1 (verify boron concentration) | <span class="val-alarm">4 hours</span> |
 
 **Surveillance:** Verify each unborated water source isolation valve is secured closed per SFCP. *(Amendment No. 292)*
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.2.1 Unborated Water Source Isolation Valves</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.9.2.1</div>
+
+<span class="hi-exam">All isolation valves for reactor makeup water sources containing unborated water connected to the RCS must be closed during Mode 6 to prevent unplanned boron dilution. The valves must be secured (not just closed) in the closed position.</span>
+
+<span class="hi-exam">By isolating all unborated water sources, a safety analysis for an uncontrolled boron dilution event per Standard Review Plan (NUREG-0800, Section 15.4.6) is not required for Mode 6.</span>
+
+If any required valve is found not secured closed, there is a potential for diluted boron concentration in the RCS. Required actions: immediately suspend CORE ALTERATIONS and initiate actions to secure the valve. SR 4.9.1 must be performed to demonstrate that the required boron concentration exists. The <span class="hi">4-hour completion time</span> is sufficient to obtain and analyze a reactor coolant sample for boron concentration.
+
+The surveillance is performed via system walkdown. Frequency is controlled under the Surveillance Frequency Control Program. *(Amendment No. 292)*
+</div>
+</details>
 
 ## 3/4.9.2.2 — Source Range Instrumentation
 
@@ -80,7 +108,16 @@ LCO 3.0.3 not applicable.
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.2.2 Source Range Instrumentation</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.9.2.2</div>
-Two source range monitors provide redundant monitoring of core reactivity during refueling. With both inoperable, boron concentration verification every 12 hours provides an alternate means of monitoring reactivity status.
+
+<span class="hi-exam">Source range neutron flux monitors are used during refueling to determine core reactivity condition and alert operators to unexpected changes in core reactivity such as a boron dilution event. Two OPERABLE monitors are required to ensure redundant monitoring capability.</span>
+
+<span class="hi-exam">Based on isolating all boron dilution paths per LCO 3.9.2.1, only the source range neutron flux monitor visual indication in the control room is required for OPERABILITY.</span>
+
+<span class="hi-exam">Any combination of NIS source range neutron flux monitors and/or Gamma-Metrics post-accident neutron flux monitors may be used to satisfy the LCO. Two of the four total source range neutron flux monitors are required to be OPERABLE.</span>
+
+With one monitor inoperable: redundancy is lost; suspending positive reactivity additions is required to assure continued safe operation.
+
+With no monitors OPERABLE: no direct means of detecting changes in core reactivity exists. However, since positive reactivity additions are not permitted, the core reactivity condition is stabilized. This stabilized condition is confirmed by performing SR 4.9.1 every 12 hours to ensure required boron concentration exists and adequate shutdown margin is maintained. *(Amendment No. 315)*
 </div>
 </details>
 
@@ -117,7 +154,20 @@ The equipment hatch does not need to be closed during irradiated fuel movement �
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.4 Containment Building Penetrations</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.9.4</div>
-The requirements ensure containment closure capability during fuel movement to limit potential release from a fuel handling accident. The equipment hatch closure capability (not actual closure) allows refueling operations while maintaining the ability to establish containment integrity if needed.
+
+<span class="hi-exam">The containment closure requirements during irradiated fuel movement ensure that a release of fission product radioactivity will not exceed the guidelines and dose calculations of Regulatory Guide 1.183 (Alternative Radiological Source Term). In Mode 6, containment pressurization from an accident is not likely, so requirements can be less stringent than Mode 1–4 CONTAINMENT INTEGRITY.</span>
+
+<span class="hi-exam">The term "containment closure" differs from "containment OPERABILITY." Containment closure means all potential release paths are closed or capable of being closed. It does not require CONTAINMENT INTEGRITY.</span>
+
+**Equipment Hatch:** May be open during irradiated fuel movement provided: (1) inside door (or equivalent closure device) capable of being closed with <span class="hi">four bolts within 1 hour</span> by designated personnel; (2) either Containment Purge System or Auxiliary Building Ventilation System taking suction from containment is operating; and (3) plant is in Mode 6 with <span class="hi">at least 23 feet of water above the reactor pressure vessel flange</span>. Good engineering practice dictates the four bolts are approximately equally spaced.
+
+An equivalent closure device may be installed in place of the equipment hatch inside door. Penetrations incorporated into such a device are considered part of the containment boundary and subject to TS 3/4.9.4 requirements.
+
+**Air Locks:** The door interlock mechanism may remain disabled with both doors of each airlock open during irradiated fuel movement if: (1) at least one door of each airlock is capable of being closed within 1 hour by dedicated personnel; (2) either Containment Purge or Auxiliary Building Ventilation taking suction from containment is operating; and (3) Mode 6 with at least 23 feet above RPV flange.
+
+<span class="hi-exam">The postulated Fuel Handling Accident (FHA) dose calculations using RG 1.183 do not assume automatic containment purge isolation — this allows continuous monitoring of containment activity until release pathways are manually isolated from the control room.</span>
+
+SR 4.9.4.2 demonstrates that necessary hardware, tools, and equipment are available to close the equipment hatch. Performed once per refueling prior to start of irradiated fuel movement; only required when the equipment hatch is open. *(Amendment Nos. 292, 245)*
 </div>
 </details>
 
@@ -173,7 +223,20 @@ Two RHR loops are required when water level drops below 23 feet (reduced invento
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.8 RHR and Coolant Circulation</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.9.8</div>
-One operating RHR loop ensures adequate decay heat removal and provides mixing of the borated coolant to prevent stratification. The 1000 gpm minimum flow and 140°F temperature limit ensure adequate cooling margin. Two OPERABLE loops at low water level (less than 23 feet above vessel flange) provide redundancy when the reduced water inventory provides less thermal margin.
+
+<span class="hi-exam">One RHR loop in operation ensures: (1) sufficient cooling capacity to remove decay heat and maintain reactor pressure vessel water below <span class="hi">140°F</span> as required during the REFUELING MODE, and (2) sufficient coolant circulation through the reactor core to minimize effects of a boron dilution incident and prevent boron stratification. A minimum flow rate of <span class="hi">1000 gpm</span> is required.</span>
+
+Additional flow limitations are specified in plant procedures, with design basis documented in the Salem UFSAR. These limitations address concerns related to vortexing and air entrapment in the RHR System, and provide operational flexibility by adjusting flow limitations based on time after shutdown.
+
+<span class="hi-exam">The requirement for two RHR loops OPERABLE when there is less than <span class="hi">23 feet of water above the reactor vessel flange</span> ensures that a single failure of the operating RHR loop will not result in a complete loss of residual heat removal capability.</span>
+
+**Support systems (Service Water and Component Cooling):** Component redundancy is necessary to ensure no single active component failure causes loss of Decay Heat Removal. One piping path of SW and CC is adequate when it supports both RHR loops. Support system requirements before entering desired configuration (e.g., one SW loop out for maintenance in Modes 5 and 6) include:
+- Two RHR, two CC, and two SW pumps powered from two different vital buses kept operable
+- Active (air/motor operated) valves in the affected flow path locked open or disabled
+
+**Alternative to RHR loop:** <span class="hi-exam">Four filled reactor coolant loops, with at least two steam generators having secondary-side water level ≥ <span class="hi">5% (narrow range)</span>, may be substituted for one RHR loop — this ensures single failure does not cause a loss of decay heat removal.</span>
+
+With the reactor vessel head removed and 23 feet of water above the RPV flange, a large heat sink is available for core cooling. In the event of a failure of the operating RHR loop, adequate time is provided to initiate emergency procedures to cool the core. *(Amendment Nos. 277, 315)*
 </div>
 </details>
 
@@ -200,7 +263,10 @@ At least <span class="hi">23 feet of water</span> shall be maintained over the t
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.10 Water Level — Reactor Vessel</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.9.10</div>
-The 23-foot water level above irradiated fuel provides adequate shielding for personnel radiation protection and provides a source of water for iodine removal in the event of a fuel handling accident.
+
+<span class="hi-exam">The minimum water level restriction ensures sufficient water depth is available to remove <span class="hi">99% of the assumed 10% iodine gap activity</span> released from the rupture of an irradiated fuel assembly. The minimum water depth is consistent with the assumptions of the accident analysis.</span>
+
+The 23-foot minimum also satisfies the precondition referenced in TS 3/4.9.4 for relaxed containment closure requirements during irradiated fuel movement. *(Amendment No. 315)*
 </div>
 </details>
 
@@ -221,7 +287,10 @@ At least <span class="hi">23 feet of water</span> shall be maintained over the t
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.11 Storage Pool Water Level</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.9.11</div>
-The 23-foot water level above irradiated fuel assemblies in the storage pool provides adequate shielding for personnel radiation protection and provides a source of water for iodine removal in the event of a fuel handling accident.
+
+<span class="hi-exam">The minimum water level restriction ensures sufficient water depth is available to remove <span class="hi">99% of the assumed 10% iodine gap activity</span> released from the rupture of an irradiated fuel assembly seated in the storage racks. The minimum water depth is consistent with the assumptions of the accident analysis.</span>
+
+The bases for 3/4.9.10 (reactor vessel) and 3/4.9.11 (storage pool) share a common technical basis: both 23-foot requirements come from the same iodine scrubbing calculation in the fuel handling accident analysis. *(Amendment No. 315)*
 </div>
 </details>
 

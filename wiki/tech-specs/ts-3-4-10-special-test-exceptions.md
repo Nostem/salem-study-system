@@ -39,7 +39,10 @@ The SHUTDOWN MARGIN requirement of Spec 3.1.1.1 may be suspended for measurement
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.1 Shutdown Margin</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.10.1</div>
-This special test exception provides that a minimum amount of reactivity equivalent to the highest estimated control rod worth is available for trip insertion during rod worth and shutdown margin measurements. This ensures the reactor can be shut down even with the most reactive rod stuck out during these tests.
+
+<span class="hi-exam">This special test exception provides that a minimum amount of control rod worth is immediately available for reactivity control when tests are performed for control rod worth measurement. This exception is required to permit the periodic verification of the actual versus predicted core reactivity condition occurring as a result of fuel burnup or fuel cycling operations.</span>
+
+The exception maintains protection by requiring the reactivity equivalent to at least the highest estimated control rod worth to be available for trip insertion from OPERABLE rods — ensuring the reactor can be shut down even if the most reactive rod is stuck out during measurement. *(Amendment No. 282)*
 </div>
 </details>
 
@@ -74,7 +77,10 @@ b. Limits of Specs 3.2.2 (FQ) and 3.2.3 (F-delta-H) are maintained
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.2 Group Height, Insertion and Power Distribution Limits</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.10.2</div>
-The special test exception permits reactor physics tests to verify core nuclear parameters (rod worth, boron worth, critical boron concentration) match predictions following refueling. The compensating requirements — reduced power (≤85% RTP) and maintained FQ/F-delta-H limits — ensure adequate safety margins during testing even with other power distribution specs suspended.
+
+<span class="hi-exam">This special test exception permits individual control rods to be positioned outside of their normal group heights and insertion limits during PHYSICS TESTS such as those required to: (1) measure control rod worth, and (2) determine the reactor stability index and damping factor under xenon oscillation conditions.</span>
+
+The compensating requirements — power ≤ 85% RTP and maintained FQ/F-delta-H limits — ensure adequate safety margins during testing even with group height, insertion, and power distribution specs suspended. *(Amendment No. 282)*
 </div>
 </details>
 
@@ -118,7 +124,10 @@ The minimum temperature for physics tests is <span class="hi">531°F</span> (TS 
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.3 Physics Tests</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.10.3</div>
-The special test exception permits low-power reactor physics tests to verify core nuclear parameters (MTC, rod worth) match predictions following refueling. The compensating requirements — reduced power (≤5% RTP), reduced trip setpoints (≤25% RTP), and minimum Tavg (531°F) — ensure adequate safety margins during testing. The 531°F minimum temperature for low-power physics tests is lower than the normal 541°F minimum (3.1.1.4) because the physics tests are conducted at very low power where the consequences of a cooldown event are less severe.
+
+<span class="hi-exam">This special test exception permits PHYSICS TESTS to be performed at ≤ 5% of RATED THERMAL POWER with the RCS Tavg slightly lower than normally allowed, so that fundamental nuclear characteristics of the reactor core and related instrumentation can be verified. At times, it is necessary to operate outside normal TS restrictions to accurately measure certain characteristics.</span>
+
+Example: to measure the moderator temperature coefficient (MTC) at BOL, it is necessary to position various control rods at heights not allowed by Specification 3.1.3.5, which may in turn cause RCS Tavg to fall slightly below the minimum temperature of Specification 3.1.1.4 (<span class="hi">541°F</span>). The special test exception allows Tavg as low as <span class="hi">531°F</span> during these low-power physics tests. *(Amendment No. 282)*
 </div>
 </details>
 
@@ -150,7 +159,10 @@ b. Intermediate and Power Range trip setpoints set ≤ <span class="hi">25% RTP<
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.4 No Flow Tests</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.10.4</div>
-Allows measurement of isothermal and power coefficients with fewer than all RCS loops operating. Power is limited below the P-7 interlock to ensure automatic reactor trips on loss of flow remain available.
+
+<span class="hi-exam">This special test exception permits reactor criticality under no flow conditions and is required to perform certain startup and PHYSICS TESTS while at low THERMAL POWER levels.</span>
+
+Power is limited below the P-7 interlock setpoint to ensure automatic reactor trips on loss of flow remain available during these tests. *(Amendment No. 282)*
 </div>
 </details>
 

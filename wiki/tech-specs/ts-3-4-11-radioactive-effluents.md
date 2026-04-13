@@ -43,7 +43,10 @@ LCO 3.0.3 not applicable.
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.11.1.4 Liquid Holdup Tanks</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.11.1.4</div>
-The 10-curie limit on outdoor temporary tanks ensures that in the event of an uncontrolled release of the tank contents, the resulting concentrations at the nearest unrestricted area boundary would be within the limits of 10CFR20.
+
+<span class="hi-exam">The tanks included in this specification are all outdoor tanks that are not surrounded by liners, dikes, or walls capable of holding the tank contents, and that do not have tank overflows and surrounding area drains connected to the liquid radwaste treatment system.</span>
+
+<span class="hi-exam">Restricting the quantity of radioactive material in these tanks to ≤ <span class="hi">10 curies</span> (excluding tritium and dissolved/entrained noble gases) provides assurance that in the event of an uncontrolled release of the tanks' contents, the resulting concentrations would be less than the limits of 10 CFR Part 20, Appendix B, Table II, Column 2, at the nearest potable water supply and the nearest surface water supply in an unrestricted area.</span> *(Amendment No. 215)*
 </div>
 </details>
 
@@ -87,7 +90,12 @@ The 2% oxygen limit prevents formation of a flammable/explosive gas mixture. Hyd
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.11.2.5 Explosive Gas Mixture</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.11.2.5</div>
-The concentration of oxygen in the waste gas holdup system is limited to ensure that the mixture remains below the flammability limit for hydrogen-oxygen. The 2% oxygen limit provides margin below the lower flammable limit. The continuous monitoring requirement ensures early detection of increasing oxygen concentration. Hydrogen in the waste gas system is produced by radiolysis of reactor coolant water.
+
+<span class="hi-exam">This specification ensures that the concentration of potentially explosive gas mixtures in the waste gas holdup system is maintained below the flammability limits for hydrogen and oxygen. Maintaining the oxygen concentration below the specified values provides assurance that releases of radioactive materials will be controlled in conformance with General Design Criterion 60 of 10 CFR Part 50, Appendix A.</span>
+
+The <span class="hi">2% oxygen limit</span> provides margin below the lower flammability limit for hydrogen-oxygen mixtures, preventing formation of an explosive gas mixture. Hydrogen in the waste gas system is produced by radiolysis of reactor coolant water.
+
+<span class="hi-exam">This specification is not applicable to portions of the Waste Gas System removed from service for maintenance, provided those portions are isolated from sources of hydrogen and purged of hydrogen to less than <span class="hi">4% by volume</span>.</span> *(Amendment No. 243)*
 </div>
 </details>
 
