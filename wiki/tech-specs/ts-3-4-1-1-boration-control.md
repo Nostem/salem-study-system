@@ -38,6 +38,20 @@ With the SHUTDOWN MARGIN less than <span class="val-trip">1.3% delta k/k</span>,
 
 *\*See Special Test Exception 3.10.1 | Amendment No. 282*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.1.1 Shutdown Margin (Tavg > 200°F)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.1.1</div>
+
+A sufficient SHUTDOWN MARGIN ensures that: (1) the reactor can be made subcritical from all operating conditions, (2) reactivity transients from postulated accidents are controllable, and (3) the reactor is maintained sufficiently subcritical to preclude inadvertent criticality.
+
+SDM requirements vary throughout core life as a function of fuel depletion, RCS boron concentration, and Tavg. <span class="hi-exam">The most restrictive condition occurs at EOL, with Tavg at no-load operating temperature, associated with a postulated steam line break and resulting uncontrolled RCS cooldown.</span> The minimum 1.3% delta k/k is required to control this transient, consistent with FSAR assumptions.
+
+The ±1% delta k/k core reactivity balance limit is based on engineering judgment. A 1% deviation is larger than expected for normal operation and corresponds to approximately 100 ppm boron concentration difference.
+
+</div>
+</details>
+
 ---
 
 ## Shutdown Margin — Tavg ≤ 200°F
@@ -54,6 +68,16 @@ The SHUTDOWN MARGIN shall be greater than or equal to <span class="hi">1.0% delt
 With the SHUTDOWN MARGIN less than <span class="val-trip">1.0% delta k/k</span>, immediately initiate and continue boration at ≥ <span class="val-normal">33 gpm</span> of a solution containing ≥ <span class="val-normal">6560 ppm boron</span> or equivalent until the required SHUTDOWN MARGIN is restored.
 
 *Amendment No. 282*
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.1.2 Shutdown Margin (Tavg ≤ 200°F)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.1.2</div>
+
+With Tavg ≤ 200°F, steam line break cooldown transients are minimal — 1% delta k/k provides adequate protection. The lower SDM requirement reflects the reduced severity of reactivity excursions at cold conditions.
+
+</div>
+</details>
 
 ---
 
@@ -86,6 +110,16 @@ If the 300 ppm comparison shows MTC more negative than the surveillance limit, r
 
 *\*With keff ≥ 1.0 | See Special Test Exception 3.10.3 | Amendment No. 197*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.1.3 Moderator Temperature Coefficient</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.1.3</div>
+
+The MTC limits ensure this coefficient remains within the conditions assumed in accident and transient analyses. The MTC becomes more negative with burnup as boron concentration decreases. The 300 ppm surveillance limit provides a conservative check near EOL conditions.
+
+</div>
+</details>
+
 ---
 
 ## Minimum Temperature for Criticality
@@ -110,27 +144,15 @@ With Tavg less than <span class="val-trip">541°F</span>, restore Tavg within <s
 
 *See Special Test Exception 3.10.3*
 
----
-
-## Bases
-
-### Shutdown Margin (3/4.1.1.1 and 3/4.1.1.2)
-
-A sufficient SHUTDOWN MARGIN ensures that: (1) the reactor can be made subcritical from all operating conditions, (2) reactivity transients from postulated accidents are controllable, and (3) the reactor is maintained sufficiently subcritical to preclude inadvertent criticality.
-
-SDM requirements vary throughout core life as a function of fuel depletion, RCS boron concentration, and Tavg. <span class="hi-exam">The most restrictive condition occurs at EOL, with Tavg at no-load operating temperature, associated with a postulated steam line break and resulting uncontrolled RCS cooldown.</span> The minimum 1.3% delta k/k is required to control this transient, consistent with FSAR assumptions.
-
-With Tavg ≤ 200°F, steam line break cooldown transients are minimal — 1% delta k/k provides adequate protection.
-
-The ±1% delta k/k core reactivity balance limit is based on engineering judgment. A 1% deviation is larger than expected for normal operation and corresponds to approximately 100 ppm boron concentration difference.
-
-### Moderator Temperature Coefficient (3/4.1.1.3)
-
-The MTC limits ensure this coefficient remains within the conditions assumed in accident and transient analyses. The MTC becomes more negative with burnup as boron concentration decreases. The 300 ppm surveillance limit provides a conservative check near EOL conditions.
-
-### Minimum Temperature for Criticality (3/4.1.1.4)
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.1.4 Minimum Temperature for Criticality</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.1.4</div>
 
 <span class="hi-exam">The 541°F minimum ensures: (1) MTC is within its analyzed range, (2) protective instrumentation is within normal operating range, (3) P-12 interlock is above its setpoint, (4) pressurizer is capable of being OPERABLE with a steam bubble, and (5) reactor vessel is above its minimum RTNDT temperature.</span>
+
+</div>
+</details>
 
 ---
 

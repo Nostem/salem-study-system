@@ -45,6 +45,20 @@ All full length rods shall be OPERABLE and positioned within:<br>
 
 *Amendment No. 311*
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3.1 Group Height (Rod Alignment)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.3.1</div>
+
+The specifications ensure that: (1) acceptable power distribution limits are maintained, (2) minimum SHUTDOWN MARGIN is maintained, and (3) effects of rod misalignment on accident analyses are limited.
+
+Misalignment of a rod requires measurement of peaking factors or a restriction in THERMAL POWER to provide assurance of fuel rod integrity during continued operation.
+
+</div>
+</details>
+
+---
+
 ## Position Indication Systems
 
 <div class="callout callout-important">
@@ -64,6 +78,23 @@ Shutdown and control rod position indication (RPI) systems shall be OPERABLE, in
 
 *Amendment No. 311*
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q56</div>
+TS 3.1.3.2.1.b bases states: <span class="hi-exam">"either the control console group 1 demand step counter or the plant computer 'bank step' display is sufficient to comply with this specification for group 1 rod position."</span> Only Group 1 demand steps input into the Plant Computer — Group 2 demand position is NOT available on the Plant Computer. When a group demand step counter fails, the Plant Computer can satisfy the channel check surveillance for <span class="hi-trap">Group 1 only</span>.
+</div>
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3.2.1 Position Indication Systems</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.3.2.1</div>
+
+Either the control console group 1 demand step counter or the plant computer "bank step" display is sufficient to comply with this specification for group 1 rod position. Only Group 1 demand steps are input into the Plant Computer — Group 2 demand position is NOT available on the Plant Computer. When a group demand step counter fails, the Plant Computer can satisfy the channel check surveillance for Group 1 only.
+
+</div>
+</details>
+
+---
+
 ## Rod Drop Time
 
 <div class="callout callout-important">
@@ -76,6 +107,18 @@ Rod drop time from 230 steps withdrawn to dashpot entry shall be <span class="hi
 **Action:** Restore drop time to within limit prior to proceeding to Mode 1 or 2. With 3 RCPs operating, restrict power to ≤76% RTP.
 
 **Surveillance:** Measure rod drop time prior to reactor criticality: after each head removal, after maintenance affecting specific rods, and per SFCP.
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3.3 Rod Drop Time</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.3.3</div>
+
+<span class="hi-exam">The maximum rod drop time of 2.7 seconds is consistent with the assumed rod drop time in the accident analyses.</span> Measurement with Tavg >541°F and all RCPs operating ensures representative insertion times during a reactor trip.
+
+</div>
+</details>
+
+---
 
 ## Shutdown Rod Insertion Limit
 
@@ -95,6 +138,8 @@ All shutdown rods shall be <span class="hi">FULLY WITHDRAWN</span>.
 
 *Amendment No. 311*
 
+---
+
 ## Control Rod Insertion Limit
 
 <div class="callout callout-important">
@@ -112,23 +157,6 @@ Control banks shall be limited in physical insertion as specified in the <span c
 | Control banks beyond limits (other reasons) | Restore within limits, OR reduce power to allowed fraction, OR be in Hot Standby | Within 2 hrs; or Hot Standby in 6 hrs |
 
 *Amendment No. 311*
-
----
-
-## Bases
-
-The specifications ensure that: (1) acceptable power distribution limits are maintained, (2) minimum SHUTDOWN MARGIN is maintained, and (3) effects of rod misalignment on accident analyses are limited.
-
-<span class="hi-exam">The maximum rod drop time of 2.7 seconds is consistent with the assumed rod drop time in the accident analyses.</span> Measurement with Tavg >541°F and all RCPs operating ensures representative insertion times during a reactor trip.
-
-Misalignment of a rod requires measurement of peaking factors or a restriction in THERMAL POWER to provide assurance of fuel rod integrity during continued operation.
-
-### Position Indication Bases (3.1.3.2.1.b)
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q56</div>
-TS 3.1.3.2.1.b bases states: <span class="hi-exam">"either the control console group 1 demand step counter or the plant computer 'bank step' display is sufficient to comply with this specification for group 1 rod position."</span> Only Group 1 demand steps input into the Plant Computer — Group 2 demand position is NOT available on the Plant Computer. When a group demand step counter fails, the Plant Computer can satisfy the channel check surveillance for <span class="hi-trap">Group 1 only</span>.
-</div>
 
 ---
 

@@ -24,6 +24,8 @@ b. From RWST via charging pump to RCS.
 
 **Action:** With no flow path OPERABLE, suspend all CORE ALTERATIONS or positive reactivity changes until at least one path is restored.
 
+---
+
 ## Flow Paths — Operating
 
 <div class="callout callout-important">
@@ -36,6 +38,20 @@ b. Two flow paths from RWST via charging pumps to RCS
 **Applicability:** Modes 1, 2, and 3
 
 **Action:** With only one flow path OPERABLE, restore within <span class="val-alarm">72 hours</span> or be in Hot Standby and borated to SDM ≥ 1% delta k/k at 200°F within 6 hours. Restore within next 7 days or be in Cold Shutdown within 30 hours.
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.2.1 / 3/4.1.2.2 Boron Injection Flow Paths</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.2.1 / 3/4.1.2.2</div>
+
+The boron injection system ensures negative reactivity control is available during each mode of operation. Required components include: borated water sources, charging pumps, separate flow paths, boric acid transfer pumps, and emergency power.
+
+<span class="hi-exam">With Tavg ≥ 350°F, two flow paths are required to ensure single failure capability.</span> The boration capability of either path is sufficient to provide SDM of 1.3% delta k/k after xenon decay and cooldown to 200°F. The maximum boration requirement occurs at EOL from full power equilibrium xenon conditions.
+
+</div>
+</details>
+
+---
 
 ## Charging Pumps — Shutdown
 
@@ -55,6 +71,8 @@ A maximum of one centrifugal charging pump shall be OPERABLE in Mode 4 (when col
 
 *Amendment No. 328*
 
+---
+
 ## Charging Pumps — Operating
 
 <div class="callout callout-important">
@@ -65,6 +83,8 @@ At least <span class="hi">two charging pumps</span> shall be OPERABLE.
 **Applicability:** Modes 1, 2, and 3
 
 **Action:** With only one OPERABLE, restore within <span class="val-alarm">72 hours</span> or be in Hot Standby and borated to SDM ≥ 1% delta k/k at 200°F within 6 hours. Restore within 7 days or be in Cold Shutdown within 30 hours.
+
+---
 
 ## Borated Water Sources — Shutdown
 
@@ -78,6 +98,22 @@ b. RWST: ≥ <span class="val-normal">37000 gal</span>, ≥ <span class="val-nor
 **Applicability:** Modes 5 and 6
 
 **Action:** With no borated water source OPERABLE, suspend CORE ALTERATIONS or positive reactivity changes.
+
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.2.5 Borated Water Sources (Shutdown)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.2.5</div>
+
+Boric acid tanks contain 3.75–4% by weight boric acid solution. To prevent precipitation, tank fluid and pipe wall temperatures are maintained ≥ 63°F (5°F margin above precipitation point). Flow path between BAT recirculation line and charging pump suction must be ≥ 50°F.
+
+<span class="hi-exam">Boron capability below 200°F requires either 2600 gallons of 6560 ppm from BATs or 7100 gallons of 2300 ppm from RWST</span> to provide SDM of 1% delta k/k after xenon decay and cooldown from 200°F to 140°F.
+
+The 37000 gallon RWST limit for Modes 5 and 6 is based on: 21210 gal (undetectable below lower tap), 8550 gal (instrument error), 7100 gal (SDM requirement), and 140 gal (rounding).
+
+</div>
+</details>
+
+---
 
 ## Borated Water Sources — Operating
 
@@ -99,28 +135,14 @@ b. RWST per Specification 3.5.5
 
 *Amendment No. 309*
 
----
-
-## Bases
-
-The boron injection system ensures negative reactivity control is available during each mode of operation. Required components include: borated water sources, charging pumps, separate flow paths, boric acid transfer pumps, and emergency power.
-
-<span class="hi-exam">With Tavg ≥ 350°F, two flow paths are required to ensure single failure capability.</span> The boration capability of either path is sufficient to provide SDM of 1.3% delta k/k after xenon decay and cooldown to 200°F. The maximum boration requirement occurs at EOL from full power equilibrium xenon conditions.
-
-Boric acid tanks contain 3.75–4% by weight boric acid solution. To prevent precipitation, tank fluid and pipe wall temperatures are maintained ≥ 63°F (5°F margin above precipitation point). Flow path between BAT recirculation line and charging pump suction must be ≥ 50°F.
-
-<span class="hi-exam">Boron capability below 200°F requires either 2600 gallons of 6560 ppm from BATs or 7100 gallons of 2300 ppm from RWST</span> to provide SDM of 1% delta k/k after xenon decay and cooldown from 200°F to 140°F.
-
-The 37000 gallon RWST limit for Modes 5 and 6 is based on: 21210 gal (undetectable below lower tap), 8550 gal (instrument error), 7100 gal (SDM requirement), and 140 gal (rounding).
-
----
-
-<a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
-
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 SRO-A2</div>
 Post-boration TS evaluation: with RWST at 2350 ppm and BAST at 6650 ppm, <span class="hi-exam">TS 3.1.2.6 Figure 3.1-2 requires combined BAST level > 96.5%</span>. After rapid boration for 3 stuck rods (4200 gal total), BASTs drop from 70% to 43% each (86% combined) — below required level. <span class="hi-exam">LCO 3.1.2.6.a.1 NOT met: restore boric acid storage system within 72 hours or Hot Standby in 6 hours.</span>
 </div>
+
+---
+
+<a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 
