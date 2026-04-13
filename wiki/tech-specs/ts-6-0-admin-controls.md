@@ -19,6 +19,14 @@ aliases:
 - A management directive signed by the senior corporate nuclear officer is reissued annually to all station personnel
 (TS 6.1)
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 6.0 Administrative Controls</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 6.0</div>
+Administrative controls establish the organizational structure, staffing requirements, procedural controls, and reporting requirements necessary to ensure safe plant operation. The safety limit violation actions ensure prompt shutdown, notification, and root cause analysis. The on-the-spot procedure change provisions balance operational flexibility with adequate oversight.
+</div>
+</details>
+
 ## 6.2 — Organization
 
 ### Shift Staffing and Licensing Requirements
@@ -146,12 +154,6 @@ Changes to the Bases can be made <span class="hi">without prior NRC approval</sp
 ## 6.17 — Control Room Envelope Habitability Program
 
 Ensures CRE occupants can control the reactor safely under normal conditions and maintain safe condition following a radiological event, hazardous chemical release, or smoke challenge. DBA dose limit: <span class="hi">5 rem TEDE</span> for the duration of the accident. Includes CRE boundary definition, configuration control, unfiltered air inleakage testing per Reg Guide 1.197, and CRE pressure measurement. (TS 6.17)
-
----
-
-## Bases
-
-Administrative controls establish the organizational structure, staffing requirements, procedural controls, and reporting requirements necessary to ensure safe plant operation. The safety limit violation actions ensure prompt shutdown, notification, and root cause analysis. The on-the-spot procedure change provisions balance operational flexibility with adequate oversight.
 
 ---
 

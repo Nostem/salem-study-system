@@ -37,6 +37,16 @@ RCS pressure shall not exceed <span class="hi">2735 psig</span>.
 - Modes 1 and 2: Be in Hot Standby with RCS pressure within limit within <span class="val-trip">1 hour</span>
 - Modes 3, 4, and 5: Reduce RCS pressure to within limit within <span class="val-trip">5 minutes</span>
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 2.1 Safety Limits</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 2.1</div>
+<span class="hi-exam">The reactor core safety limit prevents overheating of the fuel cladding and possible perforation that would release fission products to the reactor coolant.</span> The limit is defined by the DNB design criterion — the combination of power, pressure, and temperature that ensures adequate heat transfer from the fuel cladding to the coolant.
+
+The RCS pressure safety limit of 2735 psig (110% of design pressure of 2485 psig) protects the integrity of the RCS pressure boundary.
+</div>
+</details>
+
 ## 2.2 Reactor Trip System Instrumentation Setpoints (Table 2.2-1)
 
 | # | Functional Unit | Trip Setpoint | Allowable Value |
@@ -81,19 +91,13 @@ Rate-lag time constant: τ3 = 10 sec ±10%
 
 f2(delta-I) = 0 for all delta-I
 
----
-
-## Bases
-
-### Safety Limits
-
-<span class="hi-exam">The reactor core safety limit prevents overheating of the fuel cladding and possible perforation that would release fission products to the reactor coolant.</span> The limit is defined by the DNB design criterion — the combination of power, pressure, and temperature that ensures adequate heat transfer from the fuel cladding to the coolant.
-
-The RCS pressure safety limit of 2735 psig (110% of design pressure of 2485 psig) protects the integrity of the RCS pressure boundary.
-
-### Trip Setpoints
-
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 2.2 Reactor Trip System Instrumentation Setpoints</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 2.2</div>
 Trip setpoints are set conservatively with respect to the analytical limits used in the FSAR accident analyses. The margin between the trip setpoint and the analytical limit accounts for instrument uncertainties, response times, and environmental effects.
+</div>
+</details>
 
 ---
 

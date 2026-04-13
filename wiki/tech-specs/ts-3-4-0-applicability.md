@@ -34,6 +34,14 @@ When an LCO is not met and no applicable ACTION exists, within <span class="hi">
 LCO 3.0.3 is the "default" shutdown action when no specific ACTION applies. The 1-hour clock to BEGIN the shutdown starts when the LCO is not met. If corrective measures are completed, the ACTION may be taken per the specified time limits measured from the time of failure.
 </div>
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — LCO 3.0.3 Default Shutdown Action</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — LCO 3.0.3</div>
+<span class="hi-exam">The 1-hour provision to initiate shutdown recognizes that some LCO violations may be correctable in a short time, and an orderly shutdown is preferable to an immediate plant trip.</span> The successive mode reduction times (6/6/24 hours) provide an orderly shutdown without challenging plant systems.
+</div>
+</details>
+
 ### LCO 3.0.4 (Mode Entry Restrictions)
 
 <div class="callout callout-important">
@@ -61,6 +69,14 @@ Surveillances shall be met during the applicable MODES. Failure to meet a survei
 ### SR 4.0.2
 <span class="hi">Each surveillance shall be performed within the specified interval with a maximum allowable extension not to exceed 25% of the specified interval.</span>
 
+<details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — SR 4.0.2 Surveillance Interval Extension</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — SR 4.0.2</div>
+The 25% extension provides operational flexibility for scheduling surveillances at a time consistent with safe and orderly operation, while ensuring surveillance intervals are not extended indefinitely.
+</div>
+</details>
+
 ### SR 4.0.3 (Missed Surveillance)
 
 <div class="callout callout-important">
@@ -72,18 +88,6 @@ If a surveillance was not performed within its specified frequency, compliance w
 Entry into a MODE shall only be made when surveillances have been met within their specified frequency, except as provided by SR 4.0.3.
 
 *(Amendment No. 308)*
-
----
-
-## Bases
-
-### LCO 3.0.3
-
-<span class="hi-exam">The 1-hour provision to initiate shutdown recognizes that some LCO violations may be correctable in a short time, and an orderly shutdown is preferable to an immediate plant trip.</span> The successive mode reduction times (6/6/24 hours) provide an orderly shutdown without challenging plant systems.
-
-### SR 4.0.2
-
-The 25% extension provides operational flexibility for scheduling surveillances at a time consistent with safe and orderly operation, while ensuring surveillance intervals are not extended indefinitely.
 
 ---
 
