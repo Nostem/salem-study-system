@@ -43,11 +43,15 @@ With the SHUTDOWN MARGIN less than <span class="val-trip">1.3% delta k/k</span>,
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.1.1.1</div>
 
-A sufficient SHUTDOWN MARGIN ensures that: (1) the reactor can be made subcritical from all operating conditions, (2) reactivity transients from postulated accidents are controllable, and (3) the reactor is maintained sufficiently subcritical to preclude inadvertent criticality.
+A sufficient SHUTDOWN MARGIN ensures that: (1) the reactor can be made subcritical from all operating conditions, (2) reactivity transients from postulated accidents are controllable within acceptable limits, and (3) the reactor is maintained sufficiently subcritical to preclude inadvertent criticality in the shutdown condition.
 
-SDM requirements vary throughout core life as a function of fuel depletion, RCS boron concentration, and Tavg. <span class="hi-exam">The most restrictive condition occurs at EOL, with Tavg at no-load operating temperature, associated with a postulated steam line break and resulting uncontrolled RCS cooldown.</span> The minimum 1.3% delta k/k is required to control this transient, consistent with FSAR assumptions.
+SDM requirements vary throughout core life as a function of fuel depletion, RCS boron concentration, and Tavg. <span class="hi-exam">The most restrictive condition occurs at EOL, with Tavg at no-load operating temperature, associated with a postulated steam line break accident and resulting uncontrolled RCS cooldown. In the analysis of this accident, a minimum SHUTDOWN MARGIN of 1.3% Δk/k is initially required to control the reactivity transient.</span> The requirement is consistent with FSAR safety analysis assumptions.
 
-The ±1% delta k/k core reactivity balance limit is based on engineering judgment. A 1% deviation is larger than expected for normal operation and corresponds to approximately 100 ppm boron concentration difference.
+<span class="hi-exam">The ±1% Δk/k core reactivity balance limit is based on engineering judgment.</span> A 1% deviation from predicted is larger than expected for normal operation and should be evaluated. Since deviations are normally detected by comparing predicted and measured steady state RCS critical boron concentrations, a 1% Δk/k difference would correspond to approximately <span class="hi">100 ppm</span> boron concentration difference — well within the uncertainty limits for boron concentration sample analysis, so spurious violations are unlikely.
+
+Core reactivity is verified by periodic comparisons of measured and predicted RCS boron concentrations, with other core conditions fixed or stable (control rod position, moderator temperature, fuel temperature, fuel depletion, xenon, and samarium concentration). The surveillance frequency is controlled under the Surveillance Frequency Control Program.
+
+<span class="hi-exam">The predicted reactivity values shall be adjusted (normalized) to correspond to actual core conditions prior to exceeding a fuel burnup of 60 Effective Full Power Days after each fuel loading.</span> This ensures the design predicted core reactivity has been benchmarked against actual core performance early in the cycle. 60 EFPD allows sufficient time for core conditions to reach steady state while preventing operation for a large fraction of the fuel cycle without a benchmark.
 
 </div>
 </details>
@@ -74,7 +78,7 @@ With the SHUTDOWN MARGIN less than <span class="val-trip">1.0% delta k/k</span>,
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.1.1.2</div>
 
-With Tavg ≤ 200°F, steam line break cooldown transients are minimal — 1% delta k/k provides adequate protection. The lower SDM requirement reflects the reduced severity of reactivity excursions at cold conditions.
+<span class="hi-exam">With Tavg ≤ 200°F, the reactivity transients resulting from a postulated steam line break cooldown are minimal, and a <span class="hi">1% Δk/k</span> shutdown margin provides adequate protection.</span> The lower SDM requirement reflects the reduced severity of reactivity excursions at cold conditions compared to the EOL condition that governs the 1.3% limit above 200°F.
 
 </div>
 </details>
@@ -115,7 +119,11 @@ If the 300 ppm comparison shows MTC more negative than the surveillance limit, r
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.1.1.3</div>
 
-The MTC limits ensure this coefficient remains within the conditions assumed in accident and transient analyses. The MTC becomes more negative with burnup as boron concentration decreases. The 300 ppm surveillance limit provides a conservative check near EOL conditions.
+The limitations on MTC are provided to ensure that the value of this coefficient remains within the limiting condition assumed in the accident and transient analyses. <span class="hi-exam">The MTC values of this specification are applicable to a specific set of plant conditions; accordingly, verification of MTC values at conditions other than those explicitly stated will require extrapolation to those conditions in order to permit an accurate comparison.</span>
+
+<span class="hi-exam">The negative MTC value equivalent to the most positive moderator density coefficient (MDC) was obtained by incrementally correcting the MDC used in the FSAR analysis to normal operating conditions.</span> These corrections involved: (1) converting the MDC to its equivalent MTC based on the rate of change of moderator density with temperature at RATED THERMAL POWER conditions, and (2) subtracting from this value the largest differences in MTC observed between EOL (all rods withdrawn) RATED THERMAL POWER conditions and the most adverse conditions of moderator temperature and pressure, rod insertion, axial power skewing, and xenon concentration that can occur in normal operation. These corrections transformed the MDC value used in the FSAR analysis into the limiting EOL MTC value.
+
+<span class="hi-exam">The 300 ppm surveillance limit MTC value represents a conservative value at a core condition of 300 ppm equilibrium boron concentration</span> that is obtained by correcting the limiting EOL MTC for burnup and boron concentration. The surveillance requirements for measurement of MTC at the beginning and near the end of the fuel cycle are adequate to confirm the MTC remains within its limits, since this coefficient changes slowly due principally to the reduction in RCS boron concentration associated with fuel burnup.
 
 </div>
 </details>

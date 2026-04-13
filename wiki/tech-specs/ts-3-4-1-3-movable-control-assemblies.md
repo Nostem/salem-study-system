@@ -46,13 +46,30 @@ All full length rods shall be OPERABLE and positioned within:<br>
 *Amendment No. 311*
 
 <details>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3 Movable Control Assemblies (General)</summary>
+<div class="callout callout-bases">
+<div class="callout-label">Bases — 3/4.1.3 General</div>
+
+The specifications of this section ensure that: (1) acceptable power distribution limits are maintained, (2) the minimum SHUTDOWN MARGIN is maintained, and (3) the potential effects of rod misalignment on associated accident analyses are limited. OPERABILITY of the control rod position indicators is required to determine control rod positions and thereby ensure compliance with the control rod alignment and insertion limits.
+
+<span class="hi-exam">OPERABLE condition for the analog rod position indicators is defined as being capable of indicating rod position to within the allowed rod misalignment relative to the bank demand position for a range of positions:</span>
+- Shutdown Banks and Control Bank A: between <span class="hi">0 and 30 steps withdrawn</span> inclusive, and between <span class="hi">200 and 230 steps withdrawn</span> inclusive (verifying fully withdrawn or fully inserted, the normal operating modes for these banks)
+- Control Bank B: between <span class="hi">0 and 30 steps</span> withdrawn inclusive, and between <span class="hi">160 and 230 steps</span> withdrawn inclusive
+- Control Banks C and D: between <span class="hi">0 and 230 steps</span> withdrawn
+
+Comparison of the group demand counters to the bank insertion limits with verification of rod position via analog RPIs (after thermal soak after rod motion) is sufficient verification that the control rods are above the insertion limits. <span class="hi-exam">The full out position will be specified in the reload analysis for the cycle and will be administratively controlled within the band established by FULLY WITHDRAWN — this is allowable to minimize RCCA wear, consistent with Information Notice 87-19 and RCCA examinations conducted during Salem Unit 2 Spring 2008 outage (2R16) by AREVA NP (refer to LAR S09-01).</span>
+
+</div>
+</details>
+
+<details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3.1 Group Height (Rod Alignment)</summary>
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.1.3.1</div>
 
-The specifications ensure that: (1) acceptable power distribution limits are maintained, (2) minimum SHUTDOWN MARGIN is maintained, and (3) effects of rod misalignment on accident analyses are limited.
+<span class="hi-exam">The ACTION statements which permit limited variation from the basic requirements are accompanied by additional restrictions that ensure the original criteria are met. Misalignment of a rod requires measurement of peaking factors or a restriction in THERMAL POWER — either provides assurance of fuel rod integrity during continued operation.</span> The reactivity worth of a misaligned rod is limited for the remainder of the fuel cycle to prevent exceeding the assumption used in the accident analysis.
 
-Misalignment of a rod requires measurement of peaking factors or a restriction in THERMAL POWER to provide assurance of fuel rod integrity during continued operation.
+Control rod positions and OPERABILITY of the rod position indicators are required to be verified per the Surveillance Frequency Control Program, with more frequent verifications required if an automatic monitoring channel is inoperable. The Surveillance Frequency is based on operating experience, equipment reliability, and plant risk.
 
 </div>
 </details>
@@ -88,7 +105,15 @@ TS 3.1.3.2.1.b bases states: <span class="hi-exam">"either the control console g
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.1.3.2.1</div>
 
-Either the control console group 1 demand step counter or the plant computer "bank step" display is sufficient to comply with this specification for group 1 rod position. Only Group 1 demand steps are input into the Plant Computer — Group 2 demand position is NOT available on the Plant Computer. When a group demand step counter fails, the Plant Computer can satisfy the channel check surveillance for Group 1 only.
+<span class="hi-exam">The terms "Shutdown Rod Position Indicator," "Analog Rod Position Indicator," "Control Rod Position Indicator," and "Rod Position Indicator" are all used in these bases and all refer to indication driven by the output of the Analog Rod Position Indication (ARPI) system.</span>
+
+One method for determining rod position is the indicators on the control console. An alternate method is the plant computer. <span class="hi-exam">Either the control console indicator or plant computer is sufficient to comply with this specification.</span> The plant computer receives the same ARPI input as the control console indicators and provides equivalent or better resolution. The plant computer provides a digital readout of rod position, eliminating interpolation and parallax errors inherent to analog scales.
+
+Rod demand position is indicated on both the control console and plant computer. The rod demand position is a digital signal (a pulse generated each time the Rod Control System demands a step change). These pulses are "counted" and displayed by the control console group demand step counters. <span class="hi-exam">There are two group demand step counters for each bank of rods, with the exception of shutdown banks C and D.</span>
+
+<span class="hi-exam">Only the group 1 demand position of each rod bank is displayed on the plant computer — only the group 1 pulses are routed to the plant computer.</span> The group 1 demand position on the plant computer is labeled "Cont Bank A Steps" or "S/D Bank A Steps" etc. with no reference to group 1 or group 2. As the plant computer receives the same demand pulses as the control console group demand step counters, the plant computer "bank step" display provides an alternate method of determining group 1 rod demand position.
+
+<span class="hi-exam">Either the control console group 1 demand step counter or the plant computer "bank step" display is sufficient to comply with this specification for group 1 rod demand position. Only the control console group 2 demand counter can be used to comply with the specification for group 2 rod demand.</span>
 
 </div>
 </details>
@@ -113,7 +138,7 @@ Rod drop time from 230 steps withdrawn to dashpot entry shall be <span class="hi
 <div class="callout callout-bases">
 <div class="callout-label">Bases — 3/4.1.3.3</div>
 
-<span class="hi-exam">The maximum rod drop time of 2.7 seconds is consistent with the assumed rod drop time in the accident analyses.</span> Measurement with Tavg >541°F and all RCPs operating ensures representative insertion times during a reactor trip.
+<span class="hi-exam">The maximum rod drop time restriction of ≤2.7 seconds is consistent with the assumed rod drop time used in the accident analyses.</span> <span class="hi-exam">Measurement with Tavg >541°F and with all reactor coolant pumps operating ensures that the measured drop times will be representative of insertion times experienced during a reactor trip at operating conditions.</span>
 
 </div>
 </details>
