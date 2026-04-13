@@ -3,6 +3,8 @@
 ## Quality Standard
 This project requires the utmost care, meticulousness, and attention to detail. Every value, setpoint, and fact must be verified against source documents — never fabricated or guessed. Every section receives the same rigorous treatment regardless of perceived priority. Do not take shortcuts that sacrifice quality. There is no time constraint. Accuracy and completeness always take precedence over speed.
 
+Codex will review your output once you are done.
+
 ## What This Is
 A personal knowledge base for NRC RO/SRO licensing exam prep at Salem Nuclear Generating Station.
 Built using the Karpathy LLM Knowledge Base pattern: source docs go into `raw/`, an LLM incrementally
