@@ -98,6 +98,7 @@ status: draft
 - [[Technical Specifications Overview]]
 
 ## NRC Exams
+- [[2020 NRC Written Exam]]
 - [[2022 NRC Written Exam]]
 - [[2022 NRC Operating Exam]]
 - [[2023 NRC Written Exam]]
