@@ -34,6 +34,11 @@ EOP-FRHS-1 condensate pump feed: isolate all MS lines EXCEPT the selected SG (22
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q61</div>
+2PT-507 (Steam Header Pressure Transmitter) fails HIGH with steam dumps in <span class="hi-exam">MS PRESS mode</span>: controller sees high pressure → steam dump valves <span class="hi-exam">fully OPEN</span>. Following a Rx Trip, all steam dumps open → high steam flows → rapidly lowering RCS temperatures. When Tavg < <span class="val-trip">543°F</span>, <span class="hi-exam">MSLI and SI actuate</span> (high steam flow coincident with Lo-Lo Tavg). Simultaneously, <span class="hi-exam">P-12 (Lo-Lo Tavg) blocks all steam dumps closed</span>. <span class="hi-trap">Steam dumps will NOT re-open to cycle and maintain temperature — P-12 block holds them closed. Group 1 cooldown valves will not re-open until the operator manually selects BYPASS TAVG on both trains on 2CC3.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q43</div>
 2PT-507 (Steam Header Pressure Transmitter) fails LOW: in <span class="hi-exam">MS PRESS mode</span>, controller sees low pressure → steam dump valves <span class="hi-exam">CLOSE</span> (modulate closed thinking pressure is already low). With steam dumps closed, <span class="hi-exam">SG pressure rises</span> due to reduced heat removal from the RCS. MS10 atmospheric dump valves will open to maintain SG pressure. <span class="hi-trap">In TAVG mode, PT-507 failure has no effect on steam dump operation — TAVG mode uses Tavg error signal, not steam pressure.</span>
 </div>
@@ -42,7 +47,7 @@ EOP-FRHS-1 condensate pump feed: isolate all MS lines EXCEPT the selected SG (22
 
 - Related systems: [[Main Steam]], [[RCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
+- Related exam questions: [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
 - Related JPMs: [[2023 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

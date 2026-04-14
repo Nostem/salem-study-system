@@ -725,3 +725,110 @@ questions:
     ka_importance: 4.1
     type: RO
     tier_group: "Tier 3/Group 2"
+  - number: 71
+    topic: "Surveillance Dollar Sign ($) Significance"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem 2012 NRC Exam, Q68"
+    tech_specs:
+      - technical-specifications-overview
+    ka: "G2.2.12"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 3/Group 2"
+  - number: 72
+    topic: "Radwaste Release RP Support Requirement"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem 2010 NRC Exam, Q73"
+    systems:
+      - waste-liquid
+    ka: "G2.3.14"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 3/Group 3"
+  - number: 73
+    topic: "Emergency Dose Extension at ALERT"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem 2016 NRC Exam, Q71"
+    ka: "G2.3.4"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 3/Group 3"
+  - number: 74
+    topic: "EOP Continuous Action Verbs"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    ka: "G2.4.17"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 3/Group 4"
+  - number: 75
+    topic: "Containment Fire Response 2FP147"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank, Salem 2011 NRC Exam, Q74"
+    systems:
+      - fire-protection
+      - containment-systems
+    ka: "G2.4.25"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 3/Group 4"
+  - number: 96
+    topic: "Special Test or Evolution Screening"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: []
+    ka: "G2.2.7"
+    ka_importance: 3.6
+    type: SRO
+    tier_group: "Tier 3/Group EC"
+  - number: 97
+    topic: "Protected Equipment Program"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+    tech_specs:
+      - ts-3-4-0-applicability
+    ka: "G2.2.21"
+    ka_importance: 4.1
+    type: SRO
+    tier_group: "Tier 3/Group EC"
+  - number: 98
+    topic: "Waste Gas Release Restrictions"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Salem 2016 NRC Exam – Q98"
+    systems:
+      - waste-gas
+    ka: "G2.3.11"
+    ka_importance: 4.3
+    type: SRO
+    tier_group: "Tier 3/Group RC"
+  - number: 99
+    topic: "Emergency Coordinator Escalation"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Hope Creek 2015 NRC Exam – Q97"
+    systems: []
+    ka: "G2.4.37"
+    ka_importance: 4.1
+    type: SRO
+    tier_group: "Tier 3/Group EP"
+  - number: 100
+    topic: "EOP-TRIP-1 FRHS-1 Transition"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank – Salem Vision Database"
+    systems:
+      - auxiliary-feedwater
+    ka: "G2.4.14"
+    ka_importance: 4.5
+    type: SRO
+    tier_group: "Tier 3/Group EP"

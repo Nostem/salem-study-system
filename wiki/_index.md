@@ -197,6 +197,9 @@ status: draft
 - [[OP-AA-300 — Reactivity Management]]
 - [[OP-AA-102-103-1001 — Operator Burdens Program]]
 - [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]]
+- [[OP-AA-108-110 — Evaluation of Special Tests or Evolutions]]
+- [[OP-AA-108-116 — Protected Equipment Program]]
+- [[OP-AA-101-111-1003 — Use of Procedures]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
@@ -246,3 +249,5 @@ status: draft
 - [[RP-AA-300 — Radiological Survey Program]]
 - [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
 - [[S2.OP-SO.CVC-0008 — Rapid Boration]]
+- [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]]
+- [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]]

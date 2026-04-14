@@ -40,10 +40,15 @@ Loss of SGFP at >70% power (Step 2.3): auto turbine runback <span class="hi-exam
 21CN22 LP FWH inlet valve fails closed. OHA G-22 FW HTR IN VLV TRIP & LVL HI. CRS enters AB.CN-0001. CRS reviews Attachment 2 for load limitations — load reduction required to <span class="hi-exam">1098 MWe</span> (about 2-3% downpower). If SGFP suction pressure < <span class="hi-exam">320 psig</span>, PO takes CAS actions to open 21-23 CN108s (polisher bypass).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q93</div>
+On a condensate pump trip at 100% power: per AB.CN-0001, <span class="hi-exam">open 21-23CN108 (Polisher Bypass Valves) if SGFP suction pressure is less than <span class="val-alarm">320 psig</span></span>. Per Attachment 2, <span class="hi-exam">reduce Reactor Power to a maximum of <span class="val-alarm">85%</span></span>. <span class="hi-trap">265 psig is the CN47 automatic control setpoint (maintains minimum SGFP suction pressure), NOT the procedural threshold for opening CN108s. 75% is the power level for starting the third condensate pump per IOP-4, not the load reduction limit.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]]
-- Related exam questions: [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
+- Related exam questions: [[2020 Q64]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related JPMs: [[2022 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
