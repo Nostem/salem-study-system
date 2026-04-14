@@ -15,7 +15,7 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 During shift turnover, the on-coming RO notices an OHA window with reflash capability (multiple inputs) with a single strand of red tape diagonally across the annunciator window.<br><br>
-In accordance with OP-AA-102-103-1001, Operator Burdens Program, which ONE of the following describes the status of the annunciator window?
+In accordance with <span class="hi">OP-AA-102-103-1001, Operator Burdens Program</span>, which ONE of the following describes the status of the annunciator window?
 </div>
 
 <div style="margin-bottom:14px;">
