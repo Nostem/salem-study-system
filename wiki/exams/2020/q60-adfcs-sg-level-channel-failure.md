@@ -17,7 +17,7 @@ aliases:
 <strong>Given:</strong><br>
 &bull; Unit 2 is at 100% Power.<br>
 &bull; Steam Generator level control and SGFPs are in AUTO.<br>
-&bull; 21 Steam Generator NR Level Channel I failed high due to a sensor malfunction.<br>
+&bull; 21 Steam Generator NR <span class="hi">Level Channel I failed</span> high due to a sensor malfunction.<br>
 &bull; No corrective actions have been initiated yet.<br><br>
 Complete the following statement concerning the response of the feedwater control system if 21 Steam Generator NR Level Channel II fails LOW?<br><br>
 The Ovation Advanced Digital Feedwater System will initiate OHA G-7, ADFCS ALTERNATE ACTION, and ....
