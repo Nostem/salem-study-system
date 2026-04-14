@@ -174,6 +174,7 @@ status: draft
 - [[AB.ROD-0002 — Dropped Rod]]
 - [[AB.FUEL-0001 — Fuel Handling Incident]]
 - [[AB.115-0001 — Loss of 115V Vital Instrument Bus]]
+- [[AB.115-0002 — Loss of 2B 115V Vital Instrument Bus]]
 - [[AB.SW-0005 — Loss of All Service Water]]
 - [[AB.4KV-0001 — Loss of 4KV Vital Bus]]
 - [[AB.4KV-0003 — Loss of 2C 4KV Bus]]
