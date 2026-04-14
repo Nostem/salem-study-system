@@ -36,10 +36,16 @@ SBO Air Compressor start (SC.OP-SO.CA-0001): when all ECACs are unavailable duri
 During LOOP, CRS directs transfer of 22 Backup Group PZR heaters to emergency power supply per <span class="hi-exam">S2.OP-SO.PZR-0010 Section 5.3</span>. This is a manual field action requiring an NCO to physically manipulate disconnects and breakers at the 78 ft. and 84 ft. elevations.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #1</div>
+LOPA-1 crew requests assistance to restore power IAW AB.LOOP-0001 while continuing with LOPA-1 CAS. Blackout coping actions in Attachment 2, Part A completed within 30 minutes.
+</div>
+
 ## Connections
 
 - Related systems: [[DC Power]], [[RCPs]], [[CVCS]], [[Pressurizer & PRT]]
-- Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
+- Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.LOOP-0003 — Partial Loss of Offsite Power]]
 - Related exam questions: [[2023 Q9]], [[2023 Q10]]
 - Related JPMs: [[2020 JPM IP-j]], [[2023 JPM IP-i]], [[2022 JPM IP-i]]
+- Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]]

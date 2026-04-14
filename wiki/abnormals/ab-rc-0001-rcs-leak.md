@@ -35,10 +35,15 @@ Event 4: <span class="hi-exam">20 gpm RCS leak inside containment</span>. RO rep
 AB.RC-0001 can be entered for any indication of an RCS leak, but <span class="hi-trap">in Mode 4 with uncontrolled PZR level reduction, the procedure directs transfer to AB.LOCA-0001 (Shutdown LOCA)</span>. AB.RC-0001 actions for stopping the RHR pump and closing 21SJ49 (RHR Discharge to Cold Legs) are for Modes 1-3 RHR suction isolation, not Mode 4.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #2</div>
+Event 5: RCS leak with rapidly lowering PZR level and pressure. OHA E-28 PZR HTR ON PRESS LO, console alarms PZR LEVEL LO and CONT PRESS HI. CRS enters AB.RC-0001, initiates CAS — directs <span class="hi-exam">Trip Rx, Confirm Rx Trip, Initiate SI</span>. Immediately after trip, leak escalates to LBLOCA with auto SI failure.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[RCS]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
 - Related exam questions: [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
-- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

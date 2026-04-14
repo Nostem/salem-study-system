@@ -73,9 +73,14 @@ Stator Water Cooling: <span class="hi-exam">Unit 2 (GE SCW) is the ONLY unit wit
 ATWS turbine trip verification (EOP-FRSM-1 Step 6): confirmed by <span class="hi-exam">ALL turbine stop valve closed bi-stables LIT on 2RP4</span>. <span class="hi-trap">Auto Stop Oil low pressure bi-stables (2/3) on 2RP4 indicate a turbine trip demand, NOT confirmation the turbine actually tripped (stop valves may not have closed).</span> If turbine trip is not confirmed, dispatch operator to locally trip at the front standard.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #5</div>
+Main turbine fails to auto trip following reactor trip (23BF19 failure). <span class="hi-exam">Pistol grip manual trip also fails</span>. RO must trip turbine using <span class="hi-exam">turbine trip bezel pushbutton</span> (CT-13). If crew isolates main turbine by actuating MSLI, this also satisfies CT#1. Safety significance: failure to trip turbine after reactor trip causes continued steam demand → excessive RCS cooldown → challenge to subcriticality (return to power) and integrity (PTS) CFSTs, or transition to EOP-LOSC-1. <span class="hi-exam">Auto SI actuates following reactor trip due to turbine failing to trip and high steam flow conditions.</span>
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
+- Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
 - Related exam questions: [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

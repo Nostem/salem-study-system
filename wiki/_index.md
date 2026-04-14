@@ -179,6 +179,7 @@ status: draft
 - [[AB.SW-0004 — Loss of SW During SW Header Outage]]
 - [[AB.SW-0005 — Loss of All Service Water]]
 - [[AB.4KV-0001 — Loss of 4KV Vital Bus]]
+- [[AB.4KV-0002 — Loss of 2B 4KV Vital Bus]]
 - [[AB.4KV-0003 — Loss of 2C 4KV Bus]]
 
 ## Admin Procedures
@@ -213,6 +214,7 @@ status: draft
 - [[OP-AA-105-101 — Administrative Process for NRC License and Medical Requirements]]
 - [[OP-AA-105-102 — NRC Active License Maintenance]]
 - [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
+- [[SY-AA-102-201 — Fitness for Duty]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
@@ -261,8 +263,12 @@ status: draft
 - [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
 - [[RP-AA-300 — Radiological Survey Program]]
 - [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
+- [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
+- [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]]
 - [[S2.OP-SO.CVC-0008 — Rapid Boration]]
 - [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]]
 - [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]]
 - [[S2.OP-SO.CAN-0001 — Hydrogen Recombiner Operation]]
 - [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]]
+- [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
+- [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]

@@ -31,10 +31,15 @@ Step 3.10: with loss of circulators causing condensate pump issues (oscillating 
 High DP across 23A CW Traveling Screen. Entry cue: OHA K-1 (21-23 A CW SCRNWSH TRBL). 23A traveling screen running in Fast Speed with heavy grass/debris. Attachment 1 step 9 provides CW pump trip criteria based on screen DP: <span class="hi-exam">stop CW pump when DP > 6 feet, emergency trip when DP > 8 feet</span>. PO stops or emergency trips 23A CW pump.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #1</div>
+Loss of #4 SPT causes 23 CW Bus de-energization — 21A-23A CW pumps trip. Condenser DTs exceed <span class="hi-exam">27 F</span>, requiring turbine load reduction to less than 80%. CRS dispatches field operators to open 21-23MC62 (Turb Hood Spray Bypass Valves). CRS directs monitoring condensate pump suction piping for signs of flashing (temperature &lt;120 F). 23 CW Bus can be re-energized from Bus Section 24 via AB.LOOP-0003 Attachment 4.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Turbine]], [[Circ Water]]
 - Related EOPs: [[EOP-TRIP-1]]
 - Related exam questions: [[2020 Q64]], [[2023 Q93]]
-- Related scenarios: [[2022 Scenario 4]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

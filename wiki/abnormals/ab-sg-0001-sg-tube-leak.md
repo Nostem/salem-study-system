@@ -39,9 +39,14 @@ SG tube leak action levels are based on <span class="hi-exam">both leak rate AND
 23 SG tube leak (25-30 gpm). Entry cue: RMS alarms 2R15, 2R19C (23 SG B/D Rad Monitor), 2R53C (MS Line Rad Monitor) with PZR level lowering. Key actions: transfer to centrifugal charging pump IAW step 3.5 to stabilize PZR level. CRS evaluates <span class="hi-exam">TS 3.4.7.2.c action a — be in Hot Standby within 6 hours</span>. Continuous Action Summary: if leak exceeds makeup capability → trip reactor and actuate SI. In this scenario, the leak worsens to a 650 gpm tube rupture, triggering the CAS trip criteria.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+21 SG tube rupture during EOP-TRIP-2. Diagnostic indications: <span class="hi-exam">RCS pressure and PZR level lowering, OHA A-6 alarm, 2R15 condenser off-gas rad monitor in alarm</span>, 21 SG NR levels rising. CRS enters AB.SG-0001, implements CAS — leak exceeds makeup capability → manually initiate SI, return to EOP-TRIP-1. Eventually transition to EOP-SGTR-1 when 21 SG NR level identified as rising in an uncontrolled manner.
+</div>
+
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCS]]
 - Related exam questions: [[2023 Q81]]
-- Related scenarios: [[2022 Scenario 4]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

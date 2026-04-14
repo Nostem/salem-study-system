@@ -35,9 +35,15 @@ PZR vapor space SBLOCA with RCS pressure stable at 1450 psig, 10°F subcooling, 
 CAS in EOP-TRIP-3: <span class="hi-exam">if PZR level cannot be maintained > 11%, start ECCS pumps as necessary and GO TO EOP-LOCA-1</span>. From LOCA-1, alarms indicating a LOCA outside containment (2R41D Plant Vent in alarm, RHR sump overflow, RHR sump pump starts) direct transition to <span class="hi-exam">EOP-LOCA-6</span>. <span class="hi-trap">There is no direct transition from TRIP-3 to LOCA-6 — the path is TRIP-3 CAS → LOCA-1 → LOCA-6.</span> Steps 7 and 9 of TRIP-3 direct transitions to LOCA-2, but these would already have been completed by the time the letdown restoration step is reached.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #3</div>
+Entered from EOP-LOSC-1 following feedwater line break isolation. RO resets SI, Phase A, Phase B. Resets all SECs and 230V control centers. <span class="hi-exam">Stops all but one charging pump, stops SI pumps, stops RHR pumps.</span> Restores normal charging alignment: opens 2CV139 and 2CV140, closes 2SJ4/5/12/13, closes 2CV55, opens 2CV68 and 2CV69. Verifies <span class="hi-exam">RCS pressure &gt;1540 psig</span>. Restores normal letdown: opens 2CV2 and 2CV277, opens 2CV7, adjusts 2CV55 to maintain &gt;87 gpm, opens one letdown orifice, adjusts 2CV18 to maintain letdown pressure at <span class="hi-exam">300 psig</span>.
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]], [[RHR]]
-- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-6 — LOCA Outside Containment]]
+- Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]], [[RHR]], [[CVCS]]
+- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
 - Related exam questions: [[2020 Q25]], [[2023 Q38]], [[2023 Q23]], [[2023 Q76]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]

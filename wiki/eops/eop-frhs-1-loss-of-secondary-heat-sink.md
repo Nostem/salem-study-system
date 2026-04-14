@@ -50,11 +50,16 @@ Secondary heat sink restoration with CETs lowering and SG WR levels at 7%: feed 
 Step 3: "IS RCS PRESSURE GREATER THAN ANY INTACT OR RUPTURED SG PRESSURE?" — If <span class="hi-exam">NO, return to procedure in effect</span>. Per bases: for larger LOCA break sizes, the RCS depressurizes below intact SG pressures; SGs no longer function as a heat sink; core decay heat is removed by the <span class="hi-exam">RCS break flow</span>. Secondary heat sink is not required. <span class="hi-trap">Step 3.1 (place RHR in service if T-Hots < 350F) is only performed if Step 3 answer is YES, not NO.</span> <span class="hi-trap">Bleed and Feed is also not required — the LOCA itself provides the heat removal mechanism.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #5</div>
+Entered from EOP-TRIP-1 when all AFW lost: no SG NR levels >9% (15% adverse), total AFW flow <22E4 lbm/hr. Bleed and feed criteria: <span class="hi-exam">3 SG wide range levels <20% (25% adverse)</span>. Recovery via condensate: close all GB4s, close all SS94s, stop all RCPs. Select ONE SG for depressurization to <span class="hi-exam"><575 psig</span>. Caution note: <span class="hi-exam">steam 21 and 23 SGs last to maximize 23 AFW pump steam supply availability</span>. Depressurize using steam dumps (MS Pressure Control) or MS10s. Locally open selected SG BF40 or BF19 (120 ft TGA). Open BF13, open CN48s (SGFP bypass valves), close CN32s (SGFP suction valves). <span class="hi-exam">CT-43: establish condensate feed flow before bleed and feed is required.</span> Condensate flow established when SG pressure ~600 psig. WR level rising confirms feed flow (took ~6 min in validation after condensate flow started at 5-6%).
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related exam questions: [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
 - Related JPMs: [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

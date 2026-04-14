@@ -128,11 +128,21 @@ BF19 (Main FW Regulating Valves) on loss of all station air: <span class="hi-exa
 On trip of both SGFPs, only the <span class="hi-exam">MDAFW pumps auto-start</span>. The TDAFW pump does NOT auto-start on SGFP trip — it requires <span class="hi-exam">2/3 Lo-Lo level in 2/4 SGs (14% NR)</span>, RCP bus undervoltage, or manual start. Per S2.OP-SO.CN-0002, a removed-from-service SGFP is placed in the tripped condition, satisfying half of the "trip of both SGFPs" auto-start logic.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+21 SGFP trips on high thrust bearing oil pressure at 2% power. CRS enters AB.CN-0001. PO reports first-out annunciator: thrust bearing oil pressure high trip locked in and will not clear. RO reduces reactor power to <4% by inserting control rods. AFW auto-start fails — crew manually starts motor-driven AFW pumps.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #5</div>
+<span class="hi-exam">23BF19 feedwater reg valve fails closed</span> (ramped over 1 minute) at 85% power. OHA alarms: G-15 ADFCS TRBL, G-23 21/22 SGFP SPEED DEVIATION, 23 SG Program Setpoint Deviation. Manual control attempts unsuccessful. Both SGFPs trip on SI actuation following reactor trip — <span class="hi-exam">SGFPs NOT available during EOP-FRHS-1</span>. Condensate recovery path: open selected SG BF40 or BF19 locally (120 ft elevation TGA), open BF13, open <span class="hi-exam">21 and 22 CN48 (SGFP bypass valves)</span>, close <span class="hi-exam">21 and 22 CN32 (SGFP suction valves)</span>. Feed flow established when SG pressure depressurized to <575 psig.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related procedures: [[AB.CA-0001 — Loss of Control Air]]
+- Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
 - Related exam questions: [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

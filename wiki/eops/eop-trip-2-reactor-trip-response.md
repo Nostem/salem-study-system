@@ -40,10 +40,16 @@ Step 4 boration for 3 stuck Control Bank Delta rods: <span class="hi-exam">35 mi
 Step 15 directs selectively energizing PZR backup heaters from the vital bus during a LOOP. Per S2.OP-SO.PZR-0010, aligning PZR heaters adds approximately 210 KW to bus load and the maximum DG load at the 2000 hr rating is 2750 KW.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+Transitioned from EOP-TRIP-1 following reactor trip on 23 RCP high vibration (no SI required). During EOP-TRIP-2, 21 SG tube rupture develops (650 gpm). Crew identifies SGTR based on 21 SG NR levels rising and <span class="hi-exam">2R15 condenser off-gas rad monitor in alarm</span>. CRS enters AB.SG-0001, implements CAS — manually initiates SI, returns to EOP-TRIP-1.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
 - Related exam questions: [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related scenarios: [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

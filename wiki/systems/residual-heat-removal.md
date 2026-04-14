@@ -123,9 +123,19 @@ EOP-LOCA-4 hot leg recirculation with 21 RHR pump C/T: Step 4.0 directs <span cl
 21 RHR pump C/T for motor bearing inspection. During LBLOCA, <span class="hi-exam">22 RHR pump fails to start on 2B SEC signal</span> (CT#2, CT-5). PO blocks and resets 2B SEC, RO manually starts 22 RHR. Later in EOP-LOCA-1, <span class="hi-exam">22 RHR pump trips on overcurrent</span> — no RHR pumps available for emergency recirculation. CRS transitions to EOP-LOCA-5, Loss of Emergency Recirculation. Loss of both RHR pumps is the driver for CT#3 (RWST conservation actions).
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #2</div>
+21 RHR Pump C/T for motor bearing replacement (initial condition). During LBLOCA in EOP-TRIP-1, <span class="hi-exam">22 RHR pump fails to start on 2B SEC signal</span> — PO blocks and resets 2B SEC, RO manually starts 22 RHR (CT-5). Later in EOP-LOCA-1, <span class="hi-exam">22 RHR pump trips on overcurrent (relay flag dropped)</span>. No RHR pumps available — transition to EOP-LOCA-5.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q25</div>
 LOCA outside containment indication from RHR piping: <span class="hi-exam">OHA C-34 (22 RHR SUMP OVRFLO) and 23/24 RHR Sump Pump starts</span> indicate a leak in the RHR system outside containment. During SI termination (EOP-TRIP-3), these alarms combined with 2R41D Plant Vent alarm and inability to recover PZR level trigger the CAS to restart ECCS pumps and transition to EOP-LOCA-1, then to EOP-LOCA-6.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-b</div>
+Loss of both RHR pumps in Mode 5 with RCS depressurized and vented (2PS59). 21 RHR Pump trips on electrical fault. Alternate path: <span class="hi-exam">22 RHR Pump trips shortly after starting</span>. With both pumps lost, navigate AB.RHR-0001 to Step 3.32 and select <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (preferred when core exit TCs <span class="hi-exam">&lt;200°F</span>). Valve lineup: open <span class="hi-exam">RWST outlet (2SJ1/2SJ2)</span>, close <span class="hi-exam">VCT outlet (2CV40/2CV41)</span>, open <span class="hi-exam">BIT inlet/outlet (2SJ4/2SJ5, 2SJ12/2SJ13)</span>, close <span class="hi-exam">charging discharge (2CV68/2CV69)</span> — establishing borated injection from RWST through BIT to cold legs via the running charging pump.
 </div>
 
 ## Connections
@@ -133,6 +143,6 @@ LOCA outside containment indication from RHR piping: <span class="hi-exam">OHA C
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
 - Related exam questions: [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
-- Related JPMs: [[2023 JPM Sim-b]]
-- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]]
+- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

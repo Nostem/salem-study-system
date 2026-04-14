@@ -40,10 +40,16 @@ R19 SGBD radiation monitor WARNING setpoint automatic actuations: <span class="h
 2R32A (Fuel Handling Crane area rad monitor) failure to alarm setpoint: <span class="hi-exam">ONLY crane hoist-up operation is prevented</span>. No bypass interlock pushbutton exists. <span class="hi-exam">2R5 and 2R9 cause FHB exhaust to swap to 22 HEPA plus Charcoal but have NO crane interlocks.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+2R1B Control Room Radiation Monitor Channel 1 fails high. Control room ventilation actuates in <span class="hi-exam">Accident Pressurized Mode</span> (intake dampers for 2R1B Ch. 1 and 1R1B Ch. 2 are isolated, making both channels inoperable). PO calls Unit 1 to check 1R1B Ch. 2 reading (normal). After CAV reset and dampers reopened, 1R1B Ch. 2 is operable — CRS enters <span class="hi-exam">TS 3.3.3.1.b Action 28</span> (immediately place in Accident Pressurized or Recirculation mode) for 2R1B Ch. 1 only. Then transitions to <span class="hi-exam">Action 27</span> once only one channel remains inoperable.
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]], [[Refueling]]
+- Related systems: [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]], [[Refueling]], [[CAV]]
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related exam questions: [[2020 Q23]], [[2020 Q51]], [[2022 Q23]], [[2023 Q62]]
 - Related JPMs: [[2023 JPM Sim-h]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related scenarios: [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

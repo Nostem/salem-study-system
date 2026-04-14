@@ -106,12 +106,22 @@ Transfer of 22 Backup Group PZR heaters to emergency power (2A 460V Vital Bus) p
 PZR spray valve 2PS3 fails to close during SGTR-1 RCS depressurization. Both spray valves opened for depressurization per Table D criteria. When termination criteria met, RO closes both valves — <span class="hi-exam">2PS3 fails to close</span>. Recovery: <span class="hi-exam">stop 21 and 23 RCPs</span> to eliminate spray flow path (spray valves are in the RCP seal injection lines from the cold legs of loops 1 and 3). Also: earlier in scenario, 2PR2 PORV seat leakage diagnosed via tailpipe temperature and isolated by closing block valve <span class="hi-exam">2PR7</span>.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+During SGTR-1 depressurization, normal PZR spray is NOT available (23 RCP stopped). RCS depressurization uses <span class="hi-exam">PZR PORVs</span> IAW Table E criteria. After depressurization termination criteria met, RO attempts to close PORV — <span class="hi-exam">PORV fails to close (stuck open)</span>. Recovery: close associated PZR PORV block valve (CT-10). Creates a small-break LOCA in addition to tube rupture if not promptly isolated.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-a</div>
+PZR pressure channel 1 fails high causing both spray valves to open fully and rapid RCS pressure decrease. Operator places MPC in manual and lowers demand. <span class="hi-exam">Alternate path: 2PS1 spray valve fails to close</span> when MPC demand is zeroed. Operator places <span class="hi-exam">2PS1 in MANUAL and closes</span>. If 2PS1 cannot be closed, CAS at <span class="val-trip">2000 psig</span> directs reactor trip and stopping <span class="hi-exam">21 and 23 RCPs</span> (spray is fed from Loops 1 and 3 cold legs).
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
 - Related exam questions: [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
-- Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]]
-- Related scenarios: [[2022 Scenario 4]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]]
+- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

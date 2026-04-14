@@ -35,10 +35,21 @@ Entered from EOP-TRIP-1 when <span class="hi-exam">23 SG NR level rising in an u
 EOP-SGTR-1 CAS (Continuous Action Step): <span class="hi-exam">If SI has been terminated and RCS subcooling reaches 0°F → start ECCS pumps as necessary to restore subcooling and GO TO EOP-SGTR-3</span> (SGTR with LOCA – Subcooled Recovery). This CAS monitors throughout the procedure. <span class="hi-trap">SGTR-3 (Subcooled Recovery) is the correct transition — NOT SGTR-4 (Saturated Recovery). SGTR-2 (Post SGTR Cooldown) is only for normal recovery when subcooling is maintained. The key discriminator is: SI has been TERMINATED + subcooling lost = SGTR-3.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+Entered from EOP-TRIP-1 when <span class="hi-exam">21 SG NR level rising in an uncontrolled manner</span> following 650 gpm tube rupture. Isolate 21 SG: close 21AF21 and 21AF11 (feed — CT-18 Part 1, within 10 min), close <span class="hi-exam">21MS167</span> (steam — CT-18 Part 2), set 21MS10 to 1045 psig. Dispatch to close 21MS45 and 2SS321. Trip 23 AFW pump (lower to min speed first). Target cooldown temp from Table B: <span class="hi-exam">SG press >1000 psig = 503 F CETs</span>. Cooldown using steam dumps on intact SGs — bypass Tavg Lo-Lo pushbuttons. Stop cooldown placing MS Pressure Control in Auto (CT-19 Part 2). Normal spray NOT available (23 RCP stopped) — depressurize using <span class="hi-exam">PZR PORVs</span> IAW Table E. PORV fails to close → close block valve (CT-10).
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-g</div>
+EOP-SGTR-1 Step 10 RCS cooldown with steam dumps unavailable (permissive light NOT illuminated on 2RP4). Table B determines target temp from ruptured SG pressure: <span class="hi-exam">1045 psi → 503°F</span>. Condenser steam dumps unavailable → <span class="hi-exam">cooldown using MS10s on intact SGs (21, 22, 23)</span>. Lower MS10 setpoints to fully open for max-rate cooldown. When hottest CET reaches 503°F, stop cooldown by matching MS10 setpoints to current SG pressures. Do NOT dump steam from ruptured 24 SG.
+</div>
+
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RCS]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Pressurizer & PRT]], [[Main Steam]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]]
 - Related exam questions: [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
-- Related scenarios: [[2022 Scenario 4]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2020 JPM Sim-g]]
+- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

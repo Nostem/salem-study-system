@@ -80,6 +80,21 @@ LBLOCA with <span class="hi-exam">auto SI failure on both trains</span> (CT#1, C
 Entered following manual reactor trip and SI on 23 SG tube rupture (650 gpm exceeding makeup). During TRIP-1 immediate actions: PO throttles AFW to no less than <span class="hi-exam">22E4 lbm/hr</span>. PO identifies <span class="hi-exam">21 CFCU failed to start on SEC — blocks 2A SEC, resets, manually starts 21 CFCU in LOW speed</span>. Feed side of ruptured SG isolated during TRIP-1 (23AF21, 23AF11 closed). Transition to SGTR-1 when 23 SG NR level rising uncontrolled. Note: 2PR7 PORV block valve already closed from earlier PORV leakage event — only 2PR6 block valve open.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #1</div>
+Entered on LOOP with automatic reactor trip. Immediate actions completed — all 4KV Vital Buses found de-energized. Crew transitions to <span class="hi-exam">EOP-LOPA-1</span> based on all three vital buses de-energized.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #2</div>
+Entered following manual Rx trip on RCS leak. <span class="hi-exam">Auto SI fails on both trains — RO manually actuates SI (CT-2)</span>. 22 RHR pump fails to start on SEC signal (21 RHR C/T) — PO blocks and resets 2B SEC, <span class="hi-exam">RO manually starts 22 RHR pump (CT-5)</span>. CAS actions: stop RCPs at &lt;<span class="val-trip">1350 psig</span>, close charging mini-flows at &lt;<span class="val-trip">1500 psig</span>. Containment pressure &gt;15 psig — Phase B and Spray auto-initiate, MSLI auto-initiates. Transition to EOP-LOCA-1 based on containment pressure &gt;4 psig.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #3</div>
+ATWS — reactor fails to auto trip on 21 SG LVL LO-LO. <span class="hi-exam">RO trips reactor by opening both M-G set breakers 2E6D and 2G6D (CT-1)</span>. Auto SI actuates on containment pressure high. 21 SG faulted (large oscillating feed flow, no steam flow). RO manually initiates MSLI. <span class="hi-exam">21BF13 fails to close — PO manually closes</span>. Both RTBs fail to open — CRS directs WCC to locally open. Transition to EOP-LOSC-1 on 21 SG depressurizing in uncontrolled manner.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q76</div>
 Step 17, CCW Pump Operation Evaluation: during MODE III (LBLOCA + LOOP), <span class="hi-exam">directs implementation of EOP-APPX-1 to start one CCW pump</span>. Also directs S2.OP-SO.CC-0002(Q) for CCW HX operation, but that transition is only valid if ≥2 CCW pumps are in service and HXs are not in Auto. <span class="hi-trap">During MODE III SEC loading, no CCW pumps are running — so EOP-APPX-1 is the correct implementation, not SO.CC-0001 or SO.CC-0002.</span>
@@ -91,6 +106,6 @@ Step 17, CCW Pump Operation Evaluation: during MODE III (LBLOCA + LOOP), <span c
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]], [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
 - Related exam questions: [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
-- Related JPMs: [[2022 JPM Sim-f]]
-- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
+- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

@@ -108,3 +108,185 @@ jpms:
     task_number: "N0680010101"
     safety_function: 9
     rca: true
+  - id: "SRO-A1"
+    title: "Review Completed Shutdown Margin IAW SC.RE-ST.ZZ-0002"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "SC.RE-ST.ZZ-0002(Q)"
+    pages: "52-72"
+    ka: "G2.1.43"
+    ka_importance_ro: 4.1
+    ka_importance_sro: 4.3
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N1200030301"
+  - id: "SRO-A2"
+    title: "Evaluate Shift Staffing Requirements and Take Corrective Actions"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "LS-AA-119-1003"
+    pages: "73-94"
+    ka: "G2.1.5"
+    ka_importance_ro: 2.9
+    ka_importance_sro: 3.9
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N1230040302"
+  - id: "SRO-A3"
+    title: "Determine Component Operability and Technical Specification Action Statements"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S1.OP-SO.DG-0005"
+    pages: "95-108"
+    ka: "G2.2.37"
+    ka_importance_ro: 3.6
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "112670302"
+  - id: "SRO-A4"
+    title: "Select Release Path for Radioactive Liquid Waste IAW S1.OP-SO.WL-0002"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S1.OP-SO.WL-0002"
+    pages: "109-117"
+    ka: "G2.3.6"
+    ka_importance_ro: 2.5
+    ka_importance_sro: 3.8
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N0680070302"
+  - id: "SRO-A5"
+    title: "Classify Event and Complete/Approve ICMF IAW EP-SA-325-101"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "EP-SA-325-101"
+    pages: "118-129"
+    ka: "G2.4.41"
+    ka_importance_ro: 2.9
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: true
+    time_critical_limit_minutes: 15
+    alternate_path: false
+    source: New
+    task_number: "1240020502"
+scenarios:
+  - number: 1
+    title: "Power Ascension / Station Blackout"
+    pages: "281-316"
+    num_events: 6
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-LOPA-1
+    abnormals_entered:
+      - AB.CVC-0001
+      - AB.CW-0001
+      - AB.LOOP-0003
+      - AB.LOAD-0001
+      - AB.LOOP-0001
+    critical_tasks:
+      - id: "CT-24"
+        description: "Energize at least one AC emergency bus before transition out of EOP-LOPA-1"
+        time_critical: false
+      - id: "CT-25"
+        description: "Manually start one SW pump for EDG cooling before transition out of EOP-LOPA-1"
+        time_critical: false
+  - number: 2
+    title: "Load Reduction / LBLOCA / Loss of Emergency Recirculation"
+    pages: "317-358"
+    num_events: 7
+    num_critical_tasks: 3
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-LOCA-1
+      - EOP-LOCA-5
+    abnormals_entered:
+      - AB.COND-0001
+      - AB.ROD-0003
+      - AB.RC-0001
+    critical_tasks:
+      - id: "CT-2"
+        description: "Manually actuate SI before transition out of EOP-TRIP-1"
+        time_critical: false
+      - id: "CT-5"
+        description: "Manually start one low head ECCS pump before transition out of EOP-TRIP-1"
+        time_critical: false
+      - id: "CT-29"
+        description: "Makeup to RWST and minimize RWST outflow before ECCS pumps cavitate"
+        time_critical: false
+  - number: 3
+    title: "ATWS / Feedwater Line Break"
+    pages: "359-394"
+    num_events: 7
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-LOSC-1
+      - EOP-TRIP-3
+    abnormals_entered:
+      - AB.CVC-0001
+      - AB.SW-0001
+      - AB.CN-0001
+      - AB.LOAD-0001
+    critical_tasks:
+      - id: "CT-1"
+        description: "Manually trip reactor before transition to EOP-FRSM-1 is required"
+        time_critical: false
+      - id: "CT-17"
+        description: "Isolate feed and steam flow to faulted SG before transition out of EOP-LOSC-1"
+        time_critical: false
+  - number: 4
+    title: "SGTR / PORV Failure"
+    pages: "395-431"
+    num_events: 8
+    num_critical_tasks: 3
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-TRIP-2
+      - EOP-SGTR-1
+    abnormals_entered:
+      - AB.RAD-0001
+      - AB.CN-0001
+      - AB.RCP-0001
+      - AB.SG-0001
+    critical_tasks:
+      - id: "CT-18"
+        description: "Isolate feed and steam flow to ruptured SG before transition to SGTR-3"
+        time_critical: true
+        time_windows:
+          - action: "Isolate feed flow (close 21AF21 and 21AF11)"
+            limit_minutes: 10
+      - id: "CT-19"
+        description: "Control initial RCS cooldown so that transition from SGTR-1 does not occur"
+        time_critical: false
+      - id: "CT-10"
+        description: "Close PZR PORV block valve of stuck open PZR PORV"
+        time_critical: false
+  - number: 5
+    title: "Loss of Heat Sink / Condensate Recovery"
+    pages: "432-463"
+    num_events: 8
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-FRHS-1
+    abnormals_entered:
+      - AB.ROD-0003
+      - AB.4KV-0002
+    critical_tasks:
+      - id: "CT-13"
+        description: "Manually trip the turbine before severe challenge to subcriticality or integrity CFST"
+        time_critical: false
+      - id: "CT-43"
+        description: "Establish feedwater flow into at least one SG before bleed and feed is required"
+        time_critical: false

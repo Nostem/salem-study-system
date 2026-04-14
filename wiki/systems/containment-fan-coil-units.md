@@ -129,6 +129,11 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #3</div>
+21 SW Accumulator Tank pressure drops below operable band (<span class="hi-exam">138-157 psig</span>) — 21 and 22 CFCUs declared inoperable. PO stops 21 and 22 CFCUs and isolates from field by closing 21/22 SW76 and 21/22 SW54. CRS enters <span class="hi-exam">TS 3.6.1.1 (1 hour)</span> for containment integrity and <span class="hi-exam">TS 3.6.2.3 (14 days)</span> for two CFCUs inoperable.
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2020 #4</div>
 25 CFCU trips in low speed on overcurrent protection (low speed breaker open, overcurrent flag up at 84 ft switchgear room). CRS directs starting 23 CFCU in high speed. TS entries: <span class="hi-exam">TS 3.6.2.3 Action a (14 days)</span> and <span class="hi-exam">TS 3.6.1.1 (1 hour containment integrity until control power removed)</span>. CRS directs WCC to open control power for 25 CFCU high and low speed breakers to satisfy containment integrity requirements.
 </div>
@@ -138,5 +143,5 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related exam questions: [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]]
-- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

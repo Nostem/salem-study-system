@@ -51,6 +51,11 @@ Step 14 — accumulator isolation: when at least two RCS T-Hots < <span class="h
 Entered from EOP-TRIP-1 following LBLOCA based on <span class="hi-exam">containment pressure &gt;4 psig</span> (or two or more Table J channels not normal). In LOCA-1: RO confirms all RCPs stopped, PO maintains AFW flow. RO resets Phase A, opens 21 and 22 CA330s. RO resets both trains of SI, PO resets SECs. PO stops unloaded EDGs. <span class="hi-exam">22 RHR pump trips</span> during LOCA-1 — CRS determines no RHR pumps available and transitions to EOP-LOCA-5 (loss of emergency recirculation). Possible <span class="hi">CFST Purple Path on Thermal Shock</span> (FRTS-1) during LOCA-1 — enter/exit with no actions performed.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #2</div>
+Entered from EOP-TRIP-1 following LBLOCA based on <span class="hi-exam">containment pressure &gt;4 psig</span>. In LOCA-1: RO resets SI and Phase A, opens 21 and 22 CA330s. PO resets all SECs, stops unloaded EDGs. RO reports subcooling NOT &gt;0 F, RHR not aligned for cold leg recirc, RHR flow &gt;300 gpm. <span class="hi-exam">22 RHR Pump trips (overcurrent)</span> — no RHR pumps available (21 RHR C/T). CRS transitions to <span class="hi-exam">EOP-LOCA-5</span> based on no RHR pumps available at Step 16.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q25</div>
 LOCA outside containment recognition from EOP-LOCA-1: alarms indicating a LOCA outside containment include <span class="hi-exam">2R41D (Plant Vent) in alarm, RHR sump overflow (OHA C-34), and RHR sump pump starts</span>. Combined with inability to recover PZR level, the transition path is from <span class="hi-exam">EOP-LOCA-1 to EOP-LOCA-6</span>. Key recognition: the crew arrives at LOCA-1 via the TRIP-3 CAS (PZR level cannot be maintained > 11%).
@@ -62,5 +67,5 @@ LOCA outside containment recognition from EOP-LOCA-1: alarms indicating a LOCA o
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]]
 - Related exam questions: [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]]
-- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

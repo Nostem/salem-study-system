@@ -36,8 +36,13 @@ Provides guidance for responding to a loss of condenser vacuum, including action
 Event 2: <span class="hi-exam">24 Vacuum Pump trips</span>. PO enters AB.COND-0001. PO initiates Att 1 CAS, dispatches operator for Att 2 local checks. PO starts all available vacuum pumps — 22 Vacuum Pump trips after starting, 25 Vacuum Pump starts but <span class="hi-exam">25AR25 fails to open</span> and must be manually opened. Backpressure stabilizes.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #2</div>
+Event 3: 24 Vacuum Pump trips. PO enters AB.COND-0001. Dispatches operator for Att 2 local checks — reports no abnormal conditions except breaker tripped open. PO starts all available vacuum pumps. <span class="hi-exam">22 Vacuum Pump trips after start; 25AR25 fails to open on 25 Vacuum Pump start</span> — PO manually opens 25AR25. Backpressure improves.
+</div>
+
 ## Connections
 
 - Related systems: [[Condenser Air Removal]], [[Main Turbine]]
-- Related exam: [[2022 NRC Operating Exam]]
-- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
+- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
+- Related exam: [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

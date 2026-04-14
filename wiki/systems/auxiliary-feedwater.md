@@ -94,11 +94,21 @@ ICMF during SGTR: TD AFW pump (23 AFW) takes steam from <span class="hi-exam">21
 Loss of all AFW: 21 AFP C/T for oil bubbler replacement (initial condition). 23 AFP fails to auto start on SI — PO manually starts. <span class="hi-exam">22 AFP trips on overcurrent</span>. <span class="hi-exam">23 AFP trips on overspeed</span>. No SG NR levels > 9% (15% adverse), total AFW flow < 22E4 lbm/hr. CFST Heat Sink Red Path → transition to EOP-FRHS-1. <span class="hi-exam">CT#2 (CT-43): Establish feed flow to one SG before bleed and feed is required.</span> Recovery via condensate system (MS10 depressurization + BF40/BF19 bypass).
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+At 2% power during startup, 21 SGFP trips — AFW pumps <span class="hi-exam">fail to auto-start</span> (both motor-driven AFW pump auto-start signals failed). PO manually starts 21 and 22 AFW pumps, sets 21-24 AF21 demands to 0% first, then throttles AF21s to maintain SG levels between +/-5% of program. PO throttles AFW flow to no less than <span class="hi-exam">22E4 lbm/hr</span> after reactor trip.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #5</div>
+Complete loss of all AFW following reactor trip: <span class="hi-exam">21 AFP trips on overcurrent</span> (overcurrent relay flag up), <span class="hi-exam">22 MDAFW pump lost with 2B 4KV bus</span> (bus differential protection), <span class="hi-exam">23 AFP trips on overspeed</span>, <span class="hi-exam">MSPI AFW pump fails on overspeed</span>. No SG NR levels >9% (15% adverse), total AFW flow <22E4 lbm/hr → transition to EOP-FRHS-1. CT-43: establish condensate feed flow before bleed and feed required. Bleed and feed criteria: 3 WR levels <20% (25% adverse). Caution: steam 21 and 23 SGs last to maximize 23 AFW pump steam supply availability.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam questions: [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
 - Related JPMs: [[2023 JPM SRO-A4]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

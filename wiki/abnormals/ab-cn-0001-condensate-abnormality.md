@@ -45,10 +45,20 @@ Loss of SGFP at >70% power (Step 2.3): auto turbine runback <span class="hi-exam
 On a condensate pump trip at 100% power: per AB.CN-0001, <span class="hi-exam">open 21-23CN108 (Polisher Bypass Valves) if SGFP suction pressure is less than <span class="val-alarm">320 psig</span></span>. Per Attachment 2, <span class="hi-exam">reduce Reactor Power to a maximum of <span class="val-alarm">85%</span></span>. <span class="hi-trap">265 psig is the CN47 automatic control setpoint (maintains minimum SGFP suction pressure), NOT the procedural threshold for opening CN108s. 75% is the power level for starting the third condensate pump per IOP-4, not the load reduction limit.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+21 SGFP trips on high thrust bearing oil pressure at 2% power (first-out annunciator: thrust bearing oil pressure high, locked in, will not clear). CRS enters AB.CN-0001 — immediate actions not met. RO reduces reactor power to <4% by inserting control rods. AFW pumps fail to auto-start on low SG levels — crew manually starts 21 and 22 motor-driven AFW pumps.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #3</div>
+23 Condensate Pump trips. SGFP suction pressure less than <span class="hi-exam">320 psig</span> — PO opens 21-23 CN108s (Polisher Bypass Valves). CRS evaluates Att 2, Section 4.0 — determines <span class="hi-exam">load reduction to 85% at <=5%/min</span> required. Crew enters AB.LOAD-0001 for load reduction.
+</div>
+
 ## Connections
 
-- Related systems: [[Feed & Condensate]], [[Main Turbine]]
+- Related systems: [[Feed & Condensate]], [[Main Turbine]], [[AFW]]
 - Related exam questions: [[2020 Q64]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related JPMs: [[2022 JPM Sim-e]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

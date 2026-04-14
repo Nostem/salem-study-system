@@ -176,10 +176,15 @@ RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <s
 23 RCP motor bearing oil level OHA actuates. Motor bearing temperatures and vibrations rising — exceed AB.RCP-0001 trip criteria of <span class="hi-exam">motor bearing temp > 175 degF</span> or <span class="hi-exam">motor vibrations > 5 mils</span>. CRS directs RO to trip reactor and stop 23 RCP IAW AB.RCP-0001 Attachment 2. Event triggers entry to EOP-TRIP-1.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+23 RCP shaft vibration exceeds <span class="hi-exam">20 mils</span> on 2RP3 monitor (OHA D-36 RCP VIB HI). CRS enters AB.RCP-0001 and implements CAS — trip reactor and stop 23 RCP. Consequence: loss of 23 RCP means <span class="hi-exam">normal PZR spray unavailable</span> during subsequent SGTR-1 depressurization (spray valves fed from loops 1 and 3 cold legs). RCS depressurization must use PZR PORVs instead. Also: 23 SG NR level may appear to rise after 23 RCP stop due to loss of forced circulation reducing steaming effect.
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
 - Related exam questions: [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related JPMs: [[2022 JPM Sim-d]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
