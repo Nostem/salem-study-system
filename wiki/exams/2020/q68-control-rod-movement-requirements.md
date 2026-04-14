@@ -14,7 +14,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-During non-transient conditions, what is the MINIMUM information that the reactor operator shall state just prior to manually manipulating control rods in accordance with OP-AP-300-1001, PWR Control Rod Movement Requirements?
+During non-transient conditions, what is the MINIMUM information that the reactor operator shall state just prior to manually manipulating control rods in accordance with <span class="hi">OP-AP-300-1001, PWR Control Rod Movement Requirements</span>?
 </div>
 
 <div style="margin-bottom:14px;">
