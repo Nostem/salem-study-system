@@ -18,12 +18,13 @@ interface GraphEdge {
   type: 'system' | 'procedure' | 'eop' | 'tech-spec' | 'exam' | 'inline';
 }
 
+// Subtle edge colors
 const EDGE_COLORS: Record<string, string> = {
-  system: '#60a5fa',
-  procedure: '#6b7280',
-  eop: '#ef4444',
-  'tech-spec': '#10b981',
-  exam: '#f59e0b',
+  system: '#2a4a6b',
+  procedure: '#2a2f36',
+  eop: '#4a2020',
+  'tech-spec': '#1a3a2a',
+  exam: '#3a3020',
   inline: '#1a2035',
 };
 
@@ -76,7 +77,8 @@ if (data && data.nodes.length > 1) {
       .data(data.edges)
       .join('line')
       .attr('stroke', (d: any) => EDGE_COLORS[d.type] ?? '#1a2035')
-      .attr('stroke-width', 1);
+      .attr('stroke-width', 1)
+      .attr('stroke-opacity', 0.5);
 
     // Nodes
     const node = g.append('g')
@@ -108,7 +110,7 @@ if (data && data.nodes.length > 1) {
       .style('pointer-events', 'none')
       .style('opacity', (d: GraphNode) => d.id === data.currentSlug ? 1 : 0);
 
-    // Hover — show labels for hovered node and its connections
+    // Hover — show label for ONLY the hovered node
     node
       .on('mouseover', (_event: any, d: GraphNode) => {
         const connected = new Set<string>();
@@ -119,18 +121,19 @@ if (data && data.nodes.length > 1) {
           if (src === d.id) connected.add(tgt);
           if (tgt === d.id) connected.add(src);
         });
-        label.style('opacity', (n: GraphNode) => connected.has(n.id) ? 1 : 0);
+        // Only show label for the hovered node itself
+        label.style('opacity', (n: GraphNode) => n.id === d.id ? 1 : (n.id === data.currentSlug ? 1 : 0));
         node.attr('opacity', (n: GraphNode) => connected.has(n.id) ? 1 : 0.2);
         link.attr('opacity', (e: any) => {
           const src = typeof e.source === 'string' ? e.source : e.source.id;
           const tgt = typeof e.target === 'string' ? e.target : e.target.id;
-          return connected.has(src) && connected.has(tgt) ? 1 : 0.05;
+          return connected.has(src) && connected.has(tgt) ? 0.6 : 0.05;
         });
       })
       .on('mouseout', () => {
         label.style('opacity', (n: GraphNode) => n.id === data.currentSlug ? 1 : 0);
         node.attr('opacity', 1);
-        link.attr('opacity', 1);
+        link.attr('opacity', 0.5);
       });
 
     simulation.on('tick', () => {

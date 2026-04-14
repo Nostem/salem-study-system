@@ -28,12 +28,13 @@ const CATEGORY_COLORS: Record<string, string> = {
   abnormals: '#6b7280',
 };
 
+// Subtle edge colors — just enough tint to distinguish, not overpower
 const EDGE_COLORS: Record<string, string> = {
-  system: '#60a5fa',
-  procedure: '#6b7280',
-  eop: '#ef4444',
-  'tech-spec': '#10b981',
-  exam: '#f59e0b',
+  system: '#2a4a6b',
+  procedure: '#2a2f36',
+  eop: '#4a2020',
+  'tech-spec': '#1a3a2a',
+  exam: '#3a3020',
   inline: '#1a2035',
 };
 
@@ -59,11 +60,19 @@ if (data && data.nodes.length > 0) {
       .on('zoom', (event) => g.attr('transform', event.transform))
   );
 
+  // Connection-weighted physics: high-connection nodes repel more strongly,
+  // creating natural hub-spoke clusters
   const simulation = d3.forceSimulation<GraphNode>(data.nodes)
     .force('link', d3.forceLink<GraphNode, GraphEdge>(data.edges).id(d => d.id).distance(80))
-    .force('charge', d3.forceManyBody().strength(-200))
+    .force('charge', d3.forceManyBody<GraphNode>().strength((d: GraphNode) => {
+      if (d.isExam) return -30;
+      return -100 - (d.connections * 15);
+    }))
     .force('center', d3.forceCenter(width / 2, height / 2))
-    .force('collision', d3.forceCollide().radius(20));
+    .force('collision', d3.forceCollide<GraphNode>().radius((d: GraphNode) => {
+      if (d.isExam) return 4;
+      return 10 + d.connections * 1.5;
+    }));
 
   // Edges
   const link = g.append('g')
@@ -72,7 +81,7 @@ if (data && data.nodes.length > 0) {
     .join('line')
     .attr('stroke', (d: any) => EDGE_COLORS[d.type] ?? '#1a2035')
     .attr('stroke-width', (d: any) => d.type === 'exam' ? 0.5 : 1)
-    .attr('stroke-opacity', (d: any) => d.type === 'exam' ? 0.2 : 0.8);
+    .attr('stroke-opacity', (d: any) => d.type === 'exam' ? 0.15 : 0.4);
 
   // Nodes
   const node = g.append('g')
@@ -102,16 +111,16 @@ if (data && data.nodes.length > 0) {
       link.attr('opacity', (e: any) => {
         const src = typeof e.source === 'string' ? e.source : e.source.id;
         const tgt = typeof e.target === 'string' ? e.target : e.target.id;
-        return connected.has(src) && connected.has(tgt) ? 1 : 0.05;
+        return connected.has(src) && connected.has(tgt) ? 0.6 : 0.03;
       });
-      // Show labels for connected non-exam nodes only
-      label.style('opacity', (n: GraphNode) => connected.has(n.id) && !n.isExam ? 1 : 0);
+      // Show label for ONLY the hovered node (not all connected nodes)
+      label.style('opacity', (n: GraphNode) => n.id === d.id && !n.isExam ? 1 : 0);
     })
     .on('mouseout', () => {
       node.attr('opacity', (n: GraphNode) => n.isExam ? 0.4 : 1);
       link.attr('opacity', (e: any) => {
         const type = (e as any).type ?? 'inline';
-        return type === 'exam' ? 0.2 : 0.8;
+        return type === 'exam' ? 0.15 : 0.4;
       });
       label.style('opacity', 0);
     })
@@ -173,7 +182,7 @@ if (data && data.nodes.length > 0) {
     });
 
     link
-      .attr('stroke-opacity', (d: any) => hiddenTypes.has(d.type) ? 0 : (d.type === 'exam' ? 0.2 : 0.8))
+      .attr('stroke-opacity', (d: any) => hiddenTypes.has(d.type) ? 0 : (d.type === 'exam' ? 0.15 : 0.4))
       .attr('pointer-events', (d: any) => hiddenTypes.has(d.type) ? 'none' : 'auto');
 
     // When exam edges hidden, make exam nodes even more transparent
