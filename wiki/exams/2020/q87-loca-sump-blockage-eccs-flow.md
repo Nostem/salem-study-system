@@ -33,7 +33,7 @@ At T+16 minutes:<br>
 Note: 2-EOP-APPX-7, Containment Sump Blockage Guideline<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-EOP-LOCA-5, Loss of Emergency Recirculation<br><br>
 Based on the above conditions, what procedure will the CRS enter NEXT to address this event and what is the MINIMUM ECCS Flow Rate required for decay heat removal at T+16 minutes?<br><br>
-[REFERENCES PROVIDED]
+<span class="val-normal">[REFERENCES PROVIDED]</span>
 </div>
 
 <div style="margin-bottom:14px;">
