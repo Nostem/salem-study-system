@@ -28,7 +28,7 @@ Subsequently, the following alarms and indications are received in the Control R
 <br>
 Assume the Chemistry parameters above continue over the next hour.<br>
 Which ONE of the following describes the actions required in accordance with S2.OP-AB.CHEM-0001, Abnormal Secondary Plant Chemistry?<br>
-[REFERENCE PROVIDED]
+<span class="val-normal">[REFERENCE PROVIDED]</span>
 </div>
 
 <div style="margin-bottom:14px;">
