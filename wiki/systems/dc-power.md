@@ -101,12 +101,7 @@ Loss of 2A 125 VDC Bus loads: <span class="hi-exam">2A EDG is NOT available for 
 - 1 charger inoperable: 24 hours (with spare charger)
 - 1 of 3 28V supplies inoperable: 48 hours
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q80</div>
-Per EOP-LOPA-1 step 29: <span class="hi-exam">decision to go to EOP-LOPA-4 (Extended Loss of All AC) must be made within 1 hour</span> of loss of all AC power. Step 29.1: if AC Power cannot be restored within <span class="hi-exam">4 hours</span>, transition to LOPA-4. Battery capacity: <span class="hi-exam">2 hours without load shed, 4 hours with EOP-LOPA-1 load shedding</span>. The 1-hour decision point ensures LOPA-4 actions begin early enough to extend battery life beyond the 4-hour coping window if needed.
-</div>
-
 ## Connections
 
-- Related exam questions: [[2020 Q13]], [[2020 Q49]], [[2020 Q80]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
+- Related exam questions: [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

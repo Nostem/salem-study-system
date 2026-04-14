@@ -7,6 +7,10 @@ aliases:
   - 2020-Q64
 ---
 
+<div style="background:#2d1b1b;border:1px solid #7f1d1d;border-radius:8px;padding:12px 16px;margin-bottom:16px;font-size:13px;color:#fca5a5;">
+<strong>DISCLAIMER:</strong> This question is outdated. AB.CW no longer specifies an exact power level reduction to 83%. It only states to perform a rapid load reduction to prevent flashing in the Condensate System.
+</div>
+
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
 <span style="color:#60a5fa;font-size:14px;font-weight:600;">Q64 — CW Malfunction / Rapid Load Reduction [OUTDATED]</span>
