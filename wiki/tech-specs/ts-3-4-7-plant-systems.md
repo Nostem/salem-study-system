@@ -69,6 +69,11 @@ Following surveillance testing, valves must be reset to within <span class="hi">
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q42</div>
+MSSVs will FIRST start to open when main steam line pressure exceeds <span class="hi-exam"><span class="val-trip">1070 psig</span> (xMS15, the lowest lift setting)</span>. LCO 3.7.1.1 purpose is dual: <span class="hi-exam">limit secondary system pressure to within 110% of design pressure AND protect against overpressurization of the Reactor Coolant Pressure boundary</span>. <span class="hi-trap">Trap: the MSSVs protect both secondary AND primary pressure boundaries — not secondary only.</span>
+</div>
+
 ---
 
 ## 3/4.7.1.2 — Auxiliary Feedwater System
@@ -463,5 +468,6 @@ The program for examination, testing, and service life monitoring is performed i
 ## Connections
 
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
+- Related exam questions: [[2019 Q42]]
 - Related JPMs: [[2020 JPM SRO-A3]]
-- Related exam: [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]]

@@ -41,6 +41,13 @@ Provides a diverse backup to the Reactor Protection System for mitigating Antici
 | Redundancy | 4 channels with 2/4 logic | 2 channels |
 | Armed | Always (with permissives) | Only above P-20 (at power) |
 
+## AMSAC Train-to-Pump Mapping
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q31</div>
+AMSAC AFW pump start signals by train: <span class="hi-exam">Train A starts 21 AFW (motor-driven)</span>. <span class="hi-exam">Train B starts 22 AFW (motor-driven)</span>. <span class="hi-exam">Either train starts 23 AFW (turbine-driven)</span>. A spurious actuation of ONLY Train A starts <span class="hi-exam">21 and 23 AFW pumps</span> (not 22 AFW). <span class="hi-trap">Common trap: believing all three AFW pumps start on a single train actuation, or that both motor-driven pumps start on a single train.</span>
+</div>
+
 ## Interlocks
 
 - **C-20:** 2/2 turbine steamline inlet pressure above setpoint arms AMSAC; below setpoint blocks AMSAC
@@ -52,5 +59,7 @@ Provides a diverse backup to the Reactor Protection System for mitigating Antici
 
 ## Connections
 
-- Related systems: [[RPS/SSPS]]
+- Related systems: [[RPS/SSPS]], [[AFW]]
 - Related concepts: [[ESF & Design]] (ATWS section)
+- Related exam questions: [[2019 Q31]]
+- Related exam: [[2019 NRC Written Exam]]

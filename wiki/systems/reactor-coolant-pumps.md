@@ -118,6 +118,13 @@ EOP-TRIP-4 RCP restart priority for PZR spray: <span class="hi-exam">23 RCP pref
 RCP vibration abnormal response: with shaft vibration at <span class="hi-exam">16 mils (below 20 mil trip limit)</span> and motor flange vibration at <span class="hi-exam">3 mils (below 5 mil trip limit)</span>, the Attachment 1 trip criteria of AB.RCP-0001 are NOT exceeded. Per Step 3.10, the CRS/SM determines if a <span class="hi-exam">controlled Unit shutdown</span> is required — immediate RCP trip and reactor trip are not warranted. <span class="hi-trap">OHA D-36 directs entry into AB.RCP-0001 but does NOT direct tripping the reactor or stopping the RCP.</span>
 </div>
 
+## RCP Starting Requirements
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q1</div>
+Per S2.OP-SO.RC-0001 Limitations, with one or more RCS Cold Leg temperatures &le;312&deg;F, <span class="hi-exam">at least one of</span> the following conditions shall be met before starting an RCP: (1) PZR level <92%, OR (2) all SG secondary temps <50&deg;F above any RCS Cold Leg temp. Starting an RCP when criteria are NOT met results in <span class="hi-exam">an RCS pressure transient from secondary energy addition</span>. <span class="hi-trap">Only ONE condition needs to be met, not both. The concern is RCS pressure transient, not RCP motor degradation.</span>
+</div>
+
 ## Loss of Offsite Power
 
 On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel moment of inertia (82000 lb-ft²) provides coastdown flow sufficient to prevent fuel damage. (UFSAR 5.5.1.3.13)
@@ -183,8 +190,8 @@ RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <s
 
 ## Connections
 
-- Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
+- Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
+- Related exam questions: [[2019 Q1]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related JPMs: [[2022 JPM Sim-d]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

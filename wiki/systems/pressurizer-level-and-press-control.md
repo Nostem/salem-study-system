@@ -84,6 +84,16 @@ During LOOP, PZR backup heaters are transferred to emergency power per S2.OP-SO.
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q50</div>
+PZR Safety Valve seat leakage response: PZR level lowers below program level → <span class="hi-exam">master flow controller automatically RAISES charging flow</span>. <span class="hi-trap">Trap: PZR safety valves are located on top of the PZR, so candidates may think level rises. In reality, steam leaking out reduces steam space pressure AND inventory → level drops.</span> As RCS pressure lowers from the leak, the <span class="hi-exam">OT&Delta;T reactor trip setpoint automatically lowers (K3 pressure coefficient)</span> and trips the reactor before the fixed low PZR pressure setpoint of <span class="val-trip">1865 psig</span> is reached. <span class="hi-trap">OP&Delta;T setpoint varies with AFD, NOT pressure — do not confuse OT&Delta;T (pressure-dependent) with OP&Delta;T (AFD-dependent).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q9</div>
+2LT-459 (Channel I PZR Level) variable leg leak: the variable leg is the <span class="hi-exam">low side of the D/P cell</span> and is connected to the pressurizer liquid space. A leak causes D/P to increase → <span class="hi-exam">indicated PZR level goes off scale LOW</span>. Actual PZR level and pressure also lower (inventory loss). PZR B/U heaters <span class="hi-exam">will NOT energize</span> because indicated level is below the <span class="val-trip">17% low level B/U heater cutoff setpoint</span>. <span class="hi-trap">Common misconception: D/P = 0 psid = hi pressurizer level (maximum indicated level), not D/P = maximum = hi level. A variable leg leak INCREASES D/P, indicating LOW.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q57</div>
 PZR Level Channel I (controlling channel) fails HIGH: charging flow reduces to minimum (controller sees high level, reduces charging). Actual PZR level drops slowly. At <span class="hi-exam">17% actual level</span>, the alarm channel (Channel II) triggers <span class="hi-exam">letdown isolation and PZR heaters off</span>. With minimum charging and no letdown, level eventually rises and a <span class="hi-exam">Rx Trip on high PZR level occurs at 92% (2/3 channels II &amp; III)</span>. <span class="hi-trap">Key distinction: controlling channel fails HIGH = sequential events (charging min → level drops → letdown isolates → level eventually rises → trip). Controlling channel fails LOW = charging rises immediately AND letdown isolates immediately — NOT in the sequential order.</span> Auctioneered Tavg failed high only shifts program level to ~59%.
 </div>
@@ -97,7 +107,7 @@ PORV channel assignments: <span class="hi-exam">2PR1 is controlled by Channel I 
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
-- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
+- Related exam questions: [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
 - Related JPMs: [[2022 JPM IP-i]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

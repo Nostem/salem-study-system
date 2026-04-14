@@ -15,6 +15,12 @@ Provides operator actions for evacuating the main control room and establishing 
 ## Entry Conditions
 - Control room determined to be uninhabitable
 - Toxic gas, smoke, or other hazard requiring evacuation of both Salem Unit control rooms
+- **Security event** — AB.CR-0001 is specifically for security-event-driven evacuations
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q48</div>
+S2.OP-AB.CR-0001 (Control Room Evacuation) is implemented when the Control Room is evacuated as the result of a <span class="hi-exam">security event</span>. <span class="hi-trap">Trap: a separate Abnormal Procedure deals with control room evacuation due to fire — do not confuse the two.</span> As an immediate action per AB.CR-0001, the crew <span class="hi-exam">WILL initiate a Main Steam Isolation</span> prior to evacuating (if conditions permit). <span class="hi-trap">This differs from EOP-TRIP-1, which only requires MSLI if the turbine cannot be tripped. AB.CR-0001 directs MSLI as an immediate action regardless of turbine trip success.</span>
+</div>
 
 ## Key Actions
 
@@ -58,7 +64,8 @@ Unit 1 Control Room Evacuation, Attachment 5 (locally open reactor trip breakers
 
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RPS/SSPS]], [[CVCS]]
-- Related exam questions: [[2020 Q86]], [[2023 Q83]]
+- Related systems: [[Steam Generator & Blowdown]], [[RPS/SSPS]], [[CVCS]], [[Main Steam]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
+- Related exam questions: [[2019 Q48]], [[2020 Q86]], [[2023 Q83]]
 - Related JPMs: [[2020 JPM IP-i]], [[2022 JPM IP-j]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

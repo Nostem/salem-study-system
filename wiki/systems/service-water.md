@@ -44,6 +44,11 @@ CFCU SW flow orifices maintain <span class="hi-exam">constant SW flow rate throu
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q26</div>
+21SW122 (21 CC Hx Control Valve) fail positions: <span class="hi-exam">ONLY a loss of control air causes 21SW122 to go FULLY OPEN</span>. SEC Mode III Operation and loss of 125 VDC power both cause 21SW122 to go fully CLOSED. <span class="hi-trap">All three conditions (loss of air, SEC Mode III, loss of DC) cause 21SW122 to move to a full-travel position, but only loss of air goes OPEN — the other two go CLOSED. Candidates must distinguish the fail-open (air) from fail-closed (DC/SEC) modes.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q16</div>
 OHA B-48 (SW VLV RM FLOODED) indicates leak in <span class="hi-exam">SW valve room on 78' Mechanical Penetration Area</span>. CFCU piping passes through this room before entering containment. <span class="hi-exam">A SW leak in this room is most likely from CFCU piping.</span>
 </div>
@@ -106,7 +111,7 @@ Unit 1 SW loop operability with 13 SW Pump C/T and 1A EDG inoperable: per <span 
 ## Connections
 
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related exam questions: [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
+- Related exam questions: [[2019 Q26]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

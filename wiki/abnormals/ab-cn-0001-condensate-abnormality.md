@@ -16,6 +16,11 @@ Provides operator actions for responding to condensate system abnormalities, inc
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q17</div>
+SGFP trip at 100% power — immediate actions per AB.CN-0001: <span class="hi-exam">initiate a MANUAL Main Turbine load reduction to a MAXIMUM of <span class="val-alarm">66%</span> Turbine Power at a rate less than or equal to a MAXIMUM of <span class="val-alarm">15%</span>/MIN</span>. <span class="hi-trap">50% is NOT the correct target (each SGFP does not provide exactly 50% flow). 30%/MIN is the stator cooling water loss automatic turbine runback rate, NOT the AB.CN-0001 manual load reduction rate.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q64</div>
 On a SGFP trip: <span class="hi-exam">DEHC will automatically initiate a turbine runback at <span class="val-trip">200%</span> per minute to 66% power</span>. The 2CN47 (23/24/25 Heater String Bypass valve) will immediately open and the polisher will be bypassed. <span class="hi-trap">Manual turbine runback from the DEHC panel uses a different rate of 15% per minute. On a condensate pump trip, the 2CN47 only opens if SGFP suction pressure lowers to less than <span class="val-alarm">320 psig</span>; on a SGFP trip, the 2CN47 opens regardless of suction pressure.</span>
 </div>
@@ -58,7 +63,7 @@ On a condensate pump trip at 100% power: per AB.CN-0001, <span class="hi-exam">o
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]], [[AFW]]
-- Related exam questions: [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
+- Related exam questions: [[2019 Q17]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related JPMs: [[2022 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

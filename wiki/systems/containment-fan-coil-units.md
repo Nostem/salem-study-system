@@ -64,6 +64,11 @@ CFCU service water header supply: with 21SW22 (Nuclear Header Inlet Valve) close
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q13</div>
+Unit 1 CFCU power distribution: with <span class="hi-exam">1A 4KV Vital Bus de-energized, ONLY 11 CFCU is stopped</span>. Confirms that <span class="hi-exam">11 CFCU is powered from the A bus</span> (consistent with Unit 2 pattern: 21 CFCU on A bus). 5 CFCUs powered from 3 vital buses — knowing the bus-to-CFCU mapping is critical for determining available cooling capacity following bus losses.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q39</div>
 CFCU power distribution from 4KV Vital Buses: <span class="hi-exam">21 CFCU (A bus), 22 CFCU (B bus), 23 CFCU (B bus, CIT), 24 CFCU (B bus), 25 CFCU (C bus)</span>. Loss of 2B 4KV Vital Bus = 22 and 24 CFCUs unavailable. Only 21 (A bus) and 25 (C bus) remain available. Note: 23 CFCU is <span class="hi">normally on C bus</span> but was CIT (Connected In Test) to B bus in the 2023 Q39 scenario. Per 2020 Q9, normal alignment has 23 on C bus.
 </div>
@@ -141,7 +146,7 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
-- Related exam questions: [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
+- Related exam questions: [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]]
 - Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

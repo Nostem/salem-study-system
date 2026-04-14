@@ -56,8 +56,13 @@ Per Attachment 1, three RCP protection time limits on loss of CCW:<br>
 <span class="hi-trap">Trap: the 175°F limit is the EARLIEST action if bearing temp is rising fast. In the exam scenario: 140°F at T+0 rising at 5°F/min → 175°F at T+7 min. The low flow alarms at T+5 add another 5 min = T+10 min. The surge tank criterion (38%) was already recovered. So 175°F limit (1007) is the controlling action.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q8</div>
+Per Step 3.8 NOTE: <span class="hi-exam">"Allowing CCW Surge Tank to overflow will contaminate the in-service Waste Holdup Tank and the 22 ABV Exhaust Filter Unit."</span> 2CC149 (Surge Tank Vent Valve) <span class="hi-exam">automatically closes on 2R17A/B high radiation alarm</span>. <span class="hi-trap">CCW Surge Tank overflow contaminates two components — the Waste Holdup Tank AND the 22 ABV Exhaust Filter Unit. Missing the exhaust filter unit is a common error.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[RCPs]]
-- Related exam questions: [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2019 Q8]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

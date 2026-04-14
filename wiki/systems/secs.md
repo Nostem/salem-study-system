@@ -40,8 +40,30 @@ SEC operating modes after SI/SEC reset: with SI and SECs reset, a subsequent deg
 SEC Mode III (Blackout + SI) CCW pump behavior: <span class="hi-exam">CCW pumps are stripped and NOT reloaded onto EDGs</span>. Additionally, <span class="hi-exam">any CCW pump selected for AUTO is transferred to Manual</span>. This AUTO-to-Manual transfer occurs in SEC Modes II, III, and VI. <span class="hi-trap">Trap: Mode II (Blackout only) restarts CCW pumps and also forces AUTO to Manual. Mode I (SI only) does NOT force AUTO to Manual — only Modes II, III, and VI do. Mode III does NOT restart CCW pumps but DOES force AUTO to Manual.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q5</div>
+Following a Reactor Trip and Safety Injection coincident with a LOOP, SECs operate in <span class="hi-exam">Mode III (SI + Blackout)</span>. After SEC Mode III loading completes, <span class="hi-exam">CCW Pumps will be STOPPED</span> — CCW pumps are NOT automatically started as part of SEC Mode III loading. <span class="hi-trap">SEC Mode II is Blackout only (no SI signal). Mode II DOES restart CCW pumps. The presence of the SI signal is what makes this Mode III, not Mode II.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q16</div>
+SEC Mode 1 (SI only, no LOOP) AFW pump behavior: the SEC sends automatic start signals to <span class="hi-exam">ONLY the motor-driven AFW pumps (21 and 22)</span>. The turbine-driven AFW pump (23) does NOT receive an SEC start signal. <span class="hi-exam">SEC start signals override LOCAL MANUAL controller alignment</span> — even with all AFW pump controllers in LOCAL MANUAL, 21 and 22 AFW pumps will auto-start on SEC Mode 1 actuation.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q19</div>
+SEC Mode 2 (blackout only) includes MDAFW pump start: when 2B 4KV Vital Bus de-energizes and 2B SEC actuates in Mode 2, the SEC load sequencer restores power and starts <span class="hi-exam">22 AFW Pump (powered from 2B bus)</span>. <span class="hi-exam">SEC Mode 2 starts AFW pumps on the associated bus</span>. The SG Lo-Lo level MDAFW start (2/3 on 1/4 SGs <14%) was NOT met in this scenario — the SEC Mode 2 start was the sole reason 22 AFW started.
+</div>
+
+## 1RP4 Panel Relationship
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q23</div>
+<span class="hi-exam">1RP4 is the main control room panel that gives visual status of all safety related equipment including the SECs. Since 1RP4 is NOT safety related, the interface between the SECs and 1RP4 is isolated.</span> Loss of ALL AC and DC power to 1RP4 does NOT affect SEC operation. When a Reactor Trip and Safety Injection occurs, the <span class="hi-exam">SECs will automatically actuate in Mode 1</span> regardless of 1RP4 status. <span class="hi-trap">Trap: loss of power to a control bezel (e.g., AFW Control Bezel) prevents automatic and manual operation of components via that bezel. This logic does NOT apply to 1RP4 because it is an indication-only panel — SECs operate independently.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]]
-- Related exam questions: [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]]
+- Related exam questions: [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

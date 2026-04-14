@@ -46,6 +46,13 @@ Loss of a vital instrument bus (e.g. 1B) causes associated NI channels to <span 
 P-6 permissive and IR NIS overlap: when P-6 is LIT, IR channels should indicate approximately <span class="hi-exam">1E-5% power</span>. If an IR channel reads 1E-8% power with P-6 LIT, that channel is not indicating the expected SR/IR overlap and is INOPERABLE. Per TS 3.3.1.1 bases, the <span class="hi-exam">24-hour action time</span> for one inoperable IR channel accounts for the <span class="hi-exam">low probability of failure of the operable IR channel</span> during this period. <span class="hi-trap">Trap: the bases cite low probability of channel failure, NOT low probability of reactivity events.</span>
 </div>
 
+## PR Channel Trip and Coincidence
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q30</div>
+When a Power Range NI channel (e.g., 2N41) fails high: <span class="hi-exam">AB.NIS-0001 REQUIRES placing the Rod Bank Selector Switch in MAN</span> prior to placing the channel in tripped condition. After 2N41 bistable is tripped per S2.OP-SO.RPS-0001, the coincidence for the PR High Neutron Flux Reactor Trip changes from 2/4 to <span class="hi-exam">1 out of 3</span> (the tripped bistable counts as a permanent "tripped" input — it is NOT removed from the logic). <span class="hi-trap">Trap: candidates may think tripping the bistable removes the channel from the trip logic (reducing to 2/3). In fact, the tripped bistable satisfies one leg of the coincidence, so only 1 more of the remaining 3 channels needs to trip = 1 out of 3.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.1]]** — Reactor Trip System Instrumentation (NIS channels)
@@ -84,7 +91,8 @@ PR channel 2N41 removal from service (S2.OP-SO.RPS-0001): at NI Rack No. 81, fiv
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
-- Related exams: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exams: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+  - [[2019 Q30]] — PR NI 2N41 fails high / rods to MAN per AB.NIS / tripped bistable = 1/3 coincidence
   - [[2020 Q22]] — IR channel removal from service / LEVEL TRIP switch bypass / OHA E-29
   - [[2023 Q72]] — Subcritical SR counts stabilize higher / SUR decays to zero after rod withdrawal
   - [[2023 Q11 — Loss of Vital Instrument Bus / NI Channel Response|2023 Q11]] — Vital instrument bus loss / NI channels fail low / IR trip logic

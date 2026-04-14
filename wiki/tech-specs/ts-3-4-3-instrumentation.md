@@ -519,6 +519,11 @@ The Wide Range Neutron Flux Monitors are the Gamma-Metrics Post-Accident Neutron
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q47</div>
+Per LCO 3.3.3.7, <span class="hi-exam">2PT-403 (RCS Narrow Range Pressure) and 2PT-405 (RCS Wide Range Pressure) ARE credited as accident monitoring instrumentation</span>. They provide input to BOTH the Pressurizer Overpressure Protection System (POPS) <span class="hi-exam">and to the RVLIS Electronics Cabinets</span>. <span class="hi-trap">Trap: POPS is not their only function — they also feed RVLIS.</span>
+</div>
+
 ---
 
 ### Radioactive Liquid Effluent Monitoring Instrumentation (3.3.3.8)
@@ -639,7 +644,7 @@ Between calibrations, the fidelity of the measured power distribution is maintai
 
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]]
-- Related exam questions: [[2020 Q88]], [[2020 Q90]], [[2023 Q82]]
+- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]]
+- Related exam questions: [[2019 Q47]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

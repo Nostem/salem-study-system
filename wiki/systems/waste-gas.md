@@ -29,6 +29,11 @@ The gaseous waste system collects, processes, monitors, and releases gaseous rad
 (UFSAR 11.4)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q35</div>
+During a 24 GDT release per S2.OP-SO.WG-0011, <span class="hi-exam">2R41 Channel D High Radiation Alarm causes 2WG41 (GDT VENT CONT V) to AUTOMATICALLY close</span>, terminating the release. Other valves open during the release — 24WG34 (GDT STOP TO PLNT), 2WG39 (GDT TO VENT HOR STOP V), 2WG38 (GDT VENT CONTROL VALVE) — <span class="hi-trap">do NOT automatically close on 2R41 high radiation. Only 2WG41 receives the automatic closure signal.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q23</div>
 2R41D (Plant Vent radiation monitor) in ALARM automatically closes: <span class="hi-exam">2WG41 (GDT Vent Control Valve — terminates waste gas release)</span>, <span class="hi-exam">2VC1 and 2VC4 dampers (containment purge)</span>, and <span class="hi-exam">2VC5 and 2VC6 dampers (containment pressure relief)</span>. Also aligns 2R45 skid to accident sampling loop.
 </div>
@@ -60,7 +65,7 @@ GDT release restrictions per S1.OP-SO.WG-0011:
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[Containment]]
-- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]]
-- Related exam questions: [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]]
+- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]]
+- Related exam questions: [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]]
 - Related JPMs: [[2023 JPM IP-k]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -40,6 +40,11 @@ Instrumentation and Control Systems provide the reactor operator with informatio
 Note: Negative Flux Rate Trip has been removed per NRC License Amendment 278-261. (UFSAR T7.2-1)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q30</div>
+PR High Neutron Flux trip with one channel tripped (bistable tripped per S2.OP-SO.RPS-0001): the tripped bistable <span class="hi-exam">remains in the coincidence logic as a permanently satisfied input</span>. Normal coincidence is 2/4. With one channel tripped, coincidence becomes <span class="hi-exam">1 out of 3</span> (the tripped bistable counts as one of the two required trips). <span class="hi-trap">Trap: tripping the bistable does NOT remove the channel from the logic (which would give 2/3). It satisfies one leg permanently, making the effective coincidence 1/3 for the remaining functional channels.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q1</div>
 Turbine Stop Valve status lights on 2RP4: <span class="hi-exam">LIT solid = both SSPS trains see the valve at ≤ 85% open</span>. <span class="hi-exam">FLASHING = Trains A and B disagree on valve position</span>. OHA F-36 (TURB TRIP & P-9) confirms either 4/4 Turbine Stop Valves ≤ 85% open OR <span class="hi-exam">2/3 Auto Stop Oil Pressures ≤ <span class="val-trip">50 psig</span></span>. <span class="hi-trap">Trap: 45 psig is the Tech Spec value for auto stop oil, not the actual setpoint (≤ 50 psig). A flashing light does NOT mean a valve is mid-stroke — it means train disagreement.</span>
 </div>
@@ -98,6 +103,11 @@ Note: Automatic rod withdrawal is disabled at Salem. (UFSAR T7.2-2)
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q21</div>
 Containment spray / Phase B actuation logic is normally <span class="hi-exam">2/4 Hi-Hi containment pressure</span>. When one channel is properly removed from service (bypassed), the logic reduces to <span class="hi-exam">2/3</span>. The Hi-Hi containment pressure setpoint is <span class="val-trip">15 psig</span>. CS pump discharge valves (CS2s) open on the CS actuation signal specifically, not the Phase B signal.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q11</div>
+Containment Pressure channel removal from service changes coincidence logic differently for SI/Reactor Trip vs Containment Spray. When Channel II is removed: <span class="hi-exam">SI/Reactor Trip (on Hi CTMT Pressure) goes from 2/3 to 1/2</span>; <span class="hi-exam">Containment Spray (on Hi-Hi CTMT Pressure) goes from 2/4 to 2/3</span>. SI and Reactor Trip bistables are <span class="hi-exam">de-energize to actuate</span> — loss of power to Channel III satisfies the 1/2 logic and actuates SI + Reactor Trip. CS bistables are energize to actuate — loss of power to Channel III does NOT satisfy the 2/3 logic. <span class="hi-trap">Key distinction: SI/Rx Trip uses Channels II, III, IV only (Hi CTMT Pressure) while CS uses all four channels I-IV (Hi-Hi CTMT Pressure). Removing Channel II has different effects on each system's coincidence.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -251,7 +261,8 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
 - Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
-- Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+  - [[2019 Q30]] — PR NI tripped bistable: 2/4 becomes 1/3 coincidence (not 2/3)
   - [[2020 Q1]] — 2RP4 turbine stop valve status lights flashing = SSPS train disagreement
   - [[2020 Q7]] — PORV failed open: manual trip at 2000 psig to prevent auto trip on OT Delta-T (trips at ~1950 psig) / low PZR pressure trip at 1865 psig
   - [[2020 Q37]] — OT Delta-T inputs: Tavg, PZR Pressure, Delta-I / OP Delta-T has no pressure or delta flux input
@@ -278,3 +289,6 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
   - [[2022 Q63]] — Steam dump P-12 (Lo-Lo Tavg) / Bypass Tavg requires both Train A AND B
   - [[2022 Q85]] — CFST Thermal Shock RED path priority over PURPLE SM and YELLOW HS
   - [[2022 Q91]] — TS 3.4.10.3 POPS / Mode 5 to Mode 4 entry prohibited with inoperable LTOP
+  - [[2019 Q11]] — Containment Pressure channel loss: SI/Rx Trip 2/3→1/2 (deenergize to actuate) vs CS 2/4→2/3 (energize to actuate)
+  - [[2019 Q49]] — EOP-TRIP-1 Step 1 manual trip sequence: Pistol Grips FIRST, then Bezels, then open E 6D and G 6D breakers
+  - [[2019 Q50]] — OT Delta-T variable setpoint lowers as RCS pressure lowers (K3 pressure input); OP Delta-T varies with AFD not pressure

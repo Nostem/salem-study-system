@@ -53,6 +53,13 @@ CW bus loss scenario: when the 4KV infeed breaker to the 24 CW bus fails open, t
 EDG paralleled to grid during surveillance: when LOOP occurs, SEC actuates in <span class="hi-exam">Mode 2 (Blackout)</span>. EDG output breaker <span class="hi-exam">opens</span>, diesel remains running, SEC opens both infeed breakers, strips all loads from the 4KV vital bus, then <span class="hi-exam">automatically recloses the output breaker</span> and re-starts loads using the SEC load sequencer. <span class="hi-trap">The output breaker does NOT remain closed during a LOOP even though the EDG was already paralleled. The SEC strips and re-sequences the bus regardless of EDG test status.</span>
 </div>
 
+## SPT Transfer Relay Behavior
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q21</div>
+When 23ASD (23 SPT Supply Breaker to 2A 4KV Vital Bus) spuriously opens while <span class="hi-exam">23 SPT is at normal voltage, the 23SPT transfer relay remains energized</span>. This prevents an automatic transfer of the 2A 4KV Vital Bus to the 24 SPT. The 2A 4KV Bus de-energizes and the <span class="hi-exam">2A EDG starts and powers the bus via the 2A SEC operating in Mode II*</span>. <span class="hi-trap">Trap: auto transfer to the alternate SPT only occurs if the SPT transfer relay de-energizes (indicating SPT voltage loss). With the SPT still energized but the breaker open, the relay stays energized and blocks the transfer.</span>
+</div>
+
 ## Voltage Protection
 
 <div class="callout callout-exam">
@@ -65,6 +72,13 @@ Degraded voltage relays actuate at <span class="val-alarm">&lt; 95%</span> of no
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q53</div>
 Unit 1 — 1A 4KV Vital Bus powers <span class="hi-exam">15 and 16 SW Pumps</span> (associated with #3 SW Bay). A 1A Bus Differential with #3 SW Bay already C/Ted has <span class="hi-exam">no additional impact on SW operation</span> because 15 and 16 SW Pumps are already isolated. <span class="hi-exam">12 SW Pump (C Bus) auto-starts on low SW header pressure</span> when 13 SW Pump trips, maintaining SW flow. Correct procedure entry: AB.4KV-0001, Loss of 1A 4KV Vital Bus. <span class="hi-trap">Unit difference: on Unit 2, the 2A bus powers 21 and 22 SW pumps (not associated with a single bay) — a 2A bus loss impacts operating SW pumps directly.</span>
+</div>
+
+## 2B 4KV Bus Loads
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q12</div>
+Key loads on the 2B 4KV Vital Bus include: <span class="hi-exam">22 RHR Pump</span>. During a Reactor Trip + SI coincident with LOOP with EDG 2C unavailable, 2A and 2B buses are powered from EDG 2A and EDG 2B. <span class="hi-exam">22 RHR Pump (2B bus) is running; 22 SI Pump (2C bus) is stopped</span> because EDG 2C cannot be started. <span class="hi-trap">Common confusion: 22 RHR is on the B bus (not C), and 22 SI is on the C bus (not B). Pump number does NOT always match bus letter.</span>
 </div>
 
 ## 2C 4KV Bus Loads
@@ -97,6 +111,6 @@ MSLB + LOOP with 2C 4KV Vital Bus lost (OHA J-3, 2C 4KV VTL BUS DIFF PROT): conf
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]]
-- Related exam questions: [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
+- Related exam questions: [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
 - Related JPMs: [[2022 JPM Sim-g]], [[2020 JPM Sim-h]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

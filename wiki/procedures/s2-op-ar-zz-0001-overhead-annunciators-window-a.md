@@ -24,8 +24,13 @@ OHA A-6 (RMS HI RAD OR TRBL): When 2R1B-1 (Control Room Intake Radiation Monitor
 OHA A-6 (RMS HI RAD OR TRBL) due to 2R41D Plant Vent Effluent: during SI termination (EOP-TRIP-3), this alarm in combination with <span class="hi-exam">C-34 (22 RHR SUMP OVRFLO) and RHR sump pump starts indicates a LOCA outside containment</span>. Leads to EOP-TRIP-3 CAS → EOP-LOCA-1 → EOP-LOCA-6.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q36</div>
+OHA A-6 (RMS HI RAD OR TRBL) due to 2R9 (Fuel Storage Area Monitor) alarm: <span class="hi-exam">both FHB Exhaust Fans receive auto start signal, 21 HEPA ONLY Filter Unit isolates, HEPA 22 PLUS CHAR automatically aligns</span>.
+</div>
+
 ## Connections
 
-- Related systems: [[Radiation Monitoring]], [[CAV]]
-- Related exam questions: [[2020 Q25]], [[2022 Q51]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related systems: [[Radiation Monitoring]], [[CAV]], [[FHV]]
+- Related exam questions: [[2019 Q36]], [[2020 Q25]], [[2022 Q51]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

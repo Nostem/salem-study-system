@@ -57,6 +57,21 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
 - (UFSAR 5.1)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q6</div>
+<span class="hi-exam">Reactor head vents drain to the PRT</span> and will cause PRT temperature to rise when the reactor is at power. Reactor Flange Leakoff is directed to the RCDT, NOT the PRT. Per S2.OP-SO.PZR-0003 Section 5.3 ("Reducing PRT Temperature by Feed and Bleed"), the liquid in the PRT will be pumped to the <span class="hi-exam">HUT (Hold-Up Tank) using an RCDT Pump</span>. <span class="hi-trap">The PRT drain is physically connected to the RCDT via piping with a check valve, but the PRT liquid is pumped to the HUT, not kept in the RCDT.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q7</div>
+Per LCO 3.4.10.2, maximum allowable PZR heatup rate is <span class="hi-exam"><span class="val-trip">100&deg;F/hr</span></span>. Maximum PZR cooldown rate is <span class="hi-exam">200&deg;F/hr</span> (common distractor — heatup and cooldown limits are different). Per S2.OP-SO.RC-0002 Section 5.4, during PZR degassing via 2PR1 (PZR PORV), maintain <span class="hi-exam">PRT pressure less than <span class="val-alarm">10 psig</span></span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q10</div>
+PORV leak-by is a <span class="hi-exam">constant enthalpy (throttling) expansion</span> process. At PZR pressure 415 psig (430 psia) with PRT pressure 0 psig, h<sub>g</sub> &asymp; 1205 BTU/lbm. Following the constant enthalpy line on a Mollier diagram from 415 psig to 0 psig yields tailpipe temperature of approximately <span class="hi-exam">330&deg;F</span>. <span class="hi-trap">212&deg;F is the boiling point at 0 psig and 450&deg;F is for ~515 psig — both are plausible distractors but do not account for the throttling process.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q34</div>
 PRT has a <span class="hi-exam">rupture disc (NOT a relief valve)</span> rated at <span class="val-trip">100 psig</span>. 2PR15 (PRT Vent to RCDT) <span class="hi-exam">cannot be opened if PRT pressure ≥ <span class="val-alarm">10 psig</span></span> — interlock prevents opening. Per S2.OP-SO.PZR-0003, if PRT pressure ≥ 10 psig: drain PRT first via 2PR14 to lower level and pressure, then open 2PR15 to vent PRT to 3 psig. <span class="hi-trap">2PR15 is NOT available for venting when PRT pressure is above 10 psig — must drain first to clear the interlock.</span>
 </div>
@@ -119,9 +134,9 @@ PZR pressure channel 1 fails high causing both spray valves to open fully and ra
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
-- Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
+- Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[S2.OP-SO.PZR-0003 — PRT Operation]], [[S2.OP-SO.RC-0002 — Vacuum Refill of the RCS]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
+- Related exam questions: [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]]
 - Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

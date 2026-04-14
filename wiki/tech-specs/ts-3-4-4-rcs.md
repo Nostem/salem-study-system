@@ -65,6 +65,11 @@ At least <span class="hi">two coolant loops</span> (RCS loops or RHR loops) shal
 An RCP shall not be started with any RCS cold leg temp ≤ POPS enable temperature unless: (1) PZR water volume <1650 ft³ (~92% level), OR (2) SG secondary water temp <50°F above each RCS cold leg temp.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q1</div>
+Per S2.OP-SO.RC-0001, with RCS Cold Leg temps &le;312&deg;F, <span class="hi-exam">at least ONE of</span> the two RCP start conditions must be met (NOT both). The concern is <span class="hi-exam">an RCS pressure transient from secondary energy addition</span>, not RCP motor degradation.
+</div>
+
 *Amendment No. 328*
 
 ### Cold Shutdown (3.4.1.4)
@@ -404,6 +409,11 @@ c. Maximum temperature change per PTLR during hydrostatic testing above design p
 
 **Action:** With limits exceeded, restore within <span class="val-trip">30 minutes</span>; perform engineering evaluation on structural integrity; if unacceptable, Hot Standby in 6 hours and reduce to <200°F and <500 psig within 30 hours.
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q7</div>
+LCO 3.4.10.2 PZR heatup rate = <span class="hi-exam"><span class="val-trip">100&deg;F/hr</span></span> maximum. PZR cooldown rate = <span class="hi-exam">200&deg;F/hr</span> maximum. <span class="hi-trap">Heatup and cooldown limits are different — candidates confuse 100 vs 200. The cooldown limit is DOUBLE the heatup limit.</span>
+</div>
+
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.10.2 — Pressurizer P/T Limits</div>
 Pressurizer temperature limited to:<br>
@@ -471,5 +481,5 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2022 Q91]], [[2023 Q97]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2019 Q1]], [[2019 Q7]], [[2022 Q91]], [[2023 Q97]]
+- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

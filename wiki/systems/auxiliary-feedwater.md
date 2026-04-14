@@ -30,8 +30,28 @@ Provides feedwater to steam generators when the main feedwater system is unavail
 | Motor-Driven | 2/3 Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence signal; OR blackout sequence signal; OR manual (local and remote) | UFSAR T7.2-1 |
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q16</div>
+AFW pump start behavior with controllers in LOCAL MANUAL: <span class="hi-exam">LOCAL MANUAL disables all automatic AFW starts EXCEPT those initiated by the SECs</span>. On SI (SEC Mode 1), the SECs send automatic start signals to <span class="hi-exam">ONLY 21 and 22 MDAFW pumps (not 23 TDAFW)</span>. Consequently, with all controllers in LOCAL MANUAL, a Reactor Trip + SI will start ONLY 21 and 22 AFW pumps. <span class="hi-trap">23 TDAFW does NOT receive an SEC start signal — it starts on 2/3 Lo-Lo level in 2/4 SGs, RCP bus undervoltage, or manual only.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q19</div>
+MDAFW pump power supply and SEC Mode 2 start: <span class="hi-exam">22 AFW Pump is powered from 2B 4KV Vital Bus</span>. When 2B bus de-energizes and 2B SEC actuates in Mode 2 (blackout), the SEC starts 22 AFW Pump after bus restoration. At 15% power with 21 SGFP still running, SG levels drop but <span class="hi-exam">none reach the Lo-Lo 14% setpoint for automatic MDAFW start</span>. Only 22 AFW is running (from the SEC Mode 2 start on 2B bus). <span class="hi-trap">21 AFW Pump is powered from the A bus (NOT the B bus) — 21 AFW does NOT start because the 2A SEC has no blackout signal.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q20</div>
+AFW Pressure Override Runout Protection: with PRESSURE OVERRIDE NORMAL light illuminated, runout protection is enabled. <span class="hi-exam">When 21 AFW Pump trips, discharge pressure goes to 0 psig → 23AF21 and 24AF21 AUTOMATICALLY close</span> (runout protection closes AF21 valves when discharge pressure < <span class="val-trip">1085 psig</span>). AFW flow to 23 and 24 SGs goes to 0 LBM/HR. <span class="hi-trap">If PRESSURE OVERRIDE DEFEAT had been selected, the AF21 valves would NOT have auto-closed — they would remain in position and AFW flow would still drop to zero (no pump running) but the valves would stay open.</span> Trip of a MDAFW pump does NOT cause automatic start of 23 TDAFW.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q44</div>
 Trip of both SGFPs generates an automatic start of <span class="hi-exam">ONLY the MDAFW pumps</span>. The <span class="hi-exam">TDAFW pump does NOT start on trip of both SGFPs</span> — the TDAFW pump starts on <span class="hi-exam">2/3 Lo-Lo level in any 2/4 SGs (14% NR)</span>, RCP bus undervoltage, or manual actuation. <span class="hi-trap">Common trap: believing all AFW pumps start on both SGFPs trip, or that the TDAFW pump starts on 1/4 SGs at 14% — it requires 2/4 SGs at 14%.</span> Per S2.OP-SO.CN-0002, a removed-from-service SGFP is placed in the tripped condition, so the "trip of both SGFPs" interlock is already half-satisfied.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q31</div>
+AMSAC AFW pump start mapping: <span class="hi-exam">AMSAC Train A starts 21 AFW pump (motor-driven). AMSAC Train B starts 22 AFW pump (motor-driven). Either train starts 23 AFW pump (turbine-driven).</span> A spurious actuation of ONLY Train A starts 21 and 23 AFW pumps. <span class="hi-trap">Trap: 22 AFW does NOT start on Train A — it only starts on Train B. The turbine-driven pump (23) starts on either train.</span>
 </div>
 
 ## Water Sources
@@ -108,7 +128,7 @@ Complete loss of all AFW following reactor trip: <span class="hi-exam">21 AFP tr
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
+- Related exam questions: [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

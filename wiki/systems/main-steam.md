@@ -37,6 +37,11 @@ Transports steam from the four steam generators to the turbine-generator and oth
 
 (UFSAR 10.3, TS Table 3.7-4)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q42</div>
+MSSVs will start to open when main steam line pressure FIRST exceeds <span class="hi-exam"><span class="val-trip">1070 psig</span></span> (the lowest lift setting, xMS15). <span class="hi-trap">Trap: 1100 psig (xMS14) is the second lowest — the lowest is 1070 psig.</span> LCO 3.7.1.1 purpose: limit secondary system pressure to within <span class="hi-exam">110% of design pressure AND protect against overpressurization of the Reactor Coolant Pressure boundary</span>. <span class="hi-trap">It is NOT only for secondary overpressure protection — the MSSVs also protect the RCS pressure boundary.</span>
+</div>
+
 ## Atmospheric Relief Valves (MS10s)
 
 - 4 valves total (one per SG: 21MS10 through 24MS10)
@@ -81,7 +86,7 @@ EOP-SGTR-1 RCS cooldown with steam dumps unavailable (permissive light NOT illum
 
 - Related systems: [[Steam Dumps]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
+- Related exam questions: [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -35,10 +35,15 @@ Emergency dose extension: per step 5.0 NOTE, <span class="hi-exam">an individual
 Emergency volunteer selection for lifesaving task (15-20 REM predicted dose): systematically evaluate each candidate against ALL criteria. A <span class="hi-exam">failed periodic written exam does NOT disqualify</span> an SRO — training and familiarity with radiation consequences is the criterion, not active license status. Age <span class="hi-exam">over 45</span> is a strong preference, not just a recommendation.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q45</div>
+Confirms 2020 Q73: upon declaration of a Site Area Emergency (or ALERT or higher), <span class="hi-exam">the individual's yearly administrative dose limit is automatically raised to 4500 mrem</span>. Normal ADCL per RP-AA-203 is 2000 mrem TEDE. Stay time calculation example: worker with 1000 mrem already received in a 1000 mrem/hr field → (4500 - 1000) / 1000 = 3.5 hours = <span class="hi-exam">210 minutes maximum stay time</span>.
+</div>
+
 ## Connections
 
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related concepts: [[Radiation Monitoring]]
-- Related exam questions: [[2020 Q73]], [[2022 Q71]]
+- Related exam questions: [[2019 Q45]], [[2020 Q73]], [[2022 Q71]]
 - Related JPMs: [[2023 JPM SRO-A3]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]

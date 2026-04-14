@@ -62,6 +62,16 @@ SG program level above 20% power is <span class="hi-exam"><span class="val-norma
 Main feedwater line break vs steam line break: FW line break causes SG levels to <span class="hi-exam">lower FASTER</span> (direct loss of feedwater inventory). RCS cooldown is <span class="hi-exam">LESS than an equivalent steam line break</span> (loss of FW doesn't involve removal of latent heat as steam break does). FW break generates <span class="hi-exam">Low-Low SG Level reactor trip</span>; post-trip RCS Tavg rises due to decreased heat transfer in the affected SG.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q17</div>
+SGFP trip at >70% power — AB.CN-0001 immediate actions: MANUAL Main Turbine load reduction to a MAXIMUM of <span class="hi-exam"><span class="val-alarm">66%</span> Turbine Power at a MAXIMUM of <span class="val-alarm">15%</span>/MIN</span>. <span class="hi-trap">50% is incorrect (each SGFP does not provide exactly 50% flow). 30%/MIN is the automatic stator cooling water loss runback rate, NOT the AB.CN-0001 manual load reduction rate.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q18</div>
+SGFP Turbine Overspeed Trip: <span class="hi-exam">SGFP turbines have an overspeed trip at <span class="val-trip">6080 rpm</span></span>. SGFP design capacity is <span class="val-normal">5500 rpm</span>. <span class="hi-trap">Do not confuse with Main Turbine overspeed trips: 108% = <span class="val-trip">1944 rpm</span> or 110% = <span class="val-trip">1980 rpm</span>. The SGFP turbine operates at much higher RPM than the Main Turbine.</span>
+</div>
+
 ## Condenser and Condensate
 
 - Main condensers receive exhaust steam from turbine and steam dump
@@ -142,7 +152,7 @@ On trip of both SGFPs, only the <span class="hi-exam">MDAFW pumps auto-start</sp
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
-- Related exam questions: [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
+- Related exam questions: [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

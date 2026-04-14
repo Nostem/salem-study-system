@@ -44,5 +44,5 @@ Per IOP-7, before de-tensioning the first Rx Head Stud (entering MODE 6):<br>
 - Related systems: [[Rx Vessel & Internals]], [[FHV]], [[Radiation Monitoring]]
 - Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related exam questions: [[2020 Q23]], [[2020 Q94]], [[2022 Q62]], [[2020 Q82]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2019 Q33]], [[2020 Q23]], [[2020 Q94]], [[2022 Q62]], [[2020 Q82]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

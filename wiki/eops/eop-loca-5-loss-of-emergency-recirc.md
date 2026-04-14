@@ -46,6 +46,11 @@ Entered from LOCA-1 when <span class="hi-exam">22 RHR pump trips (overcurrent) �
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q15</div>
+Step 6 Table B/C analysis with 2B 4KV Vital Bus de-energized: Table B determines NO TRAINS of Emergency Recirculation available (both SJ44 sump valves closed). Table C determines CS pumps required: with <span class="hi-exam">Containment Pressure = 19 psig, RWST Level = 10 feet, and only 3 CFCUs in slow speed (2B bus loss → 22 and 24 CFCUs unavailable) → 0 CS Pumps required</span>. Crew stops BOTH CS pumps per Step 9, then proceeds to Step 10 (add makeup to RWST). <span class="hi-trap">Correct CFCU count depends on knowing which CFCUs are powered from the 2B bus. With 2B lost: only 21 (A bus), 23 (C bus), and 25 (C bus) remain — 3 CFCUs total.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q17</div>
 LOCA-5 mitigation strategies include: (1) Run all CFCUs in high speed, (2) Minimize SI flow, (3) Depressurize RCS to minimize subcooling, (4) Make up to RWST. <span class="hi-exam">During a DBA LBLOCA with loss of one EDG (2B EDG), only strategies 2 and 4 are applicable</span> because: <span class="hi-trap">22 and 24 CFCUs are powered from the 2B EDG bus and are NOT available</span> (eliminates strategy 1), and a DBA LOCA has already completely depressurized the RCS so <span class="hi-trap">no RCS subcooling exists to minimize</span> (eliminates strategy 3).
 </div>
@@ -53,7 +58,7 @@ LOCA-5 mitigation strategies include: (1) Run all CFCUs in high speed, (2) Minim
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
-- Related exam questions: [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related exam questions: [[2019 Q15]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
 - Related JPMs: [[2023 JPM SRO-A1.a]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

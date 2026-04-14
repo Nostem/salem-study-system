@@ -1,0 +1,687 @@
+---
+exam: "2019 NRC Written Exam"
+ilot: "17-01"
+questions:
+  - number: 1
+    topic: "RCP Starting Requirements"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - reactor-coolant-pumps
+    tech_specs:
+      - ts-3-4-4-rcs
+    ka: "003 RCPS-K6.14"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 2
+    topic: "High RCS Activity CVCS Response"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank - Salem ILOT 1601 Q69"
+    systems:
+      - chemical-and-volume-control-system
+    tech_specs: []
+    ka: "004 CVCS-A2.09"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 3
+    topic: "CVCS Malfunction Rod Response"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - Salem ILOT 1601 Q31"
+    systems:
+      - chemical-and-volume-control-system
+      - control-rod-drive
+    tech_specs: []
+    ka: "004 CVCS-K3.01"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 4
+    topic: "RHR Solid Plant Pressure Response"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - residual-heat-removal
+      - chemical-and-volume-control-system
+    tech_specs: []
+    ka: "005 RHRS-K5.05"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 5
+    topic: "ECCS/CCW SEC Mode III"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - secs
+      - emergency-core-cooling-systems
+      - component-cooling-water
+    tech_specs: []
+    ka: "006 ECCS-K1.11"
+    ka_importance: 2.8
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 6
+    topic: "PRT Temperature and Cooling"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - pressurizer
+    tech_specs: []
+    ka: "007 PRTS-A1.03"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 7
+    topic: "PZR Heatup Rate and PRT Pressure"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - pressurizer
+    tech_specs:
+      - ts-3-4-4-rcs
+    ka: "007 PRTS-K5.02"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 8
+    topic: "CCW Radiation Monitor Response"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem ILOT 1601 Q7"
+    systems:
+      - component-cooling-water
+      - radiation-monitoring
+    tech_specs: []
+    ka: "008 CCWS-A2.04"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 9
+    topic: "PZR Level Variable Leg Leak"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - Salem ILOT 1601 Q32"
+    systems:
+      - pressurizer-level-and-press-control
+      - pressurizer
+    tech_specs: []
+    ka: "010 PZR PCS-K1.08"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 10
+    topic: "PORV Constant Enthalpy Expansion"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - GFES P677"
+    systems:
+      - pressurizer
+      - pressurizer-level-and-press-control
+    tech_specs: []
+    ka: "010 PZR PCS-K5.02"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 11
+    topic: "Containment Pressure Channel Loss"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - ILOT 1601 AUDIT RO 16"
+    systems:
+      - rps-ssps
+      - containment-spray
+      - emergency-core-cooling-systems
+    tech_specs: []
+    ka: "012 RPS-A3.03"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 12
+    topic: "ECCS Pump Power Supplies"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - ILOT NRC 1601 RO 22"
+    systems:
+      - 4kv
+      - emergency-core-cooling-systems
+      - residual-heat-removal
+      - diesel-generators
+      - secs
+    tech_specs: []
+    ka: "013 ESFAS-K2.01"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 13
+    topic: "CFCU Power Supplies"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-fan-coil-units
+      - 4kv
+    tech_specs: []
+    ka: "022 CCS-K2.01"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 14
+    topic: "Containment Spray Reset"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-spray
+    tech_specs: []
+    ka: "026 CSS-K4.05"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 15
+    topic: "EOP-LOCA-5 CS Pumps Required"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-spray
+      - containment-fan-coil-units
+      - emergency-core-cooling-systems
+      - 4kv
+    tech_specs: []
+    ka: "026 CSS-G2.1.25"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 16
+    topic: "AFW Pump Start with Local Manual"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - auxiliary-feedwater
+      - secs
+    tech_specs: []
+    ka: "039 MRSS-A4.04"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 17
+    topic: "SGFP Trip Load Reduction"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank - ILOT 1601 NRC RO Q17"
+    systems:
+      - feedwater-and-condensate
+      - auxiliary-feedwater
+    tech_specs: []
+    ka: "059 MFW-AA2.06"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 18
+    topic: "SGFP Turbine Overspeed Trip"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - feedwater-and-condensate
+      - turbine-generator
+    tech_specs: []
+    ka: "059 MFW-K4.05"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 19
+    topic: "AFW SEC Mode 2 Start"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - auxiliary-feedwater
+      - secs
+      - 4kv
+    tech_specs: []
+    ka: "061 AFW-K2.02"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 20
+    topic: "AFW Pressure Override Runout Protection"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - auxiliary-feedwater
+    tech_specs: []
+    ka: "061 AFW-K6.02"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 21
+    topic: "4KV SPT Breaker Spurious Open"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank"
+    systems:
+      - 4kv
+      - diesel-generators
+      - secs
+    tech_specs: []
+    ka: "062 AC-K3.01"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 22
+    topic: "DC Battery SBO Duration"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - ILOT 1601 NRC RO Q28"
+    systems:
+      - dc-power
+    tech_specs: []
+    ka: "063 DC-A1.01"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 23
+    topic: "SEC Actuation with RP4 Loss"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - secs
+      - dc-power
+    tech_specs: []
+    ka: "063 DC-G2.2.44"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 24
+    topic: "EDG Load Rating and Room Temperature"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - diesel-generators
+    tech_specs: []
+    ka: "064 EDIG-A1.05"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 25
+    topic: "Plant Vent Rad Monitor 2R41"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - radiation-monitoring
+    tech_specs: []
+    ka: "073 PRM-A4.01"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 26
+    topic: "SW122 Fail Position"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - service-water
+      - component-cooling-water
+      - control-air
+      - secs
+    tech_specs: []
+    ka: "076 SWS-K4.03"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 27
+    topic: "CA330 Operability and Isolation"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - control-air
+      - containment-systems
+    tech_specs:
+      - ts-3-4-6-containment
+    ka: "078 IAS-G2.2.38"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 28
+    topic: "Containment Airlock Interlock"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - containment-systems
+    tech_specs:
+      - ts-3-4-6-containment
+    ka: "103 Containment-K4.04"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 29
+    topic: "Rod Control Speed and Temperature Error"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - control-rod-drive
+    tech_specs: []
+    ka: "001 CRDS-K4.05"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 30
+    topic: "PR NI Failure Trip Coincidence"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - excore-nis
+      - rps-ssps
+      - control-rod-drive
+    tech_specs: []
+    ka: "015 NIS-A4.03"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 41
+    topic: "Troubleshooting conduct — intrusive vs non-intrusive activities"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+    tech_specs: []
+    ka: "G2.2.20"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 3/Group"
+  - number: 42
+    topic: "MSSV setpoints and LCO 3.7.1.1 bases"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - main-steam
+    tech_specs:
+      - ts-3-4-7-plant-systems
+    ka: "G2.2.25"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 3/Group"
+  - number: 43
+    topic: "CVCS Monitor Tank release path and FR1064 requirement"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - waste-liquid
+    tech_specs: []
+    ka: "G2.3.11"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 3/Group"
+  - number: 44
+    topic: "High Radiation Area RWP dosimetry requirements"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem ILOT 1601 NRC RO Q44"
+    systems: []
+    tech_specs: []
+    ka: "G2.3.7"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 3/Group"
+  - number: 45
+    topic: "Emergency dose limits and stay time calculation"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: []
+    tech_specs: []
+    ka: "G2.3.4"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 3/Group"
+  - number: 46
+    topic: "CSF priority implementation — CFST color and hierarchy"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems: []
+    tech_specs: []
+    ka: "G2.4.22"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 3/Group"
+  - number: 47
+    topic: "Accident monitoring instrumentation — 2PT-403/405"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - rvlis
+      - pressurizer-level-and-press-control
+    tech_specs:
+      - ts-3-4-3-instrumentation
+    ka: "G2.4.3"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 3/Group"
+  - number: 48
+    topic: "Control Room Evacuation — entry condition and MSLI"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank - Salem ILOT 1601 AUDIT RO 069"
+    systems:
+      - main-steam
+    tech_specs: []
+    ka: "G2.4.11"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 3/Group"
+  - number: 49
+    topic: "EOP-TRIP-1 immediate actions — manual trip sequence"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - rps-ssps
+      - control-rod-drive
+    tech_specs: []
+    ka: "EPE: 007 EK2.02"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 1/Group 1"
+  - number: 50
+    topic: "PZR safety valve leak — charging response and OT Delta-T trip"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+      - pressurizer-level-and-press-control
+      - rps-ssps
+    tech_specs: []
+    ka: "APE: 008 AK2.03"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 31
+    topic: "AMSAC Train A AFW Pumps"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - ILOT 1601 AUDIT RO Q19"
+    systems:
+      - amsac
+      - auxiliary-feedwater
+    tech_specs: []
+    ka: "016 NNIS-K1.06"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 32
+    topic: "Hydrogen Recombiner Power Setting"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank"
+    systems:
+      - containment-systems
+    tech_specs: []
+    ka: "028 HRPS-K5.04"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 33
+    topic: "Fuel Handling Crane Rad Monitor"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - radiation-monitoring
+      - fhv
+      - refueling
+    tech_specs: []
+    ka: "034 FHE-K6.02"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 34
+    topic: "Steam Dump I/P Converter Power"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - steam-dumps
+      - 115v-ac
+    tech_specs: []
+    ka: "041 SDS-K2.02"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 35
+    topic: "GDT Release 2R41 Auto Closure"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - waste-gas
+      - radiation-monitoring
+    tech_specs: []
+    ka: "071 WGS-A3.03"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 36
+    topic: "FHB Ventilation 2R9 Alarm"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - ILOT 1601 AUDIT EXAM RO Q37"
+    systems:
+      - fhv
+      - radiation-monitoring
+    tech_specs: []
+    ka: "072 ARM-G2.4.31"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 37
+    topic: "CW Malfunction Reactor Trip"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - circ-water
+    tech_specs: []
+    ka: "075 CWS-A2.01"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 38
+    topic: "Fire Pump Auto Start and Shutdown"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - fire-protection
+    tech_specs: []
+    ka: "086 FPS-A1.05"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 39
+    topic: "Pertinent Information Standing Order"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: []
+    tech_specs: []
+    ka: "G2.1.15"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 3/Group"
+
+  - number: 40
+    topic: "Steam Dump Bypass Valve Failure"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - LOR 2018 BI-ANNUAL WRITTEN EXAM"
+    systems:
+      - steam-dumps
+    tech_specs: []
+    ka: "G2.1.28"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 3/Group"

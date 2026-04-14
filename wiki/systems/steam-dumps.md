@@ -23,6 +23,18 @@ The steam dump system dumps steam directly to the main condenser to prevent a re
 - Cooldown mode: controlled by steam pressure for controlled cooldown rate
 (UFSAR 7.7.2.7)
 
+## Power Supplies and Failure Modes
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q34</div>
+Steam Dump I/P converters are powered by <span class="hi-exam">C/D 115 VAC Instrument Bus</span>. Loss of power to the I/P converters causes the Steam Dumps to <span class="hi-exam">fail CLOSED</span>. Steam Dump <span class="hi-exam">blocking solenoids are powered from 125 VDC</span> (different power source than I/P converters). <span class="hi-trap">Trap: confusing I/P converter power (115 VAC) with blocking solenoid power (125 VDC). Also, steam dumps fail closed on loss of I/P power — not as-is.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q40</div>
+Each TB40 Turbine Bypass Valve is rated for <span class="hi-exam">5.33% steam flow</span>. If 23TB40 fails fully open at 60% power, reactor power rises to approximately <span class="hi-exam">65.33%</span> (power follows steam flow — turbine control valves do NOT automatically compensate). Steam Dump Train A and Train B Arming/Blocking solenoids are <span class="hi-exam">in SERIES</span>. Depressing BEZEL "OFF & RESET BYPASS TAVG" Pushbutton <span class="hi-exam">A OR B</span> removes air pressure to 23TB40, causing it to close. <span class="hi-trap">Trap: if solenoids were in parallel, BOTH A AND B would need to be depressed. Since they are in series, either one is sufficient.</span>
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q18</div>
 <span class="hi-exam">MSLI signals for high steam flow with Lo-Lo Tavg CANNOT be blocked</span> — not even by manually actuating and resetting SI. If steam dump rate is too high during EOP-directed depressurization, high steam flow + P-12 (Lo-Lo Tavg) will actuate MSLI, closing all MSIVs and making steam dumps unavailable. Continue depressurization via MS10 atmospheric dump valves. High steamline differential pressure causes SI, not MSLI — different signals.
@@ -45,9 +57,9 @@ EOP-FRHS-1 condensate pump feed: isolate all MS lines EXCEPT the selected SG (22
 
 ## Connections
 
-- Related systems: [[Main Steam]], [[RCS]]
+- Related systems: [[Main Steam]], [[RCS]], [[115V AC]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
+- Related exam questions: [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
 - Related JPMs: [[2023 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

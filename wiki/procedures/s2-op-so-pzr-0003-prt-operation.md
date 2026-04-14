@@ -25,7 +25,12 @@ To drain PRT: open 2PR14 → automatically opens 2WL12 → starts RCDT pump (def
 PRT drain limitation: <span class="hi-exam">2PR15 cannot open if PRT pressure is ≥10 psig</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q6</div>
+Section 5.3, "Reducing PRT Temperature by Feed and Bleed": PRT liquid is pumped to the <span class="hi-exam">HUT (Hold-Up Tank) using an RCDT Pump</span>. The source of PRT temperature rise at power is <span class="hi-exam">Reactor Head Vent leakage</span> (head vents drain to the PRT). <span class="hi-trap">Reactor Flange Leakoff goes to the RCDT, not the PRT. The PRT drain is physically connected to the RCDT but a check valve prevents pumping to the RCDT — PRT liquid goes to the HUT.</span>
+</div>
+
 ## Connections
 - Related systems: [[Pressurizer & PRT]]
-- Related exam questions: [[2022 Q34]], [[2023 Q32]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2019 Q6]], [[2022 Q34]], [[2023 Q32]]
+- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

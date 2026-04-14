@@ -25,6 +25,11 @@ Environmental monitoring program samples air, water, soil, vegetation, fish, and
 - **[[TS 3/4.11 — Radioactive Effluents]]** — Liquid effluent limits, monitoring
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q43</div>
+21 CVCS Monitor Tank release path per S2.OP-SO.WL-0001 is <span class="hi-exam">via SW to CW</span> (not SW only). <span class="hi-exam">2FR1064 (RADWASTE OVERBOARD DISCH FLOW RECORDER) must be OPERABLE</span> during the release — if 2FR1064 becomes inoperable, the crew is required to stop the release (per Step 5.5.8).
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q61</div>
 Liquid Radwaste Release (CVCS Monitor Tank): release path through CC Heat Exchanger and CW system. <span class="hi-exam">Only one circulator is required to be in service to allow a release to continue.</span> The 1R18 radiation monitor does not isolate/close the 1WL51 overboard valve on loss of flow.
 </div>
@@ -68,6 +73,6 @@ Release path selection per S1.OP-SO.WL-0002: with Unit 2 circulators all OOS, 22
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
 - Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
-- Related exam questions: [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
+- Related exam questions: [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
 - Related JPMs: [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

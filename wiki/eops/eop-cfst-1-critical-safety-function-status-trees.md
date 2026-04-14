@@ -27,9 +27,15 @@ Core Cooling Red Path validation criteria (with no RCPs running): <span class="h
 Subcooling Margin Monitor (SMM) adverse containment inputs: <span class="hi-exam">containment pressure > 4 psig</span> OR <span class="hi-exam">containment radiation (R44A/B) > 1E05 R/HR</span> — either condition alone triggers ADVERSE mode. When containment pressure lowers to < 3 psig, the SMM automatically resets from a pressure-driven adverse condition. <span class="hi-trap">The SMM does NOT automatically reset when radiation levels lower below the adverse threshold — manual action is required to reset from a radiation-driven adverse condition.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q46</div>
+CSF Hierarchy (high to low): <span class="hi-exam">SHUTDOWN MARGIN, CORE COOLING, HEAT SINK, THERMAL SHOCK, CONTAINMENT ENVIRONMENT, COOLANT INVENTORY</span>. CFST Color Hierarchy (high to low): <span class="hi-exam">Red, Purple, Yellow, Green</span>. Color takes precedence over CSF position — a <span class="hi-exam">Red path for Heat Sink takes priority over Purple path for Shutdown Margin or Core Cooling</span>. Example: with Core Cooling Purple and Heat Sink Red → address Heat Sink FIRST. <span class="hi-trap">Trap: candidates may default to the CSF hierarchy (Shutdown Margin > Core Cooling > Heat Sink) and address Core Cooling first, but the color hierarchy overrides — Red always beats Purple regardless of CSF position.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]], [[EOP-FRCE-3 — Response to High Containment Radiation Levels]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
 - Related systems: [[RVLIS]], [[RPS/SSPS]], [[Incores]], [[Containment]], [[Radiation Monitoring]]
-- Related exam questions: [[2020 Q24]], [[2020 Q26]]
-- Related exam: [[2020 NRC Written Exam]]
+- Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
+- Related exam questions: [[2019 Q46]], [[2020 Q24]], [[2020 Q26]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

@@ -57,6 +57,11 @@ Entered from EOP-TRIP-1 following LBLOCA based on <span class="hi-exam">containm
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q14</div>
+Containment Spray reset per EOP-LOCA-1 (after AUTOMATIC actuation without manual backup): the NCO resets one train of Containment Spray by <span class="hi-exam">depressing bezel button B ONLY</span>. Key switches A and C are NOT required when resetting after an automatic-only actuation. <span class="hi-trap">Bezel button B is the reset mechanism. Key switches would be involved only if a manual backup actuation had been performed.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q25</div>
 LOCA outside containment recognition from EOP-LOCA-1: alarms indicating a LOCA outside containment include <span class="hi-exam">2R41D (Plant Vent) in alarm, RHR sump overflow (OHA C-34), and RHR sump pump starts</span>. Combined with inability to recover PZR level, the transition path is from <span class="hi-exam">EOP-LOCA-1 to EOP-LOCA-6</span>. Key recognition: the crew arrives at LOCA-1 via the TRIP-3 CAS (PZR level cannot be maintained > 11%).
 </div>
@@ -65,7 +70,7 @@ LOCA outside containment recognition from EOP-LOCA-1: alarms indicating a LOCA o
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]]
-- Related exam questions: [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
+- Related exam questions: [[2019 Q14]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

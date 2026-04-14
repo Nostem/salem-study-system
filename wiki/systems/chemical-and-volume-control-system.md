@@ -43,6 +43,11 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 (UFSAR 9.3.4.2.4)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q3</div>
+1CV179 (PRIMARY WATER FLOW) <span class="hi-exam">fails CLOSED on loss of 125 VDC power</span>. During auto makeup with CV179 failed closed, actual boron flow through the blender is higher than the setpoint → RCS boron concentration rises → negative reactivity → Tavg lowers → <span class="hi-exam">control rods step OUT</span> (in auto) to restore Tavg. <span class="hi-trap">If CV179 failed OPEN, primary water flow would be excessive → RCS dilution → rods step IN. The failure mode (closed) is key.</span> Primary Water Flow Deviation Alarm setpoint: <span class="hi-exam"><span class="val-alarm">&plusmn;5.0 gpm</span></span>. Boric Acid Flow Deviation Alarm setpoint: <span class="val-alarm">&plusmn;0.8 gpm</span> (different alarm, common distractor).
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q29</div>
 VCT level control logic: <span class="hi-exam">only LT-112 actuates automatic make-up</span>. Automatic swapover to RWST requires <span class="hi-exam">2/2 coincidence (LT-112 AND LT-114) at low-low VCT level</span>. CV35 (high level divert valve) opens on LT-112 high signal. If LT-112 fails HIGH: CV35 opens and drains the VCT, auto make-up will NOT actuate (controller sees high level), and auto swapover to RWST will NOT occur (2/2 coincidence not met with LT-112 failed high). The charging pump loses suction as VCT empties, resulting in <span class="hi-exam">charging pump cavitation and damage</span>.
 </div>
@@ -131,6 +136,11 @@ During high RCS activity (below TS limits), per AB.RC-0002: <span class="hi-exam
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q2</div>
+Per AB.RC-0002 during high RCS activity: Step 3.14 requires a <span class="hi-exam">Centrifugal Charging Pump (CCP) in service</span> — crew is NOT required to swap to the PDP (13 Charging Pump). Step 3.16 directs <span class="hi-exam">maximize letdown flow</span>: place 1CV3 (45 GPM ORIFICE) in service in addition to the already in-service 1CV4 (75 GPM ORIFICE). <span class="hi-trap">Do NOT place both 75 gpm orifices (1CV4 + 1CV5) in service — the maximized lineup is one 75 gpm orifice plus the 45 gpm orifice.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q28</div>
 If <span class="hi-exam">2TE-130 (temperature detector for 2CC71, Letdown HX Temp Control Valve) fails LOW</span>, the controller sees low temperature and drives 2CC71 closed (reduces CCW cooling flow through the letdown HX). With less cooling, <span class="hi-exam">letdown HX outlet temperature rises</span>. Hotter letdown water flowing through the mixed bed demineralizers <span class="hi-exam">causes boron release into the RCS</span> (boration effect), which <span class="hi-exam">lowers Tavg</span>.
 </div>
@@ -153,6 +163,11 @@ CVCS Monitor Tank release with 2R18 inoperable: the <span class="hi-exam">SM/CRS
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q77</div>
 Loss of one centrifugal charging pump: <span class="hi-exam">23 Charging Pump (positive displacement) counts toward TS 3.1.2.4 (Charging Pumps — Operating) requirement</span> for reactivity addition capability. With 21 CHP tripped and 23 CHP started: <span class="hi-exam">two charging pumps remain OPERABLE (22 + 23) for reactivity TS</span>, and <span class="hi-exam">two boration flow paths remain OPERABLE for TS 3.1.2.2</span>. Only TS 3.5.2 (ECCS) applies — 21 CHP is the high-head ECCS component, and 23 CHP is NOT an ECCS high-head pump.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q50</div>
+PZR Safety Valve seat leakage (vapor space LOCA): actual PZR level lowers below program level → <span class="hi-exam">master flow controller automatically raises charging flow</span> to compensate. <span class="hi-trap">Trap: PZR Safety Valves are on top of the PZR — steam leaking out reduces steam space volume, which lowers level. Candidates may incorrectly think level rises because the leak is "at the top."</span> As RCS pressure lowers, the <span class="hi-exam">OT&Delta;T trip setpoint automatically lowers (pressure-dependent variable setpoint)</span>, causing the first automatic reactor trip before reaching the fixed low PZR pressure trip at <span class="val-trip">1865 psig</span>.
 </div>
 
 ## Cross-Unit Charging
@@ -207,7 +222,7 @@ Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related exam questions: [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
+- Related exam questions: [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
 - Related JPMs: [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -26,6 +26,16 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 CS Hi-Hi Containment Pressure bistables are <span class="hi-exam">energized to actuate</span>. Loss of a VIB leaves the associated bistable de-energized (cannot contribute to actuation) → <span class="hi-exam">logic goes from 2/4 to 2/3</span>. Per TS 3.3.2.1, the inoperable channel is placed in <span class="hi-exam">BYPASS (not tripped)</span> to prevent spurious CS actuation. <span class="hi-trap">Most ESF bistables are de-energized to trip → inoperable channels are placed in TRIPPED. Containment Spray is the opposite.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q14</div>
+Resetting one train of Containment Spray (after AUTOMATIC actuation without a manual backup): <span class="hi-exam">depress bezel button B ONLY</span>. Key switches A and C are NOT required for reset when only an automatic actuation has occurred. <span class="hi-trap">Key switches A and C would be involved if a manual backup had been performed. Candidates confuse automatic-only reset (bezel button B) with reset following manual actuation.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q15</div>
+EOP-LOCA-5 Table C CS pump determination with 2B 4KV bus de-energized: with Containment Pressure = 19 psig, RWST Level = 10 feet, and <span class="hi-exam">only 3 CFCUs running in slow speed (2B bus loss = 22 and 24 CFCUs unavailable)</span>, Table C shows <span class="hi-exam">0 CS pumps required</span>. Crew stops BOTH CS pumps. <span class="hi-trap">Must correctly count available CFCUs to enter Table C — the number of CFCUs running directly determines whether 0, 1, or 2 CS pumps are required.</span>
+</div>
+
 ## Operation
 
 ### Injection Phase
@@ -109,7 +119,7 @@ EOP-TRIP-1 Step 11: manual CS/Phase B actuation during LBLOCA with containment p
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
+- Related exam questions: [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
 - Related JPMs: [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

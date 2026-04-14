@@ -16,6 +16,11 @@ Entry procedure for reactor trip or safety injection events. Provides immediate 
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q49</div>
+EOP-TRIP-1 Step 1 Immediate Actions — manual reactor trip sequence (performed from memory, in order): <span class="hi-exam">FIRST actuate the Reactor Trip Switches (Pistol Grips)</span>, then the Trip Breaker BEZELS. If both fail, <span class="hi-exam">open Breakers E 6D and G 6D</span> (MG set supply breakers). <span class="hi-trap">Trap: the Pistol Grips are FIRST, not the Bezels. The Bezels are the second option. Step 2.2 (Rod Insertion) is a subsequent immediate action, not the next step after trip failure.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q1</div>
 Referenced for entry on manual reactor trip. Step 12 covers Safeguard Valve Alignment.
 </div>
@@ -105,7 +110,7 @@ Step 17, CCW Pump Operation Evaluation: during MODE III (LBLOCA + LOOP), <span c
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment Spray]], [[Main Turbine]], [[CCW]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]], [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
-- Related exam questions: [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
+- Related exam questions: [[2019 Q48]], [[2019 Q49]], [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
 - Related JPMs: [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

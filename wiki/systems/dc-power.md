@@ -49,6 +49,11 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 | With EOP-LOPA-1 load shedding | <span class="hi">4 hours</span> (SBO coping duration) | VTD 314204 |
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q22</div>
+During a STATION BLACKOUT with vital batteries discharging at their MAXIMUM rate, the vital batteries will supply DC power to emergency equipment for <span class="hi-exam">AT LEAST 2 hours</span>. <span class="hi-trap">Trap: 4 hours is the SBO coping duration WITH load shedding per EOP-LOPA-1 — the 2 hour value is the minimum at maximum discharge rate without load shed.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q49</div>
 Battery discharge indication on 2RP9: during normal "float charge" mode, volt meters read <span class="val-normal">~134 VDC</span> and <span class="hi-exam">amp meters read 0 amps</span> (charger supplies all loads). On loss of all AC power, batteries begin discharging — indicated by <span class="hi-exam">rising amps (&gt; 0) on 2RP9 amp meters</span> (NOT by voltage rising above zero). By design, batteries are sized for <span class="hi-exam">2 hours</span> of operation after loss of AC power. <span class="hi-trap">Trap: volt meters do NOT read 0 during normal operation — they read ~134 VDC. Amp meters read 0 because the charger supplies loads. Discharge is indicated by amps rising, not volts rising. Also: 2 hours (no load shed) vs 4 hours (with EOP-LOPA-1 load shed) — do not confuse the two durations.</span>
 </div>
@@ -103,5 +108,5 @@ Loss of 2A 125 VDC Bus loads: <span class="hi-exam">2A EDG is NOT available for 
 
 ## Connections
 
-- Related exam questions: [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2019 Q22]], [[2019 Q23]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

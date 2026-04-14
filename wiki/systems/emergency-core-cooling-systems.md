@@ -160,6 +160,11 @@ SEC Mode 2 (Blackout only) — load sequencer starts <span class="hi-exam">Charg
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q12</div>
+ECCS pump power supply mapping: <span class="hi-exam">22 SI Pump is powered from 2C 4KV Vital Bus</span>; <span class="hi-exam">22 RHR Pump is powered from 2B 4KV Vital Bus</span>. During a Reactor Trip + SI coincident with LOOP and EDG 2C unavailable: 22 RHR Pump is running (2B bus powered by EDG 2B), but 22 SI Pump is stopped (2C bus de-energized). <span class="hi-trap">Pump number does NOT indicate bus assignment — 22 RHR is on B bus, 22 SI is on C bus.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q18</div>
 SJ49s (Cold Leg Isolation Valves) are <span class="hi-exam">normally open and NOT Phase A valves</span>. To operate: only CMC switch on 2RP4 to VALVE OPERABLE (no Phase A reset needed). <span class="hi-exam">Monitor RCS pressure rise to determine if LOCA outside containment is isolated.</span>
 </div>
@@ -262,7 +267,7 @@ SI Accumulator makeup using 21 SI Pump (S2.OP-SO.SJ-0002 Section 5.2): prerequis
 
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
-- Related exam questions: [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
+- Related exam questions: [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
 - Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

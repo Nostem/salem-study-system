@@ -36,9 +36,16 @@ Salem EOPs' Continuous Action Steps are either surrounded by a shaded box or con
 | FRHS-1 and FRSM-1 early transitions | EOP-TRIP-1 Steps 20 and earlier specifically direct these transitions before CFST monitoring begins | EOP-TRIP-1 |
 | Continuous action steps during FRPs | Should NOT be performed when a Red or Purple path FRP is in progress (per step 2.16.2) | OP-AA-101-111-1003 |
 
+### CSF and FRP Implementation Priority
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q46</div>
+CSF Hierarchy per OP-AA-101-111-1003 (high to low): <span class="hi-exam">SHUTDOWN MARGIN, CORE COOLING, HEAT SINK, THERMAL SHOCK, CONTAINMENT ENVIRONMENT, COOLANT INVENTORY</span>. CFST Color Hierarchy (high to low): <span class="hi-exam">Red, Purple, Yellow, Green</span>. When multiple CSFs have challenges, <span class="hi-exam">color takes precedence over hierarchy position</span>. A Red path for a lower-priority CSF overrides a Purple path for a higher-priority CSF. Example: Heat Sink Red + Shutdown Margin Purple → address Heat Sink first.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
 - Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
-- Related exam questions: [[2020 Q74]], [[2020 Q100]]
-- Related exam: [[2020 NRC Written Exam]]
+- Related exam questions: [[2019 Q46]], [[2020 Q74]], [[2020 Q100]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

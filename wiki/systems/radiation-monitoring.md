@@ -28,6 +28,13 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
 1R1A (Control Room Area) radiation monitor in alarm: <span class="hi-trap">does NOT automatically actuate CAV in AP Mode</span>. Requires manual actuation — press ACCIDENT PRESSURIZED pushbutton at 1RP2 to actuate BOTH units' CAV into AP Mode. Emergency intake dampers open on the unaffected unit.
 </div>
 
+### Plant Vent Effluent Monitor (R41)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q25</div>
+2R41 has 4 channels (A, B, C, D). <span class="hi-exam">2R41 Channel D is the ONLY control room indication that reads out in µCi/sec</span> and can be used to determine if a radiological release is in progress for notification to State and Local Agencies. <span class="hi-trap">Channels A, B, and C do not read out in µCi/sec — only Channel D provides release rate information.</span>
+</div>
+
 ### Steam Generator Blowdown Radiation Monitors (R19)
 
 <div class="callout callout-exam">
@@ -47,6 +54,18 @@ R19 SGBD radiation monitor WARNING setpoint: <span class="hi-exam">Unit 1 — NO
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q23</div>
 2R32A (Fuel Handling Crane area radiation monitor): when the monitor <span class="hi-exam">fails to its alarm setpoint, ONLY crane hoist-up operation is prevented</span>. Lowering the hoist is still allowed (conservative — allows the assembly to be lowered back for increased water shielding). <span class="hi-trap">There is no BYP INT pushbutton to defeat this interlock, and crane trolley operation is NOT affected.</span> Note: <span class="hi-exam">2R5 and 2R9 (FHB area rad monitors) cause FHB exhaust to shift to 22 HEPA plus Charcoal but have NO interlocks with the fuel handling crane</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q33</div>
+Confirms 2R32A behavior: with 2R32A failed high, <span class="hi-exam">ONLY crane motion other than downward movement of suspended load is locked out</span>. FHB ventilation transfer to HEPA and Charcoal does NOT occur on 2R32A — <span class="hi-exam">FHB ventilation auto-shifts only on 2R5 and 2R9 alarms</span>.
+</div>
+
+### Fuel Storage Area Monitor (2R9)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q36</div>
+2R9 (Fuel Storage Area Monitor) alarm response: <span class="hi-exam">BOTH Fuel Handling Area Exhaust Fans receive an auto start signal</span> (standby fan starts). <span class="hi-exam">21 HEPA ONLY Filter Unit ISOLATES</span> and <span class="hi-exam">22 HEPA PLUS CHAR filter unit automatically aligns</span>. After 2R9 alarm, both exhaust fans are running but only the charcoal filter unit is in service. <span class="hi-trap">Trap: 2R9 does NOT keep both HEPA units in service — the HEPA ONLY unit isolates and the HEPA PLUS CHAR unit takes over.</span>
 </div>
 
 ### Containment High Range Monitors (R44A/B)
@@ -122,7 +141,11 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
 
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
-- Related exams: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+  - [[2019 Q8]] — 2R17A/B high alarm auto-closes 2CC149 (CCW Surge Tank Vent Valve)
+  - [[2019 Q25]] — 2R41 Channel D reads in µCi/sec for release determination
+  - [[2019 Q33]] — 2R32A fails high: only crane motion other than downward movement locked out / FHB vent does NOT shift
+  - [[2019 Q36]] — 2R9 alarm: both FHB exhaust fans start, HEPA ONLY isolates, HEPA PLUS CHAR aligns
   - [[2020 Q23]] — 2R32A fuel handling crane interlock / hoist-up only / R5 & R9 do NOT interlock crane
   - [[2020 Q51]] — R19 SGBD warning setpoint unit difference: Unit 1 no auto action, Unit 2 closes GB10s/GB185s/GB50
   - [[2023 Q49 — SGBD Radiation Monitor Check Source|2023 Q49]] — SGBD rad monitor check source response and interlocks
@@ -130,5 +153,6 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
   - [[2022 Q62]] — Fuel Handling Crane interlocks (2R32A vs 2R9 rad monitors)
   - [[2022 Q83]] — LBLOCA R44A/B >2000 R/hr / GE classification / Fission Product Barrier Table
   - [[2020 Q26]] — R44A/B >1E05 R/HR / SMM adverse containment / manual reset for radiation
+  - [[2019 Q43]] — 21 CVCS MT release via SW to CW / 2FR1064 inoperable requires stopping release
   - [[2020 Q90]] — 2R18 fails LOW → WL51 does NOT close / FR1064 must remain OPERABLE per release procedure
 - Related JPMs: [[2022 JPM RO-A4]], [[2022 JPM IP-k]]

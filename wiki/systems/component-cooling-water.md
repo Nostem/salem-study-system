@@ -96,6 +96,16 @@ Per AB.CC-0001 Attachment 1, three time-critical actions for RCP protection on l
 <span class="hi-trap">Trap: 2 minutes was previously the time to stop RCPs if BOTH seal injection and thermal barrier flow were lost concurrently — does not apply if only CCW is lost (seal injection still available from charging).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q5</div>
+SEC Mode III (SI + LOOP): <span class="hi-exam">CCW pumps are NOT automatically reloaded</span> by the SECs. After SEC Mode III loading completes, CCW pumps remain stopped. CCW cools ECCS components (RHR Pumps, RHR HX, SI Pumps), but this is not sufficient to cause the SECs to auto-start CCW due to EDG loading limitations.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q8</div>
+<span class="hi-exam">2CC149 (CCW Surge Tank Vent Valve) automatically CLOSES on high radiation alarm from 2R17A/B</span> (Component Cooling Process Monitors). 2CC149 is normally OPEN. Per AB.CC-0001 Step 3.8 NOTE: <span class="hi-exam">allowing CCW Surge Tank to overflow will contaminate the in-service Waste Holdup Tank AND the 22 ABV Exhaust Filter Unit</span>. <span class="hi-trap">Trap: the 22 ABV Exhaust Filter Unit contamination is easily missed — the overflow affects two components, not just the Waste Holdup Tank.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.3 requires two independent CCW loops OPERABLE in Modes 1–4
@@ -108,5 +118,5 @@ SFP Heat Exchanger tube rupture: components supplied by CCW with pressure less t
 
 ## Connections
 
-- Related exam questions: [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2019 Q5]], [[2019 Q8]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

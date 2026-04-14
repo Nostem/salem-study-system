@@ -54,11 +54,17 @@ BF19 (Main Feedwater Regulating Valves) behavior on loss of all station air: <sp
 SBO Diesel Control Air Compressor start (SC.OP-SO.CA-0001): during loss of offsite power with no ECACs running, start the SBO compressor at the SBO Compressor Building. Key sequence: open engine intake louvers, drain 1CA1920, open 2FZSBO10 battery charger breaker, air dryer ON, record hourmeter, UNLOADER to START, then <span class="hi-exam">PRESS AND HOLD BY-PASS VALVE pushbutton → SBO-IGN-SWT to START → verify oil pressure >15 psig → RELEASE BY-PASS VALVE</span>. Discharge alignment: <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span> pressurizes Aux Building 1A and 2A Control Air headers. UNLOADER to RUN to load.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q27</div>
+CA330 (Control Air Isolation Valves) operability and isolation: IAW <span class="hi-exam">LCO 3.6.3 (Containment Isolation Valves), CA330s are required to be OPERABLE in MODES 1-4 ONLY</span>. The CA330s automatically close on a <span class="hi-exam">Phase A Containment Isolation signal, which is generated when containment pressure FIRST exceeds <span class="val-trip">4 psig</span></span>. <span class="hi-trap">Trap: 15 psig is the Phase B setpoint — CA330s close on Phase A (4 psig), NOT Phase B (15 psig). Also, LCO 3.6.3 applies in Modes 1-4, not ALL MODES.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]]
+- Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]]
 - Related procedures: [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]]
-- Related exam questions: [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
+- Related exam questions: [[2019 Q27]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
 - Related JPMs: [[2020 JPM IP-j]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related tech specs: [[TS 3/4.6 — Containment]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]

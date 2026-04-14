@@ -64,6 +64,11 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 *Unit 2 piping downstream of 2RH75 & 76 designed to 600 psig.
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q4</div>
+During solid plant operations in MODE 5, throttling 22RH18 (RHR HX Outlet Valve) more CLOSED and 2RH20 (RHR HX Bypass Valve) more OPEN reduces flow through the RHR HX → <span class="hi-exam">RCS temperature rises → RCS pressure rises</span> (water is incompressible in solid plant conditions). To restore pressure: <span class="hi-exam">throttle 2CV18 (Low Pressure Letdown Control Valve) more OPEN</span> to increase letdown flow. <span class="hi-trap">Solid plant pressure control is maintained by adjusting letdown (not charging). Throttling CV18 more closed would RAISE RCS pressure, not lower it.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q30</div>
 To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining constant RHR flow: <span class="hi-exam">lower RH18 demand</span> (closes HX flow control valves, reducing flow through the RHR HX) and <span class="hi-exam">raise RH20 demand</span> (opens HX bypass valve, routing more flow around the HX). Total RHR flow stays constant but less passes through the heat exchanger. Reverse actions (raise RH18 / lower RH20) would increase cooldown rate.
 </div>
@@ -83,6 +88,11 @@ RHR HX tube blockage from foreign material reduces heat transfer, lowering coold
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q32</div>
 Solid plant ops with RHR pump trip: RCS pressure <span class="hi-exam">rises</span> (charging continues adding inventory with no RHR pump to provide letdown path). Letdown line pressure <span class="hi-exam">lowers</span> (loss of RHR discharge pressure). 2CV18 throttles closed attempting to maintain letdown pressure at setpoint. 2CV6 (Letdown Relief Valve) opens at <span class="val-trip">600 psig</span> to protect downstream piping if pressure not controlled.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q12</div>
+RHR pump power supply: <span class="hi-exam">22 RHR Pump is powered from 2B 4KV Vital Bus</span> (NOT 2C). During a Reactor Trip + SI coincident with LOOP and EDG 2C unavailable, 22 RHR Pump is running because 2B bus is powered by EDG 2B. <span class="hi-trap">Common confusion: 22 SI Pump is on 2C bus, but 22 RHR Pump is on 2B bus — pump number does not indicate bus assignment.</span>
 </div>
 
 ## RCS Isolation
@@ -142,7 +152,7 @@ Loss of both RHR pumps in Mode 5 with RCS depressurized and vented (2PS59). 21 R
 
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
-- Related exam questions: [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
+- Related exam questions: [[2019 Q4]], [[2019 Q12]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

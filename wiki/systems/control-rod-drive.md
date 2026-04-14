@@ -27,6 +27,17 @@ These interlocks are duplicated here from [[RPS/SSPS]] (the master reference) fo
 
 Note: Automatic rod withdrawal is disabled at Salem. (UFSAR T7.2-2)
 
+## Automatic Rod Control Speed
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q29</div>
+With rods in AUTO, control rod speed varies based on total temperature error magnitude:<br>
+• <span class="hi-exam">1.5 °F to 3 °F error: rods move at 8 SPM (minimum)</span><br>
+• <span class="hi-exam">3 °F to 5 °F error: rods move from 8 SPM to 72 SPM (linearly)</span> — rate of increase is <span class="hi-exam">32 SPM/°F</span><br>
+• <span class="hi-exam">Above 5 °F error: rods move at 72 SPM (maximum)</span><br>
+Calculation: with a temperature error of 4 °F, rod speed = 8 + (32 x (4 - 3)) = <span class="hi-exam">40 SPM</span>. <span class="hi-trap">Trap: 72 SPM is the maximum (at 5 °F), and 8 SPM is the minimum (at 3 °F). The speed is LINEAR between these points, not a step function.</span>
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q55</div>
 <span class="hi-exam">Urgent Failure alarm prevents ALL rod motion in both Manual and Automatic.</span> When Urgent Failure is present, rods are held in position by the <span class="hi-exam">stationary gripper coil energized at a reduced current</span>. The moveable gripper coil is de-energized. Rods cannot be inserted even in Manual. (Ref: S2.OP-AR.ZZ-0012)
@@ -96,6 +107,6 @@ Rod control surveillance (S2.OP-ST.RCS-0001): insert Control Bank D <span class=
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam questions: [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
+- Related exam questions: [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
 - Related JPMs: [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

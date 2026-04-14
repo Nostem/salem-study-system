@@ -23,6 +23,11 @@ Provides operator actions for responding to malfunctions of the Nuclear Instrume
 - Coordinate with I&C for troubleshooting and repair
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q30</div>
+When a PR NI channel (2N41) fails high, AB.NIS-0001 <span class="hi-exam">REQUIRES placing the Rod Bank Selector Switch in MAN</span> prior to placing the channel in tripped condition. <span class="hi-trap">Trap: the overpower rod stop block is enabled when a PR channel fails high (stops all automatic and manual rod withdrawal). Candidates may conclude placing rods in Manual is unnecessary — but AB.NIS-0001 explicitly requires it.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q82</div>
 When P-6 is LIT, IR NIS channels should indicate approximately <span class="hi-exam">1E-5% power</span> (the SR/IR overlap region). If an IR channel reads 1E-8% power when P-6 is LIT, that channel is inoperable. Per TS 3.3.1.1 bases, the <span class="hi-exam">24-hour action time</span> for one inoperable IR channel takes into account the redundant capability afforded by the operable IR channel and its <span class="hi-exam">low probability of failure during this period</span>. <span class="hi-trap">Trap: the bases cite low probability of failure of the operable channel, NOT low probability of reactivity events.</span>
 </div>
@@ -42,6 +47,6 @@ PR channel 2N41 fails high. AB.NIS-0001 actions completed (rod control to Manual
 - Related systems: [[RPS/SSPS]], [[Excore NIs]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
-- Related exam questions: [[2023 Q82]], [[2020 Q22]]
+- Related exam questions: [[2019 Q30]], [[2023 Q82]], [[2020 Q22]]
 - Related JPMs: [[2020 JPM Sim-f]]
-- Related exam: [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

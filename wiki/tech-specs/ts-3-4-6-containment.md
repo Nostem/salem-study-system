@@ -76,6 +76,11 @@ b. Overall air lock leakage rate per Containment Leakage Rate Testing Program
 |-----------|----------------|-----------------|
 | One air lock door inoperable | Verify OPERABLE door closed; lock closed | <span class="val-trip">1 hour</span>; then 24 hours |
 | Air lock interlock inoperable | Verify an OPERABLE door closed; lock closed | <span class="val-trip">1 hour</span>; then 24 hours |
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q28</div>
+Airlock interlock inoperable: REQUIRED ACTION B.1 = verify OPERABLE door is <span class="hi-exam">closed ONLY within 1 hour</span>. REQUIRED ACTION B.2 = <span class="hi-exam">lock the OPERABLE door closed within 24 hours</span>. <span class="hi-trap">Trap: "closed and locked" is NOT the 1-hour action — the immediate action is closed ONLY. Locking comes 24 hours later.</span>
+</div>
 | Air lock inoperable (other reasons) | Evaluate overall containment leakage; verify one door closed; restore | Immediately; 1 hour; <span class="val-alarm">24 hours</span> |
 | Unable to meet actions | Hot Standby in 6 hours, Cold Shutdown in 30 hours | 6 + 30 hrs |
 
@@ -310,6 +315,11 @@ Each containment isolation valve shall be OPERABLE.
 </details>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q27</div>
+LCO 3.6.3 applicability: containment isolation valves (including <span class="hi-exam">CA330 Control Air Isolation Valves</span>) are required to be OPERABLE in <span class="hi-exam">MODES 1-4 ONLY</span>. CA330s close on Phase A at <span class="hi-exam"><span class="val-trip">4 psig</span></span>. <span class="hi-trap">Trap: 15 psig is the Phase B setpoint. CA330s close on Phase A, not Phase B.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Phase A vs Phase B Isolation</div>
 Phase A isolation valves actuate on Safety Injection signal ("T"). Phase B isolation valves actuate on Hi-Hi Containment Pressure (Containment Spray actuation signal, "P"). Containment purge valves are required to be closed and immobilized with control air isolated.
 </div>
@@ -336,6 +346,6 @@ TS LCO 3.6.3 containment isolation valve operability: <span class="hi-exam">2VC5
 - Related systems: [[Containment]], [[ECCS]]
 
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2020 Q33]], [[2023 Q54]]
+- Related exam questions: [[2019 Q27]], [[2019 Q28]], [[2020 Q33]], [[2023 Q54]]
 - Related JPMs: [[2022 JPM SRO-A3]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

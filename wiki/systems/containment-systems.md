@@ -116,12 +116,24 @@ Phase A containment isolation valves: <span class="hi-exam">CC113 and CC215 (Exc
 Manually initiating <span class="hi-exam">Phase B and Spray Actuation</span> from the Control Room Console also actuates a Containment Ventilation Isolation (CVI) signal. CVI closes <span class="hi-exam">ALL purge AND pressure/vacuum relief valves: VC1, VC4, VC5, and VC6</span>. <span class="hi-trap">Phase A Isolation does NOT generate a CVI signal. CVI closes all four valves (VC1, 4, 5, 6) — not just the purge isolation valves (VC1, 4).</span>
 </div>
 
+## Containment Air Locks
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q28</div>
+IAW LCO 3.6.1.3 (Containment Air Locks), the containment airlock interlock mechanisms for BOTH containment airlocks are required to be OPERABLE in <span class="hi-exam">MODES 1-4 ONLY</span>. If a containment airlock with ONLY the interlock mechanism inoperable: REQUIRED ACTION B.1 requires verifying an OPERABLE door is <span class="hi-exam">closed ONLY (not locked)</span> in the affected air lock within <span class="hi-exam">1 hour</span>. REQUIRED ACTION B.2 then requires <span class="hi-exam">locking the OPERABLE door closed within 24 hours</span>. <span class="hi-trap">Trap: "closed and locked" is the 24-hour action (B.2), not the 1-hour action (B.1). The immediate 1-hour requirement is closed ONLY.</span>
+</div>
+
 ## Containment Atmosphere Iodine Removal
 
 - Chemically treated spray (NaOH solution) removes elemental iodine vapor by washing action
 - Recirculation through HEPA filter units removes particulates
 - Sump pH maintained 7.0–10.0 to minimize iodine re-evolution and chloride stress corrosion cracking
 (UFSAR 6.2.3)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q27</div>
+CA330 (Control Air Isolation Valve) operability: IAW <span class="hi-exam">LCO 3.6.3, CA330s are required to be OPERABLE in MODES 1-4 ONLY</span>. CA330s automatically close on <span class="hi-exam">Phase A Containment Isolation at <span class="val-trip">4 psig</span></span>. <span class="hi-trap">Trap: 15 psig is the Phase B setpoint — not the Phase A setpoint that closes the CA330s.</span>
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q52</div>
@@ -167,6 +179,11 @@ Hydrogen Recombiner System: per EOP-LOCA-1 step 17, <span class="hi-exam">only o
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q92</div>
 Per EOP-LOCA-1 Step 24, hydrogen concentration decision points: <span class="hi-exam">0.5% to 4.0% → start only ONE recombiner</span>. <span class="hi-exam">≥ 4.0% → consult TSC</span>. <span class="hi-trap">S2.OP-SO.CAN-0001 (normal operating procedure) starts two recombiners if H2 is 2.0% and rising. The EOP limits to one recombiner — do not confuse the two procedures.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q32</div>
+Hydrogen recombiner reference powers: <span class="hi-exam">21 Recombiner = 43.68 KW, 22 Recombiner = 42.63 KW</span>. With CURRENT pressure 4.0 psig and PRIOR-to-LOCA temperature 90°F → Cp = 1.21 → 21 Recombiner power setting = 43.68 x 1.21 = 52.85 → rounded to <span class="hi-exam">54 KW</span>.
 </div>
 
 <div class="callout callout-exam">
@@ -252,6 +269,6 @@ EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free vol
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
+- Related exam questions: [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
