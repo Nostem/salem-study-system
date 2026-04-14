@@ -33,10 +33,15 @@ After completing the surveillance and placing the rod bank selector switch in AU
 Same rod surveillance procedure. At step 4.1.11.3, uncontrolled rod insertion in <span class="hi-exam">both AUTO and MANUAL</span> (MALF RD0045). After placing switch in Manual and rods NOT stopping, <span class="hi-exam">manually trip the reactor</span>. Operator may reference AB.ROD-0003 for Rx trip direction.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-c</div>
+Same rod surveillance. Step 5.1.10.B-G: place Bank Selector in CBD, insert <span class="hi-exam">15 steps</span>, verify all rods moved at least 10 steps on P-250, record SAT, restore to ARO. At Step 5.1.11.C, place switch in AUTO (Turbine Power >15%). Uncontrolled rod insertion activates (MALF RD0045). Rods insert in <span class="hi-exam">both AUTO and MANUAL</span>. Operator <span class="hi-exam">manually trips the reactor</span>. Same discriminating step tested across 2020, 2022, and 2023 exams.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]]
 - Related procedures: [[AB.ROD-0003 — Continuous Rod Motion]]
 - Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
-- Related JPMs: [[2023 JPM Sim-a]], [[2022 JPM Sim-a]]
-- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM Sim-a]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]]
+- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

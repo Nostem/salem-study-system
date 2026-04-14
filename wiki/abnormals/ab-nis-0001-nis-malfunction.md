@@ -32,10 +32,16 @@ When P-6 is LIT, IR NIS channels should indicate approximately <span class="hi-e
 AB.NIS-0001 directs removal of a failed IR channel (e.g. N35 failed high) from service IAW <span class="hi-exam">S2.OP-SO.RPS-0001, Nuclear Instrumentation Channel Trip / Restoration</span>. For IR channels, SO.RPS-0001 places the <span class="hi-exam">LEVEL TRIP switch in bypass</span> (causing OHA E-29 to annunciate). <span class="hi-trap">Do not confuse with PR channel removal — PR channels use control power fuse removal and POWER MISMATCH BYPASS switch.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-f</div>
+PR channel 2N41 fails high. AB.NIS-0001 actions completed (rod control to Manual). The JPM then tests removal of the failed PR channel from service per S2.OP-SO.RPS-0001. PR channel removal requires <span class="hi-exam">five switch manipulations at NI Rack No. 81</span>: Detector Current Comparator (upper and lower), Power Mismatch Bypass, Rod Stop Bypass, and Comparator Channel Defeat. OHAs that clear: <span class="hi-exam">E-31 (PR OVRPWR ROD STOP) and E-39 (PR CH DEV)</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
 - Related exam questions: [[2023 Q82]], [[2020 Q22]]
-- Related exam: [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related JPMs: [[2020 JPM Sim-f]]
+- Related exam: [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

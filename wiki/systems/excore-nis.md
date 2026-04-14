@@ -75,11 +75,16 @@ IR channel removal from service per S2.OP-SO.RPS-0001: the procedure places the 
 Manual QPTR calculation (S2.OP-ST.NIS-0002): for each Power Range detector (N41-N44), upper and lower: divide measured current by REM 100% current value to get detector ratio. Sum ratios, divide by <span class="hi-exam">4 operable detectors</span> to get average. Divide each ratio by average = power tilt. A dropped rod (2D4) causes asymmetric flux in N42 quadrant: <span class="hi-exam">N42T = 1.041, N42B = 1.032</span>, both exceeding TS 3.2.4 limit of <span class="hi-exam">1.02</span> → surveillance UNSAT.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-f</div>
+PR channel 2N41 removal from service (S2.OP-SO.RPS-0001): at NI Rack No. 81, five switch manipulations in Steps 5.1.5.A-E — <span class="hi-exam">DETECTOR CURRENT COMPARATOR upper</span> → <span class="hi-exam">DETECTOR CURRENT COMPARATOR lower</span> → <span class="hi-exam">POWER MISMATCH BYPASS</span> (defeats input to rod control) → <span class="hi-exam">ROD STOP BYPASS</span> (OHA E-31 clears, 2RP4 MANUAL BYPASS CH I lights) → <span class="hi-exam">COMPARATOR CHANNEL DEFEAT</span> (OHA E-39 clears). Distinct from IR channel removal which uses LEVEL TRIP switch. RO-only JPM.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
-- Related exams: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
   - [[2020 Q22]] — IR channel removal from service / LEVEL TRIP switch bypass / OHA E-29
   - [[2023 Q72]] — Subcritical SR counts stabilize higher / SUR decays to zero after rod withdrawal
   - [[2023 Q11 — Loss of Vital Instrument Bus / NI Channel Response|2023 Q11]] — Vital instrument bus loss / NI channels fail low / IR trip logic
@@ -87,4 +92,4 @@ Manual QPTR calculation (S2.OP-ST.NIS-0002): for each Power Range detector (N41-
   - [[2022 Q57]] — IR NIS fails high / P-10 unblocks 1/2 IR trip on 3/4 PR below setpoint
   - [[2022 Q78]] — Gamma-Metrics substitution for SR channel per TS 3.9.2.2 bases
   - [[2022 Q82]] — One IR channel inoperable above P-6 / TS 3.3.1.1 Action 3
-- Related JPMs: [[2022 JPM RO-A3]]
+- Related JPMs: [[2022 JPM RO-A3]], [[2020 JPM Sim-f]]

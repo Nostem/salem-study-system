@@ -101,10 +101,15 @@ EOP-LOCA-5 Table C determines required CS pumps: with <span class="hi-exam">RWST
 Confirms CS pump power supplies during MSLB + LOOP with 2C 4KV Vital Bus lost: <span class="hi-exam">21 CS Pump (A bus) is available, 22 CS Pump (C bus) is NOT available</span>. Containment cooling design bases: 3 CFCUs + 1 CS pump. With C bus lost, only 21 CS Pump available.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-e</div>
+EOP-TRIP-1 Step 11: manual CS/Phase B actuation during LBLOCA with containment pressure NOT &lt; <span class="hi-exam">15 psig</span>. Use safeguards key switches on 2CC1. <span class="hi-exam">Alternate path: auto CS and Phase B signals fail</span>. Phase B valves <span class="hi-exam">2CC131 and 2CC190 (CCW containment isolation)</span> remain open and NaOH discharge valves <span class="hi-exam">2CS16 and 2CS17</span> remain closed. Step 11.4 Table D check reveals valves not in safeguards positions — operator manually repositions (close 2CC131/2CC190, open 2CS16/2CS17). NaOH valves provide sodium hydroxide to containment spray for iodine scrubbing and pH control.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related exam questions: [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
-- Related JPMs: [[2022 JPM Sim-f]]
+- Related JPMs: [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

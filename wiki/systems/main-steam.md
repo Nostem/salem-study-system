@@ -72,11 +72,16 @@ MS10 atmospheric dump valves during EOP-LOPA-1 (Loss of All AC Power): on loss o
 Main turbine fails to auto trip AND fails to manually trip following reactor trip from AB.RCP-0001. MSLI fails to auto actuate. <span class="hi-exam">CT#1 (CT-12): crew manually actuates MSLI using Fast Close pushbuttons on 2CC2</span> (or Loops 21-24 MSLI on 2CC1 Safeguards bezels). Failure to close MSIVs causes uncontrolled depressurization of all SGs, excessive RCS cooldown, and challenges to Integrity and Subcriticality CSFs. MS10 atmospheric dump valves used in EOP-FRHS-1 to depressurize selected SG to < <span class="hi-exam">575 psig</span> for condensate feed recovery.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-g</div>
+EOP-SGTR-1 RCS cooldown with steam dumps unavailable (permissive light NOT illuminated on 2RP4): Step 10 directs cooldown using <span class="hi-exam">MS10 atmospheric relief valves on intact SGs (21, 22, 23)</span>. Table B determines target temperature based on ruptured SG pressure — <span class="hi-exam">1045 psi → 503°F target</span>. Lower MS10 setpoints on intact SGs to fully open for maximum-rate cooldown. When hottest CET reaches 503°F, stop cooldown by matching MS10 setpoints to current SG pressures. Do NOT dump steam from the ruptured 24 SG.
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Dumps]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
 - Related exam questions: [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
-- Related JPMs: [[2023 JPM Sim-e]]
+- Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

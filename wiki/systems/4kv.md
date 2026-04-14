@@ -88,10 +88,15 @@ Loss of 2A 4KV Vital Bus response per AB.4KV-0001: A EDG auto-starts. 23 Chargin
 MSLB + LOOP with 2C 4KV Vital Bus lost (OHA J-3, 2C 4KV VTL BUS DIFF PROT): confirms 2C bus loads lost include <span class="hi-exam">22 CS Pump, 23 CFCU, and 25 CFCU</span>. Only <span class="hi-exam">21 CS Pump (A bus)</span> and <span class="hi-exam">22 &amp; 24 CFCUs (B bus)</span> remain for containment cooling — <span class="hi-exam">design bases NOT met</span> (requires 3 CFCUs + 1 CS pump).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-h</div>
+4KV Group Bus transfer from SPT to APT (S2.OP-SO.4KV-0008): verify APT voltage <span class="hi-exam">4.22 - 4.36KV</span>. P&L 3.3: OHA J-39 (GROUP BUS XFER FAIL) illuminates then clears during normal transfer. <span class="hi-exam">Alternate path: 2G Group Bus fails to transfer</span>, de-energizing bus and tripping <span class="hi-exam">24 RCP</span>. OHA alarms: J-8 (2G 4KV GRP BUS DIFF/OVRLD), J-38 (4KV GRP BUS UNDRVOLT), J-39, D-31 (24 RCP BKR OPEN/FLO LO). ARP for J-38 or D-31: IF ANY RCP trips → <span class="hi-exam">TRIP Reactor → GO TO EOP-TRIP-1</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
-- Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]]
+- Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]]
 - Related exam questions: [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
-- Related JPMs: [[2022 JPM Sim-g]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2022 JPM Sim-g]], [[2020 JPM Sim-h]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
