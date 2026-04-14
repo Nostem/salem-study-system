@@ -320,9 +320,65 @@ Response time verification ensures the ESF actuation associated with each channe
 
 ## 3/4.3.3 — Monitoring Instrumentation
 
-### Radiation Monitoring (3.3.3.1)
+### Radiation Monitoring Instrumentation (3.3.3.1)
 
-Radiation monitoring instrumentation includes area monitors, process monitors, and effluent monitors required for various modes of operation.
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.3.3.1</div>
+The radiation monitoring instrumentation channels shown in Table 3.3-6 shall be OPERABLE with their alarm/trip setpoints within the specified limits.
+</div>
+
+**Applicability:** As shown in Table 3.3-6
+
+**Actions:**
+- a. Setpoint exceeding Table 3.3-6 value → adjust within <span class="hi">4 hours</span> or declare inoperable
+- b. One or more channels inoperable → take ACTION shown in Table 3.3-6
+- c. Specification 3.0.3 is not applicable
+
+**SR 4.3.3.1:** CHANNEL CHECK, SOURCE CHECK, CHANNEL CALIBRATION, and CHANNEL FUNCTIONAL TEST per Surveillance Frequency Control Program
+
+#### Radiation Monitoring Channels (Table 3.3-6)
+
+**1. Area Monitors**
+
+| Instrument | Min Channels | Applicable Modes | Alarm/Trip Setpoint | Measurement Range | Action |
+|-----------|-------------|-----------------|--------------------|--------------------|--------|
+| Fuel Storage Area | 1 | * | ≤<span class="val-alarm">15 mR/hr</span> | 10⁻¹–10⁴ mR/hr | 23 |
+
+\* With fuel in the storage pool or building.
+
+**2. Process Monitors**
+
+| Instrument | Min Channels | Applicable Modes | Alarm/Trip Setpoint | Measurement Range | Action |
+|-----------|-------------|-----------------|--------------------|--------------------|--------|
+| Containment Gaseous — Purge & PVR Isolation | 1# | 1, 2, 3, 4 & 5 | per ODCM Control 3.3.3.9 | 10¹–10⁶ cpm | 26 |
+| Containment Gaseous — RCS Leakage Detection | 1 | 1, 2, 3 & 4 | N/A | 10¹–10⁶ cpm | 24 |
+| Containment Air Particulate — RCS Leakage Detection | 1 | 1, 2, 3 & 4 | N/A | 10¹–10⁶ cpm | 24 |
+| Noble Gas — Medium Range Plant Vent | 1 | 1, 2, 3 & 4 | ≤<span class="val-alarm">3.0×10⁻² μCi/cm³</span> (Alarm only) | 10⁻³–10¹ μCi/cm³ | 26 |
+| Noble Gas — High Range Plant Vent | 1 | 1, 2, 3 & 4 | ≤<span class="val-alarm">1.0×10² μCi/cm³</span> (Alarm only) | 10⁻¹–10⁵ μCi/cm³ | 26 |
+| Noble Gas — Condenser Exhaust | 1 | 1, 2, 3 & 4 | ≤<span class="val-alarm">7.12×10⁴ cpm</span> (Alarm only) | 1–10⁶ cpm | 26 |
+
+\# Plant vent noble gas monitor may also function in this capacity when purge/PVR isolation valves are open.
+
+**3. Control Room**
+
+| Instrument | Min Channels | Applicable Modes | Alarm/Trip Setpoint | Measurement Range | Action |
+|-----------|-------------|-----------------|--------------------|--------------------|--------|
+| Air Intake — Radiation Level | 2/Intake## | ** | ≤<span class="val-alarm">2.48×10³ cpm</span> | 10¹–10⁷ cpm | 27, 28 |
+
+\#\# Control Room air intakes shared between Unit 1 and 2.
+\*\* ALL MODES and during movement of irradiated fuel assemblies and during CORE ALTERATIONS.
+
+#### Radiation Monitoring Action Statements (Table 3.3-6)
+
+| Action | Requirement |
+|--------|-------------|
+| 23 | Less than min channels: perform area surveys with portable monitoring at least once per 24 hours |
+| 24 | Less than min channels: comply with ACTION requirements of Specification 3.4.7.1 |
+| 26 | Less than min channels: initiate preplanned alternate method within 72 hours; restore within 7 days or submit Special Report within 14 days |
+| 27 | One less than min channels: restore within 7 days or initiate CREACS in pressurization/recirculation mode. Suspend CORE ALTERATIONS and irradiated fuel movement during recirculation mode. |
+| 28 | No channels OPERABLE in a CR air intake: immediately initiate CREACS in pressurization/recirculation mode. Suspend CORE ALTERATIONS and irradiated fuel movement during recirculation mode. |
+
+*(Table 3.3-6, Amendment Nos. 245, 253, 278)*
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.1 Radiation Monitoring</summary>
@@ -339,9 +395,31 @@ The OPERABILITY of the radiation monitoring channels ensures that: (1) radiation
 </div>
 </details>
 
+---
+
 ### Remote Shutdown Instrumentation (3.3.3.5)
 
-Instrumentation required for hot shutdown from outside the control room.
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.3.3.5</div>
+The remote shutdown monitoring instrumentation channels shown in Table 3.3-9 shall be OPERABLE with readouts displayed external to the control room.
+</div>
+
+**Applicability:** MODES 1, 2, and 3
+
+**Action:** Restore inoperable channel within <span class="hi">7 days</span> or be in HOT SHUTDOWN within 12 hours.
+
+**SR 4.3.3.5:** CHANNEL CHECK and CHANNEL CALIBRATION per Surveillance Frequency Control Program
+
+#### Remote Shutdown Channels (Table 3.3-9)
+
+| Instrument | Readout Location | Measurement Range | Min Channels OPERABLE |
+|-----------|-----------------|-------------------|-----------------------|
+| Pressurizer Pressure | Hot Shutdown Panel 213 | 1700–2500 psig | 1 |
+| Pressurizer Level | Hot Shutdown Panel 213 | 0–100% | 1 |
+| Steam Generator Pressure | Hot Shutdown Panel 213 | 0–1200 psig | 1/steam generator |
+| Steam Generator Level | Hot Shutdown Panel 213 | 0–100% | 1/steam generator |
+
+*(Table 3.3-9, Amendment No. 282)*
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.5 Remote Shutdown Instrumentation</summary>
@@ -354,9 +432,79 @@ Instrumentation required for hot shutdown from outside the control room.
 </div>
 </details>
 
+---
+
 ### Accident Monitoring Instrumentation (3.3.3.7)
 
-Post-accident monitoring instrumentation per Regulatory Guide 1.97 including RCS pressure, containment pressure, containment radiation level, and other Category 1 variables.
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.3.3.7</div>
+The accident monitoring instrumentation channels shown in Table 3.3-11 shall be OPERABLE.
+</div>
+
+**Applicability:** MODES 1, 2, and 3
+
+**Action:** As shown in Table 3.3-11. Separate Condition entry is allowed for each Function.
+
+**SR 4.3.3.7:** CHANNEL CHECK, CHANNEL CALIBRATION, and CHANNEL FUNCTIONAL TEST per Surveillance Frequency Control Program unless otherwise noted in Table 4.3-11
+
+#### Accident Monitoring Channels (Table 3.3-11)
+
+| # | Instrument | Required Channels | Min Channels | Action |
+|---|-----------|-------------------|-------------|--------|
+| 1 | RCS Outlet Temp — T_HOT (Wide Range) | 2 | 1 | 1, 2 |
+| 2 | RCS Inlet Temp — T_COLD (Wide Range) | 2 | 1 | 1, 2 |
+| 3 | RCS Pressure (Wide Range) | 2 | 1 | 1, 2 |
+| 4 | Pressurizer Water Level | 2 | 1 | 1, 2 |
+| 5 | Steam Line Pressure | 2/SG | 1/SG | 1, 2 |
+| 6 | SG Water Level (Narrow Range) | 2/SG | 1/SG | 1, 2 |
+| 7 | SG Water Level (Wide Range) | 4 (1/SG) | 3 (1/SG) | 1, 2 |
+| 8 | RWST Water Level | 2 | 1 | 1, 2 |
+| 10 | Auxiliary Feedwater Flow Rate | 4 (1/SG) | 3 (1/SG) | 4, 6 |
+| 16 | Containment Pressure — Wide Range | 2 | 1 | 7, 2 |
+| 17 | Containment Water Level — Wide Range | 2 | 1 | 7, 2 |
+| 18 | Core Exit Thermocouples | 4/core quadrant | 2/core quadrant | 1, 2 |
+| 19 | Reactor Vessel Level Instrumentation System (RVLIS) | 2 | 1 | 8, 9 |
+| 20 | Containment High Range Accident Radiation Monitor | 2 | 2 | 10 |
+| 21 | Main Steamline Discharge (Safety Valves & Atmospheric Steam Dumps) Monitor | 1/MS Line | 1/MS Line | 10 |
+| 22 | Wide Range Neutron Flux Monitors | 2 | 1 | 1, 2 |
+| 23 | AFW Storage Tank (CST) Water Level | 2 | 1 | 1, 2 |
+| 24 | Containment Isolation Valve Position Indication | 2 per penetration flow path (a)(b) | 1/valve (c) | 1, 2 |
+
+(a) Not required for isolation valves whose associated penetration is isolated by at least one closed and deactivated valve, closed manual valve, blind flange, or check valve with flow secured.
+(b) Only one position indication channel is required for penetration flow paths with only one installed control room indication channel.
+(c) Action 2 not required for penetration flow paths with only one installed control room indication channel.
+
+#### Accident Monitoring Action Statements (Table 3.3-11)
+
+| Action | Requirement |
+|--------|-------------|
+| 1 | Less than Required channels: restore within <span class="hi">30 days</span> or submit special report per Spec 6.9.4 |
+| 2 | Less than Minimum channels: restore within <span class="hi">7 days</span> or HOT STANDBY in 6 hrs + HOT SHUTDOWN in 6 hrs |
+| 4 | One less than Required (AFW Flow): may proceed if OPERABLE SG Wide Range Level channel available as alternate for that SG; otherwise restore within 30 days or submit special report |
+| 6 | Less than Minimum channels: restore within <span class="hi">7 days</span> or HOT STANDBY in 6 hrs + HOT SHUTDOWN in 6 hrs |
+| 7 | One less than Required (Containment instruments): may proceed until next CHANNEL CALIBRATION (performed upon next entry into MODE 5, COLD SHUTDOWN) |
+| 8 | One RVLIS channel inoperable: restore within <span class="hi">30 days</span> or submit special report per Spec 6.9.4 |
+| 9 | Both RVLIS channels inoperable: restore one within <span class="hi">7 days</span> or submit special report per Spec 6.9.4 |
+| 10 | Less than min channels: initiate preplanned alternate method within 72 hours; restore within 7 days or submit Special Report within 14 days |
+
+#### Accident Monitoring Surveillance (Table 4.3-11)
+
+| Instrument | Channel Check | Channel Calibration | Channel Functional Test |
+|-----------|--------------|--------------------|-----------------------|
+| Items 1–8 (RCS temps, pressure, PZR level, SG level/pressure, RWST level) | Per SFCP | Per SFCP | N.A. |
+| AFW Flow Rate | S/U* | Per SFCP | N.A. |
+| Containment Pressure/Water Level (Wide Range) | Per SFCP | Per SFCP | N.A. |
+| Core Exit Thermocouples | Per SFCP | Per SFCP | N.A. |
+| RVLIS | Per SFCP | Per SFCP | N.A. |
+| Containment High Range Radiation Monitor | Per SFCP | Per SFCP | Per SFCP |
+| Main Steamline Discharge Monitor | Per SFCP | Per SFCP | Per SFCP |
+| Wide Range Neutron Flux Monitors | Per SFCP | Per SFCP | N.A. |
+| AFW Storage Tank (CST) Level | Per SFCP | Per SFCP | N.A. |
+| Containment Isolation Valve Position | Per SFCP | Per SFCP | N.A. |
+
+\* AFW System is used on each startup and flow rate indication is verified at that time.
+
+*(Table 3.3-11, Table 4.3-11, Amendment No. 301)*
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.7 Accident Monitoring Instrumentation</summary>
@@ -371,9 +519,34 @@ The Wide Range Neutron Flux Monitors are the Gamma-Metrics Post-Accident Neutron
 </div>
 </details>
 
-### Radioactive Liquid Effluent Monitoring (3.3.3.8)
+---
 
-Tank level indicating devices for detection and control of leaks that could transport radioactive materials to unrestricted areas.
+### Radioactive Liquid Effluent Monitoring Instrumentation (3.3.3.8)
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.3.3.8</div>
+The radioactive liquid effluent monitoring instrumentation channels shown in Table 3.3-12 shall be OPERABLE to ensure that the limits of ODCM Control 3.11.1.1 are not exceeded.
+</div>
+
+**Applicability:** At all times
+
+**Actions:**
+- b. Less than min channels → take ACTION in Table 3.3-12. Exert best efforts to return within 30 days.
+- c. Specification 3.0.3 is not applicable.
+
+**SR 4.3.3.8:** CHANNEL CHECK, SOURCE CHECK, CHANNEL CALIBRATION, and CHANNEL FUNCTIONAL TEST per Surveillance Frequency Control Program
+
+#### Radioactive Liquid Effluent Channels (Table 3.3-12)
+
+| Instrument | Min Channels OPERABLE | Action |
+|-----------|----------------------|--------|
+| Tank Level Indicating Devices — Temporary Outside Storage Tanks (as required) | 1 | 30 |
+
+**Action 30:** Less than min channels: liquid additions may continue for up to <span class="hi">30 days</span> provided tank liquid level is estimated during all liquid additions.
+
+**Surveillance (Table 4.3-12):** Channel Check daily during liquid additions to tank. If tank level indication not provided, verification by visual inspection. Channel Calibration per SFCP.
+
+*(Table 3.3-12, Table 4.3-12, Amendment Nos. 215, 282)*
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.8 Radioactive Liquid Effluent Monitoring</summary>
@@ -386,9 +559,50 @@ The purpose of tank level indicating devices is to assure the detection and cont
 </div>
 </details>
 
+---
+
 ### Power Distribution Monitoring System (3.3.3.14)
 
-Monitors core power distribution for verification of FQ and F-delta-H limits.
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.3.3.14</div>
+The Power Distribution Monitoring System (PDMS) shall be OPERABLE with: (a) minimum plant inputs per Table 3.3-14, (b) Core Exit Thermocouples meeting minimum coverage criteria, and (c) an installed PDMS calibration satisfying accuracy criteria.
+</div>
+
+**Applicability:** MODE 1, above <span class="hi">25% RTP</span>
+
+**Action:** Correct the deficient operability condition, or declare PDMS inoperable and use incore movable detector system for required core power distribution measurements. Increase measured peaking factors using COLR values for PDMS inoperable condition. Specification 3.0.3 is not applicable.
+
+**PDMS Operability Criteria:**
+
+- **a. Plant Inputs** — minimum valid inputs per Table 3.3-14
+- **b. Core Exit Thermocouples:**
+  - At least <span class="hi">25%</span> operable T/C with at least 2 T/C per quadrant, AND
+  - T/C pattern has coverage of all interior fuel assemblies within a chess knight's move from a responding calibrated T/C; OR
+  - At least 25% operable T/C with at least 2 T/C per quadrant, AND installed PDMS calibration within last <span class="hi">31 EFPD</span>
+  - T/C temperatures calibrated via cross-calibration with loop RTDs using T/C flow mixing factors
+- **c. Installed Calibration:**
+  - Initial calibration each cycle: ≥<span class="hi">75%</span> of incore movable detector thimbles at >25% RTP
+  - Subsequent calibrations: ≥<span class="hi">50%</span> of incore movable detector thimbles
+  - Minimum <span class="hi">2 detector thimbles per core quadrant</span>
+
+#### PDMS Required Plant Inputs (Table 3.3-14)
+
+| Plant Input | Available Inputs | Min Valid Inputs | Applicable Modes |
+|------------|-----------------|-----------------|-----------------|
+| Control Bank Position (a) | 4 | 4 | 1 (>25% RTP) |
+| T_cold | 4 | 2 | 1 (>25% RTP) |
+| Reactor Power Level (b) | 3 | 1 | 1 (>25% RTP) |
+| NIS Power Range Excore Detector Section Signals (d) | 8 | 6 | 1 (>25% RTP) |
+
+(a) From valid Demand Position or average of valid individual RCCA position indications for all RCCAs in the Control Bank.
+(b) From secondary calorimetric, average NIS Power Range Detector Power, or average RCS Loop Delta-T.
+(d) Upper and lower detector section signals per Power Range Channel; minimum 3 OPERABLE channels required.
+
+**Surveillance Requirements:**
+- **4.3.3.14.1:** Operability criteria verified prior to acceptance of PDMS core power distribution measurement results
+- **4.3.3.14.2:** Calibration required per Surveillance Frequency Control Program when minimum T/C number and coverage criteria are satisfied
+
+*(Table 3.3-14, Amendment Nos. 218, 282)*
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.14 Power Distribution Monitoring System (PDMS)</summary>
