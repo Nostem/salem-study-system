@@ -1,15 +1,17 @@
 ---
-title: "2020 Q04 — RCP Motor Winding Temperature"
+title: "2020 Q4 — RCP Motor Winding Temperature"
 category: exams
 status: draft
 aliases:
+  - 2020 Q4
   - 2020 Q04
+  - 2020-Q4
   - 2020-Q04
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q04 — RCP Motor Winding Temperature</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q4 — RCP Motor Winding Temperature</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">000015AK3.01 (2.5)</span>
 </div>
 

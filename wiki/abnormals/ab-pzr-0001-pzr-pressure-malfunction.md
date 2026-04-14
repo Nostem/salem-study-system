@@ -31,13 +31,13 @@ With PZR spray valve failed open and heaters energized but unable to maintain pr
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q07</div>
+<div class="callout-label">Exam — 2020 Q7</div>
 PORV fails open, cannot close in manual: <span class="hi-exam">next required action is CLOSE the associated block valve</span>. <span class="hi-trap">Opening the control power breaker is only done if the block valve FAILS to close.</span> CAS: if RCS pressure drops to <span class="val-trip">2000 psig</span> and continues to drop, TRIP the reactor. Basis: simulator scenarios showed reactor tripped at <span class="hi-exam">1950 psig on OT&Delta;T</span>, so 2000 psig value was chosen to prevent automatic trip. <span class="hi-trap">1900 psig distractor: low pressure reactor trip setpoint is 1865 psig (rate-compensated) — 1900 psig is plausible but not the procedure value.</span>
 </div>
 
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[RPS/SSPS]]
-- Related exam questions: [[2020 Q07]], [[2022 Q9]], [[2023 Q5]]
+- Related exam questions: [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
 - Related scenarios: [[2022 Scenario 4]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

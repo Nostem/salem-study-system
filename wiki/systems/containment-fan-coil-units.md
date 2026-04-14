@@ -60,7 +60,7 @@ Each fan-cooler unit includes: motor, fan, motor heat exchanger, cooling coils, 
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q39</div>
-CFCU power distribution from 4KV Vital Buses: <span class="hi-exam">21 CFCU (A bus), 22 CFCU (B bus), 23 CFCU (B bus, CIT), 24 CFCU (B bus), 25 CFCU (C bus)</span>. Loss of 2B 4KV Vital Bus = 22 and 24 CFCUs unavailable. Only 21 (A bus) and 25 (C bus) remain available. Note: 23 CFCU is <span class="hi">normally on C bus</span> but was CIT (Connected In Test) to B bus in the 2023 Q39 scenario. Per 2020 Q09, normal alignment has 23 on C bus.
+CFCU power distribution from 4KV Vital Buses: <span class="hi-exam">21 CFCU (A bus), 22 CFCU (B bus), 23 CFCU (B bus, CIT), 24 CFCU (B bus), 25 CFCU (C bus)</span>. Loss of 2B 4KV Vital Bus = 22 and 24 CFCUs unavailable. Only 21 (A bus) and 25 (C bus) remain available. Note: 23 CFCU is <span class="hi">normally on C bus</span> but was CIT (Connected In Test) to B bus in the 2023 Q39 scenario. Per 2020 Q9, normal alignment has 23 on C bus.
 </div>
 
 <div class="callout callout-exam">
@@ -69,7 +69,7 @@ CFCU SW flow via 2SW223: mechanical stop limits valve travel to <span class="hi-
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q09</div>
+<div class="callout-label">Exam — 2020 Q9</div>
 MSLB + LOOP with 2C 4KV Vital Bus lost (OHA J-3, 2C 4KV VTL BUS DIFF PROT): <span class="hi-exam">23 and 25 CFCUs unavailable (both normally on C bus)</span>. 21 CFCU failed independently (OHA C-5 indicates 21SW223 outlet flow control valve closed; BEZEL 1-2 low air flow — even with SW58/SW72 open, CFCU is inoperable). Only <span class="hi-exam">22 &amp; 24 CFCUs (B bus) and 21 CS Pump (A bus) available</span>. Containment cooling design bases require <span class="hi-exam">3 CFCUs and 1 CS pump — with only 2 CFCUs, design bases NOT met</span>. <span class="hi-trap">22 CS Pump is on C bus (unavailable), NOT B bus. Both CS pumps are NOT available — only 21 CS Pump (A bus) is running.</span>
 </div>
 
@@ -116,7 +116,7 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
-- Related exam questions: [[2020 Q09]], [[2020 Q17]], [[2020 Q40]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
+- Related exam questions: [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]]
 - Related scenarios: [[2022 Scenario 4]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

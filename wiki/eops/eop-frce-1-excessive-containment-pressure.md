@@ -25,5 +25,5 @@ Step C3-1 Caution: <span class="hi-exam">If LOCA-5 is in effect, operation of co
 ## Connections
 
 - Related systems: [[Containment Spray]], [[CFCUs]], [[Containment]]
-- Related exam questions: [[2020 Q09]], [[2022 Q80]]
+- Related exam questions: [[2020 Q9]], [[2022 Q80]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

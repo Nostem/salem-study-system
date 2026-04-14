@@ -31,14 +31,9 @@ Step 6 checks turbine trip status by verifying <span class="hi-exam">ALL turbine
 Caution C1-1: RCPs should NOT be tripped with reactor power <span class="hi-exam">greater than 5%</span>. During an ATWS, RCP operation could temporarily cool the core under voided RCS conditions. Even if RCP trip criteria are met (e.g., motor flange vibration > 5 mils), do NOT trip the RCP while power is > 5%. <span class="hi-trap">Manually tripping an RCP during some ATWS events could result in reduced heat removal and a challenge to fuel integrity.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q08</div>
-EOP-FRSM-1 bases states: <span class="hi-exam">"The turbine is tripped to prevent an uncontrolled cooldown of the RCS due to steam flow that the turbine would require. For an ATWS event where a loss of normal feedwater has occurred, analyses have shown that a turbine trip is necessary (within 30 seconds) to maintain SG inventory."</span> Turbine trip is performed in EOP-TRIP-1 BEFORE transition to FRSM-1. <span class="hi-exam">First step of FRSM-1 is to initiate auxiliary feedwater</span> (not turbine trip — that was already done in TRIP-1).
-</div>
-
 ## Connections
 
 - Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2020 Q08]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
+- Related exam questions: [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

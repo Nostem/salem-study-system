@@ -16,7 +16,7 @@ Provides guidance for establishing and securing Excess Letdown flow as an altern
 ## Key Actions / Information
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q05</div>
+<div class="callout-label">Exam — 2020 Q5</div>
 Excess Letdown established to VCT via CV134 (3-way valve). Key valve identifications:<br>
 - <span class="hi-exam">2CV278, 2CV131: Excess Letdown Isolation Valves — do NOT receive automatic closure signals on SI/Phase A</span><br>
 - <span class="hi-exam">2CV284, 2CV116: Seal Return Isolation Valves — close automatically on Phase A Isolation</span><br>
@@ -28,5 +28,5 @@ Following an SI signal, seal return isolation valves CV116 & CV284 close via Pha
 ## Connections
 
 - Related systems: [[CVCS]], [[Pressurizer & PRT]]
-- Related exam questions: [[2020 Q05]]
+- Related exam questions: [[2020 Q5]]
 - Related exam: [[2020 NRC Written Exam]]

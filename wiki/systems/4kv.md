@@ -77,7 +77,7 @@ Loss of 2A 4KV Vital Bus response per AB.4KV-0001: A EDG auto-starts. 23 Chargin
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q09</div>
+<div class="callout-label">Exam — 2020 Q9</div>
 MSLB + LOOP with 2C 4KV Vital Bus lost (OHA J-3, 2C 4KV VTL BUS DIFF PROT): confirms 2C bus loads lost include <span class="hi-exam">22 CS Pump, 23 CFCU, and 25 CFCU</span>. Only <span class="hi-exam">21 CS Pump (A bus)</span> and <span class="hi-exam">22 &amp; 24 CFCUs (B bus)</span> remain for containment cooling — <span class="hi-exam">design bases NOT met</span> (requires 3 CFCUs + 1 CS pump).
 </div>
 
@@ -85,6 +85,6 @@ MSLB + LOOP with 2C 4KV Vital Bus lost (OHA J-3, 2C 4KV VTL BUS DIFF PROT): conf
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]]
-- Related exam questions: [[2020 Q09]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
+- Related exam questions: [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
 - Related JPMs: [[2022 JPM Sim-g]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

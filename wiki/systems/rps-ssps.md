@@ -40,7 +40,7 @@ Instrumentation and Control Systems provide the reactor operator with informatio
 Note: Negative Flux Rate Trip has been removed per NRC License Amendment 278-261. (UFSAR T7.2-1)
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q01</div>
+<div class="callout-label">Exam — 2020 Q1</div>
 Turbine Stop Valve status lights on 2RP4: <span class="hi-exam">LIT solid = both SSPS trains see the valve at ≤ 85% open</span>. <span class="hi-exam">FLASHING = Trains A and B disagree on valve position</span>. OHA F-36 (TURB TRIP & P-9) confirms either 4/4 Turbine Stop Valves ≤ 85% open OR <span class="hi-exam">2/3 Auto Stop Oil Pressures ≤ <span class="val-trip">50 psig</span></span>. <span class="hi-trap">Trap: 45 psig is the Tech Spec value for auto stop oil, not the actual setpoint (≤ 50 psig). A flashing light does NOT mean a valve is mid-stroke — it means train disagreement.</span>
 </div>
 
@@ -242,8 +242,8 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related exams: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
-  - [[2020 Q01]] — 2RP4 turbine stop valve status lights flashing = SSPS train disagreement
-  - [[2020 Q07]] — PORV failed open: manual trip at 2000 psig to prevent auto trip on OT Delta-T (trips at ~1950 psig) / low PZR pressure trip at 1865 psig
+  - [[2020 Q1]] — 2RP4 turbine stop valve status lights flashing = SSPS train disagreement
+  - [[2020 Q7]] — PORV failed open: manual trip at 2000 psig to prevent auto trip on OT Delta-T (trips at ~1950 psig) / low PZR pressure trip at 1865 psig
   - [[2020 Q37]] — OT Delta-T inputs: Tavg, PZR Pressure, Delta-I / OP Delta-T has no pressure or delta flux input
   - [[2020 Q38]] — Loss of Tripping Capability alarm = loss of shunt coil power / UV coil still functional
   - [[2020 Q39]] — Containment High Pressure SI (2/3, 4 psig) cannot be blocked / Low PZR Pressure SI blocked via P-11

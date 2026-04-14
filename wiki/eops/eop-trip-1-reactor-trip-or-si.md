@@ -70,17 +70,12 @@ LBLOCA with <span class="hi-exam">auto SI failure on both trains</span> (CT#1, C
 Entered following manual reactor trip and SI on 23 SG tube rupture (650 gpm exceeding makeup). During TRIP-1 immediate actions: PO throttles AFW to no less than <span class="hi-exam">22E4 lbm/hr</span>. PO identifies <span class="hi-exam">21 CFCU failed to start on SEC — blocks 2A SEC, resets, manually starts 21 CFCU in LOW speed</span>. Feed side of ruptured SG isolated during TRIP-1 (23AF21, 23AF11 closed). Transition to SGTR-1 when 23 SG NR level rising uncontrolled. Note: 2PR7 PORV block valve already closed from earlier PORV leakage event — only 2PR6 block valve open.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q08</div>
-ATWS (reactor trip not confirmed) with loss of feedwater: <span class="hi-exam">first action in TRIP-1 if reactor trip is not confirmed is to TRIP THE TURBINE</span>. Per EOP-FRSM-1 bases: turbine trip prevents uncontrolled RCS cooldown from steam flow and is necessary <span class="hi-exam">within 30 seconds to maintain SG inventory</span> during an ATWS with loss of normal feedwater. <span class="hi-trap">Initiating AFW is the first step of FRSM-1 (not TRIP-1). Rod insertion is a TRIP-1 step but comes AFTER tripping the turbine. Rapid boration is initiated in FRSM-1, not in TRIP-1 prior to transition.</span>
-</div>
-
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment Spray]], [[Main Turbine]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]]
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
-- Related exam questions: [[2020 Q01]], [[2020 Q08]], [[2020 Q16]], [[2020 Q18]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
+- Related exam questions: [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
 - Related JPMs: [[2022 JPM Sim-f]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

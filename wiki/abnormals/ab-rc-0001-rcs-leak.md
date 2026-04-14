@@ -31,7 +31,7 @@ Event 4: <span class="hi-exam">20 gpm RCS leak inside containment</span>. RO rep
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q06</div>
+<div class="callout-label">Exam — 2020 Q6</div>
 AB.RC-0001 can be entered for any indication of an RCS leak, but <span class="hi-trap">in Mode 4 with uncontrolled PZR level reduction, the procedure directs transfer to AB.LOCA-0001 (Shutdown LOCA)</span>. AB.RC-0001 actions for stopping the RHR pump and closing 21SJ49 (RHR Discharge to Cold Legs) are for Modes 1-3 RHR suction isolation, not Mode 4.
 </div>
 
@@ -39,6 +39,6 @@ AB.RC-0001 can be entered for any indication of an RCS leak, but <span class="hi
 
 - Related systems: [[CVCS]], [[RCS]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
-- Related exam questions: [[2020 Q06]], [[2023 Q3]], [[2023 Q97]]
+- Related exam questions: [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

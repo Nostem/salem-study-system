@@ -64,7 +64,7 @@ AB.PZR-0001 directs <span class="hi-exam">manual reactor trip when RCS pressure 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q07</div>
+<div class="callout-label">Exam — 2020 Q7</div>
 Confirms 2022 Q9: AB.PZR-0001 PORV failed open sequence: 1) attempt to close PORV in manual, 2) <span class="hi-exam">close the associated block valve</span>, 3) if block valve fails to close THEN open control power breaker. CAS: trip reactor at <span class="val-trip">2000 psig</span> and lowering. Procedure bases: simulator showed auto trip at <span class="hi-exam">1950 psig on OT&Delta;T</span> — this is why 2000 psig was chosen.
 </div>
 
@@ -92,7 +92,7 @@ PORV channel assignments: <span class="hi-exam">2PR1 is controlled by Channel I 
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
-- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q07]], [[2020 Q36]]
+- Related exam questions: [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]]
 - Related JPMs: [[2022 JPM IP-i]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

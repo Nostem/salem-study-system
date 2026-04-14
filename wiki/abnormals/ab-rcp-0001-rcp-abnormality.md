@@ -15,7 +15,7 @@ Provides guidance for response to reactor coolant pump abnormal conditions.
 ## Continuous Action Summary (Attachment 1)
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q04</div>
+<div class="callout-label">Exam — 2020 Q4</div>
 AB.RCP-0001 Attachment 2 CAS requires stopping RCPs for motor winding temp <span class="val-trip">>302°F</span>. Common distractors:<br>
 - Motor bearing temp 170°F — does NOT exceed CAS limit of <span class="val-trip">>175°F</span><br>
 - Motor flange vibration 3 mils — entry condition for AB.RCP-0001 but CAS trip requires <span class="val-trip">>5 mils</span><br>
@@ -70,6 +70,6 @@ RCP #2 seal failure diagnostics: standpipe level HIGH alarm combined with #1 sea
 - Related systems: [[RCPs]], [[CCW]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2020 Q04]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
+- Related exam questions: [[2020 Q4]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

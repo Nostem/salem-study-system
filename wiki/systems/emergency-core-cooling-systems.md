@@ -140,7 +140,7 @@ Automatic swapover of charging pump suction from VCT to RWST requires <span clas
 7. Time delay: ~25 seconds for active pumps to deliver flow
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q03</div>
+<div class="callout-label">Exam — 2020 Q3</div>
 SBLOCA with 2A 4KV bus faulted and LOOP: <span class="hi-exam">only one SI pump available</span> (the SI pump on the remaining vital bus). With only 1 SI pump running and all RCPs stopped, EOP-LOCA-2 Table C adverse containment subcooling requirement is <span class="hi-exam">141°F</span> for charging pump reduction. At 1035 psig (1049.7 psia), T-Sat = 550.56°F → max CET for stopping one charging pump = <span class="hi-exam">409°F</span>. <span class="hi-trap">Trap: with 2 SI pumps running the subcooling requirement would be 135°F, not 141°F. Candidates must determine the number of available SI pumps based on 4KV bus alignment.</span>
 </div>
 
@@ -252,7 +252,7 @@ LBLOCA with <span class="hi-exam">auto SI failure on both trains</span> (CT#1, C
 
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
-- Related exam questions: [[2020 Q03]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
+- Related exam questions: [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
 - Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

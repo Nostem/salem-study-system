@@ -99,7 +99,7 @@ The RHR system is isolated from the RCS by two normally closed motor-operated va
 During LOCA recirculation, the RHR pumps take suction from the containment sump and pump radioactive borated water (with H₂ and NaOH in solution) through the RHR heat exchangers and into the RCS. (UFSAR T5.5-1)
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q06</div>
+<div class="callout-label">Exam — 2020 Q6</div>
 Shutdown LOCA in Mode 4 (RCS temp 325°F, pressure 300 psig): enter <span class="hi-exam">AB.LOCA-0001 (Shutdown LOCA)</span> for any uncontrolled reduction in PZR level in Mode 4. CAS directs if PZR level <span class="hi-exam">&lt;11%: stop the operating RHR Pump aligned for Shutdown Cooling and close 2RH1 and 2RH2 (RHR Common Suction)</span>. <span class="hi-trap">AB.RHR-0001 redirects to AB.LOCA-0001 in Mode 4. AB.RHR-0001 actions (isolate letdown, start SI/charging, maintain PZR level 5-50%) apply only to Modes 5 or 6.</span>
 </div>
 
@@ -132,7 +132,7 @@ LOCA outside containment indication from RHR piping: <span class="hi-exam">OHA C
 
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
-- Related exam questions: [[2020 Q06]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
+- Related exam questions: [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

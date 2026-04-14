@@ -40,7 +40,7 @@ Converts steam energy from the steam generators into electrical energy. (UFSAR 1
 (UFSAR T7.2-1)
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q01</div>
+<div class="callout-label">Exam — 2020 Q1</div>
 OHA F-36 (TURB TRIP & P-9) confirms turbine trip above P-9: either <span class="hi-exam">4/4 Turbine Stop Valves ≤ 85% open OR 2/3 Auto Stop Oil Pressures ≤ <span class="val-trip">50 psig</span></span>. On 2RP4, turbine stop valve closed lights: <span class="hi-exam">LIT solid = both SSPS trains agree valve closed; FLASHING = train disagreement</span>. Redundant trip solenoids: 20-ET, 20-AST-1, 20-AST-2. <span class="hi-trap">45 psig is the Tech Spec value for auto stop oil — the actual setpoint is ≤ 50 psig.</span>
 </div>
 
@@ -73,14 +73,9 @@ Stator Water Cooling: <span class="hi-exam">Unit 2 (GE SCW) is the ONLY unit wit
 ATWS turbine trip verification (EOP-FRSM-1 Step 6): confirmed by <span class="hi-exam">ALL turbine stop valve closed bi-stables LIT on 2RP4</span>. <span class="hi-trap">Auto Stop Oil low pressure bi-stables (2/3) on 2RP4 indicate a turbine trip demand, NOT confirmation the turbine actually tripped (stop valves may not have closed).</span> If turbine trip is not confirmed, dispatch operator to locally trip at the front standard.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q08</div>
-ATWS with loss of normal feedwater: <span class="hi-exam">first action in EOP-TRIP-1 if reactor trip is not confirmed is to TRIP THE TURBINE</span>. Per EOP-FRSM-1 bases: turbine trip necessary within <span class="hi-exam">30 seconds to maintain SG inventory</span> during ATWS with loss of feedwater. Prevents uncontrolled RCS cooldown from steam flow the turbine would require.
-</div>
-
 ## Connections
 
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2020 Q01]], [[2020 Q08]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]]
+- Related exam questions: [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

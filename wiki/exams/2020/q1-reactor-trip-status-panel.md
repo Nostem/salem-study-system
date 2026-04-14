@@ -1,15 +1,17 @@
 ---
-title: "2020 Q01 — Reactor Trip Status Panel"
+title: "2020 Q1 — Reactor Trip Status Panel"
 category: exams
 status: draft
 aliases:
+  - 2020 Q1
   - 2020 Q01
+  - 2020-Q1
   - 2020-Q01
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q01 — Reactor Trip Status Panel</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q1 — Reactor Trip Status Panel</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">000007EK2.03 (3.5)</span>
 </div>
 
@@ -45,5 +47,4 @@ The flashing light on 2RP4 indicates that …
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Main Turbine]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam: [[2020 NRC Written Exam]]

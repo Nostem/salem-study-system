@@ -1,15 +1,17 @@
 ---
-title: "2020 Q08 — ATWS Turbine Trip"
+title: "2020 Q8 — ATWS Turbine Trip (POTENTIALLY OUTDATED)"
 category: exams
 status: draft
 aliases:
+  - 2020 Q8
   - 2020 Q08
+  - 2020-Q8
   - 2020-Q08
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q08 — ATWS Turbine Trip</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q8 — ATWS Turbine Trip</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">000029EK3.12 (4.4)</span>
 </div>
 

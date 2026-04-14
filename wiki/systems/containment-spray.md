@@ -91,14 +91,14 @@ EOP-LOCA-5 Table C determines required CS pumps: with <span class="hi-exam">RWST
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q09</div>
+<div class="callout-label">Exam — 2020 Q9</div>
 Confirms CS pump power supplies during MSLB + LOOP with 2C 4KV Vital Bus lost: <span class="hi-exam">21 CS Pump (A bus) is available, 22 CS Pump (C bus) is NOT available</span>. Containment cooling design bases: 3 CFCUs + 1 CS pump. With C bus lost, only 21 CS Pump available.
 </div>
 
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2020 Q09]], [[2020 Q42]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
+- Related exam questions: [[2020 Q9]], [[2020 Q42]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
 - Related JPMs: [[2022 JPM Sim-f]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
