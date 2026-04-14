@@ -615,6 +615,70 @@ questions:
     ka_importance: 2.7
     type: RO
     tier_group: "Tier 2/Group 1"
+  - number: 51
+    topic: "SGBD Rad Monitor Warning Setpoint"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank, Salem Vision Database"
+    systems:
+      - radiation-monitoring
+      - steam-generators
+    ka: "073000K4.01"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 52
+    topic: "SW Nuclear Header Leak EDG/CFCU Supply"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem Vision Database"
+    systems:
+      - service-water
+      - containment-fan-coil-units
+      - diesel-generators
+    ka: "076000K3.07"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 53
+    topic: "SW Pump Trip / 1A 4KV Bus Differential"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - service-water
+      - 4kv
+      - diesel-generators
+    ka: "076000A2.01"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 54
+    topic: "Emergency Control Air Compressor Power Supply"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank, Salem 2016 NRC Exam, Q62"
+    systems:
+      - control-air
+      - 460-230v-ac
+    ka: "078000K2.02"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 55
+    topic: "Phase A Containment Isolation Valves"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - containment-systems
+      - chemical-and-volume-control-system
+      - component-cooling-water
+      - feedwater-and-condensate
+    ka: "103000A3.01"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
   - number: 56
     topic: "Rod Drive MG Set Power Supplies"
     answer: D
