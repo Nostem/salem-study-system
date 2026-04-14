@@ -16,7 +16,7 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
 • Unit 2 is at 100% Power.<br>
-• 21 Auxiliary Feedwater Pump is cleared and tagged for motor replacement.<br>
+• <span class="hi">21 Auxiliary Feedwater Pump</span> is cleared and tagged for motor replacement.<br>
 • 22 CFCU is cleared and tagged for bearing replacement.<br>
 • A Large Break LOCA occurs concurrently with a Loss of Off-Site Power.<br>
 • The crew is currently implementing step 17, "CCW Pump Operation Evaluation", in accordance with 2-EOP-TRIP-1, Reactor Trip or Safety Injection.<br>
