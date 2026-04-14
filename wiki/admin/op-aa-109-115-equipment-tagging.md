@@ -23,7 +23,14 @@ Provides requirements for the equipment tagging program, including Red Blocking 
 Attachment 3, Tagging Rules: In an emergency, the <span class="hi-exam">Shift Manager</span> can authorize the repositioning of a component with a Red Blocking Tag (RBT) attached if it presents an immediate challenge to safety of personnel or plant equipment. <span class="hi-trap">The CRS can approve tagouts and releases but does NOT have authority to authorize repositioning of a Red Blocking Tag component in an emergency.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q70</div>
+Breaker Tagging (Attachment 2, section 11.4): If the <span class="hi-exam">bus is energized</span> and the breaker is being removed from the cubicle, the <span class="hi-exam">RBT is removed from the breaker racking mechanism</span>, a <span class="hi-exam">red danger rope, tape or FME device</span> is hung inside the cabinet across the cubicle opening with a warning sign stating the bus is energized, and the <span class="hi-exam">same RBT is transferred to the red rope or tape</span>. <span class="hi-trap">The RBT cannot stay on the breaker (breaker is being removed). A White Caution Tag is NOT an acceptable substitute. An additional RBT on the cubicle door is NOT acceptable — the RBT must go on the danger rope.</span>
+</div>
+
 ## Connections
 
-- Related exam questions: [[2022 Q70]]
-- Related exam: [[2022 NRC Written Exam]]
+- Related systems: [[460/230V AC]]
+- Related procedures: [[OP-AA-108-116 — Protected Equipment Program]]
+- Related exam questions: [[2022 Q70]], [[2020 Q70]]
+- Related exam: [[2022 NRC Written Exam]], [[2020 NRC Written Exam]]

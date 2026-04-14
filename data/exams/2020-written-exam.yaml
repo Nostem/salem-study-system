@@ -615,3 +615,113 @@ questions:
     ka_importance: 2.7
     type: RO
     tier_group: "Tier 2/Group 1"
+  - number: 61
+    topic: "Steam Dump PT-507 Fails High"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem Vision Database"
+    systems:
+      - steam-dumps
+      - main-steam
+    ka: "041000K3.05"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 62
+    topic: "SFP Anti-Siphon Design"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank – 2015 Indian Point 2 NRC, Q59"
+    systems:
+      - spent-fuel-pool
+    ka: "033000K4.03"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 63
+    topic: "Condenser Air Removal AR25 Stuck Open"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - condenser-air-removal
+    ka: "055000K3.01"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 64
+    topic: "CW Malfunction / Rapid Load Reduction"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - circ-water
+      - feedwater-and-condensate
+    ka: "075000K2.02"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 65
+    topic: "Fire Pump Start on Loss of AC"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem Vision Database"
+    systems:
+      - fire-protection
+    ka: "086000A1.05"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 66
+    topic: "Operator Burdens / Annunciator Marking"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank, Salem 2016 NRC Exam, Q66"
+    systems:
+      - annunciators
+    ka: "G2.1.1"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 67
+    topic: "Shift Turnover Pre/Post Relief Actions"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank – Hope Creek 2105 NRC Exam – Q66"
+    systems: []
+    ka: "G2.1.3"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 68
+    topic: "Control Rod Movement Requirements"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - control-rod-drive
+    ka: "G2.1.37"
+    ka_importance: 4.3
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 69
+    topic: "Component Configuration Control / TSAS Positioning"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified – Salem Vision Database"
+    systems: []
+    ka: "G2.2.14"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 3/Group 2"
+  - number: 70
+    topic: "Breaker Tagging / Removal from Energized Bus"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank, Vision Database"
+    systems:
+      - 460-230v-ac
+    ka: "G2.2.13"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 3/Group 2"

@@ -195,6 +195,8 @@ status: draft
 - [[FP-AA-012 — Fire Brigade Staffing]]
 - [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
 - [[OP-AA-300 — Reactivity Management]]
+- [[OP-AA-102-103-1001 — Operator Burdens Program]]
+- [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
@@ -235,6 +237,7 @@ status: draft
 - [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]]
 - [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]]
 - [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
+- [[S2.OP-SO.AR-0001 — Condenser Air Removal System Operation]]
 - [[S2.OP-SO.RHR-0001 — Initiating RHR]]
 - [[S2.OP-SO.SW-0005 — Service Water System Operation]]
 - [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]]

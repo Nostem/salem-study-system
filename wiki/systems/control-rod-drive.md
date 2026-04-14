@@ -62,6 +62,16 @@ Dropped rod recovery (AB.ROD-0002): before withdrawing the dropped rod, <span cl
 Misaligned rods (AB.ROD-0001): <span class="hi-exam">more than one rod stuck/misaligned = place unit in Hot Standby</span>. Only one rod misaligned = reduce power to <span class="hi-exam">&lt; 75% RTP</span>. <span class="hi-trap">Do not confuse Hot Standby (>1 rod) with Hot Shutdown or power reduction (1 rod).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q56</div>
+Rod Drive MG Set power supplies: <span class="hi-exam">11 MG set is powered from the 1E 460V bus; 12 MG set is powered from the 1G 460V bus</span>. Loss of 1E AND 1F 460V buses does NOT trip the reactor because <span class="hi-exam">one MG set (12, on 1G bus) is sufficient to maintain power to the Rod Control System</span>. <span class="hi-trap">Trap: 1E and 1F buses do NOT each power one MG set — both MG sets are NOT lost on loss of 1E + 1F.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q68</div>
+Manual rod movement communication (OP-AP-300-1001 step 4.4.3): during non-transient conditions, the RO shall STATE the <span class="hi-exam">selected control rod bank initial position, target control rod position, and the direction of movement</span>. <span class="hi-trap">Minimum info is bank/target/direction — NOT T<sub>AVG</sub>, NOT NIS power, NOT number of steps.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
@@ -69,14 +79,16 @@ Misaligned rods (AB.ROD-0001): <span class="hi-exam">more than one rod stuck/mis
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
-- Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
+- Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
   - [[2020 Q19]] — Dropped rod step counter/P/A converter reset procedure
   - [[2020 Q20]] — >1 misaligned rod = Hot Standby
+  - [[2020 Q56]] — MG set power supplies (11 on 1E 460V, 12 on 1G 460V)
   - [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]] — Urgent Failure prevents all rod motion / stationary gripper coil holds rods
   - [[2023 JPM Sim-g]] — Failed high Tavg channel / AB.ROD-0003 recovery
   - [[2023 JPM IP-j]] — Rod Drive M-G Set paralleling
   - [[2022 Q56]] — OHA E-8 Rod Insertion Limit / normal boration response
+  - [[2020 Q68]] — Control rod movement communication requirements (OP-AP-300-1001)
   - [[2022 Q92]] — Misaligned rod / power reduction to <75% RTP
   - [[2022 JPM Sim-a]] — Rod exercise surveillance / uncontrolled insertion requiring Rx trip
