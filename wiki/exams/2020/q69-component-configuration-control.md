@@ -15,7 +15,7 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 A one (1) hour or less Technical Specification Action Statement (TSAS) requires a component to be positioned to the CLOSED position.<br><br>
-In accordance with OP-AA-108-101-1002, Component Configuration Control, the component will be positioned by <span class="blank">_(1)_</span> and then the INDEPENDENT VERIFICATION (IV) will be performed <span class="blank">_(2)_</span>.
+In accordance with <span class="hi">OP-AA-108-101-1002, Component Configuration Control</span>, the component will be positioned by <span class="blank">_(1)_</span> and then the INDEPENDENT VERIFICATION (IV) will be performed <span class="blank">_(2)_</span>.
 </div>
 
 <div style="margin-bottom:14px;">
