@@ -31,5 +31,6 @@ EOP-TRIP-4 CAS (foldout page): if subcooling is <span class="hi-exam">0 degrees 
 
 ## Connections
 - Related systems: [[RCS]], [[RCPs]], [[Pressurizer & PRT]], [[ECCS]], [[CVCS]]
+- Related EOPs: [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
 - Related exam questions: [[2023 Q26]], [[2023 Q71]], [[2023 Q87]]
 - Related exam: [[2023 NRC Written Exam]]

@@ -100,7 +100,21 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 ### Isolation Signals
 - **Phase A** — initiated by SI signal. Closes majority of automatic containment isolation valves.
 - **Phase B** — initiated by High-High containment pressure (Containment Spray actuation). Closes remaining isolation valves.
+- **Containment Ventilation Isolation (CVI)** — closes containment purge isolation valves (VC1, VC4) AND pressure/vacuum relief valves (VC5, VC6).
 (UFSAR 6.3.2, 6.2.4)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q55</div>
+Phase A containment isolation valves: <span class="hi-exam">CC113 and CC215 (Excess Letdown Component Cooling Valves) receive a Phase A signal to close</span>. Key distinctions:<br>
+- <span class="hi-trap">CV2 and CV277 (Letdown Isolation Valves) do NOT receive Phase A — they close on low PZR level signal only. They are NOT containment isolation valves.</span> Letdown orifice valves CV3, 4, 5 & 7 ARE Phase A isolation valves.<br>
+- <span class="hi-trap">CC131 and CC190 (RCP Thermal Barrier) receive a Phase B signal, NOT Phase A.</span><br>
+- <span class="hi-trap">BF13s (Feedwater Isolation Valves) receive a Feedwater Isolation Signal, NOT Phase A.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q59</div>
+Manually initiating <span class="hi-exam">Phase B and Spray Actuation</span> from the Control Room Console also actuates a Containment Ventilation Isolation (CVI) signal. CVI closes <span class="hi-exam">ALL purge AND pressure/vacuum relief valves: VC1, VC4, VC5, and VC6</span>. <span class="hi-trap">Phase A Isolation does NOT generate a CVI signal. CVI closes all four valves (VC1, 4, 5, 6) — not just the purge isolation valves (VC1, 4).</span>
+</div>
 
 ## Containment Atmosphere Iodine Removal
 
@@ -151,6 +165,11 @@ Hydrogen Recombiner System: per EOP-LOCA-1 step 17, <span class="hi-exam">only o
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q92</div>
+Per EOP-LOCA-1 Step 24, hydrogen concentration decision points: <span class="hi-exam">0.5% to 4.0% → start only ONE recombiner</span>. <span class="hi-exam">≥ 4.0% → consult TSC</span>. <span class="hi-trap">S2.OP-SO.CAN-0001 (normal operating procedure) starts two recombiners if H2 is 2.0% and rising. The EOP limits to one recombiner — do not confuse the two procedures.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q60</div>
 Hydrogen recombiner power setting calculation (per S2.OP-SO.CAN-0001): <span class="hi-exam">Power Setting = Cp (pressure correction factor) x Reference Power</span>. Use the <span class="hi-exam">CURRENT containment pressure</span> and the <span class="hi-exam">PRIOR-to-LOCA containment temperature</span> to select Cp from Attachment 2. Round up to the <span class="hi-exam">next higher setting readable on the meter</span>. Example: 22 Hydrogen Recombiner at 5 psig and 90F pre-LOCA: Cp=1.24, Ref Power=42.63 KW → 52.86 KW → rounded to <span class="hi-exam">54 KW</span>. <span class="hi-trap">Use pre-LOCA temperature (not current), and current pressure (not peak) for Cp selection.</span>
 </div>
@@ -158,6 +177,11 @@ Hydrogen recombiner power setting calculation (per S2.OP-SO.CAN-0001): <span cla
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q63</div>
 Fire Protection Containment Isolation (2FP147): on a valid fire detected inside containment (Zones 59 and 74 on 2RP5), <span class="hi-trap">2FP147 must be manually opened from the 2RP5 panel — it does NOT automatically open</span>. However, <span class="hi-exam">2FP147 WILL automatically close on a Phase A containment isolation signal</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q75</div>
+Confirms 2FP147 containment fire response sequence: after OHA A-7 and 2RP5 indicate fire in containment (Zone 59 and Zone 74 lit), crew trips Reactor, Turbine, and all RCPs, enters EOP-TRIP-1. <span class="hi-exam">NEXT action per AB.FIRE-0001 is to OPEN 2FP147 from the control room.</span> Fire pumps start only after 2FP147 is opened. Containment deluge valves are automatic. <span class="hi-trap">PORV BLOCK valve EMER CLOSE is the relay room fire response, not containment fire.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -228,6 +252,6 @@ EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free vol
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
+- Related exam questions: [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

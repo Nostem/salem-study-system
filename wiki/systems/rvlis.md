@@ -29,9 +29,14 @@ RVLIS Train B requires <span class="hi-exam">2PT-405 (Wide Range RCS Pressure)</
 Core Cooling Red Path (no RCPs running): requires <span class="hi-exam">five (5) hottest CETs > 700°F AND RVLIS Full Range ≤ <span class="val-trip">39%</span></span>. <span class="hi-trap">RVLIS Upper Range is NOT applicable for core cooling status — it only provides indication from the hot leg piping connection to the top of the reactor vessel.</span> Purple Path (degraded core cooling with RCPs running): <span class="hi-exam">RVLIS Dynamic Range ≤ <span class="val-alarm">44%</span></span>. CET-based inadequate core cooling Red Path: <span class="hi-exam">five (5) CETs > <span class="val-trip">1200°F</span></span> (not three).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q84</div>
+Natural circulation rapid cooldown rate limits depend on RVLIS availability: <span class="hi-exam">with RVLIS: 100&deg;F/hr for the entire cooldown</span>. <span class="hi-exam">Without RVLIS: initial cooldown to 500&deg;F limited to &lt; 50&deg;F/hr, then &lt; 100&deg;F/hr afterwards</span>. RVLIS availability determines which EOP is used for rapid cooldown.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]]
-- Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
-- Related exam questions: [[2020 Q16]], [[2020 Q24]], [[2022 Q84]]
+- Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
+- Related exam questions: [[2020 Q16]], [[2020 Q24]], [[2020 Q84]], [[2022 Q84]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

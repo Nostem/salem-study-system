@@ -836,6 +836,134 @@ questions:
     ka_importance: 3.3
     type: RO
     tier_group: "Tier 3/Group 4"
+  - number: 76
+    topic: "CCW Restoration After LBLOCA + LOOP"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - component-cooling-water
+      - auxiliary-feedwater
+      - emergency-core-cooling-systems
+      - service-water
+    ka: "000011EA2.07"
+    ka_importance: 3.4
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+  - number: 77
+    topic: "Loss of Charging Pump Tech Spec Entries"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem 2015 NRC Exam – SRO Q2"
+    systems:
+      - chemical-and-volume-control-system
+      - emergency-core-cooling-systems
+    tech_specs:
+      - ts-3-4-1-2-boration-systems
+      - ts-3-4-5-eccs
+    ka: "000022G2.2.22"
+    ka_importance: 4.7
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+  - number: 78
+    topic: "CCW Abnormality RCP Bearing Temperature Time Limit"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - component-cooling-water
+      - reactor-coolant-pumps
+    ka: "000026A2.06"
+    ka_importance: 3.1
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+  - number: 79
+    topic: "SGTR-1 Subcooling Loss Transition to SGTR-3"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem ILT 17-01 Audit Exam, SRO Q4"
+    systems:
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+    ka: "000038EA2.07"
+    ka_importance: 4.8
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+  - number: 80
+    topic: "LOPA-1 Decision Time for Extended Blackout"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - dc-power
+      - diesel-generators
+    ka: "000055EA2.05"
+    ka_importance: 3.7
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+  - number: 81
+    topic: "Grid Voltage Inoperable Lines"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified, Salem 2019 NRC Exam, Q62"
+    systems:
+      - 500kv
+    procedures:
+      - ab-grid-0001-grid-disturbance
+    ka: "000077G2.1.7"
+    ka_importance: 4.7
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+  - number: 82
+    topic: "Fuel Handling Incident Mast Tube"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - refueling
+    procedures:
+      - ab-fuel-0001-fuel-handling-incident
+    ka: "000036G2.1.32"
+    ka_importance: 4.0
+    type: SRO
+    tier_group: "Tier 1/Group 2"
+  - number: 83
+    topic: "Relay Room Fire PORV Block Valve"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank, Salem 17-01 Audit Exam, SRO Q8"
+    systems:
+      - pressurizer-level-and-press-control
+    procedures:
+      - ab-fire-0001-fire-response
+    ka: "000067AA2.04"
+    ka_importance: 4.3
+    type: SRO
+    tier_group: "Tier 1/Group 2"
+  - number: 84
+    topic: "Natural Circ Cooldown Rates RVLIS"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Salem Vision Database"
+    systems:
+      - rvlis
+      - reactor-coolant-system
+    ka: "00WE10EA2.2"
+    ka_importance: 3.9
+    type: SRO
+    tier_group: "Tier 1/Group 2"
+  - number: 85
+    topic: "FRTS-1 Entry RCS Pressure Below 300"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem Vision Database"
+    systems:
+      - reactor-coolant-system
+      - residual-heat-removal
+    ka: "00WE08EA2.2"
+    ka_importance: 4.1
+    type: SRO
+    tier_group: "Tier 1/Group 2"
   - number: 91
     topic: "Loss of All Charging Pumps / Cross-Unit Charging"
     answer: D

@@ -27,4 +27,5 @@ Administrative procedure governing the interface between Salem/Hope Creek operat
 ## Connections
 
 - Related systems: [[500KV]], [[Main Turbine]]
+- Related procedures: [[OP-AA-108-107-1001 — Electric System Emergency Operations]]
 - Related exam: [[2022 NRC Written Exam]]

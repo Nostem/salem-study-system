@@ -121,6 +121,11 @@ With no monitors OPERABLE: no direct means of detecting changes in core reactivi
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q94</div>
+MODE 6 entry (de-tensioning) requires <span class="hi-exam">TS 3.9.2.1 (unborated water source isolation valves secured closed) and TS 3.9.2.2 (two source range neutron monitors OPERABLE)</span>. <span class="hi-trap">TS 3.9.3 (reactor subcritical time: 168 hours May 16 – Oct 14, 80 hours Oct 15 – May 15) applies to IRRADIATED FUEL MOVEMENT, not de-tensioning. Continuous CR-to-refuel-floor communications is required 1 hour prior to CORE ALTERATIONS, not de-tensioning.</span>
+</div>
+
 ## 3/4.9.4 — Containment Building Penetrations
 
 <div class="callout callout-important">
@@ -301,3 +306,6 @@ The bases for 3/4.9.10 (reactor vessel) and 3/4.9.11 (storage pool) share a comm
 ## Connections
 
 - Related systems: [[RHR]], [[CVCS]], [[Rx Vessel & Internals]]
+- Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
+- Related exam questions: [[2020 Q94]]
+- Related exam: [[2020 NRC Written Exam]]

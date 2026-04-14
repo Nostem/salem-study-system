@@ -27,6 +27,11 @@ Step 17 — Containment Hydrogen Concentration: <span class="hi-exam">only one h
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q92</div>
+Step 24 — Containment Hydrogen Concentration decision points: <span class="hi-exam">between 0.5% and 4.0% → start ONLY one hydrogen recombiner</span>. <span class="hi-exam">≥ 4.0% → consult TSC for additional recovery actions</span>. <span class="hi-trap">Trap: the normal operating procedure (S2.OP-SO.CAN-0001) starts two recombiners if concentration is 2.0% and rising — but EOP-LOCA-1 limits operation to only ONE recombiner below 4%. Do not confuse OP procedure guidance with EOP guidance.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q76</div>
 PZR vapor space leak (SBLOCA) with RCS at <span class="hi-exam">1450 psig</span>: both <span class="hi-exam">charging pumps AND SI pumps are injecting</span> (1450 psig is below the shutoff head of both charging pumps at 2670 psig and SI pumps at 1520 psig). With subcooling at 10°F, PZR level 30% and rising, and RCS pressure stable — <span class="hi-exam">SI termination criteria in EOP-LOCA-1 are met</span>, so the next procedure transition is to <span class="hi-exam">EOP-TRIP-3 (SI Termination)</span>, not directly to EOP-LOCA-2.
 </div>
@@ -55,7 +60,7 @@ LOCA outside containment recognition from EOP-LOCA-1: alarms indicating a LOCA o
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]]
-- Related exam questions: [[2020 Q18]], [[2020 Q25]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
+- Related exam questions: [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

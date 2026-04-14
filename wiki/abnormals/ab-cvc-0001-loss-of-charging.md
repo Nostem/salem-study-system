@@ -29,10 +29,20 @@ Entered due to VCT level channel <span class="hi-exam">2LT112 failing high</span
 PZR Level Channel I fails high. Charging flow lowers automatically. RO places Master Flow Control in Manual and raises charging flow to restore PZR level to program. CRS enters AB.CVC-0001. RO selects operable <span class="hi-exam">Channel 3 for control</span> and operable Channel 2 or 3 for recorder. CRS evaluates <span class="hi-exam">TS 3.3.1.1 action 6 (72 hours to place channel in tripped condition)</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q91</div>
+With <span class="hi-exam">no Unit 2 Charging Pumps available</span> (22 CV Pump lost on 2C bus fault, 23 CV Pump tagged, 21 CV Pump tripped on overcurrent), step 3.50 directs: <span class="hi-exam">"COORDINATE with Unit 1 to place 13 Charging Pump in service using U/1 RWST."</span> <span class="hi-trap">Trap: the procedure does NOT direct tripping the reactor and initiating SI (that action is for PZR level uncontrolled). A bus differential fault prevents 2C EDG from re-energizing the bus, so 22 CV Pump cannot be recovered via AB.4KV-0003.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q77</div>
+Loss of one charging pump (21 CHP trips, 23 CHP started): <span class="hi-exam">TS 3.1.2.2 (Boration Flow Paths) still met — two boration flow paths remain</span>. <span class="hi-exam">TS 3.1.2.4 (Charging Pumps) still met — 23 Charging Pump counts for reactivity addition capability</span> (two pumps still operable: 22 and 23). <span class="hi-exam">TS 3.5.2 (ECCS) is the only applicable entry — one ECCS subsystem inoperable</span> (21 CHP is the high-head ECCS component for that train). 72 hours to restore, then Hot Shutdown within 12 hours (total 84 hours to MODE 4). <span class="hi-trap">The 23 Charging Pump (positive displacement) counts toward the reactivity TS (3.1.2.4) but is NOT an ECCS high-head pump.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]]
-- Related exam questions: [[2022 Q6]]
+- Related exam questions: [[2020 Q77]], [[2020 Q91]], [[2022 Q6]]
 - Related JPMs: [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

@@ -36,6 +36,11 @@ Moveable incore detectors are inserted into thimble tubes to map the core power 
 
 Calculates RCS subcooling margin from CET temperatures and RCS pressure. Used in EOPs to assess core cooling adequacy.
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q58</div>
+Subcooling Margin Monitor (CETPS) inputs: <span class="hi-exam">representative CET temperature, RCS wide range pressure, containment pressure, and containment radiation level</span>. <span class="hi-trap">PZR pressure is NOT used — PZR pressure instrumentation is narrow range (reading no lower than <span class="val-alarm">1700 psig</span>). RCS hot leg temperatures are NOT used — representative CET temperature is the correct temperature input.</span>
+</div>
+
 ### Adverse Containment Mode
 
 The SMM switches to ADVERSE mode when containment conditions are degraded. Either condition alone triggers adverse mode:
@@ -51,7 +56,8 @@ SMM adverse containment logic: <span class="hi-exam">either containment pressure
 
 - Related systems: [[Excore NIs]], [[RCS]], [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2023 Q57]], [[2020 Q26]]
+- Related exam questions: [[2023 Q57]], [[2020 Q26]], [[2020 Q58]]
 - Related exams: [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]
   - [[2023 Q57]] — In-Core Temperature Monitoring CET / reference junction compensation / 2300°F limit
   - [[2020 Q26]] — SMM adverse containment mode / R44A/B > 1E05 R/HR / manual reset required for radiation
+  - [[2020 Q58]] — Subcooling Margin Monitor inputs (CET temp, RCS WR pressure, not PZR pressure)

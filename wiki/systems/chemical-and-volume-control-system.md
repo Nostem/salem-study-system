@@ -173,6 +173,11 @@ EOP-LOCA-2 auxiliary spray depressurization: open <span class="hi-exam">2CV75 (A
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q55</div>
+Excess Letdown CCW isolation on Phase A: <span class="hi-exam">CC113 and CC215 (Excess Letdown Component Cooling Valves) receive a Phase A signal to close</span>. This is distinct from normal letdown isolation — <span class="hi-trap">CV2 and CV277 (Letdown Isolation Valves) do NOT close on Phase A; they close only on low PZR level. CV2/CV277 are NOT containment isolation valves.</span> The Phase A letdown isolation valves for normal letdown are <span class="hi-exam">CV3, CV4, CV5, and CV7</span>.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q54</div>
 Letdown orifice isolation valves (CV3, CV4, CV5) close on: <span class="hi-exam">Phase A signal, CV2 or CV277 closing, PZR level <17%, trip all charging pumps, or manual Phase A actuation from the safeguards bezel</span>. CV4 receives a closure signal <span class="hi-exam">directly from Phase A</span> (not directly from SI). SI actuates Phase A, which then closes CV4. <span class="hi-trap">CV2 and CV277 (letdown isolation valves) close on PZR low level <17% — NOT directly on SI or Phase A. Do not confuse CV2/CV277 interlocks with the letdown orifice valve (CV4) Phase A closure signal.</span>
 </div>
@@ -197,7 +202,7 @@ Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related exam questions: [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
+- Related exam questions: [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

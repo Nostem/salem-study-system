@@ -69,6 +69,11 @@ Main feedwater line break vs steam line break: FW line break causes SG levels to
 - Condenser serves as heat sink for steam dump during load rejection
 (UFSAR 10.4)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q93</div>
+Condensate pump trip at 100% power: <span class="hi-exam">2CN47 (23/24/25 Heater String Bypass valve) controls automatically to maintain SGFP suction pressure > <span class="val-normal">265 psig</span></span>. Per AB.CN-0001, open <span class="hi-exam">21-23 CN108 (Polisher Bypass Valves) if SGFP suction pressure < <span class="val-alarm">320 psig</span></span>. Power reduction per Attachment 2 to a maximum of <span class="hi-exam">85%</span>. <span class="hi-trap">265 psig is the CN47 auto-control setpoint, NOT the CN108 opening threshold. 75% is the IOP-4 third condensate pump start power level, NOT the AB.CN-0001 load reduction limit.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.3 (Auxiliary Feed Storage Tank), TS 3.7.13 (FW Isolation Valves)
@@ -109,6 +114,11 @@ Condensate recovery in EOP-FRHS-1 after loss of all AFW. Both SGFPs tripped due 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q60</div>
+ADFCS (Ovation) SG NR Level Quality Alarm response: with <span class="hi-exam">two inputs in Quality Alarm (BAD) for one SG</span> (e.g., Channel I failed HIGH and Channel II failed LOW), the system initiates <span class="hi-exam">OHA G-7 (ADFCS ALTERNATE ACTION) and transfers BOTH BF19 and BF40 for that SG to MANUAL</span>. <span class="hi-trap">Only one channel failure = single Quality Alarm — no ADFCS Alternate Action. With TWO bad channels on the same SG, the ADFCS cannot determine a valid level and transfers BF19 and BF40 to MANUAL. SGFPs do NOT shift to MANUAL (that was the previous digital feed system design). Other SGs' controllers remain in AUTO.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q45</div>
 BF19 (Main FW Regulating Valves) on loss of all station air: <span class="hi-exam">BF19s start to close at <span class="val-alarm">80 psig</span> control air header pressure</span>. BF19s receive air from Unit 1 via redundant Lunkenheimer air panels, but on total loss of ALL station air, no backup supply is available. <span class="hi-trap">ECACs cannot supply BF19 CA headers due to a check valve isolating the turbine building headers.</span> Per AB.CA-0001 CAS: if both CA headers < 80 psig or BF19s closing with inability to control SG level → trip the reactor.
 </div>
@@ -122,7 +132,7 @@ On trip of both SGFPs, only the <span class="hi-exam">MDAFW pumps auto-start</sp
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]]
-- Related exam questions: [[2020 Q44]], [[2020 Q45]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
+- Related exam questions: [[2020 Q44]], [[2020 Q45]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

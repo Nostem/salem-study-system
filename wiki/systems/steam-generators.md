@@ -72,6 +72,13 @@ The steam generators transfer heat from the reactor coolant (primary side) to th
 | Primary cladding | Austenitic SS (channel heads), Inconel (tubesheet) | Austenitic SS (Type 308L/309L) or Inconel 600 |
 | Max Moisture Carryover | 0.25 wt% | < 0.1 wt% |
 
+## SG Blowdown Radiation Monitoring
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q51</div>
+R19 SGBD radiation monitor WARNING setpoint — <span class="hi-exam">unit difference</span>: <span class="hi-exam">Unit 1 WARNING causes NO automatic actuations</span>. <span class="hi-exam">Unit 2 WARNING automatically closes ALL GB10s, GB185s, and 2GB50</span>. At the ALARM setpoint: Unit 1 closes ALL GB4s, GB8s, GB10s, GB185s, and 1GB50; Unit 2 isolates blowdown from the affected SGs by closing the associated GB4. <span class="hi-trap">Do not confuse WARNING actions (unit-specific, limited) with ALARM actions (more extensive isolation on both units).</span>
+</div>
+
 ## Construction
 
 - Reactor coolant flows through inverted U-tubes, entering and leaving through nozzles in the hemispherical bottom head
@@ -134,7 +141,7 @@ Restoring feed to a dry SG (EOP-FRHS-1): when CETs are stable or lowering, feed 
 
 - Related EOPs: [[EOP-SGTR-1]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2020 Q10]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
+- Related exam questions: [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2022 Scenario 4]]
 - Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

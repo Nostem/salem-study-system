@@ -48,5 +48,5 @@ Based on the above conditions, what procedure will the CRS implement and what is
 ## Connections
 
 - Related systems: [[RVLIS]], [[RCS]]
-- Related EOPs: [[EOP-TRIP-4 — Natural Circulation]]
+- Related EOPs: [[EOP-TRIP-4 — Natural Circulation]], [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
 - Related exam: [[2022 NRC Written Exam]]
