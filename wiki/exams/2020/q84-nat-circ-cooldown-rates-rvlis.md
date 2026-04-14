@@ -18,8 +18,8 @@ aliases:
 &bull; Unit 2 tripped from 100% Power due to a Loss of Off-Site Power.<br>
 &bull; It has been determined that a rapid natural circulation cooldown will be performed.<br><br>
 Complete the following statements concerning the procedural limitation in the natural circulation rapid cooldown rates of the RCS with and without RVLIS being available:<br><br>
-Note: 2-EOP-TRIP-5, Natural Circulation Rapid Cooldown without RVLIS<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-EOP-TRIP-6, Natural Circulation Rapid Cooldown with RVLIS<br><br>
+Note: 2-EOP-TRIP-5, Natural Circulation Rapid Cooldown with RVLIS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2-EOP-TRIP-6, Natural Circulation Rapid Cooldown without RVLIS<br><br>
 The cooldown rate of the RCS with RVLIS available will be limited to less than <span class="blank">__(1)__</span>, and the cooldown rate of the RCS without RVLIS available will be limited to less than <span class="blank">__(2)__</span>.
 </div>
 
@@ -33,7 +33,7 @@ The cooldown rate of the RCS with RVLIS available will be limited to less than <
 <details>
 <summary style="cursor:pointer;color:#60a5fa;font-size:12px;font-weight:600;padding:8px 0;">&#9654; Show Answer &amp; Explanation</summary>
 <div style="margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;">
-<div style="padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;"><strong style="color:#22c55e;">&#10003; C. Correct.</strong> EOP-TRIP-5, Rapid Natural Circulation Cooldown without RVLIS restricts the initial cooldown to 500&deg; to a maximum rate of less than 50&deg;F/hr. The subsequent cooldowns in TRIP-5 are at a maximum rate of 100&deg;F/hr. EOP-TRIP-6, Rapid Natural Circulation Cooldown with RVLIS allows a maximum rate of 100&deg;F/hr for the entire cooldown.</div>
+<div style="padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;"><strong style="color:#22c55e;">&#10003; C. Correct.</strong> EOP-TRIP-6, Rapid Natural Circulation Cooldown without RVLIS restricts the initial cooldown to 500&deg; to a maximum rate of less than 50&deg;F/hr. The subsequent cooldowns in TRIP-5 are at a maximum rate of 100&deg;F/hr. EOP-TRIP-5, Rapid Natural Circulation Cooldown with RVLIS allows a maximum rate of 100&deg;F/hr for the entire cooldown.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; A.</strong> Incorrect. Plausible because the candidate may confuse the cooldown limit restrictions for with or without RVLIS.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; B.</strong> Incorrect. Plausible because the candidate may confuse the cooldown limit restrictions for with or without RVLIS.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; D.</strong> Incorrect. Plausible because the candidate may confuse the cooldown limit restrictions for with or without RVLIS.</div>
