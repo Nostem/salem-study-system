@@ -28,6 +28,7 @@ Place 11 CVCS Monitor Tank in recirculation per Section 5.1: valve lineup per At
 ## Connections
 
 - Related systems: [[Waste Liquid]]
+- Related procedures: [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
 - Related exam questions: [[2023 Q61]]
 - Related JPMs: [[2020 JPM IP-k]]
 - Related exam: [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]

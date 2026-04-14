@@ -164,4 +164,5 @@ Ensures CRE occupants can control the reactor safely under normal conditions and
 - Related concepts: [[Radiation Monitoring]]
 - Related systems: [[Containment]]
 - Related exam questions: [[2023 Q94]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related JPMs: [[2020 JPM SRO-A2]]
+- Related exam: [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]]

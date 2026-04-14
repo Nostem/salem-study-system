@@ -223,5 +223,6 @@ Surveillance frequency is based on operating experience, equipment reliability, 
 
 - Related systems: [[500KV]], [[4KV]], [[EDGs]], [[DC Power]]
 - Related exam questions: [[2023 Q89]]
+- Related JPMs: [[2020 JPM SRO-A3]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -197,10 +197,15 @@ TS 3.1.3.1 action for more than one rod misaligned: <span class="hi-exam">be in 
 SDM calculation per TSAS 3.1.3.1 Action c.3: with one inoperable trippable rod (1D5 at 214 steps, bank D at 225 steps), operator must verify SDM within <span class="hi-exam">1 hour</span> using SC.RE-ST.ZZ-0002 Attachment 3. Acceptance criteria: SDM must be equal to or more negative than <span class="hi-exam">-1300 pcm</span> in Modes 1 or 2. Calculated SDM = -2398 pcm (SAT).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A1</div>
+SRO review of completed SDM calculation with <span class="hi-exam">two UNTRIPPABLE rods</span> (1D4 and 1D2). TS LCO 3.1.3.1 Action c.3 entered. Key distinction: the RO incorrectly treated rods as dropped/misaligned (step 4.1.6) instead of untrippable (step 4.1.5). Correct SDM = <span class="hi-exam">-269.5 pcm (UNSAT)</span>, requiring power reduction to <span class="hi-exam">~19% RTP</span>. <span class="hi-trap">Untrippable rods use a completely different calculation pathway than dropped/misaligned rods — the penalty (4330 pcm) and rod worth formula ("Trippable Rod Worth with Untrippable RCCA(s)") differ significantly.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]]
 - Related procedures: [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related exam questions: [[2020 Q20]], [[2023 Q56]]
-- Related JPMs: [[2020 JPM RO-A1]]
+- Related JPMs: [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]]
 - Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]]

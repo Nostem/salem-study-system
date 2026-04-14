@@ -60,6 +60,126 @@ jpms:
     alternate_path: false
     source: New
     task_number: "N1240110501"
+  - id: "Sim-a"
+    title: "Failed Open PZR Spray Valve"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AB.PZR-0001"
+    pages: "130-142"
+    ka: "010 A4.01"
+    ka_importance_ro: 3.7
+    ka_importance_sro: 3.5
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Modified
+    task_number: "1140240401"
+    safety_function: 3
+  - id: "Sim-b"
+    title: "Loss of Both RHR Pumps in Mode 5"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AB.RHR-0001"
+    pages: "143-166"
+    ka: "005 A2.03"
+    ka_importance_ro: 2.9
+    ka_importance_sro: 3.1
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Modified
+    task_number: "1140730402"
+    safety_function: 4P
+  - id: "Sim-c"
+    title: "Control Rod System Surveillance"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-ST.RCS-0001"
+    pages: "167-177"
+    ka: "001 A2.11"
+    ka_importance_ro: 4.4
+    ka_importance_sro: 4.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Modified
+    task_number: "N0010070101"
+    safety_function: 1
+  - id: "Sim-d"
+    title: "Raise Level in 21 SI Accumulator"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-SO.SJ-0002"
+    pages: "178-189"
+    ka: "006 A4.07"
+    ka_importance_ro: 4.4
+    ka_importance_sro: 4.4
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0060040101"
+    safety_function: 2
+  - id: "Sim-e"
+    title: "Manual Containment Spray and Phase B"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-TRIP-1"
+    pages: "190-199"
+    ka: "026 A4.01"
+    ka_importance_ro: 4.5
+    ka_importance_sro: 4.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Modified
+    task_number: "N1150500502"
+    safety_function: 5
+  - id: "Sim-f"
+    title: "Remove Power Range Channel from Service"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-SO.RPS-0001"
+    pages: "200-211"
+    ka: "015 A4.03"
+    ka_importance_ro: 3.8
+    ka_importance_sro: 3.9
+    applicability: RO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1140230401"
+    safety_function: 7
+  - id: "Sim-g"
+    title: "RCS Cooldown Using MS10s"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-SGTR-1"
+    pages: "212-220"
+    ka: "039 A4.07"
+    ka_importance_ro: 2.8
+    ka_importance_sro: 2.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1150190501"
+    safety_function: 4S
+  - id: "Sim-h"
+    title: "Transfer 4KV Group Buses SPT to APT"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-SO.4KV-0008"
+    pages: "221-234"
+    ka: "062 A2.04"
+    ka_importance_ro: 3.1
+    ka_importance_sro: 3.4
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "N0620110101"
+    safety_function: 6
   - id: "IP-i"
     title: "Locally Control Charging Flow IAW S2.OP-AB.CR-0001"
     type: In-Plant

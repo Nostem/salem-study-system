@@ -30,10 +30,16 @@ Key steps: depress SUMP AUTO ARMED PB for 21 and 22 SJ44s, remove lockouts from 
 During cold leg recirculation transfer: after sump valves open and RWST common suction (SJ69) closes, <span class="hi-exam">oscillating RHR pump amps, flows, and discharge pressures indicate cavitation from containment sump blockage</span>. The CRS transitions to <span class="hi-exam">EOP-APPX-7 (Containment Sump Blockage)</span>, NOT EOP-LOCA-5. <span class="hi-trap">LOCA-5 is for mechanical/electrical component failures causing loss of recirculation — sump blockage causing pump cavitation is APPX-7.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A5</div>
+ECCS aligned for cold leg recirculation at the time of emergency classification escalation. Large Break LOCA with all three fission product barriers lost: 21SJ44 (Containment Sump Suction Valve) <span class="hi-exam">failed to close</span> when crew attempted to isolate RHR sump overflow — creating an <span class="hi-exam">unisolable leak path outside containment</span>. This is the basis for the Containment Barrier loss (CB2.L/CB3.L) in the General Emergency classification.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related exam questions: [[2020 Q87]]
+- Related JPMs: [[2020 JPM SRO-A5]]
 - Related scenarios: [[2023 Scenario 1]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]

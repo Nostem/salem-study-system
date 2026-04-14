@@ -77,6 +77,16 @@ Manual rod movement communication (OP-AP-300-1001 step 4.4.3): during non-transi
 SDM calculation with inoperable rod (SC.RE-ST.ZZ-0002 Att. 3): <span class="hi-exam">rod bank penalty (step 4.2.6) is based on the position of the rod BANK, not the individual misaligned rod</span>. With all banks at ARO (225 steps), penalty = 0 pcm even though rod 1D5 is at 214 steps. Step 4.1.5 = 0 untrippable rods (rod is trippable). Calculated SDM = <span class="hi-exam">-2398 pcm</span> vs acceptance of -1300 pcm — SAT. Time critical JPM (60-minute limit per TSAS 3.1.3.1 Action c.3).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A1</div>
+SRO review of SDM calculation with two <span class="hi-exam">untrippable rods (1D4 and 1D2)</span>: key error was treating rods as dropped/misaligned rather than untrippable — different penalty section (4.2.4 vs 4.2.5, <span class="hi-exam">4330 pcm</span>) and different rod worth formula ("Trippable Rod Worth with Untrippable RCCA(s)" = <span class="hi-exam">-2327.8 pcm</span>). Correct SDM = <span class="hi-exam">-269.5 pcm (UNSAT)</span> — requires power reduction to ~19% RTP. Control Bank D at 200 steps (not ARO).
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-c</div>
+Rod control surveillance (S2.OP-ST.RCS-0001): insert Control Bank D <span class="hi-exam">15 steps</span>, verify each rod moved at least 10 steps on P-250, record SAT, restore to ARO. <span class="hi-exam">Alternate path: when rod bank selector switch placed in AUTO at Step 5.1.11.C, uncontrolled rod insertion occurs</span>. Rods continue inserting in both AUTO and MANUAL. Operator must recognize continuous insertion and <span class="hi-exam">manually trip the reactor</span>.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
@@ -84,8 +94,8 @@ SDM calculation with inoperable rod (SC.RE-ST.ZZ-0002 Att. 3): <span class="hi-e
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
-- Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]]
+- Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam questions: [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
-- Related JPMs: [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]]
+- Related JPMs: [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]]
 - Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

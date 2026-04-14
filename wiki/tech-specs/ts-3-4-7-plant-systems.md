@@ -463,3 +463,5 @@ The program for examination, testing, and service life monitoring is performed i
 ## Connections
 
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
+- Related JPMs: [[2020 JPM SRO-A3]]
+- Related exam: [[2020 NRC Operating Exam]]
