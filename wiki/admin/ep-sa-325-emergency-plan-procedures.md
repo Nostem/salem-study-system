@@ -6,6 +6,7 @@ aliases:
   - EP-SA-325
   - EP-SA-325-F2
   - EP-SA-325-F6
+  - EP-SA-325-F4
   - EP-SA-325-F8
   - ICMF
   - Initial Contact Message Form
@@ -72,6 +73,16 @@ ERDS activation: must select the correct unit's <span class="hi-exam">CONNECT bu
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 RO-A4</div>
+ERDS activation during an ALERT (Unit 2 manual trip + SI for RCS leak): same discriminating step as 2023 — must select <span class="hi-exam">Salem 2 CONNECT button</span>. Procedure EP-SA-325-F8 (R0). Steps 1.2.b.1 through 1.2.b.6 are all critical. Work Control NCO designated as Secondary Communicator performs activation within 60 minutes of emergency declaration.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A5</div>
+General Emergency classification and ICMF completion (time-critical, <span class="hi-exam">15/15 minutes</span>): Large Break LOCA with ECCS in cold leg recirc, all three fission product barriers lost. <span class="hi-exam">GE — 13 points: RB1.L or RB2.L (5 pts), FB2.L (5 pts), CB2.L or CB3.L (3 pts)</span>. Key indicators: 2R44A/B at <span class="hi-exam">305 R/Hr</span> (fuel damage), 21SJ44 failed to close (unisolable containment sump leak), 2R41D at <span class="hi-exam">5.12E+6 &micro;Ci/sec</span> (release in progress). Uses EP-SA-325-F4 (Attachment 4). Escalated from existing ALERT.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 SRO-A5</div>
 Emergency classification and ICMF completion (time-critical, <span class="hi-exam">15/15 minutes</span>): loss of all AC power to Unit 2 (3 EDGs + 2 SPTs lost) classifies as <span class="hi-exam">GENERAL EMERGENCY per EAL SG1.1 (Section S — System Malfunction, S1 Loss of AC Power)</span>. ICMF Attachment 4 (EP-SA-325-F4) Sections I-V. PAR determination via Appendix 1: not based on loss of 3 fission product barriers, not hostile action — select <span class="hi-exam">Default PAR (No RPSA): Evacuate 0-5 miles, Monitor & Prepare 5-10 miles</span>.
 </div>
@@ -80,5 +91,5 @@ Emergency classification and ICMF completion (time-critical, <span class="hi-exa
 
 - Related systems: [[RPS/SSPS]], [[EDGs]], [[4KV]]
 - Related exam questions: [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]]
-- Related JPMs: [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]]
-- Related exam: [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]], [[2020 JPM RO-A4]], [[2020 JPM SRO-A5]]
+- Related exam: [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -41,5 +41,5 @@ During LOOP, CRS directs transfer of 22 Backup Group PZR heaters to emergency po
 - Related systems: [[DC Power]], [[RCPs]], [[CVCS]], [[Pressurizer & PRT]]
 - Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
 - Related exam questions: [[2023 Q9]], [[2023 Q10]]
-- Related JPMs: [[2023 JPM IP-i]], [[2022 JPM IP-i]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2020 JPM IP-j]], [[2023 JPM IP-i]], [[2022 JPM IP-i]]
+- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]]

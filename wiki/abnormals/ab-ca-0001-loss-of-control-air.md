@@ -71,4 +71,5 @@ On loss of all control air with letdown isolated: <span class="hi-exam">1CV55 fa
 - Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]]
 - Related exam questions: [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related JPMs: [[2020 JPM IP-j]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

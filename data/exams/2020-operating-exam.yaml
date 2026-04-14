@@ -1,0 +1,110 @@
+exam: 2020
+type: operating
+ilot_class: "18-01"
+op_test: "19-01"
+jpms:
+  - id: "RO-A1"
+    title: "Calculate Shutdown Margin IAW SC.RE-ST.ZZ-0002"
+    type: Admin-RO
+    location: Classroom
+    procedure: "SC.RE-ST.ZZ-0002(Q)"
+    pages: "1-16"
+    ka: "G2.1.43"
+    ka_importance_ro: 4.1
+    ka_importance_sro: 4.3
+    applicability: RO/SRO
+    time_critical: true
+    time_critical_limit_minutes: 60
+    alternate_path: false
+    source: New
+    task_number: "N1200030301"
+  - id: "RO-A2"
+    title: "Verification of Active License Status"
+    type: Admin-RO
+    location: Classroom
+    procedure: "OP-AA-105-102"
+    pages: "17-27"
+    ka: "G2.1.4"
+    ka_importance_ro: 3.3
+    ka_importance_sro: 3.8
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1200030301"
+  - id: "RO-A3"
+    title: "Identify Components to Isolate SW Leak Using Drawings"
+    type: Admin-RO
+    location: Classroom
+    procedure: "Drawing 205342"
+    pages: "28-40"
+    ka: "G2.2.41"
+    ka_importance_ro: 3.5
+    ka_importance_sro: 3.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1220050302"
+  - id: "RO-A4"
+    title: "Activate ERDS During an ALERT IAW EP-SA-325-F8"
+    type: Admin-RO
+    location: Classroom
+    procedure: "EP-SA-325-F8"
+    pages: "41-51"
+    ka: "G2.4.43"
+    ka_importance_ro: 3.2
+    ka_importance_sro: 3.8
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1240110501"
+  - id: "IP-i"
+    title: "Locally Control Charging Flow IAW S2.OP-AB.CR-0001"
+    type: In-Plant
+    location: "In-Plant (Unit 2 RCA)"
+    procedure: "S2.OP-AB.CR-0001"
+    pages: "235-245"
+    ka: "APE 068 AA1.22"
+    ka_importance_ro: 4.0
+    ka_importance_sro: 4.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "1130070501"
+    safety_function: 2
+    rca: true
+  - id: "IP-j"
+    title: "Start SBO Diesel Air Compressor IAW SC.OP-SO.CA-0001"
+    type: In-Plant
+    location: "In-Plant (SBO Compressor Building)"
+    procedure: "SC.OP-SO.CA-0001"
+    pages: "246-263"
+    ka: "G2.1.23"
+    ka_importance_ro: 4.3
+    ka_importance_sro: 4.4
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N1150140501"
+    safety_function: 8
+    rca: false
+  - id: "IP-k"
+    title: "Place 11 CVCS Monitor Tank in Recirculation IAW S1.OP-SO.WL-0001"
+    type: In-Plant
+    location: "In-Plant (Unit 1 RCA)"
+    procedure: "S1.OP-SO.WL-0001"
+    pages: "264-280"
+    ka: "068 A2.02"
+    ka_importance_ro: 2.7
+    ka_importance_sro: 2.8
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0680010101"
+    safety_function: 9
+    rca: true

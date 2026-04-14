@@ -109,6 +109,11 @@ Containment entry for 22 CFCU tagging (Mode 1, 100% power): at the 22 CFCU area 
 During a DBA LBLOCA with 2B EDG tripped (LOOP conditions), <span class="hi-exam">22 and 24 CFCUs are NOT available</span> — they are powered from the 2B 4KV Vital Bus. The LOCA-5 mitigation strategy to "Run All CFCUs in High Speed" is therefore <span class="hi-trap">not implementable</span> under these conditions.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 RO-A3</div>
+SW leak isolation using P&ID 205342: leak on drain valve 21SW268 downstream of <span class="hi-exam">21SW76 (21 CFCU SW Outlet Valve)</span> in SW Valve Room, Auxiliary Building. Requires closing valves on multiple P&ID sheets including cross-connected header valves <span class="hi-exam">22SW76 and 22SW646</span>. Demonstrates P&ID reading skill for SW piping through CFCU cooling coil path.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q89</div>
 CFCU service water isolation per AB.SW-0001 Attachment 5: <span class="hi-exam">close SW72 (Outlet Water Valve) FIRST, then SW58 (Inlet Water Valve)</span>. Basis: <span class="hi-exam">minimize the possibility of water hammer following restoration</span>. After the MOVs are closed, field manual isolation valves (SW54 CFCU SW Inlet and SW76 CFCU SW Outlet on 78' elevation) are closed to fully isolate.
@@ -123,10 +128,15 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 - <span class="hi-trap">Erosion of the flow orifice upstream of SW223 INCREASES SW flow → INCREASES heat transfer → containment temp LOWERS (not rises).</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+25 CFCU trips in low speed on overcurrent protection (low speed breaker open, overcurrent flag up at 84 ft switchgear room). CRS directs starting 23 CFCU in high speed. TS entries: <span class="hi-exam">TS 3.6.2.3 Action a (14 days)</span> and <span class="hi-exam">TS 3.6.1.1 (1 hour containment integrity until control power removed)</span>. CRS directs WCC to open control power for 25 CFCU high and low speed breakers to satisfy containment integrity requirements.
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related exam questions: [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
-- Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]]
-- Related scenarios: [[2022 Scenario 4]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]]
+- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

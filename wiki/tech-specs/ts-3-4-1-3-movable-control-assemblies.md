@@ -192,8 +192,15 @@ Control banks shall be limited in physical insertion as specified in the <span c
 TS 3.1.3.1 action for more than one rod misaligned: <span class="hi-exam">be in Hot Standby within 6 hours</span>. AB.ROD-0001 implements this TS action. <span class="hi-trap">If only ONE rod is misaligned, the action is different — reduce power to &le;75% RTP within 1 hour (action c.3.d). Do not confuse the 1-rod and >1-rod actions.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 RO-A1</div>
+SDM calculation per TSAS 3.1.3.1 Action c.3: with one inoperable trippable rod (1D5 at 214 steps, bank D at 225 steps), operator must verify SDM within <span class="hi-exam">1 hour</span> using SC.RE-ST.ZZ-0002 Attachment 3. Acceptance criteria: SDM must be equal to or more negative than <span class="hi-exam">-1300 pcm</span> in Modes 1 or 2. Calculated SDM = -2398 pcm (SAT).
+</div>
+
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]]
+- Related procedures: [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related exam questions: [[2020 Q20]], [[2023 Q56]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related JPMs: [[2020 JPM RO-A1]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]]

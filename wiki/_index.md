@@ -210,6 +210,9 @@ status: draft
 - [[OP-AA-108-110 — Evaluation of Special Tests or Evolutions]]
 - [[OP-AA-108-116 — Protected Equipment Program]]
 - [[OP-AA-101-111-1003 — Use of Procedures]]
+- [[OP-AA-105-101 — Administrative Process for NRC License and Medical Requirements]]
+- [[OP-AA-105-102 — NRC Active License Maintenance]]
+- [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
@@ -238,7 +241,7 @@ status: draft
 - [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
 - [[S1.OP-SO.RCS-0001 — Rod Control System Operation]]
 - [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
-- [[SC.OP-SO.CA-0001 — SBO Diesel Control Air]]
+- [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]]
 - [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]]
 - [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
 - [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]]

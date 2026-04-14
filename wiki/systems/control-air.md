@@ -49,10 +49,16 @@ ECAC header sensing and CAS actions: <span class="hi-exam">#2 ECAC senses CA Hea
 BF19 (Main Feedwater Regulating Valves) behavior on loss of all station air: <span class="hi-exam">BF19s start to close at <span class="val-alarm">80 psig</span> control air header pressure</span>. Per AB.CA-0001 CAS: monitor BF19s for closure and inability to control SG level, or if both CA headers drop below <span class="val-trip">80 psig</span>, trip the reactor. <span class="hi-trap">85 psig is the ECAC auto-start setpoint, NOT the BF19 closure threshold — do not confuse.</span> BF19s receive air from Unit 1 via redundant (Lunkenheimer) air panels, but on total loss of ALL station air, no Unit 1 CA is available. <span class="hi-trap">A check valve prevents either unit's ECAC from supplying the BF19 turbine building control air header, so ECACs cannot maintain BF19 air supply even if running.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 IP-j</div>
+SBO Diesel Control Air Compressor start (SC.OP-SO.CA-0001): during loss of offsite power with no ECACs running, start the SBO compressor at the SBO Compressor Building. Key sequence: open engine intake louvers, drain 1CA1920, open 2FZSBO10 battery charger breaker, air dryer ON, record hourmeter, UNLOADER to START, then <span class="hi-exam">PRESS AND HOLD BY-PASS VALVE pushbutton → SBO-IGN-SWT to START → verify oil pressure >15 psig → RELEASE BY-PASS VALVE</span>. Discharge alignment: <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span> pressurizes Aux Building 1A and 2A Control Air headers. UNLOADER to RUN to load.
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]]
-- Related procedures: [[AB.CA-0001 — Loss of Control Air]]
+- Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]]
 - Related procedures: [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]]
 - Related exam questions: [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2020 JPM IP-j]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]

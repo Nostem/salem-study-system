@@ -108,11 +108,21 @@ Loss of ALL AC power to Unit 2 — General Emergency classification: <span class
 2A EDG running unloaded for maintenance run (initial condition). 2A EDG emergency trips during scenario. CRS evaluates <span class="hi-exam">TS 3.8.1.1 action b.1 (1 hour line surveillance)</span> and <span class="hi-exam">action b.4 (72 hours to restore EDG to Operable status)</span>. No impact to plant operations.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #1</div>
+2C EDG C/T for governor oil replacement and fuel rack lube (initial condition, 68 hours remaining in TSAS). Following LOOP: <span class="hi-exam">2A 4KV Vital Bus lost on Bus Differential protection, 2B EDG trips on overspeed (bent fuel rack linkage)</span>. All three 4KV Vital Buses de-energized — station blackout. Crew must identify 2C EDG as the only recovery path, have maintenance return it from C/T, start 2C EDG, close output breaker to energize 2C 4KV Vital Bus <span class="hi-exam">(CT-24)</span>, then immediately start one SW pump for EDG cooling <span class="hi-exam">(CT-25)</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A3</div>
+EDG operability with degraded SW: 1A EDG fails surveillance and declared INOPERABLE with 13 SW Pump C/T. Candidate must determine <span class="hi-exam">TWO SW Loops remain OPERABLE</span> (meets one pump per bus AND two pumps per bay requirements). Therefore <span class="hi-exam">TS 3.8.1.1 Action b.2 does NOT apply</span> — only b.1 (1 hr), b.3 (24 hrs), b.4 (72 hrs). This is <span class="hi-exam">Special Case D / Case #1 from S1.OP-SO.DG-0005 Exhibit 1</span>.
+</div>
+
 ## Connections
 
 - Related exam questions: [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2020 Q80]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
-- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related JPMs: [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related operating exam: [[2023 NRC Operating Exam]]
+- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
+- Related JPMs: [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
+- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -42,6 +42,13 @@ Per S2.OP-AB.CR-0001, <span class="hi-exam">EOPs are NOT applicable</span> durin
 Per AB.CR-0001, local control of RCP seal injection during CR evacuation: <span class="hi-exam">isolate CV-71 (by closing CV-70), open CV-73 (seal injection pressure control bypass valve), and manually adjust the bypass valve</span>. Total charging flow is then controlled locally at <span class="hi-exam">CV-55 (Charging Flow Control Valve) local controller in Panel 216</span> using a centrifugal charging pump. <span class="hi-trap">23 Charging Pump (PD pump) is tripped by the procedure once a centrifugal pump is verified running.</span> <span class="hi-trap">Trap: fire protection procedures direct controlling CV-71 with a hand sender — AB.CR-0001 does NOT (it isolates CV-71 and uses the CV-73 bypass instead).</span>
 </div>
 
+### Attachment 5 — Local Control of Charging Flow
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 IP-i</div>
+Unit 2 Control Room Evacuation, Attachment 5 Step 8.0: locally control charging flow at <span class="hi-exam">Panel 216-1 (Chg Pmps FL & PR Inst Pnl)</span> in the Unit 2 RCA. Place <span class="hi-exam">local E/P Bypass Line Selector Valve in MAN</span>, read charging flow on <span class="hi-exam">2FI-128A</span>, then use the <span class="hi-exam">MANUAL hand air operator</span> to adjust flow to 70 gpm. <span class="hi-trap">2CV55 (Cent Chg Pmp Flow Cont Valve) is air-to-close (fails open) — rotating the hand air operator CLOCKWISE raises air pressure and LOWERS flow. Rotating counter-clockwise raises flow.</span>
+</div>
+
 ### Attachment 5 — Local Trip of Reactor and Boration Isolation
 
 <div class="callout callout-jpm">
@@ -53,5 +60,5 @@ Unit 1 Control Room Evacuation, Attachment 5 (locally open reactor trip breakers
 
 - Related systems: [[Steam Generator & Blowdown]], [[RPS/SSPS]], [[CVCS]]
 - Related exam questions: [[2020 Q86]], [[2023 Q83]]
-- Related JPMs: [[2022 JPM IP-j]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2020 JPM IP-i]], [[2022 JPM IP-j]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

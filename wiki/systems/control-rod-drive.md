@@ -72,6 +72,11 @@ Rod Drive MG Set power supplies: <span class="hi-exam">11 MG set is powered from
 Manual rod movement communication (OP-AP-300-1001 step 4.4.3): during non-transient conditions, the RO shall STATE the <span class="hi-exam">selected control rod bank initial position, target control rod position, and the direction of movement</span>. <span class="hi-trap">Minimum info is bank/target/direction — NOT T<sub>AVG</sub>, NOT NIS power, NOT number of steps.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 RO-A1</div>
+SDM calculation with inoperable rod (SC.RE-ST.ZZ-0002 Att. 3): <span class="hi-exam">rod bank penalty (step 4.2.6) is based on the position of the rod BANK, not the individual misaligned rod</span>. With all banks at ARO (225 steps), penalty = 0 pcm even though rod 1D5 is at 214 steps. Step 4.1.5 = 0 untrippable rods (rod is trippable). Calculated SDM = <span class="hi-exam">-2398 pcm</span> vs acceptance of -1300 pcm — SAT. Time critical JPM (60-minute limit per TSAS 3.1.3.1 Action c.3).
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
@@ -81,14 +86,6 @@ Manual rod movement communication (OP-AP-300-1001 step 4.4.3): during non-transi
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
-  - [[2020 Q19]] — Dropped rod step counter/P/A converter reset procedure
-  - [[2020 Q20]] — >1 misaligned rod = Hot Standby
-  - [[2020 Q56]] — MG set power supplies (11 on 1E 460V, 12 on 1G 460V)
-  - [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]] — Urgent Failure prevents all rod motion / stationary gripper coil holds rods
-  - [[2023 JPM Sim-g]] — Failed high Tavg channel / AB.ROD-0003 recovery
-  - [[2023 JPM IP-j]] — Rod Drive M-G Set paralleling
-  - [[2022 Q56]] — OHA E-8 Rod Insertion Limit / normal boration response
-  - [[2020 Q68]] — Control rod movement communication requirements (OP-AP-300-1001)
-  - [[2022 Q92]] — Misaligned rod / power reduction to <75% RTP
-  - [[2022 JPM Sim-a]] — Rod exercise surveillance / uncontrolled insertion requiring Rx trip
+- Related exam questions: [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
+- Related JPMs: [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

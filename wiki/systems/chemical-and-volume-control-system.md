@@ -188,6 +188,11 @@ BAST level-to-volume conversions using S2.OP-TM.ZZ-0002 tank curves: <span class
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 IP-i</div>
+Control Room Evacuation local charging flow control (AB.CR-0001 Attachment 5 Step 8.0): at <span class="hi-exam">Panel 216-1 (Chg Pmps FL & PR Inst Pnl)</span> in Unit 2 RCA, place <span class="hi-exam">E/P Bypass Line Selector Valve in MAN</span>, read <span class="hi-exam">2FI-128A</span>, then use the <span class="hi-exam">MANUAL hand air operator</span> to adjust 2CV55 charging flow to 70 gpm. <span class="hi-trap">2CV55 is air-to-close (fails open on loss of air) — clockwise on the hand air operator raises air pressure and LOWERS flow.</span>
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 IP-j</div>
 During Unit 1 Control Room Evacuation (AB.CR-0001 Att. 5), after locally opening all four reactor trip/bypass breakers: open <span class="hi-exam">1AX1AX7X (#13 Charging Pump breaker)</span> to stop uncontrolled charging, and open <span class="hi-exam">1CY2AX4I (1CV175 Rapid Borate Stop Valve breaker)</span> to de-energize the valve and stop potential uncontrolled boration.
 </div>
@@ -203,6 +208,6 @@ Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
 - Related exam questions: [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
-- Related JPMs: [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
+- Related JPMs: [[2020 JPM IP-i]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

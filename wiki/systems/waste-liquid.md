@@ -54,10 +54,20 @@ Direct release of CVCS Monitor Tank to Circulating Water System: requires <span 
 Release of 21 CVCS MT via SW to CW per S2.OP-SO.WL-0001 Section 5.5: Maximum Release Rate <span class="hi-exam">45 gpm</span> (limited due to high activity content). Control flow using <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span> and <span class="hi-exam">21WR53 (MT RECIRC V)</span> — throttling 21WR53 CLOSED diverts more flow overboard. If <span class="hi-exam">2R18 Monitor ALARMS</span>, immediately direct NCO to <span class="hi-exam">CLOSE 2WL51 (LIQUID RELEASE STOP VALVE)</span>. Tank volume from S2.OP-TM.ZZ-0002: at 90% level, volume is approximately <span class="hi-exam">19500 gallons</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 IP-k</div>
+Place 11 CVCS Monitor Tank in recirculation per S1.OP-SO.WL-0001 Section 5.1 (Unit 1): valve lineup via Attachment 1 — <span class="hi-exam">11WR27 and 11WR31 OPEN, 12WR27 and 12WR31 CLOSED</span>. Start 11 MT Pump, throttle <span class="hi-exam">11WR53 to maintain 80 psig discharge</span>. Calculate minimum recirculation time using S1.OP-TM.ZZ-0002 tank curve: 90% level = <span class="hi-exam">19500 gallons</span>. Formula: <span class="hi-exam">(Volume x 3) / 150 gpm = 6 Hrs 30 Min</span>. <span class="hi-trap">Recirculation ensures the tank is homogeneously mixed before sampling — additions during recirculation invalidate the sample.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A4</div>
+Release path selection per S1.OP-SO.WL-0002: with Unit 2 circulators all OOS, 22 CCHX drained, and 12A Circulator C/T, candidate selects <span class="hi-exam">21 CCHX to 12A AND/OR 12B CW Pumps</span> as the release flow path for 12 CVCS Monitor Tank. Chemistry required minimum dilution flow of <span class="hi-exam">100000 gpm</span>. Key: must evaluate all available CCHXs and CW pump configurations to find a path with adequate dilution.
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
-- Related procedures: [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
+- Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
 - Related exam questions: [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
-- Related JPMs: [[2022 JPM IP-k]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

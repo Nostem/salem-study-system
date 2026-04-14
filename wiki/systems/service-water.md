@@ -63,6 +63,11 @@ SW Nuclear Header isolation with 21SW22 closed: <span class="hi-exam">EDG supply
 SW Bay leak with degraded pump availability: OHA B-29, "21-23 SW PUMP SMP AREA LVL HI" indicates <span class="hi-exam">leaking #2 SW Bay requiring isolation</span>. AB.SW-0001 (Loss of SW Header Pressure) immediately transitions to <span class="hi-exam">AB.SW-0003 (Service Water Bay Leak)</span> for bay isolation. An OPERABLE SW loop requires <span class="hi-exam">two SW pumps powered from separate buses</span>. Per S2.OP-SO.SW-0005 P&L 3.2: when a SW Bay is removed from service in Modes 1-4 and the "B" bus SW pump in the operable bay is unavailable (23 or 24 SWP), <span class="hi-exam">LCO 3.0.3 is applicable</span>. <span class="hi-trap">With #2 Bay isolated AND 24 SWP C/Ted, both SW loops are inoperable. TS 3.7.4 (one loop inoperable, 72 hrs) does NOT apply — TS 3.0.3 applies because no operable loops remain.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 RO-A3</div>
+SW leak isolation using P&ID 205342: leak on 2 inch drain valve <span class="hi-exam">21SW268</span> (21 NUC HDR FROM FCV DRAIN) downstream of 21SW76 (21 CFCU SW Outlet Valve) in SW Valve Room, Auxiliary Building. Minimum nine valves to isolate: <span class="hi-exam">21SW472, 21SW355, 21SW50 (sheet 3), 21SW414 (sheet 5), 21SW78, 22SW76, 21SW76, 21SW646, 22SW646 (sheet 6)</span>. Must trace all flow paths on multiple P&ID sheets including cross-connected headers.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.4 requires two independent SW loops OPERABLE in Modes 1–4
@@ -83,9 +88,25 @@ SW122 (CC HX Inlet Valves) <span class="hi-exam">close on SEC Mode III (SI + LOO
 Unit difference — SW pump power supplies: <span class="hi-exam">2A EDG supplies 21 AND 22 SW Pumps (both on the same bus)</span>. On Unit 1, SW pumps 15 and 16 have a different bus arrangement. If 23 SW Pump trips and the 2A 4KV Vital Bus locks out (bus differential), <span class="hi-exam">ALL Unit 2 SW pumps are lost</span> — loss of all SW flow. Per S2.OP-AB.SW-0005: <span class="hi-exam">trip the reactor and stop all RCPs</span> to limit heat input to the CCW system.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #1</div>
+During LOPA-1, <span class="hi-exam">2A EDG running with no SW pumps must be stopped to prevent overheating</span>. After 2C EDG is returned from maintenance and energizes 2C 4KV Vital Bus, crew must immediately start 25 or 26 SW pump for EDG cooling <span class="hi-exam">(CT-25)</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #3</div>
+21 SW Pump C/T for pump repack (initial condition). 21 SW Accumulator Tank pressure drops to <span class="hi-exam">137 psig</span> (operable band is <span class="hi-exam">138-157 psig</span>) — declared inoperable, 21 and 22 CFCUs stopped and isolated. 23 SW Pump trips and 26 SW Pump fails to auto start on low pressure — RO manually starts 26 SW Pump. CRS enters <span class="hi-exam">TS 3.7.4 (72 hours)</span> for 21 and 23 SW Pumps inoperable in one bay (only one operable SW loop).
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A3</div>
+Unit 1 SW loop operability with 13 SW Pump C/T and 1A EDG inoperable: per <span class="hi-exam">S1.OP-SO.SW-0005</span>, two independent operable SW loops require one pump per vital bus and two pumps per bay. With 13 SW Pump C/T: <span class="hi-exam">A bus (15 & 16 Pumps) — YES, B bus (14 Pump) — YES, C bus (11 & 12 Pumps) — YES, #1 Bay (11 & 12) — YES, #3 Bay (15 & 16) — YES</span>. Two SW loops remain operable, so <span class="hi-exam">TS 3.8.1.1 Action b.2 does NOT apply</span>.
+</div>
+
 ## Connections
 
-- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
+- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
 - Related exam questions: [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
-- Related JPMs: [[2023 JPM Sim-f]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
+- Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
