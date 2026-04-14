@@ -14,7 +14,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-In accordance with OP-AA-101-111-1003, Use of Procedures, Salem EOPs' Continuous Action Steps are either surrounded by a shaded box or contain which of the following continuous action verbs?<br><br>
+In accordance with <span class="hi">OP-AA-101-111-1003, Use of Procedures</span>, Salem EOPs' Continuous Action Steps are either surrounded by a shaded box or contain which of the following continuous action verbs?<br><br>
 1. ADJUST<br>
 2. CONTROL<br>
 3. MAINTAIN<br>
