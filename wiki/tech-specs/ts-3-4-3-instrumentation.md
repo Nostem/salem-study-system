@@ -265,17 +265,17 @@ See Functions 1 and 7 for all initiation functions.
 | 13 | 1 channel inoperable: restore within 24 hrs or Hot Standby in 6 hrs + Cold Shutdown in 30 hrs. May bypass 1 channel for 4 hrs for testing. |
 | 14 | 1 channel inoperable: may proceed until next CFT, provided inoperable channel placed in trip within 72 hrs |
 | 16 | 1 channel inoperable: may proceed, place in bypass. May bypass 1 additional for 12 hrs testing. |
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q88</div>
-TS 3.3.2.1 Action 16 applies to Hi-Hi Containment Pressure channels (CS, Phase B, steamline isolation): inoperable channel is placed in <span class="hi-exam">BYPASS (not tripped)</span>. This is because Containment Spray bistables are <span class="hi-exam">energized to actuate</span> — placing an inoperable channel in the tripped condition would move it closer to actuation, increasing the risk of spurious Containment Spray. <span class="hi-trap">Contrast with Action 19 (most other ESF functions): inoperable channels are placed in TRIP because those bistables are de-energized to trip.</span>
-</div>
 | 17 | Less than min channels: may continue provided containment purge/exhaust valves maintained closed |
 | 18 | 1 channel inoperable: restore within 48 hrs or Hot Standby in 6 hrs + Cold Shutdown in 30 hrs |
 | 19 | 1 channel inoperable: place in trip within 72 hrs. May bypass for 12 hrs for testing of other channels. |
 | 20 | 1 channel inoperable: restore within 24 hrs or Hot Standby in 6 hrs + Hot Shutdown in 6 hrs. May bypass 1 for 4 hrs testing. |
 | 21 | 1 less than min channels: restore within 72 hrs |
 | 23 | 1 channel inoperable: restore within 48 hrs or Hot Standby in 6 hrs + Hot Shutdown in 6 hrs |
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q88</div>
+TS 3.3.2.1 Action 16 applies to Hi-Hi Containment Pressure channels (CS, Phase B, steamline isolation): inoperable channel is placed in <span class="hi-exam">BYPASS (not tripped)</span>. This is because Containment Spray bistables are <span class="hi-exam">energized to actuate</span> — placing an inoperable channel in the tripped condition would move it closer to actuation, increasing the risk of spurious Containment Spray. <span class="hi-trap">Contrast with Action 19 (most other ESF functions): inoperable channels are placed in TRIP because those bistables are de-energized to trip.</span>
+</div>
 
 <div class="callout callout-trap">
 <div class="callout-label">SI vs Containment Spray Pressure Setpoints</div>
