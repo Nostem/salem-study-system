@@ -615,6 +615,65 @@ questions:
     ka_importance: 2.7
     type: RO
     tier_group: "Tier 2/Group 1"
+  - number: 56
+    topic: "Rod Drive MG Set Power Supplies"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank, Salem Vision Database"
+    systems:
+      - control-rod-drive
+      - 460-230v-ac
+    ka: "001000K2.05"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 57
+    topic: "PZR Level Channel I Fails High"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank, Salem Vision Database"
+    systems:
+      - pressurizer-level-and-press-control
+      - chemical-and-volume-control-system
+    ka: "016000K3.02"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 58
+    topic: "Subcooling Margin Monitor Inputs"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank, Salem Vision Database"
+    systems:
+      - incores
+    ka: "017000K4.01"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 59
+    topic: "Containment Ventilation Isolation"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank, Salem Vision Database"
+    systems:
+      - containment-systems
+      - rps-ssps
+    ka: "029000K1.03"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 60
+    topic: "ADFCS SG Level Channel Failure"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank, Salem Vision Database"
+    systems:
+      - feedwater-and-condensate
+      - steam-generators
+    ka: "035000K6.03"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
   - number: 61
     topic: "Steam Dump PT-507 Fails High"
     answer: C
@@ -777,6 +836,64 @@ questions:
     ka_importance: 3.3
     type: RO
     tier_group: "Tier 3/Group 4"
+  - number: 91
+    topic: "Loss of All Charging Pumps / Cross-Unit Charging"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank – ILOT 16-01 Audit Exam, Q53"
+    systems:
+      - chemical-and-volume-control-system
+      - 4kv
+    ka: "011A2.04"
+    ka_importance: 3.7
+    type: SRO
+    tier_group: "Tier 2/Group 2"
+  - number: 92
+    topic: "Containment Hydrogen Concentration / EOP-LOCA-1"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – ILOT 17-01 SRO NRC Exam – Q16"
+    systems:
+      - containment-systems
+    ka: "028G2.1.20"
+    ka_importance: 4.6
+    type: SRO
+    tier_group: "Tier 2/Group 2"
+  - number: 93
+    topic: "Condensate Pump Trip / Polisher Bypass and Load Reduction"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - feedwater-and-condensate
+    ka: "056A2.04"
+    ka_importance: 2.8
+    type: SRO
+    tier_group: "Tier 2/Group 2"
+  - number: 94
+    topic: "Refueling De-tensioning Requirements / MODE 6 Entry"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified – Salem 2015 NRC SRO Exam, Q20"
+    systems:
+      - refueling
+    tech_specs:
+      - ts-3-4-9-refueling
+    ka: "G2.1.40"
+    ka_importance: 3.9
+    type: SRO
+    tier_group: "Tier 3/Group COO"
+  - number: 95
+    topic: "Abnormal Secondary Chemistry / Polisher Bypassed Actions"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - feedwater-and-condensate
+    ka: "G2.1.34"
+    ka_importance: 3.5
+    type: SRO
+    tier_group: "Tier 3/Group COO"
   - number: 96
     topic: "Special Test or Evolution Screening"
     answer: B

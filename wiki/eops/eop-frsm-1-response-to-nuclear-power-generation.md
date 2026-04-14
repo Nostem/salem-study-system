@@ -35,5 +35,5 @@ Caution C1-1: RCPs should NOT be tripped with reactor power <span class="hi-exam
 
 - Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
+- Related exam questions: [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

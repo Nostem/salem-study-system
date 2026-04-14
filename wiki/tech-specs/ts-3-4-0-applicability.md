@@ -240,3 +240,6 @@ The provisions of SR 4.0.4 shall NOT prevent entry into MODES required to comply
 
 ## Connections
 
+- Related procedures: [[OP-AA-108-116 — Protected Equipment Program]]
+- Related exam questions: [[2020 Q97]]
+- Related exam: [[2020 NRC Written Exam]]

@@ -47,11 +47,20 @@ Containment pressure relief and ODCM 3.3.9: per Table 3.3-13 Item 3.a, either <s
 Waste Gas Decay Tank release (S2.OP-SO.WG-0008): latch-and-set sequence on 2WG41 must be performed before commencing release. Max release rate <span class="hi-exam">32 SCFM</span> (Flow Bias <=100%). Terminate release at <span class="hi-exam">10 psig</span> tank pressure: reduce Flow Bias to <0%, close 2WG41-SWT, close 21WG34.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q98</div>
+GDT release restrictions per S1.OP-SO.WG-0011:
+<ul>
+<li><span class="hi-exam">"DO NOT release more than one GDT at a time."</span> (P&L 3.2)</li>
+<li><span class="hi-exam">"DO NOT transfer Waste Gas from one GDT to another during the GDT Release."</span> (P&L 3.3)</li>
+</ul>
+<span class="hi-exam">VCT Purge to the plant vent IS allowed during a GDT release</span> — per S1.OP-SO.WG-0005(Q), step 1 of the VCT Purge Radioactive Gaseous Release Form. <span class="hi-trap">Trap: waste gas cannot be transferred between units or between GDTs during a release, and only one GDT may be released at a time, but VCT purge is a separate permitted activity.</span>
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[Containment]]
-- Related concepts: [[Radiation Monitoring]]
-- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
-- Related exam questions: [[2023 Q90]], [[2022 Q23]]
+- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]]
+- Related exam questions: [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]]
 - Related JPMs: [[2023 JPM IP-k]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

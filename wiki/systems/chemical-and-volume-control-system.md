@@ -89,6 +89,12 @@ Letdown temperature auto-divert: 2CV21 automatically diverts letdown flow to VCT
 - **Seal return:** 3 gpm per RCP
 - **CV55 (Charging Flow Control Valve):** Controls total charging flow to the RCS
 - **CV71 (Charging Header PCV):** Backpressure control valve downstream of seal injection takeoff
+- **CV73 (Seal Injection Pressure Control Bypass Valve):** Manual bypass around CV71, used during Control Room Evacuation
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q86</div>
+Seal injection control during CR evacuation (AB.CR-0001): <span class="hi-exam">CV-71 is isolated (by closing CV-70) and CV-73 (seal injection pressure control bypass valve) is opened and manually adjusted</span>. Charging flow is then controlled locally at <span class="hi-exam">CV-55 local controller in Panel 216</span> using a centrifugal charging pump. <span class="hi-trap">23 Charging Pump (PD pump) is tripped by the procedure once a centrifugal pump is verified running — do NOT use the 23 Charging Pump scoop tube for flow control during CR evacuation.</span>
+</div>
 - **Letdown:** Controlled by letdown orifices, cooled by letdown HX, processed through demineralizers
 - **Excess letdown:** Alternate path available if normal letdown is unavailable
 
@@ -144,6 +150,18 @@ RCS leak from CVCS (2CV6 Letdown Relief Valve): a <span class="hi-exam">CVCS lea
 CVCS Monitor Tank release with 2R18 inoperable: the <span class="hi-exam">SM/CRS authorizes the liquid radioactive waste release</span> (not the Radiation Protection Manager). Per ODCM 3.3.8, with 2R18 inoperable, Action 26 requires <span class="hi-exam">at least two independent samples analyzed AND at least two technically qualified staff independently verify release rate calculations and discharge line valving</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q77</div>
+Loss of one centrifugal charging pump: <span class="hi-exam">23 Charging Pump (positive displacement) counts toward TS 3.1.2.4 (Charging Pumps — Operating) requirement</span> for reactivity addition capability. With 21 CHP tripped and 23 CHP started: <span class="hi-exam">two charging pumps remain OPERABLE (22 + 23) for reactivity TS</span>, and <span class="hi-exam">two boration flow paths remain OPERABLE for TS 3.1.2.2</span>. Only TS 3.5.2 (ECCS) applies — 21 CHP is the high-head ECCS component, and 23 CHP is NOT an ECCS high-head pump.
+</div>
+
+## Cross-Unit Charging
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q91</div>
+Per AB.CVC-0001 step 3.50, with <span class="hi-exam">no Unit 2 Charging Pumps available</span>: "COORDINATE with Unit 1 to place <span class="hi-exam">13 Charging Pump</span> in service using <span class="hi-exam">U/1 RWST</span>." This cross-unit alignment provides charging flow when all three Unit 2 pumps (21, 22, 23 CV Pumps) are unavailable. <span class="hi-trap">Trap: Tripping the reactor and initiating SI is NOT the directed action for total loss of charging at 8% power — AB.CVC-0001 provides the cross-unit recovery path first.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.2 — Boration Systems]]** — Flow paths, charging pumps, borated water sources
@@ -179,7 +197,7 @@ Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related exam questions: [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
+- Related exam questions: [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
