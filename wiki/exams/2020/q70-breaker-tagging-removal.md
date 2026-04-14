@@ -20,7 +20,7 @@ aliases:
 • The 460V Bus associated with the breaker is energized.<br>
 • The breaker is tagged in the "Disconnect" (DI) position.<br><br>
 Which ONE of the following describes the required tagging sequence when removing the breaker from its cubicle to facilitate maintenance?<br><br>
-[REFERENCE PROVIDED]
+<span class="val-normal">[REFERENCE PROVIDED]</span>
 </div>
 
 <div style="margin-bottom:14px;">
