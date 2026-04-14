@@ -31,6 +31,11 @@ Containment pressure relief high radiation: Attachment 1, Step 10 directs ensuri
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q51</div>
+R19 SGBD radiation monitor WARNING setpoint automatic actuations: <span class="hi-exam">Unit 1 — NO automatic actuations at WARNING</span>. <span class="hi-exam">Unit 2 — automatically closes ALL GB10s, GB185s, and 2GB50</span>. At the ALARM setpoint, both units take automatic isolation actions (Unit 1: all GB4s, GB8s, GB10s, GB185s, 1GB50; Unit 2: affected SG GB4). <span class="hi-trap">WARNING vs ALARM actions differ significantly, and there is a unit difference at the WARNING level.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q23</div>
 2R32A (Fuel Handling Crane area rad monitor) failure to alarm setpoint: <span class="hi-exam">ONLY crane hoist-up operation is prevented</span>. No bypass interlock pushbutton exists. <span class="hi-exam">2R5 and 2R9 cause FHB exhaust to swap to 22 HEPA plus Charcoal but have NO crane interlocks.</span>
 </div>
@@ -39,6 +44,6 @@ Containment pressure relief high radiation: Attachment 1, Step 10 directs ensuri
 
 - Related systems: [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]], [[Refueling]]
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2020 Q23]], [[2022 Q23]], [[2023 Q62]]
+- Related exam questions: [[2020 Q23]], [[2020 Q51]], [[2022 Q23]], [[2023 Q62]]
 - Related JPMs: [[2023 JPM Sim-h]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

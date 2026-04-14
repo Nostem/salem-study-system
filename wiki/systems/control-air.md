@@ -35,6 +35,11 @@ On loss of all control air with a centrifugal charging pump in service: <span cl
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q54</div>
+ECAC power supplies: <span class="hi-exam">#1 ECAC is powered from the 1C 460V Vital Bus</span>. Loss of 1C 4KV to 460V breaker 1C4D would result in loss of #1 ECAC. <span class="hi-trap">Do not confuse ECAC power supplies with Station Air Compressor (SAC) power supplies — #1 SAC is powered from 1H 4KV Group Bus, #1 Station Air Compressor from 1H group bus (4KV). The 1E 460V Group Bus powers Station Air Compressors, NOT the ECACs.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q15</div>
 ECAC header sensing and CAS actions: <span class="hi-exam">#2 ECAC senses CA Header A</span> and <span class="hi-exam">#1 ECAC senses CA Header B</span>. Per AB.CA-0001: if 2B CA Header is <span class="val-alarm">&le; 88 psig</span>, notify Unit 1 NCO to start #1 ECAC. CAS (Continuous Action Statement): if <span class="hi-exam">BOTH CA headers lower to &lt; <span class="val-trip">80 psig</span></span>, trip the reactor. <span class="hi-trap">Trap: #1 ECAC is for 2B header (not 2A), and #2 ECAC is for 2A header (not 2B) — the ECAC number does NOT match the header letter. Also, the CAS requires BOTH headers &lt; 80 psig, not EITHER header.</span>
 </div>
@@ -48,5 +53,6 @@ BF19 (Main Feedwater Regulating Valves) behavior on loss of all station air: <sp
 
 - Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]]
-- Related exam questions: [[2020 Q15]], [[2020 Q45]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
+- Related procedures: [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]]
+- Related exam questions: [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

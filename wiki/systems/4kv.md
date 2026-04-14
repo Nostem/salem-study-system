@@ -60,6 +60,13 @@ EDG paralleled to grid during surveillance: when LOOP occurs, SEC actuates in <s
 Degraded voltage relays actuate at <span class="val-alarm">&lt; 95%</span> of nominal 4160V (sustained for <span class="hi-exam">&gt; 13 seconds</span>). Fast bus transfer relays actuate at <span class="hi-exam">&lt; 70%</span> of nominal. When degraded voltage is detected on a single bus (e.g., 3600V from failing SPT), and <span class="hi-exam">SI and SECs have been reset</span>, the SEC actuates in <span class="hi-exam">Mode II* (Single Bus Degraded UV)</span> — strips the bus from offsite power and loads it onto its EDG. <span class="hi-trap">Mode III and Mode IV require an active SI signal — after SI/SEC reset, SEC can only actuate in Mode I (Blackout) or Mode II* (Single Bus Degraded UV). 3600V is above the 70% fast transfer threshold (2912V) so no fast transfer occurs.</span>
 </div>
 
+## 1A 4KV Bus Loads
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q53</div>
+Unit 1 — 1A 4KV Vital Bus powers <span class="hi-exam">15 and 16 SW Pumps</span> (associated with #3 SW Bay). A 1A Bus Differential with #3 SW Bay already C/Ted has <span class="hi-exam">no additional impact on SW operation</span> because 15 and 16 SW Pumps are already isolated. <span class="hi-exam">12 SW Pump (C Bus) auto-starts on low SW header pressure</span> when 13 SW Pump trips, maintaining SW flow. Correct procedure entry: AB.4KV-0001, Loss of 1A 4KV Vital Bus. <span class="hi-trap">Unit difference: on Unit 2, the 2A bus powers 21 and 22 SW pumps (not associated with a single bay) — a 2A bus loss impacts operating SW pumps directly.</span>
+</div>
+
 ## 2C 4KV Bus Loads
 
 <div class="callout callout-exam">
@@ -85,6 +92,6 @@ MSLB + LOOP with 2C 4KV Vital Bus lost (OHA J-3, 2C 4KV VTL BUS DIFF PROT): conf
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]]
-- Related exam questions: [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
+- Related exam questions: [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
 - Related JPMs: [[2022 JPM Sim-g]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
