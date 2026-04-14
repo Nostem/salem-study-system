@@ -33,6 +33,11 @@ Closed-loop cooling water system that provides an intermediate barrier between p
 - Loss of CCW to RCPs requires RCP trip to protect seals and thermal barrier (UFSAR 5.5.1.3.14)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q55</div>
+CCW containment isolation signals: <span class="hi-exam">CC131 and CC190 (RCP Thermal Barrier CCW Isolation Valves) receive a Phase B signal to close, NOT Phase A</span>. <span class="hi-exam">CC113 and CC215 (Excess Letdown CCW Valves) receive a Phase A signal to close</span>. <span class="hi-trap">The thermal barrier CCW isolation (CC131/CC190) is Phase B, while excess letdown CCW isolation (CC113/CC215) is Phase A — do not confuse the isolation signal levels for these two different CCW flow paths through containment.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q5</div>
 <span class="hi-exam">1CC190 (CCW Thermal Barrier Isolation Valve) is on the COMMON CCW return line</span> — closing it isolates thermal barrier return from <span class="hi-exam">ALL RCPs</span> (not just one). <span class="hi-trap">Individual RCP isolation valves are the CC130s (one per RCP).</span> RCPs may continue operating as long as charging flow is maintained for seal injection.
 </div>
@@ -77,6 +82,20 @@ Thermal barrier HX leak diagnostic: the <span class="hi-exam">"Discharge Flow Lo
 SEC Mode III (Blackout + SI): CCW pumps are <span class="hi-exam">stripped and NOT reloaded</span>. Additionally, <span class="hi-exam">a pump selected for AUTO is transferred to Manual</span> during Modes II, III, and VI. After successful SEC loading: all CCW pumps stopped, all in Manual. <span class="hi-trap">Trap: Mode II (Blackout only) DOES restart CCW pumps. Mode I (SI only) retains AUTO selection. Only Modes II, III, and VI force AUTO to Manual.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q76</div>
+Following MODE III (LBLOCA + LOOP), CCW restoration per EOP-APPX-1: <span class="hi-exam">the CCW pump to start is chosen based on which EDG has adequate margin from out-of-service equipment</span>. With 21 AFW Pump out of service, <span class="hi-exam">2A EDG has margin → start 21 CCW Pump</span>. With 22 CFCU out of service, 2B EDG does NOT have adequate margin for 22 CCW Pump. <span class="hi-exam">Both CCW HXs are placed in service</span> because at least three SW pumps are running.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q78</div>
+Per AB.CC-0001 Attachment 1, three time-critical actions for RCP protection on loss of CCW:<br>
+1. <span class="hi-exam">Motor bearing temperature reaches <span class="val-trip">175°F</span> → stop RCPs</span><br>
+2. CCW Surge Tank Level cannot be maintained > <span class="val-trip">38%</span> → immediately stop RCPs<br>
+3. <span class="hi-exam">5 minutes after "RCP BRG CLG WTR FLO LO" alarm (OHAs D-20 through D-23) → stop RCPs</span><br>
+<span class="hi-trap">Trap: 2 minutes was previously the time to stop RCPs if BOTH seal injection and thermal barrier flow were lost concurrently — does not apply if only CCW is lost (seal injection still available from charging).</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.3 requires two independent CCW loops OPERABLE in Modes 1–4
@@ -89,5 +108,5 @@ SFP Heat Exchanger tube rupture: components supplied by CCW with pressure less t
 
 ## Connections
 
-- Related exam questions: [[2020 Q34]], [[2020 Q35]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
+- Related exam questions: [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

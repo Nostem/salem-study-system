@@ -35,6 +35,13 @@ Provides operator actions for evacuating the main control room and establishing 
 Per S2.OP-AB.CR-0001, <span class="hi-exam">EOPs are NOT applicable</span> during Control Room Evacuation (information only or as directed by TSC). The Caution in Attachment 3 warns the CRS to monitor SG pressures to avoid <span class="hi-exam">Safety Injection on steam line differential pressure</span> (DP > 100 psi). <span class="hi-trap">Trap: the RCS cooldown limit during CR evacuation is 25 degrees F/hr, NOT the TS limit of 100 degrees F/hr.</span>
 </div>
 
+### Seal Injection Control During CR Evacuation
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q86</div>
+Per AB.CR-0001, local control of RCP seal injection during CR evacuation: <span class="hi-exam">isolate CV-71 (by closing CV-70), open CV-73 (seal injection pressure control bypass valve), and manually adjust the bypass valve</span>. Total charging flow is then controlled locally at <span class="hi-exam">CV-55 (Charging Flow Control Valve) local controller in Panel 216</span> using a centrifugal charging pump. <span class="hi-trap">23 Charging Pump (PD pump) is tripped by the procedure once a centrifugal pump is verified running.</span> <span class="hi-trap">Trap: fire protection procedures direct controlling CV-71 with a hand sender — AB.CR-0001 does NOT (it isolates CV-71 and uses the CV-73 bypass instead).</span>
+</div>
+
 ### Attachment 5 — Local Trip of Reactor and Boration Isolation
 
 <div class="callout callout-jpm">
@@ -45,6 +52,6 @@ Unit 1 Control Room Evacuation, Attachment 5 (locally open reactor trip breakers
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RPS/SSPS]], [[CVCS]]
-- Related exam questions: [[2023 Q83]]
+- Related exam questions: [[2020 Q86]], [[2023 Q83]]
 - Related JPMs: [[2022 JPM IP-j]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -265,6 +265,11 @@ See Functions 1 and 7 for all initiation functions.
 | 13 | 1 channel inoperable: restore within 24 hrs or Hot Standby in 6 hrs + Cold Shutdown in 30 hrs. May bypass 1 channel for 4 hrs for testing. |
 | 14 | 1 channel inoperable: may proceed until next CFT, provided inoperable channel placed in trip within 72 hrs |
 | 16 | 1 channel inoperable: may proceed, place in bypass. May bypass 1 additional for 12 hrs testing. |
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q88</div>
+TS 3.3.2.1 Action 16 applies to Hi-Hi Containment Pressure channels (CS, Phase B, steamline isolation): inoperable channel is placed in <span class="hi-exam">BYPASS (not tripped)</span>. This is because Containment Spray bistables are <span class="hi-exam">energized to actuate</span> — placing an inoperable channel in the tripped condition would move it closer to actuation, increasing the risk of spurious Containment Spray. <span class="hi-trap">Contrast with Action 19 (most other ESF functions): inoperable channels are placed in TRIP because those bistables are de-energized to trip.</span>
+</div>
 | 17 | Less than min channels: may continue provided containment purge/exhaust valves maintained closed |
 | 18 | 1 channel inoperable: restore within 48 hrs or Hot Standby in 6 hrs + Cold Shutdown in 30 hrs |
 | 19 | 1 channel inoperable: place in trip within 72 hrs. May bypass for 12 hrs for testing of other channels. |
@@ -421,6 +426,6 @@ Between calibrations, the fidelity of the measured power distribution is maintai
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]]
-- Related exam questions: [[2023 Q82]]
+- Related exam questions: [[2020 Q88]], [[2020 Q90]], [[2023 Q82]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

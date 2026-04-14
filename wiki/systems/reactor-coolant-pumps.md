@@ -132,6 +132,15 @@ On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel mom
 Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barrier. (UFSAR 5.5.1.3.14)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q78</div>
+Per AB.CC-0001, three time-critical RCP protection criteria on loss of CCW:<br>
+1. Motor bearing temp reaches <span class="hi-exam"><span class="val-trip">175°F</span> → stop RCPs</span> (calculate from initial temp + rate of rise)<br>
+2. CCW Surge Tank Level cannot be maintained > <span class="val-trip">38%</span> → immediately stop RCPs<br>
+3. <span class="hi-exam">5 minutes after "RCP BRG CLG WTR FLO LO" alarms (OHAs D-20 through D-23)</span> → stop RCPs<br>
+<span class="hi-trap">The 175°F motor bearing limit is often the EARLIEST action when temp is rising fast. In the exam scenario: 140°F rising at 5°F/min = 175°F at T+7 min (earlier than the 5-min flow alarm timer at T+10 min). Also, the old 2-minute criterion applied only when BOTH seal injection AND thermal barrier flow were lost concurrently — does not apply when seal injection is still available.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q86</div>
 RCP #3 seal leak identification: <span class="hi-exam">STANDPIPE LEVEL-LO alarm</span> is the primary indicator of a #3 seal leak. Key diagnostic: #1 seal leakoff flow <span class="hi-exam">steady at 1.5 gpm</span> (normal — indicating intact #2 seal) while standpipe level is low. Action: <span class="hi-exam">make-up to the standpipe per ARP; power operation may continue</span>. AB.RCP-0001 does not direct actions for a #3 seal leak specifically. <span class="hi-trap">Trap: orderly shutdown and stop RCP within 8 hours is the action for a degraded #2 seal, not a #3 seal leak.</span>
 </div>
@@ -170,7 +179,7 @@ RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <s
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2020 Q4]], [[2020 Q28]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
+- Related exam questions: [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related JPMs: [[2022 JPM Sim-d]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

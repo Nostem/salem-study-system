@@ -49,6 +49,16 @@ OHA B-48 (SW VLV RM FLOODED) indicates leak in <span class="hi-exam">SW valve ro
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q53</div>
+Unit 1 SW pump power supplies: <span class="hi-exam">15 and 16 SW Pumps are powered from the 1A 4KV Vital Bus</span>. <span class="hi-exam">12 SW Pump is on the C Bus with AUTO-start capability on low SW header pressure</span>. A 1A 4KV Bus Differential with #3 SW Bay already C/Ted (15 and 16 SW Pumps already isolated) has <span class="hi-exam">no additional impact on SW system operation</span> — the correct procedure entry is AB.4KV-0001, not AB.SW-0005 or AB.SW-0004. <span class="hi-trap">Unit difference: on Unit 2, 21 and 22 SW Pumps are BOTH on the 2A 4KV bus — a 2A bus loss would lose BOTH pumps. On Unit 1, 15 and 16 SW Pumps are on 1A bus but are associated with #3 SW Bay.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q52</div>
+SW Nuclear Header isolation with 21SW22 closed: <span class="hi-exam">EDG supply valves (21SW21 & 22SW21) are UPSTREAM of Nuclear Header Inlet Valves (21SW22 & 22SW22)</span> — closing 21SW22 does NOT isolate EDG SW supplies. All 3 EDGs remain supplied by both 21 and 22 SW Headers. For CFCUs: <span class="hi-exam">23 CFCU can be supplied from EITHER 21 or 22 SW Header (check valve locations)</span>, but the remaining CFCUs on the 21 Nuclear Header are isolated. Result: <span class="hi-exam">all 3 EDGs on both headers, only 3 CFCUs on 22 SW Header</span> (22, 24, 25 CFCUs + 23 CFCU via cross-connect). <span class="hi-trap">Not all 5 CFCUs can be supplied by either header — only 23 CFCU has the check valve arrangement allowing cross-header supply.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q14</div>
 SW Bay leak with degraded pump availability: OHA B-29, "21-23 SW PUMP SMP AREA LVL HI" indicates <span class="hi-exam">leaking #2 SW Bay requiring isolation</span>. AB.SW-0001 (Loss of SW Header Pressure) immediately transitions to <span class="hi-exam">AB.SW-0003 (Service Water Bay Leak)</span> for bay isolation. An OPERABLE SW loop requires <span class="hi-exam">two SW pumps powered from separate buses</span>. Per S2.OP-SO.SW-0005 P&L 3.2: when a SW Bay is removed from service in Modes 1-4 and the "B" bus SW pump in the operable bay is unavailable (23 or 24 SWP), <span class="hi-exam">LCO 3.0.3 is applicable</span>. <span class="hi-trap">With #2 Bay isolated AND 24 SWP C/Ted, both SW loops are inoperable. TS 3.7.4 (one loop inoperable, 72 hrs) does NOT apply — TS 3.0.3 applies because no operable loops remain.</span>
 </div>
@@ -76,6 +86,6 @@ Unit difference — SW pump power supplies: <span class="hi-exam">2A EDG supplie
 ## Connections
 
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
-- Related exam questions: [[2020 Q14]], [[2020 Q40]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
+- Related exam questions: [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
 - Related JPMs: [[2023 JPM Sim-f]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

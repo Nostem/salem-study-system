@@ -47,8 +47,17 @@ Attachment 1: CCW surge tank level at <span class="hi-exam">5%</span> requires <
 Thermal barrier HX leak alarm pattern: CC HDR ACTIVITY HI + SURGE TANK LEVEL HI-LO + <span class="hi-exam">DISCHARGE FLOW LO = unique signature of 2CC131 automatic closure</span>. The DISCHARGE FLOW HI alarm fires first (RCS in-leakage increases CCW flow), auto-closes 2CC131, then DISCHARGE FLOW LO follows. The Hi alarm was acknowledged and is presently clear. <span class="hi-trap">Letdown HX leak would show activity and level alarms but NOT the Discharge Flow Lo pattern — no auto-isolation valve on the letdown HX CCW line.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q78</div>
+Per Attachment 1, three RCP protection time limits on loss of CCW:<br>
+1. Motor bearing temperature reaches <span class="hi-exam"><span class="val-trip">175°F</span> → stop RCPs</span> (calculate from initial temp + rate of rise)<br>
+2. CCW Surge Tank Level cannot be maintained > <span class="val-trip">38%</span> → immediately stop RCPs<br>
+3. <span class="hi-exam">5 minutes after "RCP BRG CLG WTR FLO LO" alarms (OHAs D-20 through D-23) → stop RCPs</span><br>
+<span class="hi-trap">Trap: the 175°F limit is the EARLIEST action if bearing temp is rising fast. In the exam scenario: 140°F at T+0 rising at 5°F/min → 175°F at T+7 min. The low flow alarms at T+5 add another 5 min = T+10 min. The surge tank criterion (38%) was already recovered. So 175°F limit (1007) is the controlling action.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[RCPs]]
-- Related exam questions: [[2020 Q34]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
+- Related exam questions: [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

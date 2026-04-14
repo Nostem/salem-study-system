@@ -39,6 +39,11 @@ Each fan-cooler unit includes: motor, fan, motor heat exchanger, cooling coils, 
 - Accident operation: reduced airflow but higher heat removal due to elevated containment temperature
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q52</div>
+CFCU service water header supply: with 21SW22 (Nuclear Header Inlet Valve) closed to isolate a leak, <span class="hi-exam">23 CFCU can be supplied from EITHER 21 or 22 SW Header based on check valve locations</span>. The remaining CFCUs (21, 22, 24, 25) are supplied from only one header. Result with 21 Nuclear Header isolated: <span class="hi-exam">only 3 CFCUs available via 22 SW Header</span> (plus 23 CFCU from cross-connect). <span class="hi-trap">Not all 5 CFCUs have dual-header supply capability — only 23 CFCU has check valve placement allowing cross-header feed.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q25</div>
 <span class="hi-exam">In LOW speed, CFCU dampers realign flow through HEPA filters (bypassing roughing filters) to reduce radioactivity inside containment.</span> In HIGH speed (normal), flow goes through roughing filters. EOP-FRCE-3 directs placing all CFCUs in LOW speed for containment atmosphere cleanup.
 </div>
@@ -105,6 +110,11 @@ During a DBA LBLOCA with 2B EDG tripped (LOOP conditions), <span class="hi-exam"
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q89</div>
+CFCU service water isolation per AB.SW-0001 Attachment 5: <span class="hi-exam">close SW72 (Outlet Water Valve) FIRST, then SW58 (Inlet Water Valve)</span>. Basis: <span class="hi-exam">minimize the possibility of water hammer following restoration</span>. After the MOVs are closed, field manual isolation valves (SW54 CFCU SW Inlet and SW76 CFCU SW Outlet on 78' elevation) are closed to fully isolate.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q40</div>
 Factors affecting CFCU heat removal and containment temperature:<br>
 - <span class="hi-exam">LOW speed = <span class="val-normal">47000 cfm</span> vs HIGH speed = <span class="val-normal">110000 cfm</span></span> — lower airflow reduces heat transfer across cooling coils → containment temp RISES.<br>
@@ -116,7 +126,7 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
-- Related exam questions: [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
+- Related exam questions: [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]]
 - Related scenarios: [[2022 Scenario 4]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

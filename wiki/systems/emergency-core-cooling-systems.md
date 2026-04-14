@@ -248,11 +248,16 @@ EOP-LOCA-1 Step 14 accumulator isolation: when at least two RCS T-Hots < <span c
 LBLOCA with <span class="hi-exam">auto SI failure on both trains</span> (CT#1, CT-2): RO must manually actuate SI before transition out of TRIP-1. FSAR analyses assume at least one train of safeguards actuates. Additionally, <span class="hi-exam">22 RHR pump (low-head ECCS) fails to start on SEC signal</span> (CT#2, CT-5) — RO must manually start 22 RHR before transition out of TRIP-1. FSAR LBLOCA analysis requires minimum pumped injection from one each high-head, intermediate-head, and low-head pump. In EOP-LOCA-5, crew reduces ECCS to one train (CT#3): stops all but one charging pump, runs only one SI pump.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q77</div>
+ECCS subsystem composition: each of the two independent ECCS subsystems includes <span class="hi-exam">one centrifugal charging pump (high-head)</span>, one SI pump (intermediate-head), and one RHR pump + HX (low-head). <span class="hi-exam">The 23 Charging Pump (positive displacement) is NOT part of an ECCS subsystem</span> — it counts only toward TS 3.1.2.4 (Charging Pumps for reactivity control). Loss of one centrifugal charging pump = one ECCS subsystem inoperable → TS 3.5.2 applies (72 hours to restore, then Hot Shutdown in 12 hours).
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]]
-- Related exam questions: [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
+- Related exam questions: [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
 - Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

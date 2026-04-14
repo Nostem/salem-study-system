@@ -166,8 +166,14 @@ Post-boration TS evaluation: with RWST at 2350 ppm and BAST at 6650 ppm, <span c
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q77</div>
+Key distinction: loss of one centrifugal charging pump (21 CHP trips, 22 and 23 remain operable) does <span class="hi-exam">NOT</span> cause entry into TS 3.1.2.2 (Boration Flow Paths) or TS 3.1.2.4 (Charging Pumps). <span class="hi-exam">Two boration flow paths still exist</span> (BAT via BAT pump + remaining CHP; RWST via remaining CHP). <span class="hi-exam">23 Charging Pump (positive displacement) counts toward the TS 3.1.2.4 requirement</span> for reactivity addition capability — so two charging pumps remain operable (22 + 23). The only applicable entry is <span class="hi-exam">TS 3.5.2 (ECCS)</span>, because the tripped CHP is the high-head ECCS component. <span class="hi-trap">Trap: loss of two boration flow paths requires MODE 3 + borated to SDM ≥ 1% delta k/k at 200°F within 6 hours (78-hour total distractor in the exam).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]]
+- Related exam questions: [[2020 Q77]]
 - Related JPMs: [[2022 JPM SRO-A2]]
-- Related exam: [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]

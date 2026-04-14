@@ -41,6 +41,11 @@ Entry from CW malfunction: per AB.CW-0001, with <span class="hi-exam">4 or more 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q55</div>
+Safeguard valve verification — Phase A isolation: <span class="hi-exam">CC113 and CC215 (Excess Letdown Component Cooling Valves) receive a Phase A signal to close</span>. When verifying safeguards positions: CV2/CV277 (Letdown) do NOT close on Phase A (low PZR level only); CC131/CC190 (RCP Thermal Barrier) close on Phase B, not Phase A; BF13s close on Feedwater Isolation Signal, not Phase A.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q3</div>
 Step 12, Safeguard Valve Alignment: check <span class="hi-exam">2CC1 SAFEGUARDS ACTUATION Bezels — Red light LIT = train actuated, OUT = failed</span>. On 2RP4, lights OUT = component failed to reposition. If any safeguards valve not in required position, <span class="hi-exam">place valves in safeguards position manually</span>.
 </div>
@@ -85,7 +90,7 @@ Step 17, CCW Pump Operation Evaluation: during MODE III (LBLOCA + LOOP), <span c
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment Spray]], [[Main Turbine]], [[CCW]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]], [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
-- Related exam questions: [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
+- Related exam questions: [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
 - Related JPMs: [[2022 JPM Sim-f]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

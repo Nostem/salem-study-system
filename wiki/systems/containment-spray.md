@@ -18,7 +18,13 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 
 - Actuated on Hi-Hi Containment Pressure ("P" signal, 2/4 at <span class="val-trip">15.0 psig</span>)
 - Phase B containment isolation also actuates on the "P" signal
+- **Containment Spray bistables are energized to actuate** (opposite of most ESF bistables)
 (UFSAR T7.2-1, TS Table 3.3-4)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q88</div>
+CS Hi-Hi Containment Pressure bistables are <span class="hi-exam">energized to actuate</span>. Loss of a VIB leaves the associated bistable de-energized (cannot contribute to actuation) → <span class="hi-exam">logic goes from 2/4 to 2/3</span>. Per TS 3.3.2.1, the inoperable channel is placed in <span class="hi-exam">BYPASS (not tripped)</span> to prevent spurious CS actuation. <span class="hi-trap">Most ESF bistables are de-energized to trip → inoperable channels are placed in TRIPPED. Containment Spray is the opposite.</span>
+</div>
 
 ## Operation
 
@@ -98,7 +104,7 @@ Confirms CS pump power supplies during MSLB + LOOP with 2C 4KV Vital Bus lost: <
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2020 Q9]], [[2020 Q42]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
+- Related exam questions: [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
 - Related JPMs: [[2022 JPM Sim-f]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

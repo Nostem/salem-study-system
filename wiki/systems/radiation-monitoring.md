@@ -28,6 +28,20 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
 1R1A (Control Room Area) radiation monitor in alarm: <span class="hi-trap">does NOT automatically actuate CAV in AP Mode</span>. Requires manual actuation — press ACCIDENT PRESSURIZED pushbutton at 1RP2 to actuate BOTH units' CAV into AP Mode. Emergency intake dampers open on the unaffected unit.
 </div>
 
+### Steam Generator Blowdown Radiation Monitors (R19)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q51</div>
+R19 SGBD radiation monitor WARNING setpoint: <span class="hi-exam">Unit 1 — NO automatic actuations (warning is early warning only). Unit 2 — automatically closes ALL GB10s, GB185s, and 2GB50.</span> <span class="hi-trap">Trap: R19 WARNING and ALARM actions differ. The ALARM setpoint on Unit 1 closes ALL GB4s, GB8s, GB10s, GB185s, and 1GB50. On Unit 2, ALARM isolates blowdown from the affected SGs by closing the associated GB4. Do not confuse warning vs alarm actions, and remember the unit difference at the warning level.</span>
+</div>
+
+### Liquid Effluent Radiation Monitor (R18)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q90</div>
+2R18 (Radioactive Liquid Effluent Monitor) response to detector failure: <span class="hi-exam">R18 failing LOW will NOT cause 2WL51 (Liquid Release Stop Valve) to automatically close</span> — only a HIGH alarm closes WL51. Per S2.OP-SO.WL-0001, if 2R18 is inoperable, <span class="hi-exam">2FR1064 (Radwaste Overboard Discharge Flow Recorder) must be OPERABLE AND two independent samples, independent release calculations, and independent discharge valve lineups must be performed</span>. <span class="hi-trap">Trap: ODCM 3.3.3.8 allows flow rate estimation if 2FR1064 is inoperable, but the release procedure prevents BOTH R18 and FR1064 from being inoperable simultaneously.</span>
+</div>
+
 ### Fuel Handling Building Radiation Monitors
 
 <div class="callout callout-exam">
@@ -110,9 +124,11 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
 - Related exams: [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
   - [[2020 Q23]] — 2R32A fuel handling crane interlock / hoist-up only / R5 & R9 do NOT interlock crane
+  - [[2020 Q51]] — R19 SGBD warning setpoint unit difference: Unit 1 no auto action, Unit 2 closes GB10s/GB185s/GB50
   - [[2023 Q49 — SGBD Radiation Monitor Check Source|2023 Q49]] — SGBD rad monitor check source response and interlocks
   - [[2023 Q62]] — Area Rad Monitor 1R1A / manual CAV AP mode from 1RP2
   - [[2022 Q62]] — Fuel Handling Crane interlocks (2R32A vs 2R9 rad monitors)
   - [[2022 Q83]] — LBLOCA R44A/B >2000 R/hr / GE classification / Fission Product Barrier Table
   - [[2020 Q26]] — R44A/B >1E05 R/HR / SMM adverse containment / manual reset for radiation
+  - [[2020 Q90]] — 2R18 fails LOW → WL51 does NOT close / FR1064 must remain OPERABLE per release procedure
 - Related JPMs: [[2022 JPM RO-A4]], [[2022 JPM IP-k]]

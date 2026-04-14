@@ -964,6 +964,71 @@ questions:
     ka_importance: 4.1
     type: SRO
     tier_group: "Tier 1/Group 2"
+  - number: 86
+    topic: "CR Evacuation Seal Injection"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Salem Vision Database"
+    systems:
+      - reactor-coolant-pumps
+      - chemical-and-volume-control-system
+    ka: "003G2.4.34"
+    ka_importance: 4.1
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+  - number: 87
+    topic: "LOCA Sump Blockage / ECCS Flow"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - residual-heat-removal
+    ka: "006G2.4.47"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+  - number: 88
+    topic: "Loss of VIB / ESFAS Phase B Logic"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank – Catawba 2017 NRC Exam Q87"
+    systems:
+      - rps-ssps
+      - containment-spray
+      - 115v-ac
+    tech_specs:
+      - ts-3-4-3-instrumentation
+    ka: "013A2.04"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+  - number: 89
+    topic: "SW CFCU Isolation / Water Hammer"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - service-water
+      - containment-fan-coil-units
+    ka: "022A2.04"
+    ka_importance: 3.2
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+  - number: 90
+    topic: "R18 Detector Failure / Liquid Release"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - radiation-monitoring
+      - waste-liquid
+    tech_specs:
+      - ts-3-4-3-instrumentation
+    ka: "073A2.02"
+    ka_importance: 3.2
+    type: SRO
+    tier_group: "Tier 2/Group 1"
   - number: 91
     topic: "Loss of All Charging Pumps / Cross-Unit Charging"
     answer: D

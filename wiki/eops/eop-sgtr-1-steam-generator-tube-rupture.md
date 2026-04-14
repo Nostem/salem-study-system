@@ -30,10 +30,15 @@ EOP-TRIP-7 Rediagnosis transitions to EOP-SGTR-1 when symptoms include <span cla
 Entered from EOP-TRIP-1 when <span class="hi-exam">23 SG NR level rising in an uncontrolled manner</span> following a 650 gpm tube rupture. Key actions in SGTR-1: identify 23 SG as ruptured, set <span class="hi-exam">23MS10 to 1045 psig</span>, isolate ruptured SG (close 23AF21, 23AF11, 23MS167, 23MS18, 23MS7, 23GB4, dispatch operator to close 23MS45, close 2SS333). Determine RCS target temperature using <span class="hi-exam">Table B: SG pressure > 1000 psig = 503 F CETs</span>. Cooldown using steam dumps on intact SGs at maximum rate — bypass Tavg Lo-Lo pushbuttons. After reaching target temp, stop cooldown by placing MS Pressure Control in Auto. Reset SI, Phase A, Phase B. Depressurize using PZR spray valves per Table D criteria. When 2PS3 fails to close, stop 21 and 23 RCPs to eliminate spray flow path, continue at step 19.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q79</div>
+EOP-SGTR-1 CAS (Continuous Action Step): <span class="hi-exam">If SI has been terminated and RCS subcooling reaches 0°F → start ECCS pumps as necessary to restore subcooling and GO TO EOP-SGTR-3</span> (SGTR with LOCA – Subcooled Recovery). This CAS monitors throughout the procedure. <span class="hi-trap">SGTR-3 (Subcooled Recovery) is the correct transition — NOT SGTR-4 (Saturated Recovery). SGTR-2 (Post SGTR Cooldown) is only for normal recovery when subcooling is maintained. The key discriminator is: SI has been TERMINATED + subcooling lost = SGTR-3.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]]
-- Related exam questions: [[2022 Q11]], [[2022 Q25]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]]
+- Related exam questions: [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
 - Related scenarios: [[2022 Scenario 4]]
-- Related exam: [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

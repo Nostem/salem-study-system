@@ -232,9 +232,14 @@ The boron concentration limits also ensure a <span class="hi-exam">post-LOCA sum
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-5.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-5.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q77</div>
+Loss of one centrifugal charging pump: <span class="hi-exam">TS 3.5.2 applies — one ECCS subsystem inoperable</span> (the tripped CHP is the high-head component for that ECCS train). 72 hours to restore, then <span class="hi-exam">Hot Shutdown (MODE 4) within the next 12 hours</span> (total 84 hours from the pump trip). <span class="hi-trap">The 23 Charging Pump (positive displacement) does NOT count as an ECCS high-head pump — it counts only for TS 3.1.2.4 (Charging Pumps for reactivity control). TS 3.1.2.2 (Boration Flow Paths) and TS 3.1.2.4 are NOT entered because two boration flow paths and two charging pumps (22 + 23) remain operable.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RHR]], [[CVCS]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2023 Q91]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2020 Q77]], [[2023 Q91]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

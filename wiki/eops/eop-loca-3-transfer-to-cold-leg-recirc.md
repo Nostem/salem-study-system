@@ -25,8 +25,15 @@ Transfer to cold leg recirculation during LBLOCA. Time-critical operator actions
 Key steps: depress SUMP AUTO ARMED PB for 21 and 22 SJ44s, remove lockouts from 2SJ67/68/69, verify SJ44s open, close 2SJ67/68, close 2RH1/2RH2, open 21 and 22 SJ45s. Failure to transfer before RWST Lo-Lo (1.2 feet) results in loss of all pumped safety injection and containment spray.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q87</div>
+During cold leg recirculation transfer: after sump valves open and RWST common suction (SJ69) closes, <span class="hi-exam">oscillating RHR pump amps, flows, and discharge pressures indicate cavitation from containment sump blockage</span>. The CRS transitions to <span class="hi-exam">EOP-APPX-7 (Containment Sump Blockage)</span>, NOT EOP-LOCA-5. <span class="hi-trap">LOCA-5 is for mechanical/electrical component failures causing loss of recirculation — sump blockage causing pump cavitation is APPX-7.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]]
+- Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
+- Related exam questions: [[2020 Q87]]
 - Related scenarios: [[2023 Scenario 1]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]]
