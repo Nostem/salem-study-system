@@ -27,7 +27,7 @@ At Time 07:02<br>
 Which ONE of the following completes the statements below?<br><br>
 The Primary Water Flow Deviation Alarm actuates when primary water flow is greater than a MINIMUM of &plusmn;<span class="blank">_(1)_</span> gpm above the setpoint.<br><br>
 Control Rods are expected to step <span class="blank">_(2)_</span> as the makeup continues with 1CV179 in its failed position.<br><br>
-NOTE: Auto Rods Out has been disabled. When answering, assume "out" means manually withdrawing rods.
+<span class="hi-trap">NOTE: Auto Rods Out has been disabled. When answering, assume "out" means manually withdrawing rods.</span>
 </div>
 
 <div style="margin-bottom:14px;">
