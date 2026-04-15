@@ -44,7 +44,7 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q3</div>
-1CV179 (PRIMARY WATER FLOW) <span class="hi-exam">fails CLOSED on loss of 125 VDC power</span>. During auto makeup with CV179 failed closed, actual boron flow through the blender is higher than the setpoint → RCS boron concentration rises → negative reactivity → Tavg lowers → <span class="hi-exam">control rods step OUT</span> (in auto) to restore Tavg. <span class="hi-trap">If CV179 failed OPEN, primary water flow would be excessive → RCS dilution → rods step IN. The failure mode (closed) is key.</span> Primary Water Flow Deviation Alarm setpoint: <span class="hi-exam"><span class="val-alarm">&plusmn;5.0 gpm</span></span>. Boric Acid Flow Deviation Alarm setpoint: <span class="val-alarm">&plusmn;0.8 gpm</span> (different alarm, common distractor).
+1CV179 (PRIMARY WATER FLOW) <span class="hi-exam">fails CLOSED on loss of 125 VDC power</span>. During auto makeup with CV179 failed closed, actual boron flow through the blender is higher than the setpoint → RCS boron concentration rises → negative reactivity → Tavg lowers → <span class="hi-exam">control rods step OUT </span> (manually) to restore Tavg. <span class="hi-trap">If CV179 failed OPEN, primary water flow would be excessive → RCS dilution → rods step IN. The failure mode (closed) is key.</span> Primary Water Flow Deviation Alarm setpoint: <span class="hi-exam"><span class="val-alarm">&plusmn;5.0 gpm</span></span>. Boric Acid Flow Deviation Alarm setpoint: <span class="val-alarm">&plusmn;0.8 gpm</span> (different alarm, common distractor).
 </div>
 
 <div class="callout callout-exam">
