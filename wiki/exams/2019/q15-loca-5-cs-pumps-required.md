@@ -15,7 +15,7 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-REFERENCE PROVIDED<br>
+<span class="val-normal">REFERENCE PROVIDED</span><br>
 &bull; The crew is performing 2-EOP-LOCA-5 (LOSS OF EMERGENCY RECIRCULATION) Step 6<br>
 &bull; 2B 4KV Vital Bus is de-energized and locked out<br>
 &bull; Containment Sump Level is 55%<br>
