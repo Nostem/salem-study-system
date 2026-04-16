@@ -1,0 +1,1933 @@
+
+
+===== PAGE 1 =====
+
+ES-301 Administrative Topics Outline Form ES-301-1
+Facility: Salem Date of Examination: 2/14/2022
+Examination Level: RO ☒ SRO ☐ Operating Test Number: 20-01
+Administrative Topic (see Type Describe activity to be performed
+Note) Code*
+Determine the maximum reactor vessel vent time in response to head
+voiding IAW Attachment 1 of 2-EOP-FRCI-3
+Conduct of Operations R,D,P
+[2.1.25, RO–3.9; Ability to interpret reference materials, such as graphs,
+curves, tables, etc.]
+Determine the amount of time to borate for 3 stuck rods and the final
+Conduct of Operations BAST level IAW 2-EOP-TRIP-2.
+R,D
+[2.1.20, RO-4.6; Ability to interpret and execute procedure steps].
+Perform manual QPTR calculation surveillance IAW S2.OP-ST.NIS-0002
+Equipment Control R,D [2.2.12, RO-3.7; Knowledge of surveillance procedures]
+Determine radiological dose and stay times for a Containment Entry.
+Radiation Control R,N [2.3.13, RO-3.4; Knowledge of radiological safety procedures pertaining
+to licensed operator duties, such as response to radiation monitor alarms,
+containment entry requirements, fuel handling responsibilities, access to
+locked high-radiation areas, aligning filters, etc.]
+NOT USED
+Emergency Plan
+NOTE: All items (five total) are required for SROs. RO applicants require only four items unless they are
+retaking only the administrative topics (which would require all five items).
+* Type Codes and Criteria: (C)ontrol room, (S)imulator, or Class(R)oom
+(D)irect from bank (≤ 3 for ROs; ≤ 4 for SROs and RO retakes)
+(N)ew or (M)odified from bank (≥ 1)
+(P)revious 2 exams (≤ 1, randomly selected)
+
+===== PAGE 2 =====
+
+ES-301 Administrative Topics Outline Form ES-301-1
+Summary:
+(RO-A1) Determine the maximum reactor vessel vent time in response to head voiding IAW Attachment 1 of
+2-EOP-FRCI-3:
+The plant has experienced voiding in the reactor vessel and the crew is responding by implementing 2-EOP-FRCI-3,
+RESPONSE TO VOIDS IN REACTOR VESSEL. The candidate will be required to perform a calculation using
+Attachment 1 from 2-EOP-FRCI-3 and Figure 1 to determine the maximum vent time from the reactor vessel.
+(RO-A2) Determine the amount of time to borate for 3 stuck rods and the final BAST level IAW 2-EOP-TRIP-2:
+The candidate is directed to perform a rapid boration for 3 stuck rods per step 4 of 2-EOP-TRIP-2, Reactor Trip
+Response. The candidate is being asked to determine the amount of time to borate for 3 stuck rods and the final
+BAST level change following the completion of the boration.
+(RO-A3) Perform manual QPTR calculation surveillance IAW S2.OP-ST.NIS-0002:
+The candidate will be required to manually perform a QPTR calculation IAW S2.OP-ST.NIS-0002. The candidate will
+determine that the QPTR surveillance is UNSAT.
+(RO-A4) Determine radiological dose and stay times for a Containment Entry:
+The candidate will be required to use a radiological survey map and determine the personal exposure for performing
+a task inside Containment. The candidate will also be required to determine the radiological stay times for Gamma
+and Neutron sources and select the most limiting stay time. This JPM is considered modified or new because
+determining neutron dose stay times is different than previously used JPMs.
+
+===== PAGE 3 =====
+
+ES-301 Administrative Topics Outline Form ES-301-1
+Facility: Salem Date of Examination: 2/14/2022
+Examination Level: RO SRO ☒ Operating Test Number: 20-01
+☐
+Administrative Topic (see Type Describe activity to be performed
+Note) Code*
+Identify and Isolate Non-Essential Chilled Water Loads IAW S2.OP-
+SO.CH-0001, Attachment 2
+Conduct of Operations R,D,P
+[2.1.7, SRO-4.7: Ability to evaluate plant performance and make
+operational judgements based on operating characteristics, reactor
+behavior, and instrument interpretation.]
+Determine the amount of the time to borate for 3 stuck control rods and
+evaluate final BAST levels to determine any applicable TS LCO(s) and
+Conduct of Operations R,M action(s).
+[2.1.20, SRO-4.6: Ability to interpret and execute procedure steps]
+Review and approve a completed Containment Ventilation Valve
+surveillance.
+Equipment Control R,N
+[2.2.12, SRO-4.1: Knowledge of surveillance procedures]
+Determine Personnel Exposure and Authorization for Containment
+entry at power
+Radiation Control R,N
+[2.3.4, SRO-3.7: Knowledge of radiation exposure limits under normal
+and emergency conditions]
+Classify an Event and Determine PARs (Time Critical)
+Emergency Plan R,D [2.4.41, SRO-4.6: Knowledge of the emergency action level
+thresholds and classifications]
+NOTE: All items (five total) are required for SROs. RO applicants require only four items unless they are
+retaking only the administrative topics (which would require all five items).
+*Type Codes and Criteria: (C)ontrol room, (S)imulator, or Class(R)oom
+(D)irect from bank (≤ 3 for ROs; ≤ 4 for SROs and RO retakes)
+(N)ew or (M)odified from bank (≥ 1)
+(P)revious 2 exams (≤ 1, randomly selected)
+
+===== PAGE 4 =====
+
+ES-301 Administrative Topics Outline Form ES-301-1
+SUMMARY:
+(SRO-A1) Identify and Isolate Non-Essential Chilled Water Loads IAW S2.OP-SO.CH-0001, Attachment 2:
+The SRO will be directed to determine the non-essential heat load from Table A and then use Table B to select the
+heat loads required to be isolated to comply with Tech Spec. The SRO will need to choose the heat loads in
+accordance with S2.OP-SO.CH-0001 Attachment 2.
+(SRO-A2) Determine the amount of the time to borate for 3 stuck control rods and evaluate final BAST levels
+to determine any applicable TS LCO(s) and action(s).:
+The candidate is directed to perform a rapid boration for 3 stuck rods per step 4 of 2-EOP-TRIP-2, Reactor Trip
+Response. The candidate is being asked to determine the amount of time to borate for 3 stuck rods and the final
+BAST level change following the completion of the boration. The SRO candidate will evaluate the final BAST level
+and determine LCO 3.1.2.6(a) is NOT MET, and action is required.
+(SRO-A3) Review and approve a completed Containment Ventilation Valve surveillance:
+The candidate is required to determine if a completed Containment Ventilation Valve surveillance (S2.OP-ST.CBV-
+0001) was completed correctly and can be approved. In this case, the SRO will determine that the surveillance is
+UNSAT and identify that 2VC5 stroke time is in the Required Action Range and must be declared inoperable.
+(SRO-A4) Determine Personnel Exposure and Authorization for Containment entry at power:
+The candidate will determine the dose exposure for two individuals performing a task inside Containment using a
+radiological survey map. The SRO will determine if the dose exceeds the Administrative Annual limit (2000 mR).
+The SRO candidate will also identify the required authorization for entry inside Containment while at power with a
+10% per hour downpower in progress. In this case, the SRO will determine that RP Supervisor authorization is
+required.
+(SRO-A5) Make a PAR recommendation during a GE (Time Critical):
+The candidate will be given plant conditions (Loss of ALL AC Power) to assess and classify the emergency as a
+General Emergency (GE) and make an initial PAR recommendation per EP-SA-325-F4, Attachment 4. This is a Time
+Critical JPM task.
+
+===== PAGE 5 =====
+
+ES-301 Control Room/In-Plant Systems Outline Form ES-301-2
+Facility: Salem Date of Examination: 2/14/2022
+Exam Level: RO ☒ SRO-I ☐ SRO-U ☐ Operating Test Number: 20-01
+Control Room Systems:* 8 for RO, 7 for SRO-I, and 2 or 3 for SRO-U
+System/JPM Title Type Code* Safety
+Function
+(K/A, Importance RO/SRO)
+a.Control Rod exercise surveillance (001, A2.11, 4.4/4.7) Alternate Path – A,D,P,S 1
+Control rods continue to insert after placing in Auto & Manual requiring Rx Trip.
+b. Perform manual make up to VCT (004, A4.04, 3.2/3.6) D,S 2
+c.Isolate ECCS Accumulators in EOP-LOCA-1 (006, A3.01 4.0/3.9) Alternate A,D,E,L,S 3
+Path – SJ54 fails to close requiring operator to vent accumulator.
+d.Respond to RCP standpipe low level alarm (003, A1.10, 2.5/2.7) D,E,S 4-Pri
+e.Perform immediate actions for a loss of a SGFP IAW S2.OP-AB.CN-0001 A,E,N,S 4-Sec
+(059, A4.01 3.1/3.1) Alternate Path – automatic turbine runback fails to actuate
+and control rods fail to insert in Auto. Operator is required to manually initiate
+turbine runback and take control rods to manual and insert at 48 spm.
+f.Manually actuate Containment Spray (026, A2.03, 4.1/4.4) Alternate Path – A,D,E,EN,P,S 5
+Phase B valves fail to close automatically on a CS signal requiring operators to
+manually close valves.
+g.Respond to loss of 2A 4KV Vital Bus IAW S2.OP-AB.4KV-0001 (062, A2.04 A,E,N,S 6
+3.1/3.4) Alternate Path – 21 Charging Pump trips on start requiring operator to
+start 22 Charging Pump.
+h.Respond to Fire Alarm IAW S2.OP-AB.FIRE-0001 (086, A4.02, 3.5/3.5) E,N,S 8
+In-Plant Systems:* 3 for RO, 3 for SRO-I, and 3 or 2 for SRO-U
+i.Transfer PZR Backup Heater bus to Emergency Power Supply IAW S2.OP- D,E 3
+SO.PZR-0010 (010, A4.02, 3.6/3.4)
+j.Locally open Reactor Trip, 13 CV pump and 1CV175 breakers IAW S1.OP- D,E,L 7
+AB.CR-0001 (012, A4.06, 4.3/4.3) [Salem Unit 1 ONLY]
+k.Perform a radioactive liquid release IAW S2.OP-SO.WL-0001 (068, A4.03 D,R 9
+3.9/3.8)
+* All RO and SRO-I control room (and in-plant) systems must be different and serve different safety
+functions, all five SRO-U systems must serve different safety functions, and in-plant systems and
+functions may overlap those tested in the control room.
+*Type Codes Criteria for R /SRO-I/SRO-U
+
+===== PAGE 6 =====
+
+ES-301 Control Room/In-Plant Systems Outline Form ES-301-2
+(A)lternate path 4–6/4–6 /2–3
+(C)ontrol room
+(D)irect from bank ≤ 9/≤ 8/≤ 4
+(E)mergency or abnormal in-plant ≥ 1/≥ 1/≥ 1
+(EN)gineered safety feature ≥ 1/≥ 1/≥ 1 (control room system)
+(L)ow-Power/Shutdown ≥ 1/≥ 1/≥ 1
+(N)ew or (M)odified from bank including 1(A) ≥ 2/≥ 2/≥ 1
+(P)revious 2 exams ≤ 3/≤ 3/≤ 2 (randomly selected)
+(R)CA ≥ 1/≥ 1/≥ 1
+(S)imulator
+
+===== PAGE 7 =====
+
+ES-301 Control Room/In-Plant Systems Outline Form ES-301-2
+JPM Summary:
+Sim-a - Control Rod exercise surveillance
+The operator will be directed to continue performing control rod surveillance testing. The
+operator will complete rod exercise test for Control Bank D by inserting 15 steps. The operator
+will verify proper rod insertion and then withdraw rods to original position. When the operator
+places control rods in Auto, rods will continuously insert. The operator will attempt to place rods
+in manual to stop rod motion, but rods will continue to insert. The operator will take action to
+manually trip the reactor.
+Sim-b - Perform manual make up to VCT
+The operator will be directed to perform a manual make-up to raise level in the VCT as a result
+of a failed level channel.
+Sim-c - Isolate ECCS Accumulators
+The operator will be directed to perform actions in EOP-LOCA-1, Reactor Trip or Safety
+Injection, to isolate the Si Accumulators. When performing steps to close the SJ54s, one of the
+SJ54s will not close. The operator will then perform alternate steps to vent the accumulator.
+Sim-d – Respond to RCP standpipe low level alarm
+The operator will respond to an unexpected console alarm for a RCP standpipe level low. The
+operator will take actions in accordance with the console Alarm Response Procedure to open
+two valves and start a Primary Water Pump to make up to the standpipe until the low level
+clears and the standpipe level high comes in. Once the standpipe high level alarm comes in, the
+operator will take the actions to stop the Primary Water Pump and close the valves.
+Sim-e - Perform immediate actions for a loss of a SGFP
+The operator will take the watch and directed to respond to all alarms and indications. After
+taking the watch, 21 SGFP will trip and the main turbine runback circuit will fail to actuate and
+rods will fail to move while in Auto. The operator will perform immediate actions per S2.OP-
+AB.CN-0001, Main Feedwater/Condensate System Abnormality, and recognize that auto turbine
+runback has not actuate and manually initiate turbine runback. The operator will next verify
+control rods in Auto, but soon recognize that control rods are not inserting with a raising Tavg.
+The operator will place rods in Manual and insert rods to control Tavg.
+Sim-f - Manually actuate Containment Spray
+The operator will be directed to continue on in EOP-TRIP-1 with a large break LOCA in
+progress. The operator will recognize that containment pressure has not remained less than 15
+psig and that Containment Spray/Phase B failed to auto actuate. The operator will manually
+actuate CS/Phase B. In addition, the operator will recognize that some Phase B valves failed to
+reposition and will manually reposition these valves.
+
+===== PAGE 8 =====
+
+ES-301 Control Room/In-Plant Systems Outline Form ES-301-2
+Sim-g - Respond to loss of 2A 4KV Vital Bus
+The operator will take the watch and directed to respond to all alarms and indications. After
+taking the watch, the 2A 4KV Vital Bus will de-energize on bus differential. The operator will
+respond by entering S2.OP-AB.4KV-0001, Loss of 2A 4KV Vital Bus, and taking action to place
+21 charging pump in service. Once 21 charging pump is started, it will trip. The operator will
+take the alternate path to start 22 charging pump.
+Sim-h - Respond to Fire Alarm IAW S2.OP-AB.FIRE-0001
+The operator will respond to a fire alarm from the control in accordance with S2.OP-AB.FIRE-
+0001. The operator will determine the location of the fire then take the actions of the procedure
+to make a plant page announcement of the fire and location, initiate Control Ventilation to FIRE
+INSIDE Mode, and then ensure the PZR PORVs are closed and closing the PZR PORV Block
+valves.
+IP-I - Transfer PZR Backup Heater bus to Emergency Power Supply IAW S2.OP-SO.PZR-
+0010
+The operator will locally transfer the PZR Backup Heater bus to the emergency bus in
+accordance with S2.OP-SO.PZR-0010.
+IP-j - Locally open Reactor Trip, 13 CV pump and 1CV175 breakers IAW S1.OP-AB.CR-
+0001
+The operator will be giving directions to locally open the reactor trip breakers, 13 Charging
+Pump breaker, and the 1CV175 (Rapid Boration Valve) using the S1.OP-AB.CR-0001
+attachment.
+IP-k - Perform a radioactive liquid release IAW S2.OP-SO.WL-0001
+The operator will perform a radioactive liquid release in accordance with S2.OP-SO.WL-0001.
+During the release the 2R18 radiation monitor will go into alarm and the operator will take the
+action to notify the control room to terminate the release by closing the 2WL51 from the control
+room.
+
+===== PAGE 9 =====
+
+ES-301 Control Room/In-Plant Systems Outline Form ES-301-2
+Facility: Salem Date of Examination: 2/14/2022
+Exam Level: RO ☐ SRO-I ☒ SRO-U ☐ Operating Test Number: 20-01
+Control Room Systems:* 8 for RO, 7 for SRO-I, and 2 or 3 for SRO-U
+System/JPM Title Type Code* Safety
+Function
+(K/A, Importance RO/SRO)
+a.Control Rod exercise surveillance (001, A2.11, 4.4/4.7) Alternate Path – A,D,P,S 1
+Control rods continue to insert after placing in Auto & Manual requiring Rx Trip.
+b. Perform manual make up to VCT (004, A4.04, 3.2/3.6) D,S 2
+c.Isolate ECCS Accumulators in EOP-LOCA-1 (006, A3.01 4.0/3.9) Alternate A,D,E,L,S 3
+Path – SJ54 fails to close requiring operator to vent accumulator.
+d.Respond to RCP standpipe low level alarm (003, A1.10, 2.5/2.7) D,E,S 4-Pri
+e.Perform immediate actions for a loss of a SGFP IAW S2.OP-AB.CN-0001 A,E,N,S 4-Sec
+(059, A4.01 3.1/3.1) Alternate Path – automatic turbine runback fails to actuate
+and control rods fail to insert in Auto. Operator is required to manually initiate
+turbine runback and take control rods to manual and insert at 48 spm.
+f.Manually actuate Containment Spray (026, A2.03, 4.1/4.4) Alternate Path – A,D,E,EN,P,S 5
+Phase B valves fail to close automatically on a CS signal requiring operators to
+manually close valves.
+g.Not Used
+h.Respond to Fire Alarm IAW S2.OP-AB.FIRE-0001 (086, A4.02, 3.5/3.5) E,N,S 8
+In-Plant Systems:* 3 for RO, 3 for SRO-I, and 3 or 2 for SRO-U
+i.Transfer PZR Backup Heater bus to Emergency Power Supply IAW S2.OP- D,E 3
+SO.PZR-0010 (010, A4.02, 3.6/3.4)
+j.Locally open Reactor Trip, 13 CV pump and 1CV175 breakers IAW S1.OP- D,E,L 7
+AB.CR-0001 (012, A4.06, 4.3/4.3) [Salem Unit 1 ONLY]
+k.Perform a radioactive liquid release IAW S2.OP-SO.WL-0001 (068, A4.03 D,R 9
+3.9/3.8)
+* All RO and SRO-I control room (and in-plant) systems must be different and serve different safety
+functions, all five SRO-U systems must serve different safety functions, and in-plant systems and
+functions may overlap those tested in the control room.
+*Type Codes Criteria for R /SRO-I/SRO-U
+
+===== PAGE 10 =====
+
+ES-301 Control Room/In-Plant Systems Outline Form ES-301-2
+(A)lternate path 4–6/4–6 /2–3
+(C)ontrol room
+(D)irect from bank ≤ 9/≤ 8/≤ 4
+(E)mergency or abnormal in-plant ≥ 1/≥ 1/≥ 1
+(EN)gineered safety feature ≥ 1/≥ 1/≥ 1 (control room system)
+(L)ow-Power/Shutdown ≥ 1/≥ 1/≥ 1
+(N)ew or (M)odified from bank including 1(A) ≥ 2/≥ 2/≥ 1
+(P)revious 2 exams ≤ 3/≤ 3/≤ 2 (randomly selected)
+(R)CA ≥ 1/≥ 1/≥ 1
+(S)imulator
+
+===== PAGE 11 =====
+
+ES-301 Control Room/In-Plant Systems Outline Form ES-301-2
+Facility: Salem Date of Examination: 2/14/2022
+Exam Level: RO ☐ SRO-I ☐ SRO-U ☒ Operating Test Number: 20-01
+Control Room Systems:* 8 for RO, 7 for SRO-I, and 2 or 3 for SRO-U
+System/JPM Title Type Code* Safety
+Function
+(K/A, Importance RO/SRO)
+d. Respond to RCP standpipe low level alarm (003, A1.10, 2.5/2.7) D,E,S 4-Pri
+e. Perform immediate actions for a loss of a SGFP IAW S2.OP-AB.CN-0001 A,E,N,S 4-Sec
+(059, A4.01 3.1/3.1) Alternate Path – automatic turbine runback fails to actuate
+and control rods fail to insert in Auto. Operator is required to manually initiate
+turbine runback and take control rods to manual and insert at 48 spm.
+f. Manually actuate Containment Spray (026, A2.03, 4.1/4.4) Alternate Path – A,D,E,EN,P,S 5
+Phase B valves fail to close automatically on a CS signal requiring operators to
+manually close valves.
+In-Plant Systems:* 3 for RO, 3 for SRO-I, and 3 or 2 for SRO-U
+j. Locally open Reactor Trip, 13 CV pump and 1CV175 breakers IAW S1.OP- D,E,L 7
+AB.CR-0001 (012, A4.06, 4.3/4.3) [Salem Unit 1 ONLY]
+k. Perform a radioactive liquid release IAW S2.OP-SO.WL-0001 (068, A4.03 D,R 9
+3.9/3.8)
+* All RO and SRO-I control room (and in-plant) systems must be different and serve different safety
+functions, all five SRO-U systems must serve different safety functions, and in-plant systems and
+functions may overlap those tested in the control room.
+* Type Codes Criteria for R /SRO-I/SRO-U
+
+===== PAGE 12 =====
+
+ES-301 Control Room/In-Plant Systems Outline Form ES-301-2
+(A)lternate path 4–6/4–6 /2–3
+(C)ontrol room
+(D)irect from bank ≤ 9/≤ 8/≤ 4
+(E)mergency or abnormal in-plant ≥ 1/≥ 1/≥ 1
+(EN)gineered safety feature ≥ 1/≥ 1/≥ 1 (control room system)
+(L)ow-Power/Shutdown ≥ 1/≥ 1/≥ 1
+(N)ew or (M)odified from bank including 1(A) ≥ 2/≥ 2/≥ 1
+(P)revious 2 exams ≤ 3/≤ 3/≤ 2 (randomly selected)
+(R)CA ≥ 1/≥ 1/≥ 1
+(S)imulator
+
+===== PAGE 13 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Facility: _____Salem______ Scenario No.: ____ESG-1_____ Op-Test No.: __20-01 NRC__
+Examiners: ___________________________ Operators: ____________________________
+__________________________ _____________________________
+__________________________ _____________________________
+Initial Conditions: IC-240: Unit 2 is at 100% power, EOL; 21 Charging Pump I/S. The following equipment is out
+of service: 23 Charging Pump and 21 RHR Pump are C/T for maintenance.
+Turnover: The crew is directed to reduce power to 89% power at 10% per hour IAW S2.OP-IO.ZZ-0004 using
+boration, control rods and turbine load control in preparation for Main Turbine Valve testing.
+Critical Tasks:
+1. Manually actuate at least one train of SI before transition out of TRIP-1
+2. Manually start one low head ECCS pump before transition out of TRIP-1
+3. Make up to the RWST, minimize RWST outflow, and if RWST Lo-Lo level alarm received stops ECCS
+pumps prior to cavitation
+Event Malf. No. Event Type* Event
+No. Description
+ATC (R)
+1 N/A BOP (N) Load reduction to 89% at 10% per hour IAW IOP-4
+CRS (N)
+BOP (C)
+2 VC0087C 24 vacuum pump trips
+CRS (C)
+ATC (I)
+3 RC0015D 24 Loop Cold Leg RTD fails high
+CRS (I, TS)
+ATC (C)
+4 RC0002 RCS leak inside containment (20 gpm)
+CRS (C,TS)
+RC0002 -RCS leak worsens to 350 gpm/ Large Break LOCA
+5 ALL (M)
+RC0001A
+ATC (I)
+6 RP0108 -Auto Safety Injection fails to actuate (CT-1)
+CRS (I)
+7 RP318A2 ALL (I) 22 RHR Pump fails to start on SEC signal (CT-2)
+8 RH0026B ALL (C) 22 RHR Pump trips (CT-3)
+ABs IOP-4 → AB.COND-1 → AB.ROD-3 → AB.RC-1
+EOPs TRIP-1 → LOCA-1 → LOCA-5
+* (N)ormal, (R)eactivity, (I)nstrument, (C)omponent, (M)ajor
+
+===== PAGE 14 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Scenario No.: 1
+Target Quantitative Attributes per Scenario (See Section D.5.d) Actual Attributes Event No.
+1. Total malfunctions (5-8) 7 2-8
+2. Malfunctions after EOP entry (1-2) 3 6,7,8
+3. Abnormal events (2-4) 3 2,3,4
+4. Major transients (1-2) 1 5
+5. EOPs entered/requiring substantive actions (1-2) 1 5 (LOCA-1)
+6. Entry into a contingency EOP with substantive actions ( ≥ 1 per
+1 8 (LOCA-5)
+scenario set)
+7. Preidentified critical tasks (≥2) 3 6,7,8
+8. Tech Specs exercised (≥ 2) 2 3,4
+
+===== PAGE 15 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Event Summary (Scenario #1):
+Event #1: The crew will perform a load reduction to 89% at 10% per hour in preparation for
+turbine valve testing. After the crew commences the load reduction, Event #2 will be entered.
+Event #2: 24 vacuum pump will trip. The crew will enter S2.OP-AB.COND-0001, Loss of
+Condenser Vacuum. The crew will start all available vacuum pumps. When 22 vacuum pump
+starts, it will trip. The crew will then start 25 vacuum pump and 25AR25 will not automatically
+open. The PO will manually open 25AR25 and verify backpressure is recovering. After
+condenser backpressure recovers, Event #3 will be entered.
+Event #3: 24 RC cold leg RTD will fail high. Control rods will continuously insert. The RO will
+verify no runback in progress and take rods to manual. The CRS will enter S2.OP-AB.ROD-
+0003, Continuous Rod Motion, and take actions to defeat the channel, place Master Flow
+Control in manual to restore charging flow, and then restore rods to previous position. The CRS
+will evaluate Tech Specs and enter TS 3.3.1.1 action 6 and TS 3.3.2.1 action 19. After the crew
+restores rods to previous position and evaluates Tech Specs, Event #4 will be entered.
+Event #4: A 20 gpm RCS leak inside containment will occur. Alarms for 2R11 radiation
+monitor and lowering PZR level will be evident. The crew will enter S2.OP-AB.RC-0001,
+Reactor Coolant System Leak, and take actions to swap to a centrifugal charging pump and
+attempt to stabilize PZR level by raising charging flow and/or minimize letdown flow. The crew
+will determine RCS leak rate. The CRS will evaluate Tech Specs and enter TS 3.4.7.2.b action
+b.
+Events #5 and #6: The RCS leak will worsen to 350 gpm. The RO will recognize rapidly
+lowering RCS pressure and PZR level. The CRS will take action per S2.OP-AB.RC-0001 to trip
+the reactor. Immediately following the reactor trip a Large Break LOCA will occur, Automatic SI
+will fail and the crew will manually actuate Safety Injection (CT#1).
+Event #7: During EOP-TRIP-1, Reactor Trip or Safety Injection, implementation, the crew will
+recognize that 22 RHR pump failed to start. The crew will block and reset 2B SEC and
+manually start 22 RHR pump (CT#2). The CRS will transition to EOP-LOCA-1, Loss of Reactor
+Coolant.
+Event #8: During EOP-LOCA-1 implementation, 22 RHR will trip resulting in no emergency
+coolant recirculation capability. The CRS will transition to EOP-LOCA-5, Loss of Emergency
+Recirculation, and perform actions to make-up to the RWST, stop Containment Spray pumps
+and reduce ECCS to single train (CT#3). During LOCA-5, the RWST Lo-Lo Level may be
+reached. If this occurs, then the crew will take the action to stop all ECCS Pumps taking suction
+from the RWST (CT#4). The scenario can be terminated when CT#3 or CT#4 evaluation is
+complete.
+
+===== PAGE 16 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Critical Tasks
+CT-1 (CT-2) – Manually actuate at last one train of Safety Injection before transition out of TRIP-
+1,, Reactor Trip or Safety Injection
+SAFETY SIGNIFICANCE -- Failure to manually actuate SI under the postulated conditions
+constitutes misoperation or incorrect crew performance in which the crew does not prevent
+“degraded emergency core cooling system (ECCS)…capacity.”
+In this case, SI can be manually actuated from the control room. Therefore, failure to manually
+actuate SI also represents a failure by the crew to “demonstrate the following abilities:
+ Effectively direct or manipulate engineered safety feature (ESF) controls that would
+prevent (degraded emergency core cooling system (ECCS)…capacity)
+ Recognize a failure or an incorrect automatic actuation of an ESF system or component
+ Take one or more actions that would prevent a challenge to plant safety”
+Additionally, under the postulated plant conditions, failure to manually actuate SI (when it is
+possible to do so) results in a “significant reduction of safety margin beyond that irreparably
+introduced by the scenario.” Finally, failure to manually actuate SI under the postulated
+conditions is a “violation of the facility license condition.”
+In the scenario postulated by the plant conditions, failure to manually actuate SI results in the
+needless continuation of a situation in which there has been no systematic and thorough
+actuation of even one train of SIS-actuated safeguards. (Some safeguards components such
+as AFW and feedwater isolation components may be running because of other actuation
+signals. However, safeguards systems such as ECCS, phase A containment isolation,
+CCW/SW, and containment fan coolers will not be operating in their safeguards mode.)
+Although the completely degraded status is not due to the crew’s action (was not initiated by
+operator error), continuation in the completely degraded status is a result of the crew’s failure to
+manually actuate SI.
+The acceptable results obtained in the FSAR analyses are predicated on the assumption that, at
+the very least, one train of safeguards actuates. If SI is not actuated, the FSAR assumptions
+and results are invalid. Because compliance with the assumptions of the FSAR is part of the
+facility license condition, failure to manually actuate at least one train of SI (under the postulated
+conditions and when it is possible to do so) constitutes a violation of the license condition.
+The following information is quoted from the ERG Executive Volume, Generic Issues section,
+document on Foldout Page Items:
+The SI actuation criteria are only found on the FOLDOUT PAGE for the ES-0.1, ES-0.2, ES-0.3,
+and ES-0.4 guidelines for both the HP and LP plants. Although the criteria are identical to the
+ones found in the SI Reinitiation criteria, the actions are different. The operator is instructed to
+actuate safety injection rather than operate SI pumps as necessary. The criteria selected for SI
+actuation are either loss of RCS subcooling or the inability to maintain pressurizer level with
+charging. Each of these limits indicate that control of the plant is lost and that SI actuation is
+necessary.
+
+===== PAGE 17 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Note the last line of the preceding quote. Clearly, if control of the plant is lost, the preferred
+action is to manually actuate SI, rather than to manually operate individual safeguards
+components.
+Cues:
+ Indication and/or annunciation that SI is required
+– PRZR pressure or SG pressure less than SI actuation setpoint
+– Containment pressure greater than SI actuation setpoint
+– Subcooled margin less than the foldout page criterion for SI actuation in ES-0.1
+– PRZR water level less than the foldout page criterion for SI actuation in ES-0.1
+ No indication or annunciation that SI is actuated
+Measurable Performance Standard:
+Manually actuate at least on train of SI before entry into any of the following: transition to any
+LOCA, SGTR, or LOSC series procedures or FRGs
+ Indication and/or annunciation that at least one train of SI is actuated
+Feedback:
+Indication and/or annunciation that at least one train of SI is actuated
+CT-2 (CT-5) – Manually start at least one low head ECCS pump before transition out of TRIP-1.
+SAFETY SIGNIFICANCE -- Failure to manually start at least one low-head ECCS pump under
+the postulated conditions constitutes misoperation or incorrect crew performance in which the
+crew does not prevent “degraded emergency core cooling system (ECCS) …capacity.”
+In this case, at least one low-head ECCS pump can be manually started from the control room.
+Therefore, failure to manually start a low-head ECCS pump also represents a failure by the
+crew to “demonstrate the following abilities:
+ Effectively direct or manipulate engineered safety feature (ESF) controls that would
+prevent a significant reduction of safety margin (beyond that irreparably introduced by
+the scenario)
+ Recognize a failure or an incorrect automatic actuation of an ESF system or component”
+Additionally, under the postulated plant conditions, failure to manually start a low-head ECCS
+pump (when it is possible to do so) is a “violation of the facility license condition.”
+The acceptable results obtained in the FSAR analysis of a large-break LOCA are predicated on
+the assumption of minimum ECCS pumped injection. The analysis assumes that a minimum
+pumped ECCS flow rate, which varies with RCS pressure, is injected into the core. The flow
+rate values assumed for minimum pumped injection are based on operation of one each of the
+following ECCS pumps: high-head pump, intermediate-head pump, and low-head pump.
+Operation of this minimum required complement of ECCS injection pumps is consistent with the
+FSAR assumption that only minimum safeguards are actuated.
+For both the minimum and maximum cases specified in Comment 1 of this critical task
+worksheet and for all cases in between, failure to perform the critical task means that the plant
+is needlessly left in an unanalyzed condition. Performance of the critical task would return the
+
+===== PAGE 18 =====
+
+Appendix D Scenario Outline Form ES-D-1
+plant to a condition for which analysis shows acceptable results.
+Because compliance with the assumptions of the FSAR is part of the facility license condition,
+failure to perform the critical task (under the postulated plant conditions) constitutes a violation
+of the license condition.
+Cues:
+ Indication and/or annunciation that low-head ECCS pumped injection is required
+– SI actuation
+– RCS pressure below the shutoff head of the low-head ECCS pumps
+AND
+ Indication and/or annunciation that no low-head ECCS pump is injecting into the core
+– Control switch indication that the circuit breakers or contactors for both low-head
+ECCS pumps are open
+– All low-head ECCS pump discharge pressure indicators read zero
+– All flow rate indicators for low-head pumped injection read zero
+Measurable Performance Standard:
+Manually start one low head ECCS pump before transition out of TRIP-1.
+ Control switch indication that the circuit breaker or contactor for at least one low-head
+ECCS pump is closed
+Feedback:
+Indication and/or annunciation that at least one low-head ECCS pump is injecting
+ Flow rate indication of injection from at least one low-head ECCS pump
+CT-3 (CT-29) – Make up to the RWST, minimize RWST outflow, and if RWST Lo-Lo level alarm is
+received stops ECCS pumps prior to cavitation
+SAFETY SIGNIFICANCE -- Under the postulated plant conditions, failure to establish makeup
+flow to the RWST and/or to minimize RWST outflow leads to (or accelerates) depletion of
+RWST inventory to the point at which ECCS pumps taking suction on the RWST must be
+stopped. Loss of pumped injection (coincident with loss of emergency cooling recirculation) will
+lead to a severe or an extreme challenge to the core cooling CSF. Failure to perform the critical
+task causes these challenges to occur needlessly or, at best, prematurely (that is, before they
+would occur if the critical task is performed).
+Thus, failure to perform the critical task under the postulated plant conditions leads to “a
+significant reduction of safety margin beyond that irreparably introduced by the scenario.” It
+also represents a demonstrated inability by the crew to “take one or more actions that would
+prevent a challenge to plant safety.”
+Cues:
+ Indication and/or annunciation that SI is required
+– RCS pressure
+– Containment pressure
+AND
+ Indication and/or annunciation that emergency cooling recirculation is not established
+
+===== PAGE 19 =====
+
+Appendix D Scenario Outline Form ES-D-1
+despite continuing attempts to establish it
+– Indication that both containment sump to RHR suction isolation MOVs remain
+closed despite attempts to open them remotely and locally
+– [Indication of insufficient water level in the containment recirculation sump to allow
+recirculation]11
+AND
+ Indication and/or annunciation that RWST inventory is being depleted
+– RWST level indication decreasing (See Comment 1.)
+AND
+ Procedural cue to make up to the RWST and/or to minimize outflow from the RWST
+Measurable Performance Standard:
+Make up to the RWST, minimize RWST outflow, and if the RWST Lo-Lo alarm is received stop running
+ECCS pumps prior to cavitation:
+ Stopping containment Spray Pumps
+ Initiating RWST makeup
+ Reducing SI to one train
+ If RWST Lo-Lo alarm is received then stops running ECCS pumps prior to cavitation
+Feedback:
+ Flow rate indication of makeup to the RWST
+ Reduced depletion rate of RWST inventory
+
+===== PAGE 20 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Facility: _____Salem______ Scenario No.: ____ESG-3_____ Op-Test No.: __20-01 NRC__
+Examiners: ___________________________ Operators: ____________________________
+__________________________ _____________________________
+__________________________ _____________________________
+Initial Conditions: IC-242: Unit 2 is at 93% power, MOL; 2A EDG is running unloaded for maintenance run. The
+following equipment is out of service: 21 AFW Pump C/T for oil bubbler replacement and 21 Containment Spray
+pump for lube.
+Turnover: The crew is directed to continue power ascension to 98% power at 10% per hour IAW S2.OP-IO.ZZ-
+0004 by use of dilution, control rods and turbine load control.
+Critical Tasks:
+1. Manually actuate main steamline isolation before a Red path to either subcriticality or the integrity CFST
+or transition to LOSC-2
+2. Establish feed flow to one SG before RCS bleed and feed is required
+Event Malf. No. Event Type* Event
+No. Description
+ATC (R)
+1 N/A BOP (N) Power ascension to 98% at 10% per hour IAW IOP-4
+CRS (N)
+BOP (C)
+2 RD0316A 21 CRDM Vent Fan damper fails closed.
+CRS (C)
+ATC (I)
+3 PR0017A PZR Level Controlling Channel fails high.
+CRS (I,TS)
+4 BF0109A ALL (C) 21CN22 Low Pressure FWH Inlet fails closed.
+5 EL0161 CRS (TS) 2A EDG emergency trip.
+RC0006C
+ATC (C)
+6 RC43CX 23 RCP Motor Oil Level low.
+CRS (C)
+RC43CY
+RP0279A
+-Main Turbine fails to trip by all means from the control room. (CT-1)
+RP0279B
+-Main Steam Line Isolation fails to Auto actuate.
+RP0073
+7 ALL (M) (Expect Auto Safety Injection – No SGFPs available and No Steam
+RP0069
+Dumps are available)
+AF0181B
+-23 AFW Pump fails to Auto start
+AF0353C
+-22 AFW Pump trips during EOP-TRIP-1
+8 AF0183 ALL (C) -23 AFW Pump trips during EOP-TRIP-1 (CT-2)
+(Loss of All AFW flow, CFST Heat Sink Red Path)
+ABs AR.ZZ-11 → AB.CVC-1 → AB.CN-1 → AR.ZZ-13
+EOPs TRIP-1 → FRHS-1
+* (N)ormal, (R)eactivity, (I)nstrument, (C)omponent, (M)ajor
+
+===== PAGE 21 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Scenario No.: 3
+Target Quantitative Attributes per Scenario (See Section D.5.d) Actual Attributes Event No.
+1. Total malfunctions (5-8) 7 2-8
+2. Malfunctions after EOP entry (1-2) 1 8
+3. Abnormal events (2-4) 4 2,3,4,6
+4. Major transients (1-2) 1 7
+5. EOPs entered/requiring substantive actions (1-2) 0 ----- (*)
+6. Entry into a contingency EOP with substantive actions ( ≥ 1 per
+1 8 (FRHS-1)
+scenario set)
+7. Preidentified critical tasks (≥2) 2 7,8
+8. Tech Specs exercised (≥ 2) 2 3,5
+(*) NUREG-1021, Appendix D, Section C.2.f, “EOPs Used,” states “Moreover, the primary scram
+response procedure that serves as the entry point for the EOPs is not counted.” An Attribute Value of “0”
+for Table Item 5 was determined to be acceptable by the Chief Examiner on the basis that (a) Scenario
+#3 is a complex scenario that exercises Contingency EOP Procedure FRHS-1 for the Loss of Secondary
+Heat Sink, (b) FRHS-1 requires the use of alternate decision paths and prioritization of actions within the
+EOP to mitigate a CSFST Heat Sink Red Path condition, and (c) FRHS-1 has measurable actions that
+must be taken by the crew.
+
+===== PAGE 22 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Event Summary (Scenario #3):
+Event #1: The crew will continue the power ascension to raise reactor power to 98% at 10%
+per hour. The reactivity plan calls for performing a dilution first, then using control rods to adjust
+RCS temperature before raising turbine load. After the crew commences the power ascension,
+Event #2 will be entered.
+Event #2: 21 CRDM vent fan discharge damper will fail closed. The crew will receive console
+alarm for sequence not complete. The crew will take actions as directed in the Alarm Response
+Procedure to stop 21 CRDM vent fan and start 23 CRDM vent fan. Once the standby fan is
+started, Event #3 can be entered.
+Event #3: The controlling PZR level channel will fail high. The crew will respond per S2.OP-
+AB.CVC-0001, Loss of Charging, and take manual control of charging to raise charging flow.
+The crew will select an operable control channel. The CRS will evaluate Tech Specs and enter
+3.3.1.1 action 6. After Tech Specs has been evaluated, Event #4 will be entered.
+Event #4: 21CN22 low pressure feedwater heater inlet valve will fail closed. The crew will
+respond per S2.OP-AB.CN-0001, Main Feedwater/Condensate System Abnormality, and take
+actions to bypass the condensate polisher and reduce turbine load to less than 1098 MWe per
+Attachment 2 (about a 2-3% downpower is required). After the crew completed the load
+reduction, Event #5 will be entered.
+Event #5: 2A EDG will emergency trip. The crew will receive console alarm for 2A EDG
+tripping. No impact to plant operations. The CRS will evaluate Tech Specs and enter TS
+3.8.1.1 action b. The CRS will direct another NCO to perform the 1 hour line surveillance. After
+the CRS evaluates Tech Specs, Event #6 will be entered.
+Events #6: 23 RCP motor bearing oil level OHA will actuate and the crew will recognize
+elevated motor bearing temperatures in excess of S2.OP-AB.RCP-0001, RCP Abnormality, trip
+criteria of 175 °F, requiring the crew to manually trip the reactor and stop 23 RCP.
+Event #7: During immediate actions of EOP-TRIP-1, Reactor Trip or Safety Injection, the RO
+will recognize that the main turbine failed to Auto trip following the Rx trip (MSLI will fail to
+automatically actuate). All attempts to trip the turbine from the control room will fail. The crew
+will take the action to actuate Fast Closure of the MSIVs (CT#1). Due to the turbine failing to
+trip, a Safety Injection signal is expected which will trip both SGFPs and setup conditions for
+condensate flow recovery in EOP-FRHS-1, Response to Loss of Secondary Heat Sink.
+Following reactor trip, 23 AFW pump will fail to Auto start. The PO will manually start 23 AFW
+pump.
+Events #8: During EOP-TRIP-1, 22 AFW Pump will trip on overcurrent, 23 AFW pump will trip
+on overspeed, and a CFST Heat Sink Red path will exist. The CRS will transition to EOP-
+FRHS-1. The crew will take actions to depressurize one SG using a SG Atmospheric Dump
+valve (MS10) and feed one SG using condensate feed flow. The scenario can be terminated
+when SG Wide Range level is rising or CETs are lowering (CT#2).
+
+===== PAGE 23 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Critical Tasks:
+CT-1 (CT-12) - Manually actuate main steamline isolation before a Red path to either
+subcriticality or the integrity CFST, or transition to LOSC-2, Uncontrolled Depressurization of All
+Steam Generators.
+SAFETY SIGNIFICANCE -- Failure to close the MSIVs under the postulated plant conditions
+causes challenges to CSFs beyond those irreparably introduced by the postulated conditions.
+Additionally, such an omission constitutes a failure by the crew to “demonstrate (the ability to)
+recognize a failure or an incorrect automatic actuation of an ESF system or component,” and to
+“take one or more actions that would prevent a challenge to plant safety.”
+In the typical FSAR, the analysis for a large steamline break assumes steamline isolation within
+a short time frame, on the order of seconds. The analysis typically assumes a steam system
+piping failure in which a single SG blows down completely. That is, the analysis assumes a fault
+that can be isolated from all but one SG.
+However, in the plant conditions postulated for this critical task, the break is located downstream
+of the MSIVs. Thus, closure of all MSIVs would terminate all uncontrolled blowdown. In this
+case, there is no reason for even a single SG to completely depressurize. If the crew allows all
+MSIVs to remain open, then all SGs depressurize uncontrollably and unnecessarily.
+Uncontrolled depressurization of all SGs causes an excessive rate of RCS cooldown, well
+beyond the conditions typically analyzed in the FSAR. The excessive cooldown rate creates
+large thermal stresses in the reactor pressure vessel and causes rapid insertion of a large
+amount of positive reactivity.
+Thus, failure to close the MSIVs under the postulated conditions can result in challenges to the
+following CSFs:
+ Integrity
+ Subcriticality
+Cues:
+ [Indication that main steamline isolation is required]6
+AND
+ Indication that main steamline isolation has not actuated automatically
+– MSIVs indicate open
+– Indication of uncontrolled depressurization of all SGs
+Measurable Performance Standard:
+Manually actuate main steamline isolation before a Red path to either subcriticality or the
+integrity CFST, or transition to LOSC-2, Uncontrolled Depressurization of All Steam Generators.
+ MSIVs undergo fast-closure (see Endnote 1 for an expanded discussion of fast vs. slow
+MSIV closure). This can be accomplished by the Fast Closure pushbuttons on 2CC2 or using
+the Loops 21-24 MSLI on 2CC1 Safeguards bezels.
+ MSIVs indicate closed
+
+===== PAGE 24 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Feedback:
+ Steam flow indication from all SGs decreases to zero
+ All SGs stop depressurizing
+ RCS cooldown stops
+CT-2 (CT-43) - Establish feed flow to one SG before RCS bleed and feed is required
+SAFETY SIGNIFICANCE -- Failure to establish feedwater flow to any SG results in the crew’s
+having to rely upon the lower-priority action of establishing RCS bleed and feed to minimize
+core uncovery. This constitutes incorrect performance that fails to prevent “degradation of any
+barrier to fission product release.”
+The analyses presented in the ERG Background Document for FR-H.1 demonstrate that a
+complete loss of heat sink occurs when the SG inventories deplete (dry out). Unless some form
+of SG inventory is restored, the SG dryout deteriorates primary-to-secondary heat transfer,
+allowing core decay heat to increase the RCS temperature and pressure. The increasing RCS
+pressure automatically forces the pressurizer PORVs to open, which creates a small-break
+LOCA and simultaneously degrades the RCS fission-product barrier. As long as the RCS
+pressure remains high, the flow out the PORVs exceeds the ECCS flow into the RCS, which
+depletes RCS inventory. Eventually the core starts to uncover, degrading the core cooling CSF.
+Once the core is uncovered, fuel temperatures increase rapidly until severe fuel damage occurs,
+unless some form of core cooling is restored. Fuel over-heating constitutes severe degradation
+of a fission-product barrier (fuel matrix/clad).
+Establishing feedwater flow into the SGs offers the most effective recovery action to restore the
+heat sink. The introduction of feedwater flow immediately restores SG inventory and
+re-establishes primary-to-secondary heat transfer, decreasing RCS pressure and cooling the
+core. The RCS pressure decrease then precludes the opening of the PORVs and degradation
+of the RCS barrier.
+Cues:
+ Extreme (RED path) challenge to the heat sink CSF
+AND
+ Indication that RCS pressure remains above the pressure of all SGs
+AND
+ Indication that RCS temperature is above the temperature for placing the RHR system in
+service
+AND
+ Indication and/or annunciation that no AFW flow is available after repeated attempts to
+establish
+AND
+ [Indication that RCS bleed and feed is not required]4
+Measurable Performance Standard:
+Establish feed flow to one SG before RCS bleed and feed is required.
+
+===== PAGE 25 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Feedback:
+ Indication of feedwater flow into at least one SG
+ Indication of increasing water level in at least one SG
+
+===== PAGE 26 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Facility: _____Salem______ Scenario No.: ____ESG-4_____ Op-Test No.: __20-01 NRC__
+Examiners: ___________________________ Operators: ____________________________
+__________________________ _____________________________
+__________________________ _____________________________
+Initial Conditions: IC-243: Unit 2 is at 2% power, BOL; 21 SGFP in service.
+Turnover: The crew is directed to continue power ascension to 10% reactor power IAW S2.OP-IO.ZZ-0003 using
+control rods, steam dumps, and turbine load control.
+Critical Tasks:
+1. Isolate feed and steam flow to ruptured SG before transition to SGTR-3 occurs
+2. Cooldown RCS to target temperature so that transition from SGTR-1 does not occur
+Event Malf. No. Event Type* Event
+No. Description
+ATC (R)
+1 N/A CRS (N) Continue power ascension to 10% IAW IOP-3 and enter MODE 1.
+BOP(N)
+ATC (C)
+2 PR0018B 2PR2 PZR PORV leakage.
+CRS (C,TS)
+BOP (C)
+3 CW0350E High DP across 23A CW Traveling Screen.
+CRS (C)
+ATC (C)
+4 SG0078C 23 SG Tube Leak (35 gpm).
+CRS (C,TS)
+5 SG0078C ALL (M) 23 SG Tube Rupture (650 gpm).(CT-1 & CT-2)
+6 RP318D1 ALL (I) 21 CFCU fails to start in LOW Speed.
+ATC (C)
+7 PR0019B PZR Spray Valve 2PS3 fails to close during depressurization.
+CRS (C)
+ABs IOP-3 → AB.PZR-1 → AR.ZZ-10 → AB.CW-1 → AB.SG-1
+TRIP-1 → SGTR-1 with depressurization and a failed open spray
+EOPs
+valve
+* (N)ormal, (R)eactivity, (I)nstrument, (C)omponent, (M)ajor
+
+===== PAGE 27 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Scenario No.: 4
+Target Quantitative Attributes per Scenario (See Section D.5.d) Actual Attributes Event No.
+1. Total malfunctions (5-8) 6 2-7
+2. Malfunctions after EOP entry (1-2) 2 6,7
+3. Abnormal events (2-4) 3 2,3,4
+4. Major transients (1-2) 1 5
+5. EOPs entered/requiring substantive actions (1-2) 1 5 (SGTR-1)
+6. Entry into a contingency EOP with substantive actions ( ≥ 1 per
+0 NA
+scenario set)
+7. Preidentified critical tasks (≥2) 2 5
+8. Tech Specs exercised (≥ 2) 2 2,4
+
+===== PAGE 28 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Event Summary (Scenario #4):
+Event #1: The crew will raise control rods to raise reactor power to 10%. When reactor power
+is above 5%, the CRS will enter MODE 1. After the crew enters MODE 1, Event #2 will be
+entered.
+Event #2: 2PR2 PZR PORV valve will experience leakage. RCS pressure will lower and spray
+valves will eventually close. Subsequently, OHA E-28, PZR HTR ON PRESS LO, will actuate to
+alert the crew of lowering RCS pressure. The crew will assess plant conditions and determine
+that PZR PORV tailpipe temperature is elevated indicating a leaking PORV. The CRS will enter
+S2.OP-AB.PZR-0001, Pressurizer Pressure Malfunction, and take actions to isolate and identify
+that 2PR2 is leaking and close the associated block valve, 2PR7. The CRS will evaluate Tech
+Specs for a leaking PZR PORV and enter TS 3.4.5 action a. After Tech Specs has been
+evaluated, Event #3 will be entered.
+Event #3: OHA K-1, 21-23 A CW SCRNWSH TRBL, will actuate and indications for high
+differential pressure across 23A CW pump traveling screen. 23A traveling screen will be
+running in fast speed. CW operator will report that heavy grassing on the screens. The DP
+across the traveling screen will continue to rise until exceeding the emergency trip criteria of > 8
+feet. The will crew will emergency trip 23A CW and enter S2.OP-AB.CW-0001, CW System
+Malfunction. After the CW pump is removed from service, Event #4 will be entered.
+Event #4: 23 SG will experience a 25-30 gpm tube leak. The crew will receive various RMS
+alarms (2R53C, 2R15, 2R41D, and 2R19C) and enter S2.OP-AB.SG-0001, SG Tube Leak. The
+crew will transfer to a centrifugal charging pump and determine leak rate. The crew will be able
+to stabilize PZR pressure. The CRS will evaluate Tech Spec and enter TS 3.4.7.2.c action a.
+After the CRS evaluates Tech Spec, Event #5 will be entered.
+Events #5, #6, and #7: The tube leak on 23 SG will worsen to a design basis 650 gpm tube
+rupture and the crew will manually trip the reactor and actuate SI. The crew will enter EOP-
+TRIP-1, Reactor Trip of Safety Injection, and perform the following; (1) isolate feed flow to 23
+SG (CT#1), and (2) recognize that 21 CFCU failed to start in LOW speed. The crew will block
+and reset 2A SEC and manually start 21 CFCU in LOW speed. The CRS will transition to EOP-
+SGTR-1, Steam Generator Tube Rupture, and isolate the steam side of 23 SG (CT#1),
+cooldown to target RCS temperature (CT#2), and then depressurize the RCS to stop the
+primary to secondary leakage. When the crew attempts to stop the depressurization, 2PS3
+spray valve will fail to close requiring the crew to stop 21 and 23 RCPs. The scenario can be
+terminated at this point.
+
+===== PAGE 29 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Critical Tasks:
+CT-1 (CT-18) - Isolate feed and stem flow to ruptured SG before transition to SGTR-3, SGTR
+with LOCA – Subcooled Recovery, occurs
+SAFETY SIGNIFICANCE -- Failure to isolate the ruptured SG causes a loss of differential
+pressure between the ruptured SG and the intact SGs. The fact that the crew allows the
+differential pressure to dissipate and, as a result, are then forced to transition to a contingency
+ERG constitutes an incorrect performance that “necessitates the crew taking compensating
+action that would complicate the event mitigation strategy....”
+The analyses presented in the ERG Background Document for E-3 demonstrate that a SGTR
+violates the RCS fission-product barrier because the SGTR allows radioactive RCS inventory to
+leak into the SG. As a result, the SG inventory, radioactivity, and pressure increase. If the
+primary-to-secondary leakage is not stopped, the SG pressure increases until either the SG
+PORV or the safety valve(s) opens, releasing radioactivity to the environment. If the leakage
+continues, the SG inventory increase leads to water release through the PORV or safety
+valve(s) or to SG overfill, which seriously compromises the SG as a fission-product barrier and
+complicates mitigation. To stop the primary-to-secondary leakage, the crew must intervene to
+mitigate excessive inventory increase in the ruptured SG.
+To mitigate excessive inventory increase, the crew must take the following actions:
+ Identify and isolate the ruptured SG
+ Cool down to establish RCS subcooling margin
+ Depressurize RCS to restore inventory
+ Terminate SI to stop primary-to-secondary leakage
+The RCS depressurization decreases the RCS leakage into the SG, which helps to mitigate the
+excessive increase in SG inventory. The RCS depressurization also helps the ECCS restore
+RCS inventory, which in turn allows SI termination. SI termination eliminates the remaining
+cause of leakage from the RCS into the SG, mitigating the increase in SG inventory.
+However, the RCS depressurization and SI termination cannot occur until the crew establishes
+RCS subcooling margin. To establish subcooling margin, the crew must cool down the RCS to
+a target temperature. But the crew cannot start the RCS cooldown until the ruptured SG is
+completely isolated. (Isolation means that all steam flow from the SG and all feedwater flow into
+the SG must be stopped.)
+Isolating the ruptured SG maintains a differential pressure between the ruptured SG and the
+intact SGs. The differential pressure (250 psi) ensures that minimum RCS subcooling remains
+after RCS depressurization.
+Without steam isolation, the ruptured SG pressure decreases to less than 250 psi above the
+intact SG as the cooldown occurs. When the crew cannot maintain the 250 psi differential, the
+ERGs require a transition to contingency ERG ECA-3.1. This transition unnecessarily delays
+the sequence of actions leading to RCS depressurization and SI termination.
+For the feedwater, isolation must occur after the ruptured SG level exceeds minimum indication,
+
+===== PAGE 30 =====
+
+Appendix D Scenario Outline Form ES-D-1
+delaying isolation until after the SG tubes are covered. The feedwater coverage of the tubes
+places a water barrier between the tubes and the steam in the upper portion of the SG. Failure
+to maintain the water barrier allows the SG steam to contact the tubes. When the tube
+temperature decreases during the subsequent RCS cooldown, the tubes condense the hot
+steam, decreasing the SG pressure. The decreasing SG pressure decreases the differential
+pressure between the ruptured SG and the intact SGs to less than 250 psi. This forces the crew
+to transition to contingency ERG ECA-3.1, which delays RCS depressurization and SI
+termination.
+Any delay in the feedwater isolation allows the ruptured SG level to increase as the feedwater
+adds additional inventory along with the primary-to-secondary leakage. Too long a delay
+prevents the crew from depressurizing the RCS and terminating SI before excessive inventory
+seriously compromises the SG as a fission-product barrier, which complicates mitigation. The
+delay in feedwater isolation cannot be measured in terms of SG water level. But the delay can
+be measured in terms of the crew’s inability to complete the RCS depressurization or SI
+termination before excessive SG inventory accumulates.
+Thus, when the crew fails to isolate steam and feedwater when it is possible to do so (as in the
+postulated conditions), it constitutes the following:
+ An incorrect action that “necessitates the crew to take compensating actions that would
+complicate the event mitigation”
+AND
+ A “significant reduction of safety margin beyond that irreparably introduced by the
+scenario”
+Cues:
+ Indication and/or annunciation of SGTR in one SG
+– Increasing SG water level
+– Radiation
+AND
+ Indication and/or annunciation of reactor trip
+AND
+ Indication and/or annunciation of SI
+Measurable Performance Standard:
+Isolate feed and steam flow to ruptured SG before transition to SGTR-3, SGTR with LOCA –
+Subcooled Recovery, occurs
+ [Main steam isolation valve position lamps indicate closed
+ Main steam isolation bypass valve position lamps indicate closed
+ PORV setpoint adjusted to ERG Footnote O.03
+ Blowdown isolation valve position lamps indicate closed
+ Steam isolation valve to TDAFW pump position lamps indicate closed
+ AFW valve position lamps and/or indicators indicate closed
+ Feedwater isolation valve position lamps indicate closed]2
+
+===== PAGE 31 =====
+
+Appendix D Scenario Outline Form ES-D-1
+Feedback:
+ Indication of stable or increasing pressure in the ruptured SG
+ Indication of decreasing or zero feedwater flow rate in the ruptured SG
+CT2 (CT-19) - Cooldown RCS to target temperature so that transition from SGTR-1 does not
+occur
+SAFETY SIGNIFICANCE -- Failure to establish and maintain the correct RCS temperature
+during a SGTR leads to a transition from E-3 to a contingency ERG. This failure constitutes an
+incorrect performance that “necessitates the crew taking compensating action that would
+complicate the event mitigation strategy....”
+The analyses presented in the ERG Background Document for E-3 demonstrate that a SGTR
+violates the RCS fission-product barrier because the SGTR allows radioactive RCS inventory to
+leak into the SG. As a result, the SG inventory, radioactivity, and pressure increase. If the
+primary-to-secondary leakage is not stopped, the SG pressure increases until either the SG
+PORV or the safety valve(s) open, releasing radioactivity to the environment. If the leakage
+continues, the SG inventory increase leads to water release through the PORV or safety
+valve(s) or to SG overfill, which seriously compromises the SG as a fission-product barrier and
+complicates mitigation. To stop the primary-to-secondary leakage, the crew must intervene to
+mitigate excessive inventory increase in the ruptured SG.
+To mitigate excessive inventory increase, the crew must take the following actions:
+ Identify and isolate the ruptured SG
+ Cool down to establish RCS subcooling margin
+ Depressurize RCS to restore inventory
+ Terminate SI to stop primary-to-secondary leakage
+The RCS depressurization decreases the RCS leakage into the SG, which helps to mitigate the
+excessive increase in SG inventory. The RCS depressurization also helps the ECCS restore
+RCS inventory, which in turn allows SI termination. SI termination eliminates the remaining
+cause of leakage from the RCS into the SG, mitigating the increase in SG inventory.
+However, the RCS depressurization and SI termination cannot occur until the crew establishes
+RCS subcooling margin. To establish subcooling margin, the crew must cool down the RCS to
+a target temperature. Terminating the RCS cooldown before reaching the target temperature
+prevents achieving the minimum RCS subcooling. Failure to achieve the required RCS
+subcooling results in a condition that forces the crew to transition to contingency ERG ECA-3.1,
+thereby delaying the RCS depressurization and SI termination. Such a delay allows the
+excessive inventory increase of the ruptured SG to continue until the SG overpressure
+components release water or until SG overfill occurs.
+In addition to achieving the minimum target temperature, the crew must maintain that
+temperature to avoid a similar delay.
+Terminating the cooldown too late challenges either the subcriticality CSF or the integrity CSF.
+Because the crew is directed to cool down at the maximum rate, late termination of cooldown
+
+===== PAGE 32 =====
+
+Appendix D Scenario Outline Form ES-D-1
+could force the RCS temperature low enough to challenge the integrity CSF. The crew must
+then transition to one of the integrity FRGs. The transition also delays RCS depressurization
+and SI termination.
+For plants without the BIT (BAT for LP plants) or with reduced BIT (BAT) boron concentration,
+late termination of cooldown could force the RCS temperature low enough to challenge the
+subcriticality CSF. Also, the crew’s transition delays RCS depressurization and SI termination.
+In addition to avoiding challenges to the CSFs during the cooldown, the crew must maintain the
+RCS temperature high enough to avoid similar challenges.
+Thus, when the crew fails to establish and maintain the correct RCS temperature when it is
+possible to do so (as in the postulated conditions) without transition from E-3, it constitutes the
+following:
+ An incorrect action that “necessitates the crew to take compensating actions that would
+complicates the event mitigation”
+AND
+ A “significant reduction of safety margin beyond that irreparably introduced by the
+scenario
+Cues:
+ Indication and/or annunciation of SGTR in one SG
+– Increasing SG water level
+– Radiation
+AND
+ Indication and/or annunciation of reactor trip
+AND
+ Indication and/or annunciation of SI
+AND
+ Indication of ruptured SG pressure [greater than minimum required pressure]4
+Measurable Performance Standard:
+Cooldown RCS to target temperature so that transition from SGTR-1 does not occur
+ Steam dump valve position lamps and/or indicators indicate closed
+ SG PORV valve position lamps and/or indicators indicate closed
+Feedback:
+ Indication of steam flow rate greater than zero
+ Indication of RCS temperature decreasing
+OR
+ Indication of RCS temperature less than target temperature
+
+===== PAGE 33 =====
+
+ES-401 PWR Examination Outline Form ES-401-2
+Facility: Salem Nuclear Power Plant Date of Exam: February 14 - 24, 2022
+RO K/A Category Points SRO-Only Points
+Tier Group K1 K2 K3 K4 K5 K6 A1 A2 A3 A4 G* Total A2 G* Total
+1. 1 2 3 3 4 4 2 18 3 3 6
+Emergency and
+Abnormal Plant 2 1 2 2 N/A 2 1 N/A 1 9 2 2 4
+Evolutions
+Tier Totals 3 5 5 6 5 3 27 5 5 10
+1 3 2 4 4 2 2 2 3 2 2 2 28 2 3 5
+2.
+Plant 2 1 0 1 2 1 0 1 1 0 2 1 10 0 1 2 3
+Systems
+Tier Totals 4 2 5 6 3 2 3 4 2 4 3 38 3 5 8
+3. Generic Knowledge and Abilities 1 2 3 4 1 2 3 4
+Categories 10 7
+3 2 2 3 2 2 1 2
+Note: 1. Ensure that at least two topics from every applicable K/A category are sampled within each tier of the RO and
+SRO-only outline sections (i.e., except for one category in Tier 3 of the SRO-only section, the “Tier Totals” in
+each K/A category shall not be less than two). (One Tier 3 radiation control K/A is allowed if it is replaced by
+a K/A from another Tier 3 category.)
+2. The point total for each group and tier in the proposed outline must match that specified in the table. The
+final point total for each group and tier may deviate by ±1 from that specified in the table based on NRC
+revisions. The final RO exam must total 75 points, and the SRO-only exam must total 25 points.
+3. Systems/evolutions within each group are identified on the outline. Systems or evolutions that do not apply
+at the facility should be deleted with justification. Operationally important, site-specific systems/evolutions
+that are not included on the outline should be added. Refer to Section D.1.b of ES-401 for guidance
+regarding the elimination of inappropriate K/A statements.
+4. Select topics from as many systems and evolutions as possible. Sample every system or evolution in the
+group before selecting a second topic for any system or evolution.
+5. Absent a plant-specific priority, only those K/As having an importance rating (IR) of 2.5 or higher shall be
+selected. Use the RO and SRO ratings for the RO and SRO-only portions, respectively.
+6. Select SRO topics for Tiers 1 and 2 from the shaded systems and K/A categories.
+7. The generic (G) K/As in Tiers 1 and 2 shall be selected from Section 2 of the K/A catalog, but the topics must
+be relevant to the applicable evolution or system. Refer to Section D.1.b of ES-401 for the applicable K/As.
+8. On the following pages, enter the K/A numbers, a brief description of each topic, the topics’ IRs for the
+applicable license level, and the point totals (#) for each system and category. Enter the group and tier totals
+for each category in the table above. If fuel-handling equipment is sampled in a category other than
+Category A2 or G* on the SRO-only exam, enter it on the left side of Column A2 for Tier 2, Group 2. (Note 1
+does not apply). Use duplicate pages for RO and SRO-only exams.
+9. For Tier 3, select topics from Section 2 of the K/A catalog and enter the K/A numbers, descriptions, IRs, and
+point totals (#) on Form ES-401-3. Limit SRO selections to K/As that are linked to 10 CFR 55.43.
+G* Generic K/As
+* These systems/evolutions must be included as part of the sample (as applicable to the facility) when Revision 3
+of the K/A catalog is used to develop the sample plan. They are not required to be included when using earlier
+revisions of the K/A catalog.
+** These systems/evolutions may be eliminated from the sample (as applicable to the facility) when Revision 3 of
+the K/A catalog is used to develop the sample plan.
+
+===== PAGE 34 =====
+
+ES-401 2 Form ES-401-2
+ES-401 PWR Examination Outline Form ES-401-2
+Emergency and Abnormal Plant Evolutions—Tier 1/Group 1 (RO)
+E/APE # / Name / Safety Function K1 K2 K3 A1 A2 G* K/A Topic(s) IR #
+EK2.02 - Knowledge of the interrelations between a
+000007 (EPE 7; BW E02&E10; CE E02) 02 reactor trip and the following: Breakers, relays and 2.6 1
+Reactor Trip, Stabilization, Recovery / 1 disconnects.
+(CFR: 41.7 / 45.7)
+AK2.02 - Knowledge of the interrelations between
+000008 (APE 8) Pressurizer Vapor Space 02 the Pressurizer Vapor Space Accident and the 2.7 2
+Accident / 3 following: Sensors and detectors.
+(CFR 41.7 / 45.7)
+EA1.08 - Ability to operate and monitor the following
+000009 (EPE 9) Small Break LOCA / 3 08 as they apply to a small break LOCA: Containment 4.0 3
+isolation system.
+(CFR: 41.7 / 45.5 / 45.6)
+EK1.01 - Knowledge of the operational implications
+000011 (EPE 11) Large Break LOCA / 3 01 of the following concepts as they apply to the Large 4.1 4
+Break LOCA: Natural circulation and cooling,
+including reflux boiling.
+(CFR: 41.8 / 41.10 / 45.3)
+AK2.08 - Knowledge of the interrelations between
+000015 (APE 15) Reactor Coolant Pump 08 the Reactor Coolant Pump Malfunctions (Loss of 2.6 5
+Malfunctions / 4 RC Flow) and the following: CCWS
+(CFR 41.7 / 45.7)
+AA1.04 - Ability to operate and/or monitor the
+000022 (APE 22) Loss of Reactor Coolant 04 following as they apply to the Loss of Reactor 3.3 6
+Makeup / 2 Coolant Makeup: Speed demand controller and
+running indicators (positive displacement pump).
+(CFR 41.7 / 45.5 / 45.6)
+AK3.02 - Knowledge of the reasons for the following
+000025 (APE 25) Loss of Residual Heat 02 responses as they apply to the Loss of Residual 3.3 7
+Removal System / 4 Heat Removal System: Isolation of RHR low-
+pressure piping prior to pressure increase above
+specified level.
+(CFR 41.5,41.10 / 45.6 / 45.13)
+AA2.04 - Ability to determine and interpret the
+000026 (APE 26) Loss of Component 04 following as they apply to the Loss of Component 2.5 8
+Cooling Water / 8 Cooling Water: The normal values and upper limits
+for the temperatures of the components cooled by
+CCW.
+(CFR: 43.5 / 45.13)
+AK3.03 – Knowledge of the reasons for the
+000027 (APE 27) Pressurizer Pressure 03 following responses as they apply to the Pressurizer 3.7 9
+Control System Malfunction / 3 Pressure Control Malfunctions: Actions contained in
+AOP for PZR PCS malfunction.
+(CFR: 41.5 / 41.10 / 45.6 / 45.13)
+G2.4.6 - Knowledge of EOP mitigation strategies.
+000029 (EPE 29) Anticipated Transient 04. (CFR: 41.10 / 45.3 / 45.13) 3.7 10
+Without Scram / 1 06
+EA1.33 - Ability to operate and monitor the following
+000038 (EPE 38) Steam Generator Tube 33 as they apply to a SGTR: Use of S/G for natural 4.4 11
+Rupture / 3
+circulation cooldown.
+(CFR: 41.7 / 45.5 / 45.6)
+AK3.01 - Knowledge of the reasons for the following
+000040 (APE 40; BW E05; CE E05; W E12) 01 responses as they apply to the Steam Line Rupture: 4.2 12
+Steam Line Rupture—Excessive Heat Operation of steam line isolation valves.
+Transfer / 4 (CFR 41.5,41.10 / 45.6 / 45.13)
+AK1.01 - Knowledge of the operational implications
+000054 (APE 54; CE E06) Loss of Main 01 of the following concepts as they apply to Loss of 4.1 13
+Feedwater /4 Main Feedwater (MFW): MFW line break
+depressurizes the S/G (similar to a steam line
+break).
+(CFR 41.8 / 41.10 / 45.3)
+000055 (EPE 55) Station Blackout / 6
+
+===== PAGE 35 =====
+
+ES-401 3 Form ES-401-2
+AA2.03 - Ability to determine and interpret the
+000056 (APE 56) Loss of Offsite Power / 6 03 following as they apply to the Loss of Offsite Power: 3.8 14
+Operational status of safety injection pump.
+(CFR 43.5 / 45.13)
+000057 (APE 57) Loss of Vital AC
+Instrument Bus / 6
+AA2.01 - Ability to determine and interpret the
+000058 (APE 58) Loss of DC Power / 6 01 following as they apply to the Loss of DC Power: 3.7 15
+That a loss of dc power has occurred; verification
+that substitute power sources have come on line.
+(CFR: 43.5 / 45.13)
+AA2.02 - Ability to determine and interpret the
+000062 (APE 62) Loss of Nuclear Service 02 following as they apply to the Loss of Nuclear 2.9 16
+Water / 4 Service Water: The cause of possible SWS loss.
+(CFR: 43.5 / 45.13)
+000065 (APE 65) Loss of Instrument Air / 8
+G2.1.27 – Knowledge of system purpose and/or
+000077 (APE 77) Generator Voltage and 01. function. 3.9 17
+Electric Grid Disturbances / 6 27 (CFR: 41.7)
+W E04: EA1.1 - Ability to operate and/or monitor the
+(W E04) LOCA Outside Containment / 3 01 following as they apply to the (LOCA Outside 4.0 18
+Containment): Components, and functions of
+control and safety systems, including
+instrumentation, signals, interlocks, failure modes,
+and automatic and manual features.
+(CFR: 41.7 / 45.5 / 45.6)
+(W E11) Loss of Emergency Coolant
+Recirculation / 4
+(BW E04; W E05) Inadequate Heat
+Transfer—Loss of Secondary Heat Sink / 4
+K/A Category Totals: 2 3 3 4 4 2 Group Point Total: 18
+
+===== PAGE 36 =====
+
+ES-401 4 Form ES-401-2
+ES-401 PWR Examination Outline Form ES-401-2
+Emergency and Abnormal Plant Evolutions—Tier 1/Group 2 (RO)
+E/APE # / Name / Safety Function K1 K2 K3 A1 A2 G* K/A Topic(s) IR #
+000001 (APE 1) Continuous Rod Withdrawal / 1
+000003 (APE 3) Dropped Control Rod / 1 AA2.03 - Ability to determine and
+03 interpret the following as they 3.6 19
+apply to the Dropped Control
+Rod: Dropped rod, using in-core /
+ex-core instrumentation, in-core
+or loop temperature
+measurements.
+(CFR: 43.5 / 45.13)
+000005 (APE 5) Inoperable/Stuck Control Rod / 1 AK2.02 - Knowledge of the
+02 interrelations between the 2.5 20
+Inoperable / Stuck Control Rod
+and the following: Breakers,
+relays, disconnects, and control
+room switches.
+(CFR 41.7 / 45.7)
+000024 (APE 24) Emergency Boration / 1
+000028 (APE 28) Pressurizer (PZR) Level Control AK1.01 - Knowledge of the
+Malfunction / 2 01 operational implications of the 2.8 21
+following concepts as they apply
+to Pressurizer Level Control
+Malfunctions and the following:
+PZR reference leak abnormalities.
+(CFR 41.8 / 41.10 / 45.3)
+000032 (APE 32) Loss of Source Range Nuclear
+Instrumentation / 7
+000033 (APE 33) Loss of Intermediate Range Nuclear
+Instrumentation / 7
+000036 (APE 36; BW/A08) Fuel-Handling Incidents / 8 G2.4.46 - Ability to verify that the
+04. alarms are consistent with the 4.2 22
+46 plant conditions.
+(CFR: 41.10 / 43.5 / 45.3 / 45.12)
+000037 (APE 37) Steam Generator Tube Leak / 3
+000051 (APE 51) Loss of Condenser Vacuum / 4
+000059 (APE 59) Accidental Liquid Radwaste Release / 9
+000060 (APE 60) Accidental Gaseous Radwaste Release / 9 AK2.02 - Knowledge of the
+02 interrelations between the 2.7 23
+Accidental Gaseous Radwaste
+Release and the following:
+Auxiliary building ventilation
+system.
+(CFR 41.7 / 45.7)
+000061 (APE 61) Area Radiation Monitoring System Alarms
+/ 7
+000067 (APE 67) Plant Fire On Site / 8
+000068 (APE 68; BW A06) Control Room Evacuation / 8
+000069 (APE 69; W E14) Loss of Containment Integrity / 5
+000074 (EPE 74; W E06 & E07) Inadequate Core Cooling / EA1.06 - Ability to operate and
+4 06 monitor the following as they 3.6 24
+apply to a Inadequate Core
+Cooling: RCPs.
+(CFR: 41.7 / 45.5 / 45.6)
+000076 (APE 76) High Reactor Coolant Activity / 9
+000078 (APE 78*) RCS Leak / 3
+
+===== PAGE 37 =====
+
+ES-401 5 Form ES-401-2
+(W E01 & E02) Rediagnosis & SI Termination / 3 W E01: EK3.2 - Knowledge of the
+02 reasons for the following 3.0 25
+responses as they apply to the
+(Reactor Trip or Safety
+Injection/Rediagnosis): Normal,
+abnormal, and emergency
+operating procedures
+associated with (Reactor Trip
+or Safety
+Injection/Rediagnosis).
+(CFR: 41.5 / 41.10 / 45.6 / 45.13)
+(W E13) Steam Generator Overpressure / 4 W E13: EK3.2 - Knowledge of the
+02 reasons for the following 2.9 26
+responses as they apply to the
+(Steam Generator Overpressure):
+Normal, abnormal and emergency
+operating procedures associated
+with (Steam Generator
+Overpressure).
+(CFR: 41.5 / 41.10 / 45.6 / 45.13)
+(W E15) Containment Flooding / 5
+(W E16) High Containment Radiation /9
+(BW A01) Plant Runback / 1
+(BW A02 & A03) Loss of NNI-X/Y/7
+(BW A04) Turbine Trip / 4
+(BW A05) Emergency Diesel Actuation / 6
+(BW A07) Flooding / 8
+(BW E03) Inadequate Subcooling Margin / 4
+(BW E08; W E03) LOCA Cooldown—Depressurization / 4 W E03: EA1.1 - Ability to operate
+01 and/or monitor the following as 4.0 27
+they apply to the (LOCA
+Cooldown and Depressurization):
+Components, and functions of
+control and safety systems,
+including instrumentation, signals,
+interlocks, failure modes, and
+automatic and manual features.
+(CFR: 41.7 / 45.5 / 45.6)
+(BW E09; CE A13**; W E09 & E10) Natural Circulation/4
+(BW E13 & E14) EOP Rules and Enclosures
+(CE A11**; W E08) RCS Overcooling—Pressurized Thermal
+Shock / 4
+(CE A16) Excess RCS Leakage / 2
+(CE E09) Functional Recovery
+(CE E13*) Loss of Forced Circulation/LOOP/Blackout / 4
+K/A Category Point Totals: 1 2 2 2 1 1 Group Point Total: 9
+
+===== PAGE 38 =====
+
+ES-401 6 Form ES-401-2
+ES-401 PWR Examination Outline Form ES-401-2
+Plant Systems—Tier 2/Group 1 (RO)
+System # / Name K1 K2 K3 K4 K5 K6 A1 A2 A3 A4 G* K/A Topic(s) IR #
+K4.07 - Knowledge of RCPS design
+003 (SF4P RCP) Reactor Coolant 07 feature(s) and/or interlock(s) which provide 3.2 28
+Pump for the following: Minimizing RCS leakage
+(mechanical seals).
+(CFR: 41.7)
+G2.1.32 - Ability to explain and apply
+004 (SF1; SF2 CVCS) Chemical and 01. system limits and precautions. 3.8 29
+Volume Control 32 (CFR: 41.10 / 43.2 / 45.12)
+K4.11 - Knowledge of CVCS design
+11 3.1 30
+feature(s) and/or interlock(s) which provide
+for the following: Temperature/pressure
+control in letdown line: prevent boiling, lifting
+reliefs, hydraulic shock, piping damage, and
+burst.
+(CFR: 41.7)
+K3.01 - Knowledge of the effect that a loss
+005 (SF4P RHR) Residual Heat 01 or malfunction of the RHRS will have on the 3.9 31
+Removal following: RCS.
+(CFR: 41.7 / 45.6)
+05 K5.05 - Knowledge of the operational 2.7 32
+implications of the following concepts as
+they apply to the RHRS: Plant response
+during “solid plant” pressure change
+due to the relative incompressibility of
+water.
+(CFR: 41.5 / 45.7)
+K5.06 - Knowledge of the operational
+006 (SF2; SF3 ECCS) Emergency 06 implications of the following concepts as 3.5 33
+Core Cooling they apply to ECCS: Relationship between
+ECCS flow and RCS pressure.
+(CFR: 41.5 / 45.7)
+A2.03 - Ability to (a) predict the impacts of
+007 (SF5 PRTS) Pressurizer 03 the following malfunctions or operations on 3.6 34
+Relief/Quench Tank the PRTS; and (b) based on those
+predictions, use procedures to correct,
+control, or mitigate the consequences of
+those malfunctions or operations:
+Overpressurization of the PZR.
+(CFR: 41.5 /43.5/ 45.3/45.13)
+A2.02 - Ability to (a) predict the impacts of
+008 (SF8 CCW) Component Cooling 02 the following malfunctions or operations on 3.2 35
+Water the CCWS, and (b) based on those
+predictions, use procedures to correct,
+control, or mitigate the consequences of
+those malfunctions or operations: High/low
+surge tank level.
+(CFR: 41.5 /43.5/ 45.3/45.13)
+04 K1.04 - Knowledge of the physical 3.3 36
+connections and/or cause-effect
+relationships between the CCWS and the
+following systems: RCS, in order to
+determine source(s) of RCS leakage into
+the CCWS.
+(CFR: 41.2 to 41.9 / 45.7 to 45.8)
+A1.07 - Ability to predict and/or monitor
+010 (SF3 PZR PCS) Pressurizer 07 changes in parameters (to prevent 3.7 37
+Pressure Control exceeding design limits) associated with
+operating the PZR PCS controls including:
+RCS pressure.
+(CFR: 41.5 / 45.5)
+
+===== PAGE 39 =====
+
+ES-401 7 Form ES-401-2
+K3.02 - Knowledge of the effect that a loss
+012 (SF7 RPS) Reactor Protection 02 or malfunction of the RPS will have on the 3.2 38
+following: T/G.
+(CFR: 41.7 / 45.6)
+K6.01 - Knowledge of the effect of a loss or
+013 (SF2 ESFAS) Engineered Safety 01 malfunction on the following will have on the 2.7 39
+Features Actuation ESFAS: Sensors and detectors.
+(CFR: 41.7 / 45.5 to 45.8)
+07 K4.07 - Knowledge of ESFAS design 3.7 40
+feature(s) and/or interlock(s) which provide
+for the following: Power supply loss.
+(CFR: 41.7)
+A4.04 - Ability to manually operate and/or
+022 (SF5 CCS) Containment Cooling 04 monitor in the control room: Valves in the 3.1 41
+CCS.
+(CFR: 41.7 / 45.5 to 45.8)
+025 (SF5 ICE) Ice Condenser
+K2.01 - Knowledge of bus supplies to the
+026 (SF5 CSS) Containment Spray 01 following: Containment spray pumps. 3.4 42
+(CFR: 41.7)
+A4.07 - Ability to manually operate and/or
+039 (SF4S MSS) Main and Reheat 07 monitor in the control room: Steam dump 2.8 43
+Steam valves.
+(CFR: 41.7 / 45.5 to 45.8)
+K4.19 – Knowledge of MFW design
+059 (SF4S MFW) Main Feedwater 19 feature(s) and/or interlock(s) which provide 3.2 44
+for the following: Automatic feedwater
+isolation of MFW.
+(CFR: 41.7)
+A3.02 - Ability to monitor automatic
+operation of the MFW, including:
+02 Programmed levels of the S/G. 2.9 45
+(CFR: 41.7 / 45.5)
+K6.01 - Knowledge of the effect of a loss or
+061 (SF4S AFW) Auxiliary/Emergency 01 malfunction of the following will have on the 2.5 46
+Feedwater AFW components: Controllers and
+positioners.
+(CFR: 41.7 / 45.7)
+K3.02 - Knowledge of the effect that a loss
+062 (SF6 ED AC) AC Electrical 02 or malfunction of the ac distribution system 4.1 47
+Distribution will have on the following: ED/G.
+(CFR: 41.7 / 45.6)
+K3.02 - Knowledge of the effect that a loss
+063 (SF6 ED DC) DC Electrical 02 or malfunction of the DC electrical system 3.5 48
+Distribution will have on the following: Components
+using DC control power.
+(CFR: 41.7 / 45.6)
+01. G2.1.30 – Ability to locate and operate 4.4 49
+30 components, including local controls.
+(CFR: 41.7 / 45.7)
+A1.08 - Ability to predict and/or monitor
+064 (SF6 EDG) Emergency Diesel 08 changes in parameters (to prevent 3.1 50
+Generator exceeding design limits) associated with
+operating the ED/G system controls
+including: Maintaining minimum load on
+ED/G (to prevent reverse power).
+(CFR: 41.5 / 45.5)
+A2.02 - Ability to (a) predict the impacts of
+073 (SF7 PRM) Process Radiation 02 the following malfunctions or operations on 2.7 51
+Monitoring the PRM system; and (b) based on those
+predictions, use procedures to correct,
+control, or mitigate the consequences of
+those malfunctions or operations: Detector
+failure.
+(CFR: 41.5 /43.5/ 45.3/45.13)
+
+===== PAGE 40 =====
+
+ES-401 8 Form ES-401-2
+K1.16 – Knowledge of the physical
+076 (SF4S SW) Service Water 16 connections and/or cause-effect 3.6 52
+relationships between the SWS and the
+following systems: ESF
+(CFR: 41.2 to 41.9 / 45.7 to 45.8)
+K2.01 - Knowledge of bus power supplies to
+078 (SF8 IAS) Instrument Air 01 the following: Instrument air compressor. 2.7 53
+(CFR: 41.7)
+A3.01 - Ability to monitor automatic
+103 (SF5 CNT) Containment 01 operation of the containment system, 3.9 54
+including: Containment isolation.
+(CFR: 41.7 / 45.5)
+01 K1.01 - Knowledge of the physical 3.6 55
+connections and/or cause-effect
+relationships between the containment
+system and the following systems: CCS.
+(CFR: 41.2 to 41.9 / 45.7 to 45.8)
+053 (SF1; SF4P ICS*) Integrated
+Control
+K/A Category Point Totals: 3 2 4 4 2 2 2 3 2 2 2 Group Point Total: 28
+
+===== PAGE 41 =====
+
+ES-401 9 Form ES-401-2
+ES-401 PWR Examination Outline Form ES-401-2
+Plant Systems—Tier 2/Group 2 (RO)
+System # / Name K1 K2 K3 K4 K5 K6 A1 A2 A3 A4 G* K/A Topic(s) IR #
+001 (SF1 CRDS) Control Rod Drive K5.04 - Knowledge of the following operational
+04 implications as they apply to the CRDS: Rod 4.3 56
+insertion limits.
+(CFR: 41.5 / 45.7)
+002 (SF2; SF4P RCS) Reactor
+Coolant
+011 (SF2 PZR LCS) Pressurizer
+Level Control
+014 (SF1 RPI) Rod Position
+Indication
+015 (SF7 NI) Nuclear K4.07 – Knowledge of NIS design feature(s)
+Instrumentation 07 and/or interlock(s) which provide for the 3.7 57
+following: Permissives.
+(CFR: 41.7)
+016 (SF7 NNI) Nonnuclear K3.12 - Knowledge of the effect that a loss or
+Instrumentation 12 malfunction of the NNIS will have on the 3.4 58
+following: S/G.
+(CFR: 41.7 / 45.6)
+017 (SF7 ITM) In-Core Temperature
+Monitor
+027 (SF5 CIRS) Containment Iodine A4.03 - Ability to manually operate and/or
+Removal 03 monitor in the control room: CIRS fans. 3.3 59
+(CFR: 41.7 / 45.5 to 45.8)
+028 (SF5 HRPS) Hydrogen A4.01 - Ability to manually operate and/or
+Recombiner and Purge Control 01 monitor in the control room: HRPS controls. 4.0 60
+(CFR: 41.7 / 45.5 to 45.8)
+029 (SF8 CPS) Containment Purge
+033 (SF8 SFPCS) Spent Fuel Pool K1.05 - Knowledge of the physical connections
+Cooling 05 and/or cause-effect relationships between the 2.7 61
+Spent Fuel Pool Cooling System and the
+following systems: RWST.
+(CFR: 41.2 to 41.9 / 45.7 to 45.8)
+034 (SF8 FHS) Fuel-Handling K4.02 – Knowledge of design feature(s) and/or
+Equipment 02 interlock(s) which provide for the following: 2.5 62
+Fuel movement.
+(CFR: 41.7)
+035 (SF4P SG) Steam Generator
+041 (SF4S SDS) Steam A1.01 - Ability to predict and/or monitor
+Dump/Turbine Bypass Control 01 changes in parameters (to prevent exceeding 2.9 63
+design limits) associated with operating the
+SDS controls including: T-ave., verification
+above low/low setpoint.
+(CFR: 41.5 / 45.5)
+045 (SF4S MTG) Main Turbine G2.1.23 - Ability to perform specific system
+Generator 01. and integrated plant procedures during all 4.3 64
+23 modes of plant operation.
+(CFR: 41.10 / 43.5 / 45.2 / 45.6)
+055 (SF4S CARS) Condenser Air
+Removal
+056 (SF4S CDS) Condensate A2.04 - Ability to (a) predict the impacts of the
+04 following malfunctions or operations on the 2.6 65
+Condensate System; and (b) based on those
+predictions, use procedures to correct, control,
+or mitigate the consequences of those
+malfunctions or operations: Loss of
+condensate pumps.
+(CFR: 41.5 /43.5/ 45.3/45.13)
+068 (SF9 LRS) Liquid Radwaste
+
+===== PAGE 42 =====
+
+ES-401 10 Form ES-401-2
+071 (SF9 WGS) Waste Gas
+Disposal
+072 (SF7 ARM) Area Radiation
+Monitoring
+075 (SF8 CW) Circulating Water
+079 (SF8 SAS**) Station Air
+086 (SF8 FPS) Fire Protection
+050 (SF9 CRV*) Control Room
+Ventilation
+K/A Category Point Totals: 1 0 1 2 1 0 1 1 0 2 1 Group Point Total: 10
+
+===== PAGE 43 =====
+
+ES-401 11 Form ES-401-2
+ES-401 PWR Examination Outline Form ES-401-2
+Emergency and Abnormal Plant Evolutions—Tier 1/Group 1 (SRO)
+E/APE # / Name / Safety Function K1 K2 K3 A1 A2 G* K/A Topic(s) IR #
+000007 (EPE 7; BW E02&E10; CE E02)
+Reactor Trip, Stabilization, Recovery / 1
+000008 (APE 8) Pressurizer Vapor Space
+Accident / 3
+000009 (EPE 9) Small Break LOCA / 3
+000011 (EPE 11) Large Break LOCA / 3
+000015 (APE 15) Reactor Coolant Pump
+Malfunctions / 4
+000022 (APE 22) Loss of Reactor Coolant
+Makeup / 2
+000025 (APE 25) Loss of Residual Heat
+Removal System / 4
+000026 (APE 26) Loss of Component
+Cooling Water / 8
+000027 (APE 27) Pressurizer Pressure
+Control System Malfunction / 3
+G2.4.18 - Knowledge of the specific bases for
+000029 (EPE 29) Anticipated Transient 04. EOPs. 4.0 76
+Without Scram / 1 18 (CFR: 41.10 / 43.1 / 45.13)
+000038 (EPE 38) Steam Generator Tube
+Rupture / 3
+000040 (APE 40; BW E05; CE E05; W E12)
+Steam Line Rupture—Excessive Heat
+Transfer / 4
+000054 (APE 54; CE E06) Loss of Main
+Feedwater /4
+EA2.04 - Ability to determine and interpret the
+000055 (EPE 55) Station Blackout / 6 04 following as they apply to a Station Blackout: 4.1 77
+Instruments and controls operable with only dc
+battery power available.
+(CFR: 43.5 / 45.13)
+000056 (APE 56) Loss of Offsite Power / 6
+G2.2.25 – knowledge of the bases in Technical
+000057 (APE 57) Loss of Vital AC 02. Specifications for limiting conditions for operations 4.2 78
+Instrument Bus / 6 25 and safety limits
+(CFR: 41.5 / 41.7 / 43.2)
+000058 (APE 58) Loss of DC Power / 6
+000062 (APE 62) Loss of Nuclear Service
+Water / 4
+G2.4.31 – Knowledge of annunciator alarms,
+000065 (APE 65) Loss of Instrument Air / 8 04. indications, or response procedures. 4.1 79
+31 (CFR: 41.10 / 45.3)
+000077 (APE 77) Generator Voltage and
+Electric Grid Disturbances / 6
+(W E04) LOCA Outside Containment / 3
+W E11: EA2.1 - Ability to determine and interpret
+(W E11) Loss of Emergency Coolant 01 the following as they apply to the (Loss of 4.2 80
+Recirculation / 4 Emergency Coolant Recirculation): Facility
+conditions and selection of appropriate procedures
+during abnormal and emergency operations.
+(CFR: 43.5 / 45.13)
+
+===== PAGE 44 =====
+
+ES-401 12 Form ES-401-2
+W E05: EA2.2 - Ability to determine and interpret
+(BW E04; W E05) Inadequate Heat 02 the following as they apply to the (Loss of 3.7 81
+Transfer—Loss of Secondary Heat Sink / 4 Secondary Heat Sink): Adherence to appropriate
+procedures and operation within the limitations in
+the facility’s license and amendments.
+(CFR: 43.5 / 45.13)
+K/A Category Totals: 0 0 0 0 3 3 Group Point Total: 6
+
+===== PAGE 45 =====
+
+ES-401 13 Form ES-401-2
+ES-401 PWR Examination Outline Form ES-401-2
+Emergency and Abnormal Plant Evolutions—Tier 1/Group 2 (SRO)
+E/APE # / Name / Safety Function K1 K2 K3 A1 A2 G* K/A Topic(s) IR #
+000001 (APE 1) Continuous Rod Withdrawal / 1
+000003 (APE 3) Dropped Control Rod / 1
+000005 (APE 5) Inoperable/Stuck Control Rod / 1
+000024 (APE 24) Emergency Boration / 1
+000028 (APE 28) Pressurizer (PZR) Level Control
+Malfunction / 2
+000032 (APE 32) Loss of Source Range Nuclear
+Instrumentation / 7
+000033 (APE 33) Loss of Intermediate Range Nuclear AA2.08 - Ability to determine and
+08 3.4 82
+Instrumentation / 7 interpret the following as they
+apply to the Loss of Intermediate
+Range Nuclear Instrumentation:
+Intermediate range channel
+operability.
+(CFR: 43.5 / 45.13)
+000036 (APE 36; BW/A08) Fuel-Handling Incidents / 8
+000037 (APE 37) Steam Generator Tube Leak / 3
+000051 (APE 51) Loss of Condenser Vacuum / 4
+000059 (APE 59) Accidental Liquid Radwaste Release / 9
+000060 (APE 60) Accidental Gaseous Radwaste Release / 9
+000061 (APE 61) Area Radiation Monitoring System Alarms
+/ 7
+000067 (APE 67) Plant Fire On Site / 8
+000068 (APE 68; BW A06) Control Room Evacuation / 8
+000069 (APE 69; W E14) Loss of Containment Integrity / 5
+000074 (EPE 74; W E06 & E07) Inadequate Core Cooling /
+4
+000076 (APE 76) High Reactor Coolant Activity / 9
+000078 (APE 78*) RCS Leak / 3
+(W E01 & E02) Rediagnosis & SI Termination / 3
+(W E13) Steam Generator Overpressure / 4
+(W E15) Containment Flooding / 5
+(W E16) High Containment Radiation /9 W E16: G2.4.41 - Knowledge of
+04. the emergency action level 4.6 83
+41 thresholds and classifications.
+(CFR: 41.10 / 43.5 / 45.11)
+(BW A01) Plant Runback / 1
+(BW A02 & A03) Loss of NNI-X/Y/7
+(BW A04) Turbine Trip / 4
+(BW A05) Emergency Diesel Actuation / 6
+(BW A07) Flooding / 8
+(BW E03) Inadequate Subcooling Margin / 4
+
+===== PAGE 46 =====
+
+ES-401 14 Form ES-401-2
+(BW E08; W E03) LOCA Cooldown—Depressurization / 4
+(BW E09; CE A13**; W E09 & E10) Natural Circulation/4 W E10: EA2.2 - Ability to
+02 determine and interpret the 3.9 84
+following as they apply to the
+(Natural Circulation with Steam
+Void in Vessel with/without
+RVLIS): Adherence to appropriate
+procedures and operation within
+the limitations in the facility’s
+license and amendments.
+(CFR: 43.5 / 45.13)
+(BW E13 & E14) EOP Rules and Enclosures
+(CE A11**; W E08) RCS Overcooling—Pressurized Thermal W E08: G2.4.21 - Knowledge of
+Shock / 4 04. the parameters and logic used to 4.6 85
+21 assess the status of safety
+functions, such as reactivity
+control, core cooling and heat
+removal, reactor coolant system
+integrity, containment conditions,
+radioactivity release control, etc.
+(CFR: 41.7 / 43.5 / 45.12)
+(CE A16) Excess RCS Leakage / 2
+(CE E09) Functional Recovery
+(CE E13*) Loss of Forced Circulation/LOOP/Blackout / 4
+K/A Category Point Totals:
+0 0 0 0 2 2 Group Point Total: 4
+
+===== PAGE 47 =====
+
+ES-401 15 Form ES-401-2
+ES-401 PWR Examination Outline Form ES-401-2
+Plant Systems—Tier 2/Group 1 (SRO)
+System # / Name K1 K2 K3 K4 K5 K6 A1 A2 A3 A4 G* K/A Topic(s) IR #
+A2.02 - Ability to (a) predict the impacts of
+003 (SF4P RCP) Reactor Coolant 02 the following malfunctions or operations on 3.9 86
+Pump the RCPS; and (b) based on those
+predictions, use procedures to correct,
+control, or mitigate the consequences of
+those malfunctions or operations: Conditions
+which exist for an abnormal shutdown of an
+RCP in comparison to a normal shutdown of
+an RCP.
+(CFR: 41.5 /43.5/ 45.3/45.13)
+004 (SF1; SF2 CVCS) Chemical and
+Volume Control
+005 (SF4P RHR) Residual Heat
+Removal
+006 (SF2; SF3 ECCS) Emergency
+Core Cooling
+007 (SF5 PRTS) Pressurizer
+Relief/Quench Tank
+008 (SF8 CCW) Component Cooling
+Water
+010 (SF3 PZR PCS) Pressurizer
+Pressure Control
+G2.4.30 - Knowledge of events related to
+012 (SF7 RPS) Reactor Protection 04. system operation/status that must be 4.1 87
+30 reported to internal organizations or external
+agencies, such as the State, the NRC, or the
+transmission system operator.
+(CFR: 41.10 / 43.5 / 45.11)
+013 (SF2 ESFAS) Engineered
+Safety Features Actuation
+022 (SF5 CCS) Containment Cooling
+025 (SF5 ICE) Ice Condenser
+026 (SF5 CSS) Containment Spray
+039 (SF4S MSS) Main and Reheat
+Steam
+059 (SF4S MFW) Main Feedwater
+061 (SF4S AFW)
+Auxiliary/Emergency Feedwater
+062 (SF6 ED AC) AC Electrical
+Distribution
+063 (SF6 ED DC) DC Electrical
+Distribution
+G2.2.36 - Ability to analyze the effect of
+064 (SF6 EDG) Emergency Diesel 02. maintenance activities, such as degraded 4.2 89
+Generator 36 power sources, on the status of limiting
+conditions for operations.
+(CFR: 41.10 / 43.2 / 45.13)
+073 (SF7 PRM) Process Radiation
+Monitoring
+
+===== PAGE 48 =====
+
+ES-401 16 Form ES-401-2
+A2.01 - Ability to (a) predict the impacts of
+076 (SF4S SW) Service Water 01 the following malfunctions or operations on 3.7 90
+the SWS; and (b) based on those predictions,
+use procedures to correct, control, or mitigate
+the consequences of those malfunctions or
+operations: Loss of SWS.
+(CFR: 41.5 /43.5/ 45.3/45.13)
+G2.2.44 – Ability to interpret control room
+078 (SF8 IAS) Instrument Air 02. indications to verify the status and operation 4.4 88
+44 of a system, and understand how operator
+actions and directives affect plant and system
+conditions.
+(CFR: 41.5 / 43.5 / 45.12)
+103 (SF5 CNT) Containment
+053 (SF1; SF4P ICS*) Integrated
+Control
+K/A Category Point Totals: 0 0 0 0 0 0 0 2 0 0 3 Group Point Total: 5
+
+===== PAGE 49 =====
+
+ES-401 17 Form ES-401-2
+ES-401 PWR Examination Outline Form ES-401-2
+Plant Systems—Tier 2/Group 2 (SRO)
+System # / Name K1 K2 K3 K4 K5 K6 A1 A2 A3 A4 G* K/A Topic(s) IR #
+001 (SF1 CRDS) Control Rod Drive
+002 (SF2; SF4P RCS) Reactor G2.2.40 – Ability to apply Technical
+Coolant 02. Specifications for a system. 4.7 91
+40 (CFR: 41.10 / 43.2 / 43.5 / 45.3)
+011 (SF2 PZR LCS) Pressurizer
+Level Control
+014 (SF1 RPI) Rod Position A2.04 - Ability to (a) predict the impacts of the
+Indication 04 following malfunctions or operations on the 3.9 92
+RPIS; and (b) based on those predictions, use
+procedures to correct, control, or mitigate the
+consequences of those malfunctions or
+operations: Misaligned rod.
+(CFR: 41.5 /43.5/ 45.3/45.13)
+015 (SF7 NI) Nuclear
+Instrumentation
+016 (SF7 NNI) Nonnuclear
+Instrumentation
+017 (SF7 ITM) In-Core Temperature
+Monitor
+027 (SF5 CIRS) Containment Iodine
+Removal
+028 (SF5 HRPS) Hydrogen
+Recombiner and Purge Control
+029 (SF8 CPS) Containment Purge
+033 (SF8 SFPCS) Spent Fuel Pool
+Cooling
+034 (SF8 FHS) Fuel-Handling
+Equipment
+035 (SF4P SG) Steam Generator
+041 (SF4S SDS) Steam
+Dump/Turbine Bypass Control
+045 (SF4S MTG) Main Turbine
+Generator
+055 (SF4S CARS) Condenser Air
+Removal
+056 (SF4S CDS) Condensate
+068 (SF9 LRS) Liquid Radwaste
+071 (SF9 WGS) Waste Gas
+Disposal
+072 (SF7 ARM) Area Radiation
+Monitoring
+075 (SF8 CW) Circulating Water
+079 (SF8 SAS**) Station Air
+086 (SF8 FPS) Fire Protection G2.2.38 - Knowledge of conditions and
+02. limitations in the facility license. 4.5 93
+38 (CFR: 41.7 / 41.10 / 43.1 / 45.13)
+050 (SF9 CRV*) Control Room
+Ventilation
+K/A Category Point Totals: 0 0 0 0 0 0 0 1 0 0 2 Group Point Total: 3
+
+===== PAGE 50 =====
+
+ES-401 Generic Knowledge and Abilities Outline (Tier 3) Form ES-401-3
+Facility: Salem Nuclear Power Plant Date of Exam: February 14 – 24, 2022
+Category K/A # Topic RO SRO-only
+IR # IR #
+G2.1.1 - Knowledge of conduct of operations
+3.8 66
+2.1.1 requirements.
+(CFR: 41.10 / 45.13)
+G2.1.3 - Knowledge of shift or short-term relief turnover
+3.7 67
+2.1.3 practices.
+(CFR: 41.10 / 45.13)
+G2.1.26 - Knowledge of industrial safety procedures
+3.4 68
+(such as rotating equipment, electrical, high
+2.1.26 temperature, high pressure, caustic, chlorine, oxygen
+1.Conduct of and hydrogen).
+Operations (CFR: 41.10 / 45.12)
+G2.1.35 - Knowledge of fuel-handling responsibilities of
+3.9 94
+2.1.35 SROs.
+(CFR: 41.10 / 43.7)
+G2.1.37 - Knowledge of procedures, guidelines, or
+4.6 95
+2.1.37 limitations associated with reactivity management.
+(CFR: 41.1 / 43.6 / 45.6)
+Subtotal 3 2
+G2.2.6 – Knowledge of the process for making changes
+3.0 69
+2.2.6 to procedures.
+(CFR: 41.10 / 43.5 / 45.13)
+G2.2.13 - Knowledge of tagging and clearance
+4.1 70
+2.2.13 procedures.
+(CFR: 41.10 / 45.13)
+G2.2.11 - Knowledge of the process for controlling
+3.3 96
+2.Equipment 2.2.11 temporary design changes.
+(CFR: 41.10 / 43.3 / 45.13)
+Control
+G2.2.17 – Knowledge of the process for managing
+3.8 97
+maintenance activities during power operations, such as
+2.2.17 risk assessments, work prioritization, and coordination
+with the transmission system operator.
+(CFR: 41.10 / 43.5 / 45.13)
+Subtotal 2 2
+G2.3.4 - Knowledge of radiation exposure limits under
+3.2 71
+2.3.4 normal or emergency conditions.
+(CFR: 41.12 / 43.4 / 45.10)
+G2.3.12 - Knowledge of radiological safety principles
+3.2 72
+pertaining to licensed operator duties, such as
+containment entry requirements, fuel handling
+3.Radiation 2.3.12 responsibilities, access to locked high-radiation areas,
+Control aligning filters, etc.
+(CFR: 41.12 / 45.9 / 45.10)
+G2.3.5 - Ability to approve release permits.
+2.3.6 (CFR: 41.13 / 43.4 / 45.10) 3.8 98
+Subtotal 2 1
+G2.4.17 – Knowledge of EOP terms and definitions.
+2.4.17 3.9 73
+(CFR: 41.10 / 45.13)
+4.Emergency
+G2.4.39 - Knowledge of RO responsibilities in
+Procedures/Plan 3.9 74
+2.4.39 emergency plan implementation.
+(CFR: 41.10 / 45.11)
+
+===== PAGE 51 =====
+
+ES-401 Generic Knowledge and Abilities Outline (Tier 3) Form ES-401-3
+G2.4.43 - Knowledge of emergency communications
+2.4.43 3.2 75
+systems and techniques.
+(CFR: 41.10 / 45.13)
+G2.4.26 - Knowledge of facility protection requirements,
+2.4.26 3.6 99
+including fire brigade and portable fire fighting
+equipment usage.
+(CFR: 41.10 / 43.5 / 45.12)
+G2.4.38 – Ability to take actions called for in the facility
+2.4.38 4.4 100
+emergency plan, including supporting or acting as
+emergency coordinator if required.
+(CFR: 41.10 / 43.5 / 45.11)
+Subtotal 3 2
+Tier 3 Point Total 10 7

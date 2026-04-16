@@ -1,0 +1,4219 @@
+===== PAGE 1 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+1 Points: 1.00
+Given:
+• Unit 2 is in MODE 5
+• ALL RCPs are stopped
+• The crew is preparing to start 23 RCP in accordance with S2.0P-SO.RC-0001 (REACTOR
+COOLANT PUMP OPERATION)
+Considering ONLY the following plant conditions below:
+1. Pressurizer level is less than 92%
+2. ALL Steam Generator secondary side temperatures are less than 50°F above any RCS
+Cold Leg temperature
+Which ONE of the following completes the statement below?
+With one or more RCS Cold Leg temperatures less than or equal to 312°F, _(1)_ conditions
+shall be met before starting 23 RCP.
+Starting 23 RCP when the start criteria are NOT met will result in _(2)_.
+A. (1) BOTH
+(2) degradation of the RCP motor due to a larger motor starting current
+B. (1) BOTH
+(2) an RCS pressure transient caused by energy addition from the secondary system
+C. (1) at least one of the
+(2) degradation of the RCP motor due to a larger motor starting current
+D. (1) at least one of the
+(2) an RCS pressure transient caused by energy addition from the secondary system
+Answer: D
+Page 1 of 226
+
+===== PAGE 2 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that both
+conditions must be met to start the 23 RCP. For Part 2, protecting the RCP motor is a
+valid concern and there are design features of the RCPs and starting duty requirements
+which protect the RCP motor. Consequently, the candidate could incorrectly conclude
+that starting 23 RCP when the start criteria are NOT met will result in degradation of the
+RCP motor due to a larger motor starting current.
+B. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that both
+conditions must be met to start the 23 RCP. Part 2 is correct.
+C. Incorrect but plausible. Part 1 is correct. For Part 2, protecting the RCP motor is a valid
+concern and there are design features of the RCPs and starting duty requirements which
+protect the RCP motor. Consequently, the candidate could incorrectly conclude that
+starting 23 RCP when the start criteria are NOT met will result in degradation of the RCP
+motor due to a larger motor starting current.
+D. Correct. IAW S2.0P-SO.RC-0001 (REACTOR COOLANT PUMP OPERATION)
+Limitations, with one or more RCS Cold Leg temperatures less than or equal to 312°F, at
+least one of conditions shall be met before starting 23 RCP. Starting 23 RCP when the
+start criteria are NOT met will result in an RCS pressure transient caused by energy
+addition from the secondary system.
+Question Number: 1
+Tier: 2 Group 1
+KIA: 003 Reactor Coolant Pump System (RCPS)-K6.14
+Knowledge of the effect of a loss or malfunction on the following will have on the RCPS:
+Starting requirements
+Importance Rating: 2.6
+10 CFR Part 55: 41.7 / 45.5
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must know RCP starting
+criteria and the effect on the RCP / RCS when attempting to start the
+RCP when starting criteria is NOT met.
+Page 2 of 226
+
+===== PAGE 3 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical S2.0P-SO.RC-0001
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05RCPUMP-13 (REACTOR COOLANT PUMP)
+13 Discuss the procedural requirements associated with the Reactor
+Coolant Pump, including an explanation of major precaution and
+limitations in the Reactor Coolant Pump procedures
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 3 of 226
+
+===== PAGE 4 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+2 Points: 1.00
+Given:
+• Unit 1 is at 100% Reactor Power and stable
+• The crew is performing S1 .OP-AB.RC-0002 (High Activity In Reactor Coolant System)
+• 11 Charging Pump is in service
+• 1CV4 (75 GPM ORIFICE) is in service
+• Chemistry has just reported that the confirmatory sample has confirmed increasing activity
+in the RCS but below LCO 3.4.9 (Specific Activity) limits
+In accordance with S1 .OP-AB.RC-0002, which ONE of the following completes the statements
+below?
+The crew_(1)_ required to place the 13 Charging Pump in service and then secure the 11
+Charging Pump.
+In addition to 1C V4, the crew will also place _(2)_ in service.
+(1) (2)
+A. is 1CV3 (45 GPM ORIFICE)
+B. is 1C V5 (75 GPM ORIFICE)
+C. is NOT 1 CV3 (45 GPM ORIFICE)
+D. is NOT 1C V5 (75 GPM ORIFICE)
+Answer: C
+Page 4 of 226
+
+===== PAGE 5 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that the 13
+Charging pump must be placed in service when performing S1 .OP-AB.RC-0002. Part 2
+is correct.
+B. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that the 13
+Charging pump must be placed in service when performing S1 .OP-AB.RC-0002. For
+Part 2, the candidate could know that letdown will be maximized in S1 .OP-AB.RC-0002
+Step 3.16 but incorrectly conclude that BOTH 75 gpm orifices will be placed in service.
+C. Correct. For Part 1 and IAW S1 .OP-AB.RC-0002 Step 3.14, the crew is required to have
+a Centrifugal Charging Pump (CCP) in service. Consequently, the crew is NOT required
+to place the 13 Charging Pump (PDP) in service then secure the 11 Charging Pump. For
+Part 2 and IAW S1.0P-AB.RC-0002 Step 3.16, the crew is required to maximize letdown
+flow. Consequently, in addition to 1C V4, the crew is required to also place 1C V3 (45
+GPM ORIFICE) in service.
+D. Incorrect but plausible. For Part 2, the candidate could know that letdown will be
+maximized in S1 .OP-AB.RC-0002 Step 3.16 but incorrectly conclude that BOTH 75 gpm
+orifices will be placed in service.
+Question Number: 2
+Tier: 2 Group 1
+KIA: 004 Chemical and Volume Control System-A2.09
+Ability to (a) predict the impacts of the following malfunctions or operations on the
+CVCS; and (b) based on those predictions, use procedures to correct, control, or
+mitigate the consequences of those malfunctions or operations: High primary and/or
+secondary activity
+Importance Rating: 3.0
+10 CFR Part 55: 41.5/ 43/5 / 45/3 / 45/5
+10 CFR 55.43.b NIA
+KIA Match: KIA is matched because the candidate must how the CVC system will
+be reconfigured during high primary activity (IAW S1 .OP-AB.RC-0002
+(High Activity In Reactor Coolant System)).
+Page 5 of 226
+
+===== PAGE 6 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical S1 .OP-AB.RC-0002 (High Activity In Reactor Coolant System)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05ABRC02-05 (HIGH ACTIVITY IN REACTOR COOLANT
+SYSTEM)
+3 Describe, in general terms, the actions taken in S2.0P-AB.RC-
+0002 and the bases for the actions in accordance with the
+Technical Bases Document.
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New
+--
+Modified Bank X
+Bank
+Question History: Modified from ILOT 1601 NRC RO Q69
+Comments:
+Page 6 of 226
+
+===== PAGE 7 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+3 Points: 1.00
+Given:
+• Unit 1 is 90% Reactor Power and stable
+• The Rod Bank Selector Switch is in AUTOMATIC
+At Time 07:00
+• An AUTOMATIC RCS Makeup starts
+At Time 07:01
+• 125 VDC power to 1CV179 (PRIMARY WATER FLOW) has been lost
+• The Primary Water Flow Deviation Alarm actuates
+At Time 07:02
+• 1CV185 (MAKEUP FLOWPATH) fails to AUTOMATICALLY close
+Which ONE of the following completes the statements below?
+The Primary Water Flow Deviation Alarm actuates when primary water flow is greater than a
+MINIMUM of ±_(1 )_ gpm above the setpoint.
+Control Rods are expected to step _(2)_ as the makeup continues with 1CV179 in its failed
+position.
+(1) (2)
+A. 5.0 out
+B. 5.0 in
+C. 0.8 out
+D. 0.8 in
+Answer: A
+Page 7 of 226
+
+===== PAGE 8 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANALYSIS:
+A. Correct. For Part 1 and IAW S2.0P-AR-ZZ-0012, the Primary Water Flow Deviation
+Alarm actuates when primary water flow is greater than a MINIMUM of± 5.0 gpm above
+the setpoint. For Part 2, 1CV179 fails closed. Consequently, actual boron flow out of the
+boric acid blender will higher than the predetermined setpoint for the auto makeup (based
+on current RCS Boron concentration). This will cause actual RCS boron concentration to
+rise since the boron concentration of auto makeup flow is higher than the setpoint for the
+existing RCS Boron concentration. An increase in actual RCS Boron concentration will
+insert negative reactivity which will cause Tavg to lower. As Tavg lowers, control rods will
+step out to restore Tavg to program temperature.
+B. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could incorrectly
+conclude that 1CV179 fails open. With 12CV179 fully open during an automatic RCS
+makeup, actual RCS Boron Concentration will lower. Lowering actual RCS
+Concentration will add positive reactivity which will cause the Tavg to rise. As Tavg rises,
+control rods will step in to restore Tavg to program temperature.
+C. Incorrect but plausible. For Part 1, the Boric Acid Flow Deviation actuates when boric
+acid flow is greater than a MINIMUM of± 0.8 gpm above the setpoint. Consequently, the
+candidate could incorrectly conclude that the Primary Water Flow Deviation Alarm
+actuates when primary water flow is greater than a MINIMUM of± 0.8 gpm above the
+setpoint. Part 2 is correct.
+D. Incorrect but plausible. For Part 1, the Boric Acid Flow Deviation actuates when boric
+acid flow is greater than a MINIMUM of± 0.8 gpm above the setpoint. Consequently, the
+candidate could incorrectly conclude that the Primary Water Flow Deviation Alarm
+actuates when primary water flow is greater than a MINIMUM of± 0.8 gpm above the
+setpoint. For Part 2, the candidate could incorrectly conclude that 1CV179 fails open.
+With 1CV179 fully open during an automatic RCS makeup, actual RCS Boron
+Concentration will lower. Lowering actual RCS Concentration will add positive reactivity
+which will cause the Tavg to rise. As Tavg rises, control rods will step in to restore Tavg
+to program temperature.
+Question Number: 3
+Tier: 2 Group 1
+Page 8 of 226
+
+===== PAGE 9 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA: 004 Chemical and Volume Control System-K3.01
+Knowledge of the effect that a loss or malfunction of the eves will have on the
+following: CRDS (automatic)
+Importance Rating: 2.5
+10CFRPart55: 41. 7/45.6
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must determine how control
+rods will automatically respond following a malfunction of eves
+which causes a boration of the RCS.
+SRO Justification: N/A
+Technical Drawing 224443
+References: S2.0P-AR-ZZ-0012
+Proposed references None
+to be provided:
+Learning Objective: NOS05CVCS00-17 (Chemical and Volume Control System)
+11 Given a Chemical and Volume Control System failure, predict the
+effect of the Chemical and Volume Control System failure on the
+following:
+• Reactor Coolant System
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+--
+Modified Bank X
+Bank
+Question History: Modified from ILOT 1601 NRC RO Q31
+Comments:
+Page 9 of 226
+
+===== PAGE 10 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+4 Points: 1.00
+Given:
+• Unit 2 is in MODE 5 with solid plant pressure control
+• BOTH Trains of RHR are in service providing RCS cooling
+• 2CV8 (RHR Purification Flow Control Valve) is throttled open
+• RCS pressure is being controlled at 300 psig with 2CV18 (Low Pressure Letdown Control
+Valve) in MANUAL
+At time 19:00
+• The NCO manually adjusts the following RHR valves:
+o 22RH18 (RHR HX Outlet Valve) is throttled MORE CLOSED
+o 2RH20 (RHR HX Bypass Valve) is throttled MORE OPEN
+o 21/22SJ49 flow remains constant
+Which ONE of the following completes the statements below?
+As RCS temperature responds to the RHR system adjustments, RCS pressure will INITIALLY
+_(1)_.
+The NCO will then manually throttle 2CV18 MORE _(2)_ to restore RCS pressure to 300
+psig.
+(1) (2)
+A. rise CLOSED
+B. rise OPEN
+C. lower CLOSED
+D. lower OPEN
+Answer: B
+Page 10 of 226
+
+===== PAGE 11 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. Par 1 is correct. For Part 2, the candidate could have a
+misunderstanding how solid plant pressure control works and incorrectly conclude that
+throttle 2CV-18 more closed will restore RCS pressure to 300 psig.
+B. Correct. For Part 1 and since flow through 22 RHR HX is lowered (when 22RH18 is
+throttled more closed), RCS temperature will rise. With the plant water solid, this will
+cause RCS pressure to initially rise (since water is incompressible). For Part 2, solid plant
+pressure control is maintained by holding charging flow constant and adjusting let down
+flow. To lower RCS pressure during solid plant operations, letdown flow must be raised
+(with a constant charging flow). Consequently, the operator must throttle 2CV-18 more
+open to restore RCS pressure to 300 psig.
+C. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that RCS
+temperature will initially lower (which will also cause RCS pressure to lower) based on
+the adjustment to the RHR System. Part 2 would be correct if RCS pressure had actually
+lowered.
+D. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that RCS
+temperature will initially lower (which will also cause RCS pressure to lower) based on
+the adjustment to the RHR System. For Part 2, the candidate could have a
+misunderstanding how solid plant pressure control works and incorrectly conclude that
+throttle 2CV-18 more open will restore RCS pressure to 300 psig (when RCS pressure
+was too low).
+Question Number: 4
+Tier: 2 Group 1
+KIA: 005 Residual Heat Removal System (RHRS)-K5.05
+Knowledge of the operational implications of the following concepts as they apply the
+RHRS: Plant response during "solid plant": pressure change due to the relative
+incompressibility of water
+Importance Rating: 2.7
+10 CFR Part 55: 41.5 / 45.7
+10 CFR 55.43.b N/A
+Page 11 of 226
+
+===== PAGE 12 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA Match: KIA is matched because the candidate must know how RCS
+Pressure will respond during solid plant operations when RHR flow
+through 22 RHR HX is lowered.
+SRO Justification: N/A
+Technical NOS05RHR000-16 ( RESIDUAL HEAT REMOVAL SYSTEM)
+References: NOS05CVCS00-17 ( CHEMICAL AND VOLUME CONTROL
+SYSTEM)
+Proposed references None
+to be provided:
+Learning Objective: NOS05CVCS00-17 (Chemical and Volume Control System)
+11 Describe the function and how their normal and abnormal
+operations affects the Chemical and Volume Control System
+• RHR Flow Control Valve, CV8
+• Low Pressure Letdown Control Valve, CV18.
+Cognitive Level:
+Higher X
+Lower
+---
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 12 of 226
+
+===== PAGE 13 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+5 Points: 1.00
+Given:
+• Unit 2 is at 100% Reactor Power
+• 21 and 22 CCW Pumps are in service
+At time 12:00
+• A Reactor Trip and Safety Injection have occurred coincident with a LOOP
+Which ONE of the following completes the statements below?
+At 12:01, the SECs are operating in _(1)_.
+After the SECs have completed their loading, 21 and 22 CCW Pumps will be _(2)_.
+(1) (2)
+A. Mode II running
+B. Mode II stopped
+C. Mode Ill running
+D. Mode Ill stopped
+Answer: D
+Page 13 of 226
+
+===== PAGE 14 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Incorrect but plausible. For Part 1, the SECs have 4 modes of operation. SEC Mode 2
+operation is only for a Station Blackout. Given there is a Station Blackout as part of the
+questions stem, the candidate could incorrectly conclude that the SECs are operating in
+Mode 3. For Part 2, CCW cools several ECCS components (RHR Pumps, RHR HX and
+SI Pumps). Consequently, the candidate could incorrectly conclude that with a SI and
+LOOP in progress, the SECs will automatically restart the CCW Pumps.
+B. Incorrect but plausible. For Part 1, the SECs have 4 modes of operation. SEC Mode 2
+operation is only for a Station Blackout. Given there is a Station Blackout as part of the
+questions stem, the candidate could incorrectly conclude that the SECs are operating in
+Mode 3. Part 2 is correct.
+C. Incorrect but plausible. Part 1 is correct. For Part 2, CCW cools several ECCS
+components (RHR Pumps, RHR HX and SI Pumps). Consequently, the candidate could
+incorrectly conclude that with a SI and LOOP in progress, the SECs will automatically
+restart the CCW Pumps.
+D. Correct. For Part 1, the SECs will be operating in Mode 3 (SI + Blackout) following a
+Reactor Trip and Safety Injection coincident with a LOOP. For Part 2, the CCW Pumps
+will not automatically start as part of SEC Mode 3 loading.
+Question Number: 5
+Tier: 2 Group 1
+KIA: 006 Emergency Core Cooling System (ECCS)-K1 .11
+Knowledge of the physical connections and/or cause-effect relationships between the
+ECCS and the following systems: CCWS
+Importance Rating: 2.8
+10 CFR Part 55: 41.5 / 45.7
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know the cause-effect
+relationship between ECCS and CCWS. Specifically, even though
+CCWS cools several ECCS components, CCW Pumps will not be
+automatically started after a Safety injection coincident with a Station
+Blackout (a plant transient that will start all of the ECCS pumps).
+Page 14 of 226
+
+===== PAGE 15 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical NOS05RHR000-16 ( RESIDUAL HEAT REMOVAL SYSTEM)
+References: NOS05CVCS00-17 ( CHEMICAL AND VOLUME CONTROL
+SYSTEM)
+Proposed references None
+to be provided:
+Learning Objective: NOS05ECCS00-09 (EMERGENCY CORE COOLING SYSTEM)
+15 Given plant conditions, relate the Emergency Core Cooling
+System with the following:
+i.. Component Cooling Water System
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 15 of 226
+
+===== PAGE 16 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+6 Points: 1.00
+Given:
+• Unit 2 is at 100% Power
+• PRT Temperature and Level are slowly rising
+At time 15:00
+• The Crew initiates performance of S2.0P-SO.PZR-0003 (PRESSURIZER RELIEF TANK
+OPERATION) Section 5.3, "Reducing PRT Temperature by Feed and Bleed"
+Which ONE of the following completes the statements below concerning cooling of the PRT?
+Leakage from the Reactor _(1 )_ is causing PRT temperature to rise.
+When performing S2.0P-SO.PZR-0003 Section 5.3, the liquid in the PRT will be pumped to the
+_(2)_.
+(1) (2)
+A. Head Vents RCDT
+eves
+B. Head Vents HUT
+C. Flange Leakoff RCDT
+eves
+D. Flange Leakoff HUT
+Answer: B
+Page 16 of 226
+
+===== PAGE 17 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. Part 1 is correct. For Part 2, the drain of the PRT is physically
+connected to the RCDT. However, a check valve is situated in between the PRT drain
+and the RCDT. Consequently, the candidate could incorrectly recall the piping and pump
+layout between the PRT and RCDT and incorrectly conclude that during performance of
+S2.0P-SO.PZR-0003 Section 5.3, the liquid in the PRT will be pumped to the RCDT.
+B. Correct. For Part 1, the Reactor head vents drain to the PRT and will cause PRT
+temperature to rise (with the Reactor is at power). For Part 2, during the performance of
+eves
+S2.0P-SO.PZR-0003 Section 5.3, the liquid in the PRT will be pumped to the HUT
+using a RCDT Pump.
+C. Incorrect but plausible. For Part 1, Reactor Flange Leakoff is directed to the RCDT. The
+candidate could incorrectly conclude that Reactor Flange Leakoff actually drains to the
+PRT which would cause PRT temperature to rise. For Part 2, the drain of the PRT is
+physically connected to the RCDT. However, a check valve is situated in between the
+PRT drain and the RCDT. Consequently, the candidate could incorrectly recall the piping
+and pump layout between the PRT and RCDT and incorrectly conclude that during
+performance of S2.0P-SO.PZR-0003 Section 5.3, the liquid in the PRT will be pumped to
+the RCDT
+D. Incorrect but plausible. For Part 1, Reactor Flange Leakoff is directed to the RCDT. The
+candidate could incorrectly conclude that Reactor Flange Leakoff actually drains to the
+PRT which would cause PRT temperature to rise. Part 2 is correct.
+Question Number: 6
+Tier: 2 Group 1
+KIA: 007 Pressurizer Relief Tank/Quench Tank System (PRTS)-A 1.03
+Ability to predict and/or monitor changes in parameters (to prevent exceeding design
+limits) associated with operating the PRTS controls including: Monitoring quench tank
+temperature
+Importance Rating: 2.6
+10 CFR Part 55: 41.5 / 45.5
+10 CFR 55.43.b N/A
+Page 17 of 226
+
+===== PAGE 18 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA Match: KIA is matched because the candidate must know what could cause
+PRT temperature to rise and how the PRT is cooled to prevent
+exceeding its design limits.
+SRO Justification: N/A
+Technical NOS05PZRPRT-06 ( PRESSURIZER AND PRESSURIZER
+References: RELIEF TANK)
+Proposed references None
+to be provided:
+Learning Objective: NOS05PZRPRT-06 ( PRESSURIZER AND PRESSURIZER RELIEF
+TANK)
+3 Identify and describe the Control Room controls, indications, and
+alarms associated with the Pressurizer and Pressurizer Relief
+Tank, including:
+a. The Control Room location of Pressurizer and Pressurizer
+Relief Tank control bezels and indications. (Licensed
+Operator & STA only)
+b. The function of each Pressurizer and Pressurizer Relief
+Tank Control Room control and indication. (Licensed
+Operator & STA only)
+c. The effect each Pressurizer and Pressurizer Relief Tank
+control has upon Pressurizer and Pressurizer Relief Tank
+components and operation. (Licensed Operator & STA only)
+Cognitive Level:
+Higher
+---
+Lower X
+Question Source
+New X
+Modified Bank
+---
+Bank
+Question History:
+Comments:
+Page 18 of 226
+
+===== PAGE 19 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+7 Points: 1.00
+Given:
+• Unit 2 Pressurizer is water solid
+At time 12:00
+• The crew is performing a Pressurizer heatup in accordance with S2.0P-SO.RC-0002
+(VACUUM REFILL OF THE RCS) Section 5.4, "Establishing Pressurizer Steam Bubble
+Without A Vacuum In RCS"
+At time 13:00
+• The crew has opened 2PR1 (PZR PORV) for Pressurizer degassing in accordance with
+S2.0P-SO.RC-0002 Section 5.4
+Which ONE of the following completes the statements below?
+In accordance with LCO 3.4.10.2 (Pressurizer), the MAXIMUM allowable Pressurizer heatup rate
+is _(1 )_ °F per hour.
+During the Pressurizer degassing, the crew will open and close 2PR1 to maintain PRT pressure
+less than a MAXIMUM of _(2)_ psig.
+(1) (2)
+A. 100 10
+B. 100 25
+C. 200 10
+D. 200 25
+Answer: A
+Page 19 of 226
+
+===== PAGE 20 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Correct. For Part 1 and IAW LCO 3.4.10.2, the MAXIMUM allowable Pressurizer heatup
+rate is 100 °F per hour. For Part 2 and IAW S2.0P-SO.RC-0002 Section 5.4, during the
+Pressurizer degassing, the crew will open and close 2PR1 to maintain PRT pressure less
+than a MAXIMUM of 10 psig.
+B. Incorrect but plausible. Part 1 is correct. For Part 2, 25 psig is a pressure that is below
+the PRT ruptured disc setpoint of 100 psig and close to the actual limit. Consequently,
+the candidate could incorrectly conclude that S2.0P-SO.RC-0002 Section 5.4 requires
+PRT pressure to be maintained less than a maximum of 25 psig.
+C. Incorrect but plausible. For Part 1. LCO 3.4.10.2 allows a maximum pressurizer
+cooldown of 200 °F per hour. Consequently, the candidate could incorrectly conclude
+that LCO 3.4.10.2 allows a maximum pressurizer heatup of 200 °F per hour. Part 2 is
+correct.
+D. Incorrect but plausible. For Part 1. LCO 3.4.10.2 allows a maximum pressurizer
+cooldown of 200 °F per hour. Consequently, the candidate could incorrectly conclude
+that LCO 3.4.10.2 allows a maximum pressurizer heatup of 200 °F per hour. For Part 2,
+25 psig is a pressure that is below the PRT ruptured disc setpoint of 100 psig and close
+to the actual limit. Consequently, the candidate could incorrectly conclude that S2.0P
+SO.RC-0002 Section 5.4 requires PRT pressure to be maintained less than a maximum
+of 25 psig.
+Question Number: 7
+Tier: 2 Group 1
+KIA: 007 Pressurizer Relief Tank/Quench Tank System (PRTS)-K5.02
+Knowledge of the operational implications of the following concepts as the apply to
+PRTS: Method of forming a steam bubble in the PZR
+Importance Rating: 3.1
+10 CFR Part 55: 41.5 / 45.7
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must know what pressure the
+PRT will be maintained at when establishing a steam bubble in the
+pressurizer (an operational implication)).
+Page 20 of 226
+
+===== PAGE 21 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical LCO 3.4.10.2
+References: S2.0P-SO.RC-0002 Section 5.4
+Proposed references None
+to be provided:
+Learning Objective: NOS05CVCS00-17 (Chemical and Volume Control System)
+12 Discuss the procedural requirements associated with the
+Pressurizer and Pressurizer Relief Tank, including an
+explanation of major precaution and limitations in the
+Pressurizer and Pressurizer Relief Tank procedures
+Cognitive Level:
+Higher
+---
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 21 of 226
+
+===== PAGE 22 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+8 Points: 1.00
+Given:
+• Unit 2 is in MODE 3
+At time 15:00:00
+• BOTH 2R17A/B (Component Cooling Process Monitors) have just come into HI alarm
+At time 15:01 :00
+• The crew initiates S2.0P-AB.CC-0001 (Component Cooling Abnormality) and
+S2.0P-AB.RAD-0001 (Abnormal Radiation)
+At time 15:15:00
+• Chemistry has verified a rise in Component Cooling activity
+Which ONE of the following completes the statements below?
+At 15:00:30, 2CC149 (Surge Tank Vent Valve) is _(1)_.
+If CCW Surge Tank overflows, then the in-service Waste Holdup Tank _(2)_ will become
+contaminated.
+(1) (2)
+A. open and the 22 ABV Exhaust Filter Unit
+B. open ONLY
+C. closed and the 22 ABV Exhaust Filter Unit
+D. closed ONLY
+Answer: C
+Page 22 of 226
+
+===== PAGE 23 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. Form Part 1, 2CC149 is normally open and the candidate could
+not recall that 2CC149 closes when 2R17A/B being in alarm. Consequently at 15:00:30,
+the candidate could incorrectly conclude that 2CC149 is open. Part 2 is correct.
+B. Incorrect but plausible. Form Part 1, 2CC149 is normally open and the candidate could
+not recall that 2CC149 closes when 2R17A/B being in alarm. Consequently at 15:00:30,
+the candidate could incorrectly conclude that 2CC149 is open. For Part 2, the candidate
+could fail to recognize the 22 ABV Exhaust Filter Unit will also become contaminated
+when the CCW Surge Tank overflows.
+C. Correct. For Part 1, 2CC149 automatically closes on high radiation alarm on 2R17A/B.
+For Part 2, IAW S2.0P-AB.CC-0001 Step 3.8 NOTE, "Allowing CCW Surge Tank to
+overflow will contaminate the in-service Waste Holdup Tank and the 22 ABV Exhaust
+Filter Unit".
+D. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could fail to recognize
+the 22 ABV Exhaust Filter Unit will also become contaminated when the CCW Surge
+Tank overflows.
+Question Number: 8
+Tier: 2 Group 1
+KIA: 008 Component Cooling Water System (CCWS)-A2.04
+Ability to (a) predict the impacts of the following malfunctions or operations on the
+CCWS, and (b) based on those predictions, use procedures to correct, control,
+or mitigate the consequences of those malfunctions or operations: PRMS alarm.
+Importance Rating: 3.3
+10 CFR Part 55: 41.5 / 43.5 / 45.3 / 45.13
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must be able to predict how
+the CCWS will respond when 2R17A/B (Component Cooling Process
+Monitors) come into alarm. Additionally, the candidate must also
+know what components will be contaminated if the CCWS Surge
+Tank Overflows IAW S2.0P-AB.CC-0001 (Component Cooling
+Abnormality) and S2.0P-AB.RAD-0001 (Abnormal Radiation).
+Page 23 of 226
+
+===== PAGE 24 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical NOS05CCW000-11 (COMPONENT COOLING WATER)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05CCW000-11 (COMPONENT COOLING WATER)
+3 Describe how the following components impact the Component
+Cooling Water System during normal and abnormal conditions:
+• CC-149, Surge Tank Vent Valve
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New
+--
+Modified Bank
+--
+Bank X
+Question History: ILOT NRC 1601 RO Q7
+Comments: # 1 OF 4 ALLOWABLE RO QUESTIONS randomly sampled
+from exam bank that was used on the last two Salem ILOT
+NRC Exams (ES-401-6 #4 Requirements).
+Page 24 of 226
+
+===== PAGE 25 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+9 Points: 1.00
+Given:
+• Unit 2 is at 100% Reactor Power and stable
+• 2L T-459 (Channel I PZR Level) is the controlling PZR Level channel
+At time 15:00
+• The VARIABLE LEG on the D/P cell for 2LT-459 develops a large leak
+Which ONE of the following completes the statements below?
+INDICATED PZR LEVEL (from 2LT-459) will indicate off scale _(1)_.
+PZR B/U Heaters _(2)_ energize as ACTUAL PZR PRESSURE lowers below the setpoint.
+(1) (2)
+A. high will
+B. high will NOT
+C. low will NOT
+D. low will
+Answer: C
+Page 25 of 226
+
+===== PAGE 26 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. For Part 1, many of the licensed operators have demonstrated a
+= =
+misunderstanding on how PZR level instrumentation works (D/P 0 psid hi pressurizer
+level) as demonstrated on the 2018 LOR Bi-Annual Written Exams. Consequently, the
+ILOT candidate could incorrectly determine that with a variable leg leak on 2L T-459,
+indicated PZR level will indicate off scale high. Part 1 is correct.
+B. Incorrect but plausible. For Part 1, many of the licensed operators have demonstrated a
+= =
+misunderstanding on how PZR level instrumentation works (D/P 0 psid hi pressurizer
+level) as demonstrated on the 2018 LOR Bi-Annual Written Exams. Consequently, the
+ILOT candidate could incorrectly determine that with a variable leg leak on 2L T-459,
+indicated PZR level will indicate off scale high. For Part 2, the candidate could fail to
+recall that PZR B/U heaters automatically cut off when PZR level indicates less than
+17%.
+C. Correct. For Part 1, the variable leg for 2L T-459 is the low side of the D/P cell.
+Accordingly, as DIP across 2LT -459 PSID gets larger then indicated PZR level lowers (or
+as D/P across 2LT -459 goes to 0, then indicated level will be at its maximum). Therefore,
+with a leak of the variable leg of 2LT -459, D/P will get larger and indicated PZR level will
+indicate off scale low. Additionally, PZR inventory is also being lost, so actual PZR level
+and indicated level are both lowering. NOTE, as PZR pressure lowers due to the variable
+leg leak, this change in pressure is felt on both sides of 2LT -459. Indicated level due to
+the PZR pressure change will not affect PZR indicated level. For Part 2, the variable leg
+is connected to the pressurizer. Consequently, when the variable leg develops a leak,
+actual PZR pressure will lower but since the controlling channel has failed low, the B/U
+eaters will not energize (indicated level is below 17% which is the low level PZR B/U cut
+off setpoint.
+D. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could fail to recall that
+PZR B/U heaters automatically cut off when PZR level indicates less than 17%.
+Question Number: 9
+Tier: 2 Group 1
+KIA: 010 Pressurizer Pressure Control System (PZR PCS)-K1 .08
+Knowledge of the physical connections and/or cause-effect relationships between the
+PZR PCS and the following systems: PZR LCS
+Page 26 of 226
+
+===== PAGE 27 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Importance Rating: 3.2
+10 CFR Part 55: 41.2 to 41.9 / 45.7 to 45.8
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know that the variable
+leg of 2LT -459 (part of PZR LCS) is physically connected to the PZR
+liquid space and that a low indicated PZR level will automatically de
+energize the PZR B/U heaters.
+SRO Justification: N/A
+Technical NOS05PZRP&L-10 (PRESSURIZER PRESSURE AND LEVEL
+References: CONTROL)
+Proposed references None
+to be provided:
+Learning Objective: NOS05CCW000-11 (COMPONENT COOLING WATER)
+3 Draw a one-line diagram of the Pressurizer Pressure and Level
+Control System which indicates the following:
+a) Major Pressurizer Pressure and Level Control system
+components
+i. Pressure Control Channel
+ii. Pressure Alarm Channel
+iii. Level Control Channel
+iv. Level Alarm Channel
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+--
+Modified Bank X
+Bank
+Question History: Modified from ILOT NRC 1601 RO 32
+Comments:
+Page 27 of 226
+
+===== PAGE 28 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+10 Points: 1.00
+Given:
+• A Unit 2 shutdown is in progress
+• Pressurizer pressure is 415 psig and slowly lowering
+• There is a suspected leak by of 2PR 1 (PZR PORV)
+• PRT pressure is O psig
+Which ONE of the following completes the statements below?
+If 2PR1 is leaking by, then the expected PORV tailpipe temperature will be approximately ___
+Of.
+A. 212
+B. 280
+C. 330
+D. 450
+Answer: C
+Page 28 of 226
+
+===== PAGE 29 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. Since the Mollier Diagram is very complex to read and interpret
+then any temperature between 212 and 450 °Fis plausible. 212 °Fis the boiling point for
+water I steam at O psig and 450 °F is boiling point for water I steam at 515 psig.
+B. Incorrect but plausible. Since the Mollier Diagram is very complex to read and interpret
+then any temperature between 212 and 450 °Fis plausible. 212 °Fis the boiling point for
+water I steam at O psig and 450 °F is boiling point for water I steam at 515 psig.
+C. Correct. Leak by of 2PR1 is a constant enthalpy expansion process through a valve.
+Using steam stables and with PZR pressure at 415 psig (430 psia), the h is
+9
+approximately 1205 BTU I lbm. Using the Mollier diagram, the throttling process will go
+from 415 psig to O psig with h (1205 BTU I lbm) remaining constant. This will correspond
+9
+to a tailpipe temperature of approximately 330 °F
+D. Incorrect but plausible. Since the Mollier Diagram is very complex to read and interpret
+then any temperature between 212 and 450 °Fis plausible. 212 °Fis the boiling point for
+water I steam at O psig and 450 °F is boiling point for water I steam at 515 psig.
+Question Number: 10
+Tier: 2 Group 1
+KIA: 010 Pressurizer Pressure Control System (PZR PCS)-K5.02
+Knowledge of the operational implications of the following concepts as
+the apply to the PZR PCS: Constant enthalpy expansion through a valve
+Importance Rating: 2.6
+10 CFR Part 55: 41.5145.7
+10 CFR 55.43.b NIA
+KIA Match: KIA is matched because the candidate must determine the
+downstream temperature of a valve (PZR PORV) experiencing a
+constant enthalpy expansion through the valve.
+SRO Justification: NIA
+Page 29 of 226
+
+===== PAGE 30 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Technical GFES Bank
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05PZRPRT-046 (PRESSURIZER AND PRESSURIZER RELIEF
+TANK)
+16. Given any of the following and appropriate control room reference
+material, evaluate and determine the effect on the Pressurizer and
+Pressurizer Relief Tank:
+a. Valve failures
+b. Failure of sensors and detectors
+c. Degraded pumps
+d. Motor failures
+e. Failure of breakers, relays and disconnect
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+---
+Modified Bank
+---
+Bank X
+Question History: From GFES Bank - Thermodynamic Processes P677
+Comments:
+Page 30 of 226
+
+===== PAGE 31 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+11 Points: 1.00
+Given:
+• Unit 2 is at 100% Reactor Power
+• Containment Pressure Channel II has failed high and it has been removed from service in
+accordance with the applicable procedure
+At time 15:00
+• Power is lost to Containment Pressure Channel Ill
+At 15:01, which ONE of the following completes the statements below?
+A Reactor Trip and Safety Injection _(1)_ AUTOMATICALLY actuated.
+Containment Spray _(2)_ AUTOMATICALLY actuated.
+(1) (2)
+A. have has NOT
+B. have has
+C. have NOT has NOT
+D. have NOT has
+Answer: A
+Page 31 of 226
+
+===== PAGE 32 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Correct. When Containment Pressure Channel II was removed from service, the logic
+for Safety Injection and Reactor Trip (on Hi CTMT Pressure) went from 2/3 to 1/2 and the
+logic for Containment Spray (on Hi CTMT Pressure) went from 2/4 to 2/3. For Part 1,
+Containment Channels II, Ill and IV provide the input for the Safety Injection Logic (and
+Reactor Trip). Additionally, bi-stables for Safety Injection and Reactor Trip are de
+energize to actuate. Consequently, when Containment Pressure Channel Ill loses power
+at 15:00, Safety Injection will actuate (1/2 logic is met). For Part 2, when Containment
+Pressure Channel Ill loses power, Containment Spray will not actuate (2/3 logic is not
+met).
+B. Incorrect but plausible. Part 1 is correct. For Part 2 the candidate could incorrectly
+conclude that based on plant conditions, the logic for Containment Spray is met and
+Containment Spray has actuated.
+C. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that after
+Containment Pressure 11 was removed from service that the coincidence for SI went to
+2/2. Consequently, the candidate would then incorrectly conclude that SI has not
+actuated. Part 2 is correct.
+D. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that after
+Containment Pressure II was removed from service that the coincidence for SI went to
+2/2. Consequently, the candidate would then incorrectly conclude that SI has not
+actuated. For Part 2 the candidate could incorrectly conclude that based on plant
+conditions, the logic for Containment Spray is met and Containment Spray has actuated.
+Question Number: 11
+Tier: 2 Group 1
+KIA: 012 Reactor Protection System -A3.03
+Ability to monitor automatic operation of the RPS, including: Power Supply
+Importance Rating: 3.4
+10 CFR Part 55: 41.7 I 45.5
+10 CFR 55.43.b N/A
+Page 32 of 226
+
+===== PAGE 33 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA Match: KIA is matched because the candidate must understand how RPS
+and ESF will respond to a power loss to Containment Pressure
+Channel Ill (after Containment Pressure Channel II had already been
+removed from service).
+SRO Justification: N/A
+Technical NOS05ESF000-02 ( INTRODUCTION TO ENGINEERED SAFETY
+References: FEATURES AND DESIGN CRITERIA)
+DWG 221057
+Proposed references None
+to be provided:
+Learning Objective: NOS05ESF000-02 ( INTRODUCTION TO ENGINEERED SAFETY
+FEATURES AND DESIGN CRITERIA)
+21. State the setpoints for automatic actuations associated with the
+Engineered Safety Features
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+--
+Modified Bank X
+Bank
+Question History: Modified from ILOT 1601 AUDIT RO 16
+Comments:
+Page 33 of 226
+
+===== PAGE 34 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+12 Points: 1.00
+Given:
+At time 10:00:00
+• A Reactor Trip and Safety Injection have occurred coincident with a LOOP at Unit 2
+• EOG 2C can NOT be started
+At 10:15:00, which ONE of the following completes the statement below?
+22 RHR Pump is _(1)_ and 22 SI Pump is _(2)_.
+(1) (2)
+A. stopped running
+B. stopped stopped
+C. running running
+D. running stopped
+Answer: D
+Page 34 of 226
+
+===== PAGE 35 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Answer Explanation
+J
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that 22 RHR
+pump is powered from 2C 4KV Vital Bus. This would result in the candidate incorrectly
+deducing that at 10:15:00, the 22 RHR Pump is stopped. For Part 2, the candidate could
+incorrectly conclude that 22 SI pump is powered from 28 4KV Vital Bus. This would
+result in the candidate incorrectly deducing that at 10:15:00, the 22 SI Pump is running.
+B. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that 22 RHR
+pump is powered from 2C 4KV Vital Bus. This would result in the candidate incorrectly
+deducing that at 10:15:00, the 22 RHR Pump is stopped. Part 2 is correct.
+C. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could incorrectly
+conclude that 22 SI pump is powered from 28 4KV Vital Bus. This would result in the
+candidate incorrectly deducing that at 10:15:00, the 22 SI Pump is running.
+0. Correct. 22 RHR pump is powered from 28 4KV Vital Bus and 22 SI Pump is powered
+from 2C 4KV Vital Bus. Additionally, 2C EOG can not be started after the LOOP occurs.
+Consequently, 15 minutes after a reactor trip and safeguards have occurred (coincident
+with the loop), 2A and 28 Vital Susses are being powered from EOG 2A and EOG 28
+and all of the appropriate ECCS loads have been loaded onto the running EOGs.
+Therefore, at 10:15:00, 22 RHR Pump is running and 22 SI Pump is stopped.
+Question Number: 12
+Tier: 2 Group 1
+KIA: 013 Engineered Safety Features Actuation System (ESFAS)-K2.01
+Knowledge of bus power supplies to the following: ESFAS/safeguards equipment
+control
+Importance Rating: 3.6
+10 CFR Part 55: 41.7
+10 CFR 55.43.b N/A
+Page 35 of 226
+
+===== PAGE 36 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA Match: K/A is matched because the candidate must know the status of 22
+RHR Pump and 22 SI pump (safeguards equipment control) following
+a Safety Injection coincident with a LOOP and EOG 2C inoperable
+SRO Justification: N/A
+Technical NOS054KVAC0-08 (4160 ELECTRICAL SYSTEM)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS054KVAC0-08 (4160 ELECTRICAL SYSTEM)
+9 State the setpoints, coincidence, blocks and permissives for
+automatic actuations associated with the 4160 Electrical System
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+--
+Modified Bank X
+Bank
+--
+Question History: Modified from ILOT NRC 1601 RO 22
+Comments:
+Page 36 of 226
+
+===== PAGE 37 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+13 Points: 1.00
+Given:
+• A Reactor Trip and Safety Injection have occurred at Unit 1
+• 1A 4KV Vital Bus is de-energized
+Which ONE of the following completes the statement below?
+ONLY CFCU(s) is/ are stopped.
+A. 11 and 12
+B. 11
+C. 15
+D. 14 and 15
+Answer: B
+Page 37 of 226
+
+===== PAGE 38 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. Since there are 5 CFCUs powered from 3 vital busses, any
+distractor that has one or two CFCUs stopped is plausible.
+B. Correct. With 1A 4KV Vital bus de-energized, ONLY 11 CFCU is stopped
+C. Incorrect but plausible. Since there are 5 CFCUs powered from 3 vital busses, any
+distractor that has one or two CFCUs stopped is plausible.
+D. Incorrect but plausible. Since there are 5 CFCUs powered from 3 vital busses, any
+distractor that has one or two CFCUs stopped is plausible.
+Question Number: 13
+Tier: 2 Group 1
+KIA: 022 Containment Cooling System (CCS)-K2.01
+Knowledge of power supplies to the following: Containment cooling fans
+Importance Rating: 3.0
+10 CFR Part 55: 41.7
+10 CFR 55.43.b NIA
+KIA Match: KIA is matched because the candidate must know the power supply
+to CFCUs by determining which CFCUs are stopped following 1A
+4KV Vital bus being de-energized coincident with a Safety Injection.
+SRO Justification: NIA
+Technical NOS054KVAC0-08 (4160 ELECTRICAL SYSTEM)
+References:
+Proposed references None
+to be provided:
+Page 38 of 226
+
+===== PAGE 39 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Learning Objective: NOS05CONTMT-15 (CONTAINMENT AND CONTAINMENT
+SUPPORT SYSTEMS)
+17. State the power supply to the following Containment and
+Containment Support Systems components, including voltage
+level and 1 E/Non 1 E.
+a. Containment Fan Cooling Units, including breaker
+alignment for Fast and Slow speed.
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 39 of 226
+
+===== PAGE 40 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+14 Points: 1.00
+Given:
+• An AUTOMATIC Safety Injection and Containment Spray Actuation have occurred
+• A MANUAL backup of the Containment Spray Actuation has NOT been performed
+• The crew is preparing to reset Containment Spray in accordance with 2-EOP-LOCA-1
+(LOSS OF REACTOR COOLANT)
+Which ONE of the following completes the statement below?
+The NCO will reset one train of Containment Spray by ___
+A. depressing bezel button B ONLY
+B. turning key switches A AND C in the clockwise direction 180 degrees ONLY
+C. depressing bezel button B then turning key switches A AND C in the clockwise direction
+180 degrees
+D. turning key switches A AND C in the clockwise direction 180 degrees and then pressing
+bezel button B
+Page 40 of 226
+
+===== PAGE 41 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Answer: A
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A Correct. Resetting one train of Containment Spray is accomplished by depressing bezel
+button B.
+B. Incorrect but plausible. Not all bezel buttons in the control room actually perform an
+action. Consequently, the candidate could incorrectly conclude that rotating key switches
+A and C only will reset one train of Containment Spray.
+C. Incorrect but plausible. The candidate could incorrectly conclude that resetting one train
+of Containment Spray requires a combination of key switch and bezel button actuations.
+D. Incorrect but plausible. The candidate could incorrectly conclude that resetting one train
+of Containment Spray requires a combination of key switch and bezel button actuations.
+Question Number: 14
+Tier: 2 Group 1
+KIA: 026 Containment Spray System (CSS)-K4.05
+Ability to manually operate and/or monitor in the control room: Containment spray reset
+switches
+Importance Rating: 3.5
+10 CFR Part 55: 41.7 I 45.5 to 45.8
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must know how to properly
+reset containment spray inside the control room.
+SRO Justification: N/A
+Technical NOS05CSPRAY-06 (CONTAINMENT SPRAY SYSTEM)
+References:
+Proposed references None
+to be provided:
+Page 41 of 226
+
+===== PAGE 42 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+Learning Objective: NOS05CSPRAY-06 (CONTAINMENT SPRAY SYSTEM)
+18. Identify and describe the Control Room controls, indications,
+and alarms associated with the Containment Spray System,
+including:
+a. The Control Room location of Containment Spray
+System control bezels and indications.
+b. The function of each Containment Spray System Control
+Room control and indication.
+c. The effect each Containment Spray System control has
+upon Containment Spray System components and
+operation.
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 42 of 226
+
+===== PAGE 43 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+15 Points: 1.00
+REFERENCE PROVIDED
+Given:
+• The crew is performing 2-EOP-LOCA-5 (LOSS OF EMERGENCY RECIRCULATION)
+Step 6
+• 28 4KV Vital Bus is de-energized and locked out
+• Containment Sump Level is 55%
+• 21SJ44 (SUMP VALVE) and 22SJ44 (SUMP VALVE) are BOTH closed
+• RWST Level is 10 Feet and lowering
+• Containment Pressure is 19 psig
+In accordance with 2-EOP-LOCA-5, which ONE of the following completes the statement below?
+The crew's NEXT action will be to
+---
+A. add makeup to the RWST
+B. stop BOTH Containment Spray Pumps
+C. stop ONLY ONE Containment Spray Pump
+D. IMMEDIATELY RETURN TO PROCEDURE IN EFECT
+Answer: B
+Page 43 of 226
+
+===== PAGE 44 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. The candidate could correctly analyze Table Band then
+incorrectly analyze Table C to determine that both CS Spray Pumps are required. This
+would then cause the candidate to incorrectly conclude that the crew's NEXT action will be
+to add makeup to the RWST (2-EOP-LOCA-5 Step 10).
+B. Correct. IAW 2-EOP-LOCA-5 Step 6 Table B, NO TRAINS of Emergency Recirculation
+are available. Consequently, the candidate must analyze 2-EOP-LOCA-5 Steps 6.1
+through 9 and Table C to determine if any of the CS Pumps are required to be stopped.
+Based on Table C and Step 9 with Containment Pressure = 19 psig, RWST Level equal
+to 10 feet, and only 3 CFC Us running in slow speed (with 28 4KV Vital Bus de-energized
+and locked out, ONLY 3 CFCUs are running in slow speed), 0 CS Pumps are required.
+Consequently, the crew will stop BOTH Containment Spray Pumps.
+C. Incorrect but plausible. The candidate could correctly analyze Table Band then
+incorrectly analyze Table C to determine that only one CS Spray Pump is required. This
+would then cause the candidate to incorrectly conclude that the crew's NEXT action will be
+to stop ONLY ONE containment Spray Pump (2-EOP-LOCA-5 Step 9).
+D. Incorrect but plausible. The candidate could incorrectly analyze Table B. This would then
+cause the candidate to incorrectly conclude that the crew's NEXT action will be to
+IMMEDIATELY RETURN TO PROCEDURE IN EFECT (2-EOP-LOCA-5 Step 6).
+Question Number: 15
+Tier: 2 Group 1
+KIA: 026 Containment Spray System (CSS) - G2.1.25
+Ability to interpret reference materials, such as graphs, curves, tables, etc
+Importance Rating: 3.9
+10 CFR Part 55: 41.10 / 43.5 / 45.12
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must interpret/ analyze two
+Tables from 2-EOP-LOCA-5 (LOSS OF EMERGENCY
+RECIRCULATION) to determine the number of Containment Spray
+pumps required to be running.
+Page 44 of 226
+
+===== PAGE 45 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical 2-EOP-LOCA-5 (LOSS OF EMERGENCY RECIRCULATION)
+References:
+Proposed references 2-EOP-LOCA-5 (LOSS OF EMERGENCY RECIRCULATION) Steps
+to be provided: 6-9 and Tables B & C
+Learning Objective: NOS05LOCA05-04 (LOSS OF EMERGENCY RECIRCULATION)
+7. Determine a discrete path through the EOP for LOSS OF
+EMERGENCY RECIRCULATION.
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 45 of 226
+
+===== PAGE 46 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+16 Points: 1.00
+Given:
+• Unit 2 is at 100% Reactor Power
+• ALL AFW Pump Controllers are in the "LOCAL MANUAL" alignment
+At time 12:00
+• A Reactor Trip and Safety Injection occurs
+Which ONE of the following completes the statement below?
+At 12:05, ___ AFW Pump(s) is/ are running.
+A. ALL
+B. NO
+C. ONLY 21 and 22
+D. ONLY 23
+Answer: C
+Page 46 of 226
+
+===== PAGE 47 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. The candidate could correctly determine that with ALL of the
+AFW Pump Controllers in LOCAL Remote, all automatic AFW starts are disabled except
+those starts initiated from by the SECs. The candidate could then incorrectly conclude
+that ALL of the AFW pumps receive an automatic start signal from the SECs which would
+then cause the candidate to incorrectly conclude at 12:05, ALL AFW Pumps are running.
+B. Incorrect but plausible. The candidate could incorrectly conclude that with ALL of the
+AFW Pump Controllers in LOCAL Remote, all automatic AFW starts are disabled
+(including those starts initiated from by the SECs). This would then cause the candidate
+to incorrectly conclude at 12:05, NO AFW Pumps are running.
+C. Correct. With ALL of the AFW Pump Controllers in LOCAL Remote, all automatic AFW
+starts are disabled except those starts initiated from by the SECs. At 12:00 when the
+Safety injection occurs, the SECs will actuate in Mode 1 which will send an automatic
+start signal to ONLY 21 and 22 AFW pumps. Consequently, at 12:05, ONLY 21 and 22
+AFW pumps are running.
+D. Incorrect but plausible. The candidate could correctly determine that with ALL of the
+AFW Pump Controllers in LOCAL Remote, all automatic AFW starts are disabled except
+those starts initiated from by the SECs. The candidate could then incorrectly conclude
+that ONLY 23 AFW pumps receive an automatic start signal from the SECs which would
+then cause the candidate to incorrectly conclude at 12:05, ONLY 23 AFW Pump is
+running.
+Question Number: 16
+Tier: 2 Group 1
+KIA: 039 Main and Reheat Steam System (MRSS)-A4.04
+Ability to manually operate and/or monitor in the control room: Emergency feedwater
+pump turbines
+Importance Rating: 3.8
+10 CFR Part 55: 41.7 / 45.5 to 45.8
+10 CFR 55.43.b NIA
+Page 47 of 226
+
+===== PAGE 48 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA Match: KIA is matched because the candidate must analyze plant conditions
+and understand the start circuitry for 23 AFW Pump (TDAFW Pump)
+to determine if the 23 AFW has automatically started.
+SRO Justification: NIA
+Technical DWG 221064
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05AFW000-16 (AUXILIARY FEEDWATER SYSTEM)
+8. Identify and describe the Control Room controls, indications, and
+alarms associated with the Auxiliary Feedwater System, including:
+a. The Control Room location of Auxiliary Feedwater
+System control bezels and indications.
+b. The function of each Auxiliary Feedwater System Control
+Room control and indication.
+c. The effect each Auxiliary Feedwater System control has
+upon Auxiliary Feedwater System components and
+operation.
+d. The plant conditions or permissives required for Auxiliary
+Feedwater System Control Room controls to perform
+their intended function.
+e. The setpoints associated with the Auxiliary Feedwater
+System control room alarms.
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+---
+Bank
+Question History:
+Comments:
+Page 48 of 226
+
+===== PAGE 49 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+17 Points: 1.00
+Given:
+• Unit 2 is at 100% Reactor Power and stable
+At time 09:00:00
+• 22 SGFP trips
+At time 09: 00: 15 ( 15 seconds later)
+• The crew enters S2.0P-AB.CN-0001 (MAIN FEEDWATER/CONDENSATE SYSTEM
+ABNORMALITY)
+• Unit 2 is at 100% Reactor Power
+In accordance with S2.0P-AB.CN-0001, which ONE of the following completes the statement
+below?
+The crew will initiate a MANUAL Main Turbine load reduction until less than or equal to a
+MAXIMUM of _(1 )_%Turbine Power at a rate less than or equal to a MAXIMUM of
+_(2)_ % I MIN.
+(1) (2)
+A. 50 30
+B. 50 15
+C. 66 30
+D. 66 15
+Answer: D
+Page 49 of 226
+
+===== PAGE 50 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. For Part 1, there are only two SGFPs. The candidate could
+incorrectly conclude that each SGFP provides 50% total flow. Consequently when 22
+SGFP trips, the candidate could incorrectly conclude that S2.0P-AB.CN-0001 requires a
+load reduction to 50% Turbine Power. For Part 2, a loss of stator cooling water will cause
+an automatic turbine runback at 30% / minute. Consequently, the candidate could
+incorrectly conclude that the maximum turbine load ramp in S2.0P-AB.CN-0001 is 30% /
+MIN.
+B. Incorrect but plausible. For Part 1, there are only two SGFPs. The candidate could
+incorrectly conclude that each SGFP provides 50% total flow. Consequently when 22
+SGFP trips, the candidate could incorrectly conclude that S2.0P-AB.CN-0001 requires a
+load reduction to 50% Turbine Power. Part 2 is correct.
+C. Incorrect but plausible. Part 1 is correct. For Part 2, a loss of stator cooling water will
+cause an automatic turbine runback at 30% / minute. Consequently, the candidate could
+incorrectly conclude that the maximum turbine load ramp in S2.0P-AB.CN-0001 is 30% /
+MIN.
+D. Correct. IAW S2.0P-AB.CN-0001, The crew will initiate a Main Turbine load reduction
+until less than or equal to a MAXIMUM of 66 % Turbine Power at a less rate less than or
+equal to a MAXIMUM of 15 % / MIN.
+Question Number: 17
+Tier: 2 Group 1
+KIA: 059 Main Feedwater (MFW) System-AA2.06
+Ability to (a) predict the impacts of the following malfunctions or operations on the MFW;
+and (b) based on those predictions, use procedures to correct, control, or mitigate the
+consequences of those malfunctions or operations: Loss of steam flow to MFW system
+Importance Rating: 2.7
+10 CFR Part 55: 41.5 / 43.5 / 45.3 / 45.13
+10 CFR 55.43.b N/A
+Page 50 of 226
+
+===== PAGE 51 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA Match: K/A is matched because the candidate must know the immediate
+actions of S2.0P-AB.CN-0001 (MAIN FEEDWATER/CONDENSATE
+SYSTEM ABNORMALITY) following a 22 SGFP trip (a loss of steam
+flow to the MFW Feed Pump) with Reactor Power> 70%
+SRO Justification: N/ A
+Technical NOS05ABCN01-06 ( MAIN FEEDWATER/CONDENSATE
+References: SYSTEM ABNORMALITY)
+Proposed references None
+to be provided:
+Learning Objective: NOS05ABCN01-06 ( MAIN FEEDWATER/CONDENSATE SYSTEM
+ABNORMALITY)
+2. State the immediate actions of AB.CN-0001
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New
+--
+Modified Bank X
+Bank
+--
+Question History: Modified from ILOT 1601 NRC RO Q17
+Comments:
+Page 51 of 226
+
+===== PAGE 52 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam- (APPROVED)
+18 Points: 1.00
+Which ONE of the following completes the statement below?
+The Steam Generator Feed Pumps have a Turbine Overspeed Trip that prevents the turbine from
+exceeding a MAXIMUM of rpm.
+A. 1944
+B. 1980
+C. 5500
+D. 6080
+Answer: D
+Page 52 of 226
+
+===== PAGE 53 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. The main turbine has a 108% overspeed trip (1944 RPM).
+B. Incorrect but plausible. The main turbine has a 110% overspeed trip (1980 RPM).
+C. Incorrect but plausible. 5500 RPM is the design capacity for a SGFP.
+D. Correct. The Steam Generator Feed Pumps have a Turbine Overspeed interlock that
+prevents the turbine from exceeding a MINIMUM of 6080 rpm.
+Question Number: 18
+Tier: 2 Group 1
+KIA: 059 Main Feedwater (MFW) System-K4.05
+Knowledge of MFW design feature(s) and/or interlock(s) which provide for the following:
+Control of speed of MFW pump turbine
+Importance Rating: 2.5
+10 CFR Part 55: 41.7
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know the overspeed
+interlock (trip) associated with the SGFPs.
+SRO Justification: N/A
+Technical S2.0P-SO.CN-0002 ( STEAM GENERATOR FEED PUMP
+References: OPERATION)
+Proposed references None
+to be provided:
+Page 53 of 226
+
+===== PAGE 54 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Learning Objective: NOS05CN&FDW-16 (CONDENSATE AND FEEDWATER SYSTEM)
+8. Identify and describe the Control Room controls, indications,
+and alarms associated with the Condensate and Feedwater
+System, including:
+a. The Control Room location of Condensate and
+Feedwater System control bezels and indications.
+b. The function of each Condensate and Feedwater System
+Control Room control and indication.
+c. The effect each Condensate and Feedwater System
+control has upon Condensate and Feedwater System
+components and operation.
+d. The plant conditions or permissives required for
+Condensate and Feedwater System Control Room
+controls to perform their intended function.
+e. The setpoints associated with the Condensate and
+Feedwater System control room alarms.
+Cognitive Level:
+Higher
+---
+Lower X
+Question Source
+New X
+Modified Bank
+---
+Bank
+Question History:
+Comments:
+Page 54 of 226
+
+===== PAGE 55 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam- (APPROVED)
+19 Points: 1.00
+Given:
+At time 16:00
+• Unit 2 is at 15% Reactor Power
+• 21 SGFP is running
+At time 16:01
+• 28 4KV Vital Bus de-energizes and 28 SEC starts its blackout sequencing
+• A Reactor Trip occurs
+The following parameters vary over time:
+Time 16:00 16:01 16:02 16:04 16:05
+21 SG NR Level (%) 33.1 20.7 21.5 22.7 23.7
+22 SG NR Level(%) 33.3 20.6 21.3 22.4 23.5
+23 SG NR Level (%) 33.1 19.6 17.6 15.5 14.4
+24 SG NR Level(%) 33.0 19.6 18.2 16.1 14.6
+21 SGFP Status Running Running Running Running Running
+Which ONE of the following completes the statement below?
+At 16:05, ___ AFW Pump(s) is/ are running.
+A. NO Motor Driven
+B. BOTH Motor Driven
+C. ONLY 22
+D. ONLY 21
+Answer: C
+Page 55 of 226
+
+===== PAGE 56 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+D/STRACTOR ANALYSIS:
+A. Incorrect but plausible. Because ALL SG NR levels are above 14%, the candidate could
+incorrectly conclude that NO Motor Driven AFW Pumps are running at 16:05
+B. Incorrect but plausible. Since 2 out of 4 SG NR levels are below 16% (Reactor Trip
+Setpoint for LO-LO SG NR Level), the candidate could incorrectly conclude that BOTH
+motor Driven AFW Pumps are running at 16:05.
+C. Correct. MDAFW Pumps will automatically start under the following situations:
+• SG Level lo-lo (2/3 on 1/4 SG's <14%)
+• Both SGFP trip
+• AMSAC (associated train)
+• SEC (all modes)
+Since 28 SEC has actuated in Mode 2 and 22 AFW Pump is powered from 28 4K Vital
+Bus, the 22 AFW will be running at 16:05. (SEC loading should be completed by 16:01)
+D. Incorrect but plausible. The candidate could correctly determine that the SEC operating
+in Mode 2 will start an AFW pump. The candidate could incorrectly conclude that 21
+AFW Pump is powered from 28 Vital Bus and that ONLY 21 AFW Pump is running at
+16:05.
+Question Number: 19
+Tier: 2 Group 1
+KIA: 061 Auxiliary/ Emergency Feedwater (AFW) System-K2.02
+Knowledge of bus power supplies to the following: AFW electric drive pumps
+Importance Rating: 3.7
+10 CFR Part 55: 41.7
+10 CFR 55.43.b NIA
+KIA Match: K/A is matched because the candidate must know the power supply
+to the 22 Motor Driven AFW Pump and under what circumstances
+does the pump start.
+Page 56 of 226
+
+===== PAGE 57 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical NOS05AFW000-16 (AUXILIARY FEEDWATER SYSTEM)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05AFW000-16 (AUXILIARY FEEDWATER SYSTEM)
+5. State the power supply to the following Auxiliary Feedwater System
+components:
+a. Motor-driven AFW Pumps
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 57 of 226
+
+===== PAGE 58 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam- (APPROVED)
+20 Points: 1.00
+Given:
+• Unit 2 is at 4% Reactor Power
+• 21 and 22 AFW Pumps are feeding ALL SGs using 21-24AF21 with the following bezel
+indications:
+r::::J
+= PRESSURE OVERRIDE NORMAL LIGHT is illuminated
+At time 12:00
+• 21 AFW Pump trips
+Which ONE of the following describes the INITIAL response of the AFW System?
+NOTE:
+• 21-24AF21 = STEAM GENERATOR INLET VALVEs
+• 21-24AF11 = STEAM GENERATOR INLET VALVEs
+A. 23-24AF21 will remain in its current position and AFW flow to 23 and 24 SGs will lower to
+0 LBM / HR
+B. 23-24AF21 will AUTOMATICALLY close and AFW flow to 23 and 24 SGs will lower to 0
+LBM / HR
+C. 23 AFW will IMMEDIATELY start and will now provide feed flow to 23 and 24 SGs
+through 23-24AF21
+D. 23-24AF21 will AUTOMATICALLY close, 23 AFW will IMMEDIATELY start and will now
+provide feed flow to 23 and 24 SGs through 23-24AF11
+Page 58 of 226
+
+===== PAGE 59 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam- (APPROVED)
+Answer: B
+I Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Incorrect but plausible. If the "Pressure Override Defeat" light had been illuminated for 21
+AFW Pump, then when 21 AFW Pump tripped at 1200, 23-24AF21 would not move and
+AFW flow to 23 and 24 SGs would go to O LBM / HR.
+B. Correct. Since the "Pressure Override Normal Light" for 21 AFW Pump is illuminated, 21
+AFW Pump Runout protection is enabled. With runout protection enabled, 23AF21 and
+24AF21 will go closed (and be prevented from being opened if the valves are already
+closed) when 21 AFW Pump discharge pressure is below 1085 psig. Consequently,
+when 21 AFW Pump Trips at 1200, 21 AFW discharge pressure will go to O psig. The
+result is that 23AF21 and 24AF21 will AUTOMATICALLY close and AFW flow to 23 and
+24 SGs will go to O LBM / HR.
+C. Incorrect but plausible. 23 AFW pump does have an AUTOMATIC start feature.
+However, trip of a MDAFW pump will not cause the 23AFW to immediately start.
+D. Incorrect but plausible. This distractor is partially correct. 23-24AF21 will automatically
+close when 21 AFW pump trips. Additionally, 23 AFW pump does have an
+AUTOMATIC start feature. However, trip of a MDAFW pump will not cause the 23AFW
+to immediately start.
+Question Number: 20
+Tier: 2 Group 1
+KIA: 061 Auxiliary/ Emergency Feedwater (AFW) System-K6.02
+Knowledge of the effect of a loss or malfunction of the following will have on the AFW
+components: Pumps
+Importance Rating: 2.6
+10 CFR Part 55: 41.7/45.7
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must know how 23-24AF21
+will respond following a malfunction of 21 AFW Pump (with the 21
+AFW Pump Pressure Override in Normal)
+Page 59 of 226
+
+===== PAGE 60 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical NOS05AFW000-16 (AUXILIARY FEEDWATER SYSTEM)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05AFW000-16 (AUXILIARY FEEDWATER SYSTEM)
+6. LOR NCT Outline the interlocks associated with the following
+Auxiliary Feedwater System components:
+a. Auxiliary Feedwater Pump Automatic Start
+b. Motor-driven AFW Pump Recirculation Flow Control
+Valves
+c. Motor-driven AFW Pump Discharge Flow Control Valves
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+--
+Question History:
+Comments:
+Page 60 of 226
+
+===== PAGE 61 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+21 Points: 1.00
+Given:
+• Unit 2 is MODE 3
+• 2A 4KV Vital Bus is powered from 23 SPT
+• 28 and 2C 4KV Vital Susses are powered from 24 SPT
+Subsequently
+• 23ASD (23 SPT Supply Breaker to 2A 4KV Vital Bus) SPURIOUSLY opens
+Which ONE of the following completes the statement below?
+After the electrical transient is complete, the 2A 4KV Vital Bus will be ___
+A. de-energized
+B. powered from 2A EOG with the blackout loads loaded by the 2A SEC
+C. powered from the 24 SPT and the 2A EOG will NOT start
+D. powered from the 24 SPT and the 2A EOG will start and remained unloaded
+Answer: B
+Page 61 of 226
+
+===== PAGE 62 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Incorrect but plausible. Since the 23SPT transfer relay remains energized, the operator
+may incorrectly determine that the 24 SPT and 2A EOG transfer scheme is defeated
+causing the 2A 4KV Bus to remain de-energized.
+B. Correct. With 23 SPT at normal voltage when 23ASO spuriously opens, the 23SPT
+transfer relay remains energized and an AUTOMATIC transfer of the 2A 4KV Vital Bus to
+the 24 SPT will not occur. Consequently, the 2A 4KV Bus will de-energize and the 2A
+EOG will start and power the bus in accordance with the 2A SEC operating in Mode II*.
+C. Incorrect but plausible. This is the expected result if the 23 SPT transfer relay had de
+energized.
+0. Incorrect but plausible. This would be partially correct if the 23 SPT transfer relay had
+de-energized.
+Question Number: 21
+Tier: 2 Group 1
+KIA: 062 A.C. Electrical Oistribution-K3.01
+Knowledge of the effect that a loss or malfunction of the ac distribution system will have
+on the following: Major system loads
+Importance Rating: 3.5
+10 CFR Part 55: 41.7 / 45.6
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know how a malfunction
+23ASO (23 SPT Supply Breaker to 2A 4KV Vital Bus) will affect 2A
+4KV Vital Bus (a major AC load).
+SRO Justification: N/A
+Technical NOS054KVAC0-08 (4160 ELECTRIC SYSTEM)
+References:
+Page 62 of 226
+
+===== PAGE 63 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Proposed references None
+to be provided:
+Learning Objective: NOS054KVAC0-08 (4160 ELECTRIC SYSTEM)
+16. Given a 4160 Electrical System failure, predict the effect of
+the 4160 Electrical System failure on the following: (License
+Operator and STA only)
+a. Off-site power sources
+b. Emergency Diesel Generators
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+--
+Modified Bank
+--
+Bank X
+Question History:
+Comments:
+Page 63 of 226
+
+===== PAGE 64 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+22 Points: 1.00
+Which ONE of the following completes the statement below?
+During a STATION BLACKOUT and with the vital batteries discharging at their MAXIMUM rate,
+the vital batteries will supply DC power to emergency equipment for AT LEAST hour(s).
+A. 1
+B. 2
+C. 4
+D. 6
+Answer: B
+Page 64 of 226
+
+===== PAGE 65 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. All of the distractors are time frames that are close to 2 hours.
+Therefore, all of the distractors are plausible.
+B. Correct. During a STATION BLACKOUT, the vital batteries will supply DC power to
+emergency equipment for AT LEAST 2 hours.
+C. Incorrect but plausible. All of the distractors are time frames that are close to 2 hours.
+Therefore, all of the distractors are plausible.
+D. Incorrect but plausible. All of the distractors are time frames that are close to 2 hours.
+Therefore, all of the distractors are plausible.
+Question Number: 22
+Tier: 2 Group 1
+KIA: 063 DC Electrical Distribution System-A 1.01
+Ability to predict and/or monitor changes in parameters associated with operating the DC
+electrical system controls including: Battery capacity as it is affected by discharge rate
+Importance Rating: 2.5
+10 CFR Part 55: 41.5 / 45.5
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must how long the vital
+batteries will supply DC power following a STATION BLACKOUT with
+the batteries discharging at the maximum rate.
+SRO Justification: N/A
+Technical NOS05DCELEC-09 (DC ELECTRICAL SYSTEMS)
+References:
+Proposed references None
+to be provided:
+Page 65 of 226
+
+===== PAGE 66 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+Learning Objective: NOS05DCELEC-09 (DC ELECTRICAL SYSTEMS)
+3. Describe the design bases of the DC Electrical System
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New
+--
+Modified Bank
+--
+Bank X
+Question History: ILOT 1601 NRG RO Q28
+Comments: # 2 OF 4 ALLOWABLE RO QUESTIONS randomly sampled
+from exam bank that was used on the last two Salem ILOT
+NRG Exams (ES-401-6 #4 Requirements).
+Page 66 of 226
+
+===== PAGE 67 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+23 Points: 1.00
+Given
+• Unit 1 is at 100% Reactor Power
+• ALL AC and DC power to the 1 RP4 panel has been lost
+• ALL 1 RP4 indication lights are OFF
+At time 12:00
+• A Reactor Trip and Safety Injection occurs
+Which ONE of the following completes the statement below?
+At 12:00, The SECs will ___
+A. NOT AUTOMATICALLY actuate
+B. AUTOMATICALLY actuate in Mode 3
+C. AUTOMATICALLY actuate in Mode 2
+D. AUTOMATICALLY actuate in Mode 1
+Answer: D
+Page 67 of 226
+
+===== PAGE 68 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. If DC power had been lost to a control room Bezel (e.g. AFW
+Control Bezel), then the components controlled by that Bezel could not been operated
+using the Bezel (manual and automatic functions). The candidate could apply this same
+logic to 1 RP4 and incorrectly conclude that with DC power lost to 1 RP4, then all
+equipment associated with 1R P4 can not be operated.
+B. Incorrect but plausible. The distractor is partially correct and the SECs can operate in
+Modes 1 through 4. However, for the given plant conditions, the SECs will not operate in
+Mode 3.
+C. Incorrect but plausible. The distractor is partially correct and the SECs can operate in
+Modes 1 through 4. However, for the given plant conditions, the SECs will not operate in
+Mode 2.
+D. Correct. 1 RP4 is the main panel in the control room that gives a visual status of all
+safety related equipment including the Safeguard Equipment Controllers (SECs). Since
+1R P4 is not safety related, the interface between the SE Cs and 1R P4 is isolated.
+Consequently, when a Reactor Trip and Safety Injections occurs, the SECs will
+automatically actuate in Mode 1.
+Question Number: 23
+Tier: 2 Group 1
+KIA: 063 DC Electrical Distribution System-G2.2.44
+Ability to interpret control room indications to verify the status and operation of a system,
+and understand how operator actions and directives affect plant and system conditions.
+Importance Rating: 2.5
+10 CFR Part 55: 41.5 / 45.5
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must that a loss of DC Power
+to 1 RP4 (which causes all 1 RP4 indication lights to be off) will not
+affect operation of the Safeguard Equipment Controllers (SECs).
+SRO Justification: N/A
+Page 68 of 226
+
+===== PAGE 69 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Technical Notification 20787762
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05SEC000-07 (SAFEGUARDS EQUIPMENT CONTROL
+SYSTEM)
+13. Identify and describe the Control Room controls, indications,
+and alarms associated with the Safeguards Equipment Control
+System, including:
+a. The Control Room location of Safeguards Equipment
+Control System control bezels and indications.
+b. The function of each Safeguards Equipment Control
+System Control Room control and indication.
+c. The effect each Safeguards Equipment Control System
+control has upon Safeguards Equipment Control System
+components and operation.
+d. The plant conditions or permissives required for
+Safeguards Equipment Control System Control Room
+controls to perform their intended function.
+e. The setpoints associated with the Safeguards Equipment
+Control System control room alarms.
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 69 of 226
+
+===== PAGE 70 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+24 Points: 1.00
+Which ONE of the following completes the statements below concerning the 2A EOG?
+The 2A EOG can be run at a MAXIMUM of _(1 )_ KW for 2000 hours.
+During operation of the 2A EOG, the Diesel Area Ventilation will ensure the 2A EOG Room does
+not exceed a MAXIMUM of_(2)_ °F.
+(1) (2)
+A. 2750 120
+B. 2750 90
+C. 2600 120
+D. 2600 90
+Answer: A
+Page 70 of 226
+
+===== PAGE 71 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Correct. For Part 1, the 2A EOG can be run at a MAXIMUM of 2750 KW for 2000 hours.
+For Part 2, during operation of the 2A EOG, the Diesel Area Ventilation will ensure the 2A
+EOG Room does not exceed a MAXIMUM of 120 °F.
+B. Incorrect but plausible. Part 1 is correct. For Part 2, 90 °F is close to the actual limit and
+is a reasonable distractor given the importance of the EDGs.
+C. Incorrect but plausible. For Part 1, 2600 KW is the continuous rating of the 2A EOG.
+Part 1 is correct.
+D. Incorrect but plausible. For Part 1, 2600 KW is the continuous rating of the 2A EOG. For
+Part 2, 90 °F is close to the actual limit and is a reasonable distractor given the
+importance of the EDGs.
+Question Number: 24
+Tier: 2 Group 1
+KIA: 064 Emergency Diesel Generator (ED/G) System-A 1.05
+Ability to predict and/or monitor changes in parameters (to prevent exceeding design
+limits) associated with operating the ED/G system controls including: ED/Groom
+temperature
+Importance Rating: 2.5
+10 CFR Part 55: 41.5 / 45.5
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must know the maximum
+expected EOG Room temperature during operation of an EOG.
+SRO Justification: N/A
+Technical NOS05EDG000-12 (EMERGENCY DIESEL GENERATORS)
+References:
+Proposed references None
+to be provided:
+Page 71 of 226
+
+===== PAGE 72 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Learning Objective: NOS05EDG000-12 (EMERGENCY DIESEL GENERATORS)
+6. Outline the interlocks associated with the following Emergency Diesel
+Generator components:
+a. Pre-lube pumps
+b. Lube Oil Heaters
+C. Starting Air Solenoids/Motors
+d. Jacket Water Heater
+e. Fuel Oil transfer Pumps
+f. Generator Breaker
+g. EOG Ventilation System
+Cognitive Level:
+Higher
+---
+Lower X
+Question Source
+New X
+Modified Bank
+---
+Bank
+Question History:
+Comments:
+Page 72 of 226
+
+===== PAGE 73 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+25 Points: 1.00
+Given:
+• A LBLOCA has occurred on Unit 2
+• The crew is evaluating the Plant Vent Effluent display to determine if a radiological release
+is in progress:
+Which ONE of the following completes the statement below?
+2R41 is the ONLY control room indication that reads out in µCi / sec and can be used to
+determine if a radiological release is in progress.
+A. Channel A
+B. Channel B
+C. Channel C
+D. Channel D
+Answer: D
+Page 73 of 226
+
+===== PAGE 74 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+I Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. Since there is 4 Channels for 2R41, the candidate could select
+Channels A, B or C.
+B. Incorrect but plausible. Since there is 4 Channels for 2R41, the candidate could select
+Channels A, B or C.
+C. Incorrect but plausible. Since there is 4 Channels for 2R41, the candidate could select
+Channels A, B or C.
+D. Correct. 2R41 Channel Dis the ONLY control room indication that reads out in µCi/ sec
+and can be used to determine if a radiological release is in progress for notification to
+State and Local Agencies.
+Question Number: 25
+Tier: 2 Group 1
+KIA: 073 Process Radiation Monitoring (PRM) System-A4.01
+Ability to manually operate and/or monitor in the control room: Effluent release
+Importance Rating: 3.9
+10 CFR Part 55: 41. 7 / 45.5 to 45.8
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know which Channel of
+2R41 can be used to determine if there is an effluent release from the
+plant ventilation stack in progress following a LBLOCA.
+SRO Justification: N/A
+Technical NOS05RMS000-17 (RADIATION MONITORING SYSTEM)
+References:
+Proposed references None
+to be provided:
+Page 74 of 226
+
+===== PAGE 75 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Learning Objective: NOS05RMS000-17 (RADIATION MONITORING SYSTEM)
+7. Identify and describe the Control Room controls, indications, and
+alarms associated with the Radiation Monitoring System, including:
+a. The Control Room location of Radiation Monitoring System
+control bezels and indications.
+b. The function of each Radiation Monitoring System Control
+Room control and indication.
+c. The effect each Radiation Monitoring System control has upon
+Radiation Monitoring System components and operation.
+d. The plant conditions or permissives required for Radiation
+Monitoring System Control Room controls to perform their
+intended function.
+Cognitive Level:
+Higher
+---
+Lower X
+Question Source
+New X
+Modified Bank
+---
+Bank
+Question History:
+Comments:
+Page 75 of 226
+
+===== PAGE 76 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+26 Points: 1.00
+Considering ONLY the following plant conditions below:
+1. A loss of control air to 21SW122 (21 CC Hx Control Valve)
+2. SEC Mode Ill Operation
+3. A loss of 125 VDC power to 21SW122 (21 CC Hx Control Valve)
+Which ONE of the following completes the statement below?
+Condition(s) ___ will cause 21SW122 to go FULLY OPEN.
+A. 1 ONLY
+B. 2 ONLY
+C. 2 and 3 ONLY
+D. 1 and 3 ONLY
+Answer: A
+Page 76 of 226
+
+===== PAGE 77 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam- (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANALYSIS:
+A. Correct. ONLY a loss of control air to 21SW122 will cause 21SW122 to go FULLY
+OPEN.
+B. Incorrect but plausible. ALL 3 possible conditions listed in the question stem will cause
+21SW122 to either go fully closed or fully open. Consequently, all of the distractors are
+plausible.
+C. Incorrect but plausible. ALL 3 possible conditions listed in the question stem will cause
+21SW122 to either go fully closed or fully open. Consequently, all of the distractors are
+plausible.
+D. Incorrect but plausible. ALL 3 possible conditions listed in the question stem will cause
+21 SW122 to either go fully closed or fully open. Consequently, all of the distractors are
+plausible.
+Question Number: 26
+Tier: 2 Group 1
+KIA: 076 Service Water System (SWS)-K4.03
+Knowledge of SWS design feature(s) and/or interlock(s) which provide for the following:
+Automatic opening features associated with SWS isolation valves to CCW heat
+exchanges
+Importance Rating: 3.9
+10 CFR Part 55: 41.7 / 45.5 to 45.8
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must know what plant
+conditions will cause 21SW122 (an SWS isolation valve to CCW heat
+exchange) to go fully open.
+SRO Justification: N/A
+Page 77 of 226
+
+===== PAGE 78 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+Technical NOS05SWONUC-14 (SERVICE WATER - NUCLEAR HEADER)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05SWONUC-14 (SERVICE WATER- NUCLEAR HEADER)
+4. Describe the function of the following components and how their
+normal and abnormal operation affects the Service Water - Nuclear
+Header System:
+a. Nuclear Service Water Headers and SW17, 22/24SW20,
+SW21, SW22, SW23, SW50
+b. Containment Fan Coil Units and SW58, SW72, SW223
+c. SW Accumulators and SW534/535
+d. Diesel Generator Coolers and SW39/42
+e. Safety Related Chillers and SW92 and SW102
+f. Component Cooling Heat Exchangers and SW122,
+SW127, SW380/383, SW376/379
+g. Safety Related Pump Room Coolers
+h. Safety Related Pump Oil Coolers
+i. AFW Supply
+j. Emergency Control Air Compressor
+Cognitive Level:
+Higher
+---
+Lower X
+Question Source
+New X
+Modified Bank
+---
+Bank
+Question History:
+Comments:
+Page 78 of 226
+
+===== PAGE 79 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+27 Points: 1.00
+Which ONE of the following completes the statement below?
+In accordance with LCO 3.6.3 (Containment Isolation Valves), the 21CA330 (Control Air Isolation
+Valve) and 22CA330 (Control Air Isolation Valve) are required to be OPERABLE in _(1 )_.
+The 21CA330 and 22CA330 will automatically close when Containment Pressure FIRST exceeds
+_(2)_psig.
+(1) (2)
+A. ALL MODES 4
+B. ALL MODES 15
+C. MODES 1-4 ONLY 4
+D. MODES 1-4 ONLY 15
+Answer: C
+Page 79 of 226
+
+===== PAGE 80 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. For Part 1, there are other LCOs that are applicable in ALL
+MODES. Consequently, the candidate could incorrectly conclude that LCO 3.6.3 is
+applicable in ALL MODES. Part 1 is correct.
+B. Incorrect but plausible. For Part 1, there are other LCOs that are applicable in ALL
+MODES. Consequently, the candidate could incorrectly conclude that LCO 3.6.3 is
+applicable in ALL MODES. For Part 2, 15 psig is the setpoint for a Phase B Containment
+Isolation Signal. The candidate could incorrectly conclude that the CA330s close on a
+Phase B Containment Isolation Signal.
+C. Correct. For Part 1 and IAW LCO (3.6.3), the CA330s (Control Air Isolation Valves) are
+required to be OPERABLE in MODES 1-4 ONLY. For Part 2, The CA330s will
+automatically close on a Phase A Containment Isolation. A Phase A Containment
+Isolation signal is generated when Containment Pressure FIRST exceeds 4 psig.
+D. Incorrect but plausible. Part 1 is correct. For Part 2, 15 psig is the setpoint for a Phase B
+Containment Isolation Signal. The candidate could incorrectly conclude that the CA330s
+close on a Phase B Containment Isolation Signal.
+Question Number: 27
+Tier: 2 Group 1
+K/A: 078 Instrument Air System (IAS)-G2.2.38
+Knowledge of conditions and limitations in the facility license
+Importance Rating: 3.6
+10 CFR Part 55: 41. 7 / 41.10 / 43.1 / 45.13
+10 CFR 55.43.b N/A
+K/A Match: K/A is matched because the candidate must know when the Control
+Air Isolation Valves are require to be operable IAW Technical
+Specifications (part of the facility license).
+SRO Justification: N/A
+Page 80 of 226
+
+===== PAGE 81 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam- (APPROVED)
+Technical LCO 3.6.3
+References: NOS05CONAIR-12 (CONTROL AIR SYSTEM)
+Proposed references None
+to be provided:
+Learning Objective: NOS05CONAIR-12 (CONTROL AIR SYSTEM)
+10. Given a situation dealing with Control Air System operability, examine
+the situation and apply the appropriate Technical Specification action.
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+--
+Question History:
+Comments:
+Page 81 of 226
+
+===== PAGE 82 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+28 Points: 1.00
+In accordance with LCO 3.6.1.3 (Containment Air Locks), which ONE of the following completes
+the statements below?
+The Containment Airlock interlock mechanisms for BOTH Containment Airlocks are required to be
+OPERABLE when Unit 2 is in _(1 )_.
+If a Containment Airlock with only the Containment Airlock interlock mechanism is inoperable,
+then the crew must verify an OPERABLE door is _(2)_ in the affected air lock WITHIN 1
+hour.
+(1) (2)
+A. MODES 1-4 ONLY closed ONLY
+B. MODES 1-4 ONLY closed and locked
+C. ALL MODES closed ONLY
+D. ALL MODES closed and locked
+Answer: A
+Page 82 of 226
+
+===== PAGE 83 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Correct. For Part 1 and in accordance with LCO 3.6.1.3 (Containment Air Locks), the
+Containment Airlock interlock mechanisms for BOTH Containment Airlocks are required
+to be OPERABLE when Unit 2 is in MODES 1-4 ONLY. For Part 2 and in accordance
+with LCO 3.6.1.3 (Containment Air Locks) REQUIRED ACTION B.1, if a containment air
+lock with only the containment air lock interlock mechanism is inoperable, then verify an
+OPERABLE door is closed only in the affected air lock within 1 hour.
+B. Incorrect but plausible. Part 1 is correct. For Part 2, LCO 3.6.1.3 REQUIRED ACTION
+8.2 has a requirement to lock an OPERABLE door closed in the affected air lock within
+24 hours.
+C. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that the), the
+Containment Airlock interlock mechanisms for BOTH Containment Airlocks are required
+to be OPERABLE when Unit 2 is in ALL MODES. Part 2 is correct.
+D. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that the ), the
+Containment Airlock interlock mechanisms for BOTH Containment Airlocks are required
+to be OPERABLE when Unit 2 is in ALL MODES. For Part 2, LCO 3.6.1.3 REQUIRED
+ACTION B.2 has a requirement to lock an OPERABLE door closed in the affected air lock
+within 24 hours.
+Question Number: 28
+Tier: 2 Group 1
+KIA: 103 Containment System-K4.04
+Knowledge of containment system design feature(s) and/or interlock(s) which provide for
+the following: Personnel access hatch and emergency access hatch
+Importance Rating: 2.5
+10 CFR Part 55: 41.7
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know when the
+Containment Airlock interlock mechanisms for BOTH Containment
+Airlocks are required to be OPERABLE IAW LCO 3.6.1.3.
+Page 83 of 226
+
+===== PAGE 84 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical LCO 3.6.1.3
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05CONTMT-15 (CONTAINMENT AND CONTAINMENT
+SUPPORT SYSTEMS)
+1. Describe the purpose and design basis for the following Containment
+and Containment Support Systems subsystems:
+a. Containments
+b. Containment Airlocks
+c. Containment Isolation System
+d. Containment Fan Cooler System
+e. Containment Iodine Removal System
+Cognitive Level:
+Higher
+---
+Lower X
+Question Source
+New X
+Modified Bank
+---
+Bank
+Question History:
+Comments:
+Page 84 of 226
+
+===== PAGE 85 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+29 Points: 1.00
+Given:
+• Unit 1 is 100% Reactor Power
+At time 1900
+• An AUTOMATIC Turbine Runback occurs
+At time 1905
+• The crew starts a rapid RCS boration in order to raise the control rods above the Rod
+Insertion Limit
+• The Rod Bank Selector Switch is in AUTO
+At time 1910
+• The Rod Control Summing Unit has calculated that the magnitude of the TOTAL
+TEMPERATURE ERROR is 4 °F
+Which ONE of the following completes the statement below?
+At 1910 Control Rods are stepping out at ___ steps per minute.
+A. 72
+B. 40
+C. 24
+D. 8
+Answer: B
+Page 85 of 226
+
+===== PAGE 86 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. Since rod control speed can vary from 8 SPM to 72 SPM with
+Rod Control in automatic, all distractors are plausible
+B. Correct. With Rods in auto, control speed varies based on the total temperature error.
+With a temperature error of 1.5 °F to 3 °F, rod will move at 8 spm. With a temperature
+error of 3 °F to 5 °F, rods will move from 8 spm to 72 spm (linearly). This corresponds of
+an increase of 32 spm / °F. Consequently, with a TOTAL TEMPERATURE ERROR of 4
+°F, rods will move 40 spm (8 spm + (32 spm / °F x 1 °F)).
+C. Incorrect but plausible. Since rod control speed can vary from 8 SPM to 72 SPM with
+Rod Control in automatic, all distractors are plausible
+D. Incorrect but plausible. Since rod control speed can vary from 8 SPM to 72 SPM with
+Rod Control in automatic, all distractors are plausible
+Question Number: 29
+Tier: 2 Group 2
+KIA: 001 Control Rod Drive System-K4.05
+Knowledge of CRDS design feature(s) and/or interlock(s) which provide
+for the following: Boration and dilution
+Importance Rating: 3.9
+10 CFR Part 55: 41.7
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know the CRDS design
+feature (rods stepping out at variable speeds) due to an RCS
+boration
+SRO Justification: N/A
+Technical NOS05R0DS00-12
+References:
+Page 86 of 226
+
+===== PAGE 87 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+Proposed references None
+to be provided:
+Learning Objective: NOS05RODS00-12 ( ROD CONTROL AND POSITION INDICATION
+SYSTEMS)
+5. Draw a one-line diagram of the Reactor Control Unit which
+indicates the following major Reactor Control Unit components:
+(Licensed Operator & STA only)
+a. Temperature Error Circuit
+b. Power Mismatch Circuit
+C. Rate Comparator
+d. Non-Linear Gain Unit
+e. Variable Gain Unit
+f. Summer
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+---
+Bank
+Question History:
+Comments:
+Page 87 of 226
+
+===== PAGE 88 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+30 Points: 1.00
+Given:
+• Unit 2 is 100% Reactor Power
+At time 1900:00
+• 2N41 (Power Range NI) fails high
+At time 1900:30 (30 seconds later)
+• The crew enters S2.0P-AB.NIS-0001 (NUCLEAR INSTRUMENTATION SYSTEM
+MALFUNCTION)
+At time 1945:00
+• 2N41 is placed in tripped condition in accordance with S2.0P-SO.RPS-0001 (NUCLEAR
+INSTRUMENTATION CHANNEL TRIP/ RESTORATION)
+Which ONE of the following completes the statements below?
+In accordance with S2.0P-AB.NIS-0001 and prior to placing 2N41 in tripped condition, the crew
+_(1)_ REQUIRED to place the Rod Bank Selector Switch in MAN.
+After 1945:00, the coincidence for the PR High Neutron Flux Reactor Trip (based on the
+remaining functional PR NI Channels) is now _(2)_.
+(1) (2)
+A. is NOT 1 out of 3
+B. is NOT 2 out of 3
+C. is 1 out of 3
+D. is 2 out of 3
+Answer: C
+Page 88 of 226
+
+===== PAGE 89 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. For Part 1, when 2PR41 fails high, this will cause the overpower
+rod stop block to be enabled (which stops all automatic and manual rod withdraw!).
+Consequently, the candidate could incorrectly conclude that placing rods in Manual is not
+required IAW S2.0P-AB.NIS-0001). Part 2 is correct.
+B. Incorrect but plausible. For Part 1, when 2PR41 fails high, this will cause the overpower
+rod stop block to be enabled (which stops all automatic and manual rod withdraw!).
+Consequently, the candidate could incorrectly conclude that placing rods in Manual is not
+required IAW S2.0P-AB.NIS-0001). For Part 2, the candidate could incorrectly determine
+that when 2PR41 is removed from service IAW S2.0P-SO.RPS-0001, this removes the
+channel from the PR High Neutron Flux Reactor Trip logic. This would then cause the
+candidate to incorrectly conclude that the logic for the remaining operable channels is 2
+out of 3.
+C. Correct. For Part 1 and IAW S2.0P-AB.NIS-0001, the crew is REQUIRED to place the
+Rod Bank Selector Switch in MAN. For Part 2 and IAW DWG 221052, after the bi-stable
+for 2PR41 is tripped (IAW S2.0P-SO.RPS-0001), the coincidence for the PR High
+Neutron Flux Reactor Trip (based on the remaining functional PR NI Channels) is now 1
+out of 3.
+D. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could incorrectly
+determine that when 2PR41 is removed from service IAW S2.0P-SO.RPS-0001, this
+removes the channel from the PR High Neutron Flux Reactor Trip logic. This would then
+cause the candidate to incorrectly conclude that the logic for the remaining operable
+channels is 2 out of 3.
+Question Number: 30
+Tier: 2 Group 2
+KIA: 015 Nuclear Instrumentation System (NIS)-A4.03
+Ability to manually operate and/or monitor in the control room: Trip bypasses
+Importance Rating: 3.8
+10 CFR Part 55: 41.7
+10 CFR 55.43.b N/A
+Page 89 of 226
+
+===== PAGE 90 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA Match: KIA is matched because the candidate must monitor the PR High
+Neutron Flux Reactor Trip after 2PR41 bi-stabled is tripped.
+SRO Justification: N/A
+Technical S2.0P-AB.NIS-0001
+References: S2.0P-SO.RPS-0001
+DWG 221052
+Proposed references None
+to be provided:
+Learning Objective: NOS05RXPROT-13 ( REACTOR PROTECTION SYSTEM)
+12. State the setpoints, coincidence, blocks and permissives for all
+Reactor Trips and Safety Injections actuations
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 90 of 226
+
+===== PAGE 91 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+31 Points: 1.00
+Given
+• Unit 2 is at 45% Reactor Power
+At time 14:00
+• A malfunction within AMSAC causes ONLY Train A of AMSAC to actuate
+Which ONE of the following completes the statement below?
+The actuation of Train A of AMSAC will send an AUTOMATIC start signal to ___ AFW
+Pump(s).
+A. ALL
+B. ONLY21
+C. ONLY 21 and 22
+D. ONLY 21 and 23
+Answer: D
+Page 91 of 226
+
+===== PAGE 92 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. The candidate could not understand how AMSAC circuitry works
+and incorrectly conclude that ALL AFW pumps receive an AUTOMATIC start signal.
+B. Incorrect but plausible. The candidate could not understand how AMSAC circuitry works
+and incorrectly conclude that ONLY 21 pump receives an AUTOMATIC start signal.
+C. Incorrect but plausible. The candidate could not understand how AMSAC circuitry works
+and incorrectly conclude that ONLY 21 and 22 AFW pumps receive an AUTOMATIC start
+signal.
+D. Correct. The 21 AFW receives an AUTOMATIC start signal when AMSAC Train A
+actuates. The 22 AFW receives an AUTOMATIC start signal when AMSAC Train B
+actuates. The 23 AFW receives an AUTOMATIC start signal when either train of AMSAC
+actuates. Consequently, when ONLY Train A of AMSAC actuates, 21 and 23 AFW
+Pumps received an AUTOMATIC start signal.
+Question Number: 31
+Tier: 2 Group 2
+KIA: 016 Non-Nuclear Instrumentation System (NNIS)-K1 .06
+Knowledge of the physical connections and/or cause-effect relationships between the
+NNIS and the following systems: AFW system
+Importance Rating: 3.6
+10 CFR Part 55: 41.2 to 41.9 / 45.7 to 45.8
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know the cause-effect
+relationship between the NNIS (AMSAC circuitry) and the AFW
+system. Specifically, how does a spurious actuation of AMSAC Train
+A affect the auto start feature of the AFW Pumps
+SRO Justification: N/A
+Technical NOS05AFW000-16 (AUXILIARY FEEDWATER SYSTEM)
+References:
+Page 92 of 226
+
+===== PAGE 93 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+Proposed references None
+to be provided:
+Learning Objective: NOS05RXPROT-13 ( REACTOR PROTECTION SYSTEM)
+12. Outline the interlocks associated with the following Auxiliary
+Feedwater System components:
+a. Auxiliary Feedwater Pump Automatic Start
+b. Motor-driven AFW Pump Recirculation Flow Control
+Valves
+c. Motor-driven AFW Pump Discharge Flow Control Valves
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+--
+Modified Bank
+--
+Bank X
+Question History: ILOT 1601 AUDIT RO 019
+Comments:
+Page 93 of 226
+
+===== PAGE 94 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+32 Points: 1.00
+REFERENCES PROVIDED
+Given
+• A LOCA has occurred
+• 22 Hydrogen Recombiner is inoperable
+• The crew is preparing to place 21 Hydrogen Recombiner in service
+o Containment Temperature PRIOR to the LOCA was 90 °F
+o CURRENT Containment Temperature is 120 °F
+o CURRENT Containment pressure as indicated on 2Pl-948A is 4.0 psig
+Which ONE of the following completes the statement below?
+The crew will set the 21 Recombiner Power setting to __ KW.
+A. 56
+B. 54
+C. 52
+D. 50
+Answer: B
+Page 94 of 226
+
+===== PAGE 95 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Incorrect but plausible. 56 KW is the calculated setting if the candidate correctly used the
+21 Hydrogen Recombiner Reference Power (43.68 KW) and incorrectly read Attachment
+2 to determine a Power Correction Factor (Cp) of 1.24.
+B. Correct. IAW S2.0P-SO.CAN-0001 Attachment 1 and Attachment 2:
+• Reference Power for 21 Hydrogen Recombiner is 43.68 KW
+• Power Correction Factor (Cp) per Attachment 2 (RECOMBINER POWER
+CORRECTION FACTOR CURVE) is 1.21
+Power setting= Reference Power X Power Correction Factor (Cp)
+Power setting = 43.68 X 1.21 = 52.85 which is rounded to 54 KW
+C. Incorrect but plausible. 52 KW is the calculated setting if the candidate incorrectly used
+the 22 Hydrogen Recombiner Reference Power (42.63 KW) and correctly read
+Attachment 2 to determine a Power Correction Factor (Cp) of 1.21
+D. Incorrect but plausible. 50 KW is the calculated setting if the candidate correctly used the
+21 Hydrogen Recombiner Reference Power (43.68 KW) and incorrectly read Attachment
+2 to determine a Power Correction Factor (Cp) of 1.15.
+Question Number: 32
+Tier: 2 Group 2
+KIA: 028 Hydrogen Recombiner and Purge Control System - K5.04
+Knowledge of the operational implications of the following concepts as they apply to the
+HRPS: The selective removal of hydrogen
+Importance Rating: 2.6
+10 CFR Part 55: 41.5 / 45.7
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must calculate Hydrogen
+Recombiner power setting following a LOCA.
+Page 95 of 226
+
+===== PAGE 96 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical S2.0P-SO.CAN-0001 Attachment 1 and Attachment 2
+References:
+Proposed references S2.0P-SO.CAN-0001 Attachment 1 and Attachment 2
+to be provided:
+Learning Objective: NOS05CONTMT-15 ( CONTAINMENT AND CONTAINMENT
+SUPPORT SYSTEMS)
+3. Describe how the following components impact the Containment
+and Containment Support Systems during normal and abnormal
+conditions
+a) Containment Fan Cooler System
+b) Containment Iodine Removal System
+c) Rod Drive Ventilation System
+d) Reactor Nozzle Support Ventilation System
+e) Reactor Shield Ventilation System
+f) Containment Pressure - Vacuum Relief System
+g) Hydrogen Recombiner System
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+---
+Modified Bank X
+Bank
+Question History:
+Comments:
+Page 96 of 226
+
+===== PAGE 97 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+33 Points: 1.00
+Given:
+• Fuel Handling activities are in progress in the Fuel Handling
+At time 0900
+• 2R32A (Fuel Handling Crane Radiation Monitor) fails high and the High Radiation Alarm for
+2R32A actuates
+Considering ONLY the following actions:
+1 . ALL crane motion is locked out
+2. ALL crane motion other than downward movement of suspended load is locked out
+3. FHB ventilation is transferred to HEPA and Charcoal Filters and FHB Exhaust Fans are
+started
+Which ONE of the following completes the statement below?
+With 2R32A failed high, ONLY Action(s) ___ will AUTOMATICALLY occur.
+A. 1 and 3
+B. 2 and 3
+C. 2
+D. 1
+Answer: C
+Page 97 of 226
+
+===== PAGE 98 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. FHB Ventilation will automatically on a high radiation on 2R5 and
+2R9. The candidate could incorrectly conclude that a high radiation within the FHB as
+read by 2R32A would also cause the FHB ventilation to automatically shift. Action 1 is
+partially correct as discussed in Distractor 'D'
+B. Incorrect but plausible. FHB Ventilation will automatically on a high radiation on 2R5 and
+2R9. The candidate could incorrectly conclude that a high radiation within the FHB as
+read by 2R32A would also cause the FHB ventilation to automatically shift (Action 3).
+Action 2 will automatically occur.
+C. Correct. With 2R32A failed high, ONLY Action 2 will AUTOMATICALLY occur.
+D. Incorrect but plausible. This distractor is partially correct. Consequently, the candidate
+could incorrectly conclude With 2R32A failed high, ONLY Action 1 will AUTOMATICALLY
+occur.
+Question Number: 33
+Tier: 2 Group 2
+KIA: 034 Fuel Handling Equipment System-K6.02
+Knowledge of the effect of a loss or malfunction on the following will have on the Fuel
+Handling System : Radiation monitoring systems
+Importance Rating: 2.6
+10 CFR Part 55: 41.5145.7
+10 CFR 55.43.b NIA
+KIA Match: KIA is matched because the candidate must know how the FHS is
+affected when 2R32A (a Radiation Monitor) malfunctions
+SRO Justification: NIA
+Technical S2.0P-AB.RAD-0001
+References:
+Page 98 of 226
+
+===== PAGE 99 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam- (APPROVED)
+Proposed references None
+to be provided:
+Learning Objective: NOS05ABRAD1-06 ( ABNORMAL RADIATION)
+1. Describe the operation of radiation monitors as applied to
+S2.0P-AB.RAD-0001 (Q):
+A. Radiation monitor response to high radiation; including
+actions that occur as a result of the channel in warning or
+alarm.
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 99 of 226
+
+===== PAGE 100 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+34 Points: 1.00
+Which ONE of the following completes the statement below?
+The Steam Dump 1/P converters are powered by _(1 )_ and a loss of power to the Steam
+Dump 1/P converters will cause the Steam Dumps to fail _(2)_.
+(1) (2)
+A. CID 115 VAC Instrument Bus closed
+B. CID 115 VAC Instrument Bus as-is
+voe
+C. A I B 125 Bus closed
+voe
+D. A I B 125 Bus as-is
+Answer: A
+Page 100 of 226
+
+===== PAGE 101 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+l
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A Correct. The Steam Dump 1/P converters are powered by 115 VAC and a loss of power
+to the Steam Dump 1/P converters will cause the Steam Dumps to fail closed.
+8. Incorrect but plausible. Part1 is correct. For Part 2, other components in the plant fail as
+is when power is lost. Consequently, the candidate could incorrectly conclude that the
+Steam Dumps fail as-is when power is lost to the 1/P converters.
+C. Incorrect but plausible. For Part 1, Steam Dump blocking solenoids are powered from
+125 VDC. Consequently, the candidate could incorrectly conclude that the Steam Dump
+1/P converters are also powered by 125 VDC. Part 2 is correct.
+D. Incorrect but plausible. For Part 1, Steam Dump blocking solenoids are powered from
+125 VDC. Consequently, the candidate could incorrectly conclude that the Steam Dump
+1/P converters are also powered by 125 VDC. For Part 2, other components in the plant
+fail as-is when power is lost. Consequently, the candidate could incorrectly conclude that
+the Steam Dumps fail as-is when power is lost to the 1/P converters.
+Question Number: 34
+Tier: 2 Group 2
+KIA: 041 Steam Dump System (SOS) and Turbine Bypass Control-K2.02
+Knowledge of bus power supplies to the following: ICS, normal and alternate power
+supply
+Importance Rating: 2.6
+10 CFR Part 55: 41.5 / 45.7
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know the power supply
+to the Steam Dump 1/P converters.
+SRO Justification: N/A
+Technical NOS05STDUMP-12
+References:
+Page 101 of 226
+
+===== PAGE 102 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Proposed references None
+to be provided:
+Learning Objective: NOS05STDUMP-12 ( STEAM DUMP SYSTEM)
+5. State the power supply to the following Steam Dump System
+components:
+a. Steam Dump System Electro-pneumatic (1/P) converters
+b. Steam Dump Valve Solenoids
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 102 of 226
+
+===== PAGE 103 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+35 Points: 1.00
+Given:
+• A 24 Gas Decay Tank (GOT) release is in progress in accordance with S2.0P-SO.WG-
+0011 (DISCHARGE OF 24 GAS DECAY TANK TO PLANT VENT)
+At time 12:00
+• 2R41 Channel A and Channel D High Radiation Alarms are received in the Control Room
+Which ONE of the following completes the statement below?
+At 12:00, will AUTOMATICALLY close which will terminate the 24 GOT release.
+---
+A. 24WG34 (GOT STOP TO PLNT)
+B. 2WG39 (GOT TO VENT HOR STOP V)
+C. 2WG38 (GOT VENT CONTROL VALVE)
+D. 2WG41 (GOT VENT CONT V)
+Answer: D
+Page 103 of 226
+
+===== PAGE 104 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Incorrect but plausible. All of the distractors are valves that are open during a 24 GOT
+release. Consequently, the candidate could incorrectly conclude that any one of the
+given WG valves would automatically close when 2R41 Channel D High Radiation Alarm
+actuates.
+B. Incorrect but plausible. All of the distractors are valves that are open during a 24 GOT
+release. Consequently, the candidate could incorrectly conclude that any one of the
+given WG valves would automatically close when 2R41 Channel D High Radiation Alarm
+actuates.
+C. Incorrect but plausible. All of the distractors are valves that are open during a 24 GOT
+release. Consequently, the candidate could incorrectly conclude that any one of the
+given WG valves would automatically close when 2R41 Channel D High Radiation Alarm
+actuates.
+D. Correct. 2WG41 will automatically close when the 2R41 Channel D High Radiation
+Alarm actuates.
+Question Number: 35
+Tier: 2 Group 2
+KIA: 071 Waste Gas Disposal System -A3.03
+Ability to monitor automatic operation of the Waste Gas Disposal System including:
+Radiation monitoring system alarm and actuating signals
+3.6 2.6
+10 CFR Part 55: 41.7/45.5
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must monitor automatic WG
+system response when 2R41 Channel D comes into alarm
+SRO Justification: N/A
+Page 104 of 226
+
+===== PAGE 105 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Technical NOS05WASGAS-10 (Radioactive Waste Gas)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05WASGAS-10 (Radioactive Waste Gas)
+5. Outline the interlocks associated with the following Radioactive
+Waste Gas System components:
+a) Waste Gas Compressors
+b) Waste Gas Decay Tank Inlet Valves (21-24WG29)
+c) Waste Gas Decay Tank Sample Isolation Valves (21-
+24WG42)
+d) Radioactive Gaseous Waste Release Valve 2WG41
+Cognitive Level:
+Higher
+---
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 105 of 226
+
+===== PAGE 106 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+36 Points: 1.00
+Given
+• 21 Fuel Handling Area Exhaust Fan is in service
+• 22 Fuel Handling Area Exhaust Fan is in standby
+• 21 HEPA ONLY Filter Unit is in service
+• HEPA 22 PLUS CHAR is in standby
+At time 17:00
+• 2R9 (Fuel Storage Area Monitor) goes into alarm
+Which ONE of the following completes the statement below?
+Five Minutes later at 17:05, _(1)_ Fuel Handling Area Exhaust Fan(s) and _(2)_ Filter
+Unit(s) is/ are in service.
+(1) (2)
+A. ONLY21 ONLY HEPA 22 PLUS CHAR
+B. ONLY21 21 HEPA ONLY AND HEPA 22 PLUS CHAR
+C. 21 and 22 ONLY HEPA 22 PLUS CHAR
+D. 21 and 22 21 HEPA ONLY AND HEPA 22 PLUS CHAR
+Answer: C
+Page 106 of 226
+
+===== PAGE 107 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that only the
+running fan (21) will be in service at 17:05. Part 2 is correct.
+B. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that only the
+running fan (21) will be in service at 17:05. For Part 2, the candidate could incorrectly
+conclude that BOTH HEPAs will be in service at 17:05.
+C. Correct. When 2R9 goes into alarm, BOTH Fuel Handling Area Fans receive an auto
+start signal and 21 HEPA ONLY Filter Unit Isolates while 22 HEPA PLUS CHAR filter unit
+automatically aligns. Consequently, at 17:05, 21 and 22 Fuel Handling Area Fans and
+ONLY HEPA 22 PLUS CHAR Filter Unit are in service.
+D. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could incorrectly
+conclude that BOTH HEPAs will be in service at 17:05.
+Question Number: 36
+Tier: 2 Group 2
+KIA: 072 Area Radiation Monitoring (ARM) System-G2.4.31
+Knowledge of annunciator alarms, indications, or response procedures
+Importance Rating: 4.2
+10 CFR Part 55: 41.10 / 45.3
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must know how the FHB
+ventilation system will respond when 2R9 ARM indications show the
+ARM in alarm condition.
+SRO Justification: N/A
+Technical S2.0P-AR.ZZ-0001 Alarm A-6
+References:
+Proposed references None
+to be provided:
+Page 107 of 226
+
+===== PAGE 108 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Learning Objective: NOS05FHVENT-09 (FUEL HANDLING AREA VENTILATION)
+7: Describe the interlocks associated with the following Fuel
+Handling Area Ventilation System components:
+a) Supply Fan Unit
+b) Exhaust Fan Controls
+c) Exhaust Filter Units.
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+--
+Modified Bank
+--
+Bank X
+Question History: ILOT 1601 AUDIT EXAM RO Q37
+Comments:
+Page 108 of 226
+
+===== PAGE 109 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+37 Points: 1.00
+Given
+• Unit 2 is at 25% Reactor Power and rising as part of plant startup
+At time 15:00
+• The Circulating Water Intake Structure becomes damaged resulting in four of the
+Circulators becoming out of service
+At time 15:01
+• The crew enters S2.0P-AB.CW-0001 (CIRCULATING WATER SYSTEM MALFUNCTION)
+Which ONE of the following completes the statement below?
+In accordance with S2.0P-AB.CW-0001, the crew is REQUIRED to
+---
+A. INITIATE a Rapid Load Reduction until condenser vacuum stabilizes within operational
+limits
+B. COMMENCE an IMMEDIATE controlled plant shutdown
+C. TRIP the Turbine
+D. TRIP the Reactor
+Answer: D
+Page 109 of 226
+
+===== PAGE 110 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. When 4 of the 6 circulators become nonfunctional, condenser
+backpressure will degrade. S2.0P-AB.CW-0001 CAS contains guidance to perform a
+Rapid Power to stabilize condenser backpressure. Consequently, the candidate could
+incorrectly conclude that given the current plant conditions, a rapid load reduction is
+required.
+B. Incorrect but plausible. S2.0P-AB.CW-0001 Attachment 7 contains guidance to perform
+an immediate controlled turbine shutdown. Consequently, the candidate could incorrectly
+conclude that given the current plant conditions, a controlled plant shutdown is required.
+C. Incorrect but plausible. S2.0P-AB.CW-0001 CAS contains guidance to trip the turbine if
+condenser backpressure is outside the allowable operating region and Reactor Power is
+less than P-9 (49%). Consequently, the candidate could incorrectly conclude that given
+the current plant conditions, a Turbine trip is required.
+D. Correct. IAW S2.0P-AB.CW-0001 CAS, with 4 or more circulators are out of service
+AND Reactor Power greater than or equal to P-10 (10%), then the crew is required to
+TRIP the Reactor.
+Question Number: 37
+Tier: 2 Group 2
+KIA: 075 Circulating Water System - A2.01
+Ability to (a) predict the impacts of the following malfunctions or operations on the
+circulating water system; and (b) based on those predictions, use procedures to correct,
+control, or mitigate the consequences of those malfunctions or operations: Loss of intake
+structure
+Importance Rating: 4.2
+10 CFR Part 55: 41.10 / 45.3
+10 CFR 55.43.b N/A
+Page 110 of 226
+
+===== PAGE 111 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA Match: K/A is matched because the candidate must know the procedural
+guidance of S2.0P-AB.CW-0001 (CIRCULATING WATER SYSTEM
+MALFUNCTION) following damage to the CW intake structure with
+Reactor Power initially at 25%.
+SRO Justification: N/A
+Technical S2.0P-AB.CW-0001
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05ABCW01-11 (CIRCULATING WATER SYSTEM
+(MALFUNCTION)
+5. Given a set of initial plant conditions
+A. Determine the appropriate abnormal procedure.
+B. Describe the plant response to actions taken in the
+abnormal procedure
+C. Describe the final plant condition that is established by
+the abnormal procedure
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 111 of 226
+
+===== PAGE 112 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+38 Points: 1.00
+Given
+• Firefighting activities are in progress
+• Fire Water Header pressure had lowered to a MINIMUM of 80 psig and it is now slowly
+rising.
+Which ONE of the following completes the statements below?
+Fire Pump #1 _(1 )_is/ are running.
+After firefighting activities are complete, the running Fire Pump(s) can be shutdown LOCALLY
+_(2)_.
+(1) (2)
+A. ONLY or REMOTELY
+B. ONLY ONLY
+C. and Fire Pump #2 or REMOTELY
+D. and Fire Pump #2 ONLY
+Answer: B
+Page 112 of 226
+
+===== PAGE 113 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Incorrect but plausible. Part 1 is correct. For Part 2, since the fire water pumps can be
+started locally or remotely, the candidate could incorrectly conclude that the running Fire
+Pump(s) can be shutdown locally or remotely.
+B. Correct. For Part 1, Fire Pump #1 starts when Fire Water Header pressure lowers to 85
+psig. Fire Pump #2 will start when Fire Water Header pressure lowers to 75 psig
+(following a time delay). Consequently, ONLY Fire Pump #1 is running. For Part 2, After
+firefighting activities are complete, the running Fire Pump(s) can be shutdown LOCALLY
+ONLY.
+C. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that BOTH
+Fire Water Pumps start when fire water header pressure falls below 85 psig.
+D. Incorrect but plausible. For Part 1, the candidate could incorrectly conclude that BOTH
+Fire Water Pumps start when fire water header pressure falls below 85 psig.
+Question Number: 38
+Tier: 2 Group 2
+KIA: 086 Fire Protection System (FPS) -A1 .05
+Ability to predict and/or monitor changes in parameters (to prevent exceeding design
+limits) associated with Fire Protection System operating the controls including: FPS
+lineups
+Importance Rating: 2.9
+10 CFR Part 55: 41.5 / 45.5
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must know how the FPS
+lineup changes during firefighting activities when fire water pressure
+lowers to a minimum of 80 psig.
+SRO Justification: N/A
+Page 113 of 226
+
+===== PAGE 114 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Technical NOS05FIRPR0-09 (FIRE PROTECTION SYSTEM)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05FIRPR0-09 (FIRE PROTECTION SYSTEM)
+7. Identify and describe the local controls, indications, and alarms
+associated with the Fire Protection System, including:
+a. The location of Fire Protection System local controls and
+indications.
+b. The function of Fire Protection System local controls and
+indications.
+c. The plant and conditions or permissives required Fire
+Protection System local controls to perform their
+intended function.
+d. The setpoints associated with the Fire Protection System
+local alarms.
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+---
+Bank
+Question History:
+Comments:
+Page 114 of 226
+
+===== PAGE 115 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+39 Points: 1.00
+Given:
+• A Temporary Administrative requirement needs to be implemented for the next 30 days
+In accordance with OP-AA-102-104 (PERTINENT INFORMATION PROGRAM), which ONE of the
+following completes the statement below?
+The _(1)_ or their designees will prepare and approve a _(1)_ Order to address the
+Temporary Administrative requirement.
+(1) (2)
+A. Operations Manager Standing
+B. Operations Manager Daily
+C. Shift Manager Standing
+D. Shift Manager Daily
+Answer: A
+Page 115 of 226
+
+===== PAGE 116 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+D/STRACTOR ANALYSIS:
+A. Correct. IAW OP-AA-102-104 (PERTINENT INFORMATION PROGRAM), Operations
+Management will issue a Standing Order to address the Temporary Administrative
+requirement. This is because the Temporary Administrative Requirement will last for 30
+days. Daily Orders are typically valid for one day, weekend or holiday period.
+B. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could incorrectly
+conclude that a requirement with a relative short finite date will be controlled as a Daily
+Order.
+C. Incorrect but plausible. For Part 1, the SM has responsibilities per the PERTINENT
+INFORMATION PROGRAM. Consequently, the candidate could incorrectly conclude
+that the SM does have the responsibility to prepare and approve Standing and Daily
+Orders. Part 2 is correct.
+D. Incorrect but plausible. For Part 1, the SM has responsibilities per the PERTINENT
+INFORMATION PROGRAM. Consequently, the candidate could incorrectly conclude
+that the SM does have the responsibility to prepare and approve Standing and Daily
+Orders. For Part 2, the candidate could incorrectly conclude that a requirement with a
+relative short finite date will be controlled as a Daily Order.
+Question Number: 39
+Tier: 3 Group
+KIA: G2.1.15
+Knowledge of administrative requirements for temporary management directives, such
+as standing orders, night orders, Operations memos, etc.
+Importance Rating: 2.7
+10 CFR Part 55: 41.10/45.12
+10 CFR 55.43.b NIA
+KIA Match: KIA is matched because the candidate must know the requirement
+for a standing order IAW OP-AA-102-104 (PERTINENT
+INFORMATION PROGRAM)
+Page 116 of 226
+
+===== PAGE 117 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical OP-AA-102-104 (PERTINENT INFORMATION PROGRAM)
+References:
+Proposed references None
+to be provided:
+Learning Objective: None
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+--
+Question History:
+Comments:
+Page 117 of 226
+
+===== PAGE 118 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+40 Points: 1.00
+Given:
+• Unit 2 is at 60% Reactor Power and stable
+At time 10:00:00
+• 23TB40 (Turbine Bypass Valve) goes fully open
+BYPASS
+TAVG
+Which ONE of the following completes the statements below?
+With 23TB40 open, Reactor power will rise _(1)_ 60% power.
+Considering ONLY the Steam Dump system design, 23TB40 will FIRST close when depressing
+BEZEL "OFF & RESET BYPASS TAVG" Pushbutton(s) _(2)_.
+(1) (2)
+A. and stabilize above A and B
+B. and stabilize above AorB
+C. then stabilize back at A and B
+D. then stabilize back at AorB
+Answer: B
+Page 118 of 226
+
+===== PAGE 119 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. Part 1 is correct. For Part 2, if the Steam Dump Train A and
+Train B Arming/ Blocking solenoids were in parallel, depressing BEZEL Pushbutton(s) A
+AND B would be the minimum pushbutton manipulation(s) required to close 23TB40.
+Additionally, for safety systems, only 1 train is required to be operating for the safety
+system to perform its safety function. Consequently, the operator could apply this logic to
+the steam dumps and incorrectly conclude that BOTH Trains of Steam Dumps need to be
+taken to OFF for 23TB40 to close.
+B. Correct. For Part 1, ALL TB40 Turbine Valves are rated for 5.33% flow each.
+Consequently, when 23TB40 fails open, steam flow from the SGs will increase by 5.33%
+and reactor Power will follow SG steam flow. Reactor power will then rise to
+approximately 65.33%. For Part 2, since the Steam Dump Train A and Train B Arming I
+Blocking solenoids are in series, depressing BEZEL Pushbutton(s) A ORB will remove
+air pressure to 23TB40 which will cause the valve to close.
+C. Incorrect but plausible. For Part 1, the candidate could incorrectly determine that with the
+turbine controls initially set at 60% that the turbine control valves will automatically
+throttle to maintain reactor power/ turbine load at 60%. Consequently, the candidate
+would then incorrectly conclude that when 23TB40 opens that the turbine control valves
+will automatically throttle more closed which would return reactor power back to the
+original setting of 60%. For Part 2, if the Steam Dump Train A and Train B Arming /
+Blocking solenoids were in parallel, depressing BEZEL Pushbutton(s) A AND B would be
+the minimum pushbutton manipulation(s) required to close 23TB40. Additionally, for
+safety systems, only 1 train is required to be operating for the safety system to perform its
+safety function. Consequently, the operator could apply this logic to the steam dumps
+and incorrectly conclude that BOTH Trains of Steam Dumps need to be taken to OFF for
+23TB40 to close.
+D. Incorrect but plausible. For Part 1, the candidate could incorrectly determine that with the
+turbine controls initially set at 60% that the turbine control valves will automatically
+throttle to maintain reactor power/ turbine load at 60%. Consequently, the candidate
+would then incorrectly conclude that when 23TB40 opens that the turbine control valves
+will automatically throttle more closed which would return reactor power back to the
+original setting of 60%. Part 2 is correct.
+Question Number: 40
+Tier: 3 Group
+Page 119 of 226
+
+===== PAGE 120 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA: G2.1.28
+Knowledge of the purpose and function of major system components and
+controls.
+Importance Rating: 4.1
+10 CFR Part 55: 41.7
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know the function of the
+Steam Dump OFF & Reset Bypass TAVG push buttons on the Steam
+Dump controller.
+SRO Justification: NIA
+Technical NOS05STDUMP-12 ( STEAM DUMP SYSTEM)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05STDUMP-12 ( STEAM DUMP SYSTEM)
+10. Identify and describe the Control Room controls, indications,
+and alarms associated with the Steam Dump System, including:
+a. The Control Room location of Steam Dump System
+control bezels and indications.
+b. The function of each Steam Dump System Control Room
+control and indication.
+c. The effect each Steam Dump System control has upon
+Steam Dump System components and operation.
+d. The plant conditions or permissives required for Steam
+Dump System Control Room controls to perform their
+intended function.
+e. The setpoints associated with the Steam Dump System
+control room alarms.
+Page 120 of 226
+
+===== PAGE 121 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New
+--
+Modified Bank
+--
+Bank X
+Question History: LOR 2018 Bl-ANNUAL WRITTEN EXAM
+Comments:
+Page 121 of 226
+
+===== PAGE 122 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+41 Points: 1.00
+Given:
+• Unit 2 is at 100% Reactor Power
+• Troubleshooting activities are in progress on CVCS
+• Per the troubleshooting plan, some CVCS valves will be manipulated in order to gather
+data
+In accordance with MA-AA-716-004 (CONDUCT OF TROUBLESHOOTING), which ONE of the
+following completes the statements below?
+Manipulation of CVCS valves to support the troubleshooting plan is considered a(n) _(1 )_
+activity.
+_(2)_ is responsible for ensuring the Troubleshooting Log adequately addresses the potential
+to affect core reactivity.
+(1) (2)
+A. Intrusive Operations
+B. Intrusive Engineering
+C. Non-Intrusive Operations
+D. Non-Intrusive Engineering
+Answer: A
+Page 122 of 226
+
+===== PAGE 123 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Correct. For Part 1 and IAW MA-AA-716-004 (CONDUCT OF TROUBLESHOOTING),
+Manipulation of CVCS valves to support the troubleshooting plan is considered a(n)
+Intrusive activity. For Part 2 and IAW MA-AA-716-004 (CONDUCT OF
+TROUBLESHOOTING), Operations is responsible for ensuring the Troubleshooting Log
+adequately addresses the potential to affect core reactivity.
+B. Incorrect but plausible. Part 1 is correct. For Part 2, Engineering has responsibilities per
+MA-AA-716-004 and Engineering performs Unreviewed Safety Questions screenings.
+Consequently, the candidate could incorrectly conclude that Engineering would do a USQ
+screening as part of the troubleshooting plan and the USQ screening would include a
+reactivity analysis.
+C. Incorrect but plausible. For Part1, since the valve manipulations do not include breaking
+into the system, the candidate could incorrectly conclude that manipulation of valves is
+considered a Non-Intrusive Activity. Part 1 is correct.
+D. Incorrect but plausible. For Part1, since the valve manipulations do not include breaking
+into the system, the candidate could incorrectly conclude that manipulation of valves is
+considered a Non-Intrusive Activity. For Part 2, Engineering has responsibilities per MA
+AA-716-004 and Engineering performs Unreviewed Safety Questions screenings.
+Consequently, the candidate could incorrectly conclude that Engineering would do a USQ
+screening as part of the troubleshooting plan and the USQ screening would include a
+reactivity analysis.
+Question Number: 41
+Tier: 3 Group
+KIA: G2.2.20
+Knowledge of the process for managing troubleshooting activities.
+Importance Rating: 2.6
+10 CFR Part 55: 41.10 / 43.5 / 45.13
+10 CFR 55.43.b N/A
+Page 123 of 226
+
+===== PAGE 124 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam- (APPROVED)
+KIA Match: KIA is matched because the candidate must know Troubleshooting
+requirements in accordance with MA-AA-716-004 (CONDUCT OF
+TROUBLESHOOTING)
+SRO Justification: NIA
+Technical MA-AA-716-004 (CONDUCT OF TROUBLESHOOTING)
+References:
+Proposed references None
+to be provided:
+Learning Objective: None
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 124 of 226
+
+===== PAGE 125 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam- (APPROVED)
+42 Points: 1.00
+In accordance with Unit 2 LCO 3.7.1.1 (TURBINE CYCLE SAFETY VALVES), which ONE of the
+following completes the statements below?
+The Main Steam Line Code Safety Valves will start to open when main steam line pressure FIRST
+exceeds _(1)_ psig.
+The purpose of LCO 3. 7 .1.1 is to limit the secondary system pressure to within 110% of its design
+pressure _(2)_.
+A. (1) 1100
+(2) ONLY
+8. (1) 1100
+(2) and to protect against overpressurization of the Reactor Coolant Pressure boundary
+C. (1) 1070
+(2) ONLY
+D. (1) 1070
+(2) and to protect against overpressurization of the Reactor Coolant Pressure boundary
+Answer: D
+Page 125 of 226
+
+===== PAGE 126 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+DISTRACTOR ANALYSIS:
+A. For Part 1, MSSVs have 5 different setpoints and 1100 psig is the second lowest setpoint
+for 21-24MS14s. For Part 2, the candidate could not recognize that the MSSVs also
+protect against overpressurization of the Reactor Coolant Pressure boundary.
+8. Incorrect but plausible. For Part 1, MSSVs have 5 different setpoints and 1100 psig is
+the second lowest setpoint for 21-24MS 14s . Part 2 is correct.
+C. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could not recognize
+that the MSSVs also protect against overpressurization of the Reactor Coolant Pressure
+boundary.
+D. Correct. For Part 1 and IAW LCO 3.7.1.1, the Main Steam Line Code Safety Valves will
+start to open when main steam line pressure FIRST exceeds 1070 psig. For Part 2 and
+IAW LCO 3.7.1.1, The purpose of LCO 3.7.1.1 is to limit the secondary system pressure
+to within 110% of its design pressure and to protect against overpressurization of the
+Reactor Coolant Pressure boundary.
+Question Number: 42
+Tier: 3 Group
+KIA: G2.2.25
+Knowledge of the bases in Technical Specifications for limiting conditions for operations
+and safety limits
+Importance Rating: 3.2
+10 CFR Part 55: 41.5/41.7 /43.2
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know LCO 3.7.1.1 bases
+information.
+SRO Justification: N/A
+Technical Technical Specifications (LCO 3.7.1.1)
+References:
+Page 126 of 226
+
+===== PAGE 127 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Proposed references None
+to be provided:
+Learning Objective: NOS05MSTEAM-12 (MAIN STEAM SYSTEM)
+11. Given a Technical Specification Limiting Condition for Operation
+(LCO), explain its basis.
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 127 of 226
+
+===== PAGE 128 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+43 Points: 1.00
+Given:
+At time 11 :45
+eves
+• 21 MT is being released in accordance with S2.0P-SO.WL-0001 (RELEASE OF
+eves
+RADIOACTIVE LIQUID WASTE FROM 21 MONITOR TANK)
+At time 12:00
+• 2FR 1064 (RADWASTE OVERBOARD DISCH FLOW RECORDER) becomes inoperable
+Which ONE of the following completes the statements below?
+The release will be via _(1)_.
+eves
+At 12:00, the crew _(2)_ REQUIRED to stop the release of 21 MT.
+(1) (2)
+A. SW ONLY is
+8. SW ONLY is NOT
+C. SW to CW is
+D. SW to CW is NOT
+Answer: C
+Page 128 of 226
+
+===== PAGE 129 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+DISTRACTOR ANALYSIS:
+A. Incorrect but plausible. For Part 1, the candidate could incorrectly that the release will be
+via SW ONLY. Part 2 is correct.
+B. Incorrect but plausible. For Part 1, the candidate could incorrectly that the release will be
+via SW ONLY. For Part 2, the candidate could fail to recognize that 2FR1064
+(RADWASTE OVERBOARD DISCH FLOW RECORDER) is required for the liquid waste
+release. Consequently, the candidate could incorrectly conclude that at 1200, the crew is
+NOT required to stop the release
+C. Correct. For Part 1 and IAW S2.0P-SO.WL-0002, during the release, 21 CVCS MT is
+being released via SW to CW. For Part 2 and IAW S2.0P-SO.WL-0001 Step 5.5.8, the
+crew is required to stop the release when 2FR1064 (RADWASTE OVERBOARD DISCH
+FLOW RECORDER) becomes inoperable.
+D. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could fail to recognize
+that 2FR1064 (RADWASTE OVERBOARD DISCH FLOW RECORDER) is required for
+the liquid waste release. Consequently, the candidate could incorrectly conclude that at
+1200, the crew is NOT required to stop the release.
+Question Number: 43
+Tier: 3 Group
+KIA: G2.3.11
+Ability to control radiation releases
+Importance Rating: 3.2
+10 CFR Part 55: 41.11 / 43.4 / 45.10
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must be able to control a
+radioactive liquid release IAW S2.0P-SO.WL-0001 (RELEASE OF
+RADIOACTIVE LIQUID WASTE FROM 21 eves MONITOR TANK).
+SRO Justification: N/A
+Page 129 of 226
+
+===== PAGE 130 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Technical S2.0P-SO.WL-0001 (RELEASE OF RADIOACTIVE LIQUID
+References: WASTE FROM 21 eves MONITOR TANK)
+Proposed references None
+to be provided:
+Learning Objective: NOS05WASLIQ-09 (RADIOACTIVE LIQUID WASTE SYSTEM)
+5. Draw a one-line diagram of the Radioactive Liquid Waste
+System which indicates the following:
+a. Major Radioactive Liquid Waste System Components
+b. Major Radioactive Liquid Waste System Flowpaths
+c. Waste liquid overboard through WL51
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+--
+Question History:
+Comments:
+Page 130 of 226
+
+===== PAGE 131 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam -(APPROVED)
+44 Points: 1.00
+Given:
+• An NEO has signed onto the appropriate RWP to perform work inside a HIGH Radiation
+Area
+In accordance with RP-AA-4000 (Personnel Conduct in Radiologically Controlled Areas), which
+ONE of the following completes the statements below?
+In order to ensure the dose limits of the RWP are not exceeded, RP-AA-4000 states that self
+reading dosimeters should be read approximately every _(1 )_ minutes while working in a
+HIGH Radiation Area.
+If an unexpected self-reading dosimeter comes into alarm, the NEO is REQUIRED to _(2)_
+and notify RP personnel.
+(1) (2)
+A. 30 go to a low dose area within the HRA
+B. 30 exit the HRA immediately
+C. 15 go to a low dose area within the HRA
+D. 15 exit the HRA immediately
+Answer: D
+Page 131 of 226
+
+===== PAGE 132 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. For Part 1, RP-AA-4000 states that self-reading dosimeters
+should be read approximately every 30 minutes while working in a Radiation Area.
+Consequently, the candidate could incorrectly conclude that self-reading dosimeters
+should always be read every 30 minutes. For Part 2, the candidate could incorrectly
+conclude that exiting the RA is not required until RP has verified the alarm is valid.
+Consequently, the candidate could incorrectly conclude that going to a low dose area and
+notifying RP is the required response IAW RP-AA-4000.
+B. Incorrect but plausible. For Part 1, RP-AA-4000 states that self-reading dosimeters
+should be read approximately every 30 minutes while working in a Radiation Area.
+Consequently, the candidate could incorrectly conclude that self-reading dosimeters
+should always be read every 30 minutes. Part 2 is correct.
+C. Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could incorrectly
+conclude that exiting the RA is not required until RP has verified the alarm is valid.
+Consequently, the candidate could incorrectly conclude that going to a low dose area and
+notifying RP is the required response IAW RP-AA-4000.
+D. Correct. For Part 1, RP-AA-4000 states that self-reading dosimeters should be read
+approximately every 15 minutes while working in a High Radiation Area. For Part 2, If an
+unexpected self-reading dosimeter comes into alarm, the NEO is REQUIRED to exit the
+area and notify RP personnel.
+Question Number: 44
+Tier: 3 Group
+KIA: G2.3.7
+Ability to comply with radiation work permit requirements during normal or abnormal
+conditions
+Importance Rating: 3.6
+10 CFR Part 55: 41. 7 / 41.10 / 43.1 / 45.13
+10 CFR 55.43.b N/A
+Page 132 of 226
+
+===== PAGE 133 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+KIA Match: KIA is matched because the candidate must know the requirements
+of working in a High Radiation Area in order to comply with an RWP
+IAW RP-AA-4000 (Personnel Conduct in Radiologically Controlled
+Areas).
+SRO Justification: N/A
+Technical NOS05RADCON-05 (RADIATION PROTECTION PROGRAM)
+References:
+Proposed references None
+to be provided:
+Learning Objective:
+NOS05RADCON-05 (RADIATION PROTECTION PROGRAM)
+6. In accordance with applicable station procedures:
+b) Describe the following posting requirements, as well as
+any applicable restrictions:
+i) Contaminated Area
+ii) High Contamination Area
+iii) Airborne Radioactivity Area
+iv) Radiation Area
+v) High Radiation Area
+vi) Locked High Radiation Area
+vii) Exclusion Area
+viii) Very High Radiation Area
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New
+--
+Modified Bank
+--
+Bank X
+Question History: ILOT 1601 NRC RO Q44
+# 3 OF 4 ALLOWABLE RO QUESTIONS randomly sampled
+Comments:
+from exam bank that was used on the last two Salem ILOT
+NRC Exams
+Page 133 of 226
+
+===== PAGE 134 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+45 Points: 1.00
+Given:
+• John Doe has received 1000 mrem routine cumulative TEDE this year
+• A SITE AREA EMERGENCY has just been declared
+• John Doe is preparing to go into an area to mitigate the casualty
+o The area has a general dose rate of 1000 mrem / hour
+In accordance with RP-AA-203 (Exposure Control and Authorization) and NC.EP-EP.ZZ-0304
+(OPERATIONAL SUPPORT CENTER (OSC) RADIATION PROTECTION RESPONSE), which
+ONE of the following completes the statement below?
+John Doe can work in the area for a MAXIMUM of ___ minutes without exceeding his
+ADMINISTRATIVE dose limits for the year.
+A. 60
+B. 180
+C. 210
+D. 240
+Answer: C
+Page 134 of 226
+
+===== PAGE 135 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+D/STRACTOR ANAL YS/S:
+A Incorrect but plausible. 60 Minutes would be the stay time if the candidate used the
+normal administrative limit of 2000 mrem.
+B. Incorrect but plausible. 180 Minutes would be the stay time if the candidate incorrectly
+concluded that the administrative dose limit is automatically raised to 4000 mrem.
+C. Correct. IAW RP-AA-203, the Administrative Dose Limit for routine work is 2000 mrem
+TEDE. When the Site Area Emergency is declared, then IAW NC.EP-EP.ZZ-0304, the
+administrative dose limit is automatically raised to 4500 mrem. Consequently, the worker
+can work (4500 - 1000) / 1000 = 3.5 hours or 210 minutes in the area.
+D. Incorrect but plausible. 240 Minutes would be the stay time if the candidate incorrectly
+concluded that the administrative dose limit is automatically raised to 5000 mrem.
+Question Number: 45
+Tier: 3 Group
+KIA: G2.3.4
+Knowledge of radiation exposure limits under normal or emergency conditions
+Importance Rating: 3.9
+10 CFR Part 55: 41.7 / 41.10 / 43.2 / 45.13
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know the administrative
+dose limit during a Site Area Emergency to calculate a stay time.
+SRO Justification: N/A
+Technical RP-AA-203
+References: NC.EP-EP.ZZ-0304
+Proposed references None
+to be provided:
+Page 135 of 226
+
+===== PAGE 136 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam -(APPROVED)
+Learning Objective: NOS05RADCON-05 (RADIATION PROTECTION PROGRAM)
+2. List the following external radiation exposure limits, in
+accordance with Station Procedures, 1O CFR20, and Reg. Guide
+8.13:
+a) 1O CFR20 dose limits for external, internal, and total
+whole body, skin, extremities, and eyes, as well as
+extension limits and requirements
+b) Administrative dose control levels for Radiation Workers,
+as well as extension limits and requirements
+c) Reg. Guide 8.13 limits and administrative dose control
+levels for Declared Pregnant Women
+d) 1O CFR20 and Administrative limits for members of the
+general public and minors
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Page 136 of 226
+
+===== PAGE 137 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+46 Points: 1.00
+Given:
+• The crew is monitoring the Critical Safety Functions
+• The following parameters are observed:
+o Containment Pressure is 5.8 psig
+o Power Range NI is 2.1 % with an IR SUR of(+) 0.1 DPM
+o RCS Subcooling is(-) 15 °F
+o ALL RCPs are stopped
+o 8 CETs are reading 750 °F
+o RVLIS Full Range is 41 %
+o 21 SG NR Level is 10%, 22 SG NR Level is 7%, 22 SG NR Level is 8% and 24 SG
+NR Level is 9%
+o Total AFW flow to SGs is O LB/ HR
+o BOTH Containment Spray Pumps are stopped
+o Containment Sump is 63%
+o R-44 Radiation is reading 5 R / HR
+Which ONE of the following completes the statements below?
+Based on the Functional Restoration Implementation Priority, the crew is required to FIRST
+address the challenge to ___
+A. Containment Environment
+B. Shutdown Margin
+C. Core Cooling
+D. Heat Sink
+Page 137 of 226
+
+===== PAGE 138 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Answer: D
+I Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Incorrect but plausible. The candidate could incorrectly analyze plant conditions and
+incorrectly determine Containment Environment must first be addressed.
+B. Incorrect but plausible. The candidate could incorrectly analyze plant conditions and
+incorrectly determine Shutdown Margin must first be addressed.
+C. Incorrect but plausible. The candidate could incorrectly analyze plant conditions and
+incorrectly determine Core Cooling.
+D. Correct. IAW OP-AA-101-111-1003, CSF Hierarchy (high to low) is SHUTDOWN
+MARGIN, CORE COOLING, HEAT SINK, THERMAL SHOCK, CONTAINMENT
+ENVIRONMENT and COOLANT INVENTORY. Additionally, CFST Color Hierarchy (high
+to low) is red, purple, yellow, and green. Based on the plant conditions and IAW 2-EOP
+CFST-1 the status trees are: Shutdown Margin (Purple), Core Cooling (Purple), Core
+Cooling (Red) and Containment Environment (Green). Consequently, the crew is
+required to FIRST address the challenge to Heat Sink.
+Question Number: 46
+Tier: 3 Group
+KIA: G2.4.22
+Knowledge of the bases for prioritizing safety functions during abnormal/emergency
+operations
+Importance Rating: 3.6
+10 CFR Part 55: 41.7 /41.10/43.5/45.12
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must know the bases of how
+to prioritize implementing Functional Restoration Procedures (part of
+the EOP network) by actually prioritizing FRP implementation IAW
+OP-AA-101-111-1003 (Use Of Procedures).
+SRO Justification: N/A
+Page 138 of 226
+
+===== PAGE 139 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+Technical NOS05PROCED-08 (USE AND CONTROL OF PROCEDURES)
+References: 2-EOP-CFST-1 ( CRITICAL SAFETY FUNCTION STATUS
+TREES)
+Proposed references None
+to be provided:
+Learning Objective: NOS05PROCED-08 (USE AND CONTROL OF PROCEDURES)
+5. Implement Rules Of Usage For Emergency Operating
+Procedures
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+--
+Question History:
+Comments:
+Page 139 of 226
+
+===== PAGE 140 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam -(APPROVED)
+47 Points: 1.00
+Which ONE of the following completes the statements below?
+In accordance with Unit 2 LCO 3.3.3.7 (ACCIDENT MONITORING INSTUMENTATION),
+2PT-403 (RCS Pressure) and 2PT-405 (RCS Pressure) _(1)_ credited as accident
+monitoring instrumentation.
+2PT-403 and 2PT-405 provide input to the Pressurizer Overpressure Protection System (POPS)
+_(2)_.
+(1) (2)
+A. are ONLY
+B. are and to the RVLIS Electronics Cabinets
+C. are NOT ONLY
+D. are NOT and to the RVLIS Electronics Cabinets
+Answer: B
+Page 140 of 226
+
+===== PAGE 141 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+l
+Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Incorrect but plausible. Part 1 is correct. For part 2, the candidate could incorrectly
+conclude that 2PT-403 and 2PT-405 provide input to the Pressurizer Overpressure
+Protection System (POPS) ONLY.
+B. Correct. For Part 1and IAW LCO 3.3.3.7 (ACCIDENT MONITORING
+INSTUMENTATION), 2PT-403 (RCS Narrow Range Pressure) and 2PT-405 (RCS Wide
+Range Pressure) are credited as accident monitoring instrumentation. For Part 2, 2PT-
+403 and 2PT-405 provide input to the Pressurizer Overpressure Protection System
+(POPS) and to the RVLIS Electronics Cabinets.
+C. Incorrect but plausible. The candidate could incorrectly conclude that In accordance with
+Unit 2 LCO 3.3.3.7 (ACCIDENT MONITORING INSTUMENTATION), 2PT-403 (RCS
+Pressure) and 2PT-405 (RCS Pressure) are not credited as accident monitoring
+instrumentation. For part 2, the candidate could incorrectly conclude that 2PT-403 and
+2PT-405 provide input to the Pressurizer Overpressure Protection System (POPS)
+ONLY.
+D. Incorrect but plausible. The candidate could incorrectly conclude that In accordance with
+Unit 2 LCO 3.3.3.7 (ACCIDENT MONITORING INSTUMENTATION), 2PT-403 (RCS
+Pressure) and 2PT-405 (RCS Pressure) are not credited as accident monitoring
+instrumentation. Part 2 is correct.
+Question Number: 47
+Tier: 3 Group
+KIA: G2.4.3
+Ability to identify post-accident instrumentation
+Importance Rating: 3.7
+10 CFR Part 55: 41.6 / 45.4
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must be able to identify post
+accident instrumentation IAW Technical Specifications.
+Page 141 of 226
+
+===== PAGE 142 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical Technical Specifications (LCO 3.3.3.7)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05TECHSPEC-12 ( TECHNICAL SPECIFICATIONS)
+10. Describe the general component and parameter categories that
+are addressed by Technical Specification Sections 3/4.1
+through 3/4.12.
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 142 of 226
+
+===== PAGE 143 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+48 Points: 1.00
+Given:
+• Unit 2 is at 100% Reactor Power and stable
+At time 02:00:00
+• The crew enters S2.0P-AB.CR-0001 (Control Room Evacuation)
+• The Reactor Trip has been confirmed
+• The Turbine has been successfully tripped
+In accordance with S2.0P-AB.CR-0001, which ONE of the following completes the statements
+below?
+S2.0P-AB.CR-0001 (Control Room Evacuation) is implemented when the Control Room is
+evacuated as the result of a(n) _(1 )_.
+If Control Room conditions permit, the crew _(2)_ INITIATE a Main Steam Isolation prior to
+evacuating the Control Room.
+(1) (2)
+A. security event will
+B. security event will NOT
+C. uncontrolled fire in the Control Room will
+D. uncontrolled fire in the Control Room will NOT
+Answer: A
+Page 143 of 226
+
+===== PAGE 144 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam- (APPROVED)
+I Answer Explanation
+DISTRACTOR ANAL YS/S:
+A. Correct. For Part 1, S2.0P-AB.CR-0001 (Control Room Evacuation) is implemented
+when the Control Room is evacuated as the result of a security event. For Part 2 and
+IAW S2.0P-AB.CR-0001, the crew will initiate a Main Steam Isolation as part of the
+immediate actions.
+B. Incorrect but plausible. Part 1 is correct. For Part 2, EOP-TRIP-1 only requires initiating
+a Main Steam Line Isolation if the turbine can not be tripped. Since the Turbine was
+successfully tripped, the candidate could incorrectly conclude that initiating a Main Steam
+isolation is not required per S2.0P-AB.CR-0001.
+C. Incorrect but plausible. For Part 1, there is another Abnormal Procedure that deals with a
+control evacuation due to a fire. Consequently, the candidate could incorrectly conclude
+that S2.0P-AB.CR-0001 (Control Room Evacuation) is implemented when the Control
+Room is evacuated as the result of an uncontrolled fire in the control room. Part 2 is
+correct.
+D. Incorrect but plausible. For Part 1, there is another Abnormal Procedure that deals with a
+control evacuation due to a fire. Consequently, the candidate could incorrectly conclude
+that S2.0P-AB.CR-0001 (Control Room Evacuation) is implemented when the Control
+Room is evacuated as the result of an uncontrolled fire in the control room. For Part 2,
+EOP-TRIP-1 only requires initiating a Main Steam Line Isolation if the turbine can not be
+tripped. Since the Turbine was successfully tripped, the candidate could incorrectly
+conclude that initiating a Main Steam isolation is not required per S2.0P-AB.CR-0001.
+Question Number: 48
+Tier: 3 Group
+KIA: G2.4.11
+Knowledge of abnormal condition procedures
+Importance Rating: 4.0
+10 CFR Part 55: 41.10 / 43.5 / 45.13
+10 CFR 55.43.b N/A
+KIA Match: KIA is matched because the candidate must be have knowledge of
+the immediate actions of an Abnormal Procedure (S2.0P-AB.CR-
+0001 (Control Room Evacuation)).
+Page 144 of 226
+
+===== PAGE 145 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical S2.0P-AB.CR-0001
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05ABCR01-05 (Control Room Evacuation)
+2 Describe, in general terms, the actions taken in S1/S2.0P
+AB.CR-0002(Q) and the bases for the actions
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New
+--
+Modified Bank X
+Bank
+Question History: Modified from ILOT 1601 AUDIT RO 069
+Comments:
+Page 145 of 226
+
+===== PAGE 146 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+49 Points: 1.00
+Given:
+• Unit 1 is at 100% Reactor Power and stable
+At time 10:00:00
+• A valid AUTOMATIC reactor trip signal is generated by RPS but the Reactor Trip Breakers
+do NOT open
+At time 10:00:03
+• The Immediate Actions of 1-EOP-TRIP-1 (Reactor Trip Or Safety Injection) have been
+initiated
+In accordance with 1-EOP-TRIP-1, which ONE of the following completes the statements below?
+At 10:00:03, the RO will attempt to manually trip the Reactor by FIRST actuating the _(1)_.
+If the Reactor can NOT be tripped using the Trip Breaker BEZELS or the Reactor Trip Switches,
+the crew's NEXT action will be to _(2)_.
+(1) (2)
+A. Trip Breaker BEZELS initiate Rod Insertion
+B. Trip Breaker BEZELS open Breakers 1E 6D and 1G 6D
+C. Reactor Trip Switches (Pistol Grips) initiate Rod Insertion
+D. Reactor Trip Switches (Pistol Grips) open Breakers 1 E6D and 1G 6D
+Answer: D
+Page 146 of 226
+
+===== PAGE 147 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I Answer Explanation
+D/STRACTOR ANAL YS/S:
+A Incorrect but plausible. For Part 1 and IAW EOP-TRIP-1, actuating the Reactor Trip
+BEZELS is the second option to trip the reactor manually. Consequently, the candidate
+could incorrectly conclude that using the BEZELS is the actual first required immediate
+action. For Part 2, initiating Rod Insertion is part of the Immediate Actions of EOP-TRIP-
+1 (Step 2.2). Consequently, given the plant conditions, the candidate could incorrectly
+the crew's NEXT action is to initiate Rod insertion.
+B. Incorrect but plausible. For Part 1 and IAW EOP-TRIP-1, actuating the Reactor Trip
+BEZELS is the second option to trip the reactor manually. Consequently, the candidate
+could incorrectly conclude that using the BEZELS is the actual first required immediate
+action. Part 2 is correct.
+C. Incorrect but plausible. Part 1 is correct. For Part 2, initiating Rod Insertion is part of the
+Immediate Actions of EOP-TRIP-1 (Step 2.2). Consequently, given the plant conditions,
+the candidate could incorrectly the crew's NEXT action is to initiate Rod insertion.
+D. Correct. 1-EOP-TRIP-1 IMMEDIATE ACTIONS are expected to be performed from
+memory and in order. For Part 1and IAW 1-EOP-TRIP-1 Step 1, the RO will attempt to
+trip the Reactor manually by FIRST actuating the Reactor Trip Switches. For Part 2 and
+IAW 1-EOP-TRIP-1 Step 1, if the Reactor can NOT be tripped using the Trip Breaker
+BEZELS or the Reactor Trip Switches, the crew's NEXT action will be to open Breakers
+1E 6D and 1G 6D.
+Question Number: 49
+Tier: 1 Group 1
+--
+KIA: EPE: 007 Reactor Trip-EK2.02
+Knowledge of the interrelations between a reactor trip and the following: Breakers,
+relays and disconnects
+Importance Rating: 2.6
+10 CFR Part 55: 41.7 / 45.7
+10 CFR 55.43.b NIA
+KIA Match: KIA is matched because the candidate must know the procedural
+guidance of EOP-TRIP-1 (Reactor Trip Or Safety Injection) when the
+Reactor Trip Breakers fail to open.
+Page 147 of 226
+
+===== PAGE 148 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+SRO Justification: N/A
+Technical 1-EOP-TRIP-1 (Reactor Trip Or Safety Injection)
+References:
+Proposed references None
+to be provided:
+Learning Objective: NOS05TRP001-08 ( REACTOR TRIP OR SAFETY INJECTION)
+16 State the Immediate Actions of EOP-TRIP-1
+Cognitive Level:
+Higher
+--
+Lower X
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 148 of 226
+
+===== PAGE 149 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRG Exam - (APPROVED)
+50 Points: 1.00
+Given:
+• Unit 2 is at 100% Reactor Power
+• 23 Charging Pump is in service
+• Charging Flow is 88 GPM
+At time 11 :25:00
+• Pressurizer pressure starts to lower due to 2PR3 (PZR SAFET VLV) seat leakage
+At time 11 :27:00 (2 Minutes Later)
+• Pressurizer pressure is 2100 psig and lowering
+At time 11 :29:00 (4 Minutes Later)
+• Pressurizer pressure is 1910 psig and lowering
+• An AUTOMATIC Reactor Trip occurs
+Which ONE of the following completes the statement below?
+At 11 :27, Charging Flow is ___ 88 GPM.
+At 11 :29, the FIRST- OUT alarm indicates that the Reactor tripped on _(2)_.
+(1) (2)
+A. greater than OTLiT
+B. greater than OPLiT
+C. less than OTLiT
+D. less than OPLiT
+Answer: A
+Page 149 of 226
+
+===== PAGE 150 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+I
+Answer Explanation
+D/STRACTOR ANAL YS/S:
+A. Correct. For Part 1, with seat leakage of the PZR Safety Valve, actual PZR level will
+lower below program level. Consequently, the master flow controller will automatically
+raise charging flow in an effort to raise PZR level. Consequently, at 11 :27, Charging
+Flow is greater than 88 GPM (the original charging flow prior to the malfunction). For
+Part 2, the OTLlT Reactor Trip setpoint is variable and will be automatically lowered as
+RCS pressure lowers. Consequently, at 11 :29, the FIRST- OUT alarm indicates that the
+Reactor tripped on OTL l T.
+B. Incorrect but plausible. Part 1 is correct. For Part 2, OPLlT is also a variable Reactor
+Trip setpoint that changes as AFD changes. Consequently, the candidate could
+incorrectly conclude that the OPLl T Reactor Trip setpoint changes as RCS pressure
+changes. This would then cause the candidate to incorrectly conclude that at 11 :29, the
+FIRST- OUT alarm indicates that the Reactor tripped on OPLlT.
+C. Incorrect but plausible. For Part 1, since the PZR Safety Valves are located on top of the
+PZR, the candidate could incorrectly conclude that PZR level actually rises due to the
+PZR Safety Valve seat leakage. When PZR level rises above program level, the master
+flow controller will actually lower charging flow below 88 GPM (the original charging flow
+prior to the malfunction). Part 2 is correct.
+D. Incorrect but plausible. For Part 1, since the PZR Safety Valves are located on top of the
+PZR, the candidate could incorrectly conclude that PZR level actually rises due to the
+PZR Safety Valve seat leakage. When PZR level rises above program level, the master
+flow controller will actually lower charging flow below 88 GPM (the original charging flow
+prior to the malfunction). For Part 2, OPLl Tis also a variable Reactor Trip setpoint that
+changes as AFD changes. Consequently, the candidate could incorrectly conclude that
+the OPLlT Reactor Trip setpoint changes as RCS pressure changes. This would then
+cause the candidate to incorrectly conclude that at 11 :29, the FIRST- OUT alarm
+indicates that the Reactor tripped on OPLl T.
+Question Number: 50
+Tier: 1 Group 1
+--
+KIA: APE: 008 Pressurizer (PZR) Vapor Space Accident-AK2.03
+Knowledge of the interrelations between the Pressurizer Vapor Space Accident and the
+following: Controllers and positioners
+Importance Rating: 2.5
+Page 150 of 226
+
+===== PAGE 151 =====
+EXAMINATION ANSWER KEY
+Salem ILOT 17-01 RO NRC Exam - (APPROVED)
+10 CFR Part 55: 41.7 I 45.7
+10 CFR 55.43.b N/A
+KIA Match: K/A is matched because the candidate must understand how the
+master flow controller responds at the initial stages of a Vapor Space
+LOCA
+SRO Justification: N/A
+Technical NOS05FLUNCY-09 (LICENSED OPERATOR FLUENCY LIST)
+References:
+NOS05CVCS00-16 ( CHEMICAL AND VOLUME CONTROL
+SYSTEM)
+Proposed references None
+to be provided:
+Learning Objective: NOS05CVCS00-16 ( CHEMICAL AND VOLUME CONTROL
+SYSTEM)
+Given plant conditions, relate the Chemical and Volume Control
+System and the following:
+a. Pressurizer Level Control System
+Cognitive Level:
+Higher X
+Lower
+Question Source
+New X
+Modified Bank
+--
+Bank
+Question History:
+Comments:
+Page 151 of 226
+
