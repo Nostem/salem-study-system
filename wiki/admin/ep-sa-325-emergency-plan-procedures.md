@@ -87,9 +87,16 @@ General Emergency classification and ICMF completion (time-critical, <span class
 Emergency classification and ICMF completion (time-critical, <span class="hi-exam">15/15 minutes</span>): loss of all AC power to Unit 2 (3 EDGs + 2 SPTs lost) classifies as <span class="hi-exam">GENERAL EMERGENCY per EAL SG1.1 (Section S — System Malfunction, S1 Loss of AC Power)</span>. ICMF Attachment 4 (EP-SA-325-F4) Sections I-V. PAR determination via Appendix 1: not based on loss of 3 fission product barriers, not hostile action — select <span class="hi-exam">Default PAR (No RPSA): Evacuate 0-5 miles, Monitor & Prepare 5-10 miles</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q86</div>
+EAL#CA4.1 (ALERT — Loss of RHR): with RCS intact and RCS temperature &gt; <span class="hi-exam">200 &deg;F for 60 minutes</span>, criteria for declaring an ALERT are met. Key calculation: determine heatup rate from AB.RHR-0001 Attachment 5 (before or after offload curve based on plant status), calculate time to exceed 200 &deg;F, then add 60 minutes. <span class="hi-trap">Must use the correct heatup curve — before offload (5 &deg;F/min for 2 days after shutdown) vs after offload (3.4 &deg;F/min).</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[EDGs]], [[4KV]]
-- Related exam questions: [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]]
+- Related procedures: [[EP-SA-111-F4 — Protective Action Recommendations]]
+- Related systems: [[RPS/SSPS]], [[EDGs]], [[4KV]], [[RHR]]
+- Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
+- Related exam questions: [[2019 Q86]], [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]]
 - Related JPMs: [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]], [[2020 JPM RO-A4]], [[2020 JPM SRO-A5]]
-- Related exam: [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

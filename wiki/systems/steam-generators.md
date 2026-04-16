@@ -142,11 +142,16 @@ Restoring feed to a dry SG (EOP-FRHS-1): when CETs are stable or lowering, feed 
 21 SG tube rupture (650 gpm ramped over 5 minutes). Diagnostic indications: <span class="hi-exam">RCS pressure and PZR level lowering, 2R15 condenser off-gas rad monitor in alarm (OHA A-6)</span>. SGTR-1 isolation of 21 SG: close <span class="hi-exam">21AF21, 21AF11</span> (feed — CT-18 Part 1), close <span class="hi-exam">21MS167</span> (steam — CT-18 Part 2), <span class="hi-exam">21MS18, 21MS7, 21GB4</span> already closed. Set 21MS10 to 1045 psig. Trip 23 AFW pump, lower speed to minimum first. Dispatch to close <span class="hi-exam">21MS45 and 2SS321</span>. Target cooldown temp from Table B: SG press >1000 psig = <span class="hi-exam">503 F CETs</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q53</div>
+SG shrink/swell on RCP shaft shear: when 13 RCP shaft shears at 25% power, <span class="hi-exam">steam flow from 13 SG lowers significantly</span> (reduced RCS flow through the SG tubes means less heat transfer to the secondary). The reduction in steam production causes <span class="hi-exam">13 SG NR Level to initially SHRINK</span> (reduced voiding in the SG → apparent level drop). <span class="hi-trap">Trap: swell occurs when steam flow INCREASES (e.g., turbine trip reduces steam demand → pressure rise → less boiling initially, but more commonly steam flow increase causes more voiding). In this case, steam flow DECREASES, causing shrink.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
+- Related exam questions: [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

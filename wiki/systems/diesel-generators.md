@@ -71,6 +71,18 @@ When the EDG is paralleled to the grid for surveillance testing: <span class="hi
 Each EDG has <span class="hi-exam">4 air start motors total</span>, supplied by <span class="hi-exam">2 starting air receivers</span>. Each receiver supplies <span class="hi-exam">2 air start motors (one train)</span>. Each receiver is capable of <span class="hi-exam">3 cold starts</span>. Two air start motors start the diesel in <span class="hi-exam">&lt; 10 seconds</span>. Just one air start motor can start the diesel within <span class="hi-exam">14 seconds</span>. Rated speed is <span class="hi-exam">900 RPM</span>. With one air receiver isolated, the remaining receiver and its 2 motors <span class="hi-exam">will start the EDG and achieve rated speed in &le; 13 seconds</span>. <span class="hi-trap">Each receiver supplies only 2 of the 4 air start motors — NOT all four. Loss of one receiver does not prevent EDG start.</span>
 </div>
 
+## EDG Lube Oil Setpoints
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q79</div>
+EDG Engine Lube Oil Header Low Pressure: <span class="hi-exam">alarm at <span class="val-alarm">60 psig</span>, trip at <span class="val-trip">40 psig</span></span>. Per S2.OP-AR.DG-0001, the EDG trips when lube oil header pressure FIRST lowers below 40 psig. <span class="hi-trap">Trap: the alarm actuates at 60 psig — 20 psi above the trip setpoint. The trip is at 40, not 60.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q83</div>
+EDG Lube Oil Hi Temp: local alarm at <span class="val-alarm">190 &deg;F</span>, EDG <span class="hi-exam">trips at <span class="val-trip">205 &deg;F</span></span>. Per 2B DG Alarm Response Manual, the EDG tripped when Lube Oil Temperature FIRST exceeded 205 &deg;F. <span class="hi-trap">Trap: 190 &deg;F is the alarm setpoint, not the trip setpoint. The trip occurs at 205 &deg;F.</span>
+</div>
+
 ## Diesel Generator Trip Functions
 
 DGs have protective trips that are bypassed during emergency start (SI or loss of voltage) to ensure the DG remains running when needed. Only certain trips remain active during emergency operation. (UFSAR 8.3.1.5.2)
@@ -127,7 +139,7 @@ EDG operability with degraded SW: 1A EDG fails surveillance and declared INOPERA
 
 ## Connections
 
-- Related exam questions: [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
+- Related exam questions: [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
 - Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
 - Related JPMs: [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]

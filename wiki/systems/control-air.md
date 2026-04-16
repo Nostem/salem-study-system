@@ -55,6 +55,11 @@ SBO Diesel Control Air Compressor start (SC.OP-SO.CA-0001): during loss of offsi
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q61</div>
+ECACs are manually started when CA headers lower to <span class="hi-exam val-alarm">88 psig</span>. <span class="hi-trap">100 psig is the threshold for starting the remaining Station Air Compressor, not the ECAC manual start setpoint.</span> Check valves in the CA system <span class="hi-exam">prevent ECACs from supplying the BF19 headers</span> — ensuring proper BF19 operation is NOT a reason to start ECACs.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q27</div>
 CA330 (Control Air Isolation Valves) operability and isolation: IAW <span class="hi-exam">LCO 3.6.3 (Containment Isolation Valves), CA330s are required to be OPERABLE in MODES 1-4 ONLY</span>. The CA330s automatically close on a <span class="hi-exam">Phase A Containment Isolation signal, which is generated when containment pressure FIRST exceeds <span class="val-trip">4 psig</span></span>. <span class="hi-trap">Trap: 15 psig is the Phase B setpoint — CA330s close on Phase A (4 psig), NOT Phase B (15 psig). Also, LCO 3.6.3 applies in Modes 1-4, not ALL MODES.</span>
 </div>
@@ -64,7 +69,7 @@ CA330 (Control Air Isolation Valves) operability and isolation: IAW <span class=
 - Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]]
 - Related procedures: [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]]
-- Related exam questions: [[2019 Q27]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
+- Related exam questions: [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
 - Related JPMs: [[2020 JPM IP-j]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]

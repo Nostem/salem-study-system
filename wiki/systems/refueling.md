@@ -39,10 +39,15 @@ Per IOP-7, before de-tensioning the first Rx Head Stud (entering MODE 6):<br>
 <span class="hi-trap">168 hours subcritical (TS 3.9.3) and continuous CR-refuel-floor communications are NOT required for de-tensioning — the former applies to irradiated fuel movement, the latter to core alterations.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q68</div>
+Canal gate valve mechanical interlock: the valve can ONLY be <span class="hi-exam">FULLY closed when the fuel transfer cart is inside containment</span>. Per AB.FUEL-0001, the canal gate valve will be closed during any fuel handling incident. <span class="hi-trap">The interlock requires the cart to be inside containment — not in the Fuel Handling Building — for the valve to fully close.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[FHV]], [[Radiation Monitoring]]
 - Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related exam questions: [[2019 Q33]], [[2020 Q23]], [[2020 Q94]], [[2022 Q62]], [[2020 Q82]]
+- Related exam questions: [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

@@ -58,10 +58,16 @@ Event 4: 24 Loop Cold Leg RTD fails high (value 630 F) causing continuous rod in
 During rod surveillance at Step 5.1.11.C, when rod bank selector switch placed in AUTO, <span class="hi-exam">continuous rod insertion occurs in both AUTO and MANUAL</span>. Operator announces rods stepping in with no runback, places switch to Manual — rod motion does NOT stop. Recognizes situation and <span class="hi-exam">manually trips the reactor</span>. Same discriminating step concept tested across 2020, 2022, and 2023 exam cycles.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q67</div>
+Entry conditions: rods <span class="hi-exam">withdraw OR insert</span> a MINIMUM of <span class="hi-exam">3 steps</span> at steady state conditions. <span class="hi-trap">2 steps of rod motion can occur from process noise (per the AB.ROD-0003 basis) and does NOT warrant procedure entry. The entry threshold is 3 steps, not 2.</span> <span class="hi-trap">Entry applies to BOTH withdrawal and insertion — not withdrawal ONLY.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[Steam Dumps]]
+- Related systems: [[RPS/SSPS]], [[Steam Dumps]], [[Control Rod Drive]]
 - Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
+- Related exam questions: [[2019 Q67]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

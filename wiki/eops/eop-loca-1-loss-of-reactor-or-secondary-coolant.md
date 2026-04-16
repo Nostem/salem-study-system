@@ -32,6 +32,11 @@ Step 24 — Containment Hydrogen Concentration decision points: <span class="hi-
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q91</div>
+Step 24 — Containment Hydrogen Concentration Verification (SRO question): with H2 at <span class="hi-exam">0.7%</span> (greater than 0.5%), crew starts <span class="hi-exam">ONLY ONE hydrogen recombiner</span> by performing S1.OP-SO.CAN-0001 CONCURRENTLY with EOP-LOCA-1. <span class="hi-trap">Trap: starting BOTH recombiners is wrong below 4%. Consulting TSC is wrong below 4%. Waiting until 4.0% before acting is wrong (action threshold is 0.5%).</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q76</div>
 PZR vapor space leak (SBLOCA) with RCS at <span class="hi-exam">1450 psig</span>: both <span class="hi-exam">charging pumps AND SI pumps are injecting</span> (1450 psig is below the shutoff head of both charging pumps at 2670 psig and SI pumps at 1520 psig). With subcooling at 10°F, PZR level 30% and rising, and RCS pressure stable — <span class="hi-exam">SI termination criteria in EOP-LOCA-1 are met</span>, so the next procedure transition is to <span class="hi-exam">EOP-TRIP-3 (SI Termination)</span>, not directly to EOP-LOCA-2.
 </div>
@@ -57,6 +62,11 @@ Entered from EOP-TRIP-1 following LBLOCA based on <span class="hi-exam">containm
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q77</div>
+RWST LEVEL LO alarm actuation during EOP-LOCA-1: crew <span class="hi-exam">transitions to EOP-LOCA-3 (TRANSFER TO COLD LEG RECIRCULATION)</span>. <span class="hi-trap">Trap: LOCA-3 is cold leg recirc, LOCA-4 is hot leg recirc. The RWST LO alarm drives the transition to LOCA-3, not remaining in LOCA-1 until LO-LO or performing concurrent RWST makeup.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q14</div>
 Containment Spray reset per EOP-LOCA-1 (after AUTOMATIC actuation without manual backup): the NCO resets one train of Containment Spray by <span class="hi-exam">depressing bezel button B ONLY</span>. Key switches A and C are NOT required when resetting after an automatic-only actuation. <span class="hi-trap">Bezel button B is the reset mechanism. Key switches would be involved only if a manual backup actuation had been performed.</span>
 </div>
@@ -66,11 +76,16 @@ Containment Spray reset per EOP-LOCA-1 (after AUTOMATIC actuation without manual
 LOCA outside containment recognition from EOP-LOCA-1: alarms indicating a LOCA outside containment include <span class="hi-exam">2R41D (Plant Vent) in alarm, RHR sump overflow (OHA C-34), and RHR sump pump starts</span>. Combined with inability to recover PZR level, the transition path is from <span class="hi-exam">EOP-LOCA-1 to EOP-LOCA-6</span>. Key recognition: the crew arrives at LOCA-1 via the TRIP-3 CAS (PZR level cannot be maintained > 11%).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q51</div>
+EOP-LOCA-1 Step 3 feed flow requirement: <span class="hi-exam">"MAINTAIN TOTAL FEED FLOW GREATER THAN 22E04 LB/HR UNTIL AT LEAST ONE SG NR IS GREATER THAN 9% (15% ADVERSE)"</span>. Containment pressure at <span class="hi-exam">2.5 psig is NOT adverse</span> — adverse containment threshold has not been reached. Therefore the non-adverse SG NR level limit of <span class="hi-exam">9%</span> applies, and the requirement is <span class="hi-exam">AT LEAST ONE SG</span> (not all SGs). <span class="hi-trap">Trap: "ALL SGs" vs "AT LEAST ONE SG" — the step requires only ONE SG to exceed the limit. Also, 15% is the adverse containment limit, not the normal limit.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]]
-- Related exam questions: [[2019 Q14]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
+- Related exam questions: [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

@@ -279,11 +279,16 @@ Condensate depression effects: decreasing condensate depression (from 5°F to 2�
 EOP-FRCI-3 Attachment 1 maximum vent time calculation for reactor vessel upper head voiding: at <span class="hi-exam">1600 psig RCS pressure</span>, hydrogen flow rate from Figure 1 is <span class="hi-exam">3333 cfm</span>. Maximum containment hydrogen increase limited to keep total below <span class="hi-exam">3.0%</span>. With 2.3% current H2 and 140F containment temperature, maximum vent time = <span class="hi-exam">4.5 minutes</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q69</div>
+Subcooling calculation when subcooling monitor is NOT functional: convert <span class="hi-exam">psig to PSIA by adding 14.7 (rounded to 15)</span>, use steam tables to find TSAT. Subcooling = TSAT - <span class="hi-exam">Hottest CET</span> (not TAVG). <span class="hi-trap">Two traps: (1) subtracting 15 instead of adding gives wrong TSAT, (2) using TAVG instead of Hottest CET gives wrong subcooling. Hottest CET is always the correct reference for subcooling calculation.</span>
+</div>
+
 ## Connections
 
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
-- Related exam questions: [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]]
+- Related exam questions: [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]]
 - Related JPMs: [[2023 JPM Sim-d]], [[2022 JPM RO-A1]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

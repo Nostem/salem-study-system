@@ -25,9 +25,14 @@ Transition to APPX-7 vs LOCA-5 during cold leg recirculation transfer: <span cla
 Step 43, MAINTAINING RCS HEAT REMOVAL: when all RCPs are stopped and sump recirculation has failed, the crew dumps steam from intact SGs to <span class="hi-exam">promote Core Reflux Cooling</span>. Reflux cooling is the mechanism by which steam generated in the RCS enters SG tubes and is condensed by cold water on the SG secondary side — this liquid remains in the primary system and promotes cooling. It is especially important to keep the secondary system adequately full of water.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q88</div>
+Transition to APPX-7 from LOCA-3: <span class="hi-exam">erratic flow and pressure on both trains of ECCS pumps after alignment to containment sump = cavitation = sump blockage indication</span>. Per LOCA-3 CAS, crew IMMEDIATELY transitions to APPX-7. <span class="hi-trap">LOCA-5 is the wrong procedure — it applies only when recirculation is lost for reasons NOT related to sump blockage.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[Steam Generator & Blowdown]]
+- Related systems: [[ECCS]], [[Steam Generator & Blowdown]], [[Containment Spray]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
-- Related exam questions: [[2020 Q87]], [[2022 Q04]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2019 Q88]], [[2020 Q87]], [[2022 Q04]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

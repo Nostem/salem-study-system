@@ -26,8 +26,13 @@ For a dropped fuel assembly in the spent fuel pool: <span class="hi-exam">2R5 or
 Fuel assembly in mast tube in transit approaching the core during reload (containment): <span class="hi-exam">"Place the fuel assembly in the mast tube into the core in its designated location or the emergency location P-10 whichever is closer."</span> <span class="hi-trap">Trap: X-3 is the emergency safe location in the FHB, NOT in containment — P-10 is the containment emergency location. The upender (horizontal position) is only used if P-10 is not available or the assembly is indexed above the upender.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q68</div>
+Per AB.FUEL-0001, the canal gate valve <span class="hi-exam">will be closed for any fuel handling incident</span> (Step 3.16) — regardless of whether the incident is inside containment or in the FHB. The canal gate valve can ONLY be <span class="hi-exam">FULLY closed with the fuel transfer cart inside containment</span> due to a mechanical interlock. <span class="hi-trap">The interlock requires the cart to be inside containment (not in the FHB) for the valve to fully close.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Radiation Monitoring]], [[Refueling]]
-- Related exam questions: [[2022 Q22]], [[2020 Q82]]
-- Related exam: [[2022 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2019 Q68]], [[2020 Q82]], [[2022 Q22]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

@@ -30,9 +30,14 @@ Solar Magnetic Disturbance (SMD) > K-5 intensity with excess MVAR condition: per
 <span class="hi-exam">Attachment 3 (Salem 500 KV Switchyard Low Voltage)</span>: if 500 KV Switchyard Voltage is <span class="hi-exam val-trip">&lt; 493 KV</span>, declare the associated off-site power source inoperable and initiate <span class="hi-exam">Station Load Curtailment</span> IAW OP-AA-108-107-1001. <span class="hi-trap">Trap: Attachment 4 (500 KV Grid Instability) directs Generator Load Reduction at 15%/min max as specified by the ESO — this is a different condition from low switchyard voltage. Only lines with voltage below 493 KV are declared inoperable (e.g., 492 KV is inoperable, 495 KV is not).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q62</div>
+Per AB.GRID-0001 CAS: 500 KV Switchyard voltage <span class="hi-exam val-trip">&lt; 493 KV</span> on any line → declare that A.C. Circuit (Off-Site Power Source) inoperable. With Orchard at 492 KV, New Freedom at 494 KV, and Salem-Hope Creek Tie at 497 KV: <span class="hi-exam">ONLY the Orchard line is inoperable</span> (492 &lt; 493). The other two lines remain operable (494 and 497 are both &ge; 493).
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[Main Turbine]]
 - Related procedures: [[AB.LOAD-0001 — Rapid Load Reduction]], [[OP-AA-108-107-1001 — Electric System Emergency Operations]]
-- Related exam questions: [[2023 Q15]], [[2023 Q88]], [[2020 Q81]]
-- Related exam: [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2019 Q62]], [[2020 Q81]], [[2023 Q15]], [[2023 Q88]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

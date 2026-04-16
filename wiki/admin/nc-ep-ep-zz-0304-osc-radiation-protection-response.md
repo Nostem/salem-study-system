@@ -40,10 +40,15 @@ Emergency volunteer selection for lifesaving task (15-20 REM predicted dose): sy
 Confirms 2020 Q73: upon declaration of a Site Area Emergency (or ALERT or higher), <span class="hi-exam">the individual's yearly administrative dose limit is automatically raised to 4500 mrem</span>. Normal ADCL per RP-AA-203 is 2000 mrem TEDE. Stay time calculation example: worker with 1000 mrem already received in a 1000 mrem/hr field → (4500 - 1000) / 1000 = 3.5 hours = <span class="hi-exam">210 minutes maximum stay time</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q97</div>
+Planned Emergency Exposure Limits (PEEL) per NC.EP-EP.ZZ-0304 (SRO question): <span class="hi-exam">PEEL for life saving = 75 REM</span>. <span class="hi-exam">PEEL for accident mitigation = 25 REM</span>. Emergency Coordinator authorization for LIFE SAVING TASKS requiring emergency exposure must be done <span class="hi-exam">verbally</span> — meaning <span class="hi-exam">ONLY the EDO</span> (the current Emergency Coordinator) can approve it. <span class="hi-trap">Trap: the SM previously served as interim EDO before turnover, but once EC duties are transferred to the EDO, only the EDO can authorize emergency exposure. The SM no longer has that authority.</span>
+</div>
+
 ## Connections
 
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related concepts: [[Radiation Monitoring]]
-- Related exam questions: [[2019 Q45]], [[2020 Q73]], [[2022 Q71]]
+- Related exam questions: [[2019 Q45]], [[2019 Q97]], [[2020 Q73]], [[2022 Q71]]
 - Related JPMs: [[2023 JPM SRO-A3]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -61,8 +61,14 @@ Per Attachment 1, three RCP protection time limits on loss of CCW:<br>
 Per Step 3.8 NOTE: <span class="hi-exam">"Allowing CCW Surge Tank to overflow will contaminate the in-service Waste Holdup Tank and the 22 ABV Exhaust Filter Unit."</span> 2CC149 (Surge Tank Vent Valve) <span class="hi-exam">automatically closes on 2R17A/B high radiation alarm</span>. <span class="hi-trap">CCW Surge Tank overflow contaminates two components — the Waste Holdup Tank AND the 22 ABV Exhaust Filter Unit. Missing the exhaust filter unit is a common error.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q87</div>
+CCW pump trips in MODE 5 (RCS at Water Elevation 103.5 feet): when 22 and 23 CCW Pumps trip causing CC Header Low Pressure alarms, the abnormal procedures network requires <span class="hi-exam">concurrent performance of AB.CC-0001 AND AB.RHR-0001</span> (not AB.RHR-0002). <span class="hi-trap">Trap: AB.RHR-0002 (Loss of RHR at Reduced Inventory) would apply only if RCS Water Elevation is 101 feet or less. At 103.5 feet the plant is NOT at reduced inventory, so AB.RHR-0001 applies.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[CCW]], [[RCPs]]
-- Related exam questions: [[2019 Q8]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
+- Related systems: [[CCW]], [[RCPs]], [[RHR]]
+- Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
+- Related exam questions: [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

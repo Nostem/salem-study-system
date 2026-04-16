@@ -46,6 +46,11 @@ Entered from LOCA-1 when <span class="hi-exam">22 RHR pump trips (overcurrent) �
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q65</div>
+Step 24 — RCS depressurization to minimize subcooling: with <span class="hi-exam">normal spray not available (all RCPs stopped)</span>, the crew depressurizes using <span class="hi-exam">a PZR PORV</span> (not AUX SPRAY). Upper head voiding indication: <span class="hi-exam">rapidly rising PZR level</span> (35% rise in 30 seconds in this example). <span class="hi-trap">Do not confuse AUX SPRAY (which maintains RCS inventory) with PORV depressurization (which loses inventory). With no RCPs running, normal spray is NOT available. Also: rapidly rising PZR level IS an indication of upper head voiding — the steam in the upper head collapses, pushing water into the PZR.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q15</div>
 Step 6 Table B/C analysis with 2B 4KV Vital Bus de-energized: Table B determines NO TRAINS of Emergency Recirculation available (both SJ44 sump valves closed). Table C determines CS pumps required: with <span class="hi-exam">Containment Pressure = 19 psig, RWST Level = 10 feet, and only 3 CFCUs in slow speed (2B bus loss → 22 and 24 CFCUs unavailable) → 0 CS Pumps required</span>. Crew stops BOTH CS pumps per Step 9, then proceeds to Step 10 (add makeup to RWST). <span class="hi-trap">Correct CFCU count depends on knowing which CFCUs are powered from the 2B bus. With 2B lost: only 21 (A bus), 23 (C bus), and 25 (C bus) remain — 3 CFCUs total.</span>
 </div>
@@ -58,7 +63,7 @@ LOCA-5 mitigation strategies include: (1) Run all CFCUs in high speed, (2) Minim
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
-- Related exam questions: [[2019 Q15]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related exam questions: [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
 - Related JPMs: [[2023 JPM SRO-A1.a]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

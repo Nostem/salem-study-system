@@ -46,6 +46,11 @@ The STA serves in an advisory capacity to the Senior Nuclear Shift Supervisor on
 Shift complement unexpected absence: per OP-AA-101-111, the shift complement may be <span class="hi-exam">one less than the minimum for up to 2 hours</span> to accommodate an unexpected absence, provided immediate action is taken to restore. <span class="hi-trap">This provision does NOT permit any shift position to be unmanned upon shift change</span> -- the on-duty member must remain until a relief is available. The preferred action is to hold the off-going shift personnel.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q94</div>
+TS Table 6.2-1 STA staffing (SRO question): a licensed SRO who is also a qualified STA <span class="hi-exam">MAY fill the STA minimum staffing requirement on BOTH Unit 1 and Unit 2 concurrently</span>. Additionally, that person <span class="hi-exam">MAY fill the STA minimum staffing requirement on Unit 2 while concurrently filling the SRO minimum staffing requirement on Unit 2</span>. <span class="hi-trap">Trap: candidates may incorrectly believe the STA role must be dedicated to a single unit, or that an SRO cannot simultaneously fill the STA and SRO positions on the same unit.</span>
+</div>
+
 ## 6.6 — Reportable Event Action
 
 For REPORTABLE EVENTS:
@@ -163,6 +168,6 @@ Ensures CRE occupants can control the reactor safely under normal conditions and
 
 - Related concepts: [[Radiation Monitoring]]
 - Related systems: [[Containment]]
-- Related exam questions: [[2023 Q94]]
+- Related exam questions: [[2019 Q94]], [[2023 Q94]]
 - Related JPMs: [[2020 JPM SRO-A2]]
-- Related exam: [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]]

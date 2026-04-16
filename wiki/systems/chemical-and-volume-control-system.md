@@ -53,6 +53,11 @@ VCT level control logic: <span class="hi-exam">only LT-112 actuates automatic ma
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q54</div>
+LT-112 fails to 50% with a 15 gpm RCS leak: with <span class="hi-exam">LT-112 failed at 50%, NO automatic RCS make-up is possible</span> (auto make-up starts at 14% and stops at 24% — LT-112 reads 50%, well above the start setpoint). Auto swapover to RWST requires <span class="hi-exam">BOTH LT-112 AND LT-114 reading <span class="val-trip">3.57%</span></span> — with LT-112 stuck at 50%, the 2/2 coincidence will never be met. Result: actual VCT level lowers to below 3.57% and the <span class="hi-exam">charging pump eventually loses suction</span>. <span class="hi-trap">Trap: if LT-114 had failed (instead of LT-112), auto make-up would still function via LT-112, and VCT would cycle between 14% and 24%. Also: 11% is the VCT low level alarm setpoint, not the auto make-up start setpoint (14%).</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q12</div>
 VCT level monitoring and overpressure protection: <span class="hi-exam">LT-114 is only available in the control room via the plant computer</span> (NOT on the control console). LT-114 is also located in Panel 216 in charging pump alley. VCT overpressure protection is provided by <span class="hi-exam">2CV241, VCT relief valve, set to <span class="val-trip">75 psig</span>, relieving to the CVCS HUT</span>. <span class="hi-trap">When either VCT level controller (LT-112 or LT-114) is placed in MANUAL, it overrides the auto function of the other controller. With LT-112 in MANUAL FLOW TO VCT, the LT-114 Hagen controller will NOT automatically divert 2CV35 to the CVCS HUT at 77-87% VCT level.</span>
 </div>
@@ -222,7 +227,7 @@ Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related exam questions: [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
+- Related exam questions: [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
 - Related JPMs: [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

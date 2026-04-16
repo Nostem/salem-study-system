@@ -685,3 +685,691 @@ questions:
     ka_importance: 4.1
     type: RO
     tier_group: "Tier 3/Group"
+
+  - number: 81
+    topic: "LOCA Outside Containment Transition"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+    tech_specs: []
+    ka: "WE04 LOCA Outside Containment - EA2.1"
+    ka_importance: 4.3
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 82
+    topic: "PZR Level Control Malfunction Charging"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+      - pressurizer-level-and-press-control
+    tech_specs: []
+    ka: "028 PZR Level Control Malfunction - A2.03"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 83
+    topic: "EDG Lube Oil Trip and SR 4.8.1.1"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - diesel-generators
+    tech_specs:
+      - ts-3-4-8-electrical
+    ka: "068 Control Room Evacuation - G2.4.50"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 84
+    topic: "RCS Specific Activity LCO 3.0.4.c"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - ILOT 16-01 AUDIT SRO Q8"
+    systems:
+      - chemical-and-volume-control-system
+      - radiation-monitoring
+    tech_specs:
+      - ts-3-4-4-rcs
+      - ts-3-4-0-applicability
+    ka: "076 High Reactor Coolant Activity - AA2.03"
+    ka_importance: 3.0
+    type: SRO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 85
+    topic: "Natural Circulation RVLIS Cooldown Rate"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - rvlis
+      - 115v-ac
+    tech_specs: []
+    ka: "WE10 Nat Circ with Steam Void - G2.4.46"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 86
+    topic: "Loss of RHR EAL CA4.1"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - residual-heat-removal
+    tech_specs: []
+    ka: "005 RHR System - G2.4.41"
+    ka_importance: 4.6
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 87
+    topic: "CCW Pump Trip Mode 5 Procedures"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - component-cooling-water
+      - residual-heat-removal
+    tech_specs: []
+    ka: "008 CCW System - A2.01"
+    ka_importance: 3.3
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 88
+    topic: "Containment Sump Blockage and CS Pump D/P"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-spray
+      - emergency-core-cooling-systems
+      - residual-heat-removal
+    tech_specs: []
+    ka: "026 Containment Spray System - A2.07"
+    ka_importance: 3.9
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 89
+    topic: "Vital Bus Inverter LCO 3.0.3"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - LOR 2018 Bi-Annual Crew D Written Exam SRO Q33"
+    systems:
+      - 115v-ac
+    tech_specs:
+      - ts-3-4-8-electrical
+      - ts-3-4-0-applicability
+    ka: "062 AC Electrical Distribution - G2.2.42"
+    ka_importance: 4.6
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 90
+    topic: "DC Battery Cell Voltage LCO 3.8.2.3"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - dc-power
+    tech_specs:
+      - ts-3-4-8-electrical
+    ka: "063 DC Electrical Distribution - A2.01"
+    ka_importance: 3.2
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 61
+    topic: "ECAC Start Criteria and BF19 Control Air"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - control-air
+    tech_specs: []
+    ka: "APE: 065 Loss of Instrument Air-AK3.04"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 62
+    topic: "500 KV Line Operability During Abnormal Grid"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - 500kv
+    tech_specs: []
+    ka: "077 Generator Voltage and Electric Grid Disturbances-G2.2.37"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 63
+    topic: "LOCA-6 RHR Piping Concern and Leak Isolation"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank - ILOT 1601 NRC RO 63"
+    systems:
+      - residual-heat-removal
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "WE04 LOCA Outside Containment"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 64
+    topic: "FRHS-1 Bleed and Feed ECCS Pump Requirement"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - ILOT 1601 NRC RO 64"
+    systems:
+      - auxiliary-feedwater
+      - emergency-core-cooling-systems
+    tech_specs: []
+    ka: "WE05 Loss of Secondary Heat Sink-EK1.3"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 65
+    topic: "LOCA-5 RCS Depressurization and Upper Head Voiding"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - ILOT NRC 1601 RO 65"
+    systems:
+      - reactor-coolant-system
+      - pressurizer
+    tech_specs: []
+    ka: "W/E11 Loss of Emergency Coolant Recirculation-EA1.3"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 66
+    topic: "LOSC-2 AFW Pump Isolation and Flow Control"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - ILOT 1601 NRC EXAM - RO Q66"
+    systems:
+      - auxiliary-feedwater
+      - 4kv
+    tech_specs: []
+    ka: "W/E12 Uncontrolled Depressurization of all Steam Generators-EK3.3"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 67
+    topic: "Continuous Rod Motion Entry Conditions"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - control-rod-drive
+    tech_specs: []
+    ka: "APE: 001 Continuous Rod Withdrawal-AA1.07"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 68
+    topic: "Fuel Handling Incident Canal Gate Valve"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - refueling
+    tech_specs: []
+    ka: "APE 036 Fuel Handling Incidents-AK3.02"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 69
+    topic: "SG Tube Leak Subcooling Calculation"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "APE: 037 Steam Generator Tube Leak-AK1.01"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 70
+    topic: "Loss of Condenser Vacuum Trip Criteria"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - condenser-air-removal
+    tech_specs: []
+    ka: "APE: 051 Loss of Condenser Vacuum-AA2.02"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 71
+    topic: "CR Evacuation AFW / PZR Pressure"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - auxiliary-feedwater
+      - pressurizer
+    tech_specs: []
+    ka: "APE: 068 Control Room Evacuation-AA2.06"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 72
+    topic: "FRCC-1 ECCS Valve Alignment"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - service-water
+      - component-cooling-water
+    tech_specs: []
+    ka: "EPE: 074 Inadequate Core Cooling-EA1.27"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 73
+    topic: "LOCA-2 CAS ECCS Restart Criteria"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - pressurizer
+    tech_specs: []
+    ka: "WE03 LOCA Cooldown and Depressurization-EK2.2"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 74
+    topic: "FRTS-1 RCS Soak Purpose"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - reactor-coolant-system
+      - pressurizer
+    tech_specs: []
+    ka: "WE08 Pressurized Thermal Shock-EK3.1"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 75
+    topic: "CFST Containment Flooding FRCE-2"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-systems
+    tech_specs: []
+    ka: "WE15 Containment Flooding-G2.1.19"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 76
+    topic: "LOCA-2 Charging Pump Reduction"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - chemical-and-volume-control-system
+      - pressurizer
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "008 PZR Vapor Space Accident-AA2.23"
+    ka_importance: 4.3
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 77
+    topic: "LOCA-1 RWST Lo Transfer to Cold Leg Recirc"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+    tech_specs: []
+    ka: "EPE: 011 Large Break LOCA-G2.1.27"
+    ka_importance: 3.9
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 78
+    topic: "Loss of RHR in Mode 4 / Shutdown LOCA"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - ILOT 16-01 NRC SRO Q12"
+    systems:
+      - residual-heat-removal
+    tech_specs: []
+    ka: "APE: 025 Loss of RHRS-G2.1.27"
+    ka_importance: 3.8
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 79
+    topic: "LOOP / EDG Trip / TS 3.8.1.1 LCO 3.0.4.b"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - diesel-generators
+    tech_specs:
+      - ts-3-4-8-electrical
+      - ts-3-4-0-applicability
+    ka: "056 Loss of Offsite Power-AA2.22"
+    ka_importance: 3.6
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 80
+    topic: "Loss of Control Air PZR Level / RCS Cooldown"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - control-air
+      - pressurizer
+      - chemical-and-volume-control-system
+    tech_specs: []
+    ka: "065 Loss of Instrument Air-G2.1.28"
+    ka_importance: 4.1
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 51
+    topic: "LOCA-1 Feed Flow and SG Level Requirements"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - auxiliary-feedwater
+      - steam-generators
+    tech_specs: []
+    ka: "EPE: 009 Small Break LOCA-EK2.03"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 52
+    topic: "LOCA-3 SEC Reset and Blackout Loading"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - ILOT 1601 AUDIT RO 051"
+    systems:
+      - emergency-core-cooling-systems
+      - secs
+      - 4kv
+      - 460-230v-ac
+    tech_specs: []
+    ka: "EPE: 011 Large Break LOCA-EK2.02"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 53
+    topic: "RCP Shaft Shear Delta-T and SG Shrink"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - reactor-coolant-pumps
+      - steam-generators
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "APE: 015/017 RCP Malfunctions-AK1.04"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 54
+    topic: "VCT LT-112 Failure and Loss of RCS Makeup"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+    tech_specs: []
+    ka: "APE: 022 Loss of Reactor Coolant Makeup-AA1.08"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 55
+    topic: "CC131 Thermal Barrier Flow and RCP Trip Criteria"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - component-cooling-water
+      - reactor-coolant-pumps
+    tech_specs: []
+    ka: "APE: 026 Loss of CCW-AA1.07"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 56
+    topic: "FRSM-1 Local Reactor Trip Breakers"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - control-rod-drive
+      - rps-ssps
+    tech_specs: []
+    ka: "029 ATWS-G2.4.35"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 57
+    topic: "SGFP Trip Below P-10 and AFW Pump Start"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - feedwater-and-condensate
+      - auxiliary-feedwater
+    tech_specs: []
+    ka: "APE: 054 Loss of MFW-AA2.03"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 58
+    topic: "Loss of Offsite Power TS 3.8.1.1 Actions"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - 500kv
+    tech_specs:
+      - ts-3-4-8-electrical
+    ka: "APE: 056 Loss of Offsite Power-G2.2.39"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 59
+    topic: "Loss of 2A 125 VDC Bus EDG Impact"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - dc-power
+      - diesel-generators
+    tech_specs: []
+    ka: "APE: 058 Loss of DC Power-AA2.03"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 60
+    topic: "SW Nuclear Header Leak Location"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - service-water
+    tech_specs: []
+    ka: "APE: 062 Loss of Nuclear Service Water-A2.02"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 91
+    topic: "Hydrogen Recombiner EOP-LOCA-1"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank"
+    systems: []
+    tech_specs: []
+    ka: "028 HRPS-A2.03"
+    ka_importance: 4.0
+    type: SRO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 92
+    topic: "Loss of Condenser Vacuum Turbine Trip"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - condenser-air-removal
+      - main-turbine
+    tech_specs: []
+    ka: "055 Condenser Air Removal-G2.4.11"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 93
+    topic: "Loss of Control Air Reactor Trip"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Modified Bank - ILOT 16-01 SRO Q18"
+    systems:
+      - control-air
+    tech_specs: []
+    ka: "079 SAS-A2.01"
+    ka_importance: 3.2
+    type: SRO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 94
+    topic: "STA Staffing Requirements"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: []
+    tech_specs:
+      - ts-6-0-admin-controls
+    ka: "G2.1.5"
+    ka_importance: 3.2
+    type: SRO
+    tier_group: "Tier 3/Group"
+
+  - number: 95
+    topic: "PORV Block Valve Configuration Control"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - pressurizer
+    tech_specs:
+      - ts-3-4-4-rcs
+    ka: "G2.2.14"
+    ka_importance: 3.2
+    type: SRO
+    tier_group: "Tier 3/Group"
+
+  - number: 96
+    topic: "Radiation Monitoring LCO 3.3.3.1"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Modified Bank - ILOT 16-01 NRC SRO 014"
+    systems:
+      - radiation-monitoring
+      - containment-systems
+    tech_specs:
+      - ts-3-4-3-instrumentation
+    ka: "G2.2.42"
+    ka_importance: 4.6
+    type: SRO
+    tier_group: "Tier 3/Group"
+
+  - number: 97
+    topic: "Emergency Exposure PEEL"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: []
+    tech_specs: []
+    ka: "G2.3.4"
+    ka_importance: 3.7
+    type: SRO
+    tier_group: "Tier 3/Group"
+
+  - number: 98
+    topic: "Locked High Radiation Area IV Waiver"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: []
+    tech_specs: []
+    ka: "G2.3.7"
+    ka_importance: 3.6
+    type: SRO
+    tier_group: "Tier 3/Group"
+
+  - number: 99
+    topic: "CR Evacuation SI Defeat"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems: []
+    tech_specs: []
+    ka: "G2.4.35"
+    ka_importance: 4.0
+    type: SRO
+    tier_group: "Tier 3/Group"
+
+  - number: 100
+    topic: "Emergency PAR Default"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - ILOT 16-01 AUDIT SRO Q25"
+    systems: []
+    tech_specs: []
+    ka: "G2.4.38"
+    ka_importance: 4.4
+    type: SRO
+    tier_group: "Tier 3/Group"

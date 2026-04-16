@@ -92,6 +92,11 @@ Loss of 2C 125 VDC: all breakers powered by 2C DC <span class="hi-exam">remain A
 Loss of 2A 125 VDC Bus loads: <span class="hi-exam">2A EDG is NOT available for start</span> (EDG starting circuits require 125 VDC). #1 SGFP Emergency Oil Pump and Main Turbine Emergency Oil Pump are NOT powered from the 2A 125 VDC bus — they are powered from other DC voltage levels (250 VDC or 28 VDC). <span class="hi-trap">All three malfunctions listed (SGFP Emergency Oil Pump, Turbine Emergency Oil Pump, EDG start) can be caused by loss of SOME DC bus, but only the EDG start is affected by loss of the 2A 125 VDC bus specifically. Know which loads are on which DC bus voltage level.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q59</div>
+Confirms 2020 Q13: with OHA B-2 "2A 125 VDC CNTRL BUS VOLT LO" and 2A Vital 125 VDC Bus at <span class="hi-exam">0 VDC on 2RP9</span>, the ONLY affected equipment from the listed malfunctions is <span class="hi-exam">2A EDG is NOT available for start</span>. #1 SGFP Emergency Oil Pump and Main Turbine Emergency Oil Pump are powered from <span class="hi-exam">250 VDC or 28 VDC</span> — NOT from the 2A 125 VDC bus. <span class="hi-trap">This topic tested on both 2019 and 2020 exams — know which loads are powered from each DC bus voltage level (125V, 250V, 28V).</span>
+</div>
+
 ## Key Design Points
 
 - DC power is critical for safety functions — provides control power independent of AC
@@ -106,7 +111,13 @@ Loss of 2A 125 VDC Bus loads: <span class="hi-exam">2A EDG is NOT available for 
 - 1 charger inoperable: 24 hours (with spare charger)
 - 1 of 3 28V supplies inoperable: 48 hours
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q90</div>
+LCO 3.8.2.3 battery cell parameters: with 3 connected cells at Float Voltage of <span class="hi-exam">0 Volts, battery does NOT meet Category B and C limits</span>. <span class="hi-exam">Required Actions C (24 hrs to restore), D (2 hrs to restore), and F (6 hrs to Hot Standby if D not met) all apply simultaneously</span>. D and F are most limiting: 2 hours to restore + 6 hours to Hot Standby = <span class="hi-exam">8 hours maximum from time of discovery</span>. <span class="hi-trap">Trap: Action C allows 24 hours for Category B/C limit restoration, but Action D (connected cells at 0V) is more limiting at only 2 hours. Candidates who use 24 hours get the wrong answer by one full day.</span>
+</div>
+
 ## Connections
 
-- Related exam questions: [[2019 Q22]], [[2019 Q23]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
+- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related exam questions: [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

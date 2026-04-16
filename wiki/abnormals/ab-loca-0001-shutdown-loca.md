@@ -25,10 +25,15 @@ Entry conditions: <span class="hi-exam">any uncontrolled reduction in Pressurize
 AB.LOCA-0001 applicability: used during <span class="hi-exam">MODE 4</span> or <span class="hi-exam">MODE 3 with the accumulators isolated</span>. <span class="hi-trap">A LOCA in MODE 3 at normal operating pressure (2235 psig) with accumulators NOT isolated enters the EOP network (EOP-TRIP-1), not AB.LOCA-0001.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q78</div>
+AB.LOCA-0001 is entered from AB.RHR-0001 CAS when in <span class="hi-exam">MODE 4 with RCS inventory loss</span> (lowering PZR level and rising containment particulate monitor). The CAS directs IMMEDIATELY GO TO AB.LOCA-0001.
+</div>
+
 ## Connections
 
 - Related systems: [[RHR]]
 - Related procedures: [[AB.RHR-0001 — Loss of RHR]], [[AB.RC-0001 — Reactor Coolant System Leak]]
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]]
-- Related exam questions: [[2020 Q6]], [[2020 Q85]]
-- Related exam: [[2020 NRC Written Exam]]
+- Related exam questions: [[2019 Q78]], [[2020 Q6]], [[2020 Q85]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

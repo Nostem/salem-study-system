@@ -41,8 +41,20 @@ Event 2: <span class="hi-exam">24 Vacuum Pump trips</span>. PO enters AB.COND-00
 Event 3: 24 Vacuum Pump trips. PO enters AB.COND-0001. Dispatches operator for Att 2 local checks — reports no abnormal conditions except breaker tripped open. PO starts all available vacuum pumps. <span class="hi-exam">22 Vacuum Pump trips after start; 25AR25 fails to open on 25 Vacuum Pump start</span> — PO manually opens 25AR25. Backpressure improves.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q92</div>
+AB.COND-0001 CAS actions based on reactor power relative to P-9: at <span class="hi-exam">45% power (below P-9)</span>, when condenser backpressure exceeds the limit of Attachment 4, the crew will <span class="hi-exam">trip the TURBINE</span> (not the Reactor). After the turbine trip, crew will perform <span class="hi-exam">AB.COND-0001 concurrently with AB.TRB-0001 (Turbine Trip Below P-9)</span>. <span class="hi-trap">Trap: if power had been above P-9, the crew would trip the Reactor (and transition to EOP-TRIP-1 without performing AB.COND-0001 concurrently). Below P-9, it is a turbine trip only, and the AB procedures are performed concurrently.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q70</div>
+CAS reactor trip criteria: if the turbine load reduction rate needs to increase to a MINIMUM of <span class="hi-exam val-trip">5 % / min</span> to stabilize condenser backpressure, the crew is REQUIRED to TRIP the Reactor. <span class="hi-trap">All distractors (15, 10, 7.5 %/min) are plausible because load reductions up to 15%/min are within the capability of rod control and steam dumps — but the CAS-directed trip threshold is specifically 5%/min.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Condenser Air Removal]], [[Main Turbine]]
+- Related procedures: [[AB.TRB-0001 — Main Turbine Abnormality]]
+- Related exam questions: [[2019 Q70]], [[2019 Q92]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

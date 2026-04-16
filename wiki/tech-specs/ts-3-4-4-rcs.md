@@ -218,6 +218,11 @@ When a PORV is inoperable due to seat leakage, the block valve is closed but pow
 
 *Amendment No. 177*
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q95</div>
+LCO 3.4.5 PORV inoperable due to <span class="hi-exam">control circuitry failure</span> (not seat leakage): Required Action B directs closing the associated block valve (2PR7) and <span class="hi-exam">removing power</span> to 2PR7. Per OP-AA-108-101-1002, since removing power from the block valve is a <span class="hi-exam">1 hour or less TS REQUIRED ACTION</span>, configuration control is INITIALLY maintained with an <span class="hi-exam">Abnormal Component Position Sheet (ACPS)</span>. <span class="hi-trap">Trap: if the PORV were inoperable due to seat leakage, power would be MAINTAINED to the block valve. A WCD (Work Clearance Document) is hung as soon as practical AFTER the TS is entered, but the INITIAL configuration control tool for a 1-hour-or-less TSAS is an ACPS.</span>
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.5 Relief Valves (PORVs and Block Valves)</summary>
 <div class="callout callout-bases">
@@ -381,7 +386,7 @@ In Modes 1-4, operation within the LCO limits for DOSE EQUIVALENT I-131 and DOSE
 
 **DE XE-133 > LCO limit:** Must be restored within 48 hours on the same basis (noble gas spike expected to restore within this period).
 
-**TS 3.0.4.c allowance:** A Note permits use of TS 3.0.4.c provisions, <span class="hi-exam">allowing entry into applicable MODES while relying on Actions while the specific activity LCO limit is not met</span>. This is acceptable due to significant conservatism in the specific activity limit and the low probability of a limiting event.
+**TS 3.0.4.c allowance:** A Note permits use of TS 3.0.4.c provisions, <span class="hi-exam">allowing entry into applicable MODES while relying on Actions while the specific activity LCO limit is not met</span>. This is acceptable due to significant conservatism in the specific activity limit and the low probability of a limiting event. <span class="hi-exam">(Tested: 2019 Q84 — crew IS permitted to raise TAVG above 500 &deg;F and enter Mode 1/2 while RCS activity exceeds LCO 3.4.9 limit, per LCO 3.0.4.c.)</span>
 
 **If DE I-131 > 60 μCi/gm** or action completion times not met: Hot Standby within 6 hours and Cold Shutdown within 30 hours.
 
@@ -481,5 +486,5 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2019 Q1]], [[2019 Q7]], [[2022 Q91]], [[2023 Q97]]
+- Related exam questions: [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
 - Related exam: [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

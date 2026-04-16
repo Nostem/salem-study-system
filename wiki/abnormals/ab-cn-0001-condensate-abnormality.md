@@ -60,10 +60,15 @@ On a condensate pump trip at 100% power: per AB.CN-0001, <span class="hi-exam">o
 23 Condensate Pump trips. SGFP suction pressure less than <span class="hi-exam">320 psig</span> — PO opens 21-23 CN108s (Polisher Bypass Valves). CRS evaluates Att 2, Section 4.0 — determines <span class="hi-exam">load reduction to 85% at <=5%/min</span> required. Crew enters AB.LOAD-0001 for load reduction.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q57</div>
+SGFP trip below P-10 (10% power) response: with reactor power at 8% (below P-10) and 11 SGFP tripped, per AB.CN-0001 Steps 3.2, 3.3, 3.14, 3.15, 3.16 and 3.17: <span class="hi-exam">REDUCE Reactor Power to less than 4%, then START 11 and 12 AFW Pumps</span>. <span class="hi-trap">Trap: a reactor trip is NOT required at 8% power with one SGFP trip — multiple CAS criteria exist for reactor trip but this scenario does not meet them. Also: starting 12 SGFP (instead of AFW) is incorrect — the procedure directs AFW pumps when power is below P-10.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]], [[AFW]]
-- Related exam questions: [[2019 Q17]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
+- Related exam questions: [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related JPMs: [[2022 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

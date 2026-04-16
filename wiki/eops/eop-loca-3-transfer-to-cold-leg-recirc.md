@@ -35,11 +35,21 @@ During cold leg recirculation transfer: after sump valves open and RWST common s
 ECCS aligned for cold leg recirculation at the time of emergency classification escalation. Large Break LOCA with all three fission product barriers lost: 21SJ44 (Containment Sump Suction Valve) <span class="hi-exam">failed to close</span> when crew attempted to isolate RHR sump overflow — creating an <span class="hi-exam">unisolable leak path outside containment</span>. This is the basis for the Containment Barrier loss (CB2.L/CB3.L) in the General Emergency classification.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q52</div>
+After resetting ALL SECs in EOP-LOCA-3, <span class="hi-exam">the crew IS required to MANUALLY reset the 230V control centers</span> (even though 20 minutes after SEC actuation the lockout is automatically removed). If a subsequent blackout occurs on a 4KV vital bus with SI previously reset, <span class="hi-exam">ECCS pumps and safeguards equipment will NOT automatically start</span> — they must be <span class="hi-exam">manually operated</span> because different equipment is started on a SEC blackout loading than on a safeguards loading. <span class="hi-trap">Trap: A LBLOCA is in progress, so candidates may assume ECCS pumps will auto-start — but with SI/SECs reset, the SEC loads based on blackout loading, NOT safeguards loading.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q88</div>
+CAS transition for sump blockage: when ECCS pumps are aligned to sump and <span class="hi-exam">erratic flow/pressure on BOTH trains indicates cavitation → transition to EOP-APPX-7 (CONTAINMENT SUMP BLOCKAGE)</span>. <span class="hi-trap">EOP-LOCA-5 is only for loss of recirculation NOT related to sump blockage.</span> During recirculation, <span class="hi-exam">RHR pump discharge provides the D/P to drive Containment Spray</span> (CS pumps take suction from the outlet of the RHR HXs, not from SI pump discharge).
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[Containment Spray]], [[RHR]]
+- Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2020 Q87]]
+- Related exam questions: [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]]
 - Related JPMs: [[2020 JPM SRO-A5]]
 - Related scenarios: [[2023 Scenario 1]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]

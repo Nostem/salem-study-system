@@ -62,8 +62,13 @@ SEC Mode 2 (blackout only) includes MDAFW pump start: when 2B 4KV Vital Bus de-e
 <span class="hi-exam">1RP4 is the main control room panel that gives visual status of all safety related equipment including the SECs. Since 1RP4 is NOT safety related, the interface between the SECs and 1RP4 is isolated.</span> Loss of ALL AC and DC power to 1RP4 does NOT affect SEC operation. When a Reactor Trip and Safety Injection occurs, the <span class="hi-exam">SECs will automatically actuate in Mode 1</span> regardless of 1RP4 status. <span class="hi-trap">Trap: loss of power to a control bezel (e.g., AFW Control Bezel) prevents automatic and manual operation of components via that bezel. This logic does NOT apply to 1RP4 because it is an indication-only panel — SECs operate independently.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q52</div>
+After SEC and SI reset during EOP-LOCA-3, a subsequent blackout on a 4KV vital bus: <span class="hi-exam">SEC performs blackout loading ONLY — ECCS pumps and safeguards equipment are NOT automatically started</span>. Must be <span class="hi-exam">manually operated</span> because blackout loading starts different equipment than safeguards loading. Also: after resetting all SECs, the <span class="hi-exam">230V control centers must be MANUALLY reset</span> by the crew (20-minute auto-removal notwithstanding). <span class="hi-trap">Trap: LBLOCA is in progress but SI is reset — the SEC has no SI signal, so it performs blackout loading (Mode 2), not SI + blackout loading (Mode III).</span>
+</div>
+
 ## Connections
 
-- Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]]
-- Related exam questions: [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
+- Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]]
+- Related exam questions: [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

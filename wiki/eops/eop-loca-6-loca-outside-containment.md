@@ -35,9 +35,19 @@ After performing individual flowpath isolations in LOCA-6, the procedure specifi
 LOCA outside containment recognition during SI termination (EOP-TRIP-3): key alarm indications include <span class="hi-exam">A-6 (RMS HI RAD OR TRBL) due to 2R41D (Plant Vent), C-34 (22 RHR SUMP OVRFLO), and A-41 (AUX ALM SYS PRINTER) due to 23 and 24 RHR sump pump starts</span>. Combined with PZR level off-scale low (unable to be recovered) and loss of subcooling, the crew recognizes the TRIP-3 CAS is not met → goes to EOP-LOCA-1 → transitions to <span class="hi-exam">EOP-LOCA-6</span>. <span class="hi-trap">No direct transition from TRIP-3 to LOCA-6 exists.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q63</div>
+Leak isolation strategy: the crew is MOST concerned with the piping connecting the <span class="hi-exam">RHR System</span> to the RCS, since RHR piping is only rated to <span class="hi-exam">600 psig</span> (compared to RCS piping rated to 2500 psig). Successful leak isolation is confirmed by monitoring <span class="hi-exam">rising RCS pressure</span>. <span class="hi-trap">Do not confuse with Pressurizer level rising — LOCA-6 specifically monitors RCS pressure, not PZR level, as the determination of successful isolation.</span> <span class="hi-trap">SI piping is also outside containment but is higher rated than RHR piping, so RHR is the primary concern.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q81</div>
+Transition from LOCA-6: if the crew is <span class="hi-exam">NOT successful in finding and isolating the leak</span>, the crew will transition to <span class="hi-exam">EOP-LOCA-5 (LOSS OF EMERGENCY RECIRCULATION)</span>. If the crew successfully isolates the leak, transition is to <span class="hi-trap">EOP-LOCA-1 (not LOCA-2 or AB.LOCA-0001)</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RCS]], [[RVLIS]], [[RHR]], [[Radiation Monitoring]]
-- Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2020 Q16]], [[2020 Q25]], [[2022 Q18]], [[2023 Q16]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
+- Related exam questions: [[2019 Q63]], [[2019 Q81]], [[2020 Q16]], [[2020 Q25]], [[2022 Q18]], [[2023 Q16]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

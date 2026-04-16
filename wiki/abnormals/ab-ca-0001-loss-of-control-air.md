@@ -66,10 +66,27 @@ BF19 (Main Feedwater Regulating Valves) on loss of all station air: <span class=
 On loss of all control air with letdown isolated: <span class="hi-exam">1CV55 fails OPEN and 1CV71 fails CLOSED</span>, resulting in higher charging flow and pressure to RCP seals, causing <span class="hi-exam">PZR level to RISE</span>. Two preferred actions: (1) locally control charging flow by adjusting <span class="hi-exam">1CV54, CENT CHG PUMP FLOW CONT VLV</span>, or (2) transfer to <span class="hi-exam">13 PDP</span> whose speed controller fails at the low speed stop, minimizing seal flow. <span class="hi-trap">PZR level rises (not lowers) because charging flow increases with letdown isolated and CV55 failed open.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q61</div>
+ECAC manual start criteria: crews will MANUALLY start the 1 ECAC and 2 ECAC when the 1A/1B/2A/2B Control Air Headers lower to a MAXIMUM of <span class="hi-exam val-alarm">88 psig</span>. <span class="hi-trap">100 psig is the threshold at which the remaining Station Air Compressor is started — not the ECAC manual start threshold.</span> Ensuring proper operation of the BF19s (Main Feedwater Control Valves) is <span class="hi-exam">NOT</span> a reason for starting the ECACs — <span class="hi-trap">check valves in the CA system prevent the ECACs from supplying the BF19s</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q93</div>
+AB.CA-0001 CAS reactor trip criteria (SRO question): when <span class="hi-exam">BOTH Control Air Headers indicate less than <span class="val-trip">80 psig</span></span> (1A at 79 psig, 1B at 77 psig), the crew's next action is to <span class="hi-exam">TRIP the Reactor</span> and perform EOP-TRIP-1 CONCURRENTLY with <span class="hi-exam">AB.CA-0001 Attachment 12 (LOCAL CONTROL OF SG PRESSURE AND LEVEL)</span>. <span class="hi-trap">Trap: Attachment 5 (Excess Flow Check Valves) only applies when at least one header is GREATER than 80 psig (Step 3.17). Attachment 6 (Abnormal Cooling Water Lineups) is not required unless cooling water to air compressors was lost. A controlled shutdown per IO.ZZ-0004 is NOT appropriate when BOTH headers are below 80 psig.</span>
+</div>
+
+### PZR Level and RCS Cooldown Requirement
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q80</div>
+Per S2.OP-AB.CA-0001: any time Pressurizer Level approaches a MINIMUM of <span class="hi-exam"><span class="val-alarm">90%</span></span>, the crew is required to commence an <span class="hi-exam">RCS Cooldown to 350 &deg;F using guidance contained in S2.OP-AB.CA-0001 itself</span> (NOT S2.OP-IO.ZZ-0006). <span class="hi-trap">Trap: 70% is the PZR LEVEL HI Bezel Alarm, not the cooldown trigger. The cooldown threshold is 90%. Also, the cooldown is directed by AB.CA-0001, not the IOP for Hot Standby to Cold Shutdown.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]]
-- Related exam questions: [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
+- Related exam questions: [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
 - Related JPMs: [[2020 JPM IP-j]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

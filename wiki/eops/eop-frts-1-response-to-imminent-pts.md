@@ -37,9 +37,16 @@ RED Path in Thermal Shock Status Tree: all RCS T-Cold cooldown rates not less th
 FRTS-1 step 1 (RCS Pressure Status): if <span class="hi-exam">RCS pressure &lt; 300 psig AND RHR flow &ge; 300 gpm</span>, then <span class="hi-exam">return to procedure in effect</span> — no further FRTS-1 actions are implemented. Entry is still required on PURPLE path (cooldown &gt; 100&deg;F/hr, T-Colds 230-280&deg;F), but the low-pressure/adequate-RHR-flow condition means PTS is not a concern. <span class="hi-trap">Trap: entry into FRTS-1 IS required even with low RCS pressure — the CFST drives entry regardless. The one-hour soak is not performed when step 1 directs return. AB.LOCA-0001 (Shutdown LOCA) is only applicable in MODE 4 or MODE 3 with accumulators isolated — not for MODE 3 at normal operating pressure.</span>
 </div>
 
+### RCS Soak (Step 29)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q74</div>
+FRTS-1 Step 29 RCS soak requirements: during the soak, the crew must maintain <span class="hi-exam">RCS temperature stable AND NOT raise RCS pressure</span>. The RCS soak is designed to reduce temperature stresses present in the <span class="hi-exam">Reactor Vessel</span> (not the RCS piping or pressurizer). <span class="hi-trap">Trap: the soak controls BOTH temperature and pressure — not temperature only. Also, the target component is the reactor vessel specifically, not the RCS piping system in general.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RCS]], [[RCPs]], [[RHR]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
-- Related exam questions: [[2020 Q32]], [[2020 Q85]], [[2022 Q85]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

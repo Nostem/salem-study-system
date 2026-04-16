@@ -107,6 +107,16 @@ All voltages and frequencies in SR 4.8.1.1.2 are representative values — instr
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q58</div>
+LCO 3.8.1.1 Action A — one independent AC circuit inoperable (Modes 1-4): with Orchard (5021) and New Freedom (5024) 500KV lines unavailable but Salem-Hope Creek Tie-Line (5037) still available, <span class="hi-exam">one independent AC circuit is inoperable</span>. The only <span class="hi-exam">1 hour or less required action is Action a.1: demonstrate OPERABILITY of the remaining independent A.C. circuit by performing SR 4.8.1.1.1.a within 1 hour</span>. <span class="hi-trap">Trap: Action 2 (demonstrate OPERABILITY of three DGs per SR 4.8.1.1.2.a.2 within 1 hour) is NOT required — that would apply to Action D (two offsite circuits inoperable) within 8 hours. Action 3 (suspend positive reactivity changes) applies in Modes 5/6 per LCO 3.8.1.2, NOT Modes 1-4.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q83</div>
+SR 4.8.1.1.1.a (verify independent AC circuits) timing when one EDG is inoperable: <span class="hi-exam">first performance within 1 hour</span> of entering LCO 3.8.1.1 action b, then <span class="hi-exam">second performance within 8 additional hours (9 hours total from entering the LCO)</span>. <span class="hi-trap">Trap: the second performance interval is 8 hours after the first, not 24 hours. Total maximum time from LCO entry to second completion = 9 hours.</span>
+</div>
+
 ### AC Sources — Shutdown (3.8.1.2)
 
 <div class="callout callout-important">
@@ -219,10 +229,25 @@ Surveillance frequency is based on operating experience, equipment reliability, 
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-8-1.pdf" target="_blank">View TS PDF (AC Sources)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-8-2.pdf" target="_blank">View TS PDF (DC Sources)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-8-3.pdf" target="_blank">View TS PDF (Distribution)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-8.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q79</div>
+LCO 3.8.1.1 ACTION h: <span class="hi-exam">LCO 3.0.4.b is NOT applicable to DGs</span>. With one DG inoperable (and offsite power restored), a risk assessment CANNOT be used to justify a MODE change. Unit 2 <span class="hi-exam">can NOT go from MODE 4 to MODE 3 until the inoperable DG is restored to OPERABLE status</span>. <span class="hi-trap">Trap: LCO 3.0.4.b normally allows MODE changes with a risk assessment, but TS 3.8.1.1 specifically prohibits this exception for DGs.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q89</div>
+LCO 3.8.2.1 with 2 inverters inoperable: LCO 3.8.2.1 only addresses one inverter inoperable. With <span class="hi-exam">2 inverters inoperable, no specific REQUIRED ACTION exists → LCO 3.0.3 applies</span>. LCO 3.0.3 clock starts at 1200 (when 2nd inverter declared inoperable): <span class="hi-exam">1 hour to begin + 6 hours to Hot Standby = 7 hours maximum → 1900</span>. <span class="hi-trap">Trap: do not use the LCO 3.8.2.1 REQUIRED ACTION B restoration time (30 hours) — with 2 inverters inoperable, there is no applicable REQUIRED ACTION so LCO 3.0.3 is the default.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q90</div>
+LCO 3.8.2.3 battery cell voltage: with 3 connected cells at 0 Volts, battery does not meet Category B and C limits. <span class="hi-exam">REQUIRED ACTIONS C, D, and F apply — D and F are most limiting: 2 hours to restore + 6 hours to Hot Standby = 8 hours maximum</span>. <span class="hi-trap">Trap: REQUIRED ACTION C allows 24 hours to restore, but D and F are more limiting at only 2 hours. Using the 24-hour restoration time incorrectly adds a full day.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[500KV]], [[4KV]], [[EDGs]], [[DC Power]]
-- Related exam questions: [[2023 Q89]]
+- Related systems: [[500KV]], [[4KV]], [[EDGs]], [[DC Power]], [[115V AC]]
+- Related exam questions: [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]]
 - Related JPMs: [[2020 JPM SRO-A3]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

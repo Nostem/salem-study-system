@@ -380,6 +380,11 @@ The radiation monitoring instrumentation channels shown in Table 3.3-6 shall be 
 
 *(Table 3.3-6, Amendment Nos. 245, 253, 278)*
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q96</div>
+LCO 3.3.3.1 Table 3.3-6 application during Containment Vacuum Relief (SRO question): <span class="hi-exam">2R12A is the credited monitor</span> for both 2.a.1.a (Containment Gaseous Activity — Purge &amp; PVR Isolation) and 2.a.1.b (Containment Gaseous Activity — RCS Leak Detection). During a Containment Vacuum Relief, <span class="hi-exam">2R41 (Plant Vent Noble Gas) can also be used to meet 2.a.1.a requirements</span> (per TS Bases). With <span class="hi-exam">2R12A AND 2R41D both failed</span>: (1) 2.a.1.b requirement is NOT met → <span class="hi-exam">Action 24</span>, and (2) 2.a.1.a requirement is NOT met (2R12A failed, and 2R41D which was serving as alternate is also failed) → <span class="hi-exam">Action 26</span>. Both actions required. <span class="hi-trap">Trap: candidates may think redundant monitors (2R12B/C or 2R41A/B) satisfy the requirement, but each Table 3.3-6 line item has its own minimum channel requirements. Multiple R12 or R41 channels exist but serve different functions per the bases.</span>
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.1 Radiation Monitoring</summary>
 <div class="callout callout-bases">
@@ -645,6 +650,6 @@ Between calibrations, the fidelity of the measured power distribution is maintai
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]]
-- Related exam questions: [[2019 Q47]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]]
+- Related exam questions: [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

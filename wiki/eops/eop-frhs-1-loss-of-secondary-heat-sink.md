@@ -31,6 +31,11 @@ Steps 7.2-7.5 condensate pump feed: select one SG (22 or 24 preferred — <span 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q64</div>
+Step 23 bleed and feed prerequisite: the crew needs <span class="hi-exam">1 Charging Pump AND 1 SI Pump running</span> to proceed with establishing the RCS Bleed Path. With only 2 Charging Pumps and NO SI Pump, the crew <span class="hi-exam">can NOT proceed</span> — must continue attempts to start SI pump. Step 24 bleed path: <span class="hi-exam">opening BOTH PORVs ONLY</span> is an allowable RCS Bleed Path. <span class="hi-trap">Reactor Head Vents are NOT part of the standard bleed path in FRHS-1. The head vents are an alternate path if a PORV fails to open.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q81</div>
 Step 6: Heat sink is established if feed flow is verified to at least one SG by either <span class="hi-exam">CETs lowering OR WR level rising in one SG</span>. NR level in at least one SG does NOT need to be > 9% to declare heat sink established — maintain flow to restore NR level to > 9% (15% adverse) and <span class="hi-exam">return to procedure in effect</span> (e.g., EOP-TRIP-2). <span class="hi-trap">Do not confuse: the 9% NR level is the MAINTAIN target, not the criterion for heat sink established or for returning to the base procedure.</span>
 </div>
@@ -59,7 +64,7 @@ Entered from EOP-TRIP-1 when all AFW lost: no SG NR levels >9% (15% adverse), to
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2019 Q46]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
+- Related exam questions: [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
 - Related JPMs: [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

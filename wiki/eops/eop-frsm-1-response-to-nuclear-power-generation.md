@@ -31,9 +31,14 @@ Step 6 checks turbine trip status by verifying <span class="hi-exam">ALL turbine
 Caution C1-1: RCPs should NOT be tripped with reactor power <span class="hi-exam">greater than 5%</span>. During an ATWS, RCP operation could temporarily cool the core under voided RCS conditions. Even if RCP trip criteria are met (e.g., motor flange vibration > 5 mils), do NOT trip the RCP while power is > 5%. <span class="hi-trap">Manually tripping an RCP during some ATWS events could result in reduced heat removal and a challenge to fuel integrity.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q56</div>
+Step 8 — Local reactor trip: when directed from the Control Room to locally trip the reactor, the NEO will open <span class="hi-exam">ALL THREE sets of breakers</span>: (1) Reactor Trip Breakers, (2) Rod Drive MG Set Motor Breakers, and (3) Rod Drive MG Set Generator Breakers. <span class="hi-trap">Any ONE set of breakers being opened will trip the reactor, but the procedure directs opening ALL three to ensure the trip is achieved. Candidates may select only a subset.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]]
+- Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

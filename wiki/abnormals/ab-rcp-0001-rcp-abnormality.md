@@ -62,6 +62,11 @@ Attachment 1: #1 seal leak-off flow <span class="hi-exam">>= 6 gpm</span> indica
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q55</div>
+CC131 thermal barrier isolation and RCP trip requirement: <span class="hi-exam">loss of thermal barrier CCW alone (with seal injection still normal) does NOT require securing ALL RCPs within 2 minutes</span>. The 2-minute CAS action applies only when <span class="hi-exam">BOTH seal injection AND thermal barrier CCW are lost concurrently</span>. CC131 auto-closure setpoint: <span class="val-trip">175 gpm</span> hi flow. <span class="hi-trap">Trap: candidates may confuse CC131 closure (thermal barrier loss only) with loss of ALL seal cooling, but seal injection via CVCS is a separate and independent cooling path.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q28</div>
 RCP #2 seal failure diagnostics: standpipe level HIGH alarm combined with #1 seal leak-off flow LOWERED = <span class="hi-exam">#2 seal failure</span>. <span class="hi-trap">Standpipe level LOW alarm = #3 seal problem. Do not confuse standpipe high vs low alarm implications.</span>
 </div>
@@ -75,6 +80,6 @@ RCP #2 seal failure diagnostics: standpipe level HIGH alarm combined with #1 sea
 - Related systems: [[RCPs]], [[CCW]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2020 Q4]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
+- Related exam questions: [[2019 Q55]], [[2020 Q4]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

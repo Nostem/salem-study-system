@@ -188,10 +188,15 @@ RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <s
 23 RCP shaft vibration exceeds <span class="hi-exam">20 mils</span> on 2RP3 monitor (OHA D-36 RCP VIB HI). CRS enters AB.RCP-0001 and implements CAS — trip reactor and stop 23 RCP. Consequence: loss of 23 RCP means <span class="hi-exam">normal PZR spray unavailable</span> during subsequent SGTR-1 depressurization (spray valves fed from loops 1 and 3 cold legs). RCS depressurization must use PZR PORVs instead. Also: 23 SG NR level may appear to rise after 23 RCP stop due to loss of forced circulation reducing steaming effect.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q53</div>
+RCP shaft shear at 25% power — thermodynamic effects on the affected loop: with 13 RCP shaft sheared, <span class="hi-exam">Loop 13 RCS flow goes to minimum and 13 SG steam flow lowers significantly</span>. This causes: (1) <span class="hi-exam">13 RCS Loop &Delta;T LOWERS</span> (reduced heat transfer due to minimal flow), and (2) <span class="hi-exam">13 SG NR Level initially SHRINKS</span> (reduced steam flow → reduced voiding in SG → apparent level drop). <span class="hi-trap">Trap: candidates may confuse the &Delta;T response — with minimal loop flow, less heat is being removed from the core through that loop, so the loop &Delta;T decreases. Also: shrink occurs from the rapid decrease in steam production, not from swell.</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
-- Related exam questions: [[2019 Q1]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
+- Related exam questions: [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related JPMs: [[2022 JPM Sim-d]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

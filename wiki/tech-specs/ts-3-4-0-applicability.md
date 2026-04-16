@@ -119,7 +119,7 @@ LCO 3.0.4 does NOT prevent mode changes required to comply with ACTIONS or that 
 
 <span class="hi-exam">LCO 3.0.4.b</span> allows entry after performance of a risk assessment addressing inoperable systems and components, consideration of the results, determination of acceptability, and establishment of risk management actions. The risk assessment uses the plant program for implementing 10 CFR 50.65(a)(4). <span class="hi-exam">The LCO 3.0.4.b risk assessments do not have to be documented.</span> A small subset of systems determined more important to risk contain Notes prohibiting use of LCO 3.0.4.b — these are identified in the individual LCOs.
 
-<span class="hi-exam">LCO 3.0.4.c</span> allows entry based on a specific ACTION in the Specification stating it is applicable. This is typically applied to specifications describing values and parameters (e.g., RCS Specific Activity) based on NRC plant-specific approval.
+<span class="hi-exam">LCO 3.0.4.c</span> allows entry based on a specific ACTION in the Specification stating it is applicable. This is typically applied to specifications describing values and parameters (e.g., RCS Specific Activity) based on NRC plant-specific approval. <span class="hi-exam">(Tested: 2019 Q84 — LCO 3.0.4.c allows going up in MODE even when LCO 3.4.9 specific activity is NOT met.)</span>
 
 <span class="hi-exam">The provisions of LCO 3.0.4 shall NOT prevent changes in MODES required to comply with ACTIONS, nor changes resulting from any unit shutdown</span> (i.e., Mode 1→2, 2→3, 3→4, 4→5 transitions).
 
@@ -127,6 +127,11 @@ Upon entry into a MODE with the LCO not met, LCO 3.0.1 and 3.0.2 require entry i
 
 </div>
 </details>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q79</div>
+LCO 3.0.4.b risk assessment exception: <span class="hi-exam">a small subset of systems contain Notes prohibiting use of LCO 3.0.4.b</span>. Per TS 3.8.1.1 ACTION h, <span class="hi-exam">LCO 3.0.4.b is NOT applicable to DGs</span>. With one DG inoperable and offsite power restored, the unit cannot change modes (e.g., MODE 4 to MODE 3) using a risk assessment — must restore the DG first. <span class="hi-trap">Trap: LCO 3.0.4.b is the general risk assessment provision, but specific TS sections can and do prohibit its use.</span>
+</div>
 
 ### LCO 3.0.6 (Return to Service for Testing)
 
@@ -241,5 +246,5 @@ The provisions of SR 4.0.4 shall NOT prevent entry into MODES required to comply
 ## Connections
 
 - Related procedures: [[OP-AA-108-116 — Protected Equipment Program]]
-- Related exam questions: [[2020 Q97]]
-- Related exam: [[2020 NRC Written Exam]]
+- Related exam questions: [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

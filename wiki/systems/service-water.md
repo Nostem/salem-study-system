@@ -108,10 +108,15 @@ During LOPA-1, <span class="hi-exam">2A EDG running with no SW pumps must be sto
 Unit 1 SW loop operability with 13 SW Pump C/T and 1A EDG inoperable: per <span class="hi-exam">S1.OP-SO.SW-0005</span>, two independent operable SW loops require one pump per vital bus and two pumps per bay. With 13 SW Pump C/T: <span class="hi-exam">A bus (15 & 16 Pumps) — YES, B bus (14 Pump) — YES, C bus (11 & 12 Pumps) — YES, #1 Bay (11 & 12) — YES, #3 Bay (15 & 16) — YES</span>. Two SW loops remain operable, so <span class="hi-exam">TS 3.8.1.1 Action b.2 does NOT apply</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q60</div>
+SW Nuclear Header leak location: with low SW pressure to loads on the <span class="hi-exam">21 SW Nuclear Header</span> (21 CC Pump, 21 CS Pump, 21 CFCU, etc.), the leak is <span class="hi-exam">downstream of 21SW22 (NUCLEAR HEADER inlet valve)</span>. Key one-line relationships: <span class="hi-exam">2SW26 (TURB AREA SW MOV) is on the turbine area header (non-nuclear)</span>; 22SW22 is the 22 Nuclear Header inlet; 21SW23/22SW23 are Nuclear Header Tie Valves (connecting the two headers). <span class="hi-trap">Trap: the question requires correlating the affected loads to the correct nuclear header — all affected loads are served by the 21 header, so the leak must be downstream of 21SW22 (not 22SW22 or between the tie valves).</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related exam questions: [[2019 Q26]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
+- Related exam questions: [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
