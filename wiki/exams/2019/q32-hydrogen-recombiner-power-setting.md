@@ -15,7 +15,7 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br><br>
-REFERENCES PROVIDED<br><br>
+<span class="val-normal">REFERENCES PROVIDED</span><br><br>
 &bull; A LOCA has occurred<br>
 &bull; 22 Hydrogen Recombiner is inoperable<br>
 &bull; The crew is preparing to place 21 Hydrogen Recombiner in service<br>
