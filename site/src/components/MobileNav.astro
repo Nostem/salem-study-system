@@ -16,14 +16,32 @@
 </div>
 
 <script is:inline>
+  function getMobileNavElements() {
+    return {
+      drawer: document.getElementById('mobile-drawer'),
+      overlay: document.getElementById('mobile-overlay'),
+    };
+  }
+
   function openMobileNav() {
-    document.getElementById('mobile-drawer').style.transform = 'translateX(0)';
-    document.getElementById('mobile-overlay').classList.remove('hidden');
+    const { drawer, overlay } = getMobileNavElements();
+    if (!drawer || !overlay) return;
+
+    drawer.style.translate = '0';
+    overlay.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
   }
+
   function closeMobileNav() {
-    document.getElementById('mobile-drawer').style.transform = 'translateX(-100%)';
-    document.getElementById('mobile-overlay').classList.add('hidden');
+    const { drawer, overlay } = getMobileNavElements();
+    if (!drawer || !overlay) return;
+
+    drawer.style.translate = '-100%';
+    overlay.classList.add('hidden');
+    document.body.style.overflow = '';
   }
+
   window.openMobileNav = openMobileNav;
   window.closeMobileNav = closeMobileNav;
+  document.addEventListener('astro:after-swap', closeMobileNav);
 </script>

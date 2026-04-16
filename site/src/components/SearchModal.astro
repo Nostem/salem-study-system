@@ -25,22 +25,49 @@ const base = import.meta.env.BASE_URL;
 </div>
 
 <script is:inline define:vars={{ base }}>
-  // Search modal open/close
-  function openSearch() {
-    document.getElementById('search-modal').classList.remove('hidden');
-    document.getElementById('search-input').focus();
+  const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+  const pagefindModulePath = `${normalizedBase}pagefind/pagefind.js`;
+
+  function getSearchElements() {
+    return {
+      modal: document.getElementById('search-modal'),
+      input: document.getElementById('search-input'),
+      results: document.getElementById('search-results'),
+    };
   }
+
+  function openSearch() {
+    const { modal, input } = getSearchElements();
+    if (!modal || !input) return;
+
+    modal.classList.remove('hidden');
+    input.focus();
+  }
+
   function closeSearch() {
-    document.getElementById('search-modal').classList.add('hidden');
-    document.getElementById('search-input').value = '';
-    document.getElementById('search-results').innerHTML = '';
+    const { modal, input, results } = getSearchElements();
+    if (!modal || !input || !results) return;
+
+    modal.classList.add('hidden');
+    input.value = '';
+    results.innerHTML = '';
+  }
+
+  function bindSearchTriggers() {
+    document.querySelectorAll('#search-trigger, #search-trigger-mobile').forEach((trigger) => {
+      if (trigger.dataset.searchBound === 'true') return;
+      trigger.dataset.searchBound = 'true';
+      trigger.addEventListener('click', openSearch);
+    });
   }
 
   // Keyboard shortcut: Cmd+K / Ctrl+K
   document.addEventListener('keydown', (e) => {
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
       e.preventDefault();
-      const modal = document.getElementById('search-modal');
+      const { modal } = getSearchElements();
+      if (!modal) return;
+
       if (modal.classList.contains('hidden')) {
         openSearch();
       } else {
@@ -50,65 +77,71 @@ const base = import.meta.env.BASE_URL;
     if (e.key === 'Escape') closeSearch();
   });
 
-  // Wire up search triggers after DOM is ready (SearchModal script runs
-  // before the header buttons exist in the DOM)
-  document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('search-trigger')?.addEventListener('click', openSearch);
-    document.getElementById('search-trigger-mobile')?.addEventListener('click', openSearch);
-  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bindSearchTriggers, { once: true });
+  } else {
+    bindSearchTriggers();
+  }
+  document.addEventListener('astro:page-load', bindSearchTriggers);
 
-  // Navigate to first result on Enter
-  document.getElementById('search-input')?.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter') {
-      e.preventDefault();
-      const firstLink = document.querySelector('#search-results a');
-      if (firstLink) window.location.href = firstLink.href;
-    }
-    // Arrow key navigation
-    if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-      e.preventDefault();
-      const links = [...document.querySelectorAll('#search-results a')];
-      if (!links.length) return;
-      const active = document.querySelector('#search-results a.search-active');
-      let idx = active ? links.indexOf(active) : -1;
-      if (active) active.classList.remove('search-active', 'bg-[#111827]');
-      idx = e.key === 'ArrowDown' ? Math.min(idx + 1, links.length - 1) : Math.max(idx - 1, 0);
-      links[idx].classList.add('search-active', 'bg-[#111827]');
-      links[idx].scrollIntoView({ block: 'nearest' });
-    }
-  });
+  function attachInputHandlers(pagefind) {
+    const { input, results } = getSearchElements();
+    if (!input || !results || input.dataset.pagefindBound === 'true') return;
+
+    input.dataset.pagefindBound = 'true';
+
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') {
+        e.preventDefault();
+        const firstLink = document.querySelector('#search-results a');
+        if (firstLink) window.location.href = firstLink.href;
+      }
+
+      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        const links = [...document.querySelectorAll('#search-results a')];
+        if (!links.length) return;
+        const active = document.querySelector('#search-results a.search-active');
+        let idx = active ? links.indexOf(active) : -1;
+        if (active) active.classList.remove('search-active', 'bg-[#111827]');
+        idx = e.key === 'ArrowDown' ? Math.min(idx + 1, links.length - 1) : Math.max(idx - 1, 0);
+        links[idx].classList.add('search-active', 'bg-[#111827]');
+        links[idx].scrollIntoView({ block: 'nearest' });
+      }
+    });
+
+    let debounceTimer;
+    input.addEventListener('input', (e) => {
+      const query = e.target.value;
+      if (!query) {
+        results.innerHTML = '';
+        return;
+      }
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(async () => {
+        const search = await pagefind.search(query);
+        const items = await Promise.all(search.results.slice(0, 10).map(r => r.data()));
+
+        results.innerHTML = items.map(item => `
+          <a href="${item.url}" class="block px-3 py-2.5 rounded-md hover:bg-[#111827] no-underline mb-1 transition-colors">
+            <div class="text-sm text-[#e0e4ea] font-medium">${item.meta?.title || 'Untitled'}</div>
+            <div class="text-xs text-[#6b7280] mt-0.5 line-clamp-2">${item.excerpt || ''}</div>
+          </a>
+        `).join('');
+      }, 150);
+    });
+  }
 
   // Initialize Pagefind
   async function initPagefind() {
-    const input = document.getElementById('search-input');
-    const results = document.getElementById('search-results');
+    const { results } = getSearchElements();
+    if (!results) return;
 
     try {
-      const pagefind = await import(base + 'pagefind/pagefind.js');
+      const pagefind = await import(pagefindModulePath);
       await pagefind.init();
-
-      let debounceTimer;
-      input.addEventListener('input', (e) => {
-        const query = e.target.value;
-        if (!query) {
-          results.innerHTML = '';
-          return;
-        }
-        clearTimeout(debounceTimer);
-        debounceTimer = setTimeout(async () => {
-          const search = await pagefind.search(query);
-          const items = await Promise.all(search.results.slice(0, 10).map(r => r.data()));
-
-          results.innerHTML = items.map(item => `
-            <a href="${item.url}" class="block px-3 py-2.5 rounded-md hover:bg-[#111827] no-underline mb-1 transition-colors">
-              <div class="text-sm text-[#e0e4ea] font-medium">${item.meta?.title || 'Untitled'}</div>
-              <div class="text-xs text-[#6b7280] mt-0.5 line-clamp-2">${item.excerpt || ''}</div>
-            </a>
-          `).join('');
-        }, 150);
-      });
+      attachInputHandlers(pagefind);
     } catch (e) {
-      // Show feedback if pagefind fails (only in production — dev mode has no index)
       if (window.location.hostname !== 'localhost') {
         results.innerHTML = '<div class="px-3 py-4 text-xs text-[#f87171]">Search index failed to load. Try refreshing.</div>';
       }
@@ -117,4 +150,5 @@ const base = import.meta.env.BASE_URL;
   }
 
   initPagefind();
+  document.addEventListener('astro:page-load', initPagefind);
 </script>

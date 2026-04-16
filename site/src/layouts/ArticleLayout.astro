@@ -28,7 +28,7 @@ const base = import.meta.env.BASE_URL;
   <!-- Mobile nav drawer -->
   <div class="lg:hidden">
     <MobileNav>
-      <Sidebar currentSlug={slug} />
+      <Sidebar currentSlug={slug} sidebarId="mobile-sidebar" sidebarVariant="mobile" />
     </MobileNav>
   </div>
 
@@ -70,7 +70,7 @@ const base = import.meta.env.BASE_URL;
   <div class="flex">
     <!-- Sidebar (desktop) -->
     <div class="hidden lg:block">
-      <Sidebar currentSlug={slug} />
+      <Sidebar currentSlug={slug} sidebarId="desktop-sidebar" sidebarVariant="desktop" />
     </div>
 
     <!-- Main content -->

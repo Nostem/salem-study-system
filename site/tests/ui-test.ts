@@ -93,23 +93,32 @@ test('search trigger button opens modal', async ({ page }) => {
   await page.goto(BASE);
   await page.waitForLoadState('networkidle');
 
-  // The inline script that wires up the click handler runs before #search-trigger
-  // is in the DOM, so re-attach the handler here to test the button interaction.
-  await page.evaluate(() => {
-    const trigger = document.getElementById('search-trigger');
-    const modal = document.getElementById('search-modal');
-    const input = document.getElementById('search-input');
-    if (trigger && modal && input) {
-      trigger.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-        input.focus();
-      });
-    }
-  });
-
   await page.locator('#search-trigger').click();
   const modal = page.locator('#search-modal');
+  const input = page.locator('#search-input');
+
   await expect(modal).toBeVisible();
+  await expect(input).toBeFocused();
+});
+
+test('search returns results from Pagefind index', async ({ page }) => {
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  await page.locator('#search-trigger').click();
+  await page.locator('#search-input').fill('reactor coolant');
+
+  const firstResult = page.locator('#search-results a').first();
+  await expect(firstResult).toBeVisible();
+  await expect(firstResult).toContainText(/reactor coolant/i);
+});
+
+test('desktop and mobile sidebars use distinct IDs', async ({ page }) => {
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  await expect(page.locator('#desktop-sidebar')).toHaveCount(1);
+  await expect(page.locator('#mobile-sidebar')).toHaveCount(1);
 });
 
 test('sidebar links resolve to valid pages', async ({ page }) => {
@@ -119,7 +128,7 @@ test('sidebar links resolve to valid pages', async ({ page }) => {
   // Set desktop viewport so sidebar is visible
   await page.setViewportSize({ width: 1440, height: 900 });
 
-  const sidebarLinks = page.locator('#sidebar a[href]');
+  const sidebarLinks = page.locator('#desktop-sidebar a[href]');
   const count = await sidebarLinks.count();
   expect(count).toBeGreaterThan(0);
 
@@ -238,7 +247,7 @@ test('mobile: sidebar hidden, hamburger visible', async ({ browser }) => {
   await page.waitForLoadState('networkidle');
 
   // Desktop sidebar wrapper (hidden lg:block) should not be visible on mobile
-  const desktopSidebar = page.locator('.hidden.lg\\:block >> #sidebar');
+  const desktopSidebar = page.locator('#desktop-sidebar');
   await expect(desktopSidebar).not.toBeVisible();
 
   // Hamburger button should be visible
@@ -256,13 +265,23 @@ test('mobile: hamburger opens drawer', async ({ browser }) => {
 
   const drawer = page.locator('#mobile-drawer');
 
-  // Click hamburger
   await page.getByText('☰').click();
+  await page.waitForTimeout(300);
 
-  // Drawer should slide in (transform removed)
   await expect(drawer).toBeVisible();
-  const transform = await drawer.evaluate(el => getComputedStyle(el).transform);
-  expect(transform).not.toContain('-');
+  const drawerPosition = await drawer.evaluate(el => {
+    const rect = el.getBoundingClientRect();
+    const styles = getComputedStyle(el);
+    return {
+      left: rect.left,
+      right: rect.right,
+      translate: styles.translate,
+    };
+  });
+
+  expect(drawerPosition.left, 'Drawer should slide fully into the viewport').toBeGreaterThanOrEqual(0);
+  expect(drawerPosition.right, 'Drawer should remain onscreen after opening').toBeGreaterThan(0);
+  expect(drawerPosition.translate, 'Drawer translate should be cleared when open').not.toBe('-100%');
 
   await context.close();
 });
@@ -293,7 +312,7 @@ test('desktop: sidebar visible, hamburger hidden', async ({ browser }) => {
   await page.waitForLoadState('networkidle');
 
   // Desktop sidebar wrapper (hidden lg:block) should be visible on desktop
-  const desktopSidebar = page.locator('.hidden.lg\\:block >> #sidebar');
+  const desktopSidebar = page.locator('#desktop-sidebar');
   await expect(desktopSidebar).toBeVisible();
 
   // Hamburger should not be visible
