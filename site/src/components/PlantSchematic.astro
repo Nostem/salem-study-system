@@ -1,0 +1,217 @@
+---
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+// System blocks: [x, y, w, h, displayName, mockMastery, group, articleSlug]
+// TODO: derive mastery from progress data; derive articleSlug from frontmatter
+const systems: [number, number, number, number, string, number, string, string][] = [
+  // Primary
+  [40, 60, 90, 42, 'Rx Vessel', 85, 'primary', 'systems/rx-vessel-and-internals'],
+  [150, 60, 90, 42, 'RCPs', 72, 'primary', 'systems/reactor-coolant-pumps'],
+  [260, 60, 90, 42, 'PZR', 68, 'primary', 'systems/pressurizer-and-prt'],
+  [40, 115, 90, 42, 'RCS', 72, 'primary', 'systems/reactor-coolant-system'],
+  [150, 115, 90, 42, 'SG', 58, 'primary', 'systems/steam-generators'],
+  [260, 115, 90, 42, 'CVCS', 60, 'primary', 'systems/chemical-and-volume-control-system'],
+
+  // Control
+  [380, 60, 90, 42, 'RPS / SSPS', 74, 'control', 'systems/rps-ssps'],
+  [490, 60, 90, 42, 'Excore NIs', 80, 'control', 'systems/excore-nis'],
+  [380, 115, 90, 42, 'Rod Ctrl', 55, 'control', 'systems/control-rod-drive'],
+  [490, 115, 90, 42, 'AMSAC', 38, 'control', 'systems/amsac'],
+
+  // Emergency
+  [40, 200, 90, 42, 'ECCS', 41, 'emergency', 'systems/emergency-core-cooling-systems'],
+  [150, 200, 90, 42, 'RHR', 65, 'emergency', 'systems/residual-heat-removal'],
+  [260, 200, 90, 42, 'CCW', 72, 'emergency', 'systems/component-cooling-water'],
+  [380, 200, 90, 42, 'Cont. Spray', 88, 'emergency', 'systems/containment-spray'],
+  [490, 200, 90, 42, 'CFCUs', 70, 'emergency', 'systems/containment-fan-coil-units'],
+  [40, 255, 90, 42, 'Service Water', 82, 'emergency', 'systems/service-water'],
+  [150, 255, 90, 42, 'Containment', 64, 'emergency', 'systems/containment-systems'],
+  [260, 255, 90, 42, 'SFP', 55, 'emergency', 'systems/spent-fuel-pool'],
+
+  // Secondary
+  [610, 60, 90, 42, 'Main Steam', 66, 'secondary', 'systems/main-steam'],
+  [720, 60, 90, 42, 'Main Turb', 70, 'secondary', 'systems/main-turbine'],
+  [830, 60, 90, 42, 'Feed & Cond', 50, 'secondary', 'systems/feedwater-and-condensate'],
+  [610, 115, 90, 42, 'AFW', 38, 'secondary', 'systems/auxiliary-feedwater'],
+  [720, 115, 90, 42, 'Steam Dumps', 62, 'secondary', 'systems/steam-dumps'],
+  [830, 115, 90, 42, 'Circ Water', 58, 'secondary', 'systems/circ-water'],
+
+  // Electrical
+  [610, 200, 90, 42, '4KV', 80, 'electrical', 'systems/4kv'],
+  [720, 200, 90, 42, '13KV', 70, 'electrical', 'systems/13kv'],
+  [830, 200, 90, 42, '115V', 68, 'electrical', 'systems/115v-ac'],
+  [610, 255, 90, 42, 'DC Power', 75, 'electrical', 'systems/dc-power'],
+  [720, 255, 90, 42, 'EDGs', 88, 'electrical', 'systems/diesel-generators'],
+  [830, 255, 90, 42, '500KV', 62, 'electrical', 'systems/500kv'],
+
+  // Auxiliary
+  [40, 340, 90, 42, 'Control Air', 70, 'aux', 'systems/control-air'],
+  [150, 340, 90, 42, 'Fire Prot', 48, 'aux', 'systems/fire-protection'],
+  [260, 340, 90, 42, 'Rad Mon', 66, 'aux', 'systems/radiation-monitoring'],
+  [380, 340, 90, 42, 'Waste Gas', 52, 'aux', 'systems/waste-gas'],
+  [490, 340, 90, 42, 'Waste Liq', 50, 'aux', 'systems/waste-liquid'],
+  [610, 340, 90, 42, 'Chill Water', 65, 'aux', 'systems/chill-water'],
+  [720, 340, 90, 42, 'TGA Vent', 60, 'aux', 'systems/tga-ventilation'],
+  [830, 340, 90, 42, 'Annuncs', 80, 'aux', 'systems/annunciators'],
+];
+
+const groupLabels: Record<string, [string, number, number, string]> = {
+  primary:    ['Primary',          40, 40, '#60a5fa'],
+  control:    ['Control & Instr',  380, 40, '#a78bfa'],
+  emergency:  ['Emergency',        40, 180, '#f87171'],
+  secondary:  ['Secondary',        610, 40, '#34d399'],
+  electrical: ['Electrical',       610, 180, '#fbbf24'],
+  aux:        ['Auxiliary',         40, 320, '#6b7280'],
+};
+
+// Group panel widths/heights
+const groupDims: Record<string, [number, number]> = {
+  primary:    [330, 110],
+  control:    [220, 110],
+  emergency:  [560, 110],
+  secondary:  [330, 110],
+  electrical: [330, 110],
+  aux:        [900, 55],
+};
+
+function masteryColor(m: number): string {
+  if (m >= 75) return 'var(--color-mastery-ok)';
+  if (m >= 55) return 'var(--color-mastery-mid)';
+  return 'var(--color-mastery-weak)';
+}
+---
+
+<div class="w-full">
+  <div class="flex items-baseline justify-between mb-4">
+    <div>
+      <div class="font-mono text-[11px] tracking-[0.14em] text-text-muted uppercase">Salem unit 2 · click any system</div>
+      <h1 class="font-serif text-[2.25rem] text-text-primary font-normal m-0 leading-tight">Plant overview</h1>
+    </div>
+    <div class="flex gap-4 text-xs text-text-muted">
+      <span><span class="text-mastery-ok">●</span> Mastered</span>
+      <span><span class="text-mastery-mid">●</span> In progress</span>
+      <span><span class="text-mastery-weak">●</span> Weak</span>
+    </div>
+  </div>
+
+  <div class="flex gap-4">
+    <!-- SVG schematic -->
+    <div class="flex-1 bg-bg-surface border border-border rounded overflow-hidden">
+      <svg viewBox="0 0 960 420" class="w-full h-auto">
+        <!-- Group panels -->
+        {Object.entries(groupLabels).map(([key, [label, x, y, color]]) => {
+          const [w, h] = groupDims[key];
+          return (
+            <g>
+              <rect x={x - 10} y={y - 10} width={w} height={h}
+                    fill="none" stroke="var(--color-border)" stroke-dasharray="3 4" rx="3" />
+              <text x={x - 4} y={y - 16} fill={color}
+                    font-size="10" letter-spacing="0.14em" font-family="var(--font-mono)">
+                {label.toUpperCase()}
+              </text>
+            </g>
+          );
+        })}
+
+        <!-- System tiles -->
+        {systems.map(([x, y, w, h, name, m, _group, slug]) => {
+          const color = masteryColor(m);
+          return (
+            <g data-block data-block-id={slug} data-block-name={name} data-block-mastery={m}
+               style="cursor: pointer;">
+              <a href={`${base}${slug}`}>
+                <rect x={x} y={y} width={w} height={h} rx="3"
+                      fill="var(--color-bg)" stroke={color} stroke-width="1.5" />
+                <text x={x + w/2} y={y + 17} text-anchor="middle"
+                      fill="var(--color-text-primary)" font-size="11" font-weight="600">
+                  {name}
+                </text>
+                <text x={x + w/2} y={y + 31} text-anchor="middle"
+                      fill={color} font-size="10" font-family="var(--font-mono)">
+                  {m}%
+                </text>
+                <!-- Tiny progress bar -->
+                <rect x={x + 8} y={y + 36} width={w - 16} height="2"
+                      fill="var(--color-border)" rx="1"/>
+                <rect x={x + 8} y={y + 36} width={(w - 16) * m / 100} height="2"
+                      fill={color} rx="1"/>
+              </a>
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+
+    <!-- Detail panel -->
+    <div id="plant-detail" class="w-[280px] min-w-[280px] bg-bg-surface border border-border rounded p-4 hidden xl:block">
+      <div class="text-text-muted text-xs">Hover or click a system tile</div>
+    </div>
+  </div>
+
+  <!-- Quick stats row -->
+  <div class="grid grid-cols-3 gap-3.5 mt-4">
+    <!-- TODO: wire to real mastery data -->
+    <div class="bg-bg-surface border border-border rounded p-3.5">
+      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase">Quick stat</div>
+      <div class="text-text-primary text-[15px] mt-1">14 weak systems</div>
+      <div class="text-xs text-text-muted">AMSAC, AFW, ECCS, Fire Prot, Waste Gas...</div>
+    </div>
+    <div class="bg-bg-surface border border-border rounded p-3.5">
+      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase">Last studied</div>
+      <div class="text-text-primary text-[15px] mt-1">Reactor Coolant System</div>
+      <div class="text-xs text-text-muted">2 hours ago · 72% mastery</div>
+    </div>
+    <div class="bg-bg-surface border border-border rounded p-3.5">
+      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase">Suggested focus</div>
+      <div class="text-text-primary text-[15px] mt-1">AMSAC (38%)</div>
+      <div class="text-xs text-text-muted">High exam frequency, low mastery</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function initPlantSchematic() {
+    const blocks = document.querySelectorAll<SVGGElement>('[data-block]');
+    const detail = document.getElementById('plant-detail');
+    if (!detail) return;
+
+    let selected: string | null = null;
+
+    function showDetail(el: SVGGElement) {
+      const name = el.dataset.blockName || '';
+      const mastery = el.dataset.blockMastery || '0';
+      const slug = el.dataset.blockId || '';
+      const m = parseInt(mastery);
+      const colorClass = m >= 75 ? 'text-mastery-ok' : m >= 55 ? 'text-mastery-mid' : 'text-mastery-weak';
+      const label = m >= 75 ? 'Mastered' : m >= 55 ? 'In progress' : 'Weak';
+
+      detail.innerHTML = `
+        <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase mb-1">System detail</div>
+        <div class="text-text-primary text-[15px] font-semibold">${name}</div>
+        <div class="mt-2 text-xs text-text-muted">
+          <span class="${colorClass} font-mono font-semibold">${mastery}%</span> — ${label}
+        </div>
+        <div class="h-[3px] bg-bg-card rounded mt-2">
+          <div class="h-full rounded" style="width: ${mastery}%; background: ${m >= 75 ? 'var(--color-mastery-ok)' : m >= 55 ? 'var(--color-mastery-mid)' : 'var(--color-mastery-weak)'}"></div>
+        </div>
+        <a href="${slug ? (document.querySelector('meta[name=base]')?.getAttribute('content') || '/salem-study-system/') + slug : '#'}"
+           class="block mt-4 text-accent-blue text-xs no-underline hover:underline">
+          Open article &rsaquo;
+        </a>
+      `;
+      detail.classList.remove('hidden');
+    }
+
+    blocks.forEach(b => {
+      b.addEventListener('mouseenter', () => {
+        if (!selected) showDetail(b);
+      });
+      b.addEventListener('click', (e) => {
+        // Don't prevent link navigation — the <a> inside handles it
+      });
+    });
+  }
+
+  initPlantSchematic();
+  document.addEventListener('astro:after-swap', initPlantSchematic);
+</script>
