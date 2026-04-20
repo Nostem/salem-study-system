@@ -15,9 +15,10 @@ interface Props {
   status: 'draft' | 'verified';
   slug: string;
   headings: { depth: number; slug: string; text: string }[];
+  wide?: boolean;
 }
 
-const { title, category, status, slug, headings } = Astro.props;
+const { title, category, status, slug, headings, wide = false } = Astro.props;
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -74,22 +75,26 @@ const base = import.meta.env.BASE_URL;
     </div>
 
     <!-- Main content -->
-    <main class="flex-1 px-8 py-8 max-w-[800px] xl:px-12">
-      <Breadcrumbs category={category} title={title} />
-      <div class="flex items-center gap-2.5 mb-1.5">
-        <h1 class="text-2xl text-[#e0e4ea] font-semibold m-0">{title}</h1>
-        <DraftBadge status={status} />
-      </div>
-      <article class="prose mt-6" data-slug={slug}>
+    <main class:list={["flex-1 px-8 py-8 xl:px-12", wide ? "max-w-[1200px]" : "max-w-[800px]"]}>
+      {!wide && <Breadcrumbs category={category} title={title} />}
+      {!wide && (
+        <div class="flex items-center gap-2.5 mb-1.5">
+          <h1 class="text-2xl text-[#e0e4ea] font-semibold m-0">{title}</h1>
+          <DraftBadge status={status} />
+        </div>
+      )}
+      <article class:list={[wide ? "" : "prose mt-6"]} data-slug={slug}>
         <slot />
       </article>
     </main>
 
-    <!-- Right rail: local graph + TOC (desktop) -->
-    <aside class="w-[420px] min-w-[420px] border-l border-[#1a2035] px-4 py-6 text-[11px] text-[#6b7280] h-[calc(100vh-48px)] sticky top-[48px] overflow-y-auto hidden xl:block">
-      <LocalGraph currentSlug={slug} />
-      <TableOfContents headings={headings} />
-    </aside>
+    <!-- Right rail: local graph + TOC (desktop) — hidden in wide mode -->
+    {!wide && (
+      <aside class="w-[420px] min-w-[420px] border-l border-[#1a2035] px-4 py-6 text-[11px] text-[#6b7280] h-[calc(100vh-48px)] sticky top-[48px] overflow-y-auto hidden xl:block">
+        <LocalGraph currentSlug={slug} />
+        <TableOfContents headings={headings} />
+      </aside>
+    )}
   </div>
 
   <script src="../scripts/highlighter.ts"></script>

@@ -1,26 +1,15 @@
 ---
-import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../layouts/ArticleLayout.astro';
-
-const articles = await getCollection('wiki');
-const indexArticle = articles.find((a) => a.id === '_index');
-
-let Content;
-let headings: { depth: number; slug: string; text: string }[] = [];
-
-if (indexArticle) {
-  const rendered = await render(indexArticle);
-  Content = rendered.Content;
-  headings = rendered.headings;
-}
+import HomeDashboard from '../components/HomeDashboard.astro';
 ---
 
 <ArticleLayout
-  title="Salem Study Wiki"
+  title="Home"
   category=""
   status="verified"
   slug="_index"
-  headings={headings}
+  headings={[]}
+  wide={true}
 >
-  {Content ? <Content /> : <p>Welcome to the Salem Study Wiki. Add articles to get started.</p>}
+  <HomeDashboard operatorName="Fred" examDays={42} />
 </ArticleLayout>
