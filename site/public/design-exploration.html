@@ -1,0 +1,1960 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Salem Study Wiki — Redesign Exploration</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=Instrument+Serif&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=VT323&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --doc-bg: #f6f5f2;
+    --doc-ink: #1a1a1a;
+    --doc-muted: #6b6b6b;
+    --doc-line: #e4e1db;
+    --doc-accent: #b8420e;
+  }
+  html, body { margin: 0; background: var(--doc-bg); color: var(--doc-ink); font-family: 'Inter Tight', sans-serif; }
+  #root { min-height: 100vh; }
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" data-presets="react">
+
+// ===== src/shell.jsx =====
+// Shell: doc frame, side-nav, section wrapper, shared primitives
+
+const SECTIONS = [
+  { id: 'intro', label: '00  Context & reasoning' },
+  { id: 'visuals', label: '01  Visual direction — 3 aesthetics' },
+  { id: 'homepage', label: '02  Homepage / dashboard' },
+  { id: 'plant', label: '03  Plant overview as nav' },
+  { id: 'quiz', label: '04  Quiz mode' },
+  { id: 'mastery', label: '05  Mastery dashboard' },
+  { id: 'setpoints', label: '06  Setpoint cheat sheets' },
+  { id: 'nav', label: '07  Sidebar + ⌘K palette' },
+  { id: 'mobile', label: '08  Mobile quick-study' },
+  { id: 'next', label: '09  Where to next' },
+];
+
+function DocShell({ children }) {
+  const [active, setActive] = React.useState('intro');
+  const [navOpen, setNavOpen] = React.useState(true);
+
+  React.useEffect(() => {
+    // persist scroll position / active section
+    const saved = localStorage.getItem('salem-doc-active');
+    if (saved) setActive(saved);
+  }, []);
+
+  React.useEffect(() => {
+    localStorage.setItem('salem-doc-active', active);
+    const el = document.getElementById(`sec-${active}`);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, [active]);
+
+  // IntersectionObserver to update active on scroll
+  React.useEffect(() => {
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && e.intersectionRatio > 0.3) {
+          const id = e.target.id.replace('sec-', '');
+          setActive(id);
+        }
+      });
+    }, { threshold: [0.3, 0.5, 0.7] });
+    SECTIONS.forEach(s => {
+      const el = document.getElementById(`sec-${s.id}`);
+      if (el) obs.observe(el);
+    });
+    return () => obs.disconnect();
+  }, []);
+
+  return (
+    <div style={{ display: 'flex', minHeight: '100vh' }}>
+      <aside style={{
+        width: navOpen ? 260 : 48,
+        borderRight: '1px solid var(--doc-line)',
+        background: '#fafaf7',
+        position: 'sticky',
+        top: 0,
+        height: '100vh',
+        overflowY: 'auto',
+        transition: 'width 160ms ease',
+        flexShrink: 0,
+      }}>
+        <div style={{ padding: navOpen ? '24px 20px 16px' : '20px 12px', borderBottom: '1px solid var(--doc-line)' }}>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+            {navOpen && (
+              <div>
+                <div style={{ fontSize: 10, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--doc-muted)', fontWeight: 500 }}>Design exploration</div>
+                <div style={{ fontFamily: 'Instrument Serif', fontSize: 22, lineHeight: 1.15, marginTop: 4 }}>Salem Study Wiki</div>
+              </div>
+            )}
+            <button
+              onClick={() => setNavOpen(!navOpen)}
+              style={{ background: 'none', border: 'none', cursor: 'pointer', color: 'var(--doc-muted)', fontSize: 18, padding: 4 }}
+              aria-label="Toggle nav"
+            >{navOpen ? '‹' : '›'}</button>
+          </div>
+        </div>
+        {navOpen && (
+          <nav style={{ padding: '12px 12px 40px' }}>
+            {SECTIONS.map(s => (
+              <a
+                key={s.id}
+                href={`#sec-${s.id}`}
+                onClick={(e) => { e.preventDefault(); setActive(s.id); }}
+                style={{
+                  display: 'block',
+                  padding: '7px 10px',
+                  fontSize: 13,
+                  color: active === s.id ? 'var(--doc-ink)' : 'var(--doc-muted)',
+                  fontWeight: active === s.id ? 600 : 400,
+                  textDecoration: 'none',
+                  borderRadius: 4,
+                  background: active === s.id ? 'rgba(184,66,14,0.08)' : 'transparent',
+                  borderLeft: active === s.id ? '2px solid var(--doc-accent)' : '2px solid transparent',
+                  marginBottom: 2,
+                  fontVariantNumeric: 'tabular-nums',
+                }}
+              >{s.label}</a>
+            ))}
+            <div style={{ marginTop: 32, padding: '0 10px', fontSize: 11, color: 'var(--doc-muted)', lineHeight: 1.55 }}>
+              <div style={{ textTransform: 'uppercase', letterSpacing: '0.12em', fontSize: 9, color: '#9a9a9a', marginBottom: 6 }}>Note</div>
+              These are design explorations, not a finished build. Mix & match the pieces you like and I'll converge to a coherent v1.
+            </div>
+          </nav>
+        )}
+      </aside>
+      <main style={{ flex: 1, minWidth: 0 }} data-screen-label="Design Doc">
+        {children}
+      </main>
+    </div>
+  );
+}
+
+function Section({ id, eyebrow, title, subtitle, children }) {
+  return (
+    <section
+      id={`sec-${id}`}
+      data-screen-label={`${id}`}
+      style={{ padding: '80px 64px 120px', maxWidth: 1400, borderBottom: '1px solid var(--doc-line)' }}
+    >
+      <div style={{ fontSize: 11, letterSpacing: '0.18em', textTransform: 'uppercase', color: 'var(--doc-accent)', fontWeight: 600, marginBottom: 10 }}>
+        {eyebrow}
+      </div>
+      <h2 style={{ fontFamily: 'Instrument Serif', fontSize: 48, fontWeight: 400, lineHeight: 1.05, margin: '0 0 12px', letterSpacing: '-0.01em' }}>{title}</h2>
+      {subtitle && (
+        <p style={{ fontSize: 17, color: '#4a4a4a', maxWidth: 720, lineHeight: 1.55, margin: '0 0 40px' }}>{subtitle}</p>
+      )}
+      {children}
+    </section>
+  );
+}
+
+function Note({ label = 'Note', children, tone = 'default' }) {
+  const colors = {
+    default: { bg: '#efece5', ink: '#2a2a2a', accent: '#8a7a5a' },
+    warn: { bg: '#fbf2e5', ink: '#4a3010', accent: '#b8420e' },
+    good: { bg: '#eaf2ea', ink: '#1a3a1a', accent: '#4a7a3a' },
+  }[tone];
+  return (
+    <div style={{
+      background: colors.bg,
+      borderLeft: `2px solid ${colors.accent}`,
+      padding: '14px 18px',
+      borderRadius: '0 4px 4px 0',
+      margin: '16px 0',
+      fontSize: 14,
+      lineHeight: 1.6,
+      color: colors.ink,
+    }}>
+      <div style={{ fontSize: 10, letterSpacing: '0.14em', textTransform: 'uppercase', color: colors.accent, fontWeight: 600, marginBottom: 4 }}>{label}</div>
+      {children}
+    </div>
+  );
+}
+
+function Stack({ children, gap = 16, style }) {
+  return <div style={{ display: 'flex', flexDirection: 'column', gap, ...style }}>{children}</div>;
+}
+
+function Row({ children, gap = 16, align = 'stretch', wrap = false, style }) {
+  return <div style={{ display: 'flex', gap, alignItems: align, flexWrap: wrap ? 'wrap' : 'nowrap', ...style }}>{children}</div>;
+}
+
+function OptionCard({ title, subtitle, tag, children, minHeight = 0 }) {
+  return (
+    <div style={{
+      background: '#ffffff',
+      border: '1px solid var(--doc-line)',
+      borderRadius: 6,
+      overflow: 'hidden',
+      display: 'flex',
+      flexDirection: 'column',
+      minHeight,
+    }}>
+      <div style={{ padding: '14px 18px', borderBottom: '1px solid var(--doc-line)', display: 'flex', alignItems: 'baseline', gap: 12 }}>
+        {tag && <span style={{ fontSize: 10, letterSpacing: '0.14em', fontWeight: 700, color: 'var(--doc-accent)', textTransform: 'uppercase' }}>{tag}</span>}
+        <div style={{ flex: 1 }}>
+          <div style={{ fontSize: 15, fontWeight: 600, lineHeight: 1.2 }}>{title}</div>
+          {subtitle && <div style={{ fontSize: 13, color: 'var(--doc-muted)', marginTop: 2 }}>{subtitle}</div>}
+        </div>
+      </div>
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+// Scaled viewport — show a design at real pixel size but scaled to fit
+function ScaledFrame({ width = 1400, height = 900, children, bg = '#0a0e17' }) {
+  const wrapRef = React.useRef(null);
+  const [scale, setScale] = React.useState(1);
+  React.useEffect(() => {
+    const update = () => {
+      if (!wrapRef.current) return;
+      const w = wrapRef.current.clientWidth;
+      setScale(Math.min(1, w / width));
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    if (wrapRef.current) ro.observe(wrapRef.current);
+    return () => ro.disconnect();
+  }, [width]);
+  return (
+    <div ref={wrapRef} style={{ width: '100%', height: height * scale, position: 'relative', background: bg, overflow: 'hidden', borderRadius: 4 }}>
+      <div style={{
+        width,
+        height,
+        transform: `scale(${scale})`,
+        transformOrigin: 'top left',
+        position: 'absolute',
+        top: 0,
+        left: 0,
+      }}>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+Object.assign(window, { DocShell, Section, Note, Stack, Row, OptionCard, ScaledFrame, SECTIONS });
+
+
+// ===== src/explorations/visual-directions.jsx =====
+// Three visual direction explorations, same content, three aesthetics
+
+// Shared sample data — a pretend RCS article page
+const RCS_HEADINGS = ['Function', 'Key Components', 'Key Setpoints & Limits', 'Tech Spec LCOs', 'Related EOPs', 'Exam History', 'Connections'];
+
+// ── A. Sharpened Dark Tech-Docs ──────────────────────────────────────────────
+function VariantSharperDark() {
+  return (
+    <div style={{
+      width: '100%', height: '100%',
+      background: '#0b0f18',
+      color: '#d8dde6',
+      fontFamily: '"Inter Tight", system-ui, sans-serif',
+      display: 'grid',
+      gridTemplateColumns: '220px 1fr 260px',
+      fontSize: 13,
+    }}>
+      {/* Sidebar */}
+      <aside style={{ background: '#080c14', borderRight: '1px solid #1a2130', padding: '20px 0', fontSize: 12 }}>
+        <div style={{ padding: '0 20px 18px', borderBottom: '1px solid #141a27' }}>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 20, color: '#e8ecf3' }}>Salem</div>
+          <div style={{ fontSize: 10, color: '#5a6478', letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: 2 }}>Study system</div>
+        </div>
+        <div style={{ padding: '14px 12px' }}>
+          {[
+            ['Dashboard', false],
+            ['Today\'s queue', false, '12'],
+            ['Quiz mode', false],
+            ['Mastery', false],
+          ].map(([l, active, badge]) => (
+            <div key={l} style={{ padding: '7px 10px', borderRadius: 4, color: active ? '#e8ecf3' : '#8a94a8', display: 'flex', justifyContent: 'space-between' }}>
+              <span>{l}</span>
+              {badge && <span style={{ fontSize: 10, background: '#1a2638', padding: '2px 6px', borderRadius: 3, color: '#8aa2c8' }}>{badge}</span>}
+            </div>
+          ))}
+          <div style={{ fontSize: 10, color: '#5a6478', letterSpacing: '0.12em', textTransform: 'uppercase', padding: '18px 10px 6px' }}>Working set</div>
+          {['RCS', 'CVCS', 'AFW', 'EDG', 'TS 3/4.4'].map((l, i) => (
+            <div key={l} style={{ padding: '5px 10px', color: i === 0 ? '#e8ecf3' : '#8a94a8', background: i === 0 ? 'rgba(90,140,220,0.08)' : 'transparent', borderLeft: i === 0 ? '2px solid #4a8ce0' : '2px solid transparent', fontSize: 12.5 }}>{l}</div>
+          ))}
+          <div style={{ fontSize: 10, color: '#5a6478', letterSpacing: '0.12em', textTransform: 'uppercase', padding: '18px 10px 6px' }}>Systems</div>
+          {['Electrical ›', 'Primary ›', 'Emergency ›', 'Control ›'].map(l => (
+            <div key={l} style={{ padding: '5px 10px', color: '#8a94a8', fontSize: 12.5 }}>{l}</div>
+          ))}
+        </div>
+      </aside>
+
+      {/* Article */}
+      <div style={{ padding: '28px 48px', overflow: 'hidden' }}>
+        <div style={{ fontSize: 11, color: '#5a6478', display: 'flex', gap: 6, marginBottom: 10 }}>
+          <span>Systems</span><span>›</span><span>Primary</span><span>›</span><span style={{ color: '#8aa2c8' }}>RCS</span>
+        </div>
+        <div style={{ display: 'flex', alignItems: 'baseline', gap: 14, marginBottom: 6 }}>
+          <h1 style={{ margin: 0, fontFamily: 'Instrument Serif', fontWeight: 400, fontSize: 44, color: '#f2f5fa', letterSpacing: '-0.01em' }}>Reactor Coolant System</h1>
+          <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: '#4a7a4a', background: 'rgba(74,122,74,0.12)', padding: '3px 8px', borderRadius: 3, fontWeight: 600 }}>✓ Verified</span>
+        </div>
+        <div style={{ fontSize: 13, color: '#5a6478', marginBottom: 28, display: 'flex', gap: 14 }}>
+          <span>Primary system</span><span>·</span><span>34 backlinks</span><span>·</span><span>Tested 18× across 4 exams</span>
+        </div>
+
+        <div style={{ fontSize: 11, color: '#4a8ce0', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600, marginBottom: 8, marginTop: 4 }}>Function</div>
+        <p style={{ fontSize: 14, lineHeight: 1.7, color: '#c0c7d3', margin: '0 0 20px' }}>
+          The Reactor Coolant System transfers heat from the reactor core to the steam generators, maintains core cooling under accident conditions, and provides a <span style={{ background: 'rgba(90,140,220,0.14)', borderBottom: '1.5px solid rgba(90,140,220,0.4)', padding: '1px 3px', borderRadius: 2, color: '#e8ecf3' }}>second fission product barrier</span> between the fuel and containment.
+        </p>
+
+        <div style={{ fontSize: 11, color: '#4a8ce0', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600, marginBottom: 8 }}>Key Setpoints</div>
+        <div style={{ background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4, overflow: 'hidden', fontFamily: 'JetBrains Mono, monospace', fontSize: 12 }}>
+          {[
+            ['Pressurizer pressure — Lo-Lo trip', '1950 psig', '#f07070', 'TRIP'],
+            ['Pressurizer pressure — Hi trip', '2385 psig', '#f07070', 'TRIP'],
+            ['Pressurizer level — Lo alarm', '17%', '#e8a942', 'ALARM'],
+            ['Tavg — normal full power', '568.9°F', '#5cb075', 'NORMAL'],
+            ['RCS flow — Lo trip', '90%', '#f07070', 'TRIP'],
+          ].map(([label, val, c, kind], i) => (
+            <div key={label} style={{ display: 'grid', gridTemplateColumns: '1fr 100px 70px', padding: '9px 14px', borderTop: i ? '1px solid #141a27' : 'none' }}>
+              <span style={{ color: '#a0a8b8' }}>{label}</span>
+              <span style={{ color: c, textAlign: 'right' }}>{val}</span>
+              <span style={{ fontSize: 9.5, color: c, letterSpacing: '0.08em', textAlign: 'right' }}>{kind}</span>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ fontSize: 11, color: '#4a8ce0', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600, marginBottom: 8, marginTop: 28 }}>Tech Spec LCOs</div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+          {[
+            ['TS 3/4.4.1', 'RCS loops operational', 'Modes 1,2,3,4'],
+            ['TS 3/4.4.2', 'Safety valves', 'Modes 1,2,3'],
+            ['TS 3/4.4.3', 'PORVs & block valves', 'Modes 1,2,3'],
+            ['TS 3/4.4.5', 'RCS leakage', 'Modes 1,2,3,4'],
+          ].map(([id, title, modes]) => (
+            <div key={id} style={{ background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4, padding: '10px 14px' }}>
+              <div style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 11, color: '#5cb075', fontWeight: 600 }}>{id}</div>
+              <div style={{ fontSize: 13, color: '#e8ecf3', marginTop: 2 }}>{title}</div>
+              <div style={{ fontSize: 11, color: '#5a6478', marginTop: 2 }}>{modes}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Right rail */}
+      <aside style={{ background: '#0a0e17', borderLeft: '1px solid #1a2130', padding: '28px 20px', fontSize: 12 }}>
+        <div style={{ fontSize: 10, color: '#5a6478', letterSpacing: '0.12em', textTransform: 'uppercase', marginBottom: 10 }}>Mastery</div>
+        <div style={{ background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4, padding: '12px 14px' }}>
+          <div style={{ fontSize: 28, fontFamily: 'Instrument Serif', color: '#e8a942' }}>72<span style={{ fontSize: 14, color: '#5a6478' }}>%</span></div>
+          <div style={{ fontSize: 10, color: '#8a94a8', letterSpacing: '0.05em' }}>13 of 18 exam Qs correct</div>
+          <div style={{ marginTop: 10, height: 4, background: '#141a27', borderRadius: 2 }}>
+            <div style={{ width: '72%', height: '100%', background: 'linear-gradient(90deg, #e8a942, #f0b860)', borderRadius: 2 }} />
+          </div>
+          <div style={{ marginTop: 10, fontSize: 11, color: '#8a94a8' }}>Weak: PORV block valve actions, SI termination criteria</div>
+        </div>
+
+        <div style={{ fontSize: 10, color: '#5a6478', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 22, marginBottom: 10 }}>On this page</div>
+        {RCS_HEADINGS.map((h, i) => (
+          <div key={h} style={{ padding: '4px 0', color: i === 0 ? '#e8ecf3' : '#8a94a8', fontSize: 12, borderLeft: i === 0 ? '2px solid #4a8ce0' : '2px solid transparent', paddingLeft: 8 }}>{h}</div>
+        ))}
+
+        <div style={{ fontSize: 10, color: '#5a6478', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 22, marginBottom: 10 }}>Connected</div>
+        {[['CVCS', 'system'], ['AFW', 'system'], ['EOP-TRIP-1', 'eop'], ['TS 3/4.4', 'tech-spec']].map(([n, k]) => (
+          <div key={n} style={{ fontSize: 12, padding: '4px 0', color: '#8aa2c8', display: 'flex', gap: 6 }}>
+            <span style={{ width: 4, height: 4, borderRadius: 2, marginTop: 7, background: k === 'system' ? '#4a8ce0' : k === 'eop' ? '#f07070' : '#5cb075' }} />
+            {n}
+          </div>
+        ))}
+      </aside>
+    </div>
+  );
+}
+
+// ── B. Control-Room / NRC Terminal aesthetic ──────────────────────────────────
+function VariantControlRoom() {
+  return (
+    <div style={{
+      width: '100%', height: '100%',
+      background: '#0e0e0a',
+      color: '#d9cfa0',
+      fontFamily: '"IBM Plex Mono", ui-monospace, monospace',
+      display: 'grid',
+      gridTemplateColumns: '56px 1fr 240px',
+      fontSize: 13,
+    }}>
+      {/* Rail icons */}
+      <aside style={{ background: '#0a0a08', borderRight: '1px solid #2a2815', padding: '16px 0', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10 }}>
+        <div style={{ width: 32, height: 32, background: '#d9cfa0', color: '#0a0a08', fontWeight: 700, borderRadius: 3, display: 'grid', placeItems: 'center', fontSize: 13 }}>S</div>
+        {['SYS', 'TS', 'EOP', 'AB', 'EXM', 'QZ'].map((l, i) => (
+          <div key={l} style={{ width: 36, height: 36, border: '1px solid ' + (i === 5 ? '#a89a4f' : '#2a2815'), borderRadius: 3, display: 'grid', placeItems: 'center', fontSize: 10, letterSpacing: '0.05em', color: i === 5 ? '#e8d870' : '#8a8060', fontWeight: 600 }}>{l}</div>
+        ))}
+      </aside>
+
+      {/* Article */}
+      <div style={{ padding: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+        {/* Header bar */}
+        <div style={{ height: 38, background: '#141410', borderBottom: '1px solid #2a2815', display: 'flex', alignItems: 'center', padding: '0 18px', gap: 14, fontSize: 11, letterSpacing: '0.06em', color: '#8a8060' }}>
+          <span style={{ color: '#e8d870' }}>[SYS::PRIMARY::RCS]</span>
+          <span>·</span>
+          <span>REV 04 · VERIFIED 2026-04-18</span>
+          <span style={{ flex: 1 }} />
+          <span style={{ color: '#88b888' }}>●</span>
+          <span>MASTERY 72%</span>
+          <span style={{ marginLeft: 14, opacity: 0.6 }}>⌘K SEARCH</span>
+        </div>
+
+        <div style={{ flex: 1, padding: '26px 40px 30px', overflow: 'hidden' }}>
+          <div style={{ fontSize: 10, letterSpacing: '0.2em', color: '#8a8060', marginBottom: 6 }}>SALEM / SGS2 / PRIMARY LOOP</div>
+          <h1 style={{ margin: 0, fontFamily: '"IBM Plex Mono", monospace', fontWeight: 600, fontSize: 34, color: '#f2e9b3', letterSpacing: '-0.005em' }}>
+            REACTOR COOLANT SYSTEM
+          </h1>
+          <div style={{ fontSize: 11, color: '#8a8060', marginTop: 8, letterSpacing: '0.06em' }}>
+            WESTINGHOUSE 4-LOOP PWR · 34 BACKLINKS · TESTED 18× / 4 EXAMS
+          </div>
+
+          <div style={{ marginTop: 26, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+            <div>
+              <div style={{ fontSize: 10, letterSpacing: '0.2em', color: '#e8d870', marginBottom: 8, borderBottom: '1px solid #2a2815', paddingBottom: 4 }}>▸ FUNCTION</div>
+              <p style={{ fontSize: 13, lineHeight: 1.7, color: '#d9cfa0', margin: 0 }}>
+                Transfers heat from reactor core to steam generators. Maintains core cooling under accident conditions. Provides <span style={{ color: '#f2e9b3', borderBottom: '1px dashed #a89a4f' }}>second fission product barrier</span> between fuel and containment.
+              </p>
+            </div>
+            <div>
+              <div style={{ fontSize: 10, letterSpacing: '0.2em', color: '#e8d870', marginBottom: 8, borderBottom: '1px solid #2a2815', paddingBottom: 4 }}>▸ KEY COMPONENTS</div>
+              <div style={{ fontSize: 12.5, lineHeight: 1.85, color: '#d9cfa0' }}>
+                <div><span style={{ color: '#8a8060' }}>01 ·</span> 4× Reactor Coolant Pumps</div>
+                <div><span style={{ color: '#8a8060' }}>02 ·</span> Pressurizer (PRZR) + PRT</div>
+                <div><span style={{ color: '#8a8060' }}>03 ·</span> 4× Steam Generators</div>
+                <div><span style={{ color: '#8a8060' }}>04 ·</span> Hot/Cold leg piping, loops 21–24</div>
+              </div>
+            </div>
+          </div>
+
+          <div style={{ marginTop: 24 }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.2em', color: '#e8d870', marginBottom: 8, borderBottom: '1px solid #2a2815', paddingBottom: 4 }}>▸ KEY SETPOINTS &amp; LIMITS</div>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12 }}>
+              <thead>
+                <tr style={{ color: '#8a8060', fontSize: 10, letterSpacing: '0.1em' }}>
+                  <th style={{ textAlign: 'left', padding: '4px 0', fontWeight: 500 }}>PARAMETER</th>
+                  <th style={{ textAlign: 'right', padding: '4px 0', fontWeight: 500 }}>VALUE</th>
+                  <th style={{ textAlign: 'right', padding: '4px 0', fontWeight: 500 }}>CLASS</th>
+                  <th style={{ textAlign: 'right', padding: '4px 0', fontWeight: 500 }}>SOURCE</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['PZR pressure Lo-Lo trip', '1950 psig', 'TRIP', 'TS 2.2.1', '#f08868'],
+                  ['PZR pressure Hi trip', '2385 psig', 'TRIP', 'TS 2.2.1', '#f08868'],
+                  ['PZR level Lo alarm', '17 %', 'ALARM', 'ARP 2CC1', '#e8b858'],
+                  ['Tavg full power', '568.9 °F', 'NORMAL', 'UFSAR 4.4', '#88b888'],
+                  ['RCS flow Lo trip', '90 %', 'TRIP', 'TS 2.2.1', '#f08868'],
+                ].map(([p, v, c, s, col], i) => (
+                  <tr key={p} style={{ borderTop: '1px dashed #2a2815' }}>
+                    <td style={{ padding: '8px 0', color: '#d9cfa0' }}>{p}</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', color: col, fontWeight: 600 }}>{v}</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', color: col, fontSize: 10, letterSpacing: '0.1em' }}>{c}</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', color: '#8a8060', fontSize: 11 }}>{s}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <div style={{ marginTop: 24 }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.2em', color: '#e8d870', marginBottom: 8, borderBottom: '1px solid #2a2815', paddingBottom: 4 }}>▸ TECH SPEC LCOs</div>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+              {[
+                ['TS 3/4.4.1', 'RCS loops operational', '1,2,3,4'],
+                ['TS 3/4.4.2', 'Safety valves', '1,2,3'],
+                ['TS 3/4.4.3', 'PORVs & block valves', '1,2,3'],
+                ['TS 3/4.4.5', 'RCS leakage', '1,2,3,4'],
+              ].map(([id, title, modes]) => (
+                <div key={id} style={{ border: '1px solid #2a2815', padding: '8px 12px', background: '#14140f' }}>
+                  <div style={{ fontSize: 10, letterSpacing: '0.1em', color: '#e8d870' }}>{id} · MODES {modes}</div>
+                  <div style={{ fontSize: 12.5, color: '#d9cfa0', marginTop: 2 }}>{title}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Right rail */}
+      <aside style={{ background: '#0a0a08', borderLeft: '1px solid #2a2815', padding: '20px 16px', fontSize: 11 }}>
+        <div style={{ fontSize: 10, letterSpacing: '0.2em', color: '#8a8060', marginBottom: 10 }}>▸ MASTERY</div>
+        <div style={{ fontSize: 40, fontFamily: 'VT323, monospace', color: '#e8d870', lineHeight: 1 }}>72<span style={{ fontSize: 16, color: '#8a8060' }}>%</span></div>
+        <div style={{ display: 'flex', gap: 2, marginTop: 6 }}>
+          {Array.from({ length: 18 }).map((_, i) => (
+            <div key={i} style={{ flex: 1, height: 10, background: i < 13 ? '#e8d870' : '#2a2815' }} />
+          ))}
+        </div>
+        <div style={{ fontSize: 10, color: '#8a8060', marginTop: 6, letterSpacing: '0.05em' }}>13/18 EXAM Qs</div>
+
+        <div style={{ fontSize: 10, letterSpacing: '0.2em', color: '#8a8060', marginTop: 22, marginBottom: 8 }}>▸ WEAK AREAS</div>
+        <div style={{ fontSize: 11.5, color: '#f08868', lineHeight: 1.6 }}>· PORV block valve actions<br/>· SI termination criteria</div>
+
+        <div style={{ fontSize: 10, letterSpacing: '0.2em', color: '#8a8060', marginTop: 22, marginBottom: 8 }}>▸ LINKED</div>
+        {[['CVCS', 'SYS'], ['AFW', 'SYS'], ['EOP-TRIP-1', 'EOP'], ['TS 3/4.4', 'TS']].map(([n, k]) => (
+          <div key={n} style={{ fontSize: 11.5, padding: '3px 0', color: '#d9cfa0' }}>
+            <span style={{ color: '#8a8060', marginRight: 6 }}>{k}</span>{n}
+          </div>
+        ))}
+      </aside>
+    </div>
+  );
+}
+
+// ── C. Warm editorial / engineering paper ─────────────────────────────────────
+function VariantWarmEditorial() {
+  return (
+    <div style={{
+      width: '100%', height: '100%',
+      background: '#f6f1e8',
+      color: '#2a2520',
+      fontFamily: '"Inter Tight", system-ui, sans-serif',
+      display: 'grid',
+      gridTemplateColumns: '240px 1fr 260px',
+      fontSize: 13,
+      backgroundImage: 'radial-gradient(circle at 1px 1px, rgba(100,70,30,0.06) 1px, transparent 0)',
+      backgroundSize: '22px 22px',
+    }}>
+      <aside style={{ background: '#ece4d2', borderRight: '1px solid #d6c9ab', padding: '22px 18px', fontSize: 13 }}>
+        <div style={{ fontFamily: 'Instrument Serif', fontSize: 22, color: '#2a2520', letterSpacing: '-0.01em' }}>Salem.</div>
+        <div style={{ fontSize: 10, color: '#8a7a55', letterSpacing: '0.14em', textTransform: 'uppercase', marginTop: 2, marginBottom: 18 }}>Study system</div>
+        {[
+          ['Today', true, '12 due'],
+          ['Dashboard'],
+          ['Quiz mode'],
+          ['Mastery'],
+          ['All articles'],
+        ].map(([l, active, badge]) => (
+          <div key={l} style={{ padding: '6px 10px', color: active ? '#2a2520' : '#5a4f3a', background: active ? '#d9cba6' : 'transparent', borderRadius: 3, fontWeight: active ? 600 : 400, display: 'flex', justifyContent: 'space-between', marginBottom: 2 }}>
+            <span>{l}</span>
+            {badge && <span style={{ fontSize: 11, color: '#8a5a25' }}>{badge}</span>}
+          </div>
+        ))}
+        <div style={{ fontSize: 10, color: '#8a7a55', letterSpacing: '0.12em', textTransform: 'uppercase', marginTop: 22, marginBottom: 6, padding: '0 10px' }}>Pinned</div>
+        {['Reactor Coolant System', 'TS 3/4.4 — RCS', 'EOP-TRIP-1'].map((l, i) => (
+          <div key={l} style={{ padding: '5px 10px', fontSize: 12.5, color: i === 0 ? '#2a2520' : '#5a4f3a', borderLeft: i === 0 ? '2px solid #b8420e' : '2px solid transparent', fontWeight: i === 0 ? 600 : 400 }}>{l}</div>
+        ))}
+      </aside>
+
+      <article style={{ padding: '36px 56px', overflow: 'hidden' }}>
+        <div style={{ fontSize: 11, color: '#8a7a55', letterSpacing: '0.06em', display: 'flex', gap: 6, marginBottom: 10 }}>
+          <span>Systems</span><span>→</span><span>Primary</span><span>→</span><span style={{ color: '#b8420e', fontWeight: 500 }}>RCS</span>
+        </div>
+        <h1 style={{ margin: 0, fontFamily: 'Instrument Serif', fontWeight: 400, fontSize: 54, color: '#1a1612', letterSpacing: '-0.02em', lineHeight: 1 }}>
+          Reactor Coolant<br/>System.
+        </h1>
+        <div style={{ marginTop: 16, display: 'flex', gap: 18, fontSize: 12, color: '#6a5c42', alignItems: 'center' }}>
+          <span style={{ fontSize: 10, background: '#d9cba6', padding: '3px 10px', borderRadius: 20, letterSpacing: '0.08em', textTransform: 'uppercase', color: '#5a4026', fontWeight: 600 }}>✓ Verified</span>
+          <span>Primary system · Westinghouse 4-loop PWR</span>
+          <span style={{ flex: 1 }} />
+          <span style={{ color: '#8a7a55' }}>Tested 18× · 34 backlinks</span>
+        </div>
+
+        <div style={{ marginTop: 36, marginBottom: 16, display: 'flex', alignItems: 'baseline', gap: 10 }}>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 14, color: '#b8420e', fontStyle: 'italic' }}>§ Function</div>
+          <div style={{ flex: 1, height: 1, background: '#d6c9ab' }} />
+        </div>
+        <p style={{ fontSize: 15.5, lineHeight: 1.75, color: '#2a2520', margin: 0, maxWidth: 640, fontFamily: 'Instrument Serif', fontWeight: 400 }}>
+          The Reactor Coolant System transfers heat from the reactor core to the steam generators, maintains core cooling under accident conditions, and provides a <span style={{ background: '#fde7c2', padding: '1px 4px', borderRadius: 2 }}>second fission product barrier</span> between the fuel and containment.
+        </p>
+
+        <div style={{ marginTop: 32, marginBottom: 16, display: 'flex', alignItems: 'baseline', gap: 10 }}>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 14, color: '#b8420e', fontStyle: 'italic' }}>§ Key setpoints</div>
+          <div style={{ flex: 1, height: 1, background: '#d6c9ab' }} />
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 10 }}>
+          {[
+            ['PZR Lo-Lo trip', '1950', 'psig', '#a83520', 'TRIP'],
+            ['PZR Hi trip', '2385', 'psig', '#a83520', 'TRIP'],
+            ['PZR Lo alarm', '17', '%', '#a87020', 'ALARM'],
+            ['Tavg full-power', '568.9', '°F', '#4a7030', 'NORMAL'],
+            ['RCS flow Lo trip', '90', '%', '#a83520', 'TRIP'],
+            ['Leak rate limit', '1.0', 'gpm', '#a87020', 'LIMIT'],
+          ].map(([label, val, unit, c, kind]) => (
+            <div key={label} style={{ background: '#ffffff', border: '1px solid #d6c9ab', borderRadius: 4, padding: '10px 14px' }}>
+              <div style={{ fontSize: 9.5, letterSpacing: '0.14em', color: c, fontWeight: 700, textTransform: 'uppercase' }}>{kind}</div>
+              <div style={{ marginTop: 4, display: 'flex', alignItems: 'baseline', gap: 4, fontFamily: 'Instrument Serif' }}>
+                <span style={{ fontSize: 26, fontWeight: 500, color: '#1a1612' }}>{val}</span>
+                <span style={{ fontSize: 13, color: '#6a5c42' }}>{unit}</span>
+              </div>
+              <div style={{ fontSize: 12, color: '#6a5c42', marginTop: 2 }}>{label}</div>
+            </div>
+          ))}
+        </div>
+
+        <div style={{ marginTop: 32, marginBottom: 16, display: 'flex', alignItems: 'baseline', gap: 10 }}>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 14, color: '#b8420e', fontStyle: 'italic' }}>§ Tech spec LCOs</div>
+          <div style={{ flex: 1, height: 1, background: '#d6c9ab' }} />
+        </div>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10 }}>
+          {[
+            ['TS 3/4.4.1', 'RCS loops operational', 'Modes 1,2,3,4'],
+            ['TS 3/4.4.3', 'PORVs & block valves', 'Modes 1,2,3'],
+          ].map(([id, title, modes]) => (
+            <div key={id} style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, padding: '12px 16px' }}>
+              <div style={{ fontSize: 11, fontFamily: 'JetBrains Mono, monospace', color: '#b8420e', fontWeight: 600 }}>{id}</div>
+              <div style={{ fontSize: 14, color: '#1a1612', marginTop: 3, fontWeight: 500 }}>{title}</div>
+              <div style={{ fontSize: 12, color: '#6a5c42', marginTop: 2 }}>{modes}</div>
+            </div>
+          ))}
+        </div>
+      </article>
+
+      <aside style={{ background: 'transparent', borderLeft: '1px solid #d6c9ab', padding: '32px 22px', fontSize: 12 }}>
+        <div style={{ fontSize: 10, color: '#8a7a55', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: 12 }}>Your mastery</div>
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, padding: '14px 16px' }}>
+          <div style={{ display: 'flex', alignItems: 'baseline', gap: 8 }}>
+            <div style={{ fontFamily: 'Instrument Serif', fontSize: 38, color: '#b8420e', lineHeight: 1 }}>72<span style={{ fontSize: 16, color: '#8a7a55' }}>%</span></div>
+            <div style={{ fontSize: 11, color: '#8a7a55' }}>13 / 18 exam Qs</div>
+          </div>
+          <div style={{ marginTop: 10, height: 6, background: '#ece4d2', borderRadius: 3 }}>
+            <div style={{ width: '72%', height: '100%', background: '#b8420e', borderRadius: 3 }} />
+          </div>
+          <div style={{ marginTop: 10, fontSize: 11.5, color: '#6a5c42', lineHeight: 1.5 }}>
+            Weak: <b style={{ color: '#a83520' }}>PORV block valve actions</b>, <b style={{ color: '#a83520' }}>SI termination</b>
+          </div>
+          <button style={{ marginTop: 10, width: '100%', padding: '7px 10px', background: '#b8420e', color: '#fff', border: 'none', borderRadius: 3, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
+            Drill weak areas ›
+          </button>
+        </div>
+
+        <div style={{ fontSize: 10, color: '#8a7a55', letterSpacing: '0.14em', textTransform: 'uppercase', marginTop: 24, marginBottom: 10 }}>Connected</div>
+        {[['CVCS', 'system'], ['AFW', 'system'], ['EOP-TRIP-1', 'eop'], ['TS 3/4.4', 'tech-spec']].map(([n, k]) => (
+          <div key={n} style={{ fontSize: 12.5, padding: '5px 0', color: '#2a2520', borderBottom: '1px dashed #d6c9ab', display: 'flex', alignItems: 'center', gap: 8 }}>
+            <span style={{ fontSize: 9, color: '#8a7a55', letterSpacing: '0.1em', width: 30, textTransform: 'uppercase' }}>{k === 'tech-spec' ? 'TS' : k === 'eop' ? 'EOP' : 'SYS'}</span>
+            {n}
+          </div>
+        ))}
+      </aside>
+    </div>
+  );
+}
+
+function VisualDirectionsSection() {
+  return (
+    <Section
+      id="visuals"
+      eyebrow="01 · Visual direction"
+      title="Three aesthetics, same article."
+      subtitle="Same content (a shortened RCS system article), three distinct visual treatments. Look at type, color, chrome, density. Pick one — or tell me which pieces from each you want to mix."
+    >
+      <Stack gap={40}>
+        <OptionCard title="A. Sharpened dark tech-docs" subtitle="Your current direction, but tighter type, better spacing, clearer hierarchy. Adds a study rail (mastery + TOC) to the right. Safe, familiar, low-risk." tag="Variant A">
+          <ScaledFrame width={1400} height={860} bg="#0b0f18">
+            <VariantSharperDark />
+          </ScaledFrame>
+        </OptionCard>
+
+        <OptionCard title="B. Control-room terminal" subtitle="Leans hard into the operator aesthetic: monospaced throughout, amber/green on near-black, bracketed category codes, status-panel framing. Signals seriousness of the material." tag="Variant B">
+          <ScaledFrame width={1400} height={860} bg="#0e0e0a">
+            <VariantControlRoom />
+          </ScaledFrame>
+        </OptionCard>
+
+        <OptionCard title="C. Warm editorial engineering notebook" subtitle="Light, paper-like, Instrument Serif for headlines, JetBrains Mono for codes & setpoints. Reads like an engineering casebook. Calm on the eye for long desk sessions; wildly different from any reference app." tag="Variant C">
+          <ScaledFrame width={1400} height={860} bg="#f6f1e8">
+            <VariantWarmEditorial />
+          </ScaledFrame>
+        </OptionCard>
+      </Stack>
+
+      <Note label="My take" tone="warn">
+        <b>Variant C (editorial)</b> is my recommendation for a primary study surface — reads calmly for long sessions, makes serifs carry the plant's historic weight, and is genuinely uncommon in technical-doc UI. <b>Variant A</b> is the safest and matches your current direction. <b>Variant B</b> is fun but can be fatiguing across 700 articles — consider it as an optional <i>theme toggle</i> for quiz mode or dashboard, not the whole site.
+      </Note>
+    </Section>
+  );
+}
+
+Object.assign(window, { VisualDirectionsSection });
+
+
+// ===== src/explorations/homepage.jsx =====
+// Homepage / dashboard explorations
+
+function HomeVariantDashboard() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: '#f6f1e8', color: '#2a2520', fontFamily: '"Inter Tight", sans-serif', padding: '28px 40px', overflow: 'hidden' }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 6 }}>
+        <div>
+          <div style={{ fontSize: 11, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase' }}>Sunday morning · Apr 20</div>
+          <h1 style={{ margin: '4px 0 0', fontFamily: 'Instrument Serif', fontWeight: 400, fontSize: 44, letterSpacing: '-0.01em' }}>Good morning, Fred.</h1>
+        </div>
+        <div style={{ textAlign: 'right' }}>
+          <div style={{ fontSize: 11, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase' }}>Exam in</div>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 44, color: '#b8420e', lineHeight: 1 }}>42 <span style={{ fontSize: 14, color: '#8a7a55' }}>days</span></div>
+        </div>
+      </div>
+      <div style={{ height: 1, background: '#d6c9ab', marginTop: 14, marginBottom: 22 }} />
+
+      {/* Pick up where you left off */}
+      <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr', gap: 14 }}>
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '18px 20px' }}>
+          <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Resume</div>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 26, marginTop: 6 }}>2022 NRC Written Exam — Q47</div>
+          <div style={{ fontSize: 12, color: '#6a5c42', marginTop: 4 }}>Stopped 2 days ago · 46 of 75 answered · 72% so far</div>
+          <div style={{ marginTop: 12, display: 'flex', gap: 2 }}>
+            {Array.from({ length: 75 }).map((_, i) => (
+              <div key={i} style={{ flex: 1, height: 6, background: i < 33 ? '#4a7030' : i < 46 ? '#a83520' : '#ece4d2', borderRadius: 1 }} />
+            ))}
+          </div>
+          <div style={{ marginTop: 14, display: 'flex', gap: 10 }}>
+            <button style={{ padding: '8px 16px', background: '#b8420e', color: '#fff', border: 'none', borderRadius: 3, fontSize: 13, fontWeight: 600, cursor: 'pointer' }}>Resume exam ›</button>
+            <button style={{ padding: '8px 16px', background: '#fff', color: '#2a2520', border: '1px solid #d6c9ab', borderRadius: 3, fontSize: 13, cursor: 'pointer' }}>Review wrong answers (13)</button>
+          </div>
+        </div>
+
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '18px 20px' }}>
+          <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Streak</div>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 40, marginTop: 4, color: '#b8420e', lineHeight: 1 }}>12 <span style={{ fontSize: 13, color: '#8a7a55' }}>days</span></div>
+          <div style={{ display: 'flex', gap: 3, marginTop: 12 }}>
+            {['M','T','W','T','F','S','S'].map((d, i) => (
+              <div key={i} style={{ flex: 1, textAlign: 'center' }}>
+                <div style={{ height: 24, background: i < 6 ? '#b8420e' : '#ece4d2', borderRadius: 3 }} />
+                <div style={{ fontSize: 10, color: '#8a7a55', marginTop: 3 }}>{d}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '18px 20px' }}>
+          <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Overall mastery</div>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 40, marginTop: 4, lineHeight: 1 }}>64<span style={{ fontSize: 14, color: '#8a7a55' }}>%</span></div>
+          <div style={{ fontSize: 11.5, color: '#6a5c42', marginTop: 8, lineHeight: 1.5 }}>458 / 725 articles touched<br/>209 / 400 exam Qs correct</div>
+        </div>
+      </div>
+
+      {/* Today queue + weak areas */}
+      <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 14, marginTop: 14 }}>
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '18px 20px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+            <div style={{ fontFamily: 'Instrument Serif', fontSize: 22 }}>Today's queue</div>
+            <div style={{ fontSize: 11, color: '#8a7a55' }}>12 items · ~35 min</div>
+          </div>
+          <div style={{ marginTop: 12 }}>
+            {[
+              ['Q', 'Re-review: 2022 Q12 — Pressurizer LoLo trip setpoint', 'Missed last time', '#a83520'],
+              ['A', 'CVCS — boration flow path review', 'Due spaced', '#b8420e'],
+              ['Q', 'Daily mixed quiz · 10 questions', 'New', '#4a7030'],
+              ['T', 'TS 3/4.5 — ECCS surveillance bases', 'Not reviewed', '#8a7a55'],
+              ['J', 'JPM: Emergency Boration', 'Weak area', '#a83520'],
+            ].map(([kind, title, meta, c], i) => (
+              <div key={i} style={{ display: 'flex', gap: 12, padding: '9px 0', borderTop: i ? '1px solid #ece4d2' : 'none', alignItems: 'center' }}>
+                <div style={{ width: 24, height: 24, background: c, color: '#fff', borderRadius: 3, display: 'grid', placeItems: 'center', fontSize: 11, fontWeight: 700, fontFamily: 'JetBrains Mono, monospace' }}>{kind}</div>
+                <div style={{ flex: 1, fontSize: 13.5 }}>{title}</div>
+                <div style={{ fontSize: 11, color: c, fontWeight: 500 }}>{meta}</div>
+                <div style={{ color: '#8a7a55', fontSize: 16 }}>›</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '18px 20px' }}>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 22, marginBottom: 10 }}>Weak areas</div>
+          {[
+            ['ECCS — recirculation phase', 38],
+            ['SGTR diagnosis', 44],
+            ['TS 3/4.3 bistable setpoints', 51],
+            ['AFW discharge flow path', 56],
+            ['EDG loading sequence', 60],
+          ].map(([name, pct]) => (
+            <div key={name} style={{ padding: '6px 0' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 12.5 }}>
+                <span>{name}</span>
+                <span style={{ fontFamily: 'JetBrains Mono, monospace', color: '#a83520', fontWeight: 600 }}>{pct}%</span>
+              </div>
+              <div style={{ height: 3, background: '#ece4d2', borderRadius: 2, marginTop: 4 }}>
+                <div style={{ width: `${pct}%`, height: '100%', background: '#a83520', borderRadius: 2 }} />
+              </div>
+            </div>
+          ))}
+          <button style={{ marginTop: 14, width: '100%', padding: '8px 10px', background: '#b8420e', color: '#fff', border: 'none', borderRadius: 3, fontSize: 12, fontWeight: 600, cursor: 'pointer' }}>
+            Drill weak areas · 20 min ›
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function HomeVariantPlant() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: '#0b0f18', color: '#d8dde6', fontFamily: '"Inter Tight", sans-serif', padding: '24px 40px', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+        <div>
+          <div style={{ fontSize: 11, letterSpacing: '0.14em', color: '#5a6478', textTransform: 'uppercase' }}>Salem unit 2 · click any system</div>
+          <h1 style={{ margin: '4px 0 0', fontFamily: 'Instrument Serif', fontWeight: 400, fontSize: 36, color: '#f2f5fa' }}>Plant overview</h1>
+        </div>
+        <div style={{ display: 'flex', gap: 16, fontSize: 12, color: '#8a94a8' }}>
+          <span><span style={{ color: '#5cb075' }}>●</span> Mastered (18)</span>
+          <span><span style={{ color: '#e8a942' }}>●</span> In progress (22)</span>
+          <span><span style={{ color: '#f07070' }}>●</span> Weak / untouched (14)</span>
+        </div>
+      </div>
+
+      {/* Schematic */}
+      <div style={{ flex: 1, marginTop: 18, background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4, position: 'relative' }}>
+        <svg viewBox="0 0 1000 500" style={{ width: '100%', height: '100%' }}>
+          {/* Primary loop */}
+          <circle cx="280" cy="250" r="60" fill="none" stroke="#5cb075" strokeWidth="2" />
+          <text x="280" y="248" textAnchor="middle" fill="#e8ecf3" fontSize="13" fontFamily="Inter Tight" fontWeight="600">RX</text>
+          <text x="280" y="264" textAnchor="middle" fill="#5cb075" fontSize="9" letterSpacing="0.1em">REACTOR</text>
+
+          {/* Steam generators */}
+          {[[150, 130], [410, 130], [150, 370], [410, 370]].map(([x, y], i) => (
+            <g key={i}>
+              <rect x={x - 30} y={y - 22} width="60" height="44" rx="4" fill="none" stroke={i === 0 ? '#f07070' : '#e8a942'} strokeWidth="2" />
+              <text x={x} y={y - 4} textAnchor="middle" fill="#e8ecf3" fontSize="11" fontWeight="600">SG {21 + i}</text>
+              <text x={x} y={y + 9} textAnchor="middle" fill="#8a94a8" fontSize="9">{[38, 72, 85, 60][i]}%</text>
+            </g>
+          ))}
+          {/* Hot/cold lines */}
+          {[[150, 130], [410, 130], [150, 370], [410, 370]].map(([x, y], i) => (
+            <line key={i} x1={x + (x > 280 ? -20 : 20)} y1={y + (y > 250 ? -15 : 15)} x2={280 + (x > 280 ? 50 : -50)} y2={250 + (y > 250 ? 30 : -30)} stroke="#2a4a6b" strokeWidth="1.5" />
+          ))}
+          {/* Pressurizer */}
+          <rect x="340" y="140" width="26" height="56" rx="4" fill="none" stroke="#5cb075" strokeWidth="2" />
+          <text x="353" y="215" textAnchor="middle" fill="#8a94a8" fontSize="9">PZR</text>
+
+          {/* Secondary side */}
+          <g transform="translate(600, 100)">
+            <rect width="80" height="50" rx="4" fill="none" stroke="#e8a942" strokeWidth="2" />
+            <text x="40" y="22" textAnchor="middle" fill="#e8ecf3" fontSize="11" fontWeight="600">MSIVs</text>
+            <text x="40" y="36" textAnchor="middle" fill="#8a94a8" fontSize="9">Main Steam</text>
+          </g>
+          <g transform="translate(720, 180)">
+            <rect width="90" height="50" rx="4" fill="none" stroke="#5cb075" strokeWidth="2" />
+            <text x="45" y="22" textAnchor="middle" fill="#e8ecf3" fontSize="11" fontWeight="600">TURBINE</text>
+            <text x="45" y="36" textAnchor="middle" fill="#8a94a8" fontSize="9">Main Turb</text>
+          </g>
+          <g transform="translate(720, 260)">
+            <rect width="90" height="50" rx="4" fill="none" stroke="#e8a942" strokeWidth="2" />
+            <text x="45" y="22" textAnchor="middle" fill="#e8ecf3" fontSize="11" fontWeight="600">COND</text>
+            <text x="45" y="36" textAnchor="middle" fill="#8a94a8" fontSize="9">Condenser</text>
+          </g>
+          <g transform="translate(600, 330)">
+            <rect width="80" height="50" rx="4" fill="none" stroke="#f07070" strokeWidth="2" />
+            <text x="40" y="22" textAnchor="middle" fill="#e8ecf3" fontSize="11" fontWeight="600">AFW</text>
+            <text x="40" y="36" textAnchor="middle" fill="#f07070" fontSize="9">weak · 38%</text>
+          </g>
+          <g transform="translate(600, 400)">
+            <rect width="80" height="50" rx="4" fill="none" stroke="#e8a942" strokeWidth="2" />
+            <text x="40" y="22" textAnchor="middle" fill="#e8ecf3" fontSize="11" fontWeight="600">FEED</text>
+            <text x="40" y="36" textAnchor="middle" fill="#8a94a8" fontSize="9">Feedwater</text>
+          </g>
+
+          {/* Safety / ECCS column */}
+          <g transform="translate(830, 80)">
+            <rect width="120" height="340" rx="4" fill="none" stroke="#1a2130" strokeDasharray="4 4" />
+            <text x="60" y="-8" textAnchor="middle" fill="#5a6478" fontSize="10" letterSpacing="0.1em">EMERGENCY</text>
+            {[
+              ['ECCS', '#f07070', '41%'],
+              ['RHR', '#e8a942', '65%'],
+              ['Cont Spray', '#5cb075', '88%'],
+              ['CFCUs', '#e8a942', '70%'],
+              ['SW', '#5cb075', '82%'],
+            ].map(([n, c, p], i) => (
+              <g key={n} transform={`translate(10, ${20 + i * 60})`}>
+                <rect width="100" height="46" rx="3" fill="#0a0e17" stroke={c} />
+                <text x="50" y="20" textAnchor="middle" fill="#e8ecf3" fontSize="11" fontWeight="600">{n}</text>
+                <text x="50" y="34" textAnchor="middle" fill={c} fontSize="10" fontFamily="JetBrains Mono, monospace">{p}</text>
+              </g>
+            ))}
+          </g>
+
+          {/* Electrical row */}
+          <g transform="translate(40, 450)">
+            {['4KV', '13KV', '115V', 'DC', 'EDGs', 'SECs'].map((n, i) => (
+              <g key={n} transform={`translate(${i * 75}, 0)`}>
+                <rect width="65" height="30" rx="3" fill="none" stroke="#5cb075" />
+                <text x="32" y="19" textAnchor="middle" fill="#e8ecf3" fontSize="10" fontWeight="600">{n}</text>
+              </g>
+            ))}
+          </g>
+        </svg>
+
+        <div style={{ position: 'absolute', top: 16, right: 16, background: 'rgba(15,20,33,0.9)', border: '1px solid #1a2130', borderRadius: 4, padding: '10px 14px', fontSize: 12, color: '#8a94a8', maxWidth: 220 }}>
+          <div style={{ fontSize: 10, letterSpacing: '0.12em', color: '#5a6478', textTransform: 'uppercase', marginBottom: 4 }}>Hovering AFW</div>
+          <div style={{ color: '#e8ecf3', fontSize: 13, fontWeight: 600 }}>Auxiliary Feedwater</div>
+          <div style={{ marginTop: 4 }}>3 of 8 exam Qs correct (38%)</div>
+          <div style={{ color: '#f07070', marginTop: 2 }}>Weak — flow path + AMSAC initiation</div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function HomeVariantLibrary() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: '#0b0f18', color: '#d8dde6', fontFamily: '"Inter Tight", sans-serif', padding: '40px 80px', overflow: 'hidden' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', marginBottom: 40 }}>
+        <div style={{ fontFamily: 'Instrument Serif', fontSize: 52, color: '#f2f5fa', letterSpacing: '-0.02em' }}>Salem Study</div>
+        <div style={{ fontSize: 13, color: '#5a6478', marginTop: 4, letterSpacing: '0.08em' }}>725 articles · 400 exam questions · 42 days to exam</div>
+        <div style={{ marginTop: 20, width: 520, maxWidth: '100%', background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4, padding: '10px 14px', display: 'flex', alignItems: 'center', gap: 10, fontSize: 14 }}>
+          <span style={{ color: '#5a6478' }}>⌘K</span>
+          <span style={{ color: '#5a6478' }}>Search, jump, or ask a question about Salem…</span>
+        </div>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 12 }}>
+        {[
+          ['Resume', '2022 Q47', '46 of 75'],
+          ['Drill weak', 'ECCS recirc', 'Start a 10-Q run'],
+          ['Quiz mode', 'Random 25', 'Blind or feedback'],
+          ['Plant map', 'System browser', '54 systems'],
+        ].map(([l, s, m]) => (
+          <div key={l} style={{ background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4, padding: '18px 18px' }}>
+            <div style={{ fontSize: 11, color: '#5a6478', letterSpacing: '0.1em', textTransform: 'uppercase' }}>{l}</div>
+            <div style={{ fontSize: 17, color: '#e8ecf3', marginTop: 6, fontWeight: 500 }}>{s}</div>
+            <div style={{ fontSize: 12, color: '#8a94a8', marginTop: 3 }}>{m}</div>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: 38, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24 }}>
+        <div>
+          <div style={{ fontSize: 11, color: '#5a6478', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: 10 }}>Recent</div>
+          {['Reactor Coolant System', 'TS 3/4.4 — RCS', '2022 NRC Q47', 'EOP-TRIP-1', 'AFW — Aux Feedwater'].map((n, i) => (
+            <div key={n} style={{ padding: '9px 0', borderTop: '1px solid #141a27', fontSize: 13.5, color: '#d8dde6', display: 'flex', justifyContent: 'space-between' }}>
+              <span>{n}</span>
+              <span style={{ color: '#5a6478', fontSize: 11 }}>{['2h', '5h', '1d', '2d', '3d'][i]} ago</span>
+            </div>
+          ))}
+        </div>
+        <div>
+          <div style={{ fontSize: 11, color: '#5a6478', letterSpacing: '0.14em', textTransform: 'uppercase', marginBottom: 10 }}>Pinned</div>
+          {['Setpoint cheat — RCS', 'EOP-TRIP series', 'TS action table', '2023 exam wrongs', 'JPM: Emergency Boration'].map((n, i) => (
+            <div key={n} style={{ padding: '9px 0', borderTop: '1px solid #141a27', fontSize: 13.5, color: '#d8dde6', display: 'flex', justifyContent: 'space-between' }}>
+              <span>{n}</span>
+              <span style={{ color: '#4a8ce0', fontSize: 11 }}>★</span>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function HomepageSection() {
+  return (
+    <Section
+      id="homepage"
+      eyebrow="02 · Homepage"
+      title="Three takes on 'pick up where I left off'."
+      subtitle="You said the homepage should work as a dashboard and/or plant overview. These are three flavors; the final homepage will likely combine elements."
+    >
+      <Stack gap={40}>
+        <OptionCard title="A. Study dashboard" subtitle="Resume card front and center. Streak, mastery, today's queue, weak areas. Works for the '42 days to exam, what do I do right now' moment." tag="Variant A">
+          <ScaledFrame width={1400} height={840} bg="#f6f1e8">
+            <HomeVariantDashboard />
+          </ScaledFrame>
+        </OptionCard>
+
+        <OptionCard title="B. Plant schematic as nav" subtitle="Salem's plant layout is the homepage. Each system box shows your mastery color. Hover for stats; click to enter. Spatial memory meets study tracking." tag="Variant B">
+          <ScaledFrame width={1400} height={860} bg="#0b0f18">
+            <HomeVariantPlant />
+          </ScaledFrame>
+        </OptionCard>
+
+        <OptionCard title="C. Quiet library + ⌘K" subtitle="Minimalist. One big search/command bar, 4 action tiles, recent + pinned. Everything you want is 1 keystroke away. Least amount of UI to read." tag="Variant C">
+          <ScaledFrame width={1400} height={760} bg="#0b0f18">
+            <HomeVariantLibrary />
+          </ScaledFrame>
+        </OptionCard>
+      </Stack>
+
+      <Note label="Recommendation" tone="warn">
+        <b>Combine A + B:</b> Dashboard is the default landing (resume + queue + weak areas), with a "Plant view" tab you can flip to when you want to navigate spatially. The ⌘K palette from C is always available — but it's plumbing, not the homepage.
+      </Note>
+    </Section>
+  );
+}
+
+Object.assign(window, { HomepageSection });
+
+
+// ===== src/explorations/plant-overview.jsx =====
+// Plant overview — clickable systems diagram
+
+function PlantOverviewSection() {
+  const systems = [
+    // [x, y, w, h, name, mastery, group]
+    [40, 60, 90, 42, 'Rx Vessel', 85, 'primary'],
+    [150, 60, 90, 42, 'RCPs', 72, 'primary'],
+    [260, 60, 90, 42, 'PZR', 68, 'primary'],
+    [40, 115, 90, 42, 'RCS', 72, 'primary'],
+    [150, 115, 90, 42, 'SG', 58, 'primary'],
+    [260, 115, 90, 42, 'CVCS', 60, 'primary'],
+
+    [380, 60, 90, 42, 'RPS / SSPS', 74, 'control'],
+    [490, 60, 90, 42, 'Excore NIs', 80, 'control'],
+    [380, 115, 90, 42, 'Rod Ctrl', 55, 'control'],
+    [490, 115, 90, 42, 'AMSAC', 38, 'control'],
+
+    [40, 200, 90, 42, 'ECCS', 41, 'emergency'],
+    [150, 200, 90, 42, 'RHR', 65, 'emergency'],
+    [260, 200, 90, 42, 'CCW', 72, 'emergency'],
+    [380, 200, 90, 42, 'Cont. Spray', 88, 'emergency'],
+    [490, 200, 90, 42, 'CFCUs', 70, 'emergency'],
+    [40, 255, 90, 42, 'Service Water', 82, 'emergency'],
+    [150, 255, 90, 42, 'Containment', 64, 'emergency'],
+    [260, 255, 90, 42, 'SFP', 55, 'emergency'],
+
+    [610, 60, 90, 42, 'Main Steam', 66, 'secondary'],
+    [720, 60, 90, 42, 'Main Turb', 70, 'secondary'],
+    [830, 60, 90, 42, 'Feed & Cond', 50, 'secondary'],
+    [610, 115, 90, 42, 'AFW', 38, 'secondary'],
+    [720, 115, 90, 42, 'Steam Dumps', 62, 'secondary'],
+    [830, 115, 90, 42, 'Circ Water', 58, 'secondary'],
+
+    [610, 200, 90, 42, '4KV', 80, 'electrical'],
+    [720, 200, 90, 42, '13KV', 70, 'electrical'],
+    [830, 200, 90, 42, '115V', 68, 'electrical'],
+    [610, 255, 90, 42, 'DC Power', 75, 'electrical'],
+    [720, 255, 90, 42, 'EDGs', 88, 'electrical'],
+    [830, 255, 90, 42, '500KV', 62, 'electrical'],
+
+    [40, 340, 90, 42, 'Control Air', 70, 'aux'],
+    [150, 340, 90, 42, 'Fire Prot', 48, 'aux'],
+    [260, 340, 90, 42, 'Rad Mon', 66, 'aux'],
+    [380, 340, 90, 42, 'Waste Gas', 52, 'aux'],
+    [490, 340, 90, 42, 'Waste Liq', 50, 'aux'],
+    [610, 340, 90, 42, 'Chill Water', 65, 'aux'],
+    [720, 340, 90, 42, 'TGA Vent', 60, 'aux'],
+    [830, 340, 90, 42, 'Annuncs', 80, 'aux'],
+  ];
+
+  const groupLabels = {
+    primary: ['Primary', 40, 40, '#4a8ce0'],
+    control: ['Control & Instr', 380, 40, '#a78bfa'],
+    secondary: ['Secondary', 610, 40, '#5cb075'],
+    emergency: ['Emergency', 40, 180, '#f07070'],
+    electrical: ['Electrical', 610, 180, '#e8a942'],
+    aux: ['Auxiliary', 40, 320, '#8aa2c8'],
+  };
+
+  const masteryColor = (m) => m >= 75 ? '#5cb075' : m >= 55 ? '#e8a942' : '#f07070';
+
+  return (
+    <Section
+      id="plant"
+      eyebrow="03 · Plant overview"
+      title="The wiki, laid out as a plant."
+      subtitle="The current nav has 54 system links under mega-dropdowns. A plant schematic puts them in visual, spatial context — and lets mastery colors show at a glance where you're weak."
+    >
+      <OptionCard title="Plant schematic — all 54 systems by functional group" subtitle="Hover a system for its stats. Click to jump to the article. Color = mastery (green ≥75%, amber 55–74%, red <55%). Toggle colors off to see it clean.">
+        <div style={{ background: '#0b0f18', padding: '28px 40px' }}>
+          <div style={{ display: 'flex', gap: 14, marginBottom: 16, fontSize: 12, color: '#8a94a8', alignItems: 'center' }}>
+            <span style={{ color: '#e8ecf3', fontWeight: 600 }}>Color by:</span>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 5, color: '#e8ecf3' }}>
+              <span style={{ width: 10, height: 10, background: '#4a8ce0', borderRadius: 2 }}/>Mastery
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+              <span style={{ width: 10, height: 10, border: '1px solid #5a6478', borderRadius: 2 }}/>Exam frequency
+            </label>
+            <label style={{ display: 'flex', alignItems: 'center', gap: 5 }}>
+              <span style={{ width: 10, height: 10, border: '1px solid #5a6478', borderRadius: 2 }}/>Last studied
+            </label>
+            <span style={{ flex: 1 }} />
+            <span><span style={{ color: '#5cb075' }}>●</span> Mastered</span>
+            <span><span style={{ color: '#e8a942' }}>●</span> In progress</span>
+            <span><span style={{ color: '#f07070' }}>●</span> Weak</span>
+          </div>
+
+          <svg viewBox="0 0 960 420" style={{ width: '100%', height: 'auto', background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4 }}>
+            {/* Group panels */}
+            {Object.entries(groupLabels).map(([k, [label, x, y, color]]) => (
+              <g key={k}>
+                <rect x={x - 10} y={y - 10} width={k === 'primary' || k === 'control' || k === 'secondary' ? (k === 'secondary' ? 330 : 230) : (k === 'emergency' ? 560 : k === 'electrical' ? 340 : 900)} height={k.startsWith('elec') || k === 'secondary' || k === 'control' || k === 'primary' ? 160 : 110} fill="none" stroke="#1a2130" strokeDasharray="3 4" rx="3" />
+                <text x={x - 4} y={y - 16} fill={color} fontSize="10" letterSpacing="0.14em" >{label.toUpperCase()}</text>
+              </g>
+            ))}
+
+            {/* System tiles */}
+            {systems.map(([x, y, w, h, name, m, group]) => (
+              <g key={name} style={{ cursor: 'pointer' }}>
+                <rect x={x} y={y} width={w} height={h} rx="3" fill="#0a0e17" stroke={masteryColor(m)} strokeWidth="1.5" />
+                <text x={x + w/2} y={y + 17} textAnchor="middle" fill="#e8ecf3" fontSize="11" fontFamily="Inter Tight" fontWeight="600">{name}</text>
+                <text x={x + w/2} y={y + 31} textAnchor="middle" fill={masteryColor(m)} fontSize="10" fontFamily="JetBrains Mono, monospace">{m}%</text>
+                {/* tiny bar */}
+                <rect x={x + 8} y={y + 36} width={w - 16} height="2" fill="#1a2130" rx="1"/>
+                <rect x={x + 8} y={y + 36} width={(w - 16) * m / 100} height="2" fill={masteryColor(m)} rx="1"/>
+              </g>
+            ))}
+          </svg>
+
+          <div style={{ marginTop: 18, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 14, fontSize: 13, color: '#8a94a8' }}>
+            <div style={{ background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4, padding: '12px 14px' }}>
+              <div style={{ fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#5a6478' }}>Quick stat</div>
+              <div style={{ color: '#e8ecf3', fontSize: 15, marginTop: 4 }}>14 weak systems</div>
+              <div style={{ fontSize: 12 }}>AMSAC, AFW, ECCS, Fire Prot, Waste Gas, Chill Water… <span style={{ color: '#4a8ce0' }}>see all</span></div>
+            </div>
+            <div style={{ background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4, padding: '12px 14px' }}>
+              <div style={{ fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#5a6478' }}>Last studied</div>
+              <div style={{ color: '#e8ecf3', fontSize: 15, marginTop: 4 }}>Reactor Coolant System</div>
+              <div style={{ fontSize: 12 }}>2 hours ago · 72% mastery</div>
+            </div>
+            <div style={{ background: '#0f1421', border: '1px solid #1a2130', borderRadius: 4, padding: '12px 14px' }}>
+              <div style={{ fontSize: 10, letterSpacing: '0.12em', textTransform: 'uppercase', color: '#5a6478' }}>Suggested focus</div>
+              <div style={{ color: '#e8ecf3', fontSize: 15, marginTop: 4 }}>AMSAC (38%)</div>
+              <div style={{ fontSize: 12 }}>High exam frequency, low mastery → <span style={{ color: '#4a8ce0' }}>drill 10 Qs</span></div>
+            </div>
+          </div>
+        </div>
+      </OptionCard>
+
+      <Note label="Why this is valuable" tone="good">
+        Nuclear ops is inherently spatial — operators already know the plant layout. This view reuses that mental model as your study nav. Your eye learns "the red cluster in secondary = AFW + Feed, I keep missing this" without having to read a spreadsheet. It also makes the homepage memorable without gimmicks.
+      </Note>
+    </Section>
+  );
+}
+
+Object.assign(window, { PlantOverviewSection });
+
+
+// ===== src/explorations/quiz-mode.jsx =====
+// Quiz mode — setup, blind, feedback, results
+
+function QuizSetup() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: '#f6f1e8', padding: '32px 48px', fontFamily: '"Inter Tight", sans-serif', color: '#2a2520' }}>
+      <div style={{ fontSize: 11, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase' }}>Quiz mode</div>
+      <h1 style={{ fontFamily: 'Instrument Serif', fontWeight: 400, fontSize: 44, margin: '6px 0 18px', letterSpacing: '-0.01em' }}>Set up a quiz.</h1>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: 18 }}>
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '18px 22px' }}>
+          <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Mode</div>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginTop: 10 }}>
+            <div style={{ padding: '14px 16px', border: '2px solid #b8420e', borderRadius: 4, background: '#fdf6ee' }}>
+              <div style={{ fontWeight: 600, fontSize: 15 }}>Feedback</div>
+              <div style={{ fontSize: 12, color: '#6a5c42', marginTop: 4 }}>See the answer + justification after each question. Best for learning.</div>
+            </div>
+            <div style={{ padding: '14px 16px', border: '1px solid #d6c9ab', borderRadius: 4 }}>
+              <div style={{ fontWeight: 600, fontSize: 15 }}>Blind</div>
+              <div style={{ fontSize: 12, color: '#6a5c42', marginTop: 4 }}>Take the whole quiz, get results at the end. Best for exam sim.</div>
+            </div>
+          </div>
+
+          <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600, marginTop: 20 }}>Source pool</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 8 }}>
+            {[['All exams', true], ['2019', false], ['2020', false], ['2022', true], ['2023', true], ['Weak only', false], ['Wrong last time', false]].map(([l, on]) => (
+              <div key={l} style={{ padding: '5px 10px', borderRadius: 20, fontSize: 12, border: on ? '1px solid #b8420e' : '1px solid #d6c9ab', background: on ? '#b8420e' : '#fff', color: on ? '#fff' : '#6a5c42', fontWeight: on ? 600 : 400 }}>{l}</div>
+            ))}
+          </div>
+
+          <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600, marginTop: 20 }}>Filter by</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginTop: 8 }}>
+            {['All systems', 'RCS', 'ECCS', 'AFW', 'EDGs', 'TS 3/4.4', 'TS 3/4.5', 'RO', 'SRO-only'].map((l, i) => (
+              <div key={l} style={{ padding: '5px 10px', borderRadius: 20, fontSize: 12, border: i === 0 ? '1px solid #b8420e' : '1px solid #d6c9ab', background: i === 0 ? '#b8420e' : '#fff', color: i === 0 ? '#fff' : '#6a5c42', fontWeight: i === 0 ? 600 : 400 }}>{l}</div>
+            ))}
+          </div>
+
+          <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600, marginTop: 20 }}>Length</div>
+          <div style={{ display: 'flex', gap: 8, marginTop: 8 }}>
+            {['10', '25', '50', '75 (full)', 'Custom'].map((l, i) => (
+              <div key={l} style={{ padding: '8px 16px', borderRadius: 4, fontSize: 13, border: i === 1 ? '2px solid #b8420e' : '1px solid #d6c9ab', background: '#fff', color: i === 1 ? '#b8420e' : '#6a5c42', fontWeight: i === 1 ? 700 : 400 }}>{l}</div>
+            ))}
+          </div>
+
+          <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600, marginTop: 20 }}>Timer</div>
+          <div style={{ display: 'flex', gap: 8, marginTop: 8 }}>
+            {['Off', '45 min (exam pace)', 'Custom'].map((l, i) => (
+              <div key={l} style={{ padding: '8px 16px', borderRadius: 4, fontSize: 13, border: i === 1 ? '2px solid #b8420e' : '1px solid #d6c9ab', background: '#fff', color: i === 1 ? '#b8420e' : '#6a5c42', fontWeight: i === 1 ? 700 : 400 }}>{l}</div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '18px 22px' }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Preview</div>
+            <div style={{ fontFamily: 'Instrument Serif', fontSize: 30, lineHeight: 1.15, marginTop: 6 }}>25 questions<br/>from 2022, 2023<br/><span style={{ color: '#8a7a55' }}>feedback mode</span></div>
+            <div style={{ fontSize: 13, color: '#6a5c42', marginTop: 10 }}>~45 min · covers 12 systems · timer on</div>
+            <button style={{ marginTop: 16, width: '100%', padding: '12px', background: '#b8420e', color: '#fff', border: 'none', borderRadius: 4, fontSize: 15, fontWeight: 600, cursor: 'pointer' }}>Start quiz →</button>
+            <button style={{ marginTop: 8, width: '100%', padding: '8px', background: 'transparent', color: '#8a7a55', border: '1px solid #d6c9ab', borderRadius: 4, fontSize: 12, cursor: 'pointer' }}>Save as preset</button>
+          </div>
+
+          <div style={{ background: 'transparent', padding: '14px 0 0 6px', fontSize: 12, color: '#6a5c42', lineHeight: 1.6 }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600, marginBottom: 8 }}>Recent presets</div>
+            {['10 random from weak areas', '25 mixed · all exams · 45min', '2023 full exam blind'].map(l => (
+              <div key={l} style={{ padding: '6px 0', borderBottom: '1px dashed #d6c9ab' }}>
+                <span style={{ color: '#b8420e' }}>↺</span> {l}
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function QuizFeedback() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: '#f6f1e8', fontFamily: '"Inter Tight", sans-serif', color: '#2a2520', display: 'flex', flexDirection: 'column' }}>
+      {/* sticky header */}
+      <div style={{ padding: '16px 40px', borderBottom: '1px solid #d6c9ab', background: '#ece4d2', display: 'flex', alignItems: 'center', gap: 18 }}>
+        <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 12, color: '#8a7a55' }}>Q 07 / 25</span>
+        <div style={{ flex: 1, height: 4, background: '#d6c9ab', borderRadius: 2 }}>
+          <div style={{ width: '28%', height: '100%', background: '#b8420e', borderRadius: 2 }} />
+        </div>
+        <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 13, color: '#2a2520' }}>28:14 / 45:00</span>
+        <span style={{ fontSize: 12, color: '#4a7030' }}>● 5 correct</span>
+        <span style={{ fontSize: 12, color: '#a83520' }}>● 1 wrong</span>
+      </div>
+
+      <div style={{ flex: 1, padding: '28px 60px', overflow: 'hidden', display: 'grid', gridTemplateColumns: '1fr 300px', gap: 28 }}>
+        <div>
+          <div style={{ fontSize: 11, letterSpacing: '0.1em', color: '#8a7a55', textTransform: 'uppercase', fontFamily: 'JetBrains Mono, monospace' }}>
+            2022 · Q47 · K/A 008A2.01 · RO
+          </div>
+          <div style={{ fontSize: 19, lineHeight: 1.6, margin: '10px 0 22px', color: '#1a1612' }}>
+            Unit 2 is at 100% power. Pressurizer pressure begins to decrease steadily. Given the following pressurizer control setpoints, which of the following conditions will initiate an automatic Safety Injection?
+          </div>
+
+          <div style={{ display: 'grid', gap: 8 }}>
+            {[
+              ['A', 'PZR pressure < 2000 psig for 30 seconds', false, false],
+              ['B', 'PZR pressure < 1815 psig with any two coincident lo-lo channels', true, true],
+              ['C', 'PZR pressure < 1950 psig with one channel tripped', false, true],
+              ['D', 'PZR level < 17% with pressure decreasing', false, false],
+            ].map(([letter, text, correct, picked]) => {
+              const bg = correct ? '#e6efd8' : picked ? '#f5dede' : '#fff';
+              const border = correct ? '2px solid #4a7030' : picked ? '2px solid #a83520' : '1px solid #d6c9ab';
+              return (
+                <div key={letter} style={{ background: bg, border, borderRadius: 4, padding: '12px 16px', display: 'flex', alignItems: 'center', gap: 14 }}>
+                  <div style={{ width: 28, height: 28, borderRadius: 14, background: correct ? '#4a7030' : picked ? '#a83520' : '#d6c9ab', color: correct || picked ? '#fff' : '#6a5c42', display: 'grid', placeItems: 'center', fontWeight: 700, fontSize: 13, fontFamily: 'JetBrains Mono, monospace' }}>{letter}</div>
+                  <div style={{ flex: 1, fontSize: 14.5, color: '#1a1612' }}>{text}</div>
+                  {correct && <div style={{ fontSize: 11, color: '#4a7030', fontWeight: 700, letterSpacing: '0.08em' }}>✓ CORRECT</div>}
+                  {picked && !correct && <div style={{ fontSize: 11, color: '#a83520', fontWeight: 700, letterSpacing: '0.08em' }}>✗ YOUR PICK</div>}
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Explanation */}
+          <div style={{ marginTop: 20, background: '#fdf4e1', borderLeft: '3px solid #b8420e', borderRadius: '0 4px 4px 0', padding: '14px 20px' }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#b8420e', textTransform: 'uppercase', fontWeight: 700 }}>Why B</div>
+            <div style={{ fontSize: 13.5, lineHeight: 1.6, marginTop: 6, color: '#2a2520' }}>
+              Per TS 2.2.1 and the SSPS logic, SI initiates on 2/3 coincident <b>PZR pressure lo-lo</b> bistables, set at <span style={{ fontFamily: 'JetBrains Mono, monospace', color: '#a83520', fontWeight: 600 }}>1815 psig</span>. Option C mixes the PZR lo alarm (1950) with a single-channel logic that wouldn't actuate. Option D references the level lo alarm, which is not an SI input.
+            </div>
+            <div style={{ marginTop: 10, display: 'flex', gap: 10, fontSize: 12 }}>
+              <a style={{ color: '#b8420e', fontWeight: 600 }}>→ RCS article</a>
+              <a style={{ color: '#b8420e', fontWeight: 600 }}>→ TS 2.2.1 Table</a>
+              <a style={{ color: '#b8420e', fontWeight: 600 }}>→ RPS/SSPS article</a>
+            </div>
+          </div>
+
+          <div style={{ marginTop: 22, display: 'flex', gap: 10, alignItems: 'center' }}>
+            <button style={{ padding: '10px 22px', background: '#b8420e', color: '#fff', border: 'none', borderRadius: 4, fontSize: 14, fontWeight: 600 }}>Next question →</button>
+            <button style={{ padding: '10px 16px', background: '#fff', color: '#2a2520', border: '1px solid #d6c9ab', borderRadius: 4, fontSize: 13 }}>Flag for review</button>
+            <span style={{ flex: 1 }} />
+            <span style={{ fontSize: 12, color: '#8a7a55' }}>Press <kbd style={{ padding: '2px 6px', background: '#fff', border: '1px solid #d6c9ab', borderRadius: 3, fontFamily: 'JetBrains Mono, monospace', fontSize: 11 }}>Enter</kbd> for next</span>
+          </div>
+        </div>
+
+        {/* Right rail: reference cards */}
+        <div>
+          <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, padding: '12px 14px', fontSize: 12 }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.12em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 700, marginBottom: 6 }}>Quick-ref · PZR Setpoints</div>
+            <table style={{ width: '100%', fontSize: 12, borderCollapse: 'collapse' }}>
+              <tbody>
+                {[
+                  ['PZR pressure — Hi trip', '2385', '#a83520'],
+                  ['PZR pressure — Lo alarm', '1950', '#a87020'],
+                  ['PZR pressure — Lo-Lo SI', '1815', '#a83520'],
+                  ['PZR level — Lo alarm', '17 %', '#a87020'],
+                ].map(([p, v, c]) => (
+                  <tr key={p} style={{ borderTop: '1px dashed #d6c9ab' }}>
+                    <td style={{ padding: '4px 0', color: '#2a2520' }}>{p}</td>
+                    <td style={{ textAlign: 'right', padding: '4px 0', color: c, fontFamily: 'JetBrains Mono, monospace', fontWeight: 600 }}>{v}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, padding: '12px 14px', fontSize: 12, marginTop: 10 }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.12em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 700, marginBottom: 6 }}>Also testing this K/A</div>
+            {['2020 Q22', '2023 Q14', '2019 Q55'].map(q => (
+              <div key={q} style={{ padding: '4px 0', color: '#b8420e' }}>↗ {q}</div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function QuizResults() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: '#f6f1e8', fontFamily: '"Inter Tight", sans-serif', color: '#2a2520', padding: '32px 48px', overflow: 'hidden' }}>
+      <div style={{ fontSize: 11, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase' }}>Quiz complete · Apr 20 · 14:22</div>
+      <div style={{ display: 'flex', alignItems: 'baseline', gap: 22, marginTop: 4 }}>
+        <h1 style={{ fontFamily: 'Instrument Serif', fontSize: 72, fontWeight: 400, margin: 0, letterSpacing: '-0.02em', color: '#4a7030' }}>21<span style={{ color: '#8a7a55', fontSize: 32 }}>/25</span></h1>
+        <div>
+          <div style={{ fontSize: 15, color: '#4a7030', fontWeight: 600 }}>84% · passing (≥80%)</div>
+          <div style={{ fontSize: 13, color: '#6a5c42' }}>+6pts over your last run on this pool</div>
+        </div>
+        <span style={{ flex: 1 }} />
+        <button style={{ padding: '10px 20px', background: '#b8420e', color: '#fff', border: 'none', borderRadius: 4, fontWeight: 600, fontSize: 14 }}>Drill the 4 wrong ones ›</button>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 14, marginTop: 24 }}>
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, padding: '14px 16px' }}>
+          <div style={{ fontSize: 10, letterSpacing: '0.12em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Time</div>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 30, marginTop: 4 }}>38:12 <span style={{ fontSize: 14, color: '#8a7a55' }}>/ 45:00</span></div>
+          <div style={{ fontSize: 12, color: '#6a5c42' }}>1:32 avg / question · under exam pace</div>
+        </div>
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, padding: '14px 16px' }}>
+          <div style={{ fontSize: 10, letterSpacing: '0.12em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>By system</div>
+          <div style={{ marginTop: 6, fontSize: 12.5, lineHeight: 1.7 }}>
+            <div><span style={{ color: '#4a7030' }}>●</span> RCS <b>4/4</b></div>
+            <div><span style={{ color: '#4a7030' }}>●</span> EDGs <b>3/3</b></div>
+            <div><span style={{ color: '#a87020' }}>●</span> ECCS <b>2/4</b> · weak</div>
+            <div><span style={{ color: '#a83520' }}>●</span> AFW <b>1/3</b> · weak</div>
+          </div>
+        </div>
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, padding: '14px 16px' }}>
+          <div style={{ fontSize: 10, letterSpacing: '0.12em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Mastery delta</div>
+          <div style={{ fontFamily: 'Instrument Serif', fontSize: 30, color: '#4a7030', marginTop: 4 }}>+3.2%</div>
+          <div style={{ fontSize: 12, color: '#6a5c42' }}>Overall 64% → 67%</div>
+        </div>
+      </div>
+
+      <div style={{ marginTop: 18, background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, padding: '16px 20px' }}>
+        <div style={{ fontSize: 10, letterSpacing: '0.12em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Wrong answers</div>
+        {[
+          ['Q07', '2022 Q47 — PZR Lo-Lo SI setpoint', 'You picked C · correct B', 'RCS'],
+          ['Q12', '2023 Q19 — AFW auto-start logic', 'You picked D · correct A', 'AFW'],
+          ['Q18', '2020 Q33 — ECCS recirc transfer', 'You picked B · correct C', 'ECCS'],
+          ['Q22', '2023 Q62 — SGTR diagnosis', 'You picked A · correct D', 'SGTR'],
+        ].map(([n, t, m, s]) => (
+          <div key={n} style={{ padding: '9px 0', borderTop: '1px solid #ece4d2', display: 'flex', gap: 12, alignItems: 'center' }}>
+            <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 11, color: '#8a7a55', width: 32 }}>{n}</span>
+            <span style={{ flex: 1, fontSize: 13.5 }}>{t}</span>
+            <span style={{ fontSize: 11.5, color: '#a83520' }}>{m}</span>
+            <span style={{ fontSize: 11, background: '#ece4d2', padding: '3px 8px', borderRadius: 3, color: '#6a5c42' }}>{s}</span>
+            <span style={{ color: '#b8420e' }}>›</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function QuizSection() {
+  return (
+    <Section
+      id="quiz"
+      eyebrow="04 · Quiz mode"
+      title="The feature you asked for."
+      subtitle="Quiz setup → question (feedback or blind) → results with drill-back. Built around the current expandable-tile pattern you like, but layered on top of a real quiz engine with scoring, timing, and wrong-answer queueing."
+    >
+      <Stack gap={30}>
+        <OptionCard tag="Step 1" title="Setup: mode, pool, filters, length, timer" subtitle="Everything tweakable in one screen. Save common configurations as presets (10 random from weak areas, 2023 full exam blind, etc.).">
+          <ScaledFrame width={1280} height={760} bg="#f6f1e8"><QuizSetup /></ScaledFrame>
+        </OptionCard>
+
+        <OptionCard tag="Step 2" title="Question screen · feedback mode" subtitle="Per-question feedback with inline justification and linked articles. Sticky header shows progress, timer, running score. Right rail shows quick-reference data relevant to this question's K/A.">
+          <ScaledFrame width={1280} height={760} bg="#f6f1e8"><QuizFeedback /></ScaledFrame>
+        </OptionCard>
+
+        <OptionCard tag="Step 3" title="Results · turn every wrong answer into tomorrow's review" subtitle="Pass/fail, time, per-system breakdown, mastery delta. The 'Drill the 4 wrong ones' button is the magic: wrongs never just disappear, they get queued for review.">
+          <ScaledFrame width={1280} height={620} bg="#f6f1e8"><QuizResults /></ScaledFrame>
+        </OptionCard>
+      </Stack>
+
+      <Note label="Backend shape (for the multi-user future)" tone="default">
+        To support per-user stats + shared data mining, the quiz engine needs a small backend. Minimum shape: <code>users</code>, <code>quiz_attempts</code> (user_id, config, started_at, finished_at), <code>question_responses</code> (attempt_id, question_id, picked, correct, time_ms). Everything else (mastery, weak areas, most-missed) is derived from that table with SQL. Supabase or a tiny FastAPI backend both work; happy to sketch either when you're ready.
+      </Note>
+    </Section>
+  );
+}
+
+Object.assign(window, { QuizSection });
+
+
+// ===== src/explorations/mastery.jsx =====
+// Mastery dashboard — weak-area triage
+
+function MasteryScreen() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: '#f6f1e8', padding: '28px 44px', fontFamily: '"Inter Tight", sans-serif', color: '#2a2520', overflow: 'hidden' }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 20 }}>
+        <div>
+          <div style={{ fontSize: 11, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase' }}>Mastery</div>
+          <h1 style={{ fontFamily: 'Instrument Serif', fontSize: 42, margin: '4px 0 0', fontWeight: 400 }}>Where you stand.</h1>
+        </div>
+        <div style={{ display: 'flex', gap: 10, fontSize: 12 }}>
+          <div style={{ padding: '7px 14px', background: '#b8420e', color: '#fff', borderRadius: 4, fontWeight: 600 }}>Overall 64%</div>
+          <div style={{ padding: '7px 14px', background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, color: '#6a5c42' }}>+8% in 14 days</div>
+        </div>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1.6fr 1fr', gap: 16 }}>
+        {/* Mastery matrix */}
+        <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '18px 22px' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 10 }}>
+            <div style={{ fontFamily: 'Instrument Serif', fontSize: 20 }}>By system group</div>
+            <div style={{ fontSize: 12, color: '#8a7a55' }}>sorted by weakness · click to drill</div>
+          </div>
+          {[
+            ['Primary', [['RCS', 72], ['RCPs', 72], ['PZR', 68], ['CVCS', 60], ['SG', 58], ['Rx Vessel', 85]]],
+            ['Emergency', [['Cont. Spray', 88], ['SW', 82], ['CCW', 72], ['CFCUs', 70], ['RHR', 65], ['Containment', 64], ['SFP', 55], ['ECCS', 41]]],
+            ['Secondary', [['Main Turb', 70], ['Main Steam', 66], ['Steam Dumps', 62], ['Circ W', 58], ['Feed & Cond', 50], ['AFW', 38]]],
+            ['Control', [['Excore NI', 80], ['RPS/SSPS', 74], ['Rod Ctrl', 55], ['AMSAC', 38]]],
+          ].map(([group, rows]) => (
+            <div key={group} style={{ marginTop: 14 }}>
+              <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600, marginBottom: 5 }}>{group}</div>
+              {rows.map(([name, pct]) => {
+                const c = pct >= 75 ? '#4a7030' : pct >= 55 ? '#a87020' : '#a83520';
+                return (
+                  <div key={name} style={{ display: 'grid', gridTemplateColumns: '140px 1fr 46px', gap: 10, alignItems: 'center', padding: '3px 0' }}>
+                    <span style={{ fontSize: 13 }}>{name}</span>
+                    <div style={{ height: 8, background: '#ece4d2', borderRadius: 2 }}>
+                      <div style={{ width: `${pct}%`, height: '100%', background: c, borderRadius: 2 }} />
+                    </div>
+                    <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: 12, color: c, fontWeight: 600, textAlign: 'right' }}>{pct}%</span>
+                  </div>
+                );
+              })}
+            </div>
+          ))}
+        </div>
+
+        {/* Right column */}
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+          <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '16px 20px' }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Priority drill</div>
+            <div style={{ fontSize: 13, color: '#6a5c42', marginTop: 4 }}>High exam frequency × low mastery</div>
+            {[
+              ['AFW', 38, 'Tested 14×'],
+              ['ECCS recirc', 41, 'Tested 11×'],
+              ['AMSAC', 38, 'Tested 9×'],
+              ['SGTR diagnosis', 44, 'Tested 8×'],
+            ].map(([n, p, t]) => (
+              <div key={n} style={{ padding: '8px 0', borderTop: '1px dashed #d6c9ab', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <div style={{ fontSize: 13.5, fontWeight: 600 }}>{n}</div>
+                  <div style={{ fontSize: 11, color: '#8a7a55' }}>{t} · {p}% mastery</div>
+                </div>
+                <button style={{ background: '#fdf6ee', border: '1px solid #b8420e', color: '#b8420e', fontSize: 11, padding: '5px 10px', borderRadius: 3, fontWeight: 600 }}>Drill 10</button>
+              </div>
+            ))}
+          </div>
+
+          <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, padding: '16px 20px' }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>14-day trend</div>
+            <svg viewBox="0 0 280 90" style={{ width: '100%', marginTop: 6 }}>
+              <polyline fill="none" stroke="#b8420e" strokeWidth="2" points="0,70 20,68 40,62 60,60 80,58 100,50 120,52 140,45 160,40 180,38 200,32 220,30 240,26 260,22 280,20" />
+              <polyline fill="#b8420e" fillOpacity="0.08" stroke="none" points="0,70 20,68 40,62 60,60 80,58 100,50 120,52 140,45 160,40 180,38 200,32 220,30 240,26 260,22 280,20 280,90 0,90" />
+            </svg>
+            <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 10, color: '#8a7a55', marginTop: 4 }}>
+              <span>56%</span><span>Today 64%</span>
+            </div>
+          </div>
+
+          <div style={{ background: '#1a1612', color: '#f6f1e8', borderRadius: 5, padding: '16px 20px' }}>
+            <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#d9cba6', textTransform: 'uppercase', fontWeight: 600 }}>Shared stats · class of 2026</div>
+            <div style={{ fontSize: 12, color: '#c9bc97', marginTop: 4, lineHeight: 1.5 }}>Most-missed across 7 classmates this week:</div>
+            <div style={{ marginTop: 8 }}>
+              {[['2023 Q62 — SGTR', '72% wrong'], ['2022 Q41 — AMSAC', '68% wrong'], ['2019 Q55 — AFW logic', '61% wrong']].map(([q, m]) => (
+                <div key={q} style={{ padding: '5px 0', borderTop: '1px dashed #3a342a', display: 'flex', justifyContent: 'space-between', fontSize: 12 }}>
+                  <span>{q}</span><span style={{ color: '#e8a942' }}>{m}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function MasterySection() {
+  return (
+    <Section id="mastery" eyebrow="05 · Mastery dashboard" title="Triage by weakness, not by alphabet." subtitle="Overall mastery, per-system breakdown, priority drill (high exam frequency × low mastery), 14-day trend, and a peek at the future shared-stats pane.">
+      <OptionCard title="Full mastery dashboard">
+        <ScaledFrame width={1280} height={740} bg="#f6f1e8"><MasteryScreen /></ScaledFrame>
+      </OptionCard>
+      <Note label="Why the sort matters" tone="good">
+        Most study tools sort by category or alphabet. The useful sort when you have 42 days left is <b>(exam frequency) × (1 − mastery)</b> — weight topics by how painful missing them would be. The "Priority drill" card does exactly that.
+      </Note>
+    </Section>
+  );
+}
+
+Object.assign(window, { MasterySection });
+
+
+// ===== src/explorations/setpoints.jsx =====
+// Setpoint cheat sheets
+
+function SetpointSheet() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: '#f6f1e8', padding: '28px 48px', fontFamily: '"Inter Tight", sans-serif', color: '#2a2520', overflow: 'hidden' }}>
+      <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', marginBottom: 14 }}>
+        <div>
+          <div style={{ fontSize: 11, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase' }}>Setpoint cheat sheet</div>
+          <h1 style={{ fontFamily: 'Instrument Serif', fontSize: 42, margin: '4px 0 0', fontWeight: 400 }}>Reactor Coolant System.</h1>
+        </div>
+        <div style={{ display: 'flex', gap: 8, fontSize: 11 }}>
+          <div style={{ padding: '6px 12px', border: '1px solid #d6c9ab', background: '#fff', borderRadius: 3 }}>Print</div>
+          <div style={{ padding: '6px 12px', border: '1px solid #d6c9ab', background: '#fff', borderRadius: 3 }}>Copy as table</div>
+          <div style={{ padding: '6px 12px', background: '#b8420e', color: '#fff', borderRadius: 3, fontWeight: 600 }}>Quiz me on these</div>
+        </div>
+      </div>
+
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 14 }}>
+        {[
+          ['Trips & SI', '#a83520', [
+            ['PZR pressure Hi trip', '2385', 'psig', 'TS 2.2.1'],
+            ['PZR pressure Lo-Lo SI', '1815', 'psig', 'TS 2.2.1'],
+            ['RCS flow Lo trip', '90', '% of nom', 'TS 2.2.1'],
+            ['Hi cont pressure SI', '3.6', 'psig', 'TS 3/4.3.2'],
+            ['Steam line Hi-Hi ΔP SI', '100', 'psi', 'TS 3/4.3.2'],
+          ]],
+          ['Alarms & limits', '#a87020', [
+            ['PZR pressure Lo alarm', '1950', 'psig', 'ARP 2CC1'],
+            ['PZR level Lo alarm', '17', '%', 'ARP 2CC1'],
+            ['RCS leak rate (unident.)', '1.0', 'gpm', 'TS 3/4.4.5'],
+            ['RCS leak rate (ident.)', '10', 'gpm', 'TS 3/4.4.5'],
+            ['Ctmt sump level alarm', '12', 'in', 'ARP 2CC1'],
+          ]],
+          ['Normal operating', '#4a7030', [
+            ['Tavg full power', '568.9', '°F', 'UFSAR 4.4'],
+            ['PZR pressure normal', '2235', 'psig', 'UFSAR 4.4'],
+            ['PZR level program', '25–60', '%', 'Plant curves'],
+            ['RCP bearing temp', '<195', '°F', 'OP-SO.RC-0001'],
+            ['Cold leg temp', '543', '°F', 'UFSAR'],
+          ]],
+          ['Transient thresholds', '#6a5c42', [
+            ['Subcooling margin', '≥40', '°F', 'EOP-TRIP-1'],
+            ['Core exit TC saturation', '350', '°F', 'EOP-CFST'],
+            ['RVLIS full range', '≥48', '%', 'EOP-TRIP-4'],
+            ['RCS natural circ ΔT', '<50', '°F', 'EOP-TRIP-4'],
+            ['SG NR level low', '<12', '%', 'EOP-FRHS-1'],
+          ]],
+        ].map(([label, color, rows]) => (
+          <div key={label} style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 5, overflow: 'hidden' }}>
+            <div style={{ padding: '10px 16px', borderBottom: '1px solid #d6c9ab', background: color, color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <span style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', fontWeight: 700 }}>{label}</span>
+              <span style={{ fontSize: 11, opacity: 0.85 }}>{rows.length} values</span>
+            </div>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: 12.5 }}>
+              <tbody>
+                {rows.map(([p, v, u, s], i) => (
+                  <tr key={p} style={{ borderTop: i ? '1px solid #f0ead9' : 'none' }}>
+                    <td style={{ padding: '8px 14px', color: '#2a2520' }}>{p}</td>
+                    <td style={{ padding: '8px 0', textAlign: 'right', fontFamily: 'Instrument Serif', fontSize: 18, color: '#1a1612', fontWeight: 500 }}>{v}</td>
+                    <td style={{ padding: '8px 14px 8px 4px', fontFamily: 'JetBrains Mono, monospace', fontSize: 10.5, color: '#8a7a55', width: 50 }}>{u}</td>
+                    <td style={{ padding: '8px 14px 8px 0', fontFamily: 'JetBrains Mono, monospace', fontSize: 10, color: '#6a5c42', textAlign: 'right' }}>{s}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: 12, fontSize: 11.5, color: '#8a7a55', textAlign: 'center', fontStyle: 'italic' }}>
+        Auto-extracted from this system's article. Values stay in sync when the article updates. Every value links back to its source.
+      </div>
+    </div>
+  );
+}
+
+function SetpointsSection() {
+  return (
+    <Section id="setpoints" eyebrow="06 · Setpoint cheat sheets" title="A printable wall-card, generated from the article." subtitle="You use setpoint cross-refs mid-question. Instead of scrolling the article, every system gets an auto-generated cheat sheet — trips, alarms, normals, thresholds — that prints cleanly to a page and feeds directly into a quiz on those values.">
+      <OptionCard title="Per-system setpoint quick-ref" subtitle="Four categories, color-coded. Serif numerals so the values read big. Source column so you always know where it came from.">
+        <ScaledFrame width={1280} height={740} bg="#f6f1e8"><SetpointSheet /></ScaledFrame>
+      </OptionCard>
+      <Note label="Implementation note" tone="default">
+        These don't need to be hand-authored — your articles already tag setpoints with <code>.val-trip / .val-alarm / .val-normal</code>. A build step can harvest them into a structured table per system. The "Quiz me on these" button then generates fill-in-blank style questions from the same data.
+      </Note>
+    </Section>
+  );
+}
+
+Object.assign(window, { SetpointsSection });
+
+
+// ===== src/explorations/navigation.jsx =====
+// Navigation: sidebar working set + command palette
+
+function SidebarExample() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: '#f6f1e8', display: 'grid', gridTemplateColumns: '260px 1fr', fontFamily: '"Inter Tight", sans-serif', color: '#2a2520' }}>
+      <aside style={{ background: '#ece4d2', padding: '20px 16px', borderRight: '1px solid #d6c9ab', fontSize: 13 }}>
+        <div style={{ fontFamily: 'Instrument Serif', fontSize: 20 }}>Salem.</div>
+        <div style={{ marginTop: 14, padding: '7px 10px', background: '#fff', border: '1px solid #d6c9ab', borderRadius: 4, display: 'flex', alignItems: 'center', gap: 8, fontSize: 12, color: '#8a7a55' }}>
+          <span>⌘K</span><span>Jump to anything…</span>
+        </div>
+
+        <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600, margin: '20px 0 6px' }}>Study</div>
+        {[['Today', '12'], ['Dashboard'], ['Quiz mode'], ['Mastery'], ['Plant view']].map(([l, b], i) => (
+          <div key={l} style={{ padding: '6px 10px', borderRadius: 3, background: i === 0 ? '#b8420e' : 'transparent', color: i === 0 ? '#fff' : '#2a2520', display: 'flex', justifyContent: 'space-between', fontWeight: i === 0 ? 600 : 400 }}>
+            <span>{l}</span>{b && <span style={{ fontSize: 11, opacity: 0.85 }}>{b}</span>}
+          </div>
+        ))}
+
+        <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600, margin: '20px 0 6px' }}>Working set</div>
+        {[['Reactor Coolant System', '72%', true], ['TS 3/4.4 — RCS', '80%'], ['EOP-TRIP-1', '55%'], ['2022 Q47', 'wrong']].map(([n, m, active]) => (
+          <div key={n} style={{ padding: '6px 10px', display: 'flex', justifyContent: 'space-between', fontSize: 12.5, borderLeft: active ? '2px solid #b8420e' : '2px solid transparent', color: active ? '#2a2520' : '#5a4f3a', fontWeight: active ? 600 : 400 }}>
+            <span>{n}</span>
+            <span style={{ fontSize: 10, color: '#8a7a55', fontFamily: 'JetBrains Mono, monospace' }}>{m}</span>
+          </div>
+        ))}
+        <div style={{ padding: '4px 10px', fontSize: 11, color: '#8a7a55' }}>+ Pin current page</div>
+
+        <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600, margin: '20px 0 6px' }}>Browse</div>
+        {['Systems (54) ›', 'Tech Specs (18) ›', 'EOPs (33) ›', 'Abnormals (41) ›', 'Procedures (58) ›', 'Exams (7) ›'].map(l => (
+          <div key={l} style={{ padding: '5px 10px', fontSize: 12.5, color: '#5a4f3a' }}>{l}</div>
+        ))}
+      </aside>
+
+      <div style={{ padding: 30, color: '#6a5c42' }}>
+        <div style={{ fontSize: 11, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase' }}>Sidebar behaviour</div>
+        <div style={{ fontFamily: 'Instrument Serif', fontSize: 26, marginTop: 6, color: '#2a2520' }}>Working set, not a file tree.</div>
+        <ul style={{ fontSize: 14, lineHeight: 1.7, marginTop: 10, color: '#2a2520' }}>
+          <li><b>Today</b> shows what's due (due-for-review + queued drills).</li>
+          <li><b>Working set</b> auto-populates from your last ~8 touched articles + things you pin. Mastery badge on each.</li>
+          <li><b>Browse</b> is always collapsed by default — click to fan out a full list in a slide-over panel.</li>
+          <li>No 50-link mega-dropdown unless you ask for it.</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function CommandPalette() {
+  return (
+    <div style={{ width: '100%', height: '100%', background: 'rgba(20,18,14,0.92)', fontFamily: '"Inter Tight", sans-serif', color: '#f6f1e8', padding: '80px 0 0 0', display: 'flex', justifyContent: 'center' }}>
+      <div style={{ width: 620, background: '#f6f1e8', color: '#2a2520', borderRadius: 8, border: '1px solid #d6c9ab', overflow: 'hidden', boxShadow: '0 40px 120px rgba(0,0,0,0.5)', height: 'fit-content' }}>
+        <div style={{ padding: '16px 18px', borderBottom: '1px solid #d6c9ab', display: 'flex', alignItems: 'center', gap: 12 }}>
+          <span style={{ color: '#8a7a55' }}>⌘</span>
+          <input defaultValue="pzr" style={{ flex: 1, border: 'none', outline: 'none', fontSize: 17, background: 'transparent', color: '#2a2520', fontFamily: 'inherit' }} />
+          <span style={{ fontSize: 11, color: '#8a7a55' }}>esc to close</span>
+        </div>
+        <div style={{ padding: '6px 0' }}>
+          <div style={{ padding: '4px 18px', fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', marginTop: 6 }}>Jump to article · 4</div>
+          {[
+            ['Pressurizer & PRT', 'SYS', '#b8420e'],
+            ['Pressurizer Level & Pressure Control', 'SYS', '#b8420e'],
+            ['TS 3/4.4.3 — PORVs & block valves', 'TS', '#4a7030'],
+            ['ARP 2CC1 — PZR Lo alarm', 'ARP', '#a87020'],
+          ].map(([t, k, c], i) => (
+            <div key={t} style={{ padding: '9px 18px', background: i === 0 ? '#ece4d2' : 'transparent', display: 'flex', alignItems: 'center', gap: 10, fontSize: 13.5 }}>
+              <span style={{ fontSize: 9, background: c, color: '#fff', padding: '3px 7px', borderRadius: 3, letterSpacing: '0.08em', fontWeight: 700, width: 32, textAlign: 'center' }}>{k}</span>
+              <span>{t}</span>
+            </div>
+          ))}
+
+          <div style={{ padding: '6px 18px', fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', marginTop: 4 }}>Exam questions · 8</div>
+          {[
+            ['2022 Q47 — PZR Lo-Lo SI', 'wrong'],
+            ['2023 Q19 — PZR heater logic', 'right'],
+            ['2019 Q12 — PZR pressure control', null],
+          ].map(([t, state]) => (
+            <div key={t} style={{ padding: '7px 18px', display: 'flex', alignItems: 'center', gap: 10, fontSize: 13 }}>
+              <span style={{ fontSize: 9, background: '#6a5c42', color: '#fff', padding: '3px 7px', borderRadius: 3, width: 32, textAlign: 'center', fontWeight: 700 }}>Q</span>
+              <span style={{ flex: 1 }}>{t}</span>
+              {state === 'wrong' && <span style={{ color: '#a83520', fontSize: 11 }}>✗ last</span>}
+              {state === 'right' && <span style={{ color: '#4a7030', fontSize: 11 }}>✓ last</span>}
+            </div>
+          ))}
+
+          <div style={{ padding: '6px 18px', fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', marginTop: 4 }}>Actions</div>
+          {['Quiz me on PZR (10 Qs)', 'Open setpoint cheat · RCS', 'Ask Claude: "explain PZR Lo-Lo logic"'].map(t => (
+            <div key={t} style={{ padding: '7px 18px', fontSize: 13, color: '#b8420e', display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span style={{ color: '#8a7a55' }}>→</span>{t}
+            </div>
+          ))}
+        </div>
+        <div style={{ padding: '10px 18px', borderTop: '1px solid #d6c9ab', fontSize: 11, color: '#8a7a55', display: 'flex', gap: 14 }}>
+          <span><kbd>↑↓</kbd> navigate</span><span><kbd>↵</kbd> open</span><span><kbd>⌘↵</kbd> new tab</span><span style={{ flex: 1 }} /><span>Scoped to your pool</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function NavigationSection() {
+  return (
+    <Section id="nav" eyebrow="07 · Navigation" title="Sidebar for working, palette for jumping." subtitle="Replaces mega-dropdowns. Sidebar surfaces what you're actually using; ⌘K handles 'I want the thing about X' without a 50-item menu.">
+      <Row gap={14} wrap>
+        <div style={{ flex: 1, minWidth: 420 }}>
+          <OptionCard tag="Sidebar" title="Working set + browse">
+            <ScaledFrame width={900} height={560} bg="#f6f1e8"><SidebarExample /></ScaledFrame>
+          </OptionCard>
+        </div>
+        <div style={{ flex: 1, minWidth: 420 }}>
+          <OptionCard tag="Palette" title="⌘K — articles, exam Qs, actions">
+            <ScaledFrame width={900} height={560} bg="#2a2520"><CommandPalette /></ScaledFrame>
+          </OptionCard>
+        </div>
+      </Row>
+      <Note label="Bonus idea" tone="good">
+        The "Ask Claude" action in the palette could be wired to the built-in LLM helper — so typing "explain PZR Lo-Lo logic" gives you a grounded answer referencing your own wiki articles. Great for late-night "wait, why?" moments.
+      </Note>
+    </Section>
+  );
+}
+
+Object.assign(window, { NavigationSection });
+
+
+// ===== src/explorations/mobile.jsx =====
+// Mobile quick-study flow
+
+function PhoneFrame({ children, bg = '#f6f1e8' }) {
+  return (
+    <div style={{ width: 320, height: 640, background: bg, borderRadius: 36, border: '10px solid #1a1612', boxShadow: '0 20px 60px rgba(0,0,0,0.15)', overflow: 'hidden', position: 'relative', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ height: 26, background: bg === '#f6f1e8' ? '#ece4d2' : '#141014', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 18px', fontSize: 11, color: bg === '#f6f1e8' ? '#2a2520' : '#d8dde6', fontFamily: '-apple-system', fontWeight: 600 }}>
+        <span>9:41</span><span>●●● 100%</span>
+      </div>
+      <div style={{ flex: 1, overflow: 'hidden' }}>{children}</div>
+    </div>
+  );
+}
+
+function MobileHome() {
+  return (
+    <div style={{ fontFamily: '"Inter Tight", sans-serif', color: '#2a2520', padding: '16px 16px 0', height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase' }}>Monday · 42 days to exam</div>
+      <div style={{ fontFamily: 'Instrument Serif', fontSize: 28, marginTop: 2 }}>Morning, Fred.</div>
+
+      <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 6, padding: 14, marginTop: 14 }}>
+        <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Resume</div>
+        <div style={{ fontSize: 14, marginTop: 4, fontWeight: 600 }}>2022 Exam — Q47</div>
+        <div style={{ fontSize: 11, color: '#8a7a55' }}>46 / 75 · 72%</div>
+        <button style={{ marginTop: 10, width: '100%', padding: 9, background: '#b8420e', color: '#fff', border: 'none', borderRadius: 4, fontWeight: 600, fontSize: 13 }}>Resume ›</button>
+      </div>
+
+      <div style={{ background: '#fff', border: '1px solid #d6c9ab', borderRadius: 6, padding: 14, marginTop: 10 }}>
+        <div style={{ fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Today · 5 min</div>
+        <div style={{ fontSize: 13.5, marginTop: 4 }}>Drill 5 random from weak areas</div>
+        <div style={{ display: 'flex', gap: 4, marginTop: 10 }}>
+          {[0,1,2,3,4].map(i => <div key={i} style={{ flex: 1, height: 24, background: '#ece4d2', borderRadius: 3 }} />)}
+        </div>
+        <button style={{ marginTop: 10, width: '100%', padding: 9, background: '#2a2520', color: '#fff', border: 'none', borderRadius: 4, fontWeight: 600, fontSize: 13 }}>Start drill ›</button>
+      </div>
+
+      <div style={{ marginTop: 14, fontSize: 10, letterSpacing: '0.14em', color: '#8a7a55', textTransform: 'uppercase', fontWeight: 600 }}>Streak · 12 days</div>
+      <div style={{ display: 'flex', gap: 2, marginTop: 6 }}>
+        {Array.from({length: 14}).map((_, i) => <div key={i} style={{ flex: 1, height: 16, background: i < 12 ? '#b8420e' : '#ece4d2', borderRadius: 2 }} />)}
+      </div>
+
+      <div style={{ flex: 1 }} />
+      <div style={{ display: 'flex', borderTop: '1px solid #d6c9ab', padding: '10px 0 14px', margin: '0 -16px 0', background: '#ece4d2', textAlign: 'center', fontSize: 10, color: '#8a7a55' }}>
+        {[['●', 'Home', true], ['⊛', 'Quiz'], ['◈', 'Mastery'], ['⌕', 'Search']].map(([ic, l, active]) => (
+          <div key={l} style={{ flex: 1, color: active ? '#b8420e' : '#8a7a55', fontWeight: active ? 700 : 400 }}>
+            <div style={{ fontSize: 16 }}>{ic}</div>
+            <div>{l}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function MobileQuestion() {
+  return (
+    <div style={{ fontFamily: '"Inter Tight", sans-serif', color: '#2a2520', padding: '16px 16px', height: '100%', display: 'flex', flexDirection: 'column' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 11, color: '#8a7a55', fontFamily: 'JetBrains Mono, monospace' }}>
+        <span>Q 3 / 5</span><span>02:14</span>
+      </div>
+      <div style={{ height: 3, background: '#ece4d2', marginTop: 6, borderRadius: 2 }}>
+        <div style={{ width: '60%', height: '100%', background: '#b8420e', borderRadius: 2 }} />
+      </div>
+      <div style={{ fontSize: 10, letterSpacing: '0.1em', color: '#8a7a55', textTransform: 'uppercase', fontFamily: 'JetBrains Mono, monospace', marginTop: 12 }}>2022 · Q47 · RO</div>
+      <div style={{ fontSize: 15, lineHeight: 1.5, marginTop: 6, color: '#1a1612' }}>
+        PZR pressure decreasing from 2235 psig. Which condition initiates auto SI?
+      </div>
+      <div style={{ marginTop: 14, display: 'flex', flexDirection: 'column', gap: 8 }}>
+        {[
+          ['A', 'PZR < 2000 psig for 30s'],
+          ['B', 'PZR < 1815 psig, 2/3 channels', true],
+          ['C', 'PZR < 1950 psig, 1 channel'],
+          ['D', 'PZR level < 17%, falling'],
+        ].map(([l, t, picked]) => (
+          <div key={l} style={{ display: 'flex', alignItems: 'center', gap: 10, padding: '10px 12px', background: picked ? '#fdf6ee' : '#fff', border: picked ? '2px solid #b8420e' : '1px solid #d6c9ab', borderRadius: 6 }}>
+            <div style={{ width: 24, height: 24, borderRadius: 12, background: picked ? '#b8420e' : '#ece4d2', color: picked ? '#fff' : '#6a5c42', display: 'grid', placeItems: 'center', fontFamily: 'JetBrains Mono, monospace', fontSize: 11, fontWeight: 700 }}>{l}</div>
+            <div style={{ fontSize: 12.5, flex: 1 }}>{t}</div>
+          </div>
+        ))}
+      </div>
+      <div style={{ flex: 1 }} />
+      <button style={{ padding: 12, background: '#b8420e', color: '#fff', border: 'none', borderRadius: 6, fontWeight: 600, fontSize: 14 }}>Submit answer</button>
+    </div>
+  );
+}
+
+function MobileArticle() {
+  return (
+    <div style={{ fontFamily: '"Inter Tight", sans-serif', color: '#2a2520', padding: '16px 16px', height: '100%', overflow: 'hidden' }}>
+      <div style={{ fontSize: 10, color: '#8a7a55' }}>Primary › RCS</div>
+      <div style={{ fontFamily: 'Instrument Serif', fontSize: 26, marginTop: 4, lineHeight: 1.1 }}>Reactor Coolant System.</div>
+
+      <div style={{ marginTop: 10, padding: '8px 10px', background: '#fdf4e1', borderLeft: '3px solid #b8420e', fontSize: 12, borderRadius: '0 4px 4px 0' }}>
+        <b>Your mastery · 72%</b> · Weak: PORV block valves
+      </div>
+
+      <div style={{ fontSize: 10, letterSpacing: '0.1em', color: '#b8420e', marginTop: 14, textTransform: 'uppercase', fontWeight: 700 }}>Setpoints</div>
+      <div style={{ marginTop: 6 }}>
+        {[
+          ['PZR Hi trip', '2385 psig', '#a83520'],
+          ['PZR Lo-Lo SI', '1815 psig', '#a83520'],
+          ['PZR Lo alarm', '1950 psig', '#a87020'],
+          ['Tavg nominal', '568.9 °F', '#4a7030'],
+        ].map(([l, v, c]) => (
+          <div key={l} style={{ display: 'flex', justifyContent: 'space-between', padding: '7px 0', borderBottom: '1px dashed #d6c9ab', fontSize: 13 }}>
+            <span>{l}</span><span style={{ color: c, fontFamily: 'JetBrains Mono, monospace', fontWeight: 600 }}>{v}</span>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ marginTop: 16, display: 'flex', gap: 8 }}>
+        <button style={{ flex: 1, padding: 9, background: '#b8420e', color: '#fff', border: 'none', borderRadius: 4, fontWeight: 600, fontSize: 12 }}>Quiz me · 5 Qs</button>
+        <button style={{ flex: 1, padding: 9, background: '#fff', color: '#2a2520', border: '1px solid #d6c9ab', borderRadius: 4, fontSize: 12 }}>Read full</button>
+      </div>
+    </div>
+  );
+}
+
+function MobileSection() {
+  return (
+    <Section id="mobile" eyebrow="08 · Mobile" title="Phone between things." subtitle="You study on mobile in short bursts. Every mobile surface is sized for one-hand use and a 5-minute attention budget. No compromises on the quiz engine — it just fits better.">
+      <Row gap={24} wrap align="flex-start">
+        {[['Home — pick a quick action', <MobileHome key="h" />], ['Quiz question — thumb-reachable', <MobileQuestion key="q" />], ['Article — density where it matters', <MobileArticle key="a" />]].map(([label, c]) => (
+          <div key={label} style={{ textAlign: 'center' }}>
+            <PhoneFrame>{c}</PhoneFrame>
+            <div style={{ fontSize: 12, color: '#6a5c42', marginTop: 12, maxWidth: 280 }}>{label}</div>
+          </div>
+        ))}
+      </Row>
+      <Note label="Principle" tone="default">
+        Mobile is not "desktop, shrunk." It's its own surface. Articles on mobile default to the <b>setpoint table + mastery</b> pane first — text is there, but the big win for phone use is fast setpoint check + a 5-question drill. Long reading is desk behaviour.
+      </Note>
+    </Section>
+  );
+}
+
+Object.assign(window, { MobileSection });
+
+
+// ===== src/app.jsx =====
+// App entry — composes all sections
+
+function IntroSection() {
+  return (
+    <Section
+      id="intro"
+      eyebrow="Context & reasoning"
+      title="A study system, not a wiki."
+      subtitle="The current site is a well-structured reference. For exam prep, that's necessary but not sufficient — an RO/SRO candidate doesn't need another place to look things up, they need a place to drill, track weakness, and come back to weak spots with intention. These explorations redesign around that."
+    >
+      <Row gap={20} wrap>
+        <div style={{ flex: 1, minWidth: 340 }}>
+          <h3 style={{ fontFamily: 'Instrument Serif', fontSize: 24, fontWeight: 400, margin: '0 0 10px' }}>What you told me</h3>
+          <ul style={{ margin: 0, paddingLeft: 18, fontSize: 14, lineHeight: 1.7, color: '#333' }}>
+            <li>Your primary modes: <b>drilling exam questions</b>, <b>cross-referencing setpoints mid-question</b>, and <b>reviewing JPMs/scenarios</b>.</li>
+            <li>You switch between <b>deep desk sessions</b> and <b>quick phone bursts</b>.</li>
+            <li>The current mega-dropdowns, flat search, and missing progress signal are the real daily frustrations.</li>
+            <li>You want <b>timed quizzes</b> (blind + feedback), <b>per-system mastery</b>, and <b>setpoint quick-refs</b>.</li>
+            <li>Long-term: <b>multi-user</b> with a backend that aggregates performance across classmates to surface most-missed questions.</li>
+          </ul>
+        </div>
+        <div style={{ flex: 1, minWidth: 340 }}>
+          <h3 style={{ fontFamily: 'Instrument Serif', fontSize: 24, fontWeight: 400, margin: '0 0 10px' }}>Design principles I'll hold to</h3>
+          <ul style={{ margin: 0, paddingLeft: 18, fontSize: 14, lineHeight: 1.7, color: '#333' }}>
+            <li><b>Study state is first-class.</b> Every page should show or imply what you've seen, missed, or mastered.</li>
+            <li><b>Working set over firehose.</b> Nav surfaces what you're actually working on, not 700 links. Full index is one keystroke away.</li>
+            <li><b>Density where it matters.</b> Setpoints, LCO actions, EOP steps want compact, glanceable layouts — not prose.</li>
+            <li><b>Cross-refs are the feature.</b> Question → system → tech-spec → back, with a breadcrumb trail.</li>
+            <li><b>Designed for two devices.</b> Every core flow has to feel right on a phone and on a 27".</li>
+          </ul>
+        </div>
+      </Row>
+
+      <Note label="Working assumption" tone="default">
+        I'm treating the redesign as a <b>re-skin + structural pass on the existing Astro site</b>, plus a <b>new study layer</b> (quiz engine, progress, mastery) that implies a small backend later. Everything here is HTML/React mockup — production would use Astro components and later a lightweight backend (e.g. Supabase or a Python API) when you add auth and shared stats.
+      </Note>
+
+      <div style={{ marginTop: 40, padding: 24, background: '#ffffff', border: '1px solid var(--doc-line)', borderRadius: 6 }}>
+        <div style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--doc-muted)', fontWeight: 600, marginBottom: 10 }}>How to read this doc</div>
+        <div style={{ fontSize: 14, lineHeight: 1.7, color: '#2a2a2a' }}>
+          Each section is an <b>exploration</b>, not a final design. Most sections show 2–4 variations side-by-side so you can tell me which direction feels right. Use the left nav to jump around. Nothing here is wired to your actual data yet — all content is representative, pulled from your repo where possible (system names, EOP codes, TS sections) so it feels real.
+        </div>
+      </div>
+    </Section>
+  );
+}
+
+function NextSection() {
+  return (
+    <Section
+      id="next"
+      eyebrow="Where to next"
+      title="Tell me what lands."
+      subtitle="Skim the doc. Star what you like, kill what you don't. I'll converge from there."
+    >
+      <Row gap={20} wrap>
+        <div style={{ flex: 1, minWidth: 340, background: '#fff', border: '1px solid var(--doc-line)', borderRadius: 6, padding: 24 }}>
+          <h3 style={{ margin: '0 0 12px', fontFamily: 'Instrument Serif', fontSize: 22, fontWeight: 400 }}>Convergence — what I'd build next</h3>
+          <ol style={{ margin: 0, paddingLeft: 20, fontSize: 14, lineHeight: 1.7, color: '#333' }}>
+            <li>Pick <b>one visual direction</b> (§01) — this sets type, color, chrome for everything downstream.</li>
+            <li>Lock the <b>homepage shape</b> (§02) — dashboard vs. plant-overview vs. hybrid.</li>
+            <li>Pick the <b>quiz engine flow</b> (§04) — the variation you want is probably a mix of pieces.</li>
+            <li>I then build a hi-fi clickable prototype of the <b>full study loop</b>: dashboard → quiz setup → question → feedback → wrong-answer review → back to dashboard.</li>
+            <li>After that: production handoff to your Astro site as components + CSS tokens + an architecture note for the backend (auth, quiz attempts, shared stats).</li>
+          </ol>
+        </div>
+        <div style={{ flex: 1, minWidth: 340, background: '#fff', border: '1px solid var(--doc-line)', borderRadius: 6, padding: 24 }}>
+          <h3 style={{ margin: '0 0 12px', fontFamily: 'Instrument Serif', fontSize: 22, fontWeight: 400 }}>Open questions for you</h3>
+          <ul style={{ margin: 0, paddingLeft: 20, fontSize: 14, lineHeight: 1.7, color: '#333' }}>
+            <li>How does it feel to study with a visible <b>streak / daily goal</b>? Motivating or annoying?</li>
+            <li>When you miss a question, do you want it queued for <b>tomorrow</b> (spaced) or <b>this session</b>?</li>
+            <li>For the multi-user future — is this <b>peers at your class</b> (small, trusted) or <b>public</b> (anyone studying Salem)? That changes auth + leaderboard design a lot.</li>
+            <li>On mobile: would you ever want <b>audio / TTS</b> for article reading during a commute? I parked that feature since you didn't check it, but it's a natural fit for your phone-between-things usage.</li>
+          </ul>
+        </div>
+      </Row>
+    </Section>
+  );
+}
+
+function App() {
+  return (
+    <DocShell>
+      <IntroSection />
+      <VisualDirectionsSection />
+      <HomepageSection />
+      <PlantOverviewSection />
+      <QuizSection />
+      <MasterySection />
+      <SetpointsSection />
+      <NavigationSection />
+      <MobileSection />
+      <NextSection />
+    </DocShell>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+
+
+</script>
+</body>
+</html>
