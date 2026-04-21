@@ -27,6 +27,10 @@
   --color-mastery-weak: #f87171;
   --color-mastery-mid:  #fbbf24;
   --color-mastery-ok:   #34d399;
+
+  /* Additional accents */
+  --color-accent-purple: #a78bfa;
+  --color-accent-amber:  #fbbf24;
 }
 
 html {

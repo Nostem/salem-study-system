@@ -56,12 +56,12 @@ const systems: [number, number, number, number, string, number, string, string][
 ];
 
 const groupLabels: Record<string, [string, number, number, string]> = {
-  primary:    ['Primary',          40, 40, '#60a5fa'],
-  control:    ['Control & Instr',  380, 40, '#a78bfa'],
-  emergency:  ['Emergency',        40, 180, '#f87171'],
-  secondary:  ['Secondary',        610, 40, '#34d399'],
-  electrical: ['Electrical',       610, 180, '#fbbf24'],
-  aux:        ['Auxiliary',         40, 320, '#6b7280'],
+  primary:    ['Primary',          40, 40, 'var(--color-accent-blue)'],
+  control:    ['Control & Instr',  380, 40, 'var(--color-accent-purple)'],
+  emergency:  ['Emergency',        40, 180, 'var(--color-mastery-weak)'],
+  secondary:  ['Secondary',        610, 40, 'var(--color-mastery-ok)'],
+  electrical: ['Electrical',       610, 180, 'var(--color-accent-amber)'],
+  aux:        ['Auxiliary',         40, 320, 'var(--color-text-muted)'],
 };
 
 // Group panel widths/heights
