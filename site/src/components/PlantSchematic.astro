@@ -142,9 +142,17 @@ function masteryColor(m: number): string {
       </svg>
     </div>
 
-    <!-- Detail panel -->
-    <div id="plant-detail" class="w-[280px] min-w-[280px] bg-bg-surface border border-border rounded p-4 hidden xl:block">
+    <!-- Detail panel (desktop/laptop) -->
+    <div id="plant-detail" class="w-[280px] min-w-[280px] bg-bg-surface border border-border rounded p-4 hidden lg:block">
       <div class="text-text-muted text-xs">Hover or click a system tile</div>
+    </div>
+  </div>
+
+  <!-- Detail bottom sheet (mobile/tablet) -->
+  <div id="plant-detail-sheet" class="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-bg-surface border-t border-border rounded-t-lg p-4 translate-y-full transition-transform duration-200">
+    <button id="plant-sheet-close" class="absolute top-3 right-4 text-text-muted text-lg bg-transparent border-none cursor-pointer">&times;</button>
+    <div id="plant-sheet-content">
+      <div class="text-text-muted text-xs">Tap a system tile</div>
     </div>
   </div>
 
@@ -172,20 +180,23 @@ function masteryColor(m: number): string {
 <script>
   function initPlantSchematic() {
     const blocks = document.querySelectorAll<SVGGElement>('[data-block]');
-    const detail = document.getElementById('plant-detail');
-    if (!detail) return;
+    const panel = document.getElementById('plant-detail');
+    const sheet = document.getElementById('plant-detail-sheet');
+    const sheetContent = document.getElementById('plant-sheet-content');
+    const sheetClose = document.getElementById('plant-sheet-close');
 
-    let selected: string | null = null;
+    const isWide = () => window.matchMedia('(min-width: 1024px)').matches;
 
-    function showDetail(el: SVGGElement) {
+    function detailHTML(el: SVGGElement): string {
       const name = el.dataset.blockName || '';
       const mastery = el.dataset.blockMastery || '0';
       const slug = el.dataset.blockId || '';
       const m = parseInt(mastery);
       const colorClass = m >= 75 ? 'text-mastery-ok' : m >= 55 ? 'text-mastery-mid' : 'text-mastery-weak';
       const label = m >= 75 ? 'Mastered' : m >= 55 ? 'In progress' : 'Weak';
+      const basePath = '/salem-study-system/';
 
-      detail.innerHTML = `
+      return `
         <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase mb-1">System detail</div>
         <div class="text-text-primary text-[15px] font-semibold">${name}</div>
         <div class="mt-2 text-xs text-text-muted">
@@ -194,20 +205,37 @@ function masteryColor(m: number): string {
         <div class="h-[3px] bg-bg-card rounded mt-2">
           <div class="h-full rounded" style="width: ${mastery}%; background: ${m >= 75 ? 'var(--color-mastery-ok)' : m >= 55 ? 'var(--color-mastery-mid)' : 'var(--color-mastery-weak)'}"></div>
         </div>
-        <a href="${slug ? (document.querySelector('meta[name=base]')?.getAttribute('content') || '/salem-study-system/') + slug : '#'}"
+        <a href="${slug ? basePath + slug : '#'}"
            class="block mt-4 text-accent-blue text-xs no-underline hover:underline">
           Open article &rsaquo;
         </a>
       `;
-      detail.classList.remove('hidden');
     }
+
+    function showDetail(el: SVGGElement) {
+      if (isWide() && panel) {
+        panel.innerHTML = detailHTML(el);
+      } else if (sheetContent && sheet) {
+        sheetContent.innerHTML = detailHTML(el);
+        sheet.classList.remove('translate-y-full');
+      }
+    }
+
+    function closeSheet() {
+      sheet?.classList.add('translate-y-full');
+    }
+
+    sheetClose?.addEventListener('click', closeSheet);
 
     blocks.forEach(b => {
       b.addEventListener('mouseenter', () => {
-        if (!selected) showDetail(b);
+        if (isWide()) showDetail(b);
       });
       b.addEventListener('click', (e) => {
-        // Don't prevent link navigation — the <a> inside handles it
+        if (!isWide()) {
+          e.preventDefault();
+          showDetail(b);
+        }
       });
     });
   }
