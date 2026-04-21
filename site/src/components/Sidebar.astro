@@ -81,7 +81,12 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
 <aside id={sidebarId} data-sidebar-variant={sidebarVariant} class="sidebar w-[240px] min-w-[240px] border-r border-[#1a2035] bg-[#0b1020] geo-pattern text-xs overflow-y-auto h-[calc(100vh-48px)] sticky top-[48px]">
   <nav class="py-4">
-    <div class="px-4 py-3 border-b border-[#1a2035]">
+    <div class="px-4 py-3 border-b border-[#1a2035] flex flex-col gap-1">
+      <a href={base}
+         class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',
+                      !currentSlug || currentSlug === '_index' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
+        <span class="font-mono text-accent-teal">&#8962;</span> Home
+      </a>
       <a href={`${base}plant`}
          class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',
                       currentSlug === 'plant' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
