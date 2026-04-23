@@ -15,7 +15,7 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-REFERENCE PROVIDED<br><br>
+<span class="val-normal">REFERENCE PROVIDED</span><br><br>
 &bull; Unit 2 is at 100% Reactor Power and stable<br>
 &bull; The crew is performing S2.OP-SO.CBV-0002 (Containment Pressure - Vacuum Relief System Operation) Section 5.3, "Performing a Containment Vacuum Relief"<br>
 &bull; 2R12A (CNTMT NOBLE GAS) and 2R41D (PLANT VENT NOBLE GAS RELEASE RATE) have BOTH just failed<br><br>
