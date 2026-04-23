@@ -12,7 +12,7 @@ import HighlightToolbar from '../components/HighlightToolbar.astro';
 interface Props {
   title: string;
   category: string;
-  status: 'draft' | 'verified';
+  status: 'draft' | 'verified' | 'outdated';
   slug: string;
   headings: { depth: number; slug: string; text: string }[];
   wide?: boolean;
