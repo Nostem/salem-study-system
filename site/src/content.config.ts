@@ -6,7 +6,7 @@ const wiki = defineCollection({
   schema: z.object({
     title: z.string().optional(),
     category: z.string().optional(),
-    status: z.enum(['draft', 'verified', 'outdated']).optional().default('draft'),
+    status: z.enum(['draft', 'verified', 'outdated', 'edited']).optional().default('draft'),
     aliases: z.array(z.string()).optional().default([]),
   }),
 });

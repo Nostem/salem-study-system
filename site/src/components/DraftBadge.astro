@@ -1,6 +1,6 @@
 ---
 interface Props {
-  status: 'draft' | 'verified' | 'outdated';
+  status: 'draft' | 'verified' | 'outdated' | 'edited';
 }
 
 const { status } = Astro.props;
@@ -13,6 +13,10 @@ const { status } = Astro.props;
 ) : status === 'outdated' ? (
   <span class="text-[10px] px-2 py-0.5 bg-[#1c0a0a] text-[#f87171] rounded-[3px] font-medium">
     ⛔ OUTDATED
+  </span>
+) : status === 'edited' ? (
+  <span class="text-[10px] px-2 py-0.5 bg-[#0a1a2e] text-[#60a5fa] rounded-[3px] font-medium">
+    ✏️ EDITED
   </span>
 ) : (
   <span class="text-[10px] px-2 py-0.5 bg-[#1c1507] text-[#eab308] rounded-[3px] font-medium">
