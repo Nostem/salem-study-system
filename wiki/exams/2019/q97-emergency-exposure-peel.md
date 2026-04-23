@@ -17,7 +17,7 @@ aliases:
 <strong>Given:</strong><br>
 &bull; A General Emergency exists at Unit 2<br>
 &bull; The SM has turned over Emergency Coordinator duties to the EDO<br><br>
-In accordance with NC.EP-EP.ZZ-0304 (OPERATIONAL SUPPORT CENTER (OSC) RADIATION PROTECTION RESPONSE), which ONE of the following completes the statements below?<br><br>
+In accordance with <span class="hi">NC.EP-EP.ZZ-0304</span> (OPERATIONAL SUPPORT CENTER (OSC) RADIATION PROTECTION RESPONSE), which ONE of the following completes the statements below?<br><br>
 The Planned Emergency Exposure Limit (PEEL) for life saving is <span class="blank">_(1)_</span> REM.<br><br>
 The EDO <span class="blank">_(2)_</span> can approve the emergency exposure.
 </div>
