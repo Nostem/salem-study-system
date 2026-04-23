@@ -536,6 +536,7 @@ questions:
     ka_importance: 2.6
     type: RO
     tier_group: "Tier 1/Group 1"
+    status: outdated
   - number: 50
     topic: "PZR safety valve leak — charging response and OT Delta-T trip"
     answer: A
@@ -1190,6 +1191,7 @@ questions:
     ka_importance: 3.8
     type: RO
     tier_group: "Tier 1/Group 1"
+    status: edited
 
   - number: 57
     topic: "SGFP Trip Below P-10 and AFW Pump Start"
