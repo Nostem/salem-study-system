@@ -1,7 +1,7 @@
 ---
 title: "2019 Q85 — Natural Circulation RVLIS Cooldown Rate"
 category: exams
-status: edited
+status: outdated
 type: SRO
 aliases:
   - 2019 Q85
@@ -10,7 +10,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q85 — Natural Circulation RVLIS Cooldown Rate [EDITED]</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q85 — Natural Circulation RVLIS Cooldown Rate [OUTDATED]</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">WE10 Nat Circ with Steam Void - G2.4.46 (4.2)</span>
 </div>
 
