@@ -15,7 +15,7 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-REFERENCE PROVIDED<br><br>
+<span class="val-normal">REFERENCE PROVIDED</span><br><br>
 At time 08:00<br>
 &bull; The Shift Manager has declared a SITE AREA EMERGENCY per FB1.L and RB1.L, "Loss of the Fuel Clad Barrier and Loss of Reactor Coolant System Barrier"<br><br>
 At time 08:45<br>
