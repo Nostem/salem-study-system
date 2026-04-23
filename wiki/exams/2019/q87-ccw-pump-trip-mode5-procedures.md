@@ -20,7 +20,7 @@ aliases:
 &bull; ALL CCW Pumps are in service<br><br>
 At time 17:00<br>
 &bull; The NCO observes the following indications:<br>
-(= lights are illuminated)<br><br>
+(CCW Lo HDR PRESS ALARM 21 & 22, 22 & 23 CCW Pumps Tripped)<br><br>
 Which ONE of the following completes the statement below?<br><br>
 The crew will perform ___
 </div>
