@@ -15,7 +15,7 @@ aliases:
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
-REFERENCE PROVIDED<br><br>
+<span class="val-normal">REFERENCE PROVIDED</span><br><br>
 &bull; The crew is performing 1-EOP-LOCA-1 (LOSS OF REACTOR COOLANT) Step 24, "Containment Hydrogen Concentration Verification"<br>
 &bull; Containment Hydrogen concentration is 0.7%<br><br>
 In accordance with 1-EOP-LOCA-1, which ONE of the following completes the statement below?<br><br>
