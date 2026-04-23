@@ -34,7 +34,7 @@ Component Configuration Control (OP-AA-108-101-1002): for a <span class="hi-exam
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q98</div>
-IV waiver for Locked High Radiation Areas: per OP-AA-108-101-1002, the Shift Manager <span class="hi-exam">IS permitted</span> to waive a "Hands On" independent verification of a manual gate valve located inside a Locked High Radiation Area when the estimated dose is <span class="hi-exam">15 mrem</span>.
+IV waiver for Locked High Radiation Areas: per OP-AA-108-101-1002, the Shift Manager <span class="hi-exam">IS permitted</span> to waive a "Hands On" independent verification of a manual gate valve located inside a Locked High Radiation Area when the estimated dose is <span class="hi-exam"> greater than 10 mrem</span>.
 </div>
 
 ## Connections
