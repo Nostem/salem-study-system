@@ -15,7 +15,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>REFERENCES PROVIDED</strong><br><br>
+<strong><span class="val-normal">REFERENCES PROVIDED</span></strong><br><br>
 <strong>Given:</strong><br>
 &bull; Unit 2 has entered MODE 3 for a planned refueling outage on October 15 at 0700<br><br>
 On October 17 at 0700<br>
