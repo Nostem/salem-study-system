@@ -20,7 +20,7 @@ At time 17:55<br>
 &bull; An LCO 3.4.5 (RELIEF VALVES) REQUIRED ACTION has been entered due to a failure of the 2PR2 (PZR PORV) control circuitry.<br>
 &bull; 2PR7 (PZR PORV BLOCK VALVE) will be closed to comply with LCO 3.4.5 (RELIEF VALVES) REQUIRED ACTION B<br><br>
 Which ONE of the following completes the statement below?<br><br>
-In accordance with LCO 3.4.5 and after 2PR7 has been closed, power will be <span class="blank">_(1)_</span> to 2PR7 and in accordance with OP-AA-108-101-1002 (COMPONENT CONFIGURATION CONTROL), configuration control will be INITIALLY maintained with a(n) <span class="blank">_(2)_</span>.
+In accordance with LCO 3.4.5 and after 2PR7 has been closed, power will be <span class="blank">_(1)_</span> to 2PR7 and in accordance with <span class="hi">OP-AA-108-101-1002 (COMPONENT CONFIGURATION CONTROL)</span>, configuration control will be INITIALLY maintained with a(n) <span class="blank">_(2)_</span>.
 </div>
 
 <div style="margin-bottom:14px;">
