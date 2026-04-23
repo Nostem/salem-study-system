@@ -1,7 +1,7 @@
 ---
-title: "2019 Q49 — EOP-TRIP-1 Immediate Actions"
+title: "2019 Q49 — EOP-TRIP-1 Immediate Actions [OUTDATED]"
 category: exams
-status: draft
+status: outdated
 aliases:
   - 2019 Q49
   - 2019-Q49
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q49 — EOP-TRIP-1 Immediate Actions</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q49 — EOP-TRIP-1 Immediate Actions [OUTDATED]</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">EPE: 007 EK2.02 (2.6)</span>
 </div>
 
