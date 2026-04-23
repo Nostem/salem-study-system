@@ -138,5 +138,5 @@ PZR pressure channel 1 fails high causing both spray valves to open fully and ra
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
 - Related exam questions: [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]]
-- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

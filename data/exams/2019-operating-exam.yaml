@@ -1,0 +1,371 @@
+exam: 2019
+type: operating
+ilot_class: "17-01"
+
+jpms:
+  - id: "RO-A1"
+    title: "Determine Maximum Vent Time in EOP-FRCI-3"
+    type: Admin-RO
+    location: Classroom
+    procedure: "2-EOP-FRCI-3"
+    pages: "2-11"
+    ka: "G2.1.25"
+    ka_importance_ro: 3.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1150880502"
+
+  - id: "RO-A2"
+    title: "Perform Borated Water Source Surveillance"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-ST.CVC-0010"
+    pages: "12-20"
+    ka: "G2.2.37"
+    ka_importance_ro: 3.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0040420201"
+
+  - id: "RO-A3"
+    title: "Determine Personnel Exposure and Special Requirements"
+    type: Admin-RO
+    location: Classroom
+    procedure: "RP-AA-460"
+    pages: "21-30"
+    ka: "G2.3.4"
+    ka_importance_ro: 3.2
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1200100104"
+
+  - id: "RO-A4"
+    title: "Perform Duties as Primary Communicator IAW EP-SA-111-F6"
+    type: Admin-RO
+    location: Classroom
+    procedure: "EP-SA-111-F6"
+    pages: "31-45"
+    ka: "G2.4.43"
+    ka_importance_ro: 3.2
+    applicability: RO/SRO
+    time_critical: true
+    time_limit_minutes: 15
+    alternate_path: true
+    source: New
+    task_number: "N1240110501"
+
+  - id: "SRO-A1"
+    title: "Determine Which ECCS Pumps Can Be Stopped"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "2-EOP-LOCA-5"
+    pages: "46-54"
+    ka: "G2.1.7"
+    ka_importance_sro: 4.7
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1150680502"
+
+  - id: "SRO-A2"
+    title: "Determine Heat Stress Requirements for Containment Entry"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "SA-AA-111"
+    pages: "55-70"
+    ka: "G2.1.26"
+    ka_importance_sro: 3.6
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1220400302"
+
+  - id: "SRO-A3"
+    title: "Determine Technical Specification Action for Inoperable Component"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S1.OP-SO.DG-0005"
+    pages: "71-78"
+    ka: "G2.2.40"
+    ka_importance_sro: 4.7
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "112670302"
+
+  - id: "SRO-A4"
+    title: "Determine Personnel Exposure and Authorization for Entry"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "RP-AA-460"
+    pages: "79-89"
+    ka: "G2.3.4"
+    ka_importance_sro: 3.7
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1200100104"
+
+  - id: "SRO-A5"
+    title: "Classify an Event and Complete ICMF IAW EP-SA-111-101"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "EP-SA-111-101"
+    pages: "90-100"
+    ka: "G2.4.41"
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: true
+    time_limit_minutes: 15
+    alternate_path: false
+    source: New
+    task_number: "1240020502"
+
+  - id: "Sim-a"
+    title: "Respond to Loss of All Control Rod Drive Vent Fans"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AR.ZZ-0011"
+    pages: "101-112"
+    ka: "001 A2.01"
+    ka_importance_ro: 3.1
+    ka_importance_sro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "0220040101"
+
+  - id: "Sim-b"
+    title: "Transfer To Hot Leg Recirculation IAW EOP-LOCA-4"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-LOCA-4"
+    pages: "113-123"
+    ka: "006 A4.05"
+    ka_importance_ro: 3.9
+    ka_importance_sro: 3.8
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1150110501"
+
+  - id: "Sim-c"
+    title: "Respond to Spray Valve Failing to Close during RCS Depressurization"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-SGTR-1"
+    pages: "124-132"
+    ka: "010 A2.02"
+    ka_importance_ro: 3.9
+    ka_importance_sro: 3.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N1150190501"
+
+  - id: "Sim-d"
+    title: "Initiate Feed and Bleed using Reactor Head Vents IAW EOP-FRHS-1"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-FRHS-1"
+    pages: "133-141"
+    ka: "002 A2.04"
+    ka_importance_ro: 4.3
+    ka_importance_sro: 4.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "N1150290501"
+
+  - id: "Sim-e"
+    title: "Perform Retest on a Main Turbine Stop Valve IAW S2.OP-PT.TRB-0003"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-PT.TRB-0003"
+    pages: "142-153"
+    ka: "045 A4.01"
+    ka_importance_ro: 3.1
+    applicability: RO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N0450130201"
+
+  - id: "Sim-f"
+    title: "Perform 22 CFCU Surveillance Test IAW S2.OP-ST.CBV-0003"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-ST.CBV-0003"
+    pages: "154-165"
+    ka: "022 A1.04"
+    ka_importance_ro: 3.2
+    ka_importance_sro: 3.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0220130201"
+
+  - id: "Sim-g"
+    title: "Start and Load an EDG During Loss of All Off-Site Power"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-LOPA-1"
+    pages: "166-175"
+    ka: "064 A4.06"
+    ka_importance_ro: 3.9
+    ka_importance_sro: 3.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0640010101"
+
+  - id: "Sim-h"
+    title: "Respond to CCW Leak Inside Containment IAW S2.OP-AB.CC-0001"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AB.CC-0001"
+    pages: "176-191"
+    ka: "008 A2.02"
+    ka_importance_ro: 3.2
+    ka_importance_sro: 3.5
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Modified
+    task_number: "N1140080401"
+
+  - id: "IP-i"
+    title: "Locally Borate the RCS"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S1.OP-AB.CR-0001"
+    pages: "192-209"
+    ka: "004 A4.18"
+    ka_importance_ro: 4.3
+    ka_importance_sro: 4.1
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N1130140504"
+
+  - id: "IP-j"
+    title: "Startup and Parallel a RDMG Set"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S1.OP-SO.RCS-0001"
+    pages: "210-219"
+    ka: "012 A4.07"
+    ka_importance_ro: 3.9
+    ka_importance_sro: 3.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0015010104"
+
+  - id: "IP-k"
+    title: "Conduct an Authorized Waste Gas Release"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S2.OP-SO.WG-0009"
+    pages: "220-233"
+    ka: "071 A4.26"
+    ka_importance_ro: 3.1
+    ka_importance_sro: 3.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0715070104"
+
+scenarios:
+  - number: 1
+    title: "Power Ascension / LOCA Outside Containment"
+    esg: "ESG-1"
+    nrc_id: "NRC-1"
+    pages: "234-270"
+    num_events: 7
+    num_critical_tasks: 2
+    initial_conditions: "IC-256: 4% power, BOL"
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-TRIP-2
+      - EOP-LOCA-6
+      - EOP-LOCA-1
+      - EOP-TRIP-3
+    abnormals_entered:
+      - AB.PZR-0001
+      - AB.CHEM-0001
+      - AB.CW-0001
+      - AB.RCP-0001
+    critical_tasks:
+      - id: "CT-2"
+        description: "Manually actuate SI before transition out of EOP-TRIP-1"
+        time_critical: false
+      - id: "CT-32"
+        description: "Isolate LOCA outside containment before transition out of EOP-LOCA-6"
+        time_critical: false
+
+  - number: 3
+    title: "ATWS / Stuck-Open PORV"
+    esg: "ESG-3"
+    nrc_id: "NRC-3"
+    pages: "271-305"
+    num_events: 8
+    num_critical_tasks: 2
+    initial_conditions: "IC-258: 89.5% power, MOL"
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-FRSM-1
+      - EOP-TRIP-2
+    abnormals_entered:
+      - AB.COND-0001
+      - AB.LOAD-0001
+    critical_tasks:
+      - id: "CT-52"
+        description: "Insert negative reactivity into the core prior to dispatching operators to locally trip the reactor"
+        time_critical: false
+      - id: "CT-10"
+        description: "Close PZR PORV block valve by completion of Step 9 of TRIP-2"
+        time_critical: false
+
+  - number: 4
+    title: "SGFP Trip / Loss of Heat Sink"
+    esg: "ESG-5"
+    nrc_id: "NRC-4"
+    pages: "306-346"
+    num_events: 6
+    num_critical_tasks: 2
+    initial_conditions: "IC-260: 88% power, MOL"
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-TRIP-2
+      - EOP-FRHS-1
+    abnormals_entered:
+      - AB.PZR-0001
+      - AB.NIS-0001
+      - AB.CN-0001
+    critical_tasks:
+      - id: "CT-1"
+        description: "Trip the reactor prior to a transition to FRSM-1 being required"
+        time_critical: false
+      - id: "CT-43"
+        description: "Establish main feedwater flow to SGs before bleed and feed is required"
+        time_critical: false

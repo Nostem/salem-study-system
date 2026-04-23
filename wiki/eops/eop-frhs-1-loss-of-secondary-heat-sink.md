@@ -26,6 +26,11 @@ Steps 11-14 Bleed and Feed: actuate both trains SI → verify charging and SI pu
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-d</div>
+Nearly identical to 2023 Sim-d. Steps 21-24 Bleed and Feed: CAUTION — Steps 24 thru 29 must be performed quickly and without interruption. Stop all RCPs (already stopped at Step 7). <span class="hi-exam">Initiate SI</span> on both trains. Verify charging and SI pump flow, BIT flow established (~235 gpm), Table C valves open. Open both PZR PORV stop valves (2PR6, 2PR7). Open both PORVs in Manual — <span class="hi-exam">2PR2 fails to open</span> (alternate path). At 2RP2 backpanel, use four keys to <span class="hi-exam">open 2RC40 through 2RC43 reactor head vent valves</span>. Bleed and Feed criteria: <span class="hi-exam">3 SG wide range levels < 20%</span>.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 Sim-e</div>
 Steps 7.2-7.5 condensate pump feed: select one SG (22 or 24 preferred — <span class="hi-exam">21 and 23 steamed LAST to preserve TD AFW pump steam supply</span>). Isolate all MS lines except selected SG. Depressurize below <span class="hi-exam">575 psig</span> using steam dumps. Bypass <span class="hi-exam">Tavg Low-Low</span> when reached. Establish condensate flow, verify WR level rising, then place steam dumps in auto.
 </div>
@@ -60,11 +65,16 @@ Step 3: "IS RCS PRESSURE GREATER THAN ANY INTACT OR RUPTURED SG PRESSURE?" — I
 Entered from EOP-TRIP-1 when all AFW lost: no SG NR levels >9% (15% adverse), total AFW flow <22E4 lbm/hr. Bleed and feed criteria: <span class="hi-exam">3 SG wide range levels <20% (25% adverse)</span>. Recovery via condensate: close all GB4s, close all SS94s, stop all RCPs. Select ONE SG for depressurization to <span class="hi-exam"><575 psig</span>. Caution note: <span class="hi-exam">steam 21 and 23 SGs last to maximize 23 AFW pump steam supply availability</span>. Depressurize using steam dumps (MS Pressure Control) or MS10s. Locally open selected SG BF40 or BF19 (120 ft TGA). Open BF13, open CN48s (SGFP bypass valves), close CN32s (SGFP suction valves). <span class="hi-exam">CT-43: establish condensate feed flow before bleed and feed is required.</span> Condensate flow established when SG pressure ~600 psig. WR level rising confirms feed flow (took ~6 min in validation after condensate flow started at 5-6%).
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #4</div>
+Loss of all AFW following Main Turbine trip: 21 AFW pump C/T, 22 AFW pump lost with <span class="hi-exam">2B 4KV Vital Bus</span>, 23 AFW pump trips on <span class="hi-exam">overspeed</span> shortly after manual start. Crew validates CFST RED path on Heat Sink (SG NR levels <9%, AFW flow <22E4 lbm/hr). In FRHS-1, crew performs <span class="hi-exam">Prompt SGFP Recovery</span> using 22 SGFP IAW S2.OP-SO.CN-0007: reset SGFP trips, relatch 22 SGFP, raise speed to 3960-3980 rpm, verify DP >50 psid, feed SGs via BF19/BF40. <span class="hi-exam">CT-43: Establish main feedwater flow to SGs before bleed and feed is required.</span> Scenario terminates when main feed flow established and SG WR levels rising.
+</div>
+
 ## Connections
 
-- Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]]
+- Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related exam questions: [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
-- Related JPMs: [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
+- Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

@@ -51,10 +51,15 @@ AB.COND-0001 CAS actions based on reactor power relative to P-9: at <span class=
 CAS reactor trip criteria: if the turbine load reduction rate needs to increase to a MINIMUM of <span class="hi-exam val-trip">5 % / min</span> to stabilize condenser backpressure, the crew is REQUIRED to TRIP the Reactor. <span class="hi-trap">All distractors (15, 10, 7.5 %/min) are plausible because load reductions up to 15%/min are within the capability of rod control and steam dumps — but the CAS-directed trip threshold is specifically 5%/min.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #3</div>
+Loss of Main Condenser vacuum at ~89% power due to missing tube plug in 21A waterbox during cleaning (Event 4). Rising condenser backpressure — crew starts <span class="hi-exam">all available vacuum pumps</span> and manually opens AR25 valves. Vacuum stabilizes then continues to degrade. CRS enters AB.LOAD-0001 and directs <span class="hi-exam">load reduction</span> to stabilize backpressure. Field report of missing tube plug — backpressure recovers after plug reinstalled.
+</div>
+
 ## Connections
 
 - Related systems: [[Condenser Air Removal]], [[Main Turbine]]
-- Related procedures: [[AB.TRB-0001 — Main Turbine Abnormality]]
+- Related procedures: [[AB.TRB-0001 — Main Turbine Abnormality]], [[AB.LOAD-0001 — Rapid Load Reduction]]
 - Related exam questions: [[2019 Q70]], [[2019 Q92]]
-- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

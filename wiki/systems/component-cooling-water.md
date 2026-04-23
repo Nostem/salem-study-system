@@ -121,7 +121,13 @@ CC131 (RCP Thermal Barrier Valve) auto-closure setpoints: <span class="hi-exam">
 SFP Heat Exchanger tube rupture: components supplied by CCW with pressure less than CCW header pressure are sources for system-to-system out leakage. <span class="hi-exam">A tube rupture in the SFP HX results in CCW leaking OUT into the SFP system</span> — CCW Surge Tank level lowers, SFP level rises. Non-borated CCW reduces SFP boron concentration, requiring addition of borated water. SFP alarms: low level <span class="val-alarm">128' 2"</span>, high level <span class="val-alarm">129' 2"</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-h</div>
+CCW leak inside containment per S2.OP-AB.CC-0001 (alternate path JPM): initial CCW leak causes <span class="hi-exam">OHA C-2 CNTMT SUMP PMP START</span> and <span class="hi-exam">CCW Surge Tank Level Hi-Lo</span> console alarm. Operator initiates makeup via <span class="hi-exam">2DR107</span>. After isolating Excess Letdown HX valves (2CV132, 2CC215, 2CC113), leak worsens beyond makeup capacity — Attachment 2 directs <span class="hi-exam">reactor trip, stop ALL RCPs, and close CCW containment isolation valves</span> (2CC131, 2CC136, 2CC190). <span class="hi-exam">Step 3.24 is the decision point: Surge Tank level cannot be maintained >5% with makeup in progress.</span>
+</div>
+
 ## Connections
 
 - Related exam questions: [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2019 JPM Sim-h]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]]

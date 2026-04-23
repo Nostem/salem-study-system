@@ -17,7 +17,7 @@ aliases:
 - **Admin JPMs (SRO):** 5
 - **Simulator JPMs:** 8
 - **In-Plant JPMs:** 3
-- **Simulator Scenarios:** 5 (3 scenario guides in final package)
+- **Simulator Scenarios:** 3 (NRC-1/ESG-1, NRC-3/ESG-3, NRC-4/ESG-5)
 
 <a href="/salem-study-system/exam-pdfs/2019-operating.pdf" target="_blank">View Operating Test PDF</a>
 

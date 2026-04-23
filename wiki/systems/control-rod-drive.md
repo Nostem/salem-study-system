@@ -103,15 +103,27 @@ Rod control surveillance (S2.OP-ST.RCS-0001): insert Control Bank D <span class=
 AB.ROD-0003 (Continuous Rod Motion) entry conditions: rods <span class="hi-exam">withdraw OR insert a MINIMUM of 3 steps</span> at steady state. <span class="hi-trap">Process noise can cause up to 2 steps of rod motion — this is normal and does NOT warrant AB.ROD-0003 entry.</span>
 </div>
 
+## CRDM Vent Fans
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-a</div>
+Loss of all CRD Vent Fans (alternate path JPM): 21 CRD Vent Fan damper fails causing <span class="hi-exam">AIR FLOW LO alarm and SEQUENCE COMPLETE bezel extinguished</span> on 2CC1 console. ARP S2.OP-AR.ZZ-0011 page 13 directs swapping to standby fan. After standby fan starts, both remaining running fans trip within seconds. With <span class="hi-exam">NO CRDM Vent Fans in operation, ARP step 3.2.D directs TRIP the Reactor</span>. Operating with less than two Rod Drive Vent Fans could degrade the Rod Drive Coils. <span class="hi-trap">Step 3.2.D was initially marked N/A when the standby started — it becomes applicable when all fans trip. The operator must re-evaluate and trip the reactor.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 IP-j</div>
+Startup and parallel 11 RDMG set per S1.OP-SO.RCS-0001 Section 5.4 (same task as 2023 JPM IP-j using Section 4.4 — procedure was revised between exams). Key values: running set <span class="hi-exam">GENERATOR LINE VOLTS 260V (247V-273V), GENERATOR LINE AMPS ~80 DC AMPS</span>. VOLTAGE ADJUST range check: <span class="hi-exam">~220V (LOW) to ~300V (HIGH)</span>. DMM readings at back of installed voltmeter are <span class="hi-exam">approximately half</span> of meter face readings (~130V). Must adjust incoming set voltage <span class="hi-exam">0-2.5V higher than running set</span> on DMM before paralleling.
+</div>
 
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam questions: [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
-- Related JPMs: [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

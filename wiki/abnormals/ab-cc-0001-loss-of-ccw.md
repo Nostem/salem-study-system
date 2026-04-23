@@ -66,9 +66,15 @@ Per Step 3.8 NOTE: <span class="hi-exam">"Allowing CCW Surge Tank to overflow wi
 CCW pump trips in MODE 5 (RCS at Water Elevation 103.5 feet): when 22 and 23 CCW Pumps trip causing CC Header Low Pressure alarms, the abnormal procedures network requires <span class="hi-exam">concurrent performance of AB.CC-0001 AND AB.RHR-0001</span> (not AB.RHR-0002). <span class="hi-trap">Trap: AB.RHR-0002 (Loss of RHR at Reduced Inventory) would apply only if RCS Water Elevation is 101 feet or less. At 103.5 feet the plant is NOT at reduced inventory, so AB.RHR-0001 applies.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-h</div>
+Alternate path JPM: CCW leak inside containment progresses beyond makeup capability. Operator enters AB.CC-0001, opens <span class="hi-exam">2DR107 for CCW Surge Tank makeup</span>, progresses through leak isolation steps (close <span class="hi-exam">2CC113 Exc LHX Outlet</span>). At step 3.24, when CCW Surge Tank level cannot be maintained >5%: transition to <span class="hi-exam">Attachment 2 — Stop RCPs and Isolate CCW to CNTMT</span>. Attachment 2 actions: trip reactor, stop ALL RCPs, close <span class="hi-exam">2CC131 (RCP Therm Bar), 2CC136 (RCP CLG OIL CLR Outlet), 2CC190</span> containment isolation valves, then GO TO EOP-TRIP-1.
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[RCPs]], [[RHR]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
 - Related exam questions: [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related JPMs: [[2019 JPM Sim-h]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]]

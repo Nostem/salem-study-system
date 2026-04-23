@@ -40,10 +40,20 @@ PORV fails open, cannot close in manual: <span class="hi-exam">next required act
 PZR pressure channel 1 fails high → MPC drives both spray valves fully open. Operator takes MPC to manual and lowers demand. <span class="hi-exam">Alternate path: 2PS1 fails to close when MPC demand zeroed</span>. Procedure path: Step 3.3 YES (controlling channel failed) → 3.5 MPC to MANUAL → 3.6 adjust per Attachment 2 → 3.17 spray valve(s) failed YES → <span class="hi-exam">3.18 place 2PS1 in MANUAL → 3.19 close 2PS1</span>. CAS: if RCS pressure drops to <span class="val-trip">2000 psig</span> and continues to drop → trip reactor and stop <span class="hi-exam">21 and 23 RCPs</span>.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #1</div>
+PZR Pressure Channel I fails high at 4% power (Event 2). RO places MPC in Manual, restores pressure by selecting Channel III, returns MPC to Auto. CRS enters TSAS for <span class="hi-exam">3.3.3.1 Action 6, 3.3.2.1 Action b.19, 3.4.5 Action b (1 hour), and 3.2.5.b (2 hour if RCS < 2200 psia)</span>. RO places 2PR1 in Manual and closes <span class="hi-exam">2PR6 Block Valve</span>. WCC removes control power to 2PR6.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #4</div>
+2PR2 PORV leaks at 88% power (Event 1). Crew recognizes from elevated PORV tailpipe temperatures. Isolates by opening both block valves sequentially: 2PR6 tailpipe temps stable, 2PR7 tailpipe temps rising → <span class="hi-exam">close 2PR7 to isolate 2PR2</span>. CRS enters TSAS <span class="hi-exam">3.4.5 Action a (1 hour LCO)</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[RPS/SSPS]]
 - Related exam questions: [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
 - Related JPMs: [[2020 JPM Sim-a]]
-- Related scenarios: [[2022 Scenario 4]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]]
+- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

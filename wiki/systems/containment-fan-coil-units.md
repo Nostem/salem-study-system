@@ -143,10 +143,15 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 25 CFCU trips in low speed on overcurrent protection (low speed breaker open, overcurrent flag up at 84 ft switchgear room). CRS directs starting 23 CFCU in high speed. TS entries: <span class="hi-exam">TS 3.6.2.3 Action a (14 days)</span> and <span class="hi-exam">TS 3.6.1.1 (1 hour containment integrity until control power removed)</span>. CRS directs WCC to open control power for 25 CFCU high and low speed breakers to satisfy containment integrity requirements.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-f</div>
+22 CFCU surveillance test IAW S2.OP-ST.CBV-0003. Shift from high speed to low speed using S2.OP-SO.CBV-0001 (HIGH SPEED STOP → wait <span class="hi-exam">25 seconds</span> → LOW SPEED START). After 15 minutes, record SW flow (~<span class="hi-exam">1787 gpm</span>) and SW header DP (<span class="hi-exam">106 psi</span>). Per P&L 3.4, measured DP of 106 psi rounds up to next higher value (<span class="hi-exam">110 psid = 1811 gpm minimum</span>). Actual flow less than minimum → <span class="hi-exam">test result UNSAT, 22 CFCU inoperable</span>. P&L 3.3: both >= 1465 gpm AND >= Exhibit 1 minimum required for operability.
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related exam questions: [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
-- Related JPMs: [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]]
+- Related JPMs: [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]]
 - Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

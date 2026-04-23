@@ -49,10 +49,15 @@ PZR Level Channel 1 fails low — letdown isolates. RO takes manual control of c
 VCT level channel 2LT-114 fails high — 2CV35 diverts to CVCS HUT, VCT level lowers. RO takes manual control of 2CV35 and positions to VCT. CRS directs maintaining VCT level by cycling 2CV35 or initiating manual makeup IAW S2.OP-SO.CVC-0006.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 SRO-A3</div>
+12 Charging pump trips at 0700 while 1B EDG is CIT. Crew enters S1.OP-AB.CVC-0001, starts 13 Charging pump, restores letdown and PZR level. The CRS must then evaluate TS impact: <span class="hi-exam">TS 3.5.2.a action a (72 hours)</span> for the inoperable ECCS subsystem (12 Charging pump), AND <span class="hi-exam">TS 3.8.1.1 action b.2 (4 hours)</span> because the 12 Charging pump is a redundant required feature of the CIT 1B EDG.
+</div>
+
 ## Connections
 
-- Related systems: [[CVCS]]
+- Related systems: [[CVCS]], [[EDGs]]
 - Related exam questions: [[2020 Q77]], [[2020 Q91]], [[2022 Q6]]
-- Related JPMs: [[2022 JPM Sim-b]]
+- Related JPMs: [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

@@ -162,6 +162,11 @@ b. RWST per Specification 3.5.5
 Post-boration TS evaluation: with RWST at 2350 ppm and BAST at 6650 ppm, <span class="hi-exam">TS 3.1.2.6 Figure 3.1-2 requires combined BAST level > 96.5%</span>. After rapid boration for 3 stuck rods (4200 gal total), BASTs drop from 70% to 43% each (86% combined) — below required level. <span class="hi-exam">LCO 3.1.2.6.a.1 NOT met: restore boric acid storage system within 72 hours or Hot Standby in 6 hours.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 RO-A2</div>
+Borated Water Sources surveillance (S2.OP-ST.CVC-0010): combined BAST level <span class="hi-exam">48% + 48% = 96%</span>. Per Figure 3.1-2 at 6650 ppm boron, required level is <span class="hi-exam">&gt;96.5%</span> — UNSAT by narrow margin. Similarly, BAST concentration of <span class="hi-exam">6650 ppm at 96% level requires ~6675 ppm</span> from Figure 3.1-2 — also UNSAT. Narrow margins designed to test precise figure reading.
+</div>
+
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
@@ -175,5 +180,5 @@ Key distinction: loss of one centrifugal charging pump (21 CHP trips, 22 and 23 
 
 - Related systems: [[CVCS]], [[ECCS]]
 - Related exam questions: [[2020 Q77]]
-- Related JPMs: [[2022 JPM SRO-A2]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2019 JPM RO-A2]], [[2022 JPM SRO-A2]]
+- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]

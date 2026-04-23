@@ -271,4 +271,5 @@ EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free vol
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related exam questions: [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
-- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

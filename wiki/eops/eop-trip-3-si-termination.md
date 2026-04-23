@@ -45,5 +45,5 @@ Entered from EOP-LOSC-1 following feedwater line break isolation. RO resets SI, 
 - Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]], [[RHR]], [[CVCS]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
 - Related exam questions: [[2020 Q25]], [[2023 Q38]], [[2023 Q23]], [[2023 Q76]]
-- Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]

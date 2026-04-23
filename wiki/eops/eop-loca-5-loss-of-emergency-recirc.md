@@ -26,6 +26,11 @@ Step 23 — during RCS depressurization, upper head voiding IS expected with no 
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 SRO-A1</div>
+Step 19.2 minimum ECCS flow from Figure A: at <span class="hi-exam">50 minutes</span> post-trip (0550 - 0500 = 50 min), minimum flow is <span class="hi-exam">390 gpm (+/- 10 gpm)</span>. With 21 SI Pump at 420 gpm and 22 Charging Pump at 360 gpm: <span class="hi-exam">22 Charging pump CAN be stopped</span> (360 gpm alone &lt; 390 gpm minimum), but <span class="hi-exam">21 SI pump must remain</span> (420 gpm alone &gt; 390 gpm minimum). Contrast with 2023 SRO-A1.a where neither pump could be stopped.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 SRO-A1.a</div>
 Step 16.1 minimum ECCS flow from Figure 1: at <span class="hi-exam">100 minutes</span> post-trip, minimum flow is <span class="hi-exam">290 gpm (acceptable band 280-320 gpm)</span>. With 21 SI Pump at 160 gpm and 22 Charging Pump at 220 gpm, <span class="hi-exam">NONE can be stopped</span> — neither alone meets the 290 gpm minimum. Both must remain in service (combined 380 gpm).
 </div>
@@ -64,6 +69,6 @@ LOCA-5 mitigation strategies include: (1) Run all CFCUs in high speed, (2) Minim
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
 - Related exam questions: [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
-- Related JPMs: [[2023 JPM SRO-A1.a]]
+- Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

@@ -244,6 +244,11 @@ EOP-LOCA-4 hot leg recirculation: realign 21 SI pump from cold leg to hot leg in
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-b</div>
+EOP-LOCA-4 hot leg recirc with two alternate paths: (1) <span class="hi-exam">21SJ45 CLOSED for 21 RHR pump maintenance</span> — RHR-to-SI cross-connect unavailable; (2) <span class="hi-exam">22 SI pump tripped during LOCA-3</span> — must use 21 SI pump via Step 6.1. Starts in EOP-LOCA-1 Step 27: close 21/22 SJ40, remove lockouts, verify Valve Operable backlights. LOCA-4 alignment: CLOSE 22CS36 (RHR supply to CS) → OPEN 22SJ49 (cold leg isolation) → realign 21 SI pump for hot leg injection.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 Sim-c</div>
 EOP-LOCA-1 Step 14 accumulator isolation: when at least two RCS T-Hots < <span class="hi-exam">405F</span>, remove lockout and close 21-24 SJ54. If <span class="hi-exam">24SJ54 fails to close</span> (alternate path), vent the unisolated accumulator: open <span class="hi-exam">2NT35 (N2 HDR Valve)</span> and <span class="hi-exam">24SJ93 (N2 Supply Valve)</span> to depressurize the accumulator to zero.
 </div>
@@ -263,11 +268,16 @@ ECCS subsystem composition: each of the two independent ECCS subsystems includes
 SI Accumulator makeup using 21 SI Pump (S2.OP-SO.SJ-0002 Section 5.2): prerequisite <span class="hi-exam">ALL RCS Cold Leg Temps >312°F</span>. Start 21 SI Pump → open <span class="hi-exam">2SJ53 (discharge test line)</span> → open <span class="hi-exam">2SJ123 (test line to CVCS HUT)</span> → open <span class="hi-exam">21SJ20 (accumulator fill)</span>. Close 21SJ20 when level reaches <span class="hi-exam">60%</span>. CAUTION: do NOT cross-tie accumulators while OPERABILITY required. If RCS pressure &lt;2000 psig, must close <span class="hi-exam">21SJ134 (Cold Leg Discharge)</span> first — may require TSAS 3.5.2 entry.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 SRO-A1</div>
+EOP-LOCA-5 Figure A — Minimum ECCS Flow Versus Time After Trip: at <span class="hi-exam">50 minutes</span> post-trip, minimum flow = <span class="hi-exam">390 gpm</span>. With 21 SI pump at 420 gpm and 22 Charging pump at 360 gpm: <span class="hi-exam">stop 22 Charging pump</span> (360 &lt; 390, cannot meet minimum alone), <span class="hi-exam">keep 21 SI pump</span> (420 &gt; 390, exceeds minimum alone). Contrast 2023 SRO-A1.a at 100 min (290 gpm minimum) where neither pump could be stopped.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
 - Related exam questions: [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
-- Related JPMs: [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
-- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -83,10 +83,17 @@ Unit 1 Control Room Evacuation, Attachment 5 (locally open reactor trip breakers
 Per AB.CR-0001, after CR evacuation with no damage to the plant: the SM directs SI to be defeated by <span class="hi-exam">opening vital instrument bus breakers to de-energize SSPS and the SEC cabinets per Attachment 7 (#1 NEO)</span>. This is a local action performed by the #1 NEO, not from the control room. <span class="hi-trap">Trap: inserting a P-11 jumper or placing SEC Block switches in Block are control room actions — these would not be performed after evacuation. The SEC Block switches and P-11 jumper are Attachment 5 (Reactor Operator) actions, but de-energizing SSPS and SECs via vital instrument bus breakers is Attachment 7 (#1 NEO) and is the method for defeating SI after evacuation.</span>
 </div>
 
+### Attachment 5 — Emergency Boration for Stuck Rods
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 IP-i</div>
+Unit 1 Control Room Evacuation, Attachment 5 Step 10.0 — Emergency Boration for stuck control rods: close <span class="hi-exam">11CV160 and 12CV160 air supply isolation valves</span> (Cont Air Redundant Air Supply Wall Mntd Pnl 701-1A and 701-1B, El 122 ft near Boric Acid Storage Tanks) and open draincocks to bleed control air. This causes both CV160 recirc valves to <span class="hi-exam">fail closed on loss of air</span>, eliminating the recirculation path back to the BASTs and forcing all boric acid through charging pump suction. Then open <span class="hi-exam">1CV175 (Rapid Borate Stop Valve)</span> by disengaging clutch and rotating handwheel counterclockwise. Adjust charging flow at Panel 216-1 to <span class="hi-exam">99 gpm (75 gpm boration + 24 gpm for 4 RCP seals at 6 gpm each)</span>. <span class="hi-trap">1CV55 is air-to-close — lowering the air signal (counter-clockwise on hand sender) opens the valve and raises flow.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RPS/SSPS]], [[CVCS]], [[Main Steam]], [[SECs]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam questions: [[2019 Q48]], [[2019 Q71]], [[2019 Q83]], [[2019 Q99]], [[2020 Q86]], [[2023 Q83]]
-- Related JPMs: [[2020 JPM IP-i]], [[2022 JPM IP-j]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2020 JPM IP-i]], [[2022 JPM IP-j]], [[2019 JPM IP-i]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2019 NRC Operating Exam]]

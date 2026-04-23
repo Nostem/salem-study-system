@@ -65,10 +65,15 @@ On a condensate pump trip at 100% power: per AB.CN-0001, <span class="hi-exam">o
 SGFP trip below P-10 (10% power) response: with reactor power at 8% (below P-10) and 11 SGFP tripped, per AB.CN-0001 Steps 3.2, 3.3, 3.14, 3.15, 3.16 and 3.17: <span class="hi-exam">REDUCE Reactor Power to less than 4%, then START 11 and 12 AFW Pumps</span>. <span class="hi-trap">Trap: a reactor trip is NOT required at 8% power with one SGFP trip — multiple CAS criteria exist for reactor trip but this scenario does not meet them. Also: starting 12 SGFP (instead of AFW) is incorrect — the procedure directs AFW pumps when power is below P-10.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #4</div>
+21 SGFP trips on turbine thrust bearing oil pressure high at ~88% power (Event 3). Main Turbine auto runback <span class="hi-exam">fails to actuate</span>. CRS directs immediate actions of AB.CN-0001. PO depresses <span class="hi-exam">GO PB on Digital EHC</span> to manually initiate turbine runback. RO initiates boration and inserts rods to restore Tavg to Tref. PO depresses 21 SGFP TURBINE TRIP bezel pushbutton and verifies AFP AUTO ARMED bezel lit. Crew stabilizes unit at ~66% with SG NR levels >44%.
+</div>
+
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]], [[AFW]]
 - Related exam questions: [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related JPMs: [[2022 JPM Sim-e]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

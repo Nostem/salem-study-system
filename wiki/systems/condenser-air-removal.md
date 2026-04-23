@@ -28,5 +28,5 @@ Event 2: <span class="hi-exam">24 Vacuum Pump trips</span> during load reduction
 - Related systems: [[Main Turbine]]
 - Related procedures: [[AB.COND-0001 — Loss of Condenser Vacuum]], [[S2.OP-SO.AR-0001 — Condenser Air Removal System Operation]]
 - Related exam questions: [[2019 Q92]], [[2020 Q63]]
-- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]

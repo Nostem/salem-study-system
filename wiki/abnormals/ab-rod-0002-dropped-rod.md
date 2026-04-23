@@ -31,6 +31,11 @@ Following dropped rod 2D4 from Control Bank Delta at 100% power: OHAs <span clas
 Before withdrawing a dropped rod, AB.ROD-0002 directs <span class="hi-exam">resetting the group step counter to zero</span> so the step counter matches actual rod position and the rod is withdrawn to the proper height. For Control Bank D Group 1 rods, the <span class="hi-exam">P/A converter is also reset to zero</span> (performed locally at the RPI-2 cabinet) to ensure bank overlap is maintained. <span class="hi-trap">The group step counter does NOT input into the P/A converter — P/A converter input is from the Group 1 Data Logging card.</span> After P/A converter reset, <span class="hi-trap">OHAs E-8 RIL LO and E-16 RIL LO-LO WILL annunciate</span> (expected). OHA E-40 ROD BANK URGENT FAILURE will also annunciate following rod withdrawal due to Power Cabinet Regulation failure with lift coil disconnect switches in OFF.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #3</div>
+Two dropped control rods at ~89% power during load reduction (Event 5). Reactor trip demand present but auto trip fails — <span class="hi-exam">ATWT</span>. Manual Rx trip handles also fail. Rod speed controller fails at <span class="hi-exam">8 spm in Auto</span>. Crew recognizes and <span class="hi-exam">inserts rods in Manual at 48 spm</span>. This event leads directly into EOP-FRSM-1 for ATWS response.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]], [[Control Rod Drive]]
@@ -38,4 +43,5 @@ Before withdrawing a dropped rod, AB.ROD-0002 directs <span class="hi-exam">rese
 - Related tech specs: [[TS 3/4.2 — Power Distribution]]
 - Related exam questions: [[2020 Q19]], [[2022 Q19]]
 - Related JPMs: [[2022 JPM RO-A3]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
+- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

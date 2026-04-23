@@ -51,5 +51,5 @@ Transitioned from EOP-TRIP-1 following reactor trip on 23 RCP high vibration (no
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
 - Related exam questions: [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
-- Related scenarios: [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

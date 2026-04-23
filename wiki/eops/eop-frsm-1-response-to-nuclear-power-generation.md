@@ -36,9 +36,15 @@ Caution C1-1: RCPs should NOT be tripped with reactor power <span class="hi-exam
 Step 8 — Local reactor trip: when directed from the Control Room to locally trip the reactor, the NEO will open <span class="hi-exam">ALL THREE sets of breakers</span>: (1) Reactor Trip Breakers, (2) Rod Drive MG Set Motor Breakers, and (3) Rod Drive MG Set Generator Breakers. <span class="hi-trap">Any ONE set of breakers being opened will trip the reactor, but the procedure directs opening ALL three to ensure the trip is achieved. Candidates may select only a subset.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #3</div>
+ATWS following two dropped rods at ~89% power. Rod speed controller fails at <span class="hi-exam">8 spm in Auto</span>; operator must recognize failure and <span class="hi-exam">insert rods in Manual at 48 spm</span>. 2CV175 Rapid Boration valve fails to open — crew establishes Rapid Boration via <span class="hi-exam">RWST flow path</span>: isolate letdown (2CV3/4/5, 2CV2, 2CV277, 2CV7), open RWST outlets (2SJ1/2SJ2), open BIT valves (2SJ4/5, 2SJ12/13), close charging discharge (2CV40/41, 2CV68/69). <span class="hi-exam">CT-52: Insert negative reactivity (rod insertion or emergency boration) prior to dispatching operators to locally trip reactor.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]]
+- Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam questions: [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -137,10 +137,20 @@ Loss of ALL AC power to Unit 2 — General Emergency classification: <span class
 EDG operability with degraded SW: 1A EDG fails surveillance and declared INOPERABLE with 13 SW Pump C/T. Candidate must determine <span class="hi-exam">TWO SW Loops remain OPERABLE</span> (meets one pump per bus AND two pumps per bay requirements). Therefore <span class="hi-exam">TS 3.8.1.1 Action b.2 does NOT apply</span> — only b.1 (1 hr), b.3 (24 hrs), b.4 (72 hrs). This is <span class="hi-exam">Special Case D / Case #1 from S1.OP-SO.DG-0005 Exhibit 1</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 SRO-A3</div>
+EDG CIT with redundant component failure: 1B EDG CIT for maintenance (TS 3.8.1.1 action b entered, 60 hours remaining). 12 Charging pump trips at 0700 — S1.OP-SO.DG-0005 identifies 12 Charging pump as a <span class="hi-exam">redundant required feature of the 1B EDG</span>. Two LCOs apply: <span class="hi-exam">TS 3.8.1.1 action b.2 (4 hours)</span> for EDG + redundant component inoperable, AND <span class="hi-exam">TS 3.5.2.a action a (72 hours)</span> for inoperable ECCS subsystem. At 1100 hours (4 hours elapsed), neither restored — shutdown per TS 3.0.3: <span class="hi-exam">Mode 3 by 1700, Mode 5 by 2300 next day</span>. <span class="hi-trap">TS 3.0.3 shutdown timing is NOT appropriate here because specific action b.2 exists — but the result is the same 6-hour and 30-hour shutdown sequence.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-g</div>
+Start and load 2C EDG during LOPA per EOP-LOPA-1: all three EDGs initially unavailable (2A tripped, 2B bus locked out on Bus Differential, 2C was C/T). After 2C EDG restored from maintenance: start EDG, verify <span class="hi-exam">FREQUENCY >= 60 Hz and VOLTS >= 4.15 KV</span>, close output breaker via MIMIC PB sequence (select 2C DG 4KV BKR 2CDD → verify Yellow → close breaker). <span class="hi-exam">2C TROUBLE console alarm will be illuminated</span> due to loss of bus voltage — this is expected and should not delay breaker closure. Must start one SW pump (25 or 26) for EDG cooling and close <span class="hi-exam">23SW20</span> before loading C bus loads.
+</div>
+
 ## Connections
 
 - Related exam questions: [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
 - Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related JPMs: [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
+- Related JPMs: [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exams: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exams: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

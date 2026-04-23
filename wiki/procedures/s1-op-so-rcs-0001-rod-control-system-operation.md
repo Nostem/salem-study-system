@@ -28,8 +28,13 @@ Provides operating procedures for the Rod Control System, including Rod Drive Mo
 Paralleling Rod Drive M-G Sets: adjust incoming set voltage <span class="hi-exam">0-2.5V higher</span> than the running set using DMM readings (not installed voltmeter — DMM reads approximately half of installed meter). The single <span class="hi-exam">SYNCHRONIZE handle must be moved from the running 12 M-G set to the 11 M-G set</span> before placing in ON. Generator breaker auto-closes — <span class="hi-exam">do NOT manually close the generator output breaker</span> (could trip both M-G sets).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 IP-j</div>
+Paralleling Rod Drive M-G Sets per Section 5.4 (Rev 32 + OTSC 32A): same task as 2023 JPM (Section 4.4, Rev 36). Adjust incoming set voltage <span class="hi-exam">0-2.5V higher</span> than running set using DMM readings. The single <span class="hi-exam">SYNCHRONIZE handle must be moved from the running 12 M-G set to the 11 M-G set</span> before placing in ON. Generator breaker auto-closes — <span class="hi-exam">do NOT manually close the generator output breaker</span> (could trip both M-G sets). Auto-closure could take up to <span class="hi-exam">60 seconds</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]]
-- Related JPMs: [[2023 JPM IP-j]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM IP-j]], [[2019 JPM IP-j]]
+- Related exam: [[2023 NRC Operating Exam]], [[2019 NRC Operating Exam]]

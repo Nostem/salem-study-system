@@ -43,7 +43,12 @@ ICMF peer check (time-critical, <span class="hi-exam">15-minute limit</span>): t
 
 ## Form F6 — Emergency Notification
 
-Requirements and forms for State and Local emergency notifications following declaration of an emergency classification.
+Requirements and forms for State and Local emergency notifications following declaration of an emergency classification. The Primary Communicator Log (EP-SA-111-F6) is the companion form used for tracking notification contacts.
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 RO-A4</div>
+Primary Communicator notifications during an ALERT (Unit 2 manual trip + SI for RCS leak). <span class="hi-exam">Time-critical: 15 minutes</span> to complete NJ and DE notifications. Alternate path: Delaware State Police cannot be reached on Primary (NETS 5406), Secondary (302-659-2341), or NAWAS backup — operator must recognize notification is <span class="hi-exam">NOT SUCCESSFULLY COMPLETED</span> and contact Delaware counties (New Castle County NETS 5408, Kent County NETS 5409) directly. Must read <span class="hi-exam">sections I thru V of the ICMF form</span> correctly to each contacted organization.
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q69</div>
@@ -94,9 +99,9 @@ EAL#CA4.1 (ALERT — Loss of RHR): with RCS intact and RCS temperature &gt; <spa
 
 ## Connections
 
-- Related procedures: [[EP-SA-111-F4 — Protective Action Recommendations]]
+- Related procedures: [[EP-SA-111-F4 — Protective Action Recommendations]], [[EP-SA-111-F6 — Primary Communicator Log]]
 - Related systems: [[RPS/SSPS]], [[EDGs]], [[4KV]], [[RHR]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
 - Related exam questions: [[2019 Q86]], [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]]
-- Related JPMs: [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]], [[2020 JPM RO-A4]], [[2020 JPM SRO-A5]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related JPMs: [[2019 JPM RO-A4]], [[2019 JPM SRO-A5]], [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]], [[2020 JPM RO-A4]], [[2020 JPM SRO-A5]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

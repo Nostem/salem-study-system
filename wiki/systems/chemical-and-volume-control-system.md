@@ -203,6 +203,11 @@ Letdown orifice isolation valves (CV3, CV4, CV5) close on: <span class="hi-exam"
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 RO-A2</div>
+Borated Water Sources surveillance (S2.OP-ST.CVC-0010): combined BAST level <span class="hi-exam">48% + 48% = 96%</span>. Per TS 3.1.2.6 Figure 3.1-2 at 6650 ppm, required level is <span class="hi-exam">&gt;96.5%</span> — UNSAT. Concentration also UNSAT: 6650 ppm vs ~6675 ppm required from Figure 3.1-2 at 96% level. Narrow margins test precise figure reading. RWST parameters (41.4 ft, 70 F, 2350 ppm) and BAST temps (100 F, 98.1 F) are all SAT.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 RO-A2</div>
 BAST level-to-volume conversions using S2.OP-TM.ZZ-0002 tank curves: <span class="hi-exam">94% = 7400 gal, 76% = 6000 gal</span>. After 105 minutes rapid boration at 40 GPM (4200 gal total, 2100 gal per BAST): 21 BAST final = <span class="hi-exam">5300 gal = 67%</span>, 22 BAST final = <span class="hi-exam">3900 gal = 49%</span>. EOP-TRIP-2 Step 4 requires <span class="hi-exam">35 minutes of rapid boration per stuck rod</span>.
 </div>
@@ -222,12 +227,17 @@ During Unit 1 Control Room Evacuation (AB.CR-0001 Att. 5), after locally opening
 Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and 6700 ppm BAST concentration, determine boric acid flow setpoint using <span class="hi-exam">Figure 100A</span> from S2.RE-RA.ZZ-0012 for 62 gpm PW flow — setpoint is <span class="hi-exam">~9.6 gpm (9-11 gpm acceptable)</span>. Place 2CV179 and 2CV172 in MANUAL/CLOSE, align blender outlet via <span class="hi-exam">2CV185 (preferred — to charging pump suction)</span> or 2CV181. Start PW pump in MANUAL, BA pump in MANUAL/FAST. Adjust BA flow on FI110A, PW flow on FI111A to 62 gpm. When VCT at 53%, secure makeup.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 IP-i</div>
+Emergency boration during CR Evacuation (AB.CR-0001, Attachment 5, Step 10): close <span class="hi-exam">11CV160 and 12CV160 air supply isolation valves</span> and open draincocks at Pnl 701-1A and 701-1B (El 122 ft, near BASTs). CV160 recirc valves <span class="hi-exam">fail closed on loss of air</span>, forcing boric acid flow through charging pump suction instead of recirculating to BASTs. Open <span class="hi-exam">1CV175 (Rapid Borate Stop Valve)</span> by disengaging clutch and rotating handwheel CCW. Adjust charging flow at Panel 216-1 to <span class="hi-exam">99 gpm total (75 gpm boration + 24 gpm for 4 RCP seals at 6 gpm each)</span>.
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
 - Related exam questions: [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
-- Related JPMs: [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

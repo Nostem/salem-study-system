@@ -42,6 +42,11 @@ AB.NIS-0001 directs removal of a failed IR channel (e.g. N35 failed high) from s
 PR channel 2N41 fails high. AB.NIS-0001 actions completed (rod control to Manual). The JPM then tests removal of the failed PR channel from service per S2.OP-SO.RPS-0001. PR channel removal requires <span class="hi-exam">five switch manipulations at NI Rack No. 81</span>: Detector Current Comparator (upper and lower), Power Mismatch Bypass, Rod Stop Bypass, and Comparator Channel Defeat. OHAs that clear: <span class="hi-exam">E-31 (PR OVRPWR ROD STOP) and E-39 (PR CH DEV)</span>.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #4</div>
+2N41 Power Range channel fails high at 88% power (Event 2). Rods stepping in with no runback in progress — RO places rod control in Manual. OHAs: <span class="hi-exam">E-15 PR HI RNG FLUX HI, E-31 PR OVRPWR ROD STOP, E-39 PR CH DEV, E-47 PR NEUT FLUX RATE HI</span>. CRS directs removal from service IAW S2.OP-SO.RPS-0001 — five switch manipulations at <span class="hi-exam">NI Rack No. 81</span>: Detector Current Comparator (upper/lower) to PRN41, Power Mismatch Bypass to BYPASS PR N41, Rod Stop Bypass to BYPASS PR N41, Comparator Channel Defeat to N41. CRS enters TSAS <span class="hi-exam">3.3.1.1 Actions 2 and 6 (6 hour LCO)</span>. RO withdraws rods to ARO after channel removed.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]]
@@ -49,4 +54,5 @@ PR channel 2N41 fails high. AB.NIS-0001 actions completed (rod control to Manual
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
 - Related exam questions: [[2019 Q30]], [[2023 Q82]], [[2020 Q22]]
 - Related JPMs: [[2020 JPM Sim-f]]
-- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

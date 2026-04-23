@@ -45,9 +45,15 @@ Leak isolation strategy: the crew is MOST concerned with the piping connecting t
 Transition from LOCA-6: if the crew is <span class="hi-exam">NOT successful in finding and isolating the leak</span>, the crew will transition to <span class="hi-exam">EOP-LOCA-5 (LOSS OF EMERGENCY RECIRCULATION)</span>. If the crew successfully isolates the leak, transition is to <span class="hi-trap">EOP-LOCA-1 (not LOCA-2 or AB.LOCA-0001)</span>.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #1</div>
+RHR intersystem RCS leak on 22 RHR Heat Exchanger during EOP-TRIP-2. Crew recognizes LOCA outside containment from <span class="hi-exam">2R41D Plant Vent radiation monitor in alarm</span>, 22 RHR sump pump starts/overflow, and lowering PZR level/pressure. In LOCA-6, crew isolates leak by closing <span class="hi-exam">22SJ49</span> (Cold Leg Injection isolation for 22 RHR). RCS pressure confirmed rising after isolation. <span class="hi-exam">CT-32: Isolate LOCA outside containment before transition out of EOP-LOCA-6.</span> After isolation, crew transitions to EOP-LOCA-1 and determines SI termination criteria met.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RCS]], [[RVLIS]], [[RHR]], [[Radiation Monitoring]]
 - Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related exam questions: [[2019 Q63]], [[2019 Q81]], [[2020 Q16]], [[2020 Q25]], [[2022 Q18]], [[2023 Q16]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

@@ -103,11 +103,16 @@ PZR Level Channel I (controlling channel) fails HIGH: charging flow reduces to m
 PORV channel assignments: <span class="hi-exam">2PR1 is controlled by Channel I (2PT-455). 2PR2 is controlled by Channels II & IV.</span> If Channel I fails LOW, <span class="hi-exam">2PR1 AUTO operation is blocked</span> (failed channel prevents PORV from seeing actual high pressure). 2PR2 remains functional on Channels II & IV and will <span class="hi-exam">open as pressure rises to the open setpoint</span>. <span class="hi-trap">PZR spray valves only function in AUTO via the controlling channel — if the controlling channel fails low, spray valves will NOT open to control pressure rise.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-c</div>
+EOP-SGTR-1 Step 19 RCS depressurization using normal spray. Open <span class="hi-exam">2PS1 and 2PS3</span> spray valves. When Table D conditions met (RCS pressure < ruptured SG pressure AND PZR level > 11%), Step 19.1 CAS directs closing spray valves. <span class="hi-exam">2PS3 fails to close</span> — alternate path. Corrective action: <span class="hi-exam">STOP 21 and 23 RCPs</span> to eliminate spray flow path. 2PS3 spray valve is supplied by 21 and 23 RCP discharge; stopping these pumps removes the driving head for spray.
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
 - Related exam questions: [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
-- Related JPMs: [[2022 JPM IP-i]]
+- Related JPMs: [[2019 JPM Sim-c]], [[2022 JPM IP-i]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

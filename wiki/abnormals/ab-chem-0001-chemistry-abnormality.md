@@ -26,8 +26,14 @@ A gross Condenser Tube Failure/Leak is indicated by rapidly rising Secondary Pla
 With <span class="hi-exam">Condensate Polisher unavailable</span> and Condensate Pump Discharge sodium ≥ <span class="val-alarm">2 ppb</span> (15 ppb in the scenario): <span class="hi-exam">Attachment 3 actions apply</span>. Required actions: <span class="hi-exam">reduce SGBD flow to minimum, Emergency Trip the affected Circulator (21A), and commence a plant shutdown as quickly as possible</span>. <span class="hi-trap">With polishers bypassed and sodium > 2 ppb, SG chemistry degrades significantly — maximize SGBD is WRONG (reduce to minimum). Action Level 2 limits (reduce to ≤ 50%) apply with polishers in service. Stopping the circulator and transferring SGBD without immediate shutdown applies to Action Level 1 values.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #1</div>
+21A condenser tube leak at 4% power (Event 4). Console alarm HOTWELL OUTLET CONDUCTIVITY HI. CRS enters AB.CHEM-0001 and directs CAS. Crew checks secondary chemistry recorders on 2RP5, identifies 21A condenser as affected hotwell from rising <span class="hi-exam">Conductivity and Dissolved Oxygen</span>. Attachment 1 CAS Step 1.0 met for condenser tube failure/leak. Attachment 2 conditions met for <span class="hi-exam">Gross Condenser Tube Failure — Emergency Trip CW pump</span>.
+</div>
+
 ## Connections
 
-- Related systems: [[Feed & Condensate]]
+- Related systems: [[Feed & Condensate]], [[Circ Water]]
 - Related exam questions: [[2023 Q60]], [[2020 Q95]]
-- Related exam: [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
+- Related exam: [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]

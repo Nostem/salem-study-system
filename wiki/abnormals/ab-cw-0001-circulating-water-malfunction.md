@@ -36,10 +36,15 @@ High DP across 23A CW Traveling Screen. Entry cue: OHA K-1 (21-23 A CW SCRNWSH T
 Loss of #4 SPT causes 23 CW Bus de-energization — 21A-23A CW pumps trip. Condenser DTs exceed <span class="hi-exam">27 F</span>, requiring turbine load reduction to less than 80%. CRS dispatches field operators to open 21-23MC62 (Turb Hood Spray Bypass Valves). CRS directs monitoring condensate pump suction piping for signs of flashing (temperature &lt;120 F). 23 CW Bus can be re-energized from Bus Section 24 via AB.LOOP-0003 Attachment 4.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #1</div>
+21A condenser tube leak (Event 4). Crew enters both AB.CHEM-0001 and AB.CW-0001. PO identifies rising secondary chemistry on 2RP5 recorders — 21A condenser is affected hotwell. PO reports Gross Condenser Tube Failure conditions met and <span class="hi-exam">Emergency Trips 21A CW pump</span> (waits ~1 minute before pressing Stop PB to allow water to drain from waterbox).
+</div>
+
 ## Connections
 
 - Related systems: [[Main Turbine]], [[Circ Water]]
 - Related EOPs: [[EOP-TRIP-1]]
 - Related exam questions: [[2019 Q37]], [[2023 Q93]]
-- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
