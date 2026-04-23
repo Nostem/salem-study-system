@@ -2,6 +2,7 @@
 title: "2020 Q6 — Shutdown LOCA"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q6
   - 2020 Q06

@@ -2,6 +2,7 @@
 title: "2019 Q13 — CFCU Power Supplies"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q13
   - 2019-Q13

@@ -2,6 +2,7 @@
 title: "2019 Q84 — RCS Specific Activity LCO 3.0.4.c"
 category: exams
 status: draft
+reference: yes
 type: SRO
 aliases:
   - 2019 Q84

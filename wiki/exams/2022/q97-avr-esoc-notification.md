@@ -2,6 +2,7 @@
 title: "2022 Q97 — AVR ESOC Notification"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q97
   - 2022-Q97

@@ -2,6 +2,7 @@
 title: "2020 Q32 — EOP-FRTS-1 PTS Mitigation Basis"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q32
   - 2020-Q32

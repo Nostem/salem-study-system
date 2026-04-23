@@ -2,6 +2,7 @@
 title: "2022 Q95 — Reactivity Management SRO Requirements"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q95
   - 2022-Q95

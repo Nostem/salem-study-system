@@ -2,6 +2,7 @@
 title: "2020 Q81 — Grid Voltage Inoperable Lines"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q81
   - 2020-Q81

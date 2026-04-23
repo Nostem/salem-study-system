@@ -2,6 +2,7 @@
 title: "2020 Q50 — EDG Starting Air Receiver Capability"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q50
   - 2020-Q50

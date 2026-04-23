@@ -2,6 +2,7 @@
 title: "2019 Q99 — CR Evacuation SI Defeat"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q99
   - 2019-Q99

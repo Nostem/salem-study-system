@@ -2,6 +2,7 @@
 title: "2020 Q12 — Loss of VIB VCT Level and Overpressure Protection"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q12
   - 2020-Q12

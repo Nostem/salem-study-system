@@ -2,6 +2,7 @@
 title: "2023 Q65 — SI / SSPS Train Disagreement Indication"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q65
   - 2023-Q65

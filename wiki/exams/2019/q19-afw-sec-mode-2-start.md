@@ -2,6 +2,7 @@
 title: "2019 Q19 — AFW SEC Mode 2 Start"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q19
   - 2019-Q19

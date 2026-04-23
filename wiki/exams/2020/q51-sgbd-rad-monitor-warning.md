@@ -2,6 +2,7 @@
 title: "2020 Q51 — SGBD Rad Monitor Warning Setpoint"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q51
   - 2020-Q51

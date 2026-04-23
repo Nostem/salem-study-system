@@ -2,6 +2,7 @@
 title: "2019 Q37 — CW Malfunction Reactor Trip"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q37
   - 2019-Q37

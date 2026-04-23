@@ -2,6 +2,7 @@
 title: "2019 Q49 — EOP-TRIP-1 Immediate Actions [OUTDATED]"
 category: exams
 status: outdated
+reference: no
 aliases:
   - 2019 Q49
   - 2019-Q49

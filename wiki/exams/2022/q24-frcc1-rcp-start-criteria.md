@@ -2,6 +2,7 @@
 title: "2022 Q24 — FRCC-1 RCP Start Criteria"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q24
   - 2022-Q24

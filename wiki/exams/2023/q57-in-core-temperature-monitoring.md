@@ -2,6 +2,7 @@
 title: "2023 Q57 — In-Core Temperature Monitoring / CET Reference Junction"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q57
   - 2023-Q57

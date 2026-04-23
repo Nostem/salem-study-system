@@ -2,6 +2,7 @@
 title: "2023 Q15 — Grid Disturbance / Unit Trip Effects on MVARs"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q15
   - 2023-Q15

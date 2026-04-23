@@ -2,6 +2,7 @@
 title: "2023 Q46 — 125VDC Ground Detection"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q46
   - 2023-Q46

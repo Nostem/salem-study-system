@@ -2,6 +2,7 @@
 title: "2020 Q4 — RCP Motor Winding Temperature"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q4
   - 2020 Q04

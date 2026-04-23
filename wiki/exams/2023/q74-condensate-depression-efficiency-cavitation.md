@@ -2,6 +2,7 @@
 title: "2023 Q74 — Condensate Depression Effects on Efficiency and Cavitation"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q74
   - 2023-Q74

@@ -2,6 +2,7 @@
 title: "2020 Q19 — Dropped Rod Step Counter Reset"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q19
   - 2020-Q19

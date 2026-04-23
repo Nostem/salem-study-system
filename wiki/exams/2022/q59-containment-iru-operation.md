@@ -2,6 +2,7 @@
 title: "2022 Q59 — Containment IRU Operation"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q59
   - 2022-Q59

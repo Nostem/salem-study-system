@@ -2,6 +2,7 @@
 title: "2020 Q30 — CVCS CV71 Post-SI"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q30
   - 2020-Q30

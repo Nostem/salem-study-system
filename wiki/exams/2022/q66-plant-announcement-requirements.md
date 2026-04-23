@@ -2,6 +2,7 @@
 title: "2022 Q66 — Plant Announcement Requirements"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q66
   - 2022-Q66

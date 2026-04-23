@@ -2,6 +2,7 @@
 title: "2023 Q31 — SBLOCA Break Location / Highest Peak Clad Temperature"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q31
   - 2023-Q31

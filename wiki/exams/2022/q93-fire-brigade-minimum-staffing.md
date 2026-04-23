@@ -2,6 +2,7 @@
 title: "2022 Q93 — Fire Brigade Minimum Staffing"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q93
   - 2022-Q93

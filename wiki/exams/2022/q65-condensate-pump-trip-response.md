@@ -2,6 +2,7 @@
 title: "2022 Q65 — Condensate Pump Trip Response"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q65
   - 2022-Q65

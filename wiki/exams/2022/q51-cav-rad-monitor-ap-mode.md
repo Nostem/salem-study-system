@@ -2,6 +2,7 @@
 title: "2022 Q51 — CAV System Rad Monitor AP Mode"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q51
   - 2022-Q51

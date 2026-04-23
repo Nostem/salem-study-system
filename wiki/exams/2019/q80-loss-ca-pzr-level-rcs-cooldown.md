@@ -2,6 +2,7 @@
 title: "2019 Q80 — Loss of Control Air PZR Level / RCS Cooldown"
 category: exams
 status: draft
+reference: no
 type: SRO
 aliases:
   - 2019 Q80

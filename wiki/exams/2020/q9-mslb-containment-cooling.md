@@ -2,6 +2,7 @@
 title: "2020 Q9 — MSLB Containment Cooling"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q9
   - 2020 Q09

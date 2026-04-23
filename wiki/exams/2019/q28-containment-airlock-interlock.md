@@ -2,6 +2,7 @@
 title: "2019 Q28 — Containment Airlock Interlock"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q28
   - 2019-Q28

@@ -2,6 +2,7 @@
 title: "2019 Q78 — Loss of RHR in Mode 4 / Shutdown LOCA"
 category: exams
 status: draft
+reference: no
 type: SRO
 aliases:
   - 2019 Q78

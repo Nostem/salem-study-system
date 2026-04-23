@@ -2,6 +2,7 @@
 title: "2023 Q47 — 125VDC Mechanical Interlock and Bus Transfer"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q47
   - 2023-Q47

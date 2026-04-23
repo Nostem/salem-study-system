@@ -2,6 +2,7 @@
 title: "2020 Q97 — Protected Equipment Program"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q97
   - 2020-Q97

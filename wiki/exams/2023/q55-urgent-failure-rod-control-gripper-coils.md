@@ -2,6 +2,7 @@
 title: "2023 Q55 — Urgent Failure / Rod Control Gripper Coils"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q55
   - 2023-Q55

@@ -2,6 +2,7 @@
 title: "2022 Q84 — EOP-TRIP-6 Nat Circ Cooldown Without RVLIS"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q84
   - 2022-Q84

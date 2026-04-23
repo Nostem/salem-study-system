@@ -2,6 +2,7 @@
 title: "2023 Q30 — RHR Cooldown Rate Control / RH18 and RH20 Valves"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q30
   - 2023-Q30

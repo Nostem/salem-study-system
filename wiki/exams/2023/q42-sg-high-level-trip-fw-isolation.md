@@ -2,6 +2,7 @@
 title: "2023 Q42 — SG High Level Trip and FW Isolation"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q42
   - 2023-Q42

@@ -2,6 +2,7 @@
 title: "2019 Q31 — AMSAC Train A AFW Pumps"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q31
   - 2019-Q31

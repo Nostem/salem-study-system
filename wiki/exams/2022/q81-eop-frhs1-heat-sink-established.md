@@ -2,6 +2,7 @@
 title: "2022 Q81 — EOP-FRHS-1 Heat Sink Established"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q81
   - 2022-Q81

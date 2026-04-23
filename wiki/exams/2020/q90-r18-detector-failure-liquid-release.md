@@ -2,6 +2,7 @@
 title: "2020 Q90 — R18 Detector Failure / Liquid Release"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q90
   - 2020-Q90

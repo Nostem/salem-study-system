@@ -2,6 +2,7 @@
 title: "2022 Q89 — EDG Common Mode Failure TS 3.8.1.1"
 category: exams
 status: draft
+reference: yes
 aliases:
   - 2022 Q89
   - 2022-Q89

@@ -2,6 +2,7 @@
 title: "2019 Q82 — PZR Level Control Malfunction Charging"
 category: exams
 status: draft
+reference: no
 type: SRO
 aliases:
   - 2019 Q82

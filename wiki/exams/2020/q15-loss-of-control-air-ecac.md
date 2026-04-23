@@ -2,6 +2,7 @@
 title: "2020 Q15 — Loss of Control Air ECAC Actions"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q15
   - 2020-Q15

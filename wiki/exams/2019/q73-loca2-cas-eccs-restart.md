@@ -2,6 +2,7 @@
 title: "2019 Q73 — LOCA-2 CAS ECCS Restart Criteria"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q73
   - 2019-Q73

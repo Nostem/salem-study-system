@@ -2,6 +2,7 @@
 title: "2019 Q16 — AFW Pump Start with Local Manual"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q16
   - 2019-Q16

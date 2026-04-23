@@ -2,6 +2,7 @@
 title: "2023 Q11 — Loss of Vital Instrument Bus / NI Channel Response"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q11
   - 2023-Q11

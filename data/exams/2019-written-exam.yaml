@@ -756,6 +756,7 @@ questions:
     ka_importance: 4.2
     type: SRO
     tier_group: "Tier 1/Group 2"
+    status: outdated
 
   - number: 86
     topic: "Loss of RHR EAL CA4.1"

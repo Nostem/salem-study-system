@@ -2,6 +2,7 @@
 title: "2023 Q99 — Containment Radiation CFST / FRCE-3"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q99
   - 2023-Q99

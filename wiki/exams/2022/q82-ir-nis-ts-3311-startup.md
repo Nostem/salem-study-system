@@ -2,6 +2,7 @@
 title: "2022 Q82 — IR NIS TS 3.3.1.1 During Startup"
 category: exams
 status: draft
+reference: yes
 aliases:
   - 2022 Q82
   - 2022-Q82

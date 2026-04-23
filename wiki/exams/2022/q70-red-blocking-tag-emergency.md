@@ -2,6 +2,7 @@
 title: "2022 Q70 — Red Blocking Tag Emergency Repositioning"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q70
   - 2022-Q70

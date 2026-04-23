@@ -2,6 +2,7 @@
 title: "2023 Q13 — R13 Radiation Monitors / CFCU SW Pathway"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q13
   - 2023-Q13

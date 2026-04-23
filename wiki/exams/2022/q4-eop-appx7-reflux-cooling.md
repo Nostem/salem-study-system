@@ -2,6 +2,7 @@
 title: "2022 Q4 — EOP-APPX-7 Reflux Cooling"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q04
   - 2022-Q04

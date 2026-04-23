@@ -2,6 +2,7 @@
 title: "2020 Q44 — AFW Pump Auto Start on Both SGFP Trip"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q44
   - 2020-Q44

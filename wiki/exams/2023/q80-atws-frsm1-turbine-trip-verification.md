@@ -2,6 +2,7 @@
 title: "2023 Q80 — ATWS EOP-FRSM-1 Turbine Trip Verification"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q80
   - 2023-Q80

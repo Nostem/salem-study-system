@@ -2,6 +2,7 @@
 title: "2023 Q82 — IR NIS P-6 Permissive / TS Bases"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q82
   - 2023-Q82

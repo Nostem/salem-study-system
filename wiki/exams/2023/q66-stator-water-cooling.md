@@ -2,6 +2,7 @@
 title: "2023 Q66 — Stator Water Cooling / Unit 1 vs Unit 2 Differences"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q66
   - 2023-Q66

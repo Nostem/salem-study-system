@@ -2,6 +2,7 @@
 title: "2022 Q79 — Loss of Air / TDAFW Pump Overpower"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q79
   - 2022-Q79

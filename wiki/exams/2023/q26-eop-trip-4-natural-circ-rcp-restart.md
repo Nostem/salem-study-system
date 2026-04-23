@@ -2,6 +2,7 @@
 title: "2023 Q26 — EOP-TRIP-4 Natural Circulation / RCP Restart Priority"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q26
   - 2023-Q26

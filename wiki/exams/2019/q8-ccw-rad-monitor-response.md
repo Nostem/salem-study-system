@@ -2,6 +2,7 @@
 title: "2019 Q8 — CCW Radiation Monitor Response"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q8
   - 2019-Q8

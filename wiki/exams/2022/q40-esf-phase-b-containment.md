@@ -2,6 +2,7 @@
 title: "2022 Q40 — SSPS Train B 48 VDC Power Supply Loss"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q40
   - 2022-Q40

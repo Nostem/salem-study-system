@@ -2,6 +2,7 @@
 title: "2020 Q21 — Rapid Boration per EOP-TRIP-2"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q21
   - 2020-Q21

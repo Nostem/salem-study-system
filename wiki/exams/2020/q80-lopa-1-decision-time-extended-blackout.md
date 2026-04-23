@@ -2,6 +2,7 @@
 title: "2020 Q80 — LOPA-1 Decision Time for Extended Blackout [OUTDATED]"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q80
   - 2020-Q80

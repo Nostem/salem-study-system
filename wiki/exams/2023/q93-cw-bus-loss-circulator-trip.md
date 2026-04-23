@@ -2,6 +2,7 @@
 title: "2023 Q93 — CW Bus Loss / Circulator Trip"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q93
   - 2023-Q93

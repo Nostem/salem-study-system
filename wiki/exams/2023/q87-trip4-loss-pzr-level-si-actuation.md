@@ -2,6 +2,7 @@
 title: "2023 Q87 — EOP-TRIP-4 Loss of PZR Level / SI Actuation"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q87
   - 2023-Q87

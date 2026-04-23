@@ -2,6 +2,7 @@
 title: "2020 Q18 — FRHS-1 RCS Pressure vs SG Pressure Check"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q18
   - 2020-Q18

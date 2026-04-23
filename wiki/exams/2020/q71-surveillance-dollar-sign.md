@@ -2,6 +2,7 @@
 title: "2020 Q71 — Surveillance Dollar Sign ($) Significance"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q71
   - 2020-Q71

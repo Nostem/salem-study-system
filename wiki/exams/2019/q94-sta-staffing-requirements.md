@@ -2,6 +2,7 @@
 title: "2019 Q94 — STA Staffing Requirements"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q94
   - 2019-Q94

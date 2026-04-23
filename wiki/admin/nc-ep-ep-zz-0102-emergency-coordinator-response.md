@@ -39,6 +39,6 @@ Emergency Coordinator (EC) responsibility transfers based on facility activation
 
 ## Connections
 
-- Related admin: [[EP-SA-111-F4 — Protective Action Recommendations]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
+- Related admin: [[EP-SA-111 — Emergency Classification and Protective Action]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam questions: [[2022 Q100]], [[2020 Q99]]
 - Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

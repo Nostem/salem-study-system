@@ -2,6 +2,7 @@
 title: "2019 Q18 — SGFP Turbine Overspeed Trip"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q18
   - 2019-Q18
@@ -41,6 +42,6 @@ The Steam Generator Feed Pumps have a Turbine Overspeed Trip that prevents the t
 
 ## Connections
 
-- Related systems: [[Feed & Condensate]], [[Main Turbine]]
+- Related systems: [[Feed & Condensate]]
 - Related procedures: [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]]
 - Related exam: [[2019 NRC Written Exam]]

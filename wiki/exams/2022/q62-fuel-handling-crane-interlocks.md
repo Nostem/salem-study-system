@@ -2,6 +2,7 @@
 title: "2022 Q62 — Fuel Handling Crane Interlocks"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q62
   - 2022-Q62

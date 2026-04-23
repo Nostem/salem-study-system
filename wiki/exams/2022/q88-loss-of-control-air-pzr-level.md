@@ -2,6 +2,7 @@
 title: "2022 Q88 — Loss of Control Air PZR Level"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q88
   - 2022-Q88

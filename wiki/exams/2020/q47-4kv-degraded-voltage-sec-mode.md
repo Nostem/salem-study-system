@@ -2,6 +2,7 @@
 title: "2020 Q47 — 4KV Degraded Voltage / SEC Mode"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q47
   - 2020-Q47

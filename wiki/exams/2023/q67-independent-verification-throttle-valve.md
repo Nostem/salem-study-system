@@ -2,6 +2,7 @@
 title: "2023 Q67 — Independent Verification / Throttled Valve Position"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q67
   - 2023-Q67

@@ -2,6 +2,7 @@
 title: "2019 Q55 — CC131 Thermal Barrier Flow and RCP Trip Criteria"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q55
   - 2019-Q55

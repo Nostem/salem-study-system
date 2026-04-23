@@ -2,6 +2,7 @@
 title: "2019 Q86 — Loss of RHR EAL CA4.1"
 category: exams
 status: draft
+reference: no
 type: SRO
 aliases:
   - 2019 Q86

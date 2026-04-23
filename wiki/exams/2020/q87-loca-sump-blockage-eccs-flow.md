@@ -2,6 +2,7 @@
 title: "2020 Q87 — LOCA Sump Blockage / ECCS Flow"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q87
   - 2020-Q87

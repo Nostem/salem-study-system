@@ -2,6 +2,7 @@
 title: "2019 Q7 — PZR Heatup Rate and PRT Pressure"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q7
   - 2019-Q7

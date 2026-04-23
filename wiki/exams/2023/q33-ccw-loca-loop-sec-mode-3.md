@@ -2,6 +2,7 @@
 title: "2023 Q33 — CCW System Response to LOCA + LOOP / SEC Mode 3"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q33
   - 2023-Q33

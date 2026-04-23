@@ -2,6 +2,7 @@
 title: "2019 Q58 — Loss of Offsite Power TS 3.8.1.1 Actions"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q58
   - 2019-Q58

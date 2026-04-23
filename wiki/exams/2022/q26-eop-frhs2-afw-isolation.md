@@ -2,6 +2,7 @@
 title: "2022 Q26 — EOP-FRHS-2 AFW Isolation"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q26
   - 2022-Q26

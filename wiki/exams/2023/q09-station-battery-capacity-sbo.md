@@ -2,6 +2,7 @@
 title: "2023 Q9 — Station Battery Capacity During SBO"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q9
   - 2023-Q9

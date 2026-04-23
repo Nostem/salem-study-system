@@ -2,6 +2,7 @@
 title: "2019 Q56 — FRSM-1 Local Reactor Trip Breakers [EDITED]"
 category: exams
 status: edited
+reference: no
 aliases:
   - 2019 Q56
   - 2019-Q56

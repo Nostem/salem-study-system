@@ -2,6 +2,7 @@
 title: "2020 Q68 — Control Rod Movement Requirements"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q68
   - 2020-Q68

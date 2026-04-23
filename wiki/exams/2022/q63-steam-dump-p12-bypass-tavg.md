@@ -2,6 +2,7 @@
 title: "2022 Q63 — Steam Dump P-12 / Bypass Tavg"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q63
   - 2022-Q63

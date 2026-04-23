@@ -2,6 +2,7 @@
 title: "2022 Q85 — CFST Priority / FRTS-1 Thermal Shock"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q85
   - 2022-Q85

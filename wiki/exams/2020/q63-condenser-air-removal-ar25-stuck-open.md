@@ -2,6 +2,7 @@
 title: "2020 Q63 — Condenser Air Removal AR25 Stuck Open"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q63
   - 2020-Q63

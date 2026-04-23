@@ -2,6 +2,7 @@
 title: "2020 Q82 — Fuel Handling Incident Mast Tube"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q82
   - 2020-Q82

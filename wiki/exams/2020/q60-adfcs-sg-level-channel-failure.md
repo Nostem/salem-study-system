@@ -2,6 +2,7 @@
 title: "2020 Q60 — ADFCS SG Level Channel Failure"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q60
   - 2020-Q60

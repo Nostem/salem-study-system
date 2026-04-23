@@ -2,6 +2,7 @@
 title: "2019 Q79 — LOOP / EDG Trip / TS 3.8.1.1 LCO 3.0.4.b"
 category: exams
 status: draft
+reference: no
 type: SRO
 aliases:
   - 2019 Q79

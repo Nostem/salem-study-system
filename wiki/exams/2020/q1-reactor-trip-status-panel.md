@@ -2,6 +2,7 @@
 title: "2020 Q1 — Reactor Trip Status Panel"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q1
   - 2020 Q01

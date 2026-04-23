@@ -2,6 +2,7 @@
 title: "2019 Q71 — CR Evacuation AFW / PZR Pressure"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q71
   - 2019-Q71

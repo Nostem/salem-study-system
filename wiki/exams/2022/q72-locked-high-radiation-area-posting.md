@@ -2,6 +2,7 @@
 title: "2022 Q72 — Locked High Radiation Area Posting"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q72
   - 2022-Q72

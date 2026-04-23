@@ -2,6 +2,7 @@
 title: "2020 Q27 — LOCA Voiding Indication"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q27
   - 2020-Q27

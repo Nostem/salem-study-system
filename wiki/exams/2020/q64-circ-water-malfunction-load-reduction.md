@@ -2,6 +2,7 @@
 title: "2020 Q64 — CW Malfunction / Rapid Load Reduction [OUTDATED]"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q64
   - 2020-Q64

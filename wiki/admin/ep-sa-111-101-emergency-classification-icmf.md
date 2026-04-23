@@ -58,6 +58,6 @@ SGTR with stuck-open MSIV on 23 SG — classified as <span class="hi-exam">Site 
 
 ## Connections
 
-- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[EP-SA-111-F4 — Protective Action Recommendations]]
+- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[EP-SA-111 — Emergency Classification and Protective Action]]
 - Related JPMs: [[2019 JPM SRO-A5]]
 - Related exam: [[2019 NRC Operating Exam]]

@@ -2,6 +2,7 @@
 title: "2019 Q2 — High RCS Activity CVCS Response"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q2
   - 2019-Q2

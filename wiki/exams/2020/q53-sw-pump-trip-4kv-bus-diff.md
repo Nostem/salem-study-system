@@ -2,6 +2,7 @@
 title: "2020 Q53 — SW Pump Trip / 1A 4KV Bus Differential"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q53
   - 2020-Q53

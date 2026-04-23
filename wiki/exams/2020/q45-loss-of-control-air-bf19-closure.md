@@ -2,6 +2,7 @@
 title: "2020 Q45 — Loss of Control Air BF19 Closure"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q45
   - 2020-Q45

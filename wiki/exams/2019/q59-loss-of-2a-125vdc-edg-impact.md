@@ -2,6 +2,7 @@
 title: "2019 Q59 — Loss of 2A 125 VDC Bus EDG Impact"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q59
   - 2019-Q59

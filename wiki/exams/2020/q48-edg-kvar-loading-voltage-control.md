@@ -2,6 +2,7 @@
 title: "2020 Q48 — EDG KVAR Loading / Voltage Control"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q48
   - 2020-Q48

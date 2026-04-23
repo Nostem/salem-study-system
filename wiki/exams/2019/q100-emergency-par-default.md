@@ -2,6 +2,7 @@
 title: "2019 Q100 — Emergency PAR Default"
 category: exams
 status: draft
+reference: yes
 aliases:
   - 2019 Q100
   - 2019-Q100
@@ -52,5 +53,5 @@ Based on the wind shift at 09:50, the SM will declare <span class="blank">_(2)_<
 
 ## Connections
 
-- Related procedures: [[EP-SA-111-F4 — Protective Action Recommendations]]
+- Related procedures: [[EP-SA-111 — Emergency Classification and Protective Action]]
 - Related exam: [[2019 NRC Written Exam]]

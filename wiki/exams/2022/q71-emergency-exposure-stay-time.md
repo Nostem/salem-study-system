@@ -2,6 +2,7 @@
 title: "2022 Q71 — Emergency Exposure Stay Time"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q71
   - 2022-Q71

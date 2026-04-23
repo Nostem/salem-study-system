@@ -2,6 +2,7 @@
 title: "2023 Q88 — Grid Disturbance / Solar Magnetic Disturbance"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q88
   - 2023-Q88

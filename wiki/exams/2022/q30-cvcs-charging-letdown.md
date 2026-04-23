@@ -2,6 +2,7 @@
 title: "2022 Q30 — CVCS Charging/Letdown"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q30
   - 2022-Q30

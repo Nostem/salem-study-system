@@ -2,6 +2,7 @@
 title: "2022 Q76 — EOP-FRSM-1 RCP Trip During ATWS"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q76
   - 2022-Q76

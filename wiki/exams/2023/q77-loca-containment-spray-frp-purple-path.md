@@ -2,6 +2,7 @@
 title: "2023 Q77 — LOCA Containment Spray vs FRP Purple Path Priority"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q77
   - 2023-Q77

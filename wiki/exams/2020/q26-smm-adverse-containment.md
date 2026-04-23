@@ -2,6 +2,7 @@
 title: "2020 Q26 — SMM Adverse Containment"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q26
   - 2020-Q26

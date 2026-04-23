@@ -2,6 +2,7 @@
 title: "2023 Q69 — Emergency Plan / Primary Communicator / Notification Timing"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q69
   - 2023-Q69

@@ -2,6 +2,7 @@
 title: "2019 Q23 — SEC Actuation With RP4 Loss"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q23
   - 2019-Q23

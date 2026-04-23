@@ -2,6 +2,7 @@
 title: "2022 Q19 — Dropped Rod / NIS Indication"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q19
   - 2022-Q19

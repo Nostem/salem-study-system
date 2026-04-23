@@ -2,6 +2,7 @@
 title: "2022 Q56 — Rod Insertion Limit Alarm"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q56
   - 2022-Q56

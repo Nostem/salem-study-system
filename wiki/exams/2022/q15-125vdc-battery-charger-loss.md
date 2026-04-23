@@ -2,6 +2,7 @@
 title: "2022 Q15 — 125 VDC Battery Charger Loss"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q15
   - 2022-Q15

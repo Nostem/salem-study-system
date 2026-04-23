@@ -2,6 +2,7 @@
 title: "2023 Q52 — Phase A / CA330 Instrument Air to Containment"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q52
   - 2023-Q52

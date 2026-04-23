@@ -2,6 +2,7 @@
 title: "2022 Q77 — EOP-LOPA-1 MS10 Cooldown Rate"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q77
   - 2022-Q77

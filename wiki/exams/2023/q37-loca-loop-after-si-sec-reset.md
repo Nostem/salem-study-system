@@ -2,6 +2,7 @@
 title: "2023 Q37 — LOCA + LOOP After SI/SEC Reset / EDG and Safeguards Response"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q37
   - 2023-Q37

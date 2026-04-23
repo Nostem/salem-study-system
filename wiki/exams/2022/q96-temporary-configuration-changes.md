@@ -2,6 +2,7 @@
 title: "2022 Q96 — Temporary Configuration Changes"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q96
   - 2022-Q96

@@ -90,5 +90,5 @@ Ref: EP-SA-111-F6 (Rev 22) | Task: N1240110501 | K/A: G2.4.43 — Knowledge of e
 
 ## Connections
 
-- Related procedures: [[EP-SA-111-F6 — Primary Communicator Log]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
+- Related procedures: [[EP-SA-111 — Emergency Classification and Protective Action]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam: [[2019 NRC Operating Exam]]

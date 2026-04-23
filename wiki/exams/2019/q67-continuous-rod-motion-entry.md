@@ -2,6 +2,7 @@
 title: "2019 Q67 — Continuous Rod Motion Entry Conditions"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q67
   - 2019-Q67

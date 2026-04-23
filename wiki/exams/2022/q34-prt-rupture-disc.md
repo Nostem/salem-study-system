@@ -2,6 +2,7 @@
 title: "2022 Q34 — PRT Rupture Disc / High Pressure Response"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q34
   - 2022-Q34

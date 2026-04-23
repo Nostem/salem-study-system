@@ -2,6 +2,7 @@
 title: "2020 Q84 — Natural Circ Cooldown Rates RVLIS"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q84
   - 2020-Q84

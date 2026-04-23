@@ -2,6 +2,7 @@
 title: "2022 Q64 — Main Turbine Valve Stroke Testing"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q64
   - 2022-Q64

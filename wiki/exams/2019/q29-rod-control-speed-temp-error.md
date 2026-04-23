@@ -2,6 +2,7 @@
 title: "2019 Q29 — Rod Control Speed vs Temperature Error"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q29
   - 2019-Q29

@@ -2,6 +2,7 @@
 title: "2020 Q17 — Loss of Emergency Recirculation Mitigation Strategies"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q17
   - 2020-Q17

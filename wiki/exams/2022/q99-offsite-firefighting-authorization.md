@@ -2,6 +2,7 @@
 title: "2022 Q99 — Off-Site Firefighting Authorization"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q99
   - 2022-Q99

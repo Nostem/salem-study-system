@@ -2,6 +2,7 @@
 title: "2022 Q87 — NRC Reporting Manual Trip & SI"
 category: exams
 status: draft
+reference: yes
 aliases:
   - 2022 Q87
   - 2022-Q87

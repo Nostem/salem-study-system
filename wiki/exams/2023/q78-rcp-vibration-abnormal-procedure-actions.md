@@ -2,6 +2,7 @@
 title: "2023 Q78 — RCP Vibration Abnormal Procedure Actions"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q78
   - 2023-Q78

@@ -2,6 +2,7 @@
 title: "2023 Q73 — Steam Tables Subcooling and SG Pressure"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2023 Q73
   - 2023-Q73

@@ -2,6 +2,7 @@
 title: "2022 Q17 — MVAR Loading / Voltage Regulator"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q17
   - 2022-Q17

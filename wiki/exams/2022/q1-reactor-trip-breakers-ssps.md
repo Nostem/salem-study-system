@@ -2,6 +2,7 @@
 title: "2022 Q1 — Reactor Trip Breakers / SSPS Train Failure"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q01
   - 2022-Q01

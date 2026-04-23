@@ -2,6 +2,7 @@
 title: "2020 Q7 — PZR PORV Fails Open"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q7
   - 2020 Q07

@@ -2,6 +2,7 @@
 title: "2019 Q76 — LOCA-2 Charging Pump Reduction"
 category: exams
 status: draft
+reference: yes
 type: SRO
 aliases:
   - 2019 Q76

@@ -99,7 +99,7 @@ EAL#CA4.1 (ALERT — Loss of RHR): with RCS intact and RCS temperature &gt; <spa
 
 ## Connections
 
-- Related procedures: [[EP-SA-111-F4 — Protective Action Recommendations]], [[EP-SA-111-F6 — Primary Communicator Log]]
+- Related procedures: [[EP-SA-111 — Emergency Classification and Protective Action]]
 - Related systems: [[RPS/SSPS]], [[EDGs]], [[4KV]], [[RHR]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
 - Related exam questions: [[2019 Q86]], [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]]

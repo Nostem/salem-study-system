@@ -2,6 +2,7 @@
 title: "2020 Q22 — IR Channel Bypass Alarm"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q22
   - 2020-Q22

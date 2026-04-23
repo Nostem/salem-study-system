@@ -2,6 +2,7 @@
 title: "2022 Q23 — Plant Vent Rad Monitor Response"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q23
   - 2022-Q23

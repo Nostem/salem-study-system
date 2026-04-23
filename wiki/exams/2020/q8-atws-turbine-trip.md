@@ -2,6 +2,7 @@
 title: "2020 Q8 — ATWS Turbine Trip (POTENTIALLY OUTDATED)"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q8
   - 2020 Q08

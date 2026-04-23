@@ -2,6 +2,7 @@
 title: "2022 Q27 — EOP-LOCA-2 RCS Depressurization"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q27
   - 2022-Q27

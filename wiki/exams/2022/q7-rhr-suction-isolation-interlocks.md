@@ -2,6 +2,7 @@
 title: "2022 Q7 — RHR Suction Isolation Interlocks"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q7
   - 2022-Q7

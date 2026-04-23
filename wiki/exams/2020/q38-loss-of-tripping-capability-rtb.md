@@ -2,6 +2,7 @@
 title: "2020 Q38 — Loss of Tripping Capability RTB"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q38
   - 2020-Q38

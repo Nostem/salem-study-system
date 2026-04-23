@@ -2,6 +2,7 @@
 title: "2020 Q23 — Area Rad Monitor Crane Interlock"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q23
   - 2020-Q23

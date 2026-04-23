@@ -2,6 +2,7 @@
 title: "2020 Q58 — Subcooling Margin Monitor Inputs"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2020 Q58
   - 2020-Q58

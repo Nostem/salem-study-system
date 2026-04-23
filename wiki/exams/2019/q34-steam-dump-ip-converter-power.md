@@ -2,6 +2,7 @@
 title: "2019 Q34 — Steam Dump I/P Converter Power"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2019 Q34
   - 2019-Q34

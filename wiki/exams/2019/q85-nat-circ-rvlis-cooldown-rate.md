@@ -2,6 +2,7 @@
 title: "2019 Q85 — Natural Circulation RVLIS Cooldown Rate"
 category: exams
 status: outdated
+reference: no
 type: SRO
 aliases:
   - 2019 Q85

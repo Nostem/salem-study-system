@@ -2,6 +2,7 @@
 title: "2022 Q11 — SGTR Natural Circulation"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2022 Q11
   - 2022-Q11
