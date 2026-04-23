@@ -15,7 +15,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>REFERENCE PROVIDED</strong><br><br>
+<strong><span class="val-normal">REFERENCE PROVIDED</span></strong><br><br>
 <strong>Given:</strong><br>
 &bull; Unit 2 is at 100% Reactor Power<br><br>
 At time 09:00 on June 12<br>
