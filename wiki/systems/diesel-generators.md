@@ -50,6 +50,11 @@ EDG minimum load after paralleling: <span class="hi-exam">≥500 KW</span> must 
 EDG loading ratings: <span class="hi-exam">2000 hr rating = <span class="val-alarm">2750 KW</span></span>, 2 hr rating = 2860 KW, 30 min rating = 3100 KW, Continuous rating = 2600 KW. Per S2.OP-SO.PZR-0010, PZR backup heaters add approximately <span class="hi-exam">210 KW</span> to bus load. Before adding PZR heater load, current EDG loading must be adjusted to no greater than <span class="hi-exam">2750 - 210 = 2540 KW</span>. <span class="hi-trap">Trap: candidates confuse the four EDG loading limits. The 2000 hr limit (2750 KW) is the relevant one for sustained post-LOOP operation, not the 30-min (3100 KW), 2-hr (2860 KW), or Continuous (2600 KW) rating.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q42</div>
+Per S2.OP-ST.DG-0001, to prevent tripping the Diesel Generator Breaker on reverse power, generator load must be IMMEDIATELY raised to greater than a minimum of <span class="hi-exam"><span class="val-alarm">500 KW</span></span> after the breaker is closed. EDG Continuous Load Rating is <span class="hi-exam"><span class="val-normal">2600 KW</span></span>. <span class="hi-trap">Trap: 2750 KW is the 2000-hour rating (2681 KW Local), NOT the Continuous rating. 200 KW is the minimum load when UNLOADING the EDG (to prevent reverse power trip before opening the breaker) — a different value from the 500 KW minimum when LOADING.</span>
+</div>
+
 ## EDG Room Ventilation
 
 <div class="callout callout-exam">
@@ -98,7 +103,17 @@ On SI signal with loss of offsite power:
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.8 — Electrical]]** — TS 3.8.1.1 requires 3 DGs OPERABLE in Modes 1–4
+- **[[TS 3/4.8 — Electrical]]** — TS 3.8.1.1 requires 3 DGs OPERABLE in Modes 1–4; TS 3.8.1.2 requires 2 DGs OPERABLE in Modes 5–6
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q21</div>
+<span class="hi-exam">LCO 3.8.1.2 (ELECTRICAL POWER SYSTEMS - SHUTDOWN) requires a minimum of TWO separate and independent diesel generators to be OPERABLE</span> (Modes 5 and 6). <span class="hi-trap">Trap: LCO 3.8.1.1 (Operating) requires THREE — do not confuse the Operating (3) vs Shutdown (2) EDG requirements.</span> If ALL REQUIRED EDGs are inoperable in shutdown, the crew is <span class="hi-exam">required to IMMEDIATELY suspend all operations involving positive reactivity changes</span>. REQUIRED ACTION A has an option to only declare affected required features inoperable, but REQUIRED ACTION B requires immediate suspension of positive reactivity changes.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q22</div>
+Following a Reactor Trip + SI coincident with LOOP at Unit 2 with <span class="hi-exam">EDG 2B unable to start</span>: 2A and 2C Vital Buses are powered from EDG 2A and EDG 2C. 15 minutes later, ECCS loads have been sequenced onto the running EDGs. <span class="hi-exam">22 RHR Pump (2B bus) is stopped; 22 SI Pump (2C bus) is running.</span> <span class="hi-trap">Pump number does NOT always match bus letter — 22 RHR is on B bus, 22 SI is on C bus.</span>
+</div>
 - 1 DG inoperable: 72 hours; demonstrate OPERABILITY of remaining DGs within 24 hours
 - 1 DG AND 1 offsite circuit inoperable: 12 hours
 
@@ -149,8 +164,8 @@ Start and load 2C EDG during LOPA per EOP-LOPA-1: all three EDGs initially unava
 
 ## Connections
 
-- Related exam questions: [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
+- Related exam questions: [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
 - Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
 - Related JPMs: [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exams: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exams: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

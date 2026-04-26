@@ -131,6 +131,11 @@ The maximum peak pressure expected from a LOCA or steam line break event is appr
 </details>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q32</div>
+LCO 3.6.1.4 is NOT met when containment pressure exceeds <span class="hi-exam">+0.3 psig</span>. Restoration time: <span class="hi-exam">60 minutes</span> or place unit in HOT STANDBY within 6 hours. <span class="hi-trap">BEZEL Hi CNTMT Pressure Alarm setpoint is 0.2 psid — do not confuse with the TS limit of +0.3 psig. Other LCOs use 30-minute action times (3.2.1, 3.2.4, 3.4.10.2, 3.7.2) — LCO 3.6.1.4 is 60 minutes.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q54</div>
 <span class="hi-exam">Containment internal pressure limits: -1.5 to +0.3 psig (Modes 1-4).</span> If pressure exceeds +0.3 psig, containment design limits could be exceeded during a DBA. The upper limit ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during the limiting pipe break (LOCA or steam line break). The lower limit ensures the containment structure is prevented from exceeding its design negative pressure differential of <span class="val-trip">3.5 psig</span> with respect to outside atmosphere. Restoration time is <span class="hi-exam">1 hour</span>.
 </div>

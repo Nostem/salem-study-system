@@ -87,11 +87,19 @@ Manual QPTR calculation (S2.OP-ST.NIS-0002): for each Power Range detector (N41-
 PR channel 2N41 removal from service (S2.OP-SO.RPS-0001): at NI Rack No. 81, five switch manipulations in Steps 5.1.5.A-E — <span class="hi-exam">DETECTOR CURRENT COMPARATOR upper</span> → <span class="hi-exam">DETECTOR CURRENT COMPARATOR lower</span> → <span class="hi-exam">POWER MISMATCH BYPASS</span> (defeats input to rod control) → <span class="hi-exam">ROD STOP BYPASS</span> (OHA E-31 clears, 2RP4 MANUAL BYPASS CH I lights) → <span class="hi-exam">COMPARATOR CHANNEL DEFEAT</span> (OHA E-39 clears). Distinct from IR channel removal which uses LEVEL TRIP switch. RO-only JPM.
 </div>
 
+## Source Range Audible Count Rate
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q31</div>
+During an automatic RCS makeup in Mode 3 with 2CV179 (PRIMARY WATER FLOW) failed closed, only boric acid flows through the blender → <span class="hi-exam">RCS boron concentration rises → negative reactivity → Source Range NI Audible Count Rate indication lowers</span>. <span class="hi-trap">If CV179 had failed OPEN, primary water would dilute the RCS → boron concentration lowers → positive reactivity → SR audible count rate would rise.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
-- Related exams: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exams: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+  - [[2018 Q31]] — SR audible count rate lowers during auto makeup with CV179 failed closed
   - [[2019 Q30]] — PR NI 2N41 fails high / rods to MAN per AB.NIS / tripped bistable = 1/3 coincidence
   - [[2020 Q22]] — IR channel removal from service / LEVEL TRIP switch bypass / OHA E-29
   - [[2023 Q72]] — Subcritical SR counts stabilize higher / SUR decays to zero after rod withdrawal

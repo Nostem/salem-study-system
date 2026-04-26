@@ -40,6 +40,11 @@ Per IOP-7, before de-tensioning the first Rx Head Stud (entering MODE 6):<br>
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q34</div>
+Fuel Transfer Cart interlocks: two conditions must be met for cart movement — <span class="hi-exam">upender must be in the horizontal position AND the Fuel Transfer Tube Gate Valve must indicate open (via the open limit switch)</span>. With a failed limit switch (no open indication), the cart can be moved <span class="hi-exam">MANUALLY ONLY (not electrically)</span>. The Fuel Transfer Tube Gate Valve <span class="hi-exam">can NOT be fully closed with the cart in the Fuel Handling Building</span> — the cart must be inside containment. <span class="hi-trap">Administrative verification that the gate valve is open does NOT satisfy the electrical interlock. If the limit switch fails, the electrical interlock prevents electrical cart movement even though the valve is physically open.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q68</div>
 Canal gate valve mechanical interlock: the valve can ONLY be <span class="hi-exam">FULLY closed when the fuel transfer cart is inside containment</span>. Per AB.FUEL-0001, the canal gate valve will be closed during any fuel handling incident. <span class="hi-trap">The interlock requires the cart to be inside containment — not in the Fuel Handling Building — for the valve to fully close.</span>
 </div>
@@ -47,7 +52,7 @@ Canal gate valve mechanical interlock: the valve can ONLY be <span class="hi-exa
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[FHV]], [[Radiation Monitoring]]
-- Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
+- Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.FUEL-0002 — Loss of Refueling Cavity or SFP Level]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related exam questions: [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2018 Q34]], [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

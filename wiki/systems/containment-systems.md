@@ -83,6 +83,11 @@ Each unit includes: motor, fan, motor heat exchanger, cooling coils, roughing fi
 | Restoration Time | <span class="val-trip">1 hour</span> | TS 3.6.1.4 |
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q32</div>
+LCO 3.6.1.4 (CONTAINMENT INTERNAL PRESSURE) is NOT met when containment pressure exceeds <span class="hi-exam"><span class="val-alarm">+0.3 psig</span></span>. Restoration time is <span class="hi-exam"><span class="val-trip">60 minutes</span> (1 hour)</span> or place the Unit in HOT STANDBY within 6 hours. <span class="hi-trap">Trap: BEZEL Hi CNTMT Pressure Alarm is 0.2 psid — do not confuse the alarm setpoint (0.2) with the TS limit (+0.3 psig). Other LCOs have 30-minute restoration times (LCOs 3.2.1, 3.2.4, 3.4.10.2, 3.7.2) — do not confuse with the 60-minute LCO 3.6.1.4 time.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q33</div>
 PRT rupture disk relief to containment raises containment pressure and temperature. After one hour at 0.1 psig/5 min rise: 0 + 1.2 = <span class="hi-exam">1.2 psig exceeds the +0.3 psig upper limit</span> (LCO 3.6.1.4). At 1 &deg;F/5 min rise: 99 + 12 = <span class="hi-exam">111 &deg;F does NOT exceed the 120 &deg;F limit</span> (LCO 3.6.1.5). <span class="hi-trap">Trap: the -1.5 psig is the NEGATIVE pressure limit, not a general magnitude — the positive limit is only 0.3 psig. Also: containment air temperature limit is 120 &deg;F, not 110 &deg;F.</span>
 </div>
@@ -269,7 +274,7 @@ EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free vol
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
+- Related exam questions: [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

@@ -41,6 +41,11 @@ Per S2.OP-AR.ZZ-0012, an <span class="hi-exam">Urgent Failure alarm prevents all
 ### PRIMARY WATER FLOW DEVIATION
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q31</div>
+Primary Water Flow Deviation Alarm setpoint: <span class="hi-exam"><span class="val-alarm">&plusmn;5.0 gpm</span></span> above the setpoint. <span class="hi-trap">Boric Acid Flow Deviation alarm setpoint is &plusmn;0.8 gpm — common distractor.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q3</div>
 Primary Water Flow Deviation Alarm setpoint: <span class="hi-exam"><span class="val-alarm">&plusmn;5.0 gpm</span></span> above the setpoint. <span class="hi-trap">Boric Acid Flow Deviation alarm setpoint is &plusmn;0.8 gpm — do not confuse the two deviation alarm setpoints.</span>
 </div>
@@ -48,5 +53,5 @@ Primary Water Flow Deviation Alarm setpoint: <span class="hi-exam"><span class="
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[CVCS]]
-- Related exam questions: [[2019 Q3]], [[2023 Q55]], [[2020 Q38]]
-- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2018 Q31]], [[2019 Q3]], [[2023 Q55]], [[2020 Q38]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]

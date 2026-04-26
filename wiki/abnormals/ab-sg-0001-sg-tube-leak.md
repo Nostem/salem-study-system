@@ -54,10 +54,15 @@ Step 3.37.B subcooling calculation with subcooling monitor NOT functional: conve
 SGTR event with stuck-open MSIV: crew responds to valid SG tube leak on 23 SG, implements CAS to trip reactor and initiate SI, enters 2-EOP-SGTR-1. <span class="hi-exam">23 MS167 fails to close from control room</span>. After isolating the other three MSIVs, loud roaring noise heard — <span class="hi-exam">23 SG pressure 850 psig and lowering rapidly, steam flows 12% and rising</span>. This creates an uncontrolled release path (RCS through ruptured tube through open MSIV to atmosphere) = <span class="hi-exam">Site Area Emergency classification</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q15</div>
+Step 3.31: set the affected MS10 (MS PWR RELIEF Vlv) setpoint to <span class="hi-exam"><span class="val-alarm">1045 psig</span></span> by depressing button <span class="hi-exam">A</span> on the controller. <span class="hi-trap">Trap: button B raises the manual output to open the valve more — it does NOT change the controller setpoint. 1070 psig is the MS15 (MSSV) lift setpoint, not the AB.SG-0001 MS10 adjusted setpoint.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RCS]]
-- Related exam questions: [[2019 Q69]], [[2023 Q81]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]]
+- Related exam questions: [[2018 Q15]], [[2019 Q69]], [[2023 Q81]]
 - Related JPMs: [[2019 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

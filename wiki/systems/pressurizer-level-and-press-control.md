@@ -23,6 +23,16 @@ aliases:
   - Safety valves lift at <span class="val-trip">2485 psig</span>
 - (UFSAR T5.2-1)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q5</div>
+PZR heaters de-energize based on <span class="hi-exam">PZR low level (at <span class="val-trip">17%</span>)</span>, NOT on an SI signal. Although the SI signal causes many automatic actions, PZR heater de-energization is NOT one of them. <span class="hi-trap">Trap: candidates may confuse this with the many SI-actuated functions and incorrectly believe SI directly de-energizes the heaters.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q9</div>
+PZR pressure control sequence during a rising pressure transient: spray valves begin opening at <span class="val-normal">2260 psig</span>, <span class="hi-exam">spray valves fully open at <span class="val-normal">2310 psig</span></span>. PORVs close setpoint is <span class="hi-exam"><span class="val-normal">2315 psig</span></span>. PORVs open at <span class="val-trip">2335 psig</span>. MPC at 100% output when PZR pressure reaches <span class="hi-exam">2355 psig</span>. At 2312 psig: <span class="hi-exam">spray valves fully open</span>. At 2340 psig: <span class="hi-exam">PORVs open</span>. <span class="hi-trap">Trap: 2315 psig is the PORV CLOSE setpoint (not the spray full-open setpoint). Candidates may confuse the 2315 psig value.</span>
+</div>
+
 ## Pressurizer Heater Power Supplies
 
 <div class="callout callout-exam">
@@ -112,7 +122,7 @@ EOP-SGTR-1 Step 19 RCS depressurization using normal spray. Open <span class="hi
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
-- Related exam questions: [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
+- Related exam questions: [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
 - Related JPMs: [[2019 JPM Sim-c]], [[2022 JPM IP-i]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

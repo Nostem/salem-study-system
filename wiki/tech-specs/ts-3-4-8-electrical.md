@@ -123,12 +123,19 @@ SR 4.8.1.1.1.a (verify independent AC circuits) timing when one EDG is inoperabl
 <div class="callout-label">LCO 3.8.1.2</div>
 As a minimum, the following AC sources shall be OPERABLE:<br>
 a. One circuit between offsite network and onsite distribution<br>
-b. One diesel generator with fuel supply
+b. Two separate and independent diesel generators with fuel supply
 </div>
 
 **Applicability:** Modes 5 and 6
 
-**Action:** With less than required, suspend CORE ALTERATIONS, handling of irradiated fuel, and operations with positive reactivity changes. Immediately initiate action to restore.
+**Action:**
+- **REQUIRED ACTION A:** With one or more required DGs inoperable, declare affected required features inoperable OR suspend CORE ALTERATIONS, handling of irradiated fuel, and operations with positive reactivity changes
+- **REQUIRED ACTION B:** With ALL REQUIRED EDGs inoperable, IMMEDIATELY suspend all operations involving positive reactivity changes
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q21</div>
+<span class="hi-exam">LCO 3.8.1.2 requires a minimum of TWO separate and independent diesel generators to be OPERABLE</span> in Modes 5 and 6. <span class="hi-trap">Trap: LCO 3.8.1.1 (Operating) requires THREE DGs — LCO 3.8.1.2 (Shutdown) requires only TWO.</span> REQUIRED ACTION A provides an option to only declare affected features inoperable, but <span class="hi-exam">REQUIRED ACTION B requires IMMEDIATELY suspending all operations involving positive reactivity changes when ALL REQUIRED EDGs are inoperable</span>.
+</div>
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.1.2 AC Sources (Shutdown)</summary>
@@ -247,7 +254,7 @@ LCO 3.8.2.3 battery cell voltage: with 3 connected cells at 0 Volts, battery doe
 ## Connections
 
 - Related systems: [[500KV]], [[4KV]], [[EDGs]], [[DC Power]], [[115V AC]]
-- Related exam questions: [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]]
+- Related exam questions: [[2018 Q21]], [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]]
 - Related JPMs: [[2020 JPM SRO-A3]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

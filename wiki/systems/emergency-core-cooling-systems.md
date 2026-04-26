@@ -25,6 +25,11 @@ The ECCS provides borated water to cool the reactor core in the event of a loss-
 
 The SI signal initiates: reactor trip, diesel generator start, safeguards sequence, and Phase A containment isolation. (UFSAR 6.3.2)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q5</div>
+Automatic SI actuation setpoints: <span class="hi-exam">PZR Pressure &lt; <span class="val-trip">1765 psig</span></span> (2/3 coincidence) OR <span class="hi-exam">Containment Pressure &gt; <span class="val-trip">4 psig</span></span> (2/3 coincidence). At 11:00 with Containment Pressure 4.1 psig, the Hi Containment Pressure SI setpoint is exceeded — this is the <span class="hi-exam">earliest SI signal</span> (PZR pressure at 1864 psig has not yet reached the 1765 psig setpoint). <span class="hi-trap">Trap: candidates may look only at PZR pressure and miss the Containment Pressure signal being satisfied first.</span>
+</div>
+
 ## ECCS Components
 
 ### Accumulators (Passive — Cold Leg Injection)
@@ -188,6 +193,11 @@ At <span class="val-alarm">15.2 ft</span> RWST level (2/4 RWST level channels), 
 At <span class="hi-exam">RWST level < 15.2 ft on 2/4 channels</span>, Unit 2 semi-automatic switchover opens <span class="hi-exam">SJ113 valves (SI to Charging Pump Crossover)</span> automatically because they are "armed" in the normal 100% power ECCS lineup. <span class="hi-trap">SJ44s (RHR Pump Sump Suction) require manual arming by the operator first — they are NOT automatically armed at normal power. Unit 1 has an interlock requiring RH4 closed before SJ44 opens.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q4</div>
+RWST Level LO alarm triggers the start of cold leg recirculation transfer (IAW EOP-LOCA-1). <span class="hi-exam">21SJ44 and 22SJ44 (Containment Sump Suction Valves) each serve one RHR pump independently</span>. With 21SJ44 closed, <span class="hi-exam">ONLY 22 RHR pump</span> can draw suction from the containment sump. <span class="hi-trap">Trap: unlike some other ECCS suction arrangements (e.g., SJ1/SJ2 for CCPs where both can take suction from RWST if one fails), the containment sump suction valves are NOT cross-connected — each SJ44 serves only its associated RHR pump.</span>
+</div>
+
 ### Changeover to Recirculation Phase
 1. Containment sump level shows adequate submergence of sump strainer
 2. RWST level low alarm alerts operator
@@ -263,6 +273,11 @@ LBLOCA with <span class="hi-exam">auto SI failure on both trains</span> (CT#1, C
 ECCS subsystem composition: each of the two independent ECCS subsystems includes <span class="hi-exam">one centrifugal charging pump (high-head)</span>, one SI pump (intermediate-head), and one RHR pump + HX (low-head). <span class="hi-exam">The 23 Charging Pump (positive displacement) is NOT part of an ECCS subsystem</span> — it counts only toward TS 3.1.2.4 (Charging Pumps for reactivity control). Loss of one centrifugal charging pump = one ECCS subsystem inoperable → TS 3.5.2 applies (72 hours to restore, then Hot Shutdown in 12 hours).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q48</div>
+EOP-TRIP-1 Step 19 ECCS Flow Evaluation: <span class="hi-exam">SI CHG FLOW METER > 100 gpm satisfies the ECCS flow requirement</span> even if SI Flow reads 0 gpm, provided RCS Pressure is > <span class="hi-exam">1540 psig (non-adverse)</span>. At higher RCS pressures, SI pumps have not yet overcome RCS pressure — charging flow alone provides the required ECCS injection. <span class="hi-trap">Trap: do not conclude ECCS flow is NOT established just because SI Flow is zero — check charging flow AND RCS pressure threshold.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 Sim-d</div>
 SI Accumulator makeup using 21 SI Pump (S2.OP-SO.SJ-0002 Section 5.2): prerequisite <span class="hi-exam">ALL RCS Cold Leg Temps >312°F</span>. Start 21 SI Pump → open <span class="hi-exam">2SJ53 (discharge test line)</span> → open <span class="hi-exam">2SJ123 (test line to CVCS HUT)</span> → open <span class="hi-exam">21SJ20 (accumulator fill)</span>. Close 21SJ20 when level reaches <span class="hi-exam">60%</span>. CAUTION: do NOT cross-tie accumulators while OPERABILITY required. If RCS pressure &lt;2000 psig, must close <span class="hi-exam">21SJ134 (Cold Leg Discharge)</span> first — may require TSAS 3.5.2 entry.
@@ -277,7 +292,7 @@ EOP-LOCA-5 Figure A — Minimum ECCS Flow Versus Time After Trip: at <span class
 
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
-- Related exam questions: [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
+- Related exam questions: [[2018 Q4]], [[2018 Q5]], [[2018 Q48]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -45,6 +45,19 @@ During ECCS pump reduction for vital bus redundancy: <span class="hi-exam">22 SI
 Step 14 NOTE — voiding identification during depressurization: without RCPs running, the upper head remains relatively hot compared with the active regions of the RCS. Steam formation during depressurization in the upper head <span class="hi-exam">displaces water into the Pressurizer, causing rapidly increasing Pressurizer level</span>. <span class="hi-trap">Rising PZR level (not lowering SI flow, rising RCS pressure, or lowering subcooling) is the procedural indication for voiding per EOP-LOCA-2.</span>
 </div>
 
+### Step 29 — Natural Circulation Monitoring
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q50</div>
+EOP-LOCA-2 Step 29 natural circulation evaluation requires ALL of the following:<br>
+&bull; <span class="hi-exam">RCS Subcooling based on CETs > 0&deg;F</span><br>
+&bull; <span class="hi-exam">SG Pressure stable or lowering</span><br>
+&bull; <span class="hi-exam">RCS T<sub>HOT</sub> stable or lowering</span><br>
+&bull; <span class="hi-exam">CETs stable or lowering</span><br>
+&bull; <span class="hi-exam">SG pressure at saturation pressure for RCS T<sub>COLD</sub></span><br>
+Example: CETs 600&deg;F, RCS 1645 psig (T<sub>SAT</sub> = 609&deg;F → subcooling = 9&deg;F), T<sub>COLD</sub> 509&deg;F (P<sub>SAT</sub> = 725 psig matches SG pressure) → natural circulation IS established. If NOT established, <span class="hi-exam">raise steam dumping rate</span> (increases SG heat removal → promotes natural circulation flow). <span class="hi-trap">Trap: lowering steam dumping rate raises SG pressure, which REDUCES the temperature differential and works AGAINST natural circulation.</span>
+</div>
+
 ### CAS — ECCS Pump Restart Criteria
 
 <div class="callout callout-exam">
@@ -62,6 +75,6 @@ EOP-LOCA-2 POST Step 22 Charging Pump Reduction with 2 SI Pumps running, 1 RCP r
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[CVCS]], [[Pressurizer & PRT]]
-- Related exam questions: [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]]
+- Related exam questions: [[2018 Q50]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]]
 - Related JPMs: [[2023 JPM Sim-c]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

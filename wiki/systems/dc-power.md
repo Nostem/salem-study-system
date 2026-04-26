@@ -116,8 +116,13 @@ Confirms 2020 Q13: with OHA B-2 "2A 125 VDC CNTRL BUS VOLT LO" and 2A Vital 125 
 LCO 3.8.2.3 battery cell parameters: with 3 connected cells at Float Voltage of <span class="hi-exam">0 Volts, battery does NOT meet Category B and C limits</span>. <span class="hi-exam">Required Actions C (24 hrs to restore), D (2 hrs to restore), and F (6 hrs to Hot Standby if D not met) all apply simultaneously</span>. D and F are most limiting: 2 hours to restore + 6 hours to Hot Standby = <span class="hi-exam">8 hours maximum from time of discovery</span>. <span class="hi-trap">Trap: Action C allows 24 hours for Category B/C limit restoration, but Action D (connected cells at 0V) is more limiting at only 2 hours. Candidates who use 24 hours get the wrong answer by one full day.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q20</div>
+250 VDC system loads: the <span class="hi-exam">Main Turbine Emergency Oil Pump is powered from the 250 VDC Battery and Charger System</span>. The following are powered from the <span class="hi-exam">125 VDC</span> system (NOT 250 VDC): Field Excitation Circuitry for the EDGs, Vital Instrument Bus Inverters, and Emergency Lighting Inverters. <span class="hi-trap">Know which loads are on each DC voltage level (28V, 125V, 250V). The 250V system primarily powers large DC motors like the turbine turning gear and the Main Turbine Emergency Oil Pump.</span>
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.8 — Electrical]]
-- Related exam questions: [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

@@ -77,6 +77,11 @@ Unit 1 — 1A 4KV Vital Bus powers <span class="hi-exam">15 and 16 SW Pumps</spa
 ## 2B 4KV Bus Loads
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q22</div>
+Confirms 2B bus powers <span class="hi-exam">22 RHR Pump</span> and 2C bus powers <span class="hi-exam">22 SI Pump</span>. With EDG 2B unable to start following RT/SI + LOOP: 2A and 2C buses powered from their EDGs, 2B bus de-energized. Result at 15 minutes: <span class="hi-exam">22 RHR Pump stopped (2B bus), 22 SI Pump running (2C bus)</span>.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q12</div>
 Key loads on the 2B 4KV Vital Bus include: <span class="hi-exam">22 RHR Pump</span>. During a Reactor Trip + SI coincident with LOOP with EDG 2C unavailable, 2A and 2B buses are powered from EDG 2A and EDG 2B. <span class="hi-exam">22 RHR Pump (2B bus) is running; 22 SI Pump (2C bus) is stopped</span> because EDG 2C cannot be started. <span class="hi-trap">Common confusion: 22 RHR is on the B bus (not C), and 22 SI is on the C bus (not B). Pump number does NOT always match bus letter.</span>
 </div>
@@ -107,11 +112,16 @@ MSLB + LOOP with 2C 4KV Vital Bus lost (OHA J-3, 2C 4KV VTL BUS DIFF PROT): conf
 4KV Group Bus transfer from SPT to APT (S2.OP-SO.4KV-0008): verify APT voltage <span class="hi-exam">4.22 - 4.36KV</span>. P&L 3.3: OHA J-39 (GROUP BUS XFER FAIL) illuminates then clears during normal transfer. <span class="hi-exam">Alternate path: 2G Group Bus fails to transfer</span>, de-energizing bus and tripping <span class="hi-exam">24 RCP</span>. OHA alarms: J-8 (2G 4KV GRP BUS DIFF/OVRLD), J-38 (4KV GRP BUS UNDRVOLT), J-39, D-31 (24 RCP BKR OPEN/FLO LO). ARP for J-38 or D-31: IF ANY RCP trips → <span class="hi-exam">TRIP Reactor → GO TO EOP-TRIP-1</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q19</div>
+SPT failure to 0 VAC transfer behavior: when 23 SPT fails to 0 VAC, the SPT transfer relay de-energizes, enabling automatic fast bus transfer. The 23 SPT Supply Breaker (23ASD) opens at <span class="hi-exam">&lt; <span class="val-trip">70%</span> of normal voltage</span> (fast bus transfer relay setpoint). After 23ASD opens, the <span class="hi-exam">35% permissive</span> allows 24ASD to close, transferring the 2A 4KV Vital Bus to <span class="hi-exam">24 SPT</span>. <span class="hi-trap">Trap: EDG 2A does NOT power the bus in this case — the alternate SPT (24 SPT) is available and the SPT transfer relay de-energized (enabling auto transfer). EDG start only occurs when BOTH SPT infeed breakers are open. 35% is the permissive setpoint for the alternate SPT breaker to close, NOT the trip setpoint for the normal SPT breaker.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]]
-- Related exam questions: [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
+- Related exam questions: [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
 - Related JPMs: [[2022 JPM Sim-g]], [[2020 JPM Sim-h]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

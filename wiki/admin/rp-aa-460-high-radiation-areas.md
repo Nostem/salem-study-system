@@ -45,9 +45,16 @@ HRA entry requirements for Unit 1 Pipe Alley (84 ft Aux Building): per Radiologi
 Unit 1 Pipe Alley (Elevation 84 ft, Auxiliary Building) entry for locked valve surveillance: area posting is <span class="hi-exam">HRA and Contaminated Area (CA)</span> per Survey Map #1108410. Highest On Contact dose rate = <span class="hi-exam">205 mrem/hr</span> (HRA threshold: > 100 mR/hr at 30 cm). Per P&Ls 2.1.1 and 2.1.3, operators sign onto RWP-1 and receive an HRA brief from Rad Pro before entry.
 </div>
 
+### Unlocked/Unmanned LHRA Response
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q45</div>
+Per RP-AA-460 P&L: upon finding an unlocked and unmanned LHRA, <span class="hi-exam">notify RP immediately, then RETURN to the area and maintain positive control</span> (without personal endangerment) until an RP representative arrives. The Licensed Operator <span class="hi-exam">IS required to return</span> — merely notifying RP is not sufficient. LHRA dose rate threshold: greater than a MINIMUM of <span class="hi-exam">1000 mrem/hr @ 30 cm</span>. <span class="hi-trap">Trap: 100 mrem/hr is the HRA threshold, not LHRA. The return-and-control requirement is a commonly tested duty of Licensed Operators.</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[RP-AA-203 — Exposure Control and Authorization]], [[RP-SA-102 — Containment Entries at Power]], [[OP-AA-108-101-1002 — Independent/Concurrent Verification]], [[RP-AA-463 — High Radiation Area Key Controls]], [[RP-AA-300 — Radiological Survey Program]]
-- Related exam questions: [[2019 Q98]], [[2022 Q72]]
+- Related exam questions: [[2018 Q45]], [[2019 Q98]], [[2022 Q72]]
 - Related JPMs: [[2019 JPM RO-A3]], [[2019 JPM SRO-A4]], [[2022 JPM SRO-A4]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

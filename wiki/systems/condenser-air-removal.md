@@ -14,6 +14,11 @@ aliases:
 Maintains condenser vacuum by removing non-condensable gases. Includes air ejectors and vacuum monitoring.
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q36</div>
+<span class="hi-exam">Excessively high Vacuum Pump Seal Water Temperature can cause Main Condenser vacuum to degrade</span> — as seal water temperature increases, vacuum pump performance decreases. <span class="hi-trap">Excessively LOW TAC supply temperature, excessively HIGH seal water flow, and separating tank overflow all cause seal water temperature to LOWER, which would actually IMPROVE condenser vacuum (not degrade it).</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q63</div>
 When swapping condenser vacuum pumps per S2.OP-SO.AR-0001: if the <span class="hi-exam">AR25 (Air Ejector Suction Isolation Valve) remains OPEN</span> when a vacuum pump is stopped, <span class="hi-exam">condenser backpressure rises</span> (loss of condenser vacuum). Per the procedural caution, contingency plans include <span class="hi-exam">restarting the vacuum pump OR immediately manually closing the AR23/AR25 valve</span>. <span class="hi-trap">Backpressure rising = vacuum lowering. These are the same condition described differently. A rising backpressure means worsening condenser vacuum, not improving it.</span>
 </div>
@@ -27,6 +32,6 @@ Event 2: <span class="hi-exam">24 Vacuum Pump trips</span> during load reduction
 
 - Related systems: [[Main Turbine]]
 - Related procedures: [[AB.COND-0001 — Loss of Condenser Vacuum]], [[S2.OP-SO.AR-0001 — Condenser Air Removal System Operation]]
-- Related exam questions: [[2019 Q92]], [[2020 Q63]]
+- Related exam questions: [[2018 Q36]], [[2019 Q92]], [[2020 Q63]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]

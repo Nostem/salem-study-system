@@ -82,11 +82,22 @@ Main turbine fails to auto trip AND fails to manually trip following reactor tri
 EOP-SGTR-1 RCS cooldown with steam dumps unavailable (permissive light NOT illuminated on 2RP4): Step 10 directs cooldown using <span class="hi-exam">MS10 atmospheric relief valves on intact SGs (21, 22, 23)</span>. Table B determines target temperature based on ruptured SG pressure — <span class="hi-exam">1045 psi → 503°F target</span>. Lower MS10 setpoints on intact SGs to fully open for maximum-rate cooldown. When hottest CET reaches 503°F, stop cooldown by matching MS10 setpoints to current SG pressures. Do NOT dump steam from the ruptured 24 SG.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q15</div>
+MS10 setpoint adjustment during SG tube leak: IAW AB.SG-0001 Step 3.31, the affected MS10 setpoint is lowered to <span class="hi-exam"><span class="val-alarm">1045 psig</span></span>. Button <span class="hi-exam">A</span> on the MS10 controller raises the setpoint. <span class="hi-trap">Trap: 1070 psig is the MSSV (MS15) setpoint, not the AB.SG-0001 MS10 adjustment. Button B raises the manual output to open the valve more — it does NOT change the setpoint.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q16</div>
+Main Steam warmup (S2.OP-SO.MS-0001): <span class="hi-exam">MS7 drain valves are opened BEFORE MSIVs (MS167)</span> to prevent water hammer from pressurized steam forcing residual water in the piping. MSIVs are opened when less than a MAXIMUM of <span class="hi-exam">50 psid</span> across each valve. <span class="hi-trap">Trap: 15 psig is used for other MS Header pressure steps in SO.MS-0001, not the MSIV opening delta-P criterion.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Dumps]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
+- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
+- Related exam questions: [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

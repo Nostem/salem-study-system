@@ -64,6 +64,11 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 *Unit 2 piping downstream of 2RH75 & 76 designed to 600 psig.
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q3</div>
+RHR system physical connections: RHR Pumps take suction from the <span class="hi-exam">21 Hot Leg</span> and can be aligned to discharge into the <span class="hi-exam">23 and 24 Hot Legs</span>. The suction and discharge connections are NOT on the same loops — suction is from Loop 1, discharge is to Loops 3 and 4.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q4</div>
 During solid plant operations in MODE 5, throttling 22RH18 (RHR HX Outlet Valve) more CLOSED and 2RH20 (RHR HX Bypass Valve) more OPEN reduces flow through the RHR HX → <span class="hi-exam">RCS temperature rises → RCS pressure rises</span> (water is incompressible in solid plant conditions). To restore pressure: <span class="hi-exam">throttle 2CV18 (Low Pressure Letdown Control Valve) more OPEN</span> to increase letdown flow. <span class="hi-trap">Solid plant pressure control is maintained by adjusting letdown (not charging). Throttling CV18 more closed would RAISE RCS pressure, not lower it.</span>
 </div>
@@ -157,7 +162,7 @@ During LOCA outside containment (EOP-LOCA-6), the crew is MOST concerned with <s
 
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
-- Related exam questions: [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
+- Related exam questions: [[2018 Q3]], [[2018 Q4]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

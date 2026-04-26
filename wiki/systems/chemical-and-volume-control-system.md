@@ -28,7 +28,8 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 - **Positive Displacement Charging Pump:** 1 per unit (23). Powered from 460V bus.
 - **Letdown Orifices:** Control letdown flow rate
 - **Letdown Heat Exchanger:** Cools letdown flow (via CCW) before processing
-- **Mixed Bed Demineralizers:** Remove ionic impurities and fission products
+- **Mixed Bed Demineralizers:** Remove ionic impurities and fission products. The Cation Demineralizer is used for Lithium removal and pH control (not the mixed bed).
+- **Cation Demineralizer:** Removes Lithium from the RCS and maintains RCS pH
 - **Volume Control Tank (VCT):** Surge volume for charging/letdown mismatch. Hydrogen cover gas for dissolved gas control.
 - **Boric Acid Tanks (BATs):** Store concentrated boric acid solution (6560–6990 ppm per TS). Solution temperature maintained ≥63°F to prevent precipitation.
 - **Boric Acid Transfer Pumps:** Transfer boric acid from BATs to RCS
@@ -41,6 +42,16 @@ Controls RCS chemistry, inventory, and boron concentration. Provides charging fl
 - **Boration:** Transfers boric acid from BATs to charging pump suction
 - **Automatic Makeup:** Maintains VCT level by automatically adjusting primary water and boric acid flows
 (UFSAR 9.3.4.2.4)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q31</div>
+2CV179 (PRIMARY WATER FLOW) <span class="hi-exam">fails CLOSED on loss of 125 VDC power</span>. During auto makeup with CV179 failed closed, only boron flows through the blender (no primary water dilution) → <span class="hi-exam">actual RCS boron concentration rises</span> → negative reactivity inserted → <span class="hi-exam">Source Range NI Audible Count Rate indication lowers</span>. <span class="hi-trap">If CV179 failed OPEN, primary water flow would dilute → RCS boron lowers → positive reactivity → SR audible count rate rises.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q40</div>
+VCT Level Transmitter 2LT-112 failure to 80%: <span class="hi-exam">CV-35 fully diverts to CVCS Holdup Tanks at 87%</span> (no modulation). With LT-112 at 80% (below 87%), <span class="hi-exam">CV-35 remains fully aligned to VCT</span> and actual VCT level is stable. <span class="hi-exam">LT-112 is the controlling transmitter for AUTO MAKE-UP</span> — with LT-112 failed at 80%, auto make-up will NOT start even if actual VCT level reaches the auto make-up setpoint. <span class="hi-trap">If LT-114 had failed to 80% instead, CV-35 would divert to holdup tanks (LT-114 controls CV-35) and VCT level would lower. LT-112 controls auto make-up; LT-114 controls CV-35 divert.</span>
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q3</div>
@@ -151,6 +162,11 @@ If <span class="hi-exam">2TE-130 (temperature detector for 2CC71, Letdown HX Tem
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q2</div>
+Mixed bed demineralizer function: <span class="hi-exam">removes chemical impurities from the RCS</span> (NOT Lithium control — the Cation Demineralizer provides Lithium removal and pH control). <span class="hi-exam">Boron removal is more efficient at lower temperatures.</span> When 2CC71 malfunctions and letdown temperature rises to 130&deg;F, the demineralizer <span class="hi-exam">releases boron into the RCS</span> → negative reactivity insertion → <span class="hi-exam">RCS TAVG lowers</span> (with Rod Bank Selector in MANUAL, no automatic rod withdrawal to compensate). <span class="hi-trap">Trap: candidates may think the demineralizer absorbs more boron at higher temps (it does the opposite). Also: Cation Demin is for Lithium/pH, not mixed bed.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q45</div>
 <span class="hi-exam">23 charging pump is supplied from the 2A 460V bus.</span> Loss of the 2A 460V MCC de-energizes 23 charging pump, causing loss of charging flow and letdown isolation. Per S2.OP-AB.460-0001: start a centrifugal charging pump and restore PZR level, then re-establish letdown.
 </div>
@@ -190,6 +206,16 @@ Per AB.CVC-0001 step 3.50, with <span class="hi-exam">no Unit 2 Charging Pumps a
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 Sim-c</div>
 EOP-LOCA-2 auxiliary spray depressurization: open <span class="hi-exam">2CV75 (Aux Spray Valve)</span>, close <span class="hi-exam">2CV77 (Charging to Loop 23) and 2CV79 (Charging to Loop 24)</span> to redirect charging flow through the aux spray line to the pressurizer. Restore by closing 2CV75 and reopening 2CV77 or 2CV79.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q28</div>
+Spurious Phase A Containment Isolation at 100% power with 1CV5 (75 GPM ORIFICE) in service: <span class="hi-exam">1CV284 & 1CV116 (RCP Seal Water Return Horizontal Stop Valves) close on Phase A</span>, blocking the normal seal return path to the VCT. Seal return flow is redirected to the <span class="hi-exam">PRT via Relief Valve 1CV15</span>. Letdown is isolated by closing <span class="hi-exam">1CV5 and 1CV7</span> (Phase A isolation valves). <span class="hi-trap">Trap: 1CV2 and 1CV277 (Letdown Line Isolation Valves) close on LOW PZR LEVEL — NOT on Phase A. Do not confuse CV2/CV277 interlocks with the letdown orifice (CV5) and HX inlet (CV7) Phase A isolation.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q29</div>
+Confirms charging pump power supplies: <span class="hi-exam">21 Centrifugal Charging Pump — 2B 4KV Vital Bus; 22 Centrifugal Charging Pump — 2C 4KV Vital Bus</span>. With three 4KV Vital Buses powering two trains of ECCS pumps, the bus-to-pump mapping must be memorized — pump number does NOT always correspond to bus letter.
 </div>
 
 <div class="callout callout-exam">
@@ -237,7 +263,7 @@ Emergency boration during CR Evacuation (AB.CR-0001, Attachment 5, Step 10): clo
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related exam questions: [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
+- Related exam questions: [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
 - Related JPMs: [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -23,6 +23,13 @@ The steam dump system dumps steam directly to the main condenser to prevent a re
 - Cooldown mode: controlled by steam pressure for controlled cooldown rate
 (UFSAR 7.7.2.7)
 
+## Steam Dump Controllers
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q35</div>
+Steam dump controller selection depends on which Reactor Trip Breaker opens: <span class="hi-exam">Plant Trip Controller activates when Reactor Trip Train B Breaker opens</span>. <span class="hi-exam">Load Rejection Controller activates when ONLY Reactor Trip Train A Breaker opens</span> (or neither breaker opens). The <span class="hi-exam">Load Rejection Controller has a 5&deg;F dead band</span> — it will stabilize RCS T<sub>AVG</sub> at <span class="hi-exam"><span class="val-normal">552&deg;F</span> (547&deg;F no-load T<sub>AVG</sub> + 5&deg;F)</span>. The <span class="hi-exam">Plant Trip Controller has NO dead band</span> and will restore T<sub>AVG</sub> to <span class="val-normal">547&deg;F</span> (no-load T<sub>AVG</sub>). <span class="hi-trap">Trap: confusing which controller has the dead band (Load Rejection, not Plant Trip) and which trip breaker activates each controller (Train B = Plant Trip, Train A only = Load Rejection).</span>
+</div>
+
 ## Power Supplies and Failure Modes
 
 <div class="callout callout-exam">
@@ -59,7 +66,7 @@ EOP-FRHS-1 condensate pump feed: isolate all MS lines EXCEPT the selected SG (22
 
 - Related systems: [[Main Steam]], [[RCS]], [[115V AC]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
+- Related exam questions: [[2018 Q35]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
 - Related JPMs: [[2023 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

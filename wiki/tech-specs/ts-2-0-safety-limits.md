@@ -37,6 +37,11 @@ RCS pressure shall not exceed <span class="hi">2735 psig</span>.
 - Modes 1 and 2: Be in Hot Standby with RCS pressure within limit within <span class="val-trip">1 hour</span>
 - Modes 3, 4, and 5: Reduce RCS pressure to within limit within <span class="val-trip">5 minutes</span>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q43</div>
+SL 2.1.2 RCS Pressure Safety Limit = <span class="hi-exam">2735 psig</span>. Mode 3 action: reduce RCS pressure within limit within <span class="hi-exam">5 minutes</span>. Modes 1 and 2 action: within <span class="hi-exam">1 hour</span> (60 minutes). <span class="hi-trap">Trap: 2485 psig is the PZR safety valve setpoint, NOT the RCS Safety Limit. Candidates confuse 5 minutes (Modes 3-5) with 60 minutes (Modes 1-2).</span>
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 2.1 Safety Limits</summary>
 <div class="callout callout-bases">
@@ -157,5 +162,5 @@ The actual nominal Trip Setpoint entered into the bistable is more conservative 
 
 - Related systems: [[RPS/SSPS]], [[RCS]]
 - Related concepts: [[Rx Vessel & Internals]], [[RCS]], [[ESF & Design]]
-- Related exam questions: [[2020 Q37]]
-- Related exam: [[2020 NRC Written Exam]]
+- Related exam questions: [[2018 Q43]], [[2020 Q37]]
+- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]]

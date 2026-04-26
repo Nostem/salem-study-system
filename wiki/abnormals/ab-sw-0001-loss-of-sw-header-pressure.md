@@ -15,6 +15,14 @@ Referenced in 2023 NRC Operating Exam simulator scenarios. Details to be backfil
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q24</div>
+AB.SW-0001 Attachment 4 — leak isolation based on location relative to 21SW22 (NUCLEAR HEADER):<br>
+&bull; <span class="hi-exam">Leak DOWNSTREAM of 21SW22 (Step 2.0): CLOSE 21SW22 and ENSURE CLOSE 21SW23 and 22SW23 (TIE VALVES)</span>. After isolation, SW cooling is NOT available to 21CFCU and 22CFCU.<br>
+&bull; <span class="hi-exam">Leak UPSTREAM of 21SW22 (Step 3.0): CLOSE 21SW22 and ENSURE OPEN 21SW23 and 22SW23 (TIE VALVES)</span> — maintains cross-header supply to the isolated header's loads.<br>
+<span class="hi-trap">Trap: tie valve position (open vs closed) depends entirely on whether the leak is upstream or downstream of 21SW22.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q16</div>
 OHA B-48 (<span class="hi-exam">SW VLV RM FLOODED</span>) indicates leak in SW valve room on <span class="hi-exam">78' Mechanical Penetration Area</span>. CFCU piping in this room before containment penetration.
 </div>
@@ -37,6 +45,6 @@ AB.SW-0001 Attachment 5 — isolating a SW leak on a CFCU: <span class="hi-exam"
 ## Connections
 
 - Related systems: [[Service Water]], [[CFCUs]]
-- Related exam questions: [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]]
+- Related exam questions: [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]

@@ -15,6 +15,16 @@ aliases:
 Provides clean, dry compressed air for instrument and control valve operation throughout the plant. Includes service air and station air subsystems.
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q25</div>
+CA330 (Containment Supply Inlet Valves) <span class="hi-exam">fail CLOSED on a loss of Control Air</span> (not on loss of 125 VDC or 28 VDC power). With BOTH 11CA330 and 12CA330 closed, <span class="hi-exam">each PZR PORV CAN still be operated</span> — each PORV has <span class="hi-exam">2 accumulators sized for 100 opening/closing cycles (50/accumulator)</span>. <span class="hi-trap">Trap: CA330s are Containment Isolation Valves — candidates may confuse their fail mode with a DC power loss, but they fail on loss of air, not loss of DC.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q26</div>
+ECAC automatic start setpoint: <span class="hi-exam"><span class="val-trip">&lt; 85 psig</span> control air pressure</span>. <span class="hi-trap">88 psig is the MANUAL start setpoint per AB.CA-0001 — not the auto start setpoint. At 86 psig, the ECAC has NOT reached its auto start setpoint.</span> To MANUALLY start the ECAC from the control room, the <span class="hi-exam">MINIMUM pushbutton manipulation is depressing A then B (two-button sequence)</span>. A single button (B ONLY) is not sufficient.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q53</div>
 SAC power supplies: <span class="hi-exam">#1 SAC from 1H 4KV Group Bus, #3 SAC from 1G 4KV Group Bus (both Unit 1), #2 SAC from 2G 4KV Group Bus (Unit 2)</span>. On loss of all Unit 1 4KV Group Buses, #1 and #3 SACs are lost but <span class="hi-exam">#2 SAC auto-starts (or continues running) and one SAC is capable of supplying BOTH units' station air and control air headers at approximately 100 psig</span>. ECACs auto-start at <span class="hi-exam">85-90 psig</span> and maintain headers if ALL SACs are lost.
 </div>
@@ -69,7 +79,7 @@ CA330 (Control Air Isolation Valves) operability and isolation: IAW <span class=
 - Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]]
 - Related procedures: [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]]
-- Related exam questions: [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
+- Related exam questions: [[2018 Q25]], [[2018 Q26]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
 - Related JPMs: [[2020 JPM IP-j]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]

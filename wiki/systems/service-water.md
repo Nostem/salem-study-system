@@ -59,6 +59,11 @@ Unit 1 SW pump power supplies: <span class="hi-exam">15 and 16 SW Pumps are powe
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q24</div>
+SW nuclear header leak isolation per AB.SW-0001 Attachment 4: when leak is <span class="hi-exam">downstream of 21SW22 (NUCLEAR HEADER)</span>, the crew will <span class="hi-exam">CLOSE 21SW22 and ENSURE CLOSE 21SW23 and 22SW23 (TIE VALVES)</span> (Step 2.0). After isolation, <span class="hi-exam">SW cooling is NOT available to 21CFCU and 22CFCU</span>. <span class="hi-trap">Trap: if the leak is UPSTREAM of 21SW22, the procedure directs OPEN the tie valves (Step 3.0) to maintain cross-header supply. Downstream = close ties; Upstream = open ties.</span> Only <span class="hi-exam">23 CFCU can be cooled by both SW headers</span> — 21 and 22 CFCUs are not cross-connected.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q52</div>
 SW Nuclear Header isolation with 21SW22 closed: <span class="hi-exam">EDG supply valves (21SW21 & 22SW21) are UPSTREAM of Nuclear Header Inlet Valves (21SW22 & 22SW22)</span> — closing 21SW22 does NOT isolate EDG SW supplies. All 3 EDGs remain supplied by both 21 and 22 SW Headers. For CFCUs: <span class="hi-exam">23 CFCU can be supplied from EITHER 21 or 22 SW Header (check valve locations)</span>, but the remaining CFCUs on the 21 Nuclear Header are isolated. Result: <span class="hi-exam">all 3 EDGs on both headers, only 3 CFCUs on 22 SW Header</span> (22, 24, 25 CFCUs + 23 CFCU via cross-connect). <span class="hi-trap">Not all 5 CFCUs can be supplied by either header — only 23 CFCU has the check valve arrangement allowing cross-header supply.</span>
 </div>
@@ -116,7 +121,7 @@ SW Nuclear Header leak location: with low SW pressure to loads on the <span clas
 ## Connections
 
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related exam questions: [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
+- Related exam questions: [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

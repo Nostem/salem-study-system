@@ -38,6 +38,11 @@ Actuated by:
 Closes main FW control valves (fast closure), bypass valves, and inlet stop valves. (UFSAR T7.2-1)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q37</div>
+21CN22 and 23CN22 (LP FW Heater Inlet Control Valves) spuriously close: <span class="hi-exam">2CN45 modulates open to maintain &lt;65 psid across 21 and 22 LP Heaters</span>. With CN45 modulated open (bypassing heaters), <span class="hi-exam">feedwater temperature lowers → reactor power rises</span> (cooler feedwater = positive reactivity from MTC). <span class="hi-exam">CN22 valves have indications ONLY in the Control Room — no controls</span>. The crew can NOT open 21CN22 or 23CN22 from the Control Room. <span class="hi-trap">Other CN valves (2CN45, 2CN47) CAN be operated from the Control Room — do not assume all CN valves have Control Room controls.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q8</div>
 High level in <span class="hi-exam">21A Low Pressure feedwater heater closes ONLY the associated 21CN22</span> inlet valve (not all three LP FW heater strings). With one LP FW heater string bypassed, <span class="hi-exam">cooler feedwater enters the reactor, raising actual reactor thermal power due to positive MTC effect</span>. NI power indication reads lower than actual because cooler moderator provides shielding to PR NIS. Reactor power should be determined from RCS delta-Ts, and turbine load reduced to prevent exceeding thermal power limits.
 </div>
@@ -148,11 +153,16 @@ On trip of both SGFPs, only the <span class="hi-exam">MDAFW pumps auto-start</sp
 <span class="hi-exam">23BF19 feedwater reg valve fails closed</span> (ramped over 1 minute) at 85% power. OHA alarms: G-15 ADFCS TRBL, G-23 21/22 SGFP SPEED DEVIATION, 23 SG Program Setpoint Deviation. Manual control attempts unsuccessful. Both SGFPs trip on SI actuation following reactor trip — <span class="hi-exam">SGFPs NOT available during EOP-FRHS-1</span>. Condensate recovery path: open selected SG BF40 or BF19 locally (120 ft elevation TGA), open BF13, open <span class="hi-exam">21 and 22 CN48 (SGFP bypass valves)</span>, close <span class="hi-exam">21 and 22 CN32 (SGFP suction valves)</span>. Feed flow established when SG pressure depressurized to <575 psig.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q17</div>
+SGFP suction pressure trip setpoints: <span class="hi-exam">SGFP trips when suction pressure &lt; <span class="val-trip">215 psig</span> for <span class="val-trip">10 seconds</span></span> (time-delayed trip). Instantaneous SGFP trip on low suction pressure at <span class="hi-exam">&lt; <span class="val-trip">190 psig</span></span> (no time delay). At 200 psig (between 190 and 215), the 10-second delay timer applies. After SGFP trip at >70% power, turbine runback to <span class="hi-exam"><span class="val-alarm">66%</span></span>. <span class="hi-trap">Trap: 50% is incorrect — each SGFP does NOT provide exactly 50% total flow. The 66% runback target confirms the SGFPs are not 50/50 load-shared.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
-- Related exam questions: [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
+- Related exam questions: [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

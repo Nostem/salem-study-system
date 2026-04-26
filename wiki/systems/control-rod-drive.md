@@ -27,6 +27,17 @@ These interlocks are duplicated here from [[RPS/SSPS]] (the master reference) fo
 
 Note: Automatic rod withdrawal is disabled at Salem. (UFSAR T7.2-2)
 
+## Rod Bank Selector Switch Speeds
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q30</div>
+Rod speeds by ROD BANK SELECTOR SWITCH position:<br>
+&bull; <span class="hi-exam">AUTO: 8 SPM (minimum) to 72 SPM (maximum)</span> — speed varies linearly with temperature error<br>
+&bull; <span class="hi-exam">SBA, SBB, SBC, SBD (Shutdown Banks): 64 SPM</span><br>
+&bull; <span class="hi-exam">CBA, CBB, CBC, CBD (Control Banks): 48 SPM</span><br>
+<span class="hi-trap">Trap: 72 SPM is the maximum speed in AUTO only — Control Bank positions (CBA) move at 48 SPM, NOT 72. Shutdown Bank positions (SBA) move at 64 SPM, NOT 48.</span>
+</div>
+
 ## Automatic Rod Control Speed
 
 <div class="callout callout-exam">
@@ -103,11 +114,25 @@ Rod control surveillance (S2.OP-ST.RCS-0001): insert Control Bank D <span class=
 AB.ROD-0003 (Continuous Rod Motion) entry conditions: rods <span class="hi-exam">withdraw OR insert a MINIMUM of 3 steps</span> at steady state. <span class="hi-trap">Process noise can cause up to 2 steps of rod motion — this is normal and does NOT warrant AB.ROD-0003 entry.</span>
 </div>
 
+## Reactivity Management — Power Defect and Rod Worth
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q41</div>
+Using the Curve Book (S2-RE-RA.ZZ-0016), for a power reduction from 100% to 80% at 8000 EFPH and 900 ppm boron: power defect adds <span class="hi-exam">(+) 396 pcm</span> to core reactivity. If boration absorbs (-) 216 pcm, Control Bank D must absorb the remaining <span class="hi-exam">(-) 180 pcm by inserting from 228 steps to approximately 186 steps</span> (IAW Figure 2C, Integral Rod Worth). <span class="hi-trap">Trap: requires reading multiple curves/tables — power defect from Figure 17A or Table 2-1, then rod worth from Figure 2C. Errors in any step give different (wrong) rod positions.</span>
+</div>
+
 ## CRDM Vent Fans
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2019 Sim-a</div>
 Loss of all CRD Vent Fans (alternate path JPM): 21 CRD Vent Fan damper fails causing <span class="hi-exam">AIR FLOW LO alarm and SEQUENCE COMPLETE bezel extinguished</span> on 2CC1 console. ARP S2.OP-AR.ZZ-0011 page 13 directs swapping to standby fan. After standby fan starts, both remaining running fans trip within seconds. With <span class="hi-exam">NO CRDM Vent Fans in operation, ARP step 3.2.D directs TRIP the Reactor</span>. Operating with less than two Rod Drive Vent Fans could degrade the Rod Drive Coils. <span class="hi-trap">Step 3.2.D was initially marked N/A when the standby started — it becomes applicable when all fans trip. The operator must re-evaluate and trip the reactor.</span>
+</div>
+
+## Mode 2 Entry and Rod Withdrawal
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q39</div>
+Per S2.OP-IO.ZZ-0003 (Hot Standby To Minimum Load), <span class="hi-exam">MODE 2 entry is recorded in the Control Room Narrative Log when withdrawal of Control Bank "A" is imminent</span>. <span class="hi-trap">Mode 2 entry is NOT when the reactor is critical, NOT when Shutdown Bank A withdrawal begins (Shutdown Banks are withdrawn first but remain in Mode 3), and NOT when IR power stabilizes at 2E-3% (that is for ICRR data collection).</span>
 </div>
 
 ## Tech Spec LCOs
@@ -124,6 +149,6 @@ Startup and parallel 11 RDMG set per S1.OP-SO.RCS-0001 Section 5.4 (same task as
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam questions: [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
+- Related exam questions: [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
 - Related JPMs: [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

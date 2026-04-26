@@ -40,6 +40,11 @@ Instrumentation and Control Systems provide the reactor operator with informatio
 Note: Negative Flux Rate Trip has been removed per NRC License Amendment 278-261. (UFSAR T7.2-1)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q10</div>
+PZR Pressure LOW Reactor Trip: normal coincidence is <span class="hi-exam">2/4 (PT-455, PT-456, PT-457, PT-474)</span>. With 2PT-456 failed low, the failed channel's bistable is already satisfied (reads below trip setpoint). The effective coincidence for the remaining functional channels is <span class="hi-exam">1 out of 3</span>. <span class="hi-exam">PT-1648 is for RSP indication ONLY</span> and does NOT feed the PZR Pressure LOW Reactor Trip coincidence logic. <span class="hi-trap">Trap: candidates may think PT-1648 is part of the trip logic (making it 2/5 or 1/4), or may think the failed channel is bypassed (giving 2/3 instead of 1/3). A failed-low channel SATISFIES the trip condition — it is not removed from the logic.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q30</div>
 PR High Neutron Flux trip with one channel tripped (bistable tripped per S2.OP-SO.RPS-0001): the tripped bistable <span class="hi-exam">remains in the coincidence logic as a permanently satisfied input</span>. Normal coincidence is 2/4. With one channel tripped, coincidence becomes <span class="hi-exam">1 out of 3</span> (the tripped bistable counts as one of the two required trips). <span class="hi-trap">Trap: tripping the bistable does NOT remove the channel from the logic (which would give 2/3). It satisfies one leg permanently, making the effective coincidence 1/3 for the remaining functional channels.</span>
 </div>
@@ -62,6 +67,11 @@ Low RC Flow trip: <span class="hi-exam">2/3 coincidence per loop</span>. Trip se
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q36</div>
 RCP underfrequency reactor trip logic: <span class="hi-exam">1/2 on (H or E bus) AND 1/2 on (F or G bus)</span>, enabled above P-7 (10% power). Both bus groups must have underfrequency to satisfy coincidence. Individual 4KV <span class="hi-exam">RCP breakers trip on undervoltage, NOT underfrequency</span>. If only H and E buses experience low frequency but F and G are normal, the reactor trip logic is NOT satisfied and no RCPs trip (voltage adequate).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q11</div>
+RCP Undervoltage Reactor Trip: <span class="hi-exam">4KV Group Busses H and G</span> monitored. Trip signal generated when both are less than a maximum of <span class="hi-exam"><span class="val-trip">70%</span> of normal bus voltage</span>. Coincidence: <span class="hi-exam">1/2 taken twice</span>, interlocked with P-7 (above 10% power). <span class="hi-trap">Trap: 90% is the setpoint for the RCP Low Flow Reactor Trip, not undervoltage. The monitored busses are H and G, not H and E.</span>
 </div>
 
 ## Key Permissive Interlocks
@@ -261,7 +271,10 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
 - Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
-- Related exams: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+  - [[2018 Q1]] — RCP shaft shear at 25% power: below P-8, single-loop low flow trip blocked
+  - [[2018 Q10]] — PZR Pressure Channel fails low: 2/4 becomes 1/3 coincidence; PT-1648 is RSP only
+  - [[2018 Q49]] — TRIP-1 immediate actions when RTBs fail: Trip Switches → Bezels → MG set breakers (E 6D, G 6D) → Turbine Trip
   - [[2019 Q30]] — PR NI tripped bistable: 2/4 becomes 1/3 coincidence (not 2/3)
   - [[2020 Q1]] — 2RP4 turbine stop valve status lights flashing = SSPS train disagreement
   - [[2020 Q7]] — PORV failed open: manual trip at 2000 psig to prevent auto trip on OT Delta-T (trips at ~1950 psig) / low PZR pressure trip at 1865 psig
@@ -292,3 +305,4 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
   - [[2019 Q11]] — Containment Pressure channel loss: SI/Rx Trip 2/3→1/2 (deenergize to actuate) vs CS 2/4→2/3 (energize to actuate)
   - [[2019 Q49]] — EOP-TRIP-1 Step 1 manual trip sequence: Pistol Grips FIRST, then Bezels, then open E 6D and G 6D breakers
   - [[2019 Q50]] — OT Delta-T variable setpoint lowers as RCS pressure lowers (K3 pressure input); OP Delta-T varies with AFD not pressure
+  - [[2018 Q11]] — RCP Undervoltage trip: 4KV Group Busses H and G at <70% normal voltage / 1/2 taken twice / interlocked with P-7

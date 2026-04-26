@@ -38,6 +38,11 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
 ### Steam Generator Blowdown Radiation Monitors (R19)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q23</div>
+R19 SGBD radiation monitor WARNING setpoint — unit difference confirmed: <span class="hi-exam">Unit 1 has NO automatic functions when R19 goes into WARNING</span> (automatic functions only occur when the monitor goes into ALARM). <span class="hi-exam">Unit 2 has automatic functions on R19 WARNING</span> — GB185 (Blowdown Discharge to Condenser) valves automatically close. <span class="hi-trap">Trap: do not confuse WARNING vs ALARM actions, and remember the unit difference at the WARNING level. Unit 1 warning is early warning only; Unit 2 warning closes blowdown valves.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q51</div>
 R19 SGBD radiation monitor WARNING setpoint: <span class="hi-exam">Unit 1 — NO automatic actuations (warning is early warning only). Unit 2 — automatically closes ALL GB10s, GB185s, and 2GB50.</span> <span class="hi-trap">Trap: R19 WARNING and ALARM actions differ. The ALARM setpoint on Unit 1 closes ALL GB4s, GB8s, GB10s, GB185s, and 1GB50. On Unit 2, ALARM isolates blowdown from the affected SGs by closing the associated GB4. Do not confuse warning vs alarm actions, and remember the unit difference at the warning level.</span>
 </div>
@@ -141,12 +146,14 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
 
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
-- Related exams: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
   - [[2019 Q8]] — 2R17A/B high alarm auto-closes 2CC149 (CCW Surge Tank Vent Valve)
   - [[2019 Q25]] — 2R41 Channel D reads in µCi/sec for release determination
   - [[2019 Q33]] — 2R32A fails high: only crane motion other than downward movement locked out / FHB vent does NOT shift
   - [[2019 Q36]] — 2R9 alarm: both FHB exhaust fans start, HEPA ONLY isolates, HEPA PLUS CHAR aligns
   - [[2020 Q23]] — 2R32A fuel handling crane interlock / hoist-up only / R5 & R9 do NOT interlock crane
+  - [[2018 Q23]] — R19 SGBD WARNING unit difference: Unit 1 no auto actions on warning, Unit 2 closes GB185s on warning
+  - [[2018 Q46]] — 2R1B-2 control room intake rad monitor: AP Mode on ALARM (not WARNING), only opposite unit EACS opens
   - [[2020 Q51]] — R19 SGBD warning setpoint unit difference: Unit 1 no auto action, Unit 2 closes GB10s/GB185s/GB50
   - [[2023 Q49 — SGBD Radiation Monitor Check Source|2023 Q49]] — SGBD rad monitor check source response and interlocks
   - [[2023 Q62]] — Area Rad Monitor 1R1A / manual CAV AP mode from 1RP2

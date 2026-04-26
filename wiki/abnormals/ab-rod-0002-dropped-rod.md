@@ -36,12 +36,17 @@ Before withdrawing a dropped rod, AB.ROD-0002 directs <span class="hi-exam">rese
 Two dropped control rods at ~89% power during load reduction (Event 5). Reactor trip demand present but auto trip fails — <span class="hi-exam">ATWT</span>. Manual Rx trip handles also fail. Rod speed controller fails at <span class="hi-exam">8 spm in Auto</span>. Crew recognizes and <span class="hi-exam">inserts rods in Manual at 48 spm</span>. This event leads directly into EOP-FRSM-1 for ATWS response.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q30</div>
+Dropped rod recovery per AB.ROD-0002: with ROD BANK SELECTOR SWITCH in CBA (Control Bank A), the dropped rod will be withdrawn at <span class="hi-exam">48 steps per minute</span> in small increments per reactor Engineering guidance. <span class="hi-trap">Trap: 72 SPM is AUTO maximum speed, 64 SPM is Shutdown Bank speed (SBA/SBB/SBC/SBD), 8 SPM is AUTO minimum speed. Control Bank positions (CBA/CBB/CBC/CBD) = 48 SPM.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]], [[Control Rod Drive]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]]
 - Related tech specs: [[TS 3/4.2 — Power Distribution]]
-- Related exam questions: [[2020 Q19]], [[2022 Q19]]
+- Related exam questions: [[2018 Q30]], [[2020 Q19]], [[2022 Q19]]
 - Related JPMs: [[2022 JPM RO-A3]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

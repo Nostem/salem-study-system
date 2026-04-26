@@ -121,10 +121,20 @@ During cold leg recirculation, <span class="hi-exam">Containment Spray pumps tak
 EOP-TRIP-1 Step 11: manual CS/Phase B actuation during LBLOCA with containment pressure NOT &lt; <span class="hi-exam">15 psig</span>. Use safeguards key switches on 2CC1. <span class="hi-exam">Alternate path: auto CS and Phase B signals fail</span>. Phase B valves <span class="hi-exam">2CC131 and 2CC190 (CCW containment isolation)</span> remain open and NaOH discharge valves <span class="hi-exam">2CS16 and 2CS17</span> remain closed. Step 11.4 Table D check reveals valves not in safeguards positions — operator manually repositions (close 2CC131/2CC190, open 2CS16/2CS17). NaOH valves provide sodium hydroxide to containment spray for iodine scrubbing and pH control.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q13</div>
+<span class="hi-exam">NaOH (Sodium Hydroxide)</span> is added to Containment Spray flow to remove <span class="hi-exam">elemental iodine</span> from the containment atmosphere AND to <span class="hi-exam">prevent corrosion of containment components</span>. <span class="hi-trap">Trap: Hydrazine is added to the RCS to scavenge oxygen — it is NOT added to Containment Spray flow. NaOH serves a dual purpose (iodine removal AND corrosion prevention), not just iodine removal alone.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q14</div>
+Confirms CS pump power supplies and spray actuation setpoint during LOCA + LOOP with 2C 4KV Vital Bus faulted: Containment Spray actuation at <span class="hi-exam"><span class="val-trip">15 psig</span></span>. With 2C bus de-energized, ONLY <span class="hi-exam">21 CS Pump (2A bus) is running</span>. 22 CS Pump (2C bus) is not available. Same power supply mapping tested on 2020 Q9, 2022 Q42, and 2023 Q40.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
+- Related exam questions: [[2018 Q13]], [[2018 Q14]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
 - Related JPMs: [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -24,8 +24,13 @@ Provides ventilation, heating, cooling, and filtration for the control room and 
 A single control room intake radiation monitor channel alarm (e.g. 2R1B-1) should automatically actuate <span class="hi-exam">BOTH units' CAV systems into Accident Pressurize (AP) Mode</span>. The unit that initiated the actuation signal has its <span class="hi-exam">intake dampers CLOSE</span>; the opposite unit's intake dampers OPEN. If auto-actuation fails, <span class="hi-exam">manually initiate AP Mode from the unit with the alarm (Unit 2 in this case)</span> — this correctly places BOTH units in AP Mode. <span class="hi-trap">Actuating AP Mode from the wrong unit (Unit 1) would open the intake dampers on the unit with the potential radiological release.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q46</div>
+2R1B-2 (Unit 1 Control Room Intake Duct radiation monitor): CAV shifts to <span class="hi-exam">Accident Pressurized Mode on ALARM (not WARNING)</span>. When 2R1B-2 goes into alarm, <span class="hi-exam">ONLY Unit 2 EACS Intake dampers AUTOMATICALLY open</span> — Unit 1 EACS intake dampers do NOT automatically open. <span class="hi-trap">Trap: other radiation monitors (2R19s, 1R19s) have automatic functions on WARNING — but 2R1B-2 does not actuate AP Mode until ALARM. Also, even though both units share the same Control Room Envelope, only the OPPOSITE unit's EACS intake dampers open (2R1B-2 is in the Unit 1 intake duct, so Unit 2 EACS opens).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Radiation Monitoring]]
-- Related exam questions: [[2022 Q51]]
-- Related exam: [[2022 NRC Written Exam]]
+- Related exam questions: [[2018 Q46]], [[2022 Q51]]
+- Related exam: [[2018 NRC Written Exam]], [[2022 NRC Written Exam]]

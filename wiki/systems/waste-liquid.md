@@ -69,10 +69,17 @@ Place 11 CVCS Monitor Tank in recirculation per S1.OP-SO.WL-0001 Section 5.1 (Un
 Release path selection per S1.OP-SO.WL-0002: with Unit 2 circulators all OOS, 22 CCHX drained, and 12A Circulator C/T, candidate selects <span class="hi-exam">21 CCHX to 12A AND/OR 12B CW Pumps</span> as the release flow path for 12 CVCS Monitor Tank. Chemistry required minimum dilution flow of <span class="hi-exam">100000 gpm</span>. Key: must evaluate all available CCHXs and CW pump configurations to find a path with adequate dilution.
 </div>
 
+## Liquid Waste System Tanks
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q38</div>
+Of the Radioactive Liquid Waste System tanks (RCDT, WHUTs, Chemical Drain Tank, Auxiliary Building Sump Tank), <span class="hi-exam">ONLY the RCDT has a physical connection to the Waste Gas Compressor Header</span>. The RCDT cover gas is vented to the waste gas system for processing and holdup.
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
 - Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
-- Related exam questions: [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
+- Related exam questions: [[2018 Q38]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
 - Related JPMs: [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

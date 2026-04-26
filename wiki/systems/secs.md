@@ -70,6 +70,6 @@ After SEC and SI reset during EOP-LOCA-3, a subsequent blackout on a 4KV vital b
 ## Connections
 
 - Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]]
-- Related exam questions: [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
+- Related exam questions: [[2018 Q22]], [[2018 Q27]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
 - Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

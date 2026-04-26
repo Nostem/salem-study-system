@@ -57,8 +57,13 @@ Per Attachment 1, three RCP protection time limits on loss of CCW:<br>
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q7</div>
+Per Step 3.8 NOTE: <span class="hi-exam">"Allowing CCW Surge Tank to overflow will contaminate the in-service Waste Holdup Tank and the 22 ABV Exhaust Filter Unit."</span> 2CC149 (Surge Tank Vent Valve) <span class="hi-exam">automatically closes on 2R17A/B high radiation alarm</span>. 2CC149 is normally OPEN. <span class="hi-trap">CCW Surge Tank overflow contaminates two components — the Waste Holdup Tank AND the 22 ABV Exhaust Filter Unit. Missing the exhaust filter unit is a common error.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q8</div>
-Per Step 3.8 NOTE: <span class="hi-exam">"Allowing CCW Surge Tank to overflow will contaminate the in-service Waste Holdup Tank and the 22 ABV Exhaust Filter Unit."</span> 2CC149 (Surge Tank Vent Valve) <span class="hi-exam">automatically closes on 2R17A/B high radiation alarm</span>. <span class="hi-trap">CCW Surge Tank overflow contaminates two components — the Waste Holdup Tank AND the 22 ABV Exhaust Filter Unit. Missing the exhaust filter unit is a common error.</span>
+Confirms 2018 Q7: 2CC149 auto-closes on 2R17A/B high radiation alarm. Surge Tank overflow contaminates both the Waste Holdup Tank and the 22 ABV Exhaust Filter Unit.
 </div>
 
 <div class="callout callout-exam">
@@ -75,6 +80,6 @@ Alternate path JPM: CCW leak inside containment progresses beyond makeup capabil
 
 - Related systems: [[CCW]], [[RCPs]], [[RHR]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
-- Related exam questions: [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
+- Related exam questions: [[2018 Q7]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
 - Related JPMs: [[2019 JPM Sim-h]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]]
