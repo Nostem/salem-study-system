@@ -50,6 +50,11 @@ If a closed isolation valve cannot be immediately opened, <span class="hi-exam">
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q86</div>
+Accumulator boron concentration limits: <span class="hi-exam">2200 - 2500 ppm</span>. Sample results: 21 at 2175 ppm (below 2200 → inoperable), 22 at 2550 ppm (above 2500 → inoperable), 23 at 2400 ppm (within limits → operable), 24 at 2350 ppm (within limits → operable). Result: <span class="hi-exam">2 accumulators inoperable</span>. LCO 3.5.1 action only addresses ONE accumulator inoperable due to boron (72 hrs + 6 hrs to Hot Standby). With TWO inoperable, no applicable action exists → <span class="hi-exam">LCO 3.0.3 applies: 1 hr + 6 hrs = 7 hours to HOT STANDBY</span>. <span class="hi-trap">78 hours (72 + 6) would only be correct if one accumulator were inoperable. With two inoperable, there is no action that addresses the condition and LCO 3.0.3 is the default.</span>
+</div>
+
 ---
 
 ## ECCS Subsystems — Tavg ≥ 350°F
@@ -237,9 +242,14 @@ The boron concentration limits also ensure a <span class="hi-exam">post-LOCA sum
 Loss of one centrifugal charging pump: <span class="hi-exam">TS 3.5.2 applies — one ECCS subsystem inoperable</span> (the tripped CHP is the high-head component for that ECCS train). 72 hours to restore, then <span class="hi-exam">Hot Shutdown (MODE 4) within the next 12 hours</span> (total 84 hours from the pump trip). <span class="hi-trap">The 23 Charging Pump (positive displacement) does NOT count as an ECCS high-head pump — it counts only for TS 3.1.2.4 (Charging Pumps for reactivity control). TS 3.1.2.2 (Boration Flow Paths) and TS 3.1.2.4 are NOT entered because two boration flow paths and two charging pumps (22 + 23) remain operable.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q96</div>
+SR 4.5.2.b.2 (Verify that ECCS Piping Is Full Of Water) has a MONTHLY surveillance frequency. Per SR 4.0.3, the missed surveillance delay is <span class="hi-exam">24 hours or the specified frequency (31 days), whichever is greatest</span> = <span class="hi-exam">31 days from discovery</span>. A risk assessment is required for delays >24 hours.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RHR]], [[CVCS]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2020 Q77]], [[2023 Q91]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2018 Q86]], [[2018 Q96]], [[2020 Q77]], [[2023 Q91]]
+- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

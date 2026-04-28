@@ -46,5 +46,5 @@ Step 5.3.11: When EDG is paralleled to the bus for load testing, <span class="hi
 
 - Related systems: [[EDGs]]
 - Related tech specs: [[TS 3/4.8 — Electrical]]
-- Related exam questions: [[2018 Q42]], [[2020 Q48]], [[2022 Q50]], [[2022 Q89]], [[2023 Q89]]
+- Related exam questions: [[2018 Q42]], [[2018 Q60]], [[2020 Q48]], [[2022 Q50]], [[2022 Q89]], [[2023 Q89]]
 - Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

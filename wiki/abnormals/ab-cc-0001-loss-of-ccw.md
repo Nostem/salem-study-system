@@ -76,10 +76,20 @@ CCW pump trips in MODE 5 (RCS at Water Elevation 103.5 feet): when 22 and 23 CCW
 Alternate path JPM: CCW leak inside containment progresses beyond makeup capability. Operator enters AB.CC-0001, opens <span class="hi-exam">2DR107 for CCW Surge Tank makeup</span>, progresses through leak isolation steps (close <span class="hi-exam">2CC113 Exc LHX Outlet</span>). At step 3.24, when CCW Surge Tank level cannot be maintained >5%: transition to <span class="hi-exam">Attachment 2 — Stop RCPs and Isolate CCW to CNTMT</span>. Attachment 2 actions: trip reactor, stop ALL RCPs, close <span class="hi-exam">2CC131 (RCP Therm Bar), 2CC136 (RCP CLG OIL CLR Outlet), 2CC190</span> containment isolation valves, then GO TO EOP-TRIP-1.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q54</div>
+CCW leak location diagnosis using chemistry: per AB.CC-0001, <span class="hi-exam">"Any inleakage will dilute CC System Chromates and SW inleakage will increase Chloride concentration."</span> Key discriminator: <span class="hi-exam">rising chloride = Service Water inleakage → leak is in the CC Heat Exchanger</span> (where SW and CCW interface). All CCW inleakage sources cause surge tank level to rise and chromate to lower, but only the CC HX is cooled by SW. <span class="hi-trap">Trap: Seal Water HX, Letdown HX, and Charging Pump also interface with CCW, but none use SW — they would cause chromate dilution without chloride increase.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q95</div>
+Per S2.OP-AB.CC-0001 CAS items, the <span class="hi-exam">5-minute timer applies to the RCP BRG CLG WTR FLO LO alarm</span>: if the alarm is still valid after 5 minutes, perform Attachment 2 (Stopping Reactor Coolant Pumps). <span class="hi-trap">Trap: the 2-minute CAS timer applies only when RCP Seal Injection Flow AND RCP Thermal Barrier Component Cooling flow are lost concurrently — not for the BRG CLG WTR FLO LO alarm alone.</span> Per Attachment 2: if <span class="hi-exam">Reactor Trip Breakers are CLOSED, the crew MUST manually TRIP the Reactor prior to stopping the affected RCPs</span> — even if the plant is in MODE 3 with all rods fully inserted. <span class="hi-trap">Trap: candidates may think a manual trip is unnecessary because rods are already in, but the procedure requires it whenever RTBs are closed.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[CCW]], [[RCPs]], [[RHR]]
+- Related systems: [[CCW]], [[RCPs]], [[RHR]], [[Service Water]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
-- Related exam questions: [[2018 Q7]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
+- Related exam questions: [[2018 Q7]], [[2018 Q54]], [[2018 Q95]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
 - Related JPMs: [[2019 JPM Sim-h]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]]

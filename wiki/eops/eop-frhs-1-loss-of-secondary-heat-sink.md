@@ -36,6 +36,11 @@ Steps 7.2-7.5 condensate pump feed: select one SG (22 or 24 preferred — <span 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q64</div>
+Step 23.2 bleed and feed ECCS prerequisite: the crew CAN proceed to establish the RCS Bleed Path with only <span class="hi-exam">1 Charging Pump AND 1 SI Pump running</span> — the crew continues attempts to start additional pumps while establishing the bleed path. Step 24 bleed path: crew will open <span class="hi-exam">BOTH PORVs ONLY</span>. <span class="hi-trap">Reactor Head Vents are NOT part of the standard bleed path — they are an alternate bleed path if a PORV fails to open. Also, the procedure does NOT require BOTH SI Pumps and BOTH Charging Pumps before proceeding — 1 of each is sufficient.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q64</div>
 Step 23 bleed and feed prerequisite: the crew needs <span class="hi-exam">1 Charging Pump AND 1 SI Pump running</span> to proceed with establishing the RCS Bleed Path. With only 2 Charging Pumps and NO SI Pump, the crew <span class="hi-exam">can NOT proceed</span> — must continue attempts to start SI pump. Step 24 bleed path: <span class="hi-exam">opening BOTH PORVs ONLY</span> is an allowable RCS Bleed Path. <span class="hi-trap">Reactor Head Vents are NOT part of the standard bleed path in FRHS-1. The head vents are an alternate path if a PORV fails to open.</span>
 </div>
@@ -48,6 +53,16 @@ Step 6: Heat sink is established if feed flow is verified to at least one SG by 
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2022 #3</div>
 Loss of all AFW flow during EOP-TRIP-1 (22 AFP trips on overcurrent, 23 AFP trips on overspeed, 21 AFP C/T). CFST Heat Sink Red Path triggers transition to EOP-FRHS-1. Both SGFPs tripped due to auto SI actuation following main turbine failure to trip. Condensate recovery: crew resets SI/Phase A/Phase B, opens <span class="hi-exam">CA330s</span>, selects one SG for depressurization to < <span class="hi-exam">575 psig</span> using MS10 atmospheric dump valve. Dispatches operator to open BF40 or BF19 at 120 ft TGA, opens BF13 and <span class="hi-exam">CN48 SGFP bypass valves</span>, closes <span class="hi-exam">CN32 SGFP suction valves</span>. <span class="hi-exam">CT#2 (CT-43): Establish feed flow to one SG before bleed and feed is required</span> — verified by SG WR level rising or CETs lowering.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q71</div>
+SG feeding restrictions in FRHS-1 vs FRCC-2: EOP-FRHS-1 <span class="hi-exam">specifically FORBIDS feeding a FAULTED SG if an INTACT or RUPTURED SG is available</span>. <span class="hi-trap">EOP-FRCC-2 does NOT have this restriction — FRCC-2 allows feeding a FAULTED SG when no INTACT SG is available. Do not confuse the FRHS-1 restriction with FRCC-2 guidance.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q80</div>
+Entry conditions per EOP-CFST-1: ALL SG NR Levels < 15% <span class="hi-exam">AND Total Feedwater Flow to SGs < 22E04 LB/HR</span> — BOTH conditions required (not just low NR levels alone). Step 19 — return to procedure in effect criteria (with Bleed and Feed NOT initiated and condensate aligned): crew returns when <span class="hi-exam">SG WR level starts to rise</span> in the fed SG. <span class="hi-trap">Trap: Step 19 also uses ANY SG NR > 15% (adverse) as an alternate return criterion. But with condensate just aligned and WR level rising, the WR level criterion is met first. Do not confuse: 15% adverse NR level is an alternate return criterion, not the ONLY one.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -74,7 +89,7 @@ Loss of all AFW following Main Turbine trip: 21 AFW pump C/T, 22 AFW pump lost w
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
+- Related exam questions: [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
 - Related JPMs: [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
 - Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

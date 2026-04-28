@@ -39,9 +39,14 @@ If 2R18 is inoperable (e.g., detector fails LOW), per steps 2.3, 3.4, and 3.5: <
 21 CVCS MT release path is <span class="hi-exam">via SW to CW</span> (not SW only). Per Step 5.5.8, <span class="hi-exam">2FR1064 (RADWASTE OVERBOARD DISCH FLOW RECORDER) is required to be OPERABLE during the release</span>. If 2FR1064 becomes inoperable, the crew <span class="hi-exam">IS required to stop the release</span>. <span class="hi-trap">Trap: the candidate could confuse the 2FR1064 requirement with the 2R18 requirement — both instruments are required, but the actions differ. Loss of 2FR1064 requires stopping the release.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q99</div>
+If 2R18 (Waste Disposal Liquid Rad Monitor) is inoperable (e.g., failed source check), the CRS <span class="hi-exam">CAN approve the release permit</span> provided <span class="hi-exam">a second sample was drawn, analyzed, and calculations were second verified prior to the release</span>. <span class="hi-trap">Trap: continuous effluent sampling during discharge is NOT the compensatory action — the second sample verification happens PRIOR to the release. Also, 2R18 does NOT have to be repaired before the release can proceed.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Waste Liquid]], [[Radiation Monitoring]]
-- Related exam questions: [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q68]]
+- Related exam questions: [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q68]]
 - Related JPMs: [[2022 JPM IP-k]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -44,6 +44,6 @@ Event 5: RCS leak with rapidly lowering PZR level and pressure. OHA E-28 PZR HTR
 
 - Related systems: [[CVCS]], [[RCS]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
-- Related exam questions: [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
+- Related exam questions: [[2018 Q52]], [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

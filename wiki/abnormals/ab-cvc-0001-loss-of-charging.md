@@ -54,10 +54,15 @@ VCT level channel 2LT-114 fails high — 2CV35 diverts to CVCS HUT, VCT level lo
 12 Charging pump trips at 0700 while 1B EDG is CIT. Crew enters S1.OP-AB.CVC-0001, starts 13 Charging pump, restores letdown and PZR level. The CRS must then evaluate TS impact: <span class="hi-exam">TS 3.5.2.a action a (72 hours)</span> for the inoperable ECCS subsystem (12 Charging pump), AND <span class="hi-exam">TS 3.8.1.1 action b.2 (4 hours)</span> because the 12 Charging pump is a redundant required feature of the CIT 1B EDG.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q52</div>
+Charging line leak diagnosis: <span class="hi-exam">seal injection flow lowering + PZR level lowering + 2R41 (Plant Radiation Monitor) rising + letdown line flashing</span> = leak on the CVCS <span class="hi-exam">charging</span> line. A <span class="hi-exam">charging line leak IS an entry condition</span> for AB.CVC-0001. <span class="hi-trap">Trap: letdown line leak shows similar symptoms (PZR level lowering, radiation rising) but would NOT cause seal injection to lower or letdown line flashing. Letdown line leak is NOT an entry condition for AB.CVC-0001.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[EDGs]]
-- Related exam questions: [[2020 Q77]], [[2020 Q91]], [[2022 Q6]]
+- Related exam questions: [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]]
 - Related JPMs: [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

@@ -30,10 +30,17 @@ The SFP is designed to prevent fuel from becoming uncovered due to loss of syste
 Per S2.OP-SO.SF-0001, the following water sources are allowed for <span class="hi-exam">ROUTINE makeup</span> to the Spent Fuel Pool: <span class="hi-exam">1) Demineralized Water System, 2) Primary Water Storage Tank, 3) CVCS Holdup Tanks, 4) Refueling Water Storage Tank</span>. <span class="hi-trap">The Fresh Water and Fire Protection Water Storage Tank is NOT an allowed ROUTINE makeup source.</span>
 </div>
 
+## SFP Alarms and Level Setpoints
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q92</div>
+SFP Low Level alarm setpoint: <span class="hi-exam val-alarm">128 feet, 0 inches</span>. Per S2.OP-AB.SF-0001, when the pool is boiling (212 &deg;F) and level is at the Low Level alarm, the crew must initiate makeup until the <span class="hi-exam">HI LEVEL ALARM actuates</span> — not just until the LOW LEVEL ALARM clears (which occurs at <span class="hi-exam">128 feet, 2 inches</span>). Both <span class="hi-exam">S2.OP-SO.SF-0006 (Emergency Fill) and S2.OP-SO.SF-0001 (Fill and Transfer)</span> are acceptable procedures for restoring level.
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]]
-- Related exam questions: [[2018 Q33]], [[2020 Q62]], [[2022 Q61]]
+- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]]
+- Related exam questions: [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]]
 - Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

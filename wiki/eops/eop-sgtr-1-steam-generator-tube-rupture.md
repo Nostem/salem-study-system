@@ -50,11 +50,16 @@ EOP-SGTR-1 Step 10 RCS cooldown with steam dumps unavailable (permissive light N
 Step 19 RCS depressurization using normal spray during SGTR on 22 SG. Open spray valves <span class="hi-exam">2PS1 and 2PS3</span>. Monitor depressurization against Table D criteria (RCS pressure < ruptured SG pressure AND PZR level > 11%). When Table D conditions met (CUE: PZR level 79% and rising), close spray valves per CAS at Step 19.1. <span class="hi-exam">2PS3 fails to close</span> (alternate path). Step 19.4: spray valve not closed → <span class="hi-exam">STOP 21 and 23 RCPs</span> to eliminate spray flow path through 2PS3. RCS pressure stops dropping (rising after RCP stop). Proceed to Step 27.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q57</div>
+SI termination during SGTR-1: the reason ECCS flow is terminated is to <span class="hi-exam">prevent overfill of the ruptured SG</span> (not the pressurizer). CAS for reestablishing ECCS flow: <span class="hi-exam">PZR level cannot be maintained &ge; 11% OR Subcooling &le; 0&deg;F</span>. The logic is <span class="hi-exam">OR</span> — either condition triggers ECCS restart. <span class="hi-trap">Trap: candidates may confuse overfill concern (it is the SG, not the PZR) or incorrectly believe ONLY PZR level (without the subcooling criterion) triggers ECCS restart.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Pressurizer & PRT]], [[Main Steam]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]]
-- Related exam questions: [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
+- Related exam questions: [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
 - Related JPMs: [[2019 JPM SRO-A5]], [[2019 JPM Sim-c]], [[2020 JPM Sim-g]]
 - Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -131,10 +131,15 @@ EOP-TRIP-1 Step 11: manual CS/Phase B actuation during LBLOCA with containment p
 Confirms CS pump power supplies and spray actuation setpoint during LOCA + LOOP with 2C 4KV Vital Bus faulted: Containment Spray actuation at <span class="hi-exam"><span class="val-trip">15 psig</span></span>. With 2C bus de-energized, ONLY <span class="hi-exam">21 CS Pump (2A bus) is running</span>. 22 CS Pump (2C bus) is not available. Same power supply mapping tested on 2020 Q9, 2022 Q42, and 2023 Q40.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q88</div>
+TS 3.6.2.1 application with BOTH trains of Containment Spray INOPERABLE: LCO 3.6.2.1 has NO action for both trains inoperable → <span class="hi-exam">LCO 3.0.3 applies</span>. When ONE train is restored, LCO 3.0.3 exits and the single-inoperable-train action of LCO 3.6.2.1 begins: <span class="hi-exam">restore within 72 hours or be in HOT STANDBY within the next 6 hours</span>. Key timing: the 72-hour clock starts from when the LCO was first NOT met (08:00 on June 12th), not from when one train was restored (10:00). Total: <span class="hi-exam">72 + 6 = 78 hours from 08:00 on June 12th = 14:00 on June 15th</span>.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2018 Q13]], [[2018 Q14]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
+- Related exam questions: [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
 - Related JPMs: [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

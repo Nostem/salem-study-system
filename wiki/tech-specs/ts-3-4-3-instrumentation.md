@@ -647,9 +647,19 @@ Between calibrations, the fidelity of the measured power distribution is maintai
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-3.pdf" target="_blank">View Tech Spec PDF (61 pages — full tables)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-3.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q82</div>
+LCO 3.3.1.1 action for PZR Level Channel failure: with 2LT-459 (Channel I PZR Level) failed high at 100% power, the channel must be placed in the <span class="hi-exam">tripped condition within 6 hours</span> (not 1 hour). PZR Level — High is a 3-channel trip function (Table 3.3-1) with 2/3 coincidence.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q89</div>
+LCO 3.3.3.1 (Radiation Monitoring Instrumentation) / Table 3.3-6 analysis: <span class="hi-exam">R12A is the credited monitor for BOTH Table 3.3-6 item 2.a.1.a (Containment Gaseous Activity — Purge & Pressure Vacuum Relief Isolation) AND 2.a.1.b (Containment Gaseous Activity — RCS Leak Detection)</span>. During containment vacuum relief operations, <span class="hi-exam">R41 (2R41A, B, D) can serve as alternate monitor for item 2.a.1.a only</span>. With R12A failed: LCO NOT met → <span class="hi-exam">Action 24 ONLY</span> (R41 satisfies 2.a.1.a, but nothing replaces R12A for 2.a.1.b → Action 24). <span class="hi-trap">Trap: candidates may think both Actions 24 AND 26 are required (forgetting R41 can substitute for 2.a.1.a during vacuum relief), or that LCO is met with R12A failed (it is not).</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]]
-- Related exam questions: [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]]
+- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]], [[Radiation Monitoring]]
+- Related exam questions: [[2018 Q82]], [[2018 Q89]], [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

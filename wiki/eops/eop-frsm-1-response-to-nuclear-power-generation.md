@@ -41,10 +41,20 @@ Step 8 — Local reactor trip: when directed from the Control Room to locally tr
 ATWS following two dropped rods at ~89% power. Rod speed controller fails at <span class="hi-exam">8 spm in Auto</span>; operator must recognize failure and <span class="hi-exam">insert rods in Manual at 48 spm</span>. 2CV175 Rapid Boration valve fails to open — crew establishes Rapid Boration via <span class="hi-exam">RWST flow path</span>: isolate letdown (2CV3/4/5, 2CV2, 2CV277, 2CV7), open RWST outlets (2SJ1/2SJ2), open BIT valves (2SJ4/5, 2SJ12/13), close charging discharge (2CV40/41, 2CV68/69). <span class="hi-exam">CT-52: Insert negative reactivity (rod insertion or emergency boration) prior to dispatching operators to locally trip reactor.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q56</div>
+EOP-FRSM-1 Step 3: ensure <span class="hi-exam">at least two charging pumps</span> are running (not all three). Step 3.1: the crew is <span class="hi-exam">NOT required to manually actuate Safety Injection</span> after starting the required charging pumps. FRSM-1 has a provision for aligning charging pumps to take suction from the RWST, but manual SI actuation is not directed. <span class="hi-trap">Trap: candidates may assume all 3 charging pumps are required during an ATWS for maximum boron injection, or that manual SI is required since the automatic SI did not actuate.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q98</div>
+ATWS at 4% power: reactor fails to trip on 21 SG LO-LO Level, all CR trip attempts fail. IAW EOP-TRIP-1, since the reactor is NOT tripped, the crew transitions to <span class="hi-exam">EOP-FRSM-1</span>. At 4% power with turbine not online, <span class="hi-exam">automatic rod insertion will NOT achieve > 48 steps/minute</span> — the EOP-TRIP-1 basis document threshold. Therefore rods must be inserted <span class="hi-exam">MANUALLY</span>. <span class="hi-trap">Trap: even though power is < 5%, the reactor trip is NOT confirmed because all trip attempts have failed — the reactor is still critical. Power range NI less than 5% alone does NOT confirm a trip.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
+- Related exam questions: [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

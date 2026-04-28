@@ -31,6 +31,11 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
 ### Plant Vent Effluent Monitor (R41)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q83</div>
+Gas Decay Tank (GDT) release path: <span class="hi-exam">11 GDT discharges to the plant vent</span>. An unplanned gaseous radioactive release from the 11 GDT will alarm on <span class="hi-exam">1R41D (Plant Vent Noble Gas Release Rate)</span> — NOT on 1R12A-B (Cont or Vent Gas Effluent/Iodine). Crew performs AB.RAD-0001 <span class="hi-exam">Attachment 1 (Process Radiation Monitors)</span> to stop the release. <span class="hi-trap">Trap: R12A-B IS a gaseous process radiation monitor, but it monitors containment vent gas, not the plant vent. Also, Attachment 2 (Process Filter Radiation Monitors) applies to filtered systems — the GDT release path to the plant vent is unfiltered.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q25</div>
 2R41 has 4 channels (A, B, C, D). <span class="hi-exam">2R41 Channel D is the ONLY control room indication that reads out in µCi/sec</span> and can be used to determine if a radiological release is in progress for notification to State and Local Agencies. <span class="hi-trap">Channels A, B, and C do not read out in µCi/sec — only Channel D provides release rate information.</span>
 </div>
@@ -162,4 +167,7 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
   - [[2020 Q26]] — R44A/B >1E05 R/HR / SMM adverse containment / manual reset for radiation
   - [[2019 Q43]] — 21 CVCS MT release via SW to CW / 2FR1064 inoperable requires stopping release
   - [[2020 Q90]] — 2R18 fails LOW → WL51 does NOT close / FR1064 must remain OPERABLE per release procedure
+  - [[2018 Q83]] — 11 GDT discharges to plant vent → R41D alarm / AB.RAD-0001 Attachment 1 (Process) not Attachment 2 (Filter)
+  - [[2018 Q85]] — R44A/B ≥ 2 R/HR = FRCE-3 entry (yellow path, not required) / 100 R/HR is warning setpoint
+  - [[2018 Q89]] — R12A failure during containment vacuum relief / TS 3.3.3.1 Table 3.3-6 / R41 alternate for purge & P/V relief
 - Related JPMs: [[2022 JPM RO-A4]], [[2022 JPM IP-k]]

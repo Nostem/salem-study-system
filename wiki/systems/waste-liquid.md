@@ -76,10 +76,15 @@ Release path selection per S1.OP-SO.WL-0002: with Unit 2 circulators all OOS, 22
 Of the Radioactive Liquid Waste System tanks (RCDT, WHUTs, Chemical Drain Tank, Auxiliary Building Sump Tank), <span class="hi-exam">ONLY the RCDT has a physical connection to the Waste Gas Compressor Header</span>. The RCDT cover gas is vented to the waste gas system for processing and holdup.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q99</div>
+Per S2.OP-SO.WL-0001: if <span class="hi-exam">2R18 (Waste Disposal Liquid Rad Monitor) is inoperable</span> (e.g., failed source check), the CRS CAN approve the release permit provided a <span class="hi-exam">second sample was drawn, analyzed, and calculations were second verified prior to the release</span>. The release does NOT require 2R18 to be repaired first. <span class="hi-trap">Trap: continuous effluent sampling throughout the discharge is NOT the compensatory action — the second independent sample/calculation is performed BEFORE the release, not during it.</span>
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
 - Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
-- Related exam questions: [[2018 Q38]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
+- Related exam questions: [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
 - Related JPMs: [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -65,6 +65,11 @@ SBO Diesel Control Air Compressor start (SC.OP-SO.CA-0001): during loss of offsi
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q61</div>
+AB.CA-0001 trend analysis: ECAC manual start (Step 3.10) when <span class="hi-exam">2A CA Header &le; <span class="val-alarm">88 psig</span></span>. CAS reactor trip when <span class="hi-exam">BOTH headers &lt; <span class="val-trip">80 psig</span></span>. With declining CA headers, must track each header independently — the trip requires BOTH headers below 80 psig, not just one. <span class="hi-trap">100 psig = Station Air Compressor start threshold (Step 3.7), not ECAC start.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q61</div>
 ECACs are manually started when CA headers lower to <span class="hi-exam val-alarm">88 psig</span>. <span class="hi-trap">100 psig is the threshold for starting the remaining Station Air Compressor, not the ECAC manual start setpoint.</span> Check valves in the CA system <span class="hi-exam">prevent ECACs from supplying the BF19 headers</span> — ensuring proper BF19 operation is NOT a reason to start ECACs.
 </div>
@@ -74,12 +79,22 @@ ECACs are manually started when CA headers lower to <span class="hi-exam val-ala
 CA330 (Control Air Isolation Valves) operability and isolation: IAW <span class="hi-exam">LCO 3.6.3 (Containment Isolation Valves), CA330s are required to be OPERABLE in MODES 1-4 ONLY</span>. The CA330s automatically close on a <span class="hi-exam">Phase A Containment Isolation signal, which is generated when containment pressure FIRST exceeds <span class="val-trip">4 psig</span></span>. <span class="hi-trap">Trap: 15 psig is the Phase B setpoint — CA330s close on Phase A (4 psig), NOT Phase B (15 psig). Also, LCO 3.6.3 applies in Modes 1-4, not ALL MODES.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q93</div>
+Number 1 ECAC provides air to 1B and 2B Control Air Headers <span class="hi-exam">ONLY</span> — <span class="hi-exam">check valves prevent the ECAC from supplying Station Air</span>. Per S1.OP-AB.CA-0001, the CRS will direct performance of Attachment 12, "Local Control Of SG Pressure and Level", when <span class="hi-exam">BOTH 1A and 1B Control Air Headers indicate less than <span class="val-trip">80 psig</span></span>. <span class="hi-trap">Trap: EITHER header below 80 psig is not sufficient — BOTH must be below 80 psig before Attachment 12 is directed.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q90</div>
+BF19 (SG FW CONT V) failure on loss of control air: <span class="hi-exam">BF19s fail CLOSED</span> → SG levels lower. AB.CA-0001 CAS directs: if crew manually trips the reactor because SG levels cannot be maintained, perform <span class="hi-exam">EOP-TRIP-1 AND AB.CA-0001 concurrently</span>. <span class="hi-trap">BF19s fail CLOSED (not open). Do not confuse BF19 failure position with other air-operated valves that fail open (MS132, DR6, AF11, etc.).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]]
 - Related procedures: [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]]
-- Related exam questions: [[2018 Q25]], [[2018 Q26]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
+- Related exam questions: [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
 - Related JPMs: [[2020 JPM IP-j]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]

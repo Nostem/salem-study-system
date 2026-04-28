@@ -101,8 +101,18 @@ Letdown temperature auto-divert: 2CV21 automatically diverts letdown flow to VCT
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q69</div>
+Per AB.RC-0002 (High Activity in RCS) Step 3.15: crew is required to <span class="hi-exam">transfer to a Centrifugal Charging Pump (CCP)</span> and secure the 13 Charging Pump (PDP). Step 3.16: <span class="hi-exam">maximize letdown flow by placing 1CV3 (45 GPM ORIFICE) in service in addition to 1CV4 (75 GPM ORIFICE)</span> already in service. <span class="hi-trap">Trap: 13 Charging Pump is the PDP, NOT a CCP. Maximized letdown = both 75 gpm and 45 gpm orifices in service (120 gpm total), not just the largest orifice alone.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q30</div>
 2CV3 letdown orifice = <span class="hi-exam">45 gpm</span>. When placing second orifice in service, letdown pressure and flow rise. 2CV18 (Letdown Pressure Control Valve) must be <span class="hi-exam">manually throttled OPEN</span> to maintain letdown pressure at target ~<span class="val-normal">300 psig</span>. 2CV6 (Letdown Relief Valve) setpoint = <span class="val-trip">600 psig</span>. 2CC71 (Letdown HX Temp Control Valve) auto-modulates OPEN to increase CCW flow through the letdown HX as temperature rises.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q52</div>
+Charging line leak diagnosis: <span class="hi-exam">seal injection flow lowering + PZR level lowering + 2R41 (Plant Radiation Monitor) rising + letdown line flashing</span> = charging line leak (not letdown line). The key discriminator is <span class="hi-exam">seal injection flow lowering</span> — a charging line leak upstream of the seal injection takeoff reduces seal injection flow. A letdown line leak does not affect seal injection flow. <span class="hi-exam">A charging line leak IS an entry condition for AB.CVC-0001.</span>
 </div>
 
 - **Normal charging flow:** One charging pump maintains RCS inventory and PZR level
@@ -263,7 +273,7 @@ Emergency boration during CR Evacuation (AB.CR-0001, Attachment 5, Step 10): clo
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related exam questions: [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
+- Related exam questions: [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2018 Q52]], [[2018 Q69]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
 - Related JPMs: [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

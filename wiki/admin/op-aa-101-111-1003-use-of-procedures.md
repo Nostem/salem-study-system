@@ -50,9 +50,14 @@ With verified <span class="hi-exam">Red and Purple CFSTs</span>, OP-AA-101-111-1
 CSF Hierarchy per OP-AA-101-111-1003 (high to low): <span class="hi-exam">SHUTDOWN MARGIN, CORE COOLING, HEAT SINK, THERMAL SHOCK, CONTAINMENT ENVIRONMENT, COOLANT INVENTORY</span>. CFST Color Hierarchy (high to low): <span class="hi-exam">Red, Purple, Yellow, Green</span>. When multiple CSFs have challenges, <span class="hi-exam">color takes precedence over hierarchy position</span>. A Red path for a lower-priority CSF overrides a Purple path for a higher-priority CSF. Example: Heat Sink Red + Shutdown Margin Purple → address Heat Sink first.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q85</div>
+Yellow path FRP implementation: <span class="hi-exam">FRCE-3 (Response to High Containment Radiation) is a yellow path procedure and is NOT required to be performed</span>. The CRS may elect to GO TO a yellow path FRP but is not mandated to do so. <span class="hi-trap">Red and Purple path FRPs are mandatory transitions. Yellow path FRPs are discretionary.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
 - Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
-- Related exam questions: [[2018 Q47]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]]
+- Related exam questions: [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

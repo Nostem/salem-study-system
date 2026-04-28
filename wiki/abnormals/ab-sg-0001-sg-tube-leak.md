@@ -59,10 +59,15 @@ SGTR event with stuck-open MSIV: crew responds to valid SG tube leak on 23 SG, i
 Step 3.31: set the affected MS10 (MS PWR RELIEF Vlv) setpoint to <span class="hi-exam"><span class="val-alarm">1045 psig</span></span> by depressing button <span class="hi-exam">A</span> on the controller. <span class="hi-trap">Trap: button B raises the manual output to open the valve more — it does NOT change the controller setpoint. 1070 psig is the MS15 (MSSV) lift setpoint, not the AB.SG-0001 MS10 adjusted setpoint.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q68</div>
+Step 3.7 — PZR level control during SG tube leak: <span class="hi-exam">reduce letdown to minimum by ONLY placing 2CV3 (45 gpm ORIFICE) in service</span> — do NOT isolate letdown entirely. Step 3.11 — if PZR level cannot be maintained and the reactor has been tripped: <span class="hi-exam">initiate a Safety Injection PRIOR to transitioning to 2-EOP-TRIP-1</span>. <span class="hi-trap">Trap: isolating letdown would provide more margin for PZR level but is NOT what the procedure directs — it directs reducing to minimum (45 gpm orifice only). Also, SI is initiated before going to TRIP-1, not deferred until TRIP-1 Step 5.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]]
-- Related exam questions: [[2018 Q15]], [[2019 Q69]], [[2023 Q81]]
+- Related exam questions: [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]]
 - Related JPMs: [[2019 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]]

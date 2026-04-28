@@ -81,10 +81,20 @@ RCP #2 seal failure diagnostics: standpipe level HIGH alarm combined with #1 sea
 22 RCP oil level low (Event 5). OHA D-13 for 22 RCP BRG OIL LVL LO. PO reports 22 RCP Upper Radial Bearing Oil Level Low — motor bearing temperatures rising to or exceed <span class="hi-exam">175 F</span>. CRS enters AB.RCP-0001 and implements <span class="hi-exam">Attachment 2</span> for stopping 22 RCP. Required action: <span class="hi-exam">trip the reactor, confirm the reactor trip, THEN stop 22 RCP</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q51</div>
+AB.RCP-0001 CAS: motor flange vibration > <span class="val-trip">5 mils</span> requires stopping the RCP (Attachment 2). After reactor trip from 75% power with one RCP stopped and RTB A closed but RTB B open, <span class="hi-exam">LCO 3.4.1.2 IS met</span> because with the rod control system de-energized (RTB B open, bypass breakers not racked in), only <span class="hi-exam">two RCS loops are required to be OPERABLE</span>. <span class="hi-trap">Trap: LCO 3.4.1.2 requires ALL loops OPERABLE only when rod control is ENERGIZED. Candidates confuse the energized vs de-energized requirements.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q79</div>
+Attachment 2 — concurrent loss of seal injection AND thermal barrier CCW (2CC131 closes AND CV pumps unavailable): with Seal Leakoff < <span class="hi-exam">6 gpm</span>, the crew is <span class="hi-exam">NOT required to close 21-24CV104s (SEAL LEAKOFF) within 3-5 minutes</span> after stopping RCPs (Step 1.4). At Attachment 2 Step 5.0, seal cooling method depends on RCP Seal Inlet Temperatures: if ALL temps are < <span class="val-alarm">225 &deg;F</span>, perform <span class="hi-exam">Attachment 4 (Re-establishing RCP Seal Cooling)</span>; if NOT ALL temps are < 225 &deg;F, perform <span class="hi-exam">S2.OP-AB.RC-0004 (Natural Circulation)</span> for seal cooling. <span class="hi-trap">Trap: 22 RCP at 227 &deg;F exceeds the 225 &deg;F threshold, so not ALL are less than 225 &deg;F. The procedure routes to Natural Circulation, not Attachment 4.</span>
+</div>
+
 ## Connections
 - Related systems: [[RCPs]], [[CCW]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2019 Q55]], [[2020 Q4]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
+- Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[AB.RC-0004 — Natural Circulation]]
+- Related exam questions: [[2018 Q51]], [[2018 Q79]], [[2019 Q55]], [[2020 Q4]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

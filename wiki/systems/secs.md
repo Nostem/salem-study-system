@@ -67,9 +67,14 @@ SEC Mode 2 (blackout only) includes MDAFW pump start: when 2B 4KV Vital Bus de-e
 After SEC and SI reset during EOP-LOCA-3, a subsequent blackout on a 4KV vital bus: <span class="hi-exam">SEC performs blackout loading ONLY — ECCS pumps and safeguards equipment are NOT automatically started</span>. Must be <span class="hi-exam">manually operated</span> because blackout loading starts different equipment than safeguards loading. Also: after resetting all SECs, the <span class="hi-exam">230V control centers must be MANUALLY reset</span> by the crew (20-minute auto-removal notwithstanding). <span class="hi-trap">Trap: LBLOCA is in progress but SI is reset — the SEC has no SI signal, so it performs blackout loading (Mode 2), not SI + blackout loading (Mode III).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q60</div>
+LOOP in MODE 4 with 2C EDG paralleled to the grid for surveillance: 2A and 2B 4KV Vital Buses sense Instantaneous UV → <span class="hi-exam">ALL three SECs (2A, 2B, 2C) enter Mode II (Blackout Only)</span> because 2/3 Vital Buses sense Instantaneous UV. SEC Mode II causes the 2C EDG Output Breaker to <span class="hi-exam">OPEN then reclose</span> (even though 2C EDG was already running and loaded). <span class="hi-exam">RHR pumps are NOT automatically loaded in SEC Mode II</span> — they are only sequenced in Mode I (SI only) and Mode III (SI + Blackout). 21 RHR Pump (on 2A bus) will be <span class="hi-exam">stopped</span> after SEC 2A completes Mode II sequencing. <span class="hi-trap">Trap: candidates may assume the running EDG output breaker remains closed, or that RHR pumps restart after SEC sequencing completes.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]]
-- Related exam questions: [[2018 Q22]], [[2018 Q27]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
+- Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]]
+- Related exam questions: [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

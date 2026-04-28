@@ -351,6 +351,6 @@ TS LCO 3.6.3 containment isolation valve operability: <span class="hi-exam">2VC5
 - Related systems: [[Containment]], [[ECCS]]
 
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2019 Q27]], [[2019 Q28]], [[2020 Q33]], [[2023 Q54]]
+- Related exam questions: [[2018 Q88]], [[2019 Q27]], [[2019 Q28]], [[2020 Q33]], [[2023 Q54]]
 - Related JPMs: [[2022 JPM SRO-A3]]
 - Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

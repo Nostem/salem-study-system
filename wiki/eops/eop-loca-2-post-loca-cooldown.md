@@ -45,6 +45,13 @@ During ECCS pump reduction for vital bus redundancy: <span class="hi-exam">22 SI
 Step 14 NOTE — voiding identification during depressurization: without RCPs running, the upper head remains relatively hot compared with the active regions of the RCS. Steam formation during depressurization in the upper head <span class="hi-exam">displaces water into the Pressurizer, causing rapidly increasing Pressurizer level</span>. <span class="hi-trap">Rising PZR level (not lowering SI flow, rising RCS pressure, or lowering subcooling) is the procedural indication for voiding per EOP-LOCA-2.</span>
 </div>
 
+### Step 11 — RCS Cooldown to Cold Shutdown
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q70</div>
+Step 11 — T-COLD Cooldown Rate limit: maintain less than <span class="hi-exam"><span class="val-trip">100 &deg;F/HR</span></span> maximum. To use condenser steam dumps when TAVG is less than <span class="hi-exam val-trip">543 &deg;F</span> (P-12 Lo TAVG block), <span class="hi-exam">BOTH "BYPASS TAVG" BEZEL Pushbuttons (A AND B) must be depressed</span>. <span class="hi-trap">Trap: 50 &deg;F/HR is the normal cooldown limit per S2.OP-IO.ZZ-0006 (Hot Standby to Cold Shutdown) — EOP-LOCA-2 allows 100 &deg;F/HR. Also, the BYPASS TAVG blocking solenoids are in SERIES — BOTH A AND B must be depressed (not A OR B). If they were in parallel, either one alone would suffice.</span>
+</div>
+
 ### Step 29 — Natural Circulation Monitoring
 
 <div class="callout callout-exam">
@@ -75,6 +82,6 @@ EOP-LOCA-2 POST Step 22 Charging Pump Reduction with 2 SI Pumps running, 1 RCP r
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[CVCS]], [[Pressurizer & PRT]]
-- Related exam questions: [[2018 Q50]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]]
+- Related exam questions: [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]]
 - Related JPMs: [[2023 JPM Sim-c]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

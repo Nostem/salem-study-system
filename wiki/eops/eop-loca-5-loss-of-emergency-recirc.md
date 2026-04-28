@@ -51,6 +51,11 @@ Entered from LOCA-1 when <span class="hi-exam">22 RHR pump trips (overcurrent) �
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q65</div>
+Step 24 — RCS depressurization with all RCPs stopped: normal spray NOT available → use <span class="hi-exam">a PZR PORV</span> to depressurize (not AUX SPRAY). Upper head voiding indication: <span class="hi-exam">PZR level rising from 10% to 45% in 30 seconds</span> = rapidly rising PZR level. <span class="hi-trap">AUX SPRAY maintains RCS inventory but is not the procedure-directed depressurization method. PORV depressurization loses inventory but is what EOP-LOCA-5 directs.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q65</div>
 Step 24 — RCS depressurization to minimize subcooling: with <span class="hi-exam">normal spray not available (all RCPs stopped)</span>, the crew depressurizes using <span class="hi-exam">a PZR PORV</span> (not AUX SPRAY). Upper head voiding indication: <span class="hi-exam">rapidly rising PZR level</span> (35% rise in 30 seconds in this example). <span class="hi-trap">Do not confuse AUX SPRAY (which maintains RCS inventory) with PORV depressurization (which loses inventory). With no RCPs running, normal spray is NOT available. Also: rapidly rising PZR level IS an indication of upper head voiding — the steam in the upper head collapses, pushing water into the PZR.</span>
 </div>
@@ -65,10 +70,15 @@ Step 6 Table B/C analysis with 2B 4KV Vital Bus de-energized: Table B determines
 LOCA-5 mitigation strategies include: (1) Run all CFCUs in high speed, (2) Minimize SI flow, (3) Depressurize RCS to minimize subcooling, (4) Make up to RWST. <span class="hi-exam">During a DBA LBLOCA with loss of one EDG (2B EDG), only strategies 2 and 4 are applicable</span> because: <span class="hi-trap">22 and 24 CFCUs are powered from the 2B EDG bus and are NOT available</span> (eliminates strategy 1), and a DBA LOCA has already completely depressurized the RCS so <span class="hi-trap">no RCS subcooling exists to minimize</span> (eliminates strategy 3).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q81</div>
+RWST makeup procedure selection: IAW EOP-LOCA-5, crew adds makeup to RWST per <span class="hi-exam">S2.OP-SO.CVC-0006 Section 5.8 (Makeup to RWST Using CVCS Makeup System)</span> — NOT S2.OP-SO.SF-0001 Section 5.6 (Transferring Spent Fuel Pool Water to RWST). SG NR Level feed flow target depends on containment conditions: <span class="hi-exam">ADVERSE containment (≥ 4 psig): maintain total feed flow > 22E04 LB/HR until at least one SG NR Level > 15%</span>. <span class="hi-exam">NORMAL containment: > 9%</span>. At 12.0 psig containment pressure = adverse conditions apply. <span class="hi-trap">Trap: S2.OP-SO.SF-0001 Section 5.6 IS an approved RWST makeup procedure, but EOP-LOCA-5 specifically directs CVC-0006 Section 5.8.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
-- Related exam questions: [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related exam questions: [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

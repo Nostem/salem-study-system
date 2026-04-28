@@ -243,8 +243,23 @@ The provisions of SR 4.0.4 shall NOT prevent entry into MODES required to comply
 
 <a href="/salem-study-system/ts-pdfs/ts-2-0.pdf" target="_blank">View Tech Spec PDF</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q96</div>
+SR 4.0.3 missed surveillance delay calculation: delay time is <span class="hi-exam">24 hours OR up to the limit of the specified frequency, whichever is GREATEST</span>. For a MONTHLY (31 days) SR discovered missed on November 21st: November 21st + 31 days = <span class="hi-exam">December 22nd</span>. <span class="hi-trap">Trap: "whichever is LEAST" would give only 24 hours (Nov 22nd). Assuming a MONTH = 30 days gives Dec 21st. Adding SR 4.0.2's 25% extension to the delay period gives Dec 29th — but SR 4.0.3 does NOT include SR 4.0.2's 25% extension.</span> A risk assessment is required for delay periods greater than 24 hours.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q86</div>
+LCO 3.0.3 application with 2 accumulators inoperable (boron OOS): LCO 3.5.1 has no action for > 1 accumulator inoperable → <span class="hi-exam">LCO 3.0.3 applies: 1 hour to initiate action + 6 hours to HOT STANDBY = 7 hours total</span>. <span class="hi-trap">78 hours (72 + 6) is the single-accumulator boron action — not applicable when 2 accumulators are simultaneously inoperable.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q88</div>
+LCO 3.0.3 exit and return to specific LCO action: when BOTH trains of Containment Spray are inoperable → LCO 3.0.3. When ONE train is restored → exit LCO 3.0.3, enter LCO 3.6.2.1 single-train-inoperable action. The <span class="hi-exam">72-hour clock starts from the time the LCO was first NOT met</span> (when both trains went inoperable), not from when one train was restored. Total time: 72 + 6 = 78 hours from initial entry.
+</div>
+
 ## Connections
 
 - Related procedures: [[OP-AA-108-116 — Protected Equipment Program]]
-- Related exam questions: [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2018 Q86]], [[2018 Q88]], [[2018 Q96]], [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

@@ -51,6 +51,11 @@ The rod control system is de-energized when: (1) both Rod Drive MG set motor bre
 
 All RCPs may be de-energized for up to 1 hour provided: (1) no boron dilution, (2) core outlet temp maintained ≥10°F below saturation, (3) rod control system de-energized. SG secondary level must be ≥5% narrow range. *(Amendment No. 282)*
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q51</div>
+After a reactor trip from 75% with one RCP stopped: RTB B is open and both bypass breakers not racked in, so <span class="hi-exam">rod control system is de-energized</span>. LCO 3.4.1.2 only requires <span class="hi-exam">two loops OPERABLE</span> when de-energized. With three loops still running, <span class="hi-exam">LCO 3.4.1.2 IS met</span>. <span class="hi-trap">Trap: candidates may assume all four loops must be OPERABLE after a trip, forgetting the de-energized allowance.</span>
+</div>
+
 ### Hot Shutdown (3.4.1.3)
 
 <div class="callout callout-important">
@@ -486,5 +491,5 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
-- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

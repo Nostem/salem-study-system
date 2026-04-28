@@ -70,10 +70,21 @@ SGFP trip below P-10 (10% power) response: with reactor power at 8% (below P-10)
 21 SGFP trips on turbine thrust bearing oil pressure high at ~88% power (Event 3). Main Turbine auto runback <span class="hi-exam">fails to actuate</span>. CRS directs immediate actions of AB.CN-0001. PO depresses <span class="hi-exam">GO PB on Digital EHC</span> to manually initiate turbine runback. RO initiates boration and inserts rods to restore Tavg to Tref. PO depresses 21 SGFP TURBINE TRIP bezel pushbutton and verifies AFP AUTO ARMED bezel lit. Crew stabilizes unit at ~66% with SG NR levels >44%.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q58</div>
+SGFP trip at 90% power with ramp rates NOT preset: IAW AB.CN-0001 IMMEDIATE ACTIONS 2.3.1, <span class="hi-exam">"IF RAMP RATES are not preset for SGFP runback, THEN: ADJUST RAMP RATES for less than or equal to <span class="val-alarm">15%/MIN</span>."</span> This is the manual load reduction rate. <span class="hi-trap">Trap: plausible distractors are 20, 10, and 5 %/MIN — all close to the actual 15%/MIN procedural limit. Do not confuse with the 200%/MIN automatic DEHC runback rate (tested in 2023 Q64).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q78</div>
+Condensate pump trip with polishing in service and SGFP suction pressure at 310 psig lowering: per Steps 3.20-3.22, the crew will <span class="hi-exam">FIRST open 21/22/23CN108 (Bypass Polisher Valves)</span> to restore SGFP suction pressure. 2CN47 (23/24/25 Heater Strings Bypass) is opened AFTER the CN108s. <span class="hi-trap">Trap: opening 2CN47 first is plausible because both actions address low SGFP suction pressure, but the procedure sequence requires CN108s before CN47.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]], [[AFW]]
-- Related exam questions: [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
+- Related procedures: [[HU-AA-101 — Human Performance Tools and Verification Practices]]
+- Related exam questions: [[2018 Q58]], [[2018 Q78]], [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related JPMs: [[2022 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

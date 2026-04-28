@@ -39,11 +39,20 @@ Mode 5 with RCS depressurized/vented: 21 RHR Pump trips on electrical fault, <sp
 Heatup rate during loss of RHR: per AB.RHR-0001 Attachment 5 (Heatup Rate for Loss of RHR Cooling), <span class="hi-exam">2 days after shutdown (before offload) at 10% PZR Level, heatup rate is 5 &deg;F per minute</span>. With TAVG at 150 &deg;F, time to reach 200 &deg;F (MODE 4) = (200 - 150) / 5 = <span class="hi-exam">10 minutes</span>. EAL#CA4.1 criteria for ALERT with RCS intact: <span class="hi-exam">RCS must be &gt; 200 &deg;F for 60 minutes</span>. Earliest ALERT at 0810 (0700 + 10 min heatup + 60 min duration). <span class="hi-trap">Trap: using the wrong heatup curve (after offload = 3.4 &deg;F/min) gives incorrect time to 200 &deg;F. Must use before offload curve since the plant has only entered MODE 3 for a planned outage — no fuel has been offloaded.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q87</div>
+AB.RHR-0001 CAS for loss of RCS inventory in <span class="hi-exam">MODE 5</span>: "IF AT ANY TIME a loss of RCS inventory occurs, THEN PERFORM one of the following: IF in Mode 5 OR 6, THEN <span class="hi-exam">START Safety Injection and Charging Pumps as required AND CONTROL Pressurizer level between 5% and 50% while maintaining RHR System in service</span>." Key CAS routing based on MODE:<br>
+- <span class="hi-exam">Mode 4 with inventory loss → AB.LOCA-0001 (Shutdown LOCA)</span><br>
+- <span class="hi-exam">Mode 5 or 6 with inventory loss → Start SI/Charging, control PZR level 5-50%</span><br>
+- <span class="hi-exam">Complete loss of all vital buses (not BDBE) → Attachment 9 (SG Reflux Cooling)</span><br>
+- <span class="hi-exam">RCS aligned for operation < 101 ft elevation → AB.RHR-0002</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RHR]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.CONT-0001 — Containment Closure]]
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2019 Q78]], [[2019 Q86]], [[2020 Q6]], [[2023 Q79]]
+- Related exam questions: [[2018 Q53]], [[2018 Q84]], [[2018 Q87]], [[2019 Q78]], [[2019 Q86]], [[2020 Q6]], [[2023 Q79]]
 - Related JPMs: [[2020 JPM Sim-b]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]]

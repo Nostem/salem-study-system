@@ -32,8 +32,13 @@ This question was security-redacted. It tested SRO knowledge of actions during a
 AFW should remain <span class="hi-exam">isolated to affected SG(s) until a steam release path is established</span>. AFW is a high pressure system which may cause further overpressure in a SG with no steam release path.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q72</div>
+Step 5 — permitted steam release paths include <span class="hi-exam">13 AFW Pump</span> (turbine-driven AFW). If MS18 (MS Warmup) and MS10 (Atmospheric Relief Valves) cannot be opened, the 13 AFW Pump is a valid release path because the affected SG is a source of steam for the turbine-driven pump. Step 9 — if unable to release steam from the affected SG, maintain <span class="hi-exam">RCS T-HOTs less than 540 &deg;F</span> using the UNAFFECTED SGs. <span class="hi-trap">Trap: establishing cool AFW flow to the affected SG does NOT reduce SG pressure — it adds inventory. The 13 AFW Pump works as a release path because it consumes steam from the affected SG.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]]
-- Related exam questions: [[2022 Q26]], [[2023 Q85]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related systems: [[Steam Generator & Blowdown]], [[AFW]], [[Main Steam]]
+- Related exam questions: [[2018 Q72]], [[2022 Q26]], [[2023 Q85]]
+- Related exam: [[2018 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

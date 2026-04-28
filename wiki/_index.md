@@ -126,6 +126,7 @@ status: draft
 - [[EOP-FRCE-2 — Response to Containment Flooding]]
 - [[EOP-FRCE-3 — Response to High Containment Radiation Levels]]
 - [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
+- [[EOP-FRCC-2 — Response to Degraded Core Cooling]]
 - [[EOP-FRHS-2 — Response to Steam Generator Overpressure]]
 - [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
 - [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
@@ -187,6 +188,9 @@ status: draft
 - [[AB.4KV-0001 — Loss of 4KV Vital Bus]]
 - [[AB.4KV-0002 — Loss of 2B 4KV Vital Bus]]
 - [[AB.4KV-0003 — Loss of 2C 4KV Bus]]
+- [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]]
+- [[AB.CONT-0001 — Containment Closure]]
+- [[AB.RC-0004 — Natural Circulation]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
@@ -228,6 +232,7 @@ status: draft
 - [[OP-AA-105-102 — NRC Active License Maintenance]]
 - [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - [[SY-AA-102-201 — Fitness for Duty]]
+- [[HU-AA-101 — Human Performance Tools and Verification Practices]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
@@ -295,4 +300,5 @@ status: draft
 - [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
 - [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
 - [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]]
+- [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]]
 - [[S2-RE-RA.ZZ-0016 — Curve Book (Salem Unit 2 Cycle 23)]]

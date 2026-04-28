@@ -50,11 +50,16 @@ R19 SGBD radiation monitor WARNING setpoint automatic actuations: <span class="h
 2R1B Control Room Radiation Monitor Channel 1 fails high. Control room ventilation actuates in <span class="hi-exam">Accident Pressurized Mode</span> (intake dampers for 2R1B Ch. 1 and 1R1B Ch. 2 are isolated, making both channels inoperable). PO calls Unit 1 to check 1R1B Ch. 2 reading (normal). After CAV reset and dampers reopened, 1R1B Ch. 2 is operable — CRS enters <span class="hi-exam">TS 3.3.3.1.b Action 28</span> (immediately place in Accident Pressurized or Recirculation mode) for 2R1B Ch. 1 only. Then transitions to <span class="hi-exam">Action 27</span> once only one channel remains inoperable.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q83</div>
+AB.RAD-0001 Attachment routing: <span class="hi-exam">Attachment 1 (Process Radiation Monitors)</span> is used for process rad monitor alarms including <span class="hi-exam">R41D (Plant Vent Noble Gas Release Rate)</span>. <span class="hi-exam">Attachment 2 (Process Filter Radiation Monitors)</span> is used for filtered systems. An unplanned gaseous release from the 11 GDT alarms on R41D (because the GDT discharges to the plant vent), and the crew uses Attachment 1 (not Attachment 2) to stop the release. <span class="hi-trap">R12A-B (Cont or Vent Gas Effluent/Iodine) monitors containment vent gas, NOT the plant vent where GDTs discharge.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]], [[Refueling]], [[CAV]]
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2018 Q7]], [[2019 Q8]], [[2019 Q33]], [[2020 Q23]], [[2020 Q51]], [[2022 Q23]], [[2023 Q62]]
+- Related exam questions: [[2018 Q7]], [[2018 Q83]], [[2019 Q8]], [[2019 Q33]], [[2020 Q23]], [[2020 Q51]], [[2022 Q23]], [[2023 Q62]]
 - Related JPMs: [[2023 JPM Sim-h]]
 - Related scenarios: [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

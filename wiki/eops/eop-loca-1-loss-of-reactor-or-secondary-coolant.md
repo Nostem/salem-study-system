@@ -77,6 +77,11 @@ LOCA outside containment recognition from EOP-LOCA-1: alarms indicating a LOCA o
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q77</div>
+Hydrogen recombiner and hot leg recirculation timing: start <span class="hi-exam">ONLY one</span> hydrogen recombiner when containment H2 concentration > 0.5%. Transfer to Hot Leg Recirculation (EOP-LOCA-4) is required <span class="hi-exam">14 hours</span> after SI actuation (not 12 hours). <span class="hi-trap">Trap: 12 hours is the requirement to start PREPARATIONS for hot leg recirc. The actual performance of LOCA-4 is at 14 hours. Also: there are two hydrogen recombiners on site, but EOP-LOCA-1 only starts ONE below 4% H2.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q51</div>
 EOP-LOCA-1 Step 3 feed flow requirement: <span class="hi-exam">"MAINTAIN TOTAL FEED FLOW GREATER THAN 22E04 LB/HR UNTIL AT LEAST ONE SG NR IS GREATER THAN 9% (15% ADVERSE)"</span>. Containment pressure at <span class="hi-exam">2.5 psig is NOT adverse</span> — adverse containment threshold has not been reached. Therefore the non-adverse SG NR level limit of <span class="hi-exam">9%</span> applies, and the requirement is <span class="hi-exam">AT LEAST ONE SG</span> (not all SGs). <span class="hi-trap">Trap: "ALL SGs" vs "AT LEAST ONE SG" — the step requires only ONE SG to exceed the limit. Also, 15% is the adverse containment limit, not the normal limit.</span>
 </div>
@@ -85,7 +90,7 @@ EOP-LOCA-1 Step 3 feed flow requirement: <span class="hi-exam">"MAINTAIN TOTAL F
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]]
-- Related exam questions: [[2018 Q4]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
+- Related exam questions: [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

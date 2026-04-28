@@ -37,9 +37,14 @@ Per EOP-LOCA-1 Step 24, when hydrogen concentration is <span class="hi-exam">bet
 SRO question confirms: per EOP-LOCA-1 Step 24, when H2 concentration is <span class="hi-exam">0.7% (greater than 0.5%)</span>, crew starts <span class="hi-exam">ONLY ONE hydrogen recombiner</span> by performing SO.CAN-0001 CONCURRENTLY with EOP-LOCA-1. The procedure is performed concurrently — not as a standalone evolution.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q77</div>
+Confirms EOP-LOCA-1 requirement: start <span class="hi-exam">ONLY one</span> hydrogen recombiner when containment H2 > 0.5%. Two recombiners exist, but EOP-LOCA-1 limits to one below 4%.
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2019 Q32]], [[2019 Q91]], [[2022 Q60]], [[2020 Q92]]
-- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2018 Q77]], [[2019 Q32]], [[2019 Q91]], [[2022 Q60]], [[2020 Q92]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]]

@@ -158,11 +158,26 @@ Loss of both RHR pumps in Mode 5 with RCS depressurized and vented (2PS59). 21 R
 During LOCA outside containment (EOP-LOCA-6), the crew is MOST concerned with <span class="hi-exam">RHR piping connecting to the RCS</span> because it is only rated to <span class="hi-exam">600 psig</span> (vs RCS piping rated to 2500 psig). This is the basis for the leak isolation strategy in LOCA-6.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q84</div>
+AB.CONT-0001 (Containment Closure) response during Loss of RHR: <span class="hi-exam">Containment Closure should be established prior to Core Boiling</span> (not within 4 hours — that applies to other initiating events). Outage Equipment Hatch may be closed using <span class="hi-exam">4 corner bolts per AB.CONT-0001</span> (expedited closure for time-critical RHR loss), versus ALL 10 bolts per SC.MD-FR.CAN-0001 for non-RHR events.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q87</div>
+AB.RHR-0001 CAS routing for loss of RCS inventory by MODE: In <span class="hi-exam">MODE 5 with inventory loss</span> (PZR level lowering, containment particulate monitor rising), the CAS directs: <span class="hi-exam">START SI and Charging Pumps as required AND CONTROL PZR level between 5% and 50% while maintaining RHR System in service</span>. Do NOT go to AB.LOCA-0001 (Mode 4 only), AB.RHR-0002 (reduced inventory only), or Attachment 9 (loss of all vital buses only).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q63</div>
+RH19 (RHR Discharge X-CONN Valves): per EOP-LOCA-6 Step 2, the crew <span class="hi-exam">WILL close 11RH19 and 12RH19</span> to separate the 11 and 12 RHR discharge lines during LOCA outside containment leak isolation. This enhances the ability to diagnose which train has the leak. Successful isolation confirmed by <span class="hi-exam">rising RCS pressure</span>.
+</div>
+
 ## Connections
 
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
-- Related exam questions: [[2018 Q3]], [[2018 Q4]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
+- Related exam questions: [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

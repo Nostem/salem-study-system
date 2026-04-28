@@ -164,9 +164,15 @@ With Tavg less than <span class="val-trip">541°F</span>, restore Tavg within <s
 
 ---
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q91</div>
+When control rods go below the Rod Insertion Limit (ROD INSERT LIMIT LO-LO alarm present), <span class="hi-exam">SR 4.1.1.1.b is NOT met</span> because control banks are NOT within the COLR limits. With the SR not met, <span class="hi-exam">LCO 3.1.1.1 is also NOT met</span>. <span class="hi-trap">Trap: the candidate may think LCO 3.1.1.1 is met until a SDM calculation confirms inadequate SDM. But SR 4.1.1.1.b requires verifying control banks are within COLR limits — if they are not, the SR is not met, which means the LCO is not met regardless of actual SDM value.</span> Per the ROD INSERT LIMIT LO-LO Alarm Response Procedure, the crew will perform <span class="hi-exam">S2.OP-SO.CVC-0008 (Rapid Boration) ONLY</span> to restore rods above the RIL. <span class="hi-trap">Raising turbine power is NOT permitted — it would lower TAVG causing automatic rod withdrawal, but the alarm response procedure does not allow this corrective action.</span>
+</div>
+
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-1.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[CVCS]], [[RCS]]
-- Related concepts: [[Rx Vessel & Internals]], [[Rx Vessel & Internals]]
+- Related exam questions: [[2018 Q91]]
+- Related exam: [[2018 NRC Written Exam]]

@@ -328,10 +328,15 @@ The Surveillance Frequency is based on operating experience, equipment reliabili
 Manual QPTR surveillance following dropped rod 2D4: calculated QPTR for N42 quadrant upper = <span class="hi-exam">1.041</span>, lower = <span class="hi-exam">1.032</span>, both exceeding the <span class="hi-exam">1.02 limit</span>. Surveillance marked UNSAT, TS LCO 3.2.4 NOT met. QPTR >1.02 but <1.09 → Action a applies: calculate QPTR hourly, restore within <span class="hi-exam">2 hours</span> or reduce power.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q97</div>
+LCO 3.2.1 (AFD) action when NOT met at 95% power: reduce power to less than <span class="hi-exam">90% RTP within 15 minutes</span>. Once between 90-50%, reduce to <50% in the next <span class="hi-exam">30 minutes</span>. LCO 3.2.1 power reduction protects the <span class="hi-exam">F<sub>Q</sub>(Z) (Heat Flux Hot Channel Factor)</span> limit in the COLR. <span class="hi-trap">Trap: Radial Peaking Factor (F<sub>XY</sub>) is protected by a different LCO (3.2.3). The three Power Distribution LCOs protect three different hot channel factors: 3.2.1 → F<sub>Q</sub>(Z), 3.2.2 → F<sup>N</sup><sub>ΔH</sub>, 3.2.3 → Radial Peaking Factor.</span>
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]], [[RCS]]
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]]
-- Related exam questions: [[2020 Q20]]
+- Related exam questions: [[2018 Q97]], [[2020 Q20]]
 - Related JPMs: [[2022 JPM RO-A3]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]

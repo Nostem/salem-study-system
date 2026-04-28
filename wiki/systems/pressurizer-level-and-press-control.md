@@ -33,6 +33,11 @@ PZR heaters de-energize based on <span class="hi-exam">PZR low level (at <span c
 PZR pressure control sequence during a rising pressure transient: spray valves begin opening at <span class="val-normal">2260 psig</span>, <span class="hi-exam">spray valves fully open at <span class="val-normal">2310 psig</span></span>. PORVs close setpoint is <span class="hi-exam"><span class="val-normal">2315 psig</span></span>. PORVs open at <span class="val-trip">2335 psig</span>. MPC at 100% output when PZR pressure reaches <span class="hi-exam">2355 psig</span>. At 2312 psig: <span class="hi-exam">spray valves fully open</span>. At 2340 psig: <span class="hi-exam">PORVs open</span>. <span class="hi-trap">Trap: 2315 psig is the PORV CLOSE setpoint (not the spray full-open setpoint). Candidates may confuse the 2315 psig value.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q55</div>
+PORV open logic requires <span class="hi-exam">2 of 2 coincidence</span>: 2PR1 requires PT-455 AND PT-457 both > <span class="val-trip">2335 psig</span>; 2PR2 requires PT-456 AND PT-474 both > <span class="val-trip">2335 psig</span>. With only PT-455 (Channel I) failing high, <span class="hi-exam">NO PORVs open</span> — neither PORV has both input channels reading high. <span class="hi-trap">Trap: PORVs are NOT controlled by the Master Pressure Controller (MPC). Each PORV has a dedicated 2/2 pressure coincidence circuit independent of the MPC. A single channel failure high cannot open any PORV.</span>
+</div>
+
 ## Pressurizer Heater Power Supplies
 
 <div class="callout callout-exam">
@@ -118,11 +123,16 @@ PORV channel assignments: <span class="hi-exam">2PR1 is controlled by Channel I 
 EOP-SGTR-1 Step 19 RCS depressurization using normal spray. Open <span class="hi-exam">2PS1 and 2PS3</span> spray valves. When Table D conditions met (RCS pressure < ruptured SG pressure AND PZR level > 11%), Step 19.1 CAS directs closing spray valves. <span class="hi-exam">2PS3 fails to close</span> — alternate path. Corrective action: <span class="hi-exam">STOP 21 and 23 RCPs</span> to eliminate spray flow path. 2PS3 spray valve is supplied by 21 and 23 RCP discharge; stopping these pumps removes the driving head for spray.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q82</div>
+2LT-459 (Channel I PZR Level) fails HIGH while controlling: 22 Backup Heaters <span class="hi-exam">automatically energize</span> due to <span class="hi-exam">+5% PZR level deviation (LACTUAL - LREF)</span>. 21 Backup Heaters are already ON in manual. <span class="hi-trap">Trap: candidates may incorrectly think B/U heaters will de-energize because PZR pressure (2235 psig) is > 2210 psig (the pressure-based B/U heater auto-energize setpoint). The level deviation logic is a separate, independent auto-energize path for the backup heaters.</span> TS action: per LCO 3.3.1.1, 2LT-459 must be placed in the tripped condition within <span class="hi-exam">6 hours</span> (not 1 hour).
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
-- Related exam questions: [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
+- Related exam questions: [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2018 Q55]], [[2018 Q82]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
 - Related JPMs: [[2019 JPM Sim-c]], [[2022 JPM IP-i]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
