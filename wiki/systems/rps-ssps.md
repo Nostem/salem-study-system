@@ -83,7 +83,7 @@ RCP Undervoltage Reactor Trip: <span class="hi-exam">4KV Group Busses H and G</s
 | Designation | Setpoint | Derivation | Function | Source |
 |------------|---------|-----------|----------|--------|
 | P-4 | N/A | Reactor trip | Actuates turbine trip; closes main FW valves on low Tavg | UFSAR T7.2-2 |
-| P-6 | <span class="val-trip">10⁻¹⁰ amps</span> (IR) | 1/2 intermediate range above setpoint | Allows manual block of source range trip | UFSAR T7.2-2 |
+| P-6 | <span class="val-trip">1E-6%</span> RTP (IR) | 1/2 intermediate range above setpoint | Allows manual block of source range trip | UFSAR T7.2-2 |
 | P-7 | <span class="val-trip">10%</span> RTP | 3/4 power range below P-10 AND 2/2 turbine pressure below P-13 | Blocks trips on: low flow (>1 loop), UV, UF, low PZR pressure, high PZR level | UFSAR T7.2-2 |
 | P-8 | <span class="val-trip">36%</span> RTP | 3/4 power range below setpoint | Blocks trip on low flow in a single loop | UFSAR T7.2-2 |
 | P-9 | <span class="val-trip">50%</span> RTP | 2/4 power range above setpoint | Prevents/defeats block of turbine trip reactor trip | UFSAR T7.2-2 |
