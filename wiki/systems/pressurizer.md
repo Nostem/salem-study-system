@@ -63,7 +63,7 @@ PRT cooling: accomplished by a <span class="hi-exam">manual-only feed and bleed<
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q8</div>
-PZR saturation determination using steam tables: at PZR Pressure 2005 psig (<span class="hi-exam">2020 psia</span>), saturation temperature is <span class="hi-exam">637&deg;F</span>. With PZR liquid temperature at 635&deg;F, the PZR is <span class="hi-exam">subcooled (NOT water saturated)</span>. Per 1-EOP-TRIP-5, the reason for establishing and maintaining saturation conditions in the PZR before RCP restart is to <span class="hi-exam">limit the PZR pressure DECREASE upon RCP restart</span>. <span class="hi-trap">Trap: steam tables are listed in psia, not psig — must add ~15 psi to convert. Also: the concern is pressure DECREASE (not increase) — pressure decrease occurs because cold water from the loop enters the PZR surge line when forced circulation is established.</span>
+PZR saturation determination using steam tables: at PZR Pressure 2005 psig (<span class="hi-exam">2020 psia</span>), saturation temperature is <span class="hi-exam">637&deg;F</span>. With PZR liquid temperature at 635&deg;F, the PZR is <span class="hi-exam">subcooled (NOT water saturated)</span>. Per 1-EOP-TRIP-6, the reason for establishing and maintaining saturation conditions in the PZR before RCP restart is to <span class="hi-exam">limit the PZR pressure DECREASE upon RCP restart</span>. <span class="hi-trap">Trap: steam tables are listed in psia, not psig — must add ~15 psi to convert. Also: the concern is pressure DECREASE (not increase) — pressure decrease occurs because cold water from the loop enters the PZR surge line when forced circulation is established.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -153,7 +153,7 @@ PZR pressure channel 1 fails high causing both spray valves to open fully and ra
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[S2.OP-SO.PZR-0003 — PRT Operation]], [[S2.OP-SO.RC-0002 — Vacuum Refill of the RCS]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
+- Related exam questions: [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
 - Related JPMs: [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
