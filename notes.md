@@ -1,9 +1,7 @@
 # Notes
 
 ## Right now
-- review current system hierarchy. each system will need its own wiki article. right now auxiliary systems contains ccw, afw, sw, cvcs. thats fine for a general article, but for the specific info we will be building and organizing each one will need its own wiki article. we can build them as we go.
-- articles have tech spec lco section and under connections ection a related tech specs. this is redundant. keep the tech spec lcos and wikilink them
-- some articles dont have active wikilinks for tech spec lcos that are already ingested
+- SQLITE DATABASE WITH QUESITONS and all metadata for easily tracking and queries, for generating quizzes. capture all metadata and connections found.
 
 ## Ingesting NRC Exam Questions
 The goals are multi-fold:
