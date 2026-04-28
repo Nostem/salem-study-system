@@ -1,0 +1,250 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Theme Preview">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 40px 24px;">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-size: 14px; letter-spacing: 0.18em; color: #6b7280; text-transform: uppercase;">Theme Direction Preview</h1>
+      <p style="color: #9ca3af; font-size: 13px; margin-top: 8px;">Three directions for the Salem Study Wiki redesign. Same content, different personality.</p>
+    </div>
+
+    <!-- THEME A: CONTROL ROOM -->
+    <div style="margin-bottom: 64px;">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+        <span style="background: #22c55e; color: #000; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 3px; letter-spacing: 0.1em;">A</span>
+        <span style="color: #e0e4ea; font-size: 15px; font-weight: 600;">Control Room</span>
+        <span style="color: #6b7280; font-size: 12px;">— Dark with depth. Instrument-panel feel. Status colors. Subtle glow.</span>
+      </div>
+      <div style="background: #080c14; border: 1px solid #1a2538; border-radius: 8px; overflow: hidden;">
+        <!-- Top bar -->
+        <div style="height: 44px; background: linear-gradient(180deg, #0f1520 0%, #0b1018 100%); border-bottom: 1px solid #1a2538; display: flex; align-items: center; padding: 0 20px; justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 24px; height: 24px; border: 1.5px solid #22c55e; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+              <div style="width: 8px; height: 8px; background: #22c55e; border-radius: 50%; box-shadow: 0 0 6px rgba(34,197,94,0.5);"></div>
+            </div>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.2em; color: #4ade80;">SALEM UNIT 2</span>
+          </div>
+          <div style="display: flex; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #6b7280;">
+            <span>SYS: <span style="color: #22c55e;">NOMINAL</span></span>
+            <span>ARTICLES: <span style="color: #e0e4ea;">869</span></span>
+          </div>
+        </div>
+        <!-- Content area -->
+        <div style="display: flex;">
+          <!-- Sidebar -->
+          <div style="width: 200px; min-width: 200px; background: #0a0f18; border-right: 1px solid #1a2538; padding: 16px 0;">
+            <div style="padding: 0 14px; margin-bottom: 12px;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #22c55e; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px;">Systems</div>
+              {['Reactor Coolant System', 'Pressurizer & PRT', 'CVCS', 'RCPs', 'Steam Generators'].map((s, i) => (
+                <div style={`padding: 5px 10px; font-size: 11px; border-radius: 3px; margin-bottom: 2px; ${i === 0 ? 'background: rgba(34,197,94,0.08); color: #4ade80; border-left: 2px solid #22c55e;' : 'color: #8b95a5;'}`}>{s}</div>
+              ))}
+            </div>
+            <div style="padding: 0 14px;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #f59e0b; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 8px;">Tech Specs</div>
+              {['TS 3/4.1 — Boration', 'TS 3/4.3 — Instrumentation', 'TS 3/4.4 — RCS'].map((s) => (
+                <div style="padding: 5px 10px; font-size: 11px; color: #8b95a5; margin-bottom: 2px;">{s}</div>
+              ))}
+            </div>
+          </div>
+          <!-- Main content -->
+          <div style="flex: 1; padding: 28px 32px;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #6b7280; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 4px;">Systems / Primary</div>
+            <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-size: 22px; color: #f0f4f8; font-weight: 600; margin: 0 0 16px;">Reactor Coolant System</h1>
+            <div style="height: 1px; background: linear-gradient(90deg, #22c55e 0%, transparent 60%); margin-bottom: 20px;"></div>
+            <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #22c55e; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;">Function</h2>
+            <p style="font-size: 13px; color: #b0b8c8; line-height: 1.7; margin-bottom: 16px;">The Reactor Coolant System transfers heat from the reactor core to the steam generators. Salem is a Westinghouse 4-loop PWR with a licensed thermal power of 3459 MWt per unit.</p>
+            <!-- Callout -->
+            <div style="border-left: 3px solid #f59e0b; background: rgba(245,158,11,0.05); padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 16px;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #f59e0b; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px;">Exam — 2023 Q1</div>
+              <p style="font-size: 12px; color: #b0b8c8; line-height: 1.6; margin: 0;">Low RC Flow trip: <span style="background: rgba(245,158,11,0.12); padding: 1px 4px; border-radius: 2px; color: #fde68a;">2/3 coincidence per loop</span>. Trip setpoint ≤90% of design loop flow.</p>
+            </div>
+            <!-- Table -->
+            <h2 style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #22c55e; letter-spacing: 0.14em; text-transform: uppercase; margin: 20px 0 10px;">Key Setpoints</h2>
+            <table style="width: 100%; font-size: 11px; border-collapse: collapse;">
+              <tr style="border-bottom: 1px solid #1a2538;">
+                <th style="text-align: left; padding: 8px 10px; color: #6b7280; font-weight: 500;">Parameter</th>
+                <th style="text-align: left; padding: 8px 10px; color: #6b7280; font-weight: 500;">Value</th>
+                <th style="text-align: left; padding: 8px 10px; color: #6b7280; font-weight: 500;">Source</th>
+              </tr>
+              <tr style="border-bottom: 1px solid #0f1520;">
+                <td style="padding: 8px 10px; color: #b0b8c8;">Design Pressure</td>
+                <td style="padding: 8px 10px; color: #f87171; font-family: 'JetBrains Mono', monospace;">2485 psig</td>
+                <td style="padding: 8px 10px; color: #6b7280;">UFSAR 5.1</td>
+              </tr>
+              <tr style="border-bottom: 1px solid #0f1520;">
+                <td style="padding: 8px 10px; color: #b0b8c8;">Normal Operating</td>
+                <td style="padding: 8px 10px; color: #34d399; font-family: 'JetBrains Mono', monospace;">2235 psig</td>
+                <td style="padding: 8px 10px; color: #6b7280;">TS 3/4.4</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 10px; color: #b0b8c8;">Low PZR Trip</td>
+                <td style="padding: 8px 10px; color: #f87171; font-family: 'JetBrains Mono', monospace;">1865 psig</td>
+                <td style="padding: 8px 10px; color: #6b7280;">TS T2.2-1</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THEME B: MODERN REFERENCE -->
+    <div style="margin-bottom: 64px;">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+        <span style="background: #60a5fa; color: #000; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 3px; letter-spacing: 0.1em;">B</span>
+        <span style="color: #e0e4ea; font-size: 15px; font-weight: 600;">Modern Reference</span>
+        <span style="color: #6b7280; font-size: 12px;">— Clean, generous, Stripe-docs energy. Strong hierarchy. Cool slate palette.</span>
+      </div>
+      <div style="background: #0f1117; border: 1px solid #232830; border-radius: 8px; overflow: hidden;">
+        <!-- Top bar -->
+        <div style="height: 48px; background: #0f1117; border-bottom: 1px solid #232830; display: flex; align-items: center; padding: 0 24px; justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" fill="none" stroke="#3b82f6" stroke-width="1.5"/><circle cx="10" cy="10" r="3" fill="#3b82f6"/></svg>
+            <span style="font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; font-weight: 600; color: #e2e8f0; letter-spacing: 0.02em;">Salem Study</span>
+          </div>
+          <div style="background: #1a1e27; border: 1px solid #2a2f3a; border-radius: 6px; padding: 6px 14px; display: flex; align-items: center; gap: 8px; width: 280px;">
+            <span style="color: #4b5563; font-size: 12px;">Search...</span>
+            <span style="margin-left: auto; font-size: 10px; color: #4b5563; border: 1px solid #2a2f3a; padding: 1px 5px; border-radius: 3px;">⌘K</span>
+          </div>
+        </div>
+        <!-- Content area -->
+        <div style="display: flex;">
+          <!-- Sidebar -->
+          <div style="width: 220px; min-width: 220px; background: #0f1117; border-right: 1px solid #232830; padding: 20px 0;">
+            <div style="padding: 0 16px; margin-bottom: 16px;">
+              <div style="font-size: 11px; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px;">Systems</div>
+              {['Reactor Coolant System', 'Pressurizer & PRT', 'CVCS', 'RCPs', 'Steam Generators'].map((s, i) => (
+                <div style={`padding: 7px 12px; font-size: 13px; border-radius: 6px; margin-bottom: 2px; ${i === 0 ? 'background: rgba(59,130,246,0.1); color: #60a5fa;' : 'color: #94a3b8;'}`}>{s}</div>
+              ))}
+            </div>
+            <div style="padding: 0 16px;">
+              <div style="font-size: 11px; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px;">Tech Specs</div>
+              {['TS 3/4.1 — Boration', 'TS 3/4.3 — Instrumentation', 'TS 3/4.4 — RCS'].map((s) => (
+                <div style="padding: 7px 12px; font-size: 13px; color: #94a3b8; margin-bottom: 2px;">{s}</div>
+              ))}
+            </div>
+          </div>
+          <!-- Main content -->
+          <div style="flex: 1; padding: 36px 48px; max-width: 720px;">
+            <div style="font-size: 12px; color: #64748b; margin-bottom: 6px;">Systems <span style="color: #3b4a5c;">›</span> Primary</div>
+            <h1 style="font-family: 'IBM Plex Sans', sans-serif; font-size: 28px; color: #f1f5f9; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.02em;">Reactor Coolant System</h1>
+            <p style="font-size: 14px; color: #64748b; margin-bottom: 28px;">Westinghouse 4-loop PWR · 3459 MWt · UFSAR Chapter 5</p>
+            <h2 style="font-size: 11px; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #232830;">Function</h2>
+            <p style="font-size: 15px; color: #cbd5e1; line-height: 1.75; margin-bottom: 24px;">The Reactor Coolant System transfers heat from the reactor core to the steam generators. Salem is a Westinghouse 4-loop PWR with a licensed thermal power of 3459 MWt per unit.</p>
+            <!-- Callout -->
+            <div style="background: #1a1710; border: 1px solid #3d3520; border-radius: 8px; padding: 14px 18px; margin-bottom: 20px;">
+              <div style="font-size: 10px; color: #f59e0b; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px;">Exam — 2023 Q1</div>
+              <p style="font-size: 13px; color: #cbd5e1; line-height: 1.65; margin: 0;">Low RC Flow trip: <span style="background: rgba(245,158,11,0.15); padding: 2px 6px; border-radius: 4px; color: #fde68a;">2/3 coincidence per loop</span>. Trip setpoint ≤90% of design loop flow.</p>
+            </div>
+            <!-- Table -->
+            <h2 style="font-size: 11px; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; margin: 28px 0 12px; padding-bottom: 8px; border-bottom: 1px solid #232830;">Key Setpoints</h2>
+            <table style="width: 100%; font-size: 13px; border-collapse: collapse;">
+              <tr>
+                <th style="text-align: left; padding: 10px 12px; color: #64748b; font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Parameter</th>
+                <th style="text-align: left; padding: 10px 12px; color: #64748b; font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Value</th>
+                <th style="text-align: left; padding: 10px 12px; color: #64748b; font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Source</th>
+              </tr>
+              <tr style="border-top: 1px solid #1e2330;">
+                <td style="padding: 10px 12px; color: #cbd5e1;">Design Pressure</td>
+                <td style="padding: 10px 12px; color: #f87171; font-family: 'JetBrains Mono', monospace; font-size: 12px;">2485 psig</td>
+                <td style="padding: 10px 12px; color: #64748b;">UFSAR 5.1</td>
+              </tr>
+              <tr style="border-top: 1px solid #1e2330;">
+                <td style="padding: 10px 12px; color: #cbd5e1;">Normal Operating</td>
+                <td style="padding: 10px 12px; color: #34d399; font-family: 'JetBrains Mono', monospace; font-size: 12px;">2235 psig</td>
+                <td style="padding: 10px 12px; color: #64748b;">TS 3/4.4</td>
+              </tr>
+              <tr style="border-top: 1px solid #1e2330;">
+                <td style="padding: 10px 12px; color: #cbd5e1;">Low PZR Trip</td>
+                <td style="padding: 10px 12px; color: #f87171; font-family: 'JetBrains Mono', monospace; font-size: 12px;">1865 psig</td>
+                <td style="padding: 10px 12px; color: #64748b;">TS T2.2-1</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- THEME C: HYBRID -->
+    <div style="margin-bottom: 64px;">
+      <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+        <span style="background: #a78bfa; color: #000; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 3px; letter-spacing: 0.1em;">C</span>
+        <span style="color: #e0e4ea; font-size: 15px; font-weight: 600;">Technical Authority</span>
+        <span style="color: #6b7280; font-size: 12px;">— Warm dark. Navy + amber accents. Engineering handbook gravitas. Serif headings.</span>
+      </div>
+      <div style="background: #0c1019; border: 1px solid #1e2840; border-radius: 8px; overflow: hidden;">
+        <!-- Top bar -->
+        <div style="height: 46px; background: #0e1322; border-bottom: 1px solid #1e2840; display: flex; align-items: center; padding: 0 22px; justify-content: space-between;">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div style="width: 22px; height: 22px; border: 1.5px solid #c9a84c; border-radius: 3px; display: flex; align-items: center; justify-content: center;">
+              <span style="color: #c9a84c; font-size: 12px; font-weight: 700;">S</span>
+            </div>
+            <span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 16px; color: #e8dcc8;">Salem Study Wiki</span>
+          </div>
+          <div style="display: flex; gap: 6px; align-items: center;">
+            <div style="background: #141b2d; border: 1px solid #1e2840; border-radius: 5px; padding: 5px 12px; font-size: 12px; color: #6b7a94; width: 240px;">⌘K &nbsp;Search...</div>
+          </div>
+        </div>
+        <!-- Content area -->
+        <div style="display: flex;">
+          <!-- Sidebar -->
+          <div style="width: 210px; min-width: 210px; background: #0b0f1a; border-right: 1px solid #1e2840; padding: 18px 0;">
+            <div style="padding: 0 14px; margin-bottom: 14px;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #c9a84c; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;">Systems</div>
+              {['Reactor Coolant System', 'Pressurizer & PRT', 'CVCS', 'RCPs', 'Steam Generators'].map((s, i) => (
+                <div style={`padding: 6px 10px; font-size: 12px; border-radius: 4px; margin-bottom: 2px; ${i === 0 ? 'background: rgba(201,168,76,0.08); color: #e8dcc8; border-left: 2px solid #c9a84c;' : 'color: #7a8599;'}`}>{s}</div>
+              ))}
+            </div>
+            <div style="padding: 0 14px;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #5a7ab5; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 10px;">Tech Specs</div>
+              {['TS 3/4.1 — Boration', 'TS 3/4.3 — Instrumentation', 'TS 3/4.4 — RCS'].map((s) => (
+                <div style="padding: 6px 10px; font-size: 12px; color: #7a8599; margin-bottom: 2px;">{s}</div>
+              ))}
+            </div>
+          </div>
+          <!-- Main content -->
+          <div style="flex: 1; padding: 32px 40px; max-width: 700px;">
+            <div style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #5a6a80; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px;">Systems / Primary</div>
+            <h1 style="font-family: 'Instrument Serif', Georgia, serif; font-size: 30px; color: #e8dcc8; font-weight: 400; margin: 0 0 6px; letter-spacing: -0.01em;">Reactor Coolant System</h1>
+            <p style="font-size: 12px; color: #5a6a80; font-family: 'JetBrains Mono', monospace; margin-bottom: 24px;">UFSAR Chapter 5 · Westinghouse 4-Loop PWR · 3459 MWt</p>
+            <h2 style="font-family: 'Instrument Serif', Georgia, serif; font-size: 16px; color: #c9a84c; font-weight: 400; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #1e2840;">Function</h2>
+            <p style="font-size: 14px; color: #a8b4c8; line-height: 1.75; margin-bottom: 20px;">The Reactor Coolant System transfers heat from the reactor core to the steam generators. Salem is a Westinghouse 4-loop PWR with a licensed thermal power of 3459 MWt per unit.</p>
+            <!-- Callout -->
+            <div style="border-left: 3px solid #c9a84c; background: rgba(201,168,76,0.04); padding: 12px 16px; border-radius: 0 6px 6px 0; margin-bottom: 18px;">
+              <div style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #c9a84c; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px;">Exam — 2023 Q1</div>
+              <p style="font-size: 13px; color: #a8b4c8; line-height: 1.65; margin: 0;">Low RC Flow trip: <span style="background: rgba(201,168,76,0.12); padding: 1px 5px; border-radius: 3px; color: #e8dcc8;">2/3 coincidence per loop</span>. Trip setpoint ≤90% of design loop flow.</p>
+            </div>
+            <!-- Table -->
+            <h2 style="font-family: 'Instrument Serif', Georgia, serif; font-size: 16px; color: #c9a84c; font-weight: 400; margin: 24px 0 10px; padding-bottom: 6px; border-bottom: 1px solid #1e2840;">Key Setpoints</h2>
+            <table style="width: 100%; font-size: 12px; border-collapse: collapse;">
+              <tr>
+                <th style="text-align: left; padding: 10px 10px; color: #5a6a80; font-weight: 500; font-size: 10px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.06em;">Parameter</th>
+                <th style="text-align: left; padding: 10px 10px; color: #5a6a80; font-weight: 500; font-size: 10px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.06em;">Value</th>
+                <th style="text-align: left; padding: 10px 10px; color: #5a6a80; font-weight: 500; font-size: 10px; font-family: 'JetBrains Mono', monospace; text-transform: uppercase; letter-spacing: 0.06em;">Source</th>
+              </tr>
+              <tr style="border-top: 1px solid #162035;">
+                <td style="padding: 10px 10px; color: #a8b4c8;">Design Pressure</td>
+                <td style="padding: 10px 10px; color: #f87171; font-family: 'JetBrains Mono', monospace;">2485 psig</td>
+                <td style="padding: 10px 10px; color: #5a6a80;">UFSAR 5.1</td>
+              </tr>
+              <tr style="border-top: 1px solid #162035;">
+                <td style="padding: 10px 10px; color: #a8b4c8;">Normal Operating</td>
+                <td style="padding: 10px 10px; color: #34d399; font-family: 'JetBrains Mono', monospace;">2235 psig</td>
+                <td style="padding: 10px 10px; color: #5a6a80;">TS 3/4.4</td>
+              </tr>
+              <tr style="border-top: 1px solid #162035;">
+                <td style="padding: 10px 10px; color: #a8b4c8;">Low PZR Trip</td>
+                <td style="padding: 10px 10px; color: #f87171; font-family: 'JetBrains Mono', monospace;">1865 psig</td>
+                <td style="padding: 10px 10px; color: #5a6a80;">TS T2.2-1</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="text-align: center; color: #6b7280; font-size: 11px; font-family: 'JetBrains Mono', monospace; padding: 20px 0;">
+      THEME PREVIEW — pick a direction or mix elements
+    </div>
+  </div>
+</BaseLayout>
