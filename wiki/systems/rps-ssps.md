@@ -19,23 +19,27 @@ Instrumentation and Control Systems provide the reactor operator with informatio
 
 ## Reactor Trip Functions
 
-| # | Trip Function | Coincidence | Interlocks | Source |
-|---|-------------|------------|------------|--------|
-| 1 | Manual | 1/2 | None | UFSAR T7.2-1 |
-| 2 | High Neutron Flux (Power Range) | 2/4 | Low setpoint interlocked with P-10 | UFSAR T7.2-1 |
-| 3 | Overtemperature Delta-T | 2/4 | None | UFSAR T7.2-1 |
-| 4 | Overpower Delta-T | 2/4 | None | UFSAR T7.2-1 |
-| 5 | Low Pressurizer Pressure | 2/4 | Interlocked with P-7 | UFSAR T7.2-1 |
-| 6 | High Pressurizer Pressure | 2/4 | None | UFSAR T7.2-1 |
-| 7 | High Pressurizer Water Level | 2/3 | Interlocked with P-7 | UFSAR T7.2-1 |
-| 8 | Low Reactor Coolant Flow | 2/3 per loop | Interlocked with P-7 and P-8 | UFSAR T7.2-1 |
-| 9A | RCP Undervoltage | 1/2 taken twice | Interlocked with P-7 | UFSAR T7.2-1 |
-| 9B | RCP Underfrequency | 1/2 taken twice | Interlocked with P-7 | UFSAR T7.2-1 |
-| 9C | RCP Breaker Open | — | Interlocked with P-7 | UFSAR T7.2-1 |
-| 10 | Safety Injection Signal | See SI actuation | — | UFSAR T7.2-1 |
-| 11 | Turbine-Generator Trip | 2/3 low auto stop oil pressure | Interlocked with P-9 | UFSAR T7.2-1 |
-| 14 | Source Range Neutron Flux | 1/2 | Manual block by P-6, interlocked with P-10 | UFSAR T7.2-1 |
-| 15 | High Positive Flux Rate | 2/4 | None | UFSAR T7.2-1 |
+| # | Trip Function | Trip Setpoint | Coincidence | Interlocks | Source |
+|---|-------------|--------------|------------|------------|--------|
+| 1 | Manual | N/A | 1/2 | None | UFSAR T7.2-1 |
+| 2 | High Neutron Flux (Power Range — High) | ≤<span class="val-trip">109%</span> RTP | 2/4 | None | TS T2.2-1 |
+| 2 | High Neutron Flux (Power Range — Low) | ≤<span class="val-trip">25%</span> RTP | 2/4 | Interlocked with P-10 | TS T2.2-1 |
+| 3 | Overtemperature Delta-T | Variable (f(Tavg, P, Delta-I)) | 2/4 | None | TS T2.2-1 |
+| 4 | Overpower Delta-T | Variable (f(Tavg)) | 2/4 | None | TS T2.2-1 |
+| 5 | Low Pressurizer Pressure | ≥<span class="val-trip">1865 psig</span> | 2/4 | Interlocked with P-7 | TS T2.2-1 |
+| 6 | High Pressurizer Pressure | ≤<span class="val-trip">2385 psig</span> | 2/4 | None | TS T2.2-1 |
+| 7 | High Pressurizer Water Level | ≤<span class="val-trip">92%</span> span | 2/3 | Interlocked with P-7 | TS T2.2-1 |
+| 8 | Low Reactor Coolant Flow | ≥<span class="val-trip">90%</span> design flow/loop | 2/3 per loop | Interlocked with P-7 and P-8 | TS T2.2-1 |
+| 9A | RCP Undervoltage | ≥<span class="val-trip">2900 V</span> each bus | 1/2 taken twice | Interlocked with P-7 | TS T2.2-1 |
+| 9B | RCP Underfrequency | ≥<span class="val-trip">56.5 Hz</span> each bus | 1/2 taken twice | Interlocked with P-7 | TS T2.2-1 |
+| 9C | RCP Breaker Open | N/A | — | Interlocked with P-7 | UFSAR T7.2-1 |
+| 10 | Safety Injection Signal | See SI actuation | See SI actuation | — | UFSAR T7.2-1 |
+| 11 | Turbine-Generator Trip — Auto Stop Oil | ≥<span class="val-trip">45 psig</span> | 2/3 | Interlocked with P-9 | TS T2.2-1 |
+| 11 | Turbine-Generator Trip — Stop Valve Closure | ≤<span class="val-trip">15%</span> off full open | — | Interlocked with P-9 | TS T2.2-1 |
+| 14 | Source Range Neutron Flux | ≤<span class="val-trip">10⁵ cps</span> | 1/2 | Manual block by P-6, interlocked with P-10 | TS T2.2-1 |
+| 15 | High Positive Flux Rate | ≤<span class="val-trip">5%</span> RTP (τ ≥ 2 sec) | 2/4 | None | TS T2.2-1 |
+| 13 | SG Water Level — Low-Low | ≥<span class="val-trip">14.0%</span> NR span | 2/3 per SG | None | TS T2.2-1 |
+| 5 | Intermediate Range Neutron Flux | ≤<span class="val-trip">25%</span> RTP | 1/2 | Interlocked with P-6 and P-10 | TS T2.2-1 |
 
 Note: Negative Flux Rate Trip has been removed per NRC License Amendment 278-261. (UFSAR T7.2-1)
 
@@ -76,18 +80,18 @@ RCP Undervoltage Reactor Trip: <span class="hi-exam">4KV Group Busses H and G</s
 
 ## Key Permissive Interlocks
 
-| Designation | Derivation | Function | Source |
-|------------|-----------|----------|--------|
-| P-4 | Reactor trip | Actuates turbine trip; closes main FW valves on low Tavg | UFSAR T7.2-2 |
-| P-6 | 1/2 intermediate range above setpoint | Allows manual block of source range trip | UFSAR T7.2-2 |
-| P-7 | 3/4 power range below setpoint (P-10) AND 2/2 turbine pressure below setpoint (P-13) | Blocks trips on: low flow (>1 loop), UV, UF, low PZR pressure, high PZR level | UFSAR T7.2-2 |
-| P-8 | 3/4 power range below setpoint | Blocks trip on low flow in a single loop | UFSAR T7.2-2 |
-| P-9 | 2/4 power range above setpoint | Prevents/defeats block of turbine trip reactor trip (≥50% rated thermal power) | UFSAR T7.2-2 |
-| P-10 | 2/4 power range above setpoint | Allows block of power range low setpoint trip; blocks source range trip | UFSAR T7.2-2 |
-| P-11 | 2/3 PZR pressure below setpoint | Allows manual block of SI on low PZR pressure | UFSAR T7.2-2 |
-| P-12 | 2/4 Tavg below setpoint | Actuates SI/steamline isolation on high steam flow; blocks steam dump | UFSAR T7.2-2 |
-| P-13 | 2/2 turbine steamline inlet pressure below setpoint | Input to P-7 | UFSAR T7.2-2 |
-| P-14 | 2/3 Hi-Hi SG level above setpoint (any SG) | Trips all FW pumps, isolates feedwater, trips turbine | UFSAR T7.2-2 |
+| Designation | Setpoint | Derivation | Function | Source |
+|------------|---------|-----------|----------|--------|
+| P-4 | N/A | Reactor trip | Actuates turbine trip; closes main FW valves on low Tavg | UFSAR T7.2-2 |
+| P-6 | <span class="val-trip">10⁻¹⁰ amps</span> (IR) | 1/2 intermediate range above setpoint | Allows manual block of source range trip | UFSAR T7.2-2 |
+| P-7 | <span class="val-trip">10%</span> RTP | 3/4 power range below P-10 AND 2/2 turbine pressure below P-13 | Blocks trips on: low flow (>1 loop), UV, UF, low PZR pressure, high PZR level | UFSAR T7.2-2 |
+| P-8 | <span class="val-trip">36%</span> RTP | 3/4 power range below setpoint | Blocks trip on low flow in a single loop | UFSAR T7.2-2 |
+| P-9 | <span class="val-trip">50%</span> RTP | 2/4 power range above setpoint | Prevents/defeats block of turbine trip reactor trip | UFSAR T7.2-2 |
+| P-10 | <span class="val-trip">10%</span> RTP | 2/4 power range above setpoint | Allows block of power range low setpoint trip; blocks source range trip | UFSAR T7.2-2 |
+| P-11 | ≥<span class="val-trip">1925 psig</span> | 2/3 PZR pressure channels | Allows manual block of SI on low PZR pressure | TS T3.3-3 |
+| P-12 | <span class="val-trip">543°F</span> Tavg | 2/4 Tavg channels (increasing: 3/4) | Actuates SI/steamline isolation on high steam flow; blocks steam dump | TS T3.3-3 |
+| P-13 | <span class="val-trip">600 psig</span> | 2/2 turbine steamline inlet pressure below setpoint | Input to P-7 | UFSAR T7.2-2 |
+| P-14 | ≤<span class="val-trip">67%</span> NR span | 2/3 Hi-Hi SG level above setpoint (any SG) | Trips all FW pumps, isolates feedwater, trips turbine | TS T3.3-4 |
 
 ## Rod Control Interlocks (Rod Stops)
 
@@ -103,12 +107,12 @@ Note: Automatic rod withdrawal is disabled at Salem. (UFSAR T7.2-2)
 
 ## ESF Actuation Signals
 
-| Signal | Designation | Actuation | Actions | Source |
-|--------|-----------|-----------|---------|--------|
-| Safety Injection | "S" | Low PZR pressure (2/3), OR Hi containment pressure (2/3), OR Hi steamline differential pressure (2/3), OR Hi steam flow (2/4 lines) AND (Lo-Lo Tavg 2/4 OR Lo steam line pressure 2/4), OR Manual (1/2) | Actuates SI, reactor trip, diesel start, Phase A containment isolation | UFSAR T7.2-1 |
-| Phase A Containment Isolation | "T" | Safety Injection signal | Isolates all non-essential process lines | UFSAR T7.2-1 |
-| Containment Spray / Phase B Isolation | "P" | 2/4 Hi-Hi containment pressure, OR 2/2 manual | Actuates containment spray, steamline isolation, remaining isolation valves | UFSAR T7.2-1 |
-| Main Steamline Isolation | — | Hi steam flow (2/4) AND (Lo-Lo Tavg 2/4 OR Lo steam pressure 2/4), OR Hi-Hi containment pressure (2/4), OR manual (1/1 per line) | Closes MSIVs | UFSAR T7.2-1 |
+| Signal | Designation | Actuation | Setpoints | Actions | Source |
+|--------|-----------|-----------|----------|---------|--------|
+| Safety Injection | "S" | Low PZR pressure (2/3), OR Hi containment pressure (2/3), OR Hi steamline DP (2/3), OR Hi steam flow (2/4) AND (Lo-Lo Tavg 2/4 OR Lo steam pressure 2/4), OR Manual (1/2) | PZR Lo: ≤<span class="val-trip">1765 psig</span>; CNMT Hi: ≥<span class="val-trip">4.0 psig</span>; Steam DP: ≥<span class="val-trip">100 psi</span>; Tavg Lo-Lo: ≤<span class="val-trip">543°F</span>; Steam Press Lo: ≤<span class="val-trip">600 psig</span> | SI, reactor trip, diesel start, Phase A isolation | TS T3.3-4 |
+| Phase A Containment Isolation | "T" | Safety Injection signal | N/A (auto on SI) | Isolates all non-essential process lines | UFSAR T7.2-1 |
+| Containment Spray / Phase B Isolation | "P" | 2/4 Hi-Hi containment pressure, OR 2/2 manual | CNMT Hi-Hi: ≤<span class="val-trip">15.0 psig</span> | Containment spray, steamline isolation, remaining isolation valves | TS T3.3-4 |
+| Main Steamline Isolation | — | Hi steam flow (2/4) AND (Lo-Lo Tavg 2/4 OR Lo steam pressure 2/4), OR Hi-Hi containment pressure (2/4), OR manual (1/1 per line) | Same as SI steam flow setpoints; CNMT Hi-Hi: ≤<span class="val-trip">15.0 psig</span> | Closes MSIVs | TS T3.3-4 |
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q21</div>
@@ -142,14 +146,14 @@ SI signal blockability during cooldown (IOP-6): <span class="hi-exam">Low PZR Pr
 
 ## Auxiliary Feedwater Actuation
 
-| Pump | Actuation Signals | Source |
-|------|------------------|--------|
-| Turbine-Driven | 2/3 Lo-Lo level in any 2 SGs; OR RCP bus undervoltage (1/2 twice); OR manual | UFSAR T7.2-1 |
-| Motor-Driven | 2/3 Lo-Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence; OR blackout sequence; OR manual | UFSAR T7.2-1 |
+| Pump | Actuation Signals | Setpoints | Source |
+|------|------------------|----------|--------|
+| Turbine-Driven | 2/3 Lo-Lo level in any 2 SGs; OR RCP bus undervoltage (1/2 twice); OR manual | SG Lo-Lo: ≥<span class="val-trip">14.0%</span> NR; RCP UV: ≥<span class="val-trip">70%</span> bus voltage | TS T3.3-4 |
+| Motor-Driven | 2/3 Lo-Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence; OR blackout sequence; OR manual | SG Lo-Lo: ≥<span class="val-trip">14.0%</span> NR | TS T3.3-4 |
 
 ## Main Feedwater Isolation
 
-Actuated by: SI signal, OR 2/3 Hi-Hi SG level, OR low auctioneered Tavg AND reactor trip. Closes main FW control valves (fast closure), bypass valves, and inlet stop valves. (UFSAR T7.2-1)
+Actuated by: SI signal, OR 2/3 Hi-Hi SG level (≤<span class="val-trip">67%</span> NR span), OR low auctioneered Tavg AND reactor trip. Closes main FW control valves (fast closure), bypass valves, and inlet stop valves. (UFSAR T7.2-1, TS T3.3-4)
 
 ## Overtemperature Delta-T Trip
 
