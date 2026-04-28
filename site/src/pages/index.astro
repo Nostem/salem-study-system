@@ -1,15 +1,366 @@
 ---
-import ArticleLayout from '../layouts/ArticleLayout.astro';
-import HomeDashboard from '../components/HomeDashboard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchModal from '../components/SearchModal.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+
+// Real article counts from collection
+const articles = await getCollection('wiki');
+const counts: Record<string, number> = {};
+for (const a of articles) {
+  const cat = a.id.split('/')[0] ?? 'uncategorized';
+  if (cat === '_index') continue;
+  counts[cat] = (counts[cat] || 0) + 1;
+}
+
+// Count ingested exam questions per year
+const examCounts: Record<string, number> = {};
+for (const a of articles) {
+  const parts = a.id.split('/');
+  if (parts[0] === 'exams' && parts.length === 3 && parts[2]?.startsWith('q')) {
+    const year = parts[1];
+    examCounts[year] = (examCounts[year] || 0) + 1;
+  }
+}
+
+const totalArticles = articles.filter(a => a.id !== '_index').length;
+
+const navCards = [
+  { name: 'Systems', count: counts['systems'] || 0, color: '#60a5fa', glyph: '◈', href: `${base}systems/reactor-coolant-system` },
+  { name: 'Tech Specs', count: counts['tech-specs'] || 0, color: '#10b981', glyph: '◇', href: `${base}tech-specs/ts-1-0-definitions` },
+  { name: 'NRC Exams', count: counts['exams'] || 0, color: '#f59e0b', glyph: '◉', href: `${base}exams/2023-written-exam` },
+  { name: 'EOPs', count: counts['eops'] || 0, color: '#ef4444', glyph: '△', href: `${base}eops/eop-trip-1-reactor-trip-or-si` },
+  { name: 'Abnormals', count: counts['abnormals'] || 0, color: '#6b7280', glyph: '⬡', href: `${base}abnormals/ab-loca-0001-shutdown-loca` },
+  { name: 'Procedures', count: counts['procedures'] || 0, color: '#60a5fa', glyph: '▤', href: `${base}procedures/s2-op-so-rm-0001-radiation-monitoring-system-operation` },
+  { name: 'Admin', count: counts['admin'] || 0, color: '#2a6f97', glyph: '▣', href: `${base}admin/op-aa-101-111-roles-and-responsibilities` },
+  { name: 'Concepts', count: counts['concepts'] || 0, color: '#a78bfa', glyph: '✦', href: `${base}` },
+];
+
+// Tech Spec PDFs grouped
+const tsPdfs = [
+  'ts-1-0', 'ts-2-0', 'ts-3-4-1-1', 'ts-3-4-1-2', 'ts-3-4-1-3', 'ts-3-4-2',
+  'ts-3-4-3', 'ts-3-4-4-1', 'ts-3-4-4-2', 'ts-3-4-4-3', 'ts-3-4-4-4', 'ts-3-4-4-5',
+  'ts-3-4-4-6', 'ts-3-4-4-7', 'ts-3-4-4-9', 'ts-3-4-5', 'ts-3-4-6-1', 'ts-3-4-6-2',
+  'ts-3-4-6-3', 'ts-3-4-7-1', 'ts-3-4-7-2', 'ts-3-4-7-3', 'ts-3-4-7-4', 'ts-3-4-7-5',
+  'ts-3-4-7-6', 'ts-3-4-7-7', 'ts-3-4-8-1', 'ts-3-4-8-2', 'ts-3-4-8-3', 'ts-3-4-9',
+  'ts-3-4-10', 'ts-3-4-11',
+];
+const tsLabels: Record<string, string> = {
+  'ts-1-0': 'TS 1.0 Definitions', 'ts-2-0': 'TS 2.0 Safety Limits',
+  'ts-3-4-1-1': 'TS 3/4.1.1 Boration', 'ts-3-4-1-2': 'TS 3/4.1.2 Boration Systems',
+  'ts-3-4-1-3': 'TS 3/4.1.3 Movable Control', 'ts-3-4-2': 'TS 3/4.2 Power Distribution',
+  'ts-3-4-3': 'TS 3/4.3 Instrumentation',
+  'ts-3-4-4-1': 'TS 3/4.4.1 RCS Loops', 'ts-3-4-4-2': 'TS 3/4.4.2 Safety Valves',
+  'ts-3-4-4-3': 'TS 3/4.4.3 PORVs', 'ts-3-4-4-4': 'TS 3/4.4.4 PRT',
+  'ts-3-4-4-5': 'TS 3/4.4.5 Steam Generators', 'ts-3-4-4-6': 'TS 3/4.4.6 RCS Leakage',
+  'ts-3-4-4-7': 'TS 3/4.4.7 Chemistry', 'ts-3-4-4-9': 'TS 3/4.4.9 Pressure-Temp Limits',
+  'ts-3-4-5': 'TS 3/4.5 ECCS', 'ts-3-4-6-1': 'TS 3/4.6.1 Containment Integrity',
+  'ts-3-4-6-2': 'TS 3/4.6.2 Depressurization', 'ts-3-4-6-3': 'TS 3/4.6.3 Isolation Valves',
+  'ts-3-4-7-1': 'TS 3/4.7.1 Turbine Cycle', 'ts-3-4-7-2': 'TS 3/4.7.2 Steam Gen PV',
+  'ts-3-4-7-3': 'TS 3/4.7.3 CCW', 'ts-3-4-7-4': 'TS 3/4.7.4 Service Water',
+  'ts-3-4-7-5': 'TS 3/4.7.5 Flood Protection', 'ts-3-4-7-6': 'TS 3/4.7.6 Control Room HVAC',
+  'ts-3-4-7-7': 'TS 3/4.7.7 Snubbers', 'ts-3-4-8-1': 'TS 3/4.8.1 AC Sources',
+  'ts-3-4-8-2': 'TS 3/4.8.2 DC Sources', 'ts-3-4-8-3': 'TS 3/4.8.3 Onsite Power',
+  'ts-3-4-9': 'TS 3/4.9 Refueling', 'ts-3-4-10': 'TS 3/4.10 Special Tests',
+  'ts-3-4-11': 'TS 3/4.11 Radioactive Effluents',
+};
+const basesPdfs = [
+  'bases-2', 'bases-3-4-1', 'bases-3-4-2', 'bases-3-4-3', 'bases-3-4-4',
+  'bases-3-4-5', 'bases-3-4-6', 'bases-3-4-7', 'bases-3-4-8', 'bases-3-4-9',
+  'bases-3-4-10', 'bases-3-4-11',
+];
+const basesLabels: Record<string, string> = {
+  'bases-2': 'Bases 2.0', 'bases-3-4-1': 'Bases 3/4.1', 'bases-3-4-2': 'Bases 3/4.2',
+  'bases-3-4-3': 'Bases 3/4.3', 'bases-3-4-4': 'Bases 3/4.4', 'bases-3-4-5': 'Bases 3/4.5',
+  'bases-3-4-6': 'Bases 3/4.6', 'bases-3-4-7': 'Bases 3/4.7', 'bases-3-4-8': 'Bases 3/4.8',
+  'bases-3-4-9': 'Bases 3/4.9', 'bases-3-4-10': 'Bases 3/4.10', 'bases-3-4-11': 'Bases 3/4.11',
+};
+
+// Exam years with data
+const examYears = [
+  { year: '2023', written: true, operating: true, qCount: examCounts['2023'] || 0, jpmCount: 20, scenarioCount: 4, ilot: '19-01' },
+  { year: '2022', written: true, operating: true, qCount: examCounts['2022'] || 0, jpmCount: 20, scenarioCount: 3, ilot: '20-01' },
+  { year: '2020', written: true, operating: true, qCount: examCounts['2020'] || 0, jpmCount: 20, scenarioCount: 5, ilot: '18-01' },
+  { year: '2019', written: true, operating: true, qCount: examCounts['2019'] || 0, jpmCount: 20, scenarioCount: 3, ilot: '17-01' },
+  { year: '2018', written: true, operating: true, qCount: examCounts['2018'] || 0, jpmCount: 20, scenarioCount: 2, ilot: '16-01' },
+];
+
+// JPM slug lists per year for expandable sections
+const jpmSlugs: Record<string, { type: string; slug: string; label: string }[]> = {
+  '2023': [
+    { type: 'RO Admin', slug: '2023-jpm-ro-a1a', label: 'RO-A1a' },
+    { type: 'RO Admin', slug: '2023-jpm-ro-a1b', label: 'RO-A1b' },
+    { type: 'RO Admin', slug: '2023-jpm-ro-a2', label: 'RO-A2' },
+    { type: 'RO Admin', slug: '2023-jpm-ro-a4', label: 'RO-A4' },
+    { type: 'SRO Admin', slug: '2023-jpm-sro-a1a', label: 'SRO-A1a' },
+    { type: 'SRO Admin', slug: '2023-jpm-sro-a1b', label: 'SRO-A1b' },
+    { type: 'SRO Admin', slug: '2023-jpm-sro-a2', label: 'SRO-A2' },
+    { type: 'SRO Admin', slug: '2023-jpm-sro-a3', label: 'SRO-A3' },
+    { type: 'SRO Admin', slug: '2023-jpm-sro-a4', label: 'SRO-A4' },
+    { type: 'Simulator', slug: '2023-jpm-sim-a', label: 'Sim-a' },
+    { type: 'Simulator', slug: '2023-jpm-sim-b', label: 'Sim-b' },
+    { type: 'Simulator', slug: '2023-jpm-sim-c', label: 'Sim-c' },
+    { type: 'Simulator', slug: '2023-jpm-sim-d', label: 'Sim-d' },
+    { type: 'Simulator', slug: '2023-jpm-sim-e', label: 'Sim-e' },
+    { type: 'Simulator', slug: '2023-jpm-sim-f', label: 'Sim-f' },
+    { type: 'Simulator', slug: '2023-jpm-sim-g', label: 'Sim-g' },
+    { type: 'Simulator', slug: '2023-jpm-sim-h', label: 'Sim-h' },
+    { type: 'In-Plant', slug: '2023-jpm-ip-i', label: 'IP-i' },
+    { type: 'In-Plant', slug: '2023-jpm-ip-j', label: 'IP-j' },
+    { type: 'In-Plant', slug: '2023-jpm-ip-k', label: 'IP-k' },
+  ],
+  '2022': [
+    { type: 'RO Admin', slug: '2022-jpm-ro-a1', label: 'RO-A1' },
+    { type: 'RO Admin', slug: '2022-jpm-ro-a2', label: 'RO-A2' },
+    { type: 'RO Admin', slug: '2022-jpm-ro-a3', label: 'RO-A3' },
+    { type: 'RO Admin', slug: '2022-jpm-ro-a4', label: 'RO-A4' },
+    { type: 'SRO Admin', slug: '2022-jpm-sro-a1', label: 'SRO-A1' },
+    { type: 'SRO Admin', slug: '2022-jpm-sro-a2', label: 'SRO-A2' },
+    { type: 'SRO Admin', slug: '2022-jpm-sro-a3', label: 'SRO-A3' },
+    { type: 'SRO Admin', slug: '2022-jpm-sro-a4', label: 'SRO-A4' },
+    { type: 'SRO Admin', slug: '2022-jpm-sro-a5', label: 'SRO-A5' },
+    { type: 'Simulator', slug: '2022-jpm-sim-a', label: 'Sim-a' },
+    { type: 'Simulator', slug: '2022-jpm-sim-b', label: 'Sim-b' },
+    { type: 'Simulator', slug: '2022-jpm-sim-c', label: 'Sim-c' },
+    { type: 'Simulator', slug: '2022-jpm-sim-d', label: 'Sim-d' },
+    { type: 'Simulator', slug: '2022-jpm-sim-e', label: 'Sim-e' },
+    { type: 'Simulator', slug: '2022-jpm-sim-f', label: 'Sim-f' },
+    { type: 'Simulator', slug: '2022-jpm-sim-g', label: 'Sim-g' },
+    { type: 'Simulator', slug: '2022-jpm-sim-h', label: 'Sim-h' },
+    { type: 'In-Plant', slug: '2022-jpm-ip-i', label: 'IP-i' },
+    { type: 'In-Plant', slug: '2022-jpm-ip-j', label: 'IP-j' },
+    { type: 'In-Plant', slug: '2022-jpm-ip-k', label: 'IP-k' },
+  ],
+  '2020': [
+    { type: 'RO Admin', slug: '2020-jpm-ro-a1', label: 'RO-A1' },
+    { type: 'RO Admin', slug: '2020-jpm-ro-a2', label: 'RO-A2' },
+    { type: 'RO Admin', slug: '2020-jpm-ro-a3', label: 'RO-A3' },
+    { type: 'RO Admin', slug: '2020-jpm-ro-a4', label: 'RO-A4' },
+    { type: 'SRO Admin', slug: '2020-jpm-sro-a1', label: 'SRO-A1' },
+    { type: 'SRO Admin', slug: '2020-jpm-sro-a2', label: 'SRO-A2' },
+    { type: 'SRO Admin', slug: '2020-jpm-sro-a3', label: 'SRO-A3' },
+    { type: 'SRO Admin', slug: '2020-jpm-sro-a4', label: 'SRO-A4' },
+    { type: 'SRO Admin', slug: '2020-jpm-sro-a5', label: 'SRO-A5' },
+    { type: 'Simulator', slug: '2020-jpm-sim-a', label: 'Sim-a' },
+    { type: 'Simulator', slug: '2020-jpm-sim-b', label: 'Sim-b' },
+    { type: 'Simulator', slug: '2020-jpm-sim-c', label: 'Sim-c' },
+    { type: 'Simulator', slug: '2020-jpm-sim-d', label: 'Sim-d' },
+    { type: 'Simulator', slug: '2020-jpm-sim-e', label: 'Sim-e' },
+    { type: 'Simulator', slug: '2020-jpm-sim-f', label: 'Sim-f' },
+    { type: 'Simulator', slug: '2020-jpm-sim-g', label: 'Sim-g' },
+    { type: 'Simulator', slug: '2020-jpm-sim-h', label: 'Sim-h' },
+    { type: 'In-Plant', slug: '2020-jpm-ip-i', label: 'IP-i' },
+    { type: 'In-Plant', slug: '2020-jpm-ip-j', label: 'IP-j' },
+    { type: 'In-Plant', slug: '2020-jpm-ip-k', label: 'IP-k' },
+  ],
+  '2019': [
+    { type: 'RO Admin', slug: '2019-jpm-ro-a1', label: 'RO-A1' },
+    { type: 'RO Admin', slug: '2019-jpm-ro-a2', label: 'RO-A2' },
+    { type: 'RO Admin', slug: '2019-jpm-ro-a3', label: 'RO-A3' },
+    { type: 'RO Admin', slug: '2019-jpm-ro-a4', label: 'RO-A4' },
+    { type: 'SRO Admin', slug: '2019-jpm-sro-a1', label: 'SRO-A1' },
+    { type: 'SRO Admin', slug: '2019-jpm-sro-a2', label: 'SRO-A2' },
+    { type: 'SRO Admin', slug: '2019-jpm-sro-a3', label: 'SRO-A3' },
+    { type: 'SRO Admin', slug: '2019-jpm-sro-a4', label: 'SRO-A4' },
+    { type: 'SRO Admin', slug: '2019-jpm-sro-a5', label: 'SRO-A5' },
+    { type: 'Simulator', slug: '2019-jpm-sim-a', label: 'Sim-a' },
+    { type: 'Simulator', slug: '2019-jpm-sim-b', label: 'Sim-b' },
+    { type: 'Simulator', slug: '2019-jpm-sim-c', label: 'Sim-c' },
+    { type: 'Simulator', slug: '2019-jpm-sim-d', label: 'Sim-d' },
+    { type: 'Simulator', slug: '2019-jpm-sim-e', label: 'Sim-e' },
+    { type: 'Simulator', slug: '2019-jpm-sim-f', label: 'Sim-f' },
+    { type: 'Simulator', slug: '2019-jpm-sim-g', label: 'Sim-g' },
+    { type: 'Simulator', slug: '2019-jpm-sim-h', label: 'Sim-h' },
+    { type: 'In-Plant', slug: '2019-jpm-ip-i', label: 'IP-i' },
+    { type: 'In-Plant', slug: '2019-jpm-ip-j', label: 'IP-j' },
+    { type: 'In-Plant', slug: '2019-jpm-ip-k', label: 'IP-k' },
+  ],
+  '2018': [
+    { type: 'RO Admin', slug: '2018-jpm-ro-a1', label: 'RO-A1' },
+    { type: 'RO Admin', slug: '2018-jpm-ro-a2', label: 'RO-A2' },
+    { type: 'RO Admin', slug: '2018-jpm-ro-a3', label: 'RO-A3' },
+    { type: 'RO Admin', slug: '2018-jpm-ro-a4', label: 'RO-A4' },
+    { type: 'SRO Admin', slug: '2018-jpm-sro-a1', label: 'SRO-A1' },
+    { type: 'SRO Admin', slug: '2018-jpm-sro-a2', label: 'SRO-A2' },
+    { type: 'SRO Admin', slug: '2018-jpm-sro-a3', label: 'SRO-A3' },
+    { type: 'SRO Admin', slug: '2018-jpm-sro-a4', label: 'SRO-A4' },
+    { type: 'SRO Admin', slug: '2018-jpm-sro-a5', label: 'SRO-A5' },
+    { type: 'Simulator', slug: '2018-jpm-sim-a', label: 'Sim-a' },
+    { type: 'Simulator', slug: '2018-jpm-sim-b', label: 'Sim-b' },
+    { type: 'Simulator', slug: '2018-jpm-sim-c', label: 'Sim-c' },
+    { type: 'Simulator', slug: '2018-jpm-sim-d', label: 'Sim-d' },
+    { type: 'Simulator', slug: '2018-jpm-sim-e', label: 'Sim-e' },
+    { type: 'Simulator', slug: '2018-jpm-sim-f', label: 'Sim-f' },
+    { type: 'Simulator', slug: '2018-jpm-sim-g', label: 'Sim-g' },
+    { type: 'Simulator', slug: '2018-jpm-sim-h', label: 'Sim-h' },
+    { type: 'In-Plant', slug: '2018-jpm-ip-i', label: 'IP-i' },
+    { type: 'In-Plant', slug: '2018-jpm-ip-j', label: 'IP-j' },
+    { type: 'In-Plant', slug: '2018-jpm-ip-k', label: 'IP-k' },
+  ],
+};
+
+const scenarioSlugs: Record<string, string[]> = {
+  '2023': ['2023-scenario-01', '2023-scenario-02', '2023-scenario-03', '2023-scenario-04'],
+  '2022': ['2022-scenario-01', '2022-scenario-03', '2022-scenario-04'],
+  '2020': ['2020-scenario-01', '2020-scenario-02', '2020-scenario-03', '2020-scenario-04', '2020-scenario-05'],
+  '2019': ['2019-scenario-01', '2019-scenario-03', '2019-scenario-04'],
+  '2018': ['2018-scenario-01', '2018-scenario-02'],
+};
 ---
 
-<ArticleLayout
-  title="Home"
-  category=""
-  status="verified"
-  slug="_index"
-  headings={[]}
-  wide={true}
->
-  <HomeDashboard operatorName="Fred" examDays={42} />
-</ArticleLayout>
+<BaseLayout title="Salem Study Wiki">
+  <SearchModal />
+  <div class="max-w-[1100px] mx-auto px-8 py-10">
+
+    <!-- HEADER -->
+    <div class="flex items-end justify-between mb-8 pb-6 border-b border-border">
+      <div>
+        <h1 class="font-mono text-[13px] font-medium tracking-[0.18em] text-text-primary m-0">SALEM STUDY WIKI</h1>
+        <p class="text-text-muted text-sm mt-1 m-0">{totalArticles} articles · {examYears.length} exams · {counts['systems'] || 0} systems</p>
+      </div>
+      <div class="flex-1 max-w-[360px] mx-6">
+        <button
+          id="home-search-trigger"
+          class="w-full flex items-center gap-2.5 bg-bg-card border border-border rounded-md px-4 py-2.5 text-left cursor-pointer hover:border-border-hi transition-colors"
+        >
+          <span class="text-text-muted text-xs">&#8984;K</span>
+          <span class="text-text-muted text-sm">Search articles...</span>
+        </button>
+      </div>
+      <div class="flex gap-2">
+        <a href={`${base}graph`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Graph View</a>
+        <a href={`${base}plant`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Plant Overview</a>
+      </div>
+    </div>
+
+    <!-- NAVIGATION CARDS -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
+      {navCards.map(card => (
+        <a href={card.href} class="bg-bg-card border border-border rounded-md p-4 no-underline hover:border-border-hi transition-colors group">
+          <div class="flex items-center gap-2 mb-2">
+            <span style={`color: ${card.color}`} class="text-lg">{card.glyph}</span>
+            <span class="text-text-primary text-sm font-medium group-hover:text-accent-blue transition-colors">{card.name}</span>
+          </div>
+          <div class="font-mono text-text-muted text-xs">{card.count} articles</div>
+        </a>
+      ))}
+    </div>
+
+    <!-- SOURCE DOCUMENTS -->
+    <h2 class="font-mono text-[11px] font-semibold tracking-[0.14em] text-text-muted uppercase mb-4">Source Documents</h2>
+
+    <!-- UFSAR + Tech Specs row -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 mb-6">
+      <!-- UFSAR -->
+      <div class="bg-bg-card border border-border rounded-md p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-accent-blue text-sm">&#9638;</span>
+          <span class="text-text-primary text-sm font-semibold">UFSAR</span>
+        </div>
+        <a href={`${base}ts-pdfs/salem-ufsar.pdf`} target="_blank" class="flex items-center gap-2 text-accent-blue text-xs no-underline hover:underline">
+          <span class="text-text-muted">PDF</span> Salem UFSAR (Complete)
+        </a>
+      </div>
+
+      <!-- Tech Specs & Bases -->
+      <div class="bg-bg-card border border-border rounded-md p-5">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="text-accent-green text-sm">&#9638;</span>
+          <span class="text-text-primary text-sm font-semibold">Tech Specs & Bases</span>
+        </div>
+        <div class="grid grid-cols-2 gap-x-6 gap-y-0.5">
+          <div>
+            <div class="font-mono text-[9px] text-text-muted uppercase tracking-wider mb-1">Tech Specs</div>
+            {tsPdfs.map(slug => (
+              <a href={`${base}ts-pdfs/${slug}.pdf`} target="_blank" class="block text-accent-blue text-[11px] no-underline hover:underline py-0.5 leading-tight">
+                {tsLabels[slug] || slug}
+              </a>
+            ))}
+          </div>
+          <div>
+            <div class="font-mono text-[9px] text-text-muted uppercase tracking-wider mb-1">Bases</div>
+            {basesPdfs.map(slug => (
+              <a href={`${base}ts-pdfs/${slug}.pdf`} target="_blank" class="block text-accent-blue text-[11px] no-underline hover:underline py-0.5 leading-tight">
+                {basesLabels[slug] || slug}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXAM YEAR CARDS -->
+    <h2 class="font-mono text-[11px] font-semibold tracking-[0.14em] text-text-muted uppercase mb-4">NRC Exams</h2>
+
+    <div class="flex flex-col gap-3">
+      {examYears.map(exam => (
+        <div class="bg-bg-card border border-border rounded-md p-5">
+          <div class="flex items-start gap-5">
+            <!-- Year -->
+            <div class="font-serif text-[2.5rem] text-text-primary leading-none min-w-[80px]">{exam.year}</div>
+
+            <!-- Content -->
+            <div class="flex-1">
+              <div class="text-text-muted text-[10px] font-mono uppercase tracking-wider mb-2">ILOT {exam.ilot}</div>
+
+              <div class="grid grid-cols-2 gap-4">
+                <!-- Written -->
+                <div>
+                  <div class="text-text-primary text-sm font-medium mb-1">Written Exam</div>
+                  <a href={`${base}exam-pdfs/${exam.year}-written.pdf`} target="_blank" class="text-accent-blue text-xs no-underline hover:underline">View PDF</a>
+                  <span class="text-text-muted text-xs ml-2">{exam.qCount > 0 ? `${exam.qCount} questions ingested` : 'not yet ingested'}</span>
+                  {exam.qCount > 0 && (
+                    <a href={`${base}exams/${exam.year}-written-exam`} class="block text-accent-teal text-[11px] no-underline hover:underline mt-1">Browse questions &rsaquo;</a>
+                  )}
+                </div>
+
+                <!-- Operating -->
+                <div>
+                  <div class="text-text-primary text-sm font-medium mb-1">Operating Exam</div>
+                  <a href={`${base}exam-pdfs/${exam.year}-operating.pdf`} target="_blank" class="text-accent-blue text-xs no-underline hover:underline">View PDF</a>
+                  <span class="text-text-muted text-xs ml-2">{exam.jpmCount} JPMs · {exam.scenarioCount} scenarios</span>
+                  <a href={`${base}exams/${exam.year}-operating-exam`} class="block text-accent-teal text-[11px] no-underline hover:underline mt-1">Browse JPMs &rsaquo;</a>
+                </div>
+              </div>
+
+              <!-- Expandable JPMs & Scenarios -->
+              <details class="mt-3">
+                <summary class="cursor-pointer text-text-muted text-[11px] font-mono hover:text-text-body transition-colors">
+                  View all JPMs & Scenarios ({exam.jpmCount + exam.scenarioCount} PDFs)
+                </summary>
+                <div class="mt-2 grid grid-cols-4 gap-x-4 gap-y-0.5 text-[10px]">
+                  {['RO Admin', 'SRO Admin', 'Simulator', 'In-Plant'].map(type => {
+                    const items = (jpmSlugs[exam.year] || []).filter(j => j.type === type);
+                    return items.length > 0 ? (
+                      <div>
+                        <div class="font-mono text-text-muted uppercase tracking-wider mb-0.5">{type}</div>
+                        {items.map(j => (
+                          <a href={`${base}exam-pdfs/${j.slug}.pdf`} target="_blank" class="block text-accent-blue no-underline hover:underline py-px">{j.label}</a>
+                        ))}
+                      </div>
+                    ) : null;
+                  })}
+                  <div>
+                    <div class="font-mono text-text-muted uppercase tracking-wider mb-0.5">Scenarios</div>
+                    {(scenarioSlugs[exam.year] || []).map((s, i) => (
+                      <a href={`${base}exam-pdfs/${s}.pdf`} target="_blank" class="block text-accent-blue no-underline hover:underline py-px">Scenario {i + 1}</a>
+                    ))}
+                  </div>
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('home-search-trigger')?.addEventListener('click', () => {
+        if (typeof openSearch === 'function') openSearch();
+      });
+    });
+  </script>
+</BaseLayout>
