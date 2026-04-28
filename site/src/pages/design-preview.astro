@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import SearchModal from '../components/SearchModal.astro';
 import { getCollection } from 'astro:content';
 
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
@@ -209,6 +210,7 @@ const scenarioSlugs: Record<string, string[]> = {
 ---
 
 <BaseLayout title="Homepage Design Preview">
+  <SearchModal />
   <div class="max-w-[1100px] mx-auto px-8 py-10">
 
     <!-- HEADER -->
@@ -216,6 +218,15 @@ const scenarioSlugs: Record<string, string[]> = {
       <div>
         <h1 class="font-mono text-[13px] font-medium tracking-[0.18em] text-text-primary m-0">SALEM STUDY WIKI</h1>
         <p class="text-text-muted text-sm mt-1 m-0">{totalArticles} articles · {examYears.length} exams · {counts['systems'] || 0} systems</p>
+      </div>
+      <div class="flex-1 max-w-[360px] mx-6">
+        <button
+          id="home-search-trigger"
+          class="w-full flex items-center gap-2.5 bg-bg-card border border-border rounded-md px-4 py-2.5 text-left cursor-pointer hover:border-border-hi transition-colors"
+        >
+          <span class="text-text-muted text-xs">&#8984;K</span>
+          <span class="text-text-muted text-sm">Search articles...</span>
+        </button>
       </div>
       <div class="flex gap-2">
         <a href={`${base}graph`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Graph View</a>
@@ -348,4 +359,12 @@ const scenarioSlugs: Record<string, string[]> = {
       DESIGN PREVIEW — this page will replace the current homepage
     </div>
   </div>
+
+  <script is:inline>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('home-search-trigger')?.addEventListener('click', () => {
+        if (typeof openSearch === 'function') openSearch();
+      });
+    });
+  </script>
 </BaseLayout>
