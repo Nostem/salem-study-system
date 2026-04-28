@@ -21,6 +21,11 @@ Section 5.8.3 — RWST Makeup: determine boric acid flowrate from S2.RE-RA.ZZ-00
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 Sim-b</div>
+Section 5.2 — Manual Makeup Mode: entered AB.CVC-0001 due to 2LT112 failing high. With 900 ppm RCS boron and 6700 ppm BAST concentration, use <span class="hi-exam">Figure 100A</span> from S2.RE-RA.ZZ-0012 for 62 gpm PW flow — setpoint is <span class="hi-exam">~9.6 gpm (9-11 gpm acceptable)</span>. <span class="hi-trap">Figure 100C (9000 ppm boron) and Figure 105 (temperature correction, N/A at 100% power) are WRONG choices.</span> Note: <span class="hi-exam">2CV179 will initially go full open when placed in MANUAL</span> — close immediately. Adjust PW flow on FI111A to <span class="hi-exam">62 gpm (60-64 gpm acceptable)</span>. When VCT at 53%, secure and return BA pump to SLOW speed.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 Sim-b</div>
 Section 5.2 — Manual Makeup Mode: with 900 ppm RCS boron and 6700 ppm BAST concentration, use <span class="hi-exam">Figure 100A</span> from S2.RE-RA.ZZ-0012 for 62 gpm PW flow — setpoint is <span class="hi-exam">~9.6 gpm (9-11 gpm acceptable)</span>. Figure 100C is wrong (9000 ppm boron). Figure 105 (temperature correction) is N/A at 100% power. Steps: press Makeup Mode Select STOP → place 2CV179 and 2CV172 in MANUAL/CLOSE → align blender outlet (2CV185 preferred) → start PW pump and BA pump MANUAL/FAST → set flows → when VCT at 53% secure all.
 </div>
@@ -28,5 +33,5 @@ Section 5.2 — Manual Makeup Mode: with 900 ppm RCS boron and 6700 ppm BAST con
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]]
-- Related JPMs: [[2023 JPM RO-A1.b]], [[2022 JPM Sim-b]]
-- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM Sim-b]], [[2023 JPM RO-A1.b]], [[2022 JPM Sim-b]]
+- Related exam: [[2018 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

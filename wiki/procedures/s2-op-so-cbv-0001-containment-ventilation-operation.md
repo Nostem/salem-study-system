@@ -26,8 +26,8 @@ Section 4.3 note: <span class="hi-exam">IRUs should only be run when iodine is p
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2019 Sim-a</div>
-Section 5.4 provides direction for starting/stopping CRDM Vent Fans. However, this procedure provides <span class="hi-exam">NO direction for a loss of ALL CRDM Vent Fans</span> — the ARP (S2.OP-AR.ZZ-0011) directs the reactor trip when no fans are running.
+<div class="callout-label">JPM — 2018 Sim-a / 2019 Sim-a</div>
+Section 5.4 provides direction for starting/stopping CRDM Vent Fans. However, this procedure provides <span class="hi-exam">NO direction for a loss of ALL CRDM Vent Fans</span> — the ARP (S2.OP-AR.ZZ-0011) directs the reactor trip when no fans are running. Tested in both 2018 and 2019 operating exams.
 </div>
 
 <div class="callout callout-jpm">
@@ -39,5 +39,5 @@ Section 5.1.2: shift CFCU from high speed to low speed. HIGH SPEED STOP → wait
 
 - Related systems: [[CFCUs]], [[Containment]], [[Control Rod Drive]]
 - Related exam questions: [[2022 Q59]], [[2023 JPM Sim-f]]
-- Related JPMs: [[2019 JPM Sim-a]], [[2019 JPM Sim-f]]
-- Related exam: [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM Sim-a]], [[2018 JPM Sim-f]], [[2019 JPM Sim-a]], [[2019 JPM Sim-f]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]

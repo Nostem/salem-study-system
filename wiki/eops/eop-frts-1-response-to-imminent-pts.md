@@ -44,9 +44,15 @@ FRTS-1 step 1 (RCS Pressure Status): if <span class="hi-exam">RCS pressure &lt; 
 FRTS-1 Step 29 RCS soak requirements: during the soak, the crew must maintain <span class="hi-exam">RCS temperature stable AND NOT raise RCS pressure</span>. The RCS soak is designed to reduce temperature stresses present in the <span class="hi-exam">Reactor Vessel</span> (not the RCS piping or pressurizer). <span class="hi-trap">Trap: the soak controls BOTH temperature and pressure — not temperature only. Also, the target component is the reactor vessel specifically, not the RCS piping system in general.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+RED path for Thermal Shock entered during EOP-LOCA-1 (LBLOCA). Entry/exit criteria: <span class="hi-exam">RCS pressure NOT > 300 psig (420 psig adverse) AND RHR flow at least 300 gpm</span> on 21 or 22 SJ49 cold leg injection meters. Crew returns to EOP-LOCA-1 immediately (enter/exit — no prolonged actions in FRTS-1).
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RCS]], [[RCPs]], [[RHR]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
 - Related exam questions: [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related scenarios: [[2018 Scenario 2]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

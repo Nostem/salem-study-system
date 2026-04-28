@@ -259,6 +259,11 @@ Rod Position Indication: <span class="hi-exam">Only Group 1 Demand Steps input i
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 IP-j</div>
+Control Room Evacuation (Unit 1) — locally open reactor trip breakers and control charging flow per S1.OP-AB.CR-0001 Attachment 5: proceed to <span class="hi-exam">Rod Drive MG Set Control Panel (460V Vital Bus Room, El 84)</span> and open <span class="hi-exam">Reactor Trip Breaker A and Reactor Trip Breaker B</span> (Bypass Trip Breakers typically racked out/N/A). Trip <span class="hi-exam">#13 Charging Pump breaker (1AX1AX7X)</span> at 1A 460V MCC. Open <span class="hi-exam">1CV175 Rapid Borate Stop Valve breaker (1CY2AX41)</span> at 1C West 230V Control Center. At Panel 216-1 (Charging Valve Alley): record charging flow from <span class="hi-exam">1FI-128A</span>, place E/P Bypass to Manual, and control <span class="hi-exam">1CV55 (fail-open, air-to-close)</span> — lower air pressure (counterclockwise) to OPEN valve and RAISE flow.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 IP-j</div>
 Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.OP-AB.CR-0001 Attachment 5: proceed to <span class="hi-exam">Rod Drive MG Set Control Panel (460V Vital Bus Room - El 84 ft.)</span> and open all four breakers — <span class="hi-exam">Reactor Trip Breaker A, Reactor Trip Breaker B, Reactor Trip Bypass Breaker A, Reactor Trip Bypass Breaker B</span>. Also trip <span class="hi-exam">#13 Charging Pump breaker (1AX1AX7X)</span> and open <span class="hi-exam">1CV175 Rapid Borate Stop Valve breaker (1CY2AX4I)</span>.
 </div>
@@ -274,8 +279,9 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
 - Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]]
 - Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
-- Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
-- Related exams: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
+- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]]
+- Related exams: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
   - [[2018 Q1]] — RCP shaft shear at 25% power: below P-8, single-loop low flow trip blocked
   - [[2018 Q10]] — PZR Pressure Channel fails low: 2/4 becomes 1/3 coincidence; PT-1648 is RSP only
   - [[2018 Q49]] — TRIP-1 immediate actions when RTBs fail: Trip Switches → Bezels → MG set breakers (E 6D, G 6D) → Turbine Trip

@@ -34,11 +34,16 @@ EOP-LOPA-1 Step 13 CAUTION: 4KV VITAL BUS LOADING limits — DG <span class="hi-
 Vital Power Restoration Steps: prior to restoring AC power, <span class="hi-exam">ALL SECs must be de-energized</span> (not blocked and reset). Reason centrifugal charging pumps must not auto-start: <span class="hi-exam">preventing damage to the RCP seals</span>. After prolonged loss of seal injection, injecting cold charging water into hot seals can cause thermal shock and seal damage. <span class="hi-trap">Trap: "blocked and reset" is an action performed in other EOPs (e.g., EOP-TRIP-1), not in EOP-LOPA-1 power restoration steps. Also: candidates may think preventing seal damage is NOT a concern because seal injection is normally beneficial.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 IP-i</div>
+Shed non-essential DC loads per Checkoff Sheet 3 (COS 3-1 thru 3-3), 125VDC LOAD SHED LIST. Operator locates distribution panels at <span class="hi-exam">64 ft elevation</span> (2A 125VDC Bus, 2ADC, 2B 125VDC Bus, 2DDC, 2CDC panels) and <span class="hi-exam">100 ft elevation switchgear room</span> (2AADC, 2BBDC, 2CCDC panels). Opens ONLY breakers designated on the checkoff sheet (not all breakers in each panel). Checkoff Sheet 3 sections may be performed in any order.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Control Air]], [[DC Power]], [[EDGs]], [[Service Water]], [[4KV]], [[SECs]], [[RCPs]], [[CVCS]]
 - Related EOPs: [[EOP-LOPA-4 — Extended Loss of All AC Power]]
 - Related exam questions: [[2018 Q59]], [[2022 Q77]]
-- Related JPMs: [[2019 JPM Sim-g]]
+- Related JPMs: [[2018 JPM IP-i]], [[2019 JPM Sim-g]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2018 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]]

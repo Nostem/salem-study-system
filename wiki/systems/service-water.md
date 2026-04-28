@@ -108,6 +108,11 @@ During LOPA-1, <span class="hi-exam">2A EDG running with no SW pumps must be sto
 21 SW Pump C/T for pump repack (initial condition). 21 SW Accumulator Tank pressure drops to <span class="hi-exam">137 psig</span> (operable band is <span class="hi-exam">138-157 psig</span>) — declared inoperable, 21 and 22 CFCUs stopped and isolated. 23 SW Pump trips and 26 SW Pump fails to auto start on low pressure — RO manually starts 26 SW Pump. CRS enters <span class="hi-exam">TS 3.7.4 (72 hours)</span> for 21 and 23 SW Pumps inoperable in one bay (only one operable SW loop).
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #1</div>
+#2 SW Bay leak during startup. OHA B-29 (22-23 SW PMP SUMP AREA LVL HI), B-13 (21 SW HDR PRESS LO). <span class="hi-exam">25 SW Pump auto starts</span> on low header pressure. Crew splits headers: open <span class="hi-exam">21SW23 and 22SW23</span> (nuclear header crossover MOVs), close <span class="hi-exam">21SW17 and 22SW17</span> (cross-connects). Leak isolated in #2 Bay by closing <span class="hi-exam">21SW22 and 21SW20</span>. Start Bay 4 pumps (24, 25, 26), stop #2 Bay pumps. SW available to DGs through <span class="hi-exam">22SW21</span> and Turbine Area through <span class="hi-exam">23SW20</span>. CRS enters <span class="hi-exam">TS 3.7.4 (72 hr LCO)</span> for one operable SW loop. PO removes one CCHX from service per AB.SW-0003 CAS item 4.0.
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 SRO-A3</div>
 Unit 1 SW loop operability with 13 SW Pump C/T and 1A EDG inoperable: per <span class="hi-exam">S1.OP-SO.SW-0005</span>, two independent operable SW loops require one pump per vital bus and two pumps per bay. With 13 SW Pump C/T: <span class="hi-exam">A bus (15 & 16 Pumps) — YES, B bus (14 Pump) — YES, C bus (11 & 12 Pumps) — YES, #1 Bay (11 & 12) — YES, #3 Bay (15 & 16) — YES</span>. Two SW loops remain operable, so <span class="hi-exam">TS 3.8.1.1 Action b.2 does NOT apply</span>.
@@ -123,5 +128,5 @@ SW Nuclear Header leak location: with low SW pressure to loads on the <span clas
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
 - Related exam questions: [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
-- Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

@@ -22,6 +22,8 @@ Per S2.OP-IO.ZZ-0003, the crew will <span class="hi-exam">record the time of MOD
 
 ## Connections
 
-- Related systems: [[Control Rod Drive]], [[Excore NIs]]
+- Related systems: [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]]
+- Related procedures: [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]]
 - Related exam questions: [[2018 Q39]]
-- Related exam: [[2018 NRC Written Exam]]
+- Related JPMs: [[2018 JPM Sim-e]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]]

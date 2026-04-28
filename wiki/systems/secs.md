@@ -72,9 +72,14 @@ After SEC and SI reset during EOP-LOCA-3, a subsequent blackout on a 4KV vital b
 LOOP in MODE 4 with 2C EDG paralleled to the grid for surveillance: 2A and 2B 4KV Vital Buses sense Instantaneous UV → <span class="hi-exam">ALL three SECs (2A, 2B, 2C) enter Mode II (Blackout Only)</span> because 2/3 Vital Buses sense Instantaneous UV. SEC Mode II causes the 2C EDG Output Breaker to <span class="hi-exam">OPEN then reclose</span> (even though 2C EDG was already running and loaded). <span class="hi-exam">RHR pumps are NOT automatically loaded in SEC Mode II</span> — they are only sequenced in Mode I (SI only) and Mode III (SI + Blackout). 21 RHR Pump (on 2A bus) will be <span class="hi-exam">stopped</span> after SEC 2A completes Mode II sequencing. <span class="hi-trap">Trap: candidates may assume the running EDG output breaker remains closed, or that RHR pumps restart after SEC sequencing completes.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+2B SEC fails to actuate on SI signal after LBLOCA. RO reports available equipment on 2B bus failed to start. Recovery: <span class="hi-exam">Block 2B SEC, reset 2B SEC, manually start safeguards loads for 2B bus using EOP-TRIP-1 Table A</span>. Also: 2SW26 NOT in required position — PO manually closes. After SI/Phase A/Phase B reset, <span class="hi-exam">2A and 2C SECs reset normally; 2B SEC is de-energized</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]]
 - Related exam questions: [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
-- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

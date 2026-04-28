@@ -94,11 +94,21 @@ PR channel 2N41 removal from service (S2.OP-SO.RPS-0001): at NI Rack No. 81, fiv
 During an automatic RCS makeup in Mode 3 with 2CV179 (PRIMARY WATER FLOW) failed closed, only boric acid flows through the blender → <span class="hi-exam">RCS boron concentration rises → negative reactivity → Source Range NI Audible Count Rate indication lowers</span>. <span class="hi-trap">If CV179 had failed OPEN, primary water would dilute the RCS → boron concentration lowers → positive reactivity → SR audible count rate would rise.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 RO-A1</div>
+Manual AFD calculation (S2.OP-ST.NIS-0001 Section 5.3) when AFD Monitor alarm is inoperable: at 73% power, AFD Target from REM Table 3 = -1.5, calculated AFD Target = <span class="hi-exam">(73/100) x (-1.5) = -1.1</span> (rounded per P&L 3.2). Lower Limit = -9.0 + (-1.1) = <span class="hi-exam">-10.1</span>. Channels III (-10.3) and IV (-10.5) outside the lower target band.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 RO-A3</div>
+Manual QPTR calculation (S2.OP-ST.NIS-0002) with dropped rod 204: N42 quadrant shows highest power tilt — N42T = <span class="hi-exam">1.025</span>, N42B = <span class="hi-exam">1.023</span>. Exceeds <span class="hi-exam">TS 3.2.4 QPTR limit of 1.02</span>. Alternate path JPM.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
-- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
-- Related exams: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
+- Related exams: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
   - [[2018 Q31]] — SR audible count rate lowers during auto makeup with CV179 failed closed
   - [[2019 Q30]] — PR NI 2N41 fails high / rods to MAN per AB.NIS / tripped bistable = 1/3 coincidence
   - [[2020 Q22]] — IR channel removal from service / LEVEL TRIP switch bypass / OHA E-29
@@ -108,4 +118,4 @@ During an automatic RCS makeup in Mode 3 with 2CV179 (PRIMARY WATER FLOW) failed
   - [[2022 Q57]] — IR NIS fails high / P-10 unblocks 1/2 IR trip on 3/4 PR below setpoint
   - [[2022 Q78]] — Gamma-Metrics substitution for SR channel per TS 3.9.2.2 bases
   - [[2022 Q82]] — One IR channel inoperable above P-6 / TS 3.3.1.1 Action 3
-- Related JPMs: [[2022 JPM RO-A3]], [[2020 JPM Sim-f]]
+- Related JPMs: [[2018 JPM RO-A1]], [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2020 JPM Sim-f]]

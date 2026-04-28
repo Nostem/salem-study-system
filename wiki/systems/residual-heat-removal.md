@@ -173,11 +173,16 @@ AB.RHR-0001 CAS routing for loss of RCS inventory by MODE: In <span class="hi-ex
 RH19 (RHR Discharge X-CONN Valves): per EOP-LOCA-6 Step 2, the crew <span class="hi-exam">WILL close 11RH19 and 12RH19</span> to separate the 11 and 12 RHR discharge lines during LOCA outside containment leak isolation. This enhances the ability to diagnose which train has the leak. Successful isolation confirmed by <span class="hi-exam">rising RCS pressure</span>.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+During LBLOCA cold leg recirculation transfer (EOP-LOCA-3): RHR suction aligned to containment sump via <span class="hi-exam">21SJ44 and 22SJ44</span> (sump auto arm pushbuttons depressed when >62% lights lit). Both RHR pumps running. Close <span class="hi-exam">21 and 22RH19s</span> (discharge cross-connect valves) to separate trains. Close <span class="hi-exam">2SJ67 and 2SJ68</span>. Open <span class="hi-exam">22SJ45 then 21SJ45</span> (RHR injection to cold legs). Place <span class="hi-exam">21RH29 and 22RH29 in manual and ensure closed</span> (Step 15 — CT#2 Part 3, within 11.2 min of RWST lo alarm).
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
 - Related exam questions: [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]]
-- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -83,6 +83,11 @@ Main turbine fails to auto trip following reactor trip (23BF19 failure). <span c
 Main Turbine Stop Valve retest at 89% power IAW S2.OP-PT.TRB-0003. Navigate DEHC HMI to STOP/GOV TEST screen. Test permissives: <span class="hi-exam">TURBINE INLET PRESSURE OK</span> and <span class="hi-exam">NO OTHER TESTS IN PROGRESS</span> (both GREEN). P&L 3.4.3: operate at <span class="hi-exam"><=75% turbine load with any one HP inlet valve closed</span>. 22MS29 (Governor Valve) closes first (~2 min), then 22MS28 (Stop Valve) strokes closed and open (~25 sec). OHA <span class="hi-exam">G-12 TURB STM STOP VLV CLSD</span> expected during test. Alternate path: field operator misses valve stroke → select <span class="hi-exam">RESTROKE</span> on HMI to re-verify.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 Sim-e</div>
+S2.OP-SO.TRB-0001 Section 4.5 — Synchronizing the Generator: at 16% power starting up, turbine at 1800 rpm with excitation applied. Key steps: scope test (synchroscope at 12 o'clock, voltmeters upscale), verify SYNC PERM BYPASS in NORMAL. Select 1-9 Mimic Bus and SYNCH POT ON. <span class="hi-exam">INCOM KV must be 3-5 KV above RUN KV</span> (as-found both ~498-499 KV — must raise via Voltage Regulator). <span class="hi-exam">Turbine speed must produce synchroscope rotation every 25-30 sec in FAST direction</span> (raise SETTER from 1801 to 1802-1803 rpm). Close 500 KV 1-9 breaker when synchroscope <span class="hi-exam">1-2 minutes before 12 o'clock</span>. Verify 40-60 MW load pickup within 15 seconds.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q91</div>
 Turbine runback from 100% power can cause control rods to insert below the Rod Insertion Limit (ROD INSERT LIMIT LO-LO alarm). <span class="hi-trap">Raising turbine power to counter the runback is NOT permitted per the alarm response procedure — the ONLY allowed action to restore rods above the RIL is performing S2.OP-SO.CVC-0008 (Rapid Boration).</span>
@@ -91,8 +96,8 @@ Turbine runback from 100% power can cause control rods to insert below the Rod I
 ## Connections
 
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
-- Related procedures: [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]]
+- Related procedures: [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]], [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]]
 - Related exam questions: [[2018 Q91]], [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]]
-- Related JPMs: [[2019 JPM Sim-e]]
+- Related JPMs: [[2018 JPM Sim-e]], [[2019 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

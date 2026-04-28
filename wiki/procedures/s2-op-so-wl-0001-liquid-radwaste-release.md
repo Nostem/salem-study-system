@@ -44,9 +44,14 @@ If 2R18 is inoperable (e.g., detector fails LOW), per steps 2.3, 3.4, and 3.5: <
 If 2R18 (Waste Disposal Liquid Rad Monitor) is inoperable (e.g., failed source check), the CRS <span class="hi-exam">CAN approve the release permit</span> provided <span class="hi-exam">a second sample was drawn, analyzed, and calculations were second verified prior to the release</span>. <span class="hi-trap">Trap: continuous effluent sampling during discharge is NOT the compensatory action — the second sample verification happens PRIOR to the release. Also, 2R18 does NOT have to be repaired before the release can proceed.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 IP-k</div>
+Release of 21 CVCS MT via SW to CW (Section 5.5): with <span class="hi-exam">Maximum Release Rate 45 gpm</span> (high curie content). Step 5.5.4: OPEN <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span> in Gas Stripper Feed Pump Room. Step 5.5.6: THROTTLE <span class="hi-exam">21WR53 (MT RECIRC STOP VALVE)</span> to adjust discharge flow — closing 21WR53 diverts more flow to overboard path (raises discharge flow). Caution: completely closing 21WR53 provides insufficient recirculation if 2WL51 isolates on high rad. Step 5.5.8: initial data includes tank volume from S2.OP-TM.ZZ-0002 (<span class="hi-exam">19500 gal at 90%</span>), dilution flow = <span class="hi-exam">200000 gpm</span> (2 CW circulators). Step 5.5.9: <span class="hi-exam">2R18 alarms at 105 cpm → CLOSE 2WL51</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[Waste Liquid]], [[Radiation Monitoring]]
 - Related exam questions: [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q68]]
-- Related JPMs: [[2022 JPM IP-k]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM IP-k]], [[2022 JPM IP-k]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

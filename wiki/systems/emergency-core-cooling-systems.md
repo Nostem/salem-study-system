@@ -279,8 +279,18 @@ SI Accumulator makeup using 21 SI Pump (S2.OP-SO.SJ-0002 Section 5.2): prerequis
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 Sim-c</div>
+EOP-TRIP-6 Step 12 — Isolate SI Accumulators: with RCS pressure &lt;1000 psig, remove lockout from 21-24 SJ54 Accumulator Outlet Valves at 2RP4 panel. Close all four SJ54s. <span class="hi-exam">24SJ54 fails at intermediate position</span> (alternate path) — consult TSC, then vent 24 Accumulator: verify RCS pressure > accumulator N2 pressure, open <span class="hi-exam">2NT35 (N2 HDR VALVE)</span> and <span class="hi-exam">24SJ93 (N2 SUPPLY VALVE)</span>, observe accumulator pressure lowering to zero, then close both vent valves.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2019 SRO-A1</div>
 EOP-LOCA-5 Figure A — Minimum ECCS Flow Versus Time After Trip: at <span class="hi-exam">50 minutes</span> post-trip, minimum flow = <span class="hi-exam">390 gpm</span>. With 21 SI pump at 420 gpm and 22 Charging pump at 360 gpm: <span class="hi-exam">stop 22 Charging pump</span> (360 &lt; 390, cannot meet minimum alone), <span class="hi-exam">keep 21 SI pump</span> (420 &gt; 390, exceeds minimum alone). Contrast 2023 SRO-A1.a at 100 min (290 gpm minimum) where neither pump could be stopped.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+LBLOCA with both trains of auto SI failing. One SI keyswitch also fails to manually actuate — RO uses other train keyswitch to initiate SI on both trains <span class="hi-exam">(CT#1: CT-2)</span>. After SI, containment pressure >15 psig — Phase B and Spray auto-initiated. Cold leg recirculation transfer (CT#2: CT-36): at RWST lo level alarm (15.2 feet), crew performs EOP-LOCA-3. Time-critical steps: close <span class="hi-exam">2SJ69 within ~3.7 min</span>, stop 22 CS pump within ~5.5 min, complete recirc alignment (Step 15: close 2SJ67/2SJ68, open 21SJ45/22SJ45, close 2SJ30/2SJ1/2SJ2, place 21RH29/22RH29 in manual/closed) within <span class="hi-exam">~11.2 min</span>.
 </div>
 
 ## Connections
@@ -288,6 +298,6 @@ EOP-LOCA-5 Figure A — Minimum ECCS Flow Versus Time After Trip: at <span class
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
 - Related exam questions: [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
-- Related JPMs: [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
-- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
+- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

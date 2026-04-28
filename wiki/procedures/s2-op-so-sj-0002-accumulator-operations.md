@@ -24,5 +24,6 @@ Accumulator makeup using 21 SI Pump (Section 5.2): prerequisite is <span class="
 
 - Related systems: [[ECCS]]
 - Related tech specs: [[TS 3/4.5 — ECCS]]
-- Related JPMs: [[2020 JPM Sim-d]]
-- Related exam: [[2020 NRC Operating Exam]]
+- Related EOPs: [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
+- Related JPMs: [[2018 JPM Sim-c]], [[2020 JPM Sim-d]]
+- Related exam: [[2018 NRC Operating Exam]], [[2020 NRC Operating Exam]]

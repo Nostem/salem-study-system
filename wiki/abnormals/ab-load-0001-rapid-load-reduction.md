@@ -41,10 +41,15 @@ Entered for load reduction to <span class="hi-exam">85%</span> following 23 Cond
 Entered from AB.COND-0001 during loss of condenser vacuum (Event 4). CRS directs load reduction to stabilize backpressure. RO calculates required boron addition, CRS verifies, RO commences boration. PO initiates load reduction using turbine load control at CRS-specified rate.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+AB.LOAD-0001 entered for orderly unit shutdown after 35 gpm RCS leak exceeds TS limits. RO develops reactivity plan for shutdown and initiates boration. PO initiates turbine load reduction to <span class="hi-exam">20%</span> at CRS-specified rate. During load reduction, RCS leak worsens to LBLOCA.
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[Main Turbine]], [[Circ Water]]
 - Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.COND-0001 — Loss of Condenser Vacuum]]
 - Related exam questions: [[2023 Q88]]
-- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]

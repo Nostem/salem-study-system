@@ -92,6 +92,16 @@ MS10 setpoint adjustment during SG tube leak: IAW AB.SG-0001 Step 3.31, the affe
 Main Steam warmup (S2.OP-SO.MS-0001): <span class="hi-exam">MS7 drain valves are opened BEFORE MSIVs (MS167)</span> to prevent water hammer from pressurized steam forcing residual water in the piping. MSIVs are opened when less than a MAXIMUM of <span class="hi-exam">50 psid</span> across each valve. <span class="hi-trap">Trap: 15 psig is used for other MS Header pressure steps in SO.MS-0001, not the MSIV opening delta-P criterion.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #1</div>
+During EOP-SGTR-1 for 24 SG tube rupture: PO isolates steam from 24 SG by closing <span class="hi-exam">24MS10 (set at 1045 psig), 24MS167, 24MS18, 24MS7, 24GB4</span>. RCS cooldown initiated using steam dumps at 25% demand in MS Pressure Control or <span class="hi-exam">intact MS10s</span> (may have initiated MSLI during TRIP-2 based on uncontrolled RCS temperatures). CT#2: stop cooldown when hottest CETs < 503 F target.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+21MS167 drifts from full open position at 40% power. OHA G-34 (21-24 MS167 VALVES NOT FULL OPEN). PO reports CRT and board indication. Recovery: <span class="hi-exam">depress open pushbutton to re-open 21MS167</span> per ARP S2.OP-AR.ZZ-0007.
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Dumps]]
@@ -99,5 +109,5 @@ Main Steam warmup (S2.OP-SO.MS-0001): <span class="hi-exam">MS7 drain valves are
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
 - Related exam questions: [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -63,6 +63,11 @@ GDT release restrictions per S1.OP-SO.WG-0011:
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 SRO-A4</div>
+CRS review of S1.OP-SO.WG-0010 for 13 GDT release: release cannot be authorized due to two errors. (1) <span class="hi-exam">Pre-Release Verification in Attachment 1, Section 1.0 not performed</span>. (2) <span class="hi-exam">Maximum Allowable Release Rate of 32 SCFM is NOT > 32 SCFM</span> — per NOTE in Step 3.4, tanks with a calculated rate <= 32 SCFM cannot be released. <span class="hi-trap">Common trap: finding one error and stopping the review. The examiner cue directs review of the ENTIRE procedure.</span>
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2019 IP-k</div>
 22 GDT release per S2.OP-SO.WG-0009: same latch-and-set sequence as 21 GDT (S2.OP-SO.WG-0008). 22 GDT discharge valves are <span class="hi-exam">22WG31 and 22WG34</span>, pressure instrument is <span class="hi-exam">PIS2037</span>. 2WG38 downstream pressure monitored on <span class="hi-exam">2PL8678</span> — terminate if >8.0 psig. Terminate release when tank pressure reaches <span class="hi-exam">10 psig</span>. MET data recorded during release: Wind Speed 5.8 MPH at El 33 ft, Wind Direction 290 degrees. Calculate average release rate every <span class="hi-exam">10 minutes</span> on Attachment 3.
 </div>
@@ -77,7 +82,7 @@ Of the Radioactive Liquid Waste System tanks, <span class="hi-exam">ONLY the RCD
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[Containment]]
-- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]]
+- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0010 — Discharge of 13 Gas Decay Tank to Plant Vent]]
 - Related exam questions: [[2018 Q38]], [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]]
-- Related JPMs: [[2023 JPM IP-k]], [[2019 JPM IP-k]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2019 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM SRO-A4]], [[2023 JPM IP-k]], [[2019 JPM IP-k]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2019 NRC Operating Exam]]

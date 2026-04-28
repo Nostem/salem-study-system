@@ -252,4 +252,5 @@ SR 4.5.2.b.2 (Verify that ECCS Piping Is Full Of Water) has a MONTHLY surveillan
 - Related systems: [[ECCS]], [[RHR]], [[CVCS]]
 - Related concepts: [[ESF & Design]]
 - Related exam questions: [[2018 Q86]], [[2018 Q96]], [[2020 Q77]], [[2023 Q91]]
-- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related JPMs: [[2018 JPM SRO-A3]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

@@ -108,6 +108,11 @@ MSLB + LOOP with 2C 4KV Vital Bus lost (OHA J-3, 2C 4KV VTL BUS DIFF PROT): conf
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 Sim-g</div>
+4KV Group Bus transfer from SPT to APT (S2.OP-SO.4KV-0008, R13): at 18% power / 160 MWe, Rod Control in Manual (D-147), Steam Dumps in MS Pressure Mode-Auto at <span class="hi-exam">970 psig</span>. P&L 3.3: OHA J-39 (GROUP BUS XFER FAIL) illuminates then clears on normal transfer. <span class="hi-exam">Alternate path: 2G Group Bus fails to transfer</span>, de-energizing bus and tripping <span class="hi-exam">24 RCP</span>. OHAs: J-8 (2G 4KV GRP BUS DIFF/OVRLD), J-38 (4KV GRP BUS UNDRVOLT), J-39, D-31 (24 RCP BKR OPEN/FLO LO). ARP J-39 → J-38 Step 3.5 or D-31: IF ANY RCP trips → <span class="hi-exam">TRIP Reactor → GO TO EOP-TRIP-1</span>.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 Sim-h</div>
 4KV Group Bus transfer from SPT to APT (S2.OP-SO.4KV-0008): verify APT voltage <span class="hi-exam">4.22 - 4.36KV</span>. P&L 3.3: OHA J-39 (GROUP BUS XFER FAIL) illuminates then clears during normal transfer. <span class="hi-exam">Alternate path: 2G Group Bus fails to transfer</span>, de-energizing bus and tripping <span class="hi-exam">24 RCP</span>. OHA alarms: J-8 (2G 4KV GRP BUS DIFF/OVRLD), J-38 (4KV GRP BUS UNDRVOLT), J-39, D-31 (24 RCP BKR OPEN/FLO LO). ARP for J-38 or D-31: IF ANY RCP trips → <span class="hi-exam">TRIP Reactor → GO TO EOP-TRIP-1</span>.
 </div>
@@ -122,6 +127,6 @@ SPT failure to 0 VAC transfer behavior: when 23 SPT fails to 0 VAC, the SPT tran
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]]
 - Related exam questions: [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
-- Related JPMs: [[2022 JPM Sim-g]], [[2020 JPM Sim-h]]
+- Related JPMs: [[2018 JPM Sim-g]], [[2022 JPM Sim-g]], [[2020 JPM Sim-h]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -117,12 +117,22 @@ Step 17, CCW Pump Operation Evaluation: during MODE III (LBLOCA + LOOP), <span c
 ATWS at 4% power (reactor fails to trip on 21 SG LO-LO Level): IAW EOP-TRIP-1, the crew will <span class="hi-exam">MANUALLY insert control rods</span> because at 4% power (turbine not online), automatic rod insertion will NOT exceed <span class="hi-exam">48 steps/minute</span> — the threshold in the basis document for allowing automatic insertion. Since the reactor is NOT tripped (all CR attempts failed), the crew will <span class="hi-exam">go to EOP-FRSM-1 (Response to Nuclear Power Generation)</span>. <span class="hi-trap">Trap: reactor power being less than 5% does NOT mean the reactor trip is confirmed — the TRIP-1 Step 2 criteria (power range NI <5%, IR dropping, IR startup rate negative) must ALL be met AT THE TIME the step is read by the NSS.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #1</div>
+EOP-TRIP-1 entered after reactor trip from 22 RCP seal failure (seal leakoff >6 gpm). No SI required initially — crew transitions to EOP-TRIP-2. After 24 SG tube rupture develops, crew manually initiates SI and <span class="hi-exam">re-enters EOP-TRIP-1</span>. During re-entry, <span class="hi-exam">24BF13 (FW isolation valve) failed to close</span> on SI/Phase A — PO manually closes from console. Then transitions to EOP-SGTR-1 when 24 SG NR level rising uncontrolled.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+EOP-TRIP-1 entered after LBLOCA during orderly unit shutdown. <span class="hi-exam">Both trains of SI fail to auto-actuate</span>; one keyswitch also fails to manually actuate. RO must use the other train keyswitch to initiate SI on both trains <span class="hi-exam">(CT#1: CT-2)</span>. During TRIP-1, <span class="hi-exam">2B SEC fails to actuate</span> — crew blocks, resets, and manually starts safeguards loads using Table A. Containment pressure >15 psig triggers Phase B and Spray actuation. Transitions to EOP-LOCA-1.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment Spray]], [[Main Turbine]], [[CCW]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]], [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
 - Related exam questions: [[2018 Q49]], [[2018 Q68]], [[2018 Q98]], [[2019 Q48]], [[2019 Q49]], [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
-- Related JPMs: [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
-- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM Sim-g]], [[2018 JPM Sim-h]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
+- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

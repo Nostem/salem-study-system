@@ -31,5 +31,5 @@ Containment entry at power for 22 CFCU tag removal requires <span class="hi-exam
 
 - Related systems: [[Containment]], [[CFCUs]]
 - Related procedures: [[RP-AA-203 — Exposure Control and Authorization]], [[RP-AA-300 — Radiological Survey Program]]
-- Related JPMs: [[2022 JPM SRO-A4]]
-- Related exam: [[2022 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM SRO-A2]], [[2022 JPM SRO-A4]]
+- Related exam: [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]]

@@ -275,6 +275,11 @@ Condensate depression effects: decreasing condensate depression (from 5°F to 2�
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 Sim-d</div>
+EOP-FRHS-1 Bleed and Feed (Steps 21-25): loss of all AFW, 3 SG WR levels &lt; 32% → Bleed and Feed criteria met. Initiate SI on both trains. Verify charging/SI pumps running, BIT flow ~150-160 gpm, Table C valves open. Open both PORV stop valves (2PR6, 2PR7). Open both PORVs in Manual — <span class="hi-exam">2PR2 fails to open</span> (alternate path). At <span class="hi-exam">2RP2 backpanel, use four keys to open reactor head vent valves 2RC40 through 2RC43</span> as alternate bleed path. <span class="hi-trap">Reactor Head Vents are NOT the standard bleed path — only used when a PORV fails to open.</span>
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 RO-A1</div>
 EOP-FRCI-3 Attachment 1 maximum vent time calculation for reactor vessel upper head voiding: at <span class="hi-exam">1600 psig RCS pressure</span>, hydrogen flow rate from Figure 1 is <span class="hi-exam">3333 cfm</span>. Maximum containment hydrogen increase limited to keep total below <span class="hi-exam">3.0%</span>. With 2.3% current H2 and 140F containment temperature, maximum vent time = <span class="hi-exam">4.5 minutes</span>.
 </div>
@@ -284,11 +289,17 @@ EOP-FRCI-3 Attachment 1 maximum vent time calculation for reactor vessel upper h
 Subcooling calculation when subcooling monitor is NOT functional: convert <span class="hi-exam">psig to PSIA by adding 14.7 (rounded to 15)</span>, use steam tables to find TSAT. Subcooling = TSAT - <span class="hi-exam">Hottest CET</span> (not TAVG). <span class="hi-trap">Two traps: (1) subtracting 15 instead of adding gives wrong TSAT, (2) using TAVG instead of Hottest CET gives wrong subcooling. Hottest CET is always the correct reference for subcooling calculation.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 RO-A2</div>
+Control room log OTDT setpoint channel check: each RC loop's OTDT console reading compared against REM FIGURE 5 (A-D) setpoint band. Tavg Channel Check requires all 4 loop average temperatures within <span class="hi-exam">3 degrees F</span> (S/R 4.3.2.1.1, Modes 1-3). Loop 24 OTDT of 72 deg F found <span class="hi-exam">outside the REM FIGURE 5D setpoint band</span>.
+</div>
+
 ## Connections
 
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
+- Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]]
 - Related exam questions: [[2018 Q3]], [[2018 Q63]], [[2018 Q65]], [[2018 Q70]], [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]]
-- Related JPMs: [[2023 JPM Sim-d]], [[2022 JPM RO-A1]]
-- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]]
+- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

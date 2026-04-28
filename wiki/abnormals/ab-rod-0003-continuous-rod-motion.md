@@ -63,11 +63,16 @@ During rod surveillance at Step 5.1.11.C, when rod bank selector switch placed i
 Entry conditions: rods <span class="hi-exam">withdraw OR insert</span> a MINIMUM of <span class="hi-exam">3 steps</span> at steady state conditions. <span class="hi-trap">2 steps of rod motion can occur from process noise (per the AB.ROD-0003 basis) and does NOT warrant procedure entry. The entry threshold is 3 steps, not 2.</span> <span class="hi-trap">Entry applies to BOTH withdrawal and insertion — not withdrawal ONLY.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+22 RC Loop Tavg Channel fails high at 40% power. Rods step in unexpectedly (Tavg/Tref deviation). RO reports no turbine runback, places rod control in Manual. OHAs E-8 (Rod Insertion Lo) and E-16 (Rod Insertion Lo-Lo). CRS enters AB.ROD-0003. RO identifies <span class="hi-exam">22 RC Loop Tavg channel failed high</span>. Adjusts rods to maintain Tavg within 1.5 deg of program. Defeats 22 loop dT and Tavg on 2CC2, selects alternate channel. Restores rods to ARO, returns rod control to Auto. CRS enters TSAS <span class="hi-exam">3.3.1.1 Action 6 (6 hr) and 3.3.2.1.b Action 19 (6 hr)</span>. CRS initiates S2.OP-SO.RPS-0002 to place 22 RC Loop Tavg in tripped condition.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Steam Dumps]], [[Control Rod Drive]]
 - Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
 - Related exam questions: [[2019 Q67]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]]
-- Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

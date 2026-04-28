@@ -21,6 +21,11 @@ Performs periodic surveillance testing of Containment Fan Coil Units to verify S
 - After 15 minutes, record SW flow, SW header DP, and determine test results
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 Sim-f</div>
+22 CFCU surveillance: identical discriminating concept to 2019 and 2023. SW flow ~<span class="hi-exam">1786 gpm</span>, SW header DP <span class="hi-exam">106 psi</span>. Per P&L 3.4: 106 psi is between 105 and 110 → use next HIGHER value <span class="hi-exam">110 psi = 1811 gpm minimum</span>. Actual 1786 < 1811 → <span class="hi-exam">UNSAT, 22 CFCU inoperable</span>. Note: 22SW223 valve malfunction causes flow to settle at ~1786 gpm — chosen to trap applicants who use 105 psi (1769 gpm minimum), which would incorrectly pass.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 Sim-f</div>
 CFCU test result determination: with measured SW header DP of <span class="hi-exam">106 psi</span> (between 105 and 110 in Exhibit 1), per P&L 3.4 must use the next HIGHER DP value (<span class="hi-exam">110 psi = 1811 gpm minimum required</span>). Actual flow ~1785 gpm is less than 1811 gpm → <span class="hi-exam">test result is UNSAT / CFCU inoperable</span>.
 </div>
@@ -40,5 +45,5 @@ CFCU SW flow and <span class="hi-exam">SW223 mechanical stop</span> limitations 
 - Related systems: [[CFCUs]], [[Service Water]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam questions: [[2022 Q41]]
-- Related JPMs: [[2019 JPM Sim-f]], [[2023 JPM Sim-f]]
-- Related exam: [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]

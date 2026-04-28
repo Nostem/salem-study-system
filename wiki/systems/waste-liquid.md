@@ -81,10 +81,15 @@ Of the Radioactive Liquid Waste System tanks (RCDT, WHUTs, Chemical Drain Tank, 
 Per S2.OP-SO.WL-0001: if <span class="hi-exam">2R18 (Waste Disposal Liquid Rad Monitor) is inoperable</span> (e.g., failed source check), the CRS CAN approve the release permit provided a <span class="hi-exam">second sample was drawn, analyzed, and calculations were second verified prior to the release</span>. The release does NOT require 2R18 to be repaired first. <span class="hi-trap">Trap: continuous effluent sampling throughout the discharge is NOT the compensatory action — the second independent sample/calculation is performed BEFORE the release, not during it.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 IP-k</div>
+Release of 21 CVCS Monitor Tank via SW to CW (S2.OP-SO.WL-0001, R28): Maximum Release Rate = <span class="hi-exam">45 gpm</span> (high curie content). <span class="hi-exam">2WR59</span> (MT PMPS OB STOP VALVE) located in Gas Stripper Feed Pump Room, 64 ft El. With 2WR59 fully open, flow only 5 gpm — throttle <span class="hi-exam">21WR53</span> (MT RECIRC STOP VALVE) closed to raise discharge flow. If flow exceeds 45 gpm, open 21WR53 to reduce. Tank volume from S2.OP-TM.ZZ-0002: at 90% level = <span class="hi-exam">19500 gallons</span>. Dilution Flow Rate = <span class="hi-exam">200000 gpm</span> (2 CW circulators x 100000). <span class="hi-exam">2R18 alarming at 105 cpm with High Radiation light</span> → direct NCO to CLOSE 2WL51 (LIQUID RELEASE STOP VALVE).
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
 - Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
 - Related exam questions: [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
-- Related JPMs: [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM IP-k]], [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

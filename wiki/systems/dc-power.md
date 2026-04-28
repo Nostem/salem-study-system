@@ -121,8 +121,14 @@ LCO 3.8.2.3 battery cell parameters: with 3 connected cells at Float Voltage of 
 250 VDC system loads: the <span class="hi-exam">Main Turbine Emergency Oil Pump is powered from the 250 VDC Battery and Charger System</span>. The following are powered from the <span class="hi-exam">125 VDC</span> system (NOT 250 VDC): Field Excitation Circuitry for the EDGs, Vital Instrument Bus Inverters, and Emergency Lighting Inverters. <span class="hi-trap">Know which loads are on each DC voltage level (28V, 125V, 250V). The 250V system primarily powers large DC motors like the turbine turning gear and the Main Turbine Emergency Oil Pump.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 IP-i</div>
+Station Blackout 125VDC Load Shed per EOP-LOPA-1 Checkoff Sheet 3 (COS 3-1 thru 3-3). Operator must locate DC distribution panels across two elevations and open ONLY the specific breakers listed. <span class="hi-exam">64 ft elevation</span>: 2A 125VDC Bus, 2ADC 125VDC Distribution Panel, 2B 125VDC Bus, 2DDC and 2CDC 125VDC Distribution Panels. <span class="hi-exam">100 ft elevation switchgear room</span>: 2AADC, 2BBDC, 2CCDC 125VDC Distribution Panels. Field labeling discrepancies: <span class="hi-exam">2ADC3AX29</span> labeled "Source #1 125 VDC to AVR Excitation Cab" (procedure calls it "2 Generator Exciter Voltage Regulator"); <span class="hi-exam">2DDC2AX28</span> labeled "21SJ162, 2SJ166, 22SJ162, 22SJ166, 2SJ158" (procedure calls it "Safety Injection Test Line Valves").
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.8 — Electrical]]
 - Related exam questions: [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2018 JPM IP-i]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

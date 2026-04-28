@@ -136,10 +136,20 @@ Confirms CS pump power supplies and spray actuation setpoint during LOCA + LOOP 
 TS 3.6.2.1 application with BOTH trains of Containment Spray INOPERABLE: LCO 3.6.2.1 has NO action for both trains inoperable → <span class="hi-exam">LCO 3.0.3 applies</span>. When ONE train is restored, LCO 3.0.3 exits and the single-inoperable-train action of LCO 3.6.2.1 begins: <span class="hi-exam">restore within 72 hours or be in HOT STANDBY within the next 6 hours</span>. Key timing: the 72-hour clock starts from when the LCO was first NOT met (08:00 on June 12th), not from when one train was restored (10:00). Total: <span class="hi-exam">72 + 6 = 78 hours from 08:00 on June 12th = 14:00 on June 15th</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 SRO-A5</div>
+Emergency classification with degraded containment cooling: Containment pressure 35 psi, <span class="hi-exam">21 CS pump failed to start (only 22 CS pump running)</span>. Combined with < 3 CFCUs in low speed → meets <span class="hi-exam">CB8.P (containment barrier potential loss, 2 pts)</span> for fission product barrier assessment. This is a POTENTIAL loss, not a LOSS — containment barrier is degraded but not breached. Combined with RB2.L (5 pts) = <span class="hi-exam">7 points total = SAE</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+Both CS pumps start on Phase B actuation (containment pressure >15 psig) during LBLOCA. During EOP-LOCA-3 cold leg recirculation transfer, <span class="hi-exam">stop 22 CS pump within ~5.5 minutes</span> of RWST lo level alarm (CT#2 Part 2). Only one CS pump remains running during recirculation alignment.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related exam questions: [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
-- Related JPMs: [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
+- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

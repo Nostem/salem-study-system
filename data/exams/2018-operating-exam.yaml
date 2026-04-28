@@ -1,0 +1,360 @@
+exam: 2018
+type: operating
+ilot_class: "16-01"
+
+jpms:
+  - id: "RO-A1"
+    title: "Perform a Manual AFD Calculation IAW S2.OP-ST.NIS-0001"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-ST.NIS-0001"
+    pages: "1-12"
+    ka: "G2.1.25"
+    ka_importance_ro: 3.9
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0150010201"
+
+  - id: "RO-A2"
+    title: "Channel Check of Reactor Coolant Temperatures IAW S2.OP-DL.ZZ-0003"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-DL.ZZ-0003"
+    pages: "13-23"
+    ka: "G2.1.18"
+    ka_importance_ro: 3.6
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "S302000115"
+
+  - id: "RO-A3"
+    title: "Perform a Manual QPTR Calculation IAW S2.OP-ST.NIS-0002"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-ST.NIS-0002"
+    pages: "24-34"
+    ka: "G2.1.43"
+    ka_importance_ro: 4.1
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N0150020201"
+
+  - id: "RO-A4"
+    title: "Activate ERDS IAW EP-SA-111-F8"
+    type: Admin-RO
+    location: Simulator/Perform
+    procedure: "EP-SA-111-F8"
+    pages: "35-44"
+    ka: "G2.4.43"
+    ka_importance_ro: 3.2
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1240110501"
+
+  - id: "SRO-A1"
+    title: "Identify and Isolate Non-Essential Chilled Water Loads IAW S2.OP-SO.CH-0001"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S2.OP-SO.CH-0001"
+    pages: "45-54"
+    ka: "G2.1.25"
+    ka_importance_ro: null
+    ka_importance_sro: 4.2
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "0980020202"
+
+  - id: "SRO-A2"
+    title: "Determine Heat Stress Requirements for Containment Entry"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "SA-AA-111"
+    pages: "55-70"
+    ka: "G2.1.26"
+    ka_importance_ro: null
+    ka_importance_sro: 3.6
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1220400302"
+
+  - id: "SRO-A3"
+    title: "Review a Tagging Request and Evaluate Tech Specs"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "OP-AA-109-115"
+    pages: "71-80"
+    ka: "G2.2.13"
+    ka_importance_ro: null
+    ka_importance_sro: 4.3
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1220050302"
+
+  - id: "SRO-A4"
+    title: "Authorize a Radioactive Gas Release Form"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S1.OP-SO.WG-0010"
+    pages: "81-88"
+    ka: "G2.3.6"
+    ka_importance_ro: null
+    ka_importance_sro: 3.8
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1120650302"
+
+  - id: "SRO-A5"
+    title: "Classify an Event and Complete ICMF"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "EP-SA-111-101"
+    pages: "89-99"
+    ka: "G2.4.41"
+    ka_importance_ro: null
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: true
+    alternate_path: false
+    source: New
+    task_number: "1240020502"
+
+  - id: "Sim-a"
+    title: "Respond to Loss of All Control Rod Drive Vent Fans"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-AR.ZZ-0011"
+    pages: "100-111"
+    ka: "001A2.01"
+    ka_importance_ro: 3.1
+    ka_importance_sro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "0220040101"
+
+  - id: "Sim-b"
+    title: "Perform Manual Makeup of the VCT"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-SO.CVC-0006"
+    pages: "112-124"
+    ka: "004 A4.04"
+    ka_importance_ro: 3.2
+    ka_importance_sro: 3.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "0040130101"
+
+  - id: "Sim-c"
+    title: "Isolate ECCS Accumulators IAW EOP-TRIP-6"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-TRIP-6"
+    pages: "125-133"
+    ka: "006 A1.13"
+    ka_importance_ro: 3.5
+    ka_importance_sro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Modified
+    task_number: "1150070501"
+
+  - id: "Sim-d"
+    title: "Initiate Bleed and Feed Using Reactor Head Vents IAW EOP-FRHS-1"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-FRHS-1"
+    pages: "134-143"
+    ka: "002 A2.04"
+    ka_importance_ro: 4.3
+    ka_importance_sro: 4.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Modified
+    task_number: "N1150290501"
+
+  - id: "Sim-e"
+    title: "Synchronize the Main Generator IAW S2.OP-SO.TRB-0001"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-SO.TRB-0001"
+    pages: "144-158"
+    ka: "045 A4.02"
+    ka_importance_ro: 2.7
+    ka_importance_sro: 2.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N0450040101"
+
+  - id: "Sim-f"
+    title: "Perform 22 CFCU Surveillance Test IAW S2.OP-ST.CBV-0003"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-ST.CBV-0003"
+    pages: "159-169"
+    ka: "022 A1.04"
+    ka_importance_ro: 3.2
+    ka_importance_sro: 3.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0220130201"
+
+  - id: "Sim-g"
+    title: "Transfer 4KV Group Buses SPT to APT"
+    type: Simulator
+    location: Simulator
+    procedure: "S2.OP-SO.4KV-0008"
+    pages: "170-183"
+    ka: "062 A2.04"
+    ka_importance_ro: 3.1
+    ka_importance_sro: 3.4
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "N0620110101"
+
+  - id: "Sim-h"
+    title: "Start a CCW Pump IAW EOP-APPX-1"
+    type: Simulator
+    location: Simulator
+    procedure: "2-EOP-APPX-1"
+    pages: "184-194"
+    ka: "008 A2.01"
+    ka_importance_ro: 3.3
+    ka_importance_sro: 3.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "N1150420501"
+
+  - id: "IP-i"
+    title: "Shed Non-Essential DC Loads IAW EOP-LOPA-1"
+    type: In-Plant
+    location: In-Plant
+    procedure: "2-EOP-LOPA-1"
+    pages: "195-203"
+    ka: "EPE 055 EA1.04"
+    ka_importance_ro: 3.5
+    ka_importance_sro: 3.9
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N1150140501"
+
+  - id: "IP-j"
+    title: "Locally Open Reactor Trip Breakers and Control Charging Flow"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S1.OP-AB.CR-0001"
+    pages: "204-217"
+    ka: "012 A4.06"
+    ka_importance_ro: 4.3
+    ka_importance_sro: 4.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "1130070501"
+
+  - id: "IP-k"
+    title: "Perform a Radioactive Liquid Release"
+    type: In-Plant
+    location: In-Plant
+    procedure: "S2.OP-SO.WL-0001"
+    pages: "218-228"
+    ka: "068 A2.04"
+    ka_importance_ro: 3.3
+    ka_importance_sro: 3.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N0685140104"
+
+scenarios:
+  - number: 1
+    title: "Startup / PZR Pressure Channel Failure / SW Bay Leak / RCP Seal Failure / SGTR"
+    pages: "229-269"
+    num_events: 5
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-TRIP-2
+      - EOP-SGTR-1
+    abnormals_entered:
+      - AB.PZR-0001
+      - AB.SW-0003
+      - AB.RCP-0001
+      - AB.RAD-0001
+    critical_tasks:
+      - id: "CT-Site-Specific"
+        description: "Stop 22 RCP and close 22CV104 within 3-5 minutes after stopping 22 RCP"
+        time_critical: true
+        time_windows:
+          - action: "Close 22CV104"
+            limit_minutes: 5.0
+      - id: "CT-19"
+        description: "Control initial RCS cooldown so that transition from EOP-SGTR-1 does not occur"
+        time_critical: false
+
+  - number: 2
+    title: "MS167 Drift / Tavg Channel Failure / RCS Leak / LBLOCA"
+    pages: "270-306"
+    num_events: 7
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-LOCA-1
+      - EOP-LOCA-3
+      - EOP-FRTS-1
+    abnormals_entered:
+      - AB.ROD-0003
+      - AB.RC-0001
+      - AB.RAD-0001
+      - AB.LOAD-0001
+    critical_tasks:
+      - id: "CT-2"
+        description: "Manually actuate SI before transition to EOP-LOCA-1, EOP-FRTS-1, or EOP-TRIP-2"
+        time_critical: false
+      - id: "CT-36"
+        description: "Transfer to cold leg recirculation before RWST level drops below 1.2 feet"
+        time_critical: true
+        time_windows:
+          - action: "Close 2SJ69"
+            limit_minutes: 3.7
+          - action: "Stop 22 CS pump"
+            limit_minutes: 5.5
+          - action: "ECCS in recirculation (LOCA-3 Step 15)"
+            limit_minutes: 11.2

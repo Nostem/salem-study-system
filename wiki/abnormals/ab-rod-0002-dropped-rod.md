@@ -47,6 +47,6 @@ Dropped rod recovery per AB.ROD-0002: with ROD BANK SELECTOR SWITCH in CBA (Cont
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]]
 - Related tech specs: [[TS 3/4.2 — Power Distribution]]
 - Related exam questions: [[2018 Q30]], [[2020 Q19]], [[2022 Q19]]
-- Related JPMs: [[2022 JPM RO-A3]]
+- Related JPMs: [[2018 JPM RO-A3]], [[2022 JPM RO-A3]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

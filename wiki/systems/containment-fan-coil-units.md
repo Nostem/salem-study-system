@@ -153,6 +153,16 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 22 CFCU surveillance test IAW S2.OP-ST.CBV-0003. Shift from high speed to low speed using S2.OP-SO.CBV-0001 (HIGH SPEED STOP → wait <span class="hi-exam">25 seconds</span> → LOW SPEED START). After 15 minutes, record SW flow (~<span class="hi-exam">1787 gpm</span>) and SW header DP (<span class="hi-exam">106 psi</span>). Per P&L 3.4, measured DP of 106 psi rounds up to next higher value (<span class="hi-exam">110 psid = 1811 gpm minimum</span>). Actual flow less than minimum → <span class="hi-exam">test result UNSAT, 22 CFCU inoperable</span>. P&L 3.3: both >= 1465 gpm AND >= Exhibit 1 minimum required for operability.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 Sim-f</div>
+22 CFCU surveillance test (S2.OP-ST.CBV-0003): shift from high speed to low speed via S2.OP-SO.CBV-0001 (HIGH SPEED STOP → wait <span class="hi-exam">25 seconds</span> → LOW SPEED START). Verify damper positions (ROUGH FLT DAMPER CLOSED, HEPA INLET/OUTLET OPEN). Verify SW flow >= <span class="hi-exam">1465 gpm</span>. After 15 minutes, record SW flow (~<span class="hi-exam">1786 gpm</span>) and SW header DP (<span class="hi-exam">106 psi</span>). Per P&L 3.4, measured DP of 106 psi rounds up to <span class="hi-exam">110 psid = 1811 gpm minimum required</span>. Actual flow 1786 gpm < 1811 gpm → <span class="hi-exam">test result UNSAT, 22 CFCU inoperable</span>. Same discriminating concept as 2019 and 2023 CFCU JPMs.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 SRO-A5</div>
+Emergency classification with degraded CFCUs: 21 CFCU C/T for cooler leak, 22 and 23 CFCUs failed to start in LOW SPEED — <span class="hi-exam">only 24 CFCU running</span>. Combined with containment pressure 35 psi and one CS pump in service → meets <span class="hi-exam">CB8.P (containment barrier potential loss, 2 pts)</span>: containment pressure > 15 psig AND one CS train in service AND < 3 CFCUs running in low speed.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q12</div>
 Minimum containment cooling configurations that maintain Containment Pressure, Temperature and Humidity within design limits with a DBA: <span class="hi-exam">2 CS Pumps, OR 1 CS Pump + 3 CFCUs, OR 5 CFCUs</span>. <span class="hi-trap">Trap: 1 CS Pump alone or 1 CS Pump + 2 CFCUs are NOT sufficient for DBA containment cooling. Only 5 CFCUs (without any CS Pump) is sufficient.</span>
@@ -162,6 +172,6 @@ Minimum containment cooling configurations that maintain Containment Pressure, T
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related exam questions: [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
-- Related JPMs: [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]]
-- Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]]
+- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -16,7 +16,7 @@ aliases:
 - **Admin JPMs (SRO):** 5
 - **Simulator JPMs:** 8
 - **In-Plant JPMs:** 3
-- **Simulator Scenarios:** 3 (2 scenario guides in final package)
+- **Simulator Scenarios:** 2
 
 <a href="/salem-study-system/exam-pdfs/2018-operating.pdf" target="_blank">View Operating Test PDF</a>
 
