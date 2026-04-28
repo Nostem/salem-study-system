@@ -46,5 +46,5 @@ In accordance with the 1-EOP-TRIP-6, the reason for establishing and maintaining
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[RCPs]], [[Pressurizer Level & Press Control]]
-- Related EOPs: [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]]
+- Related EOPs: [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
 - Related exam: [[2018 NRC Written Exam]]

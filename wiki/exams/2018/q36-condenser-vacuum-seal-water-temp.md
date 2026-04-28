@@ -40,5 +40,5 @@ ___ can cause Main Condenser vacuum to degrade.
 
 ## Connections
 
-- Related systems: [[Condenser Air Removal]], [[TAC]]
+- Related systems: [[Condenser Air Removal]]
 - Related exam: [[2018 NRC Written Exam]]

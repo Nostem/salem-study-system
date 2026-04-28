@@ -17,6 +17,8 @@ aliases:
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
 <strong>Given:</strong><br>
 &bull; The PO observes the following:<br><br>
+<img src="/salem-study-system/exam-images/2018-q26-control-air-panel.png" alt="ECAC Control Panel" style="max-width:100%;border:1px solid #1a2035;border-radius:4px;margin:8px 0;" /><br>
+<span style="font-size:11px;color:#f59e0b;font-style:italic;">Note: Image difficult to read. Key information: ECAC is in AUTO. Lowest Control Air HDR Press is 86 psig. A Button is "MANUAL" and B Button is "START".</span><br><br>
 Which ONE of the following completes the statements below?<br><br>
 The 2 Emergency Air Compressor <span class="blank">_(1)_</span> reached its AUTOMATIC start setpoint.<br><br>
 If the PO is required to MANUALLY start the 2 Emergency Air Compressor, depressing BEZEL button(s) <span class="blank">_(2)_</span> is/are the MINIMUM pushbutton manipulation(s) required to start the emergency air compressor.
