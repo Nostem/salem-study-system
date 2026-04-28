@@ -359,7 +359,7 @@ const scenarioSlugs: Record<string, string[]> = {
   <script is:inline>
     document.addEventListener('DOMContentLoaded', () => {
       document.getElementById('home-search-trigger')?.addEventListener('click', () => {
-        if (typeof openSearch === 'function') openSearch();
+        if (typeof window.openSearch === 'function') window.openSearch();
       });
     });
   </script>

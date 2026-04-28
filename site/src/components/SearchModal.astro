@@ -5,7 +5,7 @@ const base = import.meta.env.BASE_URL;
 
 <div id="search-modal" class="fixed inset-0 z-50 hidden">
   <!-- Backdrop -->
-  <div class="absolute inset-0 bg-black/60" onclick="closeSearch()"></div>
+  <div class="absolute inset-0 bg-black/60" onclick="window.closeSearch()"></div>
 
   <!-- Modal -->
   <div class="relative mx-auto mt-[15vh] w-full max-w-lg bg-[#0d1220] border border-[#1a2035] rounded-lg shadow-2xl overflow-hidden">
@@ -52,6 +52,10 @@ const base = import.meta.env.BASE_URL;
     input.value = '';
     results.innerHTML = '';
   }
+
+  // Expose globally so other pages (homepage) can call openSearch/closeSearch
+  window.openSearch = openSearch;
+  window.closeSearch = closeSearch;
 
   function bindSearchTriggers() {
     document.querySelectorAll('#search-trigger, #search-trigger-mobile').forEach((trigger) => {
