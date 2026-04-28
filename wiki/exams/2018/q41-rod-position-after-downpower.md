@@ -15,7 +15,7 @@ aliases:
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
-<strong>REFERENCES PROVIDED</strong><br><br>
+<strong><span class="val-normal">REFERENCES PROVIDED</span></strong><br><br>
 <strong>Given:</strong><br>
 &bull; Unit 2 is at 100% Reactor Power and stable<br>
 &bull; Core Burnup is 8000 EFPH<br>
