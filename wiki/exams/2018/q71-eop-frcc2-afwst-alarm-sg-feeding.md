@@ -19,6 +19,11 @@ aliases:
 &bull; The crew is performing the SG Level Control Steps of 2-EOP-FRCC-2 (Response To Degraded Core Cooling)<br>
 &bull; The PO observes the following on the AUX FEEDWATER STORAGE TANK BEZEL (Red Box = VALID ALARM):<br>
 <br>
+<span style="font-size:11px;color:#f59e0b;font-style:italic;">Note: Image in source PDF. The following alarms are in on the console bezel:<br>
+- AFWST CH A LEVEL LO<br>
+- AFWST CH C LEVEL LO<br>
+- AFWST LEVEL APPRCH TECH SPEC</span><br>
+<br>
 In accordance with 2-EOP-FRCC-2, which ONE of the following completes the statements below?<br>
 <br>
 The crew <span class="blank">_(1)_</span> required to shift AFW suction to an alternate source.<br>

@@ -51,6 +51,6 @@ In accordance with 1-EOP-FRHS-1, the crew can Return To Procedure in Effect <spa
 
 ## Connections
 
-- Related systems: [[Feed & Condensate]], [[Steam Generator & Blowdown]], [[Containment]]
+- Related systems: [[Feed & Condensate]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
 - Related exam: [[2018 NRC Written Exam]]

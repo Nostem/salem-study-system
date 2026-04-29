@@ -49,6 +49,6 @@ With 1-EOP-LOCA-5 in effect, conserving RWST water <span class="blank">_(2)_</sp
 
 ## Connections
 
-- Related systems: [[Containment Spray]], [[CFCUs]]
+- Related systems: [[Containment Spray]]
 - Related EOPs: [[EOP-FRCE-1 — Response to Excessive Containment Pressure]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related exam: [[2018 NRC Written Exam]]

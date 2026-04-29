@@ -649,7 +649,7 @@ Between calibrations, the fidelity of the measured power distribution is maintai
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q82</div>
-LCO 3.3.1.1 action for PZR Level Channel failure: with 2LT-459 (Channel I PZR Level) failed high at 100% power, the channel must be placed in the <span class="hi-exam">tripped condition within 6 hours</span> (not 1 hour). PZR Level — High is a 3-channel trip function (Table 3.3-1) with 2/3 coincidence.
+LCO 3.3.1.1 action for PZR Level Channel failure: with 2LT-459 (Channel I PZR Level) failed high at 100% power, the channel must be placed in the <span class="hi-exam">tripped condition within 72 hours</span>. PZR Level — High is a 3-channel trip function (Table 3.3-1) with 2/3 coincidence. When the controlling channel fails high, 22 Backup Heaters <span class="hi-exam">automatically energize</span> due to the +5% level deviation (L_ACTUAL - L_REF).
 </div>
 
 <div class="callout callout-exam">

@@ -125,7 +125,7 @@ EOP-SGTR-1 Step 19 RCS depressurization using normal spray. Open <span class="hi
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q82</div>
-2LT-459 (Channel I PZR Level) fails HIGH while controlling: 22 Backup Heaters <span class="hi-exam">automatically energize</span> due to <span class="hi-exam">+5% PZR level deviation (LACTUAL - LREF)</span>. 21 Backup Heaters are already ON in manual. <span class="hi-trap">Trap: candidates may incorrectly think B/U heaters will de-energize because PZR pressure (2235 psig) is > 2210 psig (the pressure-based B/U heater auto-energize setpoint). The level deviation logic is a separate, independent auto-energize path for the backup heaters.</span> TS action: per LCO 3.3.1.1, 2LT-459 must be placed in the tripped condition within <span class="hi-exam">6 hours</span> (not 1 hour).
+2LT-459 (Channel I PZR Level) fails HIGH while controlling: 22 Backup Heaters <span class="hi-exam">automatically energize</span> due to <span class="hi-exam">+5% PZR level deviation (LACTUAL - LREF)</span>. 21 Backup Heaters are already ON in manual. <span class="hi-trap">Trap: candidates may incorrectly think B/U heaters will de-energize because PZR pressure (2235 psig) is > 2210 psig (the pressure-based B/U heater auto-energize setpoint). The level deviation logic is a separate, independent auto-energize path for the backup heaters.</span> TS action: per LCO 3.3.1.1, 2LT-459 must be placed in the tripped condition within <span class="hi-exam">72 hours</span>.
 </div>
 
 ## Connections
