@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+---
+
+<BaseLayout title="Login">
+  <main class="min-h-screen bg-[#07111f] text-slate-100 px-6 py-12">
+    <section class="mx-auto max-w-xl rounded-2xl border border-slate-700/80 bg-slate-900/80 p-8 shadow-2xl">
+      <p class="mb-2 font-mono text-xs uppercase tracking-[0.22em] text-amber-300">Salem Study beta</p>
+      <h1 class="mb-3 text-3xl font-semibold text-white">Log in</h1>
+      <p class="mb-8 text-sm leading-6 text-slate-300">
+        Use the username and password you created when you claimed your beta invite.
+      </p>
+
+      <div id="configWarning" class="mb-5 hidden rounded-lg border border-amber-400/40 bg-amber-400/10 p-3 text-sm text-amber-100">
+        Supabase public config is not set for this build yet. The form is ready, but login calls need deployment env vars.
+      </div>
+
+      <form id="loginForm" class="space-y-5">
+        <label class="block text-sm font-medium text-slate-200">
+          Username
+          <input name="username" autocomplete="username" required class="mt-2 w-full rounded-lg border border-slate-600 bg-slate-950 px-4 py-3 text-white outline-none focus:border-amber-300" placeholder="operator_one" />
+        </label>
+
+        <label class="block text-sm font-medium text-slate-200">
+          Password
+          <input name="password" type="password" autocomplete="current-password" required class="mt-2 w-full rounded-lg border border-slate-600 bg-slate-950 px-4 py-3 text-white outline-none focus:border-amber-300" placeholder="Your password" />
+        </label>
+
+        <button class="w-full rounded-lg bg-amber-300 px-4 py-3 font-semibold text-slate-950 transition hover:bg-amber-200" type="submit">
+          Log in
+        </button>
+      </form>
+
+      <p id="loginStatus" class="mt-5 min-h-6 text-sm text-slate-300" role="status"></p>
+
+      <p class="mt-8 border-t border-slate-700 pt-5 text-sm text-slate-400">
+        Have an invite ID? <a class="text-amber-300 hover:text-amber-200" href={`${base}signup`}>Create account</a>.
+      </p>
+    </section>
+  </main>
+
+  <script>
+    import { hasSupabaseConfig, loginWithUsername } from '../utils/auth-client';
+
+    const form = document.querySelector<HTMLFormElement>('#loginForm');
+    const status = document.querySelector<HTMLElement>('#loginStatus');
+    const warning = document.querySelector<HTMLElement>('#configWarning');
+
+    if (!hasSupabaseConfig()) {
+      warning?.classList.remove('hidden');
+    }
+
+    const messages: Record<string, string> = {
+      invalid_login: 'Username or password is incorrect.',
+      username_and_password_required: 'Enter both username and password.',
+    };
+
+    form?.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (!status) return;
+
+      const data = new FormData(form);
+      const submit = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+      submit?.setAttribute('disabled', 'true');
+      status.textContent = 'Logging in…';
+      status.className = 'mt-5 min-h-6 text-sm text-slate-300';
+
+      try {
+        const result = await loginWithUsername({
+          username: String(data.get('username') ?? ''),
+          password: String(data.get('password') ?? ''),
+        });
+        status.textContent = `Logged in as ${result.user.username}. Redirecting…`;
+        status.className = 'mt-5 min-h-6 text-sm text-emerald-300';
+        window.location.href = `${window.location.origin}${window.location.pathname.replace(/login\/?$/, 'quiz')}`;
+      } catch (error) {
+        const key = error instanceof Error ? error.message : 'request_failed';
+        status.textContent = messages[key] ?? 'Login failed. Try again.';
+        status.className = 'mt-5 min-h-6 text-sm text-red-300';
+      } finally {
+        submit?.removeAttribute('disabled');
+      }
+    });
+  </script>
+</BaseLayout>
