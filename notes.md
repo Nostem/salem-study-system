@@ -1,7 +1,7 @@
 # Notes
 
 ## Right now
-- SQLITE DATABASE WITH QUESITONS and all metadata for easily tracking and queries, for generating quizzes. capture all metadata and connections found.
+- training a small LLM using unsloth and connecting to site. probably subwcription based for external use
 
 ## Ingesting NRC Exam Questions
 The goals are multi-fold:
