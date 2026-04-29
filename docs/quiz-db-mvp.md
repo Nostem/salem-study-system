@@ -104,7 +104,7 @@ Current full-corpus audit output:
 - `unresolved_connection`: 0 detected in the current corpus
 - `unresolved_topic_slug`: 0 after `data/topic-map.yaml` direct mappings and per-question split routes
 
-Current Supabase staging bundle output:
+Current Supabase staging/import output:
 
 - `data/quiz-import/supabase-staging-all.json`
   - `question_count`: 499
@@ -120,6 +120,14 @@ Current Supabase staging bundle output:
   - `question_topic_count`: 178
   - `reference_count`: 99
 
+- `data/quiz-import/import-2018-written.sql`
+  - transaction-safe SQL for importing the 2018 written exam into Supabase/Postgres
+  - upserts `sources`, `topics`, `questions`, and `choices`
+  - inserts `question_topics` idempotently through resolved UUID joins
+  - inserts `question_references` only when the same question/source/type/note does not already exist
+- `supabase/.env.example`
+  - documents the required `SUPABASE_DB_URL` environment variable without committing credentials
+
 The staging bundle uses natural keys (`source_key`, `question_slug`, `topic_slug`) so a later Supabase upsert script can resolve UUID foreign keys without committing credentials or connecting to a live database during export.
 
 Known review items:
@@ -128,9 +136,30 @@ Known review items:
 - `wiki/exams/2023/q85-sg-overpressure-security-redacted.md` is security-redacted and excluded from normal quiz pools with `quiz_eligible=false` and `non_quiz_reason=security_redacted`.
 - Legacy topic slugs are now routed through `data/topic-map.yaml`. Broad legacy groups use per-question `question_routes` instead of global mappings.
 
+Import readiness commands:
+
+```bash
+# Rebuild the 2018 staging bundle if source data changes.
+python3 scripts/exam_question_import.py stage --exam-year 2018 --out data/quiz-import/supabase-staging-2018.json
+
+# Generate the transaction-safe import SQL from the staging bundle.
+python3 scripts/supabase_import_exam.py generate-sql \
+  --bundle data/quiz-import/supabase-staging-2018.json \
+  --out data/quiz-import/import-2018-written.sql
+
+# Check local readiness. This only reports missing env names, never secret values.
+python3 scripts/supabase_import_exam.py check-ready \
+  --import-sql data/quiz-import/import-2018-written.sql
+
+# After applying the schema migration and exporting SUPABASE_DB_URL, import with psql.
+# Do not paste or commit the real connection string.
+psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 -f supabase/migrations/20260429_quiz_mvp_schema.sql
+psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 -f data/quiz-import/import-2018-written.sql
+```
+
 Next importer step:
 
-1. Write the Supabase upsert script that reads `data/quiz-import/supabase-staging-2018.json`, resolves natural keys to UUIDs, and inserts one written exam into a dev Supabase project using environment variables for credentials.
+1. Apply `supabase/migrations/20260429_quiz_mvp_schema.sql` to a dev Supabase project, set `SUPABASE_DB_URL` locally, and run `data/quiz-import/import-2018-written.sql`.
 2. Decide whether current markdown `draft` should remain excluded by default or be promoted after automated/source audit.
 3. Build quiz selection from the `questions`, `choices`, `topics`, and `question_topics` tables.
 
