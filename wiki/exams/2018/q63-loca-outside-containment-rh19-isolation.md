@@ -1,7 +1,7 @@
 ---
-title: "2018 Q63 — LOCA Outside Containment RH19 Isolation and RCS Pressure"
+title: "2018 Q63 — LOCA Outside Containment RH19 Isolation and RCS Pressure [OUTDATED]"
 category: exams
-status: draft
+status: outdated
 reference: no
 aliases:
   - 2018 Q63
@@ -10,7 +10,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q63 — LOCA Outside Containment RH19 Isolation and RCS Pressure</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q63 — LOCA Outside Containment RH19 Isolation and RCS Pressure [OUTDATED]</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">EPE: LOCA Outside Containment-EA1.2 (3.6)</span>
 </div>
 
