@@ -651,7 +651,7 @@ def _source_key(exam_year: int | None) -> str:
     return f"nrc-written-{exam_year or 'unknown'}"
 
 
-def _question_row(record: Dict[str, Any]) -> Dict[str, Any]:
+def _question_row(record: Dict[str, Any], question_slug: str | None = None) -> Dict[str, Any]:
     return {
         "source_key": _source_key(record.get("exam_year")),
         "exam_year": record.get("exam_year"),
@@ -659,7 +659,7 @@ def _question_row(record: Dict[str, Any]) -> Dict[str, Any]:
         "question_number": record.get("question_number"),
         "track": record.get("track"),
         "title": record.get("title"),
-        "slug": record.get("slug"),
+        "slug": question_slug or record.get("slug"),
         "stem_text": record.get("stem_text") or "",
         "official_answer_label": record.get("official_answer_label"),
         "accepted_answer_labels": record.get("accepted_answer_labels") or [],
@@ -703,9 +703,23 @@ def build_supabase_staging_bundle(records: List[Dict[str, Any]]) -> Dict[str, An
     question_references: List[Dict[str, Any]] = []
     question_topics: List[Dict[str, Any]] = []
 
-    for record in sorted(records, key=lambda item: (item.get("exam_year") or 0, item.get("question_number") or 0, item.get("slug") or "")):
-        question_slug = record.get("slug")
-        questions.append(_question_row(record))
+    sorted_records = sorted(records, key=lambda item: (item.get("exam_year") or 0, item.get("question_number") or 0, item.get("slug") or ""))
+    slug_counts = Counter(record.get("slug") for record in sorted_records)
+    used_question_slugs: set[str] = set()
+
+    for record in sorted_records:
+        source_slug = record.get("slug") or f"q{record.get('question_number') or 'unknown'}"
+        if slug_counts[source_slug] > 1 and source_slug in used_question_slugs:
+            candidate = f"{record.get('exam_year')}-{source_slug}"
+        else:
+            candidate = source_slug
+        question_slug = candidate
+        suffix = 2
+        while question_slug in used_question_slugs:
+            question_slug = f"{candidate}-{suffix}"
+            suffix += 1
+        used_question_slugs.add(question_slug)
+        questions.append(_question_row(record, question_slug))
 
         for choice in sorted(record.get("choices") or [], key=lambda item: item.get("label") or ""):
             choices.append(

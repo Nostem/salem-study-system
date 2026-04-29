@@ -6361,28 +6361,28 @@
       "choice_text": "21 Charging and 23 Charging Pumps",
       "is_correct": true,
       "label": "A",
-      "question_slug": "q29-charging-pump-power-supplies"
+      "question_slug": "2020-q29-charging-pump-power-supplies"
     },
     {
       "choice_html": "21 Charging Pump ONLY",
       "choice_text": "21 Charging Pump ONLY",
       "is_correct": false,
       "label": "B",
-      "question_slug": "q29-charging-pump-power-supplies"
+      "question_slug": "2020-q29-charging-pump-power-supplies"
     },
     {
       "choice_html": "21 Charging and 22 Charging Pumps",
       "choice_text": "21 Charging and 22 Charging Pumps",
       "is_correct": false,
       "label": "C",
-      "question_slug": "q29-charging-pump-power-supplies"
+      "question_slug": "2020-q29-charging-pump-power-supplies"
     },
     {
       "choice_html": "22 Charging Pump ONLY",
       "choice_text": "22 Charging Pump ONLY",
       "is_correct": false,
       "label": "D",
-      "question_slug": "q29-charging-pump-power-supplies"
+      "question_slug": "2020-q29-charging-pump-power-supplies"
     },
     {
       "choice_html": "rise and total Charging flow will remain constant.",
@@ -15309,7 +15309,7 @@
       "source_key": "nrc-written-2020"
     },
     {
-      "question_slug": "q29-charging-pump-power-supplies",
+      "question_slug": "2020-q29-charging-pump-power-supplies",
       "reference_note": "Ref: S2.OP-AR.ZZ-0009(Q), Overhead Annunciators \u2014 Window J and NOS05CVCS00-17 lesson plan | LO: NOS05CVCS00-17, ELO 5.a | Source: New | Cognitive: Fundamental",
       "reference_type": "supporting_basis",
       "source_key": "nrc-written-2020"
@@ -19043,12 +19043,12 @@
       "topic_slug": "reactor-coolant-pumps"
     },
     {
-      "question_slug": "q29-charging-pump-power-supplies",
+      "question_slug": "2020-q29-charging-pump-power-supplies",
       "relationship_type": "tests",
       "topic_slug": "chemical-and-volume-control-system"
     },
     {
-      "question_slug": "q29-charging-pump-power-supplies",
+      "question_slug": "2020-q29-charging-pump-power-supplies",
       "relationship_type": "tests",
       "topic_slug": "4kv"
     },
@@ -29186,7 +29186,7 @@
         "chemical-and-volume-control-system",
         "4kv"
       ],
-      "slug": "q29-charging-pump-power-supplies",
+      "slug": "2020-q29-charging-pump-power-supplies",
       "source_key": "nrc-written-2020",
       "source_topic_slugs": [
         "chemical-and-volume-control-system",

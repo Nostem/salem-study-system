@@ -130,6 +130,45 @@ Current Supabase staging/import output:
 
 The staging bundle uses natural keys (`source_key`, `question_slug`, `topic_slug`) so a later Supabase upsert script can resolve UUID foreign keys without committing credentials or connecting to a live database during export.
 
+## Wiki-to-database sync workflow
+
+The wiki and exam YAML remain the canonical editing surface. Supabase is the generated quiz/progress backend. To publish wiki changes to Supabase, rebuild the staging bundle, run a dry-run sync, review the plan, then apply the non-destructive upsert.
+
+```bash
+# Rebuild from current wiki/exam source files.
+python3 scripts/exam_question_import.py audit --out data/quiz-import/audit-all.json
+python3 scripts/exam_question_import.py stage --out data/quiz-import/supabase-staging-all.json
+
+# Dry-run against Supabase. This reports new/changed/missing rows and performs no writes.
+python3 scripts/supabase_import_exam.py sync \
+  --bundle data/quiz-import/supabase-staging-all.json \
+  --out /tmp/salem-sync-dry-run.json
+
+# Apply only after reviewing the dry-run output.
+python3 scripts/supabase_import_exam.py sync \
+  --bundle data/quiz-import/supabase-staging-all.json \
+  --apply \
+  --out /tmp/salem-sync-apply.json
+```
+
+Sync safety rules:
+
+- `sync` never deletes questions, choices, references, topics, or user progress.
+- Wiki rows missing from a future bundle are reported as `missing_from_source` for review instead of being deleted.
+- Removed topic/reference links are reported for review instead of being deleted automatically.
+- Answer-key changes are called out separately in `answer_key_changes`.
+- `deletes_performed_by_apply` is always `false` for the current pipeline.
+- Slug collisions across exam years are disambiguated in staging before database import. Current known collision: 2020 Q29 becomes `2020-q29-charging-pump-power-supplies`, preserving the already-imported 2018 Q29 slug.
+
+Latest live sync result:
+
+- 499 questions in sync
+- 1,992 choices in sync
+- 78 topics in sync
+- 782 question-topic links in sync
+- 499 question references in sync
+- `review_required`: none
+
 Known review items:
 
 - `wiki/exams/2022/q88-loss-of-control-air-pzr-level.md` has multiple accepted answers: `A` and `B`. This is supported by `accepted_answer_labels` and choice-level `is_correct`, but remains visible in review output.
@@ -159,7 +198,7 @@ psql "$SUPABASE_DB_URL" -v ON_ERROR_STOP=1 -f data/quiz-import/import-2018-writt
 
 Next importer step:
 
-1. Apply `supabase/migrations/20260429_quiz_mvp_schema.sql` to a dev Supabase project, set `SUPABASE_DB_URL` locally, and run `data/quiz-import/import-2018-written.sql`.
+1. Use the `sync` dry-run/apply workflow whenever wiki or exam YAML source changes.
 2. Decide whether current markdown `draft` should remain excluded by default or be promoted after automated/source audit.
 3. Build quiz selection from the `questions`, `choices`, `topics`, and `question_topics` tables.
 

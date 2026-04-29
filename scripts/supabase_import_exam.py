@@ -11,8 +11,11 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
+import subprocess
+import tempfile
 from pathlib import Path
-from typing import Any, Dict, Iterable, List, Mapping
+from typing import Any, Dict, Iterable, List, Mapping, Tuple
 
 
 class ImportReadinessError(ValueError):
@@ -353,7 +356,7 @@ def check_import_readiness(
     import_sql_path: str | Path,
     env: Mapping[str, str] | None = None,
 ) -> Dict[str, Any]:
-    env = env or os.environ
+    env = os.environ if env is None else env
     schema_path = Path(schema_path)
     import_sql_path = Path(import_sql_path)
     issues: List[str] = []
@@ -390,6 +393,345 @@ def check_import_readiness(
     }
 
 
+def _canonical(value: Any) -> Any:
+    if isinstance(value, list):
+        return sorted((_canonical(item) for item in value), key=lambda item: json.dumps(item, sort_keys=True))
+    if isinstance(value, dict):
+        return {key: _canonical(value[key]) for key in sorted(value)}
+    return value
+
+
+def _project(row: Mapping[str, Any], fields: Iterable[str]) -> Dict[str, Any]:
+    return {field: _canonical(row.get(field)) for field in fields}
+
+
+def _index(rows: Iterable[Mapping[str, Any]], key_fields: Tuple[str, ...]) -> Dict[Tuple[Any, ...], Mapping[str, Any]]:
+    indexed: Dict[Tuple[Any, ...], Mapping[str, Any]] = {}
+    for row in rows:
+        key = tuple(row.get(field) for field in key_fields)
+        indexed[key] = row
+    return indexed
+
+
+SYNC_COMPARISON_FIELDS: Dict[str, Tuple[str, ...]] = {
+    "sources": ("title", "source_type", "exam_year", "public_access"),
+    "topics": ("title", "topic_type", "wiki_slug"),
+    "questions": (
+        "source_key",
+        "exam_year",
+        "exam_type",
+        "question_number",
+        "track",
+        "title",
+        "stem_text",
+        "official_answer_label",
+        "accepted_answer_labels",
+        "status",
+        "is_edited",
+        "is_redacted",
+        "quiz_eligible",
+        "non_quiz_reason",
+        "requires_reference",
+        "question_source",
+        "cognitive_level",
+        "ka_code",
+        "ka_importance",
+        "tier_group",
+        "wiki_path",
+        "audit_status",
+    ),
+    "choices": ("choice_html", "choice_text", "is_correct"),
+    "question_topics": ("relationship_type",),
+    "question_references": ("reference_note", "reference_type"),
+}
+
+SYNC_KEY_FIELDS: Dict[str, Tuple[str, ...]] = {
+    "sources": ("source_key",),
+    "topics": ("slug",),
+    "questions": ("slug",),
+    "choices": ("question_slug", "label"),
+    "question_topics": ("question_slug", "topic_slug", "relationship_type"),
+    "question_references": ("question_slug", "source_key", "reference_type", "reference_note"),
+}
+
+
+def _diff_section(
+    desired_rows: Iterable[Mapping[str, Any]],
+    current_rows: Iterable[Mapping[str, Any]],
+    section: str,
+) -> Dict[str, Any]:
+    key_fields = SYNC_KEY_FIELDS[section]
+    compare_fields = SYNC_COMPARISON_FIELDS[section]
+    desired = _index(desired_rows, key_fields)
+    current = _index(current_rows, key_fields)
+    desired_keys = set(desired)
+    current_keys = set(current)
+    changed_keys = sorted(
+        desired_keys & current_keys,
+        key=lambda key: json.dumps(key),
+    )
+    changed = [
+        key
+        for key in changed_keys
+        if _project(desired[key], compare_fields) != _project(current[key], compare_fields)
+    ]
+    return {
+        "new": len(desired_keys - current_keys),
+        "changed": len(changed),
+        "unchanged": len((desired_keys & current_keys) - set(changed)),
+        "missing_from_source": len(current_keys - desired_keys),
+        "new_keys": [list(key) for key in sorted(desired_keys - current_keys, key=lambda key: json.dumps(key))[:50]],
+        "changed_keys": [list(key) for key in changed[:50]],
+        "missing_from_source_keys": [list(key) for key in sorted(current_keys - desired_keys, key=lambda key: json.dumps(key))[:50]],
+    }
+
+
+def build_sync_plan(bundle: Mapping[str, Any], db_snapshot: Mapping[str, Any]) -> Dict[str, Any]:
+    """Compare a wiki-derived staging bundle with current DB content.
+
+    The plan is intentionally non-destructive: missing rows and removed links are
+    reported for review, but apply never deletes learner-progress-related rows.
+    """
+    validate_staging_bundle(bundle)
+    for section in REQUIRED_BUNDLE_KEYS:
+        if section not in db_snapshot:
+            raise ImportReadinessError(f"db snapshot missing section: {section}")
+
+    sections = {
+        section: _diff_section(bundle[section], db_snapshot.get(section, []), section)
+        for section in REQUIRED_BUNDLE_KEYS
+    }
+
+    desired_questions = _index(bundle["questions"], ("slug",))
+    current_questions = _index(db_snapshot.get("questions", []), ("slug",))
+    answer_key_changes = []
+    for key in sorted(set(desired_questions) & set(current_questions), key=lambda item: json.dumps(item)):
+        desired = desired_questions[key]
+        current = current_questions[key]
+        if _canonical(desired.get("accepted_answer_labels")) != _canonical(current.get("accepted_answer_labels")) or desired.get("official_answer_label") != current.get("official_answer_label"):
+            answer_key_changes.append(key[0])
+
+    review_required: List[str] = []
+    if sections["questions"]["missing_from_source"]:
+        review_required.append("missing_from_source")
+    if sections["question_topics"]["missing_from_source"] or sections["question_references"]["missing_from_source"]:
+        review_required.append("links_removed_from_source")
+    if answer_key_changes:
+        review_required.append("answer_key_changes")
+
+    return {
+        "summary": bundle.get("summary", {}),
+        "sources": sections["sources"],
+        "topics": sections["topics"],
+        "questions": sections["questions"],
+        "choices": sections["choices"],
+        "question_topics": sections["question_topics"],
+        "question_references": sections["question_references"],
+        "links": {
+            "question_topics_removed_from_source": sections["question_topics"]["missing_from_source"],
+            "question_references_removed_from_source": sections["question_references"]["missing_from_source"],
+        },
+        "answer_key_changes": answer_key_changes[:50],
+        "review_required": review_required,
+        "safe_to_apply": not review_required,
+        "deletes_performed_by_apply": False,
+    }
+
+
+def generate_sync_snapshot_sql(bundle: Mapping[str, Any]) -> str:
+    validate_staging_bundle(bundle)
+    scopes = sorted({
+        (row["exam_year"], row["exam_type"])
+        for row in bundle["questions"]
+    })
+    scope_json = _dollar_quote([
+        {"exam_year": year, "exam_type": exam_type} for year, exam_type in scopes
+    ], "salem_sync_scope")
+    question_slugs_json = _dollar_quote([
+        {"slug": row["slug"]} for row in bundle["questions"]
+    ], "salem_sync_question_slugs")
+
+    return f"""
+with _salem_sync_scope as (
+  select * from jsonb_to_recordset({scope_json}::jsonb) as x(exam_year integer, exam_type text)
+), _salem_sync_question_slugs as (
+  select * from jsonb_to_recordset({question_slugs_json}::jsonb) as x(slug text)
+), scoped_questions as (
+  select q.*
+  from public.questions q
+  join _salem_sync_scope s on s.exam_year = q.exam_year and s.exam_type = q.exam_type
+), scoped_sources as (
+  select distinct src.*,
+    case
+      when src.source_type = 'nrc_exam' and src.exam_year is not null then 'nrc-written-' || src.exam_year::text
+      else src.source_type || ':' || coalesce(src.exam_year::text, '') || ':' || src.title
+    end as source_key
+  from public.sources src
+  join scoped_questions q on q.source_id = src.id
+), scoped_topics as (
+  select distinct t.*
+  from public.topics t
+  join public.question_topics qt on qt.topic_id = t.id
+  join scoped_questions q on q.id = qt.question_id
+)
+select jsonb_pretty(jsonb_build_object(
+  'sources', coalesce((
+    select jsonb_agg(jsonb_build_object(
+      'source_key', source_key,
+      'title', title,
+      'source_type', source_type,
+      'exam_year', exam_year,
+      'public_access', public_access
+    ) order by source_key) from scoped_sources
+  ), '[]'::jsonb),
+  'topics', coalesce((
+    select jsonb_agg(jsonb_build_object(
+      'slug', slug,
+      'title', title,
+      'topic_type', topic_type,
+      'wiki_slug', wiki_slug
+    ) order by slug) from scoped_topics
+  ), '[]'::jsonb),
+  'questions', coalesce((
+    select jsonb_agg(jsonb_build_object(
+      'source_key', ss.source_key,
+      'exam_year', q.exam_year,
+      'exam_type', q.exam_type,
+      'question_number', q.question_number,
+      'track', q.track,
+      'title', q.title,
+      'slug', q.slug,
+      'stem_text', q.stem_text,
+      'official_answer_label', q.official_answer_label,
+      'accepted_answer_labels', to_jsonb(q.accepted_answer_labels),
+      'status', q.status,
+      'is_edited', q.is_edited,
+      'is_redacted', q.is_redacted,
+      'quiz_eligible', q.quiz_eligible,
+      'non_quiz_reason', q.non_quiz_reason,
+      'requires_reference', q.requires_reference,
+      'question_source', q.question_source,
+      'cognitive_level', q.cognitive_level,
+      'ka_code', q.ka_code,
+      'ka_importance', q.ka_importance,
+      'tier_group', q.tier_group,
+      'wiki_path', q.wiki_path,
+      'audit_status', q.audit_status
+    ) order by q.slug)
+    from scoped_questions q
+    left join scoped_sources ss on ss.id = q.source_id
+  ), '[]'::jsonb),
+  'choices', coalesce((
+    select jsonb_agg(jsonb_build_object(
+      'question_slug', q.slug,
+      'label', c.label,
+      'choice_html', c.choice_html,
+      'choice_text', c.choice_text,
+      'is_correct', c.is_correct
+    ) order by q.slug, c.label)
+    from public.choices c
+    join scoped_questions q on q.id = c.question_id
+  ), '[]'::jsonb),
+  'question_topics', coalesce((
+    select jsonb_agg(jsonb_build_object(
+      'question_slug', q.slug,
+      'topic_slug', t.slug,
+      'relationship_type', qt.relationship_type
+    ) order by q.slug, t.slug, qt.relationship_type)
+    from public.question_topics qt
+    join scoped_questions q on q.id = qt.question_id
+    join public.topics t on t.id = qt.topic_id
+  ), '[]'::jsonb),
+  'question_references', coalesce((
+    select jsonb_agg(jsonb_build_object(
+      'question_slug', q.slug,
+      'source_key', ss.source_key,
+      'reference_note', qr.reference_note,
+      'reference_type', qr.reference_type
+    ) order by q.slug, ss.source_key, qr.reference_type, qr.reference_note)
+    from public.question_references qr
+    join scoped_questions q on q.id = qr.question_id
+    left join scoped_sources ss on ss.id = qr.source_id
+  ), '[]'::jsonb)
+));
+"""
+
+
+def _redact_process_output(text: str) -> str:
+    text = re.sub(r"postgres(?:ql)?://\S+", "postgresql://[REDACTED]", text)
+    text = re.sub(r"db\.[a-z0-9]+\.supabase\.co", "db.[REDACTED].supabase.co", text)
+    text = re.sub(r"aws-[^\s:@]+\.pooler\.supabase\.com", "aws-[REDACTED].pooler.supabase.com", text)
+    text = re.sub(r"postgres\.[a-z0-9]+", "postgres.[REDACTED]", text)
+    return text
+
+
+def _run_psql_sql(sql: str, env: Mapping[str, str], psql_bin: str) -> str:
+    db_url = env.get("SUPABASE_DB_URL")
+    if not db_url:
+        raise ImportReadinessError("SUPABASE_DB_URL is required for live sync")
+    proc = subprocess.run(
+        [psql_bin, db_url, "-v", "ON_ERROR_STOP=1", "-X", "-q", "-t", "-A", "-c", sql],
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    )
+    if proc.returncode != 0:
+        raise ImportReadinessError(_redact_process_output(proc.stderr.strip() or proc.stdout.strip()))
+    return proc.stdout.strip()
+
+
+def _run_psql_file(path: Path, env: Mapping[str, str], psql_bin: str) -> None:
+    db_url = env.get("SUPABASE_DB_URL")
+    if not db_url:
+        raise ImportReadinessError("SUPABASE_DB_URL is required for live sync")
+    proc = subprocess.run(
+        [psql_bin, db_url, "-v", "ON_ERROR_STOP=1", "-X", "-f", str(path)],
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
+        check=False,
+    )
+    if proc.returncode != 0:
+        raise ImportReadinessError(_redact_process_output(proc.stderr.strip() or proc.stdout.strip()))
+
+
+def fetch_db_snapshot(bundle: Mapping[str, Any], env: Mapping[str, str] | None = None, psql_bin: str = "/opt/homebrew/opt/libpq/bin/psql") -> Dict[str, Any]:
+    output = _run_psql_sql(generate_sync_snapshot_sql(bundle), env or os.environ, psql_bin)
+    try:
+        return json.loads(output)
+    except json.JSONDecodeError as exc:
+        raise ImportReadinessError(f"could not parse psql snapshot JSON: {exc}") from exc
+
+
+def run_sync(
+    bundle: Mapping[str, Any],
+    db_snapshot: Mapping[str, Any] | None = None,
+    apply: bool = False,
+    env: Mapping[str, str] | None = None,
+    psql_bin: str = "/opt/homebrew/opt/libpq/bin/psql",
+) -> Dict[str, Any]:
+    snapshot = db_snapshot or fetch_db_snapshot(bundle, env, psql_bin)
+    before = build_sync_plan(bundle, snapshot)
+    report: Dict[str, Any] = {"mode": "apply" if apply else "dry-run", "before": before}
+    if not apply:
+        return report
+
+    with tempfile.NamedTemporaryFile("w", suffix=".sql", delete=False, encoding="utf-8") as handle:
+        handle.write(generate_import_sql(bundle))
+        temp_sql = Path(handle.name)
+    try:
+        _run_psql_file(temp_sql, env or os.environ, psql_bin)
+    finally:
+        temp_sql.unlink(missing_ok=True)
+
+    after_snapshot = fetch_db_snapshot(bundle, env, psql_bin)
+    report["after"] = build_sync_plan(bundle, after_snapshot)
+    report["applied"] = True
+    report["deletes_performed_by_apply"] = False
+    return report
+
+
 def _write_text(path: Path, text: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(text, encoding="utf-8")
@@ -413,12 +755,45 @@ def main(argv: List[str] | None = None) -> int:
     check.add_argument("--import-sql", required=True)
     check.add_argument("--out", help="Optional JSON report path")
 
+    sync = subparsers.add_parser("sync", help="Compare a wiki-derived staging bundle with Supabase and optionally apply non-destructive upserts.")
+    sync.add_argument("--bundle", required=True, help="Path to supabase-staging-*.json")
+    sync.add_argument("--snapshot", help="Optional offline DB snapshot JSON; when omitted, psql reads Supabase")
+    sync.add_argument("--out", help="Optional JSON report path")
+    sync.add_argument("--apply", action="store_true", help="Apply the generated import/upsert SQL after producing the dry-run plan")
+    sync.add_argument("--psql-bin", default="/opt/homebrew/opt/libpq/bin/psql", help="psql binary path for live sync")
+
+    snapshot_sql = subparsers.add_parser("snapshot-sql", help="Generate SQL that returns the current DB content snapshot as JSON.")
+    snapshot_sql.add_argument("--bundle", required=True, help="Path to supabase-staging-*.json")
+    snapshot_sql.add_argument("--out", help="Optional SQL output path")
+
     args = parser.parse_args(argv)
 
     if args.command == "generate-sql":
         bundle = load_staging_bundle(args.bundle)
         _write_text(Path(args.out), generate_import_sql(bundle))
         return 0
+
+    if args.command == "snapshot-sql":
+        bundle = load_staging_bundle(args.bundle)
+        sql = generate_sync_snapshot_sql(bundle)
+        if args.out:
+            _write_text(Path(args.out), sql)
+        else:
+            print(sql)
+        return 0
+
+    if args.command == "sync":
+        bundle = load_staging_bundle(args.bundle)
+        snapshot = None
+        if args.snapshot:
+            with Path(args.snapshot).open(encoding="utf-8") as handle:
+                snapshot = json.load(handle)
+        report = run_sync(bundle, db_snapshot=snapshot, apply=args.apply, env=os.environ, psql_bin=args.psql_bin)
+        if args.out:
+            _write_json(Path(args.out), report)
+        else:
+            print(json.dumps(report, indent=2, sort_keys=True))
+        return 0 if (not args.apply or report.get("applied")) else 1
 
     report = check_import_readiness(args.schema, args.import_sql, os.environ)
     if args.out:

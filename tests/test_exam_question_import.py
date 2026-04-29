@@ -364,6 +364,19 @@ class ExamQuestionImportTests(unittest.TestCase):
         self.assertEqual(q93_topics, ["4kv", "ab-cw-0001-circulating-water-malfunction"])
         self.assertNotIn("electrical-power-systems", q93_topics)
 
+    def test_build_supabase_staging_bundle_disambiguates_duplicate_question_slugs_across_years(self):
+        records = collect_question_records(ROOT, topic_map=load_topic_map(ROOT / "data/topic-map.yaml"))
+        bundle = build_supabase_staging_bundle(records)
+        question_slugs = [row["slug"] for row in bundle["questions"]]
+
+        self.assertEqual(len(question_slugs), len(set(question_slugs)))
+        self.assertIn("q29-charging-pump-power-supplies", question_slugs)
+        self.assertIn("2020-q29-charging-pump-power-supplies", question_slugs)
+        self.assertEqual(
+            [choice["question_slug"] for choice in bundle["choices"] if choice["question_slug"] == "2020-q29-charging-pump-power-supplies"].count("2020-q29-charging-pump-power-supplies"),
+            4,
+        )
+
     def test_build_wiki_slug_index_includes_slug_and_title_alias(self):
         slug_index = build_wiki_slug_index(ROOT)
 
