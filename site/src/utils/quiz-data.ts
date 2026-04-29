@@ -10,8 +10,10 @@ export type QuizChoice = {
 export type QuizTopic = {
   slug: string;
   title: string;
+  slugs?: string[];
   relationshipType?: string;
   topicType?: string | null;
+  topic_type?: string | null;
   wikiSlug?: string | null;
 };
 
@@ -82,9 +84,28 @@ export function getExamYears(bank: QuizBank = quizBank): number[] {
   return [...new Set(bank.questions.map((question) => question.examYear))].sort((a, b) => b - a);
 }
 
+function isSelectableTopic(topic: QuizTopic): boolean {
+  const topicType = String(topic.topicType ?? topic.topic_type ?? '').toLowerCase();
+  return !['abnormal', 'procedure'].includes(topicType);
+}
+
 export function getQuizTopics(bank: QuizBank = quizBank): QuizTopic[] {
   const used = new Set(bank.questions.flatMap((question) => question.topics.map((topic) => topic.slug)));
-  return bank.topics.filter((topic) => used.has(topic.slug)).sort((a, b) => a.title.localeCompare(b.title));
+  const byTitle = new Map<string, QuizTopic>();
+
+  bank.topics
+    .filter((topic) => used.has(topic.slug) && isSelectableTopic(topic))
+    .sort((a, b) => a.title.localeCompare(b.title) || a.slug.localeCompare(b.slug))
+    .forEach((topic) => {
+      const existing = byTitle.get(topic.title);
+      if (!existing) {
+        byTitle.set(topic.title, { ...topic, slugs: [topic.slug] });
+        return;
+      }
+      existing.slugs = [...new Set([...(existing.slugs || [existing.slug]), topic.slug])].sort();
+    });
+
+  return [...byTitle.values()].sort((a, b) => a.title.localeCompare(b.title));
 }
 
 export function filterQuizQuestions(filters: QuizFilters = {}, bank: QuizBank = quizBank): QuizQuestion[] {

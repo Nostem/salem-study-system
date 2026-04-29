@@ -48,11 +48,17 @@ test('two-part fill-in markers are highlighted in stems and answer choices', asy
   expect(chipStyles.display).toBe('inline-block');
 });
 
-test('topic filter supports multiple wiki-formatted topic selections', async ({ page }) => {
+test('topic filter supports multiple wiki-formatted topic selections without duplicates or abnormal procedures', async ({ page }) => {
   await page.goto('quiz/');
 
   await expect(page.getByText('Pressurizer Level & Press Control')).toBeVisible();
   await expect(page.getByText('RPS/SSPS')).toBeVisible();
+
+  const topicLabels = await page.getByTestId('topic-filter-list').locator('label span').allTextContents();
+  expect(topicLabels.filter((label) => label === 'AFW')).toHaveLength(1);
+  expect(topicLabels.filter((label) => label === 'CCW')).toHaveLength(1);
+  expect(topicLabels.filter((label) => label === 'TS 3/4.4 — Reactor Coolant System')).toHaveLength(1);
+  expect(topicLabels.some((label) => /^AB\./.test(label) || /Abnormal/i.test(label))).toBe(false);
 
   await page.getByLabel('Pressurizer Level & Press Control').check();
   await page.getByLabel('RPS/SSPS').check();

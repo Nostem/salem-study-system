@@ -24,8 +24,8 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
           <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Questions</div>
         </div>
         <div class="bg-bg-card border border-border rounded-md px-4 py-3">
-          <div class="font-mono text-xl text-text-primary">{quizBank.summary.topic_count}</div>
-          <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Topics</div>
+          <div class="font-mono text-xl text-text-primary">{topics.length}</div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Selectable topics</div>
         </div>
         <div class="bg-bg-card border border-border rounded-md px-4 py-3">
           <div class="font-mono text-xl text-text-primary">{quizBank.summary.exam_years.length}</div>
@@ -52,7 +52,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
           <div id="topic-slugs" data-testid="topic-filter-list" class="quiz-topic-list">
             {topics.map((topic) => (
               <label class="quiz-topic-check">
-                <input type="checkbox" name="topicSlugs" value={topic.slug} />
+                <input type="checkbox" name="topicSlugs" value={(topic.slugs || [topic.slug]).join(',')} />
                 <span>{topic.title}</span>
               </label>
             ))}
@@ -141,7 +141,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
     function currentFilters() {
       return {
         examYear: document.getElementById('exam-year').value,
-        topicSlugs: [...document.querySelectorAll('input[name="topicSlugs"]:checked')].map((input) => input.value),
+        topicSlugs: [...document.querySelectorAll('input[name="topicSlugs"]:checked')].flatMap((input) => input.value.split(',').filter(Boolean)),
         count: Number(document.getElementById('question-count').value || 10),
         mode: document.getElementById('quiz-mode').value,
         includeReferenceRequired: document.getElementById('include-reference').checked,
