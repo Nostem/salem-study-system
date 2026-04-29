@@ -181,13 +181,28 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       return `<span class="border ${colors[variant] || colors.default} rounded px-2 py-1">${text}</span>`;
     }
 
+    function escapeHtml(value) {
+      return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+    }
+
+    function renderBlankMarkers(value) {
+      return escapeHtml(value)
+        .replace(/_\(([1-4])\)_/g, '<span class="blank">_($1)_</span>')
+        .replace(/(?<!_)\(([1-4])\)(?!_)/g, '<span class="blank">($1)</span>');
+    }
+
     function renderQuestion() {
       const question = state.questions[state.index];
       if (!question) return;
       const selected = state.answers.get(question.slug);
       document.getElementById('question-position').textContent = `Question ${state.index + 1} of ${state.questions.length}`;
       document.getElementById('question-title').textContent = question.title || `Question ${question.questionNumber}`;
-      document.getElementById('question-stem').textContent = question.stemText;
+      document.getElementById('question-stem').innerHTML = renderBlankMarkers(question.stemText);
       document.getElementById('question-meta').innerHTML = [
         badge(`${question.examYear} Q${question.questionNumber}`, 'blue'),
         question.track ? badge(question.track) : '',
@@ -203,7 +218,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         button.type = 'button';
         button.className = 'quiz-choice';
         if (selected === choice.label) button.classList.add('quiz-choice-selected');
-        button.textContent = `${choice.label}. ${choice.text}`;
+        button.innerHTML = `<span class="quiz-choice-label">${choice.label}.</span> ${renderBlankMarkers(choice.text)}`;
         button.addEventListener('click', () => selectAnswer(question, choice.label));
         choiceList.appendChild(button);
       });

@@ -17,6 +17,37 @@ test('quiz page builds a filtered read-only quiz from imported questions', async
   await expect(page.getByRole('button', { name: /^A\./ })).toBeVisible();
 });
 
+test('two-part fill-in markers are highlighted in stems and answer choices', async ({ page }) => {
+  await page.goto('quiz/');
+
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  const stemBlanks = page.locator('#question-stem .blank');
+  await expect(stemBlanks).toHaveCount(2);
+  await expect(stemBlanks.first()).toContainText('_(1)_');
+  await expect(stemBlanks.nth(1)).toContainText('_(2)_');
+
+  const firstChoiceBlanks = page.locator('#choice-list .quiz-choice').first().locator('.blank');
+  await expect(firstChoiceBlanks).toHaveCount(2);
+  await expect(firstChoiceBlanks.first()).toContainText('(1)');
+  await expect(firstChoiceBlanks.nth(1)).toContainText('(2)');
+
+  const chipStyles = await firstChoiceBlanks.first().evaluate((element) => {
+    const styles = window.getComputedStyle(element);
+    return {
+      backgroundColor: styles.backgroundColor,
+      borderRadius: styles.borderRadius,
+      color: styles.color,
+      display: styles.display,
+    };
+  });
+  expect(chipStyles.backgroundColor).not.toBe('rgba(0, 0, 0, 0)');
+  expect(chipStyles.borderRadius).not.toBe('0px');
+  expect(chipStyles.display).toBe('inline-block');
+});
+
 test('topic filter supports multiple wiki-formatted topic selections', async ({ page }) => {
   await page.goto('quiz/');
 

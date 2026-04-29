@@ -127,12 +127,18 @@ html {
 
 /* Fill-in-the-blank markers */
 .blank {
-  background: rgba(251, 191, 36, 0.15);
+  background: rgba(251, 191, 36, 0.16);
+  border: 1px solid rgba(251, 191, 36, 0.28);
+  border-radius: 0.25rem;
   color: #fde68a;
-  padding: 0.1rem 0.4rem;
-  border-radius: 3px;
-  font-weight: 600;
-  font-size: 0.95em;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0.08rem;
+  padding: 0.08rem 0.38rem;
+  vertical-align: 0.05em;
 }
 
 /* JPM critical step marker */
@@ -309,6 +315,11 @@ html {
   color: var(--color-text-body);
   padding: 0.9rem 1rem;
   text-align: left;
+}
+.quiz-choice-label {
+  color: var(--color-text-primary);
+  font-weight: 700;
+  margin-right: 0.25rem;
 }
 .quiz-choice:hover,
 .quiz-choice-selected {
