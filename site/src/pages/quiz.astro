@@ -1,0 +1,277 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { buildQuizSummary, getExamYears, getQuizTopics, quizBank } from '../utils/quiz-data';
+
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+const examYears = getExamYears();
+const topics = getQuizTopics();
+const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
+---
+
+<BaseLayout title="Quiz Builder">
+  <main class="max-w-[1180px] mx-auto px-6 py-8 lg:py-10">
+    <header class="flex flex-col gap-4 border-b border-border pb-6 mb-6 lg:flex-row lg:items-end lg:justify-between">
+      <div>
+        <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
+        <h1 class="font-serif text-4xl text-text-primary leading-tight mt-3 mb-1">Quiz Builder</h1>
+        <p class="text-sm text-text-muted max-w-2xl">
+          Read-only quiz MVP using the imported Salem written exam question bank. Attempts stay local for now; auth and progress persistence come next.
+        </p>
+      </div>
+      <div class="grid grid-cols-3 gap-2 text-center">
+        <div class="bg-bg-card border border-border rounded-md px-4 py-3">
+          <div data-testid="quiz-bank-count" class="font-mono text-xl text-text-primary">{quizBank.summary.question_count}</div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Questions</div>
+        </div>
+        <div class="bg-bg-card border border-border rounded-md px-4 py-3">
+          <div class="font-mono text-xl text-text-primary">{quizBank.summary.topic_count}</div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Topics</div>
+        </div>
+        <div class="bg-bg-card border border-border rounded-md px-4 py-3">
+          <div class="font-mono text-xl text-text-primary">{quizBank.summary.exam_years.length}</div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Years</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-5">
+      <form id="quiz-builder" class="bg-bg-card border border-border rounded-lg p-5 h-fit">
+        <h2 class="font-mono text-xs uppercase tracking-[0.16em] text-text-primary mb-4">Build quiz</h2>
+
+        <label class="quiz-field">
+          <span>Exam year</span>
+          <select id="exam-year" name="examYear">
+            <option value="all">All years</option>
+            {examYears.map((year) => <option value={year}>{year}</option>)}
+          </select>
+        </label>
+
+        <label class="quiz-field">
+          <span>Topic</span>
+          <select id="topic-slug" name="topicSlug">
+            <option value="all">All topics</option>
+            {topics.map((topic) => <option value={topic.slug}>{topic.title}</option>)}
+          </select>
+        </label>
+
+        <label class="quiz-field">
+          <span>Question count</span>
+          <input id="question-count" name="count" type="number" min="1" max="50" value="10" />
+        </label>
+
+        <label class="quiz-field">
+          <span>Mode</span>
+          <select id="quiz-mode" name="mode">
+            <option value="feedback">Feedback — show answer after each question</option>
+            <option value="blind">Blind — score at final review</option>
+          </select>
+        </label>
+
+        <div class="space-y-2 mb-4">
+          <label class="quiz-check"><input id="include-reference" type="checkbox" checked /> Include reference-required</label>
+          <label class="quiz-check"><input id="include-edited" type="checkbox" checked /> Include edited questions</label>
+          <label class="quiz-check"><input id="include-draft" type="checkbox" checked /> Include draft imported questions</label>
+          <label class="quiz-check"><input id="include-outdated" type="checkbox" /> Include outdated questions</label>
+        </div>
+
+        <p id="filter-summary" class="text-xs text-text-muted mb-4">{initialSummary}</p>
+        <button type="submit" class="quiz-primary w-full">Start quiz</button>
+      </form>
+
+      <section id="quiz-empty-state" class="bg-bg-card border border-border rounded-lg p-8">
+        <div class="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-blue mb-3">Read-only MVP</div>
+        <h2 class="text-2xl text-text-primary font-semibold mb-3">Choose filters and start a quiz.</h2>
+        <p class="text-text-body text-sm max-w-2xl">
+          This screen uses the synced Supabase question model exported into the static site. It supports filtering, local answer selection, immediate feedback mode, and blind final review mode.
+        </p>
+      </section>
+
+      <section id="quiz-session" data-testid="quiz-session" class="hidden bg-bg-card border border-border rounded-lg p-5">
+        <div class="flex flex-col gap-3 border-b border-border pb-4 mb-4 md:flex-row md:items-center md:justify-between">
+          <div>
+            <div id="question-position" data-testid="question-position" class="font-mono text-[11px] uppercase tracking-[0.14em] text-accent-blue"></div>
+            <h2 id="question-title" class="text-2xl text-text-primary font-semibold mt-1 mb-0"></h2>
+          </div>
+          <div id="question-meta" data-testid="question-meta" class="flex flex-wrap gap-2 text-[11px] font-mono"></div>
+        </div>
+
+        <p id="question-stem" class="whitespace-pre-line text-text-body text-base leading-7 mb-5"></p>
+        <div id="choice-list" class="grid gap-3 mb-5"></div>
+
+        <div id="feedback-panel" data-testid="feedback-panel" class="hidden border rounded-md p-4 mb-5"></div>
+
+        <div class="flex gap-3 justify-between">
+          <button id="prev-question" type="button" class="quiz-secondary">Previous</button>
+          <button id="next-question" type="button" class="quiz-primary">Next question</button>
+          <button id="review-results" type="button" class="quiz-primary hidden">Review results</button>
+        </div>
+      </section>
+
+      <section id="quiz-review" data-testid="quiz-review" class="hidden bg-bg-card border border-border rounded-lg p-5 lg:col-start-2">
+        <div class="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-green mb-2">Quiz review</div>
+        <h2 id="review-score" class="text-3xl text-text-primary font-semibold mb-4"></h2>
+        <div id="review-list" class="grid gap-3"></div>
+        <button id="new-quiz" type="button" class="quiz-secondary mt-5">Build another quiz</button>
+      </section>
+    </section>
+  </main>
+
+  <script type="application/json" id="quiz-bank-json" set:html={JSON.stringify(quizBank)} />
+
+  <script is:inline>
+    const bank = JSON.parse(document.getElementById('quiz-bank-json').textContent);
+    const form = document.getElementById('quiz-builder');
+    const emptyState = document.getElementById('quiz-empty-state');
+    const sessionEl = document.getElementById('quiz-session');
+    const reviewEl = document.getElementById('quiz-review');
+    const filterSummary = document.getElementById('filter-summary');
+    const state = { questions: [], index: 0, answers: new Map(), mode: 'feedback' };
+
+    function isPracticeEligible(question) {
+      if (question.quizEligible) return true;
+      if (question.isRedacted) return false;
+      return question.choices.length >= 2 && question.acceptedAnswerLabels.length > 0;
+    }
+
+    function currentFilters() {
+      return {
+        examYear: document.getElementById('exam-year').value,
+        topicSlug: document.getElementById('topic-slug').value,
+        count: Number(document.getElementById('question-count').value || 10),
+        mode: document.getElementById('quiz-mode').value,
+        includeReferenceRequired: document.getElementById('include-reference').checked,
+        includeEdited: document.getElementById('include-edited').checked,
+        includeDraft: document.getElementById('include-draft').checked,
+        includeOutdated: document.getElementById('include-outdated').checked,
+      };
+    }
+
+    function filteredQuestions(filters, useCount = true) {
+      const selectedYear = filters.examYear === 'all' ? 'all' : Number(filters.examYear);
+      const matches = bank.questions.filter((question) => {
+        if (!isPracticeEligible(question)) return false;
+        if (selectedYear !== 'all' && question.examYear !== selectedYear) return false;
+        if (!filters.includeReferenceRequired && question.requiresReference) return false;
+        if (!filters.includeEdited && question.isEdited) return false;
+        if (!filters.includeDraft && question.status === 'draft') return false;
+        if (!filters.includeOutdated && question.status === 'outdated') return false;
+        if (filters.topicSlug !== 'all' && !question.topics.some((topic) => topic.slug === filters.topicSlug)) return false;
+        return true;
+      });
+      return useCount ? matches.slice(0, Math.max(1, Math.min(filters.count, matches.length))) : matches;
+    }
+
+    function updateSummary() {
+      const matches = filteredQuestions(currentFilters(), false);
+      filterSummary.textContent = `${matches.length} eligible questions match current filters`;
+    }
+
+    function badge(text, variant = 'default') {
+      const colors = {
+        default: 'border-border text-text-muted',
+        warn: 'border-accent-amber text-accent-amber',
+        good: 'border-accent-green text-accent-green',
+        blue: 'border-accent-blue text-accent-blue',
+      };
+      return `<span class="border ${colors[variant] || colors.default} rounded px-2 py-1">${text}</span>`;
+    }
+
+    function renderQuestion() {
+      const question = state.questions[state.index];
+      if (!question) return;
+      const selected = state.answers.get(question.slug);
+      document.getElementById('question-position').textContent = `Question ${state.index + 1} of ${state.questions.length}`;
+      document.getElementById('question-title').textContent = question.title || `Question ${question.questionNumber}`;
+      document.getElementById('question-stem').textContent = question.stemText;
+      document.getElementById('question-meta').innerHTML = [
+        badge(`${question.examYear} Q${question.questionNumber}`, 'blue'),
+        question.track ? badge(question.track) : '',
+        question.requiresReference ? badge('Reference required', 'warn') : '',
+        question.isEdited ? badge('Edited', 'warn') : '',
+        question.status ? badge(question.status, question.status === 'active' ? 'good' : 'warn') : '',
+      ].join('');
+
+      const choiceList = document.getElementById('choice-list');
+      choiceList.innerHTML = '';
+      question.choices.forEach((choice) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'quiz-choice';
+        if (selected === choice.label) button.classList.add('quiz-choice-selected');
+        button.textContent = `${choice.label}. ${choice.text}`;
+        button.addEventListener('click', () => selectAnswer(question, choice.label));
+        choiceList.appendChild(button);
+      });
+
+      document.getElementById('prev-question').disabled = state.index === 0;
+      document.getElementById('next-question').classList.toggle('hidden', state.index === state.questions.length - 1);
+      document.getElementById('review-results').classList.toggle('hidden', state.index !== state.questions.length - 1);
+      renderFeedback(question);
+    }
+
+    function selectAnswer(question, label) {
+      state.answers.set(question.slug, label);
+      renderQuestion();
+    }
+
+    function renderFeedback(question) {
+      const panel = document.getElementById('feedback-panel');
+      panel.className = 'hidden border rounded-md p-4 mb-5';
+      panel.textContent = '';
+      if (state.mode !== 'feedback') return;
+      const selected = state.answers.get(question.slug);
+      if (!selected) return;
+      const correct = question.acceptedAnswerLabels.includes(selected);
+      panel.className = `border rounded-md p-4 mb-5 ${correct ? 'border-accent-green bg-green-950/20' : 'border-red-400 bg-red-950/20'}`;
+      panel.innerHTML = `<div class="font-semibold ${correct ? 'text-accent-green' : 'text-red-300'}">${correct ? 'Correct' : 'Incorrect'}</div><div class="text-sm text-text-body mt-1">Accepted answer: ${question.acceptedAnswerLabels.join(', ')}</div>`;
+    }
+
+    function showReview() {
+      const correctCount = state.questions.filter((question) => question.acceptedAnswerLabels.includes(state.answers.get(question.slug))).length;
+      sessionEl.classList.add('hidden');
+      reviewEl.classList.remove('hidden');
+      document.getElementById('review-score').textContent = `Score: ${correctCount}/${state.questions.length}`;
+      const list = document.getElementById('review-list');
+      list.innerHTML = '';
+      state.questions.forEach((question, idx) => {
+        const selected = state.answers.get(question.slug) || 'No answer';
+        const correct = question.acceptedAnswerLabels.includes(selected);
+        const item = document.createElement('div');
+        item.className = 'border border-border rounded-md p-4';
+        item.innerHTML = `<div class="text-text-primary font-medium">${idx + 1}. ${question.title || `Question ${question.questionNumber}`}</div><div class="text-sm text-text-muted mt-1">Selected: ${selected} · Accepted: ${question.acceptedAnswerLabels.join(', ')} · ${correct ? 'Correct' : 'Incorrect'}</div>`;
+        list.appendChild(item);
+      });
+    }
+
+    form.addEventListener('change', updateSummary);
+    form.addEventListener('input', updateSummary);
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const filters = currentFilters();
+      state.questions = filteredQuestions(filters, true);
+      state.index = 0;
+      state.answers = new Map();
+      state.mode = filters.mode;
+      emptyState.classList.add('hidden');
+      reviewEl.classList.add('hidden');
+      sessionEl.classList.remove('hidden');
+      renderQuestion();
+    });
+
+    document.getElementById('prev-question').addEventListener('click', () => {
+      state.index = Math.max(0, state.index - 1);
+      renderQuestion();
+    });
+    document.getElementById('next-question').addEventListener('click', () => {
+      state.index = Math.min(state.questions.length - 1, state.index + 1);
+      renderQuestion();
+    });
+    document.getElementById('review-results').addEventListener('click', showReview);
+    document.getElementById('new-quiz').addEventListener('click', () => {
+      reviewEl.classList.add('hidden');
+      emptyState.classList.remove('hidden');
+      updateSummary();
+    });
+    updateSummary();
+  </script>
+</BaseLayout>
