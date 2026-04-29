@@ -14,7 +14,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `instrumentation-and-controls`
 
 - legacy_slug: `instrumentation-and-controls`
-- target_wiki: TODO
+- target_wiki: rps-ssps
 - notes: TODO
 - occurrence_count: 24
 - examples:
@@ -72,7 +72,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 
 - legacy_slug: `ac-power`
 - target_wiki: TODO
-- notes: TODO
+- notes: manually route ac power to most applicable elecetrical wiki. any main turbine generator questions can be routed to main turbine. 
 - occurrence_count: 9
 - examples:
   - 2022 Q17: `q17-mvar-loading-voltage-regulator` — 2022 Q17 — MVAR Loading / Voltage Regulator
@@ -116,7 +116,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 
 - legacy_slug: `radioactive-waste-management`
 - target_wiki: TODO
-- notes: TODO
+- notes: 2022 q23 - abv and waste gas, 2023 q61 - waste liquid, 2023 q68 - waste liquid, 2023 q90 - containment, 2023 q98 - waste liquid
 - occurrence_count: 5
 - examples:
   - 2022 Q23: `q23-plant-vent-rad-monitor-response` — 2022 Q23 — Plant Vent Rad Monitor Response
@@ -143,8 +143,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `feed-and-condensate`
 
 - legacy_slug: `feed-and-condensate`
-- target_wiki: TODO
-- notes: TODO
+- target_wiki: feed & condensate
+- notes: its possible the & symbol gave the parser some trouble
 - occurrence_count: 3
 - examples:
   - 2022 Q44: `q44-feedwater-regulating-valves` — 2022 Q44 — Feedwater Isolation on SG Hi-Hi Level
@@ -163,7 +163,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `reactor-core-and-fuel`
 
 - legacy_slug: `reactor-core-and-fuel`
-- target_wiki: TODO
+- target_wiki: rx vessel & internals
 - notes: TODO
 - occurrence_count: 3
 - examples:
@@ -184,7 +184,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 
 - legacy_slug: `auxiliary-systems`
 - target_wiki: TODO
-- notes: TODO
+- notes: 2023 q14 - control air, 2023 q52 - control air
 - occurrence_count: 2
 - examples:
   - 2023 Q14: `q14-control-air-porv-accumulators-spray` — 2023 Q14 — Control Air / PORV Accumulators and Spray Valves
@@ -200,7 +200,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 
 - legacy_slug: `electrical-power-systems`
 - target_wiki: TODO
-- notes: TODO
+- notes: 2023 q88 - 500kv, 2023 q93 - 4kv, also add circ water topic slug to q93
 - occurrence_count: 2
 - examples:
   - 2023 Q88: `q88-grid-disturbance-solar-magnetic` — 2023 Q88 — Grid Disturbance / Solar Magnetic Disturbance
@@ -215,7 +215,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `pressurizer-and-prt`
 
 - legacy_slug: `pressurizer-and-prt`
-- target_wiki: TODO
+- target_wiki: pressurizer & prt
 - notes: TODO
 - occurrence_count: 1
 - examples:
@@ -227,7 +227,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `radiation-protection`
 
 - legacy_slug: `radiation-protection`
-- target_wiki: TODO
+- target_wiki: radiation monitoring
 - notes: TODO
 - occurrence_count: 1
 - examples:
@@ -239,7 +239,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `steam-generator-and-blowdown`
 
 - legacy_slug: `steam-generator-and-blowdown`
-- target_wiki: TODO
+- target_wiki: steam generator & blowdown
 - notes: TODO
 - occurrence_count: 1
 - examples:
@@ -251,7 +251,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `ts-3-4-1-reactivity-control`
 
 - legacy_slug: `ts-3-4-1-reactivity-control`
-- target_wiki: TODO
+- target_wiki: ts-3-4-1-3
 - notes: TODO
 - occurrence_count: 1
 - examples:
