@@ -87,6 +87,9 @@ python3 scripts/exam_question_import.py export --exam-year 2018 --out data/quiz-
 
 # Audit all written exam records before database import.
 python3 scripts/exam_question_import.py audit --out data/quiz-import/audit-all.json
+
+# Build a Supabase staging bundle split into natural-key table rows.
+python3 scripts/exam_question_import.py stage --out data/quiz-import/supabase-staging-all.json
 ```
 
 Current full-corpus audit output:
@@ -101,6 +104,24 @@ Current full-corpus audit output:
 - `unresolved_connection`: 0 detected in the current corpus
 - `unresolved_topic_slug`: 0 after `data/topic-map.yaml` direct mappings and per-question split routes
 
+Current Supabase staging bundle output:
+
+- `data/quiz-import/supabase-staging-all.json`
+  - `question_count`: 499
+  - `choice_count`: 1992
+  - `source_count`: 5
+  - `topic_count`: 78
+  - `question_topic_count`: 782
+  - `reference_count`: 499
+- `data/quiz-import/supabase-staging-2018.json`
+  - `question_count`: 99
+  - `choice_count`: 396
+  - `topic_count`: 46
+  - `question_topic_count`: 178
+  - `reference_count`: 99
+
+The staging bundle uses natural keys (`source_key`, `question_slug`, `topic_slug`) so a later Supabase upsert script can resolve UUID foreign keys without committing credentials or connecting to a live database during export.
+
 Known review items:
 
 - `wiki/exams/2022/q88-loss-of-control-air-pzr-level.md` has multiple accepted answers: `A` and `B`. This is supported by `accepted_answer_labels` and choice-level `is_correct`, but remains visible in review output.
@@ -109,7 +130,7 @@ Known review items:
 
 Next importer step:
 
-1. Load one exam into Supabase staging using `resolved_topic_slugs` for `question_topics` and preserving source `topic_slugs` for traceability.
+1. Write the Supabase upsert script that reads `data/quiz-import/supabase-staging-2018.json`, resolves natural keys to UUIDs, and inserts one written exam into a dev Supabase project using environment variables for credentials.
 2. Decide whether current markdown `draft` should remain excluded by default or be promoted after automated/source audit.
 3. Build quiz selection from the `questions`, `choices`, `topics`, and `question_topics` tables.
 

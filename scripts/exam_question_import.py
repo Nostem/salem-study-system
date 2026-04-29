@@ -633,6 +633,144 @@ def audit_question_records(
     }
 
 
+def _topic_title(slug: str) -> str:
+    return slug.replace("-", " ").title()
+
+
+def _topic_type(slug: str) -> str:
+    if slug.startswith("ts-"):
+        return "tech_spec"
+    if slug.startswith("eop-") or slug.startswith("fr-"):
+        return "eop"
+    if slug.startswith("ab-"):
+        return "abnormal"
+    return "system"
+
+
+def _source_key(exam_year: int | None) -> str:
+    return f"nrc-written-{exam_year or 'unknown'}"
+
+
+def _question_row(record: Dict[str, Any]) -> Dict[str, Any]:
+    return {
+        "source_key": _source_key(record.get("exam_year")),
+        "exam_year": record.get("exam_year"),
+        "exam_type": "written",
+        "question_number": record.get("question_number"),
+        "track": record.get("track"),
+        "title": record.get("title"),
+        "slug": record.get("slug"),
+        "stem_text": record.get("stem_text") or "",
+        "official_answer_label": record.get("official_answer_label"),
+        "accepted_answer_labels": record.get("accepted_answer_labels") or [],
+        "status": record.get("status") or "active",
+        "is_edited": bool(record.get("is_edited")),
+        "is_redacted": bool(record.get("is_redacted")),
+        "quiz_eligible": bool(record.get("quiz_eligible")),
+        "non_quiz_reason": record.get("non_quiz_reason"),
+        "requires_reference": record.get("requires_reference"),
+        "question_source": record.get("question_source"),
+        "cognitive_level": record.get("cognitive_level"),
+        "ka_code": record.get("ka_code"),
+        "ka_importance": record.get("ka_importance"),
+        "tier_group": record.get("tier_group"),
+        "wiki_path": record.get("wiki_path"),
+        "audit_status": record.get("audit_status") or "imported",
+        "source_topic_slugs": record.get("topic_slugs") or [],
+        "resolved_topic_slugs": record.get("resolved_topic_slugs") or record.get("topic_slugs") or [],
+        "yaml_answer_label": record.get("yaml_answer_label"),
+        "markdown_answer_label": record.get("markdown_answer_label"),
+    }
+
+
+def build_supabase_staging_bundle(records: List[Dict[str, Any]]) -> Dict[str, Any]:
+    """Split normalized records into deterministic natural-key rows for Supabase staging."""
+    years = sorted({record.get("exam_year") for record in records if record.get("exam_year") is not None})
+    sources = [
+        {
+            "source_key": _source_key(year),
+            "title": f"{year} NRC Written Exam",
+            "source_type": "nrc_exam",
+            "exam_year": year,
+            "public_access": True,
+        }
+        for year in years
+    ]
+
+    topic_slugs: List[str] = []
+    questions: List[Dict[str, Any]] = []
+    choices: List[Dict[str, Any]] = []
+    question_references: List[Dict[str, Any]] = []
+    question_topics: List[Dict[str, Any]] = []
+
+    for record in sorted(records, key=lambda item: (item.get("exam_year") or 0, item.get("question_number") or 0, item.get("slug") or "")):
+        question_slug = record.get("slug")
+        questions.append(_question_row(record))
+
+        for choice in sorted(record.get("choices") or [], key=lambda item: item.get("label") or ""):
+            choices.append(
+                {
+                    "question_slug": question_slug,
+                    "label": choice.get("label"),
+                    "choice_html": choice.get("choice_html"),
+                    "choice_text": choice.get("choice_text") or "",
+                    "is_correct": bool(choice.get("is_correct")),
+                }
+            )
+
+        if record.get("reference_note"):
+            question_references.append(
+                {
+                    "question_slug": question_slug,
+                    "source_key": _source_key(record.get("exam_year")),
+                    "reference_note": record.get("reference_note"),
+                    "reference_type": "supporting_basis",
+                }
+            )
+
+        for topic_slug in record.get("resolved_topic_slugs") or record.get("topic_slugs") or []:
+            normalized = slugify(topic_slug)
+            if not normalized or normalized == "unknown":
+                continue
+            if normalized not in topic_slugs:
+                topic_slugs.append(normalized)
+            question_topics.append(
+                {
+                    "question_slug": question_slug,
+                    "topic_slug": normalized,
+                    "relationship_type": "tests",
+                }
+            )
+
+    topics = [
+        {
+            "slug": slug,
+            "title": _topic_title(slug),
+            "topic_type": _topic_type(slug),
+            "wiki_slug": slug,
+        }
+        for slug in sorted(topic_slugs)
+    ]
+
+    return {
+        "summary": {
+            "question_count": len(questions),
+            "choice_count": len(choices),
+            "source_count": len(sources),
+            "topic_count": len(topics),
+            "question_topic_count": len(question_topics),
+            "reference_count": len(question_references),
+            "exam_years": years,
+        },
+        "sources": sources,
+        "topics": topics,
+        "questions": questions,
+        "choices": choices,
+        "question_references": question_references,
+        "question_topics": question_topics,
+    }
+
+
 def _write_json(path: Path, payload: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
@@ -640,7 +778,7 @@ def _write_json(path: Path, payload: Any) -> None:
 
 def main(argv: List[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Export and audit Salem exam question imports.")
-    parser.add_argument("command", choices=["export", "audit"])
+    parser.add_argument("command", choices=["export", "audit", "stage"])
     parser.add_argument("--root", default=".", help="Project root. Defaults to current directory.")
     parser.add_argument("--exam-year", type=int, help="Limit to one exam year.")
     parser.add_argument("--out", help="Write JSON output to this path. Defaults to stdout.")
@@ -652,6 +790,8 @@ def main(argv: List[str] | None = None) -> int:
     records = collect_question_records(args.root, exam_year=args.exam_year, topic_map=topic_map)
     if args.command == "export":
         payload: Any = records
+    elif args.command == "stage":
+        payload = build_supabase_staging_bundle(records)
     else:
         payload = audit_question_records(
             records,

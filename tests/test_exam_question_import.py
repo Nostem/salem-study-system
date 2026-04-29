@@ -5,6 +5,7 @@ from scripts.exam_question_import import (
     audit_question_records,
     build_question_record,
     build_wiki_slug_index,
+    build_supabase_staging_bundle,
     collect_question_records,
     load_exam_yaml,
     load_topic_map,
@@ -326,6 +327,42 @@ class ExamQuestionImportTests(unittest.TestCase):
         self.assertIn("4kv", q93["resolved_topic_slugs"])
         self.assertIn("ab-cw-0001-circulating-water-malfunction", q93["resolved_topic_slugs"])
         self.assertNotIn("electrical-power-systems", q93["resolved_topic_slugs"])
+
+    def test_build_supabase_staging_bundle_splits_records_into_import_tables(self):
+        records = collect_question_records(ROOT, exam_year=2018, topic_map=load_topic_map(ROOT / "data/topic-map.yaml"))
+        bundle = build_supabase_staging_bundle(records)
+
+        self.assertEqual(bundle["summary"]["question_count"], len(records))
+        self.assertEqual(bundle["summary"]["source_count"], 1)
+        self.assertEqual(bundle["summary"]["exam_years"], [2018])
+        self.assertIn("sources", bundle)
+        self.assertIn("topics", bundle)
+        self.assertIn("questions", bundle)
+        self.assertIn("choices", bundle)
+        self.assertIn("question_references", bundle)
+        self.assertIn("question_topics", bundle)
+
+        q35 = next(question for question in bundle["questions"] if question["slug"] == "q35-steam-dump-load-rejection-controller")
+        self.assertEqual(q35["source_key"], "nrc-written-2018")
+        self.assertEqual(q35["accepted_answer_labels"], ["C"])
+        self.assertTrue(q35["quiz_eligible"])
+        self.assertNotIn("choices", q35)
+
+        q35_choices = [choice for choice in bundle["choices"] if choice["question_slug"] == q35["slug"]]
+        self.assertEqual(len(q35_choices), 4)
+        self.assertEqual([choice["label"] for choice in q35_choices], ["A", "B", "C", "D"])
+        self.assertEqual([choice["is_correct"] for choice in q35_choices], [False, False, True, False])
+
+        q35_topics = [row["topic_slug"] for row in bundle["question_topics"] if row["question_slug"] == q35["slug"]]
+        self.assertEqual(q35_topics, ["steam-dumps"])
+
+    def test_build_supabase_staging_bundle_uses_resolved_topics_for_split_routes(self):
+        records = collect_question_records(ROOT, exam_year=2023, topic_map=load_topic_map(ROOT / "data/topic-map.yaml"))
+        bundle = build_supabase_staging_bundle(records)
+        q93_topics = [row["topic_slug"] for row in bundle["question_topics"] if row["question_slug"] == "q93-cw-bus-loss-circulator-trip"]
+
+        self.assertEqual(q93_topics, ["4kv", "ab-cw-0001-circulating-water-malfunction"])
+        self.assertNotIn("electrical-power-systems", q93_topics)
 
     def test_build_wiki_slug_index_includes_slug_and_title_alias(self):
         slug_index = build_wiki_slug_index(ROOT)
