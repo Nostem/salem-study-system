@@ -257,11 +257,39 @@ const scenarioSlugs: Record<string, string[]> = {
       <div class="bg-bg-card border border-border rounded-md p-5">
         <div class="flex items-center gap-2 mb-3">
           <span class="text-accent-blue text-sm">&#9638;</span>
-          <span class="text-text-primary text-sm font-semibold">UFSAR</span>
+          <span class="text-text-primary text-sm font-semibold">UFSAR (by Chapter)</span>
         </div>
-        <span class="flex items-center gap-2 text-text-muted text-xs">
-          Salem UFSAR (118 MB — available in raw/ufsar/ locally)
-        </span>
+        <div class="grid grid-cols-2 gap-x-6 gap-y-0.5">
+          <div>
+            {[
+              ['ufsar-chapter-01', 'Ch 1 — Introduction'],
+              ['ufsar-chapter-02', 'Ch 2 — Site Characteristics'],
+              ['ufsar-chapter-03', 'Ch 3 — Design Criteria'],
+              ['ufsar-chapter-04', 'Ch 4 — Reactor'],
+              ['ufsar-chapter-05', 'Ch 5 — RCS'],
+              ['ufsar-chapter-06', 'Ch 6 — ESF'],
+              ['ufsar-chapter-07', 'Ch 7 — I&C'],
+              ['ufsar-chapter-08', 'Ch 8 — Electrical'],
+              ['ufsar-chapter-09', 'Ch 9 — Auxiliary Systems'],
+            ].map(([slug, label]) => (
+              <a href={`${base}ts-pdfs/${slug}.pdf`} target="_blank" class="block text-accent-blue text-[11px] no-underline hover:underline py-0.5 leading-tight">{label}</a>
+            ))}
+          </div>
+          <div>
+            {[
+              ['ufsar-chapter-10', 'Ch 10 — Steam & Power'],
+              ['ufsar-chapter-11', 'Ch 11 — Rad Waste'],
+              ['ufsar-chapter-12', 'Ch 12 — Radiation Protection'],
+              ['ufsar-chapter-13', 'Ch 13 — Conduct of Ops'],
+              ['ufsar-chapter-14', 'Ch 14 — Initial Tests'],
+              ['ufsar-chapter-15', 'Ch 15 — Accident Analysis'],
+              ['ufsar-chapter-16', 'Ch 16 — Tech Specs'],
+              ['ufsar-chapter-17', 'Ch 17 — QA'],
+            ].map(([slug, label]) => (
+              <a href={`${base}ts-pdfs/${slug}.pdf`} target="_blank" class="block text-accent-blue text-[11px] no-underline hover:underline py-0.5 leading-tight">{label}</a>
+            ))}
+          </div>
+        </div>
       </div>
 
       <!-- Tech Specs & Bases -->
