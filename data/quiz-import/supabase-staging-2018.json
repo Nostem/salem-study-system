@@ -2276,8 +2276,8 @@
       "question_slug": "q82-pzr-level-channel-fail-high-ts"
     },
     {
-      "choice_html": "<span class=\"blank\">_(1)_</span> energized &nbsp;&nbsp; <span class=\"blank\">_(2)_</span> 6",
-      "choice_text": "_(1)_ energized \u00a0\u00a0 _(2)_ 6",
+      "choice_html": "<span class=\"blank\">_(1)_</span> energized &nbsp;&nbsp; <span class=\"blank\">_(2)_</span> 72",
+      "choice_text": "_(1)_ energized \u00a0\u00a0 _(2)_ 72",
       "is_correct": true,
       "label": "B",
       "question_slug": "q82-pzr-level-channel-fail-high-ts"
@@ -2290,8 +2290,8 @@
       "question_slug": "q82-pzr-level-channel-fail-high-ts"
     },
     {
-      "choice_html": "<span class=\"blank\">_(1)_</span> de-energized &nbsp;&nbsp; <span class=\"blank\">_(2)_</span> 6",
-      "choice_text": "_(1)_ de-energized \u00a0\u00a0 _(2)_ 6",
+      "choice_html": "<span class=\"blank\">_(1)_</span> de-energized &nbsp;&nbsp; <span class=\"blank\">_(2)_</span> 72",
+      "choice_text": "_(1)_ de-energized \u00a0\u00a0 _(2)_ 72",
       "is_correct": false,
       "label": "D",
       "question_slug": "q82-pzr-level-channel-fail-high-ts"
@@ -6832,7 +6832,7 @@
         "steam-generators"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\n\u2022 The crew is performing the SG Level Control Steps of 2-EOP-FRCC-2 (Response To Degraded Core Cooling)\n\n\u2022 The PO observes the following on the AUX FEEDWATER STORAGE TANK BEZEL (Red Box = VALID ALARM):\n\nIn accordance with 2-EOP-FRCC-2, which ONE of the following completes the statements below?\n\nThe crew _(1)_ required to shift AFW suction to an alternate source.\n\nIf NO INTACT SG is available, the crew can feed a RUPTURED SG _(2)_.",
+      "stem_text": "Given:\n\n\u2022 The crew is performing the SG Level Control Steps of 2-EOP-FRCC-2 (Response To Degraded Core Cooling)\n\n\u2022 The PO observes the following on the AUX FEEDWATER STORAGE TANK BEZEL (Red Box = VALID ALARM):\n\nNote: Image in source PDF. The following alarms are in on the console bezel:\n\n- AFWST CH A LEVEL LO\n\n- AFWST CH C LEVEL LO\n\n- AFWST LEVEL APPRCH TECH SPEC\n\nIn accordance with 2-EOP-FRCC-2, which ONE of the following completes the statements below?\n\nThe crew _(1)_ required to shift AFW suction to an alternate source.\n\nIf NO INTACT SG is available, the crew can feed a RUPTURED SG _(2)_.",
       "tier_group": "Tier 1/Group 2",
       "title": "2018 Q71 \u2014 EOP-FRCC-2 AFWST Alarm and SG Feeding",
       "track": "RO",
@@ -7227,16 +7227,16 @@
       "cognitive_level": "Comprehension/Analysis",
       "exam_type": "written",
       "exam_year": 2018,
-      "is_edited": false,
+      "is_edited": true,
       "is_redacted": false,
       "ka_code": "028 PZR Level Control Malfunction-AA2.12",
       "ka_importance": 3.5,
       "markdown_answer_label": "B",
-      "non_quiz_reason": "status_draft",
+      "non_quiz_reason": null,
       "official_answer_label": "B",
       "question_number": 82,
       "question_source": "New",
-      "quiz_eligible": false,
+      "quiz_eligible": true,
       "requires_reference": false,
       "resolved_topic_slugs": [
         "pressurizer-level-and-press-control",
@@ -7248,10 +7248,10 @@
         "pressurizer-level-and-press-control",
         "ts-3-4-3-instrumentation"
       ],
-      "status": "draft",
+      "status": "active",
       "stem_text": "Given:\n\n\u2022 Unit 2 is at 100% Reactor Power\n\n\u2022 PZR pressure is 2235 and stable\n\n\u2022 21 Backup Heaters are in MANUAL and ON\n\n\u2022 2LT-459 (Channel I PZR Level) is the controlling PZR Level channel\n\nAt time 15:00:00\n\n\u2022 2LT-459 Fails high\n\nWhich ONE of the following completes the statements below?\n\nAt 15:00:30, 22 Backup Heaters are _(1)_.\n\nIn accordance LCO 3.3.1.1 (REACTOR TRIP SYSTEM INSTRUMENTATION), 2LT-459 must be placed in the tripped condition within a MAXIMUM of _(2)_ hour(s).",
       "tier_group": "Tier 1/Group 2",
-      "title": "2018 Q82 \u2014 PZR Level Channel Fails High / TS 3.3.1.1",
+      "title": "2018 Q82 \u2014 PZR Level Channel Fails High / TS 3.3.1.1 [EDITED]",
       "track": "SRO",
       "wiki_path": "wiki/exams/2018/q82-pzr-level-channel-fail-high-ts.md",
       "yaml_answer_label": "B"
