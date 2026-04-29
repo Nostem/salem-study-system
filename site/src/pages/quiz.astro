@@ -46,13 +46,18 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
           </select>
         </label>
 
-        <label class="quiz-field">
-          <span>Topic</span>
-          <select id="topic-slug" name="topicSlug">
-            <option value="all">All topics</option>
-            {topics.map((topic) => <option value={topic.slug}>{topic.title}</option>)}
-          </select>
-        </label>
+        <fieldset class="quiz-field">
+          <span>Topics</span>
+          <p class="text-[11px] text-text-muted mb-2">Leave all unchecked to include every topic. Select multiple to build a mixed-topic quiz.</p>
+          <div id="topic-slugs" data-testid="topic-filter-list" class="quiz-topic-list">
+            {topics.map((topic) => (
+              <label class="quiz-topic-check">
+                <input type="checkbox" name="topicSlugs" value={topic.slug} />
+                <span>{topic.title}</span>
+              </label>
+            ))}
+          </div>
+        </fieldset>
 
         <label class="quiz-field">
           <span>Question count</span>
@@ -136,7 +141,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
     function currentFilters() {
       return {
         examYear: document.getElementById('exam-year').value,
-        topicSlug: document.getElementById('topic-slug').value,
+        topicSlugs: [...document.querySelectorAll('input[name="topicSlugs"]:checked')].map((input) => input.value),
         count: Number(document.getElementById('question-count').value || 10),
         mode: document.getElementById('quiz-mode').value,
         includeReferenceRequired: document.getElementById('include-reference').checked,
@@ -155,7 +160,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         if (!filters.includeEdited && question.isEdited) return false;
         if (!filters.includeDraft && question.status === 'draft') return false;
         if (!filters.includeOutdated && question.status === 'outdated') return false;
-        if (filters.topicSlug !== 'all' && !question.topics.some((topic) => topic.slug === filters.topicSlug)) return false;
+        if (filters.topicSlugs.length > 0 && !question.topics.some((topic) => filters.topicSlugs.includes(topic.slug))) return false;
         return true;
       });
       return useCount ? matches.slice(0, Math.max(1, Math.min(filters.count, matches.length))) : matches;
@@ -214,6 +219,11 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       renderQuestion();
     }
 
+    function renderExplanation(question) {
+      const explanation = question.explanationHtml || `<p>${question.explanationText || 'No explanation imported for this question yet.'}</p>`;
+      return `<div class="quiz-explanation"><div class="font-mono text-[11px] uppercase tracking-[0.14em] text-text-muted mb-2">Full explanation</div>${explanation}</div>`;
+    }
+
     function renderFeedback(question) {
       const panel = document.getElementById('feedback-panel');
       panel.className = 'hidden border rounded-md p-4 mb-5';
@@ -223,7 +233,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       if (!selected) return;
       const correct = question.acceptedAnswerLabels.includes(selected);
       panel.className = `border rounded-md p-4 mb-5 ${correct ? 'border-accent-green bg-green-950/20' : 'border-red-400 bg-red-950/20'}`;
-      panel.innerHTML = `<div class="font-semibold ${correct ? 'text-accent-green' : 'text-red-300'}">${correct ? 'Correct' : 'Incorrect'}</div><div class="text-sm text-text-body mt-1">Accepted answer: ${question.acceptedAnswerLabels.join(', ')}</div>`;
+      panel.innerHTML = `<div class="font-semibold ${correct ? 'text-accent-green' : 'text-red-300'}">${correct ? 'Correct' : 'Incorrect'}</div><div class="text-sm text-text-body mt-1 mb-4">Accepted answer: ${question.acceptedAnswerLabels.join(', ')}</div>${renderExplanation(question)}`;
     }
 
     function showReview() {
@@ -238,7 +248,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         const correct = question.acceptedAnswerLabels.includes(selected);
         const item = document.createElement('div');
         item.className = 'border border-border rounded-md p-4';
-        item.innerHTML = `<div class="text-text-primary font-medium">${idx + 1}. ${question.title || `Question ${question.questionNumber}`}</div><div class="text-sm text-text-muted mt-1">Selected: ${selected} · Accepted: ${question.acceptedAnswerLabels.join(', ')} · ${correct ? 'Correct' : 'Incorrect'}</div>`;
+        item.innerHTML = `<div class="text-text-primary font-medium">${idx + 1}. ${question.title || `Question ${question.questionNumber}`}</div><div class="text-sm text-text-muted mt-1 mb-3">Selected: ${selected} · Accepted: ${question.acceptedAnswerLabels.join(', ')} · ${correct ? 'Correct' : 'Incorrect'}</div><details data-testid="review-explanation" class="quiz-review-details"><summary>Show full explanation and distractor notes</summary>${renderExplanation(question)}</details>`;
         list.appendChild(item);
       });
     }

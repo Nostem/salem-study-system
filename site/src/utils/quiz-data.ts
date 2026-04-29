@@ -38,6 +38,8 @@ export type QuizQuestion = {
   tierGroup?: string | null;
   wikiPath?: string | null;
   auditStatus?: string | null;
+  explanationHtml?: string;
+  explanationText?: string;
   choices: QuizChoice[];
   topics: QuizTopic[];
 };
@@ -60,6 +62,7 @@ export type QuizBank = {
 export type QuizFilters = {
   examYear?: number | 'all';
   topicSlug?: string | 'all';
+  topicSlugs?: string[];
   includeReferenceRequired?: boolean;
   includeOutdated?: boolean;
   includeEdited?: boolean;
@@ -89,7 +92,7 @@ export function filterQuizQuestions(filters: QuizFilters = {}, bank: QuizBank = 
   const includeOutdated = filters.includeOutdated ?? false;
   const includeEdited = filters.includeEdited ?? true;
   const includeDraft = filters.includeDraft ?? true;
-  const topicSlug = filters.topicSlug ?? 'all';
+  const selectedTopicSlugs = filters.topicSlugs ?? (filters.topicSlug && filters.topicSlug !== 'all' ? [filters.topicSlug] : []);
   const examYear = filters.examYear ?? 'all';
 
   const questions = bank.questions.filter((question) => {
@@ -99,7 +102,7 @@ export function filterQuizQuestions(filters: QuizFilters = {}, bank: QuizBank = 
     if (!includeOutdated && question.status === 'outdated') return false;
     if (!includeDraft && question.status === 'draft') return false;
     if (!includeEdited && question.isEdited) return false;
-    if (topicSlug !== 'all' && !question.topics.some((topic) => topic.slug === topicSlug)) return false;
+    if (selectedTopicSlugs.length > 0 && !question.topics.some((topic) => selectedTopicSlugs.includes(topic.slug))) return false;
     return true;
   });
 
