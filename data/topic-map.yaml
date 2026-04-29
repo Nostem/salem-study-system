@@ -1,0 +1,126 @@
+# Controlled topic routing map for legacy exam metadata slugs.
+# Generated from data/topic-slug-routing-review.md after manual review.
+#
+# status:
+#   mapped      - legacy slug resolves to the listed current wiki page/topic.
+#   needs_split - legacy slug is too broad; route individual questions by context.
+#
+# target_wiki values may be current wiki page titles or slugs. The importer resolves
+# both ampersand and "and" variants, e.g. "Feed & Condensate" also resolves
+# legacy slug "feed-and-condensate".
+
+mappings:
+  instrumentation-and-controls:
+    status: mapped
+    target_wiki: rps-ssps
+    notes: "Manual review routed broad I&C legacy slug to RPS/SSPS for now. Revisit if individual I&C questions need finer routing."
+
+  ac-power:
+    status: needs_split
+    target_wiki: null
+    notes: "Manually route AC power to the most applicable electrical wiki. Main turbine generator questions can route to main turbine."
+    question_routes:
+      2022-q17:
+        target_wiki: turbine-generator
+        notes: "MVAR/loading voltage regulator question; also connected to 500KV."
+      2023-q7:
+        target_wiki: pressurizer & prt
+        notes: "PZR backup heater power supplies."
+      2023-q11:
+        target_wiki: rps-ssps
+        notes: "Vital instrument bus / NI channel response."
+      2023-q15:
+        target_wiki: turbine-generator
+        notes: "Grid disturbance and unit trip MVAR effects."
+      2023-q36:
+        target_wiki: rps-ssps
+        notes: "RCP underfrequency logic; I&C/logic focus."
+      2023-q39:
+        target_wiki: 4kv
+        notes: "CFCU power supplies / 4KV vital bus loss."
+      2023-q40:
+        target_wiki: containment-spray
+        notes: "Containment spray pump sequencing."
+      2023-q45:
+        target_wiki: ab-460-0001-loss-of-2a-460v-bus
+        notes: "Loss of 2A 460V bus / charging pump."
+      2023-q48:
+        target_wiki: diesel-generators
+        notes: "EDG starting air compressor power supplies."
+
+  radioactive-waste-management:
+    status: needs_split
+    target_wiki: null
+    notes: "2022 Q23: ABV and waste gas; 2023 Q61/Q68/Q98: waste liquid; 2023 Q90: containment. Route per question."
+    question_routes:
+      2022-q23:
+        target_wiki: waste-gas
+        notes: "ABV / plant vent rad monitor response."
+      2023-q61:
+        target_wiki: waste-liquid
+        notes: "Liquid radwaste release / CW circulators."
+      2023-q68:
+        target_wiki: waste-liquid
+        notes: "Liquid radwaste / ODCM flow recorder."
+      2023-q90:
+        target_wiki: containment-systems
+        notes: "Containment pressure relief / R12A failure ODCM."
+      2023-q98:
+        target_wiki: waste-liquid
+        notes: "CVCS monitor tank release / 2R18 inoperable."
+
+  feed-and-condensate:
+    status: mapped
+    target_wiki: feed & condensate
+    notes: "Legacy slug uses 'and'; current wiki title uses '&'."
+
+  reactor-core-and-fuel:
+    status: mapped
+    target_wiki: rx vessel & internals
+    notes: "Manual review routed reactor core/fuel legacy slug to Rx Vessel & Internals."
+
+  auxiliary-systems:
+    status: needs_split
+    target_wiki: null
+    notes: "2023 Q14 and Q52 should route to control air."
+    question_routes:
+      2023-q14:
+        target_wiki: control-air
+        notes: "Control air / PORV accumulators and spray valves."
+      2023-q52:
+        target_wiki: control-air
+        notes: "Phase A / CA330 instrument air to containment."
+
+  electrical-power-systems:
+    status: needs_split
+    target_wiki: null
+    notes: "2023 Q88 routes to 500kv; 2023 Q93 routes to 4kv, and should also get a circulating water topic slug."
+    question_routes:
+      2023-q88:
+        target_wiki: 500kv
+        notes: "Grid disturbance / solar magnetic disturbance."
+      2023-q93:
+        target_wiki: 4kv
+        add_topic_slugs:
+          - ab-cw-0001-circulating-water-malfunction
+        notes: "CW bus loss / circulator trip; also tag circulating water."
+
+  pressurizer-and-prt:
+    status: mapped
+    target_wiki: pressurizer & prt
+    notes: "Legacy slug uses 'and'; current wiki title uses '&'."
+
+  radiation-protection:
+    status: mapped
+    target_wiki: radiation monitoring
+    notes: "Manual review routed radiation protection legacy slug to Radiation Monitoring."
+
+  steam-generator-and-blowdown:
+    status: mapped
+    target_wiki: steam generator & blowdown
+    notes: "Legacy slug uses 'and'; current wiki title uses '&'."
+
+  ts-3-4-1-reactivity-control:
+    status: mapped
+    target_wiki: ts-3-4-1-3-movable-control-assemblies
+    notes: "Manual review routed legacy reactivity control slug to TS 3.4.1.3 movable control assemblies."

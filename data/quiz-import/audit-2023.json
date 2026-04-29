@@ -1,0 +1,28 @@
+{
+  "default_quiz_excluded_counts": {
+    "draft": 100
+  },
+  "issue_counts": {},
+  "issues": [],
+  "reference_counts": {
+    "False": 95,
+    "True": 5
+  },
+  "review_counts": {
+    "redacted_question_excluded": 1
+  },
+  "review_items": [
+    {
+      "detail": "Security-redacted public question is excluded from normal quiz pools.",
+      "exam_year": 2023,
+      "issue": "redacted_question_excluded",
+      "question_number": 85,
+      "slug": "q85-sg-overpressure-security-redacted",
+      "status": "draft"
+    }
+  ],
+  "status_counts": {
+    "draft": 100
+  },
+  "total_records": 100
+}

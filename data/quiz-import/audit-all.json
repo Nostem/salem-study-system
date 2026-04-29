@@ -1,0 +1,40 @@
+{
+  "default_quiz_excluded_counts": {
+    "draft": 492,
+    "outdated": 4
+  },
+  "issue_counts": {},
+  "issues": [],
+  "reference_counts": {
+    "False": 472,
+    "True": 27
+  },
+  "review_counts": {
+    "multiple_accepted_answers": 1,
+    "redacted_question_excluded": 1
+  },
+  "review_items": [
+    {
+      "detail": "Accepted labels: ['A', 'B'].",
+      "exam_year": 2022,
+      "issue": "multiple_accepted_answers",
+      "question_number": 88,
+      "slug": "q88-loss-of-control-air-pzr-level",
+      "status": "draft"
+    },
+    {
+      "detail": "Security-redacted public question is excluded from normal quiz pools.",
+      "exam_year": 2023,
+      "issue": "redacted_question_excluded",
+      "question_number": 85,
+      "slug": "q85-sg-overpressure-security-redacted",
+      "status": "draft"
+    }
+  ],
+  "status_counts": {
+    "active": 3,
+    "draft": 492,
+    "outdated": 4
+  },
+  "total_records": 499
+}
