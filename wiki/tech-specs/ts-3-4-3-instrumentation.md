@@ -47,22 +47,56 @@ The Reactor Trip System instrumentation channels and interlocks shown in Table 3
 
 ### Minimum Channels OPERABLE (Table 3.3-1, Selected Functions)
 
-| Function | Total Channels | Channels to Trip | Min OPERABLE | Applicable Modes |
-|----------|---------------|-----------------|--------------|-----------------|
-| Power Range Neutron Flux (High) | 4 | 2 | 3 | 1, 2 |
-| Power Range Neutron Flux (Low) | 4 | 2 | 3 | 1, 2 |
-| Intermediate Range Neutron Flux | 2 | 1 | 1 | 1, 2 |
-| Source Range Neutron Flux | 2 | 1 | 1 | 3, 4, 5 |
-| Overtemperature Delta-T | 4 | 2 | 3 | 1, 2 |
-| Overpower Delta-T | 4 | 2 | 3 | 1, 2 |
-| Pressurizer Pressure — Low | 4 | 2 | 3 | 1, 2 |
-| Pressurizer Pressure — High | 4 | 2 | 3 | 1, 2 |
-| Pressurizer Water Level — High | 3 | 2 | 2 | 1 |
-| Loss of Flow (per loop) | 3/loop | 2/loop | 2/loop | 1 |
-| SG Water Level Lo-Lo (per SG) | 3/SG | 2/SG | 2/SG | 1, 2 |
-| Undervoltage — RCPs | 1/bus | 1/bus x 2 | 1/bus x 2 | 1 |
-| Underfrequency — RCPs | 1/bus | 1/bus x 2 | 1/bus x 2 | 1 |
-| Turbine Trip (Auto Stop Oil) | 3 | 2 | 2 | 1 |
+| Function | Total Channels | Channels to Trip | Min OPERABLE | Applicable Modes | Action |
+|----------|---------------|-----------------|--------------|-----------------|--------|
+| Power Range Neutron Flux (High) | 4 | 2 | 3 | 1, 2 | 2 |
+| Power Range Neutron Flux (Low) | 4 | 2 | 3 | 1, 2 | 2 |
+| Power Range High Positive Rate | 4 | 2 | 3 | 1, 2 | 2 |
+| Intermediate Range Neutron Flux | 2 | 1 | 2 | 1, 2 | 3 |
+| Source Range Neutron Flux (Startup) | 2 | 1 | 2 | 2 | 4 |
+| Source Range Neutron Flux (Shutdown, RTBs open) | 2 | 0 | 1 | 3, 4, 5 | 5 |
+| Source Range Neutron Flux (Shutdown, RTBs closed) | 2 | 1 | 2 | 3*, 4*, 5* | 7 |
+| Overtemperature Delta-T | 4 | 2 | 3 | 1, 2 | 6 |
+| Overpower Delta-T | 4 | 2 | 3 | 1, 2 | 6 |
+| Pressurizer Pressure — Low | 4 | 2 | 3 | 1, 2 | 6 |
+| Pressurizer Pressure — High | 4 | 2 | 3 | 1, 2 | 6 |
+| Pressurizer Water Level — High | 3 | 2 | 2 | 1, 2 | 6 |
+| Loss of Flow — Single Loop (above P-8) | 3/loop | 2/loop | 2/loop | 1 | 6 |
+| Loss of Flow — Two Loops (above P-7, below P-8) | 3/loop | 2/loop | 2/loop | 1 | 6 |
+| SG Water Level Lo-Lo (per SG) | 3/SG | 2/SG | 2/SG | 1, 2 | 6 |
+| Undervoltage — RCPs | 4 (1/bus) | 1/bus x 2 | 3 | 1 | 6 |
+| Underfrequency — RCPs | 4 (1/bus) | 1/bus x 2 | 3 | 1 | 6 |
+| Turbine Trip — Low Auto Stop Oil (above P-9) | 3 | 2 | 2 | 1 | 6 |
+| Turbine Trip — Stop Valve Closure (above P-9) | 4 | 4 | 3 | 1 | 6 |
+| Safety Injection Input from ESF | 2 | 1 | 2 | 1, 2 | 10 |
+| Reactor Trip Breakers | 2 | 1 | 2 | 1, 2 | 1, 14 |
+| Automatic Trip Logic | 2 | 1 | 2 | 1, 2 | 10 |
+
+\* With the reactor trip system breakers closed and the control rod drive system capable of rod withdrawal.
+
+### Action Statements (Table 3.3-1)
+
+| Action | Requirement |
+|--------|-------------|
+| 1 | 1 less than min channels OPERABLE (RTB): restore within 24 hrs or HOT STANDBY in 6 hrs. May bypass 1 channel for 4 hrs for testing provided the other channel is OPERABLE. |
+| 2 | 1 less than total channels: place inoperable channel in tripped condition within 72 hrs. Min channels must be met; may bypass for 12 hrs for testing. Either restrict power to ≤75% RTP and reduce PR NF trip setpoint to ≤85% RTP within 4 hrs, or monitor QPTR every 12 hrs. Verify QPTR consistent with normalized symmetric power distribution every 12 hrs above 75% RTP. |
+| 3 | (a) 1 less than min channels: reduce power below P-10 or increase above P-6 within 24 hrs. (b) 2 less than min channels: immediately suspend positive reactivity additions and reduce power below P-6 within 2 hrs. |
+| 4 | (a) 1 less than min channels: immediately suspend positive reactivity additions. (b) 2 less than min channels: immediately open reactor trip breakers. |
+| 5 | 1 less than min channels: verify SHUTDOWN MARGIN per Spec 3.1.1.1 or 3.1.1.2 within 1 hr and every 12 hrs thereafter. |
+| 6 | 1 less than total channels: place inoperable channel in tripped condition within 72 hrs. Min channels must be met; may bypass for 12 hrs for testing. |
+| 7 | (a) 1 less than min channels: restore within 48 hrs or fully insert all rods and place CRDS incapable of rod withdrawal within next hour. (b) 2 less than min channels: immediately open reactor trip breakers. |
+| 10 | 1 less than min channels OPERABLE: restore within 24 hrs or HOT STANDBY in 6 hrs. May bypass 1 channel for 4 hrs for testing provided the other channel is OPERABLE. |
+| 11 | Less than min channels: may continue provided inoperable channel placed in tripped condition within 72 hrs. |
+| 12 | 1 less than min channels (Manual Trip): restore within 48 hrs or HOT STANDBY in 6 hrs and/or open reactor trip breakers. |
+| 13 | 1 less than min channels OPERABLE: restore within 48 hrs or open reactor trip breakers within next hour. |
+| 14 | 1 diverse trip feature (UV or shunt trip) inoperable on RTB: restore within 48 hrs or declare breaker inoperable and HOT STANDBY in 6 hrs. Breaker shall not be bypassed while diverse trip feature is inoperable except for maintenance to restore. |
+
+*(TS Table 3.3-1 Action Statements, Amendment Nos. 310, 316)*
+
+<div class="callout callout-trap">
+<div class="callout-label">Action 2 vs Action 6 — Power Range vs Other RTS Functions</div>
+Action 2 applies only to Power Range Neutron Flux channels and includes <span class="hi-exam">additional requirements</span> beyond placing the channel in trip: either restrict power to ≤75% RTP with a reduced trip setpoint, or monitor QPTR every 12 hours. Action 6 applies to most other RTS functions (OT Delta-T, OP Delta-T, pressurizer, loss of flow, SG level, undervoltage, underfrequency, turbine trip) and only requires placing the inoperable channel in the tripped condition within 72 hours. <span class="hi-trap">Trap: Action 2 and Action 6 both allow 72 hours to trip the channel, but Action 2 has the power restriction / QPTR monitoring requirement that Action 6 does not.</span>
+</div>
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.1 RTS Instrumentation</summary>
