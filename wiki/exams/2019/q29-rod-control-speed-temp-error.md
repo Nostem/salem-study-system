@@ -1,7 +1,7 @@
 ---
-title: "2019 Q29 — Rod Control Speed vs Temperature Error"
+title: "2019 Q29 — Rod Control Speed vs Temperature Error [EDITED]"
 category: exams
-status: draft
+status: edited
 reference: no
 aliases:
   - 2019 Q29
@@ -10,7 +10,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q29 — Rod Control Speed vs Temperature Error</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q29 — Rod Control Speed vs Temperature Error [EDITED]</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">001 Control Rod Drive System-K4.05 (3.9)</span>
 </div>
 
@@ -30,6 +30,7 @@ At time 1910<br>
 <br>
 Which ONE of the following completes the statement below?<br>
 <br>
+NOTE: Auto Rods Out has been disabled. Absolute value rod speed calculation is equivalent for auto rods in or out. 
 At 1910 Control Rods are stepping out at ___ steps per minute.
 </div>
 
