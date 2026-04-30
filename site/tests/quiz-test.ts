@@ -59,7 +59,8 @@ test('quiz page builds an account-gated quiz from imported questions', async ({ 
 
 test('two-part fill-in markers are highlighted in stems and answer choices', async ({ page }) => {
   await authenticateQuizUser(page);
-  await page.goto('quiz/');
+  // Seed 96 puts 2018 Q1 first under the default filters, which has exactly two blank markers in the stem and first choice.
+  await page.goto('quiz/?seed=96');
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
@@ -159,6 +160,101 @@ test('completed quiz review submits results for persistent progress tracking', a
   expect(submittedBodies[0].questions).toHaveLength(2);
   expect(submittedBodies[0].questions[0]).toMatchObject({ position: 1, selectedLabel: 'A' });
   expect(submittedBodies[0].questions[1]).toMatchObject({ position: 2, selectedLabel: 'B' });
+});
+
+test('seeded quiz selection is deterministic for same seed and filters', async ({ page }) => {
+  await authenticateQuizUser(page);
+
+  const captureSequence = async (seed: number): Promise<string[]> => {
+    await page.goto(`quiz/?seed=${seed}`);
+    await page.getByLabel('Exam year').selectOption('2018');
+    await page.getByLabel('Question count').fill('5');
+    await page.getByLabel('Mode').selectOption('blind');
+    await page.getByRole('button', { name: /Start quiz/i }).click();
+    const sequence: string[] = [];
+    for (let i = 0; i < 5; i++) {
+      sequence.push((await page.getByTestId('question-meta').innerText()).trim());
+      if (i < 4) await page.getByRole('button', { name: /Next question/i }).click();
+    }
+    return sequence;
+  };
+
+  const first = await captureSequence(12345);
+  const second = await captureSequence(12345);
+  expect(first).toEqual(second);
+  expect(first).toHaveLength(5);
+});
+
+test('different seeds produce different question orderings for the same filters', async ({ page }) => {
+  await authenticateQuizUser(page);
+
+  const captureFirstQuestionMeta = async (seed: number): Promise<string> => {
+    await page.goto(`quiz/?seed=${seed}`);
+    await page.getByLabel('Exam year').selectOption('2018');
+    await page.getByLabel('Question count').fill('1');
+    await page.getByLabel('Mode').selectOption('blind');
+    await page.getByRole('button', { name: /Start quiz/i }).click();
+    return (await page.getByTestId('question-meta').innerText()).trim();
+  };
+
+  const samples: string[] = [];
+  for (const seed of [1, 2, 3, 4, 5, 6]) {
+    samples.push(await captureFirstQuestionMeta(seed));
+  }
+  expect(new Set(samples).size).toBeGreaterThan(1);
+});
+
+test('submit-quiz-results includes the deterministic seed in filters config', async ({ page }) => {
+  await authenticateQuizUser(page);
+  const submittedBodies: any[] = [];
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    submittedBodies.push(route.request().postDataJSON());
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, quizSessionId: '11111111-1111-4111-8111-111111111111', attemptsInserted: 1 }),
+    });
+  });
+
+  await page.goto('quiz/?seed=987654');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await page.getByRole('button', { name: /^A\./ }).click();
+  await page.getByRole('button', { name: /Review results/i }).click();
+  await expect(page.getByTestId('quiz-review')).toBeVisible();
+  await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
+
+  expect(submittedBodies).toHaveLength(1);
+  expect(submittedBodies[0].filters.seed).toBe(987654);
+});
+
+test('quiz start without a seed override generates a numeric seed in submitted filters', async ({ page }) => {
+  await authenticateQuizUser(page);
+  const submittedBodies: any[] = [];
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    submittedBodies.push(route.request().postDataJSON());
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, quizSessionId: '22222222-2222-4222-8222-222222222222', attemptsInserted: 1 }),
+    });
+  });
+
+  await page.goto('quiz/');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await page.getByRole('button', { name: /^A\./ }).click();
+  await page.getByRole('button', { name: /Review results/i }).click();
+  await expect(page.getByTestId('quiz-review')).toBeVisible();
+  await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
+
+  expect(submittedBodies).toHaveLength(1);
+  expect(typeof submittedBodies[0].filters.seed).toBe('number');
+  expect(Number.isInteger(submittedBodies[0].filters.seed)).toBe(true);
 });
 
 test('blind mode withholds scoring until final review', async ({ page }) => {
