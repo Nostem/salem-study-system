@@ -230,6 +230,46 @@ test('submit-quiz-results includes the deterministic seed in filters config', as
   expect(submittedBodies[0].filters.seed).toBe(987654);
 });
 
+test('answer choices are seeded-shuffled while preserving original labels for scoring and explanations', async ({ page }) => {
+  await authenticateQuizUser(page);
+  const submittedBodies: any[] = [];
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    submittedBodies.push(route.request().postDataJSON());
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, quizSessionId: '33333333-3333-4333-8333-333333333333', attemptsInserted: 1 }),
+    });
+  });
+
+  await page.goto('quiz/?seed=96');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  const visibleLabels = await page.locator('#choice-list .quiz-choice-label').evaluateAll((nodes) =>
+    nodes.map((node) => node.textContent?.replace('.', '').trim())
+  );
+  expect(visibleLabels).toHaveLength(4);
+  expect([...visibleLabels].sort()).toEqual(['A', 'B', 'C', 'D']);
+  expect(visibleLabels).not.toEqual(['A', 'B', 'C', 'D']);
+
+  await page.locator('#choice-list .quiz-choice').first().click();
+  await page.getByRole('button', { name: /Review results/i }).click();
+  await expect(page.getByTestId('quiz-review')).toBeVisible();
+  await expect(page.getByTestId('quiz-review')).toContainText(`Selected: ${visibleLabels[0]}`);
+  await expect(page.getByTestId('quiz-review')).toContainText('Full explanation');
+  await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
+
+  expect(submittedBodies).toHaveLength(1);
+  expect(submittedBodies[0].questions[0]).toMatchObject({
+    position: 1,
+    selectedLabel: visibleLabels[0],
+    choiceOrder: visibleLabels,
+  });
+});
+
 test('quiz start without a seed override generates a numeric seed in submitted filters', async ({ page }) => {
   await authenticateQuizUser(page);
   const submittedBodies: any[] = [];

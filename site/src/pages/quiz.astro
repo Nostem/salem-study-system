@@ -212,6 +212,15 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       return arr;
     }
 
+    function withShuffledChoices(question, seed) {
+      const orderedChoices = Number.isFinite(seed) ? shuffleWithRng(question.choices, mulberry32(seed)) : question.choices.slice();
+      return {
+        ...question,
+        choices: orderedChoices,
+        choiceOrder: orderedChoices.map((choice) => choice.label),
+      };
+    }
+
     function isPracticeEligible(question) {
       if (question.quizEligible) return true;
       if (question.isRedacted) return false;
@@ -348,6 +357,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
             slug: question.slug,
             position: idx + 1,
             selectedLabel: state.answers.get(question.slug) || null,
+            choiceOrder: question.choiceOrder || question.choices.map((choice) => choice.label),
             timeMs: elapsedPerQuestion,
           })),
         });
@@ -387,7 +397,9 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       const filters = currentFilters();
       const seedOverride = parseSeedFromUrl();
       filters.seed = seedOverride !== null ? seedOverride : generateSeed();
-      state.questions = filteredQuestions(filters, true);
+      state.questions = filteredQuestions(filters, true).map((question, index) =>
+        withShuffledChoices(question, filters.seed + index + 1)
+      );
       state.index = 0;
       state.answers = new Map();
       state.mode = filters.mode;

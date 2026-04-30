@@ -4,6 +4,7 @@ type SubmittedQuestion = {
   slug?: string;
   position?: number;
   selectedLabel?: string | null;
+  choiceOrder?: unknown;
   timeMs?: number | null;
 };
 
@@ -43,6 +44,13 @@ function normalizeSelectedLabel(value: unknown): string | null {
   return /^[A-Z]$/.test(label) ? label : null;
 }
 
+function normalizeChoiceOrder(value: unknown): string[] | null {
+  if (!Array.isArray(value)) return null;
+  const labels = value.map(normalizeSelectedLabel).filter((label): label is string => label !== null);
+  if (labels.length === 0) return null;
+  return [...new Set(labels)];
+}
+
 function masteryState(attempts: number, correct: number, incorrect: number): 'new' | 'learning' | 'shaky' | 'mastered' {
   if (attempts <= 0) return 'new';
   if (attempts >= 2 && correct >= 2 && incorrect === 0) return 'mastered';
@@ -76,6 +84,7 @@ Deno.serve(async (req) => {
       slug: String(question.slug ?? '').trim(),
       position: Number.isInteger(question.position) && Number(question.position) > 0 ? Number(question.position) : index + 1,
       selectedLabel: normalizeSelectedLabel(question.selectedLabel),
+      choiceOrder: normalizeChoiceOrder(question.choiceOrder),
       timeMs: Number.isFinite(question.timeMs) && Number(question.timeMs) >= 0 ? Number(question.timeMs) : null,
     }))
     .filter((question) => question.slug.length > 0)
@@ -157,7 +166,7 @@ Deno.serve(async (req) => {
       quiz_session_id: session.id,
       question_id: question.questionId,
       position: question.position,
-      choice_order: null,
+      choice_order: question.choiceOrder,
     }))
   );
   if (sessionQuestionsError) return jsonResponse({ error: 'quiz_session_questions_insert_failed' }, 500);
