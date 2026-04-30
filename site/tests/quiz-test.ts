@@ -99,6 +99,8 @@ test('topic filter supports multiple wiki-formatted topic selections without dup
   const topicLabels = await page.getByTestId('topic-filter-list').locator('label span').allTextContents();
   expect(topicLabels.filter((label) => label === 'AFW')).toHaveLength(1);
   expect(topicLabels.filter((label) => label === 'CCW')).toHaveLength(1);
+  expect(topicLabels.filter((label) => label === 'Pressurizer & PRT')).toHaveLength(1);
+  expect(topicLabels.filter((label) => /Pressurizer And Prt/i.test(label))).toHaveLength(0);
   expect(topicLabels.filter((label) => label === 'TS 3/4.4 — Reactor Coolant System')).toHaveLength(1);
   expect(topicLabels.some((label) => /^AB\./.test(label) || /Abnormal/i.test(label))).toBe(false);
 

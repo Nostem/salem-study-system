@@ -377,6 +377,9 @@ class ExamQuestionImportTests(unittest.TestCase):
             4,
         )
 
+        topic_titles = {topic["slug"]: topic["title"] for topic in bundle["topics"]}
+        self.assertEqual(topic_titles["pressurizer-and-prt"], "Pressurizer & PRT")
+
     def test_build_wiki_slug_index_includes_slug_and_title_alias(self):
         slug_index = build_wiki_slug_index(ROOT)
 

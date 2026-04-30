@@ -29,6 +29,18 @@ def _load_json(path: Path) -> Dict[str, Any]:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def _slug_aliases(value: str) -> set[str]:
+    base = slugify(value)
+    aliases = {base}
+    if "&" in value:
+        aliases.add(slugify(value.replace("&", "and")))
+    if " and " in value.lower():
+        aliases.add(slugify(value.replace(" and ", " & ").replace(" And ", " & ").replace(" AND ", " & ")))
+    if "-and-" in base:
+        aliases.add(base.replace("-and-", "-"))
+    return {alias for alias in aliases if alias}
+
+
 def _wiki_title_index(root: Path) -> Dict[str, str]:
     titles: Dict[str, str] = {}
     for path in sorted((root / "wiki").rglob("*.md")):
@@ -40,10 +52,13 @@ def _wiki_title_index(root: Path) -> Dict[str, str]:
         title_text = str(title).strip()
         if not title_text:
             continue
-        titles[slugify(path.stem)] = title_text
-        titles[slugify(title_text)] = title_text
+        for key in _slug_aliases(path.stem):
+            titles[key] = title_text
+        for key in _slug_aliases(title_text):
+            titles[key] = title_text
         for alias in frontmatter.get("aliases") or []:
-            titles[slugify(alias)] = title_text
+            for key in _slug_aliases(str(alias)):
+                titles[key] = title_text
     return titles
 
 

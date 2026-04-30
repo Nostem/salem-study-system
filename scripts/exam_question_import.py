@@ -634,7 +634,10 @@ def audit_question_records(
 
 
 def _topic_title(slug: str) -> str:
-    return slug.replace("-", " ").title()
+    special_titles = {
+        "pressurizer-and-prt": "Pressurizer & PRT",
+    }
+    return special_titles.get(slug, slug.replace("-", " ").title())
 
 
 def _topic_type(slug: str) -> str:

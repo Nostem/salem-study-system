@@ -16,6 +16,7 @@ class StaticQuizBankBuilderTests(unittest.TestCase):
         self.assertEqual(bank["summary"]["question_count"], 499)
         topic_titles = {topic["slug"]: topic["title"] for topic in bank["topics"]}
         self.assertEqual(topic_titles["pressurizer-level-and-press-control"], "Pressurizer Level & Press Control")
+        self.assertEqual(topic_titles["pressurizer-and-prt"], "Pressurizer & PRT")
         self.assertEqual(topic_titles["rps-ssps"], "RPS/SSPS")
 
         q82 = next(question for question in bank["questions"] if question["slug"] == "q82-pzr-level-channel-fail-high-ts")

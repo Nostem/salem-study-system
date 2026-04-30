@@ -22245,7 +22245,7 @@
         },
         {
           "slug": "steam-generator-and-blowdown",
-          "title": "Steam Generator And Blowdown",
+          "title": "Steam Generator & Blowdown",
           "relationshipType": "tests",
           "topicType": "system",
           "wikiSlug": "steam-generator-and-blowdown"
@@ -22791,7 +22791,7 @@
       "topics": [
         {
           "slug": "pressurizer-and-prt",
-          "title": "Pressurizer And Prt",
+          "title": "Pressurizer & PRT",
           "relationshipType": "tests",
           "topicType": "system",
           "wikiSlug": "pressurizer-and-prt"
@@ -23477,7 +23477,7 @@
       "topics": [
         {
           "slug": "feed-and-condensate",
-          "title": "Feed And Condensate",
+          "title": "Feed & Condensate",
           "relationshipType": "tests",
           "topicType": "system",
           "wikiSlug": "feed-and-condensate"
@@ -23540,7 +23540,7 @@
       "topics": [
         {
           "slug": "feed-and-condensate",
-          "title": "Feed And Condensate",
+          "title": "Feed & Condensate",
           "relationshipType": "tests",
           "topicType": "system",
           "wikiSlug": "feed-and-condensate"
@@ -24812,7 +24812,7 @@
       "topics": [
         {
           "slug": "feed-and-condensate",
-          "title": "Feed And Condensate",
+          "title": "Feed & Condensate",
           "relationshipType": "tests",
           "topicType": "system",
           "wikiSlug": "feed-and-condensate"
@@ -27284,7 +27284,7 @@
         },
         {
           "slug": "pressurizer-and-prt",
-          "title": "Pressurizer And Prt",
+          "title": "Pressurizer & PRT",
           "relationshipType": "tests",
           "topicType": "system",
           "wikiSlug": "pressurizer-and-prt"
@@ -33554,16 +33554,16 @@
       "wiki_slug": "fhv"
     },
     {
+      "slug": "feed-and-condensate",
+      "title": "Feed & Condensate",
+      "topic_type": "system",
+      "wiki_slug": "feed-and-condensate"
+    },
+    {
       "slug": "feedwater-and-condensate",
       "title": "Feed & Condensate",
       "topic_type": "system",
       "wiki_slug": "feedwater-and-condensate"
-    },
-    {
-      "slug": "feed-and-condensate",
-      "title": "Feed And Condensate",
-      "topic_type": "system",
-      "wiki_slug": "feed-and-condensate"
     },
     {
       "slug": "fire-protection",
@@ -33603,7 +33603,7 @@
     },
     {
       "slug": "pressurizer-and-prt",
-      "title": "Pressurizer And Prt",
+      "title": "Pressurizer & PRT",
       "topic_type": "system",
       "wiki_slug": "pressurizer-and-prt"
     },
@@ -33704,16 +33704,16 @@
       "wiki_slug": "steam-dumps"
     },
     {
+      "slug": "steam-generator-and-blowdown",
+      "title": "Steam Generator & Blowdown",
+      "topic_type": "system",
+      "wiki_slug": "steam-generator-and-blowdown"
+    },
+    {
       "slug": "steam-generators",
       "title": "Steam Generator & Blowdown",
       "topic_type": "system",
       "wiki_slug": "steam-generators"
-    },
-    {
-      "slug": "steam-generator-and-blowdown",
-      "title": "Steam Generator And Blowdown",
-      "topic_type": "system",
-      "wiki_slug": "steam-generator-and-blowdown"
     },
     {
       "slug": "ts-2-0-safety-limits",
