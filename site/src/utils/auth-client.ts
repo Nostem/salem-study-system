@@ -53,6 +53,7 @@ export type SubmitQuizResultsPayload = {
   title?: string;
   quizType?: 'custom' | 'topic' | 'missed' | 'weak_area' | 'exam_sim' | 'global_hard';
   feedbackMode: 'immediate' | 'blind';
+  completionMode?: 'completed' | 'early';
   filters: Record<string, unknown>;
   questions: SubmitQuizResultsQuestion[];
 };

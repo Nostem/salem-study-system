@@ -162,6 +162,66 @@ test('completed quiz review submits results for persistent progress tracking', a
   expect(submittedBodies[0].questions[1]).toMatchObject({ position: 2, selectedLabel: 'B' });
 });
 
+test('unfinished blind quiz can be resumed after reload with answers and position restored', async ({ page }) => {
+  await authenticateQuizUser(page);
+  await page.goto('quiz/?seed=96');
+
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('3');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await page.getByRole('button', { name: /^A\./ }).click();
+  await page.getByRole('button', { name: /Next question/i }).click();
+  await expect(page.getByTestId('question-position')).toContainText('Question 2 of 3');
+
+  await page.reload();
+
+  await expect(page.getByTestId('quiz-draft-resume')).toBeVisible();
+  await expect(page.getByTestId('quiz-draft-resume')).toContainText('3 questions · 1 answered');
+  await page.getByRole('button', { name: /Resume unfinished quiz/i }).click();
+
+  await expect(page.getByTestId('quiz-session')).toBeVisible();
+  await expect(page.getByTestId('question-position')).toContainText('Question 2 of 3');
+  await page.getByRole('button', { name: /Previous/i }).click();
+  await expect(page.locator('#choice-list .quiz-choice-selected')).toContainText(/^A\./);
+});
+
+test('blind quiz finish early scores only answered questions and marks unanswered in review', async ({ page }) => {
+  await authenticateQuizUser(page);
+  const submittedBodies: any[] = [];
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    submittedBodies.push(route.request().postDataJSON());
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, quizSessionId: '22222222-2222-4222-8222-222222222222', attemptsInserted: 1, score: 1 }),
+    });
+  });
+  page.once('dialog', async (dialog) => {
+    expect(dialog.message()).toContain('2 unanswered questions');
+    await dialog.accept();
+  });
+
+  await page.goto('quiz/?seed=96');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('3');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await page.getByRole('button', { name: /^D\./ }).click();
+  await page.getByRole('button', { name: /Finish early/i }).click();
+
+  await expect(page.getByTestId('quiz-review')).toBeVisible();
+  await expect(page.locator('#review-score')).toContainText('Score: 1/1');
+  await expect(page.locator('#review-score')).toContainText('Answered: 1/3');
+  await expect(page.getByTestId('quiz-review')).toContainText('Selected: No answer');
+  await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
+
+  expect(submittedBodies).toHaveLength(1);
+  expect(submittedBodies[0].completionMode).toBe('early');
+  expect(submittedBodies[0].questions).toHaveLength(3);
+  expect(submittedBodies[0].questions.filter((question: any) => question.selectedLabel)).toHaveLength(1);
+});
+
 test('seeded quiz selection is deterministic for same seed and filters', async ({ page }) => {
   await authenticateQuizUser(page);
 

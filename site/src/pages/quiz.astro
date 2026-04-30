@@ -106,6 +106,16 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         </p>
       </section>
 
+      <section id="quiz-draft-resume" data-testid="quiz-draft-resume" class="hidden bg-bg-card border border-accent-amber rounded-lg p-5 lg:col-start-2">
+        <div class="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-amber mb-2">Unfinished quiz</div>
+        <h2 class="text-2xl text-text-primary font-semibold mb-2">Resume your unfinished quiz?</h2>
+        <p id="quiz-draft-summary" class="text-sm text-text-body mb-4"></p>
+        <div class="flex flex-wrap gap-3">
+          <button id="resume-draft" type="button" class="quiz-primary">Resume unfinished quiz</button>
+          <button id="discard-draft" type="button" class="quiz-secondary">Discard saved quiz</button>
+        </div>
+      </section>
+
       <section id="quiz-session" data-testid="quiz-session" class="hidden bg-bg-card border border-border rounded-lg p-5">
         <div class="flex flex-col gap-3 border-b border-border pb-4 mb-4 md:flex-row md:items-center md:justify-between">
           <div>
@@ -122,6 +132,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
 
         <div class="flex gap-3 justify-between">
           <button id="prev-question" type="button" class="quiz-secondary">Previous</button>
+          <button id="finish-early" type="button" class="quiz-secondary hidden">Finish early</button>
           <button id="next-question" type="button" class="quiz-primary">Next question</button>
           <button id="review-results" type="button" class="quiz-primary hidden">Review results</button>
         </div>
@@ -170,10 +181,13 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
     const bank = JSON.parse(document.getElementById('quiz-bank-json').textContent);
     const form = document.getElementById('quiz-builder');
     const emptyState = document.getElementById('quiz-empty-state');
+    const draftResumeEl = document.getElementById('quiz-draft-resume');
+    const draftSummary = document.getElementById('quiz-draft-summary');
     const sessionEl = document.getElementById('quiz-session');
     const reviewEl = document.getElementById('quiz-review');
     const filterSummary = document.getElementById('filter-summary');
-    const state = { questions: [], index: 0, answers: new Map(), mode: 'feedback', filters: {}, startedAt: Date.now(), progressSaved: false };
+    const draftStorageKey = 'salem-study-quiz-draft-v1';
+    const state = { questions: [], index: 0, answers: new Map(), mode: 'feedback', filters: {}, startedAt: Date.now(), progressSaved: false, completionMode: 'completed' };
 
     function parseSeedFromUrl() {
       try {
@@ -322,6 +336,72 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       return question.acceptedAnswerLabels.includes(originalLabelForDisplay(question, selectedDisplayLabel));
     }
 
+    function answeredQuestions() {
+      return state.questions.filter((question) => state.answers.has(question.slug));
+    }
+
+    function saveDraft() {
+      if (!state.questions.length || state.progressSaved) return;
+      try {
+        window.localStorage.setItem(draftStorageKey, JSON.stringify({
+          version: 1,
+          updatedAt: new Date().toISOString(),
+          questions: state.questions,
+          index: state.index,
+          answers: Object.fromEntries(state.answers.entries()),
+          mode: state.mode,
+          filters: state.filters,
+          startedAt: state.startedAt,
+        }));
+      } catch (error) {
+        console.warn('Could not save quiz draft', error);
+      }
+    }
+
+    function clearDraft() {
+      try {
+        window.localStorage.removeItem(draftStorageKey);
+      } catch {}
+      draftResumeEl.classList.add('hidden');
+    }
+
+    function getSavedDraft() {
+      try {
+        const raw = window.localStorage.getItem(draftStorageKey);
+        if (!raw) return null;
+        const draft = JSON.parse(raw);
+        if (!draft || draft.version !== 1 || !Array.isArray(draft.questions) || draft.questions.length === 0) return null;
+        return draft;
+      } catch {
+        return null;
+      }
+    }
+
+    function showDraftResumeIfAvailable() {
+      const draft = getSavedDraft();
+      if (!draft) return;
+      const answeredCount = Object.keys(draft.answers || {}).length;
+      draftSummary.textContent = `${draft.questions.length} questions · ${answeredCount} answered · saved ${new Date(draft.updatedAt || Date.now()).toLocaleString()}`;
+      draftResumeEl.classList.remove('hidden');
+      emptyState.classList.add('hidden');
+    }
+
+    function restoreDraft(draft) {
+      state.questions = draft.questions;
+      state.index = Math.max(0, Math.min(Number(draft.index || 0), state.questions.length - 1));
+      state.answers = new Map(Object.entries(draft.answers || {}));
+      state.mode = draft.mode === 'blind' ? 'blind' : 'feedback';
+      state.filters = draft.filters || {};
+      state.startedAt = Number(draft.startedAt || Date.now());
+      state.progressSaved = false;
+      state.completionMode = 'completed';
+      emptyState.classList.add('hidden');
+      draftResumeEl.classList.add('hidden');
+      reviewEl.classList.add('hidden');
+      sessionEl.classList.remove('hidden');
+      renderQuestion();
+    }
+
     function renderQuestion() {
       const question = state.questions[state.index];
       if (!question) return;
@@ -350,13 +430,16 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       });
 
       document.getElementById('prev-question').disabled = state.index === 0;
+      document.getElementById('finish-early').classList.toggle('hidden', state.mode !== 'blind' || answeredQuestions().length === 0);
       document.getElementById('next-question').classList.toggle('hidden', state.index === state.questions.length - 1);
       document.getElementById('review-results').classList.toggle('hidden', state.index !== state.questions.length - 1);
+      saveDraft();
       renderFeedback(question);
     }
 
     function selectAnswer(question, label) {
       state.answers.set(question.slug, label);
+      saveDraft();
       renderQuestion();
     }
 
@@ -387,7 +470,8 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
           title: 'Salem practice quiz',
           quizType: 'custom',
           feedbackMode: state.mode === 'blind' ? 'blind' : 'immediate',
-          filters: state.filters,
+          completionMode: state.completionMode,
+          filters: { ...state.filters, completionMode: state.completionMode },
           questions: state.questions.map((question, idx) => {
             const selectedLabel = state.answers.get(question.slug) || null;
             return {
@@ -401,6 +485,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
           }),
         });
         state.progressSaved = true;
+        clearDraft();
         status.textContent = `Progress saved — ${result.attemptsInserted ?? state.questions.length} attempts recorded.`;
         status.className = 'text-xs text-accent-green mb-4';
       } catch (error) {
@@ -411,23 +496,38 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
     }
 
     function showReview() {
-      const correctCount = state.questions.filter((question) => isSelectedAnswerCorrect(question)).length;
+      const answered = answeredQuestions();
+      const scoringQuestions = state.completionMode === 'early' ? answered : state.questions;
+      const correctCount = scoringQuestions.filter((question) => isSelectedAnswerCorrect(question)).length;
+      const scoreDenominator = Math.max(1, scoringQuestions.length);
       sessionEl.classList.add('hidden');
       reviewEl.classList.remove('hidden');
-      document.getElementById('review-score').textContent = `Score: ${correctCount}/${state.questions.length}`;
+      const scoreText = `Score: ${correctCount}/${scoreDenominator}`;
+      document.getElementById('review-score').textContent = state.completionMode === 'early'
+        ? `${scoreText} · Answered: ${answered.length}/${state.questions.length}`
+        : scoreText;
       document.getElementById('progress-save-status').textContent = 'Saving progress…';
       persistCompletedQuiz(correctCount);
       const list = document.getElementById('review-list');
       list.innerHTML = '';
       state.questions.forEach((question, idx) => {
         const selected = state.answers.get(question.slug) || 'No answer';
-        const correct = isSelectedAnswerCorrect(question);
+        const answeredThisQuestion = state.answers.has(question.slug);
+        const correct = answeredThisQuestion && isSelectedAnswerCorrect(question);
         const accepted = acceptedDisplayLabels(question).join(', ');
         const item = document.createElement('div');
         item.className = 'border border-border rounded-md p-4';
-        item.innerHTML = `<div class="text-text-primary font-medium">${idx + 1}. ${questionDisplayLabel(question)}</div><div class="text-sm text-text-muted mt-1 mb-3">Selected: ${selected} · Accepted: ${accepted} · ${correct ? 'Correct' : 'Incorrect'}</div><details data-testid="review-explanation" class="quiz-review-details"><summary>Show full explanation and distractor notes</summary>${renderExplanation(question)}</details>`;
+        item.innerHTML = `<div class="text-text-primary font-medium">${idx + 1}. ${questionDisplayLabel(question)}</div><div class="text-sm text-text-muted mt-1 mb-3">Selected: ${selected} · Accepted: ${accepted} · ${answeredThisQuestion ? (correct ? 'Correct' : 'Incorrect') : 'Unanswered'}</div><details data-testid="review-explanation" class="quiz-review-details"><summary>Show full explanation and distractor notes</summary>${renderExplanation(question)}</details>`;
         list.appendChild(item);
       });
+    }
+
+    function finishEarly() {
+      const unansweredCount = state.questions.length - answeredQuestions().length;
+      const confirmed = unansweredCount <= 0 || window.confirm(`You have ${unansweredCount} unanswered ${unansweredCount === 1 ? 'question' : 'questions'}. Finish and review now?`);
+      if (!confirmed) return;
+      state.completionMode = 'early';
+      showReview();
     }
 
     form.addEventListener('change', updateSummary);
@@ -446,26 +546,46 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       state.filters = filters;
       state.startedAt = Date.now();
       state.progressSaved = false;
+      state.completionMode = 'completed';
       emptyState.classList.add('hidden');
+      draftResumeEl.classList.add('hidden');
       reviewEl.classList.add('hidden');
       sessionEl.classList.remove('hidden');
+      saveDraft();
       renderQuestion();
     });
 
     document.getElementById('prev-question').addEventListener('click', () => {
       state.index = Math.max(0, state.index - 1);
+      saveDraft();
       renderQuestion();
     });
     document.getElementById('next-question').addEventListener('click', () => {
       state.index = Math.min(state.questions.length - 1, state.index + 1);
+      saveDraft();
       renderQuestion();
     });
-    document.getElementById('review-results').addEventListener('click', showReview);
+    document.getElementById('finish-early').addEventListener('click', finishEarly);
+    document.getElementById('review-results').addEventListener('click', () => {
+      state.completionMode = 'completed';
+      showReview();
+    });
+    document.getElementById('resume-draft').addEventListener('click', () => {
+      const draft = getSavedDraft();
+      if (draft) restoreDraft(draft);
+    });
+    document.getElementById('discard-draft').addEventListener('click', () => {
+      clearDraft();
+      emptyState.classList.remove('hidden');
+      updateSummary();
+    });
     document.getElementById('new-quiz').addEventListener('click', () => {
+      clearDraft();
       reviewEl.classList.add('hidden');
       emptyState.classList.remove('hidden');
       updateSummary();
     });
     updateSummary();
+    showDraftResumeIfAvailable();
   </script>
 </BaseLayout>

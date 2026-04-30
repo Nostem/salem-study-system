@@ -13,6 +13,7 @@ type SubmitQuizBody = {
   title?: string;
   quizType?: string;
   feedbackMode?: string;
+  completionMode?: string;
   filters?: Record<string, unknown>;
   questions?: SubmittedQuestion[];
 };
@@ -32,6 +33,10 @@ function jsonResponse(body: Record<string, unknown>, status = 200): Response {
 
 function normalizeFeedbackMode(value: unknown): 'immediate' | 'blind' {
   return value === 'blind' ? 'blind' : 'immediate';
+}
+
+function normalizeCompletionMode(value: unknown): 'completed' | 'early' {
+  return value === 'early' ? 'early' : 'completed';
 }
 
 function normalizeQuizType(value: unknown): 'custom' | 'topic' | 'missed' | 'weak_area' | 'exam_sim' | 'global_hard' {
@@ -147,6 +152,7 @@ Deno.serve(async (req) => {
   }
 
   const feedbackMode = normalizeFeedbackMode(body.feedbackMode);
+  const completionMode = normalizeCompletionMode(body.completionMode);
   const quizType = normalizeQuizType(body.quizType);
   const now = new Date().toISOString();
 
@@ -163,8 +169,10 @@ Deno.serve(async (req) => {
     };
   });
 
-  const correctCount = resolvedQuestions.filter((question) => question.is_correct).length;
-  const score = correctCount / resolvedQuestions.length;
+  const answeredQuestions = resolvedQuestions.filter((question) => question.selectedChoiceId !== null);
+  const scoringQuestions = completionMode === 'early' ? answeredQuestions : resolvedQuestions;
+  const correctCount = scoringQuestions.filter((question) => question.is_correct).length;
+  const score = scoringQuestions.length > 0 ? correctCount / scoringQuestions.length : 0;
 
   const { data: session, error: sessionError } = await admin
     .from('quiz_sessions')
@@ -173,7 +181,7 @@ Deno.serve(async (req) => {
       title: body.title ?? 'Salem practice quiz',
       quiz_type: quizType,
       feedback_mode: feedbackMode,
-      config: body.filters ?? {},
+      config: { ...(body.filters ?? {}), completionMode },
       completed_at: now,
       score,
     })
@@ -191,21 +199,26 @@ Deno.serve(async (req) => {
   );
   if (sessionQuestionsError) return jsonResponse({ error: 'quiz_session_questions_insert_failed' }, 500);
 
-  const { data: attempts, error: attemptsError } = await admin
-    .from('question_attempts')
-    .insert(
-      resolvedQuestions.map((question) => ({
-        user_id: userId,
-        quiz_session_id: session.id,
-        question_id: question.questionId,
-        selected_choice_id: question.selectedChoiceId,
-        is_correct: question.is_correct,
-        time_ms: question.timeMs,
-        submitted_at: now,
-      }))
-    )
-    .select('id, question_id, is_correct');
-  if (attemptsError) return jsonResponse({ error: 'question_attempts_insert_failed' }, 500);
+  const attemptSourceQuestions = completionMode === 'early' ? answeredQuestions : resolvedQuestions;
+  const attemptRows = attemptSourceQuestions.map((question) => ({
+    user_id: userId,
+    quiz_session_id: session.id,
+    question_id: question.questionId,
+    selected_choice_id: question.selectedChoiceId,
+    is_correct: question.is_correct,
+    time_ms: question.timeMs,
+    submitted_at: now,
+  }));
+
+  let attempts: { id: string; question_id: string; is_correct: boolean }[] = [];
+  if (attemptRows.length > 0) {
+    const { data: insertedAttempts, error: attemptsError } = await admin
+      .from('question_attempts')
+      .insert(attemptRows)
+      .select('id, question_id, is_correct');
+    if (attemptsError) return jsonResponse({ error: 'question_attempts_insert_failed' }, 500);
+    attempts = insertedAttempts ?? [];
+  }
 
   const { data: existingStates, error: stateLookupError } = await admin
     .from('user_question_state')
