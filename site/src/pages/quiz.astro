@@ -129,7 +129,8 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
 
       <section id="quiz-review" data-testid="quiz-review" class="hidden bg-bg-card border border-border rounded-lg p-5 lg:col-start-2">
         <div class="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-green mb-2">Quiz review</div>
-        <h2 id="review-score" class="text-3xl text-text-primary font-semibold mb-4"></h2>
+        <h2 id="review-score" class="text-3xl text-text-primary font-semibold mb-2"></h2>
+        <p id="progress-save-status" data-testid="progress-save-status" class="text-xs text-text-muted mb-4">Saving progress…</p>
         <div id="review-list" class="grid gap-3"></div>
         <button id="new-quiz" type="button" class="quiz-secondary mt-5">Build another quiz</button>
       </section>
@@ -163,14 +164,16 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
     showQuizWhenAuthenticated();
   </script>
 
-  <script is:inline>
+  <script>
+    import { submitQuizResults } from '../utils/auth-client';
+
     const bank = JSON.parse(document.getElementById('quiz-bank-json').textContent);
     const form = document.getElementById('quiz-builder');
     const emptyState = document.getElementById('quiz-empty-state');
     const sessionEl = document.getElementById('quiz-session');
     const reviewEl = document.getElementById('quiz-review');
     const filterSummary = document.getElementById('filter-summary');
-    const state = { questions: [], index: 0, answers: new Map(), mode: 'feedback' };
+    const state = { questions: [], index: 0, answers: new Map(), mode: 'feedback', filters: {}, startedAt: Date.now(), progressSaved: false };
 
     function isPracticeEligible(question) {
       if (question.quizEligible) return true;
@@ -291,11 +294,41 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       panel.innerHTML = `<div class="font-semibold ${correct ? 'text-accent-green' : 'text-red-300'}">${correct ? 'Correct' : 'Incorrect'}</div><div class="text-sm text-text-body mt-1 mb-4">Accepted answer: ${question.acceptedAnswerLabels.join(', ')}</div>${renderExplanation(question)}`;
     }
 
+    async function persistCompletedQuiz(correctCount) {
+      const status = document.getElementById('progress-save-status');
+      if (state.progressSaved) return;
+      status.textContent = 'Saving progress…';
+      try {
+        const elapsedPerQuestion = Math.max(0, Math.round((Date.now() - state.startedAt) / Math.max(1, state.questions.length)));
+        const result = await submitQuizResults({
+          title: 'Salem practice quiz',
+          quizType: 'custom',
+          feedbackMode: state.mode === 'blind' ? 'blind' : 'immediate',
+          filters: state.filters,
+          questions: state.questions.map((question, idx) => ({
+            slug: question.slug,
+            position: idx + 1,
+            selectedLabel: state.answers.get(question.slug) || null,
+            timeMs: elapsedPerQuestion,
+          })),
+        });
+        state.progressSaved = true;
+        status.textContent = `Progress saved — ${result.attemptsInserted ?? state.questions.length} attempts recorded.`;
+        status.className = 'text-xs text-accent-green mb-4';
+      } catch (error) {
+        console.error('Failed to save quiz progress', error);
+        status.textContent = 'Progress could not be saved. Your local review is shown, but this attempt may not appear in My Progress yet.';
+        status.className = 'text-xs text-accent-amber mb-4';
+      }
+    }
+
     function showReview() {
       const correctCount = state.questions.filter((question) => question.acceptedAnswerLabels.includes(state.answers.get(question.slug))).length;
       sessionEl.classList.add('hidden');
       reviewEl.classList.remove('hidden');
       document.getElementById('review-score').textContent = `Score: ${correctCount}/${state.questions.length}`;
+      document.getElementById('progress-save-status').textContent = 'Saving progress…';
+      persistCompletedQuiz(correctCount);
       const list = document.getElementById('review-list');
       list.innerHTML = '';
       state.questions.forEach((question, idx) => {
@@ -317,6 +350,9 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       state.index = 0;
       state.answers = new Map();
       state.mode = filters.mode;
+      state.filters = filters;
+      state.startedAt = Date.now();
+      state.progressSaved = false;
       emptyState.classList.add('hidden');
       reviewEl.classList.add('hidden');
       sessionEl.classList.remove('hidden');

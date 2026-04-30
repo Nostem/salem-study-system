@@ -130,6 +130,37 @@ test('feedback mode shows immediate right or wrong result after selecting an ans
   await expect(page.getByRole('button', { name: /Review results/i })).toBeVisible();
 });
 
+test('completed quiz review submits results for persistent progress tracking', async ({ page }) => {
+  await authenticateQuizUser(page);
+  const submittedBodies: any[] = [];
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    submittedBodies.push(route.request().postDataJSON());
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, quizSessionId: '11111111-1111-4111-8111-111111111111', attemptsInserted: 2 }),
+    });
+  });
+
+  await page.goto('quiz/');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('2');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await page.getByRole('button', { name: /^A\./ }).click();
+  await page.getByRole('button', { name: /Next question/i }).click();
+  await page.getByRole('button', { name: /^B\./ }).click();
+  await page.getByRole('button', { name: /Review results/i }).click();
+
+  await expect(page.getByTestId('quiz-review')).toBeVisible();
+  await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
+  expect(submittedBodies).toHaveLength(1);
+  expect(submittedBodies[0].feedbackMode).toBe('blind');
+  expect(submittedBodies[0].questions).toHaveLength(2);
+  expect(submittedBodies[0].questions[0]).toMatchObject({ position: 1, selectedLabel: 'A' });
+  expect(submittedBodies[0].questions[1]).toMatchObject({ position: 2, selectedLabel: 'B' });
+});
+
 test('blind mode withholds scoring until final review', async ({ page }) => {
   await authenticateQuizUser(page);
   await page.goto('quiz/');

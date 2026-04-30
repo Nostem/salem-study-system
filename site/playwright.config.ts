@@ -8,9 +8,13 @@ export default defineConfig({
     baseURL: 'http://localhost:4321/salem-study-system/',
   },
   webServer: {
-    command: 'npx astro preview --port 4321',
+    command: 'npm run build >/tmp/salem-playwright-build.log && npx astro preview --port 4321',
     port: 4321,
     reuseExistingServer: false,
-    timeout: 10000,
+    timeout: 90000,
+    env: {
+      PUBLIC_SUPABASE_URL: 'https://local-test.supabase.co',
+      PUBLIC_SUPABASE_ANON_KEY: 'playwright-anon-key',
+    },
   },
 });

@@ -25,6 +25,29 @@ export type UsernameLoginResponse = {
   };
 };
 
+export type SubmitQuizResultsQuestion = {
+  slug: string;
+  position: number;
+  selectedLabel?: string | null;
+  timeMs?: number | null;
+};
+
+export type SubmitQuizResultsPayload = {
+  title?: string;
+  quizType?: 'custom' | 'topic' | 'missed' | 'weak_area' | 'exam_sim' | 'global_hard';
+  feedbackMode: 'immediate' | 'blind';
+  filters: Record<string, unknown>;
+  questions: SubmitQuizResultsQuestion[];
+};
+
+export type SubmitQuizResultsResponse = {
+  ok: boolean;
+  quizSessionId: string;
+  questionsSnapshotted?: number;
+  attemptsInserted: number;
+  score: number;
+};
+
 const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
 
@@ -45,7 +68,7 @@ function functionUrl(functionName: string): string {
   return `${supabaseUrl.replace(/\/$/, '')}/functions/v1/${functionName}`;
 }
 
-async function postFunction<T>(functionName: string, body: unknown): Promise<T> {
+async function postFunction<T>(functionName: string, body: unknown, accessToken?: string): Promise<T> {
   if (!hasSupabaseConfig()) {
     throw new Error('Supabase is not configured for this build.');
   }
@@ -55,7 +78,7 @@ async function postFunction<T>(functionName: string, body: unknown): Promise<T> 
     headers: {
       'Content-Type': 'application/json',
       apikey: supabaseAnonKey,
-      Authorization: `Bearer ${supabaseAnonKey}`,
+      Authorization: `Bearer ${accessToken ?? supabaseAnonKey}`,
     },
     body: JSON.stringify(body),
   });
@@ -86,6 +109,14 @@ export async function getCurrentSession(): Promise<Session | null> {
   const client = getSupabaseClient();
   const { data } = await client.auth.getSession();
   return data.session;
+}
+
+export async function submitQuizResults(payload: SubmitQuizResultsPayload): Promise<SubmitQuizResultsResponse> {
+  const session = await getCurrentSession();
+  if (!session?.access_token) {
+    throw new Error('not_authenticated');
+  }
+  return postFunction<SubmitQuizResultsResponse>('submit-quiz-results', payload, session.access_token);
 }
 
 export async function logout(): Promise<void> {

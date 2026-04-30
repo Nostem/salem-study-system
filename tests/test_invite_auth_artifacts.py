@@ -37,6 +37,25 @@ class InviteAuthArtifactTests(unittest.TestCase):
         self.assertIn("signInWithPassword", login)
         self.assertIn("access_token", login)
 
+    def test_submit_quiz_results_function_persists_sessions_attempts_and_user_state(self):
+        function_path = ROOT / "supabase/functions/submit-quiz-results/index.ts"
+        client_path = ROOT / "site/src/utils/auth-client.ts"
+
+        self.assertTrue(function_path.exists())
+        function_source = function_path.read_text()
+        client_source = client_path.read_text()
+
+        self.assertIn("SUPABASE_SERVICE_ROLE_KEY", function_source)
+        self.assertIn("auth.getUser", function_source)
+        self.assertIn("quiz_sessions", function_source)
+        self.assertIn("quiz_session_questions", function_source)
+        self.assertIn("question_attempts", function_source)
+        self.assertIn("user_question_state", function_source)
+        self.assertIn("selectedLabel", function_source)
+        self.assertIn("is_correct", function_source)
+        self.assertNotIn("service_role", client_source.lower())
+        self.assertIn("submitQuizResults", client_source)
+
 
 if __name__ == "__main__":
     unittest.main()
