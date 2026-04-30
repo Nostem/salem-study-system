@@ -29,7 +29,8 @@ export type SubmitQuizResultsQuestion = {
   slug: string;
   position: number;
   selectedLabel?: string | null;
-  choiceOrder?: string[] | null;
+  selectedOriginalLabel?: string | null;
+  choiceOrder?: Record<string, string> | string[] | null;
   timeMs?: number | null;
 };
 

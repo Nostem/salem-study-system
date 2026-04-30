@@ -230,7 +230,7 @@ test('submit-quiz-results includes the deterministic seed in filters config', as
   expect(submittedBodies[0].filters.seed).toBe(987654);
 });
 
-test('answer choices are seeded-shuffled while preserving original labels for scoring and explanations', async ({ page }) => {
+test('answer choices are seeded-shuffled but displayed as A-D with explanations and grading mapped to original choices', async ({ page }) => {
   await authenticateQuizUser(page);
   const submittedBodies: any[] = [];
   await page.route('**/functions/v1/submit-quiz-results', async (route) => {
@@ -251,22 +251,22 @@ test('answer choices are seeded-shuffled while preserving original labels for sc
   const visibleLabels = await page.locator('#choice-list .quiz-choice-label').evaluateAll((nodes) =>
     nodes.map((node) => node.textContent?.replace('.', '').trim())
   );
-  expect(visibleLabels).toHaveLength(4);
-  expect([...visibleLabels].sort()).toEqual(['A', 'B', 'C', 'D']);
-  expect(visibleLabels).not.toEqual(['A', 'B', 'C', 'D']);
+  expect(visibleLabels).toEqual(['A', 'B', 'C', 'D']);
+  await expect(page.locator('#choice-list .quiz-choice').first()).toContainText('(1) at power — (2) is');
 
   await page.locator('#choice-list .quiz-choice').first().click();
   await page.getByRole('button', { name: /Review results/i }).click();
   await expect(page.getByTestId('quiz-review')).toBeVisible();
-  await expect(page.getByTestId('quiz-review')).toContainText(`Selected: ${visibleLabels[0]}`);
+  await expect(page.getByTestId('quiz-review')).toContainText('Selected: A · Accepted: D · Incorrect');
   await expect(page.getByTestId('quiz-review')).toContainText('Full explanation');
   await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
 
   expect(submittedBodies).toHaveLength(1);
   expect(submittedBodies[0].questions[0]).toMatchObject({
     position: 1,
-    selectedLabel: visibleLabels[0],
-    choiceOrder: visibleLabels,
+    selectedLabel: 'A',
+    selectedOriginalLabel: 'D',
+    choiceOrder: { A: 'D', B: 'B', C: 'A', D: 'C' },
   });
 });
 

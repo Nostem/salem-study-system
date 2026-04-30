@@ -212,12 +212,24 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       return arr;
     }
 
+    const displayChoiceLabels = ['A', 'B', 'C', 'D'];
+
     function withShuffledChoices(question, seed) {
       const orderedChoices = Number.isFinite(seed) ? shuffleWithRng(question.choices, mulberry32(seed)) : question.choices.slice();
+      const choiceOrder = {};
+      const displayChoices = orderedChoices.map((choice, index) => {
+        const displayLabel = displayChoiceLabels[index] || String.fromCharCode(65 + index);
+        choiceOrder[displayLabel] = choice.label;
+        return {
+          ...choice,
+          originalLabel: choice.label,
+          displayLabel,
+        };
+      });
       return {
         ...question,
-        choices: orderedChoices,
-        choiceOrder: orderedChoices.map((choice) => choice.label),
+        choices: displayChoices,
+        choiceOrder,
       };
     }
 
@@ -291,6 +303,25 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       return `${question.examYear} Q${question.questionNumber}`;
     }
 
+    function originalLabelForDisplay(question, displayLabel) {
+      return question.choiceOrder?.[displayLabel] || displayLabel;
+    }
+
+    function displayLabelForOriginal(question, originalLabel) {
+      const match = Object.entries(question.choiceOrder || {}).find(([, sourceLabel]) => sourceLabel === originalLabel);
+      return match?.[0] || originalLabel;
+    }
+
+    function acceptedDisplayLabels(question) {
+      return question.acceptedAnswerLabels.map((label) => displayLabelForOriginal(question, label));
+    }
+
+    function isSelectedAnswerCorrect(question) {
+      const selectedDisplayLabel = state.answers.get(question.slug);
+      if (!selectedDisplayLabel) return false;
+      return question.acceptedAnswerLabels.includes(originalLabelForDisplay(question, selectedDisplayLabel));
+    }
+
     function renderQuestion() {
       const question = state.questions[state.index];
       if (!question) return;
@@ -312,9 +343,9 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         const button = document.createElement('button');
         button.type = 'button';
         button.className = 'quiz-choice';
-        if (selected === choice.label) button.classList.add('quiz-choice-selected');
-        button.innerHTML = `<span class="quiz-choice-label">${choice.label}.</span> ${renderBlankMarkers(choice.text)}`;
-        button.addEventListener('click', () => selectAnswer(question, choice.label));
+        if (selected === choice.displayLabel) button.classList.add('quiz-choice-selected');
+        button.innerHTML = `<span class="quiz-choice-label">${choice.displayLabel}.</span> ${renderBlankMarkers(choice.text)}`;
+        button.addEventListener('click', () => selectAnswer(question, choice.displayLabel));
         choiceList.appendChild(button);
       });
 
@@ -341,9 +372,9 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       if (state.mode !== 'feedback') return;
       const selected = state.answers.get(question.slug);
       if (!selected) return;
-      const correct = question.acceptedAnswerLabels.includes(selected);
+      const correct = isSelectedAnswerCorrect(question);
       panel.className = `border rounded-md p-4 mb-5 ${correct ? 'border-accent-green bg-green-950/20' : 'border-red-400 bg-red-950/20'}`;
-      panel.innerHTML = `<div class="font-semibold ${correct ? 'text-accent-green' : 'text-red-300'}">${correct ? 'Correct' : 'Incorrect'}</div><div class="text-sm text-text-body mt-1 mb-4">Accepted answer: ${question.acceptedAnswerLabels.join(', ')}</div>${renderExplanation(question)}`;
+      panel.innerHTML = `<div class="font-semibold ${correct ? 'text-accent-green' : 'text-red-300'}">${correct ? 'Correct' : 'Incorrect'}</div><div class="text-sm text-text-body mt-1 mb-4">Accepted answer: ${acceptedDisplayLabels(question).join(', ')}</div>${renderExplanation(question)}`;
     }
 
     async function persistCompletedQuiz(correctCount) {
@@ -357,13 +388,17 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
           quizType: 'custom',
           feedbackMode: state.mode === 'blind' ? 'blind' : 'immediate',
           filters: state.filters,
-          questions: state.questions.map((question, idx) => ({
-            slug: question.slug,
-            position: idx + 1,
-            selectedLabel: state.answers.get(question.slug) || null,
-            choiceOrder: question.choiceOrder || question.choices.map((choice) => choice.label),
-            timeMs: elapsedPerQuestion,
-          })),
+          questions: state.questions.map((question, idx) => {
+            const selectedLabel = state.answers.get(question.slug) || null;
+            return {
+              slug: question.slug,
+              position: idx + 1,
+              selectedLabel,
+              selectedOriginalLabel: selectedLabel ? originalLabelForDisplay(question, selectedLabel) : null,
+              choiceOrder: question.choiceOrder || Object.fromEntries(question.choices.map((choice) => [choice.displayLabel || choice.label, choice.originalLabel || choice.label])),
+              timeMs: elapsedPerQuestion,
+            };
+          }),
         });
         state.progressSaved = true;
         status.textContent = `Progress saved — ${result.attemptsInserted ?? state.questions.length} attempts recorded.`;
@@ -376,7 +411,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
     }
 
     function showReview() {
-      const correctCount = state.questions.filter((question) => question.acceptedAnswerLabels.includes(state.answers.get(question.slug))).length;
+      const correctCount = state.questions.filter((question) => isSelectedAnswerCorrect(question)).length;
       sessionEl.classList.add('hidden');
       reviewEl.classList.remove('hidden');
       document.getElementById('review-score').textContent = `Score: ${correctCount}/${state.questions.length}`;
@@ -386,10 +421,11 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       list.innerHTML = '';
       state.questions.forEach((question, idx) => {
         const selected = state.answers.get(question.slug) || 'No answer';
-        const correct = question.acceptedAnswerLabels.includes(selected);
+        const correct = isSelectedAnswerCorrect(question);
+        const accepted = acceptedDisplayLabels(question).join(', ');
         const item = document.createElement('div');
         item.className = 'border border-border rounded-md p-4';
-        item.innerHTML = `<div class="text-text-primary font-medium">${idx + 1}. ${questionDisplayLabel(question)}</div><div class="text-sm text-text-muted mt-1 mb-3">Selected: ${selected} · Accepted: ${question.acceptedAnswerLabels.join(', ')} · ${correct ? 'Correct' : 'Incorrect'}</div><details data-testid="review-explanation" class="quiz-review-details"><summary>Show full explanation and distractor notes</summary>${renderExplanation(question)}</details>`;
+        item.innerHTML = `<div class="text-text-primary font-medium">${idx + 1}. ${questionDisplayLabel(question)}</div><div class="text-sm text-text-muted mt-1 mb-3">Selected: ${selected} · Accepted: ${accepted} · ${correct ? 'Correct' : 'Incorrect'}</div><details data-testid="review-explanation" class="quiz-review-details"><summary>Show full explanation and distractor notes</summary>${renderExplanation(question)}</details>`;
         list.appendChild(item);
       });
     }

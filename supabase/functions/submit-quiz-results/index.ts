@@ -4,6 +4,7 @@ type SubmittedQuestion = {
   slug?: string;
   position?: number;
   selectedLabel?: string | null;
+  selectedOriginalLabel?: string | null;
   choiceOrder?: unknown;
   timeMs?: number | null;
 };
@@ -44,11 +45,27 @@ function normalizeSelectedLabel(value: unknown): string | null {
   return /^[A-Z]$/.test(label) ? label : null;
 }
 
-function normalizeChoiceOrder(value: unknown): string[] | null {
-  if (!Array.isArray(value)) return null;
-  const labels = value.map(normalizeSelectedLabel).filter((label): label is string => label !== null);
-  if (labels.length === 0) return null;
-  return [...new Set(labels)];
+function normalizeChoiceOrder(value: unknown): Record<string, string> | string[] | null {
+  if (Array.isArray(value)) {
+    const labels = value.map(normalizeSelectedLabel).filter((label): label is string => label !== null);
+    if (labels.length === 0) return null;
+    return [...new Set(labels)];
+  }
+  if (!value || typeof value !== 'object') return null;
+  const normalized: Record<string, string> = {};
+  for (const [displayValue, sourceValue] of Object.entries(value as Record<string, unknown>)) {
+    const displayLabel = normalizeSelectedLabel(displayValue);
+    const sourceLabel = normalizeSelectedLabel(sourceValue);
+    if (displayLabel && sourceLabel) normalized[displayLabel] = sourceLabel;
+  }
+  return Object.keys(normalized).length > 0 ? normalized : null;
+}
+
+function originalLabelFromSubmittedChoice(selectedLabel: string | null, selectedOriginalLabel: string | null, choiceOrder: Record<string, string> | string[] | null): string | null {
+  if (selectedOriginalLabel) return selectedOriginalLabel;
+  if (!selectedLabel) return null;
+  if (choiceOrder && !Array.isArray(choiceOrder)) return choiceOrder[selectedLabel] ?? selectedLabel;
+  return selectedLabel;
 }
 
 function masteryState(attempts: number, correct: number, incorrect: number): 'new' | 'learning' | 'shaky' | 'mastered' {
@@ -84,6 +101,7 @@ Deno.serve(async (req) => {
       slug: String(question.slug ?? '').trim(),
       position: Number.isInteger(question.position) && Number(question.position) > 0 ? Number(question.position) : index + 1,
       selectedLabel: normalizeSelectedLabel(question.selectedLabel),
+      selectedOriginalLabel: normalizeSelectedLabel(question.selectedOriginalLabel),
       choiceOrder: normalizeChoiceOrder(question.choiceOrder),
       timeMs: Number.isFinite(question.timeMs) && Number(question.timeMs) >= 0 ? Number(question.timeMs) : null,
     }))
@@ -134,9 +152,11 @@ Deno.serve(async (req) => {
 
   const resolvedQuestions = submittedQuestions.map((question) => {
     const questionId = questionBySlug.get(question.slug)!.id;
-    const choice = question.selectedLabel ? choiceByQuestionAndLabel.get(`${questionId}:${question.selectedLabel}`) : undefined;
+    const selectedOriginalLabel = originalLabelFromSubmittedChoice(question.selectedLabel, question.selectedOriginalLabel, question.choiceOrder);
+    const choice = selectedOriginalLabel ? choiceByQuestionAndLabel.get(`${questionId}:${selectedOriginalLabel}`) : undefined;
     return {
       ...question,
+      selectedOriginalLabel,
       questionId,
       selectedChoiceId: choice?.id ?? null,
       is_correct: Boolean(choice?.is_correct),
