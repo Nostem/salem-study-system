@@ -29,7 +29,23 @@ export type SubmitQuizResultsQuestion = {
   slug: string;
   position: number;
   selectedLabel?: string | null;
+  choiceOrder?: string[] | null;
   timeMs?: number | null;
+};
+
+export type ContactFeedbackPayload = {
+  category?: string;
+  name?: string;
+  email?: string;
+  message: string;
+  pageUrl?: string;
+  userAgent?: string;
+  website?: string;
+};
+
+export type ContactFeedbackResponse = {
+  ok: boolean;
+  feedbackId: string | null;
 };
 
 export type SubmitQuizResultsPayload = {
@@ -117,6 +133,17 @@ export async function submitQuizResults(payload: SubmitQuizResultsPayload): Prom
     throw new Error('not_authenticated');
   }
   return postFunction<SubmitQuizResultsResponse>('submit-quiz-results', payload, session.access_token);
+}
+
+export async function submitContactFeedback(payload: ContactFeedbackPayload): Promise<ContactFeedbackResponse> {
+  let accessToken: string | undefined;
+  try {
+    const session = await getCurrentSession();
+    accessToken = session?.access_token;
+  } catch {
+    accessToken = undefined;
+  }
+  return postFunction<ContactFeedbackResponse>('contact-feedback', payload, accessToken);
 }
 
 export async function logout(): Promise<void> {

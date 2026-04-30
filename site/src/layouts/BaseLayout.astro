@@ -4,6 +4,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+import ContactModal from '../components/ContactModal.astro';
 import '../styles/global.css';
 ---
 
@@ -20,5 +21,6 @@ import '../styles/global.css';
   </head>
   <body class="bg-bg min-h-screen">
     <slot />
+    <ContactModal />
   </body>
 </html>
