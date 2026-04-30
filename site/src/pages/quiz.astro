@@ -9,13 +9,28 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
 ---
 
 <BaseLayout title="Quiz Builder">
-  <main class="max-w-[1180px] mx-auto px-6 py-8 lg:py-10">
+  <section id="quiz-login-required" data-testid="quiz-login-required" class="max-w-[760px] mx-auto px-6 py-12">
+    <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
+    <div class="bg-bg-card border border-border rounded-lg p-8 mt-4">
+      <div class="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-blue mb-3">Account required</div>
+      <h1 class="font-serif text-4xl text-text-primary leading-tight mb-3">Log in to use the quiz.</h1>
+      <p id="quiz-login-message" class="text-sm text-text-body max-w-2xl mb-6">
+        Quiz attempts are now account-gated so Salem Study can start building your personal performance history and aggregate question analytics. There is no read-only quiz mode.
+      </p>
+      <div class="flex flex-wrap gap-3">
+        <a class="quiz-primary no-underline" href={`${base}login/`}>Log in</a>
+        <a class="quiz-secondary no-underline" href={`${base}signup/`}>Create account</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="quiz-app" data-testid="quiz-app" class="hidden max-w-[1180px] mx-auto px-6 py-8 lg:py-10">
     <header class="flex flex-col gap-4 border-b border-border pb-6 mb-6 lg:flex-row lg:items-end lg:justify-between">
       <div>
         <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
         <h1 class="font-serif text-4xl text-text-primary leading-tight mt-3 mb-1">Quiz Builder</h1>
         <p class="text-sm text-text-muted max-w-2xl">
-          Read-only quiz MVP using the imported Salem written exam question bank. Attempts stay local for now; auth and progress persistence come next.
+          Account-gated quiz builder using the imported Salem written exam question bank. Attempts will feed the performance database as the persistence layer comes online.
         </p>
       </div>
       <div class="grid grid-cols-3 gap-2 text-center">
@@ -84,10 +99,10 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       </form>
 
       <section id="quiz-empty-state" class="bg-bg-card border border-border rounded-lg p-8">
-        <div class="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-blue mb-3">Read-only MVP</div>
+        <div class="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-blue mb-3">Account-gated quiz</div>
         <h2 class="text-2xl text-text-primary font-semibold mb-3">Choose filters and start a quiz.</h2>
         <p class="text-text-body text-sm max-w-2xl">
-          This screen uses the synced Supabase question model exported into the static site. It supports filtering, local answer selection, immediate feedback mode, and blind final review mode.
+          You are logged in. This screen uses the synced Supabase question model exported into the static site. It supports filtering, answer selection, immediate feedback mode, and blind final review mode while the database attempt-tracking layer is connected next.
         </p>
       </section>
 
@@ -122,6 +137,31 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
   </main>
 
   <script type="application/json" id="quiz-bank-json" set:html={JSON.stringify(quizBank)} />
+
+  <script>
+    import { getCurrentSession, hasSupabaseConfig } from '../utils/auth-client';
+
+    const quizApp = document.getElementById('quiz-app');
+    const loginRequired = document.getElementById('quiz-login-required');
+    const loginMessage = document.getElementById('quiz-login-message');
+
+    async function showQuizWhenAuthenticated() {
+      if (!hasSupabaseConfig()) {
+        if (loginMessage) {
+          loginMessage.textContent = 'Quiz access requires login, but Supabase public configuration is missing for this build. Ask the site admin to redeploy with the Supabase URL and anon key configured.';
+        }
+        return;
+      }
+
+      const session = await getCurrentSession().catch(() => null);
+      if (!session) return;
+
+      loginRequired?.classList.add('hidden');
+      quizApp?.classList.remove('hidden');
+    }
+
+    showQuizWhenAuthenticated();
+  </script>
 
   <script is:inline>
     const bank = JSON.parse(document.getElementById('quiz-bank-json').textContent);

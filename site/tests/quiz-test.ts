@@ -1,6 +1,46 @@
-import { expect, test } from '@playwright/test';
+import { expect, type Page, test } from '@playwright/test';
 
-test('quiz page builds a filtered read-only quiz from imported questions', async ({ page }) => {
+function supabaseAuthStorageKey(): string {
+  const url = process.env.PUBLIC_SUPABASE_URL || 'https://local-test.supabase.co';
+  const projectRef = new URL(url).hostname.split('.')[0];
+  return `sb-${projectRef}-auth-token`;
+}
+
+async function authenticateQuizUser(page: Page): Promise<void> {
+  await page.addInitScript(([storageKey]) => {
+    window.localStorage.setItem(
+      storageKey,
+      JSON.stringify({
+        access_token: 'playwright-access-token',
+        refresh_token: 'playwright-refresh-token',
+        expires_at: Math.floor(Date.now() / 1000) + 3600,
+        expires_in: 3600,
+        token_type: 'bearer',
+        user: {
+          id: '00000000-0000-4000-8000-000000000001',
+          aud: 'authenticated',
+          role: 'authenticated',
+          email: 'playwright@example.invalid',
+          app_metadata: {},
+          user_metadata: { username: 'playwright' },
+        },
+      })
+    );
+  }, [supabaseAuthStorageKey()]);
+}
+
+test('quiz page requires login before showing the quiz builder', async ({ page }) => {
+  await page.goto('quiz/');
+
+  await expect(page.getByTestId('quiz-login-required')).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Log in to use the quiz/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Log in/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Create account/i })).toBeVisible();
+  await expect(page.getByRole('button', { name: /Start quiz/i })).toBeHidden();
+});
+
+test('quiz page builds an account-gated quiz from imported questions', async ({ page }) => {
+  await authenticateQuizUser(page);
   await page.goto('quiz/');
 
   await expect(page.getByRole('heading', { name: /Quiz Builder/i })).toBeVisible();
@@ -18,6 +58,7 @@ test('quiz page builds a filtered read-only quiz from imported questions', async
 });
 
 test('two-part fill-in markers are highlighted in stems and answer choices', async ({ page }) => {
+  await authenticateQuizUser(page);
   await page.goto('quiz/');
 
   await page.getByLabel('Exam year').selectOption('2018');
@@ -49,6 +90,7 @@ test('two-part fill-in markers are highlighted in stems and answer choices', asy
 });
 
 test('topic filter supports multiple wiki-formatted topic selections without duplicates or abnormal procedures', async ({ page }) => {
+  await authenticateQuizUser(page);
   await page.goto('quiz/');
 
   await expect(page.getByText('Pressurizer Level & Press Control')).toBeVisible();
@@ -70,6 +112,7 @@ test('topic filter supports multiple wiki-formatted topic selections without dup
 });
 
 test('feedback mode shows immediate right or wrong result after selecting an answer', async ({ page }) => {
+  await authenticateQuizUser(page);
   await page.goto('quiz/');
 
   await page.getByLabel('Exam year').selectOption('2018');
@@ -86,6 +129,7 @@ test('feedback mode shows immediate right or wrong result after selecting an ans
 });
 
 test('blind mode withholds scoring until final review', async ({ page }) => {
+  await authenticateQuizUser(page);
   await page.goto('quiz/');
 
   await page.getByLabel('Exam year').selectOption('2018');
