@@ -1,6 +1,6 @@
 {
   "default_quiz_excluded_counts": {
-    "draft": 489,
+    "draft": 488,
     "outdated": 6
   },
   "issue_counts": {},
@@ -32,8 +32,8 @@
     }
   ],
   "status_counts": {
-    "active": 4,
-    "draft": 489,
+    "active": 5,
+    "draft": 488,
     "outdated": 6
   },
   "total_records": 499
