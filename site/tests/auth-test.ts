@@ -8,7 +8,7 @@ test('signup page supports invite ID username and password without email field',
   await expect(page.getByLabel('Username')).toBeVisible();
   await expect(page.getByLabel('Password')).toBeVisible();
   await expect(page.getByLabel(/Display name/)).toBeVisible();
-  await expect(page.getByLabel(/email/i)).toHaveCount(0);
+  await expect(page.locator('#signupForm').getByLabel(/email/i)).toHaveCount(0);
 });
 
 test('login page uses username and password instead of email', async ({ page }) => {
@@ -17,5 +17,5 @@ test('login page uses username and password instead of email', async ({ page }) 
   await expect(page.getByRole('heading', { name: 'Log in' })).toBeVisible();
   await expect(page.getByLabel('Username')).toBeVisible();
   await expect(page.getByLabel('Password')).toBeVisible();
-  await expect(page.getByLabel(/email/i)).toHaveCount(0);
+  await expect(page.locator('#loginForm').getByLabel(/email/i)).toHaveCount(0);
 });

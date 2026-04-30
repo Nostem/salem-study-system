@@ -29,7 +29,7 @@
           <input id="contact-name" name="name" autocomplete="name" class="w-full bg-[#111827] border border-[#1a2035] rounded-md px-3 py-2 text-sm text-[#e0e4ea] outline-none focus:border-[#2a6f97]" />
         </label>
         <label class="block">
-          <span class="block text-[#6b7280] font-mono text-[11px] uppercase tracking-[0.12em] mb-1.5">Reply address</span>
+          <span class="block text-[#6b7280] font-mono text-[11px] uppercase tracking-[0.12em] mb-1.5">Reply email</span>
           <input id="contact-email" name="email" type="email" autocomplete="email" class="w-full bg-[#111827] border border-[#1a2035] rounded-md px-3 py-2 text-sm text-[#e0e4ea] outline-none focus:border-[#2a6f97]" />
         </label>
       </div>
@@ -55,6 +55,8 @@
   </div>
 </div>
 
+<div id="contact-confirmation" data-testid="contact-confirmation" class="fixed bottom-16 right-4 z-40 max-w-sm rounded-md border border-[#10b981]/40 bg-[#0d1220] px-4 py-3 text-xs text-[#10b981] shadow-lg hidden" aria-live="polite"></div>
+
 <button
   id="contact-trigger"
   type="button"
@@ -78,15 +80,20 @@
       website: document.getElementById('contact-website'),
       pageUrl: document.getElementById('contact-page-url'),
       status: document.getElementById('contact-status'),
+      confirmation: document.getElementById('contact-confirmation'),
       submit: document.getElementById('contact-submit'),
     };
   }
 
   function openContact() {
-    const { modal, message, pageUrl, status } = getContactElements();
+    const { modal, message, pageUrl, status, confirmation } = getContactElements();
     if (!modal) return;
     modal.hidden = false;
     modal.classList.remove('hidden');
+    if (confirmation) {
+      confirmation.textContent = '';
+      confirmation.classList.add('hidden');
+    }
     if (pageUrl) pageUrl.textContent = `Page: ${window.location.href}`;
     if (status) {
       status.textContent = '';
@@ -120,7 +127,7 @@
     form.dataset.contactBound = 'true';
     form.addEventListener('submit', async (event) => {
       event.preventDefault();
-      const { category, name, email, message, website, status, submit } = getContactElements();
+      const { category, name, email, message, website, status, confirmation, submit } = getContactElements();
       if (!message || !status || !submit) return;
 
       submit.disabled = true;
@@ -138,8 +145,11 @@
           website: website?.value || undefined,
         });
         form.reset();
-        status.textContent = 'Feedback sent. Thank you.';
-        status.className = 'min-h-5 text-xs text-[#10b981]';
+        if (confirmation) {
+          confirmation.textContent = 'Feedback sent. Thank you.';
+          confirmation.classList.remove('hidden');
+        }
+        closeContact();
       } catch (error) {
         console.error('Failed to submit contact feedback', error);
         status.textContent = 'Feedback could not be sent. Please try again.';

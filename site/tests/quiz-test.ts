@@ -297,6 +297,25 @@ test('quiz start without a seed override generates a numeric seed in submitted f
   expect(Number.isInteger(submittedBodies[0].filters.seed)).toBe(true);
 });
 
+test('quiz page shows only exam year and question number, not answer-revealing question titles', async ({ page }) => {
+  await authenticateQuizUser(page);
+  await page.goto('quiz/?seed=96');
+
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.locator('#question-title')).toHaveText('2018 Q1');
+  await expect(page.locator('#question-title')).not.toContainText(/RCP|shaft|shear|seal/i);
+
+  await page.getByRole('button', { name: /^A\./ }).click();
+  await page.getByRole('button', { name: /Review results/i }).click();
+  const reviewQuestionTitle = page.locator('#review-list > div').first().locator('div').first();
+  await expect(reviewQuestionTitle).toHaveText('1. 2018 Q1');
+  await expect(reviewQuestionTitle).not.toContainText(/RCP|shaft|shear|seal/i);
+});
+
 test('blind mode withholds scoring until final review', async ({ page }) => {
   await authenticateQuizUser(page);
   await page.goto('quiz/');

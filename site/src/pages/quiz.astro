@@ -287,12 +287,16 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         .replace(/(?<!_)\(([1-4])\)(?!_)/g, '<span class="blank">($1)</span>');
     }
 
+    function questionDisplayLabel(question) {
+      return `${question.examYear} Q${question.questionNumber}`;
+    }
+
     function renderQuestion() {
       const question = state.questions[state.index];
       if (!question) return;
       const selected = state.answers.get(question.slug);
       document.getElementById('question-position').textContent = `Question ${state.index + 1} of ${state.questions.length}`;
-      document.getElementById('question-title').textContent = question.title || `Question ${question.questionNumber}`;
+      document.getElementById('question-title').textContent = questionDisplayLabel(question);
       document.getElementById('question-stem').innerHTML = renderBlankMarkers(question.stemText);
       document.getElementById('question-meta').innerHTML = [
         badge(`${question.examYear} Q${question.questionNumber}`, 'blue'),
@@ -385,7 +389,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         const correct = question.acceptedAnswerLabels.includes(selected);
         const item = document.createElement('div');
         item.className = 'border border-border rounded-md p-4';
-        item.innerHTML = `<div class="text-text-primary font-medium">${idx + 1}. ${question.title || `Question ${question.questionNumber}`}</div><div class="text-sm text-text-muted mt-1 mb-3">Selected: ${selected} · Accepted: ${question.acceptedAnswerLabels.join(', ')} · ${correct ? 'Correct' : 'Incorrect'}</div><details data-testid="review-explanation" class="quiz-review-details"><summary>Show full explanation and distractor notes</summary>${renderExplanation(question)}</details>`;
+        item.innerHTML = `<div class="text-text-primary font-medium">${idx + 1}. ${questionDisplayLabel(question)}</div><div class="text-sm text-text-muted mt-1 mb-3">Selected: ${selected} · Accepted: ${question.acceptedAnswerLabels.join(', ')} · ${correct ? 'Correct' : 'Incorrect'}</div><details data-testid="review-explanation" class="quiz-review-details"><summary>Show full explanation and distractor notes</summary>${renderExplanation(question)}</details>`;
         list.appendChild(item);
       });
     }
