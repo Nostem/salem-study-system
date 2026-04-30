@@ -24,6 +24,9 @@ alter table public.invites add column if not exists code_hash text;
 alter table public.invites add column if not exists accepted_username text;
 alter table public.invites add column if not exists revoked_at timestamptz;
 alter table public.invites add column if not exists notes text;
+-- Earlier invite drafts stored raw codes in public.invites.code. Beta auth now stores
+-- only SHA-256 hashes in code_hash, so the legacy raw-code column must be nullable.
+alter table public.invites alter column code drop not null;
 
 create unique index if not exists invites_code_hash_unique
   on public.invites (code_hash)

@@ -15,6 +15,7 @@ class InviteAuthArtifactTests(unittest.TestCase):
         self.assertIn("internal_auth_email", migrations)
         self.assertIn("invite_id", migrations)
         self.assertIn("code_hash", migrations)
+        self.assertRegex(migrations, r"alter table\s+public\.invites\s+alter column code\s+drop not null", re.I)
         self.assertNotRegex(migrations, r"email\s+text\s+not null", re.I)
 
     def test_edge_functions_claim_invite_and_login_by_username_without_exposing_service_role_to_browser(self):

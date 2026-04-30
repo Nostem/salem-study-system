@@ -37,16 +37,22 @@ def build_invite_sql(codes: list[str], label_prefix: str | None, expires_at: str
     lines = [
         "begin;",
         "",
-        "insert into public.invites (code_hash, label, max_uses, expires_at)",
-        "values",
+        "with new_invites (code_hash, label, max_uses, expires_at) as (",
+        "  values",
     ]
     rows = []
     for index, code in enumerate(codes, start=1):
         label = f"{label_prefix or 'beta'}-{index:03d}"
         expires_sql = sql_quote(expires_at) if expires_at else "null"
-        rows.append(f"  ({sql_quote(code_hash(code))}, {sql_quote(label)}, 1, {expires_sql})")
+        rows.append(f"    ({sql_quote(code_hash(code))}, {sql_quote(label)}, 1, {expires_sql}::timestamptz)")
     lines.append(",\n".join(rows))
-    lines.append("on conflict (code_hash) do nothing;")
+    lines.append(")")
+    lines.append("insert into public.invites (code_hash, label, max_uses, expires_at)")
+    lines.append("select code_hash, label, max_uses, expires_at")
+    lines.append("from new_invites")
+    lines.append("where not exists (")
+    lines.append("  select 1 from public.invites existing where existing.code_hash = new_invites.code_hash")
+    lines.append(");")
     lines.append("")
     lines.append("commit;")
     return "\n".join(lines) + "\n"
