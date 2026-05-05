@@ -19,7 +19,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       <form id="createAccountForm" data-login-url={`${base}login`} class="space-y-5">
         <label class="block text-sm font-medium text-slate-200">
           Username
-          <input name="username" autocomplete="username" minlength="3" maxlength="32" pattern="[A-Za-z0-9_][A-Za-z0-9_-]{2,31}" required class="mt-2 w-full rounded-lg border border-slate-600 bg-slate-950 px-4 py-3 text-white outline-none focus:border-amber-300" placeholder="operator_one" />
+          <input name="username" autocomplete="username" minlength="3" maxlength="32" required class="mt-2 w-full rounded-lg border border-slate-600 bg-slate-950 px-4 py-3 text-white outline-none focus:border-amber-300" placeholder="operator_one" />
           <span class="mt-1 block text-xs text-slate-400">3–32 characters. Letters, numbers, underscore, and hyphen.</span>
         </label>
 

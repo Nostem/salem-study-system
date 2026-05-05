@@ -3,6 +3,10 @@ import { test, expect } from '@playwright/test';
 const secretCreateAccountPath = 'create-account-925e867b3f131dd970800516/';
 
 test('secret create account page supports username and password without invite ID or email field', async ({ page }) => {
+  const consoleErrors: string[] = [];
+  page.on('console', (message) => {
+    if (message.type() === 'error') consoleErrors.push(message.text());
+  });
   const submittedBodies: any[] = [];
   await page.route('**/functions/v1/invite-signup', async (route) => {
     submittedBodies.push(route.request().postDataJSON());
@@ -18,6 +22,7 @@ test('secret create account page supports username and password without invite I
   await expect(page.getByRole('heading', { name: 'Create your Salem Study account' })).toBeVisible();
   await expect(page.getByLabel('Invite ID')).toHaveCount(0);
   await expect(page.getByLabel('Username')).toBeVisible();
+  await expect(page.getByLabel('Username')).not.toHaveAttribute('pattern');
   await expect(page.getByLabel('Password')).toBeVisible();
   await expect(page.getByLabel(/Display name/)).toBeVisible();
   await expect(page.locator('#createAccountForm').getByLabel(/email/i)).toHaveCount(0);
@@ -29,6 +34,7 @@ test('secret create account page supports username and password without invite I
   await expect.poll(() => submittedBodies.length).toBe(1);
   expect(submittedBodies[0]).toMatchObject({ username: 'operator_one', password: 'password123' });
   expect(submittedBodies[0]).not.toHaveProperty('inviteCode');
+  expect(consoleErrors.filter((text) => /Pattern attribute value|Invalid regular expression/i.test(text))).toHaveLength(0);
 });
 
 test('login page uses username and password instead of email', async ({ page }) => {
