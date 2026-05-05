@@ -107,6 +107,23 @@ test('quiz stem preserves imported table cell boundaries', async ({ page }) => {
   await expect(page.locator('#question-stem')).not.toContainText('Time10:0010:05');
 });
 
+test('quiz stem preserves blank cells in imported tables', async ({ page }) => {
+  await authenticateQuizUser(page);
+  // Seed 132 puts draft 2018 Q10 first under the default quiz filters.
+  await page.goto('quiz/?seed=132');
+
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await expect(page.getByLabel('Include draft imported questions')).toBeChecked();
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.getByTestId('question-meta')).toContainText('2018 Q10');
+  await expect(page.locator('#question-stem')).toContainText('CH I | CH II | CH III | CH IV |');
+  await expect(page.locator('#question-stem')).toContainText('2PT-455 | 2PT-456 | 2PT-457 | 2PT-474 | 2PT-1648');
+  await expect(page.locator('#question-stem')).toContainText('2235 PSIG | 0 PSIG | 2235 PSIG | 2235 PSIG | 2235 PSIG');
+  await expect(page.locator('#question-stem')).not.toContainText('CH I | CH II | CH III | CH IV\n2PT-455');
+});
+
 test('topic filter supports multiple wiki-formatted topic selections without duplicates or abnormal procedures', async ({ page }) => {
   await authenticateQuizUser(page);
   await page.goto('quiz/');

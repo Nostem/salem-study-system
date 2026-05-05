@@ -653,7 +653,7 @@
       "questionNumber": 10,
       "track": "RO",
       "title": "2018 Q10 — RPS PZR Pressure Channel Failure",
-      "stemText": "Given:\n\n• Unit 2 is at 100% Reactor Power and stable\n\n• The PZR Pressure Transmitters read the following:\n\nCH I | CH II | CH III | CH IV\n2PT-455 | 2PT-456 | 2PT-457 | 2PT-474 | 2PT-1648\n2235 PSIG | 0 PSIG | 2235 PSIG | 2235 PSIG | 2235 PSIG\n\nWhich ONE of the following completes the statements below concerning the design of the Reactor Protection System (RPS)?\n\nWith 2PT-456 failed low, the coincidence for the PZR Pressure LOW Reactor Trip (based on the remaining functional PZR Pressure Channels) is now ___",
+      "stemText": "Given:\n\n• Unit 2 is at 100% Reactor Power and stable\n\n• The PZR Pressure Transmitters read the following:\n\nCH I | CH II | CH III | CH IV | \n2PT-455 | 2PT-456 | 2PT-457 | 2PT-474 | 2PT-1648\n2235 PSIG | 0 PSIG | 2235 PSIG | 2235 PSIG | 2235 PSIG\n\nWhich ONE of the following completes the statements below concerning the design of the Reactor Protection System (RPS)?\n\nWith 2PT-456 failed low, the coincidence for the PZR Pressure LOW Reactor Trip (based on the remaining functional PZR Pressure Channels) is now ___",
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
         "D"
@@ -4068,7 +4068,7 @@
       "questionNumber": 61,
       "track": "RO",
       "title": "2018 Q61 — Loss of Control Air ECAC Start and Reactor Trip",
-      "stemText": "Given:\n\nAt time 10:00:00\n\n• Unit 2 is at 100% Reactor Power and stable\n\n• The crew enters S2.OP-AB.CA-0001 (Loss of Control Air)\n\n• NEOs are walking down the Control Air System searching for a large air leak\n\n• Control Air Header Pressure is observed as follows:\n\nTime | 10:00 | 10:05 | 10:10 | 10:15\n2A Control Air Header | 99 psig | 88 psig | 79 psig | 72 psig\n2B Control Air Header | 103 psig | 93 psig | 85 psig | 79 psig\n\nIn accordance with S2.OP-AB.CA-0001, which ONE of the following completes the statements below?\n\n_(1)_ is the EARLIEST time the crew is required to attempt to MANUALLY start the 2 Emergency Control Air Compressor.\n\n_(2)_ is the EARLIEST time the crew is required to TRIP the Reactor.\n\n(1) | (2)",
+      "stemText": "Given:\n\nAt time 10:00:00\n\n• Unit 2 is at 100% Reactor Power and stable\n\n• The crew enters S2.OP-AB.CA-0001 (Loss of Control Air)\n\n• NEOs are walking down the Control Air System searching for a large air leak\n\n• Control Air Header Pressure is observed as follows:\n\nTime | 10:00 | 10:05 | 10:10 | 10:15\n2A Control Air Header | 99 psig | 88 psig | 79 psig | 72 psig\n2B Control Air Header | 103 psig | 93 psig | 85 psig | 79 psig\n\nIn accordance with S2.OP-AB.CA-0001, which ONE of the following completes the statements below?\n\n_(1)_ is the EARLIEST time the crew is required to attempt to MANUALLY start the 2 Emergency Control Air Compressor.\n\n_(2)_ is the EARLIEST time the crew is required to TRIP the Reactor.\n\n | (1) | (2)",
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
         "D"
@@ -4194,7 +4194,7 @@
       "questionNumber": 63,
       "track": "RO",
       "title": "2018 Q63 — LOCA Outside Containment RH19 Isolation and RCS Pressure [OUTDATED]",
-      "stemText": "Given:\n\n• The crew has just transitioned to 1-EOP-LOCA-6 (LOCA Outside Containment)\n\nIn accordance with 1-EOP-LOCA-6, which ONE of the following completes the statements below?\n\nAs part of the leak isolation strategy, the crew _(1)_ separate the 11 and 12 RHR discharge lines by closing 11RH19 (RHR Discharge X-CONN Valve) and 12RH19 (RHR Discharge X-CONN Valve).\n\nThe crew will monitor rising _(2)_ to determine when the leak has been successfully isolated.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• The crew has just transitioned to 1-EOP-LOCA-6 (LOCA Outside Containment)\n\nIn accordance with 1-EOP-LOCA-6, which ONE of the following completes the statements below?\n\nAs part of the leak isolation strategy, the crew _(1)_ separate the 11 and 12 RHR discharge lines by closing 11RH19 (RHR Discharge X-CONN Valve) and 12RH19 (RHR Discharge X-CONN Valve).\n\nThe crew will monitor rising _(2)_ to determine when the leak has been successfully isolated.\n\n | (1) | (2)",
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
         "A"
@@ -4271,7 +4271,7 @@
       "questionNumber": 64,
       "track": "RO",
       "title": "2018 Q64 — FRHS-1 Bleed and Feed ECCS Pump Requirements",
-      "stemText": "Given:\n\n• The crew is performing the Bleed and Feed Initiation Steps of 1-EOP-FRHS-1 (Response To Loss Of Secondary Heat Sink)\n\n• 11 Charging Pump and 11 SI Pump are the ONLY ECCS pumps running\n\nIn accordance with 1-EOP-FRHS-1, which ONE of the following completes the statements below?\n\nThe crew _(1)_ proceed in 1-EOP-FRHS-1 and establish the required RCS Bleed Path.\n\nWhen establishing a Bleed Path, the crew will open _(2)_.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• The crew is performing the Bleed and Feed Initiation Steps of 1-EOP-FRHS-1 (Response To Loss Of Secondary Heat Sink)\n\n• 11 Charging Pump and 11 SI Pump are the ONLY ECCS pumps running\n\nIn accordance with 1-EOP-FRHS-1, which ONE of the following completes the statements below?\n\nThe crew _(1)_ proceed in 1-EOP-FRHS-1 and establish the required RCS Bleed Path.\n\nWhen establishing a Bleed Path, the crew will open _(2)_.\n\n | (1) | (2)",
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
         "C"
@@ -4341,7 +4341,7 @@
       "questionNumber": 65,
       "track": "RO",
       "title": "2018 Q65 — LOCA-5 RCS Depressurization and Upper Head Voiding",
-      "stemText": "Given:\n\n• The crew is preparing to perform the RCS Depressurization To Minimize Subcooling Steps of 1-EOP-LOCA-5 (Loss Of Emergency Recirculation)\n\n• ALL RCPs are stopped\n\n• PZR Level is 10%\n\n• RCS Subcooling is 35 °F\n\nAt time 16:15:00\n\n• The RCS depressurization has started\n\nAt time 16:15:30 (30 seconds later)\n\n• PZR Level is 45% and rising\n\n• RCS Subcooling is 25 °F\n\nIn accordance with 1-EOP-LOCA-5, which ONE of the following completes the statements below?\n\nAt 16:15:00, the crew used _(1)_ to depressurize the RCS.\n\nAt 16:15:30, there _(2)_ indications that voiding is occurring in the upper head region.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• The crew is preparing to perform the RCS Depressurization To Minimize Subcooling Steps of 1-EOP-LOCA-5 (Loss Of Emergency Recirculation)\n\n• ALL RCPs are stopped\n\n• PZR Level is 10%\n\n• RCS Subcooling is 35 °F\n\nAt time 16:15:00\n\n• The RCS depressurization has started\n\nAt time 16:15:30 (30 seconds later)\n\n• PZR Level is 45% and rising\n\n• RCS Subcooling is 25 °F\n\nIn accordance with 1-EOP-LOCA-5, which ONE of the following completes the statements below?\n\nAt 16:15:00, the crew used _(1)_ to depressurize the RCS.\n\nAt 16:15:30, there _(2)_ indications that voiding is occurring in the upper head region.\n\n | (1) | (2)",
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
         "D"
@@ -4411,7 +4411,7 @@
       "questionNumber": 66,
       "track": "RO",
       "title": "2018 Q66 — LOSC-2 AFW Steam Isolation and Flow Control",
-      "stemText": "Given:\n\n• A Reactor Trip and Safety Injection Actuation have occurred\n\n• The 1A 4KV VITAL BUS is de-energized due to an electrical fault on the bus\n\n• The 12 AFW Pump will NOT start\n\n• The crew has just transitioned to 1-EOP-LOSC-2 (Multiple Steam Generator Depressurization)\n\n• The RCS cooldown rate is 120 °F / HR\n\nIn accordance with 1-EOP-LOSC-2, which ONE of the following completes the statements below?\n\nThe crew _(1)_ isolate steam to the 13 AFW Pump.\n\nAFW flow will be controlled / reduced to _(2)_.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• A Reactor Trip and Safety Injection Actuation have occurred\n\n• The 1A 4KV VITAL BUS is de-energized due to an electrical fault on the bus\n\n• The 12 AFW Pump will NOT start\n\n• The crew has just transitioned to 1-EOP-LOSC-2 (Multiple Steam Generator Depressurization)\n\n• The RCS cooldown rate is 120 °F / HR\n\nIn accordance with 1-EOP-LOSC-2, which ONE of the following completes the statements below?\n\nThe crew _(1)_ isolate steam to the 13 AFW Pump.\n\nAFW flow will be controlled / reduced to _(2)_.\n\n | (1) | (2)",
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
         "B"
@@ -4481,7 +4481,7 @@
       "questionNumber": 67,
       "track": "RO",
       "title": "2018 Q67 — Control Room Evacuation Emergency Boration and CV55 Location",
-      "stemText": "Given:\n\n• The Unit 2 Control Room has been evacuated in accordance with S2.OP-AB.CR-0001 (Control Room Evacuation)\n\n• The Reactor Trip has been confirmed but 2 Control Rods did not fully insert into the core\n\nAt time 08:00:00\n\n• The RO and PO are preparing to perform an Emergency Boration in accordance with S2.OP-AB.CR-0001 Attachment 5 (Reactor Operator) and Attachment 6 (Plant Operator)\n\nWhich ONE of the following completes the statements below?\n\nIn accordance with S2.OP-AB.CR-0001 Attachment 6, the crew will perform the Emergency Boration for a duration of _(1)_ minutes.\n\nDuring the Emergency Boration, the RO will throttle 2CV55 (Cent Chg Pmp Flow Cont Valve) by adjusting the 2CV55 Manual HAND/AIR Regulator Controller located at Panel _(2)_.\n\nNOTE:\n\n• Panel 213-2 = Unit 2 Hot Shutdown Panel\n\n• Panel 216-2 = Unit 2 Chg Pmps FL & PR Inst Panel\n\n(1) | (2)",
+      "stemText": "Given:\n\n• The Unit 2 Control Room has been evacuated in accordance with S2.OP-AB.CR-0001 (Control Room Evacuation)\n\n• The Reactor Trip has been confirmed but 2 Control Rods did not fully insert into the core\n\nAt time 08:00:00\n\n• The RO and PO are preparing to perform an Emergency Boration in accordance with S2.OP-AB.CR-0001 Attachment 5 (Reactor Operator) and Attachment 6 (Plant Operator)\n\nWhich ONE of the following completes the statements below?\n\nIn accordance with S2.OP-AB.CR-0001 Attachment 6, the crew will perform the Emergency Boration for a duration of _(1)_ minutes.\n\nDuring the Emergency Boration, the RO will throttle 2CV55 (Cent Chg Pmp Flow Cont Valve) by adjusting the 2CV55 Manual HAND/AIR Regulator Controller located at Panel _(2)_.\n\nNOTE:\n\n• Panel 213-2 = Unit 2 Hot Shutdown Panel\n\n• Panel 216-2 = Unit 2 Chg Pmps FL & PR Inst Panel\n\n | (1) | (2)",
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
         "B"
@@ -4544,7 +4544,7 @@
       "questionNumber": 68,
       "track": "RO",
       "title": "2018 Q68 — SG Tube Leak Letdown Reduction and SI Initiation",
-      "stemText": "Given:\n\nAt time 11:00\n\n• The crew is attempting to control PZR level in accordance with S2.OP-AB.SG-0001 (Steam Generator Tube Leak)\n\nAt time 11:02\n\n• PZR level can NOT be maintained\n\n• The crew has TRIPPED the Reactor and the Reactor Trip has been confirmed\n\nIn accordance with S2.OP-AB.SG-0001, which ONE of the following completes the statements below?\n\nAt 11:00, the crew will _(1)_ letdown.\n\nAt 11:02, the crew _(2)_ initiate a Safety Injection prior to transitioning to 2-EOP-TRIP-1 (Reactor Trip or Safety Injection).\n\n(1) | (2)",
+      "stemText": "Given:\n\nAt time 11:00\n\n• The crew is attempting to control PZR level in accordance with S2.OP-AB.SG-0001 (Steam Generator Tube Leak)\n\nAt time 11:02\n\n• PZR level can NOT be maintained\n\n• The crew has TRIPPED the Reactor and the Reactor Trip has been confirmed\n\nIn accordance with S2.OP-AB.SG-0001, which ONE of the following completes the statements below?\n\nAt 11:00, the crew will _(1)_ letdown.\n\nAt 11:02, the crew _(2)_ initiate a Safety Injection prior to transitioning to 2-EOP-TRIP-1 (Reactor Trip or Safety Injection).\n\n | (1) | (2)",
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
         "C"
@@ -4614,7 +4614,7 @@
       "questionNumber": 69,
       "track": "RO",
       "title": "2018 Q69 — High RCS Activity Charging Pump Transfer and Letdown Maximization",
-      "stemText": "Given:\n\n• Unit 1 is at 100% Reactor Power and stable\n\n• The crew is performing S1.OP-AB.RC-0002 (High Activity In Reactor Coolant System)\n\n• 13 Charging Pump is in service\n\n• 1CV4 (75 GPM ORIFICE) is in service\n\n• Chemistry has just reported that the confirmatory sample has confirmed increasing activity in the RCS but below LCO 3.4.9 (Specific Activity) limits\n\nIn accordance with S1.OP-AB.RC-0002, which ONE of the following completes the statements below?\n\nThe crew _(1)_ required to place either 11 Charging Pump or 12 Charging Pump in service and secure the 13 Charging Pump.\n\nIn addition to 1CV4, the crew _(2)_ required to also place 1CV3 (45 GPM ORIFICE) in service.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• Unit 1 is at 100% Reactor Power and stable\n\n• The crew is performing S1.OP-AB.RC-0002 (High Activity In Reactor Coolant System)\n\n• 13 Charging Pump is in service\n\n• 1CV4 (75 GPM ORIFICE) is in service\n\n• Chemistry has just reported that the confirmatory sample has confirmed increasing activity in the RCS but below LCO 3.4.9 (Specific Activity) limits\n\nIn accordance with S1.OP-AB.RC-0002, which ONE of the following completes the statements below?\n\nThe crew _(1)_ required to place either 11 Charging Pump or 12 Charging Pump in service and secure the 13 Charging Pump.\n\nIn addition to 1CV4, the crew _(2)_ required to also place 1CV3 (45 GPM ORIFICE) in service.\n\n | (1) | (2)",
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
         "A"
@@ -4684,7 +4684,7 @@
       "questionNumber": 70,
       "track": "RO",
       "title": "2018 Q70 — LOCA-2 T-COLD Cooldown Rate and BYPASS TAVG Pushbuttons",
-      "stemText": "Given:\n\n• The crew is performing the RCS Cooldown To Cold Shutdown Steps of 2-EOP-LOCA-2 (Post LOCA Cooldown and Depressurization)\n\n• Condenser Steam Dumps are available\n\nTRAIN A\n---\nBYPASS\nTAVG\nTRAIN B\n---\nBYPASS\nTAVG\n\nWhich ONE of the following completes the statements below?\n\nIn accordance with 2-EOP-LOCA-2, the crew will maintain T-COLD Cooldown Rate less than a MAXIMUM of _(1)_ °F / HR.\n\nDepressing BEZEL Pushbutton(s) _(2)_ is/are the MINIMUM pushbutton manipulation(s) required to have the Condenser Steam Dumps function when TAVG is less than 543 °F.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• The crew is performing the RCS Cooldown To Cold Shutdown Steps of 2-EOP-LOCA-2 (Post LOCA Cooldown and Depressurization)\n\n• Condenser Steam Dumps are available\n\nTRAIN A\n---\nBYPASS\nTAVG\nTRAIN B\n---\nBYPASS\nTAVG\n\nWhich ONE of the following completes the statements below?\n\nIn accordance with 2-EOP-LOCA-2, the crew will maintain T-COLD Cooldown Rate less than a MAXIMUM of _(1)_ °F / HR.\n\nDepressing BEZEL Pushbutton(s) _(2)_ is/are the MINIMUM pushbutton manipulation(s) required to have the Condenser Steam Dumps function when TAVG is less than 543 °F.\n\n | (1) | (2)",
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
         "D"
@@ -9156,7 +9156,7 @@
       "questionNumber": 34,
       "track": "RO",
       "title": "2019 Q34 — Steam Dump I/P Converter Power",
-      "stemText": "Given:\n\nWhich ONE of the following completes the statement below?\n\nThe Steam Dump I/P converters are powered by _(1)_ and a loss of power to the Steam Dump I/P converters will cause the Steam Dumps to fail _(2)_.\n\n(1) | (2)",
+      "stemText": "Given:\n\nWhich ONE of the following completes the statement below?\n\nThe Steam Dump I/P converters are powered by _(1)_ and a loss of power to the Steam Dump I/P converters will cause the Steam Dumps to fail _(2)_.\n\n | (1) | (2)",
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
         "A"
@@ -9296,7 +9296,7 @@
       "questionNumber": 36,
       "track": "RO",
       "title": "2019 Q36 — FHB Ventilation 2R9 Alarm",
-      "stemText": "Given:\n\n• 21 Fuel Handling Area Exhaust Fan is in service\n\n• 22 Fuel Handling Area Exhaust Fan is in standby\n\n• 21 HEPA ONLY Filter Unit is in service\n\n• HEPA 22 PLUS CHAR is in standby\n\nAt time 17:00\n\n• 2R9 (Fuel Storage Area Monitor) goes into alarm\n\nWhich ONE of the following completes the statement below?\n\nFive Minutes later at 17:05, _(1)_ Fuel Handling Area Exhaust Fan(s) and _(2)_ Filter Unit(s) is/are in service.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• 21 Fuel Handling Area Exhaust Fan is in service\n\n• 22 Fuel Handling Area Exhaust Fan is in standby\n\n• 21 HEPA ONLY Filter Unit is in service\n\n• HEPA 22 PLUS CHAR is in standby\n\nAt time 17:00\n\n• 2R9 (Fuel Storage Area Monitor) goes into alarm\n\nWhich ONE of the following completes the statement below?\n\nFive Minutes later at 17:05, _(1)_ Fuel Handling Area Exhaust Fan(s) and _(2)_ Filter Unit(s) is/are in service.\n\n | (1) | (2)",
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
         "C"
@@ -9429,7 +9429,7 @@
       "questionNumber": 38,
       "track": "RO",
       "title": "2019 Q38 — Fire Pump Auto Start and Shutdown",
-      "stemText": "Given:\n\n• Firefighting activities are in progress\n\n• Fire Water Header pressure had lowered to a MINIMUM of 80 psig and it is now slowly rising.\n\nWhich ONE of the following completes the statements below?\n\nFire Pump #1 _(1)_ is/are running.\n\nAfter firefighting activities are complete, the running Fire Pump(s) can be shutdown LOCALLY _(2)_.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• Firefighting activities are in progress\n\n• Fire Water Header pressure had lowered to a MINIMUM of 80 psig and it is now slowly rising.\n\nWhich ONE of the following completes the statements below?\n\nFire Pump #1 _(1)_ is/are running.\n\nAfter firefighting activities are complete, the running Fire Pump(s) can be shutdown LOCALLY _(2)_.\n\n | (1) | (2)",
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
         "B"
@@ -9492,7 +9492,7 @@
       "questionNumber": 39,
       "track": "RO",
       "title": "2019 Q39 — Pertinent Information Standing Order",
-      "stemText": "Given:\n\n• A Temporary Administrative requirement needs to be implemented for the next 30 days\n\nIn accordance with OP-AA-102-104 (PERTINENT INFORMATION PROGRAM), which ONE of the following completes the statement below?\n\nThe _(1)_ or their designees will prepare and approve a _(2)_ Order to address the Temporary Administrative requirement.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• A Temporary Administrative requirement needs to be implemented for the next 30 days\n\nIn accordance with OP-AA-102-104 (PERTINENT INFORMATION PROGRAM), which ONE of the following completes the statement below?\n\nThe _(1)_ or their designees will prepare and approve a _(2)_ Order to address the Temporary Administrative requirement.\n\n | (1) | (2)",
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
         "A"
@@ -9547,7 +9547,7 @@
       "questionNumber": 40,
       "track": "RO",
       "title": "2019 Q40 — Steam Dump Bypass Valve Failure",
-      "stemText": "Given:\n\n• Unit 2 is at 60% Reactor Power and stable\n\nAt time 10:00:00\n\n• 23TB40 (Turbine Bypass Valve) goes fully open\n\nWhich ONE of the following completes the statements below?\n\nWith 23TB40 open, Reactor power will rise _(1)_ 60% power.\n\nConsidering ONLY the Steam Dump system design, 23TB40 will FIRST close when depressing BEZEL \"OFF & RESET BYPASS TAVG\" Pushbutton(s) _(2)_.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• Unit 2 is at 60% Reactor Power and stable\n\nAt time 10:00:00\n\n• 23TB40 (Turbine Bypass Valve) goes fully open\n\nWhich ONE of the following completes the statements below?\n\nWith 23TB40 open, Reactor power will rise _(1)_ 60% power.\n\nConsidering ONLY the Steam Dump system design, 23TB40 will FIRST close when depressing BEZEL \"OFF & RESET BYPASS TAVG\" Pushbutton(s) _(2)_.\n\n | (1) | (2)",
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
         "B"
@@ -10328,7 +10328,7 @@
       "questionNumber": 52,
       "track": "RO",
       "title": "2019 Q52 — LOCA-3 SEC Reset and Blackout Loading",
-      "stemText": "Given:\n\n• A LBLOCA is in progress at Unit 2\n\nAt time 10:00\n\n• The crew has just reset SI and ALL SECs in accordance with 2-EOP-LOCA-3 (Transfer To Cold Leg Recirculation)\n\nAt time 10:05\n\n• 2A 4KV Vital Bus de-energizes due to a SPURIOUS isolation from off-site power\n\nIn accordance with 2-EOP-LOCA-3, which ONE of the following completes the statements below?\n\nAt 10:00 and after resetting ALL of the SECs, the crew _(1)_ REQUIRED to ensure that the 230V control centers are reset.\n\nAfter the 2A EDG loading is completed, the ECCS pumps on 2A 4KV Vital Bus _(2)_.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• A LBLOCA is in progress at Unit 2\n\nAt time 10:00\n\n• The crew has just reset SI and ALL SECs in accordance with 2-EOP-LOCA-3 (Transfer To Cold Leg Recirculation)\n\nAt time 10:05\n\n• 2A 4KV Vital Bus de-energizes due to a SPURIOUS isolation from off-site power\n\nIn accordance with 2-EOP-LOCA-3, which ONE of the following completes the statements below?\n\nAt 10:00 and after resetting ALL of the SECs, the crew _(1)_ REQUIRED to ensure that the 230V control centers are reset.\n\nAfter the 2A EDG loading is completed, the ECCS pumps on 2A 4KV Vital Bus _(2)_.\n\n | (1) | (2)",
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
         "B"
@@ -10412,7 +10412,7 @@
       "questionNumber": 53,
       "track": "RO",
       "title": "2019 Q53 — RCP Shaft Shear Delta-T and SG Shrink",
-      "stemText": "Given:\n\n• Unit 1 is at 25% Reactor Power and rising due to a plant startup\n\nAt time 17:00:00\n\n• 13 RCP shaft shears\n\nWhich ONE of the following completes the statements below?\n\n13 RCS Loop ΔT will _(1)_ and 13 SG NR Level will INITIALLY _(2)_.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• Unit 1 is at 25% Reactor Power and rising due to a plant startup\n\nAt time 17:00:00\n\n• 13 RCP shaft shears\n\nWhich ONE of the following completes the statements below?\n\n13 RCS Loop ΔT will _(1)_ and 13 SG NR Level will INITIALLY _(2)_.\n\n | (1) | (2)",
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
         "A"
@@ -10552,7 +10552,7 @@
       "questionNumber": 55,
       "track": "RO",
       "title": "2019 Q55 — CC131 Thermal Barrier Flow and RCP Trip Criteria",
-      "stemText": "Given:\n\n• Unit 2 is at 100% Reactor Power\n\nAt time 15:00\n\n• 2CC131 Console Alarm, \"Discharge Flow Hi\", actuates\n\nAt time 15:01\n\n• The crew has completed the Alarm Response Procedure for the 2CC131 Console Alarm and has transitioned to S2.OP-AB.RCP-0001 (Reactor Coolant Pump Abnormality)\n\nWhich ONE of the following completes the statements below?\n\n2CC131 (RCP THERMAL BARRIER VALVE) AUTOMATICALLY closed when CC flow from the RCP Thermal Barrier reached a MINIMUM of _(1)_ gpm.\n\nIn accordance with S2.OP-AB.RCP-0001 CAS, the crew _(2)_ required to secure ALL RCPs within 2 minutes.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• Unit 2 is at 100% Reactor Power\n\nAt time 15:00\n\n• 2CC131 Console Alarm, \"Discharge Flow Hi\", actuates\n\nAt time 15:01\n\n• The crew has completed the Alarm Response Procedure for the 2CC131 Console Alarm and has transitioned to S2.OP-AB.RCP-0001 (Reactor Coolant Pump Abnormality)\n\nWhich ONE of the following completes the statements below?\n\n2CC131 (RCP THERMAL BARRIER VALVE) AUTOMATICALLY closed when CC flow from the RCP Thermal Barrier reached a MINIMUM of _(1)_ gpm.\n\nIn accordance with S2.OP-AB.RCP-0001 CAS, the crew _(2)_ required to secure ALL RCPs within 2 minutes.\n\n | (1) | (2)",
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
         "C"
@@ -13239,7 +13239,7 @@
       "questionNumber": 94,
       "track": "SRO",
       "title": "2019 Q94 — STA Staffing Requirements",
-      "stemText": "Given:\n\n• Units 1 and 2 are at 100% Power\n\n• John Doe is a licensed SRO who is also a qualified STA\n\nIn accordance with Technical Specifications, which ONE of the following completes the statements below?\n\nJohn Doe _(1)_ fill the STA minimum staffing requirement on Unit 1 and Unit 2 concurrently.\n\nJohn Doe _(2)_ fill the STA minimum staffing requirement on Unit 2 while concurrently filling the SRO minimum staffing requirement on Unit 2.\n\n(1) | (2)",
+      "stemText": "Given:\n\n• Units 1 and 2 are at 100% Power\n\n• John Doe is a licensed SRO who is also a qualified STA\n\nIn accordance with Technical Specifications, which ONE of the following completes the statements below?\n\nJohn Doe _(1)_ fill the STA minimum staffing requirement on Unit 1 and Unit 2 concurrently.\n\nJohn Doe _(2)_ fill the STA minimum staffing requirement on Unit 2 while concurrently filling the SRO minimum staffing requirement on Unit 2.\n\n | (1) | (2)",
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
         "C"

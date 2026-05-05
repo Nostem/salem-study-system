@@ -104,10 +104,12 @@ def _strip_inline_html(value: str) -> str:
 def _html_table_to_text(match: re.Match[str]) -> str:
     rows: List[str] = []
     for row_html in re.findall(r"<tr[^>]*>(.*?)</tr>", match.group(0), flags=re.DOTALL | re.IGNORECASE):
-        cells = re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", row_html, flags=re.DOTALL | re.IGNORECASE)
-        row = " | ".join(_strip_inline_html(cell) for cell in cells if _strip_inline_html(cell))
-        if row:
-            rows.append(row)
+        cells = [
+            _strip_inline_html(cell)
+            for cell in re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", row_html, flags=re.DOTALL | re.IGNORECASE)
+        ]
+        if any(cells):
+            rows.append(" | ".join(cells))
     return "\n" + "\n".join(rows) + "\n"
 
 

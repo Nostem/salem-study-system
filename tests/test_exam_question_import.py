@@ -71,6 +71,14 @@ class ExamQuestionImportTests(unittest.TestCase):
         self.assertIn("2B Control Air Header | 103 psig | 93 psig | 85 psig | 79 psig", parsed["stem_text"])
         self.assertNotIn("Time10:0010:05", parsed["stem_text"])
 
+    def test_parse_question_markdown_preserves_blank_table_cells_in_stems(self):
+        parsed = parse_question_markdown(ROOT / "wiki/exams/2018/q10-rps-pzr-press-channel-failure.md")
+
+        self.assertIn("CH I | CH II | CH III | CH IV | ", parsed["stem_text"])
+        self.assertIn("2PT-455 | 2PT-456 | 2PT-457 | 2PT-474 | 2PT-1648", parsed["stem_text"])
+        self.assertIn("2235 PSIG | 0 PSIG | 2235 PSIG | 2235 PSIG | 2235 PSIG", parsed["stem_text"])
+        self.assertNotIn("CH I | CH II | CH III | CH IV\n2PT-455", parsed["stem_text"])
+
     def test_parse_question_markdown_handles_multiple_correct_answers(self):
         parsed = parse_question_markdown(ROOT / "wiki/exams/2022/q88-loss-of-control-air-pzr-level.md")
 
