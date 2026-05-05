@@ -122,3 +122,6 @@ review the ufsar as necessary to fill in basics
 - Stator Cooling Water (differences between unit 1 and 2, have different sections in the wiki for each unit)
 - Waste Gas
 - Waste Liquid
+
+## Create Acc Link
+https://nostem.github.io/salem-study-system/create-account-925e867b3f131dd970800516/
