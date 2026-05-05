@@ -91,7 +91,7 @@ def parse_frontmatter(markdown: str) -> Tuple[Dict[str, Any], str]:
     return dict(fm), markdown[match.end():]
 
 
-def strip_html(value: str) -> str:
+def _strip_inline_html(value: str) -> str:
     value = re.sub(r"<br\s*/?>", "\n", value, flags=re.IGNORECASE)
     value = re.sub(r"&bull;", "•", value)
     value = re.sub(r"<[^>]+>", "", value)
@@ -99,6 +99,21 @@ def strip_html(value: str) -> str:
     value = re.sub(r"[ \t]+", " ", value)
     value = re.sub(r"\n\s*\n+", "\n\n", value)
     return value.strip()
+
+
+def _html_table_to_text(match: re.Match[str]) -> str:
+    rows: List[str] = []
+    for row_html in re.findall(r"<tr[^>]*>(.*?)</tr>", match.group(0), flags=re.DOTALL | re.IGNORECASE):
+        cells = re.findall(r"<t[hd][^>]*>(.*?)</t[hd]>", row_html, flags=re.DOTALL | re.IGNORECASE)
+        row = " | ".join(_strip_inline_html(cell) for cell in cells if _strip_inline_html(cell))
+        if row:
+            rows.append(row)
+    return "\n" + "\n".join(rows) + "\n"
+
+
+def strip_html(value: str) -> str:
+    value = re.sub(r"<table\b[^>]*>.*?</table>", _html_table_to_text, value, flags=re.DOTALL | re.IGNORECASE)
+    return _strip_inline_html(value)
 
 
 def _bool_from_frontmatter(value: Any) -> bool | None:

@@ -90,6 +90,23 @@ test('two-part fill-in markers are highlighted in stems and answer choices', asy
   expect(chipStyles.display).toBe('inline-block');
 });
 
+test('quiz stem preserves imported table cell boundaries', async ({ page }) => {
+  await authenticateQuizUser(page);
+  // Seed 72 puts draft 2018 Q61 first under the default quiz filters.
+  await page.goto('quiz/?seed=72');
+
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await expect(page.getByLabel('Include draft imported questions')).toBeChecked();
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.getByTestId('question-meta')).toContainText('2018 Q61');
+  await expect(page.locator('#question-stem')).toContainText('Time | 10:00 | 10:05 | 10:10 | 10:15');
+  await expect(page.locator('#question-stem')).toContainText('2A Control Air Header | 99 psig | 88 psig | 79 psig | 72 psig');
+  await expect(page.locator('#question-stem')).toContainText('2B Control Air Header | 103 psig | 93 psig | 85 psig | 79 psig');
+  await expect(page.locator('#question-stem')).not.toContainText('Time10:0010:05');
+});
+
 test('topic filter supports multiple wiki-formatted topic selections without duplicates or abnormal procedures', async ({ page }) => {
   await authenticateQuizUser(page);
   await page.goto('quiz/');

@@ -62,6 +62,15 @@ class ExamQuestionImportTests(unittest.TestCase):
         self.assertFalse(parsed["is_edited"])
         self.assertFalse(parsed["requires_reference"])
         self.assertEqual(parsed["official_answer_label"], "D")
+
+    def test_parse_question_markdown_preserves_table_cell_boundaries_in_stems(self):
+        parsed = parse_question_markdown(ROOT / "wiki/exams/2018/q61-loss-of-control-air-ecac-trip.md")
+
+        self.assertIn("Time | 10:00 | 10:05 | 10:10 | 10:15", parsed["stem_text"])
+        self.assertIn("2A Control Air Header | 99 psig | 88 psig | 79 psig | 72 psig", parsed["stem_text"])
+        self.assertIn("2B Control Air Header | 103 psig | 93 psig | 85 psig | 79 psig", parsed["stem_text"])
+        self.assertNotIn("Time10:0010:05", parsed["stem_text"])
+
     def test_parse_question_markdown_handles_multiple_correct_answers(self):
         parsed = parse_question_markdown(ROOT / "wiki/exams/2022/q88-loss-of-control-air-pzr-level.md")
 
