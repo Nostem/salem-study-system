@@ -214,12 +214,12 @@ const scenarioSlugs: Record<string, string[]> = {
   <div class="max-w-[1100px] mx-auto px-8 py-10">
 
     <!-- HEADER -->
-    <div class="flex items-end justify-between mb-8 pb-6 border-b border-border">
-      <div>
-        <h1 class="font-mono text-[13px] font-medium tracking-[0.18em] text-text-primary m-0">SALEM STUDY WIKI</h1>
+    <div class="flex flex-col gap-4 mb-8 pb-6 border-b border-border sm:flex-row sm:items-end sm:justify-between">
+      <div class="shrink-0">
+        <h1 class="font-mono text-[13px] font-medium tracking-[0.18em] text-text-primary m-0 whitespace-nowrap">SALEM STUDY WIKI</h1>
         <p class="text-text-muted text-sm mt-1 m-0">{totalArticles} articles · {examYears.length} exams · {counts['systems'] || 0} systems</p>
       </div>
-      <div class="flex-1 max-w-[360px] mx-6">
+      <div class="w-full sm:flex-1 sm:max-w-[360px] sm:mx-6">
         <button
           id="home-search-trigger"
           class="w-full flex items-center gap-2.5 bg-bg-card border border-border rounded-md px-4 py-2.5 text-left cursor-pointer hover:border-border-hi transition-colors"
@@ -228,7 +228,7 @@ const scenarioSlugs: Record<string, string[]> = {
           <span class="text-text-muted text-sm">Search articles...</span>
         </button>
       </div>
-      <div class="flex gap-2">
+      <div class="flex flex-wrap gap-2">
         <a href={`${base}graph`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Graph View</a>
         <a href={`${base}quiz`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Quiz Builder</a>
         <a href={`${base}plant`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Plant Overview</a>
