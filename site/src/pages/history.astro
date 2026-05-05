@@ -1,0 +1,215 @@
+---
+import ArticleLayout from '../layouts/ArticleLayout.astro';
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+---
+
+<ArticleLayout
+  title="My Progress"
+  category="navigation"
+  status="verified"
+  slug="history"
+  headings={[]}
+  wide={true}
+>
+  <section class="max-w-6xl space-y-6 text-[#c8cdd5]">
+    <div>
+      <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-[#2a6f97]">Quiz history</p>
+      <h1 class="mt-2 text-3xl font-semibold text-[#e0e4ea]">My Progress</h1>
+      <p class="mt-2 max-w-3xl text-sm text-[#8b95a5]">
+        Review completed quizzes, pass/fail trend, weak topics, and prior question-by-question results.
+      </p>
+    </div>
+
+    <div data-testid="history-login-required" class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-6">
+      <h2 class="text-xl font-semibold text-[#e0e4ea]">Log in to view your progress</h2>
+      <p class="mt-2 text-sm text-[#8b95a5]">
+        Quiz history is private and only shows attempts for your account.
+      </p>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <a href={`${base}login/`} class="rounded-lg border border-[#2a6f97] bg-[#102033] px-4 py-2 text-sm font-semibold text-[#d7ecff] no-underline hover:bg-[#132a44]">Log in</a>
+        <span class="text-xs text-[#6b7280]">If you do not have an account, contact site administrator through the Contact / Feedback form.</span>
+      </div>
+    </div>
+
+    <div data-testid="history-app" class="hidden space-y-6">
+      <div data-testid="history-summary" class="grid gap-3 md:grid-cols-4">
+        <div class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+          <div class="text-xs uppercase tracking-[0.18em] text-[#6b7280]">Completed</div>
+          <div data-history-summary="completed" class="mt-2 text-3xl font-semibold text-[#e0e4ea]">0</div>
+        </div>
+        <div class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+          <div class="text-xs uppercase tracking-[0.18em] text-[#6b7280]">Avg score</div>
+          <div data-history-summary="average" class="mt-2 text-3xl font-semibold text-[#e0e4ea]">0%</div>
+        </div>
+        <div class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+          <div class="text-xs uppercase tracking-[0.18em] text-[#6b7280]">Pass rate</div>
+          <div data-history-summary="pass-rate" class="mt-2 text-3xl font-semibold text-[#e0e4ea]">0%</div>
+        </div>
+        <div class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+          <div class="text-xs uppercase tracking-[0.18em] text-[#6b7280]">Answered</div>
+          <div data-history-summary="answered" class="mt-2 text-3xl font-semibold text-[#e0e4ea]">0</div>
+        </div>
+      </div>
+
+      <div class="grid gap-6 xl:grid-cols-[minmax(0,1fr)_320px]">
+        <section class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <h2 class="text-lg font-semibold text-[#e0e4ea]">Completed quizzes</h2>
+            <span data-history-last-completed class="font-mono text-[11px] text-[#6b7280]"></span>
+          </div>
+          <div data-testid="history-sessions" class="overflow-x-auto">
+            <table class="w-full min-w-[720px] border-collapse text-sm">
+              <thead class="text-left text-xs uppercase tracking-[0.16em] text-[#6b7280]">
+                <tr class="border-b border-[#1a2035]">
+                  <th class="py-2 pr-3">Date</th>
+                  <th class="py-2 pr-3">Quiz</th>
+                  <th class="py-2 pr-3">Mode</th>
+                  <th class="py-2 pr-3">Score</th>
+                  <th class="py-2 pr-3">Review</th>
+                </tr>
+              </thead>
+              <tbody data-history-sessions-body></tbody>
+            </table>
+          </div>
+          <p data-history-empty class="hidden py-8 text-center text-sm text-[#8b95a5]">No quiz attempts yet. Complete a quiz to start building your history.</p>
+        </section>
+
+        <aside data-testid="history-weak-topics" class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+          <h2 class="text-lg font-semibold text-[#e0e4ea]">Weak topics</h2>
+          <p class="mt-1 text-xs text-[#6b7280]">Topics with recent misses, sorted by miss count.</p>
+          <div data-history-weak-topics-list class="mt-4 space-y-3"></div>
+        </aside>
+      </div>
+
+      <section data-testid="history-review" class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+        <h2 class="text-lg font-semibold text-[#e0e4ea]">Session review</h2>
+        <p data-history-review-empty class="mt-2 text-sm text-[#8b95a5]">Select a quiz attempt to review question-level results.</p>
+        <div data-history-review-content class="mt-4 space-y-3"></div>
+      </section>
+    </div>
+  </section>
+
+  <script>
+    import { getQuizHistory, hasSupabaseConfig, type QuizHistoryResponse, type QuizHistorySession } from '../utils/auth-client';
+
+    const loginPanel = document.querySelector<HTMLElement>('[data-testid="history-login-required"]');
+    const app = document.querySelector<HTMLElement>('[data-testid="history-app"]');
+    const sessionsBody = document.querySelector<HTMLElement>('[data-history-sessions-body]');
+    const emptyState = document.querySelector<HTMLElement>('[data-history-empty]');
+    const reviewEmpty = document.querySelector<HTMLElement>('[data-history-review-empty]');
+    const reviewContent = document.querySelector<HTMLElement>('[data-history-review-content]');
+    const weakTopicsList = document.querySelector<HTMLElement>('[data-history-weak-topics-list]');
+
+    function formatPercent(value: number): string {
+      return `${Math.round((Number(value) || 0) * 100)}%`;
+    }
+
+    function escapeHtml(value: unknown): string {
+      return String(value ?? '').replace(/[&<>"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[char] ?? char));
+    }
+
+    function formatDate(value: string | null): string {
+      if (!value) return '—';
+      return new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }).format(new Date(value));
+    }
+
+    function renderSummary(data: QuizHistoryResponse): void {
+      document.querySelector<HTMLElement>('[data-history-summary="completed"]')!.textContent = String(data.summary.completedQuizzes);
+      document.querySelector<HTMLElement>('[data-history-summary="average"]')!.textContent = formatPercent(data.summary.averageScore);
+      document.querySelector<HTMLElement>('[data-history-summary="pass-rate"]')!.textContent = formatPercent(data.summary.passRate);
+      document.querySelector<HTMLElement>('[data-history-summary="answered"]')!.textContent = String(data.summary.questionsAnswered);
+      const last = document.querySelector<HTMLElement>('[data-history-last-completed]');
+      if (last) last.textContent = data.summary.lastCompletedAt ? `Last: ${formatDate(data.summary.lastCompletedAt)}` : '';
+    }
+
+    function scoreLine(session: QuizHistorySession): string {
+      const percentage = Math.round((Number(session.score) || 0) * 100);
+      return `Score: ${session.correctCount}/${session.answeredCount} (${percentage}%) · ${session.passStatus.toUpperCase()}`;
+    }
+
+    function renderSessions(sessions: QuizHistorySession[]): void {
+      if (!sessionsBody || !emptyState) return;
+      if (sessions.length === 0) {
+        emptyState.classList.remove('hidden');
+        sessionsBody.innerHTML = '';
+        return;
+      }
+      emptyState.classList.add('hidden');
+      sessionsBody.innerHTML = sessions.map((session) => `
+        <tr class="border-b border-[#172033] text-[#c8cdd5]">
+          <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(formatDate(session.completedAt))}</td>
+          <td class="py-3 pr-3 align-top">
+            <div class="font-medium text-[#e0e4ea]">${escapeHtml(session.filterSummary)}</div>
+            <div class="mt-1 text-xs text-[#6b7280]">${escapeHtml(session.quizType)} · ${session.totalQuestions} total</div>
+          </td>
+          <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(session.feedbackMode)}${session.completionMode === 'early' ? ' · Early finish' : ''}</td>
+          <td class="py-3 pr-3 align-top font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</td>
+          <td class="py-3 pr-3 align-top"><button type="button" data-review-session="${escapeHtml(session.id)}" class="rounded-md border border-[#2a6f97] px-3 py-1 text-xs text-[#d7ecff] hover:bg-[#102033]">Review ${escapeHtml(session.id)}</button></td>
+        </tr>
+      `).join('');
+    }
+
+    function renderWeakTopics(data: QuizHistoryResponse): void {
+      if (!weakTopicsList) return;
+      if (data.weakTopics.length === 0) {
+        weakTopicsList.innerHTML = '<p class="text-sm text-[#8b95a5]">No weak topics yet.</p>';
+        return;
+      }
+      weakTopicsList.innerHTML = data.weakTopics.map((topic) => `
+        <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
+          <div class="flex items-center justify-between gap-3">
+            <div class="font-medium text-[#e0e4ea]">${escapeHtml(topic.title)}</div>
+            <div class="font-mono text-xs text-[#fca5a5]">${formatPercent(topic.accuracy)}</div>
+          </div>
+          <div class="mt-1 text-xs text-[#6b7280]">${topic.misses} miss${topic.misses === 1 ? '' : 'es'} / ${topic.attempts} attempts</div>
+        </div>
+      `).join('');
+    }
+
+    function renderReview(session: QuizHistorySession): void {
+      if (!reviewEmpty || !reviewContent) return;
+      reviewEmpty.classList.add('hidden');
+      reviewContent.innerHTML = `
+        <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
+          <div class="font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</div>
+          <div class="mt-1 text-sm text-[#8b95a5]">${escapeHtml(session.filterSummary)}</div>
+        </div>
+        ${session.questions.map((question) => `
+          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
+            <div class="flex flex-wrap items-center justify-between gap-2">
+              <h3 class="font-semibold text-[#e0e4ea]">${question.position}. ${escapeHtml(question.displayTitle)}</h3>
+              <span class="rounded-full border px-2 py-0.5 text-[11px] uppercase ${question.status === 'correct' ? 'border-[#2f6f4f] text-[#8fd694]' : question.status === 'incorrect' ? 'border-[#7f2f2f] text-[#fca5a5]' : 'border-[#4b5563] text-[#9ca3af]'}">${escapeHtml(question.status === 'correct' ? 'Correct' : question.status)}</span>
+            </div>
+            <div class="mt-2 text-sm text-[#c8cdd5]">Selected: ${escapeHtml(question.selectedLabel ?? '—')}${question.selectedOriginalLabel ? ` · Original: ${escapeHtml(question.selectedOriginalLabel)}` : ''}</div>
+            <div class="mt-1 text-xs text-[#6b7280]">Accepted: ${escapeHtml(question.acceptedLabels.join(', ') || '—')}</div>
+            ${question.explanationText ? `<p class="mt-3 text-sm text-[#8b95a5]">${escapeHtml(question.explanationText)}</p>` : ''}
+          </div>
+        `).join('')}
+      `;
+    }
+
+    async function initHistory(): Promise<void> {
+      if (!hasSupabaseConfig()) return;
+      try {
+        const data = await getQuizHistory();
+        loginPanel?.classList.add('hidden');
+        app?.classList.remove('hidden');
+        renderSummary(data);
+        renderSessions(data.sessions);
+        renderWeakTopics(data);
+        sessionsBody?.addEventListener('click', (event) => {
+          const target = event.target as HTMLElement;
+          const button = target.closest<HTMLButtonElement>('[data-review-session]');
+          if (!button) return;
+          const session = data.sessions.find((candidate) => candidate.id === button.dataset.reviewSession);
+          if (session) renderReview(session);
+        });
+      } catch (error) {
+        loginPanel?.classList.remove('hidden');
+        app?.classList.add('hidden');
+      }
+    }
+
+    void initHistory();
+  </script>
+</ArticleLayout>

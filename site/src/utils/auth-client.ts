@@ -66,6 +66,52 @@ export type SubmitQuizResultsResponse = {
   score: number;
 };
 
+export type QuizHistoryQuestion = {
+  position: number;
+  displayTitle: string;
+  slug: string;
+  track?: string | null;
+  selectedLabel?: string | null;
+  selectedOriginalLabel?: string | null;
+  acceptedLabels: string[];
+  isCorrect: boolean;
+  status: 'correct' | 'incorrect' | 'unanswered';
+  explanationText?: string | null;
+  choiceOrder?: Record<string, string> | string[] | null;
+};
+
+export type QuizHistorySession = {
+  id: string;
+  title?: string | null;
+  completedAt: string | null;
+  feedbackMode: string;
+  quizType: string;
+  completionMode: 'completed' | 'early';
+  score: number;
+  scorePercent?: number;
+  correctCount: number;
+  answeredCount: number;
+  totalQuestions: number;
+  passStatus: 'pass' | 'fail';
+  filterSummary: string;
+  questions: QuizHistoryQuestion[];
+};
+
+export type QuizHistoryResponse = {
+  ok: boolean;
+  summary: {
+    completedQuizzes: number;
+    questionsAnswered: number;
+    averageScore: number;
+    passCount: number;
+    passRate: number;
+    lastCompletedAt: string | null;
+    overallAccuracy?: number;
+  };
+  weakTopics: Array<{ slug: string; title: string; attempts: number; misses: number; accuracy: number }>;
+  sessions: QuizHistorySession[];
+};
+
 const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
 
@@ -135,6 +181,14 @@ export async function submitQuizResults(payload: SubmitQuizResultsPayload): Prom
     throw new Error('not_authenticated');
   }
   return postFunction<SubmitQuizResultsResponse>('submit-quiz-results', payload, session.access_token);
+}
+
+export async function getQuizHistory(): Promise<QuizHistoryResponse> {
+  const session = await getCurrentSession();
+  if (!session?.access_token) {
+    throw new Error('not_authenticated');
+  }
+  return postFunction<QuizHistoryResponse>('quiz-history', {}, session.access_token);
 }
 
 export async function submitContactFeedback(payload: ContactFeedbackPayload): Promise<ContactFeedbackResponse> {

@@ -20,22 +20,38 @@ class InviteAuthArtifactTests(unittest.TestCase):
         self.assertRegex(migrations, r"alter table\s+public\.invites\s+alter column code\s+drop not null", re.I)
         self.assertNotRegex(migrations, r"email\s+text\s+not null", re.I)
 
-    def test_edge_functions_create_accounts_without_invite_ids_and_login_by_username_without_exposing_service_role_to_browser(self):
-        signup_path = ROOT / "supabase/functions/invite-signup/index.ts"
-        login_path = ROOT / "supabase/functions/username-login/index.ts"
+    def read_text(self, relative_path: str) -> str:
+        return (ROOT / relative_path).read_text()
 
-        signup = signup_path.read_text()
-        login = login_path.read_text()
+    def test_edge_functions_create_accounts_without_invite_ids_and_login_by_username_without_exposing_service_role_to_browser(self):
+        signup = self.read_text("supabase/functions/invite-signup/index.ts")
+        login = self.read_text("supabase/functions/username-login/index.ts")
 
         self.assertIn("SUPABASE_SERVICE_ROLE_KEY", signup)
         self.assertNotIn("invite_code_required", signup)
         self.assertIn("learner_code", signup)
         self.assertIn("generateLearnerCode", signup)
-        self.assertIn("code_hash", signup)
-        self.assertIn("admin.createUser", signup)
+        self.assertIn("SUPABASE_SERVICE_ROLE_KEY", login)
+        self.assertIn("auth.admin.createUser", signup)
         self.assertIn("profiles", signup)
-        self.assertIn("accepted_by", signup)
-        self.assertNotIn("service_role", (ROOT / "site/src/utils/auth-client.ts").read_text().lower())
+        self.assertNotIn("SERVICE_ROLE", self.read_text("site/src/pages/create-account-925e867b3f131dd970800516.astro"))
+        self.assertNotIn("SERVICE_ROLE", self.read_text("site/src/pages/login.astro"))
+
+    def test_quiz_history_edge_function_is_user_scoped_and_returns_review_shape(self):
+        history = self.read_text("supabase/functions/quiz-history/index.ts")
+        client = self.read_text("site/src/utils/auth-client.ts")
+
+        self.assertIn("SUPABASE_SERVICE_ROLE_KEY", history)
+        self.assertIn("auth.getUser(accessToken)", history)
+        self.assertRegex(history, r"\.eq\('user_id',\s*userId\)")
+        self.assertIn("quiz_session_questions", history)
+        self.assertIn("question_attempts", history)
+        self.assertIn("weakTopics", history)
+        self.assertIn("passStatus", history)
+        self.assertIn("getQuizHistory", client)
+
+    def test_username_login_function_returns_session_tokens(self):
+        login = self.read_text("supabase/functions/username-login/index.ts")
 
         self.assertIn("username", login)
         self.assertIn("internal_auth_email", login)

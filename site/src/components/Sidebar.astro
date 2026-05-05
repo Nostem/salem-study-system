@@ -92,6 +92,11 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
                       currentSlug === 'quiz' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
         <span class="font-mono text-accent-teal">&#9635;</span> Quiz Builder
       </a>
+      <a href={`${base}history`}
+         class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',
+                      currentSlug === 'history' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
+        <span class="font-mono text-accent-teal">&#8599;</span> My Progress
+      </a>
       <a href={`${base}plant`}
          class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',
                       currentSlug === 'plant' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
