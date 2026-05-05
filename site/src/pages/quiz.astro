@@ -32,8 +32,9 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
         <h1 class="font-serif text-4xl text-text-primary leading-tight mt-3 mb-1">Quiz Builder</h1>
         <p class="text-sm text-text-muted max-w-2xl">
-          Account-gated quiz builder using the imported Salem written exam question bank. Attempts will feed the performance database as the persistence layer comes online.
+          Account-gated quiz builder using the imported Salem written exam question bank. Attempts feed your personal performance history and aggregate question analytics.
         </p>
+        <a href={`${base}history/`} class="quiz-secondary no-underline mt-4 inline-flex w-fit">View my progress</a>
       </div>
       <div class="grid grid-cols-3 gap-2 text-center">
         <div class="bg-bg-card border border-border rounded-md px-4 py-3">
