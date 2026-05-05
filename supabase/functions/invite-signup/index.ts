@@ -40,6 +40,15 @@ async function sha256Hex(value: string): Promise<string> {
     .join('');
 }
 
+function generateLearnerCode(): string {
+  const alphabet = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
+  const bytes = crypto.getRandomValues(new Uint8Array(8));
+  const suffix = Array.from(bytes)
+    .map((byte) => alphabet[byte % alphabet.length])
+    .join('');
+  return `SALEM-${suffix}`;
+}
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
   if (req.method !== 'POST') return jsonResponse({ error: 'method_not_allowed' }, 405);
@@ -62,7 +71,6 @@ Deno.serve(async (req) => {
   const password = body.password ?? '';
   const displayName = body.displayName?.trim() || username;
 
-  if (!inviteCode) return jsonResponse({ error: 'invite_code_required' }, 400);
   if (!isValidUsername(username)) return jsonResponse({ error: 'invalid_username' }, 400);
   if (password.length < 8) return jsonResponse({ error: 'password_too_short' }, 400);
 
@@ -70,7 +78,7 @@ Deno.serve(async (req) => {
     auth: { autoRefreshToken: false, persistSession: false },
   });
 
-  const code_hash = await sha256Hex(inviteCode);
+  const code_hash = inviteCode ? await sha256Hex(inviteCode) : null;
 
   const { data: existingProfile, error: profileLookupError } = await admin
     .from('profiles')
@@ -81,18 +89,31 @@ Deno.serve(async (req) => {
   if (profileLookupError) return jsonResponse({ error: 'profile_lookup_failed' }, 500);
   if (existingProfile) return jsonResponse({ error: 'username_taken' }, 409);
 
-  const { data: invite, error: inviteError } = await admin
-    .from('invites')
-    .select('id, code, code_hash, max_uses, uses_count, expires_at, revoked_at')
-    .or(`code_hash.eq.${code_hash},code.eq.${inviteCode}`)
-    .maybeSingle();
+  let invite: {
+    id: string;
+    code?: string | null;
+    code_hash?: string | null;
+    max_uses: number;
+    uses_count: number;
+    expires_at?: string | null;
+    revoked_at?: string | null;
+  } | null = null;
 
-  if (inviteError) return jsonResponse({ error: 'invite_lookup_failed' }, 500);
-  if (!invite) return jsonResponse({ error: 'invalid_invite_code' }, 401);
-  if (invite.revoked_at) return jsonResponse({ error: 'invite_revoked' }, 401);
-  if (invite.uses_count >= invite.max_uses) return jsonResponse({ error: 'invite_already_used' }, 409);
-  if (invite.expires_at && new Date(invite.expires_at).getTime() <= Date.now()) {
-    return jsonResponse({ error: 'invite_expired' }, 401);
+  if (inviteCode && code_hash) {
+    const { data: inviteRow, error: inviteError } = await admin
+      .from('invites')
+      .select('id, code, code_hash, max_uses, uses_count, expires_at, revoked_at')
+      .or(`code_hash.eq.${code_hash},code.eq.${inviteCode}`)
+      .maybeSingle();
+
+    if (inviteError) return jsonResponse({ error: 'invite_lookup_failed' }, 500);
+    if (!inviteRow) return jsonResponse({ error: 'invalid_invite_code' }, 401);
+    if (inviteRow.revoked_at) return jsonResponse({ error: 'invite_revoked' }, 401);
+    if (inviteRow.uses_count >= inviteRow.max_uses) return jsonResponse({ error: 'invite_already_used' }, 409);
+    if (inviteRow.expires_at && new Date(inviteRow.expires_at).getTime() <= Date.now()) {
+      return jsonResponse({ error: 'invite_expired' }, 401);
+    }
+    invite = inviteRow;
   }
 
   const internal_auth_email = `${username}.${crypto.randomUUID()}@salem-study.local`;
@@ -109,14 +130,16 @@ Deno.serve(async (req) => {
   }
 
   const userId = created.user.id;
+  const learner_code = generateLearnerCode();
 
   const { error: insertProfileError } = await admin.from('profiles').insert({
     id: userId,
     username,
     internal_auth_email,
+    learner_code,
     display_name: displayName,
     role: 'learner',
-    invite_id: invite.id,
+    invite_id: invite?.id ?? null,
   });
 
   if (insertProfileError) {
@@ -124,23 +147,25 @@ Deno.serve(async (req) => {
     return jsonResponse({ error: 'profile_create_failed' }, 500);
   }
 
-  const { error: updateInviteError } = await admin
-    .from('invites')
-    .update({
-      uses_count: invite.uses_count + 1,
-      accepted_by: userId,
-      accepted_username: username,
-      accepted_at: new Date().toISOString(),
-      code_hash: invite.code_hash ?? code_hash,
-    })
-    .eq('id', invite.id)
-    .eq('uses_count', invite.uses_count);
+  if (invite) {
+    const { error: updateInviteError } = await admin
+      .from('invites')
+      .update({
+        uses_count: invite.uses_count + 1,
+        accepted_by: userId,
+        accepted_username: username,
+        accepted_at: new Date().toISOString(),
+        code_hash: invite.code_hash ?? code_hash,
+      })
+      .eq('id', invite.id)
+      .eq('uses_count', invite.uses_count);
 
-  if (updateInviteError) {
-    await admin.from('profiles').delete().eq('id', userId);
-    await admin.auth.admin.deleteUser(userId);
-    return jsonResponse({ error: 'invite_claim_failed' }, 409);
+    if (updateInviteError) {
+      await admin.from('profiles').delete().eq('id', userId);
+      await admin.auth.admin.deleteUser(userId);
+      return jsonResponse({ error: 'invite_claim_failed' }, 409);
+    }
   }
 
-  return jsonResponse({ ok: true, username });
+  return jsonResponse({ ok: true, username, learnerCode: learner_code });
 });

@@ -3,25 +3,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 ---
 
-<BaseLayout title="Beta Signup">
+<BaseLayout title="Create Account" noindex>
   <main class="min-h-screen bg-[#07111f] text-slate-100 px-6 py-12">
     <section class="mx-auto max-w-xl rounded-2xl border border-slate-700/80 bg-slate-900/80 p-8 shadow-2xl">
-      <p class="mb-2 font-mono text-xs uppercase tracking-[0.22em] text-amber-300">Invite-only beta</p>
+      <p class="mb-2 font-mono text-xs uppercase tracking-[0.22em] text-amber-300">Private beta access</p>
       <h1 class="mb-3 text-3xl font-semibold text-white">Create your Salem Study account</h1>
       <p class="mb-8 text-sm leading-6 text-slate-300">
-        Use the unique beta invite ID you were given. No email is required for the learner-facing account.
+        Create a username and password for the Salem Study beta. No email is required. A unique learner ID will be created automatically and stored on the backend.
       </p>
 
       <div id="configWarning" class="mb-5 hidden rounded-lg border border-amber-400/40 bg-amber-400/10 p-3 text-sm text-amber-100">
-        Supabase public config is not set for this build yet. The form is ready, but signup calls need deployment env vars.
+        Supabase public config is not set for this build yet. The form is ready, but account creation calls need deployment env vars.
       </div>
 
-      <form id="signupForm" class="space-y-5">
-        <label class="block text-sm font-medium text-slate-200">
-          Invite ID
-          <input name="inviteCode" autocomplete="one-time-code" required class="mt-2 w-full rounded-lg border border-slate-600 bg-slate-950 px-4 py-3 font-mono text-sm text-white outline-none focus:border-amber-300" placeholder="SALEM-BETA-XXXX-XXXX" />
-        </label>
-
+      <form id="createAccountForm" data-login-url={`${base}login`} class="space-y-5">
         <label class="block text-sm font-medium text-slate-200">
           Username
           <input name="username" autocomplete="username" minlength="3" maxlength="32" pattern="[A-Za-z0-9_][A-Za-z0-9_-]{2,31}" required class="mt-2 w-full rounded-lg border border-slate-600 bg-slate-950 px-4 py-3 text-white outline-none focus:border-amber-300" placeholder="operator_one" />
@@ -39,14 +34,14 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         </label>
 
         <button class="w-full rounded-lg bg-amber-300 px-4 py-3 font-semibold text-slate-950 transition hover:bg-amber-200" type="submit">
-          Claim invite and create account
+          Create account
         </button>
       </form>
 
-      <p id="signupStatus" class="mt-5 min-h-6 text-sm text-slate-300" role="status"></p>
+      <p id="createAccountStatus" class="mt-5 min-h-6 text-sm text-slate-300" role="status"></p>
 
       <p class="mt-8 border-t border-slate-700 pt-5 text-sm text-slate-400">
-        Already claimed an invite? <a class="text-amber-300 hover:text-amber-200" href={`${base}login`}>Log in with username</a>.
+        Already have an account? <a class="text-amber-300 hover:text-amber-200" href={`${base}login`}>Log in with username</a>.
       </p>
     </section>
   </main>
@@ -54,8 +49,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
   <script>
     import { hasSupabaseConfig, signupWithInvite } from '../utils/auth-client';
 
-    const form = document.querySelector<HTMLFormElement>('#signupForm');
-    const status = document.querySelector<HTMLElement>('#signupStatus');
+    const form = document.querySelector<HTMLFormElement>('#createAccountForm');
+    const status = document.querySelector<HTMLElement>('#createAccountStatus');
     const warning = document.querySelector<HTMLElement>('#configWarning');
 
     if (!hasSupabaseConfig()) {
@@ -63,10 +58,6 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     }
 
     const messages: Record<string, string> = {
-      invalid_invite_code: 'That invite ID was not found.',
-      invite_already_used: 'That invite ID has already been claimed.',
-      invite_expired: 'That invite ID has expired.',
-      invite_revoked: 'That invite ID has been revoked.',
       username_taken: 'That username is already taken.',
       invalid_username: 'Use 3–32 characters: letters, numbers, underscore, or hyphen.',
       password_too_short: 'Password must be at least 8 characters.',
@@ -84,17 +75,16 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
       try {
         await signupWithInvite({
-          inviteCode: String(data.get('inviteCode') ?? ''),
           username: String(data.get('username') ?? ''),
           password: String(data.get('password') ?? ''),
           displayName: String(data.get('displayName') ?? ''),
         });
         status.textContent = 'Account created. Redirecting to login…';
         status.className = 'mt-5 min-h-6 text-sm text-emerald-300';
-        window.location.href = `${window.location.origin}${window.location.pathname.replace(/signup\/?$/, 'login')}`;
+        window.location.href = form.getAttribute('data-login-url') || 'login';
       } catch (error) {
         const key = error instanceof Error ? error.message : 'request_failed';
-        status.textContent = messages[key] ?? 'Signup failed. Check the invite ID and try again.';
+        status.textContent = messages[key] ?? 'Account creation failed. Try again or contact the site administrator.';
         status.className = 'mt-5 min-h-6 text-sm text-red-300';
       } finally {
         submit?.removeAttribute('disabled');

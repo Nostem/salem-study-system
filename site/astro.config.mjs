@@ -12,7 +12,11 @@ const wikilinkMap = buildWikilinkMap(basePath);
 export default defineConfig({
   site: 'https://nostem.github.io',
   base: basePath,
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      filter: (page) => !page.includes('/create-account-925e867b3f131dd970800516/'),
+    }),
+  ],
   vite: {
     plugins: [tailwindcss()],
   },

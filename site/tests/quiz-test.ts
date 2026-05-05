@@ -35,7 +35,9 @@ test('quiz page requires login before showing the quiz builder', async ({ page }
   await expect(page.getByTestId('quiz-login-required')).toBeVisible();
   await expect(page.getByRole('heading', { name: /Log in to use the quiz/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /Log in/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /Create account/i })).toBeVisible();
+  await expect(page.getByRole('link', { name: /Create account/i })).toHaveCount(0);
+  await expect(page.getByText(/do not have an account/i)).toBeVisible();
+  await expect(page.getByText(/contact site administrator/i)).toBeVisible();
   await expect(page.getByRole('button', { name: /Start quiz/i })).toBeHidden();
 });
 
@@ -188,6 +190,8 @@ test('completed quiz review submits results for persistent progress tracking', a
   await page.getByRole('button', { name: /Review results/i }).click();
 
   await expect(page.getByTestId('quiz-review')).toBeVisible();
+  await expect(page.locator('#review-score')).toContainText(/\(\d+%\)/);
+  await expect(page.locator('#review-score')).toContainText(/PASS|FAIL/);
   await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
   expect(submittedBodies).toHaveLength(1);
   expect(submittedBodies[0].feedbackMode).toBe('blind');
@@ -245,7 +249,7 @@ test('blind quiz finish early scores only answered questions and marks unanswere
   await page.getByRole('button', { name: /Finish early/i }).click();
 
   await expect(page.getByTestId('quiz-review')).toBeVisible();
-  await expect(page.locator('#review-score')).toContainText('Score: 1/1');
+  await expect(page.locator('#review-score')).toContainText('Score: 1/1 (100%) · PASS');
   await expect(page.locator('#review-score')).toContainText('Answered: 1/3');
   await expect(page.getByTestId('quiz-review')).toContainText('Selected: No answer');
   await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
@@ -423,7 +427,7 @@ test('blind mode withholds scoring until final review', async ({ page }) => {
   await expect(page.getByTestId('feedback-panel')).toBeHidden();
   await page.getByRole('button', { name: /Review results/i }).click();
   await expect(page.getByTestId('quiz-review')).toBeVisible();
-  await expect(page.getByTestId('quiz-review')).toContainText(/Score: \d+\/1/);
+  await expect(page.getByTestId('quiz-review')).toContainText(/Score: \d+\/1 \(\d+%\) · (PASS|FAIL)/);
   const explanation = page.getByTestId('review-explanation').first();
   await expect(explanation).toBeVisible();
   await expect(explanation).toContainText('Full explanation');

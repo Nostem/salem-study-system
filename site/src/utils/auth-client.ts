@@ -1,7 +1,7 @@
 import { createClient, type Session, type SupabaseClient } from '@supabase/supabase-js';
 
 export type InviteSignupPayload = {
-  inviteCode: string;
+  inviteCode?: string;
   username: string;
   password: string;
   displayName?: string;

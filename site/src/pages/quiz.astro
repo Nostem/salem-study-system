@@ -19,8 +19,10 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       </p>
       <div class="flex flex-wrap gap-3">
         <a class="quiz-primary no-underline" href={`${base}login/`}>Log in</a>
-        <a class="quiz-secondary no-underline" href={`${base}signup/`}>Create account</a>
       </div>
+      <p class="mt-5 text-sm text-text-muted">
+        If you do not have an account, contact site administrator through the Contact / Feedback form.
+      </p>
     </div>
   </section>
 
@@ -500,9 +502,11 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       const scoringQuestions = state.completionMode === 'early' ? answered : state.questions;
       const correctCount = scoringQuestions.filter((question) => isSelectedAnswerCorrect(question)).length;
       const scoreDenominator = Math.max(1, scoringQuestions.length);
+      const scorePercent = Math.round((correctCount / scoreDenominator) * 100);
+      const passStatus = scorePercent >= 80 ? 'PASS' : 'FAIL';
       sessionEl.classList.add('hidden');
       reviewEl.classList.remove('hidden');
-      const scoreText = `Score: ${correctCount}/${scoreDenominator}`;
+      const scoreText = `Score: ${correctCount}/${scoreDenominator} (${scorePercent}%) · ${passStatus}`;
       document.getElementById('review-score').textContent = state.completionMode === 'early'
         ? `${scoreText} · Answered: ${answered.length}/${state.questions.length}`
         : scoreText;
