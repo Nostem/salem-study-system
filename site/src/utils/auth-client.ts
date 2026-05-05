@@ -191,6 +191,29 @@ export async function getQuizHistory(): Promise<QuizHistoryResponse> {
   return postFunction<QuizHistoryResponse>('quiz-history', {}, session.access_token);
 }
 
+export type SystemReviewsResponse = {
+  ok: boolean;
+  reviews: Record<string, string>;
+};
+
+export type MarkSystemReviewedResponse = {
+  ok: boolean;
+  slug: string;
+  lastReviewedAt: string;
+};
+
+export async function getSystemReviews(): Promise<SystemReviewsResponse> {
+  const session = await getCurrentSession();
+  if (!session?.access_token) throw new Error('not_authenticated');
+  return postFunction<SystemReviewsResponse>('get-system-reviews', {}, session.access_token);
+}
+
+export async function markSystemReviewed(slug: string): Promise<MarkSystemReviewedResponse> {
+  const session = await getCurrentSession();
+  if (!session?.access_token) throw new Error('not_authenticated');
+  return postFunction<MarkSystemReviewedResponse>('mark-system-reviewed', { slug }, session.access_token);
+}
+
 export async function submitContactFeedback(payload: ContactFeedbackPayload): Promise<ContactFeedbackResponse> {
   let accessToken: string | undefined;
   try {

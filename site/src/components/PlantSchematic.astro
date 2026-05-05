@@ -1,103 +1,104 @@
 ---
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
-// System blocks: [x, y, w, h, displayName, mockMastery, group, articleSlug]
-// TODO: derive mastery from progress data; derive articleSlug from frontmatter
-const systems: [number, number, number, number, string, number, string, string][] = [
+// System blocks: [x, y, w, h, displayName, group, articleSlug]
+// Color and "last reviewed" text are filled in client-side from per-user data.
+const systems: [number, number, number, number, string, string, string][] = [
   // Primary
-  [40, 60, 90, 42, 'Rx Vessel', 85, 'primary', 'systems/rx-vessel-and-internals'],
-  [150, 60, 90, 42, 'RCPs', 72, 'primary', 'systems/reactor-coolant-pumps'],
-  [260, 60, 90, 42, 'PZR', 68, 'primary', 'systems/pressurizer-and-prt'],
-  [40, 115, 90, 42, 'RCS', 72, 'primary', 'systems/reactor-coolant-system'],
-  [150, 115, 90, 42, 'SG', 58, 'primary', 'systems/steam-generators'],
-  [260, 115, 90, 42, 'CVCS', 60, 'primary', 'systems/chemical-and-volume-control-system'],
+  [40, 60, 90, 42, 'Rx Vessel', 'primary', 'systems/rx-vessel-and-internals'],
+  [150, 60, 90, 42, 'RCPs', 'primary', 'systems/reactor-coolant-pumps'],
+  [260, 60, 90, 42, 'PZR', 'primary', 'systems/pressurizer-and-prt'],
+  [40, 115, 90, 42, 'RCS', 'primary', 'systems/reactor-coolant-system'],
+  [150, 115, 90, 42, 'SG', 'primary', 'systems/steam-generators'],
+  [260, 115, 90, 42, 'CVCS', 'primary', 'systems/chemical-and-volume-control-system'],
 
   // Control
-  [380, 60, 90, 42, 'RPS / SSPS', 74, 'control', 'systems/rps-ssps'],
-  [490, 60, 90, 42, 'Excore NIs', 80, 'control', 'systems/excore-nis'],
-  [380, 115, 90, 42, 'Rod Ctrl', 55, 'control', 'systems/control-rod-drive'],
-  [490, 115, 90, 42, 'AMSAC', 38, 'control', 'systems/amsac'],
+  [380, 60, 90, 42, 'RPS / SSPS', 'control', 'systems/rps-ssps'],
+  [490, 60, 90, 42, 'Excore NIs', 'control', 'systems/excore-nis'],
+  [380, 115, 90, 42, 'Rod Ctrl', 'control', 'systems/control-rod-drive'],
+  [490, 115, 90, 42, 'AMSAC', 'control', 'systems/amsac'],
 
   // Emergency
-  [40, 200, 90, 42, 'ECCS', 41, 'emergency', 'systems/emergency-core-cooling-systems'],
-  [150, 200, 90, 42, 'RHR', 65, 'emergency', 'systems/residual-heat-removal'],
-  [260, 200, 90, 42, 'CCW', 72, 'emergency', 'systems/component-cooling-water'],
-  [380, 200, 90, 42, 'Cont. Spray', 88, 'emergency', 'systems/containment-spray'],
-  [490, 200, 90, 42, 'CFCUs', 70, 'emergency', 'systems/containment-fan-coil-units'],
-  [40, 255, 90, 42, 'Service Water', 82, 'emergency', 'systems/service-water'],
-  [150, 255, 90, 42, 'Containment', 64, 'emergency', 'systems/containment-systems'],
-  [260, 255, 90, 42, 'SFP', 55, 'emergency', 'systems/spent-fuel-pool'],
+  [40, 220, 90, 42, 'ECCS', 'emergency', 'systems/emergency-core-cooling-systems'],
+  [150, 220, 90, 42, 'RHR', 'emergency', 'systems/residual-heat-removal'],
+  [260, 220, 90, 42, 'CCW', 'emergency', 'systems/component-cooling-water'],
+  [380, 220, 90, 42, 'Cont. Spray', 'emergency', 'systems/containment-spray'],
+  [490, 220, 90, 42, 'CFCUs', 'emergency', 'systems/containment-fan-coil-units'],
+  [40, 275, 90, 42, 'Service Water', 'emergency', 'systems/service-water'],
+  [150, 275, 90, 42, 'Containment', 'emergency', 'systems/containment-systems'],
+  [260, 275, 90, 42, 'SFP', 'emergency', 'systems/spent-fuel-pool'],
 
   // Secondary
-  [610, 60, 90, 42, 'Main Steam', 66, 'secondary', 'systems/main-steam'],
-  [720, 60, 90, 42, 'Main Turb', 70, 'secondary', 'systems/main-turbine'],
-  [830, 60, 90, 42, 'Feed & Cond', 50, 'secondary', 'systems/feedwater-and-condensate'],
-  [610, 115, 90, 42, 'AFW', 38, 'secondary', 'systems/auxiliary-feedwater'],
-  [720, 115, 90, 42, 'Steam Dumps', 62, 'secondary', 'systems/steam-dumps'],
-  [830, 115, 90, 42, 'Circ Water', 58, 'secondary', 'systems/circ-water'],
+  [610, 60, 90, 42, 'Main Steam', 'secondary', 'systems/main-steam'],
+  [720, 60, 90, 42, 'Main Turb', 'secondary', 'systems/main-turbine'],
+  [830, 60, 90, 42, 'Feed & Cond', 'secondary', 'systems/feedwater-and-condensate'],
+  [610, 115, 90, 42, 'AFW', 'secondary', 'systems/auxiliary-feedwater'],
+  [720, 115, 90, 42, 'Steam Dumps', 'secondary', 'systems/steam-dumps'],
+  [830, 115, 90, 42, 'Circ Water', 'secondary', 'systems/circ-water'],
 
   // Electrical
-  [610, 200, 90, 42, '4KV', 80, 'electrical', 'systems/4kv'],
-  [720, 200, 90, 42, '13KV', 70, 'electrical', 'systems/13kv'],
-  [830, 200, 90, 42, '115V', 68, 'electrical', 'systems/115v-ac'],
-  [610, 255, 90, 42, 'DC Power', 75, 'electrical', 'systems/dc-power'],
-  [720, 255, 90, 42, 'EDGs', 88, 'electrical', 'systems/diesel-generators'],
-  [830, 255, 90, 42, '500KV', 62, 'electrical', 'systems/500kv'],
+  [610, 220, 90, 42, '4KV', 'electrical', 'systems/4kv'],
+  [720, 220, 90, 42, '13KV', 'electrical', 'systems/13kv'],
+  [830, 220, 90, 42, '115V', 'electrical', 'systems/115v-ac'],
+  [610, 275, 90, 42, 'DC Power', 'electrical', 'systems/dc-power'],
+  [720, 275, 90, 42, 'EDGs', 'electrical', 'systems/diesel-generators'],
+  [830, 275, 90, 42, '500KV', 'electrical', 'systems/500kv'],
 
   // Auxiliary
-  [40, 340, 90, 42, 'Control Air', 70, 'aux', 'systems/control-air'],
-  [150, 340, 90, 42, 'Fire Prot', 48, 'aux', 'systems/fire-protection'],
-  [260, 340, 90, 42, 'Rad Mon', 66, 'aux', 'systems/radiation-monitoring'],
-  [380, 340, 90, 42, 'Waste Gas', 52, 'aux', 'systems/waste-gas'],
-  [490, 340, 90, 42, 'Waste Liq', 50, 'aux', 'systems/waste-liquid'],
-  [610, 340, 90, 42, 'Chill Water', 65, 'aux', 'systems/chill-water'],
-  [720, 340, 90, 42, 'TGA Vent', 60, 'aux', 'systems/tga-ventilation'],
-  [830, 340, 90, 42, 'Annuncs', 80, 'aux', 'systems/annunciators'],
+  [40, 380, 90, 42, 'Control Air', 'aux', 'systems/control-air'],
+  [150, 380, 90, 42, 'Fire Prot', 'aux', 'systems/fire-protection'],
+  [260, 380, 90, 42, 'Rad Mon', 'aux', 'systems/radiation-monitoring'],
+  [380, 380, 90, 42, 'Waste Gas', 'aux', 'systems/waste-gas'],
+  [490, 380, 90, 42, 'Waste Liq', 'aux', 'systems/waste-liquid'],
+  [610, 380, 90, 42, 'Chill Water', 'aux', 'systems/chill-water'],
+  [720, 380, 90, 42, 'TGA Vent', 'aux', 'systems/tga-ventilation'],
+  [830, 380, 90, 42, 'Annuncs', 'aux', 'systems/annunciators'],
 ];
 
 const groupLabels: Record<string, [string, number, number, string]> = {
   primary:    ['Primary',          40, 40, 'var(--color-accent-blue)'],
   control:    ['Control & Instr',  380, 40, 'var(--color-accent-purple)'],
-  emergency:  ['Emergency',        40, 180, 'var(--color-mastery-weak)'],
+  emergency:  ['Emergency',        40, 200, 'var(--color-mastery-weak)'],
   secondary:  ['Secondary',        610, 40, 'var(--color-mastery-ok)'],
-  electrical: ['Electrical',       610, 180, 'var(--color-accent-amber)'],
-  aux:        ['Auxiliary',         40, 320, 'var(--color-text-muted)'],
+  electrical: ['Electrical',       610, 200, 'var(--color-accent-amber)'],
+  aux:        ['Auxiliary',         40, 360, 'var(--color-text-muted)'],
 };
 
-// Group panel widths/heights
+// Group panel widths/heights — sized to contain both rows of tiles plus padding
 const groupDims: Record<string, [number, number]> = {
-  primary:    [330, 110],
-  control:    [220, 110],
-  emergency:  [560, 110],
-  secondary:  [330, 110],
-  electrical: [330, 110],
-  aux:        [900, 55],
+  primary:    [330, 137],
+  control:    [220, 137],
+  emergency:  [560, 137],
+  secondary:  [330, 137],
+  electrical: [330, 137],
+  aux:        [900, 82],
 };
 
-function masteryColor(m: number): string {
-  if (m >= 75) return 'var(--color-mastery-ok)';
-  if (m >= 55) return 'var(--color-mastery-mid)';
-  return 'var(--color-mastery-weak)';
-}
+const totalSystems = systems.length;
 ---
 
-<div class="w-full">
-  <div class="flex items-baseline justify-between mb-4">
+<div class="w-full" data-total-systems={totalSystems}>
+  <div class="flex items-baseline justify-between mb-4 flex-wrap gap-2">
     <div>
       <div class="font-mono text-[11px] tracking-[0.14em] text-text-muted uppercase">Salem unit 2 · click any system</div>
       <h1 class="font-serif text-[2.25rem] text-text-primary font-normal m-0 leading-tight">Plant overview</h1>
     </div>
-    <div class="flex gap-4 text-xs text-text-muted">
-      <span><span class="text-mastery-ok">●</span> Mastered</span>
-      <span><span class="text-mastery-mid">●</span> In progress</span>
-      <span><span class="text-mastery-weak">●</span> Weak</span>
+    <div class="flex flex-wrap gap-x-4 gap-y-1 text-xs text-text-muted">
+      <span><span class="text-mastery-ok">●</span> Reviewed &lt;7d</span>
+      <span><span class="text-mastery-mid">●</span> 7–30d</span>
+      <span><span class="text-mastery-weak">●</span> &gt;30d</span>
+      <span><span class="text-text-muted">●</span> Not reviewed</span>
     </div>
+  </div>
+
+  <div id="plant-login-hint" class="hidden mb-3 text-xs text-text-muted">
+    <a href={`${base}login`} class="text-accent-blue no-underline hover:underline">Log in</a> to see your personal review status. Tiles default to the not-reviewed color.
   </div>
 
   <div class="flex gap-4">
     <!-- SVG schematic -->
     <div class="flex-1 bg-bg-surface border border-border rounded overflow-hidden">
-      <svg viewBox="0 0 960 420" class="w-full h-auto">
+      <svg viewBox="0 0 960 460" class="w-full h-auto">
         <!-- Group panels -->
         {Object.entries(groupLabels).map(([key, [label, x, y, color]]) => {
           const [w, h] = groupDims[key];
@@ -113,32 +114,25 @@ function masteryColor(m: number): string {
           );
         })}
 
-        <!-- System tiles -->
-        {systems.map(([x, y, w, h, name, m, _group, slug]) => {
-          const color = masteryColor(m);
-          return (
-            <g data-block data-block-id={slug} data-block-name={name} data-block-mastery={m}
-               style="cursor: pointer;">
-              <a href={`${base}${slug}`}>
-                <rect x={x} y={y} width={w} height={h} rx="3"
-                      fill="var(--color-bg)" stroke={color} stroke-width="1.5" />
-                <text x={x + w/2} y={y + 17} text-anchor="middle"
-                      fill="var(--color-text-primary)" font-size="11" font-weight="600">
-                  {name}
-                </text>
-                <text x={x + w/2} y={y + 31} text-anchor="middle"
-                      fill={color} font-size="10" font-family="var(--font-mono)">
-                  {m}%
-                </text>
-                <!-- Tiny progress bar -->
-                <rect x={x + 8} y={y + 36} width={w - 16} height="2"
-                      fill="var(--color-border)" rx="1"/>
-                <rect x={x + 8} y={y + 36} width={(w - 16) * m / 100} height="2"
-                      fill={color} rx="1"/>
-              </a>
-            </g>
-          );
-        })}
+        <!-- System tiles. Stroke + last-reviewed label start in the "never" state
+             and are recolored client-side once review data loads. -->
+        {systems.map(([x, y, w, h, name, _group, slug]) => (
+          <g data-block data-block-id={slug} data-block-name={name}
+             style="cursor: pointer;">
+            <a href={`${base}${slug}`}>
+              <rect data-block-rect x={x} y={y} width={w} height={h} rx="3"
+                    fill="var(--color-bg)" stroke="var(--color-text-muted)" stroke-width="1.5" />
+              <text x={x + w/2} y={y + 17} text-anchor="middle"
+                    fill="var(--color-text-primary)" font-size="11" font-weight="600">
+                {name}
+              </text>
+              <text data-block-time x={x + w/2} y={y + 31} text-anchor="middle"
+                    fill="var(--color-text-muted)" font-size="10" font-family="var(--font-mono)">
+                —
+              </text>
+            </a>
+          </g>
+        ))}
       </svg>
     </div>
 
@@ -156,87 +150,205 @@ function masteryColor(m: number): string {
     </div>
   </div>
 
-  <!-- Quick stats row -->
-  <div class="grid grid-cols-3 gap-3.5 mt-4">
-    <!-- TODO: wire to real mastery data -->
+  <!-- Quick stats row — populated client-side from review data when logged in -->
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 mt-4">
     <div class="bg-bg-surface border border-border rounded p-3.5">
-      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase">Quick stat</div>
-      <div class="text-text-primary text-[15px] mt-1">14 weak systems</div>
-      <div class="text-xs text-text-muted">AMSAC, AFW, ECCS, Fire Prot, Waste Gas...</div>
+      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase">Not reviewed</div>
+      <div id="stat-never" class="text-text-primary text-[15px] mt-1">—</div>
+      <div id="stat-never-detail" class="text-xs text-text-muted">Log in to track your review status.</div>
     </div>
     <div class="bg-bg-surface border border-border rounded p-3.5">
-      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase">Last studied</div>
-      <div class="text-text-primary text-[15px] mt-1">Reactor Coolant System</div>
-      <div class="text-xs text-text-muted">2 hours ago · 72% mastery</div>
+      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase">Last reviewed</div>
+      <div id="stat-last" class="text-text-primary text-[15px] mt-1">—</div>
+      <div id="stat-last-detail" class="text-xs text-text-muted">No reviews yet.</div>
     </div>
     <div class="bg-bg-surface border border-border rounded p-3.5">
-      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase">Suggested focus</div>
-      <div class="text-text-primary text-[15px] mt-1">AMSAC (38%)</div>
-      <div class="text-xs text-text-muted">High exam frequency, low mastery</div>
+      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase">Most stale</div>
+      <div id="stat-stale" class="text-text-primary text-[15px] mt-1">—</div>
+      <div id="stat-stale-detail" class="text-xs text-text-muted">Oldest review surfaces here.</div>
     </div>
   </div>
 </div>
 
 <script>
-  function initPlantSchematic() {
-    const blocks = document.querySelectorAll<SVGGElement>('[data-block]');
-    const panel = document.getElementById('plant-detail');
-    const sheet = document.getElementById('plant-detail-sheet');
-    const sheetContent = document.getElementById('plant-sheet-content');
-    const sheetClose = document.getElementById('plant-sheet-close');
+  import { getSystemReviews, markSystemReviewed, getCurrentSession, hasSupabaseConfig } from '../utils/auth-client';
+  import { reviewBucket, relativeShort, relativeLong, REVIEW_BUCKET_COLOR } from '../utils/review-bucket';
 
-    const isWide = () => window.matchMedia('(min-width: 1024px)').matches;
+  const reviews = new Map<string, string>();
+  let currentDetailSlug: string | null = null;
 
-    function detailHTML(el: SVGGElement): string {
-      const name = el.dataset.blockName || '';
-      const mastery = el.dataset.blockMastery || '0';
-      const slug = el.dataset.blockId || '';
-      const m = parseInt(mastery);
-      const colorClass = m >= 75 ? 'text-mastery-ok' : m >= 55 ? 'text-mastery-mid' : 'text-mastery-weak';
-      const label = m >= 75 ? 'Mastered' : m >= 55 ? 'In progress' : 'Weak';
-      const basePath = '/salem-study-system/';
+  function applyTileState(slug: string) {
+    const tile = document.querySelector<SVGGElement>(`[data-block-id="${CSS.escape(slug)}"]`);
+    if (!tile) return;
+    const rect = tile.querySelector<SVGRectElement>('[data-block-rect]');
+    const timeText = tile.querySelector<SVGTextElement>('[data-block-time]');
+    const last = reviews.get(slug);
+    const bucket = reviewBucket(last);
+    const color = REVIEW_BUCKET_COLOR[bucket];
+    if (rect) rect.setAttribute('stroke', color);
+    if (timeText) {
+      timeText.setAttribute('fill', color);
+      timeText.textContent = relativeShort(last);
+    }
+  }
 
-      return `
-        <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase mb-1">System detail</div>
-        <div class="text-text-primary text-[15px] font-semibold">${name}</div>
-        <div class="mt-2 text-xs text-text-muted">
-          <span class="${colorClass} font-mono font-semibold">${mastery}%</span> — ${label}
-        </div>
-        <div class="h-[3px] bg-bg-card rounded mt-2">
-          <div class="h-full rounded" style="width: ${mastery}%; background: ${m >= 75 ? 'var(--color-mastery-ok)' : m >= 55 ? 'var(--color-mastery-mid)' : 'var(--color-mastery-weak)'}"></div>
-        </div>
-        <a href="${slug ? basePath + slug : '#'}"
-           class="block mt-4 text-accent-blue text-xs no-underline hover:underline">
-          Open article &rsaquo;
-        </a>
-      `;
+  function applyAllTiles() {
+    document.querySelectorAll<SVGGElement>('[data-block]').forEach((tile) => {
+      const slug = tile.dataset.blockId;
+      if (slug) applyTileState(slug);
+    });
+  }
+
+  function updateStats() {
+    const totalEl = document.querySelector<HTMLElement>('[data-total-systems]');
+    const total = totalEl ? Number(totalEl.dataset.totalSystems) : 0;
+    const reviewedSlugs = [...reviews.keys()];
+    const neverCount = Math.max(0, total - reviewedSlugs.length);
+
+    const neverStat = document.getElementById('stat-never');
+    const neverDetail = document.getElementById('stat-never-detail');
+    if (neverStat) neverStat.textContent = `${neverCount} systems`;
+    if (neverDetail) {
+      neverDetail.textContent = neverCount === total
+        ? 'Mark a system below to start tracking.'
+        : `${reviewedSlugs.length} reviewed at least once.`;
     }
 
-    function showDetail(el: SVGGElement) {
-      if (isWide() && panel) {
-        panel.innerHTML = detailHTML(el);
-      } else if (sheetContent && sheet) {
-        sheetContent.innerHTML = detailHTML(el);
+    if (reviewedSlugs.length === 0) return;
+
+    const sortedRecent = reviewedSlugs
+      .slice()
+      .sort((a, b) => Date.parse(reviews.get(b) ?? '') - Date.parse(reviews.get(a) ?? ''));
+
+    const mostRecent = sortedRecent[0];
+    const oldest = sortedRecent[sortedRecent.length - 1];
+
+    const lastStat = document.getElementById('stat-last');
+    const lastDetail = document.getElementById('stat-last-detail');
+    if (lastStat) lastStat.textContent = nameFromSlug(mostRecent);
+    if (lastDetail) lastDetail.textContent = relativeLong(reviews.get(mostRecent));
+
+    const staleStat = document.getElementById('stat-stale');
+    const staleDetail = document.getElementById('stat-stale-detail');
+    if (staleStat) staleStat.textContent = nameFromSlug(oldest);
+    if (staleDetail) staleDetail.textContent = relativeLong(reviews.get(oldest));
+  }
+
+  function nameFromSlug(slug: string): string {
+    const tile = document.querySelector<SVGGElement>(`[data-block-id="${CSS.escape(slug)}"]`);
+    return tile?.dataset.blockName || slug;
+  }
+
+  function detailHTML(el: SVGGElement, isAuthed: boolean): string {
+    const name = el.dataset.blockName || '';
+    const slug = el.dataset.blockId || '';
+    const last = reviews.get(slug);
+    const bucket = reviewBucket(last);
+    const colorVar = REVIEW_BUCKET_COLOR[bucket];
+    const articleHref = `${import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/'}${slug}`;
+    const markButton = isAuthed
+      ? `<button data-mark-reviewed="${slug}" class="mt-3 w-full text-xs font-mono uppercase tracking-[0.12em] bg-bg-card border border-border rounded px-3 py-2 cursor-pointer text-text-primary hover:border-accent-blue hover:text-accent-blue transition-colors">Mark as reviewed now</button>`
+      : `<a href="${import.meta.env.BASE_URL}login" class="block mt-3 text-center text-xs text-text-muted no-underline hover:text-accent-blue">Log in to mark reviewed</a>`;
+    return `
+      <div class="font-mono text-[10px] tracking-[0.12em] text-text-muted uppercase mb-1">System detail</div>
+      <div class="text-text-primary text-[15px] font-semibold">${name}</div>
+      <div class="mt-2 text-xs" style="color: ${colorVar}">
+        <span class="font-mono">●</span> ${relativeLong(last)}
+      </div>
+      <a href="${articleHref}"
+         class="block mt-3 text-accent-blue text-xs no-underline hover:underline">
+        Open article &rsaquo;
+      </a>
+      ${markButton}
+    `;
+  }
+
+  function showDetail(el: SVGGElement, isAuthed: boolean) {
+    currentDetailSlug = el.dataset.blockId ?? null;
+    const html = detailHTML(el, isAuthed);
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      const panel = document.getElementById('plant-detail');
+      if (panel) panel.innerHTML = html;
+    } else {
+      const sheet = document.getElementById('plant-detail-sheet');
+      const sheetContent = document.getElementById('plant-sheet-content');
+      if (sheet && sheetContent) {
+        sheetContent.innerHTML = html;
         sheet.classList.remove('translate-y-full');
       }
     }
+  }
 
-    function closeSheet() {
-      sheet?.classList.add('translate-y-full');
+  function refreshDetailIfOpen(isAuthed: boolean) {
+    if (!currentDetailSlug) return;
+    const el = document.querySelector<SVGGElement>(`[data-block-id="${CSS.escape(currentDetailSlug)}"]`);
+    if (el) showDetail(el, isAuthed);
+  }
+
+  async function initPlantSchematic() {
+    const sheet = document.getElementById('plant-detail-sheet');
+    const sheetClose = document.getElementById('plant-sheet-close');
+    const loginHint = document.getElementById('plant-login-hint');
+
+    let isAuthed = false;
+    if (hasSupabaseConfig()) {
+      try {
+        const session = await getCurrentSession();
+        isAuthed = Boolean(session?.access_token);
+      } catch {
+        isAuthed = false;
+      }
     }
 
-    sheetClose?.addEventListener('click', closeSheet);
+    if (!isAuthed && loginHint) loginHint.classList.remove('hidden');
 
-    blocks.forEach(b => {
-      b.addEventListener('mouseenter', () => {
-        if (isWide()) showDetail(b);
+    if (isAuthed) {
+      try {
+        const result = await getSystemReviews();
+        for (const [slug, ts] of Object.entries(result.reviews ?? {})) reviews.set(slug, ts);
+      } catch (err) {
+        console.warn('Failed to load review data', err);
+      }
+    }
+
+    applyAllTiles();
+    updateStats();
+
+    document.querySelectorAll<SVGGElement>('[data-block]').forEach((tile) => {
+      tile.addEventListener('mouseenter', () => {
+        if (window.matchMedia('(min-width: 1024px)').matches) showDetail(tile, isAuthed);
       });
-      b.addEventListener('click', (e) => {
-        if (!isWide()) {
-          e.preventDefault();
-          showDetail(b);
+      tile.addEventListener('click', (event) => {
+        if (!window.matchMedia('(min-width: 1024px)').matches) {
+          event.preventDefault();
+          showDetail(tile, isAuthed);
         }
       });
+    });
+
+    sheetClose?.addEventListener('click', () => {
+      sheet?.classList.add('translate-y-full');
+      currentDetailSlug = null;
+    });
+
+    document.addEventListener('click', async (event) => {
+      const target = event.target as HTMLElement | null;
+      const button = target?.closest<HTMLElement>('[data-mark-reviewed]');
+      if (!button) return;
+      const slug = button.getAttribute('data-mark-reviewed');
+      if (!slug) return;
+      button.setAttribute('disabled', 'true');
+      button.textContent = 'Saving...';
+      try {
+        const result = await markSystemReviewed(slug);
+        reviews.set(result.slug, result.lastReviewedAt);
+        applyTileState(result.slug);
+        updateStats();
+        refreshDetailIfOpen(isAuthed);
+      } catch (err) {
+        button.removeAttribute('disabled');
+        button.textContent = 'Could not save — retry';
+      }
     });
   }
 

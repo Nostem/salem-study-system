@@ -1,0 +1,108 @@
+---
+// Per-user "last reviewed" pill that appears on system article headers.
+// State is hydrated client-side after the auth session is checked.
+interface Props {
+  slug: string;
+}
+
+const { slug } = Astro.props;
+const eligible = slug.startsWith('systems/');
+---
+
+{eligible && (
+  <div
+    data-review-pill
+    data-review-slug={slug}
+    class="hidden items-center gap-2 text-[11px] font-mono uppercase tracking-[0.1em] border border-border rounded-full px-3 py-1"
+  >
+    <span data-review-dot aria-hidden="true" class="inline-block w-2 h-2 rounded-full" style="background: var(--color-text-muted)"></span>
+    <span data-review-label class="text-text-muted">Not reviewed</span>
+    <button
+      type="button"
+      data-review-mark
+      class="ml-1 bg-transparent border-none text-text-muted hover:text-accent-blue cursor-pointer text-[11px] font-mono uppercase tracking-[0.1em]"
+    >
+      Mark reviewed
+    </button>
+  </div>
+)}
+
+{eligible && (
+  <script>
+    import { getSystemReviews, markSystemReviewed, getCurrentSession, hasSupabaseConfig } from '../utils/auth-client';
+    import { reviewBucket, relativeLong, REVIEW_BUCKET_COLOR } from '../utils/review-bucket';
+
+    async function initReviewPill() {
+      const pill = document.querySelector<HTMLElement>('[data-review-pill]');
+      if (!pill) return;
+      const slug = pill.dataset.reviewSlug ?? '';
+      if (!slug) return;
+
+      const dot = pill.querySelector<HTMLElement>('[data-review-dot]');
+      const label = pill.querySelector<HTMLElement>('[data-review-label]');
+      const button = pill.querySelector<HTMLButtonElement>('[data-review-mark]');
+
+      let isAuthed = false;
+      if (hasSupabaseConfig()) {
+        try {
+          const session = await getCurrentSession();
+          isAuthed = Boolean(session?.access_token);
+        } catch {
+          isAuthed = false;
+        }
+      }
+
+      if (!isAuthed) {
+        // Pill stays hidden when logged out — system articles already have other UI.
+        return;
+      }
+
+      pill.classList.remove('hidden');
+      pill.classList.add('inline-flex');
+
+      function applyState(lastReviewedAt: string | null) {
+        const bucket = reviewBucket(lastReviewedAt);
+        const color = REVIEW_BUCKET_COLOR[bucket];
+        if (dot) dot.style.background = color;
+        if (label) {
+          label.textContent = relativeLong(lastReviewedAt);
+          label.style.color = color;
+        }
+      }
+
+      let lastReviewedAt: string | null = null;
+      try {
+        const result = await getSystemReviews();
+        lastReviewedAt = result.reviews?.[slug] ?? null;
+      } catch {
+        lastReviewedAt = null;
+      }
+      applyState(lastReviewedAt);
+
+      button?.addEventListener('click', async () => {
+        if (!button) return;
+        const original = button.textContent;
+        button.disabled = true;
+        button.textContent = 'Saving...';
+        try {
+          const result = await markSystemReviewed(slug);
+          lastReviewedAt = result.lastReviewedAt;
+          applyState(lastReviewedAt);
+          button.textContent = 'Reviewed';
+          setTimeout(() => {
+            if (button) {
+              button.textContent = original;
+              button.disabled = false;
+            }
+          }, 1500);
+        } catch {
+          button.textContent = 'Retry';
+          button.disabled = false;
+        }
+      });
+    }
+
+    initReviewPill();
+    document.addEventListener('astro:after-swap', initReviewPill);
+  </script>
+)}
