@@ -25,6 +25,13 @@ class StaticQuizBankBuilderTests(unittest.TestCase):
         self.assertIn("72 hours", q82["explanationText"])
         self.assertIn("TS 3/4.3 — Instrumentation", [topic["title"] for topic in q82["topics"]])
 
+    def test_build_quiz_bank_exposes_admin_topic_from_admin_procedure_connections(self):
+        bank = build_quiz_bank(ROOT, ROOT / "data/quiz-import/supabase-staging-all.json")
+
+        self.assertIn("Admin", [topic["title"] for topic in bank["topics"]])
+        q78 = next(question for question in bank["questions"] if question["slug"] == "q78-ab-cn-0001-peer-checks-polisher-bypass")
+        self.assertIn("Admin", [topic["title"] for topic in q78["topics"]])
+
     def test_write_quiz_bank_outputs_deterministic_json(self):
         bank = build_quiz_bank(ROOT, ROOT / "data/quiz-import/supabase-staging-2018.json")
 

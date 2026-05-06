@@ -3741,9 +3741,19 @@
       "topic_slug": "radiation-monitoring"
     },
     {
+      "question_slug": "q44-high-radiation-area-dosimetry",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q45-lhra-controls",
       "relationship_type": "tests",
       "topic_slug": "radiation-monitoring"
+    },
+    {
+      "question_slug": "q45-lhra-controls",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q46-control-room-ventilation-rad-monitor",
@@ -3754,6 +3764,11 @@
       "question_slug": "q46-control-room-ventilation-rad-monitor",
       "relationship_type": "tests",
       "topic_slug": "radiation-monitoring"
+    },
+    {
+      "question_slug": "q47-csf-priority-and-monitoring",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q48-eccs-flow-evaluation",
@@ -4046,6 +4061,11 @@
       "topic_slug": "feedwater-and-condensate"
     },
     {
+      "question_slug": "q78-ab-cn-0001-peer-checks-polisher-bypass",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q79-ab-rcp-0001-seal-cooling-loss-nat-circ",
       "relationship_type": "tests",
       "topic_slug": "reactor-coolant-pumps"
@@ -4119,6 +4139,11 @@
       "question_slug": "q85-high-containment-radiation-frce-3-yellow-path",
       "relationship_type": "tests",
       "topic_slug": "containment-systems"
+    },
+    {
+      "question_slug": "q85-high-containment-radiation-frce-3-yellow-path",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q86-accumulator-boron-lco-351-lco-303",
@@ -4209,6 +4234,11 @@
       "question_slug": "q93-loss-of-control-air-ecac-attachment-12",
       "relationship_type": "tests",
       "topic_slug": "control-air"
+    },
+    {
+      "question_slug": "q94-nrc-license-maintenance-shift-hours",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q95-ccw-abnormality-rcp-brg-clg-wtr-flo-lo",
@@ -4625,7 +4655,7 @@
         "pressurizer-level-and-press-control"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\n\u2022 Unit 2 is at 100% Reactor Power and stable\n\n\u2022 The PZR Pressure Transmitters read the following:\n\nCH ICH IICH IIICH IV\n2PT-4552PT-4562PT-4572PT-4742PT-1648\n2235 PSIG0 PSIG2235 PSIG2235 PSIG2235 PSIG\n\nWhich ONE of the following completes the statements below concerning the design of the Reactor Protection System (RPS)?\n\nWith 2PT-456 failed low, the coincidence for the PZR Pressure LOW Reactor Trip (based on the remaining functional PZR Pressure Channels) is now ___",
+      "stem_text": "Given:\n\n\u2022 Unit 2 is at 100% Reactor Power and stable\n\n\u2022 The PZR Pressure Transmitters read the following:\n\nCH I | CH II | CH III | CH IV | \n2PT-455 | 2PT-456 | 2PT-457 | 2PT-474 | 2PT-1648\n2235 PSIG | 0 PSIG | 2235 PSIG | 2235 PSIG | 2235 PSIG\n\nWhich ONE of the following completes the statements below concerning the design of the Reactor Protection System (RPS)?\n\nWith 2PT-456 failed low, the coincidence for the PZR Pressure LOW Reactor Trip (based on the remaining functional PZR Pressure Channels) is now ___",
       "tier_group": "Tier 2/Group 1",
       "title": "2018 Q10 \u2014 RPS PZR Pressure Channel Failure",
       "track": "RO",
@@ -6464,7 +6494,7 @@
         "control-air"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\nAt time 10:00:00\n\n\u2022 Unit 2 is at 100% Reactor Power and stable\n\n\u2022 The crew enters S2.OP-AB.CA-0001 (Loss of Control Air)\n\n\u2022 NEOs are walking down the Control Air System searching for a large air leak\n\n\u2022 Control Air Header Pressure is observed as follows:\n\nTime10:0010:0510:1010:15\n2A Control Air Header99 psig88 psig79 psig72 psig\n2B Control Air Header103 psig93 psig85 psig79 psig\n\nIn accordance with S2.OP-AB.CA-0001, which ONE of the following completes the statements below?\n\n_(1)_ is the EARLIEST time the crew is required to attempt to MANUALLY start the 2 Emergency Control Air Compressor.\n\n_(2)_ is the EARLIEST time the crew is required to TRIP the Reactor.\n\n(1)(2)",
+      "stem_text": "Given:\n\nAt time 10:00:00\n\n\u2022 Unit 2 is at 100% Reactor Power and stable\n\n\u2022 The crew enters S2.OP-AB.CA-0001 (Loss of Control Air)\n\n\u2022 NEOs are walking down the Control Air System searching for a large air leak\n\n\u2022 Control Air Header Pressure is observed as follows:\n\nTime | 10:00 | 10:05 | 10:10 | 10:15\n2A Control Air Header | 99 psig | 88 psig | 79 psig | 72 psig\n2B Control Air Header | 103 psig | 93 psig | 85 psig | 79 psig\n\nIn accordance with S2.OP-AB.CA-0001, which ONE of the following completes the statements below?\n\n_(1)_ is the EARLIEST time the crew is required to attempt to MANUALLY start the 2 Emergency Control Air Compressor.\n\n_(2)_ is the EARLIEST time the crew is required to TRIP the Reactor.\n\n | (1) | (2)",
       "tier_group": "Tier 1/Group 1",
       "title": "2018 Q61 \u2014 Loss of Control Air ECAC Start and Reactor Trip",
       "track": "RO",
@@ -6538,7 +6568,7 @@
         "reactor-coolant-system"
       ],
       "status": "outdated",
-      "stem_text": "Given:\n\n\u2022 The crew has just transitioned to 1-EOP-LOCA-6 (LOCA Outside Containment)\n\nIn accordance with 1-EOP-LOCA-6, which ONE of the following completes the statements below?\n\nAs part of the leak isolation strategy, the crew _(1)_ separate the 11 and 12 RHR discharge lines by closing 11RH19 (RHR Discharge X-CONN Valve) and 12RH19 (RHR Discharge X-CONN Valve).\n\nThe crew will monitor rising _(2)_ to determine when the leak has been successfully isolated.\n\n(1)(2)",
+      "stem_text": "Given:\n\n\u2022 The crew has just transitioned to 1-EOP-LOCA-6 (LOCA Outside Containment)\n\nIn accordance with 1-EOP-LOCA-6, which ONE of the following completes the statements below?\n\nAs part of the leak isolation strategy, the crew _(1)_ separate the 11 and 12 RHR discharge lines by closing 11RH19 (RHR Discharge X-CONN Valve) and 12RH19 (RHR Discharge X-CONN Valve).\n\nThe crew will monitor rising _(2)_ to determine when the leak has been successfully isolated.\n\n | (1) | (2)",
       "tier_group": "Tier 1/Group 1",
       "title": "2018 Q63 \u2014 LOCA Outside Containment RH19 Isolation and RCS Pressure [OUTDATED]",
       "track": "RO",
@@ -6575,7 +6605,7 @@
         "pressurizer"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\n\u2022 The crew is performing the Bleed and Feed Initiation Steps of 1-EOP-FRHS-1 (Response To Loss Of Secondary Heat Sink)\n\n\u2022 11 Charging Pump and 11 SI Pump are the ONLY ECCS pumps running\n\nIn accordance with 1-EOP-FRHS-1, which ONE of the following completes the statements below?\n\nThe crew _(1)_ proceed in 1-EOP-FRHS-1 and establish the required RCS Bleed Path.\n\nWhen establishing a Bleed Path, the crew will open _(2)_.\n\n(1)(2)",
+      "stem_text": "Given:\n\n\u2022 The crew is performing the Bleed and Feed Initiation Steps of 1-EOP-FRHS-1 (Response To Loss Of Secondary Heat Sink)\n\n\u2022 11 Charging Pump and 11 SI Pump are the ONLY ECCS pumps running\n\nIn accordance with 1-EOP-FRHS-1, which ONE of the following completes the statements below?\n\nThe crew _(1)_ proceed in 1-EOP-FRHS-1 and establish the required RCS Bleed Path.\n\nWhen establishing a Bleed Path, the crew will open _(2)_.\n\n | (1) | (2)",
       "tier_group": "Tier 1/Group 1",
       "title": "2018 Q64 \u2014 FRHS-1 Bleed and Feed ECCS Pump Requirements",
       "track": "RO",
@@ -6612,7 +6642,7 @@
         "reactor-coolant-system"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\n\u2022 The crew is preparing to perform the RCS Depressurization To Minimize Subcooling Steps of 1-EOP-LOCA-5 (Loss Of Emergency Recirculation)\n\n\u2022 ALL RCPs are stopped\n\n\u2022 PZR Level is 10%\n\n\u2022 RCS Subcooling is 35 \u00b0F\n\nAt time 16:15:00\n\n\u2022 The RCS depressurization has started\n\nAt time 16:15:30 (30 seconds later)\n\n\u2022 PZR Level is 45% and rising\n\n\u2022 RCS Subcooling is 25 \u00b0F\n\nIn accordance with 1-EOP-LOCA-5, which ONE of the following completes the statements below?\n\nAt 16:15:00, the crew used _(1)_ to depressurize the RCS.\n\nAt 16:15:30, there _(2)_ indications that voiding is occurring in the upper head region.\n\n(1)(2)",
+      "stem_text": "Given:\n\n\u2022 The crew is preparing to perform the RCS Depressurization To Minimize Subcooling Steps of 1-EOP-LOCA-5 (Loss Of Emergency Recirculation)\n\n\u2022 ALL RCPs are stopped\n\n\u2022 PZR Level is 10%\n\n\u2022 RCS Subcooling is 35 \u00b0F\n\nAt time 16:15:00\n\n\u2022 The RCS depressurization has started\n\nAt time 16:15:30 (30 seconds later)\n\n\u2022 PZR Level is 45% and rising\n\n\u2022 RCS Subcooling is 25 \u00b0F\n\nIn accordance with 1-EOP-LOCA-5, which ONE of the following completes the statements below?\n\nAt 16:15:00, the crew used _(1)_ to depressurize the RCS.\n\nAt 16:15:30, there _(2)_ indications that voiding is occurring in the upper head region.\n\n | (1) | (2)",
       "tier_group": "Tier 1/Group 1",
       "title": "2018 Q65 \u2014 LOCA-5 RCS Depressurization and Upper Head Voiding",
       "track": "RO",
@@ -6649,7 +6679,7 @@
         "4kv"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\n\u2022 A Reactor Trip and Safety Injection Actuation have occurred\n\n\u2022 The 1A 4KV VITAL BUS is de-energized due to an electrical fault on the bus\n\n\u2022 The 12 AFW Pump will NOT start\n\n\u2022 The crew has just transitioned to 1-EOP-LOSC-2 (Multiple Steam Generator Depressurization)\n\n\u2022 The RCS cooldown rate is 120 \u00b0F / HR\n\nIn accordance with 1-EOP-LOSC-2, which ONE of the following completes the statements below?\n\nThe crew _(1)_ isolate steam to the 13 AFW Pump.\n\nAFW flow will be controlled / reduced to _(2)_.\n\n(1)(2)",
+      "stem_text": "Given:\n\n\u2022 A Reactor Trip and Safety Injection Actuation have occurred\n\n\u2022 The 1A 4KV VITAL BUS is de-energized due to an electrical fault on the bus\n\n\u2022 The 12 AFW Pump will NOT start\n\n\u2022 The crew has just transitioned to 1-EOP-LOSC-2 (Multiple Steam Generator Depressurization)\n\n\u2022 The RCS cooldown rate is 120 \u00b0F / HR\n\nIn accordance with 1-EOP-LOSC-2, which ONE of the following completes the statements below?\n\nThe crew _(1)_ isolate steam to the 13 AFW Pump.\n\nAFW flow will be controlled / reduced to _(2)_.\n\n | (1) | (2)",
       "tier_group": "Tier 1/Group 1",
       "title": "2018 Q66 \u2014 LOSC-2 AFW Steam Isolation and Flow Control",
       "track": "RO",
@@ -6684,7 +6714,7 @@
         "chemical-and-volume-control-system"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\n\u2022 The Unit 2 Control Room has been evacuated in accordance with S2.OP-AB.CR-0001 (Control Room Evacuation)\n\n\u2022 The Reactor Trip has been confirmed but 2 Control Rods did not fully insert into the core\n\nAt time 08:00:00\n\n\u2022 The RO and PO are preparing to perform an Emergency Boration in accordance with S2.OP-AB.CR-0001 Attachment 5 (Reactor Operator) and Attachment 6 (Plant Operator)\n\nWhich ONE of the following completes the statements below?\n\nIn accordance with S2.OP-AB.CR-0001 Attachment 6, the crew will perform the Emergency Boration for a duration of _(1)_ minutes.\n\nDuring the Emergency Boration, the RO will throttle 2CV55 (Cent Chg Pmp Flow Cont Valve) by adjusting the 2CV55 Manual HAND/AIR Regulator Controller located at Panel _(2)_.\n\nNOTE:\n\n\u2022 Panel 213-2 = Unit 2 Hot Shutdown Panel\n\n\u2022 Panel 216-2 = Unit 2 Chg Pmps FL & PR Inst Panel\n\n(1)(2)",
+      "stem_text": "Given:\n\n\u2022 The Unit 2 Control Room has been evacuated in accordance with S2.OP-AB.CR-0001 (Control Room Evacuation)\n\n\u2022 The Reactor Trip has been confirmed but 2 Control Rods did not fully insert into the core\n\nAt time 08:00:00\n\n\u2022 The RO and PO are preparing to perform an Emergency Boration in accordance with S2.OP-AB.CR-0001 Attachment 5 (Reactor Operator) and Attachment 6 (Plant Operator)\n\nWhich ONE of the following completes the statements below?\n\nIn accordance with S2.OP-AB.CR-0001 Attachment 6, the crew will perform the Emergency Boration for a duration of _(1)_ minutes.\n\nDuring the Emergency Boration, the RO will throttle 2CV55 (Cent Chg Pmp Flow Cont Valve) by adjusting the 2CV55 Manual HAND/AIR Regulator Controller located at Panel _(2)_.\n\nNOTE:\n\n\u2022 Panel 213-2 = Unit 2 Hot Shutdown Panel\n\n\u2022 Panel 216-2 = Unit 2 Chg Pmps FL & PR Inst Panel\n\n | (1) | (2)",
       "tier_group": "Tier 1/Group 2",
       "title": "2018 Q67 \u2014 Control Room Evacuation Emergency Boration and CV55 Location",
       "track": "RO",
@@ -6721,7 +6751,7 @@
         "steam-generators"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\nAt time 11:00\n\n\u2022 The crew is attempting to control PZR level in accordance with S2.OP-AB.SG-0001 (Steam Generator Tube Leak)\n\nAt time 11:02\n\n\u2022 PZR level can NOT be maintained\n\n\u2022 The crew has TRIPPED the Reactor and the Reactor Trip has been confirmed\n\nIn accordance with S2.OP-AB.SG-0001, which ONE of the following completes the statements below?\n\nAt 11:00, the crew will _(1)_ letdown.\n\nAt 11:02, the crew _(2)_ initiate a Safety Injection prior to transitioning to 2-EOP-TRIP-1 (Reactor Trip or Safety Injection).\n\n(1)(2)",
+      "stem_text": "Given:\n\nAt time 11:00\n\n\u2022 The crew is attempting to control PZR level in accordance with S2.OP-AB.SG-0001 (Steam Generator Tube Leak)\n\nAt time 11:02\n\n\u2022 PZR level can NOT be maintained\n\n\u2022 The crew has TRIPPED the Reactor and the Reactor Trip has been confirmed\n\nIn accordance with S2.OP-AB.SG-0001, which ONE of the following completes the statements below?\n\nAt 11:00, the crew will _(1)_ letdown.\n\nAt 11:02, the crew _(2)_ initiate a Safety Injection prior to transitioning to 2-EOP-TRIP-1 (Reactor Trip or Safety Injection).\n\n | (1) | (2)",
       "tier_group": "Tier 1/Group 2",
       "title": "2018 Q68 \u2014 SG Tube Leak Letdown Reduction and SI Initiation",
       "track": "RO",
@@ -6758,7 +6788,7 @@
         "ts-3-4-4-rcs"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\n\u2022 Unit 1 is at 100% Reactor Power and stable\n\n\u2022 The crew is performing S1.OP-AB.RC-0002 (High Activity In Reactor Coolant System)\n\n\u2022 13 Charging Pump is in service\n\n\u2022 1CV4 (75 GPM ORIFICE) is in service\n\n\u2022 Chemistry has just reported that the confirmatory sample has confirmed increasing activity in the RCS but below LCO 3.4.9 (Specific Activity) limits\n\nIn accordance with S1.OP-AB.RC-0002, which ONE of the following completes the statements below?\n\nThe crew _(1)_ required to place either 11 Charging Pump or 12 Charging Pump in service and secure the 13 Charging Pump.\n\nIn addition to 1CV4, the crew _(2)_ required to also place 1CV3 (45 GPM ORIFICE) in service.\n\n(1)(2)",
+      "stem_text": "Given:\n\n\u2022 Unit 1 is at 100% Reactor Power and stable\n\n\u2022 The crew is performing S1.OP-AB.RC-0002 (High Activity In Reactor Coolant System)\n\n\u2022 13 Charging Pump is in service\n\n\u2022 1CV4 (75 GPM ORIFICE) is in service\n\n\u2022 Chemistry has just reported that the confirmatory sample has confirmed increasing activity in the RCS but below LCO 3.4.9 (Specific Activity) limits\n\nIn accordance with S1.OP-AB.RC-0002, which ONE of the following completes the statements below?\n\nThe crew _(1)_ required to place either 11 Charging Pump or 12 Charging Pump in service and secure the 13 Charging Pump.\n\nIn addition to 1CV4, the crew _(2)_ required to also place 1CV3 (45 GPM ORIFICE) in service.\n\n | (1) | (2)",
       "tier_group": "Tier 1/Group 2",
       "title": "2018 Q69 \u2014 High RCS Activity Charging Pump Transfer and Letdown Maximization",
       "track": "RO",
@@ -6795,7 +6825,7 @@
         "reactor-coolant-system"
       ],
       "status": "draft",
-      "stem_text": "Given:\n\n\u2022 The crew is performing the RCS Cooldown To Cold Shutdown Steps of 2-EOP-LOCA-2 (Post LOCA Cooldown and Depressurization)\n\n\u2022 Condenser Steam Dumps are available\n\nTRAIN A\n---\nBYPASS\nTAVG\nTRAIN B\n---\nBYPASS\nTAVG\n\nWhich ONE of the following completes the statements below?\n\nIn accordance with 2-EOP-LOCA-2, the crew will maintain T-COLD Cooldown Rate less than a MAXIMUM of _(1)_ \u00b0F / HR.\n\nDepressing BEZEL Pushbutton(s) _(2)_ is/are the MINIMUM pushbutton manipulation(s) required to have the Condenser Steam Dumps function when TAVG is less than 543 \u00b0F.\n\n(1)(2)",
+      "stem_text": "Given:\n\n\u2022 The crew is performing the RCS Cooldown To Cold Shutdown Steps of 2-EOP-LOCA-2 (Post LOCA Cooldown and Depressurization)\n\n\u2022 Condenser Steam Dumps are available\n\nTRAIN A\n---\nBYPASS\nTAVG\nTRAIN B\n---\nBYPASS\nTAVG\n\nWhich ONE of the following completes the statements below?\n\nIn accordance with 2-EOP-LOCA-2, the crew will maintain T-COLD Cooldown Rate less than a MAXIMUM of _(1)_ \u00b0F / HR.\n\nDepressing BEZEL Pushbutton(s) _(2)_ is/are the MINIMUM pushbutton manipulation(s) required to have the Condenser Steam Dumps function when TAVG is less than 543 \u00b0F.\n\n | (1) | (2)",
       "tier_group": "Tier 1/Group 2",
       "title": "2018 Q70 \u2014 LOCA-2 T-COLD Cooldown Rate and BYPASS TAVG Pushbuttons",
       "track": "RO",
@@ -7397,7 +7427,7 @@
         "ts-3-4-0-applicability"
       ],
       "status": "draft",
-      "stem_text": "REFERENCE PROVIDED\n\nGiven:\n\n\u2022 Unit 2 is at 100% Power and stable\n\nAt time 13:00:00\n\n\u2022 The Accumulators have been sampled per S2.OP-ST.SJ-0008 (Emergency Core Cooling - Accumulators) with the following results:\n\nAccumulator21222324\nBoron Concentration (ppm)2175255024002350\n\nIn accordance with LCO 3.5.1 (ACCUMULATORS), which ONE of the following completes the statements below?\n\nBased on the sample results, _(1)_ Accumulator(s) is/are inoperable.\n\nIf the inoperable Accumulator(s) can NOT be restored to OPERABLE status, then the Unit is required to be in HOT STANDBY within a MAXIMUM of _(2)_ hours.",
+      "stem_text": "REFERENCE PROVIDED\n\nGiven:\n\n\u2022 Unit 2 is at 100% Power and stable\n\nAt time 13:00:00\n\n\u2022 The Accumulators have been sampled per S2.OP-ST.SJ-0008 (Emergency Core Cooling - Accumulators) with the following results:\n\nAccumulator | 21 | 22 | 23 | 24\nBoron Concentration (ppm) | 2175 | 2550 | 2400 | 2350\n\nIn accordance with LCO 3.5.1 (ACCUMULATORS), which ONE of the following completes the statements below?\n\nBased on the sample results, _(1)_ Accumulator(s) is/are inoperable.\n\nIf the inoperable Accumulator(s) can NOT be restored to OPERABLE status, then the Unit is required to be in HOT STANDBY within a MAXIMUM of _(2)_ hours.",
       "tier_group": "Tier 2/Group 1",
       "title": "2018 Q86 \u2014 Accumulator Boron Concentration / LCO 3.5.1 / LCO 3.0.3",
       "track": "SRO",
@@ -7897,10 +7927,10 @@
       2018
     ],
     "question_count": 99,
-    "question_topic_count": 178,
+    "question_topic_count": 184,
     "reference_count": 99,
     "source_count": 1,
-    "topic_count": 46
+    "topic_count": 47
   },
   "topics": [
     {
@@ -7920,6 +7950,12 @@
       "title": "Abv",
       "topic_type": "system",
       "wiki_slug": "abv"
+    },
+    {
+      "slug": "admin",
+      "title": "Admin",
+      "topic_type": "admin",
+      "wiki_slug": "admin"
     },
     {
       "slug": "auxiliary-feedwater",

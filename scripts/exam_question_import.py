@@ -545,6 +545,32 @@ def build_wiki_slug_index(root: str | Path) -> set[str]:
     return {slug for slug in slugs if slug}
 
 
+def build_wiki_section_slug_index(root: str | Path, section: str) -> set[str]:
+    """Build a slug/alias index for one top-level wiki section."""
+    root = Path(root)
+    section_root = root / "wiki" / section
+    slugs: set[str] = set()
+    for path in section_root.rglob("*.md"):
+        slugs.update(slug_variants(path.stem))
+        raw = path.read_text(encoding="utf-8")
+        frontmatter, _ = parse_frontmatter(raw)
+        title = frontmatter.get("title")
+        if title:
+            slugs.update(slug_variants(title))
+        for alias in frontmatter.get("aliases") or []:
+            slugs.update(slug_variants(alias))
+    return {slug for slug in slugs if slug}
+
+
+def record_connects_to_wiki_section(record: Dict[str, Any], section_slug_index: set[str]) -> bool:
+    """Return true when any question connection resolves into a wiki section index."""
+    for links in (record.get("connections") or {}).values():
+        for link in links:
+            if any(variant in section_slug_index for variant in slug_variants(link)):
+                return True
+    return False
+
+
 def _add_issue(issues: List[Dict[str, Any]], record: Dict[str, Any], issue: str, detail: str) -> None:
     issues.append(
         {
@@ -652,12 +678,15 @@ def audit_question_records(
 
 def _topic_title(slug: str) -> str:
     special_titles = {
+        "admin": "Admin",
         "pressurizer-and-prt": "Pressurizer & PRT",
     }
     return special_titles.get(slug, slug.replace("-", " ").title())
 
 
 def _topic_type(slug: str) -> str:
+    if slug == "admin":
+        return "admin"
     if slug.startswith("ts-"):
         return "tech_spec"
     if slug.startswith("eop-") or slug.startswith("fr-"):
@@ -703,7 +732,7 @@ def _question_row(record: Dict[str, Any], question_slug: str | None = None) -> D
     }
 
 
-def build_supabase_staging_bundle(records: List[Dict[str, Any]]) -> Dict[str, Any]:
+def build_supabase_staging_bundle(records: List[Dict[str, Any]], root: str | Path | None = None) -> Dict[str, Any]:
     """Split normalized records into deterministic natural-key rows for Supabase staging."""
     years = sorted({record.get("exam_year") for record in records if record.get("exam_year") is not None})
     sources = [
@@ -722,6 +751,7 @@ def build_supabase_staging_bundle(records: List[Dict[str, Any]]) -> Dict[str, An
     choices: List[Dict[str, Any]] = []
     question_references: List[Dict[str, Any]] = []
     question_topics: List[Dict[str, Any]] = []
+    admin_slug_index = build_wiki_section_slug_index(root, "admin") if root is not None else set()
 
     sorted_records = sorted(records, key=lambda item: (item.get("exam_year") or 0, item.get("question_number") or 0, item.get("slug") or ""))
     slug_counts = Counter(record.get("slug") for record in sorted_records)
@@ -762,7 +792,11 @@ def build_supabase_staging_bundle(records: List[Dict[str, Any]]) -> Dict[str, An
                 }
             )
 
-        for topic_slug in record.get("resolved_topic_slugs") or record.get("topic_slugs") or []:
+        record_topic_slugs = list(record.get("resolved_topic_slugs") or record.get("topic_slugs") or [])
+        if admin_slug_index and record_connects_to_wiki_section(record, admin_slug_index):
+            record_topic_slugs.append("admin")
+
+        for topic_slug in record_topic_slugs:
             normalized = slugify(topic_slug)
             if not normalized or normalized == "unknown":
                 continue
@@ -825,7 +859,7 @@ def main(argv: List[str] | None = None) -> int:
     if args.command == "export":
         payload: Any = records
     elif args.command == "stage":
-        payload = build_supabase_staging_bundle(records)
+        payload = build_supabase_staging_bundle(records, root=args.root)
     else:
         payload = audit_question_records(
             records,

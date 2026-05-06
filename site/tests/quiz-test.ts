@@ -135,6 +135,7 @@ test('topic filter supports multiple wiki-formatted topic selections without dup
   await expect(page.getByText('RPS/SSPS')).toBeVisible();
 
   const topicLabels = await page.getByTestId('topic-filter-list').locator('label span').allTextContents();
+  expect(topicLabels.filter((label) => label === 'Admin')).toHaveLength(1);
   expect(topicLabels.filter((label) => label === 'AFW')).toHaveLength(1);
   expect(topicLabels.filter((label) => label === 'CCW')).toHaveLength(1);
   expect(topicLabels.filter((label) => label === 'Pressurizer & PRT')).toHaveLength(1);

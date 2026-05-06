@@ -17313,9 +17313,19 @@
       "topic_slug": "radiation-monitoring"
     },
     {
+      "question_slug": "q44-high-radiation-area-dosimetry",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q45-lhra-controls",
       "relationship_type": "tests",
       "topic_slug": "radiation-monitoring"
+    },
+    {
+      "question_slug": "q45-lhra-controls",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q46-control-room-ventilation-rad-monitor",
@@ -17326,6 +17336,11 @@
       "question_slug": "q46-control-room-ventilation-rad-monitor",
       "relationship_type": "tests",
       "topic_slug": "radiation-monitoring"
+    },
+    {
+      "question_slug": "q47-csf-priority-and-monitoring",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q48-eccs-flow-evaluation",
@@ -17618,6 +17633,11 @@
       "topic_slug": "feedwater-and-condensate"
     },
     {
+      "question_slug": "q78-ab-cn-0001-peer-checks-polisher-bypass",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q79-ab-rcp-0001-seal-cooling-loss-nat-circ",
       "relationship_type": "tests",
       "topic_slug": "reactor-coolant-pumps"
@@ -17691,6 +17711,11 @@
       "question_slug": "q85-high-containment-radiation-frce-3-yellow-path",
       "relationship_type": "tests",
       "topic_slug": "containment-systems"
+    },
+    {
+      "question_slug": "q85-high-containment-radiation-frce-3-yellow-path",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q86-accumulator-boron-lco-351-lco-303",
@@ -17781,6 +17806,11 @@
       "question_slug": "q93-loss-of-control-air-ecac-attachment-12",
       "relationship_type": "tests",
       "topic_slug": "control-air"
+    },
+    {
+      "question_slug": "q94-nrc-license-maintenance-shift-hours",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q95-ccw-abnormality-rcp-brg-clg-wtr-flo-lo",
@@ -18228,6 +18258,11 @@
       "topic_slug": "fire-protection"
     },
     {
+      "question_slug": "q39-pertinent-information-standing-order",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q40-steam-dump-bypass-valve-failure",
       "relationship_type": "tests",
       "topic_slug": "steam-dumps"
@@ -18236,6 +18271,11 @@
       "question_slug": "q41-troubleshooting-conduct",
       "relationship_type": "tests",
       "topic_slug": "chemical-and-volume-control-system"
+    },
+    {
+      "question_slug": "q41-troubleshooting-conduct",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q42-mssv-setpoints-lco-bases",
@@ -18251,6 +18291,21 @@
       "question_slug": "q43-cvcs-monitor-tank-release",
       "relationship_type": "tests",
       "topic_slug": "waste-liquid"
+    },
+    {
+      "question_slug": "q44-high-radiation-area-rwp",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q45-emergency-dose-limits",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q46-csf-priority-implementation",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q47-accident-monitoring-instrumentation",
@@ -18643,6 +18698,11 @@
       "topic_slug": "residual-heat-removal"
     },
     {
+      "question_slug": "q86-loss-of-rhr-eal-ca41",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q87-ccw-pump-trip-mode5-procedures",
       "relationship_type": "tests",
       "topic_slug": "component-cooling-water"
@@ -18723,6 +18783,11 @@
       "topic_slug": "ts-3-4-4-rcs"
     },
     {
+      "question_slug": "q95-porv-block-valve-config-control",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q96-radiation-monitoring-lco-3331",
       "relationship_type": "tests",
       "topic_slug": "radiation-monitoring"
@@ -18736,6 +18801,21 @@
       "question_slug": "q96-radiation-monitoring-lco-3331",
       "relationship_type": "tests",
       "topic_slug": "ts-3-4-3-instrumentation"
+    },
+    {
+      "question_slug": "q97-emergency-exposure-peel",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q98-locked-high-rad-area-iv-waiver",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q100-emergency-par-default",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q1-reactor-trip-status-panel",
@@ -19408,14 +19488,39 @@
       "topic_slug": "annunciators"
     },
     {
+      "question_slug": "q66-operator-burdens-annunciator-marking",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q67-shift-turnover-pre-post-relief",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q68-control-rod-movement-requirements",
       "relationship_type": "tests",
       "topic_slug": "control-rod-drive"
     },
     {
+      "question_slug": "q68-control-rod-movement-requirements",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q69-component-configuration-control",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q70-breaker-tagging-removal",
       "relationship_type": "tests",
       "topic_slug": "460-230v-ac"
+    },
+    {
+      "question_slug": "q70-breaker-tagging-removal",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q71-surveillance-dollar-sign",
@@ -19426,6 +19531,16 @@
       "question_slug": "q72-radwaste-release-rp-support",
       "relationship_type": "tests",
       "topic_slug": "waste-liquid"
+    },
+    {
+      "question_slug": "q73-emergency-dose-extension-alert",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q74-eop-continuous-action-verbs",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q75-containment-fire-2fp147",
@@ -19511,6 +19626,11 @@
       "question_slug": "q81-grid-voltage-inoperable-lines",
       "relationship_type": "tests",
       "topic_slug": "500kv"
+    },
+    {
+      "question_slug": "q81-grid-voltage-inoperable-lines",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q82-fuel-handling-incident-mast-tube",
@@ -19638,9 +19758,19 @@
       "topic_slug": "ts-3-4-9-refueling"
     },
     {
+      "question_slug": "q94-refueling-de-tensioning-requirements",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q95-abnormal-secondary-chemistry",
       "relationship_type": "tests",
       "topic_slug": "feedwater-and-condensate"
+    },
+    {
+      "question_slug": "q96-special-test-evolution-screening",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q97-protected-equipment-program",
@@ -19653,14 +19783,29 @@
       "topic_slug": "ts-3-4-0-applicability"
     },
     {
+      "question_slug": "q97-protected-equipment-program",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q98-waste-gas-release-restrictions",
       "relationship_type": "tests",
       "topic_slug": "waste-gas"
     },
     {
+      "question_slug": "q99-emergency-coordinator-escalation",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q100-eop-trip-1-frhs-1-transition",
       "relationship_type": "tests",
       "topic_slug": "auxiliary-feedwater"
+    },
+    {
+      "question_slug": "q100-eop-trip-1-frhs-1-transition",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q1-reactor-trip-breakers-ssps",
@@ -20113,6 +20258,56 @@
       "topic_slug": "feed-and-condensate"
     },
     {
+      "question_slug": "q66-plant-announcement-requirements",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q67-shift-turnover-restrictions",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q68-confined-space-entry-requirements",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q69-otsc-change-to-intent",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q70-red-blocking-tag-emergency",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q71-emergency-exposure-stay-time",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q72-locked-high-radiation-area-posting",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q73-eop-continuous-caution-definition",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q74-emergency-notification-timing",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q75-emergency-communications-nets-phone",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q79-loss-of-air-tdafw-pump-overpower",
       "relationship_type": "tests",
       "topic_slug": "control-air"
@@ -20126,6 +20321,11 @@
       "question_slug": "q83-lbloca-emergency-classification",
       "relationship_type": "tests",
       "topic_slug": "containment"
+    },
+    {
+      "question_slug": "q83-lbloca-emergency-classification",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q86-rcp-seal-failure-ab-rcp-actions",
@@ -20146,6 +20346,31 @@
       "question_slug": "q92-misaligned-rod-power-reduction",
       "relationship_type": "tests",
       "topic_slug": "control-rod-drive"
+    },
+    {
+      "question_slug": "q94-defueling-core-alteration-sro",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q95-reactivity-management-sro",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q96-temporary-configuration-changes",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q97-avr-esoc-notification",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q100-emergency-accountability-timing",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q01-rcs-low-flow-p7-p8-logic",
@@ -20206,6 +20431,11 @@
       "question_slug": "q06-conduct-of-ops-ro-leaving-atc",
       "relationship_type": "tests",
       "topic_slug": "ts-6-0-admin-controls"
+    },
+    {
+      "question_slug": "q06-conduct-of-ops-ro-leaving-atc",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q07-pzr-backup-heater-power-supplies",
@@ -20336,6 +20566,11 @@
       "question_slug": "q22-high-rcs-activity-maximize-letdown",
       "relationship_type": "tests",
       "topic_slug": "reactor-coolant-system"
+    },
+    {
+      "question_slug": "q23-eop-flowchart-symbols-concurrent",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q24-containment-flooding-sw-not-isolated",
@@ -20688,9 +20923,19 @@
       "topic_slug": "turbine-generator"
     },
     {
+      "question_slug": "q67-independent-verification-throttle-valve",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q68-radwaste-flow-recorder-odcm",
       "relationship_type": "tests",
       "topic_slug": "waste-liquid"
+    },
+    {
+      "question_slug": "q69-emergency-notification-timing",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q72-subcritical-sr-counts-sur-rod-withdrawal",
@@ -20723,6 +20968,11 @@
       "topic_slug": "containment-spray"
     },
     {
+      "question_slug": "q77-loca-containment-spray-frp-purple-path",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q78-rcp-vibration-abnormal-procedure-actions",
       "relationship_type": "tests",
       "topic_slug": "reactor-coolant-pumps"
@@ -20731,6 +20981,11 @@
       "question_slug": "q79-loss-rhr-breaker-reclosure-policy",
       "relationship_type": "tests",
       "topic_slug": "residual-heat-removal"
+    },
+    {
+      "question_slug": "q79-loss-rhr-breaker-reclosure-policy",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q80-atws-frsm1-turbine-trip-verification",
@@ -20813,6 +21068,11 @@
       "topic_slug": "rps-ssps"
     },
     {
+      "question_slug": "q92-pzr-pressure-channel-failure-nrc-reportability",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q93-cw-bus-loss-circulator-trip",
       "relationship_type": "tests",
       "topic_slug": "4kv"
@@ -20826,6 +21086,16 @@
       "question_slug": "q94-shift-complement-unexpected-absence",
       "relationship_type": "tests",
       "topic_slug": "ts-6-0-admin-controls"
+    },
+    {
+      "question_slug": "q94-shift-complement-unexpected-absence",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
+      "question_slug": "q96-online-work-management-sm-responsibilities",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     },
     {
       "question_slug": "q97-rcs-leak-cvcs-2cv6-ts-3472",
@@ -20843,6 +21113,11 @@
       "topic_slug": "ts-3-4-4-reactor-coolant-system"
     },
     {
+      "question_slug": "q97-rcs-leak-cvcs-2cv6-ts-3472",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
+    },
+    {
       "question_slug": "q98-cvcs-monitor-tank-release-2r18-inoperable",
       "relationship_type": "tests",
       "topic_slug": "waste-liquid"
@@ -20851,6 +21126,11 @@
       "question_slug": "q99-containment-radiation-cfst-frce3",
       "relationship_type": "tests",
       "topic_slug": "containment-systems"
+    },
+    {
+      "question_slug": "q99-containment-radiation-cfst-frce3",
+      "relationship_type": "tests",
+      "topic_slug": "admin"
     }
   ],
   "questions": [
@@ -38945,10 +39225,10 @@
       2023
     ],
     "question_count": 499,
-    "question_topic_count": 782,
+    "question_topic_count": 838,
     "reference_count": 499,
     "source_count": 5,
-    "topic_count": 78
+    "topic_count": 79
   },
   "topics": [
     {
@@ -38992,6 +39272,12 @@
       "title": "Abv",
       "topic_type": "system",
       "wiki_slug": "abv"
+    },
+    {
+      "slug": "admin",
+      "title": "Admin",
+      "topic_type": "admin",
+      "wiki_slug": "admin"
     },
     {
       "slug": "afw",

@@ -345,6 +345,17 @@ class ExamQuestionImportTests(unittest.TestCase):
         self.assertIn("ab-cw-0001-circulating-water-malfunction", q93["resolved_topic_slugs"])
         self.assertNotIn("electrical-power-systems", q93["resolved_topic_slugs"])
 
+    def test_build_supabase_staging_bundle_adds_admin_topic_for_admin_procedure_connections(self):
+        records = collect_question_records(ROOT, exam_year=2018, topic_map=load_topic_map(ROOT / "data/topic-map.yaml"))
+        bundle = build_supabase_staging_bundle(records, root=ROOT)
+
+        admin_topic = next(topic for topic in bundle["topics"] if topic["slug"] == "admin")
+        self.assertEqual(admin_topic["title"], "Admin")
+        self.assertEqual(admin_topic["topic_type"], "admin")
+
+        q78_topics = [row["topic_slug"] for row in bundle["question_topics"] if row["question_slug"] == "q78-ab-cn-0001-peer-checks-polisher-bypass"]
+        self.assertIn("admin", q78_topics)
+
     def test_build_supabase_staging_bundle_splits_records_into_import_tables(self):
         records = collect_question_records(ROOT, exam_year=2018, topic_map=load_topic_map(ROOT / "data/topic-map.yaml"))
         bundle = build_supabase_staging_bundle(records)

@@ -10,10 +10,10 @@
       2023
     ],
     "question_count": 499,
-    "question_topic_count": 782,
+    "question_topic_count": 838,
     "reference_count": 499,
     "source_count": 5,
-    "topic_count": 78
+    "topic_count": 79
   },
   "questions": [
     {
@@ -2990,6 +2990,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "radiation-monitoring",
           "title": "Radiation Monitoring",
           "relationshipType": "tests",
@@ -3052,6 +3059,13 @@
         }
       ],
       "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
         {
           "slug": "radiation-monitoring",
           "title": "Radiation Monitoring",
@@ -3184,7 +3198,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q48-eccs-flow-evaluation",
@@ -5320,6 +5342,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "feedwater-and-condensate",
           "title": "Feed & Condensate",
           "relationshipType": "tests",
@@ -5809,6 +5838,13 @@
         }
       ],
       "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
         {
           "slug": "containment-systems",
           "title": "Containment",
@@ -6452,7 +6488,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q95-ccw-abnormality-rcp-brg-clg-wtr-flo-lo",
@@ -9538,7 +9582,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q40-steam-dump-bypass-valve-failure",
@@ -9657,6 +9709,13 @@
         }
       ],
       "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
         {
           "slug": "chemical-and-volume-control-system",
           "title": "CVCS",
@@ -9852,7 +9911,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q45-emergency-dose-limits",
@@ -9907,7 +9974,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q46-csf-priority-implementation",
@@ -9962,7 +10037,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q47-accident-monitoring-instrumentation",
@@ -12742,6 +12825,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "residual-heat-removal",
           "title": "RHR",
           "relationshipType": "tests",
@@ -13350,6 +13440,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "pressurizer",
           "title": "Pressurizer & PRT",
           "relationshipType": "tests",
@@ -13495,7 +13592,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q98-locked-high-rad-area-iv-waiver",
@@ -13550,7 +13655,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q99-cr-evacuation-si-defeat",
@@ -13660,7 +13773,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q1-reactor-trip-status-panel",
@@ -18288,6 +18409,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "annunciators",
           "title": "Annunciators",
           "relationshipType": "tests",
@@ -18349,7 +18477,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q68-control-rod-movement-requirements",
@@ -18405,6 +18541,13 @@
         }
       ],
       "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
         {
           "slug": "control-rod-drive",
           "title": "Control Rod Drive",
@@ -18467,7 +18610,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q70-breaker-tagging-removal",
@@ -18529,6 +18680,13 @@
           "relationshipType": "tests",
           "topicType": "system",
           "wikiSlug": "460-230v-ac"
+        },
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
         }
       ]
     },
@@ -18711,7 +18869,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q74-eop-continuous-action-verbs",
@@ -18766,7 +18932,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q75-containment-fire-2fp147",
@@ -19276,6 +19450,13 @@
           "relationshipType": "tests",
           "topicType": "system",
           "wikiSlug": "500kv"
+        },
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
         }
       ]
     },
@@ -20167,6 +20348,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "refueling",
           "title": "Refueling",
           "relationshipType": "tests",
@@ -20298,7 +20486,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q97-protected-equipment-program",
@@ -20354,6 +20550,13 @@
         }
       ],
       "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
         {
           "slug": "chemical-and-volume-control-system",
           "title": "CVCS",
@@ -20486,7 +20689,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q100-eop-trip-1-frhs-1-transition",
@@ -20548,6 +20759,13 @@
           "relationshipType": "tests",
           "topicType": "system",
           "wikiSlug": "auxiliary-feedwater"
+        },
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
         }
       ]
     },
@@ -24872,7 +25090,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q67-shift-turnover-restrictions",
@@ -24927,7 +25153,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q68-confined-space-entry-requirements",
@@ -24982,7 +25216,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q69-otsc-change-to-intent",
@@ -25037,7 +25279,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q70-red-blocking-tag-emergency",
@@ -25092,7 +25342,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q71-emergency-exposure-stay-time",
@@ -25147,7 +25405,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q72-locked-high-radiation-area-posting",
@@ -25202,7 +25468,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q73-eop-continuous-caution-definition",
@@ -25257,7 +25531,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q74-emergency-notification-timing",
@@ -25312,7 +25594,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q75-emergency-communications-nets-phone",
@@ -25367,7 +25657,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q76-eop-frsm1-rcp-trip-atws",
@@ -25824,6 +26122,13 @@
         }
       ],
       "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
         {
           "slug": "containment",
           "title": "Containment",
@@ -26469,7 +26774,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q95-reactivity-management-sro",
@@ -26524,7 +26837,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q96-temporary-configuration-changes",
@@ -26579,7 +26900,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q97-avr-esoc-notification",
@@ -26634,7 +26963,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q98-containment-purge-reinstatement",
@@ -26799,7 +27136,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q01-rcs-low-flow-p7-p8-logic",
@@ -27212,6 +27557,13 @@
         }
       ],
       "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
         {
           "slug": "ts-6-0-admin-controls",
           "title": "TS 6.0 — Administrative Controls",
@@ -28352,7 +28704,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q24-containment-flooding-sw-not-isolated",
@@ -31305,7 +31665,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q68-radwaste-flow-recorder-odcm",
@@ -31423,7 +31791,15 @@
           "isCorrect": true
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q70-xenon-following-trip",
@@ -31904,6 +32280,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "containment-spray",
           "title": "Containment Spray",
           "relationshipType": "tests",
@@ -32029,6 +32412,13 @@
         }
       ],
       "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
         {
           "slug": "residual-heat-removal",
           "title": "RHR",
@@ -32837,6 +33227,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "pressurizer",
           "title": "Pressurizer & PRT",
           "relationshipType": "tests",
@@ -32977,6 +33374,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "ts-6-0-admin-controls",
           "title": "TS 6.0 — Administrative Controls",
           "relationshipType": "tests",
@@ -33093,7 +33497,15 @@
           "isCorrect": false
         }
       ],
-      "topics": []
+      "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        }
+      ]
     },
     {
       "slug": "q97-rcs-leak-cvcs-2cv6-ts-3472",
@@ -33149,6 +33561,13 @@
         }
       ],
       "topics": [
+        {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
         {
           "slug": "chemical-and-volume-control-system",
           "title": "CVCS",
@@ -33290,6 +33709,13 @@
       ],
       "topics": [
         {
+          "slug": "admin",
+          "title": "Admin",
+          "relationshipType": "tests",
+          "topicType": "admin",
+          "wikiSlug": "admin"
+        },
+        {
           "slug": "containment-systems",
           "title": "Containment",
           "relationshipType": "tests",
@@ -33414,6 +33840,12 @@
       "title": "AMSAC",
       "topic_type": "system",
       "wiki_slug": "amsac"
+    },
+    {
+      "slug": "admin",
+      "title": "Admin",
+      "topic_type": "admin",
+      "wiki_slug": "admin"
     },
     {
       "slug": "annunciators",
