@@ -10,7 +10,7 @@ create table if not exists public.contact_messages (
   page_url text,
   message text not null check (char_length(message) between 10 and 5000),
   user_agent text,
-  status text not null default 'new' check (status in ('new', 'reviewed', 'closed', 'spam')),
+  status text not null default 'new' check (status in ('new', 'reviewed', 'archived', 'closed', 'spam')),
   metadata jsonb not null default '{}'::jsonb,
   created_at timestamptz not null default now(),
   reviewed_at timestamptz,
