@@ -27,7 +27,7 @@ Provides feedwater to steam generators when the main feedwater system is unavail
 | Pump | Actuation Signals | Source |
 |------|------------------|--------|
 | Turbine-Driven | 2/3 Lo-Lo level in any 2 SGs; OR RCP bus undervoltage (1/2 twice); OR manual (local and remote) | UFSAR T7.2-1 |
-| Motor-Driven | 2/3 Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence signal; OR blackout sequence signal; OR manual (local and remote) | UFSAR T7.2-1 |
+| Motor-Driven | 2/3 Lo-Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence signal; OR blackout sequence signal; OR manual (local and remote) | UFSAR T7.2-1 |
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q16</div>
