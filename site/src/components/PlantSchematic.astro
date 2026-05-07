@@ -1,77 +1,126 @@
 ---
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
-// System blocks: [x, y, w, h, displayName, group, articleSlug]
+// System tiles: [x, y, w, h, displayName, group, articleSlug]
+// Each row below is one group strip; left-to-right order within a strip
+// matches the order tiles appear in the SVG. One tile per wiki/systems/* article.
 // Color and "last reviewed" text are filled in client-side from per-user data.
+const TILE_W = 80;
+const TILE_H = 42;
+const COL_STEP = 88;
+
+function row(slugs: [string, string][], y: number): [number, number, number, number, string, string, string][] {
+  return slugs.map(([name, slug], i) => {
+    const group = slug.split('/')[0]; // unused but useful for debugging
+    return [40 + i * COL_STEP, y, TILE_W, TILE_H, name, group, slug];
+  });
+}
+
 const systems: [number, number, number, number, string, string, string][] = [
-  // Primary
-  [40, 60, 90, 42, 'Rx Vessel', 'primary', 'systems/rx-vessel-and-internals'],
-  [150, 60, 90, 42, 'RCPs', 'primary', 'systems/reactor-coolant-pumps'],
-  [260, 60, 90, 42, 'PZR', 'primary', 'systems/pressurizer-and-prt'],
-  [40, 115, 90, 42, 'RCS', 'primary', 'systems/reactor-coolant-system'],
-  [150, 115, 90, 42, 'SG', 'primary', 'systems/steam-generators'],
-  [260, 115, 90, 42, 'CVCS', 'primary', 'systems/chemical-and-volume-control-system'],
+  // PRIMARY (10) — y=60
+  ...row([
+    ['RCS',        'systems/reactor-coolant-system'],
+    ['RCPs',       'systems/reactor-coolant-pumps'],
+    ['PZR',        'systems/pressurizer'],
+    ['PZR L/P',    'systems/pressurizer-level-and-press-control'],
+    ['RVLIS',      'systems/rvlis'],
+    ['Rx Vessel',  'systems/rx-vessel-and-internals'],
+    ['SG',         'systems/steam-generators'],
+    ['CVCS',       'systems/chemical-and-volume-control-system'],
+    ['Refueling',  'systems/refueling'],
+    ['FHV',        'systems/fhv'],
+  ], 60),
 
-  // Control
-  [380, 60, 90, 42, 'RPS / SSPS', 'control', 'systems/rps-ssps'],
-  [490, 60, 90, 42, 'Excore NIs', 'control', 'systems/excore-nis'],
-  [380, 115, 90, 42, 'Rod Ctrl', 'control', 'systems/control-rod-drive'],
-  [490, 115, 90, 42, 'AMSAC', 'control', 'systems/amsac'],
+  // CONTROL & INSTR (6) — y=162
+  ...row([
+    ['RPS/SSPS',    'systems/rps-ssps'],
+    ['Excore NIs',  'systems/excore-nis'],
+    ['Incores',     'systems/incores'],
+    ['Rod Ctrl',    'systems/control-rod-drive'],
+    ['AMSAC',       'systems/amsac'],
+    ['Rad Mon',     'systems/radiation-monitoring'],
+  ], 162),
 
-  // Emergency
-  [40, 220, 90, 42, 'ECCS', 'emergency', 'systems/emergency-core-cooling-systems'],
-  [150, 220, 90, 42, 'RHR', 'emergency', 'systems/residual-heat-removal'],
-  [260, 220, 90, 42, 'CCW', 'emergency', 'systems/component-cooling-water'],
-  [380, 220, 90, 42, 'Cont. Spray', 'emergency', 'systems/containment-spray'],
-  [490, 220, 90, 42, 'CFCUs', 'emergency', 'systems/containment-fan-coil-units'],
-  [40, 275, 90, 42, 'Service Water', 'emergency', 'systems/service-water'],
-  [150, 275, 90, 42, 'Containment', 'emergency', 'systems/containment-systems'],
-  [260, 275, 90, 42, 'SFP', 'emergency', 'systems/spent-fuel-pool'],
+  // EMERGENCY (12) — y=264
+  ...row([
+    ['ECCS',         'systems/emergency-core-cooling-systems'],
+    ['RHR',          'systems/residual-heat-removal'],
+    ['CCW',          'systems/component-cooling-water'],
+    ['Cont. Spray',  'systems/containment-spray'],
+    ['CFCUs',        'systems/containment-fan-coil-units'],
+    ['Containment',  'systems/containment-systems'],
+    ['Svc Water',    'systems/service-water'],
+    ['SFP',          'systems/spent-fuel-pool'],
+    ['Chill Water',  'systems/chill-water'],
+    ['CAV',          'systems/cav'],
+    ['SPAV',         'systems/spav'],
+    ['ESF',          'systems/esf-and-design'],
+  ], 264),
 
-  // Secondary
-  [610, 60, 90, 42, 'Main Steam', 'secondary', 'systems/main-steam'],
-  [720, 60, 90, 42, 'Main Turb', 'secondary', 'systems/main-turbine'],
-  [830, 60, 90, 42, 'Feed & Cond', 'secondary', 'systems/feedwater-and-condensate'],
-  [610, 115, 90, 42, 'AFW', 'secondary', 'systems/auxiliary-feedwater'],
-  [720, 115, 90, 42, 'Steam Dumps', 'secondary', 'systems/steam-dumps'],
-  [830, 115, 90, 42, 'Circ Water', 'secondary', 'systems/circ-water'],
+  // SECONDARY (9) — y=366
+  ...row([
+    ['Main Steam',   'systems/main-steam'],
+    ['Main Turb',    'systems/turbine-generator'],
+    ['Feed & Cond',  'systems/feedwater-and-condensate'],
+    ['Circ Water',   'systems/circ-water'],
+    ['Steam Dumps',  'systems/steam-dumps'],
+    ['Cond Air',     'systems/condenser-air-removal'],
+    ['TAC',          'systems/tac'],
+    ['TGA Vent',     'systems/tga-ventilation'],
+    ['MTLO',         'systems/mtlo'],
+  ], 366),
 
-  // Electrical
-  [610, 220, 90, 42, '4KV', 'electrical', 'systems/4kv'],
-  [720, 220, 90, 42, '13KV', 'electrical', 'systems/13kv'],
-  [830, 220, 90, 42, '115V', 'electrical', 'systems/115v-ac'],
-  [610, 275, 90, 42, 'DC Power', 'electrical', 'systems/dc-power'],
-  [720, 275, 90, 42, 'EDGs', 'electrical', 'systems/diesel-generators'],
-  [830, 275, 90, 42, '500KV', 'electrical', 'systems/500kv'],
+  // ELECTRICAL (8) — y=468
+  ...row([
+    ['4KV',       'systems/4kv'],
+    ['13KV',      'systems/13kv'],
+    ['115V',      'systems/115v-ac'],
+    ['460/230V',  'systems/460-230v-ac'],
+    ['500KV',     'systems/500kv'],
+    ['DC Power',  'systems/dc-power'],
+    ['EDGs',      'systems/diesel-generators'],
+    ['SECs',      'systems/secs'],
+  ], 468),
 
-  // Auxiliary
-  [40, 380, 90, 42, 'Control Air', 'aux', 'systems/control-air'],
-  [150, 380, 90, 42, 'Fire Prot', 'aux', 'systems/fire-protection'],
-  [260, 380, 90, 42, 'Rad Mon', 'aux', 'systems/radiation-monitoring'],
-  [380, 380, 90, 42, 'Waste Gas', 'aux', 'systems/waste-gas'],
-  [490, 380, 90, 42, 'Waste Liq', 'aux', 'systems/waste-liquid'],
-  [610, 380, 90, 42, 'Chill Water', 'aux', 'systems/chill-water'],
-  [720, 380, 90, 42, 'TGA Vent', 'aux', 'systems/tga-ventilation'],
-  [830, 380, 90, 42, 'Annuncs', 'aux', 'systems/annunciators'],
+  // AUXILIARY (9) — y=570
+  ...row([
+    ['ABV',        'systems/abv'],
+    ['AFW',        'systems/auxiliary-feedwater'],
+    ['Annuncs',    'systems/annunciators'],
+    ['Ctrl Air',   'systems/control-air'],
+    ['Demin Wtr',  'systems/demin-water'],
+    ['Fire Prot',  'systems/fire-protection'],
+    ['Stator CW',  'systems/stator-cooling-water'],
+    ['Waste Gas',  'systems/waste-gas'],
+    ['Waste Liq',  'systems/waste-liquid'],
+  ], 570),
 ];
 
+// Group label position [name, x, y, color]; y is the label baseline (panel top sits 10 above).
 const groupLabels: Record<string, [string, number, number, string]> = {
-  primary:    ['Primary',          40, 40, 'var(--color-accent-blue)'],
-  control:    ['Control & Instr',  380, 40, 'var(--color-accent-purple)'],
-  emergency:  ['Emergency',        40, 200, 'var(--color-mastery-weak)'],
-  secondary:  ['Secondary',        610, 40, 'var(--color-mastery-ok)'],
-  electrical: ['Electrical',       610, 200, 'var(--color-accent-amber)'],
-  aux:        ['Auxiliary',         40, 360, 'var(--color-text-muted)'],
+  primary:    ['Primary',           40, 50,  'var(--color-accent-blue)'],
+  control:    ['Control & Instr',   40, 152, 'var(--color-accent-purple)'],
+  emergency:  ['Emergency',         40, 254, 'var(--color-mastery-weak)'],
+  secondary:  ['Secondary',         40, 356, 'var(--color-mastery-ok)'],
+  electrical: ['Electrical',        40, 458, 'var(--color-accent-amber)'],
+  aux:        ['Auxiliary',         40, 560, 'var(--color-text-muted)'],
 };
 
-// Group panel widths/heights — sized to contain both rows of tiles plus padding
+// Each group is a single-row horizontal strip. Panel width is sized to wrap
+// the tiles in that strip; height is 80 (42 tile + 38 padding for label/gaps).
+function panelWidthFor(cols: number): number {
+  // last tile right edge = 40 + (cols-1)*COL_STEP + TILE_W
+  // panel x=30, so width = (last tile right) - 30 + 10 right-pad
+  return 40 + (cols - 1) * COL_STEP + TILE_W - 30 + 10;
+}
+
 const groupDims: Record<string, [number, number]> = {
-  primary:    [330, 137],
-  control:    [220, 137],
-  emergency:  [560, 137],
-  secondary:  [330, 137],
-  electrical: [330, 137],
-  aux:        [900, 82],
+  primary:    [panelWidthFor(10), 80],
+  control:    [panelWidthFor(6),  80],
+  emergency:  [panelWidthFor(12), 80],
+  secondary:  [panelWidthFor(9),  80],
+  electrical: [panelWidthFor(8),  80],
+  aux:        [panelWidthFor(9),  80],
 };
 
 const totalSystems = systems.length;
@@ -98,7 +147,7 @@ const totalSystems = systems.length;
   <div class="flex gap-4">
     <!-- SVG schematic -->
     <div class="flex-1 bg-bg-surface border border-border rounded overflow-hidden">
-      <svg viewBox="0 0 960 460" class="w-full h-auto">
+      <svg viewBox="0 0 1100 640" class="w-full h-auto">
         <!-- Group panels -->
         {Object.entries(groupLabels).map(([key, [label, x, y, color]]) => {
           const [w, h] = groupDims[key];
