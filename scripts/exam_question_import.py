@@ -156,7 +156,19 @@ def _parse_identity(path: Path, title: str) -> Tuple[int | None, int | None]:
 
 
 def _extract_stem(body: str) -> str:
-    # The stem is the first question card text block before the choices block.
+    # The stem starts at the first question-card text block and ends at the
+    # answer-choice block. Some source questions split the stem across multiple
+    # styled divs, so capturing only the first text div clips the actual prompt.
+    stem_start = re.search(r'<div[^>]*font-size:13px[^>]*>', body, re.IGNORECASE)
+    choices_start = re.search(
+        r'<div[^>]*margin-bottom:14px[^>]*>\s*\n?\s*<div[^>]*>\s*<strong>\s*A\.',
+        body,
+        re.DOTALL | re.IGNORECASE,
+    )
+    if stem_start and choices_start and choices_start.start() > stem_start.start():
+        return strip_html(body[stem_start.start() : choices_start.start()])
+
+    # Fallback for older/simple cards that use a single stem block.
     match = re.search(
         r'<div[^>]*font-size:13px[^>]*>\s*(.*?)</div>\s*\n\s*<div[^>]*margin-bottom:14px',
         body,

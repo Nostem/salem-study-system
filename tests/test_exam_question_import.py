@@ -79,6 +79,13 @@ class ExamQuestionImportTests(unittest.TestCase):
         self.assertIn("2235 PSIG | 0 PSIG | 2235 PSIG | 2235 PSIG | 2235 PSIG", parsed["stem_text"])
         self.assertNotIn("CH I | CH II | CH III | CH IV\n2PT-455", parsed["stem_text"])
 
+    def test_parse_question_markdown_preserves_multi_block_stem_prompt(self):
+        parsed = parse_question_markdown(ROOT / "wiki/exams/2020/q85-frts1-entry-rcs-pressure-below-300.md")
+
+        self.assertIn("21 RHR Pump is running providing 1150 gpm cold leg injection flow", parsed["stem_text"])
+        self.assertIn("Based on the above conditions, complete the following statement", parsed["stem_text"])
+        self.assertIn("Entry into 2-EOP-FRTS-1", parsed["stem_text"])
+
     def test_parse_question_markdown_handles_multiple_correct_answers(self):
         parsed = parse_question_markdown(ROOT / "wiki/exams/2022/q88-loss-of-control-air-pzr-level.md")
 

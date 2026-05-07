@@ -18228,7 +18228,7 @@
       "questionNumber": 64,
       "track": "RO",
       "title": "2020 Q64 — CW Malfunction / Rapid Load Reduction [OUTDATED]",
-      "stemText": "DISCLAIMER: This question is outdated. AB.CW no longer specifies an exact power level reduction to 83%. It only states to perform a rapid load reduction to prevent flashing in the Condensate System.\n\nQ64 — CW Malfunction / Rapid Load Reduction [OUTDATED]\n075000K2.02 (2.5)",
+      "stemText": "DISCLAIMER: This question is outdated. AB.CW no longer specifies an exact power level reduction to 83%. It only states to perform a rapid load reduction to prevent flashing in the Condensate System.\n\nQ64 — CW Malfunction / Rapid Load Reduction [OUTDATED]\n075000K2.02 (2.5)\n\nGiven:\n\nUnit 2 are at 100% Power.\n21A Circulator is out of service (C/T) for Waterbox cleaning.\n23B Circulator is out of service (C/T) for Traveling Screen replacement.\nA Liquid Waste release is in progress from 21 CVCS Monitor Tank to the 21 SW Header.\n\nThe following sequence of events occurs:\n\n21B Circulator trips.\nThe crew enters S2.OP-AB.CW-0001, Circulating Water System Malfunction.\nField operator makes an error in throttling hotwell isolation valves resulting in 21A and 21B Hotwell levels at 30 inches.\n21 Condensate Pump amps are oscillating.\n\nBased on the above conditions, which one of the following describes the next required actions and the MAXIMUM power level allowed in accordance with station procedures?\n\nNote: S2.OP-AB.CN-0001, Main Feedwater / Condensate System Abnormality\n\n         S2.OP-AB.LOAD-0001, Rapid Load Reduction",
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
         "B"
@@ -19327,7 +19327,7 @@
       "questionNumber": 80,
       "track": "SRO",
       "title": "2020 Q80 — LOPA-1 Decision Time for Extended Blackout [OUTDATED]",
-      "stemText": "DISCLAIMER: This question is outdated. We no longer have an EOP-LOPA-4. Step 10 of EOP-LOPA-1 does state decision to declare ELAP must be made within (1) hour.\n\nQ80 — LOPA-1 Decision Time for Extended Blackout [OUTDATED]\n000055EA2.05 (3.7)",
+      "stemText": "DISCLAIMER: This question is outdated. We no longer have an EOP-LOPA-4. Step 10 of EOP-LOPA-1 does state decision to declare ELAP must be made within (1) hour.\n\nQ80 — LOPA-1 Decision Time for Extended Blackout [OUTDATED]\n000055EA2.05 (3.7)\n\nGiven:\n\n• Unit 2 is at 100% Power.\n\n• A Loss of All AC Power occurs.\n\n• The crew has entered 2-EOP-LOPA-1, Loss of All AC.\n\n• Maintenance has reported that all three EDGs have been extensively damaged and restoration cannot be expected for at least 12 hours.\n\n• The Load Dispatcher has informed the Shift Manager that restoration of Offsite Power cannot be expected for at least 24 hours.\n\nIn accordance with 2-EOP-LOPA-1, the CRS must make a decision within _(1)_ if AC power sources will be restored within the appropriate time requirements to support the SBO licensing basis, and then based on this decision the CRS will _(2)_.",
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
         "A"
@@ -19663,7 +19663,7 @@
       "questionNumber": 85,
       "track": "SRO",
       "title": "2020 Q85 — FRTS-1 Entry RCS Pressure Below 300",
-      "stemText": "Given:\n\n• Unit 2 is in MODE 3.\n\n• RCS Temperature is 547°F\n\n• RCS Pressure is 2235 psig.\n\nSubsequently a LOCA occurs and the crew has transitioned from 2-EOP-TRIP-1, Reactor Trip or Safety Injection;\n\n• RCS Pressure is 125 psig.\n\n• RCS CETs read 380°F.\n\n• RCS Cold Leg temperatures are 250°F.\n\n• The RCS has cooled down > 100°F in the last 30 minutes.\n\n• 22 RHR Pump failed to start.\n\n• 21 RHR Pump is running providing 1150 gpm cold leg injection flow.",
+      "stemText": "Given:\n\n• Unit 2 is in MODE 3.\n\n• RCS Temperature is 547°F\n\n• RCS Pressure is 2235 psig.\n\nSubsequently a LOCA occurs and the crew has transitioned from 2-EOP-TRIP-1, Reactor Trip or Safety Injection;\n\n• RCS Pressure is 125 psig.\n\n• RCS CETs read 380°F.\n\n• RCS Cold Leg temperatures are 250°F.\n\n• The RCS has cooled down > 100°F in the last 30 minutes.\n\n• 22 RHR Pump failed to start.\n\n• 21 RHR Pump is running providing 1150 gpm cold leg injection flow.\n\nBased on the above conditions, complete the following statement;\n\nEntry into 2-EOP-FRTS-1, RESPONSE TO IMMINENT PRESSURIZED THERMAL SHOCK CONDITIONS is …",
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
         "A"
@@ -20174,7 +20174,7 @@
       "questionNumber": 92,
       "track": "SRO",
       "title": "2020 Q92 — Containment Hydrogen Concentration",
-      "stemText": "Given:\n\n• The Unit 2 crew is performing 2-EOP-LOCA-1, Loss of Reactor Coolant, Step 24, \"Containment Hydrogen Concentration.\"\n\n• Containment Hydrogen Concentration is 2.1 %.",
+      "stemText": "Given:\n\n• The Unit 2 crew is performing 2-EOP-LOCA-1, Loss of Reactor Coolant, Step 24, \"Containment Hydrogen Concentration.\"\n\n• Containment Hydrogen Concentration is 2.1 %.\n\nIn accordance with 2-EOP-LOCA-1, which of the following describes the required procedural action(s)?",
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
         "A"
