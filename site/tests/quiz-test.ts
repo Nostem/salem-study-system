@@ -110,6 +110,23 @@ test('quiz stem preserves imported table cell boundaries', async ({ page }) => {
   await expect(page.locator('#question-stem')).not.toContainText('Time10:0010:05');
 });
 
+test('quiz stem renders source images needed to answer image-based questions', async ({ page }) => {
+  await authenticateQuizUser(page);
+  // Seed 68 puts draft 2023 Q23 first under the 2023 filter.
+  await page.goto('quiz/?seed=68');
+
+  await page.getByLabel('Exam year').selectOption('2023');
+  await page.getByLabel('Question count').fill('1');
+  await expect(page.getByLabel('Include draft imported questions')).toBeChecked();
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.getByTestId('question-meta')).toContainText('2023 Q23');
+  const image = page.locator('#question-stem img[alt*="Concurrent Step Symbol"]');
+  await expect(image).toBeVisible();
+  await expect(image).toHaveAttribute('src', /exam-images\/2023-q23-symbol\.png$/);
+  await expect(page.locator('#question-stem')).toContainText('What does the symbol denote?');
+});
+
 test('quiz stem preserves blank cells in imported tables', async ({ page }) => {
   await authenticateQuizUser(page);
   // Seed 132 puts draft 2018 Q10 first under the default quiz filters.

@@ -25,6 +25,7 @@ export type QuizQuestion = {
   track?: string | null;
   title?: string | null;
   stemText: string;
+  stemHtml?: string;
   officialAnswerLabel?: string | null;
   acceptedAnswerLabels: string[];
   status?: string | null;

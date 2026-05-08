@@ -25,6 +25,19 @@ class StaticQuizBankBuilderTests(unittest.TestCase):
         self.assertIn("72 hours", q82["explanationText"])
         self.assertIn("TS 3/4.3 — Instrumentation", [topic["title"] for topic in q82["topics"]])
 
+    def test_build_quiz_bank_preserves_stem_images_from_wiki_markdown(self):
+        bank = build_quiz_bank(ROOT, ROOT / "data/quiz-import/supabase-staging-all.json")
+
+        q73 = next(question for question in bank["questions"] if question["slug"] == "q73-eop-continuous-caution-definition")
+        self.assertIn("exam-images/2022-q73-caution-symbol.png", q73["stemHtml"])
+        self.assertIn("Continuous Caution symbol", q73["stemHtml"])
+        self.assertIn("The below Caution symbol appears prior to step 1.", q73["stemText"])
+
+        q23 = next(question for question in bank["questions"] if question["slug"] == "q23-eop-flowchart-symbols-concurrent")
+        self.assertIn("exam-images/2023-q23-symbol.png", q23["stemHtml"])
+        self.assertIn("Concurrent Step Symbol", q23["stemHtml"])
+        self.assertIn("What does the symbol denote?", q23["stemText"])
+
     def test_build_quiz_bank_exposes_admin_topic_from_admin_procedure_connections(self):
         bank = build_quiz_bank(ROOT, ROOT / "data/quiz-import/supabase-staging-all.json")
 

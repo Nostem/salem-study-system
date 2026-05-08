@@ -128,7 +128,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
           <div id="question-meta" data-testid="question-meta" class="flex flex-wrap gap-2 text-[11px] font-mono"></div>
         </div>
 
-        <p id="question-stem" class="whitespace-pre-line text-text-body text-base leading-7 mb-5"></p>
+        <div id="question-stem" class="whitespace-pre-line text-text-body text-base leading-7 mb-5"></div>
         <div id="choice-list" class="grid gap-3 mb-5"></div>
 
         <div id="feedback-panel" data-testid="feedback-panel" class="hidden border rounded-md p-4 mb-5"></div>
@@ -316,6 +316,10 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         .replace(/(?<!_)\(([1-4])\)(?!_)/g, '<span class="blank">($1)</span>');
     }
 
+    function renderStem(question) {
+      return question.stemHtml || renderBlankMarkers(question.stemText);
+    }
+
     function questionDisplayLabel(question) {
       return `${question.examYear} Q${question.questionNumber}`;
     }
@@ -411,7 +415,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       const selected = state.answers.get(question.slug);
       document.getElementById('question-position').textContent = `Question ${state.index + 1} of ${state.questions.length}`;
       document.getElementById('question-title').textContent = questionDisplayLabel(question);
-      document.getElementById('question-stem').innerHTML = renderBlankMarkers(question.stemText);
+      document.getElementById('question-stem').innerHTML = renderStem(question);
       document.getElementById('question-meta').innerHTML = [
         badge(`${question.examYear} Q${question.questionNumber}`, 'blue'),
         question.track ? badge(question.track) : '',

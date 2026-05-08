@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any, Dict, Iterable, List
@@ -82,6 +83,22 @@ def _extract_explanation(raw: str) -> tuple[str, str]:
     return explanation_html, strip_html(explanation_html)
 
 
+def _extract_stem_html(raw: str) -> str:
+    """Return source stem HTML only when the stem contains non-text media."""
+    _frontmatter, body = parse_frontmatter(raw)
+    match = re.search(
+        r'<div[^>]*font-size:13px[^>]*>\s*(.*?)</div>\s*\n\s*<div[^>]*margin-bottom:14px',
+        body,
+        re.DOTALL | re.IGNORECASE,
+    )
+    if not match:
+        return ""
+    stem_html = match.group(1).strip()
+    if not re.search(r"<img\b", stem_html, flags=re.IGNORECASE):
+        return ""
+    return stem_html
+
+
 def _question_explanation_index(root: Path, questions: Iterable[Dict[str, Any]]) -> Dict[str, Dict[str, str]]:
     explanations: Dict[str, Dict[str, str]] = {}
     for question in questions:
@@ -94,10 +111,13 @@ def _question_explanation_index(root: Path, questions: Iterable[Dict[str, Any]])
             continue
         raw = path.read_text(encoding="utf-8")
         explanation_html, explanation_text = _extract_explanation(raw)
+        stem_html = _extract_stem_html(raw)
         explanations[str(slug)] = {
             "explanationHtml": explanation_html,
             "explanationText": explanation_text,
         }
+        if stem_html:
+            explanations[str(slug)]["stemHtml"] = stem_html
     return explanations
 
 
