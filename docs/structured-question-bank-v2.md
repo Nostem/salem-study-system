@@ -94,3 +94,53 @@ python3 scripts/build_structured_quiz_bank.py \
 ```
 
 The builder must not modify the source quiz bank.
+
+## Validator
+
+`quiz-bank-v2.json` has its own validator so future generation runs can be caught
+before any UI work consumes the v2 bank. Run:
+
+```bash
+python3 scripts/validate_structured_quiz_bank.py
+```
+
+Default arguments check `site/src/data/quiz-bank-v2.json` against the assets in
+`site/public/exam-images/` using the URL prefix
+`/salem-study-system/exam-images/`. All inputs are configurable:
+
+```bash
+python3 scripts/validate_structured_quiz_bank.py \
+  --in site/src/data/quiz-bank-v2.json \
+  --exam-images site/public/exam-images \
+  --image-prefix /salem-study-system/exam-images/
+```
+
+Useful flags:
+
+- `--strict` — treat warnings (e.g. empty redacted choices, empty alt text) as errors.
+- `--no-image-check` — skip the on-disk image asset check (useful when validating a fixture).
+
+Exit codes:
+
+- `0` — no errors (warnings allowed unless `--strict`).
+- `1` — one or more errors found (or warnings under `--strict`).
+- `2` — invalid invocation or unreadable input.
+
+What the validator checks today:
+
+- Top-level shape: `schemaVersion`, `generatedFrom`, `summary`, `topics`, `questions`.
+- `summary.question_count` and `summary.choice_count` match the actual data.
+- Slug uniqueness and pattern (`^[a-z0-9][a-z0-9-]*$`).
+- Per-question metadata types (`examYear`, `questionNumber`, `track`, `quizEligible`, …).
+- `officialAnswerLabel` ∈ `acceptedAnswerLabels`, and the set of `isCorrect` choices
+  matches `acceptedAnswerLabels` exactly (so dual-correct questions are supported).
+- Choice labels are unique within a question; empty `choices` is only allowed when
+  the question carries `legacy.isRedacted = true`.
+- Block shapes by type: `paragraph`, `image`, `table`, `list`, `code`. Unknown
+  types are errors.
+- Image blocks require non-empty `src` and string `alt` (empty `alt` is a warning).
+- Table rows must match header width.
+- `sourceRefs[].kind` is required; `wiki` refs require `path`, `source` and
+  `quiz-bank` refs require `label`.
+- Local image assets resolve under the configured `--exam-images` directory and
+  reject path traversal (`..`).
