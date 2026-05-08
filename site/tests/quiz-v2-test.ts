@@ -32,3 +32,25 @@ test('quiz-v2 page lists structured questions and renders an image stem with sou
   expect(await visibleItems.count()).toBeGreaterThan(0);
   expect(await visibleItems.count()).toBeLessThan(await listItems.count());
 });
+
+test('quiz-v2 session preview shows deterministic seeded question order', async ({ page }) => {
+  await page.goto('quiz-v2/?session=1&seed=session-test&count=3');
+
+  const panel = page.getByTestId('qv2-session-panel');
+  await expect(panel).toBeVisible();
+  await expect(page.getByTestId('qv2-session-id')).toContainText(/^qv2-[0-9a-f]{8}$/);
+  await expect(page.getByTestId('qv2-session-seed')).toHaveText('session-test');
+  await expect(page.getByTestId('qv2-session-count')).toHaveText('3');
+  await expect(page.getByTestId('qv2-session-filters')).toContainText('"count":3');
+  await expect(page.getByTestId('qv2-session-filters')).toContainText('"referenceMode":"include"');
+
+  const items = page.locator('#qv2-session-list li');
+  await expect(items).toHaveCount(3);
+  const firstRun = await items.evaluateAll((nodes) => nodes.map((node) => node.getAttribute('data-slug')));
+
+  await page.reload();
+  const secondRun = await page.locator('#qv2-session-list li').evaluateAll((nodes) =>
+    nodes.map((node) => node.getAttribute('data-slug'))
+  );
+  expect(secondRun).toEqual(firstRun);
+});

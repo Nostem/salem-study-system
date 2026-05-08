@@ -15,6 +15,16 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 const questions = getStructuredQuestions();
 const examYears = getStructuredExamYears();
 const totalQuestions = structuredQuizBank.questions.length;
+
+const sessionMeta = questions.map((q) => ({
+  slug: q.slug,
+  examYear: q.examYear,
+  track: q.track ?? '',
+  status: q.status,
+  quizEligible: q.quizEligible,
+  requiresReference: q.requiresReference,
+  title: q.title,
+}));
 ---
 
 <BaseLayout title="Quiz v2 (Experimental)" noindex={true}>
@@ -43,6 +53,39 @@ const totalQuestions = structuredQuizBank.questions.length;
         </div>
       </div>
     </header>
+
+    <section
+      id="qv2-session-panel"
+      data-testid="qv2-session-panel"
+      class="hidden mb-5 bg-bg-card border border-border rounded-lg p-4"
+    >
+      <header class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue">Session preview · deterministic</div>
+          <h2 class="font-serif text-xl text-text-primary leading-tight mt-1">Generated quiz order</h2>
+        </div>
+        <a
+          id="qv2-session-close"
+          href={`${base}quiz-v2/`}
+          class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue"
+        >&times; close preview</a>
+      </header>
+      <dl class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 text-[12px] font-mono mb-3">
+        <dt class="text-text-muted">Session ID</dt>
+        <dd class="text-text-primary col-span-3" data-testid="qv2-session-id">—</dd>
+        <dt class="text-text-muted">Seed</dt>
+        <dd class="text-text-primary" data-testid="qv2-session-seed">—</dd>
+        <dt class="text-text-muted">Selected</dt>
+        <dd class="text-text-primary"><span data-testid="qv2-session-count">0</span> / <span data-testid="qv2-session-total">0</span></dd>
+      </dl>
+      <ol id="qv2-session-list" data-testid="qv2-session-list" class="text-sm text-text-body list-decimal list-inside space-y-1 max-h-[40vh] overflow-y-auto"></ol>
+      <p class="text-[11px] font-mono text-text-muted mt-3">
+        Read-only preview. Filters: <code data-testid="qv2-session-filters">{}</code>.
+        See <code>docs/quiz-v2-session-builder.md</code>.
+      </p>
+    </section>
+
+    <script type="application/json" id="qv2-session-meta" set:html={JSON.stringify(sessionMeta)} />
 
     <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
       <aside class="bg-bg-card border border-border rounded-lg p-4 h-fit lg:sticky lg:top-4">
@@ -246,7 +289,123 @@ const totalQuestions = structuredQuizBank.questions.length;
 </style>
 
 <script>
+  import { buildQuizSession, type QuizSessionFilters } from '../utils/quiz-v2-session';
+  import type { StructuredQuestion } from '../types/question-blocks';
+
   type SelectButton = HTMLButtonElement;
+
+  interface SessionMetaRow {
+    slug: string;
+    examYear: number;
+    track: string;
+    status: string;
+    quizEligible: boolean;
+    requiresReference: boolean;
+    title: string;
+  }
+
+  function readSessionMeta(): SessionMetaRow[] {
+    const node = document.getElementById('qv2-session-meta');
+    if (!node || !node.textContent) return [];
+    try {
+      const parsed = JSON.parse(node.textContent);
+      return Array.isArray(parsed) ? (parsed as SessionMetaRow[]) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function metaToQuestion(row: SessionMetaRow): StructuredQuestion {
+    return {
+      schemaVersion: 1,
+      slug: row.slug,
+      examYear: row.examYear,
+      examType: '',
+      questionNumber: 0,
+      track: row.track,
+      title: row.title,
+      status: row.status,
+      quizEligible: row.quizEligible,
+      requiresReference: row.requiresReference,
+      officialAnswerLabel: '',
+      acceptedAnswerLabels: [],
+      stemBlocks: [],
+      choices: [],
+      explanationBlocks: [],
+      topics: [],
+      sourceRefs: [],
+      legacy: {},
+    };
+  }
+
+  function parseFiltersFromUrl(params: URLSearchParams): { filters: QuizSessionFilters; seed?: string } {
+    const filters: QuizSessionFilters = {};
+    const yearsRaw = params.get('years');
+    if (yearsRaw) {
+      const years = yearsRaw
+        .split(',')
+        .map((s) => Number(s.trim()))
+        .filter((n) => Number.isFinite(n));
+      if (years.length) filters.years = years;
+    }
+    const tracksRaw = params.get('tracks');
+    if (tracksRaw) filters.tracks = tracksRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    const refMode = params.get('ref');
+    if (refMode === 'include' || refMode === 'exclude' || refMode === 'only') {
+      filters.referenceMode = refMode;
+    }
+    const countRaw = params.get('count');
+    if (countRaw) {
+      const n = Number(countRaw);
+      if (Number.isFinite(n) && n > 0) filters.count = n;
+    }
+    const seed = params.get('seed') ?? undefined;
+    return { filters, seed };
+  }
+
+  function renderSessionPanel(params: URLSearchParams): void {
+    const panel = document.getElementById('qv2-session-panel');
+    if (!panel) return;
+    if (params.get('session') !== '1') {
+      panel.classList.add('hidden');
+      return;
+    }
+    const meta = readSessionMeta();
+    const questions = meta.map(metaToQuestion);
+    const { filters, seed } = parseFiltersFromUrl(params);
+    const session = buildQuizSession(questions, filters, seed ? { seed } : {});
+
+    const setText = (testid: string, text: string): void => {
+      const el = panel.querySelector(`[data-testid="${testid}"]`);
+      if (el) el.textContent = text;
+    };
+    setText('qv2-session-id', session.sessionId);
+    setText('qv2-session-seed', session.seed);
+    setText('qv2-session-count', String(session.questionSlugs.length));
+    setText('qv2-session-total', String(session.totalEligible));
+    setText('qv2-session-filters', JSON.stringify(session.filters));
+
+    const list = panel.querySelector<HTMLOListElement>('#qv2-session-list');
+    if (list) {
+      const titleBySlug = new Map(meta.map((m) => [m.slug, m.title] as const));
+      list.innerHTML = '';
+      for (const slug of session.questionSlugs) {
+        const li = document.createElement('li');
+        li.className = 'qv2-session-item';
+        li.setAttribute('data-slug', slug);
+        const code = document.createElement('code');
+        code.className = 'font-mono text-[12px] text-text-muted mr-2';
+        code.textContent = slug;
+        const title = document.createElement('span');
+        title.className = 'text-text-primary';
+        title.textContent = titleBySlug.get(slug) ?? '';
+        li.appendChild(code);
+        li.appendChild(title);
+        list.appendChild(li);
+      }
+    }
+    panel.classList.remove('hidden');
+  }
 
   function showQuestion(slug: string | null): void {
     const details = document.querySelectorAll<HTMLElement>('[data-qv2-detail]');
@@ -296,8 +455,10 @@ const totalQuestions = structuredQuizBank.questions.length;
     document.getElementById('qv2-search')?.addEventListener('input', applyFilters);
     document.getElementById('qv2-year')?.addEventListener('change', applyFilters);
 
-    const urlSlug = new URLSearchParams(window.location.search).get('slug');
+    const params = new URLSearchParams(window.location.search);
+    const urlSlug = params.get('slug');
     if (urlSlug) showQuestion(urlSlug);
+    renderSessionPanel(params);
   }
 
   if (document.readyState === 'loading') {
