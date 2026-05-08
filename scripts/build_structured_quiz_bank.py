@@ -17,13 +17,21 @@ from typing import Any
 
 SCHEMA_VERSION = 1
 
+# Tags that should insert a paragraph break in plain (non-structured) text flow.
+_PARAGRAPH_BREAK_TAGS = {"p", "div", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote"}
+
 
 class BlockHtmlParser(HTMLParser):
-    """Small, conservative HTML-to-block parser for existing quiz content.
+    """HTML-to-block parser for quiz content.
 
-    It intentionally extracts only text paragraphs and images for the first v2
-    milestone. Other HTML is flattened to paragraph text until we add audited
-    table/list support.
+    Emits paragraph, image, table, list, and code blocks. Structural elements
+    (``table``, ``ul``/``ol``, ``pre``) interrupt the paragraph stream and are
+    emitted as their own blocks; surrounding text continues as paragraphs.
+
+    The parser is intentionally conservative: nested structural elements
+    (e.g. a list inside a table cell) collapse to text inside their parent —
+    the corpus does not currently use them, and flattening keeps cells/items
+    as the simple ``string``s the schema requires.
     """
 
     def __init__(self) -> None:
@@ -31,10 +39,40 @@ class BlockHtmlParser(HTMLParser):
         self.blocks: list[dict[str, Any]] = []
         self._text_parts: list[str] = []
 
+        # Mutually-exclusive structured contexts. None = inactive.
+        self._table: dict[str, Any] | None = None
+        self._list: dict[str, Any] | None = None
+        self._code: dict[str, Any] | None = None
+
+    # ----- public lifecycle --------------------------------------------------
+
+    def close(self) -> None:
+        super().close()
+        # Defensive: emit any unterminated structured block so we don't lose data.
+        if self._table is not None:
+            self._emit_table()
+        if self._list is not None:
+            self._emit_list()
+        if self._code is not None:
+            self._emit_code()
+        self._flush_text()
+
+    # ----- HTMLParser hooks --------------------------------------------------
+
     def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         tag = tag.lower()
         attr_map = {name.lower(): value or "" for name, value in attrs}
+
+        if self._code is not None:
+            # Inside <pre>: ignore inner tags; let text flow through.
+            if tag == "br":
+                self._code["parts"].append("\n")
+            return
+
         if tag == "img":
+            if self._in_structured():
+                # Drop images inside cells/items — schema only allows text there.
+                return
             self._flush_text()
             self.blocks.append(
                 {
@@ -43,27 +81,212 @@ class BlockHtmlParser(HTMLParser):
                     "alt": attr_map.get("alt", ""),
                 }
             )
-        elif tag == "br":
-            self._text_parts.append("\n")
-        elif tag in {"p", "div", "li", "tr", "h1", "h2", "h3", "h4"}:
-            self._text_parts.append("\n")
+            return
+
+        if tag == "br":
+            self._append_text("\n")
+            return
+
+        if self._table is not None:
+            self._handle_table_starttag(tag)
+            return
+
+        if self._list is not None:
+            self._handle_list_starttag(tag)
+            return
+
+        if tag == "table":
+            self._flush_text()
+            self._table = {
+                "rows": [],
+                "current_row": None,
+                "cell_parts": None,
+                "row_has_th": False,
+                "header_row": None,
+            }
+            return
+
+        if tag in {"ul", "ol"}:
+            self._flush_text()
+            self._list = {"items": [], "item_parts": None}
+            return
+
+        if tag == "pre":
+            self._flush_text()
+            self._code = {"parts": []}
+            return
+
+        if tag in _PARAGRAPH_BREAK_TAGS:
+            self._append_text("\n")
 
     def handle_endtag(self, tag: str) -> None:
-        if tag.lower() in {"p", "div", "li", "tr", "h1", "h2", "h3", "h4"}:
-            self._text_parts.append("\n")
+        tag = tag.lower()
+
+        if self._code is not None:
+            if tag == "pre":
+                self._emit_code()
+            return
+
+        if self._table is not None:
+            self._handle_table_endtag(tag)
+            return
+
+        if self._list is not None:
+            self._handle_list_endtag(tag)
+            return
+
+        if tag in _PARAGRAPH_BREAK_TAGS:
+            self._append_text("\n")
 
     def handle_data(self, data: str) -> None:
-        self._text_parts.append(data)
+        self._append_text(data)
 
-    def close(self) -> None:
-        super().close()
-        self._flush_text()
+    # ----- text routing ------------------------------------------------------
+
+    def _append_text(self, data: str) -> None:
+        if self._code is not None:
+            self._code["parts"].append(data)
+            return
+        if self._table is not None:
+            if self._table["cell_parts"] is not None:
+                self._table["cell_parts"].append(data)
+            return  # text outside cells (e.g. between </tr> and <tr>) is dropped
+        if self._list is not None:
+            if self._list["item_parts"] is not None:
+                self._list["item_parts"].append(data)
+            return  # text outside <li> is dropped
+        self._text_parts.append(data)
 
     def _flush_text(self) -> None:
         text = _normalize_text("".join(self._text_parts))
         self._text_parts = []
         if text:
             self.blocks.append({"type": "paragraph", "text": text})
+
+    def _in_structured(self) -> bool:
+        return self._table is not None or self._list is not None or self._code is not None
+
+    # ----- table -------------------------------------------------------------
+
+    def _handle_table_starttag(self, tag: str) -> None:
+        t = self._table
+        assert t is not None
+        if tag == "tr":
+            t["current_row"] = []
+            t["row_has_th"] = False
+        elif tag in {"th", "td"}:
+            if t["current_row"] is None:
+                # Stray cell outside a row — open an implicit row.
+                t["current_row"] = []
+            t["cell_parts"] = []
+            if tag == "th":
+                t["row_has_th"] = True
+        # Other tags (thead, tbody, colgroup, br, span, ...) are ignored;
+        # their text still reaches handle_data via _append_text routing.
+
+    def _handle_table_endtag(self, tag: str) -> None:
+        t = self._table
+        assert t is not None
+        if tag == "table":
+            self._emit_table()
+            return
+        if tag in {"th", "td"} and t["cell_parts"] is not None:
+            cell = _normalize_text("".join(t["cell_parts"]))
+            if t["current_row"] is None:
+                t["current_row"] = []
+            t["current_row"].append(cell)
+            t["cell_parts"] = None
+            return
+        if tag == "tr" and t["current_row"] is not None:
+            row = t["current_row"]
+            if t["row_has_th"] and t["header_row"] is None:
+                t["header_row"] = row
+            else:
+                t["rows"].append(row)
+            t["current_row"] = None
+            t["row_has_th"] = False
+            return
+
+    def _emit_table(self) -> None:
+        t = self._table
+        self._table = None
+        if t is None:
+            return
+        # Flush any open cell/row defensively.
+        if t["cell_parts"] is not None and t["current_row"] is not None:
+            t["current_row"].append(_normalize_text("".join(t["cell_parts"])))
+            t["cell_parts"] = None
+        if t["current_row"] is not None:
+            row = t["current_row"]
+            if t["row_has_th"] and t["header_row"] is None:
+                t["header_row"] = row
+            else:
+                t["rows"].append(row)
+            t["current_row"] = None
+
+        rows: list[list[str]] = t["rows"]
+        header_row: list[str] | None = t["header_row"]
+
+        if header_row is None:
+            if not rows:
+                return  # entirely empty table — drop
+            header_row = rows[0]
+            rows = rows[1:]
+
+        width = max([len(header_row)] + [len(r) for r in rows] + [0])
+        if width == 0:
+            return
+
+        headers = list(header_row) + [""] * (width - len(header_row))
+        norm_rows = [list(r) + [""] * (width - len(r)) for r in rows]
+        self.blocks.append({"type": "table", "headers": headers, "rows": norm_rows})
+
+    # ----- list --------------------------------------------------------------
+
+    def _handle_list_starttag(self, tag: str) -> None:
+        l = self._list
+        assert l is not None
+        if tag == "li":
+            l["item_parts"] = []
+        # Nested ul/ol/table/pre inside an item are not opened as new contexts —
+        # their tags pass through and their text flows into the current item.
+
+    def _handle_list_endtag(self, tag: str) -> None:
+        l = self._list
+        assert l is not None
+        if tag in {"ul", "ol"}:
+            self._emit_list()
+            return
+        if tag == "li" and l["item_parts"] is not None:
+            item = _normalize_text("".join(l["item_parts"]))
+            if item:
+                l["items"].append(item)
+            l["item_parts"] = None
+
+    def _emit_list(self) -> None:
+        l = self._list
+        self._list = None
+        if l is None:
+            return
+        if l["item_parts"] is not None:
+            item = _normalize_text("".join(l["item_parts"]))
+            if item:
+                l["items"].append(item)
+        if l["items"]:
+            self.blocks.append({"type": "list", "items": l["items"]})
+
+    # ----- code --------------------------------------------------------------
+
+    def _emit_code(self) -> None:
+        c = self._code
+        self._code = None
+        if c is None:
+            return
+        text = "".join(c["parts"])
+        # Preserve internal whitespace, trim only the outer newlines/spaces.
+        text = text.strip("\n").rstrip()
+        if text:
+            self.blocks.append({"type": "code", "text": text})
 
 
 def _normalize_text(text: str) -> str:
