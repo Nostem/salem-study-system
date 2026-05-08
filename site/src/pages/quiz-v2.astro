@@ -1,0 +1,308 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import QuestionBlockRenderer from '../components/QuestionBlockRenderer.astro';
+import {
+  getStructuredExamYears,
+  getStructuredQuestions,
+  questionDisplayLabel,
+  structuredQuizBank,
+} from '../utils/structured-quiz-data';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
+
+const questions = getStructuredQuestions();
+const examYears = getStructuredExamYears();
+const totalQuestions = structuredQuizBank.questions.length;
+---
+
+<BaseLayout title="Quiz v2 (Experimental)" noindex={true}>
+  <main class="max-w-[1180px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
+    <header class="border-b border-border pb-5 mb-5">
+      <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
+      <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · structured bank v2</div>
+          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Preview</h1>
+          <p class="text-sm text-text-muted max-w-2xl mt-1">
+            Read-only browser for the structured question bank (<code>quiz-bank-v2.json</code>).
+            Renders structured stem/choice/explanation blocks beside production. Production
+            <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a> is unaffected.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 text-center min-w-[180px]">
+          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+            <div data-testid="qv2-bank-count" class="font-mono text-lg text-text-primary">{totalQuestions}</div>
+            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Questions</div>
+          </div>
+          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+            <div class="font-mono text-lg text-text-primary">{examYears.length}</div>
+            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Years</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
+      <aside class="bg-bg-card border border-border rounded-lg p-4 h-fit lg:sticky lg:top-4">
+        <div class="flex flex-col gap-3">
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Search</span>
+            <input
+              id="qv2-search"
+              data-testid="qv2-search"
+              type="search"
+              placeholder="Title or slug…"
+              class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
+            />
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Year</span>
+            <select id="qv2-year" data-testid="qv2-year" class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary">
+              <option value="all">All years</option>
+              {examYears.map((y) => <option value={y}>{y}</option>)}
+            </select>
+          </label>
+        </div>
+        <div class="mt-3 text-[11px] font-mono text-text-muted">
+          <span data-testid="qv2-visible-count">{questions.length}</span> shown
+        </div>
+        <ul
+          id="qv2-list"
+          data-testid="qv2-list"
+          class="mt-3 max-h-[60vh] lg:max-h-[70vh] overflow-y-auto divide-y divide-border border border-border rounded"
+        >
+          {questions.map((q) => (
+            <li
+              class="qv2-item"
+              data-slug={q.slug}
+              data-year={q.examYear}
+              data-search={`${q.title} ${q.slug}`.toLowerCase()}
+            >
+              <button
+                type="button"
+                data-qv2-select={q.slug}
+                class="w-full text-left px-3 py-2 hover:bg-bg focus:bg-bg focus:outline-none"
+              >
+                <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">
+                  {questionDisplayLabel(q)} · {q.status}
+                </div>
+                <div class="text-sm text-text-primary leading-snug">{q.title}</div>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
+        <div id="qv2-empty" data-testid="qv2-empty" class="text-sm text-text-muted">
+          Select a question on the left to preview its structured blocks.
+        </div>
+
+        {questions.map((q) => (
+          <section
+            class="qv2-detail hidden"
+            data-qv2-detail={q.slug}
+            data-testid={`qv2-detail-${q.slug}`}
+          >
+            <header class="border-b border-border pb-3 mb-4">
+              <div class="font-mono text-[10px] uppercase tracking-wider text-accent-blue">
+                {questionDisplayLabel(q)} · {q.examType} · {q.status}
+                {q.requiresReference && <span> · ref required</span>}
+              </div>
+              <h2 class="font-serif text-2xl text-text-primary leading-tight mt-1">{q.title}</h2>
+              <div class="text-[11px] font-mono text-text-muted mt-1">
+                slug: <code>{q.slug}</code>
+              </div>
+            </header>
+
+            <section class="qv2-section">
+              <h3 class="qv2-section-title">Stem</h3>
+              <div class="qv2-blocks" data-testid="qv2-stem-blocks">
+                {q.stemBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+              </div>
+            </section>
+
+            <section class="qv2-section">
+              <h3 class="qv2-section-title">Choices</h3>
+              <ol class="space-y-2">
+                {q.choices.map((c) => (
+                  <li class={`border rounded p-3 ${c.isCorrect ? 'border-accent-blue bg-bg' : 'border-border'}`}>
+                    <div class="font-mono text-[11px] uppercase tracking-wider text-text-muted mb-1">
+                      {c.label}{c.isCorrect ? ' · official answer' : ''}
+                    </div>
+                    <div class="qv2-blocks">
+                      {c.blocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </section>
+
+            {q.explanationBlocks && q.explanationBlocks.length > 0 && (
+              <section class="qv2-section">
+                <h3 class="qv2-section-title">Explanation</h3>
+                <div class="qv2-blocks">
+                  {q.explanationBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                </div>
+              </section>
+            )}
+
+            <section class="qv2-section" data-testid="qv2-source-refs">
+              <h3 class="qv2-section-title">Source references</h3>
+              {q.sourceRefs && q.sourceRefs.length > 0 ? (
+                <ul class="text-sm text-text-body space-y-1">
+                  {q.sourceRefs.map((ref) => {
+                    const label = ref.label || ref.slug || ref.path || ref.kind;
+                    return (
+                      <li class="font-mono text-[12px]">
+                        <span class="inline-block min-w-[90px] text-text-muted">[{ref.kind}]</span>
+                        <span class="text-text-primary">{label}</span>
+                        {ref.path && ref.path !== label && (
+                          <span class="text-text-muted"> — {ref.path}</span>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p class="text-sm text-text-muted">No source references recorded.</p>
+              )}
+            </section>
+
+            {q.legacy?.kaCode && (
+              <section class="qv2-section">
+                <h3 class="qv2-section-title">Legacy metadata</h3>
+                <dl class="grid grid-cols-2 gap-x-4 gap-y-1 text-[12px] font-mono">
+                  {q.legacy.kaCode && (<><dt class="text-text-muted">K/A</dt><dd class="text-text-primary">{q.legacy.kaCode}</dd></>)}
+                  {q.legacy.kaImportance != null && (<><dt class="text-text-muted">K/A importance</dt><dd class="text-text-primary">{q.legacy.kaImportance}</dd></>)}
+                  {q.legacy.cognitiveLevel && (<><dt class="text-text-muted">Cognitive</dt><dd class="text-text-primary">{q.legacy.cognitiveLevel}</dd></>)}
+                  {q.legacy.tierGroup && (<><dt class="text-text-muted">Tier/Group</dt><dd class="text-text-primary">{q.legacy.tierGroup}</dd></>)}
+                  {q.legacy.questionSource && (<><dt class="text-text-muted">Source</dt><dd class="text-text-primary">{q.legacy.questionSource}</dd></>)}
+                  {q.legacy.wikiPath && (<><dt class="text-text-muted">Wiki path</dt><dd class="text-text-primary">{q.legacy.wikiPath}</dd></>)}
+                </dl>
+              </section>
+            )}
+          </section>
+        ))}
+      </article>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .qv2-section { margin-top: 1.25rem; }
+  .qv2-section-title {
+    font-family: var(--font-mono, monospace);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--color-text-muted, #888);
+    margin-bottom: 0.5rem;
+  }
+  .qv2-blocks > * + * { margin-top: 0.5rem; }
+  .qv2-blocks p { line-height: 1.55; white-space: pre-wrap; }
+  .qv2-blocks img {
+    max-width: 100%;
+    height: auto;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  .qv2-blocks figure { margin: 0; }
+  .qv2-blocks figcaption {
+    font-size: 11px;
+    color: var(--color-text-muted, #888);
+    margin-top: 4px;
+    text-align: center;
+  }
+  .qv2-blocks table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .qv2-blocks th, .qv2-blocks td {
+    border: 1px solid var(--color-border, #333);
+    padding: 4px 8px;
+    text-align: left;
+  }
+  .qv2-blocks pre {
+    background: rgba(0,0,0,0.25);
+    padding: 8px 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 12px;
+  }
+  .qv2-unsupported {
+    font-size: 12px;
+    color: var(--color-text-muted, #888);
+    font-style: italic;
+  }
+  button[data-qv2-select].is-active {
+    background: var(--color-bg, transparent);
+    border-left: 3px solid var(--color-accent-blue, #4aa);
+  }
+</style>
+
+<script>
+  type SelectButton = HTMLButtonElement;
+
+  function showQuestion(slug: string | null): void {
+    const details = document.querySelectorAll<HTMLElement>('[data-qv2-detail]');
+    const empty = document.getElementById('qv2-empty');
+    let matched = false;
+    details.forEach((el) => {
+      const isMatch = !!slug && el.getAttribute('data-qv2-detail') === slug;
+      el.classList.toggle('hidden', !isMatch);
+      if (isMatch) matched = true;
+    });
+    if (empty) empty.classList.toggle('hidden', matched);
+    document.querySelectorAll<SelectButton>('[data-qv2-select]').forEach((btn) => {
+      btn.classList.toggle('is-active', btn.getAttribute('data-qv2-select') === slug);
+    });
+  }
+
+  function applyFilters(): void {
+    const search = (document.getElementById('qv2-search') as HTMLInputElement | null)?.value.trim().toLowerCase() ?? '';
+    const year = (document.getElementById('qv2-year') as HTMLSelectElement | null)?.value ?? 'all';
+    const items = document.querySelectorAll<HTMLLIElement>('.qv2-item');
+    let visible = 0;
+    items.forEach((li) => {
+      const text = li.getAttribute('data-search') ?? '';
+      const yearAttr = li.getAttribute('data-year') ?? '';
+      const matchesSearch = !search || text.includes(search);
+      const matchesYear = year === 'all' || yearAttr === year;
+      const show = matchesSearch && matchesYear;
+      li.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    const counter = document.querySelector('[data-testid="qv2-visible-count"]');
+    if (counter) counter.textContent = String(visible);
+  }
+
+  function init(): void {
+    document.querySelectorAll<SelectButton>('[data-qv2-select]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const slug = btn.getAttribute('data-qv2-select');
+        if (!slug) return;
+        const url = new URL(window.location.href);
+        url.searchParams.set('slug', slug);
+        window.history.replaceState(null, '', url.toString());
+        showQuestion(slug);
+      });
+    });
+
+    document.getElementById('qv2-search')?.addEventListener('input', applyFilters);
+    document.getElementById('qv2-year')?.addEventListener('change', applyFilters);
+
+    const urlSlug = new URLSearchParams(window.location.search).get('slug');
+    if (urlSlug) showQuestion(urlSlug);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
