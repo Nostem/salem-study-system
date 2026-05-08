@@ -1,0 +1,266 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { generateGraphV2Data } from '../utils/graph-v2-data';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
+
+const graph = await generateGraphV2Data();
+
+// Render every question, topic, and source plus the top wiki articles by
+// connection count. This keeps the preview searchable for any structured
+// entity (e.g. 2023 Q23) while bounding DOM size for the long tail of
+// low-degree wiki nodes.
+const TOP_ARTICLES = 200;
+const articleNodes = graph.nodes
+  .filter((n) => n.kind === 'article')
+  .sort((a, b) => b.connections - a.connections)
+  .slice(0, TOP_ARTICLES);
+const otherNodes = graph.nodes.filter((n) => n.kind !== 'article');
+const renderedNodes = [...articleNodes, ...otherNodes].sort(
+  (a, b) => b.connections - a.connections,
+);
+
+// Pull out a quick lookup for sample edges per node (for the detail panel).
+const edgesBySource = new Map<string, typeof graph.edges>();
+for (const e of graph.edges) {
+  if (!edgesBySource.has(e.source)) edgesBySource.set(e.source, []);
+  edgesBySource.get(e.source)!.push(e);
+}
+
+const kindOrder: Array<keyof typeof graph.counts.nodesByKind> = [
+  'article',
+  'question',
+  'topic',
+  'source',
+];
+const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
+  'wikilink',
+  'tests',
+  'topic-wiki',
+  'quiz-source',
+  'sourced-from',
+];
+---
+
+<BaseLayout title="Graph v2 (Experimental)" noindex={true}>
+  <main class="max-w-[1180px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
+    <header class="border-b border-border pb-5 mb-5">
+      <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
+      <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">
+            Experimental · structured graph v2
+          </div>
+          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Graph v2 Preview</h1>
+          <p class="text-sm text-text-muted max-w-2xl mt-1">
+            Combined view of wiki articles, structured questions, topics, and source refs.
+            Read-only preview beside production
+            <a href={`${base}graph/`} class="underline hover:text-accent-blue">/graph/</a>,
+            which renders only wiki↔wiki wikilinks.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 text-center min-w-[220px]">
+          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+            <div data-testid="gv2-node-count" class="font-mono text-lg text-text-primary">{graph.counts.totalNodes}</div>
+            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Nodes</div>
+          </div>
+          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+            <div data-testid="gv2-edge-count" class="font-mono text-lg text-text-primary">{graph.counts.totalEdges}</div>
+            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Edges</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+      <div class="bg-bg-card border border-border rounded-lg p-4">
+        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Nodes by kind</h2>
+        <ul data-testid="gv2-node-counts" class="text-sm text-text-body font-mono">
+          {kindOrder.map((k) => (
+            <li class="flex justify-between">
+              <span data-kind={k}>{k}</span>
+              <span data-testid={`gv2-node-count-${k}`}>{graph.counts.nodesByKind[k]}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="bg-bg-card border border-border rounded-lg p-4">
+        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Edges by type</h2>
+        <ul data-testid="gv2-edge-counts" class="text-sm text-text-body font-mono">
+          {edgeOrder.map((t) => (
+            <li class="flex justify-between">
+              <span data-edge-type={t}>{t}</span>
+              <span data-testid={`gv2-edge-count-${t}`}>{graph.counts.edgesByType[t]}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
+      <aside class="bg-bg-card border border-border rounded-lg p-4 h-fit lg:sticky lg:top-4">
+        <div class="flex flex-col gap-3">
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Search</span>
+            <input
+              id="gv2-search"
+              data-testid="gv2-search"
+              type="search"
+              placeholder="Title, slug, or id…"
+              class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
+            />
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Kind</span>
+            <select
+              id="gv2-kind"
+              data-testid="gv2-kind"
+              class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
+            >
+              <option value="all">All kinds</option>
+              {kindOrder.map((k) => <option value={k}>{k}</option>)}
+            </select>
+          </label>
+        </div>
+        <div class="mt-3 text-[11px] font-mono text-text-muted">
+          showing top <span data-testid="gv2-visible-count">{renderedNodes.length}</span>
+          of {graph.counts.totalNodes} (sorted by connections)
+        </div>
+        <ul
+          id="gv2-list"
+          data-testid="gv2-list"
+          class="mt-3 max-h-[60vh] lg:max-h-[70vh] overflow-y-auto divide-y divide-border border border-border rounded"
+        >
+          {renderedNodes.map((n) => (
+            <li
+              class="gv2-item"
+              data-id={n.id}
+              data-kind={n.kind}
+              data-search={`${n.title} ${n.slug} ${n.id}`.toLowerCase()}
+            >
+              <button
+                type="button"
+                data-gv2-select={n.id}
+                class="w-full text-left px-3 py-2 hover:bg-bg focus:bg-bg focus:outline-none"
+              >
+                <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">
+                  {n.kind}{n.subcategory ? ` · ${n.subcategory}` : ''} · {n.connections} conn
+                </div>
+                <div class="text-sm text-text-primary leading-snug">{n.title}</div>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
+        <div id="gv2-empty" data-testid="gv2-empty" class="text-sm text-text-muted">
+          Select a node on the left to view its connections.
+        </div>
+
+        {renderedNodes.map((n) => {
+          const out = edgesBySource.get(n.id) ?? [];
+          return (
+            <section
+              class="gv2-detail hidden"
+              data-gv2-detail={n.id}
+              data-testid={`gv2-detail-${n.id}`}
+            >
+              <header class="border-b border-border pb-3 mb-4">
+                <div class="font-mono text-[10px] uppercase tracking-wider text-accent-blue">
+                  {n.kind}{n.subcategory ? ` · ${n.subcategory}` : ''} · {n.connections} connections
+                </div>
+                <h2 class="font-serif text-2xl text-text-primary leading-tight mt-1">{n.title}</h2>
+                <div class="text-[11px] font-mono text-text-muted mt-1">
+                  id: <code>{n.id}</code> · slug: <code>{n.slug}</code>
+                </div>
+              </header>
+
+              {out.length === 0 ? (
+                <p class="text-sm text-text-muted">No outgoing edges from this node.</p>
+              ) : (
+                <ul class="space-y-1 text-sm font-mono" data-testid={`gv2-edges-${n.id}`}>
+                  {out.slice(0, 60).map((e) => (
+                    <li class="flex gap-3">
+                      <span class="inline-block min-w-[110px] text-text-muted">[{e.type}]</span>
+                      <span class="text-text-primary">{e.target}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </section>
+          );
+        })}
+      </article>
+    </section>
+  </main>
+</BaseLayout>
+
+<script>
+  function showNode(id: string | null): void {
+    const details = document.querySelectorAll<HTMLElement>('[data-gv2-detail]');
+    const empty = document.getElementById('gv2-empty');
+    let matched = false;
+    details.forEach((el) => {
+      const isMatch = !!id && el.getAttribute('data-gv2-detail') === id;
+      el.classList.toggle('hidden', !isMatch);
+      if (isMatch) matched = true;
+    });
+    if (empty) empty.classList.toggle('hidden', matched);
+    document.querySelectorAll<HTMLButtonElement>('[data-gv2-select]').forEach((btn) => {
+      btn.classList.toggle('is-active', btn.getAttribute('data-gv2-select') === id);
+    });
+  }
+
+  function applyFilters(): void {
+    const search = (document.getElementById('gv2-search') as HTMLInputElement | null)?.value.trim().toLowerCase() ?? '';
+    const kind = (document.getElementById('gv2-kind') as HTMLSelectElement | null)?.value ?? 'all';
+    const items = document.querySelectorAll<HTMLLIElement>('.gv2-item');
+    let visible = 0;
+    items.forEach((li) => {
+      const text = li.getAttribute('data-search') ?? '';
+      const k = li.getAttribute('data-kind') ?? '';
+      const matchesSearch = !search || text.includes(search);
+      const matchesKind = kind === 'all' || k === kind;
+      const show = matchesSearch && matchesKind;
+      li.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    const counter = document.querySelector('[data-testid="gv2-visible-count"]');
+    if (counter) counter.textContent = String(visible);
+  }
+
+  function init(): void {
+    document.querySelectorAll<HTMLButtonElement>('[data-gv2-select]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const id = btn.getAttribute('data-gv2-select');
+        if (!id) return;
+        const url = new URL(window.location.href);
+        url.searchParams.set('id', id);
+        window.history.replaceState(null, '', url.toString());
+        showNode(id);
+      });
+    });
+    document.getElementById('gv2-search')?.addEventListener('input', applyFilters);
+    document.getElementById('gv2-kind')?.addEventListener('change', applyFilters);
+
+    const urlId = new URLSearchParams(window.location.search).get('id');
+    if (urlId) showNode(urlId);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
+
+<style>
+  button[data-gv2-select].is-active {
+    background: var(--color-bg, transparent);
+    border-left: 3px solid var(--color-accent-blue, #4aa);
+  }
+  .gv2-item.hidden { display: none; }
+</style>
