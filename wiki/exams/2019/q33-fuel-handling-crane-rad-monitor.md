@@ -1,7 +1,7 @@
 ---
 title: "2019 Q33 — Fuel Handling Crane Rad Monitor"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q33

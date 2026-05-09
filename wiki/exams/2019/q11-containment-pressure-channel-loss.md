@@ -1,7 +1,7 @@
 ---
 title: "2019 Q11 — Containment Pressure Channel Loss"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q11

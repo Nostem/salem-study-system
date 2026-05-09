@@ -1,7 +1,7 @@
 ---
 title: "2023 Q36 — RCP Underfrequency Logic / 1/2 Taken Twice"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q36

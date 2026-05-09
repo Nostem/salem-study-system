@@ -1,7 +1,7 @@
 ---
 title: "2020 Q33 — Containment TS Pressure and Temperature Limits"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q33

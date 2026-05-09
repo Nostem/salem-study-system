@@ -1,7 +1,7 @@
 ---
 title: "2020 Q31 — RHR HX Cooldown Rate Control"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q31

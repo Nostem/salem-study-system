@@ -1,7 +1,7 @@
 ---
 title: "2018 Q38 — RCDT Waste Gas Compressor Header Connection"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q38

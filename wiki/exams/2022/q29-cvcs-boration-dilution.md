@@ -1,7 +1,7 @@
 ---
 title: "2022 Q29 — CVCS Boration/Dilution"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q29

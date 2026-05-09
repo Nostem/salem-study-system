@@ -1,7 +1,7 @@
 ---
 title: "2020 Q70 — Breaker Tagging / Removal from Energized Bus"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2020 Q70

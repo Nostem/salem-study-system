@@ -1,7 +1,7 @@
 ---
 title: "2020 Q54 — Emergency Control Air Compressor Power Supply"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q54

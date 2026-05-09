@@ -1,7 +1,7 @@
 ---
 title: "2020 Q13 — Loss of 2A 125 VDC Bus Equipment Impact"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q13

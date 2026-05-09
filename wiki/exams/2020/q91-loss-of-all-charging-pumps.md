@@ -1,7 +1,7 @@
 ---
 title: "2020 Q91 — Loss of All Charging Pumps"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q91

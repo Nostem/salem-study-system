@@ -1,7 +1,7 @@
 ---
 title: "2020 Q85 — FRTS-1 Entry RCS Pressure Below 300"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q85

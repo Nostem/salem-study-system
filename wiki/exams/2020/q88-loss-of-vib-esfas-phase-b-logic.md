@@ -1,7 +1,7 @@
 ---
 title: "2020 Q88 — Loss of VIB / ESFAS Phase B Logic"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q88

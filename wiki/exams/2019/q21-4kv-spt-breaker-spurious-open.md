@@ -1,7 +1,7 @@
 ---
 title: "2019 Q21 — 4KV SPT Breaker Spurious Open"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q21

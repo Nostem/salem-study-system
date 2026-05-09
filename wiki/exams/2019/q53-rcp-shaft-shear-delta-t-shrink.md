@@ -1,7 +1,7 @@
 ---
 title: "2019 Q53 — RCP Shaft Shear Delta-T and SG Shrink"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q53

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q44 — High Radiation Area Dosimetry"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q44

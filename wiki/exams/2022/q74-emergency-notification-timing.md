@@ -1,7 +1,7 @@
 ---
 title: "2022 Q74 — Emergency Notification Timing"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q74

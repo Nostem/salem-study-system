@@ -1,7 +1,7 @@
 ---
 title: "2023 Q75 — Axial Peaking Factor and Boron Dilution"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q75

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q77 — EOP-LOCA-1 H2 Recombiner and Hot Leg Recirc Timing"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

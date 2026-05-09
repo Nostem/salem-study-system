@@ -1,7 +1,7 @@
 ---
 title: "2023 Q12 — Loss of 125VDC / EDG Starting"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q12

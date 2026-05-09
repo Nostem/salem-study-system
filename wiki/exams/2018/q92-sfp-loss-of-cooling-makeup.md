@@ -1,7 +1,7 @@
 ---
 title: "2018 Q92 — SFP Loss of Cooling / Makeup"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

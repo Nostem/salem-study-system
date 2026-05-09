@@ -1,7 +1,7 @@
 ---
 title: "2018 Q71 — EOP-FRCC-2 AFWST Alarm and SG Feeding"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q71

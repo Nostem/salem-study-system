@@ -1,7 +1,7 @@
 ---
 title: "2018 Q74 — EOP-FRCE-2 Containment Sump Level and CFCU SW Isolation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q74

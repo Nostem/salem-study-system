@@ -1,7 +1,7 @@
 ---
 title: "2022 Q25 — EOP-TRIP-7 Rediagnosis"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q25

@@ -1,7 +1,7 @@
 ---
 title: "2023 Q63 — Fire Protection / 2FP147 Containment Isolation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q63

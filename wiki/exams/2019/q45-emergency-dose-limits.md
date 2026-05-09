@@ -1,7 +1,7 @@
 ---
 title: "2019 Q45 — Emergency Dose Limits"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q45

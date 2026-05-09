@@ -1,7 +1,7 @@
 ---
 title: "2023 Q25 — High Containment Radiation / CFCU Low Speed HEPA"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q25

@@ -1,7 +1,7 @@
 ---
 title: "2020 Q28 — RCP Standpipe Level Hi"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q28

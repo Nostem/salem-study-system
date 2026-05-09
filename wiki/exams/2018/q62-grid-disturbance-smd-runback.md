@@ -1,7 +1,7 @@
 ---
 title: "2018 Q62 — Grid Disturbance SMD Runback Controls"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q62

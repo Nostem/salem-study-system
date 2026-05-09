@@ -1,7 +1,7 @@
 ---
 title: "2018 Q43 — RCS Safety Limit Pressure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q43

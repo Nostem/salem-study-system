@@ -1,7 +1,7 @@
 ---
 title: "2022 Q8 — CCW / RCP Motor Bearing Temp"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q8

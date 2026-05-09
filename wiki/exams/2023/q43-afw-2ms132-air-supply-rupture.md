@@ -1,7 +1,7 @@
 ---
 title: "2023 Q43 — AFW 2MS132 Instrument Air Supply Rupture"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q43

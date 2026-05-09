@@ -1,7 +1,7 @@
 ---
 title: "2020 Q92 — Containment Hydrogen Concentration"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q92

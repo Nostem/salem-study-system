@@ -1,7 +1,7 @@
 ---
 title: "2018 Q28 — CVCS Phase A Containment Isolation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q28

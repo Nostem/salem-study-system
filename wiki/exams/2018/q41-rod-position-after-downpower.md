@@ -1,7 +1,7 @@
 ---
 title: "2018 Q41 — Rod Position After Downpower"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2018 Q41

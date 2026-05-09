@@ -1,7 +1,7 @@
 ---
 title: "2018 Q75 — EOP-FRCE-3 Containment Radiation and CFCU Speed"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q75

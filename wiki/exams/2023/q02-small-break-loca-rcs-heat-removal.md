@@ -1,7 +1,7 @@
 ---
 title: "2023 Q2 — Small Break LOCA / RCS Heat Removal Methods"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q2

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q42 — EDG Load Test Values"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q42

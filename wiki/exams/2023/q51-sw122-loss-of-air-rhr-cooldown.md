@@ -1,7 +1,7 @@
 ---
 title: "2023 Q51 — SW122 Loss of Air / RHR Cooldown Rate"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q51

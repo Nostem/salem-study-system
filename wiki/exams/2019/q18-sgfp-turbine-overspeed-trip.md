@@ -1,7 +1,7 @@
 ---
 title: "2019 Q18 — SGFP Turbine Overspeed Trip"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q18

@@ -1,6 +1,6 @@
 {
   "default_quiz_excluded_counts": {
-    "draft": 488,
+    "draft": 2,
     "outdated": 6
   },
   "issue_counts": {},
@@ -20,7 +20,7 @@
       "issue": "multiple_accepted_answers",
       "question_number": 88,
       "slug": "q88-loss-of-control-air-pzr-level",
-      "status": "draft"
+      "status": "verified"
     },
     {
       "detail": "Security-redacted public question is excluded from normal quiz pools.",
@@ -33,8 +33,9 @@
   ],
   "status_counts": {
     "active": 5,
-    "draft": 488,
-    "outdated": 6
+    "draft": 2,
+    "outdated": 6,
+    "verified": 486
   },
   "total_records": 499
 }

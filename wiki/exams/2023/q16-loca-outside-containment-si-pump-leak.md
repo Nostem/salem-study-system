@@ -1,7 +1,7 @@
 ---
 title: "2023 Q16 — LOCA Outside Containment / SI Pump Leak Isolation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q16

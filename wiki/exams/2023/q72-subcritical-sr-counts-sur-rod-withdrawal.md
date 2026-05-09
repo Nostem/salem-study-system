@@ -1,7 +1,7 @@
 ---
 title: "2023 Q72 — Subcritical SR Counts and SUR After Rod Withdrawal"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q72

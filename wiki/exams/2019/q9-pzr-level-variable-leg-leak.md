@@ -1,7 +1,7 @@
 ---
 title: "2019 Q9 — PZR Level Variable Leg Leak"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q9

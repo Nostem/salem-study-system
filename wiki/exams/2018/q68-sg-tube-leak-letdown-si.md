@@ -1,7 +1,7 @@
 ---
 title: "2018 Q68 — SG Tube Leak Letdown Reduction and SI Initiation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q68

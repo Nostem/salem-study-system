@@ -1,7 +1,7 @@
 ---
 title: "2020 Q40 — CFCU Containment Temperature Rise"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q40

@@ -1,7 +1,7 @@
 ---
 title: "2022 Q32 — RHR Pump Trip / Solid Plant Pressure Response"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q32

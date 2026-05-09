@@ -1,7 +1,7 @@
 ---
 title: "2022 Q90 — Loss of All SW Bus Lockout"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q90

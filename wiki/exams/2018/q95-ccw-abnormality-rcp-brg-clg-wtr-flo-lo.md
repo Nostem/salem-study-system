@@ -1,7 +1,7 @@
 ---
 title: "2018 Q95 — CCW Abnormality / RCP BRG CLG WTR FLO LO"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

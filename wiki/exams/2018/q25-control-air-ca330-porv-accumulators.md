@@ -1,7 +1,7 @@
 ---
 title: "2018 Q25 — Control Air CA330 / PORV Accumulators"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q25

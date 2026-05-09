@@ -295,6 +295,18 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
           </label>
           <label class="flex items-start gap-2 rounded border border-border bg-bg/60 px-2 py-2 text-xs text-text-muted">
             <input
+              id="gv2-practice-only"
+              data-testid="gv2-practice-only"
+              type="checkbox"
+              class="mt-0.5"
+            />
+            <span>
+              <span class="block font-mono text-[10px] uppercase tracking-wider text-text-primary">Practice-ready only</span>
+              Show only nodes that can generate a quiz-v2 pool.
+            </span>
+          </label>
+          <label class="flex items-start gap-2 rounded border border-border bg-bg/60 px-2 py-2 text-xs text-text-muted">
+            <input
               id="gv2-focus-neighborhood"
               data-testid="gv2-focus-neighborhood"
               type="checkbox"
@@ -306,9 +318,24 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
             </span>
           </label>
         </div>
-        <div class="mt-3 text-[11px] font-mono text-text-muted">
-          showing top <span data-testid="gv2-visible-count">{renderedNodes.length}</span>
-          of {graph.counts.totalNodes} (sorted by connections)
+        <div class="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[11px] font-mono text-text-muted">
+          <span>
+            showing top <span data-testid="gv2-visible-count">{renderedNodes.length}</span>
+            of {graph.counts.totalNodes} (sorted by connections)
+          </span>
+          <a
+            id="gv2-selected-jump"
+            data-testid="gv2-selected-jump"
+            href="#gv2-detail-root"
+            class="hidden underline hover:text-accent-blue"
+          >jump to selected node</a>
+        </div>
+        <div
+          id="gv2-no-results"
+          data-testid="gv2-no-results"
+          class="hidden mt-3 rounded border border-border bg-bg/60 px-3 py-2 text-sm text-text-muted"
+        >
+          No graph nodes match the current filters. Clear search, disable practice-ready only, or broaden kind/edge filters.
         </div>
         <ul
           id="gv2-list"
@@ -322,6 +349,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
               data-kind={n.kind}
               data-edge-types={Array.from(edgeTypesByNode.get(n.id) ?? []).join(' ')}
               data-neighbors={Array.from(neighborsByNode.get(n.id) ?? []).join(' ')}
+              data-practice-ready={eligibleQuestionsFor(n).length > 0 ? 'true' : 'false'}
               data-search={`${n.title} ${n.slug} ${n.id} ${Object.values(n.meta ?? {}).join(' ')}`.toLowerCase()}
             >
               <button
@@ -508,9 +536,11 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     selectedNodeId = id;
     const empty = document.getElementById('gv2-empty');
     const root = document.getElementById('gv2-detail-root');
+    const jump = document.getElementById('gv2-selected-jump');
     const detail = id ? detailData[id] : undefined;
     if (root) root.innerHTML = detail ? renderDetail(detail) : '';
     if (empty) empty.classList.toggle('hidden', !!detail);
+    if (jump) jump.classList.toggle('hidden', !detail);
     document.querySelectorAll<HTMLButtonElement>('[data-gv2-select]').forEach((btn) => {
       btn.classList.toggle('is-active', btn.getAttribute('data-gv2-select') === id);
     });
@@ -520,6 +550,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     const search = (document.getElementById('gv2-search') as HTMLInputElement | null)?.value.trim().toLowerCase() ?? '';
     const kind = (document.getElementById('gv2-kind') as HTMLSelectElement | null)?.value ?? 'all';
     const edgeType = (document.getElementById('gv2-edge-type') as HTMLSelectElement | null)?.value ?? 'all';
+    const practiceOnly = (document.getElementById('gv2-practice-only') as HTMLInputElement | null)?.checked ?? false;
     const focusNeighborhood = (document.getElementById('gv2-focus-neighborhood') as HTMLInputElement | null)?.checked ?? false;
     const items = document.querySelectorAll<HTMLLIElement>('.gv2-item');
     let visible = 0;
@@ -529,16 +560,19 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
       const k = li.getAttribute('data-kind') ?? '';
       const edgeTypes = (li.getAttribute('data-edge-types') ?? '').split(' ').filter(Boolean);
       const neighbors = (li.getAttribute('data-neighbors') ?? '').split(' ').filter(Boolean);
+      const practiceReady = li.getAttribute('data-practice-ready') === 'true';
       const matchesSearch = !search || text.includes(search);
       const matchesKind = kind === 'all' || k === kind;
       const matchesEdgeType = edgeType === 'all' || edgeTypes.includes(edgeType);
+      const matchesPractice = !practiceOnly || practiceReady;
       const matchesFocus = !focusNeighborhood || !selectedNodeId || id === selectedNodeId || neighbors.includes(selectedNodeId);
-      const show = matchesSearch && matchesKind && matchesEdgeType && matchesFocus;
+      const show = matchesSearch && matchesKind && matchesEdgeType && matchesPractice && matchesFocus;
       li.classList.toggle('hidden', !show);
       if (show) visible++;
     });
     const counter = document.querySelector('[data-testid="gv2-visible-count"]');
     if (counter) counter.textContent = String(visible);
+    document.getElementById('gv2-no-results')?.classList.toggle('hidden', visible !== 0);
   }
 
   function init(): void {
@@ -551,10 +585,12 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     document.getElementById('gv2-search')?.addEventListener('input', applyFilters);
     document.getElementById('gv2-kind')?.addEventListener('change', applyFilters);
     document.getElementById('gv2-edge-type')?.addEventListener('change', applyFilters);
+    document.getElementById('gv2-practice-only')?.addEventListener('change', applyFilters);
     document.getElementById('gv2-focus-neighborhood')?.addEventListener('change', applyFilters);
 
     const urlId = new URLSearchParams(window.location.search).get('id');
     if (urlId) showNode(urlId);
+    applyFilters();
   }
 
   if (document.readyState === 'loading') {

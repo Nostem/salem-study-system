@@ -1,7 +1,7 @@
 ---
 title: "2020 Q93 — Condensate Pump Trip Actions"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q93

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q78 — AB.CN-0001 Peer Checks and Polisher Bypass"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

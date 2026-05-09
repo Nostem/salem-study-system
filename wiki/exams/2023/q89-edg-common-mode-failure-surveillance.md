@@ -1,7 +1,7 @@
 ---
 title: "2023 Q89 — EDG Common Mode Failure / Surveillance Scheduling"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q89

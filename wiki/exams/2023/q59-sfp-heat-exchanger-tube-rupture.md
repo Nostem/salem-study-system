@@ -1,7 +1,7 @@
 ---
 title: "2023 Q59 — SFP Heat Exchanger Tube Rupture"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q59

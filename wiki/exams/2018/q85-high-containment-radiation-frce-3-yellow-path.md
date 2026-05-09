@@ -1,7 +1,7 @@
 ---
 title: "2018 Q85 — High Containment Radiation / FRCE-3 Yellow Path"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

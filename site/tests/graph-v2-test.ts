@@ -104,3 +104,25 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await expect(page.getByTestId('gv2-actions-question:q8-pzr-saturation-rcp-restart').getByRole('link', { name: /Generate quiz from this node/i }))
     .toHaveAttribute('href', /\/quiz-v2\/play\/\?slugs=q8-pzr-saturation-rcp-restart&count=1$/);
 });
+
+test('graph-v2 polish exposes practice-only filtering, empty state, and deep-linked selection', async ({ page }) => {
+  await page.goto('graph-v2/');
+
+  const initialCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  await page.getByTestId('gv2-practice-only').check();
+  const practiceCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  expect(practiceCount).toBeGreaterThan(0);
+  expect(practiceCount).toBeLessThan(initialCount);
+
+  await page.getByTestId('gv2-search').fill('q23-eop-flowchart-symbols-concurrent');
+  await expect(page.getByTestId('gv2-no-results')).toBeVisible();
+  await expect(page.getByTestId('gv2-no-results')).toContainText('No graph nodes match');
+
+  await page.getByTestId('gv2-search').fill('q8-pzr-saturation-rcp-restart');
+  await page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').first().getByRole('button').click();
+  await expect(page).toHaveURL(/graph-v2\/\?id=question%3Aq8-pzr-saturation-rcp-restart/);
+
+  await page.goto('graph-v2/?id=question%3Aq8-pzr-saturation-rcp-restart');
+  await expect(page.getByTestId('gv2-detail-question:q8-pzr-saturation-rcp-restart')).toBeVisible();
+  await expect(page.getByTestId('gv2-selected-jump')).toHaveAttribute('href', '#gv2-detail-root');
+});

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q11 — RCP Undervoltage Reactor Trip"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q11

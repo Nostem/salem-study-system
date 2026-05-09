@@ -1,7 +1,7 @@
 ---
 title: "2020 Q39 — ESFAS SI Block / Containment High Pressure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q39

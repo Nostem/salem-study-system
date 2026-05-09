@@ -1,7 +1,7 @@
 ---
 title: "2020 Q55 — Phase A Containment Isolation Valves"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q55

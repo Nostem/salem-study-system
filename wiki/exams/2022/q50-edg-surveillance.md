@@ -1,7 +1,7 @@
 ---
 title: "2022 Q50 — EDG Minimum Load After Paralleling"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q50

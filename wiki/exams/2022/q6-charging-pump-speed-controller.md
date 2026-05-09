@@ -1,7 +1,7 @@
 ---
 title: "2022 Q6 — Charging Pump Speed Controller"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q6

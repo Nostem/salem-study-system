@@ -1,7 +1,7 @@
 ---
 title: "2022 Q3 — Phase A Safeguards Indication"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q03

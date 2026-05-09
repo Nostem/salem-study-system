@@ -1,7 +1,7 @@
 ---
 title: "2020 Q62 — SFP Anti-Siphon Design"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q62

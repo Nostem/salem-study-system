@@ -1,7 +1,7 @@
 ---
 title: "2020 Q34 — CCW Thermal Barrier Leak Indications"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q34

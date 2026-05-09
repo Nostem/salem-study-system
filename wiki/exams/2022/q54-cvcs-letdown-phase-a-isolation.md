@@ -1,7 +1,7 @@
 ---
 title: "2022 Q54 — CVCS Letdown Orifice Phase A Isolation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q54

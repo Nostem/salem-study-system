@@ -1,7 +1,7 @@
 ---
 title: "2018 Q88 — Containment Spray TS 3.6.2.1 / LCO 3.0.3"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: yes
 aliases:

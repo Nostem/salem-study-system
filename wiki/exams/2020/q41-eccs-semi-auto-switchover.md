@@ -1,7 +1,7 @@
 ---
 title: "2020 Q41 — ECCS Semi-Automatic Switchover"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q41

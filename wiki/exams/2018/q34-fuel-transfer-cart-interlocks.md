@@ -1,7 +1,7 @@
 ---
 title: "2018 Q34 — Fuel Transfer Cart Interlocks"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q34

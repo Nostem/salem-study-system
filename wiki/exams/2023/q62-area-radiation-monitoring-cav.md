@@ -1,7 +1,7 @@
 ---
 title: "2023 Q62 — Area Radiation Monitoring / CAV / 1R1A"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q62

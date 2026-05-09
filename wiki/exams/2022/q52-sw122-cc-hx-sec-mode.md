@@ -1,7 +1,7 @@
 ---
 title: "2022 Q52 — SW122 CC HX Inlet Valve SEC Response"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q52

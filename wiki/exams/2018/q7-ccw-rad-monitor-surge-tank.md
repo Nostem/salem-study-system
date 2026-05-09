@@ -1,7 +1,7 @@
 ---
 title: "2018 Q7 — CCW Radiation Monitor and Surge Tank Overflow"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q7

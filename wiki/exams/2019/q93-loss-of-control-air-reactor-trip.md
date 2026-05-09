@@ -1,7 +1,7 @@
 ---
 title: "2019 Q93 — Loss of Control Air Reactor Trip"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q93

@@ -1,7 +1,7 @@
 ---
 title: "2020 Q89 — SW CFCU Isolation / Water Hammer"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q89

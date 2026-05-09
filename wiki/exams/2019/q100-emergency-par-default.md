@@ -1,7 +1,7 @@
 ---
 title: "2019 Q100 — Emergency PAR Default"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2019 Q100

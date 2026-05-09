@@ -1,7 +1,7 @@
 ---
 title: "2018 Q15 — SG Tube Leak MS10 Setpoint Adjustment"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q15

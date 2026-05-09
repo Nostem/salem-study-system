@@ -1,7 +1,7 @@
 ---
 title: "2022 Q21 — PZR Reference Leg Leak"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q21

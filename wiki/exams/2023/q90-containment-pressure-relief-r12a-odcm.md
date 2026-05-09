@@ -1,7 +1,7 @@
 ---
 title: "2023 Q90 — Containment Pressure Relief / R12A Failure ODCM"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2023 Q90

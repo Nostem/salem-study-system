@@ -1,7 +1,7 @@
 ---
 title: "2018 Q51 — RCP Vibration / LCO 3.4.1.2"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q51

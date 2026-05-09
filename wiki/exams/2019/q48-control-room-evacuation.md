@@ -1,7 +1,7 @@
 ---
 title: "2019 Q48 — Control Room Evacuation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q48

@@ -1,7 +1,7 @@
 ---
 title: "2022 Q18 — LOCA Outside Containment / SJ49 Valves"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q18

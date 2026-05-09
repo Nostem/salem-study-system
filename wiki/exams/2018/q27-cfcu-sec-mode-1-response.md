@@ -1,7 +1,7 @@
 ---
 title: "2018 Q27 — CFCU SEC Mode 1 Response"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q27

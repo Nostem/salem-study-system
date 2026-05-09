@@ -1,7 +1,7 @@
 ---
 title: "2018 Q3 — RHR Suction and Discharge Alignment"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q3

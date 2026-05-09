@@ -1,7 +1,7 @@
 ---
 title: "2020 Q61 — Steam Dump PT-507 Fails High"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q61

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q84 — Loss of RHR / Containment Closure"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

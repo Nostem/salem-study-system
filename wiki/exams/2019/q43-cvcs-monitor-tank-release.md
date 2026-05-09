@@ -1,7 +1,7 @@
 ---
 title: "2019 Q43 — CVCS Monitor Tank Release"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q43

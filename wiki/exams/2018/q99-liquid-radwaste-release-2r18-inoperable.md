@@ -1,7 +1,7 @@
 ---
 title: "2018 Q99 — Liquid Radwaste Release / 2R18 Inoperable"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

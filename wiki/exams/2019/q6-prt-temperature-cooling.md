@@ -1,7 +1,7 @@
 ---
 title: "2019 Q6 — PRT Temperature and Cooling"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q6

@@ -1,7 +1,7 @@
 ---
 title: "2020 Q94 — Refueling De-tensioning Requirements"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q94

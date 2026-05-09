@@ -1,7 +1,7 @@
 ---
 title: "2018 Q16 — Main Steam Warmup MSIV Opening"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q16

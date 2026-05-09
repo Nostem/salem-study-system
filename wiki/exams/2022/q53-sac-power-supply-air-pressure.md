@@ -1,7 +1,7 @@
 ---
 title: "2022 Q53 — SAC Power Supply & Control Air Pressure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q53

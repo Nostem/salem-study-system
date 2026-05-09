@@ -1,7 +1,7 @@
 ---
 title: "2018 Q76 — EOP-FRCI-3 PZR Vapor Space LOCA"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

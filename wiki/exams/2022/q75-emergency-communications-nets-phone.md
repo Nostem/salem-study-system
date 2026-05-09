@@ -1,7 +1,7 @@
 ---
 title: "2022 Q75 — Emergency Communications NETS Phone"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q75

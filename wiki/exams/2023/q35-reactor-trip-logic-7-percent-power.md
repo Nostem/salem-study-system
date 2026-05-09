@@ -1,7 +1,7 @@
 ---
 title: "2023 Q35 — Reactor Trip Logic at 7% Power / Which Trip Active"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q35

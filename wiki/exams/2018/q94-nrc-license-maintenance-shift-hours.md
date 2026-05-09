@@ -1,7 +1,7 @@
 ---
 title: "2018 Q94 — NRC License Maintenance / Shift Hours"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

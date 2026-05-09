@@ -1,7 +1,7 @@
 ---
 title: "2018 Q26 — ECAC Auto Start / Manual Start"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q26

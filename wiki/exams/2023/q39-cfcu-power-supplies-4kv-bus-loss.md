@@ -1,7 +1,7 @@
 ---
 title: "2023 Q39 — CFCU Power Supplies / 4KV Vital Bus Loss"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q39

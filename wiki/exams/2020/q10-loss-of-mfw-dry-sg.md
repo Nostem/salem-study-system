@@ -1,7 +1,7 @@
 ---
 title: "2020 Q10 — Loss of MFW / Dry SG Feed Restriction"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q10

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q58 — SGFP Trip / Manual Load Reduction Rate"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q58

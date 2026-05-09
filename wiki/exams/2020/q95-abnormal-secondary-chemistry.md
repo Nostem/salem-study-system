@@ -1,7 +1,7 @@
 ---
 title: "2020 Q95 — Abnormal Secondary Chemistry"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2020 Q95

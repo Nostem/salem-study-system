@@ -1,7 +1,7 @@
 ---
 title: "2023 Q20 — Condenser Backpressure / Effect on Turbine"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q20

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q97 — LCO 3.2.1 AFD Power Reduction"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:
