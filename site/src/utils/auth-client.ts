@@ -54,6 +54,8 @@ export type ContactFeedbackResponse = {
 };
 
 export type SubmitQuizResultsPayload = {
+  quizSessionId?: string;
+  source?: 'quiz' | 'quiz-v2';
   title?: string;
   quizType?: 'custom' | 'topic' | 'missed' | 'weak_area' | 'exam_sim' | 'global_hard';
   feedbackMode: 'immediate' | 'blind';
@@ -98,6 +100,10 @@ export type QuizHistorySession = {
   totalQuestions: number;
   passStatus: 'pass' | 'fail';
   filterSummary: string;
+  source?: string | null;
+  replayHref?: string | null;
+  reviewMissedHref?: string | null;
+  missedSlugs?: string[];
   questions: QuizHistoryQuestion[];
 };
 
@@ -114,6 +120,31 @@ export type QuizHistoryResponse = {
   };
   weakTopics: Array<{ slug: string; title: string; attempts: number; misses: number; accuracy: number }>;
   sessions: QuizHistorySession[];
+};
+
+
+export type QuizReviewQueueResponse = {
+  ok: boolean;
+  dueSlugs: string[];
+  allSlugs: string[];
+  states: Record<string, {
+    attemptsCount: number;
+    correctCount: number;
+    incorrectCount: number;
+    lastAttemptAt: string | null;
+    lastCorrectAt: string | null;
+    masteryState: 'new' | 'learning' | 'shaky' | 'mastered';
+    nextReviewAt: string | null;
+    updatedAt: string | null;
+  }>;
+};
+
+export type SubmitQuestionReviewResponse = {
+  ok: boolean;
+  slug: string;
+  rating: 'again' | 'hard' | 'good' | 'easy';
+  nextReviewAt: string;
+  masteryState: 'new' | 'learning' | 'shaky' | 'mastered';
 };
 
 const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
@@ -195,6 +226,23 @@ export async function createQuizV2Session(
     throw new Error('not_authenticated');
   }
   return postFunction<CreateQuizV2SessionResponse>('create-quiz-v2-session', payload, session.access_token);
+}
+
+
+export async function getQuizReviewQueue(): Promise<QuizReviewQueueResponse> {
+  const session = await getCurrentSession();
+  if (!session?.access_token) {
+    throw new Error('not_authenticated');
+  }
+  return postFunction<QuizReviewQueueResponse>('quiz-review-queue', {}, session.access_token);
+}
+
+export async function submitQuestionReview(payload: { slug: string; rating: 'again' | 'hard' | 'good' | 'easy' }): Promise<SubmitQuestionReviewResponse> {
+  const session = await getCurrentSession();
+  if (!session?.access_token) {
+    throw new Error('not_authenticated');
+  }
+  return postFunction<SubmitQuestionReviewResponse>('submit-question-review', payload, session.access_token);
 }
 
 export async function getQuizHistory(): Promise<QuizHistoryResponse> {

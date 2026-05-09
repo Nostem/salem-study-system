@@ -27,6 +27,8 @@ export interface NormalizedFilters {
 export interface QuizSession {
   schemaVersion: 1;
   sessionId: string;
+  backendSessionId?: string;
+  source?: 'local' | 'backend';
   seed: string;
   filters: NormalizedFilters;
   questionSlugs: string[];

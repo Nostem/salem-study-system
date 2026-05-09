@@ -88,14 +88,56 @@ function completionMode(config: Record<string, unknown> | null): 'completed' | '
   return config?.completionMode === 'early' ? 'early' : 'completed';
 }
 
+function arraySummary(value: unknown, label: string): string | null {
+  if (!Array.isArray(value) || value.length === 0) return null;
+  return `${label}: ${value.map(String).join(', ')}`;
+}
+
 function filterSummary(session: QuizSessionRow, totalQuestions: number): string {
   const config = session.config ?? {};
+  const filters = config.filters && typeof config.filters === 'object'
+    ? config.filters as Record<string, unknown>
+    : config;
   const parts: string[] = [];
+  if (config.source === 'quiz-v2') parts.push('Quiz v2');
   if (typeof config.year === 'number' || typeof config.year === 'string') parts.push(String(config.year));
   if (typeof config.track === 'string' && config.track !== 'all') parts.push(config.track);
   if (typeof config.topic === 'string' && config.topic !== 'all') parts.push(config.topic);
+  for (const part of [
+    arraySummary(filters.years, 'years'),
+    arraySummary(filters.tracks, 'tracks'),
+    arraySummary(filters.topicSlugs, 'topics'),
+  ]) {
+    if (part) parts.push(part);
+  }
   parts.push(`${totalQuestions} question${totalQuestions === 1 ? '' : 's'}`);
   return parts.join(' · ');
+}
+
+function replayHref(questionSlugs: string[], seed: unknown): string | null {
+  if (questionSlugs.length === 0) return null;
+  const params = new URLSearchParams();
+  params.set('slugs', questionSlugs.join(','));
+  params.set('count', String(questionSlugs.length));
+  params.set('seed', typeof seed === 'string' && seed ? seed : 'history-replay');
+  return `/quiz-v2/play/?${params.toString()}`;
+}
+
+function reviewHref(questionSlugs: string[]): string | null {
+  if (questionSlugs.length === 0) return null;
+  const params = new URLSearchParams();
+  params.set('slugs', questionSlugs.join(','));
+  return `/quiz-v2/review/?${params.toString()}`;
+}
+
+function sessionSource(config: Record<string, unknown> | null): string | null {
+  if (typeof config?.source === 'string') return config.source;
+  const submitted = config?.submitted;
+  if (submitted && typeof submitted === 'object' && !Array.isArray(submitted)) {
+    const source = (submitted as Record<string, unknown>).source;
+    if (typeof source === 'string') return source;
+  }
+  return null;
 }
 
 function originalLabelFromChoiceOrder(selectedLabel: string | null, choiceOrder: Record<string, string> | string[] | null): string | null {
@@ -212,6 +254,8 @@ Deno.serve(async (req) => {
 
     const answeredCount = questions.filter((question) => question.status !== 'unanswered').length;
     const correctCount = questions.filter((question) => question.status === 'correct').length;
+    const slugs = questions.map((question) => question.slug);
+    const missedSlugs = questions.filter((question) => question.status !== 'correct').map((question) => question.slug);
     const totalQuestions = questions.length;
     const score = normalizeScore(session.score);
 
@@ -229,6 +273,10 @@ Deno.serve(async (req) => {
       totalQuestions,
       passStatus: passStatus(score),
       filterSummary: filterSummary(session, totalQuestions),
+      source: sessionSource(session.config),
+      replayHref: replayHref(slugs, session.config?.seed),
+      reviewMissedHref: reviewHref(missedSlugs),
+      missedSlugs,
       questions,
     };
   });

@@ -119,12 +119,30 @@ function edgeSummaryFor(nodeId: string): Array<{ type: string; label: string; co
 
 function relatedQuestionsFor(nodeId: string): Array<(typeof graph.nodes)[number]> {
   const questionIds = new Set<string>();
-  for (const edge of [...(edgesBySource.get(nodeId) ?? []), ...(edgesByTarget.get(nodeId) ?? [])]) {
-    const source = nodeById.get(edge.source);
-    const target = nodeById.get(edge.target);
-    if (source?.kind === 'question') questionIds.add(source.id);
-    if (target?.kind === 'question') questionIds.add(target.id);
+  const seedNode = nodeById.get(nodeId);
+  const collectDirectQuestions = (id: string): void => {
+    for (const edge of [...(edgesBySource.get(id) ?? []), ...(edgesByTarget.get(id) ?? [])]) {
+      const source = nodeById.get(edge.source);
+      const target = nodeById.get(edge.target);
+      if (source?.kind === 'question') questionIds.add(source.id);
+      if (target?.kind === 'question') questionIds.add(target.id);
+    }
+  };
+
+  collectDirectQuestions(nodeId);
+
+  // Article pages are often linked to the canonical topic node via topic-wiki
+  // rather than directly to question nodes. Follow that one semantic hop so
+  // system/source articles like CVCS, AFW, and exam pages can build real quiz
+  // pools instead of showing a selected count with zero eligible questions.
+  if (seedNode?.kind === 'article') {
+    for (const edge of edgesByTarget.get(nodeId) ?? []) {
+      if (edge.type !== 'topic-wiki') continue;
+      const topic = nodeById.get(edge.source);
+      if (topic?.kind === 'topic') collectDirectQuestions(topic.id);
+    }
   }
+
   return [...questionIds]
     .map((id) => nodeById.get(id))
     .filter((node): node is (typeof graph.nodes)[number] => !!node && node.id !== nodeId)
@@ -188,6 +206,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     eligibleQuestionCount: eligibleQuestions.length,
     edgeSummary: edgeSummaryFor(n.id),
     metaEntries: metaEntriesFor(n),
+    eligibleQuestionSlugs: eligibleQuestions.map((q) => q.slug),
     relatedQuestions: relatedQuestionsFor(n.id).slice(0, 12).map((q) => ({
       id: q.id,
       title: q.title,
@@ -330,6 +349,14 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
             class="hidden underline hover:text-accent-blue"
           >jump to selected node</a>
         </div>
+        <section class="mt-3 rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-muted" data-testid="gv2-builder">
+          <div class="font-mono text-[10px] uppercase tracking-wider text-text-primary">Quiz builder</div>
+          <div class="mt-1"><span data-testid="gv2-builder-count">0</span> selected · <span data-testid="gv2-builder-pool">0</span> eligible questions</div>
+          <div class="mt-2 flex flex-wrap gap-2">
+            <a id="gv2-builder-play" data-testid="gv2-builder-play" data-base={base} href="#" class="pointer-events-none opacity-40 rounded border border-accent-blue px-2 py-1 text-accent-blue no-underline">Generate quiz</a>
+            <button type="button" id="gv2-builder-clear" data-testid="gv2-builder-clear" class="rounded border border-border px-2 py-1 text-text-muted">Clear</button>
+          </div>
+        </section>
         <div
           id="gv2-no-results"
           data-testid="gv2-no-results"
@@ -352,16 +379,25 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
               data-practice-ready={eligibleQuestionsFor(n).length > 0 ? 'true' : 'false'}
               data-search={`${n.title} ${n.slug} ${n.id} ${Object.values(n.meta ?? {}).join(' ')}`.toLowerCase()}
             >
-              <button
-                type="button"
-                data-gv2-select={n.id}
-                class="w-full text-left px-3 py-2 hover:bg-bg focus:bg-bg focus:outline-none"
-              >
-                <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">
-                  {n.kind}{n.subcategory ? ` · ${n.subcategory}` : ''} · {n.connections} conn
-                </div>
-                <div class="text-sm text-text-primary leading-snug">{n.title}</div>
-              </button>
+              <div class="flex items-start gap-2 px-3 py-2 hover:bg-bg focus-within:bg-bg">
+                <input
+                  type="checkbox"
+                  data-gv2-builder-toggle={n.id}
+                  data-pool={eligibleQuestionsFor(n).map((q) => q.slug).join(',')}
+                  class="mt-5"
+                  aria-label={`Add ${n.title} to quiz builder`}
+                />
+                <button
+                  type="button"
+                  data-gv2-select={n.id}
+                  class="min-w-0 flex-1 text-left focus:outline-none"
+                >
+                  <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">
+                    {n.kind}{n.subcategory ? ` · ${n.subcategory}` : ''} · {n.connections} conn
+                  </div>
+                  <div class="text-sm text-text-primary leading-snug">{n.title}</div>
+                </button>
+              </div>
             </li>
           ))}
         </ul>
@@ -381,6 +417,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
 
 <script>
   let selectedNodeId: string | null = null;
+  const builderSelection = new Set<string>();
 
   type DetailEdge = { type: string; nodeId: string; title: string };
   type DetailQuestion = { id: string; title: string; kind: string; examYear?: unknown; questionNumber?: unknown };
@@ -394,6 +431,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     openHref?: string;
     quizHref?: string;
     eligibleQuestionCount: number;
+    eligibleQuestionSlugs: string[];
     edgeSummary: Array<{ label: string; count: number }>;
     metaEntries: Array<{ label: string; value: string }>;
     relatedQuestions: DetailQuestion[];
@@ -457,6 +495,12 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     const openAction = detail.openHref
       ? `<a href="${escapeHtml(detail.openHref)}" class="rounded border border-border px-3 py-2 text-text-primary no-underline hover:border-accent-blue hover:text-accent-blue">Open source/wiki page</a>`
       : '<span class="rounded border border-border px-3 py-2 text-text-muted">No local page link</span>';
+    const addAction = detail.eligibleQuestionCount > 0 ? `
+      <button type="button" data-gv2-builder-add="${escapeHtml(detail.id)}" class="rounded border border-border px-3 py-2 text-text-primary text-left hover:border-accent-blue">
+        Add to multi-select builder
+        <span class="block text-[11px] text-text-muted">${escapeHtml(detail.eligibleQuestionCount)} eligible question${detail.eligibleQuestionCount === 1 ? '' : 's'}</span>
+      </button>
+    ` : '';
     const quizAction = detail.quizHref ? `
       <a href="${escapeHtml(detail.quizHref)}" class="rounded border border-accent-blue/60 px-3 py-2 text-accent-blue no-underline hover:bg-accent-blue/10">
         Generate quiz from this node
@@ -505,6 +549,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
             <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Study actions</h3>
             <div class="flex flex-col gap-2 text-sm" data-testid="gv2-actions-${escapeHtml(detail.id)}">
               ${openAction}
+              ${addAction}
               ${quizAction}
             </div>
           </section>
@@ -524,12 +569,38 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     `;
   }
 
+  function updateBuilder(): void {
+    const slugs = new Set<string>();
+    builderSelection.forEach((id) => detailData[id]?.eligibleQuestionSlugs.forEach((slug) => slugs.add(slug)));
+    const count = document.querySelector('[data-testid="gv2-builder-count"]');
+    const pool = document.querySelector('[data-testid="gv2-builder-pool"]');
+    if (count) count.textContent = String(builderSelection.size);
+    if (pool) pool.textContent = String(slugs.size);
+    document.querySelectorAll<HTMLInputElement>('[data-gv2-builder-toggle]').forEach((el) => { el.checked = builderSelection.has(el.getAttribute('data-gv2-builder-toggle') ?? ''); });
+    const play = document.getElementById('gv2-builder-play') as HTMLAnchorElement | null;
+    if (play) {
+      if (slugs.size > 0) {
+        const params = new URLSearchParams();
+        params.set('slugs', Array.from(slugs).join(','));
+        params.set('count', String(Math.min(20, slugs.size)));
+        params.set('seed', 'graph-builder');
+        const base = play.dataset.base ?? '/';
+        play.href = `${base}quiz-v2/play/?${params.toString()}`;
+        play.classList.remove('pointer-events-none', 'opacity-40');
+      } else {
+        play.href = '#';
+        play.classList.add('pointer-events-none', 'opacity-40');
+      }
+    }
+  }
+
   function selectNode(id: string): void {
     const url = new URL(window.location.href);
     url.searchParams.set('id', id);
     window.history.replaceState(null, '', url.toString());
     showNode(id);
     applyFilters();
+    updateBuilder();
   }
 
   function showNode(id: string | null): void {
@@ -580,8 +651,25 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
       const target = event.target instanceof Element ? event.target.closest<HTMLButtonElement>('[data-gv2-select]') : null;
       const id = target?.getAttribute('data-gv2-select');
       if (!id) return;
+      if ((event.target as Element).matches('[data-gv2-builder-toggle]')) return;
       selectNode(id);
     });
+    document.addEventListener('change', (event) => {
+      const target = event.target instanceof Element ? event.target.closest<HTMLInputElement>('[data-gv2-builder-toggle]') : null;
+      if (!target) return;
+      const id = target.getAttribute('data-gv2-builder-toggle');
+      if (!id) return;
+      if (target.checked) builderSelection.add(id); else builderSelection.delete(id);
+      updateBuilder();
+    });
+    document.addEventListener('click', (event) => {
+      const target = event.target instanceof Element ? event.target.closest<HTMLButtonElement>('[data-gv2-builder-add]') : null;
+      const id = target?.getAttribute('data-gv2-builder-add');
+      if (!id) return;
+      builderSelection.add(id);
+      updateBuilder();
+    });
+    document.getElementById('gv2-builder-clear')?.addEventListener('click', () => { builderSelection.clear(); updateBuilder(); });
     document.getElementById('gv2-search')?.addEventListener('input', applyFilters);
     document.getElementById('gv2-kind')?.addEventListener('change', applyFilters);
     document.getElementById('gv2-edge-type')?.addEventListener('change', applyFilters);
@@ -591,6 +679,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     const urlId = new URLSearchParams(window.location.search).get('id');
     if (urlId) showNode(urlId);
     applyFilters();
+    updateBuilder();
   }
 
   if (document.readyState === 'loading') {
@@ -606,4 +695,8 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     border-left: 3px solid var(--color-accent-blue, #4aa);
   }
   .gv2-item.hidden { display: none; }
+  @media (max-width: 640px) {
+    #gv2-list { max-height: 42vh; }
+    [data-gv2-select], #gv2-builder button, #gv2-builder a { min-height: 44px; }
+  }
 </style>
