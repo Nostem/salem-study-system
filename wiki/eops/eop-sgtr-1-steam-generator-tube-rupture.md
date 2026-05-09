@@ -16,6 +16,11 @@ Provides guidance for mitigation of a steam generator tube rupture event, includ
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q15</div>
+EOP-SGTR-1 <span class="hi-exam">Step 6 (2-EOP-SGTR-1F Sheet 2, Rev 30)</span>: AFW flow control to the ruptured SG. If ruptured SG NR level is &lt;9%, <span class="hi-exam">establish AFW flow to the ruptured SG until NR level reaches &gt;9%, then isolate AFW flow and maintain &gt;9%</span>. Purpose: keep tubes covered to support natural circulation cooldown / RCS heat removal path. <span class="hi-trap">Trap C: 19% is the EOP Rev 30 level above which INTACT SGs are maintained — NOT the ruptured-SG level.</span> <span class="hi-trap">Trap A/D: never feeding the ruptured SG (or only after cooldown) is a misconception — uncovered tubes prevent heat removal during cooldown if intact SGs are unavailable as targets.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q11</div>
 Step 38.1 monitors for natural circulation flow. RCS T-Cold in unaffected loops should be approximately <span class="hi-exam">548 °F</span> (saturation temperature at MS10 setpoint of 1015 psig / 1030 psia). Affected SG MS10 set to 1045 psig (1060 psia) per step 3. With a LOOP, steam dumps are unavailable (circulators tripped = blocking signal) — use <span class="hi-exam">atmospheric relief valves (MS10s)</span> on intact SGs to raise steam flow.
 </div>
@@ -64,7 +69,7 @@ SI termination during SGTR-1: the reason ECCS flow is terminated is to <span cla
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Pressurizer & PRT]], [[Main Steam]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]]
-- Related exam questions: [[2016 Q4]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
+- Related exam questions: [[2016 Q4]], [[2016 Q15]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
 - Related JPMs: [[2019 JPM SRO-A5]], [[2019 JPM Sim-c]], [[2020 JPM Sim-g]]
 - Related scenarios: [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

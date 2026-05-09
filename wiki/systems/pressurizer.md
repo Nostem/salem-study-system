@@ -102,6 +102,11 @@ PORV discharge temperature is determined by a <span class="hi-exam">constant ent
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q11</div>
+PZR PORV and Safety discharge piping (drawing 203301): both PZR PORVs and the 3 PZR Safeties discharge into a <span class="hi-exam">single combined line going to the PRT</span>. Tailpipe temperature monitoring: <span class="hi-exam">each Safety has its own individual temperature sensor</span>, but the <span class="hi-exam">2 PORVs share ONE sensor on the common discharge line</span> — so PORV-to-PORV identification cannot be made from temperature alone. AB.PZR-0001 diagnostic method when both PORV Stops are closed and one PORV Stop (<span class="hi-exam">2PR8</span>) is re-opened: rising tailpipe temperature identifies the leaking PORV.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q2</div>
 PZR safety valve leak is a <span class="hi-exam">throttling/constant enthalpy process</span>. Tailpipe temperature determined by following the enthalpy line on a Mollier diagram to PRT pressure. At RCS <span class="val-normal">1900 psig</span> (1915 psia, hg ~1140 BTU/lb), throttling to PRT <span class="val-normal">35 psig</span> (50 psia) yields tailpipe temperature of approximately <span class="hi-exam">282°F</span>.
 </div>
@@ -158,7 +163,7 @@ During startup at 3% power, controlling PZR Pressure Channel I fails high — de
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[S2.OP-SO.PZR-0003 — PRT Operation]], [[S2.OP-SO.RC-0002 — Vacuum Refill of the RCS]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
+- Related exam questions: [[2016 Q11]], [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
 - Related JPMs: [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

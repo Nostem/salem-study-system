@@ -33,6 +33,11 @@ When P-6 is LIT, IR NIS channels should indicate approximately <span class="hi-e
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q13</div>
+1N35 IR channel fails high at 100% power. AB.NIS-0001 directs removal IAW S1.OP-SO.RPS-0001. When the PO places the <span class="hi-exam">1N35 LEVEL TRIP switch in BYPASS</span> in the rack area, <span class="hi-exam">OHA E-29 (SR &amp; IR TRIP BYP) annunciates</span> — this blocks the IR FLUX HI reactor trip and the IR HI FLUX ROD WDRWL STOP. <span class="hi-trap">Trap A (control power fuses) and trap D (POWER MISMATCH BYPASS) are PR-channel removal actions — IR channels do NOT use either. Trap B (instrument power fuses) is the next action AFTER the LEVEL TRIP bypass, not the cause of E-29.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q22</div>
 AB.NIS-0001 directs removal of a failed IR channel (e.g. N35 failed high) from service IAW <span class="hi-exam">S2.OP-SO.RPS-0001, Nuclear Instrumentation Channel Trip / Restoration</span>. For IR channels, SO.RPS-0001 places the <span class="hi-exam">LEVEL TRIP switch in bypass</span> (causing OHA E-29 to annunciate). <span class="hi-trap">Do not confuse with PR channel removal — PR channels use control power fuse removal and POWER MISMATCH BYPASS switch.</span>
 </div>
@@ -52,7 +57,7 @@ PR channel 2N41 fails high. AB.NIS-0001 actions completed (rod control to Manual
 - Related systems: [[RPS/SSPS]], [[Excore NIs]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
-- Related exam questions: [[2019 Q30]], [[2023 Q82]], [[2020 Q22]]
+- Related exam questions: [[2016 Q13]], [[2019 Q30]], [[2023 Q82]], [[2020 Q22]]
 - Related JPMs: [[2020 JPM Sim-f]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

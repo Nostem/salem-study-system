@@ -50,6 +50,11 @@ PZR Pressure Channel I fails high at 4% power (Event 2). RO places MPC in Manual
 2PR2 PORV leaks at 88% power (Event 1). Crew recognizes from elevated PORV tailpipe temperatures. Isolates by opening both block valves sequentially: 2PR6 tailpipe temps stable, 2PR7 tailpipe temps rising → <span class="hi-exam">close 2PR7 to isolate 2PR2</span>. CRS enters TSAS <span class="hi-exam">3.4.5 Action a (1 hour LCO)</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q11</div>
+With lowering PZR pressure, AB.PZR-0001 directs closing <span class="hi-exam">BOTH PZR PORV Stop valves</span> when attempting to determine if the PORVs are the source of the pressure reduction. Per drawing 203301, both PZR PORVs and Safeties discharge into a single line going to the PRT. The <span class="hi-exam">3 Safeties each have their own individual tailpipe temperature sensor, while the 2 PORVs share one sensor on a common discharge line</span> — so there is no way to distinguish which PORV is leaking from temperature alone. Closing both PORV Stops, then re-opening one (<span class="hi-exam">2PR8</span>), allows the leaking valve to be identified by tailpipe temperature response. <span class="hi-trap">Trap: Rx Head Vent leakage is NOT addressed in AB.PZR-0001 — head vent leaks are diagnosed as RCS leaks, not via the PORV/Safety discharge logic.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #1</div>
 PZR Pressure Channel I fails high during startup at ~6% power. Both spray valves fully open, PZR heaters de-energize. RO places MPC in manual, lowers demand to close spray valves. Selects <span class="hi-exam">Channel III</span> for control, returns MPC to Auto. Closes <span class="hi-exam">2PR6</span>, places 2PR1 in Manual. WCC removes control power from 2PR6. PO removes failed channel IAW <span class="hi-exam">S2.OP-SO.RPS-0003</span>. Tech Specs: 3.3.1.1 Action 6, 3.3.2.1.b Action 19, <span class="hi-exam">3.4.5 Action b (1 hr LCO)</span>, 3.2.5 DNB (2 hr LCO).
@@ -58,7 +63,7 @@ PZR Pressure Channel I fails high during startup at ~6% power. Both spray valves
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[RPS/SSPS]]
-- Related exam questions: [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
+- Related exam questions: [[2016 Q11]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
 - Related JPMs: [[2020 JPM Sim-a]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -55,6 +55,11 @@ SGTR event with stuck-open MSIV: crew responds to valid SG tube leak on 23 SG, i
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q14</div>
+Earliest control room indication of an SG tube leak at 100% power is the <span class="hi-exam">R53 Main Steamline N-16 monitor</span> (per Radiation Monitoring Lesson Plan NOS05RMS000-17). Order of indication speed: <span class="hi-exam">R53 (N-16, very sensitive) → R46 (Main Steamline high range, no low-level alarm) → R19 (SGBD, has flow lag) → R15 (Condenser Air Ejector, samples downstream of R53)</span>.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q15</div>
 Step 3.31: set the affected MS10 (MS PWR RELIEF Vlv) setpoint to <span class="hi-exam"><span class="val-alarm">1045 psig</span></span> by depressing button <span class="hi-exam">A</span> on the controller. <span class="hi-trap">Trap: button B raises the manual output to open the valve more — it does NOT change the controller setpoint. 1070 psig is the MS15 (MSSV) lift setpoint, not the AB.SG-0001 MS10 adjusted setpoint.</span>
 </div>
@@ -66,8 +71,8 @@ Step 3.7 — PZR level control during SG tube leak: <span class="hi-exam">reduce
 
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]]
-- Related exam questions: [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]], [[Radiation Monitoring]]
+- Related exam questions: [[2016 Q14]], [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]]
 - Related JPMs: [[2019 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]]

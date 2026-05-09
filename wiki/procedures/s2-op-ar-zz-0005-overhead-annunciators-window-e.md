@@ -25,6 +25,11 @@ During dropped rod recovery (AB.ROD-0002): after the P/A converter is reset to z
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q13</div>
+OHA E-29 (SR &amp; IR TRIP BYP) annunciation cause during 1N35 IR channel removal: caused by placing the <span class="hi-exam">LEVEL TRIP switch in BYPASS</span> per S1.OP-SO.RPS-0001. This is the expected first alarm during IR channel removal and confirms the IR FLUX HI reactor trip and IR HI FLUX ROD WDRWL STOP are blocked for that channel.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q22</div>
 OHA E-29 (SR & IR TRIP BYP): annunciates when <span class="hi-exam">the LEVEL TRIP switch has been placed in bypass</span> during IR channel removal from service per S2.OP-SO.RPS-0001. This alarm is expected and verified as part of the procedural steps for removing an IR channel.
 </div>
@@ -38,5 +43,5 @@ OHA E-20 (PZR HTR ON LVL HI): alarms when PZR level is <span class="hi-exam">5% 
 
 - Related systems: [[Control Rod Drive]], [[CVCS]], [[Excore NIs]], [[Pressurizer Level & Press Control]]
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[S2.OP-SO.CVC-0001 — CVCS Normal Operations]]
-- Related exam questions: [[2019 Q82]], [[2020 Q19]], [[2020 Q22]], [[2022 Q56]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2016 Q13]], [[2019 Q82]], [[2020 Q19]], [[2020 Q22]], [[2022 Q56]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

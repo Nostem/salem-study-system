@@ -224,6 +224,11 @@ Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass brea
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q12</div>
+ATWS scenario with RTB A already open (I&C testing) and RT Bypass Breaker A racked in and closed, RPS fails to provide any output signal: the DIRECT method to trip the reactor during TRIP-1 immediate actions is to <span class="hi-exam">turn either of the Reactor Trip pistol grip handles to TRIP — this de-energizes the UV coil for Reactor Trip Breaker B</span> (RTB A is already open). <span class="hi-trap">Trap A: depressing the OPEN PB for RTB B energizes the SHUNT coil, not the UV coil.</span> <span class="hi-trap">Trap C: the RT Bypass Breakers do NOT have an OPERATE function from the control console.</span> Trap B (open PZR heater bus supply breakers on 2CC3 to deenergize the RDMG sets) is plausible but the reactor would already be tripped by the pistol-grip path before reaching that step.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q38</div>
 When only RTB B opens (RTB A fails closed): the <span class="hi-exam">20-ET (Emergency Trip Fluid Solenoid)</span> trips the turbine by dumping EH fluid directly to the reservoir, closing all turbine steam valves. 20-AST and 20-2AST energize from RTB A — with RTB A failed closed, neither energizes. 2EH61 (Interface Valve) opens only when 20-AST or 20-2AST energizes. <span class="hi-trap">The auto turbine trip via SSPS comes from the reactor trip signal through the 20-ET solenoid on RTB B opening — NOT through the generator lockout relay or 2EH61.</span>
 </div>
@@ -288,6 +293,7 @@ RTBs fail to open on a valid RPS trip signal — operator opens the <span class=
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]]
 - Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
   - [[2016 Q3]] — RTBs fail to open / RDMG breakers manually opened from 1CC3 / manual turbine trip required
+  - [[2016 Q12]] — ATWS with RPS output failure / pistol grip de-energizes UV coil for RTB B (direct trip path)
   - [[2018 Q1]] — RCP shaft shear at 25% power: below P-8, single-loop low flow trip blocked
   - [[2018 Q10]] — PZR Pressure Channel fails low: 2/4 becomes 1/3 coincidence; PT-1648 is RSP only
   - [[2018 Q49]] — TRIP-1 immediate actions when RTBs fail: Trip Switches → Bezels → MG set breakers (E 6D, G 6D) → Turbine Trip

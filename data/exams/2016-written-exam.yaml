@@ -142,3 +142,73 @@
     ka_importance: 3.6
     type: RO
     tier_group: "Tier 1/Group 1"
+
+  - number: 11
+    topic: "Both PZR PORV Stop Valves closed when identifying PORV leak source"
+    answer: A
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - pressurizer
+    tech_specs: []
+    ka: "000027 K3.03"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 12
+    topic: "ATWS with RPS output failure / pistol grip de-energizes UV coil for RTB B"
+    answer: D
+    cognitive_level: "Application"
+    source: "Facility Exam Bank — Direct From Source"
+    systems:
+      - rps-ssps
+      - control-rod-drive
+    tech_specs: []
+    ka: "000029 K2.06"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 13
+    topic: "1N35 IR removal LEVEL TRIP bypass causes OHA E-29"
+    answer: C
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - excore-nis
+      - rps-ssps
+    tech_specs: []
+    ka: "000033 A1.02"
+    ka_importance: 3.0
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 14
+    topic: "SGTL FIRST indication / R53 Main Steamline N-16 monitor"
+    answer: D
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - radiation-monitoring
+      - steam-generators
+      - main-steam
+    tech_specs: []
+    ka: "000037 A1.06"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 1/Group 2"
+
+  - number: 15
+    topic: "EOP-SGTR-1 step 6 AFW flow to ruptured SG / 9% NR maintenance band"
+    answer: B
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - auxiliary-feedwater
+      - steam-generators
+    tech_specs: []
+    ka: "000038 A1.44"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 1"

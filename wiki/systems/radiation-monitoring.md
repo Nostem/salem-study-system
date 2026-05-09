@@ -52,6 +52,13 @@ R19 SGBD radiation monitor WARNING setpoint — unit difference confirmed: <span
 R19 SGBD radiation monitor WARNING setpoint: <span class="hi-exam">Unit 1 — NO automatic actuations (warning is early warning only). Unit 2 — automatically closes ALL GB10s, GB185s, and 2GB50.</span> <span class="hi-trap">Trap: R19 WARNING and ALARM actions differ. The ALARM setpoint on Unit 1 closes ALL GB4s, GB8s, GB10s, GB185s, and 1GB50. On Unit 2, ALARM isolates blowdown from the affected SGs by closing the associated GB4. Do not confuse warning vs alarm actions, and remember the unit difference at the warning level.</span>
 </div>
 
+### Main Steamline Monitors (R46, R53)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q14</div>
+First indication of a Steam Generator tube leak at 100% power: <span class="hi-exam">R53 Main Steamline N-16 monitors</span> — these are <span class="hi-exam">N-16 (nitrogen-16) monitors</span> on the Main Steamlines and are very sensitive, indicating prior to the others. <span class="hi-trap">Trap A: R15 Condenser Air Ejector samples the Main Condenser, so steam must travel past R53 first.</span> <span class="hi-trap">Trap B: R19 SG Blowdown provides indication only after blowdown flow lag time.</span> <span class="hi-trap">Trap C: R46 Main Steamline monitors are HIGH RANGE — while they can detect low levels of radiation, they would NOT provide an alarm to alert the crew at low SGTL levels.</span> Ranking by SGTL response time: <span class="hi-exam">R53 → R46 → R19 → R15</span>.
+</div>
+
 ### Liquid Effluent Radiation Monitor (R18)
 
 <div class="callout callout-exam">
@@ -156,7 +163,8 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
 
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
-- Related exams: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+  - [[2016 Q14]] — R53 Main Steamline N-16 monitor / FIRST indication of SGTL at 100% power
   - [[2019 Q8]] — 2R17A/B high alarm auto-closes 2CC149 (CCW Surge Tank Vent Valve)
   - [[2019 Q25]] — 2R41 Channel D reads in µCi/sec for release determination
   - [[2019 Q33]] — 2R32A fails high: only crane motion other than downward movement locked out / FHB vent does NOT shift
