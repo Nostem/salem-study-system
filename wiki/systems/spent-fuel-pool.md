@@ -30,6 +30,18 @@ The SFP is designed to prevent fuel from becoming uncovered due to loss of syste
 Per S2.OP-SO.SF-0001, the following water sources are allowed for <span class="hi-exam">ROUTINE makeup</span> to the Spent Fuel Pool: <span class="hi-exam">1) Demineralized Water System, 2) Primary Water Storage Tank, 3) CVCS Holdup Tanks, 4) Refueling Water Storage Tank</span>. <span class="hi-trap">The Fresh Water and Fire Protection Water Storage Tank is NOT an allowed ROUTINE makeup source.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q46</div>
+Confirms the preferred-order list in <span class="hi-exam">Prerequisite 2.3</span> of S2.OP-SO.SF-0001 — the <span class="hi-exam">RWST is LAST (least preferred)</span> in the makeup-water priority. Used when responding to OHA C-35 SFP LVL LO caused by normal evaporation.
+</div>
+
+## Spent Fuel Handling Crane Interlocks (Unit 2)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q47</div>
+Unit 2 Spent Fuel Handling Crane interlocks (per S2.OP-IO.ZZ-0010 and TR 3.9.7 / 4.9.7): <span class="hi-exam">overload cutout prevents lifting loads &gt;<span class="val-trip">2200 lbs</span></span> over the spent fuel pool. <span class="hi-trap">Unit difference: Unit 2 bridge over-travel proximity switches only transfer crane to SLOW (not stop) — Unit 1 stops crane movement</span>. Rad monitors <span class="hi-exam">2R5 (FHB-SFP) and 2R9 (FHB-New Fuel Storage Area) interlock FHB ventilation — NOT the crane</span>. 2R32A (Fuel Handling Crane) does NOT lockout all crane motion — downward movement remains available to lower the fuel bundle.
+</div>
+
 ## SFP Alarms and Level Setpoints
 
 <div class="callout callout-exam">
@@ -39,8 +51,8 @@ SFP Low Level alarm setpoint: <span class="hi-exam val-alarm">128 feet, 0 inches
 
 ## Connections
 
-- Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]]
+- Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]], [[Radiation Monitoring]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]]
-- Related exam questions: [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]]
-- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
+- Related exam questions: [[2016 Q46]], [[2016 Q47]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

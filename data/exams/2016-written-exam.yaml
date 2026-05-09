@@ -666,3 +666,77 @@
     ka_importance: 2.5
     type: RO
     tier_group: "Tier 2/Group 1"
+
+  - number: 46
+    topic: "SFP makeup water sources order — RWST is LEAST preferred per S2.OP-SO.SF-0001 Prereq 2.3"
+    answer: D
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Significantly Modified"
+    systems:
+      - spent-fuel-pool
+    tech_specs: []
+    ka: "033000 K1.05"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 47
+    topic: "Unit 2 Spent Fuel Handling Crane — overload cutout >2200 lbs (TR 3.9.7)"
+    answer: A
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - spent-fuel-pool
+    tech_specs: []
+    ka: "034000 A3.02"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 48
+    topic: "SG NR program ramp on startup — 38.5% NR at 10% TP / 44% NR at 60% TP (Unit 2 ADFCS)"
+    answer: B
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Significantly Modified"
+    systems:
+      - steam-generators
+      - feedwater-and-condensate
+    tech_specs: []
+    ka: "035000 A1.01"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 49
+    topic: "Steam leak at 1×10⁻⁸ A — Rx power rises and stabilizes after reaching POAH"
+    answer: A
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - main-steam
+      - steam-generators
+      - excore-nis
+    tech_specs: []
+    ka: "039000 K5.08"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 50
+    topic: "MT trip at 46% power (below P-9) — no Rx trip, Tave stabilizes ~552°F via Load Reject controller"
+    answer: B
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Concept Used"
+    systems:
+      - steam-dumps
+      - turbine-generator
+      - main-steam
+    tech_specs: []
+    ka: "045000 K3.01"
+    ka_importance: 2.8
+    type: RO
+    tier_group: "Tier 2/Group 1"

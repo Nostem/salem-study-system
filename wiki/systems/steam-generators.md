@@ -103,6 +103,11 @@ SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG<
 Natural circulation monitoring (EOP-SGTR-1 step 38.1): RCS T-Cold in unaffected loops should be approximately <span class="hi-exam"><span class="val-normal">548°F</span> (saturation at MS10 setpoint <span class="val-normal">1015 psig</span> / 1030 psia)</span>. Affected SG MS10 set to <span class="val-normal">1045 psig</span> (1060 psia) → Tsat ~<span class="val-normal">552°F</span>. <span class="hi-exam">With LOOP, steam dumps unavailable — use atmospheric relief valves (MS10s) on intact SGs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q48</div>
+SG NR level startup program (ADFCS): the SG NR level setpoint is programmed against <span class="hi-exam">Turbine Steamline Inlet Pressure</span> (i.e. Turbine power), ramping from <span class="val-normal">33% NR at 0% TP</span> to <span class="val-normal">44% NR at 20% TP</span>, then held flat at <span class="val-normal">44% NR</span> from 20-100% TP on Unit 2. At 10% TP the program is <span class="hi-exam">38.5% NR</span>; at 60% TP it is <span class="hi-exam">44% NR</span>. <span class="hi-trap">Unit 1 only: ramp continues 44→48% NR from 20-100% TP. Do not apply Unit 1 ramp to Unit 2.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators (tube integrity, inspection requirements)
@@ -161,7 +166,7 @@ SG shrink/swell on RCP shaft shear: when 13 RCP shaft shears at 25% power, <span
 EOP-LOCA-1 explicitly checks for a <span class="hi-exam">steam break / Loss of Secondary Coolant</span> as the OTHER reason (besides a LOCA) for being in LOCA-1 — because <span class="hi-exam">if a faulted SG is the actual cause of ECCS injection, the event can be terminated by isolating the faulted SG</span>. The "Check for Subsequent Failure" Major Action verifies the entry condition; LOCA-1's "do loop" then waits until the SG is blown down and isolated. SGTR is NOT the answer because LOCA-1 has no transition from SGTR-1, and primary-to-secondary leakage termination is not performed in LOCA-1.
 </div>
 
-- Related exam questions: [[2016 Q4]], [[2016 Q25]], [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
+- Related exam questions: [[2016 Q4]], [[2016 Q25]], [[2016 Q48]], [[2016 Q49]], [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

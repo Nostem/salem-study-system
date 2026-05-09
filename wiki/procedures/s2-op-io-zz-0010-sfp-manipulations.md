@@ -20,8 +20,13 @@ Provides requirements and directions for fuel handling operations, including sup
 If BLDG AIR D/P LO alarm is invalid and will not clear, <span class="hi-exam">the local indicator may be used to continuously monitor FHB D/P</span> — fuel moves may resume with continuous local monitoring. <span class="hi-trap">Fuel moves are NOT prohibited when the console alarm is inoperable, as long as compensatory monitoring is in place.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q47</div>
+Unit 2 Spent Fuel Handling Crane interlock — per Technical Requirements Manual <span class="hi-exam">TR 3.9.7 (tested IAW TR 4.9.7)</span>, the <span class="hi-exam">overload cutout prevents lifting loads &gt;2200 lbs</span> (so heavy loads cannot be moved over spent fuel). Unit-specific differences: <span class="hi-trap">Unit 2 bridge over-travel proximity switches only TRANSFER the crane to slow speed — movement continues if the direction PB is held; on Unit 1 they STOP movement.</span> Rad monitors <span class="hi-exam">2R5 (FHB-SFP) and 2R9 (FHB-New Fuel Storage Area) are NOT interlocked with the crane — they are interlocked with FHB ventilation</span>. A high signal on 2R32A does NOT lockout all crane motion (downward movement remains available to lower a fuel bundle).
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2023 Q95]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2016 Q47]], [[2023 Q95]]
+- Related exam: [[2016 NRC Written Exam]], [[2023 NRC Written Exam]]
