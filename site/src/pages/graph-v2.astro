@@ -1,0 +1,573 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { generateGraphV2Data } from '../utils/graph-v2-data';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
+
+const graph = await generateGraphV2Data();
+
+// Render every question, topic, and source plus the top wiki articles by
+// connection count. This keeps the preview searchable for any structured
+// entity (e.g. 2023 Q23) while bounding DOM size for the long tail of
+// low-degree wiki nodes.
+const TOP_ARTICLES = 200;
+const articleNodes = graph.nodes
+  .filter((n) => n.kind === 'article')
+  .sort((a, b) => b.connections - a.connections)
+  .slice(0, TOP_ARTICLES);
+const otherNodes = graph.nodes.filter((n) => n.kind !== 'article');
+const renderedNodes = [...articleNodes, ...otherNodes].sort(
+  (a, b) => b.connections - a.connections,
+);
+
+// Pull out quick lookups for filtering and detail panels.
+const nodeById = new Map(graph.nodes.map((n) => [n.id, n]));
+const edgesBySource = new Map<string, typeof graph.edges>();
+const edgesByTarget = new Map<string, typeof graph.edges>();
+const edgeTypesByNode = new Map<string, Set<string>>();
+const neighborsByNode = new Map<string, Set<string>>();
+for (const e of graph.edges) {
+  if (!edgesBySource.has(e.source)) edgesBySource.set(e.source, []);
+  if (!edgesByTarget.has(e.target)) edgesByTarget.set(e.target, []);
+  edgesBySource.get(e.source)!.push(e);
+  edgesByTarget.get(e.target)!.push(e);
+  if (!edgeTypesByNode.has(e.source)) edgeTypesByNode.set(e.source, new Set());
+  if (!edgeTypesByNode.has(e.target)) edgeTypesByNode.set(e.target, new Set());
+  edgeTypesByNode.get(e.source)!.add(e.type);
+  edgeTypesByNode.get(e.target)!.add(e.type);
+  if (!neighborsByNode.has(e.source)) neighborsByNode.set(e.source, new Set());
+  if (!neighborsByNode.has(e.target)) neighborsByNode.set(e.target, new Set());
+  neighborsByNode.get(e.source)!.add(e.target);
+  neighborsByNode.get(e.target)!.add(e.source);
+}
+
+const kindOrder: Array<keyof typeof graph.counts.nodesByKind> = [
+  'article',
+  'question',
+  'topic',
+  'source',
+];
+const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
+  'wikilink',
+  'tests',
+  'topic-wiki',
+  'quiz-source',
+  'sourced-from',
+];
+
+const edgeTypeLabels: Record<string, string> = {
+  wikilink: 'Wiki link',
+  tests: 'Question tests topic',
+  'topic-wiki': 'Topic wiki page',
+  'quiz-source': 'Question source article',
+  'sourced-from': 'Source reference',
+};
+
+function articleHref(slug: string): string {
+  return `${base}${slug.replace(/^\//, '')}/`;
+}
+
+function nodeHref(node: (typeof graph.nodes)[number]): string | undefined {
+  if (node.kind === 'article') return articleHref(node.slug);
+  if (node.kind === 'question') {
+    const sourceEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'quiz-source');
+    const source = sourceEdge ? nodeById.get(sourceEdge.target) : undefined;
+    return source?.kind === 'article' ? articleHref(source.slug) : undefined;
+  }
+  if (node.kind === 'topic') {
+    const topicArticleEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'topic-wiki');
+    const article = topicArticleEdge ? nodeById.get(topicArticleEdge.target) : undefined;
+    return article?.kind === 'article' ? articleHref(article.slug) : undefined;
+  }
+  return undefined;
+}
+
+function eligibleQuestionsFor(node: (typeof graph.nodes)[number]): Array<(typeof graph.nodes)[number]> {
+  if (node.kind === 'question') {
+    return node.meta?.quizEligible === true ? [node] : [];
+  }
+  return relatedQuestionsFor(node.id).filter((q) => q.meta?.quizEligible === true);
+}
+
+function practiceHref(node: (typeof graph.nodes)[number]): string | undefined {
+  const eligibleQuestions = eligibleQuestionsFor(node);
+  if (eligibleQuestions.length === 0) return undefined;
+  if (node.kind === 'topic') {
+    return `${base}quiz-v2/play/?topics=${encodeURIComponent(node.slug)}&count=10`;
+  }
+  const slugs = eligibleQuestions
+    .slice(0, 50)
+    .map((q) => q.slug)
+    .filter(Boolean)
+    .join(',');
+  if (!slugs) return undefined;
+  const count = Math.min(10, eligibleQuestions.length);
+  return `${base}quiz-v2/play/?slugs=${encodeURIComponent(slugs)}&count=${count}`;
+}
+
+function edgeSummaryFor(nodeId: string): Array<{ type: string; label: string; count: number }> {
+  const counts = new Map<string, number>();
+  for (const edge of [...(edgesBySource.get(nodeId) ?? []), ...(edgesByTarget.get(nodeId) ?? [])]) {
+    counts.set(edge.type, (counts.get(edge.type) ?? 0) + 1);
+  }
+  return edgeOrder
+    .map((type) => ({ type, label: edgeTypeLabels[type], count: counts.get(type) ?? 0 }))
+    .filter((entry) => entry.count > 0);
+}
+
+function relatedQuestionsFor(nodeId: string): Array<(typeof graph.nodes)[number]> {
+  const questionIds = new Set<string>();
+  for (const edge of [...(edgesBySource.get(nodeId) ?? []), ...(edgesByTarget.get(nodeId) ?? [])]) {
+    const source = nodeById.get(edge.source);
+    const target = nodeById.get(edge.target);
+    if (source?.kind === 'question') questionIds.add(source.id);
+    if (target?.kind === 'question') questionIds.add(target.id);
+  }
+  return [...questionIds]
+    .map((id) => nodeById.get(id))
+    .filter((node): node is (typeof graph.nodes)[number] => !!node && node.id !== nodeId)
+    .sort((a, b) => {
+      const ay = Number(a.meta?.examYear ?? 0);
+      const by = Number(b.meta?.examYear ?? 0);
+      const aq = Number(a.meta?.questionNumber ?? 0);
+      const bq = Number(b.meta?.questionNumber ?? 0);
+      return by - ay || aq - bq || a.title.localeCompare(b.title);
+    });
+}
+
+function metaEntriesFor(node: (typeof graph.nodes)[number]): Array<{ label: string; value: string }> {
+  if (node.kind !== 'question') return [];
+  const meta = node.meta ?? {};
+  const entries: Array<{ label: string; value: unknown }> = [
+    { label: 'Exam', value: `${meta.examYear ?? '—'} ${meta.examType ?? ''}`.trim() },
+    { label: 'Question', value: meta.questionNumber },
+    { label: 'Track', value: meta.track },
+    { label: 'Status', value: meta.status },
+    { label: 'Quiz eligible', value: meta.quizEligible === true ? 'yes' : 'no' },
+    { label: 'Reference required', value: meta.requiresReference === true ? 'yes' : 'no' },
+    { label: 'Accepted answer', value: Array.isArray(meta.acceptedAnswerLabels) ? meta.acceptedAnswerLabels.join(', ') : undefined },
+    { label: 'K/A', value: meta.kaCode },
+    { label: 'K/A importance', value: meta.kaImportance },
+    { label: 'Cognitive level', value: meta.cognitiveLevel },
+    { label: 'Tier/group', value: meta.tierGroup },
+    { label: 'Source', value: meta.questionSource },
+    { label: 'Audit', value: meta.auditStatus },
+    { label: 'Non-quiz reason', value: meta.nonQuizReason },
+  ];
+  return entries
+    .filter((entry) => entry.value !== undefined && entry.value !== null && String(entry.value).trim() !== '')
+    .map((entry) => ({ label: entry.label, value: String(entry.value) }));
+}
+
+function graphEdgeRowsFor(nodeId: string, direction: 'outgoing' | 'incoming'): Array<{ type: string; nodeId: string; title: string }> {
+  const edges = direction === 'outgoing' ? (edgesBySource.get(nodeId) ?? []) : (edgesByTarget.get(nodeId) ?? []);
+  return edges.slice(0, 60).map((e) => {
+    const relatedNodeId = direction === 'outgoing' ? e.target : e.source;
+    const relatedNode = nodeById.get(relatedNodeId);
+    return {
+      type: e.type,
+      nodeId: relatedNodeId,
+      title: relatedNode?.title ?? relatedNodeId,
+    };
+  });
+}
+
+const detailData = Object.fromEntries(renderedNodes.map((n) => {
+  const eligibleQuestions = eligibleQuestionsFor(n);
+  return [n.id, {
+    id: n.id,
+    kind: n.kind,
+    subcategory: n.subcategory,
+    connections: n.connections,
+    title: n.title,
+    slug: n.slug,
+    openHref: nodeHref(n),
+    quizHref: practiceHref(n),
+    eligibleQuestionCount: eligibleQuestions.length,
+    edgeSummary: edgeSummaryFor(n.id),
+    metaEntries: metaEntriesFor(n),
+    relatedQuestions: relatedQuestionsFor(n.id).slice(0, 12).map((q) => ({
+      id: q.id,
+      title: q.title,
+      kind: q.kind,
+      examYear: q.meta?.examYear,
+      questionNumber: q.meta?.questionNumber,
+    })),
+    relatedQuestionCount: relatedQuestionsFor(n.id).length,
+    outgoing: graphEdgeRowsFor(n.id, 'outgoing'),
+    incoming: graphEdgeRowsFor(n.id, 'incoming'),
+  }];
+}));
+
+---
+
+<BaseLayout title="Graph v2 (Experimental)" noindex={true}>
+  <main class="max-w-[1180px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
+    <header class="border-b border-border pb-5 mb-5">
+      <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
+      <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">
+            Experimental · structured graph v2
+          </div>
+          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Graph v2 Preview</h1>
+          <p class="text-sm text-text-muted max-w-2xl mt-1">
+            Combined view of wiki articles, structured questions, topics, and source refs.
+            Read-only preview beside production
+            <a href={`${base}graph/`} class="underline hover:text-accent-blue">/graph/</a>,
+            which renders only wiki↔wiki wikilinks.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-2 text-center min-w-[220px]">
+          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+            <div data-testid="gv2-node-count" class="font-mono text-lg text-text-primary">{graph.counts.totalNodes}</div>
+            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Nodes</div>
+          </div>
+          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+            <div data-testid="gv2-edge-count" class="font-mono text-lg text-text-primary">{graph.counts.totalEdges}</div>
+            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Edges</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+      <div class="bg-bg-card border border-border rounded-lg p-4">
+        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Nodes by kind</h2>
+        <ul data-testid="gv2-node-counts" class="text-sm text-text-body font-mono">
+          {kindOrder.map((k) => (
+            <li class="flex justify-between">
+              <span data-kind={k}>{k}</span>
+              <span data-testid={`gv2-node-count-${k}`}>{graph.counts.nodesByKind[k]}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div class="bg-bg-card border border-border rounded-lg p-4">
+        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Edges by type</h2>
+        <ul data-testid="gv2-edge-counts" class="text-sm text-text-body font-mono">
+          {edgeOrder.map((t) => (
+            <li class="flex justify-between">
+              <span data-edge-type={t}>{t}</span>
+              <span data-testid={`gv2-edge-count-${t}`}>{graph.counts.edgesByType[t]}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
+      <aside class="bg-bg-card border border-border rounded-lg p-4 h-fit lg:sticky lg:top-4">
+        <div class="flex flex-col gap-3">
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Search</span>
+            <input
+              id="gv2-search"
+              data-testid="gv2-search"
+              type="search"
+              placeholder="Title, slug, or id…"
+              class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
+            />
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Kind</span>
+            <select
+              id="gv2-kind"
+              data-testid="gv2-kind"
+              class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
+            >
+              <option value="all">All kinds</option>
+              {kindOrder.map((k) => <option value={k}>{k}</option>)}
+            </select>
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Edge type</span>
+            <select
+              id="gv2-edge-type"
+              data-testid="gv2-edge-type"
+              class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
+            >
+              <option value="all">All edge types</option>
+              {edgeOrder.map((t) => <option value={t}>{t}</option>)}
+            </select>
+          </label>
+          <label class="flex items-start gap-2 rounded border border-border bg-bg/60 px-2 py-2 text-xs text-text-muted">
+            <input
+              id="gv2-focus-neighborhood"
+              data-testid="gv2-focus-neighborhood"
+              type="checkbox"
+              class="mt-0.5"
+            />
+            <span>
+              <span class="block font-mono text-[10px] uppercase tracking-wider text-text-primary">Focus neighborhood</span>
+              Show only the selected node plus direct neighbors.
+            </span>
+          </label>
+        </div>
+        <div class="mt-3 text-[11px] font-mono text-text-muted">
+          showing top <span data-testid="gv2-visible-count">{renderedNodes.length}</span>
+          of {graph.counts.totalNodes} (sorted by connections)
+        </div>
+        <ul
+          id="gv2-list"
+          data-testid="gv2-list"
+          class="mt-3 max-h-[60vh] lg:max-h-[70vh] overflow-y-auto divide-y divide-border border border-border rounded"
+        >
+          {renderedNodes.map((n) => (
+            <li
+              class="gv2-item"
+              data-id={n.id}
+              data-kind={n.kind}
+              data-edge-types={Array.from(edgeTypesByNode.get(n.id) ?? []).join(' ')}
+              data-neighbors={Array.from(neighborsByNode.get(n.id) ?? []).join(' ')}
+              data-search={`${n.title} ${n.slug} ${n.id} ${Object.values(n.meta ?? {}).join(' ')}`.toLowerCase()}
+            >
+              <button
+                type="button"
+                data-gv2-select={n.id}
+                class="w-full text-left px-3 py-2 hover:bg-bg focus:bg-bg focus:outline-none"
+              >
+                <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">
+                  {n.kind}{n.subcategory ? ` · ${n.subcategory}` : ''} · {n.connections} conn
+                </div>
+                <div class="text-sm text-text-primary leading-snug">{n.title}</div>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
+        <div id="gv2-empty" data-testid="gv2-empty" class="text-sm text-text-muted">
+          Select a node on the left to view its connections.
+        </div>
+        <div id="gv2-detail-root"></div>
+      </article>
+    </section>
+  </main>
+</BaseLayout>
+
+<script id="gv2-detail-data" type="application/json" set:html={JSON.stringify(detailData)}></script>
+
+<script>
+  let selectedNodeId: string | null = null;
+
+  type DetailEdge = { type: string; nodeId: string; title: string };
+  type DetailQuestion = { id: string; title: string; kind: string; examYear?: unknown; questionNumber?: unknown };
+  type DetailData = {
+    id: string;
+    kind: string;
+    subcategory?: string;
+    connections: number;
+    title: string;
+    slug: string;
+    openHref?: string;
+    quizHref?: string;
+    eligibleQuestionCount: number;
+    edgeSummary: Array<{ label: string; count: number }>;
+    metaEntries: Array<{ label: string; value: string }>;
+    relatedQuestions: DetailQuestion[];
+    relatedQuestionCount: number;
+    outgoing: DetailEdge[];
+    incoming: DetailEdge[];
+  };
+
+  const detailData = JSON.parse(
+    document.getElementById('gv2-detail-data')?.textContent ?? '{}',
+  ) as Record<string, DetailData>;
+
+  function escapeHtml(value: unknown): string {
+    return String(value ?? '')
+      .replaceAll('&', '&amp;')
+      .replaceAll('<', '&lt;')
+      .replaceAll('>', '&gt;')
+      .replaceAll('"', '&quot;')
+      .replaceAll("'", '&#39;');
+  }
+
+  function renderEdgeList(id: string, testPrefix: string, rows: DetailEdge[], emptyText: string): string {
+    if (rows.length === 0) return `<p class="text-sm text-text-muted">${emptyText}</p>`;
+    return `
+      <ul class="space-y-1 text-sm font-mono" data-testid="${testPrefix}-${escapeHtml(id)}">
+        ${rows.map((row) => `
+          <li class="flex gap-3">
+            <span class="inline-block min-w-[110px] text-text-muted">[${escapeHtml(row.type)}]</span>
+            <button type="button" data-gv2-select="${escapeHtml(row.nodeId)}" class="text-left text-text-primary underline decoration-border hover:text-accent-blue">
+              ${escapeHtml(row.title)}
+              <span class="block text-[10px] text-text-muted">${escapeHtml(row.nodeId)}</span>
+            </button>
+          </li>
+        `).join('')}
+      </ul>
+    `;
+  }
+
+  function renderDetail(detail: DetailData): string {
+    const subcategory = detail.subcategory ? ` · ${escapeHtml(detail.subcategory)}` : '';
+    const edgeSummary = detail.edgeSummary.length === 0
+      ? '<span class="text-sm text-text-muted">No semantic edges yet.</span>'
+      : detail.edgeSummary.map((entry) => `
+          <span class="rounded-full border border-border bg-bg-card px-2 py-1 text-[11px] font-mono text-text-body">
+            ${escapeHtml(entry.label)}: ${escapeHtml(entry.count)}
+          </span>
+        `).join('');
+    const meta = detail.metaEntries.length === 0 ? '' : `
+      <section class="rounded border border-border bg-bg/50 p-3">
+        <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Question facts</h3>
+        <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm" data-testid="gv2-meta-${escapeHtml(detail.id)}">
+          ${detail.metaEntries.map((entry) => `
+            <div>
+              <dt class="font-mono text-[10px] uppercase tracking-wider text-text-muted">${escapeHtml(entry.label)}</dt>
+              <dd class="text-text-primary">${escapeHtml(entry.value)}</dd>
+            </div>
+          `).join('')}
+        </dl>
+      </section>
+    `;
+    const openAction = detail.openHref
+      ? `<a href="${escapeHtml(detail.openHref)}" class="rounded border border-border px-3 py-2 text-text-primary no-underline hover:border-accent-blue hover:text-accent-blue">Open source/wiki page</a>`
+      : '<span class="rounded border border-border px-3 py-2 text-text-muted">No local page link</span>';
+    const quizAction = detail.quizHref ? `
+      <a href="${escapeHtml(detail.quizHref)}" class="rounded border border-accent-blue/60 px-3 py-2 text-accent-blue no-underline hover:bg-accent-blue/10">
+        Generate quiz from this node
+        <span class="block text-[11px] text-text-muted">${escapeHtml(detail.eligibleQuestionCount)} eligible question${detail.eligibleQuestionCount === 1 ? '' : 's'} in pool</span>
+      </a>
+    ` : '';
+    const related = detail.relatedQuestions.length === 0 ? '' : `
+      <section class="mb-5 rounded border border-border bg-bg/50 p-3">
+        <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Related questions</h3>
+        <ul class="grid gap-2 sm:grid-cols-2 text-sm" data-testid="gv2-related-questions-${escapeHtml(detail.id)}">
+          ${detail.relatedQuestions.map((q) => `
+            <li>
+              <button type="button" data-gv2-select="${escapeHtml(q.id)}" class="w-full rounded border border-border bg-bg-card px-3 py-2 text-left hover:border-accent-blue">
+                <span class="block font-mono text-[10px] uppercase tracking-wider text-text-muted">
+                  ${q.examYear ? `${escapeHtml(q.examYear)} Q${escapeHtml(q.questionNumber ?? '')}` : escapeHtml(q.kind)}
+                </span>
+                <span class="block text-text-primary leading-snug">${escapeHtml(q.title)}</span>
+              </button>
+            </li>
+          `).join('')}
+        </ul>
+        ${detail.relatedQuestionCount > 12 ? `<p class="mt-2 text-[11px] font-mono text-text-muted">Showing 12 of ${escapeHtml(detail.relatedQuestionCount)} related questions.</p>` : ''}
+      </section>
+    `;
+
+    return `
+      <section class="gv2-detail" data-gv2-detail="${escapeHtml(detail.id)}" data-testid="gv2-detail-${escapeHtml(detail.id)}">
+        <header class="border-b border-border pb-3 mb-4">
+          <div class="font-mono text-[10px] uppercase tracking-wider text-accent-blue">
+            ${escapeHtml(detail.kind)}${subcategory} · ${escapeHtml(detail.connections)} connections
+          </div>
+          <h2 class="font-serif text-2xl text-text-primary leading-tight mt-1">${escapeHtml(detail.title)}</h2>
+          <div class="text-[11px] font-mono text-text-muted mt-1">
+            id: <code>${escapeHtml(detail.id)}</code> · slug: <code>${escapeHtml(detail.slug)}</code>
+          </div>
+        </header>
+        <div class="mb-5 grid gap-4 xl:grid-cols-[1fr_240px]">
+          <div class="space-y-4">
+            <section class="rounded border border-border bg-bg/50 p-3">
+              <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Connection summary</h3>
+              <div class="flex flex-wrap gap-2" data-testid="gv2-summary-${escapeHtml(detail.id)}">${edgeSummary}</div>
+            </section>
+            ${meta}
+          </div>
+          <section class="rounded border border-border bg-bg/50 p-3 h-fit">
+            <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Study actions</h3>
+            <div class="flex flex-col gap-2 text-sm" data-testid="gv2-actions-${escapeHtml(detail.id)}">
+              ${openAction}
+              ${quizAction}
+            </div>
+          </section>
+        </div>
+        ${related}
+        <div class="grid gap-5 lg:grid-cols-2">
+          <section>
+            <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Outgoing edges</h3>
+            ${renderEdgeList(detail.id, 'gv2-edges', detail.outgoing, 'No outgoing edges from this node.')}
+          </section>
+          <section>
+            <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Incoming edges</h3>
+            ${renderEdgeList(detail.id, 'gv2-incoming', detail.incoming, 'No incoming edges to this node.')}
+          </section>
+        </div>
+      </section>
+    `;
+  }
+
+  function selectNode(id: string): void {
+    const url = new URL(window.location.href);
+    url.searchParams.set('id', id);
+    window.history.replaceState(null, '', url.toString());
+    showNode(id);
+    applyFilters();
+  }
+
+  function showNode(id: string | null): void {
+    selectedNodeId = id;
+    const empty = document.getElementById('gv2-empty');
+    const root = document.getElementById('gv2-detail-root');
+    const detail = id ? detailData[id] : undefined;
+    if (root) root.innerHTML = detail ? renderDetail(detail) : '';
+    if (empty) empty.classList.toggle('hidden', !!detail);
+    document.querySelectorAll<HTMLButtonElement>('[data-gv2-select]').forEach((btn) => {
+      btn.classList.toggle('is-active', btn.getAttribute('data-gv2-select') === id);
+    });
+  }
+
+  function applyFilters(): void {
+    const search = (document.getElementById('gv2-search') as HTMLInputElement | null)?.value.trim().toLowerCase() ?? '';
+    const kind = (document.getElementById('gv2-kind') as HTMLSelectElement | null)?.value ?? 'all';
+    const edgeType = (document.getElementById('gv2-edge-type') as HTMLSelectElement | null)?.value ?? 'all';
+    const focusNeighborhood = (document.getElementById('gv2-focus-neighborhood') as HTMLInputElement | null)?.checked ?? false;
+    const items = document.querySelectorAll<HTMLLIElement>('.gv2-item');
+    let visible = 0;
+    items.forEach((li) => {
+      const id = li.getAttribute('data-id') ?? '';
+      const text = li.getAttribute('data-search') ?? '';
+      const k = li.getAttribute('data-kind') ?? '';
+      const edgeTypes = (li.getAttribute('data-edge-types') ?? '').split(' ').filter(Boolean);
+      const neighbors = (li.getAttribute('data-neighbors') ?? '').split(' ').filter(Boolean);
+      const matchesSearch = !search || text.includes(search);
+      const matchesKind = kind === 'all' || k === kind;
+      const matchesEdgeType = edgeType === 'all' || edgeTypes.includes(edgeType);
+      const matchesFocus = !focusNeighborhood || !selectedNodeId || id === selectedNodeId || neighbors.includes(selectedNodeId);
+      const show = matchesSearch && matchesKind && matchesEdgeType && matchesFocus;
+      li.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    const counter = document.querySelector('[data-testid="gv2-visible-count"]');
+    if (counter) counter.textContent = String(visible);
+  }
+
+  function init(): void {
+    document.addEventListener('click', (event) => {
+      const target = event.target instanceof Element ? event.target.closest<HTMLButtonElement>('[data-gv2-select]') : null;
+      const id = target?.getAttribute('data-gv2-select');
+      if (!id) return;
+      selectNode(id);
+    });
+    document.getElementById('gv2-search')?.addEventListener('input', applyFilters);
+    document.getElementById('gv2-kind')?.addEventListener('change', applyFilters);
+    document.getElementById('gv2-edge-type')?.addEventListener('change', applyFilters);
+    document.getElementById('gv2-focus-neighborhood')?.addEventListener('change', applyFilters);
+
+    const urlId = new URLSearchParams(window.location.search).get('id');
+    if (urlId) showNode(urlId);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
+
+<style>
+  button[data-gv2-select].is-active {
+    background: var(--color-bg, transparent);
+    border-left: 3px solid var(--color-accent-blue, #4aa);
+  }
+  .gv2-item.hidden { display: none; }
+</style>

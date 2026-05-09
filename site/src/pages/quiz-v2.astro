@@ -1,0 +1,509 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import QuestionBlockRenderer from '../components/QuestionBlockRenderer.astro';
+import {
+  getStructuredExamYears,
+  getStructuredQuestions,
+  questionDisplayLabel,
+  structuredQuizBank,
+} from '../utils/structured-quiz-data';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
+
+const questions = getStructuredQuestions();
+const examYears = getStructuredExamYears();
+const totalQuestions = structuredQuizBank.questions.length;
+
+const sessionMeta = questions.map((q) => ({
+  slug: q.slug,
+  examYear: q.examYear,
+  track: q.track ?? '',
+  status: q.status,
+  quizEligible: q.quizEligible,
+  requiresReference: q.requiresReference,
+  title: q.title,
+  topics: q.topics,
+}));
+---
+
+<BaseLayout title="Quiz v2 (Experimental)" noindex={true}>
+  <main class="max-w-[1180px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
+    <header class="border-b border-border pb-5 mb-5">
+      <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
+      <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · structured bank v2</div>
+          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Preview</h1>
+          <p class="text-sm text-text-muted max-w-2xl mt-1">
+            Read-only browser for the structured question bank (<code>quiz-bank-v2.json</code>).
+            Renders structured stem/choice/explanation blocks beside production. Production
+            <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a> is unaffected.
+          </p>
+        </div>
+        <div class="flex flex-col gap-3 min-w-[180px]">
+          <div class="grid grid-cols-2 gap-2 text-center">
+            <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+              <div data-testid="qv2-bank-count" class="font-mono text-lg text-text-primary">{totalQuestions}</div>
+              <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Questions</div>
+            </div>
+            <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+              <div class="font-mono text-lg text-text-primary">{examYears.length}</div>
+              <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Years</div>
+            </div>
+          </div>
+          <div class="flex flex-wrap gap-2 sm:justify-end">
+            <a
+              href={`${base}quiz-v2/play/`}
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
+            >Play</a>
+            <a
+              href={`${base}quiz-v2/review/`}
+              data-testid="qv2-review-link"
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue no-underline hover:bg-bg"
+            >Review</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      id="qv2-session-panel"
+      data-testid="qv2-session-panel"
+      class="hidden mb-5 bg-bg-card border border-border rounded-lg p-4"
+    >
+      <header class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue">Session preview · deterministic</div>
+          <h2 class="font-serif text-xl text-text-primary leading-tight mt-1">Generated quiz order</h2>
+        </div>
+        <a
+          id="qv2-session-close"
+          href={`${base}quiz-v2/`}
+          class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue"
+        >&times; close preview</a>
+      </header>
+      <dl class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 text-[12px] font-mono mb-3">
+        <dt class="text-text-muted">Session ID</dt>
+        <dd class="text-text-primary col-span-3" data-testid="qv2-session-id">—</dd>
+        <dt class="text-text-muted">Seed</dt>
+        <dd class="text-text-primary" data-testid="qv2-session-seed">—</dd>
+        <dt class="text-text-muted">Selected</dt>
+        <dd class="text-text-primary"><span data-testid="qv2-session-count">0</span> / <span data-testid="qv2-session-total">0</span></dd>
+      </dl>
+      <ol id="qv2-session-list" data-testid="qv2-session-list" class="text-sm text-text-body list-decimal list-inside space-y-1 max-h-[40vh] overflow-y-auto"></ol>
+      <div class="mt-4 flex flex-wrap items-center gap-3">
+        <a
+          id="qv2-session-play-link"
+          data-testid="qv2-session-play-link"
+          href={`${base}quiz-v2/play/`}
+          class="inline-flex items-center justify-center rounded border border-accent-blue px-3 py-2 font-mono text-[11px] uppercase tracking-wider text-accent-blue no-underline hover:bg-bg"
+        >Open in play mode</a>
+        <p class="text-[11px] font-mono text-text-muted">
+          Local-only route. No persistence, no Supabase writes.
+        </p>
+      </div>
+      <p class="text-[11px] font-mono text-text-muted mt-3">
+        Read-only preview. Filters: <code data-testid="qv2-session-filters">{}</code>.
+        See <code>docs/quiz-v2-session-builder.md</code>.
+      </p>
+    </section>
+
+    <script type="application/json" id="qv2-session-meta" set:html={JSON.stringify(sessionMeta)} />
+
+    <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
+      <aside class="bg-bg-card border border-border rounded-lg p-4 h-fit lg:sticky lg:top-4">
+        <div class="flex flex-col gap-3">
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Search</span>
+            <input
+              id="qv2-search"
+              data-testid="qv2-search"
+              type="search"
+              placeholder="Title or slug…"
+              class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
+            />
+          </label>
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Year</span>
+            <select id="qv2-year" data-testid="qv2-year" class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary">
+              <option value="all">All years</option>
+              {examYears.map((y) => <option value={y}>{y}</option>)}
+            </select>
+          </label>
+        </div>
+        <div class="mt-3 text-[11px] font-mono text-text-muted">
+          <span data-testid="qv2-visible-count">{questions.length}</span> shown
+        </div>
+        <ul
+          id="qv2-list"
+          data-testid="qv2-list"
+          class="mt-3 max-h-[60vh] lg:max-h-[70vh] overflow-y-auto divide-y divide-border border border-border rounded"
+        >
+          {questions.map((q) => (
+            <li
+              class="qv2-item"
+              data-slug={q.slug}
+              data-year={q.examYear}
+              data-search={`${q.title} ${q.slug}`.toLowerCase()}
+            >
+              <button
+                type="button"
+                data-qv2-select={q.slug}
+                class="w-full text-left px-3 py-2 hover:bg-bg focus:bg-bg focus:outline-none"
+              >
+                <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">
+                  {questionDisplayLabel(q)} · {q.status}
+                </div>
+                <div class="text-sm text-text-primary leading-snug">{q.title}</div>
+              </button>
+            </li>
+          ))}
+        </ul>
+      </aside>
+
+      <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
+        <div id="qv2-empty" data-testid="qv2-empty" class="text-sm text-text-muted">
+          Select a question on the left to preview its structured blocks.
+        </div>
+
+        {questions.map((q) => (
+          <section
+            class="qv2-detail hidden"
+            data-qv2-detail={q.slug}
+            data-testid={`qv2-detail-${q.slug}`}
+          >
+            <header class="border-b border-border pb-3 mb-4">
+              <div class="font-mono text-[10px] uppercase tracking-wider text-accent-blue">
+                {questionDisplayLabel(q)} · {q.examType} · {q.status}
+                {q.requiresReference && <span> · ref required</span>}
+              </div>
+              <h2 class="font-serif text-2xl text-text-primary leading-tight mt-1">{q.title}</h2>
+              <div class="text-[11px] font-mono text-text-muted mt-1">
+                slug: <code>{q.slug}</code>
+              </div>
+            </header>
+
+            <section class="qv2-section">
+              <h3 class="qv2-section-title">Stem</h3>
+              <div class="qv2-blocks" data-testid="qv2-stem-blocks">
+                {q.stemBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+              </div>
+            </section>
+
+            <section class="qv2-section">
+              <h3 class="qv2-section-title">Choices</h3>
+              <ol class="space-y-2">
+                {q.choices.map((c) => (
+                  <li class={`border rounded p-3 ${c.isCorrect ? 'border-accent-blue bg-bg' : 'border-border'}`}>
+                    <div class="font-mono text-[11px] uppercase tracking-wider text-text-muted mb-1">
+                      {c.label}{c.isCorrect ? ' · official answer' : ''}
+                    </div>
+                    <div class="qv2-blocks">
+                      {c.blocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </section>
+
+            {q.explanationBlocks && q.explanationBlocks.length > 0 && (
+              <section class="qv2-section">
+                <h3 class="qv2-section-title">Explanation</h3>
+                <div class="qv2-blocks">
+                  {q.explanationBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                </div>
+              </section>
+            )}
+
+            <section class="qv2-section" data-testid="qv2-source-refs">
+              <h3 class="qv2-section-title">Source references</h3>
+              {q.sourceRefs && q.sourceRefs.length > 0 ? (
+                <ul class="text-sm text-text-body space-y-1">
+                  {q.sourceRefs.map((ref) => {
+                    const label = ref.label || ref.slug || ref.path || ref.kind;
+                    return (
+                      <li class="font-mono text-[12px]">
+                        <span class="inline-block min-w-[90px] text-text-muted">[{ref.kind}]</span>
+                        <span class="text-text-primary">{label}</span>
+                        {ref.path && ref.path !== label && (
+                          <span class="text-text-muted"> — {ref.path}</span>
+                        )}
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : (
+                <p class="text-sm text-text-muted">No source references recorded.</p>
+              )}
+            </section>
+
+            {q.legacy?.kaCode && (
+              <section class="qv2-section">
+                <h3 class="qv2-section-title">Legacy metadata</h3>
+                <dl class="grid grid-cols-2 gap-x-4 gap-y-1 text-[12px] font-mono">
+                  {q.legacy.kaCode && (<><dt class="text-text-muted">K/A</dt><dd class="text-text-primary">{q.legacy.kaCode}</dd></>)}
+                  {q.legacy.kaImportance != null && (<><dt class="text-text-muted">K/A importance</dt><dd class="text-text-primary">{q.legacy.kaImportance}</dd></>)}
+                  {q.legacy.cognitiveLevel && (<><dt class="text-text-muted">Cognitive</dt><dd class="text-text-primary">{q.legacy.cognitiveLevel}</dd></>)}
+                  {q.legacy.tierGroup && (<><dt class="text-text-muted">Tier/Group</dt><dd class="text-text-primary">{q.legacy.tierGroup}</dd></>)}
+                  {q.legacy.questionSource && (<><dt class="text-text-muted">Source</dt><dd class="text-text-primary">{q.legacy.questionSource}</dd></>)}
+                  {q.legacy.wikiPath && (<><dt class="text-text-muted">Wiki path</dt><dd class="text-text-primary">{q.legacy.wikiPath}</dd></>)}
+                </dl>
+              </section>
+            )}
+          </section>
+        ))}
+      </article>
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .qv2-section { margin-top: 1.25rem; }
+  .qv2-section-title {
+    font-family: var(--font-mono, monospace);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--color-text-muted, #888);
+    margin-bottom: 0.5rem;
+  }
+  .qv2-blocks > * + * { margin-top: 0.5rem; }
+  .qv2-blocks p { line-height: 1.55; white-space: pre-wrap; }
+  .qv2-blocks img {
+    max-width: 100%;
+    height: auto;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  .qv2-blocks figure { margin: 0; }
+  .qv2-blocks figcaption {
+    font-size: 11px;
+    color: var(--color-text-muted, #888);
+    margin-top: 4px;
+    text-align: center;
+  }
+  .qv2-blocks table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .qv2-blocks th, .qv2-blocks td {
+    border: 1px solid var(--color-border, #333);
+    padding: 4px 8px;
+    text-align: left;
+  }
+  .qv2-blocks pre {
+    background: rgba(0,0,0,0.25);
+    padding: 8px 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 12px;
+  }
+  .qv2-unsupported {
+    font-size: 12px;
+    color: var(--color-text-muted, #888);
+    font-style: italic;
+  }
+  button[data-qv2-select].is-active {
+    background: var(--color-bg, transparent);
+    border-left: 3px solid var(--color-accent-blue, #4aa);
+  }
+</style>
+
+<script>
+  import { buildQuizSession, type QuizSessionFilters } from '../utils/quiz-v2-session';
+  import type { StructuredQuestion } from '../types/question-blocks';
+
+  type SelectButton = HTMLButtonElement;
+
+  interface SessionMetaRow {
+    slug: string;
+    examYear: number;
+    track: string;
+    status: string;
+    quizEligible: boolean;
+    requiresReference: boolean;
+    title: string;
+    topics: unknown[];
+  }
+
+  function readSessionMeta(): SessionMetaRow[] {
+    const node = document.getElementById('qv2-session-meta');
+    if (!node || !node.textContent) return [];
+    try {
+      const parsed = JSON.parse(node.textContent);
+      return Array.isArray(parsed) ? (parsed as SessionMetaRow[]) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function metaToQuestion(row: SessionMetaRow): StructuredQuestion {
+    return {
+      schemaVersion: 1,
+      slug: row.slug,
+      examYear: row.examYear,
+      examType: '',
+      questionNumber: 0,
+      track: row.track,
+      title: row.title,
+      status: row.status,
+      quizEligible: row.quizEligible,
+      requiresReference: row.requiresReference,
+      officialAnswerLabel: '',
+      acceptedAnswerLabels: [],
+      stemBlocks: [],
+      choices: [],
+      explanationBlocks: [],
+      topics: row.topics,
+      sourceRefs: [],
+      legacy: {},
+    };
+  }
+
+  function parseFiltersFromUrl(params: URLSearchParams): { filters: QuizSessionFilters; seed?: string } {
+    const filters: QuizSessionFilters = {};
+    const yearsRaw = params.get('years');
+    if (yearsRaw) {
+      const years = yearsRaw
+        .split(',')
+        .map((s) => Number(s.trim()))
+        .filter((n) => Number.isFinite(n));
+      if (years.length) filters.years = years;
+    }
+    const tracksRaw = params.get('tracks');
+    if (tracksRaw) filters.tracks = tracksRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    const topicsRaw = params.get('topics');
+    if (topicsRaw) filters.topicSlugs = topicsRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    const slugsRaw = params.get('slugs');
+    if (slugsRaw) filters.questionSlugs = slugsRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    const refMode = params.get('ref');
+    if (refMode === 'include' || refMode === 'exclude' || refMode === 'only') {
+      filters.referenceMode = refMode;
+    }
+    const countRaw = params.get('count');
+    if (countRaw) {
+      const n = Number(countRaw);
+      if (Number.isFinite(n) && n > 0) filters.count = n;
+    }
+    const seed = params.get('seed') ?? undefined;
+    return { filters, seed };
+  }
+
+  function renderSessionPanel(params: URLSearchParams): void {
+    const panel = document.getElementById('qv2-session-panel');
+    if (!panel) return;
+    if (params.get('session') !== '1') {
+      panel.classList.add('hidden');
+      return;
+    }
+    const meta = readSessionMeta();
+    const questions = meta.map(metaToQuestion);
+    const { filters, seed } = parseFiltersFromUrl(params);
+    const session = buildQuizSession(questions, filters, seed ? { seed } : {});
+
+    const setText = (testid: string, text: string): void => {
+      const el = panel.querySelector(`[data-testid="${testid}"]`);
+      if (el) el.textContent = text;
+    };
+    setText('qv2-session-id', session.sessionId);
+    setText('qv2-session-seed', session.seed);
+    setText('qv2-session-count', String(session.questionSlugs.length));
+    setText('qv2-session-total', String(session.totalEligible));
+    setText('qv2-session-filters', JSON.stringify(session.filters));
+
+    const playLink = panel.querySelector<HTMLAnchorElement>('#qv2-session-play-link');
+    if (playLink) {
+      const playUrl = new URL(playLink.href);
+      for (const key of ['seed', 'count', 'years', 'tracks', 'topics', 'slugs', 'ref']) {
+        const value = params.get(key);
+        if (value) playUrl.searchParams.set(key, value);
+      }
+      playLink.href = playUrl.toString();
+    }
+
+    const list = panel.querySelector<HTMLOListElement>('#qv2-session-list');
+    if (list) {
+      const titleBySlug = new Map(meta.map((m) => [m.slug, m.title] as const));
+      list.innerHTML = '';
+      for (const slug of session.questionSlugs) {
+        const li = document.createElement('li');
+        li.className = 'qv2-session-item';
+        li.setAttribute('data-slug', slug);
+        const code = document.createElement('code');
+        code.className = 'font-mono text-[12px] text-text-muted mr-2';
+        code.textContent = slug;
+        const title = document.createElement('span');
+        title.className = 'text-text-primary';
+        title.textContent = titleBySlug.get(slug) ?? '';
+        li.appendChild(code);
+        li.appendChild(title);
+        list.appendChild(li);
+      }
+    }
+    panel.classList.remove('hidden');
+  }
+
+  function showQuestion(slug: string | null): void {
+    const details = document.querySelectorAll<HTMLElement>('[data-qv2-detail]');
+    const empty = document.getElementById('qv2-empty');
+    let matched = false;
+    details.forEach((el) => {
+      const isMatch = !!slug && el.getAttribute('data-qv2-detail') === slug;
+      el.classList.toggle('hidden', !isMatch);
+      if (isMatch) matched = true;
+    });
+    if (empty) empty.classList.toggle('hidden', matched);
+    document.querySelectorAll<SelectButton>('[data-qv2-select]').forEach((btn) => {
+      btn.classList.toggle('is-active', btn.getAttribute('data-qv2-select') === slug);
+    });
+  }
+
+  function applyFilters(): void {
+    const search = (document.getElementById('qv2-search') as HTMLInputElement | null)?.value.trim().toLowerCase() ?? '';
+    const year = (document.getElementById('qv2-year') as HTMLSelectElement | null)?.value ?? 'all';
+    const items = document.querySelectorAll<HTMLLIElement>('.qv2-item');
+    let visible = 0;
+    items.forEach((li) => {
+      const text = li.getAttribute('data-search') ?? '';
+      const yearAttr = li.getAttribute('data-year') ?? '';
+      const matchesSearch = !search || text.includes(search);
+      const matchesYear = year === 'all' || yearAttr === year;
+      const show = matchesSearch && matchesYear;
+      li.classList.toggle('hidden', !show);
+      if (show) visible++;
+    });
+    const counter = document.querySelector('[data-testid="qv2-visible-count"]');
+    if (counter) counter.textContent = String(visible);
+  }
+
+  function init(): void {
+    document.querySelectorAll<SelectButton>('[data-qv2-select]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const slug = btn.getAttribute('data-qv2-select');
+        if (!slug) return;
+        const url = new URL(window.location.href);
+        url.searchParams.set('slug', slug);
+        window.history.replaceState(null, '', url.toString());
+        showQuestion(slug);
+      });
+    });
+
+    document.getElementById('qv2-search')?.addEventListener('input', applyFilters);
+    document.getElementById('qv2-year')?.addEventListener('change', applyFilters);
+
+    const params = new URLSearchParams(window.location.search);
+    const urlSlug = params.get('slug');
+    if (urlSlug) showQuestion(urlSlug);
+    renderSessionPanel(params);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>

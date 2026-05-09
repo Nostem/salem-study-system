@@ -1,0 +1,618 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import QuestionBlockRenderer from '../../components/QuestionBlockRenderer.astro';
+import {
+  getStructuredQuestions,
+  questionDisplayLabel,
+} from '../../utils/structured-quiz-data';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
+
+const questions = getStructuredQuestions();
+
+const sessionMeta = questions.map((q) => ({
+  slug: q.slug,
+  examYear: q.examYear,
+  track: q.track ?? '',
+  status: q.status,
+  quizEligible: q.quizEligible,
+  requiresReference: q.requiresReference,
+  title: q.title,
+  topics: q.topics,
+}));
+
+const yearOptions = [...new Set(questions.map((q) => q.examYear))].sort((a, b) => b - a);
+const trackOptions = [...new Set(questions.map((q) => q.track).filter(Boolean))].sort();
+const topicMap = new Map<string, string>();
+for (const q of questions) {
+  for (const topic of q.topics) {
+    if (!topic || typeof topic !== 'object' || !('slug' in topic)) continue;
+    const slug = String((topic as { slug: unknown }).slug ?? '');
+    if (!slug) continue;
+    const title = 'title' in topic ? String((topic as { title?: unknown }).title ?? slug) : slug;
+    if (!topicMap.has(slug)) topicMap.set(slug, title);
+  }
+}
+const topicOptions = [...topicMap.entries()]
+  .map(([slug, title]) => ({ slug, title }))
+  .sort((a, b) => a.title.localeCompare(b.title));
+---
+
+<BaseLayout title="Quiz v2 Play (Experimental)" noindex={true}>
+  <main class="max-w-[860px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
+    <header class="border-b border-border pb-5 mb-5">
+      <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Quiz v2 preview</a>
+      <div class="mt-2">
+        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · local-only · no grading API</div>
+        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Play</h1>
+        <p class="text-sm text-text-muted max-w-2xl mt-1">
+          Deterministic seeded run through the structured bank. Selections live in
+          this page only — nothing is persisted. Production
+          <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a> is unaffected.
+        </p>
+      </div>
+    </header>
+
+    <section class="mb-5 bg-bg-card border border-border rounded-lg p-4" aria-labelledby="qv2p-builder-title">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4">
+        <div>
+          <h2 id="qv2p-builder-title" class="font-serif text-xl text-text-primary">Local quiz builder</h2>
+          <p class="text-xs text-text-muted mt-1">
+            Adjust filters and rebuild this local-only deterministic play URL. No backend session is created.
+          </p>
+        </div>
+        <a
+          href={`${base}quiz-v2/?session=1`}
+          class="text-[11px] font-mono uppercase tracking-wider text-text-muted underline hover:text-accent-blue"
+        >Preview order</a>
+      </div>
+      <form id="qv2p-builder" data-testid="qv2p-builder" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Count
+          <input
+            data-testid="qv2p-builder-count"
+            name="count"
+            type="number"
+            min="1"
+            max="100"
+            value="10"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          />
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Seed
+          <input
+            data-testid="qv2p-builder-seed"
+            name="seed"
+            type="text"
+            placeholder="optional"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          />
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Year
+          <select
+            data-testid="qv2p-builder-years"
+            name="years"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          >
+            <option value="">All years</option>
+            {yearOptions.map((year) => <option value={String(year)}>{year}</option>)}
+          </select>
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Track
+          <select
+            data-testid="qv2p-builder-tracks"
+            name="tracks"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          >
+            <option value="">All tracks</option>
+            {trackOptions.map((track) => <option value={String(track)}>{track}</option>)}
+          </select>
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          References
+          <select
+            data-testid="qv2p-builder-ref"
+            name="ref"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          >
+            <option value="include">Include</option>
+            <option value="exclude">Exclude</option>
+            <option value="only">Only ref-required</option>
+          </select>
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Topic
+          <select
+            data-testid="qv2p-builder-topic"
+            name="topics"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          >
+            <option value="">All topics</option>
+            {topicOptions.map((topic) => <option value={topic.slug}>{topic.title}</option>)}
+          </select>
+        </label>
+        <div class="sm:col-span-2 lg:col-span-6 flex flex-wrap gap-2 pt-1">
+          <button
+            type="submit"
+            data-testid="qv2p-builder-submit"
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue hover:bg-bg"
+          >Build play URL</button>
+          <a
+            data-testid="qv2p-builder-reset"
+            href={`${base}quiz-v2/play/`}
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
+          >Reset</a>
+        </div>
+      </form>
+    </section>
+
+    <section
+      data-testid="qv2p-session"
+      class="mb-5 bg-bg-card border border-border rounded-lg p-4"
+    >
+      <dl class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 text-[12px] font-mono">
+        <dt class="text-text-muted">Session ID</dt>
+        <dd class="text-text-primary col-span-3 break-all" data-testid="qv2p-session-id">—</dd>
+        <dt class="text-text-muted">Seed</dt>
+        <dd class="text-text-primary" data-testid="qv2p-session-seed">—</dd>
+        <dt class="text-text-muted">Question</dt>
+        <dd class="text-text-primary"><span data-testid="qv2p-session-index">0</span> / <span data-testid="qv2p-session-count">0</span></dd>
+        <dt class="text-text-muted">Eligible</dt>
+        <dd class="text-text-primary col-span-3"><span data-testid="qv2p-session-total">0</span> match filters</dd>
+      </dl>
+      <div class="mt-3 flex flex-wrap items-center gap-2">
+        <button
+          type="button"
+          data-testid="qv2p-prev"
+          class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-border rounded text-text-primary hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
+          disabled
+        >&lsaquo; Prev</button>
+        <button
+          type="button"
+          data-testid="qv2p-next"
+          class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-border rounded text-text-primary hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
+          disabled
+        >Next &rsaquo;</button>
+        <span class="ml-auto text-[11px] font-mono text-text-muted">
+          Filters: <code data-testid="qv2p-session-filters">{}</code>
+        </span>
+      </div>
+    </section>
+
+    <script type="application/json" id="qv2p-session-meta" set:html={JSON.stringify(sessionMeta)} />
+
+    <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
+      <div id="qv2p-empty" data-testid="qv2p-empty" class="text-sm text-text-muted">
+        Loading session…
+      </div>
+
+      <div id="qv2p-no-results" data-testid="qv2p-no-results" class="hidden text-sm text-text-muted">
+        No questions match the current filters. Try removing filters or
+        broadening <code>years</code> / <code>tracks</code>.
+      </div>
+
+      {questions.map((q) => (
+        <section
+          class="qv2p-detail hidden"
+          data-qv2p-detail={q.slug}
+          data-testid={`qv2p-detail-${q.slug}`}
+          data-correct-label={q.officialAnswerLabel}
+        >
+          <header class="border-b border-border pb-3 mb-4">
+            <div class="font-mono text-[10px] uppercase tracking-wider text-accent-blue">
+              {questionDisplayLabel(q)} · {q.examType} · {q.status}
+              {q.requiresReference && <span> · ref required</span>}
+            </div>
+            <h2 class="font-serif text-2xl text-text-primary leading-tight mt-1">{q.title}</h2>
+            <div class="text-[11px] font-mono text-text-muted mt-1">
+              slug: <code>{q.slug}</code>
+              <span class="mx-2">·</span>
+              <a
+                href={`${base}quiz-v2/?slug=${q.slug}`}
+                class="underline hover:text-accent-blue"
+                data-testid="qv2p-source-link"
+              >view in preview</a>
+            </div>
+          </header>
+
+          <section class="qv2p-section">
+            <h3 class="qv2p-section-title">Stem</h3>
+            <div class="qv2p-blocks" data-testid="qv2p-stem-blocks">
+              {q.stemBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+            </div>
+          </section>
+
+          <section class="qv2p-section">
+            <h3 class="qv2p-section-title">Choices</h3>
+            <ol class="space-y-2" data-testid="qv2p-choices">
+              {q.choices.map((c) => (
+                <li>
+                  <button
+                    type="button"
+                    class="qv2p-choice w-full text-left border border-border rounded p-3 hover:bg-bg focus:bg-bg focus:outline-none focus:border-accent-blue"
+                    data-choice-label={c.label}
+                    data-correct={c.isCorrect ? 'true' : 'false'}
+                    data-testid={`qv2p-choice-${c.label}`}
+                  >
+                    <div class="font-mono text-[11px] uppercase tracking-wider text-text-muted mb-1 qv2p-choice-label">
+                      {c.label}
+                    </div>
+                    <div class="qv2p-blocks">
+                      {c.blocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                    </div>
+                  </button>
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <section
+            class="qv2p-section qv2p-feedback hidden"
+            data-testid="qv2p-feedback"
+          >
+            <div
+              class="font-mono text-[11px] uppercase tracking-wider mb-2 qv2p-feedback-status"
+              data-testid="qv2p-feedback-status"
+            ></div>
+            {q.explanationBlocks && q.explanationBlocks.length > 0 && (
+              <>
+                <h3 class="qv2p-section-title">Explanation</h3>
+                <div class="qv2p-blocks">
+                  {q.explanationBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                </div>
+              </>
+            )}
+          </section>
+
+          {q.sourceRefs && q.sourceRefs.length > 0 && (
+            <section class="qv2p-section qv2p-feedback hidden" data-testid="qv2p-source-refs">
+              <h3 class="qv2p-section-title">Source references</h3>
+              <ul class="text-sm text-text-body space-y-1">
+                {q.sourceRefs.map((ref) => {
+                  const label = ref.label || ref.slug || ref.path || ref.kind;
+                  return (
+                    <li class="font-mono text-[12px]">
+                      <span class="inline-block min-w-[90px] text-text-muted">[{ref.kind}]</span>
+                      <span class="text-text-primary">{label}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </section>
+          )}
+        </section>
+      ))}
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .qv2p-section { margin-top: 1.25rem; }
+  .qv2p-section-title {
+    font-family: var(--font-mono, monospace);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--color-text-muted, #888);
+    margin-bottom: 0.5rem;
+  }
+  .qv2p-blocks > * + * { margin-top: 0.5rem; }
+  .qv2p-blocks p { line-height: 1.55; white-space: pre-wrap; }
+  .qv2p-blocks img {
+    max-width: 100%;
+    height: auto;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  .qv2p-blocks figure { margin: 0; }
+  .qv2p-blocks figcaption {
+    font-size: 11px;
+    color: var(--color-text-muted, #888);
+    margin-top: 4px;
+    text-align: center;
+  }
+  .qv2p-blocks table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .qv2p-blocks th, .qv2p-blocks td {
+    border: 1px solid var(--color-border, #333);
+    padding: 4px 8px;
+    text-align: left;
+  }
+  .qv2p-blocks pre {
+    background: rgba(0,0,0,0.25);
+    padding: 8px 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 12px;
+  }
+  .qv2p-choice.is-selected { border-color: var(--color-accent-blue, #4aa); }
+  .qv2p-choice.is-correct {
+    border-color: #4ade80;
+    background: rgba(74, 222, 128, 0.08);
+  }
+  .qv2p-choice.is-incorrect {
+    border-color: #f87171;
+    background: rgba(248, 113, 113, 0.08);
+  }
+  .qv2p-choice.is-revealed-correct {
+    border-color: #4ade80;
+  }
+  .qv2p-choice[disabled] { cursor: default; }
+</style>
+
+<script>
+  import {
+    buildQuizSession,
+    type QuizSession,
+    type QuizSessionFilters,
+  } from '../../utils/quiz-v2-session';
+  import type { StructuredQuestion } from '../../types/question-blocks';
+
+  interface SessionMetaRow {
+    slug: string;
+    examYear: number;
+    track: string;
+    status: string;
+    quizEligible: boolean;
+    requiresReference: boolean;
+    title: string;
+    topics: unknown[];
+  }
+
+  const DEFAULT_COUNT = 10;
+
+  function readSessionMeta(): SessionMetaRow[] {
+    const node = document.getElementById('qv2p-session-meta');
+    if (!node || !node.textContent) return [];
+    try {
+      const parsed = JSON.parse(node.textContent);
+      return Array.isArray(parsed) ? (parsed as SessionMetaRow[]) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function metaToQuestion(row: SessionMetaRow): StructuredQuestion {
+    return {
+      schemaVersion: 1,
+      slug: row.slug,
+      examYear: row.examYear,
+      examType: '',
+      questionNumber: 0,
+      track: row.track,
+      title: row.title,
+      status: row.status,
+      quizEligible: row.quizEligible,
+      requiresReference: row.requiresReference,
+      officialAnswerLabel: '',
+      acceptedAnswerLabels: [],
+      stemBlocks: [],
+      choices: [],
+      explanationBlocks: [],
+      topics: row.topics,
+      sourceRefs: [],
+      legacy: {},
+    };
+  }
+
+  function parseFiltersFromUrl(params: URLSearchParams): {
+    filters: QuizSessionFilters;
+    seed?: string;
+  } {
+    const filters: QuizSessionFilters = {};
+    const yearsRaw = params.get('years');
+    if (yearsRaw) {
+      const years = yearsRaw
+        .split(',')
+        .map((s) => Number(s.trim()))
+        .filter((n) => Number.isFinite(n));
+      if (years.length) filters.years = years;
+    }
+    const tracksRaw = params.get('tracks');
+    if (tracksRaw) {
+      filters.tracks = tracksRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    }
+    const topicsRaw = params.get('topics');
+    if (topicsRaw) {
+      filters.topicSlugs = topicsRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    }
+    const slugsRaw = params.get('slugs');
+    if (slugsRaw) {
+      filters.questionSlugs = slugsRaw.split(',').map((slug) => slug.trim()).filter(Boolean);
+    }
+    const refMode = params.get('ref');
+    if (refMode === 'include' || refMode === 'exclude' || refMode === 'only') {
+      filters.referenceMode = refMode;
+    }
+    const countRaw = params.get('count');
+    if (countRaw) {
+      const n = Number(countRaw);
+      if (Number.isFinite(n) && n > 0) filters.count = n;
+    } else {
+      filters.count = DEFAULT_COUNT;
+    }
+    const seed = params.get('seed') ?? undefined;
+    return { filters, seed };
+  }
+
+  type ChoiceState = { label: string; correct: boolean };
+  type Selections = Map<string, string>;
+
+  const selections: Selections = new Map();
+  let currentIndex = 0;
+  let session: QuizSession | null = null;
+
+  function setText(testid: string, text: string): void {
+    const el = document.querySelector(`[data-testid="${testid}"]`);
+    if (el) el.textContent = text;
+  }
+
+  function detailFor(slug: string): HTMLElement | null {
+    return document.querySelector<HTMLElement>(`[data-qv2p-detail="${slug}"]`);
+  }
+
+  function hideAllDetails(): void {
+    document.querySelectorAll<HTMLElement>('[data-qv2p-detail]').forEach((el) => {
+      el.classList.add('hidden');
+    });
+  }
+
+  function resetChoiceState(detail: HTMLElement): void {
+    detail.querySelectorAll<HTMLButtonElement>('.qv2p-choice').forEach((btn) => {
+      btn.classList.remove('is-selected', 'is-correct', 'is-incorrect', 'is-revealed-correct');
+      btn.removeAttribute('disabled');
+    });
+    detail.querySelectorAll<HTMLElement>('.qv2p-feedback').forEach((el) => {
+      el.classList.add('hidden');
+    });
+  }
+
+  function applyRevealedState(detail: HTMLElement, chosen: string): void {
+    const correctLabel = detail.getAttribute('data-correct-label') ?? '';
+    const isRight = chosen === correctLabel;
+    detail.querySelectorAll<HTMLButtonElement>('.qv2p-choice').forEach((btn) => {
+      const label = btn.getAttribute('data-choice-label') ?? '';
+      const correct = btn.getAttribute('data-correct') === 'true';
+      btn.setAttribute('disabled', 'disabled');
+      if (label === chosen) {
+        btn.classList.add('is-selected');
+        btn.classList.add(correct ? 'is-correct' : 'is-incorrect');
+      }
+      if (correct && label !== chosen) {
+        btn.classList.add('is-revealed-correct');
+      }
+    });
+    detail.querySelectorAll<HTMLElement>('.qv2p-feedback').forEach((el) => {
+      el.classList.remove('hidden');
+    });
+    const status = detail.querySelector<HTMLElement>('[data-testid="qv2p-feedback-status"]');
+    if (status) {
+      status.textContent = isRight
+        ? `Correct · official answer ${correctLabel}`
+        : `Incorrect · official answer ${correctLabel}`;
+      status.style.color = isRight ? '#4ade80' : '#f87171';
+    }
+  }
+
+  function showCurrent(): void {
+    if (!session) return;
+    const empty = document.getElementById('qv2p-empty');
+    const noResults = document.getElementById('qv2p-no-results');
+    hideAllDetails();
+    if (empty) empty.classList.add('hidden');
+    if (session.questionSlugs.length === 0) {
+      if (noResults) noResults.classList.remove('hidden');
+      setText('qv2p-session-index', '0');
+      return;
+    }
+    if (noResults) noResults.classList.add('hidden');
+    const slug = session.questionSlugs[currentIndex];
+    const detail = detailFor(slug);
+    if (!detail) return;
+    detail.classList.remove('hidden');
+    resetChoiceState(detail);
+    const chosen = selections.get(slug);
+    if (chosen) {
+      applyRevealedState(detail, chosen);
+    }
+    setText('qv2p-session-index', String(currentIndex + 1));
+    const prev = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-prev"]');
+    const next = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-next"]');
+    if (prev) prev.disabled = currentIndex === 0;
+    if (next) next.disabled = currentIndex >= session.questionSlugs.length - 1;
+  }
+
+  function attachChoiceHandlers(): void {
+    document.querySelectorAll<HTMLButtonElement>('.qv2p-choice').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (btn.hasAttribute('disabled')) return;
+        const detail = btn.closest<HTMLElement>('[data-qv2p-detail]');
+        if (!detail) return;
+        const slug = detail.getAttribute('data-qv2p-detail') ?? '';
+        const label = btn.getAttribute('data-choice-label') ?? '';
+        if (!slug || !label) return;
+        selections.set(slug, label);
+        applyRevealedState(detail, label);
+      });
+    });
+  }
+
+  function attachNavHandlers(): void {
+    const prev = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-prev"]');
+    const next = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-next"]');
+    prev?.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        showCurrent();
+      }
+    });
+    next?.addEventListener('click', () => {
+      if (session && currentIndex < session.questionSlugs.length - 1) {
+        currentIndex++;
+        showCurrent();
+      }
+    });
+  }
+
+  function attachBuilderHandlers(params: URLSearchParams): void {
+    const form = document.getElementById('qv2p-builder') as HTMLFormElement | null;
+    if (!form) return;
+    const setValue = (name: string, value: string | null): void => {
+      const el = form.elements.namedItem(name) as HTMLInputElement | HTMLSelectElement | null;
+      if (el && value !== null) el.value = value;
+    };
+    setValue('count', params.get('count') ?? String(DEFAULT_COUNT));
+    setValue('seed', params.get('seed') ?? '');
+    setValue('years', params.get('years'));
+    setValue('tracks', params.get('tracks'));
+    setValue('topics', params.get('topics'));
+    setValue('ref', params.get('ref') ?? 'include');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const next = new URL(window.location.href);
+      next.search = '';
+      for (const key of ['seed', 'count', 'years', 'tracks', 'topics', 'ref']) {
+        const raw = String(data.get(key) ?? '').trim();
+        if (!raw) continue;
+        if (key === 'ref' && raw === 'include') continue;
+        if (key === 'count' && raw === String(DEFAULT_COUNT)) continue;
+        next.searchParams.set(key, raw);
+      }
+      window.location.href = next.toString();
+    });
+  }
+
+  function init(): void {
+    const meta = readSessionMeta();
+    const candidateQuestions = meta.map(metaToQuestion);
+    const params = new URLSearchParams(window.location.search);
+    attachBuilderHandlers(params);
+    const { filters, seed } = parseFiltersFromUrl(params);
+    session = buildQuizSession(candidateQuestions, filters, seed ? { seed } : {});
+    setText('qv2p-session-id', session.sessionId);
+    setText('qv2p-session-seed', session.seed);
+    setText('qv2p-session-count', String(session.questionSlugs.length));
+    setText('qv2p-session-total', String(session.totalEligible));
+    setText('qv2p-session-filters', JSON.stringify(session.filters));
+    attachChoiceHandlers();
+    attachNavHandlers();
+    showCurrent();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
