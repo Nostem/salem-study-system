@@ -308,12 +308,17 @@ VCT auto makeup with <span class="hi-exam">1CV175 (Rapid Borate Stop Valve) erro
 Charging-pump swap on a loss of all SW: <span class="hi-exam">the action to place 23 (PDP) Charging in service and remove 22 (centrifugal) Charging from service is found in S2.OP-AB.SW-0005 (Loss of All SW), NOT in S2.OP-AB.SW-0001</span>. <span class="hi-trap">Trap: AB.SW-0001 (Loss of SW Header Pressure) directs reduction of SW loads per Attachment 2 — not the charging-pump swap.</span> Without SW (and therefore no CCW to the centrifugal-pump cooling water), the PDP is preferred to maintain charging.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A2</div>
+S2.OP-ST.CVC-0010 Borated Water Sources surveillance (Att. 2) following a 21 BAT pump leak. With 21 and 22 BAST cross-connected each at <span class="hi-exam">49.5%</span> level / <span class="hi-exam">6610 ppm</span> Cb, the operating point is inside the acceptable region of TS Figure 3.1-2 — surveillance result <span class="hi-exam">SAT</span>. RWST (CH I-IV 41.4-41.5 ft / 70°F / 2350 ppm) and BAST temperatures (98.2°F / 97.1°F) all SAT.
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
 - Related exam questions: [[2016 Q1]], [[2016 Q29]], [[2016 Q30]], [[2016 Q37]], [[2016 Q39]], [[2016 Q67]], [[2016 Q79]], [[2016 Q82]], [[2016 Q83]], [[2016 Q84]], [[2016 Q92]], [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2018 Q52]], [[2018 Q69]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
-- Related JPMs: [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
+- Related JPMs: [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]], [[2016 JPM RO-A2]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

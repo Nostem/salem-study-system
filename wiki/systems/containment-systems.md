@@ -279,12 +279,17 @@ EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free vol
 Containment Purge reinstatement after temporary termination (per S2.OP-SO.WG-0006 P&amp;L 3.3): <span class="hi-exam">no new release form is required if termination was of short duration (~4 hours) AND containment radiological conditions have not changed</span>. <span class="hi-exam">Attachment 2 permits blocking the CVI signal</span> for reinstatement. A new effluent permit is not always required. <span class="hi-trap">12 hours / one shift is NOT the duration criterion; rad-condition assurance is required in addition to the duration check.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A1-1</div>
+Containment-sump auto pump-down provides the leak-detection signal used to quantify unidentified RCS leakage to containment. OHA C-2 CNTMT SUMP PMP START is the front-panel indication; the Aux typewriter logs sump-pump start/stop events. Per S2.OP-SO.RC-0004 §5.3, the elapsed time between successive sump-pump cycles is converted to a leak rate via Attachment 3. Action thresholds: 0.85 gpm (Section 5.6 trending) and 1.0 gpm (TS 3.4.7.2 unidentified-leakage LCO).
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
-- Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]]
+- Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
 - Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q65]], [[2016 Q72]], [[2016 Q81]], [[2016 Q84]], [[2016 Q93]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
-- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
+- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]], [[2016 JPM RO-A1-1]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]

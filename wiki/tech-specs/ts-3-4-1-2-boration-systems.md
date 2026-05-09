@@ -184,10 +184,16 @@ The longer RWST time compensates for the lower boron concentration.
 Key distinction: loss of one centrifugal charging pump (21 CHP trips, 22 and 23 remain operable) does <span class="hi-exam">NOT</span> cause entry into TS 3.1.2.2 (Boration Flow Paths) or TS 3.1.2.4 (Charging Pumps). <span class="hi-exam">Two boration flow paths still exist</span> (BAT via BAT pump + remaining CHP; RWST via remaining CHP). <span class="hi-exam">23 Charging Pump (positive displacement) counts toward the TS 3.1.2.4 requirement</span> for reactivity addition capability — so two charging pumps remain operable (22 + 23). The only applicable entry is <span class="hi-exam">TS 3.5.2 (ECCS)</span>, because the tripped CHP is the high-head ECCS component. <span class="hi-trap">Trap: loss of two boration flow paths requires MODE 3 + borated to SDM ≥ 1% delta k/k at 200°F within 6 hours (78-hour total distractor in the exam).</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A2</div>
+S2.OP-ST.CVC-0010 surveillance of borated water sources after a 21 BAT pump leak. Per TS 3.1.2.6.a / .b and Figure 3.1-2, with 21 and 22 BAST cross-connected each at <span class="hi-exam">49.5%</span> level and <span class="hi-exam">6610 ppm</span> boron concentration (combined ~99% / 6610 ppm), the operating point falls inside the acceptable region — surveillance result: <span class="hi-exam">SAT</span>. RWST also SAT (level CH I-IV 41.4-41.5 ft, temp 70°F, conc 2350 ppm). BAST temps 98.2 / 97.1°F (≥63°F SAT). Demonstrates the close margin between SAT and UNSAT on the Figure 3.1-2 curve — compare to 2019 RO-A2 case (96% / 6650 ppm) which was UNSAT.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]]
+- Related procedures: [[S2.OP-ST.CVC-0010 — Borated Water Sources]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exam questions: [[2016 Q8]], [[2020 Q77]]
-- Related JPMs: [[2019 JPM RO-A2]], [[2022 JPM SRO-A2]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2019 JPM RO-A2]], [[2022 JPM SRO-A2]], [[2016 JPM RO-A2]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

@@ -188,11 +188,16 @@ RH19 (RHR Discharge X-CONN Valves): per EOP-LOCA-6 Step 2, the crew <span class=
 During LBLOCA cold leg recirculation transfer (EOP-LOCA-3): RHR suction aligned to containment sump via <span class="hi-exam">21SJ44 and 22SJ44</span> (sump auto arm pushbuttons depressed when >62% lights lit). Both RHR pumps running. Close <span class="hi-exam">21 and 22RH19s</span> (discharge cross-connect valves) to separate trains. Close <span class="hi-exam">2SJ67 and 2SJ68</span>. Open <span class="hi-exam">22SJ45 then 21SJ45</span> (RHR injection to cold legs). Place <span class="hi-exam">21RH29 and 22RH29 in manual and ensure closed</span> (Step 15 — CT#2 Part 3, within 11.2 min of RWST lo alarm).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A3</div>
+22 RHR pump room radiological survey for emergency stay-time calculation. Highest dose-rate point in the pump room is <span class="hi-exam">40 mrem/hr</span> (the 250 mrem/hr point is in the 22 RHR HX area, which is OUTSIDE the work-scope boundary of the JPM and must be excluded). Work scope: a detailed pre-start inspection of 22 RHR pump room before starting the pump.
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
 - Related exam questions: [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q26]], [[2016 Q31]], [[2016 Q33]], [[2016 Q73]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
-- Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]]
+- Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

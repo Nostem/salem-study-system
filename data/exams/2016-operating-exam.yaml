@@ -1,0 +1,64 @@
+exam: 2016
+type: operating
+ilot_class: "15-01"
+jpms:
+  - id: "RO-A1-1"
+    title: "Measure Leakage to the Containment Sump"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-SO.RC-0004"
+    pages: "1-7"
+    ka: "G2.1.25"
+    ka_importance_ro: 3.9
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0020080101"
+
+  - id: "RO-A1-2"
+    title: "Calculate Shutdown Margin"
+    type: Admin-RO
+    location: Classroom
+    procedure: "SC.RE-ST.ZZ-0002"
+    pages: "1-7"
+    ka: "G2.1.43"
+    ka_importance_ro: 4.1
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: true
+    time_critical_minutes: 50
+    alternate_path: false
+    source: New
+    task_number: "N1200030301"
+
+  - id: "RO-A2"
+    title: "Demonstrate the Operability of the RWST and/or the BASTs"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-ST.CVC-0010"
+    pages: "1-8"
+    ka: "G2.2.37"
+    ka_importance_ro: 3.6
+    ka_importance_sro: 4.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0040420201"
+
+  - id: "RO-A3"
+    title: "Perform Stay Time Calculation for Emergency Condition"
+    type: Admin-RO
+    location: Classroom
+    procedure: "RP-AA-203 / NC.EP-EP.ZZ-0304"
+    pages: "1-6"
+    ka: "G2.3.4"
+    ka_importance_ro: 3.2
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1200100104"

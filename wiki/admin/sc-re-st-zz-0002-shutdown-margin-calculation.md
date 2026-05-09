@@ -36,9 +36,14 @@ Surveillance procedure for calculating shutdown margin (SDM) to verify complianc
 SDM calculation with one inoperable (but trippable) rod (1D5 at 214 steps): Step <span class="hi-exam">4.2.6 rod bank penalty is based on the position of the rod BANK (225 steps = ARO), NOT the individual misaligned rod</span>. Since bank is at ARO, penalty = 0 pcm. Step 4.1.5 = 0 untrippable rods (1D5 is trippable). Step 4.1.6 = 1 inoperable rod. Calculated SDM = <span class="hi-exam">-2398 pcm</span>, which is more negative than acceptance criteria of -1300 pcm — SDM is SAT. Time critical: 60-minute limit.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A1-2</div>
+SDM calculation under similar conditions (rod 105 inoperable but trippable at 214 steps; bank D at 227 steps; 100% / 300 ppm / 10000 EFPH). Att. 3 §4.2 rod-worth values: 4.2.1 -3841, 4.2.2 -3335, 4.2.3 728, 4.2.4 0, 4.2.5 500, 4.2.6 0, 4.2.7 -5948. Att. 3 §4.3 SDM calc: 4.3.5 = <span class="hi-exam">-2441 pcm</span> (more negative than -1300 pcm — SAT). Procedure CRS-direction is to use only the Curve-Book Tables (NOT Figures). Time critical: <span class="hi-exam">50-minute limit</span> for the JPM.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
 - Related systems: [[Control Rod Drive]]
-- Related JPMs: [[2020 JPM RO-A1]]
-- Related exam: [[2020 NRC Operating Exam]]
+- Related JPMs: [[2020 JPM RO-A1]], [[2016 JPM RO-A1-2]]
+- Related exam: [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
