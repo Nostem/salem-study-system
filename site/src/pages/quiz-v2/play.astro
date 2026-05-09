@@ -425,6 +425,10 @@ const topicOptions = [...topicMap.entries()]
     if (topicsRaw) {
       filters.topicSlugs = topicsRaw.split(',').map((s) => s.trim()).filter(Boolean);
     }
+    const slugsRaw = params.get('slugs');
+    if (slugsRaw) {
+      filters.questionSlugs = slugsRaw.split(',').map((slug) => slug.trim()).filter(Boolean);
+    }
     const refMode = params.get('ref');
     if (refMode === 'include' || refMode === 'exclude' || refMode === 'only') {
       filters.referenceMode = refMode;

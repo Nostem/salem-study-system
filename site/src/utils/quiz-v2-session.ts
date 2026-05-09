@@ -7,6 +7,7 @@ export interface QuizSessionFilters {
   tracks?: string[];
   statuses?: string[];
   topicSlugs?: string[];
+  questionSlugs?: string[];
   referenceMode?: ReferenceMode;
   quizEligibleOnly?: boolean;
   count?: number;
@@ -17,6 +18,7 @@ export interface NormalizedFilters {
   tracks: string[];
   statuses: string[];
   topicSlugs: string[];
+  questionSlugs: string[];
   referenceMode: ReferenceMode;
   quizEligibleOnly: boolean;
   count: number | null;
@@ -53,6 +55,7 @@ export function normalizeFilters(filters: QuizSessionFilters = {}): NormalizedFi
     tracks: dedupSorted(filters.tracks),
     statuses: dedupSorted(filters.statuses),
     topicSlugs: dedupSorted(filters.topicSlugs),
+    questionSlugs: dedupSorted(filters.questionSlugs),
     referenceMode: filters.referenceMode ?? 'include',
     quizEligibleOnly: filters.quizEligibleOnly ?? true,
     count: typeof filters.count === 'number' && filters.count > 0 ? Math.floor(filters.count) : null,
@@ -79,6 +82,7 @@ export function filterQuestions(
   const f = normalizeFilters(filters);
   return questions.filter((q) => {
     if (f.quizEligibleOnly && !q.quizEligible) return false;
+    if (f.questionSlugs.length > 0 && !f.questionSlugs.includes(q.slug)) return false;
     if (f.years.length > 0 && !f.years.includes(q.examYear)) return false;
     if (f.tracks.length > 0) {
       const t = q.track ?? '';

@@ -154,12 +154,29 @@ test('buildQuizSession is order-independent in input array', () => {
 });
 
 test('normalizeFilters dedupes and sorts arrays', () => {
-  const f = normalizeFilters({ years: [2024, 2022, 2024], tracks: ['RO', 'RO', 'SRO'] });
+  const f = normalizeFilters({
+    years: [2024, 2022, 2024],
+    tracks: ['RO', 'RO', 'SRO'],
+    topicSlugs: ['rcs', 'eccs', 'rcs'],
+    questionSlugs: ['q7', 'q6', 'q7'],
+  });
   assert.deepEqual(f.years, [2022, 2024]);
   assert.deepEqual(f.tracks, ['RO', 'SRO']);
+  assert.deepEqual(f.topicSlugs, ['eccs', 'rcs']);
+  assert.deepEqual(f.questionSlugs, ['q6', 'q7']);
   assert.equal(f.referenceMode, 'include');
   assert.equal(f.quizEligibleOnly, true);
   assert.equal(f.count, null);
+});
+
+test('questionSlugs filter narrows an explicit graph-selected pool', () => {
+  const out = filterQuestions(fixture, { questionSlugs: ['q7', 'q6', 'missing'] }).map((q) => q.slug);
+  assert.deepEqual(out.sort(), ['q6', 'q7']);
+
+  const session = buildQuizSession(fixture, { questionSlugs: ['q7', 'q6'], count: 10 }, { seed: 'graph-pool' });
+  assert.equal(session.totalEligible, 2);
+  assert.equal(session.questionSlugs.length, 2);
+  assert.deepEqual([...session.questionSlugs].sort(), ['q6', 'q7']);
 });
 
 test('questionsForSession returns questions in session order', () => {

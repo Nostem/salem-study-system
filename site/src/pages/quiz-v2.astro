@@ -24,6 +24,7 @@ const sessionMeta = questions.map((q) => ({
   quizEligible: q.quizEligible,
   requiresReference: q.requiresReference,
   title: q.title,
+  topics: q.topics,
 }));
 ---
 
@@ -326,6 +327,7 @@ const sessionMeta = questions.map((q) => ({
     quizEligible: boolean;
     requiresReference: boolean;
     title: string;
+    topics: unknown[];
   }
 
   function readSessionMeta(): SessionMetaRow[] {
@@ -356,7 +358,7 @@ const sessionMeta = questions.map((q) => ({
       stemBlocks: [],
       choices: [],
       explanationBlocks: [],
-      topics: [],
+      topics: row.topics,
       sourceRefs: [],
       legacy: {},
     };
@@ -374,6 +376,10 @@ const sessionMeta = questions.map((q) => ({
     }
     const tracksRaw = params.get('tracks');
     if (tracksRaw) filters.tracks = tracksRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    const topicsRaw = params.get('topics');
+    if (topicsRaw) filters.topicSlugs = topicsRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    const slugsRaw = params.get('slugs');
+    if (slugsRaw) filters.questionSlugs = slugsRaw.split(',').map((s) => s.trim()).filter(Boolean);
     const refMode = params.get('ref');
     if (refMode === 'include' || refMode === 'exclude' || refMode === 'only') {
       filters.referenceMode = refMode;
@@ -412,7 +418,7 @@ const sessionMeta = questions.map((q) => ({
     const playLink = panel.querySelector<HTMLAnchorElement>('#qv2-session-play-link');
     if (playLink) {
       const playUrl = new URL(playLink.href);
-      for (const key of ['seed', 'count', 'years', 'tracks', 'ref']) {
+      for (const key of ['seed', 'count', 'years', 'tracks', 'topics', 'slugs', 'ref']) {
         const value = params.get(key);
         if (value) playUrl.searchParams.set(key, value);
       }

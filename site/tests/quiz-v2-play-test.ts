@@ -125,3 +125,12 @@ test('quiz-v2 play local builder preserves selected filters in the URL and sessi
   await expect(page.getByTestId('qv2p-session-filters')).toContainText('"topicSlugs":["control-rod-drive"]');
   await expect(page.getByTestId('qv2p-session-filters')).toContainText('"referenceMode":"exclude"');
 });
+
+test('quiz-v2 play accepts explicit graph-selected question slugs', async ({ page }) => {
+  await page.goto('quiz-v2/play/?slugs=q8-pzr-saturation-rcp-restart&count=10&seed=graph-selected-q8');
+
+  await expect(page.getByTestId('qv2p-session-total')).toHaveText('1');
+  await expect(page.getByTestId('qv2p-session-count')).toHaveText('1');
+  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"questionSlugs":["q8-pzr-saturation-rcp-restart"]');
+  await expect(page.locator('.qv2p-detail:not(.hidden)')).toHaveAttribute('data-qv2p-detail', 'q8-pzr-saturation-rcp-restart');
+});

@@ -86,13 +86,21 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   const adminDetail = page.getByTestId('gv2-detail-topic:admin');
   await expect(adminDetail).toBeVisible();
   await expect(page.getByTestId('gv2-related-questions-topic:admin')).toContainText('2023 Q23');
-  await expect(page.getByTestId('gv2-actions-topic:admin')).not.toContainText('Practice this topic');
+  await expect(page.getByTestId('gv2-actions-topic:admin')).not.toContainText('Generate quiz from this node');
 
   // Topics with eligible practice questions hand off directly into quiz-v2 with the topic filter set.
   await page.getByTestId('gv2-focus-neighborhood').uncheck();
   await page.getByTestId('gv2-search').fill('topic:pressurizer-level-and-press-control');
   const practiceTopic = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: 'Pressurizer Level & Press Control' }).first();
   await practiceTopic.getByRole('button').click();
-  await expect(page.getByTestId('gv2-actions-topic:pressurizer-level-and-press-control').getByRole('link', { name: /Practice this topic/i }))
+  await expect(page.getByTestId('gv2-actions-topic:pressurizer-level-and-press-control').getByRole('link', { name: /Generate quiz from this node/i }))
     .toHaveAttribute('href', /\/quiz-v2\/play\/\?topics=pressurizer-level-and-press-control&count=10$/);
+  await expect(page.getByTestId('gv2-actions-topic:pressurizer-level-and-press-control')).toContainText('eligible question');
+
+  // Question/source/article nodes can generate a quiz from their explicit eligible related-question pool.
+  await page.getByTestId('gv2-search').fill('q8-pzr-saturation-rcp-restart');
+  const eligibleQuestion = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: '2018 Q8' }).first();
+  await eligibleQuestion.getByRole('button').click();
+  await expect(page.getByTestId('gv2-actions-question:q8-pzr-saturation-rcp-restart').getByRole('link', { name: /Generate quiz from this node/i }))
+    .toHaveAttribute('href', /\/quiz-v2\/play\/\?slugs=q8-pzr-saturation-rcp-restart&count=1$/);
 });
