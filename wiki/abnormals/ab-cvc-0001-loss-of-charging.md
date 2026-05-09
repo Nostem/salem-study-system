@@ -69,10 +69,15 @@ Returning the Master Flow Controller (MFC) to auto PRIOR to returning PZR level 
 Charging line leak diagnosis: <span class="hi-exam">seal injection flow lowering + PZR level lowering + 2R41 (Plant Radiation Monitor) rising + letdown line flashing</span> = leak on the CVCS <span class="hi-exam">charging</span> line. A <span class="hi-exam">charging line leak IS an entry condition</span> for AB.CVC-0001. <span class="hi-trap">Trap: letdown line leak shows similar symptoms (PZR level lowering, radiation rising) but would NOT cause seal injection to lower or letdown line flashing. Letdown line leak is NOT an entry condition for AB.CVC-0001.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #1</div>
+Controlling PZR Level Channel I fails low at 100% power — letdown isolates and Master Flow Controller raises charging flow. Crew takes manual control of MFC, returns PZR level to program, selects operable channel for Control/Alarm/Recorders. Letdown restoration sequence: ensure <span class="hi-exam">2CV7</span> open; place <span class="hi-exam">2CV18</span> in manual and close/open until close PB extinguishes; open <span class="hi-exam">2CV2 and 2CV277</span> then place both in auto; verify charging flow ~<span class="val-normal">85-90 gpm</span>; open a 75 gpm orifice while adjusting 2CV18 to control letdown pressure ~300 psig; place 2CV18 in auto. CRS enters <span class="hi-exam">TS LCO 3.3.1.1 Action 6</span>. OHA E-20 PZR HTR ON LVL HI is expected to annunciate due to no letdown with charging flow established.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[EDGs]]
 - Related exam questions: [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]]
 - Related JPMs: [[2018 JPM Sim-b]], [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

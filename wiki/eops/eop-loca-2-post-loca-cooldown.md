@@ -93,9 +93,16 @@ EOP-LOCA-2 Step 35.3 accumulator isolation: <span class="hi-exam">accumulators w
 Step 19 RCP Status with <span class="hi-exam">RCS subcooling NOT &gt;0&deg;F</span>: per Step 19.1 RNO, the CRS proceeds directly to <span class="hi-exam">Step 34 — bypassing charging and SI pump reduction steps</span>. Required actions: <span class="hi-exam">start ECCS pumps as necessary to restore RCS subcooling, and open BIT isolation valves if previously shut</span>. <span class="hi-trap">Trap: distractors that direct restoring PZR level are incorrect because RCS depressurization (already performed in stem) is only stopped when PZR level is adequate (&gt;25%) — the loss of subcooling drives Step 19.1 RNO regardless of PZR level. Initiate-SI distractors are incorrect because only specific required ECCS components are operated after the initial SI actuation has already occurred.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #1</div>
+Entered from EOP-TRIP-3 CAS when PZR level cannot be maintained &gt;11% during SI termination. <span class="hi-exam">Discriminating event:</span> in TRIP-3, opening 2CV68 and 2CV69 (charging discharge valves) reveals a previously isolated SBLOCA — leak escalates from ~150 gpm to ~2000 gpm equivalent. <span class="hi-exam">RO opens BIT isolation valves 2SJ4, 2SJ5, 2SJ12, 2SJ13 and shuts normal charging line isolation valves 2CV68 and 2CV69</span> per CAS direction; CRS transitions to EOP-LOCA-2 to commence the post-LOCA cooldown and depressurization sequence with continued ECCS injection.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[CVCS]], [[Pressurizer & PRT]]
+- Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related exam questions: [[2016 Q82]], [[2016 Q87]], [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]]
 - Related JPMs: [[2023 JPM Sim-c]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -113,11 +113,16 @@ EOP-LOCA-1 entered from EOP-TRIP-1 after LBLOCA. STA reports <span class="hi-exa
 LBLOCA precursor scenario: TRIP-1 → LOCA-1 → LOCA-3 step 21 waiting for RWST lo-lo. <span class="hi-exam">All ECCS pumps operating (except 22 CS pump stopped at LOCA-1 step 8) when both RHR pumps cavitate</span> from sump blockage, triggering APPX-7 entry from the LOCA-3 CAS.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #1</div>
+Entered from EOP-TRIP-1 with 2 or more radiation monitor channels rising or in warning/alarm. Key LOCA-1 verifications before transition to TRIP-3: PO confirms total <span class="hi-exam">AFW flow &ge;22E4 lbm/hr or SG NR &gt;9% in at least one SG</span>, then maintains 19-33% level; PO reports no ruptured SGs. RO resets SI/Phase A/Phase B isolations, opens 21 and 22CA330s; PO resets 2C SEC and 230V control centers. RO resets <span class="hi-exam">SGBD Sample Isolation Bypass and opens 21-24SS94s</span>; CRS directs chemistry to sample SGs for activity and boron. <span class="hi-exam">SI termination criteria met</span>: PORVs shut with Block valves open, subcooling &gt;0 °F, AFW flow &gt;22E4 lbm/hr or SG NR &gt;9%, RCS pressure stable or rising, PZR level &gt;11% — CRS transitions to EOP-TRIP-3.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]], [[EOP-APPX-7 — Containment Sump Blockage]]
 - Related exam questions: [[2016 Q4]], [[2016 Q44]], [[2016 Q45]], [[2016 Q73]], [[2016 Q81]], [[2016 Q82]], [[2016 Q84]], [[2016 Q87]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

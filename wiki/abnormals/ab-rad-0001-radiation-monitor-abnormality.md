@@ -60,11 +60,16 @@ AB.RAD-0001 Attachment routing: <span class="hi-exam">Attachment 1 (Process Radi
 OHA A-6 RMS TRBL during 35 gpm RCS leak inside containment. <span class="hi-exam">2R11A containment radiation monitor rising/in alarm</span>. CRS enters AB.RAD-0001 concurrent with AB.RC-0001. Rad Pro contacted for CFCU operation recommendation — PO places <span class="hi-exam">2 CFCUs in Low Speed and 2 in High Speed</span>.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #1</div>
+OHA A-6 unexpected annunciation during a 20 gpm RCS leak at 100% power. <span class="hi-exam">2R11A containment radiation monitor reading rises</span> and OHA C-2 CNTMT SUMP PMP START unexpected annunciates. CRS enters AB.RAD-0001 concurrent with AB.RC-0001. Rad Pro contacted for CFCU recommendation — PO places <span class="hi-exam">2 CFCUs in Low Speed and 2 CFCUs in High Speed</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]], [[Refueling]], [[CAV]]
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related exam questions: [[2018 Q7]], [[2018 Q83]], [[2019 Q8]], [[2019 Q33]], [[2020 Q23]], [[2020 Q51]], [[2022 Q23]], [[2023 Q62]]
 - Related JPMs: [[2023 JPM Sim-h]]
-- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -107,11 +107,16 @@ SEC Mode II* (Single Bus Degraded UV) actuation after SI/SEC reset: with all SEC
 SEC vital instrument bus mapping: <span class="hi-exam">A, B, C SECs are powered from their respective Vital Instrument Buses (VIB)</span> and control the equipment powered from the respective 4KV and 460V buses. Salem Unit 2 equipment mapping: <span class="hi-exam">21 Charging Pump = B vital bus (2BVIB27); 21 Safety Injection Pump = A vital bus (2AVIB24); #2 Emergency Air Compressor (ECAC) = C vital bus (2CVIB9)</span>. With SEC BLOCK switches on 2RP1 inoperable, the only way to start equipment that the SEC has not commanded to run is to deenergize the corresponding VIB — which removes the SEC inhibit. To start all three pieces of equipment requires deenergizing <span class="hi-exam">2AVIB24, 2BVIB27, AND 2CVIB9</span>. <span class="hi-trap">Trap: any answer with only two of the three buses misses one piece of equipment. Each pump/compressor is on a different vital bus, so all three VIBs must be deenergized.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #1</div>
+After a manual reactor trip and SI for SBLOCA, <span class="hi-exam">SEC loading does not complete on 2A and 2B vital buses</span> — 21 and 22 AFW pumps fail to auto-start (per SEC sequencer). Crew recovery: <span class="hi-exam">block 2A and 2B SECs, then attempt reset</span>. <span class="hi-trap">2A SEC will not reset</span> — CRS dispatches operator to <span class="hi-exam">deenergize 2A SEC</span>. Once 2A SEC is deenergized, RO can manually start 22 AFW pump (and 21 AFW pump), satisfying CT#1 (establish at least 22E4 lbm/hr AFW flow before transition to FRHS-1). 2C SEC is later reset normally during EOP-LOCA-1.
+</div>
+
 ## Connections
 
-- Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]]
-- Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]]
+- Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]], [[AFW]]
+- Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
 - Related exam questions: [[2016 Q18]], [[2016 Q19]], [[2016 Q39]], [[2016 Q41]], [[2016 Q43]], [[2016 Q55]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
-- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

@@ -322,3 +322,29 @@ jpms:
     alternate_path: false
     source: New
     task_number: "1130010501"
+
+scenarios:
+  - number: 1
+    title: "PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation"
+    pages: "1-27"
+    num_events: 4
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-LOCA-1
+      - EOP-TRIP-3
+      - EOP-LOCA-2
+    abnormals_entered:
+      - AB.CVC-0001
+      - AB.RC-0001
+      - AB.RAD-0001
+      - AB.LOAD-0001
+    critical_tasks:
+      - id: "CT-4"
+        ct_label: "CT#1"
+        description: "Establish the minimum required feed flow (at least 22E4 lbm/hr AFW flow, or 9% NR level in at least one SG) prior to a transition to FRHS-1 being required."
+        time_critical: false
+      - id: "CT-6"
+        ct_label: "CT#2"
+        description: "Establish flow from at least one high-head ECCS pump (manually open BIT isolation valves 2SJ12/2SJ13) before transition out of EOP-TRIP-1."
+        time_critical: false

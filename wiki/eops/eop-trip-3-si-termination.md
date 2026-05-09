@@ -40,10 +40,15 @@ CAS in EOP-TRIP-3: <span class="hi-exam">if PZR level cannot be maintained > 11%
 Entered from EOP-LOSC-1 following feedwater line break isolation. RO resets SI, Phase A, Phase B. Resets all SECs and 230V control centers. <span class="hi-exam">Stops all but one charging pump, stops SI pumps, stops RHR pumps.</span> Restores normal charging alignment: opens 2CV139 and 2CV140, closes 2SJ4/5/12/13, closes 2CV55, opens 2CV68 and 2CV69. Verifies <span class="hi-exam">RCS pressure &gt;1540 psig</span>. Restores normal letdown: opens 2CV2 and 2CV277, opens 2CV7, adjusts 2CV55 to maintain &gt;87 gpm, opens one letdown orifice, adjusts 2CV18 to maintain letdown pressure at <span class="hi-exam">300 psig</span>.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #1</div>
+Entered from EOP-LOCA-1 after SI termination criteria are met (subcooling &gt;0 °F, AFW flow &gt;22E4 lbm/hr or SG NR &gt;9%, RCS pressure stable or rising, PZR level &gt;11%). RO resets SI/Phase A/Phase B isolations if not previously reset; opens 21 and 22CA330s; PO resets 2C SEC and 230V control centers. RO stops all but one charging pump; aligns charging suction to RWST; opens 2CV139 and 2CV140; <span class="hi-exam">shuts BIT isolation valves 2SJ4, 2SJ5, 2SJ12, 2SJ13</span>; shuts 2CV55 charging flow control valve; opens <span class="hi-exam">2CV68 and 2CV69 charging discharge valves</span>. <span class="hi-trap">Discriminating step: opening 2CV68/2CV69 reveals an unisolable RCS leak — leak grows to ~2000 gpm equivalent. RO adjusts 2CV55 to maintain PZR level &gt;25% but level cannot be stabilized.</span> Per CAS, RO re-opens BIT isolation valves 2SJ4/5/12/13 and shuts normal charging line isolation valves 2CV68/2CV69. CRS transitions to <span class="hi-exam">EOP-LOCA-2, Post LOCA Cooldown and Depressurization</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]], [[RHR]], [[CVCS]]
-- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
+- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
 - Related exam questions: [[2020 Q25]], [[2023 Q38]], [[2023 Q23]], [[2023 Q76]]
-- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]
