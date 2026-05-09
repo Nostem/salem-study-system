@@ -35,6 +35,6 @@ EOP-LOCA-1 timing requirements: <span class="hi-exam">start preparations for hot
 
 - Related systems: [[ECCS]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2018 Q77]], [[2019 Q77]]
+- Related exam questions: [[2016 Q73]], [[2018 Q77]], [[2019 Q77]]
 - Related JPMs: [[2019 JPM Sim-b]], [[2023 JPM Sim-b]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Operating Exam]]

@@ -142,12 +142,17 @@ EOP-TRIP-1 entered after LBLOCA during orderly unit shutdown. <span class="hi-ex
 For a single faulted (unisolable) SG event with successful MSLI, the flow path after EOP-TRIP-1 is to <span class="hi-exam">EOP-LOSC-1</span>. <span class="hi-exam">SI is NOT reset in TRIP-1</span> — SI reset (and the subsequent Phase A reset) is part of LOSC-1 actions. SS94 (SG B/D Sample Valves) cannot be reopened in TRIP-1 because Phase A is still actuated; the reset sequence is performed in LOSC-1.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q74</div>
+When an AOP (e.g., S2.OP-AB.STM-0001) calls for a reactor trip during AOP performance, the AOP is exited and EOP-TRIP-1 is entered (per OP-AA-101-111-1003 Step 4.4.1). After EOP-TRIP-1 actions are completed, <span class="hi-exam">the AOP entry conditions must be re-evaluated</span> — if still met, the <span class="hi-exam">AOP is re-entered from the beginning</span>, not from where it was left.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment Spray]], [[Main Turbine]], [[CCW]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]], [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
-- Related exam questions: [[2016 Q32]], [[2016 Q39]], [[2016 Q65]], [[2018 Q49]], [[2018 Q68]], [[2018 Q98]], [[2019 Q48]], [[2019 Q49]], [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
+- Related exam questions: [[2016 Q32]], [[2016 Q39]], [[2016 Q65]], [[2016 Q74]], [[2018 Q49]], [[2018 Q68]], [[2018 Q98]], [[2019 Q48]], [[2019 Q49]], [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
 - Related JPMs: [[2018 JPM Sim-g]], [[2018 JPM Sim-h]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

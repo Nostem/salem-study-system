@@ -45,10 +45,15 @@ Confirms 2020 Q73: upon declaration of a Site Area Emergency (or ALERT or higher
 Planned Emergency Exposure Limits (PEEL) per NC.EP-EP.ZZ-0304 (SRO question): <span class="hi-exam">PEEL for life saving = 75 REM</span>. <span class="hi-exam">PEEL for accident mitigation = 25 REM</span>. Emergency Coordinator authorization for LIFE SAVING TASKS requiring emergency exposure must be done <span class="hi-exam">verbally</span> — meaning <span class="hi-exam">ONLY the EDO</span> (the current Emergency Coordinator) can approve it. <span class="hi-trap">Trap: the SM previously served as interim EDO before turnover, but once EC duties are transferred to the EDO, only the EDO can authorize emergency exposure. The SM no longer has that authority.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q71</div>
+Per NC.EP-EP.ZZ-0304: <span class="hi-exam">ALERT</span> is the lowest emergency classification that automatically extends ERO personnel annual TEDE dose limits (with NRC Form-4 on file) — limits raised from <span class="hi-exam">2000 mrem to 4500 mrem</span>. <span class="hi-trap">Trap: 5000 mrem is the NRC 10CFR20 yearly TEDE limit, not the Salem ERO extended limit. Site Area Emergency is NOT the lowest classification triggering the extension — ALERT is.</span>
+</div>
+
 ## Connections
 
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related concepts: [[Radiation Monitoring]]
-- Related exam questions: [[2019 Q45]], [[2019 Q97]], [[2020 Q73]], [[2022 Q71]]
+- Related exam questions: [[2016 Q71]], [[2019 Q45]], [[2019 Q97]], [[2020 Q73]], [[2022 Q71]]
 - Related JPMs: [[2023 JPM SRO-A3]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]

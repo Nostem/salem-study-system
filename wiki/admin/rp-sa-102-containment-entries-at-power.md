@@ -27,9 +27,15 @@ Station administrative procedure governing containment entries while the reactor
 Containment entry at power for 22 CFCU tag removal requires <span class="hi-exam">Radiation Protection Supervisor (RPS) authorization</span>. Dose calculation from survey map: gamma = 5 mrem/hr, neutron = 40 mrem/hr. For 12-minute entry: gamma dose = 1 mrem, neutron dose = 8 mrem, total = 9 mrem per operator. Operator A (1992 mrem year-to-date + 9 = <span class="hi-exam">2001 mrem) exceeds 2000 mrem Administrative Dose Control Limit</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q72</div>
+Used in conjunction with SC.SA-ST.ZZ-0001 — <span class="hi-exam">RP Supervisor approval is required</span> to enter containment in Modes 1 or 2 during <span class="hi-exam">ANY reactor power change &gt;5% / hr</span>. Personnel limit is <span class="hi-exam">10 people per operable air lock (20 people total with both airlocks)</span>. <span class="hi-trap">Trap: the trigger applies to ANY power change &gt;5% / hr (ascension or descension), not power ascension only.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]], [[CFCUs]]
-- Related procedures: [[RP-AA-203 — Exposure Control and Authorization]], [[RP-AA-300 — Radiological Survey Program]]
+- Related procedures: [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]], [[RP-AA-203 — Exposure Control and Authorization]], [[RP-AA-300 — Radiological Survey Program]]
+- Related exam questions: [[2016 Q72]]
 - Related JPMs: [[2018 JPM SRO-A2]], [[2022 JPM SRO-A4]]
-- Related exam: [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]]

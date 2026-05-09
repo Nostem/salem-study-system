@@ -85,10 +85,15 @@ LOCA-3 step 11.2 with no CCW pumps running directs single-train recirculation al
 Step 9 / Table C — required CS pumps based on RWST level, containment pressure, and number of low-speed CFCUs. With a LBLOCA, 2C 4KV vital bus locked out (22 CS pump deenergized), 22 and 24 CFCUs failed to start, and containment pressure 18 psig: at the LOCA-3 entry, RWST is <span class="hi-exam">15.2 ft</span> and depletes at <span class="hi-exam">~13000 gpm</span> (2 RHR, 1 charging, 1 SI, 1 CS pump running). It takes over 9 minutes to drain below 1 ft, so 7 minutes after the RWST Lo alarm Table C indicates <span class="hi-exam">ONE CS pump required</span>; with 22 CS pump unpowered, <span class="hi-exam">21 CS pump only</span> runs. <span class="hi-trap">BOTH is the answer for RWST level 1–15.2 ft if containment pressure >47 psig OR no CFCUs running. NEITHER is the answer if RWST &lt;1 ft (drain-down miscalculation).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q73</div>
+EOP-LOCA-5 entry conditions — five entry paths: <span class="hi-exam">(1) LOCA-1 step 16 with no RHR pump and associated SJ44 available; (2) LOCA-3 step 2, Containment sump level &lt;62%; (3) LOCA-4 step 5, no RHR pumps running; (4) LOCA-6 step 6.2 with RH1, 2, 26 shut, 21 and 22 RH19 shut, 21 and 22 SJ49s shut and RCS pressure not rising; (5) loop from LOCA-5 step 28 when RWST level is still above LO-LO (1.2 ft) setpoint</span>. The correct condition pairs <span class="hi-exam">RWST LOW LEVEL alarm with sump level &lt;62%</span> (sump should be rising as RWST is lowering). <span class="hi-trap">Trap: RWST LO-LO entry conditions for stopping ECCS pumps reflects expected behavior during CL recirc with one CS pump still drawing from RWST — it is NOT a LOCA-5 entry. LOCA-6 stopping both RHR pumps does not warrant LOCA-5 entry because LOCA-5 only requires RHR pumps to be available, not in service. LOCA-4 has no provision to check for hot leg recirc flow path blockage.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
-- Related exam questions: [[2016 Q5]], [[2016 Q26]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related exam questions: [[2016 Q5]], [[2016 Q26]], [[2016 Q73]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

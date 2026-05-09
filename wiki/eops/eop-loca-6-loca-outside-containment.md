@@ -64,6 +64,6 @@ After closing <span class="hi-exam">21SJ49 Cold Leg Isolation Valve</span> to at
 
 - Related systems: [[ECCS]], [[RCS]], [[RVLIS]], [[RHR]], [[Radiation Monitoring]]
 - Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2016 Q22]], [[2018 Q63]], [[2019 Q63]], [[2019 Q81]], [[2020 Q16]], [[2020 Q25]], [[2022 Q18]], [[2023 Q16]]
+- Related exam questions: [[2016 Q22]], [[2016 Q73]], [[2018 Q63]], [[2019 Q63]], [[2019 Q81]], [[2020 Q16]], [[2020 Q25]], [[2022 Q18]], [[2023 Q16]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

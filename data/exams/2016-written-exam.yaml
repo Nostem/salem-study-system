@@ -1037,3 +1037,73 @@
     ka_importance: 3.9
     type: RO
     tier_group: "Tier 3"
+
+  - number: 71
+    topic: "Emergency TEDE dose extension — ALERT extends ERO limits from 2000 to 4500 mrem (NRC Form-4 on file)"
+    answer: D
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (135687)"
+    question_modification_method: "Direct From Source"
+    systems: []
+    tech_specs: []
+    ka: "194001G304"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 72
+    topic: "Containment entry RPS approval — ANY power change >5% / hr in Modes 1 or 2; 10 people per air lock (20 total)"
+    answer: D
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (159346)"
+    question_modification_method: "Editorially Modified"
+    systems:
+      - containment-systems
+    tech_specs: []
+    ka: "194001G313"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 73
+    topic: "EOP-LOCA-5 entry conditions — RWST LOW alarm with containment sump <62% (LOCA-3 Step 2)"
+    answer: A
+    cognitive_level: "Application"
+    source: "Facility Exam Bank (42264)"
+    question_modification_method: "Editorially Modified"
+    systems:
+      - emergency-core-cooling-systems
+      - residual-heat-removal
+      - containment-spray
+    tech_specs: []
+    ka: "194001G404"
+    ka_importance: 4.5
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 74
+    topic: "AOP re-entry after EOP performance — re-evaluate entry conditions, re-enter from beginning if still met"
+    answer: C
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (72934)"
+    question_modification_method: "Editorially Modified"
+    systems: []
+    tech_specs: []
+    ka: "194001G411"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 75
+    topic: "Loss of all OHA — initiate continuous control console walkdown (S2.OP-AB.ANN-0001)"
+    answer: C
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (155633)"
+    question_modification_method: "Direct From Source"
+    systems:
+      - annunciators
+    tech_specs: []
+    ka: "194001G432"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 3"
