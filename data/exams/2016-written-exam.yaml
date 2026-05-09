@@ -212,3 +212,81 @@
     ka_importance: 3.4
     type: RO
     tier_group: "Tier 1/Group 1"
+
+  - number: 16
+    topic: "Steam Line Rupture — RCS cooldown rate after MSLI lowers as faulted SG pressure lowers"
+    answer: B
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - main-steam
+      - steam-generators
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "000040 K1.02"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 17
+    topic: "Loss of MFW (21 SGFP trip) — UNEXPECTED RC PRESS DEVIATION hi → AB.PZR-0001"
+    answer: B
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    systems:
+      - feedwater-and-condensate
+      - pressurizer
+      - turbine-generator
+      - control-rod-drive
+    tech_specs: []
+    ka: "000054 G4.45"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 18
+    topic: "Station Blackout — deenergize SECs prior to energizing 2B 4KV Vital bus"
+    answer: C
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    systems:
+      - secs
+      - 4kv
+      - diesel-generators
+      - emergency-core-cooling-systems
+    tech_specs: []
+    ka: "000055 EA2.03"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 19
+    topic: "LOOP during 11 SI Pump IST — neither SI pump running after blackout strip"
+    answer: D
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - secs
+      - 4kv
+      - diesel-generators
+    tech_specs: []
+    ka: "000056 A2.03"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 20
+    topic: "Loss of 2A 115VAC VIB — 23AF21/24AF21 fail closed; NEO dispatched"
+    answer: B
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    systems:
+      - auxiliary-feedwater
+      - 115v-ac
+      - secs
+    tech_specs: []
+    ka: "000057 AA1.06"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 1"

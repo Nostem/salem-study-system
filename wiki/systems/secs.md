@@ -77,9 +77,21 @@ LOOP in MODE 4 with 2C EDG paralleled to the grid for surveillance: 2A and 2B 4K
 2B SEC fails to actuate on SI signal after LBLOCA. RO reports available equipment on 2B bus failed to start. Recovery: <span class="hi-exam">Block 2B SEC, reset 2B SEC, manually start safeguards loads for 2B bus using EOP-TRIP-1 Table A</span>. Also: 2SW26 NOT in required position — PO manually closes. After SI/Phase A/Phase B reset, <span class="hi-exam">2A and 2C SECs reset normally; 2B SEC is de-energized</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q18</div>
+Per EOP-LOPA-1: prior to energizing a deenergized 4KV Vital bus with an EDG, the crew must <span class="hi-exam">deenergize ALL SECs and depress the Stop PBs for SEC actuated components</span>. The Bases give two reasons: <span class="hi-exam">prevent overloading the bus</span> when power is restored, and <span class="hi-exam">prevent SI-actuated valve realignment</span> that would occur if an SI signal is sensed after power restoration.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q19</div>
+On a LOOP with NO SI signal, the SECs <span class="hi-exam">strip the 4KV vital bus breakers BEFORE sequencing on BLACKOUT loads</span>. Both SI pumps would only be loaded onto the buses if there were an <span class="hi-exam">accident signal coupled with the Blackout signal</span> (SEC Mode III). With LOOP only, blackout loading runs charging pumps but neither SI pump starts — including any SI pump that was running for IST prior to the LOOP (it strips with the bus). Salem Unit 1 mapping: <span class="hi-exam">11/12 SI pumps are powered from 1A/1C 4KV Vital Buses</span> (not 1B).
+</div>
+
 ## Connections
 
 - Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]]
-- Related exam questions: [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
+- Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]]
+- Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
+- Related exam questions: [[2016 Q18]], [[2016 Q19]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

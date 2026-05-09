@@ -41,11 +41,16 @@ During LOOP, CRS directs transfer of 22 Backup Group PZR heaters to emergency po
 LOPA-1 crew requests assistance to restore power IAW AB.LOOP-0001 while continuing with LOPA-1 CAS. Blackout coping actions in Attachment 2, Part A completed within 30 minutes.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q19</div>
+Attachment 3 of S1.OP-AB.LOOP-0001: with a LOOP and <span class="hi-exam">NO SI signal</span>, the SEC strips the 4KV vital bus breakers before sequencing on BLACKOUT loads — neither SI pump starts. Even if 11 SI Pump was running for IST when the LOOP occurred, it trips with the bus strip and is not auto-restarted. Both SI pumps would only restart on an <span class="hi-exam">accident signal coupled with the Blackout signal</span> (SEC Mode III). Bus mapping: <span class="hi-exam">11/12 SI pumps powered from 1A/1C 4KV Vital Buses</span>.
+</div>
+
 ## Connections
 
-- Related systems: [[DC Power]], [[RCPs]], [[CVCS]], [[Pressurizer & PRT]]
-- Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.LOOP-0003 — Partial Loss of Offsite Power]]
-- Related exam questions: [[2023 Q9]], [[2023 Q10]]
+- Related systems: [[DC Power]], [[RCPs]], [[CVCS]], [[Pressurizer & PRT]], [[ECCS]], [[SECs]], [[4KV]]
+- Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.LOOP-0003 — Partial Loss of Offsite Power]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
+- Related exam questions: [[2016 Q19]], [[2023 Q9]], [[2023 Q10]]
 - Related JPMs: [[2020 JPM IP-j]], [[2023 JPM IP-i]], [[2022 JPM IP-i]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]]

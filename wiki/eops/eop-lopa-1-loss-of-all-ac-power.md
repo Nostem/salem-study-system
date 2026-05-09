@@ -39,11 +39,16 @@ Vital Power Restoration Steps: prior to restoring AC power, <span class="hi-exam
 Shed non-essential DC loads per Checkoff Sheet 3 (COS 3-1 thru 3-3), 125VDC LOAD SHED LIST. Operator locates distribution panels at <span class="hi-exam">64 ft elevation</span> (2A 125VDC Bus, 2ADC, 2B 125VDC Bus, 2DDC, 2CDC panels) and <span class="hi-exam">100 ft elevation switchgear room</span> (2AADC, 2BBDC, 2CCDC panels). Opens ONLY breakers designated on the checkoff sheet (not all breakers in each panel). Checkoff Sheet 3 sections may be performed in any order.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q18</div>
+EOP-LOPA-1 Continuous Action Step for energizing a deenergized 4KV vital bus with an EDG comes <span class="hi-exam">AFTER the step to deenergize all SECs and depress the Stop PB for all SEC controlled safety related loads</span>. The Bases Document (page 15) states the dual reason: <span class="hi-exam">(1) prevent the bus from overloading</span> when power is restored, and <span class="hi-exam">(2) prevent the SI actuated valve realignment that will occur if an SI signal is sensed after power is restored</span>. <span class="hi-trap">SI is initiated at Step 21 NOT to prevent a charging pump from running, but to prevent the SI actuated valve realignment after power restoration. Non-essential DC loads are shed at Step 35 (extends battery capability — not required prior to bus energization). The SBO compressor is started as part of Blackout Coping Actions in Attachment 2 Part A of AB.LOOP-1 (required within 60 minutes of Blackout — not required prior to bus energization).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Control Air]], [[DC Power]], [[EDGs]], [[Service Water]], [[4KV]], [[SECs]], [[RCPs]], [[CVCS]]
 - Related EOPs: [[EOP-LOPA-4 — Extended Loss of All AC Power]]
-- Related exam questions: [[2018 Q59]], [[2022 Q77]]
+- Related exam questions: [[2016 Q18]], [[2018 Q59]], [[2022 Q77]]
 - Related JPMs: [[2018 JPM IP-i]], [[2019 JPM Sim-g]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]]
