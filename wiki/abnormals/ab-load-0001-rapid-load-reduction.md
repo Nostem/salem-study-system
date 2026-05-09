@@ -52,6 +52,11 @@ AB.LOAD-0001 entered to perform a controlled <span class="hi-exam">5%/min load r
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-7</div>
+Entered from AB.TL-0001 (Loss of Main Turbine Lube Oil) after auto-start of ABOP and HP Seal Oil Backup pump requires a turbine shutdown. CRS directs power reduction at <span class="hi-exam">&lt;5%/min</span>. RO calculates boron addition required and maintains Tavg/Tref mismatch at minimum. PO monitors SGFP suction pressure (&gt;300 psig) and condensate pump suction temps. During the load reduction, main turbine bearing vibrations rise toward trip criteria — CRS may raise the power reduction rate based on rising vibrations. CRS ultimately directs reactor trip when conditions deteriorate (Rx power &gt;P-9 / 49%).
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #1</div>
 AB.LOAD-0001 entered (or AB.RC-0001 power reduction performed) following confirmed 20 gpm RCS leak exceeding TS 3.4.7.2 limits at 100% power. Operations Director directs <span class="hi-exam">30% per hour load reduction to 20%</span> in preparation for taking Unit 2 offline to investigate and repair the RCS leak. RO initiates boration; PO initiates turbine load reduction at the CRS-specified rate. <span class="hi-trap">During the controlled downpower the RCS leak escalates from 20 gpm to 150 gpm — PZR level cannot be maintained &gt;17%; CAS action requires manual reactor trip and SI before reaching FRHS-1 entry conditions.</span>
 </div>
@@ -61,5 +66,5 @@ AB.LOAD-0001 entered (or AB.RC-0001 power reduction performed) following confirm
 - Related systems: [[500KV]], [[Main Turbine]], [[Circ Water]]
 - Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.COND-0001 — Loss of Condenser Vacuum]]
 - Related exam questions: [[2023 Q88]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]

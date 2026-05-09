@@ -64,6 +64,11 @@ Entry conditions: rods <span class="hi-exam">withdraw OR insert</span> a MINIMUM
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-7</div>
+Event 3: <span class="hi-exam">22 Hot Leg RTD Avg Sum fails high (value 650 F)</span> causing continuous rod insertion at <span class="hi-exam">72 spm</span>. RO verifies no runback in progress and places rods in Manual. CRS enters AB.ROD-0003. RO reports rod motion stopped, motion was inward, NO NI failures, and <span class="hi-exam">22 loop Tavg failed high with NO dilution in progress</span>. Places MFC in Manual and adjusts charging flow per Att. 2 to return PZR level to program. Selects <span class="hi-exam">Deviation Defeat for Loop 22 DT and Tave</span> on 2CC2; selects recorders to channel other than 22 loop. After Tave within <span class="hi-exam">1.5°F of program</span>, restores rods to Auto. CRS initiates removing 22 loop RCS temperature channel from service IAW <span class="hi-exam">S2.OP-SO.RPS-0002</span>; enters TSAS <span class="hi-exam">3.3.1.1 Action 6 and 3.3.2.1 Action 19</span>.
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #2</div>
 22 RC Loop Tavg Channel fails high at 40% power. Rods step in unexpectedly (Tavg/Tref deviation). RO reports no turbine runback, places rod control in Manual. OHAs E-8 (Rod Insertion Lo) and E-16 (Rod Insertion Lo-Lo). CRS enters AB.ROD-0003. RO identifies <span class="hi-exam">22 RC Loop Tavg channel failed high</span>. Adjusts rods to maintain Tavg within 1.5 deg of program. Defeats 22 loop dT and Tavg on 2CC2, selects alternate channel. Restores rods to ARO, returns rod control to Auto. CRS enters TSAS <span class="hi-exam">3.3.1.1 Action 6 (6 hr) and 3.3.2.1.b Action 19 (6 hr)</span>. CRS initiates S2.OP-SO.RPS-0002 to place 22 RC Loop Tavg in tripped condition.
 </div>
@@ -74,5 +79,5 @@ Entry conditions: rods <span class="hi-exam">withdraw OR insert</span> a MINIMUM
 - Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
 - Related exam questions: [[2019 Q67]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]]
-- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2017 Scenario 7]], [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

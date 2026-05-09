@@ -70,6 +70,11 @@ Step 3.7 — PZR level control during SG tube leak: <span class="hi-exam">reduce
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-8</div>
+21 SG tube leak (50 gpm) entered DURING EOP-TRIP-2 after Rx trip. Tube leak detection challenge: <span class="hi-exam">R19 SGBD Rad monitors are O/S due to AFW pump auto-start isolating blowdown; R53 N-16 rad monitors are ineffective with the reactor shut down</span> — only <span class="hi-exam">2R15 Condenser Air Ejector monitor</span> provides a rising indication (OHA A-6 RMS HI RAD OR TRBL). Crew may use S2.OP-SO.SS-0001 section 5.2 to re-open the SS94 sample valves to use the 2R19 monitors. CRS initiates AB.SG-0001 in parallel with EOP-TRIP-2; chemistry confirms elevated activity in 21 SG. PO sets <span class="hi-exam">21MS10 setpoint to 1045 psig</span>, closes 21MS7, 21MS18, 21GB4. CRS dispatches operator to shut 21MS45. (Note: 22/23 RCP trips on the prior loss of 2E bus elevate their SG NR levels and complicate identification — affected SG identification may not be made until SS94s are re-opened to use 2R19 monitors.) Tube then ruptures (escalates to 400 gpm) — exit AB.SG-0001 to manual SI and EOP-TRIP-1.
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #2</div>
 21 SG tube leak at 89.4% power (initially MALF severity 5; severity 650 to escalate to rupture). Entry cue: OHA A-6 with <span class="hi-exam">2R53A 21 Main Steamline N-16 monitor &gt;1000 gpd</span>; reflash on <span class="hi-exam">2R15 Condenser Air Ejector monitor</span>; later <span class="hi-exam">2R19A in warning/alarm</span> with SGBD isolation on high radiation. CRS enters AB.SG-0001 and AB.RAD-0001 in parallel; directs initiation of AB.SG CAS. Affected SG isolation per procedure: PO sets <span class="hi-exam">21MS10 to 1045 psig</span>, ensures 21GB4, 21MS18, and 21MS7 shut; CRS dispatches operator to shut 21MS45 steam supply to 23 AFW pump (rendering 23 AFW inoperable — LCO 3.7.1.2 entered). CRS evaluates leak rate: 21 SG &gt;150 gpd primary-to-secondary leakage triggers <span class="hi-exam">TS 3.4.7.2.c Action Level 3 — &lt;50% in 1 hour and Hot Standby in 6 hours</span>. Leak escalates to rupture; RO trips Rx and initiates SI based on uncontrolled rise in 21 SG NR/WR level — exit AB.SG-0001 to EOP-TRIP-1.
 </div>
@@ -79,5 +84,5 @@ Step 3.7 — PZR level control during SG tube leak: <span class="hi-exam">reduce
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]], [[Radiation Monitoring]]
 - Related exam questions: [[2016 Q14]], [[2016 Q79]], [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]]
 - Related JPMs: [[2019 JPM SRO-A5]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]]

@@ -71,6 +71,11 @@ After a 21 SGFP trip at 100% MOL (no operator action, no Rx trip), an UNEXPECTED
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-7</div>
+2PR2 PZR PORV develops a leak (~30 gpm) during a 76%→89% power ascension. Crew identifies the leak from <span class="hi-exam">lowering PZR pressure / rising PORV tailpipe temp / rising charging flow / lower spray valve demand / PRT indications</span>. Diagnostic isolation: RO closes <span class="hi-exam">both PORV stop valves (2PR6 and 2PR7)</span>, then opens 2PR6 (tailpipe temps still lowering), then opens 2PR7 (tailpipe temps rising) — confirms <span class="hi-exam">2PR2 leaking</span>. RO closes 2PR7 to isolate. CRS enters <span class="hi-exam">TSAS 3.4.5 action a</span> (1-hour LCO).
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #3</div>
 PZR Pressure Channel I (PT-455) fails HIGH during a 2% power ascension. PZR heaters de-energize, both PZR Spray valves drive fully open. RO places Master Pressure Controller in manual and lowers demand to close sprays. Selects <span class="hi-exam">Channel III</span> for control, matches MPC demand to current pressure, returns MPC to AUTO. Shuts <span class="hi-exam">2PR6</span> and dispatches WCC to remove power from 2PR6 within <span class="hi-exam">one hour of the channel failure IAW Tech Specs</span>. PO removes failed channel from service IAW <span class="hi-exam">S2.OP-SO.RPS-0003</span>. CRS enters TSAS <span class="hi-exam">3.3.1.1 Action 6, 3.3.2.1.b Action 19*, 3.4.5.b, and 3.2.5</span>.
 </div>
@@ -80,5 +85,5 @@ PZR Pressure Channel I (PT-455) fails HIGH during a 2% power ascension. PZR heat
 - Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[RPS/SSPS]], [[ECCS]]
 - Related exam questions: [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
 - Related JPMs: [[2020 JPM Sim-a]]
-- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2017 Scenario 7]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

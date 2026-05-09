@@ -132,6 +132,11 @@ SPT failure to 0 VAC transfer behavior: when 23 SPT fails to 0 VAC, the SPT tran
 After a manual main turbine trip from 100% power (e.g., RTBs failed, operator tripped via RDMG breakers, then manually tripped turbine), the <span class="hi-exam">4KV Group Buses transfer automatically on low voltage</span> from the unit auxiliary transformer (UAT) source to the SPT source — no direct crew action is required. This auto-transfer continues to function regardless of how the reactor and turbine were tripped.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-8</div>
+Electrical fault on the infeed breaker to the <span class="hi-exam">2E 4KV Group Bus</span> deenergizes the bus 60 s after a spurious OHA A-7 fire alarm. Loss of 2E results in loss of <span class="hi-exam">22 RCP</span> — the reactor trips on <span class="hi-exam">RCS Low Flow</span>. SI is not required at the trip; immediate actions of EOP-TRIP-1 are performed and crew transitions to EOP-TRIP-2. NEO and Fire Protection investigate Zone 33 (Turb Bldg West El 100) and report only a strong acrid smell — no fire. (Note: the bus loss also stops <span class="hi-exam">23 RCP</span> due to its 2E feed, eliminating normal PZR spray capability later in the scenario.)
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2016 Sim-g</div>
 <strong>Energize 2A 4KV Vital Bus from 24 SPT</strong> during recovery from Loss of All AC Power (EOP-LOPA-1 Step 16). After EDG-to-SPT swap per S2.OP-SO.DG-0001 §5.8, S2.OP-SO.4KV-0001 §5.3.6 procedure: <span class="hi-exam">(1) NEO racks up 2AD1AX24ASD (24 STATION POWER TRANSFORMER INFEED BREAKER) at 64' Swgr Rm; (2) press Mimic Bus 2A VITAL INFEED 24ASD pushbutton — Console Bezel 24ASD MIMIC BUS INTLK CLOSE SELECTION illuminates (interlock armed); (3) press AND HOLD control console 24ASD CLOSE pushbutton until 24ASD indicates CLOSED</span>. Verify: bezel light extinguishes; 2A 4KV Vital Bus voltage within band <span class="hi-exam">4.275–4.336KV (normal)</span> or <span class="hi-exam">4.330–4.417KV (single source of off-site power)</span>; OHA J-17 (2A 4KV VTL BUS UNDRVOLT) clears.
@@ -143,5 +148,5 @@ After a manual main turbine trip from 100% power (e.g., RTBs failed, operator tr
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]]
 - Related exam questions: [[2016 Q3]], [[2016 Q55]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
 - Related JPMs: [[2016 JPM Sim-g]], [[2016 JPM IP-k]], [[2018 JPM Sim-g]], [[2022 JPM Sim-g]], [[2020 JPM Sim-h]]
-- Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2017 Scenario 8]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

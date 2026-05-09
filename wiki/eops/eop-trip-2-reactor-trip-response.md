@@ -79,6 +79,11 @@ Transitioned from EOP-TRIP-1 following reactor trip on 23 RCP high vibration (no
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-8</div>
+Transitioned from EOP-TRIP-1 following Rx trip on RCS Low Flow (loss of 22 RCP from 2E Group Bus loss; SI not actuated). PO throttles AFW flow to no less than <span class="hi-exam">22E4 lbm/hr</span>, then maintains 19-33% NR. PO stops 21 and 22 SGFPs. Then <span class="hi-exam">21 SG tube leak (50 gpm)</span> develops — only the <span class="hi-exam">2R15 Condenser Air Ejector rad monitor</span> alarms (R19 SGBD monitors O/S due to AFW auto-start blowdown isolation; R53 N-16 ineffective with Rx S/D). CRS initiates AB.SG-0001 in parallel with TRIP-2; chemistry confirms 21 SG. Tube subsequently ruptures (escalates to 400 gpm) — crew returns to EOP-TRIP-1 to manually initiate SI.
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #1</div>
 Transitioned from EOP-TRIP-1 following reactor trip on 22 RCP seal failure (no SI required). Shortly after entering TRIP-2, <span class="hi-exam">24 SG tube rupture (650 gpm)</span> occurs. Crew identifies tube rupture based on SG NR levels rising, radiation monitors <span class="hi-exam">2R53D, 2R15, 2R41, 2R19D</span> in alarm. CRS directs manual SI initiation and returns to EOP-TRIP-1.
 </div>
@@ -89,5 +94,5 @@ Transitioned from EOP-TRIP-1 following reactor trip on 22 RCP seal failure (no S
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
 - Related exam questions: [[2016 Q8]], [[2016 Q40]], [[2016 Q51]], [[2016 Q52]], [[2016 Q76]], [[2016 Q78]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
-- Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

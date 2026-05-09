@@ -37,6 +37,11 @@ Step 8 — Local reactor trip: when directed from the Control Room to locally tr
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-7</div>
+ATWT during MTLO-driven power reduction: all CR Rx trip attempts fail (Rx Trip Handles, RTBs, RDMG set breakers). RO trips Main Turbine; CRS enters EOP-FRSM-1. <span class="hi-exam">CT#1 (CT-51) — start AFW pumps to establish at least 44E4 lbm/hr AFW flow before completion of FRSM-1 step 2</span> (22 AFW pump fails to provide flow due to Pressure Override circuit failure that cannot be bypassed; PO starts <span class="hi-exam">23 AFW pump</span> when AFW flow is &lt;44E4 lbm/hr). <span class="hi-exam">CT#2 (CT-52) — insert negative reactivity by rods or emergency boration prior to exiting FRSM-1</span>: RO inserts rods until RTBs are open; PO opens 2CV175 and closes 21 and 22CV160 to establish Rapid Boration with both BAT pumps in FAST. After Rapid Boration is flowing, an operator dispatched to locally open RTBs — RTBs and RDMG set motor/generator breakers opened; PRNI &lt;5% with negative IR SUR.
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2019 #3</div>
 ATWS following two dropped rods at ~89% power. Rod speed controller fails at <span class="hi-exam">8 spm in Auto</span>; operator must recognize failure and <span class="hi-exam">insert rods in Manual at 48 spm</span>. 2CV175 Rapid Boration valve fails to open — crew establishes Rapid Boration via <span class="hi-exam">RWST flow path</span>: isolate letdown (2CV3/4/5, 2CV2, 2CV277, 2CV7), open RWST outlets (2SJ1/2SJ2), open BIT valves (2SJ4/5, 2SJ12/13), close charging discharge (2CV40/41, 2CV68/69). <span class="hi-exam">CT-52: Insert negative reactivity (rod insertion or emergency boration) prior to dispatching operators to locally trip reactor.</span>
 </div>
@@ -66,5 +71,5 @@ ATWS at 4% power awaiting Mode 1 (steam dumps in service, 21 SGFP in service, 22
 - Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam questions: [[2016 Q78]], [[2016 Q83]], [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -1,0 +1,66 @@
+exam: 2017
+type: operating
+ilot_class: "15-01"
+notes: >
+  2017 NRC Retake exam — only Section C (simulator scenarios) was re-administered
+  for the 15-01 ILOT class. The original 2016 administration documented JPMs
+  and Sections A/B/C in 2016-operating-exam.yaml; the 2017 retake comprises only
+  ESG-7 and ESG-8 (no JPMs).
+
+scenarios:
+  - number: 7
+    title: "PZR PORV Leak / 22 RC Loop RTD Fail High / Loss of MTLO / ATWT"
+    pages: "1-31"
+    num_events: 5
+    num_critical_tasks: 2
+    classification: General Emergency / per ECG (ATWT with rod insertion)
+    revision: "Rev 01, 4-6-17"
+    provenance: "Modified from 15-01 ILOT ESG-4 — removed loss of 2A 460V bus and BAT pump malfunctions; added leaking PZR PORV (2PR2) and 22 RC Loop RTD failure malfunctions."
+    expected_duration_minutes: 60
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-FRSM-1
+    abnormals_entered:
+      - S2.OP-IO.ZZ-0004
+      - AB.PZR-0001
+      - AB.ROD-0003
+      - AB.TL-0001
+      - AB.LOAD-0001
+    critical_tasks:
+      - id: "CT-51"
+        ct_label: "CT#1"
+        description: "Start AFW pumps to establish at least 44E4 lbm/hr AFW flow before completion of FRSM-1 step 2."
+        time_critical: false
+      - id: "CT-52"
+        ct_label: "CT#2"
+        description: "Add negative reactivity from rod insertion or emergency boration prior to exiting FRSM-1."
+        time_critical: false
+
+  - number: 8
+    title: "23 Charging Trip / Letdown Iso Failure / Loss of 2E Group Bus / 21 SGTL → SGTR / Stuck-Open PORV"
+    pages: "1-33"
+    num_events: 5
+    num_critical_tasks: 2
+    classification: Site Area Emergency / per ECG (SGTR with stuck-open PORV / loss of RCS pressure)
+    revision: "Rev 01, 4-6-17"
+    provenance: "Developed from 2014 Annual ESG-1418 with editorial changes for the 2017 NRC retake exam."
+    expected_duration_minutes: 75
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-TRIP-2
+      - EOP-SGTR-1
+    abnormals_entered:
+      - AB.CVC-0001
+      - AB.RCP-0001
+      - AB.FIRE-0001
+      - AB.SG-0001
+      - S2.OP-SO.CVC-0003
+    critical_tasks:
+      - id: "CT-18"
+        ct_label: "CT#1"
+        description: "Isolate feed flow into and steam flow from 21 SG (close 21MS167; verify 21MS7, 21MS18, 21GB4 closed) prior to a transition to SGTR-3 being required."
+        time_critical: false
+      - id: "CT-19"
+        ct_label: "CT#2"
+        description: "Establish and maintain an RCS temperature so transition from SGTR does not occur because temperature is too high to maintain minimum subcooling, or so low it causes transition to FRTS or FRSM. Cooldown target temperature from Table B; cooldown stopped at <503°F via steam dumps in MS Pressure Control."
+        time_critical: false
