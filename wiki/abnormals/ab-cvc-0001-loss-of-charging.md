@@ -60,6 +60,11 @@ VCT level channel 2LT-114 fails high — 2CV35 diverts to CVCS HUT, VCT level lo
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q7</div>
+Returning the Master Flow Controller (MFC) to auto PRIOR to returning PZR level to program (after a controlling PZR level channel failed low and MFC was placed in manual): with a CCP in service, the failed-low channel had caused charging flow to RISE; with MFC in manual, actual PZR level is now substantially higher than program. Returning MFC to auto with actual level above program will <span class="hi-exam">force charging flow to LOWER</span>. If charging flow lowers below ~<span class="val-alarm">60 gpm</span>, <span class="hi-exam">inadequate cooling of letdown flow occurs in the regenerative heat exchanger and letdown line flashing could occur</span>. <span class="hi-trap">2CC71 (Letdown HX CC Cont Valve) normally only ~10% open with plenty of room to open, so demin isolation on high inlet temp would NOT occur. VCT auto makeup and exceeding TS seal injection limits require RISING charging flow — the wrong direction.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q52</div>
 Charging line leak diagnosis: <span class="hi-exam">seal injection flow lowering + PZR level lowering + 2R41 (Plant Radiation Monitor) rising + letdown line flashing</span> = leak on the CVCS <span class="hi-exam">charging</span> line. A <span class="hi-exam">charging line leak IS an entry condition</span> for AB.CVC-0001. <span class="hi-trap">Trap: letdown line leak shows similar symptoms (PZR level lowering, radiation rising) but would NOT cause seal injection to lower or letdown line flashing. Letdown line leak is NOT an entry condition for AB.CVC-0001.</span>
 </div>
@@ -67,7 +72,7 @@ Charging line leak diagnosis: <span class="hi-exam">seal injection flow lowering
 ## Connections
 
 - Related systems: [[CVCS]], [[EDGs]]
-- Related exam questions: [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]]
+- Related exam questions: [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]]
 - Related JPMs: [[2018 JPM Sim-b]], [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

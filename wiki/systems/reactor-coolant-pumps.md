@@ -100,6 +100,11 @@ Per AB.RCP-0001: loss of CCW to motor bearings — <span class="hi-exam">5 minut
 | #1 seal leak-off >= 6 gpm | <span class="hi-exam">#1 seal failure</span> |
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q6</div>
+Total #1 seal failure indications: <span class="hi-exam">#1 seal failure means minimum resistance / maximum seal flow → seal flow rises</span> (NOT lowering). More flow reaches the #2 seal, causing <span class="hi-exam">higher #2 seal D/P and higher leakoff to the standpipe → standpipe level high alarm</span>. The <span class="hi-exam">seal leakoff D/P low alarm comes in because the failed seal has no D/P across it</span>. Expected: standpipe level high, seal leakoff D/P low alarm, #1 seal outlet temperature rising. <span class="hi-trap">"Seal flow lowering" is the unexpected indication — a failed #1 seal results in MORE flow, not less.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q28</div>
 RCP STANDPIPE LEVEL HI alarm with #1 seal leak-off flow lowered = <span class="hi-exam">#2 seal failure indication</span>. Both standpipe level high AND reduced #1 seal leak-off flow confirm #2 seal failure. <span class="hi-trap">Standpipe level LOW is a #3 seal indication — do not confuse high vs low standpipe alarms. High standpipe = #2 seal; Low standpipe = #3 seal.</span>
 </div>
@@ -206,7 +211,7 @@ RCP shaft shear at 25% power — thermodynamic effects on the affected loop: wit
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
-- Related exam questions: [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
+- Related exam questions: [[2016 Q6]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

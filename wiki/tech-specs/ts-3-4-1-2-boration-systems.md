@@ -172,6 +172,14 @@ Borated Water Sources surveillance (S2.OP-ST.CVC-0010): combined BAST level <spa
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q8</div>
+EOP-TRIP-2 stuck-rod boration uses two different times because the two available borated water sources have different boron concentrations:<br>
+- BAST (rapid boration via BAT pump high speed): <span class="hi-exam">35 minutes per rod</span> — <span class="hi-exam">BAST minimum Cb is 6550 ppm per Tech Specs</span>.<br>
+- RWST (charging pump &gt;87 gpm if BAST attempt unsuccessful): <span class="hi-exam">120 minutes per rod</span> — <span class="hi-exam">RWST minimum Cb is 2300 ppm</span> (TS 3.5.5).<br>
+The longer RWST time compensates for the lower boron concentration.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q77</div>
 Key distinction: loss of one centrifugal charging pump (21 CHP trips, 22 and 23 remain operable) does <span class="hi-exam">NOT</span> cause entry into TS 3.1.2.2 (Boration Flow Paths) or TS 3.1.2.4 (Charging Pumps). <span class="hi-exam">Two boration flow paths still exist</span> (BAT via BAT pump + remaining CHP; RWST via remaining CHP). <span class="hi-exam">23 Charging Pump (positive displacement) counts toward the TS 3.1.2.4 requirement</span> for reactivity addition capability — so two charging pumps remain operable (22 + 23). The only applicable entry is <span class="hi-exam">TS 3.5.2 (ECCS)</span>, because the tripped CHP is the high-head ECCS component. <span class="hi-trap">Trap: loss of two boration flow paths requires MODE 3 + borated to SDM ≥ 1% delta k/k at 200°F within 6 hours (78-hour total distractor in the exam).</span>
 </div>
@@ -179,6 +187,7 @@ Key distinction: loss of one centrifugal charging pump (21 CHP trips, 22 and 23 
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]]
-- Related exam questions: [[2020 Q77]]
+- Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
+- Related exam questions: [[2016 Q8]], [[2020 Q77]]
 - Related JPMs: [[2019 JPM RO-A2]], [[2022 JPM SRO-A2]]
-- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]

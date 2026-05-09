@@ -142,13 +142,18 @@ Start a CCW pump IAW EOP-APPX-1 during large break LOCA with loss of offsite pow
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q10</div>
+On an SI signal, <span class="hi-exam">2CC215 and 2CC113 (Excess Letdown HX CCW isolation valves) receive a Phase A close signal</span> — they are Containment Phase A isolation valves. The purpose of closing Phase A isolation valves is to <span class="hi-exam">ensure all non-essential containment penetrations are isolated</span> on an SI signal. <span class="hi-trap">RCP CCW continues to be supplied until a Phase B signal at <span class="val-trip">15 psig</span> in containment — Phase A does NOT isolate ALL CCW supply/return from containment.</span> <span class="hi-trap">21 and 22CC16 (RHR HX CCW isolation valves) do NOT receive an automatic open signal on SI — they only open when the ARM PB is depressed AND RWST level reaches 15.2 ft. RHR pumps are cooled by either flow through the pump from RWST (LBLOCA) or recirc flow (SBLOCA until pp is S/D), not by automatic CC16 alignment.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q5</div>
 With NO CCW pumps running during EOP-LOCA-3 cold leg recirculation transfer, <span class="hi-exam">single-train recirculation</span> is the directed flowpath (LOCA-3 step 11.2 → step 124). CCW is required for ECCS pump cooling — losing CCW restricts recirculation to one train. <span class="hi-trap">There is no provision in LOCA-3 to transition to APPX-1 (CCW Restoration) or LOCA-5 (Loss of Emergency Coolant Recirculation) for a no-CCW condition during the recirc transfer.</span>
 </div>
 
 ## Connections
 
-- Related exam questions: [[2016 Q5]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
+- Related exam questions: [[2016 Q5]], [[2016 Q10]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
 - Related JPMs: [[2018 JPM Sim-h]], [[2019 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 1]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]]

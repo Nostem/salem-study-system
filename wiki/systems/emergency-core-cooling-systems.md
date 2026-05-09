@@ -194,6 +194,11 @@ At <span class="hi-exam">RWST level < 15.2 ft on 2/4 channels</span>, Unit 2 sem
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q10</div>
+<span class="hi-exam">21 and 22CC16 (RHR HX CCW isolation valves) do NOT receive an automatic OPEN signal on SI</span>. They open only when the <span class="hi-exam">ARM PB is depressed AND RWST level reaches 15.2 ft</span> — manual alignment is required to place ECCS in cold leg recirc. Until then, the <span class="hi-exam">RHR pumps are cooled by either flow through the pump from RWST (LBLOCA) or recirc flow (SBLOCA until pp is S/D)</span> — not by CCW through the RHR HX. <span class="hi-trap">Trap: candidates may assume CC16s open automatically with SI for "long-term cooling" — they do not.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q4</div>
 RWST Level LO alarm triggers the start of cold leg recirculation transfer (IAW EOP-LOCA-1). <span class="hi-exam">21SJ44 and 22SJ44 (Containment Sump Suction Valves) each serve one RHR pump independently</span>. With 21SJ44 closed, <span class="hi-exam">ONLY 22 RHR pump</span> can draw suction from the containment sump. <span class="hi-trap">Trap: unlike some other ECCS suction arrangements (e.g., SJ1/SJ2 for CCPs where both can take suction from RWST if one fails), the containment sump suction valves are NOT cross-connected — each SJ44 serves only its associated RHR pump.</span>
 </div>
@@ -297,7 +302,7 @@ LBLOCA with both trains of auto SI failing. One SI keyswitch also fails to manua
 
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
-- Related exam questions: [[2016 Q4]], [[2016 Q5]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
+- Related exam questions: [[2016 Q4]], [[2016 Q5]], [[2016 Q10]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
 - Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

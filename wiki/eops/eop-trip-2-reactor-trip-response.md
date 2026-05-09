@@ -25,6 +25,14 @@ Step 4 — rapid boration via BAT pump and CV175. Adequate flow is 36 gpm. If fl
 Control Rod Insertion step — if 2CV175 (RAPID BORATE STOP VALVE) fails to open, EOP-TRIP-2 directs: <span class="hi-exam">OPEN RWST to CHARGING SUCTION VALVES 2SJ1 and 2SJ2, then CLOSE VCT to CHARGING SUCTION VALVES 2CV40 and 2CV41</span> to establish rapid boration from the RWST. <span class="hi-trap">Alternate paths via 2CV174 (Blender Bypass), 2CV172/2CV185 (normal boration), or 2CV172/2CV181 (blender to VCT) are in S2.OP-SO.CVC-0008 (Rapid Boration) but are NOT directed in TRIP-2.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q8</div>
+Step 7 of EOP-TRIP-2 (boration for 2 or more control rods not fully inserted) provides <span class="hi-exam">two different boration times because two different borated water sources are available with different boron concentrations</span>:<br>
+- First attempt: rapid boration from the <span class="hi-exam">Boric Acid Storage Tanks (BAST) via Boric Acid Transfer pump in high speed — <span class="val-normal">35 minutes per rod</span></span> (BAST minimum Cb is <span class="hi-exam">6550 ppm</span> per Tech Specs).<br>
+- If unsuccessful: boration from the <span class="hi-exam">Refueling Water Storage Tank (RWST) via charging pump at &gt;<span class="val-normal">87 gpm</span> — <span class="val-normal">120 minutes per rod</span></span> (RWST minimum Cb is <span class="hi-exam">2300 ppm</span>).<br>
+The longer RWST time compensates for the lower boron concentration. <span class="hi-trap">The two times are NOT for cooldown vs Hot Standby, BOL vs EOL, or different per-rod amounts based on stuck-rod count.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 RO-A2</div>
 Step 4 — Control Rod Insertion boration: for stuck control rods, rapid boration time = <span class="hi-exam">35 minutes per stuck rod</span>. Three stuck rods from Control Bank Delta = 35 x 3 = <span class="hi-exam">105 minutes</span> total rapid boration at 40 GPM. Total volume injected = 105 min x 40 GPM = <span class="hi-exam">4200 gallons</span>. Use S2.OP-TM.ZZ-0002 tank capacity curves to convert BAST levels between percent and gallons for determining final tank levels.
@@ -54,7 +62,7 @@ Transitioned from EOP-TRIP-1 following reactor trip on 22 RCP seal failure (no S
 
 - Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related exam questions: [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
+- Related exam questions: [[2016 Q8]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

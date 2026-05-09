@@ -100,6 +100,11 @@ Solid plant ops with RHR pump trip: RCS pressure <span class="hi-exam">rises</sp
 RHR pump power supply: <span class="hi-exam">22 RHR Pump is powered from 2B 4KV Vital Bus</span> (NOT 2C). During a Reactor Trip + SI coincident with LOOP and EDG 2C unavailable, 22 RHR Pump is running because 2B bus is powered by EDG 2B. <span class="hi-trap">Common confusion: 22 SI Pump is on 2C bus, but 22 RHR Pump is on 2B bus — pump number does not indicate bus assignment.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q9</div>
+<span class="hi-exam">2RH25 (RHR Hot Leg Recirc discharge relief)</span> is located <span class="hi-exam">upstream of normally shut 2RH26</span>, which supplies Hot Leg Recirc during accident conditions. 2RH25 is located <span class="hi-exam">in containment</span>, and discharges to the <span class="hi-exam">containment trench → containment pocket sump</span>. With the valve passing flow continuously and no operator action, <span class="hi-exam">OHA C-2 (CNTMT SUMP PUMP START) annunciates when the containment sump pump starts</span>. <span class="hi-trap">RCDT and PRT are also in containment and are plausible relief collection points for other relief paths, but 2RH25 does NOT discharge to RCDT, PRT, or the RHR sump. RHR sump pump start (OHA-41 point 758) would only occur if the relief were directed to the RHR sump.</span>
+</div>
+
 ## RCS Isolation
 
 The RHR system is isolated from the RCS by two normally closed motor-operated valves in each suction line. These valves are interlocked to prevent opening when RCS pressure is above the RHR system design pressure. (UFSAR 5.5.7.3.2)
@@ -182,7 +187,7 @@ During LBLOCA cold leg recirculation transfer (EOP-LOCA-3): RHR suction aligned 
 
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
-- Related exam questions: [[2016 Q5]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
+- Related exam questions: [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
