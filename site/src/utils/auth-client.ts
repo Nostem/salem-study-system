@@ -1,4 +1,8 @@
 import { createClient, type Session, type SupabaseClient } from '@supabase/supabase-js';
+import type {
+  CreateQuizV2SessionPayload,
+  CreateQuizV2SessionResponse,
+} from './quiz-v2-backend-session';
 
 export type InviteSignupPayload = {
   inviteCode?: string;
@@ -181,6 +185,16 @@ export async function submitQuizResults(payload: SubmitQuizResultsPayload): Prom
     throw new Error('not_authenticated');
   }
   return postFunction<SubmitQuizResultsResponse>('submit-quiz-results', payload, session.access_token);
+}
+
+export async function createQuizV2Session(
+  payload: CreateQuizV2SessionPayload
+): Promise<CreateQuizV2SessionResponse> {
+  const session = await getCurrentSession();
+  if (!session?.access_token) {
+    throw new Error('not_authenticated');
+  }
+  return postFunction<CreateQuizV2SessionResponse>('create-quiz-v2-session', payload, session.access_token);
 }
 
 export async function getQuizHistory(): Promise<QuizHistoryResponse> {
