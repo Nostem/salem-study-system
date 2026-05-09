@@ -1,0 +1,425 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import QuestionBlockRenderer from '../../components/QuestionBlockRenderer.astro';
+import {
+  getStructuredQuestions,
+  questionDisplayLabel,
+} from '../../utils/structured-quiz-data';
+
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
+
+const questions = getStructuredQuestions().filter(
+  (q) => q.choices.length >= 2 && q.acceptedAnswerLabels.length > 0 && !q.legacy?.isRedacted
+);
+const reviewMeta = questions.map((q) => ({
+  slug: q.slug,
+  examYear: q.examYear,
+  examType: q.examType,
+  questionNumber: q.questionNumber,
+  track: q.track ?? '',
+  title: q.title,
+  status: q.status,
+  quizEligible: q.quizEligible,
+  requiresReference: q.requiresReference,
+  topics: q.topics,
+}));
+---
+
+<BaseLayout title="Quiz v2 Review (Experimental)" noindex={true}>
+  <main class="max-w-[900px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
+    <header class="border-b border-border pb-5 mb-5">
+      <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Quiz v2 preview</a>
+      <div class="mt-2">
+        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · whole-question review · local-only</div>
+        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Review</h1>
+        <p class="text-sm text-text-muted max-w-2xl mt-1">
+          Spaced-review foundation using existing source-traceable NRC questions as whole items.
+          This does not create generated flashcards and does not touch production <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a>.
+        </p>
+      </div>
+    </header>
+
+    <section class="mb-5 bg-bg-card border border-border rounded-lg p-4" aria-labelledby="qv2r-summary-title">
+      <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3">
+        <div>
+          <h2 id="qv2r-summary-title" class="font-serif text-xl text-text-primary">Review queue</h2>
+          <p class="text-xs text-text-muted mt-1">
+            Rates whole questions only. State is stored in this browser under <code>salem-qv2-review-state-v1</code>.
+          </p>
+        </div>
+        <button
+          type="button"
+          data-testid="qv2r-reset"
+          class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted hover:bg-bg hover:text-text-primary"
+        >Reset local review state</button>
+      </div>
+      <dl class="grid grid-cols-2 sm:grid-cols-5 gap-3 mt-4 text-[12px] font-mono">
+        <div class="rounded border border-border bg-bg/60 p-2">
+          <dt class="text-text-muted">Eligible</dt>
+          <dd class="text-text-primary text-lg" data-testid="qv2r-total">0</dd>
+        </div>
+        <div class="rounded border border-border bg-bg/60 p-2">
+          <dt class="text-text-muted">Due</dt>
+          <dd class="text-text-primary text-lg" data-testid="qv2r-due">0</dd>
+        </div>
+        <div class="rounded border border-border bg-bg/60 p-2">
+          <dt class="text-text-muted">New</dt>
+          <dd class="text-text-primary text-lg" data-testid="qv2r-new">0</dd>
+        </div>
+        <div class="rounded border border-border bg-bg/60 p-2">
+          <dt class="text-text-muted">Later</dt>
+          <dd class="text-text-primary text-lg" data-testid="qv2r-later">0</dd>
+        </div>
+        <div class="rounded border border-border bg-bg/60 p-2">
+          <dt class="text-text-muted">Reviewed</dt>
+          <dd class="text-text-primary text-lg" data-testid="qv2r-reviewed">0</dd>
+        </div>
+      </dl>
+      <div class="mt-3 text-[11px] font-mono text-text-muted">
+        Current item: <code data-testid="qv2r-current-slug">—</code>
+      </div>
+    </section>
+
+    <script type="application/json" id="qv2r-meta" set:html={JSON.stringify(reviewMeta)} />
+
+    <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[420px]">
+      <div id="qv2r-empty" data-testid="qv2r-empty" class="text-sm text-text-muted">
+        Loading review queue…
+      </div>
+
+      {questions.map((q) => (
+        <section
+          class="qv2r-detail hidden"
+          data-qv2r-detail={q.slug}
+          data-testid={`qv2r-detail-${q.slug}`}
+          data-correct-label={q.officialAnswerLabel}
+        >
+          <header class="border-b border-border pb-3 mb-4">
+            <div class="font-mono text-[10px] uppercase tracking-wider text-accent-blue">
+              {questionDisplayLabel(q)} · {q.examType} · {q.status}
+              {q.requiresReference && <span> · ref required</span>}
+            </div>
+            <h2 class="font-serif text-2xl text-text-primary leading-tight mt-1">{q.title}</h2>
+            <div class="text-[11px] font-mono text-text-muted mt-1">
+              slug: <code>{q.slug}</code>
+              <span class="mx-2">·</span>
+              <a href={`${base}quiz-v2/?slug=${q.slug}`} class="underline hover:text-accent-blue">view in preview</a>
+            </div>
+          </header>
+
+          <section class="qv2r-section">
+            <h3 class="qv2r-section-title">Stem</h3>
+            <div class="qv2r-blocks" data-testid="qv2r-stem-blocks">
+              {q.stemBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+            </div>
+          </section>
+
+          <section class="qv2r-section">
+            <h3 class="qv2r-section-title">Choices</h3>
+            <ol class="space-y-2" data-testid="qv2r-choices">
+              {q.choices.map((c) => (
+                <li class="border border-border rounded p-3" data-choice-label={c.label} data-correct={c.isCorrect ? 'true' : 'false'}>
+                  <div class="font-mono text-[11px] uppercase tracking-wider text-text-muted mb-1">{c.label}</div>
+                  <div class="qv2r-blocks">{c.blocks.map((b) => <QuestionBlockRenderer block={b} />)}</div>
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <div class="qv2r-section flex flex-wrap gap-2">
+            <button
+              type="button"
+              data-testid="qv2r-reveal"
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue hover:bg-bg"
+            >Reveal answer</button>
+            <button
+              type="button"
+              data-testid="qv2r-skip"
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted hover:bg-bg hover:text-text-primary"
+            >Skip</button>
+          </div>
+
+          <section class="qv2r-answer qv2r-section hidden" data-testid="qv2r-answer">
+            <div class="font-mono text-[11px] uppercase tracking-wider mb-2 text-accent-blue" data-testid="qv2r-answer-status">
+              Official answer {q.officialAnswerLabel}
+            </div>
+            {q.explanationBlocks && q.explanationBlocks.length > 0 && (
+              <>
+                <h3 class="qv2r-section-title">Explanation</h3>
+                <div class="qv2r-blocks">
+                  {q.explanationBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                </div>
+              </>
+            )}
+            {q.sourceRefs && q.sourceRefs.length > 0 && (
+              <section class="qv2r-section">
+                <h3 class="qv2r-section-title">Source references</h3>
+                <ul class="text-sm text-text-body space-y-1">
+                  {q.sourceRefs.map((ref) => {
+                    const label = ref.label || ref.slug || ref.path || ref.kind;
+                    return (
+                      <li class="font-mono text-[12px]">
+                        <span class="inline-block min-w-[90px] text-text-muted">[{ref.kind}]</span>
+                        <span class="text-text-primary">{label}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            )}
+            <div class="qv2r-section border-t border-border pt-4">
+              <h3 class="qv2r-section-title">Rate whole-question recall</h3>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <button type="button" data-testid="qv2r-rate-again" data-rating="again" class="qv2r-rating">Again</button>
+                <button type="button" data-testid="qv2r-rate-hard" data-rating="hard" class="qv2r-rating">Hard</button>
+                <button type="button" data-testid="qv2r-rate-good" data-rating="good" class="qv2r-rating">Good</button>
+                <button type="button" data-testid="qv2r-rate-easy" data-rating="easy" class="qv2r-rating">Easy</button>
+              </div>
+            </div>
+          </section>
+        </section>
+      ))}
+    </article>
+  </main>
+</BaseLayout>
+
+<style>
+  .qv2r-section { margin-top: 1.25rem; }
+  .qv2r-section-title {
+    font-family: var(--font-mono, monospace);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--color-text-muted, #888);
+    margin-bottom: 0.5rem;
+  }
+  .qv2r-blocks > * + * { margin-top: 0.5rem; }
+  .qv2r-blocks p { line-height: 1.55; white-space: pre-wrap; }
+  .qv2r-blocks img {
+    max-width: 100%;
+    height: auto;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  .qv2r-blocks figure { margin: 0; }
+  .qv2r-blocks figcaption {
+    font-size: 11px;
+    color: var(--color-text-muted, #888);
+    margin-top: 4px;
+    text-align: center;
+  }
+  .qv2r-blocks table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  .qv2r-blocks th, .qv2r-blocks td {
+    border: 1px solid var(--color-border, #333);
+    padding: 4px 8px;
+    text-align: left;
+  }
+  .qv2r-blocks pre {
+    background: rgba(0,0,0,0.25);
+    padding: 8px 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 12px;
+  }
+  .qv2r-rating {
+    font-family: var(--font-mono, monospace);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 0.55rem 0.75rem;
+    border: 1px solid var(--color-border, #333);
+    border-radius: 0.375rem;
+    color: var(--color-text-primary, #eee);
+  }
+  .qv2r-rating:hover { background: var(--color-bg, #111); }
+  [data-correct="true"].is-revealed-correct { border-color: #4ade80; background: rgba(74, 222, 128, 0.08); }
+</style>
+
+<script>
+  import {
+    buildWholeQuestionReviewQueue,
+    updateReviewState,
+    type ReviewQueue,
+    type ReviewRating,
+    type ReviewStateBySlug,
+  } from '../../utils/quiz-v2-review';
+  import type { StructuredQuestion } from '../../types/question-blocks';
+
+  interface ReviewMetaRow {
+    slug: string;
+    examYear: number;
+    examType: string;
+    questionNumber: number;
+    track: string;
+    title: string;
+    status: string;
+    quizEligible: boolean;
+    requiresReference: boolean;
+    topics: unknown[];
+  }
+
+  const STORAGE_KEY = 'salem-qv2-review-state-v1';
+  let queue: ReviewQueue | null = null;
+  let currentSlug: string | null = null;
+
+  function readMeta(): ReviewMetaRow[] {
+    const node = document.getElementById('qv2r-meta');
+    if (!node || !node.textContent) return [];
+    try {
+      const parsed = JSON.parse(node.textContent);
+      return Array.isArray(parsed) ? (parsed as ReviewMetaRow[]) : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function metaToQuestion(row: ReviewMetaRow): StructuredQuestion {
+    return {
+      schemaVersion: 1,
+      slug: row.slug,
+      examYear: row.examYear,
+      examType: row.examType,
+      questionNumber: row.questionNumber,
+      track: row.track,
+      title: row.title,
+      status: row.status,
+      quizEligible: row.quizEligible,
+      requiresReference: row.requiresReference,
+      officialAnswerLabel: '',
+      acceptedAnswerLabels: [],
+      stemBlocks: [],
+      choices: [],
+      explanationBlocks: [],
+      topics: row.topics,
+      sourceRefs: [],
+      legacy: {},
+    };
+  }
+
+  function loadState(): ReviewStateBySlug {
+    try {
+      const raw = window.localStorage.getItem(STORAGE_KEY);
+      const parsed = raw ? JSON.parse(raw) : {};
+      return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed as ReviewStateBySlug : {};
+    } catch {
+      return {};
+    }
+  }
+
+  function saveState(state: ReviewStateBySlug): void {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  }
+
+  function setText(testid: string, text: string): void {
+    const el = document.querySelector(`[data-testid="${testid}"]`);
+    if (el) el.textContent = text;
+  }
+
+  function hideAll(): void {
+    document.querySelectorAll<HTMLElement>('[data-qv2r-detail]').forEach((el) => el.classList.add('hidden'));
+  }
+
+  function resetDetail(detail: HTMLElement): void {
+    detail.querySelectorAll<HTMLElement>('.qv2r-answer').forEach((el) => el.classList.add('hidden'));
+    detail.querySelectorAll<HTMLElement>('[data-correct="true"]').forEach((el) => el.classList.remove('is-revealed-correct'));
+  }
+
+  function chooseNextSlug(excludeSlug?: string): string | null {
+    if (!queue || queue.items.length === 0) return null;
+    return queue.items.find((item) => item.slug !== excludeSlug)?.slug ?? queue.items[0]?.slug ?? null;
+  }
+
+  function renderSummary(): void {
+    if (!queue) return;
+    setText('qv2r-total', String(queue.summary.totalEligible));
+    setText('qv2r-due', String(queue.summary.dueCount));
+    setText('qv2r-new', String(queue.summary.newCount));
+    setText('qv2r-later', String(queue.summary.laterCount));
+    setText('qv2r-reviewed', String(queue.summary.reviewedCount));
+    setText('qv2r-current-slug', currentSlug ?? '—');
+  }
+
+  function showCurrent(): void {
+    hideAll();
+    const empty = document.getElementById('qv2r-empty');
+    if (!currentSlug) {
+      if (empty) {
+        empty.textContent = 'No reviewable questions are available.';
+        empty.classList.remove('hidden');
+      }
+      renderSummary();
+      return;
+    }
+    if (empty) empty.classList.add('hidden');
+    const detail = document.querySelector<HTMLElement>(`[data-qv2r-detail="${currentSlug}"]`);
+    if (!detail) return;
+    resetDetail(detail);
+    detail.classList.remove('hidden');
+    renderSummary();
+  }
+
+  function rebuildQueue(questions: StructuredQuestion[]): void {
+    queue = buildWholeQuestionReviewQueue(questions, loadState());
+  }
+
+  function revealCurrent(): void {
+    if (!currentSlug) return;
+    const detail = document.querySelector<HTMLElement>(`[data-qv2r-detail="${currentSlug}"]`);
+    if (!detail) return;
+    detail.querySelectorAll<HTMLElement>('.qv2r-answer').forEach((el) => el.classList.remove('hidden'));
+    detail.querySelectorAll<HTMLElement>('[data-correct="true"]').forEach((el) => el.classList.add('is-revealed-correct'));
+  }
+
+  function attachHandlers(questions: StructuredQuestion[]): void {
+    document.querySelectorAll<HTMLButtonElement>('[data-testid="qv2r-reveal"]').forEach((button) => {
+      button.addEventListener('click', revealCurrent);
+    });
+    document.querySelectorAll<HTMLButtonElement>('[data-testid="qv2r-skip"]').forEach((button) => {
+      button.addEventListener('click', () => {
+        currentSlug = chooseNextSlug(currentSlug ?? undefined);
+        showCurrent();
+      });
+    });
+    document.querySelectorAll<HTMLButtonElement>('[data-rating]').forEach((button) => {
+      button.addEventListener('click', () => {
+        if (!currentSlug) return;
+        const rating = button.getAttribute('data-rating') as ReviewRating | null;
+        if (!rating) return;
+        const state = loadState();
+        state[currentSlug] = updateReviewState(state[currentSlug], currentSlug, rating);
+        saveState(state);
+        const previous = currentSlug;
+        rebuildQueue(questions);
+        currentSlug = chooseNextSlug(previous);
+        showCurrent();
+      });
+    });
+    document.querySelector<HTMLButtonElement>('[data-testid="qv2r-reset"]')?.addEventListener('click', () => {
+      window.localStorage.removeItem(STORAGE_KEY);
+      rebuildQueue(questions);
+      currentSlug = chooseNextSlug();
+      showCurrent();
+    });
+  }
+
+  function init(): void {
+    const questions = readMeta().map(metaToQuestion);
+    rebuildQueue(questions);
+    currentSlug = chooseNextSlug();
+    attachHandlers(questions);
+    showCurrent();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+</script>
