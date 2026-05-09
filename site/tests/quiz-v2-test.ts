@@ -44,6 +44,9 @@ test('quiz-v2 session preview shows deterministic seeded question order', async 
   await expect(page.getByTestId('qv2-session-filters')).toContainText('"count":3');
   await expect(page.getByTestId('qv2-session-filters')).toContainText('"referenceMode":"include"');
 
+  const playLink = page.getByTestId('qv2-session-play-link');
+  await expect(playLink).toHaveAttribute('href', /\/quiz-v2\/play\/\?seed=session-test&count=3$/);
+
   const items = page.locator('#qv2-session-list li');
   await expect(items).toHaveCount(3);
   const firstRun = await items.evaluateAll((nodes) => nodes.map((node) => node.getAttribute('data-slug')));
