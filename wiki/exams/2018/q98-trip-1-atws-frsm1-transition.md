@@ -1,7 +1,7 @@
 ---
 title: "2018 Q98 — TRIP-1 ATWS / FRSM-1 Transition"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

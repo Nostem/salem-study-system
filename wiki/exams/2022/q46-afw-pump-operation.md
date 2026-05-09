@@ -1,7 +1,7 @@
 ---
 title: "2022 Q46 — AFW Pump Runout Protection Circuit Failure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q46

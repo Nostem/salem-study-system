@@ -1,7 +1,7 @@
 ---
 title: "2019 Q96 — Radiation Monitoring LCO 3.3.3.1"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2019 Q96

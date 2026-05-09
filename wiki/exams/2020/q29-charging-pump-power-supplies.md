@@ -1,7 +1,7 @@
 ---
 title: "2020 Q29 — Charging Pump Power Supplies"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q29

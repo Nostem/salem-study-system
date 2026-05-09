@@ -1,7 +1,7 @@
 ---
 title: "2023 Q7 — PZR Backup Heater Power Supplies"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q7

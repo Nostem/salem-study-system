@@ -1,7 +1,7 @@
 ---
 title: "2022 Q94 — Defueling Core Alteration SRO Supervision"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q94

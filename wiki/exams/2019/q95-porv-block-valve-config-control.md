@@ -1,7 +1,7 @@
 ---
 title: "2019 Q95 — PORV Block Valve Configuration Control"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q95

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q74 — FRTS-1 RCS Soak Purpose"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q74

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q35 — GDT Release 2R41 Auto Closure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q35

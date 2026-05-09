@@ -1,7 +1,7 @@
 ---
 title: "2018 Q18 — AFW Backleakage Testing and Consequences"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q18

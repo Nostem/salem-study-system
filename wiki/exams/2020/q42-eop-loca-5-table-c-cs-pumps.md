@@ -1,7 +1,7 @@
 ---
 title: "2020 Q42 — EOP-LOCA-5 Table C CS Pumps Required"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q42

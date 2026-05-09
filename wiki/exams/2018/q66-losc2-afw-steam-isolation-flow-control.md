@@ -1,7 +1,7 @@
 ---
 title: "2018 Q66 — LOSC-2 AFW Steam Isolation and Flow Control"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q66

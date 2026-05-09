@@ -1,7 +1,7 @@
 ---
 title: "2020 Q100 — EOP-TRIP-1 FRHS-1 Transition"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q100

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q72 — EOP-FRHS-2 SG Overpressure Steam Release"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q72

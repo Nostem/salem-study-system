@@ -1,7 +1,7 @@
 ---
 title: "2020 Q79 — SGTR-1 Subcooling Loss Transition to SGTR-3"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q79

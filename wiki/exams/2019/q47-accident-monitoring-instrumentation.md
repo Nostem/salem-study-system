@@ -1,7 +1,7 @@
 ---
 title: "2019 Q47 — Accident Monitoring Instrumentation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q47

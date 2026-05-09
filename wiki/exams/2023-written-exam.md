@@ -14,7 +14,7 @@ aliases:
 - **RO Questions:** 75
 - **SRO-Only Questions:** 25
 
-<a href="/salem-study-system/exam-pdfs/2023-written.pdf" target="_blank">View Exam PDF</a>
+_Exam PDF not currently available in the local source library._
 
 ## RO Questions
 

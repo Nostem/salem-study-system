@@ -1,7 +1,7 @@
 ---
 title: "2020 Q37 — OT Delta-T Inputs"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q37

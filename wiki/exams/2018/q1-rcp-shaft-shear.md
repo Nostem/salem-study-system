@@ -1,7 +1,7 @@
 ---
 title: "2018 Q1 — RCP Shaft Shear at 25% Power"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q1

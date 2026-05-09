@@ -1,7 +1,7 @@
 ---
 title: "2022 Q5 — CCW Thermal Barrier / RCP Impact"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q05

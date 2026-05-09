@@ -7898,4 +7898,3 @@ N Isolate the affected Steam Generator that has the tube rupture(s)
 N Early depressurize the RCS
 N Initiate feed and bleed
 Complete this evaluation form for each ESG.
-

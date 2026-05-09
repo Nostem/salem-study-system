@@ -1,7 +1,7 @@
 ---
 title: "2019 Q83 — EDG Lube Oil Trip and SR 4.8.1.1"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

@@ -1,7 +1,7 @@
 ---
 title: "2020 Q24 — Core Cooling Red Path Validation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q24

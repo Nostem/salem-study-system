@@ -1,7 +1,7 @@
 ---
 title: "2019 Q26 — SW122 Fail Position"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q26

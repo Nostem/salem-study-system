@@ -1,7 +1,7 @@
 ---
 title: "2020 Q49 — 125VDC Battery Discharge Indication"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q49

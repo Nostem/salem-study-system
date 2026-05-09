@@ -713,6 +713,7 @@ def _source_key(exam_year: int | None) -> str:
 
 
 def _question_row(record: Dict[str, Any], question_slug: str | None = None) -> Dict[str, Any]:
+    db_status = "active" if record.get("status") == "verified" else (record.get("status") or "active")
     return {
         "source_key": _source_key(record.get("exam_year")),
         "exam_year": record.get("exam_year"),
@@ -724,7 +725,7 @@ def _question_row(record: Dict[str, Any], question_slug: str | None = None) -> D
         "stem_text": record.get("stem_text") or "",
         "official_answer_label": record.get("official_answer_label"),
         "accepted_answer_labels": record.get("accepted_answer_labels") or [],
-        "status": record.get("status") or "active",
+        "status": db_status,
         "is_edited": bool(record.get("is_edited")),
         "is_redacted": bool(record.get("is_redacted")),
         "quiz_eligible": bool(record.get("quiz_eligible")),

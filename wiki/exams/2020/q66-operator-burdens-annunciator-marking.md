@@ -1,7 +1,7 @@
 ---
 title: "2020 Q66 — Operator Burdens / Annunciator Marking"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q66

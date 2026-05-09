@@ -1,7 +1,7 @@
 ---
 title: "2022 Q33 — ECCS Flow at 300 psig with Loss of 4KV Bus"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q33

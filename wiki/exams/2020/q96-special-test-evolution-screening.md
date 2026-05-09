@@ -1,7 +1,7 @@
 ---
 title: "2020 Q96 — Special Test or Evolution Screening"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q96

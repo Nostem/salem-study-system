@@ -1,7 +1,7 @@
 ---
 title: "2020 Q20 — Misaligned Rods Required Action"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q20

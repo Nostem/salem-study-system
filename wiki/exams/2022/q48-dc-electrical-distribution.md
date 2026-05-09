@@ -1,7 +1,7 @@
 ---
 title: "2022 Q48 — Loss of 125 VDC Effect on 4KV Vital Bus"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q48

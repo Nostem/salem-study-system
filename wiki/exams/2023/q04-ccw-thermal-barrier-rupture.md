@@ -1,7 +1,7 @@
 ---
 title: "2023 Q4 — CCW / Thermal Barrier Rupture Indications"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q4

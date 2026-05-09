@@ -1,7 +1,7 @@
 ---
 title: "2020 Q99 — Emergency Coordinator Escalation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q99

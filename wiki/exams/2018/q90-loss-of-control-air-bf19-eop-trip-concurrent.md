@@ -1,7 +1,7 @@
 ---
 title: "2018 Q90 — Loss of Control Air / BF19 Failure / EOP-TRIP-1 Concurrent"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: yes
 aliases:

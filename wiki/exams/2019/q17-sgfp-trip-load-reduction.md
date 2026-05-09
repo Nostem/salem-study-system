@@ -1,7 +1,7 @@
 ---
 title: "2019 Q17 — SGFP Trip Load Reduction"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q17

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q93 — Loss of Control Air / ECAC / Attachment 12"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

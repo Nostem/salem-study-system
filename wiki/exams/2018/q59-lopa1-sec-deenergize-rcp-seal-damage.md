@@ -1,7 +1,7 @@
 ---
 title: "2018 Q59 — LOPA-1 SEC De-energize / RCP Seal Damage"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q59

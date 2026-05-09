@@ -1,7 +1,7 @@
 ---
 title: "2018 Q39 — MODE 2 Entry / IOP-0003"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q39

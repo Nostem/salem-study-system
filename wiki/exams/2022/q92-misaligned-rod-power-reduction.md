@@ -1,7 +1,7 @@
 ---
 title: "2022 Q92 — Misaligned Rod Power Reduction"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q92

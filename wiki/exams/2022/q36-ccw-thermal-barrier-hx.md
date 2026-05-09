@@ -1,7 +1,7 @@
 ---
 title: "2022 Q36 — CCW Sources of RCS Inleakage"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q36

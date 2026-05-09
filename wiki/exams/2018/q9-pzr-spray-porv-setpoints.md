@@ -1,7 +1,7 @@
 ---
 title: "2018 Q9 — PZR Spray and PORV Setpoints"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q9

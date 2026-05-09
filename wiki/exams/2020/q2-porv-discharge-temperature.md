@@ -1,7 +1,7 @@
 ---
 title: "2020 Q2 — PORV Discharge Temperature"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q2

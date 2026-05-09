@@ -1,7 +1,7 @@
 ---
 title: "2023 Q6 — Conduct of Operations / RO Leaving ATC Area"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q6

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q87 — CCW Pump Trip Mode 5 Procedures"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

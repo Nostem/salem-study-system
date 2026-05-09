@@ -1,7 +1,7 @@
 ---
 title: "2023 Q38 — CFCU Response to Inadvertent SI / SEC Mode 1"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q38

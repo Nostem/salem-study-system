@@ -1,7 +1,7 @@
 ---
 title: "2018 Q61 — Loss of Control Air ECAC Start and Reactor Trip"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q61

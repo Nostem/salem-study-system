@@ -1,7 +1,7 @@
 ---
 title: "2018 Q81 — EOP-LOCA-5 RWST Makeup and SG Level"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

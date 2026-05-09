@@ -1,7 +1,7 @@
 ---
 title: "2019 Q24 — EDG Load Rating and Room Temperature"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q24

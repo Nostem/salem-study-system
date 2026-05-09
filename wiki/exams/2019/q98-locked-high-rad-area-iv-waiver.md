@@ -1,7 +1,7 @@
 ---
 title: "2019 Q98 — Locked High Radiation Area IV Waiver"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q98

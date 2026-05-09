@@ -1,7 +1,7 @@
 ---
 title: "2023 Q95 — FHB BLDG AIR D/P LO / Fuel Handling"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q95

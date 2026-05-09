@@ -1,7 +1,7 @@
 ---
 title: "2019 Q51 — LOCA-1 Feed Flow and SG Level Requirements"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q51

@@ -1,4 +1,33 @@
-import { expect, test } from '@playwright/test';
+import { expect, type Page, test } from '@playwright/test';
+
+function supabaseAuthStorageKey(): string {
+  const url = process.env.PUBLIC_SUPABASE_URL || 'https://local-test.supabase.co';
+  const projectRef = new URL(url).hostname.split('.')[0];
+  return `sb-${projectRef}-auth-token`;
+}
+
+async function seedAuth(page: Page): Promise<void> {
+  await page.addInitScript(([storageKey]) => {
+    window.localStorage.setItem(
+      storageKey,
+      JSON.stringify({
+        access_token: 'playwright-access-token',
+        refresh_token: 'playwright-refresh-token',
+        expires_at: Math.floor(Date.now() / 1000) + 3600,
+        expires_in: 3600,
+        token_type: 'bearer',
+        user: {
+          id: '00000000-0000-4000-8000-000000000001',
+          aud: 'authenticated',
+          role: 'authenticated',
+          email: 'playwright@example.invalid',
+          app_metadata: {},
+          user_metadata: { username: 'playwright' },
+        },
+      })
+    );
+  }, [supabaseAuthStorageKey()]);
+}
 
 test('quiz-v2 play route loads a deterministic session with an explicit count', async ({ page }) => {
   await page.goto('quiz-v2/play/?seed=play-default-test&count=4');
@@ -124,4 +153,51 @@ test('quiz-v2 play local builder preserves selected filters in the URL and sessi
   await expect(page.getByTestId('qv2p-session-filters')).toContainText('"tracks":["RO"]');
   await expect(page.getByTestId('qv2p-session-filters')).toContainText('"topicSlugs":["control-rod-drive"]');
   await expect(page.getByTestId('qv2p-session-filters')).toContainText('"referenceMode":"exclude"');
+});
+
+test('quiz-v2 play accepts explicit graph-selected question slugs', async ({ page }) => {
+  await page.goto('quiz-v2/play/?slugs=q8-pzr-saturation-rcp-restart&count=10&seed=graph-selected-q8');
+
+  await expect(page.getByTestId('qv2p-session-total')).toHaveText('1');
+  await expect(page.getByTestId('qv2p-session-count')).toHaveText('1');
+  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"questionSlugs":["q8-pzr-saturation-rcp-restart"]');
+  await expect(page.locator('.qv2p-detail:not(.hidden)')).toHaveAttribute('data-qv2p-detail', 'q8-pzr-saturation-rcp-restart');
+});
+
+test('quiz-v2 play can create an authenticated backend session', async ({ page }) => {
+  await seedAuth(page);
+
+  await page.route('**/functions/v1/create-quiz-v2-session', async (route) => {
+    const body = route.request().postDataJSON();
+    expect(route.request().headers().authorization).toBe('Bearer playwright-access-token');
+    expect(body.schemaVersion).toBe(1);
+    expect(body.seed).toBe('backend-ui-test');
+    expect(body.filters.count).toBe(2);
+    expect(body.filters.years).toEqual([2018]);
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({
+        ok: true,
+        source: 'backend',
+        session: {
+          schemaVersion: 1,
+          sessionId: 'qv2-server1234',
+          seed: 'backend-ui-test',
+          filters: body.filters,
+          questionSlugs: ['q8-pzr-saturation-rcp-restart'],
+          totalEligible: 1,
+          generatedAt: '2026-05-09T00:00:00Z',
+        },
+      }),
+    });
+  });
+
+  await page.goto('quiz-v2/play/?seed=backend-ui-test&years=2018&count=2');
+  await page.getByTestId('qv2p-create-backend-session').click();
+
+  await expect(page.getByTestId('qv2p-session-source')).toContainText('Backend session');
+  await expect(page.getByTestId('qv2p-session-id')).toHaveText('qv2-server1234');
+  await expect(page.getByTestId('qv2p-session-count')).toHaveText('1');
+  await expect(page.locator('.qv2p-detail:not(.hidden)')).toHaveAttribute('data-qv2p-detail', 'q8-pzr-saturation-rcp-restart');
 });

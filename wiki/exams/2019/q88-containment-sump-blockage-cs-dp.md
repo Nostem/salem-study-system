@@ -1,7 +1,7 @@
 ---
 title: "2019 Q88 — Containment Sump Blockage and CS Pump D/P"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

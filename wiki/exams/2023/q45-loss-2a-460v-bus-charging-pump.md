@@ -1,7 +1,7 @@
 ---
 title: "2023 Q45 — Loss of 2A 460V Bus / Charging Pump"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q45

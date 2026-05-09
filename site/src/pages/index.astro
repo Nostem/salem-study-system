@@ -32,7 +32,7 @@ const navCards = [
   { name: 'NRC Exams', count: counts['exams'] || 0, color: '#f59e0b', glyph: '◉', href: `${base}exams/2023-written-exam` },
   { name: 'EOPs', count: counts['eops'] || 0, color: '#ef4444', glyph: '△', href: `${base}eops/eop-trip-1-reactor-trip-or-si` },
   { name: 'Abnormals', count: counts['abnormals'] || 0, color: '#6b7280', glyph: '⬡', href: `${base}abnormals/ab-loca-0001-shutdown-loca` },
-  { name: 'Procedures', count: counts['procedures'] || 0, color: '#60a5fa', glyph: '▤', href: `${base}procedures/s2-op-so-rm-0001-radiation-monitoring-system-operation` },
+  { name: 'Procedures', count: counts['procedures'] || 0, color: '#60a5fa', glyph: '▤', href: `${base}procedures/s2-op-so-rm-0001-radiation-monitoring` },
   { name: 'Admin', count: counts['admin'] || 0, color: '#2a6f97', glyph: '▣', href: `${base}admin/op-aa-101-111-roles-and-responsibilities` },
   { name: 'Concepts', count: counts['concepts'] || 0, color: '#a78bfa', glyph: '✦', href: `${base}` },
 ];
@@ -85,6 +85,8 @@ const examYears = [
   { year: '2019', written: true, operating: true, qCount: examCounts['2019'] || 0, jpmCount: 20, scenarioCount: 3, ilot: '17-01' },
   { year: '2018', written: true, operating: true, qCount: examCounts['2018'] || 0, jpmCount: 20, scenarioCount: 2, ilot: '16-01' },
 ];
+
+const writtenPdfYears = new Set(['2022', '2020', '2019', '2018']);
 
 // JPM slug lists per year for expandable sections
 const jpmSlugs: Record<string, { type: string; slug: string; label: string }[]> = {
@@ -337,7 +339,11 @@ const scenarioSlugs: Record<string, string[]> = {
                 <!-- Written -->
                 <div>
                   <div class="text-text-primary text-sm font-medium mb-1">Written Exam</div>
-                  <a href={`${base}exam-pdfs/${exam.year}-written.pdf`} target="_blank" class="text-accent-blue text-xs no-underline hover:underline">View PDF</a>
+                  {writtenPdfYears.has(exam.year) ? (
+                    <a href={`${base}exam-pdfs/${exam.year}-written.pdf`} target="_blank" class="text-accent-blue text-xs no-underline hover:underline">View PDF</a>
+                  ) : (
+                    <span class="text-text-muted text-xs">PDF not available</span>
+                  )}
                   <span class="text-text-muted text-xs ml-2">{exam.qCount > 0 ? `${exam.qCount} questions ingested` : 'not yet ingested'}</span>
                   {exam.qCount > 0 && (
                     <a href={`${base}exams/${exam.year}-written-exam`} class="block text-accent-teal text-[11px] no-underline hover:underline mt-1">Browse questions &rsaquo;</a>

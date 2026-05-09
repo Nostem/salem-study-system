@@ -1,7 +1,7 @@
 ---
 title: "2023 Q10 — RCP Seal Injection / Seal Inlet Temperature Limit"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q10

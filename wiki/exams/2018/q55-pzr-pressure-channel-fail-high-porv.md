@@ -1,7 +1,7 @@
 ---
 title: "2018 Q55 — PZR Pressure Channel Fails High / PORV Logic"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q55

@@ -1,7 +1,7 @@
 ---
 title: "2022 Q58 — ADFCS Steam Pressure Channel Failure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q58

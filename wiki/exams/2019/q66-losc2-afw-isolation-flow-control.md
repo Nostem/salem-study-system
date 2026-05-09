@@ -1,7 +1,7 @@
 ---
 title: "2019 Q66 — LOSC-2 AFW Pump Isolation and Flow Control"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q66

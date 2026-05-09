@@ -1,7 +1,7 @@
 ---
 title: "2020 Q56 — Rod Drive MG Set Power Supplies"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q56

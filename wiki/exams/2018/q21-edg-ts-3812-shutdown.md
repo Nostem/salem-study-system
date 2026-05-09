@@ -1,7 +1,7 @@
 ---
 title: "2018 Q21 — EDG TS 3.8.1.2 (Shutdown)"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q21

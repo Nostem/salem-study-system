@@ -1,7 +1,7 @@
 ---
 title: "2022 Q78 — TS 3.9.2.2 Source Range / Gamma-Metrics"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q78

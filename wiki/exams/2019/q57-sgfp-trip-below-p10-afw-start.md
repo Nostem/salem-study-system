@@ -1,7 +1,7 @@
 ---
 title: "2019 Q57 — SGFP Trip Below P-10 and AFW Pump Start"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q57

@@ -1,7 +1,7 @@
 ---
 title: "2022 Q80 — EOP-LOCA-5 Containment Spray / FRCE-1"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q80

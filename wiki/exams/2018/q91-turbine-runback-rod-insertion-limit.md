@@ -1,7 +1,7 @@
 ---
 title: "2018 Q91 — Turbine Runback / Rod Insertion Limit"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

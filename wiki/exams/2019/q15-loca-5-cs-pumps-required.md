@@ -1,7 +1,7 @@
 ---
 title: "2019 Q15 — EOP-LOCA-5 CS Pumps Required"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2019 Q15

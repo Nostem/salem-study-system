@@ -1,7 +1,7 @@
 ---
 title: "2022 Q37 — PZR Pressure Channel Fails High / DNBR Limit"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q37

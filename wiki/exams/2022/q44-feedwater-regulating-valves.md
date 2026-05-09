@@ -1,7 +1,7 @@
 ---
 title: "2022 Q44 — Feedwater Isolation on SG Hi-Hi Level"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q44

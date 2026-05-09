@@ -25,8 +25,17 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
     expect(Number(value)).toBeGreaterThan(0);
   }
 
-  // Question count should match the structured bank size (499).
-  await expect(page.getByTestId('gv2-node-count-question')).toHaveText('499');
+  // Question count should match the expanded structured bank size.
+  await expect(page.getByTestId('gv2-node-count-question')).toHaveText('599');
+
+  // Edge type filter reduces the list to nodes connected by selected graph semantics.
+  await page.getByTestId('gv2-search').fill('');
+  const unfilteredCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  await page.getByTestId('gv2-edge-type').selectOption('tests');
+  const testsEdgeCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  expect(testsEdgeCount).toBeGreaterThan(0);
+  expect(testsEdgeCount).toBeLessThan(unfilteredCount);
+  await page.getByTestId('gv2-edge-type').selectOption('all');
 
   // Search for the known Q23 question — only the matching item stays visible.
   await page.getByTestId('gv2-search').fill('q23-eop-flowchart-symbols-concurrent');
@@ -47,4 +56,75 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await expect(edges).toContainText('[quiz-source]');
   await expect(edges).toContainText('article:exams/2023/q23-eop-flowchart-symbols-concurrent');
   await expect(edges).toContainText('[sourced-from]');
+
+  // The detail panel now acts as a study surface, not just raw edge lists.
+  await expect(page.getByTestId(`gv2-summary-${Q23_ID}`)).toContainText('Question tests topic');
+  const meta = page.getByTestId(`gv2-meta-${Q23_ID}`);
+  await expect(meta).toContainText('Exam');
+  await expect(meta).toContainText('2023 written');
+  await expect(meta).toContainText('Question');
+  await expect(meta).toContainText('23');
+  await expect(meta).toContainText('Quiz eligible');
+  await expect(meta).toContainText('yes');
+  await expect(page.getByTestId(`gv2-actions-${Q23_ID}`).getByRole('link', { name: /Generate quiz from this node/i }))
+    .toHaveAttribute('href', /\/quiz-v2\/play\/\?slugs=q23-eop-flowchart-symbols-concurrent&count=1$/);
+  await expect(page.getByTestId(`gv2-actions-${Q23_ID}`).getByRole('link', { name: /Open source\/wiki page/i }))
+    .toHaveAttribute('href', /\/exams\/2023\/q23-eop-flowchart-symbols-concurrent\/$/);
+
+  // Focus mode keeps the selected question plus directly connected topic/source/article nodes.
+  await page.getByTestId('gv2-search').fill('');
+  await page.getByTestId('gv2-focus-neighborhood').check();
+  const focusedVisible = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)');
+  const focusedCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  expect(focusedCount).toBeGreaterThan(1);
+  expect(focusedCount).toBeLessThan(unfilteredCount);
+  await expect(focusedVisible.filter({ hasText: '2023 Q23' })).toHaveCount(1);
+  await expect(focusedVisible.filter({ hasText: 'Admin' }).first()).toBeVisible();
+
+  // Topic nodes expose related questions. Topics with no eligible v2 practice pool do not show a dead practice link.
+  await page.getByTestId('gv2-focus-neighborhood').uncheck();
+  await page.getByTestId('gv2-search').fill('topic:demin-water');
+  const nonPracticeTopic = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: 'Demin Water' }).first();
+  await nonPracticeTopic.getByRole('button').click();
+  const deminDetail = page.getByTestId('gv2-detail-topic:demin-water');
+  await expect(deminDetail).toBeVisible();
+  await expect(page.getByTestId('gv2-related-questions-topic:demin-water')).toContainText('2016 Q53');
+  await expect(page.getByTestId('gv2-actions-topic:demin-water')).not.toContainText('Generate quiz from this node');
+
+  // Topics with eligible practice questions hand off directly into quiz-v2 with the topic filter set.
+  await page.getByTestId('gv2-search').fill('topic:pressurizer-level-and-press-control');
+  const practiceTopic = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: 'Pressurizer Level & Press Control' }).first();
+  await practiceTopic.getByRole('button').click();
+  await expect(page.getByTestId('gv2-actions-topic:pressurizer-level-and-press-control').getByRole('link', { name: /Generate quiz from this node/i }))
+    .toHaveAttribute('href', /\/quiz-v2\/play\/\?topics=pressurizer-level-and-press-control&count=10$/);
+  await expect(page.getByTestId('gv2-actions-topic:pressurizer-level-and-press-control')).toContainText('eligible question');
+
+  // Question/source/article nodes can generate a quiz from their explicit eligible related-question pool.
+  await page.getByTestId('gv2-search').fill('q8-pzr-saturation-rcp-restart');
+  const eligibleQuestion = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: '2018 Q8' }).first();
+  await eligibleQuestion.getByRole('button').click();
+  await expect(page.getByTestId('gv2-actions-question:q8-pzr-saturation-rcp-restart').getByRole('link', { name: /Generate quiz from this node/i }))
+    .toHaveAttribute('href', /\/quiz-v2\/play\/\?slugs=q8-pzr-saturation-rcp-restart&count=1$/);
+});
+
+test('graph-v2 polish exposes practice-only filtering, empty state, and deep-linked selection', async ({ page }) => {
+  await page.goto('graph-v2/');
+
+  const initialCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  await page.getByTestId('gv2-practice-only').check();
+  const practiceCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  expect(practiceCount).toBeGreaterThan(0);
+  expect(practiceCount).toBeLessThan(initialCount);
+
+  await page.getByTestId('gv2-search').fill('q85-sg-overpressure-security-redacted');
+  await expect(page.getByTestId('gv2-no-results')).toBeVisible();
+  await expect(page.getByTestId('gv2-no-results')).toContainText('No graph nodes match');
+
+  await page.getByTestId('gv2-search').fill('q8-pzr-saturation-rcp-restart');
+  await page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').first().getByRole('button').click();
+  await expect(page).toHaveURL(/graph-v2\/\?id=question%3Aq8-pzr-saturation-rcp-restart/);
+
+  await page.goto('graph-v2/?id=question%3Aq8-pzr-saturation-rcp-restart');
+  await expect(page.getByTestId('gv2-detail-question:q8-pzr-saturation-rcp-restart')).toBeVisible();
+  await expect(page.getByTestId('gv2-selected-jump')).toHaveAttribute('href', '#gv2-detail-root');
 });

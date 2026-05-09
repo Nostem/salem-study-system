@@ -1,7 +1,7 @@
 ---
 title: "2020 Q5 — Excess Letdown / SI Isolation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q5

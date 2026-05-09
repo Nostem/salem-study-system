@@ -1,7 +1,7 @@
 ---
 title: "2018 Q49 — TRIP-1 Immediate Actions"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q49

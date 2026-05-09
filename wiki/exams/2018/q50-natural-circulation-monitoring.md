@@ -1,7 +1,7 @@
 ---
 title: "2018 Q50 — Natural Circulation Monitoring"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q50

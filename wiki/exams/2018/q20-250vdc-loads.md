@@ -1,7 +1,7 @@
 ---
 title: "2018 Q20 — 250 VDC System Loads"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q20

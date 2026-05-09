@@ -1,7 +1,7 @@
 ---
 title: "2023 Q40 — Containment Spray Pump Sequencing / SEC Not Reset"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q40

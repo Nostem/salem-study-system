@@ -1,7 +1,7 @@
 ---
 title: "2018 Q86 — Accumulator Boron Concentration / LCO 3.5.1 / LCO 3.0.3"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: yes
 aliases:

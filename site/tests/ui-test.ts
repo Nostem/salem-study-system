@@ -93,7 +93,7 @@ test('search trigger button opens modal', async ({ page }) => {
   await page.goto(BASE);
   await page.waitForLoadState('networkidle');
 
-  await page.locator('#search-trigger').click();
+  await page.locator('#home-search-trigger').click();
   const modal = page.locator('#search-modal');
   const input = page.locator('#search-input');
 
@@ -122,7 +122,7 @@ test('desktop and mobile sidebars use distinct IDs', async ({ page }) => {
 });
 
 test('sidebar links resolve to valid pages', async ({ page }) => {
-  await page.goto(BASE);
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
   await page.waitForLoadState('networkidle');
 
   // Set desktop viewport so sidebar is visible
@@ -336,31 +336,39 @@ test('desktop: TOC rail visible', async ({ browser }) => {
 
 // --- 4. Link Integrity ---
 
-test('all internal links resolve to 200', async ({ page }) => {
+test('all internal links resolve to built files', async () => {
   const checkedLinks = new Set<string>();
-  const brokenLinks: { source: string; href: string; status: number }[] = [];
+  const brokenLinks: { source: string; href: string; target: string }[] = [];
 
   for (const pg of pages) {
-    await page.goto(BASE + pg.slug);
-    await page.waitForLoadState('networkidle');
+    const htmlPath = pg.slug === '/'
+      ? path.join(DIST_DIR, 'index.html')
+      : path.join(DIST_DIR, pg.slug, 'index.html');
+    const html = fs.readFileSync(htmlPath, 'utf8');
+    const hrefs = [...html.matchAll(/href=["']([^"']+)["']/g)]
+      .map((match) => match[1])
+      .filter((href): href is string => Boolean(href && href.startsWith(BASE)));
 
-    const links = page.locator(`a[href^="${BASE}"]`);
-    const count = await links.count();
-
-    for (let i = 0; i < count; i++) {
-      const href = await links.nth(i).getAttribute('href');
-      if (!href || checkedLinks.has(href)) continue;
+    for (const href of hrefs) {
+      if (checkedLinks.has(href)) continue;
       checkedLinks.add(href);
 
-      const response = await page.request.get(href);
-      if (response.status() !== 200) {
-        brokenLinks.push({ source: pg.name, href, status: response.status() });
+      const url = new URL(href, 'https://example.test');
+      const relativePath = decodeURIComponent(url.pathname.slice(BASE.length));
+      const targetPath = relativePath === ''
+        ? path.join(DIST_DIR, 'index.html')
+        : path.extname(relativePath)
+          ? path.join(DIST_DIR, relativePath)
+          : path.join(DIST_DIR, relativePath, 'index.html');
+
+      if (!fs.existsSync(targetPath)) {
+        brokenLinks.push({ source: pg.name, href, target: path.relative(DIST_DIR, targetPath) });
       }
     }
   }
 
   if (brokenLinks.length > 0) {
-    const report = brokenLinks.map(b => `  ${b.source} → ${b.href} (${b.status})`).join('\n');
+    const report = brokenLinks.map(b => `  ${b.source} → ${b.href} (${b.target})`).join('\n');
     expect(brokenLinks.length, `Broken links found:\n${report}`).toBe(0);
   }
 });

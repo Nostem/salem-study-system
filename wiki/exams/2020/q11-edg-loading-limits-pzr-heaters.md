@@ -1,7 +1,7 @@
 ---
 title: "2020 Q11 — EDG Loading Limits for PZR Heaters"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q11

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q30 — PR NI Failure and Trip Coincidence"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q30

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q23 — R19 SGBD Warning Unit Difference"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q23

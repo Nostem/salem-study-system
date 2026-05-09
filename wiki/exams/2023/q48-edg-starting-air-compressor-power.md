@@ -1,7 +1,7 @@
 ---
 title: "2023 Q48 — EDG Starting Air Compressor Power Supplies"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q48

@@ -1,7 +1,7 @@
 ---
 title: "2023 Q92 — PZR Pressure Channel Failure / NRC Reportability"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2023 Q92

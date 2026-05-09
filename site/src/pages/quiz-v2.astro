@@ -24,6 +24,7 @@ const sessionMeta = questions.map((q) => ({
   quizEligible: q.quizEligible,
   requiresReference: q.requiresReference,
   title: q.title,
+  topics: q.topics,
 }));
 ---
 
@@ -41,14 +42,27 @@ const sessionMeta = questions.map((q) => ({
             <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a> is unaffected.
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-2 text-center min-w-[180px]">
-          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
-            <div data-testid="qv2-bank-count" class="font-mono text-lg text-text-primary">{totalQuestions}</div>
-            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Questions</div>
+        <div class="flex flex-col gap-3 min-w-[180px]">
+          <div class="grid grid-cols-2 gap-2 text-center">
+            <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+              <div data-testid="qv2-bank-count" class="font-mono text-lg text-text-primary">{totalQuestions}</div>
+              <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Questions</div>
+            </div>
+            <div class="bg-bg-card border border-border rounded-md px-3 py-2">
+              <div class="font-mono text-lg text-text-primary">{examYears.length}</div>
+              <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Years</div>
+            </div>
           </div>
-          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
-            <div class="font-mono text-lg text-text-primary">{examYears.length}</div>
-            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Years</div>
+          <div class="flex flex-wrap gap-2 sm:justify-end">
+            <a
+              href={`${base}quiz-v2/play/`}
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
+            >Play</a>
+            <a
+              href={`${base}quiz-v2/review/`}
+              data-testid="qv2-review-link"
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue no-underline hover:bg-bg"
+            >Review</a>
           </div>
         </div>
       </div>
@@ -313,6 +327,7 @@ const sessionMeta = questions.map((q) => ({
     quizEligible: boolean;
     requiresReference: boolean;
     title: string;
+    topics: unknown[];
   }
 
   function readSessionMeta(): SessionMetaRow[] {
@@ -343,7 +358,7 @@ const sessionMeta = questions.map((q) => ({
       stemBlocks: [],
       choices: [],
       explanationBlocks: [],
-      topics: [],
+      topics: row.topics,
       sourceRefs: [],
       legacy: {},
     };
@@ -361,6 +376,10 @@ const sessionMeta = questions.map((q) => ({
     }
     const tracksRaw = params.get('tracks');
     if (tracksRaw) filters.tracks = tracksRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    const topicsRaw = params.get('topics');
+    if (topicsRaw) filters.topicSlugs = topicsRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    const slugsRaw = params.get('slugs');
+    if (slugsRaw) filters.questionSlugs = slugsRaw.split(',').map((s) => s.trim()).filter(Boolean);
     const refMode = params.get('ref');
     if (refMode === 'include' || refMode === 'exclude' || refMode === 'only') {
       filters.referenceMode = refMode;
@@ -399,7 +418,7 @@ const sessionMeta = questions.map((q) => ({
     const playLink = panel.querySelector<HTMLAnchorElement>('#qv2-session-play-link');
     if (playLink) {
       const playUrl = new URL(playLink.href);
-      for (const key of ['seed', 'count', 'years', 'tracks', 'ref']) {
+      for (const key of ['seed', 'count', 'years', 'tracks', 'topics', 'slugs', 'ref']) {
         const value = params.get(key);
         if (value) playUrl.searchParams.set(key, value);
       }

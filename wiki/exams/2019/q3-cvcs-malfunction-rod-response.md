@@ -1,7 +1,7 @@
 ---
 title: "2019 Q3 — CVCS Malfunction Rod Response[EDITED]"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q3

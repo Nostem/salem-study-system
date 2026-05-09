@@ -1,7 +1,7 @@
 ---
 title: "2018 Q17 — SGFP Suction Pressure Trip"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q17

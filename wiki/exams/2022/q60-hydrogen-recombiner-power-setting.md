@@ -1,7 +1,7 @@
 ---
 title: "2022 Q60 — Hydrogen Recombiner Power Setting"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2022 Q60

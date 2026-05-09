@@ -1,7 +1,7 @@
 ---
 title: "2019 Q50 — PZR Safety Valve Leak and Charging Response"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q50

@@ -1,7 +1,7 @@
 ---
 title: "2023 Q71 — Natural Circulation Boron Mixing and Reactivity"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q71

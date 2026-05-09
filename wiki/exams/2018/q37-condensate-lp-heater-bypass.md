@@ -1,7 +1,7 @@
 ---
 title: "2018 Q37 — Condensate LP Heater Bypass / CN22 Valves"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q37

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q39 — Pertinent Information Standing Order"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q39

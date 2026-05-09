@@ -168,6 +168,12 @@ const topicOptions = [...topicMap.entries()]
       <div class="mt-3 flex flex-wrap items-center gap-2">
         <button
           type="button"
+          data-testid="qv2p-create-backend-session"
+          class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-accent-blue rounded text-accent-blue hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
+        >Create backend session</button>
+        <span data-testid="qv2p-session-source" class="text-[11px] font-mono text-text-muted">Local deterministic session</span>
+        <button
+          type="button"
           data-testid="qv2p-prev"
           class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-border rounded text-text-primary hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
           disabled
@@ -355,6 +361,11 @@ const topicOptions = [...topicMap.entries()]
     type QuizSession,
     type QuizSessionFilters,
   } from '../../utils/quiz-v2-session';
+  import {
+    assertCreateQuizV2SessionResponse,
+    buildCreateQuizV2SessionPayload,
+  } from '../../utils/quiz-v2-backend-session';
+  import { createQuizV2Session } from '../../utils/auth-client';
   import type { StructuredQuestion } from '../../types/question-blocks';
 
   interface SessionMetaRow {
@@ -425,6 +436,10 @@ const topicOptions = [...topicMap.entries()]
     if (topicsRaw) {
       filters.topicSlugs = topicsRaw.split(',').map((s) => s.trim()).filter(Boolean);
     }
+    const slugsRaw = params.get('slugs');
+    if (slugsRaw) {
+      filters.questionSlugs = slugsRaw.split(',').map((slug) => slug.trim()).filter(Boolean);
+    }
     const refMode = params.get('ref');
     if (refMode === 'include' || refMode === 'exclude' || refMode === 'only') {
       filters.referenceMode = refMode;
@@ -446,6 +461,8 @@ const topicOptions = [...topicMap.entries()]
   const selections: Selections = new Map();
   let currentIndex = 0;
   let session: QuizSession | null = null;
+  let currentFilters: QuizSessionFilters = {};
+  let currentSeed: string | undefined;
 
   function setText(testid: string, text: string): void {
     const el = document.querySelector(`[data-testid="${testid}"]`);
@@ -589,21 +606,56 @@ const topicOptions = [...topicMap.entries()]
     });
   }
 
+  function applySession(nextSession: QuizSession, sourceLabel = 'Local deterministic session'): void {
+    session = nextSession;
+    currentIndex = 0;
+    selections.clear();
+    setText('qv2p-session-id', session.sessionId);
+    setText('qv2p-session-seed', session.seed);
+    setText('qv2p-session-count', String(session.questionSlugs.length));
+    setText('qv2p-session-total', String(session.totalEligible));
+    setText('qv2p-session-filters', JSON.stringify(session.filters));
+    setText('qv2p-session-source', sourceLabel);
+    showCurrent();
+  }
+
+  async function createBackendSession(): Promise<void> {
+    const button = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-create-backend-session"]');
+    if (!button) return;
+    button.disabled = true;
+    setText('qv2p-session-source', 'Creating backend session…');
+    try {
+      const payload = buildCreateQuizV2SessionPayload(currentFilters, currentSeed ? { seed: currentSeed } : {});
+      const response = assertCreateQuizV2SessionResponse(await createQuizV2Session(payload));
+      applySession(response.session, response.source === 'backend' ? 'Backend session' : 'Local fallback session');
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'request_failed';
+      setText('qv2p-session-source', message === 'not_authenticated'
+        ? 'Log in to create a backend session; using local session.'
+        : `Backend session failed: ${message}`);
+    } finally {
+      button.disabled = false;
+    }
+  }
+
+  function attachBackendSessionHandler(): void {
+    document
+      .querySelector<HTMLButtonElement>('[data-testid="qv2p-create-backend-session"]')
+      ?.addEventListener('click', () => { void createBackendSession(); });
+  }
+
   function init(): void {
     const meta = readSessionMeta();
     const candidateQuestions = meta.map(metaToQuestion);
     const params = new URLSearchParams(window.location.search);
     attachBuilderHandlers(params);
     const { filters, seed } = parseFiltersFromUrl(params);
-    session = buildQuizSession(candidateQuestions, filters, seed ? { seed } : {});
-    setText('qv2p-session-id', session.sessionId);
-    setText('qv2p-session-seed', session.seed);
-    setText('qv2p-session-count', String(session.questionSlugs.length));
-    setText('qv2p-session-total', String(session.totalEligible));
-    setText('qv2p-session-filters', JSON.stringify(session.filters));
+    currentFilters = filters;
+    currentSeed = seed;
+    applySession(buildQuizSession(candidateQuestions, filters, seed ? { seed } : {}));
     attachChoiceHandlers();
     attachNavHandlers();
-    showCurrent();
+    attachBackendSessionHandler();
   }
 
   if (document.readyState === 'loading') {

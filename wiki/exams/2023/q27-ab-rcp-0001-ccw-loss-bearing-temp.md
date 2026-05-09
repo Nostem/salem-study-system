@@ -1,7 +1,7 @@
 ---
 title: "2023 Q27 — AB.RCP-0001 / CCW Loss Time Limit and Bearing Temp"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q27

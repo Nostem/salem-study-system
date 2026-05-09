@@ -1,7 +1,7 @@
 ---
 title: "2019 Q70 — Loss of Condenser Vacuum Trip Criteria"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q70

@@ -1,7 +1,7 @@
 ---
 title: "2022 Q13 — FW Line Break vs Steam Break"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q13

@@ -1,7 +1,7 @@
 ---
 title: "2020 Q76 — CCW Restoration After LBLOCA + LOOP"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q76

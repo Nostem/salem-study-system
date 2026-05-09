@@ -1,7 +1,7 @@
 ---
 title: "2019 Q81 — LOCA Outside Containment Transition"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

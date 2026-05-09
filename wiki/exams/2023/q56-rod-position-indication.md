@@ -1,7 +1,7 @@
 ---
 title: "2023 Q56 — Rod Position Indication / Group Demand Step Counter"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q56

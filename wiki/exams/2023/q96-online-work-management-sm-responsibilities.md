@@ -1,7 +1,7 @@
 ---
 title: "2023 Q96 — Online Work Management / SM Responsibilities"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q96

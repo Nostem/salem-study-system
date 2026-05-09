@@ -1,7 +1,7 @@
 ---
 title: "2019 Q32 — Hydrogen Recombiner Power Setting"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2019 Q32
