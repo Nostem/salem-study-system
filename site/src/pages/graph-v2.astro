@@ -56,6 +56,98 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
   'quiz-source',
   'sourced-from',
 ];
+
+const edgeTypeLabels: Record<string, string> = {
+  wikilink: 'Wiki link',
+  tests: 'Question tests topic',
+  'topic-wiki': 'Topic wiki page',
+  'quiz-source': 'Question source article',
+  'sourced-from': 'Source reference',
+};
+
+function articleHref(slug: string): string {
+  return `${base}${slug.replace(/^\//, '')}/`;
+}
+
+function nodeHref(node: (typeof graph.nodes)[number]): string | undefined {
+  if (node.kind === 'article') return articleHref(node.slug);
+  if (node.kind === 'question') {
+    const sourceEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'quiz-source');
+    const source = sourceEdge ? nodeById.get(sourceEdge.target) : undefined;
+    return source?.kind === 'article' ? articleHref(source.slug) : undefined;
+  }
+  if (node.kind === 'topic') {
+    const topicArticleEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'topic-wiki');
+    const article = topicArticleEdge ? nodeById.get(topicArticleEdge.target) : undefined;
+    return article?.kind === 'article' ? articleHref(article.slug) : undefined;
+  }
+  return undefined;
+}
+
+function practiceHref(node: (typeof graph.nodes)[number]): string | undefined {
+  if (node.kind !== 'topic') return undefined;
+  const hasEligibleQuestions = (edgesByTarget.get(node.id) ?? []).some((edge) => {
+    if (edge.type !== 'tests') return false;
+    const question = nodeById.get(edge.source);
+    return question?.kind === 'question' && question.meta?.quizEligible === true;
+  });
+  if (!hasEligibleQuestions) return undefined;
+  return `${base}quiz-v2/play/?topics=${encodeURIComponent(node.slug)}&count=10`;
+}
+
+function edgeSummaryFor(nodeId: string): Array<{ type: string; label: string; count: number }> {
+  const counts = new Map<string, number>();
+  for (const edge of [...(edgesBySource.get(nodeId) ?? []), ...(edgesByTarget.get(nodeId) ?? [])]) {
+    counts.set(edge.type, (counts.get(edge.type) ?? 0) + 1);
+  }
+  return edgeOrder
+    .map((type) => ({ type, label: edgeTypeLabels[type], count: counts.get(type) ?? 0 }))
+    .filter((entry) => entry.count > 0);
+}
+
+function relatedQuestionsFor(nodeId: string): Array<(typeof graph.nodes)[number]> {
+  const questionIds = new Set<string>();
+  for (const edge of [...(edgesBySource.get(nodeId) ?? []), ...(edgesByTarget.get(nodeId) ?? [])]) {
+    const source = nodeById.get(edge.source);
+    const target = nodeById.get(edge.target);
+    if (source?.kind === 'question') questionIds.add(source.id);
+    if (target?.kind === 'question') questionIds.add(target.id);
+  }
+  return [...questionIds]
+    .map((id) => nodeById.get(id))
+    .filter((node): node is (typeof graph.nodes)[number] => !!node && node.id !== nodeId)
+    .sort((a, b) => {
+      const ay = Number(a.meta?.examYear ?? 0);
+      const by = Number(b.meta?.examYear ?? 0);
+      const aq = Number(a.meta?.questionNumber ?? 0);
+      const bq = Number(b.meta?.questionNumber ?? 0);
+      return by - ay || aq - bq || a.title.localeCompare(b.title);
+    });
+}
+
+function metaEntriesFor(node: (typeof graph.nodes)[number]): Array<{ label: string; value: string }> {
+  if (node.kind !== 'question') return [];
+  const meta = node.meta ?? {};
+  const entries: Array<{ label: string; value: unknown }> = [
+    { label: 'Exam', value: `${meta.examYear ?? '—'} ${meta.examType ?? ''}`.trim() },
+    { label: 'Question', value: meta.questionNumber },
+    { label: 'Track', value: meta.track },
+    { label: 'Status', value: meta.status },
+    { label: 'Quiz eligible', value: meta.quizEligible === true ? 'yes' : 'no' },
+    { label: 'Reference required', value: meta.requiresReference === true ? 'yes' : 'no' },
+    { label: 'Accepted answer', value: Array.isArray(meta.acceptedAnswerLabels) ? meta.acceptedAnswerLabels.join(', ') : undefined },
+    { label: 'K/A', value: meta.kaCode },
+    { label: 'K/A importance', value: meta.kaImportance },
+    { label: 'Cognitive level', value: meta.cognitiveLevel },
+    { label: 'Tier/group', value: meta.tierGroup },
+    { label: 'Source', value: meta.questionSource },
+    { label: 'Audit', value: meta.auditStatus },
+    { label: 'Non-quiz reason', value: meta.nonQuizReason },
+  ];
+  return entries
+    .filter((entry) => entry.value !== undefined && entry.value !== null && String(entry.value).trim() !== '')
+    .map((entry) => ({ label: entry.label, value: String(entry.value) }));
+}
 ---
 
 <BaseLayout title="Graph v2 (Experimental)" noindex={true}>
@@ -177,7 +269,7 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
               data-kind={n.kind}
               data-edge-types={Array.from(edgeTypesByNode.get(n.id) ?? []).join(' ')}
               data-neighbors={Array.from(neighborsByNode.get(n.id) ?? []).join(' ')}
-              data-search={`${n.title} ${n.slug} ${n.id}`.toLowerCase()}
+              data-search={`${n.title} ${n.slug} ${n.id} ${Object.values(n.meta ?? {}).join(' ')}`.toLowerCase()}
             >
               <button
                 type="button"
@@ -202,6 +294,11 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
         {renderedNodes.map((n) => {
           const out = edgesBySource.get(n.id) ?? [];
           const incoming = edgesByTarget.get(n.id) ?? [];
+          const openHref = nodeHref(n);
+          const quizHref = practiceHref(n);
+          const edgeSummary = edgeSummaryFor(n.id);
+          const metaEntries = metaEntriesFor(n);
+          const relatedQuestions = relatedQuestionsFor(n.id);
           return (
             <section
               class="gv2-detail hidden"
@@ -217,6 +314,78 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
                   id: <code>{n.id}</code> · slug: <code>{n.slug}</code>
                 </div>
               </header>
+
+              <div class="mb-5 grid gap-4 xl:grid-cols-[1fr_240px]">
+                <div class="space-y-4">
+                  <section class="rounded border border-border bg-bg/50 p-3">
+                    <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Connection summary</h3>
+                    <div class="flex flex-wrap gap-2" data-testid={`gv2-summary-${n.id}`}>
+                      {edgeSummary.length === 0 ? (
+                        <span class="text-sm text-text-muted">No semantic edges yet.</span>
+                      ) : (
+                        edgeSummary.map((entry) => (
+                          <span class="rounded-full border border-border bg-bg-card px-2 py-1 text-[11px] font-mono text-text-body">
+                            {entry.label}: {entry.count}
+                          </span>
+                        ))
+                      )}
+                    </div>
+                  </section>
+
+                  {metaEntries.length > 0 && (
+                    <section class="rounded border border-border bg-bg/50 p-3">
+                      <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Question facts</h3>
+                      <dl class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-2 text-sm" data-testid={`gv2-meta-${n.id}`}>
+                        {metaEntries.map((entry) => (
+                          <div>
+                            <dt class="font-mono text-[10px] uppercase tracking-wider text-text-muted">{entry.label}</dt>
+                            <dd class="text-text-primary">{entry.value}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    </section>
+                  )}
+                </div>
+
+                <section class="rounded border border-border bg-bg/50 p-3 h-fit">
+                  <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Study actions</h3>
+                  <div class="flex flex-col gap-2 text-sm" data-testid={`gv2-actions-${n.id}`}>
+                    {openHref ? (
+                      <a href={openHref} class="rounded border border-border px-3 py-2 text-text-primary no-underline hover:border-accent-blue hover:text-accent-blue">
+                        Open source/wiki page
+                      </a>
+                    ) : (
+                      <span class="rounded border border-border px-3 py-2 text-text-muted">No local page link</span>
+                    )}
+                    {quizHref && (
+                      <a href={quizHref} class="rounded border border-accent-blue/60 px-3 py-2 text-accent-blue no-underline hover:bg-accent-blue/10">
+                        Practice this topic
+                      </a>
+                    )}
+                  </div>
+                </section>
+              </div>
+
+              {relatedQuestions.length > 0 && (
+                <section class="mb-5 rounded border border-border bg-bg/50 p-3">
+                  <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Related questions</h3>
+                  <ul class="grid gap-2 sm:grid-cols-2 text-sm" data-testid={`gv2-related-questions-${n.id}`}>
+                    {relatedQuestions.slice(0, 12).map((q) => (
+                      <li>
+                        <button type="button" data-gv2-select={q.id} class="w-full rounded border border-border bg-bg-card px-3 py-2 text-left hover:border-accent-blue">
+                          <span class="block font-mono text-[10px] uppercase tracking-wider text-text-muted">
+                            {q.meta?.examYear ? `${q.meta.examYear} Q${q.meta.questionNumber ?? ''}` : q.kind}
+                          </span>
+                          <span class="block text-text-primary leading-snug">{q.title}</span>
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                  {relatedQuestions.length > 12 && (
+                    <p class="mt-2 text-[11px] font-mono text-text-muted">Showing 12 of {relatedQuestions.length} related questions.</p>
+                  )}
+                </section>
+              )}
 
               <div class="grid gap-5 lg:grid-cols-2">
                 <section>

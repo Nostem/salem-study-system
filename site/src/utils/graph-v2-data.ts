@@ -179,6 +179,16 @@ function questionNodeIdNode(q: StructuredQuestion): GraphV2Node {
       track: q.track,
       examType: q.examType,
       status: q.status,
+      quizEligible: q.quizEligible,
+      requiresReference: q.requiresReference,
+      acceptedAnswerLabels: q.acceptedAnswerLabels,
+      kaCode: q.legacy?.kaCode,
+      kaImportance: q.legacy?.kaImportance,
+      cognitiveLevel: q.legacy?.cognitiveLevel,
+      tierGroup: q.legacy?.tierGroup,
+      questionSource: q.legacy?.questionSource,
+      auditStatus: q.legacy?.auditStatus,
+      nonQuizReason: q.legacy?.nonQuizReason,
     },
   };
 }
