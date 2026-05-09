@@ -50,10 +50,17 @@ Core Cooling Red Path validation (no RCPs running, subcooling < 0°F): <span cla
 FRCC-1 Step 3 Safeguards Valve Alignment with SECs in Mode 1: the crew <span class="hi-exam">WILL attempt to open BOTH BIT inlet valves (1SJ4 AND 1SJ5)</span> even if one is already open. FRCC-1 requires both valves open, not just one. <span class="hi-exam">11SW122 (SW to 11 CC HX) is NOT required to be closed in SEC Mode 1</span> — 11SW122 closure is required when SECs are in <span class="hi-trap">MODE 3 (SI + Blackout), not Mode 1 (SI only)</span>.
 </div>
 
+### RCP Restart and PORV Operation (Step 25)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q21</div>
+At <span class="hi-exam">Step 25</span>, RCPs are started if CETs are still <span class="hi-exam">> 1200°F</span> to clear water in the RCS intermediate leg and permit circulation of hot gases from the overheated core through the steam generators. If RCP restart is <span class="hi-exam">not effective</span> in decreasing CET temperature below 1200°F, at <span class="hi-exam">Step 25.3 BOTH PZR PORVs are opened</span> to help reduce RCS pressure and allow ECCS injection. <span class="hi-trap">Trap: not "shut both" or "open only one" — both PORVs are opened together.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RCPs]], [[Containment]], [[RVLIS]], [[ECCS]], [[Service Water]], [[CCW]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCPs]], [[Containment]], [[RVLIS]], [[ECCS]], [[Service Water]], [[CCW]], [[Pressurizer]], [[Incores]]
 - Related concepts: [[Containment]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2019 Q72]], [[2020 Q24]], [[2022 Q24]], [[2023 Q84]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2016 Q21]], [[2019 Q72]], [[2020 Q24]], [[2022 Q24]], [[2023 Q84]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

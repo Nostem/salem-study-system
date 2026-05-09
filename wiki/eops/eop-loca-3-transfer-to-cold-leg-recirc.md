@@ -16,6 +16,11 @@ Provides direction for transferring ECCS suction from the RWST to the containmen
 
 ## Key Actions / Information
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q5</div>
+EOP-LOCA-3 <span class="hi-exam">Step 11.2</span> checks whether at least one CCW pump is running. With <span class="hi-exam">NO CCW pumps running</span>, operators are directed to <span class="hi-exam">go to Step 124 and align for single-train recirculation operation</span> (continue in LOCA-3 — single train without CCW). <span class="hi-trap">Trap matrix:<br>&bull; There is NO provision in LOCA-3 to transition to EOP-APPX-1 (CCW Restoration) or EOP-LOCA-5 (Loss of Emergency Coolant Recirculation) when no CCW pumps are running. LOCA-5 is for mechanical/electrical recirc failures, not loss of CCW.<br>&bull; The two-train alignment (BOTH RHR pumps + one SI + one charging) is the normal LOCA-3 flowpath when CCW IS available — not the "no CCW" path.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2023 #1</div>
 Transfer to cold leg recirculation during LBLOCA. Time-critical operator actions from RWST Lo Level alarm:<br>
@@ -50,16 +55,27 @@ CAS transition for sump blockage: when ECCS pumps are aligned to sump and <span 
 ECCS realignment for cold leg recirculation is required as soon as the <span class="hi-exam">RWST Level LO alarm is FIRST validated</span> (IAW EOP-LOCA-1). 21SJ44 and 22SJ44 (Containment Sump Suction Valves) each serve a single RHR pump — <span class="hi-exam">with 21SJ44 closed, only 22 RHR pump can draw suction from the containment sump</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q33</div>
+EOP-LOCA-3 alignment when 21SJ44 fails to open: <span class="hi-exam">Step 5.2 directs stopping 21 RHR pump</span>, and 21 RHR pump remains stopped as long as 21SJ44 is shut. <span class="hi-exam">21SJ45 is interlocked with 21SJ44 — 21SJ45 cannot be opened with 21SJ44 shut</span>. The 21CS36 interlock is with 21RH1 and 21RH2 (must be SHUT before 21CS36 can be OPENED). With 22 RHR pump running at step 22, CS header flow is supplied by <span class="hi-exam">22CS36</span>. Final lineup: ALL containment sump recirculation flow goes through <span class="hi-exam">22SJ45 (to Charging/SI pump suctions) and 22CS36 (to spray headers)</span>; 22SJ49 (cold leg isolation) is shut whenever 22 RHR pump is running at the RWST lo-lo alarm. (Source procedure rev 30; ECCS Lesson Plan p.47, 52)
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #2</div>
 Cold leg recirculation transfer after LBLOCA. <span class="hi-exam">CT#2 (CT-36) — time-critical</span>: (1) Open 21SJ44 and 22SJ44, depress sump auto arm pushbuttons when containment sump >62% lights lit. (2) Remove lockouts for 2SJ67, 2SJ68, 2SJ69. (3) <span class="hi-exam">Close 2SJ69 within ~3.7 min</span> of RWST lo alarm. (4) <span class="hi-exam">Stop 22 CS pump within ~5.5 min</span>. (5) Close 21 and 22RH19s. Select flow path for all 4KV vital buses energized → Step 11. Close 2SJ67 and 2SJ68. Open 22SJ45, then 21SJ45. Close 2SJ30, 2SJ1, 2SJ2. <span class="hi-exam">Place 21RH29 and 22RH29 in manual and ensure closed (Step 15) within ~11.2 min</span>. PO removes lockout from 2SJ30.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+After waiting at LOCA-3 step 21 for RWST lo-lo level alarm with all ECCS running except 22 CS pump (stopped at step 8), <span class="hi-exam">both RHR pumps cavitate</span> as containment sump becomes blocked. Per the LOCA-3 Continuous Action Summary, the crew enters <span class="hi-exam">EOP-APPX-7</span> immediately (operator may go to EOP-LOCA-5 first, but Step 1 of LOCA-5 directs performance of APPX-7). The APPX-7 final task standard is to <span class="hi-exam">secure all ECCS pumps</span>, then re-establish recirculation flow with <span class="hi-exam">ONE RHR pump and ONE Charging OR SI pump</span> (single-pump per side, NOT the LOCA-3 two-train alignment).
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]]
-- Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]]
-- Related JPMs: [[2020 JPM SRO-A5]]
+- Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]], [[CFCUs]]
+- Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
+- Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
+- Related exam questions: [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]]
+- Related JPMs: [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]]

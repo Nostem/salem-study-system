@@ -85,16 +85,41 @@ Step 3: "IS RCS PRESSURE GREATER THAN ANY INTACT OR RUPTURED SG PRESSURE?" — I
 Entered from EOP-TRIP-1 when all AFW lost: no SG NR levels >9% (15% adverse), total AFW flow <22E4 lbm/hr. Bleed and feed criteria: <span class="hi-exam">3 SG wide range levels <20% (25% adverse)</span>. Recovery via condensate: close all GB4s, close all SS94s, stop all RCPs. Select ONE SG for depressurization to <span class="hi-exam"><575 psig</span>. Caution note: <span class="hi-exam">steam 21 and 23 SGs last to maximize 23 AFW pump steam supply availability</span>. Depressurize using steam dumps (MS Pressure Control) or MS10s. Locally open selected SG BF40 or BF19 (120 ft TGA). Open BF13, open CN48s (SGFP bypass valves), close CN32s (SGFP suction valves). <span class="hi-exam">CT-43: establish condensate feed flow before bleed and feed is required.</span> Condensate flow established when SG pressure ~600 psig. WR level rising confirms feed flow (took ~6 min in validation after condensate flow started at 5-6%).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q23</div>
+Bleed and Feed with only <span class="hi-exam">one PORV open</span> (second PORV fails to open): per FRHS Bases, <span class="hi-exam">the RCS may not depressurize quickly enough to ensure sufficient SI flow to provide RCS heat removal, and other RCS openings may have to be established</span>. <span class="hi-trap">Traps: (1) Bleed and Feed is NOT terminated when only one PORV is open — operations continue. (2) The RCS Safety Limit (<span class="val-trip">2735 psig</span>) will NOT be violated with one PORV open. (3) Depressurizing all SGs to inject alternate feedwater is unrelated to a PORV failing to open in the bleed path.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q51</div>
+FRHS-1 entry from FW Isolation event with both SGFPs tripped and no AFW auto-start: trip-of-both-SGFPs MDAFW auto-start signal is <span class="hi-exam">inhibited when SGFP trip is caused by FW Isolation</span>. AFW auto-start on SG NR &lt;<span class="val-alarm">9%</span> still functions. EOP-TRIP-2 step 3 NO path (total AFW flow &lt;<span class="hi-exam"><span class="val-normal">22E4 lbm/hr</span></span>) directs operators to manually start AFW pumps. <span class="hi-exam">FRHS-1 transition is plausible because CFSTs become active after transition out of TRIP-1</span> — but not the immediate response when AFW can be manually established.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q76</div>
+After Rx trip on Main Generator trip with all 3 AFW pumps unable to feed (11 failed to start, 12 with Pressure Override keeping 11AF21 / 12AF21 shut, 13 tripped, all SG NR off-scale low) and SPDS indicating Heat Sink Red Path: the FRHS-1 transition is INCORRECT — the crew remains in <span class="hi-exam">EOP-TRIP-2 step 3</span> to establish AFW flow &gt;22E4 lbm/hr (start 11–13 AFW pumps as necessary, including <span class="hi-trap">defeating the Pressure Override circuit</span>). FRHS-1 distractors are plausible only if CFST usage is misapplied after TRIP-1 exit. <span class="hi-trap">SPDS alone does not authorize FRP transition — primary 1E indications must be verified first.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2019 #4</div>
 Loss of all AFW following Main Turbine trip: 21 AFW pump C/T, 22 AFW pump lost with <span class="hi-exam">2B 4KV Vital Bus</span>, 23 AFW pump trips on <span class="hi-exam">overspeed</span> shortly after manual start. Crew validates CFST RED path on Heat Sink (SG NR levels <9%, AFW flow <22E4 lbm/hr). In FRHS-1, crew performs <span class="hi-exam">Prompt SGFP Recovery</span> using 22 SGFP IAW S2.OP-SO.CN-0007: reset SGFP trips, relatch 22 SGFP, raise speed to 3960-3980 rpm, verify DP >50 psid, feed SGs via BF19/BF40. <span class="hi-exam">CT-43: Establish main feedwater flow to SGs before bleed and feed is required.</span> Scenario terminates when main feed flow established and SG WR levels rising.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+MSLB at mixing bottle, Auto SI initiated, Main Turbine manually tripped (auto trip failed), MSLI failed (all MSIVs remain open), <span class="hi-exam">all AFW flow lost</span>, transition from EOP-TRIP-1 Step 20 to FRHS-1 Step 1. Step 4 entry to bleed-and-feed: <span class="hi-exam">at least 2 SG WR levels &lt;32% (37% adverse) → IMMEDIATELY GO TO STEP 21</span>. Step 21 caution: Steps 24 thru 29 must be performed quickly and without interruption. Step 23 (sequence-23, before SI initiate): <span class="hi-exam">STOP ALL RCPs</span> (all 21-24 RCPs). Step 22: INITIATE SI on at least one train. Step 23 (verify): Table B (BIT inlet/outlet, charging discharge, accumulator outlet, RWST suction) and Table C (SI alignment) checked in Safeguards position. Step 24: BOTH PZR PORV STOP VALVES OPEN, OPEN BOTH PZR PORVs in Manual. <span class="hi-exam">Alternate path: 2PR2 fails to open → open 2RC40 thru 2RC43 (REACTOR HEAD VENTS) at 2RP3 backpanel using four key-locked switches</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+While in EOP-LOSC-2 with all SGs faulted and RCS cooldown rate &gt;100°F/hr, <span class="hi-exam">STA reports RED path on Heat Sink CFST</span>; CRS transitions briefly to FRHS-1, verifies <span class="hi-exam">operator action (AFW throttling per CT#2 to ≥1.0E4 lbm/hr) was the cause of the RED path</span>, and returns to procedure in effect (LOSC-2). Demonstrates the FRHS-1 entry/exit pattern: when an FRP RED is reached because the operator is actively executing a CT to limit cooldown, the cause is verified and the crew returns to the procedure in effect rather than executing FRHS-1 actions.
+</div>
+
 ## Connections
 
-- Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]]
-- Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
-- Related JPMs: [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
-- Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]], [[Pressurizer & PRT]], [[ECCS]], [[CVCS]], [[RCPs]]
+- Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
+- Related exam questions: [[2016 Q4]], [[2016 Q23]], [[2016 Q51]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
+- Related JPMs: [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]], [[2016 JPM Sim-d]]
+- Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

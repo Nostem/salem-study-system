@@ -100,6 +100,11 @@ Per AB.RCP-0001: loss of CCW to motor bearings — <span class="hi-exam">5 minut
 | #1 seal leak-off >= 6 gpm | <span class="hi-exam">#1 seal failure</span> |
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q6</div>
+Total #1 seal failure indications: <span class="hi-exam">#1 seal failure means minimum resistance / maximum seal flow → seal flow rises</span> (NOT lowering). More flow reaches the #2 seal, causing <span class="hi-exam">higher #2 seal D/P and higher leakoff to the standpipe → standpipe level high alarm</span>. The <span class="hi-exam">seal leakoff D/P low alarm comes in because the failed seal has no D/P across it</span>. Expected: standpipe level high, seal leakoff D/P low alarm, #1 seal outlet temperature rising. <span class="hi-trap">"Seal flow lowering" is the unexpected indication — a failed #1 seal results in MORE flow, not less.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q28</div>
 RCP STANDPIPE LEVEL HI alarm with #1 seal leak-off flow lowered = <span class="hi-exam">#2 seal failure indication</span>. Both standpipe level high AND reduced #1 seal leak-off flow confirm #2 seal failure. <span class="hi-trap">Standpipe level LOW is a #3 seal indication — do not confuse high vs low standpipe alarms. High standpipe = #2 seal; Low standpipe = #3 seal.</span>
 </div>
@@ -144,6 +149,11 @@ On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel mom
 Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barrier. (UFSAR 5.5.1.3.14)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q27</div>
+RCP trip on Phase B isolation: CS actuation occurs at <span class="hi-exam">15 psig</span> in containment, which also triggers Phase B isolation. Phase B <span class="hi-exam">shuts RCP CCW cooling inlet and outlet valves</span>. Per the EOP-FRCE-1 basis, RCPs are tripped because <span class="hi-exam">CCW to RCP seals and motors is isolated</span> — to prevent motor damage due to lack of cooling. <span class="hi-trap">Not seal-leakoff minimization, not thermal barrier backflow prevention, and not two-phase pumping avoidance.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q78</div>
 Per AB.CC-0001, three time-critical RCP protection criteria on loss of CCW:<br>
 1. Motor bearing temp reaches <span class="hi-exam"><span class="val-trip">175°F</span> → stop RCPs</span> (calculate from initial temp + rate of rise)<br>
@@ -178,6 +188,16 @@ RCP #1 seal failure identification: <span class="hi-exam">seal leak-off flow >=6
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (minimum loops in operation by mode)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q28</div>
+LCO 3.4.1.1 (Modes 1 and 2): <span class="hi-exam">all reactor coolant loops shall be in operation</span>. With less than all loops operating, required action is <span class="hi-exam">be in HSB (Mode 3) within 1 hour</span>. Applies during plant startup at 4% power (Mode 2) when an RCP trips and a loop is no longer in operation. <span class="hi-trap">"Mode 3 within 15 minutes" has the right action but wrong time. "Immediately initiate corrective action to return the loop to operable" is a Mode 4 (3.4.1.3) action; "suspend operations involving boron concentration reduction" is a Mode 3 (3.4.1.2) action when no loop is in operation.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q77</div>
+Mode 3 RCP trip with rod control de-energized (3 of 4 RTB/RTBBs open even with RDMG set in operation and a single RTB shut): LCO 3.4.1.2 requires <span class="hi-exam">two operable RC loops</span> with <span class="hi-exam">one loop in operation</span>. With four RCPs operable initially, the trip of a single RCP <span class="hi-exam">does not require any action — no cooldown to Mode 4 required</span>. Bases for required loop operation: <span class="hi-exam">"ensure mixing, prevent stratification, and produce gradual reactivity changes during boron concentration reductions in the RCS"</span> (NOT single failure criteria, which addresses minimum required loops in OPERATION).
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 Sim-d</div>
 RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <span class="hi-exam">low seal flow across #2 seal or excessive #3 seal flow</span>. Key check: if standpipe low AND seal leakoff flow alarm together → go to AB.RCP-0001. If standpipe low ONLY → fill: open <span class="hi-exam">2WR80 (PW to CONTMT STOP V)</span> on 2CC2, then <span class="hi-exam">21WR62 (Standpipe Supply Valve)</span> on 21 RCP bezel. When hi level alarm, close all and stop PW pump.
@@ -203,10 +223,21 @@ RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <s
 RCP shaft shear at 25% power — thermodynamic effects on the affected loop: with 13 RCP shaft sheared, <span class="hi-exam">Loop 13 RCS flow goes to minimum and 13 SG steam flow lowers significantly</span>. This causes: (1) <span class="hi-exam">13 RCS Loop &Delta;T LOWERS</span> (reduced heat transfer due to minimal flow), and (2) <span class="hi-exam">13 SG NR Level initially SHRINKS</span> (reduced steam flow → reduced voiding in SG → apparent level drop). <span class="hi-trap">Trap: candidates may confuse the &Delta;T response — with minimal loop flow, less heat is being removed from the core through that loop, so the loop &Delta;T decreases. Also: shrink occurs from the rapid decrease in steam production, not from swell.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+FRHS-1 bleed-and-feed Step 23 (sequence): <span class="hi-exam">STOP ALL RCPs (21-24)</span> before initiating SI. RO depresses STOP PB for 21-24 RCPs and verifies green stop light illuminates and red start light extinguishes. Stopping RCPs prevents uncontrolled RCS depressurization through PORV bleed flow with running pumps, and is required to permit the SI / PORV bleed path to function.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+On total Loss of All SW, AB.SW-0005 Step 3.2 directs <span class="hi-exam">stop all RCPs</span> immediately after the reactor trip. Rationale: with no SW to cool CCW, the CCW system can no longer remove the ~600 kW per pump heat input from the RCPs (mechanical seal cooling, motor cooling) — running RCPs would rapidly heat up CCW. The procedure also requires verifying RCP Seal Inlet Temperatures &lt;225°F before swapping to the 23 (positive displacement) Charging Pump for seal injection.
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
-- Related exam questions: [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
-- Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]]
-- Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related exam questions: [[2016 Q6]], [[2016 Q21]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2016 Q77]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
+- Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

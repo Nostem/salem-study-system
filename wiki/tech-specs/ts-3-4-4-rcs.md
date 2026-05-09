@@ -26,6 +26,11 @@ aliases:
 
 **Action:** With less than required loops in operation, be in Hot Standby within <span class="val-trip">1 hour</span>.
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q28</div>
+Mode 2 RCP trip during startup at 4% power: with one RCS loop no longer in operation, LCO 3.4.1.1 requires the unit to <span class="hi-exam">be in Mode 3 within 1 hour</span>. <span class="hi-trap">Distinguish from: 15-minute timeline (wrong); "immediately initiate corrective action to return the loop to operable" (this is a Mode 4 / 3.4.1.3 action); "suspend boron dilution" (this is a Mode 3 / 3.4.1.2 action when no loop is in operation).</span>
+</div>
+
 ### Hot Standby (3.4.1.2)
 
 <div class="callout callout-important">
@@ -54,6 +59,11 @@ All RCPs may be de-energized for up to 1 hour provided: (1) no boron dilution, (
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q51</div>
 After a reactor trip from 75% with one RCP stopped: RTB B is open and both bypass breakers not racked in, so <span class="hi-exam">rod control system is de-energized</span>. LCO 3.4.1.2 only requires <span class="hi-exam">two loops OPERABLE</span> when de-energized. With three loops still running, <span class="hi-exam">LCO 3.4.1.2 IS met</span>. <span class="hi-trap">Trap: candidates may assume all four loops must be OPERABLE after a trip, forgetting the de-energized allowance.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q77</div>
+Mode 3 with 22 RDMG operating (motor & generator breakers shut), RTB "B" racked in and shut, RTB "A" and both RTBBs open: <span class="hi-exam">3 of the 4 RTB and RTBBs being open is considered "rod control de-energized"</span> (per TS page 3/4 4-2a) — even with an RDMG set in operation and a single RTB shut. With rod control de-energized, LCO 3.4.1.2 requires <span class="hi-exam">TWO operable RC loops (RCP, SG, and loop)</span> and <span class="hi-exam">ONE loop in operation</span>. With four RCPs operable initially, the trip of a single RCP <span class="hi-exam">does not require any action — minimum LCO is still met, no cooldown to Mode 4 required</span>. The bases provides "ensure mixing, prevent stratification, and produce gradual reactivity changes during boron concentration reductions in the RCS" as the reason for required loop operation. <span class="hi-trap">Trap B: "single failure criteria" is not the bases for the operation requirement — single failure criteria refers in this case to the minimum required loops IN OPERATION, not the bases statement.</span>
 </div>
 
 ### Hot Shutdown (3.4.1.3)
@@ -330,6 +340,11 @@ f. <span class="hi">≤1 gpm</span> from any RCS Pressure Isolation Valve (at 22
 CVCS leak vs. RCS operational leakage: a leak from 2CV6 (Letdown Relief Valve) is a <span class="hi-exam">CVCS auxiliary system leak, NOT RCS pressure boundary leakage</span>. TS 3.4.7.2 remains MET because CVCS piping is outside the RCS boundary. Once letdown is isolated and the leak stops, no TS action or Emergency Declaration is required. <span class="hi-trap">The CVCS is NOT part of the RCS -- it is an auxiliary system that interfaces with the RCS.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A1-1</div>
+S2.OP-SO.RC-0004 §5.3 Containment Sump leak-rate calculation following an unexpected OHA C-2 CNTMT SUMP PMP START. Quantified leak rate ~<span class="hi-exam">0.9 gpm</span> (320 minutes between sump-pump cycles per Attachment 3). The two action thresholds bracket the unidentified leakage limit: <span class="hi-exam">&gt; 0.85 gpm</span> initiates Section 5.6 trending only; <span class="hi-exam">&gt; 1.0 gpm</span> initiates S2.OP-ST.RC-0008 RCS Water Inventory Balance and refers to TS 3.4.7.2. At 0.9 gpm the unidentified-leakage LCO 3.4.7.2.b (≤1 gpm) is still MET, so no TS action time starts.
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.7 RCS Leakage</summary>
 <div class="callout callout-bases">
@@ -403,6 +418,11 @@ In Modes 1-4, operation within the LCO limits for DOSE EQUIVALENT I-131 and DOSE
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q86</div>
+DEI-131 at 8 μCi/gm (above the 1.0 μCi/gm LCO 3.4.9 limit but below the line of graph 3.4-1): per LCO 3.4.9 Action, <span class="hi-exam">operation can continue for 48 hours, then Hot Standby with Tavg &lt;500&deg;F in 6 hours</span>. Sample taken at 1000 on March 10 → 48 hours later = 1000 March 12 → +6 hours = 1600 March 12. Bases for the action: <span class="hi-exam">ensures the resulting 2-hour dose at the Site Area Boundary will not exceed an appropriately small fraction of Part 100 limits following an SGTR accident in conjunction with an assumed primary-to-secondary leakage rate of 1 gpm</span>. <span class="hi-trap">Trap: distractors substitute "Protected Area Boundary" for the correct "Site Area Boundary." Other trap: alternate bases statement (saturation pressure of primary coolant below atmospheric release lift pressure) describes the LCO LIMIT bases, not the time-clock action bases.</span>
+</div>
+
 ---
 
 ## 3/4.4.10 — Pressure/Temperature Limits
@@ -422,6 +442,11 @@ c. Maximum temperature change per PTLR during hydrostatic testing above design p
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q7</div>
 LCO 3.4.10.2 PZR heatup rate = <span class="hi-exam"><span class="val-trip">100&deg;F/hr</span></span> maximum. PZR cooldown rate = <span class="hi-exam">200&deg;F/hr</span> maximum. <span class="hi-trap">Heatup and cooldown limits are different — candidates confuse 100 vs 200. The cooldown limit is DOUBLE the heatup limit.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q84</div>
+The TS RCS cooldown limit per PTLR is applied in EOP-LOCA-5 as <span class="hi-exam">&lt;100&deg;F/hr</span> when initiating a cooldown — this prevents an unwanted Thermal Shock condition that would complicate matters since CFSTs are still in effect in LOCA-5.
 </div>
 
 <div class="callout callout-important">
@@ -487,9 +512,21 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-4-1.pdf" target="_blank">View Tech Spec PDF (Loops)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-3.pdf" target="_blank">View Tech Spec PDF (Safety Valves)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-5.pdf" target="_blank">View Tech Spec PDF (PORVs)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-7.pdf" target="_blank">View Tech Spec PDF (Leakage)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-4.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE PZR Code safety valve is permitted to be inoperable at a time</span>. With ALL THREE PZR Code Safety Valves having an actual lift pressure of <span class="hi-exam">2735 psig</span> (above the LCO acceptance band, due to a faulty test device used during the refueling outage), all three are inoperable simultaneously — no specific TS action exists for that condition, so <span class="hi-exam">LCO 3.0.3 applies</span>: 1 hour to begin shutdown + 6 hours to Hot Standby = <span class="hi-exam">7 hours total</span>. From a 1200 discovery, Hot Standby is required by <span class="hi-exam">1900</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+21 SG tube leak with leakage &gt;<span class="hi-exam">150 gpd primary-to-secondary</span> through a single SG. CRS enters <span class="hi-exam">LCO 3.4.7.2.c — Action Level 3</span> per AB.SG-0001: be &lt;50% power within 1 hour and Hot Standby within 6 hours. Leak escalates to a tube rupture before completion of the controlled shutdown.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
+- Related JPMs: [[2016 JPM RO-A1-1]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]]

@@ -93,11 +93,26 @@ S2.OP-SO.TRB-0001 Section 4.5 — Synchronizing the Generator: at 16% power star
 Turbine runback from 100% power can cause control rods to insert below the Rod Insertion Limit (ROD INSERT LIMIT LO-LO alarm). <span class="hi-trap">Raising turbine power to counter the runback is NOT permitted per the alarm response procedure — the ONLY allowed action to restore rods above the RIL is performing S2.OP-SO.CVC-0008 (Rapid Boration).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q3</div>
+Automatic main turbine trip on reactor trip is generated from the <span class="hi-exam">output of the Reactor Trip Breakers (RTBs)</span>. When the RTBs <span class="hi-exam">fail to open</span> and the operator alternatively trips the reactor by opening RDMG sets power supply breakers from 1CC3, the Main Turbine does NOT receive an automatic trip signal — the crew <span class="hi-exam">MUST directly perform a manual turbine trip</span>. Once the manual turbine trip occurs, the main generator output breakers will <span class="hi-exam">automatically open</span> on the turbine trip (no direct crew action required). <span class="hi-trap">Trap: tripping rods via the RDMG path bypasses the RTB-driven auto turbine trip — turbine trip becomes a directly required operator action even though it is normally automatic on a reactor trip.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q1</div>
+Steady-state Tavg is established by the balance of reactor power and Main Turbine load. An unexpected RCS boration lowers Tavg → SG pressure lowers → the <span class="hi-exam">MT governor valves open in response to the secondary pressure drop</span>, which lowers Tavg further. Rod auto control responds with rod withdrawal at minimum 8 spm to restore Tavg to program.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q50</div>
+Main Generator trip from a ground fault at <span class="hi-exam">46% power</span> causes an automatic Main Turbine trip via Generator Protection. Because <span class="hi-exam">46% &lt; P-9 (≈49% Rx power)</span>, the <span class="hi-exam">Reactor Trip on Turbine Trip is BLOCKED</span> — no Rx trip occurs. With no operator action, rods insert in AUTO and steam dumps open in Load Reject (Tavg) mode; Tave stabilizes at ~<span class="val-normal">552°F</span> (Load Reject Tref + 5°F dead band; MT Steamline inlet pressure = 0 with turbine tripped). <span class="hi-trap">Do NOT enter EOP-TRIP-1/2/3 — there is no reactor trip below P-9.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
 - Related procedures: [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]], [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]]
-- Related exam questions: [[2018 Q91]], [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]]
+- Related exam questions: [[2016 Q1]], [[2016 Q3]], [[2016 Q50]], [[2016 Q67]], [[2016 Q70]], [[2018 Q91]], [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]]
 - Related JPMs: [[2018 JPM Sim-e]], [[2019 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

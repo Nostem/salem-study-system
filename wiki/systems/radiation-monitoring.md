@@ -52,6 +52,13 @@ R19 SGBD radiation monitor WARNING setpoint — unit difference confirmed: <span
 R19 SGBD radiation monitor WARNING setpoint: <span class="hi-exam">Unit 1 — NO automatic actuations (warning is early warning only). Unit 2 — automatically closes ALL GB10s, GB185s, and 2GB50.</span> <span class="hi-trap">Trap: R19 WARNING and ALARM actions differ. The ALARM setpoint on Unit 1 closes ALL GB4s, GB8s, GB10s, GB185s, and 1GB50. On Unit 2, ALARM isolates blowdown from the affected SGs by closing the associated GB4. Do not confuse warning vs alarm actions, and remember the unit difference at the warning level.</span>
 </div>
 
+### Main Steamline Monitors (R46, R53)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q14</div>
+First indication of a Steam Generator tube leak at 100% power: <span class="hi-exam">R53 Main Steamline N-16 monitors</span> — these are <span class="hi-exam">N-16 (nitrogen-16) monitors</span> on the Main Steamlines and are very sensitive, indicating prior to the others. <span class="hi-trap">Trap A: R15 Condenser Air Ejector samples the Main Condenser, so steam must travel past R53 first.</span> <span class="hi-trap">Trap B: R19 SG Blowdown provides indication only after blowdown flow lag time.</span> <span class="hi-trap">Trap C: R46 Main Steamline monitors are HIGH RANGE — while they can detect low levels of radiation, they would NOT provide an alarm to alert the crew at low SGTL levels.</span> Ranking by SGTL response time: <span class="hi-exam">R53 → R46 → R19 → R15</span>.
+</div>
+
 ### Liquid Effluent Radiation Monitor (R18)
 
 <div class="callout callout-exam">
@@ -76,6 +83,11 @@ Confirms 2R32A behavior: with 2R32A failed high, <span class="hi-exam">ONLY cran
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q36</div>
 2R9 (Fuel Storage Area Monitor) alarm response: <span class="hi-exam">BOTH Fuel Handling Area Exhaust Fans receive an auto start signal</span> (standby fan starts). <span class="hi-exam">21 HEPA ONLY Filter Unit ISOLATES</span> and <span class="hi-exam">22 HEPA PLUS CHAR filter unit automatically aligns</span>. After 2R9 alarm, both exhaust fans are running but only the charcoal filter unit is in service. <span class="hi-trap">Trap: 2R9 does NOT keep both HEPA units in service — the HEPA ONLY unit isolates and the HEPA PLUS CHAR unit takes over.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q88</div>
+2R5 setpoints (FHB radiation monitor — Spent Fuel Pool area): <span class="hi-exam">alarm <span class="val-alarm">11 mR/hr</span>, warning <span class="val-alarm">7 mR/hr</span></span>. On a dropped fuel assembly with 2R5 stabilized at 25 mR/hr (above alarm), FHB ventilation <span class="hi-exam">automatically swaps to the Charcoal Filter and starts BOTH FHB Exhaust Fans</span> (normal lineup is single Supply Fan + both Exhaust Fans). <span class="hi-trap">2R5 does NOT lock out crane motion — only the 2R32A monitor on the crane itself causes the &quot;all crane motion except downward&quot; lockout.</span>
 </div>
 
 ### Containment High Range Monitors (R44A/B)
@@ -152,11 +164,29 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
 During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam">2R18 radiation monitor</span> provides overwatch. At Step 5.5.8, operator reads 2R18 on 104 panel: <span class="hi-exam">105 CPM with High Radiation light illuminated</span>. Step 5.5.9: if 2R18 ALARMS, immediately direct NCO to <span class="hi-exam">CLOSE 2WL51 (LIQUID RELEASE STOP VALVE)</span> to terminate the release.
 </div>
 
+## Process Radiation Monitor Source Checks
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q60</div>
+Process radiation monitor Source Check duration: <span class="hi-exam">activate the source check for 30 seconds or less to prevent the solenoids from overheating</span>. Both the system operating procedure (S1.OP-SO.RM-0001) and the surveillance procedure (S1.OP-ST.RM-0001) contain this 30-second precaution. <span class="hi-trap">Traps: terminating "just until indication of rising level is detected" prolongs source life but is NOT the procedural rationale; alarm action functions are NOT automatically blocked on every monitor during a source check, but the cited reason for the 30-second limit is solenoid overheating; source check is not intended to raise rad levels outside the monitor.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q59</div>
+2R18 (Liquid Radwaste process radiation monitor) ALARM setpoint per S2.IC-CC.RM-0028 is <span class="hi-exam">6.82E5 cps</span>. Above the setpoint, <span class="hi-exam">2R18 automatically shuts 2WL51 (Liquid Release Stop Valve)</span>. If the auto-close fails (e.g., 2WL51 still indicates OPEN with 2R18 in alarm at 10E6 cps), <span class="hi-exam">the NCO shuts 2WL51 remotely from the control room</span> per S2.OP-SO.WL-0001 Step 5.5.9 — there is no procedural provision to close 2WL51 locally.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q68</div>
+<span class="hi-exam">Containment Radiation Monitors (e.g., 2R12A) are NOT required to be operable for Mode 6 or Fuel Movement or Core Alts per Tech Specs.</span> A failure of 2R12A causing a Containment Ventilation Isolation signal does NOT by itself require suspension of fuel movement. <span class="hi-trap">Trap: a CVI signal looks like an emergency response, but the rad monitor is not Tech-Spec required for refueling, so its failure has no LCO impact on fuel movement.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]]
-- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
-- Related exams: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
+- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+  - [[2016 Q14]] — R53 Main Steamline N-16 monitor / FIRST indication of SGTL at 100% power
   - [[2019 Q8]] — 2R17A/B high alarm auto-closes 2CC149 (CCW Surge Tank Vent Valve)
   - [[2019 Q25]] — 2R41 Channel D reads in µCi/sec for release determination
   - [[2019 Q33]] — 2R32A fails high: only crane motion other than downward movement locked out / FHB vent does NOT shift
@@ -175,4 +205,10 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
   - [[2018 Q83]] — 11 GDT discharges to plant vent → R41D alarm / AB.RAD-0001 Attachment 1 (Process) not Attachment 2 (Filter)
   - [[2018 Q85]] — R44A/B ≥ 2 R/HR = FRCE-3 entry (yellow path, not required) / 100 R/HR is warning setpoint
   - [[2018 Q89]] — R12A failure during containment vacuum relief / TS 3.3.3.1 Table 3.3-6 / R41 alternate for purge & P/V relief
-- Related JPMs: [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]]
+  - [[2016 Q59]] — 21 CVCS MT release / 2R18 ALARM setpoint 6.82E5 cps auto-shuts 2WL51 / NCO shuts remotely if auto-close fails
+  - [[2016 Q60]] — Process radiation monitor source check ≤ 30 seconds / prevents solenoid overheating
+  - [[2016 Q68]] — Containment Rad Monitors (2R12A) NOT required operable for Mode 6 / Fuel Movement / Core Alts
+  - [[2016 Q88]] — 2R5 alarm 11 mR/hr / dropped fuel: auto swap FHB vent to charcoal + start both Exhaust Fans / 2R5 does NOT lock out crane
+- Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
+- Related exam: [[2016 NRC Operating Exam]]

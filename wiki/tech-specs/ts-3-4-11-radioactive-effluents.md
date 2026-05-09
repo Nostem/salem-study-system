@@ -103,7 +103,21 @@ The <span class="hi">2% oxygen limit</span> provides margin below the lower flam
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-11.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-11.pdf" target="_blank">View Bases PDF</a>
 
+## ODCM Compensatory Actions for Effluent Monitor Failures
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A3</div>
+SRO determines compensatory actions when 1R12A (Containment Noble Gas) and 1R41D (Plant Vent Release Rate) are inoperable for three release pathways:
+<ul>
+<li><strong>14 GDT Release</strong> (Table 3.3-13 Instrument #1, Waste Gas Holdup System): <span class="hi-exam">Action 31</span> — release allowed with two independent samples + two-person verify of release rate calc AND discharge valving lineup; plus per S1.OP-SO.WG-0011 Att 2 §3.0 step 3.4.C, grab samples ≥ once per 8 hr / analyzed within 24 hr.</li>
+<li><strong>Containment Pressure Relief</strong> (Table 3.3-13 Instrument #3, both 1R41A→D AND 1R12A inoperable): <span class="hi-exam">Action 37</span> — release allowed with two independent samples + two-person verify of release rate calc (no valving-lineup component because relief uses fixed plant equipment); P&amp;L 2.3 of S1.OP-SO.CBV-0002 directs Chemistry notification.</li>
+<li><strong>11 CVCS Monitor Tank Release</strong> (Liquid pathway): <span class="hi-exam">no compensatory actions</span> — Liquid Release uses different monitors that remain operable.</li>
+</ul>
+</div>
+
 ## Connections
 
-- Related systems: [[Waste Gas]]
+- Related systems: [[Waste Gas]], [[Waste Liquid]]
 - Related concepts: [[Radiation Monitoring]]
+- Related JPMs: [[2016 JPM SRO-A3]]
+- Related exam: [[2016 NRC Operating Exam]]

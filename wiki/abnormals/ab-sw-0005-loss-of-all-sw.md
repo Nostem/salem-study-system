@@ -28,9 +28,20 @@ On loss of all SW flow, immediately <span class="hi-exam">trip the reactor and s
 AB.SW-0005 entry criteria: requires actual loss of ALL service water flow. <span class="hi-exam">A 1A 4KV Bus Differential on Unit 1 with #3 SW Bay already C/Ted does NOT cause a loss of all SW</span> because 15 and 16 SW Pumps (powered from 1A Bus) were already isolated for the bay outage. The 12 SW Pump auto-starts on C Bus to maintain flow. Correct procedure entry: AB.4KV-0001. <span class="hi-trap">Distractor: RCPs are stopped to limit heat input to the CCW system (not the RCS) in AB.SW-0005.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+AB.SW-0005 directs the crew to <span class="hi-exam">Trip the Rx, confirm the trip, and stop RCPs to limit heat input to the CCW system</span>. <span class="hi-trap">The MT-trip-on-low-power action is wrong because tripping the MT when power is &lt;49% will not trip the Rx.</span> Charging-pump swap (place 23 Charging in service / remove 22 Charging) is an AB.SW-0005 action — NOT AB.SW-0001.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+Initiating Cue: 100% power, 21 charging pump in service, 23 charging pump aligned for Normal IAW SO.CVC-0002 §4.1, #2 SW Bay isolated for leak, all #4 Bay pumps running. RT-1 trips 24/25/26 SW pumps simultaneously — total loss of all SW. <span class="hi-exam">Required AB.SW-0005 critical actions: (1) Trip the Rx and confirm Rx trip; (2) Stop all RCPs; (3) Isolate letdown by closing 2CV3/2CV4/2CV5 (the orifice isolation valves); (4) Place 23 Charging Pump in service per Step 3.6 (set Speed Demand to 10–12% before start, increase to ~20% to couple, then stop 21 and 22 Centrifugal Charging Pumps); (5) Place 2CC131 (RCP THERMAL BARRIER) in MANUAL; (6) Reduce operating CCW pumps to one</span>. <span class="hi-trap">The reactor trip and RCP stop are taken to limit heat input to the CCW system because there is no SW available to cool CCW. The applicant may enter AB.SW-0005 directly OR enter AB.SW-0001 first via the OHA B-13/B-14 ARP path which terminates back at AB.SW-0005 Step 3.8.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Service Water]], [[EDGs]], [[4KV]], [[CCW]]
-- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]]
-- Related exam questions: [[2020 Q53]], [[2022 Q90]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related systems: [[Service Water]], [[EDGs]], [[4KV]], [[CCW]], [[CVCS]]
+- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[S2.OP-SO.CVC-0002 — Charging Pump Operation]]
+- Related exam questions: [[2016 Q92]], [[2020 Q53]], [[2022 Q90]]
+- Related JPMs: [[2016 JPM Sim-e]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2016 NRC Operating Exam]]

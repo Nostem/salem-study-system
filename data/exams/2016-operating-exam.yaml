@@ -1,0 +1,399 @@
+exam: 2016
+type: operating
+ilot_class: "15-01"
+jpms:
+  - id: "RO-A1-1"
+    title: "Measure Leakage to the Containment Sump"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-SO.RC-0004"
+    pages: "1-7"
+    ka: "G2.1.25"
+    ka_importance_ro: 3.9
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0020080101"
+
+  - id: "RO-A1-2"
+    title: "Calculate Shutdown Margin"
+    type: Admin-RO
+    location: Classroom
+    procedure: "SC.RE-ST.ZZ-0002"
+    pages: "1-7"
+    ka: "G2.1.43"
+    ka_importance_ro: 4.1
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: true
+    time_critical_minutes: 50
+    alternate_path: false
+    source: New
+    task_number: "N1200030301"
+
+  - id: "RO-A2"
+    title: "Demonstrate the Operability of the RWST and/or the BASTs"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S2.OP-ST.CVC-0010"
+    pages: "1-8"
+    ka: "G2.2.37"
+    ka_importance_ro: 3.6
+    ka_importance_sro: 4.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0040420201"
+
+  - id: "RO-A3"
+    title: "Perform Stay Time Calculation for Emergency Condition"
+    type: Admin-RO
+    location: Classroom
+    procedure: "RP-AA-203 / NC.EP-EP.ZZ-0304"
+    pages: "1-6"
+    ka: "G2.3.4"
+    ka_importance_ro: 3.2
+    ka_importance_sro: null
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1200100104"
+
+  - id: "SRO-A1-1"
+    title: "Review CFCU Operability Surveillance"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S2.OP-ST.CBV-0003"
+    pages: "1-5"
+    ka: "G2.1.25"
+    ka_importance_ro: null
+    ka_importance_sro: 4.2
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1230300302"
+
+  - id: "SRO-A1-2"
+    title: "Direct Actions for Spent Fuel Movement (Equipment OOS Determination)"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S2.OP-IO.ZZ-0010"
+    pages: "1-7"
+    ka: "G2.1.42"
+    ka_importance_ro: null
+    ka_importance_sro: 3.4
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1120760102"
+
+  - id: "SRO-A2"
+    title: "Review Shutdown Margin Calculation"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "SC.RE-ST.ZZ-0002"
+    pages: "1-6"
+    ka: "G2.2.12"
+    ka_importance_ro: null
+    ka_importance_sro: 4.1
+    applicability: SRO
+    time_critical: true
+    time_critical_minutes: 30
+    alternate_path: false
+    source: New
+    task_number: "1200030301"
+
+  - id: "SRO-A3"
+    title: "Determine Required Actions Upon Radioactive Effluent Monitor Failure"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "Salem ODCM / S1.OP-SO.WG-0011 / S1.OP-SO.WL-0001 / S1.OP-SO.CBV-0002"
+    pages: "1-8"
+    ka: "G2.3.11"
+    ka_importance_ro: null
+    ka_importance_sro: 4.3
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: "New (modeled after Pilgrim Jan 2011 SRO Admin RC)"
+    task_number: "N1200010301"
+
+  - id: "SRO-A4-1 (ESG-1)"
+    title: "Classify Event and Complete ICMF (RB3.P Alert)"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "EP-SA-111-F2 / EP-SA-111-101"
+    pages: "1-8"
+    ka: "G2.4.41"
+    ka_importance_ro: null
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: true
+    time_critical_minutes: 15
+    alternate_path: false
+    source: New
+    task_number: "1240020502"
+    scenario_tie: ESG-1
+
+  - id: "SRO-A4-1 (ESG-2)"
+    title: "Classify Event and Complete ICMF (RB3.L Alert)"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "EP-SA-111-F2 / EP-SA-111-101"
+    pages: "1-8"
+    ka: "G2.4.41"
+    ka_importance_ro: null
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: true
+    time_critical_minutes: 15
+    alternate_path: false
+    source: New
+    task_number: "1240020502"
+    scenario_tie: ESG-2
+
+  - id: "Sim-a"
+    title: "Perform a Control Rod Operability Verification"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-ST.RCS-0001"
+    pages: "1-9"
+    ka: "001 A4.03"
+    ka_importance_ro: 4.0
+    ka_importance_sro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "N0010070101"
+
+  - id: "Sim-b"
+    title: "Perform Actions for Containment Sump Blockage"
+    type: Sim
+    location: Simulator
+    procedure: "2-EOP-LOCA-1 / 2-EOP-LOCA-3 / 2-EOP-APPX-7"
+    pages: "1-10"
+    ka: "G2.4.4"
+    ka_importance_ro: 4.5
+    ka_importance_sro: 4.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N1150900501"
+
+  - id: "Sim-c"
+    title: "Isolate the ECCS Accumulators IAW TRIP-6"
+    type: Sim
+    location: Simulator
+    procedure: "2-EOP-TRIP-6"
+    pages: "1-6"
+    ka: "E09 EA1.1"
+    ka_importance_ro: 3.5
+    ka_importance_sro: 3.5
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "1150070501"
+
+  - id: "Sim-d"
+    title: "Respond to a Loss of Heat Sink (Bleed and Feed with SI Pumps and Rx Head Vents)"
+    type: Sim
+    location: Simulator
+    procedure: "2-EOP-FRHS-1"
+    pages: "1-8"
+    ka: "EPE E05 EA1.1"
+    ka_importance_ro: 4.1
+    ka_importance_sro: 4.0
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N1150290501"
+
+  - id: "Sim-e"
+    title: "TCAF a Total Loss of All Service Water"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-AB.SW-0005 / S2.OP-AB.SW-0001 / S2.OP-AR.ZZ-0002"
+    pages: "1-8"
+    ka: "076 A2.01"
+    ka_importance_ro: 3.5
+    ka_importance_sro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N1140380401"
+
+  - id: "Sim-f"
+    title: "Adjust PRT Level and Pressure"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-SO.PZR-0003"
+    pages: "1-7"
+    ka: "007 A4.04"
+    ka_importance_ro: 2.6
+    ka_importance_sro: 2.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N0100110101"
+
+  - id: "Sim-g"
+    title: "Perform Actions for a Loss of All AC Power (Energize a 4KV Vital Bus from a Station Power Transformer)"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-SO.DG-0001 / S2.OP-SO.4KV-0001"
+    pages: "1-7"
+    ka: "EPE 055 EA1.07"
+    ka_importance_ro: 4.3
+    ka_importance_sro: 4.5
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1150140501"
+
+  - id: "Sim-h"
+    title: "TCAF a Loss of Control Air"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-AB.CA-0001 / S2.OP-AR.ZZ-0011"
+    pages: "1-13"
+    ka: "APE 065 AA2.06"
+    ka_importance_ro: 3.6
+    ka_importance_sro: 4.2
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N1140070401"
+
+  - id: "IP-i"
+    title: "Transfer Pressurizer 22 Backup Heaters to Emergency Power Supply"
+    type: IP
+    location: In-Plant
+    procedure: "S2.OP-SO.PZR-0010"
+    pages: "1-6"
+    ka: "010 A4.02"
+    ka_importance_ro: 3.6
+    ka_importance_sro: 3.4
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1150430501"
+
+  - id: "IP-j"
+    title: "Perform Auxiliary Feedwater Back Leakage Test"
+    type: IP
+    location: In-Plant
+    procedure: "S1.OP-PT.AF-0002"
+    pages: "1-8"
+    ka: "061 K1.02"
+    ka_importance_ro: 3.4
+    ka_importance_sro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0610160204"
+
+  - id: "IP-k"
+    title: "Start and Synchronize an Emergency Diesel Generator"
+    type: IP
+    location: In-Plant
+    procedure: "S2.OP-SO.DG-0001"
+    pages: "1-12"
+    ka: "064 A2.09"
+    ka_importance_ro: 3.1
+    ka_importance_sro: 3.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1130010501"
+
+scenarios:
+  - number: 1
+    title: "PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation"
+    pages: "1-27"
+    num_events: 4
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-LOCA-1
+      - EOP-TRIP-3
+      - EOP-LOCA-2
+    abnormals_entered:
+      - AB.CVC-0001
+      - AB.RC-0001
+      - AB.RAD-0001
+      - AB.LOAD-0001
+    critical_tasks:
+      - id: "CT-4"
+        ct_label: "CT#1"
+        description: "Establish the minimum required feed flow (at least 22E4 lbm/hr AFW flow, or 9% NR level in at least one SG) prior to a transition to FRHS-1 being required."
+        time_critical: false
+      - id: "CT-6"
+        ct_label: "CT#2"
+        description: "Establish flow from at least one high-head ECCS pump (manually open BIT isolation valves 2SJ12/2SJ13) before transition out of EOP-TRIP-1."
+        time_critical: false
+
+  - number: 2
+    title: "2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV"
+    pages: "1-32"
+    num_events: 8
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-SGTR-1
+      - EOP-SGTR-3
+    abnormals_entered:
+      - AB.CN-0001
+      - AB.LOAD-0001
+      - AB.CVC-0001
+      - AB.SG-0001
+      - AB.RAD-0001
+    critical_tasks:
+      - id: "CT-18"
+        ct_label: "CT#1"
+        description: "Isolate feed flow into (close 21AF11 and 21AF21) and steam flow from (shut 21MS167; verify 21MS7, 21MS18, 21GB4 shut) 21 SG prior to a transition to SGTR-3 being required."
+        time_critical: false
+      - id: "CT-19"
+        ct_label: "CT#2"
+        description: "Establish and maintain an RCS temperature so that transition from SGTR-1 does not occur because temperature is too high to maintain minimum subcooling, or so low it causes transition to FRTS or FRSM. Cooldown target temperature from Table D (503 °F for ruptured SG pressure ~1000 psig)."
+        time_critical: false
+
+  - number: 3
+    title: "PZR Pressure Channel Fails High / Dropped Rod / 21 SG Steam Leak → Rupture in Containment / All MSIVs Fail / CS Pumps Fail to Auto-Start"
+    pages: "1-29"
+    num_events: 7
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-LOSC-1
+      - EOP-LOSC-2
+      - EOP-FRHS-1
+    abnormals_entered:
+      - AB.PZR-0001
+      - AB.ROD-0002
+      - AB.STM-0001
+    critical_tasks:
+      - id: "CT-3"
+        ct_label: "CT#1"
+        description: "Manually actuate at least one Containment Spray pump (block and reset 2A and 2C SECs, then start 21 or 22 CS pump) before an extreme challenge develops to the containment CSF, given both CS pumps fail to auto-start on the hi-hi containment pressure SEC signal."
+        time_critical: false
+      - id: "CT-33"
+        ct_label: "CT#2"
+        description: "With all SGs faulted and RCS cooldown rate >100 °F/hr in EOP-LOSC-2, control AFW flow to each SG to no less than 1.0E4 lbm/hr to minimize the cooldown rate."
+        time_critical: false

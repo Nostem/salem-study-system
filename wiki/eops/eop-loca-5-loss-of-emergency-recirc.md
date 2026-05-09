@@ -75,10 +75,36 @@ LOCA-5 mitigation strategies include: (1) Run all CFCUs in high speed, (2) Minim
 RWST makeup procedure selection: IAW EOP-LOCA-5, crew adds makeup to RWST per <span class="hi-exam">S2.OP-SO.CVC-0006 Section 5.8 (Makeup to RWST Using CVCS Makeup System)</span> — NOT S2.OP-SO.SF-0001 Section 5.6 (Transferring Spent Fuel Pool Water to RWST). SG NR Level feed flow target depends on containment conditions: <span class="hi-exam">ADVERSE containment (≥ 4 psig): maintain total feed flow > 22E04 LB/HR until at least one SG NR Level > 15%</span>. <span class="hi-exam">NORMAL containment: > 9%</span>. At 12.0 psig containment pressure = adverse conditions apply. <span class="hi-trap">Trap: S2.OP-SO.SF-0001 Section 5.6 IS an approved RWST makeup procedure, but EOP-LOCA-5 specifically directs CVC-0006 Section 5.8.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q5</div>
+LOCA-3 step 11.2 with no CCW pumps running directs single-train recirculation alignment via Step 124 — <span class="hi-exam">there is NO provision in LOCA-3 to transition to LOCA-5</span> for a no-CCW condition. LOCA-5 is entered for <span class="hi-trap">loss of emergency recirculation (mechanical/electrical recirc failures, sump cavitation via APPX-7, etc.) — NOT for loss of CCW alone during the LOCA-3 transfer.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q26</div>
+Step 9 / Table C — required CS pumps based on RWST level, containment pressure, and number of low-speed CFCUs. With a LBLOCA, 2C 4KV vital bus locked out (22 CS pump deenergized), 22 and 24 CFCUs failed to start, and containment pressure 18 psig: at the LOCA-3 entry, RWST is <span class="hi-exam">15.2 ft</span> and depletes at <span class="hi-exam">~13000 gpm</span> (2 RHR, 1 charging, 1 SI, 1 CS pump running). It takes over 9 minutes to drain below 1 ft, so 7 minutes after the RWST Lo alarm Table C indicates <span class="hi-exam">ONE CS pump required</span>; with 22 CS pump unpowered, <span class="hi-exam">21 CS pump only</span> runs. <span class="hi-trap">BOTH is the answer for RWST level 1–15.2 ft if containment pressure >47 psig OR no CFCUs running. NEITHER is the answer if RWST &lt;1 ft (drain-down miscalculation).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q84</div>
+LOCA-5 entered at LOCA-1 step 16 (RWST level &gt;15.2 ft) with both RHR pumps stopped and unable to be started: just prior to initiating cooldown, with RWST LO alarm received, CONT SUMP CH A/B LEVEL &gt;62% lights lit, and RCS subcooling &lt;0&deg;F, the CRS shall <span class="hi-exam">remain in LOCA-5 and initiate a RCS cooldown at less than the Tech Spec limit (&lt;100&deg;F/hr)</span> — the TS RCS cooldown limit prevents an unwanted Thermal Shock condition while CFSTs are still in effect in LOCA-5. <span class="hi-trap">Trap A: makeup is to the RWST (directed at step 10), NOT to the VCT. Traps C/D: there is NO LOCA-3 CAS in LOCA-5 — restoring any train of recirc is the concern with no RHR pumps; transfer to CL recirc will occur only after a RHR pump has been restored.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q73</div>
+EOP-LOCA-5 entry conditions — five entry paths: <span class="hi-exam">(1) LOCA-1 step 16 with no RHR pump and associated SJ44 available; (2) LOCA-3 step 2, Containment sump level &lt;62%; (3) LOCA-4 step 5, no RHR pumps running; (4) LOCA-6 step 6.2 with RH1, 2, 26 shut, 21 and 22 RH19 shut, 21 and 22 SJ49s shut and RCS pressure not rising; (5) loop from LOCA-5 step 28 when RWST level is still above LO-LO (1.2 ft) setpoint</span>. The correct condition pairs <span class="hi-exam">RWST LOW LEVEL alarm with sump level &lt;62%</span> (sump should be rising as RWST is lowering). <span class="hi-trap">Trap: RWST LO-LO entry conditions for stopping ECCS pumps reflects expected behavior during CL recirc with one CS pump still drawing from RWST — it is NOT a LOCA-5 entry. LOCA-6 stopping both RHR pumps does not warrant LOCA-5 entry because LOCA-5 only requires RHR pumps to be available, not in service. LOCA-4 has no provision to check for hot leg recirc flow path blockage.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+With both RHR pumps cavitating during cold leg recirculation transfer, an operator may initially go to EOP-LOCA-5; however, <span class="hi-exam">Step 1 of LOCA-5 directs performance of EOP-APPX-7</span> (Containment Sump Blockage). LOCA-5 is the wrong terminus when sump blockage is causing the cavitation — APPX-7 is.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
-- Related exam questions: [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
-- Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]]
+- Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
+- Related exam questions: [[2016 Q5]], [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

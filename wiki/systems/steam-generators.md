@@ -103,6 +103,11 @@ SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG<
 Natural circulation monitoring (EOP-SGTR-1 step 38.1): RCS T-Cold in unaffected loops should be approximately <span class="hi-exam"><span class="val-normal">548°F</span> (saturation at MS10 setpoint <span class="val-normal">1015 psig</span> / 1030 psia)</span>. Affected SG MS10 set to <span class="val-normal">1045 psig</span> (1060 psia) → Tsat ~<span class="val-normal">552°F</span>. <span class="hi-exam">With LOOP, steam dumps unavailable — use atmospheric relief valves (MS10s) on intact SGs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q48</div>
+SG NR level startup program (ADFCS): the SG NR level setpoint is programmed against <span class="hi-exam">Turbine Steamline Inlet Pressure</span> (i.e. Turbine power), ramping from <span class="val-normal">33% NR at 0% TP</span> to <span class="val-normal">44% NR at 20% TP</span>, then held flat at <span class="val-normal">44% NR</span> from 20-100% TP on Unit 2. At 10% TP the program is <span class="hi-exam">38.5% NR</span>; at 60% TP it is <span class="hi-exam">44% NR</span>. <span class="hi-trap">Unit 1 only: ramp continues 44→48% NR from 20-100% TP. Do not apply Unit 1 ramp to Unit 2.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators (tube integrity, inspection requirements)
@@ -148,15 +153,30 @@ Restoring feed to a dry SG (EOP-FRHS-1): when CETs are stable or lowering, feed 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q65</div>
+SS94 (SG B/D Sample Valves, 21-24SS94) cannot be reopened until <span class="hi-exam">Phase A isolation is reset</span>. The blowdown isolation bypass <span class="hi-exam">only bypasses the lo-lo level input into the AFW auto-start circuit</span> (which closes the SS94s on lo-lo level) — it does NOT defeat Phase A. SS94s receive air supply from outside containment. In a single-faulted-SG event, the SGBD sample isolation reset is performed in EOP-LOSC-1 step 6.1, with RESET PHASE A as the immediately preceding step.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q53</div>
 SG shrink/swell on RCP shaft shear: when 13 RCP shaft shears at 25% power, <span class="hi-exam">steam flow from 13 SG lowers significantly</span> (reduced RCS flow through the SG tubes means less heat transfer to the secondary). The reduction in steam production causes <span class="hi-exam">13 SG NR Level to initially SHRINK</span> (reduced voiding in the SG → apparent level drop). <span class="hi-trap">Trap: swell occurs when steam flow INCREASES (e.g., turbine trip reduces steam demand → pressure rise → less boiling initially, but more commonly steam flow increase causes more voiding). In this case, steam flow DECREASES, causing shrink.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+21 SG tube leak (severity 5) escalating to rupture (severity 650). Diagnostic indications: <span class="hi-exam">2R53A 21 Main Steamline N-16 monitor &gt;1000 gpd</span>, OHA A-6 with reflash on 2R15 Condenser Air Ejector monitor, 2R19A in warning/alarm with SGBD isolation on high radiation. CRS isolates 21 SG per AB.SG-0001 (sets <span class="hi-exam">21MS10 to 1045 psig</span>; ensures 21GB4, 21MS18, 21MS7 shut; dispatches operator to shut 21MS45 and 2SS321). EOP-SGTR-1 isolation completes CT#1 (CT-18): close <span class="hi-exam">21AF11 and 21AF21</span>; shut <span class="hi-exam">21MS167</span>. SGBD will isolate ~2.5 minutes after 2R53D alarms which causes RCS temp and PZR level to rise.
 </div>
 
 ## Connections
 
 - Related EOPs: [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
-- Related JPMs: [[2023 JPM SRO-A4]]
-- Related scenarios: [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q4</div>
+EOP-LOCA-1 explicitly checks for a <span class="hi-exam">steam break / Loss of Secondary Coolant</span> as the OTHER reason (besides a LOCA) for being in LOCA-1 — because <span class="hi-exam">if a faulted SG is the actual cause of ECCS injection, the event can be terminated by isolating the faulted SG</span>. The "Check for Subsequent Failure" Major Action verifies the entry condition; LOCA-1's "do loop" then waits until the SG is blown down and isolated. SGTR is NOT the answer because LOCA-1 has no transition from SGTR-1, and primary-to-secondary leakage termination is not performed in LOCA-1.
+</div>
+
+- Related exam questions: [[2016 Q4]], [[2016 Q25]], [[2016 Q48]], [[2016 Q49]], [[2016 Q51]], [[2016 Q65]], [[2016 Q79]], [[2016 Q83]], [[2016 Q85]], [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
+- Related JPMs: [[2023 JPM SRO-A4]], [[2016 JPM Sim-h]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

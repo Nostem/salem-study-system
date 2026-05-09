@@ -31,8 +31,13 @@ Fuel assembly in mast tube in transit approaching the core during reload (contai
 Per AB.FUEL-0001, the canal gate valve <span class="hi-exam">will be closed for any fuel handling incident</span> (Step 3.16) — regardless of whether the incident is inside containment or in the FHB. The canal gate valve can ONLY be <span class="hi-exam">FULLY closed with the fuel transfer cart inside containment</span> due to a mechanical interlock. <span class="hi-trap">The interlock requires the cart to be inside containment (not in the FHB) for the valve to fully close.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q88</div>
+Dropped fuel assembly in Unit 2 SFP with 2R5 alarming and stabilizing at 25 mR/hr: <span class="hi-exam">FHB ventilation automatically swaps to place the Charcoal Filter in service and starts BOTH FHB Exhaust Fans</span> (2R5 alarm setpoint <span class="val-alarm">11 mR/hr</span>, warning <span class="val-alarm">7 mR/hr</span>; normal FHB lineup is single Supply Fan running with both Exhaust Fans running). Per AB.FUEL-0001 the crew also <span class="hi-exam">ensures the FHB Watertight Door remains closed except for normal personnel passage</span>. <span class="hi-trap">The 2R5 area monitor does NOT lock out crane motion (only the 2R32A on the crane itself locks out crane motion as described in distractor B). Non-essential personnel are evacuated, but actions are required to be performed prior to evacuating ALL personnel — &quot;evacuate ALL personnel&quot; is incorrect.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Radiation Monitoring]], [[Refueling]]
-- Related exam questions: [[2019 Q68]], [[2020 Q82]], [[2022 Q22]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related systems: [[Radiation Monitoring]], [[Refueling]], [[Spent Fuel Pool]], [[FHV]]
+- Related exam questions: [[2016 Q88]], [[2019 Q68]], [[2020 Q82]], [[2022 Q22]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

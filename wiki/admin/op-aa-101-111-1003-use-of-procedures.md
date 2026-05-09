@@ -55,9 +55,22 @@ CSF Hierarchy per OP-AA-101-111-1003 (high to low): <span class="hi-exam">SHUTDO
 Yellow path FRP implementation: <span class="hi-exam">FRCE-3 (Response to High Containment Radiation) is a yellow path procedure and is NOT required to be performed</span>. The CRS may elect to GO TO a yellow path FRP but is not mandated to do so. <span class="hi-trap">Red and Purple path FRPs are mandatory transitions. Yellow path FRPs are discretionary.</span>
 </div>
 
+### AOP Re-entry After EOP Performance (Step 4.4.1)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q74</div>
+Step 4.4.1: if a reactor trip occurs while performing an AOP (intentionally or as directed by the AOP), the <span class="hi-exam">AOP should be exited and the EOP entered</span>. There are cases where steps must be completed as directed in the AOP (e.g., trip affected RCPs) prior to entering the EOPs. When the EOPs are exited or additional personnel become available, the entry conditions for the AOP <span class="hi-exam">should be re-evaluated to determine if performance of the AOP is still required</span>. If performance is required, the <span class="hi-exam">AOP should be re-entered from the beginning</span>. <span class="hi-trap">Trap: AOPs are NOT re-entered automatically (entry conditions must be re-evaluated first), are NOT re-entered from the point left, and are NOT re-entered "regardless if entry conditions are still met."</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+APPX-7 is referenced as one of three procedure revisions checked for the JPM (LOCA-1 Rev. 30, LOCA-3 Rev. 30, APPX-7 Rev. 0, OP-AA-101-111-1003 Rev. 6). The Continuous Action Summary (CAS) at the top of LOCA-3 directs immediate transition to APPX-7 when sump-blockage cavitation is identified — a CAS continuous-action transition rather than a step-by-step linear branch.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
 - Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
-- Related exam questions: [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]]
+- Related JPMs: [[2016 JPM Sim-b]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]

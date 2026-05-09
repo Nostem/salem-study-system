@@ -85,16 +85,31 @@ Number 1 ECAC provides air to 1B and 2B Control Air Headers <span class="hi-exam
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q62</div>
+ECAC power supply (Unit 2): <span class="hi-exam">#2 ECAC is powered from the 2C 460V Vital Bus</span>. With #2 ECAC running loaded for testing per S2.OP-PT.CA-0001, a trip of <span class="hi-exam">2C 4KV to 460V breaker 2C4D</span> de-energizes the ECAC and impacts Control Air Header pressure. <span class="hi-trap">Trap: Station Air Compressors are powered from Group buses (2A4D, 2E6D, 2H5D feed Group buses) — do NOT confuse SAC power supplies with ECAC power supplies. Only the 2C 460V Vital Bus loss affects the running ECAC.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q63</div>
+SBO Compressor automatic/manual operation: the <span class="hi-exam">SBO Compressor will NOT automatically start</span> on a loss of all station power, and after starting it <span class="hi-exam">must be manually aligned to</span> the 1A and 2A Control Air Headers. The SBO Compressor is required to be isolated from, and independent of, plant safety related equipment except when required during a station blackout or other situations involving total loss of Control Air. <span class="hi-trap">Trap: SBO compressor is BOTH manually started AND manually aligned — neither action is automatic. Do not confuse with the ECACs which auto-start on low CA pressure.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q90</div>
 BF19 (SG FW CONT V) failure on loss of control air: <span class="hi-exam">BF19s fail CLOSED</span> → SG levels lower. AB.CA-0001 CAS directs: if crew manually trips the reactor because SG levels cannot be maintained, perform <span class="hi-exam">EOP-TRIP-1 AND AB.CA-0001 concurrently</span>. <span class="hi-trap">BF19s fail CLOSED (not open). Do not confuse BF19 failure position with other air-operated valves that fail open (MS132, DR6, AF11, etc.).</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-h</div>
+<strong>Loss of Control Air cascade (alternate path):</strong> #2 SAC trip causes Unit 2 ECAC auto-start (loads at 85 psig); #1 SAC then trips and locks out; #1 ECAC has tripped. Only the 2 ECAC remains. <span class="hi-exam">2A Control Air Header is supplied from #2 ECAC; 2B Control Air Header is supplied from #1 ECAC</span> — with #1 ECAC down, 2B header drops below 80 psig and AB.CA-0001 routes to the alternate path (Step 3.19 → 3.57+). <span class="hi-trap">All three SAC supply breakers open is the auto-start signal for both ECACs, but only the Unit 2 ECAC will auto-start (Unit 1 will not). Next-to-load SAC needs Station Air pressure 5 psig below the 105 psig follow setpoint for ~5 seconds before it auto-starts.</span> Critical alternate-path actions: isolate letdown (close 2CV3/4/5/2/277/7); terminate any liquid/gaseous release (close 2WL51 and 2WG41); manually trip the reactor on BF19 closure with SG levels uncontrollable.
+</div>
+
 ## Connections
 
-- Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
-- Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]]
-- Related procedures: [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]]
-- Related exam questions: [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
-- Related JPMs: [[2020 JPM IP-j]]
+- Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]], [[Waste Gas]], [[Steam Generator & Blowdown]]
+- Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
+- Related abnormals: [[AB.460-0003 — Loss of 2C 460/230V Vital Bus]]
+- Related exam questions: [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
+- Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]

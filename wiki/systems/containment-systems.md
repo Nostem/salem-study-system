@@ -264,17 +264,37 @@ When adverse containment conditions exist, EOP setpoints for level instruments a
 With containment pressure at <span class="hi-exam">5 psig</span> (adverse conditions), the required SG NR level for RCP start in EOP-FRCC-1 is <span class="hi-exam">>= 15%</span> instead of the normal 9%. <span class="hi-trap">Trap: using normal containment criteria when adverse conditions exist will overestimate the number of available RCPs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q65</div>
+SS94 (SG B/D Sample Valves) cannot be reopened until <span class="hi-exam">Phase A isolation is RESET</span>. For a single faulted SG (unisolable steam leak — e.g., upstream of 22MS167), the flow path is <span class="hi-exam">EOP-TRIP-1 → EOP-LOSC-1</span>; SI is NOT reset in TRIP-1 nor in LOSC-1. The SGBD sample isolation reset is performed in <span class="hi-exam">LOSC-1 step 6.1</span> in order to open the SS94s. <span class="hi-exam">The step prior to that is RESET PHASE A</span>. The blowdown isolation bypass <span class="hi-exam">only bypasses the lo-lo level input into the AFW auto-start circuit</span> (which closes the SS94s) — it does NOT defeat Phase A. If Phase A has not been reset, the SS94s cannot be reopened. SS94s are supplied air from outside containment. <span class="hi-trap">Trap: 22 SG NR &lt;9% is not the cause (blowdown isolation bypass already RESET); CA330s reopening is performed AFTER Phase A reset (so CA330 status is downstream of Phase A); SGFP trip signals do not affect SS94 operability — only Phase A reset gates SS94 reopening.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 RO-A1</div>
 EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free volume at STP: <span class="hi-exam">V = 2.62E06 x Tfact</span> where Tfact = 492/Tabs. At 140F containment temp: Tabs = 600R, Tfact = 0.82, V = 2148400 ft3. Maximum allowable hydrogen concentration is <span class="hi-exam">3.0%</span> — vent volume limited to (3.0% - current H2%) x V / 100%.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q93</div>
+Containment Purge reinstatement after temporary termination (per S2.OP-SO.WG-0006 P&amp;L 3.3): <span class="hi-exam">no new release form is required if termination was of short duration (~4 hours) AND containment radiological conditions have not changed</span>. <span class="hi-exam">Attachment 2 permits blocking the CVI signal</span> for reinstatement. A new effluent permit is not always required. <span class="hi-trap">12 hours / one shift is NOT the duration criterion; rad-condition assurance is required in addition to the duration check.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A1-1</div>
+Containment-sump auto pump-down provides the leak-detection signal used to quantify unidentified RCS leakage to containment. OHA C-2 CNTMT SUMP PMP START is the front-panel indication; the Aux typewriter logs sump-pump start/stop events. Per S2.OP-SO.RC-0004 §5.3, the elapsed time between successive sump-pump cycles is converted to a leak rate via Attachment 3. Action thresholds: 0.85 gpm (Section 5.6 trending) and 1.0 gpm (TS 3.4.7.2 unidentified-leakage LCO).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+21 SG steam leak inside containment first cued by <span class="hi-exam">CFCU leak-detection alarms</span>: OHA <span class="hi-exam">C-38 CFCU LK DET HI</span>, then <span class="hi-exam">C-30 CFCU LK DET HI-HI</span>. Diagnostic indications of an in-containment steam leak: containment pressure rising; Tavg slowly lowering; rising steam flows on all loops; steam dump demand lowering. Crew enters AB.STM-0001. Containment pressure exceeds the <span class="hi-exam">15 psig Phase B/Spray setpoint</span>; both Containment Spray pumps fail to auto-start (CT#1 → manual start). After cooldown, when containment pressure is &lt;13 psig, RO resets Spray actuation, stops both CS pumps, and shuts 21 and 22CS2 CS pump discharge valves.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
-- Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
-- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
-- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]
+- Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
+- Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q65]], [[2016 Q72]], [[2016 Q81]], [[2016 Q84]], [[2016 Q93]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
+- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A3]]
+- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]

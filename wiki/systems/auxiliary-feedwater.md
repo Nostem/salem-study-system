@@ -134,11 +134,76 @@ AFW backleakage (S2.OP-PT.AF-0002): monitoring required <span class="hi-exam">30
 MDAFW pump power supply confirmation: <span class="hi-exam">11 AFW Pump is powered from 1A 4KV Vital Bus</span>. With 1A 4KV de-energized, 11 AFW is lost. Per EOP-LOSC-2 Step 1: if the 13 AFW Pump (TDAFW) is the <span class="hi-exam">ONLY source of AFW flow</span> (both MDAFWs unavailable), steam must NOT be isolated to the 13 AFW Pump. <span class="hi-trap">Must trace 4KV bus to AFW pump mapping: 1A 4KV → 11 AFP, 1B 4KV → 12 AFP. With both MDAFWs unavailable, the TDAFW pump is the only remaining source and must be preserved.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q15</div>
+EOP-SGTR-1 Step 6 AFW control to ruptured SG: if ruptured SG NR level is &lt;9%, <span class="hi-exam">establish AFW flow until NR level &gt;9%, then isolate AFW and maintain &gt;9%</span>. Purpose is to keep tubes covered. <span class="hi-trap">19% is the EOP Rev 30 level for INTACT SG maintenance — not the ruptured SG.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q3</div>
+After a manual main turbine trip (e.g., RTBs failed and operators tripped via the RDMG breakers), the SGs shrink and SG NR level lowers. The <span class="hi-exam">AFW pumps automatically start on SG lo-lo level</span> — no direct crew action is required. This is one of several automatic responses (group bus auto-transfer, generator output breaker auto-open) that continue to function even when the RTB-driven auto turbine trip is bypassed.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q20</div>
+Loss of 2A 115VAC VIB AFW impact (no SI): <span class="hi-exam">23AF21 and 24AF21 fail closed</span> due to pressure override as power is lost to the AFW discharge pressure transmitter — power is also lost to the AF21 valve controllers. AB.115-0001 Step 13 dispatches an <span class="hi-exam">NEO to locally throttle 23AF21 and 24AF21</span>. <span class="hi-trap">Without an SEC actuation, 21 AFW Pump does NOT auto-start on a Rx trip alone — and manual start is not required by AB.115-0001 for this condition. PRESSURE OVERRIDE DEFEAT is NOT useful here because power is lost to the valve controllers themselves, not just the transmitter.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q51</div>
+Trip of both SGFPs caused by FW Isolation: the trip-of-both-SGFPs MDAFW auto-start signal is <span class="hi-exam">inhibited when the SGFP trips are caused by a FW Isolation</span>. With 21 SGFP already manually tripped (per S2.OP-SO.CN-0002) and 24 SG NR &gt;<span class="val-trip">67%</span> driving FW Isolation, both SGFPs trip but no AFW pumps auto-start immediately. SG NR levels remain above the AFW pump auto-start setpoint of <span class="val-alarm">9%</span> at 35% initial power, so all AFW pumps would only auto-start if levels fall &lt;9%. EOP-TRIP-2 step 3 (NO path) directs operators to <span class="hi-exam">start 21–23 AFW pumps as necessary to establish &gt;<span class="val-normal">22E4 lbm/hr</span> total AFW flow</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q53</div>
+<span class="hi-exam">21-23AF141 (AUX FDWTR PMP INLET AUTO VENT RLSE) valves</span> design purpose: <span class="hi-exam">to facilitate filling lines upon aligning alternate water sources to the suction header</span>. Alternate sources align through the <span class="hi-exam">normally jacked-closed AF52 Alternate Suction Valves</span> from <span class="hi-exam">Demin Water, Fresh Water / Fire Protection, and Service Water</span>. Per S2.OP-SO.AF-0001 Section 5.10 (Alternate Sources Alignment), operators ensure <span class="hi-exam">21-23AF140 Auto Vent Isolation Valves</span> are open, allowing the alternate suction line to fill and vent through the <span class="hi-exam">AF141 auto vents, which close when the line is vented</span>. Prevents AFW line voiding and water hammer prior to AFW pump start on alternate source.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q65</div>
+SS94 (SG B/D Sample Valves) interaction with AFW auto-start circuit: <span class="hi-exam">SG lo-lo level closes the SS94s</span> as part of the AFW auto-start logic. The <span class="hi-exam">SGBD sample isolation bypass</span> bypasses ONLY the lo-lo level input into that circuit; <span class="hi-trap">it does NOT defeat Phase A — Phase A is a separate input that also keeps the SS94s closed. After lo-lo bypass is reset, Phase A reset is still required before SS94s can be reopened.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q83</div>
+EOP-FRTS-1 PURPLE path AFW flow target (Step 3.5): <span class="hi-exam">maintain AFW flow &gt;22E4 lbm/hr until at least ONE intact SG NR level is &gt;15%</span>. With all SG NR levels &lt;9% (less than the 15% adverse threshold), the crew is directed to maintain &gt;22E4 lbm/hr. <span class="hi-trap">FRSM-1 (not FRSM-2) directs &gt;44E4 lbm/hr coupled with boration until IR SUR is negative — do not confuse the two flow targets.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q85</div>
+EOP-LOSC-2 / LOSC-1 transition with AFW flow at <span class="hi-exam">1.0E4 lbm/hr to each SG</span>: a pressure rise in any SG after LOSC-2 Step 20 (post SI termination) directs GO TO EOP-LOSC-1 — AFW flow is maintained while transition occurs. The 1.0E4 lbm/hr per-SG target is the LOSC-2 reduced-flow band for cooldown control under faulted-SG conditions.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q54</div>
+AFW Pressure Override circuit (runout protection) — pump-to-AF21 mapping: the Pressure Override circuit holds the AFW pump discharge AF21 valves <span class="hi-exam">SHUT until AFW pump discharge pressure rises above the runout setpoint</span>, then permits them to open. During normal standby, this keeps AF21s shut even though normal valve demand is set to <span class="val-normal">~98%</span>. With Pressure Override removed from a single pump, that pump's associated AF21s will <span class="hi-exam">open to current demand</span>. <span class="hi-exam">Salem Unit 1 mapping: 11 AFW pump feeds 13 and 14 AF21s only; 12 AFW pump feeds 11 and 12 AF21s</span> — pump number does NOT match AF21 number on the same SG.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q90</div>
+Total loss of Control Air during power ascension at 7%, post manual trip: <span class="hi-exam">2MS132 (23 AFW Turbine Steam Inlet Valve) fails OPEN</span> on loss of CA, starting the <span class="hi-exam">23 AFW (TDAFW) pump operating at maximum speed</span>. Per AB.CA-0001, dispatch a Field Operator to <span class="hi-exam">locally establish manual speed control of 23 AFW pump</span> to prevent runout and SG overfill. Concurrent feed-flow loss: BF19s/40s fail SHUT on loss of CA, FW Interlock actuates with reactor tripped + Tavg low setpoint reached. <span class="hi-trap">At 7% during power ascension, Main Feed has already been established and AFW secured per the IOP — so &quot;MDAFW pumps previously in service&quot; distractors are wrong. Pressure Override does NOT preclude using 21/22 AFW as feed supply.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 IP-j</div>
+<strong>AFW Backleakage Surveillance (S1.OP-PT.AF-0002):</strong> performed <span class="hi-exam">30–60 min after an AFW Pump shutdown</span> (per P&L 3.1) to detect hot-feedwater backleakage that can <span class="hi-exam">vapor (steam) bind</span> motor-driven AFW pumps. Read AFW line temperatures from <span class="hi-exam">1TA165551</span> (4 line readings, one per AFW supply line). Acceptance logic: SAT only when each line &lt; 120 °F AND ΔT (highest − average) ≤ 10 °F; vent required when any line ≥ 160 °F. Vent locations on 11 AFW Pump: <span class="hi-exam">11AF83 (AF PUMP VENT)</span> and <span class="hi-exam">11AF114 (AF PUMP DISCH VENT)</span> — slowly throttle open until a solid stream of water is observed, then close. Reference: SOER 84-3.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+21 SG tube leak escalating to rupture. After 21 SG identified as the affected SG, CRS dispatches operator to <span class="hi-exam">shut 21MS45 — the steam supply to 23 AFW pump</span>; this renders 23 AFW inoperable and the CRS enters <span class="hi-exam">LCO 3.7.1.2 (less than 3 operable AFW pumps)</span>. After the manual trip and SI for the SGTR, <span class="hi-exam">21 AFW pump trips</span> (4-minute delay simulator trigger) — PO redistributes flow between 22 AFW pump (supplies 21/22 SGs) and 23 AFW pump (supplies all SGs). In EOP-SGTR-1, isolating feed flow to 21 SG is part of <span class="hi-exam">CT#1 (CT-18)</span>: PO closes <span class="hi-exam">21AF11 and 21AF21</span> (and later trips 23 AFW pump after 21 SG is fully isolated). Pump-to-SG mapping: 21 AFW pp → 23/24 SGs; 22 AFW pp → 21/22 SGs; 23 AFW pump → all SGs.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #1</div>
+After manual reactor trip and SI for SBLOCA, <span class="hi-exam">21 and 22 AFW pumps fail to auto-start</span> because SEC loading on 2A and 2B vital buses does not complete; <span class="hi-exam">23 AFW pump starts but provides no AFW flow</span>. CT#1 (CT-4) recovery — establish at least <span class="hi-exam">22E4 lbm/hr AFW flow</span> (or &ge;9% NR level in at least one SG) before transition to FRHS-1 is required: crew blocks 2A/2B SECs, attempts reset, <span class="hi-trap">2A SEC will not reset</span>, dispatches operator to deenergize 2A SEC, then RO manually starts 22 AFW pump (and 21 AFW pump). PO subsequently maintains 19-33% SG NR level.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]]
-- Related exam questions: [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
-- Related JPMs: [[2023 JPM SRO-A4]]
-- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]], [[AB.115-0001 — Loss of 115V Vital Instrument Bus]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]], [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]], [[AB.CA-0001 — Loss of Control Air]]
+- Related exam questions: [[2016 Q3]], [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2016 Q65]], [[2016 Q76]], [[2016 Q78]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
+- Related JPMs: [[2023 JPM SRO-A4]], [[2016 JPM IP-j]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

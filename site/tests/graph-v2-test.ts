@@ -25,8 +25,8 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
     expect(Number(value)).toBeGreaterThan(0);
   }
 
-  // Question count should match the structured bank size (499).
-  await expect(page.getByTestId('gv2-node-count-question')).toHaveText('499');
+  // Question count should match the expanded structured bank size.
+  await expect(page.getByTestId('gv2-node-count-question')).toHaveText('599');
 
   // Edge type filter reduces the list to nodes connected by selected graph semantics.
   await page.getByTestId('gv2-search').fill('');
@@ -65,9 +65,9 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await expect(meta).toContainText('Question');
   await expect(meta).toContainText('23');
   await expect(meta).toContainText('Quiz eligible');
-  await expect(meta).toContainText('no');
-  await expect(meta).toContainText('Non-quiz reason');
-  await expect(meta).toContainText('status_draft');
+  await expect(meta).toContainText('yes');
+  await expect(page.getByTestId(`gv2-actions-${Q23_ID}`).getByRole('link', { name: /Generate quiz from this node/i }))
+    .toHaveAttribute('href', /\/quiz-v2\/play\/\?slugs=q23-eop-flowchart-symbols-concurrent&count=1$/);
   await expect(page.getByTestId(`gv2-actions-${Q23_ID}`).getByRole('link', { name: /Open source\/wiki page/i }))
     .toHaveAttribute('href', /\/exams\/2023\/q23-eop-flowchart-symbols-concurrent\/$/);
 
@@ -82,14 +82,16 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await expect(focusedVisible.filter({ hasText: 'Admin' }).first()).toBeVisible();
 
   // Topic nodes expose related questions. Topics with no eligible v2 practice pool do not show a dead practice link.
-  await focusedVisible.filter({ hasText: 'Admin' }).first().getByRole('button').click();
-  const adminDetail = page.getByTestId('gv2-detail-topic:admin');
-  await expect(adminDetail).toBeVisible();
-  await expect(page.getByTestId('gv2-related-questions-topic:admin')).toContainText('2023 Q23');
-  await expect(page.getByTestId('gv2-actions-topic:admin')).not.toContainText('Generate quiz from this node');
+  await page.getByTestId('gv2-focus-neighborhood').uncheck();
+  await page.getByTestId('gv2-search').fill('topic:demin-water');
+  const nonPracticeTopic = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: 'Demin Water' }).first();
+  await nonPracticeTopic.getByRole('button').click();
+  const deminDetail = page.getByTestId('gv2-detail-topic:demin-water');
+  await expect(deminDetail).toBeVisible();
+  await expect(page.getByTestId('gv2-related-questions-topic:demin-water')).toContainText('2016 Q53');
+  await expect(page.getByTestId('gv2-actions-topic:demin-water')).not.toContainText('Generate quiz from this node');
 
   // Topics with eligible practice questions hand off directly into quiz-v2 with the topic filter set.
-  await page.getByTestId('gv2-focus-neighborhood').uncheck();
   await page.getByTestId('gv2-search').fill('topic:pressurizer-level-and-press-control');
   const practiceTopic = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: 'Pressurizer Level & Press Control' }).first();
   await practiceTopic.getByRole('button').click();
@@ -114,7 +116,7 @@ test('graph-v2 polish exposes practice-only filtering, empty state, and deep-lin
   expect(practiceCount).toBeGreaterThan(0);
   expect(practiceCount).toBeLessThan(initialCount);
 
-  await page.getByTestId('gv2-search').fill('q23-eop-flowchart-symbols-concurrent');
+  await page.getByTestId('gv2-search').fill('q85-sg-overpressure-security-redacted');
   await expect(page.getByTestId('gv2-no-results')).toBeVisible();
   await expect(page.getByTestId('gv2-no-results')).toContainText('No graph nodes match');
 

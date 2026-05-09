@@ -23,13 +23,18 @@ Step C3-1 Caution: <span class="hi-exam">If LOCA-5 is in effect, operation of co
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q27</div>
+RCP trip basis in FRCE-1: per the FRCE-1 basis document page 4, <span class="hi-exam">"...RCPs are tripped since component cooling water to the RCP seals and motors is isolated."</span> CS actuation occurs at <span class="hi-exam">15 psig in containment</span>, which also triggers <span class="hi-exam">Phase B isolation</span> — Phase B shuts the <span class="hi-exam">RCP CCW cooling inlet and outlet valves</span>. Without CCW, the RCPs must be tripped to prevent motor damage from lack of cooling. <span class="hi-trap">Not "to minimize seal leakoff" (B), not "to prevent thermal barrier backflow" (C), and not "to avoid two-phase pumping" (D — subcooling is indicated in the stem).</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q73</div>
 Step 2 — CS pump operation with LOCA-5 in effect: when transitioning to FRCE-1 from LOCA-5, CS pumps are operated <span class="hi-exam">as directed by LOCA-5</span>. If LOCA-5 directed both CS pumps stopped, the crew will <span class="hi-exam">NOT start both CS pumps</span> in FRCE-1 even though containment pressure exceeds 15 psig. <span class="hi-exam">Conserving RWST water IS a reason</span> for how CS pumps are operated in FRCE-1 Step 3 when LOCA-5 is in effect. <span class="hi-trap">Normally FRCE-1 would start both CS pumps when containment pressure exceeds 15 psig. The LOCA-5 provision overrides this to conserve RWST inventory.</span>
 </div>
 
 ## Connections
 
-- Related systems: [[Containment Spray]], [[CFCUs]], [[Containment]]
+- Related systems: [[Containment Spray]], [[CFCUs]], [[Containment]], [[RCPs]], [[CCW]]
 - Related EOPs: [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2018 Q73]], [[2020 Q9]], [[2022 Q80]]
-- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2016 Q4]], [[2016 Q27]], [[2018 Q73]], [[2020 Q9]], [[2022 Q80]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

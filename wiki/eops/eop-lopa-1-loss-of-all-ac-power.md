@@ -39,11 +39,22 @@ Vital Power Restoration Steps: prior to restoring AC power, <span class="hi-exam
 Shed non-essential DC loads per Checkoff Sheet 3 (COS 3-1 thru 3-3), 125VDC LOAD SHED LIST. Operator locates distribution panels at <span class="hi-exam">64 ft elevation</span> (2A 125VDC Bus, 2ADC, 2B 125VDC Bus, 2DDC, 2CDC panels) and <span class="hi-exam">100 ft elevation switchgear room</span> (2AADC, 2BBDC, 2CCDC panels). Opens ONLY breakers designated on the checkoff sheet (not all breakers in each panel). Checkoff Sheet 3 sections may be performed in any order.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q18</div>
+EOP-LOPA-1 Continuous Action Step for energizing a deenergized 4KV vital bus with an EDG comes <span class="hi-exam">AFTER the step to deenergize all SECs and depress the Stop PB for all SEC controlled safety related loads</span>. The Bases Document (page 15) states the dual reason: <span class="hi-exam">(1) prevent the bus from overloading</span> when power is restored, and <span class="hi-exam">(2) prevent the SI actuated valve realignment that will occur if an SI signal is sensed after power is restored</span>. <span class="hi-trap">SI is initiated at Step 21 NOT to prevent a charging pump from running, but to prevent the SI actuated valve realignment after power restoration. Non-essential DC loads are shed at Step 35 (extends battery capability — not required prior to bus energization). The SBO compressor is started as part of Blackout Coping Actions in Attachment 2 Part A of AB.LOOP-1 (required within 60 minutes of Blackout — not required prior to bus energization).</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-g</div>
+<span class="hi-exam">EOP-LOPA-1 Step 16 transition</span>: with one EDG (2A) energizing 2A Vital Bus, second EDG (2B) energizing 2B Vital Bus, 23 AFW supplying all required AFW flow, and 2C Vital Bus deenergized/unavailable, when an SPT (24 SPT) is restored the CRS directs swapping the running EDG-fed bus to the SPT source per <span class="hi-exam">S2.OP-SO.DG-0001 §5.8 (EDG-to-SPT swap) followed by S2.OP-SO.4KV-0001 §5.3.6 (Mimic Bus close protocol)</span>. The swap requires placing redundant equipment in service first (e.g., 22 CCW pump), stopping all 2A vital bus loads via Attachment 1, opening the 2A EDG breaker, then arming the Mimic Bus close interlock and pressing-and-holding the 24ASD CLOSE pushbutton. After successful close, single-source voltage band is 4.330–4.417KV and OHA J-17 (2A 4KV VTL BUS UNDRVOLT) clears.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Control Air]], [[DC Power]], [[EDGs]], [[Service Water]], [[4KV]], [[SECs]], [[RCPs]], [[CVCS]]
 - Related EOPs: [[EOP-LOPA-4 — Extended Loss of All AC Power]]
-- Related exam questions: [[2018 Q59]], [[2022 Q77]]
-- Related JPMs: [[2018 JPM IP-i]], [[2019 JPM Sim-g]]
+- Related procedures: [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]]
+- Related exam questions: [[2016 Q18]], [[2018 Q59]], [[2022 Q77]]
+- Related JPMs: [[2016 JPM Sim-g]], [[2018 JPM IP-i]], [[2019 JPM Sim-g]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2016 NRC Operating Exam]]

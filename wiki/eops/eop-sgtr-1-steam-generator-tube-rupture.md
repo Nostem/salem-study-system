@@ -16,6 +16,11 @@ Provides guidance for mitigation of a steam generator tube rupture event, includ
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q15</div>
+EOP-SGTR-1 <span class="hi-exam">Step 6 (2-EOP-SGTR-1F Sheet 2, Rev 30)</span>: AFW flow control to the ruptured SG. If ruptured SG NR level is &lt;9%, <span class="hi-exam">establish AFW flow to the ruptured SG until NR level reaches &gt;9%, then isolate AFW flow and maintain &gt;9%</span>. Purpose: keep tubes covered to support natural circulation cooldown / RCS heat removal path. <span class="hi-trap">Trap C: 19% is the EOP Rev 30 level above which INTACT SGs are maintained — NOT the ruptured-SG level.</span> <span class="hi-trap">Trap A/D: never feeding the ruptured SG (or only after cooldown) is a misconception — uncovered tubes prevent heat removal during cooldown if intact SGs are unavailable as targets.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q11</div>
 Step 38.1 monitors for natural circulation flow. RCS T-Cold in unaffected loops should be approximately <span class="hi-exam">548 °F</span> (saturation temperature at MS10 setpoint of 1015 psig / 1030 psia). Affected SG MS10 set to 1045 psig (1060 psia) per step 3. With a LOOP, steam dumps are unavailable (circulators tripped = blocking signal) — use <span class="hi-exam">atmospheric relief valves (MS10s)</span> on intact SGs to raise steam flow.
 </div>
@@ -60,11 +65,26 @@ EOP-SGTR-1 entered from EOP-TRIP-1 after 24 SG tube rupture (650 gpm). Isolation
 SI termination during SGTR-1: the reason ECCS flow is terminated is to <span class="hi-exam">prevent overfill of the ruptured SG</span> (not the pressurizer). CAS for reestablishing ECCS flow: <span class="hi-exam">PZR level cannot be maintained &ge; 11% OR Subcooling &le; 0&deg;F</span>. The logic is <span class="hi-exam">OR</span> — either condition triggers ECCS restart. <span class="hi-trap">Trap: candidates may confuse overfill concern (it is the SG, not the PZR) or incorrectly believe ONLY PZR level (without the subcooling criterion) triggers ECCS restart.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q79</div>
+Ruptured SG goes water solid before SI is terminated (after RCS cooled to Target Temp and depressurized to restore inventory): the procedure-in-effect (SGTR-1) governs — <span class="hi-exam">continue in SGTR-1, terminate SI, and establish normal charging/letdown to stop primary-to-secondary leakage</span>. <span class="hi-trap">Trap C/D: EOP-FRHS-3 (Response to SG High Level) is a Yellow Path FRP that may be entered at CRS discretion, but its Step 10.7 checks for SGTR — and would kick back to the SGTR series in effect. FRHS-3 does not address minimizing spread of secondary contamination (that is in the SGTR series), and FRHS-3 only sets affected SG MS10 to <span class="hi-exam">1045 psig</span> (not manual shut), which would already have been done during AB.SG or SGTR-1.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-8</div>
+EOP-SGTR-1 entered from EOP-TRIP-1 after 21 SG tube rupture (escalates to 400 gpm). <span class="hi-exam">CT#1 (CT-18) — isolate feed flow into and steam flow from 21 SG prior to a transition to SGTR-3 being required:</span> PO closes <span class="hi-exam">21MS167</span> and verifies 21MS7, 21MS18, and 21GB4 are closed. (21AF11/21AF21 feed isolation already performed during AB.SG-0001 step.) PO sets <span class="hi-exam">21MS10 at 1045 psig</span>. CRS dispatches operator to close 21MS45 and 2SS321 sample valve. PO trips 23 AFW pump (not the only source). PO STOPS AFW flow if 21 SG NR &gt;9%. Target cooldown temp from Table B: SG press &gt;375 psig threshold; cooldown target <span class="hi-exam">&lt;503°F</span>. <span class="hi-exam">CT#2 (CT-19) — establish/maintain RCS T so transition from SGTR-1 does NOT occur because temp too high (lose subcooling) or so low it causes FRTS/FRSM transition.</span> PO uses steam dumps in MS Pressure Control at 25% for cooldown, then sets to Auto to maintain CET temps. RCS depressurization: 21 RCP trips during PZR spray attempt — RO closes spray valves and uses 2PR2 PZR PORV (2PR6 power removed pre-scenario; do NOT restore). <span class="hi-exam">2PR2 fails to close after demand</span> — RO closes the PORV Block valve and RCS pressure rises. Scenario terminates after the stuck-open PORV is addressed.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+EOP-SGTR-1 entered from EOP-TRIP-1 after 21 SG tube rupture. <span class="hi-exam">CT#1 (CT-18) — isolate feed flow into and steam flow from 21 SG prior to a transition to SGTR-3 being required:</span> Part 1 — close <span class="hi-exam">21AF11 and 21AF21</span> (AFW isolation valves); Part 2 — shut <span class="hi-exam">21MS167</span> and verify 21MS7, 21MS18, and 21GB4 are shut. PO ensures 21MS10 set at <span class="hi-exam">1045 psig</span>. CRS dispatches operator to shut 21MS45 and 2SS321 sample valve. PO ensures 23 AFW pump speed at minimum and trips 23 AFW pump (steam supply was lost when 21MS45 was shut). Cooldown target from Table D: <span class="hi-exam">503&deg;F CETs</span> for ruptured SG pressure ~1000 psig. PO places steam dumps in MS Pressure Control-Manual at 25% to perform cooldown; bypasses Tavg when Tavg Low-Low reached. <span class="hi-exam">CT#2 (CT-19) — establish/maintain RCS T so transition from SGTR-1 does NOT occur because temperature too high (lose subcooling) or so low it causes transition to FRTS or FRSM.</span> RO depressurizes via PZR Spray initially; when 23 RCP trips spray loses effectiveness — RO shuts both PZR Spray valves and uses 2PR2 PZR PORV (2PR1 fails to open). 2PR2 then fails to shut and 2PR7 Block Valve fails 90% open → CRS transitions to EOP-SGTR-3.
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Pressurizer & PRT]], [[Main Steam]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]]
-- Related exam questions: [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-2 — Post SGTR Cooldown]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]], [[EOP-FRHS-3 — Response to Steam Generator High Level]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
+- Related exam questions: [[2016 Q4]], [[2016 Q15]], [[2016 Q79]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
 - Related JPMs: [[2019 JPM SRO-A5]], [[2019 JPM Sim-c]], [[2020 JPM Sim-g]]
-- Related scenarios: [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

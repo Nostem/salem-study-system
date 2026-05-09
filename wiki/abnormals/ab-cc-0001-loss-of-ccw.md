@@ -82,6 +82,11 @@ CCW leak location diagnosis using chemistry: per AB.CC-0001, <span class="hi-exa
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q35</div>
+On a single CCW pump trip with the standby pump in AUTO and stopped, the standby pump will <span class="hi-exam">auto-start when 21 or 22 CCW header pressure lowers to <span class="val-alarm">70 psig</span></span>. AB.CC-0001 may be entered, but <span class="hi-exam">no AB.CC-0001 actions are required other than ensuring the backup pump started</span> — the system response is automatic.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q95</div>
 Per S2.OP-AB.CC-0001 CAS items, the <span class="hi-exam">5-minute timer applies to the RCP BRG CLG WTR FLO LO alarm</span>: if the alarm is still valid after 5 minutes, perform Attachment 2 (Stopping Reactor Coolant Pumps). <span class="hi-trap">Trap: the 2-minute CAS timer applies only when RCP Seal Injection Flow AND RCP Thermal Barrier Component Cooling flow are lost concurrently — not for the BRG CLG WTR FLO LO alarm alone.</span> Per Attachment 2: if <span class="hi-exam">Reactor Trip Breakers are CLOSED, the crew MUST manually TRIP the Reactor prior to stopping the affected RCPs</span> — even if the plant is in MODE 3 with all rods fully inserted. <span class="hi-trap">Trap: candidates may think a manual trip is unnecessary because rods are already in, but the procedure requires it whenever RTBs are closed.</span>
 </div>
@@ -90,6 +95,6 @@ Per S2.OP-AB.CC-0001 CAS items, the <span class="hi-exam">5-minute timer applies
 
 - Related systems: [[CCW]], [[RCPs]], [[RHR]], [[Service Water]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
-- Related exam questions: [[2018 Q7]], [[2018 Q54]], [[2018 Q95]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
+- Related exam questions: [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2018 Q95]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
 - Related JPMs: [[2019 JPM Sim-h]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]]

@@ -26,6 +26,11 @@ PR channel 2N41 removal from service (Section 5.1): Steps 5.1.1-5.1.4 pre-checks
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q13</div>
+IR channel removal (1N35 fails high at 100% power, Unit 1, S1.OP-SO.RPS-0001 page 11): when the PO places the <span class="hi-exam">LEVEL TRIP switch in BYPASS</span> at the NI rack, <span class="hi-exam">OHA E-29 (SR &amp; IR TRIP BYP) annunciates</span> and the <span class="hi-exam">IR FLUX HI reactor trip and IR HI FLUX ROD WDRWL STOP are blocked</span> for that channel. The next procedural action is to remove instrument power fuses. <span class="hi-trap">IR removal does NOT use control power fuses or POWER MISMATCH BYPASS — those are PR removal actions.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q30</div>
 After PR NI channel 2N41 bistable is tripped per S2.OP-SO.RPS-0001, the coincidence for the PR High Neutron Flux Reactor Trip changes from 2/4 to <span class="hi-exam">1 out of 3</span>. The tripped bistable counts as a permanent "tripped" input in the coincidence logic — it is NOT removed from the logic. <span class="hi-trap">Trap: candidates may think the tripped channel is removed from the logic, resulting in 2/3 coincidence. In fact, the tripped bistable satisfies one leg permanently, so only 1 of the remaining 3 functional channels needs to exceed the setpoint to complete the trip logic.</span>
 </div>
@@ -34,6 +39,6 @@ After PR NI channel 2N41 bistable is tripped per S2.OP-SO.RPS-0001, the coincide
 
 - Related systems: [[Excore NIs]], [[RPS/SSPS]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]]
-- Related exam questions: [[2019 Q30]], [[2020 Q22]]
+- Related exam questions: [[2016 Q13]], [[2019 Q30]], [[2020 Q22]]
 - Related JPMs: [[2020 JPM Sim-f]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

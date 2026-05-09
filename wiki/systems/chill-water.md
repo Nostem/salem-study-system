@@ -28,5 +28,5 @@ Non-essential heat load isolation per S2.OP-SO.CH-0001 Attachment 2: with both c
 
 - Related procedures: [[S2.OP-SO.CH-0001 — Chilled Water System Operation]]
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
-- Related JPMs: [[2018 JPM SRO-A1]], [[2022 JPM SRO-A1]]
-- Related exam: [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2018 JPM SRO-A1]], [[2022 JPM SRO-A1]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]]

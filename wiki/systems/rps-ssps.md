@@ -144,6 +144,16 @@ Manually initiating <span class="hi-exam">Phase B and Spray Actuation</span> fro
 SI signal blockability during cooldown (IOP-6): <span class="hi-exam">Low PZR Pressure SI and High Steam Flow SI can be blocked</span> when P-11 is active (< <span class="val-alarm">1915 psig</span>). However, <span class="hi-exam">Containment High Pressure SI (<span class="val-trip">4 psig</span>, 2/3 channels) CANNOT be blocked</span> — it remains active in all modes. During a Mode 3 cooldown with SI blocks in place, multiple SG depressurizations inside containment will cause Containment High Pressure SI actuation even though Low PZR Pressure SI is blocked. <span class="hi-trap">Low PZR Pressure SI logic is 2/3 channels (not 2/4) — the 2/4 logic is for the Low PZR Pressure reactor trip, not the SI signal.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q36</div>
+At <span class="hi-exam">4% power (below P-10)</span> the <span class="hi-exam">Low Pressurizer Pressure reactor trip is BLOCKED</span> — it is "not reinstated until &gt; P-10." With a stuck-open PZR spray valve depressurizing the RCS, the FIRST protective action below P-10 is therefore <span class="hi-exam">SI on Low PZR Pressure</span> (2/3 channels &lt;<span class="val-trip">1765 psig</span>). The Low PZR Pressure SI was reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span> (P-11). <span class="hi-trap">Trap: candidates may pick the Low PZR Pressure Rx Trip — but it is blocked below P-10. OT/DT trip would not initiate at 4% (D/T very small). PZR level does not rise to the high-level Rx trip setpoint.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q38</div>
+The <span class="hi-exam">Power Range Low Setpoint reactor trip (≤<span class="val-trip">25%</span> RTP)</span> can be manually blocked above P-10 by <span class="hi-exam">depressing the Block Power Range A and B pushbuttons at &gt;10% Rx power</span>. Depressing these pushbuttons changes the active reactor trip setpoint from the 25% low setpoint to the 109% high setpoint. <span class="hi-trap">The Reset Source Range A and B pushbuttons (when depressed below 10% power after the SR hi-flux trip was blocked) WOULD re-energize the SRNIs and lower the Rx trip setpoint to <span class="val-trip">1×10⁵ cps</span> — but the P-10 block prevents re-energization once above P-10. The PRNI Rate Mode "Reset" switch resets the High Flux Rate trip — it does NOT change the Rx power trip setpoint. The "High Flux at Shutdown" Block switches block the SR hi-flux trip — they do not affect the PR low setpoint trip.</span>
+</div>
+
 ## Auxiliary Feedwater Actuation
 
 | Pump | Actuation Signals | Setpoints | Source |
@@ -224,6 +234,11 @@ Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass brea
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q12</div>
+ATWS scenario with RTB A already open (I&C testing) and RT Bypass Breaker A racked in and closed, RPS fails to provide any output signal: the DIRECT method to trip the reactor during TRIP-1 immediate actions is to <span class="hi-exam">turn either of the Reactor Trip pistol grip handles to TRIP — this de-energizes the UV coil for Reactor Trip Breaker B</span> (RTB A is already open). <span class="hi-trap">Trap A: depressing the OPEN PB for RTB B energizes the SHUNT coil, not the UV coil.</span> <span class="hi-trap">Trap C: the RT Bypass Breakers do NOT have an OPERATE function from the control console.</span> Trap B (open PZR heater bus supply breakers on 2CC3 to deenergize the RDMG sets) is plausible but the reactor would already be tripped by the pistol-grip path before reaching that step.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q38</div>
 When only RTB B opens (RTB A fails closed): the <span class="hi-exam">20-ET (Emergency Trip Fluid Solenoid)</span> trips the turbine by dumping EH fluid directly to the reservoir, closing all turbine steam valves. 20-AST and 20-2AST energize from RTB A — with RTB A failed closed, neither energizes. 2EH61 (Interface Valve) opens only when 20-AST or 20-2AST energizes. <span class="hi-trap">The auto turbine trip via SSPS comes from the reactor trip signal through the 20-ET solenoid on RTB B opening — NOT through the generator lockout relay or 2EH61.</span>
 </div>
@@ -268,6 +283,16 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers and cont
 Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.OP-AB.CR-0001 Attachment 5: proceed to <span class="hi-exam">Rod Drive MG Set Control Panel (460V Vital Bus Room - El 84 ft.)</span> and open all four breakers — <span class="hi-exam">Reactor Trip Breaker A, Reactor Trip Breaker B, Reactor Trip Bypass Breaker A, Reactor Trip Bypass Breaker B</span>. Also trip <span class="hi-exam">#13 Charging Pump breaker (1AX1AX7X)</span> and open <span class="hi-exam">1CV175 Rapid Borate Stop Valve breaker (1CY2AX4I)</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q44</div>
+<span class="hi-exam">Containment Spray actuation relays have RETENTIVE MEMORY</span> — relays can be manually reset with an actuation signal still present. Even with containment pressure above the CS actuation setpoint of <span class="val-trip">15 psig</span>, depressing both Reset Spray Actuation pushbuttons resets the actuation signal, and the signal does NOT reinitiate after the pushbuttons are released. <span class="hi-exam">CS pumps and CS valves CS2, CS14, CS16, CS17 do NOT reposition to normal positions on reset</span> (CS14 is normally open with power removed; the others are normally shut and open on the CS signal — they cannot be closed until the spray actuation signal is reset). <span class="hi-trap">Trap: assuming actuation reinitiates while pressure remains above 15 psig — retentive memory prevents this.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q3</div>
+RTBs fail to open on a valid RPS trip signal — operator opens the <span class="hi-exam">RDMG sets power supply breakers from 1CC3</span> to drop rods. Because the trip signal does NOT propagate through the RTB output contacts, the <span class="hi-exam">automatic Main Turbine trip from the RTBs is bypassed</span> — the crew must <span class="hi-exam">manually trip the Main Turbine</span> as a directly performed action. Once the manual turbine trip occurs, the remaining downstream automatic responses still function: main generator output breakers auto-open on turbine trip, 4KV group buses transfer automatically on low voltage, and AFW pumps auto-start on SG lo-lo level (after the turbine trip causes SG shrink). <span class="hi-trap">Trap: the RTB output is the auto turbine trip source — losing the RTB path loses the turbine trip path. Group bus transfer and AFW start are automatic and do NOT need to be directly performed.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.3 — Instrumentation]]** — Trip setpoints, response times, channel operability
@@ -280,8 +305,12 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
 - Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
-- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]]
-- Related exams: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]]
+- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+  - [[2016 Q3]] — RTBs fail to open / RDMG breakers manually opened from 1CC3 / manual turbine trip required
+  - [[2016 Q12]] — ATWS with RPS output failure / pistol grip de-energizes UV coil for RTB B (direct trip path)
+  - [[2016 Q36]] — 2PS1 spray valve fails open at 4% / Low PZR Pressure Rx trip blocked below P-10 / SI on Low PZR Pressure is FIRST protective action
+  - [[2016 Q38]] — Block Power Range A and B pushbuttons at 12% blocks the 25% PR low setpoint Rx trip / Reset Source Range pushbuttons prevented by P-10 block
   - [[2018 Q1]] — RCP shaft shear at 25% power: below P-8, single-loop low flow trip blocked
   - [[2018 Q10]] — PZR Pressure Channel fails low: 2/4 becomes 1/3 coincidence; PT-1648 is RSP only
   - [[2018 Q49]] — TRIP-1 immediate actions when RTBs fail: Trip Switches → Bezels → MG set breakers (E 6D, G 6D) → Turbine Trip
@@ -316,3 +345,6 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
   - [[2019 Q49]] — EOP-TRIP-1 Step 1 manual trip sequence: Pistol Grips FIRST, then Bezels, then open E 6D and G 6D breakers
   - [[2019 Q50]] — OT Delta-T variable setpoint lowers as RCS pressure lowers (K3 pressure input); OP Delta-T varies with AFD not pressure
   - [[2018 Q11]] — RCP Undervoltage trip: 4KV Group Busses H and G at <70% normal voltage / 1/2 taken twice / interlocked with P-7
+  - [[2016 Q44]] — CS actuation relays have retentive memory; reset valid above 15 psig setpoint; CS pumps/valves do NOT reposition on reset
+  - [[2016 Q77]] — Mode 3 with rod control de-energized (3/4 RTB+RTBBs open, even with RDMG operating + 1 RTB shut) → LCO 3.4.1.2 only requires 2 loops operable; single RCP trip = no action
+  - [[2016 Q78]] — ATWS at 4% Mode 2: Rx trip NOT confirmed by power <5% alone; FRP (FRSM-1) applicable in Modes 1-3

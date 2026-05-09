@@ -19,8 +19,14 @@ Provides operating procedures for the Unit 2 Service Water System, including pum
 P&L 3.2 states: <span class="hi-exam">"When a Service Water Bay is removed from service in Modes 1-4, and the Service Water Pump fed from 'B' bus in the OPERABLE Service Water Bay is unavailable (23 or 24 SWP), then L.C.O 3.0.3 is applicable."</span> An OPERABLE SW loop consists of <span class="hi-exam">two service water pumps powered from separate buses</span>. With #2 SW Bay isolated (leak) and 24 SWP C/Ted, both SW loops are inoperable — TS 3.0.3 applies.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A1-2</div>
+SRO equipment OOS determination during ongoing fuel movement: with 21 SW pump already C/T, taking 22 SW out for packing replacement is allowed because <span class="hi-exam">two SW loops still meet the operability requirement (two pumps per bay; B and C vital remaining SW pumps with operable EDGs provide redundancy)</span>. <span class="hi-trap">TSAS 3.7.4 enters for less-than-two-operable SW loops but is a 72-hour action — short-duration packing replacement is acceptable.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]]
 - Related exam questions: [[2020 Q14]]
-- Related exam: [[2020 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-2]]
+- Related exam: [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]]

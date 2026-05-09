@@ -41,9 +41,15 @@ Fire alarm code #91 on 2RP5 = <span class="hi-exam">Aux. Bldg., Relay & Battery 
 Relay Room fire: the Relay Room is part of the <span class="hi-exam">Control Room Area (cooled by normal Control Room Area Air Conditioning)</span>, so the correct selection at 2RP2 is <span class="hi-exam">"FIRE INSIDE CONTROL AREA"</span>. A Relay Room fire requires dispatching an operator to align PORV Block Valve circuits to <span class="hi-exam">EMERG CLOSE per Attachment 15</span> because <span class="hi-exam">spurious opening of a PORV / Block valve is a concern</span> with a Relay Room fire. <span class="hi-trap">Trap: the Relay Room is INSIDE the Control Room Area despite being in the Aux. Bldg. — candidates may incorrectly select "FIRE OUTSIDE".</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-8</div>
+Spurious <span class="hi-exam">OHA A-7 FIRE PROT FIRE</span> (Zone 33 TURB BLDG WEST EL 100) generated 60 s after the loss of 2E 4KV Group Bus electrical fault. PO dispatches an operator to investigate and contacts Fire Protection. NEO and Fire Protection both report <span class="hi-exam">no fire — only a strong acrid smell near the E Group Bus cubicles</span>. The crew continues with EOP-TRIP-1 / EOP-TRIP-2 — the fire alarm is determined to be a downstream symptom of the bus fault, not an actual fire requiring suppression actions.
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]], [[Fire Protection]], [[EDGs]], [[Pressurizer Level & Press Control]], [[CAV]]
 - Related exam questions: [[2020 Q75]], [[2020 Q83]], [[2022 Q99]], [[2023 Q63]]
 - Related JPMs: [[2022 JPM Sim-h]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2017 Scenario 8]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2017 NRC Operating Exam]]

@@ -58,8 +58,23 @@ FW Isolation vs FW Interlock: <span class="hi-exam">SG Hi-Hi Level (P-14) trigge
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q52</div>
+FW Interlock setpoint and function: <span class="hi-exam">Feedwater Interlock actuates when 3/4 RCS Tavgs &lt;<span class="val-alarm">554°F</span> AND at least one Reactor Trip and associated bypass breaker open</span>. This shuts the BF19s and BF40 Feed Reg Valves — preventing over-cooling of the RCS on an uncomplicated Rx trip. <span class="hi-exam">Feedwater Isolation actuates when 2/3 SG NR levels on 1/4 SGs reach <span class="val-trip">67%</span> OR on a SI signal</span>, and shuts BF19s, BF40s, BF13s, and trips the SGFPs. <span class="hi-trap">P-12 (3/4 RCS Tavgs &lt;<span class="val-alarm">543°F</span>, shuts Steam Dump valves) is NOT what prevents over-cooling on an uncomplicated Rx trip — steam dumps modulate to control Tavg at ~547°F so temp does not reach 543°F. P-10 (3/4 PRNIs &lt;10% power) blocks low-power Rx trips and is not related to over-cooling protection.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q51</div>
+FW Isolation from one SG &gt;67% NR with 21 SGFP already tripped (35% power): the high SG NR level in one SG initiates Feedwater Isolation, which trips both SGFPs. <span class="hi-exam">Normally, a trip of both SGFPs starts the MDAFW pumps ONLY (21 and 22) — but this auto-start does NOT occur when the SGFP signal is caused by a FW Isolation</span>. With initial power 35%, SG NR levels remain above the AFW pump auto-start level of <span class="val-alarm">9%</span>, so <span class="hi-exam">NO AFW pumps start IMMEDIATELY</span>. They will ALL start when SG NR levels are &lt;9%. If levels do not shrink low enough, EOP-TRIP-2 step 3 NO path (total AFW flow &lt;<span class="hi-exam">22E4 lbm/hr</span>) directs operators to <span class="hi-exam">start 21–23 AFW pumps as necessary to establish &gt;22E4 lbm/hr</span>.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q45</div>
 SG program level above 20% power is <span class="hi-exam"><span class="val-normal">44% NR</span></span>. With SG NR level at 45% (above 44% program), BF19 (FW Bypass Regulating Valve) demand <span class="hi-exam">decreases</span> — digital FW system throttles BF19s closed to reduce feedwater flow and lower SG level to program. <span class="hi-trap">44% is the program setpoint above 20% power — do not confuse with 50% or other SG level setpoints.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q48</div>
+SG NR level program ramp during normal startup (Unit 2 ADFCS, NCS05ADFWCS-08): <span class="hi-exam">SG NR level is programmed against TURBINE STEAMLINE INLET PRESSURE (≈ Turbine power)</span>, ramping from <span class="val-normal">33% NR at 0% Turbine power</span> to <span class="val-normal">44% NR at 20% Turbine power</span>, then <span class="hi-exam">flat at 44% NR from 20% to 100% Turbine power</span>. At 10% TP the program is <span class="hi-exam">38.5% NR</span> (linear interpolation 33→44 across 0→20%). At 60% TP the program is <span class="hi-exam">44% NR</span>. <span class="hi-trap">Unit 1 only: ramp continues from 44% (at 20%) to 48% (at 100%) — do not apply Unit 1 ramp to Unit 2.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -158,11 +173,31 @@ On trip of both SGFPs, only the <span class="hi-exam">MDAFW pumps auto-start</sp
 SGFP suction pressure trip setpoints: <span class="hi-exam">SGFP trips when suction pressure &lt; <span class="val-trip">215 psig</span> for <span class="val-trip">10 seconds</span></span> (time-delayed trip). Instantaneous SGFP trip on low suction pressure at <span class="hi-exam">&lt; <span class="val-trip">190 psig</span></span> (no time delay). At 200 psig (between 190 and 215), the 10-second delay timer applies. After SGFP trip at >70% power, turbine runback to <span class="hi-exam"><span class="val-alarm">66%</span></span>. <span class="hi-trap">Trap: 50% is incorrect — each SGFP does NOT provide exactly 50% total flow. The 66% runback target confirms the SGFPs are not 50/50 load-shared.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q89</div>
+Single Condensate pump trip with NO HDPs running and polisher in service: <span class="hi-exam">21A Condenser hotwell level RISES</span> because condensing continues even though the pump is OOS. <span class="hi-exam">21-23 CN108 (Polisher Bypass Valves) do NOT automatically open</span> on low SGFP suction pressure — operator action per AB.CN-0001 directs opening when SGFP suction lowers &lt;<span class="val-alarm">320 psig</span>. <span class="hi-exam">2CN47 (23/24/25 Heater Strings Bypass) auto-opens on a SGFP trip ONLY (not on a CP trip)</span>; in AB.CN, CN47 is directed to open AFTER CN108s, since CN108 opening is expected to restore suction pressure above the CN47 threshold. Power reduction with 2 CPs running and no HDPs running per AB.CN-0001 Att 2 = <span class="hi-exam"><span class="val-alarm">65%</span> or less</span>. <span class="hi-trap">Trap: 30% applies to a different pump configuration — not 2 CPs running with no HDP.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+23 Condensate pump trip at 89.4% power. Cue: 23 Condensate pump trip annunciation; no SGFP tripped. PO bypasses condensate polisher by opening <span class="hi-exam">21 thru 23 CN108</span> if SGFP suction pressure is &lt;<span class="hi-exam">320 psig</span>. CRS directs <span class="hi-exam">2CN47</span> opened if suction pressure remains &lt;320 psig; PO isolates letdown by closing 21-24BG4 and 21-24GB185 once 2CN47 is open. Power reduction to <span class="hi-exam">85% at ~5%/min</span> with 2 Condensate pumps and 3 Heater Drain pumps in service IAW AB.CN-0001 Attachment 4 (and AB.LOAD-0001).
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-a</div>
+21 SGFP trip during a Shutdown Bank surveillance (S2.OP-ST.RCS-0001 Section 5.1) is the alternate-path event. With Shutdown Bank B inserted at least 10 steps below ARO, MALF BF0105A trips 21 SGFP. Per S2.OP-ST.RCS-0001 P&L 3.13, with a Shutdown Bank not at its fully withdrawn position, an event requiring a reactor trip <span class="hi-exam">requires a manual reactor trip</span> — attempting to recover SGFP capacity by withdrawing the inserted Shutdown Bank (placing the Rod Bank Selector in MAN or AUTO) is the wrong action.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-h</div>
+<span class="hi-exam">21–24BF19 (SG Feedwater Regulating Valves) start to close at ≈ 80 psig control air header pressure</span>. Per AB.CA-0001 CAS Step 6.0: "If ANY BF19 SG FW CONT VALVE closes AND Applicable SG water level CANNOT be maintained, THEN: Trip the Reactor; continue with this procedure; go to 2-EOP-TRIP-1." The applicant must <span class="hi-exam">manually trip the reactor BEFORE the auto-trip on lo-lo SG NR level</span> when BF19 closure prevents level control. Approximate timeline (from RT-1 / first SAC trip): 6:30 — 21–24BF19 begin closing; 7:10 — G-15 OHA ADFCS TRBL.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
-- Related exam questions: [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
-- Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]]
-- Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2016 Q48]], [[2016 Q51]], [[2016 Q52]], [[2016 Q70]], [[2016 Q76]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
+- Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]], [[2016 JPM Sim-h]], [[2016 JPM IP-j]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

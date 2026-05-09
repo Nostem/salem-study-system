@@ -61,8 +61,19 @@ RCS leak inside containment with manual trip and auto SI — classified as <span
 SGTR with stuck-open MSIV on 23 SG — classified as <span class="hi-exam">Site Area Emergency (SAE)</span>. Fission Product Barrier assessment: <span class="hi-exam">RB3.L (5 pts)</span> for SGTR (RCS barrier loss) and <span class="hi-exam">CB3.L or CB4.L (3 pts)</span> for stuck-open MSIV on affected SG (containment barrier loss — uncontrolled release path from RCS through ruptured SG tube through open MSIV to atmosphere). Total = 8 points = SAE threshold. A release IS in progress. <span class="hi-trap">The loud roaring noise with rapidly lowering 23 SG pressure (850 psig and dropping) and rising steam flow (12%) confirms the stuck-open MSIV is passing steam to atmosphere. This is a time-critical JPM (15 minutes).</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A4-1 (ESG-1)</div>
+ESG-1 scenario events drive a single-barrier (RCS) <strong>Potential Loss</strong> classification: <span class="hi-exam">EAL RB3.P → ALERT</span>. Description of Event = "<span class="hi-exam">Potential Loss of the Reactor Coolant System Boundary</span>" (per EAL Description Table). ICMF Section III: checks <span class="hi-exam">IS NOT</span> for radiological release in progress (no release for ESG-1). Section IV: wind speed 10 mph / direction 160° from SPDS. Two 15-minute time-critical clocks: declaration window AND notification window (Primary Communicator ICMF delivery).
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A4-1 (ESG-2)</div>
+ESG-2 scenario events drive the same RCS-barrier EAL series, but the <strong>full Loss</strong> threshold is met: <span class="hi-exam">EAL RB3.L → ALERT</span> (still single-barrier so still ALERT, not SAE). Description of Event = "<span class="hi-exam">Loss of the Reactor Coolant System Boundary</span>". ICMF Section III: checks <span class="hi-exam">IS</span> for radiological release in progress (the lost RCS boundary path passes coolant to environment). Same wind data and same dual 15-minute clocks as ESG-1 variant. <span class="hi-trap">Trap: the .L vs .P suffix distinction does not by itself escalate the classification — both are ALERT. The classification escalates only when MULTIPLE barriers degrade.</span>
+</div>
+
 ## Connections
 
-- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[EP-SA-111 — Emergency Classification and Protective Action]]
-- Related JPMs: [[2018 JPM SRO-A5]], [[2019 JPM SRO-A5]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]]
+- Related systems: [[RCS]]
+- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[EP-SA-111 — Emergency Classification and Protective Action]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM SRO-A5]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]]

@@ -141,9 +141,34 @@ CCW leak location via chemistry: per AB.CC-0001, any inleakage dilutes CCW chrom
 Start a CCW pump IAW EOP-APPX-1 during large break LOCA with loss of offsite power. <span class="hi-exam">2B 4KV Vital Bus de-energized</span> (Bus Differential, Diesel running). No CCW pumps running (SEC Mode 3). Step 3 strategy selection: de-energized bus = B → CCW pumps available = 21 or 23 → <span class="hi-exam">Strategy C → GO TO Step 6</span>. <span class="hi-exam">21 CCW pump fails to start</span> (override): take RNO, reset CS, restart 21 CS pump, proceed to Step 6h. Successfully <span class="hi-exam">start 23 CCW pump on 2C bus</span>. Requires SEC Block, Emergency Loading Reset, stopping CS pump to make room on SEC-loaded bus, then restarting CS after CCW starts.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q10</div>
+On an SI signal, <span class="hi-exam">2CC215 and 2CC113 (Excess Letdown HX CCW isolation valves) receive a Phase A close signal</span> — they are Containment Phase A isolation valves. The purpose of closing Phase A isolation valves is to <span class="hi-exam">ensure all non-essential containment penetrations are isolated</span> on an SI signal. <span class="hi-trap">RCP CCW continues to be supplied until a Phase B signal at <span class="val-trip">15 psig</span> in containment — Phase A does NOT isolate ALL CCW supply/return from containment.</span> <span class="hi-trap">21 and 22CC16 (RHR HX CCW isolation valves) do NOT receive an automatic open signal on SI — they only open when the ARM PB is depressed AND RWST level reaches 15.2 ft. RHR pumps are cooled by either flow through the pump from RWST (LBLOCA) or recirc flow (SBLOCA until pp is S/D), not by automatic CC16 alignment.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q5</div>
+With NO CCW pumps running during EOP-LOCA-3 cold leg recirculation transfer, <span class="hi-exam">single-train recirculation</span> is the directed flowpath (LOCA-3 step 11.2 → step 124). CCW is required for ECCS pump cooling — losing CCW restricts recirculation to one train. <span class="hi-trap">There is no provision in LOCA-3 to transition to APPX-1 (CCW Restoration) or LOCA-5 (Loss of Emergency Coolant Recirculation) for a no-CCW condition during the recirc transfer.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q35</div>
+Normal CCW system alignment: <span class="hi-exam">2 CCW pumps running in MANUAL, and one CCW pump in AUTO and stopped</span>. The pump selected to AUTO will <span class="hi-exam">auto-start when either 21 or 22 CCW header pressure lowers to <span class="val-alarm">70 psig</span></span>. <span class="hi-trap">There is NO interlock based on CCW pump 4KV breaker positions (other systems do have a breaker anticipatory function — CCW does not). On a CCW pump trip, AB.CC-0001 could be entered but no actions are required other than ensuring the backup pump started.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+Loss of all SW directly affects CCW: per AB.SW-0005, <span class="hi-exam">RCPs are stopped to limit heat input to the CCW system</span> (since CCW heat exchangers are cooled by SW; with SW lost, CCW heat-removal capability is lost). Tripping the reactor and stopping all RCPs reduces the heat load on CCW until SW is restored.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+On total Loss of All SW, AB.SW-0005 Step 3.9 directs <span class="hi-exam">place CCW pumps in MANUAL and reduce operating CCW pumps to one</span>. Rationale: with no SW available to cool the CCW heat exchangers, CCW heat removal capability is gone. Tripping the reactor and stopping all RCPs reduces heat input to CCW; reducing to a single running CCW pump minimizes heat addition from the running pumps themselves and allows heat-up of the limited CCW inventory to be tracked. <span class="hi-exam">2CC131 (RCP THERMAL BARRIER) is placed in MANUAL</span> as part of this sequence.
+</div>
+
 ## Connections
 
-- Related exam questions: [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
-- Related JPMs: [[2018 JPM Sim-h]], [[2019 JPM Sim-h]]
+- Related exam questions: [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2016 Q92]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
+- Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 1]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]]

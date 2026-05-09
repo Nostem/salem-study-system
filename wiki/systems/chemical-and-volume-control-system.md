@@ -238,6 +238,11 @@ Excess Letdown CCW isolation on Phase A: <span class="hi-exam">CC113 and CC215 (
 Letdown orifice isolation valves (CV3, CV4, CV5) close on: <span class="hi-exam">Phase A signal, CV2 or CV277 closing, PZR level <17%, trip all charging pumps, or manual Phase A actuation from the safeguards bezel</span>. CV4 receives a closure signal <span class="hi-exam">directly from Phase A</span> (not directly from SI). SI actuates Phase A, which then closes CV4. <span class="hi-trap">CV2 and CV277 (letdown isolation valves) close on PZR low level <17% — NOT directly on SI or Phase A. Do not confuse CV2/CV277 interlocks with the letdown orifice valve (CV4) Phase A closure signal.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q37</div>
+Letdown Orifice Isolation Valves (2CV3, 2CV4, 2CV5) close automatically on: Phase A isolation, PZR level &lt;<span class="val-trip">17%</span>, or 2CV2/2CV277 (Letdown Isolation Valve) shut from 2CC2. <span class="hi-exam">2CV7 (Letdown Line Containment Isolation Valve) is NOT interlocked with the Orifice Isolation Valves</span> — closing 2CV7 isolates letdown to containment but does NOT auto-shut the orifice valves. <span class="hi-trap">Trap: candidates may assume any upstream/downstream letdown path closure auto-shuts the orifices. The orifice closure logic ties to Phase A, low PZR level, all-charging-pump trip, and CV2/CV277 — but NOT to CV7.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2019 RO-A2</div>
 Borated Water Sources surveillance (S2.OP-ST.CVC-0010): combined BAST level <span class="hi-exam">48% + 48% = 96%</span>. Per TS 3.1.2.6 Figure 3.1-2 at 6650 ppm, required level is <span class="hi-exam">&gt;96.5%</span> — UNSAT. Concentration also UNSAT: 6650 ppm vs ~6675 ppm required from Figure 3.1-2 at 96% level. Narrow margins test precise figure reading. RWST parameters (41.4 ft, 70 F, 2350 ppm) and BAST temps (100 F, 98.1 F) are all SAT.
@@ -283,12 +288,52 @@ Control Room Evacuation local charging flow control: at <span class="hi-exam">Pa
 Tagging review for 11 Charging pump removal on Unit 1: DWG 205228 Sheet 2 missing three blocking points per S1.OP-SO.CVC-0002: (1) <span class="hi-exam">1CV81 (DISCH VALVE) — must be CLOSED</span> (step 4.9.4.2), (2) <span class="hi-exam">1CV136 (RECIRC STOP VALVE) — must be CLOSED</span> (step 4.9.4.4; 1CV135 is a check valve, insufficient isolation), (3) <span class="hi-exam">1CV356 (SUCT VENT) — must be OPEN</span> (step 4.9.4.7). Applicable Tech Spec: <span class="hi-exam">TS 3.5.2</span> — charging pumps are ECCS components.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q29</div>
+CVCS Makeup START PB and VCT Lo-Lo auto swapover: the <span class="hi-exam">CVCS START PB must be depressed</span> to align the CVCS M/U system to the selected mode (BORATE, DILUTE, ALT DILUTE, or AUTO). If START is NOT depressed after returning to AUTO following a dilution, AUTO makeup will NOT actuate at the auto-makeup VCT level setpoint (14%). VCT level then continues to lower; at the VCT lo-lo level setpoint, <span class="hi-exam">1SJ1 and 1SJ2 (RWST to Charging Pump Suction valves) open automatically on 2/2 level lo-lo in VCT level</span>, and <span class="hi-exam">once SJ1/SJ2 are open, 1CV40 and 1CV41 (VCT Outlet Isolation Valves) shut automatically</span> to transfer charging pump suction from VCT to RWST. <span class="hi-trap">SJ1/SJ2 auto-open is NOT interlocked on having the CVCS MU Mode Selector in AUTO/START — it is a 2/2 VCT lo-lo level interlock independent of MU mode. Primary Water pumps do NOT auto-start at 14% level if START PB was never depressed.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q30</div>
+VCT pressure / NPSH effect on charging flow: with the Charging System Master Flow Controller in MANUAL, raising VCT pressure (e.g., from 25 to 35 psig due to H2 pressure regulator malfunction) <span class="hi-exam">raises NPSH available to the charging pumps → charging flow rises</span>. Static suction pressure for a centrifugal pump is increased by any of: <span class="hi-exam">rise in surge tank level, rise in pressure above the liquid in the surge tank, rise in booster pump output, or opening of the pump suction valve</span>. <span class="hi-trap">Letdown flow is unchanged — the letdown pressure control valve responds in automatic and holds letdown flow constant. With MFC in AUTO instead, charging flow would not change because the controller would close 2CV55 to maintain demand.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q1</div>
+VCT auto makeup with <span class="hi-exam">1CV175 (Rapid Borate Stop Valve) erroneously open</span> at 80% power, 1100 ppm Cb: when the auto makeup signal occurs, the BAT pump (running in slow speed in normal CVCS makeup alignment) <span class="hi-exam">swaps to fast speed</span>. Fast-speed BAT discharge through an open 1CV175 provides flow to the emergency borate line and borates the RCS. The boration causes RCS Tavg to lower → SG pressure lowers → MT governor valves open → temperature lowers further → <span class="hi-exam">rods withdraw at 8 spm to restore Tavg to program</span>. The emergency borate line normally has no flow with a BAT pump in slow speed, which is the normal CVCS makeup alignment. <span class="hi-trap">Trap: PT-505 (Turbine Steamline Inlet Pressure) failed LOW would cause rod insertion, not withdrawal. PT-505 failed HIGH would cause rod withdrawal but at the maximum 72 spm rate, not 8 spm. A boron addition rate set to 1 gpm vs 11 gpm is a dilution-vs-boration distractor — incorrect ratio still results in dilution-favoring makeup, not rod withdrawal.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+Charging-pump swap on a loss of all SW: <span class="hi-exam">the action to place 23 (PDP) Charging in service and remove 22 (centrifugal) Charging from service is found in S2.OP-AB.SW-0005 (Loss of All SW), NOT in S2.OP-AB.SW-0001</span>. <span class="hi-trap">Trap: AB.SW-0001 (Loss of SW Header Pressure) directs reduction of SW loads per Attachment 2 — not the charging-pump swap.</span> Without SW (and therefore no CCW to the centrifugal-pump cooling water), the PDP is preferred to maintain charging.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A2</div>
+S2.OP-ST.CVC-0010 Borated Water Sources surveillance (Att. 2) following a 21 BAT pump leak. With 21 and 22 BAST cross-connected each at <span class="hi-exam">49.5%</span> level / <span class="hi-exam">6610 ppm</span> Cb, the operating point is inside the acceptable region of TS Figure 3.1-2 — surveillance result <span class="hi-exam">SAT</span>. RWST (CH I-IV 41.4-41.5 ft / 70°F / 2350 ppm) and BAST temperatures (98.2°F / 97.1°F) all SAT.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+FRHS-1 Step 23.1 charging pump verification during bleed and feed: <span class="hi-exam">21 OR 22 Charging Pump running with BIT flow established</span> via 2SJ4/2SJ5 (BIT inlet) OPEN and 2SJ12/2SJ13 (BIT outlet) OPEN. Table B safeguards alignment auto-checked: 2CV68/2CV69 (Charging Discharge) CLOSED, 2CV40/2CV41 (Discharge Stop) CLOSED, 2SJ1/2SJ2 (RWST to Charging) OPEN.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+On a total loss of all SW, AB.SW-0005 Step 3.6 directs swapping to <span class="hi-exam">23 Charging Pump (positive displacement)</span> to maintain charging without CCW cooling on the centrifugal pumps. The 23 Charging Pump start sequence is unique: <span class="hi-exam">place in MANUAL → set Speed Demand to 10–12% BEFORE start → start pump → immediately raise Speed Demand to ~20% to couple the pump → adjust for desired flow → ensure Seal Injection Flow 6–12 gpm per RCP, total ≤40 gpm → stop 21 and 22 Centrifugal Charging Pumps</span>. Letdown is isolated by closing 2CV3/4/5 (orifice isolation valves) and 2CC131 (RCP THERMAL BARRIER) is placed in MANUAL.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-h</div>
+On Loss of Control Air alternate path, AB.CA-0001 Step 3.58 directs <span class="hi-exam">isolate letdown by closing 2CV3, 2CV4, 2CV5, 2CV2, 2CV277, and 2CV7</span>. Air-operated valves in CVCS — particularly the letdown line — must be closed before air pressure drops further, since letdown control is lost on loss of CA and excessive RCS letdown can occur if the line is not isolated.
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related exam questions: [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2018 Q52]], [[2018 Q69]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
-- Related JPMs: [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]]
-- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2016 Q1]], [[2016 Q29]], [[2016 Q30]], [[2016 Q37]], [[2016 Q39]], [[2016 Q67]], [[2016 Q79]], [[2016 Q82]], [[2016 Q83]], [[2016 Q84]], [[2016 Q92]], [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2018 Q52]], [[2018 Q69]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
+- Related JPMs: [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]], [[2016 JPM RO-A2]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2016 JPM Sim-h]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

@@ -89,6 +89,11 @@ SI pump discharge is limited to <1500 psig to prevent lifting RCS safety valves.
 SI pump shutoff head is <span class="hi-exam">1520 psig</span>. If RCS pressure is above 1520 psig (e.g., 1700 psig) and SI flow is indicated, this confirms a <span class="hi-exam">cold leg discharge leak</span> (flow should be zero above shutoff head). Per EOP-LOCA-6 step 2, close <span class="hi-exam">2SJ135 (Cold Leg Discharge Valve)</span> to isolate SI pump cold leg leak. Note: 21/22 SJ49 valves isolate RHR cold legs, not SI cold legs.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q32</div>
+SBLOCA in EOP-TRIP-1 with RCS pressure at <span class="val-normal">1600 psig</span> and 11 SI pump failed: starting 11 SI pump <span class="hi-exam">provides NO additional ECCS flow</span> because <span class="hi-exam">SI pump shutoff head is <span class="val-trip">1520 psid</span></span> (with suction from 41 ft of RWST level, RCS pressure exceeds the pump's shutoff capability). Total ECCS flow remains at 400 gpm. <span class="hi-trap">Trap: 800 gpm corresponds to SI pump flow at 1082 psid; 1000 gpm assumes ~full SI pump flow could be added — SI pumps deliver no flow above their 1520 psid shutoff head.</span>
+</div>
+
 ### Residual Heat Removal Pumps (Low Head — Cold Leg Injection)
 
 | Parameter | Value | Source |
@@ -194,8 +199,18 @@ At <span class="hi-exam">RWST level < 15.2 ft on 2/4 channels</span>, Unit 2 sem
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q10</div>
+<span class="hi-exam">21 and 22CC16 (RHR HX CCW isolation valves) do NOT receive an automatic OPEN signal on SI</span>. They open only when the <span class="hi-exam">ARM PB is depressed AND RWST level reaches 15.2 ft</span> — manual alignment is required to place ECCS in cold leg recirc. Until then, the <span class="hi-exam">RHR pumps are cooled by either flow through the pump from RWST (LBLOCA) or recirc flow (SBLOCA until pp is S/D)</span> — not by CCW through the RHR HX. <span class="hi-trap">Trap: candidates may assume CC16s open automatically with SI for "long-term cooling" — they do not.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q4</div>
 RWST Level LO alarm triggers the start of cold leg recirculation transfer (IAW EOP-LOCA-1). <span class="hi-exam">21SJ44 and 22SJ44 (Containment Sump Suction Valves) each serve one RHR pump independently</span>. With 21SJ44 closed, <span class="hi-exam">ONLY 22 RHR pump</span> can draw suction from the containment sump. <span class="hi-trap">Trap: unlike some other ECCS suction arrangements (e.g., SJ1/SJ2 for CCPs where both can take suction from RWST if one fails), the containment sump suction valves are NOT cross-connected — each SJ44 serves only its associated RHR pump.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q33</div>
+EOP-LOCA-3 Cold Leg Recirculation alignment with <span class="hi-exam">21SJ44 failed to open</span>: the procedure directs <span class="hi-exam">stopping 21 RHR pump</span>, and it remains stopped as long as 21SJ44 is shut (step 5.2). <span class="hi-exam">21SJ45 is interlocked with 21SJ44 such that it cannot be opened with 21SJ44 shut</span>. The 21CS36 interlock is with RH1 and RH2 (must be SHUT before CS36 can be OPENED). Final lineup: ALL containment sump recirculation flow through <span class="hi-exam">22SJ45 (to Charging/SI pump suctions) and 22CS36 (to spray headers)</span>. <span class="hi-trap">Trap: under ALL circumstances, when 22 RHR pump is running at RWST lo-lo level alarm, 22SJ49 (cold leg isolation) is shut — recirc flow does NOT go through 22SJ49.</span>
 </div>
 
 ### Changeover to Recirculation Phase
@@ -288,16 +303,56 @@ EOP-TRIP-6 Step 12 — Isolate SI Accumulators: with RCS pressure &lt;1000 psig,
 EOP-LOCA-5 Figure A — Minimum ECCS Flow Versus Time After Trip: at <span class="hi-exam">50 minutes</span> post-trip, minimum flow = <span class="hi-exam">390 gpm</span>. With 21 SI pump at 420 gpm and 22 Charging pump at 360 gpm: <span class="hi-exam">stop 22 Charging pump</span> (360 &lt; 390, cannot meet minimum alone), <span class="hi-exam">keep 21 SI pump</span> (420 &gt; 390, exceeds minimum alone). Contrast 2023 SRO-A1.a at 100 min (290 gpm minimum) where neither pump could be stopped.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q19</div>
+SI pump bus mapping: <span class="hi-exam">11/12 SI pumps are powered from 1A/1C 4KV Vital Buses</span> (corresponding 22 SI = 2C bus on Unit 2 — see [[ECCS]] 2019 Q12 callout). On a LOOP with NO SI signal, the SECs strip the 4KV vital bus breakers BEFORE sequencing on BLACKOUT loads, so <span class="hi-exam">neither SI pump runs</span> — including any SI pump previously running for IST (it trips with the bus strip and is not auto-restarted). SI pumps only restart in SEC Mode III (accident signal coupled with Blackout). <span class="hi-trap">Common trap: assuming a running pump's breaker remains shut through a LOOP/bus strip — it does not.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #2</div>
 LBLOCA with both trains of auto SI failing. One SI keyswitch also fails to manually actuate — RO uses other train keyswitch to initiate SI on both trains <span class="hi-exam">(CT#1: CT-2)</span>. After SI, containment pressure >15 psig — Phase B and Spray auto-initiated. Cold leg recirculation transfer (CT#2: CT-36): at RWST lo level alarm (15.2 feet), crew performs EOP-LOCA-3. Time-critical steps: close <span class="hi-exam">2SJ69 within ~3.7 min</span>, stop 22 CS pump within ~5.5 min, complete recirc alignment (Step 15: close 2SJ67/2SJ68, open 21SJ45/22SJ45, close 2SJ30/2SJ1/2SJ2, place 21RH29/22RH29 in manual/closed) within <span class="hi-exam">~11.2 min</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q82</div>
+EOP-LOCA-2 Step 19.1 RNO (RCS subcooling NOT &gt;0&deg;F): the crew <span class="hi-exam">starts ECCS pumps as necessary to restore RCS subcooling, and opens BIT isolation valves if previously shut</span>. Initial SI actuation operates all required ECCS components automatically; subsequent ECCS pump operation is limited to <span class="hi-exam">specific required components</span> (not a full re-initiate-SI). <span class="hi-trap">Trap: an "Initiate SI" action is incorrect once the initial SI actuation has occurred — only the specific pumps and BIT alignment are operated to restore subcooling.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q83</div>
+EOP-FRTS-1 Step 12 ECCS pump reduction (PURPLE path, MSLB with multiple faulted SGs, ECCS contributing to overcooling): <span class="hi-exam">stop all ECCS pumps except 21 or 22 charging pump</span>. Companion AFW action (Step 3.5) maintains AFW flow &gt;22E4 lbm/hr until at least ONE intact SG NR level is &gt;15%.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q87</div>
+SI Accumulator isolation in EOP-LOCA-2 (post-LOCA cooldown with no subcooling, charging through BIT): per <span class="hi-exam">Step 35.3, Accumulators are isolated when RCS T-Hots &lt;<span class="val-trip">375&deg;F</span></span>; otherwise the step is bypassed. <span class="hi-trap">A separate &quot;&lt;1000 psig&quot; isolation criterion exists, but only after IOP-6 entry is initiated later in LOCA-2 (Step 42) — &lt;1000 psig alone is NOT the LOCA-2 step 35 isolation criterion. PZR-level-based and SI-not-terminated criteria are not used.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+APPX-7 ECCS pump-stopping order: <span class="hi-exam">downstream Charging and SI pumps must be stopped BEFORE the upstream RHR pump that supplies their suction</span>. Stopping RHR pumps with cavitating downstream ECCS pumps still drawing from RHR discharge is failure criteria. Final recirculation alignment after sump blockage clears: ONE RHR pump + ONE Charging or SI pump (single-pump per side) drawing from containment sump via 21/22 SJ44.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-c</div>
+EOP-TRIP-6 Step 12 SI Accumulator isolation at RCS pressure &lt;1000 psig: remove lockout from 21-24 SJ54 (Accumulator Outlet Valves) at 2RP4, depress CLOSE PB on 21-24 SJ54. Alternate path: <span class="hi-exam">24 SJ54 fails to close (CLOSE PB OFF override). Vent 24 Accumulator to atmospheric pressure via 2NT35 (N2 HDR VALVE) and 24 SJ93 (N2 SUPPLY VALVE)</span> after verifying RCS pressure &gt; accumulator nitrogen pressure. Close vent valves when 24 Accumulator pressure reaches zero.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+EOP-FRHS-1 bleed-and-feed at Step 21 (entered from Step 4 when WR levels in at least two SGs are &lt;32% / 37% adverse). Step 21 caution: <span class="hi-exam">Steps 24 thru 29 must be performed quickly and without interruption</span>. Step 22 INITIATE SI: Safeguards key actuates Table B (2SJ4/5, 2SJ12/13 OPEN BIT inlet/outlet; 2CV68/69 CLOSED Charging Discharge; 21-24 SJ54 OPEN; 2SJ1/2 OPEN; 2CV40/41 CLOSED) and Table C (2SJ30, 21/22 SJ33, 2SJ135, 21/22 SJ134) for the SI pumps. Verify <span class="hi-exam">21 OR 22 Charging Pump running with BIT flow established</span>, ANY SI pump running with Table C valves open. <span class="hi-exam">Step 24 alternate path: 2PR2 PORV fails to open in MANUAL → open 2RC40 thru 2RC43 (Reactor Head Vents)</span> using four key-locked switches on 2RP3 backpanel as alternate bleed path.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #1</div>
+After manual SI for 150 gpm SBLOCA, EOP-TRIP-1 Step 12 safeguard valve verification reveals <span class="hi-exam">2SJ12 and 2SJ13 (BIT isolation valves) failed to auto-open</span> on the SI signal — high-head ECCS injection has NOT been established. Crew recovery (CT#2 — CT-6): <span class="hi-exam">RO manually opens 2SJ12 and 2SJ13 to establish BIT flow before transitioning out of TRIP-1</span>. Acceptance: charging flow &ge;100 gpm on SI systems charging flow meter. Failure to manually start at least one charging/SI (high-head) pump under these conditions constitutes a violation of facility license condition per the ESG critical task basis.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
-- Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
-- Related exam questions: [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
-- Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
-- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
+- Related exam questions: [[2016 Q4]], [[2016 Q5]], [[2016 Q10]], [[2016 Q19]], [[2016 Q21]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q26]], [[2016 Q29]], [[2016 Q32]], [[2016 Q33]], [[2016 Q36]], [[2016 Q39]], [[2016 Q73]], [[2016 Q79]], [[2016 Q82]], [[2016 Q83]], [[2016 Q84]], [[2016 Q87]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
+- Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]], [[2016 JPM Sim-c]], [[2016 JPM Sim-d]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

@@ -49,10 +49,17 @@ Fuel Transfer Cart interlocks: two conditions must be met for cart movement — 
 Canal gate valve mechanical interlock: the valve can ONLY be <span class="hi-exam">FULLY closed when the fuel transfer cart is inside containment</span>. Per AB.FUEL-0001, the canal gate valve will be closed during any fuel handling incident. <span class="hi-trap">The interlock requires the cart to be inside containment — not in the Fuel Handling Building — for the valve to fully close.</span>
 </div>
 
+## Conditions Requiring Suspension of Fuel Movement
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q68</div>
+Per SO.CAV P&L 3.6.3 and TS Bases 3/4.7.6: <span class="hi-exam">when CAV is aligned to FIRE OUTSIDE CONTROL AREA (Recirculation Mode), Core Alterations and movement of irradiated fuel are NOT permitted</span> — pressing the Fire Outside Control Room (FOCR) pushbutton on Unit 2 CAV requires immediate suspension of fuel movement. <span class="hi-trap">Conditions that do NOT require suspension: (1) Rx Cavity boron of <span class="val-normal">2499 ppm</span> is OK because the COLR limit is <span class="hi-exam">2139 ppm</span>; (2) BOTH 100' elevation containment airlock doors open is OK — they are only required to be CAPABLE of being shut (S2.OP-ST.CAN-0007 p8); (3) Containment Radiation Monitor 2R12A failure causing CVI is OK because Containment Radiation monitors are NOT required to be operable for Mode 6 / Fuel Movement / Core Alts per Tech Specs.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[FHV]], [[Radiation Monitoring]]
-- Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.FUEL-0002 — Loss of Refueling Cavity or SFP Level]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related exam questions: [[2018 Q34]], [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.FUEL-0002 — Loss of Refueling Cavity or SFP Level]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]], [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]]
+- Related tech specs: [[TS 3/4.9 — Refueling Operations]], [[TS 3/4.7 — Plant Systems]]
+- Related exam questions: [[2016 Q68]], [[2016 Q88]], [[2018 Q34]], [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

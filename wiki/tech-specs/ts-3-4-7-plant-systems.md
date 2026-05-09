@@ -278,6 +278,11 @@ At least <span class="hi">two independent service water loops</span> shall be OP
 SW loop OPERABILITY requires <span class="hi-exam">two SW pumps powered from separate buses</span>. Per S2.OP-SO.SW-0005 P&L 3.2: when a SW Bay is removed from service in Modes 1-4 and the "B" bus SW pump in the operable bay is unavailable, <span class="hi-exam">LCO 3.0.3 applies (not 3.7.4)</span>. With #2 Bay isolated (leak) AND 24 SWP C/Ted, both loops are inoperable. <span class="hi-trap">TS 3.7.4 only applies with one loop inoperable (72 hrs). When both loops are inoperable, no specific action exists in 3.7.4, so LCO 3.0.3 (default shutdown action) applies.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+TSAS 3.7.4 entry context: with 4 SW Bay isolated (leak on 25SW3), the unit is shut down in compliance with TSAS 3.7.4. <span class="hi-exam">SW pump bus alignment: 21/22/23 SW pumps are on AA/BB/CC vital buses; 24/25/26 SW pumps are unavailable when 4 SW Bay is isolated.</span> A 2A 4KV Vital Bus Differential <span class="hi-exam">opens the EDG output breaker AND prevents station-power infeed reclosure</span>, eliminating the only remaining SW power source — total loss of all SW results.
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.4 Service Water</summary>
 <div class="callout callout-bases">
@@ -378,6 +383,11 @@ The CRE boundary may be opened intermittently under administrative controls (doo
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q68</div>
+TS Bases 3/4.7.6 (and S2.OP-SO.CAV-0001 P&L 3.6.3): when CAV is aligned to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, <span class="hi-exam">Core Alterations and movement of irradiated fuel are NOT permitted</span>. Pressing the Fire Outside Control Room pushbutton during fuel movement requires immediate suspension of fuel movement.
+</div>
+
 ---
 
 ## 3/4.7.7 — Auxiliary Building Ventilation System
@@ -465,9 +475,15 @@ The program for examination, testing, and service life monitoring is performed i
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-7-1.pdf" target="_blank">View TS PDF (Turbine Cycle)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-3.pdf" target="_blank">View TS PDF (CCW)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-4.pdf" target="_blank">View TS PDF (SW)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-7.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+21 SG tube leak escalating to rupture. After 21MS45 is shut to isolate the 21 SG steam supply path to 23 AFW pump, CRS enters <span class="hi-exam">LCO 3.7.1.2</span> for less than 3 operable AFW pumps (23 AFW pump rendered inoperable by loss of steam supply).
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
-- Related exam questions: [[2019 Q42]]
+- Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]]
 - Related JPMs: [[2020 JPM SRO-A3]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]]

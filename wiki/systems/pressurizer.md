@@ -87,6 +87,11 @@ PRT has a <span class="hi-exam">rupture disc (NOT a relief valve)</span> rated a
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q34</div>
+Confirms PRT vent valve interlock setpoints: <span class="hi-exam">2PR15 (PRT Vent Valve) is interlocked to receive a SHUT signal at <span class="val-alarm">10 psig</span> in PRT</span>. The <span class="hi-exam">PRT Rupture Diaphragm actuates at <span class="val-trip">100 psig</span></span> in the PRT. <span class="hi-trap">Trap: 100 psig is the rupture diaphragm setpoint, NOT the 2PR15 interlock setpoint. 2PR15 receives a SHUT (not OPEN) signal at 10 psig.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q32</div>
 PRT drain path per S2.OP-SO.PZR-0003: open <span class="hi-exam">2PR14 to drain PRT to RCDT</span>, which automatically opens 2WL12 and starts the RCDT pump (defeats low level cutoff). RCDT pump discharge destinations: <span class="hi-exam">RWST, CVCS Hold-Up Tanks, or Waste Hold-Up Tanks</span>. PRT does NOT gravity drain — the RCDT pump is required.
 </div>
@@ -99,6 +104,11 @@ PZR vapor space leak (SBLOCA): at RCS pressure <span class="hi-exam">1450 psig</
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q2</div>
 PORV discharge temperature is determined by a <span class="hi-exam">constant enthalpy (throttling) process</span> from RCS pressure to PRT pressure (Mollier Diagram). Key relationships: <span class="hi-exam">lowering PRT pressure → lower discharge temperature; raising PRT pressure → higher discharge temperature</span>. Changes in RCS pressure or PORV leak rate do NOT directly lower the indicated discharge temperature. A leaking PRT rupture disk lowers PRT pressure, thereby lowering discharge temperature.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q11</div>
+PZR PORV and Safety discharge piping (drawing 203301): both PZR PORVs and the 3 PZR Safeties discharge into a <span class="hi-exam">single combined line going to the PRT</span>. Tailpipe temperature monitoring: <span class="hi-exam">each Safety has its own individual temperature sensor</span>, but the <span class="hi-exam">2 PORVs share ONE sensor on the common discharge line</span> — so PORV-to-PORV identification cannot be made from temperature alone. AB.PZR-0001 diagnostic method when both PORV Stops are closed and one PORV Stop (<span class="hi-exam">2PR8</span>) is re-opened: rising tailpipe temperature identifies the leaking PORV.
 </div>
 
 <div class="callout callout-exam">
@@ -153,12 +163,37 @@ PZR pressure channel 1 fails high causing both spray valves to open fully and ra
 During startup at 3% power, controlling PZR Pressure Channel I fails high — de-energizes PZR heaters and <span class="hi-exam">fully opens both spray valves</span>. RO places Master Pressure Controller (MPC) in manual, lowers demand to close spray valves, selects <span class="hi-exam">Channel III</span> for control. RO closes <span class="hi-exam">2PR6</span> and places 2PR1 in Manual, WCC removes control power from 2PR6. Channel removed from service IAW S2.OP-SO.RPS-0003. Tech Specs entered: 3.3.1.1 Action 6, 3.3.2.1.b Action 19, <span class="hi-exam">3.4.5 Action b (1 hr LCO)</span>, 3.2.5 DNB (2 hr LCO).
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+EOP-SGTR-1 RCS depressurization path. Initially RO uses normal PZR spray (both <span class="hi-exam">2PS1 and 2PS2 spray valves</span> full open) to lower RCS pressure. <span class="hi-exam">23 RCP trip</span> mid-depressurization causes spray to lose effectiveness — RO shuts both PZR Spray valves and reviews depressurization criteria. Crew uses PZR PORVs: <span class="hi-exam">2PR1 fails to position 0-100% (will not open)</span>; RO opens <span class="hi-exam">2PR2</span> instead. After depressurization complete <span class="hi-exam">2PR2 fails to shut</span>; CRS directs closure of 2PR7 PZR PORV Block Valve, which fails 90% open (open limit extinguishes but closed limit does not illuminate). Loss of RCS inventory through stuck-open PORV path drives transition to EOP-SGTR-3, SGTR with LOCA — Subcooled Recovery.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-7</div>
+<span class="hi-exam">2PR2 PZR PORV develops a leak (~30 gpm)</span> during a power ascension. Crew identifies via lowering PZR pressure / rising PORV tailpipe temp / rising charging flow / lower spray valve demand / PRT indications. Diagnostic isolation: close <span class="hi-exam">both PORV stop valves (2PR6 and 2PR7)</span>, then open 2PR6 (tailpipe temps still lowering) → open 2PR7 (tailpipe temps rising) → confirms 2PR2 leaking. Close 2PR7 to isolate. CRS enters TSAS 3.4.5 action a (1-hour LCO).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-8</div>
+RCS depressurization in EOP-SGTR-1 — 21 RCP electrical trip during PZR spray attempt eliminates spray flow path; crew shuts both spray valves and uses <span class="hi-exam">2PR2 PZR PORV</span> to depressurize RCS toward Table E termination criteria (2PR6 was shut with power removed pre-scenario after a 2PR1 control circuit problem). When termination criteria met, <span class="hi-exam">2PR2 fails to close after demand</span> — RO closes the PORV Block valve, RCS pressure rising. (Note: do NOT restore power to 2PR6 — breaker went trip free when shut.)
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+FRHS-1 Step 24 RCS bleed path: <span class="hi-exam">OPEN BOTH PZR PORV STOP VALVES (2PR6, 2PR7), then OPEN BOTH PZR PORVs (2PR1, 2PR2) in Manual</span>. Alternate path: 2PR2 fails to open in Manual → open <span class="hi-exam">2RC40 thru 2RC43 (Reactor Head Vents)</span> at 2RP3 backpanel using four key-locked switches. Reactor Head Vents are NOT part of the standard FRHS-1 bleed path — they are an authorized alternate when one PORV fails to open.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-f</div>
+PRT level adjust at 100% power with <span class="hi-exam">2PR1 leaking, 2PR6 shut with power applied, PRT level at 56.2%, PRT pressure 9.8 psig</span>. Per S2.OP-SO.PZR-0003 §5.1: start primary water pump (21 or 22), open 2WR80 (CONT PRI WATER STOP) and 2WR82 (PRT WATER SUPPLY) to fill, and operate 2PR15 (VENT) as needed to keep PRT pressure <span class="hi-exam">&gt;3 psig and ≤10 psig</span> while raising level. <span class="hi-trap">PRT Hi Pressure alarm locks out 2PR15 — pressure cannot be reduced via vent path once that alarm comes in. The 3 psig lower bound preserves a positive nitrogen overpressure to prevent oxygen ingress.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[S2.OP-SO.PZR-0003 — PRT Operation]], [[S2.OP-SO.RC-0002 — Vacuum Refill of the RCS]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
-- Related JPMs: [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]]
-- Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2016 Q11]], [[2016 Q21]], [[2016 Q23]], [[2016 Q34]], [[2016 Q36]], [[2016 Q82]], [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
+- Related JPMs: [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]], [[2016 JPM Sim-d]], [[2016 JPM Sim-f]], [[2016 JPM IP-i]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related exam: [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

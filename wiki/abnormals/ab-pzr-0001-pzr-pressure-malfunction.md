@@ -50,15 +50,40 @@ PZR Pressure Channel I fails high at 4% power (Event 2). RO places MPC in Manual
 2PR2 PORV leaks at 88% power (Event 1). Crew recognizes from elevated PORV tailpipe temperatures. Isolates by opening both block valves sequentially: 2PR6 tailpipe temps stable, 2PR7 tailpipe temps rising → <span class="hi-exam">close 2PR7 to isolate 2PR2</span>. CRS enters TSAS <span class="hi-exam">3.4.5 Action a (1 hour LCO)</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q11</div>
+With lowering PZR pressure, AB.PZR-0001 directs closing <span class="hi-exam">BOTH PZR PORV Stop valves</span> when attempting to determine if the PORVs are the source of the pressure reduction. Per drawing 203301, both PZR PORVs and Safeties discharge into a single line going to the PRT. The <span class="hi-exam">3 Safeties each have their own individual tailpipe temperature sensor, while the 2 PORVs share one sensor on a common discharge line</span> — so there is no way to distinguish which PORV is leaking from temperature alone. Closing both PORV Stops, then re-opening one (<span class="hi-exam">2PR8</span>), allows the leaking valve to be identified by tailpipe temperature response. <span class="hi-trap">Trap: Rx Head Vent leakage is NOT addressed in AB.PZR-0001 — head vent leaks are diagnosed as RCS leaks, not via the PORV/Safety discharge logic.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #1</div>
 PZR Pressure Channel I fails high during startup at ~6% power. Both spray valves fully open, PZR heaters de-energize. RO places MPC in manual, lowers demand to close spray valves. Selects <span class="hi-exam">Channel III</span> for control, returns MPC to Auto. Closes <span class="hi-exam">2PR6</span>, places 2PR1 in Manual. WCC removes control power from 2PR6. PO removes failed channel IAW <span class="hi-exam">S2.OP-SO.RPS-0003</span>. Tech Specs: 3.3.1.1 Action 6, 3.3.2.1.b Action 19, <span class="hi-exam">3.4.5 Action b (1 hr LCO)</span>, 3.2.5 DNB (2 hr LCO).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q17</div>
+After a 21 SGFP trip at 100% MOL (no operator action, no Rx trip), an UNEXPECTED RC PRESS DEVIATION hi Console Alarm directs entry into AB.PZR-0001. The <span class="hi-exam">RC PRESS DEVIATION setpoint is +75 psig deviation</span> — this corresponds to when the spray valves are full open. After the initial insurge from the load rejection and the subsequent large amount of inward rod motion, <span class="hi-exam">spray valves should be shut</span>; if pressure deviation persists, the condition is unexpected and AB.PZR-0001 is entered.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q36</div>
+2PS1 PZR Spray Valve fails open at 4% power during a startup hold (cannot be shut). With NO operator action, RCS pressure decreases. Below P-10 the <span class="hi-exam">Low PZR Pressure reactor trip is BLOCKED</span> — the FIRST automatic protective action is <span class="hi-exam">SI on Low PZR Pressure</span>. Low PZR Pressure SI is reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span> (P-11). PZR level does not rise to the high-level Rx trip setpoint (the leak path depressurizes through the spray line). OT/DT trip would not initiate at 4% power.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-7</div>
+2PR2 PZR PORV develops a leak (~30 gpm) during a 76%→89% power ascension. Crew identifies the leak from <span class="hi-exam">lowering PZR pressure / rising PORV tailpipe temp / rising charging flow / lower spray valve demand / PRT indications</span>. Diagnostic isolation: RO closes <span class="hi-exam">both PORV stop valves (2PR6 and 2PR7)</span>, then opens 2PR6 (tailpipe temps still lowering), then opens 2PR7 (tailpipe temps rising) — confirms <span class="hi-exam">2PR2 leaking</span>. RO closes 2PR7 to isolate. CRS enters <span class="hi-exam">TSAS 3.4.5 action a</span> (1-hour LCO).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+PZR Pressure Channel I (PT-455) fails HIGH during a 2% power ascension. PZR heaters de-energize, both PZR Spray valves drive fully open. RO places Master Pressure Controller in manual and lowers demand to close sprays. Selects <span class="hi-exam">Channel III</span> for control, matches MPC demand to current pressure, returns MPC to AUTO. Shuts <span class="hi-exam">2PR6</span> and dispatches WCC to remove power from 2PR6 within <span class="hi-exam">one hour of the channel failure IAW Tech Specs</span>. PO removes failed channel from service IAW <span class="hi-exam">S2.OP-SO.RPS-0003</span>. CRS enters TSAS <span class="hi-exam">3.3.1.1 Action 6, 3.3.2.1.b Action 19*, 3.4.5.b, and 3.2.5</span>.
+</div>
+
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[RPS/SSPS]]
-- Related exam questions: [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
+- Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[RPS/SSPS]], [[ECCS]]
+- Related exam questions: [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
 - Related JPMs: [[2020 JPM Sim-a]]
-- Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2017 Scenario 7]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

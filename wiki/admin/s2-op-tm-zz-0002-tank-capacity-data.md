@@ -5,6 +5,7 @@ status: draft
 aliases:
   - S2.OP-TM.ZZ-0002
   - tank capacity data
+  - Tanks Curve RWST
 ---
 
 # S2.OP-TM.ZZ-0002 — Tank Capacity Data
@@ -25,8 +26,15 @@ BAST tank level curve (page 6 of 34) converts between percent level and gallons.
 BAST tank level curve (page 6 of 34): <span class="hi-exam">70% = 5500 gal, 43% = 3400 gal</span>. After rapid boration of 2100 gal per tank (4200 total / 2 BASTs): start 70% (5500 gal) minus 2100 gal = 3400 gal = 43% (+/-2%). The +/-2% acceptance band accounts for readability error of +/-1% on each percent-to-gallons and gallons-to-percent conversion.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q26</div>
+RWST tanks curve — used with EOP-LOCA-5 Step 9 / Table C to convert elapsed time after the RWST Lo Level alarm into RWST level. Example: LBLOCA on Unit 2 with 2C 4KV vital bus deenergized — RWST drains at <span class="hi-exam">~13000 gpm</span> (2 RHR, 1 charging, 1 SI, 1 CS pump running). From <span class="hi-exam">RWST level 15.2 ft</span> at the Lo alarm, it takes <span class="hi-exam">over 9 minutes</span> to deplete to <span class="hi-exam">below 1 ft</span>. At 7 minutes after the Lo alarm, RWST level remains between 1 and 15.2 ft → Table C with <span class="hi-exam">18 psig containment, only 21/23/25 CFCUs running (3 CFCUs), and RWST 1–15.2 ft</span> indicates ONE CS pump required.
+</div>
+
 ## Connections
 
-- Related systems: [[CVCS]]
+- Related systems: [[CVCS]], [[Containment Spray]], [[ECCS]], [[CFCUs]]
+- Related EOPs: [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
-- Related exam: [[2022 NRC Operating Exam]]
+- Related exam questions: [[2016 Q26]]
+- Related exam: [[2016 NRC Written Exam]], [[2022 NRC Operating Exam]]

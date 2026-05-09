@@ -30,6 +30,11 @@ The steam dump system dumps steam directly to the main condenser to prevent a re
 Steam dump controller selection depends on which Reactor Trip Breaker opens: <span class="hi-exam">Plant Trip Controller activates when Reactor Trip Train B Breaker opens</span>. <span class="hi-exam">Load Rejection Controller activates when ONLY Reactor Trip Train A Breaker opens</span> (or neither breaker opens). The <span class="hi-exam">Load Rejection Controller has a 4&deg;F dead band</span> — it will stabilize RCS T<sub>AVG</sub> at <span class="hi-exam"><span class="val-normal">551&deg;F</span> (547&deg;F no-load T<sub>AVG</sub> + 4&deg;F dead band)</span>. The <span class="hi-exam">Plant Trip Controller has NO dead band</span> and will restore T<sub>AVG</sub> to <span class="val-normal">547&deg;F</span> (no-load T<sub>AVG</sub>). <span class="hi-trap">Trap: confusing which controller has the dead band (Load Rejection, not Plant Trip) and which trip breaker activates each controller (Train B = Plant Trip, Train A only = Load Rejection).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q50</div>
+Main Generator trip at <span class="hi-exam">46% power (below P-9 ≈ 49%)</span>: causes a Main Turbine trip but <span class="hi-exam">NO reactor trip</span> (turbine-trip / Rx-trip is blocked below P-9). With no operator action, control rods insert in AUTO to lower Tave; steam dumps open in <span class="hi-exam">Average Temperature Control / Load Reject Control Mode</span>. With the MT tripped, the <span class="hi-exam">Tref signal (derived from Main Turbine Steamline inlet pressure) is set to 552°F</span> (the Load Reject Tref with a <span class="hi-exam">5°F dead band</span> over no-load Tref of <span class="val-normal">547°F</span>) — Tave stabilizes at ~<span class="hi-exam"><span class="val-normal">552°F</span></span> while dumps modulate to maintain Tave ≤5°F above 547°F. <span class="hi-exam">Rod Control T-error stops at &lt;1.0°F from program (547-548°F) since the rod program signal is also based on Turbine Steamline inlet pressure (now zero)</span>. <span class="hi-trap">~547°F is the Plant Trip Controller stabilization point — NOT applicable here because no reactor trip occurred. Reactor trip / TRIP-1 / TRIP-2 / TRIP-3 transitions are not entered.</span>
+</div>
+
 ## Power Supplies and Failure Modes
 
 <div class="callout callout-exam">
@@ -67,11 +72,16 @@ EOP-FRHS-1 condensate pump feed: isolate all MS lines EXCEPT the selected SG (22
 BYPASS TAVG pushbuttons for post-LOCA cooldown: Train A and Train B BYPASS TAVG blocking solenoids are in <span class="hi-exam">SERIES</span> — <span class="hi-exam">BOTH A AND B must be depressed</span> to allow condenser steam dumps to function when TAVG &lt; <span class="val-trip">543 &deg;F</span>. Per EOP-LOCA-2 Step 11, cooldown rate limit is <span class="hi-exam">100 &deg;F/HR</span> (vs 50 &deg;F/HR for normal IOPs). <span class="hi-trap">Trap: the arming/disarming solenoids for individual TB40 valves are also in series (A OR B can disarm a single valve per Q19 Q40), but the BYPASS TAVG function requires BOTH trains — both bezel pushbuttons must be depressed.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q52</div>
+P-12 vs FW Interlock — what prevents over-cooling on an uncomplicated Rx trip from 100% power: <span class="hi-exam">P-12 is 3/4 RCS Tavgs &lt;<span class="val-alarm">543°F</span> and shuts the Steam Dump valves</span>. On an uncomplicated Rx trip, <span class="hi-exam">steam dumps modulate to control Tavg at ~547°F</span>, so RCS Tavg does NOT reach 543°F and P-12 does NOT actuate. The actual over-cooling protection comes from the <span class="hi-exam">Feedwater Interlock (3/4 Tavgs &lt;554°F + reactor trip)</span>, which closes the BF19s and BF40 Feed Reg Valves to terminate feedwater.
+</div>
+
 ## Connections
 
-- Related systems: [[Main Steam]], [[RCS]], [[115V AC]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2018 Q35]], [[2018 Q70]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
+- Related systems: [[Main Steam]], [[RCS]], [[115V AC]], [[Feed & Condensate]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-2 — Reactor Trip Response]]
+- Related exam questions: [[2016 Q50]], [[2016 Q52]], [[2018 Q35]], [[2018 Q70]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
 - Related JPMs: [[2023 JPM Sim-e]]
-- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

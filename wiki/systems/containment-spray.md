@@ -146,10 +146,35 @@ Emergency classification with degraded containment cooling: Containment pressure
 Both CS pumps start on Phase B actuation (containment pressure >15 psig) during LBLOCA. During EOP-LOCA-3 cold leg recirculation transfer, <span class="hi-exam">stop 22 CS pump within ~5.5 minutes</span> of RWST lo level alarm (CT#2 Part 2). Only one CS pump remains running during recirculation alignment.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q43</div>
+After SEC reset following a LOCA, a subsequent Hi-Hi containment pressure signal: <span class="hi-exam">CS valves realign for spray (valve realignment is via the CS signal, not the SEC)</span>, but <span class="hi-exam">CS pumps will NOT auto-start — they must be manually started</span>. The SEC ONLY controls the CS pumps, not the CS valves; once the SEC is reset, the sequencer is no longer active and cannot restart the CS pumps. <span class="hi-trap">Trap: thinking the CS pumps would still auto-start, OR that the valves would not realign — neither is correct after SEC reset.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q44</div>
+<span class="hi-exam">Containment Spray actuation relays have retentive memory</span> — relays can be manually reset with an actuation signal still present. Even with containment pressure above the <span class="val-trip">15 psig</span> CS actuation setpoint, depressing both Reset Spray Actuation pushbuttons resets the actuation signal, and <span class="hi-exam">the signal does NOT reinitiate after the pushbuttons are released</span>. <span class="hi-exam">CS pumps and CS valves (CS2, CS14, CS16, CS17) do NOT reposition to their normal positions on reset</span> — CS14 is normally open with power removed; the remaining CS valves are normally shut and open on the CS signal, and <span class="hi-exam">cannot be closed until the spray actuation signal is reset</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q33</div>
+21CS36 (RHR Supply to CS Valve) interlock: <span class="hi-exam">21CS36 cannot be OPENED until 21RH1 and 21RH2 (RHR Suction Isolation Valves) are SHUT</span>. During EOP-LOCA-3 with 21SJ44 failed to open and 21 RHR pump stopped, CS header flow is <span class="hi-exam">supplied via 22CS36 from the running 22 RHR pump</span> at step 22 — the 21SJ44 failure does NOT eliminate CS header flow.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+APPX-7 secures CS flow path: <span class="hi-exam">stop ALL Containment Spray pumps (Step 3.a)</span> and verify 21CS36 AND 22CS36 CLOSED. CS interlock with RHR (21/22 CS36 closed before stopping affected RHR pump) prevents reverse-flow from the CS header back into RHR suction during cavitation recovery.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+<span class="hi-exam">CT#1 (CT-3): manually start at least one CS pump before a red-path challenge develops on the containment CSF.</span> A 21 SG steam leak in containment with all four MSIVs failed shut drives containment pressure above 15 psig (Phase B / hi-hi); however, both Containment Spray pumps fail to auto-start (RP318L1 and RP318L2 — 21 and 22 CS pump fail-to-start on SEC). RO initiates Phase B and Spray actuation; reports neither CS pump has started. Crew recovery: <span class="hi-exam">RO blocks 2A and 2C SECs; PO resets 2A and 2C SECs; RO manually starts 21 and 22 CS pumps</span>. CS pumps are subsequently stopped in EOP-LOSC-2 step 22 (when containment pressure &lt;13 psig, RO resets Spray actuation, stops both CS pumps, shuts 21 and 22CS2 CS pump discharge valves).
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
-- Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
-- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
+- Related exam questions: [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2016 Q73]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
+- Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-b]]
+- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

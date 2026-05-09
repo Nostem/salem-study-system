@@ -36,6 +36,11 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 - Loss of 28V DC supply causes reactor trip breaker to open (fail-safe design)
 (UFSAR 8.3.2.1)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q56</div>
+Purpose of the 28 VDC Control Power System is to provide DC electrical power under normal, transient, and accident conditions to: <span class="hi-exam">(a) Switchgear, (b) Main Control Room Control Console Bezel controls, (c) Annunciators, (d) Vital Instrument Buses, (e) Non safety-related equipment, (f) Status panel RP4 in the main control room</span>. Loss of the 1A 28 VDC bus therefore <span class="hi-exam">de-energizes 1RP4 status panel — all indication on 1RP4 is lost</span>. <span class="hi-trap">Traps: 13 AFW pump auto-start on MS132 fail-open is a 125 VDC (not 28 VDC) control-power loss effect; OHA G-6 11 SGFP TRBL alarm panel functions are powered from 115 VAC; control room emergency lighting is supplied from 125 VDC — none are effects of losing the 28 VDC bus.</span>
+</div>
+
 ## Station Battery Capacity
 
 <div class="callout callout-exam">
@@ -129,6 +134,6 @@ Station Blackout 125VDC Load Shed per EOP-LOPA-1 Checkoff Sheet 3 (COS 3-1 thru 
 ## Connections
 
 - Related tech specs: [[TS 3/4.8 — Electrical]]
-- Related exam questions: [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
+- Related exam questions: [[2016 Q56]], [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
 - Related JPMs: [[2018 JPM IP-i]]
 - Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

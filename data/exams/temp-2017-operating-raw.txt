@@ -1,0 +1,1724 @@
+=== PAGE 1 ===
+TQ-AA-106-0204
+Page 1of47
+SIMULATOR
+EXAMINATION SCENARIO GUIDE
+SCENARIO TITLE: 15-01 NRC ESG-7
+SCENARIO NUMBER: 15-01 NRC ESG-7
+EFFECTIVE DATE: See Approval Dates
+EXPECTED DURATION: 60 minutes
+REVISION NUMBER: 01
+PROGRAM: ~-~j LO. REQUAL
+X I INITIAL LICENSE
+.___ _ __.I STA
+~-~I OTHER
+Revision Summary
+Rev 00, New ESG for 15-01 ILOT NRC exam
+Rev 01, 4-6-17. Modified 15-01 ILOT ESG-4 for 2017 NRC retake exam. Deleted
+malfunctions for loss of 2A 460V bus and BAT pumps. Added malfunctions for leaking
+PZR PORV and RC Loop RTD failure. Editorial changes made throughout scenario
+guide, including Attach 4 & 5.
+PREPARED BY: R. Chan 4-11-17
+Lead Regulatory Exam Author Date
+APPROVED BY: W. Muffle1'. 4-11-17
+Operations Training Manager Date
+APPROVED BY: M. Brummitt 4-11-17
+Facility Representative Date
+
+=== PAGE 2 ===
+TQ-AA-106-0204
+Page 2 of 47
+
+=== PAGE 3 ===
+TQ-AA-106-0204
+Page 3 of 47
+A. Given the unit at power with the generator synchronized to the grid, the crew will perform a
+power increase at 10%/hr IAW S2.0P-IO.ZZ-0004.
+B. Given the order or indications of a loss or malfunction of a reactor coolant RTD failure, perform
+actions as the nuclear control operator to RESPOND to the loss or malfunction in accordance
+with S2.0P-AB.ROD-0003.
+C. Given indications of a loss or malfunction of a Pressurizer PORV leaking, DIRECT the
+response to the loss or malfunction in accordance with S2.0P-AB.PZR-0001.
+D. Given a loss or reduction in main turbine lube oil, perform actions as the nuclear control
+operator to RESPOND to the loss or malfunctioning accordance with S2.0P-AB.TL-0001.
+E. Given a loss or reduction in main turbine lube oil, DIRECT the response to the loss or
+malfunctioning accordance with S2.0P-AB.TL-0001.
+F. Given the order or indications of a reactor trip, perform actions as the nuclear control operator
+to RESPOND to the reactor trip in accordance with 2-EOP-TRIP-1.
+G. Given indication of a reactor trip, DIRECT the response to the reactor trip in accordance with 2-
+EOP-TRIP-1.
+H. Given the order or indications of an anticipated transient without trip (ATWT), complete actions
+as the nuclear control operator to PERFORM the immediate response to the A TWT in
+accordance with the approved station procedures.
+I. Given indication of an anticipated transient without trip (ATWT), DIRECT the immediate
+response to the ATWT in accordance with the approved station procedures.
+
+=== PAGE 4 ===
+TQ-AA-106-0204
+Page 4 of 47
+1. Raise power
+2. PZR PORV 2PR2 Leaking
+3. 22 RC Loop RTD Fails High
+4. Loss of MTLO
+5. ATWT
+A. The crew will take the watch with the unit 76% power, EOL. Power had been reduced to 48%
+one week ago for repairs on 21 SGFP casing. Both SGFPs are in service and the unit is being
+returned to full power. A power ascension at 10%/hr is in progress and on hold for shift
+turnover. The crew is directed to raise power to 89% @10% I hr. Note: Terror will be -0.6°F
+high when crew assumes the watch.
+B. After assuming the watch, the crew will commence raising power at 10% I hr IAW 52.0P
+IO.ZZ-0004, Power Operation.
+C. After the power ascension has commenced, the 2PR2 PZR PORV will start leaking. Crew will
+recognize leaking PORV by lowering PZR pressure and raising temperature on the PORV
+tailpipe temperature indicator. The crew will take corrective actions IAW 52.0P-AB.PZR-0001,
+Pressurizer Pressure Malfunction, to identify and isolate the leaking PORV. The CRS will
+identify applicable LCO's.
+D. Following the PZR PORV leak, the 22 RC Loop RTD will fail high causing continuous rod
+motion in the inward direction. The crew will take corrective actions to place rods in manual to
+stop rod motion. The crew will enter 52.0P-AB.ROD-0003, Continuous Rod Motion, to identify
+and defeat the failed high RC loop Tavg channel and on direction from the CRS place rod
+control back to Auto.
+E. After rod control is placed in Auto, a MTLO leak occurs. The leak is contained within the guard
+piping, so no loss of oil inventory will occur. The crew will enter 52.0P-AB.TL-0001, Loss of
+Main Turbine Lube Oil, and determine a power reduction is directed by the procedure.
+F. The power reduction will be commenced with Rod Control in Auto or Manual. During the power
+reduction, Main Turbine bearing vibrations will rise, and the crew will be required to trip the Rx
+based on the turbine vibration problem with Rx power >P-9 ( 49% ).
+G. When the crew attempts to trip the Rx, an ATWT will occur. All attempts to trip the Rx from
+the control room fail. The crew will trip the Main Turbine and initiate rod insertion. The CRS
+enters 2-EOP-FRSM-1, Response to Nuclear Power Generation.
+H. Shortly after the turbine is tripped, the auto rod speed controller fails to 8 steps per minute. If
+rod insertion is occurring in auto, the RO will diagnose the failure and insert rods in manual. 23
+AFW pump fails to Auto start and 22 AFW pump Pressure Override circuit fails and cannot be
+bypassed (defeated). An inadvertent FW Isolation signal will also occur isolating all main
+feedwater and the loss of both SGFPs. With <44E4 lbm/hr AFW flow, the crew is required to
+start 23 AFW pump. (Critical Task #1 - Start AFW pumps to establish 44E4 lb/hr AFW
+flow)
+
+=== PAGE 5 ===
+TQ-AA-106-0204
+Page 5 of 47
+I. While in FRSM-1, the crew will initiate Rapid Boration using both available BAT pumps.
+(Critical Task #2 - Insert negative reactivity by rods or emergency boration)
+J. After Rapid Boration has been established, the Reactor Trip Breakers will be opened locally by
+the operator dispatched to do so. The crew will determine the reactor is shutdown, complete
+FRSM-1, and return to procedure in effect (2-EOP-TRIP-1)
+K. The scenario can be terminated after the completion of 2-EOP-FRSM-1 when the crew either
+continues in 2-EOP-TRIP-1 past Immediate Actions or the transition to 2-EOP-TRIP-2 is made.
+
+=== PAGE 6 ===
+TQ-AA-106-0204
+Page 6 of 47
+IC-232
+Initial j Description
+1 VC1 and VC4 CIT
+2 RCPs (SELF CHECK)
+_ 3 RTBs (SELF CHECK)
+_ 4 MS167s (SELF CHECK)
+_ 5 500 KV SWYD (SELF CHECK)
+_ 6 SGFP Trip (SELF CHECK)
+_ 7 23 CV PP (SELF CHECK)
+__ 8 52.0P-IO.ZZ-0004 open and marked up complete to Step 4.1.21
+g Complete Attachment 2 "Simulator Ready-for-Training/Examination Checklist."
+Note: Tables with blue headings may be populated by external program, do not change column name without consulting Simulator Support group
+
+=== PAGE 7 ===
+TQ-AA-106-0204
+Pa e 7 of 47
+______ , , ___
+EVENT ACTION: KCK23BT6 //TURBINE TRIP-TRIP
+1 COMMAND:
+PURPOSE: <update as needed>
+-- --------
+EVENT ACTION: KCK23BT6 //URBINE TRIP-TRIP
+2 COMMAND: DMF TU0083A
+PURPOSE: <update as needed>
+-- ------ ----
+EVENT ACTION: KCK23BT6 //URBINE TRIP-TRIP
+3 COMMAND: DMF TU0083B
+PURPOSE: <update as needed>
+SELF- Description Delay Initial Ramp Trigger Severity
+CHECK Time Value Time
+01 PR0018B PZR PORV 2PR2 DEVELOPS LEAK NIA NIA NIA RT-1 15000
+02 RC0014B 22 HOT LEG RTD AVG SUMMATOR FAILS NIA NIA WA RT-2 650
+03 TU0075 MAIN TURB LOSS OF LUBE OIL N/A NIA NIA RT-3 90
+04 TU0083A MN TURBINE HI VIBRATION -BRG # N/A 0 00:30:00 RT-3 12
+05 TU0083B MN TURBINE HI VIBRATION -BRG # N/A 0 00:30:00 RT-3 12
+06 RP0058 FAILURE OF AUTOMATIC RX TRIP N/A N/A N/A NIA
+07 RP0059A FAILURE OF MANUAL RX TRIP NIA NIA NIA NIA
+08 RP0059B FAILURE OF MANUAL SI/RX TRIP NIA NIA NIA N/A
+09 RP0060A FAILURE OF TRAIN "A" RX TRIP BREAKER NIA N/A NIA N/A
+TO TRIP
+RP0060B FAILURE OF TRAIN "B" RX TRIP BREAKER
+10 N/A N/A NIA NIA
+TO TRIP
+11 RD0061 ROD SPEED CONTROL PROGRAM FAILS N/A 0 00:00:45 ET-1 8
+12 AF0182B 22 AFP PRESS OVRD PROT FAILS N/A N/A NIA NIA
+AF0353C 23 AFP FAILURE TO AUTO START ON ANY
+13 N/A NIA ~~/A NIA
+ALL SIGNALS
+14 RP0247 FALSE FW ISOLATION K636 Rela NIA NIA NIA ET-1
+SELF- Description Delay Initial Ramp Trigger Condition
+CHECK Time Value Time
+01 RP07D 21 MG SET MOTOR BKR NIA N/A NIA RT-10 STOP
+02 RP08D 22 MG SET MOTOR BKR NIA NIA NIA RT-10 STOP
+03 RP09D 21 MG SET GEN OUTPUT BKR NIA N!A NIA RT-10 TRIPPED
+04 RP10D 22 MG SET GEN OUTPUT BKR NIA NIA NIA RT-10 TRIPPED
+05 RP18D Open MAIN RX TRIP BKR A 00:00:10 NIA NIA RT-10 TRIP OPEN
+06 RP19D 0 en MAIN RX TRIP BKR B 00:00:05 NIA N/A RT-10 TRIP OPEN
+
+=== PAGE 8 ===
+TQ-AA-106-0204
+Page 8 of 47
+SELF- Description Delay Initial Ramp Trigger Condition/
+CHECK Time Value Time Severity
+B511 A DI KB511AZP 22 AUX FEED PUMP-PRESS
+01 N/A NIA N/A N/A OFF
+OVERRIDE DEFEAT
+B440 F DI KB440TID REACTOR TRIP BREAKER 'A'-
+02 NIA f'J/A NIA RT-10 ON
+TRIP
+B441 F DI KB441TID REACTOR TRIP BREAKER 'B'-
+03 N/A N/A N/A RT-10 ON
+TRIP
+C310 F DI KC310TNO 2E6D PRESSURE HEATER BUS
+04 N/A N/A N/A NIA OFF
+480V-OPEN
+C510 F DI KC510TNO 2G6D PRESSURE HEATER BUS
+05 480V-OPEN N/A NIA ~~/A N/A OFF
+None
+
+=== PAGE 9 ===
+TQ-AA-106-0204
+Page 9 of 47
+A. State shift job assignments.
+B. Hold a shift briefing, detailing instruction to the shift: (provide crew members a copy of the shift
+turnover sheet).
+C. Inform the crew "The simulator is running. You may commence panel walkdowns at this time.
+CRS please inform me when your crew is ready to assume the shift".
+D. Allow sufficient time for panel walk-downs. When informed by the CRS that the crew is ready
+to assume the shift, ensure the simulator is cleared of unauthorized personnel.
+
+=== PAGE 10 ===
+TQ-AA-106-0204
+Page 10 of 47
+'1';'1l'fk£E .v.a1 t cted PlantiStu~ehtiR~~pon~;
+:·i
+1. Power Ascension
+CRS briefs RO and PO on power ascension.
+RO provides reactivity plan for power
+ascension.
+Note: Manual rod control may be
+used, but is not expected to be
+based on temoerature error.
+Note: Terr is >0°F and risin~.
+PO initiates a turbine power ascension at 10%
+er hour.
+Note: The Main Turbine is setup for
+a SGFP runback when crew takes
+the watch. PO must change load
+change rate from 15% per minute
+to 10% oer hour.
+RO either announces expected and actual
+auto rod movement, or withdraws rods in
+manual with CRS concurrence to maintain
+Tava on oroaram if required.
+Proceed to next event on direction
+from Lead Evaluator.
+2. PZR PORV 2PR2 leak
+
+=== PAGE 11 ===
+TQ-AA-106-0204
+Paae 11of47
+Insert
+Simulator Operator: R.i'-1 ..
+.o n
+'direction ffoin Le~d Evaluator ..
+~~( l
+;;}; t !} • ••. . .. ;:,
+MALE: PR0018B PZRPORV
+... 2PR2 OEVE:l0PS1LEAK }<.
+·· SEVER.ITV :~<15,000 .
+=
+Note: 15,000 lbm/hr 30 gpm.
+RO reports lowering PZR pressure, or PORV
+tailpipe temp has risen, or charging flow rising,
+or lower spray valve demand, or PRT
+indications of a 2PR2 leak.
+Note: AB.RC-1 may be entered if
+PORV leak is not promptly
+identified, but AB.PZR should be
+entered when PORV leak is
+identified.
+CRS enters 52.0P-AB.PZR-0001,
+Pressurizer Pressure Malfunction.
+CRS directs initiation of Attachment 1 CAS.
+CRS evaluates stopping the Load Ascension
+anytime during implementation of S2.0P
+AB.PZR-0001.
+RO reoorts POPS NOT in service.
+RO reports PZR Pressure Control channel has
+NOT failed.
+RO reoorts MPC has NOT failed.
+
+=== PAGE 12 ===
+TQ-AA-106-0204
+Paae 12 of 47
+pl)~,t·~~v·.
+RO re Valve has NOT failed.
+RO reoorts a PORV is NOT failed.
+RO re
+RO closes both PORV stoo valves.
+RO opens 2PR6 and reports tailpipe
+temoeratures are still lowerina.
+RO opens 2PR7 and reports tailpipe
+temoeratures are risina.
+RO closes 2PR7, and reports lowering PORV
+tailoioe temoerature.
+RO reoorts that PZR PORV 2PR2 is leakin
+CRS enters TSAS 3.4.5 action a for 2PR2.
+Continue to next event on direction
+from Lead Evaluator.
+3. 22 RC Looo RTD Fails Hiah
+Simulator Operator: Insert RT-2
+on direction from Lead Evaluator.
+
+=== PAGE 13 ===
+TQ-AA-106-0204
+Paae 13 of 47
+·
+·~1atrt7stu~int ~Qlpodi~·,
+',·<:~~0f~,:~~ ·\~~~:~'.', ,~{~,~~'~' ,;·i'.:1",
+'.v
+MALF: RC0014B, 22 Hot Leg RTD
+Avg Sum Fail
+Final Value: 650
+RO reports control rods inserting at 72 spm,
+verifies no runback in progress, gains
+concurrence from CRS and places control
+rods in manual.
+CRS enters 52.0P-AB-ROD-0003,
+Continuous Rod Motion.
+RO reoorts rod motion stoooed.
+RO reoorts rod motion was inward.
+RO reoorts NO NI failures.
+RO reports 22 loop Tavg failed high and NO
+dilution in oroaress.
+RO places Master Flow Controller to manual
+and adjusts charging flow to return PZR level
+to oroaram usina Att. 2.
+RO selects Deviation Defeat for Loop 22 DT
+and Tave.
+RO selects recorders to channel other than 22
+loo~.
+
+=== PAGE 14 ===
+TQ-AA-106-0204
+Paae 14 of 47
+;~:~;;;'~]''··
+RO returns Master Flow Controller to auto
+when PZR level is on oroaram.
+RO reoorts control rods are above the RIL.
+RO withdraws control rods to establish Tave
+within 1.5°F of oroaram.
+RO verifies Tave within 1.5° program and
+restores the Rods to Auto.
+CRS evaluates placing Rod Control to
+Automatic Control.
+CRS initiates removing 22 loop RCS
+temperature channel from service IAW S2.0P
+SO.RPS-0002.
+CRS enters TSAS(s) 3.3.1.1 Action 6, and
+3.3.2.1 Action 19*.
+Proceed to next event after Tech
+Spec call is made at Lead
+Evaluators direction.
+4. Loss of Main Turbine Lube Oil
+Simulator Operator: Insert RT-3
+·.OfJ directi6n.froin Lead .Evaluator.
+''·' >'
+MALF: ruoo1s' ·Main :furb lo~s of
+Lube Oil '
+
+=== PAGE 15 ===
+TQ-AA-106-0204
+Paae 15 of 47
+. Final Value: 90 : . . .. . .··.
+· MALF: ;tuooasA "l\1rf':"furb Hf Vibt
+.Fina1;va1iJ0j·;~2
+~~Ramp: 30 minutes . ~ii\ .{
+• fylALF: TUOQ8~~i Mh TUrb.Hi Vibr
+1
+Final Valuei' Hr::,\ ··
+R~mo: 30 mihutes
+Note: The malfunction will cause
+oil pressure to lower to the start
+setpoint for the 2 oil pumps (12
+psig), and the auto start will restore
+header pressure.
+PO reports auto start of ABOP and HP Seal
+Oil Backup pump and reports lube oil header
+ressure risina or stable.
+CRS enters 52.0P-AB. TL-0001, Loss of
+Main Turbine Lube Oil.
+CRS directs initiation of AB. TL CAS.
+PO reports bearing pressure is NOT below 12
+CRS reports that auto start of ABOP or HP
+Seal Oil BU pump requires a turbine shutdown
+be performed.
+PO reports the ABOP and HP Seal Oil Backup
+umps have started.
+PO reports the Main Turbine is latched.
+PO reports lube oil reservoir level is stable.
+
+=== PAGE 16 ===
+If dispatched to check local MTLO
+reservoir level, report after 2
+minutes as NEO that MTLO
+reservoir level is normal and stable.
+PO initiates monitoring of Main Turbine
+arameters IAW Attachment 2.
+CRS enters 52.0P-AB.LOAD-0001, Rapid
+Load Reduction, to perform the power
+reduction.
+RO calculates boron addition required for
+ower reduction.
+PO reports rising vibrations on turbine
+bearinas.
+Simulator Operator: ····.·; .. .... .
+. PAUSE rising turbine vibration at 6.
+mils if crew has notttaken action .tol
+red Up~ po~~tl; ther1remoye pa4§e •
+whe'ni'power requcti'oD has•
+commenced. ".·' · ·· · ··
+··~.
+.•\;',(.(•( \' ...: \ . j ·.... •
+Once load teauctidn is ih .
+or
+progress as direct btLead
+Evaluator. MODIFY MALF
+
+=== PAGE 17 ===
+TU0083A. and/or TU0083B Starting
+Value fo.9.0 to ~~Cfeleratejt~e ;:
+turbine "iib.rations.'{evels .towards.~x
+Trio criteria (9 mils).
+CRS direct power reduction at rate <5% per
+minute.
+Note: SW Header Low Pressure
+alarm could be expected due to the
+leak on the MTLO.
+Note: Since the power reduction
+will be to <50% where AFD Tech
+Spec is no longer applicable, AFD
+concerns should not impede the
+ower reduction.
+RO maintains Tavg/Tref mismatch at minimum
+value by ensuring control rod motion initiates
+when exoected.
+PO monitors SGFP suction pressure to ensure
+it remains >300 osia.
+PO monitors condensate pump suction
+temoeratures.
+CRS briefs contingency actions if turbine
+vibrations continue to rise.
+CRS may raise the power reduction rate
+based on risina vibrations.
+
+=== PAGE 18 ===
+TQ-AA-106-0204
+Paae 18 of 47
+PO reports unexpected OHA H-35 TSI
+TRBL.
+PO continues to keep CRS updated with rising
+vibration status.
+CRS determines deteriorating conditions
+require removing the main turbine from
+service.
+CRS directs RO to trip the Rx and perform
+immediate actions of 2-EOP-TRIP-1,
+Reactor Trio or Safetv lniection.
+5. ATWT
+RO attempts to trip the reactor with Rx Trip
+Handle and reports the reactor has NOT
+triooed.
+Crew recoanizes ATWT.
+RO continues attempts to trip the reactor by:
+• Using the other Rx Trip Handle
+• Opening Reactor Trip Breakers
+• Opening RDMG set power supply
+breakers
+RO reports all attempts to trip the reactor have
+failed.
+RO trios the Main Turbine.
+· Simulator Operator: Ensure, ET-1,
+ET-2, and ET-3 are true when the
+
+=== PAGE 19 ===
+TQ-AA-106-0204
+Paae 19 of 47
+•t ud)ine• is. tripped: •. This insert~·the
+. ma.lfuhctions,for rod:control ... ,.:
+.<RP006,t) aftera 45 second;delay,
+·and inadvertent· FW Isolation i~': ··
+JJRPO~!!i..7), and d~letes. turbine/'·
+'Vibration malfundlons.f'(U0083A ..
+and TCJ00838). . · i it ·. '•'.\ ·
+RO either ensures automatic rod motion
+occurs or inserts control rods in manual.
+Note: Automatic rod insertion
+allows for a faster rod speed of 72
+spm vs. Manual rod speed of 48
+som.
+RO reports immediate actions of 2-EOP-TRIP-
+1 are comolete.
+CRS enters 2-EOP-TRIP-1, Reactor Trip or
+Safetv lniection.
+RO reoorts reactor will NOT tri
+RO reoorts Main Turbine is triooed.
+RO reoorts rod insertion is occurrin
+CRS enters 2-EOP-FRSM-1 Response to
+Nuclear Power Generation.
+PO starts 21 and 22 AFW pumps running, and
+reports that 22 AFW pump is NOT providing
+flow.
+If attempted, PO reoorts Pressure Override
+
+=== PAGE 20 ===
+TQ-AA-106-0204
+Paae 20 of 47
+PO reports AFW flow is <44E4 lbm/hr, and
+STARTS 23 AFW pump.
+. c1#1 (ct:sj>••star'tAf:Wpumps
+(luring 2-eoe~FRSM-1~ step 2i
+·: ':S:,'~ ',,. '~ :.,'0:"'~.'
+,.,:;;~.~ .. ,
+SAT:.
+~..;;;_
+RO reports lowering rod speed not
+consistent with plant conditions, and
+receives permission to place rods in
+manual (if not in manual alread ....
+RO inserts control rods until RTB's are ooen.
+CT#2 (CT-~2) Insert negative
+reactivit{irito the .core by~
+'inserting.control. rods or ··~ ...
+establi~hing emergency boration.
+'to the' RCS prfor ,to. exiting"~RSM~ ·
+1~:.o '~,~"
+), c,,,
+SAT_ _ .. , UNSAT >~·':.
+Note: CT#2 can be satisfied with
+control rod insertion OR emergency
+boration.
+
+=== PAGE 21 ===
+TQ-AA-106-0204
+Paae 21of47
+RO reports that both Boric Acid pumps are in
+FAST soeed.
+PO opens 2CV175 and closes 21 and
+22CV160 to establish Rapid Boration .
+.S im.ulator Operafor:'~fter ap.
+~()perator has been dispcitched1tQ .
+.. .l ocally opeg RTB:hreakers ANO
+flow
+Rapid.Sorafl<.m is estabHshea,
+THEN I locally open' RTBs by;
+<'
+o
+lnsertjng RT~1 to ,deenergize·
+·R()MGsets a.nd open.RTB
+breakers. ·· · ·
+RO reports PZR pressure <2335 psig and both
+PZR PORVs shut.
+RO reports 2PR6 is open with power, and
+2PR7 is closed due to leakina 2PR2 PORV.
+PO reoorts 2VC5 and 2VC6 are shut.
+RO reoorts reactor trio breakers remains shut.
+If not previously performed, crew dispatches
+an operator to locally open RTBs and RDMG
+set motor and aenerator breakers.
+PO reoorts MT Stop valves are shut.
+RO reports indications that RTBs have
+been ooened, and RDMG sets have been
+
+=== PAGE 22 ===
+TQ-AA-106-0204
+Paae 22 of 47
+RO reports all PRNI channels <5% power and
+IR SUR neaative.
+CRS directs chemist
+CRS directs calculation of SOM.
+CRS continues boration as reauired.
+Terminate the scenario when
+transition back to procedure in
+effect has been made or decision
+to complete SOM calculation
+before leaving FRSM-1 has been
+made.
+
+=== PAGE 23 ===
+TQ-AA-106-0204
+Page 23 of 47
+A. Alarm Response Procedures (Various)
+B. Technical Specifications
+C. Emergency Plan (ECG)
+D. OP-AA-101-111-1003, Use of Procedures
+E. S2.0P-IO.ZZ-0004, Power Operation
+F. S2.0P-AB.PZR-0001, Pressurizer Pressure Malfunction
+G. S2.0P-AB.ROD-0003, Continuous Rod Motion
+H. S2.0P-AB.TL-0001, Loss of Main Turbine Lube Oil
+I. 2-EOP-TRIP-1, Reactor Trip or Safety Injection
+J. 2-EOP-FRSM-1, Response to Nuclear Power Generation
+
+=== PAGE 24 ===
+TQ-AA-106-0204
+Page 24 of 47
+ATTACHMENT 1 .
+UNIT TWO PLANT STATUS
+TODAY
+MODE: 1 POWER: 75% RCS BORON: 107 MWe 880
+SHUTDOWN SAFETY SYSTEM STATUS (5, 6 & DEFUELED):
+NA
+REACTIVITY PARAMETERS
+• Xenon is Building In at 4 pcm/hr
+• Control rods will be withdrawn from 160 to 227 as needed for AFD and temperature
+control and to establish ARO prior to 100% power.
+MOST LIMITING LCO AND DATE/TIME OF EXPIRATION:
+EVOLUTIONS/PROCEDURES/SURVEILLANCES IN PROGRESS:
+• Raise power to 89% @ 10% per hour IAW S2.0P-IO.ZZ-0004. Step 4.1.20 is complete.
+ABNORMAL PLANT CONFIGURATIONS:
+CONTROL ROOM:
+• Unit 1 and Hope Creek at 100% power.
+PRIMARY:
+SECONDARY:
+• Polisher is in service
+• Slowdown to condenser at 35K per loop.
+RADWASTE:
+• No discharges in progress
+CIRCULATING WATER/SERVICE WATER:
+
+=== PAGE 25 ===
+TQ-AA-106-0204
+Page 25 of 47
+ATTACHMENT 2
+SIMULATOR READY FOR TRAINING CHECKLIST
+1. Verify simulator is in "TRAIN" Load
+2. Simulator is in RUN
+3. Overhead Annunciator Horns ON
+4. All required computer terminals in operation
+5. Simulator clocks synchronized
+6. All tagged equipment properly secured and documented
+7. TSAS Status Board up-to-date
+8. Shift manning sheet available
+9. Procedures in progress open and signed-off to proper step
+10. All OHA lamps operating (OHA Test) and burned out lamps replaced
+11. Required chart recorders advanced and ON (proper paper installed)
+12. All printers have adequate paper AND functional ribbon
+13. Required procedures clean
+14. Multiple color procedure pens available
+15. Required keys available
+16. Simulator cleared of unauthorized material/personnel
+17. All charts advanced to clean traces and chart recorders are on.
+18. Rod step counters correct (channel check) and reset as necessary
+19. Exam security set for simulator
+20. Ensure a current RCS Leak Rate Worksheet is placed by Aux Alarm Typewriter
+with Baseline Data filled out
+21. Shift logs available if required
+22. Recording Media available (if applicable)
+23. Ensure ECG classification is correct
+24. Reference verification performed with required documents available
+25. Verify phones disconnected from plant after drill.
+26. Verify EGC paperwork is marked "Training Use Only" and is current revision.
+27. Ensure sufficient copies of ECG paperwork are available.
+
+=== PAGE 26 ===
+TQ-AA-106-0204
+Page 26 of 47
+ATTACHMENT 3
+CRITICAL TASK METHODOLOGY
+In reviewing each proposed CT, the examination team assesses the task to ensure, that it is
+essential to safety. A task is essential to safety if, in the judgment of the examination team, the
+improper performance or omission of this task by a licensee will result in direct adverse
+consequences or in significant degradation in the mitigative capability of the plant.
+The examination team determines if an automatically actuated plant system would have been
+required to mitigate the consequences of an individual's incorrect performance. If incorrect
+performance of a task by an individual necessitates the crew taking compensatory action that
+would complicate the event mitigation strategy, the task is safety significant.
+I. Examples of CTs involving essential safety actions include those for which operation or
+correct performance prevents ...
+• degradation of any barrier to fission product release
+• degraded emergency core cooling system (ECCS) or emergency power capacity
+• a violation of a safety limit
+• a violation of the facility license condition
+• incorrect reactivity control (such as failure to initiate Emergency Boration or Standby
+Liquid Control, or manually insert control rods)
+• a significant reduction of safety margin beyond that irreparably introduced by the
+scenario
+II. Examples of CTs involving essential safety actions include those for which a crew
+demonstrates the ability to ...
+• effectively direct or manipulate engineered safety feature (ESF) controls that would
+prevent any condition described in the previous paragraph.
+• recognize a failure or an incorrect automatic actuation of an ESF system or component.
+• take one or more actions that would prevent a challenge to plant safety.
+• · prevent inappropriate actions that create a challenge to plant safety (such as an
+unintentional Reactor Protection System (RPS) or ESF actuation.
+
+=== PAGE 27 ===
+TQ-AA-106-0204
+Page 27 of 47
+SCENARIO IDENTIFIER: 2017 ILOT NRC ESG-7 REVIEWER: M Brummitt
+Initials Qualitative Attributes
+MB 1. The scenario has clearly stated objectives in the scenario.
+MB 2. The initial conditions are realistic, in that some equipment and/or instrumentation
+may be out of service, but it does not cue crew into expected events.
+MB 3. The scenario consists mostly of related events.
+MB 4. Each event description consists of:
+• the point in the scenario when it is to be initiated
+• the malfunction(s) that are entered to initiate the event
+• the symptoms/cues that will be visible to the crew
+• the expected operator actions (by shift position)
+• the event termination point
+MB 5. No more than one non-mechanistic failure (e.g., pipe break) is incorporated into
+the scenario without a credible preceding incident such as a seismic event.
+MB 6. The events are valid with regard to physics and thermodynamics.
+MB 7. Sequencing/timing of events is reasonable, and allows for the examination team to
+obtain complete evaluation results commensurate with the scenario objectives.
+MB 8. The simulator modeling is not altered.
+MB 9. All crew competencies can be evaluated.
+MB 10. The scenario has been validated.
+MB 11. If the sampling plan indicates that the scenario was used for training during the
+requalification cycle, evaluate the need to modify or replace the scenario.
+MB 12. ESG-PSA Evaluation Form is completed for the scenario at the applicable facility.
+
+=== PAGE 28 ===
+TQ-AA-106-0204
+Page 28 of 47
+Minimum Quantitative Attributes (NRC Form ES-301-4)
+EOPs Entry into
+Malfunctions
+Malfunction Total Abnormal Major used contingen Critical Tech Specs
+After EOP
+ID Malfunctions Events Transient beyond cy Task exercised
+entry
+TRIP-1 EOP
+PR0018A 1 1 Yes
+RC0014B 1 1 Yes
+TU0075
+TU0083A 1 1
+TU0083B
+RP0058
+RP0059A
+RP0059B
+RP0060A
+RP0060B
+1 1 FRSM-1 FRSM-1 2
+RP0247
+8440 F DI
+8441 F DI
+C310 F DI
+C510 F DI
+AF0182B
+1 1
+8511 A DI
+AF0353C 1 1
+RD0061 1 1
+Total
+Number of 7 4 2 1 1 1 2 Yes
+Events
+Min Number - 1-2 2-4 1-2 1-2 0-2 2-3 Yes
+of Events
+Verified By Chan Chan Chan Chan Chan Chan Chan Chan
+Comments:
+
+=== PAGE 29 ===
+TQ-AA-106-0204
+Page 29 of 47
+2017 ILOT NRC Retake ESG-7
+Critical Task #1 (CT-51):
+Start AFW pumps to establish at least 44E41bm/hr AFW flow before completion of FRSM-1
+step 2.
+Basis: Failure to start at least the minimum required number of AFW pumps under the postulated
+plant conditions can lead to violation of the RCS emergency stress limit.
+Critical Task #2 (CT-52):
+Add negative reactivity from rod insertion or emergency boration.
+Basis: Failure to insert negative reactivity, under the postulated plant conditions, results in an
+unnecessary situation in which the reactor remains critical or returns to a critical condition.
+Note to Evaluator: CT numbers in parentheses are the corresponding Westinghouse ERG
+Rev. 2- based Critical Tasks procedure WCAP-17711-NP
+
+=== PAGE 30 ===
+TQ-AA-106-0204
+Page 30 of 47
+EVENTS LEADING TO CORE DAMAGE
+Y/N Event Y/N Event
+N TRANSIENTS with PCS Unavailable N Loss of Service Water
+N Steam Generator Tube Rupture N Loss ofCCW
+N Loss of Offsite Power N Loss of Control Air
+--
+N Loss of Switchgear and Pen Area Ventilation N Station Black Out
+N LOCA
+COMPONENT/TRAIN/SYSTEM UNAVAILABILITY THAT INCREASES CORE DAMAGE
+FREQUENCY
+COMPONENT, SYSTEM, OR
+Y/N COMPONENT, SYSTEM. OR TRAIN Y/N
+TOl\11\1
+N Containment Sump Strainers N Gas Turbine
+N SSWS Valves to Turbine Generator Area N Any Diesel Generator
+N RHR Suction Line valves from Hot Leg y Auxiliary Feed Pump
+N CVCS Letdown line Control and Isolation Valves N SBO Air Compressor
+OPERATOR ACTIONS IMPORTANT IN PREVENTING CORE DAMAGE
+Y/N OPERATOR ACTION
+N Restore AC power during SBO
+N Connect to gas turbine
+N Trip Reactor and RCPs after loss of component cooling system
+N Re-align RHR system for re-circulation
+N Un-isolate the available CCW Heat Exchanger
+N Isolate the CVCS letdown path and transfer charging suction to RWST
+N Cooldown the RCS and depressurize the system
+--
+N Isolate the affected Steam Generator that has the tube rupture(s)
+N Early depressurize the RCS
+
+=== PAGE 31 ===
+TQ-AA-106-0204
+Page 31of47
+N Initiate feed and bleed
+Complete this evaluation form for each ESG.
+
+=== PAGE 32 ===
+TQ-AA-106-0204
+Page 1of49
+SIMULATOR
+EXAMINATION SCENARIO GUIDE
+SCENARIO TITLE: 15-01 NRC ESG-8
+SCENARIO NUMBER: 15-01 NRC ESG-8
+EFFECTIVE DATE: See Approval Below
+EXPECTED DURATION: 75 minutes
+REVISION NUMBER: 01
+PROGRAM: .____ ___.! LO. REQUAL
+I
+X INITIAL LICENSE
+.____ ___.! STA
+.____ ___.! OTHER
+Revision Summary
+Rev 00, for 2014 Annual Exam
+Rev 01, 4-6-17, developed from 2014 Annual ESG-1418 for 2017 NRC retake exam.
+Editorial changes made throughout scenario guide.
+PREPARED BY: R. Chan 4-11-17
+Lead Regulatory Exam Author Date
+APPROVED BY: W. Muffle:t 4-11-17
+Operations Training Manager Date
+APPROVED BY: M. Brummitt 4-11-17
+Operations Department Date
+
+=== PAGE 33 ===
+TQ-AA-106-0204
+Page 2 of 49
+
+=== PAGE 34 ===
+TQ-AA-106-0204
+Page 3 of 49
+A. Given indication of a loss or malfunction of the Charging system DIRECT corrective action for a
+Charging System malfunction in accordance with S1/S2.0P-AB.CVC-0001.
+8. Given the order or indications of a charging system malfunction, perform actions as the nuclear
+control operator to RESPOND to the loss or malfunction of the charging system in accordance
+with S1/S2.0P-AB.CVC-0001.
+C. Given the order or indications of a fire, as the nuclear control operator PERFORM the control
+room actions in accordance with S1/S2.0P-AB.FIRE-0001.
+D. Given the order or indications of a fire, DIRECT the control room actions in accordance with
+S1/S2.0P-AB.FIRE-0001.
+E. Given the order or indications of a reactor trip, PERFORM actions as the nuclear control
+operator to RESPOND to the reactor trip in accordance with the approved station procedures.
+F. Given indication of a reactor trip, DIRECT the response to the reactor trip in accordance with
+the approved station procedures
+G. Given the order or indications of a reactor trip, PERFORM actions as the shift technical advisor
+to RESPOND to the reactor trip in accordance with the approved station procedures.
+H. Given a steam generator tube leak, take corrective action, IAW S2.0P-AB.SG-0001.
+I. Given the order or indications of a steam generator tube leak (SGTL), perform actions as the
+nuclear control operator to RESPOND to the tube leak in accordance with S1/S2.0P-AB.SG-
+0001.
+J. Given the order or indications of a steam generator tube leak (SGTL), DIRECT the response to
+the tube leak, in accordance with S1/S2.0P-AB.SG-0001.
+K. Given the order or indications of a safety injection PERFORM actions as the nuclear control
+operator to RESPOND to the safety injection in accordance with the approved station
+procedures.
+L. Given indication of a safety injection DIRECT the response to the safety injection in accordance
+with the approved station procedures.
+M. Given the order or indications of a safety injection PERFORM actions as the shift technical
+advisor to RESPOND to the safety injection in accordance with the approved station
+procedures.
+N. Given the order or indications of a steam generator tube rupture (SGTR), perform actions as
+the nuclear control operator to RESPOND to the tube rupture in accordance with the approved
+station procedures.
+0. Given indication of a steam generator tube rupture (SGTR), DIRECT the response to the SGTR
+in accordance with the approved station procedures.
+P. Given the order or indications of a steam generator tube rupture (SGTR), PERFORM actions
+as the shift technical advisor for a SGTR, IAW approved station procedures.
+Q. During performance of emergency operating procedures, monitor the critical safety function
+status trees in accordance the EOP in effect.
+R. During normal, abnormal and/or emergency plant operations, properly classify the event
+including ECG section and initiating event number.
+
+=== PAGE 35 ===
+TQ-AA-106-0204
+Page 4 of 49
+:::-:"""".'":":::-::::-::::-:=-:----...,::;-:~
+1. 23 charging pump trip with letdown isolation failure (2CV4 intermediate position)
+2. Loss of 2E 4KV Group bus
+3. SGTL/SGTR in 2-EOP-TRIP-2
+4. Loss of normal spray capability and 2PR2 fails to close during depressurization in 2-EOP
+SGTR-1
+A. The crew will receive the unit at 100% power BOL. Pressurizer Level Channel Ill
+failed high last shift, and was removed from service IAW S2.0P-SO.RPS-0003,
+Placing Pressurizer Channel in tripped condition. 2PR6 is shut with power removed
+after control circuit problem caused 2PR1 to partially open momentarily yesterday. No
+active troubleshooting of 2PR1 is in progress.
+8. Shortly after taking the watch, 23 Charging pump trips. The letdown orifice automatic
+isolation signal occurs with all 3 charging pump breakers open, but the inservice orifice
+isolation valve 2CV4 does not shut completely and remains 40% open. The crew
+responds IAW 52.0P-AB.CVC-0001, Loss of Charging, to isolate letdown and place
+22 Centrifugal Charging pump in service. With normal letdown unavailable, the crew
+will place Excess Letdown in service. The CRS will identify the Tech Specs.
+C. An electrical fault will occur on the infeed breaker to 2E Group Bus and the bus will
+deenergize. The Rx will trip on RCS Low Flow due to the loss of 2E Group Bus power
+(loss of 22 RCP). Crew will enter 2-EOP-TRIP-1.
+D. With no SI required, the crew will transition to 2-EOP-TRIP-2, Reactor Trip Response.
+After stopping both SGFPs in 2-EOP-TRIP-2, a 50 gpm SGTL will occur on 21 SG.
+With the Rx shutdown and SGBD having isolated on the AFW pump auto start, only
+the 2R15 condenser air ejector radiation monitor will provide rising radiation indication
+of a tube leak.
+E. The CRS will initiate 52.0P-AB.SG-0001, Steam Generator Tube Leak, while
+continuing in 2-EOP-TRIP-2. The 21 SG tube will rupture. The crew will identify the
+ruptured SG and initiate Safety Injection IAW 2-EOP-TRIP-2 CAS. Train B SI will fail
+to actuate requiring operator to initiate Train A SI. The crew will return to 2-EOP-TRIP-
+1.
+F. The crew will transition to 2-EOP-SGTR-1, Steam Generator Tube Rupture, to address
+the tube rupture. The crew will identify and isolate 21 SG. The crew will perform a
+cooldown to target temperature. The crew will initiate a RCS depressurization. During
+the depressurization, if used, the RCP providing driving head for spray flow will trip,
+and the crew will open a PZR PORV to continue the depressurization. (Critical Task#
+1 - Isolate ruptured SG) and (Critical Task # 2 - Establish and maintain target
+RCS temperature)
+
+=== PAGE 36 ===
+TQ-AA-106-0204
+Page 5 of 49
+G. The PORV opened to depressurize will fail to close when demanded after the
+depressurization is complete. The crew will terminate the depressurization by closing
+the PORV Block valve.
+H. The scenario will be terminated after the crew addresses the stuck open PZR PORV.
+
+=== PAGE 37 ===
+TQ-AA-106-0204
+Page 6 of 49
+IC-233
+VC1 and VC4 CIT
+RCPs (SELF CHECK)
+RTBs (SELF CHECK)
+MS167s (SELF CHECK)
+500 KV SWYD (SELF CHECK)
+SGFP Trip (SELF CHECK)
+23 CV PP (SELF CHECK)
+PZR level CH. Ill O/S at 100%
+2PR6 in Manual and Closed with control power off
+Complete Attachment 2 "Simulator Ready-for-Training/Examination Checklist."
+
+=== PAGE 38 ===
+TQ-AA-106-0204
+Page 7 of 49
+Note: Tables with blue headings may be populated by external program, do not change column name without consulting Simulator Support group
+Description
+-- . ··-------·---- - -·-
+EVENT ACTION: MONP254 <10. //CONTROL BANK C GROUP POSITION
+1 COMMAND:
+PURPOSE: <update as needed>
+SELF- Description Delay Initial Ramp Trigger Severity
+CHECK Time Value Time
+SER POINT
+AN0358 SER 358 FAILS -:A20 REACTOR PROT SYS
+01 NIA NiA N/A N/A FAILS/OVRD
+CH Ill RACK 11,12 OR 13 DOOR OPEN
+TOON
+SER POINT
+AN0356 SER 356 FAILS -:A20 REACTOR PROT SYS
+02 NIA NIA NIA NIA FAILS/OVRD
+CH Ill INSTRUMENT LOOP IN TEST
+TOON
+03 PR0017C PZR LEVEL CH Ill LT461 FAILS H/L N/A NIA NIA NIA 100
+04 CV0034 23 CHARGING PUMP TRIP N/A NIA N/A RT-1
+05 VL0245 2CV4 Fails to Position 0-100% NIA N/A NIA RT-1 40
+06 EL0141 LOSS OF 2E 4160V GROUP BUS 00:01 :00 N/A NIA RT-2
+07 RC0003C 23 RC PUMP ELECTRICAL TRIP NIA NIA N/A ET-1
+08 SG0078A 21 STEAM GENERATOR TUBE RUPTURE NIA N/A NIA RT-3 50
+AAS POINT
+09 AN3735 AAS 735 FAILS -:21 TGA SUMP LEVEL HIGH 00:03:00 NIA N/A RT-10 FAILS/OVRD
+TOON
+AAS POINT
+10 AN3736 AAS 736 FAILS -:22 TGA SUMP LEVEL HIGH 00:03:10 N/A NIA RT-10 FAILS/OVRD
+TOON
+AAS POINT
+11 AN3737 AAS 737 FAILS -:23 TGA SUMP LEVEL HIGH 00:03:25 N/A N/A RT-10 FAILS/OVRD
+TOON
+AAS POINT
+12 AN3738 AAS 738 FAILS -:24 TGA SUMP LEVEL HIGH 00:03:37 NIA NiA RT-10 FAILS/OVRD
+TOON
+AAS POINT
+13 AN3739 AAS 739 FAILS -:25 TGA SUMP LEVEL HIGH 00:03:57 NIA NIA RT-10 FAILS/OVRD
+TOON
+14 VL0298 2PR2 Fails to Position 0-100% NIA NIA NIA RT-4 100
+15 RC0003A 21 RC PUMP ELECTRICAL TRIP N/A NIA NIA RT-5
+SELF Description Delay Initial Ramp Trigger Condition
+CHECK Time Value Time
+01 PR17D PZR HI LVL RX TRP CH 3 LC461A BS NIA NIA NIA NIA TRIP
+
+=== PAGE 39 ===
+TQ-AA-106-0204
+Page 8 of 49
+02 PR34D PORV STOP VALVE 2PR6 TAGGED NIA NiA NIA NIA TAGGED
+03 FP25D FIRE -TURB GEN AREA WEST 100' (33) NIA NIA N/A RT-2 FIRE
+SELF Description Delay Initial Ramp Trigger Condition/
+CHECK Time Value Time Severity
+01 8312 LAO GB312ALI PRESSURIZER LEVEL CH. Ill N/A NIA N/A NIA 100
+02 A701 B DI KA701DOA TRAIN 'B' -SI OPERATE N/A NIA NIA N/A OFF
+KEYSWITCH
+Description
+None
+
+=== PAGE 40 ===
+TQ-AA-106-0204
+Page 9 of 49
+A. State shift job assignments.
+B. Hold a shift briefing, detailing instruction to the shift: (provide crew members a copy of the shift
+turnover sheet).
+C. Inform the crew "The simulator is running. You may commence panel walkdowns at this time.
+SM please inform me when your crew is ready to assume the shift".
+D. Allow sufficient time for panel walk-downs. When informed by the SM that the crew is ready to
+assume the shift, ensure the simulator is cleared of unauthorized personnel.
+
+=== PAGE 41 ===
+TQ-AA-106-0204
+Page 10 of 49
+tWJ§aluatci .· · ··rc°'M~ent::
+L
+:ri~ ... ,:' 2 , , _, i::~~: f~::~~, , -,',:1>El
+>-'
+1. 23 Charging pump trip with
+failure of Letdown Isolation.
+Simulator Operafor; Insert RT-1 .
+on direction from~Lead Evaluator. ··
+'""
+c~oo1 :1~3
+MALF: CHARGING
+PUMP TRIPi:r::.. .. R 1 '
+MALF;:,VL0~4~:2CV4 Fail~~o
+.•
+PositiC>n'.f 0~1003 > · ' ·. . i\.
+Severitv:r4o: •. .· ·
+RO reoorts 23 charain
+RO reports 2CV4 is NOT full closed as
+exoected.
+CRS enters 52.0P-AB.CVC-0001, Loss of
+Charaina.
+CRS directs initiation of CAS.
+Note: Manually closing the 2CV2
+and 2CV277 is directed at Step 3.5,
+but may be performed prior to that
+to isolate letdown.
+CRS directs RO to manually shut 2CV4, and
+RO reoorts it will NOT shut.
+CRS dispatches operator to investigate 23
+charaina oumo trio.
+
+=== PAGE 42 ===
+TQ-AA-106-0204
+.,ti Pafg e· 1 1of49
+·t t . e t v a16atdr . t ; l , ri : s trueiO . rA . Efivilj ··[ 1 ~e~t~~~~rfa;~st;~~e~t ·')•f+rw1':!u'oB~c":f' ~ " . com~~~~· .··
+··\~ .~J <;·;
+CRS directs RO to isolate letdown by
+shuttina 2CV2 and 2CV277.
+CRS may initiate S2.0P-AB.RCP-0001 from
+CAS item 4.0. (No action will be performed in
+AB other than monitorina RCP parameters.
+RO verifies NO charaina oump is runnin~.
+RO reports NO indication of cavitation prior to
+23 charaina oumo trio.
+RO reports letdown status, and shuts 2CV2
+and 2CV277.
+RO reoorts 23 charain
+Simulator Operator: :If .QRS
+directs removal.of'.23 charging
+PUrnP poWer,
+control us~ Remote
+CV52D to;OFF. · ··· ·
+RO reports both centrifugal charging pumps
+are available.
+RO reoorts all RCP seal inlet temos <225°.
+RO closes 2CV55.
+RO starts 21 or 22 charging pump and
+throttles 2CV55 to obtain desired flow.
+RO maintains 6-12 gpm seal injection to each
+RCP with maximum of 40 gpm total seal
+iniection flow.
+
+=== PAGE 43 ===
+TQ-AA-106-0204
+Pa:g1e/, j1:i2·· ·o f 49
+·'or11nstrtict8r'~AC:ff'"·
+CREW determines normal letdown is NOT
+available to be placed in service due to failed
+Containment Isolation Valve 2CV4. (Crew
+evaluates placing Excess Letdown in service
+for PZR Level control
+CRS enters TSAS 3.6.3 Action 1 for
+INOPERABLE Containment Isolation Valve.
+Note: There is no direction in
+AB.CVC-1 to place Excess
+Letdown in service. The following
+are the steps for placing Excess
+Letdown in service if the CRS
+directs it, otherwise continue to
+next event.
+Role Play: If Excess Letdown will
+be placed in service and the crew
+directs placing 2CA2015 in bypass
+to close 2CV55, use Remote
+CV42A to bypass 2CA2015. Call
+back for First Check and when
+valve is in bypass (84' Aux Bldg,
+Charging Valve Alley)
+Steps from 52.0P-SO.CVC-0003
+for placing Excess Letdown in
+service
+PO verifies 2CC113 ooen.
+PO ooens 2CC215.
+PO verifies 2CV132 shut.
+
+=== PAGE 44 ===
+TQ-AA-106-0204
+Page. 13 of 49
+. ~ t f:. E·va (uat<>r11n8: \or'Activf · ituden~\.~esponse.:; ;··. ' /~crrr:rr~"t
+La~· ~J~~·~; · ~ii ... ;r_:, ~t~, , I ,,~;
+PO determines 2CV134 selected to VCT
+PO ooens 2CV278 and 2CV131.
+PO slowly throttles open 2CV132 while
+maintaining excess letdown temp <195°F and
+ressure <150 osia.
+Proceed to next event after excess
+letdown is placed in service or after
+discussion about contingencies for
+normal letdown not being available.
+2. Loss of 2E Group Bus/Rx Trip
+SimulatorOperator: lnsertRT-2
+on direction tr6m .l..ead Evaluator
+MAl..~:~~L0141 LgSS ~;.
+OF 2E ··
+4160VGROURBUS ,::·.'>
+.......D .. . • e r lay. : 60 s~p ·'• , ; ; ~;; •,;•: . . ,11 · " :> ':
+'REMOTE: .FP25D TURB GEN
+WEST
+AREA 100' ELEV l33
+RO reports unexpected OHA A-7 FIRE PROT
+FIRE.
+PO reports Zone 33 TURB BLDG WEST EL
+100 is affected area, dispatches an operator
+to investiaate, and contacts Fire Protection.
+RO reports the Rx has tripped, and performs
+Immediate Actions:
+
+=== PAGE 45 ===
+TQ-AA-106-0204
+Page 14 of 49
+,.ctor AcitiVl~1
+' · •• •
+'E ·
+.:g~:f'
+- Manually backs up Rx trip
+- Confirms the Rx trip.
+- Backs up Main Turbine trip
+- Reports all 4KV vital buses are energized.
+- Reports SI has not actuated and is not
+reauired.
+CRS enters 2-EOP-TRIP-1, Reactor Trip or
+Safetv lniection.
+Simulator Operator: Ensure-ET-1
+.is;true upon the Rxtripf This trips
+23 RCP and result~f:li1Joss of
+normal sorav caoabilitv. ·
+CRS and RO verify immediate actions
+complete.
+Role Play: 2 minutes after being
+dispatched, report as NEO that
+there is No Fire but you smell a
+strong acrid smell near the E Group
+Bus cubicle area.
+Crew contacts Fire Protection and informs
+them of conditions.
+Role Play: 3 minutes after being
+contacted by control room, report
+as Fire Protection operator that you
+DON'T see any smoke or Fire at
+the Group Buses but do smell a
+strong acrid smell when you
+
+=== PAGE 46 ===
+TQ-AA-106-0204
+..
+· .. · !xi:llcted Res Coiiliiie~~i~+iy of~9
+at4rt1.~s~GffEf<ActivitY Plant/stude~t
+: ,
+:~~:;\:!:? ~};:' f<i, ®®N ¥">\%<~~
+approach the E Group bus
+cubicles.
+CRS transitions to 2-EOP-TRIP-2, Reactor
+Trio Resoonse.
+PO reports AFW flow is > 22E4 lbm/hr and
+receives permission to throttle AFW flow to no
+less than 22E4 lbm/hr, and maintains >22E4
+lbm/hr until at least 1 SG NR level >9%, then
+maintains 19-33%.
+PO stoos 21 and 22 SGFPs.
+4. SGTL
+~Simulator Operator: Insert RT-3
+after
+the SGFPs:t~ave been
+stopped. . ·· , ..
+~·.
+MALF: :SG0078A 21 STEAM
+GENE'RA TOR TUBE ROPTURE
+Final Value: 50
+RO reports 21 and 24 RCPs are in service,
+and RCS temperature is trending to or stable
+at 547°F.
+RO reoorts both RTBs are ooen.
+RO reports unexpected OHA A-6 RMS HI
+RAD OR TRBL.
+RO reports alarm is for 2R15 Condenser Air
+eiector.
+
+=== PAGE 47 ===
+TQ-AA-106-0204
+Page 16 of 49
+l$tructar·Actiyifi. Expeited5Alant/Stuctent ·Re& '«:>n$e ..... .
+om'T~MJr
+·:~1~:~ '/ ";,~,,~~.~J~i :1i.u1J~~'.~.: · <~ .·>:·· ~.\•\\\ ...•... ~ . :i}i:llJlfl·.• f't.li;
+PO reoorts 2R15 in alarm and risin
+Crew recognizes the R19 SGBD Rad monitors
+are O/S due to AFW pump auto start isolating
+blowdown, and R53 N-16 rad monitors are
+ineffective with Rx S/D.
+Note: Crew may use S2.0P
+SO.SS-0001, section 5.2, for
+guidance to re-open the SS94's
+and allow for sample flow through
+the 2R19 radiation monitors to help
+identify which SG has the SG tube
+leak.
+CRS initiates 52.0P-AB.SG-0001, Steam
+Generator Tube Leak.
+Note: CRS may continue action of
+TRIP-2 in parallel with performance
+of AB.SG.
+CRS directs initiation of Att. 1 CAS.
+CRS dispatches operator to deenergize TGA
+and CPS area buildina sum
+Simulator Operator: Insert RT-10 ..
+when directed to;deenergize TGA
+sumos. lthas time delav built in: .
+RO reports PZR level and trend. Based on
+recent Rx trip, PZR level may still be lowering
+in resoonse to trio.
+
+=== PAGE 48 ===
+TQ-AA-106-0204
+Page 17 of 49
+):i:jti ;~eva1~l .{J~AttlVf~:.rt/lfl'l i: ~)t cted Pi*'rilltudent Res onse .. :i.:~,;~,,$''' ·•• .· .. co·mmentl,1A · · ·····
+~\'"•:~,,~~, ~~ltl·~: •; ~~~C:i;::~ 1:t 1f~1; '~ .~~~
+. /;
+jC: . ··.. • .
+RO ensures a centrifugal charging pump is in
+service.
+RO adjusts charging flow and estimates
+leakrate.
+RO reports PZR level can be maintained
+stable or risina, and the unit is in Mode 3.
+CRS directs Chemistry to sample SGs to
+assist in identifvina affected SG.
+Role Play: Call back after 2-3
+minutes as primary chemistry and
+notify the CRS that chemistry
+analysis has identified elevated
+radionuclide activity in 21 SG.
+Crew identifies 21 SG as affected SG.
+Note: The trips of 22 and 23 RCP
+will have caused their SG NR
+levels to be above what is expected
+and will complicate SG tube leak
+identification. Identification of
+affected SG may not be made until
+SS94s are re-opened (allows use
+of 2R 19 radiation monitors).
+Note: Isolating feed flow is part of
+CT-1.
+PO sets 21 MS 10 setpoint to 1045 osi
+
+=== PAGE 49 ===
+TQ-AA-106-0204
+Page 18 of 49
+'nt · · .,,. ,.,, · ····· ·
+J.J~BT.·
+.... \1lllrQG
+1
+PO closes/ensures closed 21MS7, 21MS18, , '~'</ "'"' . ''·
+and 21GB4.
+CRS disoatches an ooerator to shut 21 MS45.
+5. SGTR
+.. Simulator Operator: Modify MALF
+· SG0078.A to 400 with no ramp or
+Cielav. •.
+PO reoorts 21 SG NR level risina faster.
+CRS directs initiation of Safety Injection
+and returns to 2-EOP-TRIP-1.
+RO initiates SI on Train B and reports it has
+NOT initiated.
+Note: If Train A is initiated first, this
+malfunction will not occur.
+RO successfullv initiates SI on Train A.
+RO/CRS verify 2-EOP-TRIP-1 immediate
+actions comolete.
+PO reports all available equipment started on
+SE Cs.
+
+=== PAGE 50 ===
+TQ-AA-106-0204
+*ff Paae 19 of 49
+r*;:;rtreyal}f
+r~struetf>r:walvltY. ·. d Plant/Studen~
+1:~~~;;~;jti;f; ,:::;:;fl 1
+<
+PO reports proper safeguards valve
+alianments exceot for 2CV4.
+PO reoorts containment oressure normal.
+RO reoorts conditions do not warrant MSLI.
+RO closes charging pump mini flow valves if
+RCS pressure is <1500 psig and BIT flow is
+established.
+RO stops RCPs if RCS pressure lowers to
+1350 osia with ECCS flow established.
+PO reoorts all 4KV vital buses eneraized.
+RO reports Control Room ventilation in AP
+mode.
+RO runs correct complement of switchgear
+suoolv and exhaust fans.
+RO reports ECCS flow as expected for current
+RCS oressure.
+PO reports at least 1 SG NR level is >9%,
+then maintains SG NR levels between 19%-
+33%.
+RO reports RCP status, and RCS temperature
+stable at or trendina to 547°.
+
+=== PAGE 51 ===
+1uat~r/Jns·
+,; f ,w:''i ,~~:r11i1
+RO reoorts both RTBs are ooen.
+RO reports both PZR PORVs are shut with
+2PR6 shut and deeneraized and 2PR7 open.
+RO reoorts PZR sprav status.
+Note: With 23 RCP stopped, spray
+flow will be atypical.
+RO stops RCPs if RCS pressure is <1350 psig
+and charging flow is at least 100 gpm through
+the BIT.
+PO reoorts no indication of faulted SGs.
+CRS transitions to 2-EOP-SGTR-1, Steam
+Generator Tube Rupture.
+RO maintains seal iniection flow to all RCPs.
+PO reports 21 SG is ruptured, and 21MS10 is
+set at 1045 osia.
+PO reports 21 MS10 operating as expected for
+current oressure.
+PO closes 21MS167, and verifies 21MS7,
+21MS18, and 21GB4 are closed.
+Note: These steps complete CT#1
+
+=== PAGE 52 ===
+TQ-AA-106-0204
+Page 21of49
+·
+~{student ~~~Jf<insit Commtnt·'"">:~5'F · ·
+,··, , ,, ,,- . /, '
+·~·:l,til?~l·':' ~•&ti·'·'.';,·
+-...,,.,--~,'"""'''
+CT#1~dCT-18))solateJeedJlow ..
+into and steaffi~flow from 21 SG'\.''.
+'.';.if:'.''" ' ' ' '.''' ,,,,,);;,,,,,,_,,>,,,,,,,,
+p~1qr to a transition t9 SGTR-3
+\''.
+bein~trequired~ ,,t\~·
+SAT . UNSAti:
+PO reoorts 21 ruptured.
+PO reports 23 AFW pump is NOT the only
+source of AFW.
+PO trios 23 AFW
+CRS dispatches operator to close 21 MS45, if
+not oreviouslv oerformed.
+CRS dispatches operator to close 2SS321
+samole valve.
+PO reports 21 SG is isolated from all intact
+SGs.
+Note: 21 SG NR levels may be off
+scale low at this point and the PO
+may request to feed this SG harder
+to promptly raise NR levels to 9%.
+PO STOPS AFW flow if 21 SG NR level >9%
+PO reoorts 21 SG oressure is >375 psi~.
+CRS determines target temperature from
+Table B.
+
+=== PAGE 53 ===
+TQ-AA-106-0204
+Page 22 of 49
+... ··· · ··
+~nmmAnf
+:1 1::r11 \'., ;,: .. . , :f;;¥zc; .•. < . . ;., S: ·.·: :.!!: . :· .. ::·.1x::z .il1ifk.LUl:i .··
+PO reports steam dumps are available, and
+places in MS Pressure Control at 25% to
+perform cooldown.
+PO stops cooldown and maintains
+temperature <503 F degrees. Steam Dumps
+set to Auto to maintain desired CET temps.
+RO reports 2PR7 PZR PORV Stop valve has
+power, and both PZR PORVs are shut.
+CRS dispatches operator to restore power to
+2PR6.
+Note: Do NOT restore power to
+2PR6 during scenario. IF contacted
+again about 2PR6, state the
+breaker went trip free when it was
+shut.
+RO resets SI and Phase A isolation, and
+reports Phase B isolation reset.
+RO opens 21 and 22CA330.
+PO resets each SEC and reports 230V
+control centers are reset.
+RO reports NO RHR pump discharQe flow.
+RO stops both RHR pumps.
+PO reports 21 SG is ruptured and 21MS167 is
+closed.
+
+=== PAGE 54 ===
+TQ-AA-106-0204
+···/"ent Page· ··2 3 of 4·. 9
+lant/Student .. Res""
+,
+~,~:,:@,if::
+CJ#2 . Establish and
+(CI·~9)
+.... m'aintairtan R.C.s.;temperature so
+does
+\''that transitiorlltrb.rd SGTR
+''.not occ~r becaus~1 temp~4@ture
+. is.too ftiglj to maintain minimum
+;~~ubcoolirjg; or.sQ,;lbw it ~a,9'ses
+transitioll. to FRtS'ior FRSM~ ...
+\~lT U~~AT
+/l ••
+PO reports 21 SG pressure is stable or risin
+RO reports subcoolin
+RO reports PZR sorav availabilit..
+Note: 21 RCP is running (if all
+RCPs have not been stopped). IF
+crew decides normal spray is not
+available due to 23 RCP not
+running, then go to PORV
+depressurization actions. During
+validation spray was determined
+ineffective with 21 RCP running.
+Crew reviews depressurization termination
+criteria usina Table D.
+RO fully opens both PZR spray valves if
+normal sorav is available.
+RO reports spray is lowering pressure OR
+reports pressure is not lowering (if spray
+aooears to be insufficient
+
+=== PAGE 55 ===
+TQ-AA-106-0204
+Page 24 of 49
+Evalliatorlf nstl'l.letorfActlvi·· i;xi>~Wted ·P1a40f/(tu~e6t• Re·
+A' , ,, ' '; c/y ,;. ' '•' i -rJ; iR'~~~:, ,\ 'ti;;:~~ '~I tbii ,, ,
+Simulator Operator: Insert RT-5 if
+spta~is ;attempted to be used for
+.tpr~s~J:ire;reducti~nafter RO reports
+pressure
+is (or is;nqt)lowering. •··. ··
+l '" . "'
+' . ~~ ,'¥~~ ~
+MALF'f tRC0003A', 2.~ RCP elect
+trip .. ···• ~~; ·
+~rue
+Final Value:
+RO reports 21 RCP has tripped.
+CRS returns to steo 19 and answers NO.
+RO closes both sorav valves.
+PORV operation step 20 here:
+RO reoorts 2PR2 is available.
+Crew reviews depressurization termination
+criteria usina Table E.
+Simulator Operator: When 2PR2
+is opened, enter RT-4 to fail open
+2PR2.
+MALF: VL0298 2PR2 Fails to
+Position ( 0-100% )
+Severitv: 10 0
+RO opens one PORV to depressurize RCS
+until termination criteria is met.
+
+=== PAGE 56 ===
+TQ-AA-106-0204
+Page 25 of 49
+···
+e-1· 1uator11nstruetor A/ ·sal"
+ent~·&···
+~'rI. 1.;1 .IJl~: ·······; LOG·.•··
+RO reoorts 2PR2 will NOT close.
+CRS directs RO to close the PORV Block
+valve.
+RO reports PORV block valve is closed and
+RCS oressure is risin~.
+Terminate scenario after the
+open PORV issue has been
+addressed.
+
+=== PAGE 57 ===
+TQ-AA-106-0204
+Page 26 of 49
+A. Alarm Response Procedures (Various)
+B. Technical Specifications
+C. Emergency Plan (ECG)
+D. OP-AA-101-111-1003, Use of Procedures
+E. S2.0P-AB.CVC-0001, Loss of Charging
+F. S2.0P-SO.CVC-0003, Excess Letdown Flow
+G. S2.0P-AB.SG-0001, Steam Generator Tube Leak
+H. 2-EOP-TRIP-1, Rx Trip or Safety Injection
+I. 2-EOP-TRIP-2, Rx Trip Response
+J. 2-EOP-SGTR-1, Steam Generator Tube Rupture
+
+=== PAGE 58 ===
+TQ-AA-106-0204
+Page 27 of 49
+ATTACHMENT 1
+UNIT TWO PLANT STATUS
+TODAY
+MODE: 1 POWER: 100% RCS BORON: 1093 MWe 1220
+SHUTDOWN SAFETY SYSTEM STATUS (5, 6 & DEFUELED):
+NA
+REACTIVITY PARAMETERS
+MOST LIMITING LCO AND DATE/TIME OF EXPIRATION:
+• 3.4.5 action b for 2PR1, 55 hours remain until shutdown required.
+EVOLUTIONS/PROCEDURES/SURVEILLANCES IN PROGRESS:
+ABNORMAL PLANT CONFIGURATIONS:
+CONTROL ROOM:
+• Unit 1 and Hope Creek at 100% power.
+• No penalty minutes in the last 24 hrs.
+PRIMARY:
+• PZR level channel Ill failed high last shift, removed from service IAW S2.0P-SO.RPS-
+0003, Placing Pressurizer Channel in Tripped Condition. TSAS 3.3.1.1, act 6, no
+expiration.
+• 2PR6 is shut with power removed after control circuit problem caused 2PR1 to partially
+open momentarily yesterday. No active troubleshooting of 2PR1 is in progress.
+SECONDARY:
+• Polisher is in service
+• SG Slowdown at 35K per loop to condenser
+RADWASTE:
+• No discharges in progress
+CIRCULATING WATER/SERVICE WATER:
+• None
+
+=== PAGE 59 ===
+TQ-AA-106-0204
+Page 28 of 49
+ATTACHMENT2
+SIMULATOR READY FOR TRAINING CHECKLIST
+1. Verify simulator is in "TRAIN" Load
+2. Simulator is in RUN
+3. Overhead Annunciator Horns ON
+4. All required computer terminals in operation
+5. Simulator clocks synchronized
+6. All tagged equipment properly secured and documented
+7. TSAS Status Board up-to-date
+8. Shift manning sheet available
+9. Procedures in progress open and signed-off to proper step
+10. All OHA lamps operating (OHA Test) and burned out lamps replaced
+11. Required chart recorders advanced and ON (proper paper installed)
+12. All printers have adequate paper AND functional ribbon
+13. Required procedures clean
+14. Multiple color procedure pens available
+15. Required keys available
+16. Simulator cleared of unauthorized material/personnel
+17. All charts advanced to clean traces and chart recorders are on.
+18. Rod step counters correct (channel check) and reset as necessary
+19. Exam security set for simulator
+20. Ensure a current RCS Leak Rate Worksheet is placed by Aux Alarm Typewriter
+with Baseline Data filled out
+21. Shift logs available if required
+22. Recording Media available (if applicable)
+23. Ensure ECG classification is correct
+24. Reference verification performed with required documents available
+25. Verify phones disconnected from plant after drill.
+26. Verify ECG paperwork is marked "Training Use Only" and is current revision.
+27. Ensure sufficient copies of ECG paperwork are available.
+
+=== PAGE 60 ===
+TQ-AA-106-0204
+Page 29 of 49
+ATTACHMENT 3
+CRITICAL TASK METHODOLOGY
+In reviewing each proposed CT, the examination team assesses the task to ensure, that it is
+essential to safety. A task is essential to safety if, in the judgment of the examination team, the
+improper performance or omission of this task by a licensee will result in direct adverse
+consequences or in significant degradation in the mitigative capability of the plant.
+The examination team determines if an automatically actuated plant system would have been
+required to mitigate the consequences of an individual's incorrect performance. If incorrect
+performance of a task by an individual necessitates the crew taking compensatory action that
+would complicate the event mitigation strategy, the task is safety significant.
+I. Examples of CTs involving essential safety actions include those for which operation or
+correct performance prevents ...
+• degradation of any barrier to fission product release
+• degraded emergency core cooling system (ECCS) or emergency power capacity
+• a violation of a safety limit
+• a violation of the facility license condition
+• incorrect reactivity control (such as failure to initiate Emergency Boration or Standby
+Liquid Control, or manually insert control rods)
+• a significant reduction of safety margin beyond that irreparably introduced by the
+scenario
+II. Examples of CTs involving essential safety actions include those for which a crew
+demonstrates the ability to ...
+• effectively direct or manipulate engineered safety feature (ESF) controls that would
+prevent any condition described in the previous paragraph.
+• recognize a failure or an incorrect automatic actuation of an ESF system or component.
+• take one or more actions that would prevent a challenge to plant safety.
+• prevent inappropriate actions that create a challenge to plant safety (such as an
+unintentional Reactor Protection System (RPS) or ESF actuation.
+
+=== PAGE 61 ===
+TQ-AA-106-0204
+Page 30 of 49
+Note: This form is used as guidance for the examination team as they conduct their review for
+the proposed scenarios.
+SCENARIO IDENTIFIER: 2017 ILOT NRC ESG-8 REVIEWER: M Brummitt
+Initials Qualitative Attributes
+1. The scenario has clearly stated objectives in the scenario.
+2. The initial conditions are realistic, in that some equipment and/or instrumentation
+may be out of service, but it does not cue crew into expected events.
+3. The scenario consists mostly of related events.
+4. Each event description consists of:
+• the point in the scenario when it is to be initiated
+• the malfunction(s) that are entered to initiate the event
+• the symptoms/cues that will be visible to the crew
+• the expected operator actions (by shift position)
+• the event termination point
+5. No more than one non-mechanistic failure (e.g., pipe break) is incorporated into
+the scenario without a credible preceding incident such as a seismic event.
+6. The events are valid with regard to physics and thermodynamics.
+7. Sequencing/timing of events is reasonable, and allows for the examination team to
+obtain complete evaluation results commensurate with the scenario objectives.
+8. The simulator modeling is not altered.
+9. All crew competencies can be evaluated.
+10. The scenario has been validated.
+11. If the sampling plan indicates that the scenario was used for training during the
+requalification cycle, evaluate the need to modify or replace the scenario.
+12. ESG-PSA Evaluation Form is completed for the scenario at the applicable facility.
+
+=== PAGE 62 ===
+TQ-AA-106-0204
+Page 31of49
+Minimum Quantitative Attributes (NRG Form ES-301-4)
+EOPs Entry into
+Malfunctions
+Malfunction Total Abnormal Major used contingen Critical Tech Specs
+After EOP
+ID Malfunctions Events Transient beyond cy Task exercised
+entry
+TRIP-1 EOP
+CV0034 1 1
+VL0245 1 1 Yes
+EL0141
+1 1
+FP25D
+RC0003C 1 - - TRIP-2 None 2
+SGTR-1
+SG0078A 1 1
+A701 B DI 1 1
+VL0298 1 1
+Total
+Number of 7 3 2 1 2 0 2 Yes
+Events
+Min Number - 1-2 2-4 1-2 1-2 0-2 2-3 Yes
+of Events
+Verified By Chan Chan Chan Chan Chan Chan Chan Chan
+Comment
+
+=== PAGE 63 ===
+TQ-AA-106-0204
+Page 32 of 49
+15-01 NRC ESG-8
+Critical Task #1 (CT-18):
+Isolate feed flow into and steam flow from 21 SG prior to a transition to SGTR-3
+being required.
+Basis: Failure to isolate the ruptured SG causes a loss of differential
+pressure between the ruptured SG and the intact SGs. The fact that the crew allows the
+differential pressure to dissipate and, as a result, are then forced to transition to a contingency
+ERG constitutes an incorrect performance that "necessitates the crew taking compensating
+action that would complicate the event mitigation strategy .... "
+Critical Task #2 (CT-19):
+Establish and maintain an RCS temperature so that transition from SGTR does not
+occur because temperature is too high to maintain minimum subcooling, or so low it
+causes transition to FRTS or FRSM.
+Basis: Failure to establish and maintain the correct RCS temperature
+during a SGTR leads to a transition from E-3 to a contingency ERG. This failure constitutes an
+incorrect performance that "necessitates the crew taking compensating action that would
+complicate the event mitigation strategy .... "
+
+=== PAGE 64 ===
+TQ-AA-106-0204
+Page 33 of 49
+EVENTS LEADING TO CORE DAMAGE
+Y/N Event Y/N Event
+N TRANSIENTS with PCS Unavailable N Loss of Service Water
+--
+y Steam Generator Tube Rupture N Loss ofCCW
+--
+N Loss of Offsite Power N Loss of Control Air
+N Loss of Switchgear and Pen Area Ventilation N Station Black Out
+--
+N LOCA
+--
+COMPONENT/TRAIN/SYSTEM UNAVAILABILITY THAT INCREASES CORE DAMAGE
+FREQUENCY
+COMPONENT, SYSTEM, OR
+Y/N COMPONENT. SYSTEM. OR TRAIN Y/N
+TOL\11\1
+N Containment Sump Strainers N Gas Turbine
+N SSWS Valves to Turbine Generator Area N Any Diesel Generator
+--
+N RHR Suction Line valves from Hot Leg N Auxiliary Feed Pump
+--
+y CVCS Letdown line Control and Isolation Valves N SBO Air Compressor
+--
+OPERATOR ACTIONS IMPORTANT IN PREVENTING CORE DAMAGE
+Y/N OPERATOR ACTION
+N Restore AC power during SBO
+N Connect to gas turbine
+N Trip Reactor and RCPs after loss of component cooling system
+N Re-align RHR system for re-circulation
+N Un-isolate the available CCW Heat Exchanger
+--
+N Isolate the CVCS letdown path and transfer charging suction to RWST
+N Cooldown the RCS and depressurize the system
+Y Isolate the affected Steam Generator that has the tube rupture(s)
+N Early depressurize the RCS
+N Initiate feed and bleed
+Complete this evaluation form for each ESG.

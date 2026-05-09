@@ -62,10 +62,20 @@ Adverse containment radiation threshold: <span class="hi-exam">R44A/B > 1E05 R/H
 Heat Sink CFST entry criteria for FRHS-1 (Red path): <span class="hi-exam">ALL SG NR Levels < 15% AND Total Feedwater Flow < 22E04 LB/HR</span>. Both conditions must be met — low NR levels alone is not sufficient.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q83</div>
+Concurrent CFST priorities: an FRTS PURPLE path (RCS Cooldown &gt; 100&deg;F/hr with T-Colds 230-280&deg;F) takes precedence over an FRSM YELLOW path. <span class="hi-exam">FRTS-1 PURPLE is higher priority than FRSM-2 YELLOW</span> in the CFST color hierarchy. With Source Range NIs not energized, the YELLOW SR/SM path for FRSM-2 is driven by IR SUR (required to be more negative than -0.2 dpm to avoid YELLOW), but FRTS PURPLE still wins.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q76</div>
+SPDS use restriction: <span class="hi-exam">"SPDS is not designed to be used as a primary indication, and no actions should be based upon SPDS indications without verification of the primary indications, which are the installed Control Room 1E instruments."</span> Even when SPDS shows a Heat Sink Red Path on TRIP-1 exit, the crew does NOT immediately transition to FRHS-1; the procedure-in-effect (e.g., EOP-TRIP-2 step 3) is followed first using primary 1E indications. CFSTs become active upon exit from EOP-TRIP-1.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]], [[EOP-FRCE-2 — Response to Containment Flooding]], [[EOP-FRCE-3 — Response to High Containment Radiation Levels]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
+- Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]], [[EOP-FRCE-2 — Response to Containment Flooding]], [[EOP-FRCE-3 — Response to High Containment Radiation Levels]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRSM-2 — Response to Loss of Core Shutdown]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]]
 - Related systems: [[RVLIS]], [[RPS/SSPS]], [[Incores]], [[Containment]], [[Radiation Monitoring]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
-- Related exam questions: [[2018 Q47]], [[2018 Q74]], [[2018 Q75]], [[2018 Q80]], [[2018 Q85]], [[2019 Q46]], [[2019 Q75]], [[2020 Q24]], [[2020 Q26]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2016 Q76]], [[2016 Q83]], [[2018 Q47]], [[2018 Q74]], [[2018 Q75]], [[2018 Q80]], [[2018 Q85]], [[2019 Q46]], [[2019 Q75]], [[2020 Q24]], [[2020 Q26]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

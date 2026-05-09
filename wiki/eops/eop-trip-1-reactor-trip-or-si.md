@@ -113,6 +113,16 @@ Step 17, CCW Pump Operation Evaluation: during MODE III (LBLOCA + LOOP), <span c
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q32</div>
+SBLOCA in EOP-TRIP-1: with RCS pressure at 1600 psig and one SI pump (11 SI) failed, starting that pump <span class="hi-exam">does NOT increase total ECCS injection flow</span> — RCS pressure (1600 psig) exceeds the <span class="hi-exam">SI pump shutoff head of <span class="val-trip">1520 psid</span></span>, so the pump cannot deliver against the RCS. Total ECCS flow remains at the existing 400 gpm (charging pump contribution).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q39</div>
+SEC loading verification step in EOP-TRIP-1 (2-EOP-TRIP-1 p.1, rev 30): the PO verifies SEC loading after SI. With <span class="hi-exam">SEC BLOCK switches on 2RP1 inoperable</span>, equipment that did not auto-start cannot be started normally because the SEC inhibit cannot be removed. Workaround: <span class="hi-exam">deenergize the corresponding 115V Vital Instrument Bus (VIB)</span> that powers the train SEC — this clears the SEC inhibit and allows the affected pump/compressor to be started. To start 21 Charging Pump (B), 21 SI Pump (A), and #2 ECAC (C), all three VIBs (<span class="hi-exam">2AVIB24, 2BVIB27, 2CVIB9</span>) must be deenergized.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q98</div>
 ATWS at 4% power (reactor fails to trip on 21 SG LO-LO Level): IAW EOP-TRIP-1, the crew will <span class="hi-exam">MANUALLY insert control rods</span> because at 4% power (turbine not online), automatic rod insertion will NOT exceed <span class="hi-exam">48 steps/minute</span> — the threshold in the basis document for allowing automatic insertion. Since the reactor is NOT tripped (all CR attempts failed), the crew will <span class="hi-exam">go to EOP-FRSM-1 (Response to Nuclear Power Generation)</span>. <span class="hi-trap">Trap: reactor power being less than 5% does NOT mean the reactor trip is confirmed — the TRIP-1 Step 2 criteria (power range NI <5%, IR dropping, IR startup rate negative) must ALL be met AT THE TIME the step is read by the NSS.</span>
 </div>
@@ -127,12 +137,52 @@ EOP-TRIP-1 entered after reactor trip from 22 RCP seal failure (seal leakoff >6 
 EOP-TRIP-1 entered after LBLOCA during orderly unit shutdown. <span class="hi-exam">Both trains of SI fail to auto-actuate</span>; one keyswitch also fails to manually actuate. RO must use the other train keyswitch to initiate SI on both trains <span class="hi-exam">(CT#1: CT-2)</span>. During TRIP-1, <span class="hi-exam">2B SEC fails to actuate</span> — crew blocks, resets, and manually starts safeguards loads using Table A. Containment pressure >15 psig triggers Phase B and Spray actuation. Transitions to EOP-LOCA-1.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q65</div>
+For a single faulted (unisolable) SG event with successful MSLI, the flow path after EOP-TRIP-1 is to <span class="hi-exam">EOP-LOSC-1</span>. <span class="hi-exam">SI is NOT reset in TRIP-1</span> — SI reset (and the subsequent Phase A reset) is part of LOSC-1 actions. SS94 (SG B/D Sample Valves) cannot be reopened in TRIP-1 because Phase A is still actuated; the reset sequence is performed in LOSC-1.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q74</div>
+When an AOP (e.g., S2.OP-AB.STM-0001) calls for a reactor trip during AOP performance, the AOP is exited and EOP-TRIP-1 is entered (per OP-AA-101-111-1003 Step 4.4.1). After EOP-TRIP-1 actions are completed, <span class="hi-exam">the AOP entry conditions must be re-evaluated</span> — if still met, the <span class="hi-exam">AOP is re-entered from the beginning</span>, not from where it was left.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+TRIP-1 was performed with a transition to FRHS-1, Loss of Secondary Heat Sink, made at <span class="hi-exam">Step 20.1</span> (procedure-directed transition from TRIP-1 to FRHS-1, before CFST monitoring at Step 30). Pre-trip event: MSLB at mixing bottle, auto SI, Main Turbine manually tripped, MSLI failed, all AFW lost.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+EOP-TRIP-1 entered after manual reactor trip and SI on uncontrolled rise in 21 SG NR/WR level (21 SGTR escalating from a tube leak). Key TRIP-1 verifications: 21 and 22CA330s shut, containment pressure remains &lt;15 psig, no high steam flow, all 4KV vital buses energized, RCS temp stable at/trending to <span class="hi-exam">547&deg;F</span>, RCS pressure &gt;1350 psig with seal injection to all RCPs, RTBs both open, PZR PORVs shut with Block valves open. PO maintains AFW flow ≥<span class="hi-exam">22E4 lbm/hr</span> until at least one SG NR level &gt;9%, then maintains 19-33%. PO reports NR or WR level rising in 21 SG → CRS transitions to EOP-SGTR-1. Note 21 AFW pump trips after SI; PO redistributes AFW from 22 (21/22 SGs) and 23 (all SGs) AFW pumps as needed. The CT to isolate 21 SG (CT-18) begins after the SGTR-1 transition.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+EOP-TRIP-1 entered after a manual reactor trip on a 21 SG steam leak in containment escalating to rupture. Auto MSLI fails on all 4 MSIVs (RP0279A/B), and auto SI fails (RP0274A/B); RO <span class="hi-exam">manually initiates SI</span>. With ALL SGs faulted, AFW flow is NOT isolated to any SG; PO maintains AFW flow ≥<span class="hi-exam">22E4 lbm/hr</span> until at least one SG NR level is &gt;15% (adverse), then 19-33%. <span class="hi-exam">21 AFW pump trips ~5 minutes after Rx trip</span>. Containment pressure rises &gt;15 psig; both Containment Spray pumps fail to auto-start on hi-hi pressure → <span class="hi-exam">CT#1 (CT-3): RO blocks 2A and 2C SECs, PO resets 2A and 2C SECs, RO manually starts 21 and 22 CS pumps</span> before a containment CSF red path challenge develops. CRS dispatches operators to place valves from Table D (locally close MSIVs) in safeguards position. PO reports all SG pressures dropping in uncontrolled manner / completely depressurized → CRS transitions to EOP-LOSC-1 (CFSTs in effect on transition out of TRIP-1; STA reports to control room 10 min after summon to monitor CFSTs).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-7</div>
+EOP-TRIP-1 entered as the immediate-action procedure when CRS directs reactor trip during a power reduction with rising main turbine bearing vibrations approaching trip criteria. <span class="hi-exam">Reactor will NOT trip — ATWT</span>. RO performs all CR trip attempts (Rx Trip Handles, RTBs, RDMG set breakers) — all fail. RO trips Main Turbine and ensures rod insertion (auto or manual). RO reports immediate actions complete. CRS confirms reactor will NOT trip and transitions to <span class="hi-exam">EOP-FRSM-1 (Response to Nuclear Power Generation)</span>. After EOP-FRSM-1 is completed (rods fully in / RTBs locally opened / SDM verified), the crew returns to procedure in effect (EOP-TRIP-1 past Immediate Actions or transition to EOP-TRIP-2).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-8</div>
+Two passes through EOP-TRIP-1. First entry: Rx trip on RCS Low Flow following loss of 2E 4KV Group Bus (loss of 22 RCP) — SI not actuated/required, so transition to EOP-TRIP-2. Second entry: re-entered when 21 SG tube leak escalates to rupture (~400 gpm). RO initiates SI on Train B and reports <span class="hi-exam">Train B SI did NOT initiate</span> (malfunction enabled because Train B initiated first); RO successfully initiates Train A SI. Immediate actions verified, all 4KV vital buses energized, SECs functional except <span class="hi-exam">2CV4 misaligned</span> (the failed letdown CIV from earlier event). RO closes charging mini flow valves with RCS &lt;1500 psig and BIT flow established, stops RCPs at 1350 psig with charging &ge;100 gpm via BIT. PO reports no faulted SGs; CRS transitions to <span class="hi-exam">EOP-SGTR-1</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #1</div>
+EOP-TRIP-1 entered after manual reactor trip and SI when a 150 gpm SBLOCA prevents PZR level from being maintained &gt;17%. <span class="hi-exam">CT#1 (CT-4) — establish at least 22E4 lbm/hr AFW flow before transition to FRHS-1 is required:</span> 21 and 22 AFW pumps fail to start because <span class="hi-exam">SEC loading is not complete on 2A and 2B vital buses</span>; 23 AFW pump starts but provides no flow. Crew blocks 2A/2B SECs and attempts reset — <span class="hi-exam">2A SEC will not reset</span>. CRS dispatches operator to deenergize 2A SEC; once deenergized, RO manually starts 22 AFW pump (and 21 AFW pump). <span class="hi-exam">CT#2 (CT-6) — establish flow from at least one charging/SI pump prior to transition out of TRIP-1:</span> safeguard valve verification reveals <span class="hi-exam">2SJ12 and 2SJ13 BIT isolation valves did not open</span>; RO manually opens 2SJ12 and 2SJ13 to establish BIT flow before transitioning out of TRIP-1. Other key TRIP-1 verifications: 21 and 22CA330s shut, containment pressure remains &lt;15 psig, no high steam flow, all 4KV vital buses energized, CAV in AP mode, RCS pressure &gt;1350 psig with seal injection to all RCPs, charging flow &ge;100 gpm on SI charging flow meter. Radiation monitor channels in Table F: 2 or more channels rising or in warning/alarm — CRS transitions to EOP-LOCA-1.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment Spray]], [[Main Turbine]], [[CCW]]
 - Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]], [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
-- Related exam questions: [[2018 Q49]], [[2018 Q68]], [[2018 Q98]], [[2019 Q48]], [[2019 Q49]], [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
-- Related JPMs: [[2018 JPM Sim-g]], [[2018 JPM Sim-h]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
-- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam questions: [[2016 Q32]], [[2016 Q39]], [[2016 Q65]], [[2016 Q74]], [[2016 Q76]], [[2016 Q78]], [[2016 Q90]], [[2018 Q49]], [[2018 Q68]], [[2018 Q98]], [[2019 Q48]], [[2019 Q49]], [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]]
+- Related JPMs: [[2018 JPM Sim-g]], [[2018 JPM Sim-h]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2016 JPM Sim-h]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
+- Related exam: [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
