@@ -149,11 +149,26 @@ After a manual main turbine trip (e.g., RTBs failed and operators tripped via th
 Loss of 2A 115VAC VIB AFW impact (no SI): <span class="hi-exam">23AF21 and 24AF21 fail closed</span> due to pressure override as power is lost to the AFW discharge pressure transmitter — power is also lost to the AF21 valve controllers. AB.115-0001 Step 13 dispatches an <span class="hi-exam">NEO to locally throttle 23AF21 and 24AF21</span>. <span class="hi-trap">Without an SEC actuation, 21 AFW Pump does NOT auto-start on a Rx trip alone — and manual start is not required by AB.115-0001 for this condition. PRESSURE OVERRIDE DEFEAT is NOT useful here because power is lost to the valve controllers themselves, not just the transmitter.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q51</div>
+Trip of both SGFPs caused by FW Isolation: the trip-of-both-SGFPs MDAFW auto-start signal is <span class="hi-exam">inhibited when the SGFP trips are caused by a FW Isolation</span>. With 21 SGFP already manually tripped (per S2.OP-SO.CN-0002) and 24 SG NR &gt;<span class="val-trip">67%</span> driving FW Isolation, both SGFPs trip but no AFW pumps auto-start immediately. SG NR levels remain above the AFW pump auto-start setpoint of <span class="val-alarm">9%</span> at 35% initial power, so all AFW pumps would only auto-start if levels fall &lt;9%. EOP-TRIP-2 step 3 (NO path) directs operators to <span class="hi-exam">start 21–23 AFW pumps as necessary to establish &gt;<span class="val-normal">22E4 lbm/hr</span> total AFW flow</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q53</div>
+<span class="hi-exam">21-23AF141 (AUX FDWTR PMP INLET AUTO VENT RLSE) valves</span> design purpose: <span class="hi-exam">to facilitate filling lines upon aligning alternate water sources to the suction header</span>. Alternate sources align through the <span class="hi-exam">normally jacked-closed AF52 Alternate Suction Valves</span> from <span class="hi-exam">Demin Water, Fresh Water / Fire Protection, and Service Water</span>. Per S2.OP-SO.AF-0001 Section 5.10 (Alternate Sources Alignment), operators ensure <span class="hi-exam">21-23AF140 Auto Vent Isolation Valves</span> are open, allowing the alternate suction line to fill and vent through the <span class="hi-exam">AF141 auto vents, which close when the line is vented</span>. Prevents AFW line voiding and water hammer prior to AFW pump start on alternate source.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q54</div>
+AFW Pressure Override circuit (runout protection) — pump-to-AF21 mapping: the Pressure Override circuit holds the AFW pump discharge AF21 valves <span class="hi-exam">SHUT until AFW pump discharge pressure rises above the runout setpoint</span>, then permits them to open. During normal standby, this keeps AF21s shut even though normal valve demand is set to <span class="val-normal">~98%</span>. With Pressure Override removed from a single pump, that pump's associated AF21s will <span class="hi-exam">open to current demand</span>. <span class="hi-exam">Salem Unit 1 mapping: 11 AFW pump feeds 13 and 14 AF21s only; 12 AFW pump feeds 11 and 12 AF21s</span> — pump number does NOT match AF21 number on the same SG.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]], [[AB.115-0001 — Loss of 115V Vital Instrument Bus]]
-- Related exam questions: [[2016 Q3]], [[2016 Q15]], [[2016 Q20]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
+- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]], [[AB.115-0001 — Loss of 115V Vital Instrument Bus]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]], [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]]
+- Related exam questions: [[2016 Q3]], [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

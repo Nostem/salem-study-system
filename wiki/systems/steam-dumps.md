@@ -72,11 +72,16 @@ EOP-FRHS-1 condensate pump feed: isolate all MS lines EXCEPT the selected SG (22
 BYPASS TAVG pushbuttons for post-LOCA cooldown: Train A and Train B BYPASS TAVG blocking solenoids are in <span class="hi-exam">SERIES</span> — <span class="hi-exam">BOTH A AND B must be depressed</span> to allow condenser steam dumps to function when TAVG &lt; <span class="val-trip">543 &deg;F</span>. Per EOP-LOCA-2 Step 11, cooldown rate limit is <span class="hi-exam">100 &deg;F/HR</span> (vs 50 &deg;F/HR for normal IOPs). <span class="hi-trap">Trap: the arming/disarming solenoids for individual TB40 valves are also in series (A OR B can disarm a single valve per Q19 Q40), but the BYPASS TAVG function requires BOTH trains — both bezel pushbuttons must be depressed.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q52</div>
+P-12 vs FW Interlock — what prevents over-cooling on an uncomplicated Rx trip from 100% power: <span class="hi-exam">P-12 is 3/4 RCS Tavgs &lt;<span class="val-alarm">543°F</span> and shuts the Steam Dump valves</span>. On an uncomplicated Rx trip, <span class="hi-exam">steam dumps modulate to control Tavg at ~547°F</span>, so RCS Tavg does NOT reach 543°F and P-12 does NOT actuate. The actual over-cooling protection comes from the <span class="hi-exam">Feedwater Interlock (3/4 Tavgs &lt;554°F + reactor trip)</span>, which closes the BF19s and BF40 Feed Reg Valves to terminate feedwater.
+</div>
+
 ## Connections
 
-- Related systems: [[Main Steam]], [[RCS]], [[115V AC]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2016 Q50]], [[2018 Q35]], [[2018 Q70]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
+- Related systems: [[Main Steam]], [[RCS]], [[115V AC]], [[Feed & Condensate]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-2 — Reactor Trip Response]]
+- Related exam questions: [[2016 Q50]], [[2016 Q52]], [[2018 Q35]], [[2018 Q70]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
 - Related JPMs: [[2023 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

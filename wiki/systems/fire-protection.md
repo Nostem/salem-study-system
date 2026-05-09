@@ -42,9 +42,17 @@ Fire alarm response: coded fire alarm #91 on 2RP5 = <span class="hi-exam">Aux. B
 Containment fire response: <span class="hi-exam">2FP147 (Fire Protection Containment Isolation Valve) must be manually opened from the control room</span> after tripping the Reactor, Turbine, and all RCPs. 2FP147 does NOT receive an automatic open signal. Fire pumps will start once 2FP147 is opened. Containment deluge valves are automatic. <span class="hi-trap">PORV BLOCK valve EMER CLOSE is the action for a relay room fire, not a containment fire.</span>
 </div>
 
+## Alternate AFW Suction Source
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q53</div>
+Fresh Water / Fire Protection is one of three <span class="hi-exam">alternate suction sources for the AFW pump suction header</span> (along with Demin Water and Service Water). Alignment is through the <span class="hi-exam">normally jacked-closed AF52 Alternate Suction Valves</span> per S2.OP-SO.AF-0001 Section 5.10.
+</div>
+
 ## Connections
 
-- Related procedures: [[AB.FIRE-0001 — Control Room Fire Response]], [[AB.FP-0001 — Fire Protection System Malfunction]], [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]]
-- Related exam questions: [[2019 Q38]], [[2020 Q65]], [[2020 Q75]]
+- Related systems: [[AFW]]
+- Related procedures: [[AB.FIRE-0001 — Control Room Fire Response]], [[AB.FP-0001 — Fire Protection System Malfunction]], [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]]
+- Related exam questions: [[2016 Q53]], [[2019 Q38]], [[2020 Q65]], [[2020 Q75]]
 - Related JPMs: [[2022 JPM Sim-h]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]

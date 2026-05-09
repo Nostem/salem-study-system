@@ -27,8 +27,14 @@ When an SGFP is removed from service per S2.OP-SO.CN-0002, the procedure ensures
 SGFP Turbine Overspeed Trip setpoint: <span class="hi-exam">6080 rpm</span>. The SGFP turbine design capacity is <span class="val-normal">5500 rpm</span>. <span class="hi-trap">Do not confuse with Main Turbine overspeed trips: 108% = 1944 rpm, 110% = 1980 rpm. SGFP turbines operate at much higher RPM.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q51</div>
+SGFP manual trip during shutdown: at 35% power per S2.OP-IO.ZZ-0004, an SGFP can be manually tripped per S2.OP-SO.CN-0002. With one SGFP already manually tripped, a subsequent BF19 fail-open driving SG NR &gt;<span class="val-trip">67%</span> initiates Feedwater Isolation, which trips the remaining SGFP. <span class="hi-exam">The trip-of-both-SGFPs MDAFW auto-start is INHIBITED when the cause of both SGFP trips is FW Isolation</span> — no AFW pumps start immediately, and SG NR levels remain &gt;<span class="val-alarm">9%</span> at this initial power so the level-based AFW auto-start does not actuate either.
+</div>
+
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[AFW]]
-- Related exam questions: [[2019 Q18]], [[2020 Q44]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]]
+- Related exam questions: [[2016 Q51]], [[2019 Q18]], [[2020 Q44]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

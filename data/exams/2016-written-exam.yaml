@@ -740,3 +740,80 @@
     ka_importance: 2.8
     type: RO
     tier_group: "Tier 2/Group 1"
+
+  - number: 51
+    topic: "24BF19 fails open at 35% power — FW Isolation trips both SGFPs but no AFW auto-start (35% > 9%)"
+    answer: B
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - feedwater-and-condensate
+      - auxiliary-feedwater
+      - steam-generators
+    tech_specs: []
+    ka: "059000 A2.01"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 52
+    topic: "FW Interlock prevents over-cooling on uncomplicated Rx trip from 100% (P-12 wrong: actuates at <543°F)"
+    answer: D
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - feedwater-and-condensate
+      - steam-dumps
+      - reactor-coolant-system
+      - excore-nis
+    tech_specs: []
+    ka: "059000 K1.05"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 53
+    topic: "21-23AF141 Auto Vent Release valves — fill lines on aligning alternate water sources to AFW suction"
+    answer: A
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - auxiliary-feedwater
+      - service-water
+      - demin-water
+      - fire-protection
+    tech_specs: []
+    ka: "061000 K5.05"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 54
+    topic: "Pressure Override removed from 11 AFW pump — 13AF21 and 14AF21 open to current AF21 demand"
+    answer: D
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - auxiliary-feedwater
+    tech_specs: []
+    ka: "061000 K6.01"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 55
+    topic: "24 SPT degrades to 3600V — 2B Vital Bus stripped and energized by EDG in BLACKOUT loading (Mode II*)"
+    answer: D
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Editorially Modified"
+    systems:
+      - 4kv
+      - secs
+      - diesel-generators
+    tech_specs: []
+    ka: "062000 K3.02"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 2/Group 1"

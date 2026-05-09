@@ -67,6 +67,11 @@ When 23ASD (23 SPT Supply Breaker to 2A 4KV Vital Bus) spuriously opens while <s
 Degraded voltage relays actuate at <span class="val-alarm">&lt; 95%</span> of nominal 4160V (sustained for <span class="hi-exam">&gt; 13 seconds</span>). Fast bus transfer relays actuate at <span class="hi-exam">&lt; 70%</span> of nominal. When degraded voltage is detected on a single bus (e.g., 3600V from failing SPT), and <span class="hi-exam">SI and SECs have been reset</span>, the SEC actuates in <span class="hi-exam">Mode II* (Single Bus Degraded UV)</span> — strips the bus from offsite power and loads it onto its EDG. <span class="hi-trap">Mode III and Mode IV require an active SI signal — after SI/SEC reset, SEC can only actuate in Mode I (Blackout) or Mode II* (Single Bus Degraded UV). 3600V is above the 70% fast transfer threshold (2912V) so no fast transfer occurs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q55</div>
+24 SPT degrades to <span class="val-alarm">3600V</span> with 2B Vital Bus aligned to 24 SPT after SI/SEC reset (EDGs running unloaded): <span class="hi-exam">3600V is below the degraded voltage (95%) relay setpoint</span> so the relay generates a UV signal for 2B bus. <span class="hi-exam">3600V is NOT &lt;70% of nominal</span> (70% = 2912V), so the vital bus fast transfer relay does NOT energize and 2B does NOT fast-transfer to 23 SPT. With SI already RESET, the SEC cannot actuate in Mode III. The <span class="hi-exam">2B SEC actuates and strips 2B 4KV bus from offsite power, loading the bus from its EDG</span> in BLACKOUT loading (Mode II* — Single Bus UV).
+</div>
+
 ## 1A 4KV Bus Loads
 
 <div class="callout callout-exam">
@@ -131,7 +136,7 @@ After a manual main turbine trip from 100% power (e.g., RTBs failed, operator tr
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]]
-- Related exam questions: [[2016 Q3]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
+- Related exam questions: [[2016 Q3]], [[2016 Q55]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
 - Related JPMs: [[2018 JPM Sim-g]], [[2022 JPM Sim-g]], [[2020 JPM Sim-h]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

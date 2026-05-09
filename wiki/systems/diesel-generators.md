@@ -167,10 +167,15 @@ Start and load 2C EDG during LOPA per EOP-LOPA-1: all three EDGs initially unava
 EDG paralleled to grid during surveillance (ST.DG-0003) + LOOP: <span class="hi-exam">2C EDG Output Breaker will OPEN then reclose</span>. Even though 2C EDG was already running and loaded, when the LOOP causes 2A and 2B buses to sense Instantaneous UV, all three SECs enter Mode II (Blackout Only). Mode II strips all loads and opens the EDG output breaker before reclosing it and sequencing blackout loads. <span class="hi-trap">Trap: the breaker does NOT remain closed — Mode II requires a full strip-and-reload cycle even for the already-running EDG.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q55</div>
+EDG loading after SI/SEC reset on a single SPT degradation: with all SECs already reset and EDGs running unloaded, a single bus sustained degraded voltage (e.g., <span class="val-alarm">3600V</span> on 24 SPT, &lt;95% relay setpoint) actuates that bus's SEC in Mode II*. The <span class="hi-exam">EDG output breaker closes onto the stripped 4KV vital bus and the SEC sequences BLACKOUT loads</span> — not Accident loads (Mode III requires an active SI signal, which has been reset).
+</div>
+
 ## Connections
 
-- Related exam questions: [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
+- Related exam questions: [[2016 Q55]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
 - Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
 - Related JPMs: [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exams: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

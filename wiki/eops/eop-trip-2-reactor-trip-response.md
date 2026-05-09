@@ -34,6 +34,16 @@ The longer RWST time compensates for the lower boron concentration. <span class=
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q51</div>
+EOP-TRIP-2 step 3 — total AFW flow check after Rx trip: if total AFW flow is &lt;<span class="hi-exam"><span class="val-normal">22E4 lbm/hr</span></span>, the NO path directs operators to <span class="hi-exam">start 21–23 AFW pumps as necessary to establish &gt;22E4 lbm/hr</span>. This is the immediate operator action when the SGFP-trip MDAFW auto-start did NOT actuate (e.g., when both SGFP trips were caused by FW Isolation, which inhibits the auto-start). FRHS-1 transition from a CFST Heat Sink Red Path is plausible but only after TRIP-2 has been entered.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q52</div>
+On an uncomplicated manual Rx trip, EOP-TRIP-2 conditions allow steam dumps to <span class="hi-exam">modulate to control Tavg at ~547°F</span> — RCS temperature does not reach the P-12 setpoint of 543°F. Over-cooling protection is provided by the <span class="hi-exam">Feedwater Interlock (3/4 Tavgs &lt;554°F + Rx trip)</span>, which closes the BF19s and BF40 Feed Reg Valves. Feedwater Isolation does NOT actuate on an uncomplicated trip (no SI, no SG NR &gt;67%).
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q40</div>
 <span class="hi-exam">EOP-TRIP-2 step 22</span> (Reactor Trip Response, 2-EOP-TRIP-2 Sh 4, rev 30): step asks if both IRNI channels are reading &lt;<span class="val-alarm">7E-11 A</span>. If they are NOT, it then asks if <span class="hi-exam">undercompensation is preventing proper operation</span>. If yes, the operator is instructed to <span class="hi-exam">manually energize Source Range channels</span>. IRNI channels normally continue to lower until off-scale on the control console, with automatic SR re-energization at 7E-11 A. An undercompensated IR detector reads abnormally HIGH (more low-energy gammas seen) and shows abnormally low SUR — both signatures of undercompensation.
 </div>
@@ -67,7 +77,7 @@ Transitioned from EOP-TRIP-1 following reactor trip on 22 RCP seal failure (no S
 
 - Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]], [[Excore NIs]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
-- Related exam questions: [[2016 Q8]], [[2016 Q40]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
+- Related exam questions: [[2016 Q8]], [[2016 Q40]], [[2016 Q51]], [[2016 Q52]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
