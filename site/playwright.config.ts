@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  testMatch: ['ui-test.ts', 'quiz-test.ts', 'quiz-v2-test.ts', 'graph-v2-test.ts', 'auth-test.ts', 'contact-test.ts', 'navigation-test.ts', 'history-test.ts'],
+  testMatch: ['ui-test.ts', 'quiz-test.ts', 'quiz-v2-test.ts', 'quiz-v2-play-test.ts', 'graph-v2-test.ts', 'auth-test.ts', 'contact-test.ts', 'navigation-test.ts', 'history-test.ts'],
   timeout: 30000,
   use: {
     baseURL: 'http://localhost:4321/salem-study-system/',

@@ -110,12 +110,39 @@ shows a small read-only **session preview** panel listing the deterministic
 slug order produced by `buildQuizSession`. The default browse experience and
 all existing test selectors are preserved.
 
+## Play surface (experimental, local-only)
+
+`/quiz-v2/play/` is an experimental quiz runner built on top of
+`buildQuizSession`. It is `noindex` and **does not** persist anything,
+talk to Supabase, call any grading API, or generate question text. All
+state — selected answers, current index, reveal — lives in the page only
+and is lost on reload.
+
+Query params:
+
+| param   | example                | notes                                                              |
+| ------- | ---------------------- | ------------------------------------------------------------------ |
+| `seed`  | `?seed=foo`            | Forwarded to `buildQuizSession`; defaults to `salem-quiz-v2-default` |
+| `count` | `?count=10`            | Hard cap on the session length; defaults to `10`                   |
+| `years` | `?years=2022,2023`     | `examYear` whitelist                                               |
+| `tracks`| `?tracks=RO,SRO`       | Track whitelist                                                    |
+| `ref`   | `?ref=exclude`         | `include` (default) / `exclude` / `only`                           |
+
+UX: one question at a time, click a choice to lock the answer and reveal
+the official label and explanation. Prev/Next walk the deterministic slug
+order. Each question header includes a `view in preview` link back to
+`/quiz-v2/?slug=…` for source-traceable digging.
+
+Playwright coverage lives at `site/tests/quiz-v2-play-test.ts`: route load,
+answer selection + reveal, next/prev navigation, and seed determinism
+across reloads.
+
 ## What this is not
 
 This is foundation only. Out of scope for this milestone:
 
 - session persistence (Supabase or otherwise),
-- in-page quiz runner / grading,
+- a graded quiz runner with scoring, retry, or progress tracking,
 - choice-order randomization,
 - topic filter UI,
 - replacing production `/quiz/`.
