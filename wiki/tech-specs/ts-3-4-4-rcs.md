@@ -507,9 +507,14 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-4-1.pdf" target="_blank">View Tech Spec PDF (Loops)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-3.pdf" target="_blank">View Tech Spec PDF (Safety Valves)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-5.pdf" target="_blank">View Tech Spec PDF (PORVs)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-7.pdf" target="_blank">View Tech Spec PDF (Leakage)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-4.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE PZR Code safety valve is permitted to be inoperable at a time</span>. With ALL THREE PZR Code Safety Valves having an actual lift pressure of <span class="hi-exam">2735 psig</span> (above the LCO acceptance band, due to a faulty test device used during the refueling outage), all three are inoperable simultaneously — no specific TS action exists for that condition, so <span class="hi-exam">LCO 3.0.3 applies</span>: 1 hour to begin shutdown + 6 hours to Hot Standby = <span class="hi-exam">7 hours total</span>. From a 1200 discovery, Hot Standby is required by <span class="hi-exam">1900</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

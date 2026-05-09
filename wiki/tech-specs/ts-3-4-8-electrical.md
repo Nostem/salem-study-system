@@ -256,10 +256,15 @@ LCO 3.8.2.3 battery cell voltage: with 3 connected cells at 0 Volts, battery doe
 EDG monthly surveillance missed periodicity — applying SR 4.0.2: with the EDG monthly (31 day) SR last performed 33 days ago, the EDG remains <span class="hi-exam">OPERABLE</span> because <span class="hi-exam">31 + 7.75 days (25% extension) = 38.75 days has not yet been exceeded</span>. <span class="hi-trap">The 24-hour SR 4.0.3 delay time is from time of discovery and is N/A here since the SR 4.0.2 25% extension is the longer (and currently applicable) allowance.</span> A second EDG (2B) being out for scheduled maintenance does not affect 2A's surveillance-status determination.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+<span class="hi-exam">Two EDGs inoperable in MODES 1-4 (LCO 3.8.1.1 ACTIONS): 2 hours to restore one DG to OPERABLE, then if not restored, 6 hours to Hot Standby</span>. With 2A EDG already inoperable since 1200 (24-hour clock running) and 2B EDG declared inoperable at 1400 (12-hour repair estimate), the controlling clock is 2 EDGs inoperable starting at 1400 → Hot Standby by <span class="hi-exam">1400 + 2 h + 6 h = 2200</span> (does NOT drive Hot Standby by 1900).
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[4KV]], [[EDGs]], [[DC Power]], [[115V AC]]
-- Related exam questions: [[2016 Q91]], [[2018 Q21]], [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]]
+- Related exam questions: [[2016 Q91]], [[2016 Q96]], [[2018 Q21]], [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]]
 - Related JPMs: [[2020 JPM SRO-A3]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

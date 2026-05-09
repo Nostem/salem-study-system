@@ -263,8 +263,18 @@ LCO 3.0.3 exit and return to specific LCO action: when BOTH trains of Containmen
 SR 4.0.2 25% extension applied to a MONTHLY (31 day) EDG surveillance: <span class="hi-exam">31 + 7.75 days = 38.75 days total before the surveillance is required</span>. With the 2A EDG monthly surveillance last performed 33 days ago, 2A EDG remains <span class="hi-exam">OPERABLE</span> because the 25% extension has not been exceeded. <span class="hi-trap">Trap: SR 4.0.3's 24-hour delay time is from time of discovery, NOT from periodicity expiration; and SR 4.0.3 is N/A here because (a) the SR 4.0.2 allowable extension is longer and (b) 2A is not yet out of periodicity. 2B EDG being inoperable does not affect 2A's status.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+LCO 3.0.3 application — <span class="hi-exam">only ONE PZR Code Safety can be inoperable in MODES 1-3</span> per LCO 3.4.3. With all 3 PZR Code Safety valves having actual lift pressure of <span class="hi-exam">2735 psig</span> (above the LCO band), no specific TS action exists for that combined condition → <span class="hi-exam">LCO 3.0.3 applies: 1 hour to begin shutdown + 6 hours to Hot Standby = 7 hours total</span>. From discovery at 1200 → Hot Standby required by <span class="hi-exam">1900</span>. <span class="hi-trap">Trap: the other distractors all carry their own specific TS action with longer completion times (24 hours for an inoperable accumulator, 24 hours for an inoperable airlock, 2 hours + 6 hours = 8 hours for two inoperable EDGs starting at 1400) — none drive Hot-Standby-by-1900.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q97</div>
+TS 3.0.3 does NOT apply when the affected LCO has its own ACTION for the inoperable condition. With ECCS subsystem inoperable in MODE 4 (T-cold &lt; 312°F), <span class="hi-exam">LCO 3.5.3 Action a applies: restore at least one ECCS subsystem to operable status within 1 hour or be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap: the LCO 3.0.3 action ("within 1 hour, initiate action to place the unit in Cold Shutdown within the next 24 hours") is NOT applied here because LCO 3.5.3 has its own specific ACTION.</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[OP-AA-108-116 — Protected Equipment Program]]
-- Related exam questions: [[2016 Q91]], [[2018 Q86]], [[2018 Q88]], [[2018 Q96]], [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]]
+- Related exam questions: [[2016 Q91]], [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q88]], [[2018 Q96]], [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

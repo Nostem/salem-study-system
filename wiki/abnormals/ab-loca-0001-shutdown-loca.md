@@ -30,10 +30,15 @@ AB.LOCA-0001 applicability: used during <span class="hi-exam">MODE 4</span> or <
 AB.LOCA-0001 is entered from AB.RHR-0001 CAS when in <span class="hi-exam">MODE 4 with RCS inventory loss</span> (lowering PZR level and rising containment particulate monitor). The CAS directs IMMEDIATELY GO TO AB.LOCA-0001.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q100</div>
+AB.LOCA-0001 progression for an unidentified RCS leak during a normal MODE 3 cooldown (RCS pressure 870 psig, Tcs 395°F, charging 79 gpm + 10 gpm step = 89 gpm with the 45 gpm orifice in service): <span class="hi-exam">the first thing to do in AB.LOCA is isolate letdown</span>. Isolating letdown removes 45 gpm from the required charging flow necessary to maintain PZR level stable, so step 3.3 (asking if PZR level can be maintained stable or rising) will be YES. Adequate subcooling is available, and with charging flow less than 100 gpm at step 3.13, GO TO Section 4.0. <span class="hi-trap">Trap: while it is technically acceptable to enter AB.RC-0001 (RCS Leak) first, that procedure asks questions and establishes that you are in MODE 3 with accumulators isolated — which they will be since accumulator isolation occurred when pressure lowered to &lt;1000 psig per IOP-6 step 5.1.31. The "re-align charging suction to RWST and isolate containment penetrations" actions are NOT step 3.x AB.LOCA actions.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RHR]]
-- Related procedures: [[AB.RHR-0001 — Loss of RHR]], [[AB.RC-0001 — Reactor Coolant System Leak]]
+- Related systems: [[RHR]], [[CVCS]], [[RCS]]
+- Related procedures: [[AB.RHR-0001 — Loss of RHR]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]]
-- Related exam questions: [[2019 Q78]], [[2020 Q6]], [[2020 Q85]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2016 Q100]], [[2019 Q78]], [[2020 Q6]], [[2020 Q85]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

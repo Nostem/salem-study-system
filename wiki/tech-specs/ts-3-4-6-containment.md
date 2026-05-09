@@ -346,11 +346,17 @@ Covered under SR 4.6.1.6.1 above.
 TS LCO 3.6.3 containment isolation valve operability: <span class="hi-exam">2VC5 stroke time of 2.83 seconds is in the REQUIRED ACTION RANGE (> 2.0 seconds)</span> — immediately declare inoperable. Actions: (1a) TS action applicable, (1b) close and deactivate companion valve 2VC6 within <span class="hi-exam">4 hours</span>, OR (1c) isolate penetration within 4 hours, OR (1d) Hot Standby in 6 hours and Cold Shutdown in 30 hours.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+LCO 3.6.1.3 (Containment Air Locks): when an airlock is declared inoperable due to an UNSAT local leak rate test (S2.OP-ST.CAN-0004), the completion time is <span class="hi-exam">24 hours</span> to restore the airlock — does NOT drive a same-shift Hot Standby. <span class="hi-trap">Trap: easy to confuse with the 1-hour completion time of LCO 3.6.1.1 (Containment Integrity) — the airlock LCO carries its own longer completion time.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]], [[ECCS]]
 
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2018 Q88]], [[2019 Q27]], [[2019 Q28]], [[2020 Q33]], [[2023 Q54]]
+- Related procedures: [[S2.OP-ST.CAN-0004 — Containment Air Lock Local Leak Rate Test]]
+- Related exam questions: [[2016 Q96]], [[2018 Q88]], [[2019 Q27]], [[2019 Q28]], [[2020 Q33]], [[2023 Q54]]
 - Related JPMs: [[2022 JPM SRO-A3]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

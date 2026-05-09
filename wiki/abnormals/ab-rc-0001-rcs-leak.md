@@ -45,10 +45,15 @@ Event 5: RCS leak with rapidly lowering PZR level and pressure. OHA E-28 PZR HTR
 35 gpm RCS leak inside containment at 40% power. 2R11A containment radiation rising, PZR level lowering, OHA C-2 CNTMT SUMP PMP START. CRS enters AB.RC-0001 and AB.RAD-0001. RO transfers to <span class="hi-exam">centrifugal charging pump</span> IAW Step 3.14, raises charging flow. PO reduces letdown to minimum: opens <span class="hi-exam">2CV3</span>, maintains letdown pressure ~300 psig with <span class="hi-exam">2CV18</span> in manual, closes 75 gpm orifice, returns 2CV18 to auto. RO estimates leak rate; CRS initiates S2.OP-ST.RC-0008. CRS enters TSAS <span class="hi-exam">3.4.7.2.b Action b (4 hr LCO)</span> and <span class="hi-exam">3.6.1.4 (1 hr LCO)</span> for containment pressure. Leak exceeds TS limits → orderly unit shutdown. Att 1 CAS later when leak worsens to LBLOCA: <span class="hi-exam">trip reactor, confirm trip, initiate SI</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q100</div>
+<span class="hi-exam">In MODE 3 below 1000 psig with accumulators isolated</span>, an unidentified RCS leak that can be characterized by a small charging-flow step is more efficiently handled by entering AB.LOCA-0001 directly, rather than entering AB.RC-0001 first. AB.RC-0001 is "technically acceptable" but its early questions establish MODE 3 with accumulators isolated, which has already been satisfied by IOP-6 step 5.1.31 (accumulators are isolated when pressure lowers to &lt;1000 psig during the cooldown). <span class="hi-trap">Trap: an "RCS leak that can be matched by normal charging makeup capacity" with an obvious symptom does NOT require waiting to first determine whether leakrate exceeds makeup capacity before transferring to AB.LOCA — direct entry to AB.LOCA-0001 is the more efficient path under these MODE 3 / accumulators-isolated conditions.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[RCS]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
-- Related exam questions: [[2018 Q52]], [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
+- Related exam questions: [[2016 Q100]], [[2018 Q52]], [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

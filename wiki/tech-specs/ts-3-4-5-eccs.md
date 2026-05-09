@@ -247,10 +247,20 @@ Loss of one centrifugal charging pump: <span class="hi-exam">TS 3.5.2 applies �
 SR 4.5.2.b.2 (Verify that ECCS Piping Is Full Of Water) has a MONTHLY surveillance frequency. Per SR 4.0.3, the missed surveillance delay is <span class="hi-exam">24 hours or the specified frequency (31 days), whichever is greatest</span> = <span class="hi-exam">31 days from discovery</span>. A risk assessment is required for delays >24 hours.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+<span class="hi-exam">A 21 ECCS Accumulator with N2 cover-pressure lowered to 595 psig and unsuccessful initial attempts to restore</span> places the accumulator inoperable. Per LCO 3.5.1, the completion time is <span class="hi-exam">24 hours</span> to restore the accumulator to OPERABLE — does NOT drive a same-day Hot Standby requirement.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q97</div>
+LCO 3.5.3 (ECCS subsystems with RCS T-cold &lt; 312°F): <span class="hi-exam">one ECCS subsystem must be operable</span> with at least one charging pump capable of taking suction. <span class="hi-exam">Closing the suction valve of the only running charging pump renders the ECCS subsystem inoperable</span>. Per <span class="hi-exam">LCO 3.5.3 Action a</span>: <span class="hi-exam">restore at least one ECCS subsystem to operable status within 1 hour OR be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap: Action "restore one ECCS subsystem to operable or maintain RCS Tavg &lt;350°F" applies to a required-operable RHR pump becoming inoperable, NOT to charging-pump suction loss. TS 3.0.3 does NOT apply because LCO 3.5.3 has its own action for an inoperable ECCS subsystem.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RHR]], [[CVCS]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2018 Q86]], [[2018 Q96]], [[2020 Q77]], [[2023 Q91]]
+- Related exam questions: [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q96]], [[2020 Q77]], [[2023 Q91]]
 - Related JPMs: [[2018 JPM SRO-A3]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

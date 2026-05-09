@@ -38,6 +38,11 @@ During a 24 GDT release per S2.OP-SO.WG-0011, <span class="hi-exam">2R41 Channel
 2R41D (Plant Vent radiation monitor) in ALARM automatically closes: <span class="hi-exam">2WG41 (GDT Vent Control Valve — terminates waste gas release)</span>, <span class="hi-exam">2VC1 and 2VC4 dampers (containment purge)</span>, and <span class="hi-exam">2VC5 and 2VC6 dampers (containment pressure relief)</span>. Also aligns 2R45 skid to accident sampling loop.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q98</div>
+WGDT release administrative restrictions: <span class="hi-exam">only one WGDT may be released at a time</span>; <span class="hi-exam">no transfer of waste gas between WGDTs during a release</span>; <span class="hi-exam">waste GAS cannot be transferred between units</span> (waste LIQUID transfer between units IS allowed). The <span class="hi-exam">VCT purge to plant vent IS allowed concurrently</span> with a WGDT release per S1.OP-SO.WG-0011 page 16.
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.11 — Radioactive Effluents]]** — Gaseous effluent limits, monitoring
@@ -87,7 +92,7 @@ Containment Purge to Plant Vent (S2.OP-SO.WG-0006) reinstatement after temporary
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[Containment]]
-- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0010 — Discharge of 13 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]]
-- Related exam questions: [[2016 Q93]], [[2018 Q38]], [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]]
+- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0007 — Transfer of Waste Gas]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0010 — Discharge of 13 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]]
+- Related exam questions: [[2016 Q93]], [[2016 Q98]], [[2018 Q38]], [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]]
 - Related JPMs: [[2018 JPM SRO-A4]], [[2023 JPM IP-k]], [[2019 JPM IP-k]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2019 NRC Operating Exam]]

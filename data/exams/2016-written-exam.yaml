@@ -1425,3 +1425,80 @@
     ka_importance: 4.1
     type: SRO
     tier_group: "Generic"
+  - number: 96
+    topic: "Tech spec action times — only condition driving Hot Standby by 1900 (3 PZR Code Safety valves @ 2735 psig → LCO 3.0.3, 7 hr clock from 1200)"
+    answer: D
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - diesel-generators
+      - containment-systems
+      - pressurizer
+    tech_specs:
+      - ts-3-4-0-applicability
+      - ts-3-4-4-rcs
+      - ts-3-4-5-eccs
+      - ts-3-4-6-containment
+      - ts-3-4-8-electrical
+    ka: "194001G2.2.22 2.2.22"
+    ka_importance: 4.7
+    type: SRO
+    tier_group: "Generic"
+  - number: 97
+    topic: "MODE 4 ECCS — closing 21 charging suction renders only running CHP inoperable; LCO 3.5.3 Action a (1 hr restore or Cold Shutdown in next 20 hr); TS 3.0.3 not applied"
+    answer: D
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - emergency-core-cooling-systems
+      - chemical-and-volume-control-system
+      - residual-heat-removal
+    tech_specs:
+      - ts-3-4-5-eccs
+      - ts-3-4-0-applicability
+    ka: "194001G2.2.37 2.2.37"
+    ka_importance: 4.6
+    type: SRO
+    tier_group: "Generic"
+  - number: 98
+    topic: "14 WGDT release IAW S1.OP-SO.WG-0011 — only VCT purge is an allowed concurrent activity (page 16); single-tank rule, no inter-tank waste-gas transfer, no inter-unit waste-gas transfer"
+    answer: B
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - waste-gas
+    tech_specs: []
+    ka: "194001G2.3.11 2.3.11"
+    ka_importance: 4.3
+    type: SRO
+    tier_group: "Generic"
+  - number: 99
+    topic: "FRCC-2 step 15 (Continuous Action) — do NOT transition to FRTS-1 during accumulator depressurization despite RED Thermal Shock CFST; thermal soak would stop cooldown and core would boil away injected accumulator water"
+    answer: C
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "194001G2.4.4 2.4.4"
+    ka_importance: 4.7
+    type: SRO
+    tier_group: "Generic"
+  - number: 100
+    topic: "Shutdown LOCA during MODE 3 cooldown (870 psig, accumulators isolated per IOP-6 5.1.31): enter AB.LOCA-0001, isolate letdown, adjust charging, GO TO Section 4.0 (charging <100 gpm at step 3.13 after letdown isolated)"
+    answer: A
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - chemical-and-volume-control-system
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "194001G2.4.9 2.4.9"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Generic"
