@@ -24,6 +24,11 @@ Referenced as 2-LOSC-1 for design bases MSLB + LOOP event. Containment cooling d
 For a single main steam line rupture (e.g., upstream of 24MS167), after MSLI and feed isolation the cooldown of the RCS comes from steam blowing out the broken steamline. Because <span class="hi-exam">break flow is a function of faulted SG pressure</span>, as the faulted SG depressurizes the cooldown rate <span class="hi-exam">lowers continuously</span> over time — it does NOT remain constant until the SG blows dry. <span class="hi-trap">Initiating AFW to the ruptured SG to keep tubes wet is an EOP-LOSC-2 action that is only performed if ALL SGs are faulted; for a single faulted SG, AFW is left isolated.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q65</div>
+LOSC-1 step sequence for reopening 21-24 SS94 (SG B/D Sample Valves) after a single faulted SG event: <span class="hi-exam">SI is NOT reset in TRIP-1 or LOSC-1</span>. The SGBD sample isolation reset is performed in <span class="hi-exam">LOSC-1 step 6.1</span> in order to open the SS94s. <span class="hi-exam">The step PRIOR to that is RESET PHASE A</span> — Phase A must be reset before SS94s can be opened. The blowdown isolation bypass <span class="hi-exam">only bypasses the lo-lo level input into the AFW auto-start circuit</span> (which closes the SS94s) and does NOT defeat Phase A. <span class="hi-trap">Trap: with SGBD sample isolation bypass already reset, the remaining gate on SS94 reopening is Phase A — if either Train A or Train B Phase A reset PB failed to reset, the SS94s remain closed.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2020 #3</div>
 Entered from EOP-TRIP-1 on <span class="hi-exam">21 SG pressure dropping in uncontrolled manner</span> (feedwater line break inside containment). MSLI previously initiated. PO closes/verifies closed: <span class="hi-exam">21BF13, 21BF40, 21MS7, 21MS10, 21MS18, 21MS167, and 21GB4</span> to isolate faulted 21 SG <span class="hi-exam">(CT-17 Part 2)</span>. Trips and stops 23 AFW pump. Dispatches operator to close 21MS45. PO reports 21 SG is faulted, other SGs NOT depressurizing. RCS temperature rising — PO adjusts MS10s to stabilize. Transition to <span class="hi-exam">EOP-TRIP-3</span> when RCS subcooling &gt;0 F, PZR level &gt;11%, RCS pressure stable/rising.
@@ -33,6 +38,6 @@ Entered from EOP-TRIP-1 on <span class="hi-exam">21 SG pressure dropping in unco
 
 - Related systems: [[CFCUs]], [[Containment Spray]], [[Main Steam]], [[Feed & Condensate]], [[AFW]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-3 — SI Termination]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related exam questions: [[2016 Q16]], [[2020 Q9]]
+- Related exam questions: [[2016 Q16]], [[2016 Q65]], [[2020 Q9]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]

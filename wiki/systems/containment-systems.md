@@ -264,6 +264,11 @@ When adverse containment conditions exist, EOP setpoints for level instruments a
 With containment pressure at <span class="hi-exam">5 psig</span> (adverse conditions), the required SG NR level for RCP start in EOP-FRCC-1 is <span class="hi-exam">>= 15%</span> instead of the normal 9%. <span class="hi-trap">Trap: using normal containment criteria when adverse conditions exist will overestimate the number of available RCPs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q65</div>
+SS94 (SG B/D Sample Valves) cannot be reopened until <span class="hi-exam">Phase A isolation is RESET</span>. For a single faulted SG (unisolable steam leak — e.g., upstream of 22MS167), the flow path is <span class="hi-exam">EOP-TRIP-1 → EOP-LOSC-1</span>; SI is NOT reset in TRIP-1 nor in LOSC-1. The SGBD sample isolation reset is performed in <span class="hi-exam">LOSC-1 step 6.1</span> in order to open the SS94s. <span class="hi-exam">The step prior to that is RESET PHASE A</span>. The blowdown isolation bypass <span class="hi-exam">only bypasses the lo-lo level input into the AFW auto-start circuit</span> (which closes the SS94s) — it does NOT defeat Phase A. If Phase A has not been reset, the SS94s cannot be reopened. SS94s are supplied air from outside containment. <span class="hi-trap">Trap: 22 SG NR &lt;9% is not the cause (blowdown isolation bypass already RESET); CA330s reopening is performed AFTER Phase A reset (so CA330 status is downstream of Phase A); SGFP trip signals do not affect SS94 operability — only Phase A reset gates SS94 reopening.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 RO-A1</div>
 EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free volume at STP: <span class="hi-exam">V = 2.62E06 x Tfact</span> where Tfact = 492/Tabs. At 140F containment temp: Tabs = 600R, Tfact = 0.82, V = 2148400 ft3. Maximum allowable hydrogen concentration is <span class="hi-exam">3.0%</span> — vent volume limited to (3.0% - current H2%) x V / 100%.
@@ -274,7 +279,7 @@ EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free vol
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
+- Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q65]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

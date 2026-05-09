@@ -887,3 +887,74 @@
     ka_importance: 3.8
     type: RO
     tier_group: "Tier 2/Group 1"
+
+  - number: 61
+    topic: "SW Header Low Pressure alarm and standby SW pump auto-start setpoints (99.5 / 95.5 psig)"
+    answer: A
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (157024)"
+    question_modification_method: "Direct From Source"
+    systems:
+      - service-water
+    tech_specs: []
+    ka: "076000 K4.02"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 62
+    topic: "Unit 2 ECAC powered from 2C 460V Vital Bus — 2C4D breaker trip impacts CA Header"
+    answer: B
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - control-air
+      - 460-230v-ac
+    tech_specs: []
+    ka: "078000 K2.02"
+    ka_importance: 3.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 63
+    topic: "SBO Compressor will NOT auto-start; must be manually aligned to 1A and 2A CA Headers"
+    answer: C
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - control-air
+    tech_specs: []
+    ka: "079000 K4.01"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 64
+    topic: "EDG room CO2 fire suppression — manually activated from vestibule, 13 second delay after activation"
+    answer: A
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - fire-protection
+      - diesel-generators
+    tech_specs: []
+    ka: "086000 K5.04"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 65
+    topic: "21-24 SS94 won't open — Phase A isolation reset failed in EOP-LOSC-1"
+    answer: D
+    cognitive_level: "Application"
+    source: "Facility Exam Bank (62124)"
+    question_modification_method: "Direct From Source"
+    systems:
+      - containment-systems
+      - steam-generators
+      - auxiliary-feedwater
+    tech_specs: []
+    ka: "103000 A4.04"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"

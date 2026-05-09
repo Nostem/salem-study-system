@@ -34,9 +34,15 @@ SBO Compressor start sequence: must keep <span class="hi-exam">BY-PASS VALVE pus
 Identical SBO start procedure tested in 2020: both units tripped on loss of offsite power, no ECACs running. Starts at Step 5.1.3 (louvers already opened per 5.1.1/5.1.2). Key P&Ls: <span class="hi-exam">P&L 3.1 requires hearing protection, P&L 3.10 is verified at the SBO building</span>. Same discriminating steps 5.1.10/5.1.11: keep <span class="hi-exam">BY-PASS VALVE depressed</span> through engine start, verify <span class="hi-exam">oil pressure >15 psig</span> before releasing. Discharge alignment: <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span> pressurizes Aux. Building 1A and 2A Control Air headers. Then UNLOADER VALVE to RUN.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q63</div>
+SBO Compressor design intent: the SBO Compressor is required to be <span class="hi-exam">isolated from, and independent of, plant safety related equipment</span> except when required during a station blackout or other situations involving total loss of Control Air. On a loss of all station power, the SBO Compressor <span class="hi-exam">will NOT automatically start</span> — it is <span class="hi-exam">manually started</span> at the SBO Compressor Building. After starting, the SBO Compressor <span class="hi-exam">must be manually aligned to</span> the 1A and 2A Control Air Headers (open 1CA1913 → 1CA1886 → 2CA584). <span class="hi-trap">Trap: the SBO Compressor is BOTH manually started AND manually aligned — neither action is automatic. Do not confuse with ECACs, which auto-start on low CA pressure.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Control Air]], [[EDGs]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]], [[AB.CA-0001 — Loss of Control Air]]
 - Related JPMs: [[2020 JPM IP-j]], [[2023 JPM IP-i]]
-- Related exam: [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]
+- Related exam questions: [[2016 Q63]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]

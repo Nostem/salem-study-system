@@ -160,6 +160,11 @@ Trip of both SGFPs caused by FW Isolation: the trip-of-both-SGFPs MDAFW auto-sta
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q65</div>
+SS94 (SG B/D Sample Valves) interaction with AFW auto-start circuit: <span class="hi-exam">SG lo-lo level closes the SS94s</span> as part of the AFW auto-start logic. The <span class="hi-exam">SGBD sample isolation bypass</span> bypasses ONLY the lo-lo level input into that circuit; <span class="hi-trap">it does NOT defeat Phase A — Phase A is a separate input that also keeps the SS94s closed. After lo-lo bypass is reset, Phase A reset is still required before SS94s can be reopened.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q54</div>
 AFW Pressure Override circuit (runout protection) — pump-to-AF21 mapping: the Pressure Override circuit holds the AFW pump discharge AF21 valves <span class="hi-exam">SHUT until AFW pump discharge pressure rises above the runout setpoint</span>, then permits them to open. During normal standby, this keeps AF21s shut even though normal valve demand is set to <span class="val-normal">~98%</span>. With Pressure Override removed from a single pump, that pump's associated AF21s will <span class="hi-exam">open to current demand</span>. <span class="hi-exam">Salem Unit 1 mapping: 11 AFW pump feeds 13 and 14 AF21s only; 12 AFW pump feeds 11 and 12 AF21s</span> — pump number does NOT match AF21 number on the same SG.
 </div>
@@ -168,7 +173,7 @@ AFW Pressure Override circuit (runout protection) — pump-to-AF21 mapping: the 
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]], [[AB.115-0001 — Loss of 115V Vital Instrument Bus]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]], [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]]
-- Related exam questions: [[2016 Q3]], [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
+- Related exam questions: [[2016 Q3]], [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2016 Q65]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

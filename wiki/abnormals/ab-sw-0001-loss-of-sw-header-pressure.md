@@ -37,6 +37,11 @@ AB.SW-0001 may be the first procedure entered due to OHAs B-13 and B-14 (low SW 
 AB.SW-0001 Attachment 5 — isolating a SW leak on a CFCU: <span class="hi-exam">close SW72 (Outlet Water Valve) FIRST, then close SW58 (Inlet Water Valve)</span>. The basis for closing the outlet valve first is to <span class="hi-exam">minimize the possibility of water hammer following restoration</span>. <span class="hi-trap">Trap: closing the inlet valve first (SW58) seems intuitive to stop flow, but it creates conditions for water hammer when the system is restored. The field manual isolation valves (SW54 inlet and SW76 outlet on 78' elevation) are closed after the MOVs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q61</div>
+Entry-condition setpoints: <span class="hi-exam">OHA B-13 (21 SW HDR PRESS LO) and B-14 (22 SW HDR PRESS LO) annunciate at <span class="val-alarm">99.5 psig</span></span>. The <span class="hi-exam">standby SW pump auto-starts at <span class="val-alarm">95.5 psig</span></span> (continued degradation below the alarm setpoint). Reference: S2.OP-AR.ZZ-0002 pages 28-29.
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2020 #3</div>
 23 SW Pump trips, 26 SW Pump fails to auto start on low pressure. OHA B-13/B-14/B-15 for SW header pressure low. RO manually starts 26 SW Pump. Only action AB requires is to start standby SW Pump. CRS enters <span class="hi-exam">TS 3.7.4 (72 hours)</span> — 21 and 23 SW Pumps inoperable in one bay (only one operable SW loop).
@@ -45,6 +50,7 @@ AB.SW-0001 Attachment 5 — isolating a SW leak on a CFCU: <span class="hi-exam"
 ## Connections
 
 - Related systems: [[Service Water]], [[CFCUs]]
-- Related exam questions: [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]]
+- Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]]
+- Related exam questions: [[2016 Q61]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]
