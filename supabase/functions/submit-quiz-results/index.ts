@@ -10,6 +10,8 @@ type SubmittedQuestion = {
 };
 
 type SubmitQuizBody = {
+  quizSessionId?: string;
+  source?: string;
   title?: string;
   quizType?: string;
   feedbackMode?: string;
@@ -78,6 +80,13 @@ function masteryState(attempts: number, correct: number, incorrect: number): 'ne
   if (attempts >= 2 && correct >= 2 && incorrect === 0) return 'mastered';
   if (incorrect > correct) return 'shaky';
   return 'learning';
+}
+
+function nextReviewAt(nowIso: string, correct: number, incorrect: number): string {
+  const base = new Date(nowIso);
+  const days = incorrect > 0 ? 1 : correct >= 2 ? 14 : 3;
+  base.setUTCDate(base.getUTCDate() + days);
+  return base.toISOString();
 }
 
 Deno.serve(async (req) => {
@@ -174,20 +183,64 @@ Deno.serve(async (req) => {
   const correctCount = scoringQuestions.filter((question) => question.is_correct).length;
   const score = scoringQuestions.length > 0 ? correctCount / scoringQuestions.length : 0;
 
-  const { data: session, error: sessionError } = await admin
-    .from('quiz_sessions')
-    .insert({
-      user_id: userId,
-      title: body.title ?? 'Salem practice quiz',
-      quiz_type: quizType,
-      feedback_mode: feedbackMode,
-      config: { ...(body.filters ?? {}), completionMode },
-      completed_at: now,
-      score,
-    })
-    .select('id')
-    .single();
-  if (sessionError || !session) return jsonResponse({ error: 'quiz_session_insert_failed' }, 500);
+  let session: { id: string };
+  let questionsSnapshotted = resolvedQuestions.length;
+  const requestedSessionId = typeof body.quizSessionId === 'string' && body.quizSessionId.trim()
+    ? body.quizSessionId.trim()
+    : null;
+
+  if (requestedSessionId) {
+    const { data: existingSession, error: existingSessionError } = await admin
+      .from('quiz_sessions')
+      .select('id, config')
+      .eq('id', requestedSessionId)
+      .eq('user_id', userId)
+      .single();
+    if (existingSessionError || !existingSession) return jsonResponse({ error: 'quiz_session_not_found' }, 404);
+    const existingConfig = (existingSession.config && typeof existingSession.config === 'object')
+      ? existingSession.config as Record<string, unknown>
+      : {};
+    const { error: updateSessionError } = await admin
+      .from('quiz_sessions')
+      .update({
+        title: body.title ?? 'Quiz v2 generated session',
+        quiz_type: quizType,
+        feedback_mode: feedbackMode,
+        config: {
+          ...existingConfig,
+          submitted: { ...(body.filters ?? {}), completionMode, source: body.source ?? existingConfig.source ?? 'quiz-v2' },
+          completionMode,
+        },
+        completed_at: now,
+        score,
+      })
+      .eq('id', requestedSessionId)
+      .eq('user_id', userId);
+    if (updateSessionError) return jsonResponse({ error: 'quiz_session_update_failed' }, 500);
+    session = { id: requestedSessionId };
+
+    const { error: deleteSnapshotError } = await admin
+      .from('quiz_session_questions')
+      .delete()
+      .eq('quiz_session_id', requestedSessionId);
+    if (deleteSnapshotError) return jsonResponse({ error: 'quiz_session_questions_refresh_failed' }, 500);
+  } else {
+    const { data: insertedSession, error: sessionError } = await admin
+      .from('quiz_sessions')
+      .insert({
+        user_id: userId,
+        title: body.title ?? 'Salem practice quiz',
+        quiz_type: quizType,
+        feedback_mode: feedbackMode,
+        config: { ...(body.filters ?? {}), completionMode, source: body.source ?? 'quiz' },
+        completed_at: now,
+        score,
+      })
+      .select('id')
+      .single();
+    if (sessionError || !insertedSession) return jsonResponse({ error: 'quiz_session_insert_failed' }, 500);
+    session = insertedSession;
+  }
 
   const { error: sessionQuestionsError } = await admin.from('quiz_session_questions').insert(
     resolvedQuestions.map((question) => ({
@@ -222,7 +275,7 @@ Deno.serve(async (req) => {
 
   const { data: existingStates, error: stateLookupError } = await admin
     .from('user_question_state')
-    .select('question_id, attempts_count, correct_count, incorrect_count, flagged')
+    .select('question_id, attempts_count, correct_count, incorrect_count, last_correct_at, flagged')
     .eq('user_id', userId)
     .in('question_id', questionIds);
   if (stateLookupError) return jsonResponse({ error: 'state_lookup_failed' }, 500);
@@ -249,9 +302,10 @@ Deno.serve(async (req) => {
       correct_count: correctCountForQuestion,
       incorrect_count: incorrectCountForQuestion,
       last_attempt_at: now,
-      last_correct_at: counts.correct > 0 ? now : null,
+      last_correct_at: counts.correct > 0 ? now : (existing?.last_correct_at ?? null),
       flagged: Boolean(existing?.flagged ?? false),
       mastery_state: masteryState(attemptsCount, correctCountForQuestion, incorrectCountForQuestion),
+      next_review_at: nextReviewAt(now, counts.correct, counts.incorrect),
       updated_at: now,
     };
   });
@@ -266,7 +320,7 @@ Deno.serve(async (req) => {
   return jsonResponse({
     ok: true,
     quizSessionId: session.id,
-    questionsSnapshotted: resolvedQuestions.length,
+    questionsSnapshotted,
     attemptsInserted: attempts?.length ?? 0,
     score,
   });

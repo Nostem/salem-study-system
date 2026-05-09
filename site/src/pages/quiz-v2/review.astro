@@ -32,7 +32,7 @@ const reviewMeta = questions.map((q) => ({
     <header class="border-b border-border pb-5 mb-5">
       <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Quiz v2 preview</a>
       <div class="mt-2">
-        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · whole-question review · local-only</div>
+        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · persisted whole-question review</div>
         <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Review</h1>
         <p class="text-sm text-text-muted max-w-2xl mt-1">
           Spaced-review foundation using existing source-traceable NRC questions as whole items.
@@ -46,7 +46,7 @@ const reviewMeta = questions.map((q) => ({
         <div>
           <h2 id="qv2r-summary-title" class="font-serif text-xl text-text-primary">Review queue</h2>
           <p class="text-xs text-text-muted mt-1">
-            Rates whole questions only. State is stored in this browser under <code>salem-qv2-review-state-v1</code>.
+            Rates whole questions only. State is persisted in this browser under <code>salem-qv2-review-state-v1</code>. History links can prefill missed-question queues.
           </p>
         </div>
         <button
@@ -79,6 +79,7 @@ const reviewMeta = questions.map((q) => ({
       </dl>
       <div class="mt-3 text-[11px] font-mono text-text-muted">
         Current item: <code data-testid="qv2r-current-slug">—</code>
+        <span class="ml-2" data-testid="qv2r-scope">All reviewable questions</span>
       </div>
       <section class="mt-4 border-t border-border pt-4" aria-labelledby="qv2r-progress-title">
         <h3 id="qv2r-progress-title" class="font-serif text-lg text-text-primary">Progress analytics</h3>
@@ -266,6 +267,9 @@ const reviewMeta = questions.map((q) => ({
     color: var(--color-text-primary, #eee);
   }
   .qv2r-rating:hover { background: var(--color-bg, #111); }
+  @media (max-width: 640px) {
+    [data-testid="qv2r-reset"], [data-testid="qv2r-reveal"], [data-testid="qv2r-skip"], .qv2r-rating { min-height: 44px; }
+  }
   [data-correct="true"].is-revealed-correct { border-color: #4ade80; background: rgba(74, 222, 128, 0.08); }
 </style>
 
@@ -279,6 +283,7 @@ const reviewMeta = questions.map((q) => ({
   } from '../../utils/quiz-v2-review';
   import { buildReviewProgressAnalytics } from '../../utils/quiz-v2-progress';
   import type { StructuredQuestion } from '../../types/question-blocks';
+  import { getQuizReviewQueue, submitQuestionReview } from '../../utils/auth-client';
 
   interface ReviewMetaRow {
     slug: string;
@@ -296,6 +301,12 @@ const reviewMeta = questions.map((q) => ({
   const STORAGE_KEY = 'salem-qv2-review-state-v1';
   let queue: ReviewQueue | null = null;
   let currentSlug: string | null = null;
+  let backendReviewAvailable = false;
+
+  function requestedSlugs(): Set<string> {
+    const raw = new URLSearchParams(window.location.search).get('slugs');
+    return new Set((raw ?? '').split(',').map((s) => s.trim()).filter(Boolean));
+  }
 
   function readMeta(): ReviewMetaRow[] {
     const node = document.getElementById('qv2r-meta');
@@ -453,6 +464,9 @@ const reviewMeta = questions.map((q) => ({
         state[currentSlug] = updateReviewState(state[currentSlug], currentSlug, rating);
         saveState(state);
         const previous = currentSlug;
+        if (backendReviewAvailable) {
+          void submitQuestionReview({ slug: currentSlug, rating }).catch(() => undefined);
+        }
         rebuildQueue(questions);
         currentSlug = chooseNextSlug(previous);
         showCurrent(questions);
@@ -466,8 +480,24 @@ const reviewMeta = questions.map((q) => ({
     });
   }
 
-  function init(): void {
-    const questions = readMeta().map(metaToQuestion);
+  async function init(): Promise<void> {
+    const scope = requestedSlugs();
+    const meta = readMeta();
+    let rows = scope.size > 0 ? meta.filter((row) => scope.has(row.slug)) : meta;
+    if (scope.size === 0) {
+      try {
+        const backendQueue = await getQuizReviewQueue();
+        if (backendQueue.dueSlugs.length > 0) {
+          const due = new Set(backendQueue.dueSlugs);
+          rows = meta.filter((row) => due.has(row.slug));
+          backendReviewAvailable = true;
+        }
+      } catch {
+        backendReviewAvailable = false;
+      }
+    }
+    const questions = rows.map(metaToQuestion);
+    setText('qv2r-scope', scope.size > 0 ? `${questions.length} question history/replay queue` : (backendReviewAvailable ? `${questions.length} account-persisted due questions` : 'All reviewable questions'));
     rebuildQueue(questions);
     currentSlug = chooseNextSlug();
     attachHandlers(questions);
@@ -475,8 +505,8 @@ const reviewMeta = questions.map((q) => ({
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', () => { void init(); });
   } else {
-    init();
+    void init();
   }
 </script>

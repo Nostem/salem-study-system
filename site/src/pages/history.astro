@@ -144,7 +144,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           </td>
           <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(session.feedbackMode)}${session.completionMode === 'early' ? ' · Early finish' : ''}</td>
           <td class="py-3 pr-3 align-top font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</td>
-          <td class="py-3 pr-3 align-top"><button type="button" data-review-session="${escapeHtml(session.id)}" class="rounded-md border border-[#2a6f97] px-3 py-1 text-xs text-[#d7ecff] hover:bg-[#102033]">Review ${escapeHtml(session.id)}</button></td>
+          <td class="py-3 pr-3 align-top"><div class="flex flex-wrap gap-2"><button type="button" data-review-session="${escapeHtml(session.id)}" aria-label="Review ${escapeHtml(session.id)}" class="rounded-md border border-[#2a6f97] px-3 py-1 text-xs text-[#d7ecff] hover:bg-[#102033]">Review</button>${session.replayHref ? `<a href="${escapeHtml(session.replayHref)}" class="rounded-md border border-[#334155] px-3 py-1 text-xs text-[#c8cdd5] no-underline hover:bg-[#102033]">Replay</a>` : ''}${session.reviewMissedHref ? `<a href="${escapeHtml(session.reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-1 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Missed</a>` : ''}</div></td>
         </tr>
       `).join('');
     }
@@ -173,6 +173,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
           <div class="font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</div>
           <div class="mt-1 text-sm text-[#8b95a5]">${escapeHtml(session.filterSummary)}</div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          ${session.replayHref ? `<a href="${escapeHtml(session.replayHref)}" class="rounded-md border border-[#2a6f97] px-3 py-2 text-xs text-[#d7ecff] no-underline hover:bg-[#102033]">Replay full session</a>` : ''}
+          ${session.reviewMissedHref ? `<a href="${escapeHtml(session.reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-2 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Practice missed/unanswered</a>` : ''}
         </div>
         ${session.questions.map((question) => `
           <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">

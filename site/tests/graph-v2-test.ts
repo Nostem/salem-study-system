@@ -107,6 +107,21 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
     .toHaveAttribute('href', /\/quiz-v2\/play\/\?slugs=q8-pzr-saturation-rcp-restart&count=1$/);
 });
 
+test('graph-v2 multi-select builder unions eligible pools and links to quiz-v2 play', async ({ page }) => {
+  await page.goto('graph-v2/');
+
+  await page.locator('[data-gv2-builder-toggle="topic:chemical-and-volume-control-system"]').check();
+  await page.locator('[data-gv2-builder-toggle="topic:emergency-core-cooling-systems"]').check();
+
+  await expect(page.getByTestId('gv2-builder-count')).toHaveText('2');
+  const pool = Number(await page.getByTestId('gv2-builder-pool').textContent());
+  expect(pool).toBeGreaterThan(20);
+
+  const play = page.getByTestId('gv2-builder-play');
+  await expect(play).not.toHaveClass(/pointer-events-none/);
+  await expect(play).toHaveAttribute('href', /\/quiz-v2\/play\/\?slugs=.*&count=20&seed=graph-builder$/);
+});
+
 test('graph-v2 polish exposes practice-only filtering, empty state, and deep-linked selection', async ({ page }) => {
   await page.goto('graph-v2/');
 

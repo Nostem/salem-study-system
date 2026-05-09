@@ -25,18 +25,27 @@ const sessionMeta = questions.map((q) => ({
 
 const yearOptions = [...new Set(questions.map((q) => q.examYear))].sort((a, b) => b - a);
 const trackOptions = [...new Set(questions.map((q) => q.track).filter(Boolean))].sort();
-const topicMap = new Map<string, string>();
+const topicGroups = new Map<string, Set<string>>();
+function isLearnerFacingTopic(slug: string, title: string): boolean {
+  const lower = slug.toLowerCase();
+  if (lower.startsWith('ab-') || lower.startsWith('op-') || lower.startsWith('s2-op-')) return false;
+  if (/^AB[.-]/i.test(title) || /^S2\.OP/i.test(title)) return false;
+  return true;
+}
 for (const q of questions) {
   for (const topic of q.topics) {
     if (!topic || typeof topic !== 'object' || !('slug' in topic)) continue;
     const slug = String((topic as { slug: unknown }).slug ?? '');
     if (!slug) continue;
     const title = 'title' in topic ? String((topic as { title?: unknown }).title ?? slug) : slug;
-    if (!topicMap.has(slug)) topicMap.set(slug, title);
+    if (!isLearnerFacingTopic(slug, title)) continue;
+    const group = topicGroups.get(title) ?? new Set<string>();
+    group.add(slug);
+    topicGroups.set(title, group);
   }
 }
-const topicOptions = [...topicMap.entries()]
-  .map(([slug, title]) => ({ slug, title }))
+const topicOptions = [...topicGroups.entries()]
+  .map(([title, slugs]) => ({ value: [...slugs].sort().join(','), title, slugCount: slugs.size }))
   .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
@@ -45,11 +54,10 @@ const topicOptions = [...topicMap.entries()]
     <header class="border-b border-border pb-5 mb-5">
       <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Quiz v2 preview</a>
       <div class="mt-2">
-        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · local-only · no grading API</div>
+        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · account-save capable · production /quiz unaffected</div>
         <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Play</h1>
         <p class="text-sm text-text-muted max-w-2xl mt-1">
-          Deterministic seeded run through the structured bank. Selections live in
-          this page only — nothing is persisted. Production
+          Deterministic seeded run through the structured bank. Selections can be saved to your account after a backend session is created. Anonymous sessions stay local. Production
           <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a> is unaffected.
         </p>
       </div>
@@ -133,7 +141,7 @@ const topicOptions = [...topicMap.entries()]
             class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
           >
             <option value="">All topics</option>
-            {topicOptions.map((topic) => <option value={topic.slug}>{topic.title}</option>)}
+            {topicOptions.map((topic) => <option value={topic.value}>{topic.slugCount > 1 ? `${topic.title} (${topic.slugCount} slugs)` : topic.title}</option>)}
           </select>
         </label>
         <div class="sm:col-span-2 lg:col-span-6 flex flex-wrap gap-2 pt-1">
@@ -184,10 +192,17 @@ const topicOptions = [...topicMap.entries()]
           class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-border rounded text-text-primary hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
           disabled
         >Next &rsaquo;</button>
+        <button
+          type="button"
+          data-testid="qv2p-submit-results"
+          class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-accent-blue rounded text-accent-blue hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
+          disabled
+        >Submit progress</button>
         <span class="ml-auto text-[11px] font-mono text-text-muted">
           Filters: <code data-testid="qv2p-session-filters">{}</code>
         </span>
       </div>
+      <div data-testid="qv2p-submit-status" class="mt-3 text-xs text-text-muted">Answer at least one question, then create a backend session to save progress.</div>
     </section>
 
     <script type="application/json" id="qv2p-session-meta" set:html={JSON.stringify(sessionMeta)} />
@@ -353,6 +368,11 @@ const topicOptions = [...topicMap.entries()]
     border-color: #4ade80;
   }
   .qv2p-choice[disabled] { cursor: default; }
+  @media (max-width: 640px) {
+    [data-testid="qv2p-session"] .flex { align-items: stretch; }
+    [data-testid="qv2p-session"] button { min-height: 44px; flex: 1 1 42%; }
+    .qv2p-choice { min-height: 44px; }
+  }
 </style>
 
 <script>
@@ -365,7 +385,7 @@ const topicOptions = [...topicMap.entries()]
     assertCreateQuizV2SessionResponse,
     buildCreateQuizV2SessionPayload,
   } from '../../utils/quiz-v2-backend-session';
-  import { createQuizV2Session } from '../../utils/auth-client';
+  import { createQuizV2Session, submitQuizResults } from '../../utils/auth-client';
   import type { StructuredQuestion } from '../../types/question-blocks';
 
   interface SessionMetaRow {
@@ -459,6 +479,8 @@ const topicOptions = [...topicMap.entries()]
   type Selections = Map<string, string>;
 
   const selections: Selections = new Map();
+  const elapsedBySlug: Map<string, number> = new Map();
+  let questionShownAt = Date.now();
   let currentIndex = 0;
   let session: QuizSession | null = null;
   let currentFilters: QuizSessionFilters = {};
@@ -542,6 +564,8 @@ const topicOptions = [...topicMap.entries()]
     const next = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-next"]');
     if (prev) prev.disabled = currentIndex === 0;
     if (next) next.disabled = currentIndex >= session.questionSlugs.length - 1;
+    updateSubmitButton();
+    questionShownAt = Date.now();
   }
 
   function attachChoiceHandlers(): void {
@@ -554,7 +578,9 @@ const topicOptions = [...topicMap.entries()]
         const label = btn.getAttribute('data-choice-label') ?? '';
         if (!slug || !label) return;
         selections.set(slug, label);
+        elapsedBySlug.set(slug, Date.now() - questionShownAt);
         applyRevealedState(detail, label);
+        updateSubmitButton();
       });
     });
   }
@@ -610,13 +636,71 @@ const topicOptions = [...topicMap.entries()]
     session = nextSession;
     currentIndex = 0;
     selections.clear();
-    setText('qv2p-session-id', session.sessionId);
+    elapsedBySlug.clear();
+    setText('qv2p-session-id', session.backendSessionId ? `${session.sessionId} / ${session.backendSessionId}` : session.sessionId);
     setText('qv2p-session-seed', session.seed);
     setText('qv2p-session-count', String(session.questionSlugs.length));
     setText('qv2p-session-total', String(session.totalEligible));
     setText('qv2p-session-filters', JSON.stringify(session.filters));
     setText('qv2p-session-source', sourceLabel);
     showCurrent();
+  }
+
+  function updateSubmitButton(): void {
+    const submit = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-submit-results"]');
+    if (!submit) return;
+    submit.disabled = selections.size === 0;
+  }
+
+  function scoreCurrentSession(): { correct: number; answered: number; total: number; score: number } {
+    if (!session) return { correct: 0, answered: 0, total: 0, score: 0 };
+    let correct = 0;
+    for (const [slug, selected] of selections.entries()) {
+      const detail = detailFor(slug);
+      if (detail && selected === (detail.getAttribute('data-correct-label') ?? '')) correct++;
+    }
+    const answered = selections.size;
+    return { correct, answered, total: session.questionSlugs.length, score: answered > 0 ? correct / answered : 0 };
+  }
+
+  async function submitProgress(): Promise<void> {
+    const button = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-submit-results"]');
+    if (!session || !button || selections.size === 0) return;
+    button.disabled = true;
+    setText('qv2p-submit-status', 'Saving quiz-v2 progress…');
+    try {
+      const result = await submitQuizResults({
+        quizSessionId: session.backendSessionId,
+        source: 'quiz-v2',
+        title: 'Quiz v2 generated session',
+        quizType: session.filters.topicSlugs.length === 1 ? 'topic' : 'custom',
+        feedbackMode: 'immediate',
+        completionMode: selections.size >= session.questionSlugs.length ? 'completed' : 'early',
+        filters: {
+          schemaVersion: 1,
+          source: 'quiz-v2',
+          seed: session.seed,
+          stableSessionId: session.sessionId,
+          filters: session.filters,
+          questionSlugs: session.questionSlugs,
+        },
+        questions: session.questionSlugs.map((slug, index) => ({
+          slug,
+          position: index + 1,
+          selectedLabel: selections.get(slug) ?? null,
+          timeMs: elapsedBySlug.get(slug) ?? null,
+        })),
+      });
+      const score = scoreCurrentSession();
+      setText('qv2p-submit-status', `Saved ${result.attemptsInserted} attempt(s). Score ${score.correct}/${score.answered} (${Math.round(score.score * 100)}%). Review in History.`);
+    } catch (error) {
+      const message = error instanceof Error ? error.message : 'request_failed';
+      setText('qv2p-submit-status', message === 'not_authenticated'
+        ? 'Log in and create a backend session before saving progress.'
+        : `Save failed: ${message}`);
+    } finally {
+      updateSubmitButton();
+    }
   }
 
   async function createBackendSession(): Promise<void> {
@@ -627,7 +711,8 @@ const topicOptions = [...topicMap.entries()]
     try {
       const payload = buildCreateQuizV2SessionPayload(currentFilters, currentSeed ? { seed: currentSeed } : {});
       const response = assertCreateQuizV2SessionResponse(await createQuizV2Session(payload));
-      applySession(response.session, response.source === 'backend' ? 'Backend session' : 'Local fallback session');
+      applySession(response.session, response.source === 'backend' ? 'Backend session ready · progress can be saved' : 'Local fallback session');
+      setText('qv2p-submit-status', response.source === 'backend' ? 'Backend session ready. Answer questions, then submit progress.' : 'Local fallback session only. Log in to save progress.');
     } catch (error) {
       const message = error instanceof Error ? error.message : 'request_failed';
       setText('qv2p-session-source', message === 'not_authenticated'
@@ -636,6 +721,12 @@ const topicOptions = [...topicMap.entries()]
     } finally {
       button.disabled = false;
     }
+  }
+
+  function attachSubmitHandler(): void {
+    document
+      .querySelector<HTMLButtonElement>('[data-testid="qv2p-submit-results"]')
+      ?.addEventListener('click', () => { void submitProgress(); });
   }
 
   function attachBackendSessionHandler(): void {
@@ -656,6 +747,7 @@ const topicOptions = [...topicMap.entries()]
     attachChoiceHandlers();
     attachNavHandlers();
     attachBackendSessionHandler();
+    attachSubmitHandler();
   }
 
   if (document.readyState === 'loading') {
