@@ -112,7 +112,7 @@ Steam line rupture upstream of 24MS167 with reactor tripped, MSLI performed, and
 - Related systems: [[Steam Dumps]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
-- Related exam questions: [[2016 Q16]], [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
+- Related exam questions: [[2016 Q16]], [[2016 Q23]], [[2016 Q24]], [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

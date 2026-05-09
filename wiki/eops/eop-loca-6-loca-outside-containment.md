@@ -55,10 +55,15 @@ RHR intersystem RCS leak on 22 RHR Heat Exchanger during EOP-TRIP-2. Crew recogn
 Step 2 — RHR discharge cross-connect isolation: the crew <span class="hi-exam">WILL close 11RH19 and 12RH19 (RHR Discharge X-CONN Valves)</span> to separate the 11 and 12 RHR discharge lines, enhancing leak isolation diagnostics. Successful leak isolation is confirmed by monitoring <span class="hi-exam">rising RCS Pressure</span> (not PZR level). <span class="hi-trap">Trap: PZR level would also rise after successful isolation (ECCS filling the RCS), but LOCA-6 specifically monitors RCS pressure as the success indicator.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q22</div>
+After closing <span class="hi-exam">21SJ49 Cold Leg Isolation Valve</span> to attempt leak isolation: successful isolation is indicated by <span class="hi-exam">RCS pressure rising</span> (not stable). The next required action is to <span class="hi-exam">stop 21 RHR pump</span> because the RHR system is split and there is <span class="hi-exam">no discharge path</span> on that train. <span class="hi-trap">Traps: (1) 21SJ49 is left CLOSED after successful isolation — not re-opened. (2) 21RH19 RHR Discharge X-CONN was already closed at Step 2; it is not the next action. (3) Stopping the OPPOSITE-loop RHR pump (22 RHR) is incorrect — it is the affected loop's pump (21 RHR) that must be stopped because its discharge path is now closed.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RCS]], [[RVLIS]], [[RHR]], [[Radiation Monitoring]]
-- Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2018 Q63]], [[2019 Q63]], [[2019 Q81]], [[2020 Q16]], [[2020 Q25]], [[2022 Q18]], [[2023 Q16]]
+- Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
+- Related exam questions: [[2016 Q22]], [[2018 Q63]], [[2019 Q63]], [[2019 Q81]], [[2020 Q16]], [[2020 Q25]], [[2022 Q18]], [[2023 Q16]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

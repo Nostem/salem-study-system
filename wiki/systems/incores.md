@@ -56,8 +56,9 @@ SMM adverse containment logic: <span class="hi-exam">either containment pressure
 
 - Related systems: [[Excore NIs]], [[RCS]], [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2023 Q57]], [[2020 Q26]], [[2020 Q58]]
-- Related exams: [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2016 Q21]], [[2020 Q26]], [[2020 Q58]], [[2023 Q57]]
+- Related exams: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+  - [[2016 Q21]] — FRCC-1 Step 25: RCPs started at CET > 1200°F to clear water from RCS intermediate leg; both PZR PORVs opened at Step 25.3 if RCP restart not effective
   - [[2023 Q57]] — In-Core Temperature Monitoring CET / reference junction compensation / 2300°F limit
   - [[2020 Q26]] — SMM adverse containment mode / R44A/B > 1E05 R/HR / manual reset required for radiation
   - [[2020 Q58]] — Subcooling Margin Monitor inputs (CET temp, RCS WR pressure, not PZR pressure)

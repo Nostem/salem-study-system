@@ -37,6 +37,11 @@ RED Path in Thermal Shock Status Tree: all RCS T-Cold cooldown rates not less th
 FRTS-1 step 1 (RCS Pressure Status): if <span class="hi-exam">RCS pressure &lt; 300 psig AND RHR flow &ge; 300 gpm</span>, then <span class="hi-exam">return to procedure in effect</span> — no further FRTS-1 actions are implemented. Entry is still required on PURPLE path (cooldown &gt; 100&deg;F/hr, T-Colds 230-280&deg;F), but the low-pressure/adequate-RHR-flow condition means PTS is not a concern. <span class="hi-trap">Trap: entry into FRTS-1 IS required even with low RCS pressure — the CFST drives entry regardless. The one-hour soak is not performed when step 1 directs return. AB.LOCA-0001 (Shutdown LOCA) is only applicable in MODE 4 or MODE 3 with accumulators isolated — not for MODE 3 at normal operating pressure.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q24</div>
+After a steam line break inside containment with FRTS-1 entered: <span class="hi-exam">SI termination is directed because Safety Injection flow is a significant contributor to any cold leg temperature decrease or overpressure condition</span>. <span class="hi-exam">RCPs are started to provide mixing of cold SI and warm reactor coolant water</span>, decreasing the likelihood of a PTS condition. <span class="hi-trap">Traps: (1) The "soak" is not the basis for SI termination. (2) RCPs are NOT started to enable PZR spray for primary depressurization, NOR to minimize temperature gradient across S/G tube sheets — they are started for thermal mixing.</span>
+</div>
+
 ### RCS Soak (Step 29)
 
 <div class="callout callout-exam">
@@ -53,6 +58,6 @@ RED path for Thermal Shock entered during EOP-LOCA-1 (LBLOCA). Entry/exit criter
 
 - Related systems: [[ECCS]], [[RCS]], [[RCPs]], [[RHR]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
-- Related exam questions: [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]]
+- Related exam questions: [[2016 Q24]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]]
 - Related scenarios: [[2018 Scenario 2]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

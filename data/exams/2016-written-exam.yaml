@@ -290,3 +290,82 @@
     ka_importance: 3.5
     type: RO
     tier_group: "Tier 1/Group 1"
+
+  - number: 21
+    topic: "FRCC-1 PZR PORV operation after RCP restart with CETs > 1200°F"
+    answer: D
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - pressurizer
+      - reactor-coolant-pumps
+      - emergency-core-cooling-systems
+      - incores
+    tech_specs: []
+    ka: "000074 K2.02"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 2"
+
+  - number: 22
+    topic: "LOCA-6 — 21SJ49 leak isolation success indication and next action"
+    answer: C
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    systems:
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+      - residual-heat-removal
+    tech_specs: []
+    ka: "00WE04 A04 EA1.1"
+    ka_importance: 4.0
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 23
+    topic: "FRHS-1 Bleed and Feed — consequence of second PORV failing to open"
+    answer: D
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    systems:
+      - pressurizer
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+      - main-steam
+    tech_specs:
+      - ts-2-0-safety-limits
+    ka: "00WE05 EK3.1"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 24
+    topic: "FRTS-1 — SI termination and RCP restart for PTS mitigation after steam line break inside containment"
+    answer: D
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    systems:
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+      - reactor-coolant-pumps
+      - main-steam
+    tech_specs: []
+    ka: "00WE08 EK1.1"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 25
+    topic: "TRIP-6 Rapid Cooldown — minimum RVLIS Full Range level (70%) and significance"
+    answer: A
+    cognitive_level: "Memory"
+    source: "Previous 2 NRC Exams"
+    systems:
+      - rvlis
+      - reactor-coolant-system
+      - steam-generators
+    tech_specs: []
+    ka: "00WE10 EK3.3"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 1/Group 1"
