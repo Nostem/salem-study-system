@@ -258,8 +258,13 @@ LCO 3.0.3 application with 2 accumulators inoperable (boron OOS): LCO 3.5.1 has 
 LCO 3.0.3 exit and return to specific LCO action: when BOTH trains of Containment Spray are inoperable → LCO 3.0.3. When ONE train is restored → exit LCO 3.0.3, enter LCO 3.6.2.1 single-train-inoperable action. The <span class="hi-exam">72-hour clock starts from the time the LCO was first NOT met</span> (when both trains went inoperable), not from when one train was restored. Total time: 72 + 6 = 78 hours from initial entry.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q91</div>
+SR 4.0.2 25% extension applied to a MONTHLY (31 day) EDG surveillance: <span class="hi-exam">31 + 7.75 days = 38.75 days total before the surveillance is required</span>. With the 2A EDG monthly surveillance last performed 33 days ago, 2A EDG remains <span class="hi-exam">OPERABLE</span> because the 25% extension has not been exceeded. <span class="hi-trap">Trap: SR 4.0.3's 24-hour delay time is from time of discovery, NOT from periodicity expiration; and SR 4.0.3 is N/A here because (a) the SR 4.0.2 allowable extension is longer and (b) 2A is not yet out of periodicity. 2B EDG being inoperable does not affect 2A's status.</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[OP-AA-108-116 — Protected Equipment Program]]
-- Related exam questions: [[2018 Q86]], [[2018 Q88]], [[2018 Q96]], [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2016 Q91]], [[2018 Q86]], [[2018 Q88]], [[2018 Q96]], [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]

@@ -28,9 +28,14 @@ On loss of all SW flow, immediately <span class="hi-exam">trip the reactor and s
 AB.SW-0005 entry criteria: requires actual loss of ALL service water flow. <span class="hi-exam">A 1A 4KV Bus Differential on Unit 1 with #3 SW Bay already C/Ted does NOT cause a loss of all SW</span> because 15 and 16 SW Pumps (powered from 1A Bus) were already isolated for the bay outage. The 12 SW Pump auto-starts on C Bus to maintain flow. Correct procedure entry: AB.4KV-0001. <span class="hi-trap">Distractor: RCPs are stopped to limit heat input to the CCW system (not the RCS) in AB.SW-0005.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+AB.SW-0005 directs the crew to <span class="hi-exam">Trip the Rx, confirm the trip, and stop RCPs to limit heat input to the CCW system</span>. <span class="hi-trap">The MT-trip-on-low-power action is wrong because tripping the MT when power is &lt;49% will not trip the Rx.</span> Charging-pump swap (place 23 Charging in service / remove 22 Charging) is an AB.SW-0005 action — NOT AB.SW-0001.
+</div>
+
 ## Connections
 
-- Related systems: [[Service Water]], [[EDGs]], [[4KV]], [[CCW]]
+- Related systems: [[Service Water]], [[EDGs]], [[4KV]], [[CCW]], [[CVCS]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]]
-- Related exam questions: [[2020 Q53]], [[2022 Q90]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2016 Q92]], [[2020 Q53]], [[2022 Q90]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

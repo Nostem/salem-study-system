@@ -1353,3 +1353,75 @@
     ka_importance: 3.5
     type: SRO
     tier_group: "Tier 1/Group 1"
+  - number: 91
+    topic: "2A EDG missed monthly surveillance — applying SR 4.0.2 25% extension to 31-day periodicity yields 31+7.75=38.75 days; with last performance 33 days ago, 2A EDG remains OPERABLE; SR 4.0.3 24-hour delay is from time of discovery and N/A here"
+    answer: C
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - diesel-generators
+    tech_specs:
+      - ts-3-4-0-applicability
+      - ts-3-4-8-electrical
+    ka: "064000G2.40 2.2.40"
+    ka_importance: 4.7
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+  - number: 92
+    topic: "Unit 2 at 40% shutdown for TSAS 3.7.4 with 4 SW Bay isolated; 23 SW pump trip + 2A EDG output breaker opens on 2A 4KV Vital Bus Differential — total loss of all SW (no pumps powered); enter AB.SW-0005, trip Rx, stop RCPs to limit CCW heat input"
+    answer: B
+    cognitive_level: "Application"
+    source: "New"
+    question_modification_method: ""
+    systems:
+      - service-water
+      - diesel-generators
+      - chemical-and-volume-control-system
+      - component-cooling-water
+    tech_specs:
+      - ts-3-4-7-plant-systems
+    ka: "076000A2.01 A2.01"
+    ka_importance: 3.7
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+  - number: 93
+    topic: "Containment Purge temporary termination/reinstatement IAW S2.OP-SO.WG-0006 — short duration (~4 hours) AND unchanged rad conditions allow reinstatement without new release form; CVI signal blocked per Attachment 2"
+    answer: C
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - containment-systems
+      - waste-gas
+    tech_specs: []
+    ka: "103000G2.1.23 2.1.23"
+    ka_importance: 4.4
+    type: SRO
+    tier_group: "Tier 2/Group 1"
+  - number: 94
+    topic: "Spent Fuel Pool manipulations supervision per S2.OP-IO.ZZ-0010 P&L 2.2 — Reactor Engineer OR qualified SRO must be assigned; supervision is from the area, not crane trolley specifically"
+    answer: D
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - spent-fuel-pool
+    tech_specs: []
+    ka: "194001G2.1.35 2.1.35"
+    ka_importance: 3.9
+    type: SRO
+    tier_group: "Generic"
+  - number: 95
+    topic: "Mode 6 entry per S2.OP-IO.ZZ-0009 (Defueled to Refueling) Step 5.1.6 — Mode 6 entered when first fuel assembly is lowered into reactor vessel; 'imminent' belongs to IOP-3 / MODE 2 entry"
+    answer: B
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Editorially Modified"
+    systems:
+      - spent-fuel-pool
+    tech_specs: []
+    ka: "194001G2.1.36 2.1.36"
+    ka_importance: 4.1
+    type: SRO
+    tier_group: "Generic"

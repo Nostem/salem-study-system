@@ -156,9 +156,14 @@ With NO CCW pumps running during EOP-LOCA-3 cold leg recirculation transfer, <sp
 Normal CCW system alignment: <span class="hi-exam">2 CCW pumps running in MANUAL, and one CCW pump in AUTO and stopped</span>. The pump selected to AUTO will <span class="hi-exam">auto-start when either 21 or 22 CCW header pressure lowers to <span class="val-alarm">70 psig</span></span>. <span class="hi-trap">There is NO interlock based on CCW pump 4KV breaker positions (other systems do have a breaker anticipatory function — CCW does not). On a CCW pump trip, AB.CC-0001 could be entered but no actions are required other than ensuring the backup pump started.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+Loss of all SW directly affects CCW: per AB.SW-0005, <span class="hi-exam">RCPs are stopped to limit heat input to the CCW system</span> (since CCW heat exchangers are cooled by SW; with SW lost, CCW heat-removal capability is lost). Tripping the reactor and stopping all RCPs reduces the heat load on CCW until SW is restored.
+</div>
+
 ## Connections
 
-- Related exam questions: [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
+- Related exam questions: [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2016 Q92]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
 - Related JPMs: [[2018 JPM Sim-h]], [[2019 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 1]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]]

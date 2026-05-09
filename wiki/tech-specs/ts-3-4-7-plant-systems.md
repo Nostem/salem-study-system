@@ -278,6 +278,11 @@ At least <span class="hi">two independent service water loops</span> shall be OP
 SW loop OPERABILITY requires <span class="hi-exam">two SW pumps powered from separate buses</span>. Per S2.OP-SO.SW-0005 P&L 3.2: when a SW Bay is removed from service in Modes 1-4 and the "B" bus SW pump in the operable bay is unavailable, <span class="hi-exam">LCO 3.0.3 applies (not 3.7.4)</span>. With #2 Bay isolated (leak) AND 24 SWP C/Ted, both loops are inoperable. <span class="hi-trap">TS 3.7.4 only applies with one loop inoperable (72 hrs). When both loops are inoperable, no specific action exists in 3.7.4, so LCO 3.0.3 (default shutdown action) applies.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+TSAS 3.7.4 entry context: with 4 SW Bay isolated (leak on 25SW3), the unit is shut down in compliance with TSAS 3.7.4. <span class="hi-exam">SW pump bus alignment: 21/22/23 SW pumps are on AA/BB/CC vital buses; 24/25/26 SW pumps are unavailable when 4 SW Bay is isolated.</span> A 2A 4KV Vital Bus Differential <span class="hi-exam">opens the EDG output breaker AND prevents station-power infeed reclosure</span>, eliminating the only remaining SW power source — total loss of all SW results.
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.4 Service Water</summary>
 <div class="callout callout-bases">
@@ -473,6 +478,6 @@ The program for examination, testing, and service life monitoring is performed i
 ## Connections
 
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
-- Related exam questions: [[2016 Q68]], [[2019 Q42]]
+- Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]]
 - Related JPMs: [[2020 JPM SRO-A3]]
 - Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]]

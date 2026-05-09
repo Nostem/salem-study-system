@@ -79,10 +79,15 @@ CRS review of S1.OP-SO.WG-0010 for 13 GDT release: release cannot be authorized 
 Of the Radioactive Liquid Waste System tanks, <span class="hi-exam">ONLY the RCDT has a physical connection to the Waste Gas Compressor Header</span>. Other liquid waste tanks (WHUTs, Chemical Drain Tank, Auxiliary Building Sump Tank) do not connect to the waste gas header.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q93</div>
+Containment Purge to Plant Vent (S2.OP-SO.WG-0006) reinstatement after temporary termination: <span class="hi-exam">no new release form required if duration was short (~4 hours) AND containment radiological conditions have not changed</span>; <span class="hi-exam">CVI signal can be blocked per Attachment 2</span> (Temporary Termination and Reinstatement). A new effluent permit is not always required.
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[Containment]]
-- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0010 — Discharge of 13 Gas Decay Tank to Plant Vent]]
-- Related exam questions: [[2018 Q38]], [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]]
+- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0010 — Discharge of 13 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]]
+- Related exam questions: [[2016 Q93]], [[2018 Q38]], [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]]
 - Related JPMs: [[2018 JPM SRO-A4]], [[2023 JPM IP-k]], [[2019 JPM IP-k]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2019 NRC Operating Exam]]

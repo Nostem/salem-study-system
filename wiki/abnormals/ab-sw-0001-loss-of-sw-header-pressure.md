@@ -42,6 +42,11 @@ AB.SW-0001 Attachment 5 — isolating a SW leak on a CFCU: <span class="hi-exam"
 Entry-condition setpoints: <span class="hi-exam">OHA B-13 (21 SW HDR PRESS LO) and B-14 (22 SW HDR PRESS LO) annunciate at <span class="val-alarm">99.5 psig</span></span>. The <span class="hi-exam">standby SW pump auto-starts at <span class="val-alarm">95.5 psig</span></span> (continued degradation below the alarm setpoint). Reference: S2.OP-AR.ZZ-0002 pages 28-29.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+AB.SW-0001 (Loss of SW Header Pressure) <span class="hi-exam">Attachment 2 directs reduction of SW loads (Loads Affected by a Loss of Service Water)</span>. <span class="hi-trap">The charging-pump swap action is NOT in AB.SW-0001 — it lives in AB.SW-0005 (Loss of All Service Water).</span> AB.SW-0001 is the correct entry procedure ONLY when there is actually a degraded header (i.e., a SW pump remains capable of running) — not when a 4KV Bus Differential leaves no powered SW pumps.
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2020 #3</div>
 23 SW Pump trips, 26 SW Pump fails to auto start on low pressure. OHA B-13/B-14/B-15 for SW header pressure low. RO manually starts 26 SW Pump. Only action AB requires is to start standby SW Pump. CRS enters <span class="hi-exam">TS 3.7.4 (72 hours)</span> — 21 and 23 SW Pumps inoperable in one bay (only one operable SW loop).
@@ -51,6 +56,6 @@ Entry-condition setpoints: <span class="hi-exam">OHA B-13 (21 SW HDR PRESS LO) a
 
 - Related systems: [[Service Water]], [[CFCUs]]
 - Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]]
-- Related exam questions: [[2016 Q61]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]]
+- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]

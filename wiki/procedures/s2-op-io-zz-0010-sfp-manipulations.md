@@ -30,10 +30,15 @@ Unit 2 Spent Fuel Handling Crane interlock — per Technical Requirements Manual
 Procedure purpose: "Provide instructions to ensure all required systems AND equipment are available OR OPERABLE prior to, and during, operations involving movement of irradiated fuel within storage pool." With FHV declared inoperable (e.g., loss of air to 21 FHB Supply Fan Inlet Damper renders the supply fan inoperable), <span class="hi-exam">LCO 3.9.12.a action a directs suspending all operations involving movement of fuel within the storage pool</span> until FHV is restored to operable.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q94</div>
+Per Precautions and Limitations 2.2: <span class="hi-exam">a Reactor Engineer OR a qualified SRO must be assigned for Spent Fuel Pool manipulations</span>. The assigned SRO supervises from the area — <span class="hi-trap">NOT specifically from the crane trolley, NOT contingent on SFP boron concentration, NOT located in the Fuel Handling Building, and NOT optional when a Qualified Reactor Engineer is present (the requirement is RE OR SRO, satisfied by either).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Spent Fuel Pool]], [[Control Air]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2016 Q47]], [[2016 Q80]], [[2023 Q95]]
+- Related exam questions: [[2016 Q47]], [[2016 Q80]], [[2016 Q94]], [[2023 Q95]]
 - Related exam: [[2016 NRC Written Exam]], [[2023 NRC Written Exam]]

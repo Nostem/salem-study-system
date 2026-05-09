@@ -133,10 +133,16 @@ SW Nuclear Header low pressure setpoints: <span class="hi-exam">OHA B-13 (21 SW 
 SW Nuclear Header leak location: with low SW pressure to loads on the <span class="hi-exam">21 SW Nuclear Header</span> (21 CC Pump, 21 CS Pump, 21 CFCU, etc.), the leak is <span class="hi-exam">downstream of 21SW22 (NUCLEAR HEADER inlet valve)</span>. Key one-line relationships: <span class="hi-exam">2SW26 (TURB AREA SW MOV) is on the turbine area header (non-nuclear)</span>; 22SW22 is the 22 Nuclear Header inlet; 21SW23/22SW23 are Nuclear Header Tie Valves (connecting the two headers). <span class="hi-trap">Trap: the question requires correlating the affected loads to the correct nuclear header — all affected loads are served by the 21 header, so the leak must be downstream of 21SW22 (not 22SW22 or between the tie valves).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+SW pump bus alignment: <span class="hi-exam">21, 22, 23 SW pumps are powered from AA, BB, CC vital buses</span>. With 4 SW Bay isolated, <span class="hi-exam">24, 25, 26 SW pumps are unavailable</span>. If a 4KV vital-bus differential opens the EDG output breaker AND prevents station-power infeed-breaker reclosure, the de-energized vital bus eliminates pump power — <span class="hi-exam">total loss of all SW capability</span>, since the standby 22 SW pump cannot auto-start without power. <span class="hi-trap">The SW-load reduction action on Attachment 2 belongs to AB.SW-0001 (loss of header pressure), NOT AB.SW-0005. The action to swap charging pumps (place 23 in service / remove 22 from service) is in AB.SW-0005, NOT AB.SW-0001.</span>
+</div>
+
 ## Connections
 
-- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related exam questions: [[2016 Q42]], [[2016 Q53]], [[2016 Q61]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
+- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[AB.SW-0005 — Loss of All Service Water]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
+- Related exam questions: [[2016 Q42]], [[2016 Q53]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
 - Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

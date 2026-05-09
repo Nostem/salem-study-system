@@ -63,10 +63,24 @@ TS 3.9.12 requires the Fuel Handling Ventilation System OPERABLE (2 exhaust fans
 Dropped fuel assembly in Unit 2 SFP with gas bubbles observed and 2R5 stabilized at 25 mR/hr: <span class="hi-exam">2R5 (FHB area radiation monitor) alarm setpoint <span class="val-alarm">11 mR/hr</span> (warning <span class="val-alarm">7 mR/hr</span>) automatically swaps FHB ventilation to the Charcoal Filter and starts BOTH FHB Exhaust Fans</span>. Normal FHB lineup is single Supply Fan running and BOTH Exhaust Fans running. Per S2.OP-AB.FUEL-0001, FHB Watertight Door is kept closed except for normal personnel passage. <span class="hi-trap">2R5 does NOT lock out crane motion — only 2R32A (on the crane itself) interlocks crane motion. The FHB Evacuation alarm actuates but only non-essential personnel are evacuated; required actions must be performed prior to ALL personnel evacuation.</span>
 </div>
 
+## SRO/RE Supervision of SFP Manipulations
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q94</div>
+Per S2.OP-IO.ZZ-0010 Precautions and Limitations 2.2: <span class="hi-exam">a Reactor Engineer OR a qualified SRO must be assigned for Spent Fuel Pool manipulations</span>. Supervision is from the area, not a specific location — <span class="hi-trap">the SRO is NOT required to monitor directly from the crane trolley; the SRO is NOT required to be located in the Fuel Handling Building (any SRO assignment is acceptable as long as supervision is provided); SFP boron concentration is irrelevant to who must supervise; an SRO is NOT required to observe if a Qualified Reactor Engineer is present (RE OR SRO).</span>
+</div>
+
+## Mode 6 Entry During Refueling
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q95</div>
+Per S2.OP-IO.ZZ-0009 (Defueled to Refueling) Step 5.1.6: <span class="hi-exam">Mode 6 is entered when the first fuel assembly is lowered into the reactor vessel</span>. <span class="hi-trap">Trap distractors: Mode 6 is NOT entered when fuel movement is "imminent" (the word "imminent" applies to IOP-3 / MODE 2 entry when Control Bank A withdrawal is imminent), NOT when an assembly is moved over the vessel, and NOT when the SM signs Attachment 1 authorizing entry.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]], [[Radiation Monitoring]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.FUEL-0001 — Fuel Handling Incident]]
-- Related exam questions: [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]]
+- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]], [[AB.FUEL-0001 — Fuel Handling Incident]]
+- Related exam questions: [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

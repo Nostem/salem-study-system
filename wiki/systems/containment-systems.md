@@ -274,12 +274,17 @@ SS94 (SG B/D Sample Valves) cannot be reopened until <span class="hi-exam">Phase
 EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free volume at STP: <span class="hi-exam">V = 2.62E06 x Tfact</span> where Tfact = 492/Tabs. At 140F containment temp: Tabs = 600R, Tfact = 0.82, V = 2148400 ft3. Maximum allowable hydrogen concentration is <span class="hi-exam">3.0%</span> — vent volume limited to (3.0% - current H2%) x V / 100%.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q93</div>
+Containment Purge reinstatement after temporary termination (per S2.OP-SO.WG-0006 P&amp;L 3.3): <span class="hi-exam">no new release form is required if termination was of short duration (~4 hours) AND containment radiological conditions have not changed</span>. <span class="hi-exam">Attachment 2 permits blocking the CVI signal</span> for reinstatement. A new effluent permit is not always required. <span class="hi-trap">12 hours / one shift is NOT the duration criterion; rad-condition assurance is required in addition to the duration check.</span>
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
-- Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q65]], [[2016 Q72]], [[2016 Q81]], [[2016 Q84]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
+- Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]]
+- Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q65]], [[2016 Q72]], [[2016 Q81]], [[2016 Q84]], [[2016 Q93]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
