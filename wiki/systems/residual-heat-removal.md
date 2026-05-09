@@ -83,6 +83,11 @@ To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining consta
 RHR HX tube blockage from foreign material reduces heat transfer, lowering cooldown rate. To <span class="hi-exam">RESTORE the cooldown rate: raise 21RH18 demand</span> (increases flow through the partially blocked RHR HX to compensate) and <span class="hi-exam">lower 2RH20 demand</span> (decreases HX bypass flow, forcing more total flow through the HX). Per S2.OP-SO.RHR-0001. <span class="hi-trap">Trap: "raise demand" on RH18 OPENS the valve (more HX flow); "lower demand" on RH20 CLOSES the bypass (less bypass flow). Both actions increase heat removal through the HX.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q31</div>
+SDC operation with 21 RHR loop in service: <span class="hi-exam">throttling 2RH20 (RHR HX Bypass Valve) more OPEN bypasses flow around the in-service HX → water returning to the RCS RISES in temperature</span> (more warm RCS water mixed in with cooled RHR HX outlet water). Conversely, <span class="hi-exam">throttling 21RH18 (RHR HX FLOW CONT VALVE) more open increases flow through the HX → outlet temperature LOWERS</span>. With 22 RHR loop O/S aligned for ECCS (RH19s open), 21SJ49 shut still allows discharge through normally open 22SJ49. 22CC16 is normally shut and 22RH12 shut — no flow through 22 CCHX from 21 loop regardless. Per S2.OP-SO.RHR-0001.
+</div>
+
 ## Valve Failure Modes
 
 <div class="callout callout-exam">
@@ -187,7 +192,7 @@ During LBLOCA cold leg recirculation transfer (EOP-LOCA-3): RHR suction aligned 
 
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
-- Related exam questions: [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q26]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
+- Related exam questions: [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q26]], [[2016 Q31]], [[2016 Q33]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
 - Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

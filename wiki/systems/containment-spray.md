@@ -146,10 +146,15 @@ Emergency classification with degraded containment cooling: Containment pressure
 Both CS pumps start on Phase B actuation (containment pressure >15 psig) during LBLOCA. During EOP-LOCA-3 cold leg recirculation transfer, <span class="hi-exam">stop 22 CS pump within ~5.5 minutes</span> of RWST lo level alarm (CT#2 Part 2). Only one CS pump remains running during recirculation alignment.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q33</div>
+21CS36 (RHR Supply to CS Valve) interlock: <span class="hi-exam">21CS36 cannot be OPENED until 21RH1 and 21RH2 (RHR Suction Isolation Valves) are SHUT</span>. During EOP-LOCA-3 with 21SJ44 failed to open and 21 RHR pump stopped, CS header flow is <span class="hi-exam">supplied via 22CS36 from the running 22 RHR pump</span> at step 22 — the 21SJ44 failure does NOT eliminate CS header flow.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2016 Q26]], [[2016 Q27]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
+- Related exam questions: [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
 - Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

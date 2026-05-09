@@ -34,6 +34,11 @@ Control Console Bezel Alarm "STANDPIPE LEVEL HI" with reduced #1 seal leak-off f
 CCW pump status after SEC Mode III (Blackout + SI) loading: all CCW pumps are <span class="hi-exam">stripped and NOT restarted</span>. Any CCW pump selected for AUTO is <span class="hi-exam">transferred to Manual</span>. SEC Modes II, III, and VI cause AUTO-to-Manual transfer.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q35</div>
+Page 92 — CCW header pressure low / CCW pump auto-start: normal alignment is <span class="hi-exam">2 CCW pumps running in MANUAL with one CCW pump in AUTO and stopped</span>. The AUTO-aligned standby pump <span class="hi-exam">auto-starts when 21 or 22 CCW header pressure lowers to <span class="val-alarm">70 psig</span></span>. There is no breaker-position-based interlock for CCW pump auto-start. (Source: this procedure rev 60)
+</div>
+
 ### Page 13 — Rod Drive Vent Fans AIR FLOW LO
 
 <div class="callout callout-jpm">
@@ -45,6 +50,6 @@ AIR FLOW LO alarm with SEQUENCE COMPLETE extinguished: cause is fan discharge pr
 
 - Related systems: [[RCPs]], [[CCW]], [[SECs]], [[Control Rod Drive]]
 - Related procedures: [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-SO.CBV-0001 — Containment Ventilation Operation]]
-- Related exam questions: [[2020 Q28]], [[2020 Q35]], [[2023 Q95]]
+- Related exam questions: [[2016 Q35]], [[2020 Q28]], [[2020 Q35]], [[2023 Q95]]
 - Related JPMs: [[2019 JPM Sim-a]], [[2022 JPM Sim-d]]
-- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

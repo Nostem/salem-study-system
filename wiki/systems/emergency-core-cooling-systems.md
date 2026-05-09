@@ -89,6 +89,11 @@ SI pump discharge is limited to <1500 psig to prevent lifting RCS safety valves.
 SI pump shutoff head is <span class="hi-exam">1520 psig</span>. If RCS pressure is above 1520 psig (e.g., 1700 psig) and SI flow is indicated, this confirms a <span class="hi-exam">cold leg discharge leak</span> (flow should be zero above shutoff head). Per EOP-LOCA-6 step 2, close <span class="hi-exam">2SJ135 (Cold Leg Discharge Valve)</span> to isolate SI pump cold leg leak. Note: 21/22 SJ49 valves isolate RHR cold legs, not SI cold legs.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q32</div>
+SBLOCA in EOP-TRIP-1 with RCS pressure at <span class="val-normal">1600 psig</span> and 11 SI pump failed: starting 11 SI pump <span class="hi-exam">provides NO additional ECCS flow</span> because <span class="hi-exam">SI pump shutoff head is <span class="val-trip">1520 psid</span></span> (with suction from 41 ft of RWST level, RCS pressure exceeds the pump's shutoff capability). Total ECCS flow remains at 400 gpm. <span class="hi-trap">Trap: 800 gpm corresponds to SI pump flow at 1082 psid; 1000 gpm assumes ~full SI pump flow could be added — SI pumps deliver no flow above their 1520 psid shutoff head.</span>
+</div>
+
 ### Residual Heat Removal Pumps (Low Head — Cold Leg Injection)
 
 | Parameter | Value | Source |
@@ -203,6 +208,11 @@ At <span class="hi-exam">RWST level < 15.2 ft on 2/4 channels</span>, Unit 2 sem
 RWST Level LO alarm triggers the start of cold leg recirculation transfer (IAW EOP-LOCA-1). <span class="hi-exam">21SJ44 and 22SJ44 (Containment Sump Suction Valves) each serve one RHR pump independently</span>. With 21SJ44 closed, <span class="hi-exam">ONLY 22 RHR pump</span> can draw suction from the containment sump. <span class="hi-trap">Trap: unlike some other ECCS suction arrangements (e.g., SJ1/SJ2 for CCPs where both can take suction from RWST if one fails), the containment sump suction valves are NOT cross-connected — each SJ44 serves only its associated RHR pump.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q33</div>
+EOP-LOCA-3 Cold Leg Recirculation alignment with <span class="hi-exam">21SJ44 failed to open</span>: the procedure directs <span class="hi-exam">stopping 21 RHR pump</span>, and it remains stopped as long as 21SJ44 is shut (step 5.2). <span class="hi-exam">21SJ45 is interlocked with 21SJ44 such that it cannot be opened with 21SJ44 shut</span>. The 21CS36 interlock is with RH1 and RH2 (must be SHUT before CS36 can be OPENED). Final lineup: ALL containment sump recirculation flow through <span class="hi-exam">22SJ45 (to Charging/SI pump suctions) and 22CS36 (to spray headers)</span>. <span class="hi-trap">Trap: under ALL circumstances, when 22 RHR pump is running at RWST lo-lo level alarm, 22SJ49 (cold leg isolation) is shut — recirc flow does NOT go through 22SJ49.</span>
+</div>
+
 ### Changeover to Recirculation Phase
 1. Containment sump level shows adequate submergence of sump strainer
 2. RWST level low alarm alerts operator
@@ -307,7 +317,7 @@ LBLOCA with both trains of auto SI failing. One SI keyswitch also fails to manua
 
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
-- Related exam questions: [[2016 Q4]], [[2016 Q5]], [[2016 Q10]], [[2016 Q19]], [[2016 Q21]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q26]], [[2016 Q29]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
+- Related exam questions: [[2016 Q4]], [[2016 Q5]], [[2016 Q10]], [[2016 Q19]], [[2016 Q21]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q26]], [[2016 Q29]], [[2016 Q32]], [[2016 Q33]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
 - Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

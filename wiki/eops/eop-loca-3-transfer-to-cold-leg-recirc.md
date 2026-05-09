@@ -55,6 +55,11 @@ CAS transition for sump blockage: when ECCS pumps are aligned to sump and <span 
 ECCS realignment for cold leg recirculation is required as soon as the <span class="hi-exam">RWST Level LO alarm is FIRST validated</span> (IAW EOP-LOCA-1). 21SJ44 and 22SJ44 (Containment Sump Suction Valves) each serve a single RHR pump — <span class="hi-exam">with 21SJ44 closed, only 22 RHR pump can draw suction from the containment sump</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q33</div>
+EOP-LOCA-3 alignment when 21SJ44 fails to open: <span class="hi-exam">Step 5.2 directs stopping 21 RHR pump</span>, and 21 RHR pump remains stopped as long as 21SJ44 is shut. <span class="hi-exam">21SJ45 is interlocked with 21SJ44 — 21SJ45 cannot be opened with 21SJ44 shut</span>. The 21CS36 interlock is with 21RH1 and 21RH2 (must be SHUT before 21CS36 can be OPENED). With 22 RHR pump running at step 22, CS header flow is supplied by <span class="hi-exam">22CS36</span>. Final lineup: ALL containment sump recirculation flow goes through <span class="hi-exam">22SJ45 (to Charging/SI pump suctions) and 22CS36 (to spray headers)</span>; 22SJ49 (cold leg isolation) is shut whenever 22 RHR pump is running at the RWST lo-lo alarm. (Source procedure rev 30; ECCS Lesson Plan p.47, 52)
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #2</div>
 Cold leg recirculation transfer after LBLOCA. <span class="hi-exam">CT#2 (CT-36) — time-critical</span>: (1) Open 21SJ44 and 22SJ44, depress sump auto arm pushbuttons when containment sump >62% lights lit. (2) Remove lockouts for 2SJ67, 2SJ68, 2SJ69. (3) <span class="hi-exam">Close 2SJ69 within ~3.7 min</span> of RWST lo alarm. (4) <span class="hi-exam">Stop 22 CS pump within ~5.5 min</span>. (5) Close 21 and 22RH19s. Select flow path for all 4KV vital buses energized → Step 11. Close 2SJ67 and 2SJ68. Open 22SJ45, then 21SJ45. Close 2SJ30, 2SJ1, 2SJ2. <span class="hi-exam">Place 21RH29 and 22RH29 in manual and ensure closed (Step 15) within ~11.2 min</span>. PO removes lockout from 2SJ30.
@@ -64,7 +69,7 @@ Cold leg recirculation transfer after LBLOCA. <span class="hi-exam">CT#2 (CT-36)
 
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2016 Q5]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]]
+- Related exam questions: [[2016 Q5]], [[2016 Q33]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]]
 - Related JPMs: [[2020 JPM SRO-A5]]
 - Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]
