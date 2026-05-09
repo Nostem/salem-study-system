@@ -98,6 +98,9 @@ status: draft
 - [[Technical Specifications Overview]]
 
 ## NRC Exams
+- [[2016 NRC Written Exam]]
+- [[2016 NRC Operating Exam]]
+- [[2017 NRC Operating Exam]] — 15-01 ILOT retake (Section C only)
 - [[2018 NRC Written Exam]]
 - [[2018 NRC Operating Exam]]
 - [[2019 NRC Written Exam]]
