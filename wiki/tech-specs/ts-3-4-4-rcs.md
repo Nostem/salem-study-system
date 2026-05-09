@@ -26,6 +26,11 @@ aliases:
 
 **Action:** With less than required loops in operation, be in Hot Standby within <span class="val-trip">1 hour</span>.
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q28</div>
+Mode 2 RCP trip during startup at 4% power: with one RCS loop no longer in operation, LCO 3.4.1.1 requires the unit to <span class="hi-exam">be in Mode 3 within 1 hour</span>. <span class="hi-trap">Distinguish from: 15-minute timeline (wrong); "immediately initiate corrective action to return the loop to operable" (this is a Mode 4 / 3.4.1.3 action); "suspend boron dilution" (this is a Mode 3 / 3.4.1.2 action when no loop is in operation).</span>
+</div>
+
 ### Hot Standby (3.4.1.2)
 
 <div class="callout callout-important">
@@ -491,5 +496,5 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2016 Q28]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

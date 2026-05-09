@@ -80,10 +80,15 @@ RWST makeup procedure selection: IAW EOP-LOCA-5, crew adds makeup to RWST per <s
 LOCA-3 step 11.2 with no CCW pumps running directs single-train recirculation alignment via Step 124 — <span class="hi-exam">there is NO provision in LOCA-3 to transition to LOCA-5</span> for a no-CCW condition. LOCA-5 is entered for <span class="hi-trap">loss of emergency recirculation (mechanical/electrical recirc failures, sump cavitation via APPX-7, etc.) — NOT for loss of CCW alone during the LOCA-3 transfer.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q26</div>
+Step 9 / Table C — required CS pumps based on RWST level, containment pressure, and number of low-speed CFCUs. With a LBLOCA, 2C 4KV vital bus locked out (22 CS pump deenergized), 22 and 24 CFCUs failed to start, and containment pressure 18 psig: at the LOCA-3 entry, RWST is <span class="hi-exam">15.2 ft</span> and depletes at <span class="hi-exam">~13000 gpm</span> (2 RHR, 1 charging, 1 SI, 1 CS pump running). It takes over 9 minutes to drain below 1 ft, so 7 minutes after the RWST Lo alarm Table C indicates <span class="hi-exam">ONE CS pump required</span>; with 22 CS pump unpowered, <span class="hi-exam">21 CS pump only</span> runs. <span class="hi-trap">BOTH is the answer for RWST level 1–15.2 ft if containment pressure >47 psig OR no CFCUs running. NEITHER is the answer if RWST &lt;1 ft (drain-down miscalculation).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
-- Related exam questions: [[2016 Q5]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related exam questions: [[2016 Q5]], [[2016 Q26]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

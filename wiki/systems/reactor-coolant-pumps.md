@@ -149,6 +149,11 @@ On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel mom
 Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barrier. (UFSAR 5.5.1.3.14)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q27</div>
+RCP trip on Phase B isolation: CS actuation occurs at <span class="hi-exam">15 psig</span> in containment, which also triggers Phase B isolation. Phase B <span class="hi-exam">shuts RCP CCW cooling inlet and outlet valves</span>. Per the EOP-FRCE-1 basis, RCPs are tripped because <span class="hi-exam">CCW to RCP seals and motors is isolated</span> — to prevent motor damage due to lack of cooling. <span class="hi-trap">Not seal-leakoff minimization, not thermal barrier backflow prevention, and not two-phase pumping avoidance.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q78</div>
 Per AB.CC-0001, three time-critical RCP protection criteria on loss of CCW:<br>
 1. Motor bearing temp reaches <span class="hi-exam"><span class="val-trip">175°F</span> → stop RCPs</span> (calculate from initial temp + rate of rise)<br>
@@ -183,6 +188,11 @@ RCP #1 seal failure identification: <span class="hi-exam">seal leak-off flow >=6
 
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (minimum loops in operation by mode)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q28</div>
+LCO 3.4.1.1 (Modes 1 and 2): <span class="hi-exam">all reactor coolant loops shall be in operation</span>. With less than all loops operating, required action is <span class="hi-exam">be in HSB (Mode 3) within 1 hour</span>. Applies during plant startup at 4% power (Mode 2) when an RCP trips and a loop is no longer in operation. <span class="hi-trap">"Mode 3 within 15 minutes" has the right action but wrong time. "Immediately initiate corrective action to return the loop to operable" is a Mode 4 (3.4.1.3) action; "suspend operations involving boron concentration reduction" is a Mode 3 (3.4.1.2) action when no loop is in operation.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 Sim-d</div>
 RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <span class="hi-exam">low seal flow across #2 seal or excessive #3 seal flow</span>. Key check: if standpipe low AND seal leakoff flow alarm together → go to AB.RCP-0001. If standpipe low ONLY → fill: open <span class="hi-exam">2WR80 (PW to CONTMT STOP V)</span> on 2CC2, then <span class="hi-exam">21WR62 (Standpipe Supply Valve)</span> on 21 RCP bezel. When hi level alarm, close all and stop PW pump.
@@ -211,7 +221,7 @@ RCP shaft shear at 25% power — thermodynamic effects on the affected loop: wit
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
-- Related exam questions: [[2016 Q6]], [[2016 Q21]], [[2016 Q24]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
+- Related exam questions: [[2016 Q6]], [[2016 Q21]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
