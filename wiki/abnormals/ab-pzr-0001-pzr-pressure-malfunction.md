@@ -65,10 +65,15 @@ PZR Pressure Channel I fails high during startup at ~6% power. Both spray valves
 After a 21 SGFP trip at 100% MOL (no operator action, no Rx trip), an UNEXPECTED RC PRESS DEVIATION hi Console Alarm directs entry into AB.PZR-0001. The <span class="hi-exam">RC PRESS DEVIATION setpoint is +75 psig deviation</span> — this corresponds to when the spray valves are full open. After the initial insurge from the load rejection and the subsequent large amount of inward rod motion, <span class="hi-exam">spray valves should be shut</span>; if pressure deviation persists, the condition is unexpected and AB.PZR-0001 is entered.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q36</div>
+2PS1 PZR Spray Valve fails open at 4% power during a startup hold (cannot be shut). With NO operator action, RCS pressure decreases. Below P-10 the <span class="hi-exam">Low PZR Pressure reactor trip is BLOCKED</span> — the FIRST automatic protective action is <span class="hi-exam">SI on Low PZR Pressure</span>. Low PZR Pressure SI is reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span> (P-11). PZR level does not rise to the high-level Rx trip setpoint (the leak path depressurizes through the spray line). OT/DT trip would not initiate at 4% power.
+</div>
+
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[RPS/SSPS]]
-- Related exam questions: [[2016 Q11]], [[2016 Q17]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
+- Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[RPS/SSPS]], [[ECCS]]
+- Related exam questions: [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
 - Related JPMs: [[2020 JPM Sim-a]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

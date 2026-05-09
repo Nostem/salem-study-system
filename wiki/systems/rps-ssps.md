@@ -144,6 +144,16 @@ Manually initiating <span class="hi-exam">Phase B and Spray Actuation</span> fro
 SI signal blockability during cooldown (IOP-6): <span class="hi-exam">Low PZR Pressure SI and High Steam Flow SI can be blocked</span> when P-11 is active (< <span class="val-alarm">1915 psig</span>). However, <span class="hi-exam">Containment High Pressure SI (<span class="val-trip">4 psig</span>, 2/3 channels) CANNOT be blocked</span> — it remains active in all modes. During a Mode 3 cooldown with SI blocks in place, multiple SG depressurizations inside containment will cause Containment High Pressure SI actuation even though Low PZR Pressure SI is blocked. <span class="hi-trap">Low PZR Pressure SI logic is 2/3 channels (not 2/4) — the 2/4 logic is for the Low PZR Pressure reactor trip, not the SI signal.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q36</div>
+At <span class="hi-exam">4% power (below P-10)</span> the <span class="hi-exam">Low Pressurizer Pressure reactor trip is BLOCKED</span> — it is "not reinstated until &gt; P-10." With a stuck-open PZR spray valve depressurizing the RCS, the FIRST protective action below P-10 is therefore <span class="hi-exam">SI on Low PZR Pressure</span> (2/3 channels &lt;<span class="val-trip">1765 psig</span>). The Low PZR Pressure SI was reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span> (P-11). <span class="hi-trap">Trap: candidates may pick the Low PZR Pressure Rx Trip — but it is blocked below P-10. OT/DT trip would not initiate at 4% (D/T very small). PZR level does not rise to the high-level Rx trip setpoint.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q38</div>
+The <span class="hi-exam">Power Range Low Setpoint reactor trip (≤<span class="val-trip">25%</span> RTP)</span> can be manually blocked above P-10 by <span class="hi-exam">depressing the Block Power Range A and B pushbuttons at &gt;10% Rx power</span>. Depressing these pushbuttons changes the active reactor trip setpoint from the 25% low setpoint to the 109% high setpoint. <span class="hi-trap">The Reset Source Range A and B pushbuttons (when depressed below 10% power after the SR hi-flux trip was blocked) WOULD re-energize the SRNIs and lower the Rx trip setpoint to <span class="val-trip">1×10⁵ cps</span> — but the P-10 block prevents re-energization once above P-10. The PRNI Rate Mode "Reset" switch resets the High Flux Rate trip — it does NOT change the Rx power trip setpoint. The "High Flux at Shutdown" Block switches block the SR hi-flux trip — they do not affect the PR low setpoint trip.</span>
+</div>
+
 ## Auxiliary Feedwater Actuation
 
 | Pump | Actuation Signals | Setpoints | Source |
@@ -294,6 +304,8 @@ RTBs fail to open on a valid RPS trip signal — operator opens the <span class=
 - Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
   - [[2016 Q3]] — RTBs fail to open / RDMG breakers manually opened from 1CC3 / manual turbine trip required
   - [[2016 Q12]] — ATWS with RPS output failure / pistol grip de-energizes UV coil for RTB B (direct trip path)
+  - [[2016 Q36]] — 2PS1 spray valve fails open at 4% / Low PZR Pressure Rx trip blocked below P-10 / SI on Low PZR Pressure is FIRST protective action
+  - [[2016 Q38]] — Block Power Range A and B pushbuttons at 12% blocks the 25% PR low setpoint Rx trip / Reset Source Range pushbuttons prevented by P-10 block
   - [[2018 Q1]] — RCP shaft shear at 25% power: below P-8, single-loop low flow trip blocked
   - [[2018 Q10]] — PZR Pressure Channel fails low: 2/4 becomes 1/3 coincidence; PT-1648 is RSP only
   - [[2018 Q49]] — TRIP-1 immediate actions when RTBs fail: Trip Switches → Bezels → MG set breakers (E 6D, G 6D) → Turbine Trip

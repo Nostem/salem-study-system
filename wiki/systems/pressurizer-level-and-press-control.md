@@ -133,11 +133,16 @@ After a controlling PZR level channel fails LOW with a CCP in service, charging 
 2LT-459 (Channel I PZR Level) fails HIGH while controlling: 22 Backup Heaters <span class="hi-exam">automatically energize</span> due to <span class="hi-exam">+5% PZR level deviation (LACTUAL - LREF)</span>. 21 Backup Heaters are already ON in manual. <span class="hi-trap">Trap: candidates may incorrectly think B/U heaters will de-energize because PZR pressure (2235 psig) is > 2210 psig (the pressure-based B/U heater auto-energize setpoint). The level deviation logic is a separate, independent auto-energize path for the backup heaters.</span> TS action: per LCO 3.3.1.1, 2LT-459 must be placed in the tripped condition within <span class="hi-exam">72 hours</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q36</div>
+PZR Spray Valve 2PS1 fails open at 4% power during a startup: with NO operator action the <span class="hi-exam">FIRST protective action is Safety Injection on Low PZR Pressure</span>. <span class="hi-exam">Low PZR pressure reactor trip is BLOCKED below P-10</span> (and is not reinstated until &gt; P-10). <span class="hi-exam">Low PZR Pressure SI was reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span></span>. OT/DT trip would not occur because D/T is very small at 4% power. PZR level will not rise (the leak is depressurizing through spray) so high-level Rx trip does not actuate. <span class="hi-trap">Trap: candidates may pick low-pressure Rx trip — but it is blocked below P-10. SI on low PZR pressure is the active protective action below P-10.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
-- Related exam questions: [[2016 Q7]], [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2018 Q55]], [[2018 Q82]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
+- Related exam questions: [[2016 Q7]], [[2016 Q36]], [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2018 Q55]], [[2018 Q82]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
 - Related JPMs: [[2019 JPM Sim-c]], [[2022 JPM IP-i]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]

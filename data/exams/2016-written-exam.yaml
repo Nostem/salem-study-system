@@ -518,3 +518,77 @@
     ka_importance: 3.1
     type: RO
     tier_group: "Tier 2/Group 1"
+
+  - number: 36
+    topic: "2PS1 PZR spray valve fails open at 4% startup — first protective action is SI on Low PZR Pressure (Low PZR Press Rx trip blocked below P-10)"
+    answer: D
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - pressurizer
+      - pressurizer-level-and-press-control
+      - rps-ssps
+      - emergency-core-cooling-systems
+    tech_specs: []
+    ka: "010000 A2.02"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 37
+    topic: "Letdown Orifice Isolation Valves (2CV3/4/5) — 2CV7 is NOT an interlock"
+    answer: D
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - chemical-and-volume-control-system
+    tech_specs: []
+    ka: "011000 A4.05"
+    ka_importance: 3.2
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 38
+    topic: "Block Power Range A and B pushbuttons at 12% blocks the 25% PR low setpoint reactor trip"
+    answer: C
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - rps-ssps
+      - excore-nis
+    tech_specs: []
+    ka: "012000 A1.01"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 39
+    topic: "SEC BLOCK switch failure — must deenergize 2AVIB24/2BVIB27/2CVIB9 to start 21 Charging, 21 SI, #2 ECAC"
+    answer: D
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - secs
+      - emergency-core-cooling-systems
+      - chemical-and-volume-control-system
+      - 115v-ac
+    tech_specs: []
+    ka: "013000 K2.01"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 40
+    topic: "Post-trip 2N36 IRNI undercompensated (reads high, low SUR) — EOP-TRIP-2 step 22 directs manual SR energization"
+    answer: B
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - excore-nis
+    tech_specs: []
+    ka: "015000 A2.02"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"

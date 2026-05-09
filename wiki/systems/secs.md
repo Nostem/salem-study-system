@@ -87,11 +87,16 @@ Per EOP-LOPA-1: prior to energizing a deenergized 4KV Vital bus with an EDG, the
 On a LOOP with NO SI signal, the SECs <span class="hi-exam">strip the 4KV vital bus breakers BEFORE sequencing on BLACKOUT loads</span>. Both SI pumps would only be loaded onto the buses if there were an <span class="hi-exam">accident signal coupled with the Blackout signal</span> (SEC Mode III). With LOOP only, blackout loading runs charging pumps but neither SI pump starts — including any SI pump that was running for IST prior to the LOOP (it strips with the bus). Salem Unit 1 mapping: <span class="hi-exam">11/12 SI pumps are powered from 1A/1C 4KV Vital Buses</span> (not 1B).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q39</div>
+SEC vital instrument bus mapping: <span class="hi-exam">A, B, C SECs are powered from their respective Vital Instrument Buses (VIB)</span> and control the equipment powered from the respective 4KV and 460V buses. Salem Unit 2 equipment mapping: <span class="hi-exam">21 Charging Pump = B vital bus (2BVIB27); 21 Safety Injection Pump = A vital bus (2AVIB24); #2 Emergency Air Compressor (ECAC) = C vital bus (2CVIB9)</span>. With SEC BLOCK switches on 2RP1 inoperable, the only way to start equipment that the SEC has not commanded to run is to deenergize the corresponding VIB — which removes the SEC inhibit. To start all three pieces of equipment requires deenergizing <span class="hi-exam">2AVIB24, 2BVIB27, AND 2CVIB9</span>. <span class="hi-trap">Trap: any answer with only two of the three buses misses one piece of equipment. Each pump/compressor is on a different vital bus, so all three VIBs must be deenergized.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]]
 - Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
-- Related exam questions: [[2016 Q18]], [[2016 Q19]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
+- Related exam questions: [[2016 Q18]], [[2016 Q19]], [[2016 Q39]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

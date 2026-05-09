@@ -33,6 +33,11 @@ Step 7 of EOP-TRIP-2 (boration for 2 or more control rods not fully inserted) pr
 The longer RWST time compensates for the lower boron concentration. <span class="hi-trap">The two times are NOT for cooldown vs Hot Standby, BOL vs EOL, or different per-rod amounts based on stuck-rod count.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q40</div>
+<span class="hi-exam">EOP-TRIP-2 step 22</span> (Reactor Trip Response, 2-EOP-TRIP-2 Sh 4, rev 30): step asks if both IRNI channels are reading &lt;<span class="val-alarm">7E-11 A</span>. If they are NOT, it then asks if <span class="hi-exam">undercompensation is preventing proper operation</span>. If yes, the operator is instructed to <span class="hi-exam">manually energize Source Range channels</span>. IRNI channels normally continue to lower until off-scale on the control console, with automatic SR re-energization at 7E-11 A. An undercompensated IR detector reads abnormally HIGH (more low-energy gammas seen) and shows abnormally low SUR — both signatures of undercompensation.
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 RO-A2</div>
 Step 4 — Control Rod Insertion boration: for stuck control rods, rapid boration time = <span class="hi-exam">35 minutes per stuck rod</span>. Three stuck rods from Control Bank Delta = 35 x 3 = <span class="hi-exam">105 minutes</span> total rapid boration at 40 GPM. Total volume injected = 105 min x 40 GPM = <span class="hi-exam">4200 gallons</span>. Use S2.OP-TM.ZZ-0002 tank capacity curves to convert BAST levels between percent and gallons for determining final tank levels.
@@ -60,9 +65,9 @@ Transitioned from EOP-TRIP-1 following reactor trip on 22 RCP seal failure (no S
 
 ## Connections
 
-- Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]]
-- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related exam questions: [[2016 Q8]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
+- Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]], [[Excore NIs]]
+- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
+- Related exam questions: [[2016 Q8]], [[2016 Q40]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
