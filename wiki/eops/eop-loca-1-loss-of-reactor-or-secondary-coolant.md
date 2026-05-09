@@ -14,6 +14,13 @@ aliases:
 
 Primary EOP for response to a loss of reactor coolant or secondary coolant accident. Entered from EOP-TRIP-1 when RCS or secondary leak conditions are identified.
 
+## Major Action Categories
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q4</div>
+LOCA-1 has three Major Action Categories: <span class="hi-exam">(1) Check for Subsequent Failure, (2) Monitor Plant Equipment for Optimal Mode of Operation, (3) Determine optimal Method of Long-Term Plant Recovery</span>. The "Check for Subsequent Failure" item verifies that <span class="hi-exam">a faulted or ruptured SG is NOT the actual reason for ECCS injection</span> — and either fixes the SG on the spot (faulted SG isolation) or transitions to a more appropriate procedure. The OTHER condition LOCA-1 explicitly checks for (besides a LOCA) is a <span class="hi-exam">steam break / Loss of Secondary Coolant — because the event could be terminated by isolating the faulted SG</span>. <span class="hi-trap">Trap matrix:<br>&bull; SGTR is NOT the answer — there is no transition from SGTR-1 to LOCA-1, and actions to terminate primary-to-secondary leakage are NOT performed in LOCA-1.<br>&bull; The "unnecessary transition to FRHS-1" framing is plausible because FRHS-1 actions (minimizing AFW flow when all SGs are faulted) DO appear on other procedures (FRCE, LOSC-2) — but that is not why LOCA-1 checks for a steam break.</span>
+</div>
+
 ## Key Actions / Information
 
 <div class="callout callout-exam">
@@ -95,7 +102,7 @@ EOP-LOCA-1 entered from EOP-TRIP-1 after LBLOCA. STA reports <span class="hi-exa
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]]
-- Related exam questions: [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
+- Related exam questions: [[2016 Q4]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

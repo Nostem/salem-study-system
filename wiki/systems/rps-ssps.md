@@ -268,6 +268,11 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers and cont
 Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.OP-AB.CR-0001 Attachment 5: proceed to <span class="hi-exam">Rod Drive MG Set Control Panel (460V Vital Bus Room - El 84 ft.)</span> and open all four breakers — <span class="hi-exam">Reactor Trip Breaker A, Reactor Trip Breaker B, Reactor Trip Bypass Breaker A, Reactor Trip Bypass Breaker B</span>. Also trip <span class="hi-exam">#13 Charging Pump breaker (1AX1AX7X)</span> and open <span class="hi-exam">1CV175 Rapid Borate Stop Valve breaker (1CY2AX4I)</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q3</div>
+RTBs fail to open on a valid RPS trip signal — operator opens the <span class="hi-exam">RDMG sets power supply breakers from 1CC3</span> to drop rods. Because the trip signal does NOT propagate through the RTB output contacts, the <span class="hi-exam">automatic Main Turbine trip from the RTBs is bypassed</span> — the crew must <span class="hi-exam">manually trip the Main Turbine</span> as a directly performed action. Once the manual turbine trip occurs, the remaining downstream automatic responses still function: main generator output breakers auto-open on turbine trip, 4KV group buses transfer automatically on low voltage, and AFW pumps auto-start on SG lo-lo level (after the turbine trip causes SG shrink). <span class="hi-trap">Trap: the RTB output is the auto turbine trip source — losing the RTB path loses the turbine trip path. Group bus transfer and AFW start are automatic and do NOT need to be directly performed.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.3 — Instrumentation]]** — Trip setpoints, response times, channel operability
@@ -281,7 +286,8 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]]
-- Related exams: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+  - [[2016 Q3]] — RTBs fail to open / RDMG breakers manually opened from 1CC3 / manual turbine trip required
   - [[2018 Q1]] — RCP shaft shear at 25% power: below P-8, single-loop low flow trip blocked
   - [[2018 Q10]] — PZR Pressure Channel fails low: 2/4 becomes 1/3 coincidence; PT-1648 is RSP only
   - [[2018 Q49]] — TRIP-1 immediate actions when RTBs fail: Trip Switches → Bezels → MG set breakers (E 6D, G 6D) → Turbine Trip

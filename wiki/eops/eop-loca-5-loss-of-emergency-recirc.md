@@ -75,10 +75,15 @@ LOCA-5 mitigation strategies include: (1) Run all CFCUs in high speed, (2) Minim
 RWST makeup procedure selection: IAW EOP-LOCA-5, crew adds makeup to RWST per <span class="hi-exam">S2.OP-SO.CVC-0006 Section 5.8 (Makeup to RWST Using CVCS Makeup System)</span> — NOT S2.OP-SO.SF-0001 Section 5.6 (Transferring Spent Fuel Pool Water to RWST). SG NR Level feed flow target depends on containment conditions: <span class="hi-exam">ADVERSE containment (≥ 4 psig): maintain total feed flow > 22E04 LB/HR until at least one SG NR Level > 15%</span>. <span class="hi-exam">NORMAL containment: > 9%</span>. At 12.0 psig containment pressure = adverse conditions apply. <span class="hi-trap">Trap: S2.OP-SO.SF-0001 Section 5.6 IS an approved RWST makeup procedure, but EOP-LOCA-5 specifically directs CVC-0006 Section 5.8.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q5</div>
+LOCA-3 step 11.2 with no CCW pumps running directs single-train recirculation alignment via Step 124 — <span class="hi-exam">there is NO provision in LOCA-3 to transition to LOCA-5</span> for a no-CCW condition. LOCA-5 is entered for <span class="hi-trap">loss of emergency recirculation (mechanical/electrical recirc failures, sump cavitation via APPX-7, etc.) — NOT for loss of CCW alone during the LOCA-3 transfer.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
-- Related exam questions: [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related exam questions: [[2016 Q5]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

@@ -16,6 +16,11 @@ Provides direction for transferring ECCS suction from the RWST to the containmen
 
 ## Key Actions / Information
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q5</div>
+EOP-LOCA-3 <span class="hi-exam">Step 11.2</span> checks whether at least one CCW pump is running. With <span class="hi-exam">NO CCW pumps running</span>, operators are directed to <span class="hi-exam">go to Step 124 and align for single-train recirculation operation</span> (continue in LOCA-3 — single train without CCW). <span class="hi-trap">Trap matrix:<br>&bull; There is NO provision in LOCA-3 to transition to EOP-APPX-1 (CCW Restoration) or EOP-LOCA-5 (Loss of Emergency Coolant Recirculation) when no CCW pumps are running. LOCA-5 is for mechanical/electrical recirc failures, not loss of CCW.<br>&bull; The two-train alignment (BOTH RHR pumps + one SI + one charging) is the normal LOCA-3 flowpath when CCW IS available — not the "no CCW" path.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2023 #1</div>
 Transfer to cold leg recirculation during LBLOCA. Time-critical operator actions from RWST Lo Level alarm:<br>
@@ -59,7 +64,7 @@ Cold leg recirculation transfer after LBLOCA. <span class="hi-exam">CT#2 (CT-36)
 
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]]
+- Related exam questions: [[2016 Q5]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]]
 - Related JPMs: [[2020 JPM SRO-A5]]
 - Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]

@@ -31,5 +31,5 @@ Step 2 — CS pump operation with LOCA-5 in effect: when transitioning to FRCE-1
 
 - Related systems: [[Containment Spray]], [[CFCUs]], [[Containment]]
 - Related EOPs: [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2018 Q73]], [[2020 Q9]], [[2022 Q80]]
-- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2016 Q4]], [[2018 Q73]], [[2020 Q9]], [[2022 Q80]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

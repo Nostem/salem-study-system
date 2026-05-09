@@ -134,11 +134,16 @@ AFW backleakage (S2.OP-PT.AF-0002): monitoring required <span class="hi-exam">30
 MDAFW pump power supply confirmation: <span class="hi-exam">11 AFW Pump is powered from 1A 4KV Vital Bus</span>. With 1A 4KV de-energized, 11 AFW is lost. Per EOP-LOSC-2 Step 1: if the 13 AFW Pump (TDAFW) is the <span class="hi-exam">ONLY source of AFW flow</span> (both MDAFWs unavailable), steam must NOT be isolated to the 13 AFW Pump. <span class="hi-trap">Must trace 4KV bus to AFW pump mapping: 1A 4KV → 11 AFP, 1B 4KV → 12 AFP. With both MDAFWs unavailable, the TDAFW pump is the only remaining source and must be preserved.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q3</div>
+After a manual main turbine trip (e.g., RTBs failed and operators tripped via the RDMG breakers), the SGs shrink and SG NR level lowers. The <span class="hi-exam">AFW pumps automatically start on SG lo-lo level</span> — no direct crew action is required. This is one of several automatic responses (group bus auto-transfer, generator output breaker auto-open) that continue to function even when the RTB-driven auto turbine trip is bypassed.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]]
-- Related exam questions: [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
+- Related exam questions: [[2016 Q3]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

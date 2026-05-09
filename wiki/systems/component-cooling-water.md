@@ -141,9 +141,14 @@ CCW leak location via chemistry: per AB.CC-0001, any inleakage dilutes CCW chrom
 Start a CCW pump IAW EOP-APPX-1 during large break LOCA with loss of offsite power. <span class="hi-exam">2B 4KV Vital Bus de-energized</span> (Bus Differential, Diesel running). No CCW pumps running (SEC Mode 3). Step 3 strategy selection: de-energized bus = B → CCW pumps available = 21 or 23 → <span class="hi-exam">Strategy C → GO TO Step 6</span>. <span class="hi-exam">21 CCW pump fails to start</span> (override): take RNO, reset CS, restart 21 CS pump, proceed to Step 6h. Successfully <span class="hi-exam">start 23 CCW pump on 2C bus</span>. Requires SEC Block, Emergency Loading Reset, stopping CS pump to make room on SEC-loaded bus, then restarting CS after CCW starts.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q5</div>
+With NO CCW pumps running during EOP-LOCA-3 cold leg recirculation transfer, <span class="hi-exam">single-train recirculation</span> is the directed flowpath (LOCA-3 step 11.2 → step 124). CCW is required for ECCS pump cooling — losing CCW restricts recirculation to one train. <span class="hi-trap">There is no provision in LOCA-3 to transition to APPX-1 (CCW Restoration) or LOCA-5 (Loss of Emergency Coolant Recirculation) for a no-CCW condition during the recirc transfer.</span>
+</div>
+
 ## Connections
 
-- Related exam questions: [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
+- Related exam questions: [[2016 Q5]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
 - Related JPMs: [[2018 JPM Sim-h]], [[2019 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 1]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]]

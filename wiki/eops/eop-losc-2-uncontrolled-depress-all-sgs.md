@@ -38,6 +38,6 @@ Step 1 — 13 AFW Pump (TDAFW) steam isolation: if the 13 AFW Pump is <span clas
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[500KV]]
-- Related exam questions: [[2018 Q66]], [[2019 Q66]], [[2023 Q7]]
+- Related exam questions: [[2016 Q4]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

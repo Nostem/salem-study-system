@@ -149,11 +149,28 @@ Startup and parallel 11 RDMG set per S1.OP-SO.RCS-0001 Section 5.4 (same task as
 22 RC Loop Tavg Channel fails high at 40% power causing rods to step in (automatic control sees Tavg higher than Tref). RO places rod control in Manual, stopping rod motion. OHA E-8 (Rod Insertion Lo) and E-16 (Rod Insertion Lo-Lo). CRS enters AB.ROD-0003. RO adjusts rods to maintain Tavg within <span class="hi-exam">1.5 deg</span> of program. After defeating failed channel and restoring rods to ARO, RO returns <span class="hi-exam">rod control to Auto</span>.
 </div>
 
+## Rod Control Cabinet Failure Modes
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q2</div>
+Failures that cause a <span class="hi-exam">SINGLE control rod to drop fully into the core</span>: <span class="hi-exam">a blown fuse for a Stationary Gripper coil with NO demand for rod movement</span>. With no movement demand, the moveable gripper is de-energized — the stationary gripper alone supports the rod. Loss of stationary gripper power releases the rod, allowing it to drop. <span class="hi-trap">Trap matrix:<br>&bull; Blown fuse for a LIFT coil during demand for rod movement → moveable gripper still holds rod, rod just won't move (does NOT drop).<br>&bull; Loss of power to a single POWER CABINET during demand → affects MULTIPLE rods (stationary gripper coils on multiple rods), not a single rod.<br>&bull; Loss of power to a single LOGIC CABINET with NO demand for rod movement → no effect (logic cabinet failure during a movement cycle could drop multiple rods due to lost power to movable gripper and lift coils, but at no demand the stationary grippers continue to be powered).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q1</div>
+Rod auto control responds to <span class="hi-exam">small Tavg deviations at the minimum 8 spm rate</span>. An unexpected RCS boration (e.g., VCT auto makeup with 1CV175 erroneously open) lowers Tavg slightly, opens MT governor valves, and drives <span class="hi-exam">8 spm rod withdrawal</span> to restore Tavg. PT-505 (Turbine Steamline Inlet Pressure) failed HIGH would also withdraw rods, but at the <span class="hi-exam">maximum 72 spm</span> rate (large simulated power mismatch). PT-505 failed LOW drives rod insertion, not withdrawal.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q3</div>
+With reactor trip breakers (RTBs) failing to open, the reactor is tripped from the control room by <span class="hi-exam">opening the RDMG sets power supply breakers from 1CC3</span>. This de-energizes the rod drive system and allows rods to drop. Because the trip signal originates from RDMG breaker open (not from the RTB output contacts), the <span class="hi-exam">Main Turbine does NOT receive an automatic trip signal — the crew must directly perform a manual turbine trip</span>. Other expected automatic responses still occur: main generator output breakers auto-open on the manual turbine trip, 4KV group buses auto-transfer on low voltage, and AFW pumps auto-start on SG lo-lo level after main turbine trip causes SG shrink.
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]]
+- Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]], [[CVCS]], [[Main Turbine]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam questions: [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
+- Related exam questions: [[2016 Q1]], [[2016 Q2]], [[2016 Q3]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
 - Related JPMs: [[2018 JPM Sim-a]], [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
