@@ -305,7 +305,7 @@ RTBs fail to open on a valid RPS trip signal — operator opens the <span class=
 - Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
-- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]]
 - Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
   - [[2016 Q3]] — RTBs fail to open / RDMG breakers manually opened from 1CC3 / manual turbine trip required
   - [[2016 Q12]] — ATWS with RPS output failure / pistol grip de-energizes UV coil for RTB B (direct trip path)

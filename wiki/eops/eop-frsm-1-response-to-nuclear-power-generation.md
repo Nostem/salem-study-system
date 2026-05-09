@@ -66,5 +66,5 @@ ATWS at 4% power awaiting Mode 1 (steam dumps in service, 21 SGFP in service, 22
 - Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam questions: [[2016 Q78]], [[2016 Q83]], [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
-- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

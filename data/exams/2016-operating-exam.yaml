@@ -348,3 +348,28 @@ scenarios:
         ct_label: "CT#2"
         description: "Establish flow from at least one high-head ECCS pump (manually open BIT isolation valves 2SJ12/2SJ13) before transition out of EOP-TRIP-1."
         time_critical: false
+
+  - number: 2
+    title: "2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV"
+    pages: "1-32"
+    num_events: 8
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-SGTR-1
+      - EOP-SGTR-3
+    abnormals_entered:
+      - AB.CN-0001
+      - AB.LOAD-0001
+      - AB.CVC-0001
+      - AB.SG-0001
+      - AB.RAD-0001
+    critical_tasks:
+      - id: "CT-18"
+        ct_label: "CT#1"
+        description: "Isolate feed flow into (close 21AF11 and 21AF21) and steam flow from (shut 21MS167; verify 21MS7, 21MS18, 21GB4 shut) 21 SG prior to a transition to SGTR-3 being required."
+        time_critical: false
+      - id: "CT-19"
+        ct_label: "CT#2"
+        description: "Establish and maintain an RCS temperature so that transition from SGTR-1 does not occur because temperature is too high to maintain minimum subcooling, or so low it causes transition to FRTS or FRSM. Cooldown target temperature from Table D (503 °F for ruptured SG pressure ~1000 psig)."
+        time_critical: false

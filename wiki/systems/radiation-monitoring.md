@@ -210,4 +210,5 @@ Process radiation monitor Source Check duration: <span class="hi-exam">activate 
   - [[2016 Q68]] — Containment Rad Monitors (2R12A) NOT required operable for Mode 6 / Fuel Movement / Core Alts
   - [[2016 Q88]] — 2R5 alarm 11 mR/hr / dropped fuel: auto swap FHB vent to charcoal + start both Exhaust Fans / 2R5 does NOT lock out crane
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
 - Related exam: [[2016 NRC Operating Exam]]

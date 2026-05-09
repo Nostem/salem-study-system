@@ -61,6 +61,11 @@ OHA A-6 RMS TRBL during 35 gpm RCS leak inside containment. <span class="hi-exam
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+21 SG tube leak at 89.4% power. Entry concurrent with AB.SG-0001. Initial cue: OHA A-6 with <span class="hi-exam">2R53A 21 Main Steamline N-16 monitor &gt;1000 gpd</span> in alarm; OHA A-6 reflash on <span class="hi-exam">2R15 Condenser Air Ejector monitor</span>; later <span class="hi-exam">2R19A in warning/alarm</span> with SGBD isolation on high radiation. CRS dispatches operator to isolate TGA and Condensate Polisher area sump pumps to limit secondary release path.
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #1</div>
 OHA A-6 unexpected annunciation during a 20 gpm RCS leak at 100% power. <span class="hi-exam">2R11A containment radiation monitor reading rises</span> and OHA C-2 CNTMT SUMP PMP START unexpected annunciates. CRS enters AB.RAD-0001 concurrent with AB.RC-0001. Rad Pro contacted for CFCU recommendation — PO places <span class="hi-exam">2 CFCUs in Low Speed and 2 CFCUs in High Speed</span>.
 </div>
@@ -71,5 +76,5 @@ OHA A-6 unexpected annunciation during a 20 gpm RCS leak at 100% power. <span cl
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related exam questions: [[2018 Q7]], [[2018 Q83]], [[2019 Q8]], [[2019 Q33]], [[2020 Q23]], [[2020 Q51]], [[2022 Q23]], [[2023 Q62]]
 - Related JPMs: [[2023 JPM Sim-h]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

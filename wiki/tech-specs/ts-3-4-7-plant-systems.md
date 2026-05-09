@@ -475,9 +475,15 @@ The program for examination, testing, and service life monitoring is performed i
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-7-1.pdf" target="_blank">View TS PDF (Turbine Cycle)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-3.pdf" target="_blank">View TS PDF (CCW)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-4.pdf" target="_blank">View TS PDF (SW)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-7.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+21 SG tube leak escalating to rupture. After 21MS45 is shut to isolate the 21 SG steam supply path to 23 AFW pump, CRS enters <span class="hi-exam">LCO 3.7.1.2</span> for less than 3 operable AFW pumps (23 AFW pump rendered inoperable by loss of steam supply).
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
 - Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]]
 - Related JPMs: [[2020 JPM SRO-A3]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]]

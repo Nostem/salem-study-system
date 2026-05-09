@@ -70,5 +70,5 @@ FRCC-2 → FRTS-1 transition during accumulator depressurization: <span class="h
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
 - Related EOPs: [[EOP-FRCC-2 — Response to Degraded Core Cooling]]
 - Related exam questions: [[2016 Q24]], [[2016 Q83]], [[2016 Q99]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]]
-- Related scenarios: [[2018 Scenario 2]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

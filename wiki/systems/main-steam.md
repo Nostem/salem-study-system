@@ -119,5 +119,5 @@ Small (0.1%) steam leak from a single SG with reactor at <span class="hi-exam">1
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
 - Related exam questions: [[2016 Q16]], [[2016 Q23]], [[2016 Q24]], [[2016 Q49]], [[2016 Q50]], [[2016 Q79]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]]
-- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -70,6 +70,11 @@ Charging line leak diagnosis: <span class="hi-exam">seal injection flow lowering
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+Charging Master Flow Controller fails (severity 26) during a 5%/min downpower to 85%. Diagnostic indications: <span class="hi-exam">low seal injection flow alarms on all RCPs</span>; charging flow lower than expected (<span class="hi-exam">~75 gpm vs ~87 gpm</span>); no PZR level or VCT level channel failure; no charging system leak; charging pump running with no cavitation. CRS enters AB.CVC-0001. Initial RO action: use Alarm Response Procedure to adjust 2CV71 to restore seal injection above the alarm setpoint (does NOT restore normal charging flow). Crew transitions to Att. 2 — RO takes <span class="hi-exam">manual control of 23 charging pump</span> and adjusts speed to maintain PZR level on program. RO announces auto rod motion when it occurs. Goal: maintain PZR level stable or rising while diagnosing.
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #1</div>
 Controlling PZR Level Channel I fails low at 100% power — letdown isolates and Master Flow Controller raises charging flow. Crew takes manual control of MFC, returns PZR level to program, selects operable channel for Control/Alarm/Recorders. Letdown restoration sequence: ensure <span class="hi-exam">2CV7</span> open; place <span class="hi-exam">2CV18</span> in manual and close/open until close PB extinguishes; open <span class="hi-exam">2CV2 and 2CV277</span> then place both in auto; verify charging flow ~<span class="val-normal">85-90 gpm</span>; open a 75 gpm orifice while adjusting 2CV18 to control letdown pressure ~300 psig; place 2CV18 in auto. CRS enters <span class="hi-exam">TS LCO 3.3.1.1 Action 6</span>. OHA E-20 PZR HTR ON LVL HI is expected to annunciate due to no letdown with charging flow established.
 </div>
@@ -79,5 +84,5 @@ Controlling PZR Level Channel I fails low at 100% power — letdown isolates and
 - Related systems: [[CVCS]], [[EDGs]]
 - Related exam questions: [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]]
 - Related JPMs: [[2018 JPM Sim-b]], [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

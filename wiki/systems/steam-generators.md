@@ -162,6 +162,11 @@ SS94 (SG B/D Sample Valves, 21-24SS94) cannot be reopened until <span class="hi-
 SG shrink/swell on RCP shaft shear: when 13 RCP shaft shears at 25% power, <span class="hi-exam">steam flow from 13 SG lowers significantly</span> (reduced RCS flow through the SG tubes means less heat transfer to the secondary). The reduction in steam production causes <span class="hi-exam">13 SG NR Level to initially SHRINK</span> (reduced voiding in the SG → apparent level drop). <span class="hi-trap">Trap: swell occurs when steam flow INCREASES (e.g., turbine trip reduces steam demand → pressure rise → less boiling initially, but more commonly steam flow increase causes more voiding). In this case, steam flow DECREASES, causing shrink.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+21 SG tube leak (severity 5) escalating to rupture (severity 650). Diagnostic indications: <span class="hi-exam">2R53A 21 Main Steamline N-16 monitor &gt;1000 gpd</span>, OHA A-6 with reflash on 2R15 Condenser Air Ejector monitor, 2R19A in warning/alarm with SGBD isolation on high radiation. CRS isolates 21 SG per AB.SG-0001 (sets <span class="hi-exam">21MS10 to 1045 psig</span>; ensures 21GB4, 21MS18, 21MS7 shut; dispatches operator to shut 21MS45 and 2SS321). EOP-SGTR-1 isolation completes CT#1 (CT-18): close <span class="hi-exam">21AF11 and 21AF21</span>; shut <span class="hi-exam">21MS167</span>. SGBD will isolate ~2.5 minutes after 2R53D alarms which causes RCS temp and PZR level to rise.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
@@ -173,5 +178,5 @@ EOP-LOCA-1 explicitly checks for a <span class="hi-exam">steam break / Loss of S
 
 - Related exam questions: [[2016 Q4]], [[2016 Q25]], [[2016 Q48]], [[2016 Q49]], [[2016 Q51]], [[2016 Q65]], [[2016 Q79]], [[2016 Q83]], [[2016 Q85]], [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
 - Related JPMs: [[2023 JPM SRO-A4]], [[2016 JPM Sim-h]]
-- Related scenarios: [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

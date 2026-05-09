@@ -150,6 +150,11 @@ Loss of ALL AC power to Unit 2 — General Emergency classification: <span class
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+2C EDG <span class="hi-exam">Pre-Lube pump failure</span> as initial event (TS event). Initial condition: 2C EDG Jacket Water heater is failed and CIT (abnormal plant configuration) carried over from prior shift. Entry cue: OHA J-20, 2C DG URGENT TRBL. Investigation: 2C EDG Alarm Window A-7 PRE-LUBE PUMP FAILURE in alarm; Pre-lube pump NOT running with breaker shut. CRS uses S2.OP-SO.DG-0003, 2C Diesel Generator Operation, and recognizes 2C EDG is now <span class="hi-exam">inoperable with both Jacket Water Heater AND Pre-lube pump inoperable</span>; enters <span class="hi-exam">LCO 3.8.1.1.b action b</span>. Determines that <span class="hi-exam">S2.OP-ST.500-0001, Electrical Power Systems AC Sources Alignment, must be performed within one hour</span> (action b.1) to demonstrate the operability of the independent AC Sources.
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2022 #3</div>
 2A EDG running unloaded for maintenance run (initial condition). 2A EDG emergency trips during scenario. CRS evaluates <span class="hi-exam">TS 3.8.1.1 action b.1 (1 hour line surveillance)</span> and <span class="hi-exam">action b.4 (72 hours to restore EDG to Operable status)</span>. No impact to plant operations.
 </div>
@@ -221,5 +226,5 @@ PZR Backup Heater Group transfer to emergency power adds heater load to a vital 
 - Related exam questions: [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
 - Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]]
 - Related JPMs: [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-g]], [[2016 JPM IP-i]], [[2016 JPM IP-k]], [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
-- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
 - Related exams: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
