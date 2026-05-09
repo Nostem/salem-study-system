@@ -49,6 +49,16 @@ PZR vapor space leak (SBLOCA) with RCS at <span class="hi-exam">1450 psig</span>
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q44</div>
+CS Pump Stop Criteria — depressing both Reset Spray Actuation pushbuttons during LOCA-1: <span class="hi-exam">CS actuation relays have retentive memory</span>, allowing manual reset with the actuation signal still present. Even with containment pressure above the <span class="val-trip">15 psig</span> CS setpoint (e.g., 15.1 psig), the actuation signal resets and <span class="hi-exam">does NOT reinitiate after the pushbuttons are released</span>. CS pumps and CS valves CS2, CS14, CS16, CS17 do NOT reposition; valves remain in spray alignment until actuation is reset.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q45</div>
+Hydrogen Recombiner availability per Step 24 with electrical malfunction: <span class="hi-exam">11 recombiner on 1A 460V Vital Bus; 12 recombiner on 1B 460V Vital Bus</span>. With 1A 4KV Vital Bus locked out, only 12 Recombiner is available to start when directed.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q77</div>
 Step 7.4 (stopping containment spray pumps) is a <span class="hi-exam">continuous action step</span>. Per OP-SA-108-101-2002 step 2.16.2: <span class="hi-exam">continuous action steps should NOT be performed when a Red or Purple path FRP is in progress</span>. Even though containment pressure is below 13 psig and conditions for stopping CS pumps are met, a valid PURPLE path on Thermal Shock takes priority — <span class="hi-exam">transition to the FRP, do NOT perform Step 7.4</span>.
 </div>
@@ -102,7 +112,7 @@ EOP-LOCA-1 entered from EOP-TRIP-1 after LBLOCA. STA reports <span class="hi-exa
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]]
-- Related exam questions: [[2016 Q4]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
+- Related exam questions: [[2016 Q4]], [[2016 Q44]], [[2016 Q45]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
 - Related JPMs: [[2022 JPM Sim-c]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

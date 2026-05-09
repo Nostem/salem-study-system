@@ -39,6 +39,11 @@ CFCU SW flow orifices maintain <span class="hi-exam">constant SW flow rate throu
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q42</div>
+CFCU SW flow control valve <span class="hi-exam">SW223 has a position limiter (typically 50% travel)</span> — opens to the mechanical stop on a start signal from either Low or High speed. With the mechanical stop employed, <span class="hi-exam">steady-state SW flow is identical for High and Low speed CFCU operation</span>. Note: the CFCU is normally stopped for ~30 seconds during the speed transfer (no flow during transient). Reference: S2.OP-ST.SW-0010 IST CFCU SW Valves.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q51</div>
 <span class="hi-exam">SW122 (SW Inlet Control Valve to CCW HX) fails OPEN on loss of instrument air</span> (fails closed on loss of 125VDC). Loss of air to SW122 → valve fails open → increased SW flow through CCW HX → lower CCW temperature → lower RHR HX outlet temperature → <span class="hi-exam">increased RCS cooldown rate</span>. Per AB.CA-0001, SW122 can be manually operated.
 </div>
@@ -125,8 +130,8 @@ SW Nuclear Header leak location: with low SW pressure to loads on the <span clas
 
 ## Connections
 
-- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related exam questions: [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
+- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
+- Related exam questions: [[2016 Q42]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
 - Related JPMs: [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
 - Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

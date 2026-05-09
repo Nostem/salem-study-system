@@ -168,10 +168,20 @@ Emergency classification with degraded CFCUs: 21 CFCU C/T for cooler leak, 22 an
 Minimum containment cooling configurations that maintain Containment Pressure, Temperature and Humidity within design limits with a DBA: <span class="hi-exam">2 CS Pumps, OR 1 CS Pump + 3 CFCUs, OR 5 CFCUs</span>. <span class="hi-trap">Trap: 1 CS Pump alone or 1 CS Pump + 2 CFCUs are NOT sufficient for DBA containment cooling. Only 5 CFCUs (without any CS Pump) is sufficient.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q41</div>
+SEC MODE 1 (SI with vital power) CFCU response: <span class="hi-exam">by procedure, a maximum of 4 CFCUs can be running in High Speed</span>. On MODE 1 SEC initiation, <span class="hi-exam">ALL CFCUs running in high speed will be stopped, then ALL CFCUs (including the 5th non-running CFCU) will start in LOW speed</span>. CFCUs swapping to low speed receive a stop signal, then a time delay to allow motor to coast down, before the Low speed start signal occurs. <span class="hi-trap">Distractors "only running CFCUs swap speed" miss that the 5th non-running CFCU also receives the low-speed start signal.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q42</div>
+CFCU SW flow control valve <span class="hi-exam">SW223 has a position limiter, typically 50% travel</span>. SW223 opens on a start signal from either low speed or high speed. <span class="hi-exam">With the mechanical stop employed, steady-state SW flow is the same for high speed or low speed operation</span>. The CFCU is normally stopped for ~30 seconds when transferring speed (no flow during transient). <span class="hi-trap">Distractor "rise or lower based on initial SW header pressure" is plausible if SW header pressure is assumed to change, but in steady-state-to-steady-state comparisons it does not.</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
-- Related exam questions: [[2016 Q26]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
+- Related exam questions: [[2016 Q26]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
 - Related JPMs: [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

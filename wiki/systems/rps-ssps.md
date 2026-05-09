@@ -284,6 +284,11 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q44</div>
+<span class="hi-exam">Containment Spray actuation relays have RETENTIVE MEMORY</span> — relays can be manually reset with an actuation signal still present. Even with containment pressure above the CS actuation setpoint of <span class="val-trip">15 psig</span>, depressing both Reset Spray Actuation pushbuttons resets the actuation signal, and the signal does NOT reinitiate after the pushbuttons are released. <span class="hi-exam">CS pumps and CS valves CS2, CS14, CS16, CS17 do NOT reposition to normal positions on reset</span> (CS14 is normally open with power removed; the others are normally shut and open on the CS signal — they cannot be closed until the spray actuation signal is reset). <span class="hi-trap">Trap: assuming actuation reinitiates while pressure remains above 15 psig — retentive memory prevents this.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q3</div>
 RTBs fail to open on a valid RPS trip signal — operator opens the <span class="hi-exam">RDMG sets power supply breakers from 1CC3</span> to drop rods. Because the trip signal does NOT propagate through the RTB output contacts, the <span class="hi-exam">automatic Main Turbine trip from the RTBs is bypassed</span> — the crew must <span class="hi-exam">manually trip the Main Turbine</span> as a directly performed action. Once the manual turbine trip occurs, the remaining downstream automatic responses still function: main generator output breakers auto-open on turbine trip, 4KV group buses transfer automatically on low voltage, and AFW pumps auto-start on SG lo-lo level (after the turbine trip causes SG shrink). <span class="hi-trap">Trap: the RTB output is the auto turbine trip source — losing the RTB path loses the turbine trip path. Group bus transfer and AFW start are automatic and do NOT need to be directly performed.</span>
 </div>
@@ -340,3 +345,4 @@ RTBs fail to open on a valid RPS trip signal — operator opens the <span class=
   - [[2019 Q49]] — EOP-TRIP-1 Step 1 manual trip sequence: Pistol Grips FIRST, then Bezels, then open E 6D and G 6D breakers
   - [[2019 Q50]] — OT Delta-T variable setpoint lowers as RCS pressure lowers (K3 pressure input); OP Delta-T varies with AFD not pressure
   - [[2018 Q11]] — RCP Undervoltage trip: 4KV Group Busses H and G at <70% normal voltage / 1/2 taken twice / interlocked with P-7
+  - [[2016 Q44]] — CS actuation relays have retentive memory; reset valid above 15 psig setpoint; CS pumps/valves do NOT reposition on reset

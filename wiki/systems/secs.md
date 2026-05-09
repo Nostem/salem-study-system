@@ -88,6 +88,16 @@ On a LOOP with NO SI signal, the SECs <span class="hi-exam">strip the 4KV vital 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q41</div>
+SEC MODE 1 (SI with vital power) CFCU sequencing: <span class="hi-exam">All running CFCUs (max 4 in High Speed by procedure) are stopped, then ALL 5 CFCUs start in LOW speed</span>. Swap to low speed = stop signal, then time delay for motor coastdown, then low-speed start signal. The 5th (non-running) CFCU also receives the low-speed start signal.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q43</div>
+SEC vs CS valves: <span class="hi-exam">the SEC controller operates the CS pumps at 2 different points in the sequence UNTIL the SEC is reset. The SEC ONLY controls the CS pumps, not the CS valves.</span> CS valves realign on the Hi-Hi containment pressure signal whenever it is received, but <span class="hi-exam">once the SEC is reset, it will NOT start the CS pumps</span> on a subsequent Hi-Hi signal — sequencer is no longer active. CS pumps must be manually started after SEC reset.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q39</div>
 SEC vital instrument bus mapping: <span class="hi-exam">A, B, C SECs are powered from their respective Vital Instrument Buses (VIB)</span> and control the equipment powered from the respective 4KV and 460V buses. Salem Unit 2 equipment mapping: <span class="hi-exam">21 Charging Pump = B vital bus (2BVIB27); 21 Safety Injection Pump = A vital bus (2AVIB24); #2 Emergency Air Compressor (ECAC) = C vital bus (2CVIB9)</span>. With SEC BLOCK switches on 2RP1 inoperable, the only way to start equipment that the SEC has not commanded to run is to deenergize the corresponding VIB — which removes the SEC inhibit. To start all three pieces of equipment requires deenergizing <span class="hi-exam">2AVIB24, 2BVIB27, AND 2CVIB9</span>. <span class="hi-trap">Trap: any answer with only two of the three buses misses one piece of equipment. Each pump/compressor is on a different vital bus, so all three VIBs must be deenergized.</span>
 </div>
@@ -97,6 +107,6 @@ SEC vital instrument bus mapping: <span class="hi-exam">A, B, C SECs are powered
 - Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]]
 - Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
-- Related exam questions: [[2016 Q18]], [[2016 Q19]], [[2016 Q39]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
+- Related exam questions: [[2016 Q18]], [[2016 Q19]], [[2016 Q39]], [[2016 Q41]], [[2016 Q43]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

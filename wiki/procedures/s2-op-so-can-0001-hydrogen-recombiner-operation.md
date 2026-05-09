@@ -42,9 +42,14 @@ SRO question confirms: per EOP-LOCA-1 Step 24, when H2 concentration is <span cl
 Confirms EOP-LOCA-1 requirement: start <span class="hi-exam">ONLY one</span> hydrogen recombiner when containment H2 > 0.5%. Two recombiners exist, but EOP-LOCA-1 limits to one below 4%.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q45</div>
+Hydrogen Recombiner power supplies (Unit 1): <span class="hi-exam">11 Hydrogen Recombiner powered from 1A 460V Vital Bus; 12 Hydrogen Recombiner powered from 1B 460V Vital Bus</span> (each fed from its respective 4KV Vital Bus). With 1A 4KV Vital Bus locked out on bus differential, 1A 460V is de-energized — <span class="hi-exam">only 12 Recombiner is available</span> when directed by procedure.
+</div>
+
 ## Connections
 
-- Related systems: [[Containment]]
+- Related systems: [[Containment]], [[460/230V AC]], [[4KV]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2018 Q77]], [[2019 Q32]], [[2019 Q91]], [[2022 Q60]], [[2020 Q92]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2016 Q45]], [[2018 Q77]], [[2019 Q32]], [[2019 Q91]], [[2022 Q60]], [[2020 Q92]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]]

@@ -592,3 +592,77 @@
     ka_importance: 3.1
     type: RO
     tier_group: "Tier 2/Group 1"
+
+  - number: 41
+    topic: "CFCUs on MODE 1 SEC initiation — running CFCUs stop, then ALL 5 start in Low Speed"
+    answer: D
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - containment-fan-coil-units
+      - secs
+    tech_specs: []
+    ka: "022000 A3.01"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 42
+    topic: "CFCU SW flow remains the same on Low to High speed swap (SW223 mechanical stop ~50%)"
+    answer: C
+    cognitive_level: "Memory"
+    source: "Previous 2 NRC Exams"
+    question_modification_method: "Direct From Source"
+    systems:
+      - containment-fan-coil-units
+      - service-water
+    tech_specs: []
+    ka: "022000 K1.01"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 43
+    topic: "Hi-Hi CS signal after SEC reset — CS valves realign automatically, CS pumps must be manually started"
+    answer: B
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - containment-spray
+      - secs
+    tech_specs: []
+    ka: "026000 A3.01"
+    ka_importance: 4.3
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 44
+    topic: "Reset Spray Actuation pushbuttons during LOCA-1 — retentive memory: actuation resets and does NOT reinitiate"
+    answer: C
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - containment-spray
+      - rps-ssps
+    tech_specs: []
+    ka: "026000 A4.05"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 45
+    topic: "Hydrogen Recombiner availability with 1A Vital Bus locked out — 12 only (recombiners on 1A/1B 460V Vital Buses)"
+    answer: B
+    cognitive_level: "Application"
+    source: "Previous 2 NRC Exams"
+    question_modification_method: "Direct From Source"
+    systems:
+      - 460-230v-ac
+      - 4kv
+      - containment-systems
+    tech_specs: []
+    ka: "028000 K2.01"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
