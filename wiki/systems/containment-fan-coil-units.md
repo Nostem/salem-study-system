@@ -183,10 +183,16 @@ CFCU SW flow control valve <span class="hi-exam">SW223 has a position limiter, t
 21 CFCU operability surveillance review (S2.OP-ST.CBV-0003): SRO must catch reviewer's misapplication of P&L 3.4. Recorded DP <span class="hi-exam">87 psid</span> falls between Exhibit 1 increments — surveillance was incorrectly recorded with minimum flow rounded DOWN to <span class="hi-exam">1592 gpm</span>. Correct minimum (round UP to next higher DP) is <span class="hi-exam">1638 gpm</span>. Actual SW flow 1625 gpm &lt; 1638 → <span class="hi-exam">surveillance UNSAT, 21 CFCU INOPERABLE</span>. Compares against the running-RO version (2018/2019/2023 Sim-f) where the same trap appears at 106 psid DP.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+APPX-7 Step 2 verification: <span class="hi-exam">CHECK ALL AVAILABLE CFCUs running in Low Speed</span>. Confirms post-LOCA Containment Heat Removal CFCU alignment is intact prior to securing the CS flow path and re-attempting RHR sump suction.
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
+- Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]]
 - Related exam questions: [[2016 Q26]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
-- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]]
+- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

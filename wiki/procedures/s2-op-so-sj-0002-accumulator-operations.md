@@ -20,10 +20,15 @@ Provides instructions for SI Accumulator operations including makeup, draining, 
 Accumulator makeup using 21 SI Pump (Section 5.2): prerequisite is <span class="hi-exam">ALL RCS Cold Leg Temperatures >312°F</span> OR Rx Vessel Head removed. CAUTION: closing 21SJ134 may require entry into TSAS 3.5.2. CAUTION: maximum of one SI Pump OR one Centrifugal Charging Pump shall be OPERABLE whenever temperature of one or more RCS cold legs is ≤312°F. Valve lineup: START 21 SI Pump → OPEN <span class="hi-exam">2SJ53 (21 SI Pump Discharge Test Line)</span> → OPEN <span class="hi-exam">2SJ123 (Test Line to CVCS HUT)</span> → OPEN <span class="hi-exam">21SJ20 (Accumulator Fill)</span>. When target level reached, CLOSE 21SJ20 → CLOSE 2SJ53 → CLOSE 2SJ123 → STOP 21 SI Pump. CAUTION: do NOT cross-tie accumulators at any time OPERABILITY is required.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-c</div>
+EOP-TRIP-6 Step 12 SI Accumulator isolation: at <span class="hi-exam">RCS pressure &lt;1000 psig</span>, REMOVE LOCKOUT FROM 21-24 SJ54 (ACCUMULATOR OUTLET VALVES) at 2RP4 — selects VALVE OPERABLE on each lockout switch. Depress CLOSE PB on 21-24 SJ54. <span class="hi-exam">Alternate path: 24 SJ54 fails to close (CLOSE PB OFF override at intermediate position). Vent 24 Accumulator: maintain RCS pressure &gt; accumulator nitrogen pressure, open 2NT35 (N2 HDR VALVE), open 24 SJ93 (N2 SUPPLY VALVE). When 24 Accumulator pressure reaches ZERO, close 2NT35 and 24 SJ93</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]]
 - Related tech specs: [[TS 3/4.5 — ECCS]]
 - Related EOPs: [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
-- Related JPMs: [[2018 JPM Sim-c]], [[2020 JPM Sim-d]]
-- Related exam: [[2018 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM Sim-c]], [[2020 JPM Sim-d]], [[2016 JPM Sim-c]]
+- Related exam: [[2018 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

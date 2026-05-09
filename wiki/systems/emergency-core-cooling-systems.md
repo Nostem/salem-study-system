@@ -328,11 +328,26 @@ EOP-FRTS-1 Step 12 ECCS pump reduction (PURPLE path, MSLB with multiple faulted 
 SI Accumulator isolation in EOP-LOCA-2 (post-LOCA cooldown with no subcooling, charging through BIT): per <span class="hi-exam">Step 35.3, Accumulators are isolated when RCS T-Hots &lt;<span class="val-trip">375&deg;F</span></span>; otherwise the step is bypassed. <span class="hi-trap">A separate &quot;&lt;1000 psig&quot; isolation criterion exists, but only after IOP-6 entry is initiated later in LOCA-2 (Step 42) — &lt;1000 psig alone is NOT the LOCA-2 step 35 isolation criterion. PZR-level-based and SI-not-terminated criteria are not used.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+APPX-7 ECCS pump-stopping order: <span class="hi-exam">downstream Charging and SI pumps must be stopped BEFORE the upstream RHR pump that supplies their suction</span>. Stopping RHR pumps with cavitating downstream ECCS pumps still drawing from RHR discharge is failure criteria. Final recirculation alignment after sump blockage clears: ONE RHR pump + ONE Charging or SI pump (single-pump per side) drawing from containment sump via 21/22 SJ44.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-c</div>
+EOP-TRIP-6 Step 12 SI Accumulator isolation at RCS pressure &lt;1000 psig: remove lockout from 21-24 SJ54 (Accumulator Outlet Valves) at 2RP4, depress CLOSE PB on 21-24 SJ54. Alternate path: <span class="hi-exam">24 SJ54 fails to close (CLOSE PB OFF override). Vent 24 Accumulator to atmospheric pressure via 2NT35 (N2 HDR VALVE) and 24 SJ93 (N2 SUPPLY VALVE)</span> after verifying RCS pressure &gt; accumulator nitrogen pressure. Close vent valves when 24 Accumulator pressure reaches zero.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+EOP-FRHS-1 bleed-and-feed at Step 21 (entered from Step 4 when WR levels in at least two SGs are &lt;32% / 37% adverse). Step 21 caution: <span class="hi-exam">Steps 24 thru 29 must be performed quickly and without interruption</span>. Step 22 INITIATE SI: Safeguards key actuates Table B (2SJ4/5, 2SJ12/13 OPEN BIT inlet/outlet; 2CV68/69 CLOSED Charging Discharge; 21-24 SJ54 OPEN; 2SJ1/2 OPEN; 2CV40/41 CLOSED) and Table C (2SJ30, 21/22 SJ33, 2SJ135, 21/22 SJ134) for the SI pumps. Verify <span class="hi-exam">21 OR 22 Charging Pump running with BIT flow established</span>, ANY SI pump running with Table C valves open. <span class="hi-exam">Step 24 alternate path: 2PR2 PORV fails to open in MANUAL → open 2RC40 thru 2RC43 (Reactor Head Vents)</span> using four key-locked switches on 2RP3 backpanel as alternate bleed path.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]]
+- Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
 - Related exam questions: [[2016 Q4]], [[2016 Q5]], [[2016 Q10]], [[2016 Q19]], [[2016 Q21]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q26]], [[2016 Q29]], [[2016 Q32]], [[2016 Q33]], [[2016 Q36]], [[2016 Q39]], [[2016 Q73]], [[2016 Q79]], [[2016 Q82]], [[2016 Q83]], [[2016 Q84]], [[2016 Q87]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
-- Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]]
+- Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]], [[2016 JPM Sim-c]], [[2016 JPM Sim-d]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

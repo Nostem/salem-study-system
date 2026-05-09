@@ -65,11 +65,17 @@ EOP-LOCA-3 alignment when 21SJ44 fails to open: <span class="hi-exam">Step 5.2 d
 Cold leg recirculation transfer after LBLOCA. <span class="hi-exam">CT#2 (CT-36) — time-critical</span>: (1) Open 21SJ44 and 22SJ44, depress sump auto arm pushbuttons when containment sump >62% lights lit. (2) Remove lockouts for 2SJ67, 2SJ68, 2SJ69. (3) <span class="hi-exam">Close 2SJ69 within ~3.7 min</span> of RWST lo alarm. (4) <span class="hi-exam">Stop 22 CS pump within ~5.5 min</span>. (5) Close 21 and 22RH19s. Select flow path for all 4KV vital buses energized → Step 11. Close 2SJ67 and 2SJ68. Open 22SJ45, then 21SJ45. Close 2SJ30, 2SJ1, 2SJ2. <span class="hi-exam">Place 21RH29 and 22RH29 in manual and ensure closed (Step 15) within ~11.2 min</span>. PO removes lockout from 2SJ30.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+After waiting at LOCA-3 step 21 for RWST lo-lo level alarm with all ECCS running except 22 CS pump (stopped at step 8), <span class="hi-exam">both RHR pumps cavitate</span> as containment sump becomes blocked. Per the LOCA-3 Continuous Action Summary, the crew enters <span class="hi-exam">EOP-APPX-7</span> immediately (operator may go to EOP-LOCA-5 first, but Step 1 of LOCA-5 directs performance of APPX-7). The APPX-7 final task standard is to <span class="hi-exam">secure all ECCS pumps</span>, then re-establish recirculation flow with <span class="hi-exam">ONE RHR pump and ONE Charging OR SI pump</span> (single-pump per side, NOT the LOCA-3 two-train alignment).
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]]
-- Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
+- Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]], [[CFCUs]]
+- Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
+- Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related exam questions: [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]]
-- Related JPMs: [[2020 JPM SRO-A5]]
+- Related JPMs: [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]]

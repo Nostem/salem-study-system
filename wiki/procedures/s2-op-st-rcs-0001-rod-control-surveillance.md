@@ -38,10 +38,15 @@ Same rod surveillance procedure. At step 4.1.11.3, uncontrolled rod insertion in
 Same rod surveillance. Step 5.1.10.B-G: place Bank Selector in CBD, insert <span class="hi-exam">15 steps</span>, verify all rods moved at least 10 steps on P-250, record SAT, restore to ARO. At Step 5.1.11.C, place switch in AUTO (Turbine Power >15%). Uncontrolled rod insertion activates (MALF RD0045). Rods insert in <span class="hi-exam">both AUTO and MANUAL</span>. Operator <span class="hi-exam">manually trips the reactor</span>. Same discriminating step tested across 2020, 2022, and 2023 exams.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-a</div>
+Rev. 22 (Section 5.1) Shutdown Bank operability verification — different alternate path from the Control Bank D variant. CRS directs Steps 5.1.2 through 5.1.9 in order, with 15 steps of rod insertion for each bank to ensure each rod moves at least 10 steps. For Shutdown Bank A (Step 5.1.3): verify Tavg ±1°F of Tref, place Bank Selector in <span class="hi-exam">SBA</span>, verify GRP. SELECT "C" lights at Power Cabinets <span class="hi-exam">21AC and 22AC</span>, insert at least 10 steps, verify on P-250, restore to ARO. For Shutdown Bank B (Step 5.1.4): same flow, SBB position, Power Cabinets <span class="hi-exam">21BD and 22BD</span>. <span class="hi-exam">Alternate path: with SBB inserted, 21 SGFP trips. P&L 3.13 governs — operator must manually trip the reactor</span>; placing the Rod Bank Selector to MAN or AUTO in this configuration is failure criteria.
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]]
-- Related procedures: [[AB.ROD-0003 — Continuous Rod Motion]]
+- Related systems: [[RPS/SSPS]], [[Control Rod Drive]]
+- Related procedures: [[AB.ROD-0003 — Continuous Rod Motion]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]]
 - Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
-- Related JPMs: [[2023 JPM Sim-a]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]]
-- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM Sim-a]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]], [[2016 JPM Sim-a]]
+- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

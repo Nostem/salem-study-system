@@ -108,11 +108,16 @@ EOP-LOCA-1 Step 3 feed flow requirement: <span class="hi-exam">"MAINTAIN TOTAL F
 EOP-LOCA-1 entered from EOP-TRIP-1 after LBLOCA. STA reports <span class="hi-exam">RED path for Thermal Shock</span> — CRS transitions to EOP-FRTS-1 (enter/exit: RCS pressure <300 psig and RHR flow >300 gpm). Returns to LOCA-1. RO resets SI, Phase A, Phase B. Resets SECs (2A and 2C reset, 2B de-energized). When <span class="hi-exam">RWST level lo alarm actuates at 15.2 feet</span>, CRS transitions to EOP-LOCA-3 for cold leg recirculation transfer (CT#2: CT-36).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+LBLOCA precursor scenario: TRIP-1 → LOCA-1 → LOCA-3 step 21 waiting for RWST lo-lo. <span class="hi-exam">All ECCS pumps operating (except 22 CS pump stopped at LOCA-1 step 8) when both RHR pumps cavitate</span> from sump blockage, triggering APPX-7 entry from the LOCA-3 CAS.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
-- Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]]
+- Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]], [[EOP-APPX-7 — Containment Sump Blockage]]
 - Related exam questions: [[2016 Q4]], [[2016 Q44]], [[2016 Q45]], [[2016 Q73]], [[2016 Q81]], [[2016 Q82]], [[2016 Q84]], [[2016 Q87]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]]
-- Related JPMs: [[2022 JPM Sim-c]]
+- Related JPMs: [[2022 JPM Sim-c]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

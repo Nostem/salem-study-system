@@ -30,9 +30,16 @@ Step 43, MAINTAINING RCS HEAT REMOVAL: when all RCPs are stopped and sump recirc
 Transition to APPX-7 from LOCA-3: <span class="hi-exam">erratic flow and pressure on both trains of ECCS pumps after alignment to containment sump = cavitation = sump blockage indication</span>. Per LOCA-3 CAS, crew IMMEDIATELY transitions to APPX-7. <span class="hi-trap">LOCA-5 is the wrong procedure — it applies only when recirculation is lost for reasons NOT related to sump blockage.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+LBLOCA in cold leg recirculation when both RHR pumps cavitate and ALL ECCS pumps fed from RHR also cavitate — entry into APPX-7 from the LOCA-3 Continuous Action Summary. <span class="hi-exam">Pump-stopping order is pass/fail</span>: per the APPX-7 Caution, any pump receiving suction from an RHR pump must be stopped <strong>before</strong> stopping the RHR pump. Step 1.a RNO sequence: ensure 21/22 RH29 in AUTO → <span class="hi-exam">stop 21/22 Charging and 21/22 SI pumps</span> → close 21/22 CS36 if cavitation continues → CLOSE affected SJ49(s) (RHR to Cold Leg) after removing lockouts → STOP affected RHR pump(s) only as the LAST resort. Step 3: stop ALL Containment Spray pumps. Step 5.b: <span class="hi-exam">restart ONE RHR pump</span> with suction aligned to containment sump (via 21/22 SJ44). Step 6: <span class="hi-exam">start ONLY ONE Charging or SI pump</span> in recirculation alignment (one of four available; preferably a charging pump, but any one of the four is SAT). RWST level &gt;1.2 ft is the CAS prerequisite to remain in this recirculation flow path.
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[Steam Generator & Blowdown]], [[Containment Spray]], [[RHR]]
-- Related EOPs: [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
+- Related systems: [[ECCS]], [[Steam Generator & Blowdown]], [[Containment Spray]], [[RHR]], [[CFCUs]]
+- Related EOPs: [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
+- Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related exam questions: [[2019 Q88]], [[2020 Q87]], [[2022 Q04]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2016 JPM Sim-b]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2016 NRC Operating Exam]]

@@ -105,11 +105,16 @@ After Rx trip on Main Generator trip with all 3 AFW pumps unable to feed (11 fai
 Loss of all AFW following Main Turbine trip: 21 AFW pump C/T, 22 AFW pump lost with <span class="hi-exam">2B 4KV Vital Bus</span>, 23 AFW pump trips on <span class="hi-exam">overspeed</span> shortly after manual start. Crew validates CFST RED path on Heat Sink (SG NR levels <9%, AFW flow <22E4 lbm/hr). In FRHS-1, crew performs <span class="hi-exam">Prompt SGFP Recovery</span> using 22 SGFP IAW S2.OP-SO.CN-0007: reset SGFP trips, relatch 22 SGFP, raise speed to 3960-3980 rpm, verify DP >50 psid, feed SGs via BF19/BF40. <span class="hi-exam">CT-43: Establish main feedwater flow to SGs before bleed and feed is required.</span> Scenario terminates when main feed flow established and SG WR levels rising.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+MSLB at mixing bottle, Auto SI initiated, Main Turbine manually tripped (auto trip failed), MSLI failed (all MSIVs remain open), <span class="hi-exam">all AFW flow lost</span>, transition from EOP-TRIP-1 Step 20 to FRHS-1 Step 1. Step 4 entry to bleed-and-feed: <span class="hi-exam">at least 2 SG WR levels &lt;32% (37% adverse) → IMMEDIATELY GO TO STEP 21</span>. Step 21 caution: Steps 24 thru 29 must be performed quickly and without interruption. Step 23 (sequence-23, before SI initiate): <span class="hi-exam">STOP ALL RCPs</span> (all 21-24 RCPs). Step 22: INITIATE SI on at least one train. Step 23 (verify): Table B (BIT inlet/outlet, charging discharge, accumulator outlet, RWST suction) and Table C (SI alignment) checked in Safeguards position. Step 24: BOTH PZR PORV STOP VALVES OPEN, OPEN BOTH PZR PORVs in Manual. <span class="hi-exam">Alternate path: 2PR2 fails to open → open 2RC40 thru 2RC43 (REACTOR HEAD VENTS) at 2RP3 backpanel using four key-locked switches</span>.
+</div>
+
 ## Connections
 
-- Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]]
+- Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]], [[Pressurizer & PRT]], [[ECCS]], [[CVCS]], [[RCPs]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related exam questions: [[2016 Q4]], [[2016 Q23]], [[2016 Q51]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
-- Related JPMs: [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
+- Related JPMs: [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]], [[2016 JPM Sim-d]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

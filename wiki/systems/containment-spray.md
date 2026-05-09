@@ -161,10 +161,15 @@ After SEC reset following a LOCA, a subsequent Hi-Hi containment pressure signal
 21CS36 (RHR Supply to CS Valve) interlock: <span class="hi-exam">21CS36 cannot be OPENED until 21RH1 and 21RH2 (RHR Suction Isolation Valves) are SHUT</span>. During EOP-LOCA-3 with 21SJ44 failed to open and 21 RHR pump stopped, CS header flow is <span class="hi-exam">supplied via 22CS36 from the running 22 RHR pump</span> at step 22 — the 21SJ44 failure does NOT eliminate CS header flow.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+APPX-7 secures CS flow path: <span class="hi-exam">stop ALL Containment Spray pumps (Step 3.a)</span> and verify 21CS36 AND 22CS36 CLOSED. CS interlock with RHR (21/22 CS36 closed before stopping affected RHR pump) prevents reverse-flow from the CS header back into RHR suction during cavitation recovery.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]]
 - Related exam questions: [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2016 Q73]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
-- Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]]
+- Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

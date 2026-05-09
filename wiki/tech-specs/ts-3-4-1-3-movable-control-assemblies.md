@@ -217,5 +217,5 @@ Paired SRO review of the 2016 RO-A1-2 calculation. SRO must catch use of <span c
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]]
 - Related procedures: [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related exam questions: [[2020 Q20]], [[2023 Q56]]
-- Related JPMs: [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]]
+- Related JPMs: [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]]
 - Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]]

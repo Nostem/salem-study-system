@@ -109,6 +109,11 @@ SRO review of SDM calculation with two <span class="hi-exam">untrippable rods (1
 Rod control surveillance (S2.OP-ST.RCS-0001): insert Control Bank D <span class="hi-exam">15 steps</span>, verify each rod moved at least 10 steps on P-250, record SAT, restore to ARO. <span class="hi-exam">Alternate path: when rod bank selector switch placed in AUTO at Step 5.1.11.C, uncontrolled rod insertion occurs</span>. Rods continue inserting in both AUTO and MANUAL. Operator must recognize continuous insertion and <span class="hi-exam">manually trip the reactor</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-a</div>
+Control rod operability surveillance (S2.OP-ST.RCS-0001 Rev. 22, Section 5.1) — Shutdown Bank testing. Per OP-AP-300-1001, prior to manual rod motion the operator states <span class="hi-exam">initial Shutdown Bank position, target rod position, and direction of movement</span> (peer-checked). For each shutdown bank: place Bank Selector Switch in SBA/SBB/SBC/SBD, verify GRP. SELECT "C" lights illuminated at the corresponding Power Cabinet pair (21AC/22AC for SBA, 21BD/22BD for SBB), <span class="hi-exam">maneuver the bank at least 10 steps</span>, verify rod movement on P-250, record SAT in Att 1, restore to pre-test (ARO) condition. <span class="hi-exam">Alternate path: with SBB inserted at least 10 steps, 21 SGFP trips. Per S2.OP-ST.RCS-0001 P&L 3.13, the operator must manually trip the reactor</span> — moving the Rod Bank Selector to MAN or AUTO under these conditions is incorrect.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q67</div>
 AB.ROD-0003 (Continuous Rod Motion) entry conditions: rods <span class="hi-exam">withdraw OR insert a MINIMUM of 3 steps</span> at steady state. <span class="hi-trap">Process noise can cause up to 2 steps of rod motion — this is normal and does NOT warrant AB.ROD-0003 entry.</span>
@@ -182,5 +187,5 @@ SDM calculation per TSAS 3.1.3.1 Action c.3 with rod 105 declared INOPERABLE (tr
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam questions: [[2016 Q1]], [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2016 Q77]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
-- Related JPMs: [[2018 JPM Sim-a]], [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]]
+- Related JPMs: [[2018 JPM Sim-a]], [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

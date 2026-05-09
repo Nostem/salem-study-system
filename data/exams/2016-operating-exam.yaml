@@ -157,3 +157,63 @@ jpms:
     source: New
     task_number: "1240020502"
     scenario_tie: ESG-2
+
+  - id: "Sim-a"
+    title: "Perform a Control Rod Operability Verification"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-ST.RCS-0001"
+    pages: "1-9"
+    ka: "001 A4.03"
+    ka_importance_ro: 4.0
+    ka_importance_sro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: Bank
+    task_number: "N0010070101"
+
+  - id: "Sim-b"
+    title: "Perform Actions for Containment Sump Blockage"
+    type: Sim
+    location: Simulator
+    procedure: "2-EOP-LOCA-1 / 2-EOP-LOCA-3 / 2-EOP-APPX-7"
+    pages: "1-10"
+    ka: "G2.4.4"
+    ka_importance_ro: 4.5
+    ka_importance_sro: 4.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N1150900501"
+
+  - id: "Sim-c"
+    title: "Isolate the ECCS Accumulators IAW TRIP-6"
+    type: Sim
+    location: Simulator
+    procedure: "2-EOP-TRIP-6"
+    pages: "1-6"
+    ka: "E09 EA1.1"
+    ka_importance_ro: 3.5
+    ka_importance_sro: 3.5
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "1150070501"
+
+  - id: "Sim-d"
+    title: "Respond to a Loss of Heat Sink (Bleed and Feed with SI Pumps and Rx Head Vents)"
+    type: Sim
+    location: Simulator
+    procedure: "2-EOP-FRHS-1"
+    pages: "1-8"
+    ka: "EPE E05 EA1.1"
+    ka_importance_ro: 4.1
+    ka_importance_sro: 4.0
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N1150290501"
