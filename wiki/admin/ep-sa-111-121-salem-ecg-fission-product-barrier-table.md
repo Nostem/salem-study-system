@@ -27,9 +27,15 @@ ECG point totals from barrier loss/potential loss:<br>
 <span class="hi-trap">Trap: 4 point Alert if the loss of subcooling was not recognized and the loss of containment not recognized. 5 point Alert if only the loss of the RCS barrier is recognized. 7 point SAE if the RCS barrier loss is only thought to be potential and not actual.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A4-1 (ESG-1 / ESG-2)</div>
+RB3 series EAL — RCS-barrier classification under EP-SA-111-F2 (ALERT). <span class="hi-exam">RB3.P (Potential Loss) = ALERT</span>; <span class="hi-exam">RB3.L (Loss) = ALERT</span> as well — both single-barrier conditions classify at ALERT. ESG-1 → RB3.P (no release in progress). ESG-2 → RB3.L (release in progress, Section III "IS"). Description of Event text comes from the EAL Description Table: "Potential Loss of the Reactor Coolant System Boundary" vs "Loss of the Reactor Coolant System Boundary".
+</div>
+
 ## Connections
 
 - Related procedures: [[EP-SA-111 — Emergency Classification and Protective Action]], [[EP-SA-111-101 — Emergency Classification and ICMF]]
 - Related systems: [[RCS]], [[Containment]]
 - Related exam questions: [[2016 Q81]]
-- Related exam: [[2016 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]]

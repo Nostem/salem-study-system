@@ -40,10 +40,18 @@ Provides ventilation and filtration for the fuel handling building during fuel m
 The <span class="hi-exam">FHB Supply Fan Inlet Damper is interlocked to open when its Supply Fan is started, and fails closed on loss of air</span>. Therefore, a tubing break causing total loss of air to the 21 FHB Supply Fan Inlet Damper makes the supply fan <span class="hi-exam">inoperable even though it remains running</span> — the air-driven damper has failed closed. Per LCO 3.9.12 (which requires 2 exhaust fans and 1 supply fan operable AND operating), FHV must be declared inoperable. With 2 exhaust fans still in service and no supply, <span class="hi-exam">building pressure will remain negative</span> — but operability fails on Part a (fans operable/operating) of the LCO regardless of D/P. Per LCO action: suspend all operations involving movement of fuel within the storage pool.
 </div>
 
+## FHB Truck Bay Door During Fuel Movement
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A1-2</div>
+SRO must recognize that <span class="hi-exam">FHB Truck Bay Door is required to be CLOSED during irradiated fuel movement</span> (per S2.OP-IO.ZZ-0010 page 19). Opening the Truck Bay Door for new fuel receipt while irradiated fuel movement is in progress would breach the FHB ventilation boundary that the dose analysis credits — new fuel deliveries must wait until fuel movement terminates.
+</div>
+
 ## Connections
 
 - Related systems: [[Spent Fuel Pool]], [[Radiation Monitoring]], [[Control Air]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.FUEL-0001 — Fuel Handling Incident]]
 - Related exam questions: [[2016 Q80]], [[2016 Q88]], [[2019 Q33]], [[2019 Q36]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-2]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]]

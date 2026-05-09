@@ -37,8 +37,14 @@ Emergency Coordinator (EC) responsibility transfers based on facility activation
 - [[2022 Q100 — Emergency Accountability Timing]]: 30-minute accountability requirement at Site Area Emergency
 - [[2020 Q99]]: EC responsibility transfer — EDO is EC when TSC activated but EOF not activated
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A4-1 (ESG-1 / ESG-2)</div>
+EP-SA-111-F2 (ALERT) Attachment 2 step A.2 directs: <span class="hi-exam">if a Security Event is in progress, IMPLEMENT the prompt actions of NC.EP-EP.ZZ-0102, EC Response, Attachment 10, prior to classification</span>. SRO must verify Security Event is NOT in progress before continuing with the standard classification flow.
+</div>
+
 ## Connections
 
 - Related admin: [[EP-SA-111 — Emergency Classification and Protective Action]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam questions: [[2022 Q100]], [[2020 Q99]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]]
+- Related exam: [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

@@ -70,5 +70,5 @@ Alternate path JPM: Delaware State Police cannot be reached via Primary (NETS 54
 
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-101 — Emergency Classification and ICMF]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
 - Related exam questions: [[2016 Q71]], [[2016 Q81]], [[2019 Q100]]
-- Related JPMs: [[2018 JPM SRO-A5]], [[2019 JPM RO-A4]], [[2022 JPM SRO-A5]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM RO-A4]], [[2022 JPM SRO-A5]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]]

@@ -305,6 +305,6 @@ Containment Sump leak-rate quantification (S2.OP-SO.RC-0004 §5.3) following an 
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
 - Related exam questions: [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q25]], [[2016 Q28]], [[2016 Q52]], [[2016 Q77]], [[2016 Q79]], [[2016 Q81]], [[2016 Q82]], [[2016 Q83]], [[2016 Q84]], [[2016 Q86]], [[2016 Q87]], [[2018 Q3]], [[2018 Q63]], [[2018 Q65]], [[2018 Q70]], [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]]
-- Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]], [[2016 JPM RO-A1-1]]
+- Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

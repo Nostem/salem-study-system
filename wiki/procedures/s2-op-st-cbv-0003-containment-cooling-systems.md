@@ -40,10 +40,15 @@ CFCU test result determination: with measured SW header DP of <span class="hi-ex
 CFCU SW flow and <span class="hi-exam">SW223 mechanical stop</span> limitations during surveillance testing.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A1-1</div>
+21 CFCU surveillance review: P&L 3.4 rounding direction trap from the SRO review perspective. Recorded DP 87 psid is between Exhibit 1 increments — operator who performed the surveillance rounded DOWN to <span class="hi-exam">1592 gpm</span> minimum (incorrect). Correct application of <span class="hi-exam">P&L 3.4 rounds UP to the next HIGHER DP value, yielding 1638 gpm minimum required</span>. Actual SW flow 1625 gpm &lt; 1638 gpm → <span class="hi-exam">surveillance is UNSAT, 21 CFCU INOPERABLE</span>. Same Exhibit 1 / P&L 3.4 trap as 2018, 2019, and 2023 Sim-f, tested here as an SRO review of completed paperwork rather than the RO performance.
+</div>
+
 ## Connections
 
 - Related systems: [[CFCUs]], [[Service Water]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam questions: [[2022 Q41]]
-- Related JPMs: [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]

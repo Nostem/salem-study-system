@@ -62,3 +62,98 @@ jpms:
     alternate_path: false
     source: New
     task_number: "N1200100104"
+
+  - id: "SRO-A1-1"
+    title: "Review CFCU Operability Surveillance"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S2.OP-ST.CBV-0003"
+    pages: "1-5"
+    ka: "G2.1.25"
+    ka_importance_ro: null
+    ka_importance_sro: 4.2
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1230300302"
+
+  - id: "SRO-A1-2"
+    title: "Direct Actions for Spent Fuel Movement (Equipment OOS Determination)"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "S2.OP-IO.ZZ-0010"
+    pages: "1-7"
+    ka: "G2.1.42"
+    ka_importance_ro: null
+    ka_importance_sro: 3.4
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N1120760102"
+
+  - id: "SRO-A2"
+    title: "Review Shutdown Margin Calculation"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "SC.RE-ST.ZZ-0002"
+    pages: "1-6"
+    ka: "G2.2.12"
+    ka_importance_ro: null
+    ka_importance_sro: 4.1
+    applicability: SRO
+    time_critical: true
+    time_critical_minutes: 30
+    alternate_path: false
+    source: New
+    task_number: "1200030301"
+
+  - id: "SRO-A3"
+    title: "Determine Required Actions Upon Radioactive Effluent Monitor Failure"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "Salem ODCM / S1.OP-SO.WG-0011 / S1.OP-SO.WL-0001 / S1.OP-SO.CBV-0002"
+    pages: "1-8"
+    ka: "G2.3.11"
+    ka_importance_ro: null
+    ka_importance_sro: 4.3
+    applicability: SRO
+    time_critical: false
+    alternate_path: false
+    source: "New (modeled after Pilgrim Jan 2011 SRO Admin RC)"
+    task_number: "N1200010301"
+
+  - id: "SRO-A4-1 (ESG-1)"
+    title: "Classify Event and Complete ICMF (RB3.P Alert)"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "EP-SA-111-F2 / EP-SA-111-101"
+    pages: "1-8"
+    ka: "G2.4.41"
+    ka_importance_ro: null
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: true
+    time_critical_minutes: 15
+    alternate_path: false
+    source: New
+    task_number: "1240020502"
+    scenario_tie: ESG-1
+
+  - id: "SRO-A4-1 (ESG-2)"
+    title: "Classify Event and Complete ICMF (RB3.L Alert)"
+    type: Admin-SRO
+    location: Classroom
+    procedure: "EP-SA-111-F2 / EP-SA-111-101"
+    pages: "1-8"
+    ka: "G2.4.41"
+    ka_importance_ro: null
+    ka_importance_sro: 4.6
+    applicability: SRO
+    time_critical: true
+    time_critical_minutes: 15
+    alternate_path: false
+    source: New
+    task_number: "1240020502"
+    scenario_tie: ESG-2

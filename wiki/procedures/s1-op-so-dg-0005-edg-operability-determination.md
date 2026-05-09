@@ -4,6 +4,7 @@ category: procedures
 status: draft
 aliases:
   - S1.OP-SO.DG-0005
+  - S2.OP-SO.DG-0005
   - EDG operability determination
 ---
 
@@ -37,9 +38,14 @@ EDG inoperability with 13 SW Pump C/T: candidate must determine that <span class
 CRS reviews this procedure prior to CIT of 1B EDG to identify <span class="hi-exam">redundant required features</span> powered from the 1B EDG bus. When 12 Charging pump subsequently trips, the CRS must recognize that 12 Charging pump is a redundant required feature of the 1B EDG. This triggers <span class="hi-exam">TS 3.8.1.1 action b.2 (4 hours)</span> in addition to <span class="hi-exam">TS 3.5.2.a action a (72 hours)</span> for the inoperable ECCS subsystem.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A1-2</div>
+SRO uses this procedure together with S2.OP-IO.ZZ-0010 to evaluate whether 2A EDG can be tagged out for maintenance during ongoing irradiated fuel movement. <span class="hi-exam">TSAS 3.8.1.2 applies during Modes 5 and 6 and during movement of irradiated fuel, and only requires two EDGs operable</span>. With 21 SW pump already C/T (pump on A bus / 2A EDG-backed), removing 2A EDG is allowed because 2B and 2C remain operable; one FHB exhaust fan and one SFP pump backed by an operable EDG (B or C) is sufficient for SFP fuel-movement support per IOP-10 P&L 3.4 / 3.7.
+</div>
+
 ## Connections
 
 - Related systems: [[EDGs]], [[Service Water]], [[ECCS]]
 - Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.7 — Plant Systems]], [[TS 3/4.5 — ECCS]]
-- Related JPMs: [[2019 JPM SRO-A3]], [[2020 JPM SRO-A3]]
-- Related exam: [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2019 JPM SRO-A3]], [[2020 JPM SRO-A3]]
+- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]]

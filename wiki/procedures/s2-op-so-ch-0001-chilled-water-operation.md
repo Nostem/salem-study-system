@@ -41,9 +41,14 @@ Identical scenario to 2022 SRO-A1. Both chillers tripped, inlet water temp 85.1�
 With both chillers inoperable, inlet water temp 85.1°F (83.6°F + 1.5°F uncertainty), EACS out of service, and Maintenance Mode: <span class="hi-exam">Table A yields 902.8 kBTU/HR required isolation</span>. ECAC kept available per SM direction. Selected loads (21/22/23 PACU, Secondary Lab, Primary Lab, Counting Room, PASS) total <span class="hi-exam">906.6 kBTU/HR</span> — just exceeds the 902.8 kBTU/HR requirement.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A1-2</div>
+SRO determination during fuel movement: 21 Chiller compressor oil change MAY be performed. <span class="hi-exam">TSAS 3.7.10 allows a chiller to be taken out of service if movement of irradiated fuel is already on-going, and gives 14 days to restore it.</span> Compare with the same TS for at-power conditions where Action b drives non-essential heat-load isolation per this procedure.
+</div>
+
 ## Connections
 
 - Related systems: [[Chill Water]], [[Control Air]], [[Service Water]]
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
-- Related JPMs: [[2018 JPM SRO-A1]], [[2022 JPM SRO-A1]]
-- Related exam: [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2018 JPM SRO-A1]], [[2022 JPM SRO-A1]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]]

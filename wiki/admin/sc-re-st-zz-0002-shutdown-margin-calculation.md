@@ -41,9 +41,14 @@ SDM calculation with one inoperable (but trippable) rod (1D5 at 214 steps): Step
 SDM calculation under similar conditions (rod 105 inoperable but trippable at 214 steps; bank D at 227 steps; 100% / 300 ppm / 10000 EFPH). Att. 3 §4.2 rod-worth values: 4.2.1 -3841, 4.2.2 -3335, 4.2.3 728, 4.2.4 0, 4.2.5 500, 4.2.6 0, 4.2.7 -5948. Att. 3 §4.3 SDM calc: 4.3.5 = <span class="hi-exam">-2441 pcm</span> (more negative than -1300 pcm — SAT). Procedure CRS-direction is to use only the Curve-Book Tables (NOT Figures). Time critical: <span class="hi-exam">50-minute limit</span> for the JPM.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A2</div>
+SRO review of a marked-up SDM calculation under the same plant conditions as the RO-A1-2 JPM. SRO must catch that the calculator used the <span class="hi-exam">0 EFPH rod-worth values from the Curve Book</span> instead of the <span class="hi-exam">10000 EFPH values applicable to current core burnup</span>. The error propagates through Steps 4.2.1, 4.2.2, 4.2.7, 4.3.2, and 4.3.5. Even with corrections (4.3.5 = -2441 pcm, more negative than -1300 pcm) the SDM remains SAT. Time critical: <span class="hi-exam">30-minute limit</span> (paralleling the TSAS 3.1.3.1 Action c.3 commitment).
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
 - Related systems: [[Control Rod Drive]]
-- Related JPMs: [[2020 JPM RO-A1]], [[2016 JPM RO-A1-2]]
+- Related JPMs: [[2020 JPM RO-A1]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]]
 - Related exam: [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
