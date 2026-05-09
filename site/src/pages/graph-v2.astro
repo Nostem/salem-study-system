@@ -22,11 +22,25 @@ const renderedNodes = [...articleNodes, ...otherNodes].sort(
   (a, b) => b.connections - a.connections,
 );
 
-// Pull out a quick lookup for sample edges per node (for the detail panel).
+// Pull out quick lookups for filtering and detail panels.
+const nodeById = new Map(graph.nodes.map((n) => [n.id, n]));
 const edgesBySource = new Map<string, typeof graph.edges>();
+const edgesByTarget = new Map<string, typeof graph.edges>();
+const edgeTypesByNode = new Map<string, Set<string>>();
+const neighborsByNode = new Map<string, Set<string>>();
 for (const e of graph.edges) {
   if (!edgesBySource.has(e.source)) edgesBySource.set(e.source, []);
+  if (!edgesByTarget.has(e.target)) edgesByTarget.set(e.target, []);
   edgesBySource.get(e.source)!.push(e);
+  edgesByTarget.get(e.target)!.push(e);
+  if (!edgeTypesByNode.has(e.source)) edgeTypesByNode.set(e.source, new Set());
+  if (!edgeTypesByNode.has(e.target)) edgeTypesByNode.set(e.target, new Set());
+  edgeTypesByNode.get(e.source)!.add(e.type);
+  edgeTypesByNode.get(e.target)!.add(e.type);
+  if (!neighborsByNode.has(e.source)) neighborsByNode.set(e.source, new Set());
+  if (!neighborsByNode.has(e.target)) neighborsByNode.set(e.target, new Set());
+  neighborsByNode.get(e.source)!.add(e.target);
+  neighborsByNode.get(e.target)!.add(e.source);
 }
 
 const kindOrder: Array<keyof typeof graph.counts.nodesByKind> = [
@@ -123,6 +137,29 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
               {kindOrder.map((k) => <option value={k}>{k}</option>)}
             </select>
           </label>
+          <label class="flex flex-col gap-1">
+            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Edge type</span>
+            <select
+              id="gv2-edge-type"
+              data-testid="gv2-edge-type"
+              class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
+            >
+              <option value="all">All edge types</option>
+              {edgeOrder.map((t) => <option value={t}>{t}</option>)}
+            </select>
+          </label>
+          <label class="flex items-start gap-2 rounded border border-border bg-bg/60 px-2 py-2 text-xs text-text-muted">
+            <input
+              id="gv2-focus-neighborhood"
+              data-testid="gv2-focus-neighborhood"
+              type="checkbox"
+              class="mt-0.5"
+            />
+            <span>
+              <span class="block font-mono text-[10px] uppercase tracking-wider text-text-primary">Focus neighborhood</span>
+              Show only the selected node plus direct neighbors.
+            </span>
+          </label>
         </div>
         <div class="mt-3 text-[11px] font-mono text-text-muted">
           showing top <span data-testid="gv2-visible-count">{renderedNodes.length}</span>
@@ -138,6 +175,8 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
               class="gv2-item"
               data-id={n.id}
               data-kind={n.kind}
+              data-edge-types={Array.from(edgeTypesByNode.get(n.id) ?? []).join(' ')}
+              data-neighbors={Array.from(neighborsByNode.get(n.id) ?? []).join(' ')}
               data-search={`${n.title} ${n.slug} ${n.id}`.toLowerCase()}
             >
               <button
@@ -162,6 +201,7 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
 
         {renderedNodes.map((n) => {
           const out = edgesBySource.get(n.id) ?? [];
+          const incoming = edgesByTarget.get(n.id) ?? [];
           return (
             <section
               class="gv2-detail hidden"
@@ -178,18 +218,50 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
                 </div>
               </header>
 
-              {out.length === 0 ? (
-                <p class="text-sm text-text-muted">No outgoing edges from this node.</p>
-              ) : (
-                <ul class="space-y-1 text-sm font-mono" data-testid={`gv2-edges-${n.id}`}>
-                  {out.slice(0, 60).map((e) => (
-                    <li class="flex gap-3">
-                      <span class="inline-block min-w-[110px] text-text-muted">[{e.type}]</span>
-                      <span class="text-text-primary">{e.target}</span>
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <div class="grid gap-5 lg:grid-cols-2">
+                <section>
+                  <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Outgoing edges</h3>
+                  {out.length === 0 ? (
+                    <p class="text-sm text-text-muted">No outgoing edges from this node.</p>
+                  ) : (
+                    <ul class="space-y-1 text-sm font-mono" data-testid={`gv2-edges-${n.id}`}>
+                      {out.slice(0, 60).map((e) => {
+                        const target = nodeById.get(e.target);
+                        return (
+                          <li class="flex gap-3">
+                            <span class="inline-block min-w-[110px] text-text-muted">[{e.type}]</span>
+                            <button type="button" data-gv2-select={e.target} class="text-left text-text-primary underline decoration-border hover:text-accent-blue">
+                              {target?.title ?? e.target}
+                              <span class="block text-[10px] text-text-muted">{e.target}</span>
+                            </button>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                </section>
+                <section>
+                  <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Incoming edges</h3>
+                  {incoming.length === 0 ? (
+                    <p class="text-sm text-text-muted">No incoming edges to this node.</p>
+                  ) : (
+                    <ul class="space-y-1 text-sm font-mono" data-testid={`gv2-incoming-${n.id}`}>
+                      {incoming.slice(0, 60).map((e) => {
+                        const source = nodeById.get(e.source);
+                        return (
+                          <li class="flex gap-3">
+                            <span class="inline-block min-w-[110px] text-text-muted">[{e.type}]</span>
+                            <button type="button" data-gv2-select={e.source} class="text-left text-text-primary underline decoration-border hover:text-accent-blue">
+                              {source?.title ?? e.source}
+                              <span class="block text-[10px] text-text-muted">{e.source}</span>
+                            </button>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                </section>
+              </div>
             </section>
           );
         })}
@@ -199,7 +271,10 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
 </BaseLayout>
 
 <script>
+  let selectedNodeId: string | null = null;
+
   function showNode(id: string | null): void {
+    selectedNodeId = id;
     const details = document.querySelectorAll<HTMLElement>('[data-gv2-detail]');
     const empty = document.getElementById('gv2-empty');
     let matched = false;
@@ -217,14 +292,21 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
   function applyFilters(): void {
     const search = (document.getElementById('gv2-search') as HTMLInputElement | null)?.value.trim().toLowerCase() ?? '';
     const kind = (document.getElementById('gv2-kind') as HTMLSelectElement | null)?.value ?? 'all';
+    const edgeType = (document.getElementById('gv2-edge-type') as HTMLSelectElement | null)?.value ?? 'all';
+    const focusNeighborhood = (document.getElementById('gv2-focus-neighborhood') as HTMLInputElement | null)?.checked ?? false;
     const items = document.querySelectorAll<HTMLLIElement>('.gv2-item');
     let visible = 0;
     items.forEach((li) => {
+      const id = li.getAttribute('data-id') ?? '';
       const text = li.getAttribute('data-search') ?? '';
       const k = li.getAttribute('data-kind') ?? '';
+      const edgeTypes = (li.getAttribute('data-edge-types') ?? '').split(' ').filter(Boolean);
+      const neighbors = (li.getAttribute('data-neighbors') ?? '').split(' ').filter(Boolean);
       const matchesSearch = !search || text.includes(search);
       const matchesKind = kind === 'all' || k === kind;
-      const show = matchesSearch && matchesKind;
+      const matchesEdgeType = edgeType === 'all' || edgeTypes.includes(edgeType);
+      const matchesFocus = !focusNeighborhood || !selectedNodeId || id === selectedNodeId || neighbors.includes(selectedNodeId);
+      const show = matchesSearch && matchesKind && matchesEdgeType && matchesFocus;
       li.classList.toggle('hidden', !show);
       if (show) visible++;
     });
@@ -241,10 +323,13 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
         url.searchParams.set('id', id);
         window.history.replaceState(null, '', url.toString());
         showNode(id);
+        applyFilters();
       });
     });
     document.getElementById('gv2-search')?.addEventListener('input', applyFilters);
     document.getElementById('gv2-kind')?.addEventListener('change', applyFilters);
+    document.getElementById('gv2-edge-type')?.addEventListener('change', applyFilters);
+    document.getElementById('gv2-focus-neighborhood')?.addEventListener('change', applyFilters);
 
     const urlId = new URLSearchParams(window.location.search).get('id');
     if (urlId) showNode(urlId);

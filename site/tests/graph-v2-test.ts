@@ -28,6 +28,15 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   // Question count should match the structured bank size (499).
   await expect(page.getByTestId('gv2-node-count-question')).toHaveText('499');
 
+  // Edge type filter reduces the list to nodes connected by selected graph semantics.
+  await page.getByTestId('gv2-search').fill('');
+  const unfilteredCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  await page.getByTestId('gv2-edge-type').selectOption('tests');
+  const testsEdgeCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  expect(testsEdgeCount).toBeGreaterThan(0);
+  expect(testsEdgeCount).toBeLessThan(unfilteredCount);
+  await page.getByTestId('gv2-edge-type').selectOption('all');
+
   // Search for the known Q23 question — only the matching item stays visible.
   await page.getByTestId('gv2-search').fill('q23-eop-flowchart-symbols-concurrent');
   const visibleItems = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)');
@@ -47,4 +56,14 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await expect(edges).toContainText('[quiz-source]');
   await expect(edges).toContainText('article:exams/2023/q23-eop-flowchart-symbols-concurrent');
   await expect(edges).toContainText('[sourced-from]');
+
+  // Focus mode keeps the selected question plus directly connected topic/source/article nodes.
+  await page.getByTestId('gv2-search').fill('');
+  await page.getByTestId('gv2-focus-neighborhood').check();
+  const focusedVisible = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)');
+  const focusedCount = Number(await page.getByTestId('gv2-visible-count').textContent());
+  expect(focusedCount).toBeGreaterThan(1);
+  expect(focusedCount).toBeLessThan(unfilteredCount);
+  await expect(focusedVisible.filter({ hasText: '2023 Q23' })).toHaveCount(1);
+  await expect(focusedVisible.filter({ hasText: 'Admin' }).first()).toBeVisible();
 });
