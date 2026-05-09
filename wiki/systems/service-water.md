@@ -138,11 +138,16 @@ SW Nuclear Header leak location: with low SW pressure to loads on the <span clas
 SW pump bus alignment: <span class="hi-exam">21, 22, 23 SW pumps are powered from AA, BB, CC vital buses</span>. With 4 SW Bay isolated, <span class="hi-exam">24, 25, 26 SW pumps are unavailable</span>. If a 4KV vital-bus differential opens the EDG output breaker AND prevents station-power infeed-breaker reclosure, the de-energized vital bus eliminates pump power — <span class="hi-exam">total loss of all SW capability</span>, since the standby 22 SW pump cannot auto-start without power. <span class="hi-trap">The SW-load reduction action on Attachment 2 belongs to AB.SW-0001 (loss of header pressure), NOT AB.SW-0005. The action to swap charging pumps (place 23 in service / remove 22 from service) is in AB.SW-0005, NOT AB.SW-0001.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+Total loss of all SW from <span class="hi-exam">simultaneous trip of all four #4 Service Water Bay pumps (24/25/26 SW pumps)</span> with #2 SW Bay already isolated for an unrelated leak. Loss of all SW eliminates cooling for CCW heat exchangers, which removes the heat sink for RCP thermal barriers, RCP seals via charging, and other CCW-cooled loads. AB.SW-0005 directs <span class="hi-exam">trip the reactor and stop all RCPs</span> as the immediate actions to limit heat input to the now-uncooled CCW system, then swap to 23 Charging Pump (positive displacement) and reduce CCW pumps to one to minimize CCW heating.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[AB.SW-0005 — Loss of All Service Water]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
 - Related exam questions: [[2016 Q42]], [[2016 Q53]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
-- Related JPMs: [[2016 JPM SRO-A1-1]], [[2016 JPM SRO-A1-2]], [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
+- Related JPMs: [[2016 JPM SRO-A1-1]], [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-e]], [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
 - Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]

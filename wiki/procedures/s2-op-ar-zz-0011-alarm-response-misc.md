@@ -46,10 +46,15 @@ Page 92 — CCW header pressure low / CCW pump auto-start: normal alignment is <
 AIR FLOW LO alarm with SEQUENCE COMPLETE extinguished: cause is fan discharge pressure &lt; 2.0 INWC. CAUTION: operating with less than two Rod Drive Vent Fans in service could <span class="hi-exam">degrade the Rod Drive Coils</span> — operability determination required. Step 3.2: if SEQUENCE COMPLETE extinguished, <span class="hi-exam">immediately SWAP to standby Rod Drive Vent Fan</span> (STOP affected fan, START standby). Step 3.2.D: if <span class="hi-exam">NO Rod Drive Vent Fans in operation, TRIP the Reactor</span> and GO TO 2-EOP-TRIP-1. <span class="hi-trap">In the alternate path scenario, the standby fan initially starts successfully but then both remaining fans trip — step 3.2.D (previously N/A) becomes applicable and the reactor must be tripped.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-h</div>
+Pages 118-128 — <span class="hi-exam">COMPR 2 TROUBLE alarm response (Loss of Control Air entry path)</span>: ARP Step 3.1 — IF SAC 2 trips, THEN: A. Coordinate (as necessary) with Unit 1; B. Ensure operating OR start at least one SAC IAW SC.OP-SO.SA-0001, Station Air System Operation. ARP Step 3.2 — <span class="hi-exam">IF AT ANY TIME Station Air pressure cannot be maintained ≥100 psig, THEN GO TO S2.OP-AB.CA-0001 (Loss of Control Air)</span>. <span class="hi-trap">Note: The #1 and #3 Compressor Trouble alarms on 2CC1 do NOT have audible or flash capabilities (this procedure page 120) — diagnosis of #1 SAC trip relies on the plant page announcement, not the local annunciator.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RCPs]], [[CCW]], [[SECs]], [[Control Rod Drive]]
-- Related procedures: [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-SO.CBV-0001 — Containment Ventilation Operation]]
+- Related systems: [[RCPs]], [[CCW]], [[SECs]], [[Control Rod Drive]], [[Control Air]]
+- Related procedures: [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-SO.CBV-0001 — Containment Ventilation Operation]], [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.SA-0001 — Station Air System Operation]]
 - Related exam questions: [[2016 Q35]], [[2020 Q28]], [[2020 Q35]], [[2023 Q95]]
-- Related JPMs: [[2019 JPM Sim-a]], [[2022 JPM Sim-d]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM Sim-h]], [[2019 JPM Sim-a]], [[2022 JPM Sim-d]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

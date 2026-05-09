@@ -217,3 +217,63 @@ jpms:
     alternate_path: true
     source: New
     task_number: "N1150290501"
+
+  - id: "Sim-e"
+    title: "TCAF a Total Loss of All Service Water"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-AB.SW-0005 / S2.OP-AB.SW-0001 / S2.OP-AR.ZZ-0002"
+    pages: "1-8"
+    ka: "076 A2.01"
+    ka_importance_ro: 3.5
+    ka_importance_sro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Bank
+    task_number: "N1140380401"
+
+  - id: "Sim-f"
+    title: "Adjust PRT Level and Pressure"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-SO.PZR-0003"
+    pages: "1-7"
+    ka: "007 A4.04"
+    ka_importance_ro: 2.6
+    ka_importance_sro: 2.6
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: Modified
+    task_number: "N0100110101"
+
+  - id: "Sim-g"
+    title: "Perform Actions for a Loss of All AC Power (Energize a 4KV Vital Bus from a Station Power Transformer)"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-SO.DG-0001 / S2.OP-SO.4KV-0001"
+    pages: "1-7"
+    ka: "EPE 055 EA1.07"
+    ka_importance_ro: 4.3
+    ka_importance_sro: 4.5
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1150140501"
+
+  - id: "Sim-h"
+    title: "TCAF a Loss of Control Air"
+    type: Sim
+    location: Simulator
+    procedure: "S2.OP-AB.CA-0001 / S2.OP-AR.ZZ-0011"
+    pages: "1-13"
+    ka: "APE 065 AA2.06"
+    ka_importance_ro: 3.6
+    ka_importance_sro: 4.2
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: true
+    source: New
+    task_number: "N1140070401"

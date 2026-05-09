@@ -52,10 +52,16 @@ AB.SW-0001 (Loss of SW Header Pressure) <span class="hi-exam">Attachment 2 direc
 23 SW Pump trips, 26 SW Pump fails to auto start on low pressure. OHA B-13/B-14/B-15 for SW header pressure low. RO manually starts 26 SW Pump. Only action AB requires is to start standby SW Pump. CRS enters <span class="hi-exam">TS 3.7.4 (72 hours)</span> — 21 and 23 SW Pumps inoperable in one bay (only one operable SW loop).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+AB.SW-0001 may be the diagnostic entry path for a total loss of SW: OHA B-13/B-14 (low SW header pressure) routes through the ARP S2.OP-AR.ZZ-0002 to AB.SW-0001. <span class="hi-exam">AB.SW-0001 Step 3.8 directs: "IF the Unit is NOT in a Service Water Header Outage, THEN GO TO S2.OP-AB.SW-0005 (Loss of All Service Water)"</span> — the procedure ultimately routes the crew back to AB.SW-0005 for the trip-and-stop-RCPs actions when no SW is available. AB.SW-0001 also confirms there is no unisolated leak (Step 3.2) and that no SW pumps are available (Step 3.4) before transitioning.
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]], [[CFCUs]]
-- Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]]
+- Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]], [[AB.SW-0005 — Loss of All Service Water]]
 - Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]]
+- Related JPMs: [[2016 JPM Sim-e]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

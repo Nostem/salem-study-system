@@ -228,11 +228,16 @@ RCP shaft shear at 25% power — thermodynamic effects on the affected loop: wit
 FRHS-1 bleed-and-feed Step 23 (sequence): <span class="hi-exam">STOP ALL RCPs (21-24)</span> before initiating SI. RO depresses STOP PB for 21-24 RCPs and verifies green stop light illuminates and red start light extinguishes. Stopping RCPs prevents uncontrolled RCS depressurization through PORV bleed flow with running pumps, and is required to permit the SI / PORV bleed path to function.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+On total Loss of All SW, AB.SW-0005 Step 3.2 directs <span class="hi-exam">stop all RCPs</span> immediately after the reactor trip. Rationale: with no SW to cool CCW, the CCW system can no longer remove the ~600 kW per pump heat input from the RCPs (mechanical seal cooling, motor cooling) — running RCPs would rapidly heat up CCW. The procedure also requires verifying RCP Seal Inlet Temperatures &lt;225°F before swapping to the 23 (positive displacement) Charging Pump for seal injection.
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2016 Q6]], [[2016 Q21]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2016 Q77]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
-- Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]], [[2016 JPM Sim-d]]
+- Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

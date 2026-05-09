@@ -199,12 +199,17 @@ EDG monthly surveillance — applying SR 4.0.2's 25% extension to the 31-day per
 2A 4KV Vital Bus Differential effects on EDG output breaker and station-power infeed: <span class="hi-exam">a Bus Differential signal opens the EDG output breaker AND prevents the vital-bus station-power infeed breakers from closing</span>. With 4 SW Bay isolated (24/25/26 SW pumps unavailable) and 21/23 SW pumps powered from AA/BB/CC vital buses, the 23 SW pump trip plus the 2A 4KV bus de-energization results in <span class="hi-exam">no SW pumps running — total loss of all SW</span>. <span class="hi-trap">22 SW pump cannot auto-start on low SW header pressure because its bus has no power.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-g</div>
+<strong>EDG-to-SPT swap during LOPA recovery (EOP-LOPA-1 Step 16):</strong> when off-site power has been restored after a loss of all AC power, S2.OP-SO.DG-0001 §5.8 directs swapping each running EDG-fed vital bus back to a Station Power Transformer source. Steps: confirm 2A EDG is NOT paralleled on 2A 4KV Vital Bus; place redundant equipment in service to support deenergizing 2A Vital Bus (e.g., 22 CCW pump); stop all 2A Vital Bus loads via Attachment 1; <span class="hi-exam">open 2A DIESEL GENERATOR BREAKER by one of three methods (open 2AD1AX6D locally, press 2A BREAKER OPEN PB on 2CC3, or place 2A-DF-GCP-3 to TRIP)</span>; <span class="hi-exam">allow Diesel to run unloaded for ≥ 3 minutes prior to stopping the EDG</span> (cooldown).
+</div>
+
 ## Connections
 
 - Related systems: [[Fire Protection]]
 - Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.0 — Applicability]]
 - Related exam questions: [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
-- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related JPMs: [[2016 JPM SRO-A1-2]], [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
+- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-g]], [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
 - Related exams: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

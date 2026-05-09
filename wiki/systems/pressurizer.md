@@ -168,12 +168,17 @@ During startup at 3% power, controlling PZR Pressure Channel I fails high — de
 FRHS-1 Step 24 RCS bleed path: <span class="hi-exam">OPEN BOTH PZR PORV STOP VALVES (2PR6, 2PR7), then OPEN BOTH PZR PORVs (2PR1, 2PR2) in Manual</span>. Alternate path: 2PR2 fails to open in Manual → open <span class="hi-exam">2RC40 thru 2RC43 (Reactor Head Vents)</span> at 2RP3 backpanel using four key-locked switches. Reactor Head Vents are NOT part of the standard FRHS-1 bleed path — they are an authorized alternate when one PORV fails to open.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-f</div>
+PRT level adjust at 100% power with <span class="hi-exam">2PR1 leaking, 2PR6 shut with power applied, PRT level at 56.2%, PRT pressure 9.8 psig</span>. Per S2.OP-SO.PZR-0003 §5.1: start primary water pump (21 or 22), open 2WR80 (CONT PRI WATER STOP) and 2WR82 (PRT WATER SUPPLY) to fill, and operate 2PR15 (VENT) as needed to keep PRT pressure <span class="hi-exam">&gt;3 psig and ≤10 psig</span> while raising level. <span class="hi-trap">PRT Hi Pressure alarm locks out 2PR15 — pressure cannot be reduced via vent path once that alarm comes in. The 3 psig lower bound preserves a positive nitrogen overpressure to prevent oxygen ingress.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[S2.OP-SO.PZR-0003 — PRT Operation]], [[S2.OP-SO.RC-0002 — Vacuum Refill of the RCS]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
 - Related exam questions: [[2016 Q11]], [[2016 Q21]], [[2016 Q23]], [[2016 Q34]], [[2016 Q36]], [[2016 Q82]], [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]]
-- Related JPMs: [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]], [[2016 JPM Sim-d]]
+- Related JPMs: [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]], [[2016 JPM Sim-d]], [[2016 JPM Sim-f]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

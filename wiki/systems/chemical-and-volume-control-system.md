@@ -318,12 +318,22 @@ S2.OP-ST.CVC-0010 Borated Water Sources surveillance (Att. 2) following a 21 BAT
 FRHS-1 Step 23.1 charging pump verification during bleed and feed: <span class="hi-exam">21 OR 22 Charging Pump running with BIT flow established</span> via 2SJ4/2SJ5 (BIT inlet) OPEN and 2SJ12/2SJ13 (BIT outlet) OPEN. Table B safeguards alignment auto-checked: 2CV68/2CV69 (Charging Discharge) CLOSED, 2CV40/2CV41 (Discharge Stop) CLOSED, 2SJ1/2SJ2 (RWST to Charging) OPEN.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+On a total loss of all SW, AB.SW-0005 Step 3.6 directs swapping to <span class="hi-exam">23 Charging Pump (positive displacement)</span> to maintain charging without CCW cooling on the centrifugal pumps. The 23 Charging Pump start sequence is unique: <span class="hi-exam">place in MANUAL → set Speed Demand to 10–12% BEFORE start → start pump → immediately raise Speed Demand to ~20% to couple the pump → adjust for desired flow → ensure Seal Injection Flow 6–12 gpm per RCP, total ≤40 gpm → stop 21 and 22 Centrifugal Charging Pumps</span>. Letdown is isolated by closing 2CV3/4/5 (orifice isolation valves) and 2CC131 (RCP THERMAL BARRIER) is placed in MANUAL.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-h</div>
+On Loss of Control Air alternate path, AB.CA-0001 Step 3.58 directs <span class="hi-exam">isolate letdown by closing 2CV3, 2CV4, 2CV5, 2CV2, 2CV277, and 2CV7</span>. Air-operated valves in CVCS — particularly the letdown line — must be closed before air pressure drops further, since letdown control is lost on loss of CA and excessive RCS letdown can occur if the line is not isolated.
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
 - Related exam questions: [[2016 Q1]], [[2016 Q29]], [[2016 Q30]], [[2016 Q37]], [[2016 Q39]], [[2016 Q67]], [[2016 Q79]], [[2016 Q82]], [[2016 Q83]], [[2016 Q84]], [[2016 Q92]], [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2018 Q52]], [[2018 Q69]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]]
-- Related JPMs: [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]], [[2016 JPM RO-A2]], [[2016 JPM Sim-d]]
+- Related JPMs: [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]], [[2016 JPM RO-A2]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2016 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

@@ -89,10 +89,16 @@ Of the Radioactive Liquid Waste System tanks, <span class="hi-exam">ONLY the RCD
 Containment Purge to Plant Vent (S2.OP-SO.WG-0006) reinstatement after temporary termination: <span class="hi-exam">no new release form required if duration was short (~4 hours) AND containment radiological conditions have not changed</span>; <span class="hi-exam">CVI signal can be blocked per Attachment 2</span> (Temporary Termination and Reinstatement). A new effluent permit is not always required.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-h</div>
+During a Loss of Control Air alternate path with a WG release in progress from 21 GDT, AB.CA-0001 Step 3.57 directs <span class="hi-exam">verifying any liquid or gaseous release is stopped by ensuring 2WG41 (GAS DECAY TK TO PLANT VENT) and 2WL51 (TO CIRC WTR DISCHARGE) are CLOSED</span>. The applicant must recognize 2WG41 is open (a release was in progress in the initial conditions) and manually shut it as part of the alternate-path response.
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[Containment]]
-- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0007 — Transfer of Waste Gas]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0010 — Discharge of 13 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]]
+- Related systems: [[Control Air]]
+- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0007 — Transfer of Waste Gas]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0010 — Discharge of 13 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]], [[AB.CA-0001 — Loss of Control Air]]
 - Related exam questions: [[2016 Q93]], [[2016 Q98]], [[2018 Q38]], [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]]
-- Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM SRO-A4]], [[2023 JPM IP-k]], [[2019 JPM IP-k]]
+- Related JPMs: [[2016 JPM SRO-A3]], [[2016 JPM Sim-h]], [[2018 JPM SRO-A4]], [[2023 JPM IP-k]], [[2019 JPM IP-k]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2019 NRC Operating Exam]]

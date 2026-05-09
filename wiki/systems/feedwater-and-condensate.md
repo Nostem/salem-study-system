@@ -183,11 +183,16 @@ Single Condensate pump trip with NO HDPs running and polisher in service: <span 
 21 SGFP trip during a Shutdown Bank surveillance (S2.OP-ST.RCS-0001 Section 5.1) is the alternate-path event. With Shutdown Bank B inserted at least 10 steps below ARO, MALF BF0105A trips 21 SGFP. Per S2.OP-ST.RCS-0001 P&L 3.13, with a Shutdown Bank not at its fully withdrawn position, an event requiring a reactor trip <span class="hi-exam">requires a manual reactor trip</span> — attempting to recover SGFP capacity by withdrawing the inserted Shutdown Bank (placing the Rod Bank Selector in MAN or AUTO) is the wrong action.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-h</div>
+<span class="hi-exam">21–24BF19 (SG Feedwater Regulating Valves) start to close at ≈ 80 psig control air header pressure</span>. Per AB.CA-0001 CAS Step 6.0: "If ANY BF19 SG FW CONT VALVE closes AND Applicable SG water level CANNOT be maintained, THEN: Trip the Reactor; continue with this procedure; go to 2-EOP-TRIP-1." The applicant must <span class="hi-exam">manually trip the reactor BEFORE the auto-trip on lo-lo SG NR level</span> when BF19 closure prevents level control. Approximate timeline (from RT-1 / first SAC trip): 6:30 — 21–24BF19 begin closing; 7:10 — G-15 OHA ADFCS TRBL.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
 - Related exam questions: [[2016 Q48]], [[2016 Q51]], [[2016 Q52]], [[2016 Q70]], [[2016 Q76]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
-- Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]]
+- Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]], [[2016 JPM Sim-h]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

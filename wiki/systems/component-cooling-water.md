@@ -161,9 +161,14 @@ Normal CCW system alignment: <span class="hi-exam">2 CCW pumps running in MANUAL
 Loss of all SW directly affects CCW: per AB.SW-0005, <span class="hi-exam">RCPs are stopped to limit heat input to the CCW system</span> (since CCW heat exchangers are cooled by SW; with SW lost, CCW heat-removal capability is lost). Tripping the reactor and stopping all RCPs reduces the heat load on CCW until SW is restored.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+On total Loss of All SW, AB.SW-0005 Step 3.9 directs <span class="hi-exam">place CCW pumps in MANUAL and reduce operating CCW pumps to one</span>. Rationale: with no SW available to cool the CCW heat exchangers, CCW heat removal capability is gone. Tripping the reactor and stopping all RCPs reduces heat input to CCW; reducing to a single running CCW pump minimizes heat addition from the running pumps themselves and allows heat-up of the limited CCW inventory to be tracked. <span class="hi-exam">2CC131 (RCP THERMAL BARRIER) is placed in MANUAL</span> as part of this sequence.
+</div>
+
 ## Connections
 
 - Related exam questions: [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2016 Q92]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]]
-- Related JPMs: [[2018 JPM Sim-h]], [[2019 JPM Sim-h]]
+- Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]]
