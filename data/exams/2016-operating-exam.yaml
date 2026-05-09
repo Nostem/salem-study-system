@@ -373,3 +373,27 @@ scenarios:
         ct_label: "CT#2"
         description: "Establish and maintain an RCS temperature so that transition from SGTR-1 does not occur because temperature is too high to maintain minimum subcooling, or so low it causes transition to FRTS or FRSM. Cooldown target temperature from Table D (503 °F for ruptured SG pressure ~1000 psig)."
         time_critical: false
+
+  - number: 3
+    title: "PZR Pressure Channel Fails High / Dropped Rod / 21 SG Steam Leak → Rupture in Containment / All MSIVs Fail / CS Pumps Fail to Auto-Start"
+    pages: "1-29"
+    num_events: 7
+    num_critical_tasks: 2
+    eops_entered:
+      - EOP-TRIP-1
+      - EOP-LOSC-1
+      - EOP-LOSC-2
+      - EOP-FRHS-1
+    abnormals_entered:
+      - AB.PZR-0001
+      - AB.ROD-0002
+      - AB.STM-0001
+    critical_tasks:
+      - id: "CT-3"
+        ct_label: "CT#1"
+        description: "Manually actuate at least one Containment Spray pump (block and reset 2A and 2C SECs, then start 21 or 22 CS pump) before an extreme challenge develops to the containment CSF, given both CS pumps fail to auto-start on the hi-hi containment pressure SEC signal."
+        time_critical: false
+      - id: "CT-33"
+        ct_label: "CT#2"
+        description: "With all SGs faulted and RCS cooldown rate >100 °F/hr in EOP-LOSC-2, control AFW flow to each SG to no less than 1.0E4 lbm/hr to minimize the cooldown rate."
+        time_critical: false

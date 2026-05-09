@@ -166,10 +166,15 @@ After SEC reset following a LOCA, a subsequent Hi-Hi containment pressure signal
 APPX-7 secures CS flow path: <span class="hi-exam">stop ALL Containment Spray pumps (Step 3.a)</span> and verify 21CS36 AND 22CS36 CLOSED. CS interlock with RHR (21/22 CS36 closed before stopping affected RHR pump) prevents reverse-flow from the CS header back into RHR suction during cavitation recovery.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+<span class="hi-exam">CT#1 (CT-3): manually start at least one CS pump before a red-path challenge develops on the containment CSF.</span> A 21 SG steam leak in containment with all four MSIVs failed shut drives containment pressure above 15 psig (Phase B / hi-hi); however, both Containment Spray pumps fail to auto-start (RP318L1 and RP318L2 — 21 and 22 CS pump fail-to-start on SEC). RO initiates Phase B and Spray actuation; reports neither CS pump has started. Crew recovery: <span class="hi-exam">RO blocks 2A and 2C SECs; PO resets 2A and 2C SECs; RO manually starts 21 and 22 CS pumps</span>. CS pumps are subsequently stopped in EOP-LOSC-2 step 22 (when containment pressure &lt;13 psig, RO resets Spray actuation, stops both CS pumps, shuts 21 and 22CS2 CS pump discharge valves).
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related exam questions: [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2016 Q73]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
 - Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

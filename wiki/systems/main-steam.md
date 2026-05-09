@@ -112,12 +112,17 @@ Steam line rupture upstream of 24MS167 with reactor tripped, MSLI performed, and
 Small (0.1%) steam leak from a single SG with reactor at <span class="hi-exam">1×10⁻⁸ Amps (exactly critical, below POAH)</span>: positive reactivity from the cooldown causes <span class="hi-exam">Rx power to rise until it stabilizes after reaching the Point Of Adding Heat (POAH)</span>. <span class="hi-exam">Below POAH there is NO temperature-coefficient feedback</span> — power simply rises with the steam-induced cooldown. Once power reaches POAH, the negative MTC adds enough negative reactivity to <span class="hi-exam">offset the positive reactivity from the steam leak</span> and power stabilizes. <span class="hi-trap">No reactor trip occurs — both OT/DT and Power Range high-flux (low setpoint) trips are plausible distractors but neither actuates because power stabilizes well below their setpoints.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+21 SG steam leak inside containment escalates to a rupture on a manual reactor trip. <span class="hi-exam">Both auto MSLI signals (RP0279A/B) and manual MSLI fail to close any of the four MSIVs</span> (21-24MS167 fail open). MSLI failure leaves the steam leak unisolated → CRS directs manual SI per AB.STM CAS / TRIP-1 Step 11. Local operators are dispatched to <span class="hi-exam">place valves from Table D in safeguards position</span> (locally close MSIVs). All SGs depressurize uncontrollably → EOP-LOSC-1 → EOP-LOSC-2. Local operators successfully shut <span class="hi-exam">23MS167</span> later in the event; pressure rise in 23 SG drives transition back to LOSC-1.
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Dumps]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
+- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[AB.STM-0001 — Excessive Steam Flow]], [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
 - Related exam questions: [[2016 Q16]], [[2016 Q23]], [[2016 Q24]], [[2016 Q49]], [[2016 Q50]], [[2016 Q79]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

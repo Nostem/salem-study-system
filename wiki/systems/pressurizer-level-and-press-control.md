@@ -138,11 +138,16 @@ After a controlling PZR level channel fails LOW with a CCP in service, charging 
 PZR Spray Valve 2PS1 fails open at 4% power during a startup: with NO operator action the <span class="hi-exam">FIRST protective action is Safety Injection on Low PZR Pressure</span>. <span class="hi-exam">Low PZR pressure reactor trip is BLOCKED below P-10</span> (and is not reinstated until &gt; P-10). <span class="hi-exam">Low PZR Pressure SI was reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span></span>. OT/DT trip would not occur because D/T is very small at 4% power. PZR level will not rise (the leak is depressurizing through spray) so high-level Rx trip does not actuate. <span class="hi-trap">Trap: candidates may pick low-pressure Rx trip — but it is blocked below P-10. SI on low PZR pressure is the active protective action below P-10.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+<span class="hi-exam">Controlling PZR Pressure Channel I (PT-455) fails HIGH</span> (final 2500 psig) during a 2% power ascension. Symptoms: PZR heaters de-energize, both PZR Spray valves drive fully open, OHA <span class="hi-exam">D-8 RC Press HI</span> and <span class="hi-exam">E-42 2PR1 ½ Trip</span>. RO determines actual pressure is not high (lowering due to spray + heaters off), reports spray valves open, recommends Master Pressure Controller in manual; lowers MPC demand to close sprays. Recovery sequence: select <span class="hi-exam">Channel III</span> for control, match MPC demand to current pressure, return MPC to AUTO. <span class="hi-exam">Shut 2PR6</span> and dispatch WCC to remove power from 2PR6 within one hour. Remove failed channel from service per <span class="hi-exam">S2.OP-SO.RPS-0003</span>. Tech specs: 3.3.1.1 Action 6, 3.3.2.1.b Action 19*, 3.4.5.b, 3.2.5.
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
 - Related exam questions: [[2016 Q7]], [[2016 Q36]], [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2018 Q55]], [[2018 Q82]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]]
 - Related JPMs: [[2019 JPM Sim-c]], [[2022 JPM IP-i]], [[2016 JPM IP-i]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]

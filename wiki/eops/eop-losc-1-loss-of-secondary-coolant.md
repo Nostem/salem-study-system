@@ -39,10 +39,15 @@ LOSC-1 step sequence for reopening 21-24 SS94 (SG B/D Sample Valves) after a sin
 Entered from EOP-TRIP-1 on <span class="hi-exam">21 SG pressure dropping in uncontrolled manner</span> (feedwater line break inside containment). MSLI previously initiated. PO closes/verifies closed: <span class="hi-exam">21BF13, 21BF40, 21MS7, 21MS10, 21MS18, 21MS167, and 21GB4</span> to isolate faulted 21 SG <span class="hi-exam">(CT-17 Part 2)</span>. Trips and stops 23 AFW pump. Dispatches operator to close 21MS45. PO reports 21 SG is faulted, other SGs NOT depressurizing. RCS temperature rising — PO adjusts MS10s to stabilize. Transition to <span class="hi-exam">EOP-TRIP-3</span> when RCS subcooling &gt;0 F, PZR level &gt;11%, RCS pressure stable/rising.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+Entered from EOP-TRIP-1 with <span class="hi-exam">all SGs faulted</span> and MSLI failure: PO reports all SG pressures dropping in uncontrolled manner or completely depressurized. With ALL SGs faulted, AFW flow is NOT isolated to any SG. CRS subsequently transitions to <span class="hi-exam">EOP-LOSC-2</span> for multiple-SG depressurization. After local operators successfully shut <span class="hi-exam">23MS167</span>, pressure rise in 23 SG drives CRS to transition <span class="hi-exam">back to LOSC-1</span> (one SG no longer faulted). Scenario terminates on transition back to LOSC-1.
+</div>
+
 ## Connections
 
 - Related systems: [[CFCUs]], [[Containment Spray]], [[Main Steam]], [[Feed & Condensate]], [[AFW]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-3 — SI Termination]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related exam questions: [[2016 Q16]], [[2016 Q65]], [[2016 Q85]], [[2020 Q9]]
-- Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]

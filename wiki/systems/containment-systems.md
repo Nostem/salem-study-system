@@ -284,12 +284,17 @@ Containment Purge reinstatement after temporary termination (per S2.OP-SO.WG-000
 Containment-sump auto pump-down provides the leak-detection signal used to quantify unidentified RCS leakage to containment. OHA C-2 CNTMT SUMP PMP START is the front-panel indication; the Aux typewriter logs sump-pump start/stop events. Per S2.OP-SO.RC-0004 §5.3, the elapsed time between successive sump-pump cycles is converted to a leak rate via Attachment 3. Action thresholds: 0.85 gpm (Section 5.6 trending) and 1.0 gpm (TS 3.4.7.2 unidentified-leakage LCO).
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+21 SG steam leak inside containment first cued by <span class="hi-exam">CFCU leak-detection alarms</span>: OHA <span class="hi-exam">C-38 CFCU LK DET HI</span>, then <span class="hi-exam">C-30 CFCU LK DET HI-HI</span>. Diagnostic indications of an in-containment steam leak: containment pressure rising; Tavg slowly lowering; rising steam flows on all loops; steam dump demand lowering. Crew enters AB.STM-0001. Containment pressure exceeds the <span class="hi-exam">15 psig Phase B/Spray setpoint</span>; both Containment Spray pumps fail to auto-start (CT#1 → manual start). After cooldown, when containment pressure is &lt;13 psig, RO resets Spray actuation, stops both CS pumps, and shuts 21 and 22CS2 CS pump discharge valves.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
+- Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
 - Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q65]], [[2016 Q72]], [[2016 Q81]], [[2016 Q84]], [[2016 Q93]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A3]]
-- Related scenarios: [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
+- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]

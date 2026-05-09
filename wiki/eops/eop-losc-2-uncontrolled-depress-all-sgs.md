@@ -40,9 +40,15 @@ Step 1 — 13 AFW Pump steam isolation: with <span class="hi-exam">1A 4KV VITAL 
 Step 1 — 13 AFW Pump (TDAFW) steam isolation: if the 13 AFW Pump is <span class="hi-exam">NOT the only source of AFW flow</span> (i.e., at least one MDAFW pump is available), steam will be <span class="hi-exam">isolated to the 13 AFW Pump</span>. With 1C 4KV Vital Bus lost, 11 MDAFW Pump is NOT available but 12 MDAFW Pump IS — so steam IS isolated to 13 AFP. Step 5 — AFW flow control with RCS cooldown rate <span class="hi-exam">&gt; 100 &deg;F/HR</span>: reduce AFW flow to <span class="hi-exam">no less than <span class="val-normal">1.0E04 LB/HR</span> to each SG</span>. <span class="hi-trap">If cooldown rate were &lt; 100 &deg;F/HR, the criterion would be to maintain SG NR levels &lt; 33% instead.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+Entered from EOP-LOSC-1 with <span class="hi-exam">all SGs faulted</span> and MSLI failure (21 SG steam leak inside containment, all four MSIVs failed to shut on auto/manual MSLI). RCS cooldown rate &gt;100°F/hr drives <span class="hi-exam">CT#2 (CT-33)</span>: PO reduces AFW flow to each SG to <span class="hi-exam">no less than 1.0E4 lbm/hr</span> to minimize the cooldown rate. STA RED path on Heat Sink → CRS transitions briefly to EOP-FRHS-1, verifies operator action was the cause and returns to LOSC-2. Local operators successfully shut <span class="hi-exam">23MS167</span>; pressure rise in 23 SG triggers the LOSC-2 CAS to <span class="hi-exam">transition to EOP-LOSC-1</span> (one SG no longer faulted; available for subsequent recovery actions).
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[500KV]]
+- Related EOPs: [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related exam questions: [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]]
-- Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -41,6 +41,11 @@ Two dropped control rods at ~89% power during load reduction (Event 5). Reactor 
 Dropped rod recovery per AB.ROD-0002: with ROD BANK SELECTOR SWITCH in CBA (Control Bank A), the dropped rod will be withdrawn at <span class="hi-exam">48 steps per minute</span> in small increments per reactor Engineering guidance. <span class="hi-trap">Trap: 72 SPM is AUTO maximum speed, 64 SPM is Shutdown Bank speed (SBA/SBB/SBC/SBD), 8 SPM is AUTO minimum speed. Control Bank positions (CBA/CBB/CBC/CBD) = 48 SPM.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+<span class="hi-exam">Shutdown Bank rod 1S A3 drops fully into the core</span> during a low-power startup (1x10<sup>-8</sup> Amps, Control Bank D at 130 steps). Cue: OHA <span class="hi-exam">E-48 ROD BOTTOM</span> with rod-bottom light illuminated for SB rod 1S A3. Crew enters AB.ROD-0002, confirms rods in manual and Main Turbine S/D. RO reports the <span class="hi-exam">reactor is subcritical</span> as a result of the dropped rod. CRS directs RO to insert all control and shutdown bank rods; RO initiates rod insertion in manual.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]], [[Control Rod Drive]]
@@ -48,5 +53,5 @@ Dropped rod recovery per AB.ROD-0002: with ROD BANK SELECTOR SWITCH in CBA (Cont
 - Related tech specs: [[TS 3/4.2 — Power Distribution]]
 - Related exam questions: [[2018 Q30]], [[2020 Q19]], [[2022 Q19]]
 - Related JPMs: [[2018 JPM RO-A3]], [[2022 JPM RO-A3]]
-- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
