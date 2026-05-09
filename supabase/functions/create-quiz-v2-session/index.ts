@@ -27,7 +27,7 @@ type QuestionRow = {
   status: string;
   quiz_eligible: boolean;
   requires_reference: boolean | null;
-  question_topics?: Array<{ topics: { slug: string } | null }>; 
+  question_topics?: Array<{ topics: { slug: string } | null }>;
 };
 
 const corsHeaders = {
