@@ -51,10 +51,15 @@ EOP-FRSM-1 Step 3: ensure <span class="hi-exam">at least two charging pumps</spa
 ATWS at 4% power: reactor fails to trip on 21 SG LO-LO Level, all CR trip attempts fail. IAW EOP-TRIP-1, since the reactor is NOT tripped, the crew transitions to <span class="hi-exam">EOP-FRSM-1</span>. At 4% power with turbine not online, <span class="hi-exam">automatic rod insertion will NOT achieve > 48 steps/minute</span> — the EOP-TRIP-1 basis document threshold. Therefore rods must be inserted <span class="hi-exam">MANUALLY</span>. <span class="hi-trap">Trap: even though power is < 5%, the reactor trip is NOT confirmed because all trip attempts have failed — the reactor is still critical. Power range NI less than 5% alone does NOT confirm a trip.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q78</div>
+ATWS at 4% power awaiting Mode 1 (steam dumps in service, 21 SGFP in service, 22 SGFP latched at idle, all AFW secured): the EOP network including FRPs is in effect in <span class="hi-exam">Modes 1–3</span>, so FRSM-1 is applicable. Crew initiates manual rod insertion, then enters FRSM-1 and <span class="hi-exam">starts both MDAFW pumps</span>. <span class="hi-trap">Trap B: FRSM-1 does NOT check feed flow generally — it specifically checks AFW flow. So even with Main Feed flow occurring (>44E4 lbm/hr), operators still start MDAFW pumps in FRSM-1.</span> <span class="hi-trap">Trap C/D: Rx trip is NOT confirmed by power &lt;5% alone — confirmation also requires negative SUR and power lowering.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
+- Related exam questions: [[2016 Q78]], [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

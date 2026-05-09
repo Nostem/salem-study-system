@@ -61,6 +61,11 @@ All RCPs may be de-energized for up to 1 hour provided: (1) no boron dilution, (
 After a reactor trip from 75% with one RCP stopped: RTB B is open and both bypass breakers not racked in, so <span class="hi-exam">rod control system is de-energized</span>. LCO 3.4.1.2 only requires <span class="hi-exam">two loops OPERABLE</span> when de-energized. With three loops still running, <span class="hi-exam">LCO 3.4.1.2 IS met</span>. <span class="hi-trap">Trap: candidates may assume all four loops must be OPERABLE after a trip, forgetting the de-energized allowance.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q77</div>
+Mode 3 with 22 RDMG operating (motor & generator breakers shut), RTB "B" racked in and shut, RTB "A" and both RTBBs open: <span class="hi-exam">3 of the 4 RTB and RTBBs being open is considered "rod control de-energized"</span> (per TS page 3/4 4-2a) — even with an RDMG set in operation and a single RTB shut. With rod control de-energized, LCO 3.4.1.2 requires <span class="hi-exam">TWO operable RC loops (RCP, SG, and loop)</span> and <span class="hi-exam">ONE loop in operation</span>. With four RCPs operable initially, the trip of a single RCP <span class="hi-exam">does not require any action — minimum LCO is still met, no cooldown to Mode 4 required</span>. The bases provides "ensure mixing, prevent stratification, and produce gradual reactivity changes during boron concentration reductions in the RCS" as the reason for required loop operation. <span class="hi-trap">Trap B: "single failure criteria" is not the bases for the operation requirement — single failure criteria refers in this case to the minimum required loops IN OPERATION, not the bases statement.</span>
+</div>
+
 ### Hot Shutdown (3.4.1.3)
 
 <div class="callout callout-important">
@@ -496,5 +501,5 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2016 Q28]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

@@ -121,6 +121,7 @@ Compensated IRNI behavior post-trip from 100% power: per <span class="hi-exam">E
 - Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
   - [[2016 Q38]] — Block Power Range A and B pushbuttons at 12% blocks the 25% PR low setpoint Rx trip
   - [[2016 Q40]] — Post-trip 2N36 IRNI under-compensated (reads high, low SUR) / EOP-TRIP-2 step 22 directs manual SR energization
+  - [[2016 Q78]] — ATWS at 4% Mode 2: Rx trip NOT confirmed by NI power <5% alone; trip confirmation requires negative SUR and power lowering
   - [[2016 Q52]] — P-10 (3/4 PRNIs &lt;10% power) blocks low-power Rx trips; not the protection that prevents over-cooling on uncomplicated Rx trip
   - [[2018 Q31]] — SR audible count rate lowers during auto makeup with CV179 failed closed
   - [[2019 Q30]] — PR NI 2N41 fails high / rods to MAN per AB.NIS / tripped bistable = 1/3 coincidence

@@ -95,6 +95,11 @@ Bleed and Feed with only <span class="hi-exam">one PORV open</span> (second PORV
 FRHS-1 entry from FW Isolation event with both SGFPs tripped and no AFW auto-start: trip-of-both-SGFPs MDAFW auto-start signal is <span class="hi-exam">inhibited when SGFP trip is caused by FW Isolation</span>. AFW auto-start on SG NR &lt;<span class="val-alarm">9%</span> still functions. EOP-TRIP-2 step 3 NO path (total AFW flow &lt;<span class="hi-exam"><span class="val-normal">22E4 lbm/hr</span></span>) directs operators to manually start AFW pumps. <span class="hi-exam">FRHS-1 transition is plausible because CFSTs become active after transition out of TRIP-1</span> — but not the immediate response when AFW can be manually established.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q76</div>
+After Rx trip on Main Generator trip with all 3 AFW pumps unable to feed (11 failed to start, 12 with Pressure Override keeping 11AF21 / 12AF21 shut, 13 tripped, all SG NR off-scale low) and SPDS indicating Heat Sink Red Path: the FRHS-1 transition is INCORRECT — the crew remains in <span class="hi-exam">EOP-TRIP-2 step 3</span> to establish AFW flow &gt;22E4 lbm/hr (start 11–13 AFW pumps as necessary, including <span class="hi-trap">defeating the Pressure Override circuit</span>). FRHS-1 distractors are plausible only if CFST usage is misapplied after TRIP-1 exit. <span class="hi-trap">SPDS alone does not authorize FRP transition — primary 1E indications must be verified first.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2019 #4</div>
 Loss of all AFW following Main Turbine trip: 21 AFW pump C/T, 22 AFW pump lost with <span class="hi-exam">2B 4KV Vital Bus</span>, 23 AFW pump trips on <span class="hi-exam">overspeed</span> shortly after manual start. Crew validates CFST RED path on Heat Sink (SG NR levels <9%, AFW flow <22E4 lbm/hr). In FRHS-1, crew performs <span class="hi-exam">Prompt SGFP Recovery</span> using 22 SGFP IAW S2.OP-SO.CN-0007: reset SGFP trips, relatch 22 SGFP, raise speed to 3960-3980 rpm, verify DP >50 psid, feed SGs via BF19/BF40. <span class="hi-exam">CT-43: Establish main feedwater flow to SGs before bleed and feed is required.</span> Scenario terminates when main feed flow established and SG WR levels rising.
@@ -104,7 +109,7 @@ Loss of all AFW following Main Turbine trip: 21 AFW pump C/T, 22 AFW pump lost w
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2016 Q4]], [[2016 Q23]], [[2016 Q51]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
+- Related exam questions: [[2016 Q4]], [[2016 Q23]], [[2016 Q51]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
 - Related JPMs: [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]]

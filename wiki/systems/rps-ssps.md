@@ -346,3 +346,5 @@ RTBs fail to open on a valid RPS trip signal — operator opens the <span class=
   - [[2019 Q50]] — OT Delta-T variable setpoint lowers as RCS pressure lowers (K3 pressure input); OP Delta-T varies with AFD not pressure
   - [[2018 Q11]] — RCP Undervoltage trip: 4KV Group Busses H and G at <70% normal voltage / 1/2 taken twice / interlocked with P-7
   - [[2016 Q44]] — CS actuation relays have retentive memory; reset valid above 15 psig setpoint; CS pumps/valves do NOT reposition on reset
+  - [[2016 Q77]] — Mode 3 with rod control de-energized (3/4 RTB+RTBBs open, even with RDMG operating + 1 RTB shut) → LCO 3.4.1.2 only requires 2 loops operable; single RCP trip = no action
+  - [[2016 Q78]] — ATWS at 4% Mode 2: Rx trip NOT confirmed by power <5% alone; FRP (FRSM-1) applicable in Modes 1-3

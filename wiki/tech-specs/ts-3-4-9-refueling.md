@@ -304,13 +304,37 @@ The bases for 3/4.9.10 (reactor vessel) and 3/4.9.11 (storage pool) share a comm
 </div>
 </details>
 
+## 3/4.9.12 — Fuel Handling Ventilation System
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.9.12</div>
+The Fuel Handling Ventilation System shall be OPERABLE with:<br>
+a. <span class="hi">Two exhaust fans and one supply fan</span> operable and operating, AND<br>
+b. <span class="hi">Capable of maintaining slightly negative pressure</span> in the Fuel Handling Building.
+</div>
+
+**Applicability:** During movement of irradiated fuel within the storage pool
+
+**Action:**
+
+| Condition | Required Action | Completion Time |
+|-----------|----------------|-----------------|
+| FHV System inoperable | a. Suspend all operations involving movement of fuel within the storage pool until FHV System is restored to OPERABLE | Immediately |
+
+LCO 3.0.3 not applicable.
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q80</div>
+With S2.OP-IO.ZZ-0010 (SFP Manipulations) in effect, a tubing break causes total loss of air to <span class="hi-exam">21 FHB Supply Fan Inlet Damper</span>. The Inlet Damper is <span class="hi-exam">interlocked to open when its Supply Fan is started, and fails closed on loss of air</span>. With no air supply, the supply fan must be considered <span class="hi-exam">inoperable even though it remains running</span>. Consequence: <span class="hi-exam">declare FHV inoperable based on not having ALL FHV fans operable</span>. Per LCO 3.9.12.a action a: <span class="hi-exam">suspend all operations involving movement of fuel within the storage pool</span> until FHV is restored to operable. <span class="hi-trap">Trap C/D: operability does NOT depend on FHB D/P becoming positive — with no air supply, the supply fan is inoperable regardless. With no supply fan and 2 exhaust fans in service, building pressure will remain negative, but the FHV system is still inoperable per Part a of the LCO.</span> <span class="hi-trap">Trap B/D: the LCO action suspends fuel movement within the STORAGE POOL — not all fuel movement in the Fuel Handling Building.</span>
+</div>
+
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-9.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-9.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 
-- Related systems: [[RHR]], [[CVCS]], [[Rx Vessel & Internals]], [[Refueling]]
-- Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]]
-- Related exam questions: [[2016 Q68]], [[2020 Q94]]
+- Related systems: [[RHR]], [[CVCS]], [[Rx Vessel & Internals]], [[Refueling]], [[FHV]], [[Spent Fuel Pool]]
+- Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
+- Related exam questions: [[2016 Q68]], [[2016 Q80]], [[2020 Q94]]
 - Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]]

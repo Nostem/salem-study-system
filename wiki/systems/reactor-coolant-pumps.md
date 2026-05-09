@@ -193,6 +193,11 @@ RCP #1 seal failure identification: <span class="hi-exam">seal leak-off flow >=6
 LCO 3.4.1.1 (Modes 1 and 2): <span class="hi-exam">all reactor coolant loops shall be in operation</span>. With less than all loops operating, required action is <span class="hi-exam">be in HSB (Mode 3) within 1 hour</span>. Applies during plant startup at 4% power (Mode 2) when an RCP trips and a loop is no longer in operation. <span class="hi-trap">"Mode 3 within 15 minutes" has the right action but wrong time. "Immediately initiate corrective action to return the loop to operable" is a Mode 4 (3.4.1.3) action; "suspend operations involving boron concentration reduction" is a Mode 3 (3.4.1.2) action when no loop is in operation.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q77</div>
+Mode 3 RCP trip with rod control de-energized (3 of 4 RTB/RTBBs open even with RDMG set in operation and a single RTB shut): LCO 3.4.1.2 requires <span class="hi-exam">two operable RC loops</span> with <span class="hi-exam">one loop in operation</span>. With four RCPs operable initially, the trip of a single RCP <span class="hi-exam">does not require any action — no cooldown to Mode 4 required</span>. Bases for required loop operation: <span class="hi-exam">"ensure mixing, prevent stratification, and produce gradual reactivity changes during boron concentration reductions in the RCS"</span> (NOT single failure criteria, which addresses minimum required loops in OPERATION).
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 Sim-d</div>
 RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <span class="hi-exam">low seal flow across #2 seal or excessive #3 seal flow</span>. Key check: if standpipe low AND seal leakoff flow alarm together → go to AB.RCP-0001. If standpipe low ONLY → fill: open <span class="hi-exam">2WR80 (PW to CONTMT STOP V)</span> on 2CC2, then <span class="hi-exam">21WR62 (Standpipe Supply Valve)</span> on 21 RCP bezel. When hi level alarm, close all and stop PW pump.
@@ -221,7 +226,7 @@ RCP shaft shear at 25% power — thermodynamic effects on the affected loop: wit
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
-- Related exam questions: [[2016 Q6]], [[2016 Q21]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
+- Related exam questions: [[2016 Q6]], [[2016 Q21]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2016 Q77]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
 - Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

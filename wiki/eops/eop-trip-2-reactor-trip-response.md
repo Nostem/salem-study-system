@@ -39,6 +39,16 @@ EOP-TRIP-2 step 3 — total AFW flow check after Rx trip: if total AFW flow is &
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q76</div>
+After exit from EOP-TRIP-1 with all AFW pumps failed/inhibited and SPDS indicating Heat Sink Red Path, the next CRS action is to <span class="hi-exam">stay in EOP-TRIP-2 step 3 to establish AFW flow &gt;22E4 lbm/hr</span> (start 11–13 AFW pumps as necessary, including <span class="hi-exam">defeating the Pressure Override circuit</span>) — NOT immediately transition to FRHS-1 on SPDS alone. Per CFST procedure: <span class="hi-trap">"SPDS is not designed to be used as a primary indication, and no actions should be based upon SPDS indications without verification of the primary indications, which are the installed Control Room 1E instruments."</span> The Main Feedwater step in EOP-TRIP-2 is AFTER the AFW step.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q78</div>
+At 4% power awaiting Mode 1 entry, an automatic Rx trip signal received with all CR trip attempts failed: Rx is not confirmed tripped <span class="hi-exam">just because power is initially &lt;5%</span> — Rx trip confirmation also requires <span class="hi-exam">negative SUR and power lowering</span>. The crew remains in EOP-TRIP-1 / EOP-TRIP-2 with manual rod insertion, then enters <span class="hi-exam">EOP-FRSM-1</span> (the EOP network including FRPs is in effect in <span class="hi-exam">Modes 1–3</span>) and starts both MDAFW pumps — FRSM-1 specifically checks <span class="hi-exam">AFW flow</span> (not total feed flow), so MDAFW pumps are started even with Main Feedwater still flowing.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q52</div>
 On an uncomplicated manual Rx trip, EOP-TRIP-2 conditions allow steam dumps to <span class="hi-exam">modulate to control Tavg at ~547°F</span> — RCS temperature does not reach the P-12 setpoint of 543°F. Over-cooling protection is provided by the <span class="hi-exam">Feedwater Interlock (3/4 Tavgs &lt;554°F + Rx trip)</span>, which closes the BF19s and BF40 Feed Reg Valves. Feedwater Isolation does NOT actuate on an uncomplicated trip (no SI, no SG NR &gt;67%).
 </div>
@@ -77,7 +87,7 @@ Transitioned from EOP-TRIP-1 following reactor trip on 22 RCP seal failure (no S
 
 - Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]], [[Excore NIs]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
-- Related exam questions: [[2016 Q8]], [[2016 Q40]], [[2016 Q51]], [[2016 Q52]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
+- Related exam questions: [[2016 Q8]], [[2016 Q40]], [[2016 Q51]], [[2016 Q52]], [[2016 Q76]], [[2016 Q78]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

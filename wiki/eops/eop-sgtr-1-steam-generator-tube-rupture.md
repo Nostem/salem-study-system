@@ -65,11 +65,16 @@ EOP-SGTR-1 entered from EOP-TRIP-1 after 24 SG tube rupture (650 gpm). Isolation
 SI termination during SGTR-1: the reason ECCS flow is terminated is to <span class="hi-exam">prevent overfill of the ruptured SG</span> (not the pressurizer). CAS for reestablishing ECCS flow: <span class="hi-exam">PZR level cannot be maintained &ge; 11% OR Subcooling &le; 0&deg;F</span>. The logic is <span class="hi-exam">OR</span> — either condition triggers ECCS restart. <span class="hi-trap">Trap: candidates may confuse overfill concern (it is the SG, not the PZR) or incorrectly believe ONLY PZR level (without the subcooling criterion) triggers ECCS restart.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q79</div>
+Ruptured SG goes water solid before SI is terminated (after RCS cooled to Target Temp and depressurized to restore inventory): the procedure-in-effect (SGTR-1) governs — <span class="hi-exam">continue in SGTR-1, terminate SI, and establish normal charging/letdown to stop primary-to-secondary leakage</span>. <span class="hi-trap">Trap C/D: EOP-FRHS-3 (Response to SG High Level) is a Yellow Path FRP that may be entered at CRS discretion, but its Step 10.7 checks for SGTR — and would kick back to the SGTR series in effect. FRHS-3 does not address minimizing spread of secondary contamination (that is in the SGTR series), and FRHS-3 only sets affected SG MS10 to <span class="hi-exam">1045 psig</span> (not manual shut), which would already have been done during AB.SG or SGTR-1.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Pressurizer & PRT]], [[Main Steam]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]]
-- Related exam questions: [[2016 Q4]], [[2016 Q15]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-2 — Post SGTR Cooldown]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]], [[EOP-FRHS-3 — Response to Steam Generator High Level]]
+- Related exam questions: [[2016 Q4]], [[2016 Q15]], [[2016 Q79]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
 - Related JPMs: [[2019 JPM SRO-A5]], [[2019 JPM Sim-c]], [[2020 JPM Sim-g]]
 - Related scenarios: [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
