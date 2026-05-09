@@ -1,7 +1,7 @@
 ---
 title: "2018 Q46 — Control Room Ventilation Rad Monitor"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q46

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q69 — SG Tube Leak Subcooling Calculation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q69

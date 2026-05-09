@@ -1,7 +1,7 @@
 ---
 title: "2018 Q13 — Containment Spray NaOH Additive"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q13

@@ -1,7 +1,7 @@
 ---
 title: "2020 Q78 — CCW Abnormality RCP Bearing Temperature Time Limit"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q78

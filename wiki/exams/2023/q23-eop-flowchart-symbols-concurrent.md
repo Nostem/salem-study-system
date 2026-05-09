@@ -1,7 +1,7 @@
 ---
 title: "2023 Q23 — EOP Flowchart Symbols / Concurrent Step"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q23

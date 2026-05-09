@@ -1,7 +1,7 @@
 ---
 title: "2019 Q62 — 500 KV Line Operability During Abnormal Grid"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q62

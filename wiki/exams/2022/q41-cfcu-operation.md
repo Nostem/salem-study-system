@@ -1,7 +1,7 @@
 ---
 title: "2022 Q41 — CFCU High/Low Speed SW Flow"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q41

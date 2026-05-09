@@ -1,7 +1,7 @@
 ---
 title: "2018 Q12 — Containment Cooling DBA Configurations"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q12

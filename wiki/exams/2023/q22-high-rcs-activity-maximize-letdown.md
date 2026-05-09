@@ -1,7 +1,7 @@
 ---
 title: "2023 Q22 — High RCS Activity / Maximize Letdown Flow"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q22

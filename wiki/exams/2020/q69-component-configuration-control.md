@@ -1,7 +1,7 @@
 ---
 title: "2020 Q69 — Component Configuration Control / TSAS Positioning"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q69

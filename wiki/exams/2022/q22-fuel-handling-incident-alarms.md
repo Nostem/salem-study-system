@@ -1,7 +1,7 @@
 ---
 title: "2022 Q22 — Fuel Handling Incident Alarms"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q22

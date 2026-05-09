@@ -1,7 +1,7 @@
 ---
 title: "2023 Q17 — Loss of Emergency Recirc / Upper Head Voiding"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q17

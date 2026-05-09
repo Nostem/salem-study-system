@@ -1,7 +1,7 @@
 ---
 title: "2019 Q77 — LOCA-1 RWST Lo Transfer to Cold Leg Recirc"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

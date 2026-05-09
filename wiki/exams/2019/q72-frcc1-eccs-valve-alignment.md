@@ -1,7 +1,7 @@
 ---
 title: "2019 Q72 — FRCC-1 ECCS Valve Alignment"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q72

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q40 — Steam Dump Bypass Valve Failure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q40

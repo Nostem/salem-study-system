@@ -1,7 +1,7 @@
 ---
 title: "2022 Q57 — IR NIS Channel Failure and P-10 Permissive"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q57

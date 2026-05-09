@@ -1,7 +1,7 @@
 ---
 title: "2023 Q64 — SGFP Trip / Turbine Runback / DEHC / 2CN47"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q64

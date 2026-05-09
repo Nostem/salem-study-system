@@ -1,7 +1,7 @@
 ---
 title: "2020 Q67 — Shift Turnover Pre/Post Relief Actions"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q67

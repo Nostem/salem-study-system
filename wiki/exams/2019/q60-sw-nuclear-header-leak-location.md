@@ -1,7 +1,7 @@
 ---
 title: "2019 Q60 — SW Nuclear Header Leak Location"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q60

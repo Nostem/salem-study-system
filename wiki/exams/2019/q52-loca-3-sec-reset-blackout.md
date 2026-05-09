@@ -1,7 +1,7 @@
 ---
 title: "2019 Q52 — LOCA-3 SEC Reset and Blackout Loading"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q52

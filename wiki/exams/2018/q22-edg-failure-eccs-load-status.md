@@ -1,7 +1,7 @@
 ---
 title: "2018 Q22 — EDG Failure / ECCS Load Status"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q22

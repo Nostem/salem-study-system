@@ -1,7 +1,7 @@
 ---
 title: "2020 Q73 — Emergency Dose Extension at ALERT"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q73

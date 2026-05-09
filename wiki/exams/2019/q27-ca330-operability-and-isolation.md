@@ -1,7 +1,7 @@
 ---
 title: "2019 Q27 — CA330 Operability and Isolation Setpoint"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q27

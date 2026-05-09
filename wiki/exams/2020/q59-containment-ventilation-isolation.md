@@ -1,7 +1,7 @@
 ---
 title: "2020 Q59 — Containment Ventilation Isolation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q59

@@ -1,7 +1,7 @@
 ---
 title: "2022 Q28 — RCP #2 Seal Design"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q28

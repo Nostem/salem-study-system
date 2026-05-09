@@ -1,7 +1,7 @@
 ---
 title: "2018 Q70 — LOCA-2 T-COLD Cooldown Rate and BYPASS TAVG Pushbuttons"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q70

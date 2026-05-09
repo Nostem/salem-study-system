@@ -1,7 +1,7 @@
 ---
 title: "2023 Q14 — Control Air / PORV Accumulators and Spray Valves"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q14

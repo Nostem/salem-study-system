@@ -1,7 +1,7 @@
 ---
 title: "2022 Q31 — RHR HX Outlet / Bypass Valve Failure on Loss of VIB"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q31

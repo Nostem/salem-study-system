@@ -1,7 +1,7 @@
 ---
 title: "2018 Q52 — CVCS Charging Line Leak"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q52

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q90 — DC Battery Cell Voltage LCO 3.8.2.3"
 category: exams
-status: draft
+status: verified
 reference: yes
 type: SRO
 aliases:

@@ -1,7 +1,7 @@
 ---
 title: "2023 Q61 — Liquid Radwaste Release / CW Circulators"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q61

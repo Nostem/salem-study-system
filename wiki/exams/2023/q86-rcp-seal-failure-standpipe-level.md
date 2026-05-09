@@ -1,7 +1,7 @@
 ---
 title: "2023 Q86 — RCP Seal Failure / Standpipe Level"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q86

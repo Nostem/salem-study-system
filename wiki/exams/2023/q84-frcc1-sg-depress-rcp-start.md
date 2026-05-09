@@ -1,7 +1,7 @@
 ---
 title: "2023 Q84 — EOP-FRCC-1 SG Depressurization / RCP Start"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q84

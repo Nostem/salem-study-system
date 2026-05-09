@@ -1,7 +1,7 @@
 ---
 title: "2022 Q55 — CFCU SEC Mode 1 SI Response"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q55

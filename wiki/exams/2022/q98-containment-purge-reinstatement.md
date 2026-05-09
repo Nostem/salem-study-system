@@ -1,7 +1,7 @@
 ---
 title: "2022 Q98 — Containment Purge Reinstatement"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q98

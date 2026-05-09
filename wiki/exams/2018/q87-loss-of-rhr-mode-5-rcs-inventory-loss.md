@@ -1,7 +1,7 @@
 ---
 title: "2018 Q87 — Loss of RHR in Mode 5 / RCS Inventory Loss"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

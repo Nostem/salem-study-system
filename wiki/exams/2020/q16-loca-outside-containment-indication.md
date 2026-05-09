@@ -1,7 +1,7 @@
 ---
 title: "2020 Q16 — LOCA Outside Containment Indication"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q16

@@ -1,7 +1,7 @@
 ---
 title: "2020 Q52 — SW Nuclear Header Leak EDG/CFCU Supply"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q52

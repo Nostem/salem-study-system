@@ -1,7 +1,7 @@
 ---
 title: "2019 Q92 — Loss of Condenser Vacuum Turbine Trip"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q92

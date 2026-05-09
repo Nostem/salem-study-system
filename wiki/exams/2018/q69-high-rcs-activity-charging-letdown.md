@@ -1,7 +1,7 @@
 ---
 title: "2018 Q69 — High RCS Activity Charging Pump Transfer and Letdown Maximization"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q69

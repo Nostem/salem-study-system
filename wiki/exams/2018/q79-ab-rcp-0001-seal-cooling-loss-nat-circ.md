@@ -1,7 +1,7 @@
 ---
 title: "2018 Q79 — AB.RCP-0001 Seal Cooling Loss and Natural Circulation"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

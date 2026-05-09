@@ -1,7 +1,7 @@
 ---
 title: "2018 Q10 — RPS PZR Pressure Channel Failure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q10

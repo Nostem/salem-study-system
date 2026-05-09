@@ -1,7 +1,7 @@
 ---
 title: "2018 Q36 — Condenser Vacuum / Seal Water Temperature"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q36

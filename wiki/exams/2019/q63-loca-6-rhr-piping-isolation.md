@@ -1,7 +1,7 @@
 ---
 title: "2019 Q63 — LOCA-6 RHR Piping Concern and Leak Isolation"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q63

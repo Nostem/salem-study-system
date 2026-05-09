@@ -1,7 +1,7 @@
 ---
 title: "2019 Q64 — FRHS-1 Bleed and Feed ECCS Pump Requirement"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q64

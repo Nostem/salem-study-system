@@ -1,7 +1,7 @@
 ---
 title: "2022 Q42 — Containment Spray Pump Start with SEC"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q42

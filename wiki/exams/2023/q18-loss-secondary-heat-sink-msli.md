@@ -1,7 +1,7 @@
 ---
 title: "2023 Q18 — Loss of Secondary Heat Sink / MSLI on High Steam Flow"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q18

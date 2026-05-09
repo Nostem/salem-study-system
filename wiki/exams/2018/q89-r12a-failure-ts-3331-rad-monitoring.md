@@ -1,7 +1,7 @@
 ---
 title: "2018 Q89 — R12A Failure / TS 3.3.3.1 Radiation Monitoring"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: yes
 aliases:

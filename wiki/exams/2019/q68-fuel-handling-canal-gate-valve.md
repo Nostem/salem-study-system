@@ -1,7 +1,7 @@
 ---
 title: "2019 Q68 — Fuel Handling Incident Canal Gate Valve"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q68

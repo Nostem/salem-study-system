@@ -1,7 +1,7 @@
 ---
 title: "2018 Q96 — SR 4.0.3 Missed Surveillance Delay"
 category: exams
-status: draft
+status: verified
 reference: no
 type: SRO
 aliases:

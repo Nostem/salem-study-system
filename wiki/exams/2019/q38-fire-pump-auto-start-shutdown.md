@@ -1,7 +1,7 @@
 ---
 title: "2019 Q38 — Fire Pump Auto Start and Shutdown"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q38

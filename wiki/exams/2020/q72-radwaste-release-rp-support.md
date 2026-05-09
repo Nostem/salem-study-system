@@ -1,7 +1,7 @@
 ---
 title: "2020 Q72 — Radwaste Release RP Support Requirement"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q72

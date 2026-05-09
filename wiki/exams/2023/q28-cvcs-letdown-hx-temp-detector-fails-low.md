@@ -1,7 +1,7 @@
 ---
 title: "2023 Q28 — CVCS Letdown HX Temp Detector Fails Low / Boron Release"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q28

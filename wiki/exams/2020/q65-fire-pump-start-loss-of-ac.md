@@ -1,7 +1,7 @@
 ---
 title: "2020 Q65 — Fire Pump Start on Loss of AC"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q65

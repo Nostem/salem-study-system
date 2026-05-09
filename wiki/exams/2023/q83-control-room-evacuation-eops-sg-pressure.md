@@ -1,7 +1,7 @@
 ---
 title: "2023 Q83 — Control Room Evacuation / EOPs and SG Pressure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q83

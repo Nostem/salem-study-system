@@ -1,7 +1,7 @@
 ---
 title: "2022 Q14 — SEC Mode 2 SI Pump Status"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q14

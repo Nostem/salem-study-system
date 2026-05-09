@@ -1,7 +1,7 @@
 ---
 title: "2022 Q2 — PZR Safety Valve Tailpipe Temperature"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q02

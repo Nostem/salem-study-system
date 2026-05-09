@@ -1,7 +1,7 @@
 ---
 title: "2020 Q3 — SBLOCA Subcooling / Steam Tables"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q3

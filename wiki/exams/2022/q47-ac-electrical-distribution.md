@@ -1,7 +1,7 @@
 ---
 title: "2022 Q47 — EDG Response to Loss of Offsite Power During Surveillance"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q47

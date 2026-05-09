@@ -1,7 +1,7 @@
 ---
 title: "2022 Q35 — CCW Surge Tank Level Low / AB.CC-0001 Actions"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q35

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q32 — Containment Internal Pressure / TS 3.6.1.4"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q32

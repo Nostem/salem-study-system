@@ -1,7 +1,7 @@
 ---
 title: "2019 Q12 — ECCS Pump Power Supplies"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q12

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q10 — PORV Constant Enthalpy Expansion"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q10

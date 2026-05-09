@@ -1,7 +1,7 @@
 ---
 title: "2023 Q1 — RCS Low Flow / P-7 and P-8 Logic"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q1

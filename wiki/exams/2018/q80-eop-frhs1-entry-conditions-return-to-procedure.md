@@ -1,7 +1,7 @@
 ---
 title: "2018 Q80 — EOP-FRHS-1 Entry Conditions and Return to Procedure"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

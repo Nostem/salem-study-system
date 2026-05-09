@@ -1,7 +1,7 @@
 ---
 title: "2023 Q50 — CFCU SW Flow in High vs Low Speed"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q50

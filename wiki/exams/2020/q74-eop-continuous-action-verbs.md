@@ -1,7 +1,7 @@
 ---
 title: "2020 Q74 — EOP Continuous Action Verbs"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q74

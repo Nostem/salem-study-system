@@ -1,7 +1,7 @@
 ---
 title: "2018 Q60 — LOOP / EDG Output Breaker / RHR SEC Mode"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q60

@@ -1,7 +1,7 @@
 ---
 title: "2019 Q20 — AFW Pressure Override Runout Protection"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q20

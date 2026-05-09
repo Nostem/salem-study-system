@@ -1,7 +1,7 @@
 ---
 title: "2020 Q46 — AFW Pressure Override / SG Levels"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q46

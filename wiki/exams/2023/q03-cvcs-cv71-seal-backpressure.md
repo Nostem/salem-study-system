@@ -1,7 +1,7 @@
 ---
 title: "2023 Q3 — CVCS / CV71 Seal Backpressure Control"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q3

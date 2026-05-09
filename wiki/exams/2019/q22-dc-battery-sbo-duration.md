@@ -1,7 +1,7 @@
 ---
 title: "2019 Q22 — DC Battery SBO Duration"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q22

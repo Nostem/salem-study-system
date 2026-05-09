@@ -1,7 +1,7 @@
 ---
 title: "2018 Q67 — Control Room Evacuation Emergency Boration and CV55 Location"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q67

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q83 — Unplanned Gaseous Release / Gas Decay Tank Rad Monitor"
 category: exams
-status: draft
+status: verified
 type: SRO
 reference: no
 aliases:

@@ -1,7 +1,7 @@
 ---
 title: "2022 Q20 — Misaligned Rod Recovery"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q20

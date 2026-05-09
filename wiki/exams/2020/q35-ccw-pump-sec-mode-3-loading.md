@@ -1,7 +1,7 @@
 ---
 title: "2020 Q35 — CCW Pump Status After SEC Mode 3 Loading"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q35

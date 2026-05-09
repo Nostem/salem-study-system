@@ -1,7 +1,7 @@
 ---
 title: "2020 Q14 — Service Water Bay Leak and Tech Spec"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q14

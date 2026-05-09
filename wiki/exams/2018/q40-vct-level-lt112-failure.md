@@ -1,7 +1,7 @@
 ---
 title: "2018 Q40 — VCT Level / LT-112 Failure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q40

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q57 — SGTR SI Termination / ECCS Reestablishment"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q57

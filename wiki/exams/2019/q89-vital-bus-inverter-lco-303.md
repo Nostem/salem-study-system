@@ -1,7 +1,7 @@
 ---
 title: "2019 Q89 — Vital Bus Inverter LCO 3.0.3"
 category: exams
-status: draft
+status: verified
 reference: yes
 type: SRO
 aliases:

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q65 — LOCA-5 RCS Depressurization and Upper Head Voiding"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q65

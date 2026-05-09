@@ -1,7 +1,7 @@
 ---
 title: "2018 Q33 — SFP Routine Makeup Water Sources"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q33

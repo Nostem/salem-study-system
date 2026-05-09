@@ -1,7 +1,7 @@
 ---
 title: "2022 Q39 — Containment Pressure Channel Failures / SI and Phase B Logic"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q39

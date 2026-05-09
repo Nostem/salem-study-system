@@ -1,7 +1,7 @@
 ---
 title: "2019 Q14 — Containment Spray Reset"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q14

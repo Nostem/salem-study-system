@@ -1,7 +1,7 @@
 ---
 title: "2023 Q49 — SGBD Radiation Monitor Check Source"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q49

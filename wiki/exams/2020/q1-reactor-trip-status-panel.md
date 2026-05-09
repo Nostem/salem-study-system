@@ -1,7 +1,7 @@
 ---
 title: "2020 Q1 — Reactor Trip Status Panel"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q1

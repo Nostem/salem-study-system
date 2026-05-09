@@ -1,7 +1,7 @@
 ---
 title: "2022 Q69 — OTSC Change to Intent"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q69

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q19 — 4KV SPT Failure and Bus Transfer"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q19

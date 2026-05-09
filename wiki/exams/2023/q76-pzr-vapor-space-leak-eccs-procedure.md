@@ -1,7 +1,7 @@
 ---
 title: "2023 Q76 — PZR Vapor Space Leak ECCS Status and Procedure Transition"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q76

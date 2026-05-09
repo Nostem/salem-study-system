@@ -1,7 +1,7 @@
 ---
 title: "2020 Q25 — LOCA Outside Containment from TRIP-3"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q25

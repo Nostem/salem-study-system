@@ -1,7 +1,7 @@
 ---
 title: "2022 Q16 — SW Valve Room Leak Source"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q16

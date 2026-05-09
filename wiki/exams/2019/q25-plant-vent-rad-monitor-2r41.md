@@ -1,7 +1,7 @@
 ---
 title: "2019 Q25 — Plant Vent Radiation Monitor 2R41"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q25

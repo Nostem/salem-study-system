@@ -1,7 +1,7 @@
 ---
 title: "2020 Q77 — Loss of Charging Pump Tech Spec Entries"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q77

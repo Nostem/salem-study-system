@@ -1,7 +1,7 @@
 ---
 title: "2019 Q41 — Troubleshooting Conduct"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q41

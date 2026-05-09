@@ -1,7 +1,7 @@
 ---
 title: "2022 Q83 — LBLOCA Emergency Classification"
 category: exams
-status: draft
+status: verified
 reference: yes
 aliases:
   - 2022 Q83

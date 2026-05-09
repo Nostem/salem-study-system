@@ -1,7 +1,7 @@
 ---
 title: "2018 Q4 — Cold Leg Recirculation with SJ44 Failure"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q4

@@ -1,7 +1,7 @@
 ---
 title: "2023 Q70 — Xenon-135 / Reactor Theory Following Trip"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q70

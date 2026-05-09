@@ -1,7 +1,7 @@
 ---
 title: "2020 Q36 — PZR Pressure Channel Fails Low"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q36

@@ -1,7 +1,7 @@
 ---
 title: "2018 Q2 — Mixed Bed Demineralizer Malfunction"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q2

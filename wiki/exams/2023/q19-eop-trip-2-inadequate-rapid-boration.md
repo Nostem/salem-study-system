@@ -1,7 +1,7 @@
 ---
 title: "2023 Q19 — EOP-TRIP-2 / Inadequate Rapid Boration Flow"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q19

@@ -1,7 +1,7 @@
 ---
 title: "2023 Q5 — PZR Pressure Channel Fails High / OT Delta-T Effect"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q5

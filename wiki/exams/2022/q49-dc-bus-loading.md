@@ -1,7 +1,7 @@
 ---
 title: "2022 Q49 — 125 VDC Battery Charger Transfer"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q49

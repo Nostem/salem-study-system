@@ -1,7 +1,7 @@
 ---
 title: "2019 Q42 — MSSV Setpoints and LCO 3.7.1.1 Bases"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2019 Q42

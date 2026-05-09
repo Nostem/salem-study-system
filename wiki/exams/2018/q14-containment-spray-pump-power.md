@@ -1,7 +1,7 @@
 ---
 title: "2018 Q14 — Containment Spray Pump Power Supplies"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2018 Q14

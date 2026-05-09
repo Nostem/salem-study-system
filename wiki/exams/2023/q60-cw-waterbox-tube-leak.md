@@ -1,7 +1,7 @@
 ---
 title: "2023 Q60 — CW Waterbox Tube Leak / Condensate Alarms"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2023 Q60

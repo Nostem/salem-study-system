@@ -1,7 +1,7 @@
 ---
 title: "2022 Q67 — Shift Turnover Restrictions"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2022 Q67

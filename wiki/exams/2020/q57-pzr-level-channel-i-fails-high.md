@@ -1,7 +1,7 @@
 ---
 title: "2020 Q57 — PZR Level Channel I Fails High"
 category: exams
-status: draft
+status: verified
 reference: no
 aliases:
   - 2020 Q57
