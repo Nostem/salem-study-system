@@ -11,7 +11,7 @@ aliases:
 
 ## Overview
 
-- **Exam:** SALEM 2020 NRC Exam — 18-01 ILOT (Op-Test 19-01)
+- **Exam:** SALEM 2020 NRC Exam — 19-01 ILOT
 - **Admin JPMs (RO):** 4
 - **Admin JPMs (SRO):** 5
 - **Simulator JPMs:** 8

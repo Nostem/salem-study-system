@@ -10,7 +10,7 @@ aliases:
 
 ## Overview
 
-- **Exam:** SALEM 2020 NRC Exam (18-01 ILOT)
+- **Exam:** SALEM 2020 NRC Exam (19-01 ILOT)
 - **RO Questions:** 75
 - **SRO-Only Questions:** 25
 
