@@ -85,6 +85,11 @@ Confirms 2R32A behavior: with 2R32A failed high, <span class="hi-exam">ONLY cran
 2R9 (Fuel Storage Area Monitor) alarm response: <span class="hi-exam">BOTH Fuel Handling Area Exhaust Fans receive an auto start signal</span> (standby fan starts). <span class="hi-exam">21 HEPA ONLY Filter Unit ISOLATES</span> and <span class="hi-exam">22 HEPA PLUS CHAR filter unit automatically aligns</span>. After 2R9 alarm, both exhaust fans are running but only the charcoal filter unit is in service. <span class="hi-trap">Trap: 2R9 does NOT keep both HEPA units in service — the HEPA ONLY unit isolates and the HEPA PLUS CHAR unit takes over.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q88</div>
+2R5 setpoints (FHB radiation monitor — Spent Fuel Pool area): <span class="hi-exam">alarm <span class="val-alarm">11 mR/hr</span>, warning <span class="val-alarm">7 mR/hr</span></span>. On a dropped fuel assembly with 2R5 stabilized at 25 mR/hr (above alarm), FHB ventilation <span class="hi-exam">automatically swaps to the Charcoal Filter and starts BOTH FHB Exhaust Fans</span> (normal lineup is single Supply Fan + both Exhaust Fans). <span class="hi-trap">2R5 does NOT lock out crane motion — only the 2R32A monitor on the crane itself causes the &quot;all crane motion except downward&quot; lockout.</span>
+</div>
+
 ### Containment High Range Monitors (R44A/B)
 
 <div class="callout callout-exam">
@@ -203,4 +208,5 @@ Process radiation monitor Source Check duration: <span class="hi-exam">activate 
   - [[2016 Q59]] — 21 CVCS MT release / 2R18 ALARM setpoint 6.82E5 cps auto-shuts 2WL51 / NCO shuts remotely if auto-close fails
   - [[2016 Q60]] — Process radiation monitor source check ≤ 30 seconds / prevents solenoid overheating
   - [[2016 Q68]] — Containment Rad Monitors (2R12A) NOT required operable for Mode 6 / Fuel Movement / Core Alts
+  - [[2016 Q88]] — 2R5 alarm 11 mR/hr / dropped fuel: auto swap FHB vent to charcoal + start both Exhaust Fans / 2R5 does NOT lock out crane
 - Related JPMs: [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]]

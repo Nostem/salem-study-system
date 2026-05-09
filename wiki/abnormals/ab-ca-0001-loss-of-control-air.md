@@ -98,10 +98,15 @@ Number 1 ECAC provides air to 1B and 2B CA Headers ONLY due to <span class="hi-e
 BF19 (SG FW CONT V) valve failure position on loss of control air: <span class="hi-exam">BF19s fail CLOSED</span>. SG levels are expected to <span class="hi-exam">LOWER</span> until local control of BF19s can be established. If the crew manually trips the reactor because SG levels cannot be maintained, the crew performs <span class="hi-exam">2-EOP-TRIP-1 AND S2.OP-AB.CA-0001 concurrently</span> (CAS directs concurrent performance). <span class="hi-trap">Trap: some ABs (e.g., AB.COND-0001) direct performing EOP-TRIP-1 ONLY after a reactor trip. AB.CA-0001 specifically directs concurrent performance — do not assume all ABs have the same CAS.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q90</div>
+Total loss of Control Air at 7% power during normal power ascension (after manual reactor trip): per AB.CA-0001, at 7% Main Feed has already been established and AFW secured per the IOP. The rapid loss of CA causes <span class="hi-exam">BF19s/40s to fail SHUT</span> (loss of feed flow from the operating SGFP) and <span class="hi-exam">2MS132 (23 AFW Turbine Steam Inlet Valve) to fail OPEN</span>, starting the <span class="hi-exam">23 AFW (TDAFW) pump operating at maximum speed</span>. AB.CA-0001 directs a Field Operator to <span class="hi-exam">locally establish manual speed control of the 23 AFW pump to prevent 23 AFW pump runout and SG overfill</span>. The Feedwater Interlock actuates with the reactor tripped and Tavg low setpoint reached. <span class="hi-trap">MDAFW pump distractors are plausible if the candidate doesn't know at what power the IOP directs swapping AFW to Main Feed (so &quot;MDAFW pumps previously in service&quot; is wrong at 7% post-power-ascension). Pressure Override does not preclude using 21/22 AFW pumps as feed supply — they are simply not the active path here.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]]
-- Related exam questions: [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
+- Related exam questions: [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
 - Related JPMs: [[2020 JPM IP-j]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

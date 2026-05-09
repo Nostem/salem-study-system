@@ -79,6 +79,13 @@ EOP-LOCA-2 CAS ECCS restart criteria (after SI/Charging Pump reductions): the cr
 EOP-LOCA-2 POST Step 22 Charging Pump Reduction with 2 SI Pumps running, 1 RCP running, and NORMAL containment conditions (pressure < 4.0 psig): required subcooling from Table C is <span class="hi-exam">38&deg;F</span>. If subcooling requirement met AND PZR level > <span class="hi-exam">25% (33% adverse)</span>, the next action is to <span class="hi-exam">stop a Charging Pump</span>. Step 22.2 checks if at least two T-Hots are less than <span class="hi-exam">365&deg;F</span> — this step is only reached if subcooling is NOT met. <span class="hi-trap">Trap: four different paths through Step 22 depending on subcooling status, T-Hot status, and PZR level status. Must evaluate in order: 22.1 → 22.4 (if subcooling met), or 22.1 → 22.2 → 22.3/22.4 (if subcooling not met).</span>
 </div>
 
+### Step 35 — Accumulator Isolation
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q87</div>
+EOP-LOCA-2 Step 35.3 accumulator isolation: <span class="hi-exam">accumulators will be isolated when RCS T-Hots are &lt;375&deg;F</span>; otherwise the step is bypassed. <span class="hi-trap">Accumulators WILL be isolated when RCS pressure is &lt;1000 psig, BUT ONLY after IOP-6 has been entered, the initiation of which is performed later in LOCA-2 (Step 42) — so &quot;&lt;1000 psig&quot; alone is not the LOCA-2 isolation criterion. PZR level 11% (19% adverse) and SI termination status are not the accumulator isolation criteria.</span> SBLOCA scenario: PORV depressurization fails, no subcooling, charging through BIT in service — the &lt;375&deg;F T-Hot criterion is the gating condition.
+</div>
+
 ### Step 19 — RCP Status / Step 19.1 RNO
 
 <div class="callout callout-exam">
@@ -89,6 +96,6 @@ Step 19 RCP Status with <span class="hi-exam">RCS subcooling NOT &gt;0&deg;F</sp
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[CVCS]], [[Pressurizer & PRT]]
-- Related exam questions: [[2016 Q82]], [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]]
+- Related exam questions: [[2016 Q82]], [[2016 Q87]], [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]]
 - Related JPMs: [[2023 JPM Sim-c]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

@@ -56,10 +56,17 @@ SFP Low Level alarm setpoint: <span class="hi-exam val-alarm">128 feet, 0 inches
 TS 3.9.12 requires the Fuel Handling Ventilation System OPERABLE (2 exhaust fans + 1 supply fan operable AND operating; capable of slightly negative FHB pressure) during movement of irradiated fuel within the storage pool. Loss of air to the 21 FHB Supply Fan Inlet Damper makes the supply fan <span class="hi-exam">inoperable even though it remains running</span> (damper interlocked open with fan; fails closed on loss of air). Required action: <span class="hi-exam">suspend all operations involving movement of fuel within the storage pool</span> until FHV is restored to operable.
 </div>
 
+## Dropped Fuel Assembly Response
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q88</div>
+Dropped fuel assembly in Unit 2 SFP with gas bubbles observed and 2R5 stabilized at 25 mR/hr: <span class="hi-exam">2R5 (FHB area radiation monitor) alarm setpoint <span class="val-alarm">11 mR/hr</span> (warning <span class="val-alarm">7 mR/hr</span>) automatically swaps FHB ventilation to the Charcoal Filter and starts BOTH FHB Exhaust Fans</span>. Normal FHB lineup is single Supply Fan running and BOTH Exhaust Fans running. Per S2.OP-AB.FUEL-0001, FHB Watertight Door is kept closed except for normal personnel passage. <span class="hi-trap">2R5 does NOT lock out crane motion — only 2R32A (on the crane itself) interlocks crane motion. The FHB Evacuation alarm actuates but only non-essential personnel are evacuated; required actions must be performed prior to ALL personnel evacuation.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]], [[Radiation Monitoring]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
-- Related exam questions: [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]]
+- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.FUEL-0001 — Fuel Handling Incident]]
+- Related exam questions: [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

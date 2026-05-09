@@ -173,11 +173,16 @@ On trip of both SGFPs, only the <span class="hi-exam">MDAFW pumps auto-start</sp
 SGFP suction pressure trip setpoints: <span class="hi-exam">SGFP trips when suction pressure &lt; <span class="val-trip">215 psig</span> for <span class="val-trip">10 seconds</span></span> (time-delayed trip). Instantaneous SGFP trip on low suction pressure at <span class="hi-exam">&lt; <span class="val-trip">190 psig</span></span> (no time delay). At 200 psig (between 190 and 215), the 10-second delay timer applies. After SGFP trip at >70% power, turbine runback to <span class="hi-exam"><span class="val-alarm">66%</span></span>. <span class="hi-trap">Trap: 50% is incorrect — each SGFP does NOT provide exactly 50% total flow. The 66% runback target confirms the SGFPs are not 50/50 load-shared.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q89</div>
+Single Condensate pump trip with NO HDPs running and polisher in service: <span class="hi-exam">21A Condenser hotwell level RISES</span> because condensing continues even though the pump is OOS. <span class="hi-exam">21-23 CN108 (Polisher Bypass Valves) do NOT automatically open</span> on low SGFP suction pressure — operator action per AB.CN-0001 directs opening when SGFP suction lowers &lt;<span class="val-alarm">320 psig</span>. <span class="hi-exam">2CN47 (23/24/25 Heater Strings Bypass) auto-opens on a SGFP trip ONLY (not on a CP trip)</span>; in AB.CN, CN47 is directed to open AFTER CN108s, since CN108 opening is expected to restore suction pressure above the CN47 threshold. Power reduction with 2 CPs running and no HDPs running per AB.CN-0001 Att 2 = <span class="hi-exam"><span class="val-alarm">65%</span> or less</span>. <span class="hi-trap">Trap: 30% applies to a different pump configuration — not 2 CPs running with no HDP.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
-- Related exam questions: [[2016 Q48]], [[2016 Q51]], [[2016 Q52]], [[2016 Q70]], [[2016 Q76]], [[2016 Q78]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
+- Related exam questions: [[2016 Q48]], [[2016 Q51]], [[2016 Q52]], [[2016 Q70]], [[2016 Q76]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

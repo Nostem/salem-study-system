@@ -105,7 +105,7 @@ BF19 (SG FW CONT V) failure on loss of control air: <span class="hi-exam">BF19s 
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]]
 - Related procedures: [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]]
 - Related abnormals: [[AB.460-0003 — Loss of 2C 460/230V Vital Bus]]
-- Related exam questions: [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
+- Related exam questions: [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
 - Related JPMs: [[2020 JPM IP-j]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]

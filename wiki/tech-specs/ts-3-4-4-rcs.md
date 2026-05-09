@@ -413,6 +413,11 @@ In Modes 1-4, operation within the LCO limits for DOSE EQUIVALENT I-131 and DOSE
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q86</div>
+DEI-131 at 8 μCi/gm (above the 1.0 μCi/gm LCO 3.4.9 limit but below the line of graph 3.4-1): per LCO 3.4.9 Action, <span class="hi-exam">operation can continue for 48 hours, then Hot Standby with Tavg &lt;500&deg;F in 6 hours</span>. Sample taken at 1000 on March 10 → 48 hours later = 1000 March 12 → +6 hours = 1600 March 12. Bases for the action: <span class="hi-exam">ensures the resulting 2-hour dose at the Site Area Boundary will not exceed an appropriately small fraction of Part 100 limits following an SGTR accident in conjunction with an assumed primary-to-secondary leakage rate of 1 gpm</span>. <span class="hi-trap">Trap: distractors substitute "Protected Area Boundary" for the correct "Site Area Boundary." Other trap: alternate bases statement (saturation pressure of primary coolant below atmospheric release lift pressure) describes the LCO LIMIT bases, not the time-clock action bases.</span>
+</div>
+
 ---
 
 ## 3/4.4.10 — Pressure/Temperature Limits
@@ -506,5 +511,5 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

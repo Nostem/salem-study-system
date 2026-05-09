@@ -1275,3 +1275,81 @@
     ka_importance: 4.0
     type: SRO
     tier_group: "Tier 1/Group 1"
+
+  - number: 86
+    topic: "RCS specific activity DEI-131 8 uCi/gm (above 1.0 limit, below graph 3.4-1) — LCO 3.4.9 action 48 hours operate then HSB Tavg <500F in 6 hours = 1600 March 12; bases ensures 2-hour Site Area Boundary dose < small fraction of Part 100 limits per SGTR with 1 gpm primary-to-secondary leakage"
+    answer: B
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (combination of 86338 limit and 58158 bases)"
+    question_modification_method: "Concept Used"
+    systems:
+      - reactor-coolant-system
+    tech_specs:
+      - ts-3-4-4-rcs
+    ka: "002000G225 2.2.25"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 87
+    topic: "EOP-LOCA-2 Step 35.3 ECCS Accumulator isolation — Accumulators isolated when RCS Thots <375F (<1000 psig isolation occurs only after IOP-6 entry at LOCA-2 Step 42)"
+    answer: A
+    cognitive_level: "Memory"
+    source: "New"
+    question_modification_method: ""
+    systems:
+      - emergency-core-cooling-systems
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "006000A212 A2.12"
+    ka_importance: 4.8
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 88
+    topic: "Dropped fuel assembly Unit 2 SFP — 2R5 alarm at 25 mR/hr (alarm 11/warning 7) auto swaps FHB ventilation to Charcoal Filter and starts BOTH FHB Exhaust Fans; 2R5 does NOT lock out crane (only 2R32A on crane itself does); ensure FHB Watertight Door remains closed except for normal personnel passage"
+    answer: D
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (159673)"
+    question_modification_method: "Direct From Source"
+    systems:
+      - radiation-monitoring
+      - spent-fuel-pool
+      - fhv
+      - refueling
+    tech_specs: []
+    ka: "034000A201 A2.01"
+    ka_importance: 4.4
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 89
+    topic: "21 Condensate pump trip at 84% (2 CPs running, NO HDPs) — 21A Condenser hotwell level RISES; CN108s do NOT auto open; AB.CN-0001 directs opening CN108s when SGFP suction <320 psig and reducing power to 65% or less per Att 2; 2CN47 only auto-opens on SGFP trip not CP trip"
+    answer: C
+    cognitive_level: "Application"
+    source: "New"
+    question_modification_method: ""
+    systems:
+      - feedwater-and-condensate
+    tech_specs: []
+    ka: "056000A204 A2.04"
+    ka_importance: 2.8
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 90
+    topic: "Loss of Control Air at 7% post power-ascension after manual trip — 2MS132 fails OPEN starting 23 AFW (TDAFW) at max speed; FW Interlock from rx trip + low Tavg loses SGFP feed flow; AB.CA-0001 directs Field Operator to locally establish manual speed control of 23 AFW pump to prevent runout and SG overfill"
+    answer: D
+    cognitive_level: "Application"
+    source: "New"
+    question_modification_method: ""
+    systems:
+      - auxiliary-feedwater
+      - control-air
+      - main-steam
+      - feedwater-and-condensate
+    tech_specs: []
+    ka: "061000A207 A2.07"
+    ka_importance: 3.5
+    type: SRO
+    tier_group: "Tier 1/Group 1"

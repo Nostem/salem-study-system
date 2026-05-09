@@ -85,11 +85,16 @@ Condensate pump trip with polishing in service and SGFP suction pressure at 310 
 After 21 SGFP trip at 100% MOL with no operator action and no Rx trip: the <span class="hi-exam">condensate polisher trouble alarm (OHA G-44, COND POL TRBL) is EXPECTED — it locks in due to the CN108s AND the CN109 being open at the same time</span>. AB.CN-0001 covers this expected polisher trouble condition. <span class="hi-trap">UNEXPECTED in this transient is RC PRESS DEVIATION hi (Console Alarm) — the +75 psig deviation setpoint corresponds to spray valves full open, but spray valves should be shut after the load-rejection insurge and large inward rod motion. RC LOOPS TAVG-TREF DEVIATION (rods driving in due to turbine runback to 65%) and OHA G-3 EHC SYS TRBL (Loss of Feed pump Runback alarm into EHC Control and Status computer) are also expected alarms.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q89</div>
+21 Condensate pump trip at 84% power with all CPs in service, NO HDPs running, polisher in service: <span class="hi-exam">Hotwell (21A Condenser) level RISES</span> with the cond pump O/S because condensing is still occurring with the pump not running. Per AB.CN-0001 Att 2 with 2 CPs running and no HDP, <span class="hi-exam">power reduction to <span class="val-alarm">65% or less</span> is required</span>. The <span class="hi-exam">21-23 CN108s (Polisher Bypass Valves) do NOT auto-open on low suction pressure — they are directed to be opened</span> when SGFP suction pressure lowers &lt;<span class="val-alarm">320 psig</span>, which it WILL based on initial power level and pump configuration. <span class="hi-trap">2CN47 (23/24/25 Heater Strings Bypass) only auto-opens on a SGFP trip, NOT on a Cond pump trip; in AB.CN, the CN47 is directed to open AFTER the CN108s, the opening of which is expected to restore suction pressure above the point that would require CN47 opening. The 30%-or-less power reduction in distractor B/D is wrong — 65% is the AB.CN-0001 Att 2 limit for this configuration.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]], [[AFW]]
 - Related procedures: [[HU-AA-101 — Human Performance Tools and Verification Practices]]
-- Related exam questions: [[2016 Q17]], [[2018 Q58]], [[2018 Q78]], [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
+- Related exam questions: [[2016 Q17]], [[2016 Q89]], [[2018 Q58]], [[2018 Q78]], [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related JPMs: [[2022 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]

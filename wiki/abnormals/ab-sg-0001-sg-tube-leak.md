@@ -72,7 +72,7 @@ Step 3.7 — PZR level control during SG tube leak: <span class="hi-exam">reduce
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]], [[Radiation Monitoring]]
-- Related exam questions: [[2016 Q14]], [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]]
+- Related exam questions: [[2016 Q14]], [[2016 Q79]], [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]]
 - Related JPMs: [[2019 JPM SRO-A5]]
 - Related scenarios: [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]]
