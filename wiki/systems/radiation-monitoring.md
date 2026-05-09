@@ -171,6 +171,11 @@ Process radiation monitor Source Check duration: <span class="hi-exam">activate 
 2R18 (Liquid Radwaste process radiation monitor) ALARM setpoint per S2.IC-CC.RM-0028 is <span class="hi-exam">6.82E5 cps</span>. Above the setpoint, <span class="hi-exam">2R18 automatically shuts 2WL51 (Liquid Release Stop Valve)</span>. If the auto-close fails (e.g., 2WL51 still indicates OPEN with 2R18 in alarm at 10E6 cps), <span class="hi-exam">the NCO shuts 2WL51 remotely from the control room</span> per S2.OP-SO.WL-0001 Step 5.5.9 — there is no procedural provision to close 2WL51 locally.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q68</div>
+<span class="hi-exam">Containment Radiation Monitors (e.g., 2R12A) are NOT required to be operable for Mode 6 or Fuel Movement or Core Alts per Tech Specs.</span> A failure of 2R12A causing a Containment Ventilation Isolation signal does NOT by itself require suspension of fuel movement. <span class="hi-trap">Trap: a CVI signal looks like an emergency response, but the rad monitor is not Tech-Spec required for refueling, so its failure has no LCO impact on fuel movement.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]]
@@ -197,4 +202,5 @@ Process radiation monitor Source Check duration: <span class="hi-exam">activate 
   - [[2018 Q89]] — R12A failure during containment vacuum relief / TS 3.3.3.1 Table 3.3-6 / R41 alternate for purge & P/V relief
   - [[2016 Q59]] — 21 CVCS MT release / 2R18 ALARM setpoint 6.82E5 cps auto-shuts 2WL51 / NCO shuts remotely if auto-close fails
   - [[2016 Q60]] — Process radiation monitor source check ≤ 30 seconds / prevents solenoid overheating
+  - [[2016 Q68]] — Containment Rad Monitors (2R12A) NOT required operable for Mode 6 / Fuel Movement / Core Alts
 - Related JPMs: [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]]

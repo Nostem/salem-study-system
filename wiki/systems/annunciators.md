@@ -19,6 +19,11 @@ Overhead and auxiliary annunciator systems provide alarm indication for plant pa
 Annunciator window marking per OP-AA-102-103-1001 (Operator Burdens Program): <span class="hi-exam">single strand of red tape diagonally = one or more inputs inoperable</span> (reflash still works). <span class="hi-exam">Two pieces of red tape in an "X" = entire window inoperable</span>. <span class="hi-trap">Red tape is NOT used to identify maintenance testing in progress.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q66</div>
+A <span class="hi-exam">single piece of red tape diagonally across an OHA window means at least one (but not all) inputs are disabled</span> — the alarm "may not be a reliable source of information." The window can <span class="hi-exam">still alarm from an operable input</span>. The <span class="hi-exam">reflash capability is NOT defeated</span> — if a second valid input comes in with one already in, reflash will cause the alarm to annunciate. <span class="hi-trap">Trap: single tape does NOT mean the alarm is fully inoperable (that requires an "X"), does NOT mean reflash is defeated, and does NOT mean full functionality is present (the tape signifies something IS wrong).</span>
+</div>
+
 ## Power Supplies
 
 <div class="callout callout-exam">
@@ -30,5 +35,5 @@ Annunciator window marking per OP-AA-102-103-1001 (Operator Burdens Program): <s
 
 - Related systems: [[RPS/SSPS]]
 - Related procedures: [[OP-AA-102-103-1001 — Operator Burdens Program]]
-- Related exam questions: [[2016 Q56]], [[2020 Q66]]
+- Related exam questions: [[2016 Q56]], [[2016 Q66]], [[2020 Q66]]
 - Related exams: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]]

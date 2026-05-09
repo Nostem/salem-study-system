@@ -23,6 +23,11 @@ The boron concentration of the RCS, fuel storage pool, refueling canal, and refu
 
 **Surveillance:** Verify boron concentration within COLR limit per SFCP. *(Amendment No. 282)*
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q68</div>
+The <span class="hi-exam">COLR limit for refueling boron concentration is 2139 ppm</span>. A Rx Cavity reading of <span class="val-normal">2499 ppm</span> is well above the limit and does NOT require suspension of fuel movement. <span class="hi-trap">Trap: 2499 ppm is close to (but not below) the COLR limit; recognize that being above the COLR limit means the LCO is met.</span>
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.1 Boron Concentration</summary>
 <div class="callout callout-bases">
@@ -305,7 +310,7 @@ The bases for 3/4.9.10 (reactor vessel) and 3/4.9.11 (storage pool) share a comm
 
 ## Connections
 
-- Related systems: [[RHR]], [[CVCS]], [[Rx Vessel & Internals]]
-- Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
-- Related exam questions: [[2020 Q94]]
-- Related exam: [[2020 NRC Written Exam]]
+- Related systems: [[RHR]], [[CVCS]], [[Rx Vessel & Internals]], [[Refueling]]
+- Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]]
+- Related exam questions: [[2016 Q68]], [[2020 Q94]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]]

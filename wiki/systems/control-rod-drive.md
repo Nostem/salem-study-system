@@ -135,6 +135,11 @@ Loss of all CRD Vent Fans (alternate path JPM, tested both 2018 and 2019): 21 CR
 Per S2.OP-IO.ZZ-0003 (Hot Standby To Minimum Load), <span class="hi-exam">MODE 2 entry is recorded in the Control Room Narrative Log when withdrawal of Control Bank "A" is imminent</span>. <span class="hi-trap">Mode 2 entry is NOT when the reactor is critical, NOT when Shutdown Bank A withdrawal begins (Shutdown Banks are withdrawn first but remain in Mode 3), and NOT when IR power stabilizes at 2E-3% (that is for ICRR data collection).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q69</div>
+Per S2.OP-IO.ZZ-0003 Step 4.2.21.3, when withdrawal of Control Bank "A" is imminent, the crew shall: (1) <span class="hi-exam">RECORD time of Mode 2 entry in the Control Room Narrative Log</span>, (2) <span class="hi-exam">UPDATE WCM to Mode 2</span>, and (3) RECORD Date and Time of Control Banks withdrawal in Attachment 3, Technical Specifications Pre-Criticality Surveillance Data, Section A. <span class="hi-trap">Mode 2 entry is NOT keyed to Rx criticality, RTB closure, or Shutdown Bank withdrawal — it is specifically tied to imminent Control Bank A withdrawal.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
@@ -171,6 +176,6 @@ With reactor trip breakers (RTBs) failing to open, the reactor is tripped from t
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]], [[CVCS]], [[Main Turbine]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam questions: [[2016 Q1]], [[2016 Q2]], [[2016 Q3]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
+- Related exam questions: [[2016 Q1]], [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
 - Related JPMs: [[2018 JPM Sim-a]], [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

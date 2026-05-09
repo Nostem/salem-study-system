@@ -131,4 +131,6 @@ Compensated IRNI behavior post-trip from 100% power: per <span class="hi-exam">E
   - [[2022 Q57]] — IR NIS fails high / P-10 unblocks 1/2 IR trip on 3/4 PR below setpoint
   - [[2022 Q78]] — Gamma-Metrics substitution for SR channel per TS 3.9.2.2 bases
   - [[2022 Q82]] — One IR channel inoperable above P-6 / TS 3.3.1.1 Action 3
+  - [[2016 Q69]] — Mode 2 entry recorded when Control Bank A withdrawal imminent (S2.OP-IO.ZZ-0003)
+  - [[2016 Q70]] — AFD penalty minutes / 50–90% power / power must reduce &lt;50% within 30 min after 60 penalty min
 - Related JPMs: [[2018 JPM RO-A1]], [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2020 JPM Sim-f]]

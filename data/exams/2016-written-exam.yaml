@@ -958,3 +958,82 @@
     ka_importance: 3.5
     type: RO
     tier_group: "Tier 2/Group 1"
+
+  - number: 66
+    topic: "OHA single piece of red tape diagonal — at least one input disabled, reflash still works"
+    answer: C
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - annunciators
+    tech_specs: []
+    ka: "194001G101"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 67
+    topic: "Power ascension order IAW OP-AA-300 — start dilution first, wait for RCS temperature rise, then load"
+    answer: C
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (125830)"
+    question_modification_method: "Direct From Source"
+    systems:
+      - control-rod-drive
+      - chemical-and-volume-control-system
+      - turbine-generator
+    tech_specs: []
+    ka: "194001G102"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 68
+    topic: "Suspend fuel movement — CAV in Recirculation Mode (Fire Outside Control Area)"
+    answer: C
+    cognitive_level: "Application"
+    source: "Facility Exam Bank (110741)"
+    question_modification_method: "Direct From Source"
+    systems:
+      - refueling
+      - cav
+      - radiation-monitoring
+    tech_specs:
+      - ts-3-4-7-plant-systems
+      - ts-3-4-9-refueling
+    ka: "194001G140"
+    ka_importance: 2.8
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 69
+    topic: "Mode 2 entry recorded when Control Bank A withdrawal imminent (S2.OP-IO.ZZ-0003 step 4.2.21.3)"
+    answer: B
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (155638)"
+    question_modification_method: "Direct From Source"
+    systems:
+      - control-rod-drive
+      - excore-nis
+    tech_specs: []
+    ka: "194001G235"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 3"
+
+  - number: 70
+    topic: "AFD penalty minutes — power must be reduced <50% within 30 min after 60 cumulative penalty min"
+    answer: D
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - excore-nis
+      - feedwater-and-condensate
+      - turbine-generator
+    tech_specs:
+      - ts-3-4-2-power-distribution
+    ka: "194001G239"
+    ka_importance: 3.9
+    type: RO
+    tier_group: "Tier 3"

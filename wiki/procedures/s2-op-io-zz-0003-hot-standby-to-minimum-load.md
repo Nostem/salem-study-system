@@ -20,10 +20,15 @@ Provides direction for performing a reactor startup from Hot Standby (Mode 3) to
 Per S2.OP-IO.ZZ-0003, the crew will <span class="hi-exam">record the time of MODE 2 entry in the Control Room Narrative Log when withdrawal of Control Bank "A" is imminent</span>. <span class="hi-trap">Trap: Mode 2 entry is NOT when the reactor is critical (that occurs later), NOT when the first Shutdown Bank is withdrawn (Shutdown Banks are withdrawn first, but Mode 2 entry is documented when Control Bank A withdrawal begins), and NOT when IR power stabilizes at 2E-3% (that is for Inverse Count Rate Ratio data collection per SC.RE-RA.ZZ-0002).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q69</div>
+Step 4.2.21.3 (page 18, Rev 43): when withdrawal of Control Bank "A" is imminent, PERFORM the following: <span class="hi-exam">RECORD time of Mode 2 entry in the Control Room Narrative Log; UPDATE WCM to Mode 2; RECORD Date and Time of Control Banks withdrawal in Attachment 3, Technical Specifications Pre-Criticality Surveillance Data, Section A</span>. <span class="hi-trap">Mode 2 entry is NOT triggered by Rx criticality, RTB closure, or Shutdown Bank withdrawal — only by imminent Control Bank A withdrawal.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]]
 - Related procedures: [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]]
-- Related exam questions: [[2018 Q39]]
+- Related exam questions: [[2016 Q69]], [[2018 Q39]]
 - Related JPMs: [[2018 JPM Sim-e]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]]

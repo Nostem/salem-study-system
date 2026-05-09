@@ -378,6 +378,11 @@ The CRE boundary may be opened intermittently under administrative controls (doo
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q68</div>
+TS Bases 3/4.7.6 (and S2.OP-SO.CAV-0001 P&L 3.6.3): when CAV is aligned to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, <span class="hi-exam">Core Alterations and movement of irradiated fuel are NOT permitted</span>. Pressing the Fire Outside Control Room pushbutton during fuel movement requires immediate suspension of fuel movement.
+</div>
+
 ---
 
 ## 3/4.7.7 — Auxiliary Building Ventilation System
@@ -468,6 +473,6 @@ The program for examination, testing, and service life monitoring is performed i
 ## Connections
 
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
-- Related exam questions: [[2019 Q42]]
+- Related exam questions: [[2016 Q68]], [[2019 Q42]]
 - Related JPMs: [[2020 JPM SRO-A3]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]]

@@ -333,10 +333,16 @@ Manual QPTR surveillance following dropped rod 2D4: calculated QPTR for N42 quad
 LCO 3.2.1 (AFD) action when NOT met at 95% power: reduce power to less than <span class="hi-exam">90% RTP within 15 minutes</span>. Once between 90-50%, reduce to <50% in the next <span class="hi-exam">30 minutes</span>. LCO 3.2.1 power reduction protects the <span class="hi-exam">F<sub>Q</sub>(Z) (Heat Flux Hot Channel Factor)</span> limit in the COLR. <span class="hi-trap">Trap: Radial Peaking Factor (F<sub>XY</sub>) is protected by a different LCO (3.2.3). The three Power Distribution LCOs protect three different hot channel factors: 3.2.1 → F<sub>Q</sub>(Z), 3.2.2 → F<sup>N</sup><sub>ΔH</sub>, 3.2.3 → Radial Peaking Factor.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q70</div>
+LCO 3.2.1 action a (>90% power) and action b (50-90% power) penalty-minute timing: <span class="hi-exam">Penalty Minutes accumulate 1 for every minute outside Target Band</span>. With <span class="hi-exam">40 penalty minutes already accumulated &lt;24 hours ago</span>, the cumulative limit of <span class="hi-exam">60 penalty minutes</span> is exceeded 20 minutes after AFD goes out of band. Once 60 penalty minutes is reached (still within COLR limits), <span class="hi-exam">Rx Thermal power must be reduced to &lt;50% within 30 minutes</span>. Example timeline (Q70): SGFP trip at 2300 → MT runback at 15%/min → Rx 87% at 2301 (AFD -9.1, in band at 87% Target -1.3 ±9 = -10.3); Rx 66% at 2303 (AFD -10.1, OUT of band at 66% Target -0.99 ±9 = -9.99) → 60 penalty min reached at <span class="hi-exam">2323</span> → must be &lt;50% by <span class="hi-exam">2353</span> (2323 + 30 min). <span class="hi-trap">Trap: distractors use the 15-minute action time required for &gt;90% power, or use the 2301 time as when AFD is out of band (plausible if -9 of Target Band is incorrectly used as the actual AFD/COLR limit).</span>
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]], [[RCS]]
-- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]]
-- Related exam questions: [[2018 Q97]], [[2020 Q20]]
+- Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]], [[Feed & Condensate]]
+- Related procedures: [[S2.RE-RA.ZZ-0011 — Tables]]
+- Related exam questions: [[2016 Q70]], [[2018 Q97]], [[2020 Q20]]
 - Related JPMs: [[2022 JPM RO-A3]]
-- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
