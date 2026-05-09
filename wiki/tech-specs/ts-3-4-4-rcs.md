@@ -434,6 +434,11 @@ c. Maximum temperature change per PTLR during hydrostatic testing above design p
 LCO 3.4.10.2 PZR heatup rate = <span class="hi-exam"><span class="val-trip">100&deg;F/hr</span></span> maximum. PZR cooldown rate = <span class="hi-exam">200&deg;F/hr</span> maximum. <span class="hi-trap">Heatup and cooldown limits are different — candidates confuse 100 vs 200. The cooldown limit is DOUBLE the heatup limit.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q84</div>
+The TS RCS cooldown limit per PTLR is applied in EOP-LOCA-5 as <span class="hi-exam">&lt;100&deg;F/hr</span> when initiating a cooldown — this prevents an unwanted Thermal Shock condition that would complicate matters since CFSTs are still in effect in LOCA-5.
+</div>
+
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.10.2 — Pressurizer P/T Limits</div>
 Pressurizer temperature limited to:<br>
@@ -501,5 +506,5 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

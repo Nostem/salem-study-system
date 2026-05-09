@@ -16,6 +16,11 @@ Provides operator actions for responding to an uncontrolled depressurization of 
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q85</div>
+LOSC-2 CAS: <span class="hi-exam">upon a pressure rise in any SG except when performing SI termination in Steps 8-20, GO TO EOP-LOSC-1</span>. After Step 20 (SI termination complete, PZR level being maintained stable), an SG pressure rise — e.g., 22 SG pressure rising during a MSLB at the Mixing Bottle with all MSLI attempts failed and 21-24MS167s open, AFW flow 1.0E4 lbm/hr to each SG — directs immediate transition to EOP-LOSC-1 because <span class="hi-exam">one SG is now available for subsequent recovery actions</span>. <span class="hi-trap">Trap: the LOSC-2 CAS does NOT defer the transition until the remaining SGs fully depressurize, and the basis is the availability of a nonfaulted SG (LOSC-1 Basis Document, page 7: "Any cooldown operations that are performed as subsequent recovery actions will require at least one nonfaulted SG"), not RCP-stop criteria.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q7</div>
 Step 26 — restore normal power to PZR heaters or transfer to emergency backup. PZR heater Group 1 is normally powered from 2G bus, with emergency backup from 2C 460V vital bus. Group 2 is normally powered from 2E bus, with emergency backup from 2A 460V vital bus. The transfer is manual.
 </div>
@@ -38,6 +43,6 @@ Step 1 — 13 AFW Pump (TDAFW) steam isolation: if the 13 AFW Pump is <span clas
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[500KV]]
-- Related exam questions: [[2016 Q4]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]]
+- Related exam questions: [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

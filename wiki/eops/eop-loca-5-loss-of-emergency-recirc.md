@@ -86,6 +86,11 @@ Step 9 / Table C — required CS pumps based on RWST level, containment pressure
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q84</div>
+LOCA-5 entered at LOCA-1 step 16 (RWST level &gt;15.2 ft) with both RHR pumps stopped and unable to be started: just prior to initiating cooldown, with RWST LO alarm received, CONT SUMP CH A/B LEVEL &gt;62% lights lit, and RCS subcooling &lt;0&deg;F, the CRS shall <span class="hi-exam">remain in LOCA-5 and initiate a RCS cooldown at less than the Tech Spec limit (&lt;100&deg;F/hr)</span> — the TS RCS cooldown limit prevents an unwanted Thermal Shock condition while CFSTs are still in effect in LOCA-5. <span class="hi-trap">Trap A: makeup is to the RWST (directed at step 10), NOT to the VCT. Traps C/D: there is NO LOCA-3 CAS in LOCA-5 — restoring any train of recirc is the concern with no RHR pumps; transfer to CL recirc will occur only after a RHR pump has been restored.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q73</div>
 EOP-LOCA-5 entry conditions — five entry paths: <span class="hi-exam">(1) LOCA-1 step 16 with no RHR pump and associated SJ44 available; (2) LOCA-3 step 2, Containment sump level &lt;62%; (3) LOCA-4 step 5, no RHR pumps running; (4) LOCA-6 step 6.2 with RH1, 2, 26 shut, 21 and 22 RH19 shut, 21 and 22 SJ49s shut and RCS pressure not rising; (5) loop from LOCA-5 step 28 when RWST level is still above LO-LO (1.2 ft) setpoint</span>. The correct condition pairs <span class="hi-exam">RWST LOW LEVEL alarm with sump level &lt;62%</span> (sump should be rising as RWST is lowering). <span class="hi-trap">Trap: RWST LO-LO entry conditions for stopping ECCS pumps reflects expected behavior during CL recirc with one CS pump still drawing from RWST — it is NOT a LOCA-5 entry. LOCA-6 stopping both RHR pumps does not warrant LOCA-5 entry because LOCA-5 only requires RHR pumps to be available, not in service. LOCA-4 has no provision to check for hot leg recirc flow path blockage.</span>
 </div>
@@ -93,7 +98,7 @@ EOP-LOCA-5 entry conditions — five entry paths: <span class="hi-exam">(1) LOCA
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
-- Related exam questions: [[2016 Q5]], [[2016 Q26]], [[2016 Q73]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related exam questions: [[2016 Q5]], [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

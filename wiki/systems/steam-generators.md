@@ -171,7 +171,7 @@ SG shrink/swell on RCP shaft shear: when 13 RCP shaft shears at 25% power, <span
 EOP-LOCA-1 explicitly checks for a <span class="hi-exam">steam break / Loss of Secondary Coolant</span> as the OTHER reason (besides a LOCA) for being in LOCA-1 — because <span class="hi-exam">if a faulted SG is the actual cause of ECCS injection, the event can be terminated by isolating the faulted SG</span>. The "Check for Subsequent Failure" Major Action verifies the entry condition; LOCA-1's "do loop" then waits until the SG is blown down and isolated. SGTR is NOT the answer because LOCA-1 has no transition from SGTR-1, and primary-to-secondary leakage termination is not performed in LOCA-1.
 </div>
 
-- Related exam questions: [[2016 Q4]], [[2016 Q25]], [[2016 Q48]], [[2016 Q49]], [[2016 Q51]], [[2016 Q65]], [[2016 Q79]], [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
+- Related exam questions: [[2016 Q4]], [[2016 Q25]], [[2016 Q48]], [[2016 Q49]], [[2016 Q51]], [[2016 Q65]], [[2016 Q79]], [[2016 Q83]], [[2016 Q85]], [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
 - Related JPMs: [[2023 JPM SRO-A4]]
 - Related scenarios: [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

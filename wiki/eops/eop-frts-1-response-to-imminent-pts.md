@@ -38,6 +38,11 @@ FRTS-1 step 1 (RCS Pressure Status): if <span class="hi-exam">RCS pressure &lt; 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q83</div>
+PURPLE path entry from MSLB at low power (15% pre-sync) with multiple SGs faulted (Tcolds 270&deg;F lowering) and intact SG Tcolds 330&deg;F: <span class="hi-exam">FRTS-1 is the correct procedure</span>, with key actions <span class="hi-exam">Step 3.5 — maintain AFW flow &gt;22E4 lbm/hr until at least ONE intact SG NR level is &gt;15%</span> and <span class="hi-exam">Step 12 — ECCS pump reduction (stop all ECCS pumps except 21 or 22 charging pump)</span>. <span class="hi-trap">Trap B: depressurizing RCS to within the 100&deg;F/hr cooldown curve with one PORV is an FRTS-2 (Yellow priority) action, NOT FRTS-1. Trap C/D: with SR NIs not energized and IR SUR not more negative than -0.2 dpm a YELLOW path exists for FRSM-2, but FRTS PURPLE is the higher priority. The "establish AFW flow &gt;44E4 lbm/hr, borate until IR SUR negative" action is FRSM-1, not FRSM-2.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q24</div>
 After a steam line break inside containment with FRTS-1 entered: <span class="hi-exam">SI termination is directed because Safety Injection flow is a significant contributor to any cold leg temperature decrease or overpressure condition</span>. <span class="hi-exam">RCPs are started to provide mixing of cold SI and warm reactor coolant water</span>, decreasing the likelihood of a PTS condition. <span class="hi-trap">Traps: (1) The "soak" is not the basis for SI termination. (2) RCPs are NOT started to enable PZR spray for primary depressurization, NOR to minimize temperature gradient across S/G tube sheets — they are started for thermal mixing.</span>
 </div>
@@ -58,6 +63,6 @@ RED path for Thermal Shock entered during EOP-LOCA-1 (LBLOCA). Entry/exit criter
 
 - Related systems: [[ECCS]], [[RCS]], [[RCPs]], [[RHR]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
-- Related exam questions: [[2016 Q24]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]]
+- Related exam questions: [[2016 Q24]], [[2016 Q83]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]]
 - Related scenarios: [[2018 Scenario 2]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

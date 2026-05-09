@@ -52,6 +52,11 @@ ATWS at 4% power: reactor fails to trip on 21 SG LO-LO Level, all CR trip attemp
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q83</div>
+FRSM-1 actions cited as a distractor: <span class="hi-exam">"Establish AFW flow &gt;44E4 lbm/hr, borate RCS until IR SUR is negative"</span> are FRSM-1 actions (Red/Orange Subcriticality CFST), NOT FRSM-2 (Yellow). When the correct procedure is FRSM-2 (Yellow Loss of Core Shutdown), pairing it with these FRSM-1 actions is the wrong-procedure-with-wrong-actions trap. <span class="hi-trap">Do not confuse FRSM-1 (power-generation/ATWS, RED/ORANGE) with FRSM-2 (Loss of Core Shutdown, YELLOW). The 44E4 lbm/hr AFW flow + boration target is FRSM-1.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q78</div>
 ATWS at 4% power awaiting Mode 1 (steam dumps in service, 21 SGFP in service, 22 SGFP latched at idle, all AFW secured): the EOP network including FRPs is in effect in <span class="hi-exam">Modes 1–3</span>, so FRSM-1 is applicable. Crew initiates manual rod insertion, then enters FRSM-1 and <span class="hi-exam">starts both MDAFW pumps</span>. <span class="hi-trap">Trap B: FRSM-1 does NOT check feed flow generally — it specifically checks AFW flow. So even with Main Feed flow occurring (>44E4 lbm/hr), operators still start MDAFW pumps in FRSM-1.</span> <span class="hi-trap">Trap C/D: Rx trip is NOT confirmed by power &lt;5% alone — confirmation also requires negative SUR and power lowering.</span>
 </div>
@@ -60,6 +65,6 @@ ATWS at 4% power awaiting Mode 1 (steam dumps in service, 21 SGFP in service, 22
 
 - Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2016 Q78]], [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
+- Related exam questions: [[2016 Q78]], [[2016 Q83]], [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

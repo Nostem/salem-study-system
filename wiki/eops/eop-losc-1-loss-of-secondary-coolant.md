@@ -20,6 +20,11 @@ Referenced as 2-LOSC-1 for design bases MSLB + LOOP event. Containment cooling d
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q85</div>
+Entry from LOSC-2 via the LOSC-2 CAS: <span class="hi-exam">upon an SG pressure rise (e.g., 22 SG pressure rising during a MSLB at the Mixing Bottle with all MSLI attempts failed) after Step 20 of LOSC-2, GO TO EOP-LOSC-1</span>. Basis (LOSC-1 Basis Document, page 7): <span class="hi-exam">"Any cooldown operations that are performed as subsequent recovery actions will require at least one nonfaulted SG."</span> The pressure rise indicates an available nonfaulted SG, so LOSC-1 becomes the procedure of record.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q16</div>
 For a single main steam line rupture (e.g., upstream of 24MS167), after MSLI and feed isolation the cooldown of the RCS comes from steam blowing out the broken steamline. Because <span class="hi-exam">break flow is a function of faulted SG pressure</span>, as the faulted SG depressurizes the cooldown rate <span class="hi-exam">lowers continuously</span> over time — it does NOT remain constant until the SG blows dry. <span class="hi-trap">Initiating AFW to the ruptured SG to keep tubes wet is an EOP-LOSC-2 action that is only performed if ALL SGs are faulted; for a single faulted SG, AFW is left isolated.</span>
 </div>
@@ -38,6 +43,6 @@ Entered from EOP-TRIP-1 on <span class="hi-exam">21 SG pressure dropping in unco
 
 - Related systems: [[CFCUs]], [[Containment Spray]], [[Main Steam]], [[Feed & Condensate]], [[AFW]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-3 — SI Termination]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related exam questions: [[2016 Q16]], [[2016 Q65]], [[2020 Q9]]
+- Related exam questions: [[2016 Q16]], [[2016 Q65]], [[2016 Q85]], [[2020 Q9]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]]

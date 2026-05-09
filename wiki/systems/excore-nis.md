@@ -114,6 +114,11 @@ Block Power Range trip controls during a startup power ascension: <span class="h
 Compensated IRNI behavior post-trip from 100% power: per <span class="hi-exam">EOP-TRIP-2 step 22</span>, if both IRNIs are NOT reading &lt;<span class="val-alarm">7E-11 A</span> and undercompensation is preventing proper operation, manually energize Source Range channels. With 2N35 = 2.0E-11 A (SUR -0.3 dpm, normal) and 2N36 = 2.0E-10 A (SUR -0.06, abnormally low), <span class="hi-exam">2N36 is undercompensated</span> — an undercompensated IR detector reads HIGHER than expected (more low-energy gammas seen) and shows abnormally low SUR. Operator action: manually energize Source Range channels. <span class="hi-trap">Trap: SR channels normally re-energize automatically when 2N36 lowers to 7E-11 A — but with 2N36 stuck high due to undercompensation, automatic re-energization will NOT occur, requiring manual action. Overcompensated detectors read LOWER than expected (the opposite signature).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q83</div>
+With Source Range NIs not energized and IR SUR present, the Subcriticality CFST YELLOW path uses the IR-SUR criterion: <span class="hi-exam">IR SUR is required to be more negative than -0.2 dpm</span> (otherwise a YELLOW path exists for FRSM-2). At 0.0 DPM IR SUR with SRNIs deenergized, FRSM-2 YELLOW exists — but FRTS-1 PURPLE (when concurrent) takes precedence.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
@@ -134,4 +139,5 @@ Compensated IRNI behavior post-trip from 100% power: per <span class="hi-exam">E
   - [[2022 Q82]] — One IR channel inoperable above P-6 / TS 3.3.1.1 Action 3
   - [[2016 Q69]] — Mode 2 entry recorded when Control Bank A withdrawal imminent (S2.OP-IO.ZZ-0003)
   - [[2016 Q70]] — AFD penalty minutes / 50–90% power / power must reduce &lt;50% within 30 min after 60 penalty min
+  - [[2016 Q83]] — SR NIs not energized + IR SUR -0.2 dpm criterion for FRSM-2 YELLOW (overridden by FRTS-1 PURPLE)
 - Related JPMs: [[2018 JPM RO-A1]], [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2020 JPM Sim-f]]

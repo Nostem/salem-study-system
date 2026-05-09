@@ -1189,3 +1189,89 @@
     ka_importance: 3.4
     type: SRO
     tier_group: "Tier 1/Group 1"
+
+  - number: 81
+    topic: "LOCA ECG classification — RCS pressure 350 psig (loss of subcooling = loss of RCS barrier, 5 pts) + containment pressure 13 psig dropping rapidly to 1.5 psig in 6 min (loss of containment barrier, 3 pts) = 8 point Site Area Emergency"
+    answer: D
+    cognitive_level: "Application"
+    source: "Facility Exam Bank (136652)"
+    question_modification_method: "Direct From Source"
+    systems:
+      - reactor-coolant-system
+      - containment-systems
+    tech_specs: []
+    ka: "000069 G2.4.41"
+    ka_importance: 4.6
+    type: SRO
+    tier_group: "Tier 3"
+
+  - number: 82
+    topic: "EOP-LOCA-2 Step 19.1 RNO bypasses charging/SI pump reduction on inadequate RCS subcooling — start ECCS pumps to restore subcooling, open BIT isolation valves if previously shut"
+    answer: D
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - reactor-coolant-system
+      - emergency-core-cooling-systems
+      - chemical-and-volume-control-system
+      - pressurizer
+    tech_specs: []
+    ka: "00WE03 EA2.1"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 83
+    topic: "MSLB pre-sync — multiple faulted SGs with intact T-Cold 330F — FRTS-1 PURPLE (Step 3.5 maintain AFW >22E4 lbm/hr until intact SG NR >15%, Step 12 stop ECCS pumps except 21/22 charging) — overrides FRSM-2 YELLOW from SR NIs deenergized + IR SUR 0 dpm"
+    answer: A
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Direct From Source"
+    systems:
+      - reactor-coolant-system
+      - main-steam
+      - steam-generators
+      - auxiliary-feedwater
+      - emergency-core-cooling-systems
+      - excore-nis
+    tech_specs: []
+    ka: "00WE03 G2.4.6"
+    ka_importance: 4.7
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 84
+    topic: "EOP-LOCA-5 — both RHR pumps stopped, RWST LO alarm, sump >62%, RCS subcooling <0F — remain in LOCA-5 and initiate RCS cooldown at <Tech Spec limit (<100F/hr); no LOCA-3 CAS in LOCA-5; makeup is to RWST not VCT"
+    answer: B
+    cognitive_level: "Application"
+    source: "Facility Exam Bank (140182)"
+    question_modification_method: "Editorially Modified"
+    systems:
+      - reactor-coolant-system
+      - residual-heat-removal
+      - emergency-core-cooling-systems
+      - containment-systems
+      - chemical-and-volume-control-system
+    tech_specs:
+      - ts-3-4-4-rcs
+    ka: "00WE11 EA2.2"
+    ka_importance: 4.2
+    type: SRO
+    tier_group: "Tier 1/Group 1"
+
+  - number: 85
+    topic: "MSLB Mixing Bottle — all MSLI failed, 21-24MS167s open, post LOSC-2 SI termination Step 20, 22 SG pressure rising — LOSC-2 CAS GO TO LOSC-1 since one nonfaulted SG now available for subsequent recovery actions (LOSC-1 Basis Document p.7)"
+    answer: A
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank (141989)"
+    question_modification_method: "Direct From Source"
+    systems:
+      - main-steam
+      - steam-generators
+      - auxiliary-feedwater
+      - reactor-coolant-system
+    tech_specs: []
+    ka: "00WE12 EA2.1"
+    ka_importance: 4.0
+    type: SRO
+    tier_group: "Tier 1/Group 1"
