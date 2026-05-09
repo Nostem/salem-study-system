@@ -817,3 +817,73 @@
     ka_importance: 4.1
     type: RO
     tier_group: "Tier 2/Group 1"
+
+  - number: 56
+    topic: "1A 28 VDC bus deenergized — all indication on 1RP4 status panel lost"
+    answer: D
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - dc-power
+      - auxiliary-feedwater
+      - annunciators
+    tech_specs: []
+    ka: "063000 K3.02"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 57
+    topic: "2A EDG Fuel Oil Day Tank recovering — REGULAR (33\") and BACKUP (27\") transfer pumps both run to FULL (44\")"
+    answer: D
+    cognitive_level: "Application"
+    source: "New"
+    systems:
+      - diesel-generators
+    tech_specs: []
+    ka: "064000 K1.03"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 58
+    topic: "1A EDG minimum start attempts with 11A receiver C/T and 11B compressor C/T after 1 trip"
+    answer: A
+    cognitive_level: "Memory"
+    source: "Facility Exam Bank"
+    question_modification_method: "Editorially Modified"
+    systems:
+      - diesel-generators
+    tech_specs: []
+    ka: "064000 K6.07"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 59
+    topic: "21 CVCS MT release — 2R18 ALARM with 2WL51 still OPEN — NCO shuts 2WL51 remotely"
+    answer: B
+    cognitive_level: "Application"
+    source: "Facility Exam Bank"
+    question_modification_method: "Editorially Modified"
+    systems:
+      - waste-liquid
+      - radiation-monitoring
+    tech_specs: []
+    ka: "068000 K6.10"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+
+  - number: 60
+    topic: "Process radiation monitor source check — ≤30 seconds to prevent solenoid overheating"
+    answer: A
+    cognitive_level: "Memory"
+    source: "New"
+    systems:
+      - radiation-monitoring
+    tech_specs: []
+    ka: "073000 G2.1.32"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 1"

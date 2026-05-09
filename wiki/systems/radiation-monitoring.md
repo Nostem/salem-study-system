@@ -159,10 +159,22 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
 During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam">2R18 radiation monitor</span> provides overwatch. At Step 5.5.8, operator reads 2R18 on 104 panel: <span class="hi-exam">105 CPM with High Radiation light illuminated</span>. Step 5.5.9: if 2R18 ALARMS, immediately direct NCO to <span class="hi-exam">CLOSE 2WL51 (LIQUID RELEASE STOP VALVE)</span> to terminate the release.
 </div>
 
+## Process Radiation Monitor Source Checks
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q60</div>
+Process radiation monitor Source Check duration: <span class="hi-exam">activate the source check for 30 seconds or less to prevent the solenoids from overheating</span>. Both the system operating procedure (S1.OP-SO.RM-0001) and the surveillance procedure (S1.OP-ST.RM-0001) contain this 30-second precaution. <span class="hi-trap">Traps: terminating "just until indication of rising level is detected" prolongs source life but is NOT the procedural rationale; alarm action functions are NOT automatically blocked on every monitor during a source check, but the cited reason for the 30-second limit is solenoid overheating; source check is not intended to raise rad levels outside the monitor.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q59</div>
+2R18 (Liquid Radwaste process radiation monitor) ALARM setpoint per S2.IC-CC.RM-0028 is <span class="hi-exam">6.82E5 cps</span>. Above the setpoint, <span class="hi-exam">2R18 automatically shuts 2WL51 (Liquid Release Stop Valve)</span>. If the auto-close fails (e.g., 2WL51 still indicates OPEN with 2R18 in alarm at 10E6 cps), <span class="hi-exam">the NCO shuts 2WL51 remotely from the control room</span> per S2.OP-SO.WL-0001 Step 5.5.9 — there is no procedural provision to close 2WL51 locally.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]]
-- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
 - Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
   - [[2016 Q14]] — R53 Main Steamline N-16 monitor / FIRST indication of SGTL at 100% power
   - [[2019 Q8]] — 2R17A/B high alarm auto-closes 2CC149 (CCW Surge Tank Vent Valve)
@@ -183,4 +195,6 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
   - [[2018 Q83]] — 11 GDT discharges to plant vent → R41D alarm / AB.RAD-0001 Attachment 1 (Process) not Attachment 2 (Filter)
   - [[2018 Q85]] — R44A/B ≥ 2 R/HR = FRCE-3 entry (yellow path, not required) / 100 R/HR is warning setpoint
   - [[2018 Q89]] — R12A failure during containment vacuum relief / TS 3.3.3.1 Table 3.3-6 / R41 alternate for purge & P/V relief
+  - [[2016 Q59]] — 21 CVCS MT release / 2R18 ALARM setpoint 6.82E5 cps auto-shuts 2WL51 / NCO shuts remotely if auto-close fails
+  - [[2016 Q60]] — Process radiation monitor source check ≤ 30 seconds / prevents solenoid overheating
 - Related JPMs: [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]]

@@ -76,6 +76,18 @@ When the EDG is paralleled to the grid for surveillance testing: <span class="hi
 Each EDG has <span class="hi-exam">4 air start motors total</span>, supplied by <span class="hi-exam">2 starting air receivers</span>. Each receiver supplies <span class="hi-exam">2 air start motors (one train)</span>. Each receiver is capable of <span class="hi-exam">3 cold starts</span>. Two air start motors start the diesel in <span class="hi-exam">&lt; 10 seconds</span>. Just one air start motor can start the diesel within <span class="hi-exam">14 seconds</span>. Rated speed is <span class="hi-exam">900 RPM</span>. With one air receiver isolated, the remaining receiver and its 2 motors <span class="hi-exam">will start the EDG and achieve rated speed in &le; 13 seconds</span>. <span class="hi-trap">Each receiver supplies only 2 of the 4 air start motors — NOT all four. Loss of one receiver does not prevent EDG start.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q58</div>
+Salem FSAR section 9.5.6: <span class="hi-exam">"Each receiver is sized to hold sufficient air for three cold diesel starts"</span>. Each EDG has 2 receivers (6 total starts). With one air receiver C/T (1 receiver available = 3 starts) and one starting air compressor C/T plus the operable compressor's power source isolated by LOOP (no recharge available), <span class="hi-exam">after the first start attempt has been used, the minimum number of remaining start attempts is 2</span>. <span class="hi-trap">Trap: 4 or 5 would assume both receivers were available; 3 would forget that one start has already been used by the initial trip.</span>
+</div>
+
+## Fuel Oil Day Tank — Transfer Pumps
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q57</div>
+EDG Fuel Oil Day Tank transfer pump operation: <span class="hi-exam">REGULAR pump start setpoint = 33"</span>, <span class="hi-exam">BACKUP pump start setpoint = 27"</span>. Once started by low level, <span class="hi-exam">both pumps continue to run until the FULL level (44") is reached</span> — the BACKUP does NOT turn off when level recovers above the normal start setpoint (33"). The Backup pump turns off at the same level as the Regular pump. With level recovering through 35" after both started, <span class="hi-exam">both REGULAR and BACKUP transfer pumps are still running</span>. <span class="hi-trap">Trap: candidates assume the Backup secures when normal level is restored — it does not. The exact backup-stop setpoint is not required knowledge, only that it is substantially higher than the Regular start setpoint and equal to the Regular stop level (44").</span>
+</div>
+
 ## EDG Lube Oil Setpoints
 
 <div class="callout callout-exam">
@@ -174,7 +186,7 @@ EDG loading after SI/SEC reset on a single SPT degradation: with all SECs alread
 
 ## Connections
 
-- Related exam questions: [[2016 Q55]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
+- Related exam questions: [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
 - Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
 - Related JPMs: [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
