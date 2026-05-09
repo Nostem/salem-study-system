@@ -24,6 +24,10 @@ test('quiz-v2 review uses whole questions and stores local review ratings', asyn
 
   await visibleDetail.getByTestId('qv2r-rate-good').click();
   await expect(page.getByTestId('qv2r-reviewed')).toHaveText('1');
+  await expect(page.getByTestId('qv2r-progress-percent')).toHaveText(/^\d+(?:\.\d+)?%$/);
+  await expect(page.getByTestId('qv2r-total-attempts')).toHaveText('1');
+  await expect(page.getByTestId('qv2r-success-rate')).toHaveText('100%');
+  await expect(page.getByTestId('qv2r-rating-counts')).toContainText('Good 1');
 
   const state = await page.evaluate(() => JSON.parse(localStorage.getItem('salem-qv2-review-state-v1') || '{}'));
   expect(Object.keys(state)).toContain(firstSlug?.trim());

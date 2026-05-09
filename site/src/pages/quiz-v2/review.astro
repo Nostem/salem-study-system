@@ -80,6 +80,33 @@ const reviewMeta = questions.map((q) => ({
       <div class="mt-3 text-[11px] font-mono text-text-muted">
         Current item: <code data-testid="qv2r-current-slug">—</code>
       </div>
+      <section class="mt-4 border-t border-border pt-4" aria-labelledby="qv2r-progress-title">
+        <h3 id="qv2r-progress-title" class="font-serif text-lg text-text-primary">Progress analytics</h3>
+        <dl class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-3 text-[12px] font-mono">
+          <div class="rounded border border-border bg-bg/60 p-2">
+            <dt class="text-text-muted">Progress</dt>
+            <dd class="text-text-primary text-lg" data-testid="qv2r-progress-percent">0%</dd>
+          </div>
+          <div class="rounded border border-border bg-bg/60 p-2">
+            <dt class="text-text-muted">Ratings</dt>
+            <dd class="text-text-primary text-lg" data-testid="qv2r-total-attempts">0</dd>
+          </div>
+          <div class="rounded border border-border bg-bg/60 p-2">
+            <dt class="text-text-muted">Latest success</dt>
+            <dd class="text-text-primary text-lg" data-testid="qv2r-success-rate">—</dd>
+          </div>
+          <div class="rounded border border-border bg-bg/60 p-2">
+            <dt class="text-text-muted">Avg interval</dt>
+            <dd class="text-text-primary text-lg" data-testid="qv2r-average-interval">—</dd>
+          </div>
+        </dl>
+        <div class="mt-3 text-[11px] font-mono text-text-muted" data-testid="qv2r-rating-counts">
+          Again 0 · Hard 0 · Good 0 · Easy 0
+        </div>
+        <div class="mt-2 text-[11px] font-mono text-text-muted">
+          Due topic focus: <span data-testid="qv2r-topic-focus">—</span>
+        </div>
+      </section>
     </section>
 
     <script type="application/json" id="qv2r-meta" set:html={JSON.stringify(reviewMeta)} />
@@ -250,6 +277,7 @@ const reviewMeta = questions.map((q) => ({
     type ReviewRating,
     type ReviewStateBySlug,
   } from '../../utils/quiz-v2-review';
+  import { buildReviewProgressAnalytics } from '../../utils/quiz-v2-progress';
   import type { StructuredQuestion } from '../../types/question-blocks';
 
   interface ReviewMetaRow {
@@ -336,7 +364,7 @@ const reviewMeta = questions.map((q) => ({
     return queue.items.find((item) => item.slug !== excludeSlug)?.slug ?? queue.items[0]?.slug ?? null;
   }
 
-  function renderSummary(): void {
+  function renderSummary(questions: StructuredQuestion[] = []): void {
     if (!queue) return;
     setText('qv2r-total', String(queue.summary.totalEligible));
     setText('qv2r-due', String(queue.summary.dueCount));
@@ -344,9 +372,38 @@ const reviewMeta = questions.map((q) => ({
     setText('qv2r-later', String(queue.summary.laterCount));
     setText('qv2r-reviewed', String(queue.summary.reviewedCount));
     setText('qv2r-current-slug', currentSlug ?? '—');
+    renderAnalytics(questions);
   }
 
-  function showCurrent(): void {
+  function renderAnalytics(questions: StructuredQuestion[]): void {
+    const analytics = buildReviewProgressAnalytics(questions, loadState());
+    const progress = analytics.totalEligible > 0
+      ? Math.round((analytics.reviewedQuestions / analytics.totalEligible) * 1000) / 10
+      : 0;
+    const success = analytics.latestRatingSuccessRate == null
+      ? '—'
+      : `${Math.round(analytics.latestRatingSuccessRate * 100)}%`;
+    const avgInterval = analytics.averageIntervalDays == null
+      ? '—'
+      : `${analytics.averageIntervalDays}d`;
+    const topicFocus = analytics.topicStats
+      .filter((topic) => topic.dueCount > 0)
+      .slice(0, 3)
+      .map((topic) => `${topic.title} (${topic.dueCount})`)
+      .join(' · ') || '—';
+
+    setText('qv2r-progress-percent', `${progress}%`);
+    setText('qv2r-total-attempts', String(analytics.totalReviewAttempts));
+    setText('qv2r-success-rate', success);
+    setText('qv2r-average-interval', avgInterval);
+    setText(
+      'qv2r-rating-counts',
+      `Again ${analytics.ratingCounts.again} · Hard ${analytics.ratingCounts.hard} · Good ${analytics.ratingCounts.good} · Easy ${analytics.ratingCounts.easy}`
+    );
+    setText('qv2r-topic-focus', topicFocus);
+  }
+
+  function showCurrent(questions: StructuredQuestion[] = []): void {
     hideAll();
     const empty = document.getElementById('qv2r-empty');
     if (!currentSlug) {
@@ -354,7 +411,7 @@ const reviewMeta = questions.map((q) => ({
         empty.textContent = 'No reviewable questions are available.';
         empty.classList.remove('hidden');
       }
-      renderSummary();
+      renderSummary(questions);
       return;
     }
     if (empty) empty.classList.add('hidden');
@@ -362,7 +419,7 @@ const reviewMeta = questions.map((q) => ({
     if (!detail) return;
     resetDetail(detail);
     detail.classList.remove('hidden');
-    renderSummary();
+    renderSummary(questions);
   }
 
   function rebuildQueue(questions: StructuredQuestion[]): void {
@@ -384,7 +441,7 @@ const reviewMeta = questions.map((q) => ({
     document.querySelectorAll<HTMLButtonElement>('[data-testid="qv2r-skip"]').forEach((button) => {
       button.addEventListener('click', () => {
         currentSlug = chooseNextSlug(currentSlug ?? undefined);
-        showCurrent();
+        showCurrent(questions);
       });
     });
     document.querySelectorAll<HTMLButtonElement>('[data-rating]').forEach((button) => {
@@ -398,14 +455,14 @@ const reviewMeta = questions.map((q) => ({
         const previous = currentSlug;
         rebuildQueue(questions);
         currentSlug = chooseNextSlug(previous);
-        showCurrent();
+        showCurrent(questions);
       });
     });
     document.querySelector<HTMLButtonElement>('[data-testid="qv2r-reset"]')?.addEventListener('click', () => {
       window.localStorage.removeItem(STORAGE_KEY);
       rebuildQueue(questions);
       currentSlug = chooseNextSlug();
-      showCurrent();
+      showCurrent(questions);
     });
   }
 
@@ -414,7 +471,7 @@ const reviewMeta = questions.map((q) => ({
     rebuildQueue(questions);
     currentSlug = chooseNextSlug();
     attachHandlers(questions);
-    showCurrent();
+    showCurrent(questions);
   }
 
   if (document.readyState === 'loading') {
