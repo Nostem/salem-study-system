@@ -277,3 +277,48 @@ jpms:
     alternate_path: true
     source: New
     task_number: "N1140070401"
+
+  - id: "IP-i"
+    title: "Transfer Pressurizer 22 Backup Heaters to Emergency Power Supply"
+    type: IP
+    location: In-Plant
+    procedure: "S2.OP-SO.PZR-0010"
+    pages: "1-6"
+    ka: "010 A4.02"
+    ka_importance_ro: 3.6
+    ka_importance_sro: 3.4
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1150430501"
+
+  - id: "IP-j"
+    title: "Perform Auxiliary Feedwater Back Leakage Test"
+    type: IP
+    location: In-Plant
+    procedure: "S1.OP-PT.AF-0002"
+    pages: "1-8"
+    ka: "061 K1.02"
+    ka_importance_ro: 3.4
+    ka_importance_sro: 3.7
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "N0610160204"
+
+  - id: "IP-k"
+    title: "Start and Synchronize an Emergency Diesel Generator"
+    type: IP
+    location: In-Plant
+    procedure: "S2.OP-SO.DG-0001"
+    pages: "1-12"
+    ka: "064 A2.09"
+    ka_importance_ro: 3.1
+    ka_importance_sro: 3.3
+    applicability: RO/SRO
+    time_critical: false
+    alternate_path: false
+    source: New
+    task_number: "1130010501"
