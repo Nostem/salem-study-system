@@ -20,7 +20,24 @@ const sessionMeta = questions.map((q) => ({
   quizEligible: q.quizEligible,
   requiresReference: q.requiresReference,
   title: q.title,
+  topics: q.topics,
 }));
+
+const yearOptions = [...new Set(questions.map((q) => q.examYear))].sort((a, b) => b - a);
+const trackOptions = [...new Set(questions.map((q) => q.track).filter(Boolean))].sort();
+const topicMap = new Map<string, string>();
+for (const q of questions) {
+  for (const topic of q.topics) {
+    if (!topic || typeof topic !== 'object' || !('slug' in topic)) continue;
+    const slug = String((topic as { slug: unknown }).slug ?? '');
+    if (!slug) continue;
+    const title = 'title' in topic ? String((topic as { title?: unknown }).title ?? slug) : slug;
+    if (!topicMap.has(slug)) topicMap.set(slug, title);
+  }
+}
+const topicOptions = [...topicMap.entries()]
+  .map(([slug, title]) => ({ slug, title }))
+  .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
 <BaseLayout title="Quiz v2 Play (Experimental)" noindex={true}>
@@ -37,6 +54,102 @@ const sessionMeta = questions.map((q) => ({
         </p>
       </div>
     </header>
+
+    <section class="mb-5 bg-bg-card border border-border rounded-lg p-4" aria-labelledby="qv2p-builder-title">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4">
+        <div>
+          <h2 id="qv2p-builder-title" class="font-serif text-xl text-text-primary">Local quiz builder</h2>
+          <p class="text-xs text-text-muted mt-1">
+            Adjust filters and rebuild this local-only deterministic play URL. No backend session is created.
+          </p>
+        </div>
+        <a
+          href={`${base}quiz-v2/?session=1`}
+          class="text-[11px] font-mono uppercase tracking-wider text-text-muted underline hover:text-accent-blue"
+        >Preview order</a>
+      </div>
+      <form id="qv2p-builder" data-testid="qv2p-builder" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Count
+          <input
+            data-testid="qv2p-builder-count"
+            name="count"
+            type="number"
+            min="1"
+            max="100"
+            value="10"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          />
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Seed
+          <input
+            data-testid="qv2p-builder-seed"
+            name="seed"
+            type="text"
+            placeholder="optional"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          />
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Year
+          <select
+            data-testid="qv2p-builder-years"
+            name="years"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          >
+            <option value="">All years</option>
+            {yearOptions.map((year) => <option value={String(year)}>{year}</option>)}
+          </select>
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Track
+          <select
+            data-testid="qv2p-builder-tracks"
+            name="tracks"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          >
+            <option value="">All tracks</option>
+            {trackOptions.map((track) => <option value={String(track)}>{track}</option>)}
+          </select>
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          References
+          <select
+            data-testid="qv2p-builder-ref"
+            name="ref"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          >
+            <option value="include">Include</option>
+            <option value="exclude">Exclude</option>
+            <option value="only">Only ref-required</option>
+          </select>
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
+          Topic
+          <select
+            data-testid="qv2p-builder-topic"
+            name="topics"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          >
+            <option value="">All topics</option>
+            {topicOptions.map((topic) => <option value={topic.slug}>{topic.title}</option>)}
+          </select>
+        </label>
+        <div class="sm:col-span-2 lg:col-span-6 flex flex-wrap gap-2 pt-1">
+          <button
+            type="submit"
+            data-testid="qv2p-builder-submit"
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue hover:bg-bg"
+          >Build play URL</button>
+          <a
+            data-testid="qv2p-builder-reset"
+            href={`${base}quiz-v2/play/`}
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
+          >Reset</a>
+        </div>
+      </form>
+    </section>
 
     <section
       data-testid="qv2p-session"
@@ -252,6 +365,7 @@ const sessionMeta = questions.map((q) => ({
     quizEligible: boolean;
     requiresReference: boolean;
     title: string;
+    topics: unknown[];
   }
 
   const DEFAULT_COUNT = 10;
@@ -284,7 +398,7 @@ const sessionMeta = questions.map((q) => ({
       stemBlocks: [],
       choices: [],
       explanationBlocks: [],
-      topics: [],
+      topics: row.topics,
       sourceRefs: [],
       legacy: {},
     };
@@ -306,6 +420,10 @@ const sessionMeta = questions.map((q) => ({
     const tracksRaw = params.get('tracks');
     if (tracksRaw) {
       filters.tracks = tracksRaw.split(',').map((s) => s.trim()).filter(Boolean);
+    }
+    const topicsRaw = params.get('topics');
+    if (topicsRaw) {
+      filters.topicSlugs = topicsRaw.split(',').map((s) => s.trim()).filter(Boolean);
     }
     const refMode = params.get('ref');
     if (refMode === 'include' || refMode === 'exclude' || refMode === 'only') {
@@ -441,10 +559,41 @@ const sessionMeta = questions.map((q) => ({
     });
   }
 
+  function attachBuilderHandlers(params: URLSearchParams): void {
+    const form = document.getElementById('qv2p-builder') as HTMLFormElement | null;
+    if (!form) return;
+    const setValue = (name: string, value: string | null): void => {
+      const el = form.elements.namedItem(name) as HTMLInputElement | HTMLSelectElement | null;
+      if (el && value !== null) el.value = value;
+    };
+    setValue('count', params.get('count') ?? String(DEFAULT_COUNT));
+    setValue('seed', params.get('seed') ?? '');
+    setValue('years', params.get('years'));
+    setValue('tracks', params.get('tracks'));
+    setValue('topics', params.get('topics'));
+    setValue('ref', params.get('ref') ?? 'include');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const data = new FormData(form);
+      const next = new URL(window.location.href);
+      next.search = '';
+      for (const key of ['seed', 'count', 'years', 'tracks', 'topics', 'ref']) {
+        const raw = String(data.get(key) ?? '').trim();
+        if (!raw) continue;
+        if (key === 'ref' && raw === 'include') continue;
+        if (key === 'count' && raw === String(DEFAULT_COUNT)) continue;
+        next.searchParams.set(key, raw);
+      }
+      window.location.href = next.toString();
+    });
+  }
+
   function init(): void {
     const meta = readSessionMeta();
     const candidateQuestions = meta.map(metaToQuestion);
     const params = new URLSearchParams(window.location.search);
+    attachBuilderHandlers(params);
     const { filters, seed } = parseFiltersFromUrl(params);
     session = buildQuizSession(candidateQuestions, filters, seed ? { seed } : {});
     setText('qv2p-session-id', session.sessionId);

@@ -104,3 +104,24 @@ test('quiz-v2 play produces the same question order across reloads for a seed', 
   const secondRun = await collectOrder();
   expect(secondRun).toEqual(firstRun);
 });
+
+test('quiz-v2 play local builder preserves selected filters in the URL and session', async ({ page }) => {
+  await page.goto('quiz-v2/play/');
+
+  await expect(page.getByTestId('qv2p-builder')).toBeVisible();
+  await page.getByTestId('qv2p-builder-count').fill('2');
+  await page.getByTestId('qv2p-builder-seed').fill('builder-seed');
+  await page.getByTestId('qv2p-builder-years').selectOption('2019');
+  await page.getByTestId('qv2p-builder-tracks').selectOption('RO');
+  await page.getByTestId('qv2p-builder-ref').selectOption('exclude');
+  await page.getByTestId('qv2p-builder-topic').selectOption('control-rod-drive');
+  await page.getByTestId('qv2p-builder-submit').click();
+
+  await expect(page).toHaveURL(/quiz-v2\/play\/\?seed=builder-seed&count=2&years=2019&tracks=RO&topics=control-rod-drive&ref=exclude$/);
+  await expect(page.getByTestId('qv2p-session-seed')).toHaveText('builder-seed');
+  await expect(page.getByTestId('qv2p-session-count')).toHaveText('2');
+  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"years":[2019]');
+  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"tracks":["RO"]');
+  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"topicSlugs":["control-rod-drive"]');
+  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"referenceMode":"exclude"');
+});
