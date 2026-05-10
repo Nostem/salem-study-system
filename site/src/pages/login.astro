@@ -66,6 +66,21 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       status.textContent = 'Logging in…';
       status.className = 'mt-5 min-h-6 text-sm text-slate-300';
 
+      const rawNext = new URLSearchParams(window.location.search).get('next');
+      const defaultRedirect = `${window.location.origin}${window.location.pathname.replace(/login\/?$/, 'quiz')}`;
+      let redirectTo = defaultRedirect;
+      if (rawNext) {
+        try {
+          const candidate = new URL(rawNext, window.location.origin);
+          const appBase = new URL(window.location.pathname.replace(/login\/?$/, ''), window.location.origin).pathname;
+          if (candidate.origin === window.location.origin && candidate.pathname.startsWith(appBase)) {
+            redirectTo = candidate.toString();
+          }
+        } catch {
+          redirectTo = defaultRedirect;
+        }
+      }
+
       try {
         const result = await loginWithUsername({
           username: String(data.get('username') ?? ''),
@@ -73,7 +88,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         });
         status.textContent = `Logged in as ${result.user.username}. Redirecting…`;
         status.className = 'mt-5 min-h-6 text-sm text-emerald-300';
-        window.location.href = `${window.location.origin}${window.location.pathname.replace(/login\/?$/, 'quiz')}`;
+        window.location.href = redirectTo;
       } catch (error) {
         const key = error instanceof Error ? error.message : 'request_failed';
         status.textContent = messages[key] ?? 'Login failed. Try again.';

@@ -4,6 +4,7 @@ const Q23_ID = 'question:q23-eop-flowchart-symbols-concurrent';
 
 test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async ({ page }) => {
   await page.goto('graph-v2/');
+  await expect(page.getByTestId('gv2-empty')).toContainText('Select a node above or in the list to view its connections.');
 
   // Page chrome.
   await expect(page.getByRole('heading', { name: /Graph v2 Preview/i })).toBeVisible();
@@ -111,6 +112,11 @@ test('graph-v2 multi-select builder unions eligible pools and links to quiz-v2 p
   await page.goto('graph-v2/');
 
   await page.locator('[data-gv2-builder-toggle="topic:chemical-and-volume-control-system"]').check();
+
+  await expect(page.getByTestId('gv2-builder-count')).toHaveText('1');
+  await expect(page.getByTestId('gv2-detail-topic:chemical-and-volume-control-system')).toBeVisible();
+  await expect(page.getByTestId('gv2-neighborhood-map-topic:chemical-and-volume-control-system')).toBeVisible();
+
   await page.locator('[data-gv2-builder-toggle="topic:emergency-core-cooling-systems"]').check();
 
   await expect(page.getByTestId('gv2-builder-count')).toHaveText('2');

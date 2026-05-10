@@ -1,6 +1,8 @@
 ---
 import ArticleLayout from '../layouts/ArticleLayout.astro';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
+const historyPath = `${base}history/`;
+const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
 ---
 
 <ArticleLayout
@@ -26,7 +28,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         Quiz history is private and only shows attempts for your account.
       </p>
       <div class="mt-4 flex flex-wrap items-center gap-3">
-        <a href={`${base}login/`} class="rounded-lg border border-[#2a6f97] bg-[#102033] px-4 py-2 text-sm font-semibold text-[#d7ecff] no-underline hover:bg-[#132a44]">Log in</a>
+        <a href={loginHref} class="rounded-lg border border-[#2a6f97] bg-[#102033] px-4 py-2 text-sm font-semibold text-[#d7ecff] no-underline hover:bg-[#132a44]">Log in</a>
         <span class="text-xs text-[#6b7280]">If you do not have an account, contact site administrator through the Contact / Feedback form.</span>
       </div>
     </div>
@@ -142,6 +144,14 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       return new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }).format(new Date(value));
     }
 
+    function normalizeAppHref(href: string | null | undefined): string | null {
+      if (!href) return null;
+      if (/^https?:\/\//i.test(href)) return href;
+      if (href.startsWith(appBase)) return href;
+      if (href.startsWith('/')) return `${appBase.replace(/\/$/, '')}${href}`;
+      return `${appBase}${href.replace(/^\/+/, '')}`;
+    }
+
     function renderSummary(data: QuizHistoryResponse): void {
       document.querySelector<HTMLElement>('[data-history-summary="completed"]')!.textContent = String(data.summary.completedQuizzes);
       document.querySelector<HTMLElement>('[data-history-summary="average"]')!.textContent = formatPercent(data.summary.averageScore);
@@ -168,7 +178,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         return;
       }
       emptyState.classList.add('hidden');
-      sessionsBody.innerHTML = sessions.map((session) => `
+      sessionsBody.innerHTML = sessions.map((session) => {
+        const replayHref = normalizeAppHref(session.replayHref);
+        const reviewMissedHref = normalizeAppHref(session.reviewMissedHref);
+        return `
         <tr class="border-b border-[#172033] text-[#c8cdd5]">
           <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(formatDate(session.completedAt))}</td>
           <td class="py-3 pr-3 align-top">
@@ -177,9 +190,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           </td>
           <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(session.feedbackMode)}${session.completionMode === 'early' ? ' · Early finish' : ''}</td>
           <td class="py-3 pr-3 align-top font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</td>
-          <td class="py-3 pr-3 align-top"><div class="flex flex-wrap gap-2"><button type="button" data-review-session="${escapeHtml(session.id)}" aria-label="Review ${escapeHtml(session.id)}" class="rounded-md border border-[#2a6f97] px-3 py-1 text-xs text-[#d7ecff] hover:bg-[#102033]">Review</button>${session.replayHref ? `<a href="${escapeHtml(session.replayHref)}" class="rounded-md border border-[#334155] px-3 py-1 text-xs text-[#c8cdd5] no-underline hover:bg-[#102033]">Replay</a>` : ''}${session.reviewMissedHref ? `<a href="${escapeHtml(session.reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-1 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Missed</a>` : ''}</div></td>
+          <td class="py-3 pr-3 align-top"><div class="flex flex-wrap gap-2"><button type="button" data-review-session="${escapeHtml(session.id)}" aria-label="Review ${escapeHtml(session.id)}" class="rounded-md border border-[#2a6f97] px-3 py-1 text-xs text-[#d7ecff] hover:bg-[#102033]">Review</button>${replayHref ? `<a href="${escapeHtml(replayHref)}" class="rounded-md border border-[#334155] px-3 py-1 text-xs text-[#c8cdd5] no-underline hover:bg-[#102033]">Replay</a>` : ''}${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-1 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Missed</a>` : ''}</div></td>
         </tr>
-      `).join('');
+      `;
+      }).join('');
     }
 
     function renderWeakTopics(data: QuizHistoryResponse): void {
@@ -202,6 +216,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
 
     function renderReview(session: QuizHistorySession): void {
       if (!reviewEmpty || !reviewContent) return;
+      const replayHref = normalizeAppHref(session.replayHref);
+      const reviewMissedHref = normalizeAppHref(session.reviewMissedHref);
       reviewEmpty.classList.add('hidden');
       reviewContent.innerHTML = `
         <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
@@ -209,8 +225,8 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           <div class="mt-1 text-sm text-[#8b95a5]">${escapeHtml(session.filterSummary)}</div>
         </div>
         <div class="flex flex-wrap gap-2">
-          ${session.replayHref ? `<a href="${escapeHtml(session.replayHref)}" class="rounded-md border border-[#2a6f97] px-3 py-2 text-xs text-[#d7ecff] no-underline hover:bg-[#102033]">Replay full session</a>` : ''}
-          ${session.reviewMissedHref ? `<a href="${escapeHtml(session.reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-2 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Practice missed/unanswered</a>` : ''}
+          ${replayHref ? `<a href="${escapeHtml(replayHref)}" class="rounded-md border border-[#2a6f97] px-3 py-2 text-xs text-[#d7ecff] no-underline hover:bg-[#102033]">Replay full session</a>` : ''}
+          ${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-2 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Practice missed/unanswered</a>` : ''}
         </div>
         ${session.questions.map((question) => `
           <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
@@ -240,7 +256,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           const button = target.closest<HTMLButtonElement>('[data-review-session]');
           if (!button) return;
           const session = data.sessions.find((candidate) => candidate.id === button.dataset.reviewSession);
-          if (session) renderReview(session);
+          if (session) {
+            renderReview(session);
+            document.querySelector<HTMLElement>('[data-testid="history-review"]')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
         });
       } catch (error) {
         loginPanel?.classList.remove('hidden');

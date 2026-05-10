@@ -198,9 +198,13 @@ const topicOptions = [...topicGroups.entries()]
           class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-accent-blue rounded text-accent-blue hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
           disabled
         >Submit progress</button>
-        <span class="ml-auto text-[11px] font-mono text-text-muted">
-          Filters: <code data-testid="qv2p-session-filters">{}</code>
+        <span class="ml-auto text-[11px] font-mono text-text-muted" data-testid="qv2p-session-summary">
+          Session summary loading…
         </span>
+      </div>
+      <button type="button" class="mt-2 text-[11px] font-mono text-text-muted underline hover:text-text-primary" data-testid="qv2p-session-debug-toggle">Show debug session filters</button>
+      <div class="mt-2 hidden text-[11px] font-mono text-text-muted" data-testid="qv2p-session-debug">
+        <code class="block break-all rounded border border-border bg-bg px-2 py-1" data-testid="qv2p-session-filters">{}</code>
       </div>
       <div data-testid="qv2p-submit-status" class="mt-3 text-xs text-text-muted">Answer at least one question, then create a backend session to save progress.</div>
     </section>
@@ -283,8 +287,15 @@ const topicOptions = [...topicGroups.entries()]
             {q.explanationBlocks && q.explanationBlocks.length > 0 && (
               <>
                 <h3 class="qv2p-section-title">Explanation</h3>
-                <div class="qv2p-blocks">
-                  {q.explanationBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                <div class="qv2p-explanation-sections" data-testid="qv2p-explanation-sections">
+                  {q.choices.map((choice) => (
+                    <section class="qv2p-explanation-card" data-testid="qv2p-explanation-card">
+                      <h4>{`Why ${choice.label} is ${choice.isCorrect ? 'correct' : 'wrong'}`}</h4>
+                      <div class="qv2p-blocks">
+                        {choice.isCorrect ? q.explanationBlocks.map((b) => <QuestionBlockRenderer block={b} />) : choice.blocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                      </div>
+                    </section>
+                  ))}
                 </div>
               </>
             )}
@@ -323,6 +334,27 @@ const topicOptions = [...topicGroups.entries()]
     margin-bottom: 0.5rem;
   }
   .qv2p-blocks > * + * { margin-top: 0.5rem; }
+  .qv2p-explanation-sections {
+    display: grid;
+    gap: 0.75rem;
+  }
+  .qv2p-explanation-card {
+    border: 1px solid var(--color-border, #333);
+    border-radius: 0.5rem;
+    background: rgba(0,0,0,0.16);
+    padding: 0.75rem;
+  }
+  .qv2p-explanation-card h4 {
+    margin: 0 0 0.5rem;
+    font-family: var(--font-mono, monospace);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-text-primary, #e0e4ea);
+  }
+  .qv2p-explanation-card .qv2p-blocks p {
+    margin: 0;
+  }
   .qv2p-blocks p { line-height: 1.55; white-space: pre-wrap; }
   .qv2p-blocks img {
     max-width: 100%;
@@ -491,6 +523,26 @@ const topicOptions = [...topicGroups.entries()]
     if (el) el.textContent = text;
   }
 
+  function describeList(values: readonly (string | number)[], emptyLabel: string): string {
+    return values.length > 0 ? values.join(', ') : emptyLabel;
+  }
+
+  function summarizeSession(nextSession: QuizSession): string {
+    const f = nextSession.filters;
+    const parts: string[] = [];
+    if (f.questionSlugs.length > 0) {
+      parts.push(`Graph builder · ${f.questionSlugs.length} selected question${f.questionSlugs.length === 1 ? '' : 's'}`);
+    } else {
+      parts.push(`${nextSession.questionSlugs.length}-question session`);
+    }
+    if (f.years.length > 0) parts.push(`Years ${describeList(f.years, 'all')}`);
+    if (f.tracks.length > 0) parts.push(`Tracks ${describeList(f.tracks, 'all')}`);
+    if (f.topicSlugs.length > 0) parts.push(`Topics ${describeList(f.topicSlugs, 'all')}`);
+    if (f.referenceMode === 'exclude') parts.push('reference-required excluded');
+    if (f.referenceMode === 'only') parts.push('reference-required only');
+    return parts.join(' · ');
+  }
+
   function detailFor(slug: string): HTMLElement | null {
     return document.querySelector<HTMLElement>(`[data-qv2p-detail="${slug}"]`);
   }
@@ -588,6 +640,11 @@ const topicOptions = [...topicGroups.entries()]
   function attachNavHandlers(): void {
     const prev = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-prev"]');
     const next = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-next"]');
+    const debugToggle = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-session-debug-toggle"]');
+    const debug = document.querySelector<HTMLElement>('[data-testid="qv2p-session-debug"]');
+    debugToggle?.addEventListener('click', () => {
+      debug?.classList.toggle('hidden');
+    });
     prev?.addEventListener('click', () => {
       if (currentIndex > 0) {
         currentIndex--;
@@ -641,6 +698,7 @@ const topicOptions = [...topicGroups.entries()]
     setText('qv2p-session-seed', session.seed);
     setText('qv2p-session-count', String(session.questionSlugs.length));
     setText('qv2p-session-total', String(session.totalEligible));
+    setText('qv2p-session-summary', summarizeSession(session));
     setText('qv2p-session-filters', JSON.stringify(session.filters));
     setText('qv2p-session-source', sourceLabel);
     showCurrent();

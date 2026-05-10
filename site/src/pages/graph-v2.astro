@@ -410,7 +410,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
 
       <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
         <div id="gv2-empty" data-testid="gv2-empty" class="text-sm text-text-muted">
-          Select a node on the left to view its connections.
+          Select a node above or in the list to view its connections.
         </div>
         <div id="gv2-detail-root"></div>
       </article>
@@ -472,6 +472,34 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
           </li>
         `).join('')}
       </ul>
+    `;
+  }
+
+  function renderNeighborhoodMap(detail: DetailData): string {
+    const neighbors = [...detail.outgoing, ...detail.incoming].slice(0, 8);
+    if (neighbors.length === 0) return '';
+    return `
+      <section class="mb-5 rounded border border-border bg-bg/50 p-3" data-testid="gv2-neighborhood-map-${escapeHtml(detail.id)}">
+        <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-3">Visual neighborhood</h3>
+        <div class="flex flex-wrap items-center justify-center gap-3 text-center text-xs">
+          ${neighbors.slice(0, 4).map((edge) => `
+            <button type="button" data-gv2-select="${escapeHtml(edge.nodeId)}" class="max-w-[160px] rounded border border-border bg-bg-card px-2 py-2 text-text-body hover:border-accent-blue">
+              <span class="block font-mono text-[10px] text-text-muted">${escapeHtml(edge.type)}</span>
+              <span class="block truncate">${escapeHtml(edge.title)}</span>
+            </button>
+          `).join('')}
+          <div class="rounded-full border border-accent-blue/70 bg-accent-blue/10 px-4 py-3 text-text-primary shadow-sm">
+            <span class="block font-mono text-[10px] uppercase tracking-wider text-accent-blue">Selected</span>
+            <span class="block max-w-[180px] truncate">${escapeHtml(detail.title)}</span>
+          </div>
+          ${neighbors.slice(4).map((edge) => `
+            <button type="button" data-gv2-select="${escapeHtml(edge.nodeId)}" class="max-w-[160px] rounded border border-border bg-bg-card px-2 py-2 text-text-body hover:border-accent-blue">
+              <span class="block font-mono text-[10px] text-text-muted">${escapeHtml(edge.type)}</span>
+              <span class="block truncate">${escapeHtml(edge.title)}</span>
+            </button>
+          `).join('')}
+        </div>
+      </section>
     `;
   }
 
@@ -542,6 +570,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
             id: <code>${escapeHtml(detail.id)}</code> · slug: <code>${escapeHtml(detail.slug)}</code>
           </div>
         </header>
+        ${renderNeighborhoodMap(detail)}
         <div class="mb-5 grid gap-4 xl:grid-cols-[1fr_240px]">
           <div class="space-y-4">
             <section class="rounded border border-border bg-bg/50 p-3">
@@ -682,8 +711,13 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
       if (!target) return;
       const id = target.getAttribute('data-gv2-builder-toggle');
       if (!id) return;
-      if (target.checked) builderSelection.add(id); else builderSelection.delete(id);
-      updateBuilder();
+      if (target.checked) {
+        builderSelection.add(id);
+        selectNode(id);
+      } else {
+        builderSelection.delete(id);
+        updateBuilder();
+      }
     });
     document.addEventListener('click', (event) => {
       const target = event.target instanceof Element ? event.target.closest<HTMLButtonElement>('[data-gv2-builder-add]') : null;
