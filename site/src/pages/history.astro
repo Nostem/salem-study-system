@@ -51,6 +51,34 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         </div>
       </div>
 
+      <section data-testid="history-personal-analytics" class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+        <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+          <div>
+            <h2 class="text-lg font-semibold text-[#e0e4ea]">Personal study dashboard</h2>
+            <p class="mt-1 text-xs text-[#6b7280]">Small beta summary of accuracy, due review load, and mastery state before /quiz migration.</p>
+          </div>
+          <a href={`${base}quiz-v2/review/`} class="rounded-md border border-[#2a6f97] px-3 py-2 text-xs text-[#d7ecff] no-underline hover:bg-[#102033]">Open due review</a>
+        </div>
+        <dl class="mt-4 grid gap-3 sm:grid-cols-4">
+          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
+            <dt class="text-xs uppercase tracking-[0.16em] text-[#6b7280]">Overall accuracy</dt>
+            <dd data-history-analytics="accuracy" class="mt-2 text-2xl font-semibold text-[#e0e4ea]">—</dd>
+          </div>
+          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
+            <dt class="text-xs uppercase tracking-[0.16em] text-[#6b7280]">Due reviews</dt>
+            <dd data-history-analytics="due" class="mt-2 text-2xl font-semibold text-[#facc15]">0</dd>
+          </div>
+          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
+            <dt class="text-xs uppercase tracking-[0.16em] text-[#6b7280]">Shaky</dt>
+            <dd data-history-analytics="shaky" class="mt-2 text-2xl font-semibold text-[#fca5a5]">0</dd>
+          </div>
+          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
+            <dt class="text-xs uppercase tracking-[0.16em] text-[#6b7280]">Mastered</dt>
+            <dd data-history-analytics="mastered" class="mt-2 text-2xl font-semibold text-[#8fd694]">0</dd>
+          </div>
+        </dl>
+      </section>
+
       <div class="grid gap-6 xl:grid-cols-[minmax(0,1fr)_320px]">
         <section class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
           <div class="mb-3 flex items-center justify-between gap-3">
@@ -99,6 +127,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     const reviewEmpty = document.querySelector<HTMLElement>('[data-history-review-empty]');
     const reviewContent = document.querySelector<HTMLElement>('[data-history-review-content]');
     const weakTopicsList = document.querySelector<HTMLElement>('[data-history-weak-topics-list]');
+    const appBase = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 
     function formatPercent(value: number): string {
       return `${Math.round((Number(value) || 0) * 100)}%`;
@@ -118,6 +147,10 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
       document.querySelector<HTMLElement>('[data-history-summary="average"]')!.textContent = formatPercent(data.summary.averageScore);
       document.querySelector<HTMLElement>('[data-history-summary="pass-rate"]')!.textContent = formatPercent(data.summary.passRate);
       document.querySelector<HTMLElement>('[data-history-summary="answered"]')!.textContent = String(data.summary.questionsAnswered);
+      document.querySelector<HTMLElement>('[data-history-analytics="accuracy"]')!.textContent = data.summary.overallAccuracy == null ? '—' : formatPercent(data.summary.overallAccuracy);
+      document.querySelector<HTMLElement>('[data-history-analytics="due"]')!.textContent = String(data.summary.dueReviewCount ?? 0);
+      document.querySelector<HTMLElement>('[data-history-analytics="shaky"]')!.textContent = String(data.summary.shakyCount ?? 0);
+      document.querySelector<HTMLElement>('[data-history-analytics="mastered"]')!.textContent = String(data.summary.masteredCount ?? 0);
       const last = document.querySelector<HTMLElement>('[data-history-last-completed]');
       if (last) last.textContent = data.summary.lastCompletedAt ? `Last: ${formatDate(data.summary.lastCompletedAt)}` : '';
     }
@@ -162,6 +195,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
             <div class="font-mono text-xs text-[#fca5a5]">${formatPercent(topic.accuracy)}</div>
           </div>
           <div class="mt-1 text-xs text-[#6b7280]">${topic.misses} miss${topic.misses === 1 ? '' : 'es'} / ${topic.attempts} attempts</div>
+          <a href="${appBase}quiz-v2/play/?topics=${encodeURIComponent(topic.slug)}&count=10&seed=weak-topic" class="mt-2 inline-block rounded border border-[#334155] px-2 py-1 text-xs text-[#c8cdd5] no-underline hover:bg-[#102033]">Practice topic</a>
         </div>
       `).join('');
     }

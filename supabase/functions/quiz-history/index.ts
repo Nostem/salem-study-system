@@ -166,6 +166,17 @@ Deno.serve(async (req) => {
   if (userError || !userData.user) return jsonResponse({ error: 'invalid_authorization' }, 401);
   const userId = userData.user.id;
 
+  const { data: stateRows, error: stateError } = await admin
+    .from('user_question_state')
+    .select('mastery_state, next_review_at')
+    .eq('user_id', userId);
+  if (stateError) return jsonResponse({ error: 'state_lookup_failed' }, 500);
+
+  const now = Date.now();
+  const dueReviewCount = (stateRows ?? []).filter((state) => state.next_review_at && Date.parse(state.next_review_at) <= now).length;
+  const shakyCount = (stateRows ?? []).filter((state) => state.mastery_state === 'shaky').length;
+  const masteredCount = (stateRows ?? []).filter((state) => state.mastery_state === 'mastered').length;
+
   const { data, error } = await admin
     .from('quiz_sessions')
     .select(`
@@ -300,6 +311,9 @@ Deno.serve(async (req) => {
       passRate: completedQuizzes > 0 ? percent(passCount / completedQuizzes) : 0,
       lastCompletedAt: sessions[0]?.completedAt ?? null,
       overallAccuracy: totalAnswered > 0 ? percent(totalCorrect / totalAnswered) : 0,
+      dueReviewCount,
+      shakyCount,
+      masteredCount,
     },
     weakTopics,
     sessions,

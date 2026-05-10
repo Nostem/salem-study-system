@@ -38,6 +38,10 @@ const historyResponse = {
     passCount: 1,
     passRate: 0.5,
     lastCompletedAt: '2026-05-05T06:40:00.000Z',
+    overallAccuracy: 0.67,
+    dueReviewCount: 4,
+    shakyCount: 1,
+    masteredCount: 2,
   },
   weakTopics: [
     { slug: 'pressurizer', title: 'Pressurizer', attempts: 2, misses: 1, accuracy: 0.5 },
@@ -120,6 +124,11 @@ test('history page renders summary cards, quiz attempts, weak topics, and prior 
   await expect(table).toContainText('Early finish');
   await expect(page.getByTestId('history-weak-topics')).toContainText('Pressurizer');
   await expect(page.getByTestId('history-weak-topics')).toContainText('50%');
+  await expect(page.getByTestId('history-weak-topics').getByRole('link', { name: /Practice topic/i })).toHaveAttribute('href', /topics=pressurizer/);
+  await expect(page.getByTestId('history-personal-analytics')).toContainText('Overall accuracy');
+  await expect(page.getByTestId('history-personal-analytics')).toContainText('67%');
+  await expect(page.getByTestId('history-personal-analytics')).toContainText('Due reviews');
+  await expect(page.locator('[data-history-analytics="due"]')).toHaveText('4');
 
   await table.getByRole('button', { name: /Review session-pass/i }).click();
   await expect(page.getByTestId('history-review')).toContainText('2018 Q10');

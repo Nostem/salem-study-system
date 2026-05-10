@@ -114,6 +114,10 @@ test('graph-v2 multi-select builder unions eligible pools and links to quiz-v2 p
   await page.locator('[data-gv2-builder-toggle="topic:emergency-core-cooling-systems"]').check();
 
   await expect(page.getByTestId('gv2-builder-count')).toHaveText('2');
+  await expect(page.getByTestId('gv2-builder-summary')).toContainText('2 nodes selected');
+  await expect(page.getByTestId('gv2-builder-tray')).toContainText('CVCS');
+  await expect(page.getByTestId('gv2-builder-tray')).toContainText('ECCS');
+  await expect(page.getByTestId('gv2-builder-chip')).toHaveCount(2);
   const pool = Number(await page.getByTestId('gv2-builder-pool').textContent());
   expect(pool).toBeGreaterThan(20);
 

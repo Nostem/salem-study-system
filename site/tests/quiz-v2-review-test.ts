@@ -5,6 +5,8 @@ test('quiz-v2 review uses whole questions and stores local review ratings', asyn
 
   await expect(page.getByRole('heading', { name: /Quiz v2 Review/i })).toBeVisible();
   await expect(page.getByText(/whole-question review/i)).toBeVisible();
+  await expect(page.getByTestId('qv2r-mode')).toContainText(/queue/i);
+  await expect(page.getByText(/Review missed from history/i)).toBeVisible();
   await expect(page.getByTestId('qv2r-total')).toHaveText(/^[1-9]\d*$/);
   await expect(page.getByTestId('qv2r-new')).toHaveText(/^[1-9]\d*$/);
 
