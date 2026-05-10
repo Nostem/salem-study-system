@@ -59,6 +59,8 @@ const historyResponse = {
       totalQuestions: 5,
       passStatus: 'pass',
       filterSummary: '2018 · RO · 5 questions',
+      replayHref: '/quiz-v2/play/?slugs=q10-rps-pzr-press-channel-failure&count=1&seed=history-replay',
+      reviewMissedHref: '/quiz-v2/review/?slugs=q10-rps-pzr-press-channel-failure',
       questions: [
         {
           position: 1,
@@ -96,7 +98,7 @@ test('history page requires login before showing performance data', async ({ pag
 
   await expect(page.getByTestId('history-login-required')).toBeVisible();
   await expect(page.getByRole('heading', { name: /Log in to view your progress/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /Log in/i })).toHaveAttribute('href', /\/salem-study-system\/login\/?$/);
+  await expect(page.getByRole('link', { name: /Log in/i })).toHaveAttribute('href', /\/salem-study-system\/login\/\?next=%2Fsalem-study-system%2Fhistory%2F$/);
   await expect(page.getByText(/contact site administrator/i)).toBeVisible();
   await expect(page.getByTestId('history-app')).toHaveClass(/hidden/);
 });
@@ -129,8 +131,11 @@ test('history page renders summary cards, quiz attempts, weak topics, and prior 
   await expect(page.getByTestId('history-personal-analytics')).toContainText('67%');
   await expect(page.getByTestId('history-personal-analytics')).toContainText('Due reviews');
   await expect(page.locator('[data-history-analytics="due"]')).toHaveText('4');
+  await expect(table.getByRole('link', { name: /^Replay$/i })).toHaveAttribute('href', /\/salem-study-system\/quiz-v2\/play\/\?slugs=q10-rps-pzr-press-channel-failure&count=1&seed=history-replay$/);
+  await expect(table.getByRole('link', { name: /^Missed$/i })).toHaveAttribute('href', /\/salem-study-system\/quiz-v2\/review\/\?slugs=q10-rps-pzr-press-channel-failure$/);
 
   await table.getByRole('button', { name: /Review session-pass/i }).click();
+  await expect(page.getByTestId('history-review')).toBeInViewport();
   await expect(page.getByTestId('history-review')).toContainText('2018 Q10');
   await expect(page.getByTestId('history-review')).toContainText('Selected: A');
   await expect(page.getByTestId('history-review')).toContainText('Original: C');

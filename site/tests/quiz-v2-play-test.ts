@@ -37,7 +37,8 @@ test('quiz-v2 play route loads a deterministic session with an explicit count', 
   await expect(page.getByTestId('qv2p-session-seed')).toHaveText('play-default-test');
   await expect(page.getByTestId('qv2p-session-count')).toHaveText('4');
   await expect(page.getByTestId('qv2p-session-index')).toHaveText('1');
-  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"count":4');
+  await expect(page.getByTestId('qv2p-session-summary')).toContainText('4-question session');
+  await expect(page.getByTestId('qv2p-session-debug')).toBeHidden();
 
   // Exactly one question is visible.
   const visibleDetails = page.locator('.qv2p-detail:not(.hidden)');
@@ -81,6 +82,20 @@ test('quiz-v2 play answer selection reveals feedback and disables choices', asyn
   for (let i = 0; i < count; i++) {
     await expect(choices.nth(i)).toBeDisabled();
   }
+});
+
+test('quiz-v2 play formats explanations as mobile-scannable sections', async ({ page }) => {
+  await page.goto('quiz-v2/play/?slugs=q8-pzr-saturation-rcp-restart&count=1&seed=explanation-format');
+
+  const detail = page.locator('.qv2p-detail:not(.hidden)');
+  await expect(detail).toHaveCount(1);
+  await detail.locator('.qv2p-choice').first().click();
+
+  const explanation = detail.getByTestId('qv2p-explanation-sections');
+  await expect(explanation).toBeVisible();
+  const cards = explanation.getByTestId('qv2p-explanation-card');
+  await expect(cards.first()).toContainText(/Why [A-D] is (correct|wrong)/);
+  expect(await cards.count()).toBeGreaterThan(1);
 });
 
 test('quiz-v2 play advances to the next question and prev returns to the first', async ({ page }) => {
@@ -149,10 +164,11 @@ test('quiz-v2 play local builder preserves selected filters in the URL and sessi
   await expect(page).toHaveURL(/quiz-v2\/play\/\?seed=builder-seed&count=2&years=2019&tracks=RO&topics=control-rod-drive&ref=exclude$/);
   await expect(page.getByTestId('qv2p-session-seed')).toHaveText('builder-seed');
   await expect(page.getByTestId('qv2p-session-count')).toHaveText('2');
-  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"years":[2019]');
-  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"tracks":["RO"]');
-  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"topicSlugs":["control-rod-drive"]');
-  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"referenceMode":"exclude"');
+  await expect(page.getByTestId('qv2p-session-summary')).toContainText('2019');
+  await expect(page.getByTestId('qv2p-session-summary')).toContainText('RO');
+  await expect(page.getByTestId('qv2p-session-summary')).toContainText('control-rod-drive');
+  await page.getByTestId('qv2p-session-debug-toggle').click();
+  await expect(page.getByTestId('qv2p-session-debug')).toContainText('"referenceMode":"exclude"');
 });
 
 test('quiz-v2 play accepts explicit graph-selected question slugs', async ({ page }) => {
@@ -160,7 +176,9 @@ test('quiz-v2 play accepts explicit graph-selected question slugs', async ({ pag
 
   await expect(page.getByTestId('qv2p-session-total')).toHaveText('1');
   await expect(page.getByTestId('qv2p-session-count')).toHaveText('1');
-  await expect(page.getByTestId('qv2p-session-filters')).toContainText('"questionSlugs":["q8-pzr-saturation-rcp-restart"]');
+  await expect(page.getByTestId('qv2p-session-summary')).toContainText('Graph builder');
+  await expect(page.getByTestId('qv2p-session-summary')).toContainText('1 selected question');
+  await expect(page.getByTestId('qv2p-session-summary')).not.toContainText('questionSlugs');
   await expect(page.locator('.qv2p-detail:not(.hidden)')).toHaveAttribute('data-qv2p-detail', 'q8-pzr-saturation-rcp-restart');
 });
 

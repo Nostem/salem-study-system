@@ -14,6 +14,17 @@ test('site-wide contact link opens a feedback modal on the homepage', async ({ p
   await expect(page.getByTestId('contact-page-url')).toContainText('/salem-study-system/');
 });
 
+test('contact trigger collapses on mobile so it does not cover study content', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('graph-v2/');
+
+  const trigger = page.getByRole('button', { name: /Feedback/i });
+  await expect(trigger).toBeVisible();
+  await expect(trigger).toHaveText('Feedback');
+  const box = await trigger.boundingBox();
+  expect(box?.width ?? 999).toBeLessThan(120);
+});
+
 test('contact form submits feedback with current page context', async ({ page }) => {
   const submittedBodies: any[] = [];
   await page.route('**/functions/v1/contact-feedback', async (route) => {

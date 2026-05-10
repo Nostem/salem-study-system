@@ -48,3 +48,31 @@ test('login page uses username and password instead of email', async ({ page }) 
   await expect(page.getByText(/do not have an account/i)).toBeVisible();
   await expect(page.getByText(/contact site administrator/i)).toBeVisible();
 });
+
+test('login preserves a safe next destination after successful username login', async ({ page }) => {
+  await page.route('**/functions/v1/username-login', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({
+        access_token: 'playwright-access-token',
+        refresh_token: 'playwright-refresh-token',
+        expires_in: 3600,
+        token_type: 'bearer',
+        user: {
+          id: '00000000-0000-4000-8000-000000000001',
+          username: 'operator_one',
+          display_name: 'Operator One',
+          role: 'learner',
+        },
+      }),
+    });
+  });
+
+  await page.goto('login/?next=%2Fsalem-study-system%2Fhistory%2F');
+  await page.getByLabel('Username').fill('operator_one');
+  await page.getByLabel('Password').fill('password123');
+  await page.getByRole('button', { name: /^Log in$/i }).click();
+
+  await expect(page).toHaveURL(/\/salem-study-system\/history\/?$/);
+});

@@ -57,13 +57,12 @@
 
 <div id="contact-confirmation" data-testid="contact-confirmation" class="fixed bottom-16 right-4 z-40 max-w-sm rounded-md border border-[#10b981]/40 bg-[#0d1220] px-4 py-3 text-xs text-[#10b981] shadow-lg hidden" aria-live="polite"></div>
 
-<button
-  id="contact-trigger"
-  type="button"
-  class="fixed bottom-4 right-4 z-40 rounded-full border border-[#2a6f97] bg-[#0d1220] px-4 py-2 text-xs font-mono text-[#c8cdd5] shadow-lg hover:bg-[#111827] hover:text-[#e0e4ea] transition-colors"
->
-  Contact / Feedback
-</button>
+  <button
+    id="contact-trigger"
+    type="button"
+    aria-label="Contact / Feedback"
+    class="fixed bottom-4 right-4 z-40 rounded-full border border-[#2a6f97] bg-[#0d1220] px-3 py-2 text-xs font-mono text-[#c8cdd5] shadow-lg hover:bg-[#111827] hover:text-[#e0e4ea] transition-colors sm:px-4"
+  >Feedback</button>
 
 <script>
   import { submitContactFeedback } from '../utils/auth-client';
