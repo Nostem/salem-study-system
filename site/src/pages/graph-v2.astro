@@ -350,12 +350,17 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
           >jump to selected node</a>
         </div>
         <section class="mt-3 rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-muted" data-testid="gv2-builder">
-          <div class="font-mono text-[10px] uppercase tracking-wider text-text-primary">Quiz builder</div>
+          <div class="flex items-center justify-between gap-2">
+            <div class="font-mono text-[10px] uppercase tracking-wider text-text-primary">Quiz builder</div>
+            <span class="font-mono text-[10px] text-text-muted" data-testid="gv2-builder-summary">No nodes selected</span>
+          </div>
           <div class="mt-1"><span data-testid="gv2-builder-count">0</span> selected · <span data-testid="gv2-builder-pool">0</span> eligible questions</div>
+          <div id="gv2-builder-tray" data-testid="gv2-builder-tray" class="mt-2 hidden space-y-1"></div>
           <div class="mt-2 flex flex-wrap gap-2">
             <a id="gv2-builder-play" data-testid="gv2-builder-play" data-base={base} href="#" class="pointer-events-none opacity-40 rounded border border-accent-blue px-2 py-1 text-accent-blue no-underline">Generate quiz</a>
             <button type="button" id="gv2-builder-clear" data-testid="gv2-builder-clear" class="rounded border border-border px-2 py-1 text-text-muted">Clear</button>
           </div>
+          <p class="mt-2 text-[11px] text-text-muted">Selections union and de-duplicate eligible question pools before opening quiz-v2.</p>
         </section>
         <div
           id="gv2-no-results"
@@ -571,11 +576,29 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
 
   function updateBuilder(): void {
     const slugs = new Set<string>();
-    builderSelection.forEach((id) => detailData[id]?.eligibleQuestionSlugs.forEach((slug) => slugs.add(slug)));
+    const selectedDetails = Array.from(builderSelection)
+      .map((id) => detailData[id])
+      .filter((detail): detail is DetailData => Boolean(detail));
+    selectedDetails.forEach((detail) => detail.eligibleQuestionSlugs.forEach((slug) => slugs.add(slug)));
     const count = document.querySelector('[data-testid="gv2-builder-count"]');
     const pool = document.querySelector('[data-testid="gv2-builder-pool"]');
+    const summary = document.querySelector('[data-testid="gv2-builder-summary"]');
+    const tray = document.getElementById('gv2-builder-tray');
     if (count) count.textContent = String(builderSelection.size);
     if (pool) pool.textContent = String(slugs.size);
+    if (summary) summary.textContent = selectedDetails.length > 0 ? `${selectedDetails.length} node${selectedDetails.length === 1 ? '' : 's'} selected` : 'No nodes selected';
+    if (tray) {
+      tray.classList.toggle('hidden', selectedDetails.length === 0);
+      tray.innerHTML = selectedDetails.map((detail) => `
+        <div class="flex items-start justify-between gap-2 rounded border border-border bg-bg px-2 py-1" data-testid="gv2-builder-chip">
+          <button type="button" data-gv2-select="${escapeHtml(detail.id)}" class="min-w-0 text-left hover:text-accent-blue">
+            <span class="block truncate text-text-primary">${escapeHtml(detail.title)}</span>
+            <span class="block font-mono text-[10px] text-text-muted">${escapeHtml(detail.kind)} · ${escapeHtml(detail.eligibleQuestionCount)} eligible</span>
+          </button>
+          <button type="button" data-gv2-builder-remove="${escapeHtml(detail.id)}" aria-label="Remove ${escapeHtml(detail.title)}" class="shrink-0 rounded border border-border px-2 text-text-muted hover:text-text-primary">×</button>
+        </div>
+      `).join('');
+    }
     document.querySelectorAll<HTMLInputElement>('[data-gv2-builder-toggle]').forEach((el) => { el.checked = builderSelection.has(el.getAttribute('data-gv2-builder-toggle') ?? ''); });
     const play = document.getElementById('gv2-builder-play') as HTMLAnchorElement | null;
     if (play) {
@@ -669,6 +692,13 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
       builderSelection.add(id);
       updateBuilder();
     });
+    document.addEventListener('click', (event) => {
+      const target = event.target instanceof Element ? event.target.closest<HTMLButtonElement>('[data-gv2-builder-remove]') : null;
+      const id = target?.getAttribute('data-gv2-builder-remove');
+      if (!id) return;
+      builderSelection.delete(id);
+      updateBuilder();
+    });
     document.getElementById('gv2-builder-clear')?.addEventListener('click', () => { builderSelection.clear(); updateBuilder(); });
     document.getElementById('gv2-search')?.addEventListener('input', applyFilters);
     document.getElementById('gv2-kind')?.addEventListener('change', applyFilters);
@@ -697,6 +727,12 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
   .gv2-item.hidden { display: none; }
   @media (max-width: 640px) {
     #gv2-list { max-height: 42vh; }
+    #gv2-search, #gv2-kind, #gv2-edge-type { min-height: 44px; }
+    [data-testid="gv2-practice-only"], [data-testid="gv2-focus-neighborhood"], [data-gv2-builder-toggle] {
+      width: 20px;
+      height: 20px;
+    }
     [data-gv2-select], #gv2-builder button, #gv2-builder a { min-height: 44px; }
+    #gv2-builder button, #gv2-builder a { display: inline-flex; align-items: center; }
   }
 </style>

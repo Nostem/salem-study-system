@@ -35,7 +35,7 @@ const reviewMeta = questions.map((q) => ({
         <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · persisted whole-question review</div>
         <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Review</h1>
         <p class="text-sm text-text-muted max-w-2xl mt-1">
-          Spaced-review foundation using existing source-traceable NRC questions as whole items.
+          Review missed, weak, due, or newly introduced NRC questions as whole items. Logged-in learners use the persisted review queue when available; scoped history links still load exact missed-question sets.
           This does not create generated flashcards and does not touch production <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a>.
         </p>
       </div>
@@ -46,7 +46,7 @@ const reviewMeta = questions.map((q) => ({
         <div>
           <h2 id="qv2r-summary-title" class="font-serif text-xl text-text-primary">Review queue</h2>
           <p class="text-xs text-text-muted mt-1">
-            Rates whole questions only. State is persisted in this browser under <code>salem-qv2-review-state-v1</code>. History links can prefill missed-question queues.
+            Rates whole questions only. Account-backed due reviews are used when you are logged in; browser-local ratings remain available for scoped history/replay queues.
           </p>
         </div>
         <button
@@ -77,9 +77,18 @@ const reviewMeta = questions.map((q) => ({
           <dd class="text-text-primary text-lg" data-testid="qv2r-reviewed">0</dd>
         </div>
       </dl>
-      <div class="mt-3 text-[11px] font-mono text-text-muted">
-        Current item: <code data-testid="qv2r-current-slug">—</code>
-        <span class="ml-2" data-testid="qv2r-scope">All reviewable questions</span>
+      <div class="mt-3 grid gap-2 text-[11px] font-mono text-text-muted sm:grid-cols-[1fr_auto] sm:items-center">
+        <div>
+          Current item: <code data-testid="qv2r-current-slug">—</code>
+          <span class="ml-2" data-testid="qv2r-scope">All reviewable questions</span>
+        </div>
+        <div class="rounded border border-border bg-bg/60 px-2 py-1 text-text-muted" data-testid="qv2r-mode">Loading queue mode…</div>
+      </div>
+      <div class="mt-3 grid gap-2 sm:grid-cols-4" aria-label="Review queue shortcuts">
+        <a href={`${base}quiz-v2/review/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">Due review</a>
+        <a href={`${base}history/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">Review missed from history</a>
+        <a href={`${base}history/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">Weak topics</a>
+        <a href={`${base}quiz-v2/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">New questions</a>
       </div>
       <section class="mt-4 border-t border-border pt-4" aria-labelledby="qv2r-progress-title">
         <h3 id="qv2r-progress-title" class="font-serif text-lg text-text-primary">Progress analytics</h3>
@@ -113,7 +122,7 @@ const reviewMeta = questions.map((q) => ({
     <script type="application/json" id="qv2r-meta" set:html={JSON.stringify(reviewMeta)} />
 
     <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[420px]">
-      <div id="qv2r-empty" data-testid="qv2r-empty" class="text-sm text-text-muted">
+      <div id="qv2r-empty" data-testid="qv2r-empty" class="rounded border border-border bg-bg/60 p-4 text-sm text-text-muted">
         Loading review queue…
       </div>
 
@@ -269,6 +278,7 @@ const reviewMeta = questions.map((q) => ({
   .qv2r-rating:hover { background: var(--color-bg, #111); }
   @media (max-width: 640px) {
     [data-testid="qv2r-reset"], [data-testid="qv2r-reveal"], [data-testid="qv2r-skip"], .qv2r-rating { min-height: 44px; }
+    main a { min-height: 44px; display: inline-flex; align-items: center; }
   }
   [data-correct="true"].is-revealed-correct { border-color: #4ade80; background: rgba(74, 222, 128, 0.08); }
 </style>
@@ -419,7 +429,15 @@ const reviewMeta = questions.map((q) => ({
     const empty = document.getElementById('qv2r-empty');
     if (!currentSlug) {
       if (empty) {
-        empty.textContent = 'No reviewable questions are available.';
+        const mode = document.querySelector('[data-testid="qv2r-mode"]')?.textContent ?? '';
+        empty.innerHTML = `
+          <h2 class="font-serif text-xl text-text-primary">No due questions right now.</h2>
+          <p class="mt-2">${mode.includes('account') ? 'Your persisted review queue has no due items. Use History to review missed questions, or start a new quiz to add more attempts.' : 'This scoped queue has no reviewable questions. Return to History for missed-question queues or start a new quiz-v2 session.'}</p>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href="${window.location.origin}${window.location.pathname.replace(/quiz-v2\/review\/$/, 'history/')}" class="rounded border border-border px-3 py-2 text-xs text-text-primary no-underline">Open history</a>
+            <a href="${window.location.origin}${window.location.pathname.replace(/quiz-v2\/review\/$/, 'quiz-v2/')}" class="rounded border border-accent-blue px-3 py-2 text-xs text-accent-blue no-underline">Start quiz-v2</a>
+          </div>
+        `;
         empty.classList.remove('hidden');
       }
       renderSummary(questions);
@@ -497,7 +515,11 @@ const reviewMeta = questions.map((q) => ({
       }
     }
     const questions = rows.map(metaToQuestion);
+    const modeText = scope.size > 0
+      ? 'History / missed-question queue'
+      : (backendReviewAvailable ? 'Account-persisted due queue' : 'Local all-question queue');
     setText('qv2r-scope', scope.size > 0 ? `${questions.length} question history/replay queue` : (backendReviewAvailable ? `${questions.length} account-persisted due questions` : 'All reviewable questions'));
+    setText('qv2r-mode', modeText);
     rebuildQueue(questions);
     currentSlug = chooseNextSlug();
     attachHandlers(questions);

@@ -117,6 +117,9 @@ export type QuizHistoryResponse = {
     passRate: number;
     lastCompletedAt: string | null;
     overallAccuracy?: number;
+    dueReviewCount?: number;
+    shakyCount?: number;
+    masteredCount?: number;
   };
   weakTopics: Array<{ slug: string; title: string; attempts: number; misses: number; accuracy: number }>;
   sessions: QuizHistorySession[];
