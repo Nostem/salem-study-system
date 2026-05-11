@@ -65,7 +65,9 @@ export function isCreateQuizV2SessionResponse(value: unknown): value is CreateQu
     session.schemaVersion === 1 &&
     typeof session.sessionId === 'string' &&
     session.sessionId.startsWith('qv2-') &&
-    (session.backendSessionId === undefined || typeof session.backendSessionId === 'string') &&
+    (response.source === 'backend'
+      ? typeof session.backendSessionId === 'string' && session.backendSessionId.length > 0
+      : session.backendSessionId === undefined || typeof session.backendSessionId === 'string') &&
     typeof session.seed === 'string' &&
     Array.isArray(session.questionSlugs) &&
     typeof session.totalEligible === 'number' &&

@@ -5,6 +5,7 @@ import {
   getStructuredQuestions,
   questionDisplayLabel,
 } from '../../utils/structured-quiz-data';
+import { sourceRefHref, sourceRefLabel } from '../../utils/source-ref-links';
 
 const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
@@ -195,11 +196,16 @@ const reviewMeta = questions.map((q) => ({
                 <h3 class="qv2r-section-title">Source references</h3>
                 <ul class="text-sm text-text-body space-y-1">
                   {q.sourceRefs.map((ref) => {
-                    const label = ref.label || ref.slug || ref.path || ref.kind;
+                    const label = sourceRefLabel(ref);
+                    const href = sourceRefHref(ref, base);
                     return (
                       <li class="font-mono text-[12px]">
                         <span class="inline-block min-w-[90px] text-text-muted">[{ref.kind}]</span>
-                        <span class="text-text-primary">{label}</span>
+                        {href ? (
+                          <a href={href} class="text-text-primary underline hover:text-accent-blue" data-testid="qv2r-source-ref-link">{label}</a>
+                        ) : (
+                          <span class="text-text-primary">{label}</span>
+                        )}
                       </li>
                     );
                   })}
@@ -505,11 +511,9 @@ const reviewMeta = questions.map((q) => ({
     if (scope.size === 0) {
       try {
         const backendQueue = await getQuizReviewQueue();
-        if (backendQueue.dueSlugs.length > 0) {
-          const due = new Set(backendQueue.dueSlugs);
-          rows = meta.filter((row) => due.has(row.slug));
-          backendReviewAvailable = true;
-        }
+        backendReviewAvailable = true;
+        const due = new Set(backendQueue.dueSlugs);
+        rows = meta.filter((row) => due.has(row.slug));
       } catch {
         backendReviewAvailable = false;
       }

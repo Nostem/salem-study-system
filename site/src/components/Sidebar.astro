@@ -138,9 +138,12 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
         </div>
       );
     })}
-    <div class="mt-4 px-4 pt-2 border-t border-[#1a2035]">
+    <div class="mt-4 px-4 pt-2 border-t border-[#1a2035] flex flex-col gap-1">
       <a href={`${base}graph`} class="flex items-center gap-1.5 px-3 py-1.5 text-[#6b7280] hover:text-[#c8cdd5] no-underline text-[11px]">
         <span class="text-sm">◉</span> Graph View
+      </a>
+      <a href={`${base}graph-v2`} data-testid="sidebar-graph-v2-link" class="flex items-center gap-1.5 px-3 py-1.5 text-[#6b7280] hover:text-[#c8cdd5] no-underline text-[11px]">
+        <span class="text-sm">◎</span> Graph v2 Study Map
       </a>
     </div>
   </nav>

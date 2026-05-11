@@ -47,7 +47,7 @@ test('quiz page builds an account-gated quiz from imported questions', async ({ 
 
   await expect(page.getByRole('heading', { name: /Quiz Builder/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /View my progress/i })).toHaveAttribute('href', /\/history\/?$/);
-  await expect(page.getByTestId('quiz-bank-count')).toContainText('499');
+  await expect(page.getByTestId('quiz-bank-count')).toContainText('599');
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('3');
