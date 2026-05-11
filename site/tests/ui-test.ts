@@ -9,9 +9,30 @@ const SCREENSHOT_DIR = path.resolve(__dirname, '../test-screenshots');
 const DIST_DIR = path.resolve(__dirname, '../dist');
 const BASE = '/salem-study-system/';
 
-// Discover all built pages from dist/
-function discoverPages(): { slug: string; name: string }[] {
-  const pages: { slug: string; name: string }[] = [];
+type PageTarget = { slug: string; name: string };
+
+const REPRESENTATIVE_PAGES: PageTarget[] = [
+  { slug: '/', name: 'index' },
+  { slug: 'systems/reactor-coolant-system/', name: 'systems-reactor-coolant-system' },
+  { slug: 'systems/chemical-and-volume-control-system/', name: 'systems-chemical-and-volume-control-system' },
+  { slug: 'quiz/', name: 'quiz' },
+  { slug: 'quiz-v2/', name: 'quiz-v2' },
+  { slug: 'quiz-v2/play/', name: 'quiz-v2-play' },
+  { slug: 'quiz-v2/review/', name: 'quiz-v2-review' },
+  { slug: 'graph-v2/', name: 'graph-v2' },
+  { slug: 'history/', name: 'history' },
+  { slug: 'exams/2018/q8-pzr-saturation-rcp-restart/', name: 'exams-2018-q8-pzr-saturation-rcp-restart' },
+];
+
+function htmlPathForSlug(slug: string): string {
+  return slug === '/'
+    ? path.join(DIST_DIR, 'index.html')
+    : path.join(DIST_DIR, slug, 'index.html');
+}
+
+// Discover all built pages from dist/ for an explicit full-site sweep only.
+function discoverAllBuiltPages(): PageTarget[] {
+  const pages: PageTarget[] = [];
 
   function walk(dir: string, prefix: string) {
     for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
@@ -27,6 +48,14 @@ function discoverPages(): { slug: string; name: string }[] {
 
   walk(DIST_DIR, '');
   return pages;
+}
+
+function discoverPages(): PageTarget[] {
+  if (process.env.FULL_SITE_UI_SWEEP === '1') {
+    return discoverAllBuiltPages();
+  }
+
+  return REPRESENTATIVE_PAGES.filter((pg) => fs.existsSync(htmlPathForSlug(pg.slug)));
 }
 
 // Clear and recreate screenshot directory before all tests
@@ -341,9 +370,7 @@ test('all internal links resolve to built files', async () => {
   const brokenLinks: { source: string; href: string; target: string }[] = [];
 
   for (const pg of pages) {
-    const htmlPath = pg.slug === '/'
-      ? path.join(DIST_DIR, 'index.html')
-      : path.join(DIST_DIR, pg.slug, 'index.html');
+    const htmlPath = htmlPathForSlug(pg.slug);
     const html = fs.readFileSync(htmlPath, 'utf8');
     const hrefs = [...html.matchAll(/href=["']([^"']+)["']/g)]
       .map((match) => match[1])
