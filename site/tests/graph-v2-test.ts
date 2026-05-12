@@ -7,7 +7,7 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await expect(page.getByTestId('gv2-empty')).toContainText('Select a node above or in the list to view its connections.');
 
   // Page chrome.
-  await expect(page.getByRole('heading', { name: /Graph v2 Preview/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Study Map/i })).toBeVisible();
 
   // Total node + edge counts must be positive integers.
   const nodeCount = await page.getByTestId('gv2-node-count').first().textContent();

@@ -231,11 +231,41 @@ const scenarioSlugs: Record<string, string[]> = {
         </button>
       </div>
       <div class="flex flex-wrap gap-2">
-        <a href={`${base}graph`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Graph View</a>
-        <a href={`${base}quiz`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Quiz Builder</a>
+        <a href={`${base}graph-v2`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Study Map</a>
+        <a href={`${base}quiz`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Classic Quiz</a>
+        <a href={`${base}quiz-v2`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Study Builder</a>
+        <a href={`${base}history`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">My Progress</a>
         <a href={`${base}plant`} class="px-3 py-1.5 text-[11px] font-mono text-text-muted border border-border rounded hover:border-accent-blue hover:text-accent-blue no-underline transition-colors">Plant Overview</a>
       </div>
     </div>
+
+    <!-- PRACTICE MODES -->
+    <section class="mb-10" aria-labelledby="practice-modes-title">
+      <div class="flex flex-col gap-1 mb-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h2 id="practice-modes-title" class="font-mono text-[11px] font-semibold tracking-[0.14em] text-text-muted uppercase">Choose practice mode</h2>
+          <p class="text-sm text-text-muted mt-2">Classic for fast reps. Study Builder for targeted, source-linked practice. Both feed My Progress.</p>
+        </div>
+        <a href={`${base}history/`} class="text-[11px] font-mono text-accent-blue no-underline hover:underline">View My Progress &rsaquo;</a>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-3">
+        <a href={`${base}quiz/`} class="bg-bg-card border border-border rounded-md p-5 no-underline hover:border-accent-blue transition-colors group">
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-2">Speed</div>
+          <h3 class="text-xl text-text-primary font-semibold mb-2 group-hover:text-accent-blue">Classic Quiz</h3>
+          <p class="text-sm text-text-muted leading-6">Fast account-synced quiz reps from the imported written exam bank. Best when you want low-friction practice.</p>
+        </a>
+        <a href={`${base}quiz-v2/`} class="bg-bg-card border border-border rounded-md p-5 no-underline hover:border-accent-blue transition-colors group">
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-green mb-2">Precision</div>
+          <h3 class="text-xl text-text-primary font-semibold mb-2 group-hover:text-accent-blue">Study Builder</h3>
+          <p class="text-sm text-text-muted leading-6">Build deterministic sessions by year, topic, source reference, graph selection, or missed questions.</p>
+        </a>
+        <a href={`${base}graph-v2/`} class="bg-bg-card border border-border rounded-md p-5 no-underline hover:border-accent-blue transition-colors group">
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-teal mb-2">Strategy</div>
+          <h3 class="text-xl text-text-primary font-semibold mb-2 group-hover:text-accent-blue">Study Map</h3>
+          <p class="text-sm text-text-muted leading-6">Explore systems, topics, sources, and questions as a graph, then launch targeted quiz sessions.</p>
+        </a>
+      </div>
+    </section>
 
     <!-- NAVIGATION CARDS -->
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">

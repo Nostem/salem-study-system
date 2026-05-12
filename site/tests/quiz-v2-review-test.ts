@@ -32,8 +32,8 @@ async function seedAuth(page: Page): Promise<void> {
 test('quiz-v2 review uses whole questions and stores local review ratings', async ({ page }) => {
   await page.goto('quiz-v2/review/');
 
-  await expect(page.getByRole('heading', { name: /Quiz v2 Review/i })).toBeVisible();
-  await expect(page.getByText(/whole-question review/i)).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Review Queue', exact: true })).toBeVisible();
+  await expect(page.getByText(/whole items/i)).toBeVisible();
   await expect(page.getByTestId('qv2r-mode')).toContainText(/queue/i);
   await expect(page.getByText(/Review missed from history/i)).toBeVisible();
   await expect(page.getByTestId('qv2r-total')).toHaveText(/^[1-9]\d*$/);

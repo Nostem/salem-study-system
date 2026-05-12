@@ -29,18 +29,16 @@ const sessionMeta = questions.map((q) => ({
 }));
 ---
 
-<BaseLayout title="Quiz v2 (Experimental)" noindex={true}>
+<BaseLayout title="Study Builder">
   <main class="max-w-[1180px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
     <header class="border-b border-border pb-5 mb-5">
       <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
       <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
         <div>
-          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · structured bank v2</div>
-          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Preview</h1>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Advanced practice · structured bank</div>
+          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Study Builder</h1>
           <p class="text-sm text-text-muted max-w-2xl mt-1">
-            Read-only browser for the structured question bank (<code>quiz-bank-v2.json</code>).
-            Renders structured stem/choice/explanation blocks beside production. Production
-            <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a> is unaffected.
+            Build targeted, source-linked practice from the structured question bank. Use Classic Quiz for fast reps, or launch focused sessions from topics, source refs, missed questions, and Study Map selections.
           </p>
         </div>
         <div class="flex flex-col gap-3 min-w-[180px]">
@@ -56,13 +54,17 @@ const sessionMeta = questions.map((q) => ({
           </div>
           <div class="flex flex-wrap gap-2 sm:justify-end">
             <a
-              href={`${base}quiz-v2/play/`}
+              href={`${base}quiz/`}
               class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
+            >Classic</a>
+            <a
+              href={`${base}quiz-v2/play/`}
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue no-underline hover:bg-bg"
             >Play</a>
             <a
               href={`${base}quiz-v2/review/`}
               data-testid="qv2-review-link"
-              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue no-underline hover:bg-bg"
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
             >Review</a>
           </div>
         </div>
@@ -102,12 +104,11 @@ const sessionMeta = questions.map((q) => ({
           class="inline-flex items-center justify-center rounded border border-accent-blue px-3 py-2 font-mono text-[11px] uppercase tracking-wider text-accent-blue no-underline hover:bg-bg"
         >Open in play mode</a>
         <p class="text-[11px] font-mono text-text-muted">
-          Local-only route. No persistence, no Supabase writes.
+          Account-synced route. Create a backend session in play mode to save results into My Progress.
         </p>
       </div>
       <p class="text-[11px] font-mono text-text-muted mt-3">
-        Read-only preview. Filters: <code data-testid="qv2-session-filters">{}</code>.
-        See <code>docs/quiz-v2-session-builder.md</code>.
+        Ready to play? Use <code>Open in play mode</code> after building the session preview. Filters: <code data-testid="qv2-session-filters">{}</code>.
       </p>
     </section>
 

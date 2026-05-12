@@ -50,16 +50,16 @@ const topicOptions = [...topicGroups.entries()]
   .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
-<BaseLayout title="Quiz v2 Play (Experimental)" noindex={true}>
+<BaseLayout title="Study Builder Play">
   <main class="max-w-[860px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
     <header class="border-b border-border pb-5 mb-5">
-      <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Quiz v2 preview</a>
+      <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study Builder</a>
       <div class="mt-2">
-        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · account-save capable · production /quiz unaffected</div>
-        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Play</h1>
+        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Advanced practice · account-save capable</div>
+        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Study Builder Play</h1>
         <p class="text-sm text-text-muted max-w-2xl mt-1">
-          Deterministic seeded run through the structured bank. Selections can be saved to your account after a backend session is created. Anonymous sessions stay local. Production
-          <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a> is unaffected.
+          Deterministic seeded run through the structured bank. Create a backend session to save results into My Progress, or use
+          <a href={`${base}quiz/`} class="underline hover:text-accent-blue">Classic Quiz</a> for faster simple reps.
         </p>
       </div>
     </header>
@@ -67,9 +67,9 @@ const topicOptions = [...topicGroups.entries()]
     <section class="mb-5 bg-bg-card border border-border rounded-lg p-4" aria-labelledby="qv2p-builder-title">
       <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4">
         <div>
-          <h2 id="qv2p-builder-title" class="font-serif text-xl text-text-primary">Local quiz builder</h2>
+          <h2 id="qv2p-builder-title" class="font-serif text-xl text-text-primary">Session builder</h2>
           <p class="text-xs text-text-muted mt-1">
-            Adjust filters and rebuild this local-only deterministic play URL. No backend session is created.
+            Adjust filters and rebuild a deterministic Study Builder play URL.
           </p>
         </div>
         <a

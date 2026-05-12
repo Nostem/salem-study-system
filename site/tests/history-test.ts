@@ -51,6 +51,7 @@ const historyResponse = {
       id: 'session-pass',
       completedAt: '2026-05-05T06:40:00.000Z',
       feedbackMode: 'blind',
+      source: 'quiz-v2',
       quizType: 'custom',
       completionMode: 'completed',
       score: 0.8,
@@ -80,7 +81,8 @@ const historyResponse = {
       id: 'session-fail',
       completedAt: '2026-05-04T06:40:00.000Z',
       feedbackMode: 'immediate',
-      quizType: 'custom',
+      source: 'quiz',
+      quizType: 'classic',
       completionMode: 'early',
       score: 0.5,
       correctCount: 1,
@@ -123,6 +125,8 @@ test('history page renders summary cards, quiz attempts, weak topics, and prior 
   const table = page.getByTestId('history-sessions');
   await expect(table).toContainText('Score: 4/5 (80%) · PASS');
   await expect(table).toContainText('Score: 1/2 (50%) · FAIL');
+  await expect(table).toContainText('Study Builder');
+  await expect(table).toContainText('Classic');
   await expect(table).toContainText('Early finish');
   await expect(page.getByTestId('history-weak-topics')).toContainText('Pressurizer');
   await expect(page.getByTestId('history-weak-topics')).toContainText('50%');
@@ -140,23 +144,27 @@ test('history page renders summary cards, quiz attempts, weak topics, and prior 
   await expect(page.getByTestId('history-review')).toContainText('Selected: A');
   await expect(page.getByTestId('history-review')).toContainText('Original: C');
   await expect(page.getByTestId('history-review')).toContainText('Correct');
+  await expect(page.getByTestId('history-review')).toContainText('Study Builder');
   await expect(page.getByTestId('history-review')).toContainText('Pressurizer channel failure explanation.');
   await expect.poll(() => requests.length).toBe(1);
   expect(requests[0].authorization).toBe('Bearer playwright-access-token');
 });
 
-test('sidebar includes my progress link after quiz builder', async ({ page }) => {
+test('sidebar includes the practice loop in order', async ({ page }) => {
   await page.goto('systems/reactor-coolant-system');
 
   const sidebar = page.locator('aside[data-sidebar-variant="desktop"]');
   await expect(sidebar.getByRole('link', { name: /My Progress/i })).toHaveAttribute('href', /\/salem-study-system\/history\/?$/);
+  await expect(sidebar.getByTestId('sidebar-graph-v2-link')).toHaveAttribute('href', /\/salem-study-system\/graph-v2\/?$/);
 
   const topLinks = await sidebar.locator('nav > div').first().getByRole('link').allTextContents();
-  expect(topLinks.map((text) => text.replace(/\s+/g, ' ').trim()).slice(0, 4)).toEqual([
+  expect(topLinks.map((text) => text.replace(/\s+/g, ' ').trim()).slice(0, 7)).toEqual([
     '⌂ Home',
-    '▣ Quiz Builder',
+    '▣ Classic Quiz',
+    '◎ Study Builder',
+    '↻ Review Queue',
+    '◎ Study Map',
     '↗ My Progress',
     '◇ Plant overview',
   ]);
-  await expect(sidebar.getByTestId('sidebar-graph-v2-link')).toHaveAttribute('href', /\/salem-study-system\/graph-v2\/?$/);
 });
