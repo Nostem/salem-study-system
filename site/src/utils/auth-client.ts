@@ -57,7 +57,7 @@ export type SubmitQuizResultsPayload = {
   quizSessionId?: string;
   source?: 'quiz' | 'quiz-v2';
   title?: string;
-  quizType?: 'custom' | 'topic' | 'missed' | 'weak_area' | 'exam_sim' | 'global_hard';
+  quizType?: 'classic' | 'custom' | 'topic' | 'graph' | 'review' | 'missed' | 'weak_area' | 'exam_sim' | 'global_hard';
   feedbackMode: 'immediate' | 'blind';
   completionMode?: 'completed' | 'early';
   filters: Record<string, unknown>;

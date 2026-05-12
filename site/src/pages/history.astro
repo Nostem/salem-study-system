@@ -170,6 +170,16 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
       return `Score: ${session.correctCount}/${session.answeredCount} (${percentage}%) · ${session.passStatus.toUpperCase()}`;
     }
 
+    function modeBadge(session: QuizHistorySession): string {
+      const source = String(session.source ?? '').toLowerCase();
+      const type = String(session.quizType ?? '').toLowerCase();
+      if (source === 'quiz' || type === 'classic') return 'Classic';
+      if (type === 'graph') return 'Graph';
+      if (type === 'review' || source.includes('review')) return 'Review';
+      if (source === 'quiz-v2') return 'Study Builder';
+      return session.quizType || 'Quiz';
+    }
+
     function renderSessions(sessions: QuizHistorySession[]): void {
       if (!sessionsBody || !emptyState) return;
       if (sessions.length === 0) {
@@ -181,12 +191,16 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
       sessionsBody.innerHTML = sessions.map((session) => {
         const replayHref = normalizeAppHref(session.replayHref);
         const reviewMissedHref = normalizeAppHref(session.reviewMissedHref);
+        const badge = modeBadge(session);
         return `
         <tr class="border-b border-[#172033] text-[#c8cdd5]">
           <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(formatDate(session.completedAt))}</td>
           <td class="py-3 pr-3 align-top">
             <div class="font-medium text-[#e0e4ea]">${escapeHtml(session.filterSummary)}</div>
-            <div class="mt-1 text-xs text-[#6b7280]">${escapeHtml(session.quizType)} · ${session.totalQuestions} total</div>
+            <div class="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#6b7280]">
+              <span class="rounded-full border border-[#2a6f97] px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-[#d7ecff]">${escapeHtml(badge)}</span>
+              <span>${escapeHtml(session.quizType)} · ${session.totalQuestions} total</span>
+            </div>
           </td>
           <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(session.feedbackMode)}${session.completionMode === 'early' ? ' · Early finish' : ''}</td>
           <td class="py-3 pr-3 align-top font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</td>
@@ -222,7 +236,10 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
       reviewContent.innerHTML = `
         <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
           <div class="font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</div>
-          <div class="mt-1 text-sm text-[#8b95a5]">${escapeHtml(session.filterSummary)}</div>
+          <div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-[#8b95a5]">
+            <span class="rounded-full border border-[#2a6f97] px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-[#d7ecff]">${escapeHtml(modeBadge(session))}</span>
+            <span>${escapeHtml(session.filterSummary)}</span>
+          </div>
         </div>
         <div class="flex flex-wrap gap-2">
           ${replayHref ? `<a href="${escapeHtml(replayHref)}" class="rounded-md border border-[#2a6f97] px-3 py-2 text-xs text-[#d7ecff] no-underline hover:bg-[#102033]">Replay full session</a>` : ''}

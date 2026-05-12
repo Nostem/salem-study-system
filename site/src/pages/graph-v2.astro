@@ -222,21 +222,18 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
 
 ---
 
-<BaseLayout title="Graph v2 (Experimental)" noindex={true}>
+<BaseLayout title="Study Map">
   <main class="max-w-[1180px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
     <header class="border-b border-border pb-5 mb-5">
       <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
       <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
         <div>
           <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">
-            Experimental · structured graph v2
+            Strategy · graph-linked practice
           </div>
-          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Graph v2 Preview</h1>
+          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Study Map</h1>
           <p class="text-sm text-text-muted max-w-2xl mt-1">
-            Combined view of wiki articles, structured questions, topics, and source refs.
-            Read-only preview beside production
-            <a href={`${base}graph/`} class="underline hover:text-accent-blue">/graph/</a>,
-            which renders only wiki↔wiki wikilinks.
+            Combined view of wiki articles, structured questions, topics, and source refs. Select nodes to understand relationships, then launch targeted Study Builder sessions.
           </p>
         </div>
         <div class="grid grid-cols-2 gap-2 text-center min-w-[220px]">

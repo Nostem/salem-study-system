@@ -28,16 +28,15 @@ const reviewMeta = questions.map((q) => ({
 }));
 ---
 
-<BaseLayout title="Quiz v2 Review (Experimental)" noindex={true}>
+<BaseLayout title="Review Queue">
   <main class="max-w-[900px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
     <header class="border-b border-border pb-5 mb-5">
-      <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Quiz v2 preview</a>
+      <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study Builder</a>
       <div class="mt-2">
-        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Experimental · persisted whole-question review</div>
-        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quiz v2 Review</h1>
+        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Retention · account-backed review</div>
+        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Review Queue</h1>
         <p class="text-sm text-text-muted max-w-2xl mt-1">
           Review missed, weak, due, or newly introduced NRC questions as whole items. Logged-in learners use the persisted review queue when available; scoped history links still load exact missed-question sets.
-          This does not create generated flashcards and does not touch production <a href={`${base}quiz/`} class="underline hover:text-accent-blue">/quiz/</a>.
         </p>
       </div>
     </header>

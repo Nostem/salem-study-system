@@ -45,7 +45,7 @@ test('quiz page builds an account-gated quiz from imported questions', async ({ 
   await authenticateQuizUser(page);
   await page.goto('quiz/');
 
-  await expect(page.getByRole('heading', { name: /Quiz Builder/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Classic Quiz', exact: true })).toBeVisible();
   await expect(page.getByRole('link', { name: /View my progress/i })).toHaveAttribute('href', /\/history\/?$/);
   await expect(page.getByTestId('quiz-bank-count')).toContainText('599');
 
@@ -213,6 +213,8 @@ test('completed quiz review submits results for persistent progress tracking', a
   await expect(page.locator('#review-score')).toContainText(/PASS|FAIL/);
   await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
   expect(submittedBodies).toHaveLength(1);
+  expect(submittedBodies[0].source).toBe('quiz');
+  expect(submittedBodies[0].quizType).toBe('classic');
   expect(submittedBodies[0].feedbackMode).toBe('blind');
   expect(submittedBodies[0].questions).toHaveLength(2);
   expect(submittedBodies[0].questions[0]).toMatchObject({ position: 1, selectedLabel: 'A' });
