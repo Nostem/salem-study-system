@@ -5,6 +5,7 @@ import {
   getStructuredQuestions,
   questionDisplayLabel,
 } from '../../utils/structured-quiz-data';
+import { sourceRefHref, sourceRefLabel } from '../../utils/source-ref-links';
 
 const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
@@ -306,11 +307,16 @@ const topicOptions = [...topicGroups.entries()]
               <h3 class="qv2p-section-title">Source references</h3>
               <ul class="text-sm text-text-body space-y-1">
                 {q.sourceRefs.map((ref) => {
-                  const label = ref.label || ref.slug || ref.path || ref.kind;
+                  const label = sourceRefLabel(ref);
+                  const href = sourceRefHref(ref, base);
                   return (
                     <li class="font-mono text-[12px]">
                       <span class="inline-block min-w-[90px] text-text-muted">[{ref.kind}]</span>
-                      <span class="text-text-primary">{label}</span>
+                      {href ? (
+                        <a href={href} class="text-text-primary underline hover:text-accent-blue" data-testid="qv2p-source-ref-link">{label}</a>
+                      ) : (
+                        <span class="text-text-primary">{label}</span>
+                      )}
                     </li>
                   );
                 })}
@@ -689,11 +695,28 @@ const topicOptions = [...topicGroups.entries()]
     });
   }
 
-  function applySession(nextSession: QuizSession, sourceLabel = 'Local deterministic session'): void {
+  function applySession(
+    nextSession: QuizSession,
+    sourceLabel = 'Local deterministic session',
+    options: { preserveAnswers?: boolean } = {}
+  ): void {
+    const previousSlug = session?.questionSlugs[currentIndex];
+    const previousSelections = new Map(selections);
+    const previousElapsed = new Map(elapsedBySlug);
     session = nextSession;
-    currentIndex = 0;
+    currentIndex = previousSlug ? Math.max(0, session.questionSlugs.indexOf(previousSlug)) : 0;
+    if (currentIndex < 0) currentIndex = 0;
     selections.clear();
     elapsedBySlug.clear();
+    if (options.preserveAnswers) {
+      const nextSlugs = new Set(session.questionSlugs);
+      for (const [slug, label] of previousSelections.entries()) {
+        if (nextSlugs.has(slug)) selections.set(slug, label);
+      }
+      for (const [slug, elapsed] of previousElapsed.entries()) {
+        if (nextSlugs.has(slug)) elapsedBySlug.set(slug, elapsed);
+      }
+    }
     setText('qv2p-session-id', session.backendSessionId ? `${session.sessionId} / ${session.backendSessionId}` : session.sessionId);
     setText('qv2p-session-seed', session.seed);
     setText('qv2p-session-count', String(session.questionSlugs.length));
@@ -769,7 +792,11 @@ const topicOptions = [...topicGroups.entries()]
     try {
       const payload = buildCreateQuizV2SessionPayload(currentFilters, currentSeed ? { seed: currentSeed } : {});
       const response = assertCreateQuizV2SessionResponse(await createQuizV2Session(payload));
-      applySession(response.session, response.source === 'backend' ? 'Backend session ready · progress can be saved' : 'Local fallback session');
+      applySession(
+        response.session,
+        response.source === 'backend' ? 'Backend session ready · progress can be saved' : 'Local fallback session',
+        { preserveAnswers: true }
+      );
       setText('qv2p-submit-status', response.source === 'backend' ? 'Backend session ready. Answer questions, then submit progress.' : 'Local fallback session only. Log in to save progress.');
     } catch (error) {
       const message = error instanceof Error ? error.message : 'request_failed';

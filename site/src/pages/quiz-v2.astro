@@ -7,6 +7,7 @@ import {
   questionDisplayLabel,
   structuredQuizBank,
 } from '../utils/structured-quiz-data';
+import { sourceRefHref, sourceRefLabel } from '../utils/source-ref-links';
 
 const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
@@ -222,11 +223,16 @@ const sessionMeta = questions.map((q) => ({
               {q.sourceRefs && q.sourceRefs.length > 0 ? (
                 <ul class="text-sm text-text-body space-y-1">
                   {q.sourceRefs.map((ref) => {
-                    const label = ref.label || ref.slug || ref.path || ref.kind;
+                    const label = sourceRefLabel(ref);
+                    const href = sourceRefHref(ref, base);
                     return (
                       <li class="font-mono text-[12px]">
                         <span class="inline-block min-w-[90px] text-text-muted">[{ref.kind}]</span>
-                        <span class="text-text-primary">{label}</span>
+                        {href ? (
+                          <a href={href} class="text-text-primary underline hover:text-accent-blue" data-testid="qv2-source-ref-link">{label}</a>
+                        ) : (
+                          <span class="text-text-primary">{label}</span>
+                        )}
                         {ref.path && ref.path !== label && (
                           <span class="text-text-muted"> — {ref.path}</span>
                         )}

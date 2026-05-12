@@ -84,12 +84,23 @@ test('backend response guard rejects malformed sessions', () => {
   assert.throws(() => assertCreateQuizV2SessionResponse({ ok: true }), /invalid_quiz_v2_session_response/);
 });
 
-test('backend response guard accepts server-created qv2 session payloads', () => {
+test('backend response guard requires a persisted backendSessionId for server-created sessions', () => {
   const payload = buildCreateQuizV2SessionPayload({ years: [2024] }, { seed: 'server-seed' });
   const local = buildLocalQuizV2SessionResponse(fixture, payload);
-  const serverResponse = { ...local, source: 'backend' as const };
+
+  assert.equal(isCreateQuizV2SessionResponse({ ...local, source: 'backend' as const }), false);
+
+  const serverResponse = {
+    ...local,
+    source: 'backend' as const,
+    session: {
+      ...local.session,
+      backendSessionId: '00000000-0000-4000-8000-000000000123',
+    },
+  };
 
   const parsed = assertCreateQuizV2SessionResponse(serverResponse);
   assert.equal(parsed.source, 'backend');
+  assert.equal(parsed.session.backendSessionId, '00000000-0000-4000-8000-000000000123');
   assert.equal(parsed.session.filters.years[0], 2024);
 });

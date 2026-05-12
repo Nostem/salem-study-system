@@ -96,6 +96,7 @@ test('quiz-v2 play formats explanations as mobile-scannable sections', async ({ 
   const cards = explanation.getByTestId('qv2p-explanation-card');
   await expect(cards.first()).toContainText(/Why [A-D] is (correct|wrong)/);
   expect(await cards.count()).toBeGreaterThan(1);
+  await expect(detail.getByTestId('qv2p-source-ref-link').first()).toHaveAttribute('href', /\/exams\/2018\/q8-pzr-saturation-rcp-restart\/$/);
 });
 
 test('quiz-v2 play advances to the next question and prev returns to the first', async ({ page }) => {
@@ -182,16 +183,16 @@ test('quiz-v2 play accepts explicit graph-selected question slugs', async ({ pag
   await expect(page.locator('.qv2p-detail:not(.hidden)')).toHaveAttribute('data-qv2p-detail', 'q8-pzr-saturation-rcp-restart');
 });
 
-test('quiz-v2 play can create an authenticated backend session', async ({ page }) => {
+test('quiz-v2 play preserves answered state when creating an authenticated backend session and submits against that session', async ({ page }) => {
   await seedAuth(page);
+  const submittedBodies: any[] = [];
 
   await page.route('**/functions/v1/create-quiz-v2-session', async (route) => {
     const body = route.request().postDataJSON();
     expect(route.request().headers().authorization).toBe('Bearer playwright-access-token');
     expect(body.schemaVersion).toBe(1);
     expect(body.seed).toBe('backend-ui-test');
-    expect(body.filters.count).toBe(2);
-    expect(body.filters.years).toEqual([2018]);
+    expect(body.filters.count).toBe(1);
     await route.fulfill({
       status: 200,
       contentType: 'application/json',
@@ -201,6 +202,7 @@ test('quiz-v2 play can create an authenticated backend session', async ({ page }
         session: {
           schemaVersion: 1,
           sessionId: 'qv2-server1234',
+          backendSessionId: '00000000-0000-4000-8000-000000000321',
           seed: 'backend-ui-test',
           filters: body.filters,
           questionSlugs: ['q8-pzr-saturation-rcp-restart'],
@@ -210,12 +212,35 @@ test('quiz-v2 play can create an authenticated backend session', async ({ page }
       }),
     });
   });
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    const body = route.request().postDataJSON();
+    submittedBodies.push(body);
+    expect(route.request().headers().authorization).toBe('Bearer playwright-access-token');
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, quizSessionId: body.quizSessionId, attemptsInserted: 1, score: 1 }),
+    });
+  });
 
-  await page.goto('quiz-v2/play/?seed=backend-ui-test&years=2018&count=2');
+  await page.goto('quiz-v2/play/?slugs=q8-pzr-saturation-rcp-restart&seed=backend-ui-test&count=1');
+  const detail = page.locator('.qv2p-detail:not(.hidden)');
+  await detail.locator('.qv2p-choice').first().click();
+  await expect(detail.locator('[data-testid="qv2p-feedback"]')).toBeVisible();
+
   await page.getByTestId('qv2p-create-backend-session').click();
 
   await expect(page.getByTestId('qv2p-session-source')).toContainText('Backend session');
-  await expect(page.getByTestId('qv2p-session-id')).toHaveText('qv2-server1234');
+  await expect(page.getByTestId('qv2p-session-id')).toContainText('qv2-server1234');
+  await expect(page.getByTestId('qv2p-session-id')).toContainText('00000000-0000-4000-8000-000000000321');
   await expect(page.getByTestId('qv2p-session-count')).toHaveText('1');
   await expect(page.locator('.qv2p-detail:not(.hidden)')).toHaveAttribute('data-qv2p-detail', 'q8-pzr-saturation-rcp-restart');
+  await expect(page.locator('.qv2p-detail:not(.hidden)').locator('[data-testid="qv2p-feedback"]')).toBeVisible();
+  await expect(page.locator('.qv2p-detail:not(.hidden)').locator('.qv2p-choice').first()).toBeDisabled();
+
+  await page.getByTestId('qv2p-submit-results').click();
+  await expect.poll(() => submittedBodies.length).toBe(1);
+  expect(submittedBodies[0].quizSessionId).toBe('00000000-0000-4000-8000-000000000321');
+  expect(submittedBodies[0].questions[0]).toMatchObject({ slug: 'q8-pzr-saturation-rcp-restart', position: 1 });
+  expect(submittedBodies[0].questions[0].selectedLabel).toBeTruthy();
 });

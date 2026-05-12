@@ -4,7 +4,7 @@ test('quiz-v2 page lists structured questions and renders an image stem with sou
   await page.goto('quiz-v2/?slug=q23-eop-flowchart-symbols-concurrent');
 
   await expect(page.getByRole('heading', { name: /Quiz v2 Preview/i })).toBeVisible();
-  await expect(page.getByTestId('qv2-bank-count')).toContainText('499');
+  await expect(page.getByTestId('qv2-bank-count')).toContainText('599');
 
   // List rendered (sidebar contains many items).
   const listItems = page.locator('[data-testid="qv2-list"] li.qv2-item');
@@ -25,6 +25,7 @@ test('quiz-v2 page lists structured questions and renders an image stem with sou
   const sourceRefs = detail.getByTestId('qv2-source-refs');
   await expect(sourceRefs).toContainText('[wiki]');
   await expect(sourceRefs).toContainText('q23-eop-flowchart-symbols-concurrent');
+  await expect(detail.getByTestId('qv2-source-ref-link').first()).toHaveAttribute('href', /\/exams\/2023\/q23-eop-flowchart-symbols-concurrent\/$/);
 
   // Year filter narrows the visible list.
   await page.getByTestId('qv2-year').selectOption('2023');

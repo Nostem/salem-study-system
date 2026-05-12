@@ -10,7 +10,8 @@
     "build": "astro build && npx pagefind --site dist --glob '**/*.html'",
     "preview": "astro preview",
     "astro": "astro",
-    "test:ui": "npm run build && npx playwright test"
+    "test:ui": "npm run build && npx playwright test",
+    "test:ui:full": "FULL_SITE_UI_SWEEP=1 npm run build && FULL_SITE_UI_SWEEP=1 npx playwright test"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",

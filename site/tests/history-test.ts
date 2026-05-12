@@ -158,4 +158,5 @@ test('sidebar includes my progress link after quiz builder', async ({ page }) =>
     '↗ My Progress',
     '◇ Plant overview',
   ]);
+  await expect(sidebar.getByTestId('sidebar-graph-v2-link')).toHaveAttribute('href', /\/salem-study-system\/graph-v2\/?$/);
 });
