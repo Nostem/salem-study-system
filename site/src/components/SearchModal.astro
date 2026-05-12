@@ -14,7 +14,7 @@ const base = import.meta.env.BASE_URL;
         id="search-input"
         type="text"
         placeholder="Search articles..."
-        class="w-full bg-[#111827] border border-[#1a2035] rounded-md px-4 py-2.5 text-sm text-[#e0e4ea] placeholder-[#6b7280] outline-none focus:border-[#2a6f97]"
+        class="w-full bg-[#111827] border border-[#1a2035] rounded-md px-4 py-2.5 text-sm text-[#e0e4ea] placeholder-[#8b95a5] outline-none focus:border-[#2a6f97]"
         autocomplete="off"
       />
     </div>
@@ -129,7 +129,7 @@ const base = import.meta.env.BASE_URL;
         results.innerHTML = items.map(item => `
           <a href="${item.url}" class="block px-3 py-2.5 rounded-md hover:bg-[#111827] no-underline mb-1 transition-colors">
             <div class="text-sm text-[#e0e4ea] font-medium">${item.meta?.title || 'Untitled'}</div>
-            <div class="text-xs text-[#6b7280] mt-0.5 line-clamp-2">${item.excerpt || ''}</div>
+            <div class="text-xs text-[#8b95a5] mt-0.5 line-clamp-2">${item.excerpt || ''}</div>
           </a>
         `).join('');
       }, 150);

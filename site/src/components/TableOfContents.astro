@@ -11,14 +11,14 @@ const tocItems = headings.filter((h) => h.depth === 2);
 
 {tocItems.length > 0 && (
   <div>
-    <div class="font-semibold text-[#4b5563] tracking-[1px] uppercase text-[9px] mb-2.5">
+    <div class="font-semibold text-[#8b95a5] tracking-[1px] uppercase text-[9px] mb-2.5">
       On This Page
     </div>
     <nav id="toc-nav">
       {tocItems.map((item) => (
         <a
           href={`#${item.slug}`}
-          class="block py-[3px] no-underline text-[#6b7280] hover:text-[#60a5fa] transition-colors toc-link"
+          class="block py-[3px] no-underline text-[#8b95a5] hover:text-[#60a5fa] transition-colors toc-link"
           data-slug={item.slug}
         >
           {item.text}

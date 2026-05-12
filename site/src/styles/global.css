@@ -6,10 +6,10 @@
   --color-bg-card: #111827;
   --color-border: #1a2035;
   --color-text-primary: #e0e4ea;
-  --color-text-body: #9ca3af;
-  --color-text-muted: #6b7280;
+  --color-text-body: #c8cdd5;
+  --color-text-muted: #8b95a5;
   --color-accent-blue: #60a5fa;
-  --color-accent-teal: #2a6f97;
+  --color-accent-teal: #22d3ee;
   --color-accent-green: #10b981;
   --color-status-draft: #eab308;
   --color-status-verified: #22c55e;
@@ -45,9 +45,15 @@ html {
 .prose h2 { color: var(--color-text-primary); font-family: var(--font-sans); font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; margin-top: 1.5rem; margin-bottom: 0.625rem; }
 .prose h3 { color: var(--color-text-primary); font-size: 0.875rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; }
 .prose p { color: var(--color-text-body); font-size: 0.9375rem; line-height: 1.7; margin-bottom: 0.75rem; }
-.prose a { color: var(--color-accent-blue); text-decoration: none; }
-.prose a:hover { text-decoration: underline; }
+.prose a { color: var(--color-accent-blue); text-decoration-line: underline; text-decoration-thickness: 0.08em; text-underline-offset: 0.16em; text-decoration-color: color-mix(in srgb, var(--color-accent-blue) 65%, transparent); }
+.prose a:hover { text-decoration-color: currentColor; }
 .prose a.wikilink-broken { color: #ef4444; opacity: 0.6; }
+
+/* Normalize legacy inline article metadata colors to the current accessible muted token. */
+.prose [style*="color:#6b7280"],
+.prose [style*="color: #6b7280"] {
+  color: var(--color-text-muted) !important;
+}
 
 /* Tables */
 .prose table { width: 100%; font-size: 0.75rem; border-collapse: collapse; }
