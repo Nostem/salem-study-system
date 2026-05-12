@@ -354,7 +354,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
           <div class="mt-1"><span data-testid="gv2-builder-count">0</span> selected · <span data-testid="gv2-builder-pool">0</span> eligible questions</div>
           <div id="gv2-builder-tray" data-testid="gv2-builder-tray" class="mt-2 hidden space-y-1"></div>
           <div class="mt-2 flex flex-wrap gap-2">
-            <a id="gv2-builder-play" data-testid="gv2-builder-play" data-base={base} href="#" class="pointer-events-none opacity-40 rounded border border-accent-blue px-2 py-1 text-accent-blue no-underline">Generate quiz</a>
+            <a id="gv2-builder-play" data-testid="gv2-builder-play" data-base={base} href="#" class="pointer-events-none rounded border border-accent-blue px-2 py-1 text-accent-blue no-underline">Generate quiz</a>
             <button type="button" id="gv2-builder-clear" data-testid="gv2-builder-clear" class="rounded border border-border px-2 py-1 text-text-muted">Clear</button>
           </div>
           <p class="mt-2 text-[11px] text-text-muted">Selections union and de-duplicate eligible question pools before opening quiz-v2.</p>
@@ -635,10 +635,10 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
         params.set('seed', 'graph-builder');
         const base = play.dataset.base ?? '/';
         play.href = `${base}quiz-v2/play/?${params.toString()}`;
-        play.classList.remove('pointer-events-none', 'opacity-40');
+        play.classList.remove('pointer-events-none');
       } else {
         play.href = '#';
-        play.classList.add('pointer-events-none', 'opacity-40');
+        play.classList.add('pointer-events-none');
       }
     }
   }
