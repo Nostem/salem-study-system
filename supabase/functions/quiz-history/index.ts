@@ -130,6 +130,15 @@ function reviewHref(questionSlugs: string[]): string | null {
   return `/quiz-v2/review/?${params.toString()}`;
 }
 
+function missedQuizHref(questionSlugs: string[]): string | null {
+  if (questionSlugs.length === 0) return null;
+  const params = new URLSearchParams();
+  params.set('slugs', questionSlugs.join(','));
+  params.set('count', String(questionSlugs.length));
+  params.set('seed', 'history-missed');
+  return `/quiz-v2/play/?${params.toString()}`;
+}
+
 function sessionSource(config: Record<string, unknown> | null): string | null {
   if (typeof config?.source === 'string') return config.source;
   const submitted = config?.submitted;
@@ -144,6 +153,14 @@ function originalLabelFromChoiceOrder(selectedLabel: string | null, choiceOrder:
   if (!selectedLabel) return null;
   if (choiceOrder && !Array.isArray(choiceOrder)) return choiceOrder[selectedLabel] ?? selectedLabel;
   return selectedLabel;
+}
+
+function displayLabelFromChoiceOrder(originalLabel: string, choiceOrder: Record<string, string> | string[] | null): string {
+  if (!choiceOrder || Array.isArray(choiceOrder)) return originalLabel;
+  for (const [displayLabel, sourceLabel] of Object.entries(choiceOrder)) {
+    if (sourceLabel === originalLabel) return displayLabel;
+  }
+  return originalLabel;
 }
 
 Deno.serve(async (req) => {
@@ -248,6 +265,8 @@ Deno.serve(async (req) => {
           topicStats.set(link.topics.slug, current);
         }
       }
+      const acceptedLabels = question.accepted_answer_labels ?? [];
+      const acceptedDisplayLabels = acceptedLabels.map((label) => displayLabelFromChoiceOrder(label, sessionQuestion.choice_order));
       return {
         position: sessionQuestion.position,
         displayTitle: displayTitle(question),
@@ -255,7 +274,8 @@ Deno.serve(async (req) => {
         track: question.track,
         selectedLabel,
         selectedOriginalLabel,
-        acceptedLabels: question.accepted_answer_labels ?? [],
+        acceptedLabels,
+        acceptedDisplayLabels,
         isCorrect,
         status: isAnswered ? (isCorrect ? 'correct' : 'incorrect') : 'unanswered',
         explanationText: question.explanation_text,
@@ -287,6 +307,7 @@ Deno.serve(async (req) => {
       source: sessionSource(session.config),
       replayHref: replayHref(slugs, session.config?.seed),
       reviewMissedHref: reviewHref(missedSlugs),
+      retakeMissedHref: missedQuizHref(missedSlugs),
       missedSlugs,
       questions,
     };

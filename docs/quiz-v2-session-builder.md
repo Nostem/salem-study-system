@@ -1,7 +1,6 @@
-# Quiz v2 Session Builder (Foundation)
+# Study Builder / Quiz v2 Session Builder
 
-Status: experimental, additive only. Production `/quiz/` and
-`site/src/data/quiz-bank.json` are untouched.
+Status: live learner-facing Study Builder. `/quiz-v2/`, `/quiz-v2/play/`, and `/quiz-v2/review/` are part of the current study loop beside Classic Quiz (`/quiz/`). The structured bank remains generated beside `site/src/data/quiz-bank.json`; Classic Quiz is not replaced.
 
 ## Scope
 
@@ -11,18 +10,7 @@ This milestone adds a pure TypeScript utility,
 `site/src/utils/structured-quiz-data.ts`) into a deterministic quiz session
 descriptor.
 
-The utility **only generates question selections from existing questions**.
-It does not:
-
-- mutate the bank,
-- generate or rewrite question text,
-- grade answers,
-- persist sessions,
-- shuffle answer choices.
-
-Choice order is intentionally left untouched at this stage. We can layer a
-deterministic per-question choice permutation in a later milestone without
-changing the session descriptor format.
+The utility generates deterministic selections from existing imported NRC questions. It does not mutate the bank or generate/rewrite question text. Grading, account session creation, and history sync are handled by the Study Builder play route and Supabase Edge Functions, not by this pure selection utility.
 
 ## Public surface
 
@@ -102,21 +90,13 @@ Coverage: filter semantics, reference modes, topic slug shapes, shuffle
 determinism, sessionId stability, count, default seed, opt-in `generatedAt`,
 input-order invariance.
 
-## Preview surface
+## Study Builder surface
 
-`/quiz-v2/` continues to behave exactly as before. When the URL has
-`?session=1` (and optionally `?seed=…&count=…&years=2023,2024`), the page
-shows a small read-only **session preview** panel listing the deterministic
-slug order produced by `buildQuizSession`. The default browse experience and
-all existing test selectors are preserved.
+`/quiz-v2/` is the Study Builder entry point. It lets the learner choose targeted filters and launch deterministic sessions. The route still preserves the original preview/debug behavior for deterministic slug order, but the user-facing role is no longer experimental/read-only.
 
-## Play surface (experimental, local-only)
+## Play surface
 
-`/quiz-v2/play/` is an experimental quiz runner built on top of
-`buildQuizSession`. It is `noindex` and **does not** persist anything,
-talk to Supabase, call any grading API, or generate question text. All
-state — selected answers, current index, reveal — lives in the page only
-and is lost on reload.
+`/quiz-v2/play/` is the Study Builder runner built on top of `buildQuizSession`. It creates account-backed sessions when the learner is logged in, submits graded attempts to Supabase, and feeds My Progress/history. Local page state is still used for immediate interaction, but completed attempts are synchronized through the backend pipeline.
 
 Query params:
 
@@ -137,15 +117,10 @@ Playwright coverage lives at `site/tests/quiz-v2-play-test.ts`: route load,
 answer selection + reveal, next/prev navigation, and seed determinism
 across reloads.
 
-## What this is not
+## Current boundaries
 
-This is foundation only. Out of scope for this milestone:
-
-- session persistence (Supabase or otherwise),
-- a graded quiz runner with scoring, retry, or progress tracking,
-- choice-order randomization,
-- topic filter UI,
-- replacing production `/quiz/`.
-
-When those land, they will build on this descriptor — the same `sessionId`
-produced today should validate against any future persistence layer.
+- Classic Quiz (`/quiz/`) remains the fast/simple mode.
+- Study Builder (`/quiz-v2/`) is the targeted mode and shares history/progress with Classic Quiz.
+- The pure session utility remains deterministic and side-effect free; backend persistence belongs in Edge Functions.
+- Review Queue uses whole NRC questions, not generated microcards.
+- Choice-order randomization can remain layered above the descriptor as long as submitted attempts preserve the original-answer mapping.

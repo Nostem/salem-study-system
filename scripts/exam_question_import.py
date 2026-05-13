@@ -672,7 +672,15 @@ def audit_question_records(
                         _add_issue(issues, record, "unresolved_connection", f"Connection link does not resolve: {link}")
 
         if record.get("requires_reference") is None:
-            _add_issue(issues, record, "missing_reference_flag", "Question has no explicit reference flag.")
+            if record.get("status") in {"outdated", "needs_review", "conflict", "retired", "draft"}:
+                _add_issue(
+                    review_items,
+                    record,
+                    "excluded_missing_reference_flag",
+                    "Default-excluded question has no explicit reference flag; track for cleanup but do not block active quiz import.",
+                )
+            else:
+                _add_issue(issues, record, "missing_reference_flag", "Question has no explicit reference flag.")
 
     issue_counts = Counter(issue["issue"] for issue in issues)
     review_counts = Counter(item["issue"] for item in review_items)

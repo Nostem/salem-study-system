@@ -192,6 +192,44 @@ function graphEdgeRowsFor(nodeId: string, direction: 'outgoing' | 'incoming'): A
   });
 }
 
+function compactNodeStep(nodeId: string, note?: string): { nodeId: string; title: string; kind: string; note?: string } | null {
+  const node = nodeById.get(nodeId);
+  if (!node) return null;
+  return { nodeId, title: node.title, kind: node.kind, note };
+}
+
+function localStudyPathsFor(node: (typeof graph.nodes)[number]): Array<{ label: string; steps: Array<{ nodeId: string; title: string; kind: string; note?: string }>; quizHref?: string }> {
+  const paths: Array<{ label: string; steps: Array<{ nodeId: string; title: string; kind: string; note?: string }>; quizHref?: string }> = [];
+  const pushPath = (label: string, nodeIds: Array<[string, string?]>, quizHref?: string): void => {
+    const steps = nodeIds.map(([id, note]) => compactNodeStep(id, note)).filter((step): step is { nodeId: string; title: string; kind: string; note?: string } => Boolean(step));
+    if (steps.length >= 2) paths.push({ label, steps, quizHref });
+  };
+
+  if (node.kind === 'topic') {
+    const articleEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'topic-wiki');
+    const question = eligibleQuestionsFor(node)[0];
+    if (articleEdge && question) pushPath('Read the wiki page, then quiz this topic', [[articleEdge.target, 'read'], [node.id, 'topic'], [question.id, 'practice pool']], practiceHref(node));
+  }
+
+  if (node.kind === 'article') {
+    const topicEdges = (edgesByTarget.get(node.id) ?? []).filter((e) => e.type === 'topic-wiki');
+    for (const topicEdge of topicEdges.slice(0, 5)) {
+      const topic = nodeById.get(topicEdge.source);
+      const question = topic ? eligibleQuestionsFor(topic)[0] : undefined;
+      if (question) pushPath('Article → topic → exam question', [[node.id, 'read'], [topicEdge.source, 'topic'], [question.id, 'practice']], topic ? practiceHref(topic) : undefined);
+    }
+  }
+
+  if (node.kind === 'question') {
+    const topicEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'tests');
+    const sourceEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'quiz-source');
+    if (sourceEdge && topicEdge) pushPath('Source article → topic → question', [[sourceEdge.target, 'source'], [topicEdge.target, 'topic'], [node.id, 'question']], practiceHref(node));
+    else if (topicEdge) pushPath('Topic → question', [[topicEdge.target, 'topic'], [node.id, 'question']], practiceHref(node));
+  }
+
+  return paths.slice(0, 5);
+}
+
 const detailData = Object.fromEntries(renderedNodes.map((n) => {
   const eligibleQuestions = eligibleQuestionsFor(n);
   return [n.id, {
@@ -207,6 +245,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     edgeSummary: edgeSummaryFor(n.id),
     metaEntries: metaEntriesFor(n),
     eligibleQuestionSlugs: eligibleQuestions.map((q) => q.slug),
+    studyPaths: localStudyPathsFor(n),
     relatedQuestions: relatedQuestionsFor(n.id).slice(0, 12).map((q) => ({
       id: q.id,
       title: q.title,
@@ -423,6 +462,11 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
 
   type DetailEdge = { type: string; nodeId: string; title: string };
   type DetailQuestion = { id: string; title: string; kind: string; examYear?: unknown; questionNumber?: unknown };
+  type DetailPath = {
+    label: string;
+    quizHref?: string;
+    steps: Array<{ nodeId: string; title: string; kind: string; note?: string }>;
+  };
   type DetailData = {
     id: string;
     kind: string;
@@ -436,6 +480,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     eligibleQuestionSlugs: string[];
     edgeSummary: Array<{ label: string; count: number }>;
     metaEntries: Array<{ label: string; value: string }>;
+    studyPaths: DetailPath[];
     relatedQuestions: DetailQuestion[];
     relatedQuestionCount: number;
     outgoing: DetailEdge[];
@@ -494,6 +539,39 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
               <span class="block font-mono text-[10px] text-text-muted">${escapeHtml(edge.type)}</span>
               <span class="block truncate">${escapeHtml(edge.title)}</span>
             </button>
+          `).join('')}
+        </div>
+      </section>
+    `;
+  }
+
+  function renderStudyPaths(detail: DetailData): string {
+    if (detail.studyPaths.length === 0) return '';
+    return `
+      <section class="mb-5 rounded border border-border bg-bg/50 p-3" data-testid="gv2-study-paths-${escapeHtml(detail.id)}">
+        <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+          <h3 class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Local study paths</h3>
+          <span class="text-[11px] text-text-muted">Semantic hops from source → topic → question.</span>
+        </div>
+        <div class="space-y-3">
+          ${detail.studyPaths.map((path) => `
+            <div class="rounded border border-border bg-bg-card p-3">
+              <div class="mb-2 flex flex-wrap items-center justify-between gap-2">
+                <div class="text-sm font-semibold text-text-primary">${escapeHtml(path.label)}</div>
+                ${path.quizHref ? `<a href="${escapeHtml(path.quizHref)}" class="rounded border border-accent-blue/60 px-2 py-1 text-xs text-accent-blue no-underline hover:bg-accent-blue/10">Practice path</a>` : ''}
+              </div>
+              <ol class="flex flex-wrap items-stretch gap-2 text-xs">
+                ${path.steps.map((step, index) => `
+                  <li class="flex items-center gap-2">
+                    <button type="button" data-gv2-select="${escapeHtml(step.nodeId)}" class="rounded border border-border bg-bg px-2 py-2 text-left hover:border-accent-blue">
+                      <span class="block font-mono text-[10px] uppercase tracking-wider text-text-muted">${escapeHtml(step.kind)}${step.note ? ` · ${escapeHtml(step.note)}` : ''}</span>
+                      <span class="block max-w-[190px] truncate text-text-primary">${escapeHtml(step.title)}</span>
+                    </button>
+                    ${index < path.steps.length - 1 ? '<span class="text-text-muted">→</span>' : ''}
+                  </li>
+                `).join('')}
+              </ol>
+            </div>
           `).join('')}
         </div>
       </section>
@@ -568,6 +646,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
           </div>
         </header>
         ${renderNeighborhoodMap(detail)}
+        ${renderStudyPaths(detail)}
         <div class="mb-5 grid gap-4 xl:grid-cols-[1fr_240px]">
           <div class="space-y-4">
             <section class="rounded border border-border bg-bg/50 p-3">

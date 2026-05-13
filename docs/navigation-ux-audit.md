@@ -106,3 +106,10 @@ Study Builder continues to submit `source: "quiz-v2"`.
 - `/quiz-v2/` route names are kept for compatibility, even though the user-facing label is now Study Builder.
 - Legacy Graph remains reachable, but it is de-emphasized because Study Map is now the learner-facing graph route.
 - Classic Quiz keeps local draft resume behavior; completed attempts are the shared backend sync priority.
+
+
+## Follow-up completion notes
+
+- PR #25 shipped the dual-quiz navigation pass and was deployed successfully.
+- PR #30 shipped contrast/theme polish and Node 24 GitHub Actions updates; the post-merge production smoke test reported no issues.
+- Remaining UX work now moves from route labeling into learner workflow depth: mobile QA, richer My Progress actions, whole-question review scheduling, and semantic Study Map paths.

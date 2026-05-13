@@ -1,6 +1,6 @@
 {
   "default_quiz_excluded_counts": {
-    "draft": 100
+    "draft": 2
   },
   "issue_counts": {},
   "issues": [],
@@ -22,7 +22,8 @@
     }
   ],
   "status_counts": {
-    "draft": 100
+    "draft": 2,
+    "verified": 98
   },
   "total_records": 100
 }

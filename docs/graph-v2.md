@@ -1,6 +1,6 @@
-# Graph v2 preview
+# Study Map / Graph v2
 
-Graph v2 is an additive experiment beside the existing `/graph/` page. It does not replace the current D3 wiki-only graph.
+Study Map (`/graph-v2/`) is the learner-facing graph-linked practice route. It remains additive beside the legacy `/graph/` page, but it is no longer only a preview: it is part of the main study loop and can launch Study Builder sessions.
 
 ## Purpose
 
@@ -32,11 +32,9 @@ Examples:
 - `quiz-source`: question → source wiki article
 - `sourced-from`: question → imported source/K/A label node
 
-## Preview route
+## Current route
 
-The experimental route is `/graph-v2/` and is marked `noindex,nofollow`.
-
-For now it renders a searchable/listable preview rather than replacing the production force graph. This keeps the milestone low-risk while verifying that the graph data model is useful and source-traceable.
+The route is `/graph-v2/`, surfaced to learners as **Study Map**. It renders a mobile-friendly searchable/listable map instead of forcing the old D3 graph interaction. Selecting nodes shows source relationships, related questions, study actions, and graph-generated quiz pools.
 
 The known 2023 Q23 regression should show:
 
@@ -45,9 +43,9 @@ The known 2023 Q23 regression should show:
 - source wiki edge to `article:exams/2023/q23-eop-flowchart-symbols-concurrent`
 - source/K/A edges through `sourced-from`
 
-## Non-goals
+## Current boundaries and next layer
 
-- No replacement of `/graph/` yet.
-- No quiz or review behavior changes.
-- No semantic embeddings or weak-area diagnosis yet.
-- No generated questions.
+- Legacy `/graph/` remains available but is de-emphasized.
+- Study Map launches Study Builder via resolved `slugs=` or topic filters; it does not generate new questions.
+- The graph uses explicit imported edges today: wikilinks, question-topic tests, topic-wiki links, quiz-source links, and source refs.
+- The next semantic layer should add reusable local-path logic, typed study paths, and clearer question-pool explanations before any embedding-based recommendations.
