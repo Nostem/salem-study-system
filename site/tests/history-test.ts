@@ -62,6 +62,7 @@ const historyResponse = {
       filterSummary: '2018 · RO · 5 questions',
       replayHref: '/quiz-v2/play/?slugs=q10-rps-pzr-press-channel-failure&count=1&seed=history-replay',
       reviewMissedHref: '/quiz-v2/review/?slugs=q10-rps-pzr-press-channel-failure',
+      retakeMissedHref: '/quiz-v2/play/?slugs=q10-rps-pzr-press-channel-failure&count=1&seed=history-missed',
       questions: [
         {
           position: 1,
@@ -70,6 +71,7 @@ const historyResponse = {
           selectedLabel: 'A',
           selectedOriginalLabel: 'C',
           acceptedLabels: ['A'],
+          acceptedDisplayLabels: ['B'],
           isCorrect: true,
           status: 'correct',
           explanationText: 'Pressurizer channel failure explanation.',
@@ -120,7 +122,7 @@ test('history page renders summary cards, quiz attempts, weak topics, and prior 
   await expect(page.getByTestId('history-summary')).toContainText('2');
   await expect(page.getByTestId('history-summary')).toContainText('75%');
   await expect(page.getByTestId('history-summary')).toContainText('50%');
-  await expect(page.getByTestId('history-summary')).toContainText('3');
+  await expect(page.getByTestId('history-summary')).toContainText('May');
 
   const table = page.getByTestId('history-sessions');
   await expect(table).toContainText('Score: 4/5 (80%) · PASS');
@@ -136,13 +138,16 @@ test('history page renders summary cards, quiz attempts, weak topics, and prior 
   await expect(page.getByTestId('history-personal-analytics')).toContainText('Due reviews');
   await expect(page.locator('[data-history-analytics="due"]')).toHaveText('4');
   await expect(table.getByRole('link', { name: /^Replay$/i })).toHaveAttribute('href', /\/salem-study-system\/quiz-v2\/play\/\?slugs=q10-rps-pzr-press-channel-failure&count=1&seed=history-replay$/);
-  await expect(table.getByRole('link', { name: /^Missed$/i })).toHaveAttribute('href', /\/salem-study-system\/quiz-v2\/review\/\?slugs=q10-rps-pzr-press-channel-failure$/);
+  await expect(table.getByRole('link', { name: /^Review missed$/i })).toHaveAttribute('href', /\/salem-study-system\/quiz-v2\/review\/\?slugs=q10-rps-pzr-press-channel-failure$/);
+  await expect(table.getByRole('link', { name: /^Quiz missed$/i })).toHaveAttribute('href', /\/salem-study-system\/quiz-v2\/play\/\?slugs=q10-rps-pzr-press-channel-failure&count=1&seed=history-missed$/);
 
   await table.getByRole('button', { name: /Review session-pass/i }).click();
   await expect(page.getByTestId('history-review')).toBeInViewport();
   await expect(page.getByTestId('history-review')).toContainText('2018 Q10');
   await expect(page.getByTestId('history-review')).toContainText('Selected: A');
   await expect(page.getByTestId('history-review')).toContainText('Original: C');
+  await expect(page.getByTestId('history-review')).toContainText('Accepted: B');
+  await expect(page.getByTestId('history-review')).toContainText('Original: A');
   await expect(page.getByTestId('history-review')).toContainText('Correct');
   await expect(page.getByTestId('history-review')).toContainText('Study Builder');
   await expect(page.getByTestId('history-review')).toContainText('Pressurizer channel failure explanation.');

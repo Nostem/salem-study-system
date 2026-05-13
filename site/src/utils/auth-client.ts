@@ -80,6 +80,7 @@ export type QuizHistoryQuestion = {
   selectedLabel?: string | null;
   selectedOriginalLabel?: string | null;
   acceptedLabels: string[];
+  acceptedDisplayLabels?: string[];
   isCorrect: boolean;
   status: 'correct' | 'incorrect' | 'unanswered';
   explanationText?: string | null;
@@ -103,6 +104,7 @@ export type QuizHistorySession = {
   source?: string | null;
   replayHref?: string | null;
   reviewMissedHref?: string | null;
+  retakeMissedHref?: string | null;
   missedSlugs?: string[];
   questions: QuizHistoryQuestion[];
 };

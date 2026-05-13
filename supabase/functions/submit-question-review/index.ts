@@ -1,6 +1,5 @@
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.105.1';
-
-type ReviewRating = 'again' | 'hard' | 'good' | 'easy';
+import { scheduleWholeQuestionReview, type ReviewRating } from '../_shared/fsrs-whole-question.ts';
 
 const corsHeaders = {
   'Access-Control-Allow-Origin': '*',
@@ -17,20 +16,6 @@ function jsonResponse(body: Record<string, unknown>, status = 200): Response {
 
 function normalizeRating(value: unknown): ReviewRating | null {
   return value === 'again' || value === 'hard' || value === 'good' || value === 'easy' ? value : null;
-}
-
-function intervalDays(rating: ReviewRating, totalCorrect: number): number {
-  if (rating === 'again') return 1;
-  if (rating === 'hard') return 2;
-  if (rating === 'good') return totalCorrect >= 2 ? 7 : 3;
-  return totalCorrect >= 2 ? 21 : 7;
-}
-
-function masteryState(attempts: number, correct: number, incorrect: number): 'new' | 'learning' | 'shaky' | 'mastered' {
-  if (attempts <= 0) return 'new';
-  if (attempts >= 3 && correct >= 3 && incorrect === 0) return 'mastered';
-  if (incorrect > correct) return 'shaky';
-  return 'learning';
 }
 
 Deno.serve(async (req) => {
@@ -75,32 +60,46 @@ Deno.serve(async (req) => {
 
   const { data: existing, error: lookupError } = await admin
     .from('user_question_state')
-    .select('attempts_count, correct_count, incorrect_count, last_correct_at, flagged')
+    .select('attempts_count, correct_count, incorrect_count, last_correct_at, flagged, review_reps, review_lapses, fsrs_difficulty, fsrs_stability, scheduled_days, last_reviewed_at')
     .eq('user_id', userData.user.id)
     .eq('question_id', question.id)
     .maybeSingle();
   if (lookupError) return jsonResponse({ error: 'review_state_lookup_failed' }, 500);
 
-  const now = new Date();
-  const isSuccess = rating === 'good' || rating === 'easy';
-  const attemptsCount = Number(existing?.attempts_count ?? 0) + 1;
-  const correctCount = Number(existing?.correct_count ?? 0) + (isSuccess ? 1 : 0);
-  const incorrectCount = Number(existing?.incorrect_count ?? 0) + (isSuccess ? 0 : 1);
-  const next = new Date(now.toISOString());
-  next.setUTCDate(next.getUTCDate() + intervalDays(rating, correctCount));
+  const review = scheduleWholeQuestionReview({
+    attemptsCount: existing?.attempts_count,
+    correctCount: existing?.correct_count,
+    incorrectCount: existing?.incorrect_count,
+    reviewReps: existing?.review_reps,
+    reviewLapses: existing?.review_lapses,
+    fsrsDifficulty: existing?.fsrs_difficulty,
+    fsrsStability: existing?.fsrs_stability,
+    scheduledDays: existing?.scheduled_days,
+    lastReviewedAt: existing?.last_reviewed_at,
+    lastCorrectAt: existing?.last_correct_at,
+    flagged: existing?.flagged,
+  }, rating);
 
   const row = {
     user_id: userData.user.id,
     question_id: question.id,
-    attempts_count: attemptsCount,
-    correct_count: correctCount,
-    incorrect_count: incorrectCount,
-    last_attempt_at: now.toISOString(),
-    last_correct_at: isSuccess ? now.toISOString() : (existing?.last_correct_at ?? null),
-    flagged: Boolean(existing?.flagged ?? false),
-    mastery_state: masteryState(attemptsCount, correctCount, incorrectCount),
-    next_review_at: next.toISOString(),
-    updated_at: now.toISOString(),
+    attempts_count: review.attemptsCount,
+    correct_count: review.correctCount,
+    incorrect_count: review.incorrectCount,
+    last_attempt_at: review.lastAttemptAt,
+    last_correct_at: review.lastCorrectAt,
+    flagged: review.flagged,
+    mastery_state: review.masteryState,
+    next_review_at: review.nextReviewAt,
+    review_reps: review.reviewReps,
+    review_lapses: review.reviewLapses,
+    fsrs_difficulty: review.fsrsDifficulty,
+    fsrs_stability: review.fsrsStability,
+    scheduled_days: review.scheduledDays,
+    elapsed_days: review.elapsedDays,
+    last_review_rating: review.lastReviewRating,
+    last_reviewed_at: review.lastReviewedAt,
+    updated_at: review.lastReviewedAt,
   };
 
   const { error: upsertError } = await admin
@@ -108,11 +107,31 @@ Deno.serve(async (req) => {
     .upsert(row, { onConflict: 'user_id,question_id' });
   if (upsertError) return jsonResponse({ error: 'review_state_upsert_failed' }, 500);
 
+  const { error: eventError } = await admin
+    .from('question_review_events')
+    .insert({
+      user_id: userData.user.id,
+      question_id: question.id,
+      rating,
+      reviewed_at: review.lastReviewedAt,
+      elapsed_days: review.elapsedDays,
+      scheduled_days: review.scheduledDays,
+      previous_difficulty: review.previousDifficulty,
+      previous_stability: review.previousStability,
+      new_difficulty: review.fsrsDifficulty,
+      new_stability: review.fsrsStability,
+      source: 'review',
+    });
+  if (eventError) return jsonResponse({ error: 'review_event_insert_failed' }, 500);
+
   return jsonResponse({
     ok: true,
     slug,
     rating,
     nextReviewAt: row.next_review_at,
     masteryState: row.mastery_state,
+    scheduledDays: review.scheduledDays,
+    fsrsDifficulty: review.fsrsDifficulty,
+    fsrsStability: review.fsrsStability,
   });
 });

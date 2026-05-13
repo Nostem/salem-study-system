@@ -1,6 +1,6 @@
 # Structured Question Bank v2
 
-Status: first safe rebuild milestone. This format is generated beside the existing quiz bank and is not wired into the production quiz page yet.
+Status: current structured quiz-bank source for Study Builder, Review Queue, and Study Map. It is still generated beside the Classic Quiz bank; Classic Quiz (`/quiz/`) remains available and is not replaced.
 
 ## Goal
 
@@ -74,14 +74,14 @@ This is not a final source model. It is a bridge format that keeps enough tracea
 
 ## Migration rule
 
-The current quiz bank remains production. The structured bank is generated beside it:
+The Classic Quiz bank and structured bank now coexist:
 
 ```text
-site/src/data/quiz-bank.json      # current production input
-site/src/data/quiz-bank-v2.json   # experimental structured input
+site/src/data/quiz-bank.json      # Classic Quiz / compatibility input
+site/src/data/quiz-bank-v2.json   # Study Builder, Review Queue, Study Map input
 ```
 
-No live page should consume v2 until the renderer and tests are proven.
+Live v2 routes consume the structured bank. Future imports must keep this file validated before deploy because it now affects learner-facing study flows.
 
 ## Builder
 

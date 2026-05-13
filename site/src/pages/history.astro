@@ -48,8 +48,8 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
           <div data-history-summary="pass-rate" class="mt-2 text-3xl font-semibold text-[#e0e4ea]">0%</div>
         </div>
         <div class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
-          <div class="text-xs uppercase tracking-[0.18em] text-[#8b95a5]">Answered</div>
-          <div data-history-summary="answered" class="mt-2 text-3xl font-semibold text-[#e0e4ea]">0</div>
+          <div class="text-xs uppercase tracking-[0.18em] text-[#8b95a5]">Last quiz</div>
+          <div data-history-summary="last" class="mt-2 text-lg font-semibold text-[#e0e4ea]">—</div>
         </div>
       </div>
 
@@ -156,7 +156,7 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
       document.querySelector<HTMLElement>('[data-history-summary="completed"]')!.textContent = String(data.summary.completedQuizzes);
       document.querySelector<HTMLElement>('[data-history-summary="average"]')!.textContent = formatPercent(data.summary.averageScore);
       document.querySelector<HTMLElement>('[data-history-summary="pass-rate"]')!.textContent = formatPercent(data.summary.passRate);
-      document.querySelector<HTMLElement>('[data-history-summary="answered"]')!.textContent = String(data.summary.questionsAnswered);
+      document.querySelector<HTMLElement>('[data-history-summary="last"]')!.textContent = data.summary.lastCompletedAt ? formatDate(data.summary.lastCompletedAt) : '—';
       document.querySelector<HTMLElement>('[data-history-analytics="accuracy"]')!.textContent = data.summary.overallAccuracy == null ? '—' : formatPercent(data.summary.overallAccuracy);
       document.querySelector<HTMLElement>('[data-history-analytics="due"]')!.textContent = String(data.summary.dueReviewCount ?? 0);
       document.querySelector<HTMLElement>('[data-history-analytics="shaky"]')!.textContent = String(data.summary.shakyCount ?? 0);
@@ -191,6 +191,7 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
       sessionsBody.innerHTML = sessions.map((session) => {
         const replayHref = normalizeAppHref(session.replayHref);
         const reviewMissedHref = normalizeAppHref(session.reviewMissedHref);
+        const retakeMissedHref = normalizeAppHref(session.retakeMissedHref);
         const badge = modeBadge(session);
         return `
         <tr class="border-b border-[#172033] text-[#c8cdd5]">
@@ -204,7 +205,7 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
           </td>
           <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(session.feedbackMode)}${session.completionMode === 'early' ? ' · Early finish' : ''}</td>
           <td class="py-3 pr-3 align-top font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</td>
-          <td class="py-3 pr-3 align-top"><div class="flex flex-wrap gap-2"><button type="button" data-review-session="${escapeHtml(session.id)}" aria-label="Review ${escapeHtml(session.id)}" class="rounded-md border border-[#2a6f97] px-3 py-1 text-xs text-[#d7ecff] hover:bg-[#102033]">Review</button>${replayHref ? `<a href="${escapeHtml(replayHref)}" class="rounded-md border border-[#334155] px-3 py-1 text-xs text-[#c8cdd5] no-underline hover:bg-[#102033]">Replay</a>` : ''}${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-1 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Missed</a>` : ''}</div></td>
+          <td class="py-3 pr-3 align-top"><div class="flex flex-wrap gap-2"><button type="button" data-review-session="${escapeHtml(session.id)}" aria-label="Review ${escapeHtml(session.id)}" class="rounded-md border border-[#2a6f97] px-3 py-1 text-xs text-[#d7ecff] hover:bg-[#102033]">Review</button>${replayHref ? `<a href="${escapeHtml(replayHref)}" class="rounded-md border border-[#334155] px-3 py-1 text-xs text-[#c8cdd5] no-underline hover:bg-[#102033]">Replay</a>` : ''}${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-1 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Review missed</a>` : ''}${retakeMissedHref ? `<a href="${escapeHtml(retakeMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-1 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Quiz missed</a>` : ''}</div></td>
         </tr>
       `;
       }).join('');
@@ -232,6 +233,7 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
       if (!reviewEmpty || !reviewContent) return;
       const replayHref = normalizeAppHref(session.replayHref);
       const reviewMissedHref = normalizeAppHref(session.reviewMissedHref);
+      const retakeMissedHref = normalizeAppHref(session.retakeMissedHref);
       reviewEmpty.classList.add('hidden');
       reviewContent.innerHTML = `
         <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
@@ -243,7 +245,8 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
         </div>
         <div class="flex flex-wrap gap-2">
           ${replayHref ? `<a href="${escapeHtml(replayHref)}" class="rounded-md border border-[#2a6f97] px-3 py-2 text-xs text-[#d7ecff] no-underline hover:bg-[#102033]">Replay full session</a>` : ''}
-          ${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-2 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Practice missed/unanswered</a>` : ''}
+          ${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-2 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Review missed/unanswered</a>` : ''}
+          ${retakeMissedHref ? `<a href="${escapeHtml(retakeMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-2 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Quiz missed/unanswered</a>` : ''}
         </div>
         ${session.questions.map((question) => `
           <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
@@ -252,7 +255,7 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
               <span class="rounded-full border px-2 py-0.5 text-[11px] uppercase ${question.status === 'correct' ? 'border-[#2f6f4f] text-[#8fd694]' : question.status === 'incorrect' ? 'border-[#7f2f2f] text-[#fca5a5]' : 'border-[#8b95a5] text-[#9ca3af]'}">${escapeHtml(question.status === 'correct' ? 'Correct' : question.status)}</span>
             </div>
             <div class="mt-2 text-sm text-[#c8cdd5]">Selected: ${escapeHtml(question.selectedLabel ?? '—')}${question.selectedOriginalLabel ? ` · Original: ${escapeHtml(question.selectedOriginalLabel)}` : ''}</div>
-            <div class="mt-1 text-xs text-[#8b95a5]">Accepted: ${escapeHtml(question.acceptedLabels.join(', ') || '—')}</div>
+            <div class="mt-1 text-xs text-[#8b95a5]">Accepted: ${escapeHtml((question.acceptedDisplayLabels?.length ? question.acceptedDisplayLabels : question.acceptedLabels).join(', ') || '—')}${question.acceptedDisplayLabels?.length && question.acceptedLabels.join(', ') !== question.acceptedDisplayLabels.join(', ') ? ` · Original: ${escapeHtml(question.acceptedLabels.join(', '))}` : ''}</div>
             ${question.explanationText ? `<p class="mt-3 text-sm text-[#8b95a5]">${escapeHtml(question.explanationText)}</p>` : ''}
           </div>
         `).join('')}

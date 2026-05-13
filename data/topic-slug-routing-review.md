@@ -4,6 +4,10 @@ These unresolved slugs came from the previous organization system. Fill in `targ
 
 Use current wiki slugs or paths where possible, for example `systems/4kv`, `systems/reactor-coolant-system`, `tech-specs/ts-3-4-5-eccs`, etc. If a slug should split into multiple targets, write each target and a short rule/note.
 
+## Resolution status
+
+This review has been resolved into `data/topic-map.yaml`. Broad legacy slugs now either map to a current wiki target or split by question-specific route. The import audit should now treat unresolved topic slugs as a regression.
+
 ## Review format
 
 - `legacy_slug`: old YAML metadata slug.
@@ -14,8 +18,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `instrumentation-and-controls`
 
 - legacy_slug: `instrumentation-and-controls`
-- target_wiki: rps-ssps
-- notes: TODO
+- target_wiki: systems/rps-ssps
+- notes: mapped in `data/topic-map.yaml`; revisit individual I&C questions only if a more specific system page exists.
 - occurrence_count: 24
 - examples:
   - 2022 Q1: `q1-reactor-trip-breakers-ssps` — 2022 Q1 — Reactor Trip Breakers / SSPS Train Failure
@@ -71,8 +75,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `ac-power`
 
 - legacy_slug: `ac-power`
-- target_wiki: TODO
-- notes: manually route ac power to most applicable elecetrical wiki. any main turbine generator questions can be routed to main turbine. 
+- target_wiki: split per question in `data/topic-map.yaml`
+- notes: complete. Routes include systems/turbine-generator, systems/pressurizer, systems/rps-ssps, systems/4kv, systems/containment-spray, abnormals/ab-460-0001-loss-of-2a-460v-bus, and systems/diesel-generators.
 - occurrence_count: 9
 - examples:
   - 2022 Q17: `q17-mvar-loading-voltage-regulator` — 2022 Q17 — MVAR Loading / Voltage Regulator
@@ -115,8 +119,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `radioactive-waste-management`
 
 - legacy_slug: `radioactive-waste-management`
-- target_wiki: TODO
-- notes: 2022 q23 - abv and waste gas, 2023 q61 - waste liquid, 2023 q68 - waste liquid, 2023 q90 - containment, 2023 q98 - waste liquid
+- target_wiki: split per question in `data/topic-map.yaml`
+- notes: complete. Routes: 2022 Q23 → systems/waste-gas; 2023 Q61/Q68/Q98 → systems/waste-liquid; 2023 Q90 → systems/containment-systems.
 - occurrence_count: 5
 - examples:
   - 2022 Q23: `q23-plant-vent-rad-monitor-response` — 2022 Q23 — Plant Vent Rad Monitor Response
@@ -143,7 +147,7 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `feed-and-condensate`
 
 - legacy_slug: `feed-and-condensate`
-- target_wiki: feed & condensate
+- target_wiki: systems/feedwater-and-condensate
 - notes: its possible the & symbol gave the parser some trouble
 - occurrence_count: 3
 - examples:
@@ -163,8 +167,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `reactor-core-and-fuel`
 
 - legacy_slug: `reactor-core-and-fuel`
-- target_wiki: rx vessel & internals
-- notes: TODO
+- target_wiki: systems/rx-vessel-and-internals
+- notes: mapped in `data/topic-map.yaml`.
 - occurrence_count: 3
 - examples:
   - 2023 Q8: `q08-fw-heater-high-level-reactor-power` — 2023 Q8 — FW Heater High Level / Effect on Reactor Power
@@ -183,8 +187,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `auxiliary-systems`
 
 - legacy_slug: `auxiliary-systems`
-- target_wiki: TODO
-- notes: 2023 q14 - control air, 2023 q52 - control air
+- target_wiki: split per question in `data/topic-map.yaml`
+- notes: complete. 2023 Q14 and Q52 route to systems/control-air.
 - occurrence_count: 2
 - examples:
   - 2023 Q14: `q14-control-air-porv-accumulators-spray` — 2023 Q14 — Control Air / PORV Accumulators and Spray Valves
@@ -199,8 +203,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `electrical-power-systems`
 
 - legacy_slug: `electrical-power-systems`
-- target_wiki: TODO
-- notes: 2023 q88 - 500kv, 2023 q93 - 4kv, also add circ water topic slug to q93
+- target_wiki: split per question in `data/topic-map.yaml`
+- notes: complete. 2023 Q88 routes to systems/500kv. 2023 Q93 routes to systems/4kv and also adds a circulating-water topic slug.
 - occurrence_count: 2
 - examples:
   - 2023 Q88: `q88-grid-disturbance-solar-magnetic` — 2023 Q88 — Grid Disturbance / Solar Magnetic Disturbance
@@ -215,8 +219,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `pressurizer-and-prt`
 
 - legacy_slug: `pressurizer-and-prt`
-- target_wiki: pressurizer & prt
-- notes: TODO
+- target_wiki: systems/pressurizer
+- notes: mapped in `data/topic-map.yaml` via legacy Pressurizer & PRT title compatibility.
 - occurrence_count: 1
 - examples:
   - 2022 Q34: `q34-prt-rupture-disc` — 2022 Q34 — PRT Rupture Disc / High Pressure Response
@@ -227,8 +231,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `radiation-protection`
 
 - legacy_slug: `radiation-protection`
-- target_wiki: radiation monitoring
-- notes: TODO
+- target_wiki: systems/radiation-monitoring
+- notes: mapped in `data/topic-map.yaml`.
 - occurrence_count: 1
 - examples:
   - 2022 Q22: `q22-fuel-handling-incident-alarms` — 2022 Q22 — Fuel Handling Incident Alarms
@@ -239,8 +243,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `steam-generator-and-blowdown`
 
 - legacy_slug: `steam-generator-and-blowdown`
-- target_wiki: steam generator & blowdown
-- notes: TODO
+- target_wiki: systems/steam-generators
+- notes: mapped in `data/topic-map.yaml` via legacy Steam Generator & Blowdown title compatibility.
 - occurrence_count: 1
 - examples:
   - 2022 Q26: `q26-eop-frhs2-afw-isolation` — 2022 Q26 — EOP-FRHS-2 AFW Isolation
@@ -251,8 +255,8 @@ Use current wiki slugs or paths where possible, for example `systems/4kv`, `syst
 ## `ts-3-4-1-reactivity-control`
 
 - legacy_slug: `ts-3-4-1-reactivity-control`
-- target_wiki: ts-3-4-1-3
-- notes: TODO
+- target_wiki: tech-specs/ts-3-4-1-3-movable-control-assemblies
+- notes: mapped in `data/topic-map.yaml`.
 - occurrence_count: 1
 - examples:
   - 2023 Q56: `q56-rod-position-indication` — 2023 Q56 — Rod Position Indication / Group Demand Step Counter
