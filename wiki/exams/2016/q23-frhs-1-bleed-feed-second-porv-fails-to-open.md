@@ -42,7 +42,6 @@ Which one of the following describes the consequences of the PORV failure?
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[ECCS]], [[RCS]], [[Main Steam]]
+- Related systems: [[Pressurizer]], [[ECCS]], [[RCS]]
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related tech specs: [[TS 2.0 — Safety Limits and LSSS]]
 - Related exam: [[2016 NRC Written Exam]]

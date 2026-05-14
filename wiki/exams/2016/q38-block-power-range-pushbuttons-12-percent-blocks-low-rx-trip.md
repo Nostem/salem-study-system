@@ -1,5 +1,5 @@
 ---
-title: "2016 Q38 — Depressing Block Power Range A and B at 12% blocks the 25% low power Rx trip"
+title: "2016 Q38 — Action That Changes Rx Trip Setpoint During Power Ascension"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q38 — Depressing Block Power Range A and B at 12% blocks the 25% low power Rx trip</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q38 — Action That Changes Rx Trip Setpoint During Power Ascension</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">012000A101 A1.01 (2.9*)</span>
 </div>
 

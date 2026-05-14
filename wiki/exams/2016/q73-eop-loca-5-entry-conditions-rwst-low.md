@@ -1,5 +1,5 @@
 ---
-title: "2016 Q73 — EOP-LOCA-5 Entry Conditions (RWST LOW with Sump <62%)"
+title: "2016 Q73 — EOP-LOCA-5 Entry Conditions"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q73 — EOP-LOCA-5 Entry Conditions (RWST LOW with Sump &lt;62%)</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q73 — EOP-LOCA-5 Entry Conditions</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">194001G404 (4.5)</span>
 </div>
 
@@ -39,6 +39,6 @@ Which of the following contains conditions that warrant entry to EOP-LOCA-5 "Los
 
 ## Connections
 
-- Related systems: [[ECCS]], [[RHR]], [[Containment Spray]]
+- Related systems: [[ECCS]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]]
 - Related exam: [[2016 NRC Written Exam]]

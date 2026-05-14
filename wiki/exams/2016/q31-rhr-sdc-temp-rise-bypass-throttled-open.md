@@ -1,5 +1,5 @@
 ---
-title: "2016 Q31 — RHR SDC water-to-RCS temperature rise (RH HX bypass throttled open)"
+title: "2016 Q31 — RHR SDC Water-to-RCS Temperature Rise Cause"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q31 — RHR SDC water-to-RCS temperature rise (RH HX bypass throttled open)</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q31 — RHR SDC Water-to-RCS Temperature Rise Cause</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">005000A102 A1.02 (3.3)</span>
 </div>
 
@@ -42,6 +42,6 @@ Which of the following would cause the temperature of the water flowing to the R
 
 ## Connections
 
-- Related systems: [[RHR]], [[CCW]]
+- Related systems: [[RHR]]
 - Related procedures: [[S2.OP-SO.RHR-0001 — Initiating RHR]]
 - Related exam: [[2016 NRC Written Exam]]

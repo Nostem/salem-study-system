@@ -1,5 +1,5 @@
 ---
-title: "2016 Q51 — 24BF19 fails open at 35% — FW Isolation trips both SGFPs but no AFW auto-start (35% > 9%)"
+title: "2016 Q51 — 24BF19 Fails Open at 35% Power During Shutdown"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q51 — 24BF19 fails open at 35% — FW Isolation trips both SGFPs but no AFW auto-start (35% > 9%)</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q51 — 24BF19 Fails Open at 35% Power During Shutdown</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">059000 A2.01 (3.4)</span>
 </div>
 
@@ -42,7 +42,6 @@ Which of the following describes the effect of this failure, and how will the cr
 
 ## Connections
 
-- Related systems: [[Feed & Condensate]], [[AFW]], [[SGs]]
-- Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]]
+- Related systems: [[Feed & Condensate]], [[AFW]], [[SGs]], [[RPS/SSPS]]
+- Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]]
 - Related exam: [[2016 NRC Written Exam]]

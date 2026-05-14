@@ -1,13 +1,11 @@
 ---
-title: "2016 Q76 — TRIP-2 with Pressure Override failure and Heat Sink Red Path → FRHS-1 SGFP Prompt Recovery"
+title: "2016 Q76 — TRIP-2 with AFW Pressure Override Failure and Multiple AFW Failures"
 category: exams
 status: draft
 aliases:
   - 2016 Q76
   - 2016-Q76
 ---
-
-# 2016 Q76 — TRIP-2 with Pressure Override failure and Heat Sink Red Path → FRHS-1 SGFP Prompt Recovery
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
@@ -54,7 +52,7 @@ Which of the following describes the next action the CRS should take?
 
 ## Connections
 
-- Related systems: [[AFW]], [[Feed & Condensate]], [[Steam Generator & Blowdown]]
+- Related systems: [[AFW]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
 - Related procedures: [[S2.OP-SO.CN-0007 — SGFP Prompt Recovery]]
 - Related exam: [[2016 NRC Written Exam]]

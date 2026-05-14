@@ -314,18 +314,8 @@ LBLOCA with both trains of auto SI failing. One SI keyswitch also fails to manua
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q82</div>
-EOP-LOCA-2 Step 19.1 RNO (RCS subcooling NOT &gt;0&deg;F): the crew <span class="hi-exam">starts ECCS pumps as necessary to restore RCS subcooling, and opens BIT isolation valves if previously shut</span>. Initial SI actuation operates all required ECCS components automatically; subsequent ECCS pump operation is limited to <span class="hi-exam">specific required components</span> (not a full re-initiate-SI). <span class="hi-trap">Trap: an "Initiate SI" action is incorrect once the initial SI actuation has occurred — only the specific pumps and BIT alignment are operated to restore subcooling.</span>
-</div>
-
-<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q83</div>
 EOP-FRTS-1 Step 12 ECCS pump reduction (PURPLE path, MSLB with multiple faulted SGs, ECCS contributing to overcooling): <span class="hi-exam">stop all ECCS pumps except 21 or 22 charging pump</span>. Companion AFW action (Step 3.5) maintains AFW flow &gt;22E4 lbm/hr until at least ONE intact SG NR level is &gt;15%.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q87</div>
-SI Accumulator isolation in EOP-LOCA-2 (post-LOCA cooldown with no subcooling, charging through BIT): per <span class="hi-exam">Step 35.3, Accumulators are isolated when RCS T-Hots &lt;<span class="val-trip">375&deg;F</span></span>; otherwise the step is bypassed. <span class="hi-trap">A separate &quot;&lt;1000 psig&quot; isolation criterion exists, but only after IOP-6 entry is initiated later in LOCA-2 (Step 42) — &lt;1000 psig alone is NOT the LOCA-2 step 35 isolation criterion. PZR-level-based and SI-not-terminated criteria are not used.</span>
 </div>
 
 <div class="callout callout-jpm">
@@ -352,7 +342,7 @@ After manual SI for 150 gpm SBLOCA, EOP-TRIP-1 Step 12 safeguard valve verificat
 
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
-- Related exam questions: [[2016 Q4]], [[2016 Q5]], [[2016 Q10]], [[2016 Q19]], [[2016 Q21]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q26]], [[2016 Q29]], [[2016 Q32]], [[2016 Q33]], [[2016 Q36]], [[2016 Q39]], [[2016 Q73]], [[2016 Q79]], [[2016 Q82]], [[2016 Q83]], [[2016 Q84]], [[2016 Q87]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
+- Related exam questions: [[2016 Q4]], [[2016 Q5]], [[2016 Q10]], [[2016 Q19]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q26]], [[2016 Q29]], [[2016 Q32]], [[2016 Q33]], [[2016 Q36]], [[2016 Q39]], [[2016 Q73]], [[2016 Q79]], [[2016 Q83]], [[2016 Q84]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
 - Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]], [[2016 JPM Sim-c]], [[2016 JPM Sim-d]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

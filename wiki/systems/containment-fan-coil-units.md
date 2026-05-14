@@ -192,7 +192,7 @@ APPX-7 Step 2 verification: <span class="hi-exam">CHECK ALL AVAILABLE CFCUs runn
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]]
-- Related exam questions: [[2016 Q26]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
+- Related exam questions: [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
 - Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

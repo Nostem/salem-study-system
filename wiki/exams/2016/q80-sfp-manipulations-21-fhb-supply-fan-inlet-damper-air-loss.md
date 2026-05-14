@@ -1,13 +1,11 @@
 ---
-title: "2016 Q80 — SFP Manipulations with loss of air to 21 FHB Supply Fan Inlet Damper — TS 3.9.12 FHV inoperable"
+title: "2016 Q80 — SFP Manipulations with Loss of Air to 21 FHB Supply Fan Inlet Damper"
 category: exams
 status: draft
 aliases:
   - 2016 Q80
   - 2016-Q80
 ---
-
-# 2016 Q80 — SFP Manipulations with loss of air to 21 FHB Supply Fan Inlet Damper — TS 3.9.12 FHV inoperable
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">

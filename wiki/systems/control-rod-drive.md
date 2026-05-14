@@ -167,11 +167,6 @@ Failures that cause a <span class="hi-exam">SINGLE control rod to drop fully int
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q1</div>
-Rod auto control responds to <span class="hi-exam">small Tavg deviations at the minimum 8 spm rate</span>. An unexpected RCS boration (e.g., VCT auto makeup with 1CV175 erroneously open) lowers Tavg slightly, opens MT governor valves, and drives <span class="hi-exam">8 spm rod withdrawal</span> to restore Tavg. PT-505 (Turbine Steamline Inlet Pressure) failed HIGH would also withdraw rods, but at the <span class="hi-exam">maximum 72 spm</span> rate (large simulated power mismatch). PT-505 failed LOW drives rod insertion, not withdrawal.
-</div>
-
-<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q3</div>
 With reactor trip breakers (RTBs) failing to open, the reactor is tripped from the control room by <span class="hi-exam">opening the RDMG sets power supply breakers from 1CC3</span>. This de-energizes the rod drive system and allows rods to drop. Because the trip signal originates from RDMG breaker open (not from the RTB output contacts), the <span class="hi-exam">Main Turbine does NOT receive an automatic trip signal — the crew must directly perform a manual turbine trip</span>. Other expected automatic responses still occur: main generator output breakers auto-open on the manual turbine trip, 4KV group buses auto-transfer on low voltage, and AFW pumps auto-start on SG lo-lo level after main turbine trip causes SG shrink.
 </div>
@@ -191,6 +186,6 @@ SDM calculation per TSAS 3.1.3.1 Action c.3 with rod 105 declared INOPERABLE (tr
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]], [[CVCS]], [[Main Turbine]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam questions: [[2016 Q1]], [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2016 Q77]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
+- Related exam questions: [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2016 Q77]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
 - Related JPMs: [[2018 JPM Sim-a]], [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

@@ -1,5 +1,5 @@
 ---
-title: "2016 Q4 — LOCA-1 Checks for Secondary Coolant Break Other Than LOCA"
+title: "2016 Q4 — LOCA-1 Major Action Categories"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q4 — LOCA-1 Checks for Secondary Coolant Break Other Than LOCA</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q4 — LOCA-1 Major Action Categories</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">000009 G4.18 (3.3)</span>
 </div>
 
@@ -39,6 +39,6 @@ What does EOP-LOCA-1, Loss of Reactor Coolant, check for OTHER than a LOCA as th
 
 ## Connections
 
-- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]
+- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]
 - Related systems: [[ECCS]], [[Steam Generator & Blowdown]]
 - Related exam: [[2016 NRC Written Exam]]

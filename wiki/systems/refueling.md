@@ -61,5 +61,5 @@ Per SO.CAV P&L 3.6.3 and TS Bases 3/4.7.6: <span class="hi-exam">when CAV is ali
 - Related systems: [[Rx Vessel & Internals]], [[FHV]], [[Radiation Monitoring]]
 - Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.FUEL-0002 — Loss of Refueling Cavity or SFP Level]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]], [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]], [[TS 3/4.7 — Plant Systems]]
-- Related exam questions: [[2016 Q68]], [[2016 Q88]], [[2018 Q34]], [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]]
+- Related exam questions: [[2016 Q47]], [[2016 Q68]], [[2016 Q88]], [[2018 Q34]], [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

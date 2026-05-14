@@ -76,18 +76,13 @@ RWST makeup procedure selection: IAW EOP-LOCA-5, crew adds makeup to RWST per <s
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q5</div>
-LOCA-3 step 11.2 with no CCW pumps running directs single-train recirculation alignment via Step 124 — <span class="hi-exam">there is NO provision in LOCA-3 to transition to LOCA-5</span> for a no-CCW condition. LOCA-5 is entered for <span class="hi-trap">loss of emergency recirculation (mechanical/electrical recirc failures, sump cavitation via APPX-7, etc.) — NOT for loss of CCW alone during the LOCA-3 transfer.</span>
-</div>
-
-<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q26</div>
 Step 9 / Table C — required CS pumps based on RWST level, containment pressure, and number of low-speed CFCUs. With a LBLOCA, 2C 4KV vital bus locked out (22 CS pump deenergized), 22 and 24 CFCUs failed to start, and containment pressure 18 psig: at the LOCA-3 entry, RWST is <span class="hi-exam">15.2 ft</span> and depletes at <span class="hi-exam">~13000 gpm</span> (2 RHR, 1 charging, 1 SI, 1 CS pump running). It takes over 9 minutes to drain below 1 ft, so 7 minutes after the RWST Lo alarm Table C indicates <span class="hi-exam">ONE CS pump required</span>; with 22 CS pump unpowered, <span class="hi-exam">21 CS pump only</span> runs. <span class="hi-trap">BOTH is the answer for RWST level 1–15.2 ft if containment pressure >47 psig OR no CFCUs running. NEITHER is the answer if RWST &lt;1 ft (drain-down miscalculation).</span>
 </div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q84</div>
-LOCA-5 entered at LOCA-1 step 16 (RWST level &gt;15.2 ft) with both RHR pumps stopped and unable to be started: just prior to initiating cooldown, with RWST LO alarm received, CONT SUMP CH A/B LEVEL &gt;62% lights lit, and RCS subcooling &lt;0&deg;F, the CRS shall <span class="hi-exam">remain in LOCA-5 and initiate a RCS cooldown at less than the Tech Spec limit (&lt;100&deg;F/hr)</span> — the TS RCS cooldown limit prevents an unwanted Thermal Shock condition while CFSTs are still in effect in LOCA-5. <span class="hi-trap">Trap A: makeup is to the RWST (directed at step 10), NOT to the VCT. Traps C/D: there is NO LOCA-3 CAS in LOCA-5 — restoring any train of recirc is the concern with no RHR pumps; transfer to CL recirc will occur only after a RHR pump has been restored.</span>
+LOCA-5 entered at step 11 of 1-EOP-LOCA-1 (RWST level &gt;15.2 ft) with both RHR pumps stopped and unable to be started: just prior to initiating cooldown, with RWST LO alarm received, CONT SUMP CH A/B LEVEL &gt;62% lights lit, and RCS subcooling &lt;0&deg;F, the CRS shall <span class="hi-exam">remain in LOCA-5 and initiate a RCS cooldown at less than the Tech Spec limit (&lt;100&deg;F/hr)</span> — the TS RCS cooldown limit prevents an unwanted Thermal Shock condition while CFSTs are still in effect in LOCA-5. <span class="hi-trap">Trap A: makeup is to the RWST (directed at step 10), NOT to the VCT. Traps C/D: there is NO LOCA-3 CAS in LOCA-5 — restoring any train of recirc is the concern with no RHR pumps; transfer to CL recirc will occur only after a RHR pump has been restored.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -104,7 +99,7 @@ With both RHR pumps cavitating during cold leg recirculation transfer, an operat
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
-- Related exam questions: [[2016 Q5]], [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related exam questions: [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

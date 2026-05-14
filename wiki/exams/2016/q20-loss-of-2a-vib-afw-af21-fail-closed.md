@@ -1,5 +1,5 @@
 ---
-title: "2016 Q20 — Loss of 2A 115VAC VIB — 23AF21/24AF21 fail closed, NEO dispatched"
+title: "2016 Q20 — Loss of 2A 115VAC VIB Effect on AFW System"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q20 — Loss of 2A 115VAC VIB — 23AF21/24AF21 fail closed, NEO dispatched</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q20 — Loss of 2A 115VAC VIB Effect on AFW System</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">000057 AA1.06 (3.5)</span>
 </div>
 
@@ -41,6 +41,6 @@ Which of the following describes the impact of the loss on the AFW system if a r
 
 ## Connections
 
-- Related systems: [[AFW]], [[115V AC]], [[SECs]]
+- Related systems: [[AFW]], [[115V AC]]
 - Related procedures: [[AB.115-0001 — Loss of 115V Vital Instrument Bus]]
 - Related exam: [[2016 NRC Written Exam]]

@@ -1,13 +1,11 @@
 ---
-title: "2016 Q79 — SGTR with ruptured SG going water solid before SI termination — continue SGTR-1, terminate SI"
+title: "2016 Q79 — SGTR with Ruptured SG Going Water Solid Before SI Termination"
 category: exams
 status: draft
 aliases:
   - 2016 Q79
   - 2016-Q79
 ---
-
-# 2016 Q79 — SGTR with ruptured SG going water solid before SI termination — continue SGTR-1, terminate SI
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
@@ -47,7 +45,7 @@ Which of the following identifies how the CRS should proceed, and why?
 
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[ECCS]], [[Main Steam]], [[CVCS]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[ECCS]]
 - Related EOPs: [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-SGTR-2 — Post SGTR Cooldown]], [[EOP-FRHS-3 — Response to Steam Generator High Level]]
 - Related abnormals: [[AB.SG-0001 — Steam Generator Tube Leak]]
 - Related exam: [[2016 NRC Written Exam]]

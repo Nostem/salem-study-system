@@ -164,6 +164,11 @@ A maximum of one SI pump or one centrifugal charging pump shall be OPERABLE in M
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q97</div>
+Mode 4 with all RCS T-Colds at 280°F (below POPS enable temp): per LCO 3.5.3, <span class="hi-exam">only ONE charging pump is permitted OPERABLE</span> (other charging pumps and both SI pumps must be rendered inoperable). With 21 Charging in service and 23 Charging being tagged out, closing the suction valve to 21 Charging instead of 23 inadvertently <span class="hi-exam">renders the only OPERABLE charging pump inoperable — no OPERABLE ECCS subsystem remains</span>. LCO 3.5.3 Action a applies: <span class="hi-exam">restore at least one ECCS subsystem to OPERABLE status within 1 hour, or be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap A: restore-or-maintain-Tavg-&lt;350°F is the Action for the RHR pump/HX inoperability path, not the charging pump path. Trap B: only POSITIVE reactivity changes are suspended, not all boron changes. Trap C: TS 3.0.3 does NOT apply because LCO 3.5.3 provides a specific Action for no OPERABLE ECCS subsystem.</span>
+</div>
+
 ---
 
 ## Seal Injection Flow

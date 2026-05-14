@@ -1,13 +1,11 @@
 ---
-title: "2016 Q78 — ATWS at 4% power awaiting Mode 1 — TRIP-2 continuation, not FRSM-1"
+title: "2016 Q78 — ATWS at 4% Power Awaiting Mode 1 — CRS Response"
 category: exams
 status: draft
 aliases:
   - 2016 Q78
   - 2016-Q78
 ---
-
-# 2016 Q78 — ATWS at 4% power awaiting Mode 1 — TRIP-2 continuation, not FRSM-1
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">

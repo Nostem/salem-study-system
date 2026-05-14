@@ -40,6 +40,6 @@ Which of the following identifies how the PZR PORVs will be operated after start
 
 ## Connections
 
-- Related systems: [[Pressurizer]], [[RCPs]], [[ECCS]], [[Incores]]
+- Related systems: [[Pressurizer]]
 - Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - Related exam: [[2016 NRC Written Exam]]

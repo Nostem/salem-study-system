@@ -1,5 +1,5 @@
 ---
-title: "2016 Q48 — SG NR level programmed level during startup — 38.5% at 10% TP / 44% at 60% TP"
+title: "2016 Q48 — SG NR Programmed Level During Startup"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q48 — SG NR level programmed level during startup — 38.5% at 10% TP / 44% at 60% TP</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q48 — SG NR Programmed Level During Startup</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">035000 A1.01 (3.6)</span>
 </div>
 
@@ -42,5 +42,5 @@ Assume a normal power ascension.<br><br>
 
 ## Connections
 
-- Related systems: [[SGs]], [[feedwater]]
+- Related systems: [[SGs]]
 - Related exam: [[2016 NRC Written Exam]]

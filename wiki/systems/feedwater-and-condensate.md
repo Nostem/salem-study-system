@@ -59,7 +59,7 @@ FW Isolation vs FW Interlock: <span class="hi-exam">SG Hi-Hi Level (P-14) trigge
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q52</div>
-FW Interlock setpoint and function: <span class="hi-exam">Feedwater Interlock actuates when 3/4 RCS Tavgs &lt;<span class="val-alarm">554°F</span> AND at least one Reactor Trip and associated bypass breaker open</span>. This shuts the BF19s and BF40 Feed Reg Valves — preventing over-cooling of the RCS on an uncomplicated Rx trip. <span class="hi-exam">Feedwater Isolation actuates when 2/3 SG NR levels on 1/4 SGs reach <span class="val-trip">67%</span> OR on a SI signal</span>, and shuts BF19s, BF40s, BF13s, and trips the SGFPs. <span class="hi-trap">P-12 (3/4 RCS Tavgs &lt;<span class="val-alarm">543°F</span>, shuts Steam Dump valves) is NOT what prevents over-cooling on an uncomplicated Rx trip — steam dumps modulate to control Tavg at ~547°F so temp does not reach 543°F. P-10 (3/4 PRNIs &lt;10% power) blocks low-power Rx trips and is not related to over-cooling protection.</span>
+FW Interlock setpoint and function: <span class="hi-exam">Feedwater Interlock actuates when auctioneered hi Tave is less than <span class="val-alarm">554°F</span> AND at least one Reactor Trip and associated bypass breaker open</span>. This shuts the BF19s and BF40 Feed Reg Valves — preventing over-cooling of the RCS on an uncomplicated Rx trip. <span class="hi-exam">Feedwater Isolation actuates when 2/3 SG NR levels on 1/4 SGs reach <span class="val-trip">67%</span> OR on a SI signal</span>, and shuts BF19s, BF40s, BF13s, and trips the SGFPs. <span class="hi-trap">P-12 (3/4 RCS Tavgs &lt;<span class="val-alarm">543°F</span>, shuts Steam Dump valves) is NOT what prevents over-cooling on an uncomplicated Rx trip — steam dumps modulate to control Tavg at ~547°F so temp does not reach 543°F. P-10 (3/4 PRNIs &lt;10% power) blocks low-power Rx trips and is not related to over-cooling protection.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -70,11 +70,6 @@ FW Isolation from one SG &gt;67% NR with 21 SGFP already tripped (35% power): th
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q45</div>
 SG program level above 20% power is <span class="hi-exam"><span class="val-normal">44% NR</span></span>. With SG NR level at 45% (above 44% program), BF19 (FW Bypass Regulating Valve) demand <span class="hi-exam">decreases</span> — digital FW system throttles BF19s closed to reduce feedwater flow and lower SG level to program. <span class="hi-trap">44% is the program setpoint above 20% power — do not confuse with 50% or other SG level setpoints.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q48</div>
-SG NR level program ramp during normal startup (Unit 2 ADFCS, NCS05ADFWCS-08): <span class="hi-exam">SG NR level is programmed against TURBINE STEAMLINE INLET PRESSURE (≈ Turbine power)</span>, ramping from <span class="val-normal">33% NR at 0% Turbine power</span> to <span class="val-normal">44% NR at 20% Turbine power</span>, then <span class="hi-exam">flat at 44% NR from 20% to 100% Turbine power</span>. At 10% TP the program is <span class="hi-exam">38.5% NR</span> (linear interpolation 33→44 across 0→20%). At 60% TP the program is <span class="hi-exam">44% NR</span>. <span class="hi-trap">Unit 1 only: ramp continues from 44% (at 20%) to 48% (at 100%) — do not apply Unit 1 ramp to Unit 2.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -197,7 +192,7 @@ Single Condensate pump trip with NO HDPs running and polisher in service: <span 
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
-- Related exam questions: [[2016 Q48]], [[2016 Q51]], [[2016 Q52]], [[2016 Q70]], [[2016 Q76]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
+- Related exam questions: [[2016 Q51]], [[2016 Q52]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]], [[2016 JPM Sim-h]], [[2016 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

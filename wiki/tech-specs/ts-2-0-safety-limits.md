@@ -158,15 +158,10 @@ The actual nominal Trip Setpoint entered into the bistable is more conservative 
 
 <a href="/salem-study-system/ts-pdfs/ts-2-0.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-2.pdf" target="_blank">View Bases PDF</a>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q23</div>
-RCS Safety Limit (SL 2.1.2) = <span class="hi-exam"><span class="val-trip">2735 psig</span></span>. During FRHS-1 Bleed and Feed with one PZR PORV open and the second failing to open, the RCS will <span class="hi-exam">NOT re-pressurize to violate the RCS Safety Limit</span> — one PORV (plus PZR safeties at 2485 psig) is sufficient to prevent reaching 2735 psig. The actual concern with only one PORV in the bleed path is inadequate depressurization rate to allow sufficient SI flow for RCS heat removal (alternate RCS openings such as reactor head vents may be required).
-</div>
-
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[RCS]]
 - Related concepts: [[Rx Vessel & Internals]], [[RCS]], [[ESF & Design]]
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2016 Q23]], [[2018 Q43]], [[2020 Q37]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2018 Q43]], [[2020 Q37]]
+- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]]

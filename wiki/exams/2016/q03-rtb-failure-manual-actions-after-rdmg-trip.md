@@ -42,5 +42,5 @@ Because RPS did not successfully trip the reactor, which of the following action
 
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[Control Rod Drive]], [[Main Turbine]], [[AFW]], [[4KV]]
+- Related systems: [[RPS/SSPS]], [[Control Rod Drive]], [[Main Turbine]]
 - Related exam: [[2016 NRC Written Exam]]

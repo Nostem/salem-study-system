@@ -1,5 +1,5 @@
 ---
-title: "2016 Q55 — 24 SPT secondary degrades to 3600V — 2B Vital Bus energized by EDG in BLACKOUT loading"
+title: "2016 Q55 — 24 SPT Secondary Degrades to 3600V — 2B Vital Bus Response"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q55 — 24 SPT secondary degrades to 3600V — 2B Vital Bus energized by EDG in BLACKOUT loading</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q55 — 24 SPT Secondary Degrades to 3600V — 2B Vital Bus Response</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">062000 K3.02 (4.1)</span>
 </div>
 

@@ -47,7 +47,7 @@ Power must be reduced less than 50% by&hellip;&hellip;.
 
 ## Connections
 
-- Related systems: [[Excore NIs]], [[Feed & Condensate]], [[Main Turbine]]
+- Related systems: [[Excore NIs]]
 - Related tech specs: [[TS 3/4.2 — Power Distribution]]
 - Related procedures: [[S2.RE-RA.ZZ-0011 — Tables]]
 - Related exam: [[2016 NRC Written Exam]]

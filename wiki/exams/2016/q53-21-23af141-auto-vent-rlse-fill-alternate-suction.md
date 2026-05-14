@@ -1,5 +1,5 @@
 ---
-title: "2016 Q53 — 21-23AF141 Auto Vent Release valves — fill lines on aligning alternate water sources"
+title: "2016 Q53 — 21-23AF141 Auto Vent Release Valves Design Purpose"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q53 — 21-23AF141 Auto Vent Release valves — fill lines on aligning alternate water sources</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q53 — 21-23AF141 Auto Vent Release Valves Design Purpose</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">061000 K5.05 (2.7)</span>
 </div>
 
@@ -38,6 +38,6 @@ Which of the following describes the design purpose of 21-23AF141, AUX FDWTR PMP
 
 ## Connections
 
-- Related systems: [[AFW]], [[Service Water]], [[Demin Water]], [[Fire Protection]]
+- Related systems: [[AFW]]
 - Related procedures: [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]]
 - Related exam: [[2016 NRC Written Exam]]

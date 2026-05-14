@@ -7,7 +7,6 @@ aliases:
   - 2016-Q77
 ---
 
-# 2016 Q77 — Mode 3 RCP trip Tech Spec application — RCS loops with rod control de-energized
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">

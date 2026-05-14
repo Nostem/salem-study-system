@@ -81,17 +81,7 @@ EOP-LOCA-2 POST Step 22 Charging Pump Reduction with 2 SI Pumps running, 1 RCP r
 
 ### Step 35 — Accumulator Isolation
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q87</div>
-EOP-LOCA-2 Step 35.3 accumulator isolation: <span class="hi-exam">accumulators will be isolated when RCS T-Hots are &lt;375&deg;F</span>; otherwise the step is bypassed. <span class="hi-trap">Accumulators WILL be isolated when RCS pressure is &lt;1000 psig, BUT ONLY after IOP-6 has been entered, the initiation of which is performed later in LOCA-2 (Step 42) — so &quot;&lt;1000 psig&quot; alone is not the LOCA-2 isolation criterion. PZR level 11% (19% adverse) and SI termination status are not the accumulator isolation criteria.</span> SBLOCA scenario: PORV depressurization fails, no subcooling, charging through BIT in service — the &lt;375&deg;F T-Hot criterion is the gating condition.
-</div>
-
 ### Step 19 — RCP Status / Step 19.1 RNO
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q82</div>
-Step 19 RCP Status with <span class="hi-exam">RCS subcooling NOT &gt;0&deg;F</span>: per Step 19.1 RNO, the CRS proceeds directly to <span class="hi-exam">Step 34 — bypassing charging and SI pump reduction steps</span>. Required actions: <span class="hi-exam">start ECCS pumps as necessary to restore RCS subcooling, and open BIT isolation valves if previously shut</span>. <span class="hi-trap">Trap: distractors that direct restoring PZR level are incorrect because RCS depressurization (already performed in stem) is only stopped when PZR level is adequate (&gt;25%) — the loss of subcooling drives Step 19.1 RNO regardless of PZR level. Initiate-SI distractors are incorrect because only specific required ECCS components are operated after the initial SI actuation has already occurred.</span>
-</div>
 
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #1</div>
@@ -102,7 +92,7 @@ Entered from EOP-TRIP-3 CAS when PZR level cannot be maintained &gt;11% during S
 
 - Related systems: [[RCS]], [[ECCS]], [[CVCS]], [[Pressurizer & PRT]]
 - Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2016 Q82]], [[2016 Q87]], [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]]
+- Related exam questions: [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]]
 - Related JPMs: [[2023 JPM Sim-c]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

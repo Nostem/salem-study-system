@@ -1,5 +1,5 @@
 ---
-title: "2016 Q5 — LOCA-3 with No CCW: Single Train Recirculation"
+title: "2016 Q5 — LOCA-3 Flowpath with No CCW Pumps Running"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q5 — LOCA-3 with No CCW: Single Train Recirculation</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q5 — LOCA-3 Flowpath with No CCW Pumps Running</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">000011 EA2.03 (3.7)</span>
 </div>
 
@@ -42,6 +42,6 @@ Which of the following describes the procedure flowpath?
 
 ## Connections
 
-- Related EOPs: [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
+- Related EOPs: [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
 - Related systems: [[ECCS]], [[CCW]], [[RHR]]
 - Related exam: [[2016 NRC Written Exam]]

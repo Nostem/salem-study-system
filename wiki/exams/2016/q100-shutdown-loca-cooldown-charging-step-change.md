@@ -1,5 +1,5 @@
 ---
-title: "2016 Q100 — Shutdown LOCA Procedure Entry Charging Step Change During Cooldown"
+title: "2016 Q100 — Unexplained Charging Step Change During Mode 3 Cooldown"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q100 — Shutdown LOCA Procedure Entry Charging Step Change During Cooldown</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q100 — Unexplained Charging Step Change During Mode 3 Cooldown</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">194001G2.4.9 2.4.9 (4.2)</span>
 </div>
 

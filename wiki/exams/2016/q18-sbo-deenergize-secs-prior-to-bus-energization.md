@@ -1,5 +1,5 @@
 ---
-title: "2016 Q18 — Station Blackout — deenergize SECs prior to energizing 2B 4KV Vital bus"
+title: "2016 Q18 — SBO Required Action Prior to 2B 4KV Vital Bus Energization"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q18 — Station Blackout — deenergize SECs prior to energizing 2B 4KV Vital bus</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q18 — SBO Required Action Prior to 2B 4KV Vital Bus Energization</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">000055 EA2.03 (3.9)</span>
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: "2016 Q39 — SEC BLOCK switches fail — must deenergize 2A/2B/2C VIBs to start 21 Charging, 21 SI, #2 ECAC"
+title: "2016 Q39 — SEC BLOCK Switches Fail — Power Supplies to Deenergize"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q39 — SEC BLOCK switches fail — must deenergize 2A/2B/2C VIBs to start 21 Charging, 21 SI, #2 ECAC</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q39 — SEC BLOCK Switches Fail — Power Supplies to Deenergize</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">013000K201 K2.01 (3.6)</span>
 </div>
 

@@ -84,7 +84,7 @@ EOP-SGTR-1 entered from EOP-TRIP-1 after 21 SG tube rupture. <span class="hi-exa
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Pressurizer & PRT]], [[Main Steam]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-2 — Post SGTR Cooldown]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]], [[EOP-FRHS-3 — Response to Steam Generator High Level]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
-- Related exam questions: [[2016 Q4]], [[2016 Q15]], [[2016 Q79]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
+- Related exam questions: [[2016 Q15]], [[2016 Q79]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
 - Related JPMs: [[2019 JPM SRO-A5]], [[2019 JPM Sim-c]], [[2020 JPM Sim-g]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

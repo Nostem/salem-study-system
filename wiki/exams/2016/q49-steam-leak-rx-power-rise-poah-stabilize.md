@@ -1,5 +1,5 @@
 ---
-title: "2016 Q49 — Steam leak with reactor at 1×10⁻⁸ Amps — Rx power rises until reaching POAH"
+title: "2016 Q49 — Steam Leak Effect on Rx Power at 1×10⁻⁸ Amps"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q49 — Steam leak with reactor at 1×10⁻⁸ Amps — Rx power rises until reaching POAH</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q49 — Steam Leak Effect on Rx Power at 1×10⁻⁸ Amps</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">039000 K5.08 (3.6)</span>
 </div>
 
@@ -42,5 +42,5 @@ Rx power will rise….
 
 ## Connections
 
-- Related systems: [[Main Steam]], [[SGs]], [[NIS]], [[RCS]]
+- Related systems: [[Main Steam]], [[NIS]]
 - Related exam: [[2016 NRC Written Exam]]

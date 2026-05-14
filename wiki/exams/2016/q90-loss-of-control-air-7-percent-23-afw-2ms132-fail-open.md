@@ -1,5 +1,5 @@
 ---
-title: "2016 Q90 — Loss of Control Air 7% Power 23 AFW 2MS132 Fail Open"
+title: "2016 Q90 — Loss of Control Air at 7% Power — Feed Flow Response"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q90 — Loss of Control Air 7% Power 23 AFW 2MS132 Fail Open</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q90 — Loss of Control Air at 7% Power — Feed Flow Response</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">061000A207 A2.07 (3.5)</span>
 </div>
 

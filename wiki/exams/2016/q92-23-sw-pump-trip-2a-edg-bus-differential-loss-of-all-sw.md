@@ -1,5 +1,5 @@
 ---
-title: "2016 Q92 — 23 SW Pump Trip 2A EDG Bus Differential Loss of All SW"
+title: "2016 Q92 — 23 SW Pump Trip and 2A EDG Bus Differential Effect"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q92 — 23 SW Pump Trip 2A EDG Bus Differential Loss of All SW</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q92 — 23 SW Pump Trip and 2A EDG Bus Differential Effect</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">076000A2.01 A2.01 (3.7)</span>
 </div>
 
@@ -51,7 +51,7 @@ Which of the following identifies:<br>
 
 ## Connections
 
-- Related systems: [[Service Water]], [[EDGs]], [[CVCS]], [[CCW]]
+- Related systems: [[Service Water]], [[EDGs]]
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0005 — Loss of All Service Water]]
 - Related exam: [[2016 NRC Written Exam]]

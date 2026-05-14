@@ -42,6 +42,6 @@ Which of the following is an UNEXPECTED alarm if it is locked in 2 minutes after
 
 ## Connections
 
-- Related systems: [[Feed & Condensate]], [[Pressurizer & PRT]], [[Main Turbine]], [[Control Rod Drive]]
-- Related procedures: [[AB.CN-0001 — Condensate System Abnormality]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[AB.TRB-0001 — Main Turbine Abnormality]], [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
+- Related systems: [[Feed & Condensate]], [[Pressurizer & PRT]], [[Main Turbine]]
+- Related procedures: [[AB.CN-0001 — Condensate System Abnormality]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - Related exam: [[2016 NRC Written Exam]]

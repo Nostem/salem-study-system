@@ -45,7 +45,7 @@ Which of the following identifies the Containment Spray pump(s) which will be in
 
 ## Connections
 
-- Related systems: [[Containment Spray]], [[ECCS]], [[CFCUs]], [[RHR]], [[CVCS]]
+- Related systems: [[Containment Spray]], [[ECCS]]
 - Related EOPs: [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
 - Related exam: [[2016 NRC Written Exam]]

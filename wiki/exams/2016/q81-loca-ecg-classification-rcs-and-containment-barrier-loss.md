@@ -1,13 +1,12 @@
 ---
-title: "2016 Q81 — LOCA ECG Classification — Loss of RCS + Containment barriers (8 point SAE)"
+title: "2016 Q81 — LOCA Emergency Classification Determination"
 category: exams
 status: draft
+reference: needs-reference
 aliases:
   - 2016 Q81
   - 2016-Q81
 ---
-
-# 2016 Q81 — LOCA ECG Classification — Loss of RCS + Containment barriers (8 point SAE)
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">

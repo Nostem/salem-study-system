@@ -114,6 +114,8 @@ status: draft
 
 ## EOPs
 - [[EOP-CFST-1 — Critical Safety Function Status Trees]]
+- [[EOP-FRHS-3 — Response to Steam Generator High Level]]
+- [[EOP-FRSM-2 — Response to Loss of Core Shutdown]]
 - [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - [[EOP-TRIP-2 — Reactor Trip Response]]
 - [[EOP-TRIP-3 — SI Termination]]
@@ -194,6 +196,10 @@ status: draft
 - [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]]
 - [[AB.CONT-0001 — Containment Closure]]
 - [[AB.RC-0004 — Natural Circulation]]
+- [[AB.460-0003 — Loss of 2C 460/230V Vital Bus]]
+- [[AB.ANN-0001 — Loss of Overhead Annunciator System]]
+- [[AB.LOOP-0003 — Partial Loss of Offsite Power]]
+- [[AB.TL-0001 — Loss of Main Turbine Lube Oil]]
 
 ## Admin Procedures
 - [[OP-AA-101-111 — Roles and Responsibilities of On-Shift Personnel]]
@@ -236,6 +242,10 @@ status: draft
 - [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
 - [[SY-AA-102-201 — Fitness for Duty]]
 - [[HU-AA-101 — Human Performance Tools and Verification Practices]]
+- [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
+- [[RP-AA-203 — Exposure Control and Authorization]]
+- [[RP-SA-102 — Containment Entries at Power]]
+- [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
@@ -308,3 +318,19 @@ status: draft
 - [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]]
 - [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]]
 - [[S2-RE-RA.ZZ-0016 — Curve Book (Salem Unit 2 Cycle 23)]]
+- [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
+- [[S1.OP-SO.WG-0007 — Transfer of Waste Gas]]
+- [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
+- [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]]
+- [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]]
+- [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]]
+- [[S2.OP-SO.CH-0001 — Chilled Water System Operation]]
+- [[S2.OP-SO.CN-0007 — SGFP Prompt Recovery]]
+- [[S2.OP-SO.CVC-0002 — Charging Pump Operation]]
+- [[S2.OP-SO.DG-0001 — Diesel Generator Operation]]
+- [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
+- [[S2.OP-ST.CAN-0004 — Containment Air Lock Local Leak Rate Test]]
+- [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]]
+- [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]]
+- [[S2.RE-RA.ZZ-0011 — Tables]]
+- [[SC.OP-SO.SA-0001 — Station Air System Operation]]

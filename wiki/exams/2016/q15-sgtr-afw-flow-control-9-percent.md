@@ -1,5 +1,5 @@
 ---
-title: "2016 Q15 — SGTR EOP-SGTR-1 step 6 AFW flow to ruptured SG / 9% NR"
+title: "2016 Q15 — SGTR-1 AFW Flow Control to Ruptured SG"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q15 — SGTR EOP-SGTR-1 step 6 AFW flow to ruptured SG / 9% NR</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q15 — SGTR-1 AFW Flow Control to Ruptured SG</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">000038 A1.44 (3.4)</span>
 </div>
 

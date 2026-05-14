@@ -1,5 +1,5 @@
 ---
-title: "2016 Q93 — Containment Purge Reinstatement CVI Signal Short Duration"
+title: "2016 Q93 — Containment Purge Reinstatement After CVI Signal"
 category: exams
 status: draft
 aliases:
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q93 — Containment Purge Reinstatement CVI Signal Short Duration</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q93 — Containment Purge Reinstatement After CVI Signal</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">103000G2.1.23 2.1.23 (4.4)</span>
 </div>
 
