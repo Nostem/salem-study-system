@@ -1,7 +1,7 @@
 ---
 title: "2016 Q44 — Reset Spray Actuation Pushbuttons During LOCA-1"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q44
   - 2016-Q44

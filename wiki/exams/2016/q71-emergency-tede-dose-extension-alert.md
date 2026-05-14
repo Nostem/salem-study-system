@@ -1,7 +1,7 @@
 ---
 title: "2016 Q71 — Emergency TEDE Dose Limit Extension"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q71
   - 2016-Q71

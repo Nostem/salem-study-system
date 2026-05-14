@@ -1,7 +1,7 @@
 ---
 title: "2016 Q62 — ECAC Power Supply Effect on Control Air"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q62
   - 2016-Q62

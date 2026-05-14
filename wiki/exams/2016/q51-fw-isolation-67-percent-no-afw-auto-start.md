@@ -1,7 +1,7 @@
 ---
 title: "2016 Q51 — 24BF19 Fails Open at 35% Power During Shutdown"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q51
   - 2016-Q51

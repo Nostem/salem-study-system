@@ -1,7 +1,7 @@
 ---
 title: "2016 Q59 — 21 CVCS MT Release — 2R18 High Alarm with 2WL51 Open"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q59
   - 2016-Q59

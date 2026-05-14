@@ -1,7 +1,7 @@
 ---
 title: "2016 Q4 — LOCA-1 Major Action Categories"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q4
   - 2016-Q4

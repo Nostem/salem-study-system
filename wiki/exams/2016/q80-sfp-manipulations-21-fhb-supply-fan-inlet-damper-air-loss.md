@@ -1,7 +1,7 @@
 ---
 title: "2016 Q80 — SFP Manipulations with Loss of Air to 21 FHB Supply Fan Inlet Damper"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q80
   - 2016-Q80

@@ -1,7 +1,7 @@
 ---
 title: "2016 Q35 — 22 CCW Pump Trip System Response"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q35
   - 2016-Q35

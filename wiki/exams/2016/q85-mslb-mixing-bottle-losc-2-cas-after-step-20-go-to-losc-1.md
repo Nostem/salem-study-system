@@ -1,7 +1,7 @@
 ---
 title: "2016 Q85 — MSLB Mixing Bottle — LOSC-2 Response to SG Pressure Rise After Step 20"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q85
   - 2016-Q85

@@ -1,7 +1,7 @@
 ---
 title: "2016 Q46 — SFP Makeup Water Source Preference"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q46
   - 2016-Q46

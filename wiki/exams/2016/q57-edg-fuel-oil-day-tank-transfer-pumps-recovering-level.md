@@ -1,7 +1,7 @@
 ---
 title: "2016 Q57 — 2A EDG Fuel Oil Day Tank Transfer Pumps Running on Recovery [EDITED]"
 category: exams
-status: verified
+status: edited
 aliases:
   - 2016 Q57
   - 2016-Q57

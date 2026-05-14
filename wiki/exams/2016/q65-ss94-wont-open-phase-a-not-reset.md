@@ -1,7 +1,7 @@
 ---
 title: "2016 Q65 — SS94 Sample Valves Won't Open After MSLI"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q65
   - 2016-Q65

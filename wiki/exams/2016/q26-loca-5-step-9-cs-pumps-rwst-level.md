@@ -1,7 +1,7 @@
 ---
 title: "2016 Q26 — LOCA-5 Step 9 Containment Spray pump determination"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q26
   - 2016-Q26

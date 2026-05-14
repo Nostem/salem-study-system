@@ -1,7 +1,7 @@
 ---
 title: "2016 Q37 — Letdown Orifice Isolation Valve Auto-Shut Conditions"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q37
   - 2016-Q37

@@ -1,7 +1,7 @@
 ---
 title: "2016 Q3 — RTB Failure: Manual Actions After RDMG Trip"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q3
   - 2016-Q3

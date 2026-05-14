@@ -1,7 +1,7 @@
 ---
 title: "2016 Q10 — Excess Letdown HX Valve Response to SI Signal"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q10
   - 2016-Q10

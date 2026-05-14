@@ -1,7 +1,7 @@
 ---
 title: "2016 Q98 — 14 WGDT Release Allowed Concurrent Activities"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q98
   - 2016-Q98

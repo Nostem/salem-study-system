@@ -1,7 +1,7 @@
 ---
 title: "2016 Q14 — SGTL First Radiation Monitor Indication"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q14
   - 2016-Q14

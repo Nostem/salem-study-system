@@ -1,7 +1,7 @@
 ---
 title: "2016 Q83 — MSLB Pre-Synchronization CFST Priority Response"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q83
   - 2016-Q83

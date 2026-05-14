@@ -1,7 +1,7 @@
 ---
 title: "2016 Q22 — LOCA-6 21SJ49 Leak Isolation"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q22
   - 2016-Q22

@@ -1,7 +1,7 @@
 ---
 title: "2016 Q64 — EDG Room Fire Suppression System Response"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q64
   - 2016-Q64

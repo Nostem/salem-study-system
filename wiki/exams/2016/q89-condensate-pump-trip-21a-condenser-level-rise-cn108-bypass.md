@@ -1,7 +1,7 @@
 ---
 title: "2016 Q89 — 21 Condensate Pump Trip Effect and CRS Response"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q89
   - 2016-Q89

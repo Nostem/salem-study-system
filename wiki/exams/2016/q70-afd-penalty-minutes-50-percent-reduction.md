@@ -1,7 +1,7 @@
 ---
 title: "2016 Q70 — AFD Penalty Minutes — Time to Reduce <50% Power"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q70
   - 2016-Q70

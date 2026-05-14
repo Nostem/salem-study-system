@@ -1,7 +1,7 @@
 ---
 title: "2016 Q95 — Mode 6 Entry Point During Refueling"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q95
   - 2016-Q95

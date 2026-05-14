@@ -1,7 +1,7 @@
 ---
 title: "2016 Q5 — LOCA-3 Flowpath with No CCW Pumps Running"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q5
   - 2016-Q5

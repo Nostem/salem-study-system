@@ -1,7 +1,7 @@
 ---
 title: "2016 Q34 — PRT Vent Valve 2PR15 Interlock"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q34
   - 2016-Q34

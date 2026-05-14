@@ -1,7 +1,7 @@
 ---
 title: "2016 Q60 — Process Radiation Monitor Source Check Procedure"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q60
   - 2016-Q60

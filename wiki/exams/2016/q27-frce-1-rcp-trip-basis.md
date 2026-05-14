@@ -1,7 +1,7 @@
 ---
 title: "2016 Q27 — FRCE-1 RCP Trip Basis"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q27
   - 2016-Q27

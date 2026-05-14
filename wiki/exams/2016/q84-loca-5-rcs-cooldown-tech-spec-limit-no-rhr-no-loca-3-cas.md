@@ -1,7 +1,7 @@
 ---
 title: "2016 Q84 — EOP-LOCA-5 CRS Response with Both RHR Pumps Stopped [EDITED]"
 category: exams
-status: verified
+status: edited
 aliases:
   - 2016 Q84
   - 2016-Q84

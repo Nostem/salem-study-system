@@ -1,7 +1,7 @@
 ---
 title: "2016 Q30 — VCT Pressure Rise Effect on CVCS"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q30
   - 2016-Q30

@@ -1,7 +1,7 @@
 ---
 title: "2016 Q13 — OHA E-29 Annunciation During 1N35 IRNI Removal"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q13
   - 2016-Q13

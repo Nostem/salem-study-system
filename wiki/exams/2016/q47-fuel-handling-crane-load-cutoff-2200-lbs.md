@@ -1,7 +1,7 @@
 ---
 title: "2016 Q47 — Unit 2 Spent Fuel Handling Crane Interlocks"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q47
   - 2016-Q47

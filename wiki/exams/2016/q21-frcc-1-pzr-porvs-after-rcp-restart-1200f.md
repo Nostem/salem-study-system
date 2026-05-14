@@ -1,7 +1,7 @@
 ---
 title: "2016 Q21 — FRCC-1 PZR PORV operation after RCP restart with CETs > 1200°F"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q21
   - 2016-Q21

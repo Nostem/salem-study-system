@@ -1,7 +1,7 @@
 ---
 title: "2016 Q78 — ATWS at 4% Power Awaiting Mode 1 — CRS Response"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q78
   - 2016-Q78

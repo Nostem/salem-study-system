@@ -1,7 +1,7 @@
 ---
 title: "2016 Q54 — Pressure Override Failure on 11 AFW Pump"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q54
   - 2016-Q54

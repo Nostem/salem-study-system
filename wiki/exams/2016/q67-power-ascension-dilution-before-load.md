@@ -1,7 +1,7 @@
 ---
 title: "2016 Q67 — Power Ascension Sequencing for Reactivity Management"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q67
   - 2016-Q67

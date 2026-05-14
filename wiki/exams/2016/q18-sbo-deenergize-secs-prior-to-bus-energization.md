@@ -1,7 +1,7 @@
 ---
 title: "2016 Q18 — SBO Required Action Prior to 2B 4KV Vital Bus Energization"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q18
   - 2016-Q18

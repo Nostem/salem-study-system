@@ -1,7 +1,7 @@
 ---
 title: "2016 Q43 — Hi-Hi Containment Pressure Signal After SEC Reset"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q43
   - 2016-Q43

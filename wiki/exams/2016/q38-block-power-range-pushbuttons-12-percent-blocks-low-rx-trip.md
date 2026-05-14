@@ -1,7 +1,7 @@
 ---
 title: "2016 Q38 — Action That Changes Rx Trip Setpoint During Power Ascension"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q38
   - 2016-Q38

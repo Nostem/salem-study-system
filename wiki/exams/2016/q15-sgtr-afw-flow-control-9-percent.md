@@ -1,7 +1,7 @@
 ---
 title: "2016 Q15 — SGTR-1 AFW Flow Control to Ruptured SG"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q15
   - 2016-Q15

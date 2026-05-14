@@ -1,7 +1,7 @@
 ---
 title: "2016 Q48 — SG NR Programmed Level During Startup"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q48
   - 2016-Q48

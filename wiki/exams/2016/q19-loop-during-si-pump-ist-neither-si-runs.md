@@ -1,7 +1,7 @@
 ---
 title: "2016 Q19 — LOOP During 11 SI Pump IST with 1B Bus Differential"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q19
   - 2016-Q19

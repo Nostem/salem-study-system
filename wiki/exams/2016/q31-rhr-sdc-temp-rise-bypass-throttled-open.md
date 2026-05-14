@@ -1,7 +1,7 @@
 ---
 title: "2016 Q31 — RHR SDC Water-to-RCS Temperature Rise Cause"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q31
   - 2016-Q31

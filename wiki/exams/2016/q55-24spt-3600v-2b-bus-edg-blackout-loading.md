@@ -1,7 +1,7 @@
 ---
 title: "2016 Q55 — 24 SPT Secondary Degrades to 3600V — 2B Vital Bus Response"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q55
   - 2016-Q55

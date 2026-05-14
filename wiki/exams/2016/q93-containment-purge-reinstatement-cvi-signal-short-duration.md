@@ -1,7 +1,7 @@
 ---
 title: "2016 Q93 — Containment Purge Reinstatement After CVI Signal"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q93
   - 2016-Q93

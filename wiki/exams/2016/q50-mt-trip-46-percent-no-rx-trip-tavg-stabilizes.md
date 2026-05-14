@@ -1,7 +1,7 @@
 ---
 title: "2016 Q50 — Main Generator Trip at 46% Power Effect on Plant [EDITED]"
 category: exams
-status: verified
+status: edited
 aliases:
   - 2016 Q50
   - 2016-Q50

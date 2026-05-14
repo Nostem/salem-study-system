@@ -1,7 +1,7 @@
 ---
 title: "2016 Q91 — 2A EDG Status After Missed Monthly Surveillance"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q91
   - 2016-Q91

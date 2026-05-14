@@ -1,7 +1,7 @@
 ---
 title: "2016 Q88 — FHB Fuel Handling Incident Effect and Required Actions"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q88
   - 2016-Q88

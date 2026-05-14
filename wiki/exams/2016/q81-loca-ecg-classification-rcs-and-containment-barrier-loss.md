@@ -1,8 +1,8 @@
 ---
 title: "2016 Q81 — LOCA Emergency Classification Determination"
 category: exams
-status: draft
-reference: needs-reference
+status: verified
+reference: yes
 aliases:
   - 2016 Q81
   - 2016-Q81

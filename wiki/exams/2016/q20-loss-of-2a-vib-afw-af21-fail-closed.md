@@ -1,7 +1,7 @@
 ---
 title: "2016 Q20 — Loss of 2A 115VAC VIB Effect on AFW System"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q20
   - 2016-Q20

@@ -1,7 +1,7 @@
 ---
 title: "2016 Q68 — Conditions Requiring Suspension of Fuel Movement"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q68
   - 2016-Q68

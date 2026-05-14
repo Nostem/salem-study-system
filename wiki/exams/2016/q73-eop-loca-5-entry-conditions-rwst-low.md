@@ -1,7 +1,7 @@
 ---
 title: "2016 Q73 — EOP-LOCA-5 Entry Conditions"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q73
   - 2016-Q73

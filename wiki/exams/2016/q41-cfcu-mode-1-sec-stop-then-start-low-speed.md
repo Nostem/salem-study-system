@@ -1,7 +1,7 @@
 ---
 title: "2016 Q41 — CFCU Response to MODE 1 SEC Initiation"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q41
   - 2016-Q41

@@ -1,7 +1,7 @@
 ---
 title: "2016 Q79 — SGTR with Ruptured SG Going Water Solid Before SI Termination"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q79
   - 2016-Q79

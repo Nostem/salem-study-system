@@ -1,7 +1,7 @@
 ---
 title: "2016 Q69 — Mode 2 Entry Timing During Plant Startup"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q69
   - 2016-Q69

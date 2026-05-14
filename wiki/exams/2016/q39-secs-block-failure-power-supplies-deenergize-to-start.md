@@ -1,7 +1,7 @@
 ---
 title: "2016 Q39 — SEC BLOCK Switches Fail — Power Supplies to Deenergize"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q39
   - 2016-Q39

@@ -1,7 +1,7 @@
 ---
 title: "2016 Q9 — 2RH25 Hot Leg Recirc Relief Lift Annunciation"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q9
   - 2016-Q9

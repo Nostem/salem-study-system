@@ -1,7 +1,7 @@
 ---
 title: "2016 Q45 — Hydrogen Recombiner Availability with 1A Vital Bus Locked Out"
 category: exams
-status: draft
+status: verified
 aliases:
   - 2016 Q45
   - 2016-Q45
