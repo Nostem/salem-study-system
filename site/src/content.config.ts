@@ -7,7 +7,7 @@ const wiki = defineCollection({
     title: z.string().optional(),
     category: z.string().optional(),
     status: z.enum(['draft', 'verified', 'outdated', 'edited']).optional().default('draft'),
-    reference: z.enum(['yes', 'no']).optional(),
+    reference: z.enum(['yes', 'no', 'needs-reference']).optional(),
     aliases: z.array(z.string()).optional().default([]),
   }),
 });
