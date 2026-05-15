@@ -1,7 +1,7 @@
 ---
-title: "2018 Q49 — TRIP-1 Immediate Actions"
+title: "2018 Q49 — TRIP-1 Immediate Actions [OUTDATED]"
 category: exams
-status: verified
+status: outdated
 reference: no
 aliases:
   - 2018 Q49

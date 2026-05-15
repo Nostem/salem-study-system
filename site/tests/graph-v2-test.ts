@@ -82,17 +82,18 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await expect(focusedVisible.filter({ hasText: '2023 Q23' })).toHaveCount(1);
   await expect(focusedVisible.filter({ hasText: 'Admin' }).first()).toBeVisible();
 
-  // Topic nodes expose related questions. Topics with no eligible v2 practice pool do not show a dead practice link.
+  // Topic nodes expose related questions. Newly imported 2016 topics with eligible pools hand off into quiz-v2.
   await page.getByTestId('gv2-focus-neighborhood').uncheck();
   await page.getByTestId('gv2-search').fill('topic:demin-water');
-  const nonPracticeTopic = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: 'Demin Water' }).first();
-  await nonPracticeTopic.getByRole('button').click();
+  const importedPracticeTopic = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: 'Demin Water' }).first();
+  await importedPracticeTopic.getByRole('button').click();
   const deminDetail = page.getByTestId('gv2-detail-topic:demin-water');
   await expect(deminDetail).toBeVisible();
   await expect(page.getByTestId('gv2-related-questions-topic:demin-water')).toContainText('2016 Q53');
-  await expect(page.getByTestId('gv2-actions-topic:demin-water')).not.toContainText('Generate quiz from this node');
+  await expect(page.getByTestId('gv2-actions-topic:demin-water').getByRole('link', { name: /Generate quiz from this node/i }))
+    .toHaveAttribute('href', /\/quiz-v2\/play\/\?topics=demin-water&count=10$/);
 
-  // Topics with eligible practice questions hand off directly into quiz-v2 with the topic filter set.
+  // Larger topics with eligible practice questions hand off directly into quiz-v2 with the topic filter set.
   await page.getByTestId('gv2-search').fill('topic:pressurizer-level-and-press-control');
   const practiceTopic = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: 'Pressurizer Level & Press Control' }).first();
   await practiceTopic.getByRole('button').click();

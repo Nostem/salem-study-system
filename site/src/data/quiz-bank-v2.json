@@ -20921,9 +20921,9 @@
       "examType": "written",
       "questionNumber": 49,
       "track": "RO",
-      "title": "2018 Q49 — TRIP-1 Immediate Actions",
-      "status": "active",
-      "quizEligible": true,
+      "title": "2018 Q49 — TRIP-1 Immediate Actions [OUTDATED]",
+      "status": "outdated",
+      "quizEligible": false,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -21065,7 +21065,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Bank",
         "auditStatus": "imported",
-        "nonQuizReason": null,
+        "nonQuizReason": "status_outdated",
         "isEdited": false,
         "isRedacted": false
       }
