@@ -2,9 +2,11 @@
 title: "2016 Q56 — 1A 28 VDC Bus Deenergized Effect"
 category: exams
 status: verified
+reference: no
 aliases:
   - 2016 Q56
   - 2016-Q56
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

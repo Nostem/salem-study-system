@@ -2,9 +2,11 @@
 title: "2016 Q28 — Tech Spec action for RCP trip in Mode 2 (LCO 3.4.1.1)"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q28
   - 2016-Q28
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

@@ -2,9 +2,11 @@
 title: "2016 Q100 — Unexplained Charging Step Change During Mode 3 Cooldown"
 category: exams
 status: verified
+reference: no
 aliases:
   - 2016 Q100
   - 2016-Q100
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

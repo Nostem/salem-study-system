@@ -2,9 +2,11 @@
 title: "2016 Q7 — MFC return to auto after PZR level channel failure"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q7
   - 2016-Q7
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

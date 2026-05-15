@@ -2,9 +2,11 @@
 title: "2016 Q92 — 23 SW Pump Trip and 2A EDG Bus Differential Effect"
 category: exams
 status: verified
+reference: no
 aliases:
   - 2016 Q92
   - 2016-Q92
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

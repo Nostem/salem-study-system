@@ -2,9 +2,11 @@
 title: "2016 Q87 — EOP-LOCA-2 Accumulator Isolation Criteria [OUTDATED]"
 category: exams
 status: outdated
+reference: no
 aliases:
   - 2016 Q87
   - 2016-Q87
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

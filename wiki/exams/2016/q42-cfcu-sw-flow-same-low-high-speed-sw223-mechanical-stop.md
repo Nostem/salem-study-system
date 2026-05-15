@@ -2,9 +2,11 @@
 title: "2016 Q42 — CFCU SW Flow Effect on Speed Swap"
 category: exams
 status: verified
+reference: no
 aliases:
   - 2016 Q42
   - 2016-Q42
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

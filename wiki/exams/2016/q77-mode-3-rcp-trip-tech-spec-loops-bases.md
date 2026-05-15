@@ -2,9 +2,11 @@
 title: "2016 Q77 — Mode 3 RCP trip Tech Spec application — RCS loops with rod control de-energized"
 category: exams
 status: verified
+reference: no
 aliases:
   - 2016 Q77
   - 2016-Q77
+
 ---
 
 

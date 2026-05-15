@@ -2,9 +2,11 @@
 title: "2016 Q72 — Containment Entry RPS Approval and Personnel Limit"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q72
   - 2016-Q72
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

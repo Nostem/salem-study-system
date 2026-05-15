@@ -2,9 +2,11 @@
 title: "2016 Q97 — Mode 4 Charging Pump Suction Closed Causing ECCS Inoperable"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q97
   - 2016-Q97
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

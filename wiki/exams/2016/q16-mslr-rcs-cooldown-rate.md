@@ -2,9 +2,11 @@
 title: "2016 Q16 — Steam Line Rupture RCS cooldown rate after MSLI / EOP-TRIP-1 transition"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q16
   - 2016-Q16
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

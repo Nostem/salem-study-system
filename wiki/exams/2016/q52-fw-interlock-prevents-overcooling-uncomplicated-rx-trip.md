@@ -2,9 +2,11 @@
 title: "2016 Q52 — Over-Cooling Prevention on Uncomplicated Rx Trip from 100% [EDITED]"
 category: exams
 status: edited
+reference: no
 aliases:
   - 2016 Q52
   - 2016-Q52
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

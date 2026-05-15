@@ -2,9 +2,11 @@
 title: "2016 Q58 — Minimum 1A EDG start attempts after trip with 11A and 11B air compressors C/T"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q58
   - 2016-Q58
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

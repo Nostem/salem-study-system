@@ -2,9 +2,11 @@
 title: "2016 Q75 — Loss of All OHA — Control Room Response"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q75
   - 2016-Q75
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

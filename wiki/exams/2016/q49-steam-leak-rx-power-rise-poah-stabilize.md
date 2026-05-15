@@ -2,9 +2,11 @@
 title: "2016 Q49 — Steam Leak Effect on Rx Power at 1×10⁻⁸ Amps"
 category: exams
 status: verified
+reference: no
 aliases:
   - 2016 Q49
   - 2016-Q49
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

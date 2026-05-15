@@ -2,9 +2,11 @@
 title: "2016 Q12 — ATWS with RPS output failure / direct method to trip the Rx"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q12
   - 2016-Q12
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

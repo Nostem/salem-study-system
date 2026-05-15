@@ -2,9 +2,11 @@
 title: "2016 Q96 — Tech Spec Action Times Requiring Hot Standby by 1900"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q96
   - 2016-Q96
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

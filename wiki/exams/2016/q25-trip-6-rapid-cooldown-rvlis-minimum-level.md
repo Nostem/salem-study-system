@@ -2,9 +2,11 @@
 title: "2016 Q25 — TRIP-5 Rapid Cooldown with RVLIS minimum Full Range level [EDITED]"
 category: exams
 status: edited
+reference: no
 aliases:
   - 2016 Q25
   - 2016-Q25
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

@@ -2,9 +2,11 @@
 title: "2016 Q76 — TRIP-2 with AFW Pressure Override Failure and Multiple AFW Failures"
 category: exams
 status: verified
+reference: no
 aliases:
   - 2016 Q76
   - 2016-Q76
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

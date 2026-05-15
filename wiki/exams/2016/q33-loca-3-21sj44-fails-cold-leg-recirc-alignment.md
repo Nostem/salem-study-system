@@ -2,9 +2,11 @@
 title: "2016 Q33 — EOP-LOCA-3 Cold Leg Recirc alignment with 21SJ44 failed to open"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q33
   - 2016-Q33
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

@@ -2,9 +2,11 @@
 title: "2016 Q36 — 2PS1 PZR Spray Valve Fails Open at 4% Power — First Protective Action"
 category: exams
 status: verified
+reference: no
 aliases:
   - 2016 Q36
   - 2016-Q36
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

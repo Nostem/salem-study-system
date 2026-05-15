@@ -2,9 +2,11 @@
 title: "2016 Q86 — RCS Specific Activity DE I-131 Action Time"
 category: exams
 status: draft
+reference: no
 aliases:
   - 2016 Q86
   - 2016-Q86
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

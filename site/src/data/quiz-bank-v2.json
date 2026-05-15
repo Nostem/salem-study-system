@@ -507,8 +507,8 @@
       "examType": "written",
       "questionNumber": 1,
       "track": "RO",
-      "title": "2016 Q1 — VCT Auto Makeup with 1CV175 Open Causing Rod Withdrawal",
-      "status": "draft",
+      "title": "2016 Q1 — Unexplained Rod Withdrawal at 80% Power [OUTDATED]",
+      "status": "outdated",
       "quizEligible": false,
       "requiresReference": false,
       "officialAnswerLabel": "C",
@@ -638,7 +638,7 @@
         "tierGroup": "Tier 1/Group 2",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": "status_outdated",
         "isEdited": false,
         "isRedacted": false
       }
@@ -764,8 +764,8 @@
       "questionNumber": 3,
       "track": "RO",
       "title": "2016 Q3 — RTB Failure: Manual Actions After RDMG Trip",
-      "status": "draft",
-      "quizEligible": false,
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -904,7 +904,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -916,9 +916,9 @@
       "examType": "written",
       "questionNumber": 4,
       "track": "RO",
-      "title": "2016 Q4 — LOCA-1 Checks for Secondary Coolant Break Other Than LOCA",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q4 — LOCA-1 Major Action Categories",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -1024,7 +1024,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -1036,9 +1036,9 @@
       "examType": "written",
       "questionNumber": 5,
       "track": "RO",
-      "title": "2016 Q5 — LOCA-3 with No CCW: Single Train Recirculation",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q5 — LOCA-3 Flowpath with No CCW Pumps Running",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -1163,7 +1163,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank — Editorially Modified",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -1552,9 +1552,9 @@
       "examType": "written",
       "questionNumber": 9,
       "track": "RO",
-      "title": "2016 Q9 — 2RH25 hot leg recirc relief lift / OHA C-2",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q9 — 2RH25 Hot Leg Recirc Relief Lift Annunciation",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -1668,7 +1668,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank — Editorially Modified",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -1680,9 +1680,9 @@
       "examType": "written",
       "questionNumber": 10,
       "track": "RO",
-      "title": "2016 Q10 — CCW Phase A Excess Letdown HX isolation after LOCA",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q10 — Excess Letdown HX Valve Response to SI Signal",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -1810,7 +1810,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank — Direct From Source",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -1881,7 +1881,7 @@
       "explanationBlocks": [
         {
           "type": "paragraph",
-          "text": "✓ A. Correct. 55.41.b(7) As shown on dwg 203301, both the PZR PORVs and Safeties discharges combine into a single line going to the PRT. The Safeties each have their own individual temperature sensor, while the PORVs have one sensor on a common line. Since there is no way to distinguish which valve is leaking, both PORV Stop valves are closed. If temperature does not lower, the user is directed to reopen one PORV Stop (2PR8). If temperature does not rise, then the procedure is exited. If it does, then that stop valve is closed and the other opened. Then the procedure is exited.\"\n\n✗ B. B is incorrect but plausible because discharge is directed to the PRT, and PRT vent valve is prevented from opening >10 psig.\n\n✗ C. C is incorrect but plausible because the all the discharges do combine into a single line, however all 3 safeties have their own sensors.\n\n✗ D. C is incorrect but plausible because the all the discharges do combine into a single line, however, Rx Head Vent leakage is not addressed in AB.PZR-1, as the vents would be seen as a RCS leak. (Note: source PDF labels this distractor block \"C\" — apparent typo; content addresses choice D as written.)\n\nRef: Pressurizer Pressure Malfunction (S2.OP-AB.PZR-0001, Rev 18) | LO: ABPZR1E002 | Source: New | Cognitive: Memory"
+          "text": "✓ A. Correct. 55.41.b(7) As shown on dwg 203301, both the PZR PORVs and Safeties discharges combine into a single line going to the PRT. The Safeties each have their own individual temperature sensor, while the PORVs have one sensor on a common line. Since there is no way to distinguish which valve is leaking, both PORV Stop valves are closed. If temperature does not lower, the user is directed to reopen one PORV Stop. If temperature does not rise, then the procedure is exited. If it does, then that stop valve is closed and the other opened. Then the procedure is exited.\"\n\n✗ B. B is incorrect but plausible because discharge is directed to the PRT, and PRT vent valve is prevented from opening >10 psig.\n\n✗ C. C is incorrect but plausible because the all the discharges do combine into a single line, however all 3 safeties have their own sensors.\n\n✗ D. C is incorrect but plausible because the all the discharges do combine into a single line, however, Rx Head Vent leakage is not addressed in AB.PZR-1, as the vents would be seen as a RCS leak. (Note: source PDF labels this distractor block \"C\" — apparent typo; content addresses choice D as written.)\n\nRef: Pressurizer Pressure Malfunction (S2.OP-AB.PZR-0001, Rev 18) | LO: ABPZR1E002 | Source: New | Cognitive: Memory"
         }
       ],
       "topics": [
@@ -1910,8 +1910,8 @@
       ],
       "legacy": {
         "stemText": "Given: When responding to lowering PZR pressure IAW S2.OP-AB.PZR-0001, Pressurizer Pressure Malfunction, why are BOTH PZR PORV Stop valves closed when attempting to determine if the PORVs are the source of the pressure reduction?",
-        "explanationText": "✓ A. Correct. 55.41.b(7) As shown on dwg 203301, both the PZR PORVs and Safeties discharges combine into a single line going to the PRT. The Safeties each have their own individual temperature sensor, while the PORVs have one sensor on a common line. Since there is no way to distinguish which valve is leaking, both PORV Stop valves are closed. If temperature does not lower, the user is directed to reopen one PORV Stop (2PR8). If temperature does not rise, then the procedure is exited. If it does, then that stop valve is closed and the other opened. Then the procedure is exited.\"\n✗ B. B is incorrect but plausible because discharge is directed to the PRT, and PRT vent valve is prevented from opening >10 psig.\n✗ C. C is incorrect but plausible because the all the discharges do combine into a single line, however all 3 safeties have their own sensors.\n✗ D. C is incorrect but plausible because the all the discharges do combine into a single line, however, Rx Head Vent leakage is not addressed in AB.PZR-1, as the vents would be seen as a RCS leak. (Note: source PDF labels this distractor block \"C\" — apparent typo; content addresses choice D as written.)\nRef: Pressurizer Pressure Malfunction (S2.OP-AB.PZR-0001, Rev 18) | LO: ABPZR1E002 | Source: New | Cognitive: Memory",
-        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ A. Correct.</strong> 55.41.b(7) As shown on dwg 203301, both the PZR PORVs and Safeties discharges combine into a single line going to the PRT. The Safeties each have their own individual temperature sensor, while the PORVs have one sensor on a common line. Since there is no way to distinguish which valve is leaking, both PORV Stop valves are closed. If temperature does not lower, the user is directed to reopen one PORV Stop (2PR8). If temperature does not rise, then the procedure is exited. If it does, then that stop valve is closed and the other opened. Then the procedure is exited.\"</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ B.</strong> B is incorrect but plausible because discharge is directed to the PRT, and PRT vent valve is prevented from opening >10 psig.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> C is incorrect but plausible because the all the discharges do combine into a single line, however all 3 safeties have their own sensors.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ D.</strong> C is incorrect but plausible because the all the discharges do combine into a single line, however, Rx Head Vent leakage is not addressed in AB.PZR-1, as the vents would be seen as a RCS leak. <em>(Note: source PDF labels this distractor block \"C\" — apparent typo; content addresses choice D as written.)</em></div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Pressurizer Pressure Malfunction (S2.OP-AB.PZR-0001, Rev 18) | LO: ABPZR1E002 | Source: New | Cognitive: Memory</div>\n</div>",
+        "explanationText": "✓ A. Correct. 55.41.b(7) As shown on dwg 203301, both the PZR PORVs and Safeties discharges combine into a single line going to the PRT. The Safeties each have their own individual temperature sensor, while the PORVs have one sensor on a common line. Since there is no way to distinguish which valve is leaking, both PORV Stop valves are closed. If temperature does not lower, the user is directed to reopen one PORV Stop. If temperature does not rise, then the procedure is exited. If it does, then that stop valve is closed and the other opened. Then the procedure is exited.\"\n✗ B. B is incorrect but plausible because discharge is directed to the PRT, and PRT vent valve is prevented from opening >10 psig.\n✗ C. C is incorrect but plausible because the all the discharges do combine into a single line, however all 3 safeties have their own sensors.\n✗ D. C is incorrect but plausible because the all the discharges do combine into a single line, however, Rx Head Vent leakage is not addressed in AB.PZR-1, as the vents would be seen as a RCS leak. (Note: source PDF labels this distractor block \"C\" — apparent typo; content addresses choice D as written.)\nRef: Pressurizer Pressure Malfunction (S2.OP-AB.PZR-0001, Rev 18) | LO: ABPZR1E002 | Source: New | Cognitive: Memory",
+        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ A. Correct.</strong> 55.41.b(7) As shown on dwg 203301, both the PZR PORVs and Safeties discharges combine into a single line going to the PRT. The Safeties each have their own individual temperature sensor, while the PORVs have one sensor on a common line. Since there is no way to distinguish which valve is leaking, both PORV Stop valves are closed. If temperature does not lower, the user is directed to reopen one PORV Stop. If temperature does not rise, then the procedure is exited. If it does, then that stop valve is closed and the other opened. Then the procedure is exited.\"</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ B.</strong> B is incorrect but plausible because discharge is directed to the PRT, and PRT vent valve is prevented from opening >10 psig.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> C is incorrect but plausible because the all the discharges do combine into a single line, however all 3 safeties have their own sensors.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ D.</strong> C is incorrect but plausible because the all the discharges do combine into a single line, however, Rx Head Vent leakage is not addressed in AB.PZR-1, as the vents would be seen as a RCS leak. <em>(Note: source PDF labels this distractor block \"C\" — apparent typo; content addresses choice D as written.)</em></div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Pressurizer Pressure Malfunction (S2.OP-AB.PZR-0001, Rev 18) | LO: ABPZR1E002 | Source: New | Cognitive: Memory</div>\n</div>",
         "wikiPath": "wiki/exams/2016/q11-porv-stop-valves-closed-leak-id.md",
         "kaCode": "000027 K3.03",
         "kaImportance": 3.7,
@@ -2071,9 +2071,9 @@
       "examType": "written",
       "questionNumber": 13,
       "track": "RO",
-      "title": "2016 Q13 — 1N35 IR removal LEVEL TRIP bypass causes OHA E-29",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q13 — OHA E-29 Annunciation During 1N35 IRNI Removal",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -2191,7 +2191,7 @@
         "tierGroup": "Tier 1/Group 2",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -2203,9 +2203,9 @@
       "examType": "written",
       "questionNumber": 14,
       "track": "RO",
-      "title": "2016 Q14 — SGTL first indication / R53 Main Steamline N-16 monitor",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q14 — SGTL First Radiation Monitor Indication",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -2314,7 +2314,7 @@
         "tierGroup": "Tier 1/Group 2",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -2326,9 +2326,9 @@
       "examType": "written",
       "questionNumber": 15,
       "track": "RO",
-      "title": "2016 Q15 — SGTR EOP-SGTR-1 step 6 AFW flow to ruptured SG / 9% NR",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q15 — SGTR-1 AFW Flow Control to Ruptured SG",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -2462,7 +2462,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -2622,8 +2622,8 @@
       "questionNumber": 17,
       "track": "RO",
       "title": "2016 Q17 — Loss of MFW (21 SGFP trip) — UNEXPECTED alarm and procedure",
-      "status": "draft",
-      "quizEligible": false,
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -2755,7 +2755,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -2767,9 +2767,9 @@
       "examType": "written",
       "questionNumber": 18,
       "track": "RO",
-      "title": "2016 Q18 — Station Blackout — deenergize SECs prior to energizing 2B 4KV Vital bus",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q18 — SBO Required Action Prior to 2B 4KV Vital Bus Energization",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -2897,7 +2897,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -2909,9 +2909,9 @@
       "examType": "written",
       "questionNumber": 19,
       "track": "RO",
-      "title": "2016 Q19 — LOOP during 11 SI Pump IST — neither SI pump running after blackout",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q19 — LOOP During 11 SI Pump IST with 1B Bus Differential",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -3051,7 +3051,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -3063,9 +3063,9 @@
       "examType": "written",
       "questionNumber": 20,
       "track": "RO",
-      "title": "2016 Q20 — Loss of 2A 115VAC VIB — 23AF21/24AF21 fail closed, NEO dispatched",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q20 — Loss of 2A 115VAC VIB Effect on AFW System",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -3186,7 +3186,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -3199,8 +3199,8 @@
       "questionNumber": 21,
       "track": "RO",
       "title": "2016 Q21 — FRCC-1 PZR PORV operation after RCP restart with CETs > 1200°F",
-      "status": "draft",
-      "quizEligible": false,
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -3324,7 +3324,7 @@
         "tierGroup": "Tier 2/Group 2",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -3336,9 +3336,9 @@
       "examType": "written",
       "questionNumber": 22,
       "track": "RO",
-      "title": "2016 Q22 — LOCA-6 21SJ49 leak isolation success indication and next action",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q22 — LOCA-6 21SJ49 Leak Isolation",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -3463,7 +3463,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -3476,8 +3476,8 @@
       "questionNumber": 23,
       "track": "RO",
       "title": "2016 Q23 — FRHS-1 Bleed and Feed consequence of second PORV failing to open",
-      "status": "draft",
-      "quizEligible": false,
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -3616,7 +3616,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -3770,9 +3770,9 @@
       "examType": "written",
       "questionNumber": 25,
       "track": "RO",
-      "title": "2016 Q25 — TRIP-6 Rapid Cooldown with RVLIS minimum Full Range level",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q25 — TRIP-5 Rapid Cooldown with RVLIS minimum Full Range level [EDITED]",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -3789,7 +3789,7 @@
         },
         {
           "type": "paragraph",
-          "text": "- Operators are performing a cooldown IAW 2-EOP-TRIP-6 NATURAL CIRCULATION RAPID COOLDOWN WITH RVLIS."
+          "text": "- Operators are performing a cooldown IAW 2-EOP-TRIP-5 NATURAL CIRCULATION RAPID COOLDOWN WITH RVLIS."
         },
         {
           "type": "paragraph",
@@ -3841,7 +3841,7 @@
       "explanationBlocks": [
         {
           "type": "paragraph",
-          "text": "✓ A. Correct. 55.41.b(10)74% is minimum allowed at step 10, and get into a do loop until it is satisfied. The Bases Document states that if steam enters the hot legs, there may be some potential for it to reach the top of the SG U tubes, thereby disrupting the natural circulation flow circuit. By monitoring RVLIS and limiting the void growth to the top of the hot legs, the potential for introducing voids into the SG Utubes is minimized. Setpoint was changed from 74% to 70% current revision of EOPs.\n\n✗ B. Source explanation does not separately address — see correct-answer block above (100% is not the setpoint; 70% is).\n\n✗ C. Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).\n\n✗ D. Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).\n\nRef: Natural Circulation Rapid Cooldown with RVLIS (2-EOP-TRIP-6, Bases Document, p.22, Rev 30) | LO: TRP004E004 | Source: Previous 2 NRC Exams (Used on Salem December 2014 NRC exam (2 exams ago.) Setpoint was changed from 74% to 70% current revision of EOPs in Dec 2015.) | Question Modification Method: Editorially Modified | Cognitive: Memory"
+          "text": "✓ A. Correct. 55.41.b(10)74% is minimum allowed at step 10, and get into a do loop until it is satisfied. The Bases Document states that if steam enters the hot legs, there may be some potential for it to reach the top of the SG U tubes, thereby disrupting the natural circulation flow circuit. By monitoring RVLIS and limiting the void growth to the top of the hot legs, the potential for introducing voids into the SG Utubes is minimized. Setpoint was changed from 74% to 70% current revision of EOPs.\n\n✗ B. Source explanation does not separately address — see correct-answer block above (100% is not the setpoint; 70% is).\n\n✗ C. Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).\n\n✗ D. Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).\n\nRef: Natural Circulation Rapid Cooldown with RVLIS (2-EOP-TRIP-5, Bases Document, p.22, Rev 30) | LO: TRP004E004 | Source: Previous 2 NRC Exams (Used on Salem December 2014 NRC exam (2 exams ago.) Setpoint was changed from 74% to 70% current revision of EOPs in Dec 2015.) | Question Modification Method: Editorially Modified | Cognitive: Memory"
         }
       ],
       "topics": [
@@ -3883,9 +3883,9 @@
         }
       ],
       "legacy": {
-        "stemText": "Given: the following conditions:\n\n- Unit 2 has tripped from 100% power due to a Loss of Off-Site Power.\n\n- Operators are performing a cooldown IAW 2-EOP-TRIP-6 NATURAL CIRCULATION RAPID COOLDOWN WITH RVLIS.\n\nWhich choice identifies the MINIMUM RVLIS Full Range level required to be maintained during the cooldown, and its significance?",
-        "explanationText": "✓ A. Correct. 55.41.b(10)74% is minimum allowed at step 10, and get into a do loop until it is satisfied. The Bases Document states that if steam enters the hot legs, there may be some potential for it to reach the top of the SG U tubes, thereby disrupting the natural circulation flow circuit. By monitoring RVLIS and limiting the void growth to the top of the hot legs, the potential for introducing voids into the SG Utubes is minimized. Setpoint was changed from 74% to 70% current revision of EOPs.\n✗ B. Source explanation does not separately address — see correct-answer block above (100% is not the setpoint; 70% is).\n✗ C. Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).\n✗ D. Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).\nRef: Natural Circulation Rapid Cooldown with RVLIS (2-EOP-TRIP-6, Bases Document, p.22, Rev 30) | LO: TRP004E004 | Source: Previous 2 NRC Exams (Used on Salem December 2014 NRC exam (2 exams ago.) Setpoint was changed from 74% to 70% current revision of EOPs in Dec 2015.) | Question Modification Method: Editorially Modified | Cognitive: Memory",
-        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ A. Correct.</strong> 55.41.b(10)74% is minimum allowed at step 10, and get into a do loop until it is satisfied. The Bases Document states that if steam enters the hot legs, there may be some potential for it to reach the top of the SG U tubes, thereby disrupting the natural circulation flow circuit. By monitoring RVLIS and limiting the void growth to the top of the hot legs, the potential for introducing voids into the SG Utubes is minimized. Setpoint was changed from 74% to 70% current revision of EOPs.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ B.</strong> Source explanation does not separately address — see correct-answer block above (100% is not the setpoint; 70% is).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ D.</strong> Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Natural Circulation Rapid Cooldown with RVLIS (2-EOP-TRIP-6, Bases Document, p.22, Rev 30) | LO: TRP004E004 | Source: Previous 2 NRC Exams (Used on Salem December 2014 NRC exam (2 exams ago.) Setpoint was changed from 74% to 70% current revision of EOPs in Dec 2015.) | Question Modification Method: Editorially Modified | Cognitive: Memory</div>\n</div>",
+        "stemText": "Given: the following conditions:\n\n- Unit 2 has tripped from 100% power due to a Loss of Off-Site Power.\n\n- Operators are performing a cooldown IAW 2-EOP-TRIP-5 NATURAL CIRCULATION RAPID COOLDOWN WITH RVLIS.\n\nWhich choice identifies the MINIMUM RVLIS Full Range level required to be maintained during the cooldown, and its significance?",
+        "explanationText": "✓ A. Correct. 55.41.b(10)74% is minimum allowed at step 10, and get into a do loop until it is satisfied. The Bases Document states that if steam enters the hot legs, there may be some potential for it to reach the top of the SG U tubes, thereby disrupting the natural circulation flow circuit. By monitoring RVLIS and limiting the void growth to the top of the hot legs, the potential for introducing voids into the SG Utubes is minimized. Setpoint was changed from 74% to 70% current revision of EOPs.\n✗ B. Source explanation does not separately address — see correct-answer block above (100% is not the setpoint; 70% is).\n✗ C. Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).\n✗ D. Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).\nRef: Natural Circulation Rapid Cooldown with RVLIS (2-EOP-TRIP-5, Bases Document, p.22, Rev 30) | LO: TRP004E004 | Source: Previous 2 NRC Exams (Used on Salem December 2014 NRC exam (2 exams ago.) Setpoint was changed from 74% to 70% current revision of EOPs in Dec 2015.) | Question Modification Method: Editorially Modified | Cognitive: Memory",
+        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ A. Correct.</strong> 55.41.b(10)74% is minimum allowed at step 10, and get into a do loop until it is satisfied. The Bases Document states that if steam enters the hot legs, there may be some potential for it to reach the top of the SG U tubes, thereby disrupting the natural circulation flow circuit. By monitoring RVLIS and limiting the void growth to the top of the hot legs, the potential for introducing voids into the SG Utubes is minimized. Setpoint was changed from 74% to 70% current revision of EOPs.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ B.</strong> Source explanation does not separately address — see correct-answer block above (100% is not the setpoint; 70% is).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ D.</strong> Source explanation does not separately address — see correct-answer block above (purpose is to limit steam entering hot legs, not positive level indication).</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Natural Circulation Rapid Cooldown with RVLIS (2-EOP-TRIP-5, Bases Document, p.22, Rev 30) | LO: TRP004E004 | Source: Previous 2 NRC Exams (Used on Salem December 2014 NRC exam (2 exams ago.) Setpoint was changed from 74% to 70% current revision of EOPs in Dec 2015.) | Question Modification Method: Editorially Modified | Cognitive: Memory</div>\n</div>",
         "wikiPath": "wiki/exams/2016/q25-trip-6-rapid-cooldown-rvlis-minimum-level.md",
         "kaCode": "00WE10 EK3.3",
         "kaImportance": 3.4,
@@ -3893,8 +3893,8 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Previous 2 NRC Exams",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
-        "isEdited": false,
+        "nonQuizReason": null,
+        "isEdited": true,
         "isRedacted": false
       }
     },
@@ -3906,8 +3906,8 @@
       "questionNumber": 26,
       "track": "RO",
       "title": "2016 Q26 — LOCA-5 Step 9 Containment Spray pump determination",
-      "status": "draft",
-      "quizEligible": false,
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -4065,7 +4065,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -4077,9 +4077,9 @@
       "examType": "written",
       "questionNumber": 27,
       "track": "RO",
-      "title": "2016 Q27 — FRCE-1 RCP trip basis (CCW Phase B isolation)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q27 — FRCE-1 RCP Trip Basis",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -4215,7 +4215,7 @@
         "tierGroup": "Tier 1/Group 2",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -4490,9 +4490,9 @@
       "examType": "written",
       "questionNumber": 30,
       "track": "RO",
-      "title": "2016 Q30 — VCT pressure rise and charging flow effect (NPSH)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q30 — VCT Pressure Rise Effect on CVCS",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -4603,7 +4603,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -4615,9 +4615,9 @@
       "examType": "written",
       "questionNumber": 31,
       "track": "RO",
-      "title": "2016 Q31 — RHR SDC water-to-RCS temperature rise (RH HX bypass throttled open)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q31 — RHR SDC Water-to-RCS Temperature Rise Cause",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -4735,7 +4735,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -5011,9 +5011,9 @@
       "examType": "written",
       "questionNumber": 34,
       "track": "RO",
-      "title": "2016 Q34 — PRT Vent Valve 2PR15 receives shut signal at 10 psig",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q34 — PRT Vent Valve 2PR15 Interlock",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -5112,7 +5112,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -5124,9 +5124,9 @@
       "examType": "written",
       "questionNumber": 35,
       "track": "RO",
-      "title": "2016 Q35 — 22 CCW pump trip — 21 CCW auto starts at 70 psig header pressure",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q35 — 22 CCW Pump Trip System Response",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -5237,7 +5237,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -5249,9 +5249,9 @@
       "examType": "written",
       "questionNumber": 36,
       "track": "RO",
-      "title": "2016 Q36 — 2PS1 PZR spray valve fails open at 4% — first protective action is SI on low PZR pressure",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q36 — 2PS1 PZR Spray Valve Fails Open at 4% Power — First Protective Action",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -5379,7 +5379,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -5391,9 +5391,9 @@
       "examType": "written",
       "questionNumber": 37,
       "track": "RO",
-      "title": "2016 Q37 — Letdown Orifice Isolation Valves — 2CV7 NOT interlocked with orifice valves",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q37 — Letdown Orifice Isolation Valve Auto-Shut Conditions",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -5488,7 +5488,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -5500,9 +5500,9 @@
       "examType": "written",
       "questionNumber": 38,
       "track": "RO",
-      "title": "2016 Q38 — Depressing Block Power Range A and B at 12% blocks the 25% low power Rx trip",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q38 — Action That Changes Rx Trip Setpoint During Power Ascension",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -5604,7 +5604,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -5616,9 +5616,9 @@
       "examType": "written",
       "questionNumber": 39,
       "track": "RO",
-      "title": "2016 Q39 — SEC BLOCK switches fail — must deenergize 2A/2B/2C VIBs to start 21 Charging, 21 SI, #2 ECAC",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q39 — SEC BLOCK Switches Fail — Power Supplies to Deenergize",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -5770,7 +5770,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -5782,8 +5782,8 @@
       "examType": "written",
       "questionNumber": 40,
       "track": "RO",
-      "title": "2016 Q40 — Post-trip 2N36 IRNI under-compensated — manually energize Source Range",
-      "status": "draft",
+      "title": "2016 Q40 — Post-Trip IRNI Indications Diagnosis [OUTDATED]",
+      "status": "outdated",
       "quizEligible": false,
       "requiresReference": false,
       "officialAnswerLabel": "B",
@@ -5903,7 +5903,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": "status_outdated",
         "isEdited": false,
         "isRedacted": false
       }
@@ -5915,9 +5915,9 @@
       "examType": "written",
       "questionNumber": 41,
       "track": "RO",
-      "title": "2016 Q41 — CFCUs on MODE 1 SEC initiation — stop then ALL start in Low Speed",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q41 — CFCU Response to MODE 1 SEC Initiation",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -6027,7 +6027,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -6039,9 +6039,9 @@
       "examType": "written",
       "questionNumber": 42,
       "track": "RO",
-      "title": "2016 Q42 — CFCU SW flow unchanged on Low to High speed swap (SW223 mechanical stop)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q42 — CFCU SW Flow Effect on Speed Swap",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -6151,7 +6151,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Previous 2 NRC Exams",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -6163,9 +6163,9 @@
       "examType": "written",
       "questionNumber": 43,
       "track": "RO",
-      "title": "2016 Q43 — Hi-Hi CS signal after SEC reset — valves realign, pumps must be manually started",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q43 — Hi-Hi Containment Pressure Signal After SEC Reset",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -6287,7 +6287,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -6299,9 +6299,9 @@
       "examType": "written",
       "questionNumber": 44,
       "track": "RO",
-      "title": "2016 Q44 — Reset Spray Actuation pushbuttons during LOCA-1 — actuation resets and does NOT reinitiate",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q44 — Reset Spray Actuation Pushbuttons During LOCA-1",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -6419,7 +6419,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -6431,9 +6431,9 @@
       "examType": "written",
       "questionNumber": 45,
       "track": "RO",
-      "title": "2016 Q45 — Hydrogen Recombiners with 1A Vital Bus locked out — only 12 available",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q45 — Hydrogen Recombiner Availability with 1A Vital Bus Locked Out",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -6562,7 +6562,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Previous 2 NRC Exams",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -6574,9 +6574,9 @@
       "examType": "written",
       "questionNumber": 46,
       "track": "RO",
-      "title": "2016 Q46 — SFP makeup water sources order — RWST is LEAST preferred",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q46 — SFP Makeup Water Source Preference",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -6679,7 +6679,7 @@
         "tierGroup": "Tier 2/Group 2",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -6691,9 +6691,9 @@
       "examType": "written",
       "questionNumber": 47,
       "track": "RO",
-      "title": "2016 Q47 — Unit 2 Spent Fuel Handling Crane interlock — high load weight cutoff >2200 lbs",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q47 — Unit 2 Spent Fuel Handling Crane Interlocks",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -6788,7 +6788,7 @@
         "tierGroup": "Tier 2/Group 2",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -6800,9 +6800,9 @@
       "examType": "written",
       "questionNumber": 48,
       "track": "RO",
-      "title": "2016 Q48 — SG NR level programmed level during startup — 38.5% at 10% TP / 44% at 60% TP",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q48 — SG NR Programmed Level During Startup",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -6920,7 +6920,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -6932,9 +6932,9 @@
       "examType": "written",
       "questionNumber": 49,
       "track": "RO",
-      "title": "2016 Q49 — Steam leak with reactor at 1×10⁻⁸ Amps — Rx power rises until reaching POAH",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q49 — Steam Leak Effect on Rx Power at 1×10⁻⁸ Amps",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -7059,7 +7059,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -7071,9 +7071,9 @@
       "examType": "written",
       "questionNumber": 50,
       "track": "RO",
-      "title": "2016 Q50 — MT trip at 46% power — no Rx trip (below P-9), Tavg stabilizes ~552°F",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q50 — Main Generator Trip at 46% Power Effect on Plant [EDITED]",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -7113,7 +7113,7 @@
           "blocks": [
             {
               "type": "paragraph",
-              "text": "A reactor trip will NOT occur. Main steam dumps will open, and control rods will insert. Tavg will stabilize ~552 °F."
+              "text": "A reactor trip will NOT occur. Main steam dumps will open, and control rods will insert. Tavg will stabilize ~551 °F."
             }
           ],
           "isCorrect": true
@@ -7142,7 +7142,7 @@
       "explanationBlocks": [
         {
           "type": "paragraph",
-          "text": "✓ B. Correct. 55.41.b(4,5,6,7) The generator trip causes a MT trip, but at less than P-9 (49% Rx power), a Reactor trip will NOT occur. With no operator action, rods will insert in auto to lower Tave. The steam dumps will open in Average Temperature Control Load Reject Control Mode. With the reference signal being derived from Main Turbine Steamline inlet pressure, and the Main Turbine is tripped, the reference signal is set to 552°F. (There is a 5°F deadband in which the output to the steam dumps is zero.) Tave rises during the load rejection, and the dumps will modulate to maintain Tave 5 deg above no load Tref of ~547 °F. Control rods insert in auto until Rod Control T-error is <1.0°F from program, which in this case will be 547-548 since it's program signal is based on Turbine Steamline inlet pressure, which is zero.\n\n✗ A. Source explanation does not separately address — see correct-answer block above (the reference signal is set to 552°F).\n\n✗ C. Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).\n\n✗ D. Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).\n\nRef: Main Steam Dumps Lesson Plan — NOS05STDUMP-12, Sections 35-36 (Rev 12) | LO: STDUMPE008 | Source: Facility Exam Bank | Cognitive: Application | Modification: Concept Used"
+          "text": "✓ B. Correct. 55.41.b(4,5,6,7) The generator trip causes a MT trip, but at less than P-9 (49% Rx power), a Reactor trip will NOT occur. With no operator action, rods will insert in auto to lower Tave. The steam dumps will open in Average Temperature Control Load Reject Control Mode. With the reference signal being derived from Main Turbine Steamline inlet pressure, and the Main Turbine is tripped, the reference signal is set to 551°F. (There is a 5°F deadband in which the output to the steam dumps is zero.) Tave rises during the load rejection, and the dumps will modulate to maintain Tave 5 deg above no load Tref of ~547 °F. Control rods insert in auto until Rod Control T-error is <1.0°F from program, which in this case will be 547-548 since it's program signal is based on Turbine Steamline inlet pressure, which is zero.\n\n✗ A. Source explanation does not separately address — see correct-answer block above (the reference signal is set to 551°F).\n\n✗ C. Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).\n\n✗ D. Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).\n\nRef: Main Steam Dumps Lesson Plan — NOS05STDUMP-12, Sections 35-36 (Rev 12) | LO: STDUMPE008 | Source: Facility Exam Bank | Cognitive: Application | Modification: Concept Used"
         }
       ],
       "topics": [
@@ -7185,8 +7185,8 @@
       ],
       "legacy": {
         "stemText": "Given the following conditions:\n\n- Unit 2 is operating at 46% power steady state.\n\n- The Main Generator trips due to a ground fault.\n\nWhich of the following describes how the Main Generator trip affects the plant with NO operator action?",
-        "explanationText": "✓ B. Correct. 55.41.b(4,5,6,7) The generator trip causes a MT trip, but at less than P-9 (49% Rx power), a Reactor trip will NOT occur. With no operator action, rods will insert in auto to lower Tave. The steam dumps will open in Average Temperature Control Load Reject Control Mode. With the reference signal being derived from Main Turbine Steamline inlet pressure, and the Main Turbine is tripped, the reference signal is set to 552°F. (There is a 5°F deadband in which the output to the steam dumps is zero.) Tave rises during the load rejection, and the dumps will modulate to maintain Tave 5 deg above no load Tref of ~547 °F. Control rods insert in auto until Rod Control T-error is <1.0°F from program, which in this case will be 547-548 since it's program signal is based on Turbine Steamline inlet pressure, which is zero.\n✗ A. Source explanation does not separately address — see correct-answer block above (the reference signal is set to 552°F).\n✗ C. Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).\n✗ D. Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).\nRef: Main Steam Dumps Lesson Plan — NOS05STDUMP-12, Sections 35-36 (Rev 12) | LO: STDUMPE008 | Source: Facility Exam Bank | Cognitive: Application | Modification: Concept Used",
-        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ B. Correct.</strong> 55.41.b(4,5,6,7) The generator trip causes a MT trip, but at less than P-9 (49% Rx power), a Reactor trip will NOT occur. With no operator action, rods will insert in auto to lower Tave. The steam dumps will open in Average Temperature Control Load Reject Control Mode. With the reference signal being derived from Main Turbine Steamline inlet pressure, and the Main Turbine is tripped, the reference signal is set to 552°F. (There is a 5°F deadband in which the output to the steam dumps is zero.) Tave rises during the load rejection, and the dumps will modulate to maintain Tave 5 deg above no load Tref of ~547 °F. Control rods insert in auto until Rod Control T-error is &lt;1.0°F from program, which in this case will be 547-548 since it's program signal is based on Turbine Steamline inlet pressure, which is zero.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ A.</strong> Source explanation does not separately address — see correct-answer block above (the reference signal is set to 552°F).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ D.</strong> Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Main Steam Dumps Lesson Plan — NOS05STDUMP-12, Sections 35-36 (Rev 12) | LO: STDUMPE008 | Source: Facility Exam Bank | Cognitive: Application | Modification: Concept Used</div>\n</div>",
+        "explanationText": "✓ B. Correct. 55.41.b(4,5,6,7) The generator trip causes a MT trip, but at less than P-9 (49% Rx power), a Reactor trip will NOT occur. With no operator action, rods will insert in auto to lower Tave. The steam dumps will open in Average Temperature Control Load Reject Control Mode. With the reference signal being derived from Main Turbine Steamline inlet pressure, and the Main Turbine is tripped, the reference signal is set to 551°F. (There is a 5°F deadband in which the output to the steam dumps is zero.) Tave rises during the load rejection, and the dumps will modulate to maintain Tave 5 deg above no load Tref of ~547 °F. Control rods insert in auto until Rod Control T-error is <1.0°F from program, which in this case will be 547-548 since it's program signal is based on Turbine Steamline inlet pressure, which is zero.\n✗ A. Source explanation does not separately address — see correct-answer block above (the reference signal is set to 551°F).\n✗ C. Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).\n✗ D. Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).\nRef: Main Steam Dumps Lesson Plan — NOS05STDUMP-12, Sections 35-36 (Rev 12) | LO: STDUMPE008 | Source: Facility Exam Bank | Cognitive: Application | Modification: Concept Used",
+        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ B. Correct.</strong> 55.41.b(4,5,6,7) The generator trip causes a MT trip, but at less than P-9 (49% Rx power), a Reactor trip will NOT occur. With no operator action, rods will insert in auto to lower Tave. The steam dumps will open in Average Temperature Control Load Reject Control Mode. With the reference signal being derived from Main Turbine Steamline inlet pressure, and the Main Turbine is tripped, the reference signal is set to 551°F. (There is a 5°F deadband in which the output to the steam dumps is zero.) Tave rises during the load rejection, and the dumps will modulate to maintain Tave 5 deg above no load Tref of ~547 °F. Control rods insert in auto until Rod Control T-error is &lt;1.0°F from program, which in this case will be 547-548 since it's program signal is based on Turbine Steamline inlet pressure, which is zero.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ A.</strong> Source explanation does not separately address — see correct-answer block above (the reference signal is set to 551°F).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ D.</strong> Source explanation does not separately address — see correct-answer block above (at less than P-9 (49% Rx power), a Reactor trip will NOT occur).</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Main Steam Dumps Lesson Plan — NOS05STDUMP-12, Sections 35-36 (Rev 12) | LO: STDUMPE008 | Source: Facility Exam Bank | Cognitive: Application | Modification: Concept Used</div>\n</div>",
         "wikiPath": "wiki/exams/2016/q50-mt-trip-46-percent-no-rx-trip-tavg-stabilizes.md",
         "kaCode": "045000 K3.01",
         "kaImportance": 2.8,
@@ -7194,8 +7194,8 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
-        "isEdited": false,
+        "nonQuizReason": null,
+        "isEdited": true,
         "isRedacted": false
       }
     },
@@ -7206,9 +7206,9 @@
       "examType": "written",
       "questionNumber": 51,
       "track": "RO",
-      "title": "2016 Q51 — 24BF19 fails open at 35% — FW Isolation trips both SGFPs but no AFW auto-start (35% > 9%)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q51 — 24BF19 Fails Open at 35% Power During Shutdown",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -7333,7 +7333,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -7345,9 +7345,9 @@
       "examType": "written",
       "questionNumber": 52,
       "track": "RO",
-      "title": "2016 Q52 — FW Interlock prevents over-cooling on uncomplicated Rx trip from 100% (P-12 wrong: actuates at <543°F)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q52 — Over-Cooling Prevention on Uncomplicated Rx Trip from 100% [EDITED]",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -7404,7 +7404,7 @@
       "explanationBlocks": [
         {
           "type": "paragraph",
-          "text": "✓ D. Correct. 55.41.b(7)Feedwater interlock actuates when 3/4 RCS Tavgs <554°F and at least one Reactor Trip and associated bypass breaker open. This shuts the BF19's and BF40 Feed Reg Valves. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur. P-10 is 3/4 PRNIs <10% power, and blocks the low power Rx trips. P-12 is 3/4 RCS Tavgs <543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.\n\n✗ A. P-10 is 3/4 PRNIs <10% power, and blocks the low power Rx trips.\n\n✗ B. P-12 is 3/4 RCS Tavgs <543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.\n\n✗ C. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur.\n\nRef: Reactor Trip Response — 2-EOP-TRIP-2, p9 (Rev 30) | LO: CN&FDWE006 | Source: Facility Exam Bank (159006) | Cognitive: Memory | Modification: Direct From Source"
+          "text": "✓ D. Correct. 55.41.b(7)Feedwater interlock actuates when auctioneered hi Tave is less than 554°F and at least one Reactor Trip and associated bypass breaker open. This shuts the BF19's and BF40 Feed Reg Valves. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur. P-10 is 3/4 PRNIs <10% power, and blocks the low power Rx trips. P-12 is 3/4 RCS Tavgs <543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.\n\n✗ A. P-10 is 3/4 PRNIs <10% power, and blocks the low power Rx trips.\n\n✗ B. P-12 is 3/4 RCS Tavgs <543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.\n\n✗ C. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur.\n\nRef: Reactor Trip Response — 2-EOP-TRIP-2, p9 (Rev 30) | LO: CN&FDWE006 | Source: Facility Exam Bank (159006) | Cognitive: Memory | Modification: Direct From Source"
         }
       ],
       "topics": [
@@ -7454,8 +7454,8 @@
       ],
       "legacy": {
         "stemText": "Which of the following identifies how over-cooling of the RCS is prevented on an uncomplicated manual Rx trip from 100% power?",
-        "explanationText": "✓ D. Correct. 55.41.b(7)Feedwater interlock actuates when 3/4 RCS Tavgs <554°F and at least one Reactor Trip and associated bypass breaker open. This shuts the BF19's and BF40 Feed Reg Valves. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur. P-10 is 3/4 PRNIs <10% power, and blocks the low power Rx trips. P-12 is 3/4 RCS Tavgs <543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.\n✗ A. P-10 is 3/4 PRNIs <10% power, and blocks the low power Rx trips.\n✗ B. P-12 is 3/4 RCS Tavgs <543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.\n✗ C. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur.\nRef: Reactor Trip Response — 2-EOP-TRIP-2, p9 (Rev 30) | LO: CN&FDWE006 | Source: Facility Exam Bank (159006) | Cognitive: Memory | Modification: Direct From Source",
-        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ D. Correct.</strong> 55.41.b(7)Feedwater interlock actuates when 3/4 RCS Tavgs &lt;554°F and at least one Reactor Trip and associated bypass breaker open. This shuts the BF19's and BF40 Feed Reg Valves. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur. P-10 is 3/4 PRNIs &lt;10% power, and blocks the low power Rx trips. P-12 is 3/4 RCS Tavgs &lt;543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ A.</strong> P-10 is 3/4 PRNIs &lt;10% power, and blocks the low power Rx trips.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ B.</strong> P-12 is 3/4 RCS Tavgs &lt;543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur.</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Reactor Trip Response — 2-EOP-TRIP-2, p9 (Rev 30) | LO: CN&FDWE006 | Source: Facility Exam Bank (159006) | Cognitive: Memory | Modification: Direct From Source</div>\n</div>",
+        "explanationText": "✓ D. Correct. 55.41.b(7)Feedwater interlock actuates when auctioneered hi Tave is less than 554°F and at least one Reactor Trip and associated bypass breaker open. This shuts the BF19's and BF40 Feed Reg Valves. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur. P-10 is 3/4 PRNIs <10% power, and blocks the low power Rx trips. P-12 is 3/4 RCS Tavgs <543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.\n✗ A. P-10 is 3/4 PRNIs <10% power, and blocks the low power Rx trips.\n✗ B. P-12 is 3/4 RCS Tavgs <543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.\n✗ C. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur.\nRef: Reactor Trip Response — 2-EOP-TRIP-2, p9 (Rev 30) | LO: CN&FDWE006 | Source: Facility Exam Bank (159006) | Cognitive: Memory | Modification: Direct From Source",
+        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ D. Correct.</strong> 55.41.b(7)Feedwater interlock actuates when auctioneered hi Tave is less than 554°F and at least one Reactor Trip and associated bypass breaker open. This shuts the BF19's and BF40 Feed Reg Valves. Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur. P-10 is 3/4 PRNIs &lt;10% power, and blocks the low power Rx trips. P-12 is 3/4 RCS Tavgs &lt;543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ A.</strong> P-10 is 3/4 PRNIs &lt;10% power, and blocks the low power Rx trips.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ B.</strong> P-12 is 3/4 RCS Tavgs &lt;543°F, and will shut the Steam Dump valves. On an uncomplicated trip, steam dumps will modulate to control Tavg at 547°, and temp will not reach 543.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> Feedwater Isolation occurs when 2/3 SG NR levels on 1/4 SG's reaches 67% OR on a SI signal, and shuts BF19s, 40s, 13s, and trips the SGFPs. On an uncomplicated Rx trip this will not occur.</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Reactor Trip Response — 2-EOP-TRIP-2, p9 (Rev 30) | LO: CN&FDWE006 | Source: Facility Exam Bank (159006) | Cognitive: Memory | Modification: Direct From Source</div>\n</div>",
         "wikiPath": "wiki/exams/2016/q52-fw-interlock-prevents-overcooling-uncomplicated-rx-trip.md",
         "kaCode": "059000 K1.05",
         "kaImportance": 3.1,
@@ -7463,8 +7463,8 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
-        "isEdited": false,
+        "nonQuizReason": null,
+        "isEdited": true,
         "isRedacted": false
       }
     },
@@ -7475,9 +7475,9 @@
       "examType": "written",
       "questionNumber": 53,
       "track": "RO",
-      "title": "2016 Q53 — 21-23AF141 Auto Vent Release valves — fill lines on aligning alternate water sources",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q53 — 21-23AF141 Auto Vent Release Valves Design Purpose",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -7593,7 +7593,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -7605,9 +7605,9 @@
       "examType": "written",
       "questionNumber": 54,
       "track": "RO",
-      "title": "2016 Q54 — Pressure Override removed from 11 AFW — 13AF21 and 14AF21 open to current AF21 demand",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q54 — Pressure Override Failure on 11 AFW Pump",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -7714,7 +7714,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -7726,9 +7726,9 @@
       "examType": "written",
       "questionNumber": 55,
       "track": "RO",
-      "title": "2016 Q55 — 24 SPT secondary degrades to 3600V — 2B Vital Bus energized by EDG in BLACKOUT loading",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q55 — 24 SPT Secondary Degrades to 3600V — 2B Vital Bus Response",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -7873,7 +7873,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -7885,9 +7885,9 @@
       "examType": "written",
       "questionNumber": 56,
       "track": "RO",
-      "title": "2016 Q56 — 1A 28 VDC bus deenergized — All indication on 1RP4 status panel lost",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q56 — 1A 28 VDC Bus Deenergized Effect",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -8004,7 +8004,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -8016,9 +8016,9 @@
       "examType": "written",
       "questionNumber": 57,
       "track": "RO",
-      "title": "2016 Q57 — 2A EDG Fuel Oil Day Tank recovering — both REGULAR and BACKUP transfer pumps running",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q57 — 2A EDG Fuel Oil Day Tank Transfer Pumps Running on Recovery [EDITED]",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -8091,7 +8091,7 @@
       "explanationBlocks": [
         {
           "type": "paragraph",
-          "text": "✓ D. Correct. 55.41(7) Regular starts at 33\" and Backup at 27\", as stated in stem. Once started, they BOTH run until the FULL level is reached (44\"). The Backup does NOT turn off when the normal level is reached (33\"). It is not require to know the exact setpoint at which the pumps turn off, only that it is substantially higher that when the Regular pump turns on, and that the backup pump will turn off at the same level as the Regular pump.\n\n✗ A. Source explanation does not separately address — see correct-answer block above (Regular and Backup both run until FULL level (44\") is reached; at 35\" both remain running).\n\n✗ B. Source explanation does not separately address — see correct-answer block above (Regular does not turn off at the normal/start level — it runs until FULL).\n\n✗ C. Source explanation does not separately address — see correct-answer block above (the backup pump will turn off at the same level as the Regular pump — not at 33\").\n\nRef: NOS05EDG000-12 EMERGENCY DIESEL GENERATOR (p44, Rev 12) | LO: EDG000E007 | Source: New | Cognitive: Application"
+          "text": "✓ D. Correct. 55.41(7) Regular starts at 33\" and Backup at 27\", as stated in stem. Once started, they BOTH run until the FULL level is reached (43\"). The Backup does NOT turn off when the normal level is reached (33\"). It is not require to know the exact setpoint at which the pumps turn off, only that it is substantially higher that when the Regular pump turns on, and that the backup pump will turn off at the same level as the Regular pump.\n\n✗ A. Source explanation does not separately address — see correct-answer block above (Regular and Backup both run until FULL level (43\") is reached; at 35\" both remain running).\n\n✗ B. Source explanation does not separately address — see correct-answer block above (Regular does not turn off at the normal/start level — it runs until FULL).\n\n✗ C. Source explanation does not separately address — see correct-answer block above (the backup pump will turn off at the same level as the Regular pump — not at 33\").\n\nRef: NOS05EDG000-12 EMERGENCY DIESEL GENERATOR (p44, Rev 12) | LO: EDG000E007 | Source: New | Cognitive: Application"
         }
       ],
       "topics": [
@@ -8120,8 +8120,8 @@
       ],
       "legacy": {
         "stemText": "Given the following conditions:\n\n- 2A EDG is running and develops a fuel oil leak.\n\n- 2A EDG Fuel Oil Day Tank level lowers below the start setpoint for both the REGULAR (33\") and BACKUP (27\") EDG Fuel Oil Transfer Pumps.\n\n- The leak is isolated, and 2A EDG Fuel Oil Day Tank level is recovering.\n\nWith 2A EDG Fuel Oil Day Tank level now at 35\", which of the following identifies which EDG Fuel Oil Transfer Pumps will be running, if any?",
-        "explanationText": "✓ D. Correct. 55.41(7) Regular starts at 33\" and Backup at 27\", as stated in stem. Once started, they BOTH run until the FULL level is reached (44\"). The Backup does NOT turn off when the normal level is reached (33\"). It is not require to know the exact setpoint at which the pumps turn off, only that it is substantially higher that when the Regular pump turns on, and that the backup pump will turn off at the same level as the Regular pump.\n✗ A. Source explanation does not separately address — see correct-answer block above (Regular and Backup both run until FULL level (44\") is reached; at 35\" both remain running).\n✗ B. Source explanation does not separately address — see correct-answer block above (Regular does not turn off at the normal/start level — it runs until FULL).\n✗ C. Source explanation does not separately address — see correct-answer block above (the backup pump will turn off at the same level as the Regular pump — not at 33\").\nRef: NOS05EDG000-12 EMERGENCY DIESEL GENERATOR (p44, Rev 12) | LO: EDG000E007 | Source: New | Cognitive: Application",
-        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ D. Correct.</strong> 55.41(7) Regular starts at 33\" and Backup at 27\", as stated in stem. Once started, they BOTH run until the FULL level is reached (44\"). The Backup does NOT turn off when the normal level is reached (33\"). It is not require to know the exact setpoint at which the pumps turn off, only that it is substantially higher that when the Regular pump turns on, and that the backup pump will turn off at the same level as the Regular pump.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ A.</strong> Source explanation does not separately address — see correct-answer block above (Regular and Backup both run until FULL level (44\") is reached; at 35\" both remain running).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ B.</strong> Source explanation does not separately address — see correct-answer block above (Regular does not turn off at the normal/start level — it runs until FULL).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> Source explanation does not separately address — see correct-answer block above (the backup pump will turn off at the same level as the Regular pump — not at 33\").</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: NOS05EDG000-12 EMERGENCY DIESEL GENERATOR (p44, Rev 12) | LO: EDG000E007 | Source: New | Cognitive: Application</div>\n</div>",
+        "explanationText": "✓ D. Correct. 55.41(7) Regular starts at 33\" and Backup at 27\", as stated in stem. Once started, they BOTH run until the FULL level is reached (43\"). The Backup does NOT turn off when the normal level is reached (33\"). It is not require to know the exact setpoint at which the pumps turn off, only that it is substantially higher that when the Regular pump turns on, and that the backup pump will turn off at the same level as the Regular pump.\n✗ A. Source explanation does not separately address — see correct-answer block above (Regular and Backup both run until FULL level (43\") is reached; at 35\" both remain running).\n✗ B. Source explanation does not separately address — see correct-answer block above (Regular does not turn off at the normal/start level — it runs until FULL).\n✗ C. Source explanation does not separately address — see correct-answer block above (the backup pump will turn off at the same level as the Regular pump — not at 33\").\nRef: NOS05EDG000-12 EMERGENCY DIESEL GENERATOR (p44, Rev 12) | LO: EDG000E007 | Source: New | Cognitive: Application",
+        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ D. Correct.</strong> 55.41(7) Regular starts at 33\" and Backup at 27\", as stated in stem. Once started, they BOTH run until the FULL level is reached (43\"). The Backup does NOT turn off when the normal level is reached (33\"). It is not require to know the exact setpoint at which the pumps turn off, only that it is substantially higher that when the Regular pump turns on, and that the backup pump will turn off at the same level as the Regular pump.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ A.</strong> Source explanation does not separately address — see correct-answer block above (Regular and Backup both run until FULL level (43\") is reached; at 35\" both remain running).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ B.</strong> Source explanation does not separately address — see correct-answer block above (Regular does not turn off at the normal/start level — it runs until FULL).</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> Source explanation does not separately address — see correct-answer block above (the backup pump will turn off at the same level as the Regular pump — not at 33\").</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: NOS05EDG000-12 EMERGENCY DIESEL GENERATOR (p44, Rev 12) | LO: EDG000E007 | Source: New | Cognitive: Application</div>\n</div>",
         "wikiPath": "wiki/exams/2016/q57-edg-fuel-oil-day-tank-transfer-pumps-recovering-level.md",
         "kaCode": "064000 K1.03",
         "kaImportance": 3.6,
@@ -8129,8 +8129,8 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
-        "isEdited": false,
+        "nonQuizReason": null,
+        "isEdited": true,
         "isRedacted": false
       }
     },
@@ -8278,9 +8278,9 @@
       "examType": "written",
       "questionNumber": 59,
       "track": "RO",
-      "title": "2016 Q59 — 21 CVCS MT release — 2R18 high alarm with 2WL51 still open — NCO shuts 2WL51",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q59 — 21 CVCS MT Release — 2R18 High Alarm with 2WL51 Open",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -8414,7 +8414,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -8426,9 +8426,9 @@
       "examType": "written",
       "questionNumber": 60,
       "track": "RO",
-      "title": "2016 Q60 — Process radiation monitor Source Check — 30 seconds or less to prevent solenoid overheating",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q60 — Process Radiation Monitor Source Check Procedure",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -8531,7 +8531,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -8680,9 +8680,9 @@
       "examType": "written",
       "questionNumber": 62,
       "track": "RO",
-      "title": "2016 Q62 — ECAC Power Supply (2C 460V Vital Bus)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q62 — ECAC Power Supply Effect on Control Air",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -8792,7 +8792,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -8921,9 +8921,9 @@
       "examType": "written",
       "questionNumber": 64,
       "track": "RO",
-      "title": "2016 Q64 — EDG Room Fire CO2 Suppression Manual Activation",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q64 — EDG Room Fire Suppression System Response",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -9041,7 +9041,7 @@
         "tierGroup": "Tier 2/Group 2",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -9053,9 +9053,9 @@
       "examType": "written",
       "questionNumber": 65,
       "track": "RO",
-      "title": "2016 Q65 — SS94 Sample Valves Won't Open — Phase A Reset Failed",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q65 — SS94 Sample Valves Won't Open After MSLI",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -9192,7 +9192,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank (62124)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -9328,9 +9328,9 @@
       "examType": "written",
       "questionNumber": 67,
       "track": "RO",
-      "title": "2016 Q67 — Power Ascension Order — Dilute then Load",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q67 — Power Ascension Sequencing for Reactivity Management",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -9474,7 +9474,7 @@
         "tierGroup": "Tier 3",
         "questionSource": "Facility Exam Bank (125830)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -9486,9 +9486,9 @@
       "examType": "written",
       "questionNumber": 68,
       "track": "RO",
-      "title": "2016 Q68 — Suspend Fuel Movement — CAV in Recirculation Mode",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q68 — Conditions Requiring Suspension of Fuel Movement",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -9615,7 +9615,7 @@
         "tierGroup": "Tier 3",
         "questionSource": "Facility Exam Bank (110741)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -9627,9 +9627,9 @@
       "examType": "written",
       "questionNumber": 69,
       "track": "RO",
-      "title": "2016 Q69 — Mode 2 Entry — Control Bank A Withdrawal Imminent",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q69 — Mode 2 Entry Timing During Plant Startup",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -9735,7 +9735,7 @@
         "tierGroup": "Tier 3",
         "questionSource": "Facility Exam Bank (155638)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -9748,8 +9748,8 @@
       "questionNumber": 70,
       "track": "RO",
       "title": "2016 Q70 — AFD Penalty Minutes — Time to Reduce <50% Power",
-      "status": "draft",
-      "quizEligible": false,
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -9901,7 +9901,7 @@
         "tierGroup": "Tier 3",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -9913,9 +9913,9 @@
       "examType": "written",
       "questionNumber": 71,
       "track": "RO",
-      "title": "2016 Q71 — Emergency TEDE Dose Extension Classification (ALERT)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q71 — Emergency TEDE Dose Limit Extension",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -10014,7 +10014,7 @@
         "tierGroup": "Tier 3",
         "questionSource": "Facility Exam Bank (135687)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -10158,9 +10158,9 @@
       "examType": "written",
       "questionNumber": 73,
       "track": "RO",
-      "title": "2016 Q73 — EOP-LOCA-5 Entry Conditions (RWST LOW with Sump <62%)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q73 — EOP-LOCA-5 Entry Conditions",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -10273,7 +10273,7 @@
         "tierGroup": "Tier 3",
         "questionSource": "Facility Exam Bank (42264)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -10535,9 +10535,9 @@
       "examType": "written",
       "questionNumber": 76,
       "track": "SRO",
-      "title": "2016 Q76 — TRIP-2 with Pressure Override failure and Heat Sink Red Path → FRHS-1 SGFP Prompt Recovery",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q76 — TRIP-2 with AFW Pressure Override Failure and Multiple AFW Failures",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -10694,7 +10694,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -10707,8 +10707,8 @@
       "questionNumber": 77,
       "track": "SRO",
       "title": "2016 Q77 — Mode 3 RCP trip Tech Spec application — RCS loops with rod control de-energized",
-      "status": "draft",
-      "quizEligible": false,
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -10855,7 +10855,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -10867,9 +10867,9 @@
       "examType": "written",
       "questionNumber": 78,
       "track": "SRO",
-      "title": "2016 Q78 — ATWS at 4% power awaiting Mode 1 — TRIP-2 continuation, not FRSM-1",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q78 — ATWS at 4% Power Awaiting Mode 1 — CRS Response",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -11021,7 +11021,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -11033,9 +11033,9 @@
       "examType": "written",
       "questionNumber": 79,
       "track": "SRO",
-      "title": "2016 Q79 — SGTR with ruptured SG going water solid before SI termination — continue SGTR-1, terminate SI",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q79 — SGTR with Ruptured SG Going Water Solid Before SI Termination",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -11182,7 +11182,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank (45725)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -11194,9 +11194,9 @@
       "examType": "written",
       "questionNumber": 80,
       "track": "SRO",
-      "title": "2016 Q80 — SFP Manipulations with loss of air to 21 FHB Supply Fan Inlet Damper — TS 3.9.12 FHV inoperable",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q80 — SFP Manipulations with Loss of Air to 21 FHB Supply Fan Inlet Damper",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -11324,7 +11324,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -11336,10 +11336,10 @@
       "examType": "written",
       "questionNumber": 81,
       "track": "SRO",
-      "title": "2016 Q81 — LOCA ECG Classification — Loss of RCS + Containment barriers (8 point SAE)",
-      "status": "draft",
-      "quizEligible": false,
-      "requiresReference": false,
+      "title": "2016 Q81 — LOCA Emergency Classification Determination",
+      "status": "active",
+      "quizEligible": true,
+      "requiresReference": true,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
         "D"
@@ -11491,7 +11491,7 @@
         "tierGroup": "Tier 3",
         "questionSource": "Facility Exam Bank (136652)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -11503,8 +11503,8 @@
       "examType": "written",
       "questionNumber": 82,
       "track": "SRO",
-      "title": "2016 Q82 — EOP-LOCA-2 Step 19.1 RNO → Step 34 (bypass charging/SI pump reduction on inadequate subcooling)",
-      "status": "draft",
+      "title": "2016 Q82 — EOP-LOCA-2 Step 19 Response with Inadequate RCS Subcooling [OUTDATED]",
+      "status": "outdated",
       "quizEligible": false,
       "requiresReference": false,
       "officialAnswerLabel": "D",
@@ -11645,7 +11645,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": "status_outdated",
         "isEdited": false,
         "isRedacted": false
       }
@@ -11657,9 +11657,9 @@
       "examType": "written",
       "questionNumber": 83,
       "track": "SRO",
-      "title": "2016 Q83 — MSLB pre-synchronization — FRTS-1 PURPLE vs FRSM-2 YELLOW priority",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q83 — MSLB Pre-Synchronization CFST Priority Response",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -11833,7 +11833,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -11845,9 +11845,9 @@
       "examType": "written",
       "questionNumber": 84,
       "track": "SRO",
-      "title": "2016 Q84 — EOP-LOCA-5 — Remain in LOCA-5, RCS cooldown at <100°F/hr Tech Spec limit (no LOCA-3 CAS)",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q84 — EOP-LOCA-5 CRS Response with Both RHR Pumps Stopped [EDITED]",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -11864,7 +11864,7 @@
         },
         {
           "type": "paragraph",
-          "text": "- At step 16 of LOCA-1, Loss of Reactor Coolant, a transition to LOCA-5, Loss of Emergency Recirculation, was made with both RHR pumps stopped and unable to be started."
+          "text": "- At step 11 of 1-EOP-LOCA-1, Loss of Reactor Coolant, a transition to LOCA-5, Loss of Emergency Recirculation, was made with both RHR pumps stopped and unable to be started."
         },
         {
           "type": "paragraph",
@@ -11928,7 +11928,7 @@
       "explanationBlocks": [
         {
           "type": "paragraph",
-          "text": "✓ B. Correct. 55.43.(b)5 The stem says the transition to LOCA-5 was at LOCA-1 step 16 so RWST level >15.2'. The cooldown in LOCA-5 is done at <100°F/hr, which is the TS RCS cooldown limit to prevent an unwanted Thermal Shock condition, which would complicate matters since CFSTs are still in effect in LOCA-5.\n\n✗ A. Makeup to the RWST is directed at step 10, not to the VCT.\n\n✗ C. There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.\n\n✗ D. There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.\n\nRef: Loss of Emergency Recirculation — 2-EOP-LOCA-5 (rev 30) | LO: LOCA05E001 | Source: Facility Exam Bank (140182) | Question Modification Method: Editorially Modified | Cognitive: Application"
+          "text": "✓ B. Correct. 55.43.(b)5 The stem says the transition to LOCA-5 was at step 11 of 1-EOP-LOCA-1 so RWST level >15.2'. The cooldown in LOCA-5 is done at <100°F/hr, which is the TS RCS cooldown limit to prevent an unwanted Thermal Shock condition, which would complicate matters since CFSTs are still in effect in LOCA-5.\n\n✗ A. Makeup to the RWST is directed at step 10, not to the VCT.\n\n✗ C. There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.\n\n✗ D. There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.\n\nRef: Loss of Emergency Recirculation — 2-EOP-LOCA-5 (rev 30) | LO: LOCA05E001 | Source: Facility Exam Bank (140182) | Question Modification Method: Editorially Modified | Cognitive: Application"
         }
       ],
       "topics": [
@@ -11991,9 +11991,9 @@
         }
       ],
       "legacy": {
-        "stemText": "Given the following conditions:\n\n- Unit 2 experienced a LOCA from 100% power.\n\n- At step 16 of LOCA-1, Loss of Reactor Coolant, a transition to LOCA-5, Loss of Emergency Recirculation, was made with both RHR pumps stopped and unable to be started.\n\n- Just prior to initiating a cooldown, the RWST LO level alarm is received.\n\n- CONT SUMP CH A/B LEVEL >62% lights are lit.\n\n- RCS subcooling is <0°F.\n\nWhich of the following describes how the CRS is required to proceed?",
-        "explanationText": "✓ B. Correct. 55.43.(b)5 The stem says the transition to LOCA-5 was at LOCA-1 step 16 so RWST level >15.2'. The cooldown in LOCA-5 is done at <100°F/hr, which is the TS RCS cooldown limit to prevent an unwanted Thermal Shock condition, which would complicate matters since CFSTs are still in effect in LOCA-5.\n✗ A. Makeup to the RWST is directed at step 10, not to the VCT.\n✗ C. There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.\n✗ D. There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.\nRef: Loss of Emergency Recirculation — 2-EOP-LOCA-5 (rev 30) | LO: LOCA05E001 | Source: Facility Exam Bank (140182) | Question Modification Method: Editorially Modified | Cognitive: Application",
-        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ B. Correct.</strong> 55.43.(b)5 The stem says the transition to LOCA-5 was at LOCA-1 step 16 so RWST level &gt;15.2'. The cooldown in LOCA-5 is done at &lt;100&deg;F/hr, which is the TS RCS cooldown limit to prevent an unwanted Thermal Shock condition, which would complicate matters since CFSTs are still in effect in LOCA-5.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ A.</strong> Makeup to the RWST is directed at step 10, not to the VCT.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ D.</strong> There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Loss of Emergency Recirculation — 2-EOP-LOCA-5 (rev 30) | LO: LOCA05E001 | Source: Facility Exam Bank (140182) | Question Modification Method: Editorially Modified | Cognitive: Application</div>\n</div>",
+        "stemText": "Given the following conditions:\n\n- Unit 2 experienced a LOCA from 100% power.\n\n- At step 11 of 1-EOP-LOCA-1, Loss of Reactor Coolant, a transition to LOCA-5, Loss of Emergency Recirculation, was made with both RHR pumps stopped and unable to be started.\n\n- Just prior to initiating a cooldown, the RWST LO level alarm is received.\n\n- CONT SUMP CH A/B LEVEL >62% lights are lit.\n\n- RCS subcooling is <0°F.\n\nWhich of the following describes how the CRS is required to proceed?",
+        "explanationText": "✓ B. Correct. 55.43.(b)5 The stem says the transition to LOCA-5 was at step 11 of 1-EOP-LOCA-1 so RWST level >15.2'. The cooldown in LOCA-5 is done at <100°F/hr, which is the TS RCS cooldown limit to prevent an unwanted Thermal Shock condition, which would complicate matters since CFSTs are still in effect in LOCA-5.\n✗ A. Makeup to the RWST is directed at step 10, not to the VCT.\n✗ C. There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.\n✗ D. There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.\nRef: Loss of Emergency Recirculation — 2-EOP-LOCA-5 (rev 30) | LO: LOCA05E001 | Source: Facility Exam Bank (140182) | Question Modification Method: Editorially Modified | Cognitive: Application",
+        "explanationHtml": "<div style=\"margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;\">\n<div style=\"padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;\"><strong style=\"color:#22c55e;\">✓ B. Correct.</strong> 55.43.(b)5 The stem says the transition to LOCA-5 was at step 11 of 1-EOP-LOCA-1 so RWST level &gt;15.2'. The cooldown in LOCA-5 is done at &lt;100&deg;F/hr, which is the TS RCS cooldown limit to prevent an unwanted Thermal Shock condition, which would complicate matters since CFSTs are still in effect in LOCA-5.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ A.</strong> Makeup to the RWST is directed at step 10, not to the VCT.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ C.</strong> There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.</div>\n<div style=\"padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;\"><strong style=\"color:#f87171;\">✗ D.</strong> There is no LOCA-3 CAS in LOCA-5. Restoring any Train of recirc is the concern with no RHR pumps, the transfer to CL recirc will occur only after a RHR pump has been restored.</div>\n<div style=\"margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;\">Ref: Loss of Emergency Recirculation — 2-EOP-LOCA-5 (rev 30) | LO: LOCA05E001 | Source: Facility Exam Bank (140182) | Question Modification Method: Editorially Modified | Cognitive: Application</div>\n</div>",
         "wikiPath": "wiki/exams/2016/q84-loca-5-rcs-cooldown-tech-spec-limit-no-rhr-no-loca-3-cas.md",
         "kaCode": "00WE11 EA2.2",
         "kaImportance": 4.2,
@@ -12001,8 +12001,8 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank (140182)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
-        "isEdited": false,
+        "nonQuizReason": null,
+        "isEdited": true,
         "isRedacted": false
       }
     },
@@ -12013,9 +12013,9 @@
       "examType": "written",
       "questionNumber": 85,
       "track": "SRO",
-      "title": "2016 Q85 — MSLB Mixing Bottle — LOSC-2 CAS after Step 20, GO TO EOP-LOSC-1 with one nonfaulted SG",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q85 — MSLB Mixing Bottle — LOSC-2 Response to SG Pressure Rise After Step 20",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -12155,7 +12155,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank (141989)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -12307,8 +12307,8 @@
       "examType": "written",
       "questionNumber": 87,
       "track": "SRO",
-      "title": "2016 Q87 — EOP-LOCA-2 Accumulator Isolation Criteria",
-      "status": "draft",
+      "title": "2016 Q87 — EOP-LOCA-2 Accumulator Isolation Criteria [OUTDATED]",
+      "status": "outdated",
       "quizEligible": false,
       "requiresReference": false,
       "officialAnswerLabel": "A",
@@ -12435,7 +12435,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": "status_outdated",
         "isEdited": false,
         "isRedacted": false
       }
@@ -12447,9 +12447,9 @@
       "examType": "written",
       "questionNumber": 88,
       "track": "SRO",
-      "title": "2016 Q88 — FHB Fuel Handling Incident 2R5 Charcoal Filter Swap",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q88 — FHB Fuel Handling Incident Effect and Required Actions",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -12585,7 +12585,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "Facility Exam Bank (159673)",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -12597,9 +12597,9 @@
       "examType": "written",
       "questionNumber": 89,
       "track": "SRO",
-      "title": "2016 Q89 — Condensate Pump Trip 21A Condenser Level Rise CN108 Bypass",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q89 — 21 Condensate Pump Trip Effect and CRS Response",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -12726,7 +12726,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -12738,9 +12738,9 @@
       "examType": "written",
       "questionNumber": 90,
       "track": "SRO",
-      "title": "2016 Q90 — Loss of Control Air 7% Power 23 AFW 2MS132 Fail Open",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q90 — Loss of Control Air at 7% Power — Feed Flow Response",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "D",
       "acceptedAnswerLabels": [
@@ -12876,7 +12876,7 @@
         "tierGroup": "Tier 1/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -12888,9 +12888,9 @@
       "examType": "written",
       "questionNumber": 91,
       "track": "SRO",
-      "title": "2016 Q91 — 2A EDG Missed Monthly Surveillance SR 4.0.2 25% Extension",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q91 — 2A EDG Status After Missed Monthly Surveillance",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -13023,7 +13023,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -13035,9 +13035,9 @@
       "examType": "written",
       "questionNumber": 92,
       "track": "SRO",
-      "title": "2016 Q92 — 23 SW Pump Trip 2A EDG Bus Differential Loss of All SW",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q92 — 23 SW Pump Trip and 2A EDG Bus Differential Effect",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -13212,7 +13212,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "New",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -13224,9 +13224,9 @@
       "examType": "written",
       "questionNumber": 93,
       "track": "SRO",
-      "title": "2016 Q93 — Containment Purge Reinstatement CVI Signal Short Duration",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q93 — Containment Purge Reinstatement After CVI Signal",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "C",
       "acceptedAnswerLabels": [
@@ -13368,7 +13368,7 @@
         "tierGroup": "Tier 2/Group 1",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -13521,9 +13521,9 @@
       "examType": "written",
       "questionNumber": 95,
       "track": "SRO",
-      "title": "2016 Q95 — Mode 6 Entry Defueled to Refueling First Fuel Assembly Lowered",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q95 — Mode 6 Entry Point During Refueling",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -13634,7 +13634,7 @@
         "tierGroup": "Generic",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -13988,9 +13988,9 @@
       "examType": "written",
       "questionNumber": 98,
       "track": "SRO",
-      "title": "2016 Q98 — 14 WGDT Release Concurrent Activity VCT Purge Allowed",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q98 — 14 WGDT Release Allowed Concurrent Activities",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "B",
       "acceptedAnswerLabels": [
@@ -14097,7 +14097,7 @@
         "tierGroup": "Generic",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }
@@ -14229,9 +14229,9 @@
       "examType": "written",
       "questionNumber": 100,
       "track": "SRO",
-      "title": "2016 Q100 — Shutdown LOCA Procedure Entry Charging Step Change During Cooldown",
-      "status": "draft",
-      "quizEligible": false,
+      "title": "2016 Q100 — Unexplained Charging Step Change During Mode 3 Cooldown",
+      "status": "active",
+      "quizEligible": true,
       "requiresReference": false,
       "officialAnswerLabel": "A",
       "acceptedAnswerLabels": [
@@ -14365,7 +14365,7 @@
         "tierGroup": "Generic",
         "questionSource": "Facility Exam Bank",
         "auditStatus": "imported",
-        "nonQuizReason": "status_draft",
+        "nonQuizReason": null,
         "isEdited": false,
         "isRedacted": false
       }

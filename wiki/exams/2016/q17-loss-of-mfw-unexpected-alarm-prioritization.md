@@ -2,9 +2,11 @@
 title: "2016 Q17 — Loss of MFW (21 SGFP trip) — UNEXPECTED alarm and procedure"
 category: exams
 status: verified
+reference: no
 aliases:
   - 2016 Q17
   - 2016-Q17
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">

@@ -2,9 +2,11 @@
 title: "2016 Q82 — EOP-LOCA-2 Step 19 Response with Inadequate RCS Subcooling [OUTDATED]"
 category: exams
 status: outdated
+reference: no
 aliases:
   - 2016 Q82
   - 2016-Q82
+
 ---
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
