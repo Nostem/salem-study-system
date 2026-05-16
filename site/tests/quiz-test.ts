@@ -129,8 +129,8 @@ test('quiz stem renders source images needed to answer image-based questions', a
 
 test('quiz stem preserves blank cells in imported tables', async ({ page }) => {
   await authenticateQuizUser(page);
-  // Seed 132 puts draft 2018 Q10 first under the default quiz filters.
-  await page.goto('quiz/?seed=132');
+  // Seed 6 puts draft 2018 Q10 first under the default quiz filters.
+  await page.goto('quiz/?seed=6');
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');

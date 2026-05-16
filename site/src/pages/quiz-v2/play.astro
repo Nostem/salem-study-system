@@ -50,26 +50,25 @@ const topicOptions = [...topicGroups.entries()]
   .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
-<BaseLayout title="Study Builder Play">
-  <main class="max-w-[860px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
+<BaseLayout title="Study Session">
+  <main class="max-w-[860px] mx-auto px-4 sm:px-6 py-6 lg:py-10 flex flex-col">
     <header class="border-b border-border pb-5 mb-5">
-      <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study Builder</a>
+      <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
       <div class="mt-2">
-        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Advanced practice · account-save capable</div>
-        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Study Builder Play</h1>
+        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Study session · preview works without login</div>
+        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Study Session</h1>
         <p class="text-sm text-text-muted max-w-2xl mt-1">
-          Deterministic seeded run through the structured bank. Create a backend session to save results into My Progress, or use
-          <a href={`${base}quiz/`} class="underline hover:text-accent-blue">Classic Quiz</a> for faster simple reps.
+          Answer one question at a time, check the feedback, then move forward. Log in when you want this practice saved to My Progress.
         </p>
       </div>
     </header>
 
-    <section class="mb-5 bg-bg-card border border-border rounded-lg p-4" aria-labelledby="qv2p-builder-title">
+    <section class="order-3 mt-5 bg-bg-card border border-border rounded-lg p-4" aria-labelledby="qv2p-builder-title">
       <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4">
         <div>
-          <h2 id="qv2p-builder-title" class="font-serif text-xl text-text-primary">Session builder</h2>
+          <h2 id="qv2p-builder-title" class="font-serif text-xl text-text-primary">Advanced study options</h2>
           <p class="text-xs text-text-muted mt-1">
-            Adjust filters and rebuild a deterministic Study Builder play URL.
+            Optional: change the question count, year, track, reference mode, or topic before starting.
           </p>
         </div>
         <a
@@ -150,7 +149,7 @@ const topicOptions = [...topicGroups.entries()]
             type="submit"
             data-testid="qv2p-builder-submit"
             class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue hover:bg-bg"
-          >Build play URL</button>
+          >Apply options</button>
           <a
             data-testid="qv2p-builder-reset"
             href={`${base}quiz-v2/play/`}
@@ -162,7 +161,7 @@ const topicOptions = [...topicGroups.entries()]
 
     <section
       data-testid="qv2p-session"
-      class="mb-5 bg-bg-card border border-border rounded-lg p-4"
+      class="order-2 mt-5 bg-bg-card border border-border rounded-lg p-4"
     >
       <dl class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 text-[12px] font-mono">
         <dt class="text-text-muted">Session ID</dt>
@@ -179,8 +178,8 @@ const topicOptions = [...topicGroups.entries()]
           type="button"
           data-testid="qv2p-create-backend-session"
           class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-accent-blue rounded text-accent-blue hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
-        >Create backend session</button>
-        <span data-testid="qv2p-session-source" class="text-[11px] font-mono text-text-muted">Local deterministic session</span>
+        >Retry progress saving</button>
+        <span data-testid="qv2p-session-source" class="text-[11px] font-mono text-text-muted">Checking save status…</span>
         <button
           type="button"
           data-testid="qv2p-prev"
@@ -207,12 +206,12 @@ const topicOptions = [...topicGroups.entries()]
       <div class="mt-2 hidden text-[11px] font-mono text-text-muted" data-testid="qv2p-session-debug">
         <code class="block break-all rounded border border-border bg-bg px-2 py-1" data-testid="qv2p-session-filters">{}</code>
       </div>
-      <div data-testid="qv2p-submit-status" class="mt-3 text-xs text-text-muted">Answer at least one question, then create a backend session to save progress.</div>
+      <div data-testid="qv2p-submit-status" class="mt-3 text-xs text-text-muted">Preview locally, or log in to save progress automatically.</div>
     </section>
 
     <script type="application/json" id="qv2p-session-meta" set:html={JSON.stringify(sessionMeta)} />
 
-    <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
+    <article class="order-1 bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
       <div id="qv2p-empty" data-testid="qv2p-empty" class="text-sm text-text-muted">
         Loading session…
       </div>
@@ -255,6 +254,7 @@ const topicOptions = [...topicGroups.entries()]
 
           <section class="qv2p-section">
             <h3 class="qv2p-section-title">Choices</h3>
+            <p class="text-xs text-text-muted mb-3">Select one answer to reveal feedback, then use Next to keep studying.</p>
             <ol class="space-y-2" data-testid="qv2p-choices">
               {q.choices.map((c) => (
                 <li>
@@ -748,7 +748,7 @@ const topicOptions = [...topicGroups.entries()]
     const button = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-submit-results"]');
     if (!session || !button || selections.size === 0) return;
     button.disabled = true;
-    setText('qv2p-submit-status', 'Saving quiz-v2 progress…');
+    setText('qv2p-submit-status', 'Saving progress…');
     try {
       const result = await submitQuizResults({
         quizSessionId: session.backendSessionId,
@@ -777,8 +777,8 @@ const topicOptions = [...topicGroups.entries()]
     } catch (error) {
       const message = error instanceof Error ? error.message : 'request_failed';
       setText('qv2p-submit-status', message === 'not_authenticated'
-        ? 'Log in and create a backend session before saving progress.'
-        : `Save failed: ${message}`);
+        ? 'Log in to save progress. Your local preview remains available.'
+        : 'Progress saving is unavailable right now. You can still practice locally.');
     } finally {
       updateSubmitButton();
     }
@@ -788,21 +788,21 @@ const topicOptions = [...topicGroups.entries()]
     const button = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-create-backend-session"]');
     if (!button) return;
     button.disabled = true;
-    setText('qv2p-session-source', 'Creating backend session…');
+    setText('qv2p-session-source', 'Preparing saved progress…');
     try {
       const payload = buildCreateQuizV2SessionPayload(currentFilters, currentSeed ? { seed: currentSeed } : {});
       const response = assertCreateQuizV2SessionResponse(await createQuizV2Session(payload));
       applySession(
         response.session,
-        response.source === 'backend' ? 'Backend session ready · progress can be saved' : 'Local fallback session',
+        response.source === 'backend' ? 'Progress saving ready' : 'Preview mode · log in to save progress',
         { preserveAnswers: true }
       );
-      setText('qv2p-submit-status', response.source === 'backend' ? 'Backend session ready. Answer questions, then submit progress.' : 'Local fallback session only. Log in to save progress.');
+      setText('qv2p-submit-status', response.source === 'backend' ? 'Progress saving is ready. Answer questions, then submit progress.' : 'Preview mode. Log in to save progress.');
     } catch (error) {
       const message = error instanceof Error ? error.message : 'request_failed';
       setText('qv2p-session-source', message === 'not_authenticated'
-        ? 'Log in to create a backend session; using local session.'
-        : `Backend session failed: ${message}`);
+        ? 'Preview mode · log in to save progress'
+        : 'Progress saving is unavailable. You can still practice locally.');
     } finally {
       button.disabled = false;
     }
@@ -828,11 +828,12 @@ const topicOptions = [...topicGroups.entries()]
     const { filters, seed } = parseFiltersFromUrl(params);
     currentFilters = filters;
     currentSeed = seed;
-    applySession(buildQuizSession(candidateQuestions, filters, seed ? { seed } : {}));
+    applySession(buildQuizSession(candidateQuestions, filters, seed ? { seed } : {}), 'Preview mode · log in to save progress');
     attachChoiceHandlers();
     attachNavHandlers();
     attachBackendSessionHandler();
     attachSubmitHandler();
+    void createBackendSession();
   }
 
   if (document.readyState === 'loading') {

@@ -268,11 +268,11 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
       <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
         <div>
           <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">
-            Strategy · graph-linked practice
+            Study paths · topic-linked practice
           </div>
           <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Study Map</h1>
           <p class="text-sm text-text-muted max-w-2xl mt-1">
-            Combined view of wiki articles, structured questions, topics, and source refs. Select nodes to understand relationships, then launch targeted Study Builder sessions.
+            Choose what to study, see the related wiki/source/question context, then start a focused Study session. Click a card to view details; use the checkbox to add it to a session.
           </p>
         </div>
         <div class="grid grid-cols-2 gap-2 text-center min-w-[220px]">
@@ -289,8 +289,17 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     </header>
 
     <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-      <div class="bg-bg-card border border-border rounded-lg p-4">
-        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Nodes by kind</h2>
+      <div class="bg-bg-card border border-border rounded-lg p-4 sm:col-span-2">
+        <h2 class="font-serif text-2xl text-text-primary leading-tight">How to use the Study Map</h2>
+        <ol class="mt-3 grid gap-3 sm:grid-cols-3 text-sm text-text-body">
+          <li class="rounded border border-border bg-bg/60 p-3"><strong class="block text-text-primary">1. Find a topic.</strong> Search by system, procedure, Tech Spec, source, or question.</li>
+          <li class="rounded border border-border bg-bg/60 p-3"><strong class="block text-text-primary">2. Open details.</strong> Click the title/card to understand what it connects to.</li>
+          <li class="rounded border border-border bg-bg/60 p-3"><strong class="block text-text-primary">3. Build a session.</strong> Check one or more boxes, then start focused practice.</li>
+        </ol>
+      </div>
+      <details class="bg-bg-card border border-border rounded-lg p-4">
+        <summary class="cursor-pointer font-mono text-[10px] uppercase tracking-wider text-text-muted">Advanced graph counts</summary>
+        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mt-3 mb-2">Nodes by kind</h2>
         <ul data-testid="gv2-node-counts" class="text-sm text-text-body font-mono">
           {kindOrder.map((k) => (
             <li class="flex justify-between">
@@ -299,9 +308,10 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
             </li>
           ))}
         </ul>
-      </div>
-      <div class="bg-bg-card border border-border rounded-lg p-4">
-        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Edges by type</h2>
+      </details>
+      <details class="bg-bg-card border border-border rounded-lg p-4">
+        <summary class="cursor-pointer font-mono text-[10px] uppercase tracking-wider text-text-muted">Advanced relationship counts</summary>
+        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mt-3 mb-2">Edges by type</h2>
         <ul data-testid="gv2-edge-counts" class="text-sm text-text-body font-mono">
           {edgeOrder.map((t) => (
             <li class="flex justify-between">
@@ -310,7 +320,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
             </li>
           ))}
         </ul>
-      </div>
+      </details>
     </section>
 
     <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
@@ -387,16 +397,16 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
         </div>
         <section class="mt-3 rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-muted" data-testid="gv2-builder">
           <div class="flex items-center justify-between gap-2">
-            <div class="font-mono text-[10px] uppercase tracking-wider text-text-primary">Quiz builder</div>
+            <div class="font-mono text-[10px] uppercase tracking-wider text-text-primary">Selected study topics</div>
             <span class="font-mono text-[10px] text-text-muted" data-testid="gv2-builder-summary">No nodes selected</span>
           </div>
           <div class="mt-1"><span data-testid="gv2-builder-count">0</span> selected · <span data-testid="gv2-builder-pool">0</span> eligible questions</div>
           <div id="gv2-builder-tray" data-testid="gv2-builder-tray" class="mt-2 hidden space-y-1"></div>
           <div class="mt-2 flex flex-wrap gap-2">
-            <a id="gv2-builder-play" data-testid="gv2-builder-play" data-base={base} href="#" class="pointer-events-none rounded border border-accent-blue px-2 py-1 text-accent-blue no-underline">Generate quiz</a>
+            <a id="gv2-builder-play" data-testid="gv2-builder-play" data-base={base} href="#" class="pointer-events-none rounded border border-accent-blue px-2 py-1 text-accent-blue no-underline">Start selected session</a>
             <button type="button" id="gv2-builder-clear" data-testid="gv2-builder-clear" class="rounded border border-border px-2 py-1 text-text-muted">Clear</button>
           </div>
-          <p class="mt-2 text-[11px] text-text-muted">Selections union and de-duplicate eligible question pools before opening quiz-v2.</p>
+          <p class="mt-2 text-[11px] text-text-muted">Selections combine eligible question pools before opening a Study session.</p>
         </section>
         <div
           id="gv2-no-results"
@@ -611,7 +621,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     ` : '';
     const quizAction = detail.quizHref ? `
       <a href="${escapeHtml(detail.quizHref)}" class="rounded border border-accent-blue/60 px-3 py-2 text-accent-blue no-underline hover:bg-accent-blue/10">
-        Generate quiz from this node
+        Start study session from this node
         <span class="block text-[11px] text-text-muted">${escapeHtml(detail.eligibleQuestionCount)} eligible question${detail.eligibleQuestionCount === 1 ? '' : 's'} in pool</span>
       </a>
     ` : '';

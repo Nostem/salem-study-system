@@ -87,33 +87,46 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
                       !currentSlug || currentSlug === '_index' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
         <span class="font-mono text-accent-teal">&#8962;</span> Home
       </a>
-      <div class="mt-1 mb-1 font-mono text-[9px] uppercase tracking-[0.18em] text-[#475569]">Practice</div>
-      <a href={`${base}quiz`}
+      <div class="mt-1 mb-1 font-mono text-[9px] uppercase tracking-[0.18em] text-[#475569]">Study</div>
+      <a href={`${base}study`}
+         data-testid="sidebar-study-link"
          class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',
-                      currentSlug === 'quiz' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
-        <span class="font-mono text-accent-teal">&#9635;</span> Classic Quiz
-      </a>
-      <a href={`${base}quiz-v2`}
-         class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',
-                      currentSlug === 'quiz-v2' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
-        <span class="font-mono text-accent-teal">&#9678;</span> Study Builder
-      </a>
-      <a href={`${base}quiz-v2/review`}
-         class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',
-                      currentSlug === 'quiz-v2-review' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
-        <span class="font-mono text-accent-teal">&#8635;</span> Review Queue
-      </a>
-      <a href={`${base}graph-v2`}
-         data-testid="sidebar-graph-v2-link"
-         class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',
-                      currentSlug === 'graph-v2' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
-        <span class="font-mono text-accent-teal">&#9678;</span> Study Map
+                      currentSlug === 'study' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
+        <span class="font-mono text-accent-teal">&#9678;</span> Study
       </a>
       <a href={`${base}history`}
          class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',
                       currentSlug === 'history' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
         <span class="font-mono text-accent-teal">&#8599;</span> My Progress
       </a>
+      <details class="mt-1 group">
+        <summary class="cursor-pointer py-1.5 text-[11px] text-[#64748b] hover:text-[#c8cdd5] list-none">
+          <span class="font-mono text-[9px] uppercase tracking-[0.16em]">Advanced tools</span>
+        </summary>
+        <div class="ml-3 flex flex-col gap-1 border-l border-[#1a2035] pl-3">
+          <a href={`${base}quiz`}
+             class:list={['flex items-center gap-2 py-1 text-[12px] no-underline transition-colors',
+                          currentSlug === 'quiz' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
+            <span class="font-mono text-accent-teal">&#9635;</span> Classic Quiz
+          </a>
+          <a href={`${base}quiz-v2`}
+             class:list={['flex items-center gap-2 py-1 text-[12px] no-underline transition-colors',
+                          currentSlug === 'quiz-v2' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
+            <span class="font-mono text-accent-teal">&#9678;</span> Study Builder
+          </a>
+          <a href={`${base}quiz-v2/review`}
+             class:list={['flex items-center gap-2 py-1 text-[12px] no-underline transition-colors',
+                          currentSlug === 'quiz-v2-review' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
+            <span class="font-mono text-accent-teal">&#8635;</span> Review Queue
+          </a>
+          <a href={`${base}graph-v2`}
+             data-testid="sidebar-graph-v2-link"
+             class:list={['flex items-center gap-2 py-1 text-[12px] no-underline transition-colors',
+                          currentSlug === 'graph-v2' ? 'text-accent-blue' : 'text-[#8b95a5] hover:text-[#c8cdd5]']}>
+            <span class="font-mono text-accent-teal">&#9678;</span> Study Map
+          </a>
+        </div>
+      </details>
       <div class="mt-2 mb-1 font-mono text-[9px] uppercase tracking-[0.18em] text-[#475569]">Reference</div>
       <a href={`${base}plant`}
          class:list={['flex items-center gap-2 py-1.5 text-[13px] no-underline transition-colors',

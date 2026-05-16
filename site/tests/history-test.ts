@@ -160,15 +160,14 @@ test('sidebar includes the practice loop in order', async ({ page }) => {
 
   const sidebar = page.locator('aside[data-sidebar-variant="desktop"]');
   await expect(sidebar.getByRole('link', { name: /My Progress/i })).toHaveAttribute('href', /\/salem-study-system\/history\/?$/);
+  await expect(sidebar.getByTestId('sidebar-study-link')).toHaveAttribute('href', /\/salem-study-system\/study\/?$/);
   await expect(sidebar.getByTestId('sidebar-graph-v2-link')).toHaveAttribute('href', /\/salem-study-system\/graph-v2\/?$/);
+  await expect(sidebar.getByText('Advanced tools')).toBeVisible();
 
   const topLinks = await sidebar.locator('nav > div').first().getByRole('link').allTextContents();
-  expect(topLinks.map((text) => text.replace(/\s+/g, ' ').trim()).slice(0, 7)).toEqual([
+  expect(topLinks.map((text) => text.replace(/\s+/g, ' ').trim()).slice(0, 4)).toEqual([
     '⌂ Home',
-    '▣ Classic Quiz',
-    '◎ Study Builder',
-    '↻ Review Queue',
-    '◎ Study Map',
+    '◎ Study',
     '↗ My Progress',
     '◇ Plant overview',
   ]);

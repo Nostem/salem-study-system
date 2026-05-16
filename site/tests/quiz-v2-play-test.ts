@@ -32,7 +32,7 @@ async function seedAuth(page: Page): Promise<void> {
 test('quiz-v2 play route loads a deterministic session with an explicit count', async ({ page }) => {
   await page.goto('quiz-v2/play/?seed=play-default-test&count=4');
 
-  await expect(page.getByRole('heading', { name: /Study Builder Play/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Study Session/i })).toBeVisible();
   await expect(page.getByTestId('qv2p-session-id')).toContainText(/^qv2-[0-9a-f]{8}$/);
   await expect(page.getByTestId('qv2p-session-seed')).toHaveText('play-default-test');
   await expect(page.getByTestId('qv2p-session-count')).toHaveText('4');
@@ -230,7 +230,7 @@ test('quiz-v2 play preserves answered state when creating an authenticated backe
 
   await page.getByTestId('qv2p-create-backend-session').click();
 
-  await expect(page.getByTestId('qv2p-session-source')).toContainText('Backend session');
+  await expect(page.getByTestId('qv2p-session-source')).toContainText('Progress saving ready');
   await expect(page.getByTestId('qv2p-session-id')).toContainText('qv2-server1234');
   await expect(page.getByTestId('qv2p-session-id')).toContainText('00000000-0000-4000-8000-000000000321');
   await expect(page.getByTestId('qv2p-session-count')).toHaveText('1');

@@ -7,7 +7,7 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await expect(page.getByTestId('gv2-empty')).toContainText('Select a node above or in the list to view its connections.');
 
   // Page chrome.
-  await expect(page.getByRole('heading', { name: /Study Map/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Study Map', exact: true })).toBeVisible();
 
   // Total node + edge counts must be positive integers.
   const nodeCount = await page.getByTestId('gv2-node-count').first().textContent();
@@ -67,7 +67,7 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await expect(meta).toContainText('23');
   await expect(meta).toContainText('Quiz eligible');
   await expect(meta).toContainText('yes');
-  await expect(page.getByTestId(`gv2-actions-${Q23_ID}`).getByRole('link', { name: /Generate quiz from this node/i }))
+  await expect(page.getByTestId(`gv2-actions-${Q23_ID}`).getByRole('link', { name: /Start study session from this node/i }))
     .toHaveAttribute('href', /\/quiz-v2\/play\/\?slugs=q23-eop-flowchart-symbols-concurrent&count=1$/);
   await expect(page.getByTestId(`gv2-actions-${Q23_ID}`).getByRole('link', { name: /Open source\/wiki page/i }))
     .toHaveAttribute('href', /\/exams\/2023\/q23-eop-flowchart-symbols-concurrent\/$/);
@@ -90,14 +90,14 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   const deminDetail = page.getByTestId('gv2-detail-topic:demin-water');
   await expect(deminDetail).toBeVisible();
   await expect(page.getByTestId('gv2-related-questions-topic:demin-water')).toContainText('2016 Q53');
-  await expect(page.getByTestId('gv2-actions-topic:demin-water').getByRole('link', { name: /Generate quiz from this node/i }))
+  await expect(page.getByTestId('gv2-actions-topic:demin-water').getByRole('link', { name: /Start study session from this node/i }))
     .toHaveAttribute('href', /\/quiz-v2\/play\/\?topics=demin-water&count=10$/);
 
   // Larger topics with eligible practice questions hand off directly into quiz-v2 with the topic filter set.
   await page.getByTestId('gv2-search').fill('topic:pressurizer-level-and-press-control');
   const practiceTopic = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: 'Pressurizer Level & Press Control' }).first();
   await practiceTopic.getByRole('button').click();
-  await expect(page.getByTestId('gv2-actions-topic:pressurizer-level-and-press-control').getByRole('link', { name: /Generate quiz from this node/i }))
+  await expect(page.getByTestId('gv2-actions-topic:pressurizer-level-and-press-control').getByRole('link', { name: /Start study session from this node/i }))
     .toHaveAttribute('href', /\/quiz-v2\/play\/\?topics=pressurizer-level-and-press-control&count=10$/);
   await expect(page.getByTestId('gv2-actions-topic:pressurizer-level-and-press-control')).toContainText('eligible question');
 
@@ -105,7 +105,7 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   await page.getByTestId('gv2-search').fill('q8-pzr-saturation-rcp-restart');
   const eligibleQuestion = page.locator('[data-testid="gv2-list"] li.gv2-item:not(.hidden)').filter({ hasText: '2018 Q8' }).first();
   await eligibleQuestion.getByRole('button').click();
-  await expect(page.getByTestId('gv2-actions-question:q8-pzr-saturation-rcp-restart').getByRole('link', { name: /Generate quiz from this node/i }))
+  await expect(page.getByTestId('gv2-actions-question:q8-pzr-saturation-rcp-restart').getByRole('link', { name: /Start study session from this node/i }))
     .toHaveAttribute('href', /\/quiz-v2\/play\/\?slugs=q8-pzr-saturation-rcp-restart&count=1$/);
 });
 
