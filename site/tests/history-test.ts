@@ -155,20 +155,21 @@ test('history page renders summary cards, quiz attempts, weak topics, and prior 
   expect(requests[0].authorization).toBe('Bearer playwright-access-token');
 });
 
-test('sidebar includes the practice loop in order', async ({ page }) => {
+test('sidebar keeps Study as the only learner app entry point', async ({ page }) => {
   await page.goto('systems/reactor-coolant-system');
 
   const sidebar = page.locator('aside[data-sidebar-variant="desktop"]');
-  await expect(sidebar.getByRole('link', { name: /My Progress/i })).toHaveAttribute('href', /\/salem-study-system\/history\/?$/);
   await expect(sidebar.getByTestId('sidebar-study-link')).toHaveAttribute('href', /\/salem-study-system\/study\/?$/);
-  await expect(sidebar.getByTestId('sidebar-graph-v2-link')).toHaveAttribute('href', /\/salem-study-system\/graph-v2\/?$/);
-  await expect(sidebar.getByText('Advanced tools')).toBeVisible();
+  await expect(sidebar.getByRole('link', { name: /My Progress/i })).toHaveCount(0);
+  await expect(sidebar.getByRole('link', { name: /Classic Quiz/i })).toHaveCount(0);
+  await expect(sidebar.getByRole('link', { name: /Study Builder/i })).toHaveCount(0);
+  await expect(sidebar.getByRole('link', { name: /Study Map/i })).toHaveCount(0);
+  await expect(sidebar.getByText('Advanced tools')).toHaveCount(0);
 
   const topLinks = await sidebar.locator('nav > div').first().getByRole('link').allTextContents();
-  expect(topLinks.map((text) => text.replace(/\s+/g, ' ').trim()).slice(0, 4)).toEqual([
+  expect(topLinks.map((text) => text.replace(/\s+/g, ' ').trim()).slice(0, 3)).toEqual([
     '⌂ Home',
     '◎ Study',
-    '↗ My Progress',
     '◇ Plant overview',
   ]);
 });
