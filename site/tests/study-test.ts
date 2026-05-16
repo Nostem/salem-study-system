@@ -1,24 +1,36 @@
 import { expect, test } from '@playwright/test';
 
-test('Study is the simple learner entry point with preview and canonical actions', async ({ page }) => {
+const learnerRoutes = [
+  { path: 'study/', active: 'Study' },
+  { path: 'quiz/', active: 'Quick Quiz' },
+  { path: 'quiz-v2/', active: 'Advanced Quiz' },
+  { path: 'quiz-v2/play/', active: 'Advanced Quiz' },
+  { path: 'quiz-v2/review/', active: 'My Progress' },
+  { path: 'graph-v2/', active: 'Advanced Quiz' },
+  { path: 'history/', active: 'My Progress' },
+];
+
+test('Study presents a three-choice learner hub with Quick, Advanced, and Progress paths', async ({ page }) => {
   await page.goto('study/');
 
   await expect(page.getByRole('heading', { name: 'Study' })).toBeVisible();
-  await expect(page.getByText('Start here. Pick up review work')).toBeVisible();
-  await expect(page.getByTestId('study-auth-status')).toContainText(/Preview mode|Logged in/);
+  await expect(page.getByText('Practice NRC exam questions, target weak areas, and track your progress.')).toBeVisible();
+  await expect(page.getByTestId('study-auth-status')).toContainText(/Browsing as a guest|Signed in|Progress saving/);
 
-  await expect(page.getByTestId('study-primary-action')).toHaveAttribute('href', /\/quiz-v2\/play\/\?count=10&seed=study-start$/);
-  await expect(page.getByTestId('study-card-review')).toHaveAttribute('href', /\/quiz-v2\/review\/?$/);
-  await expect(page.getByTestId('study-card-practice')).toHaveAttribute('href', /\/quiz-v2\/play\/\?count=10&seed=study-start$/);
-  await expect(page.getByTestId('study-card-map')).toHaveAttribute('href', /\/graph-v2\/?$/);
+  await expect(page.getByTestId('study-continue-banner')).toBeHidden();
+  await expect(page.getByTestId('study-card-quick')).toHaveAttribute('href', /\/quiz\/?$/);
+  await expect(page.getByTestId('study-card-advanced-build')).toHaveAttribute('href', /\/quiz-v2\/?$/);
+  await expect(page.getByTestId('study-card-advanced-map')).toHaveAttribute('href', /\/graph-v2\/?$/);
   await expect(page.getByTestId('study-card-progress')).toHaveAttribute('href', /\/history\/?$/);
+
+  await expect(page.getByText('Advanced / legacy tools')).toHaveCount(0);
+  await expect(page.getByText(/without deciding which quiz engine/i)).toHaveCount(0);
 
   const eligible = Number(await page.getByTestId('study-eligible-count').textContent());
   expect(eligible).toBeGreaterThan(400);
-  await expect(page.getByText('Advanced / legacy tools')).toBeVisible();
 });
 
-test('Study redirects the primary action to review when logged-in review is due', async ({ page }) => {
+test('Study shows a continue banner when logged-in review is due', async ({ page }) => {
   await page.addInitScript(() => {
     window.localStorage.setItem(
       'sb-local-test-auth-token',
@@ -43,7 +55,53 @@ test('Study redirects the primary action to review when logged-in review is due'
 
   await page.goto('study/');
 
-  await expect(page.getByTestId('study-auth-status')).toContainText('Logged in');
-  await expect(page.getByTestId('study-primary-action')).toHaveAttribute('href', /\/quiz-v2\/review\/?$/);
-  await expect(page.getByTestId('study-primary-reason')).toContainText('1 question due for review');
+  await expect(page.getByTestId('study-auth-status')).toContainText('Signed in');
+  await expect(page.getByTestId('study-continue-banner')).toBeVisible();
+  await expect(page.getByTestId('study-continue-action')).toHaveAttribute('href', /\/quiz-v2\/review\/?$/);
+  await expect(page.getByTestId('study-continue-reason')).toContainText('1 question is due for review');
+});
+
+for (const route of learnerRoutes) {
+  test(`learner chrome is present on ${route.path}`, async ({ page }) => {
+    await page.goto(route.path);
+
+    const nav = page.getByTestId('study-nav');
+    await expect(nav).toBeVisible();
+    await expect(nav.getByRole('link', { name: /^Study$/ })).toHaveAttribute('href', /\/study\/?$/);
+    await expect(nav.getByRole('link', { name: /^Quick Quiz$/ })).toHaveAttribute('href', /\/quiz\/?$/);
+    await expect(nav.getByRole('link', { name: /^Advanced Quiz$/ })).toHaveAttribute('href', /\/quiz-v2\/?$/);
+    await expect(nav.getByRole('link', { name: /^My Progress$/ })).toHaveAttribute('href', /\/history\/?$/);
+    await expect(nav.getByRole('link', { name: route.active })).toHaveAttribute('aria-current', 'page');
+  });
+}
+
+test('mobile Study keeps the three learner choices clear and full-width', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  await page.goto('study/');
+
+  const quick = page.getByTestId('study-card-quick');
+  const advanced = page.getByTestId('study-card-advanced');
+  const progress = page.getByTestId('study-card-progress');
+
+  await expect(quick).toBeVisible();
+  await expect(advanced).toBeVisible();
+  await expect(progress).toBeVisible();
+  await expect(quick).toBeInViewport();
+
+  const quickBox = await quick.boundingBox();
+  const advancedBox = await advanced.boundingBox();
+  const progressBox = await progress.boundingBox();
+  expect(quickBox?.width).toBeGreaterThan(300);
+  expect(advancedBox?.width).toBeGreaterThan(300);
+  expect(progressBox?.width).toBeGreaterThan(300);
+});
+
+test('graph-v2 mobile hides advanced filters behind a collapsed panel', async ({ page }) => {
+  await page.setViewportSize({ width: 375, height: 812 });
+  await page.goto('graph-v2/');
+
+  const panel = page.getByTestId('gv2-mobile-filters');
+  await expect(panel).toBeVisible();
+  await expect(panel).not.toHaveAttribute('open', /.+/);
+  await expect(panel.getByRole('button', { name: /Search and filters/i })).toBeVisible();
 });

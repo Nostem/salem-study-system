@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import StudyLayout from '../layouts/StudyLayout.astro';
 import { generateGraphV2Data } from '../utils/graph-v2-data';
 
 const base = import.meta.env.BASE_URL.endsWith('/')
@@ -261,10 +261,10 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
 
 ---
 
-<BaseLayout title="Study Map">
+<StudyLayout title="Study Map" active="advanced">
   <main class="max-w-[1180px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
     <header class="border-b border-border pb-5 mb-5">
-      <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
+      <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
       <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
         <div>
           <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">
@@ -324,7 +324,9 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     </section>
 
     <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
-      <aside class="bg-bg-card border border-border rounded-lg p-4 h-fit lg:sticky lg:top-4">
+      <details open data-testid="gv2-mobile-filters" class="gv2-filter-panel bg-bg-card border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
+        <summary role="button" class="cursor-pointer font-mono text-[11px] uppercase tracking-wider text-text-primary lg:hidden">Search and filters</summary>
+        <div class="gv2-filter-body mt-3 lg:mt-0">
         <div class="flex flex-col gap-3">
           <label class="flex flex-col gap-1">
             <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Search</span>
@@ -452,7 +454,8 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
             </li>
           ))}
         </ul>
-      </aside>
+        </div>
+      </details>
 
       <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
         <div id="gv2-empty" data-testid="gv2-empty" class="text-sm text-text-muted">
@@ -462,9 +465,30 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
       </article>
     </section>
   </main>
-</BaseLayout>
+</StudyLayout>
 
 <script id="gv2-detail-data" type="application/json" set:html={JSON.stringify(detailData)}></script>
+
+<script>
+  const filterPanel = document.querySelector<HTMLDetailsElement>('[data-testid="gv2-mobile-filters"]');
+  const syncFilterPanelMode = () => {
+    if (!filterPanel) return;
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      filterPanel.open = true;
+    } else {
+      filterPanel.removeAttribute('open');
+    }
+  };
+  syncFilterPanelMode();
+  window.addEventListener('resize', syncFilterPanelMode);
+</script>
+
+<style>
+  @media (min-width: 1024px) {
+    .gv2-filter-panel > summary { display: none; }
+    .gv2-filter-panel:not([open]) > .gv2-filter-body { display: block; }
+  }
+</style>
 
 <script>
   let selectedNodeId: string | null = null;

@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import StudyLayout from '../../layouts/StudyLayout.astro';
 import QuestionBlockRenderer from '../../components/QuestionBlockRenderer.astro';
 import {
   getStructuredQuestions,
@@ -50,13 +50,13 @@ const topicOptions = [...topicGroups.entries()]
   .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
-<BaseLayout title="Study Session">
+<StudyLayout title="Practice" active="advanced">
   <main class="max-w-[860px] mx-auto px-4 sm:px-6 py-6 lg:py-10 flex flex-col">
     <header class="border-b border-border pb-5 mb-5">
       <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
       <div class="mt-2">
-        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Study session · preview works without login</div>
-        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Study Session</h1>
+        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Practice · preview works without login</div>
+        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Practice</h1>
         <p class="text-sm text-text-muted max-w-2xl mt-1">
           Answer one question at a time, check the feedback, then move forward. Log in when you want this practice saved to My Progress.
         </p>
@@ -178,7 +178,7 @@ const topicOptions = [...topicGroups.entries()]
           type="button"
           data-testid="qv2p-create-backend-session"
           class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-accent-blue rounded text-accent-blue hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
-        >Retry progress saving</button>
+        >Retry saving</button>
         <span data-testid="qv2p-session-source" class="text-[11px] font-mono text-text-muted">Checking save status…</span>
         <button
           type="button"
@@ -202,10 +202,12 @@ const topicOptions = [...topicGroups.entries()]
           Session summary loading…
         </span>
       </div>
-      <button type="button" class="mt-2 text-[11px] font-mono text-text-muted underline hover:text-text-primary" data-testid="qv2p-session-debug-toggle">Show debug session filters</button>
-      <div class="mt-2 hidden text-[11px] font-mono text-text-muted" data-testid="qv2p-session-debug">
-        <code class="block break-all rounded border border-border bg-bg px-2 py-1" data-testid="qv2p-session-filters">{}</code>
-      </div>
+      <details class="mt-2 text-[11px] font-mono text-text-muted" data-testid="qv2p-session-debug-toggle">
+        <summary class="cursor-pointer underline hover:text-text-primary">Session details</summary>
+        <div class="mt-2 text-[11px] font-mono text-text-muted" data-testid="qv2p-session-debug">
+          <code class="block break-all rounded border border-border bg-bg px-2 py-1" data-testid="qv2p-session-filters">{}</code>
+        </div>
+      </details>
       <div data-testid="qv2p-submit-status" class="mt-3 text-xs text-text-muted">Preview locally, or log in to save progress automatically.</div>
     </section>
 
@@ -327,7 +329,7 @@ const topicOptions = [...topicGroups.entries()]
       ))}
     </article>
   </main>
-</BaseLayout>
+</StudyLayout>
 
 <style>
   .qv2p-section { margin-top: 1.25rem; }
@@ -646,11 +648,6 @@ const topicOptions = [...topicGroups.entries()]
   function attachNavHandlers(): void {
     const prev = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-prev"]');
     const next = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-next"]');
-    const debugToggle = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-session-debug-toggle"]');
-    const debug = document.querySelector<HTMLElement>('[data-testid="qv2p-session-debug"]');
-    debugToggle?.addEventListener('click', () => {
-      debug?.classList.toggle('hidden');
-    });
     prev?.addEventListener('click', () => {
       if (currentIndex > 0) {
         currentIndex--;

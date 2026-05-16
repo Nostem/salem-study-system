@@ -1,0 +1,51 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  title: string;
+  active?: 'study' | 'quick' | 'advanced' | 'progress';
+  noindex?: boolean;
+}
+
+const { title, active = 'study', noindex = false } = Astro.props;
+const base = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : import.meta.env.BASE_URL + '/';
+
+const navItems = [
+  { key: 'study', label: 'Study', href: `${base}study/` },
+  { key: 'quick', label: 'Quick Quiz', href: `${base}quiz/` },
+  { key: 'advanced', label: 'Advanced Quiz', href: `${base}quiz-v2/` },
+  { key: 'progress', label: 'My Progress', href: `${base}history/` },
+];
+---
+
+<BaseLayout title={title} noindex={noindex}>
+  <header class="sticky top-0 z-30 border-b border-border bg-bg/95 backdrop-blur">
+    <div class="mx-auto flex max-w-[1180px] flex-col gap-3 px-4 py-3 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
+      <a href={base} class="flex items-center gap-3 no-underline" aria-label="Back to Salem Study wiki home">
+        <div class="flex h-8 w-8 items-center justify-center rounded-full border border-accent-blue">
+          <div class="h-3.5 w-3.5 rotate-45 border border-accent-blue"></div>
+        </div>
+        <span class="font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-text-primary">Salem Study</span>
+      </a>
+      <nav data-testid="study-nav" class="flex gap-2 overflow-x-auto" aria-label="Study navigation">
+        {navItems.map((item) => (
+          <a
+            href={item.href}
+            aria-current={active === item.key ? 'page' : undefined}
+            class:list={[
+              'inline-flex min-h-11 shrink-0 items-center rounded-lg border px-3 py-2 text-sm font-semibold no-underline transition-colors',
+              active === item.key
+                ? 'border-accent-blue bg-accent-blue/10 text-accent-blue'
+                : 'border-border text-text-muted hover:bg-bg-card hover:text-text-primary',
+            ]}
+          >
+            {item.label}
+          </a>
+        ))}
+      </nav>
+    </div>
+  </header>
+  <slot />
+</BaseLayout>

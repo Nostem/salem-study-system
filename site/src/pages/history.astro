@@ -1,19 +1,13 @@
 ---
-import ArticleLayout from '../layouts/ArticleLayout.astro';
+import StudyLayout from '../layouts/StudyLayout.astro';
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : `${import.meta.env.BASE_URL}/`;
 const historyPath = `${base}history/`;
 const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
 ---
 
-<ArticleLayout
-  title="My Progress"
-  category="navigation"
-  status="verified"
-  slug="history"
-  headings={[]}
-  wide={true}
->
-  <section class="max-w-6xl space-y-6 text-[#c8cdd5]">
+<StudyLayout title="My Progress" active="progress">
+  <main class="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:py-10">
+    <section class="space-y-6 text-[#c8cdd5]">
     <div>
       <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-[#22d3ee]">Quiz history</p>
       <h1 class="mt-2 text-3xl font-semibold text-[#e0e4ea]">My Progress</h1>
@@ -117,7 +111,8 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
         <div data-history-review-content class="mt-4 space-y-3"></div>
       </section>
     </div>
-  </section>
+    </section>
+  </main>
 
   <script>
     import { getQuizHistory, hasSupabaseConfig, type QuizHistoryResponse, type QuizHistorySession } from '../utils/auth-client';
@@ -289,4 +284,4 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
 
     void initHistory();
   </script>
-</ArticleLayout>
+</StudyLayout>

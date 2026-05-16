@@ -33,7 +33,7 @@ test('quiz page requires login before showing the quiz builder', async ({ page }
   await page.goto('quiz/');
 
   await expect(page.getByTestId('quiz-login-required')).toBeVisible();
-  await expect(page.getByRole('heading', { name: /Log in to use the quiz/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Log in to use Quick Quiz/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /Log in/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /Create account/i })).toHaveCount(0);
   await expect(page.getByText(/do not have an account/i)).toBeVisible();
@@ -45,7 +45,7 @@ test('quiz page builds an account-gated quiz from imported questions', async ({ 
   await authenticateQuizUser(page);
   await page.goto('quiz/');
 
-  await expect(page.getByRole('heading', { name: 'Classic Quiz', exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Quick Quiz', exact: true })).toBeVisible();
   await expect(page.getByRole('link', { name: /View my progress/i })).toHaveAttribute('href', /\/history\/?$/);
   await expect(page.getByTestId('quiz-bank-count')).toContainText('599');
 

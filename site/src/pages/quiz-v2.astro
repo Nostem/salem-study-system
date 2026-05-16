@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import StudyLayout from '../layouts/StudyLayout.astro';
 import QuestionBlockRenderer from '../components/QuestionBlockRenderer.astro';
 import {
   getStructuredExamYears,
@@ -29,16 +29,16 @@ const sessionMeta = questions.map((q) => ({
 }));
 ---
 
-<BaseLayout title="Study Builder">
+<StudyLayout title="Advanced Quiz" active="advanced">
   <main class="max-w-[1180px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
     <header class="border-b border-border pb-5 mb-5">
-      <a href={base} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Wiki home</a>
+      <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
       <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
         <div>
           <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Advanced practice · structured bank</div>
-          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Study Builder</h1>
+          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Advanced Quiz</h1>
           <p class="text-sm text-text-muted max-w-2xl mt-1">
-            Build targeted, source-linked practice from the structured question bank. Use Classic Quiz for fast reps, or launch focused sessions from topics, source refs, missed questions, and Study Map selections.
+            Build targeted, source-linked practice from the structured question bank. Use Quick Quiz for fast reps, or launch focused sessions from topics, source refs, missed questions, and Study Map selections.
           </p>
         </div>
         <div class="flex flex-col gap-3 min-w-[180px]">
@@ -56,11 +56,11 @@ const sessionMeta = questions.map((q) => ({
             <a
               href={`${base}quiz/`}
               class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
-            >Classic</a>
+            >Quick Quiz</a>
             <a
               href={`${base}quiz-v2/play/`}
               class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue no-underline hover:bg-bg"
-            >Play</a>
+            >Practice</a>
             <a
               href={`${base}quiz-v2/review/`}
               data-testid="qv2-review-link"
@@ -264,7 +264,7 @@ const sessionMeta = questions.map((q) => ({
       </article>
     </section>
   </main>
-</BaseLayout>
+</StudyLayout>
 
 <style>
   .qv2-section { margin-top: 1.25rem; }

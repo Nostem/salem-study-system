@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import StudyLayout from '../layouts/StudyLayout.astro';
 import { getStructuredQuestions, getStructuredExamYears } from '../utils/structured-quiz-data';
 
 const base = import.meta.env.BASE_URL.endsWith('/')
@@ -20,39 +20,43 @@ for (const q of questions) {
 }
 const practiceReadyTopics = practiceTopicSlugs.size;
 
-const defaultPracticeHref = `${base}quiz-v2/play/?count=10&seed=study-start`;
+const quickHref = `${base}quiz/`;
 const reviewHref = `${base}quiz-v2/review/`;
 const mapHref = `${base}graph-v2/`;
 const progressHref = `${base}history/`;
-const classicHref = `${base}quiz/`;
 const builderHref = `${base}quiz-v2/`;
 ---
 
-<BaseLayout title="Study">
-  <main class="max-w-[1120px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
+<StudyLayout title="Study" active="study">
+  <main class="mx-auto max-w-[1120px] px-4 py-6 sm:px-6 lg:py-10">
     <header class="mb-6 rounded-2xl border border-border bg-bg-card p-5 sm:p-7">
-      <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-2">One starting point</div>
-      <div class="grid gap-5 lg:grid-cols-[1fr_300px] lg:items-end">
+      <a href={base} class="mb-4 inline-flex text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Back to wiki</a>
+      <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-2">Learner hub</div>
+      <div class="grid gap-5 lg:grid-cols-[1fr_320px] lg:items-end">
         <div>
           <h1 class="font-serif text-4xl sm:text-5xl text-text-primary leading-tight">Study</h1>
           <p class="mt-3 max-w-2xl text-sm sm:text-base text-text-body leading-relaxed">
-            Start here. Pick up review work, practice exam questions, choose a topic, or check progress without deciding which quiz engine to use.
+            Practice NRC exam questions, target weak areas, and track your progress.
           </p>
           <p data-testid="study-auth-status" class="mt-3 text-xs font-mono text-text-muted">
-            Preview mode. Log in when you want sessions and progress saved automatically.
+            Browsing as a guest — log in to save quiz results and track progress.
           </p>
         </div>
-        <div class="rounded-xl border border-border bg-bg/70 p-4">
-          <div class="text-xs text-text-muted">Recommended next step</div>
+        <section
+          data-testid="study-continue-banner"
+          class="hidden rounded-xl border border-accent-blue bg-accent-blue/10 p-4"
+          aria-live="polite"
+        >
+          <div class="text-xs font-mono uppercase tracking-wider text-accent-blue">Pick up where you left off</div>
+          <p data-testid="study-continue-reason" class="mt-2 text-sm text-text-body">
+            Questions are due for review.
+          </p>
           <a
-            data-testid="study-primary-action"
-            href={defaultPracticeHref}
-            class="mt-2 inline-flex w-full items-center justify-center rounded-lg border border-accent-blue bg-accent-blue/10 px-4 py-3 text-sm font-semibold text-accent-blue no-underline hover:bg-accent-blue/20"
-          >Start studying</a>
-          <p data-testid="study-primary-reason" class="mt-2 text-[11px] leading-relaxed text-text-muted">
-            Starts a 10-question mixed practice session. If you are logged in and review is due, this button will point you to Review first.
-          </p>
-        </div>
+            data-testid="study-continue-action"
+            href={reviewHref}
+            class="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-lg border border-accent-blue bg-accent-blue/15 px-4 py-3 text-sm font-semibold text-accent-blue no-underline hover:bg-accent-blue/25"
+          >Review due questions →</a>
+        </section>
       </div>
     </header>
 
@@ -71,55 +75,38 @@ const builderHref = `${base}quiz-v2/`;
       </div>
     </section>
 
-    <section class="grid gap-4 md:grid-cols-2" aria-label="Study choices">
-      <a data-testid="study-card-review" href={reviewHref} class="study-card">
-        <span class="study-card-kicker">1 · spaced review</span>
-        <strong>Review weak questions</strong>
-        <span>Use the review queue for questions that are due, shaky, or recently missed.</span>
+    <section class="grid gap-4 lg:grid-cols-3" aria-label="Study choices">
+      <a data-testid="study-card-quick" href={quickHref} class="study-card study-card-primary">
+        <span class="study-card-kicker">Recommended</span>
+        <strong>Quick Quiz</strong>
+        <span>Jump into a fast practice set — pick a year or topic, answer, and get your score.</span>
+        <span class="study-card-action">Start →</span>
       </a>
 
-      <a data-testid="study-card-practice" href={defaultPracticeHref} class="study-card">
-        <span class="study-card-kicker">2 · quick practice</span>
-        <strong>Practice exam questions</strong>
-        <span>Start a mixed 10-question session from active eligible NRC questions.</span>
-      </a>
-
-      <a data-testid="study-card-map" href={mapHref} class="study-card">
-        <span class="study-card-kicker">3 · choose a topic</span>
-        <strong>Study Map</strong>
-        <span>Browse learner-friendly topic paths, inspect details, select topics, and launch focused practice.</span>
-      </a>
+      <article data-testid="study-card-advanced" class="study-card">
+        <span class="study-card-kicker">Targeted practice</span>
+        <strong>Advanced Quiz</strong>
+        <span>Build a targeted set with detailed filters, or explore topics visually before you practice.</span>
+        <div class="mt-auto grid gap-2">
+          <a data-testid="study-card-advanced-build" href={builderHref} class="study-card-button">Build a custom set →</a>
+          <a data-testid="study-card-advanced-map" href={mapHref} class="study-card-button">Open Study Map →</a>
+        </div>
+      </article>
 
       <a data-testid="study-card-progress" href={progressHref} class="study-card">
-        <span class="study-card-kicker">4 · history</span>
+        <span class="study-card-kicker">History and review</span>
         <strong>My Progress</strong>
-        <span>Review saved attempts, replay sessions, and jump back into missed questions.</span>
+        <span>See past scores, weak topics, and questions due for review.</span>
+        <span class="study-card-action">Open →</span>
       </a>
     </section>
-
-    <section class="mt-6 rounded-xl border border-border bg-bg-card p-4">
-      <details>
-        <summary class="cursor-pointer font-mono text-[11px] uppercase tracking-wider text-text-muted hover:text-text-primary">
-          Advanced / legacy tools
-        </summary>
-        <div class="mt-3 flex flex-wrap gap-2 text-sm">
-          <a href={classicHref} class="legacy-link">Classic Quiz</a>
-          <a href={builderHref} class="legacy-link">Study Builder</a>
-          <a href={reviewHref} class="legacy-link">Review Queue</a>
-          <a href={mapHref} class="legacy-link">Study Map</a>
-        </div>
-        <p class="mt-2 text-xs text-text-muted">
-          These routes stay available while Study becomes the main learner path.
-        </p>
-      </details>
-    </section>
   </main>
-</BaseLayout>
+</StudyLayout>
 
 <style>
   .study-card {
     display: flex;
-    min-height: 164px;
+    min-height: 224px;
     flex-direction: column;
     gap: 0.75rem;
     border: 1px solid var(--color-border, #1a2035);
@@ -135,10 +122,13 @@ const builderHref = `${base}quiz-v2/`;
     background: rgba(96, 165, 250, 0.06);
     transform: translateY(-1px);
   }
+  .study-card-primary {
+    border-color: rgba(96, 165, 250, 0.55);
+  }
   .study-card strong {
     color: var(--color-text-primary, #e0e4ea);
     font-family: var(--font-serif, serif);
-    font-size: 1.45rem;
+    font-size: 1.65rem;
     font-weight: 500;
     line-height: 1.1;
   }
@@ -149,14 +139,22 @@ const builderHref = `${base}quiz-v2/`;
     letter-spacing: 0.16em;
     text-transform: uppercase;
   }
-  .legacy-link {
+  .study-card-action {
+    margin-top: auto;
+    color: var(--color-accent-blue, #60a5fa);
+    font-weight: 700;
+  }
+  .study-card-button {
+    align-items: center;
     border: 1px solid var(--color-border, #1a2035);
-    border-radius: 0.5rem;
-    color: var(--color-text-muted, #8b95a5);
-    padding: 0.45rem 0.65rem;
+    border-radius: 0.65rem;
+    color: var(--color-accent-blue, #60a5fa);
+    display: inline-flex;
+    min-height: 44px;
+    padding: 0.65rem 0.75rem;
     text-decoration: none;
   }
-  .legacy-link:hover { color: var(--color-text-primary, #e0e4ea); }
+  .study-card-button:hover { background: rgba(96, 165, 250, 0.08); }
 </style>
 
 <script>
@@ -171,40 +169,39 @@ const builderHref = `${base}quiz-v2/`;
     if (el) el.textContent = text;
   }
 
-  function setPrimaryHref(href: string): void {
-    const link = document.querySelector<HTMLAnchorElement>('[data-testid="study-primary-action"]');
-    if (link) link.href = href;
+  function showContinueBanner(count: number): void {
+    const banner = document.querySelector<HTMLElement>('[data-testid="study-continue-banner"]');
+    const action = document.querySelector<HTMLAnchorElement>('[data-testid="study-continue-action"]');
+    if (!banner || !action) return;
+    banner.classList.remove('hidden');
+    action.href = `${base}quiz-v2/review/`;
+    action.textContent = `Review ${count} due question${count === 1 ? '' : 's'} →`;
+    setStudyText('study-continue-reason', `${count} question${count === 1 ? ' is' : 's are'} due for review.`);
   }
 
   async function initStudyStatus(): Promise<void> {
     if (!hasSupabaseConfig()) {
-      setStudyText('study-auth-status', 'Preview mode. Supabase is not configured for this build, so progress cannot be saved here.');
+      setStudyText('study-auth-status', 'Progress saving is unavailable here. You can still browse Study.');
       return;
     }
 
     try {
       const session = await getCurrentSession();
       if (!session?.access_token) {
-        setStudyText('study-auth-status', 'Preview mode. You can explore Study, but log in before starting if you want saved progress.');
+        setStudyText('study-auth-status', 'Browsing as a guest — log in to save quiz results and track progress.');
         return;
       }
 
-      setStudyText('study-auth-status', 'Logged in. Study sessions started here are saved automatically when you submit progress.');
+      setStudyText('study-auth-status', 'Signed in — your quiz results are saved automatically.');
 
       try {
         const queue = await getQuizReviewQueue();
-        if (queue.dueSlugs.length > 0) {
-          setPrimaryHref(`${base}quiz-v2/review/`);
-          setStudyText('study-primary-reason', `${queue.dueSlugs.length} question${queue.dueSlugs.length === 1 ? '' : 's'} due for review. Start there first.`);
-          return;
-        }
+        if (queue.dueSlugs.length > 0) showContinueBanner(queue.dueSlugs.length);
       } catch {
-        // Keep the normal practice CTA if review lookup is unavailable.
+        // Leave the normal three-choice hub visible if review lookup is unavailable.
       }
-
-      setStudyText('study-primary-reason', 'No due review detected. Start a saved 10-question mixed practice session.');
     } catch {
-      setStudyText('study-auth-status', 'Preview mode. Log in before starting if you want saved progress.');
+      setStudyText('study-auth-status', 'Browsing as a guest — log in to save quiz results and track progress.');
     }
   }
 

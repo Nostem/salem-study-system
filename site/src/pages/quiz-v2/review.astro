@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import StudyLayout from '../../layouts/StudyLayout.astro';
 import QuestionBlockRenderer from '../../components/QuestionBlockRenderer.astro';
 import {
   getStructuredQuestions,
@@ -28,15 +28,15 @@ const reviewMeta = questions.map((q) => ({
 }));
 ---
 
-<BaseLayout title="Review Queue">
+<StudyLayout title="Review" active="progress">
   <main class="max-w-[900px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
     <header class="border-b border-border pb-5 mb-5">
-      <a href={`${base}quiz-v2/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study Builder</a>
+      <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
       <div class="mt-2">
         <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Retention · account-backed review</div>
-        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Review Queue</h1>
+        <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Review</h1>
         <p class="text-sm text-text-muted max-w-2xl mt-1">
-          Review missed, weak, due, or newly introduced NRC questions as whole items. Logged-in learners use the persisted review queue when available; scoped history links still load exact missed-question sets.
+          Review missed, weak, due, or newly introduced NRC questions as whole items. Logged-in learners use the saved review queue when available; scoped history links still load exact missed-question sets.
         </p>
       </div>
     </header>
@@ -84,11 +84,10 @@ const reviewMeta = questions.map((q) => ({
         </div>
         <div class="rounded border border-border bg-bg/60 px-2 py-1 text-text-muted" data-testid="qv2r-mode">Loading queue mode…</div>
       </div>
-      <div class="mt-3 grid gap-2 sm:grid-cols-4" aria-label="Review queue shortcuts">
+      <div class="mt-3 grid gap-2 sm:grid-cols-3" aria-label="Review shortcuts">
         <a href={`${base}quiz-v2/review/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">Due review</a>
-        <a href={`${base}history/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">Review missed from history</a>
-        <a href={`${base}history/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">Weak topics</a>
-        <a href={`${base}quiz-v2/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">New questions</a>
+        <a href={`${base}history/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">Open My Progress</a>
+        <a href={`${base}quiz-v2/`} class="rounded border border-border bg-bg/60 px-3 py-2 text-xs text-text-primary no-underline hover:border-accent-blue">Build new practice</a>
       </div>
       <section class="mt-4 border-t border-border pt-4" aria-labelledby="qv2r-progress-title">
         <h3 id="qv2r-progress-title" class="font-serif text-lg text-text-primary">Progress analytics</h3>
@@ -225,7 +224,7 @@ const reviewMeta = questions.map((q) => ({
       ))}
     </article>
   </main>
-</BaseLayout>
+</StudyLayout>
 
 <style>
   .qv2r-section { margin-top: 1.25rem; }

@@ -3,7 +3,7 @@ import { expect, test } from '@playwright/test';
 test('quiz-v2 page lists structured questions and renders an image stem with source refs', async ({ page }) => {
   await page.goto('quiz-v2/?slug=q23-eop-flowchart-symbols-concurrent');
 
-  await expect(page.getByRole('heading', { name: /Study Builder/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Advanced Quiz/i })).toBeVisible();
   await expect(page.getByTestId('qv2-bank-count')).toContainText('599');
 
   // List rendered (sidebar contains many items).
