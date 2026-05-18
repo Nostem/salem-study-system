@@ -16,6 +16,7 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 const questions = getStructuredQuestions();
 const examYears = getStructuredExamYears();
 const totalQuestions = structuredQuizBank.questions.length;
+const DEFAULT_COUNT = 10;
 
 const sessionMeta = questions.map((q) => ({
   slug: q.slug,
@@ -27,6 +28,29 @@ const sessionMeta = questions.map((q) => ({
   title: q.title,
   topics: q.topics,
 }));
+
+const topicGroups = new Map<string, Set<string>>();
+function isLearnerFacingTopic(slug: string, title: string): boolean {
+  const lower = slug.toLowerCase();
+  if (lower.startsWith('ab-') || lower.startsWith('op-') || lower.startsWith('s2-op-')) return false;
+  if (/^AB[.-]/i.test(title) || /^S2\.OP/i.test(title)) return false;
+  return true;
+}
+for (const q of questions) {
+  for (const topic of q.topics) {
+    if (!topic || typeof topic !== 'object' || !('slug' in topic)) continue;
+    const slug = String((topic as { slug: unknown }).slug ?? '');
+    if (!slug) continue;
+    const title = 'title' in topic ? String((topic as { title?: unknown }).title ?? slug) : slug;
+    if (!isLearnerFacingTopic(slug, title)) continue;
+    const group = topicGroups.get(title) ?? new Set<string>();
+    group.add(slug);
+    topicGroups.set(title, group);
+  }
+}
+const topicOptions = [...topicGroups.entries()]
+  .map(([title, slugs]) => ({ value: [...slugs].sort().join(','), title, slugCount: slugs.size }))
+  .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
 <StudyLayout title="Advanced Quiz" active="advanced">
@@ -38,7 +62,7 @@ const sessionMeta = questions.map((q) => ({
           <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Advanced practice · structured bank</div>
           <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Advanced Quiz</h1>
           <p class="text-sm text-text-muted max-w-2xl mt-1">
-            Build targeted, source-linked practice from the structured question bank. Use Quick Quiz for fast reps, or launch focused sessions from topics, source refs, missed questions, and Study Map selections.
+            Build targeted, source-linked practice from the structured question bank. Start a random set, filter by topic/year, or choose exact questions without exposing answers first.
           </p>
         </div>
         <div class="flex flex-col gap-3 min-w-[180px]">
@@ -71,198 +95,249 @@ const sessionMeta = questions.map((q) => ({
       </div>
     </header>
 
-    <section
-      id="qv2-session-panel"
-      data-testid="qv2-session-panel"
-      class="hidden mb-5 bg-bg-card border border-border rounded-lg p-4"
-    >
-      <header class="flex flex-wrap items-baseline justify-between gap-2 mb-3">
-        <div>
-          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue">Session preview · deterministic</div>
-          <h2 class="font-serif text-xl text-text-primary leading-tight mt-1">Generated quiz order</h2>
-        </div>
-        <a
-          id="qv2-session-close"
-          href={`${base}quiz-v2/`}
-          class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue"
-        >&times; close preview</a>
-      </header>
-      <dl class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 text-[12px] font-mono mb-3">
-        <dt class="text-text-muted">Session ID</dt>
-        <dd class="text-text-primary col-span-3" data-testid="qv2-session-id">—</dd>
-        <dt class="text-text-muted">Seed</dt>
-        <dd class="text-text-primary" data-testid="qv2-session-seed">—</dd>
-        <dt class="text-text-muted">Selected</dt>
-        <dd class="text-text-primary"><span data-testid="qv2-session-count">0</span> / <span data-testid="qv2-session-total">0</span></dd>
-      </dl>
-      <ol id="qv2-session-list" data-testid="qv2-session-list" class="text-sm text-text-body list-decimal list-inside space-y-1 max-h-[40vh] overflow-y-auto"></ol>
-      <div class="mt-4 flex flex-wrap items-center gap-3">
-        <a
-          id="qv2-session-play-link"
-          data-testid="qv2-session-play-link"
-          href={`${base}quiz-v2/play/`}
-          class="inline-flex items-center justify-center rounded border border-accent-blue px-3 py-2 font-mono text-[11px] uppercase tracking-wider text-accent-blue no-underline hover:bg-bg"
-        >Open in play mode</a>
-        <p class="text-[11px] font-mono text-text-muted">
-          Account-synced route. Create a backend session in play mode to save results into My Progress.
-        </p>
-      </div>
-      <p class="text-[11px] font-mono text-text-muted mt-3">
-        Ready to play? Use <code>Open in play mode</code> after building the session preview. Filters: <code data-testid="qv2-session-filters">{}</code>.
-      </p>
-    </section>
-
     <script type="application/json" id="qv2-session-meta" set:html={JSON.stringify(sessionMeta)} />
 
-    <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
-      <aside class="bg-bg-card border border-border rounded-lg p-4 h-fit lg:sticky lg:top-4">
-        <div class="flex flex-col gap-3">
-          <label class="flex flex-col gap-1">
-            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Search</span>
-            <input
-              id="qv2-search"
-              data-testid="qv2-search"
-              type="search"
-              placeholder="Title or slug…"
-              class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
-            />
-          </label>
-          <label class="flex flex-col gap-1">
-            <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Year</span>
-            <select id="qv2-year" data-testid="qv2-year" class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary">
-              <option value="all">All years</option>
-              {examYears.map((y) => <option value={y}>{y}</option>)}
-            </select>
-          </label>
+    <section class="mb-5 bg-bg-card border border-border rounded-lg p-4 sm:p-6" aria-labelledby="qv2-builder-title">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Start practice</div>
+          <h2 id="qv2-builder-title" class="font-serif text-2xl sm:text-3xl text-text-primary leading-tight">Start practice — 10 random questions</h2>
+          <p class="text-sm text-text-muted mt-1 max-w-2xl">
+            Pick a topic, year, and count. The start link updates live using the same deterministic session builder as practice mode.
+          </p>
         </div>
-        <div class="mt-3 text-[11px] font-mono text-text-muted">
-          <span data-testid="qv2-visible-count">{questions.length}</span> shown
-        </div>
-        <ul
-          id="qv2-list"
-          data-testid="qv2-list"
-          class="mt-3 max-h-[60vh] lg:max-h-[70vh] overflow-y-auto divide-y divide-border border border-border rounded"
-        >
-          {questions.map((q) => (
-            <li
-              class="qv2-item"
-              data-slug={q.slug}
-              data-year={q.examYear}
-              data-search={`${q.title} ${q.slug}`.toLowerCase()}
-            >
-              <button
-                type="button"
-                data-qv2-select={q.slug}
-                class="w-full text-left px-3 py-2 hover:bg-bg focus:bg-bg focus:outline-none"
-              >
-                <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">
-                  {questionDisplayLabel(q)} · {q.status}
-                </div>
-                <div class="text-sm text-text-primary leading-snug">{q.title}</div>
-              </button>
-            </li>
-          ))}
-        </ul>
-      </aside>
+        <a
+          id="qv2-start-link"
+          data-testid="qv2-start-link"
+          href={`${base}quiz-v2/play/?count=${DEFAULT_COUNT}`}
+          class="inline-flex items-center justify-center rounded border border-accent-blue px-4 py-3 font-mono text-[12px] uppercase tracking-wider text-accent-blue no-underline hover:bg-bg"
+        >Start practice — 10 of 0</a>
+      </div>
 
-      <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
-        <div id="qv2-empty" data-testid="qv2-empty" class="text-sm text-text-muted">
-          Select a question on the left to preview its structured blocks.
-        </div>
-
-        {questions.map((q) => (
-          <section
-            class="qv2-detail hidden"
-            data-qv2-detail={q.slug}
-            data-testid={`qv2-detail-${q.slug}`}
+      <form id="qv2-builder" data-testid="qv2-builder" class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-2">
+          Topic
+          <select
+            id="qv2-builder-topic"
+            data-testid="qv2-builder-topic"
+            name="topics"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
           >
-            <header class="border-b border-border pb-3 mb-4">
-              <div class="font-mono text-[10px] uppercase tracking-wider text-accent-blue">
-                {questionDisplayLabel(q)} · {q.examType} · {q.status}
-                {q.requiresReference && <span> · ref required</span>}
-              </div>
-              <h2 class="font-serif text-2xl text-text-primary leading-tight mt-1">{q.title}</h2>
-              <div class="text-[11px] font-mono text-text-muted mt-1">
-                slug: <code>{q.slug}</code>
-              </div>
-            </header>
+            <option value="">All topics</option>
+            {topicOptions.map((topic) => <option value={topic.value}>{topic.slugCount > 1 ? `${topic.title} (${topic.slugCount} slugs)` : topic.title}</option>)}
+          </select>
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted">
+          Year
+          <select
+            id="qv2-builder-year"
+            data-testid="qv2-builder-year"
+            name="years"
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          >
+            <option value="">All years</option>
+            {examYears.map((y) => <option value={String(y)}>{y}</option>)}
+          </select>
+        </label>
+        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted">
+          Count
+          <input
+            id="qv2-builder-count"
+            data-testid="qv2-builder-count"
+            name="count"
+            type="number"
+            min="1"
+            max="100"
+            value={String(DEFAULT_COUNT)}
+            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
+          />
+        </label>
+        <div class="sm:col-span-2 lg:col-span-4 flex flex-wrap items-center gap-x-4 gap-y-2 pt-1 text-[12px] font-mono text-text-muted">
+          <span><span data-testid="qv2-match-count">0</span> match filters</span>
+          <span><span data-testid="qv2-selected-count">0</span> selected specific questions</span>
+          <span data-testid="qv2-zero-match" class="hidden text-red-300">No questions match. Broaden filters or clear selected questions.</span>
+          <code data-testid="qv2-start-url" class="break-all rounded border border-border bg-bg px-2 py-1 text-text-primary"></code>
+        </div>
+      </form>
+    </section>
 
-            <section class="qv2-section">
-              <h3 class="qv2-section-title">Stem</h3>
-              <div class="qv2-blocks" data-testid="qv2-stem-blocks">
-                {q.stemBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
-              </div>
-            </section>
+    <details id="qv2-browser" data-testid="qv2-browser" class="bg-bg-card border border-border rounded-lg p-4">
+      <summary class="cursor-pointer list-none">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue">Choose specific questions</div>
+            <h2 class="font-serif text-2xl text-text-primary leading-tight mt-1">Question browser</h2>
+          </div>
+          <span class="font-mono text-[11px] uppercase tracking-wider text-text-muted underline">Open picker</span>
+        </div>
+      </summary>
 
-            <section class="qv2-section">
-              <h3 class="qv2-section-title">Choices</h3>
-              <ol class="space-y-2">
-                {q.choices.map((c) => (
-                  <li class={`border rounded p-3 ${c.isCorrect ? 'border-accent-blue bg-bg' : 'border-border'}`}>
-                    <div class="font-mono text-[11px] uppercase tracking-wider text-text-muted mb-1">
-                      {c.label}{c.isCorrect ? ' · official answer' : ''}
-                    </div>
-                    <div class="qv2-blocks">
-                      {c.blocks.map((b) => <QuestionBlockRenderer block={b} />)}
-                    </div>
-                  </li>
-                ))}
-              </ol>
-            </section>
+      <section class="mt-4 grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
+        <aside class="border border-border rounded-lg p-4 h-fit lg:sticky lg:top-4">
+          <div class="flex flex-col gap-3">
+            <label class="flex flex-col gap-1">
+              <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Search</span>
+              <input
+                id="qv2-search"
+                data-testid="qv2-search"
+                type="search"
+                placeholder="Title or slug…"
+                class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary"
+              />
+            </label>
+            <label class="flex flex-col gap-1">
+              <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Year</span>
+              <select id="qv2-year" data-testid="qv2-year" class="bg-bg border border-border rounded px-2 py-1 text-sm text-text-primary">
+                <option value="all">All years</option>
+                {examYears.map((y) => <option value={y}>{y}</option>)}
+              </select>
+            </label>
+          </div>
+          <div class="mt-3 text-[11px] font-mono text-text-muted">
+            <span data-testid="qv2-visible-count">{questions.length}</span> shown
+          </div>
+          <ul
+            id="qv2-list"
+            data-testid="qv2-list"
+            class="mt-3 max-h-[60vh] lg:max-h-[70vh] overflow-y-auto divide-y divide-border border border-border rounded"
+          >
+            {questions.map((q) => (
+              <li
+                class="qv2-item"
+                data-slug={q.slug}
+                data-year={q.examYear}
+                data-search={`${q.title} ${q.slug}`.toLowerCase()}
+              >
+                <div class="px-3 py-2 hover:bg-bg focus-within:bg-bg">
+                  <label class="flex items-start gap-2">
+                    <input
+                      type="checkbox"
+                      class="mt-1"
+                      data-qv2-pick={q.slug}
+                      data-testid={`qv2-pick-${q.slug}`}
+                    />
+                    <span class="min-w-0 flex-1">
+                      <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted block">
+                        {questionDisplayLabel(q)} · {q.status}
+                      </span>
+                      <span class="text-sm text-text-primary leading-snug block">{q.title}</span>
+                    </span>
+                  </label>
+                  <button
+                    type="button"
+                    data-qv2-select={q.slug}
+                    class="mt-1 font-mono text-[10px] uppercase tracking-wider text-text-muted underline hover:text-accent-blue"
+                  >Preview</button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </aside>
 
-            {q.explanationBlocks && q.explanationBlocks.length > 0 && (
+        <article class="border border-border rounded-lg p-4 sm:p-6 min-h-[400px]">
+          <div id="qv2-empty" data-testid="qv2-empty" class="text-sm text-text-muted">
+            Select Preview for a question to inspect its stem, choices, source references, and hidden answer.
+          </div>
+
+          {questions.map((q) => (
+            <section
+              class="qv2-detail hidden"
+              data-qv2-detail={q.slug}
+              data-testid={`qv2-detail-${q.slug}`}
+            >
+              <header class="border-b border-border pb-3 mb-4">
+                <div class="font-mono text-[10px] uppercase tracking-wider text-accent-blue">
+                  {questionDisplayLabel(q)} · {q.examType} · {q.status}
+                  {q.requiresReference && <span> · ref required</span>}
+                </div>
+                <h2 class="font-serif text-2xl text-text-primary leading-tight mt-1">{q.title}</h2>
+                <details class="text-[11px] font-mono text-text-muted mt-1" data-testid="qv2-question-details">
+                  <summary class="cursor-pointer underline hover:text-accent-blue">Question details</summary>
+                  <div class="mt-2">
+                    slug: <code>{q.slug}</code>
+                    {q.legacy?.kaCode && (
+                      <dl class="grid grid-cols-2 gap-x-4 gap-y-1 text-[12px] font-mono mt-2">
+                        {q.legacy.kaCode && (<><dt class="text-text-muted">K/A</dt><dd class="text-text-primary">{q.legacy.kaCode}</dd></>)}
+                        {q.legacy.kaImportance != null && (<><dt class="text-text-muted">K/A importance</dt><dd class="text-text-primary">{q.legacy.kaImportance}</dd></>)}
+                        {q.legacy.cognitiveLevel && (<><dt class="text-text-muted">Cognitive</dt><dd class="text-text-primary">{q.legacy.cognitiveLevel}</dd></>)}
+                        {q.legacy.tierGroup && (<><dt class="text-text-muted">Tier/Group</dt><dd class="text-text-primary">{q.legacy.tierGroup}</dd></>)}
+                        {q.legacy.questionSource && (<><dt class="text-text-muted">Source</dt><dd class="text-text-primary">{q.legacy.questionSource}</dd></>)}
+                        {q.legacy.wikiPath && (<><dt class="text-text-muted">Wiki path</dt><dd class="text-text-primary">{q.legacy.wikiPath}</dd></>)}
+                      </dl>
+                    )}
+                  </div>
+                </details>
+              </header>
+
               <section class="qv2-section">
-                <h3 class="qv2-section-title">Explanation</h3>
-                <div class="qv2-blocks">
-                  {q.explanationBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                <h3 class="qv2-section-title">Stem</h3>
+                <div class="qv2-blocks" data-testid="qv2-stem-blocks">
+                  {q.stemBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
                 </div>
               </section>
-            )}
 
-            <section class="qv2-section" data-testid="qv2-source-refs">
-              <h3 class="qv2-section-title">Source references</h3>
-              {q.sourceRefs && q.sourceRefs.length > 0 ? (
-                <ul class="text-sm text-text-body space-y-1">
-                  {q.sourceRefs.map((ref) => {
-                    const label = sourceRefLabel(ref);
-                    const href = sourceRefHref(ref, base);
-                    return (
-                      <li class="font-mono text-[12px]">
-                        <span class="inline-block min-w-[90px] text-text-muted">[{ref.kind}]</span>
-                        {href ? (
-                          <a href={href} class="text-text-primary underline hover:text-accent-blue" data-testid="qv2-source-ref-link">{label}</a>
-                        ) : (
-                          <span class="text-text-primary">{label}</span>
-                        )}
-                        {ref.path && ref.path !== label && (
-                          <span class="text-text-muted"> — {ref.path}</span>
-                        )}
-                      </li>
-                    );
-                  })}
-                </ul>
-              ) : (
-                <p class="text-sm text-text-muted">No source references recorded.</p>
-              )}
-            </section>
-
-            {q.legacy?.kaCode && (
               <section class="qv2-section">
-                <h3 class="qv2-section-title">Legacy metadata</h3>
-                <dl class="grid grid-cols-2 gap-x-4 gap-y-1 text-[12px] font-mono">
-                  {q.legacy.kaCode && (<><dt class="text-text-muted">K/A</dt><dd class="text-text-primary">{q.legacy.kaCode}</dd></>)}
-                  {q.legacy.kaImportance != null && (<><dt class="text-text-muted">K/A importance</dt><dd class="text-text-primary">{q.legacy.kaImportance}</dd></>)}
-                  {q.legacy.cognitiveLevel && (<><dt class="text-text-muted">Cognitive</dt><dd class="text-text-primary">{q.legacy.cognitiveLevel}</dd></>)}
-                  {q.legacy.tierGroup && (<><dt class="text-text-muted">Tier/Group</dt><dd class="text-text-primary">{q.legacy.tierGroup}</dd></>)}
-                  {q.legacy.questionSource && (<><dt class="text-text-muted">Source</dt><dd class="text-text-primary">{q.legacy.questionSource}</dd></>)}
-                  {q.legacy.wikiPath && (<><dt class="text-text-muted">Wiki path</dt><dd class="text-text-primary">{q.legacy.wikiPath}</dd></>)}
-                </dl>
+                <h3 class="qv2-section-title">Choices</h3>
+                <ol class="space-y-2">
+                  {q.choices.map((c) => (
+                    <li class="border border-border rounded p-3">
+                      <div class="font-mono text-[11px] uppercase tracking-wider text-text-muted mb-1">
+                        {c.label}
+                      </div>
+                      <div class="qv2-blocks">
+                        {c.blocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                      </div>
+                    </li>
+                  ))}
+                </ol>
               </section>
-            )}
-          </section>
-        ))}
-      </article>
-    </section>
+
+              <details class="qv2-section border border-border rounded p-3" data-testid="qv2-show-answer">
+                <summary class="cursor-pointer font-mono text-[11px] uppercase tracking-wider text-accent-blue">Show answer</summary>
+                <div class="mt-3 qv2-answer-body" data-testid="qv2-answer-body">
+                  <p class="font-mono text-[12px] text-text-primary">Official answer: {q.officialAnswerLabel}</p>
+                  {q.explanationBlocks && q.explanationBlocks.length > 0 && (
+                    <section class="qv2-section">
+                      <h3 class="qv2-section-title">Explanation</h3>
+                      <div class="qv2-blocks">
+                        {q.explanationBlocks.map((b) => <QuestionBlockRenderer block={b} />)}
+                      </div>
+                    </section>
+                  )}
+                </div>
+              </details>
+
+              <section class="qv2-section" data-testid="qv2-source-refs">
+                <h3 class="qv2-section-title">Source references</h3>
+                {q.sourceRefs && q.sourceRefs.length > 0 ? (
+                  <ul class="text-sm text-text-body space-y-1">
+                    {q.sourceRefs.map((ref) => {
+                      const label = sourceRefLabel(ref);
+                      const href = sourceRefHref(ref, base);
+                      return (
+                        <li class="font-mono text-[12px]">
+                          <span class="inline-block min-w-[90px] text-text-muted">[{ref.kind}]</span>
+                          {href ? (
+                            <a href={href} class="text-text-primary underline hover:text-accent-blue" data-testid="qv2-source-ref-link">{label}</a>
+                          ) : (
+                            <span class="text-text-primary">{label}</span>
+                          )}
+                          {ref.path && ref.path !== label && (
+                            <span class="text-text-muted"> — {ref.path}</span>
+                          )}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                ) : (
+                  <p class="text-sm text-text-muted">No source references recorded.</p>
+                )}
+              </section>
+            </section>
+          ))}
+        </article>
+      </section>
+    </details>
   </main>
 </StudyLayout>
 
@@ -315,13 +390,12 @@ const sessionMeta = questions.map((q) => ({
     font-style: italic;
   }
   button[data-qv2-select].is-active {
-    background: var(--color-bg, transparent);
-    border-left: 3px solid var(--color-accent-blue, #4aa);
+    color: var(--color-accent-blue, #4aa);
   }
 </style>
 
 <script>
-  import { buildQuizSession, type QuizSessionFilters } from '../utils/quiz-v2-session';
+  import { buildQuizSession, filterQuestions, type QuizSessionFilters } from '../utils/quiz-v2-session';
   import type { StructuredQuestion } from '../types/question-blocks';
 
   type SelectButton = HTMLButtonElement;
@@ -336,6 +410,9 @@ const sessionMeta = questions.map((q) => ({
     title: string;
     topics: unknown[];
   }
+
+  const DEFAULT_COUNT = 10;
+  const selectedSlugs = new Set<string>();
 
   function readSessionMeta(): SessionMetaRow[] {
     const node = document.getElementById('qv2-session-meta');
@@ -371,87 +448,77 @@ const sessionMeta = questions.map((q) => ({
     };
   }
 
-  function parseFiltersFromUrl(params: URLSearchParams): { filters: QuizSessionFilters; seed?: string } {
-    const filters: QuizSessionFilters = {};
-    const yearsRaw = params.get('years');
-    if (yearsRaw) {
-      const years = yearsRaw
-        .split(',')
-        .map((s) => Number(s.trim()))
-        .filter((n) => Number.isFinite(n));
-      if (years.length) filters.years = years;
-    }
-    const tracksRaw = params.get('tracks');
-    if (tracksRaw) filters.tracks = tracksRaw.split(',').map((s) => s.trim()).filter(Boolean);
-    const topicsRaw = params.get('topics');
-    if (topicsRaw) filters.topicSlugs = topicsRaw.split(',').map((s) => s.trim()).filter(Boolean);
-    const slugsRaw = params.get('slugs');
-    if (slugsRaw) filters.questionSlugs = slugsRaw.split(',').map((s) => s.trim()).filter(Boolean);
-    const refMode = params.get('ref');
-    if (refMode === 'include' || refMode === 'exclude' || refMode === 'only') {
-      filters.referenceMode = refMode;
-    }
-    const countRaw = params.get('count');
-    if (countRaw) {
-      const n = Number(countRaw);
-      if (Number.isFinite(n) && n > 0) filters.count = n;
-    }
-    const seed = params.get('seed') ?? undefined;
-    return { filters, seed };
+  function setText(testid: string, text: string): void {
+    const el = document.querySelector(`[data-testid="${testid}"]`);
+    if (el) el.textContent = text;
   }
 
-  function renderSessionPanel(params: URLSearchParams): void {
-    const panel = document.getElementById('qv2-session-panel');
-    if (!panel) return;
-    if (params.get('session') !== '1') {
-      panel.classList.add('hidden');
-      return;
+  function parseBuilderFilters(): QuizSessionFilters {
+    const topic = (document.getElementById('qv2-builder-topic') as HTMLSelectElement | null)?.value.trim() ?? '';
+    const year = (document.getElementById('qv2-builder-year') as HTMLSelectElement | null)?.value.trim() ?? '';
+    const countRaw = (document.getElementById('qv2-builder-count') as HTMLInputElement | null)?.value.trim() ?? '';
+    const filters: QuizSessionFilters = {};
+    if (topic) filters.topicSlugs = topic.split(',').map((s) => s.trim()).filter(Boolean);
+    if (year) {
+      const n = Number(year);
+      if (Number.isFinite(n)) filters.years = [n];
     }
+    if (selectedSlugs.size > 0) {
+      filters.questionSlugs = [...selectedSlugs].sort();
+    }
+    const count = Number(countRaw);
+    if (Number.isFinite(count) && count > 0) filters.count = Math.floor(count);
+    return filters;
+  }
+
+  function populateBuilderFromUrl(params: URLSearchParams): void {
+    const setValue = (id: string, value: string | null): void => {
+      const el = document.getElementById(id) as HTMLInputElement | HTMLSelectElement | null;
+      if (el && value !== null) el.value = value;
+    };
+    setValue('qv2-builder-topic', params.get('topics'));
+    setValue('qv2-builder-year', params.get('years'));
+    setValue('qv2-builder-count', params.get('count') ?? String(DEFAULT_COUNT));
+    const slugsRaw = params.get('slugs');
+    if (slugsRaw) {
+      for (const slug of slugsRaw.split(',').map((s) => s.trim()).filter(Boolean)) selectedSlugs.add(slug);
+    }
+    document.querySelectorAll<HTMLInputElement>('[data-qv2-pick]').forEach((input) => {
+      const slug = input.getAttribute('data-qv2-pick') ?? '';
+      input.checked = selectedSlugs.has(slug);
+    });
+  }
+
+  function updateBuilder(): void {
     const meta = readSessionMeta();
     const questions = meta.map(metaToQuestion);
-    const { filters, seed } = parseFiltersFromUrl(params);
-    const session = buildQuizSession(questions, filters, seed ? { seed } : {});
+    const filters = parseBuilderFilters();
+    const matches = filterQuestions(questions, filters);
+    const session = buildQuizSession(questions, filters);
+    const requestedCount = filters.count ?? matches.length;
+    const startCount = session.questionSlugs.length;
+    const startLink = document.getElementById('qv2-start-link') as HTMLAnchorElement | null;
+    const url = new URL(startLink?.href ?? '/quiz-v2/play/', window.location.href);
+    url.search = '';
+    if (filters.count && filters.count !== DEFAULT_COUNT) url.searchParams.set('count', String(filters.count));
+    if (!filters.count) url.searchParams.set('count', String(DEFAULT_COUNT));
+    if (filters.years && filters.years.length > 0) url.searchParams.set('years', filters.years.join(','));
+    if (filters.topicSlugs && filters.topicSlugs.length > 0) url.searchParams.set('topics', filters.topicSlugs.join(','));
+    if (filters.questionSlugs && filters.questionSlugs.length > 0) url.searchParams.set('slugs', filters.questionSlugs.join(','));
+    if (!url.searchParams.has('count')) url.searchParams.set('count', String(DEFAULT_COUNT));
 
-    const setText = (testid: string, text: string): void => {
-      const el = panel.querySelector(`[data-testid="${testid}"]`);
-      if (el) el.textContent = text;
-    };
-    setText('qv2-session-id', session.sessionId);
-    setText('qv2-session-seed', session.seed);
-    setText('qv2-session-count', String(session.questionSlugs.length));
-    setText('qv2-session-total', String(session.totalEligible));
-    setText('qv2-session-filters', JSON.stringify(session.filters));
-
-    const playLink = panel.querySelector<HTMLAnchorElement>('#qv2-session-play-link');
-    if (playLink) {
-      const playUrl = new URL(playLink.href);
-      for (const key of ['seed', 'count', 'years', 'tracks', 'topics', 'slugs', 'ref']) {
-        const value = params.get(key);
-        if (value) playUrl.searchParams.set(key, value);
-      }
-      playLink.href = playUrl.toString();
+    const href = url.pathname + url.search;
+    if (startLink) {
+      startLink.href = href;
+      startLink.textContent = `Start practice — ${startCount} of ${matches.length}`;
+      startLink.classList.toggle('pointer-events-none', startCount === 0);
+      startLink.setAttribute('aria-disabled', startCount === 0 ? 'true' : 'false');
     }
-
-    const list = panel.querySelector<HTMLOListElement>('#qv2-session-list');
-    if (list) {
-      const titleBySlug = new Map(meta.map((m) => [m.slug, m.title] as const));
-      list.innerHTML = '';
-      for (const slug of session.questionSlugs) {
-        const li = document.createElement('li');
-        li.className = 'qv2-session-item';
-        li.setAttribute('data-slug', slug);
-        const code = document.createElement('code');
-        code.className = 'font-mono text-[12px] text-text-muted mr-2';
-        code.textContent = slug;
-        const title = document.createElement('span');
-        title.className = 'text-text-primary';
-        title.textContent = titleBySlug.get(slug) ?? '';
-        li.appendChild(code);
-        li.appendChild(title);
-        list.appendChild(li);
-      }
-    }
-    panel.classList.remove('hidden');
+    setText('qv2-match-count', String(matches.length));
+    setText('qv2-selected-count', String(selectedSlugs.size));
+    setText('qv2-start-url', href);
+    const zero = document.querySelector('[data-testid="qv2-zero-match"]');
+    if (zero) zero.classList.toggle('hidden', matches.length !== 0 || requestedCount === 0);
   }
 
   function showQuestion(slug: string | null): void {
@@ -467,6 +534,10 @@ const sessionMeta = questions.map((q) => ({
     document.querySelectorAll<SelectButton>('[data-qv2-select]').forEach((btn) => {
       btn.classList.toggle('is-active', btn.getAttribute('data-qv2-select') === slug);
     });
+    if (matched) {
+      const browser = document.getElementById('qv2-browser') as HTMLDetailsElement | null;
+      if (browser) browser.open = true;
+    }
   }
 
   function applyFilters(): void {
@@ -499,13 +570,27 @@ const sessionMeta = questions.map((q) => ({
       });
     });
 
+    document.querySelectorAll<HTMLInputElement>('[data-qv2-pick]').forEach((input) => {
+      input.addEventListener('change', () => {
+        const slug = input.getAttribute('data-qv2-pick');
+        if (!slug) return;
+        if (input.checked) selectedSlugs.add(slug);
+        else selectedSlugs.delete(slug);
+        updateBuilder();
+      });
+    });
+
     document.getElementById('qv2-search')?.addEventListener('input', applyFilters);
     document.getElementById('qv2-year')?.addEventListener('change', applyFilters);
+    document.getElementById('qv2-builder-topic')?.addEventListener('change', updateBuilder);
+    document.getElementById('qv2-builder-year')?.addEventListener('change', updateBuilder);
+    document.getElementById('qv2-builder-count')?.addEventListener('input', updateBuilder);
 
     const params = new URLSearchParams(window.location.search);
+    populateBuilderFromUrl(params);
+    updateBuilder();
     const urlSlug = params.get('slug');
     if (urlSlug) showQuestion(urlSlug);
-    renderSessionPanel(params);
   }
 
   if (document.readyState === 'loading') {

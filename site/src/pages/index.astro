@@ -213,10 +213,10 @@ const scenarioSlugs: Record<string, string[]> = {
 
 <BaseLayout title="Salem Study Wiki">
   <SearchModal />
-  <div class="max-w-[1100px] mx-auto px-8 py-10">
+  <div class="max-w-[1100px] mx-auto px-8 py-10" data-pagefind-body>
 
     <!-- HEADER -->
-    <div class="flex flex-col gap-4 mb-8 pb-6 border-b border-border sm:flex-row sm:items-end sm:justify-between">
+    <div class="flex flex-col gap-4 mb-8 pb-6 border-b border-border sm:flex-row sm:items-end sm:justify-between" data-pagefind-ignore>
       <div class="shrink-0">
         <h1 class="font-mono text-[13px] font-medium tracking-[0.18em] text-text-primary m-0 whitespace-nowrap">SALEM STUDY WIKI</h1>
         <p class="text-text-muted text-sm mt-1 m-0">{totalArticles} articles · {examYears.length} exams · {counts['systems'] || 0} systems</p>

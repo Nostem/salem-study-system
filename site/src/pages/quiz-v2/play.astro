@@ -24,30 +24,6 @@ const sessionMeta = questions.map((q) => ({
   topics: q.topics,
 }));
 
-const yearOptions = [...new Set(questions.map((q) => q.examYear))].sort((a, b) => b - a);
-const trackOptions = [...new Set(questions.map((q) => q.track).filter(Boolean))].sort();
-const topicGroups = new Map<string, Set<string>>();
-function isLearnerFacingTopic(slug: string, title: string): boolean {
-  const lower = slug.toLowerCase();
-  if (lower.startsWith('ab-') || lower.startsWith('op-') || lower.startsWith('s2-op-')) return false;
-  if (/^AB[.-]/i.test(title) || /^S2\.OP/i.test(title)) return false;
-  return true;
-}
-for (const q of questions) {
-  for (const topic of q.topics) {
-    if (!topic || typeof topic !== 'object' || !('slug' in topic)) continue;
-    const slug = String((topic as { slug: unknown }).slug ?? '');
-    if (!slug) continue;
-    const title = 'title' in topic ? String((topic as { title?: unknown }).title ?? slug) : slug;
-    if (!isLearnerFacingTopic(slug, title)) continue;
-    const group = topicGroups.get(title) ?? new Set<string>();
-    group.add(slug);
-    topicGroups.set(title, group);
-  }
-}
-const topicOptions = [...topicGroups.entries()]
-  .map(([title, slugs]) => ({ value: [...slugs].sort().join(','), title, slugCount: slugs.size }))
-  .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
 <StudyLayout title="Practice" active="advanced">
@@ -63,123 +39,27 @@ const topicOptions = [...topicGroups.entries()]
       </div>
     </header>
 
-    <section class="order-3 mt-5 bg-bg-card border border-border rounded-lg p-4" aria-labelledby="qv2p-builder-title">
-      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4">
-        <div>
-          <h2 id="qv2p-builder-title" class="font-serif text-xl text-text-primary">Advanced study options</h2>
-          <p class="text-xs text-text-muted mt-1">
-            Optional: change the question count, year, track, reference mode, or topic before starting.
-          </p>
-        </div>
-        <a
-          href={`${base}quiz-v2/?session=1`}
-          class="text-[11px] font-mono uppercase tracking-wider text-text-muted underline hover:text-accent-blue"
-        >Preview order</a>
-      </div>
-      <form id="qv2p-builder" data-testid="qv2p-builder" class="grid gap-3 sm:grid-cols-2 lg:grid-cols-6">
-        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
-          Count
-          <input
-            data-testid="qv2p-builder-count"
-            name="count"
-            type="number"
-            min="1"
-            max="100"
-            value="10"
-            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
-          />
-        </label>
-        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
-          Seed
-          <input
-            data-testid="qv2p-builder-seed"
-            name="seed"
-            type="text"
-            placeholder="optional"
-            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
-          />
-        </label>
-        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
-          Year
-          <select
-            data-testid="qv2p-builder-years"
-            name="years"
-            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
-          >
-            <option value="">All years</option>
-            {yearOptions.map((year) => <option value={String(year)}>{year}</option>)}
-          </select>
-        </label>
-        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
-          Track
-          <select
-            data-testid="qv2p-builder-tracks"
-            name="tracks"
-            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
-          >
-            <option value="">All tracks</option>
-            {trackOptions.map((track) => <option value={String(track)}>{track}</option>)}
-          </select>
-        </label>
-        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
-          References
-          <select
-            data-testid="qv2p-builder-ref"
-            name="ref"
-            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
-          >
-            <option value="include">Include</option>
-            <option value="exclude">Exclude</option>
-            <option value="only">Only ref-required</option>
-          </select>
-        </label>
-        <label class="text-[11px] font-mono uppercase tracking-wider text-text-muted lg:col-span-1">
-          Topic
-          <select
-            data-testid="qv2p-builder-topic"
-            name="topics"
-            class="mt-1 w-full rounded border border-border bg-bg px-2 py-2 text-sm normal-case tracking-normal text-text-primary"
-          >
-            <option value="">All topics</option>
-            {topicOptions.map((topic) => <option value={topic.value}>{topic.slugCount > 1 ? `${topic.title} (${topic.slugCount} slugs)` : topic.title}</option>)}
-          </select>
-        </label>
-        <div class="sm:col-span-2 lg:col-span-6 flex flex-wrap gap-2 pt-1">
-          <button
-            type="submit"
-            data-testid="qv2p-builder-submit"
-            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue hover:bg-bg"
-          >Apply options</button>
-          <a
-            data-testid="qv2p-builder-reset"
-            href={`${base}quiz-v2/play/`}
-            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
-          >Reset</a>
-        </div>
-      </form>
-    </section>
-
     <section
       data-testid="qv2p-session"
       class="order-2 mt-5 bg-bg-card border border-border rounded-lg p-4"
     >
-      <dl class="grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 text-[12px] font-mono">
-        <dt class="text-text-muted">Session ID</dt>
-        <dd class="text-text-primary col-span-3 break-all" data-testid="qv2p-session-id">—</dd>
-        <dt class="text-text-muted">Seed</dt>
-        <dd class="text-text-primary" data-testid="qv2p-session-seed">—</dd>
-        <dt class="text-text-muted">Question</dt>
-        <dd class="text-text-primary"><span data-testid="qv2p-session-index">0</span> / <span data-testid="qv2p-session-count">0</span></dd>
-        <dt class="text-text-muted">Eligible</dt>
-        <dd class="text-text-primary col-span-3"><span data-testid="qv2p-session-total">0</span> match filters</dd>
-      </dl>
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue">Current set</div>
+          <div class="mt-1 text-sm text-text-primary" data-testid="qv2p-session-summary">Session summary loading…</div>
+          <div class="mt-1 text-[12px] font-mono text-text-muted">
+            Question <span data-testid="qv2p-session-index">0</span> / <span data-testid="qv2p-session-count">0</span>
+            <span class="mx-1">·</span>
+            <span data-testid="qv2p-session-total">0</span> match filters
+          </div>
+        </div>
+        <a
+          href={`${base}quiz-v2/`}
+          data-testid="qv2p-adjust-set"
+          class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
+        >Adjust set</a>
+      </div>
       <div class="mt-3 flex flex-wrap items-center gap-2">
-        <button
-          type="button"
-          data-testid="qv2p-create-backend-session"
-          class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-accent-blue rounded text-accent-blue hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
-        >Retry saving</button>
-        <span data-testid="qv2p-session-source" class="text-[11px] font-mono text-text-muted">Checking save status…</span>
         <button
           type="button"
           data-testid="qv2p-prev"
@@ -194,21 +74,39 @@ const topicOptions = [...topicGroups.entries()]
         >Next &rsaquo;</button>
         <button
           type="button"
-          data-testid="qv2p-submit-results"
+          data-testid="qv2p-finish"
           class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-accent-blue rounded text-accent-blue hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
           disabled
-        >Submit progress</button>
-        <span class="ml-auto text-[11px] font-mono text-text-muted" data-testid="qv2p-session-summary">
-          Session summary loading…
-        </span>
+        >Finish</button>
       </div>
-      <details class="mt-2 text-[11px] font-mono text-text-muted" data-testid="qv2p-session-debug-toggle">
+      <details class="mt-3 text-[11px] font-mono text-text-muted" data-testid="qv2p-session-debug-toggle">
         <summary class="cursor-pointer underline hover:text-text-primary">Session details</summary>
+        <dl class="mt-2 grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-1 text-[12px] font-mono">
+          <dt class="text-text-muted">Session ID</dt>
+          <dd class="text-text-primary col-span-3 break-all" data-testid="qv2p-session-id">—</dd>
+          <dt class="text-text-muted">Seed</dt>
+          <dd class="text-text-primary" data-testid="qv2p-session-seed">—</dd>
+          <dt class="text-text-muted">Save status</dt>
+          <dd class="text-text-primary col-span-3" data-testid="qv2p-session-source">Preview locally</dd>
+        </dl>
         <div class="mt-2 text-[11px] font-mono text-text-muted" data-testid="qv2p-session-debug">
           <code class="block break-all rounded border border-border bg-bg px-2 py-1" data-testid="qv2p-session-filters">{}</code>
         </div>
+        <div class="mt-2 flex flex-wrap gap-2">
+          <button
+            type="button"
+            data-testid="qv2p-create-backend-session"
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-border rounded text-text-muted hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
+          >Retry saving</button>
+          <button
+            type="button"
+            data-testid="qv2p-submit-results"
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-1.5 border border-border rounded text-text-muted hover:bg-bg disabled:opacity-40 disabled:cursor-not-allowed"
+            disabled
+          >Submit progress</button>
+        </div>
+        <div data-testid="qv2p-submit-status" class="mt-2 text-xs text-text-muted">Preview locally, or log in to save progress.</div>
       </details>
-      <div data-testid="qv2p-submit-status" class="mt-3 text-xs text-text-muted">Preview locally, or log in to save progress automatically.</div>
     </section>
 
     <script type="application/json" id="qv2p-session-meta" set:html={JSON.stringify(sessionMeta)} />
@@ -222,6 +120,34 @@ const topicOptions = [...topicGroups.entries()]
         No questions match the current filters. Try removing filters or
         broadening <code>years</code> / <code>tracks</code>.
       </div>
+
+      <section id="qv2p-results" data-testid="qv2p-results" class="hidden text-sm text-text-body">
+        <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Results</div>
+        <h2 class="font-serif text-2xl text-text-primary leading-tight">Practice complete</h2>
+        <p class="mt-2 text-text-muted" data-testid="qv2p-results-score">Score loading…</p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <button
+            type="button"
+            data-testid="qv2p-results-review"
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-primary hover:bg-bg"
+          >Review questions</button>
+          <a
+            href={`${base}quiz-v2/play/`}
+            data-testid="qv2p-practice-again"
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue no-underline hover:bg-bg"
+          >Practice again</a>
+          <a
+            href={`${base}quiz-v2/`}
+            data-testid="qv2p-build-new-set"
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
+          >Build a new set</a>
+          <a
+            href={`${base}history/`}
+            data-testid="qv2p-my-progress"
+            class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
+          >My Progress</a>
+        </div>
+      </section>
 
       {questions.map((q) => (
         <section
@@ -410,7 +336,7 @@ const topicOptions = [...topicGroups.entries()]
   .qv2p-choice[disabled] { cursor: default; }
   @media (max-width: 640px) {
     [data-testid="qv2p-session"] .flex { align-items: stretch; }
-    [data-testid="qv2p-session"] button { min-height: 44px; flex: 1 1 42%; }
+    [data-testid="qv2p-session"] button, [data-testid="qv2p-session"] a { min-height: 44px; flex: 1 1 42%; }
     .qv2p-choice { min-height: 44px; }
   }
 </style>
@@ -602,7 +528,9 @@ const topicOptions = [...topicGroups.entries()]
     if (!session) return;
     const empty = document.getElementById('qv2p-empty');
     const noResults = document.getElementById('qv2p-no-results');
+    const results = document.getElementById('qv2p-results');
     hideAllDetails();
+    if (results) results.classList.add('hidden');
     if (empty) empty.classList.add('hidden');
     if (session.questionSlugs.length === 0) {
       if (noResults) noResults.classList.remove('hidden');
@@ -622,8 +550,13 @@ const topicOptions = [...topicGroups.entries()]
     setText('qv2p-session-index', String(currentIndex + 1));
     const prev = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-prev"]');
     const next = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-next"]');
+    const finish = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-finish"]');
     if (prev) prev.disabled = currentIndex === 0;
-    if (next) next.disabled = currentIndex >= session.questionSlugs.length - 1;
+    if (next) {
+      next.disabled = currentIndex >= session.questionSlugs.length - 1;
+      next.textContent = currentIndex >= session.questionSlugs.length - 1 ? 'Last question' : 'Next ›';
+    }
+    if (finish) finish.disabled = selections.size < session.questionSlugs.length;
     updateSubmitButton();
     questionShownAt = Date.now();
   }
@@ -641,6 +574,8 @@ const topicOptions = [...topicGroups.entries()]
         elapsedBySlug.set(slug, Date.now() - questionShownAt);
         applyRevealedState(detail, label);
         updateSubmitButton();
+        const finish = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-finish"]');
+        if (finish && session) finish.disabled = selections.size < session.questionSlugs.length;
       });
     });
   }
@@ -648,6 +583,8 @@ const topicOptions = [...topicGroups.entries()]
   function attachNavHandlers(): void {
     const prev = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-prev"]');
     const next = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-next"]');
+    const finish = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-finish"]');
+    const review = document.querySelector<HTMLButtonElement>('[data-testid="qv2p-results-review"]');
     prev?.addEventListener('click', () => {
       if (currentIndex > 0) {
         currentIndex--;
@@ -660,36 +597,35 @@ const topicOptions = [...topicGroups.entries()]
         showCurrent();
       }
     });
+    finish?.addEventListener('click', () => finishSession());
+    review?.addEventListener('click', () => {
+      if (!session || session.questionSlugs.length === 0) return;
+      currentIndex = 0;
+      showCurrent();
+    });
   }
 
-  function attachBuilderHandlers(params: URLSearchParams): void {
-    const form = document.getElementById('qv2p-builder') as HTMLFormElement | null;
-    if (!form) return;
-    const setValue = (name: string, value: string | null): void => {
-      const el = form.elements.namedItem(name) as HTMLInputElement | HTMLSelectElement | null;
-      if (el && value !== null) el.value = value;
-    };
-    setValue('count', params.get('count') ?? String(DEFAULT_COUNT));
-    setValue('seed', params.get('seed') ?? '');
-    setValue('years', params.get('years'));
-    setValue('tracks', params.get('tracks'));
-    setValue('topics', params.get('topics'));
-    setValue('ref', params.get('ref') ?? 'include');
+  function currentFilterParams(): string {
+    const params = new URLSearchParams();
+    if (currentSeed) params.set('seed', currentSeed);
+    if (currentFilters.count && currentFilters.count !== DEFAULT_COUNT) params.set('count', String(currentFilters.count));
+    if (currentFilters.years && currentFilters.years.length > 0) params.set('years', currentFilters.years.join(','));
+    if (currentFilters.tracks && currentFilters.tracks.length > 0) params.set('tracks', currentFilters.tracks.join(','));
+    if (currentFilters.topicSlugs && currentFilters.topicSlugs.length > 0) params.set('topics', currentFilters.topicSlugs.join(','));
+    if (currentFilters.questionSlugs && currentFilters.questionSlugs.length > 0) params.set('slugs', currentFilters.questionSlugs.join(','));
+    if (currentFilters.referenceMode && currentFilters.referenceMode !== 'include') params.set('ref', currentFilters.referenceMode);
+    return params.toString();
+  }
 
-    form.addEventListener('submit', (event) => {
-      event.preventDefault();
-      const data = new FormData(form);
-      const next = new URL(window.location.href);
-      next.search = '';
-      for (const key of ['seed', 'count', 'years', 'tracks', 'topics', 'ref']) {
-        const raw = String(data.get(key) ?? '').trim();
-        if (!raw) continue;
-        if (key === 'ref' && raw === 'include') continue;
-        if (key === 'count' && raw === String(DEFAULT_COUNT)) continue;
-        next.searchParams.set(key, raw);
-      }
-      window.location.href = next.toString();
-    });
+  function updateSessionLinks(): void {
+    const query = currentFilterParams();
+    const suffix = query ? `?${query}` : '';
+    const adjust = document.querySelector<HTMLAnchorElement>('[data-testid="qv2p-adjust-set"]');
+    if (adjust) adjust.href = `${adjust.pathname}${suffix}`;
+    const again = document.querySelector<HTMLAnchorElement>('[data-testid="qv2p-practice-again"]');
+    if (again) again.href = `${again.pathname}${suffix}`;
+    const build = document.querySelector<HTMLAnchorElement>('[data-testid="qv2p-build-new-set"]');
+    if (build) build.href = `${build.pathname}${suffix}`;
   }
 
   function applySession(
@@ -721,7 +657,20 @@ const topicOptions = [...topicGroups.entries()]
     setText('qv2p-session-summary', summarizeSession(session));
     setText('qv2p-session-filters', JSON.stringify(session.filters));
     setText('qv2p-session-source', sourceLabel);
+    updateSessionLinks();
     showCurrent();
+  }
+
+  function finishSession(): void {
+    if (!session || selections.size < session.questionSlugs.length) return;
+    hideAllDetails();
+    document.getElementById('qv2p-empty')?.classList.add('hidden');
+    document.getElementById('qv2p-no-results')?.classList.add('hidden');
+    const results = document.getElementById('qv2p-results');
+    const score = scoreCurrentSession();
+    if (results) results.classList.remove('hidden');
+    setText('qv2p-results-score', `Score ${score.correct}/${score.total} (${Math.round((score.total > 0 ? score.correct / score.total : 0) * 100)}%). Review your answers, practice again, build a new set, or open My Progress.`);
+    void submitProgress();
   }
 
   function updateSubmitButton(): void {
@@ -821,7 +770,6 @@ const topicOptions = [...topicGroups.entries()]
     const meta = readSessionMeta();
     const candidateQuestions = meta.map(metaToQuestion);
     const params = new URLSearchParams(window.location.search);
-    attachBuilderHandlers(params);
     const { filters, seed } = parseFiltersFromUrl(params);
     currentFilters = filters;
     currentSeed = seed;
@@ -830,7 +778,6 @@ const topicOptions = [...topicGroups.entries()]
     attachNavHandlers();
     attachBackendSessionHandler();
     attachSubmitHandler();
-    void createBackendSession();
   }
 
   if (document.readyState === 'loading') {

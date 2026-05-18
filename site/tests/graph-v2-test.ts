@@ -2,8 +2,52 @@ import { expect, test } from '@playwright/test';
 
 const Q23_ID = 'question:q23-eop-flowchart-symbols-concurrent';
 
+async function openAdvanced(page: import('@playwright/test').Page) {
+  const advanced = page.getByTestId('gv2-advanced');
+  await expect(advanced).toBeVisible();
+  if (!(await advanced.evaluate((el) => (el as HTMLDetailsElement).open))) {
+    await advanced.getByText('Explore connections (advanced)').click();
+  }
+}
+
+test('graph-v2 shows topic-first practice cards by default', async ({ page }) => {
+  await page.goto('graph-v2/');
+
+  await expect(page.getByRole('heading', { name: 'Study Map', exact: true })).toBeVisible();
+  await expect(page.getByTestId('gv2-topic-search')).toHaveAttribute('placeholder', 'Find a topic');
+  await expect(page.getByTestId('gv2-advanced')).not.toHaveAttribute('open', '');
+
+  const cvcsCard = page.getByTestId('gv2-topic-card-topic:chemical-and-volume-control-system');
+  await expect(cvcsCard).toBeVisible();
+  await expect(cvcsCard).toContainText('CVCS');
+  await expect(cvcsCard).toContainText(/\d+ practice question/);
+  await expect(cvcsCard.getByRole('link', { name: 'Practice this topic' }))
+    .toHaveAttribute('href', /\/quiz-v2\/play\/\?topics=chemical-and-volume-control-system&count=10$/);
+  await expect(cvcsCard.getByRole('checkbox', { name: /Add CVCS to combined practice/i })).toBeVisible();
+
+  await page.getByTestId('gv2-topic-search').fill('emergency-core-cooling');
+  await expect(page.getByTestId('gv2-topic-card-topic:emergency-core-cooling-systems')).toBeVisible();
+  await expect(cvcsCard).toBeHidden();
+});
+
+test('graph-v2 combined topic bar rolls topic cards into one topics handoff', async ({ page }) => {
+  await page.goto('graph-v2/');
+
+  await page.getByTestId('gv2-topic-card-topic:chemical-and-volume-control-system').getByRole('checkbox').check();
+  await expect(page.getByTestId('gv2-combined-bar')).toBeVisible();
+  await expect(page.getByTestId('gv2-combined-summary')).toContainText('1 topic');
+
+  await page.getByTestId('gv2-topic-card-topic:emergency-core-cooling-systems').getByRole('checkbox').check();
+  await expect(page.getByTestId('gv2-combined-summary')).toContainText(/2 topics · \d+ questions/);
+  const combinedPool = Number(await page.getByTestId('gv2-builder-pool').textContent());
+  expect(combinedPool).toBeGreaterThan(20);
+  await expect(page.getByTestId('gv2-combined-play'))
+    .toHaveAttribute('href', /\/quiz-v2\/play\/\?topics=chemical-and-volume-control-system%2Cemergency-core-cooling-systems&count=20$/);
+});
+
 test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async ({ page }) => {
   await page.goto('graph-v2/');
+  await openAdvanced(page);
   await expect(page.getByTestId('gv2-empty')).toContainText('Select a node above or in the list to view its connections.');
 
   // Page chrome.
@@ -111,14 +155,15 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
 
 test('graph-v2 multi-select builder unions eligible pools and links to quiz-v2 play', async ({ page }) => {
   await page.goto('graph-v2/');
+  await openAdvanced(page);
 
-  await page.locator('[data-gv2-builder-toggle="topic:chemical-and-volume-control-system"]').check();
+  await page.locator('[data-testid="gv2-list"] [data-gv2-builder-toggle="topic:chemical-and-volume-control-system"]').check();
 
   await expect(page.getByTestId('gv2-builder-count')).toHaveText('1');
   await expect(page.getByTestId('gv2-detail-topic:chemical-and-volume-control-system')).toBeVisible();
   await expect(page.getByTestId('gv2-neighborhood-map-topic:chemical-and-volume-control-system')).toBeVisible();
 
-  await page.locator('[data-gv2-builder-toggle="topic:emergency-core-cooling-systems"]').check();
+  await page.locator('[data-testid="gv2-list"] [data-gv2-builder-toggle="topic:emergency-core-cooling-systems"]').check();
 
   await expect(page.getByTestId('gv2-builder-count')).toHaveText('2');
   await expect(page.getByTestId('gv2-builder-summary')).toContainText('2 nodes selected');
@@ -135,6 +180,7 @@ test('graph-v2 multi-select builder unions eligible pools and links to quiz-v2 p
 
 test('graph-v2 polish exposes practice-only filtering, empty state, and deep-linked selection', async ({ page }) => {
   await page.goto('graph-v2/');
+  await openAdvanced(page);
 
   const initialCount = Number(await page.getByTestId('gv2-visible-count').textContent());
   await page.getByTestId('gv2-practice-only').check();
@@ -151,6 +197,7 @@ test('graph-v2 polish exposes practice-only filtering, empty state, and deep-lin
   await expect(page).toHaveURL(/graph-v2\/\?id=question%3Aq8-pzr-saturation-rcp-restart/);
 
   await page.goto('graph-v2/?id=question%3Aq8-pzr-saturation-rcp-restart');
+  await expect(page.getByTestId('gv2-advanced')).toHaveAttribute('open', '');
   await expect(page.getByTestId('gv2-detail-question:q8-pzr-saturation-rcp-restart')).toBeVisible();
   await expect(page.getByTestId('gv2-selected-jump')).toHaveAttribute('href', '#gv2-detail-root');
 });

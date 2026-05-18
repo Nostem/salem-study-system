@@ -29,16 +29,33 @@ async function seedAuth(page: Page): Promise<void> {
   }, [supabaseAuthStorageKey()]);
 }
 
-test('quiz-v2 play route loads a deterministic session with an explicit count', async ({ page }) => {
+test('quiz-v2 play route loads a deterministic practice session with compact summary and hidden internals', async ({ page }) => {
   await page.goto('quiz-v2/play/?seed=play-default-test&count=4');
 
-  await expect(page.getByRole('heading', { name: /Study Session/i })).toBeVisible();
-  await expect(page.getByTestId('qv2p-session-id')).toContainText(/^qv2-[0-9a-f]{8}$/);
-  await expect(page.getByTestId('qv2p-session-seed')).toHaveText('play-default-test');
+  await expect(page.getByRole('heading', { name: /^Practice$/i })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Study Session/i })).toHaveCount(0);
+  await expect(page.getByText('Advanced study options')).toHaveCount(0);
+  await expect(page.getByText('Apply options')).toHaveCount(0);
+  await expect(page.getByTestId('qv2p-builder')).toHaveCount(0);
+
+  await expect(page.getByTestId('qv2p-session-summary')).toContainText('4-question session');
   await expect(page.getByTestId('qv2p-session-count')).toHaveText('4');
   await expect(page.getByTestId('qv2p-session-index')).toHaveText('1');
-  await expect(page.getByTestId('qv2p-session-summary')).toContainText('4-question session');
+  await expect(page.getByTestId('qv2p-adjust-set')).toHaveAttribute('href', /\/quiz-v2\/\?seed=play-default-test&count=4$/);
+
+  // Session ID, seed, raw filters, save controls/status are hidden by default.
+  await expect(page.getByText('Session ID')).toBeHidden();
+  await expect(page.getByTestId('qv2p-session-id')).toBeHidden();
+  await expect(page.getByTestId('qv2p-session-seed')).toBeHidden();
   await expect(page.getByTestId('qv2p-session-debug')).toBeHidden();
+  await expect(page.getByTestId('qv2p-session-source')).toBeHidden();
+  await expect(page.getByTestId('qv2p-create-backend-session')).toBeHidden();
+  await expect(page.getByTestId('qv2p-submit-results')).toBeHidden();
+  await expect(page.getByTestId('qv2p-submit-status')).toBeHidden();
+
+  await page.getByTestId('qv2p-session-debug-toggle').click();
+  await expect(page.getByTestId('qv2p-session-id')).toContainText(/^qv2-[0-9a-f]{8}$/);
+  await expect(page.getByTestId('qv2p-session-seed')).toHaveText('play-default-test');
 
   // Exactly one question is visible.
   const visibleDetails = page.locator('.qv2p-detail:not(.hidden)');
@@ -48,7 +65,7 @@ test('quiz-v2 play route loads a deterministic session with an explicit count', 
   await expect(visibleDetails.locator('[data-testid="qv2p-stem-blocks"]')).toBeVisible();
   await expect(visibleDetails.locator('[data-testid="qv2p-choices"] .qv2p-choice').first()).toBeVisible();
 
-  // Source link points back to the preview page.
+  // Source link points back to the builder/preview page.
   const link = visibleDetails.getByTestId('qv2p-source-link');
   await expect(link).toHaveAttribute('href', /\/quiz-v2\/\?slug=/);
 });
@@ -150,24 +167,15 @@ test('quiz-v2 play produces the same question order across reloads for a seed', 
   expect(secondRun).toEqual(firstRun);
 });
 
-test('quiz-v2 play local builder preserves selected filters in the URL and session', async ({ page }) => {
-  await page.goto('quiz-v2/play/');
+test('quiz-v2 play keeps URL param support without showing a local builder', async ({ page }) => {
+  await page.goto('quiz-v2/play/?seed=builder-seed&count=2&years=2019&tracks=RO&topics=control-rod-drive&ref=exclude');
 
-  await expect(page.getByTestId('qv2p-builder')).toBeVisible();
-  await page.getByTestId('qv2p-builder-count').fill('2');
-  await page.getByTestId('qv2p-builder-seed').fill('builder-seed');
-  await page.getByTestId('qv2p-builder-years').selectOption('2019');
-  await page.getByTestId('qv2p-builder-tracks').selectOption('RO');
-  await page.getByTestId('qv2p-builder-ref').selectOption('exclude');
-  await page.getByTestId('qv2p-builder-topic').selectOption('control-rod-drive');
-  await page.getByTestId('qv2p-builder-submit').click();
-
-  await expect(page).toHaveURL(/quiz-v2\/play\/\?seed=builder-seed&count=2&years=2019&tracks=RO&topics=control-rod-drive&ref=exclude$/);
-  await expect(page.getByTestId('qv2p-session-seed')).toHaveText('builder-seed');
+  await expect(page.getByTestId('qv2p-builder')).toHaveCount(0);
   await expect(page.getByTestId('qv2p-session-count')).toHaveText('2');
   await expect(page.getByTestId('qv2p-session-summary')).toContainText('2019');
   await expect(page.getByTestId('qv2p-session-summary')).toContainText('RO');
   await expect(page.getByTestId('qv2p-session-summary')).toContainText('control-rod-drive');
+  await expect(page.getByTestId('qv2p-adjust-set')).toHaveAttribute('href', /\/quiz-v2\/\?seed=builder-seed&count=2&years=2019&tracks=RO&topics=control-rod-drive&ref=exclude$/);
   await page.getByTestId('qv2p-session-debug-toggle').click();
   await expect(page.getByTestId('qv2p-session-debug')).toContainText('"referenceMode":"exclude"');
 });
@@ -181,6 +189,27 @@ test('quiz-v2 play accepts explicit graph-selected question slugs', async ({ pag
   await expect(page.getByTestId('qv2p-session-summary')).toContainText('1 selected question');
   await expect(page.getByTestId('qv2p-session-summary')).not.toContainText('questionSlugs');
   await expect(page.locator('.qv2p-detail:not(.hidden)')).toHaveAttribute('data-qv2p-detail', 'q8-pzr-saturation-rcp-restart');
+});
+
+test('quiz-v2 play answers all questions then finishes with score/actions', async ({ page }) => {
+  await page.goto('quiz-v2/play/?seed=finish-test&count=2');
+
+  await expect(page.getByTestId('qv2p-finish')).toBeDisabled();
+  await page.locator('.qv2p-detail:not(.hidden)').locator('.qv2p-choice').first().click();
+  await page.getByTestId('qv2p-next').click();
+  await page.locator('.qv2p-detail:not(.hidden)').locator('.qv2p-choice').first().click();
+  await expect(page.getByTestId('qv2p-finish')).toBeEnabled();
+  await page.getByTestId('qv2p-finish').click();
+
+  await expect(page.getByTestId('qv2p-results')).toBeVisible();
+  await expect(page.getByTestId('qv2p-results-score')).toContainText(/Score \d\/2/);
+  await expect(page.getByTestId('qv2p-practice-again')).toBeVisible();
+  await expect(page.getByTestId('qv2p-build-new-set')).toBeVisible();
+  await expect(page.getByTestId('qv2p-my-progress')).toBeVisible();
+
+  await page.getByTestId('qv2p-results-review').click();
+  await expect(page.getByTestId('qv2p-results')).toBeHidden();
+  await expect(page.locator('.qv2p-detail:not(.hidden)')).toBeVisible();
 });
 
 test('quiz-v2 play preserves answered state when creating an authenticated backend session and submits against that session', async ({ page }) => {
@@ -228,6 +257,7 @@ test('quiz-v2 play preserves answered state when creating an authenticated backe
   await detail.locator('.qv2p-choice').first().click();
   await expect(detail.locator('[data-testid="qv2p-feedback"]')).toBeVisible();
 
+  await page.getByTestId('qv2p-session-debug-toggle').click();
   await page.getByTestId('qv2p-create-backend-session').click();
 
   await expect(page.getByTestId('qv2p-session-source')).toContainText('Progress saving ready');

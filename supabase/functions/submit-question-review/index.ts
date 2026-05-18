@@ -1,34 +1,19 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.105.1';
 import { scheduleWholeQuestionReview, type ReviewRating } from '../_shared/fsrs-whole-question.ts';
-
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-};
-
-function jsonResponse(body: Record<string, unknown>, status = 200): Response {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-  });
-}
+import { createAdminClient, jsonResponse, requirePost, requireUser } from '../_shared/http.ts';
 
 function normalizeRating(value: unknown): ReviewRating | null {
   return value === 'again' || value === 'hard' || value === 'good' || value === 'easy' ? value : null;
 }
 
 Deno.serve(async (req) => {
-  if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
-  if (req.method !== 'POST') return jsonResponse({ error: 'method_not_allowed' }, 405);
+  const methodError = requirePost(req);
+  if (methodError) return methodError;
 
-  const supabaseUrl = Deno.env.get('SUPABASE_URL');
-  const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-  if (!supabaseUrl || !serviceRoleKey) return jsonResponse({ error: 'server_not_configured' }, 500);
+  const admin = createAdminClient();
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
 
-  const authorization = req.headers.get('Authorization') ?? '';
-  const accessToken = authorization.replace(/^Bearer\s+/i, '').trim();
-  if (!accessToken) return jsonResponse({ error: 'missing_authorization' }, 401);
+  const { error: authError, user } = await requireUser(req, admin);
+  if (authError || !user) return authError;
 
   let body: { slug?: unknown; rating?: unknown };
   try {
@@ -42,13 +27,6 @@ Deno.serve(async (req) => {
   if (!slug) return jsonResponse({ error: 'slug_required' }, 400);
   if (!rating) return jsonResponse({ error: 'rating_required' }, 400);
 
-  const admin = createClient(supabaseUrl, serviceRoleKey, {
-    auth: { autoRefreshToken: false, persistSession: false },
-  });
-
-  const { data: userData, error: userError } = await admin.auth.getUser(accessToken);
-  if (userError || !userData.user) return jsonResponse({ error: 'invalid_authorization' }, 401);
-
   const { data: question, error: questionError } = await admin
     .from('questions')
     .select('id, slug')
@@ -61,7 +39,7 @@ Deno.serve(async (req) => {
   const { data: existing, error: lookupError } = await admin
     .from('user_question_state')
     .select('attempts_count, correct_count, incorrect_count, last_correct_at, flagged, review_reps, review_lapses, fsrs_difficulty, fsrs_stability, scheduled_days, last_reviewed_at')
-    .eq('user_id', userData.user.id)
+    .eq('user_id', user.id)
     .eq('question_id', question.id)
     .maybeSingle();
   if (lookupError) return jsonResponse({ error: 'review_state_lookup_failed' }, 500);
@@ -81,7 +59,7 @@ Deno.serve(async (req) => {
   }, rating);
 
   const row = {
-    user_id: userData.user.id,
+    user_id: user.id,
     question_id: question.id,
     attempts_count: review.attemptsCount,
     correct_count: review.correctCount,
@@ -110,7 +88,7 @@ Deno.serve(async (req) => {
   const { error: eventError } = await admin
     .from('question_review_events')
     .insert({
-      user_id: userData.user.id,
+      user_id: user.id,
       question_id: question.id,
       rating,
       reviewed_at: review.lastReviewedAt,

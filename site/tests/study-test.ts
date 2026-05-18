@@ -96,10 +96,16 @@ test('mobile Study keeps the three learner choices clear and full-width', async 
   expect(progressBox?.width).toBeGreaterThan(300);
 });
 
-test('graph-v2 mobile hides advanced filters behind a collapsed panel', async ({ page }) => {
+test('graph-v2 mobile keeps topic cards primary and hides advanced filters behind a collapsed panel', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto('graph-v2/');
 
+  await expect(page.getByTestId('gv2-topic-browser')).toBeVisible();
+  const advanced = page.getByTestId('gv2-advanced');
+  await expect(advanced).toBeVisible();
+  await expect(advanced).not.toHaveAttribute('open', /.+/);
+
+  await advanced.getByText('Explore connections (advanced)').click();
   const panel = page.getByTestId('gv2-mobile-filters');
   await expect(panel).toBeVisible();
   await expect(panel).not.toHaveAttribute('open', /.+/);

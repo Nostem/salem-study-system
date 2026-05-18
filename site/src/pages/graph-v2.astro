@@ -1,47 +1,22 @@
 ---
 import StudyLayout from '../layouts/StudyLayout.astro';
 import { generateGraphV2Data } from '../utils/graph-v2-data';
+import { createGraphV2DetailHelpers, renderedGraphV2Nodes } from '../utils/graph-v2-detail-data';
 
 const base = import.meta.env.BASE_URL.endsWith('/')
   ? import.meta.env.BASE_URL
   : import.meta.env.BASE_URL + '/';
 
 const graph = await generateGraphV2Data();
-
-// Render every question, topic, and source plus the top wiki articles by
-// connection count. This keeps the preview searchable for any structured
-// entity (e.g. 2023 Q23) while bounding DOM size for the long tail of
-// low-degree wiki nodes.
-const TOP_ARTICLES = 200;
-const articleNodes = graph.nodes
-  .filter((n) => n.kind === 'article')
-  .sort((a, b) => b.connections - a.connections)
-  .slice(0, TOP_ARTICLES);
-const otherNodes = graph.nodes.filter((n) => n.kind !== 'article');
-const renderedNodes = [...articleNodes, ...otherNodes].sort(
-  (a, b) => b.connections - a.connections,
-);
-
-// Pull out quick lookups for filtering and detail panels.
-const nodeById = new Map(graph.nodes.map((n) => [n.id, n]));
-const edgesBySource = new Map<string, typeof graph.edges>();
-const edgesByTarget = new Map<string, typeof graph.edges>();
-const edgeTypesByNode = new Map<string, Set<string>>();
-const neighborsByNode = new Map<string, Set<string>>();
-for (const e of graph.edges) {
-  if (!edgesBySource.has(e.source)) edgesBySource.set(e.source, []);
-  if (!edgesByTarget.has(e.target)) edgesByTarget.set(e.target, []);
-  edgesBySource.get(e.source)!.push(e);
-  edgesByTarget.get(e.target)!.push(e);
-  if (!edgeTypesByNode.has(e.source)) edgeTypesByNode.set(e.source, new Set());
-  if (!edgeTypesByNode.has(e.target)) edgeTypesByNode.set(e.target, new Set());
-  edgeTypesByNode.get(e.source)!.add(e.type);
-  edgeTypesByNode.get(e.target)!.add(e.type);
-  if (!neighborsByNode.has(e.source)) neighborsByNode.set(e.source, new Set());
-  if (!neighborsByNode.has(e.target)) neighborsByNode.set(e.target, new Set());
-  neighborsByNode.get(e.source)!.add(e.target);
-  neighborsByNode.get(e.target)!.add(e.source);
-}
+const renderedNodes = renderedGraphV2Nodes(graph);
+const {
+  edgeTypesByNode,
+  neighborsByNode,
+  nodeHref,
+  eligibleQuestionsFor,
+  practiceHref,
+} = createGraphV2DetailHelpers(graph, base);
+const detailDataUrl = `${base}data/graph-v2-detail-data.json`;
 
 const kindOrder: Array<keyof typeof graph.counts.nodesByKind> = [
   'article',
@@ -57,207 +32,16 @@ const edgeOrder: Array<keyof typeof graph.counts.edgesByType> = [
   'sourced-from',
 ];
 
-const edgeTypeLabels: Record<string, string> = {
-  wikilink: 'Wiki link',
-  tests: 'Question tests topic',
-  'topic-wiki': 'Topic wiki page',
-  'quiz-source': 'Question source article',
-  'sourced-from': 'Source reference',
-};
-
-function articleHref(slug: string): string {
-  return `${base}${slug.replace(/^\//, '')}/`;
-}
-
-function nodeHref(node: (typeof graph.nodes)[number]): string | undefined {
-  if (node.kind === 'article') return articleHref(node.slug);
-  if (node.kind === 'question') {
-    const sourceEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'quiz-source');
-    const source = sourceEdge ? nodeById.get(sourceEdge.target) : undefined;
-    return source?.kind === 'article' ? articleHref(source.slug) : undefined;
-  }
-  if (node.kind === 'topic') {
-    const topicArticleEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'topic-wiki');
-    const article = topicArticleEdge ? nodeById.get(topicArticleEdge.target) : undefined;
-    return article?.kind === 'article' ? articleHref(article.slug) : undefined;
-  }
-  return undefined;
-}
-
-function eligibleQuestionsFor(node: (typeof graph.nodes)[number]): Array<(typeof graph.nodes)[number]> {
-  if (node.kind === 'question') {
-    return node.meta?.quizEligible === true ? [node] : [];
-  }
-  return relatedQuestionsFor(node.id).filter((q) => q.meta?.quizEligible === true);
-}
-
-function practiceHref(node: (typeof graph.nodes)[number]): string | undefined {
-  const eligibleQuestions = eligibleQuestionsFor(node);
-  if (eligibleQuestions.length === 0) return undefined;
-  if (node.kind === 'topic') {
-    return `${base}quiz-v2/play/?topics=${encodeURIComponent(node.slug)}&count=10`;
-  }
-  const slugs = eligibleQuestions
-    .slice(0, 50)
-    .map((q) => q.slug)
-    .filter(Boolean)
-    .join(',');
-  if (!slugs) return undefined;
-  const count = Math.min(10, eligibleQuestions.length);
-  return `${base}quiz-v2/play/?slugs=${encodeURIComponent(slugs)}&count=${count}`;
-}
-
-function edgeSummaryFor(nodeId: string): Array<{ type: string; label: string; count: number }> {
-  const counts = new Map<string, number>();
-  for (const edge of [...(edgesBySource.get(nodeId) ?? []), ...(edgesByTarget.get(nodeId) ?? [])]) {
-    counts.set(edge.type, (counts.get(edge.type) ?? 0) + 1);
-  }
-  return edgeOrder
-    .map((type) => ({ type, label: edgeTypeLabels[type], count: counts.get(type) ?? 0 }))
-    .filter((entry) => entry.count > 0);
-}
-
-function relatedQuestionsFor(nodeId: string): Array<(typeof graph.nodes)[number]> {
-  const questionIds = new Set<string>();
-  const seedNode = nodeById.get(nodeId);
-  const collectDirectQuestions = (id: string): void => {
-    for (const edge of [...(edgesBySource.get(id) ?? []), ...(edgesByTarget.get(id) ?? [])]) {
-      const source = nodeById.get(edge.source);
-      const target = nodeById.get(edge.target);
-      if (source?.kind === 'question') questionIds.add(source.id);
-      if (target?.kind === 'question') questionIds.add(target.id);
-    }
-  };
-
-  collectDirectQuestions(nodeId);
-
-  // Article pages are often linked to the canonical topic node via topic-wiki
-  // rather than directly to question nodes. Follow that one semantic hop so
-  // system/source articles like CVCS, AFW, and exam pages can build real quiz
-  // pools instead of showing a selected count with zero eligible questions.
-  if (seedNode?.kind === 'article') {
-    for (const edge of edgesByTarget.get(nodeId) ?? []) {
-      if (edge.type !== 'topic-wiki') continue;
-      const topic = nodeById.get(edge.source);
-      if (topic?.kind === 'topic') collectDirectQuestions(topic.id);
-    }
-  }
-
-  return [...questionIds]
-    .map((id) => nodeById.get(id))
-    .filter((node): node is (typeof graph.nodes)[number] => !!node && node.id !== nodeId)
-    .sort((a, b) => {
-      const ay = Number(a.meta?.examYear ?? 0);
-      const by = Number(b.meta?.examYear ?? 0);
-      const aq = Number(a.meta?.questionNumber ?? 0);
-      const bq = Number(b.meta?.questionNumber ?? 0);
-      return by - ay || aq - bq || a.title.localeCompare(b.title);
-    });
-}
-
-function metaEntriesFor(node: (typeof graph.nodes)[number]): Array<{ label: string; value: string }> {
-  if (node.kind !== 'question') return [];
-  const meta = node.meta ?? {};
-  const entries: Array<{ label: string; value: unknown }> = [
-    { label: 'Exam', value: `${meta.examYear ?? '—'} ${meta.examType ?? ''}`.trim() },
-    { label: 'Question', value: meta.questionNumber },
-    { label: 'Track', value: meta.track },
-    { label: 'Status', value: meta.status },
-    { label: 'Quiz eligible', value: meta.quizEligible === true ? 'yes' : 'no' },
-    { label: 'Reference required', value: meta.requiresReference === true ? 'yes' : 'no' },
-    { label: 'Accepted answer', value: Array.isArray(meta.acceptedAnswerLabels) ? meta.acceptedAnswerLabels.join(', ') : undefined },
-    { label: 'K/A', value: meta.kaCode },
-    { label: 'K/A importance', value: meta.kaImportance },
-    { label: 'Cognitive level', value: meta.cognitiveLevel },
-    { label: 'Tier/group', value: meta.tierGroup },
-    { label: 'Source', value: meta.questionSource },
-    { label: 'Audit', value: meta.auditStatus },
-    { label: 'Non-quiz reason', value: meta.nonQuizReason },
-  ];
-  return entries
-    .filter((entry) => entry.value !== undefined && entry.value !== null && String(entry.value).trim() !== '')
-    .map((entry) => ({ label: entry.label, value: String(entry.value) }));
-}
-
-function graphEdgeRowsFor(nodeId: string, direction: 'outgoing' | 'incoming'): Array<{ type: string; nodeId: string; title: string }> {
-  const edges = direction === 'outgoing' ? (edgesBySource.get(nodeId) ?? []) : (edgesByTarget.get(nodeId) ?? []);
-  return edges.slice(0, 60).map((e) => {
-    const relatedNodeId = direction === 'outgoing' ? e.target : e.source;
-    const relatedNode = nodeById.get(relatedNodeId);
-    return {
-      type: e.type,
-      nodeId: relatedNodeId,
-      title: relatedNode?.title ?? relatedNodeId,
-    };
-  });
-}
-
-function compactNodeStep(nodeId: string, note?: string): { nodeId: string; title: string; kind: string; note?: string } | null {
-  const node = nodeById.get(nodeId);
-  if (!node) return null;
-  return { nodeId, title: node.title, kind: node.kind, note };
-}
-
-function localStudyPathsFor(node: (typeof graph.nodes)[number]): Array<{ label: string; steps: Array<{ nodeId: string; title: string; kind: string; note?: string }>; quizHref?: string }> {
-  const paths: Array<{ label: string; steps: Array<{ nodeId: string; title: string; kind: string; note?: string }>; quizHref?: string }> = [];
-  const pushPath = (label: string, nodeIds: Array<[string, string?]>, quizHref?: string): void => {
-    const steps = nodeIds.map(([id, note]) => compactNodeStep(id, note)).filter((step): step is { nodeId: string; title: string; kind: string; note?: string } => Boolean(step));
-    if (steps.length >= 2) paths.push({ label, steps, quizHref });
-  };
-
-  if (node.kind === 'topic') {
-    const articleEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'topic-wiki');
-    const question = eligibleQuestionsFor(node)[0];
-    if (articleEdge && question) pushPath('Read the wiki page, then quiz this topic', [[articleEdge.target, 'read'], [node.id, 'topic'], [question.id, 'practice pool']], practiceHref(node));
-  }
-
-  if (node.kind === 'article') {
-    const topicEdges = (edgesByTarget.get(node.id) ?? []).filter((e) => e.type === 'topic-wiki');
-    for (const topicEdge of topicEdges.slice(0, 5)) {
-      const topic = nodeById.get(topicEdge.source);
-      const question = topic ? eligibleQuestionsFor(topic)[0] : undefined;
-      if (question) pushPath('Article → topic → exam question', [[node.id, 'read'], [topicEdge.source, 'topic'], [question.id, 'practice']], topic ? practiceHref(topic) : undefined);
-    }
-  }
-
-  if (node.kind === 'question') {
-    const topicEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'tests');
-    const sourceEdge = (edgesBySource.get(node.id) ?? []).find((e) => e.type === 'quiz-source');
-    if (sourceEdge && topicEdge) pushPath('Source article → topic → question', [[sourceEdge.target, 'source'], [topicEdge.target, 'topic'], [node.id, 'question']], practiceHref(node));
-    else if (topicEdge) pushPath('Topic → question', [[topicEdge.target, 'topic'], [node.id, 'question']], practiceHref(node));
-  }
-
-  return paths.slice(0, 5);
-}
-
-const detailData = Object.fromEntries(renderedNodes.map((n) => {
-  const eligibleQuestions = eligibleQuestionsFor(n);
-  return [n.id, {
-    id: n.id,
-    kind: n.kind,
-    subcategory: n.subcategory,
-    connections: n.connections,
-    title: n.title,
-    slug: n.slug,
+const topicCards = graph.nodes
+  .filter((n) => n.kind === 'topic')
+  .map((n) => ({
+    node: n,
     openHref: nodeHref(n),
     quizHref: practiceHref(n),
-    eligibleQuestionCount: eligibleQuestions.length,
-    edgeSummary: edgeSummaryFor(n.id),
-    metaEntries: metaEntriesFor(n),
-    eligibleQuestionSlugs: eligibleQuestions.map((q) => q.slug),
-    studyPaths: localStudyPathsFor(n),
-    relatedQuestions: relatedQuestionsFor(n.id).slice(0, 12).map((q) => ({
-      id: q.id,
-      title: q.title,
-      kind: q.kind,
-      examYear: q.meta?.examYear,
-      questionNumber: q.meta?.questionNumber,
-    })),
-    relatedQuestionCount: relatedQuestionsFor(n.id).length,
-    outgoing: graphEdgeRowsFor(n.id, 'outgoing'),
-    incoming: graphEdgeRowsFor(n.id, 'incoming'),
-  }];
-}));
+    eligibleQuestions: eligibleQuestionsFor(n),
+  }))
+  .filter((entry) => entry.quizHref && entry.eligibleQuestions.length > 0)
+  .sort((a, b) => b.eligibleQuestions.length - a.eligibleQuestions.length || a.node.title.localeCompare(b.node.title));
 
 ---
 
@@ -275,56 +59,102 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
             Choose what to study, see the related wiki/source/question context, then start a focused Study session. Click a card to view details; use the checkbox to add it to a session.
           </p>
         </div>
-        <div class="grid grid-cols-2 gap-2 text-center min-w-[220px]">
-          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
-            <div data-testid="gv2-node-count" class="font-mono text-lg text-text-primary">{graph.counts.totalNodes}</div>
-            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Nodes</div>
-          </div>
-          <div class="bg-bg-card border border-border rounded-md px-3 py-2">
-            <div data-testid="gv2-edge-count" class="font-mono text-lg text-text-primary">{graph.counts.totalEdges}</div>
-            <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Edges</div>
-          </div>
+        <div class="bg-bg-card border border-border rounded-md px-3 py-2 text-center min-w-[180px]">
+          <div class="font-mono text-lg text-text-primary">{topicCards.length}</div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Practice-ready topics</div>
         </div>
       </div>
     </header>
 
-    <section class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-      <div class="bg-bg-card border border-border rounded-lg p-4 sm:col-span-2">
-        <h2 class="font-serif text-2xl text-text-primary leading-tight">How to use the Study Map</h2>
-        <ol class="mt-3 grid gap-3 sm:grid-cols-3 text-sm text-text-body">
-          <li class="rounded border border-border bg-bg/60 p-3"><strong class="block text-text-primary">1. Find a topic.</strong> Search by system, procedure, Tech Spec, source, or question.</li>
-          <li class="rounded border border-border bg-bg/60 p-3"><strong class="block text-text-primary">2. Open details.</strong> Click the title/card to understand what it connects to.</li>
-          <li class="rounded border border-border bg-bg/60 p-3"><strong class="block text-text-primary">3. Build a session.</strong> Check one or more boxes, then start focused practice.</li>
-        </ol>
+    <section class="mb-6" data-testid="gv2-topic-browser">
+      <div class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h2 class="font-serif text-2xl text-text-primary leading-tight">Choose topics to practice</h2>
+          <p class="mt-1 text-sm text-text-muted">Pick one topic for a quick session or select several topics for combined practice.</p>
+        </div>
+        <label class="flex flex-col gap-1 sm:min-w-[280px]">
+          <span class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Search topics</span>
+          <input
+            id="gv2-topic-search"
+            data-testid="gv2-topic-search"
+            type="search"
+            placeholder="Find a topic"
+            class="bg-bg border border-border rounded px-3 py-2 text-sm text-text-primary"
+          />
+        </label>
       </div>
-      <details class="bg-bg-card border border-border rounded-lg p-4">
-        <summary class="cursor-pointer font-mono text-[10px] uppercase tracking-wider text-text-muted">Advanced graph counts</summary>
-        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mt-3 mb-2">Nodes by kind</h2>
-        <ul data-testid="gv2-node-counts" class="text-sm text-text-body font-mono">
-          {kindOrder.map((k) => (
-            <li class="flex justify-between">
-              <span data-kind={k}>{k}</span>
-              <span data-testid={`gv2-node-count-${k}`}>{graph.counts.nodesByKind[k]}</span>
-            </li>
-          ))}
-        </ul>
-      </details>
-      <details class="bg-bg-card border border-border rounded-lg p-4">
-        <summary class="cursor-pointer font-mono text-[10px] uppercase tracking-wider text-text-muted">Advanced relationship counts</summary>
-        <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mt-3 mb-2">Edges by type</h2>
-        <ul data-testid="gv2-edge-counts" class="text-sm text-text-body font-mono">
-          {edgeOrder.map((t) => (
-            <li class="flex justify-between">
-              <span data-edge-type={t}>{t}</span>
-              <span data-testid={`gv2-edge-count-${t}`}>{graph.counts.edgesByType[t]}</span>
-            </li>
-          ))}
-        </ul>
-      </details>
+      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        {topicCards.map(({ node, openHref, quizHref, eligibleQuestions }) => (
+          <article
+            class="gv2-topic-card rounded-lg border border-border bg-bg-card p-4 shadow-sm"
+            data-testid={`gv2-topic-card-${node.id}`}
+            data-search={`${node.title} ${node.slug} ${node.subcategory ?? ''}`.toLowerCase()}
+          >
+            <div class="flex items-start justify-between gap-3">
+              <div class="min-w-0">
+                <h3 class="text-base font-semibold text-text-primary leading-snug">{node.title}</h3>
+                <p class="mt-1 text-sm text-text-muted">{eligibleQuestions.length} practice question{eligibleQuestions.length === 1 ? '' : 's'}</p>
+              </div>
+              <label class="shrink-0 rounded border border-border bg-bg/60 px-2 py-1 text-[11px] text-text-muted">
+                <input
+                  type="checkbox"
+                  data-gv2-builder-toggle={node.id}
+                  data-pool={eligibleQuestions.map((q) => q.slug).join(',')}
+                  class="mr-1 align-middle"
+                  aria-label={`Add ${node.title} to combined practice`}
+                />
+                Add
+              </label>
+            </div>
+            <div class="mt-4 flex flex-wrap gap-2 text-sm">
+              <a href={quizHref} class="rounded border border-accent-blue/70 px-3 py-2 text-accent-blue no-underline hover:bg-accent-blue/10">Practice this topic</a>
+              {openHref && <a href={openHref} class="rounded border border-border px-3 py-2 text-text-primary no-underline hover:border-accent-blue hover:text-accent-blue">Read wiki page</a>}
+            </div>
+          </article>
+        ))}
+      </div>
+      <p id="gv2-topic-no-results" data-testid="gv2-topic-no-results" class="hidden mt-3 rounded border border-border bg-bg-card px-3 py-2 text-sm text-text-muted">No practice-ready topics match that search.</p>
     </section>
 
-    <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
-      <details open data-testid="gv2-mobile-filters" class="gv2-filter-panel bg-bg-card border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
+    <details data-testid="gv2-advanced" class="bg-bg-card border border-border rounded-lg p-4 mb-24">
+      <summary class="cursor-pointer font-mono text-[11px] uppercase tracking-wider text-text-primary">Explore connections (advanced)</summary>
+      <div class="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+        <div class="bg-bg/60 border border-border rounded-lg p-4">
+          <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Nodes by kind</h2>
+          <div class="mb-2 grid grid-cols-2 gap-2 text-center">
+            <div class="rounded border border-border bg-bg-card px-3 py-2">
+              <div data-testid="gv2-node-count" class="font-mono text-lg text-text-primary">{graph.counts.totalNodes}</div>
+              <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Nodes</div>
+            </div>
+            <div class="rounded border border-border bg-bg-card px-3 py-2">
+              <div data-testid="gv2-edge-count" class="font-mono text-lg text-text-primary">{graph.counts.totalEdges}</div>
+              <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">Edges</div>
+            </div>
+          </div>
+          <ul data-testid="gv2-node-counts" class="text-sm text-text-body font-mono">
+            {kindOrder.map((k) => (
+              <li class="flex justify-between">
+                <span data-kind={k}>{k}</span>
+                <span data-testid={`gv2-node-count-${k}`}>{graph.counts.nodesByKind[k]}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div class="bg-bg/60 border border-border rounded-lg p-4">
+          <h2 class="font-mono text-[10px] uppercase tracking-wider text-text-muted mb-2">Edges by type</h2>
+          <ul data-testid="gv2-edge-counts" class="text-sm text-text-body font-mono">
+            {edgeOrder.map((t) => (
+              <li class="flex justify-between">
+                <span data-edge-type={t}>{t}</span>
+                <span data-testid={`gv2-edge-count-${t}`}>{graph.counts.edgesByType[t]}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <section class="grid grid-cols-1 lg:grid-cols-[340px_1fr] gap-5">
+        <details open data-testid="gv2-mobile-filters" class="gv2-filter-panel bg-bg/60 border border-border rounded-lg p-4 h-fit lg:sticky lg:top-20">
         <summary role="button" class="cursor-pointer font-mono text-[11px] uppercase tracking-wider text-text-primary lg:hidden">Search and filters</summary>
         <div class="gv2-filter-body mt-3 lg:mt-0">
         <div class="flex flex-col gap-3">
@@ -463,11 +293,29 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
         </div>
         <div id="gv2-detail-root"></div>
       </article>
+      </section>
+    </details>
+
+    <section
+      id="gv2-combined-bar"
+      data-testid="gv2-combined-bar"
+      class="hidden fixed inset-x-0 bottom-0 z-30 border-t border-border bg-bg-card/95 px-4 py-3 shadow-lg backdrop-blur"
+    >
+      <div class="mx-auto flex max-w-[1180px] flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        <div>
+          <div class="font-mono text-[10px] uppercase tracking-wider text-accent-blue">Combined practice</div>
+          <div class="text-sm text-text-primary" data-testid="gv2-combined-summary">0 topics · 0 questions</div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <a id="gv2-combined-play" data-testid="gv2-combined-play" data-base={base} href="#" class="pointer-events-none rounded border border-accent-blue px-3 py-2 text-sm text-accent-blue no-underline">Start combined practice</a>
+          <button type="button" data-gv2-builder-clear class="rounded border border-border px-3 py-2 text-sm text-text-muted">Clear</button>
+        </div>
+      </div>
     </section>
   </main>
 </StudyLayout>
 
-<script id="gv2-detail-data" type="application/json" set:html={JSON.stringify(detailData)}></script>
+<script id="gv2-detail-data-url" type="application/json" set:html={JSON.stringify(detailDataUrl)}></script>
 
 <script>
   const filterPanel = document.querySelector<HTMLDetailsElement>('[data-testid="gv2-mobile-filters"]');
@@ -521,9 +369,16 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     incoming: DetailEdge[];
   };
 
-  const detailData = JSON.parse(
-    document.getElementById('gv2-detail-data')?.textContent ?? '{}',
-  ) as Record<string, DetailData>;
+  let detailData: Record<string, DetailData> = {};
+
+  async function loadDetailData(): Promise<void> {
+    const url = JSON.parse(
+      document.getElementById('gv2-detail-data-url')?.textContent ?? '"/data/graph-v2-detail-data.json"',
+    ) as string;
+    const response = await fetch(url, { headers: { Accept: 'application/json' } });
+    if (!response.ok) throw new Error(`Failed to load graph-v2 detail data: ${response.status}`);
+    detailData = await response.json() as Record<string, DetailData>;
+  }
 
   function escapeHtml(value: unknown): string {
     return String(value ?? '')
@@ -719,6 +574,8 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
       .map((id) => detailData[id])
       .filter((detail): detail is DetailData => Boolean(detail));
     selectedDetails.forEach((detail) => detail.eligibleQuestionSlugs.forEach((slug) => slugs.add(slug)));
+    const selectedTopicDetails = selectedDetails.filter((detail) => detail.kind === 'topic');
+    const selectedTopicSlugs = selectedTopicDetails.map((detail) => detail.slug);
     const count = document.querySelector('[data-testid="gv2-builder-count"]');
     const pool = document.querySelector('[data-testid="gv2-builder-pool"]');
     const summary = document.querySelector('[data-testid="gv2-builder-summary"]');
@@ -739,6 +596,26 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
       `).join('');
     }
     document.querySelectorAll<HTMLInputElement>('[data-gv2-builder-toggle]').forEach((el) => { el.checked = builderSelection.has(el.getAttribute('data-gv2-builder-toggle') ?? ''); });
+    const combinedBar = document.getElementById('gv2-combined-bar');
+    const combinedSummary = document.querySelector('[data-testid="gv2-combined-summary"]');
+    const combinedPlay = document.getElementById('gv2-combined-play') as HTMLAnchorElement | null;
+    if (combinedBar) combinedBar.classList.toggle('hidden', selectedTopicDetails.length === 0);
+    if (combinedSummary) {
+      combinedSummary.textContent = `${selectedTopicDetails.length} topic${selectedTopicDetails.length === 1 ? '' : 's'} · ${slugs.size} questions`;
+    }
+    if (combinedPlay) {
+      if (selectedTopicSlugs.length > 0 && slugs.size > 0) {
+        const params = new URLSearchParams();
+        params.set('topics', selectedTopicSlugs.join(','));
+        params.set('count', String(Math.min(20, slugs.size)));
+        const base = combinedPlay.dataset.base ?? '/';
+        combinedPlay.href = `${base}quiz-v2/play/?${params.toString()}`;
+        combinedPlay.classList.remove('pointer-events-none');
+      } else {
+        combinedPlay.href = '#';
+        combinedPlay.classList.add('pointer-events-none');
+      }
+    }
     const play = document.getElementById('gv2-builder-play') as HTMLAnchorElement | null;
     if (play) {
       if (slugs.size > 0) {
@@ -808,7 +685,9 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     document.getElementById('gv2-no-results')?.classList.toggle('hidden', visible !== 0);
   }
 
-  function init(): void {
+  async function init(): Promise<void> {
+    await loadDetailData();
+
     document.addEventListener('click', (event) => {
       const target = event.target instanceof Element ? event.target.closest<HTMLButtonElement>('[data-gv2-select]') : null;
       const id = target?.getAttribute('data-gv2-select');
@@ -844,22 +723,45 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
       updateBuilder();
     });
     document.getElementById('gv2-builder-clear')?.addEventListener('click', () => { builderSelection.clear(); updateBuilder(); });
+    document.querySelectorAll<HTMLButtonElement>('[data-gv2-builder-clear]').forEach((button) => {
+      button.addEventListener('click', () => { builderSelection.clear(); updateBuilder(); });
+    });
     document.getElementById('gv2-search')?.addEventListener('input', applyFilters);
     document.getElementById('gv2-kind')?.addEventListener('change', applyFilters);
     document.getElementById('gv2-edge-type')?.addEventListener('change', applyFilters);
     document.getElementById('gv2-practice-only')?.addEventListener('change', applyFilters);
     document.getElementById('gv2-focus-neighborhood')?.addEventListener('change', applyFilters);
 
+    document.getElementById('gv2-topic-search')?.addEventListener('input', () => {
+      const search = ((document.getElementById('gv2-topic-search') as HTMLInputElement | null)?.value ?? '').trim().toLowerCase();
+      let visible = 0;
+      document.querySelectorAll<HTMLElement>('.gv2-topic-card').forEach((card) => {
+        const matches = !search || (card.dataset.search ?? '').includes(search);
+        card.classList.toggle('hidden', !matches);
+        if (matches) visible++;
+      });
+      document.getElementById('gv2-topic-no-results')?.classList.toggle('hidden', visible !== 0);
+    });
+
     const urlId = new URLSearchParams(window.location.search).get('id');
-    if (urlId) showNode(urlId);
+    if (urlId) {
+      document.querySelector<HTMLDetailsElement>('[data-testid="gv2-advanced"]')?.setAttribute('open', '');
+      showNode(urlId);
+    }
     applyFilters();
     updateBuilder();
   }
 
+  function reportInitError(error: unknown): void {
+    console.error(error);
+    const empty = document.getElementById('gv2-empty');
+    if (empty) empty.textContent = 'Graph detail data could not be loaded. Refresh the page to try again.';
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+    document.addEventListener('DOMContentLoaded', () => { void init().catch(reportInitError); });
   } else {
-    init();
+    void init().catch(reportInitError);
   }
 </script>
 
@@ -868,7 +770,7 @@ const detailData = Object.fromEntries(renderedNodes.map((n) => {
     background: var(--color-bg, transparent);
     border-left: 3px solid var(--color-accent-blue, #4aa);
   }
-  .gv2-item.hidden { display: none; }
+  .gv2-item.hidden, .gv2-topic-card.hidden { display: none; }
   @media (max-width: 640px) {
     #gv2-list { max-height: 42vh; }
     #gv2-search, #gv2-kind, #gv2-edge-type { min-height: 44px; }
