@@ -44,6 +44,9 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install Python dependencies
+        run: python3 -m pip install pyyaml
+
       - name: Run Python release checks
         run: python3 -m unittest tests.test_quiz_bank_builder tests.test_structured_quiz_bank_builder tests.test_structured_quiz_bank_validator
 
