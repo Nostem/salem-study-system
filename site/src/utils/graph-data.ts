@@ -1,4 +1,5 @@
 import { getCollection } from 'astro:content';
+import { publicWikiArticles } from './wiki-content';
 
 interface GraphNode {
   id: string;
@@ -44,7 +45,7 @@ function getEdgeType(line: string): GraphEdge['type'] {
 }
 
 export async function generateGraphData(): Promise<GraphData> {
-  const articles = await getCollection('wiki');
+  const articles = publicWikiArticles(await getCollection('wiki'));
   const nodes: GraphNode[] = [];
   const edges: GraphEdge[] = [];
   const connectionCount: Record<string, number> = {};
@@ -52,7 +53,6 @@ export async function generateGraphData(): Promise<GraphData> {
   // Build title → slug lookup
   const titleToSlug = new Map<string, string>();
   for (const article of articles) {
-    if (article.id === '_index') continue;
     const title = article.data.title ?? article.id.split('/').pop()?.replace(/-/g, ' ') ?? article.id;
     titleToSlug.set(title.toLowerCase(), article.id);
 
@@ -63,7 +63,6 @@ export async function generateGraphData(): Promise<GraphData> {
 
   // Extract edges from wikilinks with type awareness and deduplication
   for (const article of articles) {
-    if (article.id === '_index') continue;
     const body = article.body ?? '';
     const lines = body.split('\n');
     const edgeSet = new Set<string>(); // for deduplication: "source|target"
@@ -109,7 +108,6 @@ export async function generateGraphData(): Promise<GraphData> {
 
   // Build nodes
   for (const article of articles) {
-    if (article.id === '_index') continue;
     const slug = article.id;
     const category = slug.split('/')[0] ?? 'uncategorized';
     const title = article.data.title ?? slug.split('/').pop()?.replace(/-/g, ' ') ?? slug;

@@ -1,11 +1,11 @@
 ---
 import { getCollection, render } from 'astro:content';
 import ArticleLayout from '../layouts/ArticleLayout.astro';
+import { publicWikiArticles } from '../utils/wiki-content';
 
 export async function getStaticPaths() {
   const articles = await getCollection('wiki');
-  return articles
-    .filter((a) => a.id !== '_index')
+  return publicWikiArticles(articles)
     .map((article) => {
       const slug = article.id;
       const category = slug.split('/')[0] ?? 'uncategorized';
@@ -30,7 +30,7 @@ if (slug.startsWith('exams/') && slug.includes('-written-exam')) {
   const yearMatch = slug.match(/exams\/(\d{4})-written-exam/);
   if (yearMatch) {
     const year = yearMatch[1];
-    const allArticles = await getCollection('wiki');
+    const allArticles = publicWikiArticles(await getCollection('wiki'));
     const questionArticles = allArticles
       .filter((a) => a.id.startsWith(`exams/${year}/q`))
       .sort((a, b) => {
@@ -57,7 +57,7 @@ if (slug.startsWith('exams/') && slug.includes('-operating-exam')) {
   const yearMatch = slug.match(/exams\/(\d{4})-operating-exam/);
   if (yearMatch) {
     const year = yearMatch[1];
-    const allArticles = await getCollection('wiki');
+    const allArticles = publicWikiArticles(await getCollection('wiki'));
 
     // Embed JPMs — sort: admin (ro, sro) → in-plant → sim
     const jpmTypeOrder: Record<string, number> = { 'ro': 0, 'sro': 1, 'ip': 2, 'sim': 3 };

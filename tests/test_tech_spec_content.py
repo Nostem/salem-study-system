@@ -13,6 +13,7 @@ def read(path: Path) -> str:
 
 def test_tech_spec_style_guide_exists_for_future_audits():
     guide = read(WIKI / "TECH_SPEC_STYLE_GUIDE.md")
+    assert "publish: false" in guide, "style guide is maintainer reference only and must not generate a public frontend route"
     for term in [
         "Required article structure",
         "Source authority",

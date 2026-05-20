@@ -1,6 +1,7 @@
 ---
 // TODO Phase 3: mastery dots — requires progress data source
 import { getCollection } from 'astro:content';
+import { publicWikiArticles } from '../utils/wiki-content';
 
 interface Props {
   currentSlug?: string;
@@ -10,7 +11,7 @@ interface Props {
 
 const { currentSlug, sidebarId, sidebarVariant = 'desktop' } = Astro.props;
 
-const articles = await getCollection('wiki');
+const articles = publicWikiArticles(await getCollection('wiki'));
 
 // Group articles by category (top-level directory)
 const categories: Record<string, { title: string; slug: string; status: string; depth: number }[]> = {};
@@ -32,7 +33,6 @@ const hideSubItems = new Set(['exams']);
 
 for (const article of articles) {
   const slug = article.id;
-  if (slug === '_index') continue;
 
   const parts = slug.split('/');
   const category = parts[0] ?? 'uncategorized';

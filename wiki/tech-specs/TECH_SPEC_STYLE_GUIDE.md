@@ -2,6 +2,7 @@
 title: "Tech Spec Wiki Style Guide"
 category: tech-specs
 status: edited
+publish: false
 ---
 
 # Tech Spec Wiki Style Guide

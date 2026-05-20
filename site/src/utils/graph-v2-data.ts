@@ -10,6 +10,7 @@ import type {
   WikiArticleInput,
 } from '../types/graph-v2';
 import quizBankV2Json from '../data/quiz-bank-v2.json';
+import { publicWikiArticles } from './wiki-content';
 
 const WIKILINK_RE = /\[\[([^\]]+)\]\]/g;
 
@@ -250,9 +251,8 @@ function computeCounts(nodes: GraphV2Node[], edges: GraphV2Edge[]): GraphV2Count
 
 /** Astro-side entry point. Loads the wiki collection and the bundled bank. */
 export async function generateGraphV2Data(): Promise<GraphV2Data> {
-  const articles = await getCollection('wiki');
+  const articles = publicWikiArticles(await getCollection('wiki'));
   const wikiInputs: WikiArticleInput[] = articles
-    .filter((a) => a.id !== '_index')
     .map((a) => ({
       id: a.id,
       title:

@@ -2,11 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import SearchModal from '../components/SearchModal.astro';
 import { getCollection } from 'astro:content';
+import { publicWikiArticles } from '../utils/wiki-content';
 
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 
 // Real article counts from collection
-const articles = await getCollection('wiki');
+const articles = publicWikiArticles(await getCollection('wiki'));
 const counts: Record<string, number> = {};
 for (const a of articles) {
   const cat = a.id.split('/')[0] ?? 'uncategorized';
@@ -24,7 +25,7 @@ for (const a of articles) {
   }
 }
 
-const totalArticles = articles.filter(a => a.id !== '_index').length;
+const totalArticles = articles.length;
 
 const navCards = [
   { name: 'Systems', count: counts['systems'] || 0, color: '#60a5fa', glyph: '◈', href: `${base}systems/reactor-coolant-system` },

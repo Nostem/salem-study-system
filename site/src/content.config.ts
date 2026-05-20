@@ -8,6 +8,7 @@ const wiki = defineCollection({
     category: z.string().optional(),
     status: z.enum(['draft', 'verified', 'outdated', 'edited']).optional().default('draft'),
     reference: z.enum(['yes', 'no']).optional(),
+    publish: z.boolean().optional().default(true),
     aliases: z.array(z.string()).optional().default([]),
   }),
 });
