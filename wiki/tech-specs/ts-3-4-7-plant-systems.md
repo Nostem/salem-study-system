@@ -394,28 +394,36 @@ TS Bases 3/4.7.6 (and S2.OP-SO.CAV-0001 P&L 3.6.3): when CAV is aligned to <span
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.7</div>
-The Auxiliary Building Ventilation System shall be OPERABLE.
+At least two supply fans and three exhaust fans shall be OPERABLE to maintain the Auxiliary Building at slightly negative pressure. One supply fan may be considered OPERABLE with its auto-start circuit administratively removed from service to prevent more than one supply fan from operating at any time.
 </div>
 
-**Applicability:** Modes 1, 2, 3, and 4
+**Applicability:** At all times
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|-----------------|-----------------|
+| Modes 1–4: one supply fan and/or one exhaust fan inoperable | Restore fan(s), otherwise be in Hot Standby then Cold Shutdown | 14 days; then 6 hrs + 30 hrs |
+| Modes 1–4: two supply and/or two exhaust fans inoperable | Restore at least one inoperable supply fan and two exhaust fans, otherwise be in Hot Standby then Cold Shutdown | 24 hrs; then 6 hrs + 30 hrs |
+| Auxiliary Building not slightly negative in Modes 1–4 | Restore slightly negative pressure, otherwise be in Hot Standby then Cold Shutdown | 4 hrs; then 6 hrs + 30 hrs |
+| During CORE ALTERATIONS: Auxiliary Building not slightly negative | Restore slightly negative pressure or suspend CORE ALTERATIONS | 4 hrs |
+| At all times: Auxiliary Building not slightly negative | Suspend radioactive gaseous releases via the Auxiliary Building | Immediately |
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.7 Auxiliary Building Ventilation System</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.7</div>
+<div class="callout-label">Basis — 3/4.7.7</div>
 
-The Auxiliary Building Ventilation System (ABVS) consists of two major subsystems designed to control building temperature during normal and emergency operation and to contain airborne contamination by maintaining slightly negative pressure during a LOCA:
+The Auxiliary Building Ventilation System (ABVS) controls Auxiliary Building temperature during normal and emergency operation and contains airborne contamination by maintaining slightly negative pressure during a LOCA. It has two major subsystems:
 
-1. **Exhaust system** — once-through filtration exhaust to contain particulate and gaseous contamination per 10 CFR 20. Consists of <span class="hi">three 50% capacity fans</span> powered from vital buses, designed for continuous operation to control building pressure at <span class="hi">-0.10" Water Gauge</span> with respect to atmosphere.
-2. **Supply system** — once-through air supply to maintain building temperatures within acceptable limits. Consists of <span class="hi">two 100% capacity fans</span> powered from vital buses. For TS LCO purposes, one supply fan must be administratively removed from auto-start on an actuation signal but must remain OPERABLE.
+1. **Exhaust system** — once-through filtration exhaust to contain particulate and gaseous contamination per 10 CFR 20. It has <span class="hi">three 50% capacity fans</span> powered from vital buses and is designed to control Auxiliary Building pressure at about <span class="hi">-0.10 in. water gauge</span> relative to atmosphere.
+2. **Supply system** — once-through air supply to maintain building temperatures within acceptable limits. It has <span class="hi">two 100% capacity fans</span> powered from vital buses. For TS LCO purposes, one supply fan must be administratively removed from auto-start but still OPERABLE.
 
-**Normal alignment:** Two exhaust fans and one supply fan. During cooler seasons, both supply fans may be secured and exhaust fans reduced to one (sufficient to maintain negative pressure).
+**Normal alignment:** two exhaust fans and one supply fan. During cooler seasons, both supply fans may be secured and exhaust reduced to one fan if negative pressure is maintained.
 
-<span class="hi-exam">**Emergency alignment:** At least two of three exhaust fans and one supply fan. During a Safety Injection, all three exhaust fans and one supply fan will auto-start.</span> If access/egress becomes difficult with three exhaust fans running, one exhaust fan should be secured.
+<span class="hi-exam">**Emergency alignment:** at least two of three exhaust fans and one of two supply fans. During a Safety Injection, all three exhaust fans and one supply fan auto-start.</span>
 
-The system also provides a flow path for containment purge supply and exhaust during Modes 5 and 6. Either the Containment Purge system or the ABVS with suction from containment atmosphere (with associated radiation monitoring) must be available whenever movement of irradiated fuel is in progress in containment with the equipment hatch open.
-
-<span class="hi-exam">OPERABILITY ensures that air potentially containing radioactive materials leaked from ECCS equipment following a LOCA is monitored prior to release from the plant via the plant vent.</span> Auxiliary building exhaust air filtration system functionality is NOT required to meet LCO 3.7.7. ABVS is discussed in UFSAR Section 9.4.2.
+The system also provides a containment purge flow path in Modes 5 and 6. Either Containment Purge or ABVS suction from containment atmosphere with associated radiation monitoring must be available when irradiated fuel is moved in containment with the equipment hatch open. <span class="hi-exam">OPERABILITY ensures air that may contain radioactive material leaked from ECCS equipment after a LOCA is monitored before release via the plant vent.</span> Auxiliary Building exhaust air filtration functionality itself is not required to meet LCO 3.7.7.
 
 *Amendment No. 252*
 </div>
@@ -427,25 +435,21 @@ The system also provides a flow path for containment purge supply and exhaust du
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.8</div>
-Each sealed source containing radioactive material with a half-life >30 days (excluding H-3) and in excess of 100 μCi shall have ≤ <span class="val-alarm">0.005 μCi</span> of removable contamination.
+Each sealed source containing radioactive material in excess of 100 μCi beta/gamma material or 5 μCi alpha material shall be free of ≥ <span class="val-alarm">0.005 μCi</span> removable contamination.
 </div>
 
 **Applicability:** At all times
 
-**Action:** With removable contamination exceeding limits, withdraw the source from use and either decontaminate or dispose.
+**Actions:**
 
-<details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.8 Sealed Source Contamination</summary>
-<div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.8</div>
+| Condition | Required Action | Completion Time |
+|-----------|-----------------|-----------------|
+| Sealed source has removable contamination ≥0.005 μCi | Withdraw source from use and either decontaminate/repair it or dispose of it per Commission regulations | Immediately |
+| LCO not met | LCO 3.0.3 does not apply | N/A |
 
-<span class="hi-exam">The removable contamination limitation (including alpha emitters) is based on 10 CFR 70.39(c) limits for plutonium.</span> This ensures leakage from byproduct, source, and special nuclear material sources will not exceed allowable intake values.
-
-Sealed sources are classified into three groups according to their use, with surveillance requirements commensurate with the probability of damage. Sources that are frequently handled are tested more often than those that are not. <span class="hi-exam">Sealed sources continuously enclosed within a shielded mechanism (e.g., within radiation monitoring or boron measuring devices) are considered to be stored and need not be tested unless removed from the shielded mechanism.</span>
+**Basis:** The removable contamination limit, including alpha emitters, is based on 10 CFR 70.39(c) plutonium limits. It ensures leakage from byproduct, source, and special nuclear material sources will not exceed allowable intake values. Sealed sources are classified according to use so frequently handled sources are tested more often. <span class="hi-exam">Sources continuously enclosed in shielded mechanisms, such as radiation monitoring or boron measuring devices, are considered stored and need not be tested unless removed from the shielded mechanism.</span>
 
 *Amendment No. 209*
-</div>
-</details>
 
 ---
 
@@ -453,27 +457,118 @@ Sealed sources are classified into three groups according to their use, with sur
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.9</div>
-All snubbers shall be OPERABLE. Snubbers excluded from this requirement are listed in the Snubber Inservice Inspection Program.
+All snubbers shall be OPERABLE.
 </div>
 
-**Applicability:** Modes 1, 2, 3, and 4 (for snubbers on safety-related systems)
+**Applicability:** Modes 1, 2, 3, and 4. Modes 5 and 6 also apply for snubbers located on systems required OPERABLE in those Modes.
 
-<details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.9 Snubbers</summary>
-<div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.9</div>
+**Actions:**
 
-<span class="hi-exam">All snubbers are required OPERABLE to ensure structural integrity of the RCS and all other safety-related systems is maintained during and following a seismic or other event initiating dynamic loads.</span> Snubbers excluded from the program are those installed on non-safety-related systems, and only if their failure (or failure of the system they are installed on) would have no adverse effect on any safety-related system.
+| Condition | Required Action | Completion Time |
+|-----------|-----------------|-----------------|
+| One or more snubbers inoperable | Replace or restore inoperable snubber(s) and perform engineering evaluation of the supported component per SR 4.7.9, or declare the supported system inoperable and enter its action statement | 72 hrs |
 
-The program for examination, testing, and service life monitoring is performed in accordance with ASME BPV Code Section XI or the OM Code and applicable addenda as required by 10 CFR 50.55a, except where the NRC has granted specific written relief or authorized alternatives.
+**Basis:** <span class="hi-exam">All snubbers are required OPERABLE to ensure structural integrity of the RCS and all other safety-related systems during and after a seismic or other dynamic-load event.</span> Snubbers excluded from the program are on non-safety-related systems only when failure of the snubber or system would not adversely affect any safety-related system. Examination, testing, and service-life monitoring are performed under ASME BPV Code Section XI or the OM Code as required by 10 CFR 50.55a, except where the NRC granted relief or authorized alternatives.
 
 *Amendment No. 284*
-</div>
-</details>
 
 ---
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-7-1.pdf" target="_blank">View TS PDF (Turbine Cycle)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-3.pdf" target="_blank">View TS PDF (CCW)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-4.pdf" target="_blank">View TS PDF (SW)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-7.pdf" target="_blank">View Bases PDF</a>
+## 3/4.7.10 — Chilled Water System — Auxiliary Building Subsystem
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.10</div>
+The Auxiliary Building chilled water loop serving safety-related loads shall be OPERABLE in one of three configurations: three chillers/two pumps, two chillers/two pumps during November–April with additional restrictions, or a cross-tied configuration with three chillers/two pumps from either unit.
+</div>
+
+**Applicability:** All Modes and during movement of irradiated fuel assemblies, subject to the configuration-specific restrictions in TS 3.7.10.
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|-----------------|-----------------|
+| Modes 1–4: one required chiller inoperable | Remove appropriate non-essential heat loads and restore chiller, otherwise be in Hot Standby then Cold Shutdown | 4 hrs; 14 days; then 6 hrs + 30 hrs |
+| Modes 1–4: two required chillers inoperable | Remove non-essential heat loads, align CREACS for single filtration using Salem Unit 1 train, restore one chiller, otherwise be in Hot Standby then Cold Shutdown | 4 hrs; 4 hrs; 72 hrs; then 6 hrs + 30 hrs |
+| Modes 1–4: one chilled water pump inoperable | Restore pump, otherwise be in Hot Standby then Cold Shutdown | 7 days; then 6 hrs + 30 hrs |
+| Modes 5/6 or irradiated fuel movement: one/two chillers or one pump inoperable | Same heat-load/CREACS restoration actions as applicable, otherwise suspend CORE ALTERATIONS and irradiated fuel movement | 4 hrs / 72 hrs / 7 days as applicable |
+
+**Basis:** The chilled water system provides normal and accident heat removal for the control room area, relay rooms, equipment rooms, and other safety-related areas. The three possible configurations are analyzed separately: (a) three chillers required, (b) two chillers required from November 1 through April 30, and (c) units cross-tied. Removing non-essential heat loads keeps remaining loads within the available chiller capacity. Two-chiller and cross-tie configurations have additional restrictions because CREACS, ECAC, service water temperature, outside air temperature, and unit-to-unit dependencies affect the remaining cooling margin.
+
+<span class="hi-exam">Cross-tied chilled water requires both CREACS trains OPERABLE; CREACS single-filtration operation is not allowed in the cross-tie configuration.</span> During Modes 5/6 and irradiated fuel movement, chilled water components are not considered inoperable solely because the backup diesel generator is inoperable, except this does not apply to the cross-tie configuration.
+
+*Amendment No. 297*
+
+---
+
+## 3/4.7.11 — Fuel Storage Pool Boron Concentration
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.11</div>
+Fuel storage pool boron concentration shall be ≥ <span class="val-normal">800 ppm</span> when fuel assemblies are stored in the pool and a fuel storage pool verification has not been performed since the last movement of fuel assemblies.
+</div>
+
+**Applicability:** When fuel assemblies are stored in the fuel storage pool and no post-movement fuel storage pool verification has been completed.
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|-----------------|-----------------|
+| Fuel storage pool boron concentration below limit | Immediately suspend movement of fuel assemblies and initiate action to restore boron concentration or perform fuel storage pool verification | Immediately |
+| LCO not met | LCO 3.0.3 does not apply | N/A |
+
+**Basis:** The spent fuel pool normally uses soluble boron to provide large subcriticality margin. The rack design is evaluated with unborated water for normal loaded configurations, but postulated accidents such as mislocating a fresh 5.0 wt% assembly rely on soluble boron. The analysis shows 600 ppm soluble boron offsets the reactivity from postulated accidents; the LCO uses <span class="hi-exam">800 ppm</span> to include measurement uncertainty and preserve the criticality assumptions. This LCO ends after verification confirms there are no misloaded assemblies and no further fuel movement is in progress.
+
+*Amendment No. 282*
+
+---
+
+## 3/4.7.12 — Fuel Assembly Storage in the Spent Fuel Pool
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.12</div>
+The combination of initial enrichment, burnup, and Integral Fuel Burnable Absorber (IFBA) of each fuel assembly stored in Region 1 or Region 2 shall be within the acceptable limits in SR 4.7.12.1 and SR 4.7.12.2.
+</div>
+
+**Applicability:** When any fuel assembly is stored in Region 1 or Region 2 of the spent fuel pool.
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|-----------------|-----------------|
+| Fuel assembly storage requirements not met | Immediately verify fuel storage pool boron concentration meets TS 3.7.11 and initiate movement of the non-complying assembly to a compliant location | Immediately |
+| LCO not met | LCO 3.0.3 does not apply | N/A |
+
+**Basis:** Region 1 and Region 2 of the Maximum Density Rack have different storage constraints. Region 1 accepts new fuel up to 4.25 wt% U-235 without restriction and higher-enrichment fuel up to 5.0 wt% only under IFBA, burnup, or location restrictions. Region 2 uses stricter checkerboard, peripheral, and burnup controls. <span class="hi-exam">The placement restrictions keep spent fuel pool keff < 0.95 assuming unborated water.</span> Before moving an assembly into a Region 1 or Region 2 storage location, verify both the final location criticality requirements and fuel pool boron concentration.
+
+*Amendment No. 244*
+
+---
+
+## 3/4.7.13 — Main Feedwater Isolation Valves, Regulating Valves, Bypass Valves, and SGFP Turbine Steam Stop Valves
+
+<div class="callout callout-important">
+<div class="callout-label">LCO 3.7.13</div>
+Four Main Feedwater Isolation Valves (FIVs), four Main Feedwater Regulating Valves (FRVs), four FRV Bypass Valves (FRVBVs), and four Steam Generator Feedwater Pump turbine steam stop valves shall be OPERABLE.
+</div>
+
+**Applicability:** Modes 1, 2, and 3 except when the affected valve is closed/deactivated or its associated flow path or steam supply is isolated as allowed by TS 3.7.13.
+
+**Actions:**
+
+| Condition | Required Action | Completion Time |
+|-----------|-----------------|-----------------|
+| One or more FIVs, FRVs, or FRVBVs inoperable | Restore to OPERABLE or close/isolate affected valve; verify closed/isolated periodically | 72 hrs; then every 7 days |
+| One or more SGFP turbine steam stop valves inoperable | Restore to OPERABLE, isolate associated steam supply, or isolate SGFP flow path; verify isolated periodically | 72 hrs; then every 7 days |
+| Two valves in the same feedwater flow path inoperable causing loss of feedwater isolation capability | Restore at least one valve or isolate affected flow path | 8 hrs |
+| Required actions not met | Be in Hot Standby then Hot Shutdown | 6 hrs + 6 hrs |
+
+**Basis:** These valves rapidly isolate feedwater after steam line rupture, feedwater line rupture, or feedwater malfunction to limit RCS cooldown and containment mass/energy release. Accident analyses assume specific credited closures: FIV closure in 32 seconds for certain feedwater malfunction and steam-line-break cases, FRV/FRVBV closure in 10 seconds for non-faulted steam generators after SI, and SGFP trip in 7 seconds for containment mass/energy analysis. The 72-hour action time is justified by remaining redundant isolation valves and low probability of an event during the allowed time. <span class="hi-exam">If two valves in the same flow path are inoperable such that automatic feedwater isolation capability for that path is lost, the shorter 8-hour action applies.</span>
+
+*Amendment No. 310*
+
+---
+
+<a href="/salem-study-system/ts-pdfs/ts-3-4-7-1.pdf" target="_blank">View TS PDF (Turbine Cycle)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-3.pdf" target="_blank">View TS PDF (CCW)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-4.pdf" target="_blank">View TS PDF (SW)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-7.pdf" target="_blank">View TS PDF (3/4.7.7)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-8.pdf" target="_blank">View TS PDF (3/4.7.8)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-9.pdf" target="_blank">View TS PDF (3/4.7.9)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-10.pdf" target="_blank">View TS PDF (3/4.7.10)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-11.pdf" target="_blank">View TS PDF (3/4.7.11)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-12.pdf" target="_blank">View TS PDF (3/4.7.12)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-13.pdf" target="_blank">View TS PDF (3/4.7.13)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-7.pdf" target="_blank">View Bases PDF</a>
 
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #2</div>

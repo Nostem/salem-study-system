@@ -23,6 +23,11 @@ The Reactor Trip System instrumentation channels and interlocks shown in Table 3
 
 ### Reactor Trip Setpoints (Table 2.2-1)
 
+<div class="callout callout-trap">
+<div class="callout-label">Direction matters</div>
+For high-level or high-pressure protective trips, the inequality points toward the unsafe high condition: the trip occurs at or above the listed value. For Pressurizer Water Level — High, trip occurs at or above 92% of instrument span, with an allowable value at or above 93%. Do not reverse this as a low-direction setpoint.
+</div>
+
 | # | Functional Unit | Trip Setpoint | Allowable Value |
 |---|----------------|---------------|-----------------|
 | 1 | Manual Reactor Trip | N/A | N/A |
@@ -35,7 +40,7 @@ The Reactor Trip System instrumentation channels and interlocks shown in Table 3
 | 8 | Overpower Delta-T | See Note 2 | See Note 4 |
 | 9 | Pressurizer Pressure — Low | ≥<span class="val-trip">1865 psig</span> | ≥1855 psig |
 | 10 | Pressurizer Pressure — High | ≤<span class="val-trip">2385 psig</span> | ≤2395 psig |
-| 11 | Pressurizer Water Level — High | ≤<span class="val-trip">92%</span> of instrument span | ≤93% |
+| 11 | Pressurizer Water Level — High | ≥<span class="val-trip">92%</span> of instrument span | ≥93% |
 | 12 | Loss of Flow | ≥<span class="val-trip">90%</span> of design flow per loop* | ≥89% |
 | 13 | SG Water Level — Low-Low | ≥<span class="val-trip">14.0%</span> NR span | ≥13.0% NR span |
 | 15 | Undervoltage — RCPs | ≥<span class="val-trip">2900 volts</span> each bus | ≥2850 volts |
@@ -178,7 +183,7 @@ The ESFAS instrumentation channels and interlocks shown in Table 3.3-3 shall be 
 |----------------|---------------|-----------------|--------|
 | Manual Initiation | N/A | N/A | TS T3.3-4 |
 | Automatic Actuation Logic | N/A | N/A | TS T3.3-4 |
-| Containment Pressure — High-High | ≤<span class="val-trip">15.0 psig</span> | ≤16.0 psig | TS T3.3-4 |
+| Containment Pressure — High-High | ≥<span class="val-trip">15.0 psig</span> | ≥16.0 psig | TS T3.3-4 |
 
 <div class="esf-function">
 
@@ -205,7 +210,7 @@ The ESFAS instrumentation channels and interlocks shown in Table 3.3-3 shall be 
 |----------------|---------------|-----------------|--------|
 | Manual | N/A (1/steam line) | N/A | TS T3.3-4 |
 | Automatic Actuation Logic | N/A | N/A | TS T3.3-4 |
-| Containment Pressure — High-High | ≤<span class="val-trip">15.0 psig</span> | ≤16.0 psig | TS T3.3-4 |
+| Containment Pressure — High-High | ≥<span class="val-trip">15.0 psig</span> | ≥16.0 psig | TS T3.3-4 |
 | Steam Flow High (2 lines) coincident with Tavg Lo-Lo | ≥40% steam flow function; Tavg ≤<span class="val-trip">543°F</span> | ≥44% function; Tavg ≤541°F | TS T3.3-4 |
 | Steam Flow High coincident with Steam Line Pressure Low | ≤<span class="val-trip">600 psig</span> steam line pressure | ≤579 psig | TS T3.3-4 |
 
