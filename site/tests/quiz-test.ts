@@ -1,4 +1,20 @@
 import { expect, type Page, test } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const quizBank = JSON.parse(readFileSync(resolve(__dirname, '../src/data/quiz-bank.json'), 'utf8'));
+
+function isPracticeEligible(question: any): boolean {
+  if (question.quizEligible) return true;
+  if (question.isRedacted) return false;
+  return question.choices.length >= 2 && question.acceptedAnswerLabels.length > 0;
+}
+
+function questionsForYear(year: number): any[] {
+  return quizBank.questions.filter((question: any) => question.examYear === year && isPracticeEligible(question));
+}
 
 function supabaseAuthStorageKey(): string {
   const url = process.env.PUBLIC_SUPABASE_URL || 'https://local-test.supabase.co';
@@ -7,6 +23,13 @@ function supabaseAuthStorageKey(): string {
 }
 
 async function authenticateQuizUser(page: Page): Promise<void> {
+  await page.route('**/functions/v1/quiz-review-queue', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, dueSlugs: [], allSlugs: [], states: {} }),
+    });
+  });
   await page.addInitScript(([storageKey]) => {
     window.localStorage.setItem(
       storageKey,
@@ -324,6 +347,40 @@ test('seeded quiz selection is deterministic for same seed and filters', async (
   expect(first).toHaveLength(5);
 });
 
+test('personalized Quick Quiz prioritizes unseen questions inside the selected filter pool', async ({ page }) => {
+  await authenticateQuizUser(page);
+  const pool = questionsForYear(2018);
+  const targetUnseen = pool[0];
+  const states = Object.fromEntries(
+    pool
+      .filter((question: any) => question.slug !== targetUnseen.slug)
+      .map((question: any) => [
+        question.slug,
+        {
+          attemptsCount: 4,
+          correctCount: 4,
+          incorrectCount: 0,
+          masteryState: 'mastered',
+          nextReviewAt: '2026-12-01T00:00:00.000Z',
+        },
+      ])
+  );
+  await page.route('**/functions/v1/quiz-review-queue', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, dueSlugs: [], allSlugs: Object.keys(states), states }),
+    });
+  });
+
+  await page.goto('quiz/?seed=12345');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('3');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.getByTestId('question-meta')).toContainText(`2018 Q${targetUnseen.questionNumber}`);
+});
+
 test('different seeds produce different question orderings for the same filters', async ({ page }) => {
   await authenticateQuizUser(page);
 
@@ -333,6 +390,7 @@ test('different seeds produce different question orderings for the same filters'
     await page.getByLabel('Question count').fill('1');
     await page.getByLabel('Mode').selectOption('blind');
     await page.getByRole('button', { name: /Start quiz/i }).click();
+    await expect(page.getByTestId('quiz-session')).toBeVisible();
     return (await page.getByTestId('question-meta').innerText()).trim();
   };
 
@@ -386,6 +444,7 @@ test('answer choices are seeded-shuffled but displayed as A-D with explanations 
   await page.getByLabel('Question count').fill('1');
   await page.getByLabel('Mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
+  await expect(page.getByTestId('quiz-session')).toBeVisible();
 
   const visibleLabels = await page.locator('#choice-list .quiz-choice-label').evaluateAll((nodes) =>
     nodes.map((node) => node.textContent?.replace('.', '').trim())
