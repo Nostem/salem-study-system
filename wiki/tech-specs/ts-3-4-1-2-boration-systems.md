@@ -152,8 +152,12 @@ b. RWST per Specification 3.5.5
 
 | Condition | Required Action | Completion Time |
 |-----------|----------------|-----------------|
-| Boric acid storage system inoperable | Restore to OPERABLE | 72 hrs, or Hot Standby in 6 hrs + Cold Shutdown in 30 hrs |
+| Boric acid storage system inoperable while it is being used as a required borated water source | Restore to OPERABLE, or be in at least Hot Standby and borated to SDM equivalent to ≥1% Δk/k at 200°F | 72 hrs, or Hot Standby in 6 hrs; restore within next 7 days or be in Cold Shutdown within next 30 hrs |
 | RWST inoperable | Per Specification 3.5.5 | Per Spec 3.5.5 |
+
+**Basis:** In Modes 1–4, the required borated water sources support the boron injection flow paths required by TS 3.1.2.1 and TS 3.1.2.2. The boric acid storage system must satisfy both contained volume and boron concentration on Figure 3.1-2, and must maintain a minimum solution temperature of <span class="hi">63°F</span>. The 63°F limit comes from the boric acid tanks, pumps, valves, and piping containing a 3.75–4% by-weight boric acid solution; it provides a <span class="hi-exam">5°F margin</span> to ensure boron will not precipitate out. If ambient temperature drops, tank heaters and boric acid pump recirculation maintain the tank and pump at or about 63°F. A small amount may precipitate in the flowpath between the recirculation line and charging pump suction, but the Bases state this will not cause flow blockage even below 50°F.
+
+Figure 3.1-2 ties acceptable boric acid tank volume to boron concentration and RWST concentration. This is why close-margin surveillance points can be SAT or UNSAT by fractions of a percent: the curve is the controlling source for BAST OPERABILITY in Modes 1–4, while the <span class="hi-exam">RWST is governed by Specification 3.5.5</span>. The maximum expected boration capability requirement occurs at EOL from full-power equilibrium xenon conditions and assumes the most reactive control rod is not inserted. It requires borated water from a boric acid tank in accordance with Figure 3.1-2 plus additional makeup from the second boric acid tank/batching or RWST makeup; if RWST is the only borated water source, the Bases bound the requirement at 73,800 gallons of 2300 ppm water, while ECCS requirements separately require the much larger RWST inventory in Modes 1–4.
 
 *Amendment No. 309*
 
