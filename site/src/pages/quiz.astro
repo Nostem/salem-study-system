@@ -230,7 +230,8 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
   </script>
 
   <script>
-    import { submitQuizResults } from '../utils/auth-client';
+    import { getQuizReviewQueue, submitQuizResults } from '../utils/auth-client';
+    import { personalizeQuestionOrder } from '../utils/quiz-personalization';
 
     const bank = JSON.parse(document.getElementById('quiz-bank-json').textContent);
     const form = document.getElementById('quiz-builder');
@@ -241,7 +242,26 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
     const reviewEl = document.getElementById('quiz-review');
     const filterSummary = document.getElementById('filter-summary');
     const draftStorageKey = 'salem-study-quiz-draft-v1';
+    const personalizationTimeoutMs = 1500;
+    const personalization = { loaded: false, states: null };
     const state = { questions: [], index: 0, answers: new Map(), mode: 'feedback', filters: {}, startedAt: Date.now(), progressSaved: false, completionMode: 'completed' };
+
+    async function loadPersonalizationStates() {
+      if (personalization.loaded) return personalization.states;
+      try {
+        const timeout = new Promise((resolve) => setTimeout(() => resolve(null), personalizationTimeoutMs));
+        const response = await Promise.race([
+          getQuizReviewQueue().catch(() => null),
+          timeout,
+        ]);
+        const states = response?.states && typeof response.states === 'object' ? response.states : null;
+        personalization.states = states && Object.keys(states).length > 0 ? states : null;
+      } catch {
+        personalization.states = null;
+      }
+      personalization.loaded = true;
+      return personalization.states;
+    }
 
     function parseSeedFromUrl() {
       try {
@@ -320,7 +340,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       };
     }
 
-    function filteredQuestions(filters, useCount = true) {
+    function filteredQuestions(filters, useCount = true, personalizationStates = null) {
       const selectedYear = filters.examYear === 'all' ? 'all' : Number(filters.examYear);
       const matches = bank.questions.filter((question) => {
         if (!isPracticeEligible(question)) return false;
@@ -333,7 +353,9 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         return true;
       });
       if (!useCount) return matches;
-      const ordered = Number.isFinite(filters.seed) ? shuffleWithRng(matches, mulberry32(filters.seed)) : matches;
+      const ordered = personalizationStates
+        ? personalizeQuestionOrder(matches, personalizationStates, { seed: filters.seed })
+        : Number.isFinite(filters.seed) ? shuffleWithRng(matches, mulberry32(filters.seed)) : matches;
       return ordered.slice(0, Math.max(1, Math.min(filters.count, ordered.length)));
     }
 
@@ -593,12 +615,13 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
 
     form.addEventListener('change', updateSummary);
     form.addEventListener('input', updateSummary);
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
       event.preventDefault();
       const filters = currentFilters();
       const seedOverride = parseSeedFromUrl();
       filters.seed = seedOverride !== null ? seedOverride : generateSeed();
-      state.questions = filteredQuestions(filters, true).map((question, index) =>
+      const personalizationStates = await loadPersonalizationStates();
+      state.questions = filteredQuestions(filters, true, personalizationStates).map((question, index) =>
         withShuffledChoices(question, filters.seed + index + 1)
       );
       state.index = 0;
