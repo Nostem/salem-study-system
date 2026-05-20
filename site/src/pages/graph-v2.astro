@@ -743,6 +743,11 @@ const topicCards = graph.nodes
       document.getElementById('gv2-topic-no-results')?.classList.toggle('hidden', visible !== 0);
     });
 
+    document.querySelectorAll<HTMLInputElement>('[data-gv2-builder-toggle]:checked').forEach((input) => {
+      const id = input.getAttribute('data-gv2-builder-toggle');
+      if (id) builderSelection.add(id);
+    });
+
     const urlId = new URLSearchParams(window.location.search).get('id');
     if (urlId) {
       document.querySelector<HTMLDetailsElement>('[data-testid="gv2-advanced"]')?.setAttribute('open', '');
