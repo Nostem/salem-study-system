@@ -53,16 +53,16 @@ const topicOptions = [...topicGroups.entries()]
   .sort((a, b) => a.title.localeCompare(b.title));
 ---
 
-<StudyLayout title="Advanced Quiz" active="advanced">
+<StudyLayout title="Quick Quiz" active="quick">
   <main class="max-w-[1180px] mx-auto px-4 sm:px-6 py-6 lg:py-10">
     <header class="border-b border-border pb-5 mb-5">
       <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
       <div class="mt-2 flex flex-wrap items-end justify-between gap-3">
         <div>
-          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Advanced practice · structured bank</div>
-          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Advanced Quiz</h1>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-1">Compatibility builder · moved into Quick Quiz</div>
+          <h1 class="font-serif text-3xl sm:text-4xl text-text-primary leading-tight">Quick Quiz advanced builder</h1>
           <p class="text-sm text-text-muted max-w-2xl mt-1">
-            Build targeted, source-linked practice from the structured question bank. Start a random set, filter by topic/year, or choose exact questions without exposing answers first.
+            This legacy builder remains for saved links, but the primary flow is now Quick Quiz with organized advanced topic filters.
           </p>
         </div>
         <div class="flex flex-col gap-3 min-w-[180px]">
@@ -79,11 +79,11 @@ const topicOptions = [...topicGroups.entries()]
           <div class="flex flex-wrap gap-2 sm:justify-end">
             <a
               href={`${base}quiz/`}
-              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue no-underline hover:bg-bg"
             >Quick Quiz</a>
             <a
               href={`${base}quiz-v2/play/`}
-              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-accent-blue rounded text-accent-blue no-underline hover:bg-bg"
+              class="font-mono text-[11px] uppercase tracking-wider px-3 py-2 border border-border rounded text-text-muted no-underline hover:bg-bg hover:text-text-primary"
             >Practice</a>
             <a
               href={`${base}quiz-v2/review/`}

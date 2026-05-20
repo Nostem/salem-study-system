@@ -24,7 +24,6 @@ const quickHref = `${base}quiz/`;
 const reviewHref = `${base}quiz-v2/review/`;
 const mapHref = `${base}graph-v2/`;
 const progressHref = `${base}history/`;
-const builderHref = `${base}quiz-v2/`;
 ---
 
 <StudyLayout title="Study" active="study">
@@ -79,19 +78,16 @@ const builderHref = `${base}quiz-v2/`;
       <a data-testid="study-card-quick" href={quickHref} class="study-card study-card-primary">
         <span class="study-card-kicker">Recommended</span>
         <strong>Quick Quiz</strong>
-        <span>Jump into a fast practice set — pick a year or topic, answer, and get your score.</span>
+        <span>Start a fast practice set, then narrow it with year, system, Tech Spec, procedure, or abnormal-procedure filters when you need targeted reps.</span>
         <span class="study-card-action">Start →</span>
       </a>
 
-      <article data-testid="study-card-advanced" class="study-card">
-        <span class="study-card-kicker">Targeted practice</span>
-        <strong>Advanced Quiz</strong>
-        <span>Build a targeted set with detailed filters, or explore topics visually before you practice.</span>
-        <div class="mt-auto grid gap-2">
-          <a data-testid="study-card-advanced-build" href={builderHref} class="study-card-button">Build a custom set →</a>
-          <a data-testid="study-card-advanced-map" href={mapHref} class="study-card-button">Open Study Map →</a>
-        </div>
-      </article>
+      <a data-testid="study-card-map" href={mapHref} class="study-card">
+        <span class="study-card-kicker">Explore before practice</span>
+        <strong>Study Map</strong>
+        <span>Browse topic cards and relationships when you want to understand where a procedure, system, or Tech Spec fits.</span>
+        <span class="study-card-action">Open map →</span>
+      </a>
 
       <a data-testid="study-card-progress" href={progressHref} class="study-card">
         <span class="study-card-kicker">History and review</span>
