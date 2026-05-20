@@ -17,6 +17,9 @@ export type QuizTopic = {
   wikiSlug?: string | null;
 };
 
+export type QuizTopicGroupKey = 'primary' | 'techSpecs' | 'procedures' | 'other';
+export type QuizTopicGroups = Record<QuizTopicGroupKey, QuizTopic[]>;
+
 export type QuizQuestion = {
   slug: string;
   examYear: number;
@@ -86,16 +89,38 @@ export function getExamYears(bank: QuizBank = quizBank): number[] {
 }
 
 function isSelectableTopic(topic: QuizTopic): boolean {
-  const topicType = String(topic.topicType ?? topic.topic_type ?? '').toLowerCase();
-  return !['abnormal', 'procedure'].includes(topicType);
+  const type = topicType(topic);
+  return !['abnormal', 'procedure'].includes(type);
 }
 
-export function getQuizTopics(bank: QuizBank = quizBank): QuizTopic[] {
-  const used = new Set(bank.questions.flatMap((question) => question.topics.map((topic) => topic.slug)));
-  const byTitle = new Map<string, QuizTopic>();
+function topicType(topic: QuizTopic): string {
+  return String(topic.topicType ?? topic.topic_type ?? '').toLowerCase();
+}
 
-  bank.topics
-    .filter((topic) => used.has(topic.slug) && isSelectableTopic(topic))
+function isProcedureLikeTopic(topic: QuizTopic): boolean {
+  const type = topicType(topic);
+  const slug = topic.slug.toLowerCase();
+  const title = topic.title.toLowerCase();
+  return ['abnormal', 'procedure', 'eop'].includes(type)
+    || slug.startsWith('ab-')
+    || slug.startsWith('op-')
+    || slug.startsWith('s2-op-')
+    || slug.startsWith('eop-')
+    || title.startsWith('ab.')
+    || title.startsWith('eop');
+}
+
+function quizTopicGroup(topic: QuizTopic): QuizTopicGroupKey {
+  const type = topicType(topic);
+  if (type === 'tech_spec' || topic.slug.startsWith('ts-')) return 'techSpecs';
+  if (isProcedureLikeTopic(topic)) return 'procedures';
+  if (type === 'system' || type === 'admin' || type === '') return 'primary';
+  return 'other';
+}
+
+function mergeTopicsByTitle(topics: QuizTopic[]): QuizTopic[] {
+  const byTitle = new Map<string, QuizTopic>();
+  topics
     .sort((a, b) => a.title.localeCompare(b.title) || a.slug.localeCompare(b.slug))
     .forEach((topic) => {
       const existing = byTitle.get(topic.title);
@@ -105,8 +130,32 @@ export function getQuizTopics(bank: QuizBank = quizBank): QuizTopic[] {
       }
       existing.slugs = [...new Set([...(existing.slugs || [existing.slug]), topic.slug])].sort();
     });
-
   return [...byTitle.values()].sort((a, b) => a.title.localeCompare(b.title));
+}
+
+export function getQuizTopics(bank: QuizBank = quizBank): QuizTopic[] {
+  const used = new Set(bank.questions.flatMap((question) => question.topics.map((topic) => topic.slug)));
+  return mergeTopicsByTitle(bank.topics.filter((topic) => used.has(topic.slug) && isSelectableTopic(topic)));
+}
+
+export function getQuizTopicGroups(bank: QuizBank = quizBank): QuizTopicGroups {
+  const used = new Set(bank.questions.flatMap((question) => question.topics.map((topic) => topic.slug)));
+  const grouped: QuizTopicGroups = {
+    primary: [],
+    techSpecs: [],
+    procedures: [],
+    other: [],
+  };
+  for (const topic of bank.topics) {
+    if (!used.has(topic.slug)) continue;
+    grouped[quizTopicGroup(topic)].push(topic);
+  }
+  return {
+    primary: mergeTopicsByTitle(grouped.primary),
+    techSpecs: mergeTopicsByTitle(grouped.techSpecs),
+    procedures: mergeTopicsByTitle(grouped.procedures),
+    other: mergeTopicsByTitle(grouped.other),
+  };
 }
 
 export function filterQuizQuestions(filters: QuizFilters = {}, bank: QuizBank = quizBank): QuizQuestion[] {

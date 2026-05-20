@@ -3,7 +3,7 @@ import BaseLayout from './BaseLayout.astro';
 
 interface Props {
   title: string;
-  active?: 'study' | 'quick' | 'advanced' | 'progress';
+  active?: 'study' | 'quick' | 'map' | 'progress';
   noindex?: boolean;
 }
 
@@ -15,7 +15,7 @@ const base = import.meta.env.BASE_URL.endsWith('/')
 const navItems = [
   { key: 'study', label: 'Study', href: `${base}study/` },
   { key: 'quick', label: 'Quick Quiz', href: `${base}quiz/` },
-  { key: 'advanced', label: 'Advanced Quiz', href: `${base}quiz-v2/` },
+  { key: 'map', label: 'Study Map', href: `${base}graph-v2/` },
   { key: 'progress', label: 'My Progress', href: `${base}history/` },
 ];
 ---

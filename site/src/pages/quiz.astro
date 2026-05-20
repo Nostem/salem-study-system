@@ -1,10 +1,16 @@
 ---
 import StudyLayout from '../layouts/StudyLayout.astro';
-import { buildQuizSummary, getExamYears, getQuizTopics, quizBank } from '../utils/quiz-data';
+import { buildQuizSummary, getExamYears, getQuizTopicGroups, quizBank } from '../utils/quiz-data';
 
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
 const examYears = getExamYears();
-const topics = getQuizTopics();
+const topicGroups = getQuizTopicGroups();
+const topics = [
+  ...topicGroups.primary,
+  ...topicGroups.techSpecs,
+  ...topicGroups.procedures,
+  ...topicGroups.other,
+];
 const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
 ---
 
@@ -32,11 +38,11 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
         <h1 class="font-serif text-4xl text-text-primary leading-tight mt-3 mb-1">Quick Quiz</h1>
         <p class="text-sm text-text-muted max-w-2xl">
-          Fast account-synced practice from the imported Salem written exam bank. Use this mode when you want simple reps without extra map/source controls.
+          Fast account-synced practice from the imported Salem written exam bank. Start simple, or open the advanced topic filters for Tech Specs, procedures, abnormal procedures, and other targeted pools.
         </p>
         <div class="flex flex-wrap gap-3 mt-4">
           <a href={`${base}history/`} class="quiz-secondary no-underline inline-flex w-fit">View my progress</a>
-          <a href={`${base}quiz-v2/`} class="quiz-secondary no-underline inline-flex w-fit">Open Advanced Quiz</a>
+          <a href={`${base}graph-v2/`} class="quiz-secondary no-underline inline-flex w-fit">Open Study Map</a>
         </div>
       </div>
       <div class="grid grid-cols-3 gap-2 text-center">
@@ -57,7 +63,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
 
     <section class="grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-5">
       <form id="quiz-builder" class="bg-bg-card border border-border rounded-lg p-5 h-fit">
-        <h2 class="font-mono text-xs uppercase tracking-[0.16em] text-text-primary mb-4">Build classic quiz</h2>
+        <h2 class="font-mono text-xs uppercase tracking-[0.16em] text-text-primary mb-4">Build quiz</h2>
 
         <label class="quiz-field">
           <span>Exam year</span>
@@ -71,13 +77,55 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
           <span>Topics</span>
           <p class="text-[11px] text-text-muted mb-2">Leave all unchecked to include every topic. Select multiple to build a mixed-topic quiz.</p>
           <div id="topic-slugs" data-testid="topic-filter-list" class="quiz-topic-list">
-            {topics.map((topic) => (
+            {topicGroups.primary.map((topic) => (
               <label class="quiz-topic-check">
                 <input type="checkbox" name="topicSlugs" value={(topic.slugs || [topic.slug]).join(',')} />
                 <span>{topic.title}</span>
               </label>
             ))}
           </div>
+          <details data-testid="advanced-topic-filters" class="quiz-advanced-topics mt-3">
+            <summary>Advanced topic filters</summary>
+            {topicGroups.techSpecs.length > 0 && (
+              <section class="quiz-topic-section" aria-labelledby="tech-spec-topic-title">
+                <h3 id="tech-spec-topic-title">Tech Specs</h3>
+                <div class="quiz-topic-list quiz-topic-list-compact">
+                  {topicGroups.techSpecs.map((topic) => (
+                    <label class="quiz-topic-check">
+                      <input type="checkbox" name="topicSlugs" value={(topic.slugs || [topic.slug]).join(',')} />
+                      <span>{topic.title}</span>
+                    </label>
+                  ))}
+                </div>
+              </section>
+            )}
+            {topicGroups.procedures.length > 0 && (
+              <section class="quiz-topic-section" aria-labelledby="procedure-topic-title">
+                <h3 id="procedure-topic-title">Procedures and abnormal procedures</h3>
+                <div class="quiz-topic-list quiz-topic-list-compact">
+                  {topicGroups.procedures.map((topic) => (
+                    <label class="quiz-topic-check">
+                      <input type="checkbox" name="topicSlugs" value={(topic.slugs || [topic.slug]).join(',')} />
+                      <span>{topic.title}</span>
+                    </label>
+                  ))}
+                </div>
+              </section>
+            )}
+            {topicGroups.other.length > 0 && (
+              <section class="quiz-topic-section" aria-labelledby="other-topic-title">
+                <h3 id="other-topic-title">Other targeted pools</h3>
+                <div class="quiz-topic-list quiz-topic-list-compact">
+                  {topicGroups.other.map((topic) => (
+                    <label class="quiz-topic-check">
+                      <input type="checkbox" name="topicSlugs" value={(topic.slugs || [topic.slug]).join(',')} />
+                      <span>{topic.title}</span>
+                    </label>
+                  ))}
+                </div>
+              </section>
+            )}
+          </details>
         </fieldset>
 
         <label class="quiz-field">

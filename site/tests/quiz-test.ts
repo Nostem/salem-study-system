@@ -144,7 +144,7 @@ test('quiz stem preserves blank cells in imported tables', async ({ page }) => {
   await expect(page.locator('#question-stem')).not.toContainText('CH I | CH II | CH III | CH IV\n2PT-455');
 });
 
-test('topic filter supports multiple wiki-formatted topic selections without duplicates or abnormal procedures', async ({ page }) => {
+test('topic filter keeps common systems simple and moves advanced procedure nodes into organized sections', async ({ page }) => {
   await authenticateQuizUser(page);
   await page.goto('quiz/');
 
@@ -157,8 +157,14 @@ test('topic filter supports multiple wiki-formatted topic selections without dup
   expect(topicLabels.filter((label) => label === 'CCW')).toHaveLength(1);
   expect(topicLabels.filter((label) => label === 'Pressurizer & PRT')).toHaveLength(1);
   expect(topicLabels.filter((label) => /Pressurizer And Prt/i.test(label))).toHaveLength(0);
-  expect(topicLabels.filter((label) => label === 'TS 3/4.4 — Reactor Coolant System')).toHaveLength(1);
-  expect(topicLabels.some((label) => /^AB\./.test(label) || /Abnormal/i.test(label))).toBe(false);
+
+  await expect(page.getByTestId('topic-filter-list')).not.toContainText(/^AB\./);
+  await expect(page.getByTestId('advanced-topic-filters')).toBeVisible();
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('Tech Specs');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('Procedures and abnormal procedures');
+  await page.getByTestId('advanced-topic-filters').locator('summary').click();
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('TS 3/4.4 — Reactor Coolant System');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('AB.CW-0001 — Circulating Water Malfunction');
 
   await page.getByLabel('Pressurizer Level & Press Control').check();
   await page.getByLabel('RPS/SSPS').check();
@@ -167,6 +173,20 @@ test('topic filter supports multiple wiki-formatted topic selections without dup
 
   await expect(page.getByTestId('quiz-session')).toBeVisible();
   await expect(page.getByTestId('question-position')).toContainText(/Question 1 of [1-5]/);
+});
+
+test('advanced procedure filters on Quick Quiz can start targeted practice', async ({ page }) => {
+  await authenticateQuizUser(page);
+  await page.goto('quiz/?seed=1');
+
+  await page.getByTestId('advanced-topic-filters').locator('summary').click();
+  await page.getByLabel('AB.CW-0001 — Circulating Water Malfunction').check();
+  await page.getByLabel('Question count').fill('5');
+  await expect(page.locator('#filter-summary')).toContainText(/1 eligible question/);
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.getByTestId('quiz-session')).toBeVisible();
+  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 1');
 });
 
 test('feedback mode shows immediate right or wrong result after selecting an answer', async ({ page }) => {

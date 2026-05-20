@@ -26,7 +26,7 @@ const sessionMeta = questions.map((q) => ({
 
 ---
 
-<StudyLayout title="Practice" active="advanced">
+<StudyLayout title="Practice" active="quick">
   <main class="max-w-[860px] mx-auto px-4 sm:px-6 py-6 lg:py-10 flex flex-col">
     <header class="border-b border-border pb-5 mb-5">
       <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
@@ -771,9 +771,10 @@ const sessionMeta = questions.map((q) => ({
     const candidateQuestions = meta.map(metaToQuestion);
     const params = new URLSearchParams(window.location.search);
     const { filters, seed } = parseFiltersFromUrl(params);
+    const sessionSeed = seed ?? `practice-${Date.now()}-${Math.floor(Math.random() * 0x7fffffff)}`;
     currentFilters = filters;
-    currentSeed = seed;
-    applySession(buildQuizSession(candidateQuestions, filters, seed ? { seed } : {}), 'Preview mode · log in to save progress');
+    currentSeed = sessionSeed;
+    applySession(buildQuizSession(candidateQuestions, filters, { seed: sessionSeed }), 'Preview mode · log in to save progress');
     attachChoiceHandlers();
     attachNavHandlers();
     attachBackendSessionHandler();

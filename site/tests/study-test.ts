@@ -3,14 +3,14 @@ import { expect, test } from '@playwright/test';
 const learnerRoutes = [
   { path: 'study/', active: 'Study' },
   { path: 'quiz/', active: 'Quick Quiz' },
-  { path: 'quiz-v2/', active: 'Advanced Quiz' },
-  { path: 'quiz-v2/play/', active: 'Advanced Quiz' },
+  { path: 'quiz-v2/', active: 'Quick Quiz' },
+  { path: 'quiz-v2/play/', active: 'Quick Quiz' },
   { path: 'quiz-v2/review/', active: 'My Progress' },
-  { path: 'graph-v2/', active: 'Advanced Quiz' },
+  { path: 'graph-v2/', active: 'Study Map' },
   { path: 'history/', active: 'My Progress' },
 ];
 
-test('Study presents a three-choice learner hub with Quick, Advanced, and Progress paths', async ({ page }) => {
+test('Study presents one quiz entry plus Study Map and Progress paths', async ({ page }) => {
   await page.goto('study/');
 
   await expect(page.getByRole('heading', { name: 'Study' })).toBeVisible();
@@ -19,9 +19,9 @@ test('Study presents a three-choice learner hub with Quick, Advanced, and Progre
 
   await expect(page.getByTestId('study-continue-banner')).toBeHidden();
   await expect(page.getByTestId('study-card-quick')).toHaveAttribute('href', /\/quiz\/?$/);
-  await expect(page.getByTestId('study-card-advanced-build')).toHaveAttribute('href', /\/quiz-v2\/?$/);
-  await expect(page.getByTestId('study-card-advanced-map')).toHaveAttribute('href', /\/graph-v2\/?$/);
+  await expect(page.getByTestId('study-card-map')).toHaveAttribute('href', /\/graph-v2\/?$/);
   await expect(page.getByTestId('study-card-progress')).toHaveAttribute('href', /\/history\/?$/);
+  await expect(page.getByText('Advanced Quiz')).toHaveCount(0);
 
   await expect(page.getByText('Advanced / legacy tools')).toHaveCount(0);
   await expect(page.getByText(/without deciding which quiz engine/i)).toHaveCount(0);
@@ -69,9 +69,10 @@ for (const route of learnerRoutes) {
     await expect(nav).toBeVisible();
     await expect(nav.getByRole('link', { name: /^Study$/ })).toHaveAttribute('href', /\/study\/?$/);
     await expect(nav.getByRole('link', { name: /^Quick Quiz$/ })).toHaveAttribute('href', /\/quiz\/?$/);
-    await expect(nav.getByRole('link', { name: /^Advanced Quiz$/ })).toHaveAttribute('href', /\/quiz-v2\/?$/);
+    await expect(nav.getByRole('link', { name: /^Study Map$/ })).toHaveAttribute('href', /\/graph-v2\/?$/);
+    await expect(nav.getByRole('link', { name: /^Advanced Quiz$/ })).toHaveCount(0);
     await expect(nav.getByRole('link', { name: /^My Progress$/ })).toHaveAttribute('href', /\/history\/?$/);
-    await expect(nav.getByRole('link', { name: route.active })).toHaveAttribute('aria-current', 'page');
+    await expect(nav.getByRole('link', { name: route.active, exact: true })).toHaveAttribute('aria-current', 'page');
   });
 }
 
@@ -80,19 +81,19 @@ test('mobile Study keeps the three learner choices clear and full-width', async 
   await page.goto('study/');
 
   const quick = page.getByTestId('study-card-quick');
-  const advanced = page.getByTestId('study-card-advanced');
+  const map = page.getByTestId('study-card-map');
   const progress = page.getByTestId('study-card-progress');
 
   await expect(quick).toBeVisible();
-  await expect(advanced).toBeVisible();
+  await expect(map).toBeVisible();
   await expect(progress).toBeVisible();
   await expect(quick).toBeInViewport();
 
   const quickBox = await quick.boundingBox();
-  const advancedBox = await advanced.boundingBox();
+  const mapBox = await map.boundingBox();
   const progressBox = await progress.boundingBox();
   expect(quickBox?.width).toBeGreaterThan(300);
-  expect(advancedBox?.width).toBeGreaterThan(300);
+  expect(mapBox?.width).toBeGreaterThan(300);
   expect(progressBox?.width).toBeGreaterThan(300);
 });
 
