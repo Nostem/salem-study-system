@@ -7,13 +7,16 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && npx pagefind --site dist --glob '**/*.html'",
+    "build:astro": "astro build",
+    "build:search": "pagefind --site dist --glob '**/*.html'",
+    "build": "npm run build:astro && npm run build:search",
+    "check": "astro sync && tsc --noEmit --project tsconfig.json",
     "preview": "astro preview",
     "astro": "astro",
-    "test:node": "node --test tests/quiz-v2-session.node.test.ts tests/quiz-v2-session-golden.node.test.ts tests/quiz-v2-backend-session.node.test.ts tests/quiz-v2-review.node.test.ts tests/quiz-v2-progress.node.test.ts tests/fsrs-whole-question.node.test.ts tests/quiz-personalization.node.test.ts",
-    "test:ui": "npm run build && npx playwright test",
-    "test:ui:smoke": "npm run build && npx playwright test tests/study-test.ts tests/navigation-test.ts tests/history-test.ts tests/quiz-test.ts tests/quiz-v2-test.ts tests/quiz-v2-play-test.ts tests/quiz-v2-review-test.ts tests/graph-v2-test.ts --reporter=line",
-    "test:ui:full": "FULL_SITE_UI_SWEEP=1 npm run build && FULL_SITE_UI_SWEEP=1 npx playwright test"
+    "test:node": "node --test tests/safe-json.node.test.ts tests/auth-client-contract.node.test.ts tests/quiz-v2-session.node.test.ts tests/quiz-v2-session-golden.node.test.ts tests/quiz-v2-backend-session.node.test.ts tests/quiz-v2-review.node.test.ts tests/quiz-v2-progress.node.test.ts tests/fsrs-whole-question.node.test.ts tests/quiz-personalization.node.test.ts",
+    "test:ui": "npm run build && playwright test",
+    "test:ui:smoke": "npm run build:astro && playwright test tests/study-test.ts tests/navigation-test.ts tests/history-test.ts tests/quiz-test.ts tests/quiz-v2-test.ts tests/quiz-v2-play-test.ts tests/quiz-v2-review-test.ts tests/graph-v2-test.ts --reporter=line",
+    "test:ui:full": "FULL_SITE_UI_SWEEP=1 npm run build && FULL_SITE_UI_SWEEP=1 playwright test"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.2",
@@ -28,6 +31,7 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.11.1",
     "@playwright/test": "^1.59.1",
-    "@types/d3": "^7.4.3"
+    "@types/d3": "^7.4.3",
+    "typescript": "^5.9.3"
   }
 }

@@ -10,7 +10,7 @@ export interface QuizSessionFilters {
   questionSlugs?: string[];
   referenceMode?: ReferenceMode;
   quizEligibleOnly?: boolean;
-  count?: number;
+  count?: number | null;
 }
 
 export interface NormalizedFilters {

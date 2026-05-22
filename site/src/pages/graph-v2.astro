@@ -1,5 +1,6 @@
 ---
 import StudyLayout from '../layouts/StudyLayout.astro';
+import { safeInlineJson } from '../utils/safe-json';
 import { generateGraphV2Data } from '../utils/graph-v2-data';
 import { createGraphV2DetailHelpers, renderedGraphV2Nodes } from '../utils/graph-v2-detail-data';
 
@@ -315,7 +316,7 @@ const topicCards = graph.nodes
   </main>
 </StudyLayout>
 
-<script id="gv2-detail-data-url" type="application/json" set:html={JSON.stringify(detailDataUrl)}></script>
+<script id="gv2-detail-data-url" type="application/json" set:html={safeInlineJson(detailDataUrl)}></script>
 
 <script>
   const filterPanel = document.querySelector<HTMLDetailsElement>('[data-testid="gv2-mobile-filters"]');
