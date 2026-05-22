@@ -1,4 +1,4 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.105.1';
+import { createAdminClient, jsonResponse, readJsonBody, requirePost, requireUser } from '../_shared/http.ts';
 
 type ReferenceMode = 'include' | 'exclude' | 'only';
 
@@ -26,22 +26,10 @@ type QuestionRow = {
   track: string | null;
   status: string;
   quiz_eligible: boolean;
+  is_redacted: boolean | null;
   requires_reference: boolean | null;
   question_topics?: Array<{ topics: { slug: string } | null }>;
 };
-
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-};
-
-function jsonResponse(body: Record<string, unknown>, status = 200): Response {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-  });
-}
 
 function uniqueSortedStrings(values: unknown): string[] {
   if (!Array.isArray(values)) return [];
@@ -131,11 +119,13 @@ function questionTopicSlugs(question: QuestionRow): string[] {
 }
 
 function matchesFilters(question: QuestionRow, filters: NormalizedFilters): boolean {
-  if (filters.quizEligibleOnly && !question.quiz_eligible) return false;
+  if (question.status !== 'active') return false;
+  if (!question.quiz_eligible) return false;
+  if (question.is_redacted === true) return false;
   if (filters.questionSlugs.length > 0 && !filters.questionSlugs.includes(question.slug)) return false;
   if (filters.years.length > 0 && !filters.years.includes(question.exam_year)) return false;
   if (filters.tracks.length > 0 && !filters.tracks.includes(question.track ?? '')) return false;
-  if (filters.statuses.length > 0 && !filters.statuses.includes(question.status)) return false;
+  if (filters.statuses.length > 0 && !filters.statuses.includes('active')) return false;
   if (filters.referenceMode === 'exclude' && question.requires_reference === true) return false;
   if (filters.referenceMode === 'only' && question.requires_reference !== true) return false;
   if (filters.topicSlugs.length > 0) {
@@ -146,31 +136,18 @@ function matchesFilters(question: QuestionRow, filters: NormalizedFilters): bool
 }
 
 Deno.serve(async (req) => {
-  if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
-  if (req.method !== 'POST') return jsonResponse({ error: 'method_not_allowed' }, 405);
+  const methodError = requirePost(req);
+  if (methodError) return methodError;
 
-  const supabaseUrl = Deno.env.get('SUPABASE_URL');
-  const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-  if (!supabaseUrl || !serviceRoleKey) return jsonResponse({ error: 'server_not_configured' }, 500);
+  const admin = createAdminClient();
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
 
-  const authorization = req.headers.get('Authorization') ?? '';
-  const accessToken = authorization.replace(/^Bearer\s+/i, '').trim();
-  if (!accessToken) return jsonResponse({ error: 'missing_authorization' }, 401);
+  const { error: authError, user } = await requireUser(req, admin);
+  if (authError || !user) return authError;
+  const userId = user.id;
 
-  const admin = createClient(supabaseUrl, serviceRoleKey, {
-    auth: { autoRefreshToken: false, persistSession: false },
-  });
-
-  const { data: userData, error: userError } = await admin.auth.getUser(accessToken);
-  if (userError || !userData.user) return jsonResponse({ error: 'invalid_authorization' }, 401);
-  const userId = userData.user.id;
-
-  let body: CreatePayload;
-  try {
-    body = await req.json();
-  } catch {
-    return jsonResponse({ error: 'invalid_json' }, 400);
-  }
+  const { body, error: bodyError } = await readJsonBody<CreatePayload>(req);
+  if (bodyError || !body) return bodyError;
   if (body?.schemaVersion !== 1) return jsonResponse({ error: 'unsupported_schema_version' }, 400);
   const seed = typeof body.seed === 'string' && body.seed.trim() ? body.seed.trim() : 'salem-quiz-v2-default';
   const filters = normalizeFilters(body.filters);
@@ -179,7 +156,10 @@ Deno.serve(async (req) => {
 
   const { data: questionData, error: questionError } = await admin
     .from('questions')
-    .select('id, slug, exam_year, track, status, quiz_eligible, requires_reference, question_topics(topics(slug))');
+    .select('id, slug, exam_year, track, status, quiz_eligible, is_redacted, requires_reference, question_topics(topics(slug))')
+    .eq('status', 'active')
+    .eq('quiz_eligible', true)
+    .eq('is_redacted', false);
   if (questionError) return jsonResponse({ error: 'question_lookup_failed' }, 500);
 
   const eligible = ((questionData ?? []) as unknown as QuestionRow[])

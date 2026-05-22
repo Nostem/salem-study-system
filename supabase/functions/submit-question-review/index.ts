@@ -1,5 +1,5 @@
 import { scheduleWholeQuestionReview, type ReviewRating } from '../_shared/fsrs-whole-question.ts';
-import { createAdminClient, jsonResponse, requirePost, requireUser } from '../_shared/http.ts';
+import { createAdminClient, jsonResponse, readJsonBody, requirePost, requireUser } from '../_shared/http.ts';
 
 function normalizeRating(value: unknown): ReviewRating | null {
   return value === 'again' || value === 'hard' || value === 'good' || value === 'easy' ? value : null;
@@ -15,12 +15,8 @@ Deno.serve(async (req) => {
   const { error: authError, user } = await requireUser(req, admin);
   if (authError || !user) return authError;
 
-  let body: { slug?: unknown; rating?: unknown };
-  try {
-    body = await req.json();
-  } catch {
-    return jsonResponse({ error: 'invalid_json' }, 400);
-  }
+  const { body, error: bodyError } = await readJsonBody<{ slug?: unknown; rating?: unknown }>(req);
+  if (bodyError) return bodyError;
 
   const slug = typeof body.slug === 'string' ? body.slug.trim() : '';
   const rating = normalizeRating(body.rating);
@@ -31,6 +27,7 @@ Deno.serve(async (req) => {
     .from('questions')
     .select('id, slug')
     .eq('slug', slug)
+    .eq('status', 'active')
     .eq('quiz_eligible', true)
     .eq('is_redacted', false)
     .single();

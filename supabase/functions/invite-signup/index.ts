@@ -1,4 +1,4 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.105.1';
+import { createAdminClient, jsonResponse, readJsonBody, requirePost } from '../_shared/http.ts';
 
 type SignupBody = {
   inviteCode?: string;
@@ -6,19 +6,6 @@ type SignupBody = {
   password?: string;
   displayName?: string;
 };
-
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-};
-
-function jsonResponse(body: Record<string, unknown>, status = 200): Response {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-  });
-}
 
 function normalizeInviteCode(code: string): string {
   return code.trim().toUpperCase().replace(/\s+/g, '');
@@ -50,21 +37,14 @@ function generateLearnerCode(): string {
 }
 
 Deno.serve(async (req) => {
-  if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
-  if (req.method !== 'POST') return jsonResponse({ error: 'method_not_allowed' }, 405);
+  const methodError = requirePost(req);
+  if (methodError) return methodError;
 
-  const supabaseUrl = Deno.env.get('SUPABASE_URL');
-  const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-  if (!supabaseUrl || !serviceRoleKey) {
-    return jsonResponse({ error: 'server_not_configured' }, 500);
-  }
+  const admin = createAdminClient();
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
 
-  let body: SignupBody;
-  try {
-    body = await req.json();
-  } catch {
-    return jsonResponse({ error: 'invalid_json' }, 400);
-  }
+  const { body, error: bodyError } = await readJsonBody<SignupBody>(req);
+  if (bodyError || !body) return bodyError;
 
   const inviteCode = normalizeInviteCode(body.inviteCode ?? '');
   const username = normalizeUsername(body.username ?? '');
@@ -73,10 +53,6 @@ Deno.serve(async (req) => {
 
   if (!isValidUsername(username)) return jsonResponse({ error: 'invalid_username' }, 400);
   if (password.length < 8) return jsonResponse({ error: 'password_too_short' }, 400);
-
-  const admin = createClient(supabaseUrl, serviceRoleKey, {
-    auth: { autoRefreshToken: false, persistSession: false },
-  });
 
   const code_hash = inviteCode ? await sha256Hex(inviteCode) : null;
 

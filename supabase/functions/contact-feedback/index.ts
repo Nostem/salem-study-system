@@ -1,4 +1,4 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.105.1';
+import { bearerToken, createAdminClient, jsonResponse, readJsonBody, requirePost } from '../_shared/http.ts';
 
 type ContactFeedbackBody = {
   category?: string;
@@ -11,19 +11,6 @@ type ContactFeedbackBody = {
 };
 
 const allowedCategories = new Set(['feedback', 'bug', 'question', 'content_issue']);
-
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-};
-
-function jsonResponse(body: Record<string, unknown>, status = 200): Response {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-  });
-}
 
 function cleanText(value: unknown, maxLength: number): string | null {
   if (typeof value !== 'string') return null;
@@ -81,22 +68,15 @@ function requestIp(req: Request): string {
 }
 
 Deno.serve(async (req) => {
-  if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
-  if (req.method !== 'POST') return jsonResponse({ error: 'method_not_allowed' }, 405);
+  const methodError = requirePost(req);
+  if (methodError) return methodError;
   if (!isAllowedOrigin(req.headers.get('Origin'))) return jsonResponse({ error: 'origin_not_allowed' }, 403);
 
-  const supabaseUrl = Deno.env.get('SUPABASE_URL');
-  const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-  if (!supabaseUrl || !serviceRoleKey) {
-    return jsonResponse({ error: 'server_not_configured' }, 500);
-  }
+  const admin = createAdminClient();
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
 
-  let body: ContactFeedbackBody;
-  try {
-    body = await req.json();
-  } catch {
-    return jsonResponse({ error: 'invalid_json' }, 400);
-  }
+  const { body, error: bodyError } = await readJsonBody<ContactFeedbackBody>(req);
+  if (bodyError || !body) return bodyError;
 
   // Honeypot: pretend success so basic bots do not get a useful signal.
   if (cleanText(body.website, 200)) {
@@ -113,10 +93,6 @@ Deno.serve(async (req) => {
   const pageUrl = cleanUrl(body.pageUrl);
   const userAgent = cleanText(body.userAgent ?? req.headers.get('User-Agent'), 512);
 
-  const admin = createClient(supabaseUrl, serviceRoleKey, {
-    auth: { autoRefreshToken: false, persistSession: false },
-  });
-
   const rateKey = await sha256Hex(`${requestIp(req)}:${userAgent ?? 'unknown'}`);
   const rateWindow = new Date(Date.now() - 10 * 60 * 1000).toISOString();
   const { count: recentCount, error: rateError } = await admin
@@ -127,9 +103,8 @@ Deno.serve(async (req) => {
   if (rateError) return jsonResponse({ error: 'rate_limit_check_failed' }, 500);
   if ((recentCount ?? 0) >= 3) return jsonResponse({ error: 'rate_limited' }, 429);
 
-  const authorization = req.headers.get('Authorization') ?? '';
   const anonKey = req.headers.get('apikey') ?? '';
-  const accessToken = authorization.replace(/^Bearer\s+/i, '').trim();
+  const accessToken = bearerToken(req);
   let userId: string | null = null;
   if (accessToken && accessToken !== anonKey) {
     const { data } = await admin.auth.getUser(accessToken);
