@@ -45,14 +45,27 @@ jobs:
           python-version: '3.x'
 
       - name: Install Python dependencies
-        run: python3 -m pip install pyyaml
+        run: python3 -m pip install -r requirements-dev.txt
 
       - name: Run Python release checks
-        run: python3 -m unittest tests.test_quiz_bank_builder tests.test_structured_quiz_bank_builder tests.test_structured_quiz_bank_validator
+        run: python3 -m unittest discover -s tests -v
+
+      - name: Verify generated quiz data is current
+        run: |
+          python3 scripts/exam_question_import.py audit --out data/quiz-import/audit-all.json
+          python3 scripts/exam_question_import.py stage --out data/quiz-import/supabase-staging-all.json
+          python3 scripts/build_static_quiz_bank.py --bundle data/quiz-import/supabase-staging-all.json --out site/src/data/quiz-bank.json
+          python3 scripts/build_structured_quiz_bank.py --in site/src/data/quiz-bank.json --out site/src/data/quiz-bank-v2.json
+          python3 scripts/validate_structured_quiz_bank.py --in site/src/data/quiz-bank-v2.json --exam-images site/public/exam-images
+          git diff --exit-code -- data/quiz-import/audit-all.json data/quiz-import/supabase-staging-all.json site/src/data/quiz-bank.json site/src/data/quiz-bank-v2.json
 
       - name: Run Node release checks
         working-directory: site
         run: npm run test:node
+
+      - name: Run frontend type checks
+        working-directory: site
+        run: npm run check
 
       - name: Run UI smoke checks
         working-directory: site

@@ -54,6 +54,7 @@ class StructuredQuizBankBuilderTests(unittest.TestCase):
     def test_source_traceability_is_preserved(self):
         bank = build_structured_quiz_bank(QUIZ_BANK)
 
+        self.assertEqual(bank["generatedFrom"], "site/src/data/quiz-bank.json")
         q23 = next(question for question in bank["questions"] if question["slug"] == "q23-eop-flowchart-symbols-concurrent")
         self.assertIn("legacy", q23)
         self.assertEqual(q23["legacy"]["wikiPath"], "wiki/exams/2023/q23-eop-flowchart-symbols-concurrent.md")

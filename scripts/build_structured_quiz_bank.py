@@ -16,6 +16,7 @@ from pathlib import Path
 from typing import Any
 
 SCHEMA_VERSION = 1
+REPO_ROOT = Path(__file__).resolve().parents[1]
 
 # Tags that should insert a paragraph break in plain (non-structured) text flow.
 _PARAGRAPH_BREAK_TAGS = {"p", "div", "h1", "h2", "h3", "h4", "h5", "h6", "blockquote"}
@@ -378,11 +379,19 @@ def convert_question(question: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+def _generated_from(source_path: Path) -> str:
+    resolved = source_path.resolve()
+    try:
+        return resolved.relative_to(REPO_ROOT).as_posix()
+    except ValueError:
+        return source_path.as_posix()
+
+
 def build_structured_quiz_bank(source_path: Path) -> dict[str, Any]:
     source = json.loads(source_path.read_text(encoding="utf-8"))
     return {
         "schemaVersion": SCHEMA_VERSION,
-        "generatedFrom": str(source_path),
+        "generatedFrom": _generated_from(source_path),
         "summary": source.get("summary", {}),
         "topics": source.get("topics", []),
         "questions": [convert_question(question) for question in source.get("questions", [])],
