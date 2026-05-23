@@ -1,5 +1,6 @@
 ---
 import StudyLayout from '../layouts/StudyLayout.astro';
+import { safeInlineJson } from '../utils/safe-json';
 import { buildQuizSummary, getExamYears, getQuizTopicGroups, quizBank } from '../utils/quiz-data';
 
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
@@ -202,7 +203,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
     </section>
   </main>
 
-  <script type="application/json" id="quiz-bank-json" set:html={JSON.stringify(quizBank)} />
+  <script type="application/json" id="quiz-bank-json" set:html={safeInlineJson(quizBank)} />
 
   <script>
     import { getCurrentSession, hasSupabaseConfig } from '../utils/auth-client';

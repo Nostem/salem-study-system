@@ -297,8 +297,9 @@ Current policy:
 
 - The public site shows **Log in**, not public self-serve signup.
 - If a learner has no account, the UI directs them to contact the site administrator through Contact / Feedback.
-- Private account creation routes are direct-link only, `noindex,nofollow`, and excluded from the sitemap.
-- Invite-code compatibility may remain, but it is not the default public UX.
+- Private account creation uses a direct-link-only create-account route that can be shared with beta learners without creating a per-user invite code.
+- The create-account route is `noindex,nofollow`, excluded from the sitemap, and absent from normal public navigation.
+- Invite-code compatibility may remain for legacy or constrained flows, but invite codes are not the default access-control mechanism.
 
 ## Contact / feedback workflow
 
@@ -336,11 +337,13 @@ cd site
 npm run build
 ```
 
-This runs Astro and Pagefind:
+This runs Astro and Pagefind through the local npm-installed binaries:
 
 ```text
-astro build && npx pagefind --site dist --glob '**/*.html'
+npm run build:astro && npm run build:search
 ```
+
+Use `npm run build:astro` when a check only needs rendered pages and does not need Pagefind search indexing.
 
 ### Run Node tests
 
@@ -350,6 +353,15 @@ npm run test:node
 ```
 
 This covers quiz-session generation, backend-session payloads, review logic, FSRS scheduling, and quiz personalization.
+
+### Run frontend type checks
+
+```bash
+cd site
+npm run check
+```
+
+This runs Astro content/type generation followed by TypeScript `tsc --noEmit` against the strict site configuration.
 
 ### Run focused UI smoke tests
 
@@ -363,6 +375,14 @@ npm run test:ui:smoke
 ```bash
 cd site
 npm run test:ui
+```
+
+### Install Python tooling dependencies
+
+From the repo root:
+
+```bash
+python3 -m pip install -r requirements-dev.txt
 ```
 
 ### Run Python tooling tests
@@ -400,7 +420,7 @@ python3 scripts/build_static_quiz_bank.py \
   --out site/src/data/quiz-bank.json
 ```
 
-When changing source question content, regenerate the relevant artifacts and run importer/static-bank tests before committing.
+When changing source question content, regenerate the relevant artifacts and run importer/static-bank tests before committing. CI enforces this with a generated-data drift guard that reruns the audit, staging, static-bank, structured-bank, and structured-bank validation commands, then fails if those generated files differ from the committed copies.
 
 ## Supabase sync and Edge Functions
 

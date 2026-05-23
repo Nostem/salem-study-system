@@ -1,7 +1,7 @@
 // Inline Highlighter — edit mode with GitHub API commit
 const REPO_OWNER = 'Nostem';
 const REPO_NAME = 'salem-study-system';
-const TOKEN_KEY = 'github-token';
+
 const HIGHLIGHT_TYPES: Record<string, string> = {
   'hi': 'important',
   'hi-exam': 'exam-tested',
@@ -12,6 +12,7 @@ const HIGHLIGHT_TYPES: Record<string, string> = {
 };
 
 let editMode = false;
+let githubToken: string | null = null;
 
 // --- DOM References ---
 const editToggle = document.getElementById('edit-toggle');
@@ -33,11 +34,11 @@ if (!slug) throw new Error('Highlighter: no data-slug on article element');
 
 // --- Token Management ---
 function getToken(): string | null {
-  return localStorage.getItem(TOKEN_KEY);
+  return githubToken;
 }
 
 function setToken(token: string): void {
-  localStorage.setItem(TOKEN_KEY, token);
+  githubToken = token;
 }
 
 function promptForToken(): Promise<string | null> {
@@ -200,7 +201,7 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
     let targetSlug = slug!;
     let ancestor: Element | null = range.startContainer.parentElement;
     while (ancestor && ancestor !== proseEl) {
-      if (ancestor.classList.contains('embedded-question') && ancestor.dataset.slug) {
+      if (ancestor instanceof HTMLElement && ancestor.classList.contains('embedded-question') && ancestor.dataset.slug) {
         targetSlug = ancestor.dataset.slug;
         break;
       }
@@ -241,10 +242,6 @@ tooltip.querySelectorAll('button[data-highlight]').forEach((btn) => {
       return;
     }
 
-    console.log('[Highlighter] Target slug:', targetSlug);
-    console.log('[Highlighter] Selected text:', JSON.stringify(selectedText));
-    console.log('[Highlighter] Context before:', JSON.stringify(contextBefore));
-    console.log('[Highlighter] Context after:', JSON.stringify(contextAfter));
     const result = await commitHighlight(targetSlug, selectedText, highlightClass, token, contextBefore, contextAfter);
     toast.remove();
 

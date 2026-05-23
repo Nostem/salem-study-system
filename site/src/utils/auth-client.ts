@@ -11,6 +11,12 @@ export type InviteSignupPayload = {
   displayName?: string;
 };
 
+export type InviteSignupResponse = {
+  ok: boolean;
+  username: string;
+  learnerCode: string;
+};
+
 export type UsernameLoginPayload = {
   username: string;
   password: string;
@@ -57,7 +63,7 @@ export type SubmitQuizResultsPayload = {
   quizSessionId?: string;
   source?: 'quiz' | 'quiz-v2';
   title?: string;
-  quizType?: 'classic' | 'custom' | 'topic' | 'graph' | 'review' | 'missed' | 'weak_area' | 'exam_sim' | 'global_hard';
+  quizType: 'classic' | 'custom' | 'topic' | 'graph' | 'review' | 'missed' | 'weak_area' | 'exam_sim' | 'global_hard';
   feedbackMode: 'immediate' | 'blind';
   completionMode?: 'completed' | 'early';
   filters: Record<string, unknown>;
@@ -150,10 +156,13 @@ export type SubmitQuestionReviewResponse = {
   rating: 'again' | 'hard' | 'good' | 'easy';
   nextReviewAt: string;
   masteryState: 'new' | 'learning' | 'shaky' | 'mastered';
+  scheduledDays: number;
+  fsrsDifficulty: number;
+  fsrsStability: number;
 };
 
-const supabaseUrl = import.meta.env.PUBLIC_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.PUBLIC_SUPABASE_ANON_KEY;
+const supabaseUrl = import.meta.env?.PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env?.PUBLIC_SUPABASE_ANON_KEY;
 
 export function hasSupabaseConfig(): boolean {
   return Boolean(supabaseUrl && supabaseAnonKey);
@@ -170,6 +179,26 @@ export function getSupabaseClient(): SupabaseClient {
 function functionUrl(functionName: string): string {
   if (!supabaseUrl) throw new Error('Missing PUBLIC_SUPABASE_URL');
   return `${supabaseUrl.replace(/\/$/, '')}/functions/v1/${functionName}`;
+}
+
+export class EdgeFunctionError extends Error {
+  readonly code: string;
+  readonly status: number;
+  readonly details: unknown;
+
+  constructor(code: string, status: number, details: unknown) {
+    super(code);
+    this.name = 'EdgeFunctionError';
+    this.code = code;
+    this.status = status;
+    this.details = details;
+  }
+}
+
+export function edgeFunctionErrorCode(data: unknown): string {
+  if (!data || typeof data !== 'object') return 'request_failed';
+  const record = data as Record<string, unknown>;
+  return typeof record.error === 'string' && record.error ? record.error : 'request_failed';
 }
 
 async function postFunction<T>(functionName: string, body: unknown, accessToken?: string): Promise<T> {
@@ -189,14 +218,13 @@ async function postFunction<T>(functionName: string, body: unknown, accessToken?
 
   const data = await response.json().catch(() => ({}));
   if (!response.ok) {
-    const message = typeof data.error === 'string' ? data.error : 'request_failed';
-    throw new Error(message);
+    throw new EdgeFunctionError(edgeFunctionErrorCode(data), response.status, data);
   }
   return data as T;
 }
 
-export async function signupWithInvite(payload: InviteSignupPayload): Promise<void> {
-  await postFunction('invite-signup', payload);
+export async function signupWithInvite(payload: InviteSignupPayload): Promise<InviteSignupResponse> {
+  return postFunction<InviteSignupResponse>('invite-signup', payload);
 }
 
 export async function loginWithUsername(payload: UsernameLoginPayload): Promise<UsernameLoginResponse> {

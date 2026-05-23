@@ -1,17 +1,4 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.105.1';
-
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-};
-
-function jsonResponse(body: Record<string, unknown>, status = 200): Response {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-  });
-}
+import { createAdminClient, jsonResponse, requirePost, requireUser } from '../_shared/http.ts';
 
 function dueRank(state: { mastery_state: string; next_review_at: string | null }): number {
   if (state.mastery_state === 'shaky') return 0;
@@ -22,28 +9,19 @@ function dueRank(state: { mastery_state: string; next_review_at: string | null }
 }
 
 Deno.serve(async (req) => {
-  if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
-  if (req.method !== 'POST') return jsonResponse({ error: 'method_not_allowed' }, 405);
+  const methodError = requirePost(req);
+  if (methodError) return methodError;
 
-  const supabaseUrl = Deno.env.get('SUPABASE_URL');
-  const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-  if (!supabaseUrl || !serviceRoleKey) return jsonResponse({ error: 'server_not_configured' }, 500);
+  const admin = createAdminClient();
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
 
-  const authorization = req.headers.get('Authorization') ?? '';
-  const accessToken = authorization.replace(/^Bearer\s+/i, '').trim();
-  if (!accessToken) return jsonResponse({ error: 'missing_authorization' }, 401);
-
-  const admin = createClient(supabaseUrl, serviceRoleKey, {
-    auth: { autoRefreshToken: false, persistSession: false },
-  });
-
-  const { data: userData, error: userError } = await admin.auth.getUser(accessToken);
-  if (userError || !userData.user) return jsonResponse({ error: 'invalid_authorization' }, 401);
+  const { error: authError, user } = await requireUser(req, admin);
+  if (authError || !user) return authError;
 
   const { data: states, error: stateError } = await admin
     .from('user_question_state')
     .select('question_id, attempts_count, correct_count, incorrect_count, last_attempt_at, last_correct_at, mastery_state, next_review_at, updated_at')
-    .eq('user_id', userData.user.id);
+    .eq('user_id', user.id);
   if (stateError) return jsonResponse({ error: 'review_state_lookup_failed' }, 500);
 
   const questionIds = [...new Set((states ?? []).map((state) => state.question_id).filter(Boolean))];
@@ -55,6 +33,7 @@ Deno.serve(async (req) => {
     .from('questions')
     .select('id, slug')
     .in('id', questionIds)
+    .eq('status', 'active')
     .eq('quiz_eligible', true)
     .eq('is_redacted', false);
   if (questionError) return jsonResponse({ error: 'question_lookup_failed' }, 500);

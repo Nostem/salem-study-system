@@ -1,4 +1,4 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.105.1';
+import { createAdminClient, jsonResponse, readJsonBody, requirePost, requireUser } from '../_shared/http.ts';
 
 type SubmittedQuestion = {
   slug?: string;
@@ -20,19 +20,6 @@ type SubmitQuizBody = {
   questions?: SubmittedQuestion[];
 };
 
-const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
-  'Access-Control-Allow-Methods': 'POST, OPTIONS',
-};
-
-function jsonResponse(body: Record<string, unknown>, status = 200): Response {
-  return new Response(JSON.stringify(body), {
-    status,
-    headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-  });
-}
-
 function normalizeFeedbackMode(value: unknown): 'immediate' | 'blind' {
   return value === 'blind' ? 'blind' : 'immediate';
 }
@@ -41,9 +28,11 @@ function normalizeCompletionMode(value: unknown): 'completed' | 'early' {
   return value === 'early' ? 'early' : 'completed';
 }
 
-function normalizeQuizType(value: unknown): 'custom' | 'topic' | 'missed' | 'weak_area' | 'exam_sim' | 'global_hard' {
-  const allowed = new Set(['custom', 'topic', 'missed', 'weak_area', 'exam_sim', 'global_hard']);
-  return typeof value === 'string' && allowed.has(value) ? value as ReturnType<typeof normalizeQuizType> : 'custom';
+const QUIZ_TYPES = ['classic', 'custom', 'topic', 'graph', 'review', 'missed', 'weak_area', 'exam_sim', 'global_hard'] as const;
+type QuizType = typeof QUIZ_TYPES[number];
+
+function normalizeQuizType(value: unknown): QuizType | null {
+  return typeof value === 'string' && (QUIZ_TYPES as readonly string[]).includes(value) ? value as QuizType : null;
 }
 
 function normalizeSelectedLabel(value: unknown): string | null {
@@ -90,25 +79,18 @@ function nextReviewAt(nowIso: string, correct: number, incorrect: number): strin
 }
 
 Deno.serve(async (req) => {
-  if (req.method === 'OPTIONS') return new Response('ok', { headers: corsHeaders });
-  if (req.method !== 'POST') return jsonResponse({ error: 'method_not_allowed' }, 405);
+  const methodError = requirePost(req);
+  if (methodError) return methodError;
 
-  const supabaseUrl = Deno.env.get('SUPABASE_URL');
-  const serviceRoleKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY');
-  if (!supabaseUrl || !serviceRoleKey) {
-    return jsonResponse({ error: 'server_not_configured' }, 500);
-  }
+  const admin = createAdminClient();
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
 
-  const authorization = req.headers.get('Authorization') ?? '';
-  const accessToken = authorization.replace(/^Bearer\s+/i, '').trim();
-  if (!accessToken) return jsonResponse({ error: 'missing_authorization' }, 401);
+  const { error: authError, user } = await requireUser(req, admin);
+  if (authError || !user) return authError;
+  const userId = user.id;
 
-  let body: SubmitQuizBody;
-  try {
-    body = await req.json();
-  } catch {
-    return jsonResponse({ error: 'invalid_json' }, 400);
-  }
+  const { body, error: bodyError } = await readJsonBody<SubmitQuizBody>(req);
+  if (bodyError || !body) return bodyError;
 
   const submittedQuestions = (body.questions ?? [])
     .map((question, index) => ({
@@ -126,19 +108,14 @@ Deno.serve(async (req) => {
     return jsonResponse({ error: 'questions_required' }, 400);
   }
 
-  const admin = createClient(supabaseUrl, serviceRoleKey, {
-    auth: { autoRefreshToken: false, persistSession: false },
-  });
-
-  const { data: userData, error: userError } = await admin.auth.getUser(accessToken);
-  if (userError || !userData.user) return jsonResponse({ error: 'invalid_authorization' }, 401);
-  const userId = userData.user.id;
-
   const slugs = [...new Set(submittedQuestions.map((question) => question.slug))];
   const { data: questionRows, error: questionsError } = await admin
     .from('questions')
     .select('id, slug')
-    .in('slug', slugs);
+    .in('slug', slugs)
+    .eq('status', 'active')
+    .eq('quiz_eligible', true)
+    .eq('is_redacted', false);
   if (questionsError) return jsonResponse({ error: 'question_lookup_failed' }, 500);
 
   const questionBySlug = new Map((questionRows ?? []).map((question) => [question.slug, question]));
@@ -163,6 +140,7 @@ Deno.serve(async (req) => {
   const feedbackMode = normalizeFeedbackMode(body.feedbackMode);
   const completionMode = normalizeCompletionMode(body.completionMode);
   const quizType = normalizeQuizType(body.quizType);
+  if (!quizType) return jsonResponse({ error: 'invalid_quiz_type' }, 400);
   const now = new Date().toISOString();
 
   const resolvedQuestions = submittedQuestions.map((question) => {

@@ -43,6 +43,27 @@ export function createAdminClient() {
   });
 }
 
+export function createPublicClient() {
+  const supabaseUrl = getRequiredEnv('SUPABASE_URL');
+  const anonKey = getRequiredEnv('SUPABASE_ANON_KEY');
+  if (!supabaseUrl || !anonKey) return null;
+  return createClient(supabaseUrl, anonKey, {
+    auth: { autoRefreshToken: false, persistSession: false },
+  });
+}
+
+export async function readJsonBody<T>(req: Request): Promise<{ body: T; error: null } | { body: null; error: Response }> {
+  try {
+    const body = await req.json();
+    if (!body || typeof body !== 'object' || Array.isArray(body)) {
+      return { body: null, error: jsonResponse({ error: 'invalid_json' }, 400) };
+    }
+    return { body: body as T, error: null };
+  } catch {
+    return { body: null, error: jsonResponse({ error: 'invalid_json' }, 400) };
+  }
+}
+
 type AuthUser = { id: string };
 type AuthAdminClient = {
   auth: {

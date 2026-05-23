@@ -1,6 +1,7 @@
 ---
 import StudyLayout from '../../layouts/StudyLayout.astro';
 import QuestionBlockRenderer from '../../components/QuestionBlockRenderer.astro';
+import { safeInlineJson } from '../../utils/safe-json';
 import {
   getStructuredQuestions,
   questionDisplayLabel,
@@ -118,7 +119,7 @@ const reviewMeta = questions.map((q) => ({
       </section>
     </section>
 
-    <script type="application/json" id="qv2r-meta" set:html={JSON.stringify(reviewMeta)} />
+    <script type="application/json" id="qv2r-meta" set:html={safeInlineJson(reviewMeta)} />
 
     <article class="bg-bg-card border border-border rounded-lg p-4 sm:p-6 min-h-[420px]">
       <div id="qv2r-empty" data-testid="qv2r-empty" class="rounded border border-border bg-bg/60 p-4 text-sm text-text-muted">

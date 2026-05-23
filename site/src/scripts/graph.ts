@@ -42,6 +42,8 @@ const data = (window as any).__GRAPH_DATA__;
 const basePath = (window as any).__BASE_PATH__ || '/';
 
 if (data && data.nodes.length > 0) {
+  const graphData = data as { nodes: GraphNode[]; edges: GraphEdge[] };
+
   const container = document.getElementById('graph')!;
   const width = container.clientWidth;
   const height = container.clientHeight;
@@ -62,8 +64,8 @@ if (data && data.nodes.length > 0) {
 
   // Connection-weighted physics: high-connection nodes repel more strongly,
   // creating natural hub-spoke clusters
-  const simulation = d3.forceSimulation<GraphNode>(data.nodes)
-    .force('link', d3.forceLink<GraphNode, GraphEdge>(data.edges).id(d => d.id).distance(80))
+  const simulation = d3.forceSimulation<GraphNode>(graphData.nodes)
+    .force('link', d3.forceLink<GraphNode, GraphEdge>(graphData.edges).id(d => d.id).distance(80))
     .force('charge', d3.forceManyBody<GraphNode>().strength((d: GraphNode) => {
       if (d.isExam) return -30;
       return -100 - (d.connections * 15);
@@ -76,8 +78,8 @@ if (data && data.nodes.length > 0) {
 
   // Edges
   const link = g.append('g')
-    .selectAll('line')
-    .data(data.edges)
+    .selectAll<SVGLineElement, GraphEdge>('line')
+    .data(graphData.edges)
     .join('line')
     .attr('stroke', (d: any) => EDGE_COLORS[d.type] ?? '#1a2035')
     .attr('stroke-width', (d: any) => d.type === 'exam' ? 0.5 : 1)
@@ -85,8 +87,8 @@ if (data && data.nodes.length > 0) {
 
   // Nodes
   const node = g.append('g')
-    .selectAll('circle')
-    .data(data.nodes)
+    .selectAll<SVGCircleElement, GraphNode>('circle')
+    .data(graphData.nodes)
     .join('circle')
     .attr('r', (d: GraphNode) => d.isExam ? 3 : Math.max(5, Math.min(15, 4 + d.connections * 2)))
     .attr('fill', (d: GraphNode) => CATEGORY_COLORS[d.category] ?? '#6b7280')
@@ -99,7 +101,7 @@ if (data && data.nodes.length > 0) {
     })
     .on('mouseover', (_event: any, d: GraphNode) => {
       const connected = new Set<string>();
-      data.edges.forEach((e: any) => {
+      graphData.edges.forEach((e: GraphEdge) => {
         const src = typeof e.source === 'string' ? e.source : e.source.id;
         const tgt = typeof e.target === 'string' ? e.target : e.target.id;
         if (src === d.id) connected.add(tgt);
@@ -146,8 +148,8 @@ if (data && data.nodes.length > 0) {
 
   // Labels — hidden by default, shown on hover
   const label = g.append('g')
-    .selectAll('text')
-    .data(data.nodes)
+    .selectAll<SVGTextElement, GraphNode>('text')
+    .data(graphData.nodes)
     .join('text')
     .text((d: GraphNode) => d.isExam ? '' : d.title)
     .attr('font-size', 10)
