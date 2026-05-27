@@ -196,7 +196,11 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       <section id="quiz-review" data-testid="quiz-review" class="hidden bg-bg-card border border-border rounded-lg p-5 lg:col-start-2">
         <div class="font-mono text-[11px] uppercase tracking-[0.16em] text-accent-green mb-2">Quiz review</div>
         <h2 id="review-score" class="text-3xl text-text-primary font-semibold mb-2"></h2>
-        <p id="progress-save-status" data-testid="progress-save-status" class="text-xs text-text-muted mb-4">Saving progress…</p>
+        <p id="progress-save-status" data-testid="progress-save-status" class="text-xs text-text-muted mb-2">Saving progress…</p>
+        <div id="progress-save-actions" data-testid="progress-save-actions" class="hidden mb-4 flex flex-wrap gap-2">
+          <button id="retry-save" data-testid="retry-save" type="button" class="quiz-secondary text-xs">Retry save</button>
+          <a id="relogin-link" data-testid="relogin-link" class="quiz-secondary text-xs no-underline hidden" href={`${base}login/?next=${base}quiz/`}>Log in again</a>
+        </div>
         <div id="review-list" class="grid gap-3"></div>
         <button id="new-quiz" type="button" class="quiz-secondary mt-5">Build another quiz</button>
       </section>
@@ -231,7 +235,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
   </script>
 
   <script>
-    import { getQuizReviewQueue, submitQuizResults } from '../utils/auth-client';
+    import { getQuizReviewQueue, submitQuizResults, getActiveSession, EdgeFunctionError } from '../utils/auth-client';
     import { personalizeQuestionOrder } from '../utils/quiz-personalization';
 
     const bank = JSON.parse(document.getElementById('quiz-bank-json').textContent);
@@ -480,6 +484,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       draftResumeEl.classList.add('hidden');
       reviewEl.classList.add('hidden');
       sessionEl.classList.remove('hidden');
+      startSessionHeartbeat();
       renderQuestion();
     }
 
@@ -541,39 +546,108 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       panel.innerHTML = `<div class="font-semibold ${correct ? 'text-accent-green' : 'text-red-300'}">${correct ? 'Correct' : 'Incorrect'}</div><div class="text-sm text-text-body mt-1 mb-4">Accepted answer: ${acceptedDisplayLabels(question).join(', ')}</div>${renderExplanation(question)}`;
     }
 
-    async function persistCompletedQuiz(correctCount) {
+    function buildSubmitPayload() {
+      const elapsedPerQuestion = Math.max(0, Math.round((Date.now() - state.startedAt) / Math.max(1, state.questions.length)));
+      return {
+        source: 'quiz',
+        title: 'Classic Quiz',
+        quizType: 'classic',
+        feedbackMode: state.mode === 'blind' ? 'blind' : 'immediate',
+        completionMode: state.completionMode,
+        filters: { ...state.filters, completionMode: state.completionMode },
+        questions: state.questions.map((question, idx) => {
+          const selectedLabel = state.answers.get(question.slug) || null;
+          return {
+            slug: question.slug,
+            position: idx + 1,
+            selectedLabel,
+            selectedOriginalLabel: selectedLabel ? originalLabelForDisplay(question, selectedLabel) : null,
+            choiceOrder: question.choiceOrder || Object.fromEntries(question.choices.map((choice) => [choice.displayLabel || choice.label, choice.originalLabel || choice.label])),
+            timeMs: elapsedPerQuestion,
+          };
+        }),
+      };
+    }
+
+    function setSaveStatus(text, tone) {
       const status = document.getElementById('progress-save-status');
+      const actions = document.getElementById('progress-save-actions');
+      const reloginLink = document.getElementById('relogin-link');
+      status.textContent = text;
+      // Tone: 'pending' | 'success' | 'warn' | 'error'
+      const toneClass =
+        tone === 'success' ? 'text-xs text-accent-green mb-2'
+        : tone === 'warn' ? 'text-xs text-accent-amber mb-2'
+        : tone === 'error' ? 'text-xs text-red-300 mb-2'
+        : 'text-xs text-text-muted mb-2';
+      status.className = toneClass;
+      if (tone === 'warn' || tone === 'error') {
+        actions.classList.remove('hidden');
+        // Surface re-login only for auth failures.
+        if (tone === 'error') {
+          reloginLink.classList.remove('hidden');
+        } else {
+          reloginLink.classList.add('hidden');
+        }
+      } else {
+        actions.classList.add('hidden');
+        reloginLink.classList.add('hidden');
+      }
+    }
+
+    async function persistCompletedQuiz() {
       if (state.progressSaved) return;
-      status.textContent = 'Saving progress…';
+      setSaveStatus('Saving progress…', 'pending');
       try {
-        const elapsedPerQuestion = Math.max(0, Math.round((Date.now() - state.startedAt) / Math.max(1, state.questions.length)));
-        const result = await submitQuizResults({
-          source: 'quiz',
-          title: 'Classic Quiz',
-          quizType: 'classic',
-          feedbackMode: state.mode === 'blind' ? 'blind' : 'immediate',
-          completionMode: state.completionMode,
-          filters: { ...state.filters, completionMode: state.completionMode },
-          questions: state.questions.map((question, idx) => {
-            const selectedLabel = state.answers.get(question.slug) || null;
-            return {
-              slug: question.slug,
-              position: idx + 1,
-              selectedLabel,
-              selectedOriginalLabel: selectedLabel ? originalLabelForDisplay(question, selectedLabel) : null,
-              choiceOrder: question.choiceOrder || Object.fromEntries(question.choices.map((choice) => [choice.displayLabel || choice.label, choice.originalLabel || choice.label])),
-              timeMs: elapsedPerQuestion,
-            };
-          }),
-        });
+        const result = await submitQuizResults(buildSubmitPayload());
         state.progressSaved = true;
         clearDraft();
-        status.textContent = `Progress saved — ${result.attemptsInserted ?? state.questions.length} attempts recorded.`;
-        status.className = 'text-xs text-accent-green mb-4';
+        setSaveStatus(`Progress saved — ${result.attemptsInserted ?? state.questions.length} attempts recorded.`, 'success');
       } catch (error) {
         console.error('Failed to save quiz progress', error);
-        status.textContent = 'Progress could not be saved. Your local review is shown, but this attempt may not appear in My Progress yet.';
-        status.className = 'text-xs text-accent-amber mb-4';
+        // Distinguish auth-expired (user action required) from transient errors (retry will work).
+        const isAuthError =
+          (error && error.message === 'not_authenticated') ||
+          (error instanceof EdgeFunctionError && error.status === 401);
+        if (isAuthError) {
+          setSaveStatus(
+            'Your login session expired before this attempt could be saved. Your answers are still on this device — log back in and click Retry save to keep them.',
+            'error'
+          );
+        } else {
+          setSaveStatus(
+            'Could not reach the server to save this attempt. Your answers are still on this device. Click Retry save when you are back online.',
+            'warn'
+          );
+        }
+        // Do NOT clear the draft on failure — the user can resume or retry.
+      }
+    }
+
+    // Heartbeat: while a quiz is in progress, force-refresh the access token
+    // every 10 minutes and whenever the tab becomes visible. Without this a
+    // 50-question quiz can outlive the 1-hour access JWT lifetime and the
+    // end-of-quiz save fails. Errors are swallowed; this is a best-effort
+    // pre-emptive refresh, not a gate on quiz flow.
+    let heartbeatTimer = null;
+    function startSessionHeartbeat() {
+      stopSessionHeartbeat();
+      const tick = () => { getActiveSession().catch(() => {}); };
+      heartbeatTimer = window.setInterval(tick, 10 * 60 * 1000);
+      document.addEventListener('visibilitychange', onVisibilityRefresh);
+      // Fire once now so a brand-new quiz with a stale stored token refreshes immediately.
+      tick();
+    }
+    function stopSessionHeartbeat() {
+      if (heartbeatTimer !== null) {
+        window.clearInterval(heartbeatTimer);
+        heartbeatTimer = null;
+      }
+      document.removeEventListener('visibilitychange', onVisibilityRefresh);
+    }
+    function onVisibilityRefresh() {
+      if (document.visibilityState === 'visible') {
+        getActiveSession().catch(() => {});
       }
     }
 
@@ -590,8 +664,8 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       document.getElementById('review-score').textContent = state.completionMode === 'early'
         ? `${scoreText} · Answered: ${answered.length}/${state.questions.length}`
         : scoreText;
-      document.getElementById('progress-save-status').textContent = 'Saving progress…';
-      persistCompletedQuiz(correctCount);
+      stopSessionHeartbeat();
+      persistCompletedQuiz();
       const list = document.getElementById('review-list');
       list.innerHTML = '';
       state.questions.forEach((question, idx) => {
@@ -637,6 +711,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       reviewEl.classList.add('hidden');
       sessionEl.classList.remove('hidden');
       saveDraft();
+      startSessionHeartbeat();
       renderQuestion();
     });
 
@@ -665,10 +740,22 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
       updateSummary();
     });
     document.getElementById('new-quiz').addEventListener('click', () => {
-      clearDraft();
+      stopSessionHeartbeat();
+      // Only clear the draft if the previous attempt actually saved. If the
+      // save failed and the user hasn't retried successfully, preserve the
+      // draft so they can recover those answers later.
+      if (state.progressSaved) {
+        clearDraft();
+      } else {
+        // Surface the resume card so the unsaved attempt isn't silently lost.
+        showDraftResumeIfAvailable();
+      }
       reviewEl.classList.add('hidden');
       emptyState.classList.remove('hidden');
       updateSummary();
+    });
+    document.getElementById('retry-save').addEventListener('click', () => {
+      persistCompletedQuiz();
     });
     updateSummary();
     showDraftResumeIfAvailable();
