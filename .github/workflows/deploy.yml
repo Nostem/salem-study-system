@@ -18,6 +18,54 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Resolve Playwright version
+        id: playwright-version
+        working-directory: site
+        run: |
+          version=$(node -p "require('@playwright/test/package.json').version")
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.playwright-version.outputs.version }}
+
+      - name: Install Playwright browsers
+        if: steps.playwright-cache.outputs.cache-hit != 'true'
+        working-directory: site
+        run: npx playwright install --with-deps chromium
+
+      - name: Install Playwright system deps (cache hit)
+        if: steps.playwright-cache.outputs.cache-hit == 'true'
+        working-directory: site
+        run: npx playwright install-deps chromium
+
+      - name: Run UI smoke checks
+        working-directory: site
+        env:
+          PUBLIC_SUPABASE_URL: https://local-test.supabase.co
+          PUBLIC_SUPABASE_ANON_KEY: playwright-anon-key
+        run: npm run test:ui:smoke
+
   build:
     runs-on: ubuntu-latest
     steps:
@@ -35,14 +83,12 @@ jobs:
         working-directory: site
         run: npm ci
 
-      - name: Install Playwright browsers
-        working-directory: site
-        run: npx playwright install --with-deps chromium
-
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.x'
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
 
       - name: Install Python dependencies
         run: python3 -m pip install -r requirements-dev.txt
@@ -67,13 +113,6 @@ jobs:
         working-directory: site
         run: npm run check
 
-      - name: Run UI smoke checks
-        working-directory: site
-        env:
-          PUBLIC_SUPABASE_URL: https://local-test.supabase.co
-          PUBLIC_SUPABASE_ANON_KEY: playwright-anon-key
-        run: npm run test:ui:smoke
-
       - name: Build Astro
         working-directory: site
         env:
@@ -87,7 +126,7 @@ jobs:
           path: site/dist
 
   deploy:
-    needs: build
+    needs: [smoke, build]
     runs-on: ubuntu-latest
     environment:
       name: github-pages
