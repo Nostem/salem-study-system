@@ -168,12 +168,32 @@ export function hasSupabaseConfig(): boolean {
   return Boolean(supabaseUrl && supabaseAnonKey);
 }
 
+// Singleton: createClient() spins up a fresh auth instance with its own
+// autoRefreshToken timer. If we recreate the client on every call (e.g. inside
+// getCurrentSession()) no refresh timer ever lives long enough to fire, so a
+// long-running quiz (≥1 h, default access JWT lifetime) ends with an expired
+// token and submitQuizResults throws 'not_authenticated' before reaching the
+// Edge Function. Cache one instance for the page lifetime instead.
+let cachedClient: SupabaseClient | null = null;
+
 export function getSupabaseClient(): SupabaseClient {
   if (!hasSupabaseConfig()) {
     throw new Error('Missing PUBLIC_SUPABASE_URL or PUBLIC_SUPABASE_ANON_KEY');
   }
+  if (cachedClient) return cachedClient;
+  cachedClient = createClient(supabaseUrl, supabaseAnonKey, {
+    auth: {
+      autoRefreshToken: true,
+      persistSession: true,
+      detectSessionInUrl: false,
+    },
+  });
+  return cachedClient;
+}
 
-  return createClient(supabaseUrl, supabaseAnonKey);
+// Test/recovery hook: reset the cached client (e.g. after logout, or in tests).
+export function resetSupabaseClientForTesting(): void {
+  cachedClient = null;
 }
 
 function functionUrl(functionName: string): string {
@@ -243,8 +263,38 @@ export async function getCurrentSession(): Promise<Session | null> {
   return data.session;
 }
 
+// Returns the freshest possible session. supabase-js getSession() will trigger
+// a refresh if the access token has expired, but for long-lived pages (50q
+// quiz can easily exceed the 1h access JWT lifetime) we want to force-refresh
+// proactively just before a critical write so the Edge Function call doesn't
+// fail with 401. Falls back to whatever getSession() returns if refresh fails.
+export async function getActiveSession(): Promise<Session | null> {
+  const client = getSupabaseClient();
+  // Read current session first; if there's no refresh_token there's nothing to do.
+  const { data: current } = await client.auth.getSession();
+  const session = current.session;
+  if (!session?.refresh_token) return session ?? null;
+
+  // Refresh if the access token expires within the next 60 seconds. This is the
+  // critical fix for quizzes that outlive the default token lifetime.
+  const expiresAt = typeof session.expires_at === 'number' ? session.expires_at : 0;
+  const nowSec = Math.floor(Date.now() / 1000);
+  if (expiresAt - nowSec > 60) return session;
+
+  try {
+    const { data: refreshed } = await client.auth.refreshSession({
+      refresh_token: session.refresh_token,
+    });
+    return refreshed.session ?? session;
+  } catch {
+    // Refresh failed (network blip, refresh token revoked). Return whatever we
+    // have so the caller can decide whether to attempt the write anyway.
+    return session;
+  }
+}
+
 export async function submitQuizResults(payload: SubmitQuizResultsPayload): Promise<SubmitQuizResultsResponse> {
-  const session = await getCurrentSession();
+  const session = await getActiveSession();
   if (!session?.access_token) {
     throw new Error('not_authenticated');
   }
@@ -323,4 +373,5 @@ export async function submitContactFeedback(payload: ContactFeedbackPayload): Pr
 export async function logout(): Promise<void> {
   const client = getSupabaseClient();
   await client.auth.signOut();
+  resetSupabaseClientForTesting();
 }

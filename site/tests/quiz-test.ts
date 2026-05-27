@@ -533,3 +533,122 @@ test('blind mode withholds scoring until final review', async ({ page }) => {
   await expect(explanation).toContainText('Full explanation');
   await expect(explanation).toContainText(/Incorrect but plausible|Correct\./);
 });
+
+test('quiz save failure shows retry UI, preserves the draft, and lets the user recover after re-auth', async ({ page }) => {
+  await authenticateQuizUser(page);
+
+  // First submit attempt fails with 401 (simulating an expired access token at quiz end).
+  // The page should surface the retry button and the relogin link, and keep the draft.
+  let submitCallCount = 0;
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    submitCallCount += 1;
+    if (submitCallCount === 1) {
+      await route.fulfill({
+        status: 401,
+        contentType: 'application/json',
+        body: JSON.stringify({ error: 'invalid_authorization' }),
+      });
+      return;
+    }
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, quizSessionId: '44444444-4444-4444-8444-444444444444', attemptsInserted: 1 }),
+    });
+  });
+
+  await page.goto('quiz/');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await page.getByRole('button', { name: /^A\./ }).click();
+  await page.getByRole('button', { name: /Review results/i }).click();
+
+  await expect(page.getByTestId('quiz-review')).toBeVisible();
+  await expect(page.getByTestId('progress-save-status')).toContainText(/session expired/i);
+  await expect(page.getByTestId('progress-save-actions')).toBeVisible();
+  await expect(page.getByTestId('retry-save')).toBeVisible();
+  await expect(page.getByTestId('relogin-link')).toBeVisible();
+
+  // Draft must still be in localStorage because the save failed.
+  const draftAfterFailure = await page.evaluate(() => window.localStorage.getItem('salem-study-quiz-draft-v1'));
+  expect(draftAfterFailure).not.toBeNull();
+
+  // User retries (simulating they logged back in / network recovered).
+  await page.getByTestId('retry-save').click();
+  await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
+  await expect(page.getByTestId('progress-save-actions')).toBeHidden();
+
+  // After success, the draft is cleared.
+  const draftAfterSuccess = await page.evaluate(() => window.localStorage.getItem('salem-study-quiz-draft-v1'));
+  expect(draftAfterSuccess).toBeNull();
+  expect(submitCallCount).toBe(2);
+});
+
+test('network failure during quiz save shows warn-style retry without forcing re-login', async ({ page }) => {
+  await authenticateQuizUser(page);
+
+  let submitCallCount = 0;
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    submitCallCount += 1;
+    if (submitCallCount === 1) {
+      await route.abort('failed');
+      return;
+    }
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, quizSessionId: '55555555-5555-4555-8555-555555555555', attemptsInserted: 1 }),
+    });
+  });
+
+  await page.goto('quiz/');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await page.getByRole('button', { name: /^A\./ }).click();
+  await page.getByRole('button', { name: /Review results/i }).click();
+
+  await expect(page.getByTestId('quiz-review')).toBeVisible();
+  await expect(page.getByTestId('progress-save-status')).toContainText(/Could not reach the server/i);
+  await expect(page.getByTestId('retry-save')).toBeVisible();
+  // Re-login link should stay hidden for network errors; only auth failures need it.
+  await expect(page.getByTestId('relogin-link')).toBeHidden();
+
+  await page.getByTestId('retry-save').click();
+  await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
+});
+
+test('starting a new quiz after a failed save preserves the unsaved draft for recovery', async ({ page }) => {
+  await authenticateQuizUser(page);
+
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    await route.fulfill({
+      status: 401,
+      contentType: 'application/json',
+      body: JSON.stringify({ error: 'invalid_authorization' }),
+    });
+  });
+
+  await page.goto('quiz/?seed=96');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('2');
+  await page.getByLabel('Mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await page.getByRole('button', { name: /^A\./ }).click();
+  await page.getByRole('button', { name: /Next question/i }).click();
+  await page.getByRole('button', { name: /^B\./ }).click();
+  await page.getByRole('button', { name: /Review results/i }).click();
+
+  await expect(page.getByTestId('progress-save-status')).toContainText(/session expired/i);
+
+  await page.getByRole('button', { name: /Build another quiz/i }).click();
+
+  // Draft must survive the navigation back to the builder so the user can recover.
+  await expect(page.getByTestId('quiz-draft-resume')).toBeVisible();
+  await expect(page.getByTestId('quiz-draft-resume')).toContainText('2 questions');
+  const draftAfterNewQuiz = await page.evaluate(() => window.localStorage.getItem('salem-study-quiz-draft-v1'));
+  expect(draftAfterNewQuiz).not.toBeNull();
+});
