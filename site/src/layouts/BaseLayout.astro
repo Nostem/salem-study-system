@@ -6,6 +6,8 @@ interface Props {
 
 const { title, noindex = false } = Astro.props;
 import ContactModal from '../components/ContactModal.astro';
+import GlobalHeader from '../components/GlobalHeader.astro';
+import SearchModal from '../components/SearchModal.astro';
 import '../styles/global.css';
 ---
 
@@ -16,13 +18,33 @@ import '../styles/global.css';
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     {noindex && <meta name="robots" content="noindex,nofollow" />}
     <title>{title} — Salem Study System</title>
+    <script is:inline>
+      (function () {
+        try {
+          var stored = localStorage.getItem('salem-study-theme');
+          var theme = stored === 'dark' || stored === 'light'
+            ? stored
+            : (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+          document.documentElement.dataset.theme = theme;
+        } catch (_) {
+          document.documentElement.dataset.theme = 'dark';
+        }
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/'}favicon.svg`} />
   </head>
   <body class="bg-bg min-h-screen">
-    <slot />
+    <GlobalHeader />
+    <SearchModal />
+    <div class="site-shell">
+      <slot />
+    </div>
+    <footer class="global-footer" data-pagefind-ignore>
+      Created by Fred Montan
+    </footer>
     <ContactModal />
   </body>
 </html>

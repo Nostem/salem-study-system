@@ -1,0 +1,507 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-23T06:22:02Z",
+  "title": "Design System: Salem Study System",
+  "extensions": {
+    "colorMeta": {
+      "reactor-slate": {
+        "role": "neutral",
+        "displayName": "Reactor Slate",
+        "canonical": "#0a0e17",
+        "tonalRamp": [
+          "#05070c",
+          "#0a0e17",
+          "#111827",
+          "#172033",
+          "#283252",
+          "#475569",
+          "#8b95a5",
+          "#e0e4ea"
+        ]
+      },
+      "console-surface": {
+        "role": "neutral",
+        "displayName": "Console Surface",
+        "canonical": "#0d1220",
+        "tonalRamp": [
+          "#060912",
+          "#0d1220",
+          "#111827",
+          "#172033",
+          "#283252",
+          "#475569",
+          "#8b95a5",
+          "#c8cdd5"
+        ]
+      },
+      "procedure-panel": {
+        "role": "neutral",
+        "displayName": "Procedure Panel",
+        "canonical": "#111827",
+        "tonalRamp": [
+          "#080c14",
+          "#0d1220",
+          "#111827",
+          "#172033",
+          "#283252",
+          "#475569",
+          "#8b95a5",
+          "#e0e4ea"
+        ]
+      },
+      "instrument-blue": {
+        "role": "primary",
+        "displayName": "Instrument Blue",
+        "canonical": "#60a5fa",
+        "tonalRamp": [
+          "#082f49",
+          "#075985",
+          "#0369a1",
+          "#0284c7",
+          "#0ea5e9",
+          "#60a5fa",
+          "#93c5fd",
+          "#dbeafe"
+        ]
+      },
+      "procedure-teal": {
+        "role": "secondary",
+        "displayName": "Procedure Teal",
+        "canonical": "#22d3ee",
+        "tonalRamp": [
+          "#083344",
+          "#164e63",
+          "#0e7490",
+          "#0891b2",
+          "#06b6d4",
+          "#22d3ee",
+          "#67e8f9",
+          "#cffafe"
+        ]
+      },
+      "verification-green": {
+        "role": "secondary",
+        "displayName": "Verification Green",
+        "canonical": "#10b981",
+        "tonalRamp": [
+          "#022c22",
+          "#064e3b",
+          "#047857",
+          "#059669",
+          "#10b981",
+          "#34d399",
+          "#6ee7b7",
+          "#d1fae5"
+        ]
+      },
+      "review-amber": {
+        "role": "tertiary",
+        "displayName": "Review Amber",
+        "canonical": "#fbbf24",
+        "tonalRamp": [
+          "#451a03",
+          "#78350f",
+          "#b45309",
+          "#d97706",
+          "#f59e0b",
+          "#fbbf24",
+          "#fde68a",
+          "#fffbeb"
+        ]
+      },
+      "trip-red": {
+        "role": "tertiary",
+        "displayName": "Trip Red",
+        "canonical": "#f87171",
+        "tonalRamp": [
+          "#450a0a",
+          "#7f1d1d",
+          "#b91c1c",
+          "#dc2626",
+          "#ef4444",
+          "#f87171",
+          "#fca5a5",
+          "#fee2e2"
+        ]
+      },
+      "bases-purple": {
+        "role": "tertiary",
+        "displayName": "Bases Purple",
+        "canonical": "#a78bfa",
+        "tonalRamp": [
+          "#2e1065",
+          "#4c1d95",
+          "#6d28d9",
+          "#7c3aed",
+          "#8b5cf6",
+          "#a78bfa",
+          "#c4b5fd",
+          "#ede9fe"
+        ]
+      },
+      "light-reading-bg": {
+        "role": "neutral",
+        "displayName": "Binder Paper",
+        "canonical": "#f4f0e7",
+        "tonalRamp": [
+          "#2a241b",
+          "#4c4233",
+          "#6b5f4f",
+          "#a99b87",
+          "#d8ccb8",
+          "#ebe4d6",
+          "#f4f0e7",
+          "#fbf8f1"
+        ]
+      },
+      "light-reading-surface": {
+        "role": "neutral",
+        "displayName": "Clean Page",
+        "canonical": "#fbf8f1",
+        "tonalRamp": [
+          "#2a241b",
+          "#4c4233",
+          "#6b5f4f",
+          "#a99b87",
+          "#d8ccb8",
+          "#ebe4d6",
+          "#f4f0e7",
+          "#fbf8f1"
+        ]
+      },
+      "light-reading-panel": {
+        "role": "neutral",
+        "displayName": "Manila Panel",
+        "canonical": "#ebe4d6",
+        "tonalRamp": [
+          "#2a241b",
+          "#4c4233",
+          "#6b5f4f",
+          "#a99b87",
+          "#d8ccb8",
+          "#ebe4d6",
+          "#f4f0e7",
+          "#fbf8f1"
+        ]
+      },
+      "light-reading-border": {
+        "role": "neutral",
+        "displayName": "Soft Rule",
+        "canonical": "#d8ccb8",
+        "tonalRamp": [
+          "#2a241b",
+          "#4c4233",
+          "#6b5f4f",
+          "#a99b87",
+          "#d8ccb8",
+          "#ebe4d6",
+          "#f4f0e7",
+          "#fbf8f1"
+        ]
+      },
+      "light-reading-text": {
+        "role": "neutral",
+        "displayName": "Ink Text",
+        "canonical": "#242018",
+        "tonalRamp": [
+          "#120f0a",
+          "#242018",
+          "#3f382d",
+          "#5c5244",
+          "#6b5f4f",
+          "#a99b87",
+          "#d8ccb8",
+          "#fbf8f1"
+        ]
+      },
+      "light-reading-body": {
+        "role": "neutral",
+        "displayName": "Body Ink",
+        "canonical": "#3f382d",
+        "tonalRamp": [
+          "#120f0a",
+          "#242018",
+          "#3f382d",
+          "#5c5244",
+          "#6b5f4f",
+          "#a99b87",
+          "#d8ccb8",
+          "#fbf8f1"
+        ]
+      },
+      "light-reading-muted": {
+        "role": "neutral",
+        "displayName": "Archive Muted",
+        "canonical": "#6b5f4f",
+        "tonalRamp": [
+          "#120f0a",
+          "#242018",
+          "#3f382d",
+          "#5c5244",
+          "#6b5f4f",
+          "#a99b87",
+          "#d8ccb8",
+          "#fbf8f1"
+        ]
+      },
+      "light-reading-blue": {
+        "role": "primary",
+        "displayName": "Blueprint Blue",
+        "canonical": "#1f5f8b",
+        "tonalRamp": [
+          "#082f49",
+          "#0c4a6e",
+          "#1f5f8b",
+          "#256f9e",
+          "#3488bd",
+          "#6aa7d1",
+          "#b6d7ea",
+          "#e3f2f9"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Study hub and orientation pages only."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Article titles and primary page headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Panel titles, card titles, quiz section labels."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Long-form article reading and explanations."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Metadata, source labels, filters, status, compact navigation."
+      }
+    },
+    "shadows": [
+      {
+        "name": "overlay-shadow",
+        "value": "shadow-2xl / large modal shadow",
+        "purpose": "Search modal and floating overlays only. Ordinary panels stay flat."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition-fast",
+        "value": "140ms to 160ms ease",
+        "purpose": "Hover, focus, border, background, and color changes."
+      },
+      {
+        "name": "reduced-motion-safe",
+        "value": "state changes only",
+        "purpose": "No decorative choreography; respect reduced-motion preferences."
+      },
+      {
+        "name": "theme-toggle-transition",
+        "value": "color/background/border 150ms ease",
+        "purpose": "Theme changes should feel immediate and calm; avoid page-flash or animated choreography."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ],
+    "themes": [
+      {
+        "name": "dark-console",
+        "displayName": "Dark Console",
+        "default": true,
+        "purpose": "Focused technical study, low-light work, graph/quiz workflows, and control-room-style orientation.",
+        "tokens": {
+          "background": "reactor-slate",
+          "surface": "console-surface",
+          "panel": "procedure-panel",
+          "border": "rule-border",
+          "text": "primary-text",
+          "body": "body-text",
+          "muted": "muted-text",
+          "accent": "instrument-blue"
+        }
+      },
+      {
+        "name": "light-reading",
+        "displayName": "Light Reading",
+        "default": false,
+        "purpose": "Long article reading, daylight sessions, PDF-adjacent study, and users who fatigue in dark interfaces.",
+        "tokens": {
+          "background": "light-reading-bg",
+          "surface": "light-reading-surface",
+          "panel": "light-reading-panel",
+          "border": "light-reading-border",
+          "text": "light-reading-text",
+          "body": "light-reading-body",
+          "muted": "light-reading-muted",
+          "accent": "light-reading-blue"
+        }
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Quiz Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Primary action button for quiz starts, submissions, and strong learner actions.",
+      "html": "<button class=\"ds-btn-primary\">Start quiz</button>",
+      "css": ".ds-btn-primary { background: var(--color-accent-blue, #60a5fa); border: 1px solid var(--color-accent-blue, #60a5fa); color: #06111f; border-radius: 0.375rem; cursor: pointer; font-family: var(--font-sans, IBM Plex Sans, system-ui, sans-serif); font-size: 0.875rem; font-weight: 600; padding: 0.65rem 1rem; transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease; } .ds-btn-primary:hover { background: #93c5fd; border-color: #93c5fd; } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-accent-blue, #60a5fa); outline-offset: 2px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet secondary action for filters, navigation, and non-primary quiz controls.",
+      "html": "<button class=\"ds-btn-secondary\">Reset filters</button>",
+      "css": ".ds-btn-secondary { background: transparent; border: 1px solid var(--color-border, #1a2035); color: var(--color-text-body, #c8cdd5); border-radius: 0.375rem; cursor: pointer; font-family: var(--font-sans, IBM Plex Sans, system-ui, sans-serif); font-size: 0.875rem; padding: 0.65rem 1rem; transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease; } .ds-btn-secondary:hover { border-color: var(--color-accent-blue, #60a5fa); color: var(--color-accent-blue, #60a5fa); } .ds-btn-secondary:focus-visible { outline: 2px solid var(--color-accent-blue, #60a5fa); outline-offset: 2px; }"
+    },
+    {
+      "name": "Search Input",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Knowledge-base search field with compact dark-panel styling and visible focus.",
+      "html": "<label class=\"ds-search-label\">Search articles</label><input class=\"ds-search-input\" placeholder=\"Search articles...\" />",
+      "css": ".ds-search-label { display: block; margin-bottom: 0.375rem; color: var(--color-text-muted, #8b95a5); font-family: var(--font-mono, JetBrains Mono, ui-monospace, monospace); font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; } .ds-search-input { width: 100%; background: var(--color-bg-card, #111827); border: 1px solid var(--color-border, #1a2035); border-radius: 0.375rem; color: var(--color-text-primary, #e0e4ea); font-family: var(--font-sans, IBM Plex Sans, system-ui, sans-serif); font-size: 0.875rem; padding: 0.625rem 1rem; outline: none; } .ds-search-input::placeholder { color: var(--color-text-muted, #8b95a5); } .ds-search-input:focus { border-color: #2a6f97; }"
+    },
+    {
+      "name": "Study Card",
+      "kind": "card",
+      "refersTo": "study-card",
+      "description": "Large learner-entry card for Study, Quick Quiz, Study Map, and Progress actions.",
+      "html": "<a class=\"ds-study-card\" href=\"#\"><span class=\"ds-study-card-kicker\">Recommended</span><strong>Quick Quiz</strong><span>Start a focused practice set and target weak areas.</span><span class=\"ds-study-card-action\">Start \u2192</span></a>",
+      "css": ".ds-study-card { display: flex; min-height: 224px; flex-direction: column; gap: 0.75rem; border: 1px solid var(--color-border, #1a2035); border-radius: 1rem; background: var(--color-bg-card, #111827); padding: 1.25rem; color: var(--color-text-body, #c8cdd5); text-decoration: none; font-family: var(--font-sans, IBM Plex Sans, system-ui, sans-serif); transition: border-color 140ms ease, transform 140ms ease, background 140ms ease; } .ds-study-card:hover { border-color: var(--color-accent-blue, #60a5fa); background: rgba(96, 165, 250, 0.06); transform: translateY(-1px); } .ds-study-card-kicker { color: var(--color-accent-blue, #60a5fa); font-family: var(--font-mono, JetBrains Mono, ui-monospace, monospace); font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; } .ds-study-card strong { color: var(--color-text-primary, #e0e4ea); font-family: var(--font-serif, Instrument Serif, Georgia, serif); font-size: 1.65rem; font-weight: 500; line-height: 1.1; } .ds-study-card-action { margin-top: auto; color: var(--color-accent-blue, #60a5fa); font-weight: 700; }"
+    },
+    {
+      "name": "Quiz Choice",
+      "kind": "button",
+      "refersTo": "quiz-choice",
+      "description": "Answer-choice surface optimized for readable question practice.",
+      "html": "<button class=\"ds-quiz-choice\"><span class=\"ds-quiz-choice-label\">A.</span> Restore the affected train and verify source alignment.</button>",
+      "css": ".ds-quiz-choice { width: 100%; background: var(--color-bg, #0a0e17); border: 1px solid var(--color-border, #1a2035); border-radius: 0.375rem; color: var(--color-text-body, #c8cdd5); cursor: pointer; font-family: var(--font-sans, IBM Plex Sans, system-ui, sans-serif); font-size: 0.875rem; padding: 0.9rem 1rem; text-align: left; transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease; } .ds-quiz-choice:hover { border-color: var(--color-accent-blue, #60a5fa); color: var(--color-text-primary, #e0e4ea); } .ds-quiz-choice:focus-visible { outline: 2px solid var(--color-accent-blue, #60a5fa); outline-offset: 2px; } .ds-quiz-choice-label { color: var(--color-text-primary, #e0e4ea); font-weight: 700; margin-right: 0.25rem; }"
+    },
+    {
+      "name": "Status Chip",
+      "kind": "chip",
+      "refersTo": "status-chip",
+      "description": "Compact source/review status chip that never relies on color alone.",
+      "html": "<span class=\"ds-status-chip\"><span class=\"ds-status-dot\"></span> Verified</span>",
+      "css": ".ds-status-chip { display: inline-flex; align-items: center; gap: 0.375rem; border: 1px solid rgba(16, 185, 129, 0.45); border-radius: 999px; background: rgba(16, 185, 129, 0.08); color: #34d399; font-family: var(--font-mono, JetBrains Mono, ui-monospace, monospace); font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em; padding: 0.2rem 0.55rem; text-transform: uppercase; } .ds-status-dot { width: 0.45rem; height: 0.45rem; border-radius: 999px; background: #10b981; }"
+    },
+    {
+      "name": "Sidebar Nav Item",
+      "kind": "nav",
+      "refersTo": "sidebar-nav-item",
+      "description": "Dense article navigation row with current-location state.",
+      "html": "<a class=\"ds-sidebar-item ds-sidebar-item-active\" href=\"#\">Reactor Coolant System</a>",
+      "css": ".ds-sidebar-item { display: block; padding: 5px 1rem 5px 1.5rem; color: var(--color-text-muted, #8b95a5); text-decoration: none; font-family: var(--font-sans, IBM Plex Sans, system-ui, sans-serif); font-size: 0.75rem; transition: color 160ms ease, background-color 160ms ease; } .ds-sidebar-item:hover { color: var(--color-text-body, #c8cdd5); background: #0d1525; } .ds-sidebar-item-active { background: #111d35; color: var(--color-accent-blue, #60a5fa); border-left: 2px solid #2a6f97; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Digital NRC Binder",
+    "overview": "Salem Study System should feel like a dark, source-traceable technical study console: calm enough for long sessions, dense enough for operator-grade material, and strict enough to preserve confidence in every fact. It is not a marketing surface. It is a working reference, quiz, progress, and study-map environment for serious NRC RO/SRO exam preparation.",
+    "keyCharacteristics": [
+      "Dark technical reading environment with muted navy/slate surfaces.",
+      "Source-first hierarchy for articles, PDFs, Tech Specs, exams, and quiz states.",
+      "Compact, instrument-like controls with clear hover/focus/active behavior.",
+      "Dense layouts that stay scannable through typography, borders, and spacing rhythm.",
+      "Color as state and orientation, not decoration.",
+      "User-selectable dark and light themes with persistent preference."
+    ],
+    "rules": [
+      {
+        "name": "The Color Means State Rule",
+        "body": "Instrument Blue orients; Green verifies; Amber reviews; Red warns. Do not use these colors as decoration when no state or action exists.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dark Console Rule",
+        "body": "Reactor Slate stays dominant. Large areas of bright color are prohibited unless a future surface explicitly earns a temporary mode-specific override.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Color-Only Meaning Rule",
+        "body": "Every verification, warning, draft, review, mastery, and error signal must pair color with a label, icon, or shape.",
+        "section": "colors"
+      },
+      {
+        "name": "The Serif Is a Study-Hub Accent Rule",
+        "body": "Instrument Serif may give orientation pages some gravity, but it must not appear in dense product labels, controls, tables, or status UI.",
+        "section": "typography"
+      },
+      {
+        "name": "The Metadata Is Mono Rule",
+        "body": "Source IDs, status labels, filters, setpoints, and compact navigation labels use JetBrains Mono to reinforce traceability.",
+        "section": "typography"
+      },
+      {
+        "name": "The Long-Session Rule",
+        "body": "Body copy needs generous line height and controlled line length. Dense does not mean cramped.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Binder Rule",
+        "body": "Article surfaces, cards, filters, sidebars, and quiz panels are flat at rest. Do not add ambient shadows to make them feel like marketing cards.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Border Does the Work Rule",
+        "body": "Use Rule Border (#1a2035), High Border (#283252), and active-state borders before reaching for shadows.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Two Binders Rule",
+        "body": "Dark mode is the control-room console; light mode is the paper NRC binder. They share hierarchy, components, status language, and source authority. Only surface and contrast tokens change.",
+        "section": "colors"
+      },
+      {
+        "name": "The No Pure White Rule",
+        "body": "The light reading theme must not use pure white as the reading canvas. Use warm, low-glare paper tones so long study sessions stay comfortable.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do preserve the PRODUCT.md promise of a source-traceable NRC RO/SRO study environment.",
+      "Do use Reactor Slate (#0a0e17) as the dominant page background and Procedure Panel (#111827) for cards, inputs, code blocks, and quiz choices.",
+      "Do use Instrument Blue (#60a5fa) for current location, primary action, links, focus, and active selection.",
+      "Do pair every state color with text, label, icon, or shape.",
+      "Do keep article prose readable for long sessions: body around 0.9375rem, line-height around 1.7, and controlled line length.",
+      "Do keep tables, setpoints, source IDs, and quiz metadata compact and scannable.",
+      "Do prefer flat tonal layers, precise borders, and sticky orientation rails over shadows.",
+      "Do make source PDFs, Tech Spec references, draft/verified state, and exam metadata feel first-class.",
+      "Do provide both a dark console theme and a warm light reading theme with a visible, persistent user toggle.",
+      "Do use Binder Paper (#f4f0e7) and Clean Page (#fbf8f1) for light-theme long-reading surfaces.",
+      "Do use Instrument Blue (#60a5fa) in dark mode and Blueprint Blue (#1f5f8b) in light mode for current location, primary action, links, focus, and active selection."
+    ],
+    "donts": [
+      "Don't make this a generic blue education SaaS interface.",
+      "Don't use neon AI dashboard styling, cyberpunk visuals, or purple-gradient glassmorphism.",
+      "Don't make it feel like a gamified Duolingo-style learning app.",
+      "Don't use decorative nuclear gimmicks, warning-symbol wallpaper, or radiation-sign branding.",
+      "Don't turn the homepage or study hub into card-grid overload where every concept is the same icon-heading-text block.",
+      "Don't make flashy marketing pages where design competes with study work.",
+      "Don't use decorative motion, gradient text, or effects that reduce readability.",
+      "Don't add ambient card shadows to ordinary article, quiz, or sidebar surfaces.",
+      "Don't use side-stripe borders greater than 1px as the main accent on future callout/card designs; use structured labels, full borders, or tonal headers instead.",
+      "Don't let Instrument Serif leak into dense controls, tables, labels, or status UI.",
+      "Don't make light mode a plain inverted copy of dark mode. It needs purpose-built reading tokens, low-glare surfaces, and preserved semantic state colors.",
+      "Don't use pure white (#ffffff) or pure black (#000000) as theme primitives."
+    ]
+  }
+}

@@ -86,7 +86,11 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
           username: String(data.get('username') ?? ''),
           password: String(data.get('password') ?? ''),
         });
-        status.textContent = `Logged in as ${result.user.username}. Redirecting…`;
+        localStorage.setItem('salem-study-user', JSON.stringify({
+          username: result.user.username,
+          displayName: result.user.display_name || result.user.username,
+        }));
+        status.textContent = `Logged in as ${result.user.display_name || result.user.username}. Redirecting…`;
         status.className = 'mt-5 min-h-6 text-sm text-emerald-300';
         window.location.href = redirectTo;
       } catch (error) {
