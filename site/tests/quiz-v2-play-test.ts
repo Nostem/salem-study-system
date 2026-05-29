@@ -125,6 +125,8 @@ test('quiz-v2 play advances to the next question and prev returns to the first',
     .getAttribute('data-qv2p-detail');
   expect(firstSlug).toBeTruthy();
 
+  await page.locator('.qv2p-detail:not(.hidden)').getByTestId(/^qv2p-choice-/).first().click();
+  await expect(page.getByTestId('qv2p-next')).toBeEnabled();
   await page.getByTestId('qv2p-next').click();
   await expect(page.getByTestId('qv2p-session-index')).toHaveText('2');
   const secondSlug = await page
@@ -148,12 +150,15 @@ test('quiz-v2 play produces the same question order across reloads for a seed', 
   const collectOrder = async (): Promise<string[]> => {
     const slugs: string[] = [];
     for (let i = 0; i < 4; i++) {
-      const slug = await page
-        .locator('.qv2p-detail:not(.hidden)')
-        .getAttribute('data-qv2p-detail');
+      const detail = page.locator('.qv2p-detail:not(.hidden)');
+      const slug = await detail.getAttribute('data-qv2p-detail');
       if (!slug) throw new Error(`no visible question at index ${i}`);
       slugs.push(slug);
-      if (i < 3) await page.getByTestId('qv2p-next').click();
+      if (i < 3) {
+        await detail.getByTestId(/^qv2p-choice-/).first().click();
+        await expect(page.getByTestId('qv2p-next')).toBeEnabled();
+        await page.getByTestId('qv2p-next').click();
+      }
     }
     return slugs;
   };
