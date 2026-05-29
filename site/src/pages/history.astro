@@ -7,84 +7,84 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
 
 <StudyLayout title="My Progress" active="progress">
   <main class="mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:py-10">
-    <section class="space-y-6 text-[#c8cdd5]">
+    <section class="space-y-6 text-text-body">
     <div>
-      <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-[#22d3ee]">Quiz history</p>
-      <h1 class="mt-2 text-3xl font-semibold text-[#e0e4ea]">My Progress</h1>
-      <p class="mt-2 max-w-3xl text-sm text-[#8b95a5]">
+      <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-accent-teal">Quiz history</p>
+      <h1 class="mt-2 text-3xl font-semibold text-text-primary">My Progress</h1>
+      <p class="mt-2 max-w-3xl text-sm text-text-muted">
         Review completed quizzes, pass/fail trend, weak topics, and prior question-by-question results.
       </p>
     </div>
 
-    <div data-testid="history-login-required" class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-6">
-      <h2 class="text-xl font-semibold text-[#e0e4ea]">Log in to view your progress</h2>
-      <p class="mt-2 text-sm text-[#8b95a5]">
+    <div data-testid="history-login-required" class="rounded-xl border border-border bg-bg-card p-6">
+      <h2 class="text-xl font-semibold text-text-primary">Log in to view your progress</h2>
+      <p class="mt-2 text-sm text-text-muted">
         Quiz history is private and only shows attempts for your account.
       </p>
       <div class="mt-4 flex flex-wrap items-center gap-3">
-        <a href={loginHref} class="rounded-lg border border-[#2a6f97] bg-[#102033] px-4 py-2 text-sm font-semibold text-[#d7ecff] no-underline hover:bg-[#132a44]">Log in</a>
-        <span class="text-xs text-[#8b95a5]">If you do not have an account, contact site administrator through the Contact / Feedback form.</span>
+        <a href={loginHref} class="study-button study-button--accent">Log in</a>
+        <span class="text-xs text-text-muted">Need access? Use Contact / Feedback and ask the site administrator for a Salem Study beta account.</span>
       </div>
     </div>
 
     <div data-testid="history-app" class="hidden space-y-6">
       <div data-testid="history-summary" class="grid gap-3 md:grid-cols-4">
-        <div class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
-          <div class="text-xs uppercase tracking-[0.18em] text-[#8b95a5]">Completed</div>
-          <div data-history-summary="completed" class="mt-2 text-3xl font-semibold text-[#e0e4ea]">0</div>
+        <div class="rounded-xl border border-border bg-bg-card p-4">
+          <div class="text-xs uppercase tracking-[0.18em] text-text-muted">Completed</div>
+          <div data-history-summary="completed" class="mt-2 font-mono text-3xl font-semibold text-text-primary">0</div>
         </div>
-        <div class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
-          <div class="text-xs uppercase tracking-[0.18em] text-[#8b95a5]">Avg score</div>
-          <div data-history-summary="average" class="mt-2 text-3xl font-semibold text-[#e0e4ea]">0%</div>
+        <div class="rounded-xl border border-border bg-bg-card p-4">
+          <div class="text-xs uppercase tracking-[0.18em] text-text-muted">Avg score</div>
+          <div data-history-summary="average" class="mt-2 font-mono text-3xl font-semibold text-text-primary">0%</div>
         </div>
-        <div class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
-          <div class="text-xs uppercase tracking-[0.18em] text-[#8b95a5]">Pass rate</div>
-          <div data-history-summary="pass-rate" class="mt-2 text-3xl font-semibold text-[#e0e4ea]">0%</div>
+        <div class="rounded-xl border border-border bg-bg-card p-4">
+          <div class="text-xs uppercase tracking-[0.18em] text-text-muted">Pass rate</div>
+          <div data-history-summary="pass-rate" class="mt-2 font-mono text-3xl font-semibold text-text-primary">0%</div>
         </div>
-        <div class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
-          <div class="text-xs uppercase tracking-[0.18em] text-[#8b95a5]">Last quiz</div>
-          <div data-history-summary="last" class="mt-2 text-lg font-semibold text-[#e0e4ea]">—</div>
+        <div class="rounded-xl border border-border bg-bg-card p-4">
+          <div class="text-xs uppercase tracking-[0.18em] text-text-muted">Last quiz</div>
+          <div data-history-summary="last" class="mt-2 font-mono text-lg font-semibold text-text-primary">—</div>
         </div>
       </div>
 
-      <section data-testid="history-personal-analytics" class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+      <section data-testid="history-personal-analytics" class="rounded-xl border border-border bg-bg-card p-4">
         <div class="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
           <div>
-            <h2 class="text-lg font-semibold text-[#e0e4ea]">Personal study dashboard</h2>
-            <p class="mt-1 text-xs text-[#8b95a5]">Small beta summary of accuracy, due review load, and mastery state before /quiz migration.</p>
+            <h2 class="text-lg font-semibold text-text-primary">Personal study dashboard</h2>
+            <p class="mt-1 text-xs text-text-muted">Accuracy, due review load, and mastery state from saved quiz attempts.</p>
           </div>
-          <a href={`${base}quiz-v2/review/`} class="rounded-md border border-[#2a6f97] px-3 py-2 text-xs text-[#d7ecff] no-underline hover:bg-[#102033]">Open due review</a>
+          <a href={`${base}quiz-v2/review/`} class="study-button study-button--accent text-xs">Open due review</a>
         </div>
         <dl class="mt-4 grid gap-3 sm:grid-cols-4">
-          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
-            <dt class="text-xs uppercase tracking-[0.16em] text-[#8b95a5]">Overall accuracy</dt>
-            <dd data-history-analytics="accuracy" class="mt-2 text-2xl font-semibold text-[#e0e4ea]">—</dd>
+          <div class="rounded-lg border border-border bg-bg p-3">
+            <dt class="text-xs uppercase tracking-[0.16em] text-text-muted">Overall accuracy</dt>
+            <dd data-history-analytics="accuracy" class="mt-2 text-2xl font-semibold text-text-primary">—</dd>
           </div>
-          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
-            <dt class="text-xs uppercase tracking-[0.16em] text-[#8b95a5]">Due reviews</dt>
-            <dd data-history-analytics="due" class="mt-2 text-2xl font-semibold text-[#facc15]">0</dd>
+          <div class="rounded-lg border border-border bg-bg p-3">
+            <dt class="text-xs uppercase tracking-[0.16em] text-text-muted">Due reviews</dt>
+            <dd data-history-analytics="due" class="mt-2 text-2xl font-semibold text-accent-amber">0</dd>
           </div>
-          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
-            <dt class="text-xs uppercase tracking-[0.16em] text-[#8b95a5]">Shaky</dt>
-            <dd data-history-analytics="shaky" class="mt-2 text-2xl font-semibold text-[#fca5a5]">0</dd>
+          <div class="rounded-lg border border-border bg-bg p-3">
+            <dt class="text-xs uppercase tracking-[0.16em] text-text-muted">Shaky</dt>
+            <dd data-history-analytics="shaky" class="mt-2 text-2xl font-semibold text-mastery-weak">0</dd>
           </div>
-          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
-            <dt class="text-xs uppercase tracking-[0.16em] text-[#8b95a5]">Mastered</dt>
-            <dd data-history-analytics="mastered" class="mt-2 text-2xl font-semibold text-[#8fd694]">0</dd>
+          <div class="rounded-lg border border-border bg-bg p-3">
+            <dt class="text-xs uppercase tracking-[0.16em] text-text-muted">Mastered</dt>
+            <dd data-history-analytics="mastered" class="mt-2 text-2xl font-semibold text-mastery-ok">0</dd>
           </div>
         </dl>
       </section>
 
       <div class="grid gap-6 xl:grid-cols-[minmax(0,1fr)_320px]">
-        <section class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
+        <section class="rounded-xl border border-border bg-bg-card p-4">
           <div class="mb-3 flex items-center justify-between gap-3">
-            <h2 class="text-lg font-semibold text-[#e0e4ea]">Completed quizzes</h2>
-            <span data-history-last-completed class="font-mono text-[11px] text-[#8b95a5]"></span>
+            <h2 class="text-lg font-semibold text-text-primary">Completed quizzes</h2>
+            <span data-history-last-completed class="font-mono text-[11px] text-text-muted"></span>
           </div>
           <div data-testid="history-sessions" class="overflow-x-auto">
             <table class="w-full min-w-[720px] border-collapse text-sm">
-              <thead class="text-left text-xs uppercase tracking-[0.16em] text-[#8b95a5]">
-                <tr class="border-b border-[#1a2035]">
+              <thead class="text-left text-xs uppercase tracking-[0.16em] text-text-muted">
+                <tr class="border-b border-border">
                   <th class="py-2 pr-3">Date</th>
                   <th class="py-2 pr-3">Quiz</th>
                   <th class="py-2 pr-3">Mode</th>
@@ -95,19 +95,23 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
               <tbody data-history-sessions-body></tbody>
             </table>
           </div>
-          <p data-history-empty class="hidden py-8 text-center text-sm text-[#8b95a5]">No quiz attempts yet. Complete a quiz to start building your history.</p>
+          <div data-history-empty class="hidden rounded-lg border border-border bg-bg p-5 text-sm text-text-body">
+            <div class="study-kicker">No attempts yet</div>
+            <p class="mt-2 text-text-muted">Complete a Quick Quiz or Practice set while logged in. Scores, missed topics, and due review items will appear here.</p>
+            <a href={`${base}quiz/`} class="study-button study-button--primary mt-4">Start Quick Quiz</a>
+          </div>
         </section>
 
-        <aside data-testid="history-weak-topics" class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
-          <h2 class="text-lg font-semibold text-[#e0e4ea]">Weak topics</h2>
-          <p class="mt-1 text-xs text-[#8b95a5]">Topics with recent misses, sorted by miss count.</p>
+        <aside data-testid="history-weak-topics" class="rounded-xl border border-border bg-bg-card p-4">
+          <h2 class="text-lg font-semibold text-text-primary">Weak topics</h2>
+          <p class="mt-1 text-xs text-text-muted">Topics with recent misses, sorted by miss count.</p>
           <div data-history-weak-topics-list class="mt-4 space-y-3"></div>
         </aside>
       </div>
 
-      <section data-testid="history-review" class="rounded-xl border border-[#1a2035] bg-[#0d1525] p-4">
-        <h2 class="text-lg font-semibold text-[#e0e4ea]">Session review</h2>
-        <p data-history-review-empty class="mt-2 text-sm text-[#8b95a5]">Select a quiz attempt to review question-level results.</p>
+      <section data-testid="history-review" class="rounded-xl border border-border bg-bg-card p-4">
+        <h2 class="text-lg font-semibold text-text-primary">Session review</h2>
+        <p data-history-review-empty class="mt-2 text-sm text-text-muted">Select a completed quiz to review question-level results, source links, and missed items.</p>
         <div data-history-review-content class="mt-4 space-y-3"></div>
       </section>
     </div>
@@ -189,18 +193,18 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
         const retakeMissedHref = normalizeAppHref(session.retakeMissedHref);
         const badge = modeBadge(session);
         return `
-        <tr class="border-b border-[#172033] text-[#c8cdd5]">
-          <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(formatDate(session.completedAt))}</td>
+        <tr class="border-b border-border text-text-body">
+          <td class="py-3 pr-3 align-top text-xs text-text-muted">${escapeHtml(formatDate(session.completedAt))}</td>
           <td class="py-3 pr-3 align-top">
-            <div class="font-medium text-[#e0e4ea]">${escapeHtml(session.filterSummary)}</div>
-            <div class="mt-2 flex flex-wrap items-center gap-2 text-xs text-[#8b95a5]">
-              <span class="rounded-full border border-[#2a6f97] px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-[#d7ecff]">${escapeHtml(badge)}</span>
+            <div class="font-medium text-text-primary">${escapeHtml(session.filterSummary)}</div>
+            <div class="mt-2 flex flex-wrap items-center gap-2 text-xs text-text-muted">
+              <span class="rounded-full border border-accent-blue px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-accent-blue">${escapeHtml(badge)}</span>
               <span>${escapeHtml(session.quizType)} · ${session.totalQuestions} total</span>
             </div>
           </td>
-          <td class="py-3 pr-3 align-top text-xs text-[#8b95a5]">${escapeHtml(session.feedbackMode)}${session.completionMode === 'early' ? ' · Early finish' : ''}</td>
-          <td class="py-3 pr-3 align-top font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</td>
-          <td class="py-3 pr-3 align-top"><div class="flex flex-wrap gap-2"><button type="button" data-review-session="${escapeHtml(session.id)}" aria-label="Review ${escapeHtml(session.id)}" class="rounded-md border border-[#2a6f97] px-3 py-1 text-xs text-[#d7ecff] hover:bg-[#102033]">Review</button>${replayHref ? `<a href="${escapeHtml(replayHref)}" class="rounded-md border border-[#334155] px-3 py-1 text-xs text-[#c8cdd5] no-underline hover:bg-[#102033]">Replay</a>` : ''}${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-1 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Review missed</a>` : ''}${retakeMissedHref ? `<a href="${escapeHtml(retakeMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-1 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Quiz missed</a>` : ''}</div></td>
+          <td class="py-3 pr-3 align-top text-xs text-text-muted">${escapeHtml(session.feedbackMode)}${session.completionMode === 'early' ? ' · Early finish' : ''}</td>
+          <td class="py-3 pr-3 align-top font-mono text-xs ${session.passStatus === 'pass' ? 'text-mastery-ok' : 'text-mastery-weak'}">${escapeHtml(scoreLine(session))}</td>
+          <td class="py-3 pr-3 align-top"><div class="flex flex-wrap gap-2"><button type="button" data-review-session="${escapeHtml(session.id)}" aria-label="Review ${escapeHtml(session.id)}" class="study-button study-button--accent text-xs">Review</button>${replayHref ? `<a href="${escapeHtml(replayHref)}" class="study-button study-button--secondary text-xs">Replay</a>` : ''}${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="study-button study-button--secondary text-xs !border-mastery-weak !text-mastery-weak">Review missed</a>` : ''}${retakeMissedHref ? `<a href="${escapeHtml(retakeMissedHref)}" class="study-button study-button--secondary text-xs !border-mastery-weak !text-mastery-weak">Quiz missed</a>` : ''}</div></td>
         </tr>
       `;
       }).join('');
@@ -209,17 +213,17 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
     function renderWeakTopics(data: QuizHistoryResponse): void {
       if (!weakTopicsList) return;
       if (data.weakTopics.length === 0) {
-        weakTopicsList.innerHTML = '<p class="text-sm text-[#8b95a5]">No weak topics yet.</p>';
+        weakTopicsList.innerHTML = '<div class="rounded-lg border border-border bg-bg p-4 text-sm text-text-body"><div class="study-kicker">No weak topics yet</div><p class="mt-2 text-text-muted">Missed questions will appear here after you complete saved quizzes.</p></div>';
         return;
       }
       weakTopicsList.innerHTML = data.weakTopics.map((topic) => `
-        <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
+        <div class="rounded-lg border border-border bg-bg p-3">
           <div class="flex items-center justify-between gap-3">
-            <div class="font-medium text-[#e0e4ea]">${escapeHtml(topic.title)}</div>
-            <div class="font-mono text-xs text-[#fca5a5]">${formatPercent(topic.accuracy)}</div>
+            <div class="font-medium text-text-primary">${escapeHtml(topic.title)}</div>
+            <div class="font-mono text-xs text-mastery-weak">${formatPercent(topic.accuracy)}</div>
           </div>
-          <div class="mt-1 text-xs text-[#8b95a5]">${topic.misses} miss${topic.misses === 1 ? '' : 'es'} / ${topic.attempts} attempts</div>
-          <a href="${appBase}quiz-v2/play/?topics=${encodeURIComponent(topic.slug)}&count=10&seed=weak-topic" class="mt-2 inline-block rounded border border-[#334155] px-2 py-1 text-xs text-[#c8cdd5] no-underline hover:bg-[#102033]">Practice topic</a>
+          <div class="mt-1 text-xs text-text-muted">${topic.misses} miss${topic.misses === 1 ? '' : 'es'} / ${topic.attempts} attempts</div>
+          <a href="${appBase}quiz-v2/play/?topics=${encodeURIComponent(topic.slug)}&count=10&seed=weak-topic" class="study-button study-button--secondary mt-2 text-xs">Practice topic</a>
         </div>
       `).join('');
     }
@@ -231,27 +235,27 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
       const retakeMissedHref = normalizeAppHref(session.retakeMissedHref);
       reviewEmpty.classList.add('hidden');
       reviewContent.innerHTML = `
-        <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
-          <div class="font-mono text-xs ${session.passStatus === 'pass' ? 'text-[#8fd694]' : 'text-[#fca5a5]'}">${escapeHtml(scoreLine(session))}</div>
-          <div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-[#8b95a5]">
-            <span class="rounded-full border border-[#2a6f97] px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-[#d7ecff]">${escapeHtml(modeBadge(session))}</span>
+        <div class="rounded-lg border border-border bg-bg p-3">
+          <div class="font-mono text-xs ${session.passStatus === 'pass' ? 'text-mastery-ok' : 'text-mastery-weak'}">${escapeHtml(scoreLine(session))}</div>
+          <div class="mt-2 flex flex-wrap items-center gap-2 text-sm text-text-muted">
+            <span class="rounded-full border border-accent-blue px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.12em] text-accent-blue">${escapeHtml(modeBadge(session))}</span>
             <span>${escapeHtml(session.filterSummary)}</span>
           </div>
         </div>
         <div class="flex flex-wrap gap-2">
-          ${replayHref ? `<a href="${escapeHtml(replayHref)}" class="rounded-md border border-[#2a6f97] px-3 py-2 text-xs text-[#d7ecff] no-underline hover:bg-[#102033]">Replay full session</a>` : ''}
-          ${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-2 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Review missed/unanswered</a>` : ''}
-          ${retakeMissedHref ? `<a href="${escapeHtml(retakeMissedHref)}" class="rounded-md border border-[#7f2f2f] px-3 py-2 text-xs text-[#fca5a5] no-underline hover:bg-[#2a1010]">Quiz missed/unanswered</a>` : ''}
+          ${replayHref ? `<a href="${escapeHtml(replayHref)}" class="study-button study-button--accent text-xs">Replay full session</a>` : ''}
+          ${reviewMissedHref ? `<a href="${escapeHtml(reviewMissedHref)}" class="study-button study-button--secondary text-xs !border-mastery-weak !text-mastery-weak">Review missed/unanswered</a>` : ''}
+          ${retakeMissedHref ? `<a href="${escapeHtml(retakeMissedHref)}" class="study-button study-button--secondary text-xs !border-mastery-weak !text-mastery-weak">Quiz missed/unanswered</a>` : ''}
         </div>
         ${session.questions.map((question) => `
-          <div class="rounded-lg border border-[#172033] bg-[#0b1020] p-3">
+          <div class="rounded-lg border border-border bg-bg p-3">
             <div class="flex flex-wrap items-center justify-between gap-2">
-              <h3 class="font-semibold text-[#e0e4ea]">${question.position}. ${escapeHtml(question.displayTitle)}</h3>
-              <span class="rounded-full border px-2 py-0.5 text-[11px] uppercase ${question.status === 'correct' ? 'border-[#2f6f4f] text-[#8fd694]' : question.status === 'incorrect' ? 'border-[#7f2f2f] text-[#fca5a5]' : 'border-[#8b95a5] text-[#9ca3af]'}">${escapeHtml(question.status === 'correct' ? 'Correct' : question.status)}</span>
+              <h3 class="font-semibold text-text-primary">${question.position}. ${escapeHtml(question.displayTitle)}</h3>
+              <span class="rounded-full border px-2 py-0.5 text-[11px] uppercase ${question.status === 'correct' ? 'border-mastery-ok text-mastery-ok' : question.status === 'incorrect' ? 'border-mastery-weak text-mastery-weak' : 'border-border-hi text-text-body'}">${escapeHtml(question.status === 'correct' ? 'Correct' : question.status)}</span>
             </div>
-            <div class="mt-2 text-sm text-[#c8cdd5]">Selected: ${escapeHtml(question.selectedLabel ?? '—')}${question.selectedOriginalLabel ? ` · Original: ${escapeHtml(question.selectedOriginalLabel)}` : ''}</div>
-            <div class="mt-1 text-xs text-[#8b95a5]">Accepted: ${escapeHtml((question.acceptedDisplayLabels?.length ? question.acceptedDisplayLabels : question.acceptedLabels).join(', ') || '—')}${question.acceptedDisplayLabels?.length && question.acceptedLabels.join(', ') !== question.acceptedDisplayLabels.join(', ') ? ` · Original: ${escapeHtml(question.acceptedLabels.join(', '))}` : ''}</div>
-            ${question.explanationText ? `<p class="mt-3 text-sm text-[#8b95a5]">${escapeHtml(question.explanationText)}</p>` : ''}
+            <div class="mt-2 text-sm text-text-body">Selected: ${escapeHtml(question.selectedLabel ?? '—')}${question.selectedOriginalLabel ? ` · Original: ${escapeHtml(question.selectedOriginalLabel)}` : ''}</div>
+            <div class="mt-1 text-xs text-text-muted">Accepted: ${escapeHtml((question.acceptedDisplayLabels?.length ? question.acceptedDisplayLabels : question.acceptedLabels).join(', ') || '—')}${question.acceptedDisplayLabels?.length && question.acceptedLabels.join(', ') !== question.acceptedDisplayLabels.join(', ') ? ` · Original: ${escapeHtml(question.acceptedLabels.join(', '))}` : ''}</div>
+            ${question.explanationText ? `<p class="mt-3 text-sm text-text-muted">${escapeHtml(question.explanationText)}</p>` : ''}
           </div>
         `).join('')}
       `;

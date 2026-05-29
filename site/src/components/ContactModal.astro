@@ -96,7 +96,7 @@
     if (pageUrl) pageUrl.textContent = `Page: ${window.location.href}`;
     if (status) {
       status.textContent = '';
-      status.className = 'min-h-5 text-xs text-[#8b95a5]';
+      status.className = 'min-h-5 text-xs';
     }
     message?.focus();
   }
@@ -131,7 +131,7 @@
 
       submit.disabled = true;
       status.textContent = 'Sending feedback…';
-      status.className = 'min-h-5 text-xs text-[#8b95a5]';
+      status.className = 'min-h-5 text-xs';
 
       try {
         await submitContactFeedback({
@@ -152,7 +152,7 @@
       } catch (error) {
         console.error('Failed to submit contact feedback', error);
         status.textContent = 'Feedback could not be sent. Please try again.';
-        status.className = 'min-h-5 text-xs text-[#fbbf24]';
+        status.className = 'min-h-5 text-xs contact-status--error';
       } finally {
         submit.disabled = false;
       }
