@@ -11,13 +11,14 @@ export type QuizTopic = {
   slug: string;
   title: string;
   slugs?: string[];
+  count?: number;
   relationshipType?: string;
   topicType?: string | null;
   topic_type?: string | null;
   wikiSlug?: string | null;
 };
 
-export type QuizTopicGroupKey = 'primary' | 'techSpecs' | 'procedures' | 'other';
+export type QuizTopicGroupKey = 'primary' | 'techSpecs' | 'eops' | 'abnormals' | 'procedures' | 'other';
 export type QuizTopicGroups = Record<QuizTopicGroupKey, QuizTopic[]>;
 
 export type QuizQuestion = {
@@ -69,6 +70,7 @@ export type QuizFilters = {
   examYear?: number | 'all';
   topicSlug?: string | 'all';
   topicSlugs?: string[];
+  topicGroups?: Partial<Record<QuizTopicGroupKey | string, string[]>>;
   includeReferenceRequired?: boolean;
   includeOutdated?: boolean;
   includeEdited?: boolean;
@@ -89,8 +91,7 @@ export function getExamYears(bank: QuizBank = quizBank): number[] {
 }
 
 function isSelectableTopic(topic: QuizTopic): boolean {
-  const type = topicType(topic);
-  return !['abnormal', 'procedure'].includes(type);
+  return quizTopicGroup(topic) !== 'other';
 }
 
 function topicType(topic: QuizTopic): string {
@@ -101,48 +102,81 @@ function isProcedureLikeTopic(topic: QuizTopic): boolean {
   const type = topicType(topic);
   const slug = topic.slug.toLowerCase();
   const title = topic.title.toLowerCase();
-  return ['abnormal', 'procedure', 'eop'].includes(type)
+  return ['procedure'].includes(type)
     || slug.startsWith('ab-')
     || slug.startsWith('op-')
+    || slug.startsWith('ad-')
+    || slug.startsWith('cc-aa-')
+    || slug.startsWith('ep-sa-')
+    || slug.startsWith('hu-aa-')
+    || slug.startsWith('nc-ep-')
+    || slug.startsWith('rp-aa-')
+    || slug.startsWith('sa-aa-')
     || slug.startsWith('s2-op-')
-    || slug.startsWith('eop-')
     || title.startsWith('ab.')
-    || title.startsWith('eop');
+    || title.startsWith('s2.op')
+    || title.startsWith('op-aa')
+    || title.startsWith('hu-aa')
+    || title.startsWith('rp-aa');
 }
 
 function quizTopicGroup(topic: QuizTopic): QuizTopicGroupKey {
   const type = topicType(topic);
   if (type === 'tech_spec' || topic.slug.startsWith('ts-')) return 'techSpecs';
+  if (type === 'eop' || topic.slug.startsWith('eop-')) return 'eops';
+  if (type === 'abnormal' || topic.slug.startsWith('ab-') || topic.title.toLowerCase().startsWith('ab.')) return 'abnormals';
+  if (type === 'admin' && topic.slug !== 'admin') return 'procedures';
   if (isProcedureLikeTopic(topic)) return 'procedures';
   if (type === 'system' || type === 'admin' || type === '') return 'primary';
   return 'other';
 }
 
-function mergeTopicsByTitle(topics: QuizTopic[]): QuizTopic[] {
+function topicQuestionSets(bank: QuizBank): Map<string, Set<string>> {
+  const counts = new Map<string, Set<string>>();
+  for (const question of bank.questions) {
+    if (!isPracticeEligible(question) || question.status === 'outdated') continue;
+    for (const topic of question.topics) {
+      const topicSet = counts.get(topic.slug) ?? new Set<string>();
+      topicSet.add(question.slug);
+      counts.set(topic.slug, topicSet);
+    }
+  }
+  return counts;
+}
+
+function mergeTopicsByTitle(topics: QuizTopic[], questionSets: Map<string, Set<string>> = new Map()): QuizTopic[] {
   const byTitle = new Map<string, QuizTopic>();
+  const titleQuestionSets = new Map<string, Set<string>>();
   topics
     .sort((a, b) => a.title.localeCompare(b.title) || a.slug.localeCompare(b.slug))
     .forEach((topic) => {
+      const titleSet = titleQuestionSets.get(topic.title) ?? new Set<string>();
+      for (const questionSlug of questionSets.get(topic.slug) ?? []) titleSet.add(questionSlug);
+      titleQuestionSets.set(topic.title, titleSet);
       const existing = byTitle.get(topic.title);
       if (!existing) {
-        byTitle.set(topic.title, { ...topic, slugs: [topic.slug] });
+        byTitle.set(topic.title, { ...topic, slugs: [topic.slug], count: titleSet.size });
         return;
       }
       existing.slugs = [...new Set([...(existing.slugs || [existing.slug]), topic.slug])].sort();
+      existing.count = titleSet.size;
     });
   return [...byTitle.values()].sort((a, b) => a.title.localeCompare(b.title));
 }
 
 export function getQuizTopics(bank: QuizBank = quizBank): QuizTopic[] {
   const used = new Set(bank.questions.flatMap((question) => question.topics.map((topic) => topic.slug)));
-  return mergeTopicsByTitle(bank.topics.filter((topic) => used.has(topic.slug) && isSelectableTopic(topic)));
+  return mergeTopicsByTitle(bank.topics.filter((topic) => used.has(topic.slug) && isSelectableTopic(topic)), topicQuestionSets(bank));
 }
 
 export function getQuizTopicGroups(bank: QuizBank = quizBank): QuizTopicGroups {
   const used = new Set(bank.questions.flatMap((question) => question.topics.map((topic) => topic.slug)));
+  const questionSets = topicQuestionSets(bank);
   const grouped: QuizTopicGroups = {
     primary: [],
     techSpecs: [],
+    eops: [],
+    abnormals: [],
     procedures: [],
     other: [],
   };
@@ -151,10 +185,12 @@ export function getQuizTopicGroups(bank: QuizBank = quizBank): QuizTopicGroups {
     grouped[quizTopicGroup(topic)].push(topic);
   }
   return {
-    primary: mergeTopicsByTitle(grouped.primary),
-    techSpecs: mergeTopicsByTitle(grouped.techSpecs),
-    procedures: mergeTopicsByTitle(grouped.procedures),
-    other: mergeTopicsByTitle(grouped.other),
+    primary: mergeTopicsByTitle(grouped.primary, questionSets),
+    techSpecs: mergeTopicsByTitle(grouped.techSpecs, questionSets),
+    eops: mergeTopicsByTitle(grouped.eops, questionSets),
+    abnormals: mergeTopicsByTitle(grouped.abnormals, questionSets),
+    procedures: mergeTopicsByTitle(grouped.procedures, questionSets),
+    other: mergeTopicsByTitle(grouped.other, questionSets),
   };
 }
 
@@ -163,6 +199,7 @@ export function filterQuizQuestions(filters: QuizFilters = {}, bank: QuizBank = 
   const includeOutdated = filters.includeOutdated ?? false;
   const includeEdited = filters.includeEdited ?? true;
   const includeDraft = filters.includeDraft ?? true;
+  const selectedTopicGroups = Object.values(filters.topicGroups ?? {}).filter((slugs): slugs is string[] => Array.isArray(slugs) && slugs.length > 0);
   const selectedTopicSlugs = filters.topicSlugs ?? (filters.topicSlug && filters.topicSlug !== 'all' ? [filters.topicSlug] : []);
   const examYear = filters.examYear ?? 'all';
 
@@ -173,7 +210,10 @@ export function filterQuizQuestions(filters: QuizFilters = {}, bank: QuizBank = 
     if (!includeOutdated && question.status === 'outdated') return false;
     if (!includeDraft && question.status === 'draft') return false;
     if (!includeEdited && question.isEdited) return false;
-    if (selectedTopicSlugs.length > 0 && !question.topics.some((topic) => selectedTopicSlugs.includes(topic.slug))) return false;
+    const questionTopicSlugs = new Set(question.topics.map((topic) => topic.slug));
+    if (selectedTopicGroups.length > 0) {
+      if (!selectedTopicGroups.every((slugs) => slugs.some((slug) => questionTopicSlugs.has(slug)))) return false;
+    } else if (selectedTopicSlugs.length > 0 && !selectedTopicSlugs.some((slug) => questionTopicSlugs.has(slug))) return false;
     return true;
   });
 

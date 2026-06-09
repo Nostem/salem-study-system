@@ -6,12 +6,14 @@ from scripts.exam_question_import import (
     build_question_record,
     build_wiki_slug_index,
     build_supabase_staging_bundle,
+    build_wiki_topic_link_index,
     collect_question_records,
     load_exam_yaml,
     load_topic_map,
     parse_question_markdown,
     resolve_record_topic_slugs,
     resolve_topic_slug_for_record,
+    _connection_topics,
 )
 
 
@@ -362,6 +364,40 @@ class ExamQuestionImportTests(unittest.TestCase):
 
         q78_topics = [row["topic_slug"] for row in bundle["question_topics"] if row["question_slug"] == "q78-ab-cn-0001-peer-checks-polisher-bypass"]
         self.assertIn("admin", q78_topics)
+
+    def test_wiki_topic_link_index_resolves_connection_aliases_to_canonical_topics(self):
+        link_index = build_wiki_topic_link_index(ROOT)
+
+        self.assertEqual(link_index["eop-trip-1"]["slug"], "eop-trip-1-reactor-trip-or-si")
+        self.assertEqual(link_index["eop-trip-1"]["topic_type"], "eop")
+        self.assertEqual(link_index["ab-cw-0001"]["slug"], "ab-cw-0001-circulating-water-malfunction")
+        self.assertEqual(link_index["ab-cw-0001"]["topic_type"], "abnormal")
+        self.assertEqual(link_index["op-aa-101-111-1003"]["topic_type"], "admin")
+
+    def test_connection_topics_skip_unresolved_links_instead_of_creating_orphan_topics(self):
+        topics = _connection_topics(
+            {"connections": {"Related systems": ["4kV", "Typo Does Not Resolve"]}},
+            build_wiki_topic_link_index(ROOT),
+        )
+
+        self.assertEqual([topic["slug"] for topic in topics], ["4kv"])
+
+    def test_build_supabase_staging_bundle_adds_connection_topics_when_root_is_available(self):
+        records = collect_question_records(ROOT, exam_year=2023, topic_map=load_topic_map(ROOT / "data/topic-map.yaml"))
+        bundle = build_supabase_staging_bundle(records, root=ROOT)
+
+        topics_by_slug = {topic["slug"]: topic for topic in bundle["topics"]}
+        self.assertEqual(topics_by_slug["eop-trip-1-reactor-trip-or-si"]["title"], "EOP-TRIP-1 — Reactor Trip or Safety Injection")
+        self.assertEqual(topics_by_slug["eop-trip-1-reactor-trip-or-si"]["topic_type"], "eop")
+        self.assertEqual(topics_by_slug["ab-cw-0001-circulating-water-malfunction"]["topic_type"], "abnormal")
+        self.assertEqual(topics_by_slug["500kv"]["topic_type"], "system")
+
+        q93_topics = [row["topic_slug"] for row in bundle["question_topics"] if row["question_slug"] == "q93-cw-bus-loss-circulator-trip"]
+        self.assertIn("4kv", q93_topics)
+        self.assertIn("500kv", q93_topics)
+        self.assertIn("ab-cw-0001-circulating-water-malfunction", q93_topics)
+        self.assertIn("eop-trip-1-reactor-trip-or-si", q93_topics)
+        self.assertNotIn("ab-cw-0001", q93_topics)
 
     def test_build_supabase_staging_bundle_splits_records_into_import_tables(self):
         records = collect_question_records(ROOT, exam_year=2018, topic_map=load_topic_map(ROOT / "data/topic-map.yaml"))

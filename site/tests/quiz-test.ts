@@ -74,7 +74,7 @@ test('quiz page builds an account-gated quiz from imported questions', async ({ 
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('3');
-  await page.getByLabel('Mode').selectOption('feedback');
+  await page.locator('#quiz-mode').selectOption('feedback');
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.getByTestId('quiz-session')).toBeVisible();
@@ -175,19 +175,23 @@ test('topic filter keeps common systems simple and moves advanced procedure node
   await expect(page.getByText('RPS/SSPS')).toBeVisible();
 
   const topicLabels = await page.getByTestId('topic-filter-list').locator('label span').allTextContents();
-  expect(topicLabels.filter((label) => label === 'Admin')).toHaveLength(1);
-  expect(topicLabels.filter((label) => label === 'AFW')).toHaveLength(1);
-  expect(topicLabels.filter((label) => label === 'CCW')).toHaveLength(1);
-  expect(topicLabels.filter((label) => label === 'Pressurizer & PRT')).toHaveLength(1);
+  expect(topicLabels.filter((label) => label.startsWith('Admin'))).toHaveLength(1);
+  expect(topicLabels.filter((label) => label.startsWith('AFW'))).toHaveLength(1);
+  expect(topicLabels.filter((label) => label.startsWith('CCW'))).toHaveLength(1);
+  expect(topicLabels.filter((label) => label.startsWith('Pressurizer & PRT'))).toHaveLength(1);
   expect(topicLabels.filter((label) => /Pressurizer And Prt/i.test(label))).toHaveLength(0);
 
   await expect(page.getByTestId('topic-filter-list')).not.toContainText(/^AB\./);
   await expect(page.getByTestId('advanced-topic-filters')).toBeVisible();
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('Tech Specs');
-  await expect(page.getByTestId('advanced-topic-filters')).toContainText('Procedures and abnormal procedures linked to exam questions');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('Emergency Operating Procedures');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('Abnormal Procedures');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('Operating, admin, and alarm procedures');
   await page.getByTestId('advanced-topic-filters').locator('summary').click();
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('TS 3/4.4 — Reactor Coolant System');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('AB.CW-0001 — Circulating Water Malfunction');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('EOP-TRIP-1 — Reactor Trip or Safety Injection');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('OP-AA-101-111-1003 — Use of Procedures');
 
   const techSpecTopicListMetrics = await page
     .locator('#tech-spec-topic-title')
@@ -202,13 +206,15 @@ test('topic filter keeps common systems simple and moves advanced procedure node
   expect(techSpecTopicListMetrics.overflowY).toMatch(/auto|scroll/);
 
   const procedureCheckboxBox = await page
-    .getByLabel('AB.CW-0001 — Circulating Water Malfunction')
+    .getByLabel(/AB\.CW-0001 — Circulating Water Malfunction/)
     .boundingBox();
   expect(procedureCheckboxBox?.width).toBeLessThanOrEqual(20);
   expect(procedureCheckboxBox?.height).toBeLessThanOrEqual(20);
 
   await page.getByLabel('Pressurizer Level & Press Control').check();
+  await expect(page.locator('#filter-summary')).toContainText(/19 eligible questions/);
   await page.getByLabel('RPS/SSPS').check();
+  await expect(page.locator('#filter-summary')).toContainText(/78 eligible questions/);
   await page.getByLabel('Question count').fill('5');
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
@@ -221,13 +227,29 @@ test('advanced procedure filters on Quick Quiz can start targeted practice', asy
   await page.goto('quiz/?seed=1');
 
   await page.getByTestId('advanced-topic-filters').locator('summary').click();
-  await page.getByLabel('AB.CW-0001 — Circulating Water Malfunction').check();
+  await page.getByLabel(/AB\.CW-0001 — Circulating Water Malfunction/).check();
   await page.getByLabel('Question count').fill('5');
-  await expect(page.locator('#filter-summary')).toContainText(/1 eligible question/);
+  await expect(page.locator('#filter-summary')).toContainText(/2 eligible questions/);
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.getByTestId('quiz-session')).toBeVisible();
-  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 1');
+  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 2');
+});
+
+test('advanced EOP and admin procedure filters can start targeted practice', async ({ page }) => {
+  await authenticateQuizUser(page);
+  await page.goto('quiz/?seed=2');
+
+  await page.getByTestId('advanced-topic-filters').locator('summary').click();
+  await page.getByLabel(/EOP-TRIP-1 — Reactor Trip or Safety Injection/).check();
+  await expect(page.locator('#filter-summary')).toContainText(/40 eligible questions/);
+  await page.getByLabel(/OP-AA-101-111-1003 — Use of Procedures/).check();
+  await expect(page.locator('#filter-summary')).toContainText(/2 eligible questions/);
+  await page.getByLabel('Question count').fill('3');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.getByTestId('quiz-session')).toBeVisible();
+  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 2');
 });
 
 test('feedback mode shows immediate right or wrong result after selecting an answer', async ({ page }) => {
@@ -236,7 +258,7 @@ test('feedback mode shows immediate right or wrong result after selecting an ans
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await page.getByLabel('Mode').selectOption('feedback');
+  await page.locator('#quiz-mode').selectOption('feedback');
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await page.getByRole('button', { name: /^A\./ }).click();
@@ -262,7 +284,7 @@ test('completed quiz review submits results for persistent progress tracking', a
   await page.goto('quiz/');
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('2');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
   await page.getByRole('button', { name: /^A\./ }).click();
   await page.getByRole('button', { name: /Next question/i }).click();
@@ -288,7 +310,7 @@ test('unfinished blind quiz can be resumed after reload with answers and positio
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('3');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
   await page.getByRole('button', { name: /^A\./ }).click();
   await page.getByRole('button', { name: /Next question/i }).click();
@@ -325,7 +347,7 @@ test('blind quiz finish early scores only answered questions and marks unanswere
   await page.goto('quiz/?seed=96');
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('3');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
   await page.getByRole('button', { name: /^D\./ }).click();
   await page.getByRole('button', { name: /Finish early/i }).click();
@@ -349,7 +371,7 @@ test('seeded quiz selection is deterministic for same seed and filters', async (
     await page.goto(`quiz/?seed=${seed}`);
     await page.getByLabel('Exam year').selectOption('2018');
     await page.getByLabel('Question count').fill('5');
-    await page.getByLabel('Mode').selectOption('blind');
+    await page.locator('#quiz-mode').selectOption('blind');
     await page.getByRole('button', { name: /Start quiz/i }).click();
     const sequence: string[] = [];
     for (let i = 0; i < 5; i++) {
@@ -406,7 +428,7 @@ test('different seeds produce different question orderings for the same filters'
     await page.goto(`quiz/?seed=${seed}`);
     await page.getByLabel('Exam year').selectOption('2018');
     await page.getByLabel('Question count').fill('1');
-    await page.getByLabel('Mode').selectOption('blind');
+    await page.locator('#quiz-mode').selectOption('blind');
     await page.getByRole('button', { name: /Start quiz/i }).click();
     await expect(page.getByTestId('quiz-session')).toBeVisible();
     return (await page.getByTestId('question-meta').innerText()).trim();
@@ -434,7 +456,7 @@ test('submit-quiz-results includes the deterministic seed in filters config', as
   await page.goto('quiz/?seed=987654');
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
   await page.getByRole('button', { name: /^A\./ }).click();
   await page.getByRole('button', { name: /Review results/i }).click();
@@ -460,7 +482,7 @@ test('answer choices are seeded-shuffled but displayed as A-D with explanations 
   await page.goto('quiz/?seed=96');
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
   await expect(page.getByTestId('quiz-session')).toBeVisible();
 
@@ -501,7 +523,7 @@ test('quiz start without a seed override generates a numeric seed in submitted f
   await page.goto('quiz/');
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
   await page.getByRole('button', { name: /^A\./ }).click();
   await page.getByRole('button', { name: /Review results/i }).click();
@@ -519,7 +541,7 @@ test('quiz page shows only exam year and question number, not answer-revealing q
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.locator('#question-title')).toHaveText('2018 Q1');
@@ -538,7 +560,7 @@ test('blind mode withholds scoring until final review', async ({ page }) => {
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await page.getByRole('button', { name: /^A\./ }).click();
@@ -578,7 +600,7 @@ test('quiz save failure shows retry UI, preserves the draft, and lets the user r
   await page.goto('quiz/');
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
   await page.getByRole('button', { name: /^A\./ }).click();
   await page.getByRole('button', { name: /Review results/i }).click();
@@ -624,7 +646,7 @@ test('network failure during quiz save shows warn-style retry without forcing re
   await page.goto('quiz/');
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
   await page.getByRole('button', { name: /^A\./ }).click();
   await page.getByRole('button', { name: /Review results/i }).click();
@@ -653,7 +675,7 @@ test('starting a new quiz after a failed save preserves the unsaved draft for re
   await page.goto('quiz/?seed=96');
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('2');
-  await page.getByLabel('Mode').selectOption('blind');
+  await page.locator('#quiz-mode').selectOption('blind');
   await page.getByRole('button', { name: /Start quiz/i }).click();
   await page.getByRole('button', { name: /^A\./ }).click();
   await page.getByRole('button', { name: /Next question/i }).click();
