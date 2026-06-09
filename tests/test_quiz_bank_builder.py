@@ -45,6 +45,19 @@ class StaticQuizBankBuilderTests(unittest.TestCase):
         q78 = next(question for question in bank["questions"] if question["slug"] == "q78-ab-cn-0001-peer-checks-polisher-bypass")
         self.assertIn("Admin", [topic["title"] for topic in q78["topics"]])
 
+    def test_build_quiz_bank_exposes_connection_derived_procedure_filters(self):
+        bank = build_quiz_bank(ROOT, ROOT / "data/quiz-import/supabase-staging-all.json")
+
+        topics_by_slug = {topic["slug"]: topic for topic in bank["topics"]}
+        self.assertEqual(topics_by_slug["eop-trip-1-reactor-trip-or-si"]["topic_type"], "eop")
+        self.assertEqual(topics_by_slug["ab-cw-0001-circulating-water-malfunction"]["topic_type"], "abnormal")
+        self.assertEqual(topics_by_slug["op-aa-101-111-1003-use-of-procedures"]["topic_type"], "admin")
+
+        q93 = next(question for question in bank["questions"] if question["slug"] == "q93-cw-bus-loss-circulator-trip")
+        q93_topic_titles = [topic["title"] for topic in q93["topics"]]
+        self.assertIn("EOP-TRIP-1 — Reactor Trip or Safety Injection", q93_topic_titles)
+        self.assertIn("AB.CW-0001 — Circulating Water Malfunction", q93_topic_titles)
+
     def test_write_quiz_bank_outputs_deterministic_json(self):
         bank = build_quiz_bank(ROOT, ROOT / "data/quiz-import/supabase-staging-2018.json")
 

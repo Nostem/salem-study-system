@@ -18,7 +18,7 @@ The repository contains public/non-proprietary study material only. It does not 
 | Exam/wiki question pages | 755 exam-related Markdown pages |
 | Static quiz bank | 599 imported written exam questions |
 | Quiz years | 2016, 2018, 2019, 2020, 2022, 2023 |
-| Quiz topics | 80 normalized topic records |
+| Quiz topics | 257 normalized topic records, including connection-derived EOP/abnormal/procedure/admin filters |
 | EOP/abnormal/procedure/admin articles | EOPs, abnormal procedures, normal procedures, surveillance/alarm/admin topics |
 
 Counts change as source material is imported and audited. The static quiz count comes from `site/src/data/quiz-bank.json`.
@@ -47,7 +47,7 @@ It supports:
 - topic filtering,
 - multi-topic mixed quizzes,
 - basic system/admin topic selectors,
-- advanced topic filters for Tech Specs, procedures, abnormal procedures, and targeted pools,
+- advanced topic filters for Tech Specs, EOPs, abnormal procedures, operating/admin/alarm procedures, and targeted pools,
 - reference-required include/exclude behavior,
 - draft/outdated/edited question inclusion controls,
 - feedback mode with immediate right/wrong explanation,
@@ -86,7 +86,7 @@ A question is eligible if:
 - `quizEligible` is true, or it is a safe fallback item with choices and accepted answers,
 - it is not redacted/security-excluded,
 - it matches the selected exam year if one is selected,
-- it matches at least one selected topic if topics are selected,
+- it matches selected topics; multiple selections within the same filter group are ORed, while selections across different groups are ANDed,
 - it passes the reference/draft/outdated/edited switches.
 
 Example: selecting the CVCS filter first narrows the pool to questions tagged with the CVCS topic slugs.
