@@ -184,10 +184,28 @@ test('topic filter keeps common systems simple and moves advanced procedure node
   await expect(page.getByTestId('topic-filter-list')).not.toContainText(/^AB\./);
   await expect(page.getByTestId('advanced-topic-filters')).toBeVisible();
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('Tech Specs');
-  await expect(page.getByTestId('advanced-topic-filters')).toContainText('Procedures and abnormal procedures');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('Procedures and abnormal procedures linked to exam questions');
   await page.getByTestId('advanced-topic-filters').locator('summary').click();
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('TS 3/4.4 — Reactor Coolant System');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('AB.CW-0001 — Circulating Water Malfunction');
+
+  const techSpecTopicListMetrics = await page
+    .locator('#tech-spec-topic-title')
+    .locator('..')
+    .locator('.quiz-topic-list')
+    .evaluate((element) => ({
+      clientHeight: element.clientHeight,
+      overflowY: window.getComputedStyle(element).overflowY,
+      scrollHeight: element.scrollHeight,
+    }));
+  expect(techSpecTopicListMetrics.scrollHeight).toBeGreaterThan(techSpecTopicListMetrics.clientHeight);
+  expect(techSpecTopicListMetrics.overflowY).toMatch(/auto|scroll/);
+
+  const procedureCheckboxBox = await page
+    .getByLabel('AB.CW-0001 — Circulating Water Malfunction')
+    .boundingBox();
+  expect(procedureCheckboxBox?.width).toBeLessThanOrEqual(20);
+  expect(procedureCheckboxBox?.height).toBeLessThanOrEqual(20);
 
   await page.getByLabel('Pressurizer Level & Press Control').check();
   await page.getByLabel('RPS/SSPS').check();

@@ -102,7 +102,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
             )}
             {topicGroups.procedures.length > 0 && (
               <section class="quiz-topic-section" aria-labelledby="procedure-topic-title">
-                <h3 id="procedure-topic-title">Procedures and abnormal procedures</h3>
+                <h3 id="procedure-topic-title">Procedures and abnormal procedures linked to exam questions ({topicGroups.procedures.length})</h3>
                 <div class="quiz-topic-list quiz-topic-list-compact">
                   {topicGroups.procedures.map((topic) => (
                     <label class="quiz-topic-check">
