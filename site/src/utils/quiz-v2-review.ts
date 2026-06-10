@@ -49,10 +49,13 @@ function addDays(nowMs: number, days: number): string {
 }
 
 export function nextIntervalDays(previous: number, rating: ReviewRating): number {
+  // Stored state can be corrupted (localStorage edits, schema drift); a NaN or
+  // negative interval would otherwise propagate into every future schedule.
+  const prior = Number.isFinite(previous) && previous >= 0 ? previous : 0;
   if (rating === 'again') return 0;
-  if (rating === 'hard') return Math.max(1, Math.ceil(previous * 1.2));
-  if (rating === 'good') return Math.max(3, Math.ceil(previous * 2.5));
-  return Math.max(7, Math.ceil(previous * 4));
+  if (rating === 'hard') return Math.max(1, Math.ceil(prior * 1.2));
+  if (rating === 'good') return Math.max(3, Math.ceil(prior * 2.5));
+  return Math.max(7, Math.ceil(prior * 4));
 }
 
 export function updateReviewState(

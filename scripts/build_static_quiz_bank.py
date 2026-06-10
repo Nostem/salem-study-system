@@ -108,6 +108,7 @@ def _question_explanation_index(root: Path, questions: Iterable[Dict[str, Any]])
             continue
         path = root / str(rel)
         if not path.exists():
+            print(f"warning: wiki_path missing for {slug}: {rel}", file=sys.stderr)
             continue
         raw = path.read_text(encoding="utf-8")
         explanation_html, explanation_text = _extract_explanation(raw)
