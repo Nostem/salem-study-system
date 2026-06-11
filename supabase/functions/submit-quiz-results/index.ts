@@ -1,4 +1,5 @@
-import { createAdminClient, jsonResponse, readJsonBody, requirePost, requireUser } from '../_shared/http.ts';
+import { masteryState } from '../_shared/fsrs-whole-question.ts';
+import { createAdminClient, jsonResponse, readJsonBody, requireAllowedOrigin, requirePost, requireUser } from '../_shared/http.ts';
 
 type SubmittedQuestion = {
   slug?: string;
@@ -64,13 +65,6 @@ function originalLabelFromSubmittedChoice(selectedLabel: string | null, selected
   return selectedLabel;
 }
 
-function masteryState(attempts: number, correct: number, incorrect: number): 'new' | 'learning' | 'shaky' | 'mastered' {
-  if (attempts <= 0) return 'new';
-  if (attempts >= 2 && correct >= 2 && incorrect === 0) return 'mastered';
-  if (incorrect > correct) return 'shaky';
-  return 'learning';
-}
-
 function nextReviewAt(nowIso: string, correct: number, incorrect: number): string {
   const base = new Date(nowIso);
   const days = incorrect > 0 ? 1 : correct >= 2 ? 14 : 3;
@@ -81,9 +75,11 @@ function nextReviewAt(nowIso: string, correct: number, incorrect: number): strin
 Deno.serve(async (req) => {
   const methodError = requirePost(req);
   if (methodError) return methodError;
+  const originError = requireAllowedOrigin(req);
+  if (originError) return originError;
 
   const admin = createAdminClient();
-  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500, req);
 
   const { error: authError, user } = await requireUser(req, admin);
   if (authError || !user) return authError;
@@ -105,7 +101,7 @@ Deno.serve(async (req) => {
     .sort((a, b) => a.position - b.position);
 
   if (submittedQuestions.length === 0) {
-    return jsonResponse({ error: 'questions_required' }, 400);
+    return jsonResponse({ error: 'questions_required' }, 400, req);
   }
 
   const slugs = [...new Set(submittedQuestions.map((question) => question.slug))];
@@ -116,18 +112,18 @@ Deno.serve(async (req) => {
     .eq('status', 'active')
     .eq('quiz_eligible', true)
     .eq('is_redacted', false);
-  if (questionsError) return jsonResponse({ error: 'question_lookup_failed' }, 500);
+  if (questionsError) return jsonResponse({ error: 'question_lookup_failed' }, 500, req);
 
   const questionBySlug = new Map((questionRows ?? []).map((question) => [question.slug, question]));
   const missingSlugs = slugs.filter((slug) => !questionBySlug.has(slug));
-  if (missingSlugs.length > 0) return jsonResponse({ error: 'unknown_question_slug', count: missingSlugs.length }, 400);
+  if (missingSlugs.length > 0) return jsonResponse({ error: 'unknown_question_slug', count: missingSlugs.length }, 400, req);
 
   const questionIds = submittedQuestions.map((question) => questionBySlug.get(question.slug)!.id);
   const { data: choiceRows, error: choicesError } = await admin
     .from('choices')
     .select('id, question_id, label, is_correct')
     .in('question_id', questionIds);
-  if (choicesError) return jsonResponse({ error: 'choice_lookup_failed' }, 500);
+  if (choicesError) return jsonResponse({ error: 'choice_lookup_failed' }, 500, req);
 
   const choiceByQuestionAndLabel = new Map<string, { id: string; is_correct: boolean }>();
   for (const choice of choiceRows ?? []) {
@@ -140,7 +136,7 @@ Deno.serve(async (req) => {
   const feedbackMode = normalizeFeedbackMode(body.feedbackMode);
   const completionMode = normalizeCompletionMode(body.completionMode);
   const quizType = normalizeQuizType(body.quizType);
-  if (!quizType) return jsonResponse({ error: 'invalid_quiz_type' }, 400);
+  if (!quizType) return jsonResponse({ error: 'invalid_quiz_type' }, 400, req);
   const now = new Date().toISOString();
 
   const resolvedQuestions = submittedQuestions.map((question) => {
@@ -174,7 +170,7 @@ Deno.serve(async (req) => {
       .eq('id', requestedSessionId)
       .eq('user_id', userId)
       .single();
-    if (existingSessionError || !existingSession) return jsonResponse({ error: 'quiz_session_not_found' }, 404);
+    if (existingSessionError || !existingSession) return jsonResponse({ error: 'quiz_session_not_found' }, 404, req);
     const existingConfig = (existingSession.config && typeof existingSession.config === 'object')
       ? existingSession.config as Record<string, unknown>
       : {};
@@ -194,14 +190,14 @@ Deno.serve(async (req) => {
       })
       .eq('id', requestedSessionId)
       .eq('user_id', userId);
-    if (updateSessionError) return jsonResponse({ error: 'quiz_session_update_failed' }, 500);
+    if (updateSessionError) return jsonResponse({ error: 'quiz_session_update_failed' }, 500, req);
     session = { id: requestedSessionId };
 
     const { error: deleteSnapshotError } = await admin
       .from('quiz_session_questions')
       .delete()
       .eq('quiz_session_id', requestedSessionId);
-    if (deleteSnapshotError) return jsonResponse({ error: 'quiz_session_questions_refresh_failed' }, 500);
+    if (deleteSnapshotError) return jsonResponse({ error: 'quiz_session_questions_refresh_failed' }, 500, req);
   } else {
     const { data: insertedSession, error: sessionError } = await admin
       .from('quiz_sessions')
@@ -216,7 +212,7 @@ Deno.serve(async (req) => {
       })
       .select('id')
       .single();
-    if (sessionError || !insertedSession) return jsonResponse({ error: 'quiz_session_insert_failed' }, 500);
+    if (sessionError || !insertedSession) return jsonResponse({ error: 'quiz_session_insert_failed' }, 500, req);
     session = insertedSession;
   }
 
@@ -228,7 +224,36 @@ Deno.serve(async (req) => {
       choice_order: question.choiceOrder,
     }))
   );
-  if (sessionQuestionsError) return jsonResponse({ error: 'quiz_session_questions_insert_failed' }, 500);
+  if (sessionQuestionsError) return jsonResponse({ error: 'quiz_session_questions_insert_failed' }, 500, req);
+
+  // Idempotency: a client retry on the same quizSessionId must not double-count.
+  // Load any prior question_attempts for this session, subtract them from the
+  // cumulative user_question_state counters, then delete the rows before
+  // re-inserting fresh attempts below.
+  const priorAttemptCounts = new Map<string, { attempts: number; correct: number; incorrect: number }>();
+  if (requestedSessionId) {
+    const { data: priorAttempts, error: priorAttemptsError } = await admin
+      .from('question_attempts')
+      .select('question_id, is_correct')
+      .eq('quiz_session_id', requestedSessionId)
+      .eq('user_id', userId);
+    if (priorAttemptsError) return jsonResponse({ error: 'question_attempts_lookup_failed' }, 500, req);
+    for (const prior of priorAttempts ?? []) {
+      const counts = priorAttemptCounts.get(prior.question_id) ?? { attempts: 0, correct: 0, incorrect: 0 };
+      counts.attempts += 1;
+      if (prior.is_correct) counts.correct += 1;
+      else counts.incorrect += 1;
+      priorAttemptCounts.set(prior.question_id, counts);
+    }
+    if ((priorAttempts ?? []).length > 0) {
+      const { error: deleteAttemptsError } = await admin
+        .from('question_attempts')
+        .delete()
+        .eq('quiz_session_id', requestedSessionId)
+        .eq('user_id', userId);
+      if (deleteAttemptsError) return jsonResponse({ error: 'question_attempts_refresh_failed' }, 500, req);
+    }
+  }
 
   const attemptSourceQuestions = completionMode === 'early' ? answeredQuestions : resolvedQuestions;
   const attemptRows = attemptSourceQuestions.map((question) => ({
@@ -247,16 +272,16 @@ Deno.serve(async (req) => {
       .from('question_attempts')
       .insert(attemptRows)
       .select('id, question_id, is_correct');
-    if (attemptsError) return jsonResponse({ error: 'question_attempts_insert_failed' }, 500);
+    if (attemptsError) return jsonResponse({ error: 'question_attempts_insert_failed' }, 500, req);
     attempts = insertedAttempts ?? [];
   }
 
   const { data: existingStates, error: stateLookupError } = await admin
     .from('user_question_state')
-    .select('question_id, attempts_count, correct_count, incorrect_count, last_correct_at, flagged')
+    .select('question_id, attempts_count, correct_count, incorrect_count, last_correct_at, flagged, review_lapses')
     .eq('user_id', userId)
     .in('question_id', questionIds);
-  if (stateLookupError) return jsonResponse({ error: 'state_lookup_failed' }, 500);
+  if (stateLookupError) return jsonResponse({ error: 'state_lookup_failed' }, 500, req);
 
   const existingByQuestion = new Map((existingStates ?? []).map((state) => [state.question_id, state]));
   const attemptCounts = new Map<string, { attempts: number; correct: number; incorrect: number }>();
@@ -268,11 +293,19 @@ Deno.serve(async (req) => {
     attemptCounts.set(attempt.question_id, counts);
   }
 
-  const stateRows = [...attemptCounts.entries()].map(([questionId, counts]) => {
+  const touchedQuestionIds = new Set<string>([...attemptCounts.keys(), ...priorAttemptCounts.keys()]);
+
+  const stateRows = [...touchedQuestionIds].map((questionId) => {
     const existing = existingByQuestion.get(questionId);
-    const attemptsCount = Number(existing?.attempts_count ?? 0) + counts.attempts;
-    const correctCountForQuestion = Number(existing?.correct_count ?? 0) + counts.correct;
-    const incorrectCountForQuestion = Number(existing?.incorrect_count ?? 0) + counts.incorrect;
+    const counts = attemptCounts.get(questionId) ?? { attempts: 0, correct: 0, incorrect: 0 };
+    const prior = priorAttemptCounts.get(questionId) ?? { attempts: 0, correct: 0, incorrect: 0 };
+    const baselineAttempts = Math.max(0, Number(existing?.attempts_count ?? 0) - prior.attempts);
+    const baselineCorrect = Math.max(0, Number(existing?.correct_count ?? 0) - prior.correct);
+    const baselineIncorrect = Math.max(0, Number(existing?.incorrect_count ?? 0) - prior.incorrect);
+    const attemptsCount = baselineAttempts + counts.attempts;
+    const correctCountForQuestion = baselineCorrect + counts.correct;
+    const incorrectCountForQuestion = baselineIncorrect + counts.incorrect;
+    const lapsesForQuestion = Number(existing?.review_lapses ?? 0);
     return {
       user_id: userId,
       question_id: questionId,
@@ -282,7 +315,7 @@ Deno.serve(async (req) => {
       last_attempt_at: now,
       last_correct_at: counts.correct > 0 ? now : (existing?.last_correct_at ?? null),
       flagged: Boolean(existing?.flagged ?? false),
-      mastery_state: masteryState(attemptsCount, correctCountForQuestion, incorrectCountForQuestion),
+      mastery_state: masteryState(attemptsCount, correctCountForQuestion, incorrectCountForQuestion, lapsesForQuestion),
       next_review_at: nextReviewAt(now, counts.correct, counts.incorrect),
       updated_at: now,
     };
@@ -292,7 +325,7 @@ Deno.serve(async (req) => {
     const { error: upsertStateError } = await admin
       .from('user_question_state')
       .upsert(stateRows, { onConflict: 'user_id,question_id' });
-    if (upsertStateError) return jsonResponse({ error: 'user_question_state_upsert_failed' }, 500);
+    if (upsertStateError) return jsonResponse({ error: 'user_question_state_upsert_failed' }, 500, req);
   }
 
   return jsonResponse({
@@ -301,5 +334,5 @@ Deno.serve(async (req) => {
     questionsSnapshotted,
     attemptsInserted: attempts?.length ?? 0,
     score,
-  });
+  }, 200, req);
 });

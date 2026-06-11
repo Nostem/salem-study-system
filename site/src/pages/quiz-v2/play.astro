@@ -525,7 +525,22 @@ const sessionMeta = questions.map((q) => ({
     }
   }
 
-  function showCurrent(): void {
+  function moveFocusToCurrentQuestion(detail: HTMLElement): void {
+    // After prev/next navigation, move focus to the question heading so screen
+    // readers announce the new question. The tabindex/blur dance keeps the
+    // heading out of the normal tab order once the user moves on.
+    const heading = detail.querySelector<HTMLElement>('h2, [data-qv2p-question-heading]');
+    if (!heading) return;
+    heading.setAttribute('tabindex', '-1');
+    heading.focus({ preventScroll: false });
+    heading.addEventListener(
+      'blur',
+      () => heading.removeAttribute('tabindex'),
+      { once: true }
+    );
+  }
+
+  function showCurrent(options: { focus?: boolean } = {}): void {
     if (!session) return;
     const empty = document.getElementById('qv2p-empty');
     const noResults = document.getElementById('qv2p-no-results');
@@ -560,6 +575,7 @@ const sessionMeta = questions.map((q) => ({
     if (finish) finish.disabled = selections.size < session.questionSlugs.length;
     updateSubmitButton();
     questionShownAt = Date.now();
+    if (options.focus) moveFocusToCurrentQuestion(detail);
   }
 
   function attachChoiceHandlers(): void {
@@ -589,13 +605,13 @@ const sessionMeta = questions.map((q) => ({
     prev?.addEventListener('click', () => {
       if (currentIndex > 0) {
         currentIndex--;
-        showCurrent();
+        showCurrent({ focus: true });
       }
     });
     next?.addEventListener('click', () => {
       if (session && currentIndex < session.questionSlugs.length - 1) {
         currentIndex++;
-        showCurrent();
+        showCurrent({ focus: true });
       }
     });
     finish?.addEventListener('click', () => finishSession());

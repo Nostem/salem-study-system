@@ -434,7 +434,19 @@ const reviewMeta = questions.map((q) => ({
     setText('qv2r-topic-focus', topicFocus);
   }
 
-  function showCurrent(questions: StructuredQuestion[] = []): void {
+  function moveFocusToCurrentQuestion(detail: HTMLElement): void {
+    const heading = detail.querySelector<HTMLElement>('h2, [data-qv2r-question-heading]');
+    if (!heading) return;
+    heading.setAttribute('tabindex', '-1');
+    heading.focus({ preventScroll: false });
+    heading.addEventListener(
+      'blur',
+      () => heading.removeAttribute('tabindex'),
+      { once: true }
+    );
+  }
+
+  function showCurrent(questions: StructuredQuestion[] = [], options: { focus?: boolean } = {}): void {
     hideAll();
     const empty = document.getElementById('qv2r-empty');
     if (!currentSlug) {
@@ -459,6 +471,7 @@ const reviewMeta = questions.map((q) => ({
     resetDetail(detail);
     detail.classList.remove('hidden');
     renderSummary(questions);
+    if (options.focus) moveFocusToCurrentQuestion(detail);
   }
 
   function rebuildQueue(questions: StructuredQuestion[]): void {
@@ -480,7 +493,7 @@ const reviewMeta = questions.map((q) => ({
     document.querySelectorAll<HTMLButtonElement>('[data-testid="qv2r-skip"]').forEach((button) => {
       button.addEventListener('click', () => {
         currentSlug = chooseNextSlug(currentSlug ?? undefined);
-        showCurrent(questions);
+        showCurrent(questions, { focus: true });
       });
     });
     document.querySelectorAll<HTMLButtonElement>('[data-rating]').forEach((button) => {
@@ -497,7 +510,7 @@ const reviewMeta = questions.map((q) => ({
         }
         rebuildQueue(questions);
         currentSlug = chooseNextSlug(previous);
-        showCurrent(questions);
+        showCurrent(questions, { focus: true });
       });
     });
     document.querySelector<HTMLButtonElement>('[data-testid="qv2r-reset"]')?.addEventListener('click', () => {

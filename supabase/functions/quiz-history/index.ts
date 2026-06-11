@@ -1,4 +1,5 @@
-import { createAdminClient, jsonResponse, requirePost, requireUser } from '../_shared/http.ts';
+import { createAdminClient, jsonResponse, requireAllowedOrigin, requirePost, requireUser } from '../_shared/http.ts';
+  IMPORT_MARKER
 
 type QuizSessionRow = {
   id: string;
@@ -160,9 +161,11 @@ function displayLabelFromChoiceOrder(originalLabel: string, choiceOrder: Record<
 Deno.serve(async (req) => {
   const methodError = requirePost(req);
   if (methodError) return methodError;
+  const originError = requireAllowedOrigin(req);
+  if (originError) return originError;
 
   const admin = createAdminClient();
-  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500, req);
 
   const { error: authError, user } = await requireUser(req, admin);
   if (authError || !user) return authError;
@@ -172,7 +175,7 @@ Deno.serve(async (req) => {
     .from('user_question_state')
     .select('mastery_state, next_review_at')
     .eq('user_id', userId);
-  if (stateError) return jsonResponse({ error: 'state_lookup_failed' }, 500);
+  if (stateError) return jsonResponse({ error: 'state_lookup_failed' }, 500, req);
 
   const now = Date.now();
   const dueReviewCount = (stateRows ?? []).filter((state) => state.next_review_at && Date.parse(state.next_review_at) <= now).length;
@@ -220,7 +223,7 @@ Deno.serve(async (req) => {
     .order('completed_at', { ascending: false })
     .limit(50);
 
-  if (error) return jsonResponse({ error: 'history_lookup_failed' }, 500);
+  if (error) return jsonResponse({ error: 'history_lookup_failed' }, 500, req);
 
   const rows = (data ?? []) as unknown as QuizSessionRow[];
   let totalAnswered = 0;

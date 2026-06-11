@@ -1,4 +1,4 @@
-import { bearerToken, createAdminClient, jsonResponse, readJsonBody, requirePost } from '../_shared/http.ts';
+import { bearerToken, createAdminClient, jsonResponse, readJsonBody, requestIp, requireAllowedOrigin, requirePost, sha256Hex } from '../_shared/http.ts';
 
 type ContactFeedbackBody = {
   category?: string;
@@ -44,52 +44,30 @@ function cleanUrl(value: unknown): string | null {
   }
 }
 
-function isAllowedOrigin(value: string | null): boolean {
-  if (!value) return true;
-  try {
-    const origin = new URL(value);
-    return ['nostem.github.io', 'localhost', '127.0.0.1'].includes(origin.hostname);
-  } catch {
-    return false;
-  }
-}
-
-async function sha256Hex(value: string): Promise<string> {
-  const bytes = new TextEncoder().encode(value);
-  const digest = await crypto.subtle.digest('SHA-256', bytes);
-  return Array.from(new Uint8Array(digest))
-    .map((byte) => byte.toString(16).padStart(2, '0'))
-    .join('');
-}
-
-function requestIp(req: Request): string {
-  const forwarded = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim();
-  return req.headers.get('cf-connecting-ip') || forwarded || req.headers.get('x-real-ip') || 'unknown';
-}
-
 Deno.serve(async (req) => {
   const methodError = requirePost(req);
   if (methodError) return methodError;
-  if (!isAllowedOrigin(req.headers.get('Origin'))) return jsonResponse({ error: 'origin_not_allowed' }, 403);
+  const originError = requireAllowedOrigin(req);
+  if (originError) return originError;
 
   const admin = createAdminClient();
-  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500, req);
 
   const { body, error: bodyError } = await readJsonBody<ContactFeedbackBody>(req);
   if (bodyError || !body) return bodyError;
 
   // Honeypot: pretend success so basic bots do not get a useful signal.
   if (cleanText(body.website, 200)) {
-    return jsonResponse({ ok: true, feedbackId: null });
+    return jsonResponse({ ok: true, feedbackId: null }, 200, req);
   }
 
   const category = typeof body.category === 'string' && allowedCategories.has(body.category) ? body.category : 'feedback';
   const message = cleanMessage(body.message);
-  if (!message) return jsonResponse({ error: 'message_required' }, 400);
+  if (!message) return jsonResponse({ error: 'message_required' }, 400, req);
 
   const name = cleanText(body.name, 120);
   const email = cleanEmail(body.email);
-  if (body.email && !email) return jsonResponse({ error: 'invalid_email' }, 400);
+  if (body.email && !email) return jsonResponse({ error: 'invalid_email' }, 400, req);
   const pageUrl = cleanUrl(body.pageUrl);
   const userAgent = cleanText(body.userAgent ?? req.headers.get('User-Agent'), 512);
 
@@ -100,8 +78,8 @@ Deno.serve(async (req) => {
     .select('id', { count: 'exact', head: true })
     .eq('metadata->>rate_key', rateKey)
     .gte('created_at', rateWindow);
-  if (rateError) return jsonResponse({ error: 'rate_limit_check_failed' }, 500);
-  if ((recentCount ?? 0) >= 3) return jsonResponse({ error: 'rate_limited' }, 429);
+  if (rateError) return jsonResponse({ error: 'rate_limit_check_failed' }, 500, req);
+  if ((recentCount ?? 0) >= 3) return jsonResponse({ error: 'rate_limited' }, 429, req);
 
   const anonKey = req.headers.get('apikey') ?? '';
   const accessToken = bearerToken(req);
@@ -126,7 +104,7 @@ Deno.serve(async (req) => {
     .select('id')
     .single();
 
-  if (insertError || !inserted) return jsonResponse({ error: 'feedback_insert_failed' }, 500);
+  if (insertError || !inserted) return jsonResponse({ error: 'feedback_insert_failed' }, 500, req);
 
-  return jsonResponse({ ok: true, feedbackId: inserted.id });
+  return jsonResponse({ ok: true, feedbackId: inserted.id }, 200, req);
 });
