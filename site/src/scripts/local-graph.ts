@@ -1,4 +1,6 @@
-import * as d3 from 'd3';
+import { select } from 'd3-selection';
+import { zoom } from 'd3-zoom';
+import { forceCenter, forceCollide, forceLink, forceManyBody, forceSimulation } from 'd3-force';
 
 interface GraphNode {
   id: string;
@@ -51,7 +53,7 @@ if (data && data.nodes.length > 1) {
     const width = container.clientWidth;
     const height = container.clientHeight || width;
 
-    const svg = d3.select('#local-graph')
+    const svg = select('#local-graph')
       .append('svg')
       .attr('width', width)
       .attr('height', height);
@@ -60,16 +62,16 @@ if (data && data.nodes.length > 1) {
 
     // Zoom
     svg.call(
-      d3.zoom<SVGSVGElement, unknown>()
+      zoom<SVGSVGElement, unknown>()
         .scaleExtent([0.5, 3])
         .on('zoom', (event) => g.attr('transform', event.transform))
     );
 
-    const simulation = d3.forceSimulation<GraphNode>(data.nodes)
-      .force('link', d3.forceLink<GraphNode, GraphEdge>(data.edges).id(d => d.id).distance(60))
-      .force('charge', d3.forceManyBody().strength(-120))
-      .force('center', d3.forceCenter(width / 2, height / 2))
-      .force('collision', d3.forceCollide().radius(15));
+    const simulation = forceSimulation<GraphNode>(data.nodes)
+      .force('link', forceLink<GraphNode, GraphEdge>(data.edges).id(d => d.id).distance(60))
+      .force('charge', forceManyBody().strength(-120))
+      .force('center', forceCenter(width / 2, height / 2))
+      .force('collision', forceCollide().radius(15));
 
     // Edges
     const link = g.append('g')

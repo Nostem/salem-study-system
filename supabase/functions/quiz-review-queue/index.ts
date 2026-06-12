@@ -1,4 +1,5 @@
-import { createAdminClient, jsonResponse, requirePost, requireUser } from '../_shared/http.ts';
+import { createAdminClient, jsonResponse, requireAllowedOrigin, requirePost, requireUser } from '../_shared/http.ts';
+  IMPORT_MARKER
 
 function dueRank(state: { mastery_state: string; next_review_at: string | null }): number {
   if (state.mastery_state === 'shaky') return 0;
@@ -11,9 +12,11 @@ function dueRank(state: { mastery_state: string; next_review_at: string | null }
 Deno.serve(async (req) => {
   const methodError = requirePost(req);
   if (methodError) return methodError;
+  const originError = requireAllowedOrigin(req);
+  if (originError) return originError;
 
   const admin = createAdminClient();
-  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500, req);
 
   const { error: authError, user } = await requireUser(req, admin);
   if (authError || !user) return authError;
@@ -22,7 +25,7 @@ Deno.serve(async (req) => {
     .from('user_question_state')
     .select('question_id, attempts_count, correct_count, incorrect_count, last_attempt_at, last_correct_at, mastery_state, next_review_at, updated_at')
     .eq('user_id', user.id);
-  if (stateError) return jsonResponse({ error: 'review_state_lookup_failed' }, 500);
+  if (stateError) return jsonResponse({ error: 'review_state_lookup_failed' }, 500, req);
 
   const questionIds = [...new Set((states ?? []).map((state) => state.question_id).filter(Boolean))];
   if (questionIds.length === 0) {
@@ -36,7 +39,7 @@ Deno.serve(async (req) => {
     .eq('status', 'active')
     .eq('quiz_eligible', true)
     .eq('is_redacted', false);
-  if (questionError) return jsonResponse({ error: 'question_lookup_failed' }, 500);
+  if (questionError) return jsonResponse({ error: 'question_lookup_failed' }, 500, req);
 
   const slugById = new Map((questions ?? []).map((question) => [question.id, question.slug]));
   const nowMs = Date.now();

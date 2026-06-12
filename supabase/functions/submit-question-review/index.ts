@@ -1,5 +1,6 @@
 import { scheduleWholeQuestionReview, type ReviewRating } from '../_shared/fsrs-whole-question.ts';
-import { createAdminClient, jsonResponse, readJsonBody, requirePost, requireUser } from '../_shared/http.ts';
+import { createAdminClient, jsonResponse, readJsonBody, requireAllowedOrigin, requirePost, requireUser } from '../_shared/http.ts';
+  IMPORT_MARKER
 
 function normalizeRating(value: unknown): ReviewRating | null {
   return value === 'again' || value === 'hard' || value === 'good' || value === 'easy' ? value : null;
@@ -8,9 +9,11 @@ function normalizeRating(value: unknown): ReviewRating | null {
 Deno.serve(async (req) => {
   const methodError = requirePost(req);
   if (methodError) return methodError;
+  const originError = requireAllowedOrigin(req);
+  if (originError) return originError;
 
   const admin = createAdminClient();
-  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500, req);
 
   const { error: authError, user } = await requireUser(req, admin);
   if (authError || !user) return authError;
@@ -20,8 +23,8 @@ Deno.serve(async (req) => {
 
   const slug = typeof body.slug === 'string' ? body.slug.trim() : '';
   const rating = normalizeRating(body.rating);
-  if (!slug) return jsonResponse({ error: 'slug_required' }, 400);
-  if (!rating) return jsonResponse({ error: 'rating_required' }, 400);
+  if (!slug) return jsonResponse({ error: 'slug_required' }, 400, req);
+  if (!rating) return jsonResponse({ error: 'rating_required' }, 400, req);
 
   const { data: question, error: questionError } = await admin
     .from('questions')
@@ -31,7 +34,7 @@ Deno.serve(async (req) => {
     .eq('quiz_eligible', true)
     .eq('is_redacted', false)
     .single();
-  if (questionError || !question) return jsonResponse({ error: 'question_not_found' }, 404);
+  if (questionError || !question) return jsonResponse({ error: 'question_not_found' }, 404, req);
 
   const { data: existing, error: lookupError } = await admin
     .from('user_question_state')
@@ -39,7 +42,7 @@ Deno.serve(async (req) => {
     .eq('user_id', user.id)
     .eq('question_id', question.id)
     .maybeSingle();
-  if (lookupError) return jsonResponse({ error: 'review_state_lookup_failed' }, 500);
+  if (lookupError) return jsonResponse({ error: 'review_state_lookup_failed' }, 500, req);
 
   const review = scheduleWholeQuestionReview({
     attemptsCount: existing?.attempts_count,
@@ -80,7 +83,7 @@ Deno.serve(async (req) => {
   const { error: upsertError } = await admin
     .from('user_question_state')
     .upsert(row, { onConflict: 'user_id,question_id' });
-  if (upsertError) return jsonResponse({ error: 'review_state_upsert_failed' }, 500);
+  if (upsertError) return jsonResponse({ error: 'review_state_upsert_failed' }, 500, req);
 
   const { error: eventError } = await admin
     .from('question_review_events')
@@ -97,7 +100,7 @@ Deno.serve(async (req) => {
       new_stability: review.fsrsStability,
       source: 'review',
     });
-  if (eventError) return jsonResponse({ error: 'review_event_insert_failed' }, 500);
+  if (eventError) return jsonResponse({ error: 'review_event_insert_failed' }, 500, req);
 
   return jsonResponse({
     ok: true,

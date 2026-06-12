@@ -106,3 +106,9 @@ test('nextIntervalDays grows review spacing without creating microcards', () => 
   assert.equal(nextIntervalDays(1, 'good'), 3);
   assert.equal(nextIntervalDays(3, 'easy'), 12);
 });
+
+test('nextIntervalDays recovers from corrupted stored intervals', () => {
+  assert.equal(nextIntervalDays(Number.NaN, 'hard'), 1);
+  assert.equal(nextIntervalDays(Number.POSITIVE_INFINITY, 'good'), 3);
+  assert.equal(nextIntervalDays(-5, 'easy'), 7);
+});

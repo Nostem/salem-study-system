@@ -15,7 +15,7 @@
     "astro": "astro",
     "test:node": "node --test tests/safe-json.node.test.ts tests/auth-client-contract.node.test.ts tests/quiz-v2-session.node.test.ts tests/quiz-v2-session-golden.node.test.ts tests/quiz-v2-backend-session.node.test.ts tests/quiz-v2-review.node.test.ts tests/quiz-v2-progress.node.test.ts tests/fsrs-whole-question.node.test.ts tests/quiz-personalization.node.test.ts",
     "test:ui": "npm run build && playwright test",
-    "test:ui:smoke": "npm run build:astro && playwright test tests/study-test.ts tests/navigation-test.ts tests/history-test.ts tests/quiz-test.ts tests/quiz-v2-test.ts tests/quiz-v2-play-test.ts tests/quiz-v2-review-test.ts tests/graph-v2-test.ts --reporter=line",
+    "test:ui:smoke": "npm run build:astro && playwright test tests/study-test.ts tests/navigation-test.ts tests/history-test.ts tests/quiz-test.ts tests/quiz-v2-test.ts tests/quiz-v2-play-test.ts tests/quiz-v2-review-test.ts tests/graph-v2-test.ts tests/ui-test.ts --reporter=line",
     "test:ui:full": "FULL_SITE_UI_SWEEP=1 npm run build && FULL_SITE_UI_SWEEP=1 playwright test"
   },
   "dependencies": {
@@ -23,7 +23,10 @@
     "@supabase/supabase-js": "^2.105.1",
     "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.3",
-    "d3": "^7.9.0",
+    "d3-drag": "^3.0.0",
+    "d3-force": "^3.0.0",
+    "d3-selection": "^3.0.0",
+    "d3-zoom": "^3.0.0",
     "pagefind": "^1.4.0",
     "tailwindcss": "^4.2.2",
     "unist-util-visit": "^5.1.0"
@@ -31,7 +34,10 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.11.1",
     "@playwright/test": "^1.59.1",
-    "@types/d3": "^7.4.3",
+    "@types/d3-drag": "^3.0.7",
+    "@types/d3-force": "^3.0.10",
+    "@types/d3-selection": "^3.0.11",
+    "@types/d3-zoom": "^3.0.8",
     "typescript": "^5.9.3"
   }
 }

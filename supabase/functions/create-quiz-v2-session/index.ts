@@ -1,4 +1,5 @@
-import { createAdminClient, jsonResponse, readJsonBody, requirePost, requireUser } from '../_shared/http.ts';
+import { createAdminClient, jsonResponse, readJsonBody, requireAllowedOrigin, requirePost, requireUser } from '../_shared/http.ts';
+  IMPORT_MARKER
 
 type ReferenceMode = 'include' | 'exclude' | 'only';
 
@@ -138,9 +139,11 @@ function matchesFilters(question: QuestionRow, filters: NormalizedFilters): bool
 Deno.serve(async (req) => {
   const methodError = requirePost(req);
   if (methodError) return methodError;
+  const originError = requireAllowedOrigin(req);
+  if (originError) return originError;
 
   const admin = createAdminClient();
-  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500);
+  if (!admin) return jsonResponse({ error: 'server_not_configured' }, 500, req);
 
   const { error: authError, user } = await requireUser(req, admin);
   if (authError || !user) return authError;
@@ -148,7 +151,7 @@ Deno.serve(async (req) => {
 
   const { body, error: bodyError } = await readJsonBody<CreatePayload>(req);
   if (bodyError || !body) return bodyError;
-  if (body?.schemaVersion !== 1) return jsonResponse({ error: 'unsupported_schema_version' }, 400);
+  if (body?.schemaVersion !== 1) return jsonResponse({ error: 'unsupported_schema_version' }, 400, req);
   const seed = typeof body.seed === 'string' && body.seed.trim() ? body.seed.trim() : 'salem-quiz-v2-default';
   const filters = normalizeFilters(body.filters);
 
@@ -160,7 +163,7 @@ Deno.serve(async (req) => {
     .eq('status', 'active')
     .eq('quiz_eligible', true)
     .eq('is_redacted', false);
-  if (questionError) return jsonResponse({ error: 'question_lookup_failed' }, 500);
+  if (questionError) return jsonResponse({ error: 'question_lookup_failed' }, 500, req);
 
   const eligible = ((questionData ?? []) as unknown as QuestionRow[])
     .filter((question) => matchesFilters(question, filters))
@@ -191,7 +194,7 @@ Deno.serve(async (req) => {
     .select('id, started_at')
     .single();
 
-  if (insertSessionError || !insertedSession) return jsonResponse({ error: 'session_insert_failed' }, 500);
+  if (insertSessionError || !insertedSession) return jsonResponse({ error: 'session_insert_failed' }, 500, req);
 
   if (selected.length > 0) {
     const snapshotRows = selected.map((question, index) => ({
@@ -203,7 +206,7 @@ Deno.serve(async (req) => {
     const { error: insertQuestionsError } = await admin
       .from('quiz_session_questions')
       .insert(snapshotRows);
-    if (insertQuestionsError) return jsonResponse({ error: 'session_questions_insert_failed' }, 500);
+    if (insertQuestionsError) return jsonResponse({ error: 'session_questions_insert_failed' }, 500, req);
   }
 
   return jsonResponse({

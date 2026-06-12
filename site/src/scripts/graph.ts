@@ -1,4 +1,7 @@
-import * as d3 from 'd3';
+import { select } from 'd3-selection';
+import { zoom } from 'd3-zoom';
+import { drag } from 'd3-drag';
+import { forceCenter, forceCollide, forceLink, forceManyBody, forceSimulation } from 'd3-force';
 
 interface GraphNode {
   id: string;
@@ -48,7 +51,7 @@ if (data && data.nodes.length > 0) {
   const width = container.clientWidth;
   const height = container.clientHeight;
 
-  const svg = d3.select('#graph')
+  const svg = select('#graph')
     .append('svg')
     .attr('width', width)
     .attr('height', height)
@@ -57,21 +60,21 @@ if (data && data.nodes.length > 0) {
   // Zoom
   const g = svg.append('g');
   svg.call(
-    d3.zoom<SVGSVGElement, unknown>()
+    zoom<SVGSVGElement, unknown>()
       .scaleExtent([0.2, 4])
       .on('zoom', (event) => g.attr('transform', event.transform))
   );
 
   // Connection-weighted physics: high-connection nodes repel more strongly,
   // creating natural hub-spoke clusters
-  const simulation = d3.forceSimulation<GraphNode>(graphData.nodes)
-    .force('link', d3.forceLink<GraphNode, GraphEdge>(graphData.edges).id(d => d.id).distance(80))
-    .force('charge', d3.forceManyBody<GraphNode>().strength((d: GraphNode) => {
+  const simulation = forceSimulation<GraphNode>(graphData.nodes)
+    .force('link', forceLink<GraphNode, GraphEdge>(graphData.edges).id(d => d.id).distance(80))
+    .force('charge', forceManyBody<GraphNode>().strength((d: GraphNode) => {
       if (d.isExam) return -30;
       return -100 - (d.connections * 15);
     }))
-    .force('center', d3.forceCenter(width / 2, height / 2))
-    .force('collision', d3.forceCollide<GraphNode>().radius((d: GraphNode) => {
+    .force('center', forceCenter(width / 2, height / 2))
+    .force('collision', forceCollide<GraphNode>().radius((d: GraphNode) => {
       if (d.isExam) return 4;
       return 10 + d.connections * 1.5;
     }));
@@ -126,7 +129,7 @@ if (data && data.nodes.length > 0) {
       });
       label.style('opacity', 0);
     })
-    .call(d3.drag<SVGCircleElement, GraphNode>()
+    .call(drag<SVGCircleElement, GraphNode>()
       .on('start', (event, d) => {
         if (!event.active) simulation.alphaTarget(0.3).restart();
         d.fx = d.x;
