@@ -8,7 +8,8 @@ test('homepage routes learners through Study only', async ({ page }) => {
   await expect(page.getByRole('link', { name: /Study Builder/i })).toHaveCount(0);
   await expect(page.getByRole('link', { name: /Study Map/i })).toHaveCount(0);
   await expect(page.getByRole('link', { name: /My Progress/i })).toHaveCount(0);
-  await expect(page.getByRole('heading', { name: 'Start studying' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Choose the next study action' })).toBeVisible();
+  await expect(page.getByRole('link', { name: /^Start Study$/i })).toHaveAttribute('href', /\/salem-study-system\/study\/?$/);
 });
 
 test('article sidebar exposes Study as the single learner entry point under home', async ({ page }) => {

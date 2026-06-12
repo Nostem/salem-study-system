@@ -6,7 +6,6 @@ import LocalGraph from '../components/LocalGraph.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import DraftBadge from '../components/DraftBadge.astro';
 import MobileNav from '../components/MobileNav.astro';
-import SearchModal from '../components/SearchModal.astro';
 import HighlightToolbar from '../components/HighlightToolbar.astro';
 import ReviewPill from '../components/ReviewPill.astro';
 
@@ -20,11 +19,9 @@ interface Props {
 }
 
 const { title, category, status, slug, headings, wide = false } = Astro.props;
-const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout title={title}>
-  <SearchModal />
   <div data-pagefind-ignore>
     <HighlightToolbar />
   </div>
@@ -36,40 +33,6 @@ const base = import.meta.env.BASE_URL;
     </MobileNav>
   </div>
 
-  <!-- Top bar -->
-  <header class="flex items-center justify-between px-5 h-12 border-b border-[#1a2035] bg-[#0d1220] sticky top-0 z-30" data-pagefind-ignore>
-    <div class="flex items-center gap-3">
-      <!-- Hamburger (mobile only) -->
-      <button onclick="openMobileNav()" class="lg:hidden text-[#8b95a5] text-lg bg-transparent border-none cursor-pointer mr-1">
-        ☰
-      </button>
-      <!-- Logo -->
-      <a href={base} class="flex items-center gap-3 no-underline">
-        <div class="w-7 h-7 border-[1.5px] border-[#2a6f97] rounded-full flex items-center justify-center">
-          <div class="w-3 h-3 border border-[#2a6f97] rotate-45"></div>
-        </div>
-        <span class="font-mono text-[11px] font-medium tracking-[0.18em] text-[#e0e4ea]">SALEM STUDY SYSTEM</span>
-      </a>
-    </div>
-    <div class="flex items-center gap-2">
-      <button
-        id="edit-toggle"
-        class="bg-transparent border-none cursor-pointer text-[#8b95a5] hover:text-[#c8cdd5] text-sm transition-colors"
-        title="Toggle edit mode"
-      >
-        ✎
-      </button>
-      <button
-        id="search-trigger"
-        class="bg-[#111827] border border-[#1a2035] rounded-md px-3.5 py-1.5 text-xs text-[#8b95a5] w-60 text-left cursor-pointer hidden sm:block"
-      >
-        ⌘K &nbsp;Search articles...
-      </button>
-      <button id="search-trigger-mobile" class="sm:hidden text-[#8b95a5] text-sm bg-transparent border-none cursor-pointer">
-        ⌕
-      </button>
-    </div>
-  </header>
 
   <div class="flex">
     <!-- Sidebar (desktop) -->
@@ -78,11 +41,11 @@ const base = import.meta.env.BASE_URL;
     </div>
 
     <!-- Main content -->
-    <main class:list={["flex-1 px-8 py-8 xl:px-12", wide ? "max-w-[1200px]" : "max-w-[800px]"]}>
+    <main id="main-content" class:list={["flex-1 px-8 py-8 xl:px-12", wide ? "max-w-[1200px]" : "max-w-[800px]"]}>
       {!wide && <div data-pagefind-ignore><Breadcrumbs category={category} title={title} /></div>}
       {!wide && (
         <div class="flex items-center gap-2.5 mb-1.5 flex-wrap">
-          <h1 class="text-2xl text-[#e0e4ea] font-semibold m-0" data-pagefind-meta="title">{title}</h1>
+          <h1 class="text-2xl text-text-primary font-semibold m-0" data-pagefind-meta="title">{title}</h1>
           <div data-pagefind-ignore class="contents">
             <DraftBadge status={status} />
             <ReviewPill slug={slug} />
@@ -97,7 +60,7 @@ const base = import.meta.env.BASE_URL;
 
     <!-- Right rail: local graph + TOC (desktop) — hidden in wide mode -->
     {!wide && (
-      <aside class="w-[420px] min-w-[420px] border-l border-[#1a2035] px-4 py-6 text-[11px] text-[#8b95a5] h-[calc(100vh-48px)] sticky top-[48px] overflow-y-auto hidden xl:block" data-pagefind-ignore>
+      <aside class="w-[420px] min-w-[420px] border-l border-border px-4 py-6 text-[11px] text-text-muted h-[calc(100vh-3.25rem)] sticky top-[3.25rem] overflow-y-auto hidden xl:block" data-pagefind-ignore>
         <LocalGraph currentSlug={slug} />
         <TableOfContents headings={headings} />
       </aside>

@@ -1,0 +1,164 @@
+---
+const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
+---
+
+<header class="global-header" data-pagefind-ignore>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="global-header__inner">
+    <div class="global-header__brand-group">
+      <button class="global-header__menu" type="button" aria-label="Open navigation" onclick="openMobileNav()">☰</button>
+      <a href={base} class="global-header__brand" aria-label="Salem Study System home">
+        <span class="global-header__mark" aria-hidden="true"><span></span></span>
+        <span class="global-header__title">SALEM STUDY SYSTEM</span>
+      </a>
+    </div>
+
+    <div class="global-header__actions" aria-label="Global controls">
+      <button id="search-trigger" class="global-header__search" type="button">
+        <span class="global-header__kbd">⌘K</span>
+        <span class="global-header__search-label">Search</span>
+      </button>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to reading theme" aria-pressed="false">
+        <span class="theme-toggle__option" data-theme-option="dark">Console</span>
+        <span class="theme-toggle__option" data-theme-option="light">Reading</span>
+      </button>
+
+      <div id="auth-status" class="auth-status" data-auth-state="loading">
+        <span class="auth-status__name" data-auth-name hidden></span>
+        <button class="auth-status__logout" type="button" data-auth-logout hidden>Log out</button>
+        <a class="auth-status__login" href={`${base}login`} data-auth-login hidden>Log in</a>
+        <span class="auth-status__loading" data-auth-loading>Checking…</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  import { getCurrentSession, hasSupabaseConfig, logout } from '../utils/auth-client';
+
+  const THEME_KEY = 'salem-study-theme';
+  const USER_KEY = 'salem-study-user';
+
+  function desiredInitialTheme(): 'dark' | 'light' {
+    const stored = localStorage.getItem(THEME_KEY);
+    if (stored === 'dark' || stored === 'light') return stored;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+
+  function applyTheme(theme: 'dark' | 'light'): void {
+    document.documentElement.dataset.theme = theme;
+    localStorage.setItem(THEME_KEY, theme);
+
+    const toggle = document.getElementById('theme-toggle');
+    if (!toggle) return;
+    toggle.setAttribute('aria-pressed', theme === 'light' ? 'true' : 'false');
+    toggle.setAttribute('aria-label', theme === 'light' ? 'Switch to console theme' : 'Switch to reading theme');
+    toggle.dataset.activeTheme = theme;
+  }
+
+  function initThemeToggle(): void {
+    applyTheme((document.documentElement.dataset.theme as 'dark' | 'light') || desiredInitialTheme());
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle?.dataset.themeBound === 'true') return;
+    if (!toggle) return;
+    toggle.dataset.themeBound = 'true';
+    toggle.addEventListener('click', () => {
+      const current = document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
+      applyTheme(current === 'light' ? 'dark' : 'light');
+    });
+  }
+
+  function readStoredUser(): string | null {
+    try {
+      const raw = localStorage.getItem(USER_KEY);
+      if (!raw) return null;
+      const parsed = JSON.parse(raw);
+      const display = typeof parsed.displayName === 'string' ? parsed.displayName.trim() : '';
+      const username = typeof parsed.username === 'string' ? parsed.username.trim() : '';
+      return display || username || null;
+    } catch {
+      return null;
+    }
+  }
+
+  function sessionDisplayName(session: Awaited<ReturnType<typeof getCurrentSession>>): string | null {
+    const metadata = session?.user?.user_metadata ?? {};
+    const display = typeof metadata.display_name === 'string' ? metadata.display_name.trim() : '';
+    const name = typeof metadata.name === 'string' ? metadata.name.trim() : '';
+    const username = typeof metadata.username === 'string' ? metadata.username.trim() : '';
+    return display || name || username || readStoredUser();
+  }
+
+  function setAuthGuest(): void {
+    const root = document.getElementById('auth-status');
+    const name = document.querySelector<HTMLElement>('[data-auth-name]');
+    const logoutButton = document.querySelector<HTMLElement>('[data-auth-logout]');
+    const loginLink = document.querySelector<HTMLElement>('[data-auth-login]');
+    const loading = document.querySelector<HTMLElement>('[data-auth-loading]');
+    root?.setAttribute('data-auth-state', 'guest');
+    if (name) name.hidden = true;
+    if (logoutButton) logoutButton.hidden = true;
+    if (loginLink) loginLink.hidden = false;
+    if (loading) loading.hidden = true;
+  }
+
+  function setAuthUser(displayName: string): void {
+    const root = document.getElementById('auth-status');
+    const name = document.querySelector<HTMLElement>('[data-auth-name]');
+    const logoutButton = document.querySelector<HTMLElement>('[data-auth-logout]');
+    const loginLink = document.querySelector<HTMLElement>('[data-auth-login]');
+    const loading = document.querySelector<HTMLElement>('[data-auth-loading]');
+    root?.setAttribute('data-auth-state', 'user');
+    if (name) {
+      name.textContent = displayName;
+      name.hidden = false;
+    }
+    if (logoutButton) logoutButton.hidden = false;
+    if (loginLink) loginLink.hidden = true;
+    if (loading) loading.hidden = true;
+  }
+
+  async function initAuthStatus(): Promise<void> {
+    const logoutButton = document.querySelector<HTMLButtonElement>('[data-auth-logout]');
+    if (logoutButton && logoutButton.dataset.logoutBound !== 'true') {
+      logoutButton.dataset.logoutBound = 'true';
+      logoutButton.addEventListener('click', async () => {
+        logoutButton.disabled = true;
+        logoutButton.textContent = 'Logging out…';
+        try {
+          if (hasSupabaseConfig()) await logout();
+          localStorage.removeItem(USER_KEY);
+          setAuthGuest();
+          window.location.reload();
+        } catch {
+          logoutButton.disabled = false;
+          logoutButton.textContent = 'Log out';
+        }
+      });
+    }
+
+    if (!hasSupabaseConfig()) {
+      setAuthGuest();
+      return;
+    }
+
+    try {
+      const session = await getCurrentSession();
+      if (!session?.access_token) {
+        setAuthGuest();
+        return;
+      }
+      setAuthUser(sessionDisplayName(session) || 'Signed in');
+    } catch {
+      setAuthGuest();
+    }
+  }
+
+  initThemeToggle();
+  initAuthStatus();
+  document.addEventListener('astro:page-load', () => {
+    initThemeToggle();
+    initAuthStatus();
+  });
+</script>

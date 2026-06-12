@@ -1,6 +1,5 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import SearchModal from '../components/SearchModal.astro';
 import { getCollection } from 'astro:content';
 import { publicWikiArticles } from '../utils/wiki-content';
 
@@ -221,8 +220,7 @@ const scenarioSlugs: Record<string, string[]> = {
 ---
 
 <BaseLayout title="Salem Study Wiki">
-  <SearchModal />
-  <div class="max-w-[1100px] mx-auto px-8 py-10" data-pagefind-body>
+  <div class="home-shell" id="main-content" data-pagefind-body>
 
     <!-- HEADER -->
     <div class="flex flex-col gap-4 mb-8 pb-6 border-b border-border sm:flex-row sm:items-end sm:justify-between" data-pagefind-ignore>
@@ -244,35 +242,33 @@ const scenarioSlugs: Record<string, string[]> = {
       </div>
     </div>
 
-    <!-- STUDY ENTRY -->
-    <section class="mb-10" aria-labelledby="practice-modes-title">
-      <div class="flex flex-col gap-1 mb-4 sm:flex-row sm:items-end sm:justify-between">
+    <!-- STUDY OPERATIONS BOARD -->
+    <section class="mb-10 rounded-xl border border-border bg-bg-surface p-5" aria-labelledby="operations-title">
+      <div class="flex flex-col gap-4 border-b border-border pb-4 lg:flex-row lg:items-end lg:justify-between">
         <div>
-          <h2 id="practice-modes-title" class="font-mono text-[11px] font-semibold tracking-[0.14em] text-text-muted uppercase">Start studying</h2>
-          <p class="text-sm text-text-muted mt-2">Use one learner entry point. Study will route you to review, a practice session, topic paths, or saved progress as needed.</p>
+          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue">Operations board</div>
+          <h2 id="operations-title" class="mt-2 text-xl font-semibold text-text-primary">Choose the next study action</h2>
+          <p class="mt-1 max-w-2xl text-sm leading-6 text-text-muted">Search first when you know the target. Use Study for progress-aware practice, or jump directly into a source-backed binder section.</p>
         </div>
+        <a href={`${base}study/`} class="action-primary inline-flex min-h-10 items-center justify-center rounded-md px-4 text-sm font-semibold no-underline transition-colors">Start Study</a>
       </div>
-      <div class="grid grid-cols-1 gap-3">
-        <a href={`${base}study/`} class="bg-bg-card border border-accent-blue rounded-md p-5 no-underline hover:bg-bg transition-colors group">
-          <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-2">Recommended</div>
-          <h3 class="text-xl text-text-primary font-semibold mb-2 group-hover:text-accent-blue">Study</h3>
-          <p class="text-sm text-text-muted leading-6">Start here for practice, review, topic-based study, and progress-aware next steps.</p>
-        </a>
+
+      <div class="mt-4 divide-y divide-border">
+        {navCards.map(card => (
+          <a href={card.href} class="group grid gap-3 py-3 no-underline transition-colors sm:grid-cols-[1fr_auto_auto] sm:items-center hover:bg-bg-card/60">
+            <div class="flex min-w-0 items-center gap-3 px-2">
+              <span style={`color: ${card.color}`} class="font-mono text-sm" aria-hidden="true">{card.glyph}</span>
+              <div class="min-w-0">
+                <div class="text-sm font-semibold text-text-primary transition-colors group-hover:text-accent-blue">{card.name}</div>
+                <div class="text-xs text-text-muted">Recommended entry: {card.name === 'Tech Specs' ? 'Definitions and LCO map' : card.name === 'NRC Exams' ? 'Latest written and operating exams' : card.name === 'EOPs' ? 'Reactor trip or SI procedure' : 'Primary article index'}</div>
+              </div>
+            </div>
+            <div class="px-2 font-mono text-[11px] uppercase tracking-[0.12em] text-text-muted">{card.count} articles</div>
+            <div class="px-2 text-xs text-accent-blue">Open ›</div>
+          </a>
+        ))}
       </div>
     </section>
-
-    <!-- NAVIGATION CARDS -->
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
-      {navCards.map(card => (
-        <a href={card.href} class="bg-bg-card border border-border rounded-md p-4 no-underline hover:border-border-hi transition-colors group">
-          <div class="flex items-center gap-2 mb-2">
-            <span style={`color: ${card.color}`} class="text-lg">{card.glyph}</span>
-            <span class="text-text-primary text-sm font-medium group-hover:text-accent-blue transition-colors">{card.name}</span>
-          </div>
-          <div class="font-mono text-text-muted text-xs">{card.count} articles</div>
-        </a>
-      ))}
-    </div>
 
     <!-- SOURCE DOCUMENTS -->
     <h2 class="font-mono text-[11px] font-semibold tracking-[0.14em] text-text-muted uppercase mb-4">Source Documents</h2>

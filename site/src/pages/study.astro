@@ -27,59 +27,88 @@ const progressHref = `${base}history/`;
 ---
 
 <StudyLayout title="Study" active="study">
-  <main class="mx-auto max-w-[1120px] px-4 py-6 sm:px-6 lg:py-10">
-    <header class="mb-6 rounded-2xl border border-border bg-bg-card p-5 sm:p-7">
-      <a href={base} class="mb-4 inline-flex text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Back to wiki</a>
-      <div class="font-mono text-[10px] uppercase tracking-[0.18em] text-accent-blue mb-2">Learner hub</div>
-      <div class="grid gap-5 lg:grid-cols-[1fr_320px] lg:items-end">
+  <main class="mx-auto max-w-[1120px] px-4 py-5 sm:px-6 lg:py-8">
+    <header class="mb-5 rounded-xl border border-border bg-bg-card p-4 sm:p-5">
+      <a href={base} class="mb-3 inline-flex min-h-8 items-center text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Back to wiki</a>
+      <div class="grid gap-4 lg:grid-cols-[1fr_300px] lg:items-end">
         <div>
+          <div class="font-mono text-[11px] uppercase tracking-[0.18em] text-accent-blue mb-1.5">Learner hub</div>
           <h1 class="font-serif text-4xl sm:text-5xl text-text-primary leading-tight">Study</h1>
-          <p class="mt-3 max-w-2xl text-sm sm:text-base text-text-body leading-relaxed">
-            Practice NRC exam questions, target weak areas, and track your progress.
+          <p class="mt-2 max-w-2xl text-sm sm:text-base text-text-body leading-relaxed">
+            Practice NRC exam questions, target weak areas, and keep source-traceable review moving.
           </p>
-          <p data-testid="study-auth-status" class="mt-3 text-xs font-mono text-text-muted">
+          <div class="mt-4 flex flex-wrap gap-2">
+            <a class="study-button study-button--primary" href={quickHref}>Start Quick Quiz</a>
+            <a class="study-button study-button--secondary" href={mapHref}>Open Study Map</a>
+          </div>
+          <p data-testid="study-auth-status" class="mt-3 inline-flex rounded-md border border-border bg-bg px-3 py-2 text-sm text-text-body" role="status">
             Browsing as a guest — log in to save quiz results and track progress.
           </p>
         </div>
         <section
           data-testid="study-continue-banner"
-          class="hidden rounded-xl border border-accent-blue bg-accent-blue/10 p-4"
+          class="hidden rounded-lg border border-accent-blue bg-accent-blue/10 p-4"
           aria-live="polite"
         >
-          <div class="text-xs font-mono uppercase tracking-wider text-accent-blue">Pick up where you left off</div>
+          <div class="text-[11px] font-mono uppercase tracking-wider text-accent-blue">Pick up where you left off</div>
           <p data-testid="study-continue-reason" class="mt-2 text-sm text-text-body">
             Questions are due for review.
           </p>
           <a
             data-testid="study-continue-action"
             href={reviewHref}
-            class="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-lg border border-accent-blue bg-accent-blue/15 px-4 py-3 text-sm font-semibold text-accent-blue no-underline hover:bg-accent-blue/25"
+            class="mt-3 inline-flex min-h-11 w-full items-center justify-center rounded-md border border-accent-blue bg-accent-blue/15 px-4 py-3 text-sm font-semibold text-accent-blue no-underline hover:bg-accent-blue/25"
           >Review due questions →</a>
         </section>
       </div>
     </header>
 
-    <section class="grid gap-3 sm:grid-cols-3 mb-6" aria-label="Study bank summary">
-      <div class="rounded-lg border border-border bg-bg-card p-4">
+    <section class="mb-5 grid gap-2 sm:grid-cols-3" aria-label="Study bank summary">
+      <div class="study-stat">
         <div class="font-mono text-2xl text-text-primary" data-testid="study-eligible-count">{eligibleQuestions}</div>
-        <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">practice questions</div>
+        <div class="font-mono text-[11px] uppercase tracking-wider text-text-muted">practice questions</div>
+        <p>Imported written exam bank ready for reps.</p>
       </div>
-      <div class="rounded-lg border border-border bg-bg-card p-4">
+      <div class="study-stat">
         <div class="font-mono text-2xl text-text-primary">{examYears.length}</div>
-        <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">exam years</div>
+        <div class="font-mono text-[11px] uppercase tracking-wider text-text-muted">exam years</div>
+        <p>Use year filters when reviewing known exam patterns.</p>
       </div>
-      <div class="rounded-lg border border-border bg-bg-card p-4">
+      <div class="study-stat">
         <div class="font-mono text-2xl text-text-primary">{practiceReadyTopics}</div>
-        <div class="font-mono text-[10px] uppercase tracking-wider text-text-muted">topic pools</div>
+        <div class="font-mono text-[11px] uppercase tracking-wider text-text-muted">topic pools</div>
+        <p>Target systems, Tech Specs, procedures, and weak areas.</p>
       </div>
     </section>
 
-    <section class="grid gap-4 lg:grid-cols-3" aria-label="Study choices">
+    <section data-testid="study-onboarding" class="study-callout mb-5 p-4 sm:p-5" aria-labelledby="study-onboarding-title">
+      <div class="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
+        <div>
+          <div class="study-kicker">First 5 minutes</div>
+          <h2 id="study-onboarding-title" class="mt-1 text-xl font-semibold text-text-primary">Get one real feedback loop</h2>
+          <p class="mt-2 max-w-3xl text-sm leading-relaxed text-text-body">
+            Start with 10 questions, read the explanation after each answer, then use missed items as your next rep target. That is the fastest path from browsing to study signal.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2 lg:justify-end">
+          <a class="study-button study-button--primary" href={quickHref}>Run 10-question set</a>
+          <a class="study-button study-button--accent" href={reviewHref}>Review due items</a>
+          <button type="button" data-testid="study-onboarding-dismiss" class="study-button study-button--secondary">Hide guide</button>
+        </div>
+      </div>
+      <ol class="mt-4 grid gap-2 text-sm text-text-body sm:grid-cols-3">
+        <li class="rounded-lg border border-border bg-bg/60 p-3"><span class="font-mono text-[11px] uppercase tracking-wider text-accent-blue">1</span><div class="mt-1 font-semibold text-text-primary">Answer first</div><p class="mt-1 text-xs text-text-muted">Treat the first pass like an exam rep, not a reading session.</p></li>
+        <li class="rounded-lg border border-border bg-bg/60 p-3"><span class="font-mono text-[11px] uppercase tracking-wider text-accent-blue">2</span><div class="mt-1 font-semibold text-text-primary">Check the source</div><p class="mt-1 text-xs text-text-muted">Use references to anchor the rule, value, or procedure behind the answer.</p></li>
+        <li class="rounded-lg border border-border bg-bg/60 p-3"><span class="font-mono text-[11px] uppercase tracking-wider text-accent-blue">3</span><div class="mt-1 font-semibold text-text-primary">Retake misses</div><p class="mt-1 text-xs text-text-muted">Let missed items drive the next focused set.</p></li>
+      </ol>
+    </section>
+
+    <section class="grid gap-3 lg:grid-cols-3" aria-label="Study choices">
       <a data-testid="study-card-quick" href={quickHref} class="study-card study-card-primary">
         <span class="study-card-kicker">Recommended</span>
         <strong>Quick Quiz</strong>
-        <span>Start a fast practice set, then narrow it with year, system, Tech Spec, procedure, or abnormal-procedure filters when you need targeted reps.</span>
-        <span class="study-card-action">Start →</span>
+        <span>Start a fast practice set. Narrow by year, system, Tech Spec, procedure, or abnormal procedure when you need targeted reps.</span>
+        <span class="study-card-action">Start Quick Quiz →</span>
       </a>
 
       <a data-testid="study-card-map" href={mapHref} class="study-card">
@@ -93,16 +122,28 @@ const progressHref = `${base}history/`;
         <span class="study-card-kicker">History and review</span>
         <strong>My Progress</strong>
         <span>See past scores, weak topics, and questions due for review.</span>
-        <span class="study-card-action">Open →</span>
+        <span class="study-card-action">View My Progress →</span>
       </a>
     </section>
   </main>
 </StudyLayout>
 
 <style>
+  .study-stat {
+    border: 1px solid var(--color-border, #1a2035);
+    border-radius: 0.65rem;
+    background: var(--color-bg-card, #101827);
+    padding: 0.9rem 1rem;
+  }
+  .study-stat p {
+    color: var(--color-text-muted, #8b95a5);
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    margin-top: 0.45rem;
+  }
   .study-card {
     display: flex;
-    min-height: 224px;
+    min-height: 204px;
     flex-direction: column;
     gap: 0.75rem;
     border: 1px solid var(--color-border, #1a2035);
@@ -115,11 +156,11 @@ const progressHref = `${base}history/`;
   }
   .study-card:hover {
     border-color: var(--color-accent-blue, #60a5fa);
-    background: rgba(96, 165, 250, 0.06);
+    background: color-mix(in srgb, var(--color-accent-blue) 7%, var(--color-bg-card));
     transform: translateY(-1px);
   }
   .study-card-primary {
-    border-color: rgba(96, 165, 250, 0.55);
+    border-color: color-mix(in srgb, var(--color-accent-blue) 58%, var(--color-border));
   }
   .study-card strong {
     color: var(--color-text-primary, #e0e4ea);
@@ -131,7 +172,7 @@ const progressHref = `${base}history/`;
   .study-card-kicker {
     color: var(--color-accent-blue, #60a5fa);
     font-family: var(--font-mono, monospace);
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
   }
@@ -150,7 +191,7 @@ const progressHref = `${base}history/`;
     padding: 0.65rem 0.75rem;
     text-decoration: none;
   }
-  .study-card-button:hover { background: rgba(96, 165, 250, 0.08); }
+  .study-card-button:hover { background: color-mix(in srgb, var(--color-accent-blue) 9%, transparent); }
 </style>
 
 <script>
@@ -175,9 +216,23 @@ const progressHref = `${base}history/`;
     setStudyText('study-continue-reason', `${count} question${count === 1 ? ' is' : 's are'} due for review.`);
   }
 
+  function initOnboarding(): void {
+    const guide = document.querySelector<HTMLElement>('[data-testid="study-onboarding"]');
+    const dismiss = document.querySelector<HTMLButtonElement>('[data-testid="study-onboarding-dismiss"]');
+    if (!guide || !dismiss) return;
+    if (localStorage.getItem('salem-study-onboarding-dismissed') === 'true') {
+      guide.classList.add('hidden');
+      return;
+    }
+    dismiss.addEventListener('click', () => {
+      localStorage.setItem('salem-study-onboarding-dismissed', 'true');
+      guide.classList.add('hidden');
+    });
+  }
+
   async function initStudyStatus(): Promise<void> {
     if (!hasSupabaseConfig()) {
-      setStudyText('study-auth-status', 'Progress saving is unavailable here. You can still browse Study.');
+      setStudyText('study-auth-status', 'Progress saving is unavailable in this build. Study browsing still works.');
       return;
     }
 
@@ -202,8 +257,9 @@ const progressHref = `${base}history/`;
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => { void initStudyStatus(); });
+    document.addEventListener('DOMContentLoaded', () => { initOnboarding(); void initStudyStatus(); });
   } else {
+    initOnboarding();
     void initStudyStatus();
   }
 </script>

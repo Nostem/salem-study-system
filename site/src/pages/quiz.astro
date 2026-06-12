@@ -9,10 +9,14 @@ const topicGroups = getQuizTopicGroups();
 const topics = [
   ...topicGroups.primary,
   ...topicGroups.techSpecs,
+  ...topicGroups.eops,
+  ...topicGroups.abnormals,
   ...topicGroups.procedures,
   ...topicGroups.other,
 ];
 const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
+
+const topicCount = (topic: { count?: number }) => typeof topic.count === 'number' ? topic.count : 0;
 ---
 
 <StudyLayout title="Quick Quiz" active="quick">
@@ -80,8 +84,8 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
           <div id="topic-slugs" data-testid="topic-filter-list" class="quiz-topic-list">
             {topicGroups.primary.map((topic) => (
               <label class="quiz-topic-check">
-                <input type="checkbox" name="topicSlugs" value={(topic.slugs || [topic.slug]).join(',')} />
-                <span>{topic.title}</span>
+                <input type="checkbox" name="topicSlugs" data-topic-group="primary" value={(topic.slugs || [topic.slug]).join(',')} />
+                <span>{topic.title}<small>{topicCount(topic)} q</small></span>
               </label>
             ))}
           </div>
@@ -93,8 +97,34 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
                 <div class="quiz-topic-list quiz-topic-list-compact">
                   {topicGroups.techSpecs.map((topic) => (
                     <label class="quiz-topic-check">
-                      <input type="checkbox" name="topicSlugs" value={(topic.slugs || [topic.slug]).join(',')} />
-                      <span>{topic.title}</span>
+                      <input type="checkbox" name="topicSlugs" data-topic-group="techSpecs" value={(topic.slugs || [topic.slug]).join(',')} />
+                      <span>{topic.title}<small>{topicCount(topic)} q</small></span>
+                    </label>
+                  ))}
+                </div>
+              </section>
+            )}
+            {topicGroups.eops.length > 0 && (
+              <section class="quiz-topic-section" aria-labelledby="eop-topic-title">
+                <h3 id="eop-topic-title">Emergency Operating Procedures ({topicGroups.eops.length})</h3>
+                <div class="quiz-topic-list quiz-topic-list-compact">
+                  {topicGroups.eops.map((topic) => (
+                    <label class="quiz-topic-check">
+                      <input type="checkbox" name="topicSlugs" data-topic-group="eops" value={(topic.slugs || [topic.slug]).join(',')} />
+                      <span>{topic.title}<small>{topicCount(topic)} q</small></span>
+                    </label>
+                  ))}
+                </div>
+              </section>
+            )}
+            {topicGroups.abnormals.length > 0 && (
+              <section class="quiz-topic-section" aria-labelledby="abnormal-topic-title">
+                <h3 id="abnormal-topic-title">Abnormal Procedures ({topicGroups.abnormals.length})</h3>
+                <div class="quiz-topic-list quiz-topic-list-compact">
+                  {topicGroups.abnormals.map((topic) => (
+                    <label class="quiz-topic-check">
+                      <input type="checkbox" name="topicSlugs" data-topic-group="abnormals" value={(topic.slugs || [topic.slug]).join(',')} />
+                      <span>{topic.title}<small>{topicCount(topic)} q</small></span>
                     </label>
                   ))}
                 </div>
@@ -102,12 +132,12 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
             )}
             {topicGroups.procedures.length > 0 && (
               <section class="quiz-topic-section" aria-labelledby="procedure-topic-title">
-                <h3 id="procedure-topic-title">Procedures and abnormal procedures</h3>
+                <h3 id="procedure-topic-title">Operating, admin, and alarm procedures ({topicGroups.procedures.length})</h3>
                 <div class="quiz-topic-list quiz-topic-list-compact">
                   {topicGroups.procedures.map((topic) => (
                     <label class="quiz-topic-check">
-                      <input type="checkbox" name="topicSlugs" value={(topic.slugs || [topic.slug]).join(',')} />
-                      <span>{topic.title}</span>
+                      <input type="checkbox" name="topicSlugs" data-topic-group="procedures" value={(topic.slugs || [topic.slug]).join(',')} />
+                      <span>{topic.title}<small>{topicCount(topic)} q</small></span>
                     </label>
                   ))}
                 </div>
@@ -119,8 +149,8 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
                 <div class="quiz-topic-list quiz-topic-list-compact">
                   {topicGroups.other.map((topic) => (
                     <label class="quiz-topic-check">
-                      <input type="checkbox" name="topicSlugs" value={(topic.slugs || [topic.slug]).join(',')} />
-                      <span>{topic.title}</span>
+                      <input type="checkbox" name="topicSlugs" data-topic-group="other" value={(topic.slugs || [topic.slug]).join(',')} />
+                      <span>{topic.title}<small>{topicCount(topic)} q</small></span>
                     </label>
                   ))}
                 </div>
@@ -333,9 +363,18 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
     }
 
     function currentFilters() {
+      const selectedTopicGroups = {};
+      const selectedTopicSlugs = [];
+      for (const input of document.querySelectorAll('input[name="topicSlugs"]:checked')) {
+        const group = input.dataset.topicGroup || 'primary';
+        const slugs = input.value.split(',').filter(Boolean);
+        selectedTopicSlugs.push(...slugs);
+        selectedTopicGroups[group] = [...new Set([...(selectedTopicGroups[group] || []), ...slugs])];
+      }
       return {
         examYear: document.getElementById('exam-year').value,
-        topicSlugs: [...document.querySelectorAll('input[name="topicSlugs"]:checked')].flatMap((input) => input.value.split(',').filter(Boolean)),
+        topicSlugs: selectedTopicSlugs,
+        topicGroups: selectedTopicGroups,
         count: Number(document.getElementById('question-count').value || 10),
         mode: document.getElementById('quiz-mode').value,
         includeReferenceRequired: document.getElementById('include-reference').checked,
@@ -343,6 +382,14 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         includeDraft: document.getElementById('include-draft').checked,
         includeOutdated: document.getElementById('include-outdated').checked,
       };
+    }
+
+    function matchesSelectedTopics(question, filters) {
+      const selectedGroups = filters.topicGroups || {};
+      const groups = Object.values(selectedGroups).filter((slugs) => slugs.length > 0);
+      if (groups.length === 0) return true;
+      const questionTopicSlugs = new Set(question.topics.map((topic) => topic.slug));
+      return groups.every((slugs) => slugs.some((slug) => questionTopicSlugs.has(slug)));
     }
 
     function filteredQuestions(filters, useCount = true, personalizationStates = null) {
@@ -354,7 +401,7 @@ const initialSummary = buildQuizSummary({ count: quizBank.questions.length });
         if (!filters.includeEdited && question.isEdited) return false;
         if (!filters.includeDraft && question.status === 'draft') return false;
         if (!filters.includeOutdated && question.status === 'outdated') return false;
-        if (filters.topicSlugs.length > 0 && !question.topics.some((topic) => filters.topicSlugs.includes(topic.slug))) return false;
+        if (!matchesSelectedTopics(question, filters)) return false;
         return true;
       });
       if (!useCount) return matches;

@@ -14,7 +14,8 @@ test('Study presents one quiz entry plus Study Map and Progress paths', async ({
   await page.goto('study/');
 
   await expect(page.getByRole('heading', { name: 'Study' })).toBeVisible();
-  await expect(page.getByText('Practice NRC exam questions, target weak areas, and track your progress.')).toBeVisible();
+  await expect(page.getByText('Get one real feedback loop')).toBeVisible();
+  await expect(page.getByText('Start with 10 questions, read the explanation after each answer, then use missed items as your next rep target. That is the fastest path from browsing to study signal.')).toBeVisible();
   await expect(page.getByTestId('study-auth-status')).toContainText(/Browsing as a guest|Signed in|Progress saving/);
 
   await expect(page.getByTestId('study-continue-banner')).toBeHidden();
@@ -87,6 +88,7 @@ test('mobile Study keeps the three learner choices clear and full-width', async 
   await expect(quick).toBeVisible();
   await expect(map).toBeVisible();
   await expect(progress).toBeVisible();
+  await quick.scrollIntoViewIfNeeded();
   await expect(quick).toBeInViewport();
 
   const quickBox = await quick.boundingBox();

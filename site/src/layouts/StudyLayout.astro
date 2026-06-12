@@ -21,14 +21,9 @@ const navItems = [
 ---
 
 <BaseLayout title={title} noindex={noindex}>
-  <header class="sticky top-0 z-30 border-b border-border bg-bg/95 backdrop-blur" data-pagefind-ignore>
-    <div class="mx-auto flex max-w-[1180px] flex-col gap-3 px-4 py-3 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
-      <a href={base} class="flex items-center gap-3 no-underline" aria-label="Back to Salem Study wiki home">
-        <div class="flex h-8 w-8 items-center justify-center rounded-full border border-accent-blue">
-          <div class="h-3.5 w-3.5 rotate-45 border border-accent-blue"></div>
-        </div>
-        <span class="font-mono text-[11px] font-medium uppercase tracking-[0.18em] text-text-primary">Salem Study</span>
-      </a>
+  <header class="sticky top-[3.25rem] z-30 border-b border-border bg-bg/95 backdrop-blur" data-pagefind-ignore>
+    <div class="mx-auto flex max-w-[1180px] items-center justify-between gap-3 px-4 py-2 sm:px-6">
+      <a href={base} class="shrink-0 font-mono text-[11px] uppercase tracking-[0.14em] text-text-muted no-underline hover:text-text-primary" aria-label="Back to Salem Study wiki home">‹ Wiki</a>
       <nav data-testid="study-nav" class="flex gap-2 overflow-x-auto" aria-label="Study navigation">
         {navItems.map((item) => (
           <a

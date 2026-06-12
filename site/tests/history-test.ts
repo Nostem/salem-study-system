@@ -102,8 +102,8 @@ test('history page requires login before showing performance data', async ({ pag
 
   await expect(page.getByTestId('history-login-required')).toBeVisible();
   await expect(page.getByRole('heading', { name: /Log in to view your progress/i })).toBeVisible();
-  await expect(page.getByRole('link', { name: /Log in/i })).toHaveAttribute('href', /\/salem-study-system\/login\/\?next=%2Fsalem-study-system%2Fhistory%2F$/);
-  await expect(page.getByText(/contact site administrator/i)).toBeVisible();
+  await expect(page.getByTestId('history-login-required').getByRole('link', { name: /Log in/i })).toHaveAttribute('href', /\/salem-study-system\/login\/\?next=%2Fsalem-study-system%2Fhistory%2F$/);
+  await expect(page.getByText(/ask the site administrator/i)).toBeVisible();
   await expect(page.getByTestId('history-app')).toHaveClass(/hidden/);
 });
 

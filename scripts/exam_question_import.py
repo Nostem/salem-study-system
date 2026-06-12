@@ -583,6 +583,68 @@ def record_connects_to_wiki_section(record: Dict[str, Any], section_slug_index: 
     return False
 
 
+def _wiki_section_topic_type(section: str) -> str | None:
+    return {
+        "systems": "system",
+        "tech-specs": "tech_spec",
+        "eops": "eop",
+        "abnormals": "abnormal",
+        "procedures": "procedure",
+        "admin": "admin",
+    }.get(section)
+
+
+def build_wiki_topic_link_index(root: str | Path) -> Dict[str, Dict[str, str]]:
+    """Map wiki link text/title/aliases to canonical quiz topic metadata.
+
+    Question pages already carry rich Obsidian connections. This index resolves
+    those human-facing links such as ``[[EOP-TRIP-1]]`` or
+    ``[[AB.CA-0001 — Loss of Control Air]]`` back to the canonical wiki page
+    slug and topic type so the quiz bank can expose them as stable filters.
+    """
+    root = Path(root)
+    links: Dict[str, Dict[str, str]] = {}
+    for path in sorted((root / "wiki").rglob("*.md")):
+        rel = path.relative_to(root / "wiki")
+        section = rel.parts[0] if rel.parts else ""
+        topic_type = _wiki_section_topic_type(section)
+        if topic_type is None:
+            continue
+
+        raw = path.read_text(encoding="utf-8")
+        frontmatter, _ = parse_frontmatter(raw)
+        title = str(frontmatter.get("title") or path.stem).strip()
+        metadata = {
+            "slug": slugify(path.stem),
+            "title": title,
+            "topic_type": topic_type,
+            "wiki_slug": slugify(path.stem),
+        }
+        link_texts = [path.stem, title, *(str(alias) for alias in (frontmatter.get("aliases") or []))]
+        for text in link_texts:
+            for variant in slug_variants(text):
+                links[variant] = metadata
+    return links
+
+
+def _connection_topics(record: Dict[str, Any], wiki_topic_links: Dict[str, Dict[str, str]]) -> List[Dict[str, str]]:
+    topics: List[Dict[str, str]] = []
+    seen: set[str] = set()
+    for section, links in (record.get("connections") or {}).items():
+        if "exam" in str(section).lower():
+            continue
+        for link in links:
+            resolved = wiki_topic_links.get(slugify(link))
+            if not resolved:
+                continue
+            topic = dict(resolved)
+            if topic["slug"] in seen:
+                continue
+            seen.add(topic["slug"])
+            topics.append(topic)
+    return topics
+
+
 def _add_issue(issues: List[Dict[str, Any]], record: Dict[str, Any], issue: str, detail: str) -> None:
     issues.append(
         {
@@ -768,11 +830,13 @@ def build_supabase_staging_bundle(records: List[Dict[str, Any]], root: str | Pat
     ]
 
     topic_slugs: List[str] = []
+    topic_metadata: Dict[str, Dict[str, str]] = {}
     questions: List[Dict[str, Any]] = []
     choices: List[Dict[str, Any]] = []
     question_references: List[Dict[str, Any]] = []
     question_topics: List[Dict[str, Any]] = []
     admin_slug_index = build_wiki_section_slug_index(root, "admin") if root is not None else set()
+    wiki_topic_links = build_wiki_topic_link_index(root) if root is not None else None
 
     sorted_records = sorted(records, key=lambda item: (item.get("exam_year") or 0, item.get("question_number") or 0, item.get("slug") or ""))
     slug_counts = Counter(record.get("slug") for record in sorted_records)
@@ -817,10 +881,40 @@ def build_supabase_staging_bundle(records: List[Dict[str, Any]], root: str | Pat
         if admin_slug_index and record_connects_to_wiki_section(record, admin_slug_index):
             record_topic_slugs.append("admin")
 
+        seen_question_topics: set[str] = set()
         for topic_slug in record_topic_slugs:
             normalized = slugify(topic_slug)
+            if not normalized or normalized == "unknown" or normalized in seen_question_topics:
+                continue
+            seen_question_topics.add(normalized)
+            if normalized not in topic_slugs:
+                topic_slugs.append(normalized)
+            question_topics.append(
+                {
+                    "question_slug": question_slug,
+                    "topic_slug": normalized,
+                    "relationship_type": "tests",
+                }
+            )
+
+        if wiki_topic_links is None:
+            continue
+        for topic in _connection_topics(record, wiki_topic_links):
+            normalized = slugify(topic["slug"])
             if not normalized or normalized == "unknown":
                 continue
+            topic_metadata.setdefault(
+                normalized,
+                {
+                    "slug": normalized,
+                    "title": topic.get("title") or _topic_title(normalized),
+                    "topic_type": topic.get("topic_type") or _topic_type(normalized),
+                    "wiki_slug": topic.get("wiki_slug") or normalized,
+                },
+            )
+            if normalized in seen_question_topics:
+                continue
+            seen_question_topics.add(normalized)
             if normalized not in topic_slugs:
                 topic_slugs.append(normalized)
             question_topics.append(
@@ -832,7 +926,8 @@ def build_supabase_staging_bundle(records: List[Dict[str, Any]], root: str | Pat
             )
 
     topics = [
-        {
+        topic_metadata.get(slug)
+        or {
             "slug": slug,
             "title": _topic_title(slug),
             "topic_type": _topic_type(slug),
