@@ -137,11 +137,41 @@ Electrical fault on the infeed breaker to the <span class="hi-exam">2E 4KV Group
 <strong>Energize 2A 4KV Vital Bus from 24 SPT</strong> during recovery from Loss of All AC Power (EOP-LOPA-1 Step 16). After EDG-to-SPT swap per S2.OP-SO.DG-0001 §5.8, S2.OP-SO.4KV-0001 §5.3.6 procedure: <span class="hi-exam">(1) NEO racks up 2AD1AX24ASD (24 STATION POWER TRANSFORMER INFEED BREAKER) at 64' Swgr Rm; (2) press Mimic Bus 2A VITAL INFEED 24ASD pushbutton — Console Bezel 24ASD MIMIC BUS INTLK CLOSE SELECTION illuminates (interlock armed); (3) press AND HOLD control console 24ASD CLOSE pushbutton until 24ASD indicates CLOSED</span>. Verify: bezel light extinguishes; 2A 4KV Vital Bus voltage within band <span class="hi-exam">4.275–4.336KV (normal)</span> or <span class="hi-exam">4.330–4.417KV (single source of off-site power)</span>; OHA J-17 (2A 4KV VTL BUS UNDRVOLT) clears.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q31</div>
+An RCP's <span class="hi-exam">4KV breaker requires its closing springs charged to close</span> — trip springs being uncharged does NOT prevent the RCP from starting (a 2015 Q31 distractor). The actual start interlock is RCP Oil Lift Pump discharge pressure at least 500 psig. See [[RCPs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q43</div>
+A 2/3 4KV vital-bus undervoltage (&lt;70%) places <span class="hi-exam">all 3 4KV vital buses in SEC Mode II Blackout</span>; a following SI escalates to SEC Mode III (EDG breaker opens, loads stripped, EDG breaker recloses, safeguards loads sequenced). See [[SECs]], [[EDGs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q57</div>
+4KV Group bus breaker control power comes from the DC system. <span class="hi-trap">Loss of a 4KV group bus 125 VDC control power leaves a running RCP breaker unable to trip on demand</span> (no 125VDC to energize the trip coil); the alternate DC control power supply must be transferred manually. See [[DC Power]], [[RCPs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q61</div>
+On a single 4KV vital-bus UV / Bus Differential lockout, only that bus loads in blackout sequencing. <span class="hi-exam">Loss of the A bus deenergizes its SW pumps, and the standby AUTO SW pump on another bus starts on low SW header pressure</span>. See [[Service Water]], [[SECs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q69</div>
+<span class="hi-exam">Unit 1 SW pump power assignments are reversed from Unit 2</span> (U1: C,C,B,A,A; U2: A,A,B,B,C,C). After a 500KV loss + 1A bus Bus-Differential trip + SI, the A-bus SW pumps (15, 16) lose power and the AUTO-selected pump is locked out by SEC initiation. See [[Service Water]], [[SECs]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-e</div>
+Group-bus SPT-to-APT transfer (S2.OP-SO.4KV-0008): per 4KV Group Bus, <span class="hi-exam">PRESS the Mimic Bus GROUP BUS INFEED breaker pushbutton and ENSURE the MIMIC BUS INTLK CLOSE SELECTION bezel illuminates, then PRESS the breaker CLOSE pushbutton and verify the SPT-side breaker (e.g. 21 ESD / 21 FSD) is OPEN, the APT-side breaker (2AEGD / 2BFGD) is CLOSED, and bus voltage is 4.22 - 4.36KV</span>. APT voltage must be 4.22 - 4.36KV before transfer. <span class="hi-exam">A failure of the 2BFGD breaker to close de-energizes the 2F Group Bus and trips its RCPs, generating a Rx trip demand (OHA F-10, RC LO FLO OR RCP BKR OPEN, and P-7); if the reactor fails to auto-trip (ATWT), manually trip it immediately</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]]
-- Related exam questions: [[2016 Q55]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]]
-- Related JPMs: [[2016 JPM Sim-g]], [[2016 JPM IP-k]], [[2018 JPM Sim-g]], [[2022 JPM Sim-g]], [[2020 JPM Sim-h]]
-- Related scenarios: [[2017 Scenario 8]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2016 Q55]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]], [[2015 Q31]], [[2015 Q43]], [[2015 Q57]], [[2015 Q61]], [[2015 Q69]]
+- Related JPMs: [[2016 JPM Sim-g]], [[2016 JPM IP-k]], [[2018 JPM Sim-g]], [[2022 JPM Sim-g]], [[2020 JPM Sim-h]], [[2015 JPM Sim-e]]
+- Related scenarios: [[2017 Scenario 8]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2015 Scenario 3]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

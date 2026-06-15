@@ -52,6 +52,11 @@ Provides guidance for responding to a loss of control/instrument air on Salem Un
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q13</div>
+The RHR HX flow control valve (21RH18) and HX bypass valve (2RH20) both <span class="hi-exam">fail AS IS on loss of control air</span> — both are supplied air exclusively from the <span class="hi-exam">"A" air header (fed by the Unit 2 ECAC)</span>. During a station blackout (LOOP with all Unit 2 EDGs and ECAC failed), control air on the "A" header bleeds away and the valves remain at their last position. <span class="hi-trap">Console valve-position indication stays accurate because 115VB inverter power is available for at least 2 hours following a LOPA.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q15</div>
 ECAC starting criteria and CAS: if <span class="hi-exam">2B CA Header is &le; 88 psig</span>, notify Unit 1 NCO to start <span class="hi-exam">#1 ECAC</span> (#1 ECAC senses CA Header B). CAS: if <span class="hi-exam">BOTH CA headers lower to &lt; 80 psig, Trip the Reactor</span>. <span class="hi-trap">#2 ECAC senses CA Header A (not B). #1 ECAC senses CA Header B (not A). The ECAC number does NOT match the header letter. The CAS requires BOTH headers &lt; 80 psig, not EITHER.</span>
 </div>
@@ -110,9 +115,9 @@ Total loss of Control Air at 7% power during normal power ascension (after manua
 
 ## Connections
 
-- Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]], [[Waste Gas]], [[Steam Generator & Blowdown]]
+- Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[EDGs]], [[DC Power]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[SC.OP-SO.SA-0001 — Station Air System Operation]]
-- Related exam questions: [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
+- Related exam questions: [[2015 Q13]], [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
 - Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOPA-1 — Loss of All AC Power]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]]

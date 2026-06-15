@@ -117,11 +117,36 @@ After a manual reactor trip and SI for SBLOCA, <span class="hi-exam">SEC loading
 After a containment-pressure hi-hi (Phase B / Spray) signal during a 21 SG steam leak in containment, <span class="hi-exam">both Containment Spray pumps fail to auto-start on the SEC</span> (RP318L1 — 21 CS pump fail-to-start on SEC; RP318L2 — 22 CS pump fail-to-start on SEC). Crew recovery for <span class="hi-exam">CT#1 (CT-3)</span>: RO blocks <span class="hi-exam">2A and 2C SECs</span>, PO resets <span class="hi-exam">2A and 2C SECs</span>, then RO manually starts 21 and 22 CS pumps before a containment CSF red-path challenge develops. (CS pumps map to 2A/2C vital buses — see Q39 mapping.)
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q43</div>
+A 2/3 4KV vital-bus undervoltage drives <span class="hi-exam">all 3 4KV vital buses into SEC Mode II (Blackout)</span> — all EDGs start and blackout loads sequence onto all buses. A subsequent SI initiates <span class="hi-exam">SEC Mode III, which opens any running EDG output breaker, strips energized loads, recloses the EDG breaker, then sequences only SAFEGUARDS loads onto all buses</span>. See [[EDGs]], [[4KV]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q45</div>
+The SEC sequences Containment Spray pump starts: if the SSPS Containment Hi-Hi signal is absent when the SEC first tries to start the CS pumps, the SEC contact re-opens; after the SEC completes loading, the CS pump start contact re-closes. <span class="hi-trap">Once the SEC is reset, the CS pumps will NOT respond to a Hi-Hi containment pressure until the SEC is again actuated.</span> See [[Containment Spray]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q61</div>
+A single 4KV vital-bus UV causes only that bus to load in blackout sequencing (not all three buses). <span class="hi-trap">A running EDG in parallel does not change this — the loss of one A vital bus does not cause a full MODE II/Blackout on all buses</span>; the primary SW pump loads only on the affected bus. See [[Service Water]], [[4KV]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q69</div>
+On a SEC initiation (SI), an AUTO-selected SW pump on a deenergized vital bus <span class="hi-trap">will NOT start — it is locked out by the SEC initiation and has no power</span>. See [[Service Water]], [[4KV]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+During the LBLOCA, <span class="hi-exam">21 and 22 RHR pumps fail to start on the SEC (Sequencer) signal</span>. Crew recovery (CT#1): RO blocks <span class="hi-exam">2A and 2B SECs</span>, PO resets 2A and 2B SECs, RO manually starts 21 and 22 RHR pumps. Later the <span class="hi-exam">2C 4KV vital bus experiences UV and its EOG loads in Blackout Mode</span>; the crew performs Table B actions for the 2C SEC (verify loading complete, reset 2C SEC, start safeguards loads).
+</div>
+
 ## Connections
 
 - Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]], [[AFW]], [[Containment Spray]]
 - Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
-- Related exam questions: [[2016 Q18]], [[2016 Q19]], [[2016 Q39]], [[2016 Q41]], [[2016 Q43]], [[2016 Q55]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2015 Q16]], [[2016 Q18]], [[2016 Q19]], [[2016 Q39]], [[2016 Q41]], [[2016 Q43]], [[2016 Q55]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]], [[2015 Q43]], [[2015 Q45]], [[2015 Q61]], [[2015 Q69]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2015 Scenario 1]], [[2015 Scenario 3]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]]

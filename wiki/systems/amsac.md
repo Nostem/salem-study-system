@@ -41,6 +41,13 @@ Provides a diverse backup to the Reactor Protection System for mitigating Antici
 | Redundancy | 4 channels with 2/4 logic | 2 channels |
 | Armed | Always (with permissives) | Only above P-20 (at power) |
 
+## Boron Worth During an ATWS
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q9</div>
+<span class="hi-exam">Differential boron worth rises over core life</span> (boron is more effective in a less-borated, harder-spectrum EOL core than in a heavily-borated BOL core). Therefore a rapid boration performed during an ATWS inserts <span class="hi-exam">more negative reactivity at EOL with HIGHER differential boron worth</span> than the same boration at BOL. <span class="hi-trap">Trap: candidates may reason that the higher BOL boron concentration means more boron worth — but it is the differential (per-ppm) worth that matters, and that is HIGHER at EOL.</span>
+</div>
+
 ## AMSAC Train-to-Pump Mapping
 
 <div class="callout callout-exam">
@@ -60,6 +67,7 @@ AMSAC AFW pump start signals by train: <span class="hi-exam">Train A starts 21 A
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[AFW]]
+- Related procedures: [[curve book]]
 - Related concepts: [[ESF & Design]] (ATWS section)
-- Related exam questions: [[2019 Q31]]
-- Related exam: [[2019 NRC Written Exam]]
+- Related exam questions: [[2015 Q9]], [[2019 Q31]]
+- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]]

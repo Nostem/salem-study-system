@@ -80,10 +80,20 @@ After a 21 SGFP trip at 100% MOL (no operator action, no Rx trip), an UNEXPECTED
 PZR Pressure Channel I (PT-455) fails HIGH during a 2% power ascension. PZR heaters de-energize, both PZR Spray valves drive fully open. RO places Master Pressure Controller in manual and lowers demand to close sprays. Selects <span class="hi-exam">Channel III</span> for control, matches MPC demand to current pressure, returns MPC to AUTO. Shuts <span class="hi-exam">2PR6</span> and dispatches WCC to remove power from 2PR6 within <span class="hi-exam">one hour of the channel failure IAW Tech Specs</span>. PO removes failed channel from service IAW <span class="hi-exam">S2.OP-SO.RPS-0003</span>. CRS enters TSAS <span class="hi-exam">3.3.1.1 Action 6, 3.3.2.1.b Action 19*, 3.4.5.b, and 3.2.5</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q87</div>
+For a PORV (2PR1) failing open: MPC output lowers as PZR pressure drops; the PORV is isolated by shutting its Block Valve. <span class="hi-exam">A failed-open PORV isolated by its Block Valve requires a unit shutdown if not restored within 72 hours (TS 3.4.5.b)</span>; a leaking PORV isolated by its Block Valve (power maintained) does NOT require shutdown. See [[Pressurizer Level & Press Control]], [[TS 3/4.4 — Reactor Coolant System]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+Entered on a controlling PZR Pressure channel (Channel I / PT455) failing low (<span class="hi-exam">OHAs D-16 RC PRESS LO, E-12 PZR PRESS LO, E-28 PZR HTR ON PRESS LOW</span>). Crew places Master Pressure Controller in MANUAL, adjusts demand per Attachment 2, <span class="hi-exam">selects PZR Pressure Channel III for control</span>, restores Master Controller to AUTO, then removes the failed channel from service. CRS enters TSAS <span class="hi-exam">3.3.1.1 Action 6, 3.3.2.1.b Action 19, and 3.4.5 Action b</span> and directs closing/de-energizing 2PR6 PORV block valve.
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[RPS/SSPS]], [[ECCS]]
-- Related exam questions: [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]]
+- Related exam questions: [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]], [[2015 Q87]]
 - Related JPMs: [[2020 JPM Sim-a]]
-- Related scenarios: [[2016 Scenario 3]], [[2017 Scenario 7]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2017 Scenario 7]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2015 Scenario 2]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

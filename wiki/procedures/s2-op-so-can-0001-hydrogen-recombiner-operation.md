@@ -47,9 +47,14 @@ Confirms EOP-LOCA-1 requirement: start <span class="hi-exam">ONLY one</span> hyd
 Hydrogen Recombiner power supplies (Unit 1): <span class="hi-exam">11 Hydrogen Recombiner powered from 1A 460V Vital Bus; 12 Hydrogen Recombiner powered from 1B 460V Vital Bus</span> (each fed from its respective 4KV Vital Bus). With 1A 4KV Vital Bus locked out on bus differential, 1A 460V is de-energized — <span class="hi-exam">only 12 Recombiner is available</span> when directed by procedure.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q48</div>
+H2 Recombiners are placed in service with containment H2 between 2-4%. <span class="hi-exam">A higher containment pressure (constant power) makes the recombiner LESS effective; Attachment 2 (Recombiner Power Correction Factor Curve) yields a higher correction factor, so the power setpoint must be RAISED</span> per Step 5.1.9.C. See [[Containment]].
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]], [[460/230V AC]], [[4KV]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2016 Q45]], [[2018 Q77]], [[2019 Q32]], [[2019 Q91]], [[2022 Q60]], [[2020 Q92]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2016 Q45]], [[2018 Q77]], [[2019 Q32]], [[2019 Q91]], [[2022 Q60]], [[2020 Q92]], [[2015 Q48]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]

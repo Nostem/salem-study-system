@@ -109,5 +109,5 @@ EAL#CA4.1 (ALERT — Loss of RHR): with RCS intact and RCS temperature &gt; <spa
 - Related systems: [[RPS/SSPS]], [[EDGs]], [[4KV]], [[RHR]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
 - Related exam questions: [[2019 Q86]], [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]]
-- Related JPMs: [[2018 JPM RO-A4]], [[2019 JPM RO-A4]], [[2019 JPM SRO-A5]], [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]], [[2020 JPM RO-A4]], [[2020 JPM SRO-A5]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM RO-A4]], [[2019 JPM RO-A4]], [[2019 JPM SRO-A5]], [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]], [[2020 JPM RO-A4]], [[2020 JPM SRO-A5]], [[2015 JPM RO-A4]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Operating Exam]]

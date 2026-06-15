@@ -1,0 +1,850 @@
+
+
+===== PAGE 0 =====
+,.
+TQ-AA-106-0204
+Page 1of34
+SIMULATOR
+EXAMINATION SCENARIO GUIDE
+SCENARIO TITLE: 14--01 NRC ESG-1
+SCENARIO NUMBER: 14--01 NRC ESG-1
+EFFECTIVE DATE: See Approval Dates
+EXPECTED DURATION: 80 minutes
+REVISION NUMBER: 00
+PROGRAM: ~-~l LO. REQUAL
+I
+X · INITIAL LICENSE
+~-~!STA
+.· ......... I
+OTHER
+Revision Summary
+New Issue for 14-01 ILOT NRC exam
+PREPARED BY: G Gauding 9-1-15
+Lead Regulatory Exam Author Date
+Jo/JI(/
+~t!2'105
+APPROVED BY:
+Date
+APPROVED BY:
+epresentative Date
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 1 =====
+TQ-AA-106-0204
+Page 2 of 34
+
+===== PAGE 2 =====
+TQ-AA-106-0204
+Page 3 of 34
+A. Given a failure of a power range detector, take corrective action for a power range instrument
+failure IAW AB.NIS-0001.
+B. Given the order or indications of a nuclear. instrument failure, DIRECT the response to the
+malfunction IAW S1/S2.0P-AB.NIS-0001
+C. Given the indications of a reactor coolant system (RCS) malfunction or leak, perform actions as
+the nuclear control operator to RESPOND to the malfunctioning accordance with S1/S2.0P
+AB.RC-0001.
+D. Given the indications of a reactor coolant system (RCS) malfunction or leak, DIRECT the
+response to the malfunction in accordance with S1/S2.0P-AB.RC-0001.
+E. Given the order or indications of a loss of coolant accident (LOCA), complete actions as the
+nuclear control operator to PERFORM the immediate response to the LOCA in accordance
+with the approved station procedures.
+F. Given indication of a loss of coolant accident (LOCA), DIRECT the immediate response to the
+LOCA in accordance with the approved station procedures.
+G. Given the order or a loss of coolant accident (LOCA) and plant conditions to support cold leg
+recirculation, perform actions as the nuclear control operator to TRANSFER to cold leg
+recirculation in accordance with the approved station procedures.
+H. Given a loss of coolant accident (LOCA) and plant conditions to support cold leg recirculation,
+DIRECT actions to transfer to cold leg recirculation in accordance with the approved station
+procedures.
+A. Power Ascension
+B. PRNI failure
+C. 20 gpm RCS leak
+D. LBLOCA with failure of RHR pumps to start
+E. Transfer to Cold Leg Recirc
+F. Charging pump cavitation while isolating RWST
+A. The crew will take the watch with the unit at 68.5% power, BOL. A power ascension at 10% per
+hour from 45% was placed on hold for shift turnover. Power was reduced 2 days ago for 21
+SGFP control problem. Troubleshooting identified and corrected the problem, and 21 SGFP
+has been returned to service. The crew is directed to raise power at 10% per hour to 90% IAW
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 3 =====
+TQ-AA-106-0204
+Page 4 of 34
+S2.0P-IO.ZZ-0004, Power Operation. Rx Engineering is bringing updated reactivity plan to
+control room and crew should determine its own reactivity plan. 25 CFCU is CIT for bearing
+replacement. 23 Condensate pump is O/S. Xenon is burning out at 60 pcm per hour.
+B. The crew will continue the power ascension@ 10% I hr IAW S2.0P-IO.ZZ-0004, Power
+Operation.
+C. After power movement has been evaluated, Power Range NI Channel IV fails high. Control
+rods will step in if in automatic at 72 spm. The crew will determine a load rejection is not in
+progress and place rods in manual. The CRS will enter S2.0P-AB.ROD-0003, Continuous Rod
+Motion. The crew will remove the failed channel from service. The CRS will identify applicable
+Tech Specs.
+D. After the PRNI failure has been addressed, a 20 gpm RCS leak will occur. The crew will
+diagnose the leak with control console indications and alarms. The crew will place a centrifugal
+charging pump in service and a 45 gpm orifice in service and estimate the leak rate. The CRS
+will identify applicable Tech Specs.
+E. After the RCS leak has been addressed, an RCS loop will catastrophically fail. RCS pressure
+will rapidly lower to containment pressure. Automatic Safety Injection actuation fails, and the
+crew will manually initiate SI. Neither RHR pump will start on the SEC signal, and the crew will
+block and reset 2A and 2B SECs and start both RHR pumps (CT#1 ). Following the reset of 2C
+SEC, 2C 4KV vital bus will experience an UV condition, and load in Blackout Mode. The crew
+will start any required ECCS equipment.
+F. When RWST level reaches 15.2', the crew will transition to EOP-LOCA-3, Transfer to Cold Leg
+Recirculation and perform the alignment to Cold Leg Recirc. (CT#2) When isolating the RWST,
+both charging pumps will cavitate. The crew will secure the cavitating charging pumps.
+G. The scenario will be terminated after the cavitiating charging pumps are secured, or if not
+identified and secured, when a charging system piping failure occurs in the Aux Building and a
+LOCA outside containment occurs.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 4 =====
+TQ-AA-106-0204
+Page 5 of 34
+IC-231
+'';>; '>i~~.;'.r;:~: :)J§'t'.~>::;,:,
+Ygt0~~~~,;it~
+1 VC1 and VC4 CIT
+2 RCPs (SELF CHECK)
+_ 3 RTBs (SELF CHECK)
+_ 4 MS167s (SELF CHECK)
+_ 5 500 KV SWYD (SELF CHECK)
+_ 6 SGFP Trip (SELF CHECK)
+_ 7 23 CV PP (SELF CHECK)
+8 25 CFCU CIT
+__ 9 23 Condensate Pump O/S (available)
+10 IOP-4 complete up to Step 5.1.19
+11 Complete Attachment 2 "Simulator Ready-for-Training/Examination Checklist."
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 5 =====
+TQ-AA-106-0204
+Page 6 of 34
+Note: Tables with blue headings may be populated by external program, do not change column name without consulting Simulator Support group
+Description
+EVENT ACTION: kb1161ck // 2SJ1 RWST TO CHG PUMP CLOSE
+3 COMMAND:
+PURPOSE: <update as needed>
+SELF- Description Delay Initial Ramp Trigger Severity
+CHECK Time Value Time
+01 NI0193D PR CH N44 FAILS HI/LO N/A NIA N/A RT-1 200
+RC0002 RCS LEAK lNTO CONTAINMENT (equiv to 0-
+02 N/A NIA NIA RT-3 20
+4inches
+03 RC0001B RCS RUPTURE OF RC LOOP 22 N/A N/A N/A RT-5
+04 RP0108 FAILURE OF AUTOMATIC SI N/A N/A NIA N/A
+05 RP318A2 RHR PUMP 22 Fails to Start on SEC NIA NIA NIA N/A
+06 RP318A 1 RHR PUMP 21 Fails to Start on SEC N/A N/A N/A NIA
+07 CV0043 CHARGING LINE LEAK IN AUX BLDG NIA N/A NIA RT-9 550
+08 CV0208A 21 CHARGING PUMP TRIP 00:02:00 N/A N/A RT-9
+09 CV0208B 22 CHARGING PUMP TRIP 00:02:00 NIA NiA RT-9
+SELF- Description Delay Initial Ramp Trigger Condition
+CHECK Time Value Time
+01 CT195-20 25 CFCU BKR #2 Hi h Speed 125VDC NIA N/A N/A N/A OFF
+02 CT195-3D 25 CFCU BKR #3 Low S eed 125VDC NIA N/A NIA N/A OFF
+03 CV62B 22 CHG PUMP SUCTION VALVE 2CV49 NIA NIA NIA ET-3 .00005
+04 CV62A 21 CHG PUMP SUCTION VALVE 2CV44 00:00:02 N/A N/A ET-3 .00005
+05 CT195-1D 25 CFCU BKR #1 Hi h Speed 125VDC NIA N/A NIA NIA OFF
+06 SP01A1 Prevailin Wind S eed N/A NIA NIA NIA 10
+07 SP01 A2 Prevailin Wind Direction NIA N/A NIA NIA 160
+SELF Description Delay Initial Ramp Trigger Condition/
+CHECK Time Value Time Severity
+01 C812 F DI 24CSD 2C VITAL BUS FEEDER-OPEN NIA N/A N/A NIA ON
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 6 =====
+TQ-AA-106-0204
+Page 7 of 34
+02 C809 F DI 23CSD 2C VITAL BUS FEEDER-OPEN N/A N/A NIA RT-7 ON
+1.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 7 =====
+TQ-AA-106-0204
+Page 8 of 34
+A. State shift job assignments.
+B. Hold a shift briefing, detailing instruction to the shift: (provide crew members a copy of the shift
+turnover sheet).
+C. Inform the crew "The simulator is running. You may commence panel walkdowns at this time.
+CRS please inform me when your crew is ready to assume the shift".
+D. Allow sufficient time for panel walk-downs. When informed by the CRS that the crew is ready
+to assume the shift, ensure the simulator is cleared of unauthorized personnel.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 8 =====
+TQ-AA-106-0204
+Page 9 of 34
+1. Power Ascension
+CRS briefs RO and PO on power ascension.
+RO provides reactivity plan for dilution and rod
+movement.
+Note: Manual rod control may be
+used, but RCS temp will be above
+program and AFD will be high.
+RO initiates dilution if reauired.
+Note: Terr is + 0.5 °F
+PO initiates a power ascension at 10% per
+hour.
+RO either announces expected and actual
+auto rod movement, or withdraws rods in
+manual with CRS concurrence to maintain
+Proceed to next event on direction
+from Lead Evaluator.
+2. Power Range Nuclear
+Instrument CH IV fails high
+<S imLlat9r;;,Op~rafoEI,~:fnse(t1'RT~1
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 9 =====
+TQ-AA-106-0204
+Paae 10 of 34
+RO reports control rods stepping in at 72 spm
+with no load reject in progress, places control
+rods in Manual (if in automatic) with
+concurrence from the CR8.
+Note: Crew may enter procedure
+82.0P-AB.ROD-0003 first, (if rods
+were in auto), but will transition to
+82.0P-AB.Nl8-0001.
+CR8 enters 82.0P-AB.Nl8-0001, Nuclear
+Instrumentation Malfunction.
+CRS either places load change on hold or
+directs manual rod control.
+RO identifies that Power Range NI Channel IV
+2N44 failed hiah.
+CRS notifies l&C of failed channel and
+reauests assistance.
+PO reviews OHAs in alarm and reports they
+are consistent with the NI channel failure.
+CR8 directs PO to remove 2N44 from service
+IAW 82.0P-80.RP8-0001, Nuclear
+Instrumentation Channel Trio I Restoration.
+P8EG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 10 =====
+TQ-AA-106-0204
+Paae 11of34
+1ialm!tl.TCIWR'rtfisf,;(fns·e~·.,,.,:.r"2?·">1B!n3f 'IB'r :· " ·' ·:
+:i : •• ~~3~~:·:~•rt:··):2 ·;;~~~jf~tl\J:~~ .< · .~:'. ~·: ·:; .; ~J~1fo:oG t~~~~ r (:i ~;:.:
+RO reports outward rod movement is
+unavailable until the Overpower Rod Stop is
+defeated, and maintains Tavg within band
+soecified bv CRS.
+Note: Xenon is burning out to help
+temperature control.
+CRS enters TSAS 3.3.1.1, Action 2 and 6.
+CRS directs performance of QPTR and
+reauests Rx Enaineer to oerform flux ma
+PO checks that tripping of associated
+bistable(s) will NOT result in an ESF or RPS
+actuation.
+RO ensures 2N44 Channel is NOT selected
+on NIS Recorder 2NR45.
+PO places DETECTOR CURRENT
+COMPARATOR, UPPER SECTION,
+switch in PRN44 position AND ensures the
+following:
+• CHANNEL DEFEAT lamp illuminates.
+• OHA E-38, UPPER SECT DEV ABV
+50% PWR, clears.
+PO places DETECTOR CURRENT
+COMPARATOR, LOWER SECTION,
+switch in PRN44 position and ensures the
+following:
+• CHANNEL DEFEAT lamp illuminates.
+• OHA E-46, LOWER SECT DEV ABV
+50% PWR, clears.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 11 =====
+TQ-AA-106-0204
+Page 12 of 34
+'mint.,,·
+·vv···Y·
+PO places POWER MISMATCH BYPASS
+switch in BYPASS PR N44.
+PO places ROD STOP BYPASS switch in
+BYPASS PR N44 and ensures the following:
+• 2RP4 - OVER POWER ROD STOP
+MANUAL BYPASS, CH II is
+illuminated.
+• OHA E-31, PR OVERPWR ROD
+STOP, is clear.
+PO places COMPARATOR CHANNEL
+DEFEAT switch in N44 and ensures the
+following:
+• COMPARATOR DEFEAT lamp is
+illuminated.
+• OHA E-39, PR CH DEV, is clear.
+PO reports that remainder of procedure
+reauires l&C suooort to comolete.
+CRS directs restoration of RCS Tavg if low out
+of band.
+Continue to next even on direction
+from Lead Evaluator.
+3. 20 gpm RCS leak
+~~§i.!lJMl~;t~r~:~P~~~t~i~f:·•ln~~f!~Rt23·'!t~~;
+'" .. on:dftection.ffomwLead;;Evalt!ator,,t??~:;;j
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 12 =====
+TQ-AA-106-0204
+Paae 13 of 34
+·, , , ··
+¥!•~l'1ifnt/sH.'.iae
+:;5 ·~10:;~~\ <.\Jj
+RO reports that charging flow is rising and
+PZR level is lowerina slowlv.
+Crew reports reading on 2R11A containment
+radiation monitor is risin~.
+RO reports unexpected OHA C-2 CNTMT
+SUMP PMP START.
+CRS enters S2.0P-AB.RC-0001, Reactor
+Coolant Svstem Leak.
+CRS directs implementation of CAS.
+RO reports PZR level is lowering with
+maximum PDP flow.
+CRS enters S2.0P-AB.RAD-0001, Abnormal
+Radiation after OHA A-6 unexpected
+annunciation.
+RO swaps to a centrifugal charging pump IAW
+Step 3.14, and raises charging flow to
+stabilize PZR level.
+PO swaps to the 45 apm letdown orifice.
+RO estimates leak rate.
+CRS initiates S2.0P-ST.RC-0008, Reactor
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 13 =====
+TQ-AA-106-0204
+Paae 14 of 34
+CRS evaluates containment conditions and
+may contact Rad Pro for recommendation on
+CFCU operation.
+Role Play: If contacted state Rad
+Pro recommends placing 2 CFCU's
+in Low Speed and 2 CFCU's in
+High Speed.
+PO places 2 CFCU's in Low Speed and 2
+CFCU's in Hioh Speed.
+CRS initiates actions to locate and isolate the
+leak IAW Attachment 2.
+CRS enters TSAS 3.4.7.2.b.
+Proceed to next event on direction
+from Lead Evaluator.
+4. Large Break LOCA
+RO reports indications of RCS failure (rapidly
+lowerinq RCS Pressure and PZR level
+RO reoorts the reactor has tripped or initiates
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 14 =====
+TQ-AA-106-0204
+Paae 15 of 34
+5. Auto SI fails to actuate
+RO performs Immediate Actions of TRIP-1
+Confirms the Rx trip
+Trips the Main Turbine
+Reports at least one 4KV Vital bus
+energized.
+Reports a demand for SI exists, but SI has not
+initiated, and manuallv initiates SI.
+CRS and RO verify performance of immediate
+actions.
+PO reports all AFW pumps running, and
+requests permission to throttle AFW flow while
+maintaining 22E4 lbm/hr or 9% level in at least
+one SG NR level.
+6. 21 and 22 RHR pumps fail to
+start on SEC
+PO performs SEC Loading Verification along
+with safeguards valve alignment, and reports
+neither RHR oumo started.
+RO blocks 2A and 28 SECs.
+PO resets 2A and 28 SECs.
+RO starts 21 and 22 RHR oumos.
+\j1~~~~~~:~~a1~a~s~~~·~~;::,
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 15 =====
+TQ-AA-106-0204
+Paae 16 of 34
+PO reoorts 21 and 22 AFW oum
+RO reoorts 21 and 22CA330s are shut.
+RO reports containment pressure has not
+remained below 15 osia.
+RO reports both containment spray pumps
+runnina and MSLI has occurred.
+RO stops all RCPs if not previously performed
+er CAS.
+PO reports all valves in Table D in safeguards
+osition.
+h steam flow condition.
+CRS directs imolementation of the ECG.
+PO reoorts all 4KV vital buses eneraized.
+RO reoorts CAV in AP mode.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 16 =====
+TQ-AA-106-0204
+Paae 17 of 34
+RO runs 2 switchgear supply and one exhaust
+fan.
+RO reoorts 2 or more CCW oumps runnin
+RO reports RCS not aligned for Cold Leg
+Recirc.
+RO reports charging flow is at least 100 gpm
+on SI svstems charaina flow meter.
+RO reports RCS pressure is <1660 psig
+(adverse), and SI flow is at least 100 gpm on
+21 or 22 SI oumo flow meter.
+RO reports RCS pressure < 420 psig
+(adverse) and RHR flow is at least 300 gpm on
+both 21 and 22 SJ49s.
+RO closes charging pump mini flow valves
+with RCS pressure <1500 psig if not
+reviouslv performed per CAS.
+PO reports total AFW flow is 22E4 lbm/hr or
+15% level in at least one SG NR level, and
+maintains 22E4 lbm/hr until at least one SG
+NR level is >15% (adverse), then maintains
+15-33% level.
+Note: SG pressures will drop over
+scenario due to LBLOCA, and AFW
+will rise with no action from PO.
+RO reoorts no RCPs runnina, and RCS
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 17 =====
+TQ-AA-106-0204
+Page 18 of 34
+temperature is not stable at or trending to
+547°F.
+PO reports no steam dum
+CRS determines MSLI has been performed.
+RO reports both RTBs are open.
+RO reports both PZR PORVs are shut with
+their Block Valves open.
+PO reports no indication of faulted SGs.
+Note: SG pressures will drop over
+scenario due to LBLOCA.
+PO/RO report no indications of a steam
+enerator tube rupture.
+RO reports 2 or more channels in Table F are
+in warnina or alarm.
+CRS transitions to EOP-LOCA-1, Loss of
+Reactor Coolant.
+Note: CFST monitoring will
+commence after the transition out
+of TRIP-1. STA will report to the
+control room 10 minutes after being
+paged. When the FRTS RED path
+is identified, the CRS goes to
+FRTS-1. When the FRCE
+PURPLE path is identified, the
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 18 =====
+TQ-AA-106-0204
+Paae 19 of 34
+CRS will go to FRCE-1.
+STA reports CFST status
+FRTS steps
+CRS enters 2-EOP-FRTS-1, Response to
+Imminent Pressurized Thermal Shock
+Conditions.
+ressure is < 420 psi
+CRS returns to procedure in effect.
+FRCE steps
+CRS enters 2-EOP-FRCE-1, Response to
+Excessive Containment Pressure.
+PO verifies Phase A valves shut.
+RO verifies 2VC5 and 2VC6 shut, containment
+pressure is > 15 psig, and LOCA-5 not in
+effect.
+RO reports containment spray and Phase B
+status, and all RCPs are stopped.
+RO reports CFCU status.
+PO reports all MSIVs are shut.
+PO reports no faulted SGs
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 19 =====
+TQ-AA-106-0204
+Paae 20 of 34
+LOCA-1 steps
+Crew re-verifies no faulted or ruptured SGs
+exist.
+RO resets SI, Phase A, and Phase B
+isolations.
+RO ooens 21 and 22CA330s.
+PO resets each SEC.
+7. 2C 4KV vital bus UV
+Note: Event 7 may not be inserted
+if crew does not reach SEC reset
+steps in LOCA-1.
+PO reports UV condition on 2C 4KV vital bus,
+and EOG is loadina Blackout loads.
+Crew performs actions of Table B for 2C SEC:
+PO verifies loading complete
+PO resets 2B SEC
+CRS directs starting of safeguards
+loads.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 20 =====
+TQ-AA-106-0204
+Paae 21of34
+PO resets 230V control centers.
+RO resets SGBD Sample Isolation Bypass
+and ooens 21-24SS94s.
+CRS directs chemistry to sample SGs for
+activitv and boron.
+Crew verifies proper PORV status and that SI
+flow cannot be reduced.
+Crew verifies CS flow is indicated.
+Crew re-verifies no faulted SGs.
+CRS evaluates continued EOG runnina status.
+CRS transitions to 2-EOP-LOCA-3, Transfer to
+Cold Leg Recirculation when RO announces
+214 RWST level have reached 15.2 ft.
+Mark time RWST lo level alarm is
+received for critical task
+performance:
+4. Transfer to Cold Leg
+Recirculation
+RO reports Containment Sump Level Lights
+illuminated >62%.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 21 =====
+TQ-AA-106-0204
+Paae 22 of 34
+RO depresses SUMP AUTO ARMED PB for
+21/22SJ44s.
+PO removes lockouts from 2SJ67, 2SJ68,
+2SJ69.
+RO reoorts 21 and 22SJ44 ooen.
+RO reoorts both RHR
+RO shuts 2SJ69.
+Mark time 2SJ69 close PB
+depressed.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 22 =====
+TQ-AA-106-0204
+Paae 23 of 34
+RO verifies or performs SI reset actions.
+RO resets SECs and 230V MCCs.
+Mark time of 22 CS pump stop.
+< 5.5 mins after RWST Lo Level
+CT#2(2)
+RO closes 21/22RH19s.
+CRS goes to step 11 based on all Vital Buses
+eneraized.
+CRS goes to step 28 if any EOG is supplying
+its vital bus.
+Step 28 RO reports 3 SW
+Step 28 PO reports both CCHXs are in service .
+Step 28.2 RO reports 23 CCW pump is NOT in service.
+Step 28.3 RO reports 22 CS pump is NOT in service
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 23 =====
+TQ-AA-106-0204
+e 24 of 34
+··:.
+;Jr;,r·.
+£~g!f
+Remaining recirc alignment steps RO reports 21CC16 and 22CC16 are open.
+are common to steps 28/29 if an
+EDG is supplying its vital bus, or
+steps 11-14 if all 4KV vital buses
+energized from off site power.
+RO shuts 2SJ67 and 2SJ68.
+RO reoorts 2RH 1 and 2RH2 are shut.
+RO reports 22 RHR pump is running and
+ooens 22SJ45.
+RO reports 21 RHR pump in service and
+ooens 21 SJ45.
+RO reoorts 21SJ113 and 22SJ113.
+Reports 21 and 22 Safety Injection Pumps
+and 21 and 22 Charaina Pumo are runnina.
+Mark time ECCS pumps verified
+in operation.
+<11.7 mins after RWST Lo Level
+CT#2(3)
+PO removes Lockout from 2SJ30.
+RO closes 2SJ30, 2SJ1, and 2SJ2
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 24 =====
+"
+TQ-AA-106-0204
+Paae 25 of 34
+RO reports indications of charging pump
+cavitation of fluctuating charging pump amps,
+seal iniection flow alarms, and loss of BIT flow.
+RO stoos 21 and 22 charain
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 25 =====
+TQ-AA-106-0204
+Paae 26 of 34
+~~~~~f(~l~~;~;-'·' .1Ji)·'~1:~~~I~
+TERMINATE the scenario when
+both charging pumps have been
+secured, OR if the pumps are not
+secured, after crew recognizes
+LOCA in Aux bldg, OR at Lead
+Evaluators discretion.
+Note: Some of the following steps
+may be performed depending on
+when, or if, the crew recognizes the
+charging pump cavitation, and
+should be evaluated accordingly.
+RO places 21 and 22RH29 controllers in
+Manual and ensures valves are shut.
+CRS imolements FRPs as necessa .•.
+CRS dispatches operator to tag SJ44 breakers
+ooen.
+RO verifies Phase A and Phase B are reset,
+and CA330s are ooen.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 26 =====
+TQ-AA-106-0204
+Page 27 of 34
+A Alarm Response Procedures (Various)
+B. Technical Specifications
+C. Emergency Plan (ECG)
+D. OP-AA-101-111-1003, Use of Procedures
+E. S2.0P-IO.ZZ-0004, Power Operation
+F. S2.0P-AB.ROD-0003, Continuous Rod Motion
+G. S2.0P-AB.NIS-0001, Nuclear Instrumentation System Malfunction
+H. S2.0P-AB.RC-0001, Reactor Coolant System Leak
+I. 2-EOP-TRIP-1, Reactor Trip or Safety Injection
+J. 2-EOP-LOCA-1, Loss of Reactor Coolant
+K. 2-EOP-LOCA-3, Transfer to Cold Leg Recirculation
+L. 2-EOP-FRTS-1, Response to Imminent Pressurized Thermal Shock Condition
+M. 2-EOP-FRCE-1, Response to High Containment Pressure
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 27 =====
+TQ-AA-106-0204
+Page 28 of 34
+MODE: 1 POWER: 67.5% RCS BORON: 1235 MWe 780
+SHUTDOWN SAFETY SYSTEM STATUS (5, 6 & DEFUELED):
+NA
+REACTIVITY PARAMETERS
+Control Bank D 168 steps withdrawn
+Xenon burning out at 60 pcm per hour
+Power was reduced to 45% 2 days ago for SGFP problem, which was fixed.
+MOST LIMITING LCO AND DATE/TIME OF EXPIRATION:
+3.6.2.3 action a (25 CFCU) expires in 166 hours.
+EVOLUTIONS/PROCEDURES/SURVEILLANCES IN PROGRESS:
+Power ascension @ 10% per hour IAW S2.0P-IO.ZZ-0004
+ABNORMAL PLANT CONFIGURATIONS:
+CONTROL ROOM:
+Unit 1 and Hope Creek at 100% power.
+No penalty minutes in the last 24 hrs.
+25 CFCU CIT for motor bearing replacement.
+PRIMARY:
+None
+SECONDARY:
+23 Condensate pump O/S
+RADWASTE:
+No discharges in progress
+CIRCULATING WATER/SERVICE WATER:
+None
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 28 =====
+TQ-AA-106-0204
+Page 29 of 34
+.,~ ' .~;., h' "'.
+..... .. ,:
+···~~~~~· ;;::;tl~fr:((;~J.ii~f~ \,;~
+·Sy·
+s11V1ucAT6R ReAov FoR TRAlfiJ'rNG~cHecKusi
+1. Verify simulator is in "TRAIN" Load
+2. Simulator is in RUN
+3. Overhead Annunciator Horns ON
+4. All required computer terminals in operation
+5. Simulator clocks synchronized
+6. All tagged equipment properly secured and documented
+7. TSAS Status Board up-to-date
+8. Shift manning sheet available
+9. Procedures in progress open and signed-off to proper step
+10. All OHA lamps operating (OHA Test) and burned out lamps replaced
+11. Required chart recorders advanced and ON (proper paper installed)
+12. All printers have adequate paper AND functional ribbon
+13. Required procedures clean
+14. Multiple color procedure pens available
+15. Required keys available
+16. Simulator cleared of unauthorized material/personnel
+17. All charts advanced to clean traces and chart recorders are on.
+18. Rod step counters correct (channel check) and reset as necessary
+19. Exam security set for simulator
+20. Ensure a current RCS Leak Rate Worksheet is placed by Aux Alarm Typewriter
+with Baseline Data filled out
+21. Shift logs available if required
+22. Recording Media available (if applicable)
+23. Ensure ECG classification is correct
+24. Reference verification performed with required documents available
+25. Verify phones disconnected from plant after drill.
+26. Verify EGC paperwork is marked "Training Use Only" and is current revision.
+27. Ensure sufficient copies of ECG paperwork are available.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 29 =====
+TQ-AA-106-0204
+Page 30 of 34
+,·;,'.)_·: ,''
+<;::re, '':~fTACHMENT,f,:'f,:f
+',C
+In reviewing each proposed CT, the examination team assesses the task to ensure, that it is
+essential to safety. A task is essential to safety if, in the judgment of the examination team, the
+improper performance or omission of this task by a licensee will result in direct adverse
+consequences or in significant degradation in the mitigative capability of the plant.
+The examination team determines if an automatically actuated plant system would have been
+required to mitigate the consequences of an individual's incorrect performance. If incorrect
+performance of a task by an individual necessitates the crew taking compensatory action that
+would complicate the event mitigation strategy, the task is safety significant.
+I. Examples of CTs involving essential safety actions include those for which operation or
+correct performance prevents ...
+• degradation of any barrier to fission product release
+• degraded emergency core cooling system (ECCS) or emergency power capacity
+• a violation of a safety limit
+• a violation of the facility license condition
+• incorrect reactivity control (such as failure to initiate Emergency Boration or Standby
+Liquid Control, or manually insert control rods)
+• a significant reduction of safety margin beyond that irreparably introduced by the
+scenario
+II. Examples of CTs involving essential safety actions include those for which a crew
+demonstrates the ability to ...
+• effectively direct or manipulate engineered safety feature (ESF) controls that would
+prevent any condition described in the previous paragraph.
+• recognize a failure or an incorrect automatic actuation of an ESF system or component.
+• take one or more actions that would prevent a challenge to plant safety.
+• prevent inappropriate actions that create a challenge to plant safety (such as an
+unintentional Reactor Protection System (RPS) or ESF actuation.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 30 =====
+TQ-AA-106-0204
+Page 31 of 34
+SCENARIO IDENTIFIER: 14-01 ILOT NRC ESG-1 REVIEWER: B Blose
+Initials Qualitative Attributes
+BB 1. The scenario has clearly stated objectives in the scenario.
+BB 2. The initial conditions are realistic, in that some equipment and/or instrumentation
+may be out of service, but it does not cue crew into expected events.
+BB 3. The scenario consists mostly of related events.
+BB 4. Each event description consists of:
+• the point in the scenario when it is to be initiated
+• the malfunction(s) that are entered to initiate the event
+• the symptoms/cues that will be visible to the crew
+• the expected operator actions (by shift position)
+• the event termination point
+BB 5. No more than one non-mechanistic failure (e.g., pipe break) is incorporated into
+the scenario without a credible preceding incident such as a seismic event.
+BB 6. The events are valid with regard to physics and thermodynamics.
+BB 7. Sequencing/timing of events is reasonable, and allows for the examination team to
+obtain complete evaluation results commensurate with the scenario objectives.
+BB 8. The simulator modeling is not altered.
+BB 9. All crew competencies can be evaluated.
+BB 10. The scenario has been validated.
+BB 11. If the sampling plan indicates that the scenario was used for training during the
+requalification cycle, evaluate the need to modify or replace the scenario.
+BB 12. ESG-PSA Evaluation Form is completed for the scenario at the applicable facility.
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 31 =====
+TQ-AA-106-0204
+Page 32 of 34
+Initial
+Quantitative Attributes (as per ES-301-4, and ES-301 Section 0.5.d)
+GG 3 Malfunctions after EOP entry: 1-2
+GG 2 Abnormal Events: 2-4
+GG
+1 Major Transients: 1-2
+GG
+2 EOPs entered/requiring substantive actions: 1-2
+GG
+2 EOP contingencies requiring substantive actions: 0-2
+GG
+3 EOP based Critical tasks: 2-3
+COMMENTS:
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 32 =====
+TQ-AA-106-0204
+Page 33 of 34
+14-01 ILOT NRC ESG-1
+CT#1 (CT-5) Manually start at least one low-head ECCS pump before transition out of TRIP-1.
+Bases: Failure to manually start at least one low-head ECCS pump under the postulated conditions
+constitutes misoperation or incorrect crew performance in which the crew does not prevent "degraded
+emergency core cooling system (ECCS) ... capacity." In this case, at least one low-head ECCS pump
+can be manually started from the control room. Therefore, failure to manually start a low-head ECCS
+pump also represents a failure by the crew to "demonstrate the following abilities:
+Effectively direct or manipulate engineered safety feature (ESF) controls that would prevent a
+significant reduction of safety margin (beyond that irreparably introduced by the scenario)
+Recognize a failure or an incorrect automatic actuation of an ESF system or component"
+CT#2 (CT-36} Transfer to Cold Leg Recirculation such that at least one train of ECCS is in
+operation in the recirculation mode within the following time frames.
+1. From RWST lo level alarm to initiating closed on 2SJ69 -_:::3.7 minutes
+2. From RWST lo level alarm to one containment spray pump stop ,:::5.5 minutes
+3. From RWST lo level alarm to switchover completion (includes restarting ECCS pumps if
+stopped on RWST lo-lo level} .::: 11.2 minutes.
+Bases: Omission or incorrect performance of this task results in "direct adverse consequences or
+significant degradation in the mitigative capability of the plant." Failure to transfer to cold leg
+recirculation before the RWST inventory is totally depleted results in the loss of all pumped safety
+injection and containment spray when the RWST empties. Provided that transfer to cold leg
+recirculation is possible (as is postulated in the plant conditions), a failure to transfer resulting in loss
+of pumped injection and containment constitutes misoperation or incorrect crew performance which
+fails to prevent "degraded ECCS ... capacity." It also constitutes "a significant reduction of safety
+margin beyond that irreparably introduced by the scenario. "Failure to transfer to cold leg recirculation
+under the postulated plant conditions can result in unnecessary challenges to the following CSFs:
+· Core cooling · Containment
+Thus, failure to transfer represents a demonstrated inability by the crew to "take one or more
+actions that would prevent a challenge to plant safety."
+CT#3 Trip the cavitating charging pump prior to pump/system piping damage.
+Bases: Failure to trip a cavitating charging pump during the transfer to cold leg recirculation when
+indications of cavitation are present, leads to the possibility of system damage and the advent of a
+loss of coolant outside the containment building. (As is the case in this scenario.)
+PSEG Restricted - Possession Requires Specific Permission from Nuclear Training
+
+===== PAGE 33 =====
+TQ-AA-106-0204
+Page 34 of 34
+EVENTS LEADING TO CORE DAMAGE
+Y/N Event Y/N Event
+N TRANSIENTS with PCS Unavailable N Loss of Service Water
+N Steam Generator Tube Rupture N Loss ofCCW
+N Loss of Offsite Power N Loss of Control Air
+N Loss of Switchgear and Pen Area Ventilation N Station Black Out
+--
+y LOCA
+COMPONENT/TRAIN/SYSTEM UNAVAILABILITY THAT INCREASES CORE DAMAGE
+FREQUENCY
+COMPONENT, SYSTEM, OR
+Y/N COMPONENT, SYSTEM, OR TRAIN Y/N
+TR~ll\I
+N Containment Sump Strainers N Gas Turbine
+N SSWS Valves to Turbine Generator Area N Any Diesel Generator
+N RHR Suction Line valves from Hot Leg N Auxiliary Feed Pump
+N CVCS Letdown line Control and Isolation Valves N SBO Air Compressor
+OPERATOR ACTIONS IMPORTANT IN PREVENTING CORE DAMAGE
+Y/N OPERATOR ACTION
+N Restore AC power during SBO
+N Connect to gas turbine
+N Trip Reactor and RCPs after loss of component cooling system
+Y Re-align RHR system for re-circulation
+N Un-isolate the available CCW Heat Exchanger
+N Isolate the CVCS letdown path and transfer charging suction to RWST
+N Cooldown the RCS and depressurize the system
+N Isolate the affected Steam Generator that has the tube rupture(s)
+N Early depressurize the RCS
+N Initiate feed and bleed
+Complete this evaluation form for each ESG.

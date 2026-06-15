@@ -24,8 +24,20 @@ SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: w
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q10</div>
+The <span class="hi-exam">R19 SGBD radiation monitors are NOT accurate immediately following a unit trip</span> — per the note under the AB.SG-0001 entry conditions, a 2R19 alarm right after a Rx trip should not be the sole basis for entering the SG tube leak procedure or for a manual SI. The proper response to OHA A-6 RMS HI RAD with 2R19C (23 SG Blowdown) in alarm is to <span class="hi-exam">enter AB.RAD-0001 to verify the alarm while continuing in EOP-TRIP-2</span>.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q62</div>
 1R1A (Control Room Area) radiation monitor in alarm: <span class="hi-trap">does NOT automatically actuate CAV in AP Mode</span>. Requires manual actuation — press ACCIDENT PRESSURIZED pushbutton at 1RP2 to actuate BOTH units' CAV into AP Mode. Emergency intake dampers open on the unaffected unit.
+</div>
+
+### Letdown Line Failed-Fuel Monitor (R31)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q19</div>
+<span class="hi-exam">2R31 is the Letdown Line-Failed Fuel Process Rad Monitor</span> (RMS channel monitoring CVCS letdown for fuel-clad failure). A rising 2R31 trend indicates increasing RCS activity, but the monitor itself <span class="hi-trap">cannot distinguish a crud burst from failed fuel by its rate of rise</span> — there is no procedural guidance to judge the source by how fast the indication rises. Per AB.RC-0002, the cause is determined by having a <span class="hi-exam">Shift Chemistry Technician perform an isotopic (radiological) analysis of the RCS</span>: a crud burst shows different radionuclide concentrations than failed fuel. <span class="hi-trap">Maximizing letdown flow expedites cleanup of valid activity (not source determination); Radiation Protection surveys are for personnel protection/reposting (not source determination).</span>
 </div>
 
 ### Plant Vent Effluent Monitor (R41)
@@ -181,11 +193,38 @@ Process radiation monitor Source Check duration: <span class="hi-exam">activate 
 <span class="hi-exam">Containment Radiation Monitors (e.g., 2R12A) are NOT required to be operable for Mode 6 or Fuel Movement or Core Alts per Tech Specs.</span> A failure of 2R12A causing a Containment Ventilation Isolation signal does NOT by itself require suspension of fuel movement. <span class="hi-trap">Trap: a CVI signal looks like an emergency response, but the rad monitor is not Tech-Spec required for refueling, so its failure has no LCO impact on fuel movement.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q49</div>
+A loss of SFP cooling that lets SFP temperature climb toward 150°F drives <span class="hi-exam">spent-fuel off-gassing, raising radiation at the FHB charcoal filter</span>. The 2R32 Fuel Handling Crane Area Monitor does not preclude lowering a fuel bundle. See [[Spent Fuel Pool]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q60</div>
+When a Containment Pressure Relief is initiated with NORMAL containment radiation: <span class="hi-exam">1R12A (Containment Gas Effluent) stays constant (already sampling containment), 1R41B (Plant Vent Noble Gas Intermediate Range) stays constant (no sample flow until 1R41A nears full scale), and 1R41D (Plant Vent Noble Gas Release Rate) RISES</span> (computes release rate from on-range monitors × plant-vent flow; also auto-terminates release on high effluent).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q73</div>
+Area Radiation Monitors with automatic ventilation actions: <span class="hi-exam">2R9 (New Fuel Storage) on its High Radiation Alarm realigns FHB ventilation through the charcoal filters and starts both FHB Exhaust fans</span>. Distractors: 2R32A (Fuel Handling Crane) only prevents fuel-crane motion except downward; 2R52 (Liquid PASS Room) only lights an alarm outside the PASS room; 2R44A (Containment High Range) has no automatic function.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q98</div>
+On a 2R31 (Letdown Line Monitor) WARNING and entry into AB.RC-0002: the CRS <span class="hi-exam">directs a Radiation Protection Technician to take surveys to determine if radiation levels have changed access requirements</span> (so personnel are promptly notified). Chemistry sampling — not RP surveys — confirms the 2R31 rise; the hourly isotopic analysis is for gamma to determine DEI for trending.
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]]
-- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
-- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]], [[Steam Generator & Blowdown]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[AB.RC-0002 — High Activity in the RCS]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[AB.SG-0001 — Steam Generator Tube Leak]]
+- Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
+- Related exams: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+  - [[2015 Q10]] — R19 SGBD monitors not accurate immediately post-trip / enter AB.RAD-0001 to verify, not manual SI
+  - [[2015 Q19]] — 2R31 Letdown Line Failed-Fuel monitor / crud burst vs failed fuel determined by Shift Chemistry isotopic RCS analysis (AB.RC-0002)
+  - [[2015 Q49]] — loss of SFP cooling: rising radiation at FHB charcoal filter from spent-fuel off-gassing as SFP temp approaches 150°F
+  - [[2015 Q60]] — containment pressure relief: 1R41D (release rate) rises; 1R12A and 1R41B constant with normal containment radiation
+  - [[2015 Q73]] — 2R9 (New Fuel Storage) ARM High Rad Alarm realigns FHB ventilation through charcoal filters and starts both FHB Exhaust fans
+  - [[2015 Q98]] — 2R31 WARNING / AB.RC-0002: direct RP Tech surveys to determine if access requirements changed (prompt personnel notification)
   - [[2016 Q14]] — R53 Main Steamline N-16 monitor / FIRST indication of SGTL at 100% power
   - [[2019 Q8]] — 2R17A/B high alarm auto-closes 2CC149 (CCW Surge Tank Vent Valve)
   - [[2019 Q25]] — 2R41 Channel D reads in µCi/sec for release determination
@@ -210,5 +249,5 @@ Process radiation monitor Source Check duration: <span class="hi-exam">activate 
   - [[2016 Q68]] — Containment Rad Monitors (2R12A) NOT required operable for Mode 6 / Fuel Movement / Core Alts
   - [[2016 Q88]] — 2R5 alarm 11 mR/hr / dropped fuel: auto swap FHB vent to charcoal + start both Exhaust Fans / 2R5 does NOT lock out crane
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]]
 - Related exam: [[2016 NRC Operating Exam]]

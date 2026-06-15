@@ -10,6 +10,7 @@ aliases:
   - Protective Action Recommendations
   - RPSA
   - Primary Communicator Log
+  - Secondary Communicator Log
 ---
 
 # EP-SA-111 — Emergency Classification and Protective Action
@@ -66,9 +67,28 @@ Per EP-SA-111-F6 Attachment 6, the fifteen-minute clock ends when the contacted 
 Alternate path JPM: Delaware State Police cannot be reached via Primary (NETS 5406), Secondary (302-659-2341), or NAWAS backup. Operator must recognize notification is <span class="hi-exam">NOT SUCCESSFULLY COMPLETED</span> and proceed to Steps 15.f-g to notify Delaware counties (New Castle County via NETS 5408, Kent County via NETS 5409) directly. <span class="hi-exam">Time-critical: all notifications must be completed within 15 minutes.</span> The caller reads <span class="hi-exam">sections I thru V of the ICMF form</span> correctly to each contacted organization and waits for repeat back.
 </div>
 
+## Secondary Communicator Notifications (Form F8)
+
+Provides the Secondary Communicator (Attachment 8 Secondary Communicator Log) the procedure for backing up the Primary Communicator during an emergency — assisting with the off-site state/local notifications, making the required NRC notification, and supporting activation of the Emergency News Center (ENC).
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 RO-A4</div>
+Secondary Communicator duties (EP-SA-111-F8, Attachment 8 Secondary Communicator Log) during a declared <span class="hi-exam">ALERT</span> — Unit 2 reactor initially failed to trip on a manual trip signal, tripped on the second trip handle, unit stable in MODE 3, <span class="hi-exam">ENC not yet activated</span>. The Secondary Communicator backs up the Primary Communicator's 15-minute off-site notifications and completes the Secondary Communicator Log. (Admin JPM — performed in the Classroom.)
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q75</div>
+State notifications (Delaware and New Jersey): the Primary Communicator's PRIMARY method is the <span class="hi-exam">NETS (Nuclear Emergency Telecommunications System) closed-circuit phones</span> (ESSX is the backup), and notifications must be made <span class="hi-exam">within 15 minutes of an emergency declaration</span> — even when a lower-classification emergency is already in progress.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q100</div>
+<span class="hi-exam">A General Emergency initial declaration (ICMF) requires a Protective Action Recommendation (PAR)</span> — a Rapidly Progressing Severe Accident PAR, a Hostile Action PAR, or a default PAR (EP-SA-111-F4, Attachment 4) — one of which must be made. A wind shift does not drive a PAR upgrade if a Security Event caused the GE; a "radiological release" is any release above normal; and the PAR is not based on Emergency Coordinator judgment of exceeding 10CFR100 limits.
+</div>
+
 ## Connections
 
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-101 — Emergency Classification and ICMF]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
-- Related exam questions: [[2016 Q71]], [[2016 Q81]], [[2019 Q100]]
-- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM RO-A4]], [[2022 JPM SRO-A5]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2016 Q71]], [[2016 Q81]], [[2019 Q100]], [[2015 Q75]], [[2015 Q100]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM RO-A4]], [[2022 JPM SRO-A5]], [[2015 JPM RO-A4]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]]

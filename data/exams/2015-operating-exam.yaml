@@ -1,0 +1,256 @@
+exam: 2015
+type: operating
+ilot_class: "14-01"
+facility: "Salem Units 1 & 2"
+written_exam_date: "12/21/2015"   # per ES-401 outline; operating-test administration date not stated in source
+source_pdf: "raw/exams/2015/final-operating.pdf"
+# NOTE: This YAML is documentation metadata for the operating test (NOT a quiz-bank record;
+# the written-exam importer only reads *-written-exam.yaml). Core fields below are verified
+# against the source PDF cover pages. Page ranges are 1-based inclusive into final-operating.pdf.
+# Per-JPM K/A statements, procedures, and step content are populated as each article is authored.
+
+jpms:
+  - id: "RO-A1.a"
+    title: "TCAF Adverse Environmental Conditions"
+    type: Admin-RO
+    location: Classroom
+    procedure: "SC.OP-AB.ZZ-0001(Q)"   # Adverse Environmental Conditions, Rev. 18
+    pages: "1-8"
+    ka: "2.1.25"
+    ka_importance: 3.9
+    applicability: RO/SRO          # cover: RO X, SRO X
+    time_critical: false           # cover: Time Period Identified For Time Critical Steps = N/A
+    alternate_path: false          # cover: Alternate Path box blank
+    source: New                    # references SC.OP-AB.ZZ-0001(Q) Rev. 18
+    estimated_time_min: 30         # cover: Validated JPM Completion Time = 30 min
+    task_number: "N1140430401"
+    split_pdf: "2015-jpm-ro-a1a.pdf"
+  - id: "RO-A1.b"
+    title: "Determine the CSD boron concentration and calculate the requisite boron addition for a natural circulation cooldown."
+    type: Admin-RO
+    location: Classroom
+    procedure: "2-EOP-TRIP-4"      # Natural Circulation Cooldown, Rev. 22
+    pages: "9-14"
+    ka: "2.1.43"
+    ka_importance: 4.1
+    applicability: RO              # cover: RO X only
+    time_critical: false           # cover: Time Period Identified For Time Critical Steps = N/A
+    alternate_path: false          # cover: Alternate Path box blank
+    source: New                    # references 2-EOP-TRIP-4 Rev. 22, Unit 2 Curve Book
+    estimated_time_min: 15         # cover: Validated JPM Completion Time = 15 min
+    task_number: "1150050501"
+    split_pdf: "2015-jpm-ro-a1b.pdf"
+  - id: "RO-A2"
+    title: "Perform a Centrifugal Charging Pump Operability Surveillance"
+    type: Admin-RO
+    location: Classroom
+    procedure: "S1.OP-ST.CVC-0003"  # Inservice Testing 11 Charging Pump, Rev. 25 (Accept. Criteria S1.RA-ST.CVC-0003 Rev. 13)
+    pages: "15-20"
+    ka: "2.2.37"                    # cover: K/A NUMBER 2.2.37 (was missing in prior YAML)
+    ka_importance: 3.9
+    applicability: RO/SRO          # cover: RO X, SRO X
+    time_critical: false           # cover: Time Period Identified For Time Critical Steps = N/A
+    alternate_path: false          # cover: Alternate Path box blank
+    source: New                    # references S1.OP-ST.CVC-0003 Rev. 25
+    estimated_time_min: 30         # cover: Validated JPM Completion Time = 30 min
+    task_number: "N0040370201"
+    split_pdf: "2015-jpm-ro-a2.pdf"
+  - id: "RO-A4"
+    title: "Perform Duties of Secondary Communicator During an Alert"   # confirmed from cover page (was garbled in OCR)
+    type: Admin-RO
+    location: Classroom            # cover form says "Simulator" but this is an administrative log-completion JPM; per skill, Admin JPMs = Classroom (flagged)
+    procedure: "EP-SA-111-F8"      # Attachment 8 Secondary Communicator Log, Rev. 02
+    pages: "21-22"
+    ka: "2.4.43"                   # confirmed from cover (was missing/garbled)
+    ka_importance: 3.2             # confirmed from cover Importance Factor
+    applicability: RO              # cover: RO X only (SRO box blank)
+    time_critical: false           # cover: Time Period Identified For Time Critical Steps = N/A
+    alternate_path: false          # cover: Alternate Path box blank
+    source: New                    # references EP-SA-111-F8 Rev. 02
+    estimated_time_min: 8          # cover: Validated JPM Completion Time = 8 min
+    task_number: "N1240100501"     # confirmed from cover (was truncated "N12401" in OCR)
+    split_pdf: "2015-jpm-ro-a4.pdf"
+    notes: "Cover EVALUATION SETTING/METHOD reads 'Simulator', but the task is administrative (complete EP-SA-111-F8 Secondary Communicator Log); location recorded as Classroom per skill rule for Admin JPMs. Split PDF contains only the cover/metadata page + student IC/cue handout (no step table — the F8 performance sheet is the non-public, site-specific EP form)."
+  - id: "SRO-A1.a"
+    title: "Determine the required actions based on abnormal Secondary Plant chemistry conditions."
+    type: Admin-SRO
+    location: Classroom
+    pages: "23-29"
+    ka: "2.1.34"
+    ka_importance: 3.5
+    task_number: "N1140530402"
+    split_pdf: "2015-jpm-sro-a1a.pdf"
+  - id: "SRO-A1.b"
+    title: "Determine the TSAS(s) for a dropped rod and complete the appropriate log"
+    type: Admin-SRO
+    location: Classroom
+    pages: "30-38"
+    ka: "2.1.18"
+    ka_importance: 3.8
+    task_number: "1120700302"
+    split_pdf: "2015-jpm-sro-a1b.pdf"
+  - id: "SRO-A2"
+    title: "Determine Component Operability From Inservice Test Results"
+    type: Admin-SRO
+    location: Classroom
+    pages: "39-47"
+    ka: "2.2.37"
+    ka_importance: 4.6
+    task_number: "N1230300302"
+    split_pdf: "2015-jpm-sro-a2.pdf"
+  - id: "SRO-A3"
+    title: "Select Release Path for Radioactive Liquid Waste Release"
+    type: Admin-SRO
+    location: Classroom
+    pages: "48-53"
+    ka_importance: 3.8
+    task_number: "N0680070302"
+    split_pdf: "2015-jpm-sro-a3.pdf"
+  - id: "SRO-A4.1"
+    title: "Classify an event and complete an ICMF within the regulatory committed time limit (ESG-1)"
+    type: Admin-SRO
+    location: Classroom
+    pages: "54-61"
+    ka: "2.4.41"
+    ka_importance: 4.6
+    task_number: "1240020502"
+    split_pdf: "2015-jpm-sro-a4-esg1.pdf"
+  - id: "SRO-A4.2"
+    title: "Classify an event and complete an ICMF within the regulatory committed time limit (ESG-2)"
+    type: Admin-SRO
+    location: Classroom
+    pages: "62-68"
+    ka: "2.4.41"
+    task_number: "1240020502"
+    split_pdf: "2015-jpm-sro-a4-esg2.pdf"
+  - id: "SRO-A4.3"
+    title: "Classify an event and complete an ICMF within the regulatory committed time limit (ESG-3)"
+    type: Admin-SRO
+    location: Classroom
+    pages: "69-75"
+    ka: "2.4.41"
+    ka_importance: 4.6
+    task_number: "1240020502"
+    split_pdf: "2015-jpm-sro-a4-esg3.pdf"
+  - id: "Sim-a"
+    title: "Take corrective actions for a dropped control rod(s)"
+    type: Simulator
+    location: Simulator
+    pages: "76-83"
+    ka: "003 AA2.03"
+    ka_importance: 3.6
+    task_number: "1140330401"
+    split_pdf: "2015-jpm-sim-a.pdf"
+  - id: "Sim-b"
+    title: "Respond to Loss of VCT level instrument which requires initiating a manual makeup to VCT."
+    type: Simulator
+    location: Simulator
+    pages: "84-94"
+    ka_importance: 3.4
+    task_number: "0040130101"
+    split_pdf: "2015-jpm-sim-b.pdf"
+  - id: "Sim-c"
+    title: "Raise ECCS Accumulator Level and Pressure"
+    type: Simulator
+    location: Simulator
+    pages: "95-106"
+    ka: "006 A4.07"
+    ka_importance: 4.4
+    task_number: "0065010101"
+    split_pdf: "2015-jpm-sim-c.pdf"
+  - id: "Sim-d"
+    title: "Perform Main Turbine Valve Testing"
+    type: Simulator
+    location: Simulator
+    pages: "107-117"
+    ka_importance: 4.3
+    task_number: "N0450130201"
+    split_pdf: "2015-jpm-sim-d.pdf"
+  - id: "Sim-e"
+    title: "Transfer A 4 KV Group Bus To The Alternate Power Supply (SPT to APT)"
+    type: Simulator
+    location: Simulator
+    pages: "118-124"
+    ka: "062 A4.01"
+    ka_importance: 3.3
+    task_number: "N0620110101"
+    split_pdf: "2015-jpm-sim-e.pdf"
+  - id: "Sim-f"
+    title: "Take Corrective Action For A Nuclear Instrumentation System Malfunction (Energize Source Range NIS IAW TRIP-2 w/one under compensated IR channel)"
+    type: Simulator
+    location: Simulator
+    pages: "125-132"
+    ka: "EPE 007 EA1.05"   # verified from cover (was truncated "EA1.0" in prior YAML)
+    ka_importance: 4.0
+    task_number: "N1140230401"
+    split_pdf: "2015-jpm-sim-f.pdf"
+  - id: "Sim-g"
+    title: "Take Corrective Action For A Component Cooling Water System Abnormality"
+    type: Simulator
+    location: Simulator
+    pages: "133-148"
+    ka: "008 A4.01"
+    ka_importance: 3.3
+    split_pdf: "2015-jpm-sim-g.pdf"
+  - id: "Sim-h"
+    title: "TCAF Loss of RHR cooling"
+    type: Simulator
+    location: Simulator
+    pages: "149-157"
+    ka: "APE025 AA1.01/AA1.03"   # verified from cover (ka was missing in prior YAML)
+    ka_importance: 3.6
+    task_number: "N1140300401"
+    split_pdf: "2015-jpm-sim-h.pdf"
+  - id: "IP-i"
+    title: "Perform Containment Spray Valve Verification (Flush the Containment Spray Eductor)"
+    type: In-Plant
+    location: In-Plant
+    pages: "158-166"
+    ka: "026 2.2.12"
+    ka_importance: 3.7
+    task_number: "N0260070201"
+    split_pdf: "2015-jpm-ip-i.pdf"
+  - id: "IP-j"
+    title: "Perform Actions For Reactor Coolant Pump Seal Cooling Restoration"
+    type: In-Plant
+    location: In-Plant
+    pages: "167-175"
+    ka: "039 A1.09"
+    ka_importance: 2.8
+    task_number: "N1150460501"
+    split_pdf: "2015-jpm-ip-j.pdf"
+  - id: "IP-k"
+    title: "Conduct an Authorized Waste Gas Release (Swap in-service GDT's and Place a Gas Decay Tank in Holdup)"
+    type: In-Plant
+    location: In-Plant
+    pages: "176-182"
+    ka: "071 Gen 2.3.11"
+    ka_importance: 3.8
+    task_number: "N0715070104"
+    split_pdf: "2015-jpm-ip-k.pdf"
+
+scenarios:
+  - number: 1
+    id: "ESG-1"
+    pages: "183-216"
+    expected_duration_min: 80
+    revision: "00"
+    split_pdf: "2015-scenario-01.pdf"
+  - number: 2
+    id: "ESG-2"
+    pages: "217-249"
+    expected_duration_min: 65
+    revision: "00"
+    split_pdf: "2015-scenario-02.pdf"
+  - number: 3
+    id: "ESG-3"
+    pages: "250-284"
+    expected_duration_min: 90
+    revision: "00"
+    split_pdf: "2015-scenario-03.pdf"
+  - number: 4
+    id: "ESG-4"
+    pages: "285-314"
+    expected_duration_min: 65
+    revision: "00"
+    split_pdf: "2015-scenario-04.pdf"

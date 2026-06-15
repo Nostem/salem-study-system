@@ -39,9 +39,19 @@ OHA E-29 (SR & IR TRIP BYP): annunciates when <span class="hi-exam">the LEVEL TR
 OHA E-20 (PZR HTR ON LVL HI): alarms when PZR level is <span class="hi-exam">5% or more above program level</span>, energizing backup PZR heaters. The ARP for E-20 directs crew to <span class="hi-exam">REDUCE charging IAW S2.OP-SO.CVC-0001</span> (normal operations procedure, NOT AB.CVC-0001). <span class="hi-trap">AB.CVC-0001 (Loss of Charging) addresses charging flow being REDUCED, not increased. A failed-high Charging Master Flow Controller causing increasing charging flow is addressed by the normal SOP, not the abnormal.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q28</div>
+OHA E-48 (ROD BOTTOM): illuminates when all rod banks are on bottom; during a reactor startup it <span class="hi-exam">clears once Control Bank A is withdrawn past 20 steps</span>. Control Banks B, C, and D are bypassed by their Rod Bottom Bypass Bistable Modules below 35 steps. See [[Control Rod Drive]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q38</div>
+OHA E-20 (PZR HTR ON LVL HI) energizes backup PZR heaters at 5% above program. With the controlling PZR level channel failed low (0%), <span class="hi-exam">backup heaters should NOT be energized — the 17% low-level cutoff keeps them OFF</span>. See [[Pressurizer Level & Press Control]], [[AB.CVC-0001 — Loss of Charging]].
+</div>
+
 ## Connections
 
 - Related systems: [[Control Rod Drive]], [[CVCS]], [[Excore NIs]], [[Pressurizer Level & Press Control]]
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[S2.OP-SO.CVC-0001 — CVCS Normal Operations]]
-- Related exam questions: [[2016 Q13]], [[2019 Q82]], [[2020 Q19]], [[2020 Q22]], [[2022 Q56]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2016 Q13]], [[2019 Q82]], [[2020 Q19]], [[2020 Q22]], [[2022 Q56]], [[2015 Q28]], [[2015 Q38]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]]

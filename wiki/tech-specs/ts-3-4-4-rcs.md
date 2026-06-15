@@ -522,11 +522,16 @@ LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE 
 21 SG tube leak with leakage &gt;<span class="hi-exam">150 gpd primary-to-secondary</span> through a single SG. CRS enters <span class="hi-exam">LCO 3.4.7.2.c — Action Level 3</span> per AB.SG-0001: be &lt;50% power within 1 hour and Hot Standby within 6 hours. Leak escalates to a tube rupture before completion of the controlled shutdown.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q87</div>
+<span class="hi-exam">TS 3.4.5 action b: a PORV isolated by shutting its Block Valve (e.g., a failed-open 2PR1) requires a unit shutdown if the PORV is not restored to operable within 72 hours</span>. A leaking PORV isolated by its Block Valve (with power maintained to the Block Valve) does not require shutdown. See [[Pressurizer Level & Press Control]].
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]], [[2015 Q87]]
 - Related JPMs: [[2016 JPM RO-A1-1]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]

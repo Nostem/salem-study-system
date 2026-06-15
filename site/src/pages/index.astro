@@ -92,9 +92,12 @@ const examYears = [
   { year: '2020', written: true, operating: true, qCount: examCounts['2020'] || 0, jpmCount: 20, scenarioCount: 5, ilot: '19-01' },
   { year: '2019', written: true, operating: true, qCount: examCounts['2019'] || 0, jpmCount: 20, scenarioCount: 3, ilot: '17-01' },
   { year: '2018', written: true, operating: true, qCount: examCounts['2018'] || 0, jpmCount: 20, scenarioCount: 2, ilot: '16-01' },
+  { year: '2017', written: false, operating: true, qCount: examCounts['2017'] || 0, jpmCount: 0, scenarioCount: 2, ilot: '15-01' },
+  { year: '2016', written: true, operating: true, qCount: examCounts['2016'] || 0, jpmCount: 21, scenarioCount: 3, ilot: '15-01' },
+  { year: '2015', written: true, operating: true, qCount: examCounts['2015'] || 0, jpmCount: 22, scenarioCount: 4, ilot: '14-01' },
 ];
 
-const writtenPdfYears = new Set(['2022', '2020', '2019', '2018']);
+const writtenPdfYears = new Set(['2022', '2020', '2019', '2018', '2016', '2015']);
 
 // JPM slug lists per year for expandable sections
 const jpmSlugs: Record<string, { type: string; slug: string; label: string }[]> = {
@@ -208,6 +211,53 @@ const jpmSlugs: Record<string, { type: string; slug: string; label: string }[]> 
     { type: 'In-Plant', slug: '2018-jpm-ip-j', label: 'IP-j' },
     { type: 'In-Plant', slug: '2018-jpm-ip-k', label: 'IP-k' },
   ],
+  '2016': [
+    { type: 'RO Admin', slug: '2016-jpm-ro-a1a', label: 'RO-A1a' },
+    { type: 'RO Admin', slug: '2016-jpm-ro-a1b', label: 'RO-A1b' },
+    { type: 'RO Admin', slug: '2016-jpm-ro-a2', label: 'RO-A2' },
+    { type: 'RO Admin', slug: '2016-jpm-ro-a3', label: 'RO-A3' },
+    { type: 'SRO Admin', slug: '2016-jpm-sro-a1a', label: 'SRO-A1a' },
+    { type: 'SRO Admin', slug: '2016-jpm-sro-a1b', label: 'SRO-A1b' },
+    { type: 'SRO Admin', slug: '2016-jpm-sro-a2', label: 'SRO-A2' },
+    { type: 'SRO Admin', slug: '2016-jpm-sro-a3', label: 'SRO-A3' },
+    { type: 'SRO Admin', slug: '2016-jpm-sro-a4-esg1', label: 'SRO-A4-ESG1' },
+    { type: 'SRO Admin', slug: '2016-jpm-sro-a4-esg2', label: 'SRO-A4-ESG2' },
+    { type: 'Simulator', slug: '2016-jpm-sim-a', label: 'Sim-a' },
+    { type: 'Simulator', slug: '2016-jpm-sim-b', label: 'Sim-b' },
+    { type: 'Simulator', slug: '2016-jpm-sim-c', label: 'Sim-c' },
+    { type: 'Simulator', slug: '2016-jpm-sim-d', label: 'Sim-d' },
+    { type: 'Simulator', slug: '2016-jpm-sim-e', label: 'Sim-e' },
+    { type: 'Simulator', slug: '2016-jpm-sim-f', label: 'Sim-f' },
+    { type: 'Simulator', slug: '2016-jpm-sim-g', label: 'Sim-g' },
+    { type: 'Simulator', slug: '2016-jpm-sim-h', label: 'Sim-h' },
+    { type: 'In-Plant', slug: '2016-jpm-ip-i', label: 'IP-i' },
+    { type: 'In-Plant', slug: '2016-jpm-ip-j', label: 'IP-j' },
+    { type: 'In-Plant', slug: '2016-jpm-ip-k', label: 'IP-k' },
+  ],
+  '2015': [
+    { type: 'RO Admin', slug: '2015-jpm-ro-a1a', label: 'RO-A1a' },
+    { type: 'RO Admin', slug: '2015-jpm-ro-a1b', label: 'RO-A1b' },
+    { type: 'RO Admin', slug: '2015-jpm-ro-a2', label: 'RO-A2' },
+    { type: 'RO Admin', slug: '2015-jpm-ro-a4', label: 'RO-A4' },
+    { type: 'SRO Admin', slug: '2015-jpm-sro-a1a', label: 'SRO-A1a' },
+    { type: 'SRO Admin', slug: '2015-jpm-sro-a1b', label: 'SRO-A1b' },
+    { type: 'SRO Admin', slug: '2015-jpm-sro-a2', label: 'SRO-A2' },
+    { type: 'SRO Admin', slug: '2015-jpm-sro-a3', label: 'SRO-A3' },
+    { type: 'SRO Admin', slug: '2015-jpm-sro-a4-esg1', label: 'SRO-A4-ESG1' },
+    { type: 'SRO Admin', slug: '2015-jpm-sro-a4-esg2', label: 'SRO-A4-ESG2' },
+    { type: 'SRO Admin', slug: '2015-jpm-sro-a4-esg3', label: 'SRO-A4-ESG3' },
+    { type: 'Simulator', slug: '2015-jpm-sim-a', label: 'Sim-a' },
+    { type: 'Simulator', slug: '2015-jpm-sim-b', label: 'Sim-b' },
+    { type: 'Simulator', slug: '2015-jpm-sim-c', label: 'Sim-c' },
+    { type: 'Simulator', slug: '2015-jpm-sim-d', label: 'Sim-d' },
+    { type: 'Simulator', slug: '2015-jpm-sim-e', label: 'Sim-e' },
+    { type: 'Simulator', slug: '2015-jpm-sim-f', label: 'Sim-f' },
+    { type: 'Simulator', slug: '2015-jpm-sim-g', label: 'Sim-g' },
+    { type: 'Simulator', slug: '2015-jpm-sim-h', label: 'Sim-h' },
+    { type: 'In-Plant', slug: '2015-jpm-ip-i', label: 'IP-i' },
+    { type: 'In-Plant', slug: '2015-jpm-ip-j', label: 'IP-j' },
+    { type: 'In-Plant', slug: '2015-jpm-ip-k', label: 'IP-k' },
+  ],
 };
 
 const scenarioSlugs: Record<string, string[]> = {
@@ -216,6 +266,9 @@ const scenarioSlugs: Record<string, string[]> = {
   '2020': ['2020-scenario-01', '2020-scenario-02', '2020-scenario-03', '2020-scenario-04', '2020-scenario-05'],
   '2019': ['2019-scenario-01', '2019-scenario-03', '2019-scenario-04'],
   '2018': ['2018-scenario-01', '2018-scenario-02'],
+  '2017': ['2017-scenario-07', '2017-scenario-08'],
+  '2016': ['2016-scenario-01', '2016-scenario-02', '2016-scenario-03'],
+  '2015': ['2015-scenario-01', '2015-scenario-02', '2015-scenario-03', '2015-scenario-04'],
 };
 ---
 

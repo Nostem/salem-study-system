@@ -49,10 +49,15 @@ RVLIS Train A power supply: <span class="hi-exam">2B Vital Instrument Bus powers
 TRIP-6 Rapid Cooldown Step 10 minimum: <span class="hi-exam">RVLIS Full Range >= <span class="val-alarm">70%</span></span> (changed from 74% in Dec 2015 EOP revision). Purpose: <span class="hi-exam">limit steam entering the RCS hot legs</span> — preventing void migration to the top of the SG U-tubes that would disrupt the natural circulation flow circuit. <span class="hi-trap">Trap: 70% is NOT for "ensuring positive level indication of RCS" — it is specifically tied to keeping voids out of the SG U-tubes and preserving natural circulation.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q79</div>
+During SGTR RCP-restart evaluation, with <span class="hi-exam">RVLIS upper range &lt;100%, PZR level and PZR-saturated conditions are required (along with RCS subcooling)</span> before restarting a RCP. See [[RCPs]].
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Pressurizer Level & Press Control]], [[115V AC]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-TRIP-4 — Natural Circulation]], [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
-- Related exam questions: [[2016 Q25]], [[2019 Q47]], [[2019 Q85]], [[2020 Q16]], [[2020 Q24]], [[2020 Q84]], [[2022 Q84]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2016 Q25]], [[2019 Q47]], [[2019 Q85]], [[2020 Q16]], [[2020 Q24]], [[2020 Q84]], [[2022 Q84]], [[2015 Q79]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]]

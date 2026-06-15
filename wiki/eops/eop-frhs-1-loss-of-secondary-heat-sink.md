@@ -41,6 +41,11 @@ Steps 7.2-7.5 condensate pump feed: select one SG (22 or 24 preferred — <span 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q23</div>
+Basis for the CAUTION before the bleed-and-feed steps ("TO ESTABLISH RCS HEAT REMOVAL BY RCS BLEED AND FEED, <span class="hi-exam">STEPS 24 THRU 29 MUST BE PERFORMED QUICKLY AND WITHOUT INTERRUPTION</span>"): per the FRHS Basis document, <span class="hi-exam">delay allows further degradation of cooling, followed by an RCS pressure rise, and core uncovery may be greater because ECCS flow is limited by (reduced by) RCS pressure</span>. <span class="hi-trap">Traps: (A) stopping RCPs does not terminate ALL heat removal — some cooling remains while water is left in the SGs; (B) there are no alternative steps; (D) ECCS flow is reduced (not increased) by the delay and the PZR will not go solid — the concern is reduced ECCS flow at higher RCS pressure, not PORV/code-safety-valve water-passage damage.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q64</div>
 Step 23.2 bleed and feed ECCS prerequisite: the crew CAN proceed to establish the RCS Bleed Path with only <span class="hi-exam">1 Charging Pump AND 1 SI Pump running</span> — the crew continues attempts to start additional pumps while establishing the bleed path. Step 24 bleed path: crew will open <span class="hi-exam">BOTH PORVs ONLY</span>. <span class="hi-trap">Reactor Head Vents are NOT part of the standard bleed path — they are an alternate bleed path if a PORV fails to open. Also, the procedure does NOT require BOTH SI Pumps and BOTH Charging Pumps before proceeding — 1 of each is sufficient.</span>
 </div>
@@ -111,11 +116,21 @@ MSLB at mixing bottle, Auto SI initiated, Main Turbine manually tripped (auto tr
 While in EOP-LOSC-2 with all SGs faulted and RCS cooldown rate &gt;100°F/hr, <span class="hi-exam">STA reports RED path on Heat Sink CFST</span>; CRS transitions briefly to FRHS-1, verifies <span class="hi-exam">operator action (AFW throttling per CT#2 to ≥1.0E4 lbm/hr) was the cause of the RED path</span>, and returns to procedure in effect (LOSC-2). Demonstrates the FRHS-1 entry/exit pattern: when an FRP RED is reached because the operator is actively executing a CT to limit cooldown, the cause is verified and the crew returns to the procedure in effect rather than executing FRHS-1 actions.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q83</div>
+FRHS-1 is entered on a RED path of <span class="hi-exam">no AFW flow and SG WR level &lt;9%</span>; feed-and-bleed is then <span class="hi-exam">initiated immediately</span> (bleed-and-feed criteria SG WR &lt;36% adverse, not 32% normal). FRHS-1 is a higher-priority RED path than FRTS-1 (thermal shock). See [[AFW]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+Loss of all AFW after Rx trip (21 AFW pump trips 4 min post-trip, 23 AFW pump overspeeds/trips, 22 AFW pump fails to start) with <span class="hi-exam">no centrifugal charging pumps available</span> → CFST Heat Sink <span class="hi-exam">RED path</span> (AFW flow &lt;22E4 lbm/hr, all SG NR &lt;9%) → FRHS-1. With no charging pumps, crew goes to <span class="hi-exam">Step 23 Bleed and Feed</span>: stop all RCPs, initiate SI, open BOTH PZR PORVs (<span class="hi-exam">CT#1 / CT-46</span> — depressurize RCS below high-head ECCS shutoff head). Only success path is Condensate recovery (SGFPs unavailable on no SW flow to TGA): depressurize the lowest-level SG, establish Condensate flow via CN48/CN32 alignment and steam dumps. At selected SG NR level 9% with CETs/Thots dropping, <span class="hi-exam">close both PZR PORVs (CT#2 / CT-47)</span> before end of scenario. Terminate when both PORVs shut.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]], [[Pressurizer & PRT]], [[ECCS]], [[CVCS]], [[RCPs]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related exam questions: [[2016 Q23]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]]
+- Related exam questions: [[2015 Q23]], [[2016 Q23]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]], [[2015 Q83]]
 - Related JPMs: [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]], [[2016 JPM Sim-d]]
-- Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

@@ -22,6 +22,11 @@ The feedwater system supplies heated feedwater from the condensate system to the
 - Feedwater temperature at full power: 432.8°F
 - SG level controlled by feedwater regulating valves
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q12</div>
+A large <span class="hi-exam">main feedwater line break depressurizes the SG (similar to a steam line break)</span>. Initial Tavg response (before automatic protective actions): a <span class="hi-exam">feed line break sends LESS cold feed into the SG → Tcold rises → Tavg RISES</span>, whereas a <span class="hi-exam">steam line break draws MORE steam → Tcold lowers → Tavg LOWERS</span>. <span class="hi-trap">Because an FLB depressurizes the SG like an SLB, the operator must use diverse/alternate indication to discern what is actually happening to the SG.</span>
+</div>
+
 ## SG Level Control
 
 - **Below P-7 (low power):** Single-element control (SG level only)
@@ -188,11 +193,32 @@ Single Condensate pump trip with NO HDPs running and polisher in service: <span 
 <span class="hi-exam">21–24BF19 (SG Feedwater Regulating Valves) start to close at ≈ 80 psig control air header pressure</span>. Per AB.CA-0001 CAS Step 6.0: "If ANY BF19 SG FW CONT VALVE closes AND Applicable SG water level CANNOT be maintained, THEN: Trip the Reactor; continue with this procedure; go to 2-EOP-TRIP-1." The applicant must <span class="hi-exam">manually trip the reactor BEFORE the auto-trip on lo-lo SG NR level</span> when BF19 closure prevents level control. Approximate timeline (from RT-1 / first SAC trip): 6:30 — 21–24BF19 begin closing; 7:10 — G-15 OHA ADFCS TRBL.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+<span class="hi-exam">Feedwater Isolation occurs on any SI signal or SG NR level &gt;67%</span>. During a LOCA the SI signal isolates feedwater well before containment pressure reaches 12 psig, so it is not the action that newly actuates between 12 and 18 psig.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q50</div>
+On a second 11 SG NR level channel failure (one already in calibration), the <span class="hi-exam">11BF19 and 11BF40 feed reg/bypass valves swap to manual; the SGFPs do NOT swap</span>. The frozen manual demand then exceeds the falling feed requirement during a downpower, overfeeding 11 SG (level higher than program). See [[Steam Generator & Blowdown]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q52</div>
+After a P-14 (Feedwater Isolation) clears, a SGFP can be relatched (S2.OP-SO.CN-0007), but <span class="hi-trap">if SGFP speed was &gt;160 rpm when the latch pushbutton was depressed, the pump will NOT automatically ramp to minimum (1100 rpm idle) speed</span>. The P-14 has no seal-in (it clears when SG level drops below setpoint); the ENABLE/DISABLE switch in DISABLE only removes ADFWCS speed control. See [[S2.OP-SO.CN-0007 — SGFP Prompt Recovery]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+With 23 Condensate pump already CIT (only two Condensate pumps in service), the loss of a second (22) Condensate pump causes <span class="hi-exam">SGFP suction pressure to rapidly and irreversibly lower</span> until both SGFPs trip on low suction pressure. With no SGFP operating &gt;P-10, the crew performs a <span class="hi-exam">manual reactor trip</span>. SGFPs remain unavailable for recovery because there is no SW flow to the TGA (turbine generator area) coolers, so secondary heat sink can only be restored later via direct Condensate System flow to a depressurized SG (FRHS-1 Step 20 path).
+</div>
+
 ## Connections
 
+- Related systems: [[Main Steam]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
-- Related exam questions: [[2016 Q51]], [[2016 Q52]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]]
+- Related exam questions: [[2015 Q12]], [[2016 Q51]], [[2016 Q52]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]], [[2015 Q27]], [[2015 Q50]], [[2015 Q52]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]], [[2016 JPM Sim-h]], [[2016 JPM IP-j]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

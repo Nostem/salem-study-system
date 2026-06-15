@@ -188,11 +188,31 @@ CFCU SW flow control valve <span class="hi-exam">SW223 has a position limiter, t
 APPX-7 Step 2 verification: <span class="hi-exam">CHECK ALL AVAILABLE CFCUs running in Low Speed</span>. Confirms post-LOCA Containment Heat Removal CFCU alignment is intact prior to securing the CS flow path and re-attempting RHR sump suction.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q65</div>
+CFCU operability (TS 4.6.2.3.a) includes <span class="hi-exam">SW Accumulator level, pressure, and temperature</span>. Because Containment Integrity (TS 3.6.1.1) surveillance 4.6.1.1.d invokes 4.6.2.3.a, a SW Accumulator nitrogen cover-gas pressure below minimum fails Containment Integrity. See [[Containment]], [[TS 3/4.6 — Containment]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q80</div>
+A SW leak on <span class="hi-exam">CFCU supply piping in the 78' Mechanical Penetration Area</span> produces the SW header-pressure alarm cascade plus B-48 SW VLV RM FLOODED; AB.SW-0001 directs isolating the single affected CFCU (identifiable from the control room). See [[Service Water]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q90</div>
+Per SO.SW-5 Attachment 2: <span class="hi-exam">in Modes 1-3, isolating CFCU #23 from either SW supply header (closing manual cross-connect 21SW52 or 22SW52) makes that CFCU inoperable — TS 3.6.2.3 action</span>. With 21 CFCU also C/T, two CFCUs (21 and 23 ONLY; not 22) are inoperable; <span class="hi-exam">BOTH must be restored within 7 days of the FIRST CFCU being declared inoperable</span>. See [[Service Water]], [[TS 3/4.6 — Containment]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q91</div>
+Both EOP-TRIP-3 (SI Termination) and EOP-LOCA-2 terminate Containment Spray. <span class="hi-trap">Neither EOP addresses CS Spray Additive Tank isolation or CFCU speed — CFCU operation is governed by the SOP once the EOP network is exited to the IOP.</span> See [[Containment Spray]].
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]]
-- Related exam questions: [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
+- Related exam questions: [[2015 Q16]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]], [[2015 Q65]], [[2015 Q80]], [[2015 Q90]], [[2015 Q91]]
 - Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 1]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

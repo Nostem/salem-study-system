@@ -50,6 +50,11 @@ Automatic SI actuation setpoints: <span class="hi-exam">PZR Pressure &lt; <span 
 
 Isolated from RCS by two check valves in series. Inject when RCS pressure falls below accumulator pressure. For a large LOCA, accumulators begin injecting ~10 seconds after the break. (UFSAR 6.3.2.2)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q18</div>
+In EOP-FRCC-1 (inadequate core cooling), the intact SGs are depressurized at maximum rate to lower RCS pressure and <span class="hi-exam">inject the ECCS accumulators</span>. Before initiating that depressurization (Step 13), an adequate secondary heat sink must exist: <span class="hi-exam">SG NR level in at least one SG &gt; 9% OR total AFW flow &gt; <span class="val-normal">22E4 lbm/hr</span></span>. At 2 psig containment (below the 4 psig adverse threshold), the normal 9% value applies, <span class="hi-trap">not 15% adverse</span>.
+</div>
+
 ### Centrifugal Charging Pumps (High Head — Cold Leg Injection)
 
 | Parameter | Value | Source |
@@ -338,11 +343,66 @@ EOP-FRHS-1 bleed-and-feed at Step 21 (entered from Step 4 when WR levels in at l
 After manual SI for 150 gpm SBLOCA, EOP-TRIP-1 Step 12 safeguard valve verification reveals <span class="hi-exam">2SJ12 and 2SJ13 (BIT isolation valves) failed to auto-open</span> on the SI signal — high-head ECCS injection has NOT been established. Crew recovery (CT#2 — CT-6): <span class="hi-exam">RO manually opens 2SJ12 and 2SJ13 to establish BIT flow before transitioning out of TRIP-1</span>. Acceptance: charging flow &ge;100 gpm on SI systems charging flow meter. Failure to manually start at least one charging/SI (high-head) pump under these conditions constitutes a violation of facility license condition per the ESG critical task basis.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q23</div>
+ECCS injection flow is <span class="hi-exam">limited by RCS pressure</span> — the higher the RCS pressure, the lower the high-head ECCS delivery. This is the basis for the EOP-FRHS-1 CAUTION that the bleed-and-feed steps be performed quickly: a delay lets cooling degrade and RCS pressure rise, which <span class="hi-exam">reduces ECCS flow</span> when bleed and feed is finally initiated. See [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]. Related W/E evolution questions: [[2015 Q22]] (LOCA outside containment leak isolation via RHR/SI valves), [[2015 Q24]] (loss of emergency recirculation — recovery of recirc capability).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+During a LOCA, <span class="hi-exam">Phase A isolation, Feedwater Isolation, and Containment Ventilation isolation all actuate on the SI signal</span> — Phase A would occur by 4 psig in containment if not sooner. By the time containment pressure reaches 12 psig these have already actuated, so the only new automatic action between 12 and 18 psig is Main Steamline Isolation at 15 psig. See [[Main Steam]], [[Containment]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q34</div>
+In recirc the RHR (low-head) pumps feed suction to the high-head SI pumps; closing the RH19s prevents RHR pump runout with a single RHR pump operating, so <span class="hi-exam">a 22 RHR pump trip with both RHR pumps running does NOT cause SI or charging pump cavitation</span> — instead it removes the RHR-fed containment spray path (22CS36). See [[RHR]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q35</div>
+ECCS LCO <span class="hi-exam">TS 3.5.2 requires 2 complete trains of ECCS</span>; the <span class="hi-exam">22 charging pump (hi-head ECCS) is required for the B train</span>, so its trip makes TS 3.5.2 applicable. See [[TS 3/4.5 — ECCS]], [[CVCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q77</div>
+A single inoperable charging pump (hi-head ECCS) in Modes 1-3 enters <span class="hi-exam">ONLY the ECCS LCO (TS 3.5.2.a)</span> — 72 hours to restore or be in Hot Shutdown within the next 12 hours. See [[CVCS]], [[TS 3/4.5 — ECCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q82</div>
+On an unisolable SBLOCA outside containment, EOP-LOCA-6 (LOCA Outside Containment) <span class="hi-exam">transitions to EOP-LOCA-5 (Loss of Emergency Coolant Recirculation)</span> — where the crew adds makeup to the RWST, initiates a cooldown, and minimizes injection flow. (Transition to LOCA-1 would apply only if the break were isolated.) See [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q84</div>
+During degraded core cooling recovery (EOP-FRCC-2), after depressurizing to inject accumulators, a RED Thermal Shock path is <span class="hi-trap">NOT acted on immediately — stopping the cooldown would let the core boil away injected accumulator water and re-uncover</span>. See [[EOP-FRCC-2 — Response to Degraded Core Cooling]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-c</div>
+Raising accumulator level and pressure per S2.OP-SO.SJ-0002: P&amp;L 3.1 requires <span class="hi-exam">level be adjusted before pressure</span>. Level is raised with a Safety Injection Pump (fill lineup: START 21 SI pump → OPEN 2SJ53 → OPEN 2SJ123 → OPEN the accumulator fill valve 24SJ20), closing the fill valve when level reaches the target on 2LI935D/2LI934D, then restoring the lineup. Pressure is raised with N2 (OPEN 2NT32 N2 SUPPLY, then 24SJ93 N2 SUPPLY) — <span class="hi-exam">accumulator pressure rises very rapidly</span>, so the N2 supply valve is closed promptly at the target pressure on 2PI936D/2PI937D. Step 5.2.2 N/As 21SJ134 because RCS pressure is &gt;2000 psig. See [[S2.OP-SO.SJ-0002 — Accumulator Operations]], [[TS 3/4.5 — ECCS]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+LBLOCA (RCS loop 22 failure) with <span class="hi-exam">AUTO SI FAILURE</span> — crew manually initiates SI before transition out of [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]. Additionally, <span class="hi-exam">both 21 and 22 RHR pumps fail to start on the SEC signal</span> — crew blocks/resets 2A and 2B SECs and manually starts both RHR pumps. <span class="hi-exam">CT#1: manually start at least one low-head ECCS pump before transition out of TRIP-1.</span> Verify charging &ge;100 gpm, SI &ge;100 gpm, and RHR &ge;300 gpm on both 21/22SJ49s. Later at RWST lo level (15.2 ft), CT#2 transfers ECCS to cold leg recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+A 2nd PZR pressure channel (PT457) fails low and causes an <span class="hi-exam">auto Inadvertent SI on Lo PZR pressure</span>. The crew backs up SI, verifies safeguards, then performs SI Termination (EOP-TRIP-3) — resetting SI/Phase A/Phase B, stopping all but one charging pump (CT#1), and stopping both SI and both RHR pumps with RCS pressure &gt; 1540 psig stable/rising.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+In a total loss of secondary heat sink with no centrifugal charging pumps available, the crew initiates <span class="hi-exam">RCS bleed and feed</span> (FRHS-1 Step 23): stop all RCPs, <span class="hi-exam">initiate SI</span>, and open both PZR PORVs. The bleed path depressurizes the RCS so that the <span class="hi-exam">high-head ECCS (SI) pumps</span> can inject — CT#1 (CT-46) is to initiate bleed and feed before the RCS saturates above the SI pump shutoff head, preventing sustained core uncovery. See [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA Series]], [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
-- Related exam questions: [[2016 Q4]], [[2016 Q5]], [[2016 Q10]], [[2016 Q19]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q26]], [[2016 Q29]], [[2016 Q32]], [[2016 Q33]], [[2016 Q36]], [[2016 Q39]], [[2016 Q73]], [[2016 Q79]], [[2016 Q83]], [[2016 Q84]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]]
-- Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]], [[2016 JPM Sim-c]], [[2016 JPM Sim-d]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related exam questions: [[2015 Q18]], [[2015 Q22]], [[2015 Q23]], [[2015 Q24]], [[2016 Q4]], [[2016 Q5]], [[2016 Q10]], [[2016 Q19]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q26]], [[2016 Q29]], [[2016 Q32]], [[2016 Q33]], [[2016 Q36]], [[2016 Q39]], [[2016 Q73]], [[2016 Q79]], [[2016 Q83]], [[2016 Q84]], [[2018 Q4]], [[2018 Q5]], [[2018 Q63]], [[2019 Q5]], [[2019 Q12]], [[2020 Q3]], [[2020 Q16]], [[2020 Q17]], [[2020 Q32]], [[2020 Q41]], [[2020 Q42]], [[2020 Q77]], [[2020 Q87]], [[2023 Q16]], [[2023 Q29]], [[2023 Q31]], [[2023 Q65]], [[2023 Q76]], [[2023 Q87]], [[2022 Q14]], [[2022 Q18]], [[2022 Q24]], [[2022 Q33]], [[2022 Q61]], [[2015 Q27]], [[2015 Q34]], [[2015 Q35]], [[2015 Q77]], [[2015 Q82]], [[2015 Q84]]
+- Related JPMs: [[2018 JPM Sim-c]], [[2019 JPM SRO-A1]], [[2019 JPM Sim-b]], [[2023 JPM SRO-A1.a]], [[2023 JPM Sim-b]], [[2022 JPM Sim-c]], [[2020 JPM Sim-d]], [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]], [[2016 JPM Sim-c]], [[2016 JPM Sim-d]], [[2015 JPM Sim-c]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]]
+- Related exam: [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

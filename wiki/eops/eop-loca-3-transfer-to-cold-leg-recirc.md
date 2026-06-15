@@ -17,6 +17,11 @@ Provides direction for transferring ECCS suction from the RWST to the containmen
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q24</div>
+A transfer to Cold Leg Recirculation is <span class="hi-exam">not initiated until RWST level is evaluated in [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]</span>. So when a train of recirculation capability is restored while in [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], the crew returns to LOCA-1 (per the LOCA-5 Continuous Action Step) rather than transitioning directly to LOCA-3. <span class="hi-trap">Trap: jumping straight from LOCA-5 to LOCA-3 on restoration of a recirc train skips the LOCA-1 RWST-level evaluation that gates entry to LOCA-3.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q5</div>
 EOP-LOCA-3 <span class="hi-exam">Step 11.2</span> checks whether at least one CCW pump is running. With <span class="hi-exam">NO CCW pumps running</span>, operators are directed to <span class="hi-exam">go to Step 124 and align for single-train recirculation operation</span> (continue in LOCA-3 — single train without CCW). <span class="hi-trap">Trap matrix:<br>&bull; There is NO provision in LOCA-3 to transition to EOP-APPX-1 (CCW Restoration) or EOP-LOCA-5 (Loss of Emergency Coolant Recirculation) when no CCW pumps are running. LOCA-5 is for mechanical/electrical recirc failures, not loss of CCW.<br>&bull; The two-train alignment (BOTH RHR pumps + one SI + one charging) is the normal LOCA-3 flowpath when CCW IS available — not the "no CCW" path.</span>
 </div>
@@ -65,9 +70,24 @@ EOP-LOCA-3 alignment when 21SJ44 fails to open: <span class="hi-exam">Step 5.2 d
 Cold leg recirculation transfer after LBLOCA. <span class="hi-exam">CT#2 (CT-36) — time-critical</span>: (1) Open 21SJ44 and 22SJ44, depress sump auto arm pushbuttons when containment sump >62% lights lit. (2) Remove lockouts for 2SJ67, 2SJ68, 2SJ69. (3) <span class="hi-exam">Close 2SJ69 within ~3.7 min</span> of RWST lo alarm. (4) <span class="hi-exam">Stop 22 CS pump within ~5.5 min</span>. (5) Close 21 and 22RH19s. Select flow path for all 4KV vital buses energized → Step 11. Close 2SJ67 and 2SJ68. Open 22SJ45, then 21SJ45. Close 2SJ30, 2SJ1, 2SJ2. <span class="hi-exam">Place 21RH29 and 22RH29 in manual and ensure closed (Step 15) within ~11.2 min</span>. PO removes lockout from 2SJ30.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+Cold leg recirculation transfer after LBLOCA with failure of RHR pumps to auto-start (CT#1 handled in TRIP-1). <span class="hi-exam">CT#2 (CT-36) — time-critical, three windows measured from the RWST lo level alarm (214 RWST = 15.2 ft)</span>: (1) initiate closed on <span class="hi-exam">2SJ69 within ≤3.7 min</span>; (2) stop <span class="hi-exam">one containment spray pump (22 CS) within ≤5.5 min</span>; (3) <span class="hi-exam">switchover complete — ECCS pumps verified running in recirc within ≤11.2 min</span> (includes restarting ECCS pumps if stopped on RWST lo-lo). Sequence: report containment sump lights >62%, depress SUMP AUTO ARMED PB for 21/22SJ44s, remove lockouts on 2SJ67/2SJ68/2SJ69, verify 21/22SJ44 open, close 2SJ69, reset SI/SECs/230V MCCs, stop 22 CS pump, close 21/22RH19s, shut 2SJ67/2SJ68, open 22SJ45 then 21SJ45, verify 21/22SJ113, confirm 21/22 SI + 21/22 charging pumps running. <span class="hi-trap">On RWST isolation (closing 2SJ30/2SJ1/2SJ2) both charging pumps cavitate — CT#3 is to trip the cavitating charging pumps before piping damage / LOCA outside containment.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2016 Sim-b</div>
 After waiting at LOCA-3 step 21 for RWST lo-lo level alarm with all ECCS running except 22 CS pump (stopped at step 8), <span class="hi-exam">both RHR pumps cavitate</span> as containment sump becomes blocked. Per the LOCA-3 Continuous Action Summary, the crew enters <span class="hi-exam">EOP-APPX-7</span> immediately (operator may go to EOP-LOCA-5 first, but Step 1 of LOCA-5 directs performance of APPX-7). The APPX-7 final task standard is to <span class="hi-exam">secure all ECCS pumps</span>, then re-establish recirculation flow with <span class="hi-exam">ONE RHR pump and ONE Charging OR SI pump</span> (single-pump per side, NOT the LOCA-3 two-train alignment).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q34</div>
+LOCA-3 stops all dedicated containment spray pumps and, if <span class="hi-exam">BOTH RHR pumps are operating, opens 22CS36 to supply containment spray from 22 RHR pump discharge</span>. See [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[RHR]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q46</div>
+On the transfer to cold-leg recirc, the <span class="hi-exam">22 Containment Spray pump is stopped first (if both CS pumps are running); the 21 CS pump continues until RWST lo-lo, then 21CS36 is opened</span> to supply recirculation spray from RHR discharge. See [[Containment Spray]], [[RHR]].
 </div>
 
 ## Connections
@@ -75,7 +95,7 @@ After waiting at LOCA-3 step 21 for RWST lo-lo level alarm with all ECCS running
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]], [[CFCUs]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
-- Related exam questions: [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]]
+- Related exam questions: [[2015 Q24]], [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]], [[2015 Q34]], [[2015 Q46]]
 - Related JPMs: [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]], [[2015 Scenario 1]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]]

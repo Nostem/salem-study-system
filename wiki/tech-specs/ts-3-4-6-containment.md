@@ -351,12 +351,22 @@ TS LCO 3.6.3 containment isolation valve operability: <span class="hi-exam">2VC5
 LCO 3.6.1.3 (Containment Air Locks): when an airlock is declared inoperable due to an UNSAT local leak rate test (S2.OP-ST.CAN-0004), the completion time is <span class="hi-exam">24 hours</span> to restore the airlock — does NOT drive a same-shift Hot Standby. <span class="hi-trap">Trap: easy to confuse with the 1-hour completion time of LCO 3.6.1.1 (Containment Integrity) — the airlock LCO carries its own longer completion time.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q65</div>
+Containment Integrity (TS 3.6.1.1, Modes 1-4) surveillance 4.6.1.1.d requires that the CFCU surveillance (4.6.2.3.a) — including <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — be met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified via Admin controls (4.6.1.1.a); the airlock may be opened for normal transit (3.6.1.3); CIVs have their own less-restrictive TS 3.6.3.</span> See [[Containment]], [[CFCUs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q90</div>
+<span class="hi-exam">TS 3.6.2.3 (CFCUs): with two CFCUs inoperable, BOTH must be restored within 7 days of the FIRST CFCU being declared inoperable</span> (not from when the second became inoperable), or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours. See [[CFCUs]], [[Service Water]].
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]], [[ECCS]]
 
 - Related concepts: [[ESF & Design]]
 - Related procedures: [[S2.OP-ST.CAN-0004 — Containment Air Lock Local Leak Rate Test]]
-- Related exam questions: [[2016 Q96]], [[2018 Q88]], [[2019 Q27]], [[2019 Q28]], [[2020 Q33]], [[2023 Q54]]
+- Related exam questions: [[2016 Q96]], [[2018 Q88]], [[2019 Q27]], [[2019 Q28]], [[2020 Q33]], [[2023 Q54]], [[2015 Q65]], [[2015 Q90]]
 - Related JPMs: [[2022 JPM SRO-A3]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]]

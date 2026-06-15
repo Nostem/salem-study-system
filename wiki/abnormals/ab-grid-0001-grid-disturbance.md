@@ -16,6 +16,11 @@ Provides operator actions for responding to grid disturbances, including voltage
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q20</div>
+Allowable Main Generator loading after a 500KV grid disturbance is read from the <span class="hi-exam">generator capability curve in A-5-500-EEE-1686 (Artificial Island Operating Guide)</span>. Curve selection depends on plant/grid lineup: with <span class="hi-exam">Unit 1 offline AND the Hope Creek 5-6 breaker out of service, the applicable curve is 2S2H-5-6 (p. 291)</span>. When <span class="hi-exam">both units' Power System Stabilizers (PSS) are out of service, the red dashed line</span> defines the allowable generator excitation (MVAR) limit (a PSS in service on either unit would allow the higher solid-line limit). For this lineup the loading point <span class="hi-exam val-trip">1100 Mwe with 150 MVAR out</span> falls OUTSIDE the allowable region. <span class="hi-trap">Traps: 575 MVAR-out points are within the limit on this curve; the answer is not a direct lookup because Mwe and MVAR each vary high/low across the choices — both coordinates must be plotted against the correct (PSS-out, red dashed) curve.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q15</div>
 Loss of a Salem unit causes 500KV voltage to lower. The remaining unit's MVARs rise as it picks up a greater share of the reactive load on the grid.
 </div>
@@ -44,5 +49,5 @@ AB.GRID-0001 Attachment 2 (Solar Magnetic Disturbance) turbine load reduction: w
 
 - Related systems: [[500KV]], [[Main Turbine]]
 - Related procedures: [[AB.LOAD-0001 — Rapid Load Reduction]], [[OP-AA-108-107-1001 — Electric System Emergency Operations]]
-- Related exam questions: [[2018 Q62]], [[2019 Q62]], [[2020 Q81]], [[2023 Q15]], [[2023 Q88]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2015 Q20]], [[2018 Q62]], [[2019 Q62]], [[2020 Q81]], [[2023 Q15]], [[2023 Q88]]
+- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]

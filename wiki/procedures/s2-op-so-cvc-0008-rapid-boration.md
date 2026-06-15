@@ -26,9 +26,15 @@ S2.OP-SO.CVC-0008 contains alternate rapid boration paths including: <span class
 Per the ROD INSERT LIMIT LO-LO Alarm Response Procedure, S2.OP-SO.CVC-0008 (Rapid Boration) is the <span class="hi-exam">ONLY procedure allowed to restore Control Rods above the Rod Insertion Limit</span>. <span class="hi-trap">Raising turbine power to lower TAVG (causing rods to withdraw) is NOT permitted by the alarm response procedure — boration is the only corrective action.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q11</div>
+For a single stuck rod after a Rx trip during a SG tube-leak shutdown, the rapid boration is directed by <span class="hi-exam">AB.SG-0001 Step 3.28 (35 minutes per stuck rod)</span> after exiting the TRIP series — NOT in the EOP series. The boration is initiated before any RCS depressurization begins (AB.SG-0001 Step 3.29).
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]]
+- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exam questions: [[2018 Q91]], [[2020 Q21]]
-- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2015 Q11]], [[2018 Q91]], [[2020 Q21]]
+- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]]

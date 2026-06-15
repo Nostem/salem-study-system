@@ -299,6 +299,51 @@ RTBs fail to open on a valid RPS trip signal — operator opens the <span class=
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.1]]** — Reactor Trip System Instrumentation
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.2]]** — ESF Actuation System Instrumentation
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+ESFAS containment-isolation actuations during a LOCA occur in setpoint order: <span class="hi-exam">Phase A isolation, Feedwater Isolation, and Containment Ventilation isolation actuate on the SI signal; Main Steamline Isolation actuates at 15 psig</span> containment pressure. As containment pressure rises from 12 to 18 psig, MSLI (15 psig) is the only new automatic action — the SI-driven isolations have already occurred. Feedwater Isolation also actuates on SG NR level &gt;67%.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q41</div>
+<span class="hi-exam">Either Reactor Trip Handle (on 2CC2) operates BOTH the UV trip and shunt trip for BOTH the Reactor Trip breakers and the Reactor Trip Bypass breakers</span>. By contrast, an automatic reactor trip actuates the UV trip only, and manually tripping the RTBs from the control console actuates the shunt trip only.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q42</div>
+The 2B Vital Instrument Bus powers SSPS Train B; deenergizing it means <span class="hi-exam">SSPS Train B slave relays would not actuate on a Safety Injection signal</span>. SSPS Train A 45VDC power comes from A and D vital power (so Train A is unaffected); CS bistables energize-to-actuate; and there is no train-disagreement flashing because no slave relays energized.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q43</div>
+ESFAS/SEC response to a 2/3 4KV vital-bus UV followed by SI: <span class="hi-exam">SEC Mode II Blackout (all EDGs start, blackout loads sequenced) then SEC Mode III on the SI — EDG breaker opens, loads stripped, EDG breaker recloses, safeguards loads sequenced on all buses</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q45</div>
+Containment Spray pump start sequencing depends on the SSPS Containment Hi-Hi pressure signal and the SEC: if the Hi-Hi signal is absent when the SEC first tries to start the CS pumps the SEC contact re-opens; and after an SEC reset (e.g., LOSC-2 safeguards reset), <span class="hi-exam">the CS pumps will NOT respond to a Hi-Hi containment pressure until the SEC is actuated again</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q50</div>
+An 11 SG Narrow Range level protection channel in calibration has its bistables tripped; a <span class="hi-exam">second NR level channel failing to 30% swaps the 11BF19/11BF40 feed valves to manual</span> (the SGFPs do not swap), causing an overfeed during a downpower.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q52</div>
+The P-14 (Feedwater Isolation) signal has <span class="hi-exam">no seal-in</span> — it clears automatically when SG level lowers below setpoint. (Relatching the SGFP afterward will not auto-ramp speed to minimum if speed was &gt;160 rpm at latch.)
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q54</div>
+<span class="hi-exam">MDAFW pumps auto-start when both SGFPs are tripped</span> (logic drawing 221064); the TDAFW pump does not. MDAFW pumps also auto-start on 2/3 NR level channels in one SG lowering to 14%; the TDAFW pump starts on 2/3 NR level channels in 2/4 SGs.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q89</div>
+IRNI channel logic: a tripped IRNI channel with the other channel dropping below 7x10-11 Amps would <span class="hi-exam">automatically energize the Source Range NIs — except the P-10 interlock prevents Source Range from energizing above 10% power</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]]
@@ -306,7 +351,16 @@ RTBs fail to open on a valid RPS trip signal — operator opens the <span class=
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]]
-- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]
+  - [[2015 Q27]] — LOCA containment-isolation actuation order: Phase A / FW Iso / Cont Vent Iso on SI; MSLI at 15 psig is the only new action between 12 and 18 psig
+  - [[2015 Q41]] — Reactor Trip Handles on 2CC2 operate BOTH UV and shunt trips for BOTH RTBs and RTBBs
+  - [[2015 Q42]] — 2B Vital Instrument Bus deenergized: SSPS Train B slave relays would not actuate on SI (Train A 45VDC fed from A+D)
+  - [[2015 Q43]] — 2/3 4KV vital-bus UV then SI: SEC Mode II Blackout then SEC Mode III safeguards sequencing
+  - [[2015 Q45]] — CS pump start: after SEC reset (LOSC-2 safeguards reset) CS pumps will NOT respond to Hi-Hi until SEC re-actuated
+  - [[2015 Q50]] — second 11 SG NR level channel fails to 30%: 11BF19/11BF40 (only) swap to manual, overfeed during downpower
+  - [[2015 Q52]] — P-14 (Feedwater Isolation) has no seal-in; clears when SG level drops below setpoint
+  - [[2015 Q54]] — MDAFW pumps auto-start on both-SGFPs-tripped (not TDAFW); AFW start NR level channel logic
+  - [[2015 Q89]] — IRNI channel oscillating at power; P-10 interlock prevents Source Range NIs energizing >10% power
   - [[2016 Q3]] — RTBs fail to open / RDMG breakers manually opened from 1CC3 / manual turbine trip required
   - [[2016 Q12]] — ATWS with RPS output failure / pistol grip de-energizes UV coil for RTB B (direct trip path)
   - [[2016 Q36]] — 2PS1 spray valve fails open at 4% / Low PZR Pressure Rx trip blocked below P-10 / SI on Low PZR Pressure is FIRST protective action

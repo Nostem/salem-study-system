@@ -37,8 +37,13 @@ Component Configuration Control (OP-AA-108-101-1002): for a <span class="hi-exam
 IV waiver for Locked High Radiation Areas: per OP-AA-108-101-1002, the Shift Manager <span class="hi-exam">IS permitted</span> to waive a "Hands On" independent verification of a manual gate valve located inside a Locked High Radiation Area when the estimated dose is <span class="hi-exam"> greater than 10 mrem</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q70</div>
+Independent Verification (IV) hands-on requirement vs dose (Att 11): <span class="hi-exam">10 mrem is the dose above which a hands-on IV is not required (may be waived)</span>. In a 75 mrem/hr area, 10 mrem accrues at 8 minutes — so the longest IV time before hands-on may be waived is 7 minutes (8.75 mrem).
+</div>
+
 ## Connections
 
 - Related procedures: [[OP-AA-108-101-1001 — Equipment Lineup Verification]], [[RP-AA-460 — Controls for High and Very High Radiation Areas]]
-- Related exam questions: [[2019 Q95]], [[2019 Q98]], [[2020 Q69]], [[2023 Q67]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2019 Q95]], [[2019 Q98]], [[2020 Q69]], [[2023 Q67]], [[2015 Q70]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]]

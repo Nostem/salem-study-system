@@ -219,12 +219,32 @@ PZR Backup Heater Group transfer to emergency power adds heater load to a vital 
 <strong>Local start and parallel loading per S2.OP-SO.DG-0001 §5.2 + §5.4.</strong> Pre-start checks: 2DAE4-LT 2 (EDG VOLTAGE) and 2DAE4-LT 3 (EDG SPEED) permissive lights are OFF. With 2A 4KV Vital Bus energized (parallel mode), <span class="hi-exam">2A-DF-GCP-1, 2A DIESEL GEN LOADING SW must be placed in MANUAL (DROOP) before start</span> — annunciator B-9 GENERATOR LOADING IN DROOP MODE confirms. Start with 2A-DF-SS, 2A DG STOP/START SWITCH in START. Set speed to <span class="hi-exam">900 rpm</span> using SPEED CONTROL SWITCH (GS) if not already there. Normal start readings: gen volts <span class="hi-exam">4160 V</span> on all 3 phases, frequency 60 Hz, LO Hdr 80 psig, JW Hdr 45 psig, Air Manifold 0 psig, Stator 187 °F. Synchronize: adjust gen voltage to <span class="hi-exam">50–100 V higher than bus</span> via VOLTAGE CONTROL SWITCH (VCS); place 2A-DF-SYNCH (SS) ON; adjust speed so synchroscope rotates <span class="hi-exam">SLOWLY in the FAST (clockwise) direction</span>; verify SYNC CHK RELAY 25 Upper/Lower L OK and B OK LEDs and ΔF OK LED are ON; verify DG SYNC PERMISSIVE green light ON near 12 o'clock (±~3 minutes). At <span class="hi-exam">12 o'clock (+0/−2 min)</span>: simultaneously close 2A-DF-GCP-3 GENERATOR CIRCUIT BREAKER SWITCH (BCS) and immediately raise load to <span class="hi-exam">≥ 500 KW via SPEED CONTROL SWITCH (GS) to prevent reverse-power trip</span>. Place 2A-DF-SYNCH (SS) to OFF. Critical steps: 5.2.4, 5.2.5, 5.2.6, 5.4.4, 5.4.10.A, 5.4.10.B, 5.4.10.F.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q43</div>
+On a 2/3 4KV vital-bus UV, all EDGs start and (SEC Mode II) sequence blackout loads. When an SI then occurs, <span class="hi-exam">SEC Mode III opens any running EDG output breaker, strips loads, recloses the EDG breaker, then sequences safeguards loads</span>. See [[SECs]], [[4KV]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q55</div>
+EDG load limitations (per the DG surveillance P&amp;L): <span class="hi-exam">2600 KW continuous; 2600–2750 KW for 2000 hours; 2750–2860 KW for 30 minutes; 2860–3100 KW for 2 hours</span>. Operating at 2610 KW (in the 2000-hour band) for 21 more hours exceeds no limit. See [[S2.OP-ST.DG-0003 — 2C Diesel Generator Surveillance Test]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q58</div>
+The Diesel Fuel Oil Storage Tanks are <span class="hi-exam">normally isolated from each other on the outlet side (2DF35 X-CONN VALVE closed); each DFOST is supplied by its own transfer pump</span>. With 21 DFOST emptied, the 21 (Regular) transfer pump still gets a start signal at 33" but has no fuel; as Day Tank level lowers further the <span class="hi-exam">22 (Backup) pump starts at 27" and supplies from 22 DFOST</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q92</div>
+EDG TS surveillances: SR 4.8.1.2 specifies that certain surveillances are NOT required to maintain EDG operability (to avoid paralleling the EDG with offsite power or de-energizing an ESF bus during the test). <span class="hi-exam">A missed 18-month Hot Restart surveillance does NOT make 2A EDG inoperable; the test must be completed prior to entering Mode 4</span>. See [[TS 3/4.8 — Electrical]].
+</div>
+
 ## Connections
 
 - Related systems: [[Fire Protection]]
 - Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.0 — Applicability]]
-- Related exam questions: [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
-- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]]
+- Related exam questions: [[2015 Q13]], [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]], [[2015 Q43]], [[2015 Q55]], [[2015 Q58]], [[2015 Q92]]
+- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-ST.DG-0003 — 2C Diesel Generator Surveillance Test]], [[S2.OP-ST.DG-0014 — 2C Diesel Generator Endurance Run]]
 - Related JPMs: [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-g]], [[2016 JPM IP-i]], [[2016 JPM IP-k]], [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exams: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2015 Scenario 1]], [[2015 Scenario 3]]
+- Related exams: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]

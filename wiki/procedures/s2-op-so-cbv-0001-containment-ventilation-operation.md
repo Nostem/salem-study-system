@@ -35,9 +35,14 @@ Section 5.4 provides direction for starting/stopping CRDM Vent Fans. However, th
 Section 5.1.2: shift CFCU from high speed to low speed. HIGH SPEED STOP → wait <span class="hi-exam">25 seconds</span> (per Note) → LOW SPEED START. Verify damper positions: ROUGH FLT DAMPER CLOSED, HEPA INLET DAMPER OPEN, HEPA OUTLET DAMPER OPEN. Then return to S2.OP-ST.CBV-0003 for surveillance data recording.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q60</div>
+During a containment pressure relief with normal containment radiation, the <span class="hi-exam">plant-vent noble-gas release-rate monitor (1R41D) rises while the containment gas effluent (1R12A) and the intermediate-range plant-vent monitor (1R41B) remain constant</span>. See [[Radiation Monitoring]].
+</div>
+
 ## Connections
 
 - Related systems: [[CFCUs]], [[Containment]], [[Control Rod Drive]]
-- Related exam questions: [[2022 Q59]], [[2023 JPM Sim-f]]
+- Related exam questions: [[2022 Q59]], [[2023 JPM Sim-f]], [[2015 Q60]]
 - Related JPMs: [[2018 JPM Sim-a]], [[2018 JPM Sim-f]], [[2019 JPM Sim-a]], [[2019 JPM Sim-f]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]]

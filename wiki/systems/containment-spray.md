@@ -171,10 +171,41 @@ APPX-7 secures CS flow path: <span class="hi-exam">stop ALL Containment Spray pu
 <span class="hi-exam">CT#1 (CT-3): manually start at least one CS pump before a red-path challenge develops on the containment CSF.</span> A 21 SG steam leak in containment with all four MSIVs failed shut drives containment pressure above 15 psig (Phase B / hi-hi); however, both Containment Spray pumps fail to auto-start (RP318L1 and RP318L2 — 21 and 22 CS pump fail-to-start on SEC). RO initiates Phase B and Spray actuation; reports neither CS pump has started. Crew recovery: <span class="hi-exam">RO blocks 2A and 2C SECs; PO resets 2A and 2C SECs; RO manually starts 21 and 22 CS pumps</span>. CS pumps are subsequently stopped in EOP-LOSC-2 step 22 (when containment pressure &lt;13 psig, RO resets Spray actuation, stops both CS pumps, shuts 21 and 22CS2 CS pump discharge valves).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q34</div>
+In post-LOCA recirc, containment spray can be supplied from RHR pump discharge: with <span class="hi-exam">BOTH RHR pumps operating, 22CS36 is opened to feed containment spray from 22 RHR pump discharge</span> (EOP-LOCA-3). A 22 RHR pump trip then results in <span class="hi-exam">loss of flow to the Containment Spray header</span>. All dedicated containment spray pumps are stopped in LOCA-3. See [[RHR]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q45</div>
+Containment Spray (safeguards mode) pump starts are sequenced by the SEC: after the SEC finishes its loading sequence the CS pump start contact re-closes, so a later Hi-Hi containment pressure auto-starts the CS pumps — <span class="hi-trap">but if the SEC has been reset (e.g., safeguards reset in EOP-LOSC-2), the CS pumps will NOT respond to Hi-Hi until the SEC is actuated again</span>. See [[SECs]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q46</div>
+During cold-leg-recirc transfer (EOP-LOCA-3) the 22 CS pump is stopped first; the 21 CS pump keeps running until RWST lo-lo. With the 21 CS pump still running, <span class="hi-exam">a short that motors 21CS2 (21 CS pump discharge valve) closed drops Containment Spray Header flow to 0 gpm</span> (21CS36 is not yet opened to supply recirc spray). See [[RHR]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q91</div>
+During a MSLB-then-LOCA EOP sequence, <span class="hi-exam">Containment Spray is terminated in BOTH EOP-TRIP-3 (SI Termination, transition from LOCA-1 at Step 9) and EOP-LOCA-2 (Step 18)</span> — whichever applies based on subcooling / SG NR level / PZR level. Neither EOP addresses CS Spray Additive Tank isolation. See [[CFCUs]], [[EOP-TRIP-3 — SI Termination]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 IP-i</div>
+Flushing the Containment Spray (Spray Additive Tank) Eductor line per S1.OP-ST.CS-0003 Attachment 3: <span class="hi-exam">UNLOCK AND OPEN 1CS31 (RWST SUPPLY TO EDUCTORS STOP VALVE)</span> and OPEN 1CS40 (SPRAY ADD TK DISCH LINE DRN), flush to the drain header for 3 minutes, then sample at 1CS61 (CS SPRAY ADD TK DISCH SAMP VALVE). When Chemistry verifies <span class="hi-exam">&lt;10 ppm sodium</span>, ensure 1CS61 closed and CLOSE AND LOCK 1CS31. Because the Spray Additive Tank contains concentrated <span class="hi-exam">Sodium Hydroxide [NaOH] 0-50%</span>, RED-category chemical PPE (per SA-AA-2113) is required before opening any vent/drain.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+Containment Spray actuates on the LBLOCA (containment pressure &gt;15 psig, Phase B). During the transfer to cold leg recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], <span class="hi-exam">CT#2 time-critical: stop one containment spray pump (22 CS) within &le;5.5 min</span> of the RWST lo level alarm.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related exam questions: [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]]
-- Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related procedures: [[S1.OP-ST.CS-0003 — Inservice Testing Containment Spray Valves]]
+- Related exam questions: [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]], [[2015 Q34]], [[2015 Q45]], [[2015 Q46]], [[2015 Q91]]
+- Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-b]], [[2015 JPM IP-i]]
+- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

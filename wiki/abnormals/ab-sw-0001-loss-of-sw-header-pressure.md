@@ -57,11 +57,21 @@ AB.SW-0001 (Loss of SW Header Pressure) <span class="hi-exam">Attachment 2 direc
 AB.SW-0001 may be the diagnostic entry path for a total loss of SW: OHA B-13/B-14 (low SW header pressure) routes through the ARP S2.OP-AR.ZZ-0002 to AB.SW-0001. <span class="hi-exam">AB.SW-0001 Step 3.8 directs: "IF the Unit is NOT in a Service Water Header Outage, THEN GO TO S2.OP-AB.SW-0005 (Loss of All Service Water)"</span> — the procedure ultimately routes the crew back to AB.SW-0005 for the trip-and-stop-RCPs actions when no SW is available. AB.SW-0001 also confirms there is no unisolated leak (Step 3.2) and that no SW pumps are available (Step 3.4) before transitioning.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q80</div>
+AB.SW-0001 Step 3.11: <span class="hi-exam">if a single component can be isolated, isolate it</span> — for a single CFCU supply-line leak (78' Mech Pen Area) identifiable from the control room, isolate that single CFCU. The multiple-CFCU isolations in Attachment 5 are for undetermined CFCU leaks in containment (containment sump pump runs). See [[Service Water]], [[CFCUs]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+25 SW pump discharge strainer high D/P presents as <span class="hi-exam">lowering SW header pressures</span> and OHA B-16, 24-26 SW STRAIN TRBL. Field finds the strainer shaft NOT turning with the motor running and D/P ~10.5 psid — manual backwash cannot be performed. CRS declares 25 SW pump inoperable based on <span class="hi-exam">D/P &gt;10 psid</span> (IAW [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]]) and, with 26 SW pump already CIT, enters <span class="hi-exam">LCO 3.7.4</span> (only one SW loop operable; no operable SW pump on "C" vital bus).
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]], [[CFCUs]]
 - Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]], [[AB.SW-0005 — Loss of All Service Water]]
-- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]]
+- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]], [[2015 Q80]]
 - Related JPMs: [[2016 JPM Sim-e]]
-- Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

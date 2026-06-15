@@ -102,10 +102,15 @@ Unit 1 Control Room Evacuation, Attachment 5 Step 10.0 — Emergency Boration fo
 Unit 1 Control Room Evacuation, Attachment 5 Steps 1-9 — locally trip reactor and control charging flow. Reactor failed to trip from control room at 100% power. Step 2: open <span class="hi-exam">Reactor Trip Breaker A and B</span> at Rod Drive MG Set Control Panel (460V Vital Bus Room, El 84). Step 4: trip <span class="hi-exam">#13 Charging Pump breaker (1AX1AX7X)</span> at 1A 460V MCC. Step 5: open <span class="hi-exam">1CV175 Rapid Borate Stop Valve breaker (1CY2AX41)</span> at 1C West 230V Control Center. Step 7: confirm <span class="hi-exam">1CV71 isolated (1CV70) and bypassed (1CV73)</span>, RCP seal flow 6-10 gpm per seal. Step 8: at <span class="hi-exam">Panel 216-1</span> (Charging Valve Alley), record charging flow from <span class="hi-exam">1FI-128A</span>, place E/P Bypass to Manual, control <span class="hi-exam">1CV55 (fail-open, air-to-close)</span> — lower air pressure = open valve = raise flow. Key learning: air pressure indicator at 8 psig.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q81</div>
+AB.CR-0001 field actions after a control room evacuation: <span class="hi-exam">PZR level is read at Hot Shutdown Panel 213 and controlled by local control of CV55 (CHARGING FLOW CONTROL VLV) to 22%-77%</span>. SC.OP-AB.CR-0003 (toxic gas) directs evacuation via AB.CR-0001 but has no field actions itself. See [[Pressurizer Level & Press Control]], [[SC.OP-AB.CR-0003 — Control Room Habitability]].
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RPS/SSPS]], [[CVCS]], [[Main Steam]], [[SECs]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2018 Q67]], [[2019 Q48]], [[2019 Q71]], [[2019 Q83]], [[2019 Q99]], [[2020 Q86]], [[2023 Q83]]
+- Related exam questions: [[2018 Q67]], [[2019 Q48]], [[2019 Q71]], [[2019 Q83]], [[2019 Q99]], [[2020 Q86]], [[2023 Q83]], [[2015 Q81]]
 - Related JPMs: [[2018 JPM IP-j]], [[2020 JPM IP-i]], [[2022 JPM IP-j]], [[2019 JPM IP-i]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2019 NRC Operating Exam]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]]

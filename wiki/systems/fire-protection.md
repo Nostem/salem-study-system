@@ -47,10 +47,26 @@ EDG room fire suppression: each EDG is protected by a <span class="hi-exam">CO2 
 Containment fire response: <span class="hi-exam">2FP147 (Fire Protection Containment Isolation Valve) must be manually opened from the control room</span> after tripping the Reactor, Turbine, and all RCPs. 2FP147 does NOT receive an automatic open signal. Fire pumps will start once 2FP147 is opened. Containment deluge valves are automatic. <span class="hi-trap">PORV BLOCK valve EMER CLOSE is the action for a relay room fire, not a containment fire.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q17</div>
+Assessing affected Fire Zone(s) on 2RP5 after OHA A-7 FIRE PROT FIRE: <span class="hi-exam">if fire indication for BOTH zones 59 and 74 is received, open 2FP147 Fire Protection Containment Isolation</span> to provide normally isolated fire protection water to containment — the line is normally isolated and is pressurized when both the zone 59 and 74 alarms are received. <span class="hi-trap">Traps: an illuminated row "Fire" light can come from a manual fire pull box (indication only, no water flow); for a Relay Room fire (outside the CR but on the same AC system) Fire Outside Control Area is NOT selected; Halon supplied to the relay rooms does not indicate stopping EDG supply ventilation.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q63</div>
+Beyond supplying fire-protection water, <span class="hi-exam">Fresh Water / Fire Protection Storage Tank water can be aligned to the Auxiliary Feedwater (AFW) system through a normally disconnected spool piece</span>. See [[AFW]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+A <span class="hi-exam">Main Power Transformer (MPT) Phase 1 Sudden Pressure alarm (CRT point 529)</span> with FP <span class="hi-exam">deluge actuation at MPT Zone 46</span> occurs; OHA A-15 FIRE PUMP 1/2 RUN annunciates when either Diesel Drive Fire Pump starts. Field operator reports water spraying over MPT Phase 1 with heavy arcing/sparking. The CRS removes the Main Generator from service and trips the reactor (power &gt; P-9).
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[EDGs]]
 - Related procedures: [[AB.FIRE-0001 — Control Room Fire Response]], [[AB.FP-0001 — Fire Protection System Malfunction]], [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]]
-- Related exam questions: [[2016 Q64]], [[2019 Q38]], [[2020 Q65]], [[2020 Q75]]
+- Related exam questions: [[2015 Q17]], [[2016 Q64]], [[2019 Q38]], [[2020 Q65]], [[2020 Q75]], [[2015 Q63]]
 - Related JPMs: [[2022 JPM Sim-h]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2015 Scenario 2]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]

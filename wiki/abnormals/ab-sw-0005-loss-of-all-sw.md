@@ -38,10 +38,15 @@ AB.SW-0005 directs the crew to <span class="hi-exam">Trip the Rx, confirm the tr
 Initiating Cue: 100% power, 21 charging pump in service, 23 charging pump aligned for Normal IAW SO.CVC-0002 §4.1, #2 SW Bay isolated for leak, all #4 Bay pumps running. RT-1 trips 24/25/26 SW pumps simultaneously — total loss of all SW. <span class="hi-exam">Required AB.SW-0005 critical actions: (1) Trip the Rx and confirm Rx trip; (2) Stop all RCPs; (3) Isolate letdown by closing 2CV3/2CV4/2CV5 (the orifice isolation valves); (4) Place 23 Charging Pump in service per Step 3.6 (set Speed Demand to 10–12% before start, increase to ~20% to couple, then stop 21 and 22 Centrifugal Charging Pumps); (5) Place 2CC131 (RCP THERMAL BARRIER) in MANUAL; (6) Reduce operating CCW pumps to one</span>. <span class="hi-trap">The reactor trip and RCP stop are taken to limit heat input to the CCW system because there is no SW available to cool CCW. The applicant may enter AB.SW-0005 directly OR enter AB.SW-0001 first via the OHA B-13/B-14 ARP path which terminates back at AB.SW-0005 Step 3.8.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q78</div>
+AB.SW-0005 (Loss of All Service Water) has a CAS: <span class="hi-exam">if RHR is in service, GO TO AB.RHR-1 or AB.RHR-2 depending on RPV level</span>. With RPV level &lt;97.5' (Mode 5), the FIRST action in AB.RHR-0002 is to STOP the in-service RHR pump. See [[RHR]], [[AB.RHR-0002 — Loss of RHR at Reduced Inventory]].
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]], [[EDGs]], [[4KV]], [[CCW]], [[CVCS]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[S2.OP-SO.CVC-0002 — Charging Pump Operation]]
-- Related exam questions: [[2016 Q92]], [[2020 Q53]], [[2022 Q90]]
+- Related exam questions: [[2016 Q92]], [[2020 Q53]], [[2022 Q90]], [[2015 Q78]]
 - Related JPMs: [[2016 JPM Sim-e]]
-- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]

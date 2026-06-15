@@ -52,13 +52,23 @@ PR channel 2N41 fails high. AB.NIS-0001 actions completed (rod control to Manual
 2N41 Power Range channel fails high at 88% power (Event 2). Rods stepping in with no runback in progress — RO places rod control in Manual. OHAs: <span class="hi-exam">E-15 PR HI RNG FLUX HI, E-31 PR OVRPWR ROD STOP, E-39 PR CH DEV, E-47 PR NEUT FLUX RATE HI</span>. CRS directs removal from service IAW S2.OP-SO.RPS-0001 — five switch manipulations at <span class="hi-exam">NI Rack No. 81</span>: Detector Current Comparator (upper/lower) to PRN41, Power Mismatch Bypass to BYPASS PR N41, Rod Stop Bypass to BYPASS PR N41, Comparator Channel Defeat to N41. CRS enters TSAS <span class="hi-exam">3.3.1.1 Actions 2 and 6 (6 hour LCO)</span>. RO withdraws rods to ARO after channel removed.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+Power Range NI Channel IV (2N44) fails high during a power ascension (Event 2). Control rods step in at 72 spm with no load reject in progress — RO places rod control in Manual (crew may enter AB.ROD-0003 first, then transitions here). CRS removes 2N44 from service IAW S2.OP-SO.RPS-0001: Detector Current Comparator UPPER and LOWER sections to PRN44 (CHANNEL DEFEAT lamps lit, <span class="hi-exam">OHA E-38 UPPER SECT DEV ABV 50% PWR and E-46 LOWER SECT DEV ABV 50% PWR clear</span>), POWER MISMATCH BYPASS to BYPASS PR N44, ROD STOP BYPASS to BYPASS PR N44 (<span class="hi-exam">OHA E-31 PR OVERPWR ROD STOP clears</span>), COMPARATOR CHANNEL DEFEAT to N44 (<span class="hi-exam">OHA E-39 PR CH DEV clears</span>); remainder requires I&amp;C support. <span class="hi-trap">Outward rod movement is unavailable until the Overpower Rod Stop is defeated — xenon burning out aids temperature control.</span> CRS enters TSAS <span class="hi-exam">3.3.1.1 Actions 2 and 6</span>, performs QPTR, requests flux map. See [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[AB.ROD-0003 — Continuous Rod Motion]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q89</div>
+With one IRNI channel already removed (TSAS 3.3.1.1) and the <span class="hi-exam">second IRNI channel oscillating erratically at power</span>: enter AB.NIS-0001, remove the second channel — loss of the second IRNI channel enters TS 3.0.3, requiring actions within one hour to <span class="hi-exam">be in Hot Standby within the next 6 hours</span>. See [[Excore NIs]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]].
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exam questions: [[2016 Q13]], [[2019 Q30]], [[2023 Q82]], [[2020 Q22]]
+- Related exam questions: [[2016 Q13]], [[2019 Q30]], [[2023 Q82]], [[2020 Q22]], [[2015 Q89]]
 - Related JPMs: [[2020 JPM Sim-f]]
-- Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2015 Scenario 1]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]]

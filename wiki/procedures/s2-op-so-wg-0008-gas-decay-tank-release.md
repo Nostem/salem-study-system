@@ -39,8 +39,13 @@ Provides instructions for releasing radioactive waste gas from 21 Waste Gas Deca
 Waste gas release sequence: the <span class="hi-exam">latch-and-set (step 5.2.11.D) must be performed before the actual release</span> — set Flow Bias to <0% before opening, then bring to 100% to verify full stroke, then back to <0% and close. For the release: max flow rate is <span class="hi-exam">32 SCFM</span> (Flow Bias <=100%). Terminate at <span class="hi-exam">10 psig</span> tank pressure by reducing Flow Bias to <0%, closing 2WG41-SWT, and closing 21WG34.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 IP-k</div>
+Aligning a Gas Decay Tank for HOLDUP (in preparation for sampling and release): perform the <span class="hi-exam">Attachment 1, Section 1.0 valve lineup</span> for the tank being placed in holdup and hang a <span class="hi-exam">Red Blocking Tag on 21WG31 (GDT INLET VALVE)</span> in the CLOSED position. The CRS Tagging Request specifies the tag is released only IAW this procedure, isolating the tank so it receives no additional waste gas while it is sampled and released.
+</div>
+
 ## Connections
 
 - Related systems: [[Waste Gas]]
-- Related JPMs: [[2023 JPM IP-k]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM IP-k]], [[2015 JPM IP-k]]
+- Related exam: [[2023 NRC Operating Exam]], [[2015 NRC Operating Exam]]

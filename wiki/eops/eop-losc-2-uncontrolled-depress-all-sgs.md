@@ -16,6 +16,11 @@ Provides operator actions for responding to an uncontrolled depressurization of 
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q25</div>
+RCP strategy in a LOSC (uncontrolled SG depressurization, e.g., MSLB at the mixing bottle with MSLI failed, RCS pressure ~1345 psig and slowly dropping, T-Colds dropping): RCPs are <span class="hi-exam">continued to be run, because the RCP pressure-dependent trip criteria are NOT used when a cooldown is in progress</span>. Per the LOSC-2 Basis Document (p. 12), the RCP pressure trip criteria are <span class="hi-exam">for RCP pump protection only</span>; the SBLOCA generic-issue concern (pumping coolant out the break then stopping RCPs leading to peak clad temps in excess of 2200&deg;F) does not apply to a LOSC. <span class="hi-trap">In a LOSC, maintaining <span class="hi-exam">forced flow</span> is more important. Traps: tripping RCPs to minimize RCS heat input or to prevent later two-phase flow is incorrect; the pressure-dependent trip criteria are not "only applicable during a LBLOCA."</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q85</div>
 LOSC-2 CAS: <span class="hi-exam">upon a pressure rise in any SG except when performing SI termination in Steps 8-20, GO TO EOP-LOSC-1</span>. After Step 20 (SI termination complete, PZR level being maintained stable), an SG pressure rise — e.g., 22 SG pressure rising during a MSLB at the Mixing Bottle with all MSLI attempts failed and 21-24MS167s open, AFW flow 1.0E4 lbm/hr to each SG — directs immediate transition to EOP-LOSC-1 because <span class="hi-exam">one SG is now available for subsequent recovery actions</span>. <span class="hi-trap">Trap: the LOSC-2 CAS does NOT defer the transition until the remaining SGs fully depressurize, and the basis is the availability of a nonfaulted SG (LOSC-1 Basis Document, page 7: "Any cooldown operations that are performed as subsequent recovery actions will require at least one nonfaulted SG"), not RCP-stop criteria.</span>
 </div>
@@ -45,10 +50,15 @@ Step 1 — 13 AFW Pump (TDAFW) steam isolation: if the 13 AFW Pump is <span clas
 Entered from EOP-LOSC-1 with <span class="hi-exam">all SGs faulted</span> and MSLI failure (21 SG steam leak inside containment, all four MSIVs failed to shut on auto/manual MSLI). RCS cooldown rate &gt;100°F/hr drives <span class="hi-exam">CT#2 (CT-33)</span>: PO reduces AFW flow to each SG to <span class="hi-exam">no less than 1.0E4 lbm/hr</span> to minimize the cooldown rate. STA RED path on Heat Sink → CRS transitions briefly to EOP-FRHS-1, verifies operator action was the cause and returns to LOSC-2. Local operators successfully shut <span class="hi-exam">23MS167</span>; pressure rise in 23 SG triggers the LOSC-2 CAS to <span class="hi-exam">transition to EOP-LOSC-1</span> (one SG no longer faulted; available for subsequent recovery actions).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q45</div>
+Completing the safeguards reset actions in LOSC-2 resets the SEC. <span class="hi-trap">After SEC reset, Containment Spray pumps will NOT auto-start on a subsequent Hi-Hi containment pressure (&gt;15 psig) until the SEC is actuated again</span> — neither CS pump starts and the CS valves do not reposition. See [[Containment Spray]], [[SECs]].
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[500KV]]
 - Related EOPs: [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]]
+- Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]], [[2015 Q45]]
 - Related scenarios: [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -84,11 +84,21 @@ Per S2.OP-IO.ZZ-0009 (Defueled to Refueling) Step 5.1.6: <span class="hi-exam">M
 SRO determines which scheduled work activities may proceed during ongoing irradiated fuel movement. Three of four activities are allowed: 22 SW pump packing replacement (TSAS 3.7.4 entered, 72-hour action), 2A EDG tagout (TSAS 3.8.1.2 only requires two EDGs during fuel moves), 21 Chiller oil change (TSAS 3.7.10 allows OOS once moves are in progress, 14 days). The blocking activity is <span class="hi-exam">New Fuel delivery — opening the FHB Truck Bay Door breaches the FHB ventilation boundary required during irradiated fuel movement</span> (per S2.OP-IO.ZZ-0010 page 19).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q49</div>
+On a loss of SFP cooling during fuel movement, as SFP temperature rises toward 150°F the dominant adverse consequence is <span class="hi-exam">increased radiation at the FHB charcoal filter from spent-fuel off-gassing</span>. SFP overflow goes out the ventilation openings (not over the pool wall), and it is always possible to lower a fuel bundle. See [[Radiation Monitoring]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q68</div>
+Per Precaution &amp; Limitation 2.2 of S2.OP-IO.ZZ-0010, spent fuel manipulations must be supervised by <span class="hi-exam">Reactor Services, a qualified SRO, OR a Reactor Engineer</span> — so with a Qualified Reactor Engineer present, <span class="hi-exam">fuel movement CAN occur without a licensed SRO</span>. See [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]].
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]], [[Radiation Monitoring]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]], [[AB.FUEL-0001 — Fuel Handling Incident]]
-- Related exam questions: [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]]
+- Related exam questions: [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]]
 - Related JPMs: [[2016 JPM SRO-A1-2]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]]

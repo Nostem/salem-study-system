@@ -142,6 +142,11 @@ During RCS depressurization without RCPs running (e.g., EOP-LOCA-5), <span class
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.8]]** — Chemistry
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.9]]** — Specific Activity
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q19</div>
+Rising RCS activity is detected by the <span class="hi-exam">2R31 Letdown Line-Failed Fuel Process Rad Monitor</span>. To determine whether rising RCS activity is caused by a <span class="hi-exam">crud burst</span> (release of activated corrosion products) or <span class="hi-exam">failed fuel</span> (fuel-clad defect releasing fission products), AB.RC-0002 directs a <span class="hi-exam">Shift Chemistry Technician isotopic (radiological) analysis of the RCS</span> — the two mechanisms produce different radionuclide concentrations. See [[AB.RC-0002 — High Activity in the RCS]] and [[Radiation Monitoring]].
+</div>
+
 ## Related EOPs
 
 - [[EOP-TRIP-1 — Reactor Trip or Safety Injection]] — verify RCS pressure control
@@ -304,12 +309,47 @@ Containment Sump leak-rate quantification (S2.OP-SO.RC-0004 §5.3) following an 
 FRHS-1 RCS Bleed and Feed: <span class="hi-exam">Step 23 (sequence) — STOP ALL RCPs (21-24)</span> before initiating SI to prevent uncontrolled RCS depressurization through PORV bleed flow with running RCPs. Step 24 alternate path opens 2RC40 thru 2RC43 (Reactor Head Vents) at 2RP3 backpanel when 2PR2 PORV fails to open — providing an alternate RCS pressure relief path through the reactor vessel head.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q21</div>
+RCS break flow during a post-LOCA depressurization is a function of subcooling: with SI pumps stopped and only charging providing makeup, EOP-LOCA-2 Step 31 directs <span class="hi-exam">minimizing RCS subcooling to reduce RCS break flow</span>. See [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]. Related W/E evolution questions: [[2015 Q23]] (FRHS-1 bleed-and-feed — delay raises RCS pressure, which limits ECCS flow), [[2015 Q22]] / [[2015 Q24]] (LOCA outside containment / loss of emergency recirculation — RHR-to-RCS interconnections).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q29</div>
+During refueling cavity fill (Mode 6, head removed), <span class="hi-exam">PZR Cold Calibrated level reads a small positive value (~3%) once cavity level (110') rises above the PZR cold cal 0% reference at the 108' 11" elevation</span> in containment; the RWST drains from 40.5' to ~27.5' supplying the cavity. The question tests the physical/elevation connections between the RWST, refueling cavity, and PZR cold cal level. See [[Refueling]], [[Pressurizer & PRT]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q33</div>
+Hydrogen is removed from the RCS before a refueling outage by chemical and mechanical degassification to <span class="hi-exam">prevent an explosive H2 concentration when O2 is introduced</span>. See [[CVCS]], [[S2.OP-SO.CVC-0011 — RCS Degassification]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q36</div>
+A <span class="hi-exam">PZR Safety Valve failing open</span> pressurizes the PRT until its rupture disk ruptures, venting saturated steam to containment (rising containment humidity/pressure). A <span class="hi-trap">RCP #1 seal failure is seen as rising RCDT level, NOT in containment</span> (closed system); a spray valve failing open lowers PZR pressure but does not change containment conditions. See [[Pressurizer & PRT]], [[Containment]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q85</div>
+Before transitioning to a Natural Circulation Rapid Cooldown (EOP-TRIP-5 / TRIP-6), <span class="hi-exam">EOP-TRIP-4 (Natural Circulation Cooldown) steps 3-17 must be completed</span> — establishing adequate SDM and upper-head cooling, blocking SI signals, and performing the initial cooldown/depressurization (per the Step 1 caution in TRIP-5/6). See [[EOP-TRIP-4 — Natural Circulation]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q98</div>
+On a rising RCS activity (2R31 Letdown Line Monitor WARNING), AB.RC-0002 directs <span class="hi-exam">RP Technician surveys to determine if radiation levels changed access requirements</span> (chemistry sampling, not RP surveys, confirms the activity rise). See [[Radiation Monitoring]], [[AB.RC-0002 — High Activity in the RCS]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+During SI Termination (EOP-TRIP-3), the crew terminates an Inadvertent SI and manually controls RCS pressure (both PZR pressure control channels failed low). After SI termination and re-establishing letdown, a <span class="hi-exam">24 SG tube rupture (SGTR)</span> initiates; CRS directs starting ECCS pumps as necessary and transitions to EOP-SGTR-1.
+</div>
+
 ## Connections
 
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
-- Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
-- Related exam questions: [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q25]], [[2016 Q28]], [[2016 Q52]], [[2016 Q77]], [[2016 Q79]], [[2016 Q81]], [[2016 Q83]], [[2016 Q84]], [[2016 Q86]], [[2018 Q3]], [[2018 Q63]], [[2018 Q65]], [[2018 Q70]], [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]]
-- Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2016 JPM Sim-d]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]], [[AB.RC-0002 — High Activity in the RCS]]
+- Related exam questions: [[2015 Q19]], [[2015 Q21]], [[2015 Q22]], [[2015 Q23]], [[2015 Q24]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q25]], [[2016 Q28]], [[2016 Q52]], [[2016 Q77]], [[2016 Q79]], [[2016 Q81]], [[2016 Q83]], [[2016 Q84]], [[2016 Q86]], [[2018 Q3]], [[2018 Q63]], [[2018 Q65]], [[2018 Q70]], [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]], [[2015 Q29]], [[2015 Q33]], [[2015 Q36]], [[2015 Q85]], [[2015 Q98]]
+- Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2016 JPM Sim-d]], [[2015 JPM RO-A1-2]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 4]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

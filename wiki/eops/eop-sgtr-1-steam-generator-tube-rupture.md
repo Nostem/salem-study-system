@@ -80,11 +80,21 @@ EOP-SGTR-1 entered from EOP-TRIP-1 after 21 SG tube rupture (escalates to 400 gp
 EOP-SGTR-1 entered from EOP-TRIP-1 after 21 SG tube rupture. <span class="hi-exam">CT#1 (CT-18) — isolate feed flow into and steam flow from 21 SG prior to a transition to SGTR-3 being required:</span> Part 1 — close <span class="hi-exam">21AF11 and 21AF21</span> (AFW isolation valves); Part 2 — shut <span class="hi-exam">21MS167</span> and verify 21MS7, 21MS18, and 21GB4 are shut. PO ensures 21MS10 set at <span class="hi-exam">1045 psig</span>. CRS dispatches operator to shut 21MS45 and 2SS321 sample valve. PO ensures 23 AFW pump speed at minimum and trips 23 AFW pump (steam supply was lost when 21MS45 was shut). Cooldown target from Table D: <span class="hi-exam">503&deg;F CETs</span> for ruptured SG pressure ~1000 psig. PO places steam dumps in MS Pressure Control-Manual at 25% to perform cooldown; bypasses Tavg when Tavg Low-Low reached. <span class="hi-exam">CT#2 (CT-19) — establish/maintain RCS T so transition from SGTR-1 does NOT occur because temperature too high (lose subcooling) or so low it causes transition to FRTS or FRSM.</span> RO depressurizes via PZR Spray initially; when 23 RCP trips spray loses effectiveness — RO shuts both PZR Spray valves and uses 2PR2 PZR PORV (2PR1 fails to open). 2PR2 then fails to shut and 2PR7 Block Valve fails 90% open → CRS transitions to EOP-SGTR-3.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q79</div>
+EOP-SGTR-1 does NOT contain a step that directly starts a RCP — it <span class="hi-exam">directs RCP start IAW S2.OP-SO.RC-0001 (RCP Operation)</span>, so all RCP support conditions/P&amp;Ls must be satisfied. With RVLIS upper range &lt;100%, PZR level and saturated PZR conditions are also required (plus RCS subcooling). See [[RCPs]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+Terminating event: after Inadvertent SI termination and re-establishing letdown, a <span class="hi-exam">24 SG tube rupture</span> occurs. CRS directs CAS action to start ECCS pumps as necessary (based on RCS pressure/trend — the Basis Document for TRIP-3 does not specify how many) and transitions to EOP-SGTR-1. The scenario terminates when the transition to SGTR-1 is made.
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Pressurizer & PRT]], [[Main Steam]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-2 — Post SGTR Cooldown]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]], [[EOP-FRHS-3 — Response to Steam Generator High Level]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
-- Related exam questions: [[2016 Q15]], [[2016 Q79]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]]
+- Related exam questions: [[2015 Q11]], [[2016 Q15]], [[2016 Q79]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]], [[2015 Q79]]
 - Related JPMs: [[2019 JPM SRO-A5]], [[2019 JPM Sim-c]], [[2020 JPM Sim-g]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]

@@ -126,6 +126,16 @@ AB.ROD-0003 (Continuous Rod Motion) entry conditions: rods <span class="hi-exam"
 Using the Curve Book (S2-RE-RA.ZZ-0016), for a power reduction from 100% to 80% at 8000 EFPH and 900 ppm boron: power defect adds <span class="hi-exam">(+) 396 pcm</span> to core reactivity. If boration absorbs (-) 216 pcm, Control Bank D must absorb the remaining <span class="hi-exam">(-) 180 pcm by inserting from 228 steps to approximately 186 steps</span> (IAW Figure 2C, Integral Rod Worth). <span class="hi-trap">Trap: requires reading multiple curves/tables — power defect from Figure 17A or Table 2-1, then rod worth from Figure 2C. Errors in any step give different (wrong) rod positions.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q9</div>
+<span class="hi-exam">Differential boron worth rises over core life</span>, so a rapid boration to compensate for a failure-to-scram inserts more negative reactivity at EOL (HIGHER differential boron worth) than at BOL. This governs the effectiveness of boration as a reactivity-management tool during an ATWS.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q11</div>
+For a tube-leak shutdown with a Rx trip, boration for a <span class="hi-exam">single stuck rod is NOT performed in the EOP series (TRIP-2)</span> — it is directed in AB.SG-0001 (re-entered at Step 3.27 after exiting the TRIP series), Step 3.28, as a <span class="hi-exam">rapid boration of 35 minutes per stuck rod</span> to satisfy SDM for the initial cooldown to 500&deg;F.
+</div>
+
 ## CRDM Vent Fans
 
 <div class="callout callout-jpm">
@@ -181,11 +191,36 @@ SDM calculation per TSAS 3.1.3.1 Action c.3 with rod 105 declared INOPERABLE (tr
 <span class="hi-exam">Shutdown Bank rod 1S A3 drops</span> at 1x10<sup>-8</sup> Amps with Control Bank D at 130 steps. Symptom: OHA <span class="hi-exam">E-48 ROD BOTTOM</span>, rod-bottom light illuminated for SB rod 1S A3. Crew enters AB.ROD-0002, confirms rods in manual; RO reports the <span class="hi-exam">reactor is subcritical as a result of the dropped rod</span>; CRS directs RO to insert all control and shutdown bank rods, RO initiates rod insertion in manual.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q28</div>
+<span class="hi-exam">OHA E-48 ROD BOTTOM clears during a startup when Control Bank A is withdrawn past 20 steps</span>. There are 3 Rod Bottom Bypass Bistable Modules (Control Banks B, C, and D only); each blocks ROD BOTTOM for its own bank below 35 steps. When all banks are on bottom the alarm is illuminated; with Control Bank A &gt;20 steps the alarm clears (B/C/D bypassed). Bypassing banks B/C/D until &gt;35 steps gives dropped-rod indication on any shutdown/control bank. See [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q76</div>
+A dropped Shutdown Bank rod with the Rx exactly critical during low-power physics testing: per AB.ROD-0002, the CRS directs <span class="hi-exam">fully inserting all Control Bank and Shutdown Bank rods</span> (becoming subcritical) — a dropped-rod recovery is NOT done because <span class="hi-trap">withdrawing the recovered rod would constitute an approach to criticality</span> (only allowed via the startup procedure). See [[AB.ROD-0002 — Dropped Rod]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q88</div>
+On a loss of Rod Position Indication (IRPIs dark), the <span class="hi-exam">affected rods are assumed fully withdrawn (reactivity unavailable)</span>. AB.ROD-0004 requires <span class="hi-exam">an additional 270 ppm boration per failed IRPI</span> if shutting down before the IRPI is operable (two failed Control Bank D IRPIs → 540 ppm); boration to Cold Shutdown SDM is NOT required for a shutdown to Hot Standby. See [[CVCS]], [[AB.ROD-0004 — Rod Position Indication Failure]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q94</div>
+During a control-rod startup, when the predicted critical rod height differs from the ECC: <span class="hi-exam">if the difference is &lt;300 pcm (eightfold position), no action is required and the startup continues</span> (e.g., ECC 77 steps = 1079.4 pcm vs predicted 122 steps = 877.0 pcm → 202.4 pcm difference). See [[S2-RE-RA.ZZ-0016 — Curve Book (Salem Unit 2 Cycle 23)]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-a</div>
+Dropped-rod corrective actions per AB.ROD-0002: on a single dropped rod, <span class="hi-exam">place the Rod Bank Selector Switch in MAN</span> to defeat the automatic outward rod motion that would otherwise occur at <span class="hi-exam">T+1:30</span>, then maintain Tave within 1.5° of program. If <span class="hi-exam">more than one rod is verified dropped (step 2.1), manually TRIP the reactor</span> and GO TO EOP-TRIP-1 — a second dropped rod is recognized by a second rod bottom light, depressed power/flux in the region of the two rods, lowering Tavg/Terr, or OHA D-32 TAVE LO. See [[AB.ROD-0002 — Dropped Rod]].
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]], [[CVCS]], [[Main Turbine]]
-- Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
-- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam questions: [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2016 Q77]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]]
-- Related JPMs: [[2018 JPM Sim-a]], [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[curve book]]
+- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2015 Scenario 4]]
+- Related exam questions: [[2015 Q9]], [[2015 Q11]], [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2016 Q77]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]], [[2015 Q28]], [[2015 Q76]], [[2015 Q88]], [[2015 Q94]]
+- Related JPMs: [[2018 JPM Sim-a]], [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]], [[2015 JPM Sim-a]]
+- Related exam: [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

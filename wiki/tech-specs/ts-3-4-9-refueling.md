@@ -332,9 +332,19 @@ With S2.OP-IO.ZZ-0010 (SFP Manipulations) in effect, a tubing break causes total
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-9.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-9.pdf" target="_blank">View Bases PDF</a>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q67</div>
+Core Alterations in Mode 6 require, among others, <span class="hi-exam">2 Source Range NIs operable (LCO 3.9.2)</span>. Less-restrictive related LCOs: 3.9.3.a (only 80 hours subcriticality Oct 15–May 15), 3.9.4.b (one airlock door per airlock capable of being closed), 3.9.8.1 (only one RHR loop in service). See [[Refueling]], [[Excore NIs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q95</div>
+<span class="hi-trap">TSAS 3.9.3: the reactor need NOT be subcritical for 168 hours before moving fuel during Oct 15–May 15</span>; direct/continuous control-room↔refuel-floor communication is a CORE ALTERATION requirement. Head detensioning is not a core alteration. See [[Refueling]].
+</div>
+
 ## Connections
 
 - Related systems: [[RHR]], [[CVCS]], [[Rx Vessel & Internals]], [[Refueling]], [[FHV]], [[Spent Fuel Pool]]
 - Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
-- Related exam questions: [[2016 Q68]], [[2016 Q80]], [[2020 Q94]]
-- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2016 Q68]], [[2016 Q80]], [[2020 Q94]], [[2015 Q67]], [[2015 Q95]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]

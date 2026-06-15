@@ -25,9 +25,14 @@ AB.RHR-0002 entry criteria: applies when <span class="hi-exam">RCS is at Water E
 AB.RHR-0002 CAS: <span class="hi-exam">"IF AT ANY TIME, a Charging OR SI pump cannot be aligned and started to make up to the RCS, THEN the crew will ESTABLISH RWST Gravity Feed to RCS level > 97.5 feet."</span> The logic is <span class="hi-exam">OR</span> — either a charging pump OR an SI pump must be available. If NEITHER can be aligned, establish RWST gravity feed. <span class="hi-trap">Trap: AND logic (both must fail) is incorrect. Only one pump type needs to fail to be unable to make up for the CAS to direct RWST gravity feed.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q78</div>
+On a loss of RHR at reduced inventory (RPV level &lt;97.5'), the <span class="hi-exam">in-service RHR pump is STOPPED to preclude pump damage</span>; a second RHR pump is NOT started (the procedure checks for a RHR pump already in service). See [[RHR]], [[AB.SW-0005 — Loss of All Service Water]].
+</div>
+
 ## Connections
 
 - Related systems: [[RHR]], [[ECCS]], [[CVCS]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
-- Related exam questions: [[2018 Q53]], [[2019 Q87]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]]
+- Related exam questions: [[2018 Q53]], [[2019 Q87]], [[2015 Q78]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2015 NRC Written Exam]]

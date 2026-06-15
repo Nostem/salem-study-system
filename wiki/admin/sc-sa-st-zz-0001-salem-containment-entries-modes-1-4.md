@@ -22,9 +22,14 @@ Station administrative procedure governing containment entries while the unit is
 SC.SA-ST.ZZ-0001 (Rev. 5) requires <span class="hi-exam">prior RP Supervisor approval</span> to enter containment in Modes 1 or 2 during <span class="hi-exam">ANY reactor power change &gt;5% / hr</span> (not limited to power ascension). The procedure also limits entry to <span class="hi-exam">10 people per operable air lock</span>; with both airlocks operable this yields a maximum of <span class="hi-exam">20 people</span> in containment at one time. See steps 2.4 and 3.2. <span class="hi-trap">Trap: the &gt;5% / hr trigger applies to ANY power change (ascension OR descension), not power ascension only.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q72</div>
+Containment access is normally authorized by the SM/CRS. <span class="hi-exam">To access containment while power is being changed &gt;5%/hr, the Radiation Protection Supervisor approval is additionally required</span> (Pre-req 2.4). See [[Containment]], [[RP-SA-102 — Containment Entries at Power]].
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]]
 - Related procedures: [[RP-SA-102 — Containment Entries at Power]]
-- Related exam questions: [[2016 Q72]]
-- Related exam: [[2016 NRC Written Exam]]
+- Related exam questions: [[2016 Q72]], [[2015 Q72]]
+- Related exam: [[2016 NRC Written Exam]], [[2015 NRC Written Exam]]

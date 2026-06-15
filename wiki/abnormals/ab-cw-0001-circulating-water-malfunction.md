@@ -41,10 +41,15 @@ Loss of #4 SPT causes 23 CW Bus de-energization — 21A-23A CW pumps trip. Conde
 21A condenser tube leak (Event 4). Crew enters both AB.CHEM-0001 and AB.CW-0001. PO identifies rising secondary chemistry on 2RP5 recorders — 21A condenser is affected hotwell. PO reports Gross Condenser Tube Failure conditions met and <span class="hi-exam">Emergency Trips 21A CW pump</span> (waits ~1 minute before pressing Stop PB to allow water to drain from waterbox).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q93</div>
+On a loss of circulators (23 SPT lost → 3 of 4 circulators off): <span class="hi-exam">the reactor remains at power</span> (the CAS Rx trip applies only with 4 circulators O/S above P-9). AB.CW-0001 (page 5) allows/directs <span class="hi-exam">manually establishing Low Pressure Turbine Hood Spray</span> (normally secured &gt;15% power). See [[Circ Water]], [[Main Turbine]].
+</div>
+
 ## Connections
 
 - Related systems: [[Main Turbine]], [[Circ Water]]
 - Related EOPs: [[EOP-TRIP-1]]
-- Related exam questions: [[2019 Q37]], [[2023 Q93]]
+- Related exam questions: [[2019 Q37]], [[2023 Q93]], [[2015 Q93]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]]

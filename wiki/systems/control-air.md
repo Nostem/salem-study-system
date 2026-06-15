@@ -20,6 +20,11 @@ CA330 (Containment Supply Inlet Valves) <span class="hi-exam">fail CLOSED on a l
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q13</div>
+The RHR HX flow control valve (21RH18) and HX bypass valve (2RH20) are supplied air <span class="hi-exam">exclusively from the "A" air header, which is fed by the Unit 2 ECAC</span>. On a station blackout with the Unit 2 ECAC failed to start, control air on the "A" header <span class="hi-exam">bleeds away fairly rapidly</span> and both valves <span class="hi-exam">fail AS IS</span>. <span class="hi-trap">115VB inverter power keeps the console valve-position indication accurate for at least 2 hours after a LOPA, so the indicated positions are correct even with no control air.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q26</div>
 ECAC automatic start setpoint: <span class="hi-exam"><span class="val-trip">&lt; 85 psig</span> control air pressure</span>. <span class="hi-trap">88 psig is the MANUAL start setpoint per AB.CA-0001 — not the auto start setpoint. At 86 psig, the ECAC has NOT reached its auto start setpoint.</span> To MANUALLY start the ECAC from the control room, the <span class="hi-exam">MINIMUM pushbutton manipulation is depressing A then B (two-button sequence)</span>. A single button (B ONLY) is not sufficient.
 </div>
@@ -104,12 +109,27 @@ BF19 (SG FW CONT V) failure on loss of control air: <span class="hi-exam">BF19s 
 <strong>Loss of Control Air cascade (alternate path):</strong> #2 SAC trip causes Unit 2 ECAC auto-start (loads at 85 psig); #1 SAC then trips and locks out; #1 ECAC has tripped. Only the 2 ECAC remains. <span class="hi-exam">2A Control Air Header is supplied from #2 ECAC; 2B Control Air Header is supplied from #1 ECAC</span> — with #1 ECAC down, 2B header drops below 80 psig and AB.CA-0001 routes to the alternate path (Step 3.19 → 3.57+). <span class="hi-trap">All three SAC supply breakers open is the auto-start signal for both ECACs, but only the Unit 2 ECAC will auto-start (Unit 1 will not). Next-to-load SAC needs Station Air pressure 5 psig below the 105 psig follow setpoint for ~5 seconds before it auto-starts.</span> Critical alternate-path actions: isolate letdown (close 2CV3/4/5/2/277/7); terminate any liquid/gaseous release (close 2WL51 and 2WG41); manually trip the reactor on BF19 closure with SG levels uncontrollable.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q37</div>
+Loss of control air to <span class="hi-exam">2CC215 (EXCESS LETDOWN HX CC INLET V) fails it closed</span> (fail air-and-power), removing CC cooling from the Excess Letdown HX. Excess letdown temperature/pressure rise and operators secure excess letdown. See [[CCW]], [[CVCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q62</div>
+The Emergency Control Air Compressor (ECAC): <span class="hi-exam">at 95 psig and above header pressure the ECAC will NOT supply the Control Air header</span>; after any SEC start the only remaining ECAC trip is motor overload. With both CA headers at 96 psig before and after, a SEC stop/restart of the ECAC has no effect on the CA headers. See [[S2.OP-SO.CA-0001 — Control Air System Operation]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q96</div>
+During refueling fuel movement, <span class="hi-exam">a loss of Control Air to containment precludes core alterations because the manipulator crane is air-powered for gripping</span>. See [[Refueling]], [[S2.OP-SO.SF-0009 — Refueling Operations]].
+</div>
+
 ## Connections
 
-- Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]], [[Waste Gas]], [[Steam Generator & Blowdown]]
-- Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
+- Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[RHR]], [[DC Power]]
+- Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.CA-0001 — Control Air System Operation]]
 - Related abnormals: [[AB.460-0003 — Loss of 2C 460/230V Vital Bus]]
-- Related exam questions: [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]]
+- Related exam questions: [[2015 Q13]], [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]], [[2015 Q37]], [[2015 Q62]], [[2015 Q96]]
 - Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]]

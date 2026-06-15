@@ -28,10 +28,15 @@ When swapping condenser vacuum pumps per S2.OP-SO.AR-0001: if the <span class="h
 Event 2: <span class="hi-exam">24 Vacuum Pump trips</span> during load reduction. PO enters AB.COND-0001. PO starts all available vacuum pumps — <span class="hi-exam">22 Vacuum Pump trips after starting</span>, 25 Vacuum Pump starts but <span class="hi-exam">25AR25 (vacuum pump discharge AOV) fails to open</span>. PO manually opens 25AR25 from the control room. Condenser backpressure recovers.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+24 Vacuum pump trips and its discharge valve <span class="hi-exam">24AR25 fails to auto close</span>, leaving an open air path that prevents recovering condenser vacuum. None of the standby vacuum pumps restore vacuum; condenser backpressure slowly rises, driving the crew into AB.COND-0001 and a power reduction. Demonstrates that a failed-open AR25 (vacuum breaker / pump discharge valve) defeats vacuum recovery even with all available vacuum pumps running.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Turbine]]
 - Related procedures: [[AB.COND-0001 — Loss of Condenser Vacuum]], [[S2.OP-SO.AR-0001 — Condenser Air Removal System Operation]]
 - Related exam questions: [[2018 Q36]], [[2019 Q92]], [[2020 Q63]]
-- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2015 Scenario 3]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]

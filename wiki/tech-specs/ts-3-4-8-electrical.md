@@ -174,6 +174,11 @@ b. Three 28-volt battery supplies for reactor trip breaker UV coils
 | 1 battery bank or charger inoperable | Restore | <span class="val-alarm">2 hrs</span> (battery) or <span class="val-alarm">24 hrs</span> (charger with spare) |
 | 1 of 3 28V supplies inoperable | Restore | <span class="val-alarm">48 hrs</span> |
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q15</div>
+Battery charger operating practice (per S2.OP-AR.ZZ-0002 OHA B-10 response): the 2B1 battery charger is normally in service; the <span class="hi-exam">2B2 (backup) charger is not normally in service and its use is limited to 7 days per Tech Specs</span>, with <span class="hi-exam">no automatic swap</span>. The required action on OHA B-10 (2B 125VDC CNTRL BUS VOLT LO) is to place the 2B2 charger in service; transferring 125 VDC loads to the alternate source is done only if 2B2 cannot be placed in service.
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.2.1 DC Sources (Operating)</summary>
 <div class="callout callout-bases">
@@ -266,10 +271,15 @@ EDG monthly surveillance missed periodicity — applying SR 4.0.2: with the EDG 
 2C EDG Pre-Lube pump fails as the initial event with the 2C EDG Jacket Water heater already CIT. CRS recognizes 2C EDG inoperable with both Jacket Water heater AND Pre-lube pump inoperable, and enters <span class="hi-exam">LCO 3.8.1.1.b action b</span>. Determines <span class="hi-exam">S2.OP-ST.500-0001, Electrical Power Systems AC Sources Alignment, must be performed within one hour</span> to demonstrate operability of the independent AC Sources (action b.1).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q92</div>
+<span class="hi-exam">SR 4.8.1.2: certain EDG surveillances are NOT required to be performed to maintain EDG operability</span> (the bases preclude paralleling the EDG with offsite power or de-energizing a required ESF bus during the test). A missed 18-month Hot Restart surveillance keeps the EDG OPERABLE; per the bases it must be completed prior to entering Mode 4 if the frequency was exceeded. See [[EDGs]].
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[4KV]], [[EDGs]], [[DC Power]], [[115V AC]]
-- Related exam questions: [[2016 Q91]], [[2016 Q96]], [[2018 Q21]], [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]]
+- Related exam questions: [[2015 Q15]], [[2016 Q91]], [[2016 Q96]], [[2018 Q21]], [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]], [[2015 Q92]]
 - Related JPMs: [[2020 JPM SRO-A3]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

@@ -24,6 +24,11 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 - Battery chargers maintain batteries on float charge during normal operation
 (UFSAR 8.3.2.1, 8.3.2.2)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q15</div>
+Per S2.OP-AR.ZZ-0002 (Overhead Annunciators Window B), the required response to <span class="hi-exam">OHA B-10, 2B 125VDC CNTRL BUS VOLT LO</span> is to <span class="hi-exam">place the 2B2 Battery Charger in service</span>. The 2B1 battery charger is normally in service; the 2B2 (backup) charger is NOT normally in service and its use is <span class="hi-exam">limited to 7 days per Tech Specs</span>. There is <span class="hi-exam">no automatic swap</span> between chargers. <span class="hi-trap">Trap: transferring 125 VDC bus loads to their alternate source is done ONLY if the backup (2B2) charger cannot be placed in service — it is not the first action. There is also no auto-energization of 2B2 to "ensure" it has started.</span>
+</div>
+
 ## 250V DC System
 
 - Provides power for turbine turning gear and other large DC loads
@@ -56,6 +61,11 @@ Purpose of the 28 VDC Control Power System is to provide DC electrical power und
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q22</div>
 During a STATION BLACKOUT with vital batteries discharging at their MAXIMUM rate, the vital batteries will supply DC power to emergency equipment for <span class="hi-exam">AT LEAST 2 hours</span>. <span class="hi-trap">Trap: 4 hours is the SBO coping duration WITH load shedding per EOP-LOPA-1 — the 2 hour value is the minimum at maximum discharge rate without load shed.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q13</div>
+During a station blackout, <span class="hi-exam">115VB inverter power remains available from the inverters for at least 2 hours following a LOPA</span> — so console valve-position indication (e.g., 21RH18 and 2RH20 RHR HX valves) stays accurate even after control air bleeds away and the valves fail as-is.
 </div>
 
 <div class="callout callout-exam">
@@ -131,9 +141,22 @@ LCO 3.8.2.3 battery cell parameters: with 3 connected cells at Float Voltage of 
 Station Blackout 125VDC Load Shed per EOP-LOPA-1 Checkoff Sheet 3 (COS 3-1 thru 3-3). Operator must locate DC distribution panels across two elevations and open ONLY the specific breakers listed. <span class="hi-exam">64 ft elevation</span>: 2A 125VDC Bus, 2ADC 125VDC Distribution Panel, 2B 125VDC Bus, 2DDC and 2CDC 125VDC Distribution Panels. <span class="hi-exam">100 ft elevation switchgear room</span>: 2AADC, 2BBDC, 2CCDC 125VDC Distribution Panels. Field labeling discrepancies: <span class="hi-exam">2ADC3AX29</span> labeled "Source #1 125 VDC to AVR Excitation Cab" (procedure calls it "2 Generator Exciter Voltage Regulator"); <span class="hi-exam">2DDC2AX28</span> labeled "21SJ162, 2SJ166, 22SJ162, 22SJ166, 2SJ158" (procedure calls it "Safety Injection Test Line Valves").
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q56</div>
+On a total loss of all AC power, the station vital <span class="hi-exam">125 VDC batteries are designed (FSAR 8.3.3.2) to supply vital station loads for a minimum of 2 hours</span>, based on the required operation of the DC emergency equipment.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q57</div>
+4KV Group bus breaker control power is supplied from the DC system. <span class="hi-trap">If a 4KV group bus loses its 125 VDC control power, a running RCP breaker continues to run but will NOT trip when required</span> — 4KV breakers cannot be tripped remotely without 125VDC to energize the trip coil, and the alternate DC supply does NOT auto-transfer (it is transferred manually). See [[4KV]], [[RCPs]].
+</div>
+
 ## Connections
 
+- Related systems: [[115V AC]], [[RHR]], [[Control Air]], [[EDGs]]
+- Related procedures: [[S2.OP-SO.115-0012 — 2B Vital Instrument Bus UPS System Operation]]
+- Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]]
 - Related tech specs: [[TS 3/4.8 — Electrical]]
-- Related exam questions: [[2016 Q56]], [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]]
+- Related exam questions: [[2015 Q13]], [[2015 Q14]], [[2015 Q15]], [[2016 Q56]], [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]], [[2015 Q56]], [[2015 Q57]]
 - Related JPMs: [[2018 JPM IP-i]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]]

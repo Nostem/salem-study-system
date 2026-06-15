@@ -38,10 +38,25 @@ A <span class="hi-exam">single piece of red tape diagonally across an OHA window
 Per S2.OP-AB.ANN-0001 (Loss of Overhead Annunciator System), if a complete and total loss of ALL OHAs occurs and cannot be restored within 15 minutes, the directed control room response is to <span class="hi-exam">initiate continuous control console walkdown</span> (and P-250, etc.). <span class="hi-trap">Trap: tripping the reactor or initiating a power reduction is NOT warranted unless overriding plant status would direct it, not just from the annunciator problem. The alternate alarm check (cycling RPS/SSPS cabinet door every 15 minutes) is for verifying status when SOME functionality is present — NOT for total loss of OHAs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q28</div>
+<span class="hi-exam">OHA E-48 ROD BOTTOM</span> illuminates when all rod banks are on bottom and, during a reactor startup, clears once Control Bank A is withdrawn past 20 steps (Control Banks B/C/D bypassed below 35 steps). See [[Control Rod Drive]] and [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q80</div>
+The sequential SW header alarms <span class="hi-exam">B-13 (21 SW HDR), B-14 (22 SW HDR), B-15 (TURB AREA SW HDR), then B-48 (SW VLV RM FLOODED)</span> localize a SW leak — the B-48 flooding alarm points to a single CFCU supply line (78' Mech Pen Area), handled by AB.SW-0001. See [[Service Water]], [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q99</div>
+On a loss of all overhead annunciators (AB.ANN-0001): the <span class="hi-exam">S5 EAL requires the loss to be ≥15 minutes</span> to declare. Even with a significant transient (Rx trip at T+5), declaration waits — AB.ANN actions (e.g., swapping to the backup SER) may restore functionality. <span class="hi-exam">When neither SER is in command at T+14, an Alert is declared</span>. See [[AB.ANN-0001 — Loss of Overhead Annunciator System]], [[EP-SA-111-101 — Emergency Classification and ICMF]].
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]]
 - Related procedures: [[OP-AA-102-103-1001 — Operator Burdens Program]]
 - Related abnormals: [[AB.ANN-0001 — Loss of Overhead Annunciator System]]
-- Related exam questions: [[2016 Q56]], [[2016 Q66]], [[2016 Q75]], [[2020 Q66]]
-- Related exams: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2016 Q56]], [[2016 Q66]], [[2016 Q75]], [[2020 Q66]], [[2015 Q28]], [[2015 Q80]], [[2015 Q99]]
+- Related exams: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]

@@ -96,10 +96,21 @@ Attachment 2 — concurrent loss of seal injection AND thermal barrier CCW (2CC1
 22 RCP #1 seal degradation: seal leakoff flow rises to <span class="hi-exam">~5.2 gpm</span> (stable). CRS enters AB.RCP-0001, uses P-250 to check 22 RCP conditions. CCW supply normal, winding temps normal, seal injection >6 gpm. CRS determines <span class="hi-exam">orderly shutdown required within 8 hours</span> (Step 3.6). Seal then fails — leakoff exceeds 6 gpm → Att 1 CAS and Att 2 (Stopping RCPs). CRS briefs trip actions, assigns <span class="hi-exam">22CV104 closure within 3-5 minutes</span> of stopping 22 RCP. Trip reactor, stop 22 RCP, close 22CV104 (CT#1).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-g</div>
+Total loss of Component Cooling Water to all RCPs (22 then 21 CCW pump trip, standby 23 fails to start). The OHA D20-D23 alarm response directs GO TO AB.RCP-0001 if RCP Motor Bearing Temperature reaches <span class="val-trip">175°F</span> or CCW flow can NOT be established within 5 minutes with temps trending up. On the validated total-loss conditions, Attachment 2 (Stopping Reactor Coolant Pumps) directs: <span class="hi-exam">IF RTBs CLOSED, TRIP the Reactor; STOP affected RCP(s)</span>; and for a total loss of CCW (including loss of CCW to the CVCS Letdown Heat Exchanger), simultaneously <span class="hi-exam">CLOSE 2CV2 AND 2CV277 (isolate letdown), OPEN 2SJ1 AND 2SJ2 (swap charging suction to RWST), CLOSE 2CV40 AND 2CV41 (isolate VCT)</span>, then GO TO EOP-TRIP-1. The "Stopping Reactor Coolant Pumps" attachment is identical to the one in AB.CC-0001. See [[CCW]], [[AB.CC-0001 — Loss of Component Cooling Water]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #4</div>
+22 CCW pump trips with the standby (23) CCW pump failing to auto-start. After the crew manually starts 23 CCW pump and restores CCW pressure, AB.RCP-0001 (along with [[AB.CC-0001 — Loss of Component Cooling Water]]) is referenced to <span class="hi-exam">verify entry is NOT required</span> — RCP CCW-cooled parameters are confirmed trending back to normal values. See [[2015 Scenario 4]].
+</div>
+
 ## Connections
 - Related systems: [[RCPs]], [[CCW]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[AB.RC-0004 — Natural Circulation]]
 - Related exam questions: [[2018 Q51]], [[2018 Q79]], [[2019 Q55]], [[2020 Q4]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
-- Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related JPMs: [[2015 JPM Sim-g]]
+- Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 4]]
+- Related exam: [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]]

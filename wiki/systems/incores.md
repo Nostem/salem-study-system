@@ -52,12 +52,17 @@ The SMM switches to ADVERSE mode when containment conditions are degraded. Eithe
 SMM adverse containment logic: <span class="hi-exam">either containment pressure > 4 psig OR R44A/B > 1E05 R/HR triggers ADVERSE mode</span> (only one condition required). When containment pressure lowers to < 3 psig, the SMM automatically resets from a pressure-driven adverse signal. <span class="hi-trap">However, the SMM does NOT automatically reset when radiation levels lower below adverse threshold — manual action is required to reset from a radiation-driven adverse condition.</span> Common trap: >1E06 R/HR is the integrated dose number used in procedures, NOT the adverse containment threshold (which is >1E05 R/HR).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q44</div>
+At the CET Control Panel, the <span class="hi-exam">"ALL" Mode displays the two highest-reading Train A CETs in each quadrant, then sequentially displays all Train A CETs</span> (Table C of EOP-CFST-1). The 700°F threshold is the CFST-1 Core Cooling purple-path criterion, not a CET display mode. See [[EOP-CFST-1 — Critical Safety Function Status Trees]].
+</div>
+
 ## Connections
 
 - Related systems: [[Excore NIs]], [[RCS]], [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2020 Q26]], [[2020 Q58]], [[2023 Q57]]
-- Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2020 Q26]], [[2020 Q58]], [[2023 Q57]], [[2015 Q44]]
+- Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]]
   - [[2023 Q57]] — In-Core Temperature Monitoring CET / reference junction compensation / 2300°F limit
   - [[2020 Q26]] — SMM adverse containment mode / R44A/B > 1E05 R/HR / manual reset required for radiation
   - [[2020 Q58]] — Subcooling Margin Monitor inputs (CET temp, RCS WR pressure, not PZR pressure)

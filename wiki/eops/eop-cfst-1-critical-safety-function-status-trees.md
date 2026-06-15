@@ -72,10 +72,31 @@ Concurrent CFST priorities: an FRTS PURPLE path (RCS Cooldown &gt; 100&deg;F/hr 
 SPDS use restriction: <span class="hi-exam">"SPDS is not designed to be used as a primary indication, and no actions should be based upon SPDS indications without verification of the primary indications, which are the installed Control Room 1E instruments."</span> Even when SPDS shows a Heat Sink Red Path on TRIP-1 exit, the crew does NOT immediately transition to FRHS-1; the procedure-in-effect (e.g., EOP-TRIP-2 step 3) is followed first using primary 1E indications. CFSTs become active upon exit from EOP-TRIP-1.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q44</div>
+Table C of CFST-1 defines the CET Control Panel display modes: in <span class="hi-exam">"ALL" Mode the display progresses through the first and second highest CETs in each quadrant, then sequentially displays all CETs assigned to that channel</span>. The 700°F CET value is the Core Cooling (purple path) criterion. See [[Incores]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q83</div>
+CFST RED-path prioritization: a <span class="hi-exam">loss-of-secondary-heat-sink RED path (FRHS-1) takes priority over a thermal-shock RED path (FRTS-1)</span>. See [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q84</div>
+Knowing when NOT to implement a RED-priority CFST is as important as knowing when to: during FRCC-2 accumulator injection, <span class="hi-trap">a RED Thermal Shock path is NOT immediately implemented (FRTS-1) because stopping the cooldown to thermal-soak would let the core re-uncover</span>, deteriorating degraded core cooling to inadequate core cooling. See [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+<span class="hi-exam">CFST monitoring commences after the transition out of EOP-TRIP-1</span> into EOP-LOCA-1 (STA reports to the control room ~10 minutes after being paged). During the LBLOCA the status trees identify both an <span class="hi-exam">FRTS RED path (imminent PTS) → EOP-FRTS-1</span> and an <span class="hi-exam">FRCE PURPLE path (excessive containment pressure) → EOP-FRCE-1</span>; each is an enter/act/return contingency that returns the crew to the procedure in effect. See [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]].
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]], [[EOP-FRCE-2 — Response to Containment Flooding]], [[EOP-FRCE-3 — Response to High Containment Radiation Levels]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRSM-2 — Response to Loss of Core Shutdown]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]]
+- Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]], [[EOP-FRCE-2 — Response to Containment Flooding]], [[EOP-FRCE-3 — Response to High Containment Radiation Levels]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRSM-2 — Response to Loss of Core Shutdown]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related systems: [[RVLIS]], [[RPS/SSPS]], [[Incores]], [[Containment]], [[Radiation Monitoring]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
-- Related exam questions: [[2016 Q76]], [[2016 Q83]], [[2018 Q47]], [[2018 Q74]], [[2018 Q75]], [[2018 Q80]], [[2018 Q85]], [[2019 Q46]], [[2019 Q75]], [[2020 Q24]], [[2020 Q26]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related scenarios: [[2015 Scenario 1]], [[2015 Scenario 3]], [[2015 Scenario 4]]
+- Related exam questions: [[2016 Q76]], [[2016 Q83]], [[2018 Q47]], [[2018 Q74]], [[2018 Q75]], [[2018 Q80]], [[2018 Q85]], [[2019 Q46]], [[2019 Q75]], [[2020 Q24]], [[2020 Q26]], [[2015 Q44]], [[2015 Q83]], [[2015 Q84]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

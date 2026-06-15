@@ -67,10 +67,21 @@ Step 4.4.1: if a reactor trip occurs while performing an AOP (intentionally or a
 APPX-7 is referenced as one of three procedure revisions checked for the JPM (LOCA-1 Rev. 30, LOCA-3 Rev. 30, APPX-7 Rev. 0, OP-AA-101-111-1003 Rev. 6). The Continuous Action Summary (CAS) at the top of LOCA-3 directs immediate transition to APPX-7 when sump-blockage cavitation is identified — a CAS continuous-action transition rather than a step-by-step linear branch.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q74</div>
+Use of Procedures permits entering EOP-TRIP-1 or EOP-LOPA-1 on a total loss of all AC power. <span class="hi-exam">Entering LOPA-1 directly is valid — its immediate actions trip the Rx then trip the Turbine (no Rx-trip confirmation, since there is no power)</span>. If TRIP-1 is entered instead, it kicks out to LOPA-1 before the SI evaluation step. See [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOPA-1 — Loss of All AC Power]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+Listed among the technical references governing crew conduct throughout the scenario (proper use of Alarm Response Procedures, abnormal procedures, and EOPs during the PZR pressure channel failure, MPT fire reactor trip, Inadvertent SI termination, and SGTR response).
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
 - Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
-- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]]
+- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]], [[2015 Q74]]
 - Related JPMs: [[2016 JPM Sim-b]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related scenarios: [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

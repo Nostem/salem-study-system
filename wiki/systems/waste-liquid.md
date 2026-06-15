@@ -91,10 +91,15 @@ Release of 21 CVCS Monitor Tank via SW to CW (S2.OP-SO.WL-0001, R28): Maximum Re
 <span class="hi-exam">2R18 high-radiation ALARM setpoint (per S2.IC-CC.RM-0028) is 6.82E5 cps</span> and automatically closes <span class="hi-exam">2WL51 (Liquid Release Stop Valve)</span>. If 2R18 reads above setpoint (e.g., 10E6 cps with 104-panel red alarm light lit) and 2WL51 indicates OPEN, the auto-close failed; <span class="hi-exam">per S2.OP-SO.WL-0001 Step 5.5.9, the NEO informs the NCO and the NCO shuts 2WL51 remotely from the control room</span>. <span class="hi-trap">Trap: there is no procedural provision for the NEO to close 2WL51 locally; "block R-18 input on 2RP1 and continue the release" is also not authorized — the alarm reflects valid high activity, not a 2R18 failed-high condition.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q86</div>
+A CC Surge Tank overflow <span class="hi-exam">contaminates the Waste Holdup System (WHUT) with chromates</span>; per AB.CC-0001, WHUT processing (Portable Liquid Radwaste) is stopped and the CC Surge Tank is locally drained. See [[CCW]].
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
 - Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
-- Related exam questions: [[2016 Q59]], [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]]
+- Related exam questions: [[2016 Q59]], [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]], [[2015 Q86]]
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]]

@@ -84,10 +84,35 @@ Charging Master Flow Controller fails (severity 26) during a 5%/min downpower to
 Controlling PZR Level Channel I fails low at 100% power — letdown isolates and Master Flow Controller raises charging flow. Crew takes manual control of MFC, returns PZR level to program, selects operable channel for Control/Alarm/Recorders. Letdown restoration sequence: ensure <span class="hi-exam">2CV7</span> open; place <span class="hi-exam">2CV18</span> in manual and close/open until close PB extinguishes; open <span class="hi-exam">2CV2 and 2CV277</span> then place both in auto; verify charging flow ~<span class="val-normal">85-90 gpm</span>; open a 75 gpm orifice while adjusting 2CV18 to control letdown pressure ~300 psig; place 2CV18 in auto. CRS enters <span class="hi-exam">TS LCO 3.3.1.1 Action 6</span>. OHA E-20 PZR HTR ON LVL HI is expected to annunciate due to no letdown with charging flow established.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q5</div>
+When the in-service charging pump trips, <span class="hi-exam">letdown automatically isolates with all charging pump breakers open</span>. If a standby charging pump can only be placed in service with <span class="hi-exam">suction aligned to the RWST</span> (rather than the VCT, per step 3.7), the note before that step directs that a <span class="hi-exam">unit shutdown is required because of borating the RCS from the RWST</span>. (Restoring letdown or placing Excess Letdown in service addresses VCT level but is not the AB.CVC-0001 direction for this condition.)
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q38</div>
+When responding to a controlling PZR level channel failed low: an automatic letdown isolation occurs and <span class="hi-exam">a control channel failing low (or a level alarm) deenergizes all PZR heaters</span>; the PZR low-level cutoff (17%) keeps backup heaters OFF. See [[Pressurizer Level & Press Control]], [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q40</div>
+When AB.CVC-0001 directs taking the Charging Master Flow Controller to Manual for a PZR level channel failed low, <span class="hi-trap">the MFC must NOT be returned to auto until PZR level is restored to program</span> — doing so forces charging flow low and can cause letdown-line flashing (inadequate regenerative-HX cooling below ~60 gpm). See [[Pressurizer Level & Press Control]], [[CVCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q77</div>
+After a single charging pump trip (breaker malfunction) with 23 charging pump placed in service, only <span class="hi-exam">TS 3.5.2.a (ECCS) is entered</span> in Modes 1-3 — restore within 72 hours or Hot Shutdown within the next 12 hours. See [[CVCS]], [[ECCS]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-b</div>
+Entered for a <span class="hi-exam">failure of a VCT level channel</span> (2LT-112 fails high). Attachment 1 (Continuous Action Summary) is initiated, then the diagnostic path runs: charging pump running (3.2) → no cavitation (3.16) → no PZR level channel failure (3.54) → <span class="hi-exam">VCT level instrument 2LT-112 failed high (3.63)</span>. Step 3.64 (critical): <span class="hi-exam">TAKE MANUAL control of 2CV35, VCT 3 WAY INLET V, and position it to the VCT</span> (the high-failing channel had auto-shifted 2CV35 to the HUT). Step 3.66 then initiates manual makeup to the VCT IAW S2.OP-SO.CVC-0006. See [[S2.OP-SO.CVC-0006 — Boron Concentration Control]].
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[EDGs]]
-- Related exam questions: [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]]
-- Related JPMs: [[2018 JPM Sim-b]], [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]]
+- Related exam questions: [[2015 Q5]], [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]], [[2015 Q38]], [[2015 Q40]], [[2015 Q77]]
+- Related JPMs: [[2018 JPM Sim-b]], [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]], [[2015 JPM Sim-b]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

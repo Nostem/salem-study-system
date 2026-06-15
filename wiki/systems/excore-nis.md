@@ -114,11 +114,38 @@ Block Power Range trip controls during a startup power ascension: <span class="h
 With Source Range NIs not energized and IR SUR present, the Subcriticality CFST YELLOW path uses the IR-SUR criterion: <span class="hi-exam">IR SUR is required to be more negative than -0.2 dpm</span> (otherwise a YELLOW path exists for FRSM-2). At 0.0 DPM IR SUR with SRNIs deenergized, FRSM-2 YELLOW exists — but FRTS-1 PURPLE (when concurrent) takes precedence.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q67</div>
+For Mode 6 Core Alterations, <span class="hi-exam">LCO 3.9.2 requires 2 Source Range NIs operable</span>; one inoperable Source Range NI prevents commencing core alterations. See [[Refueling]], [[TS 3/4.9 — Refueling Operations]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q89</div>
+With one IRNI channel removed from service (TSAS 3.3.1.1) and the <span class="hi-exam">second IRNI channel oscillating erratically at power</span>, enter AB.NIS-0001 and remove the second channel — loss of the second IRNI enters TS 3.0.3 (Hot Standby within 6 hours). Loss of a single IRNI is excluded from LCO 3.0.3.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-a</div>
+A dropped rod is diagnosed in part from the NIS response: <span class="hi-exam">depressed power/flux in the region of the dropped rod(s)</span> on the excore detectors, together with rod bottom lights and lowering Tavg/Terr. A <strong>second</strong> dropped rod (the alternate-path failure in this JPM) is recognized the same way and requires a manual reactor trip per AB.ROD-0002 step 2.1. See [[Control Rod Drive]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+<span class="hi-exam">Power Range NI Channel IV (2N44) fails high</span> during a power ascension (Event 2). With rod control in auto the high indicated power drives rods to step IN at 72 spm; <span class="hi-exam">outward rod movement is blocked by the Overpower Rod Stop until the channel is defeated</span>. Channel removal per S2.OP-SO.RPS-0001 manipulates the Detector Current Comparator (upper/lower → PRN44), Power Mismatch Bypass, Rod Stop Bypass, and Comparator Channel Defeat, clearing OHAs <span class="hi-exam">E-38, E-46, E-31, and E-39</span>. TSAS 3.3.1.1 Actions 2 and 6 apply; QPTR is performed and a flux map requested. See [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-f</div>
+Energizing the Source Range NIS after a trip (EOP-TRIP-2 Step 22): both IR channels must be <span class="hi-exam">&lt;7E-11 Amps</span> to permit the source-range energize permissive. An <span class="hi-exam">undercompensated IR channel (e.g. 2N36) reads erroneously high (&gt;7E-11 Amps) and will not drop below permissive</span> — diagnosed by elapsed time since trip, a SUR of 0 on the affected channel with power above minimum display, and the NR-45 trend showing IR CH II leveling off. The operator then <span class="hi-exam">manually energizes BOTH Source Range channels (RESET SOURCE RANGE A and RESET SOURCE RANGE B)</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
-- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+  - [[2015 Q67]] — Mode 6 Core Alterations require 2 Source Range NIs operable (LCO 3.9.2); one inoperable SR NI prevents core alterations
+  - [[2015 Q89]] — second IRNI channel fails erratically: enter AB.NIS-0001 / TS 3.0.3 (Hot Standby within 6 hours); single-IRNI loss excluded from LCO 3.0.3
   - [[2016 Q38]] — Block Power Range A and B pushbuttons at 12% blocks the 25% PR low setpoint Rx trip
   - [[2016 Q78]] — ATWS at 4% Mode 2: Rx trip NOT confirmed by NI power <5% alone; trip confirmation requires negative SUR and power lowering
   - [[2018 Q31]] — SR audible count rate lowers during auto makeup with CV179 failed closed
@@ -133,4 +160,5 @@ With Source Range NIs not energized and IR SUR present, the Subcriticality CFST 
   - [[2016 Q69]] — Mode 2 entry recorded when Control Bank A withdrawal imminent (S2.OP-IO.ZZ-0003)
   - [[2016 Q70]] — AFD penalty minutes / 50–90% power / power must reduce &lt;50% within 30 min after 60 penalty min
   - [[2016 Q83]] — SR NIs not energized + IR SUR -0.2 dpm criterion for FRSM-2 YELLOW (overridden by FRTS-1 PURPLE)
-- Related JPMs: [[2018 JPM RO-A1]], [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2020 JPM Sim-f]]
+- Related JPMs: [[2018 JPM RO-A1]], [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2020 JPM Sim-f]], [[2015 JPM Sim-a]], [[2015 JPM Sim-f]]
+- Related scenarios: [[2015 Scenario 1]]

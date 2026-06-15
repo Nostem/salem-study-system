@@ -16,6 +16,11 @@ Provides operator actions when emergency coolant recirculation capability is los
 ## Key Actions / Information
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q24</div>
+Continuous Action Step (Step 6.1): if <span class="hi-exam">any train of emergency recirculation capability is restored</span> (e.g., power restored to a previously lost RHR pump), Step 6.1 directs the crew to evaluate train status and <span class="hi-exam">return to the procedure and step previously in effect</span> (here, EOP-LOCA-1), consistent with the EOP organization. The purpose of LOCA-5 is <span class="hi-exam">mitigation and recovery of recirculation capability</span>. <span class="hi-trap">Traps: do NOT continue the LOCA-5 cooldown waiting on the RWST LO alarm (cooldown in LOCA-5 is not required once recirc is restored), and do NOT transition directly to EOP-LOCA-3 — a transfer to Cold Leg Recirculation is not initiated until RWST level is evaluated back in LOCA-1.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q42</div>
 Step 9 — Table C determines required number of containment spray pumps based on RWST level, containment pressure, and number of CFCUs operating. With <span class="hi-exam">RWST > 15.24 ft, containment pressure 18 psig, and 4 CFCUs operating → 0 CS pumps required</span>. <span class="hi-trap">Must correctly identify which bus is lost to calculate ECCS flow rate and RWST depletion. 2A Vital Bus lost = "A" bus loads lost (lower depletion rate, 4350 gpm). Assuming "B" bus loads lost gives incorrectly high depletion rate.</span>
 </div>
@@ -95,11 +100,16 @@ EOP-LOCA-5 entry conditions — five entry paths: <span class="hi-exam">(1) LOCA
 With both RHR pumps cavitating during cold leg recirculation transfer, an operator may initially go to EOP-LOCA-5; however, <span class="hi-exam">Step 1 of LOCA-5 directs performance of EOP-APPX-7</span> (Containment Sump Blockage). LOCA-5 is the wrong terminus when sump blockage is causing the cavitation — APPX-7 is.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q82</div>
+EOP-LOCA-6 transitions to EOP-LOCA-5 when the LOCA-outside-containment break is unisolable; LOCA-5 actions: <span class="hi-exam">add makeup to the RWST, initiate a cooldown, and minimize injection flow</span>. See [[EOP-LOCA-6 — LOCA Outside Containment]], [[ECCS]].
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
-- Related exam questions: [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]]
+- Related exam questions: [[2015 Q24]], [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]], [[2015 Q82]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
