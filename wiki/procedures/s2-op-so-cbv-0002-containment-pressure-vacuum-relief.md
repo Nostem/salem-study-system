@@ -39,7 +39,7 @@ When a Containment Pressure Relief is initiated (opening 1VC5/1VC6 with NORMAL c
 ## Connections
 
 - Related systems: [[Containment]]
-- Related procedures: [[S2.OP-AB.RAD-0001 — Abnormal Radiation]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]]
 - Related exam questions: [[2019 Q96]], [[2020 Q33]], [[2015 Q60]]
 - Related JPMs: [[2016 JPM SRO-A3]], [[2023 JPM Sim-h]]
 - Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]]

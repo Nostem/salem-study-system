@@ -4,6 +4,7 @@ category: eops
 status: draft
 aliases:
   - EOP-LOCA-1
+  - EOP-LOCA Series
   - loss of reactor coolant
   - loss of secondary coolant
 ---
@@ -145,7 +146,7 @@ Crew transitions from EOP-TRIP-1 to EOP-LOCA-1 after a LBLOCA when transition cr
 
 ## Connections
 
-- Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]]
+- Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]], [[ESF & Design]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
 - Related exam questions: [[2015 Q21]], [[2015 Q24]], [[2016 Q4]], [[2016 Q44]], [[2016 Q45]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]], [[2015 Q34]], [[2015 Q82]], [[2015 Q91]]
 - Related JPMs: [[2022 JPM Sim-c]], [[2016 JPM Sim-b]]
