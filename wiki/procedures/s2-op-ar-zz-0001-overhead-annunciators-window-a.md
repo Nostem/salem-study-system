@@ -39,8 +39,13 @@ OHA A-7 (FIRE PROT FIRE) and A-15 (FIRE PUMP 1/2 RUN) are Window A alarms; Windo
 OHA A-34 (SSPS TRN A TRBL) alarms on loss of 1 of 2 45VDC power supplies to the Train A logic cabinet. <span class="hi-trap">Deenergizing the 2B Vital Instrument Bus does NOT cause OHA A-34 — Train A 45VDC power comes from A and D vital power, not the 2B bus.</span> See [[RPS/SSPS]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q64</div>
+<span class="hi-exam">OHA A-7, FIRE PROT FIRE</span> annunciates when an early-warning Smoke/Fire Detector zone actuates (along with the zone lamp and group "FIRE" lamp on the 2RP5 Fire Protection Panel and the coded fire alarm over the PA). The alarm reflects a fire-detector actuation, NOT an active suppression system actuation. See [[Fire Protection]].
+</div>
+
 ## Connections
 
-- Related systems: [[Radiation Monitoring]], [[CAV]], [[FHV]]
-- Related exam questions: [[2015 Q17]], [[2019 Q36]], [[2020 Q25]], [[2022 Q51]], [[2015 Q42]]
-- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related systems: [[Radiation Monitoring]], [[CAV]], [[FHV]], [[Fire Protection]]
+- Related exam questions: [[2015 Q17]], [[2019 Q36]], [[2020 Q25]], [[2022 Q51]], [[2015 Q42]], [[2012 Q64]]
+- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2012 NRC Written Exam]]

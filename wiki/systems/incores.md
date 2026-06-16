@@ -67,13 +67,18 @@ CETs are the primary RCS temperature indication; the CET Processing System digit
 IR NI compensating-voltage faults: <span class="hi-exam">UNDER-compensation causes a HIGHER-than-expected reading; OVER-compensation causes a LOWER-than-expected reading.</span> With a startup at SR ~30,000 counts there should already be one decade of SR/IR overlap, so both IR NIs (N35/N36) <span class="hi-exam">should be reading ~1x10-10A</span> — both flashing at 1x10-11A (low) after both detectors were just replaced means both IR NIs should be declared <span class="hi-exam">INOPERABLE</span>. <span class="hi-trap">Trap: do not call this overcompensation and try to block the SR Hi Flux trip via P-6 — P-6 cannot be blocked unless power is above the P-6 interlock; with both NIs reading low, P-6 is not satisfied.</span> See [[TS 3/4.3 — Instrumentation]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q44</div>
+<span class="hi-exam">5 or more Core Exit Thermocouples (CETs) &gt; 1200°F indicates a superheat condition</span> — most liquid inventory has been removed from the RCS and core decay heat is superheating steam in the core. This is the Core Cooling CSF <span class="hi-exam">RED path</span> → entry to EOP-FRCC-1. <span class="hi-trap">At least 5 CETs must be &gt;700°F for superheat at the core exit; below 700°F a Core Cooling PURPLE path is entered only if RVLIS Full Range &lt;39%. CETs at 650°F with RVLIS Full Range 74% is a YELLOW path, not PURPLE.</span> See [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[RVLIS]].
+</div>
+
 ## Connections
 
-- Related systems: [[Excore NIs]], [[RCS]], [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]]
+- Related systems: [[Excore NIs]], [[RCS]], [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]], [[RVLIS]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]], [[TS 3/4.0 — Applicability]]
-- Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2020 Q26]], [[2020 Q58]], [[2023 Q57]], [[2015 Q44]], [[2014 Q45]], [[2014 Q94]]
-- Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
+- Related exam questions: [[2020 Q26]], [[2020 Q58]], [[2023 Q57]], [[2015 Q44]], [[2014 Q45]], [[2014 Q94]], [[2012 Q44]]
+- Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]
   - [[2023 Q57]] — In-Core Temperature Monitoring CET / reference junction compensation / 2300°F limit
   - [[2020 Q26]] — SMM adverse containment mode / R44A/B > 1E05 R/HR / manual reset required for radiation
   - [[2020 Q58]] — Subcooling Margin Monitor inputs (CET temp, RCS WR pressure, not PZR pressure)

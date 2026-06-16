@@ -47,5 +47,5 @@ Tank Capacity Data (page 24) gives the <span class="hi-exam">Primary Water Stora
 - Related EOPs: [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-FRCE-2 — Response to Containment Flooding]]
 - Related procedures: [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
-- Related exam questions: [[2016 Q26]], [[2012 Q3]], [[2012 Q26]]
+- Related exam questions: [[2016 Q26]], [[2012 Q3]], [[2012 Q26]], [[2012 Q46]]
 - Related exam: [[2016 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2012 NRC Written Exam]]

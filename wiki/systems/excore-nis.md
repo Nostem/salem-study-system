@@ -169,13 +169,18 @@ During a reactor startup (S2.OP-IO.ZZ-0003), once SR/IR overlap of <span class="
 1D 115V Vital Instrument Bus powers Power Range NIS Channel IV (PRNI CH IV). With Unit 1 in MODE 2 at 4% power, a loss of 1D VIB illuminates (one minute later, no operator action) the <span class="hi-exam">Yellow High Flux PRNI CH IV lamp on Reactor Status Panel 1RP4 for BOTH the High Power and Low Power High Flux trips</span>. <span class="hi-trap">No reactor trip results — the High Flux trip is 2/4 coincidence, so loss of one channel gives no trip demand.</span> <span class="hi-trap">The Over Power Rod Stop Manual Bypass for CH IV is NOT automatic (must be manually aligned).</span> See [[AB.115-0004 — Loss of 1D 115V Vital Instrument Bus]], [[115V AC]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q43</div>
+After a trip, IRNI current normally continues to lower until off-scale, and <span class="hi-exam">Source Range channels automatically energize when IRNI current lowers to ~7.0 E-11 Amps</span>. An IRNI reading HIGHER than expected together with an abnormally low SUR indicates an <span class="hi-trap">OVER-compensated</span> instrument. Per EOP-TRIP-2 step 38, Source Range channels are manually energized only if both IRNIs are not &lt;7E-11 A AND under-compensation is preventing proper operation. See [[EOP-TRIP-2 — Reactor Trip Response]].
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]], [[115V AC]]
-- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[AB.115-0004 — Loss of 1D 115V Vital Instrument Bus]], [[S2.OP-IO.ZZ-0003 — Hot Standby to Minimum Load]]
+- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[AB.115-0004 — Loss of 1D 115V Vital Instrument Bus]], [[S2.OP-IO.ZZ-0003 — Hot Standby to Minimum Load]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
 - Related JPMs: [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]], [[2014 JPM Sim-g]]
-- Related exam questions: [[2014 Q12]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]], [[2012 Q13]]
+- Related exam questions: [[2014 Q12]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]], [[2012 Q13]], [[2012 Q43]]
 - Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]
   - [[2015 Q67]] — Mode 6 Core Alterations require 2 Source Range NIs operable (LCO 3.9.2); one inoperable SR NI prevents core alterations
   - [[2015 Q89]] — second IRNI channel fails erratically: enter AB.NIS-0001 / TS 3.0.3 (Hot Standby within 6 hours); single-IRNI loss excluded from LCO 3.0.3

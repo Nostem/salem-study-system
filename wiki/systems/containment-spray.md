@@ -226,11 +226,26 @@ To electrically reset an AUTOMATIC Containment Spray initiation: <span class="hi
 During [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]] with RWST level still above 1.2', the <span class="hi-exam">22 CS pump is already stopped (step 8) but the 21 CS pump continues taking suction from the RWST</span> — so when containment sump blockage causes cavitation, <span class="hi-exam">Containment Spray flow remains above 0 gpm</span> (the 21 CS pump is not stopped until RWST reaches 1.2' at step 21). The crew transitions to [[EOP-APPX-7 — Containment Sump Blockage]] and stops the operating Charging, SI, and RHR pumps. <span class="hi-trap">Sump blockage transitions to APPX-7, NOT LOCA-5; CS flow does not lower to 0 gpm while one CS pump is still on the RWST.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q41</div>
+Containment Spray actuation bistables are <span class="hi-exam">energized-to-actuate</span>. <span class="hi-exam">Containment Pressure Channel I feeds only the Containment Hi-Hi (Spray) circuits — not the Containment Hi (SI) circuits.</span> Removing Channel I from service (tripped per S2.OP-SO.RPS-0005) takes it out of the Spray 2/3 coincidence so a single remaining channel failing high cannot inadvertently actuate Spray. See [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q45</div>
+Per Salem FSAR Sections 6 and 15, the <span class="hi-exam">minimum complement for containment integrity with one ECCS train running is 1 Containment Spray pump and 3 CFCUs</span>. CFCU power supplies are A, B, C, B, C for 21-25 CFCUs; CS pump 21 is on A bus. After a LBLOCA + LOOP with 2C 4KV vital bus locked out (bus differential de-energizes the bus) and 2B SEC failed to actuate, only 21 CS pump and 21 CFCU run — so the FIRST action that restores the 3 required CFCUs is <span class="hi-exam">depressing START PB for 22 AND 24 CFCUs</span>. See [[CFCUs]], [[ECCS]], [[SECs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q46</div>
+Spray Additive (NaOH) Tank: spray eductor flow ~75 gpm; normal level 75% (<span class="val-normal">3400 gallons</span>), administrative max 90% (3900 gal); <span class="val-alarm">low-level alarm "D-43 SPRY ADD TK LVL LO" at 67% (~3050 gal)</span>. After a LOCA reaching 18 psig, <span class="hi-exam">D-43 alarms ~5 minutes into the event and stays locked in</span> — the EXPECTED locked-in overhead alarm 25 minutes later. See [[Annunciators]].
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related procedures: [[S1.OP-ST.CS-0003 — Inservice Testing Containment Spray Valves]]
-- Related exam questions: [[2014 Q27]], [[2014 Q34]], [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]], [[2015 Q34]], [[2015 Q45]], [[2015 Q46]], [[2015 Q91]], [[2014 Q48]], [[2014 Q89]], [[2012 Q3]]
+- Related procedures: [[S1.OP-ST.CS-0003 — Inservice Testing Containment Spray Valves]], [[S2.OP-SO.RPS-0005 — RPS Surveillance]], [[S2.OP-AR.ZZ-0004]], [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
+- Related exam questions: [[2014 Q27]], [[2014 Q34]], [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]], [[2015 Q34]], [[2015 Q45]], [[2015 Q46]], [[2015 Q91]], [[2014 Q48]], [[2014 Q89]], [[2012 Q3]], [[2012 Q41]], [[2012 Q45]], [[2012 Q46]]
 - Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-b]], [[2015 JPM IP-i]]
 - Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2014 Scenario 1]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

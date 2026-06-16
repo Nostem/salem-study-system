@@ -241,6 +241,11 @@ The Diesel Fuel Oil Storage Tanks are <span class="hi-exam">normally isolated fr
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q59</div>
+DFOST design-basis capacity (Salem FSAR Section 9.5.4): "The <span class="hi-exam">combined volume of both 30000 gallon fuel oil storage tanks</span> contains sufficient fuel oil at the Technical Specification minimum volume to supply <span class="hi-exam">two diesel generators</span>, operating at the most limiting accident mitigation profile for LOCA with loss of offsite power, for approximately <span class="hi-exam">4.5 days</span>." <span class="hi-trap">It is the COMBINED volume of BOTH tanks (not EACH tank) supplying TWO EDGs (not three).</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q92</div>
 EDG TS surveillances: SR 4.8.1.2 specifies that certain surveillances are NOT required to maintain EDG operability (to avoid paralleling the EDG with offsite power or de-energizing an ESF bus during the test). <span class="hi-exam">A missed 18-month Hot Restart surveillance does NOT make 2A EDG inoperable; the test must be completed prior to entering Mode 4</span>. See [[TS 3/4.8 — Electrical]].
 </div>
@@ -265,11 +270,16 @@ A large air leak on the 2C EDG starting air supply line lowers Air Start Tank pr
 On a LOOP with 2A/2B EDGs running and the <span class="hi-exam">2C SEC failed to initiate</span>, the crew manually starts 2C EDG and shuts its output breaker to energize the 2C vital bus. Because the 2C SEC sent no breaker trip signals, equipment that was running on the 2C bus before the LOOP will restart when the EDG breaker is shut, so the crew <span class="hi-exam">opens the C-bus equipment breakers first to avoid stalling the 2C EDG</span>. CT#1 requires starting at least one SW pump so the running EDGs have cooling. See [[2014 Scenario 3]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q75</div>
+The EDG <span class="hi-exam">FIRE EMERGENCY BYPASS keylock switches remove SEC (Sequencer) control from the EDG</span>. They are directed to be placed in BYPASS only by <span class="hi-exam">AB.CR-0002 (Control Room Evacuation Due to Fire), Attachment 4, pages 15, 19, 22</span> — operated when the control room has been evacuated due to a fire and SEC operation may be aberrant. <span class="hi-trap">AB.FIRE-0001, AB.FIRE-0002, and AB.CR-0001 do NOT contain this step.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Fire Protection]]
 - Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.0 — Applicability]]
-- Related exam questions: [[2015 Q13]], [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]], [[2015 Q43]], [[2015 Q55]], [[2015 Q58]], [[2015 Q92]], [[2014 Q59]], [[2014 Q83]], [[2014 Q93]], [[2012 Q11]], [[2012 Q12]]
+- Related exam questions: [[2015 Q13]], [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]], [[2015 Q43]], [[2015 Q55]], [[2015 Q58]], [[2015 Q92]], [[2014 Q59]], [[2014 Q83]], [[2014 Q93]], [[2012 Q11]], [[2012 Q12]], [[2012 Q59]], [[2012 Q62]], [[2012 Q75]]
 - Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[S2.OP-ST.DG-0002 — 2B Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-ST.DG-0003 — 2C Diesel Generator Surveillance Test]], [[S2.OP-ST.DG-0014 — 2C Diesel Generator Endurance Run]], [[S2.OP-SO.DG-0003 — 2C Diesel Generator Operation]], [[S2.OP-AR.DG-0003 — 2C Diesel Generator Alarm Response]]
 - Related JPMs: [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-g]], [[2016 JPM IP-i]], [[2016 JPM IP-k]], [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]], [[2014 JPM IP-i]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2014 Scenario 1]], [[2014 Scenario 3]]

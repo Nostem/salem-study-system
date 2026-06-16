@@ -162,12 +162,32 @@ A spurious MSLI closes the MSIVs AND the <span class="hi-exam">11-14MS18 (MS STO
 A <span class="hi-exam">Main Steamline rupture in containment with failure of MSLI</span> causes ALL SGs to blow down and containment pressure to rise above <span class="val-trip">15 psig</span>, generating the Phase B containment isolation that isolates ALL containment penetrations not supporting ECCS. <span class="hi-trap">Phase A isolation occurs at <span class="val-trip">4 psig</span> (non-essential penetrations); Phase B isolates the remaining non-ECCS penetrations.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q42</div>
+<span class="hi-exam">The 24MS167 Main Steamline Isolation Valve receives a SHUT signal from the Hi-Hi containment pressure (15 psig) MSLI signal</span> on a LOCA — so a 24MS167 indicating OPEN after such an event means it failed to reposition. See [[ESF & Design]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q49</div>
+11MS167 hydraulic stop valve (logic dwgs 239916/239917): the FAST/Emergency CLOSE signal acts like a Safeguards Train MSLI or High Steam Line Flow SI. <span class="hi-exam">SV-1 closes (had directed hydraulic pressure to the bottom of the piston); SV-3 opens to equalize hydraulic pressure on both sides of the operating piston</span> (hydraulic fluid acts as a buffer to prevent slamming); the <span class="hi-exam">solenoids for vent valves 11MS169 and 11MS171 open, venting air so those vent valves open and main steam pressure on the lower operating piston drives the disc closed</span>. The hydraulic pump immediately stops running. A FAST close issued after a NORMAL close is already in progress drives the valve closed via this Emergency Trip path.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q50</div>
+With Main Steam Dumps in AUTO MS Pressure control during a startup (18% power, generator rolling unloaded), <span class="hi-exam">lowering the MS Dump pressure setpoint 5 psig causes the dumps to open to lower header pressure to the new setpoint → higher steam flow, lower Tavg → positive reactivity → reactor power rises above 18%</span>. <span class="hi-trap">Control rods are NOT in auto until &gt;P-2 (15% Turbine power, not yet online), so rods stay in manual with no operator action.</span> See [[Steam Dumps]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q51</div>
+If the Main Steam Dumps fail to ARM on a turbine-trip-induced reactor trip, core heat drops rapidly and the <span class="hi-exam">SG Atmospheric Relief Valves (MS10s) open to establish RCS temperature ~551-552°F</span>. RCS pressure does NOT rise enough to open the PORVs or PZR Safeties — <span class="hi-exam">PZR spray opens rapidly and fully to keep RCS pressure below ~2335 psig</span>. See [[Steam Dumps]], [[Pressurizer & PRT]].
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Dumps]], [[Feed & Condensate]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[AB.STM-0001 — Excessive Steam Flow]], [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
-- Related exam questions: [[2015 Q12]], [[2015 Q25]], [[2015 Q26]], [[2016 Q16]], [[2016 Q24]], [[2016 Q49]], [[2016 Q50]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]], [[2015 Q27]], [[2015 Q51]], [[2014 Q15]], [[2014 Q22]], [[2014 Q51]], [[2014 Q52]], [[2014 Q55]], [[2014 Q65]], [[2014 Q91]], [[2012 Q16]], [[2012 Q19]], [[2012 Q25]]
+- Related exam questions: [[2015 Q12]], [[2015 Q25]], [[2015 Q26]], [[2016 Q16]], [[2016 Q24]], [[2016 Q49]], [[2016 Q50]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]], [[2015 Q27]], [[2015 Q51]], [[2014 Q15]], [[2014 Q22]], [[2014 Q51]], [[2014 Q52]], [[2014 Q55]], [[2014 Q65]], [[2014 Q91]], [[2012 Q16]], [[2012 Q19]], [[2012 Q25]], [[2012 Q42]], [[2012 Q49]], [[2012 Q50]], [[2012 Q51]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]], [[2015 JPM Sim-h]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

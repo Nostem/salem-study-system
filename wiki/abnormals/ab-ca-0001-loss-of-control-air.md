@@ -133,11 +133,16 @@ With the operating SAC tripped (none restartable) and the Unit 2 ECAC tripped im
 On a total loss of Control Air with no air source recoverable, AB.CA-0001 directs that <span class="hi-exam">all Radwaste releases in progress are terminated</span> — this ensures that during a gradual depressurization of the Control Air system a release is not in progress when the dilution medium flowrate may be changing (per the bases document, page 8 of 12). Two other actions tested as distractors: an operator is dispatched to <span class="hi-exam">manually control 23 AFW pump speed</span> (running at the high speed stop) because the 21-24AF11 valves <span class="hi-exam">fail OPEN</span>, making pump runout a concern with higher steam supply pressure present (page 3 of 12); and the reactor is tripped only when <span class="hi-trap">BOTH</span> Control Air header pressures are below <span class="val-trip">60 psig</span> (not &lt;80 psig on EITHER header).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q63</div>
+The AB.CA Basis Document gives the normal CA header band and ECAC auto-start: CA runs ~5 psig below Station Air, cycling with the SA cycle, so <span class="hi-exam">CA normally runs between 95 and 105 psig (≈100 psig)</span>, and the <span class="hi-exam">ECAC auto-starts at 85 psig</span>. <span class="hi-trap">88 psig is the AB.CA-0001 ECAC MANUAL start setpoint, and the reactor trip CAS requires BOTH headers below 80 psig — do not confuse with the 85 psig auto-start.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[EDGs]], [[DC Power]]
-- Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[SC.OP-SO.SA-0001 — Station Air System Operation]]
-- Related exam questions: [[2015 Q13]], [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]], [[2014 Q19]], [[2014 Q64]], [[2012 Q14]], [[2012 Q34]]
+- Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-SO.CA-0001 — Control Air System Operation]]
+- Related exam questions: [[2015 Q13]], [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]], [[2014 Q19]], [[2014 Q64]], [[2012 Q14]], [[2012 Q34]], [[2012 Q63]]
 - Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOPA-1 — Loss of All AC Power]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

@@ -69,10 +69,15 @@ At <span class="hi-exam">Step 25</span>, RCPs are started if CETs are still <spa
 The criteria to <span class="hi-exam">stop the last running RCP</span> in FRCC-1 (at <span class="hi-exam">Step 29</span>) is that at least <span class="hi-exam">two RCS Thots have lowered to &lt;350°F</span> — indicating the core is cool and RCP forced circulation is no longer required. Accumulators are isolated just before this at Step 28.1 (after intermittent RHR flow is verified). To exit FRCC-1 to LOCA-1 (Step 31), <span class="hi-exam">RVLIS must be &gt;57%</span> combined with at least 2 RCS Thots &lt;350°F and all RCPs already stopped. <span class="hi-trap">Trap: loss of SG NR level (&lt;9%) is the only thing that PREVENTS an RCP start (creep failure of hot SG tubes) but loss of SGNR level does NOT require stopping the RCPs; there is no RCP seal D/P stop criterion in FRCC-1.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q44</div>
+<span class="hi-exam">5 or more CETs &gt; 1200°F is the Core Cooling RED path entry into FRCC-1</span> (Response to Inadequate Core Cooling) — this CET temperature indicates most liquid inventory has already been removed from the RCS and core decay heat is superheating steam in the core. See [[Incores]].
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCPs]], [[Containment]], [[RVLIS]], [[ECCS]], [[AFW]], [[Service Water]], [[CCW]], [[Pressurizer]], [[Incores]]
 - Related concepts: [[Containment]]
-- Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2015 Q18]], [[2016 Q21]], [[2019 Q72]], [[2020 Q24]], [[2022 Q24]], [[2023 Q84]], [[2012 Q15]]
+- Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
+- Related exam questions: [[2015 Q18]], [[2016 Q21]], [[2019 Q72]], [[2020 Q24]], [[2022 Q24]], [[2023 Q84]], [[2012 Q15]], [[2012 Q44]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2012 NRC Written Exam]]

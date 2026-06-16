@@ -139,12 +139,17 @@ During refueling fuel movement, <span class="hi-exam">a loss of Control Air to c
 On a total loss of Control Air affecting both units (operating SAC tripped/unrestartable, Unit 2 ECAC tripped after starting), the AB.CA-0001 CAS action directs: <span class="hi-exam">if BOTH CA header pressures are &lt;<span class="val-trip">80 psig</span>, trip the Rx — on BOTH units</span>. The <span class="hi-exam">BF19s (Feed Reg Valves) go shut</span> as their air runs out. <span class="hi-trap">The FRVs are NOT supplied backup air from the ECACs (a check valve blocks control air to the BF19s; only Station Air supplies the BF19s). Unit 1 ECAC feeds the 1B/2B headers; Unit 2 ECAC feeds the 1A/2A headers.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q63</div>
+Normal Control Air (CA) header pressure and ECAC auto-start (AB.CA Basis Document): when supplied from Station Air through the dryers, CA runs ~5 psig below SA pressure and cycles with the SA cycle, so <span class="hi-exam">CA pressures normally run between 95 and 105 psig (≈100 psig)</span>. The <span class="hi-exam">Emergency Control Air Compressor (ECAC) auto-starts if CA pressure drops to 85 psig</span>. <span class="hi-trap">Normal is ≈100 psig (not 110), and the ECAC auto-start is 85 psig (not 90). 88 psig is the AB.CA-0001 ECAC MANUAL start, and 100 psig is the Station Air Compressor start threshold.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[RHR]], [[DC Power]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.CA-0001 — Control Air System Operation]]
 - Related abnormals: [[AB.460-0003 — Loss of 2C 460/230V Vital Bus]]
-- Related exam questions: [[2015 Q13]], [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]], [[2015 Q37]], [[2015 Q62]], [[2015 Q96]], [[2014 Q19]], [[2014 Q64]], [[2012 Q14]], [[2012 Q34]], [[2012 Q38]]
+- Related exam questions: [[2015 Q13]], [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]], [[2015 Q37]], [[2015 Q62]], [[2015 Q96]], [[2014 Q19]], [[2014 Q64]], [[2012 Q14]], [[2012 Q34]], [[2012 Q38]], [[2012 Q63]]
 - Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

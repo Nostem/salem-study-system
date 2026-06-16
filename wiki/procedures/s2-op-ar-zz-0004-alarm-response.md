@@ -40,10 +40,15 @@ Window D alarms during a LOCA: <span class="hi-exam">D-41 (BIT DISCH PRESS HI) s
 OHA Window D <span class="hi-exam">D-29, 22 RCP BKR OPEN/FLO LO</span> with all 22 loop RC flows at 85% and dropping, the red START bezel for 22 RCP still illuminated, and no Rx trip (30% power) indicates a <span class="hi-exam">sheared RCP shaft</span> — a shaft shear drops loop flow while the breaker stays closed (bezel lit). <span class="hi-trap">A seized shaft would trip the supply breaker on overcurrent (breaker would NOT show closed).</span> <span class="hi-trap">At 30% power (between P-10 at 10% and P-8 at 36%), a single-loop low flow does NOT cause a Rx trip — the low-flow trip is 2/4 coincidence, so this is not an ATWT.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q46</div>
+OHA Window D <span class="hi-exam">D-43, "SPRY ADD TK LVL LO,"</span> is the EXPECTED locked-in alarm ~25 minutes after a LOCA reaching 18 psig containment pressure. The Spray Additive (NaOH) Tank: normal level 75% (3400 gal), administrative max 90% (3900 gal), low-level alarm at <span class="val-alarm">67% (~3050 gal)</span>. With Spray eductor flow ~75 gpm, <span class="hi-exam">D-43 will alarm ~5 minutes into the event</span> and stay in. See [[Containment Spray]].
+</div>
+
 ## Connections
 
-- Related systems: [[RCPs]], [[CCW]], [[ECCS]], [[RPS/SSPS]], [[Annunciators]]
-- Related procedures: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[AB.RCP-0001 — RCP Abnormality]]
-- Related exam questions: [[2023 Q1]], [[2014 Q30]], [[2014 Q35]], [[2012 Q4]]
+- Related systems: [[RCPs]], [[CCW]], [[ECCS]], [[RPS/SSPS]], [[Annunciators]], [[Containment Spray]]
+- Related procedures: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
+- Related exam questions: [[2023 Q1]], [[2014 Q30]], [[2014 Q35]], [[2012 Q4]], [[2012 Q46]]
 - Related JPMs: [[2015 JPM Sim-g]]
 - Related exam: [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

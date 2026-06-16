@@ -107,10 +107,16 @@ Unit 1 Control Room Evacuation, Attachment 5 Steps 1-9 — locally trip reactor 
 AB.CR-0001 field actions after a control room evacuation: <span class="hi-exam">PZR level is read at Hot Shutdown Panel 213 and controlled by local control of CV55 (CHARGING FLOW CONTROL VLV) to 22%-77%</span>. SC.OP-AB.CR-0003 (toxic gas) directs evacuation via AB.CR-0001 but has no field actions itself. See [[Pressurizer Level & Press Control]], [[SC.OP-AB.CR-0003 — Control Room Habitability]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q75</div>
+<span class="hi-trap">Trap: AB.CR-0001 (Control Room Evacuation) does NOT contain steps to place the EDG FIRE EMERGENCY BYPASS keylock switches in BYPASS.</span> That action is in <span class="hi-exam">[[AB.CR-0002 — Control Room Evacuation Due to Fire]], Attachment 4 (Reactor Operator), pages 15, 19, 22</span> — the fire-driven evacuation procedure, where the bypass switches remove SEC control from the EDG.
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RPS/SSPS]], [[CVCS]], [[Main Steam]], [[SECs]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2018 Q67]], [[2019 Q48]], [[2019 Q71]], [[2019 Q83]], [[2019 Q99]], [[2020 Q86]], [[2023 Q83]], [[2015 Q81]]
+- Related procedures: [[AB.CR-0002 — Control Room Evacuation Due to Fire]]
+- Related exam questions: [[2018 Q67]], [[2019 Q48]], [[2019 Q71]], [[2019 Q83]], [[2019 Q99]], [[2020 Q86]], [[2023 Q83]], [[2015 Q81]], [[2012 Q75]]
 - Related JPMs: [[2018 JPM IP-j]], [[2020 JPM IP-i]], [[2022 JPM IP-j]], [[2019 JPM IP-i]]
 - Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]]

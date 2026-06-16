@@ -129,10 +129,15 @@ At 100% power with the <span class="hi-exam">13 (Positive Displacement) charging
 With all charging lost (all 3 charging pump breakers open): <span class="hi-exam">letdown orifice isolation valves auto-shut (letdown flow zero), and VCT level RISES because seal return continues to the VCT while no charging pump draws from it</span>. RCP seal cooling is maintained by <span class="hi-exam">flow from the RCS past the Thermal Barrier heat exchanger</span>, allowing time to restore charging. Cross-unit option: 13 (Unit 1) charging pump aligned to supply Unit 2 charging header would require a <span class="hi-exam">Unit 2 shutdown (not Unit 1)</span> due to higher-borated Unit 1 RWST water being added to Unit 2 RCS. <span class="hi-trap">A reactor trip is directed only if BOTH seal injection AND Thermal Barrier flow are lost (see AB.RCP-0001).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q69</div>
+<span class="hi-trap">Trap: AB.CVC-0001 (Loss of Charging) does NOT apply to an unexpected 2CV35 (VCT 3 Way Inlet Valve) swap when Excess Letdown is in service — excess letdown does not flow through 2CV35, so the swap does not affect RCS letdown and AB.CVC-0001 will not address the valve movement.</span> The correct first action is to stop work (OOPS) per HU-AA-101, not to enter AB.CVC-0001.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[EDGs]], [[RCPs]], [[460/230V AC]], [[Pressurizer Level & Press Control]]
-- Related exam questions: [[2014 Q6]], [[2015 Q5]], [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]], [[2015 Q38]], [[2015 Q40]], [[2015 Q77]], [[2012 Q5]], [[2012 Q30]]
+- Related exam questions: [[2014 Q6]], [[2015 Q5]], [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]], [[2015 Q38]], [[2015 Q40]], [[2015 Q77]], [[2012 Q5]], [[2012 Q30]], [[2012 Q69]]
 - Related JPMs: [[2018 JPM Sim-b]], [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]], [[2015 JPM Sim-b]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2012 NRC Written Exam]]

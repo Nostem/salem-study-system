@@ -95,11 +95,16 @@ Terminating event: after Inadvertent SI termination and re-establishing letdown,
 After a 23 SG tube rupture and reactor trip, the crew transitions from TRIP-1 to SGTR-1, isolates the ruptured 23 SG, and begins the RCS cooldown to the target temperature (~503°F). During the cooldown, <span class="hi-exam">23 RCP trips, causing a loss of normal pressurizer spray</span>, and no SI pumps are available. The crew must <span class="hi-exam">maintain RCS temperature in the required band (CT#2)</span> so a transition out of SGTR-1 is not forced. At the RCS depressurization step, the only available PORV (2PR2) fails to open (2PR1 inoperable, 2PR6 C/T, normal spray lost), so depressurization is unavailable and the CRS transitions to [[EOP-SGTR-5 — SGTR without Pressurizer Pressure Control]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q55</div>
+The 23 TDAFW pump is supplied from the 21 and 23 Main Steam lines (each tap upstream of its MSIV, with its own isolation valve — <span class="hi-exam">21MS45 and 23MS45</span> — and check valve before combining). During an SGTR, the TDAFW pump <span class="hi-exam">remains in service ONLY if it is the SOLE source of feed flow to the SGs</span> (its turbine exhaust is an unmonitored release directly to atmosphere). Per SGTR-1 Steps 4.4, 4.5 and 4.7: if it is NOT the sole source of feed, <span class="hi-exam">lower 23 AFW pump speed to minimum, trip it, and do not restart until 23MS45 is shut</span>. <span class="hi-trap">If 22 AFW pump (powered from 2B 4KV vital bus) is running and feeding, a single SG fed is sufficient for heat-sink status — 23 AFW is not "the only source." 21 AFW pump is lost when 2A 4KV vital bus locks out.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Pressurizer & PRT]], [[Main Steam]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-2 — Post SGTR Cooldown]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]], [[EOP-SGTR-5 — SGTR without Pressurizer Pressure Control]], [[EOP-FRHS-3 — Response to Steam Generator High Level]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
-- Related exam questions: [[2015 Q11]], [[2016 Q15]], [[2016 Q79]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]], [[2015 Q79]], [[2014 Q14]], [[2012 Q19]]
+- Related exam questions: [[2015 Q11]], [[2016 Q15]], [[2016 Q79]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]], [[2015 Q79]], [[2014 Q14]], [[2012 Q19]], [[2012 Q55]]
 - Related JPMs: [[2019 JPM SRO-A5]], [[2019 JPM Sim-c]], [[2020 JPM Sim-g]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]
