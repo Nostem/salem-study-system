@@ -847,11 +847,22 @@ html[data-theme='light'] .wiki-question-card__summary strong { color: var(--colo
 html[data-theme='light'] .wiki-question-card__toggle { color: var(--color-accent-blue) !important; }
 html[data-theme='light'] .wiki-question-card__toggle:hover { color: var(--button-primary-hover-bg) !important; }
 
-/* Fallback: target the actual inline style patterns in wiki exam question cards */
-html[data-theme='light'] [style*="background:#111827"][style*="border:1px solid #1a2035"] { background: var(--color-bg-card) !important; border-color: var(--color-border) !important; }
-html[data-theme='light'] [style*="background:#0d1220"] { background: var(--color-bg-surface) !important; }
-html[data-theme='light'] [style*="background:#0a0e17"] { background: var(--color-bg-surface) !important; }
-html[data-theme='light'] [style*="background:#052e16"] { background: color-mix(in srgb, var(--color-accent-green) 10%, var(--color-bg-surface)) !important; }
+/* Fallback: target the actual inline style patterns in wiki exam question cards.
+   Must use `background` shorthand (not background-color) to override the
+   inline `background:` shorthand that sets dark-mode colors. */
+html[data-theme='light'] [style*="background:#111827"][style*="border:1px solid #1a2035"] {
+  background: var(--color-bg-card) !important;
+  border-color: var(--color-border) !important;
+}
+html[data-theme='light'] [style*="background:#0d1220"] {
+  background: var(--color-bg-surface) !important;
+}
+html[data-theme='light'] [style*="background:#0a0e17"] {
+  background: var(--color-bg-surface) !important;
+}
+html[data-theme='light'] [style*="background:#052e16"] {
+  background: color-mix(in srgb, var(--color-accent-green) 10%, var(--color-bg-surface)) !important;
+}
 html[data-theme='light'] [style*="color:#60a5fa"] { color: var(--color-accent-blue) !important; }
 html[data-theme='light'] [style*="color:#22c55e"] { color: var(--color-accent-green) !important; }
 html[data-theme='light'] [style*="color:#f87171"] { color: var(--color-mastery-weak) !important; }
