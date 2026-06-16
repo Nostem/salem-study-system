@@ -60,6 +60,11 @@ Release of 21 CVCS MT via SW to CW per S2.OP-SO.WL-0001 Section 5.5: Maximum Rel
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 IP-k</div>
+Alternate-path release of 21 CVCS MT via SW to CW per S2.OP-SO.WL-0001 Section 5.5: Maximum Release Rate <span class="hi-exam">150 gpm</span>. Direct NCO to OPEN <span class="hi-exam">2WL51 (LIQUID RELEASE STOP VALVE)</span>; throttle open <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span>; when the max rate can't be reached, throttle CLOSED <span class="hi-exam">21WR53 (MT RECIRC V)</span> to raise discharge flow (reaches 55 gpm). During the release the <span class="hi-exam">2R18 monitor ALARMS (~10⁵ counts, RED HI RAD light lit)</span> — the operator must direct the NCO to CLOSE 2WL51 to terminate the release and notify the control room of the high-radiation condition. Dilution flow 200000 gpm; 2LIS-180 indicates 90%; tank initial level 19600 gallons.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 IP-k</div>
 Place 11 CVCS Monitor Tank in recirculation per S1.OP-SO.WL-0001 Section 5.1 (Unit 1): valve lineup via Attachment 1 — <span class="hi-exam">11WR27 and 11WR31 OPEN, 12WR27 and 12WR31 CLOSED</span>. Start 11 MT Pump, throttle <span class="hi-exam">11WR53 to maintain 80 psig discharge</span>. Calculate minimum recirculation time using S1.OP-TM.ZZ-0002 tank curve: 90% level = <span class="hi-exam">19500 gallons</span>. Formula: <span class="hi-exam">(Volume x 3) / 150 gpm = 6 Hrs 30 Min</span>. <span class="hi-trap">Recirculation ensures the tank is homogeneously mixed before sampling — additions during recirculation invalidate the sample.</span>
 </div>
@@ -106,5 +111,5 @@ When Unit 2 releases a CVCS Monitor Tank via the cross-connect line to Unit 1 SW
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
 - Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
 - Related exam questions: [[2016 Q59]], [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]], [[2015 Q86]], [[2014 Q60]]
-- Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

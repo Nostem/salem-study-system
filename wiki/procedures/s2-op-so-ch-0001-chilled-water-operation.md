@@ -46,9 +46,14 @@ With both chillers inoperable, inlet water temp 85.1°F (83.6°F + 1.5°F uncert
 SRO determination during fuel movement: 21 Chiller compressor oil change MAY be performed. <span class="hi-exam">TSAS 3.7.10 allows a chiller to be taken out of service if movement of irradiated fuel is already on-going, and gives 14 days to restore it.</span> Compare with the same TS for at-power conditions where Action b drives non-essential heat-load isolation per this procedure.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 SRO-A1-1</div>
+Non-essential heat-load isolation per Attachment 2 after both chillers trip (TS 3.7.10.a Action b.1). Highest inlet water temp 73.5°F + 1.5°F instrument uncertainty = <span class="hi-exam">75.0°F</span>, sitting at a Table A category boundary. Per the Att 2 NOTE, because outside air temperature is rising (81°F → 99°F) the SRO must conservatively use the next-higher inlet-temperature category (&gt; 75°F), giving a Total Heat Load Isolation of <span class="hi-exam">999.1 kBTU/hr</span>; then select any Table B combination of non-essential loads exceeding that total.
+</div>
+
 ## Connections
 
 - Related systems: [[Chill Water]], [[Control Air]], [[Service Water]]
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
-- Related JPMs: [[2016 JPM SRO-A1-2]], [[2018 JPM SRO-A1]], [[2022 JPM SRO-A1]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2018 JPM SRO-A1]], [[2022 JPM SRO-A1]], [[2014 JPM SRO-A1-1]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]]

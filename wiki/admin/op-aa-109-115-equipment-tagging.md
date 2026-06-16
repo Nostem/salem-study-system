@@ -38,10 +38,20 @@ Tagging review for 11 Charging pump removal (Unit 1): review DWG 205228 Sheet 2 
 A Bezel Red Blocking Tag (RBT) may be used as the <span class="hi-exam">SOLE isolation point ONLY when no other means to isolate are practical to establish a Test Boundary, as long as a hazard to personnel or equipment does not exist due to energized sources</span> (page 72). <span class="hi-trap">It may NOT be used as the sole isolation point just because the tagged position is fail-safe, because the component is inside another tagging request's boundary, or because the location "ensures it won't be operated locally" (a normally inaccessible overhead component could still be accessed).</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A2</div>
+Prepare a manual tagout (Form 4) to repair the 11 SI pump. The discriminating element is the <span class="hi-exam">tagging sequence: 1. Bezels (INFO) → 2. Electrical Isolation (RBT OFF/D1) → 3. Mechanical Isolation (RBT SHUT) → 4. Vents and Drains (RBT OPEN)</span>. Per Attachment 2: a minimum of one vent and one drain must be opened inside the boundary (all vents/drains share sequence #16). MOVs may be used as blocking points — 11SJ113 AND 12SJ113 may substitute for the single manual valve 1SJ114, but then the 11/12SJ113 breakers (RBT-OFF), bezels (INFO), and handwheels (RBT-SHUT) must also be tagged. Electrical power must be cleared/tagged before a component's manual operator is tagged.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 SRO-A2</div>
+Alternate-path review of a tagging list for repair of an instrument connection on 21 SI pump. Three errors the SRO must catch: (1) <span class="hi-exam">2SJ30 (RWST to SI Pump Stop Valve) used as a blocking point would render BOTH 21 and 22 SI pumps inoperable — the correct boundary is 21SJ33</span>. (2) <span class="hi-exam">A check valve (21SJ64) is relied upon for the recirc line, but check valves are NOT used for personnel protection — isolation valve 21SJ65 must be tagged closed</span>. (3) <span class="hi-exam">The ECCS cross-connect (21/22SJ113, or 2SJ114) is not tagged</span> (on a different print, drawing 205334 Sheet 1). Return the request to WCC with corrections.
+</div>
+
 ## Connections
 
 - Related systems: [[460/230V AC]], [[CVCS]], [[ECCS]]
 - Related procedures: [[OP-AA-108-116 — Protected Equipment Program]]
 - Related exam questions: [[2022 Q70]], [[2020 Q70]], [[2014 Q69]]
-- Related JPMs: [[2018 JPM SRO-A3]]
-- Related exam: [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related JPMs: [[2018 JPM SRO-A3]], [[2014 JPM RO-A2]], [[2014 JPM SRO-A2]]
+- Related exam: [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

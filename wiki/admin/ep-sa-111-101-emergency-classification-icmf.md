@@ -112,10 +112,15 @@ Reference sheets: EP-SA-111-115 (p 1), EP-SA-111-104 (p 2), EP-SA-111-107 (p 1,3
 <span class="hi-exam">Short Duration Events corrected before declaration still require declaration THEN termination</span> — the actual declaration should be no less restrictive. Per EP-SA-111-101 (p 13): "the condition may be corrected before a declaration has been made. The key consideration ... is to determine whether or not further plant damage occurred while the corrective actions were being taken ... Classify the event as indicated and terminate the emergency once assessment shows that there were no consequences from the event and other termination criteria are met." For a declared Unusual Event corrected before the 15-minute notifications are made, the Emergency Coordinator <span class="hi-exam">directs the Primary Communicator to make all required 15-minute notifications, then terminates the UE IAW the proper attachments</span>. <span class="hi-trap">Trap: do NOT terminate/skip the 15-minute notifications, and the UE is terminated (not retracted).</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 SRO-A4</div>
+General Emergency PAR / ICMF completion (time-critical, <span class="hi-exam">15 minutes</span>) for a 13-point GE (loss of all three fission product barriers, EALs FB3.L, RB2.L, CB.1.L). With wind FROM <span class="hi-exam">050° (NE)</span>, the Predetermined PAR Flowchart (EP-SA-111-F4 Att 4) requires: Evacuate ALL sectors 0-5 miles; Evacuate the downwind +/- 1 sector group <span class="hi-exam">SSW, SW, WSW</span> 5-10 miles; Shelter all remaining sectors. 2R41D reads 2.5E3 µCi/sec, below the Federal Limit of <span class="hi-exam">2.42E+05 µCi/sec</span> Noble Gas, so the ICMF is marked "NO RADIOLOGICAL RELEASE IS IN PROGRESS" and Box IIb (PAR Upgrade) is NOT checked.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[EP-SA-111 — Emergency Classification and Protective Action]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
 - Related exam questions: [[2015 Q99]], [[2014 Q79]], [[2014 Q100]]
-- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM SRO-A5]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM SRO-A5]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM SRO-A4]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

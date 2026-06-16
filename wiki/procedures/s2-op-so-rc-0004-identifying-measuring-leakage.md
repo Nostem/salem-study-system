@@ -51,10 +51,15 @@ Graphical conversion from elapsed time between sump-pump cycles (minutes) to lea
 At 0015 OHA C-2 CNTMT SUMP PMP START annunciates with the previous sump pump stop time of 1855 yesterday. Elapsed time = <span class="hi-exam">320 minutes</span>. Per Attachment 3, 320 minutes corresponds to ~<span class="hi-exam">0.9 gpm</span> — between the 0.85 gpm and 1.0 gpm thresholds. Required action: initiate <span class="hi-exam">Section 5.6</span> only; do NOT initiate S2.OP-ST.RC-0008 and do NOT refer to TS 3.4.7.2 because leakage does not exceed 1.0 gpm.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A1-1</div>
+At 0750 OHA C-2 CNTMT SUMP PMP START annunciates with the previous sump pump stop time of 1510 yesterday. Elapsed time = <span class="hi-exam">1000 minutes</span>. Per Attachment 3 (page 1 of 2), the 1000-minute line crosses the <span class="hi-exam">0.3 gpm</span> leak-rate line — below both thresholds. Required action: take NO action threshold (leakage does NOT exceed 0.85 gpm, so Section 5.6 is not initiated; does NOT exceed 1.0 gpm, so S2.OP-ST.RC-0008 / TS 3.4.7.2 are not required).
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[Containment]]
 - Related procedures: [[AB.RC-0001 — Reactor Coolant System Leak]]
 - Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
-- Related JPMs: [[2016 JPM RO-A1-1]]
-- Related exam: [[2016 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM RO-A1-1]], [[2014 JPM RO-A1-1]]
+- Related exam: [[2016 NRC Operating Exam]], [[2014 NRC Operating Exam]]

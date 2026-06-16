@@ -39,6 +39,11 @@ b. Two flow paths from RWST via charging pumps to RCS
 
 **Action:** With only one flow path OPERABLE, restore within <span class="val-alarm">72 hours</span> or be in Hot Standby and borated to SDM ≥ 1% delta k/k at 200°F within 6 hours. Restore within next 7 days or be in Cold Shutdown within 30 hours.
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-a</div>
+The boric acid flow-rate acceptance criterion of <span class="hi-exam">SR 4.1.2.2.d is 33 gpm</span>. The surveillance procedure S2.OP-ST.CVC-0011 (Boration Flow Rate Test) verifies <span class="hi-exam">≥36 gpm = the 33 gpm SR value + 3 gpm instrument uncertainty</span> (loops 2FT110 and 2FT113). The test confirms boration flow capability through the normal makeup flowpath (read on 2FI110A) and the rapid borate flowpath via 2CV175 (read on 2FI113A). See [[S2.OP-ST.CVC-0011 — Boration Flow Rate Test]].
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.2 Boration Systems (General)</summary>
 <div class="callout callout-bases">
@@ -211,8 +216,8 @@ S2.OP-ST.CVC-0010 surveillance of borated water sources after a 21 BAT pump leak
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]]
-- Related procedures: [[S2.OP-ST.CVC-0010 — Borated Water Sources]]
+- Related procedures: [[S2.OP-ST.CVC-0010 — Borated Water Sources]], [[S2.OP-ST.CVC-0011 — Boration Flow Rate Test]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exam questions: [[2016 Q8]], [[2020 Q77]], [[2015 Q35]], [[2015 Q66]], [[2015 Q77]]
-- Related JPMs: [[2019 JPM RO-A2]], [[2022 JPM SRO-A2]], [[2016 JPM RO-A2]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related JPMs: [[2014 JPM Sim-a]], [[2019 JPM RO-A2]], [[2022 JPM SRO-A2]], [[2016 JPM RO-A2]]
+- Related exam: [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]

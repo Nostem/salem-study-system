@@ -21,6 +21,11 @@ If the depressurization rate is set too high, high steam flow coincident with Lo
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-d</div>
+Unisolable MSLB at the mixing bottle (all MSIVs failed open) with all SGs faulted and all AFW lost. Step 2: <span class="hi-exam">recognize ALL SGs are faulted → DO NOT FEED a faulted SG</span>. Step 4: <span class="hi-exam">neither 21 nor 22 charging pump available (21 CIT, 22 tripped) → GO TO Step 23</span> and establish bleed and feed using the <span class="hi-exam">SI pumps</span>. Steps 23-26.1 (CAUTION: steps 24 thru 29 must be performed quickly and without interruption): <span class="hi-exam">STOP ALL RCPs</span> (critical step 23) → INITIATE SI → verify Table B SI valves in Safeguards / both SI pumps running / Table C valves open → <span class="hi-exam">OPEN BOTH PZR PORVs</span> (step 26): <span class="hi-exam">2PR1 opens, 2PR2 will NOT open</span> (alternate path) → <span class="hi-exam">OPEN reactor head vents 2RC40 thru 2RC43</span> (key switches on 2RP3) as the alternate bleed path.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 Sim-d</div>
 Steps 11-14 Bleed and Feed: actuate both trains SI → verify charging and SI pump flow → open all PZR PORVs. If <span class="hi-exam">2PR2 fails to open (Step 14)</span>, open <span class="hi-exam">reactor head vent valves 2RC40-2RC43</span> (key-locked on 2RP2 backpanel) as alternate bleed path.
 </div>
@@ -137,6 +142,6 @@ Bleed-and-feed flowpath selection when a PORV block valve is unavailable: with <
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related tech specs: [[TS 3/4.5 — ECCS]]
 - Related exam questions: [[2015 Q23]], [[2016 Q23]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]], [[2015 Q83]], [[2014 Q23]], [[2014 Q74]]
-- Related JPMs: [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]], [[2016 JPM Sim-d]]
+- Related JPMs: [[2014 JPM Sim-d]], [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]], [[2016 JPM Sim-d]]
 - Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

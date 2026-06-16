@@ -26,6 +26,11 @@ Transfer of 22 Backup Group PZR heaters to emergency power (2A 460V Vital Bus) r
 Section 5.3 in-plant transfer (initial conditions: <span class="hi-exam">2A EDG carrying 2A Vital Bus loaded to 2400 KW</span>): verify 2AX1AX14X (84' Swgr Rm) OPEN; direct NCO to place 22 B/U Group in MANUAL and press 22 BACKUP OFF pushbutton; verify 2EX1EP2EPX (78' Electrical Penetration) OPEN; <span class="hi-exam">remove interlock key from 2EX1EP2EPX</span> (tab must be pushed in to rotate key for removal); place <span class="hi-exam">11 of 14 PZR heater disconnects in OFF, leaving only 3 ON</span> and mark remaining as N/A; place <span class="hi-exam">2AX1AX14X-1, 2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH</span> in ON (78' Electrical Penetration); insert interlock key and unlock breaker 2AX1AX14X. Critical steps: 5.3.3, 5.3.4, 5.3.5, 5.3.6, 5.3.7. <span class="hi-trap">JAM key is required to operate the disconnect switch in Step 5.3.6.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 IP-j</div>
+Section 5.3 in-plant transfer of 22 Backup Group to emergency power (Rev 10; initial conditions: <span class="hi-exam">2A EDG carrying 2A Vital Bus loaded to 2400 KW</span>): verify 2AX1AX14X (84' Swgr Rm) OPEN; direct NCO to place 22 Backup Group in MANUAL and press the 22 BACKUP OFF pushbutton; verify 2EX1EP2EPX (78' Electrical Penetration) OPEN; <span class="hi-exam">remove interlock key from 2EX1EP2EPX</span> (tab must be pushed in to rotate key); place <span class="hi-exam">eleven of the fourteen PZR heater disconnects in OFF, leaving only three ON</span> and mark the remainder N/A (limits heater load within the 2A 460V Vital Bus capacity); place <span class="hi-exam">2AX1AX14X-1, 2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH in ON</span> (requires the JAM key); insert the interlock key and UNLOCK breaker 2AX1AX14X (Corry Key Interlock). Critical steps in this revision: <span class="hi-exam">5.3.1, 5.3.4, 5.3.5, 5.3.6, 5.3.7</span>. The key interlock prevents aligning both the normal and emergency supplies to the heater bus at once.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q11</div>
 Procedural caution: <span class="hi-exam">"Aligning pressurizer heaters to vital bus adds approximately 210 KW to bus load"</span>. Maximum diesel generator load is <span class="hi-exam"><span class="val-alarm">2750 KW</span> (2000 hr rating)</span>. To add PZR heaters without exceeding the 2000 hr limit, current DG loading must be adjusted to no greater than <span class="hi-exam">2750 - 210 = 2540 KW</span>.
@@ -37,5 +42,5 @@ Procedural caution: <span class="hi-exam">"Aligning pressurizer heaters to vital
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exam questions: [[2020 Q11]]
-- Related JPMs: [[2022 JPM IP-i]], [[2016 JPM IP-i]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related JPMs: [[2022 JPM IP-i]], [[2016 JPM IP-i]], [[2014 JPM IP-j]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Operating Exam]]

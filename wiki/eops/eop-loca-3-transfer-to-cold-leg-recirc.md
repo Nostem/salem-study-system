@@ -100,12 +100,17 @@ When containment sump blockage causes loss of ECCS flow during LOCA-3, the CAS d
 RWST level lowering to the low level setpoint <span class="hi-exam">only directs transition to EOP-LOCA-3 (Transfer to Cold Leg Recirculation) when so directed in the FRP/procedure in use</span>. <span class="hi-trap">It does NOT automatically suspend any FRP in progress — automatically going to LOCA-3 on low RWST level does not always occur regardless of where in any procedure you are. (The condition that ALWAYS requires suspending any FRP is a loss of all three vital buses → EOP-LOPA-1.)</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-b</div>
+LOCA-3 transfer to cold leg recirculation with a <span class="hi-exam">single-train (alternate path)</span> alignment. Step 5 checks whether 21 and 22 SJ44 (Sump Valves) are open; with <span class="hi-exam">22 SJ44 failed shut and only 21 SJ44 open</span>, the crew runs the single-train branch — stop 22 RHR pump, close 2SJ69 (Common Suction), and do <span class="hi-exam">NOT start 22 RHR pump</span> (22 SJ44 will not open). The path is further degraded by support-system losses: <span class="hi-exam">only 2 of the required 3 SW pumps are running</span> (step 11.1), so 2 CFCUs are stopped and loads are shed (step 11B); and because <span class="hi-exam">22 CCW HX is unavailable (~196°F on 2CC2)</span>, RHR HX cooling is routed by opening 21CC16 and closing 22CC16. Final lineup runs 21 RHR pump with 21SJ45 (RHR Discharge to SI pump valve) open.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]], [[CFCUs]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related exam questions: [[2015 Q24]], [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]], [[2015 Q34]], [[2015 Q46]], [[2014 Q89]], [[2014 Q99]]
-- Related JPMs: [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]]
+- Related JPMs: [[2014 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]], [[2015 Scenario 1]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]]

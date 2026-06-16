@@ -31,7 +31,7 @@ jpms:
     type: Admin-RO
     location: Classroom
     pages: "15-21"
-    ka: "TBD"
+    ka: "2.2.13"   # resolved from JPM cover during ingestion
     task_number: "N3130060301"
     split_pdf: "2014-jpm-ro-a2.pdf"
   - id: "RO-A4"
@@ -39,7 +39,7 @@ jpms:
     type: Admin-RO
     location: Classroom   # cover EVALUATION SETTING reads "Simulator", but this is an administrative log-completion JPM; per skill Admin JPMs = Classroom (flag during ingestion)
     pages: "22-31"
-    ka: "TBD"
+    ka: "2.4.39"   # resolved from JPM cover during ingestion
     task_number: "N1240100501"
     split_pdf: "2014-jpm-ro-a4.pdf"
   - id: "SRO-A1-1"
@@ -55,7 +55,7 @@ jpms:
     type: Admin-SRO
     location: Classroom
     pages: "40-46"
-    ka: "TBD"
+    ka: "2.1.18"   # resolved from JPM cover during ingestion
     task_number: "N1200170105"
     split_pdf: "2014-jpm-sro-a1-2.pdf"
   - id: "SRO-A2"
@@ -71,7 +71,7 @@ jpms:
     type: Admin-SRO
     location: Classroom
     pages: "53-58"
-    ka: "TBD"
+    ka: "2.3.6"   # resolved from JPM cover during ingestion
     task_number: "N1120650302"
     split_pdf: "2014-jpm-sro-a3.pdf"
   - id: "SRO-A4"
@@ -95,7 +95,7 @@ jpms:
     type: Simulator
     location: Simulator
     pages: "82-90"
-    ka: "TBD"
+    ka: "E011 EA1.11"   # resolved from JPM cover during ingestion
     task_number: "1150030501"
     split_pdf: "2014-jpm-sim-b.pdf"
   - id: "Sim-c"
@@ -111,7 +111,7 @@ jpms:
     type: Simulator
     location: Simulator
     pages: "100-107"
-    ka: "TBD"
+    ka: "EPE E05 EA1.1"   # resolved from JPM cover during ingestion
     task_number: "N1150290501"
     split_pdf: "2014-jpm-sim-d.pdf"
   - id: "Sim-e"
@@ -164,11 +164,11 @@ jpms:
     split_pdf: "2014-jpm-ip-j.pdf"
     notes: "Cover labels this 'Annual IP-j'."
   - id: "IP-k"
-    title: "Respond to High Radiation Alarm during an Authorized Release of Gas"
+    title: "Respond to High Radiation Alarm during an Authorized Release of Rad. Liquid"
     type: In-Plant
     location: In-Plant
     pages: "156-161"
-    ka: "TBD"
+    ka: "2.3.11"   # resolved from JPM cover during ingestion
     task_number: "N0685140104"
     split_pdf: "2014-jpm-ip-k.pdf"
 

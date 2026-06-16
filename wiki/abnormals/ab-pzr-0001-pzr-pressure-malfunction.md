@@ -25,6 +25,11 @@ When a PZR pressure channel fails high, actual RCS pressure lowers. This causes 
 With PZR spray valve failed open and heaters energized but unable to maintain pressure: manual reactor trip directed at <span class="hi-exam">RCS pressure 2000 psig and lowering</span>. <span class="hi-trap">Basis: prevent challenging automatic reactor trip on OT&Delta;T — not the low PZR pressure trip at 1865 psig rate-compensated.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-c</div>
+2PR2 PZR PORV leak isolation. Initial diagnosis is rising PORV tailpipe temperature (~227°F) and rising charging flow → enter S2.OP-AB.RC-0001, then transition to AB.PZR-0001 (the RC CAS Item 3.0 directs AB.PZR-0001 when leakage is identified from a PORV or a PZR Code Safety Valve). The PZR diagnostic logic clears POPS, controlling channel, Master Pressure Controller, and spray-valve failures, then at step 3.46 confirms elevated PORV tailpipe temps. Isolation method: <span class="hi-exam">CLOSE both 2PR6 and 2PR7 (step 3.47)</span>; when pressure stabilizes OPEN 2PR6 (tailpipe not rising) → OPEN 2PR7 (tailpipe rises, identifying 2PR2) → <span class="hi-exam">CLOSE 2PR7 to isolate 2PR2 (step 3.55)</span>. Then notify SM/CRS to refer to TS 3.4.5 and the Event Classification Guide for Primary Leakage.
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2022 #4</div>
 2PR2 PZR PORV seat leakage. Entry cue: OHA E-28 PZR HTR ON PRESS LO with rising PORV tailpipe temperature. Diagnostic method: close both block valves (2PR6, 2PR7), stabilize RCS pressure, then open each block valve individually — the one causing tailpipe temp to rise identifies the leaking PORV (<span class="hi-exam">2PR2 via 2PR7</span>). CRS enters <span class="hi-exam">TS 3.4.5 action a</span> (1 hour to close PORV block valve with power maintained) and evaluates TS 3.2.5.b if RCS pressure below <span class="hi-exam">2200 psia [2185 psig]</span>.
@@ -113,8 +118,8 @@ With RHR in service in Mode 5, an RCS pressure transient to &gt;375 psig opens t
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[RPS/SSPS]], [[ECCS]], [[RHR]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RC-0001 — Reactor Coolant System Leak]]
 - Related exam questions: [[2014 Q10]], [[2014 Q36]], [[2014 Q38]], [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]], [[2015 Q87]], [[2014 Q87]]
-- Related JPMs: [[2020 JPM Sim-a]]
+- Related JPMs: [[2014 JPM Sim-c]], [[2020 JPM Sim-a]]
 - Related scenarios: [[2016 Scenario 3]], [[2017 Scenario 7]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2015 Scenario 2]]
-- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

@@ -76,6 +76,11 @@ Provides the Secondary Communicator (Attachment 8 Secondary Communicator Log) th
 Secondary Communicator duties (EP-SA-111-F8, Attachment 8 Secondary Communicator Log) during a declared <span class="hi-exam">ALERT</span> — Unit 2 reactor initially failed to trip on a manual trip signal, tripped on the second trip handle, unit stable in MODE 3, <span class="hi-exam">ENC not yet activated</span>. The Secondary Communicator backs up the Primary Communicator's 15-minute off-site notifications and completes the Secondary Communicator Log. (Admin JPM — performed in the Classroom.)
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A4</div>
+Same Secondary Communicator Log (EP-SA-111-F8, Attachment 8) during an ALERT, with two discriminating elements: (1) <span class="hi-exam">activate EROS by selecting the correct unit (Salem 2) CONNECT button</span> on the EROS Link Control and Status Display and verify "Messages Sent" increments above 0; (2) on an incoming <span class="hi-exam">media call</span> (CNN asking about a reported Unit 2 core melt), the communicator must <span class="hi-trap">refuse to release any information to the News Media</span> per Attachment 8, Section C, Incoming Calls. EROS is terminated (Salem 2 DISCONNECT) only when directed by the NRC. (Admin JPM — performed in the Classroom; cover EVALUATION SETTING reads "Simulator".)
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q75</div>
 State notifications (Delaware and New Jersey): the Primary Communicator's PRIMARY method is the <span class="hi-exam">NETS (Nuclear Emergency Telecommunications System) closed-circuit phones</span> (ESSX is the backup), and notifications must be made <span class="hi-exam">within 15 minutes of an emergency declaration</span> — even when a lower-classification emergency is already in progress.
@@ -90,5 +95,5 @@ State notifications (Delaware and New Jersey): the Primary Communicator's PRIMAR
 
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-101 — Emergency Classification and ICMF]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
 - Related exam questions: [[2016 Q71]], [[2016 Q81]], [[2019 Q100]], [[2015 Q75]], [[2015 Q100]]
-- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM RO-A4]], [[2022 JPM SRO-A5]], [[2015 JPM RO-A4]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM RO-A4]], [[2022 JPM SRO-A5]], [[2015 JPM RO-A4]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM RO-A4]], [[2014 JPM SRO-A4]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Operating Exam]]

@@ -137,6 +137,11 @@ Security-redacted question testing SRO knowledge of EOP-FRHS-2, Response to Stea
 ICMF peer check during SGTR: a release IS in progress because the <span class="hi-exam">TD AFW pump takes steam from 21 and 23 SGs</span> — with 23 SG ruptured and <span class="hi-exam">23MS45 not closed</span>, primary-to-secondary leakage exits through the TD AFW pump steam supply. No radiation monitor monitors this release path = <span class="hi-exam">unmonitored release in progress</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-d</div>
+EOP-FRHS-1 Step 2: <span class="hi-exam">IF AT LEAST ONE INTACT OR RUPTURED SG IS AVAILABLE, THEN DO NOT FEED A FAULTED SG</span>. In this JPM all SGs are faulted by an unisolable main steam line break (all MSIVs failed open), so no SG is available as a heat sink and bleed-and-feed becomes mandatory. Step 3 then confirms <span class="hi-exam">RCS pressure is greater than all SG pressures</span> (and RCS Thots > 350°F), establishing that the SGs no longer provide a usable secondary heat sink.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q81</div>
 EOP-FRHS-1 heat sink established criteria (Step 6): heat sink is established when <span class="hi-exam">NR level in at least one SG is >9% (15% adverse)</span> OR <span class="hi-exam">feed flow is verified to at least one SG by CETs lowering or WR level rising</span>. If WR level is rising in one SG (even with all NR levels offscale low), heat sink IS established and transition back to the procedure in effect (e.g. EOP-TRIP-2) IS allowed. <span class="hi-trap">NR level does not need to reach 9% before returning — WR level rising is sufficient to confirm feed flow and allow exit from FRHS-1.</span>
@@ -218,6 +223,6 @@ EOP-LOCA-1 explicitly checks for a <span class="hi-exam">steam break / Loss of S
 </div>
 
 - Related exam questions: [[2014 Q2]], [[2015 Q10]], [[2015 Q11]], [[2015 Q12]], [[2015 Q18]], [[2015 Q26]], [[2016 Q4]], [[2016 Q48]], [[2016 Q51]], [[2016 Q65]], [[2016 Q79]], [[2016 Q83]], [[2016 Q85]], [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]], [[2015 Q50]], [[2015 Q83]], [[2014 Q14]], [[2014 Q25]], [[2014 Q26]], [[2014 Q51]], [[2014 Q85]]
-- Related JPMs: [[2023 JPM SRO-A4]], [[2016 JPM Sim-h]]
+- Related JPMs: [[2014 JPM Sim-d]], [[2023 JPM SRO-A4]], [[2016 JPM Sim-h]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]

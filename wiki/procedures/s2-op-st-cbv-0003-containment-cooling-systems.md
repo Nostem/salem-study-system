@@ -45,10 +45,15 @@ CFCU SW flow and <span class="hi-exam">SW223 mechanical stop</span> limitations 
 21 CFCU surveillance review: P&L 3.4 rounding direction trap from the SRO review perspective. Recorded DP 87 psid is between Exhibit 1 increments — operator who performed the surveillance rounded DOWN to <span class="hi-exam">1592 gpm</span> minimum (incorrect). Correct application of <span class="hi-exam">P&L 3.4 rounds UP to the next HIGHER DP value, yielding 1638 gpm minimum required</span>. Actual SW flow 1625 gpm &lt; 1638 gpm → <span class="hi-exam">surveillance is UNSAT, 21 CFCU INOPERABLE</span>. Same Exhibit 1 / P&L 3.4 trap as 2018, 2019, and 2023 Sim-f, tested here as an SRO review of completed paperwork rather than the RO performance.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-f</div>
+25 CFCU monthly run surveillance. Start the CFCU in LOW SPEED (S2.OP-SO.CBV-0001), verify SW flow <span class="hi-exam">≥1465 gpm</span> (Step 5.1.3.E/F), record start time, and after at least 15 minutes record stop time, cooling water flow rate, and 22 SW header DP (Step 5.1.1.C). Reported 22 SW header DP = <span class="hi-exam">91 psid → rounded up to 95 psid</span> per P&L 3.4 to read the Exhibit 1 minimum CFCU flow. Result: SW flow ≥1465 gpm is <span class="hi-exam">SAT</span> while the cooling water flow rate is <span class="hi-exam">UNSAT</span> against the Exhibit 1 minimum at 95 psid.
+</div>
+
 ## Connections
 
 - Related systems: [[CFCUs]], [[Service Water]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam questions: [[2022 Q41]]
-- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2014 JPM Sim-f]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2014 NRC Operating Exam]]

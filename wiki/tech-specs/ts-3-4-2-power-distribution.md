@@ -328,6 +328,11 @@ The Surveillance Frequency is based on operating experience, equipment reliabili
 Manual QPTR surveillance following dropped rod 2D4: calculated QPTR for N42 quadrant upper = <span class="hi-exam">1.041</span>, lower = <span class="hi-exam">1.032</span>, both exceeding the <span class="hi-exam">1.02 limit</span>. Surveillance marked UNSAT, TS LCO 3.2.4 NOT met. QPTR >1.02 but <1.09 → Action a applies: calculate QPTR hourly, restore within <span class="hi-exam">2 hours</span> or reduce power.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A1-2 / SRO-A1-2</div>
+Manual QPTR following dropped rod 204: the calculated Maximum Power Tilt stays <span class="hi-exam">&lt; 1.02</span>, so the surveillance is <span class="hi-exam">SAT</span> and the LCO 3.2.4 QPTR limit remains MET — no Action a/b/c entry. Demonstrates that a dropped rod does not automatically violate the 1.02 limit; the data drives the determination. SRO-A1-2 is the independent review of the same calculation.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q97</div>
 LCO 3.2.1 (AFD) action when NOT met at 95% power: reduce power to less than <span class="hi-exam">90% RTP within 15 minutes</span>. Once between 90-50%, reduce to <50% in the next <span class="hi-exam">30 minutes</span>. LCO 3.2.1 power reduction protects the <span class="hi-exam">F<sub>Q</sub>(Z) (Heat Flux Hot Channel Factor)</span> limit in the COLR. <span class="hi-trap">Trap: Radial Peaking Factor (F<sub>XY</sub>) is protected by a different LCO (3.2.3). The three Power Distribution LCOs protect three different hot channel factors: 3.2.1 → F<sub>Q</sub>(Z), 3.2.2 → F<sup>N</sup><sub>ΔH</sub>, 3.2.3 → Radial Peaking Factor.</span>
@@ -349,5 +354,5 @@ With Mode 1 at 75% power and AFD = -26%, the AFD is outside the "doghouse" shown
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]], [[Feed & Condensate]]
 - Related procedures: [[S2.RE-RA.ZZ-0011 — Tables]]
 - Related exam questions: [[2016 Q70]], [[2018 Q97]], [[2020 Q20]], [[2014 Q71]]
-- Related JPMs: [[2022 JPM RO-A3]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related JPMs: [[2022 JPM RO-A3]], [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

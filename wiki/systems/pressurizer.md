@@ -38,6 +38,11 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
 - Surge line attached to bottom, connects to hot leg of one RCS loop
 - (UFSAR 5.1)
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 IP-j</div>
+On a loss of power to the group buses, the PZR backup heater groups can be re-energized from their <span class="hi-exam">emergency power supply (460V Vital Bus, EDG-backed)</span> per S2.OP-SO.PZR-0010 Section 5.3. To stay within the emergency bus capacity, <span class="hi-exam">only three of the fourteen heater disconnects remain ON</span> (eleven placed OFF) when fed from the emergency supply. A Corry key interlock between the normal main breaker (2EX1EP2EPX) and the emergency feed breaker (2AX1AX14X) prevents both supplies from being aligned to the heater bus simultaneously.
+</div>
+
 ## Pressurizer Relief Tank
 
 | Parameter | Value | Source |
@@ -109,6 +114,11 @@ PORV discharge temperature is determined by a <span class="hi-exam">constant ent
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q11</div>
 PZR PORV and Safety discharge piping (drawing 203301): both PZR PORVs and the 3 PZR Safeties discharge into a <span class="hi-exam">single combined line going to the PRT</span>. Tailpipe temperature monitoring: <span class="hi-exam">each Safety has its own individual temperature sensor</span>, but the <span class="hi-exam">2 PORVs share ONE sensor on the common discharge line</span> — so PORV-to-PORV identification cannot be made from temperature alone. AB.PZR-0001 diagnostic method when both PORV Stops are closed and one PORV Stop (<span class="hi-exam">2PR8</span>) is re-opened: rising tailpipe temperature identifies the leaking PORV.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-c</div>
+Leaking-PORV identification by sequential unisolation. AB.PZR-0001 directs <span class="hi-exam">CLOSE both 2PR6 and 2PR7, Pressurizer Relief Stop Valves</span> (step 3.47) to stop the leak and stabilize pressure. After pressure stabilizes, <span class="hi-exam">OPEN 2PR6</span> (tailpipe temperature does NOT rise → 2PR1 intact), then <span class="hi-exam">OPEN 2PR7</span> (tailpipe temperature RISES → identifies <span class="hi-exam">2PR2 as the leaking PORV</span>), then <span class="hi-exam">CLOSE 2PR7</span> (step 3.55) to isolate it. Initial diagnosis cue is PORV tailpipe temperature rising from normal to ~227°F with rising charging flow.
 </div>
 
 <div class="callout callout-exam">
@@ -229,6 +239,6 @@ A stuck-open PZR safety (PR3) is a <span class="hi-exam">constant-enthalpy (thro
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[S2.OP-SO.PZR-0003 — PRT Operation]], [[S2.OP-SO.RC-0002 — Vacuum Refill of the RCS]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
 - Related exam questions: [[2014 Q3]], [[2014 Q36]], [[2014 Q39]], [[2016 Q11]], [[2016 Q21]], [[2016 Q23]], [[2016 Q34]], [[2016 Q36]], [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]], [[2015 Q29]], [[2015 Q36]], [[2015 Q79]], [[2014 Q22]], [[2014 Q23]], [[2014 Q87]]
-- Related JPMs: [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]], [[2016 JPM Sim-d]], [[2016 JPM Sim-f]], [[2016 JPM IP-i]]
+- Related JPMs: [[2014 JPM Sim-c]], [[2014 JPM IP-j]], [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]], [[2016 JPM Sim-d]], [[2016 JPM Sim-f]], [[2016 JPM IP-i]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]]
-- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

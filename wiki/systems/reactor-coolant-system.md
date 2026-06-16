@@ -305,8 +305,18 @@ Containment Sump leak-rate quantification (S2.OP-SO.RC-0004 §5.3) following an 
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A1-1</div>
+Same evolution with different data: previous sump-pump stop 1510 yesterday, start 0750 today → <span class="hi-exam">1000 minutes</span> elapsed → <span class="hi-exam">0.3 gpm</span> per Attachment 3 (page 1 of 2). Result is below BOTH thresholds, so NO action threshold is taken — Section 5.6 is not initiated and S2.OP-ST.RC-0008 / TS 3.4.7.2 referral are not required.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2016 Sim-d</div>
 FRHS-1 RCS Bleed and Feed: <span class="hi-exam">Step 23 (sequence) — STOP ALL RCPs (21-24)</span> before initiating SI to prevent uncontrolled RCS depressurization through PORV bleed flow with running RCPs. Step 24 alternate path opens 2RC40 thru 2RC43 (Reactor Head Vents) at 2RP3 backpanel when 2PR2 PORV fails to open — providing an alternate RCS pressure relief path through the reactor vessel head.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-e</div>
+During a TRIP-4 natural-circulation cooldown, RCS is depressurized with <span class="hi-exam">ONE PZR PORV (2PR1 or 2PR2) to 1865 psig</span> while charging is maintained <span class="hi-exam">≥87 gpm</span> and letdown restored. <span class="hi-exam">Alternate path: the PORV sticks open and its block valve also fails — the unisolable depressurization requires manual Safety Injection before RCS subcooling is lost (~3 min after the PORV opens), because automatic SI is failed.</span> SG NR level is held 9-33% and RCS Thots driven &lt;543°F before blocking HI STEAM LINE FLOW SI.
 </div>
 
 <div class="callout callout-exam">
@@ -355,6 +365,6 @@ A reduction in a single RC loop flow (e.g., 11 loop −5%) lowers <span class="h
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]], [[AB.RC-0002 — High Activity in the RCS]]
 - Related exam questions: [[2014 Q3]], [[2014 Q4]], [[2014 Q8]], [[2014 Q29]], [[2015 Q19]], [[2015 Q21]], [[2015 Q22]], [[2015 Q23]], [[2015 Q24]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q25]], [[2016 Q28]], [[2016 Q52]], [[2016 Q77]], [[2016 Q79]], [[2016 Q81]], [[2016 Q83]], [[2016 Q84]], [[2016 Q86]], [[2018 Q3]], [[2018 Q63]], [[2018 Q65]], [[2018 Q70]], [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]], [[2015 Q29]], [[2015 Q33]], [[2015 Q36]], [[2015 Q85]], [[2015 Q98]], [[2014 Q15]], [[2014 Q22]], [[2014 Q23]], [[2014 Q26]], [[2014 Q86]]
-- Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2016 JPM Sim-d]], [[2015 JPM RO-A1-2]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]]
+- Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2016 JPM Sim-d]], [[2015 JPM RO-A1-2]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM RO-A1-1]], [[2014 JPM SRO-A4]], [[2014 JPM Sim-e]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 4]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]

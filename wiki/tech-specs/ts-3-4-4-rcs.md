@@ -231,6 +231,11 @@ The Surveillance Frequency is controlled under the Surveillance Frequency Contro
 When a PORV is inoperable due to seat leakage, the block valve is closed but power is MAINTAINED (so the block valve can be opened if needed for overpressure protection). When inoperable for other causes, the block valve is closed and power is REMOVED (isolating the failed-open path).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-c</div>
+A <span class="hi-exam">leaking 2PR2 PZR PORV</span> (seat leakage) is isolated by AB.PZR-0001 by closing its block valve <span class="hi-exam">2PR7</span>. Because the cause is seat leakage, this is <span class="hi-exam">LCO 3.4.5 Condition 1 / Action a</span>: close the block valve <span class="hi-exam">with power MAINTAINED</span> (so it can be reopened for overpressure protection), within <span class="val-alarm">1 hour</span>. After isolating, the procedure directs notifying the SM/CRS to refer to TS 3.4.5 and the Event Classification Guide for Primary Leakage. The JPM diagnosis (sequential unisolation of 2PR6 then 2PR7 to find the rising-tailpipe valve) is the field method that identifies which PORV is the seat-leaker.
+</div>
+
 *Amendment No. 177*
 
 <div class="callout callout-exam">
@@ -536,8 +541,8 @@ LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE 
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related procedures: [[S2.OP-ST.RC-0008 — RCS Water Inventory Balance]], [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]]
+- Related procedures: [[S2.OP-ST.RC-0008 — RCS Water Inventory Balance]], [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[AB.RC-0001 — Reactor Coolant System Leak]]
 - Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]], [[2015 Q87]], [[2014 Q86]]
-- Related JPMs: [[2016 JPM RO-A1-1]]
+- Related JPMs: [[2014 JPM Sim-c]], [[2016 JPM RO-A1-1]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

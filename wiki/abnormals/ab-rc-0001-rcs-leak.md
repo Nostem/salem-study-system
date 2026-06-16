@@ -15,6 +15,11 @@ Provides operator actions for identifying, characterizing, and mitigating a leak
 
 ## Key Actions / Information
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-c</div>
+A leaking PZR PORV (2PR2) presents first as an RCS leak. Entry into AB.RC-0001 is cued by <span class="hi-exam">rising PORV tailpipe temperature (~227°F)</span> and <span class="hi-exam">rising charging flow</span>. Attachment 1 (Continuous Action Summary) Item 3.0 directs that <span class="hi-exam">IF AT ANY TIME the leak is determined to be from a PORV OR a Pressurizer Code Safety Valve, THEN INITIATE S2.OP-AB.PZR-0001(Q), Pressurizer Pressure Malfunction</span>. The applicant uses Attachment 2 (Guidelines for Locating An RCS Leak), monitors the left-side indicators of Table 1, determines the elevated PORV tailpipe temperature, and transitions to AB.PZR-0001 for the PORV isolation.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q3</div>
 CV71 backpressure control valve is used to adjust the split between charging flow and seal injection flow to stabilize pressurizer level.
@@ -68,7 +73,8 @@ While responding to an RCS leak at 40% power with no automatic or manual trip, a
 ## Connections
 
 - Related systems: [[CVCS]], [[RCS]], [[RPS/SSPS]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - Related exam questions: [[2014 Q11]], [[2016 Q100]], [[2018 Q52]], [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
+- Related JPMs: [[2014 JPM Sim-c]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]]
-- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

@@ -54,9 +54,15 @@ If 2R18 (Waste Disposal Liquid Rad Monitor) is inoperable (e.g., failed source c
 Release of 21 CVCS MT via SW to CW (Section 5.5): with <span class="hi-exam">Maximum Release Rate 45 gpm</span> (high curie content). Step 5.5.4: OPEN <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span> in Gas Stripper Feed Pump Room. Step 5.5.6: THROTTLE <span class="hi-exam">21WR53 (MT RECIRC STOP VALVE)</span> to adjust discharge flow — closing 21WR53 diverts more flow to overboard path (raises discharge flow). Caution: completely closing 21WR53 provides insufficient recirculation if 2WL51 isolates on high rad. Step 5.5.8: initial data includes tank volume from S2.OP-TM.ZZ-0002 (<span class="hi-exam">19500 gal at 90%</span>), dilution flow = <span class="hi-exam">200000 gpm</span> (2 CW circulators). Step 5.5.9: <span class="hi-exam">2R18 alarms at 105 cpm → CLOSE 2WL51</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 IP-k</div>
+Alternate-path Section 5.5 release of 21 CVCS MT via SW to CW (Rev 25; <span class="hi-exam">Maximum Release Rate 150 gpm</span>, 21 CVCS tank initial level 19600 gal): Step 5.5.2 direct NCO to OPEN 2WL51; Step 5.5.4 throttle open <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span> toward the max rate; Step 5.5.6 — when the max rate can NOT be obtained, throttle CLOSED <span class="hi-exam">21WR53 (MT RECIRC V)</span> to raise discharge flow (reaches 55 gpm). Step 5.5.8 records dilution flow 200000 gpm and 2LIS-180 = 90%. <span class="hi-exam">Step 5.5.9 — during the release the 2R18 monitor ALARMS (~10⁵ counts, RED HI RAD light lit), so the operator must direct the NCO to CLOSE 2WL51 and terminate the release</span>, then notify the control room of the high-radiation condition.
+</div>
+
 ## Connections
 
 - Related systems: [[Waste Liquid]], [[Radiation Monitoring]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]]
 - Related exam questions: [[2016 Q59]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q68]]
-- Related JPMs: [[2018 JPM IP-k]], [[2022 JPM IP-k]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM IP-k]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]]

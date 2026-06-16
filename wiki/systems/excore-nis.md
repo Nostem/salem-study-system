@@ -154,13 +154,24 @@ With one Source Range NI (Channel I / 2N31) failed low during a startup, power m
 The Power Range NIs provide the <span class="hi-exam">High Power Reactor Trip (low range) at 25% on 2/4 PR NIs</span> that terminates an uncontrolled rod withdrawal at low power (FSAR 15.2.2.1), with the basis of DNB protection.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A1-2 / SRO-A1-2</div>
+Manual QPTR from the four Power Range NI Upper/Lower detector currents (N41-N44), comparing to the REM 100% current values: detector ratio → sum → average over 4 operable detectors → power tilt. With dropped rod 204 the Maximum Power Tilt stays <span class="hi-exam">&lt; 1.02</span>, so the surveillance is <span class="hi-exam">SAT</span> and TS 3.2.4 is not entered. RO-A1-2 performs the calculation; SRO-A1-2 independently reviews it for completeness and accuracy.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-g</div>
+During a reactor startup (S2.OP-IO.ZZ-0003), once SR/IR overlap of <span class="hi-exam">≥1 decade</span> is observed and P-6 energizes (½ IR channels at <span class="hi-exam">10⁻¹⁰ amps</span>, 2RP4), the operator blocks the Source Range High Flux Trip with both BLOCK SOURCE RANGE A and B pushbuttons. <span class="hi-exam">Alternate path: BLOCK SOURCE RANGE B does NOT illuminate (Channel B fails to block), so the operator must insert Control Bank D to drive SUR zero/negative before the reactor auto-trips on High Source Range Flux at 1E5 cpm.</span> A successful block illuminates the TRIP BLOCKED blue light on 2RP4 and brings up OHA E-5 SR DET VOLT TRBL.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related JPMs: [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]], [[2014 JPM Sim-g]]
 - Related exam questions: [[2014 Q12]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]]
-- Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
   - [[2015 Q67]] — Mode 6 Core Alterations require 2 Source Range NIs operable (LCO 3.9.2); one inoperable SR NI prevents core alterations
   - [[2015 Q89]] — second IRNI channel fails erratically: enter AB.NIS-0001 / TS 3.0.3 (Hot Standby within 6 hours); single-IRNI loss excluded from LCO 3.0.3
   - [[2016 Q38]] — Block Power Range A and B pushbuttons at 12% blocks the 25% PR low setpoint Rx trip
@@ -178,5 +189,5 @@ The Power Range NIs provide the <span class="hi-exam">High Power Reactor Trip (l
   - [[2016 Q70]] — AFD penalty minutes / 50–90% power / power must reduce &lt;50% within 30 min after 60 penalty min
   - [[2016 Q83]] — SR NIs not energized + IR SUR -0.2 dpm criterion for FRSM-2 YELLOW (overridden by FRTS-1 PURPLE)
   - [[2014 Q17]] — each 115VAC VIB loss deenergizes its channel PRNI High-Power bistable (a rod-withdrawal block); 2A loss drives rods in (PT-505), 2D loss freezes rods "as is" (power reduction via boration)
-- Related JPMs: [[2018 JPM RO-A1]], [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2020 JPM Sim-f]], [[2015 JPM Sim-a]], [[2015 JPM Sim-f]]
+- Related JPMs: [[2018 JPM RO-A1]], [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2020 JPM Sim-f]], [[2015 JPM Sim-a]], [[2015 JPM Sim-f]], [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]]
 - Related scenarios: [[2015 Scenario 1]]
