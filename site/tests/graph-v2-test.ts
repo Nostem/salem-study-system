@@ -71,7 +71,7 @@ test('graph-v2 page loads with counts and exposes Q23 source/topic edges', async
   }
 
   // Question count should match the expanded structured bank size.
-  await expect(page.getByTestId('gv2-node-count-question')).toHaveText('599');
+  await expect(page.getByTestId('gv2-node-count-question')).toHaveText('898');
 
   // Edge type filter reduces the list to nodes connected by selected graph semantics.
   await page.getByTestId('gv2-search').fill('');

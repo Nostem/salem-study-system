@@ -70,7 +70,7 @@ test('quiz page builds an account-gated quiz from imported questions', async ({ 
 
   await expect(page.getByRole('heading', { name: 'Quick Quiz', exact: true })).toBeVisible();
   await expect(page.getByRole('link', { name: /View my progress/i })).toHaveAttribute('href', /\/history\/?$/);
-  await expect(page.getByTestId('quiz-bank-count')).toContainText('599');
+  await expect(page.getByTestId('quiz-bank-count')).toContainText('898');
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('3');
@@ -212,9 +212,9 @@ test('topic filter keeps common systems simple and moves advanced procedure node
   expect(procedureCheckboxBox?.height).toBeLessThanOrEqual(20);
 
   await page.getByLabel('Pressurizer Level & Press Control').check();
-  await expect(page.locator('#filter-summary')).toContainText(/19 eligible questions/);
+  await expect(page.locator('#filter-summary')).toContainText(/42 eligible questions/);
   await page.getByLabel('RPS/SSPS').check();
-  await expect(page.locator('#filter-summary')).toContainText(/78 eligible questions/);
+  await expect(page.locator('#filter-summary')).toContainText(/123 eligible questions/);
   await page.getByLabel('Question count').fill('5');
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
@@ -229,11 +229,11 @@ test('advanced procedure filters on Quick Quiz can start targeted practice', asy
   await page.getByTestId('advanced-topic-filters').locator('summary').click();
   await page.getByLabel(/AB\.CW-0001 — Circulating Water Malfunction/).check();
   await page.getByLabel('Question count').fill('5');
-  await expect(page.locator('#filter-summary')).toContainText(/2 eligible questions/);
+  await expect(page.locator('#filter-summary')).toContainText(/4 eligible questions/);
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.getByTestId('quiz-session')).toBeVisible();
-  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 2');
+  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 4');
 });
 
 test('advanced EOP and admin procedure filters can start targeted practice', async ({ page }) => {
@@ -242,14 +242,14 @@ test('advanced EOP and admin procedure filters can start targeted practice', asy
 
   await page.getByTestId('advanced-topic-filters').locator('summary').click();
   await page.getByLabel(/EOP-TRIP-1 — Reactor Trip or Safety Injection/).check();
-  await expect(page.locator('#filter-summary')).toContainText(/40 eligible questions/);
+  await expect(page.locator('#filter-summary')).toContainText(/66 eligible questions/);
   await page.getByLabel(/OP-AA-101-111-1003 — Use of Procedures/).check();
-  await expect(page.locator('#filter-summary')).toContainText(/2 eligible questions/);
+  await expect(page.locator('#filter-summary')).toContainText(/4 eligible questions/);
   await page.getByLabel('Question count').fill('3');
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.getByTestId('quiz-session')).toBeVisible();
-  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 2');
+  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 3');
 });
 
 test('feedback mode shows immediate right or wrong result after selecting an answer', async ({ page }) => {
