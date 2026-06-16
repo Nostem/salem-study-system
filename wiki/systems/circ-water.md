@@ -38,4 +38,5 @@ Adverse environmental conditions degrade the circulating water intake. The Circu
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.LOAD-0001 — Rapid Load Reduction]], [[SC.OP-AB.ZZ-0001 — Adverse Environmental Conditions]]
 - Related exam questions: [[2019 Q37]], [[2015 Q93]], [[2014 Q81]]
 - Related JPMs: [[2020 JPM SRO-A4]], [[2015 JPM RO-A1-1]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related scenarios: [[2012 Scenario 3]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -241,11 +241,16 @@ Per Salem FSAR Sections 6 and 15, the <span class="hi-exam">minimum complement f
 Spray Additive (NaOH) Tank: spray eductor flow ~75 gpm; normal level 75% (<span class="val-normal">3400 gallons</span>), administrative max 90% (3900 gal); <span class="val-alarm">low-level alarm "D-43 SPRY ADD TK LVL LO" at 67% (~3050 gal)</span>. After a LOCA reaching 18 psig, <span class="hi-exam">D-43 alarms ~5 minutes into the event and stays locked in</span> — the EXPECTED locked-in overhead alarm 25 minutes later. See [[Annunciators]].
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+On Phase B during the LBLOCA, <span class="hi-exam">Containment Spray fails to auto actuate</span>. The RO manually initiates Phase B and Spray, realigns the spray valves, and starts <span class="hi-exam">21 and 22 Containment Spray pumps</span>; <span class="hi-exam">CT#2 requires this minimum containment cooling complement before exiting [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]</span>. During the cold leg recirculation switchover in [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], <span class="hi-exam">a CS pump is stopped within 5.5 min of the RWST Lo level alarm (CT#3, time-critical)</span>.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related procedures: [[S1.OP-ST.CS-0003 — Inservice Testing Containment Spray Valves]], [[S2.OP-SO.RPS-0005 — RPS Surveillance]], [[S2.OP-AR.ZZ-0004]], [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
 - Related exam questions: [[2014 Q27]], [[2014 Q34]], [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]], [[2015 Q34]], [[2015 Q45]], [[2015 Q46]], [[2015 Q91]], [[2014 Q48]], [[2014 Q89]], [[2012 Q3]], [[2012 Q41]], [[2012 Q45]], [[2012 Q46]], [[2012 Q89]], [[2012 Q93]]
 - Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-b]], [[2015 JPM IP-i]]
-- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2014 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related scenarios: [[2012 Scenario 1]], [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2014 Scenario 1]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -236,9 +236,14 @@ Starting a CCW pump after a LOCA + LOOP (all vital buses on EDGs, no CCW running
 <span class="hi-exam">22CC3 (the 21-23 header cross-over valve) is a normally open valve with NO automatic action</span> on SI, Phase B, or containment Hi-Hi — so 22CC3 indicating OPEN after a LOCA is NOT a failed-to-reposition condition. (Plausible distractor because other CCW valves DO reposition on SI/Phase B, and the SJ113 valves — which also carry "X-Over" designators — reposition on RWST lo-lo level.) See [[RPS/SSPS]].
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+On the false-SI reactor trip the <span class="hi-exam">21 CCW pump trips and 23 CCW pump control transfers to manual</span>, leaving <span class="hi-exam">only the 22 CCW pump running</span> post-trip. With the 2C 4KV vital bus on its EDG, [[EOP-TRIP-1 — Reactor Trip or Safety Injection]] gives <span class="hi-exam">no direction to start a second CCW pump</span>.
+</div>
+
 ## Connections
 
 - Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]], [[2014 Q83]], [[2014 Q93]], [[2012 Q12]], [[2012 Q26]], [[2012 Q38]], [[2012 Q42]], [[2012 Q82]]
 - Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]], [[2015 JPM Sim-g]], [[2014 JPM Sim-h]], [[2012 JPM Sim-d]]
-- Related scenarios: [[2018 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
+- Related scenarios: [[2012 Scenario 1]], [[2018 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

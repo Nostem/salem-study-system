@@ -354,6 +354,11 @@ Following a LBLOCA with RCS pressure at 35 psig, a <span class="hi-exam">stable 
 Determine required actions when effluent monitors fail before a Containment Pressure Relief (S1.OP-SO.CBV-0002). With both channels (<span class="hi-exam">1R41A → D OR 1R12A</span>) inoperable, ODCM Table 3.3-13 Instrument #3 invokes <span class="hi-exam">Action 37</span>: the relief may proceed only if, prior to initiating, (a) at least two independent samples are analyzed AND (b) at least two technically qualified staff independently verify the release-rate calculations; otherwise suspend the release. P&amp;L 2.3 also directs notifying Chemistry to comply with the ODCM contingency actions before the relief.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+During the LBLOCA, <span class="hi-exam">Phase B / Containment Spray actuation fails</span> and containment pressure rises. <span class="hi-exam">MSLI is initiated at 15 psig</span> and a CFST Containment Environment <span class="hi-exam">PURPLE path (containment pressure &gt; 15 psig)</span> drives [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]. The CFCUs are verified running in low speed.
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.6 — Containment]]
@@ -361,5 +366,5 @@ Determine required actions when effluent monitors fail before a Containment Pres
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
 - Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q72]], [[2016 Q81]], [[2016 Q84]], [[2016 Q93]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]], [[2015 Q27]], [[2015 Q36]], [[2015 Q47]], [[2015 Q48]], [[2015 Q65]], [[2015 Q72]], [[2014 Q41]], [[2014 Q65]], [[2012 Q35]], [[2012 Q47]], [[2012 Q65]], [[2012 Q83]], [[2012 Q85]], [[2012 Q89]], [[2012 Q93]]
 - Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A3]], [[2014 JPM RO-A1-1]], [[2012 JPM SRO-A3]]
-- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
+- Related scenarios: [[2012 Scenario 1]], [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

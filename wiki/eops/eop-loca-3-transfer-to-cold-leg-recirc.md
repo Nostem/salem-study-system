@@ -115,6 +115,11 @@ LOCA-3 transfer to cold leg recirculation with a <span class="hi-exam">single-tr
 The transfer to Cold Leg Recirculation is required when RWST level reaches the Lo alarm at <span class="hi-exam">15.2 ft (≈150000 gallons)</span>. For a LBLOCA at power with one RHR pump failed, all ECCS pumps inject at runout (<span class="hi-exam">charging 1120 + SI 1350 + one RHR 4500 + Containment Spray 5200 = 12170 gpm</span>); from an initial RWST level of 41.1 ft (370000 gal) it takes <span class="hi-exam">~18 minutes (≈19 min) to drain to the 15.2 ft swap level</span>. See [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]].
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+Entered at <span class="hi-exam">RWST 15.2 ft</span> from [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]. The <span class="hi-exam">CT#3 time-critical switchover windows measured from the RWST Lo level alarm</span> are: <span class="hi-exam">close 2SJ69 within 3.7 min, stop a Containment Spray pump within 5.5 min, and complete switchover within 11.2 min</span>. During the transfer the <span class="hi-exam">22 charging pump cavitates when 2SJ1 and 2SJ2 are shut</span>; CT#4 requires tripping it before pump/piping damage.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]], [[CFCUs]]
@@ -122,5 +127,5 @@ The transfer to Cold Leg Recirculation is required when RWST level reaches the L
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]], [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
 - Related exam questions: [[2015 Q24]], [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]], [[2015 Q34]], [[2015 Q46]], [[2014 Q89]], [[2014 Q99]], [[2012 Q3]], [[2012 Q19]], [[2012 Q36]], [[2012 Q83]]
 - Related JPMs: [[2014 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]], [[2015 Scenario 1]]
-- Related exam: [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related scenarios: [[2012 Scenario 1]], [[2018 Scenario 2]], [[2023 Scenario 1]], [[2015 Scenario 1]]
+- Related exam: [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -132,5 +132,5 @@ When a second RCP is started in Mode 5 with RHR in service and RCS pressure mome
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam questions: [[2014 Q10]], [[2014 Q36]], [[2014 Q38]], [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]], [[2015 Q87]], [[2014 Q87]], [[2012 Q86]]
 - Related JPMs: [[2014 JPM Sim-c]], [[2020 JPM Sim-a]], [[2012 JPM Sim-c]]
-- Related scenarios: [[2016 Scenario 3]], [[2017 Scenario 7]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2015 Scenario 2]]
+- Related scenarios: [[2016 Scenario 3]], [[2017 Scenario 7]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2015 Scenario 2]], [[2012 Scenario 3]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Operating Exam]]

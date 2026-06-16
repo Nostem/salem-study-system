@@ -161,6 +161,11 @@ In Modes 1-4, the condition that ALWAYS requires entering TSAS 3.8.2.3 (125-Volt
 Unit 1 Vital 125 VDC loads include: the <span class="hi-exam">1D Vital Instrument Bus Inverter (from 1B 125 VDC bus)</span>; <span class="hi-exam">1H 4KV Group Bus control power (1A 125 VDC regular, 1B 125 VDC emergency)</span>; and the <span class="hi-exam">Gland Sealing Steam Annunciator Panel (from the 1ADC Distribution Cabinet)</span>. <span class="hi-trap">The Supervisory Control and Data Acquisition (SCADA) System is powered from the Circ Water 125 VDC system — NOT the vital 125 VDC system.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #3</div>
+Shortly after watch turnover the <span class="hi-exam">2A1 125VDC Battery Charger trips</span> (OHA A-41 AUX ALM SYS PRINTER and OHA B-2 2A 125VDC CNTRL BUS VOLT LO; low bus voltage alarm setpoint &lt;128 VDC, reading 127 VDC). CRS dispatches an operator, contacts WCC/Maintenance, and enters <span class="hi-exam">TSAS 3.8.2.3 action b</span> — the 2A2 (backup) 125VDC Battery Charger must be placed in service within 2 hours if 2A1 cannot be restored to operable status.
+</div>
+
 ## Connections
 
 - Related systems: [[115V AC]], [[RHR]], [[Control Air]], [[EDGs]]
@@ -169,4 +174,5 @@ Unit 1 Vital 125 VDC loads include: the <span class="hi-exam">1D Vital Instrumen
 - Related tech specs: [[TS 3/4.8 — Electrical]]
 - Related exam questions: [[2015 Q13]], [[2015 Q14]], [[2015 Q15]], [[2016 Q56]], [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]], [[2015 Q56]], [[2015 Q57]], [[2014 Q18]], [[2014 Q58]], [[2012 Q11]], [[2012 Q58]]
 - Related JPMs: [[2018 JPM IP-i]]
-- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related scenarios: [[2012 Scenario 3]]
+- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

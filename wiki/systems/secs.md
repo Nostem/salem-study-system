@@ -162,11 +162,16 @@ On the LOOP, 2A and 2B SECs load in <span class="hi-exam">Mode III (SI plus Blac
 A SEC <span class="hi-exam">cannot start any loads until its bus has power</span>. After a LBLOCA + LOOP with the 2C 4KV vital bus locked out on bus differential (de-energized), resetting the 2C SEC restores nothing — so it is NOT the first action to restore the minimum CFCU complement. See [[Containment Spray]], [[CFCUs]].
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+On the false-SI reactor trip the <span class="hi-exam">2C 4KV vital bus de-energizes on UV and the SEC loads the 2C bus onto its EDG</span>. The <span class="hi-exam">22 charging pump and both RHR pumps fail to start on the SEC</span>. The crew <span class="hi-exam">blocks all SECs on 2RP1 and resets emergency loading</span> so the affected safeguards equipment can be manually started during [[EOP-TRIP-1 — Reactor Trip or Safety Injection]].
+</div>
+
 ## Connections
 
 - Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]], [[AFW]], [[Containment Spray]]
 - Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
 - Related exam questions: [[2015 Q16]], [[2016 Q18]], [[2016 Q19]], [[2016 Q39]], [[2016 Q41]], [[2016 Q43]], [[2016 Q55]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]], [[2015 Q43]], [[2015 Q45]], [[2015 Q61]], [[2015 Q69]], [[2014 Q57]], [[2014 Q63]], [[2012 Q11]], [[2012 Q12]], [[2012 Q45]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2014 Scenario 1]], [[2014 Scenario 3]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related scenarios: [[2012 Scenario 1]], [[2012 Scenario 2]], [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2014 Scenario 1]], [[2014 Scenario 3]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]
