@@ -4,6 +4,7 @@ category: procedures
 status: draft
 aliases:
   - S2.OP-IO.ZZ-0003
+  - S1.OP-IO.ZZ-0003
   - IOP-3
 ---
 
@@ -50,10 +51,15 @@ The operating SGFP(s) are placed on Main Steam supply prior to exceeding <span c
 Rod withdrawal to criticality (Step 5.3.18.D): withdraw Control Banks A/B/C with ICRR hold points (CBA fully withdrawn, RIL position, CBB fully withdrawn, CBD at 50 steps or 8-fold position) and stop the pull when criticality is identified — <span class="hi-exam">the reactor goes critical before Control Bank D is withdrawn the predicted 25 steps</span>. Step 5.3.19: announce criticality on the PA twice, record criticality date/time. Step 5.3.20: establish <span class="hi-exam">~0.25 dpm SUR (≤1.0 dpm)</span>. Step 5.3.22: at SR/IR overlap and P-6, BLOCK the Source Range High Flux Trip. <span class="hi-exam">Alternate path: BLOCK SOURCE RANGE B fails to illuminate — insert Control Bank D to drive SUR zero/negative before the SR Hi Flux auto-trip at 1E5 cpm.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q13</div>
+A MODE 2 startup by control rods is performed IAW this procedure (cited on the worksheet as the Unit 1 equivalent <span class="hi-exam">S1.OP-IO.ZZ-0003</span>). With Rx power stable at 4%, a loss of 1D 115V Vital Instrument Bus illuminates the <span class="hi-exam">Yellow High Flux PRNI CH IV lamp for BOTH High Power and Low Power on Reactor Status Panel 1RP4</span> — no reactor trip results (loss of one VIB gives no trip demand). See [[Excore NIs]], [[AB.115-0004 — Loss of 1D 115V Vital Instrument Bus]].
+</div>
+
 ## Connections
 
 - Related systems: [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]], [[AFW]], [[Main Steam]]
 - Related procedures: [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]]
-- Related exam questions: [[2016 Q69]], [[2018 Q39]], [[2015 Q76]], [[2015 Q94]], [[2014 Q55]]
+- Related exam questions: [[2016 Q69]], [[2018 Q39]], [[2015 Q76]], [[2015 Q94]], [[2014 Q55]], [[2012 Q13]]
 - Related JPMs: [[2018 JPM Sim-e]], [[2015 JPM Sim-e]], [[2014 JPM Sim-g]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

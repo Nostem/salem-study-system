@@ -61,7 +61,7 @@ The OHA "F" windows (reactor-trip first-out) have <span class="hi-exam">dual red
 ## Connections
 
 - Related systems: [[RPS/SSPS]]
-- Related procedures: [[OP-AA-102-103-1001 — Operator Burdens Program]], [[S2.OP-AR.ZZ-0006 — Overhead Annunciators Window F]]
-- Related abnormals: [[AB.ANN-0001 — Loss of Overhead Annunciator System]]
-- Related exam questions: [[2014 Q2]], [[2016 Q56]], [[2016 Q66]], [[2016 Q75]], [[2020 Q66]], [[2015 Q28]], [[2015 Q80]], [[2015 Q99]]
-- Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related procedures: [[OP-AA-102-103-1001 — Operator Burdens Program]], [[S2.OP-AR.ZZ-0006 — Overhead Annunciators Window F]], [[S2.OP-AR.ZZ-0004]], [[S1.OP-AR.ZZ-0007]]
+- Related abnormals: [[AB.ANN-0001 — Loss of Overhead Annunciator System]], [[AB.ROD-0002 — Dropped Rod]], [[AB.CN-0001 — Condensate System Abnormality]]
+- Related exam questions: [[2014 Q2]], [[2016 Q56]], [[2016 Q66]], [[2016 Q75]], [[2020 Q66]], [[2015 Q28]], [[2015 Q80]], [[2015 Q99]], [[2012 Q1]], [[2012 Q4]], [[2012 Q10]]
+- Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]

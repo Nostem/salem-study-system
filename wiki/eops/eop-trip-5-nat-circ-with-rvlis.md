@@ -38,9 +38,15 @@ Natural circulation rapid cooldown with RVLIS: maximum rate is <span class="hi-e
 TRIP-5 has a Step 1 caution that <span class="hi-exam">TRIP-4 steps 3-17 must be completed prior to entry</span> (adequate SDM/upper-head cooling, SI blocked, initial cooldown/depressurization performed). <em>[Note: the 2015 exam source labels TRIP-5 "Without RVLIS"; this wiki article is titled "With RVLIS" — flagged for reconciliation.]</em> See [[EOP-TRIP-4 — Natural Circulation]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q23</div>
+TRIP-5 natural-circulation rapid cooldown: the initial cooldown/depressurization to <span class="hi-exam">500°F / 1600 psig</span> is performed at the <span class="hi-exam">50°F/hr</span> rate of Step 7; the <em>next</em> temperature reduction (to 450°F) begins at <span class="hi-exam">Step 9</span> at a rate of <span class="hi-exam">&lt;100°F/hr</span>. Dropping from 500°F to 450°F at 100°F/hr therefore takes <span class="hi-exam">30 minutes</span>. <span class="hi-trap">Distractor rates the candidate must NOT use: the 200°F/hr PZR cooldown limit (TS 3.4.10.2.b), the 50°F/hr Step 7 rate, and a 25°F/hr rate.</span> <em>[Source flag: the 2012 stem labels 1-EOP-TRIP-5 "Natural Circulation Rapid Cooldown Without RVLIS," whereas this article is titled "With RVLIS" (TRIP-6 is the "Without RVLIS" procedure) — same labeling discrepancy noted on the 2015 Q85 callout; flagged for reconciliation.]</em>
+</div>
+
 ## Connections
 
 - Related systems: [[RVLIS]], [[RCS]]
 - Related EOPs: [[EOP-TRIP-4 — Natural Circulation]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
-- Related exam questions: [[2016 Q25]], [[2022 Q84]], [[2020 Q84]], [[2015 Q85]]
-- Related exam: [[2016 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related exam questions: [[2016 Q25]], [[2022 Q84]], [[2020 Q84]], [[2015 Q85]], [[2012 Q23]]
+- Related exam: [[2016 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]

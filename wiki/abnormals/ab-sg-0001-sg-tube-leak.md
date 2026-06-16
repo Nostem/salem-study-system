@@ -94,12 +94,17 @@ Step 3.7 — PZR level control during SG tube leak: <span class="hi-exam">reduce
 A <span class="hi-exam">90 gpd SGTL ramps in on 23 SG</span> (entry cue OHA A-6 RMS HI RAD/TRBL, 2R53C then 2R19C/2R15 rising). The crew enters AB.SG-0001, quantifies the leak, and minimizes contamination spread (raise 23MS10 setpoint, close 23GB4/23MS7/23MS18, re-align SG blowdown and MS sampling to the Waste System). The leak meets <span class="hi-exam">CAS Action Level 3 (leak rate &ge; 75 gpd AND rate of change &ge; 30 gpd/hr)</span>, requiring power <span class="hi-exam">&lt;50% within 1 hour</span> and entry of TSAS 3.4.7.2.c; TS 3.4.7.2 applies once leakage exceeds 150 gpd. The leak then escalates to a tube rupture, driving the reactor trip and SI.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q9</div>
+For a controlled shutdown/cooldown due to a 5 gpm tube leak, <span class="hi-exam">step 3.26.H directs tripping the turbine, then tripping the Rx at 20% power</span>. The 5 gpm leak allows a controlled shutdown and transition to TRIP-2 (no SGTR diagnostic in TRIP-2 forces SGTR-1). After exiting the TRIP series, AB.SG is re-entered at step 3.27, and <span class="hi-exam">step 3.28 directs a rapid boration for each stuck rod for 35 minutes</span> — initiated before the RCS depressurization in step 3.29. See [[EOP-TRIP-2 — Reactor Trip Response]].
+</div>
+
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]], [[Radiation Monitoring]], [[Control Rod Drive]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]], [[Radiation Monitoring]], [[Control Rod Drive]], [[CVCS]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2015 Q10]], [[2015 Q11]], [[2016 Q14]], [[2016 Q79]], [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]]
+- Related exam questions: [[2015 Q10]], [[2015 Q11]], [[2016 Q14]], [[2016 Q79]], [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]], [[2012 Q9]]
 - Related JPMs: [[2019 JPM SRO-A5]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

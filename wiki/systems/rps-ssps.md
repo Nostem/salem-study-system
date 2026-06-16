@@ -384,15 +384,25 @@ To electrically reset an AUTOMATIC Containment Spray initiation: <span class="hi
 An automatic Main Steamline Isolation occurs with no operator action when <span class="hi-exam">all Main Steam Dumps fail full open at 20% power</span>: the dumps pass ~52% steam flow vs the <span class="hi-exam">Hi Steam Flow setpoint of 40% (0–20% power band)</span>, and the coincident <span class="hi-exam">Lo Tavg (&lt;<span class="val-trip">543°F</span>) or Lo Steam Pressure (&lt;<span class="val-trip">600 psig</span>)</span> condition is met as Tavg rapidly lowers — generating the MSI signal before the dumps turn off at 543°F. <span class="hi-trap">A single SG NR level &gt;67% is a P-14 feedwater isolation/turbine trip, not MSI; a Phase B isolation is containment isolation, not MSI.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q8</div>
+SSPS safeguards reset logic (drawing 221057, grid F-2 AND box + downstream LATCH-RESET): the SI signal resets only if BOTH (1) the MANUAL SI RESET AND BLOCK pb is pushed AND the 1-2 minute time delay has timed out after the SI was generated, and (2) the LATCH-RESET button is reset. The adjacent AND box blocks a second SI <span class="hi-exam">only after the Rx has been tripped</span>. In an ATWT where the RTBs failed to open (<span class="hi-exam">Rx not tripped</span>), that block AND box has no output → the NOR box outputs a 1 → Auto SI is <span class="hi-exam">NOT blocked</span> (it can still actuate from any of the 4 auto SI signals: Hi Steamline Flow with lo steamline pressure or lo-lo Tavg, High Steamline Differential pressure, PZR low pressure, or Containment hi pressure).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q4</div>
+The RCS Low Flow reactor trip is <span class="hi-exam">2/4 coincidence between P-10 (10% power) and P-8 (36% power)</span> — a single loop low flow does NOT trip the reactor in that power band. There are <span class="hi-exam">3 low-pressure flow taps and 1 common high-pressure flow tap</span> per loop. See [[RCPs]].
+</div>
+
 ## Connections
 
-- Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]]
+- Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]], [[RCPs]], [[ECCS]]
 - Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
-- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]], [[2014 Q41]], [[2014 Q42]], [[2014 Q44]], [[2014 Q48]], [[2014 Q51]]
+- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]], [[2014 Q41]], [[2014 Q42]], [[2014 Q44]], [[2014 Q48]], [[2014 Q51]], [[2012 Q4]], [[2012 Q8]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]]
-- Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]
   - [[2015 Q27]] — LOCA containment-isolation actuation order: Phase A / FW Iso / Cont Vent Iso on SI; MSLI at 15 psig is the only new action between 12 and 18 psig
   - [[2015 Q41]] — Reactor Trip Handles on 2CC2 operate BOTH UV and shunt trips for BOTH RTBs and RTBBs
   - [[2015 Q42]] — 2B Vital Instrument Bus deenergized: SSPS Train B slave relays would not actuate on SI (Train A 45VDC fed from A+D)

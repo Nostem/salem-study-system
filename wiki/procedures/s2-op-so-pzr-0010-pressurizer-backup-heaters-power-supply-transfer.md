@@ -36,11 +36,16 @@ Section 5.3 in-plant transfer of 22 Backup Group to emergency power (Rev 10; ini
 Procedural caution: <span class="hi-exam">"Aligning pressurizer heaters to vital bus adds approximately 210 KW to bus load"</span>. Maximum diesel generator load is <span class="hi-exam"><span class="val-alarm">2750 KW</span> (2000 hr rating)</span>. To add PZR heaters without exceeding the 2000 hr limit, current DG loading must be adjusted to no greater than <span class="hi-exam">2750 - 210 = 2540 KW</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q39</div>
+Backup heater group emergency power supplies (the transfer this procedure performs): <span class="hi-exam">21 Backup Heater Group emergency-feeds from the 2C vital bus; 22 Backup Heater Group emergency-feeds from the 2A vital bus</span>. Control Group heaters (2G non-vital) have <span class="hi-exam">no emergency supply</span>. So if the <span class="hi-exam">2A 4KV Vital Bus fails to reenergize after a LOOP, only 21 Backup Heater Group can be made available</span> to maintain PZR pressure.
+</div>
+
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[460/230V AC]], [[EDGs]]
+- Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[460/230V AC]], [[EDGs]], [[4KV]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]]
-- Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exam questions: [[2020 Q11]]
+- Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
+- Related exam questions: [[2020 Q11]], [[2012 Q39]]
 - Related JPMs: [[2022 JPM IP-i]], [[2016 JPM IP-i]], [[2014 JPM IP-j]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

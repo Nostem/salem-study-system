@@ -60,10 +60,15 @@ Entered to terminate an Inadvertent SI (caused by a 2nd PZR pressure channel fai
 The SBLOCA-with-LOOP scenario terminates after the crew transitions from TRIP-1 to LOCA-1 (to reset SI and re-establish equipment control), <span class="hi-exam">when the EOP-TRIP-3 (SI Termination) transition point is reached</span> in LOCA-1 — so TRIP-3 marks the scenario end rather than being fully executed. See [[2014 Scenario 3]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q18</div>
+After stopping one of two centrifugal charging pumps at Step 4, charging flow is re-directed from the BIT to the normal charging line (isolate BIT, open 1CV68/1CV69, throttle 1CV55). If this flowpath <span class="hi-exam">cannot maintain stable or rising PZR level</span>, at <span class="hi-exam">Step 7</span> the operator <span class="hi-exam">re-establishes charging flow through the BIT and transitions to EOP-LOCA-2</span> (Post LOCA Cooldown and Depressurization), since the loss of RCS inventory exceeds the capacity of normal charging. <span class="hi-trap">Trap: do NOT re-start the idled charging pump (basis: restoring subcooling/PZR level just returns you to the same step) and do NOT re-initiate SI / return to TRIP-1; max charging acts on PZR level in seconds, not minutes.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]], [[RHR]], [[CVCS]]
-- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
-- Related exam questions: [[2020 Q25]], [[2023 Q38]], [[2023 Q23]], [[2023 Q76]], [[2015 Q91]]
+- Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]], [[RHR]], [[CVCS]], [[Pressurizer & PRT]]
+- Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-TRIP-1]]
+- Related exam questions: [[2020 Q25]], [[2023 Q38]], [[2023 Q23]], [[2023 Q76]], [[2015 Q91]], [[2012 Q18]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 2]], [[2014 Scenario 3]]
-- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

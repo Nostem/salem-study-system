@@ -35,8 +35,13 @@ With normal letdown out of service (2CV18 shut) and Excess Letdown in service, a
 For a 5 gpm tube leak on 22 SG (with an identified small fuel pin leak), the activity is detected first by the <span class="hi-exam">2R19B (22 SG Blowdown)</span> and <span class="hi-exam">2R15 (Condenser Air Ejector)</span> monitors, then by <span class="hi-exam">2R41D (Plant Vent Release Rate)</span> as it reaches the plant vent. <span class="hi-trap">The 2R46A (22 Main Steam Line) monitor provides continuous monitoring of high-level, post-accident noble gas releases via the atmospheric steam relief and/or safety valves — it will NOT show a change from this tube leak.</span> (Question marked "Deleted" on the worksheet; keyed answer B.)
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q16</div>
+For a substantial nuclear fuel rod leak at 100% power with letdown in service, the <span class="hi-exam">2R31 (Letdown Line) monitor responds FIRST and most significantly</span> — the letdown line transports the released fission products and detects them quickly. <span class="hi-trap">Traps: the 2R53A-D N16 Main Steam Line monitors only respond to primary-to-secondary leakage; the 2R34 Charging Pumps Area monitor rises only eventually (diluted by the VCT volume); and the 2R2 Containment 130' Area monitor responds only to a RCS leak and area levels take a long time to rise.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Service Water]], [[CFCUs]], [[Radiation Monitoring]], [[CVCS]]
-- Related exam questions: [[2023 Q13]], [[2014 Q14]], [[2014 Q20]], [[2014 Q61]]
-- Related exam: [[2023 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related systems: [[Service Water]], [[CFCUs]], [[Radiation Monitoring]], [[CVCS]], [[Main Steam]]
+- Related exam questions: [[2023 Q13]], [[2014 Q14]], [[2014 Q20]], [[2014 Q61]], [[2012 Q16]]
+- Related exam: [[2023 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

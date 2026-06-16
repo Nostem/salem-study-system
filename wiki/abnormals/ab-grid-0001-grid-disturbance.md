@@ -50,9 +50,14 @@ Per AB.GRID-0001 CAS: 500 KV Switchyard voltage <span class="hi-exam val-trip">&
 AB.GRID-0001 Attachment 2 (Solar Magnetic Disturbance) turbine load reduction: with turbine controls in OPERATOR MODE - AUTO, the PO will depress <span class="hi-exam">SMD#1 RUNBACK then GO</span> on the TURBINE E-H CONTROL & STATUS touch screen monitor to initiate the generator load reduction to &lt; 942 MW (~77.6% RTP) at 15%/min. <span class="hi-trap">SMD#1 RUNBACK alone is NOT sufficient — the GO button must also be depressed because SMD#1 RUNBACK is a preset setter position/ramp rate. Also, SMD#2 RUNBACK is a different preset — not used for this Attachment 2 evolution.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q17</div>
+For an ESO-directed rapid load reduction due to grid instability, AB.GRID-0001 Attachment 4 directs the PO at the EHC Console to depress <span class="hi-exam">SMD #2 RUNBACK and GO PBs</span> if the required end point is <span class="hi-exam">&gt;765 MW AND &lt;942 MW</span>, then depress <span class="hi-exam">HOLD</span> when Main Generator load lowers to less than or equal to the MW value directed by the ESO. <span class="hi-trap">Trap: depressing the GO pushbutton alone would functionally work (MT is normally set up for a 15%/min runback to ~66% turbine load / ~810 MWe), but the procedure Note on Att 4 directs the specific SMD #2 method to ensure consistency amongst crews — so the GO-only and "runback stops automatically at ~66%" answers are wrong.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[Main Turbine]]
 - Related procedures: [[AB.LOAD-0001 — Rapid Load Reduction]], [[OP-AA-108-107-1001 — Electric System Emergency Operations]]
-- Related exam questions: [[2015 Q20]], [[2018 Q62]], [[2019 Q62]], [[2020 Q81]], [[2023 Q15]], [[2023 Q88]], [[2014 Q21]]
-- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam questions: [[2015 Q20]], [[2018 Q62]], [[2019 Q62]], [[2020 Q81]], [[2023 Q15]], [[2023 Q88]], [[2014 Q21]], [[2012 Q17]]
+- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

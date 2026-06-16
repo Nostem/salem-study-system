@@ -16,3 +16,5 @@ Provides demineralized water for plant makeup and chemistry control.
 
 - Related systems: [[AFW]]
 - Related procedures: [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]]
+- Related exam questions: [[2012 Q26]]
+- Related exam: [[2012 NRC Written Exam]]
