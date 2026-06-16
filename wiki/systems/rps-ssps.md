@@ -299,14 +299,109 @@ RTBs fail to open on a valid RPS trip signal — operator opens the <span class=
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.1]]** — Reactor Trip System Instrumentation
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.2]]** — ESF Actuation System Instrumentation
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+ESFAS containment-isolation actuations during a LOCA occur in setpoint order: <span class="hi-exam">Phase A isolation, Feedwater Isolation, and Containment Ventilation isolation actuate on the SI signal; Main Steamline Isolation actuates at 15 psig</span> containment pressure. As containment pressure rises from 12 to 18 psig, MSLI (15 psig) is the only new automatic action — the SI-driven isolations have already occurred. Feedwater Isolation also actuates on SG NR level &gt;67%.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q41</div>
+<span class="hi-exam">Either Reactor Trip Handle (on 2CC2) operates BOTH the UV trip and shunt trip for BOTH the Reactor Trip breakers and the Reactor Trip Bypass breakers</span>. By contrast, an automatic reactor trip actuates the UV trip only, and manually tripping the RTBs from the control console actuates the shunt trip only.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q42</div>
+The 2B Vital Instrument Bus powers SSPS Train B; deenergizing it means <span class="hi-exam">SSPS Train B slave relays would not actuate on a Safety Injection signal</span>. SSPS Train A 45VDC power comes from A and D vital power (so Train A is unaffected); CS bistables energize-to-actuate; and there is no train-disagreement flashing because no slave relays energized.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q43</div>
+ESFAS/SEC response to a 2/3 4KV vital-bus UV followed by SI: <span class="hi-exam">SEC Mode II Blackout (all EDGs start, blackout loads sequenced) then SEC Mode III on the SI — EDG breaker opens, loads stripped, EDG breaker recloses, safeguards loads sequenced on all buses</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q45</div>
+Containment Spray pump start sequencing depends on the SSPS Containment Hi-Hi pressure signal and the SEC: if the Hi-Hi signal is absent when the SEC first tries to start the CS pumps the SEC contact re-opens; and after an SEC reset (e.g., LOSC-2 safeguards reset), <span class="hi-exam">the CS pumps will NOT respond to a Hi-Hi containment pressure until the SEC is actuated again</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q50</div>
+An 11 SG Narrow Range level protection channel in calibration has its bistables tripped; a <span class="hi-exam">second NR level channel failing to 30% swaps the 11BF19/11BF40 feed valves to manual</span> (the SGFPs do not swap), causing an overfeed during a downpower.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q52</div>
+The P-14 (Feedwater Isolation) signal has <span class="hi-exam">no seal-in</span> — it clears automatically when SG level lowers below setpoint. (Relatching the SGFP afterward will not auto-ramp speed to minimum if speed was &gt;160 rpm at latch.)
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q54</div>
+<span class="hi-exam">MDAFW pumps auto-start when both SGFPs are tripped</span> (logic drawing 221064); the TDAFW pump does not. MDAFW pumps also auto-start on 2/3 NR level channels in one SG lowering to 14%; the TDAFW pump starts on 2/3 NR level channels in 2/4 SGs.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q89</div>
+IRNI channel logic: a tripped IRNI channel with the other channel dropping below 7x10-11 Amps would <span class="hi-exam">automatically energize the Source Range NIs — except the P-10 interlock prevents Source Range from energizing above 10% power</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q2</div>
+Reactor trip first-out (Window F): the OHA "F" windows have dual red/white backlights. The first signal to reach the RPS is locked in RED. When a manual trip is ordered while SG NR level is dropping past the <span class="val-trip">14% Lo-Lo auto trip setpoint</span>, both a manual and an auto trip signal can be generated — the <span class="hi-exam">Sequence of Events Recorder (2CC1) must be reviewed</span> to determine first-out and whether an ATWT occurred. <span class="hi-trap">The RED box indicates the first TRIP signal, NOT the first AUTO TRIP signal.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q11</div>
+ATWT recognition during an RCS leak at 40% power (no auto/manual trip): a manual reactor trip is required when an automatic trip setpoint is exceeded without a trip. The relevant case is <span class="hi-exam">PZR pressure lowering through the <span class="val-trip">1865 psig</span> low PZR pressure auto reactor trip setpoint</span> (option given: 1860 psig and lowering). <span class="hi-trap">A turbine trip does NOT cause a Rx trip below P-9 (49%); 17% PZR level is heater isolation, not a Rx trip; 25°F loop D/T is normal at 40% power.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q12</div>
+Below P-6 the Source Range and Intermediate Range NIs <span class="hi-exam">may not be overlapped</span>. With one SRNI failed low during a startup, reactor power indication is reduced to a single SR channel which, <span class="hi-trap">while adequate for shutdown monitoring, cannot be relied upon for a startup — a single SR channel cannot be considered reliable with no other Rx power indication to verify it against</span> (TS Bases 3.3.1.1: maintain coincidence logic, redundancy, and diverse-parameter functional capability).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q41</div>
+RCS leak during heatup (1850 psig, 510°F) returning from a refueling outage. The general Auto SI Block (from ANY auto SI signal) is <span class="hi-exam">UNBLOCKED at S1.OP-IO.ZZ-0002 step 5.2.21</span>, but the <span class="hi-exam">Low PZR Pressure SI remains BLOCKED until the RCS is pressurized &gt;1915 psig (P-11) at step 5.3.23</span>. At 1850 psig the Low PZR Pressure SI is still blocked, so SI does NOT occur at the Low PZR Pressure setpoint (<span class="val-trip">≤1765 psig</span>). <span class="hi-trap">Answer-key note: the worksheet keyed B (SI at 1765 psig), but the written rationale supports the AUTO SI actually occurring on Containment High Pressure (<span class="val-trip">≥4 psig</span>, 2/3, not blockable) as the 2000 gpm leak pressurizes containment — see Q41.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q42</div>
+Continuous manual rod withdrawal from ~7% power (after a rapid load reduction). Per FSAR 15.2.2.1 (uncontrolled rod withdrawal at power), the power rise is terminated by the <span class="hi-exam">High Power Reactor Trip (low range) at 25% on 2/4 PR NIs</span>, whose basis is <span class="hi-exam">protection against DNB</span>. <span class="hi-trap">The 20% rod block (1/2 IR NI) may generate but is NOT credited in the FSAR and will not act quickly enough to prevent the high-power-low-range trip; the trip basis is DNB protection, not preventing PZR Safety valve opening.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q44</div>
+ALL outward rod motion (auto AND manual) is blocked by <span class="hi-exam">C-2: 1/4 PR NI &gt;103%</span>. <span class="hi-trap">C-11 (ARO position) blocks only AUTO outward motion — and ARO is a per-fuel-cycle number, not a physical core stop. C-3 actuates within 3% of the OT/&Delta;T Rx trip setpoint (64.7/69 = 93.8%, &gt;3% away, so not actuated). Steam line inlet pressure &lt;15% (P-2) blocks AUTO outward rod motion only — manual still works.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q48</div>
+To electrically reset an AUTOMATIC Containment Spray initiation: <span class="hi-exam">depress BOTH (train) Reset Spray Actuation PBs — at ANY containment pressure</span>. Containment Spray actuation relays have <span class="hi-exam">retentive memory</span>, so they can be reset with the actuation signal still present. <span class="hi-trap">Containment pressure is NOT required to be &lt;15 psig; Phase B reset is NOT required; Reset SI PBs are NOT required to reset Containment Spray.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q51</div>
+An automatic Main Steamline Isolation occurs with no operator action when <span class="hi-exam">all Main Steam Dumps fail full open at 20% power</span>: the dumps pass ~52% steam flow vs the <span class="hi-exam">Hi Steam Flow setpoint of 40% (0–20% power band)</span>, and the coincident <span class="hi-exam">Lo Tavg (&lt;<span class="val-trip">543°F</span>) or Lo Steam Pressure (&lt;<span class="val-trip">600 psig</span>)</span> condition is met as Tavg rapidly lowers — generating the MSI signal before the dumps turn off at 543°F. <span class="hi-trap">A single SG NR level &gt;67% is a P-14 feedwater isolation/turbine trip, not MSI; a Phase B isolation is containment isolation, not MSI.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]]
 - Related concepts: [[Rx Vessel & Internals]]
-- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
+- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
+- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]], [[2014 Q41]], [[2014 Q42]], [[2014 Q44]], [[2014 Q48]], [[2014 Q51]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]]
-- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]
+  - [[2015 Q27]] — LOCA containment-isolation actuation order: Phase A / FW Iso / Cont Vent Iso on SI; MSLI at 15 psig is the only new action between 12 and 18 psig
+  - [[2015 Q41]] — Reactor Trip Handles on 2CC2 operate BOTH UV and shunt trips for BOTH RTBs and RTBBs
+  - [[2015 Q42]] — 2B Vital Instrument Bus deenergized: SSPS Train B slave relays would not actuate on SI (Train A 45VDC fed from A+D)
+  - [[2015 Q43]] — 2/3 4KV vital-bus UV then SI: SEC Mode II Blackout then SEC Mode III safeguards sequencing
+  - [[2015 Q45]] — CS pump start: after SEC reset (LOSC-2 safeguards reset) CS pumps will NOT respond to Hi-Hi until SEC re-actuated
+  - [[2015 Q50]] — second 11 SG NR level channel fails to 30%: 11BF19/11BF40 (only) swap to manual, overfeed during downpower
+  - [[2015 Q52]] — P-14 (Feedwater Isolation) has no seal-in; clears when SG level drops below setpoint
+  - [[2015 Q54]] — MDAFW pumps auto-start on both-SGFPs-tripped (not TDAFW); AFW start NR level channel logic
+  - [[2015 Q89]] — IRNI channel oscillating at power; P-10 interlock prevents Source Range NIs energizing >10% power
   - [[2016 Q3]] — RTBs fail to open / RDMG breakers manually opened from 1CC3 / manual turbine trip required
   - [[2016 Q12]] — ATWS with RPS output failure / pistol grip de-energizes UV coil for RTB B (direct trip path)
   - [[2016 Q36]] — 2PS1 spray valve fails open at 4% / Low PZR Pressure Rx trip blocked below P-10 / SI on Low PZR Pressure is FIRST protective action

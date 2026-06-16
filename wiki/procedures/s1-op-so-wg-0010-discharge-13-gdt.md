@@ -34,8 +34,13 @@ CRS reviews all completed sections for accuracy and completeness before authoriz
 CRS review of completed release procedure for 13 WGDT: two errors that prevent authorization. (1) <span class="hi-exam">Pre-Release Verification in Attachment 1, Section 1.0 was NOT performed</span> prior to step 5.2.8. (2) <span class="hi-exam">Maximum Allowable Release Rate of 32 SCFM recorded in Step 3.4 and 4.1 is NOT > 32 SCFM</span> — per NOTE in Step 3.4, tanks with a calculated rate of <= 32 SCFM cannot be released. CRS does NOT authorize the gas release. <span class="hi-trap">Trap: finding the first error and stopping review. The examiner cue directs the applicant to review the ENTIRE procedure to identify ALL issues.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 SRO-A3</div>
+Same CRS review/authorization JPM (alternate path) with two embedded errors. (1) <span class="hi-exam">Pre-release valve position verification at step 5.2.8 was NOT performed</span> before the package was given to the CRS. (2) The Maximum Allowable Release Rate calculated as <span class="hi-exam">100 scfm</span> at Att. 2 step 3.4 was incorrectly transcribed as <span class="hi-exam">32 scfm</span> at Att. 2 step 4.1 (the entered rate must be &gt; 32 scfm to sign off the next bullet). The CRS must review the ENTIRE procedure, withhold approval, and record both discrepancies. Section 3.0 data (entered by Chemistry) is assumed correct.
+</div>
+
 ## Connections
 
 - Related systems: [[Waste Gas]]
-- Related JPMs: [[2018 JPM SRO-A4]]
-- Related exam: [[2018 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM SRO-A4]], [[2014 JPM SRO-A3]]
+- Related exam: [[2018 NRC Operating Exam]], [[2014 NRC Operating Exam]]

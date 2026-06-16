@@ -42,6 +42,11 @@ Administrative controls establish the organizational structure, staffing require
 The STA serves in an advisory capacity to the Senior Nuclear Shift Supervisor on engineering aspects of safe operation. (TS 6.2.3)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q66</div>
+Per Table 6.2-1 (Minimum Shift Crew Composition), the minimum NCO requirement is reduced for the lower modes. During a refueling shutdown, <span class="hi-exam">Mode 5 is the EARLIEST point at which only ONE NCO is required to be in the control room</span> (Modes 1–4 require more than one NCO). The requirements are <span class="hi-exam">the same regardless of Unit</span>. (Salem Tech Specs Section 6.0, page 6-5)
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam -- 2023 Q94</div>
 Shift complement unexpected absence: per OP-AA-101-111, the shift complement may be <span class="hi-exam">one less than the minimum for up to 2 hours</span> to accommodate an unexpected absence, provided immediate action is taken to restore. <span class="hi-trap">This provision does NOT permit any shift position to be unmanned upon shift change</span> -- the on-duty member must remain until a relief is available. The preferred action is to hold the off-going shift personnel.
 </div>
@@ -168,6 +173,6 @@ Ensures CRE occupants can control the reactor safely under normal conditions and
 
 - Related concepts: [[Radiation Monitoring]]
 - Related systems: [[Containment]]
-- Related exam questions: [[2019 Q94]], [[2023 Q94]]
+- Related exam questions: [[2019 Q94]], [[2023 Q94]], [[2014 Q66]]
 - Related JPMs: [[2020 JPM SRO-A2]]
-- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2014 NRC Written Exam]]

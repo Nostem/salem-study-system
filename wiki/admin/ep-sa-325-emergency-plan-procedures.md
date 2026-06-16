@@ -73,6 +73,11 @@ Provides the Secondary Communicator with a structured log and checklist for emer
 - Confirm YES to connect, verify Status changes to "Transmitting Data"
 - Verify "Messages Sent" value increasing from zero
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q75</div>
+On the FIRST emergency classification (an ALERT), the Secondary Communicator (per Secondary Communicator Log, EP-SA-111-F8) is required to <span class="hi-exam">activate ERDS within 60 minutes of the ALERT declaration</span>. <span class="hi-trap">Trap: ERDS is NOT a 15-minute action (15 minutes is the offsite-agency notification time). The OSB Form is updated every 15 minutes if requested by the TSC (not every 60 minutes); the MEES Form is updated after a significant plant change or classification change (not every 15 minutes).</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 RO-A4</div>
 ERDS activation: must select the correct unit's <span class="hi-exam">CONNECT button on the appropriate Salem 1 or Salem 2 ERDS Link Control and Status Display Screen</span>. Selecting the wrong unit is a critical error. Verify successful activation by observing Status = "Transmitting Data" and "Messages Sent" value increasing above zero.
@@ -81,6 +86,11 @@ ERDS activation: must select the correct unit's <span class="hi-exam">CONNECT bu
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2018 RO-A4</div>
 ERDS activation during an ALERT (Unit 2 manual trip + SI for RCS leak): same discriminating step — must select <span class="hi-exam">Salem 2 CONNECT button</span>. Procedure referenced as EP-SA-111-F8 (Rev 6). Steps 1.2.b through 1.2.b.7 are all critical. Work Control NCO designated as Secondary Communicator performs activation within 60 minutes of emergency declaration.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A4</div>
+Full Secondary Communicator Log during an ALERT (EP-SA-111-F8, Attachment 8). Activate EROS by selecting the <span class="hi-exam">Salem 2 CONNECT button</span> (Unit 2 is the affected unit) and verify "Messages Sent" increments above 0. Discriminating media-call element: on an incoming press call (CNN), the communicator <span class="hi-trap">must NOT release any information to the News Media</span> per Attachment 8, Section C. EROS is then terminated (Salem 2 DISCONNECT) only when directed by the NRC.
 </div>
 
 <div class="callout callout-jpm">
@@ -108,6 +118,6 @@ EAL#CA4.1 (ALERT — Loss of RHR): with RCS intact and RCS temperature &gt; <spa
 - Related procedures: [[EP-SA-111 — Emergency Classification and Protective Action]]
 - Related systems: [[RPS/SSPS]], [[EDGs]], [[4KV]], [[RHR]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
-- Related exam questions: [[2019 Q86]], [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]]
-- Related JPMs: [[2018 JPM RO-A4]], [[2019 JPM RO-A4]], [[2019 JPM SRO-A5]], [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]], [[2020 JPM RO-A4]], [[2020 JPM SRO-A5]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam questions: [[2019 Q86]], [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]], [[2014 Q75]]
+- Related JPMs: [[2018 JPM RO-A4]], [[2019 JPM RO-A4]], [[2019 JPM SRO-A5]], [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]], [[2020 JPM RO-A4]], [[2020 JPM SRO-A5]], [[2015 JPM RO-A4]], [[2014 JPM RO-A4]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

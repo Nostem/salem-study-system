@@ -96,6 +96,11 @@ SDC operation with 21 RHR loop in service: <span class="hi-exam">throttling 2RH2
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q13</div>
+On a loss of <span class="hi-exam">control air</span>, both 21RH18 (RHR HX FLOW CONT VALVE) and 2RH20 (RHR HX BYP VALVE) <span class="hi-exam">fail AS IS</span> — both are supplied air exclusively from the <span class="hi-exam">"A" air header (fed by the Unit 2 ECAC)</span>. During a station blackout (LOOP + all Unit 2 EDGs and ECAC failed), control air bleeds away and the valves stay at their last position. The <span class="hi-exam">console position indication remains accurate</span> because 115VB inverter power is available for at least <span class="hi-exam">2 hours following a LOPA</span>. <span class="hi-trap">These valves do NOT fail open or fail shut on loss of air — they fail as-is.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q32</div>
 Solid plant ops with RHR pump trip: RCS pressure <span class="hi-exam">rises</span> (charging continues adding inventory with no RHR pump to provide letdown path). Letdown line pressure <span class="hi-exam">lowers</span> (loss of RHR discharge pressure). 2CV18 throttles closed attempting to maintain letdown pressure at setpoint. 2CV6 (Letdown Relief Valve) opens at <span class="val-trip">600 psig</span> to protect downstream piping if pressure not controlled.
 </div>
@@ -122,6 +127,11 @@ The RHR system is isolated from the RCS by two normally closed motor-operated va
 ## LOCA Recirculation Mode
 
 During LOCA recirculation, the RHR pumps take suction from the containment sump and pump radioactive borated water (with H₂ and NaOH in solution) through the RHR heat exchangers and into the RCS. (UFSAR T5.5-1)
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-b</div>
+LOCA-3 transfer to cold leg recirculation with a <span class="hi-exam">failed B-train sump valve (22 SJ44 will not open)</span> forces a <span class="hi-exam">single-train</span> alignment: stop 22 RHR pump, close 2SJ69 (Common Suction), and do not start 22 RHR pump. The 21 RHR pump train provides recirculation. Because <span class="hi-exam">22 CCW HX is unavailable (~196°F on 2CC2)</span>, RHR HX cooling water is routed by opening 21CC16 and closing 22CC16 (CC Supply to RHR HX Valves). 21SJ44 (its single sump suction valve) being open is what permits 21 RHR pump suction from the containment sump.
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q6</div>
@@ -198,11 +208,62 @@ During LBLOCA cold leg recirculation transfer (EOP-LOCA-3): RHR suction aligned 
 APPX-7 RHR pump cavitation response: <span class="hi-exam">21 RH29 and 22 RH29 placed in AUTO</span>; <span class="hi-exam">downstream Charging/SI pumps stopped first</span>; if cavitation continues, close 21/22 CS36 (RHR to CS Valves), then remove lockouts and close 21/22 SJ49 (RHR DISCH TO COLD LEG), then STOP affected RHR pump as the last action. Restart with ONE RHR pump on suction from containment sump (21/22 SJ44 OPEN). MALF-driven sump blockage (VL0120/VL0121: 21/22 SJ44 fail-to-position) is removed when the RHR pumps are stopped (ET-1, ET-3 simulator triggers).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q22</div>
+EOP-LOCA-6 isolates a LOCA outside containment in the RHR/SI piping by closing/checking closed <span class="hi-exam">2RH1 OR 2RH2 (RHR common suction), 21 and 22 RH19s (RHR discharge X-CONN), 2RH26 (hot leg isolation), and 21 and 22 SJ49s (RHR DISCH TO COLD LEGS)</span>. A leak anywhere between the RH1/2 valves and the SJ49 valves is bounded by these isolations; the <span class="hi-trap">downstream/outlet side of the SJ49 valves cannot be isolated</span> because that section ties directly into the RCS cold leg. See [[EOP-LOCA-6 — LOCA Outside Containment]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q24</div>
+EOP-LOCA-5 (Loss of Emergency Recirculation) is entered when no RHR pump is available for recirculation. When a train of recirculation capability is <span class="hi-exam">restored</span> (e.g., power returned to a lost RHR pump), the LOCA-5 Continuous Action Step directs <span class="hi-exam">return to the procedure and step previously in effect</span> rather than continuing the LOCA-5 cooldown. See [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q34</div>
+During EOP-LOCA-1 hot-leg recirc prep, if <span class="hi-exam">BOTH RHR pumps are operating, 22CS36 is opened to supply containment spray from 22 RHR pump discharge</span> (per LOCA-3) — so a 22 RHR pump trip causes <span class="hi-exam">loss of flow to the Containment Spray header</span>. Closing the RH19s prevents RHR pump runout with a single RHR pump operating; the SI and charging pumps do not lose suction. See [[Containment Spray]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q46</div>
+During EOP-LOCA-3 transfer to cold-leg recirc, the RHR CS STOP valves (21CS36 / 22CS36) align RHR pump discharge to the containment-spray header for recirculation spray. <span class="hi-exam">21CS36 is opened to supply recirc spray only after the last CS pump (21) is stopped at RWST lo-lo</span> — so with the 21 CS pump still running those RHR-to-CS paths are not yet supplying spray. See [[Containment Spray]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q78</div>
+On a complete loss of Service Water in Mode 5 with RHR in service (RPV level &lt;97.5'), AB.SW-0005's CAS directs going to AB.RHR-0002 (Loss of RHR at Reduced Inventory), where the <span class="hi-exam">FIRST action is to STOP the in-service RHR pump (22) to preclude pump damage</span> — a second RHR pump is NOT started. See [[Service Water]], [[AB.RHR-0002 — Loss of RHR at Reduced Inventory]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-h</div>
+Loss of RHR cooling (shutdown, RCS intact/filled/pressurized, CETs &gt;200°F): the in-service 21 RHR pump trips on loss of power. Per AB.RHR-0001, after confirming the RCS is NOT at reduced inventory (&gt;101 ft. elevation) and a heat sink is available (CCW to RHR, SW to CCW), the operator determines <span class="hi-exam">no RHR loop is available (22 RHR loop aligned for ECCS, pump breaker racked down)</span> and goes to alternate decay heat removal. <span class="hi-exam">Attachment 10, Forced Flow Or Natural Circulation Cooldown</span> is selected because the RCS is intact and filled with CETs &gt;200°F: <span class="hi-exam">feed available SGs with AFW to wide-range level &gt;77%, then operate the appropriate MS10s to keep Core Exit Thermocouples stable or lowering</span>. (Feed-and-bleed Attachments 7/8 are preferred only when RCS is not intact or CETs &lt;200°F; reflux cooling and SFP cooling are for depressurized / head-removed conditions.)
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+During the LBLOCA, <span class="hi-exam">both 21 and 22 RHR pumps fail to auto-start on the SEC signal</span>. Crew recovery (CT#1): RO blocks <span class="hi-exam">2A and 2B SECs</span>, PO resets them, and RO <span class="hi-exam">manually starts both 21 and 22 RHR pumps</span> (low-head ECCS) before transition out of TRIP-1. In recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], RHR draws from the containment sump via 21/22SJ44; the RH19s are closed, RH1/RH2 verified shut, and 22SJ45 then 21SJ45 opened.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q8</div>
+When restarting an RHR pump after a Loss of RHR (AB.RHR-0001) and <span class="hi-exam">time allows normal restoration and local venting</span>, the preferred flow rate is a <span class="hi-exam">LOWER flow rate — to limit initial sudden cooldown and minimize level loss caused by collapsing voids</span> (AB.RHR-0001 CAUTION). <span class="hi-trap">A HIGHER flow rate to sweep entrained air is used only when time does NOT allow a normal venting.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q33</div>
+RHR pump 4KV vital bus power supplies: <span class="hi-exam">11 RHR pump from A bus, 12 RHR pump from B bus</span>. <span class="hi-trap">Other ECCS pumps are powered differently: 11/12 SI and 11/12 CS are from A and C; charging pumps 21/22 are from B and C.</span> (Unit 2 SW pumps run in reverse order: 21/22 from C, 25/26 from A.)
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q87</div>
+With RHR in service in Mode 5, an RCS pressure transient that exceeds <span class="val-trip">375 psig</span> (e.g., momentarily to 390 psig on starting a second RCP) opens both the <span class="hi-exam">PZR PORVs and the 1RH3 RHR SAF RLF VLV TO CONTAINMENT SUMP at their 375 psig setpoints</span>. <span class="hi-trap">The 1RH3 relief lifting is NOT apparent to the control room, but the PORV opening IS</span> — so the crew enters AB.PZR-0001 (PZR Pressure Malfunction), Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-exam">The 1RH2 RHR COMMON SUCT MOV has an OPENING interlock (RCS pressure &lt;375 psig + keyswitch) and does NOT auto-close on high pressure.</span> AB.LOCA-0001 (Shutdown LOCA) is used in Modes 3/4 with accumulators isolated, not Mode 5.
+</div>
+
 ## Connections
 
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]]
-- Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-APPX-7 — Containment Sump Blockage]]
-- Related exam questions: [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]]
-- Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related systems: [[Control Air]], [[EDGs]], [[DC Power]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]], [[AB.CA-0001 — Loss of Control Air]]
+- Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOPA-1 — Loss of All AC Power]]
+- Related exam questions: [[2014 Q4]], [[2014 Q8]], [[2014 Q33]], [[2014 Q34]], [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]], [[2014 Q24]], [[2014 Q87]]
+- Related JPMs: [[2014 JPM Sim-b]], [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]], [[2016 JPM Sim-b]], [[2015 JPM Sim-h]]
+- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

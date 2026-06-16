@@ -21,6 +21,11 @@ OHA B-2, "2A 125 VDC CNTRL BUS VOLT LO": On loss of <span class="hi-exam">2A Vit
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q15</div>
+OHA B-10, "2B 125VDC CNTRL BUS VOLT LO": with the 2B Vital Bus de-energized (2B Diesel Generator failed to start) following a unit trip, the required action is to <span class="hi-exam">place the 2B2 Battery Charger in service</span>. The 2B1 charger is normally in service; 2B2 (backup) use is <span class="hi-exam">limited to 7 days per Tech Specs</span>; there is <span class="hi-exam">no automatic swap</span>. <span class="hi-trap">Trap: transferring 2B 125 VDC loads to their alternate source is done only if the 2B2 charger cannot be placed in service.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q61</div>
 OHA B-13 (21 SW HDR PRESS LO) and B-14 (22 SW HDR PRESS LO) — per S2.OP-AR.ZZ-0002 pages 28-29: <span class="hi-exam">alarm setpoint <span class="val-alarm">99.5 psig</span></span>; the <span class="hi-exam">standby SW pump auto-starts at <span class="val-alarm">95.5 psig</span></span>.
 </div>
@@ -30,10 +35,20 @@ OHA B-13 (21 SW HDR PRESS LO) and B-14 (22 SW HDR PRESS LO) — per S2.OP-AR.ZZ-
 <span class="hi-exam">OHA B-13 / B-14 (low SW header pressures)</span> are the diagnostic alarms for a Loss of All SW. The ARP for B-13/B-14: (3.1) Verify header low pressure using OHAs 2PA5373 on 2CC1; (3.2) IF low pressure exists due to known system configuration, THEN go to S2.OP-SO.SW-0001 to adjust system pressure; (3.3) <span class="hi-exam">IF a valid low pressure condition exists, THEN go to S2.OP-AB.SW-0001, Loss of Service Water Header Pressure</span>. From AB.SW-0001 Step 3.8, with no SW header outage, the procedure routes to AB.SW-0005 for the loss-of-all-SW critical actions.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q80</div>
+OHA Window B SW alarms: <span class="hi-exam">B-13/B-14/B-15 (SW header pressure low) followed by B-48 (SW VLV RM FLOODED)</span> indicate a SW leak; the B-48 flooding alarm localizes it to a single CFCU supply line (78' Mech Pen Area), mitigated per AB.SW-0001. See [[Service Water]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q18</div>
+<span class="hi-exam">OHA B-18 (2C 125VDC CNTRL BUS VOLT LO)</span>: the 125VDC bus control band per the NCO logs is <span class="val-normal">125-139.8V</span>. A reading of 126V with no current on 2RP9 is within the normal band, so the ARP directs having maintenance <span class="hi-exam">adjust the charger float voltage</span> (action IS required per the ARP — not merely continued monitoring). <span class="hi-trap">No ground is indicated, so S2.OP-SO.125-0004 (Ground Detection) is not entered; 126V is above the TS minimum, so swapping to the standby charger is not required.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[DC Power]], [[EDGs]], [[Service Water]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]]
-- Related exam questions: [[2016 Q61]], [[2020 Q13]]
+- Related exam questions: [[2015 Q15]], [[2016 Q61]], [[2020 Q13]], [[2015 Q80]], [[2014 Q18]]
 - Related JPMs: [[2016 JPM Sim-e]]
-- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]]

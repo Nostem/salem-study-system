@@ -49,12 +49,27 @@ EOP-LOPA-1 Continuous Action Step for energizing a deenergized 4KV vital bus wit
 <span class="hi-exam">EOP-LOPA-1 Step 16 transition</span>: with one EDG (2A) energizing 2A Vital Bus, second EDG (2B) energizing 2B Vital Bus, 23 AFW supplying all required AFW flow, and 2C Vital Bus deenergized/unavailable, when an SPT (24 SPT) is restored the CRS directs swapping the running EDG-fed bus to the SPT source per <span class="hi-exam">S2.OP-SO.DG-0001 §5.8 (EDG-to-SPT swap) followed by S2.OP-SO.4KV-0001 §5.3.6 (Mimic Bus close protocol)</span>. The swap requires placing redundant equipment in service first (e.g., 22 CCW pump), stopping all 2A vital bus loads via Attachment 1, opening the 2A EDG breaker, then arming the Mimic Bus close interlock and pressing-and-holding the 24ASD CLOSE pushbutton. After successful close, single-source voltage band is 4.330–4.417KV and OHA J-17 (2A 4KV VTL BUS UNDRVOLT) clears.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q74</div>
+On a total loss of all AC power, EOP-LOPA-1 may be entered directly; its immediate actions <span class="hi-exam">trip the Rx then trip the Turbine — LOPA-1 does NOT confirm the Rx trip</span> (there is no power to act on it). See [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[OP-AA-101-111-1003 — Use of Procedures]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 IP-j</div>
+<span class="hi-exam">EOP-LOPA-1 Sheet 2, Step 27</span> directs local isolation of RCP Seal Cooling during a loss of all AC power. The local actions close five valves: <span class="hi-exam">CV83, CV89 (SEAL WATER FILTER INLET), CV95 (SEAL WATER FILTER BYPASS), CV116 (SEAL WATER TO VCT), and CC131 (RCP THERMAL BARRIER VALVE)</span>. With seal injection and thermal-barrier CCW lost in the blackout, isolating these prevents diversion/backflow paths through the seal-cooling lines.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q99</div>
+The EOP-LOPA-1 Bases document states this EOP is entered <span class="hi-exam">anytime, from anywhere, on the symptom of a loss of all AC power</span>. Therefore <span class="hi-exam">a loss of all three vital buses ALWAYS requires suspending any Functional Restoration Procedure (FRP) in use</span> — FRPs assume at least one 4KV vital bus is available for mitigative actions. <span class="hi-trap">Contrast: only a HIGHER RED or PURPLE CFST path than the one directing current FRP entry requires suspending (a new condition on a different status tree does not always); FRPs do NOT have a Continuous Action Summary like EOPs do; RWST lo level only directs LOCA-3 when so directed in the FRP in use — it does not automatically suspend any FRP.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Main Steam]], [[Control Air]], [[DC Power]], [[EDGs]], [[Service Water]], [[4KV]], [[SECs]], [[RCPs]], [[CVCS]]
-- Related EOPs: [[EOP-LOPA-4 — Extended Loss of All AC Power]]
-- Related procedures: [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]]
-- Related exam questions: [[2016 Q18]], [[2018 Q59]], [[2022 Q77]]
-- Related JPMs: [[2016 JPM Sim-g]], [[2018 JPM IP-i]], [[2019 JPM Sim-g]]
+- Related systems: [[Main Steam]], [[Control Air]], [[DC Power]], [[EDGs]], [[Service Water]], [[4KV]], [[SECs]], [[RCPs]], [[CVCS]], [[RHR]]
+- Related EOPs: [[EOP-LOPA-2 — Loss of All AC Power Recovery / SI Not Required]], [[EOP-LOPA-4 — Extended Loss of All AC Power]]
+- Related procedures: [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[AB.CA-0001 — Loss of Control Air]]
+- Related exam questions: [[2014 Q6]], [[2015 Q13]], [[2016 Q18]], [[2018 Q59]], [[2022 Q77]], [[2015 Q74]], [[2014 Q16]], [[2014 Q99]]
+- Related JPMs: [[2016 JPM Sim-g]], [[2018 JPM IP-i]], [[2019 JPM Sim-g]], [[2015 JPM IP-j]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

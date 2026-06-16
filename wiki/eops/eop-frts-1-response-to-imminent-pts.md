@@ -64,11 +64,36 @@ RED path for Thermal Shock entered during EOP-LOCA-1 (LBLOCA). Entry/exit criter
 FRCC-2 → FRTS-1 transition during accumulator depressurization: <span class="hi-exam">crew does NOT immediately transition to FRTS-1 when a RED Thermal Shock CFST is recognized during FRCC-2 step 15 (Continuous Action)</span>. Stopping the depressurization to enter FRTS would cause the cooldown to stop and a thermal soak to be performed; the core would continue to boil away injected accumulator water and could lead to a RED path for CC. The continuous action of FRCC-2 step 15 takes precedence over the higher-priority Thermal Shock CFST in this specific procedural moment.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q83</div>
+When a loss-of-secondary-heat-sink RED path (FRHS-1) and a thermal-shock RED path coexist, <span class="hi-trap">FRHS-1 takes priority — FRTS-1 is the lower-priority RED path</span> (its actions, reset Safeguards / shut MS10s, are correct only for the FRTS procedure). See [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-CFST-1 — Critical Safety Function Status Trees]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q84</div>
+A RED Thermal Shock path during EOP-FRCC-2 accumulator injection: <span class="hi-trap">do NOT implement FRTS-1 until FRCC-2 is complete</span> — entering FRTS would stop the cooldown/depressurization, the core would continue to boil away injected accumulator water and could re-uncover (a RED Core Cooling path). See [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-CFST-1 — Critical Safety Function Status Trees]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+After the LBLOCA and transition out of EOP-TRIP-1, CFST monitoring identifies the <span class="hi-exam">FRTS RED path (imminent pressurized thermal shock)</span> as RCS pressure drops below the FRTS setpoint with cold ECCS injection. CRS enters EOP-FRTS-1, performs the FRTS steps, and <span class="hi-exam">returns to the procedure in effect (EOP-LOCA-1)</span> when RCS pressure is &lt; 420 psig. This is an enter/act/return contingency, not a terminal procedure. See [[EOP-CFST-1 — Critical Safety Function Status Trees]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q15</div>
+After a rapid cooldown/depressurization (e.g., a steamline rupture blowing down all SGs), AFW flow and steam release are used to prevent the RCS from heating back up because an RCS heatup repressurizes the RCS while the RPV downcomer is severely cooled — the combination of severe cooling plus the pressure rise can <span class="hi-exam">propagate a flaw in the vessel and threaten vessel integrity (Pressurized Thermal Shock)</span>, as described on page 2 of the FRTS-1 Basis Document. <span class="hi-trap">The concern is RPV failure — not cold-leg piping welds, SG tubesheet deformation, or AFW feed-ring water hammer.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q25</div>
+FRTS-1 Step 9 evaluates RCS subcooling together with adequate vessel level (RVLIS) to decide if an RCP is required and can be started. Initial criteria: <span class="hi-exam">&gt;50°F subcooling and adequate RVLIS level</span>. With &lt;50°F subcooling (e.g., 20°F) the procedure goes straight to the RCP-start step, which requires all RCPs stopped and <span class="hi-exam">subcooling &gt;0°F</span>, then starts a single RCP IAW S2.OP-SO.RC-0001 — which adds the restriction that the selected loop have <span class="hi-exam">SG NR level &gt;9%</span>. Per the Bases Document, the purpose is to mix cold incoming ECCS water with the warm reactor coolant water.
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[RCS]], [[RCPs]], [[RHR]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
-- Related EOPs: [[EOP-FRCC-2 — Response to Degraded Core Cooling]]
-- Related exam questions: [[2016 Q24]], [[2016 Q83]], [[2016 Q99]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related systems: [[ECCS]], [[RCS]], [[RCPs]], [[RHR]], [[AFW]], [[RVLIS]], [[Steam Generator & Blowdown]], [[Main Steam]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
+- Related EOPs: [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
+- Related exam questions: [[2016 Q24]], [[2016 Q83]], [[2016 Q99]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]], [[2015 Q83]], [[2015 Q84]], [[2014 Q15]], [[2014 Q25]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2015 Scenario 1]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

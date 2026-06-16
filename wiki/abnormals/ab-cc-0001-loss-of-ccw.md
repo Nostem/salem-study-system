@@ -91,10 +91,42 @@ On a single CCW pump trip with the standby pump in AUTO and stopped, the standby
 Per S2.OP-AB.CC-0001 CAS items, the <span class="hi-exam">5-minute timer applies to the RCP BRG CLG WTR FLO LO alarm</span>: if the alarm is still valid after 5 minutes, perform Attachment 2 (Stopping Reactor Coolant Pumps). <span class="hi-trap">Trap: the 2-minute CAS timer applies only when RCP Seal Injection Flow AND RCP Thermal Barrier Component Cooling flow are lost concurrently — not for the BRG CLG WTR FLO LO alarm alone.</span> Per Attachment 2: if <span class="hi-exam">Reactor Trip Breakers are CLOSED, the crew MUST manually TRIP the Reactor prior to stopping the affected RCPs</span> — even if the plant is in MODE 3 with all rods fully inserted. <span class="hi-trap">Trap: candidates may think a manual trip is unnecessary because rods are already in, but the procedure requires it whenever RTBs are closed.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q86</div>
+On a rising CC Surge Tank level: <span class="hi-exam">stop WHUT processing and direct a NEO to locally drain the Surge Tank (to a 55-gallon drum) to keep level &lt;100%</span> (overflow would contaminate the Waste Holdup System with chromates). The 2CC149 Vent Valve auto-closes on HIGH RADIATION, not high pressure. See [[CCW]], [[Waste Liquid]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-g</div>
+Alternate path (loss of all CCW): 22 CCW pump trips, the standby (23) CCW pump <span class="hi-exam">fails to auto-start and cannot be manually started</span>, then 21 CCW pump trips <span class="hi-exam">1 minute 30 seconds later</span> — a TOTAL LOSS of CCW to all RCPs. AB.CC-0001 (Step 3.40/3.41) directs starting available CC pumps to clear the 21/22 CC HDR PRESSURE LO alarms; with none available, the validated RCP conditions exist and the crew goes to Attachment 2, Stopping Reactor Coolant Pumps: <span class="hi-exam">IF RTBs CLOSED, TRIP the Reactor; STOP affected RCP(s)</span>; and because letdown CCW is lost, <span class="hi-exam">CLOSE 2CV2 AND 2CV277 (isolate letdown), OPEN 2SJ1 AND 2SJ2 (swap charging suction to RWST), CLOSE 2CV40 AND 2CV41 (isolate VCT)</span>, then GO TO EOP-TRIP-1. The "Stopping Reactor Coolant Pumps" attachment is identical to the one in AB.RCP-0001. See [[CCW]], [[AB.RCP-0001 — RCP Abnormality]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #4</div>
+22 CCW pump trips and the standby (23) CCW pump <span class="hi-exam">fails to auto-start</span>. The crew validates the CCW low-pressure alarms against ARP guidance and <span class="hi-exam">manually starts 23 CCW pump</span> to restore system pressure — all CCW alarms clear on restoration. AB.CC-0001 (and [[AB.RCP-0001 — RCP Abnormality]]) are referenced to verify entry is NOT required once RCP CCW-cooled parameters trend back to normal. CRS enters TSAS 3.7.3 for not having 2 operable CCW loops. See [[2015 Scenario 4]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+23 CCW pump trips and the standby CCW pump <span class="hi-exam">fails to auto-start</span>. The crew <span class="hi-exam">manually starts 22 CCW pump</span> to restore system pressure, clearing all CCW and RCP system alarms, then validates that the alarms received were consistent with low CCW system pressure and verifies RCP CCW-cooled parameters. CRS enters the appropriate Tech Spec. See [[2014 Scenario 1]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-h</div>
+Contrast with the loss-of-CCW response: when CCW is lost during a LOCA/LOOP and must be restored, EOP-APPX-1 (not AB.CC-0001) is the controlling procedure — it aligns SEC fans and sheds CCW-cooled loads (CFCUs, Aux Bldg/FHB exhaust fans) to fit a CCW pump within its EDG/SEC load margin. <span class="hi-exam">22 CCW pump fails to start, so the operator transfers to the 21 CCW pump alignment and starts 21 CCW</span>, then places both CCW HXs in service with ≥3 SW pumps running. See [[EOP-APPX-1 — Component Cooling Water Restoration]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q9</div>
+Locating a CCW leak with ATTACHMENT 4 (Leak Isolation Method): if surge tank level continues to lower with <span class="hi-exam">EITHER CC header in service</span>, the leak must be on the <span class="hi-exam">Non-Safeguards header (supplied from both CC headers)</span>. Of components fed from both headers, the leaking component is the <span class="hi-exam">Spent Fuel Pool HX</span> — SFP cooling pressure is &lt; CCW pressure, so the leak is out of CCW into SFP cooling. <span class="hi-trap">The Boric Acid Evaporator Distillate Cooler HX is also on the non-safeguards header but is not normally in service; the 22 CCW HX and 23 Charging pump seal HX are on the safeguards header.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[CCW]], [[RCPs]], [[RHR]], [[Service Water]]
+- Related systems: [[CCW]], [[RCPs]], [[RHR]], [[Service Water]], [[Spent Fuel Pool]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
-- Related exam questions: [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2018 Q95]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]]
-- Related JPMs: [[2019 JPM Sim-h]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
+- Related scenarios: [[2015 Scenario 4]], [[2014 Scenario 1]]
+- Related exam questions: [[2014 Q9]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2018 Q95]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]], [[2015 Q86]]
+- Related JPMs: [[2019 JPM Sim-h]], [[2015 JPM Sim-g]], [[2014 JPM Sim-h]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

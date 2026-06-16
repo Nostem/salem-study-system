@@ -21,6 +21,11 @@ Step 4 — rapid boration via BAT pump and CV175. Adequate flow is 36 gpm. If fl
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q11</div>
+EOP-TRIP-2 directs rapid boration only for <span class="hi-exam">2 or more control rods not fully inserted</span> (Step 7). For a <span class="hi-exam">single stuck rod</span>, boration is NOT performed in TRIP-2 — and there are <span class="hi-exam">no SDM diagnostic steps in TRIP-2</span> that drive a transition to SGTR-1. The single-stuck-rod boration is instead directed by AB.SG-0001 (re-entered at Step 3.27 after exiting the TRIP series), Step 3.28 — 35 minutes per stuck rod.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q21</div>
 Control Rod Insertion step — if 2CV175 (RAPID BORATE STOP VALVE) fails to open, EOP-TRIP-2 directs: <span class="hi-exam">OPEN RWST to CHARGING SUCTION VALVES 2SJ1 and 2SJ2, then CLOSE VCT to CHARGING SUCTION VALVES 2CV40 and 2CV41</span> to establish rapid boration from the RWST. <span class="hi-trap">Alternate paths via 2CV174 (Blender Bypass), 2CV172/2CV185 (normal boration), or 2CV172/2CV181 (blender to VCT) are in S2.OP-SO.CVC-0008 (Rapid Boration) but are NOT directed in TRIP-2.</span>
 </div>
@@ -78,11 +83,42 @@ Transitioned from EOP-TRIP-1 following Rx trip on RCS Low Flow (loss of 22 RCP f
 Transitioned from EOP-TRIP-1 following reactor trip on 22 RCP seal failure (no SI required). Shortly after entering TRIP-2, <span class="hi-exam">24 SG tube rupture (650 gpm)</span> occurs. Crew identifies tube rupture based on SG NR levels rising, radiation monitors <span class="hi-exam">2R53D, 2R15, 2R41, 2R19D</span> in alarm. CRS directs manual SI initiation and returns to EOP-TRIP-1.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q85</div>
+TRIP-2 (Reactor Trip Response) is performed but <span class="hi-trap">does NOT check for adequate containment cooling or SI initiation criteria (other than the CAS)</span> — so it is not the prerequisite for a natural circulation rapid cooldown (TRIP-4 is). See [[RCS]], [[EOP-TRIP-4 — Natural Circulation]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-f</div>
+TRIP-2 Step 19 (Steam Dump Mode Shift): with Condenser Steam Dumps available, <span class="hi-exam">shift Steam Dumps to MS Pressure Control - Auto</span> (Manual → align demand → MS Pressure Control → Auto). TRIP-2 Step 22 (Source Range NIS): both IR channels must be <span class="hi-exam">&lt;7E-11 Amps</span> to energize the source range. An <span class="hi-exam">undercompensated IR channel reads erroneously high and will not drop below the permissive</span> (diagnosed by elapsed time since trip, SUR 0 with power above minimum display, and NR-45 trend leveling off); the operator then <span class="hi-exam">manually energizes BOTH Source Range channels (RESET SOURCE RANGE A and B)</span>, transfers NR-45 to the source range, and adjusts the audio count rate scale. See [[Excore NIs]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+Transitioned from EOP-TRIP-1 after a manual reactor trip with <span class="hi-exam">no SI required</span>. Crew restores secondary heat sink — <span class="hi-exam">21 AFW pump runs with no flow and 22/23 AFW pumps fail to auto-start</span>, so PO manually starts an AFW pump to establish ≥ 22E4 lbm/hr. A 2nd PZR pressure channel then fails low → the TRIP-2 CAS directs going to EOP-TRIP-1 on the resulting auto Inadvertent SI. See [[EOP-TRIP-1 — Reactor Trip or Safety Injection]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+Transitioned from EOP-TRIP-1 after a manual reactor trip (both SGFPs tripped on low suction, no SGFP &gt;P-10) with <span class="hi-exam">no SI required</span>. When the Main Generator output breakers open 30 seconds after the turbine trip, the <span class="hi-exam">2B 4KV vital bus de-energizes</span> and 2B EOG loads Blackout — Blackout-loading response is directed at <span class="hi-exam">TRIP-2 Step 12</span>; PO resets 2B SEC (2B SEC is NOT blocked on 2RP1 since no SI signal is present). 21 charging pump starts then trips and 22 AFW pump fails to start; subsequently 21 AFW pump trips 4 min post-trip and 23 AFW pump overspeeds/trips → all AFW lost → Heat Sink RED path → FRHS-1. See [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #4</div>
+Transitioned from EOP-TRIP-1 after a manual reactor trip (steam leak outside containment isolated by MSLI) with <span class="hi-exam">no SI required</span>. RO reports <span class="hi-exam">2 control rods failed to fully insert</span> → the crew must <span class="hi-exam">initiate Rapid Boration before exiting TRIP-2 (CT#1)</span> (start a BAT, open 2CV175, shut 21/22 CV160s); CRS determines 70 minutes of boration is required for the 2 stuck-out rods. A LOCA outside containment then develops on 22 RHR piping (24 ECCS Accumulator lo level/pressure, PZR level uncontrollable) → manual SI per the TRIP-2 CAS (fails from Train B, succeeds from Train A) → return to [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]. See [[2015 Scenario 4]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q92</div>
+The <span class="hi-exam">Feedwater Interlock (FWI) is a 2/2 interlock: RCS Auctioneered Hi Tavg &lt;554&deg;F AND Rx Trip Breakers open (P-4)</span>, which shuts all BF19's and BF40's to isolate Main Feed flow to the SGs. <span class="hi-exam">If the FWI fails to actuate, the running SGFPs continue to supply Main Feed</span> to the SGs (whose NR level is low after the trip from 100% power), causing <span class="hi-exam">excessive SG cooldown / overfeed</span>. Because the resulting RCS pressure transient is steady but slow, <span class="hi-trap">SI initiation in TRIP-1 is NOT warranted during immediate actions</span> — initiating SI when not required can fill the PZR water-solid. The correct response is to <span class="hi-exam">trip both SGFPs early in TRIP-2 after verifying adequate AFW flow</span>.
+</div>
+
 ## Connections
 
-- Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]], [[Excore NIs]]
-- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
-- Related exam questions: [[2016 Q8]], [[2016 Q52]], [[2016 Q76]], [[2016 Q78]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]]
-- Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]]
-- Related scenarios: [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]], [[Excore NIs]], [[Steam Generator & Blowdown]], [[Radiation Monitoring]], [[Feed & Condensate]], [[AFW]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
+- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[AB.RAD-0001 — Radiation Monitor Abnormality]]
+- Related exam questions: [[2015 Q10]], [[2015 Q11]], [[2016 Q8]], [[2016 Q52]], [[2016 Q76]], [[2016 Q78]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]], [[2015 Q85]], [[2014 Q92]]
+- Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]], [[2015 JPM Sim-f]]
+- Related scenarios: [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

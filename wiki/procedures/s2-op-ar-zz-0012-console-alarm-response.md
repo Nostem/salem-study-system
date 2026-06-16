@@ -57,8 +57,16 @@ Primary Water Flow Deviation Alarm setpoint: <span class="hi-exam"><span class="
 Primary Water Flow Deviation Alarm setpoint: <span class="hi-exam"><span class="val-alarm">&plusmn;5.0 gpm</span></span> above the setpoint. <span class="hi-trap">Boric Acid Flow Deviation alarm setpoint is &plusmn;0.8 gpm — do not confuse the two deviation alarm setpoints.</span>
 </div>
 
+### VCT LEVEL HI-LO
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-b</div>
+For the console <span class="hi-exam">VCT Level Hi-Lo</span> alarm: Automatic Action 2.1 (Hi) — if 2CV35 is in auto, a high level removes normal level control and <span class="hi-exam">shifts 2CV35 fully to the HUT</span>. Operator Actions 3.x: MONITOR VCT level on LI-112; if level is actually low, INITIATE makeup IAW S2.OP-SO.CVC-0006 and ensure 2CV35 lined up to VCT; if high, ensure 2CV35 directed to HUT; and <span class="hi-exam">IF a VCT level channel has failed, THEN INITIATE S2.OP-AB.CVC-0001, Loss of Charging</span>. See [[AB.CVC-0001 — Loss of Charging]].
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[CVCS]], [[Pressurizer]]
 - Related exam questions: [[2016 Q34]], [[2018 Q31]], [[2019 Q3]], [[2023 Q55]], [[2020 Q38]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related JPMs: [[2015 JPM Sim-b]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Operating Exam]]

@@ -31,10 +31,15 @@ Containment pressure relief with defeated auto-isolation: upon <span class="hi-e
 With both 1R12A (Containment Noble Gas) Source Check failed AND 1R41D (Plant Vent Release Rate) failed high, ODCM Table 3.3-13 Instrument #3 <span class="hi-exam">Action 37</span> applies for Containment Pressure Relief. Release IS permitted but the SRO must verify <span class="hi-exam">P&L 2.3</span> compensatory action — Chemistry is notified to comply with the contingency actions associated with the ODCM prior to performing a Containment Pressure Relief. Action 37 requires: <span class="hi-exam">(a) at least two independent samples of the tank's contents are analyzed AND (b) at least two technically qualified members of the facility Staff independently verify the release rate calculations</span>; otherwise suspend release of radioactive effluents via this pathway. Additional compensatory actions per <span class="hi-exam">P&L 3.11</span> may be identified by the SRO.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q60</div>
+When a Containment Pressure Relief is initiated (opening 1VC5/1VC6 with NORMAL containment radiation), <span class="hi-exam">1R12A (Containment Gas Effluent, sampling containment atmosphere) stays constant; 1R41B (Plant Vent Noble Gas Intermediate Range, normally no sample flow) stays constant; 1R41D (Plant Vent Noble Gas Release Rate) RISES</span> because it computes release rate from on-range monitors × plant-vent flow (and auto-terminates release on high effluent). See [[Radiation Monitoring]].
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]]
-- Related procedures: [[S2.OP-AB.RAD-0001 — Abnormal Radiation]]
-- Related exam questions: [[2019 Q96]], [[2020 Q33]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]]
+- Related exam questions: [[2019 Q96]], [[2020 Q33]], [[2015 Q60]]
 - Related JPMs: [[2016 JPM SRO-A3]], [[2023 JPM Sim-h]]
-- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]]

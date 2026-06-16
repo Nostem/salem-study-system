@@ -26,9 +26,15 @@ Loss of 2A 4KV Vital Bus response: A EDG auto-starts and re-energizes the bus. F
 Unit 1 — 1A 4KV Bus Differential with #3 SW Bay C/Ted: per step 3.33, <span class="hi-exam">15 and 16 SW Pumps are powered from 1A Bus</span> but are already isolated for #3 SW Bay outage. The 1A Bus Differential has <span class="hi-exam">no additional impact on service water system</span>. 13 SW Pump trip (separate event) causes SW header pressure drop → <span class="hi-exam">12 SW Pump auto-starts (C Bus)</span>. Correct procedure entry: AB.4KV-0001. <span class="hi-trap">Do not confuse with a Loss of All Service Water (AB.SW-0005) — the 1A bus loss does not affect currently-operating SW pumps.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+The <span class="hi-exam">2A 4160 V vital bus locks out on bus differential</span>, de-energizing its loads (including the 21 AFW pump power supply, which later leaves the crew with no powered AFW pump). CRS enters AB.4KV-0001, performs the abnormal actions, and identifies the applicable Tech Specs for the de-energized vital bus and associated inoperable equipment.
+</div>
+
 ## Connections
 
 - Related systems: [[4KV]], [[CVCS]], [[EDGs]], [[Service Water]]
 - Related exam questions: [[2020 Q53]]
 - Related JPMs: [[2022 JPM Sim-g]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related scenarios: [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
+- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]]

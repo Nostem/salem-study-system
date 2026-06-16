@@ -52,6 +52,11 @@ Provides guidance for responding to a loss of control/instrument air on Salem Un
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q13</div>
+The RHR HX flow control valve (21RH18) and HX bypass valve (2RH20) both <span class="hi-exam">fail AS IS on loss of control air</span> — both are supplied air exclusively from the <span class="hi-exam">"A" air header (fed by the Unit 2 ECAC)</span>. During a station blackout (LOOP with all Unit 2 EDGs and ECAC failed), control air on the "A" header bleeds away and the valves remain at their last position. <span class="hi-trap">Console valve-position indication stays accurate because 115VB inverter power is available for at least 2 hours following a LOPA.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q15</div>
 ECAC starting criteria and CAS: if <span class="hi-exam">2B CA Header is &le; 88 psig</span>, notify Unit 1 NCO to start <span class="hi-exam">#1 ECAC</span> (#1 ECAC senses CA Header B). CAS: if <span class="hi-exam">BOTH CA headers lower to &lt; 80 psig, Trip the Reactor</span>. <span class="hi-trap">#2 ECAC senses CA Header A (not B). #1 ECAC senses CA Header B (not A). The ECAC number does NOT match the header letter. The CAS requires BOTH headers &lt; 80 psig, not EITHER.</span>
 </div>
@@ -108,11 +113,21 @@ Total loss of Control Air at 7% power during normal power ascension (after manua
 <strong>Total Loss of Control Air progression and alternate path:</strong> Initial conditions — 100% power, WG release in progress from 21 GDT, #3 SAC C/T. Cascade: #2 SAC trips → 2 ECAC auto-starts (loads at 85 psig); #1 SAC then trips and locks out; #1 ECAC has tripped (per cue when contacted). With only 2 ECAC available, 2B Control Air Header drops below 80 psig (the alternate-path entry per <span class="hi-exam">Step 3.19</span>). <span class="hi-exam">Critical alternate-path actions: (1) Step 3.58 — close 2CV3, 2CV4, 2CV5, 2CV2, 2CV277, 2CV7 to isolate letdown; (2) Step 3.57 — terminate any liquid/gaseous release by closing 2WL51 and 2WG41 (GDT TO PLANT VENT); (3) CAS Step 6.0 — when BF19s close on loss of CA and SG levels cannot be maintained, manually trip the reactor BEFORE the auto-trip on lo-lo SG NR level, then perform EOP-TRIP-1 immediate actions concurrently with AB.CA-0001</span>. Approximate event timeline from RT-1: <span class="hi-trap">1:00 — 1 SAC auto starts; 1:30 — 1 SAC trips; 3:50 — 2 ECAC begins loading; 4:10 — 2B Control Air header reaches 80 psig (SA low pressure alarm); 4:25 — CA low pressure alarm; 6:30 — 21–24BF19 Feed Reg Valves begin closing; 7:10 — G-15 OHA ADFCS TRBL.</span> Notes: All 3 SAC supply breakers open is an auto-start signal for both ECACs but only the Unit 2 ECAC will auto-start (Unit 1 will not). 2A control air header is supplied from #2 ECAC; 2B from #1 ECAC. Next-to-load SAC requires Station Air pressure 5 psig below the 105 psig follow setpoint for ~5 seconds.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q19</div>
+On Console Alarm CONTROL AIR PRESSURE LO with only the "A" header degraded (A at 78 psig and dropping slowly, B at 93 psig and steady, Station Air 110 psig steady), the ARP directs the operators to <span class="hi-exam">go to S2.OP-AB.CA-0001 and verify the redundant air panels have swapped to the "B" control air header</span> (the swap is verified after the NOTE at step 55 or 63). <span class="hi-trap">A reactor trip is NOT required — the stem does not indicate a loss of Control Air on both headers; there is also no direction to lower power and start AFW pumps.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q64</div>
+With the operating SAC tripped (none restartable) and the Unit 2 ECAC tripped immediately after starting, both units lose Control Air. The AB.CA-0001 CAS action directs: <span class="hi-exam">if BOTH CA header pressures are &lt;<span class="val-trip">80 psig</span>, then trip the Rx</span> — applied to BOTH units. With all station air lost, the <span class="hi-exam">BF19s (Feed Reg Valves) go shut</span> as their air runs out; <span class="hi-trap">the FRVs are NOT supplied backup air from the ECACs (a check valve prevents control air from reaching the BF19s, and per p.38 of AB.CA only Station Air supplies the BF19s). Unit 1 ECAC feeds the 1B and 2B headers; Unit 2 ECAC feeds the 1A and 2A header.</span> Result: BOTH reactors are tripped based on impending BF19 closures.
+</div>
+
 ## Connections
 
-- Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]], [[Waste Gas]], [[Steam Generator & Blowdown]]
+- Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[EDGs]], [[DC Power]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[SC.OP-SO.SA-0001 — Station Air System Operation]]
-- Related exam questions: [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]]
+- Related exam questions: [[2015 Q13]], [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]], [[2014 Q19]], [[2014 Q64]]
 - Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOPA-1 — Loss of All AC Power]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]]

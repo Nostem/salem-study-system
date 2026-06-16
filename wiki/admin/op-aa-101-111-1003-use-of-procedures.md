@@ -43,6 +43,11 @@ Salem EOPs' Continuous Action Steps are either surrounded by a shaded box or con
 With verified <span class="hi-exam">Red and Purple CFSTs</span>, OP-AA-101-111-1003 states that the CFSTs should be monitored <span class="hi-exam">continuously</span>. If no condition more serious than YELLOW is encountered, CFSTs may be monitored every <span class="hi-exam">10-20 minutes</span>. <span class="hi-trap">Trap: 10-20 minutes is for Yellow-only conditions — any Red or Purple CFST requires continuous monitoring.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q74</div>
+Step 4.2.11 (page 22) requires <span class="hi-exam">CONTINUOUS monitoring of the CFSTs whenever any RED or PURPLE path is indicated</span>. With a Heat Sink RED path (all other CSFs green) following transition from EOP-TRIP-1 to EOP-FRHS-1, monitoring must be continuous and <span class="hi-trap">may NOT be done every 30 minutes, every 10-20 minutes (Yellow-only), or suspended with CRS concurrence.</span>
+</div>
+
 ### CSF and FRP Implementation Priority
 
 <div class="callout callout-exam">
@@ -67,10 +72,31 @@ Step 4.4.1: if a reactor trip occurs while performing an AOP (intentionally or a
 APPX-7 is referenced as one of three procedure revisions checked for the JPM (LOCA-1 Rev. 30, LOCA-3 Rev. 30, APPX-7 Rev. 0, OP-AA-101-111-1003 Rev. 6). The Continuous Action Summary (CAS) at the top of LOCA-3 directs immediate transition to APPX-7 when sump-blockage cavitation is identified — a CAS continuous-action transition rather than a step-by-step linear branch.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q74</div>
+Use of Procedures permits entering EOP-TRIP-1 or EOP-LOPA-1 on a total loss of all AC power. <span class="hi-exam">Entering LOPA-1 directly is valid — its immediate actions trip the Rx then trip the Turbine (no Rx-trip confirmation, since there is no power)</span>. If TRIP-1 is entered instead, it kicks out to LOPA-1 before the SI evaluation step. See [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOPA-1 — Loss of All AC Power]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+Listed among the technical references governing crew conduct throughout the scenario (proper use of Alarm Response Procedures, abnormal procedures, and EOPs during the PZR pressure channel failure, MPT fire reactor trip, Inadvertent SI termination, and SGTR response).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q77</div>
+OP-AA-101-111-1003 is cited for the criterion that <span class="hi-exam">on Unit 2 a control rod is considered fully inserted if it indicates ≤10 steps withdrawn</span>, per the evaluation results published in Nuclear Fuels Engineering Letter NFE 96-098, April 13 1989. This criterion governs whether a dropped rod is handled in AB.ROD-0002 (fully inserted) or transitioned to AB.ROD-0001 (not fully inserted).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+Listed among the scenario's technical references — the crew works the SBLOCA/LOOP event using approved station procedures (alarm response, abnormals, and EOPs) <span class="hi-exam">in accordance with OP-AA-101-111-1003, Use of Procedures</span>. See [[2014 Scenario 3]].
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
-- Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
-- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]]
+- Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
+- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]], [[2015 Q74]], [[2014 Q74]], [[2014 Q77]]
 - Related JPMs: [[2016 JPM Sim-b]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related scenarios: [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

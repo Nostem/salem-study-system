@@ -60,6 +60,11 @@ AMSAC AFW pump start mapping: <span class="hi-exam">AMSAC Train A starts 21 AFW 
 - **Backup:** Service water system (safety-related, unlimited supply from Delaware River)
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q18</div>
+AFW flow defines an adequate <span class="hi-exam">secondary heat sink</span> in EOP-FRCC-1 (Step 13) prior to SG depressurization for accumulator injection: <span class="hi-exam">total AFW flow &gt; <span class="val-normal">22E4 lbm/hr</span></span> satisfies the criterion when no SG NR level is &gt; 9% (the criterion is <span class="hi-exam">9% NR level OR &gt; 22E4 lbm/hr</span>, not both). At 2 psig containment (below 4 psig adverse), the normal 9% NR value applies, <span class="hi-trap">not the 15% adverse value</span>.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q41</div>
 23 AFW Turbine-Driven pump governor maintains <span class="hi-exam">constant turbine speed</span> as SG pressure lowers (designed to operate with SG pressures as low as 100 psig). As SG pressure decreases, the differential pressure across the feedpump discharge and the SG increases, so <span class="hi-exam">AFW flow RISES even though turbine speed remains constant</span>.
 </div>
@@ -99,6 +104,11 @@ Instrument air supply line rupture to <span class="hi-exam">2MS132 (23 AFW Turbi
 - 2 pumps inoperable: Hot Standby in 6 hours
 - 3 pumps inoperable: immediately restore at least one
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q97</div>
+The TS 3.7.1.2 operability Bases for the AFW System in Modes 1-3 is that it <span class="hi-exam">ensures the RCS can be cooled down to &lt;350°F from normal conditions following a complete loss of off-site power</span>. <span class="hi-trap">Trap: do not confuse with the AFWST sizing basis (8 hours at HSB with atmospheric steam discharge), the SGTR cooldown to &lt;500°F (off-site dose), or the ATWT decay-heat reason — none of those is the 3.7.1.2 operability bases.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 SRO-A4</div>
 ICMF during SGTR: TD AFW pump (23 AFW) takes steam from <span class="hi-exam">21 and 23 SGs</span>. With 23 SG ruptured and <span class="hi-exam">23MS45 not yet closed</span>, primary-to-secondary leakage exits through the TD AFW pump steam supply — constitutes an <span class="hi-exam">unmonitored release in progress</span>.
@@ -107,6 +117,11 @@ ICMF during SGTR: TD AFW pump (23 AFW) takes steam from <span class="hi-exam">21
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q79</div>
 2MS132 (23 AFP Turbine Steam Inlet Valve) air supply line rupture: valve <span class="hi-exam">fails OPEN on loss of air</span>, causing 23 AFW pump to start at power. Cold AFW injection causes <span class="hi-exam">reactor thermal overpower (exceeds 3459 MWt)</span>. Per S2.OP-IO.ZZ-0004 (Power Operation): <span class="hi-exam">reduce turbine load</span> to lower reactor power below the administrative limit. <span class="hi-trap">AB.CA-0001 Attachment 12 provides local control of 23 AFP governor and AF21s but does NOT direct shutting down 23 AFW pump. The overpower condition must be addressed first by reducing turbine load.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-d</div>
+With <span class="hi-exam">all AFW flow lost</span> and all SGs faulted (unisolable MSLB), no secondary heat sink exists. EOP-FRHS-1 Step 1 first checks whether total AFW flow is less than <span class="hi-exam">22E04 lb/hr due to operator actions</span> (here it is NOT — the loss is a malfunction, not operator-induced). With no charging pump available, the crew must establish RCS bleed and feed using the SI pumps and reactor head vents. This defines the loss-of-secondary-heat-sink entry threshold AFW flow value used in FRHS-1.
 </div>
 
 <div class="callout callout-scenario">
@@ -194,11 +209,66 @@ Total loss of Control Air during power ascension at 7%, post manual trip: <span 
 After manual reactor trip and SI for SBLOCA, <span class="hi-exam">21 and 22 AFW pumps fail to auto-start</span> because SEC loading on 2A and 2B vital buses does not complete; <span class="hi-exam">23 AFW pump starts but provides no AFW flow</span>. CT#1 (CT-4) recovery — establish at least <span class="hi-exam">22E4 lbm/hr AFW flow</span> (or &ge;9% NR level in at least one SG) before transition to FRHS-1 is required: crew blocks 2A/2B SECs, attempts reset, <span class="hi-trap">2A SEC will not reset</span>, dispatches operator to deenergize 2A SEC, then RO manually starts 22 AFW pump (and 21 AFW pump). PO subsequently maintains 19-33% SG NR level.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q53</div>
+Each MDAFW pump has its own dedicated recirc line and <span class="hi-exam">automatic recirc valve that opens to keep AFW pump flow &gt;180 gpm</span> (closes again above 180). Shutting both AF21 discharge control valves lowers pump flow, so the affected pump's recirc valve opens to prevent overheating/pump damage. The Pressure Override circuit instead closes the AF21s on low pump pressure to prevent runout.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q54</div>
+<span class="hi-exam">MDAFW pumps auto-start when both SGFPs are tripped</span> (logic drawing 221064); the TDAFW pump does NOT. (The MDAFW pumps also auto-start on 2/3 NR level channels in one SG lowering to 14%; the TDAFW pump starts on 2/3 NR level channels in 2/4 SGs.) See [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q63</div>
+AFW can be supplied from the fire-protection system: <span class="hi-exam">Fire Protection / Fresh Water Storage Tank water can be aligned to AFW through a normally disconnected spool piece</span>. See [[Fire Protection]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q83</div>
+On a MSLB/SI with no AFW flow (11 AFP C/T, 12/13 AFP tripped) and SG WR levels dropping: a <span class="hi-exam">RED path of no AFW flow and SG WR level &lt;9% drives transition to EOP-FRHS-1 (Loss of Secondary Heat Sink), where feed-and-bleed is initiated immediately</span>. Bleed-and-feed criteria are SG WR levels &lt;36% (adverse), not 32%. See [[Steam Generator & Blowdown]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-h</div>
+On a loss of RHR with no RHR loop available, AFW provides the secondary heat sink for alternate decay heat removal (AB.RHR-0001 Attachment 10): <span class="hi-exam">feed available Steam Generators to wide-range level &gt;77% using the Auxiliary Feedwater System (or Condensate)</span> while operating the MS10s to keep Core Exit Thermocouples stable or lowering.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+Post-trip, <span class="hi-exam">21 AFW pump runs with no discharge flow and 22/23 AFW pumps fail to auto-start</span>. PO manually starts at least one of 22/23 AFW pumps to establish <span class="hi-exam">≥ 22E4 lbm/hr AFW flow</span>, maintains that until at least one SG NR level is &gt; 9%, then maintains intact SG NR level 9-33%. PO stops/ensures stopped 21 and 22 SGFP; may depress the Pressure Override Defeat for 21 AFW pump to establish flow from it.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+Cascading <span class="hi-exam">loss of all AFW</span> after the reactor trip: 22 AFW pump fails to start on SEC; 21 charging pump (for charging) also lost; <span class="hi-exam">21 AFW pump trips 4 minutes after the Rx trip</span>, leaving 23 AFW pump as the only operating aux feed pump; then <span class="hi-exam">23 AFW pump overspeeds and trips</span> when SG NR levels recover but remain &lt;9%. With AFW flow &lt;22E4 lbm/hr and ALL SG NR levels &lt;9%, the crew validates a CFST Heat Sink <span class="hi-exam">RED path</span> and transitions to FRHS-1. See [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q55</div>
+On a spurious MSLI during low-power startup, the MDAFW pumps and TDAFW pump <span class="hi-exam">start when SG level(s) drop to the lo-lo level setpoint</span> as the SGFP coasts down after losing its main-steam supply (MSIVs and MS18 bypass valves close on the MSLI).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q56</div>
+With the 22 AFP Pressure Override Protection circuit malfunctioned (holding the 22 AFP <span class="hi-exam">AF21 isolation valves shut</span> to 21 and 22 SGs), 23 AFP still feeds 21 and 22 SGs through the AF11s. <span class="hi-exam">21 and 22 SG levels rise slower than 23 and 24 SG levels</span> because 23 and 24 are fed by 21 MDAFW pump PLUS the TDAFW pump. <span class="hi-trap">Total AFW flow (all MDAFW + TDAFW pumps combined) is indicated on 2CC2 — so it will NOT read 0 gpm for any pair of SGs.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+After the reactor trip, steam leak in containment, and MSLI failure, the RCS cools down rapidly (cooldown rate &gt; 100°F/hr). <span class="hi-exam">CT#3 (CT-33): reduce AFW flow to no less than 1.0E4 lbm/hr to each SG</span> to minimize the RCS cooldown, performed in FRCE-1 prior to exit (and consistent with the LOSC-2 cooldown-minimization criterion). AFW pumps not needed for SG level control (e.g., 23 AFW pump) are tripped/stopped. See [[2014 Scenario 1]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+<span class="hi-exam">Loss of all AFW</span> after a post-trip transient: 22 AFW pump trips shortly after the post-trip AFW flow reduction, 23 AFW pump trips ~5 min later, and 21 AFW pump has no power (2A vital bus locked out). With less than <span class="hi-exam">22E4 lbm/hr</span> AFW available and no AFW pumps running, the crew transitions out of TRIP-1 to FRHS-1 and, with the SGFPs also unavailable, performs a <span class="hi-exam">Condensate pump recovery</span> to re-establish SG feed flow before RCS Bleed and Feed (CT#2). See [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]].
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]], [[AB.115-0001 — Loss of 115V Vital Instrument Bus]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]], [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]], [[AB.CA-0001 — Loss of Control Air]]
-- Related exam questions: [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2016 Q65]], [[2016 Q76]], [[2016 Q78]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]]
-- Related JPMs: [[2023 JPM SRO-A4]], [[2016 JPM IP-j]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2015 Q18]], [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2016 Q65]], [[2016 Q76]], [[2016 Q78]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]], [[2015 Q53]], [[2015 Q54]], [[2015 Q63]], [[2015 Q83]], [[2014 Q15]], [[2014 Q55]], [[2014 Q56]], [[2014 Q85]], [[2014 Q97]], [[2014 Q92]]
+- Related JPMs: [[2014 JPM Sim-d]], [[2023 JPM SRO-A4]], [[2016 JPM IP-j]], [[2015 JPM Sim-h]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]

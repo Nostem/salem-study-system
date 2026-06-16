@@ -180,6 +180,11 @@ EOP-FRSM-1 (ATWS) RCP trip restriction: per Caution C1-1, <span class="hi-exam">
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q25</div>
+RCP strategy during an uncontrolled SG depressurization (EOP-LOSC-2): the <span class="hi-exam">RCP pressure-dependent trip criteria are NOT used when a cooldown is in progress</span> — they are for <span class="hi-exam">RCP pump protection only</span>. The SBLOCA generic-issue concern (pumping coolant out the break, then stopping RCPs, leading to peak clad temperatures in excess of 2200&deg;F) does not apply to a LOSC. In a LOSC, maintaining <span class="hi-exam">forced flow</span> is more important, so RCPs continue to run. See [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]].
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q86</div>
 RCP #1 seal failure identification: <span class="hi-exam">seal leak-off flow >=6 gpm indicates #1 seal failure</span>. Per AB.RCP-0001 Attachment 1: if #1 seal leak-off >=6 gpm, go to Attachment 2 (Stopping RCPs) → <span class="hi-exam">manual reactor trip, stop the affected RCP, then 3-5 minutes later close the associated CV104</span>. <span class="hi-trap">Orderly shutdown and stop RCP within 8 hours is the action for a degraded #2 seal (leak-off <0.8 gpm or slowly approaching 6 gpm at step 3.6) — NOT for a failed #1 seal.</span>
 </div>
@@ -214,6 +219,11 @@ RCP standpipe low level alarm response (S2.OP-AR.ZZ-0011 Page 138): caused by <s
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+24 RCP #1 seal degrades with rising seal leakoff flow; the crew enters AB.RCP-0001 and trips the reactor, then 24 RCP, when seal leakoff exceeds <span class="hi-exam">6 gpm</span>. <span class="hi-exam">CT#1 (time-critical): close 24CV104 (seal leakoff isolation) within 3-5 minutes of tripping 24 RCP</span> — the ~3 min lower bound is the RCP coastdown time (a static condition favors the #2 seal performing its backup function), and the 5 min upper bound limits RCS leakage from the damaged seal; failure to isolate within 5 minutes raises the possibility of a #2 seal failure and subsequent LOCA. See [[2014 Scenario 1]].
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #1</div>
 22 RCP #1 seal degradation: seal leakoff flow rises and stabilizes at <span class="hi-exam">~5.2 gpm</span>. CRS enters AB.RCP-0001, checks P-250 computer for RCP conditions. CCW normal, winding temps normal, seal injection >6 gpm. CRS determines orderly shutdown required with <span class="hi-exam">8-hour</span> limit to stop 22 RCP. Seal then fails — leakoff exceeds <span class="hi-exam">6 gpm</span>, triggering Att 1 CAS and Att 2 (Stopping RCPs). <span class="hi-exam">CT#1: Trip reactor, stop 22 RCP, close 22CV104 within 3-5 minutes</span>. The 3-minute delay allows RCP coastdown for #2 seal backup function; the 5-minute limit minimizes RCS inventory loss from the damaged seal.
 </div>
@@ -233,11 +243,76 @@ FRHS-1 bleed-and-feed Step 23 (sequence): <span class="hi-exam">STOP ALL RCPs (2
 On total Loss of All SW, AB.SW-0005 Step 3.2 directs <span class="hi-exam">stop all RCPs</span> immediately after the reactor trip. Rationale: with no SW to cool CCW, the CCW system can no longer remove the ~600 kW per pump heat input from the RCPs (mechanical seal cooling, motor cooling) — running RCPs would rapidly heat up CCW. The procedure also requires verifying RCP Seal Inlet Temperatures &lt;225°F before swapping to the 23 (positive displacement) Charging Pump for seal injection.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q30</div>
+Prerequisites to open <span class="hi-exam">1CV114 RCP Seal Bypass Valve</span> (S1.OP-SO.RC-0001 step 5.2.1) require <span class="hi-exam">RCS pressure between 100 and 1000 psig</span> — if RCS pressure is &lt;100 psig CV114 must be shut. Other prerequisites: any RCP seal leakoff flow &lt;1 gpm; 11-14CV104 SEAL LEAKOFF valves open; seal water flow at least 6 gpm to each RCP.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q31</div>
+An RCP will <span class="hi-exam">not start when its START PB is depressed if Oil Lift Pump discharge pressure is &lt;500 psig</span> (lift-oil start interlock). Distractors: #1 seal D/P &lt;200 psig is a manual RCP trip setpoint (not a start interlock); the 4KV breaker closing springs (not trip springs) must be charged to close; STANDPIPE LEVEL LO alarm has no interlock to prevent a pump start.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q36</div>
+A <span class="hi-trap">RCP #1 seal failure is NOT seen in containment</span> — excess seal leakoff past the #2 seal shows as rising RCDT (Reactor Coolant Drain Tank) level, since the seal-leakoff path is a closed system. See [[Pressurizer & PRT]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q57</div>
+An RCP 4KV breaker requires 125 VDC control power to trip. <span class="hi-trap">If the 4KV group bus loses its 125 VDC control power, a running RCP continues to run but will NOT trip if required</span> (and could not be re-started); the alternate DC control supply does not auto-transfer. See [[DC Power]], [[4KV]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q79</div>
+RCP restart during SGTR recovery: EOP-SGTR-1 does NOT directly start a RCP — it <span class="hi-exam">directs RCP start IAW S2.OP-SO.RC-0001 (RCP Operation), requiring all support conditions/P&amp;Ls be met</span>. With RVLIS upper range &lt;100%, the criteria checked (in addition to RCS subcooling) are <span class="hi-exam">PZR level and PZR saturated</span>. See [[RVLIS]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-e</div>
+RCPs are powered from the 4KV Group Buses. <span class="hi-exam">If a Group Bus fails to transfer and de-energizes, the RCPs it feeds trip, generating a reactor trip demand (OHA F-10, RC LO FLO OR RCP BKR OPEN, and P-7)</span>. On an ATWT (reactor fails to auto-trip), the operator must manually trip the reactor.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-g</div>
+On a <span class="hi-exam">TOTAL LOSS of Component Cooling Water to all RCPs</span>, the RCP Abnormality (AB.RCP-0001) / Component Cooling Abnormality (AB.CC-0001) "Stopping Reactor Coolant Pumps" attachment directs: trip the reactor, <span class="hi-exam">STOP 21-24 RCPs</span>, and — because letdown CCW is also lost — isolate letdown and swap charging suction to the RWST, then GO TO EOP-TRIP-1. RCP bearing temperature reaching <span class="val-trip">175°F</span> is an RCP-trip / GO TO criterion in the alarm response for OHA D20-D23.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 IP-j</div>
+On a loss of all AC power (station blackout), seal injection and thermal-barrier CCW are lost, so RCP seal cooling must be locally isolated per EOP-LOPA-1 Step 27. The applicant closes five valves: <span class="hi-exam">CV83, CV89, CV95 (Seal Water Injection Filter Valve Room, 84 ft Aux Bldg — handwheel CW)</span>, then <span class="hi-exam">CV116 (SEAL WATER TO VCT) and CC131 (RCP THERMAL BARRIER VALVE) in the 78 ft Mech Pen Area SG B/D HX roped-off area</span>. CV116 is motor-operated and requires <span class="hi-exam">depressing/holding the declutch lever</span> before turning the handwheel.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q5</div>
+RCP thermal barrier rupture indications: a <span class="hi-exam">momentary RCP Thermal Barrier DISCHARGE FLOW HI alarm</span> (clears when 2CC131 Thermal Barrier Return Valve auto shuts on high flow), and rising activity/alarm on the <span class="hi-exam">CCW surge tank rad monitors 2R17A/2R17B</span>. <span class="hi-trap">The CC surge tank level RISES from RCS in-leakage — a LOWERING surge tank level is the UNEXPECTED indication.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q6</div>
+Before restarting a charging pump after a loss of charging, AB.CVC-0001 requires checking <span class="hi-exam">RCP seal inlet temperature &lt;<span class="val-trip">225°F</span> (OR seal injection isolated)</span> — to prevent thermal shock/seal-and-shaft damage when cold CVCS flow is restored to hot seals.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q30</div>
+RCP bearing cooling water is supplied by CCW. The <span class="hi-exam">23 CCW pump is powered from the 2C 4KV vital bus</span>; the <span class="hi-exam">23 charging pump is powered from the 2A 4KV vital bus</span>. With the 21 CCW pump out of service, a 2C bus lockout removes CCW flow to the RCP bearings (OHA D20-23 RCP BRG CLG WTR FLO LO) and requires entry into AB.RCP-0001.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q31</div>
+The CCW line to the RCPs is a <span class="hi-exam">single line supplying both bearing cooling and thermal-barrier cooling</span>. Inside containment it splits; the thermal-barrier CCW has its own separate return line isolated by <span class="hi-exam">2CC190 (inside containment)</span> and <span class="hi-exam">2CC131 (outside containment)</span>. Thermal-barrier CCW only cools reactor coolant rising through the thermal barrier <span class="hi-exam">upon a loss of seal injection flow</span>. <span class="hi-trap">With normal seal injection present, 2CC190 failing shut (loss of thermal-barrier CCW) does NOT affect any RCP temperatures — bearing, seal leakoff, and motor winding temps all remain the same.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q40</div>
+SEAL WATER FLOW LO annunciates for ALL 4 RCPs when the Charging System <span class="hi-exam">Master Flow Controller demand fails to 20%</span> (~half of the normal ~40% demand), halving charging / seal-injection flow (normal charging ~90 gpm). <span class="hi-trap">2CV71 (CHG HDR PCV) shut would raise seal flow; PZR program failing high keeps charging ~constant; 2CV115 lifting would tend to raise seal flow — none drop seal water flow to all 4 RCPs.</span>
+</div>
+
 ## Connections
 
-- Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
-- Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2016 Q6]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2016 Q77]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]]
-- Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]], [[AB.CVC-0001 — Loss of Charging]]
+- Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOPA-1 — Loss of All AC Power]]
+- Related exam questions: [[2014 Q5]], [[2014 Q6]], [[2014 Q30]], [[2014 Q31]], [[2015 Q25]], [[2016 Q6]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2016 Q77]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]], [[2015 Q30]], [[2015 Q31]], [[2015 Q36]], [[2015 Q57]], [[2015 Q79]], [[2014 Q16]], [[2014 Q22]], [[2014 Q25]], [[2014 Q40]]
+- Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2015 JPM Sim-e]], [[2015 JPM Sim-g]], [[2015 JPM IP-j]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

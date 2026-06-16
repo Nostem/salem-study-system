@@ -61,10 +61,25 @@ Entered from AB.TL-0001 (Loss of Main Turbine Lube Oil) after auto-start of ABOP
 AB.LOAD-0001 entered (or AB.RC-0001 power reduction performed) following confirmed 20 gpm RCS leak exceeding TS 3.4.7.2 limits at 100% power. Operations Director directs <span class="hi-exam">30% per hour load reduction to 20%</span> in preparation for taking Unit 2 offline to investigate and repair the RCS leak. RO initiates boration; PO initiates turbine load reduction at the CRS-specified rate. <span class="hi-trap">During the controlled downpower the RCS leak escalates from 20 gpm to 150 gpm — PZR level cannot be maintained &gt;17%; CAS action requires manual reactor trip and SI before reaching FRHS-1 entry conditions.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+Entered from AB.GEN-0001 to lower the Main Generator <span class="hi-exam">Radio Frequency Monitor &lt; 50%</span> (elevated stator temperatures, Point 0901 GEN RADIO FREQ HIGH). RO calculates and commences RCS boration; PO initiates turbine load reduction to the target load at the CRS-specified rate; RO maintains Tavg on program with rods/boration and energizes PZR heaters. During the downpower an MPT Sudden Pressure / FP deluge actuation forces a reactor trip. See [[AB.GEN-0001 — Main Generator Abnormal Stator Conditions]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q42</div>
+After an AB.LOAD-0001 rapid power reduction overshoots (power down to ~7%, Tavg dropped to 545°F), an operator restoring Tavg by continuous manual rod withdrawal will (per FSAR 15.2.2.1) be terminated by the <span class="hi-exam">High Power Reactor Trip (low range), 25% on 2/4 PR NIs — basis DNB protection</span>. <span class="hi-trap">The 20% rod block on 1/2 IR NI is NOT credited in the FSAR and will not act quickly enough to prevent the trip.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #4</div>
+After a 90 gpd SGTL meets AB.SG-0001 Action Level 3 (power must be <span class="hi-exam">&lt;50% within 1 hour</span>), the crew enters AB.LOAD-0001 to perform the rapid down-power. RO calculates the required boron addition; CRS orders a rate that ensures power &lt;50% within the hour; RO <span class="hi-exam">initiates RCS boration</span> and announces expected/actual rod movement. The down-power is interrupted when the affected SG tube ruptures.
+</div>
+
 ## Connections
 
-- Related systems: [[500KV]], [[Main Turbine]], [[Circ Water]]
+- Related systems: [[500KV]], [[Main Turbine]], [[Circ Water]], [[Control Rod Drive]], [[RPS/SSPS]]
 - Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.COND-0001 — Loss of Condenser Vacuum]]
-- Related exam questions: [[2023 Q88]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam questions: [[2023 Q88]], [[2014 Q42]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
+- Related exam: [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

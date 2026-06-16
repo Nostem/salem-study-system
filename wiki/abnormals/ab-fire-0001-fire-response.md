@@ -46,10 +46,15 @@ Relay Room fire: the Relay Room is part of the <span class="hi-exam">Control Roo
 Spurious <span class="hi-exam">OHA A-7 FIRE PROT FIRE</span> (Zone 33 TURB BLDG WEST EL 100) generated 60 s after the loss of 2E 4KV Group Bus electrical fault. PO dispatches an operator to investigate and contacts Fire Protection. NEO and Fire Protection both report <span class="hi-exam">no fire — only a strong acrid smell near the E Group Bus cubicles</span>. The crew continues with EOP-TRIP-1 / EOP-TRIP-2 — the fire alarm is determined to be a downstream symptom of the bus fault, not an actual fire requiring suppression actions.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q17</div>
+Assessing affected Fire Zone(s) on 2RP5 (OHA A-7 FIRE PROT FIRE): the correct action is to <span class="hi-exam">open 2FP147 Fire Protection Containment Isolation when BOTH zone 59 and 74 alarms are received</span> (line normally isolated; pressurized only with both alarms). <span class="hi-trap">Distractor traps: a row "Fire" light can illuminate from a manual fire pull box — indication only, no fire-protection water flow; for a Relay Room fire (outside the CR but on the same AC system) Fire Outside Control Area is NOT selected; Halon supplied to the relay rooms does not indicate that EDG supply ventilation has stopped.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]], [[Fire Protection]], [[EDGs]], [[Pressurizer Level & Press Control]], [[CAV]]
-- Related exam questions: [[2020 Q75]], [[2020 Q83]], [[2022 Q99]], [[2023 Q63]]
+- Related exam questions: [[2015 Q17]], [[2020 Q75]], [[2020 Q83]], [[2022 Q99]], [[2023 Q63]]
 - Related JPMs: [[2022 JPM Sim-h]]
 - Related scenarios: [[2017 Scenario 8]]
-- Related exam: [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2017 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2017 NRC Operating Exam]]

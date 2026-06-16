@@ -696,10 +696,35 @@ LCO 3.3.1.1 action for PZR Level Channel failure: with 2LT-459 (Channel I PZR Le
 LCO 3.3.3.1 (Radiation Monitoring Instrumentation) / Table 3.3-6 analysis: <span class="hi-exam">R12A is the credited monitor for BOTH Table 3.3-6 item 2.a.1.a (Containment Gaseous Activity — Purge & Pressure Vacuum Relief Isolation) AND 2.a.1.b (Containment Gaseous Activity — RCS Leak Detection)</span>. During containment vacuum relief operations, <span class="hi-exam">R41 (2R41A, B, D) can serve as alternate monitor for item 2.a.1.a only</span>. With R12A failed: LCO NOT met → <span class="hi-exam">Action 24 ONLY</span> (R41 satisfies 2.a.1.a, but nothing replaces R12A for 2.a.1.b → Action 24). <span class="hi-trap">Trap: candidates may think both Actions 24 AND 26 are required (forgetting R41 can substitute for 2.a.1.a during vacuum relief), or that LCO is met with R12A failed (it is not).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+ESFAS containment-isolation actuation order tested: <span class="hi-exam">Phase A on SI (by 4 psig containment if not sooner), then Main Steamline Isolation at 15 psig</span>. Feedwater Isolation actuates on SI or SG NR level &gt;67%; Containment Ventilation isolation on SI, RMS alarm, or Phase B.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q89</div>
+IRNI channels: loss of a single IRNI channel is <span class="hi-trap">specifically excluded from LCO 3.0.3</span> (even though minimum operable = 2). <span class="hi-exam">Loss of the second IRNI channel enters TS 3.0.3 — Hot Standby within 6 hours (actions started within 1 hour)</span>. See [[Excore NIs]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q12</div>
+TS Bases 3.3.1.1 generalizes that instrumentation OPERABILITY ensures <span class="hi-exam">(2) the specified coincidence logic and sufficient redundancy is maintained to permit a channel to be out of service... and (3) sufficient system functional capability is available from diverse parameters</span>. This bases supports maintaining power &lt;P-6 when one Source Range NI fails low during a startup: <span class="hi-trap">a single remaining SR channel cannot be relied upon for startup Rx power indication with no diverse channel to verify it against</span>. See [[Excore NIs]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q68</div>
+Per TSAS 3.3.1.1, Table 3.3-6, <span class="hi-exam">only ONE of the two FHB (Fuel Handling Building) area radiation monitors is required to be OPERABLE</span> during fuel handling. <span class="hi-trap">Therefore 2R5 failing low does NOT, by itself, require suspension of fuel transfer in Mode 6 — the redundant monitor remains operable.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q94</div>
+Intermediate Range NI operability per TSAS 3.3.1.1: there is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">ONE inoperable IR NI only — with BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). Supporting procedure facts (S1.OP-IO.ZZ-0003): <span class="hi-exam">at least a one-decade SR/IR overlap is required when raising power (step 5.2.33)</span>; with SR at ~30,000 counts the overlap should already be present, so each IR NI should read ~<span class="hi-exam">1x10-10A</span>; the <span class="hi-exam">SR Hi Flux trip is at 100,000 counts</span>. <span class="hi-trap">Trap: declaring only TSAS 3.3.1.1 entry (the one-channel action) when BOTH channels are inoperable — the correct entry is TS 3.0.3.</span> See [[Incores]], [[TS 3/4.0 — Applicability]].
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]], [[Radiation Monitoring]]
-- Related exam questions: [[2018 Q82]], [[2018 Q89]], [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]]
+- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]], [[Radiation Monitoring]], [[Excore NIs]], [[Incores]]
+- Related exam questions: [[2014 Q12]], [[2014 Q68]], [[2015 Q16]], [[2018 Q82]], [[2018 Q89]], [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]], [[2015 Q27]], [[2015 Q89]], [[2014 Q94]]
 - Related JPMs: [[2016 JPM SRO-A3]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

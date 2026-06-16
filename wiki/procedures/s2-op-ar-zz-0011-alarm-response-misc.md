@@ -51,10 +51,20 @@ AIR FLOW LO alarm with SEQUENCE COMPLETE extinguished: cause is fan discharge pr
 Pages 118-128 — <span class="hi-exam">COMPR 2 TROUBLE alarm response (Loss of Control Air entry path)</span>: ARP Step 3.1 — IF SAC 2 trips, THEN: A. Coordinate (as necessary) with Unit 1; B. Ensure operating OR start at least one SAC IAW SC.OP-SO.SA-0001, Station Air System Operation. ARP Step 3.2 — <span class="hi-exam">IF AT ANY TIME Station Air pressure cannot be maintained ≥100 psig, THEN GO TO S2.OP-AB.CA-0001 (Loss of Control Air)</span>. <span class="hi-trap">Note: The #1 and #3 Compressor Trouble alarms on 2CC1 do NOT have audible or flash capabilities (this procedure page 120) — diagnosis of #1 SAC trip relies on the plant page announcement, not the local annunciator.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q86</div>
+On a SURGE TANK LEVEL HI-LO (2CC1) alarm with rising level: <span class="hi-exam">stop WHUT processing and locally drain the CC Surge Tank to keep level &lt;100%</span> (also directed by AB.CC-0001). See [[CCW]], [[AB.CC-0001 — Loss of Component Cooling Water]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-g</div>
+2CC1 alarm response for a CCW pump trip: on <span class="hi-exam">21 (22) CC HDR PRESSURE LO</span>, the automatic action is to start the standby CC pump; ENSURE the CC Pump is RUNNING or START the standby CC Pump. <span class="hi-exam">IF the low pressure alarm remains, THEN GO TO S2.OP-AB.CC-0001 (Component Cooling system Abnormality)</span>. In this JPM the standby (23) CCW pump fails to auto-start and cannot be manually started, leading to a total loss of CCW. See [[CCW]], [[AB.CC-0001 — Loss of Component Cooling Water]].
+</div>
+
 ## Connections
 
 - Related systems: [[RCPs]], [[CCW]], [[SECs]], [[Control Rod Drive]], [[Control Air]]
 - Related procedures: [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-SO.CBV-0001 — Containment Ventilation Operation]], [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.SA-0001 — Station Air System Operation]]
-- Related exam questions: [[2016 Q35]], [[2020 Q28]], [[2020 Q35]], [[2023 Q95]]
-- Related JPMs: [[2016 JPM Sim-h]], [[2019 JPM Sim-a]], [[2022 JPM Sim-d]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related exam questions: [[2016 Q35]], [[2020 Q28]], [[2020 Q35]], [[2023 Q95]], [[2015 Q86]], [[2014 Q19]]
+- Related JPMs: [[2016 JPM Sim-h]], [[2019 JPM Sim-a]], [[2022 JPM Sim-d]], [[2015 JPM Sim-g]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

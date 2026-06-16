@@ -39,8 +39,20 @@ Provides instructions for releasing radioactive waste gas from 21 Waste Gas Deca
 Waste gas release sequence: the <span class="hi-exam">latch-and-set (step 5.2.11.D) must be performed before the actual release</span> — set Flow Bias to <0% before opening, then bring to 100% to verify full stroke, then back to <0% and close. For the release: max flow rate is <span class="hi-exam">32 SCFM</span> (Flow Bias <=100%). Terminate at <span class="hi-exam">10 psig</span> tank pressure by reducing Flow Bias to <0%, closing 2WG41-SWT, and closing 21WG34.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 IP-k</div>
+Aligning a Gas Decay Tank for HOLDUP (in preparation for sampling and release): perform the <span class="hi-exam">Attachment 1, Section 1.0 valve lineup</span> for the tank being placed in holdup and hang a <span class="hi-exam">Red Blocking Tag on 21WG31 (GDT INLET VALVE)</span> in the CLOSED position. The CRS Tagging Request specifies the tag is released only IAW this procedure, isolating the tank so it receives no additional waste gas while it is sampled and released.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q82</div>
+<span class="hi-exam">Auxiliary Building pressure turning positive requires terminating the gas decay tank release</span> (P&amp;L 3.9 / TS 3.7.7 action e — restore negative Aux Building pressure or suspend all radioactive gaseous releases via the Aux Building immediately), because a positive Aux Building could result in an unmonitored release. <span class="hi-trap">Discriminators: the WG38 (Gas Decay Tank Vent Pressure Control Valve) keeps downstream pressure &lt;8.0 psig, which is what maintains the release rate &lt;32 scfm (so 7.5 psig is acceptable, NOT a termination condition); aligning another GDT to holdup isolates that tank from the release path; a tank-to-tank waste gas transfer would be an unapproved release but for a different reason.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Waste Gas]]
-- Related JPMs: [[2023 JPM IP-k]]
-- Related exam: [[2023 NRC Operating Exam]]
+- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related exam questions: [[2014 Q82]]
+- Related JPMs: [[2023 JPM IP-k]], [[2015 JPM IP-k]]
+- Related exam: [[2023 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

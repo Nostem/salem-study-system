@@ -42,6 +42,11 @@ Transports steam from the four steam generators to the turbine-generator and oth
 MSSVs will start to open when main steam line pressure FIRST exceeds <span class="hi-exam"><span class="val-trip">1070 psig</span></span> (the lowest lift setting, xMS15). <span class="hi-trap">Trap: 1100 psig (xMS14) is the second lowest — the lowest is 1070 psig.</span> LCO 3.7.1.1 purpose: limit secondary system pressure to within <span class="hi-exam">110% of design pressure AND protect against overpressurization of the Reactor Coolant Pressure boundary</span>. <span class="hi-trap">It is NOT only for secondary overpressure protection — the MSSVs also protect the RCS pressure boundary.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q26</div>
+Each SG has <span class="hi-exam">five</span> safety valves with lift setpoints of <span class="hi-exam"><span class="val-trip">1070, 1100, 1110, 1120, 1125 psig</span></span> (confirms the xMS11–xMS15 table above). Count valves whose setpoint is at or below the SG pressure: at <span class="hi-exam">1115 psig</span>, the 1070, 1100, and 1110 psig valves are open = <span class="hi-exam">3 safety valves</span>. <span class="hi-trap">Trap: the 1120 and 1125 psig valves are above 1115 psig and stay shut. Only the affected SG (the one at 1115 psig) is considered — a MSLI isolates the other SGs.</span>
+</div>
+
 ## Atmospheric Relief Valves (MS10s)
 
 - 4 valves total (one per SG: 21MS10 through 24MS10)
@@ -112,17 +117,57 @@ Steam line rupture upstream of 24MS167 with reactor tripped, MSLI performed, and
 Small (0.1%) steam leak from a single SG with reactor at <span class="hi-exam">1×10⁻⁸ Amps (exactly critical, below POAH)</span>: positive reactivity from the cooldown causes <span class="hi-exam">Rx power to rise until it stabilizes after reaching the Point Of Adding Heat (POAH)</span>. <span class="hi-exam">Below POAH there is NO temperature-coefficient feedback</span> — power simply rises with the steam-induced cooldown. Once power reaches POAH, the negative MTC adds enough negative reactivity to <span class="hi-exam">offset the positive reactivity from the steam leak</span> and power stabilizes. <span class="hi-trap">No reactor trip occurs — both OT/DT and Power Range high-flux (low setpoint) trips are plausible distractors but neither actuates because power stabilizes well below their setpoints.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q12</div>
+Initial Tavg response (before automatic protective actions) — large steam line break vs large feed line break: a <span class="hi-exam">steam line break draws MORE steam from the SG → Tcold lowers → Tavg LOWERS</span>; a <span class="hi-exam">feed line break sends LESS cold feed into the SG → Tcold rises → Tavg RISES</span>. <span class="hi-trap">A main feedwater line break depressurizes the SG similarly to a steam line break, so diverse/alternate indications are needed to discern the actual SG condition.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #3</div>
 21 SG steam leak inside containment escalates to a rupture on a manual reactor trip. <span class="hi-exam">Both auto MSLI signals (RP0279A/B) and manual MSLI fail to close any of the four MSIVs</span> (21-24MS167 fail open). MSLI failure leaves the steam leak unisolated → CRS directs manual SI per AB.STM CAS / TRIP-1 Step 11. Local operators are dispatched to <span class="hi-exam">place valves from Table D in safeguards position</span> (locally close MSIVs). All SGs depressurize uncontrollably → EOP-LOSC-1 → EOP-LOSC-2. Local operators successfully shut <span class="hi-exam">23MS167</span> later in the event; pressure rise in 23 SG drives transition back to LOSC-1.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+During a LOCA, <span class="hi-exam">Main Steamline Isolation occurs at 15 psig</span> containment pressure. It is the only automatic action that newly actuates as containment pressure rises from 12 to 18 psig — Phase A, Feedwater Isolation, and Containment Ventilation isolation already occurred on the earlier SI signal.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q51</div>
+Per AB.STM-0001 (Excessive Steam Flow), uncontrollably rising steam flow with no apparent cause drives reactor power up at <span class="hi-exam">the same rate as the steam flow</span>; the Continuous Action Summary (Step 1.1) directs the crew to <span class="hi-exam">trip the reactor, confirm the trip, then initiate MSLI</span> to determine if SI is required. See [[AB.STM-0001 — Excessive Steam Flow]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-h</div>
+The <span class="hi-exam">MS10 atmospheric steam dump valves</span> provide the heat removal path during a forced flow / natural circulation cooldown when RHR is lost (AB.RHR-0001 Attachment 10): with SGs fed to wide-range level &gt;77%, <span class="hi-exam">operate the appropriate MS10s to maintain Core Exit Thermocouples stable or lowering</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q51</div>
+All Main Steam Dumps failing full open at 20% power generates an automatic Main Steamline Isolation: dumps pass ~52% steam flow vs the <span class="hi-exam">Hi Steam Flow setpoint of 40% in the 0–20% power band</span>, coincident with <span class="hi-exam">Lo Tavg (&lt;<span class="val-trip">543°F</span>) or Lo Steam Pressure (&lt;<span class="val-trip">600 psig</span>)</span> as Tavg rapidly drops — the MSI signal is generated before the dumps turn off at 543°F.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q52</div>
+With steam dumps in MS Pressure control (AUTO) during a startup at 18% with the generator rolling unloaded, <span class="hi-exam">raising the MS Dump Pressure setpoint 5 psig causes the dumps to SHUT</span> to raise header pressure to setpoint → lower steam flow, higher Tavg → <span class="hi-exam">Rx power lowers (&lt;18%)</span>. Rods stay in MANUAL (auto rod control not enabled until &gt;P-2 / 15% turbine power).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q55</div>
+A spurious MSLI closes the MSIVs AND the <span class="hi-exam">11-14MS18 (MS STOP BYP) valves</span>, removing the main-steam supply to the operating SGFP (which had been placed on main steam prior to 5% power). The SGFP coasts down — it does not trip.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q65</div>
+A <span class="hi-exam">Main Steamline rupture in containment with failure of MSLI</span> causes ALL SGs to blow down and containment pressure to rise above <span class="val-trip">15 psig</span>, generating the Phase B containment isolation that isolates ALL containment penetrations not supporting ECCS. <span class="hi-trap">Phase A isolation occurs at <span class="val-trip">4 psig</span> (non-essential penetrations); Phase B isolates the remaining non-ECCS penetrations.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Steam Dumps]]
+- Related systems: [[Steam Dumps]], [[Feed & Condensate]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[AB.STM-0001 — Excessive Steam Flow]], [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
-- Related exam questions: [[2016 Q16]], [[2016 Q24]], [[2016 Q49]], [[2016 Q50]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]]
-- Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2015 Q12]], [[2015 Q25]], [[2015 Q26]], [[2016 Q16]], [[2016 Q24]], [[2016 Q49]], [[2016 Q50]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]], [[2015 Q27]], [[2015 Q51]], [[2014 Q15]], [[2014 Q22]], [[2014 Q51]], [[2014 Q52]], [[2014 Q55]], [[2014 Q65]], [[2014 Q91]]
+- Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]], [[2015 JPM Sim-h]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

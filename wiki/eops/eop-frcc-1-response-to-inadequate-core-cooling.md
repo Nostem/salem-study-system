@@ -21,6 +21,13 @@ Provides operator actions to restore core cooling when core exit thermocouples (
 - Depressurize intact SGs using steam dumps or MS10s at **maximum rate** while attempting to avoid a Main Steam Isolation
 - Purpose: reduce RCS pressure to allow accumulator injection
 
+### Secondary Heat Sink Verification PRIOR to SG Depressurization for Accumulator Injection (Step 13)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q18</div>
+Before initiating the SG Depressurization to inject the ECCS accumulators, FRCC-1 (Step 13) verifies an adequate <span class="hi-exam">secondary heat sink</span>. The required criterion is <span class="hi-exam">SG NR level in at least one SG &gt; 9% OR total AFW flow &gt; <span class="val-normal">22E4 lbm/hr</span></span> (the two conditions are an <span class="hi-trap">OR</span>, not AND). With containment pressure at 2 psig (below the <span class="hi-exam">4 psig adverse-containment threshold</span>), the normal <span class="hi-exam">9%</span> NR level value applies — the <span class="hi-trap">15% adverse value is NOT used unless containment pressure is &ge; 4 psig</span>. If SG NR level is &gt; 9% in at least one SG, the step asking whether AFW flow &gt; 22E4 lbm/hr is bypassed; if SG NR level is &lt; 9%, then 22E4 lbm/hr AFW flow satisfies the heat-sink criterion.
+</div>
+
 ### RCP Start for Temporary Core Cooling (Step 18)
 - If CETs remain above 1200 degrees F, determine how many RCPs can be started
 - SG NR level requirement depends on containment conditions:
@@ -59,8 +66,8 @@ At <span class="hi-exam">Step 25</span>, RCPs are started if CETs are still <spa
 
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RCPs]], [[Containment]], [[RVLIS]], [[ECCS]], [[Service Water]], [[CCW]], [[Pressurizer]], [[Incores]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCPs]], [[Containment]], [[RVLIS]], [[ECCS]], [[AFW]], [[Service Water]], [[CCW]], [[Pressurizer]], [[Incores]]
 - Related concepts: [[Containment]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2016 Q21]], [[2019 Q72]], [[2020 Q24]], [[2022 Q24]], [[2023 Q84]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2015 Q18]], [[2016 Q21]], [[2019 Q72]], [[2020 Q24]], [[2022 Q24]], [[2023 Q84]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]

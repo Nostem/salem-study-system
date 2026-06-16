@@ -59,6 +59,11 @@ Rising condenser backpressure reduces LP turbine efficiency, confirmed by <span 
 When one unit trips, reactive load (MVARs) is shared among remaining generators on the grid — the operating unit picks up <span class="hi-exam">LESS than the full amount</span> (grid absorbs the rest). The voltage regulator senses terminal voltage drop from increased MVAR loading and <span class="hi-exam">increases generator field current to restore terminal voltage to setpoint</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q20</div>
+The allowable Main Generator operating point (MWe vs. MVAR) is bounded by the <span class="hi-exam">generator capability curve</span> in A-5-500-EEE-1686 (Artificial Island Operating Guide). The <span class="hi-exam">Power System Stabilizer (PSS)</span> status affects the allowable excitation limit: with the <span class="hi-exam">PSS out of service on both units, the more restrictive red dashed line</span> applies (a PSS in service permits the higher solid-line limit). Curve selection also depends on the grid lineup (Unit 1 offline, Hope Creek 5-6 breaker out of service → curve 2S2H-5-6). <span class="hi-trap">Main Generator gas (H2) pressure of 75 psig does NOT itself set the MVAR limit here — the limiting factor is the capability curve / excitation limit, read with the PSS-out (red dashed) line.</span> See [[AB.GRID-0001 — Grid Disturbance]] and [[500KV]].
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.3 — Instrumentation]]** — Turbine trip reactor trip interlock
@@ -103,11 +108,31 @@ Automatic main turbine trip on reactor trip is generated from the <span class="h
 Main Generator trip from a ground fault at <span class="hi-exam">46% power</span> causes an automatic Main Turbine trip via Generator Protection. Because <span class="hi-exam">46% &lt; P-9 (≈49% Rx power)</span>, the <span class="hi-exam">Reactor Trip on Turbine Trip is BLOCKED</span> — no Rx trip occurs. With no operator action, rods insert in AUTO and steam dumps open in Load Reject (Tavg) mode; Tave stabilizes at ~<span class="val-normal">551°F</span> (Load Reject Tref + 5°F dead band; MT Steamline inlet pressure = 0 with turbine tripped). <span class="hi-trap">Do NOT enter EOP-TRIP-1/2/3 — there is no reactor trip below P-9.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q93</div>
+On a loss of circulators (e.g., 23 SPT lost), <span class="hi-exam">AB.CW-0001 directs manually establishing Low Pressure Turbine Hood Spray</span> — normally secured above 15% power, it is manually placed in service to protect the LP turbine during degraded condenser cooling. See [[Circ Water]], [[AB.CW-0001 — Circulating Water Malfunction]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-d</div>
+Main turbine reheat stop / intercept valve stroke testing per S2.OP-PT.TRB-0003 Section 5.3: each East LP valve pair (RS5/RS6) is closed for ~10 seconds then reopened, with positions verified <span class="hi-exam">LOCALLY</span> (EHC console indication alone fails the test per FSAR 10.2.2.6 periodicity). If a <span class="hi-exam">Reheat Stop Valve or Intercept Valve fails to reopen within 5 minutes while above 80% load</span>, Turbine-Generator load must be <span class="hi-exam">reduced to less than 80% at 10%/hr</span>. In this JPM 22RS5 (East Reheat Stop) fails to reopen, requiring the operator to initiate the 10%/hr load reduction within 5 minutes. See [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+<span class="hi-exam">Aux Annunciator Point 0901, GEN RADIO FREQ HIGH</span> annunciates with elevated stator temperatures (3 sequential stator T/Cs exceed assigned limits by &lt; 10°F). Crew enters AB.GEN-0001 and performs a load reduction to lower the RF Monitor &lt; 50%. Later a Main Power Transformer Phase 1 Sudden Pressure (CRT point 529) / FP deluge actuation occurs at MPT Zone 46; the CRS determines the <span class="hi-exam">Main Generator must be removed from service</span> and directs a reactor trip with power &gt; P-9. See [[AB.GEN-0001 — Main Generator Abnormal Stator Conditions]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q53</div>
+Following a Main Turbine trip from 90% power (which initiates a Rx trip &gt;P-9), once new steady state is reached <span class="hi-exam">Main Condenser Hotwell levels rise</span> — the BF19s and 40's shut on FW interlock so there is no "goes out" from the hotwells, but they keep receiving "goes in" from the Steam Dump system, while the SGs are fed from the AFW pumps. <span class="hi-trap">Turbine Aux Cooling (TAC) D/P and supply temperature are held at setpoint by automatic valves and do not change; TGA SW header pressure is regulated by ST1 to a downstream <span class="val-normal">80 psig</span> and stays stable.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
-- Related procedures: [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]], [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]]
-- Related exam questions: [[2016 Q3]], [[2016 Q50]], [[2016 Q67]], [[2018 Q91]], [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]]
-- Related JPMs: [[2018 JPM Sim-e]], [[2019 JPM Sim-e]]
-- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related procedures: [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]], [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]], [[AB.GRID-0001 — Grid Disturbance]]
+- Related exam questions: [[2015 Q20]], [[2016 Q3]], [[2016 Q50]], [[2016 Q67]], [[2018 Q91]], [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]], [[2015 Q93]], [[2014 Q21]], [[2014 Q53]]
+- Related JPMs: [[2018 JPM Sim-e]], [[2019 JPM Sim-e]], [[2015 JPM Sim-d]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 2]]
+- Related exam: [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]]

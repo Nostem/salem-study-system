@@ -40,9 +40,14 @@ Before de-tensioning the first Rx Head Stud (entering MODE 6), IOP-7 Attachment 
 • <span class="hi-trap">Continuous communications between CR and refuel floor — required 1 hour prior to CORE ALTERATIONS, not de-tensioning.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q95</div>
+Before Rx Vessel Head detensioning for a refueling outage, S2.OP-IO.ZZ-0007 requires <span class="hi-exam">the RCS drained to &lt;104' elevation and Unit CRS AND SM approval</span>. The 168-hour subcriticality and control-room↔refuel-floor communication requirements apply to CORE ALTERATIONS (not head detensioning). See [[Refueling]].
+</div>
+
 ## Connections
 
 - Related systems: [[Refueling]], [[Control Rod Drive]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related exam questions: [[2022 Q94]], [[2020 Q94]]
-- Related exam: [[2022 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2022 Q94]], [[2020 Q94]], [[2015 Q95]]
+- Related exam: [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]

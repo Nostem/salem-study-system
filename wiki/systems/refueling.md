@@ -56,10 +56,30 @@ Canal gate valve mechanical interlock: the valve can ONLY be <span class="hi-exa
 Per SO.CAV P&L 3.6.3 and TS Bases 3/4.7.6: <span class="hi-exam">when CAV is aligned to FIRE OUTSIDE CONTROL AREA (Recirculation Mode), Core Alterations and movement of irradiated fuel are NOT permitted</span> — pressing the Fire Outside Control Room (FOCR) pushbutton on Unit 2 CAV requires immediate suspension of fuel movement. <span class="hi-trap">Conditions that do NOT require suspension: (1) Rx Cavity boron of <span class="val-normal">2499 ppm</span> is OK because the COLR limit is <span class="hi-exam">2139 ppm</span>; (2) BOTH 100' elevation containment airlock doors open is OK — they are only required to be CAPABLE of being shut (S2.OP-ST.CAN-0007 p8); (3) Containment Radiation Monitor 2R12A failure causing CVI is OK because Containment Radiation monitors are NOT required to be operable for Mode 6 / Fuel Movement / Core Alts per Tech Specs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q29</div>
+Filling the refueling cavity from the RWST (S2.OP-SO.SF-0003): the cavity at <span class="hi-exam">110' holds ~112000 gallons</span>; the RWST normal pre-refuel minimum is <span class="hi-exam">40.5' (364500 gal)</span>, draining to ~253000 gal ≈ 27.5'. See [[S2.OP-SO.SF-0003 — Filling the Refueling Cavity]], [[S2.OP-SO.SF-0004 — Draining the Refueling Cavity]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q67</div>
+In Mode 6, <span class="hi-exam">commencing Core Alterations requires 2 Source Range NIs operable (LCO 3.9.2)</span> — one inoperable SR NI prevents core alterations. (Other LCOs are less restrictive: only 80 hours subcriticality required Oct 15–May 15 per 3.9.3.a; one airlock door per airlock need only be capable of being closed per 3.9.4.b; only one RHR loop need be in service per 3.9.8.1.) See [[Excore NIs]], [[TS 3/4.9 — Refueling Operations]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q95</div>
+Prerequisites BEFORE Rx Vessel Head detensioning (S2.OP-IO.ZZ-0007): <span class="hi-exam">the RCS drained to &lt;104' elevation, and Unit CRS AND SM approval</span>. <span class="hi-trap">168-hour subcriticality (Oct 15–May 15) and direct/continuous control-room↔refuel-floor communication are CORE ALTERATION requirements (TSAS 3.9.3) — detensioning the head is NOT a core alteration.</span> See [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[TS 3/4.9 — Refueling Operations]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q96</div>
+During fuel movement into the reactor, <span class="hi-exam">a loss of Control Air to containment precludes core alterations — the manipulator crane is air-powered for gripping</span>. SRNIs must both be operable (VISUAL, with ONE AUDIBLE); only one RHR loop need be in operation in Mode 6. See [[Control Air]], [[S2.OP-SO.SF-0009 — Refueling Operations]].
+</div>
+
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[FHV]], [[Radiation Monitoring]]
-- Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.FUEL-0002 — Loss of Refueling Cavity or SFP Level]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]], [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]]
+- Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.FUEL-0002 — Loss of Refueling Cavity or SFP Level]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]], [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.SF-0003 — Filling the Refueling Cavity]], [[S2.OP-SO.SF-0004 — Draining the Refueling Cavity]], [[S2.OP-SO.SF-0009 — Refueling Operations]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]], [[TS 3/4.7 — Plant Systems]]
-- Related exam questions: [[2016 Q47]], [[2016 Q68]], [[2016 Q88]], [[2018 Q34]], [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2016 Q47]], [[2016 Q68]], [[2016 Q88]], [[2018 Q34]], [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]], [[2015 Q29]], [[2015 Q67]], [[2015 Q95]], [[2015 Q96]], [[2014 Q80]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

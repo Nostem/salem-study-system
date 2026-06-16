@@ -56,10 +56,20 @@ CAS reactor trip criteria: if the turbine load reduction rate needs to increase 
 Loss of Main Condenser vacuum at ~89% power due to missing tube plug in 21A waterbox during cleaning (Event 4). Rising condenser backpressure — crew starts <span class="hi-exam">all available vacuum pumps</span> and manually opens AR25 valves. Vacuum stabilizes then continues to degrade. CRS enters AB.LOAD-0001 and directs <span class="hi-exam">load reduction</span> to stabilize backpressure. Field report of missing tube plug — backpressure recovers after plug reinstalled.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+24 Vacuum pump trips and its discharge valve <span class="hi-exam">24AR25 fails to auto close</span>; condenser backpressure slowly rises. CRS enters AB.COND-0001, directs Attachment 1 CAS, and dispatches operators for Attachment 2 local vacuum checks (only 24AR25 found open). With 24AR25 unable to be shut and the vacuum problem confirmed not Circ Water related, CRS directs starting all available vacuum pumps; backpressure cannot be stabilized. CRS directs a <span class="hi-exam">power reduction (may enter AB.LOAD-0001)</span> to attempt to stabilize backpressure, monitoring Attachment 4 Condenser Backpressure Limits. PO removes SGBD from service at 120°F and bypasses the Polisher at 140°F.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+During the weekly condenser vacuum pump swap, the air injection suction isolation valve <span class="hi-exam">AR25 on the pump being secured fails open</span>, causing condenser vacuum to degrade. The crew enters AB.COND-0001, attempts to re-start the affected pump (it will not start), dispatches field personnel to <span class="hi-exam">immediately shut the affected AR25</span>, and starts the remaining vacuum pump — which restores vacuum. Reinforces that the recovery for a stuck-open AR25 is to isolate AR25 and run another vacuum pump.
+</div>
+
 ## Connections
 
 - Related systems: [[Condenser Air Removal]], [[Main Turbine]]
 - Related procedures: [[AB.TRB-0001 — Main Turbine Abnormality]], [[AB.LOAD-0001 — Rapid Load Reduction]]
 - Related exam questions: [[2019 Q70]], [[2019 Q92]]
-- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 3]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]

@@ -273,8 +273,24 @@ LCO 3.0.3 application — <span class="hi-exam">only ONE PZR Code Safety can be 
 TS 3.0.3 does NOT apply when the affected LCO has its own ACTION for the inoperable condition. With ECCS subsystem inoperable in MODE 4 (T-cold &lt; 312°F), <span class="hi-exam">LCO 3.5.3 Action a applies: restore at least one ECCS subsystem to operable status within 1 hour or be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap: the LCO 3.0.3 action ("within 1 hour, initiate action to place the unit in Cold Shutdown within the next 24 hours") is NOT applied here because LCO 3.5.3 has its own specific ACTION.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q98</div>
+A Tech Spec 3.0.3 required shutdown is performed at <span class="hi-exam">20%/hr</span> (an example LCO 3.0.3 shutdown rate). Because this is a power change &gt;5%/hr, any concurrent containment entry requires Radiation Protection Supervisor approval per the containment entry procedures — see [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]] and [[RP-SA-102 — Containment Entries at Power]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q93</div>
+The <span class="hi-exam">LCO 3.0.3 bases</span> is "to ensure a <span class="hi-exam">timely unit shutdown is performed when plant operation cannot be maintained within the limits of safe operation</span> defined by the LCO and its action requirements." <span class="hi-trap">Trap: a question may pair a correct system-specific TS (e.g., TS 3.8.1.1.b.2 for an EDG fuel oil transfer pump) with this 3.0.3 bases — that pairing is WRONG. The electric power sources (EDG) bases is "ensures sufficient power for safe shutdown and for mitigation and control of accident conditions," NOT the 3.0.3 timely-shutdown bases.</span> See [[TS 3/4.8 — Electrical]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q94</div>
+TS 3.0.3 is the entry point when an LCO has <span class="hi-exam">no ACTION for the as-found inoperable condition</span>. There is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">only ONE inoperable Intermediate Range NI</span>; with <span class="hi-exam">BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). See [[TS 3/4.3 — Instrumentation]] and [[Incores]].
+</div>
+
 ## Connections
 
-- Related procedures: [[OP-AA-108-116 — Protected Equipment Program]]
-- Related exam questions: [[2016 Q91]], [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q88]], [[2018 Q96]], [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related systems: [[Diesel Generators]], [[Incores]]
+- Related procedures: [[OP-AA-108-116 — Protected Equipment Program]], [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]], [[RP-SA-102 — Containment Entries at Power]]
+- Related exam questions: [[2016 Q91]], [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q88]], [[2018 Q96]], [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]], [[2014 Q98]], [[2014 Q93]], [[2014 Q94]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2014 NRC Written Exam]]

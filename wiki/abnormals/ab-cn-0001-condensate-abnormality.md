@@ -95,11 +95,21 @@ After 21 SGFP trip at 100% MOL with no operator action and no Rx trip: the <span
 21 Condensate pump trip at 84% power with all CPs in service, NO HDPs running, polisher in service: <span class="hi-exam">Hotwell (21A Condenser) level RISES</span> with the cond pump O/S because condensing is still occurring with the pump not running. Per AB.CN-0001 Att 2 with 2 CPs running and no HDP, <span class="hi-exam">power reduction to <span class="val-alarm">65% or less</span> is required</span>. The <span class="hi-exam">21-23 CN108s (Polisher Bypass Valves) do NOT auto-open on low suction pressure — they are directed to be opened</span> when SGFP suction pressure lowers &lt;<span class="val-alarm">320 psig</span>, which it WILL based on initial power level and pump configuration. <span class="hi-trap">2CN47 (23/24/25 Heater Strings Bypass) only auto-opens on a SGFP trip, NOT on a Cond pump trip; in AB.CN, the CN47 is directed to open AFTER the CN108s, the opening of which is expected to restore suction pressure above the point that would require CN47 opening. The 30%-or-less power reduction in distractor B/D is wrong — 65% is the AB.CN-0001 Att 2 limit for this configuration.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q2</div>
+A SGFP trip with 22 SG NR level lowering through 16% prompts the CRS to <span class="hi-exam">direct a manual reactor trip IAW AB.CN-0001</span>. If the manual trip order and execution take long enough for SG NR level to reach the <span class="val-trip">14% Lo-Lo auto trip setpoint</span>, both a manual and an auto trip signal may be generated — requiring SER review (Window F) to establish first-out and whether an ATWT occurred.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q54</div>
+With all Condensate and Heater Drain Tank pumps in service at 85% power and the polisher in service, an 11 Condensate Pump trip causes <span class="hi-exam">SGFP suction pressure to lower</span> from the loss of condensate flow. <span class="hi-trap">The 11-13CN108 Polisher Bypass valves open on a SGFP trip — NOT on a condensate pump trip. The 1CN47 (13/14/15 Heater Strings Bypass) auto-opens at <span class="val-alarm">265 psig</span>, which is not reached. Per Q=m▲T, the reduced feed flow would cause feed temperature entering the SGs to RISE initially, not lower.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]], [[AFW]]
 - Related procedures: [[HU-AA-101 — Human Performance Tools and Verification Practices]]
-- Related exam questions: [[2016 Q17]], [[2016 Q89]], [[2018 Q58]], [[2018 Q78]], [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
+- Related exam questions: [[2014 Q2]], [[2014 Q54]], [[2016 Q17]], [[2016 Q89]], [[2018 Q58]], [[2018 Q78]], [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]]
 - Related JPMs: [[2022 JPM Sim-e]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]]

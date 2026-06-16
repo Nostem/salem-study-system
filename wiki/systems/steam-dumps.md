@@ -77,11 +77,36 @@ BYPASS TAVG pushbuttons for post-LOCA cooldown: Train A and Train B BYPASS TAVG 
 P-12 vs FW Interlock — what prevents over-cooling on an uncomplicated Rx trip from 100% power: <span class="hi-exam">P-12 is 3/4 RCS Tavgs &lt;<span class="val-alarm">543°F</span> and shuts the Steam Dump valves</span>. On an uncomplicated Rx trip, <span class="hi-exam">steam dumps modulate to control Tavg at ~547°F</span>, so RCS Tavg does NOT reach 543°F and P-12 does NOT actuate. The actual over-cooling protection comes from the <span class="hi-exam">Feedwater Interlock (auctioneered hi Tave &lt;554°F + reactor trip)</span>, which closes the BF19s and BF40 Feed Reg Valves to terminate feedwater.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-f</div>
+EOP-TRIP-2 Step 19 Steam Dump Mode Shift (Condenser Steam Dumps available): <span class="hi-exam">place Steam Dumps in Manual, align the Steam Dump Valve demand "Press %" and "Tavg %", then select "MS Pressure Control", then return to Auto</span> — leaving the dumps in MS Pressure Control - Auto. Availability is based on circulators in service and condenser vacuum established.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q52</div>
+In MS Pressure control (AUTO), <span class="hi-exam">raising the MS Dump Pressure setpoint causes the steam dumps to SHUT</span> to raise header pressure to the new setpoint. During an 18% startup (generator rolling unloaded), this lowers steam flow / raises Tavg → <span class="hi-exam">Rx power lowers to &lt;18%</span>. Rods stay in MANUAL (no auto rod control below P-2 / 15% turbine power).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q51</div>
+Steam dumps failing FULL OPEN at 20% power pass ~52% steam flow, exceeding the <span class="hi-exam">Hi Steam Flow setpoint of 40% (0–20% power band)</span>; with coincident Lo Tavg (&lt;<span class="val-trip">543°F</span>) or Lo Steam Pressure (&lt;<span class="val-trip">600 psig</span>), an automatic Main Steamline Isolation signal is generated before the dumps turn off at 543°F.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q91</div>
+A <span class="hi-exam">23TB40 turbine bypass valve failing 50% open during a 6% startup</span> (steam dumps in MS Pressure control - Manual) dumps excess steam and <span class="hi-exam">slowly cools the RCS — auctioneered high RCS Tavg drops below 541&deg;F</span>. This is the Tech Spec trigger: TSAS 3.1.1.4 requires Tavg ≥ 541&deg;F in Modes 1/2, so the crew must <span class="hi-exam">restore Tavg ≥541&deg;F within 15 minutes or be in Hot Standby within the next 15 minutes</span> (open the RTBs). See [[TS 3/4.1.1 — Boration Control]]. <span class="hi-trap">PZR pressure (1984 psig and lowering) is a distractor — the controlling Tech Spec is minimum temperature for criticality, not a PZR-pressure LCO.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+A steam dump failure drives <span class="hi-exam">21–23 TB20 steam dumps fully open with no ability to shut or turn them off</span>. The uncontrolled steam dumping forces the crew to enter AB.STM-0001 and, per its CAS, <span class="hi-exam">trip the reactor and initiate an MSLI</span> to isolate the excessive steam flow. Demonstrates that an open, uncontrollable steam dump path is an excessive-steam-flow event requiring reactor trip and steamline isolation.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[RCS]], [[115V AC]], [[Feed & Condensate]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exam questions: [[2016 Q50]], [[2016 Q52]], [[2018 Q35]], [[2018 Q70]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]]
-- Related JPMs: [[2023 JPM Sim-e]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2016 Q50]], [[2016 Q52]], [[2018 Q35]], [[2018 Q70]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]], [[2014 Q51]], [[2014 Q52]], [[2014 Q91]]
+- Related JPMs: [[2023 JPM Sim-e]], [[2015 JPM Sim-f]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 3]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]

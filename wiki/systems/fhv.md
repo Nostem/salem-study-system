@@ -47,11 +47,16 @@ The <span class="hi-exam">FHB Supply Fan Inlet Damper is interlocked to open whe
 SRO must recognize that <span class="hi-exam">FHB Truck Bay Door is required to be CLOSED during irradiated fuel movement</span> (per S2.OP-IO.ZZ-0010 page 19). Opening the Truck Bay Door for new fuel receipt while irradiated fuel movement is in progress would breach the FHB ventilation boundary that the dose analysis credits — new fuel deliveries must wait until fuel movement terminates.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q73</div>
+On a <span class="hi-exam">2R9 (New Fuel Storage) Area Radiation Monitor High Radiation Alarm, FHB ventilation realigns through the charcoal filters and both FHB Exhaust fans start</span>. See [[Radiation Monitoring]].
+</div>
+
 ## Connections
 
 - Related systems: [[Spent Fuel Pool]], [[Radiation Monitoring]], [[Control Air]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.FUEL-0001 — Fuel Handling Incident]]
-- Related exam questions: [[2016 Q80]], [[2016 Q88]], [[2019 Q33]], [[2019 Q36]]
+- Related exam questions: [[2016 Q80]], [[2016 Q88]], [[2019 Q33]], [[2019 Q36]], [[2015 Q73]]
 - Related JPMs: [[2016 JPM SRO-A1-2]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2015 NRC Written Exam]]

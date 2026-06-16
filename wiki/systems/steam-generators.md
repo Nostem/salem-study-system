@@ -13,6 +13,11 @@ aliases:
 
 The steam generators transfer heat from the reactor coolant (primary side) to the feedwater (secondary side) to produce steam for the turbine-generator. They are vertical shell and U-tube evaporators with integral moisture separating equipment. (UFSAR 5.1, 5.5.2)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q12</div>
+Initial Tavg response (before automatic protective actions) for breaks on the SG side: a <span class="hi-exam">steam line break draws MORE steam from the SG → Tcold lowers → Tavg LOWERS</span>. A <span class="hi-exam">feed line break sends LESS cold feed into the SG → Tcold rises → Tavg RISES</span>. <span class="hi-trap">A main feedwater line break depressurizes the SG similar to a steam line break, so the operator must use diverse/alternate indications to discern what is actually happening to the SG.</span>
+</div>
+
 ## Key Design Parameters — Unit 1 (Model F)
 
 | Parameter | Value | Source |
@@ -79,6 +84,11 @@ The steam generators transfer heat from the reactor coolant (primary side) to th
 R19 SGBD radiation monitor WARNING setpoint — <span class="hi-exam">unit difference</span>: <span class="hi-exam">Unit 1 WARNING causes NO automatic actuations</span>. <span class="hi-exam">Unit 2 WARNING automatically closes ALL GB10s, GB185s, and 2GB50</span>. At the ALARM setpoint: Unit 1 closes ALL GB4s, GB8s, GB10s, GB185s, and 1GB50; Unit 2 isolates blowdown from the affected SGs by closing the associated GB4. <span class="hi-trap">Do not confuse WARNING actions (unit-specific, limited) with ALARM actions (more extensive isolation on both units).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q10</div>
+The <span class="hi-exam">R19 SGBD radiation monitors are NOT accurate immediately following a unit trip</span> and should not be the sole basis for entering AB.SG-0001. On a Rx trip with OHA A-6 RMS HI RAD and 2R19C (23 SG Blowdown) in alarm with rising counts, the crew enters <span class="hi-exam">AB.RAD-0001 to verify the alarm while continuing in EOP-TRIP-2</span> — a manual SI is not warranted without corroborating indications.
+</div>
+
 ## Construction
 
 - Reactor coolant flows through inverted U-tubes, entering and leaving through nozzles in the hemispherical bottom head
@@ -127,9 +137,24 @@ Security-redacted question testing SRO knowledge of EOP-FRHS-2, Response to Stea
 ICMF peer check during SGTR: a release IS in progress because the <span class="hi-exam">TD AFW pump takes steam from 21 and 23 SGs</span> — with 23 SG ruptured and <span class="hi-exam">23MS45 not closed</span>, primary-to-secondary leakage exits through the TD AFW pump steam supply. No radiation monitor monitors this release path = <span class="hi-exam">unmonitored release in progress</span>.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-d</div>
+EOP-FRHS-1 Step 2: <span class="hi-exam">IF AT LEAST ONE INTACT OR RUPTURED SG IS AVAILABLE, THEN DO NOT FEED A FAULTED SG</span>. In this JPM all SGs are faulted by an unisolable main steam line break (all MSIVs failed open), so no SG is available as a heat sink and bleed-and-feed becomes mandatory. Step 3 then confirms <span class="hi-exam">RCS pressure is greater than all SG pressures</span> (and RCS Thots > 350°F), establishing that the SGs no longer provide a usable secondary heat sink.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q81</div>
 EOP-FRHS-1 heat sink established criteria (Step 6): heat sink is established when <span class="hi-exam">NR level in at least one SG is >9% (15% adverse)</span> OR <span class="hi-exam">feed flow is verified to at least one SG by CETs lowering or WR level rising</span>. If WR level is rising in one SG (even with all NR levels offscale low), heat sink IS established and transition back to the procedure in effect (e.g. EOP-TRIP-2) IS allowed. <span class="hi-trap">NR level does not need to reach 9% before returning — WR level rising is sufficient to confirm feed flow and allow exit from FRHS-1.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q18</div>
+The same secondary heat-sink definition gates SG depressurization for accumulator injection in EOP-FRCC-1 (Step 13): <span class="hi-exam">SG NR level in at least one SG &gt; 9% OR total AFW flow &gt; <span class="val-normal">22E4 lbm/hr</span></span>. With containment pressure &lt; 4 psig (here 2 psig), the normal <span class="hi-exam">9%</span> NR value is used, <span class="hi-trap">not the 15% adverse value</span> (adverse values apply only at &ge; 4 psig containment).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q26</div>
+SG overpressure protection (W/E13): each SG is protected by <span class="hi-exam">five</span> main steam safety valves with lift setpoints of <span class="hi-exam"><span class="val-trip">1070, 1100, 1110, 1120, 1125 psig</span></span> (per loop; see [[Main Steam]] for the xMS11–xMS15 table). To find how many open at a given SG pressure, count the setpoints at or below that pressure: at <span class="hi-exam">1115 psig</span>, the 1070, 1100, and 1110 psig valves lift = <span class="hi-exam">3 valves</span>. <span class="hi-trap">Trap: only the affected SG is counted — a MSLI isolates the unaffected SGs, so their safeties are not in play.</span>
 </div>
 
 <div class="callout callout-scenario">
@@ -167,16 +192,37 @@ SG shrink/swell on RCP shaft shear: when 13 RCP shaft shears at 25% power, <span
 21 SG tube leak (severity 5) escalating to rupture (severity 650). Diagnostic indications: <span class="hi-exam">2R53A 21 Main Steamline N-16 monitor &gt;1000 gpd</span>, OHA A-6 with reflash on 2R15 Condenser Air Ejector monitor, 2R19A in warning/alarm with SGBD isolation on high radiation. CRS isolates 21 SG per AB.SG-0001 (sets <span class="hi-exam">21MS10 to 1045 psig</span>; ensures 21GB4, 21MS18, 21MS7 shut; dispatches operator to shut 21MS45 and 2SS321). EOP-SGTR-1 isolation completes CT#1 (CT-18): close <span class="hi-exam">21AF11 and 21AF21</span>; shut <span class="hi-exam">21MS167</span>. SGBD will isolate ~2.5 minutes after 2R53D alarms which causes RCS temp and PZR level to rise.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q50</div>
+SG narrow-range level is programmed from 33–44% up to 100% power. With one NR channel already in calibration, <span class="hi-exam">a second 11 SG NR level channel failing to 30% swaps only the 11BF19/11BF40 feed valves to manual (not the SGFPs)</span>; during a continuing downpower the held manual demand overfeeds, so <span class="hi-exam">11 SG level rises higher than program</span>. See [[Feed & Condensate]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q83</div>
+With all SG WR levels dropping and no AFW flow, the FRHS-1 RED path (loss of secondary heat sink) is reached; <span class="hi-exam">feed-and-bleed is initiated immediately, with bleed-and-feed criteria at SG WR &lt;36% (adverse), NOT 32% (normal)</span>. See [[AFW]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+After Inadvertent SI termination and re-establishing letdown, a <span class="hi-exam">24 SG tube rupture</span> initiates. CRS directs CAS action to start ECCS pumps as necessary and transitions to EOP-SGTR-1; the scenario terminates at the SGTR-1 transition.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q51</div>
+<span class="hi-trap">Distractor trap: a single SG NR level rising above 67% generates a P-14 (Hi-Hi SG level) feedwater isolation and turbine trip — NOT a Main Steamline Isolation signal.</span> Main Steamline Isolation is generated by the Hi Steam Flow + Lo Tavg/Lo Steam Pressure logic (see Q51).
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
+- Related systems: [[Main Steam]], [[Feed & Condensate]], [[Radiation Monitoring]], [[Control Rod Drive]]
+- Related EOPs: [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-2 — Reactor Trip Response]]
+- Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[S1.OP-AR.ZZ-0007 — Overhead Annunciators Window G]]
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q4</div>
 EOP-LOCA-1 explicitly checks for a <span class="hi-exam">steam break / Loss of Secondary Coolant</span> as the OTHER reason (besides a LOCA) for being in LOCA-1 — because <span class="hi-exam">if a faulted SG is the actual cause of ECCS injection, the event can be terminated by isolating the faulted SG</span>. The "Check for Subsequent Failure" Major Action verifies the entry condition; LOCA-1's "do loop" then waits until the SG is blown down and isolated. SGTR is NOT the answer because LOCA-1 has no transition from SGTR-1, and primary-to-secondary leakage termination is not performed in LOCA-1.
 </div>
 
-- Related exam questions: [[2016 Q4]], [[2016 Q48]], [[2016 Q51]], [[2016 Q65]], [[2016 Q79]], [[2016 Q83]], [[2016 Q85]], [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]]
-- Related JPMs: [[2023 JPM SRO-A4]], [[2016 JPM Sim-h]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2014 Q2]], [[2015 Q10]], [[2015 Q11]], [[2015 Q12]], [[2015 Q18]], [[2015 Q26]], [[2016 Q4]], [[2016 Q48]], [[2016 Q51]], [[2016 Q65]], [[2016 Q79]], [[2016 Q83]], [[2016 Q85]], [[2018 Q68]], [[2019 Q53]], [[2020 Q10]], [[2020 Q51]], [[2020 Q60]], [[2023 Q2]], [[2023 Q42]], [[2023 Q81]], [[2023 Q85]], [[2022 Q11]], [[2022 Q65]], [[2022 Q81]], [[2015 Q50]], [[2015 Q83]], [[2014 Q14]], [[2014 Q25]], [[2014 Q26]], [[2014 Q51]], [[2014 Q85]]
+- Related JPMs: [[2014 JPM Sim-d]], [[2023 JPM SRO-A4]], [[2016 JPM Sim-h]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]

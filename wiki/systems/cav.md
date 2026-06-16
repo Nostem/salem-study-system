@@ -37,7 +37,7 @@ Per S2.OP-SO.CAV-0001 P&L 3.6.3 and TS Bases 3/4.7.6: when CAV is aligned to <sp
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Radiation Monitoring]]
-- Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]]
+- Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[SC.OP-AB.CR-0003 — Control Room Habitability]]
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
 - Related exam questions: [[2016 Q68]], [[2018 Q46]], [[2022 Q51]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2022 NRC Written Exam]]

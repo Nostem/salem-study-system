@@ -279,9 +279,54 @@ Containment Purge reinstatement after temporary termination (per S2.OP-SO.WG-000
 Containment-sump auto pump-down provides the leak-detection signal used to quantify unidentified RCS leakage to containment. OHA C-2 CNTMT SUMP PMP START is the front-panel indication; the Aux typewriter logs sump-pump start/stop events. Per S2.OP-SO.RC-0004 §5.3, the elapsed time between successive sump-pump cycles is converted to a leak rate via Attachment 3. Action thresholds: 0.85 gpm (Section 5.6 trending) and 1.0 gpm (TS 3.4.7.2 unidentified-leakage LCO).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A1-1</div>
+21 containment sump pump start (OHA C-2) at 0750 with previous stop 1510 yesterday → <span class="hi-exam">1000 minutes</span> between cycles → <span class="hi-exam">0.3 gpm</span> unidentified leakage to the sump. Below both 0.85 gpm and 1.0 gpm thresholds, so no action statement is entered.
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #3</div>
 21 SG steam leak inside containment first cued by <span class="hi-exam">CFCU leak-detection alarms</span>: OHA <span class="hi-exam">C-38 CFCU LK DET HI</span>, then <span class="hi-exam">C-30 CFCU LK DET HI-HI</span>. Diagnostic indications of an in-containment steam leak: containment pressure rising; Tavg slowly lowering; rising steam flows on all loops; steam dump demand lowering. Crew enters AB.STM-0001. Containment pressure exceeds the <span class="hi-exam">15 psig Phase B/Spray setpoint</span>; both Containment Spray pumps fail to auto-start (CT#1 → manual start). After cooldown, when containment pressure is &lt;13 psig, RO resets Spray actuation, stops both CS pumps, and shuts 21 and 22CS2 CS pump discharge valves.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+<span class="hi-exam">Phase A isolation occurs on any SI signal</span> (which would occur by 4 psig in containment if not sooner); <span class="hi-exam">Containment Ventilation isolation occurs on any SI, RMS alarm of associated monitors, or Phase B</span>. Both have already actuated before containment pressure reaches 12 psig during a LOCA. See [[Main Steam]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q36</div>
+Rising containment humidity and pressure ~5 minutes after a trip/SI with no operator action indicates a <span class="hi-exam">PZR Safety Valve failed open → PRT rupture disk ruptures → saturated steam vented to containment</span>. An RCP #1 seal failure would show as rising RCDT level (closed system), not in containment. See [[Pressurizer & PRT]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q47</div>
+<span class="hi-exam">Containment Iodine Removal Units (IRUs) are powered from G and E non-vital 460VAC</span>; on a loss of offsite power neither 11 nor 12 IRU is available. See [[460/230V AC]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q48</div>
+Post-LOCA, H2 Recombiners are placed in service (per the EOPs) with containment H2 between 2-4% and use electric heating elements to raise containment-atmosphere temperature. <span class="hi-exam">As containment pressure rises at a constant power setting the recombiner becomes LESS effective; the power correction factor curve directs RAISING the power setpoint</span> (S2.OP-SO.CAN-0001). See [[S2.OP-SO.CAN-0001 — Hydrogen Recombiner Operation]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q65</div>
+Containment Integrity (TS 3.6.1.1) surveillance 4.6.1.1.d invokes the CFCU surveillance (4.6.2.3.a), which includes <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — so a SW Accumulator nitrogen cover-gas pressure below minimum makes Containment Integrity NOT met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified by Admin controls (4.6.1.1.a); opening the airlock for transit is allowed; and CIVs have their own less-restrictive TS 3.6.3, not in the 3.6.1.1 surveillances.</span> See [[CFCUs]], [[TS 3/4.6 — Containment]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q72</div>
+Containment entries are governed by SC.SA-ST.ZZ-0001 and RP-SA-102; the SM/CRS authorizes access. <span class="hi-exam">When power is being changed &gt;5%/hr, the Radiation Protection Supervisor (RPS) approval is also required</span> (Pre-req 2.4). See [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]], [[RP-SA-102 — Containment Entries at Power]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q41</div>
+The <span class="hi-exam">Containment High Pressure SI (≥<span class="val-trip">4 psig</span>, 2/3 channels) cannot be blocked</span> and is active in all modes. During a return-to-service heatup with the Low PZR Pressure SI still blocked (&lt;1915 psig), a large RCS leak (2000 gpm) raises containment pressure above 4 psig — that is the signal that actually produces the automatic SI.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q65</div>
+ALL containment penetrations not supporting ECCS are isolated by the <span class="hi-exam">Phase B containment isolation</span>, which requires containment pressure above <span class="val-trip">15 psig</span>. A <span class="hi-exam">Main Steamline rupture in containment with MSLI failure</span> causes all SGs to blow down and drives containment pressure above 15 psig. <span class="hi-trap">Phase A (at <span class="val-trip">4 psig</span>) isolates non-essential penetrations; Phase B isolates the remaining non-ECCS penetrations. An R11A monitor failing high causes only a Containment Vent Isolation (part of, not all of, the non-essential isolation). A RCP #1 seal failure routes to the seal return system and does not cause an SI; a PORV failing open eventually fails the PRT rupture disc but the flow is insufficient to reach 15 psig.</span>
 </div>
 
 ## Connections
@@ -289,7 +334,7 @@ Containment-sump auto pump-down provides the leak-detection signal used to quant
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
-- Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q72]], [[2016 Q81]], [[2016 Q84]], [[2016 Q93]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]]
-- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A3]]
-- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q72]], [[2016 Q81]], [[2016 Q84]], [[2016 Q93]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]], [[2015 Q27]], [[2015 Q36]], [[2015 Q47]], [[2015 Q48]], [[2015 Q65]], [[2015 Q72]], [[2014 Q41]], [[2014 Q65]]
+- Related JPMs: [[2023 JPM SRO-A2]], [[2023 JPM Sim-h]], [[2022 JPM RO-A1]], [[2022 JPM SRO-A3]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A3]], [[2014 JPM RO-A1-1]]
+- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Operating Exam]]

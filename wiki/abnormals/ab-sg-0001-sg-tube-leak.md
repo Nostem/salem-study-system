@@ -34,6 +34,16 @@ Action levels are based on SG leak rate (gpd) and rate of change (gpd/hr):
 SG tube leak action levels are based on <span class="hi-exam">both leak rate AND rate of change</span>. At Action Level 3 with leak rate <span class="hi-exam">>= 75 gpd</span> and rate of change <span class="hi-exam">>= 30 gpd/hr</span>, the required action is to reduce power to <= 50% in 1 hour and be in MODE 3 in the following 2 hours. <span class="hi-trap">Trap: a leak rate of 125 gpd with a 30 gpd/hr trend meets Action Level 3 (rate of change criterion), NOT the 150 gpd threshold for the 6-hour shutdown.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q10</div>
+A note under the AB.SG-0001 entry conditions states that the <span class="hi-exam">R19 SGBD radiation monitors are NOT accurate immediately following a unit trip</span> and should not be used as the sole basis for entering the procedure. On a Rx trip with OHA A-6 RMS HI RAD and 2R19C (23 SG Blowdown) in alarm, the correct response is to <span class="hi-exam">enter AB.RAD-0001 (Abnormal Radiation) to verify the alarm (Step 3.2) while continuing in EOP-TRIP-2</span>. <span class="hi-trap">A manual SI is NOT warranted on a 2R19 alarm alone without corroborating indications.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q11</div>
+Boration for a <span class="hi-exam">single stuck rod is NOT performed in the EOP series (TRIP-2)</span> — it is performed in AB.SG-0001. After tripping the turbine and the reactor at 20% power (Step 3.28) during a tube-leak shutdown, the crew transitions to EOP-TRIP-2; with no SDM diagnostic step driving a transition to SGTR-1, <span class="hi-exam">AB.SG-0001 is re-entered at Step 3.27 after exiting the TRIP series</span>, and <span class="hi-exam">Step 3.28 directs a rapid boration of 35 minutes per stuck rod</span> to meet SDM for the initial cooldown to 500&deg;F. The rapid boration is initiated <span class="hi-exam">before any depressurization begins (Step 3.29)</span>.
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2022 #4</div>
 23 SG tube leak (25-30 gpm). Entry cue: RMS alarms 2R15, 2R19C (23 SG B/D Rad Monitor), 2R53C (MS Line Rad Monitor) with PZR level lowering. Key actions: transfer to centrifugal charging pump IAW step 3.5 to stabilize PZR level. CRS evaluates <span class="hi-exam">TS 3.4.7.2.c action a — be in Hot Standby within 6 hours</span>. Continuous Action Summary: if leak exceeds makeup capability → trip reactor and actuate SI. In this scenario, the leak worsens to a 650 gpm tube rupture, triggering the CAS trip criteria.
@@ -79,10 +89,17 @@ Step 3.7 — PZR level control during SG tube leak: <span class="hi-exam">reduce
 21 SG tube leak at 89.4% power (initially MALF severity 5; severity 650 to escalate to rupture). Entry cue: OHA A-6 with <span class="hi-exam">2R53A 21 Main Steamline N-16 monitor &gt;1000 gpd</span>; reflash on <span class="hi-exam">2R15 Condenser Air Ejector monitor</span>; later <span class="hi-exam">2R19A in warning/alarm</span> with SGBD isolation on high radiation. CRS enters AB.SG-0001 and AB.RAD-0001 in parallel; directs initiation of AB.SG CAS. Affected SG isolation per procedure: PO sets <span class="hi-exam">21MS10 to 1045 psig</span>, ensures 21GB4, 21MS18, and 21MS7 shut; CRS dispatches operator to shut 21MS45 steam supply to 23 AFW pump (rendering 23 AFW inoperable — LCO 3.7.1.2 entered). CRS evaluates leak rate: 21 SG &gt;150 gpd primary-to-secondary leakage triggers <span class="hi-exam">TS 3.4.7.2.c Action Level 3 — &lt;50% in 1 hour and Hot Standby in 6 hours</span>. Leak escalates to rupture; RO trips Rx and initiates SI based on uncontrolled rise in 21 SG NR/WR level — exit AB.SG-0001 to EOP-TRIP-1.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #4</div>
+A <span class="hi-exam">90 gpd SGTL ramps in on 23 SG</span> (entry cue OHA A-6 RMS HI RAD/TRBL, 2R53C then 2R19C/2R15 rising). The crew enters AB.SG-0001, quantifies the leak, and minimizes contamination spread (raise 23MS10 setpoint, close 23GB4/23MS7/23MS18, re-align SG blowdown and MS sampling to the Waste System). The leak meets <span class="hi-exam">CAS Action Level 3 (leak rate &ge; 75 gpd AND rate of change &ge; 30 gpd/hr)</span>, requiring power <span class="hi-exam">&lt;50% within 1 hour</span> and entry of TSAS 3.4.7.2.c; TS 3.4.7.2 applies once leakage exceeds 150 gpd. The leak then escalates to a tube rupture, driving the reactor trip and SI.
+</div>
+
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]], [[Radiation Monitoring]]
-- Related exam questions: [[2016 Q14]], [[2016 Q79]], [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]]
+- Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Main Steam]], [[Radiation Monitoring]], [[Control Rod Drive]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
+- Related exam questions: [[2015 Q10]], [[2015 Q11]], [[2016 Q14]], [[2016 Q79]], [[2018 Q15]], [[2018 Q68]], [[2019 Q69]], [[2023 Q81]]
 - Related JPMs: [[2019 JPM SRO-A5]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2014 NRC Operating Exam]]

@@ -45,11 +45,26 @@ SRO determines which scheduled shift activities may proceed during ongoing irrad
 The blocking constraint that defeats new fuel delivery: <span class="hi-trap">opening the FHB Truck Bay Door for new fuel receipt would breach FHB ventilation boundary required for the SFP fuel-movement dose analysis.</span> 22 SW pump packing, 2A EDG tagout, and 21 Chiller oil change all PASS the equipment-availability test (TSAS 3.7.4 / 3.8.1.2 / 3.7.10 respectively).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q49</div>
+During SFP Manipulations, a loss of SFP cooling (both SFP pumps unavailable, SFP heating up) leads to <span class="hi-exam">spent-fuel off-gassing and increased FHB charcoal filter radiation</span> as SFP temperature rises toward 150°F. See [[Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q68</div>
+P&amp;L 2.2: spent fuel manipulations require assigning <span class="hi-exam">Reactor Services, a qualified SRO, or a Reactor Engineer</span> to supervise. A Qualified Reactor Engineer satisfies this — <span class="hi-exam">fuel movement can occur without a licensed SRO present</span>. See [[Spent Fuel Pool]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q90</div>
+Per <span class="hi-exam">P&amp;L 3.4, transfer of spent fuel into the SFP is suspended until BOTH SFP cooling pumps are OPERABLE</span>. With one SFP cooling pump tripped on motor overload and not restartable, the failed pump <span class="hi-exam">must be restored to operable status</span> before the remaining fuel bundles can be transferred into the pool. <span class="hi-trap">Verifying normal/emergency power supply availability of the in-service pump does not satisfy P&amp;L 3.4 — both pumps must be OPERABLE.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Spent Fuel Pool]], [[Control Air]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]], [[TS 3/4.7 — Plant Systems]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2016 Q47]], [[2016 Q80]], [[2016 Q94]], [[2023 Q95]]
+- Related exam questions: [[2016 Q47]], [[2016 Q80]], [[2016 Q94]], [[2023 Q95]], [[2015 Q49]], [[2015 Q68]], [[2014 Q90]]
 - Related JPMs: [[2016 JPM SRO-A1-2]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2023 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

@@ -48,11 +48,26 @@ AB.RHR-0001 CAS for loss of RCS inventory in <span class="hi-exam">MODE 5</span>
 - <span class="hi-exam">RCS aligned for operation < 101 ft elevation → AB.RHR-0002</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q6</div>
+Restoring SDC flow after the running RHR pump trips (MODE 4, one loop in SDC, other aligned for ECCS): with a single loop of RHR in service for SDC the <span class="hi-exam">loop cross-tie valves 21/22RH19 remain open</span> (they are only shut when BOTH loops are in SDC to split the loops for minimum-flow verification per S2.OP-SO.RHR-0001). Attachment 2 of AB.RHR-0001 gives <span class="hi-exam">no direction to close the cross-tie or the SJ49 RHR-to-RCS valves</span>, since cooling flow to all 4 RCS loops is desired. The <span class="hi-exam">tripped-loop HX outlet valve (21RH18) is closed (Att. 2 step 2.0.D)</span> to terminate flow through that HX — so the standby pump supplies SDC flow through the <span class="hi-exam">other RHR HX and BOTH SJ49 discharge valves</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-h</div>
+Loss of RHR with the RCS intact, filled, and pressurized (CETs &gt;200°F): the in-service 21 RHR pump trips on loss of power. Procedure path: <span class="hi-exam">3.3 No (not reduced inventory, &gt;101 ft elevation) → 3.5 No (electrical power loss) → 3.50 Yes (heat sink available: CCW to RHR, SW to CCW) → 3.51 No (no RHR loop available — 22 RHR loop aligned for ECCS, breaker racked down) → 3.31/3.32</span>. At Step 3.32 the crew selects the alternate decay heat removal method: <span class="hi-exam">Attachment 10, Forced Flow Or Natural Circulation Cooldown</span> (RCS intact and filled, CETs &gt;200°F). Attachment 10: <span class="hi-exam">FEED available SGs to wide-range level &gt;77% with AFW (or Condensate), then operate the appropriate MS10s to keep Core Exit Thermocouples stable or lowering</span> (or drain SGs to &lt;95% WR if fill rate is maintaining CETs). Contrast Attachments 7/8 (feed-and-bleed, when RCS not intact or CETs &lt;200°F), 9 (reflux cooling, RCS depressurized), 11 (SFP cooling, head removed).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q8</div>
+When restarting an RHR pump after a loss of RHR and when <span class="hi-exam">time allows normal restoration and local venting</span>, the preferred flow rate is a <span class="hi-exam">LOWER flow rate</span> — to limit initial sudden cooldown and to minimize level loss caused by collapsing voids (per the AB.RHR-0001 CAUTION). <span class="hi-trap">A HIGHER flow rate to sweep entrained air is used only when time does NOT allow a normal venting.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RHR]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.CONT-0001 — Containment Closure]]
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2018 Q53]], [[2018 Q84]], [[2018 Q87]], [[2019 Q78]], [[2019 Q86]], [[2020 Q6]], [[2023 Q79]]
-- Related JPMs: [[2020 JPM Sim-b]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2014 Q8]], [[2015 Q6]], [[2018 Q53]], [[2018 Q84]], [[2018 Q87]], [[2019 Q78]], [[2019 Q86]], [[2020 Q6]], [[2023 Q79]]
+- Related JPMs: [[2020 JPM Sim-b]], [[2015 JPM Sim-h]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]]

@@ -115,9 +115,14 @@ SRO determines compensatory actions when 1R12A (Containment Noble Gas) and 1R41D
 </ul>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q59</div>
+<span class="hi-exam">TS 3.11.2.5 (Explosive Gas Mixture) limits oxygen concentration in the Waste Gas Holdup System to less than or equal to 2%</span> to prevent an explosive mixture. Hydrogen concentration is monitored but not addressed in Tech Specs. See [[Waste Gas]].
+</div>
+
 ## Connections
 
 - Related systems: [[Waste Gas]], [[Waste Liquid]]
 - Related concepts: [[Radiation Monitoring]]
-- Related JPMs: [[2016 JPM SRO-A3]]
-- Related exam: [[2016 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A3]], [[2015 JPM IP-k]]
+- Related exam: [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

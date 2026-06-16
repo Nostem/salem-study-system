@@ -42,6 +42,11 @@ RCS pressure shall not exceed <span class="hi">2735 psig</span>.
 SL 2.1.2 RCS Pressure Safety Limit = <span class="hi-exam">2735 psig</span>. Mode 3 action: reduce RCS pressure within limit within <span class="hi-exam">5 minutes</span>. Modes 1 and 2 action: within <span class="hi-exam">1 hour</span> (60 minutes). <span class="hi-trap">Trap: 2485 psig is the PZR safety valve setpoint, NOT the RCS Safety Limit. Candidates confuse 5 minutes (Modes 3-5) with 60 minutes (Modes 1-2).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q70</div>
+After an inadvertent SI/Rx trip (plant in Mode 3), the LOWEST RCS pressure at which a Safety Limit is exceeded is <span class="hi-exam">2735 psig (SL 2.1.2)</span>, with <span class="hi-exam">5 minutes allowed to reduce pressure below that value</span> in Mode 3. <span class="hi-trap">Trap: 2440 psig is merely the top line of Figure 2.1-1 (reactor core SL), NOT the RCS pressure Safety Limit. The 1-hour restoration time applies only in Modes 1 and 2, not Mode 3.</span>
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 2.1 Safety Limits</summary>
 <div class="callout callout-bases">
@@ -163,5 +168,5 @@ The actual nominal Trip Setpoint entered into the bistable is more conservative 
 - Related systems: [[RPS/SSPS]], [[RCS]]
 - Related concepts: [[Rx Vessel & Internals]], [[RCS]], [[ESF & Design]]
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2018 Q43]], [[2020 Q37]]
-- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2018 Q43]], [[2020 Q37]], [[2014 Q70]]
+- Related exam: [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2014 NRC Written Exam]]

@@ -262,10 +262,20 @@ SR 4.5.2.b.2 (Verify that ECCS Piping Is Full Of Water) has a MONTHLY surveillan
 LCO 3.5.3 (ECCS subsystems with RCS T-cold &lt; 312°F): <span class="hi-exam">one ECCS subsystem must be operable</span> with at least one charging pump capable of taking suction. <span class="hi-exam">Closing the suction valve of the only running charging pump renders the ECCS subsystem inoperable</span>. Per <span class="hi-exam">LCO 3.5.3 Action a</span>: <span class="hi-exam">restore at least one ECCS subsystem to operable status within 1 hour OR be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap: Action "restore one ECCS subsystem to operable or maintain RCS Tavg &lt;350°F" applies to a required-operable RHR pump becoming inoperable, NOT to charging-pump suction loss. TS 3.0.3 does NOT apply because LCO 3.5.3 has its own action for an inoperable ECCS subsystem.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q35</div>
+<span class="hi-exam">TS 3.5.2 (ECCS Subsystems &gt;350°F) requires 2 complete trains of ECCS</span>. The 22 charging pump is the hi-head ECCS pump for the B train, so its trip (with 23 charging pump out of service) makes TS 3.5.2 applicable. TS 3.5.4 (Seal Injection Flow) limits seal injection to 6-12 gpm/pump, not to exceed 40 gpm total. See [[ECCS]], [[CVCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q77</div>
+A <span class="hi-exam">single inoperable charging pump (hi-head ECCS) in Modes 1-3 enters TS 3.5.2.a only</span> — restore within 72 hours or be in Hot Shutdown within the next 12 hours. The boration LCOs are entered only on a second inoperable charging pump. See [[CVCS]], [[ECCS]].
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RHR]], [[CVCS]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q96]], [[2020 Q77]], [[2023 Q91]]
-- Related JPMs: [[2018 JPM SRO-A3]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q96]], [[2020 Q77]], [[2023 Q91]], [[2015 Q35]], [[2015 Q77]], [[2014 Q23]]
+- Related JPMs: [[2018 JPM SRO-A3]], [[2015 JPM Sim-c]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

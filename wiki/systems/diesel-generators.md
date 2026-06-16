@@ -5,6 +5,7 @@ status: draft
 aliases:
   - emergency diesel generators
   - diesel generators
+  - Diesel Generators
   - diesel generator
   - EDG
 ---
@@ -67,6 +68,11 @@ During EDG operation, the Diesel Area Ventilation will ensure the EDG Room does 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q48</div>
 When the EDG is paralleled to the grid for surveillance testing: <span class="hi-exam">Voltage Control Switch adjusts KVAR (reactive) load</span> — Raise increases KVAR OUT. <span class="hi-exam">Speed Control Switch adjusts KW (real) load.</span> <span class="hi-trap">Common confusion: speed control adjusts frequency/real power, NOT reactive power. Voltage control adjusts reactive power, NOT voltage (when paralleled to the grid, generator voltage is locked to grid voltage).</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 IP-i</div>
+Unloading a paralleled EDG (2C, S2.OP-SO.DG-0003 Section 5.8): lower real load (KW) with the <span class="hi-exam">SPEED CONTROL SWITCH (GS)</span> and reactive load (KVAR) with the <span class="hi-exam">VOLTAGE CONTROL SWITCH (VCS)</span>, alternately going to LOWER. Place the generator circuit breaker switch to TRIP <span class="hi-exam">as soon as load is reduced to 200 KW</span> (KVAR 50-100 KVAR OUT) — bringing real load &lt;200 KW before opening the breaker avoids motoring/reverse power. Output breaker can be opened at 2CD1AX6D (64' Swgr Rm), the 2CC3 BREAKER OPEN pushbutton, or by placing 2C-DF-GCP-3 (BCS) to TRIP. Stop the diesel via 2C-DF-SS (STOP/START SWITCH) after ≥3 min unloaded, then return 2C-DF-GCP-1 (LOADING SW) to AUTO (ISOCR).
 </div>
 
 ## Starting Air System
@@ -219,12 +225,52 @@ PZR Backup Heater Group transfer to emergency power adds heater load to a vital 
 <strong>Local start and parallel loading per S2.OP-SO.DG-0001 §5.2 + §5.4.</strong> Pre-start checks: 2DAE4-LT 2 (EDG VOLTAGE) and 2DAE4-LT 3 (EDG SPEED) permissive lights are OFF. With 2A 4KV Vital Bus energized (parallel mode), <span class="hi-exam">2A-DF-GCP-1, 2A DIESEL GEN LOADING SW must be placed in MANUAL (DROOP) before start</span> — annunciator B-9 GENERATOR LOADING IN DROOP MODE confirms. Start with 2A-DF-SS, 2A DG STOP/START SWITCH in START. Set speed to <span class="hi-exam">900 rpm</span> using SPEED CONTROL SWITCH (GS) if not already there. Normal start readings: gen volts <span class="hi-exam">4160 V</span> on all 3 phases, frequency 60 Hz, LO Hdr 80 psig, JW Hdr 45 psig, Air Manifold 0 psig, Stator 187 °F. Synchronize: adjust gen voltage to <span class="hi-exam">50–100 V higher than bus</span> via VOLTAGE CONTROL SWITCH (VCS); place 2A-DF-SYNCH (SS) ON; adjust speed so synchroscope rotates <span class="hi-exam">SLOWLY in the FAST (clockwise) direction</span>; verify SYNC CHK RELAY 25 Upper/Lower L OK and B OK LEDs and ΔF OK LED are ON; verify DG SYNC PERMISSIVE green light ON near 12 o'clock (±~3 minutes). At <span class="hi-exam">12 o'clock (+0/−2 min)</span>: simultaneously close 2A-DF-GCP-3 GENERATOR CIRCUIT BREAKER SWITCH (BCS) and immediately raise load to <span class="hi-exam">≥ 500 KW via SPEED CONTROL SWITCH (GS) to prevent reverse-power trip</span>. Place 2A-DF-SYNCH (SS) to OFF. Critical steps: 5.2.4, 5.2.5, 5.2.6, 5.4.4, 5.4.10.A, 5.4.10.B, 5.4.10.F.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q43</div>
+On a 2/3 4KV vital-bus UV, all EDGs start and (SEC Mode II) sequence blackout loads. When an SI then occurs, <span class="hi-exam">SEC Mode III opens any running EDG output breaker, strips loads, recloses the EDG breaker, then sequences safeguards loads</span>. See [[SECs]], [[4KV]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q55</div>
+EDG load limitations (per the DG surveillance P&amp;L): <span class="hi-exam">2600 KW continuous; 2600–2750 KW for 2000 hours; 2750–2860 KW for 30 minutes; 2860–3100 KW for 2 hours</span>. Operating at 2610 KW (in the 2000-hour band) for 21 more hours exceeds no limit. See [[S2.OP-ST.DG-0003 — 2C Diesel Generator Surveillance Test]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q58</div>
+The Diesel Fuel Oil Storage Tanks are <span class="hi-exam">normally isolated from each other on the outlet side (2DF35 X-CONN VALVE closed); each DFOST is supplied by its own transfer pump</span>. With 21 DFOST emptied, the 21 (Regular) transfer pump still gets a start signal at 33" but has no fuel; as Day Tank level lowers further the <span class="hi-exam">22 (Backup) pump starts at 27" and supplies from 22 DFOST</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q92</div>
+EDG TS surveillances: SR 4.8.1.2 specifies that certain surveillances are NOT required to maintain EDG operability (to avoid paralleling the EDG with offsite power or de-energizing an ESF bus during the test). <span class="hi-exam">A missed 18-month Hot Restart surveillance does NOT make 2A EDG inoperable; the test must be completed prior to entering Mode 4</span>. See [[TS 3/4.8 — Electrical]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q59</div>
+With the 2B EDG <span class="hi-exam">paralleled</span> to the 2B 4KV vital bus during a surveillance run, placing the 2B-DF-GCP-1 Diesel Gen Loading Switch in <span class="hi-exam">AUTO (ISOCR)</span> makes the generator attempt to pick up large +/- VAR loading (it is trying to control grid voltage). <span class="hi-trap">There is no SPT-to-EDG control interlock — the EDG will TRIP on either reverse power or output breaker over-current; it does NOT speed up.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q93</div>
+A tripped 21 Diesel Fuel Oil Transfer Pump breaker requires entering <span class="hi-exam">TS 3.8.1.1.b.2 (EDG Fuel Oil, Modes 1-4) because BOTH Fuel Oil Transfer pumps are required to be OPERABLE</span>. The controlling Tech Spec bases is the <span class="hi-exam">electric power sources bases — OPERABILITY of the AC electrical power sources ensures sufficient power for the safe shutdown of the plant and for the mitigation and control of accident conditions.</span> <span class="hi-trap">Trap: pairing the correct TS with the LCO 3.0.3 "timely unit shutdown" bases is wrong; and a single tripped CCW pump does NOT make both loops of CCW inoperable, so a TS 3.0.3 / CCW basis is also wrong.</span> See [[TS 3/4.8 — Electrical]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+A large air leak on the 2C EDG starting air supply line lowers Air Start Tank pressure with both air start compressors running (OHA J-20, 2C DG URGENT). The CRS determines <span class="hi-exam">2C EDG is inoperable based on lower-than-required Air Start Tank pressure</span> and enters the appropriate Tech Spec. See [[2014 Scenario 1]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+On a LOOP with 2A/2B EDGs running and the <span class="hi-exam">2C SEC failed to initiate</span>, the crew manually starts 2C EDG and shuts its output breaker to energize the 2C vital bus. Because the 2C SEC sent no breaker trip signals, equipment that was running on the 2C bus before the LOOP will restart when the EDG breaker is shut, so the crew <span class="hi-exam">opens the C-bus equipment breakers first to avoid stalling the 2C EDG</span>. CT#1 requires starting at least one SW pump so the running EDGs have cooling. See [[2014 Scenario 3]].
+</div>
+
 ## Connections
 
 - Related systems: [[Fire Protection]]
 - Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.0 — Applicability]]
-- Related exam questions: [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]]
-- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]]
-- Related JPMs: [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-g]], [[2016 JPM IP-i]], [[2016 JPM IP-k]], [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exams: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2015 Q13]], [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]], [[2015 Q43]], [[2015 Q55]], [[2015 Q58]], [[2015 Q92]], [[2014 Q59]], [[2014 Q83]], [[2014 Q93]]
+- Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[S2.OP-ST.DG-0002 — 2B Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-ST.DG-0003 — 2C Diesel Generator Surveillance Test]], [[S2.OP-ST.DG-0014 — 2C Diesel Generator Endurance Run]], [[S2.OP-SO.DG-0003 — 2C Diesel Generator Operation]], [[S2.OP-AR.DG-0003 — 2C Diesel Generator Alarm Response]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-g]], [[2016 JPM IP-i]], [[2016 JPM IP-k]], [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]], [[2014 JPM IP-i]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2014 Scenario 1]], [[2014 Scenario 3]]
+- Related exams: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

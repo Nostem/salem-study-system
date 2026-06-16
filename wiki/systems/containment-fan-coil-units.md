@@ -154,6 +154,11 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-f</div>
+25 CFCU operability + SW flow verification IAW S2.OP-ST.CBV-0003 (start CFCU in LOW SPEED via S2.OP-SO.CBV-0001). Two-part acceptance: minimum SW flow must be <span class="hi-exam">≥1465 gpm</span> (measured ~1675 gpm = SAT); separately, minimum cooling water flow is read from Exhibit 1 against SW header DP. Reported 22 SW header DP = <span class="hi-exam">91 psid</span>, which per P&L 3.4 rounds <span class="hi-exam">up to 95 psid</span>; measured cooling water flow does not meet the Exhibit-1 minimum at 95 psid → <span class="hi-exam">Cooling Water Flow Rate UNSAT</span> while SW flow is SAT. Damper alignment for low speed: ROUGH FLTR DAMPER CLOSED, HEPA INLET/OUTLET OPEN.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2018 Sim-f</div>
 22 CFCU surveillance test (S2.OP-ST.CBV-0003): shift from high speed to low speed via S2.OP-SO.CBV-0001 (HIGH SPEED STOP → wait <span class="hi-exam">25 seconds</span> → LOW SPEED START). Verify damper positions (ROUGH FLT DAMPER CLOSED, HEPA INLET/OUTLET OPEN). Verify SW flow >= <span class="hi-exam">1465 gpm</span>. After 15 minutes, record SW flow (~<span class="hi-exam">1786 gpm</span>) and SW header DP (<span class="hi-exam">106 psi</span>). Per P&L 3.4, measured DP of 106 psi rounds up to <span class="hi-exam">110 psid = 1811 gpm minimum required</span>. Actual flow 1786 gpm < 1811 gpm → <span class="hi-exam">test result UNSAT, 22 CFCU inoperable</span>. Same discriminating concept as 2019 and 2023 CFCU JPMs.
 </div>
@@ -188,11 +193,56 @@ CFCU SW flow control valve <span class="hi-exam">SW223 has a position limiter, t
 APPX-7 Step 2 verification: <span class="hi-exam">CHECK ALL AVAILABLE CFCUs running in Low Speed</span>. Confirms post-LOCA Containment Heat Removal CFCU alignment is intact prior to securing the CS flow path and re-attempting RHR sump suction.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q65</div>
+CFCU operability (TS 4.6.2.3.a) includes <span class="hi-exam">SW Accumulator level, pressure, and temperature</span>. Because Containment Integrity (TS 3.6.1.1) surveillance 4.6.1.1.d invokes 4.6.2.3.a, a SW Accumulator nitrogen cover-gas pressure below minimum fails Containment Integrity. See [[Containment]], [[TS 3/4.6 — Containment]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q80</div>
+A SW leak on <span class="hi-exam">CFCU supply piping in the 78' Mechanical Penetration Area</span> produces the SW header-pressure alarm cascade plus B-48 SW VLV RM FLOODED; AB.SW-0001 directs isolating the single affected CFCU (identifiable from the control room). See [[Service Water]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q90</div>
+Per SO.SW-5 Attachment 2: <span class="hi-exam">in Modes 1-3, isolating CFCU #23 from either SW supply header (closing manual cross-connect 21SW52 or 22SW52) makes that CFCU inoperable — TS 3.6.2.3 action</span>. With 21 CFCU also C/T, two CFCUs (21 and 23 ONLY; not 22) are inoperable; <span class="hi-exam">BOTH must be restored within 7 days of the FIRST CFCU being declared inoperable</span>. See [[Service Water]], [[TS 3/4.6 — Containment]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q91</div>
+Both EOP-TRIP-3 (SI Termination) and EOP-LOCA-2 terminate Containment Spray. <span class="hi-trap">Neither EOP addresses CS Spray Additive Tank isolation or CFCU speed — CFCU operation is governed by the SOP once the EOP network is exited to the IOP.</span> See [[Containment Spray]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q35</div>
+On a Safety Injection the CFCUs shift to <span class="hi-exam">slow speed</span>, which causes <span class="hi-exam">OHA C-12 (22 CFCU AIRFLO TRBL)</span> to annunciate — this alarm is EXPECTED during the LOCA/SI response (it indicates the CFCU is running in slow speed, not a fault).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q34</div>
+A loss of the 1A 4KV vital bus removes the <span class="hi-exam">11 CFCU</span> (along with 11 RHR, 11 CS, and 13 Charging). For a small (1") RCS break, containment pressure does not rise to the CS requirement, so the loss of 11 CFCU does not change the containment pressure response.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q46</div>
+CFCU SW flow control valve <span class="hi-exam">SW223 has a position limiter (~50% travel)</span> and opens to that mechanical stop on a start signal from EITHER low or high speed. Therefore <span class="hi-exam">steady-state SW flow is the SAME for low and high speed operation</span> — it does NOT rise or lower when transferring speed (the CFCU is normally stopped ~30 seconds during the transfer). <span class="hi-trap">Distractor "rise or lower based on initial SW header pressure" assumes header pressure changes — it does not in a steady-state-to-steady-state comparison.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q47</div>
+SW supply mapping: <span class="hi-exam">21 and 22 CFCUs from 21 nuc header; 24 and 25 CFCUs from 22 nuc header; 23 CFCU from BOTH headers via a check-valve arrangement</span>. With 22SW20 (Nuclear Header Supply) stuck shut isolating the 21 nuc header, <span class="hi-exam">2 CFCUs (21 and 22) lose all cooling water</span>. Restore by <span class="hi-exam">opening 21SW23 and 22SW23 (Nuclear Header X-over valves)</span>, which are downstream of 22SW20/24SW20 and cross-feed both nuc headers. <span class="hi-trap">The SW17 SW-Bay/Discharge Header x-connects are normally open and even if closed cannot restore flow past the shut 22SW20; 23 CFCU is NOT lost (dual-header check-valve supply).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q63</div>
+On a LOOP + SI (MODE 3) with the 2B EDG output breaker failing to close, the <span class="hi-exam">CFCU 223 (CV FANS SW OUTLET) valves OPEN on the MODE 3 signal</span>, but <span class="hi-trap">22 and 24 CFCUs do NOT start in slow speed because of the loss of 460V power</span>.
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]]
-- Related exam questions: [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]]
-- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam questions: [[2014 Q34]], [[2014 Q35]], [[2015 Q16]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]], [[2015 Q65]], [[2015 Q80]], [[2015 Q90]], [[2015 Q91]], [[2014 Q46]], [[2014 Q47]], [[2014 Q63]]
+- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]], [[2016 JPM Sim-b]], [[2014 JPM Sim-f]]
+- Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 1]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]]

@@ -99,6 +99,11 @@ SW122 (CC HX Inlet Valves) <span class="hi-exam">close on SEC Mode III (SI + LOO
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q16</div>
+Confirms the 21/22SW122 (CC HX SW Inlet Valves) actuation: normally open, they operate in conjunction with the CCW HX SW outlet valves <span class="hi-exam">SW127</span>, and <span class="hi-exam">close on a SI signal coincident with a LOOP (SEC Mode III)</span> — NOT on SI alone — to prevent SW pump runout with all CFCUs in service and only two SW pumps available (EDG/SEC single failure). The SW122s <span class="hi-exam">must stroke closed in less than 30 seconds to ensure the CFCUs are operational within 60 seconds</span> following Mode III initiation (Tech. Spec. 3/4.3.2 Table 3.3-5).
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q90</div>
 Unit difference — SW pump power supplies: <span class="hi-exam">2A EDG supplies 21 AND 22 SW Pumps (both on the same bus)</span>. On Unit 1, SW pumps 15 and 16 have a different bus arrangement. If 23 SW Pump trips and the 2A 4KV Vital Bus locks out (bus differential), <span class="hi-exam">ALL Unit 2 SW pumps are lost</span> — loss of all SW flow. Per S2.OP-AB.SW-0005: <span class="hi-exam">trip the reactor and stop all RCPs</span> to limit heat input to the CCW system.
 </div>
@@ -143,11 +148,81 @@ SW pump bus alignment: <span class="hi-exam">21, 22, 23 SW pumps are powered fro
 Total loss of all SW from <span class="hi-exam">simultaneous trip of all four #4 Service Water Bay pumps (24/25/26 SW pumps)</span> with #2 SW Bay already isolated for an unrelated leak. Loss of all SW eliminates cooling for CCW heat exchangers, which removes the heat sink for RCP thermal barriers, RCP seals via charging, and other CCW-cooled loads. AB.SW-0005 directs <span class="hi-exam">trip the reactor and stop all RCPs</span> as the immediate actions to limit heat input to the now-uncooled CCW system, then swap to 23 Charging Pump (positive displacement) and reduce CCW pumps to one to minimize CCW heating.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 SRO-A1-1</div>
+Chilled-water inlet water temperature for the non-essential heat-load isolation calculation (S2.OP-SO.CH-0001 Att 2) is read from the <span class="hi-exam">Circulating / Service Water Log (SC.OP-DL.ZZ-0008(Q))</span> — service water inlet temperature determines which Table A category (and required isolation kBTU/hr) applies when both chillers are inoperable.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-f</div>
+SW flow to a CFCU during the 25 CFCU operability surveillance (S2.OP-ST.CBV-0003): per S2.OP-SO.CBV-0001 Step 5.1.3.E, <span class="hi-exam">if SW flow is &lt;1465 gpm the CFCU must be stopped</span> and S2.OP-SO.SW-0005 Operability Guidelines referenced; the step ensures SW flow <span class="hi-exam">≥1465 gpm</span>. Acceptance evaluation also uses 22 SW header DP (reported <span class="hi-exam">91 psid → rounded up to 95 psid</span> per P&L 3.4) read against Exhibit 1 to determine the minimum cooling water flow.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q61</div>
+SW pump power supplies (Unit 1): <span class="hi-exam">the A bus powers 15 and 16 SW pumps; normally one SW pump is in AUTO (the rest manual) at power</span>. On a single 1A bus UV / Bus Differential lockout, 16 SW pump is lost, header pressure drops, and the AUTO pump (11) starts — so 11 and 13 run (13 was already in service). <span class="hi-trap">Unit 1 SW pump power supplies are reversed from Unit 2 (Unit 2: 21/22 on A bus, 25/26 on C bus).</span> See [[4KV]], [[SECs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q69</div>
+<span class="hi-exam">Unit 1 SW pumps are powered C,C,B,A,A vs Unit 2 A,A,B,B,C,C</span> (reversed). With the 1A bus deenergized, 15 and 16 SW pumps lose power and the AUTO pump (15) will not start (locked out by SEC initiation); the B-bus lead pump (14) and an A-fed pump run (11 and 14). See [[4KV]], [[SECs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q71</div>
+Tracking an inoperable SW pump per OP-SA-108-115-1001 (Operability Assessment) requires updating the TS Action Statement Status Board, the TS Action Statement Log, and the Control Room Narrative Log — but <span class="hi-trap">the Operational Status Board is NOT required</span> (it is used during emergencies and is located in the control room area). See [[OP-SA-108-115-1001 — Operability Assessment and Equipment Control Program]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q78</div>
+A complete loss of SW in Mode 5 with RHR in service: AB.SW-0005 has a CAS that <span class="hi-exam">directs going to AB.RHR-1 or AB.RHR-2 depending on RPV level</span> — the FIRST action then is to stop the in-service RHR pump (RPV &lt;97.5'). See [[RHR]], [[AB.SW-0005 — Loss of All Service Water]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q80</div>
+A sequential SW header-pressure alarm cascade (OHA B-13/B-14/B-15) plus <span class="hi-exam">B-48 SW VLV RM FLOODED localizes the leak to a single CFCU supply line in the 78' Mechanical Penetration Area</span>, addressed by AB.SW-0001 by isolating that single (control-room-identifiable) CFCU. See [[CFCUs]], [[AB.SW-0001 — Loss of SW Header Pressure]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q90</div>
+<span class="hi-exam">Closing a CFCU manual SW cross-connect supply valve (21SW52 / 22SW52) isolates CFCU #23 from a SW supply header → CFCU #23 inoperable (SO.SW-5 Att 2, TS 3.6.2.3)</span>. Knowledge of where the SW isolation valve is located determines that 22 CFCU is NOT also affected. See [[CFCUs]], [[S2.OP-SO.SW-0005 — Service Water System Operation]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+25 SW pump discharge strainer develops high D/P (OHA B-16, 24-26 SW STRAIN TRBL; SW header pressures lowering). Field finds the strainer in auto with backwash red light on and flow through 25SW24, but the <span class="hi-exam">strainer shaft NOT turning</span> with the strainer motor running, D/P ~10.5 psid. CRS collects Trip/High D/P Observations IAW [[S1.OP-SO.SW-0001]] Attachment 2, determines manual backwash cannot be performed (strainer not turning), and declares 25 SW pump inoperable based on <span class="hi-exam">D/P &gt;10 psid</span> across the strainer (IAW S2.OP-AR.ZZ-0002, OHA Window B). With 26 SW pump already CIT, CRS enters <span class="hi-exam">LCO 3.7.4</span> — no operable SW pump powered from "C" vital bus leaves only ONE SW loop operable.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q47</div>
+SW nuclear-header supply to the CFCUs: 21/22 CFCUs from 21 nuc header, 24/25 from 22 nuc header, 23 from BOTH (check-valve arrangement). <span class="hi-exam">22SW20 (Nuclear Header Supply) stuck shut isolates the 21 nuc header → 21 and 22 CFCUs lose all SW (2 CFCUs)</span>. Restore by opening <span class="hi-exam">21SW23 / 22SW23 (Nuclear Header X-over valves)</span>, located downstream of 22SW20/24SW20. <span class="hi-trap">The SW17 (SW-Bay / Discharge Header) x-connects are normally open and cannot restore flow past the shut 22SW20.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q46</div>
+The CFCU SW flow control valve <span class="hi-exam">SW223 has a ~50% position limiter / mechanical stop</span> and opens to that stop on a start from either fan speed, so steady-state SW flow through a CFCU is the SAME in low and high speed.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q53</div>
+The <span class="hi-exam">TGA (Turbine Generator Area) SW header pressure is regulated by ST1 to a downstream pressure of <span class="val-normal">80 psig</span></span>, so it modulates to hold pressure stable and does NOT change following a Main Turbine trip.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q63</div>
+After a LOOP + manual SI on Unit 2 with the 2B EDG output breaker failing to close (loss of B 4KV/460V/230V power): <span class="hi-exam">2SW26 (TURB AREA SW MOV STOP VLV) remains OPEN</span> — it is always open at 100% power and the loss of power prevents it from closing. <span class="hi-trap">21/22SW122 (CC HX SW INLET) are AOVs that CLOSE on a MODE 3 (their control circuits keep power while 115VAC is available); CFCU 223 (CV FANS SW OUTLET) valves OPEN on MODE 3, but 22 and 24 CFCUs do not start in slow speed due to the loss of 460V power.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+A #2 SW Bay leak with 24 SW pump already C/T leaves <span class="hi-exam">no operable SW loops → TS 3.0.3</span>. After a later LOOP, with the running EDGs and 2C SEC failed to initiate, the crew must manually start <span class="hi-exam">at least one SW pump (on the 2C bus) — CT#1 — so the running EDGs have SW cooling</span>; EDGs running without SW cooling can overheat and fail. Bay isolation: split the bays via 21SW23/22SW23 and 21SW17/22SW17, isolate 2 Bay with 21SW22 and 21SW20. See [[2014 Scenario 3]].
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
-- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[AB.SW-0005 — Loss of All Service Water]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related exam questions: [[2016 Q42]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]]
-- Related JPMs: [[2016 JPM SRO-A1-1]], [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-e]], [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]]
-- Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]]
+- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[AB.SW-0005 — Loss of All Service Water]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S1.OP-SO.SW-0001 — Service Water Pump Operation]], [[AB.SW-0002 — Loss of Service Water-Turbine Header]]
+- Related exam questions: [[2015 Q16]], [[2016 Q42]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]], [[2015 Q61]], [[2015 Q69]], [[2015 Q71]], [[2015 Q78]], [[2015 Q80]], [[2015 Q90]], [[2014 Q16]], [[2014 Q46]], [[2014 Q47]], [[2014 Q53]], [[2014 Q63]], [[2014 Q83]]
+- Related JPMs: [[2016 JPM SRO-A1-1]], [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-e]], [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]], [[2015 JPM RO-A1-1]], [[2014 JPM SRO-A1-1]], [[2014 JPM Sim-f]]
+- Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]], [[2014 Scenario 3]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

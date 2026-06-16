@@ -231,6 +231,11 @@ The Surveillance Frequency is controlled under the Surveillance Frequency Contro
 When a PORV is inoperable due to seat leakage, the block valve is closed but power is MAINTAINED (so the block valve can be opened if needed for overpressure protection). When inoperable for other causes, the block valve is closed and power is REMOVED (isolating the failed-open path).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-c</div>
+A <span class="hi-exam">leaking 2PR2 PZR PORV</span> (seat leakage) is isolated by AB.PZR-0001 by closing its block valve <span class="hi-exam">2PR7</span>. Because the cause is seat leakage, this is <span class="hi-exam">LCO 3.4.5 Condition 1 / Action a</span>: close the block valve <span class="hi-exam">with power MAINTAINED</span> (so it can be reopened for overpressure protection), within <span class="val-alarm">1 hour</span>. After isolating, the procedure directs notifying the SM/CRS to refer to TS 3.4.5 and the Event Classification Guide for Primary Leakage. The JPM diagnosis (sequential unisolation of 2PR6 then 2PR7 to find the rising-tailpipe valve) is the field method that identifies which PORV is the seat-leaker.
+</div>
+
 *Amendment No. 177*
 
 <div class="callout callout-exam">
@@ -343,6 +348,11 @@ CVCS leak vs. RCS operational leakage: a leak from 2CV6 (Letdown Relief Valve) i
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2016 RO-A1-1</div>
 S2.OP-SO.RC-0004 §5.3 Containment Sump leak-rate calculation following an unexpected OHA C-2 CNTMT SUMP PMP START. Quantified leak rate ~<span class="hi-exam">0.9 gpm</span> (320 minutes between sump-pump cycles per Attachment 3). The two action thresholds bracket the unidentified leakage limit: <span class="hi-exam">&gt; 0.85 gpm</span> initiates Section 5.6 trending only; <span class="hi-exam">&gt; 1.0 gpm</span> initiates S2.OP-ST.RC-0008 RCS Water Inventory Balance and refers to TS 3.4.7.2. At 0.9 gpm the unidentified-leakage LCO 3.4.7.2.b (≤1 gpm) is still MET, so no TS action time starts.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q86</div>
+The RCS Water Inventory Balance (Surveillance Requirement 4.4.7.2.1.d, performed via S2.OP-ST.RC-0008) is required in Modes 1–4, but <span class="hi-exam">SR 4.4.7.2.1.d specifically states the provisions of Tech Spec 4.0.4 are NOT applicable for entry into Mode 4</span>. Therefore an overdue balance does not bar entry into Mode 4 — per S2.OP-IO.ZZ-0002 P&amp;L 3.8 the surveillance need not be completed until <span class="hi-exam">12 hours after steady-state operation is established</span>. <span class="hi-trap">TS 4.0.3 (for missed/overdue surveillances) does not apply because 4.0.4 NA permits the mode change without performing the balance first.</span>
 </div>
 
 <details>
@@ -522,11 +532,17 @@ LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE 
 21 SG tube leak with leakage &gt;<span class="hi-exam">150 gpd primary-to-secondary</span> through a single SG. CRS enters <span class="hi-exam">LCO 3.4.7.2.c — Action Level 3</span> per AB.SG-0001: be &lt;50% power within 1 hour and Hot Standby within 6 hours. Leak escalates to a tube rupture before completion of the controlled shutdown.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q87</div>
+<span class="hi-exam">TS 3.4.5 action b: a PORV isolated by shutting its Block Valve (e.g., a failed-open 2PR1) requires a unit shutdown if the PORV is not restored to operable within 72 hours</span>. A leaking PORV isolated by its Block Valve (with power maintained to the Block Valve) does not require shutdown. See [[Pressurizer Level & Press Control]].
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]]
-- Related JPMs: [[2016 JPM RO-A1-1]]
+- Related procedures: [[S2.OP-ST.RC-0008 — RCS Water Inventory Balance]], [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[AB.RC-0001 — Reactor Coolant System Leak]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]], [[2015 Q87]], [[2014 Q86]]
+- Related JPMs: [[2014 JPM Sim-c]], [[2016 JPM RO-A1-1]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
