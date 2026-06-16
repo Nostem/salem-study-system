@@ -71,7 +71,7 @@ Early-warning Smoke/Fire Detectors provide the Control Room with early fire indi
 
 - Related systems: [[AFW]], [[EDGs]]
 - Related procedures: [[AB.FIRE-0001 — Control Room Fire Response]], [[AB.FP-0001 — Fire Protection System Malfunction]], [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]]
-- Related exam questions: [[2015 Q17]], [[2016 Q64]], [[2019 Q38]], [[2020 Q65]], [[2020 Q75]], [[2015 Q63]], [[2012 Q26]], [[2012 Q64]]
+- Related exam questions: [[2015 Q17]], [[2016 Q64]], [[2019 Q38]], [[2020 Q65]], [[2020 Q75]], [[2015 Q63]], [[2012 Q26]], [[2012 Q64]], [[2012 Q92]], [[2012 Q99]]
 - Related JPMs: [[2022 JPM Sim-h]]
 - Related scenarios: [[2015 Scenario 2]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

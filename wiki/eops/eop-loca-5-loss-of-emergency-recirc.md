@@ -120,11 +120,16 @@ The LOCA-3 CAS directs <span class="hi-exam">LOCA-5 only if emergency recirculat
 After transitioning from LOCA-1 to LOCA-5, ECCS is reduced at <span class="hi-exam">Step 14</span> (charging pumps to ONE centrifugal, SI pumps to ONE), then at <span class="hi-exam">Step 19</span> — with RCPs secured and &lt;50°F subcooling — <span class="hi-exam">Figure A</span> is used to determine the minimum ECCS flow required vs. time after trip. At <span class="hi-exam">6 hours (360 min) after trip the required flow is ~225 gpm (less than 250 gpm)</span>. Because a single charging pump (with charging flow unchanged per the stem) is insufficient, while a single SI pump supplies 250 gpm, the correct minimum lineup is <span class="hi-exam">ONE SI pump only</span>. (A 1500 gpm LOCA depletes the RWST in ~2.3 hours, so the transfer to CL Recirc has already occurred.)
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q93</div>
+On a valid PURPLE Containment Environment path (15 psig and rising) the crew transitions to <span class="hi-exam">EOP-FRCE-1</span>, but FRCE-1 specifically asks if LOCA-5 is in effect and, if so, <span class="hi-exam">directs Containment Spray pumps to be operated IAW LOCA-5</span>. <span class="hi-trap">The LOCA-5 table is the bases: there are conditions with containment pressure &gt;15 psig where NO CS pumps are directed to be started — so "at least one CS pump must run whenever &gt;15 psig" is wrong.</span> FRPs remain in effect after the transition out of TRIP-1; LOCA-5 does not suspend them.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]], [[CVCS]], [[RVLIS]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2015 Q24]], [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]], [[2015 Q82]], [[2014 Q27]], [[2014 Q84]], [[2014 Q89]], [[2012 Q24]]
+- Related exam questions: [[2015 Q24]], [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]], [[2015 Q82]], [[2014 Q27]], [[2014 Q84]], [[2014 Q89]], [[2012 Q24]], [[2012 Q93]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

@@ -24,8 +24,13 @@ The "F" windows have <span class="hi-exam">dual backlights, red and white</span>
 On a Unit 2 Main Turbine trip from 100% power, the <span class="hi-exam">automatic</span> actions include: <span class="hi-exam">500KV output breakers 1-9 and 9-10 open</span> (every turbine trip), <span class="hi-exam">4KV Group buses swap from APT to Station Power Transformers</span> (off-site power) when the output breakers open, and the <span class="hi-exam">Main Generator Exciter Field Breaker opens</span>. <span class="hi-trap">Running EHC pumps do NOT auto-stop; Emergency Bearing Oil pumps do NOT start (the aux bearing oil pump starts); 4KV VITAL buses do NOT swap (already powered from off-site).</span> See [[500KV]], [[4KV]], [[Main Turbine]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+The <span class="hi-exam">OHA F-17 ARP covers blocking the Intermediate Range channels (BLOCK INTERMEDIATE RANGE A and B pushbuttons)</span>. <span class="hi-trap">Distractor trap: an IR bistable illuminating at 15% power is NOT the expected point to block both IR channels per F-17 — the IR Hi Flux trip was already blocked above P-10, and the bistable illumination at 15% is unexpected and is investigated, not reset by blocking IR.</span> See [[Excore NIs]], [[RPS/SSPS]].
+</div>
+
 ## Connections
 
 - Related systems: [[Annunciators]], [[RPS/SSPS]], [[Steam Generator & Blowdown]], [[500KV]], [[4KV]], [[Main Turbine]]
-- Related exam questions: [[2014 Q2]], [[2012 Q52]]
+- Related exam questions: [[2014 Q2]], [[2012 Q52]], [[2012 Q87]]
 - Related exam: [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

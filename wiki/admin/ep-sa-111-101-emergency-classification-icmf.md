@@ -117,10 +117,15 @@ Reference sheets: EP-SA-111-115 (p 1), EP-SA-111-104 (p 2), EP-SA-111-107 (p 1,3
 General Emergency PAR / ICMF completion (time-critical, <span class="hi-exam">15 minutes</span>) for a 13-point GE (loss of all three fission product barriers, EALs FB3.L, RB2.L, CB.1.L). With wind FROM <span class="hi-exam">050° (NE)</span>, the Predetermined PAR Flowchart (EP-SA-111-F4 Att 4) requires: Evacuate ALL sectors 0-5 miles; Evacuate the downwind +/- 1 sector group <span class="hi-exam">SSW, SW, WSW</span> 5-10 miles; Shelter all remaining sectors. 2R41D reads 2.5E3 µCi/sec, below the Federal Limit of <span class="hi-exam">2.42E+05 µCi/sec</span> Noble Gas, so the ICMF is marked "NO RADIOLOGICAL RELEASE IS IN PROGRESS" and Box IIb (PAR Upgrade) is NOT checked.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q100</div>
+Salem ECG, Introduction and Usage, <span class="hi-exam">Section 8.6, Conditions Discovered After-the-Fact</span>: an after-the-fact event is one that exceeded an EAL threshold, was not recognized at the time, and is identified <span class="hi-exam">more than one hour after the conditions occurred and no longer exists</span>. Such events are assessed to ensure no EAL currently applies — <span class="hi-exam">no emergency declaration is required; a non-emergency One-Hour Report is initiated</span>. Applied to a liquid release that exceeded EAL RU1.3 (2X ODCM for &gt;60 min) but was secured 2 hours ago: declare nothing — initiate the non-emergency One-Hour Report. <span class="hi-trap">Trap: do NOT declare-then-terminate or declare-then-retract a UE (no declaration is required for an after-the-fact condition that no longer exists); NJ DEP notification is for spills, not procedurally-performed discharges.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RCS]]
-- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[EP-SA-111 — Emergency Classification and Protective Action]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
-- Related exam questions: [[2015 Q99]], [[2014 Q79]], [[2014 Q100]]
+- Related systems: [[RCS]], [[Waste Liquid]], [[CVCS]]
+- Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[EP-SA-111 — Emergency Classification and Protective Action]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]], [[S2.OP-SO.WL-0002 — Radioactive Release from 22 CVCS Monitor Tank]], [[SECG — Reportable Action Levels (RAL)]]
+- Related exam questions: [[2015 Q99]], [[2014 Q79]], [[2014 Q100]], [[2012 Q100]]
 - Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM SRO-A5]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM SRO-A4]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

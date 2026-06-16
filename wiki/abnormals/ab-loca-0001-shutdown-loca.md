@@ -40,10 +40,15 @@ AB.LOCA-0001 progression for an unidentified RCS leak during a normal MODE 3 coo
 <span class="hi-trap">AB.LOCA-0001 is a distractor for a Mode 5 RCS pressure transient with RHR in service — it is used in Modes 3/4 with the accumulators isolated, NOT Mode 5.</span> For a momentary pressure rise that lifts the PZR PORVs / 1RH3 RHR relief in Mode 5, the correct procedure is AB.PZR-0001 (ensure PORVs reshut), not AB.LOCA-0001.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q86</div>
+<span class="hi-trap">For a second-RCP-start pressure transient to 390 psig in Mode 5 with RHR in service, AB.LOCA-0001 (Shutdown LOCA) is the wrong procedure — it applies to Modes 3/4 with accumulators isolated.</span> Isolating letdown to minimize inventory loss is not the correct response; the crew enters AB.PZR-0001 to ensure any PZR PORV that opened has reshut.
+</div>
+
 ## Connections
 
 - Related systems: [[RHR]], [[CVCS]], [[RCS]]
 - Related procedures: [[AB.RHR-0001 — Loss of RHR]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - Related EOPs: [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]]
-- Related exam questions: [[2016 Q100]], [[2019 Q78]], [[2020 Q6]], [[2020 Q85]], [[2014 Q87]]
+- Related exam questions: [[2016 Q100]], [[2019 Q78]], [[2020 Q6]], [[2020 Q85]], [[2014 Q87]], [[2012 Q86]]
 - Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2014 NRC Written Exam]]

@@ -66,10 +66,15 @@ FRSM-1 actions cited as a distractor: <span class="hi-exam">"Establish AFW flow 
 ATWS at 4% power awaiting Mode 1 (steam dumps in service, 21 SGFP in service, 22 SGFP latched at idle, all AFW secured): the EOP network including FRPs is in effect in <span class="hi-exam">Modes 1–3</span>, so FRSM-1 is applicable. Crew initiates manual rod insertion, then enters FRSM-1 and <span class="hi-exam">starts both MDAFW pumps</span>. <span class="hi-trap">Trap B: FRSM-1 does NOT check feed flow generally — it specifically checks AFW flow. So even with Main Feed flow occurring (>44E4 lbm/hr), operators still start MDAFW pumps in FRSM-1.</span> <span class="hi-trap">Trap C/D: Rx trip is NOT confirmed by power &lt;5% alone — confirmation also requires negative SUR and power lowering.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+<span class="hi-trap">Distractor trap: an Intermediate Range bistable illuminating at 15% power is not an ATWT, so the FRSM-1 entry (after a failed manual trip — verify turbine tripped, initiate rod insertion, go to FRSM-1) is the wrong response.</span> The IR Hi Flux trip is already blocked above P-10, so no reactor trip is expected and the power ascension continues while investigating the cause.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2016 Q78]], [[2016 Q83]], [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]]
+- Related exam questions: [[2016 Q78]], [[2016 Q83]], [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]], [[2012 Q87]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2012 NRC Written Exam]]

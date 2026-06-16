@@ -27,6 +27,11 @@ These interlocks are duplicated here from [[RPS/SSPS]] (the master reference) fo
 
 Note: Automatic rod withdrawal is disabled at Salem. (UFSAR T7.2-2)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q76</div>
+Permissive <span class="hi-exam">P-2 actuates at &lt;15% turbine load and prevents automatic rod withdrawal</span>. With the Main Turbine online below P-2, control rods should NOT be withdrawing in automatic. If automatic rod withdrawal is observed below P-2 it is unexpected and is addressed by entering [[AB.ROD-0003 — Continuous Rod Motion]] — place control rods in MANUAL and adjust control rods to restore Tavg to within 1.5°F of program.
+</div>
+
 ## Rod Bank Selector Switch Speeds
 
 <div class="callout callout-exam">
@@ -202,6 +207,11 @@ SDM calculation per TSAS 3.1.3.1 Action c.3 with rod 105 declared INOPERABLE (tr
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q88</div>
+During a startup, OHA E-48 ROD BOTTOM <span class="hi-exam">clears once Control Bank A is withdrawn past 20 steps</span> (Banks B/C/D bypassed below 35 steps). If E-48 reappears and locks in as Control Bank B is withdrawn past 20 steps with no other alarms, the alarm is <span class="hi-exam">unexpected — it was already clear, so this is a malfunction, not a reflash</span>. The CRS places the startup on hold and enters AB.ROD-0002 (which directs entry into AB.ROD-0004) or AB.ROD-0004 directly. <span class="hi-trap">Opening the Reactor Trip Breakers is NOT required — there is a 4 hour window to terminate the startup (IOP-3 step 5.2.19).</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q76</div>
 A dropped Shutdown Bank rod with the Rx exactly critical during low-power physics testing: per AB.ROD-0002, the CRS directs <span class="hi-exam">fully inserting all Control Bank and Shutdown Bank rods</span> (becoming subcritical) — a dropped-rod recovery is NOT done because <span class="hi-trap">withdrawing the recovered rod would constitute an approach to criticality</span> (only allowed via the startup procedure). See [[AB.ROD-0002 — Dropped Rod]].
 </div>
@@ -261,6 +271,6 @@ A dropped rod (OHA E-48 ROD BOTTOM) is treated by AB.ROD-0002. <span class="hi-e
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]], [[CVCS]], [[Main Turbine]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[curve book]]
 - Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
-- Related exam questions: [[2014 Q1]], [[2014 Q28]], [[2015 Q9]], [[2015 Q11]], [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2016 Q77]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]], [[2015 Q28]], [[2015 Q76]], [[2015 Q88]], [[2015 Q94]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]], [[2014 Q52]], [[2014 Q76]], [[2014 Q77]], [[2012 Q1]], [[2012 Q9]], [[2012 Q10]], [[2012 Q13]], [[2012 Q28]]
+- Related exam questions: [[2014 Q1]], [[2014 Q28]], [[2015 Q9]], [[2015 Q11]], [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2016 Q77]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]], [[2015 Q28]], [[2015 Q76]], [[2015 Q88]], [[2015 Q94]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]], [[2014 Q52]], [[2014 Q76]], [[2014 Q77]], [[2012 Q1]], [[2012 Q9]], [[2012 Q10]], [[2012 Q13]], [[2012 Q28]], [[2012 Q88]], [[2012 Q76]], [[2012 Q94]]
 - Related JPMs: [[2018 JPM Sim-a]], [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]], [[2015 JPM Sim-a]], [[2014 JPM Sim-g]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Written Exam]]

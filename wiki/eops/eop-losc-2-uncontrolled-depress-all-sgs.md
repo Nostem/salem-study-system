@@ -26,6 +26,16 @@ LOSC-2 CAS: <span class="hi-exam">upon a pressure rise in any SG except when per
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q78</div>
+<span class="hi-trap">There is no direct transition into EOP-LOSC-2.</span> For a SBLOCA with one faulted SG already isolated, the crew does NOT transition directly to LOSC-2 — the entry path requires going through [[EOP-LOSC-1 — Loss of Secondary Coolant]] first (TRIP-1 → LOSC-1 → LOSC-2). With only one faulted SG that is already isolated and the other SGs reacting to cool ECCS injection (not faulted), the crew continues in [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]] rather than entering the LOSC series at all.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q84</div>
+Same scenario/logic as 2016 Q85: MSLB at the Mixing Bottle, all MSLI attempts failed (21-24MS167s open), SI termination steps complete in LOSC-2 with PZR level stable, AFW 1.0E4 lbm/hr to each SG, then 22 SG pressure rises. The <span class="hi-exam">LOSC-2 CAS directs GO TO EOP-LOSC-1 on a pressure rise in any SG except during SI termination Steps 8-20</span>; the stem is after Step 20, so the crew transitions to EOP-LOSC-1 because <span class="hi-exam">one SG is now available for subsequent recovery actions</span> (LOSC-1 Basis Document page 7: "Any cooldown operations that are performed as subsequent recovery actions will require at least one nonfaulted SG"). <span class="hi-trap">Trap: the transition is NOT deferred until the remaining SGs fully depressurize, and the discriminator is the procedure transition — not an RCP-stop criterion.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q7</div>
 Step 26 — restore normal power to PZR heaters or transfer to emergency backup. PZR heater Group 1 is normally powered from 2G bus, with emergency backup from 2C 460V vital bus. Group 2 is normally powered from 2E bus, with emergency backup from 2A 460V vital bus. The transfer is manual.
 </div>
@@ -74,6 +84,6 @@ For a MSLB at the Main Turbine inlet with all MSLI attempts failed and an uncont
 
 - Related systems: [[Pressurizer & PRT]], [[500KV]], [[Steam Generator & Blowdown]], [[AFW]], [[Main Steam]], [[RCPs]], [[RHR]]
 - Related EOPs: [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]], [[2015 Q45]], [[2014 Q85]], [[2012 Q25]]
+- Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]], [[2015 Q45]], [[2014 Q85]], [[2012 Q25]], [[2012 Q78]], [[2012 Q84]]
 - Related scenarios: [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2014 Scenario 1]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

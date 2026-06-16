@@ -57,6 +57,6 @@ On a <span class="hi-exam">2R9 (New Fuel Storage) Area Radiation Monitor High Ra
 - Related systems: [[Spent Fuel Pool]], [[Radiation Monitoring]], [[Control Air]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.FUEL-0001 — Fuel Handling Incident]]
-- Related exam questions: [[2016 Q80]], [[2016 Q88]], [[2019 Q33]], [[2019 Q36]], [[2015 Q73]]
+- Related exam questions: [[2016 Q80]], [[2016 Q88]], [[2019 Q33]], [[2019 Q36]], [[2015 Q73]], [[2012 Q90]]
 - Related JPMs: [[2016 JPM SRO-A1-2]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]

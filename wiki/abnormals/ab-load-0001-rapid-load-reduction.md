@@ -81,10 +81,15 @@ After a 90 gpd SGTL meets AB.SG-0001 Action Level 3 (power must be <span class="
 A 100% → 20% rapid down power at 1% per minute IAW AB.LOAD-0001 causes an RCS outsurge as Tavg lowers; with charging master flow failed as-is, <span class="hi-exam">PZR program level at 20% power (Tavg 551.6°F) is ~28%</span>. See [[Pressurizer Level & Press Control]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q76</div>
+Rod control is <span class="hi-exam">normally placed in manual upon reaching 20% power in AB.LOAD-0001</span>. If rods are left in automatic, Permissive P-2 (&lt;15% turbine load) prevents automatic rod withdrawal, so any automatic rod withdrawal below P-2 is unexpected and is addressed with the abnormal rod-withdrawal procedure (AB.ROD-0003), <span class="hi-trap">not by lowering or tripping the Main Turbine per AB.LOAD-0001 — turbine actions do not address the rod failure</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[Main Turbine]], [[Circ Water]], [[Control Rod Drive]], [[RPS/SSPS]], [[Pressurizer Level & Press Control]]
 - Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.COND-0001 — Loss of Condenser Vacuum]]
-- Related exam questions: [[2023 Q88]], [[2014 Q42]], [[2012 Q40]]
+- Related exam questions: [[2023 Q88]], [[2014 Q42]], [[2012 Q40]], [[2012 Q81]], [[2012 Q76]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

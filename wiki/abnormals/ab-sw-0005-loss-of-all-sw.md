@@ -39,6 +39,11 @@ Initiating Cue: 100% power, 21 charging pump in service, 23 charging pump aligne
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q82</div>
+With #4 SW Bay already isolated for a 25SW3 leak and only 21 and 23 SW pumps running, a 2A EDG output-breaker trip (Bus Differential) followed by the 23 SW pump tripping on overcurrent at runout leaves no SW pumps running — a loss of ALL service water. The CRS <span class="hi-exam">enters AB.SW-0005: trip the Rx, confirm the trip, and stop RCPs to limit heat input to the CCW system and preserve the RCP seal packages</span>. <span class="hi-trap">AB.SW-0001 (Loss of SW Header Pressure) does not perform these actions, and entering AB.TRB-0001 after AB.SW-0005 is wrong because the Rx is already tripped in AB.SW-0005. AB.SW-0005 must be entered BEFORE exiting the TRIP series — not after exiting TRIP-2.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q78</div>
 AB.SW-0005 (Loss of All Service Water) has a CAS: <span class="hi-exam">if RHR is in service, GO TO AB.RHR-1 or AB.RHR-2 depending on RPV level</span>. With RPV level &lt;97.5' (Mode 5), the FIRST action in AB.RHR-0002 is to STOP the in-service RHR pump. See [[RHR]], [[AB.RHR-0002 — Loss of RHR at Reduced Inventory]].
 </div>
@@ -47,6 +52,6 @@ AB.SW-0005 (Loss of All Service Water) has a CAS: <span class="hi-exam">if RHR i
 
 - Related systems: [[Service Water]], [[EDGs]], [[4KV]], [[CCW]], [[CVCS]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[S2.OP-SO.CVC-0002 — Charging Pump Operation]]
-- Related exam questions: [[2016 Q92]], [[2020 Q53]], [[2022 Q90]], [[2015 Q78]]
+- Related exam questions: [[2016 Q92]], [[2020 Q53]], [[2022 Q90]], [[2015 Q78]], [[2012 Q82]]
 - Related JPMs: [[2016 JPM Sim-e]]
 - Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]

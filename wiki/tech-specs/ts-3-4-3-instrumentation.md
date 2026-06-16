@@ -491,6 +491,11 @@ The accident monitoring instrumentation channels shown in Table 3.3-11 shall be 
 
 **SR 4.3.3.7:** CHANNEL CHECK, CHANNEL CALIBRATION, and CHANNEL FUNCTIONAL TEST per Surveillance Frequency Control Program unless otherwise noted in Table 4.3-11
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q80</div>
+The <span class="hi-exam">PZR Cold Cal level channel (LI-462) is NOT included in either the Reactor Trip System Instrumentation (TS 3.3.1.1) or the Accident Monitoring Instrumentation (TS 3.3.3.7)</span> — so its failure at 100% power requires <span class="hi-exam">NO Tech Spec entry</span>. (LI-462 is used when RCS temperature is <200°F, per [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]].) <span class="hi-trap">Trap: the bases statements in the distractors are themselves correct — 3.3.1.1 exists to provide overall reliability/redundancy/diversity for accident and transient mitigation; 3.3.3.7 exists to ensure sufficient post-accident information on selected plant parameters — but neither TS is entered because LI-462 is not one of their instruments. Tracking the failed channel is done per [[SC.OP-DL.ZZ-0010 — Control Room Instrumentation and Alarms]] (INFO sticker, not red translucent tape, since LI-462 is not an inoperable alarm).</span>
+</div>
+
 #### Accident Monitoring Channels (Table 3.3-11)
 
 | # | Instrument | Required Channels | Min Channels | Action |
@@ -721,10 +726,15 @@ Per TSAS 3.3.1.1, Table 3.3-6, <span class="hi-exam">only ONE of the two FHB (Fu
 Intermediate Range NI operability per TSAS 3.3.1.1: there is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">ONE inoperable IR NI only — with BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). Supporting procedure facts (S1.OP-IO.ZZ-0003): <span class="hi-exam">at least a one-decade SR/IR overlap is required when raising power (step 5.2.33)</span>; with SR at ~30,000 counts the overlap should already be present, so each IR NI should read ~<span class="hi-exam">1x10-10A</span>; the <span class="hi-exam">SR Hi Flux trip is at 100,000 counts</span>. <span class="hi-trap">Trap: declaring only TSAS 3.3.1.1 entry (the one-channel action) when BOTH channels are inoperable — the correct entry is TS 3.0.3.</span> See [[Incores]], [[TS 3/4.0 — Applicability]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+TSAS 3.3.1.1 Functional Unit 5 (Intermediate Range Neutron Flux, ≤25% RTP, blocked above P-10): per <span class="hi-exam">Action 3.c, above 5% power, power operation may continue</span> with an IR channel condition. During a power ascension at 15% power, an IR bistable illuminating (at its 25% alarm setpoint) does not require lowering power — the ascension may continue while investigating the cause, because the IR Hi Flux trip is already blocked above P-10.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]], [[Radiation Monitoring]], [[Excore NIs]], [[Incores]]
-- Related exam questions: [[2014 Q12]], [[2014 Q68]], [[2015 Q16]], [[2018 Q82]], [[2018 Q89]], [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]], [[2015 Q27]], [[2015 Q89]], [[2014 Q94]]
+- Related exam questions: [[2014 Q12]], [[2014 Q68]], [[2015 Q16]], [[2018 Q82]], [[2018 Q89]], [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]], [[2015 Q27]], [[2015 Q89]], [[2014 Q94]], [[2012 Q80]], [[2012 Q87]]
 - Related JPMs: [[2016 JPM SRO-A3]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2012 NRC Written Exam]]

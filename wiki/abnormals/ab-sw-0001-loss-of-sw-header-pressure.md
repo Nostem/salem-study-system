@@ -91,7 +91,7 @@ A #2 SW Bay leak first brings in unexpected SW alarms and lowering SW header pre
 
 - Related systems: [[Service Water]], [[CFCUs]], [[EDGs]], [[CCW]]
 - Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]], [[AB.SW-0005 — Loss of All Service Water]], [[AB.SW-0003 — Service Water Bay Leak]]
-- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]], [[2015 Q80]], [[2014 Q47]], [[2014 Q83]], [[2012 Q62]]
+- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]], [[2015 Q80]], [[2014 Q47]], [[2014 Q83]], [[2012 Q62]], [[2012 Q82]]
 - Related JPMs: [[2016 JPM Sim-e]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]], [[2014 Scenario 3]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

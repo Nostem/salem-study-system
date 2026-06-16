@@ -68,11 +68,16 @@ When restarting an RHR pump after a loss of RHR and when <span class="hi-exam">t
 In MODE 4 with 21 RHR pump in shutdown cooling and 22 RHR aligned for ECCS, a loss of all offsite power (SEC MODE II Blackout) causes the <span class="hi-exam">2A SEC to trip the running 21 RHR pump, and it does NOT restart when the 2A EDG connects to the 2A vital bus</span> (RHR pumps are not blackout loads). That is why AB.LOOP-0001 step 3.8 directs initiating AB.RHR-0001 when a RHR pump was running in SDC mode. See [[AB.LOOP-0001 — Loss of All Offsite Power]], [[SECs]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q79</div>
+After normal restoration and local venting, RHR flow must be <span class="hi-exam">stable between 1800-3000 gpm</span> (with all other RHR parameters normal) to exit AB.RHR-0001. RHR flow <span class="hi-exam">oscillating 1500-3000 gpm fails this criterion</span>, so the exit step is answered NO. The procedure then <span class="hi-exam">directs stopping ANY running RHR pump (Step 3.30) and initiating an alternate method of Decay Heat Removal (Step 3.32)</span>. With the highest CET <200°F and the RCS intact, the preferred alternate method is <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (Attachment 7, Hot Leg Injection, is not preferred with the RCS intact and CETs <200°F). <span class="hi-trap">Trap: because the procedure stops all RHR pumps, restarting the idle 21 RHR pump is NOT directed.</span> See [[RHR]].
+</div>
+
 ## Connections
 
 - Related systems: [[RHR]], [[SECs]], [[EDGs]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.CONT-0001 — Containment Closure]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2014 Q8]], [[2015 Q6]], [[2018 Q53]], [[2018 Q84]], [[2018 Q87]], [[2019 Q78]], [[2019 Q86]], [[2020 Q6]], [[2023 Q79]], [[2012 Q12]]
+- Related exam questions: [[2014 Q8]], [[2015 Q6]], [[2018 Q53]], [[2018 Q84]], [[2018 Q87]], [[2019 Q78]], [[2019 Q86]], [[2020 Q6]], [[2023 Q79]], [[2012 Q12]], [[2012 Q79]]
 - Related JPMs: [[2020 JPM Sim-b]], [[2015 JPM Sim-h]]
 - Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

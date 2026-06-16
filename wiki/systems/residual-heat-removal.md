@@ -184,6 +184,11 @@ Loss of both RHR pumps in Mode 5 with RCS depressurized and vented (2PS59). 21 R
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q79</div>
+To exit AB.RHR-0001 after a loss of RHR (normal restoration + local venting complete), <span class="hi-exam">RHR flow must be stable between 1800-3000 gpm</span>. Flow <span class="hi-exam">oscillating 1500-3000 gpm fails this gate</span>, so the procedure directs <span class="hi-exam">stopping any running RHR pump (Step 3.30) and initiating an alternate method of Decay Heat Removal (Step 3.32)</span>. With the highest CET <200°F and RCS intact, the preferred alternate is <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (not Attachment 7, Hot Leg). <span class="hi-trap">Because all RHR pumps are stopped, restarting the idle RHR pump is not directed.</span> See [[AB.RHR-0001 — Loss of RHR]].
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q63</div>
 During LOCA outside containment (EOP-LOCA-6), the crew is MOST concerned with <span class="hi-exam">RHR piping connecting to the RCS</span> because it is only rated to <span class="hi-exam">600 psig</span> (vs RCS piping rated to 2500 psig). This is the basis for the leak isolation strategy in LOCA-6.
 </div>
@@ -268,12 +273,17 @@ RHR pump 4KV vital bus power supplies: <span class="hi-exam">11 RHR pump from A 
 With RHR in service in Mode 5, an RCS pressure transient that exceeds <span class="val-trip">375 psig</span> (e.g., momentarily to 390 psig on starting a second RCP) opens both the <span class="hi-exam">PZR PORVs and the 1RH3 RHR SAF RLF VLV TO CONTAINMENT SUMP at their 375 psig setpoints</span>. <span class="hi-trap">The 1RH3 relief lifting is NOT apparent to the control room, but the PORV opening IS</span> — so the crew enters AB.PZR-0001 (PZR Pressure Malfunction), Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-exam">The 1RH2 RHR COMMON SUCT MOV has an OPENING interlock (RCS pressure &lt;375 psig + keyswitch) and does NOT auto-close on high pressure.</span> AB.LOCA-0001 (Shutdown LOCA) is used in Modes 3/4 with accumulators isolated, not Mode 5.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q86</div>
+Starting the second RCP in Mode 5 with RHR in service, RCS pressure momentarily rises to 390 psig: <span class="hi-exam">the 1RH3 RHR SAF RLF VLV TO CONTAINMENT SUMP opens at its 375 psig setpoint</span> (not apparent to the control room) and the PZR PORVs also open (apparent to the control room). Enter AB.PZR-0001, Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-trap">The 1RH2 RHR COMMON SUCT MOV does NOT auto-shut on high pressure — it has only an OPENING interlock (&lt;375 psig + keyswitch). AB.LOCA-0001 is not entered in Mode 5.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Control Air]], [[EDGs]], [[DC Power]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.RHR-0001 — Initiating RHR]], [[S1.OP-SO.SJ-0001 — Preparation of the Safety Injection System for Operation]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related exam questions: [[2014 Q4]], [[2014 Q8]], [[2014 Q33]], [[2014 Q34]], [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]], [[2014 Q24]], [[2014 Q87]], [[2012 Q3]], [[2012 Q6]], [[2012 Q12]], [[2012 Q15]], [[2012 Q20]], [[2012 Q24]], [[2012 Q25]], [[2012 Q33]], [[2012 Q34]], [[2012 Q36]]
+- Related exam questions: [[2014 Q4]], [[2014 Q8]], [[2014 Q33]], [[2014 Q34]], [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]], [[2014 Q24]], [[2014 Q87]], [[2012 Q3]], [[2012 Q6]], [[2012 Q12]], [[2012 Q15]], [[2012 Q20]], [[2012 Q24]], [[2012 Q25]], [[2012 Q33]], [[2012 Q34]], [[2012 Q36]], [[2012 Q79]], [[2012 Q86]], [[2012 Q93]]
 - Related JPMs: [[2014 JPM Sim-b]], [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]], [[2016 JPM Sim-b]], [[2015 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

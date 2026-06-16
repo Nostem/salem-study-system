@@ -56,10 +56,21 @@ Rod withdrawal to criticality (Step 5.3.18.D): withdraw Control Banks A/B/C with
 A MODE 2 startup by control rods is performed IAW this procedure (cited on the worksheet as the Unit 1 equivalent <span class="hi-exam">S1.OP-IO.ZZ-0003</span>). With Rx power stable at 4%, a loss of 1D 115V Vital Instrument Bus illuminates the <span class="hi-exam">Yellow High Flux PRNI CH IV lamp for BOTH High Power and Low Power on Reactor Status Panel 1RP4</span> — no reactor trip results (loss of one VIB gives no trip demand). See [[Excore NIs]], [[AB.115-0004 — Loss of 1D 115V Vital Instrument Bus]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+During a power ascension under this procedure at 15% power (prior to rolling the Main Turbine), the <span class="hi-exam">Intermediate Range bistable illuminating at its 25% alarm setpoint is NOT expected at this point</span> — but the power ascension may continue while investigating the cause, because the IR Hi Flux trip was already blocked above P-10 (TS 3.3.1.1 Functional Unit 5 Action 3.c allows operation above 5% power). The bistable output is already blocked.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q88</div>
+During a startup under this procedure, OHA E-48 ROD BOTTOM <span class="hi-exam">clears once Control Bank A is withdrawn past 20 steps</span>; if it reappears and locks in as Control Bank B is withdrawn past 20 steps (no other alarms), the alarm is unexpected — place the startup on hold and enter AB.ROD-0002 (directs entry into AB.ROD-0004) or AB.ROD-0004. <span class="hi-trap">Opening the Reactor Trip Breakers is not required — step 5.2.19 provides a 4 hour window to terminate the startup.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]], [[AFW]], [[Main Steam]]
-- Related procedures: [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]]
-- Related exam questions: [[2016 Q69]], [[2018 Q39]], [[2015 Q76]], [[2015 Q94]], [[2014 Q55]], [[2012 Q13]]
+- Related systems: [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]], [[AFW]], [[Main Steam]], [[RPS/SSPS]]
+- Related procedures: [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0004 — Rod Position Indication Failure]], [[S2.OP-AR.ZZ-0006 — Overhead Annunciators Window F]]
+- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related exam questions: [[2016 Q69]], [[2018 Q39]], [[2015 Q76]], [[2015 Q94]], [[2014 Q55]], [[2012 Q13]], [[2012 Q87]], [[2012 Q88]], [[2012 Q91]]
 - Related JPMs: [[2018 JPM Sim-e]], [[2015 JPM Sim-e]], [[2014 JPM Sim-g]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

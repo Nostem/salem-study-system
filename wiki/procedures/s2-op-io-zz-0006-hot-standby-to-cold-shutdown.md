@@ -43,10 +43,16 @@ During an EOP-TRIP-4 Natural Circulation Cooldown, IOP-6 shutdown activities (in
 IOP-6 PZR hot/cold calibrated level (Exhibit 1, page 1 and page 2): with <span class="hi-exam">hot cal level 95% at 400°F, ACTUAL PZR level is ~66%</span>, which corresponds to a <span class="hi-exam">cold cal level of ~56-57%</span> at 400°F. After the cooldown rate has been reduced, IOP-6 directs operators to <span class="hi-exam">RAISE charging flow to establish 80% cold cal level</span>. <span class="hi-exam">Prior to the 80% requirement, the procedure requires 25-53% (steps 5.1.5 and 5.1.16)</span>. <span class="hi-trap">Trap: this is not a direct lookup — the changes in required cooldown rate, PZR level, and the hot-cal/cold-cal transition must all be accounted for. Salem had a 2008 PZR drain-down event tied to inadequate understanding of the hot-cal/cold-cal correlation.</span> See [[Pressurizer Level & Press Control]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q80</div>
+The <span class="hi-exam">PZR Cold Cal level channel (LI-462) is used when RCS temperature is <200°F</span>, as directed in IOP-6 during the cooldown to cold shutdown. Because it is a shutdown-only indication, <span class="hi-exam">LI-462 is NOT credited in TS 3.3.1.1 (Reactor Trip System Instrumentation) or TS 3.3.3.7 (Accident Monitoring)</span> — its failure at 100% power requires no Tech Spec entry. See [[TS 3/4.3 — Instrumentation]], [[SC.OP-DL.ZZ-0010 — Control Room Instrumentation and Alarms]].
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Containment]], [[RCS]], [[Pressurizer Level & Press Control]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RC-0001 — Reactor Coolant System Leak]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[SC.OP-DL.ZZ-0010 — Control Room Instrumentation and Alarms]]
 - Related EOPs: [[EOP-TRIP-4 — Natural Circulation]]
-- Related exam questions: [[2016 Q100]], [[2020 Q39]], [[2022 Q32]], [[2014 Q88]], [[2014 Q95]]
-- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related exam questions: [[2016 Q100]], [[2020 Q39]], [[2022 Q32]], [[2014 Q88]], [[2014 Q95]], [[2012 Q80]], [[2012 Q91]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

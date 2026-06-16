@@ -45,6 +45,11 @@ OHA E-48 (ROD BOTTOM): illuminates when all rod banks are on bottom; during a re
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q88</div>
+OHA E-48 (ROD BOTTOM) <span class="hi-exam">clears once Control Bank A is withdrawn past 20 steps</span> during a startup (Banks B/C/D bypassed below 35 steps). E-48 reappearing and locking in as Control Bank B is withdrawn past 20 steps — with no other alarms — is <span class="hi-exam">unexpected</span> (the alarm was already clear). Place the startup on hold and enter AB.ROD-0002 (directs entry into AB.ROD-0004) or AB.ROD-0004. <span class="hi-trap">Opening the Reactor Trip Breakers is not required — IOP-3 step 5.2.19 gives a 4 hour window to terminate the startup.</span> See [[Control Rod Drive]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0004 — Rod Position Indication Failure]].
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q38</div>
 OHA E-20 (PZR HTR ON LVL HI) energizes backup PZR heaters at 5% above program. With the controlling PZR level channel failed low (0%), <span class="hi-exam">backup heaters should NOT be energized — the 17% low-level cutoff keeps them OFF</span>. See [[Pressurizer Level & Press Control]], [[AB.CVC-0001 — Loss of Charging]].
 </div>
@@ -62,6 +67,6 @@ OHA <span class="hi-exam">E-5, "SR DET VOLT TRBL,"</span> is NOT expected to be 
 ## Connections
 
 - Related systems: [[Control Rod Drive]], [[CVCS]], [[Excore NIs]], [[Pressurizer Level & Press Control]]
-- Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[S2.OP-SO.CVC-0001 — CVCS Normal Operations]], [[S2.OP-SO.CVC-0012 — Letdown HX Temperature Control]]
-- Related exam questions: [[2016 Q13]], [[2019 Q82]], [[2020 Q19]], [[2020 Q22]], [[2022 Q56]], [[2015 Q28]], [[2015 Q38]], [[2012 Q32]], [[2012 Q46]]
+- Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[S2.OP-SO.CVC-0001 — CVCS Normal Operations]], [[S2.OP-SO.CVC-0012 — Letdown HX Temperature Control]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0004 — Rod Position Indication Failure]]
+- Related exam questions: [[2016 Q13]], [[2019 Q82]], [[2020 Q19]], [[2020 Q22]], [[2022 Q56]], [[2015 Q28]], [[2015 Q38]], [[2012 Q32]], [[2012 Q46]], [[2012 Q88]]
 - Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]
