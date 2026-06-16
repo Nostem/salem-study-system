@@ -126,11 +126,16 @@ Entry condition via loss of RCP bearing cooling water: the <span class="hi-exam"
 AB.RCP-0001 directs a <span class="hi-exam">reactor trip only if BOTH RCP seal injection flow AND Thermal Barrier cooling flow are lost — not just one or the other</span>. With only seal injection lost (loss of all charging), <span class="hi-exam">flow from the RCS past the Thermal Barrier heat exchanger maintains RCP seal temperature</span>, allowing continued operation while attempting to restore charging.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q89</div>
+On a spurious <span class="hi-exam">OHA C-16 PHASE B CNTMT ISOL ACT</span> (e.g., during a containment pressure channel calibration), the Window C ARP directs an attempt to reset and open the Phase B isolation valves; <span class="hi-exam">if Phase B cannot be reset, GO TO S2.OP-AB.RCP-0001</span> because Phase B isolates CCW to the RCPs (loss of RCP cooling).
+</div>
+
 ## Connections
 - Related systems: [[RCPs]], [[CCW]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[AB.RC-0004 — Natural Circulation]]
-- Related exam questions: [[2014 Q5]], [[2014 Q30]], [[2018 Q51]], [[2018 Q79]], [[2019 Q55]], [[2020 Q4]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2012 Q30]]
+- Related exam questions: [[2014 Q5]], [[2014 Q30]], [[2018 Q51]], [[2018 Q79]], [[2019 Q55]], [[2020 Q4]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2012 Q30]], [[2012 Q89]]
 - Related JPMs: [[2015 JPM Sim-g]]
 - Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 4]], [[2014 Scenario 1]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

@@ -150,6 +150,16 @@ After Rx trip stabilization in TRIP-1 for an SBLOCA with LOOP, the crew transiti
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q78</div>
+The procedure transition to <span class="hi-exam">EOP-LOSC-1 is made before EOP-LOCA-1 when in EOP-TRIP-1</span>. Once all actions to isolate a faulted SG are complete and the crew has transitioned to LOCA-1, the <span class="hi-exam">first step in LOCA-1 is to check for faulted SGs that have NOT been isolated</span>. If the only faulted SG is already isolated, the crew <span class="hi-exam">continues in LOCA-1</span> — the unisolated SG pressures lowering is caused by cool ECCS water being pumped into the RCS, not by new SG faults. <span class="hi-trap">Trap: there is no direct transition to EOP-LOSC-2 — LOSC-1 must be entered first; and RCS pressure will still be lowering (not stable/rising) because of the isolated faulted SG, so an "earlier transition to TRIP-3" reasoning is wrong.</span> See [[Steam Generator & Blowdown]], [[EOP-LOSC-1 — Loss of Secondary Coolant]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q77</div>
+When a PZR PORV indicates open in EOP-TRIP-1 (Step 23, PZR PORV STATUS) and neither the PORV nor its block valve can be shut, the crew <span class="hi-exam">transitions to EOP-LOCA-1 — the transition to EOP-TRIP-3 is NOT made in TRIP-1</span>, because TRIP-1 cannot size the PORV leak. Once in LOCA-1, there are steps redundant to TRIP-1 to attempt to close the PORV or its block valve, then the procedure continues (no further transition based on PORV/block-valve status). Immediately after the PORV Status step in LOCA-1, <span class="hi-exam">SI Flow Reduction criteria are checked: Subcooling >0°F; AFW flow / adequate SG NR level; RCS pressure stable or rising; PZR level >11%</span>. With a small RCS leak (here 70 gpm, within charging-pump makeup) and a small PORV opening (normal RCS pressure), these criteria can be met, allowing the transition to [[EOP-TRIP-3 — SI Termination]] from LOCA-1.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q72</div>
 EOP-LOCA-1 <span class="hi-exam">step 16</span> checks for radiation outside containment (determining whether a LOCA outside containment is occurring) using these monitors: <span class="hi-exam">2R4 (charging pump area), 2R41D (plant vent process), 2R34 (Mechanical Penetration 100'), 1R3 (Radio Chem lab area), 1R6A (Sampling room), and 1R20B (counting room)</span>.
 </div>
@@ -158,7 +168,7 @@ EOP-LOCA-1 <span class="hi-exam">step 16</span> checks for radiation outside con
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]], [[ESF & Design]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2014 Q4]], [[2015 Q21]], [[2015 Q24]], [[2016 Q4]], [[2016 Q44]], [[2016 Q45]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]], [[2015 Q34]], [[2015 Q82]], [[2015 Q91]], [[2014 Q84]], [[2012 Q15]], [[2012 Q21]], [[2012 Q24]], [[2012 Q72]]
+- Related exam questions: [[2014 Q4]], [[2015 Q21]], [[2015 Q24]], [[2016 Q4]], [[2016 Q44]], [[2016 Q45]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]], [[2015 Q34]], [[2015 Q82]], [[2015 Q91]], [[2014 Q84]], [[2012 Q15]], [[2012 Q21]], [[2012 Q24]], [[2012 Q72]], [[2012 Q77]], [[2012 Q78]], [[2012 Q83]], [[2012 Q84]], [[2012 Q93]]
 - Related JPMs: [[2014 JPM Sim-b]], [[2022 JPM Sim-c]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 3]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Written Exam]]

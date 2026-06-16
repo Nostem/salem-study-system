@@ -114,7 +114,7 @@ Each RHR pump room has a sump for receiving room drains and leakage; <span class
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
-- Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]], [[S2.IC-CC.RM-0028 — 2R18 Liquid Waste Disposal Process Radiation Monitor]]
-- Related exam questions: [[2016 Q59]], [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]], [[2015 Q86]], [[2014 Q60]], [[2012 Q60]], [[2012 Q61]]
+- Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]], [[S2.OP-SO.WL-0002 — Radioactive Release from 22 CVCS Monitor Tank]], [[S2.IC-CC.RM-0028 — 2R18 Liquid Waste Disposal Process Radiation Monitor]]
+- Related exam questions: [[2016 Q59]], [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]], [[2015 Q86]], [[2014 Q60]], [[2012 Q60]], [[2012 Q61]], [[2012 Q100]]
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

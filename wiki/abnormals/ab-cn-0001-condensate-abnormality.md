@@ -106,6 +106,11 @@ With all Condensate and Heater Drain Tank pumps in service at 85% power and the 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q81</div>
+At 45% power, a 12 SG NR Channel IV fail-high with Channel I already out of service produces a 2/3 P-14 on 12 SG (NR &gt;67%), which <span class="hi-exam">trips the Main Turbine, trips both Main Feed pumps, and shuts the BF13s, BF19s, and BF40s (FW Isolation)</span>. The CRS enters AB.CN-0001, which <span class="hi-exam">directs a reactor trip when power is &gt;P-10 (10%) and a loss of both SGFPs has occurred</span>. <span class="hi-trap">The reactor does NOT auto-trip on the Main Turbine trip because power is &lt;P-9 (49%). AB.TRB-0001 (Turbine Trip &lt;P-9) does not direct a Rx trip on a loss of both SGFPs — it only directs lowering power &lt;5%, which would instead force an automatic Rx trip on Lo-Lo SG NR level.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q10</div>
 On a 21 SGFP trip (polisher in service, full flow, no Rx trip), the UNEXPECTED alarm 2 minutes later is the <span class="hi-exam">Console Alarm RC PRESS DEVIATION HI</span> — its setpoint (<span class="hi-exam">+75 psig deviation</span>) corresponds to PZR spray valves full open, but the spray valves should be SHUT after the insurge from the load rejection and the large inward rod motion. <span class="hi-trap">OHA G-3 EHC SYS TRBL IS expected (G-3 takes input from the EHC Control and Status computer, which has a Loss of Feed Pump Runback alarm in).</span> <span class="hi-trap">OHA G-44 COND POL TRBL IS expected (CN108s auto-open on a SGFP trip while CN109 is open with the polisher in service).</span> <span class="hi-trap">Console Alarm RC LOOPS TAVG-TREF DEVIATION IS expected as rods drive in due to the turbine runback to 65%.</span>
 </div>
@@ -114,7 +119,7 @@ On a 21 SGFP trip (polisher in service, full flow, no Rx trip), the UNEXPECTED a
 
 - Related systems: [[Feed & Condensate]], [[Main Turbine]], [[AFW]], [[Pressurizer Level & Press Control]], [[Control Rod Drive]], [[Annunciators]]
 - Related procedures: [[HU-AA-101 — Human Performance Tools and Verification Practices]], [[S1.OP-AR.ZZ-0007]]
-- Related exam questions: [[2014 Q2]], [[2014 Q54]], [[2016 Q17]], [[2016 Q89]], [[2018 Q58]], [[2018 Q78]], [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]], [[2012 Q10]]
+- Related exam questions: [[2014 Q2]], [[2014 Q54]], [[2016 Q17]], [[2016 Q89]], [[2018 Q58]], [[2018 Q78]], [[2019 Q17]], [[2019 Q57]], [[2020 Q93]], [[2022 Q45]], [[2022 Q65]], [[2023 Q64]], [[2012 Q10]], [[2012 Q81]]
 - Related JPMs: [[2022 JPM Sim-e]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]]
 - Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

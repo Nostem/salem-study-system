@@ -293,6 +293,11 @@ SW loop OPERABILITY requires <span class="hi-exam">two SW pumps powered from sep
 TSAS 3.7.4 entry context: with 4 SW Bay isolated (leak on 25SW3), the unit is shut down in compliance with TSAS 3.7.4. <span class="hi-exam">SW pump bus alignment: 21/22/23 SW pumps are on AA/BB/CC vital buses; 24/25/26 SW pumps are unavailable when 4 SW Bay is isolated.</span> A 2A 4KV Vital Bus Differential <span class="hi-exam">opens the EDG output breaker AND prevents station-power infeed reclosure</span>, eliminating the only remaining SW power source — total loss of all SW results.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q82</div>
+A leak on 25SW3 (25 SW Pump Discharge Isolation Valve) isolates 4 SW Bay, and the difficulty of repair drives a shutdown <span class="hi-exam">to comply with TSAS 3.7.4</span> with 21 and 23 SW pumps in service. A subsequent 2A EDG output-breaker trip (Bus Differential) followed by the 23 SW pump tripping on overcurrent at runout leaves no SW pumps running — <span class="hi-exam">a loss of ALL service water, requiring entry to AB.SW-0005 (trip the Rx, stop RCPs to protect CCW and the RCP seals)</span>.
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.4 Service Water</summary>
 <div class="callout callout-bases">
@@ -599,7 +604,7 @@ Four Main Feedwater Isolation Valves (FIVs), four Main Feedwater Regulating Valv
 
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
 - Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
-- Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]], [[2014 Q37]], [[2014 Q82]], [[2014 Q97]]
+- Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]], [[2014 Q37]], [[2014 Q82]], [[2014 Q97]], [[2012 Q82]]
 - Related JPMs: [[2020 JPM SRO-A3]], [[2014 JPM SRO-A1-1]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

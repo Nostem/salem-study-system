@@ -114,6 +114,11 @@ R44A/B containment high range monitors provide input to the Subcooling Margin Mo
 Confirms the SMM ADVERSE Mode logic: <span class="hi-exam">EITHER R44A OR R44B reaching 1E5 R/hr automatically shifts either channel of the Subcooling Margin Monitor to ADVERSE Mode</span> — only one of the two Containment High Range monitors is required. <span class="hi-trap">Other in-containment area monitors (R2 Containment 130', R7 In-Core Seal Table) do NOT input into the SMM.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q85</div>
+With a SAE already declared during a LBLOCA, <span class="hi-exam">containment radiation exceeding 2000 R/hr adds 2 points from the containment barrier — escalating the classification to a General Emergency</span>. The more-severe classification is what drives a subsequent NRC notification (required within 60 minutes, not 15).
+</div>
+
 ## Shielding Design
 
 - Primary shielding: biological shield around the reactor vessel (concrete)
@@ -304,5 +309,7 @@ EOP-LOCA-1 step 16 checks for radiation outside containment using these monitors
   - [[2012 Q70]] — isolated GDT pressure lowering: R41 plant-vent monitor trend on 2RP1 confirms a release (Area Monitors have no local trend); release would be unapproved, not unmonitored
   - [[2012 Q71]] — 2R19A Hi Rad ALARM auto-shuts ONLY the affected 21GB4; all GB10s/GB185s/2GB50 shut on WARNING; each SG has its own blowdown line (no backfeeding)
   - [[2012 Q72]] — EOP-LOCA-1 step 16 checks 2R4/2R41D/2R34/1R3/1R6A/1R20B for a LOCA outside containment; 2R34 (Mechanical Penetration 100') is the answer, 2R10A is for LOCA inside containment
+  - [[2012 Q85]] — containment radiation >2000 R/hr adds 2 pts (containment barrier) escalating a SAE to a General Emergency → subsequent NRC notification within 60 min
+  - [[2012 Q90]] — dropped fuel assembly with 2R5 (FHB area) stabilizing at 25 mR/hr (alarm 11 mR/hr, warning 7 mR/hr): auto swaps FHB ventilation to the Charcoal Filter and starts BOTH FHB Exhaust Fans; 2R5 does NOT lock out crane motion (only 2R32A on the crane does); bank parent of 2016 Q88
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]

@@ -23,5 +23,5 @@ Per AB.COND-0001 CAS: when condenser backpressure exceeds the Attachment 4 limit
 
 - Related systems: [[Main Turbine]]
 - Related procedures: [[AB.COND-0001 — Loss of Condenser Vacuum]]
-- Related exam questions: [[2019 Q92]]
+- Related exam questions: [[2019 Q92]], [[2012 Q81]], [[2012 Q82]]
 - Related exam: [[2019 NRC Written Exam]], [[2023 NRC Operating Exam]]

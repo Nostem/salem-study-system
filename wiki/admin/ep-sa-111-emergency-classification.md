@@ -91,9 +91,14 @@ State notifications (Delaware and New Jersey): the Primary Communicator's PRIMAR
 <span class="hi-exam">A General Emergency initial declaration (ICMF) requires a Protective Action Recommendation (PAR)</span> — a Rapidly Progressing Severe Accident PAR, a Hostile Action PAR, or a default PAR (EP-SA-111-F4, Attachment 4) — one of which must be made. A wind shift does not drive a PAR upgrade if a Security Event caused the GE; a "radiological release" is any release above normal; and the PAR is not based on Emergency Coordinator judgment of exceeding 10CFR100 limits.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q85</div>
+The <span class="hi-trap">15 minute times are for State notifications (DE/NJ) during emergencies, NOT the NRC</span>. The <span class="hi-exam">NRC is not required to be notified for 60 minutes</span>. A subsequent NRC notification is required when a more-severe E-plan classification is made: with a SAE already declared (FB4.L and RB2.L, 5 points each), <span class="hi-exam">containment radiation &gt;2000 R/hr adds 2 points from the containment barrier → escalates to a General Emergency</span>, which requires the subsequent 60 minute NRC notification. A wind shift while in a SAE requires no notification (no PAR is made for a SAE).
+</div>
+
 ## Connections
 
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-101 — Emergency Classification and ICMF]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
-- Related exam questions: [[2016 Q71]], [[2016 Q81]], [[2019 Q100]], [[2015 Q75]], [[2015 Q100]]
+- Related exam questions: [[2016 Q71]], [[2016 Q81]], [[2019 Q100]], [[2015 Q75]], [[2015 Q100]], [[2012 Q83]], [[2012 Q85]]
 - Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM RO-A4]], [[2022 JPM SRO-A5]], [[2015 JPM RO-A4]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM RO-A4]], [[2014 JPM SRO-A4]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Operating Exam]]

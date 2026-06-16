@@ -120,7 +120,7 @@ The transfer to Cold Leg Recirculation is required when RWST level reaches the L
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]], [[CFCUs]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]], [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
-- Related exam questions: [[2015 Q24]], [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]], [[2015 Q34]], [[2015 Q46]], [[2014 Q89]], [[2014 Q99]], [[2012 Q3]], [[2012 Q19]], [[2012 Q36]]
+- Related exam questions: [[2015 Q24]], [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]], [[2015 Q34]], [[2015 Q46]], [[2014 Q89]], [[2014 Q99]], [[2012 Q3]], [[2012 Q19]], [[2012 Q36]], [[2012 Q83]]
 - Related JPMs: [[2014 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]], [[2015 Scenario 1]]
 - Related exam: [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Written Exam]]

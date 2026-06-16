@@ -46,11 +46,16 @@ Crew receives the unit at 68.5% power, BOL, with a power ascension at 10%/hr fro
 Attachment 1, Dampening Xenon Oscillations, is the proper response to a genuine xenon transient — but a xenon oscillation large enough to cause unwanted outward rod movement would be accompanied by a <span class="hi-exam">large change in AFD from normal</span> (per IOP-4 / Power Operation Attachment 1). With AFD normal, a xenon transient is ruled out, and the symptoms instead point to an inadvertent RCS boration (AB.ROD-0003).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+<span class="hi-trap">For an Intermediate Range bistable illuminating at 15% power during a power ascension, lowering Rx power below 5% and blocking IR Train B per S2.OP-IO.ZZ-0004 is the WRONG response.</span> No failure of the IR high-flux trip block has occurred (the trip was already blocked above P-10), and power is not required to be lowered — the ascension may continue while investigating the cause of the bistable illumination.
+</div>
+
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Feed & Condensate]], [[AFW]], [[Control Rod Drive]]
 - Related abnormals: [[AB.CA-0001 — Loss of Control Air]], [[AB.ROD-0003 — Continuous Rod Motion]]
 - Related procedures: [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]]
-- Related exam questions: [[2016 Q51]], [[2020 Q44]], [[2023 Q43]], [[2014 Q76]]
+- Related exam questions: [[2016 Q51]], [[2020 Q44]], [[2023 Q43]], [[2014 Q76]], [[2012 Q87]]
 - Related scenarios: [[2017 Scenario 7]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2014 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

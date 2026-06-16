@@ -404,12 +404,17 @@ The RCS Low Flow reactor trip is <span class="hi-exam">2/4 coincidence between P
 On a LOCA driving containment pressure &gt;15 psig (Hi-Hi), <span class="hi-exam">the 24MS167 Main Steamline Isolation Valve receives a SHUT signal from the Hi-Hi containment pressure (15 psig) MSLI signal</span> — so a 24MS167 indicating OPEN means it failed to reposition. <span class="hi-trap">21SW122 (CC HX SW inlet) receives a CLOSE only on MODE III SEC initiation (SI plus Blackout) — not satisfied in MODE 2; 22CC3 (23 header X-over) has NO automatic action; 23BF22 (SG FW stop check) gets NO shut signal from the MSLI signal.</span> See [[Main Steam]], [[ESF & Design]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+The <span class="hi-exam">Intermediate Range High Flux reactor trip (Functional Unit 5, ≤25% RTP, 1/2 coincidence) is interlocked with P-6 and P-10 — it is BLOCKED above P-10 (10% RTP)</span>. During a power ascension at 15% power, an IR bistable illuminating (at its 25% alarm setpoint) does not generate a reactor trip because the trip output is already blocked. <span class="hi-trap">No failure of the trip block has occurred; this is not an ATWT, and power need not be lowered.</span> See [[Excore NIs]].
+</div>
+
 ## Connections
 
 - Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]], [[RCPs]], [[ECCS]]
 - Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
-- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]], [[2014 Q41]], [[2014 Q42]], [[2014 Q44]], [[2014 Q48]], [[2014 Q51]], [[2012 Q4]], [[2012 Q8]], [[2012 Q41]], [[2012 Q42]]
+- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]], [[2014 Q41]], [[2014 Q42]], [[2014 Q44]], [[2014 Q48]], [[2014 Q51]], [[2012 Q4]], [[2012 Q8]], [[2012 Q41]], [[2012 Q42]], [[2012 Q81]], [[2012 Q87]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]]
 - Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]
