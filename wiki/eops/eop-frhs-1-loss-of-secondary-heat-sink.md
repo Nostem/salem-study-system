@@ -136,6 +136,11 @@ Loss of all AFW after Rx trip (21 AFW pump trips 4 min post-trip, 23 AFW pump ov
 Bleed-and-feed flowpath selection when a PORV block valve is unavailable: with <span class="hi-exam">2PR7 shut (closed to comply with TS 3.4.5 action a for the leaking 2PR2 PORV) and the 2B 4KV vital bus deenergized, neither PORV block valve can be opened</span> per Step 26.1 — so the bleed path is the <span class="hi-exam">reactor head vent valves</span> (the next step). For feed, Step 25.1 asks if EITHER charging pump is running, so a <span class="hi-exam">single charging pump supplies feed</span> (22 charging is available after SI initiation at Step 24). <span class="hi-trap">2PR1 is NOT the bleed path here (its block valve cannot be opened with B bus dead), and feed is via a charging pump, not an SI pump.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+After a reactor trip with a stuck-open steam dump path, the crew suffers a <span class="hi-exam">loss of all AFW</span> — 22 AFW pump trips after the post-trip AFW flow reduction, 23 AFW pump trips ~5 min later, and 21 AFW pump has no power (2A vital bus lost). With less than <span class="hi-exam">22E4 lbm/hr</span> available and no AFW pumps running, CRS transitions out of TRIP-1 to FRHS-1. Because the SGFPs are also unavailable, the crew performs a <span class="hi-exam">Condensate pump recovery in FRHS-1</span> to establish SG feed flow before RCS Bleed and Feed is required (CT#2). Terminates when SG WR levels are rising in FRHS-1, or when Bleed and Feed is initiated.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]], [[Pressurizer & PRT]], [[ECCS]], [[CVCS]], [[RCPs]]
@@ -143,5 +148,5 @@ Bleed-and-feed flowpath selection when a PORV block valve is unavailable: with <
 - Related tech specs: [[TS 3/4.5 — ECCS]]
 - Related exam questions: [[2015 Q23]], [[2016 Q23]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]], [[2015 Q83]], [[2014 Q23]], [[2014 Q74]]
 - Related JPMs: [[2014 JPM Sim-d]], [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]], [[2016 JPM Sim-d]]
-- Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]]
+- Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

@@ -29,10 +29,15 @@ AB.SW-0003 is the correct procedure for <span class="hi-exam">isolating a leakin
 (Question deleted from the graded exam.) A Service Water Bay leak is a distractor for SW header low pressure: <span class="hi-trap">a leak large enough to lower both nuc headers would ALSO bring in the bay sump high-level alarm and the TGA low-pressure alarm</span> — so with ONLY OHA B-13/B-14 (SW HDR PRESS LO) present, a Service Water Bay leak (which AB.SW-0003 addresses by splitting SW bays via 21SW17/22SW17) is ruled out.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+A #2 SW Bay leak is addressed per the CAS: <span class="hi-exam">split the bays (open nuclear header cross-over MOVs 21SW23/22SW23, shut SW bay cross-connect valves 21SW17/22SW17), then isolate 2 Bay (shut 21SW22 and 21SW20)</span>. With 24 SW pump already C/T and the 2 Bay disabled by the leak, the crew has no operable SW loops and <span class="hi-exam">enters TS 3.0.3</span>. Entry conditions for the Flooding abnormal are also met due to flooding in 2 Bay. See [[2014 Scenario 3]].
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]]
 - Related exam questions: [[2020 Q14]], [[2014 Q83]]
-- Related scenarios: [[2018 Scenario 1]]
+- Related scenarios: [[2018 Scenario 1]], [[2014 Scenario 3]]
 - Related exam: [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2014 NRC Written Exam]]

@@ -213,11 +213,16 @@ The <span class="hi-exam">TGA (Turbine Generator Area) SW header pressure is reg
 After a LOOP + manual SI on Unit 2 with the 2B EDG output breaker failing to close (loss of B 4KV/460V/230V power): <span class="hi-exam">2SW26 (TURB AREA SW MOV STOP VLV) remains OPEN</span> — it is always open at 100% power and the loss of power prevents it from closing. <span class="hi-trap">21/22SW122 (CC HX SW INLET) are AOVs that CLOSE on a MODE 3 (their control circuits keep power while 115VAC is available); CFCU 223 (CV FANS SW OUTLET) valves OPEN on MODE 3, but 22 and 24 CFCUs do not start in slow speed due to the loss of 460V power.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+A #2 SW Bay leak with 24 SW pump already C/T leaves <span class="hi-exam">no operable SW loops → TS 3.0.3</span>. After a later LOOP, with the running EDGs and 2C SEC failed to initiate, the crew must manually start <span class="hi-exam">at least one SW pump (on the 2C bus) — CT#1 — so the running EDGs have SW cooling</span>; EDGs running without SW cooling can overheat and fail. Bay isolation: split the bays via 21SW23/22SW23 and 21SW17/22SW17, isolate 2 Bay with 21SW22 and 21SW20. See [[2014 Scenario 3]].
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[AB.SW-0005 — Loss of All Service Water]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S1.OP-SO.SW-0001 — Service Water Pump Operation]], [[AB.SW-0002 — Loss of Service Water-Turbine Header]]
 - Related exam questions: [[2015 Q16]], [[2016 Q42]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]], [[2015 Q61]], [[2015 Q69]], [[2015 Q71]], [[2015 Q78]], [[2015 Q80]], [[2015 Q90]], [[2014 Q16]], [[2014 Q46]], [[2014 Q47]], [[2014 Q53]], [[2014 Q63]], [[2014 Q83]]
 - Related JPMs: [[2016 JPM SRO-A1-1]], [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-e]], [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]], [[2015 JPM RO-A1-1]], [[2014 JPM SRO-A1-1]], [[2014 JPM Sim-f]]
-- Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]]
+- Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]], [[2014 Scenario 3]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

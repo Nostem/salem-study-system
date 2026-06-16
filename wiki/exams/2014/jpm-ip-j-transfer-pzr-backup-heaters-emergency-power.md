@@ -100,4 +100,3 @@ Ref: S2.OP-SO.PZR-0010 (Rev 10), Section 5.3, Transferring Pzr Htr 22 BU Group T
 - Related systems: [[Pressurizer & PRT]], [[460/230V AC]]
 - Related procedures: [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
 - Related exam: [[2014 NRC Operating Exam]]
-</content>

@@ -33,10 +33,15 @@ Event 2: <span class="hi-exam">24 Vacuum Pump trips</span> during load reduction
 24 Vacuum pump trips and its discharge valve <span class="hi-exam">24AR25 fails to auto close</span>, leaving an open air path that prevents recovering condenser vacuum. None of the standby vacuum pumps restore vacuum; condenser backpressure slowly rises, driving the crew into AB.COND-0001 and a power reduction. Demonstrates that a failed-open AR25 (vacuum breaker / pump discharge valve) defeats vacuum recovery even with all available vacuum pumps running.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+During the weekly vacuum pump swap, the air injection suction isolation valve <span class="hi-exam">AR25 on the pump being secured fails open</span>, degrading condenser vacuum. The crew restores vacuum by isolating the affected AR25 and <span class="hi-exam">starting the remaining vacuum pump</span> (the affected pump will not re-start). A subsequent vital-bus loss and steam dump failure later drive a reactor trip.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Turbine]]
 - Related procedures: [[AB.COND-0001 — Loss of Condenser Vacuum]], [[S2.OP-SO.AR-0001 — Condenser Air Removal System Operation]]
 - Related exam questions: [[2018 Q36]], [[2019 Q92]], [[2020 Q63]]
-- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2015 Scenario 3]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2015 Scenario 3]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]

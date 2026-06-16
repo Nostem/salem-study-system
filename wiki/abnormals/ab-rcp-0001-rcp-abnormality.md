@@ -106,6 +106,11 @@ Total loss of Component Cooling Water to all RCPs (22 then 21 CCW pump trip, sta
 22 CCW pump trips with the standby (23) CCW pump failing to auto-start. After the crew manually starts 23 CCW pump and restores CCW pressure, AB.RCP-0001 (along with [[AB.CC-0001 — Loss of Component Cooling Water]]) is referenced to <span class="hi-exam">verify entry is NOT required</span> — RCP CCW-cooled parameters are confirmed trending back to normal values. See [[2015 Scenario 4]].
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+24 RCP #1 seal degrades with rising seal leakoff flow; the crew enters AB.RCP-0001 and trips the reactor, then 24 RCP, when seal leakoff exceeds 6 gpm. <strong>CT#1 (time-critical):</strong> close the 24 RCP seal leakoff isolation valve <span class="hi-exam">24CV104 within 3-5 minutes of tripping 24 RCP</span> — the ~3 min lower bound is the RCP coastdown time (static condition favors the #2 seal performing its backup function), and the 5 min upper bound limits RCS leakage; failure to isolate within 5 minutes raises the possibility of a #2 seal failure and subsequent LOCA. See [[2014 Scenario 1]].
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q5</div>
 RCP thermal barrier rupture: RCS in-leaks into the thermal barrier CCW path, causing a <span class="hi-exam">momentary RCP Thermal Barrier DISCHARGE FLOW HI alarm</span> that clears when <span class="hi-exam">2CC131 (Thermal Barrier Return Valve) auto shuts on high flow</span>. RCS activity is seen on the <span class="hi-exam">CCW surge tank rad monitors 2R17A/2R17B</span>. <span class="hi-trap">The CC surge tank level RISES (from RCS in-leakage), not lowers — a lowering surge tank level would be the unexpected indication.</span>
@@ -122,5 +127,5 @@ Entry condition via loss of RCP bearing cooling water: the <span class="hi-exam"
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[AB.RC-0004 — Natural Circulation]]
 - Related exam questions: [[2014 Q5]], [[2014 Q30]], [[2018 Q51]], [[2018 Q79]], [[2019 Q55]], [[2020 Q4]], [[2020 Q28]], [[2022 Q5]], [[2022 Q86]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]]
 - Related JPMs: [[2015 JPM Sim-g]]
-- Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 4]]
-- Related exam: [[2014 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related scenarios: [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 4]], [[2014 Scenario 1]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]]

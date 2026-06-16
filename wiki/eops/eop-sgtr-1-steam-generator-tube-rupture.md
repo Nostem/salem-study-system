@@ -90,11 +90,16 @@ EOP-SGTR-1 does NOT contain a step that directly starts a RCP — it <span class
 Terminating event: after Inadvertent SI termination and re-establishing letdown, a <span class="hi-exam">24 SG tube rupture</span> occurs. CRS directs CAS action to start ECCS pumps as necessary (based on RCS pressure/trend — the Basis Document for TRIP-3 does not specify how many) and transitions to EOP-SGTR-1. The scenario terminates when the transition to SGTR-1 is made.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #4</div>
+After a 23 SG tube rupture and reactor trip, the crew transitions from TRIP-1 to SGTR-1, isolates the ruptured 23 SG, and begins the RCS cooldown to the target temperature (~503°F). During the cooldown, <span class="hi-exam">23 RCP trips, causing a loss of normal pressurizer spray</span>, and no SI pumps are available. The crew must <span class="hi-exam">maintain RCS temperature in the required band (CT#2)</span> so a transition out of SGTR-1 is not forced. At the RCS depressurization step, the only available PORV (2PR2) fails to open (2PR1 inoperable, 2PR6 C/T, normal spray lost), so depressurization is unavailable and the CRS transitions to [[EOP-SGTR-5 — SGTR without Pressurizer Pressure Control]].
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Generator & Blowdown]], [[RCS]], [[Pressurizer & PRT]], [[Main Steam]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-2 — Post SGTR Cooldown]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]], [[EOP-FRHS-3 — Response to Steam Generator High Level]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-7 — Rediagnosis]], [[EOP-SGTR-2 — Post SGTR Cooldown]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]], [[EOP-SGTR-5 — SGTR without Pressurizer Pressure Control]], [[EOP-FRHS-3 — Response to Steam Generator High Level]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
 - Related exam questions: [[2015 Q11]], [[2016 Q15]], [[2016 Q79]], [[2018 Q57]], [[2020 Q79]], [[2022 Q11]], [[2022 Q25]], [[2015 Q79]], [[2014 Q14]]
 - Related JPMs: [[2019 JPM SRO-A5]], [[2019 JPM Sim-c]], [[2020 JPM Sim-g]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]

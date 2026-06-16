@@ -102,5 +102,3 @@ Ref: S2.OP-SO.DG-0003 (Rev 41), 2C Diesel Generator Operation, Sections 5.8 &amp
 - Related systems: [[EDGs]]
 - Related procedures: [[S2.OP-SO.DG-0003 — 2C Diesel Generator Operation]]
 - Related exam: [[2014 NRC Operating Exam]]
-</content>
-</invoke>

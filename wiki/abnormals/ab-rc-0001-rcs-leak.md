@@ -70,11 +70,16 @@ Event 5: RCS leak with rapidly lowering PZR level and pressure. OHA E-28 PZR HTR
 While responding to an RCS leak at 40% power with no automatic or manual trip, an ATWT is present (manual Rx trip required) when <span class="hi-exam">PZR pressure is 1860 psig and lowering</span> — the <span class="val-trip">low PZR pressure auto reactor trip setpoint is 1865 psig</span> has been exceeded without a trip. <span class="hi-trap">25°F loop D/T is the normal value at 40% power; a turbine trip does NOT cause a Rx trip below P-9 (49%); the 17% PZR level threshold is heater isolation, not Rx trip.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+A 25 gpm RCS leak is diagnosed and entered into AB.RC-0001: <span class="hi-exam">rising charging flow, slowly lowering PZR level, rising 2R11A containment radiation, OHA C-2 CNTMT SUMP PMP START</span>. Crew maximizes charging (swaps PDP to a centrifugal charging pump), quantifies the leak with S2.OP-ST.RC-0008 (RCS Water Inventory Balance), and enters <span class="hi-exam">TSAS 3.4.7.2.b (action b) for unidentified RCS leakage and 3.5.2.a (action a) for ECCS</span>. The leak later worsens into an SBLOCA, prompting a reactor trip and SI. See [[2014 Scenario 3]].
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[RCS]], [[RPS/SSPS]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - Related exam questions: [[2014 Q11]], [[2016 Q100]], [[2018 Q52]], [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
 - Related JPMs: [[2014 JPM Sim-c]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2014 Scenario 3]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

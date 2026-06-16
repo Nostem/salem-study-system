@@ -144,11 +144,16 @@ From EOP-LOCA-1, <span class="hi-exam">the transition to EOP-TRIP-3 (SI Terminat
 Crew transitions from EOP-TRIP-1 to EOP-LOCA-1 after a LBLOCA when transition criteria are met (RTBs open, PORVs shut with block valves open, <span class="hi-exam">no faulted or ruptured SGs</span>, ≥2 channels in Table F in warning/alarm). In LOCA-1 the crew re-verifies no faulted/ruptured SGs, <span class="hi-exam">resets SI, Phase A, and Phase B isolations</span>, opens 21/22CA330s, and resets each SEC. <span class="hi-exam">CFST monitoring begins after the transition out of TRIP-1</span> — an FRTS RED path sends the CRS to FRTS-1 and an FRCE PURPLE path to FRCE-1, each returning to the procedure in effect. The crew remains in LOCA-1 until the <span class="hi-exam">RWST lo level alarm (214 RWST = 15.2 ft)</span>, then transitions to EOP-LOCA-3 for cold leg recirculation. See [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]].
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+After Rx trip stabilization in TRIP-1 for an SBLOCA with LOOP, the crew transitions to EOP-LOCA-1 to <span class="hi-exam">reset SI and re-establish control of plant equipment</span>. The scenario terminates after the transition to LOCA-1 is made, when the <span class="hi-exam">EOP-TRIP-3 (SI Termination) transition point is reached</span>. See [[2014 Scenario 3]], [[EOP-TRIP-3 — SI Termination]].
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]], [[ESF & Design]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
 - Related exam questions: [[2014 Q4]], [[2015 Q21]], [[2015 Q24]], [[2016 Q4]], [[2016 Q44]], [[2016 Q45]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]], [[2015 Q34]], [[2015 Q82]], [[2015 Q91]], [[2014 Q84]]
 - Related JPMs: [[2014 JPM Sim-b]], [[2022 JPM Sim-c]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 3]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]

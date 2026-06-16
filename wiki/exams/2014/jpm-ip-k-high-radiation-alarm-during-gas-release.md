@@ -110,4 +110,3 @@ Ref: S2.OP-SO.WL-0001 (Rev 25), Section 5.5, Release of 21 CVCS Monitor Tank via
 - Related systems: [[Waste Liquid]], [[Radiation Monitoring]]
 - Related procedures: [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[AB.RAD-0001 — Radiation Monitor Abnormality]]
 - Related exam: [[2014 NRC Operating Exam]]
-</content>

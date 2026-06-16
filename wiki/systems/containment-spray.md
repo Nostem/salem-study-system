@@ -211,6 +211,11 @@ A loss of the 1A 4KV vital bus removes the <span class="hi-exam">11 CS pump</spa
 Containment Spray actuates on the LBLOCA (containment pressure &gt;15 psig, Phase B). During the transfer to cold leg recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], <span class="hi-exam">CT#2 time-critical: stop one containment spray pump (22 CS) within &le;5.5 min</span> of the RWST lo level alarm.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+On the steam leak in containment with MSLI failure, containment pressure rises to 15 psig and the crew enters FRCE-1, where they find <span class="hi-exam">no Containment Spray pumps running</span> on the SEC signal. <span class="hi-exam">CT#2 (CT-3): manually start the 21 and 22 CS pumps prior to completion of FRCE-1 step 3</span> — if SECs are not reset, block and reset the SECs first, insert the CS actuation keys, then start the pumps. See [[2014 Scenario 1]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]].
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q48</div>
 To electrically reset an AUTOMATIC Containment Spray initiation: <span class="hi-exam">depress BOTH (train) Reset Spray Actuation PBs at ANY containment pressure</span>. CS actuation relays have <span class="hi-exam">retentive memory</span>, so they can be reset with the actuation signal still present. <span class="hi-trap">Containment pressure is NOT required to be &lt;15 psig; Phase B reset is NOT required; Reset SI PBs are NOT required to reset Containment Spray.</span> Both trains must be reset.
@@ -227,5 +232,5 @@ During [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]] with RWST level sti
 - Related procedures: [[S1.OP-ST.CS-0003 — Inservice Testing Containment Spray Valves]]
 - Related exam questions: [[2014 Q27]], [[2014 Q34]], [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]], [[2015 Q34]], [[2015 Q45]], [[2015 Q46]], [[2015 Q91]], [[2014 Q48]], [[2014 Q89]]
 - Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-b]], [[2015 JPM IP-i]]
-- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2014 Scenario 1]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]

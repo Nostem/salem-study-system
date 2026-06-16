@@ -228,6 +228,11 @@ At ~8% power during a startup, the operating SGFP is placed on Main Steam supply
 If the <span class="hi-exam">Feedwater Interlock (FWI) fails to actuate</span> after a Rx trip from 100% power, the BF19s and BF40s are NOT shut, so the <span class="hi-exam">still-running SGFPs continue to supply Main Feed</span> to the low-NR-level SGs — causing <span class="hi-exam">excessive cooldown / overfeed of the SGs</span>. (Recall the FWI is a 2/2 interlock: auctioneered hi Tave &lt;554&deg;F AND Rx Trip Breakers open / P-4.) The corrective action is to <span class="hi-exam">trip both SGFPs early in [[EOP-TRIP-2 — Reactor Trip Response]] after verifying adequate [[AFW]] flow</span>. <span class="hi-trap">SI is NOT warranted — the RCS pressure transient is steady and slow; cavitation of the Condensate Pumps is only a secondary plausibility, not the primary consequence.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+With <span class="hi-exam">all AFW pumps failed and the SGFPs unavailable</span> after a reactor trip, the crew uses the Condensate system as the alternate heat-sink feed source — performing a <span class="hi-exam">Condensate pump recovery in FRHS-1</span> to establish feed flow into a SG before RCS Bleed and Feed is required (CT#2). Demonstrates the Condensate system as the FRHS-1 backup feed path when both AFW and Main Feed are lost.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Steam Generator & Blowdown]], [[AFW]]
@@ -235,5 +240,5 @@ If the <span class="hi-exam">Feedwater Interlock (FWI) fails to actuate</span> a
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
 - Related exam questions: [[2014 Q2]], [[2014 Q54]], [[2014 Q55]], [[2015 Q12]], [[2016 Q51]], [[2016 Q52]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]], [[2015 Q27]], [[2015 Q50]], [[2015 Q52]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]], [[2016 JPM Sim-h]], [[2016 JPM IP-j]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

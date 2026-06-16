@@ -206,6 +206,11 @@ TSAS 3.7.3 requires <span class="hi-exam">2 independent loops of CCW</span>; per
 Distractor trap: a single <span class="hi-exam">21 CCW pump trip does NOT make both loops of CCW inoperable</span>, so entering TS 3.0.3 "because all redundant equipment in the CCW system is not available" is wrong. (The tested action was the concurrent tripped EDG fuel oil transfer pump → TS 3.8.1.1.b.2; see [[Diesel Generators]] and [[TS 3/4.8 — Electrical]].)
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+23 CCW pump trips and the standby CCW pump <span class="hi-exam">fails to auto-start</span>. The crew <span class="hi-exam">manually starts 22 CCW pump</span> to restore system pressure, clearing all CCW and RCP system alarms, validates that alarms received were consistent with low CCW system pressure, and verifies RCP CCW-cooled parameters. CRS enters the appropriate Tech Spec. See [[2014 Scenario 1]], [[AB.CC-0001 — Loss of Component Cooling Water]].
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2014 Sim-h</div>
 Starting a CCW pump after a LOCA + LOOP (all vital buses on EDGs, no CCW running) IAW EOP-APPX-1. Before starting a CCW pump, the SEC fans and CCW-cooled loads must be aligned to the pump's load capacity: <span class="hi-exam">BLOCK and RESET the associated SECs (2B/2C for 22 CCW pump; 2A/2B for 21 CCW pump)</span>, swap switchgear room supply fans, and shed CFCUs / Aux Bldg exhaust fans at CC1. <span class="hi-exam">Alternate path: the 22 CCW pump fails to start, so the RNO restarts a CFCU and transfers to Step 5 to start the 21 CCW pump.</span> Placing 21 and 22 CCW Heat Exchangers in service (Step 6) requires <span class="hi-exam">at least 3 SW pumps running</span>.
@@ -215,5 +220,5 @@ Starting a CCW pump after a LOCA + LOOP (all vital buses on EDGs, no CCW running
 
 - Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]], [[2014 Q83]], [[2014 Q93]]
 - Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]], [[2015 JPM Sim-g]], [[2014 JPM Sim-h]]
-- Related scenarios: [[2018 Scenario 1]], [[2015 Scenario 4]]
+- Related scenarios: [[2018 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]]

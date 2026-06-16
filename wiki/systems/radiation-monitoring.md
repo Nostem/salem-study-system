@@ -271,4 +271,4 @@ Point-source inverse-square scaling: <span class="hi-exam">DR1 = DR2 × (d2² / 
   - [[2014 Q61]] — 22 SG tube leak: 2R19B/2R15 respond first, then 2R41D; 2R46A (22 Main Steam Line) does NOT change (post-accident noble-gas monitor) — question marked Deleted, keyed B
   - [[2014 Q62]] — point-source inverse-square: 2 R/hr at 10 ft → 200 R/hr at 1 ft via DR1 = DR2 × (d2²/d1²)
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]

@@ -46,6 +46,11 @@ Step 1 — 13 AFW Pump (TDAFW) steam isolation: if the 13 AFW Pump is <span clas
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+A steam leak in containment with <span class="hi-exam">MSLI failure (all MSIVs remain open)</span> drives the crew from EOP-LOSC-1 to LOSC-2 (uncontrolled depressurization of all SGs). RCS cooldown rate &gt; 100°F/hr supports <span class="hi-exam">CT#3 (CT-33): reduce AFW flow to no less than 1.0E4 lbm/hr to each SG</span> to minimize the cooldown, performed during FRCE-1 prior to exit. A single MSIV is later shut in the field; the resulting pressure rise in the associated SG triggers the LOSC-2 CAS to <span class="hi-exam">transition back to EOP-LOSC-1</span>, where the scenario terminates. See [[2014 Scenario 1]].
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2016 #3</div>
 Entered from EOP-LOSC-1 with <span class="hi-exam">all SGs faulted</span> and MSLI failure (21 SG steam leak inside containment, all four MSIVs failed to shut on auto/manual MSLI). RCS cooldown rate &gt;100°F/hr drives <span class="hi-exam">CT#2 (CT-33)</span>: PO reduces AFW flow to each SG to <span class="hi-exam">no less than 1.0E4 lbm/hr</span> to minimize the cooldown rate. STA RED path on Heat Sink → CRS transitions briefly to EOP-FRHS-1, verifies operator action was the cause and returns to LOSC-2. Local operators successfully shut <span class="hi-exam">23MS167</span>; pressure rise in 23 SG triggers the LOSC-2 CAS to <span class="hi-exam">transition to EOP-LOSC-1</span> (one SG no longer faulted; available for subsequent recovery actions).
 </div>
@@ -65,5 +70,5 @@ In LOSC-2 (Multiple Steam Generator Depressurization), <span class="hi-exam">Res
 - Related systems: [[Pressurizer & PRT]], [[500KV]], [[Steam Generator & Blowdown]], [[AFW]]
 - Related EOPs: [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]], [[2015 Q45]], [[2014 Q85]]
-- Related scenarios: [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2014 Scenario 1]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

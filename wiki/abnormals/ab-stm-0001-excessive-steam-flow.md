@@ -48,11 +48,16 @@ The AB.STM Continuous Action Summary (Step 1.1): any time reactor power is risin
 A small steam leak can produce symptoms similar to an unwanted boration (Tavg below program and rising, outward rod motion). <span class="hi-trap">The discriminator: for a steam leak, control rods would NOT be placed in manual</span>, whereas an inadvertent boration (AB.ROD-0003) requires placing rods in MANUAL and terminating the boration.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+A steam dump failure drives 21–23 TB20 steam dumps fully open with no ability to shut or turn them off. The crew enters AB.STM-0001 for the excessive steam flow; the <span class="hi-exam">CAS of AB.STM-0001 directs a reactor trip and a Main Steam Line Isolation (MSLI)</span>. The MSLI fails to shut a single MSIV (23 MSIV remains open), so the affected SG continues to blow down — leading to a (failed) auto SI on steamline Delta-P and a manual SI by the crew.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related exam questions: [[2016 Q74]], [[2020 Q43]], [[2015 Q51]], [[2014 Q76]]
-- Related scenarios: [[2016 Scenario 3]], [[2015 Scenario 4]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related scenarios: [[2016 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

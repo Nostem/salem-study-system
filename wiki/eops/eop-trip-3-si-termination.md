@@ -55,10 +55,15 @@ EOP-TRIP-3 (SI Termination) <span class="hi-exam">terminates Containment Spray</
 Entered to terminate an Inadvertent SI (caused by a 2nd PZR pressure channel failing low). <span class="hi-exam">CT#1 — stop all but 21 or 22 charging pump within 23 minutes of SI initiation</span>; reset SI/Phase A/Phase B, reset SECs and 230V control centers, restore normal charging alignment (shut BIT isolation 2SJ4/2SJ5/2SJ12/2SJ13, shut 2CV55, open 2CV68/2CV69), and with RCS pressure &gt; 1540 psig stop both SI and both RHR. <span class="hi-exam">CT#2 — re-establish normal letdown within 45 minutes of the inadvertent SI</span> (one letdown orifice at 300 psig, 2CV18 in auto). Both CTs are time-critical (Engineering Eval S-2-RC-MEE-1108: failure leads to PZR overfill / water relief through PORVs/Safeties). A 24 SG tube rupture then initiates → CRS transitions to EOP-SGTR-1.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+The SBLOCA-with-LOOP scenario terminates after the crew transitions from TRIP-1 to LOCA-1 (to reset SI and re-establish equipment control), <span class="hi-exam">when the EOP-TRIP-3 (SI Termination) transition point is reached</span> in LOCA-1 — so TRIP-3 marks the scenario end rather than being fully executed. See [[2014 Scenario 3]].
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[CFCUs]], [[RPS/SSPS]], [[RHR]], [[CVCS]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
 - Related exam questions: [[2020 Q25]], [[2023 Q38]], [[2023 Q23]], [[2023 Q76]], [[2015 Q91]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 2]]
-- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 2]], [[2014 Scenario 3]]
+- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]

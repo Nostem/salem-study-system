@@ -152,11 +152,16 @@ A "B" SEC loading the 2B 4KV bus in <span class="hi-exam">Mode II*</span> auto-s
 On a LOOP + SI with the 2B EDG output breaker failing to close, the loss of B 4KV/460V power means 22 and 24 CFCUs <span class="hi-trap">do NOT start in slow speed (loss of 460V power)</span>, while the SEC-driven MODE 3 logic still <span class="hi-exam">closes 21/22SW122 (CC HX SW inlet) and opens the CFCU 223 SW outlet valves</span>. 2SW26 cannot close (loss of power) and stays OPEN.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+On the LOOP, 2A and 2B SECs load in <span class="hi-exam">Mode III (SI plus Blackout)</span> but the <span class="hi-exam">2C SEC fails to initiate</span>, leaving the 2C vital bus de-energized. Because a failed SEC sends no breaker trip signals, the crew must open the 2C-bus equipment breakers before shutting the 2C EDG output breaker (otherwise previously-running C-bus loads restart and can stall the EDG). The crew also blocks/resets the affected SEC to manually start the charging pump for high-head ECCS injection (CT#2). See [[2014 Scenario 3]].
+</div>
+
 ## Connections
 
 - Related systems: [[4KV]], [[EDGs]], [[ECCS]], [[CCW]], [[DC Power]], [[460/230V AC]], [[RHR]], [[AFW]], [[Containment Spray]]
 - Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[AB.LOOP-0001 — Loss of All Offsite Power]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
 - Related exam questions: [[2015 Q16]], [[2016 Q18]], [[2016 Q19]], [[2016 Q39]], [[2016 Q41]], [[2016 Q43]], [[2016 Q55]], [[2018 Q22]], [[2018 Q27]], [[2018 Q60]], [[2019 Q5]], [[2019 Q16]], [[2019 Q19]], [[2019 Q21]], [[2019 Q23]], [[2019 Q52]], [[2020 Q35]], [[2020 Q47]], [[2023 Q37]], [[2015 Q43]], [[2015 Q45]], [[2015 Q61]], [[2015 Q69]], [[2014 Q57]], [[2014 Q63]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2015 Scenario 1]], [[2015 Scenario 3]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2014 Scenario 1]], [[2014 Scenario 3]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

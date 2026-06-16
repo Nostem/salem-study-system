@@ -52,5 +52,5 @@ Attachment 1, Dampening Xenon Oscillations, is the proper response to a genuine 
 - Related abnormals: [[AB.CA-0001 — Loss of Control Air]], [[AB.ROD-0003 — Continuous Rod Motion]]
 - Related procedures: [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]]
 - Related exam questions: [[2016 Q51]], [[2020 Q44]], [[2023 Q43]], [[2014 Q76]]
-- Related scenarios: [[2017 Scenario 7]], [[2015 Scenario 1]], [[2015 Scenario 3]]
-- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related scenarios: [[2017 Scenario 7]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2014 Scenario 1]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]

@@ -29,9 +29,15 @@ With the 2C EDG paralleled on the 2C 4KV Vital Bus, unload it before opening the
 If the 2C DIESEL GEN LOADING SW (2C-DF-GCP-1) is in MANUAL (DROOP), restore the unloaded set before stopping (Step 5.9.4): adjust speed to <span class="hi-exam">900 rpm</span> with the SPEED CONTROL SWITCH (GS), verify frequency on the 2CC3 bezel is <span class="hi-exam">58.94-60.36 Hz</span>, adjust terminal voltage to <span class="hi-exam">4160 volts</span> with the VOLTAGE CONTROL SWITCH (VCS), and verify voltage on 2CC3 is <span class="hi-exam">4.023-4.306 Kv</span>. Stop the diesel by placing <span class="hi-exam">2C-DF-SS, 2C DG STOP/START SWITCH, in STOP</span> (Step 5.9.5) and verify speed lowering. After stopping, return <span class="hi-exam">2C-DF-GCP-1 2C DIESEL GEN LOADING SW to AUTO (ISOCR)</span> (Step 5.9.7); the GENERATOR LOADING IN DROOP MODE (B-9) alarm clears. Critical steps: 5.8.1, 5.8.3, 5.9.5, 5.9.7.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+A large air leak on the 2C EDG starting air supply line lowers Air Start Tank pressure with both air start compressors running. The crew refers to this procedure (and the 2C EDG Alarm Response) on OHA J-20, 2C DG URGENT; the CRS determines <span class="hi-exam">2C EDG is inoperable based on lower-than-required Air Start Tank pressure</span> and enters the appropriate Tech Spec. See [[2014 Scenario 1]].
+</div>
+
 ## Connections
 
 - Related systems: [[EDGs]]
+- Related procedures: [[S2.OP-AR.DG-0003 — 2C Diesel Generator Alarm Response]]
 - Related JPMs: [[2014 JPM IP-i]]
+- Related scenarios: [[2014 Scenario 1]]
 - Related exam: [[2014 NRC Operating Exam]]
-</content>
