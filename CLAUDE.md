@@ -260,6 +260,12 @@ Power Operated Relief Valves = PORVs = TS 3/4.4.3
 - EOP knowledge labeled "reconstructed from exam materials"
 - All content from publicly available NRC documents only
 - Articles I've reviewed marked ✅ at top; unreviewed marked ⚠️ DRAFT
+- **After ANY work, review `README.md` and update it if it went stale.** The README is the
+  project's source-of-truth overview (scope/counts, learner flows, architecture, commands, routes,
+  deployment, conventions). Whenever behavior, commands, routes, file layout, generated-artifact
+  handling, deployment, counts, or quiz years change, update the README in the same change. Check
+  it as a final step before committing — do not leave it describing the old state. (The README
+  carries the same rule in its Development conventions; keep the two consistent.)
 
 ## Wiki Index Queries
 Before creating or modifying any wiki article, run:
