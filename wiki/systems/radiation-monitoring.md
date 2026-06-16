@@ -198,6 +198,11 @@ Process radiation monitor Source Check duration: <span class="hi-exam">activate 
 2R18 (Liquid Radwaste process radiation monitor) ALARM setpoint per S2.IC-CC.RM-0028 is <span class="hi-exam">6.82E5 cps</span>. Above the setpoint, <span class="hi-exam">2R18 automatically shuts 2WL51 (Liquid Release Stop Valve)</span>. If the auto-close fails (e.g., 2WL51 still indicates OPEN with 2R18 in alarm at 10E6 cps), <span class="hi-exam">the NCO shuts 2WL51 remotely from the control room</span> per S2.OP-SO.WL-0001 Step 5.5.9 — there is no procedural provision to close 2WL51 locally.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-h</div>
+Direct demonstration of the 2R18 / 2WL51 failed-auto-shut response. During an authorized liquid release, <span class="hi-exam">2R18 reads high radiation (~1×10⁵ cps) and 2WL51 fails to automatically shut</span>. The operator recognizes OHA A-6 RMS HI RAD OR TRBL / CRT point 725 (2R18 in alarm), observes 2WL51 still OPEN, and <span class="hi-exam">manually shuts 2WL51 remotely</span> (S2.OP-SO.WL-0001 Step 5.5.9), then enters AB.RAD-0001 to confirm the affected/valid monitor and ensure the release is terminated.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q68</div>
 <span class="hi-exam">Containment Radiation Monitors (e.g., 2R12A) are NOT required to be operable for Mode 6 or Fuel Movement or Core Alts per Tech Specs.</span> A failure of 2R12A causing a Containment Ventilation Isolation signal does NOT by itself require suspension of fuel movement. <span class="hi-trap">Trap: a CVI signal looks like an emergency response, but the rad monitor is not Tech-Spec required for refueling, so its failure has no LCO impact on fuel movement.</span>
@@ -263,7 +268,7 @@ EOP-LOCA-1 step 16 checks for radiation outside containment using these monitors
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]], [[Steam Generator & Blowdown]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[AB.RC-0002 — High Activity in the RCS]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.IC-CC.RM-0028 — 2R18 Liquid Waste Disposal Process Radiation Monitor]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]
   - [[2015 Q10]] — R19 SGBD monitors not accurate immediately post-trip / enter AB.RAD-0001 to verify, not manual SI
   - [[2015 Q19]] — 2R31 Letdown Line Failed-Fuel monitor / crud burst vs failed fuel determined by Shift Chemistry isotopic RCS analysis (AB.RC-0002)
   - [[2015 Q49]] — loss of SFP cooling: rising radiation at FHB charcoal filter from spent-fuel off-gassing as SFP temp approaches 150°F
@@ -311,5 +316,5 @@ EOP-LOCA-1 step 16 checks for radiation outside containment using these monitors
   - [[2012 Q72]] — EOP-LOCA-1 step 16 checks 2R4/2R41D/2R34/1R3/1R6A/1R20B for a LOCA outside containment; 2R34 (Mechanical Penetration 100') is the answer, 2R10A is for LOCA inside containment
   - [[2012 Q85]] — containment radiation >2000 R/hr adds 2 pts (containment barrier) escalating a SAE to a General Emergency → subsequent NRC notification within 60 min
   - [[2012 Q90]] — dropped fuel assembly with 2R5 (FHB area) stabilizing at 25 mR/hr (alarm 11 mR/hr, warning 7 mR/hr): auto swaps FHB ventilation to the Charcoal Filter and starts BOTH FHB Exhaust Fans; 2R5 does NOT lock out crane motion (only 2R32A on the crane does); bank parent of 2016 Q88
-- Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
+- Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]], [[2012 JPM Sim-h]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]

@@ -354,5 +354,5 @@ With Mode 1 at 75% power and AFD = -26%, the AFD is outside the "doghouse" shown
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]], [[Feed & Condensate]]
 - Related procedures: [[S2.RE-RA.ZZ-0011 — Tables]]
 - Related exam questions: [[2016 Q70]], [[2018 Q97]], [[2020 Q20]], [[2014 Q71]]
-- Related JPMs: [[2022 JPM RO-A3]], [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related JPMs: [[2022 JPM RO-A3]], [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]], [[2012 JPM RO-A1-2]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Operating Exam]]

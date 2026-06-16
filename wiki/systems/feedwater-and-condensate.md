@@ -248,12 +248,17 @@ SG Feed Delta-P (the delta between feed pressure and SG pressure) is the control
 On an uncomplicated manual Rx trip from 100% power, RCS over-cooling is prevented by the <span class="hi-exam">Feedwater Interlock</span> (3/4 RCS Tavgs &lt;554°F AND ≥1 Reactor Trip and bypass breaker open), which shuts the BF19's and BF40 Feed Reg Valves. <span class="hi-trap">P-12 (Tavg &lt;543°F) does NOT actuate — steam dumps modulate to hold Tavg ~547°F; P-10 (PRNIs &lt;10%) only blocks low-power Rx trips; Feedwater Isolation does not occur on an uncomplicated trip.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-g</div>
+The <span class="hi-exam">21-24BF19 Feed Reg Valves are air-operated and fail CLOSED on a loss of Station Air</span> (they are supplied only by Station Air — a check valve blocks Control Air, and the ECACs do not back them up). In the Loss of Control Air JPM the BF19s drift closed (~6.5 min after the event), so SG level can no longer be maintained and the operator must manually trip the reactor before the automatic trip on 10/10 SG NR (Lo-Lo) level.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Steam Generator & Blowdown]], [[AFW]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]], [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]]
 - Related exam questions: [[2014 Q2]], [[2014 Q54]], [[2014 Q55]], [[2015 Q12]], [[2016 Q51]], [[2016 Q52]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]], [[2015 Q27]], [[2015 Q50]], [[2015 Q52]], [[2012 Q10]], [[2012 Q53]], [[2012 Q54]], [[2012 Q81]]
-- Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]], [[2016 JPM Sim-h]], [[2016 JPM IP-j]]
+- Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]], [[2016 JPM Sim-h]], [[2016 JPM IP-j]], [[2012 JPM Sim-g]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -605,6 +605,6 @@ Four Main Feedwater Isolation Valves (FIVs), four Main Feedwater Regulating Valv
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
 - Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
 - Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]], [[2014 Q37]], [[2014 Q82]], [[2014 Q97]], [[2012 Q82]]
-- Related JPMs: [[2020 JPM SRO-A3]], [[2014 JPM SRO-A1-1]]
+- Related JPMs: [[2020 JPM SRO-A3]], [[2014 JPM SRO-A1-1]], [[2012 JPM SRO-A1-2]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Operating Exam]]

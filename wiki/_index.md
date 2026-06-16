@@ -358,6 +358,7 @@ status: draft
 - [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]]
 - [[S1.OP-SO.WG-0007 — Transfer of Waste Gas]]
 - [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]]
+- [[S2.OP-ST.SJ-0006 — Inservice Testing Safety Injection Valves Mode 6]]
 - [[S1.OP-ST.CVC-0003 — Inservice Testing, 11 Charging Pump]]
 - [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]]
 - [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]]

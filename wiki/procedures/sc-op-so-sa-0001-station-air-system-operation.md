@@ -26,5 +26,5 @@ Used by AB.CA-0001 / S2.OP-AR.ZZ-0011 ARP for COMPR 2 TROUBLE: when an SAC trips
 
 - Related systems: [[Control Air]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related JPMs: [[2016 JPM Sim-h]]
-- Related exam: [[2016 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM Sim-h]], [[2012 JPM Sim-g]]
+- Related exam: [[2016 NRC Operating Exam]], [[2012 NRC Operating Exam]]

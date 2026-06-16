@@ -50,6 +50,15 @@ The 2015 ESG classification JPMs reinforce the single-barrier-vs-multiple-barrie
 <span class="hi-trap">Trap: a single barrier in Potential OR full Loss is only an ALERT; the SAE requires multiple barriers degrading (two Potential Losses, or one Loss + one Potential/Loss).</span> Descriptions of Event come from the EAL Description Table.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A4-1/-2/-3 (ESG-1/-2/-3)</div>
+The 2012 ESG classification JPMs apply the same fission-product-barrier rule:<br>
+&bull; <span class="hi-exam">ESG-1 → ALERT under RB2.L</span> (single RCS-barrier Loss), escalating to <span class="hi-exam">SAE under RB2.L AND CB5.L</span> if the cavitating charging pump fails (RCS barrier Loss + Containment barrier Loss).<br>
+&bull; <span class="hi-exam">ESG-2 → ALERT under RB3.L</span> (single RCS-barrier Loss).<br>
+&bull; <span class="hi-exam">ESG-3 → SAE under FB2.P AND RB2.P</span> — Fuel Clad AND RCS barriers simultaneously in Potential Loss drive the SAE.<br>
+<span class="hi-trap">Trap: a single barrier in Potential OR full Loss is only an ALERT; the SAE requires multiple barriers degrading.</span> Descriptions of Event come from the EAL Description Table.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q85</div>
 A SAE driven by FB4.L and RB2.L (Fuel Clad and RCS barriers, 5 points each) escalates to a <span class="hi-exam">General Emergency when containment radiation exceeds 2000 R/hr — adding 2 points from the containment barrier</span>. This more-severe classification is the condition that drives a subsequent NRC notification (required within 60 minutes).
@@ -60,5 +69,5 @@ A SAE driven by FB4.L and RB2.L (Fuel Clad and RCS barriers, 5 points each) esca
 - Related procedures: [[EP-SA-111 — Emergency Classification and Protective Action]], [[EP-SA-111-101 — Emergency Classification and ICMF]]
 - Related systems: [[RCS]], [[Containment]]
 - Related exam questions: [[2016 Q81]], [[2012 Q83]], [[2012 Q85]]
-- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2012 JPM SRO-A4-1 (ESG-1)]], [[2012 JPM SRO-A4-2 (ESG-2)]], [[2012 JPM SRO-A4-3 (ESG-3)]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

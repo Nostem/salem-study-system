@@ -98,6 +98,11 @@ Unit 1 Control Room Evacuation, Attachment 5 Step 10.0 — Emergency Boration fo
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-i</div>
+Same Attachment 5, Step 10 evolution with the boration charging-flow target stated as a relationship: adjust charging flow to <span class="hi-exam">75 gpm above existing total RCP seal injection flow</span>. With total seal injection flow at 30 gpm, the correct target is <span class="hi-exam">105 gpm</span> (30 + 75). <span class="hi-trap">Adjusting to 165 gpm (75 above the 90 gpm initial charging flow) is the wrong reference — it over-injects to the RCS and PZR level rises too fast.</span> 1CV73 is trimmed by NEO#1 to hold RCP seal flow 6-10 gpm. (The acceptance value differs from the 99 gpm 2019 case only because the assumed total seal injection flow differs.)
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2018 IP-j</div>
 Unit 1 Control Room Evacuation, Attachment 5 Steps 1-9 — locally trip reactor and control charging flow. Reactor failed to trip from control room at 100% power. Step 2: open <span class="hi-exam">Reactor Trip Breaker A and B</span> at Rod Drive MG Set Control Panel (460V Vital Bus Room, El 84). Step 4: trip <span class="hi-exam">#13 Charging Pump breaker (1AX1AX7X)</span> at 1A 460V MCC. Step 5: open <span class="hi-exam">1CV175 Rapid Borate Stop Valve breaker (1CY2AX41)</span> at 1C West 230V Control Center. Step 7: confirm <span class="hi-exam">1CV71 isolated (1CV70) and bypassed (1CV73)</span>, RCP seal flow 6-10 gpm per seal. Step 8: at <span class="hi-exam">Panel 216-1</span> (Charging Valve Alley), record charging flow from <span class="hi-exam">1FI-128A</span>, place E/P Bypass to Manual, control <span class="hi-exam">1CV55 (fail-open, air-to-close)</span> — lower air pressure = open valve = raise flow. Key learning: air pressure indicator at 8 psig.
 </div>
@@ -118,5 +123,5 @@ AB.CR-0001 field actions after a control room evacuation: <span class="hi-exam">
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[AB.CR-0002 — Control Room Evacuation Due to Fire]]
 - Related exam questions: [[2018 Q67]], [[2019 Q48]], [[2019 Q71]], [[2019 Q83]], [[2019 Q99]], [[2020 Q86]], [[2023 Q83]], [[2015 Q81]], [[2012 Q75]]
-- Related JPMs: [[2018 JPM IP-j]], [[2020 JPM IP-i]], [[2022 JPM IP-j]], [[2019 JPM IP-i]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related JPMs: [[2018 JPM IP-j]], [[2020 JPM IP-i]], [[2022 JPM IP-j]], [[2019 JPM IP-i]], [[2012 JPM IP-i]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

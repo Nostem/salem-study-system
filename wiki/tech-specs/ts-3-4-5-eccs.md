@@ -55,6 +55,11 @@ If a closed isolation valve cannot be immediately opened, <span class="hi-exam">
 Accumulator boron concentration limits: <span class="hi-exam">2200 - 2500 ppm</span>. Sample results: 21 at 2175 ppm (below 2200 → inoperable), 22 at 2550 ppm (above 2500 → inoperable), 23 at 2400 ppm (within limits → operable), 24 at 2350 ppm (within limits → operable). Result: <span class="hi-exam">2 accumulators inoperable</span>. LCO 3.5.1 action only addresses ONE accumulator inoperable due to boron (72 hrs + 6 hrs to Hot Standby). With TWO inoperable, no applicable action exists → <span class="hi-exam">LCO 3.0.3 applies: 1 hr + 6 hrs = 7 hours to HOT STANDBY</span>. <span class="hi-trap">78 hours (72 + 6) would only be correct if one accumulator were inoperable. With two inoperable, there is no action that addresses the condition and LCO 3.0.3 is the default.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-b</div>
+The accumulator discharge check valve OPERABILITY supporting LCO 3.5.1 is demonstrated by the MODE 6 forward-flow IST (S2.OP-ST.SJ-0006): blow each accumulator down to the RCS and verify the timed blowdown is within the acceptance band. A blowdown time that is too long indicates degraded check-valve forward flow — the 22 Accumulator check valves grade <span class="hi-exam">UNSAT when blowdown time is &gt;27.79 seconds</span>. See [[S2.OP-ST.SJ-0006 — Inservice Testing Safety Injection Valves Mode 6]].
+</div>
+
 ---
 
 ## ECCS Subsystems — Tavg ≥ 350°F
@@ -275,7 +280,8 @@ A <span class="hi-exam">single inoperable charging pump (hi-head ECCS) in Modes 
 ## Connections
 
 - Related systems: [[ECCS]], [[RHR]], [[CVCS]]
+- Related procedures: [[S2.OP-ST.SJ-0006 — Inservice Testing Safety Injection Valves Mode 6]]
 - Related concepts: [[ESF & Design]]
 - Related exam questions: [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q96]], [[2020 Q77]], [[2023 Q91]], [[2015 Q35]], [[2015 Q77]], [[2014 Q23]]
-- Related JPMs: [[2018 JPM SRO-A3]], [[2015 JPM Sim-c]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related JPMs: [[2018 JPM SRO-A3]], [[2015 JPM Sim-c]], [[2012 JPM RO-A2]], [[2012 JPM Sim-b]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Operating Exam]]

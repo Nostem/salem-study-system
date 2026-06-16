@@ -71,5 +71,5 @@ Precautions and Limitations, Section 2.2: a <span class="hi-exam">Reactor Engine
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]], [[TS 3/4.7 — Plant Systems]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
 - Related exam questions: [[2016 Q47]], [[2016 Q80]], [[2016 Q94]], [[2023 Q95]], [[2015 Q49]], [[2015 Q68]], [[2014 Q90]], [[2012 Q95]]
-- Related JPMs: [[2016 JPM SRO-A1-2]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2012 JPM SRO-A1-2]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -53,6 +53,11 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 | Fluid Temperature Range | 40–350°F | UFSAR T5.5-1 |
 | Material | Austenitic stainless steel | UFSAR T5.5-1 |
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-d</div>
+Restoring shutdown cooling after the in-service RHR pump trips (MODE 4): per AB.RHR-0001, place the alternate RHR loop (22, aligned for ECCS) in service via Attachment 2. Local actions open <span class="hi-exam">22RH12 (HX bypass isolation), 22RH17 (letdown isolation), and 22RH18-NS (letdown isolation air supply)</span>; control-room actions close 22RH18 / 21RH18 (pump flow control), 2RH20 (HX bypass), and <span class="hi-exam">21CC16</span> while opening <span class="hi-exam">22CC16</span> (HX CCW outlet), then START the 22 RHR pump and throttle 22RH18 / 2RH20 for flow. Acceptance: RHR flow <span class="hi-exam">stable 1800-3000 gpm</span> and RCS temperature stable or lowering; flow is summed as 21SJ49 + 22SJ49 RHR DISCH TO COLD LEGS flow.
+</div>
+
 ## Piping Design
 
 | Section | Pressure | Temperature | Source |
@@ -280,10 +285,10 @@ Starting the second RCP in Mode 5 with RHR in service, RCS pressure momentarily 
 
 ## Connections
 
-- Related systems: [[Control Air]], [[EDGs]], [[DC Power]]
+- Related systems: [[Control Air]], [[EDGs]], [[DC Power]], [[CCW]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.RHR-0001 — Initiating RHR]], [[S1.OP-SO.SJ-0001 — Preparation of the Safety Injection System for Operation]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOPA-1 — Loss of All AC Power]]
 - Related exam questions: [[2014 Q4]], [[2014 Q8]], [[2014 Q33]], [[2014 Q34]], [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]], [[2014 Q24]], [[2014 Q87]], [[2012 Q3]], [[2012 Q6]], [[2012 Q12]], [[2012 Q15]], [[2012 Q20]], [[2012 Q24]], [[2012 Q25]], [[2012 Q33]], [[2012 Q34]], [[2012 Q36]], [[2012 Q79]], [[2012 Q86]], [[2012 Q93]]
-- Related JPMs: [[2014 JPM Sim-b]], [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]], [[2016 JPM Sim-b]], [[2015 JPM Sim-h]]
+- Related JPMs: [[2014 JPM Sim-b]], [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]], [[2016 JPM Sim-b]], [[2015 JPM Sim-h]], [[2012 JPM Sim-d]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

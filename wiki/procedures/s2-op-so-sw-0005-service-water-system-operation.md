@@ -33,6 +33,6 @@ SO.SW-5 Attachment 2: <span class="hi-exam">enter the TS 3.6.2.3 action if (Mode
 
 - Related systems: [[Service Water]]
 - Related exam questions: [[2020 Q14]], [[2015 Q90]]
-- Related JPMs: [[2016 JPM SRO-A1-2]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2012 JPM SRO-A1-2]]
 - Related scenarios: [[2015 Scenario 3]]
-- Related exam: [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Operating Exam]]

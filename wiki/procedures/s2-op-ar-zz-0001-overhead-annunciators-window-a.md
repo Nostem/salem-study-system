@@ -44,8 +44,14 @@ OHA A-34 (SSPS TRN A TRBL) alarms on loss of 1 of 2 45VDC power supplies to the 
 <span class="hi-exam">OHA A-7, FIRE PROT FIRE</span> annunciates when an early-warning Smoke/Fire Detector zone actuates (along with the zone lamp and group "FIRE" lamp on the 2RP5 Fire Protection Panel and the coded fire alarm over the PA). The alarm reflects a fire-detector actuation, NOT an active suppression system actuation. See [[Fire Protection]].
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-h</div>
+<span class="hi-exam">OHA A-6, RMS HI RAD OR TRBL</span> annunciates when 2R18 (Liquid Waste Disposal process monitor) goes to high radiation during an authorized liquid release. Window A directs checking the CRT (point 725, 2R18 in alarm) and, if 2R18 indicates Hi Radiation or trouble, <span class="hi-exam">GO TO S2.OP-AB.RAD-0001, Abnormal Radiation</span>. In this JPM the operator also recognizes 2WL51 failed to auto-shut and manually closes it to terminate the release.
+</div>
+
 ## Connections
 
 - Related systems: [[Radiation Monitoring]], [[CAV]], [[FHV]], [[Fire Protection]]
 - Related exam questions: [[2015 Q17]], [[2019 Q36]], [[2020 Q25]], [[2022 Q51]], [[2015 Q42]], [[2012 Q64]]
-- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related JPMs: [[2012 JPM Sim-h]]
+- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

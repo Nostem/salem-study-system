@@ -32,6 +32,11 @@ Closed-loop cooling water system that provides an intermediate barrier between p
 - Surge tank provides indication of system leakage (radioactivity monitoring on CCW)
 - Loss of CCW to RCPs requires RCP trip to protect seals and thermal barrier (UFSAR 5.5.1.3.14)
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-d</div>
+Each RHR heat exchanger is cooled by CCW through its own HX outlet valve (<span class="hi-exam">21CC16</span> for the 21 RHR HX, <span class="hi-exam">22CC16</span> for the 22 RHR HX). When restoring shutdown cooling on the alternate (22) RHR loop per AB.RHR-0001 Attachment 2, the operator <span class="hi-exam">closes 21CC16 and opens 22CC16</span> to line up CCW to the 22 RHR HX before starting the 22 RHR pump.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q55</div>
 CCW containment isolation signals: <span class="hi-exam">CC131 and CC190 (RCP Thermal Barrier CCW Isolation Valves) receive a Phase B signal to close, NOT Phase A</span>. <span class="hi-exam">CC113 and CC215 (Excess Letdown CCW Valves) receive a Phase A signal to close</span>. <span class="hi-trap">The thermal barrier CCW isolation (CC131/CC190) is Phase B, while excess letdown CCW isolation (CC113/CC215) is Phase A — do not confuse the isolation signal levels for these two different CCW flow paths through containment.</span>
@@ -234,6 +239,6 @@ Starting a CCW pump after a LOCA + LOOP (all vital buses on EDGs, no CCW running
 ## Connections
 
 - Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]], [[2014 Q83]], [[2014 Q93]], [[2012 Q12]], [[2012 Q26]], [[2012 Q38]], [[2012 Q42]], [[2012 Q82]]
-- Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]], [[2015 JPM Sim-g]], [[2014 JPM Sim-h]]
+- Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]], [[2015 JPM Sim-g]], [[2014 JPM Sim-h]], [[2012 JPM Sim-d]]
 - Related scenarios: [[2018 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]
