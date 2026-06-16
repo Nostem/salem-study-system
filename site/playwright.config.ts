@@ -8,10 +8,13 @@ export default defineConfig({
     baseURL: 'http://localhost:4321/salem-study-system/',
   },
   webServer: {
-    command: 'npm run build >/tmp/salem-playwright-build.log && npx astro preview --port 4321',
+    // Serve the already-built dist/ (do NOT rebuild here). CI builds once before the smoke
+    // run, and `npm run test:ui:smoke` builds first locally. Rebuilding the ~1500-page site
+    // inside the web server was exceeding the start timeout as the site grew.
+    command: 'npx astro preview --port 4321',
     port: 4321,
     reuseExistingServer: false,
-    timeout: 180000,
+    timeout: 120000,
     env: {
       PUBLIC_SUPABASE_URL: 'https://local-test.supabase.co',
       PUBLIC_SUPABASE_ANON_KEY: 'playwright-anon-key',

@@ -6,6 +6,37 @@ import { dirname, resolve } from 'node:path';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const quizBank = JSON.parse(readFileSync(resolve(__dirname, '../src/data/quiz-bank.json'), 'utf8'));
 
+// Derive the expected "#filter-summary" text from the SAME data the page renders from, reading the
+// currently-checked topic inputs exactly like the page's currentFilters(). Mirrors the page's
+// filterQuizQuestions/buildQuizSummary logic (verified equivalent) — kept inline rather than
+// importing src/utils/quiz-data.ts because that module's bare JSON import is incompatible with the
+// Playwright test loader. Keeps the assertion exact without hardcoding counts that go stale on
+// every exam ingestion.
+async function expectedFilterSummary(page: Page): Promise<string> {
+  const topicGroups = await page.$$eval('input[name="topicSlugs"]:checked', (inputs) => {
+    const groups: Record<string, string[]> = {};
+    for (const input of inputs as HTMLInputElement[]) {
+      const group = input.dataset.topicGroup || 'primary';
+      const slugs = input.value.split(',').filter(Boolean);
+      groups[group] = [...new Set([...(groups[group] || []), ...slugs])];
+    }
+    return groups;
+  });
+  const groups = Object.values(topicGroups).filter((slugs) => slugs.length > 0);
+  const matches = quizBank.questions.filter((question: any) => {
+    if (!isPracticeEligible(question)) return false;
+    if (question.status === 'outdated') return false; // page default: includeOutdated = false
+    if (groups.length === 0) return true;
+    const questionTopicSlugs = new Set(question.topics.map((t: any) => t.slug));
+    return groups.every((slugs) => slugs.some((slug) => questionTopicSlugs.has(slug)));
+  });
+  return `${matches.length} eligible questions match current filters`;
+}
+
+function eligibleCountFromSummary(summary: string): number {
+  return Number(summary.match(/^(\d+)/)?.[1] ?? '0');
+}
+
 function isPracticeEligible(question: any): boolean {
   if (question.quizEligible) return true;
   if (question.isRedacted) return false;
@@ -70,7 +101,7 @@ test('quiz page builds an account-gated quiz from imported questions', async ({ 
 
   await expect(page.getByRole('heading', { name: 'Quick Quiz', exact: true })).toBeVisible();
   await expect(page.getByRole('link', { name: /View my progress/i })).toHaveAttribute('href', /\/history\/?$/);
-  await expect(page.getByTestId('quiz-bank-count')).toContainText('898');
+  await expect(page.getByTestId('quiz-bank-count')).toHaveText(String(quizBank.summary.question_count));
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('3');
@@ -212,9 +243,9 @@ test('topic filter keeps common systems simple and moves advanced procedure node
   expect(procedureCheckboxBox?.height).toBeLessThanOrEqual(20);
 
   await page.getByLabel('Pressurizer Level & Press Control').check();
-  await expect(page.locator('#filter-summary')).toContainText(/42 eligible questions/);
+  await expect(page.locator('#filter-summary')).toHaveText(await expectedFilterSummary(page));
   await page.getByLabel('RPS/SSPS').check();
-  await expect(page.locator('#filter-summary')).toContainText(/123 eligible questions/);
+  await expect(page.locator('#filter-summary')).toHaveText(await expectedFilterSummary(page));
   await page.getByLabel('Question count').fill('5');
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
@@ -229,11 +260,13 @@ test('advanced procedure filters on Quick Quiz can start targeted practice', asy
   await page.getByTestId('advanced-topic-filters').locator('summary').click();
   await page.getByLabel(/AB\.CW-0001 — Circulating Water Malfunction/).check();
   await page.getByLabel('Question count').fill('5');
-  await expect(page.locator('#filter-summary')).toContainText(/4 eligible questions/);
+  const abcwSummary = await expectedFilterSummary(page);
+  await expect(page.locator('#filter-summary')).toHaveText(abcwSummary);
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.getByTestId('quiz-session')).toBeVisible();
-  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 4');
+  const abcwExpected = Math.min(5, eligibleCountFromSummary(abcwSummary));
+  await expect(page.getByTestId('question-position')).toContainText(`Question 1 of ${abcwExpected}`);
 });
 
 test('advanced EOP and admin procedure filters can start targeted practice', async ({ page }) => {
@@ -242,14 +275,16 @@ test('advanced EOP and admin procedure filters can start targeted practice', asy
 
   await page.getByTestId('advanced-topic-filters').locator('summary').click();
   await page.getByLabel(/EOP-TRIP-1 — Reactor Trip or Safety Injection/).check();
-  await expect(page.locator('#filter-summary')).toContainText(/66 eligible questions/);
+  await expect(page.locator('#filter-summary')).toHaveText(await expectedFilterSummary(page));
   await page.getByLabel(/OP-AA-101-111-1003 — Use of Procedures/).check();
-  await expect(page.locator('#filter-summary')).toContainText(/4 eligible questions/);
+  const eopSummary = await expectedFilterSummary(page);
+  await expect(page.locator('#filter-summary')).toHaveText(eopSummary);
   await page.getByLabel('Question count').fill('3');
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.getByTestId('quiz-session')).toBeVisible();
-  await expect(page.getByTestId('question-position')).toContainText('Question 1 of 3');
+  const eopExpected = Math.min(3, eligibleCountFromSummary(eopSummary));
+  await expect(page.getByTestId('question-position')).toContainText(`Question 1 of ${eopExpected}`);
 });
 
 test('feedback mode shows immediate right or wrong result after selecting an answer', async ({ page }) => {
