@@ -14,6 +14,11 @@ aliases:
 
 Provides a diverse backup to the Reactor Protection System for mitigating Anticipated Transients Without Scram (ATWS). If the RPS fails to trip the reactor, AMSAC trips the turbine and actuates auxiliary feedwater to prevent RCS overpressurization and ensure decay heat removal. Required per 10CFR50.62. (UFSAR 7.8)
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q67</div>
+The purpose of AMSAC is to prevent excessive <span class="hi-exam">RCS pressure</span> should the reactor trip breakers fail to open on demand. <span class="hi-trap">Trap: AMSAC does not prevent excessive feed flow (it ADDS AFW), does not reduce reactor power (it cannot scram the reactor), and does not protect SG tube differential pressure.</span> (AMSAC Lesson Plan NOS05AMSAC0-02 page 11; Salem FSAR 7.8)
+</div>
+
 ## Actuation
 
 - **Input:** Low steam generator water level
@@ -69,5 +74,5 @@ AMSAC AFW pump start signals by train: <span class="hi-exam">Train A starts 21 A
 - Related systems: [[RPS/SSPS]], [[AFW]]
 - Related procedures: [[curve book]]
 - Related concepts: [[ESF & Design]] (ATWS section)
-- Related exam questions: [[2015 Q9]], [[2019 Q31]]
-- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]]
+- Related exam questions: [[2015 Q9]], [[2019 Q31]], [[2014 Q67]]
+- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]], [[2014 NRC Written Exam]]

@@ -272,6 +272,7 @@ status: draft
 - [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
 - [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]]
 - [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]]
+- [[S2.OP-ST.DG-0002 — 2B Diesel Generator Surveillance Test]]
 - [[S2.OP-ST.DG-0003 — 2C Diesel Generator Surveillance Test]]
 - [[S2.OP-ST.DG-0014 — 2C Diesel Generator Endurance Run]]
 - [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]

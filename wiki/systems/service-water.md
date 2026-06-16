@@ -183,11 +183,31 @@ A sequential SW header-pressure alarm cascade (OHA B-13/B-14/B-15) plus <span cl
 25 SW pump discharge strainer develops high D/P (OHA B-16, 24-26 SW STRAIN TRBL; SW header pressures lowering). Field finds the strainer in auto with backwash red light on and flow through 25SW24, but the <span class="hi-exam">strainer shaft NOT turning</span> with the strainer motor running, D/P ~10.5 psid. CRS collects Trip/High D/P Observations IAW [[S1.OP-SO.SW-0001]] Attachment 2, determines manual backwash cannot be performed (strainer not turning), and declares 25 SW pump inoperable based on <span class="hi-exam">D/P &gt;10 psid</span> across the strainer (IAW S2.OP-AR.ZZ-0002, OHA Window B). With 26 SW pump already CIT, CRS enters <span class="hi-exam">LCO 3.7.4</span> — no operable SW pump powered from "C" vital bus leaves only ONE SW loop operable.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q47</div>
+SW nuclear-header supply to the CFCUs: 21/22 CFCUs from 21 nuc header, 24/25 from 22 nuc header, 23 from BOTH (check-valve arrangement). <span class="hi-exam">22SW20 (Nuclear Header Supply) stuck shut isolates the 21 nuc header → 21 and 22 CFCUs lose all SW (2 CFCUs)</span>. Restore by opening <span class="hi-exam">21SW23 / 22SW23 (Nuclear Header X-over valves)</span>, located downstream of 22SW20/24SW20. <span class="hi-trap">The SW17 (SW-Bay / Discharge Header) x-connects are normally open and cannot restore flow past the shut 22SW20.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q46</div>
+The CFCU SW flow control valve <span class="hi-exam">SW223 has a ~50% position limiter / mechanical stop</span> and opens to that stop on a start from either fan speed, so steady-state SW flow through a CFCU is the SAME in low and high speed.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q53</div>
+The <span class="hi-exam">TGA (Turbine Generator Area) SW header pressure is regulated by ST1 to a downstream pressure of <span class="val-normal">80 psig</span></span>, so it modulates to hold pressure stable and does NOT change following a Main Turbine trip.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q63</div>
+After a LOOP + manual SI on Unit 2 with the 2B EDG output breaker failing to close (loss of B 4KV/460V/230V power): <span class="hi-exam">2SW26 (TURB AREA SW MOV STOP VLV) remains OPEN</span> — it is always open at 100% power and the loss of power prevents it from closing. <span class="hi-trap">21/22SW122 (CC HX SW INLET) are AOVs that CLOSE on a MODE 3 (their control circuits keep power while 115VAC is available); CFCU 223 (CV FANS SW OUTLET) valves OPEN on MODE 3, but 22 and 24 CFCUs do not start in slow speed due to the loss of 460V power.</span>
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[AB.SW-0005 — Loss of All Service Water]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S1.OP-SO.SW-0001 — Service Water Pump Operation]], [[AB.SW-0002 — Loss of Service Water-Turbine Header]]
-- Related exam questions: [[2015 Q16]], [[2016 Q42]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]], [[2015 Q61]], [[2015 Q69]], [[2015 Q71]], [[2015 Q78]], [[2015 Q80]], [[2015 Q90]], [[2014 Q16]]
+- Related exam questions: [[2015 Q16]], [[2016 Q42]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]], [[2015 Q61]], [[2015 Q69]], [[2015 Q71]], [[2015 Q78]], [[2015 Q80]], [[2015 Q90]], [[2014 Q16]], [[2014 Q46]], [[2014 Q47]], [[2014 Q53]], [[2014 Q63]]
 - Related JPMs: [[2016 JPM SRO-A1-1]], [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-e]], [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]], [[2015 JPM RO-A1-1]]
 - Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

@@ -124,12 +124,17 @@ The Emergency Control Air Compressor (ECAC): <span class="hi-exam">at 95 psig an
 During refueling fuel movement, <span class="hi-exam">a loss of Control Air to containment precludes core alterations because the manipulator crane is air-powered for gripping</span>. See [[Refueling]], [[S2.OP-SO.SF-0009 — Refueling Operations]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q64</div>
+On a total loss of Control Air affecting both units (operating SAC tripped/unrestartable, Unit 2 ECAC tripped after starting), the AB.CA-0001 CAS action directs: <span class="hi-exam">if BOTH CA header pressures are &lt;<span class="val-trip">80 psig</span>, trip the Rx — on BOTH units</span>. The <span class="hi-exam">BF19s (Feed Reg Valves) go shut</span> as their air runs out. <span class="hi-trap">The FRVs are NOT supplied backup air from the ECACs (a check valve blocks control air to the BF19s; only Station Air supplies the BF19s). Unit 1 ECAC feeds the 1B/2B headers; Unit 2 ECAC feeds the 1A/2A headers.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[RHR]], [[DC Power]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.CA-0001 — Control Air System Operation]]
 - Related abnormals: [[AB.460-0003 — Loss of 2C 460/230V Vital Bus]]
-- Related exam questions: [[2015 Q13]], [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]], [[2015 Q37]], [[2015 Q62]], [[2015 Q96]], [[2014 Q19]]
+- Related exam questions: [[2015 Q13]], [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]], [[2015 Q37]], [[2015 Q62]], [[2015 Q96]], [[2014 Q19]], [[2014 Q64]]
 - Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]]

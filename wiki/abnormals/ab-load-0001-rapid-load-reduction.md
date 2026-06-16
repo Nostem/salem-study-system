@@ -66,10 +66,15 @@ AB.LOAD-0001 entered (or AB.RC-0001 power reduction performed) following confirm
 Entered from AB.GEN-0001 to lower the Main Generator <span class="hi-exam">Radio Frequency Monitor &lt; 50%</span> (elevated stator temperatures, Point 0901 GEN RADIO FREQ HIGH). RO calculates and commences RCS boration; PO initiates turbine load reduction to the target load at the CRS-specified rate; RO maintains Tavg on program with rods/boration and energizes PZR heaters. During the downpower an MPT Sudden Pressure / FP deluge actuation forces a reactor trip. See [[AB.GEN-0001 — Main Generator Abnormal Stator Conditions]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q42</div>
+After an AB.LOAD-0001 rapid power reduction overshoots (power down to ~7%, Tavg dropped to 545°F), an operator restoring Tavg by continuous manual rod withdrawal will (per FSAR 15.2.2.1) be terminated by the <span class="hi-exam">High Power Reactor Trip (low range), 25% on 2/4 PR NIs — basis DNB protection</span>. <span class="hi-trap">The 20% rod block on 1/2 IR NI is NOT credited in the FSAR and will not act quickly enough to prevent the trip.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[500KV]], [[Main Turbine]], [[Circ Water]]
+- Related systems: [[500KV]], [[Main Turbine]], [[Circ Water]], [[Control Rod Drive]], [[RPS/SSPS]]
 - Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.COND-0001 — Loss of Condenser Vacuum]]
-- Related exam questions: [[2023 Q88]]
+- Related exam questions: [[2023 Q88]], [[2014 Q42]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 2]], [[2015 Scenario 3]]
-- Related exam: [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

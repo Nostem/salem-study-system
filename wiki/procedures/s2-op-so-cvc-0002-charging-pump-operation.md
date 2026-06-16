@@ -27,9 +27,15 @@ Section 4.1 governs the <span class="hi-exam">Normal alignment of 23 Charging Pu
 Charging pump operability is dispositioned from the 92-day IST (S1.OP-ST.CVC-0003). The pass/fail parameter in this JPM is <span class="hi-exam">Pump Inboard Bearing Vibration Position P1H</span>: a value <span class="hi-exam">&gt;0.70 in/sec is in the Required Action Range (UNSAT)</span> per S1.RA-ST.CVC-0003. A P1H of <span class="val-trip">0.710 in/sec</span> renders the pump surveillance UNSAT regardless of how the data sheet was initialed.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q40</div>
+The Charging System <span class="hi-exam">Master Flow Controller controls PDP charging pump speed (and flow) when the PD pump is in service, and controls charging FCV CV-55 when a centrifugal pump is in service</span>. Normal MFC demand is ~40%; a failure to 20% halves charging flow (normal charging ~90 gpm), producing SEAL WATER FLOW LO on all 4 RCPs.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]]
 - Related procedures: [[AB.SW-0005 — Loss of All Service Water]], [[S1.OP-ST.CVC-0003 — Inservice Testing, 11 Charging Pump]]
 - Related JPMs: [[2016 JPM Sim-e]], [[2015 JPM RO-A2]]
-- Related exam: [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam questions: [[2014 Q40]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

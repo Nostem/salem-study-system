@@ -43,6 +43,11 @@ Salem EOPs' Continuous Action Steps are either surrounded by a shaded box or con
 With verified <span class="hi-exam">Red and Purple CFSTs</span>, OP-AA-101-111-1003 states that the CFSTs should be monitored <span class="hi-exam">continuously</span>. If no condition more serious than YELLOW is encountered, CFSTs may be monitored every <span class="hi-exam">10-20 minutes</span>. <span class="hi-trap">Trap: 10-20 minutes is for Yellow-only conditions — any Red or Purple CFST requires continuous monitoring.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q74</div>
+Step 4.2.11 (page 22) requires <span class="hi-exam">CONTINUOUS monitoring of the CFSTs whenever any RED or PURPLE path is indicated</span>. With a Heat Sink RED path (all other CSFs green) following transition from EOP-TRIP-1 to EOP-FRHS-1, monitoring must be continuous and <span class="hi-trap">may NOT be done every 30 minutes, every 10-20 minutes (Yellow-only), or suspended with CRS concurrence.</span>
+</div>
+
 ### CSF and FRP Implementation Priority
 
 <div class="callout callout-exam">
@@ -81,7 +86,7 @@ Listed among the technical references governing crew conduct throughout the scen
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
 - Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
-- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]], [[2015 Q74]]
+- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]], [[2015 Q74]], [[2014 Q74]]
 - Related JPMs: [[2016 JPM Sim-b]]
 - Related scenarios: [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

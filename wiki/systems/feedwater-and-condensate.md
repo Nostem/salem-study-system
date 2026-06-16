@@ -213,12 +213,22 @@ After a P-14 (Feedwater Isolation) clears, a SGFP can be relatched (S2.OP-SO.CN-
 With 23 Condensate pump already CIT (only two Condensate pumps in service), the loss of a second (22) Condensate pump causes <span class="hi-exam">SGFP suction pressure to rapidly and irreversibly lower</span> until both SGFPs trip on low suction pressure. With no SGFP operating &gt;P-10, the crew performs a <span class="hi-exam">manual reactor trip</span>. SGFPs remain unavailable for recovery because there is no SW flow to the TGA (turbine generator area) coolers, so secondary heat sink can only be restored later via direct Condensate System flow to a depressurized SG (FRHS-1 Step 20 path).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q54</div>
+At 85% power with all Condensate/HDT pumps and the polisher in service, an 11 Condensate Pump trip causes <span class="hi-exam">SGFP suction pressure to lower</span>. <span class="hi-trap">The 11-13CN108 (Polisher Bypass) valves open on a SGFP trip, not a condensate pump trip. The 1CN47 (13/14/15 Heater Strings Bypass) auto-opens at <span class="val-alarm">265 psig</span>, which is not reached. Per Q=m▲T the reduced feed flow makes feed temperature entering the SGs RISE, not lower.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q55</div>
+At ~8% power during a startup, the operating SGFP is placed on Main Steam supply prior to exceeding <span class="hi-exam">5% power (IOP-3 step 5.4.10)</span>. A spurious MSLI closes the MSIVs AND the <span class="hi-exam">MS18 bypass valves</span>, so the SGFP loses steam and coasts down (it does NOT trip). The MDAFW and TDAFW pumps then start when SG level drops to the <span class="val-trip">lo-lo level setpoint</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
-- Related exam questions: [[2014 Q2]], [[2015 Q12]], [[2016 Q51]], [[2016 Q52]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]], [[2015 Q27]], [[2015 Q50]], [[2015 Q52]]
+- Related exam questions: [[2014 Q2]], [[2014 Q54]], [[2014 Q55]], [[2015 Q12]], [[2016 Q51]], [[2016 Q52]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]], [[2015 Q27]], [[2015 Q50]], [[2015 Q52]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]], [[2016 JPM Sim-h]], [[2016 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]]
 - Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

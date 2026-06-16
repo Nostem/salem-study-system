@@ -118,11 +118,16 @@ Total loss of Control Air at 7% power during normal power ascension (after manua
 On Console Alarm CONTROL AIR PRESSURE LO with only the "A" header degraded (A at 78 psig and dropping slowly, B at 93 psig and steady, Station Air 110 psig steady), the ARP directs the operators to <span class="hi-exam">go to S2.OP-AB.CA-0001 and verify the redundant air panels have swapped to the "B" control air header</span> (the swap is verified after the NOTE at step 55 or 63). <span class="hi-trap">A reactor trip is NOT required — the stem does not indicate a loss of Control Air on both headers; there is also no direction to lower power and start AFW pumps.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q64</div>
+With the operating SAC tripped (none restartable) and the Unit 2 ECAC tripped immediately after starting, both units lose Control Air. The AB.CA-0001 CAS action directs: <span class="hi-exam">if BOTH CA header pressures are &lt;<span class="val-trip">80 psig</span>, then trip the Rx</span> — applied to BOTH units. With all station air lost, the <span class="hi-exam">BF19s (Feed Reg Valves) go shut</span> as their air runs out; <span class="hi-trap">the FRVs are NOT supplied backup air from the ECACs (a check valve prevents control air from reaching the BF19s, and per p.38 of AB.CA only Station Air supplies the BF19s). Unit 1 ECAC feeds the 1B and 2B headers; Unit 2 ECAC feeds the 1A and 2A header.</span> Result: BOTH reactors are tripped based on impending BF19 closures.
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[EDGs]], [[DC Power]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[SC.OP-SO.SA-0001 — Station Air System Operation]]
-- Related exam questions: [[2015 Q13]], [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]], [[2014 Q19]]
+- Related exam questions: [[2015 Q13]], [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]], [[2014 Q19]], [[2014 Q64]]
 - Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOPA-1 — Loss of All AC Power]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]]

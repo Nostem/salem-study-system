@@ -213,6 +213,21 @@ Area Radiation Monitors with automatic ventilation actions: <span class="hi-exam
 On a 2R31 (Letdown Line Monitor) WARNING and entry into AB.RC-0002: the CRS <span class="hi-exam">directs a Radiation Protection Technician to take surveys to determine if radiation levels have changed access requirements</span> (so personnel are promptly notified). Chemistry sampling — not RP surveys — confirms the 2R31 rise; the hourly isotopic analysis is for gamma to determine DEI for trending.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q60</div>
+On a CVCS Monitor Tank release routed through the cross-connect line, the high-radiation auto-isolation comes from the initiating unit's <span class="hi-exam">R18 monitor closing 2WL51</span>. <span class="hi-trap">The cross-connect does NOT put flow through the opposite unit's R18 monitor; 1WL51 stays out of the flowpath.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q61 (Deleted)</div>
+For a 22 SG tube leak: <span class="hi-exam">2R19B (22 SG Blowdown) and 2R15 (Condenser Air Ejector) respond first, then 2R41D (Plant Vent Release Rate)</span> as activity reaches the plant vent. <span class="hi-trap">The 2R46A (22 Main Steam Line) monitor watches high-level post-accident noble-gas releases via the atmospheric steam relief/safety valves — it does NOT change from a tube leak.</span> (Question marked Deleted on the worksheet; keyed answer B.)
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q62</div>
+Point-source inverse-square scaling: <span class="hi-exam">DR1 = DR2 × (d2² / d1²)</span>. A process monitor reading 2 R/hr at 10 ft from a dropped source gives <span class="hi-exam">2 R/hr × (10²/1²) = 200 R/hr</span> at 1 ft.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]], [[Steam Generator & Blowdown]]
@@ -252,5 +267,8 @@ On a 2R31 (Letdown Line Monitor) WARNING and entry into AB.RC-0002: the CRS <spa
   - [[2014 Q13]] — fuel handling incident: evacuate FHB at 1 R/hr per AB.FUEL-0001 CAS 1.0; 2R32A crane lockout and HEPA+Charcoal realignment are not the evacuation criterion
   - [[2014 Q14]] — 2R19A SG Blowdown Rad Monitor at ALARM (not Warning) auto-closes 21GB4 to isolate blowdown to condenser; each SG has its own blowdown line (no backfeeding)
   - [[2014 Q20]] — failed fuel with excess letdown in service (2CV18 shut): 2R4 (Charging Pump Room Area) responds first since excess letdown returns to charging pump suction; bypasses 2R31, no 2R26 demin flow, no 2R19 with no pri-sec leak
+  - [[2014 Q60]] — CVCS Monitor Tank cross-connect release: initiating unit's R18 monitor auto-closes 2WL51; cross-connect bypasses opposite unit's R18 (1WL51 not in flowpath)
+  - [[2014 Q61]] — 22 SG tube leak: 2R19B/2R15 respond first, then 2R41D; 2R46A (22 Main Steam Line) does NOT change (post-accident noble-gas monitor) — question marked Deleted, keyed B
+  - [[2014 Q62]] — point-source inverse-square: 2 R/hr at 10 ft → 200 R/hr at 1 ft via DR1 = DR2 × (d2²/d1²)
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]]

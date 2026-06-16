@@ -30,8 +30,13 @@ Rising radiation on <span class="hi-exam">2R19A (STM GEN BLOWDOWN RAD MONITOR) a
 With normal letdown out of service (2CV18 shut) and Excess Letdown in service, a failed-fuel fission product release shows first on <span class="hi-exam">2R4 (Charging Pump Room Area Monitor)</span> because the excess letdown flowpath returns to the suction of the charging pumps. <span class="hi-trap">Excess letdown does NOT pass through 2R31 (Letdown Heat Exchanger Monitor); 2R26 (RC Filter Monitor) sees no flow with normal letdown secured; and with no primary-to-secondary leakage the 2R19 SG Blowdown Monitors are unaffected.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q61 (Deleted)</div>
+For a 5 gpm tube leak on 22 SG (with an identified small fuel pin leak), the activity is detected first by the <span class="hi-exam">2R19B (22 SG Blowdown)</span> and <span class="hi-exam">2R15 (Condenser Air Ejector)</span> monitors, then by <span class="hi-exam">2R41D (Plant Vent Release Rate)</span> as it reaches the plant vent. <span class="hi-trap">The 2R46A (22 Main Steam Line) monitor provides continuous monitoring of high-level, post-accident noble gas releases via the atmospheric steam relief and/or safety valves — it will NOT show a change from this tube leak.</span> (Question marked "Deleted" on the worksheet; keyed answer B.)
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]], [[CFCUs]], [[Radiation Monitoring]], [[CVCS]]
-- Related exam questions: [[2023 Q13]], [[2014 Q14]], [[2014 Q20]]
+- Related exam questions: [[2023 Q13]], [[2014 Q14]], [[2014 Q20]], [[2014 Q61]]
 - Related exam: [[2023 NRC Written Exam]], [[2014 NRC Written Exam]]

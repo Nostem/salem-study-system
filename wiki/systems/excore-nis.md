@@ -144,12 +144,22 @@ Energizing the Source Range NIS after a trip (EOP-TRIP-2 Step 22): both IR chann
 With one Source Range NI (Channel I / 2N31) failed low during a startup, power must be maintained &lt;P-6 because below P-6 the <span class="hi-exam">SR and IR NIs may not be overlapped</span> — reducing reactor power indication to a single SR channel. <span class="hi-trap">A single SR channel cannot be considered reliable with no other Rx power indication to verify it against</span> (adequate for shutdown monitoring, not for a startup). Basis: TS Bases 3.3.1.1 — maintain coincidence logic, sufficient redundancy, and diverse-parameter functional capability.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q44</div>
+<span class="hi-exam">1/4 PR NI &gt;103% = C-2</span>, which blocks ALL outward rod motion (auto and manual). This is the overpower rod stop interlock derived directly from the Power Range NIs. <span class="hi-trap">A single PRNI failing high (e.g., 2N43) drives rods IN in auto and trips the Overpower Rod Stop, but a single channel &gt;103% satisfies the 1/4 C-2 logic that blocks outward motion.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q42</div>
+The Power Range NIs provide the <span class="hi-exam">High Power Reactor Trip (low range) at 25% on 2/4 PR NIs</span> that terminates an uncontrolled rod withdrawal at low power (FSAR 15.2.2.1), with the basis of DNB protection.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
-- Related exam questions: [[2014 Q12]], [[2014 Q17]]
+- Related exam questions: [[2014 Q12]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]]
 - Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
   - [[2015 Q67]] — Mode 6 Core Alterations require 2 Source Range NIs operable (LCO 3.9.2); one inoperable SR NI prevents core alterations
   - [[2015 Q89]] — second IRNI channel fails erratically: enter AB.NIS-0001 / TS 3.0.3 (Hot Standby within 6 hours); single-IRNI loss excluded from LCO 3.0.3

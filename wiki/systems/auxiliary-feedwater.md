@@ -234,11 +234,21 @@ Post-trip, <span class="hi-exam">21 AFW pump runs with no discharge flow and 22/
 Cascading <span class="hi-exam">loss of all AFW</span> after the reactor trip: 22 AFW pump fails to start on SEC; 21 charging pump (for charging) also lost; <span class="hi-exam">21 AFW pump trips 4 minutes after the Rx trip</span>, leaving 23 AFW pump as the only operating aux feed pump; then <span class="hi-exam">23 AFW pump overspeeds and trips</span> when SG NR levels recover but remain &lt;9%. With AFW flow &lt;22E4 lbm/hr and ALL SG NR levels &lt;9%, the crew validates a CFST Heat Sink <span class="hi-exam">RED path</span> and transitions to FRHS-1. See [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q55</div>
+On a spurious MSLI during low-power startup, the MDAFW pumps and TDAFW pump <span class="hi-exam">start when SG level(s) drop to the lo-lo level setpoint</span> as the SGFP coasts down after losing its main-steam supply (MSIVs and MS18 bypass valves close on the MSLI).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q56</div>
+With the 22 AFP Pressure Override Protection circuit malfunctioned (holding the 22 AFP <span class="hi-exam">AF21 isolation valves shut</span> to 21 and 22 SGs), 23 AFP still feeds 21 and 22 SGs through the AF11s. <span class="hi-exam">21 and 22 SG levels rise slower than 23 and 24 SG levels</span> because 23 and 24 are fed by 21 MDAFW pump PLUS the TDAFW pump. <span class="hi-trap">Total AFW flow (all MDAFW + TDAFW pumps combined) is indicated on 2CC2 — so it will NOT read 0 gpm for any pair of SGs.</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]], [[AB.115-0001 — Loss of 115V Vital Instrument Bus]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]], [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]], [[AB.CA-0001 — Loss of Control Air]]
-- Related exam questions: [[2015 Q18]], [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2016 Q65]], [[2016 Q76]], [[2016 Q78]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]], [[2015 Q53]], [[2015 Q54]], [[2015 Q63]], [[2015 Q83]], [[2014 Q15]]
+- Related exam questions: [[2015 Q18]], [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2016 Q65]], [[2016 Q76]], [[2016 Q78]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]], [[2015 Q53]], [[2015 Q54]], [[2015 Q63]], [[2015 Q83]], [[2014 Q15]], [[2014 Q55]], [[2014 Q56]]
 - Related JPMs: [[2023 JPM SRO-A4]], [[2016 JPM IP-j]], [[2015 JPM Sim-h]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

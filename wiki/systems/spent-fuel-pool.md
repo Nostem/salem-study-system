@@ -99,11 +99,21 @@ Per Precaution &amp; Limitation 2.2 of S2.OP-IO.ZZ-0010, spent fuel manipulation
 The <span class="hi-exam">Spent Fuel Pool HX is cooled by CCW</span> and is fed from the <span class="hi-exam">Non-Safeguards CC header</span> (supplied from both CC headers). During a CCW leak isolated per AB.CC-0001 Attachment 4, a leak that continues with EITHER CC header in service points to the SFP HX — <span class="hi-trap">SFP cooling pressure is &lt; CCW pressure, so leakage flows out of CCW into the SFP cooling side.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q50</div>
+The Unit 2 Cycle 21 SFP boron concentration limit of <span class="hi-exam">≥ <span class="val-normal">2127 ppm</span> in Mode 6</span> (Salem Unit 2 COLR, p 9, §2.6) is set by the most restrictive of 3 criteria, one of which <span class="hi-exam">ensures Keff ≤ 0.95 at All Rods In, Cold Zero Power with a 1% &Delta;k/k uncertainty added</span> — that Keff criterion is the basis tested. The preferred makeup source to establish/restore SFP boron (S2.OP-SO.SF-0001) is the <span class="hi-exam">CVCS Holdup Tanks</span>. <span class="hi-trap">Demineralized water is the normal SFP makeup source but has NO boron, so it cannot RAISE boron concentration. "SFP boron always &gt; RCS / Refueling Cavity" is NOT the reason for the 2127 ppm limit. The RWST is not the preferred boron makeup source.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q68</div>
+Per S2.OP-SO.SF-0009 (Refueling Operations) P&amp;L 3.13, transfer of fuel into the SFP must be <span class="hi-exam">suspended when either the 21 or 22 SFP Cooling pump becomes INOPERABLE</span> — even with the other pump in service. <span class="hi-exam">Loss of all oil in the bearing oil reservoir renders an SFP cooling pump INOPERABLE.</span> <span class="hi-trap">Distractors that do NOT require suspension: an SRO leaving SFP manipulations under a qualified RE (RE OR SRO is acceptable); one FHB supply fan + 2 FHB exhaust fans running (that is the complement required for an OPERABLE FHB ventilation system); 2R5 failing low (only ONE of the two FHB area rad monitors must be OPERABLE per TSAS 3.3.1.1 Table 3.3-6).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]], [[Radiation Monitoring]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]], [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.CC-0001 — Loss of Component Cooling Water]]
-- Related exam questions: [[2014 Q9]], [[2014 Q13]], [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]]
+- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-SO.SF-0009 — Refueling Operations]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]], [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.CC-0001 — Loss of Component Cooling Water]]
+- Related exam questions: [[2014 Q9]], [[2014 Q13]], [[2014 Q50]], [[2014 Q68]], [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]]
 - Related JPMs: [[2016 JPM SRO-A1-2]]
 - Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]]

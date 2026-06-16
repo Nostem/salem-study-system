@@ -221,11 +221,26 @@ Effects of control rod motion on plant parameters: Salem normally operates with 
 Dropped-rod corrective actions per AB.ROD-0002: on a single dropped rod, <span class="hi-exam">place the Rod Bank Selector Switch in MAN</span> to defeat the automatic outward rod motion that would otherwise occur at <span class="hi-exam">T+1:30</span>, then maintain Tave within 1.5° of program. If <span class="hi-exam">more than one rod is verified dropped (step 2.1), manually TRIP the reactor</span> and GO TO EOP-TRIP-1 — a second dropped rod is recognized by a second rod bottom light, depressed power/flux in the region of the two rods, lowering Tavg/Terr, or OHA D-32 TAVE LO. See [[AB.ROD-0002 — Dropped Rod]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q44</div>
+Control Grade Interlocks / rod stops that block outward rod motion: <span class="hi-exam">C-2 (1/4 PR NI &gt;103%) blocks ALL outward rod motion (auto AND manual)</span>. <span class="hi-trap">C-11 (ARO position) blocks only AUTO outward motion — ARO is a per-fuel-cycle number, not a physical stop in the core. C-3 actuates within 3% of the OT/&Delta;T Rx trip setpoint. P-2 (steam line inlet pressure &lt;15%) blocks only AUTO outward rod motion; manual rod motion still works.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q42</div>
+During a continuous manual rod withdrawal at low power, the rod block (20% power-equivalent amps on 1/2 IR NI) <span class="hi-trap">is NOT credited by FSAR 15.2.2.1 and will not act quickly enough</span> — the event is terminated by the <span class="hi-exam">High Power Reactor Trip (low range), 25% on 2/4 PR NIs, basis DNB protection</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q52</div>
+During a startup with the Main Generator rolling unloaded (not yet online), <span class="hi-exam">rod control is NOT placed in AUTO until &gt;P-2 (15% Turbine power)</span>. With reactor power stable at 18% but turbine not loaded, rods remain in MANUAL — so with no operator action the rods do NOT step in or out. (Raising MS Dump Pressure setpoint shuts the dumps, lowering steam flow / raising temperature → Rx power lowers to &lt;18%.)
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]], [[Excore NIs]], [[CVCS]], [[Main Turbine]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]], [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[curve book]]
 - Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2015 Scenario 4]]
-- Related exam questions: [[2014 Q1]], [[2014 Q28]], [[2015 Q9]], [[2015 Q11]], [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2016 Q77]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]], [[2015 Q28]], [[2015 Q76]], [[2015 Q88]], [[2015 Q94]], [[2014 Q17]]
+- Related exam questions: [[2014 Q1]], [[2014 Q28]], [[2015 Q9]], [[2015 Q11]], [[2016 Q2]], [[2016 Q3]], [[2016 Q67]], [[2016 Q69]], [[2016 Q77]], [[2018 Q30]], [[2018 Q39]], [[2018 Q41]], [[2019 Q3]], [[2019 Q29]], [[2019 Q49]], [[2019 Q67]], [[2020 Q19]], [[2020 Q20]], [[2020 Q56]], [[2020 Q68]], [[2023 Q55 — Urgent Failure / Rod Control Gripper Coils|2023 Q55]], [[2022 Q56]], [[2022 Q92]], [[2015 Q28]], [[2015 Q76]], [[2015 Q88]], [[2015 Q94]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]], [[2014 Q52]]
 - Related JPMs: [[2018 JPM Sim-a]], [[2019 JPM Sim-a]], [[2019 JPM IP-j]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM Sim-a]], [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2020 JPM Sim-c]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]], [[2015 JPM Sim-a]]
 - Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]

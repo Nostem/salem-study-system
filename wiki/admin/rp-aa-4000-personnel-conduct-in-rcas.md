@@ -35,8 +35,15 @@ Per RP-AA-4000, self-reading dosimeters should be read approximately every <span
 Confirms same facts tested in 2019 Q44: self-reading dosimeter monitoring frequency in a HIGH Radiation Area = <span class="hi-exam">every 15 minutes</span> (not 30 minutes — that is for a standard Radiation Area). On unexpected dosimeter alarm, NEO must <span class="hi-exam">exit the HRA immediately</span> and notify RP — NOT just go to a low dose area within the HRA.
 </div>
 
+### Radiation Worker Pocket RWP Data Sheet
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q72</div>
+Items found on the "Radiation Worker Pocket RWP Data Sheet" (RP-AA-4000, page 10) include <span class="hi-exam">Dress Requirements, Task and Work Order, and the Electronic Dosimeter Dose Rate Alarm setpoint</span>. <span class="hi-trap">Trap: "Year-to-date Accumulated dose" is NOT an item on the pocket RWP data sheet.</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[RP-AA-203 — Exposure Control and Authorization]], [[RP-AA-460 — Controls for High and Very High Radiation Areas]]
-- Related exam questions: [[2018 Q44]], [[2019 Q44]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]]
+- Related exam questions: [[2018 Q44]], [[2019 Q44]], [[2014 Q72]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2014 NRC Written Exam]]

@@ -218,11 +218,26 @@ On a Safety Injection the CFCUs shift to <span class="hi-exam">slow speed</span>
 A loss of the 1A 4KV vital bus removes the <span class="hi-exam">11 CFCU</span> (along with 11 RHR, 11 CS, and 13 Charging). For a small (1") RCS break, containment pressure does not rise to the CS requirement, so the loss of 11 CFCU does not change the containment pressure response.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q46</div>
+CFCU SW flow control valve <span class="hi-exam">SW223 has a position limiter (~50% travel)</span> and opens to that mechanical stop on a start signal from EITHER low or high speed. Therefore <span class="hi-exam">steady-state SW flow is the SAME for low and high speed operation</span> — it does NOT rise or lower when transferring speed (the CFCU is normally stopped ~30 seconds during the transfer). <span class="hi-trap">Distractor "rise or lower based on initial SW header pressure" assumes header pressure changes — it does not in a steady-state-to-steady-state comparison.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q47</div>
+SW supply mapping: <span class="hi-exam">21 and 22 CFCUs from 21 nuc header; 24 and 25 CFCUs from 22 nuc header; 23 CFCU from BOTH headers via a check-valve arrangement</span>. With 22SW20 (Nuclear Header Supply) stuck shut isolating the 21 nuc header, <span class="hi-exam">2 CFCUs (21 and 22) lose all cooling water</span>. Restore by <span class="hi-exam">opening 21SW23 and 22SW23 (Nuclear Header X-over valves)</span>, which are downstream of 22SW20/24SW20 and cross-feed both nuc headers. <span class="hi-trap">The SW17 SW-Bay/Discharge Header x-connects are normally open and even if closed cannot restore flow past the shut 22SW20; 23 CFCU is NOT lost (dual-header check-valve supply).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q63</div>
+On a LOOP + SI (MODE 3) with the 2B EDG output breaker failing to close, the <span class="hi-exam">CFCU 223 (CV FANS SW OUTLET) valves OPEN on the MODE 3 signal</span>, but <span class="hi-trap">22 and 24 CFCUs do NOT start in slow speed because of the loss of 460V power</span>.
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]]
-- Related exam questions: [[2014 Q34]], [[2014 Q35]], [[2015 Q16]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]], [[2015 Q65]], [[2015 Q80]], [[2015 Q90]], [[2015 Q91]]
+- Related exam questions: [[2014 Q34]], [[2014 Q35]], [[2015 Q16]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]], [[2015 Q65]], [[2015 Q80]], [[2015 Q90]], [[2015 Q91]], [[2014 Q46]], [[2014 Q47]], [[2014 Q63]]
 - Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 1]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

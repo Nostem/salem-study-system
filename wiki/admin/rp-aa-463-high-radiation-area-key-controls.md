@@ -22,6 +22,12 @@ Provides the requirements and controls for key release and access into High Radi
 | Area Classification | Authorization Required | Source |
 |-------------------|----------------------|--------|
 | High Radiation Area (HRA) | SRPT (Senior Radiation Protection Technician) | RP-AA-463 Att. 1 |
+| Very High Radiation Area (VHRA) | RPM AND Plant Manager / Shift Manager | RP-AA-463 Att. 1 |
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q73</div>
+Per Attachment 1, High Radiation Area Key Approval Authority: issuing a key that will unlock a <span class="hi-exam">Very High Radiation Area requires approval of BOTH the RPM AND the Plant Manager / Shift Manager</span>. <span class="hi-trap">Trap: the SRPT authorizes key release at the HRA level — but the VHRA key requires the RPM plus the Plant Manager/Shift Manager, not the SRPT.</span>
+</div>
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2019 SRO-A4</div>
@@ -31,5 +37,6 @@ HRA entry authorization for Unit 1 Pipe Alley (Elevation 84 ft, Auxiliary Buildi
 ## Connections
 
 - Related procedures: [[RP-AA-460 — Controls for High and Very High Radiation Areas]], [[RP-AA-300 — Radiological Survey Program]]
+- Related exam questions: [[2014 Q73]]
 - Related JPMs: [[2019 JPM SRO-A4]]
-- Related exam: [[2019 NRC Operating Exam]]
+- Related exam: [[2019 NRC Operating Exam]], [[2014 NRC Written Exam]]

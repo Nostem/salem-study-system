@@ -57,12 +57,17 @@ SMM adverse containment logic: <span class="hi-exam">either containment pressure
 At the CET Control Panel, the <span class="hi-exam">"ALL" Mode displays the two highest-reading Train A CETs in each quadrant, then sequentially displays all Train A CETs</span> (Table C of EOP-CFST-1). The 700°F threshold is the CFST-1 Core Cooling purple-path criterion, not a CET display mode. See [[EOP-CFST-1 — Critical Safety Function Status Trees]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q45</div>
+CETs are the primary RCS temperature indication; the CET Processing System digitizes the input and feeds the <span class="hi-exam">Subcooling Margin Monitor, SPDS, and the eP-250 Plant Computer</span>. If the (2-train) CET Processing System is de-energized, those downstream indications all lose CET input. Per 2-EOP-CFST-1, the ONLY indication then allowed to verify natural circulation is the <span class="hi-exam">Installed Control Room Class 1E readings</span>. <span class="hi-trap">Plant Computer, Subcooling Margin Monitor, and SPDS all derive from the de-energized CET Processing System (and SPDS/Plant Computer are exempt from 1E requirements).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Excore NIs]], [[RCS]], [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2020 Q26]], [[2020 Q58]], [[2023 Q57]], [[2015 Q44]]
-- Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related exam questions: [[2020 Q26]], [[2020 Q58]], [[2023 Q57]], [[2015 Q44]], [[2014 Q45]]
+- Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
   - [[2023 Q57]] — In-Core Temperature Monitoring CET / reference junction compensation / 2300°F limit
   - [[2020 Q26]] — SMM adverse containment mode / R44A/B > 1E05 R/HR / manual reset required for radiation
   - [[2020 Q58]] — Subcooling Margin Monitor inputs (CET temp, RCS WR pressure, not PZR pressure)

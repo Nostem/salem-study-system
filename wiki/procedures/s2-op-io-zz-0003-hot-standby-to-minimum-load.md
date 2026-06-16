@@ -40,10 +40,15 @@ During a control-rod startup (Hot Standby to Minimum Load), a predicted-critical
 During the power ascension under this procedure, the 4KV Group Buses are <span class="hi-exam">transferred from the Station Power Transformers to the Auxiliary Power Transformers IAW S2.OP-SO.4KV-0008</span> once the Main Turbine is synchronized; <span class="hi-exam">Rod Control is held in Manual until the Group Buses are transferred</span>. See [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q55</div>
+The operating SGFP(s) are placed on Main Steam supply prior to exceeding <span class="hi-exam">5% power (IOP-3 step 5.4.10)</span>. A spurious MSLI then closes the MSIVs AND the <span class="hi-exam">MS18 bypass valves</span>, removing steam from the SGFP — the SGFP coasts down (it does not trip). As SG level drops to the <span class="hi-exam">lo-lo level setpoint</span>, the MDAFW pumps and TDAFW pump start. <span class="hi-trap">Note: source procedure cited on the worksheet is the Unit 1 equivalent S1.OP-IO.ZZ-0003 (Rev 32); the canonical wiki article is the Unit 2 S2.OP-IO.ZZ-0003.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]]
+- Related systems: [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]], [[AFW]], [[Main Steam]]
 - Related procedures: [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]]
-- Related exam questions: [[2016 Q69]], [[2018 Q39]], [[2015 Q76]], [[2015 Q94]]
+- Related exam questions: [[2016 Q69]], [[2018 Q39]], [[2015 Q76]], [[2015 Q94]], [[2014 Q55]]
 - Related JPMs: [[2018 JPM Sim-e]], [[2015 JPM Sim-e]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

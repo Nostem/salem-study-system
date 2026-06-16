@@ -167,11 +167,21 @@ On a single 4KV vital-bus UV / Bus Differential lockout, only that bus loads in 
 Group-bus SPT-to-APT transfer (S2.OP-SO.4KV-0008): per 4KV Group Bus, <span class="hi-exam">PRESS the Mimic Bus GROUP BUS INFEED breaker pushbutton and ENSURE the MIMIC BUS INTLK CLOSE SELECTION bezel illuminates, then PRESS the breaker CLOSE pushbutton and verify the SPT-side breaker (e.g. 21 ESD / 21 FSD) is OPEN, the APT-side breaker (2AEGD / 2BFGD) is CLOSED, and bus voltage is 4.22 - 4.36KV</span>. APT voltage must be 4.22 - 4.36KV before transfer. <span class="hi-exam">A failure of the 2BFGD breaker to close de-energizes the 2F Group Bus and trips its RCPs, generating a Rx trip demand (OHA F-10, RC LO FLO OR RCP BKR OPEN, and P-7); if the reactor fails to auto-trip (ATWT), manually trip it immediately</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q49</div>
+The 460V Vital Buses are fed from their respective 4KV Vital Buses. With the <span class="hi-exam">1A 4KV Vital Bus locked out on bus differential, the 1A 460V Vital Bus (and its 11 Hydrogen Recombiner) is de-energized</span>; the 1B 4KV / 1B 460V remain energized, so only 12 Recombiner is available.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q57</div>
+When the "B" SEC loads the 2B 4KV bus in the <span class="hi-exam">II* Mode</span>, 3 minutes later (no operator action): <span class="hi-exam">Rx power &gt;100%</span> from the auto-start of 22 AFP on SEC mode II*; <span class="hi-exam">22 CC pump running</span> (powered off 2B vital, starts on II*); <span class="hi-exam">SGBD flows = 0 gpm</span> (SGBD isolation on auto AFW pump start); and <span class="hi-exam">MTLO outlet temp rising</span> because 2SW26 closes, lowering cooling water to the MTLO cooler to none. <span class="hi-trap">22SW122 does NOT close on blackout; 22 RHR/22 CS pumps do not start in this mode.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]]
-- Related exam questions: [[2016 Q55]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]], [[2015 Q31]], [[2015 Q43]], [[2015 Q57]], [[2015 Q61]], [[2015 Q69]]
+- Related exam questions: [[2016 Q55]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]], [[2015 Q31]], [[2015 Q43]], [[2015 Q57]], [[2015 Q61]], [[2015 Q69]], [[2014 Q49]], [[2014 Q57]]
 - Related JPMs: [[2016 JPM Sim-g]], [[2016 JPM IP-k]], [[2018 JPM Sim-g]], [[2022 JPM Sim-g]], [[2020 JPM Sim-h]], [[2015 JPM Sim-e]]
 - Related scenarios: [[2017 Scenario 8]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2015 Scenario 3]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

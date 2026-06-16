@@ -359,12 +359,37 @@ ATWT recognition during an RCS leak at 40% power (no auto/manual trip): a manual
 Below P-6 the Source Range and Intermediate Range NIs <span class="hi-exam">may not be overlapped</span>. With one SRNI failed low during a startup, reactor power indication is reduced to a single SR channel which, <span class="hi-trap">while adequate for shutdown monitoring, cannot be relied upon for a startup — a single SR channel cannot be considered reliable with no other Rx power indication to verify it against</span> (TS Bases 3.3.1.1: maintain coincidence logic, redundancy, and diverse-parameter functional capability).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q41</div>
+RCS leak during heatup (1850 psig, 510°F) returning from a refueling outage. The general Auto SI Block (from ANY auto SI signal) is <span class="hi-exam">UNBLOCKED at S1.OP-IO.ZZ-0002 step 5.2.21</span>, but the <span class="hi-exam">Low PZR Pressure SI remains BLOCKED until the RCS is pressurized &gt;1915 psig (P-11) at step 5.3.23</span>. At 1850 psig the Low PZR Pressure SI is still blocked, so SI does NOT occur at the Low PZR Pressure setpoint (<span class="val-trip">≤1765 psig</span>). <span class="hi-trap">Answer-key note: the worksheet keyed B (SI at 1765 psig), but the written rationale supports the AUTO SI actually occurring on Containment High Pressure (<span class="val-trip">≥4 psig</span>, 2/3, not blockable) as the 2000 gpm leak pressurizes containment — see Q41.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q42</div>
+Continuous manual rod withdrawal from ~7% power (after a rapid load reduction). Per FSAR 15.2.2.1 (uncontrolled rod withdrawal at power), the power rise is terminated by the <span class="hi-exam">High Power Reactor Trip (low range) at 25% on 2/4 PR NIs</span>, whose basis is <span class="hi-exam">protection against DNB</span>. <span class="hi-trap">The 20% rod block (1/2 IR NI) may generate but is NOT credited in the FSAR and will not act quickly enough to prevent the high-power-low-range trip; the trip basis is DNB protection, not preventing PZR Safety valve opening.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q44</div>
+ALL outward rod motion (auto AND manual) is blocked by <span class="hi-exam">C-2: 1/4 PR NI &gt;103%</span>. <span class="hi-trap">C-11 (ARO position) blocks only AUTO outward motion — and ARO is a per-fuel-cycle number, not a physical core stop. C-3 actuates within 3% of the OT/&Delta;T Rx trip setpoint (64.7/69 = 93.8%, &gt;3% away, so not actuated). Steam line inlet pressure &lt;15% (P-2) blocks AUTO outward rod motion only — manual still works.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q48</div>
+To electrically reset an AUTOMATIC Containment Spray initiation: <span class="hi-exam">depress BOTH (train) Reset Spray Actuation PBs — at ANY containment pressure</span>. Containment Spray actuation relays have <span class="hi-exam">retentive memory</span>, so they can be reset with the actuation signal still present. <span class="hi-trap">Containment pressure is NOT required to be &lt;15 psig; Phase B reset is NOT required; Reset SI PBs are NOT required to reset Containment Spray.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q51</div>
+An automatic Main Steamline Isolation occurs with no operator action when <span class="hi-exam">all Main Steam Dumps fail full open at 20% power</span>: the dumps pass ~52% steam flow vs the <span class="hi-exam">Hi Steam Flow setpoint of 40% (0–20% power band)</span>, and the coincident <span class="hi-exam">Lo Tavg (&lt;<span class="val-trip">543°F</span>) or Lo Steam Pressure (&lt;<span class="val-trip">600 psig</span>)</span> condition is met as Tavg rapidly lowers — generating the MSI signal before the dumps turn off at 543°F. <span class="hi-trap">A single SG NR level &gt;67% is a P-14 feedwater isolation/turbine trip, not MSI; a Phase B isolation is containment isolation, not MSI.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]]
 - Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
-- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]]
+- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]], [[2014 Q41]], [[2014 Q42]], [[2014 Q44]], [[2014 Q48]], [[2014 Q51]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]]
 - Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]

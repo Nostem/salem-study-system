@@ -67,11 +67,16 @@ AB.SW-0001 Step 3.11: <span class="hi-exam">if a single component can be isolate
 25 SW pump discharge strainer high D/P presents as <span class="hi-exam">lowering SW header pressures</span> and OHA B-16, 24-26 SW STRAIN TRBL. Field finds the strainer shaft NOT turning with the motor running and D/P ~10.5 psid — manual backwash cannot be performed. CRS declares 25 SW pump inoperable based on <span class="hi-exam">D/P &gt;10 psid</span> (IAW [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]]) and, with 26 SW pump already CIT, enters <span class="hi-exam">LCO 3.7.4</span> (only one SW loop operable; no operable SW pump on "C" vital bus).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q47</div>
+With 22SW20 (Nuclear Header Supply) stuck shut isolating the 21 nuc header, <span class="hi-exam">21 and 22 CFCUs lose all cooling water (2 CFCUs)</span>; 23 CFCU is fed from BOTH nuc headers (check-valve arrangement) and 24/25 are on the 22 nuc header, so they are unaffected. Restore SW by <span class="hi-exam">opening 21SW23 / 22SW23 (Nuclear Header X-over valves)</span>. <span class="hi-trap">The SW17 SW-Bay/Discharge Header x-connects are normally open and cannot restore flow past the shut 22SW20.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]], [[CFCUs]]
 - Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]], [[AB.SW-0005 — Loss of All Service Water]]
-- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]], [[2015 Q80]]
+- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]], [[2015 Q80]], [[2014 Q47]]
 - Related JPMs: [[2016 JPM Sim-e]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

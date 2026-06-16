@@ -104,12 +104,17 @@ TS LCO 3.11.2.5 prevents an explosive mixture in the Waste Gas Holdup System by 
 Swapping the in-service Gas Decay Tank per S2.OP-SO.WG-0003 §5.2: before placing 24 GDT in service, verify no release in progress and <span class="hi-exam">24 GDT pressure &gt;10 psig AND &lt;92 psig (2PIS1039)</span>. Press the <span class="hi-exam">GAS DECAY TANK 24 MANUAL SELECT pushbutton on the 104 panel</span> (24 in-service light ON, 21 OFF), then <span class="hi-exam">CLOSE 21WG35 (GDT STOP VALVE TO HUT)</span> for the tank removed and OPEN 24WG35. To place 21 GDT in holdup for sampling/release, perform S2.OP-SO.WG-0008 Attachment 1 Section 1.0 valve lineup and hang a <span class="hi-exam">Red Blocking Tag on 21WG31 (GDT INLET VALVE)</span> closed.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q49</div>
+Hydrogen Recombiner power supplies: <span class="hi-exam">11 Recombiner from 1A 460V Vital Bus; 12 Recombiner from 1B 460V Vital Bus</span> (each fed from its respective 4KV Vital Bus). With the <span class="hi-exam">1A 4KV Vital Bus locked out on bus differential, the 1A 460V is de-energized → 11 Recombiner is unavailable; only 12 can be started</span> when directed by procedure.
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[Containment]]
 - Related systems: [[Control Air]]
 - Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0007 — Transfer of Waste Gas]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0010 — Discharge of 13 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]], [[S2.OP-SO.WG-0003 — Gaseous Waste Disposal System Operation]], [[AB.CA-0001 — Loss of Control Air]]
 - Related tech specs: [[TS 3/4.11 — Radioactive Effluents]]
-- Related exam questions: [[2016 Q93]], [[2016 Q98]], [[2018 Q38]], [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]], [[2015 Q59]]
+- Related exam questions: [[2014 Q49]], [[2016 Q93]], [[2016 Q98]], [[2018 Q38]], [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]], [[2015 Q59]]
 - Related JPMs: [[2016 JPM SRO-A3]], [[2016 JPM Sim-h]], [[2018 JPM SRO-A4]], [[2023 JPM IP-k]], [[2019 JPM IP-k]], [[2015 JPM IP-k]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

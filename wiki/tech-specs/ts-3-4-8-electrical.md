@@ -276,10 +276,15 @@ EDG monthly surveillance missed periodicity — applying SR 4.0.2: with the EDG 
 <span class="hi-exam">SR 4.8.1.2: certain EDG surveillances are NOT required to be performed to maintain EDG operability</span> (the bases preclude paralleling the EDG with offsite power or de-energizing a required ESF bus during the test). A missed 18-month Hot Restart surveillance keeps the EDG OPERABLE; per the bases it must be completed prior to entering Mode 4 if the frequency was exceeded. See [[EDGs]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q58</div>
+In Modes 1-4, the condition that ALWAYS requires entering <span class="hi-exam">TSAS 3.8.2.3</span> (125-Volt DC Distribution-Operating) for fewer than the three required 125 VDC Bus Trains OPERABLE is <span class="hi-exam">placing ANY of the backup 125 VDC battery chargers in service</span> (per LCO 3.8.2.3). <span class="hi-trap">Battery current of 0 amps is normal (charger carries the load), so it is NOT an entry condition; loss of power to a backup charger does not cause entry; a 90°F battery room temperature is below the electrolyte max temps (110°F / 120°F by battery type).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[4KV]], [[EDGs]], [[DC Power]], [[115V AC]]
-- Related exam questions: [[2015 Q15]], [[2016 Q91]], [[2016 Q96]], [[2018 Q21]], [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]], [[2015 Q92]]
+- Related exam questions: [[2015 Q15]], [[2016 Q91]], [[2016 Q96]], [[2018 Q21]], [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]], [[2015 Q92]], [[2014 Q58]]
 - Related JPMs: [[2020 JPM SRO-A3]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]]
