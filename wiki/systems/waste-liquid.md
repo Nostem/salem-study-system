@@ -111,10 +111,20 @@ When Unit 2 releases a CVCS Monitor Tank via the cross-connect line to Unit 1 SW
 Each RHR pump room has a sump for receiving room drains and leakage; <span class="hi-exam">each RHR pump room sump is pumped to the in-service Waste Hold Up Tank (WHUT)</span>. A leak on 21 RHR pump room cooler therefore shows up as <span class="hi-exam">rising level in the in-service WHUT</span>. <span class="hi-trap">The Aux Building Sump Tank collects floor drains from locations above it (located on 64'); the CVCS HUT receives recoverable CVCS-quality influent (not floor drains); the Laundry/Hot Shower/Chemical Drain Tank collects contaminated laundry, shower and decontamination-sink drains.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A3</div>
+Determine required actions when effluent monitors fail before three releases. The <span class="hi-exam">liquid release (11 CVCS Monitor Tank) has NO additional restriction</span> — neither the failed 1R12A (Containment Noble Gas) nor 1R41D (Plant Vent Release Rate) is in the liquid effluent pathway, so the release may proceed without compensatory actions. The trap is applying the gaseous-pathway ODCM Table 3.3-13 Actions (31/37) to the liquid release.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-h</div>
+Authorized liquid release from 21 CVCS Monitor Tank via SW to Unit 1 Circ Water (S2.OP-SO.WL-0001 Section 5.5): operator opens <span class="hi-exam">2WL51 (LIQUID RELEASE STOP VALVE)</span> at step 5.5.2 to commence the release. Alternate path — <span class="hi-exam">2R18 (Liquid Waste Disposal) reads high radiation (~1×10⁵ cps) and 2WL51 FAILS to automatically shut</span>; the operator recognizes OHA A-6 RMS HI RAD OR TRBL / CRT point 725, observes 2WL51 still open, and <span class="hi-exam">manually shuts 2WL51 (step 5.5.9)</span> to stop the release, then communicates 2WL51 status to the RWO and directs termination of the release.
+</div>
+
 ## Connections
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
 - Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]], [[S2.OP-SO.WL-0002 — Radioactive Release from 22 CVCS Monitor Tank]], [[S2.IC-CC.RM-0028 — 2R18 Liquid Waste Disposal Process Radiation Monitor]]
 - Related exam questions: [[2016 Q59]], [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]], [[2015 Q86]], [[2014 Q60]], [[2012 Q60]], [[2012 Q61]], [[2012 Q100]]
-- Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]], [[2012 JPM SRO-A3]], [[2012 JPM Sim-h]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Operating Exam]]

@@ -35,5 +35,5 @@ SRO determines whether 11 CVCS Monitor Tank release may proceed when both 1R12A 
 - Related systems: [[Waste Liquid]]
 - Related procedures: [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]]
 - Related exam questions: [[2023 Q61]]
-- Related JPMs: [[2016 JPM SRO-A3]], [[2020 JPM IP-k]]
-- Related exam: [[2016 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A3]], [[2020 JPM IP-k]], [[2012 JPM SRO-A3]]
+- Related exam: [[2016 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2012 NRC Operating Exam]]

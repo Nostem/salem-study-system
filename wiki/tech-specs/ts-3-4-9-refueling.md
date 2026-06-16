@@ -352,4 +352,5 @@ TSAS 3.9.3.a: for refueling outages <span class="hi-exam">Oct 15 – May 15 the 
 - Related systems: [[RHR]], [[CVCS]], [[Rx Vessel & Internals]], [[Refueling]], [[FHV]], [[Spent Fuel Pool]]
 - Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
 - Related exam questions: [[2016 Q68]], [[2016 Q80]], [[2020 Q94]], [[2015 Q67]], [[2015 Q95]], [[2012 Q98]]
-- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related JPMs: [[2012 JPM SRO-A1-2]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

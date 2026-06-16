@@ -46,5 +46,5 @@ A valid RMS-initiated Containment Ventilation Isolation (CVI) <span class="hi-ex
 - Related systems: [[Containment]], [[Radiation Monitoring]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]]
 - Related exam questions: [[2019 Q96]], [[2020 Q33]], [[2015 Q60]], [[2012 Q65]]
-- Related JPMs: [[2016 JPM SRO-A3]], [[2023 JPM Sim-h]]
-- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A3]], [[2023 JPM Sim-h]], [[2012 JPM SRO-A3]]
+- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

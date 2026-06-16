@@ -304,6 +304,11 @@ Emergency boration during CR Evacuation (AB.CR-0001, Attachment 5, Step 10): clo
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-i</div>
+Locally borate during CR Evacuation (AB.CR-0001, Att. 5, Step 10): the charging-flow target for boration is <span class="hi-exam">75 gpm above existing total RCP seal injection flow</span> — NOT 75 gpm above existing charging flow. With total seal injection flow at 30 gpm, adjust 1CV55 (at Panel 216-1) to <span class="hi-exam">105 gpm</span> (30 + 75). <span class="hi-trap">Raising to 165 gpm (75 above the 90 gpm initial charging flow) over-injects to the RCS and causes PZR level to rise too quickly — a common error trap.</span> Boration path is established by opening 1CV175 (Rapid Borate Stop Valve) by disengaging the clutch and rotating the handwheel; NEO#1 then trims 1CV73 to keep RCP seal flow 6-10 gpm.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2018 IP-j</div>
 Control Room Evacuation local charging flow control: at <span class="hi-exam">Panel 216-1 (Unit 1 Chg Pmps FL & PR Inst Pnl)</span> in 84 ft El. Aux Bldg Charging Valve Alley. Available indications: <span class="hi-exam">1CV55 AUTO/MANUAL Selector Switch</span>, 1CV55 Manual HAND/AIR Regulator Control, <span class="hi-exam">1FI-128A (Charging Pump Flow Indication)</span>, 1PI-142B (11/12 Charging Pump Pressure), 1LT-114 (VCT Level). Typical charging flow ~87-89 gpm. <span class="hi-exam">1CV55 is fail-open (air-to-close)</span>: lower air pressure (counterclockwise on hand sender) = OPEN valve = RAISE flow. Raising air pressure (clockwise) = CLOSE valve = LOWER flow.
 </div>
@@ -473,12 +478,27 @@ During an SBLOCA with LOOP, high-head ECCS injection depends entirely on the cen
 <span class="hi-exam">2CV35 is the VCT 3 Way Inlet Valve</span> (directs charging-pump-suction makeup between the VCT and the HUT/Flow to HUT path). <span class="hi-trap">Excess Letdown does NOT flow through 2CV35 — so an unexpected 2CV35 swap with Excess Letdown in service does not affect RCS letdown, and AB.CVC-0001 does not apply.</span> The proper response to the unexpected swap (briefed as not going to occur) is to stop work per OOPS / HU-AA-101.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 RO-A1-1</div>
+Calculate Shutdown Margin (SC.RE-ST.ZZ-0002) with Control Rod 1D5 inoperable at 75% power, Bank D at 170 steps, 100 ppm, 11890 EFPH. With a rod inoperable in Mode 1, the correct path is Attachment 3, which adjusts for the inoperable rod. The discriminating step is comparing the calculated SDM against the Mode 1/2 acceptance criterion of <span class="hi-exam">-1300 pcm</span>; the acceptable answer band is <span class="hi-exam">-2513.7 to -2645.2 pcm</span> (≈ -2597.8 pcm), so SDM is SAT.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 RO-A2</div>
+Demonstrate RWST/BAST Operability via S2.OP-ST.CVC-0010 (Borated Water Sources). The discriminating actions are the BAST volume (49.5% level) and boron-concentration (<span class="hi-exam">6610 ppm</span>) determinations against <span class="hi-exam">TS 3.1.2.6.a/3.1.2.6.b and Figure 3.1-2</span>. RWST records: level CH I–III 41.4 / CH IV 41.5, temp 70°F (P-250 point T0650A), boron <span class="hi-exam">2350 ppm</span>. All Acceptance Criteria met → surveillance SAT.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-g</div>
+On a total Loss of Control Air, AB.CA-0001 step 3.56 directs the operator to <span class="hi-exam">ISOLATE Letdown by closing 2CV3 (45 GPM ORIFICE), 2CV4 (75 GPM ORIFICE), 2CV5 (75 GPM ORIFICE), 2CV2, 2CV277, and 2CV7</span>. The letdown orifice isolation and control valves are air-operated and drift toward their fail positions as control air bleeds down, so letdown is manually isolated to prevent a CVCS upset.
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[AB.RC-0002 — High Activity in the RCS]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[S1.OP-ST.CVC-0003 — Inservice Testing, 11 Charging Pump]], [[S2.OP-SO.CVC-0002 — Charging Pump Operation]], [[S2.OP-SO.CVC-0011 — RCS Degassification]], [[S2.OP-ST.CVC-0011 — Boration Flow Rate Test]], [[S1.OP-AR.ZZ-0012 — Control Console CC2]], [[S1.OP-SO.SJ-0001 — Preparation of the Safety Injection System for Operation]]
 - Related exam questions: [[2014 Q6]], [[2014 Q7]], [[2014 Q30]], [[2014 Q32]], [[2014 Q34]], [[2015 Q19]], [[2015 Q21]], [[2016 Q29]], [[2016 Q30]], [[2016 Q37]], [[2016 Q39]], [[2016 Q67]], [[2016 Q83]], [[2016 Q84]], [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2018 Q52]], [[2018 Q69]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]], [[2015 Q30]], [[2015 Q32]], [[2015 Q33]], [[2015 Q35]], [[2015 Q37]], [[2015 Q38]], [[2015 Q40]], [[2015 Q66]], [[2015 Q77]], [[2015 Q78]], [[2015 Q81]], [[2015 Q88]], [[2014 Q16]], [[2014 Q20]], [[2014 Q23]], [[2014 Q40]], [[2014 Q50]], [[2014 Q76]], [[2012 Q5]], [[2012 Q9]], [[2012 Q16]], [[2012 Q18]], [[2012 Q24]], [[2012 Q26]], [[2012 Q30]], [[2012 Q31]], [[2012 Q32]], [[2012 Q36]], [[2012 Q69]], [[2012 Q100]]
-- Related JPMs: [[2014 JPM Sim-a]], [[2014 JPM Sim-e]], [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]], [[2016 JPM RO-A2]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2016 JPM Sim-h]], [[2015 JPM RO-A1-2]], [[2015 JPM RO-A2]], [[2015 JPM Sim-b]], [[2015 JPM Sim-g]], [[2015 JPM IP-j]]
+- Related JPMs: [[2014 JPM Sim-a]], [[2014 JPM Sim-e]], [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]], [[2016 JPM RO-A2]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2016 JPM Sim-h]], [[2015 JPM RO-A1-2]], [[2015 JPM RO-A2]], [[2015 JPM Sim-b]], [[2015 JPM Sim-g]], [[2015 JPM IP-j]], [[2012 JPM RO-A1-1]], [[2012 JPM RO-A2]], [[2012 JPM Sim-g]], [[2012 JPM IP-i]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

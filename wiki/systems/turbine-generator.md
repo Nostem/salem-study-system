@@ -133,11 +133,16 @@ Following a Main Turbine trip from 90% power (which initiates a Rx trip &gt;P-9)
 Actions that DO occur automatically on a Unit 2 Main Turbine trip from 100% power (no operator action): <span class="hi-exam">500KV output breakers 1-9 and 9-10 open</span> (every turbine trip); <span class="hi-exam">4KV Group buses swap from the Aux Power Transformer (APT) to the Station Power Transformers</span> (off-site power) when the output breakers open; and the <span class="hi-exam">Main Generator Exciter Field Breaker opens</span>. <span class="hi-trap">Running EHC pumps do NOT auto-stop; Emergency Bearing Oil pumps do NOT start (the AUX bearing oil pump starts); 4KV VITAL buses do NOT swap (already on off-site power).</span> See [[500KV]], [[4KV]].
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-e</div>
+A turbine Auto Stop Oil (AST) low-pressure condition trips on the channels: <span class="hi-exam">one channel reading ≤50 psig sets OHA G-4 TURB AUTO STOP OIL PRESS LO; 2 of 3 channels at low Auto Stop Oil pressure demand a Main Turbine trip</span> (OHA F-32 DEHC Trip). In this JPM the demanded turbine trip does not occur — a Turbine Stop Valve (21 MS28) remains open — so the operator must manually trip the Main Turbine from the trip handle and, because power is &lt;P-9, trip the reactor per AB.TRB-0001.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
 - Related procedures: [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]], [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]], [[AB.GRID-0001 — Grid Disturbance]], [[S2.OP-AR.ZZ-0006 — Overhead Annunciators Window F]], [[S1.OP-AR.ZZ-0007 — Overhead Annunciators Window G]], [[S2.OP-AR.ZZ-0008 — Overhead Annunciators Window H]]
 - Related exam questions: [[2015 Q20]], [[2016 Q3]], [[2016 Q50]], [[2016 Q67]], [[2018 Q91]], [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]], [[2015 Q93]], [[2014 Q21]], [[2014 Q53]], [[2012 Q17]], [[2012 Q52]]
-- Related JPMs: [[2018 JPM Sim-e]], [[2019 JPM Sim-e]], [[2015 JPM Sim-d]]
+- Related JPMs: [[2018 JPM Sim-e]], [[2019 JPM Sim-e]], [[2015 JPM Sim-d]], [[2012 JPM Sim-e]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 2]]
-- Related exam: [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

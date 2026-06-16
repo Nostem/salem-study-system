@@ -94,6 +94,21 @@ ESG-2 classifies as an <span class="hi-exam">ALERT under EAL RB3.L</span> (singl
 ESG-3 classifies as a <span class="hi-exam">Site Area Emergency under EALs FB2.P AND RB2.P</span> — <span class="hi-exam">Potential Loss of the Fuel Clad Barrier AND Potential Loss of the RCS Barrier</span> (two barriers in Potential Loss = SAE), using ECG Attachment 3 (EP-SA-111-F3 Rev. 3). ICMF Section III: <span class="hi-exam">NO</span> radiological release in progress. <span class="hi-trap">Trap: a single-barrier Potential Loss is only an Alert — it is the simultaneous potential loss of BOTH the fuel-clad and RCS barriers that drives the SAE.</span> Same dual 15-minute declaration/notification clocks. (Time-critical Admin JPM — Classroom.)
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A4-1 (ESG-1)</div>
+ESG-1 expected classification is an <span class="hi-exam">ALERT under EAL RB2.L</span> (Loss of the RCS Barrier — single barrier, so ALERT), ECG Attachment 2 (EP-SA-111-F2 Rev. 00). Description of Event = "<span class="hi-exam">Loss of the Reactor Coolant System Barrier</span>" (per EAL Description Table). <span class="hi-trap">Trap: if the cavitating charging pump is NOT recognized and it fails, the Containment barrier also degrades and the event escalates to a <span class="hi-exam">Site Area Emergency under RB2.L AND CB5.L</span> (Attachment 3, EP-SA-111-F3 Rev. 01), Description of Event "Loss of the Reactor Coolant System Barrier, Loss of the Containment Barrier".</span> Two regulatory time-critical clocks: <span class="hi-exam">15 minutes to classify/declare AND 15 minutes to deliver the ICMF</span> to the Primary Communicator. (Time-critical Admin JPM — Classroom.)
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A4-2 (ESG-2)</div>
+ESG-2 classifies as an <span class="hi-exam">ALERT under EAL RB3.L</span> (single RCS-barrier full Loss = ALERT), ECG Attachment 2 (EP-SA-111-F2 Rev. 00). Description of Event = "<span class="hi-exam">Loss of the Reactor Coolant System Barrier</span>". <span class="hi-trap">A single barrier loss (RB3.L) remains an Alert; it does NOT escalate to an SAE. Form artifact: the Att 2 step page carries a copy-paste NOTE from the ESG-1 form referencing the "cavitating charging pump / ALERT or SAE" path — that conditional does not apply to ESG-2; the page-2 Task Standard (ALERT RB3.L) is authoritative.</span> Same dual 15-minute declaration/notification clocks. (Time-critical Admin JPM — Classroom.)
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A4-3 (ESG-3)</div>
+ESG-3 classifies as a <span class="hi-exam">Site Area Emergency under EALs FB2.P AND RB2.P</span> — <span class="hi-exam">Potential Loss of the Fuel Clad Barrier AND Potential Loss of the RCS Barrier</span> (two barriers in Potential Loss = SAE), using ECG Attachment 3 (EP-SA-111-F3 Rev. 01). <span class="hi-trap">Trap: a single-barrier Potential Loss is only an Alert — it is the simultaneous potential loss of BOTH the fuel-clad and RCS barriers that drives the SAE.</span> Same dual 15-minute declaration/notification clocks. (Time-critical Admin JPM — Classroom.)
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q79</div>
 Comparing EAL severity across condition sets (the most severe wins). Salem ECG examples tested:
@@ -127,5 +142,5 @@ Salem ECG, Introduction and Usage, <span class="hi-exam">Section 8.6, Conditions
 - Related systems: [[RCS]], [[Waste Liquid]], [[CVCS]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[EP-SA-111 — Emergency Classification and Protective Action]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]], [[S2.OP-SO.WL-0002 — Radioactive Release from 22 CVCS Monitor Tank]], [[SECG — Reportable Action Levels (RAL)]]
 - Related exam questions: [[2015 Q99]], [[2014 Q79]], [[2014 Q100]], [[2012 Q100]]
-- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM SRO-A5]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM SRO-A4]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM SRO-A5]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM SRO-A4]], [[2012 JPM SRO-A4-1 (ESG-1)]], [[2012 JPM SRO-A4-2 (ESG-2)]], [[2012 JPM SRO-A4-3 (ESG-3)]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

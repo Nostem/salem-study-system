@@ -61,11 +61,16 @@ A loss of all offsite power with NO SI signal is a <span class="hi-exam">SEC MOD
 The Station Blackout Compressor is started as part of the Blackout Coping Actions in <span class="hi-exam">Attachment 2 Part A of AB.LOOP-0001</span> (required within 60 minutes of Blackout). See [[EOP-LOPA-1 — Loss of All AC Power]].
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-k</div>
+The SBO Diesel Control Air Compressor start (SC.OP-SO.CA-0001) is the local blackout coping action this procedure directs when both units have tripped on a loss of offsite power and no Emergency Control Air Compressors are running. Operator manually starts the SBO compressor and aligns <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span> to restore Control Air to the Aux Building 1A/2A headers. This JPM lists <span class="hi-exam">S2.OP-AB.LOOP-1, Loss of Off-Site Power, Rev 27</span> as a reference.
+</div>
+
 ## Connections
 
 - Related systems: [[DC Power]], [[RCPs]], [[CVCS]], [[Pressurizer & PRT]], [[ECCS]], [[SECs]], [[4KV]], [[RHR]], [[EDGs]]
 - Related procedures: [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.LOOP-0003 — Partial Loss of Offsite Power]], [[S1.OP-ST.SJ-0001 — 11 Safety Injection Pump Inservice Testing]], [[AB.RHR-0001 — Loss of RHR]], [[EOP-LOPA-1 — Loss of All AC Power]]
 - Related exam questions: [[2016 Q19]], [[2023 Q9]], [[2023 Q10]], [[2014 Q81]], [[2012 Q11]], [[2012 Q12]]
-- Related JPMs: [[2020 JPM IP-j]], [[2023 JPM IP-i]], [[2022 JPM IP-i]]
+- Related JPMs: [[2020 JPM IP-j]], [[2023 JPM IP-i]], [[2022 JPM IP-i]], [[2012 JPM IP-k]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2016 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

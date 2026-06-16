@@ -248,11 +248,16 @@ CFCU power supplies are <span class="hi-exam">A, B, C, B, C for 21-25 CFCUs</spa
 The <span class="hi-exam">CFCU Airflow Trouble alarm WILL be in alarm following an accident</span> — it occurs when the damper alignment is not correct for HIGH speed while the CFCU runs in LO speed (the post-accident lineup). In contrast, the <span class="hi-trap">"24 CFCU WTRFLO TRBL" (OHA C-29) is NOT expected with the CFCU running — it indicates a CFCU SW valve alignment problem.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A1-1</div>
+Review a completed S2.OP-ST.CBV-0003 surveillance to determine 21 CFCU operability after corrective maintenance. The discriminating catch: the recorded Minimum Flow Rate for 91 psid (<span class="hi-exam">1638 gpm</span>) is wrong — the performer rounded down instead of up per P&amp;L 3.4; the correct minimum is <span class="hi-exam">1683 gpm</span>. With the corrected minimum, the actual Cooling Water Flow of <span class="hi-exam">1675 gpm is below 1683</span>, so the surveillance is <span class="hi-exam">UNSAT</span> (21 CFCU NOT operable), not SAT.
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]]
 - Related exam questions: [[2014 Q34]], [[2014 Q35]], [[2015 Q16]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]], [[2015 Q65]], [[2015 Q80]], [[2015 Q90]], [[2015 Q91]], [[2014 Q46]], [[2014 Q47]], [[2014 Q63]], [[2012 Q26]], [[2012 Q45]], [[2012 Q46]]
-- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]], [[2016 JPM Sim-b]], [[2014 JPM Sim-f]]
+- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]], [[2016 JPM Sim-b]], [[2014 JPM Sim-f]], [[2012 JPM SRO-A1-1]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 1]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -30,10 +30,16 @@ EOP-TRIP-6 Step 12 SI Accumulator isolation: at <span class="hi-exam">RCS pressu
 Raise accumulator level (Section 5.2) and pressure (Section 5.10). <span class="hi-exam">P&amp;L 3.1: if both level and pressure need adjustment, level is adjusted first.</span> Step 5.2.2 N/As CLOSE 21SJ134 because <span class="hi-exam">RCS pressure is &gt;2000 psig</span> (only required if &lt;2000 psig). Level lineup with 21 SI pump: START 21 SI pump → OPEN 2SJ53 → OPEN 2SJ123 → OPEN 24SJ20, then CLOSE 24SJ20 at the <span class="hi-exam">60% level</span> target on 2LI935D/2LI934D and restore (CLOSE 2SJ53, CLOSE 2SJ123, STOP 21 SI pump). Pressure (Section 5.10): OPEN 2NT32 (N2 SUPPLY) → OPEN 24SJ93 (N2 SUPPLY) — <span class="hi-exam">pressure rises very rapidly</span> — CLOSE 24SJ93 at the <span class="hi-exam">625 psig</span> target on 2PI936D/2PI937D, then CLOSE 2NT32. Independent Verification per Attachment 1 Sections 2.0 and 10.0.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-b</div>
+The accumulator discharge check valves (xxSJ55 / xxSJ56) are forward-flow tested in MODE 6 (head removed, cavity flooded) per S2.OP-ST.SJ-0006: close the accumulator outlet valve (xxSJ54), then open it and blow the accumulator down to the RCS, timing until accumulator pressure reaches <span class="hi-exam">35 psig</span>. Blowdown Time = Stopwatch Reading − Disk Movement Time (<span class="hi-exam">1.15 s</span>); a blowdown time <span class="hi-exam">&gt;27.79 seconds</span> grades the check valves UNSAT. See [[S2.OP-ST.SJ-0006 — Inservice Testing Safety Injection Valves Mode 6]].
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]]
+- Related procedures: [[S2.OP-ST.SJ-0006 — Inservice Testing Safety Injection Valves Mode 6]]
 - Related tech specs: [[TS 3/4.5 — ECCS]]
 - Related EOPs: [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
-- Related JPMs: [[2018 JPM Sim-c]], [[2020 JPM Sim-d]], [[2016 JPM Sim-c]], [[2015 JPM Sim-c]]
-- Related exam: [[2018 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related JPMs: [[2018 JPM Sim-c]], [[2020 JPM Sim-d]], [[2016 JPM Sim-c]], [[2015 JPM Sim-c]], [[2012 JPM Sim-b]]
+- Related exam: [[2018 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Operating Exam]]

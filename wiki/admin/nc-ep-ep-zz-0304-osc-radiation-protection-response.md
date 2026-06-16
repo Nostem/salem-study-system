@@ -55,10 +55,15 @@ Planned Emergency Exposure Limits (PEEL) per NC.EP-EP.ZZ-0304 (SRO question): <s
 Per NC.EP-EP.ZZ-0304: <span class="hi-exam">ALERT</span> is the lowest emergency classification that automatically extends ERO personnel annual TEDE dose limits (with NRC Form-4 on file) — limits raised from <span class="hi-exam">2000 mrem to 4500 mrem</span>. <span class="hi-trap">Trap: 5000 mrem is the NRC 10CFR20 yearly TEDE limit, not the Salem ERO extended limit. Site Area Emergency is NOT the lowest classification triggering the extension — ALERT is.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 RO-A3</div>
+Perform a Stay Time Calculation for an emergency condition (Alert declared). Per the Section 5.0 Note, the dose authorization is automatically raised to <span class="hi-exam">4500 mrem</span> upon declaration of an ALERT or higher. With a YTD TEDE of 1925 mrem and the highest in-room dose rate of <span class="hi-exam">50 mrem/hr</span> (excluding the 22 RHR HX area not entered), a 2-hour job adds 100 mrem → new TEDE <span class="hi-exam">2025 mrem</span>, well below 4500, so the job CAN be performed. Trap: applying a normal exposure limit instead of the emergency 4500 mrem.
+</div>
+
 ## Connections
 
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related concepts: [[Radiation Monitoring]]
 - Related exam questions: [[2016 Q71]], [[2019 Q45]], [[2019 Q97]], [[2020 Q73]], [[2022 Q71]]
-- Related JPMs: [[2023 JPM SRO-A3]], [[2016 JPM RO-A3]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM SRO-A3]], [[2016 JPM RO-A3]], [[2012 JPM RO-A3]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Operating Exam]]

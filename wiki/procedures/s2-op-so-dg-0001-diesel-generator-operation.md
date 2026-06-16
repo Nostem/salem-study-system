@@ -42,10 +42,15 @@ Step 5.8.4: <span class="hi-exam">Allow Diesel to run unloaded for ≥ 3 minutes
 5.4.10.G: Place 2A-DF-SYNCH SWITCH (SS) to OFF.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-j</div>
+Local start &amp; parallel load of 2A EDG per §5.2 + §5.4 of this procedure (Rev 37). Step sequence proven by the 2012 in-plant JPM, with critical steps <span class="hi-exam">5.2.4, 5.2.6, 5.2.7, 5.4.4, 5.4.10.A, 5.4.10.B, 5.4.10.F</span>. Discriminator: at synchroscope 12 o'clock (+0/−2 min) close 2A-DF-GCP-3 (BCS) and immediately raise load to <span class="hi-exam">≥ 500 KW</span> via SPEED CONTROL SWITCH (GS) to avoid a reverse-power trip; voltage matched 50–100 V above bus before closure.
+</div>
+
 ## Connections
 
 - Related systems: [[EDGs]], [[4KV]]
 - Related procedures: [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]]
 - Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related JPMs: [[2016 JPM Sim-g]], [[2016 JPM IP-k]]
-- Related exam: [[2016 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM Sim-g]], [[2016 JPM IP-k]], [[2012 JPM IP-j]]
+- Related exam: [[2016 NRC Operating Exam]], [[2012 NRC Operating Exam]]

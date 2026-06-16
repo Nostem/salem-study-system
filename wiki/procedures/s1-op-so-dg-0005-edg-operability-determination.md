@@ -47,5 +47,5 @@ SRO uses this procedure together with S2.OP-IO.ZZ-0010 to evaluate whether 2A ED
 
 - Related systems: [[EDGs]], [[Service Water]], [[ECCS]]
 - Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.7 — Plant Systems]], [[TS 3/4.5 — ECCS]]
-- Related JPMs: [[2016 JPM SRO-A1-2]], [[2019 JPM SRO-A3]], [[2020 JPM SRO-A3]]
-- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2019 JPM SRO-A3]], [[2020 JPM SRO-A3]], [[2012 JPM SRO-A1-2]]
+- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2012 NRC Operating Exam]]

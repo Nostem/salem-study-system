@@ -55,5 +55,5 @@ CFCU SW flow and <span class="hi-exam">SW223 mechanical stop</span> limitations 
 - Related systems: [[CFCUs]], [[Service Water]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
 - Related exam questions: [[2022 Q41]]
-- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2014 JPM Sim-f]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2014 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2014 JPM Sim-f]], [[2012 JPM SRO-A1-1]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Operating Exam]]

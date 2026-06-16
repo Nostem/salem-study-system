@@ -138,11 +138,21 @@ On a total loss of Control Air with no air source recoverable, AB.CA-0001 direct
 The AB.CA Basis Document gives the normal CA header band and ECAC auto-start: CA runs ~5 psig below Station Air, cycling with the SA cycle, so <span class="hi-exam">CA normally runs between 95 and 105 psig (≈100 psig)</span>, and the <span class="hi-exam">ECAC auto-starts at 85 psig</span>. <span class="hi-trap">88 psig is the AB.CA-0001 ECAC MANUAL start setpoint, and the reactor trip CAS requires BOTH headers below 80 psig — do not confuse with the 85 psig auto-start.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-g</div>
+TCAF Loss of Control Air at 100% power with a WG release in progress from 21 GDT. Three discriminating actions out of AB.CA-0001: <span class="hi-exam">step 3.56 — ISOLATE Letdown (close 2CV3, 2CV4, 2CV5, 2CV2, 2CV277, 2CV7)</span>; <span class="hi-exam">step 3.57 — VERIFY any Liquid/Gaseous release is STOPPED by ensuring 2WL51 (TO CIRC WTR DISCHARGE) and 2WG41 (GAS DECAY TK TO PLANT VENT) are closed</span> (2WG41 was open and must be shut); and the CAS action — <span class="hi-exam">when the 21-24BF19 Feed Reg Valves fail closed (~6.5 min after the trip insertion) and SG level cannot be maintained, TRIP the Reactor and GO TO EOP-TRIP-1</span>. <span class="hi-trap">The objective is to trip the reactor manually BEFORE the automatic trip on 10/10 SG NR (Lo-Lo) level.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-k</div>
+On a total loss of Control Air during a station blackout (both units tripped, no ECACs running), Control Air is restored by manually starting the SBO Diesel Control Air Compressor (SC.OP-SO.CA-0001) and aligning <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span> to the Aux Building 1A/2A headers — the backup air source this procedure relies on when both ECACs are unavailable. This JPM lists <span class="hi-exam">S2.OP-AB.CA-0001, Loss of Control Air, Rev 17</span> as a reference.
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[EDGs]], [[DC Power]]
 - Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-SO.CA-0001 — Control Air System Operation]]
 - Related exam questions: [[2015 Q13]], [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]], [[2014 Q19]], [[2014 Q64]], [[2012 Q14]], [[2012 Q34]], [[2012 Q63]]
-- Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
+- Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]], [[2012 JPM Sim-g]], [[2012 JPM IP-k]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

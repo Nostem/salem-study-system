@@ -34,6 +34,11 @@ AB.RHR-0001 CAS procedure transitions based on MODE and inventory status: in <sp
 Mode 5 with RCS depressurized/vented: 21 RHR Pump trips on electrical fault, <span class="hi-exam">22 RHR Pump trips shortly after starting (alternate path)</span>. Procedure path: 3.3 No (not reduced inventory) → 3.5 Yes (mechanical/electrical failure) → 3.50 Yes (heat sink available) → 3.51 Yes → 3.52 Attachment 3 (22 RHR trips) → re-enter → 3.7-3.25 (no RHR running) → 3.30-3.32 → <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (core exit TCs &lt;200°F). Key valve lineup: <span class="hi-exam">open 2SJ1/2SJ2 (RWST to charging), close 2CV40/2CV41 (VCT to charging), open 2SJ4/2SJ5 and 2SJ12/2SJ13 (BIT), close 2CV68/2CV69 (charging discharge)</span>. Also isolates: stop RHR L/D Booster Pump, close 2CV8.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-d</div>
+MODE 4, RCS at 315 psig, 21 RHR loop in SDC and 22 RHR loop aligned for ECCS. The in-service <span class="hi-exam">21 RHR pump trips</span>. Procedure path: 3.2 N/A (not vented) → 3.3 No (not reduced inventory) → <span class="hi-exam">3.5 Yes — loss is a mechanical failure / loss of power to the in-service pump</span> → 3.6 GO TO 3.50 (answering 3.5 NO incorrectly routes to the system-problem path) → 3.50 Yes (CCW/SW heat sink available) → 3.51 Yes (22 loop available) → 3.52 <span class="hi-exam">Attachment 2, Aligning RHR Loop From ECCS To Shutdown Cooling</span>. Att. 2 critical actions: locally open 22RH12 / 22RH17 / 22RH18-NS; in the control room close 22RH18, 21RH18, 2RH20, <span class="hi-exam">21CC16</span> and open <span class="hi-exam">22CC16</span>; START 22 RHR pump; throttle 22RH18 / 2RH20. Final acceptance (step 3.68): RHR flow <span class="hi-exam">stable 1800-3000 gpm</span> with RCS temperature stable or lowering.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q86</div>
 Heatup rate during loss of RHR: per AB.RHR-0001 Attachment 5 (Heatup Rate for Loss of RHR Cooling), <span class="hi-exam">2 days after shutdown (before offload) at 10% PZR Level, heatup rate is 5 &deg;F per minute</span>. With TAVG at 150 &deg;F, time to reach 200 &deg;F (MODE 4) = (200 - 150) / 5 = <span class="hi-exam">10 minutes</span>. EAL#CA4.1 criteria for ALERT with RCS intact: <span class="hi-exam">RCS must be &gt; 200 &deg;F for 60 minutes</span>. Earliest ALERT at 0810 (0700 + 10 min heatup + 60 min duration). <span class="hi-trap">Trap: using the wrong heatup curve (after offload = 3.4 &deg;F/min) gives incorrect time to 200 &deg;F. Must use before offload curve since the plant has only entered MODE 3 for a planned outage — no fuel has been offloaded.</span>
@@ -75,9 +80,9 @@ After normal restoration and local venting, RHR flow must be <span class="hi-exa
 
 ## Connections
 
-- Related systems: [[RHR]], [[SECs]], [[EDGs]]
+- Related systems: [[RHR]], [[SECs]], [[EDGs]], [[CCW]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.CONT-0001 — Containment Closure]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam questions: [[2014 Q8]], [[2015 Q6]], [[2018 Q53]], [[2018 Q84]], [[2018 Q87]], [[2019 Q78]], [[2019 Q86]], [[2020 Q6]], [[2023 Q79]], [[2012 Q12]], [[2012 Q79]]
-- Related JPMs: [[2020 JPM Sim-b]], [[2015 JPM Sim-h]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related JPMs: [[2020 JPM Sim-b]], [[2015 JPM Sim-h]], [[2012 JPM Sim-d]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -30,6 +30,11 @@ With PZR spray valve failed open and heaters energized but unable to maintain pr
 2PR2 PZR PORV leak isolation. Initial diagnosis is rising PORV tailpipe temperature (~227°F) and rising charging flow → enter S2.OP-AB.RC-0001, then transition to AB.PZR-0001 (the RC CAS Item 3.0 directs AB.PZR-0001 when leakage is identified from a PORV or a PZR Code Safety Valve). The PZR diagnostic logic clears POPS, controlling channel, Master Pressure Controller, and spray-valve failures, then at step 3.46 confirms elevated PORV tailpipe temps. Isolation method: <span class="hi-exam">CLOSE both 2PR6 and 2PR7 (step 3.47)</span>; when pressure stabilizes OPEN 2PR6 (tailpipe not rising) → OPEN 2PR7 (tailpipe rises, identifying 2PR2) → <span class="hi-exam">CLOSE 2PR7 to isolate 2PR2 (step 3.55)</span>. Then notify SM/CRS to refer to TS 3.4.5 and the Event Classification Guide for Primary Leakage.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-c</div>
+Spray-valve failure branch (step 3.17). PZR Spray Valve <span class="hi-exam">2PS1 fails open</span> at 4% power. Entry via lowering PZR pressure / OHA E-28 PZR HTR ON PRESS LO. Diagnostic logic clears POPS (3.2), controlling channel (3.3), and Master Pressure Controller (3.11); step 3.17 identifies <span class="hi-exam">2PS1 failed open</span>. Place 2PS1 in MANUAL (3.18) and CLOSE (3.19) — <span class="hi-exam">2PS1 remains open</span>, so pressure control is not regained (3.21). With RCS pressure dropping rapidly (3.22) and RTBs closed (3.23), step 3.24 directs: <span class="hi-exam">TRIP the Reactor (3.24.A)</span>, <span class="hi-exam">STOP 21 and 23 RCPs (3.24.C)</span>, and <span class="hi-exam">STOP all but one RCP if pressure continues to drop (3.24.D)</span>, then GO TO 2-EOP-TRIP-1.
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2022 #4</div>
 2PR2 PZR PORV seat leakage. Entry cue: OHA E-28 PZR HTR ON PRESS LO with rising PORV tailpipe temperature. Diagnostic method: close both block valves (2PR6, 2PR7), stabilize RCS pressure, then open each block valve individually — the one causing tailpipe temp to rise identifies the leaking PORV (<span class="hi-exam">2PR2 via 2PR7</span>). CRS enters <span class="hi-exam">TS 3.4.5 action a</span> (1 hour to close PORV block valve with power maintained) and evaluates TS 3.2.5.b if RCS pressure below <span class="hi-exam">2200 psia [2185 psig]</span>.
@@ -122,9 +127,10 @@ When a second RCP is started in Mode 5 with RHR in service and RCS pressure mome
 
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[RPS/SSPS]], [[ECCS]], [[RHR]]
+- Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[RPS/SSPS]], [[ECCS]], [[RHR]], [[Reactor Coolant Pumps]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RC-0001 — Reactor Coolant System Leak]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related exam questions: [[2014 Q10]], [[2014 Q36]], [[2014 Q38]], [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]], [[2015 Q87]], [[2014 Q87]], [[2012 Q86]]
-- Related JPMs: [[2014 JPM Sim-c]], [[2020 JPM Sim-a]]
+- Related JPMs: [[2014 JPM Sim-c]], [[2020 JPM Sim-a]], [[2012 JPM Sim-c]]
 - Related scenarios: [[2016 Scenario 3]], [[2017 Scenario 7]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2015 Scenario 2]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Operating Exam]]

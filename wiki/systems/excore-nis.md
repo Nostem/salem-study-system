@@ -179,14 +179,19 @@ After a trip, IRNI current normally continues to lower until off-scale, and <spa
 The <span class="hi-exam">Intermediate Range bistable alarm setpoint is 25%</span>. During a power ascension at 15% power (prior to rolling the Main Turbine), an IR bistable illuminating is <span class="hi-exam">NOT expected at that power level</span> — and while the bistable WILL light at 25%, its <span class="hi-exam">output is already blocked because the IR Hi Flux trip was blocked above P-10</span>. So the power ascension may continue while investigating the cause; no failure of the trip block has occurred and power need not be lowered.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 RO-A1-2</div>
+Perform a Manual AFD Calculation (S1.OP-ST.NIS-0001, Attachment 3) after the AFD Monitor Alarm is inoperable at 73% power. Scale the 100% AFD Target of <span class="hi-exam">-1.5</span> to present power: 73 × -1.5 / 100 = <span class="hi-exam">-1.1</span>. Target band = Upper +6 + (-1.1) = <span class="hi-exam">+4.9</span>; Lower -9 + (-1.1) = <span class="hi-exam">-10.1</span> (limits inclusive). The discriminating recognition: only <span class="hi-exam">Channel III (-10.2) is outside the lower limit of -10.1</span> (Channels I -8.9, II -8.6, IV -9.3 are inside) → continue data recording IAW Section 5.4.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]], [[115V AC]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[AB.115-0004 — Loss of 1D 115V Vital Instrument Bus]], [[S2.OP-IO.ZZ-0003 — Hot Standby to Minimum Load]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
-- Related JPMs: [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]], [[2014 JPM Sim-g]]
+- Related JPMs: [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]], [[2014 JPM Sim-g]], [[2012 JPM RO-A1-2]]
 - Related exam questions: [[2014 Q12]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]], [[2012 Q13]], [[2012 Q43]], [[2012 Q87]]
-- Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]
   - [[2015 Q67]] — Mode 6 Core Alterations require 2 Source Range NIs operable (LCO 3.9.2); one inoperable SR NI prevents core alterations
   - [[2015 Q89]] — second IRNI channel fails erratically: enter AB.NIS-0001 / TS 3.0.3 (Hot Standby within 6 hours); single-IRNI loss excluded from LCO 3.0.3
   - [[2016 Q38]] — Block Power Range A and B pushbuttons at 12% blocks the 25% PR low setpoint Rx trip

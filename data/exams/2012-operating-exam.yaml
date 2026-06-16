@@ -47,7 +47,7 @@ jpms:
     type: Admin-SRO
     location: Classroom
     pages: "30-34"
-    ka: "TBD"
+    ka: "2.1.25"   # resolved from cover during ingestion
     task_number: "N1230300302"
     split_pdf: "2012-jpm-sro-a1-1.pdf"
   - id: "SRO-A1-2"
@@ -79,7 +79,7 @@ jpms:
     type: Admin-SRO
     location: Classroom
     pages: "56-65"
-    ka: "TBD"   # likely 2.4.41 (matches A4-2/A4-3) — verify from cover during ingestion
+    ka: "2.4.41"   # likely 2.4.41 (matches A4-2/A4-3) — verify from cover during ingestion   # resolved from cover during ingestion
     task_number: "1240020502"
     split_pdf: "2012-jpm-sro-a4-1.pdf"
   - id: "SRO-A4-2"
@@ -103,15 +103,15 @@ jpms:
     type: Simulator
     location: Simulator
     pages: "84-91"
-    ka: "TBD"
-    task_number: "N0010070110"
+    ka: "001 A4.03"   # resolved from cover during ingestion
+    task_number: "N0010070101"   # cover value
     split_pdf: "2012-jpm-sim-a.pdf"
   - id: "Sim-b"
     title: "Perform Forward Flow IST of ECCS Accumulator"
     type: Simulator
     location: Simulator
     pages: "92-102"
-    ka: "TBD"
+    ka: "006 A4.02"   # resolved from cover during ingestion
     task_number: "N0060160201"
     split_pdf: "2012-jpm-sim-b.pdf"
   - id: "Sim-c"
@@ -119,7 +119,7 @@ jpms:
     type: Simulator
     location: Simulator
     pages: "103-111"
-    ka: "TBD"   # cover partially legible "010 A4.xx" — verify full code during ingestion
+    ka: "010 A4.01"   # cover partially legible "010 A4.xx" — verify full code during ingestion   # resolved from cover during ingestion
     task_number: "1140240401"
     split_pdf: "2012-jpm-sim-c.pdf"
   - id: "Sim-d"
@@ -127,11 +127,11 @@ jpms:
     type: Simulator
     location: Simulator
     pages: "112-123"
-    ka: "TBD"   # cover partially legible "APE 025 AA1.0x" — verify full code during ingestion
-    task_number: "TBD"
+    ka: "APE 025 AA1.09"   # cover partially legible "APE 025 AA1.0x" — verify full code during ingestion   # resolved from cover during ingestion
+    task_number: "N1140300401"   # cover value
     split_pdf: "2012-jpm-sim-d.pdf"
   - id: "Sim-e"
-    title: "TCAF Main Turbine Trip < P-9 (Main Turbine ASD)"
+    title: "TCAF Main Turbine Trip < P-9 (Main Turbine ASO Trip)"
     type: Simulator
     location: Simulator
     pages: "124-133"
@@ -143,7 +143,7 @@ jpms:
     type: Simulator
     location: Simulator
     pages: "134-140"
-    ka: "TBD"
+    ka: "007 A4.04"   # resolved from cover during ingestion
     task_number: "N0100110101"
     split_pdf: "2012-jpm-sim-f.pdf"
   - id: "Sim-g"
@@ -151,11 +151,11 @@ jpms:
     type: Simulator
     location: Simulator
     pages: "141-153"
-    ka: "TBD"   # cover partially legible "APE 065 AA2.0x" — verify full code during ingestion
+    ka: "APE 065 AA2.06"   # cover partially legible "APE 065 AA2.0x" — verify full code during ingestion   # resolved from cover during ingestion
     task_number: "N1140070401"
     split_pdf: "2012-jpm-sim-g.pdf"
   - id: "Sim-h"
-    title: "Perform an Authorized Release of Radioactive Gas"
+    title: "Perform an Authorized Release of Radioactive Liquid Waste to the Circulating Water System"
     type: Simulator
     location: Simulator
     pages: "154-162"
@@ -167,7 +167,7 @@ jpms:
     type: In-Plant
     location: In-Plant
     pages: "163-168"
-    ka: "TBD"
+    ka: "APE 068 AA1.08"   # resolved from cover during ingestion
     task_number: "N1130140504"
     split_pdf: "2012-jpm-ip-i.pdf"
   - id: "IP-j"
@@ -175,11 +175,11 @@ jpms:
     type: In-Plant
     location: In-Plant
     pages: "169-180"
-    ka: "TBD"
+    ka: "064 A2.09"   # resolved from cover during ingestion
     task_number: "1130010501"
     split_pdf: "2012-jpm-ip-j.pdf"
   - id: "IP-k"
-    title: "Perform Actions for a Loss of All AC Power (Start the SBO Diesel)"
+    title: "Perform Actions for a Loss of All AC Power (Start the SBO Compressor)"
     type: In-Plant
     location: In-Plant
     pages: "181-191"

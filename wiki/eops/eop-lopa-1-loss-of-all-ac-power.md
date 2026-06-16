@@ -74,12 +74,17 @@ After a loss of all AC power with 2B EDG locally started, the action REQUIRED pr
 If all AC power remains lost for at least one day, the dominant consequence is <span class="hi-exam">loss of ECCS pumped injection capability plus continuing RCP seal leakage → core uncovery</span> (best-case time to core uncovery &lt;20 hours). Containment pressure rises only ~3 psig and temperature ~40°F as the RCS drains through the RCP seals; <span class="hi-trap">containment is not degraded (designed for full LBLOCA mass release).</span> See [[ECCS]], [[RCPs]].
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-k</div>
+A blackout coping action during a Loss of All AC Power is restoring Control Air with the SBO Diesel Control Air Compressor (SC.OP-SO.CA-0001) when no Emergency Control Air Compressors are running. The in-plant operator manually starts the SBO compressor and aligns it through <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span> to the Aux Building 1A/2A headers. This is a local action driven by the loss-of-all-AC response (referenced as <span class="hi-exam">2-EOP-LOPA-1, Loss of All AC Power, Rev 27</span>) and AB.LOOP-1 blackout coping; it is NOT required prior to re-energizing a vital bus.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Control Air]], [[DC Power]], [[EDGs]], [[Service Water]], [[4KV]], [[SECs]], [[RCPs]], [[CVCS]], [[RHR]]
 - Related EOPs: [[EOP-LOPA-2 — Loss of All AC Power Recovery / SI Not Required]], [[EOP-LOPA-4 — Extended Loss of All AC Power]]
 - Related procedures: [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[AB.CA-0001 — Loss of Control Air]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related exam questions: [[2014 Q6]], [[2015 Q13]], [[2016 Q18]], [[2018 Q59]], [[2022 Q77]], [[2015 Q74]], [[2014 Q16]], [[2014 Q99]], [[2012 Q11]], [[2012 Q35]]
-- Related JPMs: [[2016 JPM Sim-g]], [[2018 JPM IP-i]], [[2019 JPM Sim-g]], [[2015 JPM IP-j]]
+- Related JPMs: [[2016 JPM Sim-g]], [[2018 JPM IP-i]], [[2019 JPM Sim-g]], [[2015 JPM IP-j]], [[2012 JPM IP-k]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

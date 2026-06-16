@@ -79,6 +79,11 @@ BF19 (Main Feedwater Regulating Valves) behavior on loss of all station air: <sp
 SBO Diesel Control Air Compressor start (SC.OP-SO.CA-0001): during loss of offsite power with no ECACs running, start the SBO compressor at the SBO Compressor Building. Key sequence: open engine intake louvers, drain 1CA1920, open 2FZSBO10 battery charger breaker, air dryer ON, record hourmeter, UNLOADER to START, then <span class="hi-exam">PRESS AND HOLD BY-PASS VALVE pushbutton → SBO-IGN-SWT to START → verify oil pressure >15 psig → RELEASE BY-PASS VALVE</span>. Discharge alignment: <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span> pressurizes Aux Building 1A and 2A Control Air headers. UNLOADER to RUN to load.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-k</div>
+Same SBO Diesel Control Air Compressor start (SC.OP-SO.CA-0001 §5.1) — both Salem units tripped on loss of offsite power, NO Emergency Control Air Compressors (ECACs) running. The SBO compressor restores Control Air to the Aux Building 1A and 2A headers via <span class="hi-exam">1CA1913 (SBO COMPRESSOR DISCHARGE) → 1CA1886 (BLACKOUT AIR COMPRESSOR ISOLATION) → 2CA584 (YARD CONTROL AIR SUPPLY)</span>. Engine-protection discriminator: <span class="hi-exam">hold the BY-PASS VALVE pushbutton through start and release only after oil pressure &gt;15 psig</span> — releasing early stalls the engine.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q61</div>
 AB.CA-0001 trend analysis: ECAC manual start (Step 3.10) when <span class="hi-exam">2A CA Header &le; <span class="val-alarm">88 psig</span></span>. CAS reactor trip when <span class="hi-exam">BOTH headers &lt; <span class="val-trip">80 psig</span></span>. With declining CA headers, must track each header independently — the trip requires BOTH headers below 80 psig, not just one. <span class="hi-trap">100 psig = Station Air Compressor start threshold (Step 3.7), not ECAC start.</span>
@@ -144,12 +149,17 @@ On a total loss of Control Air affecting both units (operating SAC tripped/unres
 Normal Control Air (CA) header pressure and ECAC auto-start (AB.CA Basis Document): when supplied from Station Air through the dryers, CA runs ~5 psig below SA pressure and cycles with the SA cycle, so <span class="hi-exam">CA pressures normally run between 95 and 105 psig (≈100 psig)</span>. The <span class="hi-exam">Emergency Control Air Compressor (ECAC) auto-starts if CA pressure drops to 85 psig</span>. <span class="hi-trap">Normal is ≈100 psig (not 110), and the ECAC auto-start is 85 psig (not 90). 88 psig is the AB.CA-0001 ECAC MANUAL start, and 100 psig is the Station Air Compressor start threshold.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-g</div>
+On a loss of all SACs (#2 SAC trips → Unit 2 ECAC auto-starts; cross-tied #1 SAC then locks out), the control air system bleeds down through its event sequence: <span class="hi-exam">~3 min 50 sec — 2 ECAC begins loading; ~4 min 10 sec — 2B Control Air header reaches 80 psig (SA low pressure alarm); ~4 min 25 sec — CA low pressure alarm; ~6.5 min — 21-24BF19 Feed Reg Valves begin closing</span>. By design the ECAC will not load until its control air header pressure lowers to 85 psig; the next-to-load SAC (follow) requires Station Air header to drop ~5 psig below the follow setpoint (105 psig) for ~5 seconds. <span class="hi-exam">2A control air header is supplied from #2 ECAC; 2B control air header is supplied from #1 ECAC.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[RHR]], [[DC Power]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.CA-0001 — Control Air System Operation]]
 - Related abnormals: [[AB.460-0003 — Loss of 2C 460/230V Vital Bus]]
 - Related exam questions: [[2015 Q13]], [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]], [[2015 Q37]], [[2015 Q62]], [[2015 Q96]], [[2014 Q19]], [[2014 Q64]], [[2012 Q14]], [[2012 Q34]], [[2012 Q38]], [[2012 Q63]]
-- Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
+- Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]], [[2012 JPM Sim-g]], [[2012 JPM IP-k]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]
