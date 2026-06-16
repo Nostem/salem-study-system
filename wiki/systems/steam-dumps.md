@@ -92,11 +92,16 @@ In MS Pressure control (AUTO), <span class="hi-exam">raising the MS Dump Pressur
 Steam dumps failing FULL OPEN at 20% power pass ~52% steam flow, exceeding the <span class="hi-exam">Hi Steam Flow setpoint of 40% (0–20% power band)</span>; with coincident Lo Tavg (&lt;<span class="val-trip">543°F</span>) or Lo Steam Pressure (&lt;<span class="val-trip">600 psig</span>), an automatic Main Steamline Isolation signal is generated before the dumps turn off at 543°F.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q91</div>
+A <span class="hi-exam">23TB40 turbine bypass valve failing 50% open during a 6% startup</span> (steam dumps in MS Pressure control - Manual) dumps excess steam and <span class="hi-exam">slowly cools the RCS — auctioneered high RCS Tavg drops below 541&deg;F</span>. This is the Tech Spec trigger: TSAS 3.1.1.4 requires Tavg ≥ 541&deg;F in Modes 1/2, so the crew must <span class="hi-exam">restore Tavg ≥541&deg;F within 15 minutes or be in Hot Standby within the next 15 minutes</span> (open the RTBs). See [[TS 3/4.1.1 — Boration Control]]. <span class="hi-trap">PZR pressure (1984 psig and lowering) is a distractor — the controlling Tech Spec is minimum temperature for criticality, not a PZR-pressure LCO.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[RCS]], [[115V AC]], [[Feed & Condensate]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exam questions: [[2016 Q50]], [[2016 Q52]], [[2018 Q35]], [[2018 Q70]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]], [[2014 Q51]], [[2014 Q52]]
+- Related exam questions: [[2016 Q50]], [[2016 Q52]], [[2018 Q35]], [[2018 Q70]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]], [[2014 Q51]], [[2014 Q52]], [[2014 Q91]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2015 JPM Sim-f]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 3]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]

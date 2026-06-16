@@ -36,7 +36,13 @@ A <span class="hi-exam">manual reactor trip for a planned refueling outage is NO
 <span class="hi-exam">RAL 11.5.2.b: an oil discharge directly into the Delaware River with a visible sheen is a 15-minute notification</span>. Distractors are all reportable but slower: a TS-compliance shutdown (11.1.1.a, 4-hour); a deceased endangered sturgeon (11.5.2.c, 4 or 24-hour); exceeding rated thermal power (at least a 1-hour report).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q78</div>
+<span class="hi-exam">RAL 11.11, NERC Reporting</span> is the basis that makes a NERC notification a plausible distractor when a unit goes off-line — but for a routine planned trip to enter an outage, NERC is NOT directly informed of the unit being off-line (the ESOC, ER&amp;T, and NRC are). See [[OP-AA-108-107-1001 — Electric System Emergency Operations]].
+</div>
+
 ## Connections
 
-- Related exam questions: [[2022 Q87]], [[2015 Q97]]
-- Related exam: [[2022 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related procedures: [[OP-AA-108-107-1001 — Electric System Emergency Operations]]
+- Related exam questions: [[2022 Q87]], [[2015 Q97]], [[2014 Q78]]
+- Related exam: [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

@@ -62,13 +62,18 @@ Power Range NI Channel IV (2N44) fails high during a power ascension (Event 2). 
 With one IRNI channel already removed (TSAS 3.3.1.1) and the <span class="hi-exam">second IRNI channel oscillating erratically at power</span>: enter AB.NIS-0001, remove the second channel — loss of the second IRNI channel enters TS 3.0.3, requiring actions within one hour to <span class="hi-exam">be in Hot Standby within the next 6 hours</span>. See [[Excore NIs]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q76</div>
+A PRNI failing low (e.g., 1N44) is a distractor for unwanted outward rod motion: it would cause only a <span class="hi-exam">short-duration rod withdrawal while the channel is failing</span>, and the <span class="hi-exam">Overpower Rod Block at 109% on 1/4 PRNI>109%</span> would prevent sustained rod withdrawal. AB.NIS-0001 (rods to manual, remove the failed channel) is the correct action for a genuine NI failure — but sustained outward rod motion with normal AFD points instead to an inadvertent RCS boration (AB.ROD-0003).
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
-- Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
+- Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[AB.ROD-0003 — Continuous Rod Motion]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exam questions: [[2016 Q13]], [[2019 Q30]], [[2023 Q82]], [[2020 Q22]], [[2015 Q89]]
+- Related exam questions: [[2016 Q13]], [[2019 Q30]], [[2023 Q82]], [[2020 Q22]], [[2015 Q89]], [[2014 Q76]]
 - Related JPMs: [[2020 JPM Sim-f]]
 - Related scenarios: [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2015 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

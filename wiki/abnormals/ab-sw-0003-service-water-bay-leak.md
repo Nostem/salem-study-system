@@ -24,9 +24,15 @@ AB.SW-0003 is the correct procedure for <span class="hi-exam">isolating a leakin
 #2 SW Bay leak during startup. Entry via OHA B-29 (22-23 SW PMP SUMP AREA LVL HI) with B-13 (21 SW HDR PRESS LO). CAS actions: split SW headers (<span class="hi-exam">open 21SW23, 22SW23; close 21SW17, 22SW17</span>), start available Bay 4 pumps, stop #2 Bay pumps. Isolate #2 Bay: <span class="hi-exam">close 21SW22 and 21SW20</span>. SW remains available to DGs through 22SW21 and turbine area through 23SW20. CAS item 4.0: remove one CCHX from service. CRS enters <span class="hi-exam">TS 3.7.4 (72 hr LCO)</span> for only one operable SW loop.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q83 (DELETED)</div>
+(Question deleted from the graded exam.) A Service Water Bay leak is a distractor for SW header low pressure: <span class="hi-trap">a leak large enough to lower both nuc headers would ALSO bring in the bay sump high-level alarm and the TGA low-pressure alarm</span> — so with ONLY OHA B-13/B-14 (SW HDR PRESS LO) present, a Service Water Bay leak (which AB.SW-0003 addresses by splitting SW bays via 21SW17/22SW17) is ruled out.
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]]
-- Related exam questions: [[2020 Q14]]
+- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]]
+- Related exam questions: [[2020 Q14]], [[2014 Q83]]
 - Related scenarios: [[2018 Scenario 1]]
-- Related exam: [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2014 NRC Written Exam]]

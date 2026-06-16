@@ -110,11 +110,16 @@ EOP-LOCA-6 transitions to EOP-LOCA-5 when the LOCA-outside-containment break is 
 Containment Spray pump operation in LOCA-5 uses a <span class="hi-exam">less restrictive criteria than FRCE-1</span> — permitting reduced spray-pump operation depending on RWST level, containment pressure, and number of CFCUs operating. This is because recirculation flow to the RCS is not available, so it is very important to <span class="hi-exam">conserve RWST water</span> by stopping containment spray pumps when possible. Even after entering FRCE-1 on the PURPLE path (containment pressure &gt; 15 psig), FRCE-1 step 3.1 yes-path directs the <span class="hi-exam">CS pumps to be operated IAW LOCA-5</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q89</div>
+The LOCA-3 CAS directs <span class="hi-exam">LOCA-5 only if emergency recirculation cannot be established/maintained for a reason OTHER than containment sump blockage</span>. When the loss of recirculation flow IS caused by containment sump blockage, the correct transition is to [[EOP-APPX-7 — Containment Sump Blockage]], NOT LOCA-5. <span class="hi-trap">Selecting LOCA-5 for a sump-blockage cavitation event is a trap.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment Spray]], [[CFCUs]], [[EDGs]], [[RHR]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
-- Related exam questions: [[2015 Q24]], [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]], [[2015 Q82]], [[2014 Q27]]
+- Related exam questions: [[2015 Q24]], [[2016 Q26]], [[2016 Q73]], [[2016 Q84]], [[2018 Q65]], [[2018 Q73]], [[2018 Q81]], [[2019 Q15]], [[2019 Q65]], [[2020 Q17]], [[2020 Q42]], [[2020 Q87]], [[2022 Q80]], [[2023 Q17]], [[2015 Q82]], [[2014 Q27]], [[2014 Q84]], [[2014 Q89]]
 - Related JPMs: [[2019 JPM SRO-A1]], [[2023 JPM SRO-A1.a]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]]

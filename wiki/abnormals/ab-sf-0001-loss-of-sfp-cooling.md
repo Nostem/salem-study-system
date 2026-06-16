@@ -26,9 +26,14 @@ Per S2.OP-AB.SF-0001: when SFP water is at the boiling point (212 &deg;F) and SF
 Per AB.SF-0001, an unrecoverable loss of SFP cooling with rising SFP temperature produces an adverse consequence of <span class="hi-exam">increased FHB charcoal filter radiation from spent-fuel off-gassing as temperatures approach 150°F</span>. See [[Spent Fuel Pool]], [[Radiation Monitoring]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q90</div>
+Per AB.SF-0001 <span class="hi-exam">CAS item 2.0, the SFP demineralizer is MANUALLY removed from service when actual or projected SFP temperature is 130&deg;F</span> (the SFP demin does NOT auto-bypass). The <span class="hi-exam">CAUTION on top of page 2</span> notes that a pool heatup of ~14 degrees raises SFP level enough to cause the <span class="hi-exam">OHA C-27 SFP Lvl Hi (6" above normal)</span> to annunciate. <span class="hi-trap">The 136&deg;F auto-bypass is the CVCS demin, not the SFP demin.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Spent Fuel Pool]]
 - Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]]
-- Related exam questions: [[2018 Q92]], [[2015 Q49]]
-- Related exam: [[2018 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related exam questions: [[2018 Q92]], [[2015 Q49]], [[2014 Q90]]
+- Related exam: [[2018 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

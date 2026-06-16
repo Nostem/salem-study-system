@@ -75,10 +75,15 @@ On an <span class="hi-exam">unisolable break, EOP-LOCA-6 transitions to EOP-LOCA
 LOCA outside containment on 22 RHR pump piping (cold-leg injection check-valve failures) diagnosed during EOP-TRIP-2, with <span class="hi-exam">2R41D radiation monitor in alarm</span>, 22 RHR sump pump running (OHA C-34 22 RHR SUMP OVRFLO), and PZR level that cannot be held. After a manual SI and return to TRIP-1, CRS transitions to LOCA-6. The crew isolates the 22 RHR-loop leakage path — closes 2RH1/2RH2, 21RH19 and 22RH19, confirms 2RH26 shut, and cycles 21SJ49 / shuts 22SJ49 — completing <span class="hi-exam">CT-32: Isolate LOCA outside containment before transition out of LOCA-6</span>, then transitions to [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]. See [[2015 Scenario 4]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q84</div>
+When EOP-LOCA-6 actions <span class="hi-exam">fail to isolate the break (unisolable break), the transition is to EOP-LOCA-5</span>, where the directed actions are to <span class="hi-exam">add makeup to the RWST, initiate a cooldown, and minimize injection flow</span>. <span class="hi-trap">EOP-LOCA-1 is the transition only if the break IS isolated.</span> The SRO must know the LOCA-6 actions to identify the correct downstream procedure and the actions performed there.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RCS]], [[RVLIS]], [[RHR]], [[Radiation Monitoring]]
 - Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2015 Q22]], [[2016 Q22]], [[2016 Q73]], [[2018 Q63]], [[2019 Q63]], [[2019 Q81]], [[2020 Q16]], [[2020 Q25]], [[2022 Q18]], [[2023 Q16]], [[2015 Q82]]
+- Related exam questions: [[2015 Q22]], [[2016 Q22]], [[2016 Q73]], [[2018 Q63]], [[2019 Q63]], [[2019 Q81]], [[2020 Q16]], [[2020 Q25]], [[2022 Q18]], [[2023 Q16]], [[2015 Q82]], [[2014 Q84]], [[2014 Q89]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2015 Scenario 4]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

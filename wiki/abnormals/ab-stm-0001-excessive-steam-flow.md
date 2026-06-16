@@ -43,11 +43,16 @@ The AB.STM Continuous Action Summary (Step 1.1): any time reactor power is risin
 <span class="hi-exam">Steam leak outside containment</span> at the 23 West Moisture Separator Reheater, at power. Crew enters AB.STM-0001 and directs the AB.STM CAS — initially a CRS-directed turbine load reduction (PO lowers load, RO borates to hold Tavg on program) while confirming no MSIV (MS10) or Main Steam Dump malfunction. As the leak worsens, the crew <span class="hi-exam">trips the reactor and initiates MSLI to isolate the leak</span>; with the source isolated and SI not required, transition to [[EOP-TRIP-1 — Reactor Trip or Safety Injection]] → [[EOP-TRIP-2 — Reactor Trip Response]]. See [[2015 Scenario 4]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q76</div>
+A small steam leak can produce symptoms similar to an unwanted boration (Tavg below program and rising, outward rod motion). <span class="hi-trap">The discriminator: for a steam leak, control rods would NOT be placed in manual</span>, whereas an inadvertent boration (AB.ROD-0003) requires placing rods in MANUAL and terminating the boration.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related exam questions: [[2016 Q74]], [[2020 Q43]], [[2015 Q51]]
+- Related exam questions: [[2016 Q74]], [[2020 Q43]], [[2015 Q51]], [[2014 Q76]]
 - Related scenarios: [[2016 Scenario 3]], [[2015 Scenario 4]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

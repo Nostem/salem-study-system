@@ -78,11 +78,16 @@ Event 3: <span class="hi-exam">22 Hot Leg RTD Avg Sum fails high (value 650 F)</
 Event 2: <span class="hi-exam">Power Range NI Channel IV (2N44) fails high</span> during a power ascension, driving control rods to step IN at <span class="hi-exam">72 spm</span> (if rod control is in auto). RO verifies no load reject in progress and places rods in Manual. <span class="hi-trap">If rods were in auto, the crew may enter AB.ROD-0003 first, but transitions to AB.NIS-0001 because the root cause is a nuclear instrument failure, not a temperature/process channel.</span> The failed channel is then removed from service per S2.OP-SO.RPS-0001. See [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q76</div>
+AB.ROD-0003 is entered for unwanted continuous rod motion. When outward rod motion is caused by an inadvertent RCS boration (e.g., 1CV185 Makeup to Charging Pump Suction Valve opening), the response is to <span class="hi-exam">place control rods in MANUAL and terminate the boration</span>. Distinguish from a nuclear-instrument fail-low (AB.NIS-0001) and a xenon transient (large AFD change, dampen per Power Operation Attachment 1) — both of which present differently.
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[Steam Dumps]], [[Control Rod Drive]]
-- Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
-- Related exam questions: [[2019 Q67]]
+- Related systems: [[RPS/SSPS]], [[Steam Dumps]], [[Control Rod Drive]], [[CVCS]]
+- Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-IO.ZZ-0004 — Power Operation]]
+- Related exam questions: [[2019 Q67]], [[2014 Q76]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]]
 - Related scenarios: [[2017 Scenario 7]], [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 1]]
 - Related exam: [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

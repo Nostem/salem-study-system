@@ -108,11 +108,17 @@ Transitioned from EOP-TRIP-1 after a manual reactor trip (both SGFPs tripped on 
 Transitioned from EOP-TRIP-1 after a manual reactor trip (steam leak outside containment isolated by MSLI) with <span class="hi-exam">no SI required</span>. RO reports <span class="hi-exam">2 control rods failed to fully insert</span> → the crew must <span class="hi-exam">initiate Rapid Boration before exiting TRIP-2 (CT#1)</span> (start a BAT, open 2CV175, shut 21/22 CV160s); CRS determines 70 minutes of boration is required for the 2 stuck-out rods. A LOCA outside containment then develops on 22 RHR piping (24 ECCS Accumulator lo level/pressure, PZR level uncontrollable) → manual SI per the TRIP-2 CAS (fails from Train B, succeeds from Train A) → return to [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]. See [[2015 Scenario 4]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q92</div>
+The <span class="hi-exam">Feedwater Interlock (FWI) is a 2/2 interlock: RCS Auctioneered Hi Tavg &lt;554&deg;F AND Rx Trip Breakers open (P-4)</span>, which shuts all BF19's and BF40's to isolate Main Feed flow to the SGs. <span class="hi-exam">If the FWI fails to actuate, the running SGFPs continue to supply Main Feed</span> to the SGs (whose NR level is low after the trip from 100% power), causing <span class="hi-exam">excessive SG cooldown / overfeed</span>. Because the resulting RCS pressure transient is steady but slow, <span class="hi-trap">SI initiation in TRIP-1 is NOT warranted during immediate actions</span> — initiating SI when not required can fill the PZR water-solid. The correct response is to <span class="hi-exam">trip both SGFPs early in TRIP-2 after verifying adequate AFW flow</span>.
+</div>
+
 ## Connections
 
-- Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]], [[Excore NIs]], [[Steam Generator & Blowdown]], [[Radiation Monitoring]]
+- Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]], [[Excore NIs]], [[Steam Generator & Blowdown]], [[Radiation Monitoring]], [[Feed & Condensate]], [[AFW]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[AB.RAD-0001 — Radiation Monitor Abnormality]]
-- Related exam questions: [[2015 Q10]], [[2015 Q11]], [[2016 Q8]], [[2016 Q52]], [[2016 Q76]], [[2016 Q78]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]], [[2015 Q85]]
+- Related exam questions: [[2015 Q10]], [[2015 Q11]], [[2016 Q8]], [[2016 Q52]], [[2016 Q76]], [[2016 Q78]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]], [[2015 Q85]], [[2014 Q92]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]], [[2015 JPM Sim-f]]
 - Related scenarios: [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

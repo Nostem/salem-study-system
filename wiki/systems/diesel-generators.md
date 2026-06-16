@@ -5,6 +5,7 @@ status: draft
 aliases:
   - emergency diesel generators
   - diesel generators
+  - Diesel Generators
   - diesel generator
   - EDG
 ---
@@ -244,11 +245,16 @@ EDG TS surveillances: SR 4.8.1.2 specifies that certain surveillances are NOT re
 With the 2B EDG <span class="hi-exam">paralleled</span> to the 2B 4KV vital bus during a surveillance run, placing the 2B-DF-GCP-1 Diesel Gen Loading Switch in <span class="hi-exam">AUTO (ISOCR)</span> makes the generator attempt to pick up large +/- VAR loading (it is trying to control grid voltage). <span class="hi-trap">There is no SPT-to-EDG control interlock — the EDG will TRIP on either reverse power or output breaker over-current; it does NOT speed up.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q93</div>
+A tripped 21 Diesel Fuel Oil Transfer Pump breaker requires entering <span class="hi-exam">TS 3.8.1.1.b.2 (EDG Fuel Oil, Modes 1-4) because BOTH Fuel Oil Transfer pumps are required to be OPERABLE</span>. The controlling Tech Spec bases is the <span class="hi-exam">electric power sources bases — OPERABILITY of the AC electrical power sources ensures sufficient power for the safe shutdown of the plant and for the mitigation and control of accident conditions.</span> <span class="hi-trap">Trap: pairing the correct TS with the LCO 3.0.3 "timely unit shutdown" bases is wrong; and a single tripped CCW pump does NOT make both loops of CCW inoperable, so a TS 3.0.3 / CCW basis is also wrong.</span> See [[TS 3/4.8 — Electrical]].
+</div>
+
 ## Connections
 
 - Related systems: [[Fire Protection]]
 - Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.0 — Applicability]]
-- Related exam questions: [[2015 Q13]], [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]], [[2015 Q43]], [[2015 Q55]], [[2015 Q58]], [[2015 Q92]], [[2014 Q59]]
+- Related exam questions: [[2015 Q13]], [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]], [[2015 Q43]], [[2015 Q55]], [[2015 Q58]], [[2015 Q92]], [[2014 Q59]], [[2014 Q83]], [[2014 Q93]]
 - Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[S2.OP-ST.DG-0002 — 2B Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-ST.DG-0003 — 2C Diesel Generator Surveillance Test]], [[S2.OP-ST.DG-0014 — 2C Diesel Generator Endurance Run]]
 - Related JPMs: [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-g]], [[2016 JPM IP-i]], [[2016 JPM IP-k]], [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2015 Scenario 1]], [[2015 Scenario 3]]

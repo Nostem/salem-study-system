@@ -59,12 +59,17 @@ On a total loss of all AC power, EOP-LOPA-1 may be entered directly; its immedia
 <span class="hi-exam">EOP-LOPA-1 Sheet 2, Step 27</span> directs local isolation of RCP Seal Cooling during a loss of all AC power. The local actions close five valves: <span class="hi-exam">CV83, CV89 (SEAL WATER FILTER INLET), CV95 (SEAL WATER FILTER BYPASS), CV116 (SEAL WATER TO VCT), and CC131 (RCP THERMAL BARRIER VALVE)</span>. With seal injection and thermal-barrier CCW lost in the blackout, isolating these prevents diversion/backflow paths through the seal-cooling lines.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q99</div>
+The EOP-LOPA-1 Bases document states this EOP is entered <span class="hi-exam">anytime, from anywhere, on the symptom of a loss of all AC power</span>. Therefore <span class="hi-exam">a loss of all three vital buses ALWAYS requires suspending any Functional Restoration Procedure (FRP) in use</span> — FRPs assume at least one 4KV vital bus is available for mitigative actions. <span class="hi-trap">Contrast: only a HIGHER RED or PURPLE CFST path than the one directing current FRP entry requires suspending (a new condition on a different status tree does not always); FRPs do NOT have a Continuous Action Summary like EOPs do; RWST lo level only directs LOCA-3 when so directed in the FRP in use — it does not automatically suspend any FRP.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Control Air]], [[DC Power]], [[EDGs]], [[Service Water]], [[4KV]], [[SECs]], [[RCPs]], [[CVCS]], [[RHR]]
 - Related EOPs: [[EOP-LOPA-2 — Loss of All AC Power Recovery / SI Not Required]], [[EOP-LOPA-4 — Extended Loss of All AC Power]]
 - Related procedures: [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[AB.CA-0001 — Loss of Control Air]]
-- Related exam questions: [[2014 Q6]], [[2015 Q13]], [[2016 Q18]], [[2018 Q59]], [[2022 Q77]], [[2015 Q74]], [[2014 Q16]]
+- Related exam questions: [[2014 Q6]], [[2015 Q13]], [[2016 Q18]], [[2018 Q59]], [[2022 Q77]], [[2015 Q74]], [[2014 Q16]], [[2014 Q99]]
 - Related JPMs: [[2016 JPM Sim-g]], [[2018 JPM IP-i]], [[2019 JPM Sim-g]], [[2015 JPM IP-j]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
 - Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

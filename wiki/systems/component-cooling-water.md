@@ -201,9 +201,14 @@ The CCW supply to the RCPs is a single line feeding both <span class="hi-exam">b
 TSAS 3.7.3 requires <span class="hi-exam">2 independent loops of CCW</span>; per the bases, having 2 operable loops requires <span class="hi-exam">ALL 3 CCW pumps operable</span> (plus HXs, valves, etc.). The <span class="hi-exam">23 CCW pump is a BLACKOUT load, NOT an ACCIDENT load</span>. On a 2C bus undervoltage / SEC Mode II, 23 CCW does not start; the SEC also <span class="hi-exam">locks out the AUTO/MAN function of the CCW pump start circuitry</span>, so 23 CCW being in MANUAL has no effect. All 3 pumps remain operable → TSAS 3.7.3 is NOT entered.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q93</div>
+Distractor trap: a single <span class="hi-exam">21 CCW pump trip does NOT make both loops of CCW inoperable</span>, so entering TS 3.0.3 "because all redundant equipment in the CCW system is not available" is wrong. (The tested action was the concurrent tripped EDG fuel oil transfer pump → TS 3.8.1.1.b.2; see [[Diesel Generators]] and [[TS 3/4.8 — Electrical]].)
+</div>
+
 ## Connections
 
-- Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]]
+- Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]], [[2014 Q83]], [[2014 Q93]]
 - Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]], [[2015 JPM Sim-g]]
 - Related scenarios: [[2018 Scenario 1]], [[2015 Scenario 4]]
 - Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]]

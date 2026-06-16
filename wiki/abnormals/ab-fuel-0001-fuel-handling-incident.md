@@ -41,8 +41,13 @@ Dropped fuel assembly in Unit 2 SFP with 2R5 alarming and stabilizing at 25 mR/h
 AB.FUEL-0001 <span class="hi-exam">CAS 1.0 directs ALL personnel to evacuate the Fuel Handling Building when FHB radiation level reaches <span class="val-trip">1 R/hr</span></span> (from the damaged assembly or any other cause). <span class="hi-trap">By contrast, AB.FUEL-0002 (Loss of Refueling Cavity or Spent Fuel Pool Level) does not evacuate the FHB until 2 R/hr.</span> Bubbles from the assembly, crane motion lockout (2R32A), and automatic ventilation realignment to HEPA + Charcoal are NOT the evacuation criterion.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q80</div>
+With an irradiated fuel assembly in the mast and emergency position P-10 already full, the assembly is placed into <span class="hi-exam">its designated core position</span> (fuel-loading considerations preclude placing it in "the first available position"). The <span class="hi-exam">Fuel Transfer Cart must be sent to containment before the fuel transfer canal gate valve is shut</span> (the gate valve can only be fully closed with the cart inside containment). <span class="hi-trap">The Iodine Removal Unit (IRU) is NOT started unless specifically requested by Rad Pro when iodine is present in containment — no such indication in this scenario.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Radiation Monitoring]], [[Refueling]], [[Spent Fuel Pool]], [[FHV]]
-- Related exam questions: [[2014 Q13]], [[2016 Q88]], [[2019 Q68]], [[2020 Q82]], [[2022 Q22]]
+- Related exam questions: [[2014 Q13]], [[2016 Q88]], [[2019 Q68]], [[2020 Q82]], [[2022 Q22]], [[2014 Q80]]
 - Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]

@@ -165,6 +165,11 @@ With Tavg less than <span class="val-trip">541°F</span>, restore Tavg within <s
 ---
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q91</div>
+A stuck-open TB40 turbine bypass valve during a low-power startup cools the RCS until <span class="hi-exam">auctioneered high RCS Tavg falls below 541&deg;F</span> in Mode 2. TSAS 3.1.1.4 requires Tavg ≥ 541&deg;F; if not restored, the required action is <span class="hi-exam">restore Tavg to ≥541&deg;F within 15 minutes, or be in Hot Standby within the next 15 minutes (open the Rx Trip Breakers)</span>. The correct bases for the 541&deg;F minimum is that <span class="hi-exam">protective instrumentation is within its normal operating range</span> (one of the 5 listed bases). <span class="hi-trap">SDM margin / adequate shutdown margin is NOT one of the 5 bases for the minimum temperature for criticality; the PZR-pressure Tech Spec with a 1-hour restore / 4-hour power-reduction sequence is the wrong LCO and wrong time requirement.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q91</div>
 When control rods go below the Rod Insertion Limit (ROD INSERT LIMIT LO-LO alarm present), <span class="hi-exam">SR 4.1.1.1.b is NOT met</span> because control banks are NOT within the COLR limits. With the SR not met, <span class="hi-exam">LCO 3.1.1.1 is also NOT met</span>. <span class="hi-trap">Trap: the candidate may think LCO 3.1.1.1 is met until a SDM calculation confirms inadequate SDM. But SR 4.1.1.1.b requires verifying control banks are within COLR limits — if they are not, the SR is not met, which means the LCO is not met regardless of actual SDM value.</span> Per the ROD INSERT LIMIT LO-LO Alarm Response Procedure, the crew will perform <span class="hi-exam">S2.OP-SO.CVC-0008 (Rapid Boration) ONLY</span> to restore rods above the RIL. <span class="hi-trap">Raising turbine power is NOT permitted — it would lower TAVG causing automatic rod withdrawal, but the alarm response procedure does not allow this corrective action.</span>
 </div>
@@ -174,5 +179,5 @@ When control rods go below the Rod Insertion Limit (ROD INSERT LIMIT LO-LO alarm
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[CVCS]], [[RCS]]
-- Related exam questions: [[2018 Q91]]
-- Related exam: [[2018 NRC Written Exam]]
+- Related exam questions: [[2018 Q91]], [[2014 Q91]]
+- Related exam: [[2018 NRC Written Exam]], [[2014 NRC Written Exam]]

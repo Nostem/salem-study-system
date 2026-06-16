@@ -27,9 +27,15 @@ SC.SA-ST.ZZ-0001 (Rev. 5) requires <span class="hi-exam">prior RP Supervisor app
 Containment access is normally authorized by the SM/CRS. <span class="hi-exam">To access containment while power is being changed &gt;5%/hr, the Radiation Protection Supervisor approval is additionally required</span> (Pre-req 2.4). See [[Containment]], [[RP-SA-102 — Containment Entries at Power]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q98</div>
+For a containment entry to the 78' elevation outside the bioshield during a 20%/hr Tech Spec 3.0.3 shutdown: there is <span class="hi-exam">NO Rx power limitation</span> for the entry. Authorization is normally by the SM/CRS/Designee, but because power is being changed &gt;5%/hr, the <span class="hi-exam">Radiation Protection Supervisor (RPS) approval is required</span>. <span class="hi-trap">Trap: the Operations Manager is NOT the required authorizer — he/she signs the approval of all ops procedures, but that is not the specific approval the stem asks for. There is also no Rx power &lt;50% limitation.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]]
 - Related procedures: [[RP-SA-102 — Containment Entries at Power]]
-- Related exam questions: [[2016 Q72]], [[2015 Q72]]
-- Related exam: [[2016 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related tech specs: [[TS 3/4.0 — Applicability]]
+- Related exam questions: [[2016 Q72]], [[2015 Q72]], [[2014 Q98]]
+- Related exam: [[2016 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

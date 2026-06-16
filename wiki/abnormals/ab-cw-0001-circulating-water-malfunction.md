@@ -46,10 +46,16 @@ Loss of #4 SPT causes 23 CW Bus de-energization — 21A-23A CW pumps trip. Conde
 On a loss of circulators (23 SPT lost → 3 of 4 circulators off): <span class="hi-exam">the reactor remains at power</span> (the CAS Rx trip applies only with 4 circulators O/S above P-9). AB.CW-0001 (page 5) allows/directs <span class="hi-exam">manually establishing Low Pressure Turbine Hood Spray</span> (normally secured &gt;15% power). See [[Circ Water]], [[Main Turbine]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q81</div>
+When a 500 KV bus section loss trips multiple circulators (13 KV ring bus south Section A de-energized → 3 circulators lost), AB.CW-0001 directs opening the <span class="hi-exam">Turbine Hood Spray Bypass valves 11-13MC62s on the affected condensers</span> (all of them). <span class="hi-trap">A power reduction is NOT required as long as at least one circulator remains running on each waterbox.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Main Turbine]], [[Circ Water]]
 - Related EOPs: [[EOP-TRIP-1]]
-- Related exam questions: [[2019 Q37]], [[2023 Q93]], [[2015 Q93]]
+- Related procedures: [[AB.LOOP-0003 — Partial Loss of Offsite Power]]
+- Related exam questions: [[2019 Q37]], [[2023 Q93]], [[2015 Q93]], [[2014 Q81]]
 - Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

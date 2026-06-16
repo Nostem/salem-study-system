@@ -97,11 +97,16 @@ Knowing when NOT to implement a RED-priority CFST is as important as knowing whe
 Per 2-EOP-CFST-1, if the Core Exit Thermocouple Processing System is de-energized, the <span class="hi-exam">ONLY indication allowed to verify natural circulation is the Installed Control Room Class 1E readings</span>. <span class="hi-trap">Plant Computer, Subcooling Margin Monitor, and SPDS all derive their CET input from the (now de-energized) CET Processing System, and SPDS/Plant Computer are exempt from 1E requirements — so none may be used.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q99</div>
+A new CFST condition that requires suspending the FRP in use is <span class="hi-exam">only a HIGHER RED or PURPLE path than the one which directed current procedure entry</span>. <span class="hi-trap">A new condition on a status tree DIFFERENT from the one that directed the current FRP does NOT always require suspending — that distractor is incorrect. (The condition that ALWAYS requires suspending any FRP is a loss of all three vital buses, which sends the crew to EOP-LOPA-1.)</span>
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]], [[EOP-FRCE-2 — Response to Containment Flooding]], [[EOP-FRCE-3 — Response to High Containment Radiation Levels]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRSM-2 — Response to Loss of Core Shutdown]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related systems: [[RVLIS]], [[RPS/SSPS]], [[Incores]], [[Containment]], [[Radiation Monitoring]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related scenarios: [[2015 Scenario 1]], [[2015 Scenario 3]], [[2015 Scenario 4]]
-- Related exam questions: [[2016 Q76]], [[2016 Q83]], [[2018 Q47]], [[2018 Q74]], [[2018 Q75]], [[2018 Q80]], [[2018 Q85]], [[2019 Q46]], [[2019 Q75]], [[2020 Q24]], [[2020 Q26]], [[2015 Q44]], [[2015 Q83]], [[2015 Q84]], [[2014 Q45]], [[2014 Q74]]
+- Related exam questions: [[2016 Q76]], [[2016 Q83]], [[2018 Q47]], [[2018 Q74]], [[2018 Q75]], [[2018 Q80]], [[2018 Q85]], [[2019 Q46]], [[2019 Q75]], [[2020 Q24]], [[2020 Q26]], [[2015 Q44]], [[2015 Q83]], [[2015 Q84]], [[2014 Q45]], [[2014 Q74]], [[2014 Q88]], [[2014 Q99]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

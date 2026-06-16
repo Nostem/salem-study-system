@@ -6,6 +6,9 @@ aliases:
   - EP-SA-111-101
   - EP-SA-111-121
   - EP-SA-111-F3
+  - EP-SA-111-104
+  - EP-SA-111-107
+  - EP-SA-111-115
   - emergency classification
   - EAL
   - emergency action level
@@ -91,10 +94,28 @@ ESG-2 classifies as an <span class="hi-exam">ALERT under EAL RB3.L</span> (singl
 ESG-3 classifies as a <span class="hi-exam">Site Area Emergency under EALs FB2.P AND RB2.P</span> — <span class="hi-exam">Potential Loss of the Fuel Clad Barrier AND Potential Loss of the RCS Barrier</span> (two barriers in Potential Loss = SAE), using ECG Attachment 3 (EP-SA-111-F3 Rev. 3). ICMF Section III: <span class="hi-exam">NO</span> radiological release in progress. <span class="hi-trap">Trap: a single-barrier Potential Loss is only an Alert — it is the simultaneous potential loss of BOTH the fuel-clad and RCS barriers that drives the SAE.</span> Same dual 15-minute declaration/notification clocks. (Time-critical Admin JPM — Classroom.)
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q79</div>
+Comparing EAL severity across condition sets (the most severe wins). Salem ECG examples tested:
+<ul>
+<li><span class="hi-exam">SS3.1 — Site Area Emergency:</span> ATWS in which ALL attempts to trip the Rx from the control room FAIL (the highest of the four in this question).</li>
+<li><span class="hi-exam">SA3.1 — Alert:</span> ATWS in which the Rx CAN be tripped from the control room.</li>
+<li><span class="hi-exam">RA2.2 — Alert:</span> lowering SFP level that will result in irradiated fuel becoming uncovered (escalates only via a different RAL, e.g., rising radiation).</li>
+<li><span class="hi-exam">HA1.1 — Alert:</span> earthquake activating the Hope Creek Seismic Switch and felt in the Control Room.</li>
+<li><span class="hi-exam">HA1.2 — Alert:</span> turbine becoming a missile causing visible damage to containment (this happened at Salem — an ALERT was declared even though it was only a UE at the time).</li>
+</ul>
+Reference sheets: EP-SA-111-115 (p 1), EP-SA-111-104 (p 2), EP-SA-111-107 (p 1,3).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q100</div>
+<span class="hi-exam">Short Duration Events corrected before declaration still require declaration THEN termination</span> — the actual declaration should be no less restrictive. Per EP-SA-111-101 (p 13): "the condition may be corrected before a declaration has been made. The key consideration ... is to determine whether or not further plant damage occurred while the corrective actions were being taken ... Classify the event as indicated and terminate the emergency once assessment shows that there were no consequences from the event and other termination criteria are met." For a declared Unusual Event corrected before the 15-minute notifications are made, the Emergency Coordinator <span class="hi-exam">directs the Primary Communicator to make all required 15-minute notifications, then terminates the UE IAW the proper attachments</span>. <span class="hi-trap">Trap: do NOT terminate/skip the 15-minute notifications, and the UE is terminated (not retracted).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[EP-SA-111 — Emergency Classification and Protective Action]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
-- Related exam questions: [[2015 Q99]]
+- Related exam questions: [[2015 Q99]], [[2014 Q79]], [[2014 Q100]]
 - Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM SRO-A5]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

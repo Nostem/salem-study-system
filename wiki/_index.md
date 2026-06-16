@@ -256,6 +256,7 @@ status: draft
 - [[RP-AA-203 — Exposure Control and Authorization]]
 - [[RP-SA-102 — Containment Entries at Power]]
 - [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]]
+- [[S2.OP-ST.RC-0008 — RCS Water Inventory Balance]]
 
 ## Procedures
 - [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]]

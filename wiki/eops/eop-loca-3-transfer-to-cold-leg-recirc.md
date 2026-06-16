@@ -90,12 +90,22 @@ LOCA-3 stops all dedicated containment spray pumps and, if <span class="hi-exam"
 On the transfer to cold-leg recirc, the <span class="hi-exam">22 Containment Spray pump is stopped first (if both CS pumps are running); the 21 CS pump continues until RWST lo-lo, then 21CS36 is opened</span> to supply recirculation spray from RHR discharge. See [[Containment Spray]], [[RHR]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q89</div>
+When containment sump blockage causes loss of ECCS flow during LOCA-3, the CAS directs <span class="hi-exam">transition to [[EOP-APPX-7 — Containment Sump Blockage]] — NOT [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]</span>. The LOCA-3 CAS item directs LOCA-5 only if emergency recirculation cannot be established/maintained for a reason <span class="hi-trap">OTHER than containment sump blockage</span>; sump blockage transitions to APPX-7. LOCA-3 step sequence: <span class="hi-exam">22 CS pump stopped at step 8</span>; <span class="hi-exam">charging and SI pump suction isolated from RWST at step 14</span>; the crew <span class="hi-exam">waits at step 21 until RWST level lowers to 1.2'</span>, at which point the remaining (21) CS pump is stopped. With RWST above 1.2', the 21 CS pump still takes suction from the RWST, so <span class="hi-exam">CS flow remains above 0 gpm</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q99</div>
+RWST level lowering to the low level setpoint <span class="hi-exam">only directs transition to EOP-LOCA-3 (Transfer to Cold Leg Recirculation) when so directed in the FRP/procedure in use</span>. <span class="hi-trap">It does NOT automatically suspend any FRP in progress — automatically going to LOCA-3 on low RWST level does not always occur regardless of where in any procedure you are. (The condition that ALWAYS requires suspending any FRP is a loss of all three vital buses → EOP-LOPA-1.)</span>
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]], [[CFCUs]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
-- Related exam questions: [[2015 Q24]], [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]], [[2015 Q34]], [[2015 Q46]]
+- Related exam questions: [[2015 Q24]], [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]], [[2015 Q34]], [[2015 Q46]], [[2014 Q89]], [[2014 Q99]]
 - Related JPMs: [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]], [[2015 Scenario 1]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]]

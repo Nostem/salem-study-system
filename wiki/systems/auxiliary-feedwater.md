@@ -104,6 +104,11 @@ Instrument air supply line rupture to <span class="hi-exam">2MS132 (23 AFW Turbi
 - 2 pumps inoperable: Hot Standby in 6 hours
 - 3 pumps inoperable: immediately restore at least one
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q97</div>
+The TS 3.7.1.2 operability Bases for the AFW System in Modes 1-3 is that it <span class="hi-exam">ensures the RCS can be cooled down to &lt;350°F from normal conditions following a complete loss of off-site power</span>. <span class="hi-trap">Trap: do not confuse with the AFWST sizing basis (8 hours at HSB with atmospheric steam discharge), the SGTR cooldown to &lt;500°F (off-site dose), or the ATWT decay-heat reason — none of those is the 3.7.1.2 operability bases.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 SRO-A4</div>
 ICMF during SGTR: TD AFW pump (23 AFW) takes steam from <span class="hi-exam">21 and 23 SGs</span>. With 23 SG ruptured and <span class="hi-exam">23MS45 not yet closed</span>, primary-to-secondary leakage exits through the TD AFW pump steam supply — constitutes an <span class="hi-exam">unmonitored release in progress</span>.
@@ -248,7 +253,7 @@ With the 22 AFP Pressure Override Protection circuit malfunctioned (holding the 
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S2.OP-PT.AF-0002 — AFW Backleakage Testing]], [[AB.115-0001 — Loss of 115V Vital Instrument Bus]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]], [[S2.OP-SO.CN-0002 — Steam Generator Feed Pump Operation]], [[AB.CA-0001 — Loss of Control Air]]
-- Related exam questions: [[2015 Q18]], [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2016 Q65]], [[2016 Q76]], [[2016 Q78]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]], [[2015 Q53]], [[2015 Q54]], [[2015 Q63]], [[2015 Q83]], [[2014 Q15]], [[2014 Q55]], [[2014 Q56]]
+- Related exam questions: [[2015 Q18]], [[2016 Q15]], [[2016 Q20]], [[2016 Q51]], [[2016 Q53]], [[2016 Q54]], [[2016 Q65]], [[2016 Q76]], [[2016 Q78]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q18]], [[2018 Q66]], [[2019 Q16]], [[2019 Q19]], [[2019 Q20]], [[2019 Q31]], [[2019 Q71]], [[2020 Q10]], [[2020 Q18]], [[2020 Q44]], [[2020 Q46]], [[2020 Q100]], [[2023 Q41]], [[2023 Q43]], [[2023 Q44]], [[2022 Q46]], [[2022 Q79]], [[2015 Q53]], [[2015 Q54]], [[2015 Q63]], [[2015 Q83]], [[2014 Q15]], [[2014 Q55]], [[2014 Q56]], [[2014 Q85]], [[2014 Q97]], [[2014 Q92]]
 - Related JPMs: [[2023 JPM SRO-A4]], [[2016 JPM IP-j]], [[2015 JPM Sim-h]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

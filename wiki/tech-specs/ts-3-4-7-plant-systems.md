@@ -116,6 +116,11 @@ The flow path to each steam generator is ensured by maintaining all manual maint
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q97</div>
+The TS 3.7.1.2 Bases reason for maintaining an OPERABLE AFW System in Modes 1-3 is that it <span class="hi-exam">ensures the RCS can be cooled down to &lt;<span class="hi">350°F</span> from normal conditions following a complete loss of off-site power</span>. <span class="hi-trap">Trap distractors not in the 3.7.1.2 Bases: the AFWST 8-hour HSB-with-atmospheric-steam-discharge value, the SGTR cooldown to &lt;500°F (which limits off-site dose), and the ATWT decay-heat-removal reason are all true facts elsewhere but are NOT the stated 3.7.1.2 operability bases.</span>
+</div>
+
 ---
 
 ## 3/4.7.1.3 — Auxiliary Feed Storage Tank
@@ -414,6 +419,11 @@ At least two supply fans and three exhaust fans shall be OPERABLE to maintain th
 | During CORE ALTERATIONS: Auxiliary Building not slightly negative | Restore slightly negative pressure or suspend CORE ALTERATIONS | 4 hrs |
 | At all times: Auxiliary Building not slightly negative | Suspend radioactive gaseous releases via the Auxiliary Building | Immediately |
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q82</div>
+This action (TS 3.7.7 action e) is the basis for terminating a gas decay tank release: if <span class="hi-exam">Auxiliary Building pressure turns positive</span> (loses its slightly-negative condition) during a radioactive gaseous release via the Aux Building, the release must be <span class="hi-exam">suspended immediately</span> to prevent an unmonitored release.
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.7 Auxiliary Building Ventilation System</summary>
 <div class="callout callout-bases">
@@ -583,7 +593,8 @@ Four Main Feedwater Isolation Valves (FIVs), four Main Feedwater Regulating Valv
 ## Connections
 
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
-- Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]], [[2014 Q37]]
+- Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
+- Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]], [[2014 Q37]], [[2014 Q82]], [[2014 Q97]]
 - Related JPMs: [[2020 JPM SRO-A3]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2014 NRC Written Exam]]

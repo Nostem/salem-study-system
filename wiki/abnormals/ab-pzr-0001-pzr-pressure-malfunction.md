@@ -105,10 +105,16 @@ For a PORV (1PR1) that opens in automatic and cannot be shut, AB.PZR directs <sp
 With 2PS3 PZR spray valve demand failing to 50%, actual spray flow roughly <span class="hi-exam">doubles</span> (normal demand is ~13% per valve since Salem runs one B/U heater set in MANUAL ON). 2PS1 WILL shut, but excess spray remains (2PS3 is the dominant spray flow), so PZR pressure lowers and the <span class="hi-exam">backup heaters in AUTO energize at <span class="val-normal">2210 psig</span> (turn off at <span class="val-normal">2218 psig</span>)</span>. <span class="hi-trap">Control group heaters cannot hold pressure against 50% spray demand.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q87</div>
+With RHR in service in Mode 5, an RCS pressure transient to &gt;375 psig opens the PZR PORVs (and the 1RH3 RHR relief, which is not apparent in the control room). The crew enters AB.PZR-0001 and uses <span class="hi-exam">Attachment 3 to ensure any PZR PORV that opened in response to the pressure has shut</span>. <span class="hi-trap">AB.LOCA-0001 (Shutdown LOCA) is NOT entered in Mode 5 — it applies to Modes 3/4 with accumulators isolated.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[RPS/SSPS]], [[ECCS]]
-- Related exam questions: [[2014 Q10]], [[2014 Q36]], [[2014 Q38]], [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]], [[2015 Q87]]
+- Related systems: [[Pressurizer & PRT]], [[Pressurizer Level & Press Control]], [[RPS/SSPS]], [[ECCS]], [[RHR]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
+- Related exam questions: [[2014 Q10]], [[2014 Q36]], [[2014 Q38]], [[2016 Q11]], [[2016 Q17]], [[2016 Q36]], [[2020 Q7]], [[2022 Q9]], [[2023 Q5]], [[2015 Q87]], [[2014 Q87]]
 - Related JPMs: [[2020 JPM Sim-a]]
 - Related scenarios: [[2016 Scenario 3]], [[2017 Scenario 7]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2015 Scenario 2]]
 - Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

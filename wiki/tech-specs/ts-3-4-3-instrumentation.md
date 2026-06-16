@@ -716,10 +716,15 @@ TS Bases 3.3.1.1 generalizes that instrumentation OPERABILITY ensures <span clas
 Per TSAS 3.3.1.1, Table 3.3-6, <span class="hi-exam">only ONE of the two FHB (Fuel Handling Building) area radiation monitors is required to be OPERABLE</span> during fuel handling. <span class="hi-trap">Therefore 2R5 failing low does NOT, by itself, require suspension of fuel transfer in Mode 6 — the redundant monitor remains operable.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q94</div>
+Intermediate Range NI operability per TSAS 3.3.1.1: there is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">ONE inoperable IR NI only — with BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). Supporting procedure facts (S1.OP-IO.ZZ-0003): <span class="hi-exam">at least a one-decade SR/IR overlap is required when raising power (step 5.2.33)</span>; with SR at ~30,000 counts the overlap should already be present, so each IR NI should read ~<span class="hi-exam">1x10-10A</span>; the <span class="hi-exam">SR Hi Flux trip is at 100,000 counts</span>. <span class="hi-trap">Trap: declaring only TSAS 3.3.1.1 entry (the one-channel action) when BOTH channels are inoperable — the correct entry is TS 3.0.3.</span> See [[Incores]], [[TS 3/4.0 — Applicability]].
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]], [[Radiation Monitoring]], [[Excore NIs]]
-- Related exam questions: [[2014 Q12]], [[2014 Q68]], [[2015 Q16]], [[2018 Q82]], [[2018 Q89]], [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]], [[2015 Q27]], [[2015 Q89]]
+- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]], [[Radiation Monitoring]], [[Excore NIs]], [[Incores]]
+- Related exam questions: [[2014 Q12]], [[2014 Q68]], [[2015 Q16]], [[2018 Q82]], [[2018 Q89]], [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]], [[2015 Q27]], [[2015 Q89]], [[2014 Q94]]
 - Related JPMs: [[2016 JPM SRO-A3]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
 - Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

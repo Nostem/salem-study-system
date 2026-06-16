@@ -44,10 +44,15 @@ TRIP-4 Step 4 determines the Cold Shutdown boron concentration and the boration 
 TRIP-5/TRIP-6 (Natural Circulation Rapid Cooldown) each have a Step 1 caution: <span class="hi-exam">TRIP-4 steps 3-17 must be completed before entering TRIP-5 or TRIP-6</span> — ensuring adequate SDM and upper-head cooling, SI signals blocked, and initial cooldown/depressurization performed. See [[RCS]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q88</div>
+Natural Circulation Cooldown from NOP/NOT: <span class="hi-exam">continue RCS depressurization in TRIP-4 until &lt;1000 psig, then close 21-24 SJ54 (Accumulator Isolation Valves) at step 25</span> to prevent injecting accumulator contents into the RCS. Key CAS thresholds tested: the <span class="hi-exam">8-hour upper-head soak is required only if RCS pressure is &lt;1250 psig AND fewer than 2 CRDM vent fans are running</span> (with both CRDM vent fans running and 1245 psig, no soak yet). The CAS directs initiating SI only if subcooling cannot be maintained &gt;9°F (using CFST Table A; with CETs 445°F it is ~107°F here), and PZR level is maintained &gt;11% — so neither "initiate SI / go to TRIP-1" nor "start ECCS pumps to raise PZR level" applies.
+</div>
+
 ## Connections
 - Related systems: [[RCS]], [[RCPs]], [[Pressurizer & PRT]], [[ECCS]], [[CVCS]], [[RVLIS]], [[115V AC]]
-- Related EOPs: [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
-- Related procedures: [[S2-RE-RA.ZZ-0016 — Curve Book (Salem Unit 2 Cycle 23)]]
-- Related exam questions: [[2019 Q85]], [[2023 Q26]], [[2023 Q71]], [[2023 Q87]], [[2015 Q85]]
+- Related EOPs: [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
+- Related procedures: [[S2-RE-RA.ZZ-0016 — Curve Book (Salem Unit 2 Cycle 23)]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
+- Related exam questions: [[2019 Q85]], [[2023 Q26]], [[2023 Q71]], [[2023 Q87]], [[2015 Q85]], [[2014 Q88]]
 - Related JPMs: [[2015 JPM RO-A1-2]]
-- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related exam: [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

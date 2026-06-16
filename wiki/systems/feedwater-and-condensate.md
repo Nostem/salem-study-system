@@ -223,10 +223,15 @@ At 85% power with all Condensate/HDT pumps and the polisher in service, an 11 Co
 At ~8% power during a startup, the operating SGFP is placed on Main Steam supply prior to exceeding <span class="hi-exam">5% power (IOP-3 step 5.4.10)</span>. A spurious MSLI closes the MSIVs AND the <span class="hi-exam">MS18 bypass valves</span>, so the SGFP loses steam and coasts down (it does NOT trip). The MDAFW and TDAFW pumps then start when SG level drops to the <span class="val-trip">lo-lo level setpoint</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q92</div>
+If the <span class="hi-exam">Feedwater Interlock (FWI) fails to actuate</span> after a Rx trip from 100% power, the BF19s and BF40s are NOT shut, so the <span class="hi-exam">still-running SGFPs continue to supply Main Feed</span> to the low-NR-level SGs — causing <span class="hi-exam">excessive cooldown / overfeed of the SGs</span>. (Recall the FWI is a 2/2 interlock: auctioneered hi Tave &lt;554&deg;F AND Rx Trip Breakers open / P-4.) The corrective action is to <span class="hi-exam">trip both SGFPs early in [[EOP-TRIP-2 — Reactor Trip Response]] after verifying adequate [[AFW]] flow</span>. <span class="hi-trap">SI is NOT warranted — the RCS pressure transient is steady and slow; cavitation of the Condensate Pumps is only a secondary plausibility, not the primary consequence.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Main Steam]], [[Steam Generator & Blowdown]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
+- Related systems: [[Main Steam]], [[Steam Generator & Blowdown]], [[AFW]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[AB.CN-0001 — Condensate System Abnormality]]
 - Related exam questions: [[2014 Q2]], [[2014 Q54]], [[2014 Q55]], [[2015 Q12]], [[2016 Q51]], [[2016 Q52]], [[2016 Q78]], [[2016 Q89]], [[2016 Q90]], [[2018 Q17]], [[2018 Q37]], [[2019 Q17]], [[2019 Q18]], [[2020 Q44]], [[2020 Q45]], [[2020 Q55]], [[2020 Q60]], [[2020 Q93]], [[2020 Q95]], [[2023 Q8]], [[2023 Q42]], [[2023 Q60]], [[2023 Q64]], [[2023 Q74]], [[2022 Q13]], [[2022 Q44]], [[2022 Q45]], [[2022 Q58]], [[2022 Q65]], [[2015 Q27]], [[2015 Q50]], [[2015 Q52]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2022 JPM Sim-e]], [[2016 JPM Sim-a]], [[2016 JPM Sim-h]], [[2016 JPM IP-j]]

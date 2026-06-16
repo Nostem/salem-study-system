@@ -56,12 +56,17 @@ With the Rx exactly critical during low-power physics testing, a dropped Shutdow
 Step 2.1: <span class="hi-exam">IF more than one rod is verified tripped, THEN manually TRIP the reactor AND GO TO 2-EOP-TRIP-1</span>. Step 3.1 (critical): <span class="hi-exam">PLACE Rod Bank Selector Switch in MAN</span> — Note warns auto outward rod movement occurs at T+1:30 if rods are not placed in manual. The procedure then maintains Tave within 1.5° of program (step 3.3), checks for subcriticality (3.4) and power &gt;50% RTP (3.10), rules out an IRPI malfunction (3.12/3.13), and initiates a power reduction to &lt;75% RTP (3.15) with Reactor Engineering recovery (3.16). In the alternate-path JPM a second rod drops after step 3.10, requiring the step 2.1 manual reactor trip.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q77</div>
+AB.ROD-0002 <span class="hi-exam">step 3.23</span> asks whether the affected (dropped) rod is fully inserted. <span class="hi-exam">On Unit 2 a rod is considered fully inserted if it indicates ≤10 steps withdrawn</span> (per Nuclear Fuels Engineering Letter NFE 96-098, April 13 1989, cited in OP-AA-101-111-1003). If neither rod position indication (IRPI or Plant Computer) is ≤10 steps (e.g., both read 18 steps), step 3.23 directs <span class="hi-exam">GO TO AB.ROD-0001</span> — because the Group Step Counter manipulations for maintaining proper rod group stepping logic differ significantly for a partially inserted vs a fully inserted rod. <span class="hi">The OHA E-48 ROD BOTTOM alarm comes in at 20 steps withdrawn with Group Demand >35 steps.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]], [[Control Rod Drive]]
-- Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]]
+- Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]], [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related tech specs: [[TS 3/4.2 — Power Distribution]]
-- Related exam questions: [[2018 Q30]], [[2020 Q19]], [[2022 Q19]], [[2015 Q76]]
+- Related exam questions: [[2018 Q30]], [[2020 Q19]], [[2022 Q19]], [[2015 Q76]], [[2014 Q77]]
 - Related JPMs: [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2015 JPM Sim-a]]
 - Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

@@ -72,11 +72,16 @@ AB.SW-0001 Step 3.11: <span class="hi-exam">if a single component can be isolate
 With 22SW20 (Nuclear Header Supply) stuck shut isolating the 21 nuc header, <span class="hi-exam">21 and 22 CFCUs lose all cooling water (2 CFCUs)</span>; 23 CFCU is fed from BOTH nuc headers (check-valve arrangement) and 24/25 are on the 22 nuc header, so they are unaffected. Restore SW by <span class="hi-exam">opening 21SW23 / 22SW23 (Nuclear Header X-over valves)</span>. <span class="hi-trap">The SW17 SW-Bay/Discharge Header x-connects are normally open and cannot restore flow past the shut 22SW20.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q83 (DELETED)</div>
+(Question deleted from the graded exam.) Diagnosing a SW leak from OHA B-13/B-14 (21/22 SW HDR PRESS LO) with both nuc headers at 98 psig and no other alarms: a <span class="hi-exam">2B EDG Lube Oil Cooler leak</span> is isolated via the EDG's <span class="hi-exam">2 supply header isolation valves (one from each header) and 2 return header isolation valves</span> to the 11/12 discharge path, IAW AB.SW-0001. <span class="hi-trap">TGA SW header pressure is maintained at <span class="val-normal">80 psig</span> by 2ST1 with a low-pressure alarm at <span class="val-alarm">70 psig</span>; a Service Water Bay leak or a leak large enough to drop both nuc headers would also bring in the TGA lo-pressure alarm (and a bay leak the bay sump hi-level alarm) — neither present here. A 21 CCW HX leak can be isolated with manual valves without isolating the whole nuc header.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Service Water]], [[CFCUs]]
-- Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]], [[AB.SW-0005 — Loss of All Service Water]]
-- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]], [[2015 Q80]], [[2014 Q47]]
+- Related systems: [[Service Water]], [[CFCUs]], [[EDGs]], [[CCW]]
+- Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]], [[AB.SW-0005 — Loss of All Service Water]], [[AB.SW-0003 — Service Water Bay Leak]]
+- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]], [[2015 Q80]], [[2014 Q47]], [[2014 Q83]]
 - Related JPMs: [[2016 JPM Sim-e]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

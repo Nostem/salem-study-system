@@ -109,11 +109,16 @@ The Unit 2 Cycle 21 SFP boron concentration limit of <span class="hi-exam">≥ <
 Per S2.OP-SO.SF-0009 (Refueling Operations) P&amp;L 3.13, transfer of fuel into the SFP must be <span class="hi-exam">suspended when either the 21 or 22 SFP Cooling pump becomes INOPERABLE</span> — even with the other pump in service. <span class="hi-exam">Loss of all oil in the bearing oil reservoir renders an SFP cooling pump INOPERABLE.</span> <span class="hi-trap">Distractors that do NOT require suspension: an SRO leaving SFP manipulations under a qualified RE (RE OR SRO is acceptable); one FHB supply fan + 2 FHB exhaust fans running (that is the complement required for an OPERABLE FHB ventilation system); 2R5 failing low (only ONE of the two FHB area rad monitors must be OPERABLE per TSAS 3.3.1.1 Table 3.3-6).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q90</div>
+<span class="hi-exam">OHA C-27 SFP Lvl Hi annunciates at 6" above normal level</span>, which is expected to occur with a pool heatup of ~14 degrees (per the CAUTION on top of page 2 of AB.SF-0001 — pool expansion raises level). With one SFP cooling pump failed and pool temperature rising, this High Level OHA is the expected plant response. The <span class="hi-exam">SFP demineralizer does NOT auto-bypass</span> — it is <span class="hi-exam">manually removed from service IAW AB.SF CAS item 2.0 when actual or projected SFP temp is 130&deg;F</span>. <span class="hi-trap">The 136&deg;F auto-bypass belongs to the CVCS demin, NOT the SFP demin.</span> Per S2.OP-IO.ZZ-0010 (IOP-10) P&amp;L 3.4, <span class="hi-exam">transfer of spent fuel into the SFP is suspended until BOTH SFP cooling pumps are OPERABLE</span> — so the failed pump must be restored before remaining fuel bundles can be transferred.
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]], [[Radiation Monitoring]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-SO.SF-0009 — Refueling Operations]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]], [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.CC-0001 — Loss of Component Cooling Water]]
-- Related exam questions: [[2014 Q9]], [[2014 Q13]], [[2014 Q50]], [[2014 Q68]], [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]]
+- Related exam questions: [[2014 Q9]], [[2014 Q13]], [[2014 Q50]], [[2014 Q68]], [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]], [[2014 Q80]], [[2014 Q90]]
 - Related JPMs: [[2016 JPM SRO-A1-2]]
 - Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]]

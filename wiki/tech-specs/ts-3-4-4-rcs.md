@@ -345,6 +345,11 @@ CVCS leak vs. RCS operational leakage: a leak from 2CV6 (Letdown Relief Valve) i
 S2.OP-SO.RC-0004 §5.3 Containment Sump leak-rate calculation following an unexpected OHA C-2 CNTMT SUMP PMP START. Quantified leak rate ~<span class="hi-exam">0.9 gpm</span> (320 minutes between sump-pump cycles per Attachment 3). The two action thresholds bracket the unidentified leakage limit: <span class="hi-exam">&gt; 0.85 gpm</span> initiates Section 5.6 trending only; <span class="hi-exam">&gt; 1.0 gpm</span> initiates S2.OP-ST.RC-0008 RCS Water Inventory Balance and refers to TS 3.4.7.2. At 0.9 gpm the unidentified-leakage LCO 3.4.7.2.b (≤1 gpm) is still MET, so no TS action time starts.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q86</div>
+The RCS Water Inventory Balance (Surveillance Requirement 4.4.7.2.1.d, performed via S2.OP-ST.RC-0008) is required in Modes 1–4, but <span class="hi-exam">SR 4.4.7.2.1.d specifically states the provisions of Tech Spec 4.0.4 are NOT applicable for entry into Mode 4</span>. Therefore an overdue balance does not bar entry into Mode 4 — per S2.OP-IO.ZZ-0002 P&amp;L 3.8 the surveillance need not be completed until <span class="hi-exam">12 hours after steady-state operation is established</span>. <span class="hi-trap">TS 4.0.3 (for missed/overdue surveillances) does not apply because 4.0.4 NA permits the mode change without performing the balance first.</span>
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.7 RCS Leakage</summary>
 <div class="callout callout-bases">
@@ -531,7 +536,8 @@ LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE 
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]], [[2015 Q87]]
+- Related procedures: [[S2.OP-ST.RC-0008 — RCS Water Inventory Balance]], [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]], [[2015 Q87]], [[2014 Q86]]
 - Related JPMs: [[2016 JPM RO-A1-1]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

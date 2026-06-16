@@ -82,11 +82,16 @@ Use of Procedures permits entering EOP-TRIP-1 or EOP-LOPA-1 on a total loss of a
 Listed among the technical references governing crew conduct throughout the scenario (proper use of Alarm Response Procedures, abnormal procedures, and EOPs during the PZR pressure channel failure, MPT fire reactor trip, Inadvertent SI termination, and SGTR response).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q77</div>
+OP-AA-101-111-1003 is cited for the criterion that <span class="hi-exam">on Unit 2 a control rod is considered fully inserted if it indicates ≤10 steps withdrawn</span>, per the evaluation results published in Nuclear Fuels Engineering Letter NFE 96-098, April 13 1989. This criterion governs whether a dropped rod is handled in AB.ROD-0002 (fully inserted) or transitioned to AB.ROD-0001 (not fully inserted).
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
-- Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]]
-- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]], [[2015 Q74]], [[2014 Q74]]
+- Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
+- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]], [[2015 Q74]], [[2014 Q74]], [[2014 Q77]]
 - Related JPMs: [[2016 JPM Sim-b]]
 - Related scenarios: [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

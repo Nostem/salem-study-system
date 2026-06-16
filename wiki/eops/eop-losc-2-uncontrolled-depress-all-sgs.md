@@ -55,10 +55,15 @@ Entered from EOP-LOSC-1 with <span class="hi-exam">all SGs faulted</span> and MS
 Completing the safeguards reset actions in LOSC-2 resets the SEC. <span class="hi-trap">After SEC reset, Containment Spray pumps will NOT auto-start on a subsequent Hi-Hi containment pressure (&gt;15 psig) until the SEC is actuated again</span> — neither CS pump starts and the CS valves do not reposition. See [[Containment Spray]], [[SECs]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q85</div>
+In LOSC-2 (Multiple Steam Generator Depressurization), <span class="hi-exam">Reset SGBD Sample Isolation (step 10) to allow sampling of the SGs and transition to the SGTR sorter if required</span> — if a SGTR were identified here, the CRS would transition to SGTR-1 rather than stay in LOSC-2. Discriminators tested: <span class="hi-exam">LOSC-2 step 5 maintains AFW flow no less than 1.9E4 lbm/hr to each SG</span> (per the answer key wording); the CAS that allows isolating AFW to any SG with NR level >9% applies <span class="hi-trap">only when the cooldown rate is &lt;100°F/hr</span> (not the 105°F/hr in the stem). RCPs are tripped &lt;1350 psi ONLY when a cooldown is NOT in progress.
+</div>
+
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[500KV]]
-- Related EOPs: [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]]
-- Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]], [[2015 Q45]]
+- Related systems: [[Pressurizer & PRT]], [[500KV]], [[Steam Generator & Blowdown]], [[AFW]]
+- Related EOPs: [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
+- Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]], [[2015 Q45]], [[2014 Q85]]
 - Related scenarios: [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]]
