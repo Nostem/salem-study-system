@@ -112,11 +112,16 @@ With Steam Dumps in AUTO MS Pressure control (startup, ~18% power, generator rol
 If the Steam Dumps fail to ARM on a turbine-trip-induced reactor trip, core heat drops rapidly and the <span class="hi-exam">SG Atmospheric Relief Valves (MS10s) open to establish RCS temperature ~551-552°F</span>. RCS pressure does NOT rise enough to open the PORVs or PZR Safeties; <span class="hi-exam">PZR spray opens rapidly and fully to hold RCS pressure below ~2335 psig</span>. See [[Main Steam]], [[Pressurizer & PRT]].
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #2</div>
+SGTR cooldown is initiated using the <span class="hi-exam">Steam Dumps in MS Pressure Control (Manual) at 25% demand</span>, bypassing Tavg on steam dump control when Tavg reaches 543°F. When the <span class="hi-exam">loss of offsite power</span> occurs (condenser/steam dumps unavailable), the crew re-establishes the cooldown on the intact-SG MS10 atmospheric reliefs instead.
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[RCS]], [[115V AC]], [[Feed & Condensate]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exam questions: [[2016 Q50]], [[2016 Q52]], [[2018 Q35]], [[2018 Q70]], [[2019 Q34]], [[2019 Q40]], [[2020 Q61]], [[2023 Q18]], [[2022 Q43]], [[2022 Q63]], [[2014 Q51]], [[2014 Q52]], [[2014 Q91]], [[2012 Q50]], [[2012 Q51]], [[2012 Q54]], [[2012 Q91]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2015 JPM Sim-f]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 3]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 3]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2012 Scenario 2]], [[2012 Scenario 3]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

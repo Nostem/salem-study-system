@@ -58,11 +58,16 @@ A steam dump failure drives 21–23 TB20 steam dumps fully open with no ability 
 With a single steam dump (23TB40) failing full open in Mode 3, the crew enters AB.STM-0001 (Rx trip breakers shut). <span class="hi-exam">Steam dump valves are arranged by condenser, not by steamline</span> — 23TB40 discharges into the 23 condenser, so "23 Main Steamline flow/pressure" responses are wrong. The AB.STM action for a malfunctioning Steam Dump Valve is to <span class="hi-exam">depress the Train A and Train B Off &amp; Reset Bypass Tavg pushbuttons on 2CC3 (turn off both Trains of Steam Dumps)</span>. <span class="hi-trap">A Main Steamline Isolation is initiated only if a reactor trip is required due to power rising uncontrollably.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+Entered when the <span class="hi-exam">21 MS10 atmospheric steam dump fails ~33% open in auto</span>. The PO <span class="hi-exam">places 21 MS10 in manual and shuts it</span> (or raises the steam pressure setpoint so the valve responds and shuts).
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Steam Dumps]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]], [[S2.OP-IO.ZZ-0003 — Hot Standby to Minimum Load]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related exam questions: [[2016 Q74]], [[2020 Q43]], [[2015 Q51]], [[2014 Q76]], [[2012 Q91]]
-- Related scenarios: [[2016 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related scenarios: [[2012 Scenario 1]], [[2016 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Operating Exam]]

@@ -57,5 +57,5 @@ When a 500 KV bus section loss trips multiple circulators (13 KV ring bus south 
 - Related EOPs: [[EOP-TRIP-1]]
 - Related procedures: [[AB.LOOP-0003 — Partial Loss of Offsite Power]]
 - Related exam questions: [[2019 Q37]], [[2023 Q93]], [[2015 Q93]], [[2014 Q81]]
-- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related scenarios: [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2012 Scenario 3]]
+- Related exam: [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Operating Exam]]

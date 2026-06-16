@@ -36,10 +36,16 @@ For a single stuck rod after a Rx trip during a SG tube-leak shutdown, the rapid
 If 2CV175 (Rapid Borate Stop Valve) will not open, rapid boration can still be established via the alternate path of <span class="hi-exam">opening 2CV174 (Blender Bypass) and 2CV172 (Boric Acid Flow to Blender)</span> — the flowpath from the BAT pumps through 2CV172 and 2CV174. <span class="hi-trap">Opening only the 2SJ1/2SJ2 RWST-to-charging stop valves is insufficient unless the 2CV40/2CV41 VCT outlet valves are also shut (otherwise RWST head is too low against ~20-30 psig VCT pressure to be drawn into charging suction).</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+Emergency boration is initiated during the Stator Water main turbine runback if OHA E-16 ROD INSERT LMT LO-LO annunciates: <span class="hi-exam">start a BAT pump in FAST, charging &gt; 75 gpm, BA flow &gt; 36 gpm</span>. Boration continues until <span class="hi-exam">rods are at least 2 steps above the RIL</span>, then it is secured. Entered from [[AB.LOAD-0001 — Rapid Load Reduction]].
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exam questions: [[2014 Q7]], [[2015 Q11]], [[2018 Q91]], [[2020 Q21]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related scenarios: [[2012 Scenario 1]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -138,6 +138,11 @@ Over-cooling of the RCS on an uncomplicated manual Rx trip from 100% power is pr
 After stopping the SGFPs in TRIP-2 step 3, <span class="hi-exam">23 TDAFW pump speed is lowered to minimum (or 22E4 lbm/hr)</span> — but <span class="hi-exam">only if both AFW pumps are running</span>. The 21 MDAFW pump feeds 23 and 24 SGs only; the 23 TDAFW pump feeds all 4 SGs. <span class="hi-exam">If 21 MDAFW fails to start, lowering 23 AFW speed to minimum would leave no flow to 23 and 24 SGs, so operators throttle the 21-24AF11 S/G Level Control Valves to balance flow and maintain levels/pressures.</span> No overfeed-driven Steamline D/P SI occurs because operators are directed to lower/balance AFW flow.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #3</div>
+After a manual reactor trip with no SI required, the CRS transitions TRIP-1 → TRIP-2. PO reports <span class="hi-exam">no AFW flow</span>: 22 AFW pump tripped, 23 AFW pump did not auto-start, 21 AFW pump running with no flow but adequate discharge pressure (failed pressure-override circuit). The crew <span class="hi-exam">starts 23 AFW pump and defeats the 21 AFW pump pressure override to establish ≥22E4 lbm/hr (CT#1)</span>. When the last AFW pump (23) then fails on a speed-control problem and total AFW flow falls &lt;22E4 lbm/hr with all SG NR levels &lt;9%, the TRIP-2 entry conditions for FRHS-1 (Heat Sink RED path) are met and the CRS transitions to FRHS-1.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]], [[Excore NIs]], [[Steam Generator & Blowdown]], [[Radiation Monitoring]], [[Feed & Condensate]], [[AFW]]
@@ -145,5 +150,5 @@ After stopping the SGFPs in TRIP-2 step 3, <span class="hi-exam">23 TDAFW pump s
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[AB.RAD-0001 — Radiation Monitor Abnormality]]
 - Related exam questions: [[2015 Q10]], [[2015 Q11]], [[2016 Q8]], [[2016 Q52]], [[2016 Q76]], [[2016 Q78]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]], [[2015 Q85]], [[2014 Q92]], [[2012 Q2]], [[2012 Q9]], [[2012 Q43]], [[2012 Q54]], [[2012 Q56]], [[2012 Q82]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]], [[2015 JPM Sim-f]]
-- Related scenarios: [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related scenarios: [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2012 Scenario 3]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

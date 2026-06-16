@@ -187,6 +187,16 @@ If the Main Steam Dumps fail to ARM on a turbine-trip-induced reactor trip, core
 A Main Steam Line Isolation (MSLI) is performed by depressing all 4 MSLI PBs on either Safeguards bezel. <span class="hi-trap">Outside the EOP network, initiating a MSLI to trip the turbine BEFORE tripping the reactor is incorrect — a MSLI renders the Main Steam Dumps inoperable and prematurely isolates the SGFPs, and with Rx power &gt;P-10 (10%) and steam dumps unavailable, the CAS then requires a reactor trip. In TRIP-1 the steps to trip the Rx precede tripping the Turbine, and a MSLI is only used as the last turbine-trip method (after the trip handle and Turbine Trip bezel fail).</span> In this JPM, initiating a MSLI before the reactor trip is failure criteria due to the possible challenge to SG safeties.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+The <span class="hi-exam">21 MS10 atmospheric steam dump fails ~33% open in auto</span>; the PO places 21 MS10 in manual and shuts it (or raises the steam pressure setpoint so the valve responds), entering [[AB.STM-0001 — Excessive Steam Flow]]. Later, during the LBLOCA response, <span class="hi-exam">MSLI is initiated manually</span> in [[EOP-TRIP-1 — Reactor Trip or Safety Injection]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #2</div>
+SGTR isolation: the <span class="hi-exam">23MS10 setpoint is raised to 1045 psig</span> and 23MS167/23MS7/23MS18 are shut to isolate the ruptured 23 SG. After the loss of offsite power the RCS cooldown is re-established using the intact-SG atmospheric reliefs — the <span class="hi-exam">21/22/24 MS10s fully open</span> (steam dumps are unavailable with no condenser/offsite power).
+</div>
+
 ## Connections
 
 - Related systems: [[Steam Dumps]], [[Feed & Condensate]], [[Steam Generator & Blowdown]]
@@ -194,5 +204,5 @@ A Main Steam Line Isolation (MSLI) is performed by depressing all 4 MSLI PBs on 
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[AB.STM-0001 — Excessive Steam Flow]], [[S2.OP-SO.MS-0001 — Main Steam Warmup]]
 - Related exam questions: [[2015 Q12]], [[2015 Q25]], [[2015 Q26]], [[2016 Q16]], [[2016 Q24]], [[2016 Q49]], [[2016 Q50]], [[2016 Q83]], [[2016 Q85]], [[2016 Q90]], [[2018 Q15]], [[2018 Q16]], [[2019 Q42]], [[2019 Q48]], [[2020 Q43]], [[2022 Q12]], [[2022 Q77]], [[2015 Q27]], [[2015 Q51]], [[2014 Q15]], [[2014 Q22]], [[2014 Q51]], [[2014 Q52]], [[2014 Q55]], [[2014 Q65]], [[2014 Q91]], [[2012 Q16]], [[2012 Q19]], [[2012 Q25]], [[2012 Q42]], [[2012 Q49]], [[2012 Q50]], [[2012 Q51]], [[2012 Q84]], [[2012 Q91]]
 - Related JPMs: [[2023 JPM Sim-e]], [[2020 JPM Sim-g]], [[2015 JPM Sim-h]], [[2012 JPM Sim-e]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
+- Related scenarios: [[2012 Scenario 1]], [[2012 Scenario 2]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]], [[2012 Scenario 3]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]
