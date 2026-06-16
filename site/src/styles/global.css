@@ -831,6 +831,37 @@ html[data-theme='light'] body {
   color: var(--button-primary-hover-fg) !important;
 }
 
+/* Light-theme normalization for wiki-exam-question inline-style cards.
+   These cards use raw inline styles (not Tailwind classes) so we target
+   the specific HTML patterns emitted by the exam ingestion pipeline. */
+html[data-theme='light'] .wiki-question-card { background: var(--color-bg-card) !important; border-color: var(--color-border) !important; }
+html[data-theme='light'] .wiki-question-card__title { color: var(--color-accent-blue) !important; }
+html[data-theme='light'] .wiki-question-card__badge { background: var(--color-bg-surface) !important; color: var(--color-text-muted) !important; }
+html[data-theme='light'] .wiki-question-card__stem { color: var(--color-text-body) !important; background: var(--color-bg-surface) !important; }
+html[data-theme='light'] .wiki-question-card__choice { background: var(--color-bg-surface) !important; border-left-color: var(--color-border) !important; color: var(--color-text-body) !important; }
+html[data-theme='light'] .wiki-question-card__answer-box { background: var(--color-bg-surface) !important; border-color: var(--color-border) !important; }
+html[data-theme='light'] .wiki-question-card__correct { color: var(--color-accent-green) !important; }
+html[data-theme='light'] .wiki-question-card__wrong { color: var(--color-mastery-weak) !important; }
+html[data-theme='light'] .wiki-question-card__summary { color: var(--color-text-muted) !important; }
+html[data-theme='light'] .wiki-question-card__summary strong { color: var(--color-text-body) !important; }
+html[data-theme='light'] .wiki-question-card__toggle { color: var(--color-accent-blue) !important; }
+html[data-theme='light'] .wiki-question-card__toggle:hover { color: var(--button-primary-hover-bg) !important; }
+
+/* Fallback: target the actual inline style patterns in wiki exam question cards */
+html[data-theme='light'] [style*="background:#111827"][style*="border:1px solid #1a2035"] { background: var(--color-bg-card) !important; border-color: var(--color-border) !important; }
+html[data-theme='light'] [style*="background:#0d1220"] { background: var(--color-bg-surface) !important; }
+html[data-theme='light'] [style*="background:#0a0e17"] { background: var(--color-bg-surface) !important; }
+html[data-theme='light'] [style*="background:#052e16"] { background: color-mix(in srgb, var(--color-accent-green) 10%, var(--color-bg-surface)) !important; }
+html[data-theme='light'] [style*="color:#60a5fa"] { color: var(--color-accent-blue) !important; }
+html[data-theme='light'] [style*="color:#22c55e"] { color: var(--color-accent-green) !important; }
+html[data-theme='light'] [style*="color:#f87171"] { color: var(--color-mastery-weak) !important; }
+html[data-theme='light'] [style*="color:#c8cdd5"] { color: var(--color-text-body) !important; }
+html[data-theme='light'] [style*="color:#9ca3af"] { color: var(--color-text-muted) !important; }
+html[data-theme='light'] [style*="color:#6b7280"] { color: var(--color-text-muted) !important; }
+html[data-theme='light'] [style*="border-left:3px solid #1a2035"] { border-left-color: var(--color-border) !important; }
+html[data-theme='light'] [style*="border-left:3px solid #22c55e"] { border-left-color: var(--color-accent-green) !important; }
+html[data-theme='light'] [style*="border-left:3px solid #f87171"] { border-left-color: var(--color-mastery-weak) !important; }
+
 /* Light-theme normalization for legacy arbitrary Tailwind colors still used on quiz/history/graph surfaces. */
 html[data-theme='light'] .bg-\[\#0d1220\],
 html[data-theme='light'] .bg-\[\#0d1525\] { background-color: var(--color-bg-surface) !important; }
