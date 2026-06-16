@@ -218,11 +218,21 @@ After a LOOP + manual SI on Unit 2 with the 2B EDG output breaker failing to clo
 A #2 SW Bay leak with 24 SW pump already C/T leaves <span class="hi-exam">no operable SW loops → TS 3.0.3</span>. After a later LOOP, with the running EDGs and 2C SEC failed to initiate, the crew must manually start <span class="hi-exam">at least one SW pump (on the 2C bus) — CT#1 — so the running EDGs have SW cooling</span>; EDGs running without SW cooling can overheat and fail. Bay isolation: split the bays via 21SW23/22SW23 and 21SW17/22SW17, isolate 2 Bay with 21SW22 and 21SW20. See [[2014 Scenario 3]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q42</div>
+<span class="hi-exam">21SW122 (CC HX SW Inlet Valve) is a normally open valve that receives a CLOSE signal only on a MODE III SEC initiation (SI plus Blackout)</span> — its status is displayed on 2RP4. In a MODE 2 LOCA with no SEC initiation, 21SW122 has no close demand, so OPEN is its expected position (NOT a failed-to-reposition condition). See [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q62</div>
+For a SW leak in the 2C EDG room just upstream of 23SW39 (2C DIESEL CLG SW VLV): the <span class="hi-exam">standby SW pump auto-starts at 95.5 psig</span>, and per AB.SW-0001 the crew <span class="hi-exam">locks out 2C EDG (declare INOPERABLE) and isolates the leak by shutting BOTH 21SW37 AND 22SW37, the 2C Diesel Clg SW inlet valves</span> (isolating both header supplies to the 2C diesel cooler). <span class="hi-trap">The leak cannot be isolated using 21SW21/22SW21 per Att 4 Steps 4.0 B and C — those valves would render ALL EDGs inoperable. 99.5 psig is the SW header low alarm setpoint (OHA B-13/B-14), not the standby-pump auto-start.</span>
+</div>
+
 ## Connections
 
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[AB.SW-0005 — Loss of All Service Water]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S1.OP-SO.SW-0001 — Service Water Pump Operation]], [[AB.SW-0002 — Loss of Service Water-Turbine Header]]
-- Related exam questions: [[2015 Q16]], [[2016 Q42]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]], [[2015 Q61]], [[2015 Q69]], [[2015 Q71]], [[2015 Q78]], [[2015 Q80]], [[2015 Q90]], [[2014 Q16]], [[2014 Q46]], [[2014 Q47]], [[2014 Q53]], [[2014 Q63]], [[2014 Q83]], [[2012 Q26]]
+- Related exam questions: [[2015 Q16]], [[2016 Q42]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]], [[2015 Q61]], [[2015 Q69]], [[2015 Q71]], [[2015 Q78]], [[2015 Q80]], [[2015 Q90]], [[2014 Q16]], [[2014 Q46]], [[2014 Q47]], [[2014 Q53]], [[2014 Q63]], [[2014 Q83]], [[2012 Q26]], [[2012 Q42]], [[2012 Q62]]
 - Related JPMs: [[2016 JPM SRO-A1-1]], [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-e]], [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]], [[2015 JPM RO-A1-1]], [[2014 JPM SRO-A1-1]], [[2014 JPM Sim-f]]
 - Related scenarios: [[2018 Scenario 1]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]], [[2014 Scenario 3]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

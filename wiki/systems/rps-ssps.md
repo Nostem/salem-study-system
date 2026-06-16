@@ -394,12 +394,22 @@ SSPS safeguards reset logic (drawing 221057, grid F-2 AND box + downstream LATCH
 The RCS Low Flow reactor trip is <span class="hi-exam">2/4 coincidence between P-10 (10% power) and P-8 (36% power)</span> — a single loop low flow does NOT trip the reactor in that power band. There are <span class="hi-exam">3 low-pressure flow taps and 1 common high-pressure flow tap</span> per loop. See [[RCPs]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q41</div>
+<span class="hi-exam">Containment Pressure Channel I only feeds the Containment Hi-Hi (Spray actuation) bistables — it does NOT feed the Containment Hi (SI) circuits.</span> Containment Spray bistables are energized-to-actuate; when a channel is removed from service (tripped per S2.OP-SO.RPS-0005), its Spray bistable is NOT tripped but is removed from the Spray 2/3 coincidence (preventing a single remaining channel failing high from actuating Spray). SI coincidence remains 2/3 on Channels I, II, III. With Channel I removed, a single failed-high Channel IV gives <span class="hi-exam">no actuation — only channel-related alarms</span>. See [[Containment Spray]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q42</div>
+On a LOCA driving containment pressure &gt;15 psig (Hi-Hi), <span class="hi-exam">the 24MS167 Main Steamline Isolation Valve receives a SHUT signal from the Hi-Hi containment pressure (15 psig) MSLI signal</span> — so a 24MS167 indicating OPEN means it failed to reposition. <span class="hi-trap">21SW122 (CC HX SW inlet) receives a CLOSE only on MODE III SEC initiation (SI plus Blackout) — not satisfied in MODE 2; 22CC3 (23 header X-over) has NO automatic action; 23BF22 (SG FW stop check) gets NO shut signal from the MSLI signal.</span> See [[Main Steam]], [[ESF & Design]].
+</div>
+
 ## Connections
 
 - Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]], [[RCPs]], [[ECCS]]
 - Related concepts: [[Rx Vessel & Internals]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
-- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]], [[2014 Q41]], [[2014 Q42]], [[2014 Q44]], [[2014 Q48]], [[2014 Q51]], [[2012 Q4]], [[2012 Q8]]
+- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]], [[2014 Q41]], [[2014 Q42]], [[2014 Q44]], [[2014 Q48]], [[2014 Q51]], [[2012 Q4]], [[2012 Q8]], [[2012 Q41]], [[2012 Q42]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]]
 - Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]

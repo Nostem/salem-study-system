@@ -580,3 +580,504 @@ questions:
     ka_importance: 3.0
     type: RO
     tier_group: "Tier 2/Group 1"
+  - number: 40
+    topic: "PZR level after 100%-to-20% downpower with Charging Master Flow Controller failed as-is; program level ~28%"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - pressurizer-level-and-press-control
+    procedures:
+      - ab-load-0001-rapid-load-reduction
+      - ab-rod-0003-continuous-rod-motion
+    ka: "011000K604 / K6.04"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 41
+    topic: "Containment Pressure Channel I tripped feeds only Hi-Hi Spray; Channel IV failing high gives only channel alarms"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem (Facility Exam Bank, Direct From Source)"
+    systems:
+      - rps-ssps
+      - containment-spray
+    procedures:
+      - s2-op-so-rps-0005-rps-surveillance
+    ka: "012000A301 / A3.01"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 42
+    topic: "24MS167 MSIV receives SHUT on Hi-Hi containment pressure (15 psig); indicating OPEN means failed to reposition"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - rps-ssps
+      - esf-and-design
+      - main-steam
+      - component-cooling-water
+      - service-water
+    ka: "013000A403 / A4.03"
+    ka_importance: 4.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 43
+    topic: "IRNI 2N36 over-compensated (high reading, low SUR); Source Range auto-energize at 7.0 E-11 Amps"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem (Facility Exam Bank, Significantly Modified)"
+    systems:
+      - excore-nis
+    eops:
+      - eop-trip-2-reactor-trip-response
+    ka: "015000A202 / A2.02"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 44
+    topic: "5 or more CETs >1200F = superheat = Core Cooling RED path to FRCC-1"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - incores
+      - rvlis
+    eops:
+      - eop-cfst-1-critical-safety-function-status-trees
+      - eop-frcc-1-response-to-inadequate-core-cooling
+      - eop-trip-1-reactor-trip-or-si
+    ka: "017000K503 / K5.03"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 45
+    topic: "Min complement for containment integrity = 1 CS pump + 3 CFCUs; start 22 and 24 CFCUs first"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem (Facility Exam Bank, Editorially Modified)"
+    systems:
+      - containment-fan-coil-units
+      - containment-spray
+      - emergency-core-cooling-systems
+      - secs
+    ka: "022000A102 / A1.02"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 46
+    topic: "D-43 SPRY ADD TK LVL LO expected locked-in alarm ~25 min after LOCA; alarm at 67% (~3050 gal)"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - containment-spray
+      - annunciators
+    procedures:
+      - s2-op-ar-zz-0002-overhead-annunciators-window-b
+      - s2-op-ar-zz-0003-overhead-annunciators-window-c
+      - s2-op-ar-zz-0004-alarm-response
+      - s2-op-ar-zz-0005-overhead-annunciators-window-e
+      - s2-op-tm-zz-0002-tank-capacity-data
+    ka: "026000G431 / 2.4.31"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 47
+    topic: "IRUs powered from G and E non-vital 460VAC; on LOOP neither 11 nor 12 IRU available"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - containment-systems
+      - 460-230v-ac
+    ka: "027000K201 / K2.01"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 48
+    topic: "SFP anti-siphon design: suction 4 ft below surface, return 6 ft above fuel, 1/2 inch anti-siphon hole in return line"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem (Facility Exam Bank, Concept Used)"
+    systems:
+      - spent-fuel-pool
+    ka: "033000K403 / K4.03"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 49
+    topic: "11MS167 FAST close after NORMAL close: SV-3 opens equalizing hydraulic pressure, vent valves open, MS pressure closes valve"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem (Facility Exam Bank, Direct From Source)"
+    systems:
+      - main-steam
+    ka: "039000G128 / 2.1.28"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 50
+    topic: "Lowering MS Dump pressure setpoint in AUTO opens dumps; lower Tavg raises Rx power above 18% (rods in manual)"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem (Facility Exam Bank, Direct From Source)"
+    systems:
+      - main-steam
+      - steam-dumps
+    ka: "039000K508 / K5.08"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 51
+    topic: "Steam Dumps fail to arm on trip: MS10s open ~551-552F; PZR spray holds RCS pressure below 2335 psig"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - steam-dumps
+      - reactor-coolant-system
+      - pressurizer
+      - main-steam
+    ka: "041000K302 / K3.02"
+    ka_importance: 3.8
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 52
+    topic: "Automatic actions on Main Turbine trip: 500KV output breakers open, 4KV Group buses swap, Exciter Field Breaker opens"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - turbine-generator
+      - 500kv
+      - 4kv
+    procedures:
+      - s2-op-ar-zz-0006-overhead-annunciators-window-f
+      - s1-op-ar-zz-0007-overhead-annunciators-window-g
+      - s2-op-ar-zz-0008-overhead-annunciators-window-h
+    ka: "045000A311 / A3.11"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 53
+    topic: "SG Feed Delta-P programmed value at 40% steam flow per S2.OP-SO.CN-0002 (~80 psid)"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - feedwater-and-condensate
+    procedures:
+      - s2-op-so-cn-0002-sgfp-operation
+    ka: "059000A107 / A1.07"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 54
+    topic: "Overcooling prevention on uncomplicated manual Rx trip from 100% power: Feedwater Interlock"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - feedwater-and-condensate
+      - steam-dumps
+      - main-steam
+      - excore-nis
+    eops:
+      - eop-trip-2-reactor-trip-response
+    ka: "059000K105 / K1.05"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 55
+    topic: "23 TDAFW pump utilization during SGTR per 2-EOP-SGTR-1: trip if not sole feed source, no restart until 23MS45 shut"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - auxiliary-feedwater
+      - main-steam
+      - 4kv
+    eops:
+      - eop-sgtr-1-steam-generator-tube-rupture
+    ka: "061000K103 / K1.03"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 56
+    topic: "Effect of 21 MDAFW pump failure to start: throttle AF11s in TRIP-2 to balance SG flow"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem 07-01 (Vision Q134732, Direct From Source)"
+    systems:
+      - auxiliary-feedwater
+      - steam-generators
+      - rps-ssps
+    eops:
+      - eop-trip-2-reactor-trip-response
+    ka: "061000K302 / K3.02"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 57
+    topic: "1C VIB inverter latched transfer effect: instrumentation unaffected (transfer 11.1 ms)"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Vision Q111931 (Direct From Source)"
+    systems:
+      - 115v-ac
+      - annunciators
+    procedures:
+      - s1-op-so-115-0013-1c-vib-ups-operation
+      - s2-op-ar-zz-0002-overhead-annunciators-window-b
+    ka: "062000A103 / A1.03"
+    ka_importance: 2.5
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 58
+    topic: "Component NOT powered from Unit 1 Vital 125 VDC: SCADA (powered from Circ Water 125 VDC)"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - dc-power
+      - 4kv
+      - annunciators
+    ka: "063000K201 / K2.01"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 59
+    topic: "DFOST capacity design basis: combined volume of both 30000 gal tanks supplies two EDGs for 4.5 days (LOCA+LOOP)"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - diesel-generators
+    ka: "064000K103 / K1.03"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 60
+    topic: "RHR pump room cooler leak: in-service Waste Hold Up Tank shows rising level (RHR pump room sump pumps to WHUT)"
+    answer: B
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - waste-liquid
+      - residual-heat-removal
+      - chemical-and-volume-control-system
+    ka: "068000K107 / K1.07"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 61
+    topic: "2R18 high rad (10E6 cps) during liquid release: 2WL51 should have auto-closed at 6.82E5 cps, NCO shuts remotely"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Vision Q83676 (Editorially Modified)"
+    systems:
+      - radiation-monitoring
+      - waste-liquid
+      - chemical-and-volume-control-system
+    procedures:
+      - s2-op-so-wl-0001-liquid-radwaste-release
+      - s2-ic-cc-rm-0028-2r18-liquid-waste-disposal-process-radiation
+    ka: "073000K301 / K3.01"
+    ka_importance: 3.6
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 62
+    topic: "SW leak at 2C EDG room: standby SW pump auto-starts at 95.5 psig; lock out 2C EDG, isolate via 21SW37 and 22SW37"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Vision Q77578 (Concept Used)"
+    systems:
+      - service-water
+      - diesel-generators
+      - annunciators
+    procedures:
+      - ab-sw-0001-loss-of-sw-header-pressure
+      - s2-op-ar-zz-0002-overhead-annunciators-window-b
+    ka: "076000A202 / A2.02"
+    ka_importance: 2.7
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 63
+    topic: "Control Air normal header pressure (95-105 psig ~100) and ECAC auto-start (85 psig)"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Vision Q42094 (Concept Used)"
+    systems:
+      - control-air
+    procedures:
+      - s2-op-so-ca-0001-control-air-system-operation
+      - ab-ca-0001-loss-of-control-air
+    ka: "078000A301 / A3.01"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 64
+    topic: "2RP5 Fire Protection Panel: fire alarm (smoke/heat detector) activated, reset from Relay Room"
+    answer: D
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - fire-protection
+      - annunciators
+    procedures:
+      - s2-op-ar-zz-0001-overhead-annunciators-window-a
+    ka: "086000A402 / A4.02"
+    ka_importance: 3.5
+    type: RO
+    tier_group: "Tier 2/Group 2"
+  - number: 65
+    topic: "CVI during containment vacuum relief: 2VC5, 2VC6, and Vacuum Relief Damper will shut (CVI not blocked)"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    systems:
+      - containment-systems
+      - radiation-monitoring
+    procedures:
+      - s2-op-so-cbv-0002-containment-pressure-vacuum-relief
+    ka: "103000A409 / A4.09"
+    ka_importance: 3.1
+    type: RO
+    tier_group: "Tier 2/Group 1"
+  - number: 66
+    topic: "RCP thermal barrier purpose: protect the radial bearing and seals from the heat of the RCS"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem (Editorially Modified, Vision Q43989)"
+    systems:
+      - reactor-coolant-pumps
+      - reactor-coolant-system
+    ka: "194001G128 / 2.1.28"
+    ka_importance: 4.1
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 67
+    topic: "Conditions requiring suspension of fuel movement: CAV in FIRE OUTSIDE CONTROL AREA (Recirculation Mode)"
+    answer: C
+    cognitive_level: "Comprehension/Analysis"
+    source: "Bank - Salem (Direct From Source, Vision Q110741)"
+    systems:
+      - radiation-monitoring
+    procedures:
+      - s2-op-st-can-0007-refueling-containment-closure
+      - s1-op-so-cav-0001-control-room-ventilation
+    ka: "194001G140 / 2.1.40"
+    ka_importance: 2.8
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 68
+    topic: "Significance of $ sign in surveillance procedure: Technical Specification acceptance criteria, immediate SM/CRS attention"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    procedures:
+      - ad-aa-101-1003-implementing-procedure-writers-guide
+      - op-aa-101-111-1003-use-of-procedures
+    ka: "194001G212 / 2.2.12"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 69
+    topic: "2CV35 troubleshooting first action: stop work on OOPS IAW HU-AA-101 (excess letdown does not flow through 2CV35)"
+    answer: C
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem (Direct From Source, Vision Q125707)"
+    systems:
+      - chemical-and-volume-control-system
+    procedures:
+      - hu-aa-101-human-performance-tools
+      - ab-cvc-0001-loss-of-charging
+    ka: "194001G220 / 2.2.20"
+    ka_importance: 2.6
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 70
+    topic: "Gas Decay Tank pressure lowering confirmation: 2R41D plant-vent trend on 2RP1; unapproved release may be in progress"
+    answer: A
+    cognitive_level: "Comprehension/Analysis"
+    source: "New"
+    systems:
+      - radiation-monitoring
+    procedures:
+      - s2-op-so-rm-0001-radiation-monitoring
+    ka: "194001G244 / 2.2.44"
+    ka_importance: 4.2
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 71
+    topic: "2R19A SG Blowdown Rad Monitor ALARM: ONLY affected 21GB4 shuts to minimize SGTR contamination spread to secondary"
+    answer: A
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem (Significantly Modified, Q78166)"
+    systems:
+      - radiation-monitoring
+      - steam-generators
+    procedures:
+      - s2-op-so-rm-0001-radiation-monitoring
+    ka: "194001G314 / 2.3.14"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 72
+    topic: "Area Rad Monitor checked in 2-EOP-LOCA-1 step 16 for LOCA outside containment: 2R34 Mechanical Penetration 100'"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem (Editorially Modified, Vision Q125697)"
+    systems:
+      - radiation-monitoring
+    procedures:
+      - s2-op-so-rm-0001-radiation-monitoring
+    eops:
+      - eop-loca-1-loss-of-reactor-or-secondary-coolant
+    ka: "194001G315 / 2.3.15"
+    ka_importance: 2.9
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 73
+    topic: "RCS saturation temp determination IAW 2-EOP-CFST-1 with SMM inoperable: RCS pressure (PI-403/405) with CFST Subcooling Tables"
+    answer: B
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem (Significantly Modified, Vision Q81104)"
+    systems:
+      - reactor-coolant-system
+    eops:
+      - eop-cfst-1-critical-safety-function-status-trees
+    ka: "194001G403 / 2.4.3"
+    ka_importance: 3.7
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 74
+    topic: "EOP conditional operator actions applicable at all times: Continuous Action Summary (CAS), upper-left of each flowchart sheet"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "New"
+    procedures:
+      - op-sa-108-101-2000-eop-usage
+    eops:
+      - eop-trip-1-reactor-trip-or-si
+    ka: "194001G419 / 2.4.19"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 3/Group 1"
+  - number: 75
+    topic: "EDG FIRE EMERGENCY BYPASS keylock switches directed to BYPASS in S2.OP-AB.CR-0002, Attachment 4 (removes SEC control from EDG)"
+    answer: D
+    cognitive_level: "Fundamental/Memory"
+    source: "Bank - Salem (Direct From Source)"
+    systems:
+      - diesel-generators
+    procedures:
+      - ab-cr-0002-control-room-evacuation-due-to-fire
+      - ab-cr-0001-control-room-evacuation
+      - ab-fire-0001-fire-response
+    ka: "194001G427 / 2.4.27"
+    ka_importance: 3.4
+    type: RO
+    tier_group: "Tier 3/Group 1"

@@ -62,7 +62,7 @@ Alternate-path Section 5.5 release of 21 CVCS MT via SW to CW (Rev 25; <span cla
 ## Connections
 
 - Related systems: [[Waste Liquid]], [[Radiation Monitoring]]
-- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]]
-- Related exam questions: [[2016 Q59]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q68]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.IC-CC.RM-0028 — 2R18 Liquid Waste Disposal Process Radiation Monitor]]
+- Related exam questions: [[2016 Q59]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q68]], [[2012 Q61]]
 - Related JPMs: [[2018 JPM IP-k]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

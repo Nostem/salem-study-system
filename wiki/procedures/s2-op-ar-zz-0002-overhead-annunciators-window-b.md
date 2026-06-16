@@ -48,7 +48,7 @@ OHA Window B SW alarms: <span class="hi-exam">B-13/B-14/B-15 (SW header pressure
 ## Connections
 
 - Related systems: [[DC Power]], [[EDGs]], [[Service Water]]
-- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]]
-- Related exam questions: [[2015 Q15]], [[2016 Q61]], [[2020 Q13]], [[2015 Q80]], [[2014 Q18]]
+- Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[S1.OP-SO.115-0013 — 1C Vital Instrument Bus UPS System Operation]]
+- Related exam questions: [[2015 Q15]], [[2016 Q61]], [[2020 Q13]], [[2015 Q80]], [[2014 Q18]], [[2012 Q46]], [[2012 Q57]], [[2012 Q62]]
 - Related JPMs: [[2016 JPM Sim-e]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

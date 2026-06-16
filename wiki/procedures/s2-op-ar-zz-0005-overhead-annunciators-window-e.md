@@ -54,9 +54,14 @@ OHA E-20 (PZR HTR ON LVL HI) energizes backup PZR heaters at 5% above program. W
 OHA E-41 (per S2.OP-AR.ZZ-0005 Window E-41) relates to the Letdown HX outlet high temperature. The <span class="hi-exam">2CV21 Letdown Demin Bypass Valve auto-diverts to bypass the CVCS demineralizers at 136°F</span> Letdown HX outlet temperature. See [[CVCS]], [[S2.OP-SO.CVC-0012 — Letdown HX Temperature Control]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q46</div>
+OHA <span class="hi-exam">E-5, "SR DET VOLT TRBL,"</span> is NOT expected to be in alarm 25 minutes after a trip — it indicates the Source Range instruments are energized when they should not be (with respect to turbine power above/below 15%). <span class="hi-exam">Source Range channels automatically energize ~15-18 minutes following a trip</span>, and the transition out of EOP-TRIP-1 is ~15 minutes, so the SR alarm clears. See [[Excore NIs]].
+</div>
+
 ## Connections
 
 - Related systems: [[Control Rod Drive]], [[CVCS]], [[Excore NIs]], [[Pressurizer Level & Press Control]]
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[S2.OP-SO.CVC-0001 — CVCS Normal Operations]], [[S2.OP-SO.CVC-0012 — Letdown HX Temperature Control]]
-- Related exam questions: [[2016 Q13]], [[2019 Q82]], [[2020 Q19]], [[2020 Q22]], [[2022 Q56]], [[2015 Q28]], [[2015 Q38]], [[2012 Q32]]
+- Related exam questions: [[2016 Q13]], [[2019 Q82]], [[2020 Q19]], [[2020 Q22]], [[2022 Q56]], [[2015 Q28]], [[2015 Q38]], [[2012 Q32]], [[2012 Q46]]
 - Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]

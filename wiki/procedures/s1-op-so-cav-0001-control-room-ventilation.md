@@ -27,10 +27,15 @@ Manual Initiation of ACCIDENT PRESSURIZED Mode (Section 5.7): <span class="hi-ex
 P&L 3.6.3: When CAV is aligned to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode), Core Alterations and movement of irradiated fuel is NOT permitted</span> (T/S Bases 3/4.7.6). Pressing Fire Outside Control Room on Unit 2 CAV during fuel movement requires immediate suspension of fuel movement.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q67</div>
+SO.CAV P&amp;L 3.6.3: aligning CAV to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode) prohibits Core Alterations and movement of irradiated fuel</span> (T/S Bases 3/4.7.6) — so the PO depressing Fire Outside Control Room on Unit 2 CAV is the condition (among the Q67 choices) that REQUIRES suspending fuel movement.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[CAV]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]]
 - Related tech specs: [[TS 3/4.7 — Plant Systems]]
-- Related exam questions: [[2016 Q68]], [[2023 Q62]]
-- Related exam: [[2016 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2016 Q68]], [[2023 Q62]], [[2012 Q67]]
+- Related exam: [[2016 NRC Written Exam]], [[2023 NRC Written Exam]], [[2012 NRC Written Exam]]

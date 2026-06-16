@@ -40,8 +40,23 @@ For a 5 gpm tube leak on 22 SG (with an identified small fuel pin leak), the act
 For a substantial nuclear fuel rod leak at 100% power with letdown in service, the <span class="hi-exam">2R31 (Letdown Line) monitor responds FIRST and most significantly</span> — the letdown line transports the released fission products and detects them quickly. <span class="hi-trap">Traps: the 2R53A-D N16 Main Steam Line monitors only respond to primary-to-secondary leakage; the 2R34 Charging Pumps Area monitor rises only eventually (diluted by the VCT volume); and the 2R2 Containment 130' Area monitor responds only to a RCS leak and area levels take a long time to rise.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q70</div>
+The <span class="hi-exam">R41 plant-vent monitors in the control room have a trend function</span> (display historical data on 2RP1) — usable to confirm whether a gaseous release is actually in progress (vs a GDT pressure-instrument failure). A release through the plant vent IS monitored, so it would be <span class="hi-exam">unapproved, not unmonitored</span>. <span class="hi-trap">Area Monitors have no local trend function; only R4 and R34 are trended (on the P-250 computer).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q71</div>
+On a 2R19A Hi Rad <span class="hi-exam">ALARM</span>, <span class="hi-exam">ONLY the affected 21GB4 (SG B/D Outlet Isol Valve) shuts automatically</span> to minimize the spread of contamination from an SGTR on 21 SG to secondary systems. <span class="hi-trap">On the Hi Rad WARNING, ALL GB10s, GB185s, and 2GB50 shut. Each SG has its own blowdown line — backfeeding contamination between SGs through the blowdown lines is not possible.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q72</div>
+Attachment 1 (p32-34) supports EOP-LOCA-1 step 16's check for radiation outside containment via: <span class="hi-exam">2R4, 2R41D, 2R34 (Mechanical Penetration 100'), 1R3, 1R6A, 1R20B</span>. <span class="hi-trap">2R10A (Personnel Hatch Containment 100') assists in determining a LOCA INSIDE containment, not outside.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]], [[CFCUs]], [[Radiation Monitoring]], [[CVCS]], [[Main Steam]]
-- Related exam questions: [[2023 Q13]], [[2014 Q14]], [[2014 Q20]], [[2014 Q61]], [[2012 Q16]]
+- Related exam questions: [[2023 Q13]], [[2014 Q14]], [[2014 Q20]], [[2014 Q61]], [[2012 Q16]], [[2012 Q70]], [[2012 Q71]], [[2012 Q72]]
 - Related exam: [[2023 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

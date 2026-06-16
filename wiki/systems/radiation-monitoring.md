@@ -233,10 +233,30 @@ For a 22 SG tube leak: <span class="hi-exam">2R19B (22 SG Blowdown) and 2R15 (Co
 Point-source inverse-square scaling: <span class="hi-exam">DR1 = DR2 × (d2² / d1²)</span>. A process monitor reading 2 R/hr at 10 ft from a dropped source gives <span class="hi-exam">2 R/hr × (10²/1²) = 200 R/hr</span> at 1 ft.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q67</div>
+Containment Radiation Monitors (e.g., 2R12A) are <span class="hi-exam">NOT required to be operable for Mode 6, Fuel Movement, or Core Alterations</span> per Tech Specs — a failure causing a Containment Ventilation Isolation does not by itself require suspending fuel movement. The condition that DOES require suspension: aligning Control Area Ventilation to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, which prohibits Core Alterations and movement of irradiated fuel (T/S Bases 3/4.7.6, SO.CAV P&amp;L 3.6.3).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q70</div>
+The <span class="hi-exam">R41 plant-vent monitors in the control room have a trend function</span> (display historical data on 2RP1) that can confirm whether a gaseous release is actually in progress versus a tank-pressure instrument failure. If a release IS in progress through the plant vent, it is being monitored — so the release is <span class="hi-exam">unapproved, not unmonitored</span>. <span class="hi-trap">Area Monitors do NOT have local trend functions; only R4 and R34 are trended (on the P-250 computer) in the control room.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q71</div>
+On a 2R19A (SG Blowdown Rad Monitor) Hi Rad <span class="hi-exam">ALARM</span>, <span class="hi-exam">ONLY the affected 21GB4 (SG B/D Outlet Isolation Valve) shuts automatically</span> — to minimize the spread of contamination from an SGTR on 21 SG to secondary systems. <span class="hi-trap">All four 21-24GB4s do NOT shut; ALL GB10s, GB185s, and 2GB50 shut on the Hi Rad WARNING (a different setpoint). Each SG has its own blowdown line, so cross-contamination/backfeeding through the blowdown lines is not possible.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q72</div>
+EOP-LOCA-1 step 16 checks for radiation outside containment using these monitors: <span class="hi-exam">2R4 (charging pump area), 2R41D (plant vent process), 2R34 (Mechanical Penetration 100'), 1R3 (Radio Chem lab area), 1R6A (Sampling room), and 1R20B (counting room)</span>. <span class="hi-trap">2R10A (Personnel Hatch Containment 100') is used to assist in determining a LOCA is occurring INSIDE containment — not on the step 16 outside-containment list. 2R47 and 2R52 are not checked in step 16.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]], [[Steam Generator & Blowdown]]
-- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[AB.RC-0002 — High Activity in the RCS]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[AB.SG-0001 — Steam Generator Tube Leak]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[AB.RC-0002 — High Activity in the RCS]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.IC-CC.RM-0028 — 2R18 Liquid Waste Disposal Process Radiation Monitor]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2012 NRC Written Exam]]
   - [[2015 Q10]] — R19 SGBD monitors not accurate immediately post-trip / enter AB.RAD-0001 to verify, not manual SI
@@ -278,5 +298,11 @@ Point-source inverse-square scaling: <span class="hi-exam">DR1 = DR2 × (d2² / 
   - [[2012 Q16]] — substantial fuel rod leak at 100% power: 2R31 (Letdown Line) responds FIRST and most significantly; 2R53A-D N16 MS Line only with primary-to-secondary leakage; 2R34 charging area diluted by VCT; 2R2 area monitor slow
   - [[2012 Q19]] — during LOCA-2 the 2R53A-D (N16 MS Line) monitors give no useful indication after Rx shutdown (SGBD alignment is an SGTR-1 action, not LOCA-2)
   - [[2012 Q27]] — EITHER R44A OR R44B (Containment High Range) at 1E5 R/hr shifts the SMM to ADVERSE Mode; R2 (Containment 130') and R7 (In-Core Seal Table) do NOT input to the SMM
+  - [[2012 Q61]] — 21 CVCS MT release: 2R18 ALARM setpoint 6.82E5 cps auto-shuts 2WL51 (S2.IC-CC.RM-0028); 2R18 red 104-panel alarm with 2WL51 OPEN means the auto-close failed → NCO shuts 2WL51 remotely (no local-close provision, no time delay)
+  - [[2012 Q65]] — valid RMS-initiated CVI during containment vacuum relief shuts 2VC5, 2VC6 AND the Vacuum Relief Damper; CVI can be blocked only if present before commencing the relief (not blocked in the stem conditions)
+  - [[2012 Q67]] — 2R12A Containment Rad Monitor NOT required operable for Mode 6/Fuel Movement; FIRE OUTSIDE CONTROL AREA (Recirculation Mode) is the condition requiring suspension of fuel movement
+  - [[2012 Q70]] — isolated GDT pressure lowering: R41 plant-vent monitor trend on 2RP1 confirms a release (Area Monitors have no local trend); release would be unapproved, not unmonitored
+  - [[2012 Q71]] — 2R19A Hi Rad ALARM auto-shuts ONLY the affected 21GB4; all GB10s/GB185s/2GB50 shut on WARNING; each SG has its own blowdown line (no backfeeding)
+  - [[2012 Q72]] — EOP-LOCA-1 step 16 checks 2R4/2R41D/2R34/1R3/1R6A/1R20B for a LOCA outside containment; 2R34 (Mechanical Penetration 100') is the answer, 2R10A is for LOCA inside containment
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]

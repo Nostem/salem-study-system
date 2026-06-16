@@ -36,10 +36,15 @@ With both 1R12A (Containment Noble Gas) Source Check failed AND 1R41D (Plant Ven
 When a Containment Pressure Relief is initiated (opening 1VC5/1VC6 with NORMAL containment radiation), <span class="hi-exam">1R12A (Containment Gas Effluent, sampling containment atmosphere) stays constant; 1R41B (Plant Vent Noble Gas Intermediate Range, normally no sample flow) stays constant; 1R41D (Plant Vent Noble Gas Release Rate) RISES</span> because it computes release rate from on-range monitors × plant-vent flow (and auto-terminates release on high effluent). See [[Radiation Monitoring]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q65</div>
+A valid RMS-initiated Containment Ventilation Isolation (CVI) <span class="hi-exam">closes VC1, VC4, VC5, VC6 and the Pressure Relief and Vacuum Relief Dampers</span>. During a vacuum relief in progress (2VC5, 2VC6 and Vacuum Relief Damper open), a CVI <span class="hi-exam">shuts 2VC5, 2VC6 AND the Vacuum Relief Damper</span>. <span class="hi-trap">The CVI can be blocked to permit the relief only if present before commencing the relief — it is NOT blocked in the stem conditions because it occurs after the relief was started.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Containment]]
+- Related systems: [[Containment]], [[Radiation Monitoring]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]]
-- Related exam questions: [[2019 Q96]], [[2020 Q33]], [[2015 Q60]]
+- Related exam questions: [[2019 Q96]], [[2020 Q33]], [[2015 Q60]], [[2012 Q65]]
 - Related JPMs: [[2016 JPM SRO-A3]], [[2023 JPM Sim-h]]
-- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]

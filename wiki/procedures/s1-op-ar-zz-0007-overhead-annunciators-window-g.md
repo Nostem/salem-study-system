@@ -27,7 +27,7 @@ On a 21 SGFP trip (no Rx trip, polisher in service), two Window G alarms are EXP
 
 ## Connections
 
-- Related systems: [[Steam Generator & Blowdown]], [[Feed & Condensate]], [[Annunciators]]
+- Related systems: [[Steam Generator & Blowdown]], [[Feed & Condensate]], [[Annunciators]], [[Main Turbine]]
 - Related procedures: [[AB.CN-0001 — Condensate System Abnormality]]
-- Related exam questions: [[2015 Q50]], [[2012 Q10]]
+- Related exam questions: [[2015 Q50]], [[2012 Q10]], [[2012 Q52]]
 - Related exam: [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]

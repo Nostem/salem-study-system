@@ -19,8 +19,13 @@ Alarm response procedure for Unit 2 overhead annunciator panel Window H, coverin
 OHA H-27 (GEN VREG TRBL): When the AVR swaps to Manual, the Shift Manager is required to notify <span class="hi-exam">ESOC (Electric System Operation Center)</span> within <span class="hi-exam">15 minutes</span> of receiving the alarm. Also notify the ER&T Generation Desk who will make appropriate notifications to PJM. <span class="hi-trap">The notification goes to ESOC, not Hope Creek, even though Hope Creek shares the same switchyard.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q52</div>
+Window H covers Main Generator alarms relevant on a turbine trip — including the <span class="hi-exam">Main Generator Exciter Field Breaker opening</span>, which trips automatically on a Main Turbine trip (one of the actions that DOES occur automatically with no operator action). See [[Main Turbine]].
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[Main Turbine]]
-- Related exam questions: [[2022 Q97]]
-- Related exam: [[2022 NRC Written Exam]]
+- Related exam questions: [[2022 Q97]], [[2012 Q52]]
+- Related exam: [[2022 NRC Written Exam]], [[2012 NRC Written Exam]]

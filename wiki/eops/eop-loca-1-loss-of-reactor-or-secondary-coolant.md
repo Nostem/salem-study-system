@@ -149,11 +149,16 @@ Crew transitions from EOP-TRIP-1 to EOP-LOCA-1 after a LBLOCA when transition cr
 After Rx trip stabilization in TRIP-1 for an SBLOCA with LOOP, the crew transitions to EOP-LOCA-1 to <span class="hi-exam">reset SI and re-establish control of plant equipment</span>. The scenario terminates after the transition to LOCA-1 is made, when the <span class="hi-exam">EOP-TRIP-3 (SI Termination) transition point is reached</span>. See [[2014 Scenario 3]], [[EOP-TRIP-3 — SI Termination]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q72</div>
+EOP-LOCA-1 <span class="hi-exam">step 16</span> checks for radiation outside containment (determining whether a LOCA outside containment is occurring) using these monitors: <span class="hi-exam">2R4 (charging pump area), 2R41D (plant vent process), 2R34 (Mechanical Penetration 100'), 1R3 (Radio Chem lab area), 1R6A (Sampling room), and 1R20B (counting room)</span>.
+</div>
+
 ## Connections
 
 - Related systems: [[RCS]], [[ECCS]], [[Containment]], [[RHR]], [[ESF & Design]]
 - Related EOPs: [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-TRIP-3 — SI Termination]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2014 Q4]], [[2015 Q21]], [[2015 Q24]], [[2016 Q4]], [[2016 Q44]], [[2016 Q45]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]], [[2015 Q34]], [[2015 Q82]], [[2015 Q91]], [[2014 Q84]], [[2012 Q15]], [[2012 Q21]], [[2012 Q24]]
+- Related exam questions: [[2014 Q4]], [[2015 Q21]], [[2015 Q24]], [[2016 Q4]], [[2016 Q44]], [[2016 Q45]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2018 Q77]], [[2019 Q14]], [[2019 Q51]], [[2019 Q77]], [[2019 Q91]], [[2020 Q18]], [[2020 Q25]], [[2020 Q92]], [[2023 Q37]], [[2023 Q58]], [[2023 Q76]], [[2023 Q77]], [[2015 Q34]], [[2015 Q82]], [[2015 Q91]], [[2014 Q84]], [[2012 Q15]], [[2012 Q21]], [[2012 Q24]], [[2012 Q72]]
 - Related JPMs: [[2014 JPM Sim-b]], [[2022 JPM Sim-c]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 3]]
 - Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Written Exam]]

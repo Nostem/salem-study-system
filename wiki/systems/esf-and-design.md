@@ -100,9 +100,14 @@ Accident analyses provide the bases for many Tech Spec limits including:
 ECCS is the system the ESF Actuation System (ESFAS) actuates. <span class="hi-exam">10 CFR 50.46(b)</span> (copied into Salem FSAR §15.4.1.1) gives the LOCA acceptance criteria that an ESFAS failure to initiate ECCS could violate: <span class="hi-exam">peak cladding temperature &lt; 2200°F; cladding oxidation ≤ 17% of total clad thickness; hydrogen generation ≤ 1% of the hypothetical all-Zr-reacted amount; coolable geometry; long-term cooling</span>. The tested answer is that <span class="hi-exam">cladding oxidation may exceed 17%</span> of total clad thickness. <span class="hi-trap">PCT criterion is 2200°F (not 1800°F); the H2 criterion is 1% (not 10%); vessel level lowering below the top of active fuel during LBLOCA blowdown is an analyzed condition, not a 50.46 criterion that fails.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q42</div>
+ESFAS valve auto-actions on a LOCA driving containment pressure &gt;15 psig (MODE 2 startup): <span class="hi-exam">24MS167 (Main Steamline Isolation Valve) receives a SHUT signal from the Hi-Hi containment pressure (15 psig) MSLI signal</span> — indicating OPEN means it failed to reposition. <span class="hi-trap">21SW122 (CC HX SW inlet) closes only on a MODE III SEC initiation (SI plus Blackout); 22CC3 (21-23 header X-over) has NO automatic action; 23BF22 (SG FW stop check) receives NO shut from the MSLI signal.</span> See [[Main Steam]], [[RPS/SSPS]].
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RCS]], [[RPS/SSPS]], [[Containment]], [[AFW]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA Series]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[Critical Safety Function Status Trees]]
-- Related exam questions: [[2014 Q43]]
-- Related exam: [[2014 NRC Written Exam]]
+- Related exam questions: [[2014 Q43]], [[2012 Q42]]
+- Related exam: [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

@@ -35,8 +35,13 @@ Per step 2.16.2: <span class="hi-exam">continuous action steps should NOT be per
 FRP rules of usage (yellow path): EOP-FRCE-3 (High Containment Radiation) is a <span class="hi-exam">yellow path procedure -- the CRS may elect to GO TO it, but is not required</span>. Red and orange path FRPs require mandatory entry. Yellow path FRPs are optional and performed at the CRS's discretion based on plant conditions.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q74</div>
+EOPs have a <span class="hi-exam">Continuous Action Summary (CAS) in the upper-left corner of each flowchart sheet</span>. The CAS contains the conditional operator actions — including interprocedure transitions — that are <span class="hi-exam">applicable at all times while the procedure is being implemented</span>. <span class="hi-trap">It is the "Continuous Action Summary," NOT a "Conditional Action Summary," and not an individual conditional/continuous action step.</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
-- Related exam questions: [[2022 Q73]], [[2023 Q23]], [[2023 Q77]], [[2023 Q99]]
-- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2022 Q73]], [[2023 Q23]], [[2023 Q77]], [[2023 Q99]], [[2012 Q74]]
+- Related exam: [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2012 NRC Written Exam]]

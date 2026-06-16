@@ -128,11 +128,16 @@ Main turbine reheat stop / intercept valve stroke testing per S2.OP-PT.TRB-0003 
 Following a Main Turbine trip from 90% power (which initiates a Rx trip &gt;P-9), once new steady state is reached <span class="hi-exam">Main Condenser Hotwell levels rise</span> — the BF19s and 40's shut on FW interlock so there is no "goes out" from the hotwells, but they keep receiving "goes in" from the Steam Dump system, while the SGs are fed from the AFW pumps. <span class="hi-trap">Turbine Aux Cooling (TAC) D/P and supply temperature are held at setpoint by automatic valves and do not change; TGA SW header pressure is regulated by ST1 to a downstream <span class="val-normal">80 psig</span> and stays stable.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q52</div>
+Actions that DO occur automatically on a Unit 2 Main Turbine trip from 100% power (no operator action): <span class="hi-exam">500KV output breakers 1-9 and 9-10 open</span> (every turbine trip); <span class="hi-exam">4KV Group buses swap from the Aux Power Transformer (APT) to the Station Power Transformers</span> (off-site power) when the output breakers open; and the <span class="hi-exam">Main Generator Exciter Field Breaker opens</span>. <span class="hi-trap">Running EHC pumps do NOT auto-stop; Emergency Bearing Oil pumps do NOT start (the AUX bearing oil pump starts); 4KV VITAL buses do NOT swap (already on off-site power).</span> See [[500KV]], [[4KV]].
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]]
-- Related procedures: [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]], [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]], [[AB.GRID-0001 — Grid Disturbance]]
-- Related exam questions: [[2015 Q20]], [[2016 Q3]], [[2016 Q50]], [[2016 Q67]], [[2018 Q91]], [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]], [[2015 Q93]], [[2014 Q21]], [[2014 Q53]], [[2012 Q17]]
+- Related procedures: [[S2.OP-PT.TRB-0003 — Main Turbine Valve Stroke Testing]], [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]], [[AB.GRID-0001 — Grid Disturbance]], [[S2.OP-AR.ZZ-0006 — Overhead Annunciators Window F]], [[S1.OP-AR.ZZ-0007 — Overhead Annunciators Window G]], [[S2.OP-AR.ZZ-0008 — Overhead Annunciators Window H]]
+- Related exam questions: [[2015 Q20]], [[2016 Q3]], [[2016 Q50]], [[2016 Q67]], [[2018 Q91]], [[2020 Q1]], [[2020 Q8]], [[2023 Q15]], [[2023 Q20]], [[2023 Q64]], [[2023 Q66]], [[2023 Q80]], [[2023 Q88]], [[2022 Q17]], [[2022 Q64]], [[2015 Q93]], [[2014 Q21]], [[2014 Q53]], [[2012 Q17]], [[2012 Q52]]
 - Related JPMs: [[2018 JPM Sim-e]], [[2019 JPM Sim-e]], [[2015 JPM Sim-d]]
 - Related scenarios: [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 2]]
 - Related exam: [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

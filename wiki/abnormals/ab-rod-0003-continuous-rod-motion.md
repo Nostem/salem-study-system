@@ -88,11 +88,16 @@ AB.ROD-0003 is entered for unwanted continuous rod motion. When outward rod moti
 The Main Turbine inlet steam pressure transmitter <span class="hi-exam">PT-505 fails low</span>; with rod control in auto, the rods insert at maximum rate. RO verifies no load reject in progress and <span class="hi-exam">places control rods in manual</span>, and CRS enters AB.ROD-0003. If rods are already in manual, the crew diagnoses the failure from the alarms received and the RP4 high steam flow bistable status, then addresses the failed channel per the TSAS.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q40</div>
+AB.ROD-0003 Attachments 1 and 2 give the PZR level program as a function of Tavg: <span class="hi-exam">at 20% power Tavg on program is 551.6°F → PZR program level ~28%</span>; no-load (547°F) → 22%; 80% power (569.5°F) → ~51%. Program PZR level is clipped at 59%. See [[Pressurizer Level & Press Control]].
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[Steam Dumps]], [[Control Rod Drive]], [[CVCS]]
+- Related systems: [[RPS/SSPS]], [[Steam Dumps]], [[Control Rod Drive]], [[CVCS]], [[Pressurizer Level & Press Control]]
 - Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-IO.ZZ-0004 — Power Operation]]
-- Related exam questions: [[2019 Q67]], [[2014 Q76]]
+- Related exam questions: [[2019 Q67]], [[2014 Q76]], [[2012 Q40]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]]
 - Related scenarios: [[2017 Scenario 7]], [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
 - Related exam: [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2014 NRC Operating Exam]]
