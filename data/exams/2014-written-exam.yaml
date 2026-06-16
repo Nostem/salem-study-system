@@ -1,0 +1,13 @@
+exam: "SALEM 2014 NRC Exam (13-01 ILOT)"
+ml_number: "ML15009A286"
+exam_date: "12/15/2014"
+ro_questions: 75
+sro_questions: 25
+# INGESTION STATUS: not started — backbone prepared. Source worksheets:
+# raw/exams/2014/final-written.pdf (103pp, ES-401 worksheet format, answer + justifications
+# embedded per page, same layout as 2015). Page->question: cover p1, RO 1 begins p2, SRO 25
+# ends p103 (worksheet "Question Topic RO/SRO N" header on each page; expect minor page drift
+# where a question spans 2 pages — verify the header per page). Extract with pdftotext -layout
+# per [[feedback_worksheet_extraction]]; author per-question articles via the salem-exam-ingestion
+# skill. Questions added below as they are authored (status: draft pending review).
+questions: []

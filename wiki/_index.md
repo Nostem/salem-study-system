@@ -98,6 +98,8 @@ status: draft
 - [[Technical Specifications Overview]]
 
 ## NRC Exams
+- [[2014 NRC Written Exam]]
+- [[2014 NRC Operating Exam]]
 - [[2015 NRC Written Exam]]
 - [[2015 NRC Operating Exam]]
 - [[2016 NRC Written Exam]]

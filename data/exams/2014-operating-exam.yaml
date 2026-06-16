@@ -1,0 +1,191 @@
+exam: 2014
+type: operating
+ilot_class: "13-01"
+facility: "Salem Units 1 & 2"
+written_exam_date: "12/15/2014"   # per ES-401 outline / written cover; operating-test administration date not stated in source
+source_pdf: "raw/exams/2014/final-operating.pdf"
+# NOTE: Backbone inventory prepared for ingestion. Page ranges are 1-based inclusive into final-operating.pdf
+# and were confirmed from JPM cover pages ("JPM NUMBER" / "TASK" / "TASK NUMBER") and scenario Form ES-D-1 pages.
+# Per-JPM K/A statements, applicability, time-critical/alternate-path flags, and step content are populated
+# as each article is authored. K/A values marked "TBD" were not cleanly legible in the cover OCR and must be
+# read from the cover page during ingestion (do NOT fabricate). ESG-2 is absent from the package (numbering skips it).
+jpms:
+  - id: "RO-A1-1"
+    title: "Measure Leakage to the Containment Sump"
+    type: Admin-RO
+    location: Classroom
+    pages: "1-6"
+    ka: "2.1.25"
+    task_number: "N0020080101"
+    split_pdf: "2014-jpm-ro-a1-1.pdf"
+  - id: "RO-A1-2"
+    title: "Perform a QPTR"
+    type: Admin-RO
+    location: Classroom
+    pages: "7-14"
+    ka: "2.1.43"
+    task_number: "N0150020201"
+    split_pdf: "2014-jpm-ro-a1-2.pdf"
+  - id: "RO-A2"
+    title: "Prepare a Manual Tagout"
+    type: Admin-RO
+    location: Classroom
+    pages: "15-21"
+    ka: "TBD"
+    task_number: "N3130060301"
+    split_pdf: "2014-jpm-ro-a2.pdf"
+  - id: "RO-A4"
+    title: "Perform Duties of Secondary Communicator During an Alert"
+    type: Admin-RO
+    location: Classroom   # cover EVALUATION SETTING reads "Simulator", but this is an administrative log-completion JPM; per skill Admin JPMs = Classroom (flag during ingestion)
+    pages: "22-31"
+    ka: "TBD"
+    task_number: "N1240100501"
+    split_pdf: "2014-jpm-ro-a4.pdf"
+  - id: "SRO-A1-1"
+    title: "Identify and Isolate Non-Essential Chilled Water Loads"
+    type: Admin-SRO
+    location: Classroom
+    pages: "32-39"
+    ka: "2.1.25"
+    task_number: "0980020202"
+    split_pdf: "2014-jpm-sro-a1-1.pdf"
+  - id: "SRO-A1-2"
+    title: "Review a QPTR"
+    type: Admin-SRO
+    location: Classroom
+    pages: "40-46"
+    ka: "TBD"
+    task_number: "N1200170105"
+    split_pdf: "2014-jpm-sro-a1-2.pdf"
+  - id: "SRO-A2"
+    title: "Review a Tagging List for correct blocking points"
+    type: Admin-SRO
+    location: Classroom
+    pages: "47-52"
+    ka: "2.2.13"
+    task_number: "1220050302"
+    split_pdf: "2014-jpm-sro-a2.pdf"
+  - id: "SRO-A3"
+    title: "Authorize a Radioactive Gas Release Form"
+    type: Admin-SRO
+    location: Classroom
+    pages: "53-58"
+    ka: "TBD"
+    task_number: "N1120650302"
+    split_pdf: "2014-jpm-sro-a3.pdf"
+  - id: "SRO-A4"
+    title: "Classify Emergency/Non-Emergency Events - Make a General Emergency"
+    type: Admin-SRO
+    location: Classroom
+    pages: "59-71"
+    ka: "2.4.44"
+    task_number: "N1240010502"
+    split_pdf: "2014-jpm-sro-a4.pdf"
+  - id: "Sim-a"
+    title: "Perform a Boration Flow Capability to the RCS Surveillance Test"
+    type: Simulator
+    location: Simulator
+    pages: "72-81"
+    ka: "004 A4.18"
+    task_number: "N0040430201"
+    split_pdf: "2014-jpm-sim-a.pdf"
+  - id: "Sim-b"
+    title: "Perform Actions For A Transfer To Cold Leg Recirculation"
+    type: Simulator
+    location: Simulator
+    pages: "82-90"
+    ka: "TBD"
+    task_number: "1150030501"
+    split_pdf: "2014-jpm-sim-b.pdf"
+  - id: "Sim-c"
+    title: "TCAF PZR Pressure Malfunction (Isolate leaking PZR PORV)"
+    type: Simulator
+    location: Simulator
+    pages: "91-99"
+    ka: "APE 027 AA1.01"
+    task_number: "N1140240401"
+    split_pdf: "2014-jpm-sim-c.pdf"
+  - id: "Sim-d"
+    title: "Respond to a Loss of Heat Sink (Initiate Bleed and Feed with SI)"
+    type: Simulator
+    location: Simulator
+    pages: "100-107"
+    ka: "TBD"
+    task_number: "N1150290501"
+    split_pdf: "2014-jpm-sim-d.pdf"
+  - id: "Sim-e"
+    title: "Implement actions required for a Natural Circulation Cooldown"
+    type: Simulator
+    location: Simulator
+    pages: "108-115"
+    ka: "EPE E09 EA1.1"
+    task_number: "N1150530502"
+    split_pdf: "2014-jpm-sim-e.pdf"
+  - id: "Sim-f"
+    title: "Perform a CFCU Operability and Service Water Flow Verification"
+    type: Simulator
+    location: Simulator
+    pages: "116-123"
+    ka: "022 A4.01"
+    task_number: "220130201"
+    split_pdf: "2014-jpm-sim-f.pdf"
+  - id: "Sim-g"
+    title: "Withdraw control rods to criticality, and TCAF Failure of Source Range"
+    type: Simulator
+    location: Simulator
+    pages: "124-131"
+    ka: "012 A4.03"
+    task_number: "N1120170101"
+    split_pdf: "2014-jpm-sim-g.pdf"
+  - id: "Sim-h"
+    title: "Perform Actions for CCW Restoration (23 CCW pump)"
+    type: Simulator
+    location: Simulator
+    pages: "132-139"
+    ka: "008 A4.01"
+    task_number: "N1150420501"
+    split_pdf: "2014-jpm-sim-h.pdf"
+  - id: "IP-i"
+    title: "Unload and stop an EDG"
+    type: In-Plant
+    location: In-Plant
+    pages: "140-149"
+    ka: "064 A2.03"
+    task_number: "N0645060104"
+    split_pdf: "2014-jpm-ip-i.pdf"
+  - id: "IP-j"
+    title: "Transfer Pressurizer 22 Backup Heaters to Emergency Power Supply"
+    type: In-Plant
+    location: In-Plant
+    pages: "150-155"
+    ka: "010 A4.02"
+    task_number: "1150430501"   # cover printed "115 043 05 01"
+    split_pdf: "2014-jpm-ip-j.pdf"
+    notes: "Cover labels this 'Annual IP-j'."
+  - id: "IP-k"
+    title: "Respond to High Radiation Alarm during an Authorized Release of Gas"
+    type: In-Plant
+    location: In-Plant
+    pages: "156-161"
+    ka: "TBD"
+    task_number: "N0685140104"
+    split_pdf: "2014-jpm-ip-k.pdf"
+
+scenarios:
+  - number: 1
+    id: "ESG-1"
+    pages: "162-196"
+    split_pdf: "2014-scenario-01.pdf"
+  - number: 2
+    id: "ESG-3"
+    pages: "197-226"
+    split_pdf: "2014-scenario-02.pdf"
+  - number: 3
+    id: "ESG-4"
+    pages: "227-256"
+    split_pdf: "2014-scenario-03.pdf"
+  - number: 4
+    id: "ESG-5"
+    pages: "257-288"
+    split_pdf: "2014-scenario-04.pdf"
