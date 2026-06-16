@@ -11,3 +11,11 @@ site/.astro/
 .superpowers/
 site/test-screenshots/
 site/test-results/
+
+# Generated quiz-data build artifacts (regenerate via: cd site && npm run data).
+# These are derived from the wiki question articles by scripts/build_quiz_data.py and
+# are produced on demand (CI prebuild + npm pre-hooks), never committed.
+/data/quiz-import/audit-all.json
+/data/quiz-import/supabase-staging-all.json
+/site/src/data/quiz-bank.json
+/site/src/data/quiz-bank-v2.json

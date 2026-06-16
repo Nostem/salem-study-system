@@ -1,10 +1,17 @@
 import { expect, test } from '@playwright/test';
+import { readFileSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
+
+const quizBank = JSON.parse(
+  readFileSync(resolve(dirname(fileURLToPath(import.meta.url)), '../src/data/quiz-bank.json'), 'utf8'),
+);
 
 test('quiz-v2 page lists structured questions and renders an image stem with source refs', async ({ page }) => {
   await page.goto('quiz-v2/?slug=q23-eop-flowchart-symbols-concurrent');
 
   await expect(page.getByRole('heading', { name: /Quick Quiz advanced builder/i })).toBeVisible();
-  await expect(page.getByTestId('qv2-bank-count')).toContainText('898');
+  await expect(page.getByTestId('qv2-bank-count')).toHaveText(String(quizBank.summary.question_count));
   await expect(page.getByTestId('qv2-builder')).toBeVisible();
   await expect(page.getByTestId('qv2-start-link')).toHaveAttribute('href', /\/quiz-v2\/play\/\?count=10$/);
   await expect(page.getByTestId('qv2-start-link')).toContainText(/Start practice — 10 of \d+/);

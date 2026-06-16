@@ -18,7 +18,10 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  smoke:
+  # Single job: install once, generate+validate quiz data once, test, build once,
+  # smoke-test that one build, upload. (Quiz data is a build artifact regenerated here,
+  # not committed — see scripts/build_quiz_data.py.)
+  verify-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -30,63 +33,6 @@ jobs:
           node-version: 24
           cache: npm
           cache-dependency-path: site/package-lock.json
-
-      - name: Install dependencies
-        working-directory: site
-        run: npm ci
-
-      - name: Resolve Playwright version
-        id: playwright-version
-        working-directory: site
-        run: |
-          version=$(node -p "require('@playwright/test/package.json').version")
-          echo "version=$version" >> "$GITHUB_OUTPUT"
-
-      - name: Cache Playwright browsers
-        id: playwright-cache
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ steps.playwright-version.outputs.version }}
-
-      - name: Install Playwright browsers
-        if: steps.playwright-cache.outputs.cache-hit != 'true'
-        working-directory: site
-        run: npx playwright install --with-deps chromium
-
-      - name: Install Playwright system deps (cache hit)
-        if: steps.playwright-cache.outputs.cache-hit == 'true'
-        working-directory: site
-        run: npx playwright install-deps chromium
-
-      - name: Run UI smoke checks
-        working-directory: site
-        env:
-          PUBLIC_SUPABASE_URL: https://local-test.supabase.co
-          PUBLIC_SUPABASE_ANON_KEY: playwright-anon-key
-        run: npm run test:ui:smoke
-
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Setup Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: 24
-          cache: npm
-          cache-dependency-path: site/package-lock.json
-
-      - name: Install dependencies
-        working-directory: site
-        run: npm ci
-
-      - name: Audit npm dependencies
-        working-directory: site
-        run: npm audit --omit=dev --audit-level=high
-        continue-on-error: true
 
       - name: Setup Python
         uses: actions/setup-python@v6
@@ -95,43 +41,72 @@ jobs:
           cache: pip
           cache-dependency-path: requirements-dev.txt
 
+      - name: Install Node dependencies
+        working-directory: site
+        run: npm ci
+
       - name: Install Python dependencies
         run: python3 -m pip install -r requirements-dev.txt
 
-      - name: Run Python release checks
-        run: python3 -m unittest discover -s tests -v
+      - name: Resolve Playwright version
+        id: playwright-version
+        working-directory: site
+        run: echo "version=$(node -p "require('@playwright/test/package.json').version")" >> "$GITHUB_OUTPUT"
 
-      - name: Verify generated quiz data is current
+      - name: Cache Playwright browsers
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ steps.playwright-version.outputs.version }}
+
+      - name: Install Playwright (chromium)
+        working-directory: site
         run: |
-          python3 scripts/exam_question_import.py audit --out data/quiz-import/audit-all.json
-          python3 scripts/exam_question_import.py stage --out data/quiz-import/supabase-staging-all.json
-          python3 scripts/build_static_quiz_bank.py --bundle data/quiz-import/supabase-staging-all.json --out site/src/data/quiz-bank.json
-          python3 scripts/build_structured_quiz_bank.py --in site/src/data/quiz-bank.json --out site/src/data/quiz-bank-v2.json
-          python3 scripts/validate_structured_quiz_bank.py --in site/src/data/quiz-bank-v2.json --exam-images site/public/exam-images
-          git diff --exit-code -- data/quiz-import/audit-all.json data/quiz-import/supabase-staging-all.json site/src/data/quiz-bank.json site/src/data/quiz-bank-v2.json
+          if [ "${{ steps.playwright-cache.outputs.cache-hit }}" = "true" ]; then
+            npx playwright install-deps chromium
+          else
+            npx playwright install --with-deps chromium
+          fi
 
-      - name: Run Node release checks
+      # Generate the 4 quiz-data build artifacts and validate them. This is the gate that
+      # catches data problems (e.g. a broken correct-answer marker). It runs once; the build
+      # step below uses build:astro/build:search directly so it does not regenerate.
+      - name: Generate + validate quiz data
+        run: python3 scripts/build_quiz_data.py
+
+      - name: Python unit tests
+        run: python3 -m unittest discover -s tests
+
+      - name: Node tests
         working-directory: site
         run: npm run test:node
 
-      - name: Run frontend type checks
+      - name: Type check
         working-directory: site
         run: npm run check
 
-      - name: Build Astro
+      - name: Build site
         working-directory: site
         env:
           PUBLIC_SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
           PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
-        run: npm run build
+        run: npm run build:astro && npm run build:search
 
-      - name: Upload artifact
+      - name: UI smoke checks (against the built site)
+        working-directory: site
+        env:
+          PUBLIC_SUPABASE_URL: ${{ vars.PUBLIC_SUPABASE_URL }}
+          PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.PUBLIC_SUPABASE_ANON_KEY }}
+        run: npm run test:ui:run
+
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: site/dist
 
   deploy:
-    needs: [smoke, build]
+    needs: [verify-build]
     runs-on: ubuntu-latest
     environment:
       name: github-pages

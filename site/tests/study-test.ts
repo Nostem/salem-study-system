@@ -1,5 +1,13 @@
 import { expect, test } from '@playwright/test';
 
+// Derive the Supabase auth storage key from the build's PUBLIC_SUPABASE_URL (same as the other
+// smoke specs) so the mocked session is found regardless of which URL the site was built with.
+// Hardcoding it (e.g. 'sb-local-test-auth-token') only worked when the build used that exact URL.
+function supabaseAuthStorageKey(): string {
+  const url = process.env.PUBLIC_SUPABASE_URL || 'https://local-test.supabase.co';
+  return `sb-${new URL(url).hostname.split('.')[0]}-auth-token`;
+}
+
 const learnerRoutes = [
   { path: 'study/', active: 'Study' },
   { path: 'quiz/', active: 'Quick Quiz' },
@@ -32,9 +40,9 @@ test('Study presents one quiz entry plus Study Map and Progress paths', async ({
 });
 
 test('Study shows a continue banner when logged-in review is due', async ({ page }) => {
-  await page.addInitScript(() => {
+  await page.addInitScript(([storageKey]) => {
     window.localStorage.setItem(
-      'sb-local-test-auth-token',
+      storageKey,
       JSON.stringify({
         access_token: 'playwright-access-token',
         refresh_token: 'playwright-refresh-token',
@@ -44,7 +52,7 @@ test('Study shows a continue banner when logged-in review is due', async ({ page
         user: { id: '00000000-0000-4000-8000-000000000001', aud: 'authenticated', role: 'authenticated' },
       })
     );
-  });
+  }, [supabaseAuthStorageKey()]);
 
   await page.route('**/functions/v1/quiz-review-queue', async (route) => {
     await route.fulfill({
