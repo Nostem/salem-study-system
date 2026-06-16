@@ -4,7 +4,7 @@ test('quiz-v2 page lists structured questions and renders an image stem with sou
   await page.goto('quiz-v2/?slug=q23-eop-flowchart-symbols-concurrent');
 
   await expect(page.getByRole('heading', { name: /Quick Quiz advanced builder/i })).toBeVisible();
-  await expect(page.getByTestId('qv2-bank-count')).toContainText('599');
+  await expect(page.getByTestId('qv2-bank-count')).toContainText('898');
   await expect(page.getByTestId('qv2-builder')).toBeVisible();
   await expect(page.getByTestId('qv2-start-link')).toHaveAttribute('href', /\/quiz-v2\/play\/\?count=10$/);
   await expect(page.getByTestId('qv2-start-link')).toContainText(/Start practice — 10 of \d+/);
