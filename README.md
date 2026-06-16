@@ -12,16 +12,16 @@ The repository contains public/non-proprietary study material only. It does not 
 
 | Area | Current contents |
 | --- | --- |
-| Wiki articles | 1,044 Markdown pages under `wiki/` |
+| Wiki articles | ~1,465 Markdown pages under `wiki/` |
 | Systems | 54 system articles |
 | Tech Specs | 19 Tech Spec articles plus public PDF references |
-| Exam/wiki question pages | 755 exam-related Markdown pages |
-| Static quiz bank | 599 imported written exam questions |
-| Quiz years | 2016, 2018, 2019, 2020, 2022, 2023 |
-| Quiz topics | 257 normalized topic records, including connection-derived EOP/abnormal/procedure/admin filters |
+| Exam/wiki question pages | ~1,135 exam-related Markdown pages (written questions, JPMs, scenarios) |
+| Static quiz bank | 898 imported written exam questions (562 quiz-eligible) |
+| Quiz years | 2016, 2018, 2019, 2020, 2022, 2023 (quiz-eligible); 2012, 2014, 2015 imported as drafts pending review |
+| Quiz topics | 295 normalized topic records, including connection-derived EOP/abnormal/procedure/admin filters |
 | EOP/abnormal/procedure/admin articles | EOPs, abnormal procedures, normal procedures, surveillance/alarm/admin topics |
 
-Counts change as source material is imported and audited. The static quiz count comes from `site/src/data/quiz-bank.json`.
+Counts change as source material is imported and audited. The static quiz count comes from `site/src/data/quiz-bank.json` (a regenerated build artifact — see [Regenerating quiz data](#regenerating-quiz-data)).
 
 ## Main learner flows
 
@@ -228,13 +228,14 @@ Public PDFs and static assets are served from `site/public/`, including exam PDF
 Question import/sync artifacts live under:
 
 ```text
-data/exams/
-data/quiz-import/
-site/src/data/quiz-bank.json
-site/src/data/structured-quiz-bank.json
+data/exams/                          # YAML exam metadata + pdftotext extraction text (tracked)
+data/quiz-import/audit-all.json      # gitignored build artifact
+data/quiz-import/supabase-staging-all.json  # gitignored build artifact
+site/src/data/quiz-bank.json         # gitignored build artifact
+site/src/data/quiz-bank-v2.json      # gitignored build artifact (structured)
 ```
 
-The safe rule is: source Markdown/YAML/PDF data is authority, generated artifacts are regenerated from source, and Supabase syncs are done through explicit scripts.
+The safe rule is: source Markdown/YAML/PDF data is authority; the four quiz-data files above are **gitignored build artifacts** regenerated from source on demand (never committed); and Supabase syncs are done through explicit scripts.
 
 ## Project structure
 
@@ -243,14 +244,16 @@ The safe rule is: source Markdown/YAML/PDF data is authority, generated artifact
 ├── README.md
 ├── CLAUDE.md
 ├── data/
-│   ├── exams/                         # YAML exam metadata
-│   └── quiz-import/                   # audit/staging/static generated artifacts
+│   ├── exams/                         # YAML exam metadata + extraction text (tracked)
+│   └── quiz-import/                   # audit/staging artifacts (gitignored, regenerated)
 ├── docs/                              # planning, audits, release notes, architecture docs
-├── raw/                               # local source PDFs; generally gitignored
+├── raw/                               # local source PDFs; gitignored
 ├── scripts/
+│   ├── build_quiz_data.py             # one command: regenerate + validate all 4 quiz-data files
 │   ├── exam_question_import.py        # import/audit/stage exam questions
 │   ├── build_static_quiz_bank.py      # generate site/src/data/quiz-bank.json
-│   ├── build_structured_quiz_bank.py  # generate structured v2 quiz bank
+│   ├── build_structured_quiz_bank.py  # generate structured quiz-bank-v2.json
+│   ├── validate_structured_quiz_bank.py  # validate the structured bank (CI gate)
 │   ├── supabase_import_exam.py        # generate/apply/sync Supabase question data
 │   ├── wiki_index.py                  # local wiki index/query helper
 │   └── contact_feedback_to_github_issues.py
@@ -258,7 +261,7 @@ The safe rule is: source Markdown/YAML/PDF data is authority, generated artifact
 │   ├── package.json
 │   ├── src/
 │   │   ├── components/                # UI components
-│   │   ├── data/                      # generated frontend quiz/graph data
+│   │   ├── data/                      # generated quiz/graph data (quiz-bank*.json gitignored)
 │   │   ├── layouts/                   # BaseLayout, StudyLayout, ArticleLayout
 │   │   ├── pages/                     # Astro routes
 │   │   ├── scripts/                   # browser graph/search/highlight scripts
@@ -410,17 +413,29 @@ lsof -ti tcp:4321 | xargs kill -9 2>/dev/null || true
 
 ## Regenerating quiz data
 
-The normal source-to-static path is:
+The four quiz-data files are **build artifacts** (gitignored), regenerated from the wiki question
+articles on demand. There is one canonical command:
 
 ```bash
-python3 scripts/exam_question_import.py audit --out data/quiz-import/audit-all.json
-python3 scripts/exam_question_import.py stage --out data/quiz-import/supabase-staging-all.json
-python3 scripts/build_static_quiz_bank.py \
-  --bundle data/quiz-import/supabase-staging-all.json \
-  --out site/src/data/quiz-bank.json
+cd site && npm run data          # or, from the repo root: python3 scripts/build_quiz_data.py
 ```
 
-When changing source question content, regenerate the relevant artifacts and run importer/static-bank tests before committing. CI enforces this with a generated-data drift guard that reruns the audit, staging, static-bank, structured-bank, and structured-bank validation commands, then fails if those generated files differ from the committed copies.
+It runs the full pipeline — audit → stage → static bank → structured bank → **validation** — and
+(re)writes:
+
+```text
+data/quiz-import/audit-all.json
+data/quiz-import/supabase-staging-all.json
+site/src/data/quiz-bank.json
+site/src/data/quiz-bank-v2.json
+```
+
+These files are **not committed**. The site's npm `predev`/`prebuild` hooks run the generator
+automatically, so `npm run dev` and `npm run build` always have fresh data; CI regenerates and
+validates them once in the deploy job. Because they are generated rather than committed, there is
+no drift to reconcile — no commit step is needed after changing source question content (just rerun
+the generator locally if you want to inspect the output). The `validate` step is the gate that
+fails the deploy on real data problems (e.g. a malformed `✓ <LETTER>. Correct.` answer marker).
 
 ## Supabase sync and Edge Functions
 
