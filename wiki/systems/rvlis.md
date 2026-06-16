@@ -59,5 +59,5 @@ During SGTR RCP-restart evaluation, with <span class="hi-exam">RVLIS upper range
 - Related systems: [[RCS]], [[ECCS]], [[Pressurizer Level & Press Control]], [[115V AC]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-TRIP-4 — Natural Circulation]], [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
-- Related exam questions: [[2016 Q25]], [[2019 Q47]], [[2019 Q85]], [[2020 Q16]], [[2020 Q24]], [[2020 Q84]], [[2022 Q84]], [[2015 Q79]], [[2014 Q25]], [[2014 Q26]]
-- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam questions: [[2016 Q25]], [[2019 Q47]], [[2019 Q85]], [[2020 Q16]], [[2020 Q24]], [[2020 Q84]], [[2022 Q84]], [[2015 Q79]], [[2014 Q25]], [[2014 Q26]], [[2012 Q15]], [[2012 Q24]]
+- Related exam: [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

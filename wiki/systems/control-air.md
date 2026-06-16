@@ -25,6 +25,16 @@ The RHR HX flow control valve (21RH18) and HX bypass valve (2RH20) are supplied 
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q34</div>
+Because 21RH18 (RHR HX Outlet FCV) is a <span class="hi-exam">fail-as-is</span> valve, an air line break to 21RH18 during stable shutdown cooling has <span class="hi-exam">NO effect on the RHR system</span> — the valve holds its current position. <span class="hi-trap">It does not fail open (which would cause a cooldown) and does not fail shut.</span> Per AB.CA-0001.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q38</div>
+The <span class="hi-exam">2CC149 CCW Surge Tank Vent Valve is normally OPEN and fails SHUT on a total loss of air (and loss of control power)</span>; it auto-shuts on high radiation from 2R17A. The valve is automatic (AU) in all Modes. <span class="hi-trap">It does not fail open.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q26</div>
 ECAC automatic start setpoint: <span class="hi-exam"><span class="val-trip">&lt; 85 psig</span> control air pressure</span>. <span class="hi-trap">88 psig is the MANUAL start setpoint per AB.CA-0001 — not the auto start setpoint. At 86 psig, the ECAC has NOT reached its auto start setpoint.</span> To MANUALLY start the ECAC from the control room, the <span class="hi-exam">MINIMUM pushbutton manipulation is depressing A then B (two-button sequence)</span>. A single button (B ONLY) is not sufficient.
 </div>
@@ -134,7 +144,7 @@ On a total loss of Control Air affecting both units (operating SAC tripped/unres
 - Related systems: [[CCW]], [[AFW]], [[CVCS]], [[Main Steam]], [[Feed & Condensate]], [[Containment]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[RHR]], [[DC Power]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[S1.OP-PT.CA-0001 — Emergency Control Air Compressor Test]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.CA-0001 — Control Air System Operation]]
 - Related abnormals: [[AB.460-0003 — Loss of 2C 460/230V Vital Bus]]
-- Related exam questions: [[2015 Q13]], [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]], [[2015 Q37]], [[2015 Q62]], [[2015 Q96]], [[2014 Q19]], [[2014 Q64]]
+- Related exam questions: [[2015 Q13]], [[2016 Q62]], [[2016 Q63]], [[2016 Q80]], [[2016 Q90]], [[2018 Q25]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q27]], [[2019 Q61]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2020 Q54]], [[2022 Q53]], [[2022 Q77]], [[2022 Q79]], [[2022 Q88]], [[2015 Q37]], [[2015 Q62]], [[2015 Q96]], [[2014 Q19]], [[2014 Q64]], [[2012 Q14]], [[2012 Q34]], [[2012 Q38]]
 - Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
 - Related tech specs: [[TS 3/4.6 — Containment]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

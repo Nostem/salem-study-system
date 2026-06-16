@@ -455,6 +455,11 @@ LCO 3.4.10.2 PZR heatup rate = <span class="hi-exam"><span class="val-trip">100&
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q23</div>
+The <span class="hi-exam">200&deg;F/hr PZR cooldown limit (TS 3.4.10.2.b)</span> appears as a distractor in the TRIP-5 natural-circulation cooldown timing problem: applying 200&deg;F/hr to drop RCS from 500&deg;F to 450&deg;F would give ~15 min, but the EOP-directed natural-circulation cooldown rate is <span class="hi-trap">&lt;100&deg;F/hr (NOT the TS PZR cooldown limit)</span>, giving 30 minutes. The RCS P/T cooldown limit is per the PTLR, not a fixed value.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q84</div>
 The TS RCS cooldown limit per PTLR is applied in EOP-LOCA-5 as <span class="hi-exam">&lt;100&deg;F/hr</span> when initiating a cooldown — this prevents an unwanted Thermal Shock condition that would complicate matters since CFSTs are still in effect in LOCA-5.
 </div>
@@ -542,7 +547,7 @@ LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
 - Related procedures: [[S2.OP-ST.RC-0008 — RCS Water Inventory Balance]], [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[AB.RC-0001 — Reactor Coolant System Leak]]
-- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]], [[2015 Q87]], [[2014 Q86]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]], [[2015 Q87]], [[2014 Q86]], [[2012 Q23]]
 - Related JPMs: [[2014 JPM Sim-c]], [[2016 JPM RO-A1-1]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
-- Related exam: [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

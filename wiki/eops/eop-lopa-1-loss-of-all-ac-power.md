@@ -64,12 +64,22 @@ On a total loss of all AC power, EOP-LOPA-1 may be entered directly; its immedia
 The EOP-LOPA-1 Bases document states this EOP is entered <span class="hi-exam">anytime, from anywhere, on the symptom of a loss of all AC power</span>. Therefore <span class="hi-exam">a loss of all three vital buses ALWAYS requires suspending any Functional Restoration Procedure (FRP) in use</span> — FRPs assume at least one 4KV vital bus is available for mitigative actions. <span class="hi-trap">Contrast: only a HIGHER RED or PURPLE CFST path than the one directing current FRP entry requires suspending (a new condition on a different status tree does not always); FRPs do NOT have a Continuous Action Summary like EOPs do; RWST lo level only directs LOCA-3 when so directed in the FRP in use — it does not automatically suspend any FRP.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q11</div>
+After a loss of all AC power with 2B EDG locally started, the action REQUIRED prior to energizing the 2B 4KV Vital bus is to <span class="hi-exam">deenergize ALL SECs and depress the stop PBs for SEC-actuated components</span> — the Bases (p 15) gives the reason as <span class="hi-exam">preventing the bus from overloading</span>. The Continuous Action Step for energizing a deenergized vital bus with an EDG comes AFTER the deenergize-SECs step. <span class="hi-trap">Initiating/resetting SI (step 21) is to prevent SI-actuated valve realignment when power is restored, NOT to prevent a charging pump auto-start.</span> <span class="hi-trap">Shedding non-essential DC loads (step 35) and starting the SBO Compressor (within 60 min) are performed during the extended loss, but are NOT required prior to power restoration.</span> See [[AB.LOOP-0001 — Loss of All Offsite Power]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q35</div>
+If all AC power remains lost for at least one day, the dominant consequence is <span class="hi-exam">loss of ECCS pumped injection capability plus continuing RCP seal leakage → core uncovery</span> (best-case time to core uncovery &lt;20 hours). Containment pressure rises only ~3 psig and temperature ~40°F as the RCS drains through the RCP seals; <span class="hi-trap">containment is not degraded (designed for full LBLOCA mass release).</span> See [[ECCS]], [[RCPs]].
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[Control Air]], [[DC Power]], [[EDGs]], [[Service Water]], [[4KV]], [[SECs]], [[RCPs]], [[CVCS]], [[RHR]]
 - Related EOPs: [[EOP-LOPA-2 — Loss of All AC Power Recovery / SI Not Required]], [[EOP-LOPA-4 — Extended Loss of All AC Power]]
-- Related procedures: [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[AB.CA-0001 — Loss of Control Air]]
-- Related exam questions: [[2014 Q6]], [[2015 Q13]], [[2016 Q18]], [[2018 Q59]], [[2022 Q77]], [[2015 Q74]], [[2014 Q16]], [[2014 Q99]]
+- Related procedures: [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[AB.CA-0001 — Loss of Control Air]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
+- Related exam questions: [[2014 Q6]], [[2015 Q13]], [[2016 Q18]], [[2018 Q59]], [[2022 Q77]], [[2015 Q74]], [[2014 Q16]], [[2014 Q99]], [[2012 Q11]], [[2012 Q35]]
 - Related JPMs: [[2016 JPM Sim-g]], [[2018 JPM IP-i]], [[2019 JPM Sim-g]], [[2015 JPM IP-j]]
 - Related scenarios: [[2020 Scenario 1 — Power Ascension / Station Blackout]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

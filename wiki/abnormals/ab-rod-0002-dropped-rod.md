@@ -66,12 +66,17 @@ AB.ROD-0002 <span class="hi-exam">step 3.23</span> asks whether the affected (dr
 A dropped rod (rod 204, OHA E-46 LOWER SECT DEV ABV 50% PWR locked in) entered into AB.ROD-0002 is the initial condition for the 2014 manual QPTR JPMs. Before reducing power to &lt; 75% RTP per TS 3.1.3.1 Action c.3.d, the crew runs a QPTR surveillance. Here the resulting Maximum Power Tilt stays <span class="hi-exam">&lt; 1.02</span> (surveillance SAT) — a dropped rod does not automatically yield QPTR &gt; 1.02.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q1</div>
+During a dropped-rod recovery (rod 2D3, a Group 2 rod, at 30% power), the EXPECTED alarm is <span class="hi-exam">OHA E-40 ROD BANK URGENT FAIL</span>, which occurs when withdrawing the dropped rod after the CRDM lift coil switches for all the unaffected rods in that bank have been opened — a Power Cabinet Regulation failure (demand sent to Control Bank D rods, only the one rod responds with movement). <span class="hi-trap">The OHA E-8 RIL LO / E-16 RIL LO LO alarms from resetting the P/A Converter to zero apply only to a GROUP 1 rod recovery — rod 2D3 is Group 2.</span> <span class="hi-trap">The STARTUP PB is depressed only during a startup, not during a rod recovery.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[Excore NIs]], [[Control Rod Drive]]
+- Related systems: [[RPS/SSPS]], [[Excore NIs]], [[Control Rod Drive]], [[Annunciators]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]], [[OP-AA-101-111-1003 — Use of Procedures]]
 - Related tech specs: [[TS 3/4.2 — Power Distribution]]
-- Related exam questions: [[2018 Q30]], [[2020 Q19]], [[2022 Q19]], [[2015 Q76]], [[2014 Q77]]
+- Related exam questions: [[2018 Q30]], [[2020 Q19]], [[2022 Q19]], [[2015 Q76]], [[2014 Q77]], [[2012 Q1]]
 - Related JPMs: [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2015 JPM Sim-a]], [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]]
 - Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

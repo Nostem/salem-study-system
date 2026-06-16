@@ -116,6 +116,11 @@ CC131 (RCP Thermal Barrier Valve) auto-closure setpoints: <span class="hi-exam">
 Confirms 2018 Q7: <span class="hi-exam">2CC149 auto-closes on 2R17A/B high radiation alarm</span>. CCW Surge Tank overflow contaminates both the in-service Waste Holdup Tank and the 22 ABV Exhaust Filter Unit.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q38</div>
+2CC149 (CCW Surge Tank Vent Valve) is <span class="hi-exam">normally OPEN and fails SHUT on a total loss of air (and on loss of control power)</span>. It auto-shuts on high radiation from 2R17A and is automatic (AU) in <span class="hi-exam">ALL Modes of operation</span>. <span class="hi-trap">It does not fail open.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.3 requires two independent CCW loops OPERABLE in Modes 1–4
@@ -144,6 +149,11 @@ Start a CCW pump IAW EOP-APPX-1 during large break LOCA with loss of offsite pow
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q10</div>
 On an SI signal, <span class="hi-exam">2CC215 and 2CC113 (Excess Letdown HX CCW isolation valves) receive a Phase A close signal</span> — they are Containment Phase A isolation valves. The purpose of closing Phase A isolation valves is to <span class="hi-exam">ensure all non-essential containment penetrations are isolated</span> on an SI signal. <span class="hi-trap">RCP CCW continues to be supplied until a Phase B signal at <span class="val-trip">15 psig</span> in containment — Phase A does NOT isolate ALL CCW supply/return from containment.</span> <span class="hi-trap">21 and 22CC16 (RHR HX CCW isolation valves) do NOT receive an automatic open signal on SI — they only open when the ARM PB is depressed AND RWST level reaches 15.2 ft. RHR pumps are cooled by either flow through the pump from RWST (LBLOCA) or recirc flow (SBLOCA until pp is S/D), not by automatic CC16 alignment.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q6</div>
+On an SI from a LOCA, the automatic CCW response is that <span class="hi-exam">2CC215 and 2CC113 (Excess Letdown HX CCW isolation valves) receive a close signal as Containment Phase A isolation valves</span> — to ensure all non-essential containment penetrations are isolated. <span class="hi-trap">ALL CCW supply/return is NOT isolated on SI — RCP CCW continues until the Phase B signal at 15 psig.</span> <span class="hi-trap">The RHR HX CCW isolation valves (CC16s) do NOT receive an automatic open signal on SI — they open only when the ARM PB is depressed AND RWST level is 15.2 ft (manual ECCS realignment to CLR).</span>
 </div>
 
 <div class="callout callout-exam">
@@ -218,7 +228,7 @@ Starting a CCW pump after a LOCA + LOOP (all vital buses on EDGs, no CCW running
 
 ## Connections
 
-- Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]], [[2014 Q83]], [[2014 Q93]]
+- Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]], [[2014 Q83]], [[2014 Q93]], [[2012 Q12]], [[2012 Q26]], [[2012 Q38]]
 - Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]], [[2015 JPM Sim-g]], [[2014 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

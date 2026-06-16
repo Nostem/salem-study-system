@@ -63,6 +63,6 @@ LOSC-1 distractors for an uncontrolled all-SG depressurization (>100°F/hr coold
 
 - Related systems: [[CFCUs]], [[Containment Spray]], [[Main Steam]], [[Feed & Condensate]], [[AFW]], [[Steam Generator & Blowdown]], [[RCPs]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-3 — SI Termination]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q16]], [[2016 Q65]], [[2016 Q85]], [[2020 Q9]], [[2014 Q85]]
+- Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q16]], [[2016 Q65]], [[2016 Q85]], [[2020 Q9]], [[2014 Q85]], [[2012 Q25]]
 - Related scenarios: [[2016 Scenario 3]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2014 Scenario 1]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

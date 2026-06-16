@@ -141,12 +141,17 @@ Bleed-and-feed flowpath selection when a PORV block valve is unavailable: with <
 After a reactor trip with a stuck-open steam dump path, the crew suffers a <span class="hi-exam">loss of all AFW</span> — 22 AFW pump trips after the post-trip AFW flow reduction, 23 AFW pump trips ~5 min later, and 21 AFW pump has no power (2A vital bus lost). With less than <span class="hi-exam">22E4 lbm/hr</span> available and no AFW pumps running, CRS transitions out of TRIP-1 to FRHS-1. Because the SGFPs are also unavailable, the crew performs a <span class="hi-exam">Condensate pump recovery in FRHS-1</span> to establish SG feed flow before RCS Bleed and Feed is required (CT#2). Terminates when SG WR levels are rising in FRHS-1, or when Bleed and Feed is initiated.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q21</div>
+FRHS-1 Step 3 asks "Is RCS pressure greater than ANY intact or ruptured SG pressure?" If the operator answers <span class="hi-exam">NO</span> (RCS pressure is below SG pressures), then a <span class="hi-exam">LOCA of sufficient size is present and break flow is removing decay heat (along with ECCS injection)</span>, so the crew <span class="hi-exam">returns to the procedure in effect</span> — a secondary heat sink is not required. <span class="hi-trap">Traps: the bleed-and-feed criterion is SG WR level (not "RCS pressure"); a secondary heat sink COULD be established and reduce RCS temperature by dumping SG steam; and the RCP-trip-on-LOOP-concern is a TRIP-1 / LOCA-1 basis, not a FRHS CAS.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]], [[Pressurizer & PRT]], [[ECCS]], [[CVCS]], [[RCPs]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related tech specs: [[TS 3/4.5 — ECCS]]
-- Related exam questions: [[2015 Q23]], [[2016 Q23]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]], [[2015 Q83]], [[2014 Q23]], [[2014 Q74]]
+- Related exam questions: [[2015 Q23]], [[2016 Q23]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]], [[2015 Q83]], [[2014 Q23]], [[2014 Q74]], [[2012 Q21]]
 - Related JPMs: [[2014 JPM Sim-d]], [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]], [[2016 JPM Sim-d]]
 - Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Written Exam]]

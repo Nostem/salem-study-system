@@ -65,10 +65,15 @@ Completing the safeguards reset actions in LOSC-2 resets the SEC. <span class="h
 In LOSC-2 (Multiple Steam Generator Depressurization), <span class="hi-exam">Reset SGBD Sample Isolation (step 10) to allow sampling of the SGs and transition to the SGTR sorter if required</span> — if a SGTR were identified here, the CRS would transition to SGTR-1 rather than stay in LOSC-2. Discriminators tested: <span class="hi-exam">LOSC-2 step 5 maintains AFW flow no less than 1.9E4 lbm/hr to each SG</span> (per the answer key wording); the CAS that allows isolating AFW to any SG with NR level >9% applies <span class="hi-trap">only when the cooldown rate is &lt;100°F/hr</span> (not the 105°F/hr in the stem). RCPs are tripped &lt;1350 psi ONLY when a cooldown is NOT in progress.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q25</div>
+For a MSLB at the Main Turbine inlet with all MSLI attempts failed and an uncontrolled RCS cooldown, once out of TRIP-1 the only action taken in LOSC-1 before going to LOSC-2 is attempting to close the MSLI valve. In LOSC-2 the required action is to <span class="hi-exam">reduce AFW to minimize cooldown while still keeping the SG tubes wet — maintaining &gt;1E4 lbm/hr to each S/G</span> to keep tubes from drying out. <span class="hi-trap">Traps: do NOT trip RCPs (pressure is still dropping) and do NOT stop both RHR pumps (pressure still dropping) — those reasons are valid but the actions are not directed here; and the BF22's are not closed.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Pressurizer & PRT]], [[500KV]], [[Steam Generator & Blowdown]], [[AFW]]
+- Related systems: [[Pressurizer & PRT]], [[500KV]], [[Steam Generator & Blowdown]], [[AFW]], [[Main Steam]], [[RCPs]], [[RHR]]
 - Related EOPs: [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]], [[2015 Q45]], [[2014 Q85]]
+- Related exam questions: [[2015 Q25]], [[2016 Q4]], [[2016 Q85]], [[2018 Q66]], [[2019 Q66]], [[2023 Q7]], [[2015 Q45]], [[2014 Q85]], [[2012 Q25]]
 - Related scenarios: [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2014 Scenario 1]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

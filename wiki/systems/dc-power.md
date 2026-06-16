@@ -162,6 +162,6 @@ In Modes 1-4, the condition that ALWAYS requires entering TSAS 3.8.2.3 (125-Volt
 - Related procedures: [[S2.OP-SO.115-0012 — 2B Vital Instrument Bus UPS System Operation]]
 - Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]]
 - Related tech specs: [[TS 3/4.8 — Electrical]]
-- Related exam questions: [[2015 Q13]], [[2015 Q14]], [[2015 Q15]], [[2016 Q56]], [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]], [[2015 Q56]], [[2015 Q57]], [[2014 Q18]], [[2014 Q58]]
+- Related exam questions: [[2015 Q13]], [[2015 Q14]], [[2015 Q15]], [[2016 Q56]], [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]], [[2015 Q56]], [[2015 Q57]], [[2014 Q18]], [[2014 Q58]], [[2012 Q11]]
 - Related JPMs: [[2018 JPM IP-i]]
-- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

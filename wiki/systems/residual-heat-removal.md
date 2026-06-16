@@ -79,6 +79,11 @@ To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining consta
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q33</div>
+Confirms the cooldown-rate adjustment per S2.OP-SO.RHR-0001: to <span class="hi-exam">REDUCE the cooldown rate, throttle CLOSED on 21RH18 (RHR HX Flow Control valve) while throttling OPEN on 2RH20 (RHR HX Bypass valve)</span> — less water passes through the RHR HX while total RHR system flow stays constant. <span class="hi-trap">Throttling both RH18 and RH20 closed does NOT keep flow constant; throttling RH18 open (more HX flow) would raise the cooldown rate.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q31</div>
 RHR HX tube blockage from foreign material reduces heat transfer, lowering cooldown rate. To <span class="hi-exam">RESTORE the cooldown rate: raise 21RH18 demand</span> (increases flow through the partially blocked RHR HX to compensate) and <span class="hi-exam">lower 2RH20 demand</span> (decreases HX bypass flow, forcing more total flow through the HX). Per S2.OP-SO.RHR-0001. <span class="hi-trap">Trap: "raise demand" on RH18 OPENS the valve (more HX flow); "lower demand" on RH20 CLOSES the bypass (less bypass flow). Both actions increase heat removal through the HX.</span>
 </div>
@@ -98,6 +103,11 @@ SDC operation with 21 RHR loop in service: <span class="hi-exam">throttling 2RH2
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q13</div>
 On a loss of <span class="hi-exam">control air</span>, both 21RH18 (RHR HX FLOW CONT VALVE) and 2RH20 (RHR HX BYP VALVE) <span class="hi-exam">fail AS IS</span> — both are supplied air exclusively from the <span class="hi-exam">"A" air header (fed by the Unit 2 ECAC)</span>. During a station blackout (LOOP + all Unit 2 EDGs and ECAC failed), control air bleeds away and the valves stay at their last position. The <span class="hi-exam">console position indication remains accurate</span> because 115VB inverter power is available for at least <span class="hi-exam">2 hours following a LOPA</span>. <span class="hi-trap">These valves do NOT fail open or fail shut on loss of air — they fail as-is.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q34</div>
+A break in the air line to 21RH18 (RHR HX Outlet FCV) has <span class="hi-exam">NO effect on the RHR system</span> — the RH18 valves are <span class="hi-exam">fail as-is</span>, so losing the air supply leaves them at their current position and the stable shutdown-cooling conditions (190°F, 1800 gpm/loop, 2RH20 10% open) are unaffected. <span class="hi-trap">Distractors assume 21RH18 fails open (would cause a cooldown) or fails shut — it does neither. Per AB.CA-0001 (Loss of Control Air).</span>
 </div>
 
 <div class="callout callout-exam">
@@ -261,9 +271,9 @@ With RHR in service in Mode 5, an RCS pressure transient that exceeds <span clas
 ## Connections
 
 - Related systems: [[Control Air]], [[EDGs]], [[DC Power]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]], [[AB.CA-0001 — Loss of Control Air]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.RHR-0001 — Initiating RHR]], [[S1.OP-SO.SJ-0001 — Preparation of the Safety Injection System for Operation]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related exam questions: [[2014 Q4]], [[2014 Q8]], [[2014 Q33]], [[2014 Q34]], [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]], [[2014 Q24]], [[2014 Q87]]
+- Related exam questions: [[2014 Q4]], [[2014 Q8]], [[2014 Q33]], [[2014 Q34]], [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]], [[2014 Q24]], [[2014 Q87]], [[2012 Q3]], [[2012 Q6]], [[2012 Q12]], [[2012 Q15]], [[2012 Q20]], [[2012 Q24]], [[2012 Q25]], [[2012 Q33]], [[2012 Q34]], [[2012 Q36]]
 - Related JPMs: [[2014 JPM Sim-b]], [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]], [[2016 JPM Sim-b]], [[2015 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

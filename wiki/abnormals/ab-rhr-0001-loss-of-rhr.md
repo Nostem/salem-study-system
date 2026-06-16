@@ -63,11 +63,16 @@ Loss of RHR with the RCS intact, filled, and pressurized (CETs &gt;200°F): the 
 When restarting an RHR pump after a loss of RHR and when <span class="hi-exam">time allows normal restoration and local venting</span>, the preferred flow rate is a <span class="hi-exam">LOWER flow rate</span> — to limit initial sudden cooldown and to minimize level loss caused by collapsing voids (per the AB.RHR-0001 CAUTION). <span class="hi-trap">A HIGHER flow rate to sweep entrained air is used only when time does NOT allow a normal venting.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q12</div>
+In MODE 4 with 21 RHR pump in shutdown cooling and 22 RHR aligned for ECCS, a loss of all offsite power (SEC MODE II Blackout) causes the <span class="hi-exam">2A SEC to trip the running 21 RHR pump, and it does NOT restart when the 2A EDG connects to the 2A vital bus</span> (RHR pumps are not blackout loads). That is why AB.LOOP-0001 step 3.8 directs initiating AB.RHR-0001 when a RHR pump was running in SDC mode. See [[AB.LOOP-0001 — Loss of All Offsite Power]], [[SECs]].
+</div>
+
 ## Connections
 
-- Related systems: [[RHR]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.CONT-0001 — Containment Closure]]
+- Related systems: [[RHR]], [[SECs]], [[EDGs]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.CONT-0001 — Containment Closure]], [[AB.LOOP-0001 — Loss of All Offsite Power]]
 - Related admin: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related exam questions: [[2014 Q8]], [[2015 Q6]], [[2018 Q53]], [[2018 Q84]], [[2018 Q87]], [[2019 Q78]], [[2019 Q86]], [[2020 Q6]], [[2023 Q79]]
+- Related exam questions: [[2014 Q8]], [[2015 Q6]], [[2018 Q53]], [[2018 Q84]], [[2018 Q87]], [[2019 Q78]], [[2019 Q86]], [[2020 Q6]], [[2023 Q79]], [[2012 Q12]]
 - Related JPMs: [[2020 JPM Sim-b]], [[2015 JPM Sim-h]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

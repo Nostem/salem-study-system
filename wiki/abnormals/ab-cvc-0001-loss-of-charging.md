@@ -119,10 +119,20 @@ After a charging pump trips, AB.CVC-0001 directs (prior to starting a charging p
 The Charging Master Flow Controller (MFC) auto setpoint <span class="hi-exam">fails low (ramps to 0% demand over ~5 minutes)</span>, lowering charging flow with PZR level. The crew enters AB.CVC-0001: take the MFC to manual (output stabilizes but cannot be raised), then place 23 charging pump speed controller in manual and restore charging flow to program. A coincident <span class="hi-exam">non-controlling PZR level Channel III failure low is silent</span> — no audible alarm and no letdown isolation, because control/alarm functions come off the selected channels (LC460D, LC459F). CRS removes Channel III from service and enters <span class="hi-exam">TSAS 3.3.1.1 action 6</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q5</div>
+At 100% power with the <span class="hi-exam">13 (Positive Displacement) charging pump in service (powered from the 1A 460V bus)</span> and normal letdown in service, deenergizing the 1A 460/230V bus stops the 13 charging pump. <span class="hi-exam">The 13 charging pump breaker does NOT have a UV trip</span>, so the auto-close interlock for the 3 letdown orifice isolation valves (which requires all 3 charging pump breakers open) is NOT satisfied — <span class="hi-exam">letdown stays in service at 75 gpm</span>. With letdown removing inventory and no charging, <span class="hi-exam">PZR level lowers at ~1% per minute</span>, and <span class="hi-exam">VCT level RISES at ~4% per minute</span> (20 gal/% VCT rule, letdown still entering VCT, no charging pump drawing from VCT). <span class="hi-trap">The two centrifugal charging pumps (11, 12) are powered from the B and C 4KV buses, not the 1A 460V bus.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q30</div>
+With all charging lost (all 3 charging pump breakers open): <span class="hi-exam">letdown orifice isolation valves auto-shut (letdown flow zero), and VCT level RISES because seal return continues to the VCT while no charging pump draws from it</span>. RCP seal cooling is maintained by <span class="hi-exam">flow from the RCS past the Thermal Barrier heat exchanger</span>, allowing time to restore charging. Cross-unit option: 13 (Unit 1) charging pump aligned to supply Unit 2 charging header would require a <span class="hi-exam">Unit 2 shutdown (not Unit 1)</span> due to higher-borated Unit 1 RWST water being added to Unit 2 RCS. <span class="hi-trap">A reactor trip is directed only if BOTH seal injection AND Thermal Barrier flow are lost (see AB.RCP-0001).</span>
+</div>
+
 ## Connections
 
-- Related systems: [[CVCS]], [[EDGs]], [[RCPs]]
-- Related exam questions: [[2014 Q6]], [[2015 Q5]], [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]], [[2015 Q38]], [[2015 Q40]], [[2015 Q77]]
+- Related systems: [[CVCS]], [[EDGs]], [[RCPs]], [[460/230V AC]], [[Pressurizer Level & Press Control]]
+- Related exam questions: [[2014 Q6]], [[2015 Q5]], [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]], [[2015 Q38]], [[2015 Q40]], [[2015 Q77]], [[2012 Q5]], [[2012 Q30]]
 - Related JPMs: [[2018 JPM Sim-b]], [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]], [[2015 JPM Sim-b]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2012 NRC Written Exam]]
