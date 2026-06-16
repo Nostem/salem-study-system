@@ -176,6 +176,11 @@ Post-boration TS evaluation: with RWST at 2350 ppm and BAST at 6650 ppm, <span c
 Borated Water Sources surveillance (S2.OP-ST.CVC-0010): combined BAST level <span class="hi-exam">48% + 48% = 96%</span>. Per Figure 3.1-2 at 6650 ppm boron, required level is <span class="hi-exam">&gt;96.5%</span> — UNSAT by narrow margin. Similarly, BAST concentration of <span class="hi-exam">6650 ppm at 96% level requires ~6675 ppm</span> from Figure 3.1-2 — also UNSAT. Narrow margins designed to test precise figure reading.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-i</div>
+The boration flow path supplied by the boration system is locally established by opening <span class="hi-exam">1CV175 (Rapid Borate Stop Valve)</span> and raising charging flow to <span class="hi-exam">75 gpm above total RCP seal injection flow</span> (105 gpm with 30 gpm total seal flow). Closing the 11/12CV160 air supply isolation valves makes the CV160 recirc valves fail closed, directing all boric acid from the BASTs through the charging pump suction rather than recirculating — the boration system flow path credited by this LCO during a Control Room Evacuation emergency boration.
+</div>
+
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
@@ -219,5 +224,5 @@ S2.OP-ST.CVC-0010 surveillance of borated water sources after a 21 BAT pump leak
 - Related procedures: [[S2.OP-ST.CVC-0010 — Borated Water Sources]], [[S2.OP-ST.CVC-0011 — Boration Flow Rate Test]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exam questions: [[2016 Q8]], [[2020 Q77]], [[2015 Q35]], [[2015 Q66]], [[2015 Q77]]
-- Related JPMs: [[2014 JPM Sim-a]], [[2019 JPM RO-A2]], [[2022 JPM SRO-A2]], [[2016 JPM RO-A2]]
-- Related exam: [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related JPMs: [[2014 JPM Sim-a]], [[2019 JPM RO-A2]], [[2022 JPM SRO-A2]], [[2016 JPM RO-A2]], [[2012 JPM RO-A2]], [[2012 JPM IP-i]]
+- Related exam: [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2012 NRC Operating Exam]]

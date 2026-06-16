@@ -101,6 +101,11 @@ Letdown temperature auto-divert: 2CV21 automatically diverts letdown flow to VCT
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q32</div>
+Confirms the 2CV21 (Letdown Demin Bypass Valve) auto-divert temperature: <span class="hi-exam"><span class="val-alarm">136°F</span> Letdown HX outlet</span>. <span class="hi-trap">Distractor temperatures: 120°F = Letdown HX outlet Hi Temp Alarm (computer point T0145A; TE-130B); 127°F = Letdown HX design cooldown outlet (380°F → 127°F with 95°F CCW inlet at 1000 gpm); 130°F = nominal charging temp entering the Regen HX.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q69</div>
 Per AB.RC-0002 (High Activity in RCS) Step 3.15: crew is required to <span class="hi-exam">transfer to a Centrifugal Charging Pump (CCP)</span> and secure the 13 Charging Pump (PDP). Step 3.16: <span class="hi-exam">maximize letdown flow by placing 1CV3 (45 GPM ORIFICE) in service in addition to 1CV4 (75 GPM ORIFICE)</span> already in service. <span class="hi-trap">Trap: 13 Charging Pump is the PDP, NOT a CCP. Maximized letdown = both 75 gpm and 45 gpm orifices in service (120 gpm total), not just the largest orifice alone.</span>
 </div>
@@ -140,8 +145,18 @@ Excess letdown flow path during SI: <span class="hi-exam">Excess Letdown Isolati
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q30</div>
+Loss of all charging (all 3 charging pump breakers open): <span class="hi-exam">letdown orifice isolation valves automatically shut, so letdown flow is zero</span> and the charging pumps use no VCT capacity. <span class="hi-exam">Seal return continues to the VCT, so VCT level RISES</span> (not lowers). With seal injection lost, <span class="hi-exam">flow from the RCS past the Thermal Barrier heat exchanger maintains RCP seal temperature</span>, allowing time to restore charging. <span class="hi-trap">Traps: per AB.RCP-0001, a reactor trip is directed only if BOTH seal injection AND Thermal Barrier flow are lost, not just one. TS 3.0.3 applies when no charging pumps are available, but the procedure allows time to attempt restoration.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q3</div>
 CV71 acts as a backpressure control valve affecting both charging and seal injection flows. <span class="hi-exam">Throttling CV71 CLOSED raises backpressure → seal injection flow RISES and charging flow LOWERS. Throttling CV71 OPEN lowers backpressure → seal injection flow LOWERS and charging flow RISES.</span> This relationship is critical during RCS leak response when adjusting charging to stabilize PZR level.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q31</div>
+With rising VCT level and pressure (CVCS makeup failure, MFC in manual): the higher VCT pressure increases charging-pump NPSH and discharge pressure, so <span class="hi-exam">charging flow RISES</span> while <span class="hi-exam">letdown flow LOWERS</span> (increased VCT backpressure). VCT divert/vent setpoints: <span class="hi-exam">1CV35 (VCT 3-WAY INLET valve) trips to full divert to the CVCS HUT at 87% rising level</span>; the <span class="hi-exam"><span class="val-alarm">VCT high-pressure alarm is 50 psig</span></span> (at which point the VCT vent 1CV243 would open). See [[S1.OP-AR.ZZ-0012 — Control Console CC2]].
 </div>
 
 ## Rapid Boration
@@ -286,6 +301,11 @@ Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2019 IP-i</div>
 Emergency boration during CR Evacuation (AB.CR-0001, Attachment 5, Step 10): close <span class="hi-exam">11CV160 and 12CV160 air supply isolation valves</span> and open draincocks at Pnl 701-1A and 701-1B (El 122 ft, near BASTs). CV160 recirc valves <span class="hi-exam">fail closed on loss of air</span>, forcing boric acid flow through charging pump suction instead of recirculating to BASTs. Open <span class="hi-exam">1CV175 (Rapid Borate Stop Valve)</span> by disengaging clutch and rotating handwheel CCW. Adjust charging flow at Panel 216-1 to <span class="hi-exam">99 gpm total (75 gpm boration + 24 gpm for 4 RCP seals at 6 gpm each)</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-i</div>
+Locally borate during CR Evacuation (AB.CR-0001, Att. 5, Step 10): the charging-flow target for boration is <span class="hi-exam">75 gpm above existing total RCP seal injection flow</span> — NOT 75 gpm above existing charging flow. With total seal injection flow at 30 gpm, adjust 1CV55 (at Panel 216-1) to <span class="hi-exam">105 gpm</span> (30 + 75). <span class="hi-trap">Raising to 165 gpm (75 above the 90 gpm initial charging flow) over-injects to the RCS and causes PZR level to rise too quickly — a common error trap.</span> Boration path is established by opening 1CV175 (Rapid Borate Stop Valve) by disengaging the clutch and rotating the handwheel; NEO#1 then trims 1CV73 to keep RCP seal flow 6-10 gpm.
 </div>
 
 <div class="callout callout-jpm">
@@ -453,12 +473,37 @@ The <span class="hi-exam">1CV185, Makeup to Charging Pump Suction Valve</span> o
 During an SBLOCA with LOOP, high-head ECCS injection depends entirely on the centrifugal charging pumps: one CCP has already failed (tripped after starting during the PDP-to-CCP swap), and the other <span class="hi-exam">fails to auto-start on the SEC</span>. The crew must block/reset the affected SEC and <span class="hi-exam">manually start a charging pump to establish high-head ECCS injection (CT#2) before transitioning out of TRIP-1</span>. Mini-flow valve 2CV139 is shut (2CV140 has no power) once RCS pressure lowers below 1500 psig with BIT flow established. See [[2014 Scenario 3]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q69</div>
+<span class="hi-exam">2CV35 is the VCT 3 Way Inlet Valve</span> (directs charging-pump-suction makeup between the VCT and the HUT/Flow to HUT path). <span class="hi-trap">Excess Letdown does NOT flow through 2CV35 — so an unexpected 2CV35 swap with Excess Letdown in service does not affect RCS letdown, and AB.CVC-0001 does not apply.</span> The proper response to the unexpected swap (briefed as not going to occur) is to stop work per OOPS / HU-AA-101.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 RO-A1-1</div>
+Calculate Shutdown Margin (SC.RE-ST.ZZ-0002) with Control Rod 1D5 inoperable at 75% power, Bank D at 170 steps, 100 ppm, 11890 EFPH. With a rod inoperable in Mode 1, the correct path is Attachment 3, which adjusts for the inoperable rod. The discriminating step is comparing the calculated SDM against the Mode 1/2 acceptance criterion of <span class="hi-exam">-1300 pcm</span>; the acceptable answer band is <span class="hi-exam">-2513.7 to -2645.2 pcm</span> (≈ -2597.8 pcm), so SDM is SAT.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 RO-A2</div>
+Demonstrate RWST/BAST Operability via S2.OP-ST.CVC-0010 (Borated Water Sources). The discriminating actions are the BAST volume (49.5% level) and boron-concentration (<span class="hi-exam">6610 ppm</span>) determinations against <span class="hi-exam">TS 3.1.2.6.a/3.1.2.6.b and Figure 3.1-2</span>. RWST records: level CH I–III 41.4 / CH IV 41.5, temp 70°F (P-250 point T0650A), boron <span class="hi-exam">2350 ppm</span>. All Acceptance Criteria met → surveillance SAT.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-g</div>
+On a total Loss of Control Air, AB.CA-0001 step 3.56 directs the operator to <span class="hi-exam">ISOLATE Letdown by closing 2CV3 (45 GPM ORIFICE), 2CV4 (75 GPM ORIFICE), 2CV5 (75 GPM ORIFICE), 2CV2, 2CV277, and 2CV7</span>. The letdown orifice isolation and control valves are air-operated and drift toward their fail positions as control air bleeds down, so letdown is manually isolated to prevent a CVCS upset.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+The <span class="hi-exam">22 charging pump fails to auto start on the SEC</span> after the trip and is manually started for high-head ECCS (21 charging pump trips 15 min after the reactor trip). During the transfer to cold leg recirculation, the <span class="hi-exam">22 charging pump cavitates when 2SJ1 and 2SJ2 are shut</span> (oscillating amperage, discharge/BIT flow, and discharge pressure); <span class="hi-exam">CT#4 requires tripping it before pump/piping damage</span> — otherwise a LOCA outside containment results. In the earlier Stator Water runback event, the crew emergency-borates via [[S2.OP-SO.CVC-0008 — Rapid Boration]] if OHA E-16 RIL Lo-Lo annunciates.
+</div>
+
 ## Connections
 
 - Related concepts: [[Rx Vessel & Internals]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[AB.RC-0002 — High Activity in the RCS]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[S1.OP-ST.CVC-0003 — Inservice Testing, 11 Charging Pump]], [[S2.OP-SO.CVC-0002 — Charging Pump Operation]], [[S2.OP-SO.CVC-0011 — RCS Degassification]], [[S2.OP-ST.CVC-0011 — Boration Flow Rate Test]]
-- Related exam questions: [[2014 Q6]], [[2014 Q7]], [[2014 Q30]], [[2014 Q32]], [[2014 Q34]], [[2015 Q19]], [[2015 Q21]], [[2016 Q29]], [[2016 Q30]], [[2016 Q37]], [[2016 Q39]], [[2016 Q67]], [[2016 Q83]], [[2016 Q84]], [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2018 Q52]], [[2018 Q69]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]], [[2015 Q30]], [[2015 Q32]], [[2015 Q33]], [[2015 Q35]], [[2015 Q37]], [[2015 Q38]], [[2015 Q40]], [[2015 Q66]], [[2015 Q77]], [[2015 Q78]], [[2015 Q81]], [[2015 Q88]], [[2014 Q16]], [[2014 Q20]], [[2014 Q23]], [[2014 Q40]], [[2014 Q50]], [[2014 Q76]]
-- Related JPMs: [[2014 JPM Sim-a]], [[2014 JPM Sim-e]], [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]], [[2016 JPM RO-A2]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2016 JPM Sim-h]], [[2015 JPM RO-A1-2]], [[2015 JPM RO-A2]], [[2015 JPM Sim-b]], [[2015 JPM Sim-g]], [[2015 JPM IP-j]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[AB.CR-0001 — Control Room Evacuation]], [[AB.RC-0002 — High Activity in the RCS]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[S1.OP-ST.CVC-0003 — Inservice Testing, 11 Charging Pump]], [[S2.OP-SO.CVC-0002 — Charging Pump Operation]], [[S2.OP-SO.CVC-0011 — RCS Degassification]], [[S2.OP-ST.CVC-0011 — Boration Flow Rate Test]], [[S1.OP-AR.ZZ-0012 — Control Console CC2]], [[S1.OP-SO.SJ-0001 — Preparation of the Safety Injection System for Operation]]
+- Related exam questions: [[2014 Q6]], [[2014 Q7]], [[2014 Q30]], [[2014 Q32]], [[2014 Q34]], [[2015 Q19]], [[2015 Q21]], [[2016 Q29]], [[2016 Q30]], [[2016 Q37]], [[2016 Q39]], [[2016 Q67]], [[2016 Q83]], [[2016 Q84]], [[2018 Q2]], [[2018 Q28]], [[2018 Q29]], [[2018 Q31]], [[2018 Q40]], [[2018 Q52]], [[2018 Q69]], [[2019 Q2]], [[2019 Q3]], [[2019 Q41]], [[2019 Q50]], [[2019 Q54]], [[2020 Q5]], [[2020 Q12]], [[2020 Q21]], [[2020 Q29]], [[2020 Q30]], [[2020 Q55]], [[2020 Q77]], [[2020 Q86]], [[2020 Q91]], [[2020 Q97]], [[2023 Q3]], [[2023 Q19]], [[2023 Q22]], [[2023 Q28]], [[2023 Q29]], [[2023 Q45]], [[2023 Q87]], [[2023 Q97]], [[2023 Q98]], [[2022 Q6]], [[2022 Q29]], [[2022 Q30]], [[2022 Q54]], [[2022 Q61]], [[2015 Q30]], [[2015 Q32]], [[2015 Q33]], [[2015 Q35]], [[2015 Q37]], [[2015 Q38]], [[2015 Q40]], [[2015 Q66]], [[2015 Q77]], [[2015 Q78]], [[2015 Q81]], [[2015 Q88]], [[2014 Q16]], [[2014 Q20]], [[2014 Q23]], [[2014 Q40]], [[2014 Q50]], [[2014 Q76]], [[2012 Q5]], [[2012 Q9]], [[2012 Q16]], [[2012 Q18]], [[2012 Q24]], [[2012 Q26]], [[2012 Q30]], [[2012 Q31]], [[2012 Q32]], [[2012 Q36]], [[2012 Q69]], [[2012 Q100]]
+- Related JPMs: [[2014 JPM Sim-a]], [[2014 JPM Sim-e]], [[2018 JPM IP-j]], [[2018 JPM SRO-A3]], [[2018 JPM Sim-b]], [[2019 JPM RO-A2]], [[2019 JPM IP-i]], [[2020 JPM IP-i]], [[2020 JPM SRO-A4]], [[2023 JPM Sim-c]], [[2022 JPM RO-A2]], [[2022 JPM IP-j]], [[2022 JPM Sim-b]], [[2016 JPM RO-A2]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2016 JPM Sim-h]], [[2015 JPM RO-A1-2]], [[2015 JPM RO-A2]], [[2015 JPM Sim-b]], [[2015 JPM Sim-g]], [[2015 JPM IP-j]], [[2012 JPM RO-A1-1]], [[2012 JPM RO-A2]], [[2012 JPM Sim-g]], [[2012 JPM IP-i]]
+- Related scenarios: [[2012 Scenario 1]], [[2012 Scenario 2]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]], [[2012 Scenario 3]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -290,6 +290,6 @@ A tripped 21 Diesel Fuel Oil Transfer Pump breaker (Modes 1-4) requires entering
 
 - Related systems: [[500KV]], [[4KV]], [[EDGs]], [[DC Power]], [[115V AC]]
 - Related exam questions: [[2015 Q15]], [[2016 Q91]], [[2016 Q96]], [[2018 Q21]], [[2019 Q58]], [[2019 Q79]], [[2019 Q83]], [[2019 Q89]], [[2019 Q90]], [[2023 Q89]], [[2015 Q92]], [[2014 Q58]], [[2014 Q93]]
-- Related JPMs: [[2020 JPM SRO-A3]]
+- Related JPMs: [[2020 JPM SRO-A3]], [[2012 JPM SRO-A1-2]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Operating Exam]]

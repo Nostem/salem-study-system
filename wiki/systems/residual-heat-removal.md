@@ -53,6 +53,11 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 | Fluid Temperature Range | 40–350°F | UFSAR T5.5-1 |
 | Material | Austenitic stainless steel | UFSAR T5.5-1 |
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-d</div>
+Restoring shutdown cooling after the in-service RHR pump trips (MODE 4): per AB.RHR-0001, place the alternate RHR loop (22, aligned for ECCS) in service via Attachment 2. Local actions open <span class="hi-exam">22RH12 (HX bypass isolation), 22RH17 (letdown isolation), and 22RH18-NS (letdown isolation air supply)</span>; control-room actions close 22RH18 / 21RH18 (pump flow control), 2RH20 (HX bypass), and <span class="hi-exam">21CC16</span> while opening <span class="hi-exam">22CC16</span> (HX CCW outlet), then START the 22 RHR pump and throttle 22RH18 / 2RH20 for flow. Acceptance: RHR flow <span class="hi-exam">stable 1800-3000 gpm</span> and RCS temperature stable or lowering; flow is summed as 21SJ49 + 22SJ49 RHR DISCH TO COLD LEGS flow.
+</div>
+
 ## Piping Design
 
 | Section | Pressure | Temperature | Source |
@@ -79,6 +84,11 @@ To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining consta
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q33</div>
+Confirms the cooldown-rate adjustment per S2.OP-SO.RHR-0001: to <span class="hi-exam">REDUCE the cooldown rate, throttle CLOSED on 21RH18 (RHR HX Flow Control valve) while throttling OPEN on 2RH20 (RHR HX Bypass valve)</span> — less water passes through the RHR HX while total RHR system flow stays constant. <span class="hi-trap">Throttling both RH18 and RH20 closed does NOT keep flow constant; throttling RH18 open (more HX flow) would raise the cooldown rate.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q31</div>
 RHR HX tube blockage from foreign material reduces heat transfer, lowering cooldown rate. To <span class="hi-exam">RESTORE the cooldown rate: raise 21RH18 demand</span> (increases flow through the partially blocked RHR HX to compensate) and <span class="hi-exam">lower 2RH20 demand</span> (decreases HX bypass flow, forcing more total flow through the HX). Per S2.OP-SO.RHR-0001. <span class="hi-trap">Trap: "raise demand" on RH18 OPENS the valve (more HX flow); "lower demand" on RH20 CLOSES the bypass (less bypass flow). Both actions increase heat removal through the HX.</span>
 </div>
@@ -98,6 +108,11 @@ SDC operation with 21 RHR loop in service: <span class="hi-exam">throttling 2RH2
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q13</div>
 On a loss of <span class="hi-exam">control air</span>, both 21RH18 (RHR HX FLOW CONT VALVE) and 2RH20 (RHR HX BYP VALVE) <span class="hi-exam">fail AS IS</span> — both are supplied air exclusively from the <span class="hi-exam">"A" air header (fed by the Unit 2 ECAC)</span>. During a station blackout (LOOP + all Unit 2 EDGs and ECAC failed), control air bleeds away and the valves stay at their last position. The <span class="hi-exam">console position indication remains accurate</span> because 115VB inverter power is available for at least <span class="hi-exam">2 hours following a LOPA</span>. <span class="hi-trap">These valves do NOT fail open or fail shut on loss of air — they fail as-is.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q34</div>
+A break in the air line to 21RH18 (RHR HX Outlet FCV) has <span class="hi-exam">NO effect on the RHR system</span> — the RH18 valves are <span class="hi-exam">fail as-is</span>, so losing the air supply leaves them at their current position and the stable shutdown-cooling conditions (190°F, 1800 gpm/loop, 2RH20 10% open) are unaffected. <span class="hi-trap">Distractors assume 21RH18 fails open (would cause a cooldown) or fails shut — it does neither. Per AB.CA-0001 (Loss of Control Air).</span>
 </div>
 
 <div class="callout callout-exam">
@@ -171,6 +186,11 @@ LOCA outside containment indication from RHR piping: <span class="hi-exam">OHA C
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 Sim-b</div>
 Loss of both RHR pumps in Mode 5 with RCS depressurized and vented (2PS59). 21 RHR Pump trips on electrical fault. Alternate path: <span class="hi-exam">22 RHR Pump trips shortly after starting</span>. With both pumps lost, navigate AB.RHR-0001 to Step 3.32 and select <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (preferred when core exit TCs <span class="hi-exam">&lt;200°F</span>). Valve lineup: open <span class="hi-exam">RWST outlet (2SJ1/2SJ2)</span>, close <span class="hi-exam">VCT outlet (2CV40/2CV41)</span>, open <span class="hi-exam">BIT inlet/outlet (2SJ4/2SJ5, 2SJ12/2SJ13)</span>, close <span class="hi-exam">charging discharge (2CV68/2CV69)</span> — establishing borated injection from RWST through BIT to cold legs via the running charging pump.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q79</div>
+To exit AB.RHR-0001 after a loss of RHR (normal restoration + local venting complete), <span class="hi-exam">RHR flow must be stable between 1800-3000 gpm</span>. Flow <span class="hi-exam">oscillating 1500-3000 gpm fails this gate</span>, so the procedure directs <span class="hi-exam">stopping any running RHR pump (Step 3.30) and initiating an alternate method of Decay Heat Removal (Step 3.32)</span>. With the highest CET <200°F and RCS intact, the preferred alternate is <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (not Attachment 7, Hot Leg). <span class="hi-trap">Because all RHR pumps are stopped, restarting the idle RHR pump is not directed.</span> See [[AB.RHR-0001 — Loss of RHR]].
 </div>
 
 <div class="callout callout-exam">
@@ -258,12 +278,22 @@ RHR pump 4KV vital bus power supplies: <span class="hi-exam">11 RHR pump from A 
 With RHR in service in Mode 5, an RCS pressure transient that exceeds <span class="val-trip">375 psig</span> (e.g., momentarily to 390 psig on starting a second RCP) opens both the <span class="hi-exam">PZR PORVs and the 1RH3 RHR SAF RLF VLV TO CONTAINMENT SUMP at their 375 psig setpoints</span>. <span class="hi-trap">The 1RH3 relief lifting is NOT apparent to the control room, but the PORV opening IS</span> — so the crew enters AB.PZR-0001 (PZR Pressure Malfunction), Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-exam">The 1RH2 RHR COMMON SUCT MOV has an OPENING interlock (RCS pressure &lt;375 psig + keyswitch) and does NOT auto-close on high pressure.</span> AB.LOCA-0001 (Shutdown LOCA) is used in Modes 3/4 with accumulators isolated, not Mode 5.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q86</div>
+Starting the second RCP in Mode 5 with RHR in service, RCS pressure momentarily rises to 390 psig: <span class="hi-exam">the 1RH3 RHR SAF RLF VLV TO CONTAINMENT SUMP opens at its 375 psig setpoint</span> (not apparent to the control room) and the PZR PORVs also open (apparent to the control room). Enter AB.PZR-0001, Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-trap">The 1RH2 RHR COMMON SUCT MOV does NOT auto-shut on high pressure — it has only an OPENING interlock (&lt;375 psig + keyswitch). AB.LOCA-0001 is not entered in Mode 5.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+On the LBLOCA following a false-SI reactor trip, the <span class="hi-exam">low-head ECCS (RHR) pumps fail to auto start</span> on the safeguards sequence. The RO manually starts <span class="hi-exam">21 and 22 RHR pumps</span>; <span class="hi-exam">CT#1 requires at least one RHR pump running before transitioning out of [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]</span>. In [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], both RHR pumps are aligned to the containment sump (21/22SJ44) for cold leg recirculation.
+</div>
+
 ## Connections
 
-- Related systems: [[Control Air]], [[EDGs]], [[DC Power]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]], [[AB.CA-0001 — Loss of Control Air]]
+- Related systems: [[Control Air]], [[EDGs]], [[DC Power]], [[CCW]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.RHR-0001 — Initiating RHR]], [[S1.OP-SO.SJ-0001 — Preparation of the Safety Injection System for Operation]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related exam questions: [[2014 Q4]], [[2014 Q8]], [[2014 Q33]], [[2014 Q34]], [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]], [[2014 Q24]], [[2014 Q87]]
-- Related JPMs: [[2014 JPM Sim-b]], [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]], [[2016 JPM Sim-b]], [[2015 JPM Sim-h]]
-- Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam questions: [[2014 Q4]], [[2014 Q8]], [[2014 Q33]], [[2014 Q34]], [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]], [[2014 Q24]], [[2014 Q87]], [[2012 Q3]], [[2012 Q6]], [[2012 Q12]], [[2012 Q15]], [[2012 Q20]], [[2012 Q24]], [[2012 Q25]], [[2012 Q33]], [[2012 Q34]], [[2012 Q36]], [[2012 Q79]], [[2012 Q86]], [[2012 Q93]]
+- Related JPMs: [[2014 JPM Sim-b]], [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]], [[2016 JPM Sim-b]], [[2015 JPM Sim-h]], [[2012 JPM Sim-d]]
+- Related scenarios: [[2012 Scenario 1]], [[2012 Scenario 2]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

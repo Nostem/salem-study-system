@@ -43,10 +43,15 @@ Same rod surveillance. Step 5.1.10.B-G: place Bank Selector in CBD, insert <span
 Rev. 22 (Section 5.1) Shutdown Bank operability verification — different alternate path from the Control Bank D variant. CRS directs Steps 5.1.2 through 5.1.9 in order, with 15 steps of rod insertion for each bank to ensure each rod moves at least 10 steps. For Shutdown Bank A (Step 5.1.3): verify Tavg ±1°F of Tref, place Bank Selector in <span class="hi-exam">SBA</span>, verify GRP. SELECT "C" lights at Power Cabinets <span class="hi-exam">21AC and 22AC</span>, insert at least 10 steps, verify on P-250, restore to ARO. For Shutdown Bank B (Step 5.1.4): same flow, SBB position, Power Cabinets <span class="hi-exam">21BD and 22BD</span>. <span class="hi-exam">Alternate path: with SBB inserted, 21 SGFP trips. P&L 3.13 governs — operator must manually trip the reactor</span>; placing the Rod Bank Selector to MAN or AUTO in this configuration is failure criteria.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-a</div>
+Rev. 20 Shutdown Bank operability verification at steady-state 100% power. Insert Shutdown Bank A (Step 5.1.2): Bank Selector in <span class="hi-exam">SBA</span>, GRP. SELECT "C" lights at Power Cabinets <span class="hi-exam">21AC and 22AC</span>, maneuver ≥10 steps, verify on P-250, restore to ARO. Insert Shutdown Bank B (Step 5.1.3): Bank Selector in <span class="hi-exam">SBB</span>, Power Cabinets <span class="hi-exam">21BD and 22BD</span>, maneuver ≥10 steps. <span class="hi-exam">Alternate path: while checking rod position after SBB insertion, 21 SGFP trips — operator must manually trip the reactor per P&L 3.13</span>; moving the Rod Bank Selector Switch to MAN or AUTO under these conditions is failure criteria.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Control Rod Drive]]
 - Related procedures: [[AB.ROD-0003 — Continuous Rod Motion]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]]
 - Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
-- Related JPMs: [[2023 JPM Sim-a]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]], [[2016 JPM Sim-a]]
-- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related JPMs: [[2023 JPM Sim-a]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]], [[2016 JPM Sim-a]], [[2012 JPM Sim-a]]
+- Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Operating Exam]]

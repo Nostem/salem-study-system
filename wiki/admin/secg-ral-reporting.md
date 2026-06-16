@@ -43,6 +43,6 @@ A <span class="hi-exam">manual reactor trip for a planned refueling outage is NO
 
 ## Connections
 
-- Related procedures: [[OP-AA-108-107-1001 — Electric System Emergency Operations]]
-- Related exam questions: [[2022 Q87]], [[2015 Q97]], [[2014 Q78]]
-- Related exam: [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related procedures: [[OP-AA-108-107-1001 — Electric System Emergency Operations]], [[EP-SA-111-101 — Emergency Classification and ICMF]]
+- Related exam questions: [[2022 Q87]], [[2015 Q97]], [[2014 Q78]], [[2012 Q100]]
+- Related exam: [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

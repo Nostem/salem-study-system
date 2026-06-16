@@ -43,6 +43,11 @@ Entry-condition setpoints: <span class="hi-exam">OHA B-13 (21 SW HDR PRESS LO) a
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q62</div>
+For a SW leak just upstream of 23SW39 (2C DIESEL CLG SW VLV) in the 2C EDG room: the <span class="hi-exam">standby SW pump auto-starts at 95.5 psig</span>, and per Step 3.11 the crew <span class="hi-exam">locks out 2C EDG (declare INOPERABLE) and isolates the leak by shutting BOTH 21SW37 AND 22SW37</span> (the 2C Diesel Clg SW inlet valves — isolating both header supplies to the 2C diesel cooler). <span class="hi-trap">Per Attachment 4 Steps 4.0 B and C, the leak cannot be isolated with 21SW21/22SW21 — those valves would render ALL EDGs inoperable.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q92</div>
 AB.SW-0001 (Loss of SW Header Pressure) <span class="hi-exam">Attachment 2 directs reduction of SW loads (Loads Affected by a Loss of Service Water)</span>. <span class="hi-trap">The charging-pump swap action is NOT in AB.SW-0001 — it lives in AB.SW-0005 (Loss of All Service Water).</span> AB.SW-0001 is the correct entry procedure ONLY when there is actually a degraded header (i.e., a SW pump remains capable of running) — not when a 4KV Bus Differential leaves no powered SW pumps.
 </div>
@@ -86,7 +91,7 @@ A #2 SW Bay leak first brings in unexpected SW alarms and lowering SW header pre
 
 - Related systems: [[Service Water]], [[CFCUs]], [[EDGs]], [[CCW]]
 - Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]], [[AB.SW-0005 — Loss of All Service Water]], [[AB.SW-0003 — Service Water Bay Leak]]
-- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]], [[2015 Q80]], [[2014 Q47]], [[2014 Q83]]
+- Related exam questions: [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2020 Q14]], [[2020 Q52]], [[2020 Q89]], [[2022 Q16]], [[2015 Q80]], [[2014 Q47]], [[2014 Q83]], [[2012 Q62]], [[2012 Q82]]
 - Related JPMs: [[2016 JPM Sim-e]]
 - Related scenarios: [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 3]], [[2014 Scenario 3]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

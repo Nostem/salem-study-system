@@ -342,9 +342,15 @@ Core Alterations in Mode 6 require, among others, <span class="hi-exam">2 Source
 <span class="hi-trap">TSAS 3.9.3: the reactor need NOT be subcritical for 168 hours before moving fuel during Oct 15–May 15</span>; direct/continuous control-room↔refuel-floor communication is a CORE ALTERATION requirement. Head detensioning is not a core alteration. See [[Refueling]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q98</div>
+TSAS 3.9.3.a: for refueling outages <span class="hi-exam">Oct 15 – May 15 the reactor must be subcritical for 80 hours</span> prior to movement of irradiated fuel in the Reactor Pressure Vessel (ensures decay of short-lived fission products consistent with the fuel handling accident analysis, LAR S08-01). For a manual trip at 2000 on January 21st, the earliest fuel movement is <span class="hi-exam">80 hours later = 0400 on January 25th</span>. <span class="hi-trap">168 hours (May 16 – Oct 14) would give 2000 on January 28th — wrong season; 0400 on January 26th is the right time of day but one day late.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[RHR]], [[CVCS]], [[Rx Vessel & Internals]], [[Refueling]], [[FHV]], [[Spent Fuel Pool]]
 - Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
-- Related exam questions: [[2016 Q68]], [[2016 Q80]], [[2020 Q94]], [[2015 Q67]], [[2015 Q95]]
-- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related exam questions: [[2016 Q68]], [[2016 Q80]], [[2020 Q94]], [[2015 Q67]], [[2015 Q95]], [[2012 Q98]]
+- Related JPMs: [[2012 JPM SRO-A1-2]]
+- Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

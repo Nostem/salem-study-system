@@ -114,11 +114,21 @@ Per S2.OP-SO.SF-0009 (Refueling Operations) P&amp;L 3.13, transfer of fuel into 
 <span class="hi-exam">OHA C-27 SFP Lvl Hi annunciates at 6" above normal level</span>, which is expected to occur with a pool heatup of ~14 degrees (per the CAUTION on top of page 2 of AB.SF-0001 — pool expansion raises level). With one SFP cooling pump failed and pool temperature rising, this High Level OHA is the expected plant response. The <span class="hi-exam">SFP demineralizer does NOT auto-bypass</span> — it is <span class="hi-exam">manually removed from service IAW AB.SF CAS item 2.0 when actual or projected SFP temp is 130&deg;F</span>. <span class="hi-trap">The 136&deg;F auto-bypass belongs to the CVCS demin, NOT the SFP demin.</span> Per S2.OP-IO.ZZ-0010 (IOP-10) P&amp;L 3.4, <span class="hi-exam">transfer of spent fuel into the SFP is suspended until BOTH SFP cooling pumps are OPERABLE</span> — so the failed pump must be restored before remaining fuel bundles can be transferred.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q48</div>
+There are <span class="hi-trap">neither automatic SFP cooling pump trips nor automatic makeup</span> to the SFP. Fuel uncovery on a cooling-pump leak is prevented by passive design: the <span class="hi-exam">SFP cooling pump suction line is ~4 ft below the pool surface</span> (limits level loss if the cooling system leaks), the <span class="hi-exam">return line discharges ~6 ft above the top of the fuel</span>, and a <span class="hi-exam">1/2 inch anti-siphon hole drilled in the RETURN line</span> prevents siphoning the pool back to the cooling pumps. <span class="hi-trap">Anti-siphon hole is on the return line, not the suction line; the suction line is below the surface, not the discharge line.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A1-2</div>
+Direct Actions for Spent Fuel Movement (S2.OP-IO.ZZ-0010): determine which scheduled work suspends fuel movement. Only the <span class="hi-exam">New Fuel delivery requires suspension</span> — it requires opening the Truck Bay door to the Fuel Handling Building, which IOP-10 (p.17) requires to stay closed during fuel movement (FHB ventilation boundary). The traps do NOT require suspension: only one EDG is required (TSAS 3.8.1.2), a single SW pump out does not enter SW Tech Specs, and a chiller may be removed with a 14-day window (TSAS 3.7.10, 3.0.4 not applicable).
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]], [[Radiation Monitoring]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-SO.SF-0009 — Refueling Operations]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]], [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.CC-0001 — Loss of Component Cooling Water]]
-- Related exam questions: [[2014 Q9]], [[2014 Q13]], [[2014 Q50]], [[2014 Q68]], [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]], [[2014 Q80]], [[2014 Q90]]
-- Related JPMs: [[2016 JPM SRO-A1-2]]
-- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related exam questions: [[2014 Q9]], [[2014 Q13]], [[2014 Q50]], [[2014 Q68]], [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]], [[2014 Q80]], [[2014 Q90]], [[2012 Q48]], [[2012 Q90]], [[2012 Q95]], [[2012 Q98]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2012 JPM SRO-A1-2]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

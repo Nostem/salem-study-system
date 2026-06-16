@@ -40,8 +40,13 @@ Section 5.3, "Reducing PRT Temperature by Feed and Bleed": PRT liquid is pumped 
 <strong>Section 5.1 — Adjust PRT level using Primary Water:</strong> required when 2PR1 is leaking and PRT level/pressure are out of band. Step sequence: (5.1.1.A) IF required, START 21 or 22 Primary Water Pump; (5.1.1.B) OPEN 2WR80, CONT PRI WATER STOP; (5.1.1.C) OPEN 2WR82, PRT WATER SUPPLY; <span class="hi-exam">(5.1.1.D) IF PRT pressure approaches 10 psig, THEN OPEN 2PR15 (VENT) to maintain PRT pressure &gt;3 psig and ≤10 psig</span>; (5.1.1.E) When PRT level rises to between 59% and 86%: CLOSE 2WR80, CLOSE 2WR82, ENSURE 2PR15 closed, then STOP running Primary Water Pump if not required for other reasons. <span class="hi-trap">If the PRT Hi Pressure alarm is received, it locks out 2PR15 from opening — pressure cannot be reduced. The 3 psig lower bound maintains a positive nitrogen overpressure on the tank to prevent oxygen ingress.</span> The procedure note explicitly permits performing the pressure-reduction step BEFORE raising level if pressure is already close to maximum.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-f</div>
+Same Section 5.1 evolution tested directly: starting at PRT level 55.9% with PRT pressure 9.8 psig (already near the maximum) and a PRT Level Hi-Lo alarm, raise PRT level to 60% IAW Section 5.1. <span class="hi-exam">Task standard: raise PRT level to &gt;57% while maintaining PRT pressure &gt;3 and ≤10 psig.</span> Because pressure is already close to maximum, the operator throttles 2PR15 VENT (step 5.1.1.D) as level rises — opening before pressure exceeds 10.0 psig and closing before it drops below 3.1 psig.
+</div>
+
 ## Connections
 - Related systems: [[Pressurizer & PRT]]
 - Related exam questions: [[2018 Q6]], [[2019 Q6]], [[2022 Q34]], [[2023 Q32]]
-- Related JPMs: [[2016 JPM Sim-f]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM Sim-f]], [[2012 JPM Sim-f]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Operating Exam]]

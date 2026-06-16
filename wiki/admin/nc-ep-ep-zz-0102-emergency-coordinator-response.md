@@ -47,9 +47,14 @@ EP-SA-111-F2 (ALERT) Attachment 2 step A.2 directs: <span class="hi-exam">if a S
 The same Attachment A.2 step appears in all three 2015 ESG classification JPMs (ECG Attachment 2 ALERT and Attachment 3 SAE): <span class="hi-exam">IF a Security Event is in progress, THEN IMPLEMENT the prompt actions of NC.EP-EP.ZZ-0102, EC Response, Attachment 10, prior to the classification</span>. In each JPM the candidate determines a Security Event is NOT in progress and proceeds with classification.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A4-1/-2/-3 (ESG-1/-2/-3)</div>
+The same Attachment A.2 step appears in all three 2012 ESG classification JPMs (ECG Attachment 2 ALERT and Attachment 3 SAE): <span class="hi-exam">IF a security Event is in progress, THEN IMPLEMENT the prompt actions of NC.EP-EP.ZZ-0102, EC Response, Attachment 10, prior to the classification</span>. In each JPM the candidate determines a Security Event is NOT in progress and proceeds with classification.
+</div>
+
 ## Connections
 
 - Related admin: [[EP-SA-111 — Emergency Classification and Protective Action]], [[EP-SA-325 — Emergency Plan Implementing Procedures]]
 - Related exam questions: [[2022 Q100]], [[2020 Q99]]
-- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]]
-- Related exam: [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2012 JPM SRO-A4-1 (ESG-1)]], [[2012 JPM SRO-A4-2 (ESG-2)]], [[2012 JPM SRO-A4-3 (ESG-3)]]
+- Related exam: [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Operating Exam]]

@@ -264,6 +264,11 @@ SR 4.0.2 25% extension applied to a MONTHLY (31 day) EDG surveillance: <span cla
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q97</div>
+Bank parent of 2016 Q91 — identical scenario. Per SR 4.0.2, a MONTHLY (31 day) surveillance may be extended up to 25% (31 + 7.75 = <span class="hi-exam">38.75 days</span>). With the 2A EDG monthly surveillance last performed 33 days ago, 2A EDG is <span class="hi-exam">OPERABLE because the normal interval plus 25% extension has not been exceeded</span>. <span class="hi-trap">The 31-day requirement alone (INOPERABLE) ignores the 25% extension; the SR 4.0.3 24-hour delay is N/A because the SR 4.0.2 allowance is longer and 2A is not yet out of periodicity.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q96</div>
 LCO 3.0.3 application — <span class="hi-exam">only ONE PZR Code Safety can be inoperable in MODES 1-3</span> per LCO 3.4.3. With all 3 PZR Code Safety valves having actual lift pressure of <span class="hi-exam">2735 psig</span> (above the LCO band), no specific TS action exists for that combined condition → <span class="hi-exam">LCO 3.0.3 applies: 1 hour to begin shutdown + 6 hours to Hot Standby = 7 hours total</span>. From discovery at 1200 → Hot Standby required by <span class="hi-exam">1900</span>. <span class="hi-trap">Trap: the other distractors all carry their own specific TS action with longer completion times (24 hours for an inoperable accumulator, 24 hours for an inoperable airlock, 2 hours + 6 hours = 8 hours for two inoperable EDGs starting at 1400) — none drive Hot-Standby-by-1900.</span>
 </div>
@@ -292,5 +297,5 @@ TS 3.0.3 is the entry point when an LCO has <span class="hi-exam">no ACTION for 
 
 - Related systems: [[Diesel Generators]], [[Incores]]
 - Related procedures: [[OP-AA-108-116 — Protected Equipment Program]], [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]], [[RP-SA-102 — Containment Entries at Power]]
-- Related exam questions: [[2016 Q91]], [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q88]], [[2018 Q96]], [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]], [[2014 Q98]], [[2014 Q93]], [[2014 Q94]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam questions: [[2016 Q91]], [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q88]], [[2018 Q96]], [[2019 Q79]], [[2019 Q84]], [[2019 Q89]], [[2020 Q97]], [[2014 Q98]], [[2014 Q93]], [[2014 Q94]], [[2012 Q97]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

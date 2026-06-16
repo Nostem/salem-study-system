@@ -164,14 +164,34 @@ Manual QPTR from the four Power Range NI Upper/Lower detector currents (N41-N44)
 During a reactor startup (S2.OP-IO.ZZ-0003), once SR/IR overlap of <span class="hi-exam">≥1 decade</span> is observed and P-6 energizes (½ IR channels at <span class="hi-exam">10⁻¹⁰ amps</span>, 2RP4), the operator blocks the Source Range High Flux Trip with both BLOCK SOURCE RANGE A and B pushbuttons. <span class="hi-exam">Alternate path: BLOCK SOURCE RANGE B does NOT illuminate (Channel B fails to block), so the operator must insert Control Bank D to drive SUR zero/negative before the reactor auto-trips on High Source Range Flux at 1E5 cpm.</span> A successful block illuminates the TRIP BLOCKED blue light on 2RP4 and brings up OHA E-5 SR DET VOLT TRBL.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q13</div>
+1D 115V Vital Instrument Bus powers Power Range NIS Channel IV (PRNI CH IV). With Unit 1 in MODE 2 at 4% power, a loss of 1D VIB illuminates (one minute later, no operator action) the <span class="hi-exam">Yellow High Flux PRNI CH IV lamp on Reactor Status Panel 1RP4 for BOTH the High Power and Low Power High Flux trips</span>. <span class="hi-trap">No reactor trip results — the High Flux trip is 2/4 coincidence, so loss of one channel gives no trip demand.</span> <span class="hi-trap">The Over Power Rod Stop Manual Bypass for CH IV is NOT automatic (must be manually aligned).</span> See [[AB.115-0004 — Loss of 1D 115V Vital Instrument Bus]], [[115V AC]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q43</div>
+After a trip, IRNI current normally continues to lower until off-scale, and <span class="hi-exam">Source Range channels automatically energize when IRNI current lowers to ~7.0 E-11 Amps</span>. An IRNI reading HIGHER than expected together with an abnormally low SUR indicates an <span class="hi-trap">OVER-compensated</span> instrument. Per EOP-TRIP-2 step 38, Source Range channels are manually energized only if both IRNIs are not &lt;7E-11 A AND under-compensation is preventing proper operation. See [[EOP-TRIP-2 — Reactor Trip Response]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+The <span class="hi-exam">Intermediate Range bistable alarm setpoint is 25%</span>. During a power ascension at 15% power (prior to rolling the Main Turbine), an IR bistable illuminating is <span class="hi-exam">NOT expected at that power level</span> — and while the bistable WILL light at 25%, its <span class="hi-exam">output is already blocked because the IR Hi Flux trip was blocked above P-10</span>. So the power ascension may continue while investigating the cause; no failure of the trip block has occurred and power need not be lowered.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 RO-A1-2</div>
+Perform a Manual AFD Calculation (S1.OP-ST.NIS-0001, Attachment 3) after the AFD Monitor Alarm is inoperable at 73% power. Scale the 100% AFD Target of <span class="hi-exam">-1.5</span> to present power: 73 × -1.5 / 100 = <span class="hi-exam">-1.1</span>. Target band = Upper +6 + (-1.1) = <span class="hi-exam">+4.9</span>; Lower -9 + (-1.1) = <span class="hi-exam">-10.1</span> (limits inclusive). The discriminating recognition: only <span class="hi-exam">Channel III (-10.2) is outside the lower limit of -10.1</span> (Channels I -8.9, II -8.6, IV -9.3 are inside) → continue data recording IAW Section 5.4.
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
-- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
+- Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]], [[115V AC]]
+- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[AB.115-0004 — Loss of 1D 115V Vital Instrument Bus]], [[S2.OP-IO.ZZ-0003 — Hot Standby to Minimum Load]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related tech specs: [[TS 3/4.3 — Instrumentation]]
-- Related JPMs: [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]], [[2014 JPM Sim-g]]
-- Related exam questions: [[2014 Q12]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]]
-- Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related JPMs: [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]], [[2014 JPM Sim-g]], [[2012 JPM RO-A1-2]]
+- Related exam questions: [[2014 Q12]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]], [[2012 Q13]], [[2012 Q43]], [[2012 Q87]]
+- Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]
   - [[2015 Q67]] — Mode 6 Core Alterations require 2 Source Range NIs operable (LCO 3.9.2); one inoperable SR NI prevents core alterations
   - [[2015 Q89]] — second IRNI channel fails erratically: enter AB.NIS-0001 / TS 3.0.3 (Hot Standby within 6 hours); single-IRNI loss excluded from LCO 3.0.3
   - [[2016 Q38]] — Block Power Range A and B pushbuttons at 12% blocks the 25% PR low setpoint Rx trip
@@ -189,5 +209,6 @@ During a reactor startup (S2.OP-IO.ZZ-0003), once SR/IR overlap of <span class="
   - [[2016 Q70]] — AFD penalty minutes / 50–90% power / power must reduce &lt;50% within 30 min after 60 penalty min
   - [[2016 Q83]] — SR NIs not energized + IR SUR -0.2 dpm criterion for FRSM-2 YELLOW (overridden by FRTS-1 PURPLE)
   - [[2014 Q17]] — each 115VAC VIB loss deenergizes its channel PRNI High-Power bistable (a rod-withdrawal block); 2A loss drives rods in (PT-505), 2D loss freezes rods "as is" (power reduction via boration)
+  - [[2012 Q87]] — IR bistable 25% alarm setpoint illuminates during ascension but is not expected at 15%; output already blocked (IR Hi Flux trip blocked above P-10), power ascension continues
 - Related JPMs: [[2018 JPM RO-A1]], [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2020 JPM Sim-f]], [[2015 JPM Sim-a]], [[2015 JPM Sim-f]], [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]]
 - Related scenarios: [[2015 Scenario 1]]

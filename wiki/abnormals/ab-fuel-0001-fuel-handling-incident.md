@@ -46,8 +46,13 @@ AB.FUEL-0001 <span class="hi-exam">CAS 1.0 directs ALL personnel to evacuate the
 With an irradiated fuel assembly in the mast and emergency position P-10 already full, the assembly is placed into <span class="hi-exam">its designated core position</span> (fuel-loading considerations preclude placing it in "the first available position"). The <span class="hi-exam">Fuel Transfer Cart must be sent to containment before the fuel transfer canal gate valve is shut</span> (the gate valve can only be fully closed with the cart inside containment). <span class="hi-trap">The Iodine Removal Unit (IRU) is NOT started unless specifically requested by Rad Pro when iodine is present in containment — no such indication in this scenario.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q90</div>
+Same evolution as 2016 Q88 (this question is the bank parent): dropped fuel assembly in the Unit 2 SFP with gas bubbles observed and <span class="hi-exam">2R5 FHB radiation monitor stabilizing at 25 mR/hr</span> automatically <span class="hi-exam">swaps FHB ventilation to the Charcoal Filter and starts BOTH FHB Exhaust Fans</span> (normal lineup is single Supply Fan with both Exhaust Fans running). The crew also <span class="hi-exam">ensures the FHB Watertight Door remains closed except for normal personnel passage</span>. <span class="hi-trap">The 2R5 area monitor does NOT lock out crane motion — only the 2R32A monitor on the crane itself does. Non-essential personnel are evacuated, but actions are performed prior to evacuating ALL personnel.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Radiation Monitoring]], [[Refueling]], [[Spent Fuel Pool]], [[FHV]]
-- Related exam questions: [[2014 Q13]], [[2016 Q88]], [[2019 Q68]], [[2020 Q82]], [[2022 Q22]], [[2014 Q80]]
-- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]]
+- Related exam questions: [[2014 Q13]], [[2016 Q88]], [[2019 Q68]], [[2020 Q82]], [[2022 Q22]], [[2014 Q80]], [[2012 Q90]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2012 NRC Written Exam]]

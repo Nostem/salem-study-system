@@ -81,6 +81,11 @@ Secondary Communicator duties (EP-SA-111-F8, Attachment 8 Secondary Communicator
 Same Secondary Communicator Log (EP-SA-111-F8, Attachment 8) during an ALERT, with two discriminating elements: (1) <span class="hi-exam">activate EROS by selecting the correct unit (Salem 2) CONNECT button</span> on the EROS Link Control and Status Display and verify "Messages Sent" increments above 0; (2) on an incoming <span class="hi-exam">media call</span> (CNN asking about a reported Unit 2 core melt), the communicator must <span class="hi-trap">refuse to release any information to the News Media</span> per Attachment 8, Section C, Incoming Calls. EROS is terminated (Salem 2 DISCONNECT) only when directed by the NRC. (Admin JPM — performed in the Classroom; cover EVALUATION SETTING reads "Simulator".)
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A4-1 / A4-2 / A4-3 (ESG-1/2/3)</div>
+Three ESG-tied SM classification + ICMF time-critical JPMs (Task 1240020502). After classifying, the SM directs the Primary Communicator to implement <span class="hi-exam">ECG Attachment 6</span> (notifications) and provides the completed ICMF within <span class="hi-exam">15 minutes of Start Time</span>. ESG-1 = <span class="hi-exam">ALERT RB2.L</span> (escalates to <span class="hi-exam">SAE RB2.L AND CB5.L</span> if the cavitating charging pump fails); ESG-2 = <span class="hi-exam">ALERT RB3.L</span>; ESG-3 = <span class="hi-exam">SAE FB2.P AND RB2.P</span>. Each uses ICMF Section IV wind speed/direction from SPDS and Section V "NO PROTECTIVE ACTIONS ARE RECOMMENDED AT THIS TIME" (no PAR for Alert or SAE). (Time-critical Admin JPMs — Classroom.)
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q75</div>
 State notifications (Delaware and New Jersey): the Primary Communicator's PRIMARY method is the <span class="hi-exam">NETS (Nuclear Emergency Telecommunications System) closed-circuit phones</span> (ESSX is the backup), and notifications must be made <span class="hi-exam">within 15 minutes of an emergency declaration</span> — even when a lower-classification emergency is already in progress.
@@ -91,9 +96,14 @@ State notifications (Delaware and New Jersey): the Primary Communicator's PRIMAR
 <span class="hi-exam">A General Emergency initial declaration (ICMF) requires a Protective Action Recommendation (PAR)</span> — a Rapidly Progressing Severe Accident PAR, a Hostile Action PAR, or a default PAR (EP-SA-111-F4, Attachment 4) — one of which must be made. A wind shift does not drive a PAR upgrade if a Security Event caused the GE; a "radiological release" is any release above normal; and the PAR is not based on Emergency Coordinator judgment of exceeding 10CFR100 limits.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q85</div>
+The <span class="hi-trap">15 minute times are for State notifications (DE/NJ) during emergencies, NOT the NRC</span>. The <span class="hi-exam">NRC is not required to be notified for 60 minutes</span>. A subsequent NRC notification is required when a more-severe E-plan classification is made: with a SAE already declared (FB4.L and RB2.L, 5 points each), <span class="hi-exam">containment radiation &gt;2000 R/hr adds 2 points from the containment barrier → escalates to a General Emergency</span>, which requires the subsequent 60 minute NRC notification. A wind shift while in a SAE requires no notification (no PAR is made for a SAE).
+</div>
+
 ## Connections
 
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[NC.EP-EP.ZZ-0102 — Emergency Coordinator Response]], [[EP-SA-111-101 — Emergency Classification and ICMF]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[EP-SA-111-121 — Salem ECG Fission Product Barrier Table]]
-- Related exam questions: [[2016 Q71]], [[2016 Q81]], [[2019 Q100]], [[2015 Q75]], [[2015 Q100]]
-- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM RO-A4]], [[2022 JPM SRO-A5]], [[2015 JPM RO-A4]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM RO-A4]], [[2014 JPM SRO-A4]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam questions: [[2016 Q71]], [[2016 Q81]], [[2019 Q100]], [[2015 Q75]], [[2015 Q100]], [[2012 Q83]], [[2012 Q85]]
+- Related JPMs: [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2018 JPM SRO-A5]], [[2019 JPM RO-A4]], [[2022 JPM SRO-A5]], [[2015 JPM RO-A4]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM RO-A4]], [[2014 JPM SRO-A4]], [[2012 JPM SRO-A4-1 (ESG-1)]], [[2012 JPM SRO-A4-2 (ESG-2)]], [[2012 JPM SRO-A4-3 (ESG-3)]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Operating Exam]]

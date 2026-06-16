@@ -40,5 +40,5 @@ With 1R41D Plant Vent Release Rate failed AND no full operable channel set, ODCM
 - Related systems: [[Waste Gas]]
 - Related procedures: [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0007 — Transfer of Waste Gas]]
 - Related exam questions: [[2016 Q98]], [[2020 Q98]]
-- Related JPMs: [[2016 JPM SRO-A3]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related JPMs: [[2016 JPM SRO-A3]], [[2012 JPM SRO-A3]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2012 NRC Operating Exam]]

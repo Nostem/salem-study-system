@@ -364,12 +364,32 @@ A reduction in a single RC loop flow (e.g., 11 loop −5%) lowers <span class="h
 A 25 gpm RCS leak is diagnosed from <span class="hi-exam">rising charging flow, slowly lowering PZR level, rising 2R11A containment radiation, and OHA C-2 CNTMT SUMP PMP START</span>. Crew enters AB.RC-0001, quantifies the leak with S2.OP-ST.RC-0008 (RCS Water Inventory Balance), and enters <span class="hi-exam">TSAS 3.4.7.2.b (action b) for unidentified RCS leakage and 3.5.2.a (action a) for ECCS</span>. The leak then worsens into an SBLOCA requiring a reactor trip and SI. See [[2014 Scenario 3]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q51</div>
+On a turbine-trip-induced reactor trip with the Steam Dumps failing to ARM, the SG Atmospheric Relief Valves (MS10s) open and <span class="hi-exam">RCS Tavg stabilizes at ~551-552°F</span>. RCS pressure rises but PZR spray opens fully to keep it below ~2335 psig — the PORVs and PZR Safeties do NOT open. See [[Steam Dumps]], [[Pressurizer & PRT]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q66</div>
+On a loss of RCP seal injection, reactor coolant flows up the shaft across the <span class="hi-exam">RCP thermal-barrier heat exchanger (cooled by CCW)</span>, which protects the radial bearing and seals from the heat of the RCS and provides their coolant/lubricant. See [[RCPs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q73</div>
+When the SMM is inoperable, RCS saturation/subcooling is determined per EOP-CFST-1 using <span class="hi-exam">RCS pressure (PI-403 or PI-405)</span> with the CFST Subcooling Tables; RCS temperature uses <span class="hi-exam">CETs (WR Thot RTDs if CETs unavailable)</span>. See [[EOP-CFST-1 — Critical Safety Function Status Trees]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+A <span class="hi-exam">Large Break LOCA occurs ~5 min after the false-SI reactor trip</span>, with the RCS rupture on the 21 loop (<span class="hi-exam">21 SG pressure lower than the other SGs</span>). The <span class="hi-exam">RCPs are stopped</span> on the SI/LOCA per [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]. Cold leg recirculation transfer occurs at <span class="hi-exam">RWST 15.2 ft</span> per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]].
+</div>
+
 ## Connections
 
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]], [[AB.RC-0002 — High Activity in the RCS]]
-- Related exam questions: [[2014 Q3]], [[2014 Q4]], [[2014 Q8]], [[2014 Q29]], [[2015 Q19]], [[2015 Q21]], [[2015 Q22]], [[2015 Q23]], [[2015 Q24]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q25]], [[2016 Q28]], [[2016 Q52]], [[2016 Q77]], [[2016 Q79]], [[2016 Q81]], [[2016 Q83]], [[2016 Q84]], [[2016 Q86]], [[2018 Q3]], [[2018 Q63]], [[2018 Q65]], [[2018 Q70]], [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]], [[2015 Q29]], [[2015 Q33]], [[2015 Q36]], [[2015 Q85]], [[2015 Q98]], [[2014 Q15]], [[2014 Q22]], [[2014 Q23]], [[2014 Q26]], [[2014 Q86]]
-- Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2016 JPM Sim-d]], [[2015 JPM RO-A1-2]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM RO-A1-1]], [[2014 JPM SRO-A4]], [[2014 JPM Sim-e]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]
+- Related exam questions: [[2014 Q3]], [[2014 Q4]], [[2014 Q8]], [[2014 Q29]], [[2015 Q19]], [[2015 Q21]], [[2015 Q22]], [[2015 Q23]], [[2015 Q24]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q25]], [[2016 Q28]], [[2016 Q52]], [[2016 Q77]], [[2016 Q79]], [[2016 Q81]], [[2016 Q83]], [[2016 Q84]], [[2016 Q86]], [[2018 Q3]], [[2018 Q63]], [[2018 Q65]], [[2018 Q70]], [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]], [[2015 Q29]], [[2015 Q33]], [[2015 Q36]], [[2015 Q85]], [[2015 Q98]], [[2014 Q15]], [[2014 Q22]], [[2014 Q23]], [[2014 Q26]], [[2014 Q86]], [[2012 Q21]], [[2012 Q23]], [[2012 Q29]], [[2012 Q51]], [[2012 Q66]], [[2012 Q73]], [[2012 Q94]]
+- Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2016 JPM Sim-d]], [[2015 JPM RO-A1-2]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]], [[2014 JPM RO-A1-1]], [[2014 JPM SRO-A4]], [[2014 JPM Sim-e]], [[2012 JPM SRO-A4-1 (ESG-1)]], [[2012 JPM SRO-A4-2 (ESG-2)]], [[2012 JPM SRO-A4-3 (ESG-3)]]
+- Related scenarios: [[2012 Scenario 1]], [[2012 Scenario 2]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]], [[2012 Scenario 3]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

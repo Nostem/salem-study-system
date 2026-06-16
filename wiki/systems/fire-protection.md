@@ -62,11 +62,16 @@ Beyond supplying fire-protection water, <span class="hi-exam">Fresh Water / Fire
 A <span class="hi-exam">Main Power Transformer (MPT) Phase 1 Sudden Pressure alarm (CRT point 529)</span> with FP <span class="hi-exam">deluge actuation at MPT Zone 46</span> occurs; OHA A-15 FIRE PUMP 1/2 RUN annunciates when either Diesel Drive Fire Pump starts. Field operator reports water spraying over MPT Phase 1 with heavy arcing/sparking. The CRS removes the Main Generator from service and trips the reactor (power &gt; P-9).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q64</div>
+Early-warning Smoke/Fire Detectors provide the Control Room with early fire indication but <span class="hi-exam">do NOT cause a suppression system to actuate</span>. When a zone detector actuates: the <span class="hi-exam">zone indicating lamp and the group "FIRE" lamp illuminate on the 2RP5 Fire Protection Panel</span>, OHA A-7 (FIRE PROT FIRE) annunciates, and the coded fire alarm broadcasts over the station PA. <span class="hi-exam">The alarm stays illuminated until the zone is manually reset from the fire protection panels in the Relay Room</span> (not the Control Room).
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[EDGs]]
 - Related procedures: [[AB.FIRE-0001 — Control Room Fire Response]], [[AB.FP-0001 — Fire Protection System Malfunction]], [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]], [[S2.OP-SO.AF-0001 — Auxiliary Feedwater System Operation]]
-- Related exam questions: [[2015 Q17]], [[2016 Q64]], [[2019 Q38]], [[2020 Q65]], [[2020 Q75]], [[2015 Q63]]
+- Related exam questions: [[2015 Q17]], [[2016 Q64]], [[2019 Q38]], [[2020 Q65]], [[2020 Q75]], [[2015 Q63]], [[2012 Q26]], [[2012 Q64]], [[2012 Q92]], [[2012 Q99]]
 - Related JPMs: [[2022 JPM Sim-h]]
 - Related scenarios: [[2015 Scenario 2]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

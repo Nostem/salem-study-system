@@ -92,11 +92,21 @@ OP-AA-101-111-1003 is cited for the criterion that <span class="hi-exam">on Unit
 Listed among the scenario's technical references — the crew works the SBLOCA/LOOP event using approved station procedures (alarm response, abnormals, and EOPs) <span class="hi-exam">in accordance with OP-AA-101-111-1003, Use of Procedures</span>. See [[2014 Scenario 3]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q68</div>
+A <span class="hi-exam">dollar sign ($) under the initials line of a surveillance step marks a Technical Specification acceptance-criteria item</span>; if not satisfactorily completed it may carry reportability requirements and must be brought to the <span class="hi-exam">immediate attention of the SM/CRS</span>. The acceptance-criteria designators are defined in the [[AD-AA-101-1003 — Implementing Procedure Writers Guide|Implementing Procedure Writers Guide]] (Step 4.5.4): <span class="hi-trap">$ = Technical Specification; cent symbol (¢) = UFSAR.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+Listed as a Technical Reference for the scenario — it governs the crew's <span class="hi-exam">use of procedures</span> while executing the EOP, AB, SO, and ST procedures throughout the events.
+</div>
+
 ## Connections
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]]
-- Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
-- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]], [[2015 Q74]], [[2014 Q74]], [[2014 Q77]]
+- Related procedures: [[OP-SA-108-101-2000 — Emergency/Abnormal Operating Procedure Program]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AD-AA-101-1003 — Implementing Procedure Writers Guide]]
+- Related exam questions: [[2016 Q74]], [[2018 Q47]], [[2018 Q85]], [[2019 Q46]], [[2020 Q74]], [[2020 Q100]], [[2015 Q74]], [[2014 Q74]], [[2014 Q77]], [[2012 Q68]]
 - Related JPMs: [[2016 JPM Sim-b]]
-- Related scenarios: [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related scenarios: [[2012 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]], [[2012 Scenario 3]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Operating Exam]]

@@ -177,11 +177,26 @@ The 460V Vital Buses are fed from their respective 4KV Vital Buses. With the <sp
 When the "B" SEC loads the 2B 4KV bus in the <span class="hi-exam">II* Mode</span>, 3 minutes later (no operator action): <span class="hi-exam">Rx power &gt;100%</span> from the auto-start of 22 AFP on SEC mode II*; <span class="hi-exam">22 CC pump running</span> (powered off 2B vital, starts on II*); <span class="hi-exam">SGBD flows = 0 gpm</span> (SGBD isolation on auto AFW pump start); and <span class="hi-exam">MTLO outlet temp rising</span> because 2SW26 closes, lowering cooling water to the MTLO cooler to none. <span class="hi-trap">22SW122 does NOT close on blackout; 22 RHR/22 CS pumps do not start in this mode.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q39</div>
+PZR backup heater emergency feeds from the 4KV vital buses (via 460V): <span class="hi-exam">21 Backup Heater Group emergency-feeds from the 2C vital bus; 22 Backup Heater Group emergency-feeds from the 2A vital bus</span>. If the <span class="hi-exam">2A 4KV Vital Bus fails to reenergize after a LOOP, only 21 Backup Heater Group is available</span> to maintain PZR pressure. <span class="hi-trap">Control Group heaters (2G non-vital) have no emergency supply.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q52</div>
+The <span class="hi-exam">4KV Group buses are normally powered from the Aux Power Transformer (APT) while the Main Generator is operating; on a Main Turbine trip, when the 500KV output breakers open, the Group buses automatically swap to the Station Power Transformers</span> (off-site power). <span class="hi-trap">4KV VITAL buses do NOT swap on a turbine trip — they are already supplied from off-site source.</span> See [[500KV]], [[Main Turbine]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+Following the false-SI reactor trip, the <span class="hi-exam">2C 4KV vital bus de-energizes on undervoltage</span> and is re-energized from the <span class="hi-exam">2C EDG</span> via its SEC. By the time the crew transfers to cold leg recirculation in [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], <span class="hi-exam">all three vital busses are energized</span> (2C from its EDG).
+</div>
+
 ## Connections
 
 - Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
-- Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]]
-- Related exam questions: [[2016 Q55]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]], [[2015 Q31]], [[2015 Q43]], [[2015 Q57]], [[2015 Q61]], [[2015 Q69]], [[2014 Q49]], [[2014 Q57]]
+- Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
+- Related exam questions: [[2016 Q55]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]], [[2015 Q31]], [[2015 Q43]], [[2015 Q57]], [[2015 Q61]], [[2015 Q69]], [[2014 Q49]], [[2014 Q57]], [[2012 Q11]], [[2012 Q39]], [[2012 Q52]]
 - Related JPMs: [[2016 JPM Sim-g]], [[2016 JPM IP-k]], [[2018 JPM Sim-g]], [[2022 JPM Sim-g]], [[2020 JPM Sim-h]], [[2015 JPM Sim-e]]
-- Related scenarios: [[2017 Scenario 8]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2015 Scenario 3]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]
+- Related scenarios: [[2012 Scenario 1]], [[2012 Scenario 2]], [[2017 Scenario 8]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2015 Scenario 3]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

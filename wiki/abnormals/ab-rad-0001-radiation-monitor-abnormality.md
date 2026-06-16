@@ -85,6 +85,11 @@ Plant-vent gaseous-effluent monitoring: <span class="hi-exam">1R41D (Noble Gas R
 Per AB.RAD-0001 Attachment 5, the <span class="hi-exam">2R9 New Fuel Storage ARM High Radiation Alarm realigns FHB ventilation through the charcoal filters and starts both FHB Exhaust fans</span> — the only listed ARM that causes a ventilation alignment change (2R32A prevents fuel-crane up-motion; 2R52 only lights an alarm; 2R44A has no auto function). See [[Radiation Monitoring]], [[FHV]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q27</div>
+Per AB.RAD-0001 Attachment 5, <span class="hi-exam">EITHER R44A OR R44B (Containment High Range) reaching 1E5 R/hr automatically places the Subcooling Margin Monitor (SMM) in ADVERSE Mode</span>. <span class="hi-trap">The other area monitors in containment (R2 Containment 130', R7 In-Core Seal Table) do NOT input into the SMM.</span> See [[Radiation Monitoring]].
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2015 #1</div>
 During the 20 gpm RCS leak inside containment (Event 3), CRS enters AB.RAD-0001 after the unexpected <span class="hi-exam">OHA A-6</span> annunciation accompanies the rising <span class="hi-exam">2R11A containment radiation monitor</span> reading. AB.RAD-0001 runs concurrent with AB.RC-0001 (Reactor Coolant System Leak) to address the rising containment activity as the leak develops. See [[Radiation Monitoring]].
@@ -95,12 +100,22 @@ During the 20 gpm RCS leak inside containment (Event 3), CRS enters AB.RAD-0001 
 During an authorized liquid radwaste release (S2.OP-SO.WL-0001 Section 5.5), a <span class="hi-exam">2R18 (Waste Disposal Liquid) monitor HIGH RADIATION alarm (~10⁵ counts, RED HI RAD light lit)</span> is a release-termination condition: the operator immediately directs the NCO to CLOSE 2WL51 (Liquid Release Stop Valve) to terminate the release and notifies the control room of the high-radiation condition. See [[Waste Liquid]].
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-h</div>
+On a 2R18 (Liquid Waste Disposal) Hi Rad alarm during an authorized liquid release, the AB.RAD-0001 flow is: 3.1 DETERMINE affected monitor (2R18); 3.2 <span class="hi-exam">Is the alarm valid? — yes, since a liquid release just commenced, 2R18 is sampling it, and the monitor was proven operable by the Attachment 2 §2.3 source check</span>; 3.6 announce on Plant PA ("Radiation Monitor 2R18 Liquid Waste Disposal is in alarm, Auxiliary Building 84 elevation"); 3.8 notify SM/CRS to refer to the Event Classification Guide, ODCM, and Tech Specs; 3.9 INITIATE the applicable attachment. <span class="hi-exam">Attachment 1 step 5.1 — for 2R18, ENSURE 2WL51 (TO CIRC WTR DISCHARGE) is CLOSED to stop all Liquid Waste releases</span>, then terminate the release procedure in effect.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #2</div>
+The 23 SG tube leak first annunciates as <span class="hi-exam">OHA A-6 RMS HI RAD OR TRBL with 2R53C in alarm and rising</span>. CRS contacts RP to perform the primary-to-secondary leak rate response and may enter AB.RAD-0001 (Abnormal Radiation) first to diagnose the affected monitor before entering [[AB.SG-0001 — Steam Generator Tube Leak]]. As the leak escalates, OHA A-6 reflashes with 2R15, 2R19C, and 2R41D alarming.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]], [[Refueling]], [[CAV]], [[Steam Generator & Blowdown]]
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exam questions: [[2015 Q10]], [[2018 Q7]], [[2018 Q83]], [[2019 Q8]], [[2019 Q33]], [[2020 Q23]], [[2020 Q51]], [[2022 Q23]], [[2023 Q62]], [[2015 Q60]], [[2015 Q73]]
-- Related JPMs: [[2023 JPM Sim-h]], [[2014 JPM IP-k]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 1]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2014 NRC Operating Exam]]
+- Related exam questions: [[2015 Q10]], [[2018 Q7]], [[2018 Q83]], [[2019 Q8]], [[2019 Q33]], [[2020 Q23]], [[2020 Q51]], [[2022 Q23]], [[2023 Q62]], [[2015 Q60]], [[2015 Q73]], [[2012 Q27]]
+- Related JPMs: [[2023 JPM Sim-h]], [[2014 JPM IP-k]], [[2012 JPM Sim-h]]
+- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 1]], [[2012 Scenario 2]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -59,10 +59,15 @@ Release of 21 CVCS MT via SW to CW (Section 5.5): with <span class="hi-exam">Max
 Alternate-path Section 5.5 release of 21 CVCS MT via SW to CW (Rev 25; <span class="hi-exam">Maximum Release Rate 150 gpm</span>, 21 CVCS tank initial level 19600 gal): Step 5.5.2 direct NCO to OPEN 2WL51; Step 5.5.4 throttle open <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span> toward the max rate; Step 5.5.6 — when the max rate can NOT be obtained, throttle CLOSED <span class="hi-exam">21WR53 (MT RECIRC V)</span> to raise discharge flow (reaches 55 gpm). Step 5.5.8 records dilution flow 200000 gpm and 2LIS-180 = 90%. <span class="hi-exam">Step 5.5.9 — during the release the 2R18 monitor ALARMS (~10⁵ counts, RED HI RAD light lit), so the operator must direct the NCO to CLOSE 2WL51 and terminate the release</span>, then notify the control room of the high-radiation condition.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-h</div>
+Control-room side of the same Section 5.5 release. <span class="hi-exam">Step 5.5.2 — direct the Unit 2 NCO to OPEN 2WL51 (LIQUID RELEASE STOP VALVE)</span> and verify the red open light. Alternate path — <span class="hi-exam">2R18 reads high radiation (~1×10⁵ cps) and 2WL51 fails to auto-shut; per Step 5.5.9 the operator manually shuts 2WL51</span> after observing it remained open (OHA A-6 / CRT point 725), then communicates 2WL51 status to the RWO and directs termination of the release.
+</div>
+
 ## Connections
 
 - Related systems: [[Waste Liquid]], [[Radiation Monitoring]]
-- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]]
-- Related exam questions: [[2016 Q59]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q68]]
-- Related JPMs: [[2018 JPM IP-k]], [[2022 JPM IP-k]], [[2014 JPM IP-k]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]]
+- Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[S2.IC-CC.RM-0028 — 2R18 Liquid Waste Disposal Process Radiation Monitor]]
+- Related exam questions: [[2016 Q59]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q68]], [[2012 Q61]]
+- Related JPMs: [[2018 JPM IP-k]], [[2022 JPM IP-k]], [[2014 JPM IP-k]], [[2012 JPM Sim-h]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

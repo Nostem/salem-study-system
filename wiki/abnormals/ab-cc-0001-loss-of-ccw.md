@@ -67,6 +67,11 @@ Confirms 2018 Q7: 2CC149 auto-closes on 2R17A/B high radiation alarm. Surge Tank
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q38</div>
+2CC149 (CCW Surge Tank Vent Valve) is <span class="hi-exam">normally OPEN and fails SHUT on a total loss of air</span> (and on loss of control power); it auto-shuts on high radiation from 2R17A and is automatic in all Modes. <span class="hi-trap">It does not fail open.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q87</div>
 CCW pump trips in MODE 5 (RCS at Water Elevation 103.5 feet): when 22 and 23 CCW Pumps trip causing CC Header Low Pressure alarms, the abnormal procedures network requires <span class="hi-exam">concurrent performance of AB.CC-0001 AND AB.RHR-0001</span> (not AB.RHR-0002). <span class="hi-trap">Trap: AB.RHR-0002 (Loss of RHR at Reduced Inventory) would apply only if RCS Water Elevation is 101 feet or less. At 103.5 feet the plant is NOT at reduced inventory, so AB.RHR-0001 applies.</span>
 </div>
@@ -127,6 +132,6 @@ Locating a CCW leak with ATTACHMENT 4 (Leak Isolation Method): if surge tank lev
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
 - Related scenarios: [[2015 Scenario 4]], [[2014 Scenario 1]]
-- Related exam questions: [[2014 Q9]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2018 Q95]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]], [[2015 Q86]]
+- Related exam questions: [[2014 Q9]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2018 Q95]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]], [[2015 Q86]], [[2012 Q38]]
 - Related JPMs: [[2019 JPM Sim-h]], [[2015 JPM Sim-g]], [[2014 JPM Sim-h]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]]

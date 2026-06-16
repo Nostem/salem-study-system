@@ -1,0 +1,203 @@
+exam: 2012
+type: operating
+ilot_class: "11-01"
+facility: "Salem Units 1 & 2"
+written_exam_date: "12/03/2012"   # per ES-401 outline / written cover; operating-test administration date not stated in source
+source_pdf: "raw/exams/2012/final-operating.pdf"
+# NOTE: Backbone inventory prepared for ingestion. Page ranges are 1-based inclusive into final-operating.pdf
+# and were confirmed from JPM cover pages ("JPM NUMBER" / "TASK" / "TASK NUMBER") and scenario Form ES-D-1 pages.
+# K/A values marked "TBD" were not cleanly legible in the cover OCR and must be read from the cover page during
+# ingestion (do NOT fabricate). Applicability, time-critical/alternate-path flags, and step content are populated
+# as each article is authored. Only 3 scenarios in this package (ESG-1/2/3).
+jpms:
+  - id: "RO-A1-1"
+    title: "Calculate Shutdown Margin"
+    type: Admin-RO
+    location: Classroom
+    pages: "1-7"
+    ka: "2.1.25"
+    task_number: "N1200030301"
+    split_pdf: "2012-jpm-ro-a1-1.pdf"
+  - id: "RO-A1-2"
+    title: "Perform a Manual AFD Calculation"
+    type: Admin-RO
+    location: Classroom
+    pages: "8-14"
+    ka: "2.1.18"
+    task_number: "N0150010201"
+    split_pdf: "2012-jpm-ro-a1-2.pdf"
+  - id: "RO-A2"
+    title: "Demonstrate the Operability of the RWST"
+    type: Admin-RO
+    location: Classroom
+    pages: "15-23"
+    ka: "2.2.37"
+    task_number: "N0040420201"
+    split_pdf: "2012-jpm-ro-a2.pdf"
+  - id: "RO-A3"
+    title: "Perform Stay Time Calculation for Emergency Conditions"
+    type: Admin-RO
+    location: Classroom
+    pages: "24-29"
+    ka: "2.3.4"
+    task_number: "N1200100104"
+    split_pdf: "2012-jpm-ro-a3.pdf"
+  - id: "SRO-A1-1"
+    title: "Review a completed surveillance to demonstrate operability"
+    type: Admin-SRO
+    location: Classroom
+    pages: "30-34"
+    ka: "2.1.25"   # resolved from cover during ingestion
+    task_number: "N1230300302"
+    split_pdf: "2012-jpm-sro-a1-1.pdf"
+  - id: "SRO-A1-2"
+    title: "Direct Actions for Spent Fuel Movement"
+    type: Admin-SRO
+    location: Classroom
+    pages: "35-41"
+    ka: "2.1.42"
+    task_number: "N1120760102"
+    split_pdf: "2012-jpm-sro-a1-2.pdf"
+  - id: "SRO-A2"
+    title: "Review an OTSC to an Implementing Procedure"
+    type: Admin-SRO
+    location: Classroom
+    pages: "42-47"
+    ka: "2.2.6"
+    task_number: "N1230020302"
+    split_pdf: "2012-jpm-sro-a2.pdf"
+  - id: "SRO-A3"
+    title: "Determine required actions upon Radioactive release"
+    type: Admin-SRO
+    location: Classroom
+    pages: "48-55"
+    ka: "2.3.11"
+    task_number: "N1200010301"
+    split_pdf: "2012-jpm-sro-a3.pdf"
+  - id: "SRO-A4-1"
+    title: "Classify an event and complete an ICMF (ESG-1)"
+    type: Admin-SRO
+    location: Classroom
+    pages: "56-65"
+    ka: "2.4.41"   # likely 2.4.41 (matches A4-2/A4-3) — verify from cover during ingestion   # resolved from cover during ingestion
+    task_number: "1240020502"
+    split_pdf: "2012-jpm-sro-a4-1.pdf"
+  - id: "SRO-A4-2"
+    title: "Classify an event and complete an ICMF (ESG-2)"
+    type: Admin-SRO
+    location: Classroom
+    pages: "66-74"
+    ka: "2.4.41"
+    task_number: "1240020502"
+    split_pdf: "2012-jpm-sro-a4-2.pdf"
+  - id: "SRO-A4-3"
+    title: "Classify an event and complete an ICMF (ESG-3)"
+    type: Admin-SRO
+    location: Classroom
+    pages: "75-83"
+    ka: "2.4.41"
+    task_number: "1240020502"
+    split_pdf: "2012-jpm-sro-a4-3.pdf"
+  - id: "Sim-a"
+    title: "Perform a Control Rod Operability Verification"
+    type: Simulator
+    location: Simulator
+    pages: "84-91"
+    ka: "001 A4.03"   # resolved from cover during ingestion
+    task_number: "N0010070101"   # cover value
+    split_pdf: "2012-jpm-sim-a.pdf"
+  - id: "Sim-b"
+    title: "Perform Forward Flow IST of ECCS Accumulator"
+    type: Simulator
+    location: Simulator
+    pages: "92-102"
+    ka: "006 A4.02"   # resolved from cover during ingestion
+    task_number: "N0060160201"
+    split_pdf: "2012-jpm-sim-b.pdf"
+  - id: "Sim-c"
+    title: "TCAF Pressurizer Pressure Malfunction (Failure)"
+    type: Simulator
+    location: Simulator
+    pages: "103-111"
+    ka: "010 A4.01"   # cover partially legible "010 A4.xx" — verify full code during ingestion   # resolved from cover during ingestion
+    task_number: "1140240401"
+    split_pdf: "2012-jpm-sim-c.pdf"
+  - id: "Sim-d"
+    title: "TCAF a Loss of RHR"
+    type: Simulator
+    location: Simulator
+    pages: "112-123"
+    ka: "APE 025 AA1.09"   # cover partially legible "APE 025 AA1.0x" — verify full code during ingestion   # resolved from cover during ingestion
+    task_number: "N1140300401"   # cover value
+    split_pdf: "2012-jpm-sim-d.pdf"
+  - id: "Sim-e"
+    title: "TCAF Main Turbine Trip < P-9 (Main Turbine ASO Trip)"
+    type: Simulator
+    location: Simulator
+    pages: "124-133"
+    ka: "2.4.31"
+    task_number: "N1140420401"
+    split_pdf: "2012-jpm-sim-e.pdf"
+  - id: "Sim-f"
+    title: "Adjust PRT Level and Pressure"
+    type: Simulator
+    location: Simulator
+    pages: "134-140"
+    ka: "007 A4.04"   # resolved from cover during ingestion
+    task_number: "N0100110101"
+    split_pdf: "2012-jpm-sim-f.pdf"
+  - id: "Sim-g"
+    title: "TCAF a Loss of Control Air"
+    type: Simulator
+    location: Simulator
+    pages: "141-153"
+    ka: "APE 065 AA2.06"   # cover partially legible "APE 065 AA2.0x" — verify full code during ingestion   # resolved from cover during ingestion
+    task_number: "N1140070401"
+    split_pdf: "2012-jpm-sim-g.pdf"
+  - id: "Sim-h"
+    title: "Perform an Authorized Release of Radioactive Liquid Waste to the Circulating Water System"
+    type: Simulator
+    location: Simulator
+    pages: "154-162"
+    ka: "068 A4.03"
+    task_number: "N0685140104"
+    split_pdf: "2012-jpm-sim-h.pdf"
+  - id: "IP-i"
+    title: "Locally Borate the RCS"
+    type: In-Plant
+    location: In-Plant
+    pages: "163-168"
+    ka: "APE 068 AA1.08"   # resolved from cover during ingestion
+    task_number: "N1130140504"
+    split_pdf: "2012-jpm-ip-i.pdf"
+  - id: "IP-j"
+    title: "Start and Synchronize an Emergency Diesel Generator"
+    type: In-Plant
+    location: In-Plant
+    pages: "169-180"
+    ka: "064 A2.09"   # resolved from cover during ingestion
+    task_number: "1130010501"
+    split_pdf: "2012-jpm-ip-j.pdf"
+  - id: "IP-k"
+    title: "Perform Actions for a Loss of All AC Power (Start the SBO Compressor)"
+    type: In-Plant
+    location: In-Plant
+    pages: "181-191"
+    ka: "2.1.23"
+    task_number: "N1150140501"
+    split_pdf: "2012-jpm-ip-k.pdf"
+    notes: "Cover JPM NUMBER OCRs as 'IP-j' (duplicate of the prior page-169 JPM); recorded as IP-k by position (3rd in-plant JPM). Verify the printed label during ingestion."
+
+scenarios:
+  - number: 1
+    id: "ESG-1"
+    pages: "192-229"
+    split_pdf: "2012-scenario-01.pdf"
+  - number: 2
+    id: "ESG-2"
+    pages: "230-262"
+    split_pdf: "2012-scenario-02.pdf"
+  - number: 3
+    id: "ESG-3"
+    pages: "263-296"
+    split_pdf: "2012-scenario-03.pdf"

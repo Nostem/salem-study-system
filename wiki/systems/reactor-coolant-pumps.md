@@ -118,6 +118,11 @@ RCP STANDPIPE LEVEL HI alarm with #1 seal leak-off flow lowered = <span class="h
 EOP-TRIP-4 RCP restart priority for PZR spray: <span class="hi-exam">23 RCP preferred (single pump for normal spray)</span>. If 23 unavailable: 21+22 or 21+24 (two pumps needed for spray via auxiliary spray line). Forced convection permits faster cooldown with less potential for upper head voiding. Single pump operation preferred over two.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-c</div>
+PZR spray is supplied from the cold legs of <span class="hi-exam">Loops 1 and 3 (21 and 23 RCPs)</span>. When a spray valve (2PS1) fails open and cannot be reseated, AB.PZR-0001 step 3.24 directs stopping the RCPs that drive the open spray path: after tripping the reactor, <span class="hi-exam">STOP 21 and 23 RCPs</span>, then <span class="hi-exam">STOP a second pump (22 OR 24) if PZR pressure continues to drop</span>, leaving one RCP running.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q78</div>
 RCP vibration abnormal response: with shaft vibration at <span class="hi-exam">16 mils (below 20 mil trip limit)</span> and motor flange vibration at <span class="hi-exam">3 mils (below 5 mil trip limit)</span>, the Attachment 1 trip criteria of AB.RCP-0001 are NOT exceeded. Per Step 3.10, the CRS/SM determines if a <span class="hi-exam">controlled Unit shutdown</span> is required — immediate RCP trip and reactor trip are not warranted. <span class="hi-trap">OHA D-36 directs entry into AB.RCP-0001 but does NOT direct tripping the reactor or stopping the RCP.</span>
@@ -142,6 +147,11 @@ On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel mom
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q1</div>
 13 RCP shaft shear at 25% power: since 25% is <span class="hi-exam">below P-8 (36%)</span>, the low flow reactor trip setpoint is met for only the 13 loop, and <span class="hi-exam">the reactor will NOT trip</span>. Normal full PZR spray capability is <span class="hi-exam">NOT available</span> — PZR spray is produced from the 11 and 13 loop D/Ps (13 and 11 RCPs), and <span class="hi-exam">13 RCP produces most of the spray flow</span>. <span class="hi-trap">Trap: above P-7 (10%) but below P-8 (36%), the single-loop low flow trip is blocked. Candidates may confuse the P-7 and P-8 permissives.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q29</div>
+Idle-loop behavior after a single RCP trip at 30% power (Rx &lt;36%, no trip): the tripped pump's loop flow <span class="hi-exam">REVERSES</span>. The head of the running RCPs applied to the cold-leg side of the vessel creates a differential pressure that drives <span class="hi-exam">reverse flow back through the idle RCP and SG</span> — reactor coolant from the cold leg flows backward through the idle loop. Result: <span class="hi-exam">Tavg in the idle loop LOWERS</span> (less/reverse heat transfer in that SG). <span class="hi-trap">Trap: in the idle loop Tc rises above Th (Tc &gt; Th), so distractors claiming "Tc rises to equal Thot" are wrong — the temperatures cross, they do not equalize.</span>
 </div>
 
 ## Loss of Component Cooling Water
@@ -308,11 +318,16 @@ The CCW line to the RCPs is a <span class="hi-exam">single line supplying both b
 SEAL WATER FLOW LO annunciates for ALL 4 RCPs when the Charging System <span class="hi-exam">Master Flow Controller demand fails to 20%</span> (~half of the normal ~40% demand), halving charging / seal-injection flow (normal charging ~90 gpm). <span class="hi-trap">2CV71 (CHG HDR PCV) shut would raise seal flow; PZR program failing high keeps charging ~constant; 2CV115 lifting would tend to raise seal flow — none drop seal water flow to all 4 RCPs.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q66</div>
+Purpose of the RCP thermal barrier: <span class="hi-exam">protect the radial bearing and seals from the heat of the RCS</span>. It prevents hot reactor coolant from flowing up the shaft to the radial bearing and seal package when normal seal injection flow is lost — reactor coolant flows up across the thermal-barrier heat-exchanger tubes (cooled by CCW) and provides coolant/lubricant for the radial bearing and seals. <span class="hi-trap">It is NOT a flow limiter (does not limit RCS loss up the shaft on seal failure), it does NOT cool seal injection flow, and the thrust bearing is not in the controlled-leakage seal package.</span>
+</div>
+
 ## Connections
 
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]], [[AB.CVC-0001 — Loss of Charging]]
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related exam questions: [[2014 Q5]], [[2014 Q6]], [[2014 Q30]], [[2014 Q31]], [[2015 Q25]], [[2016 Q6]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2016 Q77]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]], [[2015 Q30]], [[2015 Q31]], [[2015 Q36]], [[2015 Q57]], [[2015 Q79]], [[2014 Q16]], [[2014 Q22]], [[2014 Q25]], [[2014 Q40]]
-- Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2015 JPM Sim-e]], [[2015 JPM Sim-g]], [[2015 JPM IP-j]]
+- Related exam questions: [[2014 Q5]], [[2014 Q6]], [[2014 Q30]], [[2014 Q31]], [[2015 Q25]], [[2016 Q6]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2016 Q77]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]], [[2015 Q30]], [[2015 Q31]], [[2015 Q36]], [[2015 Q57]], [[2015 Q79]], [[2014 Q16]], [[2014 Q22]], [[2014 Q25]], [[2014 Q40]], [[2012 Q4]], [[2012 Q15]], [[2012 Q22]], [[2012 Q25]], [[2012 Q29]], [[2012 Q30]], [[2012 Q35]], [[2012 Q66]], [[2012 Q82]], [[2012 Q89]], [[2012 Q94]]
+- Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2015 JPM Sim-e]], [[2015 JPM Sim-g]], [[2015 JPM IP-j]], [[2012 JPM Sim-c]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

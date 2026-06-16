@@ -30,9 +30,15 @@ FRCE-2 entry condition: <span class="hi-exam">Containment Sump level ~78% (75% A
 Step 1 — CFCU SW isolation for leaking CFCU: close <span class="hi-exam">BOTH the SW Inlet valve (SW58) AND the SW Outlet valve (SW72)</span>. When a CFCU is stopped, 25SW223 automatically closes (directly downstream of SW72), but FRCE-2 still requires closing both SW58 and SW72 manually. <span class="hi-trap">Trap: 25SW223 auto-closure could lead a candidate to conclude only the inlet valve (SW58) needs to be closed. Both inlet AND outlet must be closed per FRCE-2.</span> Entry threshold (normal containment): <span class="hi-exam">78%</span> sump level; adverse containment threshold: <span class="hi-exam">75%</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q26</div>
+FRCE-2 checks several diverse sources to validate that an excessive containment sump level actually exists: <span class="hi-exam">CFCU SW flow, FP-to-containment isolation valve position, CCW Surge Tank level, Demin Water Storage Tank level, and Primary Water Storage Tank (PWST) level</span>. The validating indication is <span class="hi-exam">5 CFCUs running in low speed with SW flow of ~1000 gpm each</span> — each CFCU SW flow is normally ~1600 gpm, so a ~600 gpm-per-unit reduction across 5 CFCUs indicates a ~3000 gpm SW leak into containment is possible. <span class="hi-trap">Traps: a full PWST is only ~240000 gallons, so 200000 gallons cannot account for the level rise; Fire Protection Storage Tank level change is inadequate; and SW header pressure of 150 psig is expected with SW26 shut from the SEC (a LOWER SW header pressure would help identify a SW leak).</span>
+</div>
+
 ## Connections
 
-- Related systems: [[Service Water]], [[CFCUs]], [[Containment]]
+- Related systems: [[Service Water]], [[CFCUs]], [[Containment]], [[CCW]], [[Fire Protection]], [[Demin Water]]
+- Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2018 Q74]], [[2019 Q75]], [[2023 Q24]]
-- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2018 Q74]], [[2019 Q75]], [[2023 Q24]], [[2012 Q26]]
+- Related exam: [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2012 NRC Written Exam]]

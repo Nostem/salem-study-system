@@ -124,5 +124,5 @@ SRO determines compensatory actions when 1R12A (Containment Noble Gas) and 1R41D
 
 - Related systems: [[Waste Gas]], [[Waste Liquid]]
 - Related concepts: [[Radiation Monitoring]]
-- Related JPMs: [[2016 JPM SRO-A3]], [[2015 JPM IP-k]]
-- Related exam: [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A3]], [[2015 JPM IP-k]], [[2012 JPM SRO-A3]]
+- Related exam: [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Operating Exam]]

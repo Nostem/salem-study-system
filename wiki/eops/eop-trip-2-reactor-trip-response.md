@@ -113,12 +113,42 @@ Transitioned from EOP-TRIP-1 after a manual reactor trip (steam leak outside con
 The <span class="hi-exam">Feedwater Interlock (FWI) is a 2/2 interlock: RCS Auctioneered Hi Tavg &lt;554&deg;F AND Rx Trip Breakers open (P-4)</span>, which shuts all BF19's and BF40's to isolate Main Feed flow to the SGs. <span class="hi-exam">If the FWI fails to actuate, the running SGFPs continue to supply Main Feed</span> to the SGs (whose NR level is low after the trip from 100% power), causing <span class="hi-exam">excessive SG cooldown / overfeed</span>. Because the resulting RCS pressure transient is steady but slow, <span class="hi-trap">SI initiation in TRIP-1 is NOT warranted during immediate actions</span> — initiating SI when not required can fill the PZR water-solid. The correct response is to <span class="hi-exam">trip both SGFPs early in TRIP-2 after verifying adequate AFW flow</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q2</div>
+EOP-TRIP-2 step 3 asks if total AFW flow is <span class="hi-exam">&gt;22E4 lbm/hr</span>. The Bases document states this is "the minimum safeguards AFW flow requirement for heat removal plus allowances for normal channel accuracy (typically one AFW pump capacity at design pressure.)" TRIP-2 directs maintaining <span class="hi-exam">&gt;22E4 lbm/hr until at least one SG NR level is &gt;9%, then maintain 9-33%</span>. A single SG with &gt;9% NR satisfies the Heat Sink Functional Recovery entry criterion (<span class="hi-exam">22E4 lbm/hr flow OR SG NR &gt;9%</span>), so AFW flow may then be reduced below 22E4 lbm/hr. <span class="hi-trap">15% is the adverse-containment value, not applicable with no SI; the criterion is met by ONE SG &gt;9%, not ALL SGs.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q9</div>
+For a controlled shutdown due to a 5 gpm SG tube leak (AB.SG-0001), the 5 gpm leak size allows transition to TRIP-2 after the EOP-TRIP-1 immediate actions; <span class="hi-exam">there are no SGTR diagnostic steps in TRIP-2 that would transition to SGTR-1</span>. On exiting the TRIP series, AB.SG is re-entered at step 3.27, and <span class="hi-exam">step 3.28 directs a rapid boration for each stuck rod for 35 minutes</span> — initiated before any depressurization (step 3.29). See [[AB.SG-0001 — Steam Generator Tube Leak]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q43</div>
+<span class="hi-exam">EOP-TRIP-2 step 38 checks whether both IRNI channels read &lt;7E-11 A; if not, it asks whether under-compensation is preventing proper operation, and if yes directs the operator to manually energize the Source Range channels.</span> After a trip, IRNI current normally continues to lower until off-scale, and Source Range channels <span class="hi-exam">automatically energize when IRNI current lowers to ~7.0 E-11 Amps</span>. An IRNI reading higher than expected together with an abnormally low SUR indicates an <span class="hi-trap">over-compensated</span> instrument (the high reading with low SUR is the over-compensation signature). See [[Excore NIs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q54</div>
+Over-cooling of the RCS on an uncomplicated manual Rx trip from 100% power is prevented by the <span class="hi-exam">Feedwater Interlock</span>, which actuates when <span class="hi-exam">3/4 RCS Tavgs &lt;554°F AND at least one Reactor Trip and associated bypass breaker is open</span>, shutting the BF19's and BF40 Feed Reg Valves. <span class="hi-trap">P-12 (3/4 RCS Tavgs &lt;543°F) shuts the steam dumps but does NOT actuate on an uncomplicated trip — steam dumps modulate to hold Tavg ~547°F so Tavg never reaches 543°F. P-10 (3/4 PRNIs &lt;10%) only blocks low-power Rx trips. Feedwater Isolation (2/3 SG NR levels on 1/4 SGs ≥67% OR SI) does not occur on an uncomplicated trip.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q56</div>
+After stopping the SGFPs in TRIP-2 step 3, <span class="hi-exam">23 TDAFW pump speed is lowered to minimum (or 22E4 lbm/hr)</span> — but <span class="hi-exam">only if both AFW pumps are running</span>. The 21 MDAFW pump feeds 23 and 24 SGs only; the 23 TDAFW pump feeds all 4 SGs. <span class="hi-exam">If 21 MDAFW fails to start, lowering 23 AFW speed to minimum would leave no flow to 23 and 24 SGs, so operators throttle the 21-24AF11 S/G Level Control Valves to balance flow and maintain levels/pressures.</span> No overfeed-driven Steamline D/P SI occurs because operators are directed to lower/balance AFW flow.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #3</div>
+After a manual reactor trip with no SI required, the CRS transitions TRIP-1 → TRIP-2. PO reports <span class="hi-exam">no AFW flow</span>: 22 AFW pump tripped, 23 AFW pump did not auto-start, 21 AFW pump running with no flow but adequate discharge pressure (failed pressure-override circuit). The crew <span class="hi-exam">starts 23 AFW pump and defeats the 21 AFW pump pressure override to establish ≥22E4 lbm/hr (CT#1)</span>. When the last AFW pump (23) then fails on a speed-control problem and total AFW flow falls &lt;22E4 lbm/hr with all SG NR levels &lt;9%, the TRIP-2 entry conditions for FRHS-1 (Heat Sink RED path) are met and the CRS transitions to FRHS-1.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]], [[EDGs]], [[Pressurizer & PRT]], [[Excore NIs]], [[Steam Generator & Blowdown]], [[Radiation Monitoring]], [[Feed & Condensate]], [[AFW]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]], [[S2.OP-SO.CVC-0008 — Rapid Boration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[AB.RAD-0001 — Radiation Monitor Abnormality]]
-- Related exam questions: [[2015 Q10]], [[2015 Q11]], [[2016 Q8]], [[2016 Q52]], [[2016 Q76]], [[2016 Q78]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]], [[2015 Q85]], [[2014 Q92]]
+- Related exam questions: [[2015 Q10]], [[2015 Q11]], [[2016 Q8]], [[2016 Q52]], [[2016 Q76]], [[2016 Q78]], [[2020 Q11]], [[2020 Q21]], [[2023 Q19]], [[2015 Q85]], [[2014 Q92]], [[2012 Q2]], [[2012 Q9]], [[2012 Q43]], [[2012 Q54]], [[2012 Q56]], [[2012 Q82]]
 - Related JPMs: [[2022 JPM RO-A2]], [[2022 JPM SRO-A2]], [[2015 JPM Sim-f]]
-- Related scenarios: [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related scenarios: [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2012 Scenario 3]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

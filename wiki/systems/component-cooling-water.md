@@ -32,6 +32,11 @@ Closed-loop cooling water system that provides an intermediate barrier between p
 - Surge tank provides indication of system leakage (radioactivity monitoring on CCW)
 - Loss of CCW to RCPs requires RCP trip to protect seals and thermal barrier (UFSAR 5.5.1.3.14)
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-d</div>
+Each RHR heat exchanger is cooled by CCW through its own HX outlet valve (<span class="hi-exam">21CC16</span> for the 21 RHR HX, <span class="hi-exam">22CC16</span> for the 22 RHR HX). When restoring shutdown cooling on the alternate (22) RHR loop per AB.RHR-0001 Attachment 2, the operator <span class="hi-exam">closes 21CC16 and opens 22CC16</span> to line up CCW to the 22 RHR HX before starting the 22 RHR pump.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q55</div>
 CCW containment isolation signals: <span class="hi-exam">CC131 and CC190 (RCP Thermal Barrier CCW Isolation Valves) receive a Phase B signal to close, NOT Phase A</span>. <span class="hi-exam">CC113 and CC215 (Excess Letdown CCW Valves) receive a Phase A signal to close</span>. <span class="hi-trap">The thermal barrier CCW isolation (CC131/CC190) is Phase B, while excess letdown CCW isolation (CC113/CC215) is Phase A — do not confuse the isolation signal levels for these two different CCW flow paths through containment.</span>
@@ -116,6 +121,11 @@ CC131 (RCP Thermal Barrier Valve) auto-closure setpoints: <span class="hi-exam">
 Confirms 2018 Q7: <span class="hi-exam">2CC149 auto-closes on 2R17A/B high radiation alarm</span>. CCW Surge Tank overflow contaminates both the in-service Waste Holdup Tank and the 22 ABV Exhaust Filter Unit.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q38</div>
+2CC149 (CCW Surge Tank Vent Valve) is <span class="hi-exam">normally OPEN and fails SHUT on a total loss of air (and on loss of control power)</span>. It auto-shuts on high radiation from 2R17A and is automatic (AU) in <span class="hi-exam">ALL Modes of operation</span>. <span class="hi-trap">It does not fail open.</span>
+</div>
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.3 requires two independent CCW loops OPERABLE in Modes 1–4
@@ -144,6 +154,11 @@ Start a CCW pump IAW EOP-APPX-1 during large break LOCA with loss of offsite pow
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q10</div>
 On an SI signal, <span class="hi-exam">2CC215 and 2CC113 (Excess Letdown HX CCW isolation valves) receive a Phase A close signal</span> — they are Containment Phase A isolation valves. The purpose of closing Phase A isolation valves is to <span class="hi-exam">ensure all non-essential containment penetrations are isolated</span> on an SI signal. <span class="hi-trap">RCP CCW continues to be supplied until a Phase B signal at <span class="val-trip">15 psig</span> in containment — Phase A does NOT isolate ALL CCW supply/return from containment.</span> <span class="hi-trap">21 and 22CC16 (RHR HX CCW isolation valves) do NOT receive an automatic open signal on SI — they only open when the ARM PB is depressed AND RWST level reaches 15.2 ft. RHR pumps are cooled by either flow through the pump from RWST (LBLOCA) or recirc flow (SBLOCA until pp is S/D), not by automatic CC16 alignment.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q6</div>
+On an SI from a LOCA, the automatic CCW response is that <span class="hi-exam">2CC215 and 2CC113 (Excess Letdown HX CCW isolation valves) receive a close signal as Containment Phase A isolation valves</span> — to ensure all non-essential containment penetrations are isolated. <span class="hi-trap">ALL CCW supply/return is NOT isolated on SI — RCP CCW continues until the Phase B signal at 15 psig.</span> <span class="hi-trap">The RHR HX CCW isolation valves (CC16s) do NOT receive an automatic open signal on SI — they open only when the ARM PB is depressed AND RWST level is 15.2 ft (manual ECCS realignment to CLR).</span>
 </div>
 
 <div class="callout callout-exam">
@@ -216,9 +231,19 @@ Distractor trap: a single <span class="hi-exam">21 CCW pump trip does NOT make b
 Starting a CCW pump after a LOCA + LOOP (all vital buses on EDGs, no CCW running) IAW EOP-APPX-1. Before starting a CCW pump, the SEC fans and CCW-cooled loads must be aligned to the pump's load capacity: <span class="hi-exam">BLOCK and RESET the associated SECs (2B/2C for 22 CCW pump; 2A/2B for 21 CCW pump)</span>, swap switchgear room supply fans, and shed CFCUs / Aux Bldg exhaust fans at CC1. <span class="hi-exam">Alternate path: the 22 CCW pump fails to start, so the RNO restarts a CFCU and transfers to Step 5 to start the 21 CCW pump.</span> Placing 21 and 22 CCW Heat Exchangers in service (Step 6) requires <span class="hi-exam">at least 3 SW pumps running</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q42</div>
+<span class="hi-exam">22CC3 (the 21-23 header cross-over valve) is a normally open valve with NO automatic action</span> on SI, Phase B, or containment Hi-Hi — so 22CC3 indicating OPEN after a LOCA is NOT a failed-to-reposition condition. (Plausible distractor because other CCW valves DO reposition on SI/Phase B, and the SJ113 valves — which also carry "X-Over" designators — reposition on RWST lo-lo level.) See [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+On the false-SI reactor trip the <span class="hi-exam">21 CCW pump trips and 23 CCW pump control transfers to manual</span>, leaving <span class="hi-exam">only the 22 CCW pump running</span> post-trip. With the 2C 4KV vital bus on its EDG, [[EOP-TRIP-1 — Reactor Trip or Safety Injection]] gives <span class="hi-exam">no direction to start a second CCW pump</span>.
+</div>
+
 ## Connections
 
-- Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]], [[2014 Q83]], [[2014 Q93]]
-- Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]], [[2015 JPM Sim-g]], [[2014 JPM Sim-h]]
-- Related scenarios: [[2018 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]], [[2014 Q83]], [[2014 Q93]], [[2012 Q12]], [[2012 Q26]], [[2012 Q38]], [[2012 Q42]], [[2012 Q82]]
+- Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]], [[2015 JPM Sim-g]], [[2014 JPM Sim-h]], [[2012 JPM Sim-d]]
+- Related scenarios: [[2012 Scenario 1]], [[2018 Scenario 1]], [[2015 Scenario 4]], [[2014 Scenario 1]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

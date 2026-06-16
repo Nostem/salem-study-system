@@ -51,10 +51,26 @@ Spurious <span class="hi-exam">OHA A-7 FIRE PROT FIRE</span> (Zone 33 TURB BLDG 
 Assessing affected Fire Zone(s) on 2RP5 (OHA A-7 FIRE PROT FIRE): the correct action is to <span class="hi-exam">open 2FP147 Fire Protection Containment Isolation when BOTH zone 59 and 74 alarms are received</span> (line normally isolated; pressurized only with both alarms). <span class="hi-trap">Distractor traps: a row "Fire" light can illuminate from a manual fire pull box — indication only, no fire-protection water flow; for a Relay Room fire (outside the CR but on the same AC system) Fire Outside Control Area is NOT selected; Halon supplied to the relay rooms does not indicate that EDG supply ventilation has stopped.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q75</div>
+<span class="hi-trap">Trap: AB.FIRE-0001 (Control Room Fire Response) does NOT direct placing the EDG FIRE EMERGENCY BYPASS keylock switches in BYPASS</span> — that action is in [[AB.CR-0002 — Control Room Evacuation Due to Fire]], Attachment 4 (pages 15, 19, 22). The bypass switches remove SEC control from the EDG and are only operated after a fire-driven control-room evacuation.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q92</div>
+A valid deluge actuation (e.g., welding in the Turbine Building) annunciating <span class="hi-exam">OHA A-7 FIRE PROT FIRE</span> and <span class="hi-exam">OHA A-15 FIRE PUMP 1/2 RUN</span> directs entry into AB.FIRE-0001, which checks whether the Control Room is affected and then directs placing CR ventilation in the appropriate fire alignment. <span class="hi-trap">Trap: AB.FP-0001 (Fire Protection System Malfunction) is NOT entered for a valid deluge actuation — there is no malfunction indication, so the unit startup does not have to be stopped.</span> See [[AB.FP-0001 — Fire Protection System Malfunction]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q99</div>
+CAS Attachment 1, Fire Dept. Support, Caution prior to Step 3.0: "In the event of a radiological emergency, the Nuclear Fire Protection Supervisor should obtain permission from the <span class="hi-exam">EDO/SM</span> prior to calling for off-site assistance." <span class="hi-trap">Security (CAS 2.0) is only notified when off-site assistance is requested, the Nuclear Fire Protection Supervisor leads the fire brigade and requests assistance through the EDO/SM (but does not authorize it), and the RAC handles the radiological aspect — none of them authorize the off-site request.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Containment]], [[Fire Protection]], [[EDGs]], [[Pressurizer Level & Press Control]], [[CAV]]
-- Related exam questions: [[2015 Q17]], [[2020 Q75]], [[2020 Q83]], [[2022 Q99]], [[2023 Q63]]
+- Related procedures: [[AB.CR-0002 — Control Room Evacuation Due to Fire]], [[AB.FP-0001 — Fire Protection System Malfunction]]
+- Related exam questions: [[2015 Q17]], [[2020 Q75]], [[2020 Q83]], [[2022 Q99]], [[2023 Q63]], [[2012 Q75]], [[2012 Q92]], [[2012 Q99]]
 - Related JPMs: [[2022 JPM Sim-h]]
 - Related scenarios: [[2017 Scenario 8]]
 - Related exam: [[2015 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2017 NRC Operating Exam]]

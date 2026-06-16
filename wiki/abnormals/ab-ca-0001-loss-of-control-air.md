@@ -104,6 +104,11 @@ BF19 (SG FW CONT V) valve failure position on loss of control air: <span class="
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q34</div>
+RHR HX valve failure modes on loss of air: <span class="hi-exam">21RH18 (RHR HX Outlet FCV) and 2RH20 (RHR HX Bypass) are fail-as-is valves</span>. An air line break to 21RH18 during stable shutdown cooling has <span class="hi-exam">NO effect on the RHR system</span> — the valve holds its position. <span class="hi-trap">It does not fail open (no cooldown) and does not fail shut.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q90</div>
 Total loss of Control Air at 7% power during normal power ascension (after manual reactor trip): per AB.CA-0001, at 7% Main Feed has already been established and AFW secured per the IOP. The rapid loss of CA causes <span class="hi-exam">BF19s/40s to fail SHUT</span> (loss of feed flow from the operating SGFP) and <span class="hi-exam">2MS132 (23 AFW Turbine Steam Inlet Valve) to fail OPEN</span>, starting the <span class="hi-exam">23 AFW (TDAFW) pump operating at maximum speed</span>. AB.CA-0001 directs a Field Operator to <span class="hi-exam">locally establish manual speed control of the 23 AFW pump to prevent 23 AFW pump runout and SG overfill</span>. The Feedwater Interlock actuates with the reactor tripped and Tavg low setpoint reached. <span class="hi-trap">MDAFW pump distractors are plausible if the candidate doesn't know at what power the IOP directs swapping AFW to Main Feed (so &quot;MDAFW pumps previously in service&quot; is wrong at 7% post-power-ascension). Pressure Override does not preclude using 21/22 AFW pumps as feed supply — they are simply not the active path here.</span>
 </div>
@@ -123,11 +128,31 @@ On Console Alarm CONTROL AIR PRESSURE LO with only the "A" header degraded (A at
 With the operating SAC tripped (none restartable) and the Unit 2 ECAC tripped immediately after starting, both units lose Control Air. The AB.CA-0001 CAS action directs: <span class="hi-exam">if BOTH CA header pressures are &lt;<span class="val-trip">80 psig</span>, then trip the Rx</span> — applied to BOTH units. With all station air lost, the <span class="hi-exam">BF19s (Feed Reg Valves) go shut</span> as their air runs out; <span class="hi-trap">the FRVs are NOT supplied backup air from the ECACs (a check valve prevents control air from reaching the BF19s, and per p.38 of AB.CA only Station Air supplies the BF19s). Unit 1 ECAC feeds the 1B and 2B headers; Unit 2 ECAC feeds the 1A and 2A header.</span> Result: BOTH reactors are tripped based on impending BF19 closures.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q14</div>
+On a total loss of Control Air with no air source recoverable, AB.CA-0001 directs that <span class="hi-exam">all Radwaste releases in progress are terminated</span> — this ensures that during a gradual depressurization of the Control Air system a release is not in progress when the dilution medium flowrate may be changing (per the bases document, page 8 of 12). Two other actions tested as distractors: an operator is dispatched to <span class="hi-exam">manually control 23 AFW pump speed</span> (running at the high speed stop) because the 21-24AF11 valves <span class="hi-exam">fail OPEN</span>, making pump runout a concern with higher steam supply pressure present (page 3 of 12); and the reactor is tripped only when <span class="hi-trap">BOTH</span> Control Air header pressures are below <span class="val-trip">60 psig</span> (not &lt;80 psig on EITHER header).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q63</div>
+The AB.CA Basis Document gives the normal CA header band and ECAC auto-start: CA runs ~5 psig below Station Air, cycling with the SA cycle, so <span class="hi-exam">CA normally runs between 95 and 105 psig (≈100 psig)</span>, and the <span class="hi-exam">ECAC auto-starts at 85 psig</span>. <span class="hi-trap">88 psig is the AB.CA-0001 ECAC MANUAL start setpoint, and the reactor trip CAS requires BOTH headers below 80 psig — do not confuse with the 85 psig auto-start.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-g</div>
+TCAF Loss of Control Air at 100% power with a WG release in progress from 21 GDT. Three discriminating actions out of AB.CA-0001: <span class="hi-exam">step 3.56 — ISOLATE Letdown (close 2CV3, 2CV4, 2CV5, 2CV2, 2CV277, 2CV7)</span>; <span class="hi-exam">step 3.57 — VERIFY any Liquid/Gaseous release is STOPPED by ensuring 2WL51 (TO CIRC WTR DISCHARGE) and 2WG41 (GAS DECAY TK TO PLANT VENT) are closed</span> (2WG41 was open and must be shut); and the CAS action — <span class="hi-exam">when the 21-24BF19 Feed Reg Valves fail closed (~6.5 min after the trip insertion) and SG level cannot be maintained, TRIP the Reactor and GO TO EOP-TRIP-1</span>. <span class="hi-trap">The objective is to trip the reactor manually BEFORE the automatic trip on 10/10 SG NR (Lo-Lo) level.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-k</div>
+On a total loss of Control Air during a station blackout (both units tripped, no ECACs running), Control Air is restored by manually starting the SBO Diesel Control Air Compressor (SC.OP-SO.CA-0001) and aligning <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span> to the Aux Building 1A/2A headers — the backup air source this procedure relies on when both ECACs are unavailable. This JPM lists <span class="hi-exam">S2.OP-AB.CA-0001, Loss of Control Air, Rev 17</span> as a reference.
+</div>
+
 ## Connections
 
 - Related systems: [[AFW]], [[Service Water]], [[CCW]], [[RHR]], [[Containment]], [[CVCS]], [[Pressurizer & PRT]], [[Feed & Condensate]], [[Control Air]], [[Waste Gas]], [[Steam Generator & Blowdown]], [[EDGs]], [[DC Power]]
-- Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[SC.OP-SO.SA-0001 — Station Air System Operation]]
-- Related exam questions: [[2015 Q13]], [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]], [[2014 Q19]], [[2014 Q64]]
-- Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]]
+- Related procedures: [[S2.OP-IO.ZZ-0004 — Power Operation]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[SC.OP-SO.SA-0001 — Station Air System Operation]], [[S2.OP-SO.CA-0001 — Control Air System Operation]]
+- Related exam questions: [[2015 Q13]], [[2016 Q90]], [[2018 Q26]], [[2018 Q61]], [[2018 Q90]], [[2018 Q93]], [[2019 Q61]], [[2019 Q80]], [[2019 Q93]], [[2020 Q15]], [[2020 Q45]], [[2022 Q88]], [[2023 Q43]], [[2023 Q44]], [[2023 Q51]], [[2014 Q19]], [[2014 Q64]], [[2012 Q14]], [[2012 Q34]], [[2012 Q63]]
+- Related JPMs: [[2016 JPM Sim-h]], [[2020 JPM IP-j]], [[2012 JPM Sim-g]], [[2012 JPM IP-k]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

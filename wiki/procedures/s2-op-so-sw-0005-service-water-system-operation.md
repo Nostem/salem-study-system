@@ -29,10 +29,15 @@ SRO equipment OOS determination during ongoing fuel movement: with 21 SW pump al
 SO.SW-5 Attachment 2: <span class="hi-exam">enter the TS 3.6.2.3 action if (Modes 1-3) CFCU #23 is isolated from either SW supply header — i.e., the manual cross-connect 21SW52 OR 22SW52 is CLOSED</span>. See [[CFCUs]], [[Service Water]].
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+This procedure defines that an <span class="hi-exam">inoperable RHR pump room cooler SW valve (21SW153) renders the associated RHR pump inoperable</span>. It is the basis for the CRS <span class="hi-exam">declaring the 21 RHR pump inoperable and entering TSAS 3.5.2</span> after the failed IST of the room cooler valves.
+</div>
+
 ## Connections
 
 - Related systems: [[Service Water]]
 - Related exam questions: [[2020 Q14]], [[2015 Q90]]
-- Related JPMs: [[2016 JPM SRO-A1-2]]
-- Related scenarios: [[2015 Scenario 3]]
-- Related exam: [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2012 JPM SRO-A1-2]]
+- Related scenarios: [[2012 Scenario 1]], [[2015 Scenario 3]]
+- Related exam: [[2016 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Operating Exam]]

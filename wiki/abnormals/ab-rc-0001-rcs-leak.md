@@ -75,11 +75,22 @@ While responding to an RCS leak at 40% power with no automatic or manual trip, a
 A 25 gpm RCS leak is diagnosed and entered into AB.RC-0001: <span class="hi-exam">rising charging flow, slowly lowering PZR level, rising 2R11A containment radiation, OHA C-2 CNTMT SUMP PMP START</span>. Crew maximizes charging (swaps PDP to a centrifugal charging pump), quantifies the leak with S2.OP-ST.RC-0008 (RCS Water Inventory Balance), and enters <span class="hi-exam">TSAS 3.4.7.2.b (action b) for unidentified RCS leakage and 3.5.2.a (action a) for ECCS</span>. The leak later worsens into an SBLOCA, prompting a reactor trip and SI. See [[2014 Scenario 3]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q77</div>
+A <span class="hi-exam">70 gpm RCS leak in containment</span> requires the crew to trip the Rx and initiate a Safety Injection IAW AB.RC-0001. <span class="hi-exam">Charging-pump flow is able to maintain both PZR level and RCS pressure</span> at this leak rate — so even after the EOP transitions to LOCA-1 (for a coincident stuck-open PORV/block valve), the SI Flow Reduction criteria can still be met. See [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q85</div>
+A Unit 2 shutdown for failed fuel (RCS activity 500 uCi/gm dose equivalent I-131) develops a rapid RCS leak (lowering PZR pressure/level, rising containment pressure). The RO trips the Rx and initiates SI per AB.RC-0001; <span class="hi-exam">RCS pressure continues to lower rapidly to 35 psig (LBLOCA behavior — RCS inventory ends up on the containment floor)</span>, and the SM declares a Site Area Emergency.
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[RCS]], [[RPS/SSPS]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
-- Related exam questions: [[2014 Q11]], [[2016 Q100]], [[2018 Q52]], [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-TRIP-3 — SI Termination]]
+- Related exam questions: [[2014 Q11]], [[2016 Q100]], [[2018 Q52]], [[2020 Q6]], [[2023 Q3]], [[2023 Q97]], [[2012 Q77]], [[2012 Q85]]
 - Related JPMs: [[2014 JPM Sim-c]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2014 Scenario 3]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2012 NRC Written Exam]]

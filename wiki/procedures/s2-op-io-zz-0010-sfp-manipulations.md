@@ -60,11 +60,16 @@ P&amp;L 2.2: spent fuel manipulations require assigning <span class="hi-exam">Re
 Per <span class="hi-exam">P&amp;L 3.4, transfer of spent fuel into the SFP is suspended until BOTH SFP cooling pumps are OPERABLE</span>. With one SFP cooling pump tripped on motor overload and not restartable, the failed pump <span class="hi-exam">must be restored to operable status</span> before the remaining fuel bundles can be transferred into the pool. <span class="hi-trap">Verifying normal/emergency power supply availability of the in-service pump does not satisfy P&amp;L 3.4 — both pumps must be OPERABLE.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q95</div>
+Precautions and Limitations, Section 2.2: a <span class="hi-exam">Reactor Engineer OR a qualified Senior Reactor Operator must be assigned for Spent Fuel Pool manipulations</span> (so the SRO is NOT required to observe if a Qualified Reactor Engineer is present). <span class="hi-trap">Even when a SRO is assigned, they supervise from the area, not specifically on the crane trolley. SFP boron concentration (&gt;2000 ppm) is not a prerequisite that removes the supervision requirement.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Spent Fuel Pool]], [[Control Air]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]], [[TS 3/4.7 — Plant Systems]], [[TS 3/4.8 — Electrical]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
-- Related exam questions: [[2016 Q47]], [[2016 Q80]], [[2016 Q94]], [[2023 Q95]], [[2015 Q49]], [[2015 Q68]], [[2014 Q90]]
-- Related JPMs: [[2016 JPM SRO-A1-2]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam questions: [[2016 Q47]], [[2016 Q80]], [[2016 Q94]], [[2023 Q95]], [[2015 Q49]], [[2015 Q68]], [[2014 Q90]], [[2012 Q95]]
+- Related JPMs: [[2016 JPM SRO-A1-2]], [[2012 JPM SRO-A1-2]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

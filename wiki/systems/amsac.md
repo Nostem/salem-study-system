@@ -74,5 +74,5 @@ AMSAC AFW pump start signals by train: <span class="hi-exam">Train A starts 21 A
 - Related systems: [[RPS/SSPS]], [[AFW]]
 - Related procedures: [[curve book]]
 - Related concepts: [[ESF & Design]] (ATWS section)
-- Related exam questions: [[2015 Q9]], [[2019 Q31]], [[2014 Q67]]
-- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam questions: [[2015 Q9]], [[2019 Q31]], [[2014 Q67]], [[2012 Q8]]
+- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

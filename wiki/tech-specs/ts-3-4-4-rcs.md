@@ -66,6 +66,11 @@ After a reactor trip from 75% with one RCP stopped: RTB B is open and both bypas
 Mode 3 with 22 RDMG operating (motor & generator breakers shut), RTB "B" racked in and shut, RTB "A" and both RTBBs open: <span class="hi-exam">3 of the 4 RTB and RTBBs being open is considered "rod control de-energized"</span> (per TS page 3/4 4-2a) — even with an RDMG set in operation and a single RTB shut. With rod control de-energized, LCO 3.4.1.2 requires <span class="hi-exam">TWO operable RC loops (RCP, SG, and loop)</span> and <span class="hi-exam">ONE loop in operation</span>. With four RCPs operable initially, the trip of a single RCP <span class="hi-exam">does not require any action — minimum LCO is still met, no cooldown to Mode 4 required</span>. The bases provides "ensure mixing, prevent stratification, and produce gradual reactivity changes during boron concentration reductions in the RCS" as the reason for required loop operation. <span class="hi-trap">Trap B: "single failure criteria" is not the bases for the operation requirement — single failure criteria refers in this case to the minimum required loops IN OPERATION, not the bases statement.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q94</div>
+Mode 3 with 21 RDMG motor AND generator breakers closed and BOTH Reactor Trip Breakers A and B shut for rod control testing: fewer than 3 of the RTB/RTBBs are open, so <span class="hi-exam">rod control is ENERGIZED</span>. Per LCO 3.4.1.2.c, with rod control energized, <span class="hi-exam">all FOUR RCS loops must be in operation</span>, and the Bases (page B3/4 4-1) gives <span class="hi-exam">single failure considerations</span> as the reason. <span class="hi-trap">DNB is a Mode 1/2 bases (not Mode 3); the "one loop / mixing, prevent stratification, gradual reactivity changes" bases applies to when only ONE loop is required (rod control de-energized).</span>
+</div>
+
 ### Hot Shutdown (3.4.1.3)
 
 <div class="callout callout-important">
@@ -455,6 +460,11 @@ LCO 3.4.10.2 PZR heatup rate = <span class="hi-exam"><span class="val-trip">100&
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q23</div>
+The <span class="hi-exam">200&deg;F/hr PZR cooldown limit (TS 3.4.10.2.b)</span> appears as a distractor in the TRIP-5 natural-circulation cooldown timing problem: applying 200&deg;F/hr to drop RCS from 500&deg;F to 450&deg;F would give ~15 min, but the EOP-directed natural-circulation cooldown rate is <span class="hi-trap">&lt;100&deg;F/hr (NOT the TS PZR cooldown limit)</span>, giving 30 minutes. The RCS P/T cooldown limit is per the PTLR, not a fixed value.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q84</div>
 The TS RCS cooldown limit per PTLR is applied in EOP-LOCA-5 as <span class="hi-exam">&lt;100&deg;F/hr</span> when initiating a cooldown — this prevents an unwanted Thermal Shock condition that would complicate matters since CFSTs are still in effect in LOCA-5.
 </div>
@@ -542,7 +552,7 @@ LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[RHR]], [[Steam Generator & Blowdown]]
 - Related concepts: [[ESF & Design]]
 - Related procedures: [[S2.OP-ST.RC-0008 — RCS Water Inventory Balance]], [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[AB.RC-0001 — Reactor Coolant System Leak]]
-- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]], [[2015 Q87]], [[2014 Q86]]
+- Related exam questions: [[2016 Q28]], [[2016 Q77]], [[2016 Q84]], [[2016 Q86]], [[2016 Q96]], [[2018 Q51]], [[2018 Q69]], [[2019 Q1]], [[2019 Q7]], [[2019 Q84]], [[2019 Q95]], [[2022 Q91]], [[2023 Q97]], [[2015 Q87]], [[2014 Q86]], [[2012 Q23]], [[2012 Q94]]
 - Related JPMs: [[2014 JPM Sim-c]], [[2016 JPM RO-A1-1]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
-- Related exam: [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

@@ -76,10 +76,30 @@ After an AB.LOAD-0001 rapid power reduction overshoots (power down to ~7%, Tavg 
 After a 90 gpd SGTL meets AB.SG-0001 Action Level 3 (power must be <span class="hi-exam">&lt;50% within 1 hour</span>), the crew enters AB.LOAD-0001 to perform the rapid down-power. RO calculates the required boron addition; CRS orders a rate that ensures power &lt;50% within the hour; RO <span class="hi-exam">initiates RCS boration</span> and announces expected/actual rod movement. The down-power is interrupted when the affected SG tube ruptures.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q40</div>
+A 100% → 20% rapid down power at 1% per minute IAW AB.LOAD-0001 causes an RCS outsurge as Tavg lowers; with charging master flow failed as-is, <span class="hi-exam">PZR program level at 20% power (Tavg 551.6°F) is ~28%</span>. See [[Pressurizer Level & Press Control]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q76</div>
+Rod control is <span class="hi-exam">normally placed in manual upon reaching 20% power in AB.LOAD-0001</span>. If rods are left in automatic, Permissive P-2 (&lt;15% turbine load) prevents automatic rod withdrawal, so any automatic rod withdrawal below P-2 is unexpected and is addressed with the abnormal rod-withdrawal procedure (AB.ROD-0003), <span class="hi-trap">not by lowering or tripping the Main Turbine per AB.LOAD-0001 — turbine actions do not address the rod failure</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+Entered for the <span class="hi-exam">automatic Stator Water main turbine runback</span>. When auto rod speed fails to minimum, the RO <span class="hi-exam">takes manual rod control</span>; if OHA E-16 ROD INSERT LMT LO-LO annunciates, the crew <span class="hi-exam">emergency-borates via [[S2.OP-SO.CVC-0008 — Rapid Boration]] until rods are at least 2 steps above the RIL</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #2</div>
+Entered to perform the <span class="hi-exam">power reduction to &lt;50% within 1 hour</span> required by AB.SG-0001 CAS Action Level 3 for the 23 SG tube leak. RO calculates the required boron addition and uses <span class="hi-exam">boration with manual rod control while the PO reduces Main Turbine load</span>. The affected tube ruptures after the reduction is initiated, escalating to a reactor trip and SI.
+</div>
+
 ## Connections
 
-- Related systems: [[500KV]], [[Main Turbine]], [[Circ Water]], [[Control Rod Drive]], [[RPS/SSPS]]
+- Related systems: [[500KV]], [[Main Turbine]], [[Circ Water]], [[Control Rod Drive]], [[RPS/SSPS]], [[Pressurizer Level & Press Control]]
 - Related procedures: [[AB.GRID-0001 — Grid Disturbance]], [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.COND-0001 — Loss of Condenser Vacuum]]
-- Related exam questions: [[2023 Q88]], [[2014 Q42]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam questions: [[2023 Q88]], [[2014 Q42]], [[2012 Q40]], [[2012 Q81]], [[2012 Q76]]
+- Related scenarios: [[2012 Scenario 1]], [[2012 Scenario 2]], [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2018 Scenario 2]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]], [[2012 Scenario 3]]
+- Related exam: [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

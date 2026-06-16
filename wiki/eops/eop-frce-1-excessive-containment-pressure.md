@@ -47,10 +47,20 @@ After the LBLOCA and transition out of EOP-TRIP-1, CFST monitoring identifies th
 Containment pressure rises to 15 psig (steam leak in containment with MSLI failure) and the crew enters FRCE-1. They diagnose that <span class="hi-exam">no Containment Spray pumps are running</span> on the SEC signal. <strong>CT#2 (CT-3):</strong> manually start the 21 and 22 CS pumps <span class="hi-exam">prior to completion of FRCE-1 step 3</span> (if SECs are not reset, block and reset SECs first, then insert the CS actuation keys and start the pumps) — failure to manually actuate the minimum required complement of containment cooling demonstrates inability to recognize a failed/incorrect ESF actuation. <strong>CT#3 (CT-33):</strong> with RCS cooldown rate &gt; 100°F/hr, <span class="hi-exam">reduce AFW flow to no less than 1.0E4 lbm/hr to each SG prior to exiting FRCE-1</span> to minimize the cooldown and limit challenges to the subcriticality and containment CSFs. See [[2014 Scenario 1]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q93</div>
+A valid PURPLE Containment Environment path (15 psig containment) <span class="hi-exam">requires the transition to FRCE-1</span>. However, FRCE-1 <span class="hi-exam">checks whether LOCA-5 is in effect, and if so directs Containment Spray pump operation IAW LOCA-5</span> rather than starting CS pumps directly. See [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+A CFST Containment Environment <span class="hi-exam">PURPLE path (containment pressure &gt; 15 psig)</span> during the LBLOCA drives the CRS to FRCE-1. The crew verifies <span class="hi-exam">CFCUs in low speed with SW, RCPs stopped, both CS pumps running, isolations/MSLI, and no faulted SGs</span>, then returns to [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
+</div>
+
 ## Connections
 
 - Related systems: [[Containment Spray]], [[CFCUs]], [[Containment]], [[RCPs]], [[CCW]]
 - Related EOPs: [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2016 Q4]], [[2016 Q27]], [[2018 Q73]], [[2020 Q9]], [[2022 Q80]], [[2014 Q27]]
-- Related scenarios: [[2015 Scenario 1]], [[2014 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]]
+- Related exam questions: [[2016 Q4]], [[2016 Q27]], [[2018 Q73]], [[2020 Q9]], [[2022 Q80]], [[2014 Q27]], [[2012 Q93]]
+- Related scenarios: [[2012 Scenario 1]], [[2015 Scenario 1]], [[2014 Scenario 1]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

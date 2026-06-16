@@ -43,5 +43,5 @@ Stay-time calc with Salem in <span class="hi-exam">Alert</span> (ADCL automatica
 
 - Related procedures: [[RP-SA-102 — Containment Entries at Power]], [[RP-AA-300 — Radiological Survey Program]], [[RP-AA-460 — Controls for High and Very High Radiation Areas]], [[RP-AA-4000 — Personnel Conduct in Radiologically Controlled Areas]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]]
 - Related exam questions: [[2019 Q45]]
-- Related JPMs: [[2022 JPM SRO-A4]], [[2016 JPM RO-A3]]
-- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related JPMs: [[2022 JPM SRO-A4]], [[2016 JPM RO-A3]], [[2012 JPM RO-A3]]
+- Related exam: [[2019 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Operating Exam]]

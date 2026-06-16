@@ -82,6 +82,11 @@ Per LCO 3.4.10.2, maximum allowable PZR heatup rate is <span class="hi-exam"><sp
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q37</div>
+PRT response while drawing a PZR bubble after a vacuum refill (S2.OP-SO.RC-0002): operators perform a <span class="hi-exam">10-15 minute vent of the PZR while drawing the bubble (Step 5.3.28), with PZR level 40-60% (Step 5.3.5)</span>. There is minimal liquid carryover, but venting air/non-condensables by opening the PZR PORVs <span class="hi-exam">slowly raises PRT pressure</span>. <span class="hi-trap">The PORVs are controlled in MANUAL (they do NOT cycle automatically). RCP bumps are performed BEFORE a vacuum is used; PORVs are in auto during bumps but are opened after the RCP is secured for venting.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q10</div>
 PORV leak-by is a <span class="hi-exam">constant enthalpy (throttling) expansion</span> process. At PZR pressure 415 psig (430 psia) with PRT pressure 0 psig, h<sub>g</sub> &asymp; 1205 BTU/lbm. Following the constant enthalpy line on a Mollier diagram from 415 psig to 0 psig yields tailpipe temperature of approximately <span class="hi-exam">330&deg;F</span>. <span class="hi-trap">212&deg;F is the boiling point at 0 psig and 450&deg;F is for ~515 psig — both are plausible distractors but do not account for the throttling process.</span>
 </div>
@@ -168,6 +173,11 @@ During SGTR-1 depressurization, normal PZR spray is NOT available (23 RCP stoppe
 PZR pressure channel 1 fails high causing both spray valves to open fully and rapid RCS pressure decrease. Operator places MPC in manual and lowers demand. <span class="hi-exam">Alternate path: 2PS1 spray valve fails to close</span> when MPC demand is zeroed. Operator places <span class="hi-exam">2PS1 in MANUAL and closes</span>. If 2PS1 cannot be closed, CAS at <span class="val-trip">2000 psig</span> directs reactor trip and stopping <span class="hi-exam">21 and 23 RCPs</span> (spray is fed from Loops 1 and 3 cold legs).
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-c</div>
+At 4% power, PZR Spray Valve <span class="hi-exam">2PS1 fails open</span>, depressurizing the RCS. Per AB.PZR-0001 the operator places 2PS1 in MANUAL and depresses CLOSE, but <span class="hi-exam">2PS1 remains open</span> so pressure control cannot be regained. With RCS pressure dropping rapidly the operator <span class="hi-exam">trips the reactor</span>, then <span class="hi-exam">stops 21 and 23 RCPs</span> (whose Loop 1/3 cold-leg flow feeds the open spray path), and <span class="hi-exam">stops a second RCP (22 OR 24)</span> while pressure continues to drop, leaving one RCP running, then enters EOP-TRIP-1.
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #1</div>
 During startup at 3% power, controlling PZR Pressure Channel I fails high — de-energizes PZR heaters and <span class="hi-exam">fully opens both spray valves</span>. RO places Master Pressure Controller (MPC) in manual, lowers demand to close spray valves, selects <span class="hi-exam">Channel III</span> for control. RO closes <span class="hi-exam">2PR6</span> and places 2PR1 in Manual, WCC removes control power from 2PR6. Channel removed from service IAW S2.OP-SO.RPS-0003. Tech Specs entered: 3.3.1.1 Action 6, 3.3.2.1.b Action 19, <span class="hi-exam">3.4.5 Action b (1 hr LCO)</span>, 3.2.5 DNB (2 hr LCO).
@@ -198,6 +208,11 @@ FRHS-1 Step 24 RCS bleed path: <span class="hi-exam">OPEN BOTH PZR PORV STOP VAL
 PRT level adjust at 100% power with <span class="hi-exam">2PR1 leaking, 2PR6 shut with power applied, PRT level at 56.2%, PRT pressure 9.8 psig</span>. Per S2.OP-SO.PZR-0003 §5.1: start primary water pump (21 or 22), open 2WR80 (CONT PRI WATER STOP) and 2WR82 (PRT WATER SUPPLY) to fill, and operate 2PR15 (VENT) as needed to keep PRT pressure <span class="hi-exam">&gt;3 psig and ≤10 psig</span> while raising level. <span class="hi-trap">PRT Hi Pressure alarm locks out 2PR15 — pressure cannot be reduced via vent path once that alarm comes in. The 3 psig lower bound preserves a positive nitrogen overpressure to prevent oxygen ingress.</span>
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-f</div>
+Same Section 5.1 fill evolution (2PR1 leaking, PRT level 55.9%, PRT pressure 9.8 psig, PRT Level Hi-Lo alarm in): raise PRT level to 60%. <span class="hi-exam">Task standard: raise PRT level to &gt;57% while maintaining PRT pressure &gt;3 and ≤10 psig.</span> Because pressure starts near the 10 psig maximum, the operator may perform the 2PR15 vent step before raising level, then throttle 2PR15 as level rises.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q29</div>
 <span class="hi-exam">The PZR Cold Calibrated level 0% reference is at the 108' 11" elevation in containment</span>. During refueling cavity fill, once cavity water rises above that elevation (e.g., 110') the PZR cold cal indication reads on-scale (a small positive value, ~3%), not off-scale.
@@ -218,6 +233,11 @@ For RCP restart during SGTR recovery (RVLIS upper range &lt;100%), <span class="
 With Channels I and III PZR pressure failed low there is <span class="hi-exam">no automatic control for PZR pressure</span> (no demand for spray flow) — RO manually controls RCS pressure during SI termination. RCS pressure is controlled by <span class="hi-exam">PZR PORV 2PR2 cycling in auto</span> after the trip. The 2PR1 PORV block valve is closed and de-energized for the inoperable failed channel.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #2</div>
+SGTR <span class="hi-exam">without pressurizer pressure control</span>: PZR PORV 2PR1 is inoperable with its block valve <span class="hi-exam">2PR6 shut and deenergized per TSAS 3.4.5.b</span>, and the RCPs (normal spray) are lost on the preceding loss of offsite power. At the SGTR-1 RCS depressurization step the only available PORV (2PR2) <span class="hi-exam">fails to open</span>, leaving no depressurization path, so the CRS transitions to [[EOP-SGTR-5 — SGTR without Pressurizer Pressure Control]]. The crew maintains PZR level &gt;11% with RCS subcooling &gt;0°.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q3</div>
 PZR vapor space accident (one PZR safety valve fails full open): after the Rx trip, <span class="hi-exam">PZR level lowers initially, then rises rapidly until the PZR becomes water solid</span> as the RPV begins to void. <span class="hi-trap">This distinguishes a vapor space accident (pressure and level lower, then level rises as the vessel voids) from a LOCA (loses both pressure and level).</span>
@@ -233,12 +253,17 @@ For a 1PR1 PORV that opens and cannot be shut, the PRT pressurizes until the <sp
 A stuck-open PZR safety (PR3) is a <span class="hi-exam">constant-enthalpy (throttling) process</span>, so the tailpipe fluid is saturated at PRT pressure. With PRT pressure <span class="val-normal">5 psig (= 20 psia)</span>, the steam-table saturation temperature is <span class="hi-exam">227.918°F ≈ 228°F</span> — the expected tailpipe temperature. <span class="hi-trap">Using 5 psia instead of 20 psia (mistaking psig for psia) gives the 162°F distractor.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q51</div>
+On a turbine-trip-induced reactor trip with the Steam Dumps failing to ARM, RCS pressure rises but <span class="hi-exam">PZR spray valves open rapidly and fully to keep RCS pressure below ~2335 psig</span> — so the PORVs do not open (and the PZR Safeties, sized to relieve a loss of load with the Rx still at power, do not lift). See [[Steam Dumps]].
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[S2.OP-SO.PZR-0003 — PRT Operation]], [[S2.OP-SO.RC-0002 — Vacuum Refill of the RCS]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2014 Q3]], [[2014 Q36]], [[2014 Q39]], [[2016 Q11]], [[2016 Q21]], [[2016 Q23]], [[2016 Q34]], [[2016 Q36]], [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]], [[2015 Q29]], [[2015 Q36]], [[2015 Q79]], [[2014 Q22]], [[2014 Q23]], [[2014 Q87]]
-- Related JPMs: [[2014 JPM Sim-c]], [[2014 JPM IP-j]], [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]], [[2016 JPM Sim-d]], [[2016 JPM Sim-f]], [[2016 JPM IP-i]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam questions: [[2014 Q3]], [[2014 Q36]], [[2014 Q39]], [[2016 Q11]], [[2016 Q21]], [[2016 Q23]], [[2016 Q34]], [[2016 Q36]], [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]], [[2015 Q29]], [[2015 Q36]], [[2015 Q79]], [[2014 Q22]], [[2014 Q23]], [[2014 Q87]], [[2012 Q7]], [[2012 Q18]], [[2012 Q19]], [[2012 Q23]], [[2012 Q37]], [[2012 Q51]]
+- Related JPMs: [[2014 JPM Sim-c]], [[2014 JPM IP-j]], [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]], [[2016 JPM Sim-d]], [[2016 JPM Sim-f]], [[2016 JPM IP-i]], [[2012 JPM Sim-c]], [[2012 JPM Sim-f]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]], [[2012 Scenario 2]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

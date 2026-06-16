@@ -76,10 +76,16 @@ Prerequisites BEFORE Rx Vessel Head detensioning (S2.OP-IO.ZZ-0007): <span class
 During fuel movement into the reactor, <span class="hi-exam">a loss of Control Air to containment precludes core alterations — the manipulator crane is air-powered for gripping</span>. SRNIs must both be operable (VISUAL, with ONE AUDIBLE); only one RHR loop need be in operation in Mode 6. See [[Control Air]], [[S2.OP-SO.SF-0009 — Refueling Operations]].
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A1-2</div>
+Direct Actions for Spent Fuel Movement (S2.OP-IO.ZZ-0010): of the scheduled work, only the <span class="hi-exam">New Fuel delivery requires suspending fuel movement</span> because it requires opening the Truck Bay door to the Fuel Handling Building (IOP-10 p.17 requires it closed during fuel movement — a ventilation boundary). The 22 SW pump, 2A EDG surveillance, and 21 Chiller oil change do NOT require suspension (TSAS 3.8.1.2 requires only one EDG; single SW pump out does not enter TS; TSAS 3.7.10 allows chiller removal with a 14-day window).
+</div>
+
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[FHV]], [[Radiation Monitoring]]
 - Related procedures: [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.FUEL-0002 — Loss of Refueling Cavity or SFP Level]], [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]], [[S2.OP-ST.CAN-0007 — Refueling Operations Containment Closure]], [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[S2.OP-SO.SF-0003 — Filling the Refueling Cavity]], [[S2.OP-SO.SF-0004 — Draining the Refueling Cavity]], [[S2.OP-SO.SF-0009 — Refueling Operations]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]], [[TS 3/4.7 — Plant Systems]]
-- Related exam questions: [[2016 Q47]], [[2016 Q68]], [[2016 Q88]], [[2018 Q34]], [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]], [[2015 Q29]], [[2015 Q67]], [[2015 Q95]], [[2015 Q96]], [[2014 Q80]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam questions: [[2016 Q47]], [[2016 Q68]], [[2016 Q88]], [[2018 Q34]], [[2019 Q33]], [[2019 Q68]], [[2020 Q23]], [[2020 Q82]], [[2020 Q94]], [[2022 Q62]], [[2015 Q29]], [[2015 Q67]], [[2015 Q95]], [[2015 Q96]], [[2014 Q80]], [[2012 Q90]], [[2012 Q95]], [[2012 Q98]]
+- Related JPMs: [[2012 JPM SRO-A1-2]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

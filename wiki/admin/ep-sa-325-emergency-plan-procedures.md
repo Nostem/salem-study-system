@@ -113,11 +113,16 @@ Emergency classification and ICMF completion (time-critical, <span class="hi-exa
 EAL#CA4.1 (ALERT — Loss of RHR): with RCS intact and RCS temperature &gt; <span class="hi-exam">200 &deg;F for 60 minutes</span>, criteria for declaring an ALERT are met. Key calculation: determine heatup rate from AB.RHR-0001 Attachment 5 (before or after offload curve based on plant status), calculate time to exceed 200 &deg;F, then add 60 minutes. <span class="hi-trap">Must use the correct heatup curve — before offload (5 &deg;F/min for 2 days after shutdown) vs after offload (3.4 &deg;F/min).</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q85</div>
+Notification timing: the State notifications (DE/NJ) are made within <span class="hi-trap">15 minutes</span>, while the <span class="hi-exam">NRC notification (and subsequent notification on a classification upgrade) is required within 60 minutes</span>. A subsequent NRC notification is triggered by a more-severe E-plan classification (e.g., SAE escalating to General Emergency when containment radiation exceeds 2000 R/hr).
+</div>
+
 ## Connections
 
 - Related procedures: [[EP-SA-111 — Emergency Classification and Protective Action]]
 - Related systems: [[RPS/SSPS]], [[EDGs]], [[4KV]], [[RHR]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
-- Related exam questions: [[2019 Q86]], [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]], [[2014 Q75]]
+- Related exam questions: [[2019 Q86]], [[2022 Q74]], [[2022 Q75]], [[2023 Q69]], [[2023 Q92]], [[2014 Q75]], [[2012 Q85]]
 - Related JPMs: [[2018 JPM RO-A4]], [[2019 JPM RO-A4]], [[2019 JPM SRO-A5]], [[2023 JPM RO-A4]], [[2023 JPM SRO-A4]], [[2022 JPM SRO-A5]], [[2020 JPM RO-A4]], [[2020 JPM SRO-A5]], [[2015 JPM RO-A4]], [[2014 JPM RO-A4]]
-- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related exam: [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

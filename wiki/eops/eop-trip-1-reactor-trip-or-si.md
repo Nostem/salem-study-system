@@ -93,6 +93,11 @@ Entered following manual reactor trip and SI on 23 SG tube rupture (650 gpm exce
 </div>
 
 <div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #2</div>
+Entered following a reactor trip and SI directed by CAS on a 23 SG tube rupture (rising SG NR level). <span class="hi-exam">CT#1 (E-3-A): isolate AFW to the ruptured 23 SG within 10 minutes of TRIP-1 entry</span> by closing 23AF11 and 23AF21. Complication: <span class="hi-exam">22 AFW pump pressure-override protection fails and cannot be defeated</span>, so 22 AFW pump supplies no flow to 21/22 SGs — TRIP-1 does not direct tripping the 23 (TD) AFW pump unless two MDAFW pumps are running, which is not the case here. 23BF19 and 23BF13 are NOT shut on the safeguards valve alignment and are closed manually. No MSLI required; 23 SG identified ruptured on NR level → transition to SGTR-1.
+</div>
+
+<div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2020 #1</div>
 Entered on LOOP with automatic reactor trip. Immediate actions completed — all 4KV Vital Buses found de-energized. Crew transitions to <span class="hi-exam">EOP-LOPA-1</span> based on all three vital buses de-energized.
 </div>
@@ -217,12 +222,42 @@ After an SBLOCA, the CRS directs a reactor trip and SI. In TRIP-1 immediate acti
 A 23 SG tube rupture drives the reactor trip and SI. In TRIP-1 the <span class="hi-exam">22 AFW pump pressure override circuit fails</span> so it supplies no flow (depressing the Pressure Override Defeat has no effect); the crew throttles AFW and <span class="hi-exam">isolates AFW to the ruptured 23 SG within 10 minutes of TRIP-1 entry (CT#1, time-critical)</span> by closing 23AF11/23AF21, and shuts 23MS45 to terminate the unmonitored release through the 23 AFW pump turbine discharge. With 23 SG confirmed ruptured on NR level, the CRS transitions to [[EOP-SGTR-1 — Steam Generator Tube Rupture]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q39</div>
+While responding IAW the TRIP series EOPs after a LOOP with the 2A 4KV Vital Bus failed to reenergize, the only PZR heater group available to maintain PZR pressure is <span class="hi-exam">21 Backup Heater Group (emergency feed from the 2C vital bus)</span>. <span class="hi-trap">22 Backup Heater Group (emergency feed from the 2A vital bus) is unavailable; Control Group heaters have no emergency supply.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q74</div>
+EOP flowcharts (including the TRIP series) carry a <span class="hi-exam">Continuous Action Summary (CAS) in the upper-left corner of each flowchart sheet</span>. The CAS contains the conditional operator actions — including interprocedure transitions — that are <span class="hi-exam">applicable at all times while the procedure is being implemented</span>. <span class="hi-trap">It is the "Continuous Action Summary," NOT a "Conditional Action Summary," and not an individual conditional/continuous action step.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q77</div>
+At <span class="hi-exam">Step 23, PZR PORV STATUS</span>, if a PZR PORV indicates open and neither the PORV nor its block valve can be shut, the crew <span class="hi-exam">transitions to [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]] — the transition to [[EOP-TRIP-3 — SI Termination]] is NOT made in TRIP-1</span> because TRIP-1 cannot size the PORV leak. The SI-termination decision (SI Flow Reduction criteria) is performed in LOCA-1, not here.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q78</div>
+When a faulted SG is identified in EOP-TRIP-1 during a SBLOCA, the procedure <span class="hi-exam">transition to [[EOP-LOSC-1 — Loss of Secondary Coolant]] is made before any transition to [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]</span>. LOSC-1 isolates the faulted SG; its exit is to [[EOP-SGTR-1 — Steam Generator Tube Rupture]] (if a rupture exists) or to LOCA-1. <span class="hi-trap">There is no direct TRIP-1 → LOSC-2 transition path.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+<span class="hi-trap">Distractor trap: an Intermediate Range bistable illuminating at 15% power is NOT an ATWT.</span> The ATWT response (manually trip the reactor; if it does not trip, verify the turbine is tripped and initiate rod insertion, then go to EOP-FRSM-1) is the correct action only for an actual failure to trip — but here the IR Hi Flux trip is already blocked above P-10, so no reactor trip is expected and the power ascension continues.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+On a false-SI reactor trip, the RO performs the <span class="hi-exam">immediate actions from memory</span>. The <span class="hi-exam">low-head ECCS (RHR) pumps fail to auto start</span> on the LBLOCA — <span class="hi-exam">CT#1 requires manually starting at least one RHR pump before exiting TRIP-1</span> — and <span class="hi-exam">Containment Spray fails to auto actuate on Phase B</span> — <span class="hi-exam">CT#2 requires manually actuating the minimum containment cooling complement before exiting TRIP-1</span>. The crew transitions out to [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]] on containment radiation.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment Spray]], [[Main Turbine]], [[CCW]]
-- Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]], [[OP-AA-101-111-1003 — Use of Procedures]], [[AB.CC-0001 — Loss of Component Cooling Water]]
+- Related procedures: [[S2.OP-AR.ZZ-0004 — Alarm Response Procedure]], [[AB.CR-0001 — Control Room Evacuation]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CW-0001]], [[OP-AA-101-111-1003 — Use of Procedures]], [[AB.CC-0001 — Loss of Component Cooling Water]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
 - Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-APPX-1 — Component Cooling Water Restoration]]
-- Related exam questions: [[2014 Q2]], [[2015 Q2]], [[2015 Q10]], [[2015 Q11]], [[2016 Q32]], [[2016 Q39]], [[2016 Q65]], [[2016 Q74]], [[2016 Q76]], [[2016 Q78]], [[2016 Q90]], [[2018 Q49]], [[2018 Q68]], [[2018 Q98]], [[2019 Q48]], [[2019 Q49]], [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]], [[2015 Q51]], [[2015 Q74]], [[2014 Q19]], [[2014 Q23]], [[2014 Q74]], [[2014 Q81]], [[2014 Q85]], [[2014 Q88]], [[2014 Q92]]
-- Related JPMs: [[2014 JPM Sim-d]], [[2018 JPM Sim-g]], [[2018 JPM Sim-h]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2016 JPM Sim-h]], [[2015 JPM Sim-a]], [[2015 JPM Sim-g]]
-- Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related exam questions: [[2014 Q2]], [[2015 Q2]], [[2015 Q10]], [[2015 Q11]], [[2016 Q32]], [[2016 Q39]], [[2016 Q65]], [[2016 Q74]], [[2016 Q76]], [[2016 Q78]], [[2016 Q90]], [[2018 Q49]], [[2018 Q68]], [[2018 Q98]], [[2019 Q48]], [[2019 Q49]], [[2020 Q1]], [[2020 Q16]], [[2020 Q18]], [[2020 Q55]], [[2020 Q56]], [[2020 Q75]], [[2020 Q76]], [[2020 Q100]], [[2022 Q3]], [[2022 Q42]], [[2023 Q1]], [[2023 Q21]], [[2023 Q83]], [[2023 Q87]], [[2023 Q88]], [[2023 Q93]], [[2015 Q51]], [[2015 Q74]], [[2014 Q19]], [[2014 Q23]], [[2014 Q74]], [[2014 Q81]], [[2014 Q85]], [[2014 Q88]], [[2014 Q92]], [[2012 Q9]], [[2012 Q18]], [[2012 Q20]], [[2012 Q21]], [[2012 Q25]], [[2012 Q39]], [[2012 Q44]], [[2012 Q74]], [[2012 Q77]], [[2012 Q78]], [[2012 Q81]], [[2012 Q82]], [[2012 Q87]]
+- Related JPMs: [[2014 JPM Sim-d]], [[2018 JPM Sim-g]], [[2018 JPM Sim-h]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2016 JPM Sim-h]], [[2015 JPM Sim-a]], [[2015 JPM Sim-g]], [[2012 JPM Sim-c]], [[2012 JPM Sim-e]], [[2012 JPM Sim-g]]
+- Related scenarios: [[2012 Scenario 1]], [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]], [[2012 Scenario 2]], [[2012 Scenario 3]]
+- Related exam: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

@@ -99,6 +99,11 @@ During LOOP, PZR backup heaters are transferred to emergency power per S2.OP-SO.
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q39</div>
+PZR heater group power supplies (relevant after a LOOP with the 2A 4KV Vital Bus failing to reenergize): <span class="hi-exam">Control Group heaters — normally 2G non-vital bus, NO emergency supply</span>; <span class="hi-exam">21 Backup Heater Group — normally 2G non-vital bus, emergency supply from the 2C vital bus</span>; <span class="hi-exam">22 Backup Heater Group — normally 2E non-vital bus, emergency supply from the 2A vital bus</span>. With 2A lost, only <span class="hi-exam">21 Backup Heater Group is available</span> to maintain PZR pressure in TRIP-series EOPs. <span class="hi-trap">22 Backup Heater Group is unavailable because its emergency feed (2A vital bus) is lost; Control Group has no emergency supply at all.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q50</div>
 PZR Safety Valve seat leakage response: PZR level lowers below program level → <span class="hi-exam">master flow controller automatically RAISES charging flow</span>. <span class="hi-trap">Trap: PZR safety valves are located on top of the PZR, so candidates may think level rises. In reality, steam leaking out reduces steam space pressure AND inventory → level drops.</span> As RCS pressure lowers from the leak, the <span class="hi-exam">OT&Delta;T reactor trip setpoint automatically lowers (K3 pressure coefficient)</span> and trips the reactor before the fixed low PZR pressure setpoint of <span class="val-trip">1865 psig</span> is reached. <span class="hi-trap">OP&Delta;T setpoint varies with AFD, NOT pressure — do not confuse OT&Delta;T (pressure-dependent) with OP&Delta;T (AFD-dependent).</span>
 </div>
@@ -168,6 +173,11 @@ On a toxic-gas control room evacuation, local plant control (per AB.CR-0001) det
 On a 2PR1 PORV failing open at power: PZR pressure lowers, so the <span class="hi-exam">PZR Master Pressure Controller (MPC) output LOWERS</span> (turning on heaters and closing spray valves). Per AB.PZR-0001 the PORV is isolated by shutting its Block Valve; <span class="hi-trap">if the PORV is not restored within 72 hours, a unit shutdown is required (TS 3.4.5 action b)</span> — distinct from a leaking PORV (isolated with power maintained to the Block Valve, no shutdown). See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[TS 3/4.4 — Reactor Coolant System]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q77</div>
+During post-trip EOP response, if <span class="hi-exam">PZR PORV 2PR1 indicates open and will not manually shut, AND its block valve 2PR6 will not shut</span>, the PORV leak cannot be isolated and its size is unknown. The EOP response is to <span class="hi-exam">transition from EOP-TRIP-1 to EOP-LOCA-1</span> (TRIP-1 cannot size the PORV leak); the SI-termination decision is then made in LOCA-1. See [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2015 #2</div>
 The controlling PZR Pressure channel (Channel I / PT455) fails low, annunciating <span class="hi-exam">OHA D-16 RC PRESS LO, E-12 PZR PRESS LO, and E-28 PZR HTR ON PRESS LOW</span>. RO takes the Master Pressure Controller to MANUAL to mitigate, then <span class="hi-exam">selects PZR Pressure Channel III for control</span> and restores the Master Controller to AUTO. Crew removes the failed channel from service and closes/de-energizes 2PR6 PORV block valve. Later a 2nd channel (PT457) fails low, causing an auto Inadvertent SI on Lo PZR pressure. See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]].
@@ -208,11 +218,31 @@ During an RCS leak in heatup with the Low PZR Pressure SI still blocked (RCS &lt
 PZR <span class="hi-exam">hot-calibrated vs cold-calibrated level correlation</span> during a cooldown (IOP-6 Exhibit 1): a hot cal indication of <span class="hi-exam">95% at 400°F corresponds to ACTUAL PZR level ~66%</span>, which reads as <span class="hi-exam">cold cal ~56-57%</span> at 400°F. <span class="hi-trap">Trap: hot-cal and cold-cal channels read very differently at the same actual level because the reference-leg fluid density differs between hot and cold calibration — failing to apply the conversion (or reversing charging-flow direction) gives a wrong answer.</span> After the cooldown rate is reduced, IOP-6 directs <span class="hi-exam">raising charging flow to establish 80% cold cal level</span> (25-53% required prior to the 80% step). See [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q7</div>
+With the PZR Master Pressure Controller (MPC) demand failing high (0-100% scale), the MPC output <span class="hi-exam">calls for maximum spray and turns OFF the backup heaters</span>. <span class="hi-exam">The PZR PORVs are controlled independently of the MPC demand — they respond to actual PZR pressure channels 1-4</span>; since actual PZR pressure is not high, the PORVs have no open demand and remain SHUT. So B/U heaters OFF and BOTH PORVs SHUT.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q5</div>
+Loss of the 1A 460/230V bus drops the 13 (PD) charging pump but does NOT trip its breaker on UV, so the letdown-orifice auto-isolation interlock (all 3 charging pump breakers open) is not satisfied — letdown continues at 75 gpm. With no charging and letdown in service, <span class="hi-exam">PZR level lowers at ~1% per minute</span>. <span class="hi-trap">VCT level RISES at ~4% per minute (20 gal/% VCT rule) — the ~1%/min value applies to PZR, not VCT.</span> See [[CVCS]], [[460/230V AC]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q40</div>
+With the Charging Master Flow Controller failed as-is, a 100% → 20% downpower causes an RCS outsurge as Tavg lowers, but <span class="hi-exam">program PZR level is clipped at 59% (the maximum demanded level)</span>. At 20% power with Tavg exactly on program (551.6°F), the <span class="hi-exam">programmed PZR level is ~28%</span> (per AB.ROD-0003 Attachments 1 and 2). The no-load program level is 22%; the 80% program level (569.5°F Tavg) is ~51%. See [[AB.ROD-0003 — Continuous Rod Motion]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q86</div>
+In Mode 5 with RHR in service, the Pressurizer Overpressure Protection System (POPs) <span class="hi-exam">opens both PZR PORVs at 375 psig</span> (the cold-overpressure setpoint, distinct from the at-power 2335 psig open setpoint). When a second RCP start momentarily raises RCS pressure to 390 psig, the PORVs open (visible in the control room) along with the 1RH3 RHR relief (not visible). Enter AB.PZR-0001, Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-trap">375 psig is the cold-overpressure POPs setpoint; 2335 psig is the normal at-power PORV open setpoint.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
-- Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[S2.OP-SO.PZR-0008 — Setting Pressurizer Spray Bypass Flow]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
-- Related exam questions: [[2014 Q10]], [[2014 Q11]], [[2014 Q36]], [[2014 Q38]], [[2016 Q7]], [[2016 Q36]], [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2018 Q55]], [[2018 Q82]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]], [[2015 Q38]], [[2015 Q39]], [[2015 Q40]], [[2015 Q81]], [[2015 Q87]], [[2014 Q40]], [[2014 Q41]], [[2014 Q91]], [[2014 Q95]]
+- Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[S2.OP-SO.PZR-0008 — Setting Pressurizer Spray Bypass Flow]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]], [[AB.LOAD-0001 — Rapid Load Reduction]], [[AB.ROD-0003 — Continuous Rod Motion]]
+- Related exam questions: [[2014 Q10]], [[2014 Q11]], [[2014 Q36]], [[2014 Q38]], [[2016 Q7]], [[2016 Q36]], [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2018 Q55]], [[2018 Q82]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]], [[2015 Q38]], [[2015 Q39]], [[2015 Q40]], [[2015 Q81]], [[2015 Q87]], [[2014 Q40]], [[2014 Q41]], [[2014 Q91]], [[2014 Q95]], [[2012 Q5]], [[2012 Q7]], [[2012 Q39]], [[2012 Q40]], [[2012 Q77]], [[2012 Q80]], [[2012 Q86]]
 - Related JPMs: [[2019 JPM Sim-c]], [[2022 JPM IP-i]], [[2016 JPM IP-i]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 2]]
-- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 2]], [[2012 Scenario 3]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

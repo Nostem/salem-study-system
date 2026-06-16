@@ -227,5 +227,5 @@ TS 3.1.3.1 Action b: with <span class="hi-exam">more than one rod inoperable or 
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]]
 - Related procedures: [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]], [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
 - Related exam questions: [[2014 Q1]], [[2020 Q20]], [[2023 Q56]], [[2015 Q88]]
-- Related JPMs: [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]]
-- Related exam: [[2014 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related JPMs: [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]], [[2012 JPM RO-A1-1]]
+- Related exam: [[2014 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2012 NRC Operating Exam]]

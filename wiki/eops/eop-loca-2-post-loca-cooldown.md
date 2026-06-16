@@ -105,11 +105,16 @@ EOP-LOCA-2 (Post LOCA Cooldown/Depressurization) <span class="hi-exam">terminate
 The depressurization phase of LOCA-2 exists to <span class="hi-exam">refill the pressurizer</span>. If the PZR is already filled (level &gt;25%) the procedure goes directly to the <span class="hi-exam">SI flow reduction process — stop all but one RCP and begin stopping ECCS pumps</span>. With all RCPs running there are no voids to collapse, and there is no CAS transition to TRIP-3 under these conditions. <span class="hi-trap">Do not stop ALL RCPs, energize all PZR heaters to collapse (non-existent) voids, or recommence depressurization once PZR level is already &gt;25%.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q19</div>
+During performance of LOCA-2, the alarm that requires the associated response is the <span class="hi-exam">RWST Lo Level console alarm at 15.2 feet → transfer RCS to Cold Leg Recirculation</span> (a CAS action in LOCA-2). <span class="hi-trap">Distractor traps: the PZR Low Level alarm comes in at 5% below program (~22% at low Tavg during a SBLOCA), not at a fixed 17%; the 2R53A-D N16 Main Steam Line monitors provide no useful indication after the reactor is shut down (aligning SGBD is an SGTR-1 action, not LOCA-2); and opening 21AF21 has no effect when 22 AFW pump has no power.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RCS]], [[ECCS]], [[CVCS]], [[Pressurizer & PRT]], [[RCPs]], [[Main Steam]]
-- Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2015 Q21]], [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]], [[2015 Q91]], [[2014 Q22]]
+- Related systems: [[RCS]], [[ECCS]], [[CVCS]], [[Pressurizer & PRT]], [[RCPs]], [[Main Steam]], [[Radiation Monitoring]], [[AFW]], [[Steam Generator & Blowdown]]
+- Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
+- Related exam questions: [[2015 Q21]], [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]], [[2015 Q91]], [[2014 Q22]], [[2012 Q19]]
 - Related JPMs: [[2023 JPM Sim-c]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2012 NRC Written Exam]]

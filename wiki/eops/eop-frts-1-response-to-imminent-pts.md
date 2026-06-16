@@ -89,11 +89,21 @@ After a rapid cooldown/depressurization (e.g., a steamline rupture blowing down 
 FRTS-1 Step 9 evaluates RCS subcooling together with adequate vessel level (RVLIS) to decide if an RCP is required and can be started. Initial criteria: <span class="hi-exam">&gt;50°F subcooling and adequate RVLIS level</span>. With &lt;50°F subcooling (e.g., 20°F) the procedure goes straight to the RCP-start step, which requires all RCPs stopped and <span class="hi-exam">subcooling &gt;0°F</span>, then starts a single RCP IAW S2.OP-SO.RC-0001 — which adds the restriction that the selected loop have <span class="hi-exam">SG NR level &gt;9%</span>. Per the Bases Document, the purpose is to mix cold incoming ECCS water with the warm reactor coolant water.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q22</div>
+In FRTS-1 (entered after a steam line break inside containment), operators terminate SI and start an RCP because <span class="hi-exam">Safety Injection flow is a significant contributor to any cold-leg temperature decrease or overpressure condition and must be terminated</span>, and <span class="hi-exam">RCPs are started to provide mixing of cold SI and warm reactor coolant water</span> (per the FRTS-1 Basis Document, pages 2 and 13). <span class="hi-trap">Traps: the "soak required by FRTS-1" is NOT the basis for securing SI; using RCP spray to depressurize, and minimizing the temperature gradient across the S/G tube sheets, are not the RCP-start basis here.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+During the LBLOCA the STA identifies a <span class="hi-exam">PURPLE Thermal Shock path</span> on the CFSTs. The CRS transitions to FRTS-1 based on the <span class="hi-exam">RCS cooldown rate / Table A</span>, then returns to [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RCS]], [[RCPs]], [[RHR]], [[AFW]], [[RVLIS]], [[Steam Generator & Blowdown]], [[Main Steam]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
 - Related EOPs: [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2016 Q24]], [[2016 Q83]], [[2016 Q99]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]], [[2015 Q83]], [[2015 Q84]], [[2014 Q15]], [[2014 Q25]]
-- Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2015 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]
+- Related exam questions: [[2016 Q24]], [[2016 Q83]], [[2016 Q99]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]], [[2015 Q83]], [[2015 Q84]], [[2014 Q15]], [[2014 Q25]], [[2012 Q22]]
+- Related scenarios: [[2012 Scenario 1]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2015 Scenario 1]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

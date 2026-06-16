@@ -112,11 +112,31 @@ The CFSTs <span class="hi-exam">become active on the transition out of EOP-TRIP-
 During the SGTR cooldown, CT#2 requires the crew to <span class="hi-exam">maintain RCS temperature so that the subcriticality and/or integrity status trees are not driven to a RED path or a PURPLE challenge</span> (too-low RCS temperature), while still keeping the temperature high enough to maintain minimum required subcooling. The CFSTs are monitored throughout the EOP-TRIP-1 → SGTR-1 → SGTR-5 flow; no front-line FRP is actually entered in this scenario. See [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q44</div>
+Core Cooling CSF status tree (CFST Basis Doc): <span class="hi-exam">5 or more CETs &gt; 1200°F indicates a superheat condition (most liquid inventory removed, core decay heat superheating steam) → RED path → entry to EOP-FRCC-1</span>. <span class="hi-trap">At least 5 CETs must be &gt;700°F to indicate superheat at the core exit</span>; with CETs &lt;700°F there is still a Core Cooling <span class="hi-exam">PURPLE</span> path entry if RVLIS Full Range is &lt;39%. CETs at 650°F with RVLIS Full Range 74% is a <span class="hi-exam">YELLOW</span> path, not PURPLE. See [[Incores]], [[RVLIS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q73</div>
+Determining RCS saturation temperature when the SMM is inoperable (per CFST Basis Document p2 of 18): <span class="hi-exam">use RCS pressure (PI-403 or PI-405) with the CFST Subcooling Tables — Table A for Normal Containment or Table B for Adverse Containment</span> — to log RCS subcooling on Table D. <span class="hi-trap">Generic Steam Tables are NOT used (the CFST Subcooling Tables are), and PZR pressure channels (PI-455A/456/457/474A) are NOT used.</span> Table D footnote for RCS temperature: <span class="hi-exam">use CETs (WR Thot RTDs if CETs are not available)</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+CFST monitoring becomes active on transition out of [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]. During the LBLOCA the STA identifies <span class="hi-exam">PURPLE paths on the Thermal Shock and Containment Environment trees</span>, driving entries into [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]] and [[EOP-FRCE-1 — Response to Excessive Containment Pressure]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #2</div>
+SGTR critical task framed against the status trees: <span class="hi-exam">CT#2 (E-3-B)</span> requires maintaining RCS temperature so a transition out of SGTR-1 does not occur — Tave not too high to keep minimum subcooling, and not so low as to cause a <span class="hi-exam">Red (extreme) or Purple (severe) challenge to the Subcriticality and/or the Core/RCS Integrity CSF</span>.
+</div>
+
 ## Connections
 
-- Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]], [[EOP-FRCE-2 — Response to Containment Flooding]], [[EOP-FRCE-3 — Response to High Containment Radiation Levels]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRSM-2 — Response to Loss of Core Shutdown]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
+- Related EOPs: [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]], [[EOP-FRCE-2 — Response to Containment Flooding]], [[EOP-FRCE-3 — Response to High Containment Radiation Levels]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRHS-2 — Response to Steam Generator Overpressure]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[EOP-FRSM-2 — Response to Loss of Core Shutdown]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related systems: [[RVLIS]], [[RPS/SSPS]], [[Incores]], [[Containment]], [[Radiation Monitoring]]
 - Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
-- Related scenarios: [[2015 Scenario 1]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]]
-- Related exam questions: [[2016 Q76]], [[2016 Q83]], [[2018 Q47]], [[2018 Q74]], [[2018 Q75]], [[2018 Q80]], [[2018 Q85]], [[2019 Q46]], [[2019 Q75]], [[2020 Q24]], [[2020 Q26]], [[2015 Q44]], [[2015 Q83]], [[2015 Q84]], [[2014 Q45]], [[2014 Q74]], [[2014 Q88]], [[2014 Q99]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]]
+- Related scenarios: [[2012 Scenario 1]], [[2012 Scenario 2]], [[2015 Scenario 1]], [[2015 Scenario 3]], [[2015 Scenario 4]], [[2014 Scenario 1]], [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]], [[2014 Scenario 3]], [[2014 Scenario 4 — Steam Generator Tube Rupture without Pressurizer Pressure Control]], [[2012 Scenario 3]]
+- Related exam questions: [[2016 Q76]], [[2016 Q83]], [[2018 Q47]], [[2018 Q74]], [[2018 Q75]], [[2018 Q80]], [[2018 Q85]], [[2019 Q46]], [[2019 Q75]], [[2020 Q24]], [[2020 Q26]], [[2015 Q44]], [[2015 Q83]], [[2015 Q84]], [[2014 Q45]], [[2014 Q74]], [[2014 Q88]], [[2014 Q99]], [[2012 Q44]], [[2012 Q73]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

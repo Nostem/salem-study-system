@@ -65,6 +65,11 @@ ECCS realignment for cold leg recirculation is required as soon as the <span cla
 EOP-LOCA-3 alignment when 21SJ44 fails to open: <span class="hi-exam">Step 5.2 directs stopping 21 RHR pump</span>, and 21 RHR pump remains stopped as long as 21SJ44 is shut. <span class="hi-exam">21SJ45 is interlocked with 21SJ44 — 21SJ45 cannot be opened with 21SJ44 shut</span>. The 21CS36 interlock is with 21RH1 and 21RH2 (must be SHUT before 21CS36 can be OPENED). With 22 RHR pump running at step 22, CS header flow is supplied by <span class="hi-exam">22CS36</span>. Final lineup: ALL containment sump recirculation flow goes through <span class="hi-exam">22SJ45 (to Charging/SI pump suctions) and 22CS36 (to spray headers)</span>; 22SJ49 (cold leg isolation) is shut whenever 22 RHR pump is running at the RWST lo-lo alarm. (Source procedure rev 30; ECCS Lesson Plan p.47, 52)
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q36</div>
+<span class="hi-exam">11SJ44/12SJ44 (Containment Sump Isolation) open in EOP-LOCA-3 during transfer to cold-leg recirc and provide NO ECCS injection flow</span> — so they are NOT among the valves whose failure to reposition on an SI signal would block injection. <span class="hi-trap">By contrast, the BIT outlet valves 1SJ12/1SJ13 are the SI-actuated injection valves whose failure to open blocks BIT injection.</span>
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2018 #2</div>
 Cold leg recirculation transfer after LBLOCA. <span class="hi-exam">CT#2 (CT-36) — time-critical</span>: (1) Open 21SJ44 and 22SJ44, depress sump auto arm pushbuttons when containment sump >62% lights lit. (2) Remove lockouts for 2SJ67, 2SJ68, 2SJ69. (3) <span class="hi-exam">Close 2SJ69 within ~3.7 min</span> of RWST lo alarm. (4) <span class="hi-exam">Stop 22 CS pump within ~5.5 min</span>. (5) Close 21 and 22RH19s. Select flow path for all 4KV vital buses energized → Step 11. Close 2SJ67 and 2SJ68. Open 22SJ45, then 21SJ45. Close 2SJ30, 2SJ1, 2SJ2. <span class="hi-exam">Place 21RH29 and 22RH29 in manual and ensure closed (Step 15) within ~11.2 min</span>. PO removes lockout from 2SJ30.
@@ -105,12 +110,22 @@ RWST level lowering to the low level setpoint <span class="hi-exam">only directs
 LOCA-3 transfer to cold leg recirculation with a <span class="hi-exam">single-train (alternate path)</span> alignment. Step 5 checks whether 21 and 22 SJ44 (Sump Valves) are open; with <span class="hi-exam">22 SJ44 failed shut and only 21 SJ44 open</span>, the crew runs the single-train branch — stop 22 RHR pump, close 2SJ69 (Common Suction), and do <span class="hi-exam">NOT start 22 RHR pump</span> (22 SJ44 will not open). The path is further degraded by support-system losses: <span class="hi-exam">only 2 of the required 3 SW pumps are running</span> (step 11.1), so 2 CFCUs are stopped and loads are shed (step 11B); and because <span class="hi-exam">22 CCW HX is unavailable (~196°F on 2CC2)</span>, RHR HX cooling is routed by opening 21CC16 and closing 22CC16. Final lineup runs 21 RHR pump with 21SJ45 (RHR Discharge to SI pump valve) open.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q3</div>
+The transfer to Cold Leg Recirculation is required when RWST level reaches the Lo alarm at <span class="hi-exam">15.2 ft (≈150000 gallons)</span>. For a LBLOCA at power with one RHR pump failed, all ECCS pumps inject at runout (<span class="hi-exam">charging 1120 + SI 1350 + one RHR 4500 + Containment Spray 5200 = 12170 gpm</span>); from an initial RWST level of 41.1 ft (370000 gal) it takes <span class="hi-exam">~18 minutes (≈19 min) to drain to the 15.2 ft swap level</span>. See [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+Entered at <span class="hi-exam">RWST 15.2 ft</span> from [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]. The <span class="hi-exam">CT#3 time-critical switchover windows measured from the RWST Lo level alarm</span> are: <span class="hi-exam">close 2SJ69 within 3.7 min, stop a Containment Spray pump within 5.5 min, and complete switchover within 11.2 min</span>. During the transfer the <span class="hi-exam">22 charging pump cavitates when 2SJ1 and 2SJ2 are shut</span>; CT#4 requires tripping it before pump/piping damage.
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[Containment Spray]], [[RHR]], [[SECs]], [[4KV]], [[460/230V AC]], [[CFCUs]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]]
-- Related exam questions: [[2015 Q24]], [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]], [[2015 Q34]], [[2015 Q46]], [[2014 Q89]], [[2014 Q99]]
+- Related procedures: [[OP-AA-101-111-1003 — Use of Procedures]], [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
+- Related exam questions: [[2015 Q24]], [[2016 Q5]], [[2016 Q33]], [[2016 Q73]], [[2016 Q81]], [[2016 Q84]], [[2018 Q4]], [[2019 Q52]], [[2019 Q77]], [[2019 Q88]], [[2020 Q87]], [[2015 Q34]], [[2015 Q46]], [[2014 Q89]], [[2014 Q99]], [[2012 Q3]], [[2012 Q19]], [[2012 Q36]], [[2012 Q83]]
 - Related JPMs: [[2014 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM Sim-b]]
-- Related scenarios: [[2018 Scenario 2]], [[2023 Scenario 1]], [[2015 Scenario 1]]
-- Related exam: [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related scenarios: [[2012 Scenario 1]], [[2018 Scenario 2]], [[2023 Scenario 1]], [[2015 Scenario 1]]
+- Related exam: [[2014 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]
