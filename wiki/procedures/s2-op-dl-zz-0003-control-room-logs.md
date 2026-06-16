@@ -27,7 +27,7 @@ Control room log 1830 readings: Tavg Channel Check for all 4 RC loops (must be w
 
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[RCS]]
-- Related exam questions: [[2023 Q56]]
+- Related systems: [[RPS/SSPS]], [[RCS]], [[DC Power]]
+- Related exam questions: [[2023 Q56]], [[2014 Q18]]
 - Related JPMs: [[2018 JPM RO-A2]]
-- Related exam: [[2023 NRC Written Exam]], [[2018 NRC Operating Exam]]
+- Related exam: [[2023 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2014 NRC Written Exam]]

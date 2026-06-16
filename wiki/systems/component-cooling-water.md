@@ -176,9 +176,34 @@ On a rising CC Surge Tank level with the WHUT being processed by Portable Liquid
 Loss of CCW alternate path: 22 CCW pump trips, the standby (23) CCW pump <span class="hi-exam">fails to auto-start and cannot be manually started</span>, then 21 CCW pump trips <span class="hi-exam">1 minute 30 seconds later</span> — a <span class="hi-exam">TOTAL LOSS of Component Cooling Water to all RCPs</span>. OHA D20-D23 (21/22/23/24 RCP BRG CLG WTR FLO LO) directs GO TO AB.RCP-0001 if RCP Motor Bearing Temperature reaches <span class="val-trip">175°F</span> or CCW flow cannot be established within 5 minutes with temps trending up (bearing temps peak near ~157°F here). On total loss, AB.CC-0001 / AB.RCP-0001 "Stopping Reactor Coolant Pumps" directs: trip the reactor, stop 21-24 RCPs, and — because letdown CCW is lost — <span class="hi-exam">close 2CV2 AND 2CV277 (isolate letdown), open 2SJ1 AND 2SJ2 (swap charging suction to RWST), close 2CV40 AND 2CV41 (isolate VCT)</span>, then GO TO EOP-TRIP-1.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q5</div>
+An RCP thermal barrier rupture causes RCS to in-leak into the CCW thermal barrier path — seen as a momentary RCP Thermal Barrier DISCHARGE FLOW HI alarm (2CC131 auto shuts on high flow) and rising activity on the <span class="hi-exam">CCW surge tank rad monitors 2R17A/2R17B</span>. <span class="hi-trap">The CC surge tank level RISES (RCS in-leakage), not lowers.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q9</div>
+Locating a CCW leak (AB.CC-0001 Attachment 4): if surge tank level keeps lowering with <span class="hi-exam">EITHER CC header in service</span>, the leak is on the <span class="hi-exam">Non-Safeguards header (fed from both CC headers)</span>. The leaking component is the <span class="hi-exam">Spent Fuel Pool HX</span> (SFP cooling pressure &lt; CCW pressure, so leakage is out of CCW). <span class="hi-trap">The Boric Acid Evaporator Distillate Cooler HX is on the non-safeguards header but not normally in service; the 22 CCW HX and 23 Charging pump seal HX are on the safeguards header.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q30</div>
+CCW pump bus power supplies: <span class="hi-exam">23 CCW pump is powered from the 2C 4KV vital bus</span>. With 21 CCW pump out of service, a 2C bus lockout removes CCW flow to the RCP bearings, annunciating OHA D20-23 (RCP BRG CLG WTR FLO LO) — requires entry into [[AB.RCP-0001 — RCP Abnormality]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q31</div>
+The CCW supply to the RCPs is a single line feeding both <span class="hi-exam">bearing cooling and thermal-barrier cooling</span>. The thermal-barrier CCW has a separate return line isolated by <span class="hi-exam">2CC190 (RCP THERM BAR CC OUTLET V, inside containment)</span> and <span class="hi-exam">2CC131 (outside containment)</span>. Thermal-barrier CCW only cools reactor coolant rising through the thermal barrier upon a loss of seal injection. <span class="hi-trap">With normal seal injection, 2CC190 failing shut does NOT affect RCP temperatures.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q37</div>
+TSAS 3.7.3 requires <span class="hi-exam">2 independent loops of CCW</span>; per the bases, having 2 operable loops requires <span class="hi-exam">ALL 3 CCW pumps operable</span> (plus HXs, valves, etc.). The <span class="hi-exam">23 CCW pump is a BLACKOUT load, NOT an ACCIDENT load</span>. On a 2C bus undervoltage / SEC Mode II, 23 CCW does not start; the SEC also <span class="hi-exam">locks out the AUTO/MAN function of the CCW pump start circuitry</span>, so 23 CCW being in MANUAL has no effect. All 3 pumps remain operable → TSAS 3.7.3 is NOT entered.
+</div>
+
 ## Connections
 
-- Related exam questions: [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]]
+- Related exam questions: [[2014 Q5]], [[2014 Q9]], [[2014 Q30]], [[2014 Q31]], [[2014 Q37]], [[2015 Q16]], [[2016 Q5]], [[2016 Q10]], [[2016 Q27]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2019 Q5]], [[2019 Q8]], [[2019 Q55]], [[2020 Q34]], [[2020 Q35]], [[2020 Q55]], [[2020 Q76]], [[2020 Q78]], [[2023 Q4]], [[2023 Q33]], [[2023 Q51]], [[2023 Q59]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2022 Q36]], [[2015 Q37]], [[2015 Q86]], [[2014 Q16]]
 - Related JPMs: [[2016 JPM Sim-e]], [[2018 JPM Sim-h]], [[2019 JPM Sim-h]], [[2015 JPM Sim-g]]
 - Related scenarios: [[2018 Scenario 1]], [[2015 Scenario 4]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Operating Exam]]

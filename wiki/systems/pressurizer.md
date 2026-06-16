@@ -208,12 +208,27 @@ For RCP restart during SGTR recovery (RVLIS upper range &lt;100%), <span class="
 With Channels I and III PZR pressure failed low there is <span class="hi-exam">no automatic control for PZR pressure</span> (no demand for spray flow) — RO manually controls RCS pressure during SI termination. RCS pressure is controlled by <span class="hi-exam">PZR PORV 2PR2 cycling in auto</span> after the trip. The 2PR1 PORV block valve is closed and de-energized for the inoperable failed channel.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q3</div>
+PZR vapor space accident (one PZR safety valve fails full open): after the Rx trip, <span class="hi-exam">PZR level lowers initially, then rises rapidly until the PZR becomes water solid</span> as the RPV begins to void. <span class="hi-trap">This distinguishes a vapor space accident (pressure and level lower, then level rises as the vessel voids) from a LOCA (loses both pressure and level).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q36</div>
+For a 1PR1 PORV that opens and cannot be shut, the PRT pressurizes until the <span class="hi-exam">PRT rupture disk ruptures at <span class="val-trip">100 psig</span></span> if the 1PR6 block valve is not shut. <span class="hi-trap"><span class="val-alarm">10 psig</span> is the PRT HIGH-PRESSURE ALARM setpoint, NOT the rupture-disk setpoint.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q39</div>
+A stuck-open PZR safety (PR3) is a <span class="hi-exam">constant-enthalpy (throttling) process</span>, so the tailpipe fluid is saturated at PRT pressure. With PRT pressure <span class="val-normal">5 psig (= 20 psia)</span>, the steam-table saturation temperature is <span class="hi-exam">227.918°F ≈ 228°F</span> — the expected tailpipe temperature. <span class="hi-trap">Using 5 psia instead of 20 psia (mistaking psig for psia) gives the 162°F distractor.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[EOP-TRIP-4 — Natural Circulation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[S2.OP-SO.PZR-0003 — PRT Operation]], [[S2.OP-SO.RC-0002 — Vacuum Refill of the RCS]]
 - Related EOPs: [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
-- Related exam questions: [[2016 Q11]], [[2016 Q21]], [[2016 Q23]], [[2016 Q34]], [[2016 Q36]], [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]], [[2015 Q29]], [[2015 Q36]], [[2015 Q79]]
+- Related exam questions: [[2014 Q3]], [[2014 Q36]], [[2014 Q39]], [[2016 Q11]], [[2016 Q21]], [[2016 Q23]], [[2016 Q34]], [[2016 Q36]], [[2018 Q6]], [[2018 Q8]], [[2018 Q9]], [[2018 Q25]], [[2018 Q64]], [[2018 Q65]], [[2019 Q6]], [[2019 Q7]], [[2019 Q9]], [[2019 Q10]], [[2020 Q2]], [[2020 Q5]], [[2020 Q7]], [[2020 Q33]], [[2020 Q36]], [[2023 Q32]], [[2023 Q76]], [[2022 Q2]], [[2022 Q34]], [[2015 Q29]], [[2015 Q36]], [[2015 Q79]], [[2014 Q22]], [[2014 Q23]]
 - Related JPMs: [[2018 JPM SRO-A2]], [[2023 JPM Sim-c]], [[2023 JPM Sim-d]], [[2022 JPM IP-i]], [[2020 JPM Sim-a]], [[2016 JPM Sim-d]], [[2016 JPM Sim-f]], [[2016 JPM IP-i]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2017 Scenario 8]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 2]], [[2015 Scenario 3]], [[2015 Scenario 4]]
-- Related exam: [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

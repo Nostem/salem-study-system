@@ -31,10 +31,15 @@ Per the ROD INSERT LIMIT LO-LO Alarm Response Procedure, S2.OP-SO.CVC-0008 (Rapi
 For a single stuck rod after a Rx trip during a SG tube-leak shutdown, the rapid boration is directed by <span class="hi-exam">AB.SG-0001 Step 3.28 (35 minutes per stuck rod)</span> after exiting the TRIP series — NOT in the EOP series. The boration is initiated before any RCS depressurization begins (AB.SG-0001 Step 3.29).
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q7</div>
+If 2CV175 (Rapid Borate Stop Valve) will not open, rapid boration can still be established via the alternate path of <span class="hi-exam">opening 2CV174 (Blender Bypass) and 2CV172 (Boric Acid Flow to Blender)</span> — the flowpath from the BAT pumps through 2CV172 and 2CV174. <span class="hi-trap">Opening only the 2SJ1/2SJ2 RWST-to-charging stop valves is insufficient unless the 2CV40/2CV41 VCT outlet valves are also shut (otherwise RWST head is too low against ~20-30 psig VCT pressure to be drawn into charging suction).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exam questions: [[2015 Q11]], [[2018 Q91]], [[2020 Q21]]
-- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2014 Q7]], [[2015 Q11]], [[2018 Q91]], [[2020 Q21]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]]

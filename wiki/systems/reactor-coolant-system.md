@@ -344,12 +344,17 @@ On a rising RCS activity (2R31 Letdown Line Monitor WARNING), AB.RC-0002 directs
 During SI Termination (EOP-TRIP-3), the crew terminates an Inadvertent SI and manually controls RCS pressure (both PZR pressure control channels failed low). After SI termination and re-establishing letdown, a <span class="hi-exam">24 SG tube rupture (SGTR)</span> initiates; CRS directs starting ECCS pumps as necessary and transitions to EOP-SGTR-1.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q29</div>
+A reduction in a single RC loop flow (e.g., 11 loop −5%) lowers <span class="hi-exam">total flow through the core</span>. Using Q=mc(ΔT), with mass flow rate lowered and power held constant (MT governor valve reaction maintains power), <span class="hi-exam">core ΔT must rise</span>. The net effect is the <span class="hi-trap">reactor core operating CLOSER to DNB</span>. (Loop ΔT rises, not lowers; SG steam pressure is not raised by the flow reduction since power is unchanged.)
+</div>
+
 ## Connections
 
 - Pressure boundary code: ASME Section III (UFSAR 5.2.1.3)
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]]
 - Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]], [[AB.RC-0002 — High Activity in the RCS]]
-- Related exam questions: [[2015 Q19]], [[2015 Q21]], [[2015 Q22]], [[2015 Q23]], [[2015 Q24]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q25]], [[2016 Q28]], [[2016 Q52]], [[2016 Q77]], [[2016 Q79]], [[2016 Q81]], [[2016 Q83]], [[2016 Q84]], [[2016 Q86]], [[2018 Q3]], [[2018 Q63]], [[2018 Q65]], [[2018 Q70]], [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]], [[2015 Q29]], [[2015 Q33]], [[2015 Q36]], [[2015 Q85]], [[2015 Q98]]
+- Related exam questions: [[2014 Q3]], [[2014 Q4]], [[2014 Q8]], [[2014 Q29]], [[2015 Q19]], [[2015 Q21]], [[2015 Q22]], [[2015 Q23]], [[2015 Q24]], [[2016 Q22]], [[2016 Q23]], [[2016 Q24]], [[2016 Q25]], [[2016 Q28]], [[2016 Q52]], [[2016 Q77]], [[2016 Q79]], [[2016 Q81]], [[2016 Q83]], [[2016 Q84]], [[2016 Q86]], [[2018 Q3]], [[2018 Q63]], [[2018 Q65]], [[2018 Q70]], [[2019 Q69]], [[2020 Q16]], [[2020 Q17]], [[2020 Q18]], [[2023 Q17]], [[2023 Q73]], [[2023 Q74]], [[2015 Q29]], [[2015 Q33]], [[2015 Q36]], [[2015 Q85]], [[2015 Q98]], [[2014 Q15]], [[2014 Q22]], [[2014 Q23]], [[2014 Q26]]
 - Related JPMs: [[2018 JPM RO-A2]], [[2018 JPM Sim-d]], [[2023 JPM Sim-d]], [[2022 JPM RO-A1]], [[2016 JPM RO-A1-1]], [[2016 JPM SRO-A4-1 (ESG-1)]], [[2016 JPM SRO-A4-1 (ESG-2)]], [[2016 JPM Sim-d]], [[2015 JPM RO-A1-2]], [[2015 JPM SRO-A4-1 (ESG-1)]], [[2015 JPM SRO-A4-2 (ESG-2)]], [[2015 JPM SRO-A4-3 (ESG-3)]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]], [[2015 Scenario 2]], [[2015 Scenario 4]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

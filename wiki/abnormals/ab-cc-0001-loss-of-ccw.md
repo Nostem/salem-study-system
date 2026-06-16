@@ -106,12 +106,17 @@ Alternate path (loss of all CCW): 22 CCW pump trips, the standby (23) CCW pump <
 22 CCW pump trips and the standby (23) CCW pump <span class="hi-exam">fails to auto-start</span>. The crew validates the CCW low-pressure alarms against ARP guidance and <span class="hi-exam">manually starts 23 CCW pump</span> to restore system pressure — all CCW alarms clear on restoration. AB.CC-0001 (and [[AB.RCP-0001 — RCP Abnormality]]) are referenced to verify entry is NOT required once RCP CCW-cooled parameters trend back to normal. CRS enters TSAS 3.7.3 for not having 2 operable CCW loops. See [[2015 Scenario 4]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q9</div>
+Locating a CCW leak with ATTACHMENT 4 (Leak Isolation Method): if surge tank level continues to lower with <span class="hi-exam">EITHER CC header in service</span>, the leak must be on the <span class="hi-exam">Non-Safeguards header (supplied from both CC headers)</span>. Of components fed from both headers, the leaking component is the <span class="hi-exam">Spent Fuel Pool HX</span> — SFP cooling pressure is &lt; CCW pressure, so the leak is out of CCW into SFP cooling. <span class="hi-trap">The Boric Acid Evaporator Distillate Cooler HX is also on the non-safeguards header but is not normally in service; the 22 CCW HX and 23 Charging pump seal HX are on the safeguards header.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[CCW]], [[RCPs]], [[RHR]], [[Service Water]]
+- Related systems: [[CCW]], [[RCPs]], [[RHR]], [[Service Water]], [[Spent Fuel Pool]]
 - Related abnormals: [[AB.RHR-0001 — Loss of RHR]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
 - Related scenarios: [[2015 Scenario 4]]
-- Related exam questions: [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2018 Q95]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]], [[2015 Q86]]
+- Related exam questions: [[2014 Q9]], [[2016 Q35]], [[2018 Q7]], [[2018 Q54]], [[2018 Q95]], [[2019 Q8]], [[2019 Q87]], [[2020 Q34]], [[2020 Q78]], [[2022 Q5]], [[2022 Q8]], [[2022 Q35]], [[2023 Q4]], [[2023 Q59]], [[2015 Q86]]
 - Related JPMs: [[2019 JPM Sim-h]], [[2015 JPM Sim-g]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

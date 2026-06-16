@@ -218,7 +218,7 @@ On a 2R31 (Letdown Line Monitor) WARNING and entry into AB.RC-0002: the CRS <spa
 - Related systems: [[RPS/SSPS]], [[CAV]], [[Containment]], [[Waste Gas]], [[Waste Liquid]], [[Steam Generator & Blowdown]]
 - Related procedures: [[AB.RAD-0001 — Radiation Monitor Abnormality]], [[AB.RC-0002 — High Activity in the RCS]], [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S1.OP-ST.RM-0001 — Radiation Monitors Check Source]], [[NC.EP-EP.ZZ-0304 — OSC Radiation Protection Response]], [[RP-AA-300 — Radiological Survey Program]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[AB.SG-0001 — Steam Generator Tube Leak]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related exams: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
+- Related exams: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]]
   - [[2015 Q10]] — R19 SGBD monitors not accurate immediately post-trip / enter AB.RAD-0001 to verify, not manual SI
   - [[2015 Q19]] — 2R31 Letdown Line Failed-Fuel monitor / crud burst vs failed fuel determined by Shift Chemistry isotopic RCS analysis (AB.RC-0002)
   - [[2015 Q49]] — loss of SFP cooling: rising radiation at FHB charcoal filter from spent-fuel off-gassing as SFP temp approaches 150°F
@@ -248,6 +248,9 @@ On a 2R31 (Letdown Line Monitor) WARNING and entry into AB.RC-0002: the CRS <spa
   - [[2016 Q60]] — Process radiation monitor source check ≤ 30 seconds / prevents solenoid overheating
   - [[2016 Q68]] — Containment Rad Monitors (2R12A) NOT required operable for Mode 6 / Fuel Movement / Core Alts
   - [[2016 Q88]] — 2R5 alarm 11 mR/hr / dropped fuel: auto swap FHB vent to charcoal + start both Exhaust Fans / 2R5 does NOT lock out crane
+  - [[2014 Q5]] — RCP thermal barrier rupture: rising activity on 2R17A/2R17B CCW surge tank rad monitors (expected); CC surge tank level lowering is the unexpected indication
+  - [[2014 Q13]] — fuel handling incident: evacuate FHB at 1 R/hr per AB.FUEL-0001 CAS 1.0; 2R32A crane lockout and HEPA+Charcoal realignment are not the evacuation criterion
+  - [[2014 Q14]] — 2R19A SG Blowdown Rad Monitor at ALARM (not Warning) auto-closes 21GB4 to isolate blowdown to condenser; each SG has its own blowdown line (no backfeeding)
+  - [[2014 Q20]] — failed fuel with excess letdown in service (2CV18 shut): 2R4 (Charging Pump Room Area) responds first since excess letdown returns to charging pump suction; bypasses 2R31, no 2R26 demin flow, no 2R19 with no pri-sec leak
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2022 JPM RO-A4]], [[2022 JPM IP-k]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2015 Scenario 1]], [[2015 Scenario 4]]
-- Related exam: [[2016 NRC Operating Exam]]

@@ -173,11 +173,31 @@ On a 2PR1 PORV failing open at power: PZR pressure lowers, so the <span class="h
 The controlling PZR Pressure channel (Channel I / PT455) fails low, annunciating <span class="hi-exam">OHA D-16 RC PRESS LO, E-12 PZR PRESS LO, and E-28 PZR HTR ON PRESS LOW</span>. RO takes the Master Pressure Controller to MANUAL to mitigate, then <span class="hi-exam">selects PZR Pressure Channel III for control</span> and restores the Master Controller to AUTO. Crew removes the failed channel from service and closes/de-energizes 2PR6 PORV block valve. Later a 2nd channel (PT457) fails low, causing an auto Inadvertent SI on Lo PZR pressure. See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q10</div>
+Controlling PZR Pressure channel (Channel III / PT-457) fails low: the Master Pressure Controller drives output to 0% → <span class="hi-exam">all auto PZR heaters energize and spray valves shut (and stay shut)</span>; RCS pressure rises slowly. The PZR PORVs require <span class="hi-exam">2/2 coincidence — 2PR1 from channels I/III, 2PR2 from channels II/IV</span>. With Channel III failed low, <span class="hi-trap">2PR1 will NOT open; only ONE PORV (2PR2) opens — at <span class="val-alarm">2335 psig</span>.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q11</div>
+The <span class="hi-exam">low PZR pressure automatic reactor trip setpoint is <span class="val-trip">1865 psig</span></span>. During an RCS leak at 40% power with no automatic or manual trip, PZR pressure lowering through this setpoint without a trip means an ATWT is present and a manual reactor trip is required. <span class="hi-trap">17% PZR level is the backup-heater isolation setpoint, NOT a reactor trip.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q38</div>
+Normal PZR spray demand is ~13% on each spray valve (Salem runs one set of B/U heaters in MANUAL ON). If <span class="hi-exam">2PS3 spray valve demand fails to 50%</span>, actual spray flow roughly <span class="hi-exam">doubles</span> — 2PS1 will shut, but excess spray (2PS3 is dominant) lowers PZR pressure. <span class="hi-exam">Backup heaters in AUTO energize at <span class="val-normal">2210 psig</span> and turn off at <span class="val-normal">2218 psig</span></span>. <span class="hi-trap">2218 psig is the TURN-OFF value, not the energize value. Control group heaters cannot maintain pressure against 50% spray demand.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q36</div>
+For a 1PR1 PORV that opens with no demand and cannot be shut, AB.PZR-0001 directs shutting the 1PR6 block valve; PZR heaters cannot restore pressure for a PORV failure. <span class="hi-trap">The low PZR pressure Rx trip is <span class="val-trip">1865 psig</span> (not 1985 psig), and the OT/DT trip is not a psig value but equates to ~2000 psig (not 2100 psig).</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[CVCS]], [[RPS/SSPS]], [[Control Air]], [[460/230V AC]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[EOP-TRIP-4 — Natural Circulation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]], [[S2.OP-SO.PZR-0008 — Setting Pressurizer Spray Bypass Flow]]
-- Related exam questions: [[2016 Q7]], [[2016 Q36]], [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2018 Q55]], [[2018 Q82]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]], [[2015 Q38]], [[2015 Q39]], [[2015 Q40]], [[2015 Q81]], [[2015 Q87]]
+- Related exam questions: [[2014 Q10]], [[2014 Q11]], [[2014 Q36]], [[2014 Q38]], [[2016 Q7]], [[2016 Q36]], [[2018 Q1]], [[2018 Q5]], [[2018 Q8]], [[2018 Q9]], [[2018 Q10]], [[2018 Q55]], [[2018 Q82]], [[2019 Q9]], [[2019 Q10]], [[2019 Q47]], [[2019 Q50]], [[2023 Q7]], [[2023 Q14]], [[2023 Q34]], [[2023 Q87]], [[2023 Q92]], [[2022 Q9]], [[2022 Q21]], [[2022 Q37]], [[2022 Q88]], [[2020 Q7]], [[2020 Q36]], [[2020 Q57]], [[2015 Q38]], [[2015 Q39]], [[2015 Q40]], [[2015 Q81]], [[2015 Q87]]
 - Related JPMs: [[2019 JPM Sim-c]], [[2022 JPM IP-i]], [[2016 JPM IP-i]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2016 Scenario 3]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 2]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

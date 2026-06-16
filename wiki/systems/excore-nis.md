@@ -139,11 +139,18 @@ A dropped rod is diagnosed in part from the NIS response: <span class="hi-exam">
 Energizing the Source Range NIS after a trip (EOP-TRIP-2 Step 22): both IR channels must be <span class="hi-exam">&lt;7E-11 Amps</span> to permit the source-range energize permissive. An <span class="hi-exam">undercompensated IR channel (e.g. 2N36) reads erroneously high (&gt;7E-11 Amps) and will not drop below permissive</span> — diagnosed by elapsed time since trip, a SUR of 0 on the affected channel with power above minimum display, and the NR-45 trend showing IR CH II leveling off. The operator then <span class="hi-exam">manually energizes BOTH Source Range channels (RESET SOURCE RANGE A and RESET SOURCE RANGE B)</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q12</div>
+With one Source Range NI (Channel I / 2N31) failed low during a startup, power must be maintained &lt;P-6 because below P-6 the <span class="hi-exam">SR and IR NIs may not be overlapped</span> — reducing reactor power indication to a single SR channel. <span class="hi-trap">A single SR channel cannot be considered reliable with no other Rx power indication to verify it against</span> (adequate for shutdown monitoring, not for a startup). Basis: TS Bases 3.3.1.1 — maintain coincidence logic, sufficient redundancy, and diverse-parameter functional capability.
+</div>
+
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
-- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related exam questions: [[2014 Q12]], [[2014 Q17]]
+- Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
   - [[2015 Q67]] — Mode 6 Core Alterations require 2 Source Range NIs operable (LCO 3.9.2); one inoperable SR NI prevents core alterations
   - [[2015 Q89]] — second IRNI channel fails erratically: enter AB.NIS-0001 / TS 3.0.3 (Hot Standby within 6 hours); single-IRNI loss excluded from LCO 3.0.3
   - [[2016 Q38]] — Block Power Range A and B pushbuttons at 12% blocks the 25% PR low setpoint Rx trip
@@ -160,5 +167,6 @@ Energizing the Source Range NIS after a trip (EOP-TRIP-2 Step 22): both IR chann
   - [[2016 Q69]] — Mode 2 entry recorded when Control Bank A withdrawal imminent (S2.OP-IO.ZZ-0003)
   - [[2016 Q70]] — AFD penalty minutes / 50–90% power / power must reduce &lt;50% within 30 min after 60 penalty min
   - [[2016 Q83]] — SR NIs not energized + IR SUR -0.2 dpm criterion for FRSM-2 YELLOW (overridden by FRTS-1 PURPLE)
+  - [[2014 Q17]] — each 115VAC VIB loss deenergizes its channel PRNI High-Power bistable (a rod-withdrawal block); 2A loss drives rods in (PT-505), 2D loss freezes rods "as is" (power reduction via boration)
 - Related JPMs: [[2018 JPM RO-A1]], [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2020 JPM Sim-f]], [[2015 JPM Sim-a]], [[2015 JPM Sim-f]]
 - Related scenarios: [[2015 Scenario 1]]

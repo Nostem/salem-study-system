@@ -31,10 +31,15 @@ Nearly identical scenario to 2023 Sim-b. Two alternate paths during hot leg reci
 EOP-LOCA-1 timing requirements: <span class="hi-exam">start preparations for hot leg recirculation 12 hours after SI actuation</span>; <span class="hi-exam">perform EOP-LOCA-4 (Transfer to Hot Leg Recirculation) 14 hours after SI actuation</span>. <span class="hi-trap">Trap: 12 hours is when preparations START, 14 hours is when the actual transfer is PERFORMED. With SI at 07:00, LOCA-4 performance time is 21:00, NOT 19:00.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q4</div>
+The purpose of transferring to hot leg recirculation is to <span class="hi-exam">ensure boron does not concentrate in the reactor vessel (due to boil off) to the point of solidification and blockage of coolant channels</span>. Per Salem UFSAR §15 (p 15.4-2b), the RHR and Intermediate Head SI pumps are realigned to the RCS hot legs <span class="hi-exam">approximately 14 hours (Unit 1) and 6.5 hours (Unit 2)</span> after LOCA initiation to control boric acid concentration. EOP-LOCA-1 step 28 directs performing EOP-LOCA-4. <span class="hi-trap">Basis: time after which boric acid could approach the solubility limit in the core region following a double-ended guillotine cold leg break.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[ECCS]], [[RHR]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related exam questions: [[2016 Q73]], [[2018 Q77]], [[2019 Q77]]
+- Related exam questions: [[2014 Q4]], [[2016 Q73]], [[2018 Q77]], [[2019 Q77]]
 - Related JPMs: [[2019 JPM Sim-b]], [[2023 JPM Sim-b]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2023 NRC Operating Exam]]

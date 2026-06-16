@@ -60,10 +60,15 @@ Event 5: RCS leak with rapidly lowering PZR level and pressure. OHA E-28 PZR HTR
 <span class="hi-exam">20 gpm RCS leak</span> inside containment at ~68% power (Event 3), following a Power Range NI channel failure. Symptoms: charging flow rising and PZR level lowering slowly, 2R11A containment radiation monitor reading rising, unexpected OHA C-2 CNTMT SUMP PMP START. CRS enters AB.RC-0001 and directs implementation of CAS; also enters AB.RAD-0001 after OHA A-6. Mitigation: RO swaps to a <span class="hi-exam">centrifugal charging pump IAW Step 3.14</span> and raises charging flow to stabilize PZR level; PO swaps to the <span class="hi-exam">45 gpm letdown orifice</span>; RO estimates leak rate; CRS initiates <span class="hi-exam">S2.OP-ST.RC-0008, Reactor Coolant Water Inventory Balance</span>; per Rad Pro, PO places 2 CFCUs in Low Speed and 2 in High Speed; CRS initiates leak isolation IAW Attachment 2 and enters <span class="hi-exam">TSAS 3.4.7.2.b</span>. <span class="hi-trap">The leak then escalates to a catastrophic RCS loop 22 failure (LBLOCA) — the crew trips the reactor and manually initiates SI when auto SI fails.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q11</div>
+While responding to an RCS leak at 40% power with no automatic or manual trip, an ATWT is present (manual Rx trip required) when <span class="hi-exam">PZR pressure is 1860 psig and lowering</span> — the <span class="val-trip">low PZR pressure auto reactor trip setpoint is 1865 psig</span> has been exceeded without a trip. <span class="hi-trap">25°F loop D/T is the normal value at 40% power; a turbine trip does NOT cause a Rx trip below P-9 (49%); the 17% PZR level threshold is heater isolation, not Rx trip.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[CVCS]], [[RCS]]
+- Related systems: [[CVCS]], [[RCS]], [[RPS/SSPS]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
-- Related exam questions: [[2016 Q100]], [[2018 Q52]], [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
+- Related exam questions: [[2014 Q11]], [[2016 Q100]], [[2018 Q52]], [[2020 Q6]], [[2023 Q3]], [[2023 Q97]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2018 Scenario 2]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

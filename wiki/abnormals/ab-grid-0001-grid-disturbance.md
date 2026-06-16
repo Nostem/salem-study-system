@@ -21,6 +21,11 @@ Allowable Main Generator loading after a 500KV grid disturbance is read from the
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q21</div>
+Original (13-01) form of the same Artificial Island Operating Guide lookup. Same lineup (Unit 1 offline, HC 5-6 breaker O/S, both units' PSS O/S → curve <span class="hi-exam">2S2H-5-6 (p. 291), red dashed line</span>). For these choices the loading point <span class="hi-exam val-trip">1150 Mwe with 225 MVAR out</span> falls OUTSIDE the allowable region. <span class="hi-trap">The two distractors with higher MVARS (525 out) are both within the limit; the answer cannot be obtained by elimination because Mwe and MVAR each vary across the choices.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q15</div>
 Loss of a Salem unit causes 500KV voltage to lower. The remaining unit's MVARs rise as it picks up a greater share of the reactive load on the grid.
 </div>
@@ -49,5 +54,5 @@ AB.GRID-0001 Attachment 2 (Solar Magnetic Disturbance) turbine load reduction: w
 
 - Related systems: [[500KV]], [[Main Turbine]]
 - Related procedures: [[AB.LOAD-0001 — Rapid Load Reduction]], [[OP-AA-108-107-1001 — Electric System Emergency Operations]]
-- Related exam questions: [[2015 Q20]], [[2018 Q62]], [[2019 Q62]], [[2020 Q81]], [[2023 Q15]], [[2023 Q88]]
-- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related exam questions: [[2015 Q20]], [[2018 Q62]], [[2019 Q62]], [[2020 Q81]], [[2023 Q15]], [[2023 Q88]], [[2014 Q21]]
+- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2014 NRC Written Exam]]

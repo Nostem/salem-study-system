@@ -706,10 +706,15 @@ ESFAS containment-isolation actuation order tested: <span class="hi-exam">Phase 
 IRNI channels: loss of a single IRNI channel is <span class="hi-trap">specifically excluded from LCO 3.0.3</span> (even though minimum operable = 2). <span class="hi-exam">Loss of the second IRNI channel enters TS 3.0.3 — Hot Standby within 6 hours (actions started within 1 hour)</span>. See [[Excore NIs]], [[RPS/SSPS]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q12</div>
+TS Bases 3.3.1.1 generalizes that instrumentation OPERABILITY ensures <span class="hi-exam">(2) the specified coincidence logic and sufficient redundancy is maintained to permit a channel to be out of service... and (3) sufficient system functional capability is available from diverse parameters</span>. This bases supports maintaining power &lt;P-6 when one Source Range NI fails low during a startup: <span class="hi-trap">a single remaining SR channel cannot be relied upon for startup Rx power indication with no diverse channel to verify it against</span>. See [[Excore NIs]], [[RPS/SSPS]].
+</div>
+
 ## Connections
 
-- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]], [[Radiation Monitoring]]
-- Related exam questions: [[2015 Q16]], [[2018 Q82]], [[2018 Q89]], [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]], [[2015 Q27]], [[2015 Q89]]
+- Related systems: [[RPS/SSPS]], [[ECCS]], [[Containment]], [[Containment Spray]], [[AFW]], [[RVLIS]], [[Radiation Monitoring]], [[Excore NIs]]
+- Related exam questions: [[2014 Q12]], [[2015 Q16]], [[2018 Q82]], [[2018 Q89]], [[2019 Q47]], [[2019 Q96]], [[2020 Q88]], [[2020 Q90]], [[2023 Q82]], [[2015 Q27]], [[2015 Q89]]
 - Related JPMs: [[2016 JPM SRO-A3]]
 - Related scenarios: [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]]

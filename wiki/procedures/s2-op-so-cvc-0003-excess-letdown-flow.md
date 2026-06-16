@@ -37,7 +37,7 @@ On loss of air to 2CC215 (fails closed), excess letdown temperature/pressure ris
 
 ## Connections
 
-- Related systems: [[CVCS]], [[Pressurizer & PRT]]
-- Related exam questions: [[2020 Q5]], [[2015 Q37]]
+- Related systems: [[CVCS]], [[Pressurizer & PRT]], [[Radiation Monitoring]]
+- Related exam questions: [[2020 Q5]], [[2015 Q37]], [[2014 Q20]]
 - Related scenarios: [[2017 Scenario 8]]
-- Related exam: [[2020 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related exam: [[2020 NRC Written Exam]], [[2017 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

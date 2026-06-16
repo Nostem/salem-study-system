@@ -276,6 +276,6 @@ A <span class="hi-exam">single inoperable charging pump (hi-head ECCS) in Modes 
 
 - Related systems: [[ECCS]], [[RHR]], [[CVCS]]
 - Related concepts: [[ESF & Design]]
-- Related exam questions: [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q96]], [[2020 Q77]], [[2023 Q91]], [[2015 Q35]], [[2015 Q77]]
+- Related exam questions: [[2016 Q96]], [[2016 Q97]], [[2018 Q86]], [[2018 Q96]], [[2020 Q77]], [[2023 Q91]], [[2015 Q35]], [[2015 Q77]], [[2014 Q23]]
 - Related JPMs: [[2018 JPM SRO-A3]], [[2015 JPM Sim-c]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

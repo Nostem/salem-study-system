@@ -94,11 +94,16 @@ On a loss of SFP cooling during fuel movement, as SFP temperature rises toward 1
 Per Precaution &amp; Limitation 2.2 of S2.OP-IO.ZZ-0010, spent fuel manipulations must be supervised by <span class="hi-exam">Reactor Services, a qualified SRO, OR a Reactor Engineer</span> — so with a Qualified Reactor Engineer present, <span class="hi-exam">fuel movement CAN occur without a licensed SRO</span>. See [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q9</div>
+The <span class="hi-exam">Spent Fuel Pool HX is cooled by CCW</span> and is fed from the <span class="hi-exam">Non-Safeguards CC header</span> (supplied from both CC headers). During a CCW leak isolated per AB.CC-0001 Attachment 4, a leak that continues with EITHER CC header in service points to the SFP HX — <span class="hi-trap">SFP cooling pressure is &lt; CCW pressure, so leakage flows out of CCW into the SFP cooling side.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]], [[Radiation Monitoring]]
 - Related tech specs: [[TS 3/4.9 — Refueling Operations]]
-- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]], [[AB.FUEL-0001 — Fuel Handling Incident]]
-- Related exam questions: [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]]
+- Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]], [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.CC-0001 — Loss of Component Cooling Water]]
+- Related exam questions: [[2014 Q9]], [[2014 Q13]], [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]]
 - Related JPMs: [[2016 JPM SRO-A1-2]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]]

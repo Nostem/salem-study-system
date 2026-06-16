@@ -278,11 +278,31 @@ On a <span class="hi-exam">TOTAL LOSS of Component Cooling Water to all RCPs</sp
 On a loss of all AC power (station blackout), seal injection and thermal-barrier CCW are lost, so RCP seal cooling must be locally isolated per EOP-LOPA-1 Step 27. The applicant closes five valves: <span class="hi-exam">CV83, CV89, CV95 (Seal Water Injection Filter Valve Room, 84 ft Aux Bldg — handwheel CW)</span>, then <span class="hi-exam">CV116 (SEAL WATER TO VCT) and CC131 (RCP THERMAL BARRIER VALVE) in the 78 ft Mech Pen Area SG B/D HX roped-off area</span>. CV116 is motor-operated and requires <span class="hi-exam">depressing/holding the declutch lever</span> before turning the handwheel.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q5</div>
+RCP thermal barrier rupture indications: a <span class="hi-exam">momentary RCP Thermal Barrier DISCHARGE FLOW HI alarm</span> (clears when 2CC131 Thermal Barrier Return Valve auto shuts on high flow), and rising activity/alarm on the <span class="hi-exam">CCW surge tank rad monitors 2R17A/2R17B</span>. <span class="hi-trap">The CC surge tank level RISES from RCS in-leakage — a LOWERING surge tank level is the UNEXPECTED indication.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q6</div>
+Before restarting a charging pump after a loss of charging, AB.CVC-0001 requires checking <span class="hi-exam">RCP seal inlet temperature &lt;<span class="val-trip">225°F</span> (OR seal injection isolated)</span> — to prevent thermal shock/seal-and-shaft damage when cold CVCS flow is restored to hot seals.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q30</div>
+RCP bearing cooling water is supplied by CCW. The <span class="hi-exam">23 CCW pump is powered from the 2C 4KV vital bus</span>; the <span class="hi-exam">23 charging pump is powered from the 2A 4KV vital bus</span>. With the 21 CCW pump out of service, a 2C bus lockout removes CCW flow to the RCP bearings (OHA D20-23 RCP BRG CLG WTR FLO LO) and requires entry into AB.RCP-0001.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q31</div>
+The CCW line to the RCPs is a <span class="hi-exam">single line supplying both bearing cooling and thermal-barrier cooling</span>. Inside containment it splits; the thermal-barrier CCW has its own separate return line isolated by <span class="hi-exam">2CC190 (inside containment)</span> and <span class="hi-exam">2CC131 (outside containment)</span>. Thermal-barrier CCW only cools reactor coolant rising through the thermal barrier <span class="hi-exam">upon a loss of seal injection flow</span>. <span class="hi-trap">With normal seal injection present, 2CC190 failing shut (loss of thermal-barrier CCW) does NOT affect any RCP temperatures — bearing, seal leakoff, and motor winding temps all remain the same.</span>
+</div>
+
 ## Connections
 
-- Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
+- Related procedures: [[AB.RCP-0001 — RCP Abnormality]], [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]], [[AB.CVC-0001 — Loss of Charging]]
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related exam questions: [[2015 Q25]], [[2016 Q6]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2016 Q77]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]], [[2015 Q30]], [[2015 Q31]], [[2015 Q36]], [[2015 Q57]], [[2015 Q79]]
+- Related exam questions: [[2014 Q5]], [[2014 Q6]], [[2014 Q30]], [[2014 Q31]], [[2015 Q25]], [[2016 Q6]], [[2016 Q24]], [[2016 Q27]], [[2016 Q28]], [[2016 Q77]], [[2018 Q1]], [[2019 Q1]], [[2019 Q53]], [[2020 Q4]], [[2020 Q28]], [[2020 Q78]], [[2020 Q86]], [[2023 Q1]], [[2023 Q4]], [[2023 Q10]], [[2023 Q26]], [[2023 Q27]], [[2023 Q78]], [[2023 Q86]], [[2023 Q91]], [[2022 Q28]], [[2022 Q76]], [[2022 Q86]], [[2015 Q30]], [[2015 Q31]], [[2015 Q36]], [[2015 Q57]], [[2015 Q79]], [[2014 Q16]], [[2014 Q22]], [[2014 Q25]]
 - Related JPMs: [[2018 JPM IP-j]], [[2022 JPM Sim-d]], [[2016 JPM Sim-d]], [[2016 JPM Sim-e]], [[2015 JPM Sim-e]], [[2015 JPM Sim-g]], [[2015 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2015 Scenario 4]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

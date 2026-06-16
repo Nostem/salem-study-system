@@ -109,10 +109,15 @@ After a single charging pump trip (breaker malfunction) with 23 charging pump pl
 Entered for a <span class="hi-exam">failure of a VCT level channel</span> (2LT-112 fails high). Attachment 1 (Continuous Action Summary) is initiated, then the diagnostic path runs: charging pump running (3.2) → no cavitation (3.16) → no PZR level channel failure (3.54) → <span class="hi-exam">VCT level instrument 2LT-112 failed high (3.63)</span>. Step 3.64 (critical): <span class="hi-exam">TAKE MANUAL control of 2CV35, VCT 3 WAY INLET V, and position it to the VCT</span> (the high-failing channel had auto-shifted 2CV35 to the HUT). Step 3.66 then initiates manual makeup to the VCT IAW S2.OP-SO.CVC-0006. See [[S2.OP-SO.CVC-0006 — Boron Concentration Control]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q6</div>
+After a charging pump trips, AB.CVC-0001 directs (prior to starting a charging pump) <span class="hi-exam">check RCP seal inlet temperature &lt;<span class="val-trip">225°F</span> OR seal injection isolated</span> — to prevent thermal shock/seal-and-shaft damage when CVCS flow is restored to hot seals. The basis uses <span class="hi-exam">EOP-LOPA-1 as guidance</span> (in LOPA, CCW is also lost and seals have heated up, so seals are isolated). <span class="hi-trap">VCT pressure is automatically maintained 15-25 psig and is not checked; 2CV55 is shut to prevent excessive flow (it is normally full open at power); 2CV71 is not adjusted until after the pump is started.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[CVCS]], [[EDGs]]
-- Related exam questions: [[2015 Q5]], [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]], [[2015 Q38]], [[2015 Q40]], [[2015 Q77]]
+- Related systems: [[CVCS]], [[EDGs]], [[RCPs]]
+- Related exam questions: [[2014 Q6]], [[2015 Q5]], [[2016 Q7]], [[2018 Q52]], [[2020 Q77]], [[2020 Q91]], [[2022 Q6]], [[2015 Q38]], [[2015 Q40]], [[2015 Q77]]
 - Related JPMs: [[2018 JPM Sim-b]], [[2019 JPM SRO-A3]], [[2022 JPM Sim-b]], [[2015 JPM Sim-b]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]], [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 8]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 1 — Power Ascension / Station Blackout]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]]
-- Related exam: [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]]

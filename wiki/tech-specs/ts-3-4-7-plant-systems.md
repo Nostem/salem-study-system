@@ -260,6 +260,11 @@ This complement of equipment assures adequate redundancy for <span class="hi-exa
 </div>
 </details>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q37</div>
+Per the 3.7.3 bases, having <span class="hi-exam">2 operable CCW loops requires ALL 3 CCW pumps operable</span> (along with HXs and valves). The <span class="hi-exam">23 CCW pump is a BLACKOUT load, NOT an ACCIDENT load</span>. On a 2C 4KV bus undervoltage / SEC Mode II, the SEC opens the bus infeeds, starts the EDG, strips loads, and sequences blackout loads — but 23 CCW is not sequenced for this event, and the SEC <span class="hi-exam">locks out the AUTO/MAN function of the CCW pump start circuitry</span> so 23 CCW being in MANUAL has no effect. All 3 pumps remain operable → <span class="hi-trap">TSAS 3.7.3 is NOT entered.</span> See [[CCW]].
+</div>
+
 ---
 
 ## 3/4.7.4 — Service Water
@@ -578,7 +583,7 @@ Four Main Feedwater Isolation Valves (FIVs), four Main Feedwater Regulating Valv
 ## Connections
 
 - Related systems: [[AFW]], [[CCW]], [[Service Water]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Feed & Condensate]], [[Containment]]
-- Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]]
+- Related exam questions: [[2016 Q68]], [[2016 Q92]], [[2019 Q42]], [[2020 Q14]], [[2014 Q37]]
 - Related JPMs: [[2020 JPM SRO-A3]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2014 NRC Written Exam]]

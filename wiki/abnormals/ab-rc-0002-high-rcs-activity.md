@@ -40,8 +40,14 @@ Per AB.RC-0002 Step 3.14, crew is required to have a <span class="hi-exam">Centr
 On a 2R31 WARNING, AB.RC-0002 requires the CRS to <span class="hi-exam">direct an RP Technician to take surveys to determine if radiation levels have changed access requirements</span> (for prompt identification/notification of plant personnel). The hourly isotopic analysis is for gamma to determine DEI for trending (Step 3.18). See [[Radiation Monitoring]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q20</div>
+Method of monitoring for failed fuel under abnormal lineups (not the TS failed-fuel-monitoring-equipment definition): with normal letdown out of service (2CV18 shut) and Excess Letdown in service, a large fission-product release shows first on <span class="hi-exam">2R4 (Charging Pump Room Area Monitor)</span> — the excess letdown line returns to the charging pump suction, raising area radiation around the pumps. <span class="hi-trap">Excess letdown bypasses 2R31 (Letdown HX Monitor); with normal letdown secured the 2R26 (RC Filter Monitor) sees no mixed-bed demin flow; with no primary-to-secondary leak the 2R19 SG Blowdown Monitors are unaffected.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[CVCS]], [[RCS]], [[Radiation Monitoring]]
-- Related exam questions: [[2015 Q19]], [[2018 Q69]], [[2019 Q2]], [[2023 Q22]], [[2015 Q98]]
-- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]]
+- Related procedures: [[S2.OP-SO.RM-0001 — Radiation Monitoring System Operation]], [[S2.OP-SO.CVC-0003 — Excess Letdown Flow]]
+- Related exam questions: [[2015 Q19]], [[2018 Q69]], [[2019 Q2]], [[2023 Q22]], [[2015 Q98]], [[2014 Q20]]
+- Related exam: [[2015 NRC Written Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2014 NRC Written Exam]]

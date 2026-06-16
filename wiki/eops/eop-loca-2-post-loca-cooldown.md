@@ -100,11 +100,16 @@ Entered from EOP-TRIP-3 CAS when PZR level cannot be maintained &gt;11% during S
 EOP-LOCA-2 (Post LOCA Cooldown/Depressurization) <span class="hi-exam">terminates Containment Spray</span> at Step 18 (the transition from LOCA-1 if RCS pressure &gt;420 psig and the TRIP-3 criteria are not met). See [[Containment Spray]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q22</div>
+The depressurization phase of LOCA-2 exists to <span class="hi-exam">refill the pressurizer</span>. If the PZR is already filled (level &gt;25%) the procedure goes directly to the <span class="hi-exam">SI flow reduction process — stop all but one RCP and begin stopping ECCS pumps</span>. With all RCPs running there are no voids to collapse, and there is no CAS transition to TRIP-3 under these conditions. <span class="hi-trap">Do not stop ALL RCPs, energize all PZR heaters to collapse (non-existent) voids, or recommence depressurization once PZR level is already &gt;25%.</span>
+</div>
+
 ## Connections
 
-- Related systems: [[RCS]], [[ECCS]], [[CVCS]], [[Pressurizer & PRT]]
+- Related systems: [[RCS]], [[ECCS]], [[CVCS]], [[Pressurizer & PRT]], [[RCPs]], [[Main Steam]]
 - Related EOPs: [[EOP-TRIP-3 — SI Termination]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]
-- Related exam questions: [[2015 Q21]], [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]], [[2015 Q91]]
+- Related exam questions: [[2015 Q21]], [[2018 Q50]], [[2018 Q70]], [[2019 Q73]], [[2019 Q76]], [[2020 Q3]], [[2020 Q27]], [[2022 Q27]], [[2023 Q2]], [[2023 Q76]], [[2015 Q91]], [[2014 Q22]]
 - Related JPMs: [[2023 JPM Sim-c]]
 - Related scenarios: [[2016 Scenario 1 — PZR Level Channel Failure / RCS Leak / SBLOCA / SBLOCA Escalation]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]]

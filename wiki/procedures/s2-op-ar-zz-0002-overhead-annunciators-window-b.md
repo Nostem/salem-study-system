@@ -40,10 +40,15 @@ OHA B-13 (21 SW HDR PRESS LO) and B-14 (22 SW HDR PRESS LO) — per S2.OP-AR.ZZ-
 OHA Window B SW alarms: <span class="hi-exam">B-13/B-14/B-15 (SW header pressure low) followed by B-48 (SW VLV RM FLOODED)</span> indicate a SW leak; the B-48 flooding alarm localizes it to a single CFCU supply line (78' Mech Pen Area), mitigated per AB.SW-0001. See [[Service Water]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q18</div>
+<span class="hi-exam">OHA B-18 (2C 125VDC CNTRL BUS VOLT LO)</span>: the 125VDC bus control band per the NCO logs is <span class="val-normal">125-139.8V</span>. A reading of 126V with no current on 2RP9 is within the normal band, so the ARP directs having maintenance <span class="hi-exam">adjust the charger float voltage</span> (action IS required per the ARP — not merely continued monitoring). <span class="hi-trap">No ground is indicated, so S2.OP-SO.125-0004 (Ground Detection) is not entered; 126V is above the TS minimum, so swapping to the standby charger is not required.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[DC Power]], [[EDGs]], [[Service Water]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]]
-- Related exam questions: [[2015 Q15]], [[2016 Q61]], [[2020 Q13]], [[2015 Q80]]
+- Related exam questions: [[2015 Q15]], [[2016 Q61]], [[2020 Q13]], [[2015 Q80]], [[2014 Q18]]
 - Related JPMs: [[2016 JPM Sim-e]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]]

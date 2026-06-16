@@ -196,6 +196,16 @@ During a MSLB-then-LOCA EOP sequence, <span class="hi-exam">Containment Spray is
 Flushing the Containment Spray (Spray Additive Tank) Eductor line per S1.OP-ST.CS-0003 Attachment 3: <span class="hi-exam">UNLOCK AND OPEN 1CS31 (RWST SUPPLY TO EDUCTORS STOP VALVE)</span> and OPEN 1CS40 (SPRAY ADD TK DISCH LINE DRN), flush to the drain header for 3 minutes, then sample at 1CS61 (CS SPRAY ADD TK DISCH SAMP VALVE). When Chemistry verifies <span class="hi-exam">&lt;10 ppm sodium</span>, ensure 1CS61 closed and CLOSE AND LOCK 1CS31. Because the Spray Additive Tank contains concentrated <span class="hi-exam">Sodium Hydroxide [NaOH] 0-50%</span>, RED-category chemical PPE (per SA-AA-2113) is required before opening any vent/drain.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q27</div>
+With a LBLOCA and LOCA-5 in effect, the CS pumps are operated using the <span class="hi-exam">less restrictive LOCA-5 criteria</span> (which permits reduced spray-pump operation based on RWST level, containment pressure, and number of CFCUs running) even after the crew enters FRCE-1 on the PURPLE path (containment pressure &gt; 15 psig). FRCE-1 step 3.1 yes-path directs CS operation IAW LOCA-5 to <span class="hi-exam">conserve RWST inventory</span> because recirculation flow to the RCS is unavailable.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q34</div>
+A loss of the 1A 4KV vital bus removes the <span class="hi-exam">11 CS pump</span>. For a small (1") RCS break, containment pressure does not rise to the CS actuation requirement, so neither CS pump is needed and the containment pressure response is unchanged.
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2015 #1</div>
 Containment Spray actuates on the LBLOCA (containment pressure &gt;15 psig, Phase B). During the transfer to cold leg recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], <span class="hi-exam">CT#2 time-critical: stop one containment spray pump (22 CS) within &le;5.5 min</span> of the RWST lo level alarm.
@@ -205,7 +215,7 @@ Containment Spray actuates on the LBLOCA (containment pressure &gt;15 psig, Phas
 
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related procedures: [[S1.OP-ST.CS-0003 — Inservice Testing Containment Spray Valves]]
-- Related exam questions: [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]], [[2015 Q34]], [[2015 Q45]], [[2015 Q46]], [[2015 Q91]]
+- Related exam questions: [[2014 Q27]], [[2014 Q34]], [[2016 Q26]], [[2016 Q27]], [[2016 Q33]], [[2016 Q43]], [[2016 Q44]], [[2018 Q13]], [[2018 Q14]], [[2018 Q88]], [[2019 Q11]], [[2019 Q14]], [[2019 Q15]], [[2019 Q88]], [[2020 Q9]], [[2020 Q42]], [[2020 Q88]], [[2023 Q40]], [[2023 Q77]], [[2022 Q42]], [[2022 Q80]], [[2015 Q34]], [[2015 Q45]], [[2015 Q46]], [[2015 Q91]]
 - Related JPMs: [[2018 JPM SRO-A5]], [[2022 JPM Sim-f]], [[2020 JPM Sim-e]], [[2016 JPM Sim-b]], [[2015 JPM IP-i]]
 - Related scenarios: [[2016 Scenario 3]], [[2018 Scenario 2]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2015 Scenario 1]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]

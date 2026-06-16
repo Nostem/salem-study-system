@@ -238,12 +238,22 @@ Loss of RHR cooling (shutdown, RCS intact/filled/pressurized, CETs &gt;200°F): 
 During the LBLOCA, <span class="hi-exam">both 21 and 22 RHR pumps fail to auto-start on the SEC signal</span>. Crew recovery (CT#1): RO blocks <span class="hi-exam">2A and 2B SECs</span>, PO resets them, and RO <span class="hi-exam">manually starts both 21 and 22 RHR pumps</span> (low-head ECCS) before transition out of TRIP-1. In recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], RHR draws from the containment sump via 21/22SJ44; the RH19s are closed, RH1/RH2 verified shut, and 22SJ45 then 21SJ45 opened.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q8</div>
+When restarting an RHR pump after a Loss of RHR (AB.RHR-0001) and <span class="hi-exam">time allows normal restoration and local venting</span>, the preferred flow rate is a <span class="hi-exam">LOWER flow rate — to limit initial sudden cooldown and minimize level loss caused by collapsing voids</span> (AB.RHR-0001 CAUTION). <span class="hi-trap">A HIGHER flow rate to sweep entrained air is used only when time does NOT allow a normal venting.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q33</div>
+RHR pump 4KV vital bus power supplies: <span class="hi-exam">11 RHR pump from A bus, 12 RHR pump from B bus</span>. <span class="hi-trap">Other ECCS pumps are powered differently: 11/12 SI and 11/12 CS are from A and C; charging pumps 21/22 are from B and C.</span> (Unit 2 SW pumps run in reverse order: 21/22 from C, 25/26 from A.)
+</div>
+
 ## Connections
 
 - Related systems: [[Control Air]], [[EDGs]], [[DC Power]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RHR-0001 — Loss of RHR]], [[AB.CONT-0001 — Containment Closure]], [[AB.CA-0001 — Loss of Control Air]]
 - Related EOPs: [[EOP-LOCA-4 — Transfer to Hot Leg Recirculation]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], [[EOP-LOCA-6 — LOCA Outside Containment]], [[EOP-APPX-7 — Containment Sump Blockage]], [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related exam questions: [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]]
+- Related exam questions: [[2014 Q4]], [[2014 Q8]], [[2014 Q33]], [[2014 Q34]], [[2015 Q13]], [[2015 Q22]], [[2015 Q24]], [[2016 Q5]], [[2016 Q9]], [[2016 Q10]], [[2016 Q22]], [[2016 Q31]], [[2016 Q33]], [[2016 Q84]], [[2018 Q3]], [[2018 Q4]], [[2018 Q53]], [[2018 Q60]], [[2018 Q63]], [[2018 Q84]], [[2018 Q87]], [[2019 Q4]], [[2019 Q12]], [[2019 Q63]], [[2020 Q6]], [[2020 Q17]], [[2020 Q18]], [[2020 Q25]], [[2020 Q31]], [[2020 Q87]], [[2023 Q30]], [[2023 Q79]], [[2022 Q7]], [[2022 Q31]], [[2022 Q32]], [[2015 Q34]], [[2015 Q46]], [[2015 Q78]], [[2014 Q24]]
 - Related JPMs: [[2023 JPM Sim-b]], [[2020 JPM Sim-b]], [[2020 JPM SRO-A5]], [[2016 JPM RO-A3]], [[2016 JPM Sim-b]], [[2015 JPM Sim-h]]
 - Related scenarios: [[2018 Scenario 2]], [[2019 Scenario 1 — Power Ascension / LOCA Outside Containment]], [[2022 Scenario 1 — Load Reduction / LBLOCA]], [[2020 Scenario 2 — Load Reduction / LBLOCA / Loss of Emergency Recirculation]], [[2015 Scenario 1]], [[2015 Scenario 4]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Operating Exam]]

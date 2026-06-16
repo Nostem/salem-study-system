@@ -217,10 +217,15 @@ Paired SRO review of the 2016 RO-A1-2 calculation. SRO must catch use of <span c
 With rod position indication failed (IRPIs dark), affected rods are conservatively assumed fully withdrawn; AB.ROD-0004 adds <span class="hi-exam">270 ppm boration per failed IRPI</span> before a shutdown if the IRPI is not operable. See [[Control Rod Drive]], [[CVCS]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q1</div>
+TS 3.1.3.1 Action b: with <span class="hi-exam">more than one rod inoperable or misaligned beyond limits (&gt;18 steps from group demand at ≤85% RTP)</span>, <span class="hi-exam">be in Hot Standby within 6 hours</span>. AB.ROD-0001 step 3.37 directs placing the unit in Hot Standby for this case. <span class="hi-trap">A SINGLE misaligned rod has a different action (align remaining rods, or declare inoperable and reduce power &lt;75% RTP) — the "reduce to &lt;75%" distractor applies to one rod, not more than one.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Rx Vessel & Internals]], [[RPS/SSPS]], [[Control Rod Drive]]
-- Related procedures: [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
-- Related exam questions: [[2020 Q20]], [[2023 Q56]], [[2015 Q88]]
+- Related procedures: [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]], [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
+- Related exam questions: [[2014 Q1]], [[2020 Q20]], [[2023 Q56]], [[2015 Q88]]
 - Related JPMs: [[2020 JPM RO-A1]], [[2020 JPM SRO-A1]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2016 JPM Sim-a]]
-- Related exam: [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]
+- Related exam: [[2014 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]

@@ -126,11 +126,17 @@ FRHS-1 is entered on a RED path of <span class="hi-exam">no AFW flow and SG WR l
 Loss of all AFW after Rx trip (21 AFW pump trips 4 min post-trip, 23 AFW pump overspeeds/trips, 22 AFW pump fails to start) with <span class="hi-exam">no centrifugal charging pumps available</span> → CFST Heat Sink <span class="hi-exam">RED path</span> (AFW flow &lt;22E4 lbm/hr, all SG NR &lt;9%) → FRHS-1. With no charging pumps, crew goes to <span class="hi-exam">Step 23 Bleed and Feed</span>: stop all RCPs, initiate SI, open BOTH PZR PORVs (<span class="hi-exam">CT#1 / CT-46</span> — depressurize RCS below high-head ECCS shutoff head). Only success path is Condensate recovery (SGFPs unavailable on no SW flow to TGA): depressurize the lowest-level SG, establish Condensate flow via CN48/CN32 alignment and steam dumps. At selected SG NR level 9% with CETs/Thots dropping, <span class="hi-exam">close both PZR PORVs (CT#2 / CT-47)</span> before end of scenario. Terminate when both PORVs shut.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q23</div>
+Bleed-and-feed flowpath selection when a PORV block valve is unavailable: with <span class="hi-exam">2PR7 shut (closed to comply with TS 3.4.5 action a for the leaking 2PR2 PORV) and the 2B 4KV vital bus deenergized, neither PORV block valve can be opened</span> per Step 26.1 — so the bleed path is the <span class="hi-exam">reactor head vent valves</span> (the next step). For feed, Step 25.1 asks if EITHER charging pump is running, so a <span class="hi-exam">single charging pump supplies feed</span> (22 charging is available after SI initiation at Step 24). <span class="hi-trap">2PR1 is NOT the bleed path here (its block valve cannot be opened with B bus dead), and feed is via a charging pump, not an SI pump.</span>
+</div>
+
 ## Connections
 
 - Related systems: [[Main Steam]], [[AFW]], [[RCS]], [[RHR]], [[Feed & Condensate]], [[4KV]], [[Pressurizer & PRT]], [[ECCS]], [[CVCS]], [[RCPs]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
-- Related exam questions: [[2015 Q23]], [[2016 Q23]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]], [[2015 Q83]]
+- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related exam questions: [[2015 Q23]], [[2016 Q23]], [[2016 Q76]], [[2018 Q64]], [[2018 Q71]], [[2018 Q80]], [[2019 Q46]], [[2019 Q64]], [[2020 Q10]], [[2020 Q18]], [[2020 Q100]], [[2022 Q81]], [[2023 Q18]], [[2015 Q83]], [[2014 Q23]]
 - Related JPMs: [[2018 JPM Sim-d]], [[2019 JPM Sim-d]], [[2023 JPM Sim-d]], [[2023 JPM Sim-e]], [[2016 JPM Sim-d]]
 - Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 4 — SGFP Trip / Loss of Heat Sink]], [[2022 Scenario 3 — Power Ascension / Loss of Heat Sink]], [[2020 Scenario 5 — Loss of Heat Sink / Condensate Recovery]], [[2015 Scenario 3]]
-- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2014 NRC Written Exam]]

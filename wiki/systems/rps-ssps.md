@@ -344,14 +344,30 @@ The P-14 (Feedwater Isolation) signal has <span class="hi-exam">no seal-in</span
 IRNI channel logic: a tripped IRNI channel with the other channel dropping below 7x10-11 Amps would <span class="hi-exam">automatically energize the Source Range NIs — except the P-10 interlock prevents Source Range from energizing above 10% power</span>.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q2</div>
+Reactor trip first-out (Window F): the OHA "F" windows have dual red/white backlights. The first signal to reach the RPS is locked in RED. When a manual trip is ordered while SG NR level is dropping past the <span class="val-trip">14% Lo-Lo auto trip setpoint</span>, both a manual and an auto trip signal can be generated — the <span class="hi-exam">Sequence of Events Recorder (2CC1) must be reviewed</span> to determine first-out and whether an ATWT occurred. <span class="hi-trap">The RED box indicates the first TRIP signal, NOT the first AUTO TRIP signal.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q11</div>
+ATWT recognition during an RCS leak at 40% power (no auto/manual trip): a manual reactor trip is required when an automatic trip setpoint is exceeded without a trip. The relevant case is <span class="hi-exam">PZR pressure lowering through the <span class="val-trip">1865 psig</span> low PZR pressure auto reactor trip setpoint</span> (option given: 1860 psig and lowering). <span class="hi-trap">A turbine trip does NOT cause a Rx trip below P-9 (49%); 17% PZR level is heater isolation, not a Rx trip; 25°F loop D/T is normal at 40% power.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q12</div>
+Below P-6 the Source Range and Intermediate Range NIs <span class="hi-exam">may not be overlapped</span>. With one SRNI failed low during a startup, reactor power indication is reduced to a single SR channel which, <span class="hi-trap">while adequate for shutdown monitoring, cannot be relied upon for a startup — a single SR channel cannot be considered reliable with no other Rx power indication to verify it against</span> (TS Bases 3.3.1.1: maintain coincidence logic, redundancy, and diverse-parameter functional capability).
+</div>
+
 ## Connections
 
 - Related systems: [[Excore NIs]], [[Control Rod Drive]], [[Radiation Monitoring]], [[Incores]], [[AMSAC]]
 - Related concepts: [[Rx Vessel & Internals]]
-- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]]
+- Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[AB.ROD-0003 — Continuous Rod Motion]], [[S1.OP-SO.RCS-0001 — Rod Control System Operation]], [[AB.CR-0001 — Control Room Evacuation]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
+- Related exam questions: [[2014 Q2]], [[2014 Q10]], [[2014 Q11]], [[2014 Q12]]
 - Related JPMs: [[2018 JPM IP-j]], [[2023 JPM Sim-a]], [[2023 JPM Sim-g]], [[2023 JPM IP-j]], [[2022 JPM IP-j]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 1]], [[2018 Scenario 2]]
-- Related exams: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]
+- Related exams: [[2014 NRC Written Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]
   - [[2015 Q27]] — LOCA containment-isolation actuation order: Phase A / FW Iso / Cont Vent Iso on SI; MSLI at 15 psig is the only new action between 12 and 18 psig
   - [[2015 Q41]] — Reactor Trip Handles on 2CC2 operate BOTH UV and shunt trips for BOTH RTBs and RTBBs
   - [[2015 Q42]] — 2B Vital Instrument Bus deenergized: SSPS Train B slave relays would not actuate on SI (Train A 45VDC fed from A+D)

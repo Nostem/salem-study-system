@@ -36,5 +36,5 @@ A 125VDC bus ground ohmmeter reading of 40K ohms indicates a ground IS detected 
 ## Connections
 
 - Related systems: [[DC Power]]
-- Related exam questions: [[2023 Q46]]
-- Related exam: [[2023 NRC Written Exam]]
+- Related exam questions: [[2023 Q46]], [[2014 Q18]]
+- Related exam: [[2023 NRC Written Exam]], [[2014 NRC Written Exam]]

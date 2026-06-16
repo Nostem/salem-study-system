@@ -208,11 +208,21 @@ Per SO.SW-5 Attachment 2: <span class="hi-exam">in Modes 1-3, isolating CFCU #23
 Both EOP-TRIP-3 (SI Termination) and EOP-LOCA-2 terminate Containment Spray. <span class="hi-trap">Neither EOP addresses CS Spray Additive Tank isolation or CFCU speed — CFCU operation is governed by the SOP once the EOP network is exited to the IOP.</span> See [[Containment Spray]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q35</div>
+On a Safety Injection the CFCUs shift to <span class="hi-exam">slow speed</span>, which causes <span class="hi-exam">OHA C-12 (22 CFCU AIRFLO TRBL)</span> to annunciate — this alarm is EXPECTED during the LOCA/SI response (it indicates the CFCU is running in slow speed, not a fault).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q34</div>
+A loss of the 1A 4KV vital bus removes the <span class="hi-exam">11 CFCU</span> (along with 11 RHR, 11 CS, and 13 Charging). For a small (1") RCS break, containment pressure does not rise to the CS requirement, so the loss of 11 CFCU does not change the containment pressure response.
+</div>
+
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[RP-AA-300 — Radiological Survey Program]]
 - Related EOPs: [[EOP-APPX-7 — Containment Sump Blockage]]
-- Related exam questions: [[2015 Q16]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]], [[2015 Q65]], [[2015 Q80]], [[2015 Q90]], [[2015 Q91]]
+- Related exam questions: [[2014 Q34]], [[2014 Q35]], [[2015 Q16]], [[2016 Q41]], [[2016 Q42]], [[2018 Q12]], [[2018 Q24]], [[2018 Q27]], [[2018 Q74]], [[2018 Q75]], [[2019 Q13]], [[2019 Q15]], [[2020 Q9]], [[2020 Q17]], [[2020 Q40]], [[2020 Q52]], [[2020 Q89]], [[2023 Q13]], [[2023 Q24]], [[2023 Q25]], [[2023 Q38]], [[2023 Q39]], [[2022 Q41]], [[2022 Q55]], [[2015 Q65]], [[2015 Q80]], [[2015 Q90]], [[2015 Q91]]
 - Related JPMs: [[2016 JPM SRO-A1-1]], [[2018 JPM SRO-A5]], [[2018 JPM Sim-f]], [[2019 JPM Sim-f]], [[2023 JPM Sim-f]], [[2022 JPM RO-A4]], [[2022 JPM SRO-A4]], [[2020 JPM RO-A3]], [[2016 JPM Sim-b]]
 - Related scenarios: [[2018 Scenario 2]], [[2022 Scenario 4]], [[2020 Scenario 4 — SGTR / PORV Failure]], [[2020 Scenario 3 — ATWS / Feedwater Line Break]], [[2015 Scenario 1]]
 - Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]]

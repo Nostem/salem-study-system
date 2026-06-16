@@ -79,11 +79,21 @@ A RED Thermal Shock path during EOP-FRCC-2 accumulator injection: <span class="h
 After the LBLOCA and transition out of EOP-TRIP-1, CFST monitoring identifies the <span class="hi-exam">FRTS RED path (imminent pressurized thermal shock)</span> as RCS pressure drops below the FRTS setpoint with cold ECCS injection. CRS enters EOP-FRTS-1, performs the FRTS steps, and <span class="hi-exam">returns to the procedure in effect (EOP-LOCA-1)</span> when RCS pressure is &lt; 420 psig. This is an enter/act/return contingency, not a terminal procedure. See [[EOP-CFST-1 — Critical Safety Function Status Trees]].
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q15</div>
+After a rapid cooldown/depressurization (e.g., a steamline rupture blowing down all SGs), AFW flow and steam release are used to prevent the RCS from heating back up because an RCS heatup repressurizes the RCS while the RPV downcomer is severely cooled — the combination of severe cooling plus the pressure rise can <span class="hi-exam">propagate a flaw in the vessel and threaten vessel integrity (Pressurized Thermal Shock)</span>, as described on page 2 of the FRTS-1 Basis Document. <span class="hi-trap">The concern is RPV failure — not cold-leg piping welds, SG tubesheet deformation, or AFW feed-ring water hammer.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q25</div>
+FRTS-1 Step 9 evaluates RCS subcooling together with adequate vessel level (RVLIS) to decide if an RCP is required and can be started. Initial criteria: <span class="hi-exam">&gt;50°F subcooling and adequate RVLIS level</span>. With &lt;50°F subcooling (e.g., 20°F) the procedure goes straight to the RCP-start step, which requires all RCPs stopped and <span class="hi-exam">subcooling &gt;0°F</span>, then starts a single RCP IAW S2.OP-SO.RC-0001 — which adds the restriction that the selected loop have <span class="hi-exam">SG NR level &gt;9%</span>. Per the Bases Document, the purpose is to mix cold incoming ECCS water with the warm reactor coolant water.
+</div>
+
 ## Connections
 
-- Related systems: [[ECCS]], [[RCS]], [[RCPs]], [[RHR]]
-- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]]
+- Related systems: [[ECCS]], [[RCS]], [[RCPs]], [[RHR]], [[AFW]], [[RVLIS]], [[Steam Generator & Blowdown]], [[Main Steam]]
+- Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
 - Related EOPs: [[EOP-FRCC-2 — Response to Degraded Core Cooling]], [[EOP-CFST-1 — Critical Safety Function Status Trees]]
-- Related exam questions: [[2016 Q24]], [[2016 Q83]], [[2016 Q99]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]], [[2015 Q83]], [[2015 Q84]]
+- Related exam questions: [[2016 Q24]], [[2016 Q83]], [[2016 Q99]], [[2019 Q74]], [[2020 Q32]], [[2020 Q85]], [[2022 Q85]], [[2015 Q83]], [[2015 Q84]], [[2014 Q15]], [[2014 Q25]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2018 Scenario 2]], [[2015 Scenario 1]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

@@ -34,5 +34,5 @@ Loss of 2B VIB makes <span class="hi-exam">RVLIS Train A Microprocessor Panel in
 
 - Related systems: [[115V AC]], [[RPS/SSPS]], [[Containment Spray]], [[RVLIS]], [[DC Power]]
 - Related procedures: [[S2.OP-SO.115-0012 — 2B Vital Instrument Bus UPS System Operation]]
-- Related exam questions: [[2015 Q14]], [[2019 Q85]], [[2020 Q88]]
-- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]]
+- Related exam questions: [[2015 Q14]], [[2019 Q85]], [[2020 Q88]], [[2014 Q17]]
+- Related exam: [[2015 NRC Written Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2014 NRC Written Exam]]
