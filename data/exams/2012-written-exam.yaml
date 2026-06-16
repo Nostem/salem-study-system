@@ -1,0 +1,14 @@
+exam: "SALEM 2012 NRC Exam (11-01 ILOT)"
+ml_number: "ML13206A339"
+exam_date: "12/03/2012"
+ro_questions: 75
+sro_questions: 25
+# INGESTION STATUS: not started — backbone prepared. Source worksheets:
+# raw/exams/2012/final-written.pdf (117pp, ES-401 worksheet format, answer + justifications
+# embedded per page, same layout as 2014/2015). Cover p1; RO 1 begins p2; 75 RO then 25 SRO.
+# IMPORTANT: 117 pages for 100 questions => ~17 questions span 2 pages, so the page->question
+# mapping is NOT a clean offset (unlike 2014). The OCR worksheet headers are heavily garbled;
+# the per-question mapping MUST be locked by vision-reading each page's "Question Topic RO/SRO N"
+# header during ingestion. Extract with pdftotext -layout for a starting reference per
+# [[feedback_worksheet_extraction]]. Author per-question articles via the salem-exam-ingestion skill.
+questions: []
