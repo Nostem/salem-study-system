@@ -17,6 +17,8 @@ Provides requirements for plant communications, including public address announc
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q66</div>
 Step 4.1.3.6 requires a <span class="hi-exam">plant announcement prior to activities that could change plant radiation levels</span>. Radiography performed in the Turbine Building changes radiation levels and requires an announcement. Swapping a 28 VDC battery charger, filling bulk hydrogen bottles, and containment pressure relief do NOT require announcements under this procedure.

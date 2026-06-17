@@ -24,10 +24,7 @@ Administrative procedure for controlling and authorizing personnel radiation exp
 - Dose calculations must include ALL contributors: gamma, neutron, and internal (if applicable).
 - Authorization levels are tiered based on projected total dose relative to the ADCL.
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 SRO-A4</div>
-Operator A at 1992 mrem year-to-date TEDE plus 9 mrem from containment entry = <span class="hi-exam">2001 mrem — exceeds the 2000 mrem ADCL by 1 mrem</span>. Operator B at 1496 mrem + 9 mrem = 1505 mrem — remains below ADCL. The SRO must recognize that Operator A cannot perform the containment entry without additional dose authorization.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q45</div>
@@ -37,6 +34,11 @@ Normal administrative dose control limit is <span class="hi-exam">2000 mrem TEDE
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2016 RO-A3</div>
 Stay-time calc with Salem in <span class="hi-exam">Alert</span> (ADCL automatically raised to 4500 mrem). YTD TEDE = 1925 mrem, 22 RHR pump room highest dose rate = 40 mrem/hr (excluding 250 mrem/hr point inside 22 RHR HX area which is outside the work scope), 2-hr job. New TEDE = 1925 + (40 × 2) = <span class="hi-exam">2005 mrem</span>, well under 4500 mrem — job CAN be completed. <span class="hi-trap">Trap: defaulting to 2000 mrem ADCL would falsely conclude the job cannot be done.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A4</div>
+Operator A at 1992 mrem year-to-date TEDE plus 9 mrem from containment entry = <span class="hi-exam">2001 mrem — exceeds the 2000 mrem ADCL by 1 mrem</span>. Operator B at 1496 mrem + 9 mrem = 1505 mrem — remains below ADCL. The SRO must recognize that Operator A cannot perform the containment entry without additional dose authorization.
 </div>
 
 ## Connections

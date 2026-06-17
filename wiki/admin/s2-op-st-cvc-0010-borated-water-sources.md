@@ -37,14 +37,16 @@ Surveillance procedure to verify borated water sources (RWST and BASTs) meet Tec
 
 - Step 5.3.1: Surveillance is considered satisfactory when Attachments 2 and 3 (as applicable) are complete with components listed meeting Acceptance Criteria stated in each Attachment.
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2019 RO-A2</div>
-Borated Water Sources surveillance with narrow-margin UNSAT results. Combined BAST level: <span class="hi-exam">48% + 48% = 96%</span>. Per TS 3.1.2.6 Figure 3.1-2, required level at 6650 ppm concentration is <span class="hi-exam">&gt;96.5%</span> — volume is UNSAT. Similarly, BAST concentration of <span class="hi-exam">6650 ppm</span> is just below the required ~6675 ppm from Figure 3.1-2 at 96% level — also UNSAT. RWST parameters (level 41.4 ft, temp 70 F, conc 2350 ppm) and BAST temperatures (100 F, 98.1 F) are all SAT. <span class="hi-exam">Overall surveillance is UNSAT.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2016 RO-A2</div>
 Borated Water Sources surveillance with cross-connected BASTs after a 21 BAT pump leak. RWST: 41.4-41.5 ft / 70°F / 2350 ppm — all SAT. 21 BAST: <span class="hi-exam">49.5%</span> at 6610 ppm; 22 BAST: <span class="hi-exam">49.5%</span> at 6610 ppm; combined ~99% at 6610 ppm. BAST temps 98.2°F / 97.1°F (≥63°F SAT). Per TS 3.1.2.6.a/.b and Figure 3.1-2, the combined-BAST volume × concentration operating point falls within the acceptable region — <span class="hi-exam">surveillance is SAT</span>. Compare to the 2019 RO-A2 case where 96% / 6650 ppm was UNSAT.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 RO-A2</div>
+Borated Water Sources surveillance with narrow-margin UNSAT results. Combined BAST level: <span class="hi-exam">48% + 48% = 96%</span>. Per TS 3.1.2.6 Figure 3.1-2, required level at 6650 ppm concentration is <span class="hi-exam">&gt;96.5%</span> — volume is UNSAT. Similarly, BAST concentration of <span class="hi-exam">6650 ppm</span> is just below the required ~6675 ppm from Figure 3.1-2 at 96% level — also UNSAT. RWST parameters (level 41.4 ft, temp 70 F, conc 2350 ppm) and BAST temperatures (100 F, 98.1 F) are all SAT. <span class="hi-exam">Overall surveillance is UNSAT.</span>
 </div>
 
 ## Connections

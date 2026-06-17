@@ -53,6 +53,8 @@ Maximum Extended Stay Time = 1.5 x Stay Time. Check Times cannot extend beyond 1
 
 Recovery Time = (Actual Work Time / Stay Time) x 60 minutes
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2018 SRO-A2</div>
 Containment entry for PZR spray valve isolation (2PS28 in dog house): WBGT = 89 F, double PCs (+9 F adjustment) = <span class="hi-exam">98 F effective WBGT</span>. Work rate = <span class="hi-exam">High</span> (sustained heavy physical exertion — valve wrench, climbing ladders, two operators required). Using Attachment 3: <span class="hi-exam">Stay Time = 20 min</span>. Maximum Extended Stay Time = 1.5 x 20 = <span class="hi-exam">30 min</span>. Recovery Time using max extended stay time: (30/20) x 60 = <span class="hi-exam">90 min</span>. <span class="hi-trap">Key difference from the 2019 JPM: the 2018 cue says "assume the task required the use of the maximum extended stay time" so Actual Work Time = 30 min (not 20), yielding 90 min recovery (not 60).</span>

@@ -25,14 +25,16 @@ Establishes requirements for calculating and enforcing work hour limits for lice
 | Minimum break in any 9-day period | <span class="hi-exam">34 hours continuous</span> | LS-AA-119-1003 |
 | Minimum break between shifts | <span class="hi-exam">10 hours continuous</span> | LS-AA-119-1003 |
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 SRO-A1.b</div>
-Work hour rule evaluation: Operator 1 eliminated for not having a <span class="hi-exam">34-hour break in any 9 calendar day period</span> (only 33 hours). Operator 3 eliminated for exceeding <span class="hi-exam">72 hours in a 7-day period</span> (73 hours total). Only Operator 2 meets all five work hour requirements.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 SRO-A2</div>
 Shift staffing evaluation combining work hours AND fitness for duty: Operator #3 eliminated for exceeding <span class="hi-exam">16 hours in a 24-hour period</span> (worked training 0700-1730 same day, then night shift at 1800 = 22 hours in 24) AND violating the <span class="hi-exam">10-hour break requirement</span> (only 30 minutes between training end and shift start). Operators #2 and #4 passed work hour rules but failed <span class="hi-exam">SY-AA-102-201 fitness for duty</span> screening. Only Operator #1 met all requirements. TS Admin section allows <span class="hi-exam">2 hours to restore minimum staffing</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 SRO-A1.b</div>
+Work hour rule evaluation: Operator 1 eliminated for not having a <span class="hi-exam">34-hour break in any 9 calendar day period</span> (only 33 hours). Operator 3 eliminated for exceeding <span class="hi-exam">72 hours in a 7-day period</span> (73 hours total). Only Operator 2 meets all five work hour requirements.
 </div>
 
 ## Connections

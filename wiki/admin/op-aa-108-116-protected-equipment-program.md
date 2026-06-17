@@ -15,6 +15,15 @@ Administrative procedure governing the protection of redundant equipment when SS
 
 ## Key Actions / Information
 
+### Roles
+
+| Role | Responsibility | Source |
+|------|---------------|--------|
+| Shift Manager | Overall authority of protected equipment program; final authority in determining systems and equipment to be protected | OP-AA-108-116 |
+| Work Control Supervisor | Facilitates tagging of equipment; ensures protected equipment is walked down each shift | OP-AA-108-116 |
+
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q97</div>
 The <span class="hi-exam">Shift Manager has overall authority of the protected equipment program</span>. Per Step 4.2.1: "Prior to removal of SSCs from service, protect redundant equipment if plant configuration is such that a single piece of redundant equipment unavailability or manipulation would cause:
@@ -25,13 +34,6 @@ The <span class="hi-exam">Shift Manager has overall authority of the protected e
 </ul>
 <span class="hi-trap">Trap: the threshold for risk-based equipment protection is RED risk, not ORANGE. The Work Control Supervisor facilitates tagging and walkdowns but does NOT have overall authority.</span>
 </div>
-
-### Roles
-
-| Role | Responsibility | Source |
-|------|---------------|--------|
-| Shift Manager | Overall authority of protected equipment program; final authority in determining systems and equipment to be protected | OP-AA-108-116 |
-| Work Control Supervisor | Facilitates tagging of equipment; ensures protected equipment is walked down each shift | OP-AA-108-116 |
 
 ## Connections
 

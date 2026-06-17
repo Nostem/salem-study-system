@@ -22,6 +22,8 @@ Establishes requirements for ensuring that all personnel granted unescorted acce
 | Medication use | Must NOT take medication that could <span class="hi-exam">affect ability to safely perform duties</span> | SY-AA-102-201 |
 | Self-reporting | Personnel must self-report if they believe they are <span class="hi-exam">not fit for duty</span> | SY-AA-102-201 |
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 SRO-A2</div>
 Shift staffing evaluation with FFD screening: Operator #2 eliminated — consumed <span class="hi-exam">alcohol during the past five hours</span> and self-reported not fit for duty. Operator #4 eliminated — took <span class="hi-exam">NyQuil Liquid Nighttime Cold Medicine</span> (causes impairment) and self-reported not sure if fit for duty. Both must be screened out regardless of whether they meet work hour rules.

@@ -22,12 +22,21 @@ Provides guidance for transitioning from cold shutdown to refueling mode, includ
 
 A CORE ALTERATION is the movement of any fuel, sources, OR reactivity control components within the reactor vessel with the vessel head removed and fuel in the vessel.
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q94</div>
 The first defueling activity requiring direct supervision of the Refueling SRO in Containment because it is a CORE ALTERATION is <span class="hi-exam">unlatching RCCAs</span> (performed before fuel moves). Moving fuel assemblies is also a core alteration but occurs after RCCA unlatching. <span class="hi-trap">Lifting upper internals and disconnecting CRDMs are NOT core alterations — they do not involve movement of fuel, sources, or reactivity control components within the reactor vessel.</span>
 </div>
 
 ### MODE 6 Entry (Reactor Head De-tensioning) Requirements
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q95</div>
+Before Rx Vessel Head detensioning for a refueling outage, S2.OP-IO.ZZ-0007 requires <span class="hi-exam">the RCS drained to &lt;104' elevation and Unit CRS AND SM approval</span>. The 168-hour subcriticality and control-room↔refuel-floor communication requirements apply to CORE ALTERATIONS (not head detensioning). See [[Refueling]].
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q94</div>
@@ -38,11 +47,6 @@ Before de-tensioning the first Rx Head Stud (entering MODE 6), IOP-7 Attachment 
 <span class="hi-trap">NOT required before de-tensioning (common traps):</span><br>
 • <span class="hi-trap">168 hours subcritical — TS 3.9.3 applies to movement of irradiated fuel, not de-tensioning. Also, 168 hours applies only May 16 – Oct 14; for Oct 15 – May 15 only 80 hours is required.</span><br>
 • <span class="hi-trap">Continuous communications between CR and refuel floor — required 1 hour prior to CORE ALTERATIONS, not de-tensioning.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q95</div>
-Before Rx Vessel Head detensioning for a refueling outage, S2.OP-IO.ZZ-0007 requires <span class="hi-exam">the RCS drained to &lt;104' elevation and Unit CRS AND SM approval</span>. The 168-hour subcriticality and control-room↔refuel-floor communication requirements apply to CORE ALTERATIONS (not head detensioning). See [[Refueling]].
 </div>
 
 ## Connections

@@ -32,6 +32,13 @@ Provides guidance for determining Protective Action Recommendations (PARs) durin
 | Default PAR | Standard protective action recommendation based on emergency classification |
 | RPSA (Radiological Protective Supplemental Action) | Enhanced PAR based on specific radiological conditions |
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q100</div>
+<span class="hi-exam">A General Emergency initial declaration (ICMF) requires a Protective Action Recommendation (PAR)</span> — a Rapidly Progressing Severe Accident PAR, a Hostile Action PAR, or a default PAR (EP-SA-111-F4, Attachment 4) — one of which must be made. A wind shift does not drive a PAR upgrade if a Security Event caused the GE; a "radiological release" is any release above normal; and the PAR is not based on Emergency Coordinator judgment of exceeding 10CFR100 limits.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q100</div>
 Per EP-SA-111-F4 Attachment 4 (Appendix 1): for a General Emergency with loss of all three fission product barriers (FB1.L, RB1.L, CB1.L = 13 PTS) and R44A/B reading 1000 R/hr, the correct INITIAL PAR is the <span class="hi-exam">Default PAR</span>. A subsequent wind shift does NOT require a PAR Upgrade — <span class="hi-exam">NO PAR Upgrade is required</span>. <span class="hi-trap">Trap: candidates may incorrectly determine an RPSA PAR is required on the initial classification, or incorrectly determine that a wind shift necessitates an RPSA PAR Upgrade.</span>
@@ -58,9 +65,28 @@ The Primary Communicator must notify the following organizations using the NETS 
 | 15.f | New Castle County (DE) | NETS 5408 | Alternate for DE |
 | 15.g | Kent County (DE) | NETS 5409 | Alternate for DE |
 
+**Exam & operating coverage:**
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A4-1 / A4-2 / A4-3 (ESG-1/2/3)</div>
+Three ESG-tied SM classification + ICMF time-critical JPMs (Task 1240020502). After classifying, the SM directs the Primary Communicator to implement <span class="hi-exam">ECG Attachment 6</span> (notifications) and provides the completed ICMF within <span class="hi-exam">15 minutes of Start Time</span>. ESG-1 = <span class="hi-exam">ALERT RB2.L</span> (escalates to <span class="hi-exam">SAE RB2.L AND CB5.L</span> if the cavitating charging pump fails); ESG-2 = <span class="hi-exam">ALERT RB3.L</span>; ESG-3 = <span class="hi-exam">SAE FB2.P AND RB2.P</span>. Each uses ICMF Section IV wind speed/direction from SPDS and Section V "NO PROTECTIVE ACTIONS ARE RECOMMENDED AT THIS TIME" (no PAR for Alert or SAE). (Time-critical Admin JPMs — Classroom.)
+</div>
+
 ### 15-Minute Clock
 
 Per EP-SA-111-F6 Attachment 6, the fifteen-minute clock ends when the contacted organization is provided the Emergency Classification Level or PAR upgrade.
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q85</div>
+The <span class="hi-trap">15 minute times are for State notifications (DE/NJ) during emergencies, NOT the NRC</span>. The <span class="hi-exam">NRC is not required to be notified for 60 minutes</span>. A subsequent NRC notification is required when a more-severe E-plan classification is made: with a SAE already declared (FB4.L and RB2.L, 5 points each), <span class="hi-exam">containment radiation &gt;2000 R/hr adds 2 points from the containment barrier → escalates to a General Emergency</span>, which requires the subsequent 60 minute NRC notification. A wind shift while in a SAE requires no notification (no PAR is made for a SAE).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q75</div>
+State notifications (Delaware and New Jersey): the Primary Communicator's PRIMARY method is the <span class="hi-exam">NETS (Nuclear Emergency Telecommunications System) closed-circuit phones</span> (ESSX is the backup), and notifications must be made <span class="hi-exam">within 15 minutes of an emergency declaration</span> — even when a lower-classification emergency is already in progress.
+</div>
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2019 RO-A4</div>
@@ -71,10 +97,7 @@ Alternate path JPM: Delaware State Police cannot be reached via Primary (NETS 54
 
 Provides the Secondary Communicator (Attachment 8 Secondary Communicator Log) the procedure for backing up the Primary Communicator during an emergency — assisting with the off-site state/local notifications, making the required NRC notification, and supporting activation of the Emergency News Center (ENC).
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 RO-A4</div>
-Secondary Communicator duties (EP-SA-111-F8, Attachment 8 Secondary Communicator Log) during a declared <span class="hi-exam">ALERT</span> — Unit 2 reactor initially failed to trip on a manual trip signal, tripped on the second trip handle, unit stable in MODE 3, <span class="hi-exam">ENC not yet activated</span>. The Secondary Communicator backs up the Primary Communicator's 15-minute off-site notifications and completes the Secondary Communicator Log. (Admin JPM — performed in the Classroom.)
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2014 RO-A4</div>
@@ -82,23 +105,8 @@ Same Secondary Communicator Log (EP-SA-111-F8, Attachment 8) during an ALERT, wi
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 SRO-A4-1 / A4-2 / A4-3 (ESG-1/2/3)</div>
-Three ESG-tied SM classification + ICMF time-critical JPMs (Task 1240020502). After classifying, the SM directs the Primary Communicator to implement <span class="hi-exam">ECG Attachment 6</span> (notifications) and provides the completed ICMF within <span class="hi-exam">15 minutes of Start Time</span>. ESG-1 = <span class="hi-exam">ALERT RB2.L</span> (escalates to <span class="hi-exam">SAE RB2.L AND CB5.L</span> if the cavitating charging pump fails); ESG-2 = <span class="hi-exam">ALERT RB3.L</span>; ESG-3 = <span class="hi-exam">SAE FB2.P AND RB2.P</span>. Each uses ICMF Section IV wind speed/direction from SPDS and Section V "NO PROTECTIVE ACTIONS ARE RECOMMENDED AT THIS TIME" (no PAR for Alert or SAE). (Time-critical Admin JPMs — Classroom.)
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q75</div>
-State notifications (Delaware and New Jersey): the Primary Communicator's PRIMARY method is the <span class="hi-exam">NETS (Nuclear Emergency Telecommunications System) closed-circuit phones</span> (ESSX is the backup), and notifications must be made <span class="hi-exam">within 15 minutes of an emergency declaration</span> — even when a lower-classification emergency is already in progress.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q100</div>
-<span class="hi-exam">A General Emergency initial declaration (ICMF) requires a Protective Action Recommendation (PAR)</span> — a Rapidly Progressing Severe Accident PAR, a Hostile Action PAR, or a default PAR (EP-SA-111-F4, Attachment 4) — one of which must be made. A wind shift does not drive a PAR upgrade if a Security Event caused the GE; a "radiological release" is any release above normal; and the PAR is not based on Emergency Coordinator judgment of exceeding 10CFR100 limits.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q85</div>
-The <span class="hi-trap">15 minute times are for State notifications (DE/NJ) during emergencies, NOT the NRC</span>. The <span class="hi-exam">NRC is not required to be notified for 60 minutes</span>. A subsequent NRC notification is required when a more-severe E-plan classification is made: with a SAE already declared (FB4.L and RB2.L, 5 points each), <span class="hi-exam">containment radiation &gt;2000 R/hr adds 2 points from the containment barrier → escalates to a General Emergency</span>, which requires the subsequent 60 minute NRC notification. A wind shift while in a SAE requires no notification (no PAR is made for a SAE).
+<div class="callout-label">JPM — 2015 RO-A4</div>
+Secondary Communicator duties (EP-SA-111-F8, Attachment 8 Secondary Communicator Log) during a declared <span class="hi-exam">ALERT</span> — Unit 2 reactor initially failed to trip on a manual trip signal, tripped on the second trip handle, unit stable in MODE 3, <span class="hi-exam">ENC not yet activated</span>. The Secondary Communicator backs up the Primary Communicator's 15-minute off-site notifications and completes the Secondary Communicator Log. (Admin JPM — performed in the Classroom.)
 </div>
 
 ## Connections

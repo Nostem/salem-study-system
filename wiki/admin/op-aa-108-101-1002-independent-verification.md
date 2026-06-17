@@ -17,14 +17,11 @@ Provides requirements for independent and concurrent verification of equipment c
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q67</div>
-Throttle valves (Section 2.7): Initial alignment or verification: <span class="hi-exam">fully close the valve, then open the required number of turns</span>. For independent verification, the second operator may observe the first operator positioning the valve, then perform either an independent count of the turns open, verification of process variable, or verification of valve position for valves with incremental indicators. <span class="hi-trap">For throttled valves requiring independent verification, the second operator ACCOMPANIES the first operator (concurrent verification) — they do NOT go out alone afterwards as with typical independent verification of open/close valves.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q69</div>
-Component Configuration Control (step 5.1.4.1.A): For <span class="hi-exam">1 hour or less TSAS</span>, an <span class="hi-exam">Abnormal Component Position Sheet (ACPS)</span> is used to position the component, and the IV must be completed <span class="hi-exam">within 1 hour</span> of entering the TSAS. <span class="hi-trap">For GREATER than 1 hour TSAS, a tagout may be applied as soon as practicable — do not confuse the >1 hour tagout rule with the ≤1 hour ACPS rule.</span>
+<div class="callout-label">Exam — 2015 Q70</div>
+Independent Verification (IV) hands-on requirement vs dose (Att 11): <span class="hi-exam">10 mrem is the dose above which a hands-on IV is not required (may be waived)</span>. In a 75 mrem/hr area, 10 mrem accrues at 8 minutes — so the longest IV time before hands-on may be waived is 7 minutes (8.75 mrem).
 </div>
 
 <div class="callout callout-exam">
@@ -38,8 +35,13 @@ IV waiver for Locked High Radiation Areas: per OP-AA-108-101-1002, the Shift Man
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q70</div>
-Independent Verification (IV) hands-on requirement vs dose (Att 11): <span class="hi-exam">10 mrem is the dose above which a hands-on IV is not required (may be waived)</span>. In a 75 mrem/hr area, 10 mrem accrues at 8 minutes — so the longest IV time before hands-on may be waived is 7 minutes (8.75 mrem).
+<div class="callout-label">Exam — 2020 Q69</div>
+Component Configuration Control (step 5.1.4.1.A): For <span class="hi-exam">1 hour or less TSAS</span>, an <span class="hi-exam">Abnormal Component Position Sheet (ACPS)</span> is used to position the component, and the IV must be completed <span class="hi-exam">within 1 hour</span> of entering the TSAS. <span class="hi-trap">For GREATER than 1 hour TSAS, a tagout may be applied as soon as practicable — do not confuse the >1 hour tagout rule with the ≤1 hour ACPS rule.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q67</div>
+Throttle valves (Section 2.7): Initial alignment or verification: <span class="hi-exam">fully close the valve, then open the required number of turns</span>. For independent verification, the second operator may observe the first operator positioning the valve, then perform either an independent count of the turns open, verification of process variable, or verification of valve position for valves with incremental indicators. <span class="hi-trap">For throttled valves requiring independent verification, the second operator ACCOMPANIES the first operator (concurrent verification) — they do NOT go out alone afterwards as with typical independent verification of open/close valves.</span>
 </div>
 
 ## Connections

@@ -17,14 +17,16 @@ Provides administrative requirements for identifying and documenting inoperable 
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q66</div>
-Per step 4.2.1.3, a <span class="hi-exam">single strand of red tape diagonally</span> across a multiple input annunciator window means <span class="hi-exam">one or more inputs into the window are inoperable</span>. Reflash capability is still enabled. Per step 4.2.1.4, if the <span class="hi-exam">entire window is inoperable</span>, then <span class="hi-trap">two pieces of red tape placed diagonally across the window in the shape of an "X"</span>. Red tape is NOT used to identify maintenance testing in progress.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q66</div>
 Page 8 — OHA marking definitions: a <span class="hi-exam">single piece of red tape diagonally</span> on an OHA window indicates <span class="hi-exam">at least one but not all inputs are disabled</span>; the alarm may not be a reliable source of information but the window can still alarm from an operable input. Reflash capability is NOT defeated by a single piece of tape. <span class="hi-trap">Two pieces of red tape in an "X" pattern = entire OHA window INOPERABLE.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q66</div>
+Per step 4.2.1.3, a <span class="hi-exam">single strand of red tape diagonally</span> across a multiple input annunciator window means <span class="hi-exam">one or more inputs into the window are inoperable</span>. Reflash capability is still enabled. Per step 4.2.1.4, if the <span class="hi-exam">entire window is inoperable</span>, then <span class="hi-trap">two pieces of red tape placed diagonally across the window in the shape of an "X"</span>. Red tape is NOT used to identify maintenance testing in progress.
 </div>
 
 ## Connections

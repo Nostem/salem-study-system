@@ -21,6 +21,8 @@ Emergency plan implementing procedure for Emergency Coordinator (EC) response ac
 
 ## Key Requirements
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q99</div>
 Emergency Coordinator (EC) responsibility transfers based on facility activation status:
@@ -32,14 +34,9 @@ Emergency Coordinator (EC) responsibility transfers based on facility activation
 <span class="hi-trap">Trap: authority is based on the individual's E-Plan position, NOT management title. The Site Vice President may fill the Emergency Response Manager position, but the authority comes from the E-Plan position.</span>
 </div>
 
-## Exam History
-
-- [[2022 Q100 — Emergency Accountability Timing]]: 30-minute accountability requirement at Site Area Emergency
-- [[2020 Q99]]: EC responsibility transfer — EDO is EC when TSC activated but EOF not activated
-
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 SRO-A4-1 (ESG-1 / ESG-2)</div>
-EP-SA-111-F2 (ALERT) Attachment 2 step A.2 directs: <span class="hi-exam">if a Security Event is in progress, IMPLEMENT the prompt actions of NC.EP-EP.ZZ-0102, EC Response, Attachment 10, prior to classification</span>. SRO must verify Security Event is NOT in progress before continuing with the standard classification flow.
+<div class="callout-label">JPM — 2012 SRO-A4-1/-2/-3 (ESG-1/-2/-3)</div>
+The same Attachment A.2 step appears in all three 2012 ESG classification JPMs (ECG Attachment 2 ALERT and Attachment 3 SAE): <span class="hi-exam">IF a security Event is in progress, THEN IMPLEMENT the prompt actions of NC.EP-EP.ZZ-0102, EC Response, Attachment 10, prior to the classification</span>. In each JPM the candidate determines a Security Event is NOT in progress and proceeds with classification.
 </div>
 
 <div class="callout callout-jpm">
@@ -48,9 +45,14 @@ The same Attachment A.2 step appears in all three 2015 ESG classification JPMs (
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 SRO-A4-1/-2/-3 (ESG-1/-2/-3)</div>
-The same Attachment A.2 step appears in all three 2012 ESG classification JPMs (ECG Attachment 2 ALERT and Attachment 3 SAE): <span class="hi-exam">IF a security Event is in progress, THEN IMPLEMENT the prompt actions of NC.EP-EP.ZZ-0102, EC Response, Attachment 10, prior to the classification</span>. In each JPM the candidate determines a Security Event is NOT in progress and proceeds with classification.
+<div class="callout-label">JPM — 2016 SRO-A4-1 (ESG-1 / ESG-2)</div>
+EP-SA-111-F2 (ALERT) Attachment 2 step A.2 directs: <span class="hi-exam">if a Security Event is in progress, IMPLEMENT the prompt actions of NC.EP-EP.ZZ-0102, EC Response, Attachment 10, prior to classification</span>. SRO must verify Security Event is NOT in progress before continuing with the standard classification flow.
 </div>
+
+## Exam History
+
+- [[2022 Q100 — Emergency Accountability Timing]]: 30-minute accountability requirement at Site Area Emergency
+- [[2020 Q99]]: EC responsibility transfer — EDO is EC when TSC activated but EOF not activated
 
 ## Connections
 
