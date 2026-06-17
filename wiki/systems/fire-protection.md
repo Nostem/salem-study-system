@@ -22,6 +22,8 @@ Provides fire detection, alarm, and suppression systems throughout the plant. In
 - Fire Pump #2: Low header pressure <span class="val-alarm"><75 psig</span> with time delay
 - Both: <span class="hi-exam">Loss of normal AC power to fire pump battery chargers</span> — independent battery auto-starts both fire pumps
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q38</div>
 Fire Pump auto-start and shutdown: with Fire Water Header pressure dropping to a minimum of 80 psig, <span class="hi-exam">ONLY Fire Pump #1 is running</span> (starts at <span class="val-alarm">&lt;85 psig</span>; Fire Pump #2 starts at <span class="val-alarm">&lt;75 psig</span> with time delay — header never reached 75 psig). After firefighting, running Fire Pumps can be shutdown <span class="hi-exam">LOCALLY ONLY</span>. <span class="hi-trap">Trap: fire pumps can be STARTED locally or remotely, but can only be SHUTDOWN locally. Also, both pumps do not start at the same threshold — #2 has a lower setpoint and time delay.</span>
@@ -32,20 +34,30 @@ Fire Pump auto-start and shutdown: with Fire Water Header pressure dropping to a
 Both fire pumps running (OHA A-15 FIRE PMP 1/2 RUN, OHA A-23 FIRE PUMP 1/2 TRBL) with <span class="hi-exam">no fire system actuations and header pressure stable at 135 psig</span>: cause is <span class="hi-exam">loss of normal AC power to BOTH fire pump battery chargers</span>. The independent battery auto-starts both fire pumps. <span class="hi-trap">Jockey pump trip is NOT an auto-start signal for the fire pumps. A momentary (1 sec) pressure drop to 70 psig would not start BOTH pumps because the #2 fire pump start includes a time delay. A major pipe rupture would cause header pressure to remain low, not stable at 135 psig.</span>
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+A <span class="hi-exam">Main Power Transformer (MPT) Phase 1 Sudden Pressure alarm (CRT point 529)</span> with FP <span class="hi-exam">deluge actuation at MPT Zone 46</span> occurs; OHA A-15 FIRE PUMP 1/2 RUN annunciates when either Diesel Drive Fire Pump starts. Field operator reports water spraying over MPT Phase 1 with heavy arcing/sparking. The CRS removes the Main Generator from service and trips the reactor (power &gt; P-9).
+</div>
+
+## Exam & Operating Coverage
+
+### Fire Detection & Alarm Response
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q64</div>
+Early-warning Smoke/Fire Detectors provide the Control Room with early fire indication but <span class="hi-exam">do NOT cause a suppression system to actuate</span>. When a zone detector actuates: the <span class="hi-exam">zone indicating lamp and the group "FIRE" lamp illuminate on the 2RP5 Fire Protection Panel</span>, OHA A-7 (FIRE PROT FIRE) annunciates, and the coded fire alarm broadcasts over the station PA. <span class="hi-exam">The alarm stays illuminated until the zone is manually reset from the fire protection panels in the Relay Room</span> (not the Control Room).
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 Sim-h</div>
 Fire alarm response: coded fire alarm #91 on 2RP5 = <span class="hi-exam">Aux. Bldg., Relay & Battery Rooms, 100 ft. elevation</span>. OHA A-7 (FIRE PROT TRBL) and A-8 (CO2/HALON DISCH) alarm. Relay Room fire requires: page announcement, <span class="hi-exam">FIRE INSIDE CONTROL AREA</span> mode on 2RP2, direct Unit 1 to select same, isolate PORVs (2PR1/2PR2 to MANUAL/CLOSE, close 2PR6/2PR7 block valves), dispatch operator for EMERG CLOSE per Att. 15.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q64</div>
-EDG room fire suppression: each EDG is protected by a <span class="hi-exam">CO2 fire suppression system</span> (NOT Halon). This system was originally automatic but was <span class="hi-exam">permanently changed to MANUAL activation under Salem DCP 80115237</span>. On a fire detected in the EDG room, the fire alarm alerts the operator, who exits the EDG room/control room and <span class="hi-exam">manually activates CO2 from the vestibule area</span>. After activation, there is a <span class="hi-exam">13 second delay</span> before the system dumps. <span class="hi-trap">Trap: the system is NOT automatic — Halon is used in OTHER vital areas at Salem, not the EDG rooms. The 13-second delay applies AFTER manual activation, not before automatic discharge.</span>
-</div>
+### Containment Fire Response
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q75</div>
-Containment fire response: <span class="hi-exam">2FP147 (Fire Protection Containment Isolation Valve) must be manually opened from the control room</span> after tripping the Reactor, Turbine, and all RCPs. 2FP147 does NOT receive an automatic open signal. Fire pumps will start once 2FP147 is opened. Containment deluge valves are automatic. <span class="hi-trap">PORV BLOCK valve EMER CLOSE is the action for a relay room fire, not a containment fire.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q17</div>
@@ -53,18 +65,22 @@ Assessing affected Fire Zone(s) on 2RP5 after OHA A-7 FIRE PROT FIRE: <span clas
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q63</div>
-Beyond supplying fire-protection water, <span class="hi-exam">Fresh Water / Fire Protection Storage Tank water can be aligned to the Auxiliary Feedwater (AFW) system through a normally disconnected spool piece</span>. See [[AFW]].
+<div class="callout-label">Exam — 2020 Q75</div>
+Containment fire response: <span class="hi-exam">2FP147 (Fire Protection Containment Isolation Valve) must be manually opened from the control room</span> after tripping the Reactor, Turbine, and all RCPs. 2FP147 does NOT receive an automatic open signal. Fire pumps will start once 2FP147 is opened. Containment deluge valves are automatic. <span class="hi-trap">PORV BLOCK valve EMER CLOSE is the action for a relay room fire, not a containment fire.</span>
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #2</div>
-A <span class="hi-exam">Main Power Transformer (MPT) Phase 1 Sudden Pressure alarm (CRT point 529)</span> with FP <span class="hi-exam">deluge actuation at MPT Zone 46</span> occurs; OHA A-15 FIRE PUMP 1/2 RUN annunciates when either Diesel Drive Fire Pump starts. Field operator reports water spraying over MPT Phase 1 with heavy arcing/sparking. The CRS removes the Main Generator from service and trips the reactor (power &gt; P-9).
+### EDG Room & Storage Tank
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q64</div>
+EDG room fire suppression: each EDG is protected by a <span class="hi-exam">CO2 fire suppression system</span> (NOT Halon). This system was originally automatic but was <span class="hi-exam">permanently changed to MANUAL activation under Salem DCP 80115237</span>. On a fire detected in the EDG room, the fire alarm alerts the operator, who exits the EDG room/control room and <span class="hi-exam">manually activates CO2 from the vestibule area</span>. After activation, there is a <span class="hi-exam">13 second delay</span> before the system dumps. <span class="hi-trap">Trap: the system is NOT automatic — Halon is used in OTHER vital areas at Salem, not the EDG rooms. The 13-second delay applies AFTER manual activation, not before automatic discharge.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q64</div>
-Early-warning Smoke/Fire Detectors provide the Control Room with early fire indication but <span class="hi-exam">do NOT cause a suppression system to actuate</span>. When a zone detector actuates: the <span class="hi-exam">zone indicating lamp and the group "FIRE" lamp illuminate on the 2RP5 Fire Protection Panel</span>, OHA A-7 (FIRE PROT FIRE) annunciates, and the coded fire alarm broadcasts over the station PA. <span class="hi-exam">The alarm stays illuminated until the zone is manually reset from the fire protection panels in the Relay Room</span> (not the Control Room).
+<div class="callout-label">Exam — 2015 Q63</div>
+Beyond supplying fire-protection water, <span class="hi-exam">Fresh Water / Fire Protection Storage Tank water can be aligned to the Auxiliary Feedwater (AFW) system through a normally disconnected spool piece</span>. See [[AFW]].
 </div>
 
 ## Connections

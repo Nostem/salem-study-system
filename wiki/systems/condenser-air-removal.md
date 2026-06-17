@@ -13,6 +13,8 @@ aliases:
 
 Maintains condenser vacuum by removing non-condensable gases. Includes air ejectors and vacuum monitoring.
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q36</div>
 <span class="hi-exam">Excessively high Vacuum Pump Seal Water Temperature can cause Main Condenser vacuum to degrade</span> — as seal water temperature increases, vacuum pump performance decreases. <span class="hi-trap">Excessively LOW TAC supply temperature, excessively HIGH seal water flow, and separating tank overflow all cause seal water temperature to LOWER, which would actually IMPROVE condenser vacuum (not degrade it).</span>
@@ -24,8 +26,8 @@ When swapping condenser vacuum pumps per S2.OP-SO.AR-0001: if the <span class="h
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #1</div>
-Event 2: <span class="hi-exam">24 Vacuum Pump trips</span> during load reduction. PO enters AB.COND-0001. PO starts all available vacuum pumps — <span class="hi-exam">22 Vacuum Pump trips after starting</span>, 25 Vacuum Pump starts but <span class="hi-exam">25AR25 (vacuum pump discharge AOV) fails to open</span>. PO manually opens 25AR25 from the control room. Condenser backpressure recovers.
+<div class="callout-label">Scenario — 2014 #2</div>
+During the weekly vacuum pump swap, the air injection suction isolation valve <span class="hi-exam">AR25 on the pump being secured fails open</span>, degrading condenser vacuum. The crew restores vacuum by isolating the affected AR25 and <span class="hi-exam">starting the remaining vacuum pump</span> (the affected pump will not re-start). A subsequent vital-bus loss and steam dump failure later drive a reactor trip.
 </div>
 
 <div class="callout callout-scenario">
@@ -34,8 +36,8 @@ Event 2: <span class="hi-exam">24 Vacuum Pump trips</span> during load reduction
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2014 #2</div>
-During the weekly vacuum pump swap, the air injection suction isolation valve <span class="hi-exam">AR25 on the pump being secured fails open</span>, degrading condenser vacuum. The crew restores vacuum by isolating the affected AR25 and <span class="hi-exam">starting the remaining vacuum pump</span> (the affected pump will not re-start). A subsequent vital-bus loss and steam dump failure later drive a reactor trip.
+<div class="callout-label">Scenario — 2022 #1</div>
+Event 2: <span class="hi-exam">24 Vacuum Pump trips</span> during load reduction. PO enters AB.COND-0001. PO starts all available vacuum pumps — <span class="hi-exam">22 Vacuum Pump trips after starting</span>, 25 Vacuum Pump starts but <span class="hi-exam">25AR25 (vacuum pump discharge AOV) fails to open</span>. PO manually opens 25AR25 from the control room. Condenser backpressure recovers.
 </div>
 
 ## Connections

@@ -26,6 +26,28 @@ The containment systems ensure that fission product releases are limited followi
 
 Designed to withstand complete blowdown of reactor coolant through any rupture of the RCS up to and including circumferential severance of an RCS pipe. (UFSAR 6.2.1.1)
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q35</div>
+During a multi-day loss of all AC power, as the RCS drains through the RCP seals, <span class="hi-exam">containment pressure rises only to ~3 psig and temperature by ~40°F</span>. <span class="hi-trap">Containment is NOT degraded and does not reach saturation conditions — it is designed for a LBLOCA in which all RCS mass is released, so long-term recovery is not affected.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q85</div>
+Following a LBLOCA with RCS pressure at 35 psig, a <span class="hi-exam">stable containment sump level reading (e.g., 46% on 2CC1) is NOT expected — the entire RCS contents are on the floor and sump level would have RISEN</span>. Containment radiation exceeding <span class="hi-exam">2000 R/hr adds 2 points from the containment barrier</span>, escalating an existing SAE to a General Emergency.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A1-1</div>
+21 containment sump pump start (OHA C-2) at 0750 with previous stop 1510 yesterday → <span class="hi-exam">1000 minutes</span> between cycles → <span class="hi-exam">0.3 gpm</span> unidentified leakage to the sump. Below both 0.85 gpm and 1.0 gpm thresholds, so no action statement is entered.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A1-1</div>
+Containment-sump auto pump-down provides the leak-detection signal used to quantify unidentified RCS leakage to containment. OHA C-2 CNTMT SUMP PMP START is the front-panel indication; the Aux typewriter logs sump-pump start/stop events. Per S2.OP-SO.RC-0004 §5.3, the elapsed time between successive sump-pump cycles is converted to a leak rate via Attachment 3. Action thresholds: 0.85 gpm (Section 5.6 trending) and 1.0 gpm (TS 3.4.7.2 unidentified-leakage LCO).
+</div>
+
 ## Containment Spray System
 
 ### Function
@@ -51,6 +73,13 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 - Cooled recirculated water sprayed into containment
 (UFSAR 6.2.2.1)
 
+**Exam & operating coverage:**
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+During the LBLOCA, <span class="hi-exam">Phase B / Containment Spray actuation fails</span> and containment pressure rises. <span class="hi-exam">MSLI is initiated at 15 psig</span> and a CFST Containment Environment <span class="hi-exam">PURPLE path (containment pressure &gt; 15 psig)</span> drives [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]. The CFCUs are verified running in low speed.
+</div>
+
 ## Containment Fan Coil Units (CFCUs)
 
 | Parameter | Value | Source |
@@ -67,12 +96,14 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 
 Each unit includes: motor, fan, motor heat exchanger, cooling coils, roughing filters, dampers, duct distribution system, instrumentation, and controls. Cooled by service water. (UFSAR 6.2.2.2.2)
 
-## Containment Internal Pressure Limits
+**Exam & operating coverage:**
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q54</div>
-<span class="hi-exam">TS 3.6.1.4 requires containment internal pressure between -1.5 and +0.3 psig during Modes 1-4.</span> The upper limit (+0.3 psig) ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during a DBA (LOCA or steam line break). The lower limit (-1.5 psig) ensures the design negative pressure differential of <span class="val-trip">3.5 psig</span> is not exceeded. If outside limits, must restore within <span class="val-trip">1 hour</span>.
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+21 SG steam leak inside containment first cued by <span class="hi-exam">CFCU leak-detection alarms</span>: OHA <span class="hi-exam">C-38 CFCU LK DET HI</span>, then <span class="hi-exam">C-30 CFCU LK DET HI-HI</span>. Diagnostic indications of an in-containment steam leak: containment pressure rising; Tavg slowly lowering; rising steam flows on all loops; steam dump demand lowering. Crew enters AB.STM-0001. Containment pressure exceeds the <span class="hi-exam">15 psig Phase B/Spray setpoint</span>; both Containment Spray pumps fail to auto-start (CT#1 → manual start). After cooldown, when containment pressure is &lt;13 psig, RO resets Spray actuation, stops both CS pumps, and shuts 21 and 22CS2 CS pump discharge valves.
 </div>
+
+## Containment Internal Pressure Limits
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
@@ -81,6 +112,13 @@ Each unit includes: motor, fan, motor heat exchanger, cooling coils, roughing fi
 | Design Pressure | <span class="val-trip">47 psig</span> | UFSAR 6.2.1.1 |
 | Design Negative Differential | <span class="val-trip">3.5 psig</span> | TS 3.6.1.4 Bases |
 | Restoration Time | <span class="val-trip">1 hour</span> | TS 3.6.1.4 |
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q36</div>
+Rising containment humidity and pressure ~5 minutes after a trip/SI with no operator action indicates a <span class="hi-exam">PZR Safety Valve failed open → PRT rupture disk ruptures → saturated steam vented to containment</span>. An RCP #1 seal failure would show as rising RCDT level (closed system), not in containment. See [[Pressurizer & PRT]].
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q32</div>
@@ -93,8 +131,8 @@ PRT rupture disk relief to containment raises containment pressure and temperatu
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q39</div>
-Containment High Pressure SI actuation: <span class="hi-exam"><span class="val-trip">4 psig</span> on 2/3 containment pressure channels</span>. This signal <span class="hi-exam">CANNOT be blocked</span> — unlike Low PZR Pressure SI and High Steam Flow SI which can be blocked via P-11 during cooldown per IOP-6. During a Mode 3 cooldown with SI blocks in place, rapid depressurization of all SGs inside containment will raise containment pressure above 4 psig and actuate SI.
+<div class="callout-label">Exam — 2023 Q54</div>
+<span class="hi-exam">TS 3.6.1.4 requires containment internal pressure between -1.5 and +0.3 psig during Modes 1-4.</span> The upper limit (+0.3 psig) ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during a DBA (LOCA or steam line break). The lower limit (-1.5 psig) ensures the design negative pressure differential of <span class="val-trip">3.5 psig</span> is not exceeded. If outside limits, must restore within <span class="val-trip">1 hour</span>.
 </div>
 
 ## Containment Isolation System
@@ -107,6 +145,35 @@ Provides double barriers for each line penetrating containment. Automatic isolat
 - **Phase B** — initiated by High-High containment pressure (Containment Spray actuation). Closes remaining isolation valves.
 - **Containment Ventilation Isolation (CVI)** — closes containment purge isolation valves (VC1, VC4) AND pressure/vacuum relief valves (VC5, VC6).
 (UFSAR 6.3.2, 6.2.4)
+
+**Exam & operating coverage:**
+
+### Phase A & B Isolation Signals
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q65</div>
+A valid RMS-initiated Containment Ventilation Isolation (CVI) signal <span class="hi-exam">closes the VC1, VC4, VC5, VC6 isolation dampers and the Pressure Relief and Vacuum Relief Dampers</span>. During a containment vacuum relief in progress (2VC5, 2VC6 and Vacuum Relief Damper open), a CVI <span class="hi-exam">shuts 2VC5, 2VC6 AND the Vacuum Relief Damper</span>. <span class="hi-trap">The CVI can be blocked to permit the relief only if it is present before commencing the relief — it is NOT blocked in the stem conditions because it occurs after vacuum relief was started, so the dampers shut.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q41</div>
+The <span class="hi-exam">Containment High Pressure SI (≥<span class="val-trip">4 psig</span>, 2/3 channels) cannot be blocked</span> and is active in all modes. During a return-to-service heatup with the Low PZR Pressure SI still blocked (&lt;1915 psig), a large RCS leak (2000 gpm) raises containment pressure above 4 psig — that is the signal that actually produces the automatic SI.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q65</div>
+ALL containment penetrations not supporting ECCS are isolated by the <span class="hi-exam">Phase B containment isolation</span>, which requires containment pressure above <span class="val-trip">15 psig</span>. A <span class="hi-exam">Main Steamline rupture in containment with MSLI failure</span> causes all SGs to blow down and drives containment pressure above 15 psig. <span class="hi-trap">Phase A (at <span class="val-trip">4 psig</span>) isolates non-essential penetrations; Phase B isolates the remaining non-ECCS penetrations. An R11A monitor failing high causes only a Containment Vent Isolation (part of, not all of, the non-essential isolation). A RCP #1 seal failure routes to the seal return system and does not cause an SI; a PORV failing open eventually fails the PRT rupture disc but the flow is insufficient to reach 15 psig.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+<span class="hi-exam">Phase A isolation occurs on any SI signal</span> (which would occur by 4 psig in containment if not sooner); <span class="hi-exam">Containment Ventilation isolation occurs on any SI, RMS alarm of associated monitors, or Phase B</span>. Both have already actuated before containment pressure reaches 12 psig during a LOCA. See [[Main Steam]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q39</div>
+Containment High Pressure SI actuation: <span class="hi-exam"><span class="val-trip">4 psig</span> on 2/3 containment pressure channels</span>. This signal <span class="hi-exam">CANNOT be blocked</span> — unlike Low PZR Pressure SI and High Steam Flow SI which can be blocked via P-11 during cooldown per IOP-6. During a Mode 3 cooldown with SI blocks in place, rapid depressurization of all SGs inside containment will raise containment pressure above 4 psig and actuate SI.
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q55</div>
@@ -121,7 +188,43 @@ Phase A containment isolation valves: <span class="hi-exam">CC113 and CC215 (Exc
 Manually initiating <span class="hi-exam">Phase B and Spray Actuation</span> from the Control Room Console also actuates a Containment Ventilation Isolation (CVI) signal. CVI closes <span class="hi-exam">ALL purge AND pressure/vacuum relief valves: VC1, VC4, VC5, and VC6</span>. <span class="hi-trap">Phase A Isolation does NOT generate a CVI signal. CVI closes all four valves (VC1, 4, 5, 6) — not just the purge isolation valves (VC1, 4).</span>
 </div>
 
+### Control Air Isolation (CA330)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q27</div>
+CA330 (Control Air Isolation Valve) operability: IAW <span class="hi-exam">LCO 3.6.3, CA330s are required to be OPERABLE in MODES 1-4 ONLY</span>. CA330s automatically close on <span class="hi-exam">Phase A Containment Isolation at <span class="val-trip">4 psig</span></span>. <span class="hi-trap">Trap: 15 psig is the Phase B setpoint — not the Phase A setpoint that closes the CA330s.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q52</div>
+<span class="hi-exam">CA330 Instrument Air Containment Isolation valves close on Phase A signal ONLY — NOT on SI or Phase B.</span> 21 CA330 supplies the 2A control air header; 22 CA330 supplies the 2B control air header. <span class="hi-exam">BOTH CA330s must be closed</span> to fully isolate instrument air to containment (each is in a separate air supply line with its own check valve). Backup air receivers inside containment provide PORV air supply during EOP actions.
+</div>
+
+### Containment Ventilation & Purge
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q93</div>
+Containment Purge reinstatement after temporary termination (per S2.OP-SO.WG-0006 P&amp;L 3.3): <span class="hi-exam">no new release form is required if termination was of short duration (~4 hours) AND containment radiological conditions have not changed</span>. <span class="hi-exam">Attachment 2 permits blocking the CVI signal</span> for reinstatement. A new effluent permit is not always required. <span class="hi-trap">12 hours / one shift is NOT the duration criterion; rad-condition assurance is required in addition to the duration check.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A3</div>
+Determine required actions when effluent monitors fail before a Containment Pressure Relief (S1.OP-SO.CBV-0002). With both channels (<span class="hi-exam">1R41A → D OR 1R12A</span>) inoperable, ODCM Table 3.3-13 Instrument #3 invokes <span class="hi-exam">Action 37</span>: the relief may proceed only if, prior to initiating, (a) at least two independent samples are analyzed AND (b) at least two technically qualified staff independently verify the release-rate calculations; otherwise suspend the release. P&amp;L 2.3 also directs notifying Chemistry to comply with the ODCM contingency actions before the relief.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 SRO-A2</div>
+IST containment ventilation valve surveillance review: <span class="hi-exam">2VC13 in REQUIRED ACTION RANGE</span> — declare inoperable, enter TS LCO 3.6.3 (4 hours to restore/isolate or begin shutdown). <span class="hi-exam">2VC12 in REQUIRED EVALUATION RANGE</span> — immediately retest or declare inoperable.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-h</div>
+Containment pressure relief: upon <span class="hi-exam">OHA A-6 (RMS HI RAD OR TRBL) alarm on 2R41D</span> with automatic isolation defeated, must <span class="hi-exam">manually close PRESSURE RELIEF DAMPER, 2VC6, and 2VC5</span> to isolate the radiological release.
+</div>
+
 ## Containment Air Locks
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q28</div>
@@ -135,14 +238,16 @@ IAW LCO 3.6.1.3 (Containment Air Locks), the containment airlock interlock mecha
 - Sump pH maintained 7.0–10.0 to minimize iodine re-evolution and chloride stress corrosion cracking
 (UFSAR 6.2.3)
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q27</div>
-CA330 (Control Air Isolation Valve) operability: IAW <span class="hi-exam">LCO 3.6.3, CA330s are required to be OPERABLE in MODES 1-4 ONLY</span>. CA330s automatically close on <span class="hi-exam">Phase A Containment Isolation at <span class="val-trip">4 psig</span></span>. <span class="hi-trap">Trap: 15 psig is the Phase B setpoint — not the Phase A setpoint that closes the CA330s.</span>
+<div class="callout-label">Exam — 2012 Q47</div>
+<span class="hi-exam">Both Containment Iodine Removal Units (IRUs) are powered from G and E non-vital 460VAC</span> (per Aux Building 460-230V one-lines 207916/207919). On a loss of offsite power the non-vital busses are de-energized, so <span class="hi-exam">NEITHER 11 nor 12 IRU is available</span> — the loading state of a vital bus (or its lockout) has no bearing on IRU operation. See [[460/230V AC]].
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q52</div>
-<span class="hi-exam">CA330 Instrument Air Containment Isolation valves close on Phase A signal ONLY — NOT on SI or Phase B.</span> 21 CA330 supplies the 2A control air header; 22 CA330 supplies the 2B control air header. <span class="hi-exam">BOTH CA330s must be closed</span> to fully isolate instrument air to containment (each is in a separate air supply line with its own check valve). Backup air receivers inside containment provide PORV air supply during EOP actions.
+<div class="callout-label">Exam — 2015 Q47</div>
+<span class="hi-exam">Containment Iodine Removal Units (IRUs) are powered from G and E non-vital 460VAC</span>; on a loss of offsite power neither 11 nor 12 IRU is available. See [[460/230V AC]].
 </div>
 
 <div class="callout callout-exam">
@@ -156,6 +261,38 @@ Containment Iodine Removal Units (IRUs): should only be placed in service when <
 - Hydrogen monitoring provided in containment
 - Hydrogen purge capability
 (UFSAR 6.2.5)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q48</div>
+Post-LOCA, H2 Recombiners are placed in service (per the EOPs) with containment H2 between 2-4% and use electric heating elements to raise containment-atmosphere temperature. <span class="hi-exam">As containment pressure rises at a constant power setting the recombiner becomes LESS effective; the power correction factor curve directs RAISING the power setpoint</span> (S2.OP-SO.CAN-0001). See [[S2.OP-SO.CAN-0001 — Hydrogen Recombiner Operation]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q32</div>
+Hydrogen recombiner reference powers: <span class="hi-exam">21 Recombiner = 43.68 KW, 22 Recombiner = 42.63 KW</span>. With CURRENT pressure 4.0 psig and PRIOR-to-LOCA temperature 90°F → Cp = 1.21 → 21 Recombiner power setting = 43.68 x 1.21 = 52.85 → rounded to <span class="hi-exam">54 KW</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q92</div>
+Per EOP-LOCA-1 Step 24, hydrogen concentration decision points: <span class="hi-exam">0.5% to 4.0% → start only ONE recombiner</span>. <span class="hi-exam">≥ 4.0% → consult TSC</span>. <span class="hi-trap">S2.OP-SO.CAN-0001 (normal operating procedure) starts two recombiners if H2 is 2.0% and rising. The EOP limits to one recombiner — do not confuse the two procedures.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q60</div>
+Hydrogen recombiner power setting calculation (per S2.OP-SO.CAN-0001): <span class="hi-exam">Power Setting = Cp (pressure correction factor) x Reference Power</span>. Use the <span class="hi-exam">CURRENT containment pressure</span> and the <span class="hi-exam">PRIOR-to-LOCA containment temperature</span> to select Cp from Attachment 2. Round up to the <span class="hi-exam">next higher setting readable on the meter</span>. Example: 22 Hydrogen Recombiner at 5 psig and 90F pre-LOCA: Cp=1.24, Ref Power=42.63 KW → 52.86 KW → rounded to <span class="hi-exam">54 KW</span>. <span class="hi-trap">Use pre-LOCA temperature (not current), and current pressure (not peak) for Cp selection.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q58</div>
+Hydrogen Recombiner System: per EOP-LOCA-1 step 17, <span class="hi-exam">only one hydrogen recombiner is allowed in service</span> when containment hydrogen concentration is between >0.5% and <4%. Operation of both hydrogen recombiners is not permitted. The purpose is to reduce hydrogen concentration to prevent formation of a flammable mixture that could ignite and cause a pressure excursion challenging containment integrity.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A1</div>
+EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free volume at STP: <span class="hi-exam">V = 2.62E06 x Tfact</span> where Tfact = 492/Tabs. At 140F containment temp: Tabs = 600R, Tfact = 0.82, V = 2148400 ft3. Maximum allowable hydrogen concentration is <span class="hi-exam">3.0%</span> — vent volume limited to (3.0% - current H2%) x V / 100%.
+</div>
 
 ## Engineered Safety Features Summary
 
@@ -176,54 +313,11 @@ Containment Iodine Removal Units (IRUs): should only be placed in service when <
 - **[[TS 3/4.6 — Containment|TS 3/4.6.4]]** — Combustible Gas Control
 - **[[TS 3/4.6 — Containment|TS 3/4.6.5]]** — Containment Structural Integrity
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q58</div>
-Hydrogen Recombiner System: per EOP-LOCA-1 step 17, <span class="hi-exam">only one hydrogen recombiner is allowed in service</span> when containment hydrogen concentration is between >0.5% and <4%. Operation of both hydrogen recombiners is not permitted. The purpose is to reduce hydrogen concentration to prevent formation of a flammable mixture that could ignite and cause a pressure excursion challenging containment integrity.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q92</div>
-Per EOP-LOCA-1 Step 24, hydrogen concentration decision points: <span class="hi-exam">0.5% to 4.0% → start only ONE recombiner</span>. <span class="hi-exam">≥ 4.0% → consult TSC</span>. <span class="hi-trap">S2.OP-SO.CAN-0001 (normal operating procedure) starts two recombiners if H2 is 2.0% and rising. The EOP limits to one recombiner — do not confuse the two procedures.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q32</div>
-Hydrogen recombiner reference powers: <span class="hi-exam">21 Recombiner = 43.68 KW, 22 Recombiner = 42.63 KW</span>. With CURRENT pressure 4.0 psig and PRIOR-to-LOCA temperature 90°F → Cp = 1.21 → 21 Recombiner power setting = 43.68 x 1.21 = 52.85 → rounded to <span class="hi-exam">54 KW</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q60</div>
-Hydrogen recombiner power setting calculation (per S2.OP-SO.CAN-0001): <span class="hi-exam">Power Setting = Cp (pressure correction factor) x Reference Power</span>. Use the <span class="hi-exam">CURRENT containment pressure</span> and the <span class="hi-exam">PRIOR-to-LOCA containment temperature</span> to select Cp from Attachment 2. Round up to the <span class="hi-exam">next higher setting readable on the meter</span>. Example: 22 Hydrogen Recombiner at 5 psig and 90F pre-LOCA: Cp=1.24, Ref Power=42.63 KW → 52.86 KW → rounded to <span class="hi-exam">54 KW</span>. <span class="hi-trap">Use pre-LOCA temperature (not current), and current pressure (not peak) for Cp selection.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q63</div>
-Fire Protection Containment Isolation (2FP147): on a valid fire detected inside containment (Zones 59 and 74 on 2RP5), <span class="hi-trap">2FP147 must be manually opened from the 2RP5 panel — it does NOT automatically open</span>. However, <span class="hi-exam">2FP147 WILL automatically close on a Phase A containment isolation signal</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q75</div>
-Confirms 2FP147 containment fire response sequence: after OHA A-7 and 2RP5 indicate fire in containment (Zone 59 and Zone 74 lit), crew trips Reactor, Turbine, and all RCPs, enters EOP-TRIP-1. <span class="hi-exam">NEXT action per AB.FIRE-0001 is to OPEN 2FP147 from the control room.</span> Fire pumps start only after 2FP147 is opened. Containment deluge valves are automatic. <span class="hi-trap">PORV BLOCK valve EMER CLOSE is the relay room fire response, not containment fire.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam -- 2023 Q95</div>
-FHB BLDG AIR D/P LO alarm during fuel moves: per S2.OP-AR.ZZ-0011, the <span class="hi-exam">FIRST action is to suspend movement of irradiated fuel assemblies</span>, THEN validate the alarm using the local indicator. If the alarm is invalid and will not clear, per S2.OP-IO.ZZ-0010, the <span class="hi-exam">local indicator MAY be used to continuously monitor FHB D/P</span> as a compensatory measure -- fuel moves may resume with continuous local monitoring. <span class="hi-trap">Trap: validating the alarm is performed AFTER suspending fuel moves, not before.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam -- 2023 Q100</div>
-Fire protection: with both Salem fire pumps inoperable, per AB.FP-0001: <span class="hi-exam">open backup fire suppression water supply cross-tie valves from Hope Creek</span>. If cross-tie cannot be established within <span class="hi-exam">24 hours</span>, unit must be in <span class="hi-exam">Hot Standby within 6 hours</span>, then Hot Shutdown within the following 6 hours, then Cold Shutdown within the subsequent 24 hours.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 SRO-A2</div>
-IST containment ventilation valve surveillance review: <span class="hi-exam">2VC13 in REQUIRED ACTION RANGE</span> — declare inoperable, enter TS LCO 3.6.3 (4 hours to restore/isolate or begin shutdown). <span class="hi-exam">2VC12 in REQUIRED EVALUATION RANGE</span> — immediately retest or declare inoperable.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 Sim-h</div>
-Containment pressure relief: upon <span class="hi-exam">OHA A-6 (RMS HI RAD OR TRBL) alarm on 2R41D</span> with automatic isolation defeated, must <span class="hi-exam">manually close PRESSURE RELIEF DAMPER, 2VC6, and 2VC5</span> to isolate the radiological release.
+<div class="callout-label">Exam — 2015 Q65</div>
+Containment Integrity (TS 3.6.1.1) surveillance 4.6.1.1.d invokes the CFCU surveillance (4.6.2.3.a), which includes <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — so a SW Accumulator nitrogen cover-gas pressure below minimum makes Containment Integrity NOT met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified by Admin controls (4.6.1.1.a); opening the airlock for transit is allowed; and CIVs have their own less-restrictive TS 3.6.3, not in the 3.6.1.1 surveillances.</span> See [[CFCUs]], [[TS 3/4.6 — Containment]].
 </div>
 
 ## Fire Protection
@@ -234,6 +328,23 @@ Containment pressure relief: upon <span class="hi-exam">OHA A-6 (RMS HI RAD OR T
 - Safe shutdown capability analysis per 10CFR50 Appendix R
 - RCP oil collection system prevents fire spread from oil leaks
 (UFSAR 9.5.1)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q75</div>
+Confirms 2FP147 containment fire response sequence: after OHA A-7 and 2RP5 indicate fire in containment (Zone 59 and Zone 74 lit), crew trips Reactor, Turbine, and all RCPs, enters EOP-TRIP-1. <span class="hi-exam">NEXT action per AB.FIRE-0001 is to OPEN 2FP147 from the control room.</span> Fire pumps start only after 2FP147 is opened. Containment deluge valves are automatic. <span class="hi-trap">PORV BLOCK valve EMER CLOSE is the relay room fire response, not containment fire.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q63</div>
+Fire Protection Containment Isolation (2FP147): on a valid fire detected inside containment (Zones 59 and 74 on 2RP5), <span class="hi-trap">2FP147 must be manually opened from the 2RP5 panel — it does NOT automatically open</span>. However, <span class="hi-exam">2FP147 WILL automatically close on a Phase A containment isolation signal</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q100</div>
+Fire protection: with both Salem fire pumps inoperable, per AB.FP-0001: <span class="hi-exam">open backup fire suppression water supply cross-tie valves from Hope Creek</span>. If cross-tie cannot be established within <span class="hi-exam">24 hours</span>, unit must be in <span class="hi-exam">Hot Standby within 6 hours</span>, then Hot Shutdown within the following 6 hours, then Cold Shutdown within the subsequent 24 hours.
+</div>
 
 ## Adverse Containment Conditions
 
@@ -264,99 +375,20 @@ When adverse containment conditions exist, EOP setpoints for level instruments a
 With containment pressure at <span class="hi-exam">5 psig</span> (adverse conditions), the required SG NR level for RCP start in EOP-FRCC-1 is <span class="hi-exam">>= 15%</span> instead of the normal 9%. <span class="hi-trap">Trap: using normal containment criteria when adverse conditions exist will overestimate the number of available RCPs.</span>
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 RO-A1</div>
-EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free volume at STP: <span class="hi-exam">V = 2.62E06 x Tfact</span> where Tfact = 492/Tabs. At 140F containment temp: Tabs = 600R, Tfact = 0.82, V = 2148400 ft3. Maximum allowable hydrogen concentration is <span class="hi-exam">3.0%</span> — vent volume limited to (3.0% - current H2%) x V / 100%.
-</div>
+## Exam & Operating Coverage
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q93</div>
-Containment Purge reinstatement after temporary termination (per S2.OP-SO.WG-0006 P&amp;L 3.3): <span class="hi-exam">no new release form is required if termination was of short duration (~4 hours) AND containment radiological conditions have not changed</span>. <span class="hi-exam">Attachment 2 permits blocking the CVI signal</span> for reinstatement. A new effluent permit is not always required. <span class="hi-trap">12 hours / one shift is NOT the duration criterion; rad-condition assurance is required in addition to the duration check.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 RO-A1-1</div>
-Containment-sump auto pump-down provides the leak-detection signal used to quantify unidentified RCS leakage to containment. OHA C-2 CNTMT SUMP PMP START is the front-panel indication; the Aux typewriter logs sump-pump start/stop events. Per S2.OP-SO.RC-0004 §5.3, the elapsed time between successive sump-pump cycles is converted to a leak rate via Attachment 3. Action thresholds: 0.85 gpm (Section 5.6 trending) and 1.0 gpm (TS 3.4.7.2 unidentified-leakage LCO).
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 RO-A1-1</div>
-21 containment sump pump start (OHA C-2) at 0750 with previous stop 1510 yesterday → <span class="hi-exam">1000 minutes</span> between cycles → <span class="hi-exam">0.3 gpm</span> unidentified leakage to the sump. Below both 0.85 gpm and 1.0 gpm thresholds, so no action statement is entered.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #3</div>
-21 SG steam leak inside containment first cued by <span class="hi-exam">CFCU leak-detection alarms</span>: OHA <span class="hi-exam">C-38 CFCU LK DET HI</span>, then <span class="hi-exam">C-30 CFCU LK DET HI-HI</span>. Diagnostic indications of an in-containment steam leak: containment pressure rising; Tavg slowly lowering; rising steam flows on all loops; steam dump demand lowering. Crew enters AB.STM-0001. Containment pressure exceeds the <span class="hi-exam">15 psig Phase B/Spray setpoint</span>; both Containment Spray pumps fail to auto-start (CT#1 → manual start). After cooldown, when containment pressure is &lt;13 psig, RO resets Spray actuation, stops both CS pumps, and shuts 21 and 22CS2 CS pump discharge valves.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q27</div>
-<span class="hi-exam">Phase A isolation occurs on any SI signal</span> (which would occur by 4 psig in containment if not sooner); <span class="hi-exam">Containment Ventilation isolation occurs on any SI, RMS alarm of associated monitors, or Phase B</span>. Both have already actuated before containment pressure reaches 12 psig during a LOCA. See [[Main Steam]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q36</div>
-Rising containment humidity and pressure ~5 minutes after a trip/SI with no operator action indicates a <span class="hi-exam">PZR Safety Valve failed open → PRT rupture disk ruptures → saturated steam vented to containment</span>. An RCP #1 seal failure would show as rising RCDT level (closed system), not in containment. See [[Pressurizer & PRT]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q47</div>
-<span class="hi-exam">Containment Iodine Removal Units (IRUs) are powered from G and E non-vital 460VAC</span>; on a loss of offsite power neither 11 nor 12 IRU is available. See [[460/230V AC]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q48</div>
-Post-LOCA, H2 Recombiners are placed in service (per the EOPs) with containment H2 between 2-4% and use electric heating elements to raise containment-atmosphere temperature. <span class="hi-exam">As containment pressure rises at a constant power setting the recombiner becomes LESS effective; the power correction factor curve directs RAISING the power setpoint</span> (S2.OP-SO.CAN-0001). See [[S2.OP-SO.CAN-0001 — Hydrogen Recombiner Operation]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q65</div>
-Containment Integrity (TS 3.6.1.1) surveillance 4.6.1.1.d invokes the CFCU surveillance (4.6.2.3.a), which includes <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — so a SW Accumulator nitrogen cover-gas pressure below minimum makes Containment Integrity NOT met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified by Admin controls (4.6.1.1.a); opening the airlock for transit is allowed; and CIVs have their own less-restrictive TS 3.6.3, not in the 3.6.1.1 surveillances.</span> See [[CFCUs]], [[TS 3/4.6 — Containment]].
-</div>
+### Containment Entries
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q72</div>
 Containment entries are governed by SC.SA-ST.ZZ-0001 and RP-SA-102; the SM/CRS authorizes access. <span class="hi-exam">When power is being changed &gt;5%/hr, the Radiation Protection Supervisor (RPS) approval is also required</span> (Pre-req 2.4). See [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]], [[RP-SA-102 — Containment Entries at Power]].
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q41</div>
-The <span class="hi-exam">Containment High Pressure SI (≥<span class="val-trip">4 psig</span>, 2/3 channels) cannot be blocked</span> and is active in all modes. During a return-to-service heatup with the Low PZR Pressure SI still blocked (&lt;1915 psig), a large RCS leak (2000 gpm) raises containment pressure above 4 psig — that is the signal that actually produces the automatic SI.
-</div>
+### Fuel Handling Building
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q65</div>
-ALL containment penetrations not supporting ECCS are isolated by the <span class="hi-exam">Phase B containment isolation</span>, which requires containment pressure above <span class="val-trip">15 psig</span>. A <span class="hi-exam">Main Steamline rupture in containment with MSLI failure</span> causes all SGs to blow down and drives containment pressure above 15 psig. <span class="hi-trap">Phase A (at <span class="val-trip">4 psig</span>) isolates non-essential penetrations; Phase B isolates the remaining non-ECCS penetrations. An R11A monitor failing high causes only a Containment Vent Isolation (part of, not all of, the non-essential isolation). A RCP #1 seal failure routes to the seal return system and does not cause an SI; a PORV failing open eventually fails the PRT rupture disc but the flow is insufficient to reach 15 psig.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q35</div>
-During a multi-day loss of all AC power, as the RCS drains through the RCP seals, <span class="hi-exam">containment pressure rises only to ~3 psig and temperature by ~40°F</span>. <span class="hi-trap">Containment is NOT degraded and does not reach saturation conditions — it is designed for a LBLOCA in which all RCS mass is released, so long-term recovery is not affected.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q47</div>
-<span class="hi-exam">Both Containment Iodine Removal Units (IRUs) are powered from G and E non-vital 460VAC</span> (per Aux Building 460-230V one-lines 207916/207919). On a loss of offsite power the non-vital busses are de-energized, so <span class="hi-exam">NEITHER 11 nor 12 IRU is available</span> — the loading state of a vital bus (or its lockout) has no bearing on IRU operation. See [[460/230V AC]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q65</div>
-A valid RMS-initiated Containment Ventilation Isolation (CVI) signal <span class="hi-exam">closes the VC1, VC4, VC5, VC6 isolation dampers and the Pressure Relief and Vacuum Relief Dampers</span>. During a containment vacuum relief in progress (2VC5, 2VC6 and Vacuum Relief Damper open), a CVI <span class="hi-exam">shuts 2VC5, 2VC6 AND the Vacuum Relief Damper</span>. <span class="hi-trap">The CVI can be blocked to permit the relief only if it is present before commencing the relief — it is NOT blocked in the stem conditions because it occurs after vacuum relief was started, so the dampers shut.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q85</div>
-Following a LBLOCA with RCS pressure at 35 psig, a <span class="hi-exam">stable containment sump level reading (e.g., 46% on 2CC1) is NOT expected — the entire RCS contents are on the floor and sump level would have RISEN</span>. Containment radiation exceeding <span class="hi-exam">2000 R/hr adds 2 points from the containment barrier</span>, escalating an existing SAE to a General Emergency.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 SRO-A3</div>
-Determine required actions when effluent monitors fail before a Containment Pressure Relief (S1.OP-SO.CBV-0002). With both channels (<span class="hi-exam">1R41A → D OR 1R12A</span>) inoperable, ODCM Table 3.3-13 Instrument #3 invokes <span class="hi-exam">Action 37</span>: the relief may proceed only if, prior to initiating, (a) at least two independent samples are analyzed AND (b) at least two technically qualified staff independently verify the release-rate calculations; otherwise suspend the release. P&amp;L 2.3 also directs notifying Chemistry to comply with the ODCM contingency actions before the relief.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #1</div>
-During the LBLOCA, <span class="hi-exam">Phase B / Containment Spray actuation fails</span> and containment pressure rises. <span class="hi-exam">MSLI is initiated at 15 psig</span> and a CFST Containment Environment <span class="hi-exam">PURPLE path (containment pressure &gt; 15 psig)</span> drives [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]. The CFCUs are verified running in low speed.
+<div class="callout-label">Exam -- 2023 Q95</div>
+FHB BLDG AIR D/P LO alarm during fuel moves: per S2.OP-AR.ZZ-0011, the <span class="hi-exam">FIRST action is to suspend movement of irradiated fuel assemblies</span>, THEN validate the alarm using the local indicator. If the alarm is invalid and will not clear, per S2.OP-IO.ZZ-0010, the <span class="hi-exam">local indicator MAY be used to continuously monitor FHB D/P</span> as a compensatory measure -- fuel moves may resume with continuous local monitoring. <span class="hi-trap">Trap: validating the alarm is performed AFTER suspending fuel moves, not before.</span>
 </div>
 
 ## Connections

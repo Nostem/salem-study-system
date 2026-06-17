@@ -170,7 +170,12 @@ This is the exact prompt dispatched to one subagent per article. It is intention
 >    `**Exam & operating coverage:**` placed once above the group.
 > 5. Order within a group: exam → jpm → scenario; within each type ascending by year then
 >    question/JPM id.
-> 6. Orphans (no matching heading, or the article has no usable subsections): put them in one
+> 6. **Sub-group large groups.** If a subsection's coverage group exceeds ~8 callouts and the
+>    subsection is a broad bucket spanning multiple subtopics, split the group into `###`
+>    subtopic sub-clusters (each a `###` heading + its callouts in the rule-5 order). Never leave
+>    a relocated pile of 20–40 callouts under one undifferentiated lead-in. A coherent group of
+>    ≤8 callouts stays a single `**Exam & operating coverage:**` block with no sub-headings.
+> 7. Orphans (no matching heading, or the article has no usable subsections): put them in one
 >    `## Exam & Operating Coverage` section placed immediately ABOVE `## Connections`, grouped
 >    by subtopic with `###` sub-headings.
 >

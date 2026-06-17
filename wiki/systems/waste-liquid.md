@@ -24,14 +24,47 @@ Environmental monitoring program samples air, water, soil, vegetation, fish, and
 
 - **[[TS 3/4.11 — Radioactive Effluents]]** — Liquid effluent limits, monitoring
 
+**Exam & operating coverage:**
+
+### Release Operations
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q60</div>
+When Unit 2 releases a CVCS Monitor Tank via the cross-connect line to Unit 1 SW then Unit 2 CW, a high-radiation condition is terminated by the <span class="hi-exam">2WL51 (Unit 2 Liquid Radwaste Overboard Stop Valve) automatically shutting</span> — the initiating unit's flow passes through its OWN R18 monitor, which auto-closes 2WL51. <span class="hi-trap">Using the cross-connect does NOT route flow through the opposite unit's R18 monitor, so 1WL51 (not in the flowpath, not opened) will not close. 1WL115 is a normal locked-shut manual valve; 2WL115 is remotely operated but has no auto-close function.</span>
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q43</div>
 21 CVCS Monitor Tank release path per S2.OP-SO.WL-0001 is <span class="hi-exam">via SW to CW</span> (not SW only). <span class="hi-exam">2FR1064 (RADWASTE OVERBOARD DISCH FLOW RECORDER) must be OPERABLE</span> during the release — if 2FR1064 becomes inoperable, the crew is required to stop the release (per Step 5.5.8).
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q72</div>
+Direct release of CVCS Monitor Tank to Circulating Water System: requires <span class="hi-exam">rotation of a potentially contaminated spectacle flange outside the RCA</span>, which necessitates <span class="hi-exam">Radiation Protection support</span>. Other evolutions (hydrogen recombiner operation, gas decay tank release, containment pressure relief) do NOT require RP support as their controls are in the control room area.
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q61</div>
 Liquid Radwaste Release (CVCS Monitor Tank): release path through CC Heat Exchanger and CW system. <span class="hi-exam">Only one circulator is required to be in service to allow a release to continue.</span> The 1R18 radiation monitor does not isolate/close the 1WL51 overboard valve on loss of flow.
+</div>
+
+### Radiation Monitoring & Automatic Isolation
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q59</div>
+<span class="hi-exam">2R18 high-radiation ALARM setpoint (per S2.IC-CC.RM-0028) is 6.82E5 cps</span> and automatically closes <span class="hi-exam">2WL51 (Liquid Release Stop Valve)</span>. If 2R18 reads above setpoint (e.g., 10E6 cps with 104-panel red alarm light lit) and 2WL51 indicates OPEN, the auto-close failed; <span class="hi-exam">per S2.OP-SO.WL-0001 Step 5.5.9, the NEO informs the NCO and the NCO shuts 2WL51 remotely from the control room</span>. <span class="hi-trap">Trap: there is no procedural provision for the NEO to close 2WL51 locally; "block R-18 input on 2RP1 and continue the release" is also not authorized — the alarm reflects valid high activity, not a 2R18 failed-high condition.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q90</div>
+2R18 detector failure (fails LOW): <span class="hi-exam">WL51 will NOT automatically close</span> — only a HIGH alarm triggers WL51 closure. Per S2.OP-SO.WL-0001 (steps 2.3, 3.4, 3.5), if R18 is inoperable, <span class="hi-exam">FR1064 must remain OPERABLE AND two independent samples/calculations/lineups are required</span>. <span class="hi-trap">The release procedure is more restrictive than the ODCM — ODCM allows flow rate estimation with FR1064 inoperable, but the procedure prevents both R18 and FR1064 from being inoperable at the same time.</span>
+</div>
+
+### ODCM Compensatory Measures
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q99</div>
+Per S2.OP-SO.WL-0001: if <span class="hi-exam">2R18 (Waste Disposal Liquid Rad Monitor) is inoperable</span> (e.g., failed source check), the CRS CAN approve the release permit provided a <span class="hi-exam">second sample was drawn, analyzed, and calculations were second verified prior to the release</span>. The release does NOT require 2R18 to be repaired first. <span class="hi-trap">Trap: continuous effluent sampling throughout the discharge is NOT the compensatory action — the second independent sample/calculation is performed BEFORE the release, not during it.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -44,24 +77,24 @@ ODCM liquid effluent monitoring (3.3.8): <span class="hi-exam">loss of 2FR1064 f
 CVCS Monitor Tank release with 2R18 (Radioactive Liquid Effluent Monitor) inoperable: per S2.OP-SO.WL-0001, the <span class="hi-exam">SM/CRS authorizes the liquid radioactive waste release</span> (not the Radiation Protection Manager). Per ODCM 3.3.8 Action 26, with 2R18 inoperable: <span class="hi-exam">at least two independent samples must be analyzed and at least two technically qualified members of staff must independently verify release rate calculations and discharge line valving</span>. <span class="hi-trap">Trap: continuous surveys of discharge piping are performed for other reasons -- the ODCM requirement for inoperable 2R18 is two independent samples, not piping surveys.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q90</div>
-2R18 detector failure (fails LOW): <span class="hi-exam">WL51 will NOT automatically close</span> — only a HIGH alarm triggers WL51 closure. Per S2.OP-SO.WL-0001 (steps 2.3, 3.4, 3.5), if R18 is inoperable, <span class="hi-exam">FR1064 must remain OPERABLE AND two independent samples/calculations/lineups are required</span>. <span class="hi-trap">The release procedure is more restrictive than the ODCM — ODCM allows flow rate estimation with FR1064 inoperable, but the procedure prevents both R18 and FR1064 from being inoperable at the same time.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q72</div>
-Direct release of CVCS Monitor Tank to Circulating Water System: requires <span class="hi-exam">rotation of a potentially contaminated spectacle flange outside the RCA</span>, which necessitates <span class="hi-exam">Radiation Protection support</span>. Other evolutions (hydrogen recombiner operation, gas decay tank release, containment pressure relief) do NOT require RP support as their controls are in the control room area.
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 SRO-A3</div>
+Determine required actions when effluent monitors fail before three releases. The <span class="hi-exam">liquid release (11 CVCS Monitor Tank) has NO additional restriction</span> — neither the failed 1R12A (Containment Noble Gas) nor 1R41D (Plant Vent Release Rate) is in the liquid effluent pathway, so the release may proceed without compensatory actions. The trap is applying the gaseous-pathway ODCM Table 3.3-13 Actions (31/37) to the liquid release.
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 IP-k</div>
-Release of 21 CVCS MT via SW to CW per S2.OP-SO.WL-0001 Section 5.5: Maximum Release Rate <span class="hi-exam">45 gpm</span> (limited due to high activity content). Control flow using <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span> and <span class="hi-exam">21WR53 (MT RECIRC V)</span> — throttling 21WR53 CLOSED diverts more flow overboard. If <span class="hi-exam">2R18 Monitor ALARMS</span>, immediately direct NCO to <span class="hi-exam">CLOSE 2WL51 (LIQUID RELEASE STOP VALVE)</span>. Tank volume from S2.OP-TM.ZZ-0002: at 90% level, volume is approximately <span class="hi-exam">19500 gallons</span>.
+<div class="callout-label">JPM — 2012 Sim-h</div>
+Authorized liquid release from 21 CVCS Monitor Tank via SW to Unit 1 Circ Water (S2.OP-SO.WL-0001 Section 5.5): operator opens <span class="hi-exam">2WL51 (LIQUID RELEASE STOP VALVE)</span> at step 5.5.2 to commence the release. Alternate path — <span class="hi-exam">2R18 (Liquid Waste Disposal) reads high radiation (~1×10⁵ cps) and 2WL51 FAILS to automatically shut</span>; the operator recognizes OHA A-6 RMS HI RAD OR TRBL / CRT point 725, observes 2WL51 still open, and <span class="hi-exam">manually shuts 2WL51 (step 5.5.9)</span> to stop the release, then communicates 2WL51 status to the RWO and directs termination of the release.
 </div>
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2014 IP-k</div>
 Alternate-path release of 21 CVCS MT via SW to CW per S2.OP-SO.WL-0001 Section 5.5: Maximum Release Rate <span class="hi-exam">150 gpm</span>. Direct NCO to OPEN <span class="hi-exam">2WL51 (LIQUID RELEASE STOP VALVE)</span>; throttle open <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span>; when the max rate can't be reached, throttle CLOSED <span class="hi-exam">21WR53 (MT RECIRC V)</span> to raise discharge flow (reaches 55 gpm). During the release the <span class="hi-exam">2R18 monitor ALARMS (~10⁵ counts, RED HI RAD light lit)</span> — the operator must direct the NCO to CLOSE 2WL51 to terminate the release and notify the control room of the high-radiation condition. Dilution flow 200000 gpm; 2LIS-180 indicates 90%; tank initial level 19600 gallons.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 IP-k</div>
+Release of 21 CVCS Monitor Tank via SW to CW (S2.OP-SO.WL-0001, R28): Maximum Release Rate = <span class="hi-exam">45 gpm</span> (high curie content). <span class="hi-exam">2WR59</span> (MT PMPS OB STOP VALVE) located in Gas Stripper Feed Pump Room, 64 ft El. With 2WR59 fully open, flow only 5 gpm — throttle <span class="hi-exam">21WR53</span> (MT RECIRC STOP VALVE) closed to raise discharge flow. If flow exceeds 45 gpm, open 21WR53 to reduce. Tank volume from S2.OP-TM.ZZ-0002: at 90% level = <span class="hi-exam">19500 gallons</span>. Dilution Flow Rate = <span class="hi-exam">200000 gpm</span> (2 CW circulators x 100000). <span class="hi-exam">2R18 alarming at 105 cpm with High Radiation light</span> → direct NCO to CLOSE 2WL51 (LIQUID RELEASE STOP VALVE).
 </div>
 
 <div class="callout callout-jpm">
@@ -74,26 +107,18 @@ Place 11 CVCS Monitor Tank in recirculation per S1.OP-SO.WL-0001 Section 5.1 (Un
 Release path selection per S1.OP-SO.WL-0002: with Unit 2 circulators all OOS, 22 CCHX drained, and 12A Circulator C/T, candidate selects <span class="hi-exam">21 CCHX to 12A AND/OR 12B CW Pumps</span> as the release flow path for 12 CVCS Monitor Tank. Chemistry required minimum dilution flow of <span class="hi-exam">100000 gpm</span>. Key: must evaluate all available CCHXs and CW pump configurations to find a path with adequate dilution.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 IP-k</div>
+Release of 21 CVCS MT via SW to CW per S2.OP-SO.WL-0001 Section 5.5: Maximum Release Rate <span class="hi-exam">45 gpm</span> (limited due to high activity content). Control flow using <span class="hi-exam">2WR59 (MT PMPS OB STOP VALVE)</span> and <span class="hi-exam">21WR53 (MT RECIRC V)</span> — throttling 21WR53 CLOSED diverts more flow overboard. If <span class="hi-exam">2R18 Monitor ALARMS</span>, immediately direct NCO to <span class="hi-exam">CLOSE 2WL51 (LIQUID RELEASE STOP VALVE)</span>. Tank volume from S2.OP-TM.ZZ-0002: at 90% level, volume is approximately <span class="hi-exam">19500 gallons</span>.
+</div>
+
 ## Liquid Waste System Tanks
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q38</div>
-Of the Radioactive Liquid Waste System tanks (RCDT, WHUTs, Chemical Drain Tank, Auxiliary Building Sump Tank), <span class="hi-exam">ONLY the RCDT has a physical connection to the Waste Gas Compressor Header</span>. The RCDT cover gas is vented to the waste gas system for processing and holdup.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q99</div>
-Per S2.OP-SO.WL-0001: if <span class="hi-exam">2R18 (Waste Disposal Liquid Rad Monitor) is inoperable</span> (e.g., failed source check), the CRS CAN approve the release permit provided a <span class="hi-exam">second sample was drawn, analyzed, and calculations were second verified prior to the release</span>. The release does NOT require 2R18 to be repaired first. <span class="hi-trap">Trap: continuous effluent sampling throughout the discharge is NOT the compensatory action — the second independent sample/calculation is performed BEFORE the release, not during it.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2018 IP-k</div>
-Release of 21 CVCS Monitor Tank via SW to CW (S2.OP-SO.WL-0001, R28): Maximum Release Rate = <span class="hi-exam">45 gpm</span> (high curie content). <span class="hi-exam">2WR59</span> (MT PMPS OB STOP VALVE) located in Gas Stripper Feed Pump Room, 64 ft El. With 2WR59 fully open, flow only 5 gpm — throttle <span class="hi-exam">21WR53</span> (MT RECIRC STOP VALVE) closed to raise discharge flow. If flow exceeds 45 gpm, open 21WR53 to reduce. Tank volume from S2.OP-TM.ZZ-0002: at 90% level = <span class="hi-exam">19500 gallons</span>. Dilution Flow Rate = <span class="hi-exam">200000 gpm</span> (2 CW circulators x 100000). <span class="hi-exam">2R18 alarming at 105 cpm with High Radiation light</span> → direct NCO to CLOSE 2WL51 (LIQUID RELEASE STOP VALVE).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q59</div>
-<span class="hi-exam">2R18 high-radiation ALARM setpoint (per S2.IC-CC.RM-0028) is 6.82E5 cps</span> and automatically closes <span class="hi-exam">2WL51 (Liquid Release Stop Valve)</span>. If 2R18 reads above setpoint (e.g., 10E6 cps with 104-panel red alarm light lit) and 2WL51 indicates OPEN, the auto-close failed; <span class="hi-exam">per S2.OP-SO.WL-0001 Step 5.5.9, the NEO informs the NCO and the NCO shuts 2WL51 remotely from the control room</span>. <span class="hi-trap">Trap: there is no procedural provision for the NEO to close 2WL51 locally; "block R-18 input on 2RP1 and continue the release" is also not authorized — the alarm reflects valid high activity, not a 2R18 failed-high condition.</span>
+<div class="callout-label">Exam — 2012 Q60</div>
+Each RHR pump room has a sump for receiving room drains and leakage; <span class="hi-exam">each RHR pump room sump is pumped to the in-service Waste Hold Up Tank (WHUT)</span>. A leak on 21 RHR pump room cooler therefore shows up as <span class="hi-exam">rising level in the in-service WHUT</span>. <span class="hi-trap">The Aux Building Sump Tank collects floor drains from locations above it (located on 64'); the CVCS HUT receives recoverable CVCS-quality influent (not floor drains); the Laundry/Hot Shower/Chemical Drain Tank collects contaminated laundry, shower and decontamination-sink drains.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -102,23 +127,8 @@ A CC Surge Tank overflow <span class="hi-exam">contaminates the Waste Holdup Sys
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q60</div>
-When Unit 2 releases a CVCS Monitor Tank via the cross-connect line to Unit 1 SW then Unit 2 CW, a high-radiation condition is terminated by the <span class="hi-exam">2WL51 (Unit 2 Liquid Radwaste Overboard Stop Valve) automatically shutting</span> — the initiating unit's flow passes through its OWN R18 monitor, which auto-closes 2WL51. <span class="hi-trap">Using the cross-connect does NOT route flow through the opposite unit's R18 monitor, so 1WL51 (not in the flowpath, not opened) will not close. 1WL115 is a normal locked-shut manual valve; 2WL115 is remotely operated but has no auto-close function.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q60</div>
-Each RHR pump room has a sump for receiving room drains and leakage; <span class="hi-exam">each RHR pump room sump is pumped to the in-service Waste Hold Up Tank (WHUT)</span>. A leak on 21 RHR pump room cooler therefore shows up as <span class="hi-exam">rising level in the in-service WHUT</span>. <span class="hi-trap">The Aux Building Sump Tank collects floor drains from locations above it (located on 64'); the CVCS HUT receives recoverable CVCS-quality influent (not floor drains); the Laundry/Hot Shower/Chemical Drain Tank collects contaminated laundry, shower and decontamination-sink drains.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 SRO-A3</div>
-Determine required actions when effluent monitors fail before three releases. The <span class="hi-exam">liquid release (11 CVCS Monitor Tank) has NO additional restriction</span> — neither the failed 1R12A (Containment Noble Gas) nor 1R41D (Plant Vent Release Rate) is in the liquid effluent pathway, so the release may proceed without compensatory actions. The trap is applying the gaseous-pathway ODCM Table 3.3-13 Actions (31/37) to the liquid release.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 Sim-h</div>
-Authorized liquid release from 21 CVCS Monitor Tank via SW to Unit 1 Circ Water (S2.OP-SO.WL-0001 Section 5.5): operator opens <span class="hi-exam">2WL51 (LIQUID RELEASE STOP VALVE)</span> at step 5.5.2 to commence the release. Alternate path — <span class="hi-exam">2R18 (Liquid Waste Disposal) reads high radiation (~1×10⁵ cps) and 2WL51 FAILS to automatically shut</span>; the operator recognizes OHA A-6 RMS HI RAD OR TRBL / CRT point 725, observes 2WL51 still open, and <span class="hi-exam">manually shuts 2WL51 (step 5.5.9)</span> to stop the release, then communicates 2WL51 status to the RWO and directs termination of the release.
+<div class="callout-label">Exam — 2018 Q38</div>
+Of the Radioactive Liquid Waste System tanks (RCDT, WHUTs, Chemical Drain Tank, Auxiliary Building Sump Tank), <span class="hi-exam">ONLY the RCDT has a physical connection to the Waste Gas Compressor Header</span>. The RCDT cover gas is vented to the waste gas system for processing and holdup.
 </div>
 
 ## Connections

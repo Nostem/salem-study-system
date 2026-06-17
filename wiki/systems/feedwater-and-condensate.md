@@ -22,69 +22,35 @@ The feedwater system supplies heated feedwater from the condensate system to the
 - Feedwater temperature at full power: 432.8°F
 - SG level controlled by feedwater regulating valves
 
+**Exam & operating coverage:**
+
+### Feed Line Break
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q12</div>
 A large <span class="hi-exam">main feedwater line break depressurizes the SG (similar to a steam line break)</span>. Initial Tavg response (before automatic protective actions): a <span class="hi-exam">feed line break sends LESS cold feed into the SG → Tcold rises → Tavg RISES</span>, whereas a <span class="hi-exam">steam line break draws MORE steam → Tcold lowers → Tavg LOWERS</span>. <span class="hi-trap">Because an FLB depressurizes the SG like an SLB, the operator must use diverse/alternate indication to discern what is actually happening to the SG.</span>
 </div>
 
-## SG Level Control
-
-- **Below P-7 (low power):** Single-element control (SG level only)
-- **Above P-7 (at power):** Three-element control (steam flow, feed flow, SG level)
-(UFSAR 7.7.2.6)
-
-## Feedwater Isolation
-
-Actuated by:
-1. Safety Injection signal
-2. 2/3 Hi-Hi SG level (P-14) — trips all FW pumps, closes FW valves, trips turbine
-3. Low auctioneered Tavg AND reactor trip (P-4)
-
-Closes main FW control valves (fast closure), bypass valves, and inlet stop valves. (UFSAR T7.2-1)
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q37</div>
-21CN22 and 23CN22 (LP FW Heater Inlet Control Valves) spuriously close: <span class="hi-exam">2CN45 modulates open to maintain &lt;65 psid across 21 and 22 LP Heaters</span>. With CN45 modulated open (bypassing heaters), <span class="hi-exam">feedwater temperature lowers → reactor power rises</span> (cooler feedwater = positive reactivity from MTC). <span class="hi-exam">CN22 valves have indications ONLY in the Control Room — no controls</span>. The crew can NOT open 21CN22 or 23CN22 from the Control Room. <span class="hi-trap">Other CN valves (2CN45, 2CN47) CAN be operated from the Control Room — do not assume all CN valves have Control Room controls.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q8</div>
-High level in <span class="hi-exam">21A Low Pressure feedwater heater closes ONLY the associated 21CN22</span> inlet valve (not all three LP FW heater strings). With one LP FW heater string bypassed, <span class="hi-exam">cooler feedwater enters the reactor, raising actual reactor thermal power due to positive MTC effect</span>. NI power indication reads lower than actual because cooler moderator provides shielding to PR NIS. Reactor power should be determined from RCS delta-Ts, and turbine load reduced to prevent exceeding thermal power limits.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q42</div>
-BF19 (MFW Regulating Valve) fails fully OPEN → SG level rises → <span class="hi-exam">SG High Level Trip (P-14) actuates at 2/3 NR levels ≥<span class="val-trip">67%</span> on any one SG</span>. P-14 trips the main turbine, which causes an auto reactor trip AND actuates <span class="hi-exam">Feedwater Isolation</span> (closes all BF13s, BF19s, BF40s, trips both SGFPs, and trips the Main Turbine). Note: FW Interlock alone only closes the BF19s and BF40s — FW Isolation is the broader actuation.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q44</div>
-FW Isolation vs FW Interlock: <span class="hi-exam">SG Hi-Hi Level (P-14) triggers FW Isolation</span> — trips SGFPs AND closes BF13s, BF19s, BF40s, AND trips Main Turbine. <span class="hi-exam">FW Interlock (P-4, reactor trip + low Tavg) ONLY closes BF19s and BF40s</span> — does NOT trip SGFPs and does NOT close BF13s. <span class="hi-trap">FW Isolation is the broader actuation (trips pumps + closes all valves). FW Interlock is narrower (only closes regulating and bypass valves). Do not confuse the two.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q52</div>
-FW Interlock setpoint and function: <span class="hi-exam">Feedwater Interlock actuates when auctioneered hi Tave is less than <span class="val-alarm">554°F</span> AND at least one Reactor Trip and associated bypass breaker open</span>. This shuts the BF19s and BF40 Feed Reg Valves — preventing over-cooling of the RCS on an uncomplicated Rx trip. <span class="hi-exam">Feedwater Isolation actuates when 2/3 SG NR levels on 1/4 SGs reach <span class="val-trip">67%</span> OR on a SI signal</span>, and shuts BF19s, BF40s, BF13s, and trips the SGFPs. <span class="hi-trap">P-12 (3/4 RCS Tavgs &lt;<span class="val-alarm">543°F</span>, shuts Steam Dump valves) is NOT what prevents over-cooling on an uncomplicated Rx trip — steam dumps modulate to control Tavg at ~547°F so temp does not reach 543°F. P-10 (3/4 PRNIs &lt;10% power) blocks low-power Rx trips and is not related to over-cooling protection.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q81</div>
-A single SG NR channel failing high while a second channel on the same SG is out of service produces a <span class="hi-exam">2/3 P-14 (Hi-Hi SG level) on that one SG at NR &gt;67%</span>. P-14 <span class="hi-exam">trips the Main Turbine and both Main Feed pumps and actuates FW Isolation (shuts BF13s, BF19s, BF40s)</span>. <span class="hi-trap">At 45% power (below P-9 = 49%), the Main Turbine trip does NOT cause an auto reactor trip — the loss of both SGFPs is what drives the AB.CN-0001 directed reactor trip (power &gt;P-10 = 10%).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q51</div>
-FW Isolation from one SG &gt;67% NR with 21 SGFP already tripped (35% power): the high SG NR level in one SG initiates Feedwater Isolation, which trips both SGFPs. <span class="hi-exam">Normally, a trip of both SGFPs starts the MDAFW pumps ONLY (21 and 22) — but this auto-start does NOT occur when the SGFP signal is caused by a FW Isolation</span>. With initial power 35%, SG NR levels remain above the AFW pump auto-start level of <span class="val-alarm">9%</span>, so <span class="hi-exam">NO AFW pumps start IMMEDIATELY</span>. They will ALL start when SG NR levels are &lt;9%. If levels do not shrink low enough, EOP-TRIP-2 step 3 NO path (total AFW flow &lt;<span class="hi-exam">22E4 lbm/hr</span>) directs operators to <span class="hi-exam">start 21–23 AFW pumps as necessary to establish &gt;22E4 lbm/hr</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q45</div>
-SG program level above 20% power is <span class="hi-exam"><span class="val-normal">44% NR</span></span>. With SG NR level at 45% (above 44% program), BF19 (FW Bypass Regulating Valve) demand <span class="hi-exam">decreases</span> — digital FW system throttles BF19s closed to reduce feedwater flow and lower SG level to program. <span class="hi-trap">44% is the program setpoint above 20% power — do not confuse with 50% or other SG level setpoints.</span>
-</div>
-
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q13</div>
 Main feedwater line break vs steam line break: FW line break causes SG levels to <span class="hi-exam">lower FASTER</span> (direct loss of feedwater inventory). RCS cooldown is <span class="hi-exam">LESS than an equivalent steam line break</span> (loss of FW doesn't involve removal of latent heat as steam break does). FW break generates <span class="hi-exam">Low-Low SG Level reactor trip</span>; post-trip RCS Tavg rises due to decreased heat transfer in the affected SG.
+</div>
+
+### SGFP Operation and Trips
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q53</div>
+SG Feed Delta-P (the delta between feed pressure and SG pressure) is the controlled parameter for SGFP operation per S2.OP-SO.CN-0002 — it is <span class="hi-exam">controlled by adjusting SGFP speed and programmed on total % Steam Flow</span> (SGFP rpm is a result, not a setpoint). <span class="hi-exam">Minimum D/P is 50 psid from 0-15% steam flow; 100% D/P is 150 psid; at 40% steam flow the programmed SG Feed D/P is closest to 80 psid.</span> <span class="hi-trap">60 psid is the trap value from assuming a simple linear 0-100% scale.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q55</div>
+At ~8% power during a startup, the operating SGFP is placed on Main Steam supply prior to exceeding <span class="hi-exam">5% power (IOP-3 step 5.4.10)</span>. A spurious MSLI closes the MSIVs AND the <span class="hi-exam">MS18 bypass valves</span>, so the SGFP loses steam and coasts down (it does NOT trip). The MDAFW and TDAFW pumps then start when SG level drops to the <span class="val-trip">lo-lo level setpoint</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q17</div>
+SGFP suction pressure trip setpoints: <span class="hi-exam">SGFP trips when suction pressure &lt; <span class="val-trip">215 psig</span> for <span class="val-trip">10 seconds</span></span> (time-delayed trip). Instantaneous SGFP trip on low suction pressure at <span class="hi-exam">&lt; <span class="val-trip">190 psig</span></span> (no time delay). At 200 psig (between 190 and 215), the 10-second delay timer applies. After SGFP trip at >70% power, turbine runback to <span class="hi-exam"><span class="val-alarm">66%</span></span>. <span class="hi-trap">Trap: 50% is incorrect — each SGFP does NOT provide exactly 50% total flow. The 66% runback target confirms the SGFPs are not 50/50 load-shared.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -97,95 +63,14 @@ SGFP trip at >70% power — AB.CN-0001 immediate actions: MANUAL Main Turbine lo
 SGFP Turbine Overspeed Trip: <span class="hi-exam">SGFP turbines have an overspeed trip at <span class="val-trip">6080 rpm</span></span>. SGFP design capacity is <span class="val-normal">5500 rpm</span>. <span class="hi-trap">Do not confuse with Main Turbine overspeed trips: 108% = <span class="val-trip">1944 rpm</span> or 110% = <span class="val-trip">1980 rpm</span>. The SGFP turbine operates at much higher RPM than the Main Turbine.</span>
 </div>
 
-## Condenser and Condensate
-
-- Main condensers receive exhaust steam from turbine and steam dump
-- Condensate pumps deliver condensate through feedwater heaters to feedwater pumps
-- Condenser serves as heat sink for steam dump during load rejection
-(UFSAR 10.4)
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q93</div>
-Condensate pump trip at 100% power: <span class="hi-exam">2CN47 (23/24/25 Heater String Bypass valve) controls automatically to maintain SGFP suction pressure > <span class="val-normal">265 psig</span></span>. Per AB.CN-0001, open <span class="hi-exam">21-23 CN108 (Polisher Bypass Valves) if SGFP suction pressure < <span class="val-alarm">320 psig</span></span>. Power reduction per Attachment 2 to a maximum of <span class="hi-exam">85%</span>. <span class="hi-trap">265 psig is the CN47 auto-control setpoint, NOT the CN108 opening threshold. 75% is the IOP-4 third condensate pump start power level, NOT the AB.CN-0001 load reduction limit.</span>
-</div>
-
-## Tech Spec LCOs
-
-- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.3 (Auxiliary Feed Storage Tank), TS 3.7.13 (FW Isolation Valves)
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q60</div>
-CW waterbox tube leak alarms: a gross tube leak is confirmed by <span class="hi-exam">Dissolved Oxygen Hi, Condensate Pump Disch Sodium Hi, and Hotwell Outlet Conductivity Hi</span>. <span class="hi-trap">Hydrazine Lo is NOT expected from a CW tube leak</span> — river water intrusion does not impact hydrazine concentration.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q64</div>
-SGFP trip response: DEHC automatically initiates turbine runback at <span class="val-trip">200% per minute</span> to 66% power. <span class="hi-exam">2CN47 (23/24/25 Heater String Bypass valve) immediately opens</span> and the polisher is bypassed. <span class="hi-trap">Manual runback from the DEHC panel uses 15% per minute rate. On a condensate pump trip, 2CN47 only opens if SGFP suction pressure drops below <span class="val-alarm">320 psig</span>; on a SGFP trip, 2CN47 opens regardless of suction pressure.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q74</div>
-Condensate depression: the temperature difference between the condenser saturation temperature and the actual condensate temperature. <span class="hi-exam">Decreasing condensate depression (e.g., 5°F to 2°F) raises thermal efficiency</span> (hotter feedwater means SGs add less sensible heat) but moves the condensate pumps <span class="hi-exam">closer to cavitation</span> (less subcooling = less NPSH at pump suction).
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 Sim-e</div>
-EOP-FRHS-1 condensate pump feed: establish condensate flow to selected SG by opening <span class="hi-exam">BF40 (Main Feed Bypass Valve, locally)</span>, <span class="hi-exam">BF13 (Feed Water Isolation Valve)</span>, <span class="hi-exam">21 and 22 CN48 (Feed Pump Bypass Valves)</span>, and closing <span class="hi-exam">21 and 22 CN32 (Feed Pump Suction Valves)</span>. Verify condensate flow established with WR level rising.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 Sim-e</div>
-Loss of SGFP at >70% power: auto turbine runback <span class="hi-exam">fails</span>. Per AB.CN-0001 Step 2.3.1.B: manually initiate load reduction at DEHC panel — toggle <span class="hi-exam">%/HR to %/MIN</span>, set ramp rate to <span class="hi-exam">15%/min</span>, setter to <span class="hi-exam">66%</span>. Also: rods fail to insert in AUTO during downpower — take rods to MANUAL and insert at 48 steps/min to control Tavg.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q58</div>
-Ovation (ADFCS) steam pressure channel failure: Ovation uses <span class="hi-exam">one pressure channel from each SG (4 total) into a Medium Signal Select (MSS) algorithm</span>. If one SG steam pressure channel fails HIGH, the <span class="hi-exam">associated MS10 (atmospheric dump) loop switches to MANUAL</span> control (OHAs G-7 ADFCS Alternate Action and G-15 ADFCS TRBL). The MSS algorithm selects a good input for the remaining MS10 loops — <span class="hi-exam">other MS10s remain in AUTO</span>. <span class="hi-trap">A single pressure channel failure does NOT open the MS10 or cause ALL MS10s to swap to manual.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #3</div>
-Condensate recovery in EOP-FRHS-1 after loss of all AFW. Both SGFPs tripped due to auto SI following main turbine failure to trip. Crew resets SI/Phase A/Phase B, opens <span class="hi-exam">CA330s</span>. Selects one SG for depressurization to < <span class="hi-exam">575 psig</span> using MS10. Dispatches operator to open <span class="hi-exam">BF40 or BF19</span> (120 ft TGA). Opens <span class="hi-exam">BF13</span>, opens <span class="hi-exam">CN48 (SGFP bypass valves)</span>, closes <span class="hi-exam">CN32 (SGFP suction valves)</span>. Condensate flow established when SG pressure is around 600 psi. Validation note: approximately 10 minutes to depressurize via MS10, condensate flow visible at 5-6% WR rising.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q60</div>
-ADFCS (Ovation) SG NR Level Quality Alarm response: with <span class="hi-exam">two inputs in Quality Alarm (BAD) for one SG</span> (e.g., Channel I failed HIGH and Channel II failed LOW), the system initiates <span class="hi-exam">OHA G-7 (ADFCS ALTERNATE ACTION) and transfers BOTH BF19 and BF40 for that SG to MANUAL</span>. <span class="hi-trap">Only one channel failure = single Quality Alarm — no ADFCS Alternate Action. With TWO bad channels on the same SG, the ADFCS cannot determine a valid level and transfers BF19 and BF40 to MANUAL. SGFPs do NOT shift to MANUAL (that was the previous digital feed system design). Other SGs' controllers remain in AUTO.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q45</div>
-BF19 (Main FW Regulating Valves) on loss of all station air: <span class="hi-exam">BF19s start to close at <span class="val-alarm">80 psig</span> control air header pressure</span>. BF19s receive air from Unit 1 via redundant Lunkenheimer air panels, but on total loss of ALL station air, no backup supply is available. <span class="hi-trap">ECACs cannot supply BF19 CA headers due to a check valve isolating the turbine building headers.</span> Per AB.CA-0001 CAS: if both CA headers < 80 psig or BF19s closing with inability to control SG level → trip the reactor.
-</div>
-
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q44</div>
 On trip of both SGFPs, only the <span class="hi-exam">MDAFW pumps auto-start</span>. The TDAFW pump does NOT auto-start on SGFP trip — it requires <span class="hi-exam">2/3 Lo-Lo level in 2/4 SGs (14% NR)</span>, RCP bus undervoltage, or manual start. Per S2.OP-SO.CN-0002, a removed-from-service SGFP is placed in the tripped condition, satisfying half of the "trip of both SGFPs" auto-start logic.
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2020 #4</div>
-21 SGFP trips on high thrust bearing oil pressure at 2% power. CRS enters AB.CN-0001. PO reports first-out annunciator: thrust bearing oil pressure high trip locked in and will not clear. RO reduces reactor power to <4% by inserting control rods. AFW auto-start fails — crew manually starts motor-driven AFW pumps.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2020 #5</div>
-<span class="hi-exam">23BF19 feedwater reg valve fails closed</span> (ramped over 1 minute) at 85% power. OHA alarms: G-15 ADFCS TRBL, G-23 21/22 SGFP SPEED DEVIATION, 23 SG Program Setpoint Deviation. Manual control attempts unsuccessful. Both SGFPs trip on SI actuation following reactor trip — <span class="hi-exam">SGFPs NOT available during EOP-FRHS-1</span>. Condensate recovery path: open selected SG BF40 or BF19 locally (120 ft elevation TGA), open BF13, open <span class="hi-exam">21 and 22 CN48 (SGFP bypass valves)</span>, close <span class="hi-exam">21 and 22 CN32 (SGFP suction valves)</span>. Feed flow established when SG pressure depressurized to <575 psig.
-</div>
-
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q17</div>
-SGFP suction pressure trip setpoints: <span class="hi-exam">SGFP trips when suction pressure &lt; <span class="val-trip">215 psig</span> for <span class="val-trip">10 seconds</span></span> (time-delayed trip). Instantaneous SGFP trip on low suction pressure at <span class="hi-exam">&lt; <span class="val-trip">190 psig</span></span> (no time delay). At 200 psig (between 190 and 215), the 10-second delay timer applies. After SGFP trip at >70% power, turbine runback to <span class="hi-exam"><span class="val-alarm">66%</span></span>. <span class="hi-trap">Trap: 50% is incorrect — each SGFP does NOT provide exactly 50% total flow. The 66% runback target confirms the SGFPs are not 50/50 load-shared.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q89</div>
-Single Condensate pump trip with NO HDPs running and polisher in service: <span class="hi-exam">21A Condenser hotwell level RISES</span> because condensing continues even though the pump is OOS. <span class="hi-exam">21-23 CN108 (Polisher Bypass Valves) do NOT automatically open</span> on low SGFP suction pressure — operator action per AB.CN-0001 directs opening when SGFP suction lowers &lt;<span class="val-alarm">320 psig</span>. <span class="hi-exam">2CN47 (23/24/25 Heater Strings Bypass) auto-opens on a SGFP trip ONLY (not on a CP trip)</span>; in AB.CN, CN47 is directed to open AFTER CN108s, since CN108 opening is expected to restore suction pressure above the CN47 threshold. Power reduction with 2 CPs running and no HDPs running per AB.CN-0001 Att 2 = <span class="hi-exam"><span class="val-alarm">65%</span> or less</span>. <span class="hi-trap">Trap: 30% applies to a different pump configuration — not 2 CPs running with no HDP.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #2</div>
-23 Condensate pump trip at 89.4% power. Cue: 23 Condensate pump trip annunciation; no SGFP tripped. PO bypasses condensate polisher by opening <span class="hi-exam">21 thru 23 CN108</span> if SGFP suction pressure is &lt;<span class="hi-exam">320 psig</span>. CRS directs <span class="hi-exam">2CN47</span> opened if suction pressure remains &lt;320 psig; PO isolates letdown by closing 21-24BG4 and 21-24GB185 once 2CN47 is open. Power reduction to <span class="hi-exam">85% at ~5%/min</span> with 2 Condensate pumps and 3 Heater Drain pumps in service IAW AB.CN-0001 Attachment 4 (and AB.LOAD-0001).
+<div class="callout-label">Exam — 2023 Q64</div>
+SGFP trip response: DEHC automatically initiates turbine runback at <span class="val-trip">200% per minute</span> to 66% power. <span class="hi-exam">2CN47 (23/24/25 Heater String Bypass valve) immediately opens</span> and the polisher is bypassed. <span class="hi-trap">Manual runback from the DEHC panel uses 15% per minute rate. On a condensate pump trip, 2CN47 only opens if SGFP suction pressure drops below <span class="val-alarm">320 psig</span>; on a SGFP trip, 2CN47 opens regardless of suction pressure.</span>
 </div>
 
 <div class="callout callout-jpm">
@@ -194,8 +79,69 @@ Single Condensate pump trip with NO HDPs running and polisher in service: <span 
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 Sim-h</div>
-<span class="hi-exam">21–24BF19 (SG Feedwater Regulating Valves) start to close at ≈ 80 psig control air header pressure</span>. Per AB.CA-0001 CAS Step 6.0: "If ANY BF19 SG FW CONT VALVE closes AND Applicable SG water level CANNOT be maintained, THEN: Trip the Reactor; continue with this procedure; go to 2-EOP-TRIP-1." The applicant must <span class="hi-exam">manually trip the reactor BEFORE the auto-trip on lo-lo SG NR level</span> when BF19 closure prevents level control. Approximate timeline (from RT-1 / first SAC trip): 6:30 — 21–24BF19 begin closing; 7:10 — G-15 OHA ADFCS TRBL.
+<div class="callout-label">JPM — 2022 Sim-e</div>
+Loss of SGFP at >70% power: auto turbine runback <span class="hi-exam">fails</span>. Per AB.CN-0001 Step 2.3.1.B: manually initiate load reduction at DEHC panel — toggle <span class="hi-exam">%/HR to %/MIN</span>, set ramp rate to <span class="hi-exam">15%/min</span>, setter to <span class="hi-exam">66%</span>. Also: rods fail to insert in AUTO during downpower — take rods to MANUAL and insert at 48 steps/min to control Tavg.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+21 SGFP trips on high thrust bearing oil pressure at 2% power. CRS enters AB.CN-0001. PO reports first-out annunciator: thrust bearing oil pressure high trip locked in and will not clear. RO reduces reactor power to <4% by inserting control rods. AFW auto-start fails — crew manually starts motor-driven AFW pumps.
+</div>
+
+## SG Level Control
+
+- **Below P-7 (low power):** Single-element control (SG level only)
+- **Above P-7 (at power):** Three-element control (steam flow, feed flow, SG level)
+(UFSAR 7.7.2.6)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q50</div>
+On a second 11 SG NR level channel failure (one already in calibration), the <span class="hi-exam">11BF19 and 11BF40 feed reg/bypass valves swap to manual; the SGFPs do NOT swap</span>. The frozen manual demand then exceeds the falling feed requirement during a downpower, overfeeding 11 SG (level higher than program). See [[Steam Generator & Blowdown]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q60</div>
+ADFCS (Ovation) SG NR Level Quality Alarm response: with <span class="hi-exam">two inputs in Quality Alarm (BAD) for one SG</span> (e.g., Channel I failed HIGH and Channel II failed LOW), the system initiates <span class="hi-exam">OHA G-7 (ADFCS ALTERNATE ACTION) and transfers BOTH BF19 and BF40 for that SG to MANUAL</span>. <span class="hi-trap">Only one channel failure = single Quality Alarm — no ADFCS Alternate Action. With TWO bad channels on the same SG, the ADFCS cannot determine a valid level and transfers BF19 and BF40 to MANUAL. SGFPs do NOT shift to MANUAL (that was the previous digital feed system design). Other SGs' controllers remain in AUTO.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q45</div>
+SG program level above 20% power is <span class="hi-exam"><span class="val-normal">44% NR</span></span>. With SG NR level at 45% (above 44% program), BF19 (FW Bypass Regulating Valve) demand <span class="hi-exam">decreases</span> — digital FW system throttles BF19s closed to reduce feedwater flow and lower SG level to program. <span class="hi-trap">44% is the program setpoint above 20% power — do not confuse with 50% or other SG level setpoints.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q58</div>
+Ovation (ADFCS) steam pressure channel failure: Ovation uses <span class="hi-exam">one pressure channel from each SG (4 total) into a Medium Signal Select (MSS) algorithm</span>. If one SG steam pressure channel fails HIGH, the <span class="hi-exam">associated MS10 (atmospheric dump) loop switches to MANUAL</span> control (OHAs G-7 ADFCS Alternate Action and G-15 ADFCS TRBL). The MSS algorithm selects a good input for the remaining MS10 loops — <span class="hi-exam">other MS10s remain in AUTO</span>. <span class="hi-trap">A single pressure channel failure does NOT open the MS10 or cause ALL MS10s to swap to manual.</span>
+</div>
+
+## Feedwater Isolation
+
+Actuated by:
+1. Safety Injection signal
+2. 2/3 Hi-Hi SG level (P-14) — trips all FW pumps, closes FW valves, trips turbine
+3. Low auctioneered Tavg AND reactor trip (P-4)
+
+Closes main FW control valves (fast closure), bypass valves, and inlet stop valves. (UFSAR T7.2-1)
+
+**Exam & operating coverage:**
+
+### Isolation Actuation and Interlock
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q81</div>
+A single SG NR channel failing high while a second channel on the same SG is out of service produces a <span class="hi-exam">2/3 P-14 (Hi-Hi SG level) on that one SG at NR &gt;67%</span>. P-14 <span class="hi-exam">trips the Main Turbine and both Main Feed pumps and actuates FW Isolation (shuts BF13s, BF19s, BF40s)</span>. <span class="hi-trap">At 45% power (below P-9 = 49%), the Main Turbine trip does NOT cause an auto reactor trip — the loss of both SGFPs is what drives the AB.CN-0001 directed reactor trip (power &gt;P-10 = 10%).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q54</div>
+On an uncomplicated manual Rx trip from 100% power, RCS over-cooling is prevented by the <span class="hi-exam">Feedwater Interlock</span> (3/4 RCS Tavgs &lt;554°F AND ≥1 Reactor Trip and bypass breaker open), which shuts the BF19's and BF40 Feed Reg Valves. <span class="hi-trap">P-12 (Tavg &lt;543°F) does NOT actuate — steam dumps modulate to hold Tavg ~547°F; P-10 (PRNIs &lt;10%) only blocks low-power Rx trips; Feedwater Isolation does not occur on an uncomplicated trip.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q92</div>
+If the <span class="hi-exam">Feedwater Interlock (FWI) fails to actuate</span> after a Rx trip from 100% power, the BF19s and BF40s are NOT shut, so the <span class="hi-exam">still-running SGFPs continue to supply Main Feed</span> to the low-NR-level SGs — causing <span class="hi-exam">excessive cooldown / overfeed of the SGs</span>. (Recall the FWI is a 2/2 interlock: auctioneered hi Tave &lt;554&deg;F AND Rx Trip Breakers open / P-4.) The corrective action is to <span class="hi-exam">trip both SGFPs early in [[EOP-TRIP-2 — Reactor Trip Response]] after verifying adequate [[AFW]] flow</span>. <span class="hi-trap">SI is NOT warranted — the RCS pressure transient is steady and slow; cavitation of the Condensate Pumps is only a secondary plausibility, not the primary consequence.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -204,48 +150,35 @@ Single Condensate pump trip with NO HDPs running and polisher in service: <span 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q50</div>
-On a second 11 SG NR level channel failure (one already in calibration), the <span class="hi-exam">11BF19 and 11BF40 feed reg/bypass valves swap to manual; the SGFPs do NOT swap</span>. The frozen manual demand then exceeds the falling feed requirement during a downpower, overfeeding 11 SG (level higher than program). See [[Steam Generator & Blowdown]].
+<div class="callout-label">Exam — 2016 Q51</div>
+FW Isolation from one SG &gt;67% NR with 21 SGFP already tripped (35% power): the high SG NR level in one SG initiates Feedwater Isolation, which trips both SGFPs. <span class="hi-exam">Normally, a trip of both SGFPs starts the MDAFW pumps ONLY (21 and 22) — but this auto-start does NOT occur when the SGFP signal is caused by a FW Isolation</span>. With initial power 35%, SG NR levels remain above the AFW pump auto-start level of <span class="val-alarm">9%</span>, so <span class="hi-exam">NO AFW pumps start IMMEDIATELY</span>. They will ALL start when SG NR levels are &lt;9%. If levels do not shrink low enough, EOP-TRIP-2 step 3 NO path (total AFW flow &lt;<span class="hi-exam">22E4 lbm/hr</span>) directs operators to <span class="hi-exam">start 21–23 AFW pumps as necessary to establish &gt;22E4 lbm/hr</span>.
 </div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q52</div>
+FW Interlock setpoint and function: <span class="hi-exam">Feedwater Interlock actuates when auctioneered hi Tave is less than <span class="val-alarm">554°F</span> AND at least one Reactor Trip and associated bypass breaker open</span>. This shuts the BF19s and BF40 Feed Reg Valves — preventing over-cooling of the RCS on an uncomplicated Rx trip. <span class="hi-exam">Feedwater Isolation actuates when 2/3 SG NR levels on 1/4 SGs reach <span class="val-trip">67%</span> OR on a SI signal</span>, and shuts BF19s, BF40s, BF13s, and trips the SGFPs. <span class="hi-trap">P-12 (3/4 RCS Tavgs &lt;<span class="val-alarm">543°F</span>, shuts Steam Dump valves) is NOT what prevents over-cooling on an uncomplicated Rx trip — steam dumps modulate to control Tavg at ~547°F so temp does not reach 543°F. P-10 (3/4 PRNIs &lt;10% power) blocks low-power Rx trips and is not related to over-cooling protection.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q44</div>
+FW Isolation vs FW Interlock: <span class="hi-exam">SG Hi-Hi Level (P-14) triggers FW Isolation</span> — trips SGFPs AND closes BF13s, BF19s, BF40s, AND trips Main Turbine. <span class="hi-exam">FW Interlock (P-4, reactor trip + low Tavg) ONLY closes BF19s and BF40s</span> — does NOT trip SGFPs and does NOT close BF13s. <span class="hi-trap">FW Isolation is the broader actuation (trips pumps + closes all valves). FW Interlock is narrower (only closes regulating and bypass valves). Do not confuse the two.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q42</div>
+BF19 (MFW Regulating Valve) fails fully OPEN → SG level rises → <span class="hi-exam">SG High Level Trip (P-14) actuates at 2/3 NR levels ≥<span class="val-trip">67%</span> on any one SG</span>. P-14 trips the main turbine, which causes an auto reactor trip AND actuates <span class="hi-exam">Feedwater Isolation</span> (closes all BF13s, BF19s, BF40s, trips both SGFPs, and trips the Main Turbine). Note: FW Interlock alone only closes the BF19s and BF40s — FW Isolation is the broader actuation.
+</div>
+
+### BF19 Closure, Loss of Air, and Post-Isolation
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q52</div>
 After a P-14 (Feedwater Isolation) clears, a SGFP can be relatched (S2.OP-SO.CN-0007), but <span class="hi-trap">if SGFP speed was &gt;160 rpm when the latch pushbutton was depressed, the pump will NOT automatically ramp to minimum (1100 rpm idle) speed</span>. The P-14 has no seal-in (it clears when SG level drops below setpoint); the ENABLE/DISABLE switch in DISABLE only removes ADFWCS speed control. See [[S2.OP-SO.CN-0007 — SGFP Prompt Recovery]], [[RPS/SSPS]].
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #3</div>
-With 23 Condensate pump already CIT (only two Condensate pumps in service), the loss of a second (22) Condensate pump causes <span class="hi-exam">SGFP suction pressure to rapidly and irreversibly lower</span> until both SGFPs trip on low suction pressure. With no SGFP operating &gt;P-10, the crew performs a <span class="hi-exam">manual reactor trip</span>. SGFPs remain unavailable for recovery because there is no SW flow to the TGA (turbine generator area) coolers, so secondary heat sink can only be restored later via direct Condensate System flow to a depressurized SG (FRHS-1 Step 20 path).
-</div>
-
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q54</div>
-At 85% power with all Condensate/HDT pumps and the polisher in service, an 11 Condensate Pump trip causes <span class="hi-exam">SGFP suction pressure to lower</span>. <span class="hi-trap">The 11-13CN108 (Polisher Bypass) valves open on a SGFP trip, not a condensate pump trip. The 1CN47 (13/14/15 Heater Strings Bypass) auto-opens at <span class="val-alarm">265 psig</span>, which is not reached. Per Q=m▲T the reduced feed flow makes feed temperature entering the SGs RISE, not lower.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q55</div>
-At ~8% power during a startup, the operating SGFP is placed on Main Steam supply prior to exceeding <span class="hi-exam">5% power (IOP-3 step 5.4.10)</span>. A spurious MSLI closes the MSIVs AND the <span class="hi-exam">MS18 bypass valves</span>, so the SGFP loses steam and coasts down (it does NOT trip). The MDAFW and TDAFW pumps then start when SG level drops to the <span class="val-trip">lo-lo level setpoint</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q92</div>
-If the <span class="hi-exam">Feedwater Interlock (FWI) fails to actuate</span> after a Rx trip from 100% power, the BF19s and BF40s are NOT shut, so the <span class="hi-exam">still-running SGFPs continue to supply Main Feed</span> to the low-NR-level SGs — causing <span class="hi-exam">excessive cooldown / overfeed of the SGs</span>. (Recall the FWI is a 2/2 interlock: auctioneered hi Tave &lt;554&deg;F AND Rx Trip Breakers open / P-4.) The corrective action is to <span class="hi-exam">trip both SGFPs early in [[EOP-TRIP-2 — Reactor Trip Response]] after verifying adequate [[AFW]] flow</span>. <span class="hi-trap">SI is NOT warranted — the RCS pressure transient is steady and slow; cavitation of the Condensate Pumps is only a secondary plausibility, not the primary consequence.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2014 #2</div>
-With <span class="hi-exam">all AFW pumps failed and the SGFPs unavailable</span> after a reactor trip, the crew uses the Condensate system as the alternate heat-sink feed source — performing a <span class="hi-exam">Condensate pump recovery in FRHS-1</span> to establish feed flow into a SG before RCS Bleed and Feed is required (CT#2). Demonstrates the Condensate system as the FRHS-1 backup feed path when both AFW and Main Feed are lost.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q53</div>
-SG Feed Delta-P (the delta between feed pressure and SG pressure) is the controlled parameter for SGFP operation per S2.OP-SO.CN-0002 — it is <span class="hi-exam">controlled by adjusting SGFP speed and programmed on total % Steam Flow</span> (SGFP rpm is a result, not a setpoint). <span class="hi-exam">Minimum D/P is 50 psid from 0-15% steam flow; 100% D/P is 150 psid; at 40% steam flow the programmed SG Feed D/P is closest to 80 psid.</span> <span class="hi-trap">60 psid is the trap value from assuming a simple linear 0-100% scale.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q54</div>
-On an uncomplicated manual Rx trip from 100% power, RCS over-cooling is prevented by the <span class="hi-exam">Feedwater Interlock</span> (3/4 RCS Tavgs &lt;554°F AND ≥1 Reactor Trip and bypass breaker open), which shuts the BF19's and BF40 Feed Reg Valves. <span class="hi-trap">P-12 (Tavg &lt;543°F) does NOT actuate — steam dumps modulate to hold Tavg ~547°F; P-10 (PRNIs &lt;10%) only blocks low-power Rx trips; Feedwater Isolation does not occur on an uncomplicated trip.</span>
+<div class="callout-label">Exam — 2020 Q45</div>
+BF19 (Main FW Regulating Valves) on loss of all station air: <span class="hi-exam">BF19s start to close at <span class="val-alarm">80 psig</span> control air header pressure</span>. BF19s receive air from Unit 1 via redundant Lunkenheimer air panels, but on total loss of ALL station air, no backup supply is available. <span class="hi-trap">ECACs cannot supply BF19 CA headers due to a check valve isolating the turbine building headers.</span> Per AB.CA-0001 CAS: if both CA headers < 80 psig or BF19s closing with inability to control SG level → trip the reactor.
 </div>
 
 <div class="callout callout-jpm">
@@ -253,10 +186,99 @@ On an uncomplicated manual Rx trip from 100% power, RCS over-cooling is prevente
 The <span class="hi-exam">21-24BF19 Feed Reg Valves are air-operated and fail CLOSED on a loss of Station Air</span> (they are supplied only by Station Air — a check valve blocks Control Air, and the ECACs do not back them up). In the Loss of Control Air JPM the BF19s drift closed (~6.5 min after the event), so SG level can no longer be maintained and the operator must manually trip the reactor before the automatic trip on 10/10 SG NR (Lo-Lo) level.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-h</div>
+<span class="hi-exam">21–24BF19 (SG Feedwater Regulating Valves) start to close at ≈ 80 psig control air header pressure</span>. Per AB.CA-0001 CAS Step 6.0: "If ANY BF19 SG FW CONT VALVE closes AND Applicable SG water level CANNOT be maintained, THEN: Trip the Reactor; continue with this procedure; go to 2-EOP-TRIP-1." The applicant must <span class="hi-exam">manually trip the reactor BEFORE the auto-trip on lo-lo SG NR level</span> when BF19 closure prevents level control. Approximate timeline (from RT-1 / first SAC trip): 6:30 — 21–24BF19 begin closing; 7:10 — G-15 OHA ADFCS TRBL.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #5</div>
+<span class="hi-exam">23BF19 feedwater reg valve fails closed</span> (ramped over 1 minute) at 85% power. OHA alarms: G-15 ADFCS TRBL, G-23 21/22 SGFP SPEED DEVIATION, 23 SG Program Setpoint Deviation. Manual control attempts unsuccessful. Both SGFPs trip on SI actuation following reactor trip — <span class="hi-exam">SGFPs NOT available during EOP-FRHS-1</span>. Condensate recovery path: open selected SG BF40 or BF19 locally (120 ft elevation TGA), open BF13, open <span class="hi-exam">21 and 22 CN48 (SGFP bypass valves)</span>, close <span class="hi-exam">21 and 22 CN32 (SGFP suction valves)</span>. Feed flow established when SG pressure depressurized to <575 psig.
+</div>
+
+## Condenser and Condensate
+
+- Main condensers receive exhaust steam from turbine and steam dump
+- Condensate pumps deliver condensate through feedwater heaters to feedwater pumps
+- Condenser serves as heat sink for steam dump during load rejection
+(UFSAR 10.4)
+
+**Exam & operating coverage:**
+
+### Condensate Pump Trips and SGFP Suction
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q54</div>
+At 85% power with all Condensate/HDT pumps and the polisher in service, an 11 Condensate Pump trip causes <span class="hi-exam">SGFP suction pressure to lower</span>. <span class="hi-trap">The 11-13CN108 (Polisher Bypass) valves open on a SGFP trip, not a condensate pump trip. The 1CN47 (13/14/15 Heater Strings Bypass) auto-opens at <span class="val-alarm">265 psig</span>, which is not reached. Per Q=m▲T the reduced feed flow makes feed temperature entering the SGs RISE, not lower.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q89</div>
+Single Condensate pump trip with NO HDPs running and polisher in service: <span class="hi-exam">21A Condenser hotwell level RISES</span> because condensing continues even though the pump is OOS. <span class="hi-exam">21-23 CN108 (Polisher Bypass Valves) do NOT automatically open</span> on low SGFP suction pressure — operator action per AB.CN-0001 directs opening when SGFP suction lowers &lt;<span class="val-alarm">320 psig</span>. <span class="hi-exam">2CN47 (23/24/25 Heater Strings Bypass) auto-opens on a SGFP trip ONLY (not on a CP trip)</span>; in AB.CN, CN47 is directed to open AFTER CN108s, since CN108 opening is expected to restore suction pressure above the CN47 threshold. Power reduction with 2 CPs running and no HDPs running per AB.CN-0001 Att 2 = <span class="hi-exam"><span class="val-alarm">65%</span> or less</span>. <span class="hi-trap">Trap: 30% applies to a different pump configuration — not 2 CPs running with no HDP.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q93</div>
+Condensate pump trip at 100% power: <span class="hi-exam">2CN47 (23/24/25 Heater String Bypass valve) controls automatically to maintain SGFP suction pressure > <span class="val-normal">265 psig</span></span>. Per AB.CN-0001, open <span class="hi-exam">21-23 CN108 (Polisher Bypass Valves) if SGFP suction pressure < <span class="val-alarm">320 psig</span></span>. Power reduction per Attachment 2 to a maximum of <span class="hi-exam">85%</span>. <span class="hi-trap">265 psig is the CN47 auto-control setpoint, NOT the CN108 opening threshold. 75% is the IOP-4 third condensate pump start power level, NOT the AB.CN-0001 load reduction limit.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+With 23 Condensate pump already CIT (only two Condensate pumps in service), the loss of a second (22) Condensate pump causes <span class="hi-exam">SGFP suction pressure to rapidly and irreversibly lower</span> until both SGFPs trip on low suction pressure. With no SGFP operating &gt;P-10, the crew performs a <span class="hi-exam">manual reactor trip</span>. SGFPs remain unavailable for recovery because there is no SW flow to the TGA (turbine generator area) coolers, so secondary heat sink can only be restored later via direct Condensate System flow to a depressurized SG (FRHS-1 Step 20 path).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+23 Condensate pump trip at 89.4% power. Cue: 23 Condensate pump trip annunciation; no SGFP tripped. PO bypasses condensate polisher by opening <span class="hi-exam">21 thru 23 CN108</span> if SGFP suction pressure is &lt;<span class="hi-exam">320 psig</span>. CRS directs <span class="hi-exam">2CN47</span> opened if suction pressure remains &lt;320 psig; PO isolates letdown by closing 21-24BG4 and 21-24GB185 once 2CN47 is open. Power reduction to <span class="hi-exam">85% at ~5%/min</span> with 2 Condensate pumps and 3 Heater Drain pumps in service IAW AB.CN-0001 Attachment 4 (and AB.LOAD-0001).
+</div>
+
+### Condenser and FW Heater Performance
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q37</div>
+21CN22 and 23CN22 (LP FW Heater Inlet Control Valves) spuriously close: <span class="hi-exam">2CN45 modulates open to maintain &lt;65 psid across 21 and 22 LP Heaters</span>. With CN45 modulated open (bypassing heaters), <span class="hi-exam">feedwater temperature lowers → reactor power rises</span> (cooler feedwater = positive reactivity from MTC). <span class="hi-exam">CN22 valves have indications ONLY in the Control Room — no controls</span>. The crew can NOT open 21CN22 or 23CN22 from the Control Room. <span class="hi-trap">Other CN valves (2CN45, 2CN47) CAN be operated from the Control Room — do not assume all CN valves have Control Room controls.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q8</div>
+High level in <span class="hi-exam">21A Low Pressure feedwater heater closes ONLY the associated 21CN22</span> inlet valve (not all three LP FW heater strings). With one LP FW heater string bypassed, <span class="hi-exam">cooler feedwater enters the reactor, raising actual reactor thermal power due to positive MTC effect</span>. NI power indication reads lower than actual because cooler moderator provides shielding to PR NIS. Reactor power should be determined from RCS delta-Ts, and turbine load reduced to prevent exceeding thermal power limits.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q60</div>
+CW waterbox tube leak alarms: a gross tube leak is confirmed by <span class="hi-exam">Dissolved Oxygen Hi, Condensate Pump Disch Sodium Hi, and Hotwell Outlet Conductivity Hi</span>. <span class="hi-trap">Hydrazine Lo is NOT expected from a CW tube leak</span> — river water intrusion does not impact hydrazine concentration.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q74</div>
+Condensate depression: the temperature difference between the condenser saturation temperature and the actual condensate temperature. <span class="hi-exam">Decreasing condensate depression (e.g., 5°F to 2°F) raises thermal efficiency</span> (hotter feedwater means SGs add less sensible heat) but moves the condensate pumps <span class="hi-exam">closer to cavitation</span> (less subcooling = less NPSH at pump suction).
+</div>
+
+### Condensate Recovery (EOP-FRHS-1)
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-e</div>
+EOP-FRHS-1 condensate pump feed: establish condensate flow to selected SG by opening <span class="hi-exam">BF40 (Main Feed Bypass Valve, locally)</span>, <span class="hi-exam">BF13 (Feed Water Isolation Valve)</span>, <span class="hi-exam">21 and 22 CN48 (Feed Pump Bypass Valves)</span>, and closing <span class="hi-exam">21 and 22 CN32 (Feed Pump Suction Valves)</span>. Verify condensate flow established with WR level rising.
+</div>
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2012 #3</div>
 With condenser vacuum degraded and only 21/22 condensate pumps in service (HDPs O/S), <span class="hi-exam">21 condensate pump trips</span>; the single remaining condensate pump cannot supply the only operating SGFP (22). As 22 SGFP speed rises, <span class="hi-exam">SGFP suction pressure drops to the trip setpoint (&lt;215 psig sustained 10 s, or 190 psig with no delay)</span>, the SGFP trips (auto-starting both MDAFW pumps), and the crew manually trips the reactor on loss of the only operating SGFP. Later, with all AFW lost and no centrifugal charging pumps, the crew performs a <span class="hi-exam">Condensate pump recovery in FRHS-1</span> — depressurizing one SG and opening 21/22 CN48s (closing 21/22 CN32s) to establish condensate feed to the depressurized SG.
 </div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+With <span class="hi-exam">all AFW pumps failed and the SGFPs unavailable</span> after a reactor trip, the crew uses the Condensate system as the alternate heat-sink feed source — performing a <span class="hi-exam">Condensate pump recovery in FRHS-1</span> to establish feed flow into a SG before RCS Bleed and Feed is required (CT#2). Demonstrates the Condensate system as the FRHS-1 backup feed path when both AFW and Main Feed are lost.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #3</div>
+Condensate recovery in EOP-FRHS-1 after loss of all AFW. Both SGFPs tripped due to auto SI following main turbine failure to trip. Crew resets SI/Phase A/Phase B, opens <span class="hi-exam">CA330s</span>. Selects one SG for depressurization to < <span class="hi-exam">575 psig</span> using MS10. Dispatches operator to open <span class="hi-exam">BF40 or BF19</span> (120 ft TGA). Opens <span class="hi-exam">BF13</span>, opens <span class="hi-exam">CN48 (SGFP bypass valves)</span>, closes <span class="hi-exam">CN32 (SGFP suction valves)</span>. Condensate flow established when SG pressure is around 600 psi. Validation note: approximately 10 minutes to depressurize via MS10, condensate flow visible at 5-6% WR rising.
+</div>
+
+## Tech Spec LCOs
+
+- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.3 (Auxiliary Feed Storage Tank), TS 3.7.13 (FW Isolation Valves)
 
 ## Connections
 

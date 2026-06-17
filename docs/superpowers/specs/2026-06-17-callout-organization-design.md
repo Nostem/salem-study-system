@@ -72,7 +72,15 @@ For each backfill callout:
    `**Exam & operating coverage:**` so it reads as a coverage block. No new CSS required.
 4. **Within-group order (deterministic):** exam → jpm → scenario; within each type, ascending
    by year, then by question / JPM id.
-5. **Orphans** — a callout whose topic matches no existing heading, or an article with flat
+5. **Sub-group large coverage groups.** If a single subsection's coverage group exceeds ~8
+   callouts AND the subsection is a broad bucket (covers multiple distinct subtopics), split the
+   group into `###` subtopic sub-clusters (e.g. under `## Charging and Letdown`: letdown path,
+   seal injection, excess letdown, VCT/makeup). Each sub-cluster is a `###` heading followed by
+   its callouts in the deterministic order from rule 4. This is what "grouped by subtopic" means
+   — never leave a relocated pile of 20–40 callouts under one undifferentiated lead-in. A group
+   of ≤8 callouts about one coherent topic stays as a single `**Exam & operating coverage:**`
+   block with no sub-headings.
+6. **Orphans** — a callout whose topic matches no existing heading, or an article with flat
    structure — collect into one dedicated `## Exam & Operating Coverage` section placed
    immediately above `## Connections`, internally grouped by subtopic with `###` sub-headings.
    This is also the home for articles that genuinely lack finer structure.

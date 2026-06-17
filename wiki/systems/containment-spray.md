@@ -21,9 +21,26 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 - **Containment Spray bistables are energized to actuate** (opposite of most ESF bistables)
 (UFSAR T7.2-1, TS Table 3.3-4)
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q88</div>
-CS Hi-Hi Containment Pressure bistables are <span class="hi-exam">energized to actuate</span>. Loss of a VIB leaves the associated bistable de-energized (cannot contribute to actuation) → <span class="hi-exam">logic goes from 2/4 to 2/3</span>. Per TS 3.3.2.1, the inoperable channel is placed in <span class="hi-exam">BYPASS (not tripped)</span> to prevent spurious CS actuation. <span class="hi-trap">Most ESF bistables are de-energized to trip → inoperable channels are placed in TRIPPED. Containment Spray is the opposite.</span>
+<div class="callout-label">Exam — 2012 Q41</div>
+Containment Spray actuation bistables are <span class="hi-exam">energized-to-actuate</span>. <span class="hi-exam">Containment Pressure Channel I feeds only the Containment Hi-Hi (Spray) circuits — not the Containment Hi (SI) circuits.</span> Removing Channel I from service (tripped per S2.OP-SO.RPS-0005) takes it out of the Spray 2/3 coincidence so a single remaining channel failing high cannot inadvertently actuate Spray. See [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q48</div>
+To electrically reset an AUTOMATIC Containment Spray initiation: <span class="hi-exam">depress BOTH (train) Reset Spray Actuation PBs at ANY containment pressure</span>. CS actuation relays have <span class="hi-exam">retentive memory</span>, so they can be reset with the actuation signal still present. <span class="hi-trap">Containment pressure is NOT required to be &lt;15 psig; Phase B reset is NOT required; Reset SI PBs are NOT required to reset Containment Spray.</span> Both trains must be reset.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q43</div>
+After SEC reset following a LOCA, a subsequent Hi-Hi containment pressure signal: <span class="hi-exam">CS valves realign for spray (valve realignment is via the CS signal, not the SEC)</span>, but <span class="hi-exam">CS pumps will NOT auto-start — they must be manually started</span>. The SEC ONLY controls the CS pumps, not the CS valves; once the SEC is reset, the sequencer is no longer active and cannot restart the CS pumps. <span class="hi-trap">Trap: thinking the CS pumps would still auto-start, OR that the valves would not realign — neither is correct after SEC reset.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q44</div>
+<span class="hi-exam">Containment Spray actuation relays have retentive memory</span> — relays can be manually reset with an actuation signal still present. Even with containment pressure above the <span class="val-trip">15 psig</span> CS actuation setpoint, depressing both Reset Spray Actuation pushbuttons resets the actuation signal, and <span class="hi-exam">the signal does NOT reinitiate after the pushbuttons are released</span>. <span class="hi-exam">CS pumps and CS valves (CS2, CS14, CS16, CS17) do NOT reposition to their normal positions on reset</span> — CS14 is normally open with power removed; the remaining CS valves are normally shut and open on the CS signal, and <span class="hi-exam">cannot be closed until the spray actuation signal is reset</span>.
 </div>
 
 <div class="callout callout-exam">
@@ -32,8 +49,8 @@ Resetting one train of Containment Spray (after AUTOMATIC actuation without a ma
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q15</div>
-EOP-LOCA-5 Table C CS pump determination with 2B 4KV bus de-energized: with Containment Pressure = 19 psig, RWST Level = 10 feet, and <span class="hi-exam">only 3 CFCUs running in slow speed (2B bus loss = 22 and 24 CFCUs unavailable)</span>, Table C shows <span class="hi-exam">0 CS pumps required</span>. Crew stops BOTH CS pumps. <span class="hi-trap">Must correctly count available CFCUs to enter Table C — the number of CFCUs running directly determines whether 0, 1, or 2 CS pumps are required.</span>
+<div class="callout-label">Exam — 2020 Q88</div>
+CS Hi-Hi Containment Pressure bistables are <span class="hi-exam">energized to actuate</span>. Loss of a VIB leaves the associated bistable de-energized (cannot contribute to actuation) → <span class="hi-exam">logic goes from 2/4 to 2/3</span>. Per TS 3.3.2.1, the inoperable channel is placed in <span class="hi-exam">BYPASS (not tripped)</span> to prevent spurious CS actuation. <span class="hi-trap">Most ESF bistables are de-energized to trip → inoperable channels are placed in TRIPPED. Containment Spray is the opposite.</span>
 </div>
 
 ## Operation
@@ -43,9 +60,93 @@ EOP-LOCA-5 Table C CS pump determination with 2B 4KV bus de-energized: with Cont
 - NaOH from spray additive tank mixed with spray flow via eductors
 - Spray into containment atmosphere
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q27</div>
+With a LBLOCA and LOCA-5 in effect, the CS pumps are operated using the <span class="hi-exam">less restrictive LOCA-5 criteria</span> (which permits reduced spray-pump operation based on RWST level, containment pressure, and number of CFCUs running) even after the crew enters FRCE-1 on the PURPLE path (containment pressure &gt; 15 psig). FRCE-1 step 3.1 yes-path directs CS operation IAW LOCA-5 to <span class="hi-exam">conserve RWST inventory</span> because recirculation flow to the RCS is unavailable.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q15</div>
+EOP-LOCA-5 Table C CS pump determination with 2B 4KV bus de-energized: with Containment Pressure = 19 psig, RWST Level = 10 feet, and <span class="hi-exam">only 3 CFCUs running in slow speed (2B bus loss = 22 and 24 CFCUs unavailable)</span>, Table C shows <span class="hi-exam">0 CS pumps required</span>. Crew stops BOTH CS pumps. <span class="hi-trap">Must correctly count available CFCUs to enter Table C — the number of CFCUs running directly determines whether 0, 1, or 2 CS pumps are required.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q42</div>
+EOP-LOCA-5 Table C determines required CS pumps: with <span class="hi-exam">RWST > 15.24 ft, containment pressure 18 psig, and 4 CFCUs operating → 0 CS pumps required</span>. Correct CFCU count depends on knowing CFCU power supplies — <span class="hi-trap">losing the 2A Vital Bus does NOT affect CFCU count (CFCUs are powered from 460V buses, not 4KV vital buses directly). Candidates must know CFCU vs CS pump power supply mapping.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q80</div>
+EOP-LOCA-5 vs EOP-FRCE-1 containment spray operation: per EOP-FRCE Caution C3-1, <span class="hi-exam">if LOCA-5 is in effect, operation of containment spray pumps should be IAW LOCA-5</span> (not FRCE-1). LOCA-5 has <span class="hi-exam">less restrictive criteria allowing reduction of CS pump operation based on RWST level and CFCUs to conserve RWST inventory</span>. FRCE-1 establishes maximum available heat removal (more aggressive CS operation) which conflicts with LOCA-5 priority to conserve RWST inventory.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q77</div>
+EOP-LOCA-1 Step 7.4 (stop CS pumps when containment pressure below 13 psig) is a <span class="hi-exam">continuous action step</span>. Per OP-SA-108-101-2002: continuous action steps are <span class="hi-exam">NOT performed during a Red or Purple path FRP</span>. Even if conditions to stop CS pumps are met, the crew must transition to the FRP and not perform Step 7.4.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-f</div>
+EOP-TRIP-1 Step 9 — manual CS/Phase B actuation during LBLOCA: containment pressure NOT < <span class="hi-exam">15 psig</span> → manually initiate Phase B and Spray using safeguards key switches on 2CC1. Alternate path: Phase B valves (<span class="hi-exam">2CC131, 2CC190</span>) fail to auto-close and NaOH valves (<span class="hi-exam">2CS16, 2CS17</span>) fail to auto-open on CS signal. Operator must verify Table B valve groups and manually reposition: close at least one 2CC131/2CC190 and open at least one 2CS16/2CS17.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-e</div>
+EOP-TRIP-1 Step 11: manual CS/Phase B actuation during LBLOCA with containment pressure NOT &lt; <span class="hi-exam">15 psig</span>. Use safeguards key switches on 2CC1. <span class="hi-exam">Alternate path: auto CS and Phase B signals fail</span>. Phase B valves <span class="hi-exam">2CC131 and 2CC190 (CCW containment isolation)</span> remain open and NaOH discharge valves <span class="hi-exam">2CS16 and 2CS17</span> remain closed. Step 11.4 Table D check reveals valves not in safeguards positions — operator manually repositions (close 2CC131/2CC190, open 2CS16/2CS17). NaOH valves provide sodium hydroxide to containment spray for iodine scrubbing and pH control.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+On Phase B during the LBLOCA, <span class="hi-exam">Containment Spray fails to auto actuate</span>. The RO manually initiates Phase B and Spray, realigns the spray valves, and starts <span class="hi-exam">21 and 22 Containment Spray pumps</span>; <span class="hi-exam">CT#2 requires this minimum containment cooling complement before exiting [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]</span>. During the cold leg recirculation switchover in [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], <span class="hi-exam">a CS pump is stopped within 5.5 min of the RWST Lo level alarm (CT#3, time-critical)</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+On the steam leak in containment with MSLI failure, containment pressure rises to 15 psig and the crew enters FRCE-1, where they find <span class="hi-exam">no Containment Spray pumps running</span> on the SEC signal. <span class="hi-exam">CT#2 (CT-3): manually start the 21 and 22 CS pumps prior to completion of FRCE-1 step 3</span> — if SECs are not reset, block and reset the SECs first, insert the CS actuation keys, then start the pumps. See [[2014 Scenario 1]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+Containment Spray actuates on the LBLOCA (containment pressure &gt;15 psig, Phase B). During the transfer to cold leg recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], <span class="hi-exam">CT#2 time-critical: stop one containment spray pump (22 CS) within &le;5.5 min</span> of the RWST lo level alarm.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+<span class="hi-exam">CT#1 (CT-3): manually start at least one CS pump before a red-path challenge develops on the containment CSF.</span> A 21 SG steam leak in containment with all four MSIVs failed shut drives containment pressure above 15 psig (Phase B / hi-hi); however, both Containment Spray pumps fail to auto-start (RP318L1 and RP318L2 — 21 and 22 CS pump fail-to-start on SEC). RO initiates Phase B and Spray actuation; reports neither CS pump has started. Crew recovery: <span class="hi-exam">RO blocks 2A and 2C SECs; PO resets 2A and 2C SECs; RO manually starts 21 and 22 CS pumps</span>. CS pumps are subsequently stopped in EOP-LOSC-2 step 22 (when containment pressure &lt;13 psig, RO resets Spray actuation, stops both CS pumps, shuts 21 and 22CS2 CS pump discharge valves).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+Both CS pumps start on Phase B actuation (containment pressure >15 psig) during LBLOCA. During EOP-LOCA-3 cold leg recirculation transfer, <span class="hi-exam">stop 22 CS pump within ~5.5 minutes</span> of RWST lo level alarm (CT#2 Part 2). Only one CS pump remains running during recirculation alignment.
+</div>
+
 ### Recirculation Phase
 - Spray pumps realigned to containment sump via RHR heat exchangers
 - Cooled recirculated water sprayed into containment
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q34</div>
+In post-LOCA recirc, containment spray can be supplied from RHR pump discharge: with <span class="hi-exam">BOTH RHR pumps operating, 22CS36 is opened to feed containment spray from 22 RHR pump discharge</span> (EOP-LOCA-3). A 22 RHR pump trip then results in <span class="hi-exam">loss of flow to the Containment Spray header</span>. All dedicated containment spray pumps are stopped in LOCA-3. See [[RHR]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q46</div>
+During cold-leg-recirc transfer (EOP-LOCA-3) the 22 CS pump is stopped first; the 21 CS pump keeps running until RWST lo-lo. With the 21 CS pump still running, <span class="hi-exam">a short that motors 21CS2 (21 CS pump discharge valve) closed drops Containment Spray Header flow to 0 gpm</span> (21CS36 is not yet opened to supply recirc spray). See [[RHR]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q88</div>
+During cold leg recirculation, <span class="hi-exam">Containment Spray pumps take suction from the outlet of the RHR HXs</span>. Therefore, the <span class="hi-exam">RHR pumps (not SI pumps) provide the D/P to drive Containment Spray</span> during recirculation mode. <span class="hi-trap">SI pumps are plausible but incorrect — CS alignment in recirculation is via the RHR system.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q89</div>
+During [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]] with RWST level still above 1.2', the <span class="hi-exam">22 CS pump is already stopped (step 8) but the 21 CS pump continues taking suction from the RWST</span> — so when containment sump blockage causes cavitation, <span class="hi-exam">Containment Spray flow remains above 0 gpm</span> (the 21 CS pump is not stopped until RWST reaches 1.2' at step 21). The crew transitions to [[EOP-APPX-7 — Containment Sump Blockage]] and stops the operating Charging, SI, and RHR pumps. <span class="hi-trap">Sump blockage transitions to APPX-7, NOT LOCA-5; CS flow does not lower to 0 gpm while one CS pump is still on the RWST.</span>
+</div>
 
 ## Spray Nozzles
 
@@ -65,65 +166,34 @@ EOP-LOCA-5 Table C CS pump determination with 2B 4KV bus de-energized: with Cont
 | Eductor Flow | 35 ±3.5 gpm to each spray system | TS SR 4.6.2.2 |
 | Spray Pump Differential Pressure | ≥204 psid | TS SR 4.6.2.1 |
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q13</div>
+<span class="hi-exam">NaOH (Sodium Hydroxide)</span> is added to Containment Spray flow to remove <span class="hi-exam">elemental iodine</span> from the containment atmosphere AND to <span class="hi-exam">prevent corrosion of containment components</span>. <span class="hi-trap">Trap: Hydrazine is added to the RCS to scavenge oxygen — it is NOT added to Containment Spray flow. NaOH serves a dual purpose (iodine removal AND corrosion prevention), not just iodine removal alone.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q46</div>
+Spray Additive (NaOH) Tank: spray eductor flow ~75 gpm; normal level 75% (<span class="val-normal">3400 gallons</span>), administrative max 90% (3900 gal); <span class="val-alarm">low-level alarm "D-43 SPRY ADD TK LVL LO" at 67% (~3050 gal)</span>. After a LOCA reaching 18 psig, <span class="hi-exam">D-43 alarms ~5 minutes into the event and stays locked in</span> — the EXPECTED locked-in overhead alarm 25 minutes later. See [[Annunciators]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 IP-i</div>
+Flushing the Containment Spray (Spray Additive Tank) Eductor line per S1.OP-ST.CS-0003 Attachment 3: <span class="hi-exam">UNLOCK AND OPEN 1CS31 (RWST SUPPLY TO EDUCTORS STOP VALVE)</span> and OPEN 1CS40 (SPRAY ADD TK DISCH LINE DRN), flush to the drain header for 3 minutes, then sample at 1CS61 (CS SPRAY ADD TK DISCH SAMP VALVE). When Chemistry verifies <span class="hi-exam">&lt;10 ppm sodium</span>, ensure 1CS61 closed and CLOSE AND LOCK 1CS31. Because the Spray Additive Tank contains concentrated <span class="hi-exam">Sodium Hydroxide [NaOH] 0-50%</span>, RED-category chemical PPE (per SA-AA-2113) is required before opening any vent/drain.
+</div>
+
 ## Key Design Points
 
 - Two independent containment spray systems
 - NaOH additive maintains post-LOCA sump pH between 7.0 and 10.0
 - pH control minimizes iodine re-evolution and chloride stress corrosion cracking
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q40</div>
-CS pump power supplies: <span class="hi-exam">21 CS pump on A 4KV Vital Bus, 22 CS pump on C 4KV Vital Bus</span>. A failed 2B SEC does NOT affect either CS pump. With SECs NOT reset after initial SI sequence, the CS pump start contact remains re-closed — <span class="hi-exam">CS pumps WILL auto-start on Hi-Hi containment pressure signal</span> even after the initial SI sequence completes.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q42</div>
-21 CS Pump powered from <span class="hi-exam">2A 4KV Vital Bus</span>, 22 CS Pump from <span class="hi-exam">2C 4KV Vital Bus</span>. With 2C bus de-energized, only 21 CS Pump is available. To manually start: must <span class="hi-exam">block and reset the associated SEC first</span>, then use the <span class="hi-exam">keyswitch</span> to start the CS pump. <span class="hi-trap">The start pushbutton alone will NOT start the CS pump when SECs have actuated — SEC sequences override manual pushbutton control. Must block/reset SEC and use keyswitch.</span>
-</div>
-
-## Tech Spec LCOs
-
-- **[[TS 3/4.6 — Containment]]** — TS 3.6.2.1 (Spray System), TS 3.6.2.2 (Spray Additive)
-- 1 spray system inoperable: 72 hours, then 48 more hours, or Cold Shutdown
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q77</div>
-EOP-LOCA-1 Step 7.4 (stop CS pumps when containment pressure below 13 psig) is a <span class="hi-exam">continuous action step</span>. Per OP-SA-108-101-2002: continuous action steps are <span class="hi-exam">NOT performed during a Red or Purple path FRP</span>. Even if conditions to stop CS pumps are met, the crew must transition to the FRP and not perform Step 7.4.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q80</div>
-EOP-LOCA-5 vs EOP-FRCE-1 containment spray operation: per EOP-FRCE Caution C3-1, <span class="hi-exam">if LOCA-5 is in effect, operation of containment spray pumps should be IAW LOCA-5</span> (not FRCE-1). LOCA-5 has <span class="hi-exam">less restrictive criteria allowing reduction of CS pump operation based on RWST level and CFCUs to conserve RWST inventory</span>. FRCE-1 establishes maximum available heat removal (more aggressive CS operation) which conflicts with LOCA-5 priority to conserve RWST inventory.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 Sim-f</div>
-EOP-TRIP-1 Step 9 — manual CS/Phase B actuation during LBLOCA: containment pressure NOT < <span class="hi-exam">15 psig</span> → manually initiate Phase B and Spray using safeguards key switches on 2CC1. Alternate path: Phase B valves (<span class="hi-exam">2CC131, 2CC190</span>) fail to auto-close and NaOH valves (<span class="hi-exam">2CS16, 2CS17</span>) fail to auto-open on CS signal. Operator must verify Table B valve groups and manually reposition: close at least one 2CC131/2CC190 and open at least one 2CS16/2CS17.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q42</div>
-EOP-LOCA-5 Table C determines required CS pumps: with <span class="hi-exam">RWST > 15.24 ft, containment pressure 18 psig, and 4 CFCUs operating → 0 CS pumps required</span>. Correct CFCU count depends on knowing CFCU power supplies — <span class="hi-trap">losing the 2A Vital Bus does NOT affect CFCU count (CFCUs are powered from 460V buses, not 4KV vital buses directly). Candidates must know CFCU vs CS pump power supply mapping.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q9</div>
-Confirms CS pump power supplies during MSLB + LOOP with 2C 4KV Vital Bus lost: <span class="hi-exam">21 CS Pump (A bus) is available, 22 CS Pump (C bus) is NOT available</span>. Containment cooling design bases: 3 CFCUs + 1 CS pump. With C bus lost, only 21 CS Pump available.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q88</div>
-During cold leg recirculation, <span class="hi-exam">Containment Spray pumps take suction from the outlet of the RHR HXs</span>. Therefore, the <span class="hi-exam">RHR pumps (not SI pumps) provide the D/P to drive Containment Spray</span> during recirculation mode. <span class="hi-trap">SI pumps are plausible but incorrect — CS alignment in recirculation is via the RHR system.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 Sim-e</div>
-EOP-TRIP-1 Step 11: manual CS/Phase B actuation during LBLOCA with containment pressure NOT &lt; <span class="hi-exam">15 psig</span>. Use safeguards key switches on 2CC1. <span class="hi-exam">Alternate path: auto CS and Phase B signals fail</span>. Phase B valves <span class="hi-exam">2CC131 and 2CC190 (CCW containment isolation)</span> remain open and NaOH discharge valves <span class="hi-exam">2CS16 and 2CS17</span> remain closed. Step 11.4 Table D check reveals valves not in safeguards positions — operator manually repositions (close 2CC131/2CC190, open 2CS16/2CS17). NaOH valves provide sodium hydroxide to containment spray for iodine scrubbing and pH control.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q13</div>
-<span class="hi-exam">NaOH (Sodium Hydroxide)</span> is added to Containment Spray flow to remove <span class="hi-exam">elemental iodine</span> from the containment atmosphere AND to <span class="hi-exam">prevent corrosion of containment components</span>. <span class="hi-trap">Trap: Hydrazine is added to the RCS to scavenge oxygen — it is NOT added to Containment Spray flow. NaOH serves a dual purpose (iodine removal AND corrosion prevention), not just iodine removal alone.</span>
+<div class="callout-label">Exam — 2014 Q34</div>
+A loss of the 1A 4KV vital bus removes the <span class="hi-exam">11 CS pump</span>. For a small (1") RCS break, containment pressure does not rise to the CS actuation requirement, so neither CS pump is needed and the containment pressure response is unchanged.
 </div>
 
 <div class="callout callout-exam">
@@ -132,103 +202,18 @@ Confirms CS pump power supplies and spray actuation setpoint during LOCA + LOOP 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q88</div>
-TS 3.6.2.1 application with BOTH trains of Containment Spray INOPERABLE: LCO 3.6.2.1 has NO action for both trains inoperable → <span class="hi-exam">LCO 3.0.3 applies</span>. When ONE train is restored, LCO 3.0.3 exits and the single-inoperable-train action of LCO 3.6.2.1 begins: <span class="hi-exam">restore within 72 hours or be in HOT STANDBY within the next 6 hours</span>. Key timing: the 72-hour clock starts from when the LCO was first NOT met (08:00 on June 12th), not from when one train was restored (10:00). Total: <span class="hi-exam">72 + 6 = 78 hours from 08:00 on June 12th = 14:00 on June 15th</span>.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2018 SRO-A5</div>
-Emergency classification with degraded containment cooling: Containment pressure 35 psi, <span class="hi-exam">21 CS pump failed to start (only 22 CS pump running)</span>. Combined with < 3 CFCUs in low speed → meets <span class="hi-exam">CB8.P (containment barrier potential loss, 2 pts)</span> for fission product barrier assessment. This is a POTENTIAL loss, not a LOSS — containment barrier is degraded but not breached. Combined with RB2.L (5 pts) = <span class="hi-exam">7 points total = SAE</span>.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2018 #2</div>
-Both CS pumps start on Phase B actuation (containment pressure >15 psig) during LBLOCA. During EOP-LOCA-3 cold leg recirculation transfer, <span class="hi-exam">stop 22 CS pump within ~5.5 minutes</span> of RWST lo level alarm (CT#2 Part 2). Only one CS pump remains running during recirculation alignment.
+<div class="callout-label">Exam — 2020 Q9</div>
+Confirms CS pump power supplies during MSLB + LOOP with 2C 4KV Vital Bus lost: <span class="hi-exam">21 CS Pump (A bus) is available, 22 CS Pump (C bus) is NOT available</span>. Containment cooling design bases: 3 CFCUs + 1 CS pump. With C bus lost, only 21 CS Pump available.
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q43</div>
-After SEC reset following a LOCA, a subsequent Hi-Hi containment pressure signal: <span class="hi-exam">CS valves realign for spray (valve realignment is via the CS signal, not the SEC)</span>, but <span class="hi-exam">CS pumps will NOT auto-start — they must be manually started</span>. The SEC ONLY controls the CS pumps, not the CS valves; once the SEC is reset, the sequencer is no longer active and cannot restart the CS pumps. <span class="hi-trap">Trap: thinking the CS pumps would still auto-start, OR that the valves would not realign — neither is correct after SEC reset.</span>
+<div class="callout-label">Exam — 2022 Q42</div>
+21 CS Pump powered from <span class="hi-exam">2A 4KV Vital Bus</span>, 22 CS Pump from <span class="hi-exam">2C 4KV Vital Bus</span>. With 2C bus de-energized, only 21 CS Pump is available. To manually start: must <span class="hi-exam">block and reset the associated SEC first</span>, then use the <span class="hi-exam">keyswitch</span> to start the CS pump. <span class="hi-trap">The start pushbutton alone will NOT start the CS pump when SECs have actuated — SEC sequences override manual pushbutton control. Must block/reset SEC and use keyswitch.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q44</div>
-<span class="hi-exam">Containment Spray actuation relays have retentive memory</span> — relays can be manually reset with an actuation signal still present. Even with containment pressure above the <span class="val-trip">15 psig</span> CS actuation setpoint, depressing both Reset Spray Actuation pushbuttons resets the actuation signal, and <span class="hi-exam">the signal does NOT reinitiate after the pushbuttons are released</span>. <span class="hi-exam">CS pumps and CS valves (CS2, CS14, CS16, CS17) do NOT reposition to their normal positions on reset</span> — CS14 is normally open with power removed; the remaining CS valves are normally shut and open on the CS signal, and <span class="hi-exam">cannot be closed until the spray actuation signal is reset</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q33</div>
-21CS36 (RHR Supply to CS Valve) interlock: <span class="hi-exam">21CS36 cannot be OPENED until 21RH1 and 21RH2 (RHR Suction Isolation Valves) are SHUT</span>. During EOP-LOCA-3 with 21SJ44 failed to open and 21 RHR pump stopped, CS header flow is <span class="hi-exam">supplied via 22CS36 from the running 22 RHR pump</span> at step 22 — the 21SJ44 failure does NOT eliminate CS header flow.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 Sim-b</div>
-APPX-7 secures CS flow path: <span class="hi-exam">stop ALL Containment Spray pumps (Step 3.a)</span> and verify 21CS36 AND 22CS36 CLOSED. CS interlock with RHR (21/22 CS36 closed before stopping affected RHR pump) prevents reverse-flow from the CS header back into RHR suction during cavitation recovery.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #3</div>
-<span class="hi-exam">CT#1 (CT-3): manually start at least one CS pump before a red-path challenge develops on the containment CSF.</span> A 21 SG steam leak in containment with all four MSIVs failed shut drives containment pressure above 15 psig (Phase B / hi-hi); however, both Containment Spray pumps fail to auto-start (RP318L1 and RP318L2 — 21 and 22 CS pump fail-to-start on SEC). RO initiates Phase B and Spray actuation; reports neither CS pump has started. Crew recovery: <span class="hi-exam">RO blocks 2A and 2C SECs; PO resets 2A and 2C SECs; RO manually starts 21 and 22 CS pumps</span>. CS pumps are subsequently stopped in EOP-LOSC-2 step 22 (when containment pressure &lt;13 psig, RO resets Spray actuation, stops both CS pumps, shuts 21 and 22CS2 CS pump discharge valves).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q34</div>
-In post-LOCA recirc, containment spray can be supplied from RHR pump discharge: with <span class="hi-exam">BOTH RHR pumps operating, 22CS36 is opened to feed containment spray from 22 RHR pump discharge</span> (EOP-LOCA-3). A 22 RHR pump trip then results in <span class="hi-exam">loss of flow to the Containment Spray header</span>. All dedicated containment spray pumps are stopped in LOCA-3. See [[RHR]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q45</div>
-Containment Spray (safeguards mode) pump starts are sequenced by the SEC: after the SEC finishes its loading sequence the CS pump start contact re-closes, so a later Hi-Hi containment pressure auto-starts the CS pumps — <span class="hi-trap">but if the SEC has been reset (e.g., safeguards reset in EOP-LOSC-2), the CS pumps will NOT respond to Hi-Hi until the SEC is actuated again</span>. See [[SECs]], [[RPS/SSPS]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q46</div>
-During cold-leg-recirc transfer (EOP-LOCA-3) the 22 CS pump is stopped first; the 21 CS pump keeps running until RWST lo-lo. With the 21 CS pump still running, <span class="hi-exam">a short that motors 21CS2 (21 CS pump discharge valve) closed drops Containment Spray Header flow to 0 gpm</span> (21CS36 is not yet opened to supply recirc spray). See [[RHR]], [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q91</div>
-During a MSLB-then-LOCA EOP sequence, <span class="hi-exam">Containment Spray is terminated in BOTH EOP-TRIP-3 (SI Termination, transition from LOCA-1 at Step 9) and EOP-LOCA-2 (Step 18)</span> — whichever applies based on subcooling / SG NR level / PZR level. Neither EOP addresses CS Spray Additive Tank isolation. See [[CFCUs]], [[EOP-TRIP-3 — SI Termination]].
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 IP-i</div>
-Flushing the Containment Spray (Spray Additive Tank) Eductor line per S1.OP-ST.CS-0003 Attachment 3: <span class="hi-exam">UNLOCK AND OPEN 1CS31 (RWST SUPPLY TO EDUCTORS STOP VALVE)</span> and OPEN 1CS40 (SPRAY ADD TK DISCH LINE DRN), flush to the drain header for 3 minutes, then sample at 1CS61 (CS SPRAY ADD TK DISCH SAMP VALVE). When Chemistry verifies <span class="hi-exam">&lt;10 ppm sodium</span>, ensure 1CS61 closed and CLOSE AND LOCK 1CS31. Because the Spray Additive Tank contains concentrated <span class="hi-exam">Sodium Hydroxide [NaOH] 0-50%</span>, RED-category chemical PPE (per SA-AA-2113) is required before opening any vent/drain.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q27</div>
-With a LBLOCA and LOCA-5 in effect, the CS pumps are operated using the <span class="hi-exam">less restrictive LOCA-5 criteria</span> (which permits reduced spray-pump operation based on RWST level, containment pressure, and number of CFCUs running) even after the crew enters FRCE-1 on the PURPLE path (containment pressure &gt; 15 psig). FRCE-1 step 3.1 yes-path directs CS operation IAW LOCA-5 to <span class="hi-exam">conserve RWST inventory</span> because recirculation flow to the RCS is unavailable.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q34</div>
-A loss of the 1A 4KV vital bus removes the <span class="hi-exam">11 CS pump</span>. For a small (1") RCS break, containment pressure does not rise to the CS actuation requirement, so neither CS pump is needed and the containment pressure response is unchanged.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #1</div>
-Containment Spray actuates on the LBLOCA (containment pressure &gt;15 psig, Phase B). During the transfer to cold leg recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], <span class="hi-exam">CT#2 time-critical: stop one containment spray pump (22 CS) within &le;5.5 min</span> of the RWST lo level alarm.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2014 #1</div>
-On the steam leak in containment with MSLI failure, containment pressure rises to 15 psig and the crew enters FRCE-1, where they find <span class="hi-exam">no Containment Spray pumps running</span> on the SEC signal. <span class="hi-exam">CT#2 (CT-3): manually start the 21 and 22 CS pumps prior to completion of FRCE-1 step 3</span> — if SECs are not reset, block and reset the SECs first, insert the CS actuation keys, then start the pumps. See [[2014 Scenario 1]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q48</div>
-To electrically reset an AUTOMATIC Containment Spray initiation: <span class="hi-exam">depress BOTH (train) Reset Spray Actuation PBs at ANY containment pressure</span>. CS actuation relays have <span class="hi-exam">retentive memory</span>, so they can be reset with the actuation signal still present. <span class="hi-trap">Containment pressure is NOT required to be &lt;15 psig; Phase B reset is NOT required; Reset SI PBs are NOT required to reset Containment Spray.</span> Both trains must be reset.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q89</div>
-During [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]] with RWST level still above 1.2', the <span class="hi-exam">22 CS pump is already stopped (step 8) but the 21 CS pump continues taking suction from the RWST</span> — so when containment sump blockage causes cavitation, <span class="hi-exam">Containment Spray flow remains above 0 gpm</span> (the 21 CS pump is not stopped until RWST reaches 1.2' at step 21). The crew transitions to [[EOP-APPX-7 — Containment Sump Blockage]] and stops the operating Charging, SI, and RHR pumps. <span class="hi-trap">Sump blockage transitions to APPX-7, NOT LOCA-5; CS flow does not lower to 0 gpm while one CS pump is still on the RWST.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q41</div>
-Containment Spray actuation bistables are <span class="hi-exam">energized-to-actuate</span>. <span class="hi-exam">Containment Pressure Channel I feeds only the Containment Hi-Hi (Spray) circuits — not the Containment Hi (SI) circuits.</span> Removing Channel I from service (tripped per S2.OP-SO.RPS-0005) takes it out of the Spray 2/3 coincidence so a single remaining channel failing high cannot inadvertently actuate Spray. See [[RPS/SSPS]].
+<div class="callout-label">Exam — 2023 Q40</div>
+CS pump power supplies: <span class="hi-exam">21 CS pump on A 4KV Vital Bus, 22 CS pump on C 4KV Vital Bus</span>. A failed 2B SEC does NOT affect either CS pump. With SECs NOT reset after initial SI sequence, the CS pump start contact remains re-closed — <span class="hi-exam">CS pumps WILL auto-start on Hi-Hi containment pressure signal</span> even after the initial SI sequence completes.
 </div>
 
 <div class="callout callout-exam">
@@ -236,14 +221,41 @@ Containment Spray actuation bistables are <span class="hi-exam">energized-to-act
 Per Salem FSAR Sections 6 and 15, the <span class="hi-exam">minimum complement for containment integrity with one ECCS train running is 1 Containment Spray pump and 3 CFCUs</span>. CFCU power supplies are A, B, C, B, C for 21-25 CFCUs; CS pump 21 is on A bus. After a LBLOCA + LOOP with 2C 4KV vital bus locked out (bus differential de-energizes the bus) and 2B SEC failed to actuate, only 21 CS pump and 21 CFCU run — so the FIRST action that restores the 3 required CFCUs is <span class="hi-exam">depressing START PB for 22 AND 24 CFCUs</span>. See [[CFCUs]], [[ECCS]], [[SECs]].
 </div>
 
+## Tech Spec LCOs
+
+- **[[TS 3/4.6 — Containment]]** — TS 3.6.2.1 (Spray System), TS 3.6.2.2 (Spray Additive)
+- 1 spray system inoperable: 72 hours, then 48 more hours, or Cold Shutdown
+
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q46</div>
-Spray Additive (NaOH) Tank: spray eductor flow ~75 gpm; normal level 75% (<span class="val-normal">3400 gallons</span>), administrative max 90% (3900 gal); <span class="val-alarm">low-level alarm "D-43 SPRY ADD TK LVL LO" at 67% (~3050 gal)</span>. After a LOCA reaching 18 psig, <span class="hi-exam">D-43 alarms ~5 minutes into the event and stays locked in</span> — the EXPECTED locked-in overhead alarm 25 minutes later. See [[Annunciators]].
+<div class="callout-label">Exam — 2015 Q45</div>
+Containment Spray (safeguards mode) pump starts are sequenced by the SEC: after the SEC finishes its loading sequence the CS pump start contact re-closes, so a later Hi-Hi containment pressure auto-starts the CS pumps — <span class="hi-trap">but if the SEC has been reset (e.g., safeguards reset in EOP-LOSC-2), the CS pumps will NOT respond to Hi-Hi until the SEC is actuated again</span>. See [[SECs]], [[RPS/SSPS]].
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #1</div>
-On Phase B during the LBLOCA, <span class="hi-exam">Containment Spray fails to auto actuate</span>. The RO manually initiates Phase B and Spray, realigns the spray valves, and starts <span class="hi-exam">21 and 22 Containment Spray pumps</span>; <span class="hi-exam">CT#2 requires this minimum containment cooling complement before exiting [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]</span>. During the cold leg recirculation switchover in [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], <span class="hi-exam">a CS pump is stopped within 5.5 min of the RWST Lo level alarm (CT#3, time-critical)</span>.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q91</div>
+During a MSLB-then-LOCA EOP sequence, <span class="hi-exam">Containment Spray is terminated in BOTH EOP-TRIP-3 (SI Termination, transition from LOCA-1 at Step 9) and EOP-LOCA-2 (Step 18)</span> — whichever applies based on subcooling / SG NR level / PZR level. Neither EOP addresses CS Spray Additive Tank isolation. See [[CFCUs]], [[EOP-TRIP-3 — SI Termination]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q33</div>
+21CS36 (RHR Supply to CS Valve) interlock: <span class="hi-exam">21CS36 cannot be OPENED until 21RH1 and 21RH2 (RHR Suction Isolation Valves) are SHUT</span>. During EOP-LOCA-3 with 21SJ44 failed to open and 21 RHR pump stopped, CS header flow is <span class="hi-exam">supplied via 22CS36 from the running 22 RHR pump</span> at step 22 — the 21SJ44 failure does NOT eliminate CS header flow.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q88</div>
+TS 3.6.2.1 application with BOTH trains of Containment Spray INOPERABLE: LCO 3.6.2.1 has NO action for both trains inoperable → <span class="hi-exam">LCO 3.0.3 applies</span>. When ONE train is restored, LCO 3.0.3 exits and the single-inoperable-train action of LCO 3.6.2.1 begins: <span class="hi-exam">restore within 72 hours or be in HOT STANDBY within the next 6 hours</span>. Key timing: the 72-hour clock starts from when the LCO was first NOT met (08:00 on June 12th), not from when one train was restored (10:00). Total: <span class="hi-exam">72 + 6 = 78 hours from 08:00 on June 12th = 14:00 on June 15th</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+APPX-7 secures CS flow path: <span class="hi-exam">stop ALL Containment Spray pumps (Step 3.a)</span> and verify 21CS36 AND 22CS36 CLOSED. CS interlock with RHR (21/22 CS36 closed before stopping affected RHR pump) prevents reverse-flow from the CS header back into RHR suction during cavitation recovery.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 SRO-A5</div>
+Emergency classification with degraded containment cooling: Containment pressure 35 psi, <span class="hi-exam">21 CS pump failed to start (only 22 CS pump running)</span>. Combined with < 3 CFCUs in low speed → meets <span class="hi-exam">CB8.P (containment barrier potential loss, 2 pts)</span> for fission product barrier assessment. This is a POTENTIAL loss, not a LOSS — containment barrier is degraded but not breached. Combined with RB2.L (5 pts) = <span class="hi-exam">7 points total = SAE</span>.
 </div>
 
 ## Connections
