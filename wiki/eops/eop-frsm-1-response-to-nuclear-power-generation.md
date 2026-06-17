@@ -16,15 +16,43 @@ Functional Restoration Procedure for responding to an ATWS (Anticipated Transien
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+### Procedure entry & FRSM-1 vs FRSM-2
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+<span class="hi-trap">Distractor trap: an Intermediate Range bistable illuminating at 15% power is not an ATWT, so the FRSM-1 entry (after a failed manual trip — verify turbine tripped, initiate rod insertion, go to FRSM-1) is the wrong response.</span> The IR Hi Flux trip is already blocked above P-10, so no reactor trip is expected and the power ascension continues while investigating the cause.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q78</div>
+ATWS at 4% power awaiting Mode 1 (steam dumps in service, 21 SGFP in service, 22 SGFP latched at idle, all AFW secured): the EOP network including FRPs is in effect in <span class="hi-exam">Modes 1–3</span>, so FRSM-1 is applicable. Crew initiates manual rod insertion, then enters FRSM-1 and <span class="hi-exam">starts both MDAFW pumps</span>. <span class="hi-trap">Trap B: FRSM-1 does NOT check feed flow generally — it specifically checks AFW flow. So even with Main Feed flow occurring (>44E4 lbm/hr), operators still start MDAFW pumps in FRSM-1.</span> <span class="hi-trap">Trap C/D: Rx trip is NOT confirmed by power &lt;5% alone — confirmation also requires negative SUR and power lowering.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q83</div>
+FRSM-1 actions cited as a distractor: <span class="hi-exam">"Establish AFW flow &gt;44E4 lbm/hr, borate RCS until IR SUR is negative"</span> are FRSM-1 actions (Red/Orange Subcriticality CFST), NOT FRSM-2 (Yellow). When the correct procedure is FRSM-2 (Yellow Loss of Core Shutdown), pairing it with these FRSM-1 actions is the wrong-procedure-with-wrong-actions trap. <span class="hi-trap">Do not confuse FRSM-1 (power-generation/ATWS, RED/ORANGE) with FRSM-2 (Loss of Core Shutdown, YELLOW). The 44E4 lbm/hr AFW flow + boration target is FRSM-1.</span>
+</div>
+
+### Reactor trip & rod insertion
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q98</div>
+ATWS at 4% power: reactor fails to trip on 21 SG LO-LO Level, all CR trip attempts fail. IAW EOP-TRIP-1, since the reactor is NOT tripped, the crew transitions to <span class="hi-exam">EOP-FRSM-1</span>. At 4% power with turbine not online, <span class="hi-exam">automatic rod insertion will NOT achieve > 48 steps/minute</span> — the EOP-TRIP-1 basis document threshold. Therefore rods must be inserted <span class="hi-exam">MANUALLY</span>. <span class="hi-trap">Trap: even though power is < 5%, the reactor trip is NOT confirmed because all trip attempts have failed — the reactor is still critical. Power range NI less than 5% alone does NOT confirm a trip.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q56</div>
+Step 8 — Local reactor trip: when directed from the Control Room to locally trip the reactor, the NEO will open <span class="hi-exam">ALL THREE sets of breakers</span>: (1) Reactor Trip Breakers, (2) Rod Drive MG Set Motor Breakers, and (3) Rod Drive MG Set Generator Breakers. <span class="hi-trap">Any ONE set of breakers being opened will trip the reactor, but the procedure directs opening ALL three to ensure the trip is achieved. Candidates may select only a subset.</span>
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q10</div>
 Step 1 (Immediate Actions) reactor trip sequence: 1) Reactor Trip Switches, 2) Trip Breaker Bezel, 3) Insert control rods at maximum rate using MANUAL and AUTO rod control, 4) Open breakers <span class="hi-exam">2E6D and 2G6D</span> (Rod Drive M-G Set), 5) Send operators to locally open reactor trip breakers. <span class="hi-trap">Tripping Main Turbine comes AFTER all step 1 attempts — it is NOT part of the immediate reactor trip sequence.</span> Emergency boration is <span class="hi-exam">step 4</span> of the procedure.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q80</div>
-Step 6 checks turbine trip status by verifying <span class="hi-exam">ALL turbine stop valve closed bi-stables are LIT on 2RP4</span>. This confirms the turbine is tripped (stop valves closed). <span class="hi-trap">2/3 Auto Stop Oil low pressure bi-stables LIT is a demand for a turbine trip, NOT confirmation of a turbine trip.</span> If the turbine trip is NOT confirmed at Step 6, the CRS directs dispatching an operator to <span class="hi-exam">locally trip the turbine at the front standard</span> (not stopping EHC pumps from the control room).
-</div>
+### Turbine trip & RCP caution
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q76</div>
@@ -32,8 +60,15 @@ Caution C1-1: RCPs should NOT be tripped with reactor power <span class="hi-exam
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q56</div>
-Step 8 — Local reactor trip: when directed from the Control Room to locally trip the reactor, the NEO will open <span class="hi-exam">ALL THREE sets of breakers</span>: (1) Reactor Trip Breakers, (2) Rod Drive MG Set Motor Breakers, and (3) Rod Drive MG Set Generator Breakers. <span class="hi-trap">Any ONE set of breakers being opened will trip the reactor, but the procedure directs opening ALL three to ensure the trip is achieved. Candidates may select only a subset.</span>
+<div class="callout-label">Exam — 2023 Q80</div>
+Step 6 checks turbine trip status by verifying <span class="hi-exam">ALL turbine stop valve closed bi-stables are LIT on 2RP4</span>. This confirms the turbine is tripped (stop valves closed). <span class="hi-trap">2/3 Auto Stop Oil low pressure bi-stables LIT is a demand for a turbine trip, NOT confirmation of a turbine trip.</span> If the turbine trip is NOT confirmed at Step 6, the CRS directs dispatching an operator to <span class="hi-exam">locally trip the turbine at the front standard</span> (not stopping EHC pumps from the control room).
+</div>
+
+### AFW, charging & boration
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q56</div>
+EOP-FRSM-1 Step 3: ensure <span class="hi-exam">at least two charging pumps</span> are running (not all three). Step 3.1: the crew is <span class="hi-exam">NOT required to manually actuate Safety Injection</span> after starting the required charging pumps. FRSM-1 has a provision for aligning charging pumps to take suction from the RWST, but manual SI actuation is not directed. <span class="hi-trap">Trap: candidates may assume all 3 charging pumps are required during an ATWS for maximum boron injection, or that manual SI is required since the automatic SI did not actuate.</span>
 </div>
 
 <div class="callout callout-scenario">
@@ -44,31 +79,6 @@ ATWT during MTLO-driven power reduction: all CR Rx trip attempts fail (Rx Trip H
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2019 #3</div>
 ATWS following two dropped rods at ~89% power. Rod speed controller fails at <span class="hi-exam">8 spm in Auto</span>; operator must recognize failure and <span class="hi-exam">insert rods in Manual at 48 spm</span>. 2CV175 Rapid Boration valve fails to open — crew establishes Rapid Boration via <span class="hi-exam">RWST flow path</span>: isolate letdown (2CV3/4/5, 2CV2, 2CV277, 2CV7), open RWST outlets (2SJ1/2SJ2), open BIT valves (2SJ4/5, 2SJ12/13), close charging discharge (2CV40/41, 2CV68/69). <span class="hi-exam">CT-52: Insert negative reactivity (rod insertion or emergency boration) prior to dispatching operators to locally trip reactor.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q56</div>
-EOP-FRSM-1 Step 3: ensure <span class="hi-exam">at least two charging pumps</span> are running (not all three). Step 3.1: the crew is <span class="hi-exam">NOT required to manually actuate Safety Injection</span> after starting the required charging pumps. FRSM-1 has a provision for aligning charging pumps to take suction from the RWST, but manual SI actuation is not directed. <span class="hi-trap">Trap: candidates may assume all 3 charging pumps are required during an ATWS for maximum boron injection, or that manual SI is required since the automatic SI did not actuate.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q98</div>
-ATWS at 4% power: reactor fails to trip on 21 SG LO-LO Level, all CR trip attempts fail. IAW EOP-TRIP-1, since the reactor is NOT tripped, the crew transitions to <span class="hi-exam">EOP-FRSM-1</span>. At 4% power with turbine not online, <span class="hi-exam">automatic rod insertion will NOT achieve > 48 steps/minute</span> — the EOP-TRIP-1 basis document threshold. Therefore rods must be inserted <span class="hi-exam">MANUALLY</span>. <span class="hi-trap">Trap: even though power is < 5%, the reactor trip is NOT confirmed because all trip attempts have failed — the reactor is still critical. Power range NI less than 5% alone does NOT confirm a trip.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q83</div>
-FRSM-1 actions cited as a distractor: <span class="hi-exam">"Establish AFW flow &gt;44E4 lbm/hr, borate RCS until IR SUR is negative"</span> are FRSM-1 actions (Red/Orange Subcriticality CFST), NOT FRSM-2 (Yellow). When the correct procedure is FRSM-2 (Yellow Loss of Core Shutdown), pairing it with these FRSM-1 actions is the wrong-procedure-with-wrong-actions trap. <span class="hi-trap">Do not confuse FRSM-1 (power-generation/ATWS, RED/ORANGE) with FRSM-2 (Loss of Core Shutdown, YELLOW). The 44E4 lbm/hr AFW flow + boration target is FRSM-1.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q78</div>
-ATWS at 4% power awaiting Mode 1 (steam dumps in service, 21 SGFP in service, 22 SGFP latched at idle, all AFW secured): the EOP network including FRPs is in effect in <span class="hi-exam">Modes 1–3</span>, so FRSM-1 is applicable. Crew initiates manual rod insertion, then enters FRSM-1 and <span class="hi-exam">starts both MDAFW pumps</span>. <span class="hi-trap">Trap B: FRSM-1 does NOT check feed flow generally — it specifically checks AFW flow. So even with Main Feed flow occurring (>44E4 lbm/hr), operators still start MDAFW pumps in FRSM-1.</span> <span class="hi-trap">Trap C/D: Rx trip is NOT confirmed by power &lt;5% alone — confirmation also requires negative SUR and power lowering.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q87</div>
-<span class="hi-trap">Distractor trap: an Intermediate Range bistable illuminating at 15% power is not an ATWT, so the FRSM-1 entry (after a failed manual trip — verify turbine tripped, initiate rod insertion, go to FRSM-1) is the wrong response.</span> The IR Hi Flux trip is already blocked above P-10, so no reactor trip is expected and the power ascension continues while investigating the cause.
 </div>
 
 ## Connections

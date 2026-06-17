@@ -16,6 +16,8 @@ Functional Restoration Procedure (Yellow Path) for responding to Steam Generator
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q79</div>
 FRHS-3 is a <span class="hi-exam">Yellow Path FRP</span> — entry is at CRS discretion. <span class="hi-exam">Step 10.7 checks for SGTR</span>; if SGTR is present, the procedure returns to the SGTR series in effect (e.g., SGTR-1). FRHS-3 establishes <span class="hi-exam">SGBD to lower affected SG level</span>, but only after the SGTR check. <span class="hi-trap">FRHS-3 does NOT take action to minimize spread of secondary contamination — that is addressed in the SGTR series.</span> <span class="hi-trap">FRHS-3 only sets affected SG MS10 to <span class="hi-exam">1045 psig</span> (not manual shut), and that setpoint would already have been established during AB.SG-0001 or EOP-SGTR-1.</span> When a ruptured SG goes water solid before SI termination during SGTR-1, the correct action is to <span class="hi-exam">continue in SGTR-1, terminate SI, and establish normal charging/letdown</span> — NOT enter FRHS-3.

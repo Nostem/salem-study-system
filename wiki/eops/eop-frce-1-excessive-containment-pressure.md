@@ -17,9 +17,16 @@ Functional restoration procedure for responding to excessive containment pressur
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q80</div>
-Step C3-1 Caution: <span class="hi-exam">If LOCA-5 is in effect, operation of containment spray pumps should be IAW LOCA-5</span> (not FRCE-1). LOCA-5 has less restrictive criteria that allow reducing the number of operating containment spray pumps based on RWST level and CFCUs to conserve RWST inventory. <span class="hi-trap">FRCE-1 would establish maximum available heat removal (more spray pumps), which conflicts with LOCA-5's priority to conserve RWST inventory. The CRS can transition to FRCE-1 from LOCA-5, but CS pump operation follows LOCA-5 guidance.</span>
+<div class="callout-label">Exam — 2012 Q93</div>
+A valid PURPLE Containment Environment path (15 psig containment) <span class="hi-exam">requires the transition to FRCE-1</span>. However, FRCE-1 <span class="hi-exam">checks whether LOCA-5 is in effect, and if so directs Containment Spray pump operation IAW LOCA-5</span> rather than starting CS pumps directly. See [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q27</div>
+With a LBLOCA in progress and LOCA-5 in effect, the operator <span class="hi-exam">WILL enter FRCE-1 on the PURPLE path of containment pressure &gt; 15 psig</span>, but FRCE-1 step 3.1 asks if LOCA-5 is in effect and the yes-path directs that the <span class="hi-exam">CS pumps are operated IAW LOCA-5</span>. In FRCE, maximum available heat removal operability is normally warranted; the less-restrictive LOCA-5 criteria is used here because recirculation flow to the RCS is not available and <span class="hi-exam">RWST water must be conserved</span> by stopping containment spray pumps when permitted.
 </div>
 
 <div class="callout callout-exam">
@@ -33,13 +40,13 @@ Step 2 — CS pump operation with LOCA-5 in effect: when transitioning to FRCE-1
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q27</div>
-With a LBLOCA in progress and LOCA-5 in effect, the operator <span class="hi-exam">WILL enter FRCE-1 on the PURPLE path of containment pressure &gt; 15 psig</span>, but FRCE-1 step 3.1 asks if LOCA-5 is in effect and the yes-path directs that the <span class="hi-exam">CS pumps are operated IAW LOCA-5</span>. In FRCE, maximum available heat removal operability is normally warranted; the less-restrictive LOCA-5 criteria is used here because recirculation flow to the RCS is not available and <span class="hi-exam">RWST water must be conserved</span> by stopping containment spray pumps when permitted.
+<div class="callout-label">Exam — 2022 Q80</div>
+Step C3-1 Caution: <span class="hi-exam">If LOCA-5 is in effect, operation of containment spray pumps should be IAW LOCA-5</span> (not FRCE-1). LOCA-5 has less restrictive criteria that allow reducing the number of operating containment spray pumps based on RWST level and CFCUs to conserve RWST inventory. <span class="hi-trap">FRCE-1 would establish maximum available heat removal (more spray pumps), which conflicts with LOCA-5's priority to conserve RWST inventory. The CRS can transition to FRCE-1 from LOCA-5, but CS pump operation follows LOCA-5 guidance.</span>
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #1</div>
-After the LBLOCA and transition out of EOP-TRIP-1, CFST monitoring identifies the <span class="hi-exam">FRCE PURPLE path (excessive containment pressure)</span> as containment pressure rises above 15 psig and CS/Phase B actuate. CRS enters EOP-FRCE-1, verifies Phase A valves shut, verifies 2VC5/2VC6 shut and LOCA-5 not in effect, reports containment spray / Phase B / CFCU / MSIV status and that all RCPs are stopped, then <span class="hi-exam">returns to the procedure in effect (EOP-LOCA-1)</span>. An enter/act/return contingency. See [[EOP-CFST-1 — Critical Safety Function Status Trees]].
+<div class="callout-label">Scenario — 2012 #1</div>
+A CFST Containment Environment <span class="hi-exam">PURPLE path (containment pressure &gt; 15 psig)</span> during the LBLOCA drives the CRS to FRCE-1. The crew verifies <span class="hi-exam">CFCUs in low speed with SW, RCPs stopped, both CS pumps running, isolations/MSLI, and no faulted SGs</span>, then returns to [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
 </div>
 
 <div class="callout callout-scenario">
@@ -47,14 +54,9 @@ After the LBLOCA and transition out of EOP-TRIP-1, CFST monitoring identifies th
 Containment pressure rises to 15 psig (steam leak in containment with MSLI failure) and the crew enters FRCE-1. They diagnose that <span class="hi-exam">no Containment Spray pumps are running</span> on the SEC signal. <strong>CT#2 (CT-3):</strong> manually start the 21 and 22 CS pumps <span class="hi-exam">prior to completion of FRCE-1 step 3</span> (if SECs are not reset, block and reset SECs first, then insert the CS actuation keys and start the pumps) — failure to manually actuate the minimum required complement of containment cooling demonstrates inability to recognize a failed/incorrect ESF actuation. <strong>CT#3 (CT-33):</strong> with RCS cooldown rate &gt; 100°F/hr, <span class="hi-exam">reduce AFW flow to no less than 1.0E4 lbm/hr to each SG prior to exiting FRCE-1</span> to minimize the cooldown and limit challenges to the subcriticality and containment CSFs. See [[2014 Scenario 1]].
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q93</div>
-A valid PURPLE Containment Environment path (15 psig containment) <span class="hi-exam">requires the transition to FRCE-1</span>. However, FRCE-1 <span class="hi-exam">checks whether LOCA-5 is in effect, and if so directs Containment Spray pump operation IAW LOCA-5</span> rather than starting CS pumps directly. See [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]].
-</div>
-
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #1</div>
-A CFST Containment Environment <span class="hi-exam">PURPLE path (containment pressure &gt; 15 psig)</span> during the LBLOCA drives the CRS to FRCE-1. The crew verifies <span class="hi-exam">CFCUs in low speed with SW, RCPs stopped, both CS pumps running, isolations/MSLI, and no faulted SGs</span>, then returns to [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
+<div class="callout-label">Scenario — 2015 #1</div>
+After the LBLOCA and transition out of EOP-TRIP-1, CFST monitoring identifies the <span class="hi-exam">FRCE PURPLE path (excessive containment pressure)</span> as containment pressure rises above 15 psig and CS/Phase B actuate. CRS enters EOP-FRCE-1, verifies Phase A valves shut, verifies 2VC5/2VC6 shut and LOCA-5 not in effect, reports containment spray / Phase B / CFCU / MSIV status and that all RCPs are stopped, then <span class="hi-exam">returns to the procedure in effect (EOP-LOCA-1)</span>. An enter/act/return contingency. See [[EOP-CFST-1 — Critical Safety Function Status Trees]].
 </div>
 
 ## Connections

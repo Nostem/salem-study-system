@@ -15,6 +15,8 @@ Provides guidance for recovery from a steam generator tube rupture concurrent wi
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q79</div>
 EOP-SGTR-4 is a distractor: <span class="hi-trap">when SI has been terminated and subcooling lowers to 0°F, the correct transition is to EOP-SGTR-3 (Subcooled Recovery), NOT EOP-SGTR-4.</span> SGTR-4 applies only when saturated conditions persist and subcooled recovery cannot be achieved.

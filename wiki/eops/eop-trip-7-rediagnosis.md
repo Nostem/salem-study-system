@@ -16,6 +16,8 @@ Provides guidance for rediagnosis of plant conditions when the CRS is uncertain 
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q25</div>
 EOP-TRIP-7 directs transitions based on symptom assessment. <span class="hi-exam">Rising SG WR level + SG blowdown radiation alarm (2R19A)</span> with lowering RCS pressure/PZR level and stable SG pressures are symptoms of a SGTR — transition to EOP-SGTR-1. These are NOT symptoms of a faulted SG (LOSC-1) or LOCA (LOCA-1). EOP-TRIP-3 only transitions to LOCA-1, LOCA-2, and IOP procedures — it cannot reach SGTR-1.

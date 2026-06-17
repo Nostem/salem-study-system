@@ -14,14 +14,23 @@ Referenced in 2023 NRC Operating Exam simulator scenarios. Details to be backfil
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+### Procedure flow and transitions
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q25</div>
-For a MSLB with MSLI failed (all MS167s open) and all SGs depressurizing, the crew transitions <span class="hi-exam">out of LOSC-1 into [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]</span>. RCP strategy after that transition: with a cooldown in progress, the <span class="hi-exam">RCP pressure-dependent trip criteria are NOT used</span> (they are for pump protection only) and RCPs continue to run to maintain forced flow. See [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]] and [[RCPs]].
+<div class="callout-label">Exam — 2012 Q78</div>
+The procedure transition to <span class="hi-exam">LOSC-1 is made before LOCA-1 when in EOP-TRIP-1</span> (TRIP-1 → LOSC-1 → LOCA-1). LOSC-1 isolates the faulted SG; its exit is to <span class="hi-exam">EOP-SGTR-1 if the SG is ruptured, otherwise to EOP-LOCA-1</span>. Once the faulted SG is isolated and the crew is in LOCA-1, the first LOCA-1 step rechecks for un-isolated faulted SGs; lowering pressures on the remaining (non-faulted) SGs are caused by cool ECCS water, so the crew continues in LOCA-1. <span class="hi-trap">There is no direct transition to EOP-LOSC-2 — LOSC-1 must be entered first.</span> See [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]].
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q9</div>
-Referenced as 2-LOSC-1 for design bases MSLB + LOOP event. Containment cooling design bases configuration requires <span class="hi-exam">3 CFCUs and 1 CS pump</span>. With 2C 4KV Vital Bus lost and 21 CFCU failed independently, design bases are NOT met (only 22 &amp; 24 CFCUs and 21 CS pump available).
+<div class="callout-label">Exam — 2014 Q85</div>
+LOSC-1 distractors for an uncontrolled all-SG depressurization (>100°F/hr cooldown): <span class="hi-trap">RCPs are tripped in LOSC-1 only when RCS pressure is &lt;1350 psi AND a cooldown is NOT in progress</span> — so tripping all RCPs (or tripping 23 AFW pump to isolate steam flow paths) is NOT the directed subsequent action here. The action that must be performed is resetting SGBD Sample Isolation in LOSC-2.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q25</div>
+For a MSLB with MSLI failed (all MS167s open) and all SGs depressurizing, the crew transitions <span class="hi-exam">out of LOSC-1 into [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]</span>. RCP strategy after that transition: with a cooldown in progress, the <span class="hi-exam">RCP pressure-dependent trip criteria are NOT used</span> (they are for pump protection only) and RCPs continue to run to maintain forced flow. See [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]] and [[RCPs]].
 </div>
 
 <div class="callout callout-exam">
@@ -29,10 +38,7 @@ Referenced as 2-LOSC-1 for design bases MSLB + LOOP event. Containment cooling d
 Entry from LOSC-2 via the LOSC-2 CAS: <span class="hi-exam">upon an SG pressure rise (e.g., 22 SG pressure rising during a MSLB at the Mixing Bottle with all MSLI attempts failed) after Step 20 of LOSC-2, GO TO EOP-LOSC-1</span>. Basis (LOSC-1 Basis Document, page 7): <span class="hi-exam">"Any cooldown operations that are performed as subsequent recovery actions will require at least one nonfaulted SG."</span> The pressure rise indicates an available nonfaulted SG, so LOSC-1 becomes the procedure of record.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q78</div>
-The procedure transition to <span class="hi-exam">LOSC-1 is made before LOCA-1 when in EOP-TRIP-1</span> (TRIP-1 → LOSC-1 → LOCA-1). LOSC-1 isolates the faulted SG; its exit is to <span class="hi-exam">EOP-SGTR-1 if the SG is ruptured, otherwise to EOP-LOCA-1</span>. Once the faulted SG is isolated and the crew is in LOCA-1, the first LOCA-1 step rechecks for un-isolated faulted SGs; lowering pressures on the remaining (non-faulted) SGs are caused by cool ECCS water, so the crew continues in LOCA-1. <span class="hi-trap">There is no direct transition to EOP-LOSC-2 — LOSC-1 must be entered first.</span> See [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]].
-</div>
+### Single-SG faulted — cooldown and step sequence
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q16</div>
@@ -44,9 +50,18 @@ For a single main steam line rupture (e.g., upstream of 24MS167), after MSLI and
 LOSC-1 step sequence for reopening 21-24 SS94 (SG B/D Sample Valves) after a single faulted SG event: <span class="hi-exam">SI is NOT reset in TRIP-1 or LOSC-1</span>. The SGBD sample isolation reset is performed in <span class="hi-exam">LOSC-1 step 6.1</span> in order to open the SS94s. <span class="hi-exam">The step PRIOR to that is RESET PHASE A</span> — Phase A must be reset before SS94s can be opened. The blowdown isolation bypass <span class="hi-exam">only bypasses the lo-lo level input into the AFW auto-start circuit</span> (which closes the SS94s) and does NOT defeat Phase A. <span class="hi-trap">Trap: with SGBD sample isolation bypass already reset, the remaining gate on SS94 reopening is Phase A — if either Train A or Train B Phase A reset PB failed to reset, the SS94s remain closed.</span>
 </div>
 
+### Containment cooling design basis
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q9</div>
+Referenced as 2-LOSC-1 for design bases MSLB + LOOP event. Containment cooling design bases configuration requires <span class="hi-exam">3 CFCUs and 1 CS pump</span>. With 2C 4KV Vital Bus lost and 21 CFCU failed independently, design bases are NOT met (only 22 &amp; 24 CFCUs and 21 CS pump available).
+</div>
+
+### Simulator scenarios
+
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2020 #3</div>
-Entered from EOP-TRIP-1 on <span class="hi-exam">21 SG pressure dropping in uncontrolled manner</span> (feedwater line break inside containment). MSLI previously initiated. PO closes/verifies closed: <span class="hi-exam">21BF13, 21BF40, 21MS7, 21MS10, 21MS18, 21MS167, and 21GB4</span> to isolate faulted 21 SG <span class="hi-exam">(CT-17 Part 2)</span>. Trips and stops 23 AFW pump. Dispatches operator to close 21MS45. PO reports 21 SG is faulted, other SGs NOT depressurizing. RCS temperature rising — PO adjusts MS10s to stabilize. Transition to <span class="hi-exam">EOP-TRIP-3</span> when RCS subcooling &gt;0 F, PZR level &gt;11%, RCS pressure stable/rising.
+<div class="callout-label">Scenario — 2014 #1</div>
+Entered from EOP-TRIP-1 on a steam leak in containment with <span class="hi-exam">MSLI failure (all MSIVs remain open)</span> and all SG pressures dropping uncontrollably; CRS then transitions to <span class="hi-exam">EOP-LOSC-2</span> for the multiple-SG depressurization. A single MSIV is later shut in the field; the resulting pressure rise in the associated SG drives the LOSC-2 CAS to <span class="hi-exam">transition back to LOSC-1</span> (one SG no longer faulted, available for subsequent recovery actions). Scenario terminates on return to LOSC-1. See [[2014 Scenario 1]].
 </div>
 
 <div class="callout callout-scenario">
@@ -55,13 +70,8 @@ Entered from EOP-TRIP-1 with <span class="hi-exam">all SGs faulted</span> and MS
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2014 #1</div>
-Entered from EOP-TRIP-1 on a steam leak in containment with <span class="hi-exam">MSLI failure (all MSIVs remain open)</span> and all SG pressures dropping uncontrollably; CRS then transitions to <span class="hi-exam">EOP-LOSC-2</span> for the multiple-SG depressurization. A single MSIV is later shut in the field; the resulting pressure rise in the associated SG drives the LOSC-2 CAS to <span class="hi-exam">transition back to LOSC-1</span> (one SG no longer faulted, available for subsequent recovery actions). Scenario terminates on return to LOSC-1. See [[2014 Scenario 1]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q85</div>
-LOSC-1 distractors for an uncontrolled all-SG depressurization (>100°F/hr cooldown): <span class="hi-trap">RCPs are tripped in LOSC-1 only when RCS pressure is &lt;1350 psi AND a cooldown is NOT in progress</span> — so tripping all RCPs (or tripping 23 AFW pump to isolate steam flow paths) is NOT the directed subsequent action here. The action that must be performed is resetting SGBD Sample Isolation in LOSC-2.
+<div class="callout-label">Scenario — 2020 #3</div>
+Entered from EOP-TRIP-1 on <span class="hi-exam">21 SG pressure dropping in uncontrolled manner</span> (feedwater line break inside containment). MSLI previously initiated. PO closes/verifies closed: <span class="hi-exam">21BF13, 21BF40, 21MS7, 21MS10, 21MS18, 21MS167, and 21GB4</span> to isolate faulted 21 SG <span class="hi-exam">(CT-17 Part 2)</span>. Trips and stops 23 AFW pump. Dispatches operator to close 21MS45. PO reports 21 SG is faulted, other SGs NOT depressurizing. RCS temperature rising — PO adjusts MS10s to stabilize. Transition to <span class="hi-exam">EOP-TRIP-3</span> when RCS subcooling &gt;0 F, PZR level &gt;11%, RCS pressure stable/rising.
 </div>
 
 ## Connections

@@ -15,6 +15,18 @@ Provides operator actions to restore core cooling when core exit thermocouples (
 ## Entry Conditions
 - Entered from EOP-CFST-1 when Core Cooling CSF status tree indicates RED path (CETs > 1200 degrees F)
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q44</div>
+<span class="hi-exam">5 or more CETs &gt; 1200°F is the Core Cooling RED path entry into FRCC-1</span> (Response to Inadequate Core Cooling) — this CET temperature indicates most liquid inventory has already been removed from the RCS and core decay heat is superheating steam in the core. See [[Incores]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q24</div>
+Core Cooling Red Path validation (no RCPs running, subcooling < 0°F): <span class="hi-exam">five (5) hottest CETs > 700°F AND RVLIS Full Range ≤ 39%</span>. <span class="hi-trap">RVLIS Upper Range is NOT applicable for core cooling status. Purple Path uses RVLIS Dynamic Range ≤ 44% (requires RCPs running). For CET-based inadequate core cooling (Red Path entry into FRCC-1), five CETs must be > 1200°F, not three.</span>
+</div>
+
 ## Key Actions
 
 ### SG Depressurization (Step 11)
@@ -22,6 +34,8 @@ Provides operator actions to restore core cooling when core exit thermocouples (
 - Purpose: reduce RCS pressure to allow accumulator injection
 
 ### Secondary Heat Sink Verification PRIOR to SG Depressurization for Accumulator Injection (Step 13)
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q18</div>
@@ -35,6 +49,8 @@ Before initiating the SG Depressurization to inject the ECCS accumulators, FRCC-
   - Adverse containment (>= 4 psig): >= 15% NR level
 - Start RCPs only in loops with SGs meeting the NR level requirement
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q24</div>
 Step 18, RCP START FOR TEMPORARY CORE COOLING: if CETs > <span class="hi-exam">1200°F</span> and at least one SG NR level > <span class="hi-exam">9%</span> (<span class="hi-exam">15%</span> adverse containment), start one RCP at a time for idle loops with SG NR > 9%. Loop around step 18 until CETs < 1200°F. <span class="hi-trap">If NO SG has NR > 9%: reset Phase A, open both CA330s, open both PZR PORVs and Rx Head Vents to reduce RCS pressure.</span>
@@ -45,12 +61,9 @@ Step 18, RCP START FOR TEMPORARY CORE COOLING: if CETs > <span class="hi-exam">1
 In EOP-FRCC-1, SG depressurization is performed at <span class="hi-exam">maximum rate</span> (not 100 degrees F/hr). For RCP start at step 18 under <span class="hi-exam">adverse containment</span> (>= 4 psig), the required SG NR level is <span class="hi-exam">>= 15%</span>. <span class="hi-trap">Trap: if you use normal containment NR level criteria (9%) instead of adverse (15%), you would incorrectly calculate three RCPs available instead of one.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q24</div>
-Core Cooling Red Path validation (no RCPs running, subcooling < 0°F): <span class="hi-exam">five (5) hottest CETs > 700°F AND RVLIS Full Range ≤ 39%</span>. <span class="hi-trap">RVLIS Upper Range is NOT applicable for core cooling status. Purple Path uses RVLIS Dynamic Range ≤ 44% (requires RCPs running). For CET-based inadequate core cooling (Red Path entry into FRCC-1), five CETs must be > 1200°F, not three.</span>
-</div>
-
 ### Safeguards Valve Alignment (Step 3)
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q72</div>
@@ -59,10 +72,7 @@ FRCC-1 Step 3 Safeguards Valve Alignment with SECs in Mode 1: the crew <span cla
 
 ### RCP Restart and PORV Operation (Step 25)
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q21</div>
-At <span class="hi-exam">Step 25</span>, RCPs are started if CETs are still <span class="hi-exam">> 1200°F</span> to clear water in the RCS intermediate leg and permit circulation of hot gases from the overheated core through the steam generators. If RCP restart is <span class="hi-exam">not effective</span> in decreasing CET temperature below 1200°F, at <span class="hi-exam">Step 25.3 BOTH PZR PORVs are opened</span> to help reduce RCS pressure and allow ECCS injection. <span class="hi-trap">Trap: not "shut both" or "open only one" — both PORVs are opened together.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q15</div>
@@ -70,8 +80,8 @@ The criteria to <span class="hi-exam">stop the last running RCP</span> in FRCC-1
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q44</div>
-<span class="hi-exam">5 or more CETs &gt; 1200°F is the Core Cooling RED path entry into FRCC-1</span> (Response to Inadequate Core Cooling) — this CET temperature indicates most liquid inventory has already been removed from the RCS and core decay heat is superheating steam in the core. See [[Incores]].
+<div class="callout-label">Exam — 2016 Q21</div>
+At <span class="hi-exam">Step 25</span>, RCPs are started if CETs are still <span class="hi-exam">> 1200°F</span> to clear water in the RCS intermediate leg and permit circulation of hot gases from the overheated core through the steam generators. If RCP restart is <span class="hi-exam">not effective</span> in decreasing CET temperature below 1200°F, at <span class="hi-exam">Step 25.3 BOTH PZR PORVs are opened</span> to help reduce RCS pressure and allow ECCS injection. <span class="hi-trap">Trap: not "shut both" or "open only one" — both PORVs are opened together.</span>
 </div>
 
 ## Connections
