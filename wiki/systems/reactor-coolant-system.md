@@ -87,6 +87,18 @@ The Reactor Coolant System (RCS) transfers heat generated in the reactor core to
 - **[[RCPs]]**: 4 vertical single-stage mixed-flow pumps, Model 93A. 6000 HP motors, 88500 gpm capacity, 277 ft developed head, 1180 RPM. Controlled leakage seal assembly. (UFSAR 5.1, T5.2-6)
 - **Pressurizer Relief Tank**: Carbon steel, 1800 ft³ total volume. Design pressure 100 psig. Two rupture discs (100 psig) discharge to containment. Normal water temperature at containment ambient (120°F max). (UFSAR 5.1, T5.2-4)
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q29</div>
+During refueling cavity fill (Mode 6, head removed), <span class="hi-exam">PZR Cold Calibrated level reads a small positive value (~3%) once cavity level (110') rises above the PZR cold cal 0% reference at the 108' 11" elevation</span> in containment; the RWST drains from 40.5' to ~27.5' supplying the cavity. The question tests the physical/elevation connections between the RWST, refueling cavity, and PZR cold cal level. See [[Refueling]], [[Pressurizer & PRT]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q66</div>
+On a loss of RCP seal injection, reactor coolant flows up the shaft across the <span class="hi-exam">RCP thermal-barrier heat exchanger (cooled by CCW)</span>, which protects the radial bearing and seals from the heat of the RCS and provides their coolant/lubricant. See [[RCPs]].
+</div>
+
 ## RCS Piping
 
 | Parameter | Value | Source |
@@ -104,6 +116,13 @@ The Reactor Coolant System (RCS) transfers heat generated in the reactor core to
 - **PORVs:** 2 per unit, Copes-Vulcan diaphragm-operated, set at 2335 psig (reset 2315 psig), rated capacity 210000 lb/hr each. 2" valve with 3" connections. (UFSAR T5.2-8)
 - **PORV Block Valves:** 2 per unit, Velan 3" motor-operated gate valves with Limitorque operators. (UFSAR T5.2-8)
 - All safety/relief valves discharge to the pressurizer relief tank.
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q36</div>
+A <span class="hi-exam">PZR Safety Valve failing open</span> pressurizes the PRT until its rupture disk ruptures, venting saturated steam to containment (rising containment humidity/pressure). A <span class="hi-trap">RCP #1 seal failure is seen as rising RCDT level, NOT in containment</span> (closed system); a spray valve failing open lowers PZR pressure but does not change containment conditions. See [[Pressurizer & PRT]], [[Containment]].
+</div>
 
 ## RCS Pressure Drop
 
@@ -124,9 +143,21 @@ Three principal high points: pressurizer, reactor vessel head, and steam generat
 - **Reactor vessel head vent:** Dedicated ¾" Schedule 160 vent tap with 3/8" restricting orifice. Vents to PRT or containment via redundant solenoid valves. Remote-manually actuated from control room via key lock switch. Powered from two redundant vital DC buses. Designed to NUREG-0737 requirements. Vent size within LOCA definition (3/8" orifice) — inadvertent opening does not require ECCS actuation. Can vent ½ gas volume of RCS in 1 hour. (UFSAR 5.1)
 - **Steam generator tube invert:** Cannot be vented at that location. Westinghouse study (WCAP-9600/9601) concluded small amount of noncondensables would not significantly impact natural circulation.
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q33</div>
+Hydrogen is removed from the RCS before a refueling outage by chemical and mechanical degassification to <span class="hi-exam">prevent an explosive H2 concentration when O2 is introduced</span>. See [[CVCS]], [[S2.OP-SO.CVC-0011 — RCS Degassification]].
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q17</div>
 During RCS depressurization without RCPs running (e.g., EOP-LOCA-5), <span class="hi-exam">upper head voiding IS expected</span>. Without forced circulation, the upper head contains hotter liquid that <span class="hi-exam">flashes to steam during depressurization</span>, displacing water into the pressurizer and causing a <span class="hi-exam">rapidly rising PZR level</span>. Monitor PZR level to stop depressurization before going solid.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A1</div>
+EOP-FRCI-3 Attachment 1 maximum vent time calculation for reactor vessel upper head voiding: at <span class="hi-exam">1600 psig RCS pressure</span>, hydrogen flow rate from Figure 1 is <span class="hi-exam">3333 cfm</span>. Maximum containment hydrogen increase limited to keep total below <span class="hi-exam">3.0%</span>. With 2.3% current H2 and 140F containment temperature, maximum vent time = <span class="hi-exam">4.5 minutes</span>.
 </div>
 
 ## Tech Spec LCOs
@@ -142,9 +173,31 @@ During RCS depressurization without RCPs running (e.g., EOP-LOCA-5), <span class
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.8]]** — Chemistry
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.9]]** — Specific Activity
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q19</div>
 Rising RCS activity is detected by the <span class="hi-exam">2R31 Letdown Line-Failed Fuel Process Rad Monitor</span>. To determine whether rising RCS activity is caused by a <span class="hi-exam">crud burst</span> (release of activated corrosion products) or <span class="hi-exam">failed fuel</span> (fuel-clad defect releasing fission products), AB.RC-0002 directs a <span class="hi-exam">Shift Chemistry Technician isotopic (radiological) analysis of the RCS</span> — the two mechanisms produce different radionuclide concentrations. See [[AB.RC-0002 — High Activity in the RCS]] and [[Radiation Monitoring]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q98</div>
+On a rising RCS activity (2R31 Letdown Line Monitor WARNING), AB.RC-0002 directs <span class="hi-exam">RP Technician surveys to determine if radiation levels changed access requirements</span> (chemistry sampling, not RP surveys, confirms the activity rise). See [[Radiation Monitoring]], [[AB.RC-0002 — High Activity in the RCS]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A1-1</div>
+Same evolution with different data: previous sump-pump stop 1510 yesterday, start 0750 today → <span class="hi-exam">1000 minutes</span> elapsed → <span class="hi-exam">0.3 gpm</span> per Attachment 3 (page 1 of 2). Result is below BOTH thresholds, so NO action threshold is taken — Section 5.6 is not initiated and S2.OP-ST.RC-0008 / TS 3.4.7.2 referral are not required.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A1-1</div>
+Containment Sump leak-rate quantification (S2.OP-SO.RC-0004 §5.3) following an unexpected OHA C-2 CNTMT SUMP PMP START with no other RCS-leak indications. <span class="hi-exam">320 minutes</span> between sump-pump cycles → <span class="hi-exam">~0.9 gpm</span> per Attachment 3. Action thresholds: &gt; 0.85 gpm initiates Section 5.6; &gt; 1.0 gpm initiates S2.OP-ST.RC-0008 + TS 3.4.7.2 referral. At 0.9 gpm, only Section 5.6 is initiated — TS 3.4.7.2 unidentified-leakage LCO (≤1 gpm) remains MET.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+A 25 gpm RCS leak is diagnosed from <span class="hi-exam">rising charging flow, slowly lowering PZR level, rising 2R11A containment radiation, and OHA C-2 CNTMT SUMP PMP START</span>. Crew enters AB.RC-0001, quantifies the leak with S2.OP-ST.RC-0008 (RCS Water Inventory Balance), and enters <span class="hi-exam">TSAS 3.4.7.2.b (action b) for unidentified RCS leakage and 3.5.2.a (action a) for ECCS</span>. The leak then worsens into an SBLOCA requiring a reactor trip and SI. See [[2014 Scenario 3]].
 </div>
 
 ## Related EOPs
@@ -153,9 +206,59 @@ Rising RCS activity is detected by the <span class="hi-exam">2R31 Letdown Line-F
 - [[EOP-LOCA Series]] — RCS inventory loss scenarios
 - [[EOP-SGTR-1]] — primary-to-secondary leakage through SG tubes
 
+**Exam & operating coverage:**
+
+### Bleed and Feed / Loss of Heat Sink
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+FRHS-1 RCS Bleed and Feed: <span class="hi-exam">Step 23 (sequence) — STOP ALL RCPs (21-24)</span> before initiating SI to prevent uncontrolled RCS depressurization through PORV bleed flow with running RCPs. Step 24 alternate path opens 2RC40 thru 2RC43 (Reactor Head Vents) at 2RP3 backpanel when 2PR2 PORV fails to open — providing an alternate RCS pressure relief path through the reactor vessel head.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 Sim-d</div>
+EOP-FRHS-1 Bleed and Feed (Steps 21-25): loss of all AFW, 3 SG WR levels &lt; 32% → Bleed and Feed criteria met. Initiate SI on both trains. Verify charging/SI pumps running, BIT flow ~150-160 gpm, Table C valves open. Open both PORV stop valves (2PR6, 2PR7). Open both PORVs in Manual — <span class="hi-exam">2PR2 fails to open</span> (alternate path). At <span class="hi-exam">2RP2 backpanel, use four keys to open reactor head vent valves 2RC40 through 2RC43</span> as alternate bleed path. <span class="hi-trap">Reactor Head Vents are NOT the standard bleed path — only used when a PORV fails to open.</span>
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 Sim-d</div>
 EOP-FRHS-1 Bleed and Feed: actuate SI, open PZR PORVs. If 2PR2 fails to open, open <span class="hi-exam">reactor head vent valves 2RC40 through 2RC43</span> (key-locked on 2RP2 backpanel) as alternate bleed path. Requires going to backpanel to insert key and turn each valve individually.
+</div>
+
+### Natural Circulation / Cooldown
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-e</div>
+During a TRIP-4 natural-circulation cooldown, RCS is depressurized with <span class="hi-exam">ONE PZR PORV (2PR1 or 2PR2) to 1865 psig</span> while charging is maintained <span class="hi-exam">≥87 gpm</span> and letdown restored. <span class="hi-exam">Alternate path: the PORV sticks open and its block valve also fails — the unisolable depressurization requires manual Safety Injection before RCS subcooling is lost (~3 min after the PORV opens), because automatic SI is failed.</span> SG NR level is held 9-33% and RCS Thots driven &lt;543°F before blocking HI STEAM LINE FLOW SI.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q85</div>
+Before transitioning to a Natural Circulation Rapid Cooldown (EOP-TRIP-5 / TRIP-6), <span class="hi-exam">EOP-TRIP-4 (Natural Circulation Cooldown) steps 3-17 must be completed</span> — establishing adequate SDM and upper-head cooling, blocking SI signals, and performing the initial cooldown/depressurization (per the Step 1 caution in TRIP-5/6). See [[EOP-TRIP-4 — Natural Circulation]].
+</div>
+
+### LOCA / Post-LOCA
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q21</div>
+RCS break flow during a post-LOCA depressurization is a function of subcooling: with SI pumps stopped and only charging providing makeup, EOP-LOCA-2 Step 31 directs <span class="hi-exam">minimizing RCS subcooling to reduce RCS break flow</span>. See [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]. Related W/E evolution questions: [[2015 Q23]] (FRHS-1 bleed-and-feed — delay raises RCS pressure, which limits ECCS flow), [[2015 Q22]] / [[2015 Q24]] (LOCA outside containment / loss of emergency recirculation — RHR-to-RCS interconnections).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+A <span class="hi-exam">Large Break LOCA occurs ~5 min after the false-SI reactor trip</span>, with the RCS rupture on the 21 loop (<span class="hi-exam">21 SG pressure lower than the other SGs</span>). The <span class="hi-exam">RCPs are stopped</span> on the SI/LOCA per [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]. Cold leg recirculation transfer occurs at <span class="hi-exam">RWST 15.2 ft</span> per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]].
+</div>
+
+### SGTR / Other Transients
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q51</div>
+On a turbine-trip-induced reactor trip with the Steam Dumps failing to ARM, the SG Atmospheric Relief Valves (MS10s) open and <span class="hi-exam">RCS Tavg stabilizes at ~551-552°F</span>. RCS pressure rises but PZR spray opens fully to keep it below ~2335 psig — the PORVs and PZR Safeties do NOT open. See [[Steam Dumps]], [[Pressurizer & PRT]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+During SI Termination (EOP-TRIP-3), the crew terminates an Inadvertent SI and manually controls RCS pressure (both PZR pressure control channels failed low). After SI termination and re-establishing letdown, a <span class="hi-exam">24 SG tube rupture (SGTR)</span> initiates; CRS directs starting ECCS pumps as necessary and transitions to EOP-SGTR-1.
 </div>
 
 ## Thermal-Hydraulic Design
@@ -254,6 +357,13 @@ The design basis for DNB is that there is at least a 95% probability at the 95% 
 
 **STDP (Standard Thermal Design Procedure):** Used when RTDP is not applicable. Minimum steady state pressure of 2218 psia is assumed. (UFSAR T4.4-1)
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q29</div>
+A reduction in a single RC loop flow (e.g., 11 loop −5%) lowers <span class="hi-exam">total flow through the core</span>. Using Q=mc(ΔT), with mass flow rate lowered and power held constant (MT governor valve reaction maintains power), <span class="hi-exam">core ΔT must rise</span>. The net effect is the <span class="hi-trap">reactor core operating CLOSER to DNB</span>. (Loop ΔT rises, not lowers; SG steam pressure is not raised by the flow reduction since power is unchanged.)
+</div>
+
 ### Key Exam Concepts
 
 - DNB = transition from nucleate boiling to film boiling on fuel rod surface; results in rapid temperature increase
@@ -262,12 +372,12 @@ The design basis for DNB is that there is at least a 95% probability at the 95% 
 - Core average void fraction is less than 0.5% (due to local/statistical boiling only)
 - RFA fuel has higher DNBR margins than V5H fuel (better mixing from IFM grids)
 
-### Thermal-Hydraulic Tech Spec LCOs
+**Exam & operating coverage:**
 
-- **TS 3/4.2.1** — Axial Flux Difference (delta-I)
-- **TS 3/4.2.2** — Heat Flux Hot Channel Factor (FQ)
-- **TS 3/4.2.3** — Nuclear Enthalpy Rise Hot Channel Factor (F-delta-H)
-- **TS 3/4.2.5** — DNB Parameters (pressurizer pressure, RCS Tavg, RCS flow)
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q69</div>
+Subcooling calculation when subcooling monitor is NOT functional: convert <span class="hi-exam">psig to PSIA by adding 14.7 (rounded to 15)</span>, use steam tables to find TSAT. Subcooling = TSAT - <span class="hi-exam">Hottest CET</span> (not TAVG). <span class="hi-trap">Two traps: (1) subtracting 15 instead of adding gives wrong TSAT, (2) using TAVG instead of Hottest CET gives wrong subcooling. Hottest CET is always the correct reference for subcooling calculation.</span>
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q73</div>
@@ -279,109 +389,23 @@ Steam table subcooling calculation: at <span class="hi-exam">1805 psig (1820 psi
 Condensate depression effects: decreasing condensate depression (from 5°F to 2°F) means the condensate is <span class="hi-exam">closer to saturation temperature</span>. This produces <span class="hi-exam">less NPSH at the condensate pump suction (closer to cavitation)</span> because there is less subcooling to prevent flashing. However, because the feedwater is hotter, the SGs must add <span class="hi-exam">less sensible heat to reach saturation — improving steam cycle thermal efficiency</span>. <span class="hi-trap">Trap: lower condensate depression means higher efficiency but worse pump cavitation margin — effects go in opposite directions.</span>
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2018 Sim-d</div>
-EOP-FRHS-1 Bleed and Feed (Steps 21-25): loss of all AFW, 3 SG WR levels &lt; 32% → Bleed and Feed criteria met. Initiate SI on both trains. Verify charging/SI pumps running, BIT flow ~150-160 gpm, Table C valves open. Open both PORV stop valves (2PR6, 2PR7). Open both PORVs in Manual — <span class="hi-exam">2PR2 fails to open</span> (alternate path). At <span class="hi-exam">2RP2 backpanel, use four keys to open reactor head vent valves 2RC40 through 2RC43</span> as alternate bleed path. <span class="hi-trap">Reactor Head Vents are NOT the standard bleed path — only used when a PORV fails to open.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 RO-A1</div>
-EOP-FRCI-3 Attachment 1 maximum vent time calculation for reactor vessel upper head voiding: at <span class="hi-exam">1600 psig RCS pressure</span>, hydrogen flow rate from Figure 1 is <span class="hi-exam">3333 cfm</span>. Maximum containment hydrogen increase limited to keep total below <span class="hi-exam">3.0%</span>. With 2.3% current H2 and 140F containment temperature, maximum vent time = <span class="hi-exam">4.5 minutes</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q69</div>
-Subcooling calculation when subcooling monitor is NOT functional: convert <span class="hi-exam">psig to PSIA by adding 14.7 (rounded to 15)</span>, use steam tables to find TSAT. Subcooling = TSAT - <span class="hi-exam">Hottest CET</span> (not TAVG). <span class="hi-trap">Two traps: (1) subtracting 15 instead of adding gives wrong TSAT, (2) using TAVG instead of Hottest CET gives wrong subcooling. Hottest CET is always the correct reference for subcooling calculation.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2018 RO-A2</div>
-Control room log OTDT setpoint channel check: each RC loop's OTDT console reading compared against REM FIGURE 5 (A-D) setpoint band. Tavg Channel Check requires all 4 loop average temperatures within <span class="hi-exam">3 degrees F</span> (S/R 4.3.2.1.1, Modes 1-3). Loop 24 OTDT of 72 deg F found <span class="hi-exam">outside the REM FIGURE 5D setpoint band</span>.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 RO-A1-1</div>
-Containment Sump leak-rate quantification (S2.OP-SO.RC-0004 §5.3) following an unexpected OHA C-2 CNTMT SUMP PMP START with no other RCS-leak indications. <span class="hi-exam">320 minutes</span> between sump-pump cycles → <span class="hi-exam">~0.9 gpm</span> per Attachment 3. Action thresholds: &gt; 0.85 gpm initiates Section 5.6; &gt; 1.0 gpm initiates S2.OP-ST.RC-0008 + TS 3.4.7.2 referral. At 0.9 gpm, only Section 5.6 is initiated — TS 3.4.7.2 unidentified-leakage LCO (≤1 gpm) remains MET.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 RO-A1-1</div>
-Same evolution with different data: previous sump-pump stop 1510 yesterday, start 0750 today → <span class="hi-exam">1000 minutes</span> elapsed → <span class="hi-exam">0.3 gpm</span> per Attachment 3 (page 1 of 2). Result is below BOTH thresholds, so NO action threshold is taken — Section 5.6 is not initiated and S2.OP-ST.RC-0008 / TS 3.4.7.2 referral are not required.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 Sim-d</div>
-FRHS-1 RCS Bleed and Feed: <span class="hi-exam">Step 23 (sequence) — STOP ALL RCPs (21-24)</span> before initiating SI to prevent uncontrolled RCS depressurization through PORV bleed flow with running RCPs. Step 24 alternate path opens 2RC40 thru 2RC43 (Reactor Head Vents) at 2RP3 backpanel when 2PR2 PORV fails to open — providing an alternate RCS pressure relief path through the reactor vessel head.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 Sim-e</div>
-During a TRIP-4 natural-circulation cooldown, RCS is depressurized with <span class="hi-exam">ONE PZR PORV (2PR1 or 2PR2) to 1865 psig</span> while charging is maintained <span class="hi-exam">≥87 gpm</span> and letdown restored. <span class="hi-exam">Alternate path: the PORV sticks open and its block valve also fails — the unisolable depressurization requires manual Safety Injection before RCS subcooling is lost (~3 min after the PORV opens), because automatic SI is failed.</span> SG NR level is held 9-33% and RCS Thots driven &lt;543°F before blocking HI STEAM LINE FLOW SI.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q21</div>
-RCS break flow during a post-LOCA depressurization is a function of subcooling: with SI pumps stopped and only charging providing makeup, EOP-LOCA-2 Step 31 directs <span class="hi-exam">minimizing RCS subcooling to reduce RCS break flow</span>. See [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]]. Related W/E evolution questions: [[2015 Q23]] (FRHS-1 bleed-and-feed — delay raises RCS pressure, which limits ECCS flow), [[2015 Q22]] / [[2015 Q24]] (LOCA outside containment / loss of emergency recirculation — RHR-to-RCS interconnections).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q29</div>
-During refueling cavity fill (Mode 6, head removed), <span class="hi-exam">PZR Cold Calibrated level reads a small positive value (~3%) once cavity level (110') rises above the PZR cold cal 0% reference at the 108' 11" elevation</span> in containment; the RWST drains from 40.5' to ~27.5' supplying the cavity. The question tests the physical/elevation connections between the RWST, refueling cavity, and PZR cold cal level. See [[Refueling]], [[Pressurizer & PRT]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q33</div>
-Hydrogen is removed from the RCS before a refueling outage by chemical and mechanical degassification to <span class="hi-exam">prevent an explosive H2 concentration when O2 is introduced</span>. See [[CVCS]], [[S2.OP-SO.CVC-0011 — RCS Degassification]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q36</div>
-A <span class="hi-exam">PZR Safety Valve failing open</span> pressurizes the PRT until its rupture disk ruptures, venting saturated steam to containment (rising containment humidity/pressure). A <span class="hi-trap">RCP #1 seal failure is seen as rising RCDT level, NOT in containment</span> (closed system); a spray valve failing open lowers PZR pressure but does not change containment conditions. See [[Pressurizer & PRT]], [[Containment]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q85</div>
-Before transitioning to a Natural Circulation Rapid Cooldown (EOP-TRIP-5 / TRIP-6), <span class="hi-exam">EOP-TRIP-4 (Natural Circulation Cooldown) steps 3-17 must be completed</span> — establishing adequate SDM and upper-head cooling, blocking SI signals, and performing the initial cooldown/depressurization (per the Step 1 caution in TRIP-5/6). See [[EOP-TRIP-4 — Natural Circulation]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q98</div>
-On a rising RCS activity (2R31 Letdown Line Monitor WARNING), AB.RC-0002 directs <span class="hi-exam">RP Technician surveys to determine if radiation levels changed access requirements</span> (chemistry sampling, not RP surveys, confirms the activity rise). See [[Radiation Monitoring]], [[AB.RC-0002 — High Activity in the RCS]].
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #2</div>
-During SI Termination (EOP-TRIP-3), the crew terminates an Inadvertent SI and manually controls RCS pressure (both PZR pressure control channels failed low). After SI termination and re-establishing letdown, a <span class="hi-exam">24 SG tube rupture (SGTR)</span> initiates; CRS directs starting ECCS pumps as necessary and transitions to EOP-SGTR-1.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q29</div>
-A reduction in a single RC loop flow (e.g., 11 loop −5%) lowers <span class="hi-exam">total flow through the core</span>. Using Q=mc(ΔT), with mass flow rate lowered and power held constant (MT governor valve reaction maintains power), <span class="hi-exam">core ΔT must rise</span>. The net effect is the <span class="hi-trap">reactor core operating CLOSER to DNB</span>. (Loop ΔT rises, not lowers; SG steam pressure is not raised by the flow reduction since power is unchanged.)
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2014 #3</div>
-A 25 gpm RCS leak is diagnosed from <span class="hi-exam">rising charging flow, slowly lowering PZR level, rising 2R11A containment radiation, and OHA C-2 CNTMT SUMP PMP START</span>. Crew enters AB.RC-0001, quantifies the leak with S2.OP-ST.RC-0008 (RCS Water Inventory Balance), and enters <span class="hi-exam">TSAS 3.4.7.2.b (action b) for unidentified RCS leakage and 3.5.2.a (action a) for ECCS</span>. The leak then worsens into an SBLOCA requiring a reactor trip and SI. See [[2014 Scenario 3]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q51</div>
-On a turbine-trip-induced reactor trip with the Steam Dumps failing to ARM, the SG Atmospheric Relief Valves (MS10s) open and <span class="hi-exam">RCS Tavg stabilizes at ~551-552°F</span>. RCS pressure rises but PZR spray opens fully to keep it below ~2335 psig — the PORVs and PZR Safeties do NOT open. See [[Steam Dumps]], [[Pressurizer & PRT]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q66</div>
-On a loss of RCP seal injection, reactor coolant flows up the shaft across the <span class="hi-exam">RCP thermal-barrier heat exchanger (cooled by CCW)</span>, which protects the radial bearing and seals from the heat of the RCS and provides their coolant/lubricant. See [[RCPs]].
-</div>
-
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q73</div>
 When the SMM is inoperable, RCS saturation/subcooling is determined per EOP-CFST-1 using <span class="hi-exam">RCS pressure (PI-403 or PI-405)</span> with the CFST Subcooling Tables; RCS temperature uses <span class="hi-exam">CETs (WR Thot RTDs if CETs unavailable)</span>. See [[EOP-CFST-1 — Critical Safety Function Status Trees]].
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #1</div>
-A <span class="hi-exam">Large Break LOCA occurs ~5 min after the false-SI reactor trip</span>, with the RCS rupture on the 21 loop (<span class="hi-exam">21 SG pressure lower than the other SGs</span>). The <span class="hi-exam">RCPs are stopped</span> on the SI/LOCA per [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]. Cold leg recirculation transfer occurs at <span class="hi-exam">RWST 15.2 ft</span> per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]].
+### Thermal-Hydraulic Tech Spec LCOs
+
+- **TS 3/4.2.1** — Axial Flux Difference (delta-I)
+- **TS 3/4.2.2** — Heat Flux Hot Channel Factor (FQ)
+- **TS 3/4.2.3** — Nuclear Enthalpy Rise Hot Channel Factor (F-delta-H)
+- **TS 3/4.2.5** — DNB Parameters (pressurizer pressure, RCS Tavg, RCS flow)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 RO-A2</div>
+Control room log OTDT setpoint channel check: each RC loop's OTDT console reading compared against REM FIGURE 5 (A-D) setpoint band. Tavg Channel Check requires all 4 loop average temperatures within <span class="hi-exam">3 degrees F</span> (S/R 4.3.2.1.1, Modes 1-3). Loop 24 OTDT of 72 deg F found <span class="hi-exam">outside the REM FIGURE 5D setpoint band</span>.
 </div>
 
 ## Connections

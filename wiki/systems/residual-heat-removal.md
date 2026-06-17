@@ -53,9 +53,21 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 | Fluid Temperature Range | 40–350°F | UFSAR T5.5-1 |
 | Material | Austenitic stainless steel | UFSAR T5.5-1 |
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2012 Sim-d</div>
 Restoring shutdown cooling after the in-service RHR pump trips (MODE 4): per AB.RHR-0001, place the alternate RHR loop (22, aligned for ECCS) in service via Attachment 2. Local actions open <span class="hi-exam">22RH12 (HX bypass isolation), 22RH17 (letdown isolation), and 22RH18-NS (letdown isolation air supply)</span>; control-room actions close 22RH18 / 21RH18 (pump flow control), 2RH20 (HX bypass), and <span class="hi-exam">21CC16</span> while opening <span class="hi-exam">22CC16</span> (HX CCW outlet), then START the 22 RHR pump and throttle 22RH18 / 2RH20 for flow. Acceptance: RHR flow <span class="hi-exam">stable 1800-3000 gpm</span> and RCS temperature stable or lowering; flow is summed as 21SJ49 + 22SJ49 RHR DISCH TO COLD LEGS flow.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A3</div>
+22 RHR pump room radiological survey for emergency stay-time calculation. Highest dose-rate point in the pump room is <span class="hi-exam">40 mrem/hr</span> (the 250 mrem/hr point is in the 22 RHR HX area, which is OUTSIDE the work-scope boundary of the JPM and must be excluded). Work scope: a detailed pre-start inspection of 22 RHR pump room before starting the pump.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q33</div>
+RHR pump 4KV vital bus power supplies: <span class="hi-exam">11 RHR pump from A bus, 12 RHR pump from B bus</span>. <span class="hi-trap">Other ECCS pumps are powered differently: 11/12 SI and 11/12 CS are from A and C; charging pumps 21/22 are from B and C.</span> (Unit 2 SW pumps run in reverse order: 21/22 from C, 25/26 from A.)
 </div>
 
 ## Piping Design
@@ -68,6 +80,23 @@ Restoring shutdown cooling after the in-service RHR pump trips (MODE 4): per AB.
 
 *Unit 2 piping downstream of 2RH75 & 76 designed to 600 psig.
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q33</div>
+Confirms the cooldown-rate adjustment per S2.OP-SO.RHR-0001: to <span class="hi-exam">REDUCE the cooldown rate, throttle CLOSED on 21RH18 (RHR HX Flow Control valve) while throttling OPEN on 2RH20 (RHR HX Bypass valve)</span> — less water passes through the RHR HX while total RHR system flow stays constant. <span class="hi-trap">Throttling both RH18 and RH20 closed does NOT keep flow constant; throttling RH18 open (more HX flow) would raise the cooldown rate.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q22</div>
+EOP-LOCA-6 isolates a LOCA outside containment in the RHR/SI piping by closing/checking closed <span class="hi-exam">2RH1 OR 2RH2 (RHR common suction), 21 and 22 RH19s (RHR discharge X-CONN), 2RH26 (hot leg isolation), and 21 and 22 SJ49s (RHR DISCH TO COLD LEGS)</span>. A leak anywhere between the RH1/2 valves and the SJ49 valves is bounded by these isolations; the <span class="hi-trap">downstream/outlet side of the SJ49 valves cannot be isolated</span> because that section ties directly into the RCS cold leg. See [[EOP-LOCA-6 — LOCA Outside Containment]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q31</div>
+SDC operation with 21 RHR loop in service: <span class="hi-exam">throttling 2RH20 (RHR HX Bypass Valve) more OPEN bypasses flow around the in-service HX → water returning to the RCS RISES in temperature</span> (more warm RCS water mixed in with cooled RHR HX outlet water). Conversely, <span class="hi-exam">throttling 21RH18 (RHR HX FLOW CONT VALVE) more open increases flow through the HX → outlet temperature LOWERS</span>. With 22 RHR loop O/S aligned for ECCS (RH19s open), 21SJ49 shut still allows discharge through normally open 22SJ49. 22CC16 is normally shut and 22RH12 shut — no flow through 22 CCHX from 21 loop regardless. Per S2.OP-SO.RHR-0001.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q3</div>
 RHR system physical connections: RHR Pumps take suction from the <span class="hi-exam">21 Hot Leg</span> and can be aligned to discharge into the <span class="hi-exam">23 and 24 Hot Legs</span>. The suction and discharge connections are NOT on the same loops — suction is from Loop 1, discharge is to Loops 3 and 4.
@@ -79,13 +108,8 @@ During solid plant operations in MODE 5, throttling 22RH18 (RHR HX Outlet Valve)
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q30</div>
-To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining constant RHR flow: <span class="hi-exam">lower RH18 demand</span> (closes HX flow control valves, reducing flow through the RHR HX) and <span class="hi-exam">raise RH20 demand</span> (opens HX bypass valve, routing more flow around the HX). Total RHR flow stays constant but less passes through the heat exchanger. Reverse actions (raise RH18 / lower RH20) would increase cooldown rate.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q33</div>
-Confirms the cooldown-rate adjustment per S2.OP-SO.RHR-0001: to <span class="hi-exam">REDUCE the cooldown rate, throttle CLOSED on 21RH18 (RHR HX Flow Control valve) while throttling OPEN on 2RH20 (RHR HX Bypass valve)</span> — less water passes through the RHR HX while total RHR system flow stays constant. <span class="hi-trap">Throttling both RH18 and RH20 closed does NOT keep flow constant; throttling RH18 open (more HX flow) would raise the cooldown rate.</span>
+<div class="callout-label">Exam — 2019 Q63</div>
+During LOCA outside containment (EOP-LOCA-6), the crew is MOST concerned with <span class="hi-exam">RHR piping connecting to the RCS</span> because it is only rated to <span class="hi-exam">600 psig</span> (vs RCS piping rated to 2500 psig). This is the basis for the leak isolation strategy in LOCA-6.
 </div>
 
 <div class="callout callout-exam">
@@ -94,15 +118,17 @@ RHR HX tube blockage from foreign material reduces heat transfer, lowering coold
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q31</div>
-SDC operation with 21 RHR loop in service: <span class="hi-exam">throttling 2RH20 (RHR HX Bypass Valve) more OPEN bypasses flow around the in-service HX → water returning to the RCS RISES in temperature</span> (more warm RCS water mixed in with cooled RHR HX outlet water). Conversely, <span class="hi-exam">throttling 21RH18 (RHR HX FLOW CONT VALVE) more open increases flow through the HX → outlet temperature LOWERS</span>. With 22 RHR loop O/S aligned for ECCS (RH19s open), 21SJ49 shut still allows discharge through normally open 22SJ49. 22CC16 is normally shut and 22RH12 shut — no flow through 22 CCHX from 21 loop regardless. Per S2.OP-SO.RHR-0001.
+<div class="callout-label">Exam — 2023 Q30</div>
+To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining constant RHR flow: <span class="hi-exam">lower RH18 demand</span> (closes HX flow control valves, reducing flow through the RHR HX) and <span class="hi-exam">raise RH20 demand</span> (opens HX bypass valve, routing more flow around the HX). Total RHR flow stays constant but less passes through the heat exchanger. Reverse actions (raise RH18 / lower RH20) would increase cooldown rate.
 </div>
 
 ## Valve Failure Modes
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q31</div>
-21RH18 (RHR HX Outlet Valve) fails <span class="hi-exam">OPEN on loss of 2A VIB</span> (115V Vital Instrument Bus) — increases flow through RHR HX, <span class="hi-exam">RCS temperature lowers</span>. 2RH20 (RHR HX Bypass Valve) fails <span class="hi-exam">OPEN on loss of 2D VIB</span> — independent power supply from 21RH18. <span class="hi-trap">Loss of 2A VIB only affects 21RH18, NOT 2RH20. 2RH20 remains as-is unless 2D VIB is lost.</span>
+<div class="callout-label">Exam — 2012 Q34</div>
+A break in the air line to 21RH18 (RHR HX Outlet FCV) has <span class="hi-exam">NO effect on the RHR system</span> — the RH18 valves are <span class="hi-exam">fail as-is</span>, so losing the air supply leaves them at their current position and the stable shutdown-cooling conditions (190°F, 1800 gpm/loop, 2RH20 10% open) are unaffected. <span class="hi-trap">Distractors assume 21RH18 fails open (would cause a cooldown) or fails shut — it does neither. Per AB.CA-0001 (Loss of Control Air).</span>
 </div>
 
 <div class="callout callout-exam">
@@ -111,13 +137,8 @@ On a loss of <span class="hi-exam">control air</span>, both 21RH18 (RHR HX FLOW 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q34</div>
-A break in the air line to 21RH18 (RHR HX Outlet FCV) has <span class="hi-exam">NO effect on the RHR system</span> — the RH18 valves are <span class="hi-exam">fail as-is</span>, so losing the air supply leaves them at their current position and the stable shutdown-cooling conditions (190°F, 1800 gpm/loop, 2RH20 10% open) are unaffected. <span class="hi-trap">Distractors assume 21RH18 fails open (would cause a cooldown) or fails shut — it does neither. Per AB.CA-0001 (Loss of Control Air).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q32</div>
-Solid plant ops with RHR pump trip: RCS pressure <span class="hi-exam">rises</span> (charging continues adding inventory with no RHR pump to provide letdown path). Letdown line pressure <span class="hi-exam">lowers</span> (loss of RHR discharge pressure). 2CV18 throttles closed attempting to maintain letdown pressure at setpoint. 2CV6 (Letdown Relief Valve) opens at <span class="val-trip">600 psig</span> to protect downstream piping if pressure not controlled.
+<div class="callout-label">Exam — 2016 Q9</div>
+<span class="hi-exam">2RH25 (RHR Hot Leg Recirc discharge relief)</span> is located <span class="hi-exam">upstream of normally shut 2RH26</span>, which supplies Hot Leg Recirc during accident conditions. 2RH25 is located <span class="hi-exam">in containment</span>, and discharges to the <span class="hi-exam">containment trench → containment pocket sump</span>. With the valve passing flow continuously and no operator action, <span class="hi-exam">OHA C-2 (CNTMT SUMP PUMP START) annunciates when the containment sump pump starts</span>. <span class="hi-trap">RCDT and PRT are also in containment and are plausible relief collection points for other relief paths, but 2RH25 does NOT discharge to RCDT, PRT, or the RHR sump. RHR sump pump start (OHA-41 point 758) would only occur if the relief were directed to the RHR sump.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -126,13 +147,30 @@ RHR pump power supply: <span class="hi-exam">22 RHR Pump is powered from 2B 4KV 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q9</div>
-<span class="hi-exam">2RH25 (RHR Hot Leg Recirc discharge relief)</span> is located <span class="hi-exam">upstream of normally shut 2RH26</span>, which supplies Hot Leg Recirc during accident conditions. 2RH25 is located <span class="hi-exam">in containment</span>, and discharges to the <span class="hi-exam">containment trench → containment pocket sump</span>. With the valve passing flow continuously and no operator action, <span class="hi-exam">OHA C-2 (CNTMT SUMP PUMP START) annunciates when the containment sump pump starts</span>. <span class="hi-trap">RCDT and PRT are also in containment and are plausible relief collection points for other relief paths, but 2RH25 does NOT discharge to RCDT, PRT, or the RHR sump. RHR sump pump start (OHA-41 point 758) would only occur if the relief were directed to the RHR sump.</span>
+<div class="callout-label">Exam — 2022 Q31</div>
+21RH18 (RHR HX Outlet Valve) fails <span class="hi-exam">OPEN on loss of 2A VIB</span> (115V Vital Instrument Bus) — increases flow through RHR HX, <span class="hi-exam">RCS temperature lowers</span>. 2RH20 (RHR HX Bypass Valve) fails <span class="hi-exam">OPEN on loss of 2D VIB</span> — independent power supply from 21RH18. <span class="hi-trap">Loss of 2A VIB only affects 21RH18, NOT 2RH20. 2RH20 remains as-is unless 2D VIB is lost.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q32</div>
+Solid plant ops with RHR pump trip: RCS pressure <span class="hi-exam">rises</span> (charging continues adding inventory with no RHR pump to provide letdown path). Letdown line pressure <span class="hi-exam">lowers</span> (loss of RHR discharge pressure). 2CV18 throttles closed attempting to maintain letdown pressure at setpoint. 2CV6 (Letdown Relief Valve) opens at <span class="val-trip">600 psig</span> to protect downstream piping if pressure not controlled.
 </div>
 
 ## RCS Isolation
 
 The RHR system is isolated from the RCS by two normally closed motor-operated valves in each suction line. These valves are interlocked to prevent opening when RCS pressure is above the RHR system design pressure. (UFSAR 5.5.7.3.2)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q86</div>
+Starting the second RCP in Mode 5 with RHR in service, RCS pressure momentarily rises to 390 psig: <span class="hi-exam">the 1RH3 RHR SAF RLF VLV TO CONTAINMENT SUMP opens at its 375 psig setpoint</span> (not apparent to the control room) and the PZR PORVs also open (apparent to the control room). Enter AB.PZR-0001, Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-trap">The 1RH2 RHR COMMON SUCT MOV does NOT auto-shut on high pressure — it has only an OPENING interlock (&lt;375 psig + keyswitch). AB.LOCA-0001 is not entered in Mode 5.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q87</div>
+With RHR in service in Mode 5, an RCS pressure transient that exceeds <span class="val-trip">375 psig</span> (e.g., momentarily to 390 psig on starting a second RCP) opens both the <span class="hi-exam">PZR PORVs and the 1RH3 RHR SAF RLF VLV TO CONTAINMENT SUMP at their 375 psig setpoints</span>. <span class="hi-trap">The 1RH3 relief lifting is NOT apparent to the control room, but the PORV opening IS</span> — so the crew enters AB.PZR-0001 (PZR Pressure Malfunction), Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-exam">The 1RH2 RHR COMMON SUCT MOV has an OPENING interlock (RCS pressure &lt;375 psig + keyswitch) and does NOT auto-close on high pressure.</span> AB.LOCA-0001 (Shutdown LOCA) is used in Modes 3/4 with accumulators isolated, not Mode 5.
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q7</div>
@@ -143,24 +181,52 @@ The RHR system is isolated from the RCS by two normally closed motor-operated va
 
 During LOCA recirculation, the RHR pumps take suction from the containment sump and pump radioactive borated water (with H₂ and NaOH in solution) through the RHR heat exchangers and into the RCS. (UFSAR T5.5-1)
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 Sim-b</div>
-LOCA-3 transfer to cold leg recirculation with a <span class="hi-exam">failed B-train sump valve (22 SJ44 will not open)</span> forces a <span class="hi-exam">single-train</span> alignment: stop 22 RHR pump, close 2SJ69 (Common Suction), and do not start 22 RHR pump. The 21 RHR pump train provides recirculation. Because <span class="hi-exam">22 CCW HX is unavailable (~196°F on 2CC2)</span>, RHR HX cooling water is routed by opening 21CC16 and closing 22CC16 (CC Supply to RHR HX Valves). 21SJ44 (its single sump suction valve) being open is what permits 21 RHR pump suction from the containment sump.
-</div>
+### Cold Leg Recirculation
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q6</div>
 Shutdown LOCA in Mode 4 (RCS temp 325°F, pressure 300 psig): enter <span class="hi-exam">AB.LOCA-0001 (Shutdown LOCA)</span> for any uncontrolled reduction in PZR level in Mode 4. CAS directs if PZR level <span class="hi-exam">&lt;11%: stop the operating RHR Pump aligned for Shutdown Cooling and close 2RH1 and 2RH2 (RHR Common Suction)</span>. <span class="hi-trap">AB.RHR-0001 redirects to AB.LOCA-0001 in Mode 4. AB.RHR-0001 actions (isolate letdown, start SI/charging, maintain PZR level 5-50%) apply only to Modes 5 or 6.</span>
 </div>
 
-## Tech Spec LCOs
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-b</div>
+LOCA-3 transfer to cold leg recirculation with a <span class="hi-exam">failed B-train sump valve (22 SJ44 will not open)</span> forces a <span class="hi-exam">single-train</span> alignment: stop 22 RHR pump, close 2SJ69 (Common Suction), and do not start 22 RHR pump. The 21 RHR pump train provides recirculation. Because <span class="hi-exam">22 CCW HX is unavailable (~196°F on 2CC2)</span>, RHR HX cooling water is routed by opening 21CC16 and closing 22CC16 (CC Supply to RHR HX Valves). 21SJ44 (its single sump suction valve) being open is what permits 21 RHR pump suction from the containment sump.
+</div>
 
-- **[[TS 3/4.5 — ECCS]]** — RHR subsystems as part of ECCS
-- **[[TS 3/4.9 — Refueling Operations|TS 3/4.9]]** — RHR requirements during refueling
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+APPX-7 RHR pump cavitation response: <span class="hi-exam">21 RH29 and 22 RH29 placed in AUTO</span>; <span class="hi-exam">downstream Charging/SI pumps stopped first</span>; if cavitation continues, close 21/22 CS36 (RHR to CS Valves), then remove lockouts and close 21/22 SJ49 (RHR DISCH TO COLD LEG), then STOP affected RHR pump as the last action. Restart with ONE RHR pump on suction from containment sump (21/22 SJ44 OPEN). MALF-driven sump blockage (VL0120/VL0121: 21/22 SJ44 fail-to-position) is removed when the RHR pumps are stopped (ET-1, ET-3 simulator triggers).
+</div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q79</div>
-Loss of RHR breaker reclosure: per OP-SA-108-106-1001 step 4.2.2, during an <span class="hi-exam">emergency condition</span> the <span class="hi-exam">Shift Manager</span> can authorize one attempt at reclosing a failed breaker without an investigation, if the equipment is essential for plant stability. <span class="hi-trap">Does NOT require Plant Manager authorization or STA concurrence.</span> In the exam scenario, Time to Core Boiling <15 minutes with both RHR pumps lost constitutes an emergency condition.
+<div class="callout-label">Exam — 2015 Q46</div>
+During EOP-LOCA-3 transfer to cold-leg recirc, the RHR CS STOP valves (21CS36 / 22CS36) align RHR pump discharge to the containment-spray header for recirculation spray. <span class="hi-exam">21CS36 is opened to supply recirc spray only after the last CS pump (21) is stopped at RWST lo-lo</span> — so with the 21 CS pump still running those RHR-to-CS paths are not yet supplying spray. See [[Containment Spray]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+On the LBLOCA following a false-SI reactor trip, the <span class="hi-exam">low-head ECCS (RHR) pumps fail to auto start</span> on the safeguards sequence. The RO manually starts <span class="hi-exam">21 and 22 RHR pumps</span>; <span class="hi-exam">CT#1 requires at least one RHR pump running before transitioning out of [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]</span>. In [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], both RHR pumps are aligned to the containment sump (21/22SJ44) for cold leg recirculation.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+During the LBLOCA, <span class="hi-exam">both 21 and 22 RHR pumps fail to auto-start on the SEC signal</span>. Crew recovery (CT#1): RO blocks <span class="hi-exam">2A and 2B SECs</span>, PO resets them, and RO <span class="hi-exam">manually starts both 21 and 22 RHR pumps</span> (low-head ECCS) before transition out of TRIP-1. In recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], RHR draws from the containment sump via 21/22SJ44; the RH19s are closed, RH1/RH2 verified shut, and 22SJ45 then 21SJ45 opened.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+During LBLOCA cold leg recirculation transfer (EOP-LOCA-3): RHR suction aligned to containment sump via <span class="hi-exam">21SJ44 and 22SJ44</span> (sump auto arm pushbuttons depressed when >62% lights lit). Both RHR pumps running. Close <span class="hi-exam">21 and 22RH19s</span> (discharge cross-connect valves) to separate trains. Close <span class="hi-exam">2SJ67 and 2SJ68</span>. Open <span class="hi-exam">22SJ45 then 21SJ45</span> (RHR injection to cold legs). Place <span class="hi-exam">21RH29 and 22RH29 in manual and ensure closed</span> (Step 15 — CT#2 Part 3, within 11.2 min of RWST lo alarm).
+</div>
+
+### Hot Leg Recirculation
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q34</div>
+During EOP-LOCA-1 hot-leg recirc prep, if <span class="hi-exam">BOTH RHR pumps are operating, 22CS36 is opened to supply containment spray from 22 RHR pump discharge</span> (per LOCA-3) — so a 22 RHR pump trip causes <span class="hi-exam">loss of flow to the Containment Spray header</span>. Closing the RH19s prevents RHR pump runout with a single RHR pump operating; the SI and charging pumps do not lose suction. See [[Containment Spray]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
 </div>
 
 <div class="callout callout-jpm">
@@ -168,9 +234,13 @@ Loss of RHR breaker reclosure: per OP-SA-108-106-1001 step 4.2.2, during an <spa
 EOP-LOCA-4 hot leg recirculation with 21 RHR pump C/T: Step 4.0 directs <span class="hi-exam">CLOSE 22CS36 (RHR Supply to CS Valve)</span> and <span class="hi-exam">OPEN 22SJ49 (Cold Leg Isolation Valve)</span> for the running 22 RHR pump alignment.
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #1</div>
-21 RHR pump C/T for motor bearing inspection. During LBLOCA, <span class="hi-exam">22 RHR pump fails to start on 2B SEC signal</span> (CT#2, CT-5). PO blocks and resets 2B SEC, RO manually starts 22 RHR. Later in EOP-LOCA-1, <span class="hi-exam">22 RHR pump trips on overcurrent</span> — no RHR pumps available for emergency recirculation. CRS transitions to EOP-LOCA-5, Loss of Emergency Recirculation. Loss of both RHR pumps is the driver for CT#3 (RWST conservation actions).
+### Loss of Emergency Recirculation
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q24</div>
+EOP-LOCA-5 (Loss of Emergency Recirculation) is entered when no RHR pump is available for recirculation. When a train of recirculation capability is <span class="hi-exam">restored</span> (e.g., power returned to a lost RHR pump), the LOCA-5 Continuous Action Step directs <span class="hi-exam">return to the procedure and step previously in effect</span> rather than continuing the LOCA-5 cooldown. See [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]].
 </div>
 
 <div class="callout callout-scenario">
@@ -178,24 +248,40 @@ EOP-LOCA-4 hot leg recirculation with 21 RHR pump C/T: Step 4.0 directs <span cl
 21 RHR Pump C/T for motor bearing replacement (initial condition). During LBLOCA in EOP-TRIP-1, <span class="hi-exam">22 RHR pump fails to start on 2B SEC signal</span> — PO blocks and resets 2B SEC, RO manually starts 22 RHR (CT-5). Later in EOP-LOCA-1, <span class="hi-exam">22 RHR pump trips on overcurrent (relay flag dropped)</span>. No RHR pumps available — transition to EOP-LOCA-5.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #1</div>
+21 RHR pump C/T for motor bearing inspection. During LBLOCA, <span class="hi-exam">22 RHR pump fails to start on 2B SEC signal</span> (CT#2, CT-5). PO blocks and resets 2B SEC, RO manually starts 22 RHR. Later in EOP-LOCA-1, <span class="hi-exam">22 RHR pump trips on overcurrent</span> — no RHR pumps available for emergency recirculation. CRS transitions to EOP-LOCA-5, Loss of Emergency Recirculation. Loss of both RHR pumps is the driver for CT#3 (RWST conservation actions).
+</div>
+
+### LOCA Outside Containment
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q63</div>
+RH19 (RHR Discharge X-CONN Valves): per EOP-LOCA-6 Step 2, the crew <span class="hi-exam">WILL close 11RH19 and 12RH19</span> to separate the 11 and 12 RHR discharge lines during LOCA outside containment leak isolation. This enhances the ability to diagnose which train has the leak. Successful isolation confirmed by <span class="hi-exam">rising RCS pressure</span>.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q25</div>
 LOCA outside containment indication from RHR piping: <span class="hi-exam">OHA C-34 (22 RHR SUMP OVRFLO) and 23/24 RHR Sump Pump starts</span> indicate a leak in the RHR system outside containment. During SI termination (EOP-TRIP-3), these alarms combined with 2R41D Plant Vent alarm and inability to recover PZR level trigger the CAS to restart ECCS pumps and transition to EOP-LOCA-1, then to EOP-LOCA-6.
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 Sim-b</div>
-Loss of both RHR pumps in Mode 5 with RCS depressurized and vented (2PS59). 21 RHR Pump trips on electrical fault. Alternate path: <span class="hi-exam">22 RHR Pump trips shortly after starting</span>. With both pumps lost, navigate AB.RHR-0001 to Step 3.32 and select <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (preferred when core exit TCs <span class="hi-exam">&lt;200°F</span>). Valve lineup: open <span class="hi-exam">RWST outlet (2SJ1/2SJ2)</span>, close <span class="hi-exam">VCT outlet (2CV40/2CV41)</span>, open <span class="hi-exam">BIT inlet/outlet (2SJ4/2SJ5, 2SJ12/2SJ13)</span>, close <span class="hi-exam">charging discharge (2CV68/2CV69)</span> — establishing borated injection from RWST through BIT to cold legs via the running charging pump.
+## Tech Spec LCOs
+
+- **[[TS 3/4.5 — ECCS]]** — RHR subsystems as part of ECCS
+- **[[TS 3/4.9 — Refueling Operations|TS 3/4.9]]** — RHR requirements during refueling
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q8</div>
+When restarting an RHR pump after a Loss of RHR (AB.RHR-0001) and <span class="hi-exam">time allows normal restoration and local venting</span>, the preferred flow rate is a <span class="hi-exam">LOWER flow rate — to limit initial sudden cooldown and minimize level loss caused by collapsing voids</span> (AB.RHR-0001 CAUTION). <span class="hi-trap">A HIGHER flow rate to sweep entrained air is used only when time does NOT allow a normal venting.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q79</div>
-To exit AB.RHR-0001 after a loss of RHR (normal restoration + local venting complete), <span class="hi-exam">RHR flow must be stable between 1800-3000 gpm</span>. Flow <span class="hi-exam">oscillating 1500-3000 gpm fails this gate</span>, so the procedure directs <span class="hi-exam">stopping any running RHR pump (Step 3.30) and initiating an alternate method of Decay Heat Removal (Step 3.32)</span>. With the highest CET <200°F and RCS intact, the preferred alternate is <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (not Attachment 7, Hot Leg). <span class="hi-trap">Because all RHR pumps are stopped, restarting the idle RHR pump is not directed.</span> See [[AB.RHR-0001 — Loss of RHR]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q63</div>
-During LOCA outside containment (EOP-LOCA-6), the crew is MOST concerned with <span class="hi-exam">RHR piping connecting to the RCS</span> because it is only rated to <span class="hi-exam">600 psig</span> (vs RCS piping rated to 2500 psig). This is the basis for the leak isolation strategy in LOCA-6.
+<div class="callout-label">Exam — 2015 Q78</div>
+On a complete loss of Service Water in Mode 5 with RHR in service (RPV level &lt;97.5'), AB.SW-0005's CAS directs going to AB.RHR-0002 (Loss of RHR at Reduced Inventory), where the <span class="hi-exam">FIRST action is to STOP the in-service RHR pump (22) to preclude pump damage</span> — a second RHR pump is NOT started. See [[Service Water]], [[AB.RHR-0002 — Loss of RHR at Reduced Inventory]].
 </div>
 
 <div class="callout callout-exam">
@@ -209,48 +295,13 @@ AB.RHR-0001 CAS routing for loss of RCS inventory by MODE: In <span class="hi-ex
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q63</div>
-RH19 (RHR Discharge X-CONN Valves): per EOP-LOCA-6 Step 2, the crew <span class="hi-exam">WILL close 11RH19 and 12RH19</span> to separate the 11 and 12 RHR discharge lines during LOCA outside containment leak isolation. This enhances the ability to diagnose which train has the leak. Successful isolation confirmed by <span class="hi-exam">rising RCS pressure</span>.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2018 #2</div>
-During LBLOCA cold leg recirculation transfer (EOP-LOCA-3): RHR suction aligned to containment sump via <span class="hi-exam">21SJ44 and 22SJ44</span> (sump auto arm pushbuttons depressed when >62% lights lit). Both RHR pumps running. Close <span class="hi-exam">21 and 22RH19s</span> (discharge cross-connect valves) to separate trains. Close <span class="hi-exam">2SJ67 and 2SJ68</span>. Open <span class="hi-exam">22SJ45 then 21SJ45</span> (RHR injection to cold legs). Place <span class="hi-exam">21RH29 and 22RH29 in manual and ensure closed</span> (Step 15 — CT#2 Part 3, within 11.2 min of RWST lo alarm).
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 RO-A3</div>
-22 RHR pump room radiological survey for emergency stay-time calculation. Highest dose-rate point in the pump room is <span class="hi-exam">40 mrem/hr</span> (the 250 mrem/hr point is in the 22 RHR HX area, which is OUTSIDE the work-scope boundary of the JPM and must be excluded). Work scope: a detailed pre-start inspection of 22 RHR pump room before starting the pump.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 Sim-b</div>
-APPX-7 RHR pump cavitation response: <span class="hi-exam">21 RH29 and 22 RH29 placed in AUTO</span>; <span class="hi-exam">downstream Charging/SI pumps stopped first</span>; if cavitation continues, close 21/22 CS36 (RHR to CS Valves), then remove lockouts and close 21/22 SJ49 (RHR DISCH TO COLD LEG), then STOP affected RHR pump as the last action. Restart with ONE RHR pump on suction from containment sump (21/22 SJ44 OPEN). MALF-driven sump blockage (VL0120/VL0121: 21/22 SJ44 fail-to-position) is removed when the RHR pumps are stopped (ET-1, ET-3 simulator triggers).
+<div class="callout-label">Exam — 2012 Q79</div>
+To exit AB.RHR-0001 after a loss of RHR (normal restoration + local venting complete), <span class="hi-exam">RHR flow must be stable between 1800-3000 gpm</span>. Flow <span class="hi-exam">oscillating 1500-3000 gpm fails this gate</span>, so the procedure directs <span class="hi-exam">stopping any running RHR pump (Step 3.30) and initiating an alternate method of Decay Heat Removal (Step 3.32)</span>. With the highest CET <200°F and RCS intact, the preferred alternate is <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (not Attachment 7, Hot Leg). <span class="hi-trap">Because all RHR pumps are stopped, restarting the idle RHR pump is not directed.</span> See [[AB.RHR-0001 — Loss of RHR]].
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q22</div>
-EOP-LOCA-6 isolates a LOCA outside containment in the RHR/SI piping by closing/checking closed <span class="hi-exam">2RH1 OR 2RH2 (RHR common suction), 21 and 22 RH19s (RHR discharge X-CONN), 2RH26 (hot leg isolation), and 21 and 22 SJ49s (RHR DISCH TO COLD LEGS)</span>. A leak anywhere between the RH1/2 valves and the SJ49 valves is bounded by these isolations; the <span class="hi-trap">downstream/outlet side of the SJ49 valves cannot be isolated</span> because that section ties directly into the RCS cold leg. See [[EOP-LOCA-6 — LOCA Outside Containment]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q24</div>
-EOP-LOCA-5 (Loss of Emergency Recirculation) is entered when no RHR pump is available for recirculation. When a train of recirculation capability is <span class="hi-exam">restored</span> (e.g., power returned to a lost RHR pump), the LOCA-5 Continuous Action Step directs <span class="hi-exam">return to the procedure and step previously in effect</span> rather than continuing the LOCA-5 cooldown. See [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q34</div>
-During EOP-LOCA-1 hot-leg recirc prep, if <span class="hi-exam">BOTH RHR pumps are operating, 22CS36 is opened to supply containment spray from 22 RHR pump discharge</span> (per LOCA-3) — so a 22 RHR pump trip causes <span class="hi-exam">loss of flow to the Containment Spray header</span>. Closing the RH19s prevents RHR pump runout with a single RHR pump operating; the SI and charging pumps do not lose suction. See [[Containment Spray]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q46</div>
-During EOP-LOCA-3 transfer to cold-leg recirc, the RHR CS STOP valves (21CS36 / 22CS36) align RHR pump discharge to the containment-spray header for recirculation spray. <span class="hi-exam">21CS36 is opened to supply recirc spray only after the last CS pump (21) is stopped at RWST lo-lo</span> — so with the 21 CS pump still running those RHR-to-CS paths are not yet supplying spray. See [[Containment Spray]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q78</div>
-On a complete loss of Service Water in Mode 5 with RHR in service (RPV level &lt;97.5'), AB.SW-0005's CAS directs going to AB.RHR-0002 (Loss of RHR at Reduced Inventory), where the <span class="hi-exam">FIRST action is to STOP the in-service RHR pump (22) to preclude pump damage</span> — a second RHR pump is NOT started. See [[Service Water]], [[AB.RHR-0002 — Loss of RHR at Reduced Inventory]].
+<div class="callout-label">Exam — 2023 Q79</div>
+Loss of RHR breaker reclosure: per OP-SA-108-106-1001 step 4.2.2, during an <span class="hi-exam">emergency condition</span> the <span class="hi-exam">Shift Manager</span> can authorize one attempt at reclosing a failed breaker without an investigation, if the equipment is essential for plant stability. <span class="hi-trap">Does NOT require Plant Manager authorization or STA concurrence.</span> In the exam scenario, Time to Core Boiling <15 minutes with both RHR pumps lost constitutes an emergency condition.
 </div>
 
 <div class="callout callout-jpm">
@@ -258,34 +309,9 @@ On a complete loss of Service Water in Mode 5 with RHR in service (RPV level &lt
 Loss of RHR cooling (shutdown, RCS intact/filled/pressurized, CETs &gt;200°F): the in-service 21 RHR pump trips on loss of power. Per AB.RHR-0001, after confirming the RCS is NOT at reduced inventory (&gt;101 ft. elevation) and a heat sink is available (CCW to RHR, SW to CCW), the operator determines <span class="hi-exam">no RHR loop is available (22 RHR loop aligned for ECCS, pump breaker racked down)</span> and goes to alternate decay heat removal. <span class="hi-exam">Attachment 10, Forced Flow Or Natural Circulation Cooldown</span> is selected because the RCS is intact and filled with CETs &gt;200°F: <span class="hi-exam">feed available SGs with AFW to wide-range level &gt;77%, then operate the appropriate MS10s to keep Core Exit Thermocouples stable or lowering</span>. (Feed-and-bleed Attachments 7/8 are preferred only when RCS is not intact or CETs &lt;200°F; reflux cooling and SFP cooling are for depressurized / head-removed conditions.)
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #1</div>
-During the LBLOCA, <span class="hi-exam">both 21 and 22 RHR pumps fail to auto-start on the SEC signal</span>. Crew recovery (CT#1): RO blocks <span class="hi-exam">2A and 2B SECs</span>, PO resets them, and RO <span class="hi-exam">manually starts both 21 and 22 RHR pumps</span> (low-head ECCS) before transition out of TRIP-1. In recirculation per [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], RHR draws from the containment sump via 21/22SJ44; the RH19s are closed, RH1/RH2 verified shut, and 22SJ45 then 21SJ45 opened.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q8</div>
-When restarting an RHR pump after a Loss of RHR (AB.RHR-0001) and <span class="hi-exam">time allows normal restoration and local venting</span>, the preferred flow rate is a <span class="hi-exam">LOWER flow rate — to limit initial sudden cooldown and minimize level loss caused by collapsing voids</span> (AB.RHR-0001 CAUTION). <span class="hi-trap">A HIGHER flow rate to sweep entrained air is used only when time does NOT allow a normal venting.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q33</div>
-RHR pump 4KV vital bus power supplies: <span class="hi-exam">11 RHR pump from A bus, 12 RHR pump from B bus</span>. <span class="hi-trap">Other ECCS pumps are powered differently: 11/12 SI and 11/12 CS are from A and C; charging pumps 21/22 are from B and C.</span> (Unit 2 SW pumps run in reverse order: 21/22 from C, 25/26 from A.)
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q87</div>
-With RHR in service in Mode 5, an RCS pressure transient that exceeds <span class="val-trip">375 psig</span> (e.g., momentarily to 390 psig on starting a second RCP) opens both the <span class="hi-exam">PZR PORVs and the 1RH3 RHR SAF RLF VLV TO CONTAINMENT SUMP at their 375 psig setpoints</span>. <span class="hi-trap">The 1RH3 relief lifting is NOT apparent to the control room, but the PORV opening IS</span> — so the crew enters AB.PZR-0001 (PZR Pressure Malfunction), Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-exam">The 1RH2 RHR COMMON SUCT MOV has an OPENING interlock (RCS pressure &lt;375 psig + keyswitch) and does NOT auto-close on high pressure.</span> AB.LOCA-0001 (Shutdown LOCA) is used in Modes 3/4 with accumulators isolated, not Mode 5.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q86</div>
-Starting the second RCP in Mode 5 with RHR in service, RCS pressure momentarily rises to 390 psig: <span class="hi-exam">the 1RH3 RHR SAF RLF VLV TO CONTAINMENT SUMP opens at its 375 psig setpoint</span> (not apparent to the control room) and the PZR PORVs also open (apparent to the control room). Enter AB.PZR-0001, Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-trap">The 1RH2 RHR COMMON SUCT MOV does NOT auto-shut on high pressure — it has only an OPENING interlock (&lt;375 psig + keyswitch). AB.LOCA-0001 is not entered in Mode 5.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #1</div>
-On the LBLOCA following a false-SI reactor trip, the <span class="hi-exam">low-head ECCS (RHR) pumps fail to auto start</span> on the safeguards sequence. The RO manually starts <span class="hi-exam">21 and 22 RHR pumps</span>; <span class="hi-exam">CT#1 requires at least one RHR pump running before transitioning out of [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]</span>. In [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]], both RHR pumps are aligned to the containment sump (21/22SJ44) for cold leg recirculation.
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-b</div>
+Loss of both RHR pumps in Mode 5 with RCS depressurized and vented (2PS59). 21 RHR Pump trips on electrical fault. Alternate path: <span class="hi-exam">22 RHR Pump trips shortly after starting</span>. With both pumps lost, navigate AB.RHR-0001 to Step 3.32 and select <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (preferred when core exit TCs <span class="hi-exam">&lt;200°F</span>). Valve lineup: open <span class="hi-exam">RWST outlet (2SJ1/2SJ2)</span>, close <span class="hi-exam">VCT outlet (2CV40/2CV41)</span>, open <span class="hi-exam">BIT inlet/outlet (2SJ4/2SJ5, 2SJ12/2SJ13)</span>, close <span class="hi-exam">charging discharge (2CV68/2CV69)</span> — establishing borated injection from RWST through BIT to cold legs via the running charging pump.
 </div>
 
 ## Connections

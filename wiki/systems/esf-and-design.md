@@ -64,6 +64,18 @@ Chapter 15 of the UFSAR presents the analysis of plant responses to postulated a
 | Fuel Handling Accident | Fuel building ventilation, HEPA/charcoal filters | UFSAR 15.4.5 |
 | Rupture of a Control Rod Drive Mechanism (Rod Ejection) | High flux trip (high and low setpoints), OT Delta-T | UFSAR 15.4.6 |
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q42</div>
+ESFAS valve auto-actions on a LOCA driving containment pressure &gt;15 psig (MODE 2 startup): <span class="hi-exam">24MS167 (Main Steamline Isolation Valve) receives a SHUT signal from the Hi-Hi containment pressure (15 psig) MSLI signal</span> — indicating OPEN means it failed to reposition. <span class="hi-trap">21SW122 (CC HX SW inlet) closes only on a MODE III SEC initiation (SI plus Blackout); 22CC3 (21-23 header X-over) has NO automatic action; 23BF22 (SG FW stop check) receives NO shut from the MSLI signal.</span> See [[Main Steam]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q43</div>
+ECCS is the system the ESF Actuation System (ESFAS) actuates. <span class="hi-exam">10 CFR 50.46(b)</span> (copied into Salem FSAR §15.4.1.1) gives the LOCA acceptance criteria that an ESFAS failure to initiate ECCS could violate: <span class="hi-exam">peak cladding temperature &lt; 2200°F; cladding oxidation ≤ 17% of total clad thickness; hydrogen generation ≤ 1% of the hypothetical all-Zr-reacted amount; coolable geometry; long-term cooling</span>. The tested answer is that <span class="hi-exam">cladding oxidation may exceed 17%</span> of total clad thickness. <span class="hi-trap">PCT criterion is 2200°F (not 1800°F); the H2 criterion is 1% (not 10%); vessel level lowering below the top of active fuel during LBLOCA blowdown is an analyzed condition, not a 50.46 criterion that fails.</span>
+</div>
+
 ## ATWS (Anticipated Transients Without Scram)
 
 Analysis per 10CFR50.62 demonstrates that AMSAC (backup turbine trip and AFW actuation) prevents unacceptable consequences if the RPS fails to trip the reactor. Key mitigation: diverse AMSAC system trips turbine and starts AFW on low SG level independent of the RPS. (UFSAR 15.5)
@@ -94,16 +106,6 @@ Accident analyses provide the bases for many Tech Spec limits including:
 - Power distribution limits ([[TS 3/4.2 — Power Distribution]])
 - ECCS operability ([[TS 3/4.5 — ECCS]])
 - Containment integrity ([[TS 3/4.6 — Containment]])
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q43</div>
-ECCS is the system the ESF Actuation System (ESFAS) actuates. <span class="hi-exam">10 CFR 50.46(b)</span> (copied into Salem FSAR §15.4.1.1) gives the LOCA acceptance criteria that an ESFAS failure to initiate ECCS could violate: <span class="hi-exam">peak cladding temperature &lt; 2200°F; cladding oxidation ≤ 17% of total clad thickness; hydrogen generation ≤ 1% of the hypothetical all-Zr-reacted amount; coolable geometry; long-term cooling</span>. The tested answer is that <span class="hi-exam">cladding oxidation may exceed 17%</span> of total clad thickness. <span class="hi-trap">PCT criterion is 2200°F (not 1800°F); the H2 criterion is 1% (not 10%); vessel level lowering below the top of active fuel during LBLOCA blowdown is an analyzed condition, not a 50.46 criterion that fails.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q42</div>
-ESFAS valve auto-actions on a LOCA driving containment pressure &gt;15 psig (MODE 2 startup): <span class="hi-exam">24MS167 (Main Steamline Isolation Valve) receives a SHUT signal from the Hi-Hi containment pressure (15 psig) MSLI signal</span> — indicating OPEN means it failed to reposition. <span class="hi-trap">21SW122 (CC HX SW inlet) closes only on a MODE III SEC initiation (SI plus Blackout); 22CC3 (21-23 header X-over) has NO automatic action; 23BF22 (SG FW stop check) receives NO shut from the MSLI signal.</span> See [[Main Steam]], [[RPS/SSPS]].
-</div>
 
 ## Connections
 

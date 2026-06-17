@@ -23,9 +23,82 @@ aliases:
   - Safety valves lift at <span class="val-trip">2485 psig</span>
 - (UFSAR T5.2-1)
 
+**Exam & operating coverage:**
+
+### Spray Valve Control & Failures
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q5</div>
-PZR heaters de-energize based on <span class="hi-exam">PZR low level (at <span class="val-trip">17%</span>)</span>, NOT on an SI signal. Although the SI signal causes many automatic actions, PZR heater de-energization is NOT one of them. <span class="hi-trap">Trap: candidates may confuse this with the many SI-actuated functions and incorrectly believe SI directly de-energizes the heaters.</span>
+<div class="callout-label">Exam — 2014 Q38</div>
+Normal PZR spray demand is ~13% on each spray valve (Salem runs one set of B/U heaters in MANUAL ON). If <span class="hi-exam">2PS3 spray valve demand fails to 50%</span>, actual spray flow roughly <span class="hi-exam">doubles</span> — 2PS1 will shut, but excess spray (2PS3 is dominant) lowers PZR pressure. <span class="hi-exam">Backup heaters in AUTO energize at <span class="val-normal">2210 psig</span> and turn off at <span class="val-normal">2218 psig</span></span>. <span class="hi-trap">2218 psig is the TURN-OFF value, not the energize value. Control group heaters cannot maintain pressure against 50% spray demand.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q39</div>
+The PZR Spray Nozzle is protected from thermal shock by <span class="hi-exam">a small continuous spray-line warming flow bypassed around the PS1 and PS3 Spray Valves</span>, set during startup to keep the spray line temperature &gt;500°F with both spray valves shut. See [[S2.OP-SO.PZR-0008 — Setting Pressurizer Spray Bypass Flow]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q36</div>
+PZR Spray Valve 2PS1 fails open at 4% power during a startup: with NO operator action the <span class="hi-exam">FIRST protective action is Safety Injection on Low PZR Pressure</span>. <span class="hi-exam">Low PZR pressure reactor trip is BLOCKED below P-10</span> (and is not reinstated until &gt; P-10). <span class="hi-exam">Low PZR Pressure SI was reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span></span>. OT/DT trip would not occur because D/T is very small at 4% power. PZR level will not rise (the leak is depressurizing through spray) so high-level Rx trip does not actuate. <span class="hi-trap">Trap: candidates may pick low-pressure Rx trip — but it is blocked below P-10. SI on low PZR pressure is the active protective action below P-10.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q14</div>
+Following a reactor trip + SI with instrument air to containment isolated, PORVs cycle on accumulators. When air is restored (<span class="hi-exam">accumulators automatically isolate and realign to normal containment control air when pressure is restored — above 90 psig normal supply vs. below 85 psig accumulator</span>). No manual action is required for accumulator realignment. <span class="hi-exam">Pressurizer spray valves reopen when air is restored</span> because the Master Pressure Controller (MPC) will have demand to open spray valves post-trip.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-c</div>
+EOP-SGTR-1 Step 19 RCS depressurization using normal spray. Open <span class="hi-exam">2PS1 and 2PS3</span> spray valves. When Table D conditions met (RCS pressure < ruptured SG pressure AND PZR level > 11%), Step 19.1 CAS directs closing spray valves. <span class="hi-exam">2PS3 fails to close</span> — alternate path. Corrective action: <span class="hi-exam">STOP 21 and 23 RCPs</span> to eliminate spray flow path. 2PS3 spray valve is supplied by 21 and 23 RCP discharge; stopping these pumps removes the driving head for spray.
+</div>
+
+### PORV Control & Failures
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q77</div>
+During post-trip EOP response, if <span class="hi-exam">PZR PORV 2PR1 indicates open and will not manually shut, AND its block valve 2PR6 will not shut</span>, the PORV leak cannot be isolated and its size is unknown. The EOP response is to <span class="hi-exam">transition from EOP-TRIP-1 to EOP-LOCA-1</span> (TRIP-1 cannot size the PORV leak); the SI-termination decision is then made in LOCA-1. See [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q86</div>
+In Mode 5 with RHR in service, the Pressurizer Overpressure Protection System (POPs) <span class="hi-exam">opens both PZR PORVs at 375 psig</span> (the cold-overpressure setpoint, distinct from the at-power 2335 psig open setpoint). When a second RCP start momentarily raises RCS pressure to 390 psig, the PORVs open (visible in the control room) along with the 1RH3 RHR relief (not visible). Enter AB.PZR-0001, Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-trap">375 psig is the cold-overpressure POPs setpoint; 2335 psig is the normal at-power PORV open setpoint.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q36</div>
+For a 1PR1 PORV that opens with no demand and cannot be shut, AB.PZR-0001 directs shutting the 1PR6 block valve; PZR heaters cannot restore pressure for a PORV failure. <span class="hi-trap">The low PZR pressure Rx trip is <span class="val-trip">1865 psig</span> (not 1985 psig), and the OT/DT trip is not a psig value but equates to ~2000 psig (not 2100 psig).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q87</div>
+On a 2PR1 PORV failing open at power: PZR pressure lowers, so the <span class="hi-exam">PZR Master Pressure Controller (MPC) output LOWERS</span> (turning on heaters and closing spray valves). Per AB.PZR-0001 the PORV is isolated by shutting its Block Valve; <span class="hi-trap">if the PORV is not restored within 72 hours, a unit shutdown is required (TS 3.4.5 action b)</span> — distinct from a leaking PORV (isolated with power maintained to the Block Valve, no shutdown). See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[TS 3/4.4 — Reactor Coolant System]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q55</div>
+PORV open logic requires <span class="hi-exam">2 of 2 coincidence</span>: 2PR1 requires PT-455 AND PT-457 both > <span class="val-trip">2335 psig</span>; 2PR2 requires PT-456 AND PT-474 both > <span class="val-trip">2335 psig</span>. With only PT-455 (Channel I) failing high, <span class="hi-exam">NO PORVs open</span> — neither PORV has both input channels reading high. <span class="hi-trap">Trap: PORVs are NOT controlled by the Master Pressure Controller (MPC). Each PORV has a dedicated 2/2 pressure coincidence circuit independent of the MPC. A single channel failure high cannot open any PORV.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q7</div>
+Confirms 2022 Q9: AB.PZR-0001 PORV failed open sequence: 1) attempt to close PORV in manual, 2) <span class="hi-exam">close the associated block valve</span>, 3) if block valve fails to close THEN open control power breaker. CAS: trip reactor at <span class="val-trip">2000 psig</span> and lowering. Procedure bases: simulator showed auto trip at <span class="hi-exam">1950 psig on OT&Delta;T</span> — this is why 2000 psig was chosen.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q36</div>
+PORV channel assignments: <span class="hi-exam">2PR1 is controlled by Channel I (2PT-455). 2PR2 is controlled by Channels II & IV.</span> If Channel I fails LOW, <span class="hi-exam">2PR1 AUTO operation is blocked</span> (failed channel prevents PORV from seeing actual high pressure). 2PR2 remains functional on Channels II & IV and will <span class="hi-exam">open as pressure rises to the open setpoint</span>. <span class="hi-trap">PZR spray valves only function in AUTO via the controlling channel — if the controlling channel fails low, spray valves will NOT open to control pressure rise.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q9</div>
+AB.PZR-0001 directs <span class="hi-exam">manual reactor trip when RCS pressure reaches <span class="val-trip">2000 psig</span> and lowering</span> (spray valve failed open scenario). Reason: prevent challenging the <span class="hi-exam">automatic reactor trip on OT Delta-T</span>. <span class="hi-trap">Not low PZR pressure — the auto trip on low PZR pressure is <span class="val-trip">1865 psig</span> (rate-compensated), which is well below 2000 psig. OT Delta-T trips first as pressure lowers because the OT Delta-T setpoint has a +K3*P pressure input.</span>
+</div>
+
+### Master Pressure Controller (MPC) / Pressure Program
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q7</div>
+With the PZR Master Pressure Controller (MPC) demand failing high (0-100% scale), the MPC output <span class="hi-exam">calls for maximum spray and turns OFF the backup heaters</span>. <span class="hi-exam">The PZR PORVs are controlled independently of the MPC demand — they respond to actual PZR pressure channels 1-4</span>; since actual PZR pressure is not high, the PORVs have no open demand and remain SHUT. So B/U heaters OFF and BOTH PORVs SHUT.
 </div>
 
 <div class="callout callout-exam">
@@ -34,8 +107,52 @@ PZR pressure control sequence during a rising pressure transient: spray valves b
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q55</div>
-PORV open logic requires <span class="hi-exam">2 of 2 coincidence</span>: 2PR1 requires PT-455 AND PT-457 both > <span class="val-trip">2335 psig</span>; 2PR2 requires PT-456 AND PT-474 both > <span class="val-trip">2335 psig</span>. With only PT-455 (Channel I) failing high, <span class="hi-exam">NO PORVs open</span> — neither PORV has both input channels reading high. <span class="hi-trap">Trap: PORVs are NOT controlled by the Master Pressure Controller (MPC). Each PORV has a dedicated 2/2 pressure coincidence circuit independent of the MPC. A single channel failure high cannot open any PORV.</span>
+<div class="callout-label">Exam — 2022 Q37</div>
+PZR pressure channel fails HIGH: MPC output rises to 100% (spray valves open, heaters de-energize). To restore RCS pressure, operator must <span class="hi-exam">manually LOWER MPC demand</span> (close spray valves, energize heaters). TS 3.2.5 DNB Parameters: minimum DNBR limit is RCS pressure ≥ 2200 psia = <span class="hi-exam"><span class="val-trip">≥2185 psig</span></span>. <span class="hi-trap">2200 psia ≠ 2200 psig. The TS limit is 2200 psia which equals 2185 psig (subtract ~15 psi for atmospheric).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q34</div>
+MPC fails low (0% output): <span class="hi-exam">spray valves close</span> (controlled by MPC) and <span class="hi-exam">backup heaters energize</span> → RCS pressure rises → PORVs open at <span class="val-trip">2335 psig</span>. <span class="hi-trap">PORVs are interlocked directly from PZR pressure, NOT from MPC output</span> — MPC failure does not prevent PORV actuation.
+</div>
+
+### Pressure Channel / Transmitter Failures
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q10</div>
+Controlling PZR Pressure channel (Channel III / PT-457) fails low: the Master Pressure Controller drives output to 0% → <span class="hi-exam">all auto PZR heaters energize and spray valves shut (and stay shut)</span>; RCS pressure rises slowly. The PZR PORVs require <span class="hi-exam">2/2 coincidence — 2PR1 from channels I/III, 2PR2 from channels II/IV</span>. With Channel III failed low, <span class="hi-trap">2PR1 will NOT open; only ONE PORV (2PR2) opens — at <span class="val-alarm">2335 psig</span>.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q92</div>
+PZR pressure channel failure reportability: with one PZR pressure channel already tripped and a second failing LOW, the <span class="hi-exam">2/4 low PZR pressure trip coincidence is met</span> causing a reactor trip and SI. The SI is NOT valid (pressure was not actually low) and NOT reportable under RAL 11.3.1. The <span class="hi-exam">RPS actuation is reportable under RAL 11.3.2 as a 4-hour report</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+The controlling PZR Pressure channel (Channel I / PT455) fails low, annunciating <span class="hi-exam">OHA D-16 RC PRESS LO, E-12 PZR PRESS LO, and E-28 PZR HTR ON PRESS LOW</span>. RO takes the Master Pressure Controller to MANUAL to mitigate, then <span class="hi-exam">selects PZR Pressure Channel III for control</span> and restores the Master Controller to AUTO. Crew removes the failed channel from service and closes/de-energizes 2PR6 PORV block valve. Later a 2nd channel (PT457) fails low, causing an auto Inadvertent SI on Lo PZR pressure. See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+<span class="hi-exam">Controlling PZR Pressure Channel I (PT-455) fails HIGH</span> (final 2500 psig) during a 2% power ascension. Symptoms: PZR heaters de-energize, both PZR Spray valves drive fully open, OHA <span class="hi-exam">D-8 RC Press HI</span> and <span class="hi-exam">E-42 2PR1 ½ Trip</span>. RO determines actual pressure is not high (lowering due to spray + heaters off), reports spray valves open, recommends Master Pressure Controller in manual; lowers MPC demand to close sprays. Recovery sequence: select <span class="hi-exam">Channel III</span> for control, match MPC demand to current pressure, return MPC to AUTO. <span class="hi-exam">Shut 2PR6</span> and dispatch WCC to remove power from 2PR6 within one hour. Remove failed channel from service per <span class="hi-exam">S2.OP-SO.RPS-0003</span>. Tech specs: 3.3.1.1 Action 6, 3.3.2.1.b Action 19*, 3.4.5.b, 3.2.5.
+</div>
+
+### EOP / Transient Pressure Control
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q11</div>
+The <span class="hi-exam">low PZR pressure automatic reactor trip setpoint is <span class="val-trip">1865 psig</span></span>. During an RCS leak at 40% power with no automatic or manual trip, PZR pressure lowering through this setpoint without a trip means an ATWT is present and a manual reactor trip is required. <span class="hi-trap">17% PZR level is the backup-heater isolation setpoint, NOT a reactor trip.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q41</div>
+During an RCS leak in heatup with the Low PZR Pressure SI still blocked (RCS &lt;1915 psig / pre-P-11), the PZR pressure control / charging system <span class="hi-trap">cannot keep RCS pressure from degrading: only a single centrifugal charging pump is allowed in service and its ~550 gpm runout is insufficient</span> against a 2000 gpm leak — the AUTO SI ultimately comes from Containment High Pressure (≥4 psig), not the (blocked) Low PZR Pressure setpoint.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q50</div>
+PZR Safety Valve seat leakage response: PZR level lowers below program level → <span class="hi-exam">master flow controller automatically RAISES charging flow</span>. <span class="hi-trap">Trap: PZR safety valves are located on top of the PZR, so candidates may think level rises. In reality, steam leaking out reduces steam space pressure AND inventory → level drops.</span> As RCS pressure lowers from the leak, the <span class="hi-exam">OT&Delta;T reactor trip setpoint automatically lowers (K3 pressure coefficient)</span> and trips the reactor before the fixed low PZR pressure setpoint of <span class="val-trip">1865 psig</span> is reached. <span class="hi-trap">OP&Delta;T setpoint varies with AFD, NOT pressure — do not confuse OT&Delta;T (pressure-dependent) with OP&Delta;T (AFD-dependent).</span>
 </div>
 
 ## Pressurizer Heater Power Supplies
@@ -48,104 +165,11 @@ PZR Backup Heater Group power supplies:<br>
 Transfer to emergency backup source is MANUAL (not automatic). EOP-LOSC-2 step 26 directs restoring normal power or transferring to emergency backup.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q14</div>
-Following a reactor trip + SI with instrument air to containment isolated, PORVs cycle on accumulators. When air is restored (<span class="hi-exam">accumulators automatically isolate and realign to normal containment control air when pressure is restored — above 90 psig normal supply vs. below 85 psig accumulator</span>). No manual action is required for accumulator realignment. <span class="hi-exam">Pressurizer spray valves reopen when air is restored</span> because the Master Pressure Controller (MPC) will have demand to open spray valves post-trip.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q34</div>
-MPC fails low (0% output): <span class="hi-exam">spray valves close</span> (controlled by MPC) and <span class="hi-exam">backup heaters energize</span> → RCS pressure rises → PORVs open at <span class="val-trip">2335 psig</span>. <span class="hi-trap">PORVs are interlocked directly from PZR pressure, NOT from MPC output</span> — MPC failure does not prevent PORV actuation.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q87</div>
-EOP-TRIP-4 CAS: if PZR level cannot be maintained <span class="hi-exam">> 4%</span> (with 2CV55 and 2CV71 fully open and level still lowering), <span class="hi-exam">actuate SI and return to EOP-TRIP-1</span>. <span class="hi-trap">PZR heaters will NOT energize with level < 17% — operating heaters to maintain saturated conditions is not possible when level is at 10% and lowering.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam -- 2023 Q92</div>
-PZR pressure channel failure reportability: with one PZR pressure channel already tripped and a second failing LOW, the <span class="hi-exam">2/4 low PZR pressure trip coincidence is met</span> causing a reactor trip and SI. The SI is NOT valid (pressure was not actually low) and NOT reportable under RAL 11.3.1. The <span class="hi-exam">RPS actuation is reportable under RAL 11.3.2 as a 4-hour report</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q37</div>
-PZR pressure channel fails HIGH: MPC output rises to 100% (spray valves open, heaters de-energize). To restore RCS pressure, operator must <span class="hi-exam">manually LOWER MPC demand</span> (close spray valves, energize heaters). TS 3.2.5 DNB Parameters: minimum DNBR limit is RCS pressure ≥ 2200 psia = <span class="hi-exam"><span class="val-trip">≥2185 psig</span></span>. <span class="hi-trap">2200 psia ≠ 2200 psig. The TS limit is 2200 psia which equals 2185 psig (subtract ~15 psi for atmospheric).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q9</div>
-AB.PZR-0001 directs <span class="hi-exam">manual reactor trip when RCS pressure reaches <span class="val-trip">2000 psig</span> and lowering</span> (spray valve failed open scenario). Reason: prevent challenging the <span class="hi-exam">automatic reactor trip on OT Delta-T</span>. <span class="hi-trap">Not low PZR pressure — the auto trip on low PZR pressure is <span class="val-trip">1865 psig</span> (rate-compensated), which is well below 2000 psig. OT Delta-T trips first as pressure lowers because the OT Delta-T setpoint has a +K3*P pressure input.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q7</div>
-Confirms 2022 Q9: AB.PZR-0001 PORV failed open sequence: 1) attempt to close PORV in manual, 2) <span class="hi-exam">close the associated block valve</span>, 3) if block valve fails to close THEN open control power breaker. CAS: trip reactor at <span class="val-trip">2000 psig</span> and lowering. Procedure bases: simulator showed auto trip at <span class="hi-exam">1950 psig on OT&Delta;T</span> — this is why 2000 psig was chosen.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q21</div>
-PZR reference leg leak causes indicated level to read <span class="hi-exam">HIGHER</span> (lower reference leg head → lower DP across transmitter → controller interprets as higher level). Master Flow Controller responds by <span class="hi-exam">lowering charging flow</span>, so <span class="hi-trap">actual PZR level LOWERS while indication rises — a divergence between actual and indicated level</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q88</div>
-Loss of all control air impact on PZR level: with a centrifugal charging pump in service, <span class="hi-exam">CV55 fails OPEN and CV71 fails CLOSED</span>. With letdown isolated (no letdown path), higher charging flow to RCP seals causes <span class="hi-exam">PZR level to RISE</span>. Per AB.CA-0001: locally adjust CV54 (Centrifugal Charging Pump Flow Control Valve) OR <span class="hi-exam">transfer to 23 PDP charging pump</span> (speed controller fails at low speed stop → minimizes RCP seal flow → extends time before PZR reaches 90%).
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 IP-i</div>
-During LOOP, PZR backup heaters are transferred to emergency power per S2.OP-SO.PZR-0010 Section 5.3. Transfer is <span class="hi-exam">MANUAL (not automatic)</span>. Group 22 transfers to <span class="hi-exam">2A 460V Vital Bus</span>. Only <span class="hi-exam">3 of 14 heater disconnects remain ON</span> to limit load within the emergency bus capacity.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q39</div>
 PZR heater group power supplies (relevant after a LOOP with the 2A 4KV Vital Bus failing to reenergize): <span class="hi-exam">Control Group heaters — normally 2G non-vital bus, NO emergency supply</span>; <span class="hi-exam">21 Backup Heater Group — normally 2G non-vital bus, emergency supply from the 2C vital bus</span>; <span class="hi-exam">22 Backup Heater Group — normally 2E non-vital bus, emergency supply from the 2A vital bus</span>. With 2A lost, only <span class="hi-exam">21 Backup Heater Group is available</span> to maintain PZR pressure in TRIP-series EOPs. <span class="hi-trap">22 Backup Heater Group is unavailable because its emergency feed (2A vital bus) is lost; Control Group has no emergency supply at all.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q50</div>
-PZR Safety Valve seat leakage response: PZR level lowers below program level → <span class="hi-exam">master flow controller automatically RAISES charging flow</span>. <span class="hi-trap">Trap: PZR safety valves are located on top of the PZR, so candidates may think level rises. In reality, steam leaking out reduces steam space pressure AND inventory → level drops.</span> As RCS pressure lowers from the leak, the <span class="hi-exam">OT&Delta;T reactor trip setpoint automatically lowers (K3 pressure coefficient)</span> and trips the reactor before the fixed low PZR pressure setpoint of <span class="val-trip">1865 psig</span> is reached. <span class="hi-trap">OP&Delta;T setpoint varies with AFD, NOT pressure — do not confuse OT&Delta;T (pressure-dependent) with OP&Delta;T (AFD-dependent).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q9</div>
-2LT-459 (Channel I PZR Level) variable leg leak: the variable leg is the <span class="hi-exam">low side of the D/P cell</span> and is connected to the pressurizer liquid space. A leak causes D/P to increase → <span class="hi-exam">indicated PZR level goes off scale LOW</span>. Actual PZR level and pressure also lower (inventory loss). PZR B/U heaters <span class="hi-exam">will NOT energize</span> because indicated level is below the <span class="val-trip">17% low level B/U heater cutoff setpoint</span>. <span class="hi-trap">Common misconception: D/P = 0 psid = hi pressurizer level (maximum indicated level), not D/P = maximum = hi level. A variable leg leak INCREASES D/P, indicating LOW.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q57</div>
-PZR Level Channel I (controlling channel) fails HIGH: charging flow reduces to minimum (controller sees high level, reduces charging). Actual PZR level drops slowly. At <span class="hi-exam">17% actual level</span>, the alarm channel (Channel II) triggers <span class="hi-exam">letdown isolation and PZR heaters off</span>. With minimum charging and no letdown, level eventually rises and a <span class="hi-exam">Rx Trip on high PZR level occurs at 92% (2/3 channels II &amp; III)</span>. <span class="hi-trap">Key distinction: controlling channel fails HIGH = sequential events (charging min → level drops → letdown isolates → level eventually rises → trip). Controlling channel fails LOW = charging rises immediately AND letdown isolates immediately — NOT in the sequential order.</span> Auctioneered Tavg failed high only shifts program level to ~59%.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q36</div>
-PORV channel assignments: <span class="hi-exam">2PR1 is controlled by Channel I (2PT-455). 2PR2 is controlled by Channels II & IV.</span> If Channel I fails LOW, <span class="hi-exam">2PR1 AUTO operation is blocked</span> (failed channel prevents PORV from seeing actual high pressure). 2PR2 remains functional on Channels II & IV and will <span class="hi-exam">open as pressure rises to the open setpoint</span>. <span class="hi-trap">PZR spray valves only function in AUTO via the controlling channel — if the controlling channel fails low, spray valves will NOT open to control pressure rise.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2019 Sim-c</div>
-EOP-SGTR-1 Step 19 RCS depressurization using normal spray. Open <span class="hi-exam">2PS1 and 2PS3</span> spray valves. When Table D conditions met (RCS pressure < ruptured SG pressure AND PZR level > 11%), Step 19.1 CAS directs closing spray valves. <span class="hi-exam">2PS3 fails to close</span> — alternate path. Corrective action: <span class="hi-exam">STOP 21 and 23 RCPs</span> to eliminate spray flow path. 2PS3 spray valve is supplied by 21 and 23 RCP discharge; stopping these pumps removes the driving head for spray.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q7</div>
-After a controlling PZR level channel fails LOW with a CCP in service, charging flow rises automatically (program-actual deviation). When AB.CVC-0001 directs MFC to MANUAL, actual PZR level continues rising above program. <span class="hi-exam">Returning MFC to AUTO before PZR level is restored to program will force charging flow to LOWER</span> (because actual is now above program). If charging flow lowers below ~<span class="val-alarm">60 gpm</span>, <span class="hi-exam">letdown line flashing can occur due to inadequate cooling in the regenerative heat exchanger</span> — this is the AB.CVC-0001 caution against premature MFC return-to-auto.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q82</div>
-2LT-459 (Channel I PZR Level) fails HIGH while controlling: 22 Backup Heaters <span class="hi-exam">automatically energize</span> due to <span class="hi-exam">+5% PZR level deviation (LACTUAL - LREF)</span>. 21 Backup Heaters are already ON in manual. <span class="hi-trap">Trap: candidates may incorrectly think B/U heaters will de-energize because PZR pressure (2235 psig) is > 2210 psig (the pressure-based B/U heater auto-energize setpoint). The level deviation logic is a separate, independent auto-energize path for the backup heaters.</span> TS action: per LCO 3.3.1.1, 2LT-459 must be placed in the tripped condition within <span class="hi-exam">72 hours</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q36</div>
-PZR Spray Valve 2PS1 fails open at 4% power during a startup: with NO operator action the <span class="hi-exam">FIRST protective action is Safety Injection on Low PZR Pressure</span>. <span class="hi-exam">Low PZR pressure reactor trip is BLOCKED below P-10</span> (and is not reinstated until &gt; P-10). <span class="hi-exam">Low PZR Pressure SI was reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span></span>. OT/DT trip would not occur because D/T is very small at 4% power. PZR level will not rise (the leak is depressurizing through spray) so high-level Rx trip does not actuate. <span class="hi-trap">Trap: candidates may pick low-pressure Rx trip — but it is blocked below P-10. SI on low PZR pressure is the active protective action below P-10.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #3</div>
-<span class="hi-exam">Controlling PZR Pressure Channel I (PT-455) fails HIGH</span> (final 2500 psig) during a 2% power ascension. Symptoms: PZR heaters de-energize, both PZR Spray valves drive fully open, OHA <span class="hi-exam">D-8 RC Press HI</span> and <span class="hi-exam">E-42 2PR1 ½ Trip</span>. RO determines actual pressure is not high (lowering due to spray + heaters off), reports spray valves open, recommends Master Pressure Controller in manual; lowers MPC demand to close sprays. Recovery sequence: select <span class="hi-exam">Channel III</span> for control, match MPC demand to current pressure, return MPC to AUTO. <span class="hi-exam">Shut 2PR6</span> and dispatch WCC to remove power from 2PR6 within one hour. Remove failed channel from service per <span class="hi-exam">S2.OP-SO.RPS-0003</span>. Tech specs: 3.3.1.1 Action 6, 3.3.2.1.b Action 19*, 3.4.5.b, 3.2.5.
 </div>
 
 <div class="callout callout-exam">
@@ -154,8 +178,54 @@ With the controlling PZR level channel failed low (0%), <span class="hi-exam">PZ
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q39</div>
-The PZR Spray Nozzle is protected from thermal shock by <span class="hi-exam">a small continuous spray-line warming flow bypassed around the PS1 and PS3 Spray Valves</span>, set during startup to keep the spray line temperature &gt;500°F with both spray valves shut. See [[S2.OP-SO.PZR-0008 — Setting Pressurizer Spray Bypass Flow]].
+<div class="callout-label">Exam — 2018 Q5</div>
+PZR heaters de-energize based on <span class="hi-exam">PZR low level (at <span class="val-trip">17%</span>)</span>, NOT on an SI signal. Although the SI signal causes many automatic actions, PZR heater de-energization is NOT one of them. <span class="hi-trap">Trap: candidates may confuse this with the many SI-actuated functions and incorrectly believe SI directly de-energizes the heaters.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q82</div>
+2LT-459 (Channel I PZR Level) fails HIGH while controlling: 22 Backup Heaters <span class="hi-exam">automatically energize</span> due to <span class="hi-exam">+5% PZR level deviation (LACTUAL - LREF)</span>. 21 Backup Heaters are already ON in manual. <span class="hi-trap">Trap: candidates may incorrectly think B/U heaters will de-energize because PZR pressure (2235 psig) is > 2210 psig (the pressure-based B/U heater auto-energize setpoint). The level deviation logic is a separate, independent auto-energize path for the backup heaters.</span> TS action: per LCO 3.3.1.1, 2LT-459 must be placed in the tripped condition within <span class="hi-exam">72 hours</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 IP-i</div>
+During LOOP, PZR backup heaters are transferred to emergency power per S2.OP-SO.PZR-0010 Section 5.3. Transfer is <span class="hi-exam">MANUAL (not automatic)</span>. Group 22 transfers to <span class="hi-exam">2A 460V Vital Bus</span>. Only <span class="hi-exam">3 of 14 heater disconnects remain ON</span> to limit load within the emergency bus capacity.
+</div>
+
+## Exam & Operating Coverage
+
+### Level Instrumentation
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q95</div>
+PZR <span class="hi-exam">hot-calibrated vs cold-calibrated level correlation</span> during a cooldown (IOP-6 Exhibit 1): a hot cal indication of <span class="hi-exam">95% at 400°F corresponds to ACTUAL PZR level ~66%</span>, which reads as <span class="hi-exam">cold cal ~56-57%</span> at 400°F. <span class="hi-trap">Trap: hot-cal and cold-cal channels read very differently at the same actual level because the reference-leg fluid density differs between hot and cold calibration — failing to apply the conversion (or reversing charging-flow direction) gives a wrong answer.</span> After the cooldown rate is reduced, IOP-6 directs <span class="hi-exam">raising charging flow to establish 80% cold cal level</span> (25-53% required prior to the 80% step). See [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q9</div>
+2LT-459 (Channel I PZR Level) variable leg leak: the variable leg is the <span class="hi-exam">low side of the D/P cell</span> and is connected to the pressurizer liquid space. A leak causes D/P to increase → <span class="hi-exam">indicated PZR level goes off scale LOW</span>. Actual PZR level and pressure also lower (inventory loss). PZR B/U heaters <span class="hi-exam">will NOT energize</span> because indicated level is below the <span class="val-trip">17% low level B/U heater cutoff setpoint</span>. <span class="hi-trap">Common misconception: D/P = 0 psid = hi pressurizer level (maximum indicated level), not D/P = maximum = hi level. A variable leg leak INCREASES D/P, indicating LOW.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q21</div>
+PZR reference leg leak causes indicated level to read <span class="hi-exam">HIGHER</span> (lower reference leg head → lower DP across transmitter → controller interprets as higher level). Master Flow Controller responds by <span class="hi-exam">lowering charging flow</span>, so <span class="hi-trap">actual PZR level LOWERS while indication rises — a divergence between actual and indicated level</span>.
+</div>
+
+### Level Control & Master Flow Controller
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q5</div>
+Loss of the 1A 460/230V bus drops the 13 (PD) charging pump but does NOT trip its breaker on UV, so the letdown-orifice auto-isolation interlock (all 3 charging pump breakers open) is not satisfied — letdown continues at 75 gpm. With no charging and letdown in service, <span class="hi-exam">PZR level lowers at ~1% per minute</span>. <span class="hi-trap">VCT level RISES at ~4% per minute (20 gal/% VCT rule) — the ~1%/min value applies to PZR, not VCT.</span> See [[CVCS]], [[460/230V AC]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q40</div>
+With the Charging Master Flow Controller failed as-is, a 100% → 20% downpower causes an RCS outsurge as Tavg lowers, but <span class="hi-exam">program PZR level is clipped at 59% (the maximum demanded level)</span>. At 20% power with Tavg exactly on program (551.6°F), the <span class="hi-exam">programmed PZR level is ~28%</span> (per AB.ROD-0003 Attachments 1 and 2). The no-load program level is 22%; the 80% program level (569.5°F Tavg) is ~51%. See [[AB.ROD-0003 — Continuous Rod Motion]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q40</div>
+The Charging System <span class="hi-exam">Master Flow Controller</span> normally runs ~40% demand; a failure to <span class="hi-exam">20% halves charging / seal injection flow</span> and produces SEAL WATER FLOW LO on all 4 RCPs. <span class="hi-trap">A PZR level program signal failing HIGH does NOT lower charging flow — the program is clipped at ~100% programmed level, so charging stays the same or rises slightly.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -169,73 +239,23 @@ On a toxic-gas control room evacuation, local plant control (per AB.CR-0001) det
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q87</div>
-On a 2PR1 PORV failing open at power: PZR pressure lowers, so the <span class="hi-exam">PZR Master Pressure Controller (MPC) output LOWERS</span> (turning on heaters and closing spray valves). Per AB.PZR-0001 the PORV is isolated by shutting its Block Valve; <span class="hi-trap">if the PORV is not restored within 72 hours, a unit shutdown is required (TS 3.4.5 action b)</span> — distinct from a leaking PORV (isolated with power maintained to the Block Valve, no shutdown). See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[TS 3/4.4 — Reactor Coolant System]].
+<div class="callout-label">Exam — 2016 Q7</div>
+After a controlling PZR level channel fails LOW with a CCP in service, charging flow rises automatically (program-actual deviation). When AB.CVC-0001 directs MFC to MANUAL, actual PZR level continues rising above program. <span class="hi-exam">Returning MFC to AUTO before PZR level is restored to program will force charging flow to LOWER</span> (because actual is now above program). If charging flow lowers below ~<span class="val-alarm">60 gpm</span>, <span class="hi-exam">letdown line flashing can occur due to inadequate cooling in the regenerative heat exchanger</span> — this is the AB.CVC-0001 caution against premature MFC return-to-auto.
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q77</div>
-During post-trip EOP response, if <span class="hi-exam">PZR PORV 2PR1 indicates open and will not manually shut, AND its block valve 2PR6 will not shut</span>, the PORV leak cannot be isolated and its size is unknown. The EOP response is to <span class="hi-exam">transition from EOP-TRIP-1 to EOP-LOCA-1</span> (TRIP-1 cannot size the PORV leak); the SI-termination decision is then made in LOCA-1. See [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]].
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #2</div>
-The controlling PZR Pressure channel (Channel I / PT455) fails low, annunciating <span class="hi-exam">OHA D-16 RC PRESS LO, E-12 PZR PRESS LO, and E-28 PZR HTR ON PRESS LOW</span>. RO takes the Master Pressure Controller to MANUAL to mitigate, then <span class="hi-exam">selects PZR Pressure Channel III for control</span> and restores the Master Controller to AUTO. Crew removes the failed channel from service and closes/de-energizes 2PR6 PORV block valve. Later a 2nd channel (PT457) fails low, causing an auto Inadvertent SI on Lo PZR pressure. See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]].
+<div class="callout-label">Exam — 2020 Q57</div>
+PZR Level Channel I (controlling channel) fails HIGH: charging flow reduces to minimum (controller sees high level, reduces charging). Actual PZR level drops slowly. At <span class="hi-exam">17% actual level</span>, the alarm channel (Channel II) triggers <span class="hi-exam">letdown isolation and PZR heaters off</span>. With minimum charging and no letdown, level eventually rises and a <span class="hi-exam">Rx Trip on high PZR level occurs at 92% (2/3 channels II &amp; III)</span>. <span class="hi-trap">Key distinction: controlling channel fails HIGH = sequential events (charging min → level drops → letdown isolates → level eventually rises → trip). Controlling channel fails LOW = charging rises immediately AND letdown isolates immediately — NOT in the sequential order.</span> Auctioneered Tavg failed high only shifts program level to ~59%.
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q10</div>
-Controlling PZR Pressure channel (Channel III / PT-457) fails low: the Master Pressure Controller drives output to 0% → <span class="hi-exam">all auto PZR heaters energize and spray valves shut (and stay shut)</span>; RCS pressure rises slowly. The PZR PORVs require <span class="hi-exam">2/2 coincidence — 2PR1 from channels I/III, 2PR2 from channels II/IV</span>. With Channel III failed low, <span class="hi-trap">2PR1 will NOT open; only ONE PORV (2PR2) opens — at <span class="val-alarm">2335 psig</span>.</span>
+<div class="callout-label">Exam — 2022 Q88</div>
+Loss of all control air impact on PZR level: with a centrifugal charging pump in service, <span class="hi-exam">CV55 fails OPEN and CV71 fails CLOSED</span>. With letdown isolated (no letdown path), higher charging flow to RCP seals causes <span class="hi-exam">PZR level to RISE</span>. Per AB.CA-0001: locally adjust CV54 (Centrifugal Charging Pump Flow Control Valve) OR <span class="hi-exam">transfer to 23 PDP charging pump</span> (speed controller fails at low speed stop → minimizes RCP seal flow → extends time before PZR reaches 90%).
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q11</div>
-The <span class="hi-exam">low PZR pressure automatic reactor trip setpoint is <span class="val-trip">1865 psig</span></span>. During an RCS leak at 40% power with no automatic or manual trip, PZR pressure lowering through this setpoint without a trip means an ATWT is present and a manual reactor trip is required. <span class="hi-trap">17% PZR level is the backup-heater isolation setpoint, NOT a reactor trip.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q38</div>
-Normal PZR spray demand is ~13% on each spray valve (Salem runs one set of B/U heaters in MANUAL ON). If <span class="hi-exam">2PS3 spray valve demand fails to 50%</span>, actual spray flow roughly <span class="hi-exam">doubles</span> — 2PS1 will shut, but excess spray (2PS3 is dominant) lowers PZR pressure. <span class="hi-exam">Backup heaters in AUTO energize at <span class="val-normal">2210 psig</span> and turn off at <span class="val-normal">2218 psig</span></span>. <span class="hi-trap">2218 psig is the TURN-OFF value, not the energize value. Control group heaters cannot maintain pressure against 50% spray demand.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q36</div>
-For a 1PR1 PORV that opens with no demand and cannot be shut, AB.PZR-0001 directs shutting the 1PR6 block valve; PZR heaters cannot restore pressure for a PORV failure. <span class="hi-trap">The low PZR pressure Rx trip is <span class="val-trip">1865 psig</span> (not 1985 psig), and the OT/DT trip is not a psig value but equates to ~2000 psig (not 2100 psig).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q40</div>
-The Charging System <span class="hi-exam">Master Flow Controller</span> normally runs ~40% demand; a failure to <span class="hi-exam">20% halves charging / seal injection flow</span> and produces SEAL WATER FLOW LO on all 4 RCPs. <span class="hi-trap">A PZR level program signal failing HIGH does NOT lower charging flow — the program is clipped at ~100% programmed level, so charging stays the same or rises slightly.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q41</div>
-During an RCS leak in heatup with the Low PZR Pressure SI still blocked (RCS &lt;1915 psig / pre-P-11), the PZR pressure control / charging system <span class="hi-trap">cannot keep RCS pressure from degrading: only a single centrifugal charging pump is allowed in service and its ~550 gpm runout is insufficient</span> against a 2000 gpm leak — the AUTO SI ultimately comes from Containment High Pressure (≥4 psig), not the (blocked) Low PZR Pressure setpoint.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q95</div>
-PZR <span class="hi-exam">hot-calibrated vs cold-calibrated level correlation</span> during a cooldown (IOP-6 Exhibit 1): a hot cal indication of <span class="hi-exam">95% at 400°F corresponds to ACTUAL PZR level ~66%</span>, which reads as <span class="hi-exam">cold cal ~56-57%</span> at 400°F. <span class="hi-trap">Trap: hot-cal and cold-cal channels read very differently at the same actual level because the reference-leg fluid density differs between hot and cold calibration — failing to apply the conversion (or reversing charging-flow direction) gives a wrong answer.</span> After the cooldown rate is reduced, IOP-6 directs <span class="hi-exam">raising charging flow to establish 80% cold cal level</span> (25-53% required prior to the 80% step). See [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q7</div>
-With the PZR Master Pressure Controller (MPC) demand failing high (0-100% scale), the MPC output <span class="hi-exam">calls for maximum spray and turns OFF the backup heaters</span>. <span class="hi-exam">The PZR PORVs are controlled independently of the MPC demand — they respond to actual PZR pressure channels 1-4</span>; since actual PZR pressure is not high, the PORVs have no open demand and remain SHUT. So B/U heaters OFF and BOTH PORVs SHUT.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q5</div>
-Loss of the 1A 460/230V bus drops the 13 (PD) charging pump but does NOT trip its breaker on UV, so the letdown-orifice auto-isolation interlock (all 3 charging pump breakers open) is not satisfied — letdown continues at 75 gpm. With no charging and letdown in service, <span class="hi-exam">PZR level lowers at ~1% per minute</span>. <span class="hi-trap">VCT level RISES at ~4% per minute (20 gal/% VCT rule) — the ~1%/min value applies to PZR, not VCT.</span> See [[CVCS]], [[460/230V AC]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q40</div>
-With the Charging Master Flow Controller failed as-is, a 100% → 20% downpower causes an RCS outsurge as Tavg lowers, but <span class="hi-exam">program PZR level is clipped at 59% (the maximum demanded level)</span>. At 20% power with Tavg exactly on program (551.6°F), the <span class="hi-exam">programmed PZR level is ~28%</span> (per AB.ROD-0003 Attachments 1 and 2). The no-load program level is 22%; the 80% program level (569.5°F Tavg) is ~51%. See [[AB.ROD-0003 — Continuous Rod Motion]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q86</div>
-In Mode 5 with RHR in service, the Pressurizer Overpressure Protection System (POPs) <span class="hi-exam">opens both PZR PORVs at 375 psig</span> (the cold-overpressure setpoint, distinct from the at-power 2335 psig open setpoint). When a second RCP start momentarily raises RCS pressure to 390 psig, the PORVs open (visible in the control room) along with the 1RH3 RHR relief (not visible). Enter AB.PZR-0001, Attachment 3, to ensure any PORV that opened has reshut. <span class="hi-trap">375 psig is the cold-overpressure POPs setpoint; 2335 psig is the normal at-power PORV open setpoint.</span>
+<div class="callout-label">Exam — 2023 Q87</div>
+EOP-TRIP-4 CAS: if PZR level cannot be maintained <span class="hi-exam">> 4%</span> (with 2CV55 and 2CV71 fully open and level still lowering), <span class="hi-exam">actuate SI and return to EOP-TRIP-1</span>. <span class="hi-trap">PZR heaters will NOT energize with level < 17% — operating heaters to maintain saturated conditions is not possible when level is at 10% and lowering.</span>
 </div>
 
 ## Connections

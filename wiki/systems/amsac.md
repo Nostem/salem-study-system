@@ -14,6 +14,8 @@ aliases:
 
 Provides a diverse backup to the Reactor Protection System for mitigating Anticipated Transients Without Scram (ATWS). If the RPS fails to trip the reactor, AMSAC trips the turbine and actuates auxiliary feedwater to prevent RCS overpressurization and ensure decay heat removal. Required per 10CFR50.62. (UFSAR 7.8)
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q67</div>
 The purpose of AMSAC is to prevent excessive <span class="hi-exam">RCS pressure</span> should the reactor trip breakers fail to open on demand. <span class="hi-trap">Trap: AMSAC does not prevent excessive feed flow (it ADDS AFW), does not reduce reactor power (it cannot scram the reactor), and does not protect SG tube differential pressure.</span> (AMSAC Lesson Plan NOS05AMSAC0-02 page 11; Salem FSAR 7.8)
@@ -48,12 +50,16 @@ The purpose of AMSAC is to prevent excessive <span class="hi-exam">RCS pressure<
 
 ## Boron Worth During an ATWS
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q9</div>
 <span class="hi-exam">Differential boron worth rises over core life</span> (boron is more effective in a less-borated, harder-spectrum EOL core than in a heavily-borated BOL core). Therefore a rapid boration performed during an ATWS inserts <span class="hi-exam">more negative reactivity at EOL with HIGHER differential boron worth</span> than the same boration at BOL. <span class="hi-trap">Trap: candidates may reason that the higher BOL boron concentration means more boron worth — but it is the differential (per-ppm) worth that matters, and that is HIGHER at EOL.</span>
 </div>
 
 ## AMSAC Train-to-Pump Mapping
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q31</div>

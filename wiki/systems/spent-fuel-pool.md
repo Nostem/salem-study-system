@@ -16,7 +16,26 @@ Provides storage and cooling for spent fuel assemblies. Includes SFP cooling and
 
 Removes decay heat from spent fuel stored in the spent fuel pool. Maintains pool water temperature and clarity. Two cooling trains per unit with heat exchangers cooled by CCW. (UFSAR 9.1.3)
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q9</div>
+The <span class="hi-exam">Spent Fuel Pool HX is cooled by CCW</span> and is fed from the <span class="hi-exam">Non-Safeguards CC header</span> (supplied from both CC headers). During a CCW leak isolated per AB.CC-0001 Attachment 4, a leak that continues with EITHER CC header in service points to the SFP HX — <span class="hi-trap">SFP cooling pressure is &lt; CCW pressure, so leakage flows out of CCW into the SFP cooling side.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q49</div>
+On a loss of SFP cooling during fuel movement, as SFP temperature rises toward 150°F the dominant adverse consequence is <span class="hi-exam">increased radiation at the FHB charcoal filter from spent-fuel off-gassing</span>. SFP overflow goes out the ventilation openings (not over the pool wall), and it is always possible to lower a fuel bundle. See [[Radiation Monitoring]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]].
+</div>
+
 ## Anti-Siphon Design Features
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q48</div>
+There are <span class="hi-trap">neither automatic SFP cooling pump trips nor automatic makeup</span> to the SFP. Fuel uncovery on a cooling-pump leak is prevented by passive design: the <span class="hi-exam">SFP cooling pump suction line is ~4 ft below the pool surface</span> (limits level loss if the cooling system leaks), the <span class="hi-exam">return line discharges ~6 ft above the top of the fuel</span>, and a <span class="hi-exam">1/2 inch anti-siphon hole drilled in the RETURN line</span> prevents siphoning the pool back to the cooling pumps. <span class="hi-trap">Anti-siphon hole is on the return line, not the suction line; the suction line is below the surface, not the discharge line.</span>
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q62</div>
@@ -25,17 +44,21 @@ The SFP is designed to prevent fuel from becoming uncovered due to loss of syste
 
 ## SFP Routine Makeup Water Sources
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q33</div>
-Per S2.OP-SO.SF-0001, the following water sources are allowed for <span class="hi-exam">ROUTINE makeup</span> to the Spent Fuel Pool: <span class="hi-exam">1) Demineralized Water System, 2) Primary Water Storage Tank, 3) CVCS Holdup Tanks, 4) Refueling Water Storage Tank</span>. <span class="hi-trap">The Fresh Water and Fire Protection Water Storage Tank is NOT an allowed ROUTINE makeup source.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q46</div>
 Confirms the preferred-order list in <span class="hi-exam">Prerequisite 2.3</span> of S2.OP-SO.SF-0001 — the <span class="hi-exam">RWST is LAST (least preferred)</span> in the makeup-water priority. Used when responding to OHA C-35 SFP LVL LO caused by normal evaporation.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q33</div>
+Per S2.OP-SO.SF-0001, the following water sources are allowed for <span class="hi-exam">ROUTINE makeup</span> to the Spent Fuel Pool: <span class="hi-exam">1) Demineralized Water System, 2) Primary Water Storage Tank, 3) CVCS Holdup Tanks, 4) Refueling Water Storage Tank</span>. <span class="hi-trap">The Fresh Water and Fire Protection Water Storage Tank is NOT an allowed ROUTINE makeup source.</span>
+</div>
+
 ## Spent Fuel Handling Crane Interlocks (Unit 2)
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q47</div>
@@ -44,12 +67,21 @@ Unit 2 Spent Fuel Handling Crane interlocks (per S2.OP-IO.ZZ-0010 and TR 3.9.7 /
 
 ## SFP Alarms and Level Setpoints
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q90</div>
+<span class="hi-exam">OHA C-27 SFP Lvl Hi annunciates at 6" above normal level</span>, which is expected to occur with a pool heatup of ~14 degrees (per the CAUTION on top of page 2 of AB.SF-0001 — pool expansion raises level). With one SFP cooling pump failed and pool temperature rising, this High Level OHA is the expected plant response. The <span class="hi-exam">SFP demineralizer does NOT auto-bypass</span> — it is <span class="hi-exam">manually removed from service IAW AB.SF CAS item 2.0 when actual or projected SFP temp is 130&deg;F</span>. <span class="hi-trap">The 136&deg;F auto-bypass belongs to the CVCS demin, NOT the SFP demin.</span> Per S2.OP-IO.ZZ-0010 (IOP-10) P&amp;L 3.4, <span class="hi-exam">transfer of spent fuel into the SFP is suspended until BOTH SFP cooling pumps are OPERABLE</span> — so the failed pump must be restored before remaining fuel bundles can be transferred.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q92</div>
 SFP Low Level alarm setpoint: <span class="hi-exam val-alarm">128 feet, 0 inches</span>. Per S2.OP-AB.SF-0001, when the pool is boiling (212 &deg;F) and level is at the Low Level alarm, the crew must initiate makeup until the <span class="hi-exam">HI LEVEL ALARM actuates</span> — not just until the LOW LEVEL ALARM clears (which occurs at <span class="hi-exam">128 feet, 2 inches</span>). Both <span class="hi-exam">S2.OP-SO.SF-0006 (Emergency Fill) and S2.OP-SO.SF-0001 (Fill and Transfer)</span> are acceptable procedures for restoring level.
 </div>
 
 ## FHV Operability During Fuel Movement
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q80</div>
@@ -58,12 +90,21 @@ TS 3.9.12 requires the Fuel Handling Ventilation System OPERABLE (2 exhaust fans
 
 ## Dropped Fuel Assembly Response
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q88</div>
 Dropped fuel assembly in Unit 2 SFP with gas bubbles observed and 2R5 stabilized at 25 mR/hr: <span class="hi-exam">2R5 (FHB area radiation monitor) alarm setpoint <span class="val-alarm">11 mR/hr</span> (warning <span class="val-alarm">7 mR/hr</span>) automatically swaps FHB ventilation to the Charcoal Filter and starts BOTH FHB Exhaust Fans</span>. Normal FHB lineup is single Supply Fan running and BOTH Exhaust Fans running. Per S2.OP-AB.FUEL-0001, FHB Watertight Door is kept closed except for normal personnel passage. <span class="hi-trap">2R5 does NOT lock out crane motion — only 2R32A (on the crane itself) interlocks crane motion. The FHB Evacuation alarm actuates but only non-essential personnel are evacuated; required actions must be performed prior to ALL personnel evacuation.</span>
 </div>
 
 ## SRO/RE Supervision of SFP Manipulations
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q68</div>
+Per Precaution &amp; Limitation 2.2 of S2.OP-IO.ZZ-0010, spent fuel manipulations must be supervised by <span class="hi-exam">Reactor Services, a qualified SRO, OR a Reactor Engineer</span> — so with a Qualified Reactor Engineer present, <span class="hi-exam">fuel movement CAN occur without a licensed SRO</span>. See [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]].
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q94</div>
@@ -72,6 +113,8 @@ Per S2.OP-IO.ZZ-0010 Precautions and Limitations 2.2: <span class="hi-exam">a Re
 
 ## Mode 6 Entry During Refueling
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q95</div>
 Per S2.OP-IO.ZZ-0009 (Defueled to Refueling) Step 5.1.6: <span class="hi-exam">Mode 6 is entered when the first fuel assembly is lowered into the reactor vessel</span>. <span class="hi-trap">Trap distractors: Mode 6 is NOT entered when fuel movement is "imminent" (the word "imminent" applies to IOP-3 / MODE 2 entry when Control Bank A withdrawal is imminent), NOT when an assembly is moved over the vessel, and NOT when the SM signs Attachment 1 authorizing entry.</span>
@@ -79,49 +122,30 @@ Per S2.OP-IO.ZZ-0009 (Defueled to Refueling) Step 5.1.6: <span class="hi-exam">M
 
 ## Equipment Out-of-Service During Fuel Movement
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 SRO-A1-2</div>
-SRO determines which scheduled work activities may proceed during ongoing irradiated fuel movement. Three of four activities are allowed: 22 SW pump packing replacement (TSAS 3.7.4 entered, 72-hour action), 2A EDG tagout (TSAS 3.8.1.2 only requires two EDGs during fuel moves), 21 Chiller oil change (TSAS 3.7.10 allows OOS once moves are in progress, 14 days). The blocking activity is <span class="hi-exam">New Fuel delivery — opening the FHB Truck Bay Door breaches the FHB ventilation boundary required during irradiated fuel movement</span> (per S2.OP-IO.ZZ-0010 page 19).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q49</div>
-On a loss of SFP cooling during fuel movement, as SFP temperature rises toward 150°F the dominant adverse consequence is <span class="hi-exam">increased radiation at the FHB charcoal filter from spent-fuel off-gassing</span>. SFP overflow goes out the ventilation openings (not over the pool wall), and it is always possible to lower a fuel bundle. See [[Radiation Monitoring]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q68</div>
-Per Precaution &amp; Limitation 2.2 of S2.OP-IO.ZZ-0010, spent fuel manipulations must be supervised by <span class="hi-exam">Reactor Services, a qualified SRO, OR a Reactor Engineer</span> — so with a Qualified Reactor Engineer present, <span class="hi-exam">fuel movement CAN occur without a licensed SRO</span>. See [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q9</div>
-The <span class="hi-exam">Spent Fuel Pool HX is cooled by CCW</span> and is fed from the <span class="hi-exam">Non-Safeguards CC header</span> (supplied from both CC headers). During a CCW leak isolated per AB.CC-0001 Attachment 4, a leak that continues with EITHER CC header in service points to the SFP HX — <span class="hi-trap">SFP cooling pressure is &lt; CCW pressure, so leakage flows out of CCW into the SFP cooling side.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q50</div>
-The Unit 2 Cycle 21 SFP boron concentration limit of <span class="hi-exam">≥ <span class="val-normal">2127 ppm</span> in Mode 6</span> (Salem Unit 2 COLR, p 9, §2.6) is set by the most restrictive of 3 criteria, one of which <span class="hi-exam">ensures Keff ≤ 0.95 at All Rods In, Cold Zero Power with a 1% &Delta;k/k uncertainty added</span> — that Keff criterion is the basis tested. The preferred makeup source to establish/restore SFP boron (S2.OP-SO.SF-0001) is the <span class="hi-exam">CVCS Holdup Tanks</span>. <span class="hi-trap">Demineralized water is the normal SFP makeup source but has NO boron, so it cannot RAISE boron concentration. "SFP boron always &gt; RCS / Refueling Cavity" is NOT the reason for the 2127 ppm limit. The RWST is not the preferred boron makeup source.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q68</div>
 Per S2.OP-SO.SF-0009 (Refueling Operations) P&amp;L 3.13, transfer of fuel into the SFP must be <span class="hi-exam">suspended when either the 21 or 22 SFP Cooling pump becomes INOPERABLE</span> — even with the other pump in service. <span class="hi-exam">Loss of all oil in the bearing oil reservoir renders an SFP cooling pump INOPERABLE.</span> <span class="hi-trap">Distractors that do NOT require suspension: an SRO leaving SFP manipulations under a qualified RE (RE OR SRO is acceptable); one FHB supply fan + 2 FHB exhaust fans running (that is the complement required for an OPERABLE FHB ventilation system); 2R5 failing low (only ONE of the two FHB area rad monitors must be OPERABLE per TSAS 3.3.1.1 Table 3.3-6).</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q90</div>
-<span class="hi-exam">OHA C-27 SFP Lvl Hi annunciates at 6" above normal level</span>, which is expected to occur with a pool heatup of ~14 degrees (per the CAUTION on top of page 2 of AB.SF-0001 — pool expansion raises level). With one SFP cooling pump failed and pool temperature rising, this High Level OHA is the expected plant response. The <span class="hi-exam">SFP demineralizer does NOT auto-bypass</span> — it is <span class="hi-exam">manually removed from service IAW AB.SF CAS item 2.0 when actual or projected SFP temp is 130&deg;F</span>. <span class="hi-trap">The 136&deg;F auto-bypass belongs to the CVCS demin, NOT the SFP demin.</span> Per S2.OP-IO.ZZ-0010 (IOP-10) P&amp;L 3.4, <span class="hi-exam">transfer of spent fuel into the SFP is suspended until BOTH SFP cooling pumps are OPERABLE</span> — so the failed pump must be restored before remaining fuel bundles can be transferred.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q48</div>
-There are <span class="hi-trap">neither automatic SFP cooling pump trips nor automatic makeup</span> to the SFP. Fuel uncovery on a cooling-pump leak is prevented by passive design: the <span class="hi-exam">SFP cooling pump suction line is ~4 ft below the pool surface</span> (limits level loss if the cooling system leaks), the <span class="hi-exam">return line discharges ~6 ft above the top of the fuel</span>, and a <span class="hi-exam">1/2 inch anti-siphon hole drilled in the RETURN line</span> prevents siphoning the pool back to the cooling pumps. <span class="hi-trap">Anti-siphon hole is on the return line, not the suction line; the suction line is below the surface, not the discharge line.</span>
-</div>
-
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2012 SRO-A1-2</div>
 Direct Actions for Spent Fuel Movement (S2.OP-IO.ZZ-0010): determine which scheduled work suspends fuel movement. Only the <span class="hi-exam">New Fuel delivery requires suspension</span> — it requires opening the Truck Bay door to the Fuel Handling Building, which IOP-10 (p.17) requires to stay closed during fuel movement (FHB ventilation boundary). The traps do NOT require suspension: only one EDG is required (TSAS 3.8.1.2), a single SW pump out does not enter SW Tech Specs, and a chiller may be removed with a 14-day window (TSAS 3.7.10, 3.0.4 not applicable).
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A1-2</div>
+SRO determines which scheduled work activities may proceed during ongoing irradiated fuel movement. Three of four activities are allowed: 22 SW pump packing replacement (TSAS 3.7.4 entered, 72-hour action), 2A EDG tagout (TSAS 3.8.1.2 only requires two EDGs during fuel moves), 21 Chiller oil change (TSAS 3.7.10 allows OOS once moves are in progress, 14 days). The blocking activity is <span class="hi-exam">New Fuel delivery — opening the FHB Truck Bay Door breaches the FHB ventilation boundary required during irradiated fuel movement</span> (per S2.OP-IO.ZZ-0010 page 19).
+</div>
+
+## Exam & Operating Coverage
+
+### SFP Boron Concentration
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q50</div>
+The Unit 2 Cycle 21 SFP boron concentration limit of <span class="hi-exam">≥ <span class="val-normal">2127 ppm</span> in Mode 6</span> (Salem Unit 2 COLR, p 9, §2.6) is set by the most restrictive of 3 criteria, one of which <span class="hi-exam">ensures Keff ≤ 0.95 at All Rods In, Cold Zero Power with a 1% &Delta;k/k uncertainty added</span> — that Keff criterion is the basis tested. The preferred makeup source to establish/restore SFP boron (S2.OP-SO.SF-0001) is the <span class="hi-exam">CVCS Holdup Tanks</span>. <span class="hi-trap">Demineralized water is the normal SFP makeup source but has NO boron, so it cannot RAISE boron concentration. "SFP boron always &gt; RCS / Refueling Cavity" is NOT the reason for the 2127 ppm limit. The RWST is not the preferred boron makeup source.</span>
 </div>
 
 ## Connections

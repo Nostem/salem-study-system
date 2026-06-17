@@ -202,6 +202,13 @@ Functions: support core, maintain fuel alignment, limit fuel assembly movement, 
 | Peak Linear Power for Protection Setpoints | ≤22.4 kW/ft | UFSAR T4.1-1 |
 | Peak Fuel Center Temp at Max Overpower Trip | <4700°F | UFSAR T4.1-1 |
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q75</div>
+Axial peaking factor increase: with the core axial power distribution already peaked below the midplane, <span class="hi-exam">reducing RCS boron concentration (diluting) increases the maximum axial peaking factor</span>. Dilution inserts positive reactivity, raising Tavg and hot leg temperature — hotter water in upper core regions is less dense (less moderation), shifting flux further toward the already flux-dense bottom half. <span class="hi-trap">Withdrawing control rods 4 steps reduces peaking (less flux depression). A dropped rod at the core edge affects radial peaking, not axial. A turbine load reduction lowers delta-T, pushing flux upward, also reducing axial peaking.</span>
+</div>
+
 ## Reactivity Coefficients
 
 | Parameter | Value | Source |
@@ -260,6 +267,13 @@ Design basis minimum shutdown margin: **1.3 %delta-rho**. The largest control re
 
 Note: Values are typical reload values. Current cycle values are in the appropriate NDR or COLR. (UFSAR T4.3-2)
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q71</div>
+Boron mixing during natural circulation vs forced circulation: <span class="hi-exam">more time is required</span> to achieve complete mixing in the RCS during natural circulation (lower flow rate without RCPs). However, once mixing is complete, a 1 ppm increase in boron concentration produces the <span class="hi-exam">same change in reactivity</span> regardless of whether the RCS is in forced or natural circulation. The reactivity effect of boron depends on concentration, not flow rate.
+</div>
+
 ## Maximum Core Reactivity
 
 Maximum core reactivity (cold, zero power, BOC): **1.200 keff** (typical reload). (UFSAR T4.3-1)
@@ -271,27 +285,19 @@ Maximum core reactivity (cold, zero power, BOC): **1.200 keff** (typical reload)
 3. **Burnable absorbers:** PYREX, WABA, or IFBA rods placed in guide thimble positions to hold down excess BOL reactivity without increasing soluble boron beyond limits.
 (UFSAR 4.3.2.5)
 
-## Key Exam Concepts
-
-- The core is designed so that the highest worth stuck RCCA still allows adequate shutdown margin (≥1.3 %delta-rho)
-- MTC is required to be negative at power (TS limit) — verified by physics testing
-- FQ and F-delta-H limits are given in the COLR, not fixed in Tech Specs
-- The power coefficient becomes more negative with burnup (larger power defect at EOL)
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q71</div>
-Boron mixing during natural circulation vs forced circulation: <span class="hi-exam">more time is required</span> to achieve complete mixing in the RCS during natural circulation (lower flow rate without RCPs). However, once mixing is complete, a 1 ppm increase in boron concentration produces the <span class="hi-exam">same change in reactivity</span> regardless of whether the RCS is in forced or natural circulation. The reactivity effect of boron depends on concentration, not flow rate.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q70</div>
 Xenon-135 following a reactor trip from 100% power: Xe-135 concentration peaks at approximately <span class="hi-exam">4700 pcm</span> at about <span class="hi-exam">8-9 hours</span> after the trip. After the peak, Xe-135 concentration decreases due to decay of I-135 and Xe-135. <span class="hi-exam">Decreasing Xe-135 inserts positive reactivity</span> (Xe-135 is a fission product poison). At 12 hours post-trip with reactor at 5% power, Xe-135 is lowering — operator must add <span class="hi-exam">negative reactivity</span> to maintain power and T-avg stable.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q75</div>
-Axial peaking factor increase: with the core axial power distribution already peaked below the midplane, <span class="hi-exam">reducing RCS boron concentration (diluting) increases the maximum axial peaking factor</span>. Dilution inserts positive reactivity, raising Tavg and hot leg temperature — hotter water in upper core regions is less dense (less moderation), shifting flux further toward the already flux-dense bottom half. <span class="hi-trap">Withdrawing control rods 4 steps reduces peaking (less flux depression). A dropped rod at the core edge affects radial peaking, not axial. A turbine load reduction lowers delta-T, pushing flux upward, also reducing axial peaking.</span>
-</div>
+## Key Exam Concepts
+
+- The core is designed so that the highest worth stuck RCCA still allows adequate shutdown margin (≥1.3 %delta-rho)
+- MTC is required to be negative at power (TS limit) — verified by physics testing
+- FQ and F-delta-H limits are given in the COLR, not fixed in Tech Specs
+- The power coefficient becomes more negative with burnup (larger power defect at EOL)
 
 ## Tech Spec LCOs
 

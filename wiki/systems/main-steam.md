@@ -23,6 +23,91 @@ Transports steam from the four steam generators to the turbine-generator and oth
 - <span class="hi">Flow restrictors (venturi type) in each steam line limit blowdown rate in the event of a steamline break</span>
 (UFSAR 10.3.2.2, T7.2-1)
 
+**Exam & operating coverage:**
+
+### MSIV Actuation & Isolation Signals
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q42</div>
+<span class="hi-exam">The 24MS167 Main Steamline Isolation Valve receives a SHUT signal from the Hi-Hi containment pressure (15 psig) MSLI signal</span> on a LOCA — so a 24MS167 indicating OPEN after such an event means it failed to reposition. See [[ESF & Design]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q65</div>
+A <span class="hi-exam">Main Steamline rupture in containment with failure of MSLI</span> causes ALL SGs to blow down and containment pressure to rise above <span class="val-trip">15 psig</span>, generating the Phase B containment isolation that isolates ALL containment penetrations not supporting ECCS. <span class="hi-trap">Phase A isolation occurs at <span class="val-trip">4 psig</span> (non-essential penetrations); Phase B isolates the remaining non-ECCS penetrations.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+During a LOCA, <span class="hi-exam">Main Steamline Isolation occurs at 15 psig</span> containment pressure. It is the only automatic action that newly actuates as containment pressure rises from 12 to 18 psig — Phase A, Feedwater Isolation, and Containment Ventilation isolation already occurred on the earlier SI signal.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q12</div>
+MSLI actuation setpoints: High steam flow (<span class="val-trip">>40%</span>) coincident with either <span class="hi-exam">Low-Low Tavg (<span class="val-trip">≤543°F</span> on 2/4 loops) OR Low SG Pressure (<span class="val-trip"><600 psig</span>)</span>. Also actuates on Containment Pressure <span class="val-trip">>15 psig</span>. <span class="hi-trap">SG Pressure differential >100 psig between one SG and the others actuates SI only (not MSLI) — different signals.</span>
+</div>
+
+### MSIV Mechanics & Operations
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q49</div>
+11MS167 hydraulic stop valve (logic dwgs 239916/239917): the FAST/Emergency CLOSE signal acts like a Safeguards Train MSLI or High Steam Line Flow SI. <span class="hi-exam">SV-1 closes (had directed hydraulic pressure to the bottom of the piston); SV-3 opens to equalize hydraulic pressure on both sides of the operating piston</span> (hydraulic fluid acts as a buffer to prevent slamming); the <span class="hi-exam">solenoids for vent valves 11MS169 and 11MS171 open, venting air so those vent valves open and main steam pressure on the lower operating piston drives the disc closed</span>. The hydraulic pump immediately stops running. A FAST close issued after a NORMAL close is already in progress drives the valve closed via this Emergency Trip path.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q55</div>
+A spurious MSLI closes the MSIVs AND the <span class="hi-exam">11-14MS18 (MS STOP BYP) valves</span>, removing the main-steam supply to the operating SGFP (which had been placed on main steam prior to 5% power). The SGFP coasts down — it does not trip.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q16</div>
+Main Steam warmup (S2.OP-SO.MS-0001): <span class="hi-exam">MS7 drain valves are opened BEFORE MSIVs (MS167)</span> to prevent water hammer from pressurized steam forcing residual water in the piping. MSIVs are opened when less than a MAXIMUM of <span class="hi-exam">50 psid</span> across each valve. <span class="hi-trap">Trap: 15 psig is used for other MS Header pressure steps in SO.MS-0001, not the MSIV opening delta-P criterion.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-e</div>
+A Main Steam Line Isolation (MSLI) is performed by depressing all 4 MSLI PBs on either Safeguards bezel. <span class="hi-trap">Outside the EOP network, initiating a MSLI to trip the turbine BEFORE tripping the reactor is incorrect — a MSLI renders the Main Steam Dumps inoperable and prematurely isolates the SGFPs, and with Rx power &gt;P-10 (10%) and steam dumps unavailable, the CAS then requires a reactor trip. In TRIP-1 the steps to trip the Rx precede tripping the Turbine, and a MSLI is only used as the last turbine-trip method (after the trip handle and Turbine Trip bezel fail).</span> In this JPM, initiating a MSLI before the reactor trip is failure criteria due to the possible challenge to SG safeties.
+</div>
+
+### Steam Line Breaks & Secondary Effects
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q12</div>
+Initial Tavg response (before automatic protective actions) — large steam line break vs large feed line break: a <span class="hi-exam">steam line break draws MORE steam from the SG → Tcold lowers → Tavg LOWERS</span>; a <span class="hi-exam">feed line break sends LESS cold feed into the SG → Tcold rises → Tavg RISES</span>. <span class="hi-trap">A main feedwater line break depressurizes the SG similarly to a steam line break, so diverse/alternate indications are needed to discern the actual SG condition.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q51</div>
+Per AB.STM-0001 (Excessive Steam Flow), uncontrollably rising steam flow with no apparent cause drives reactor power up at <span class="hi-exam">the same rate as the steam flow</span>; the Continuous Action Summary (Step 1.1) directs the crew to <span class="hi-exam">trip the reactor, confirm the trip, then initiate MSLI</span> to determine if SI is required. See [[AB.STM-0001 — Excessive Steam Flow]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q16</div>
+Steam line rupture upstream of 24MS167 with reactor tripped, MSLI performed, and feed isolated to 24 SG: as the <span class="hi-exam">faulted SG pressure lowers due to the steam break, break flow lowers</span>, and the <span class="hi-exam">RCS cooldown rate lowers</span> as a result. <span class="hi-trap">A static break does NOT pass the same lbm of steam flow during the entire event — break flow is a function of upstream SG pressure. Initiating AFW to the ruptured SG is only directed in EOP-LOSC-2 if ALL SGs are faulted, not in this single-line-break scenario.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q49</div>
+Small (0.1%) steam leak from a single SG with reactor at <span class="hi-exam">1×10⁻⁸ Amps (exactly critical, below POAH)</span>: positive reactivity from the cooldown causes <span class="hi-exam">Rx power to rise until it stabilizes after reaching the Point Of Adding Heat (POAH)</span>. <span class="hi-exam">Below POAH there is NO temperature-coefficient feedback</span> — power simply rises with the steam-induced cooldown. Once power reaches POAH, the negative MTC adds enough negative reactivity to <span class="hi-exam">offset the positive reactivity from the steam leak</span> and power stabilizes. <span class="hi-trap">No reactor trip occurs — both OT/DT and Power Range high-flux (low setpoint) trips are plausible distractors but neither actuates because power stabilizes well below their setpoints.</span>
+</div>
+
+### MSLI Failure & Manual Recovery
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+21 SG steam leak inside containment escalates to a rupture on a manual reactor trip. <span class="hi-exam">Both auto MSLI signals (RP0279A/B) and manual MSLI fail to close any of the four MSIVs</span> (21-24MS167 fail open). MSLI failure leaves the steam leak unisolated → CRS directs manual SI per AB.STM CAS / TRIP-1 Step 11. Local operators are dispatched to <span class="hi-exam">place valves from Table D in safeguards position</span> (locally close MSIVs). All SGs depressurize uncontrollably → EOP-LOSC-1 → EOP-LOSC-2. Local operators successfully shut <span class="hi-exam">23MS167</span> later in the event; pressure rise in 23 SG drives transition back to LOSC-1.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+21MS167 drifts from full open position at 40% power. OHA G-34 (21-24 MS167 VALVES NOT FULL OPEN). PO reports CRT and board indication. Recovery: <span class="hi-exam">depress open pushbutton to re-open 21MS167</span> per ARP S2.OP-AR.ZZ-0007.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #3</div>
+Main turbine fails to auto trip AND fails to manually trip following reactor trip from AB.RCP-0001. MSLI fails to auto actuate. <span class="hi-exam">CT#1 (CT-12): crew manually actuates MSLI using Fast Close pushbuttons on 2CC2</span> (or Loops 21-24 MSLI on 2CC1 Safeguards bezels). Failure to close MSIVs causes uncontrolled depressurization of all SGs, excessive RCS cooldown, and challenges to Integrity and Subcriticality CSFs. MS10 atmospheric dump valves used in EOP-FRHS-1 to depressurize selected SG to < <span class="hi-exam">575 psig</span> for condensate feed recovery.
+</div>
+
 ## Main Steam Safety Valves (MSSVs)
 
 5 valves per loop, 4 loops = 20 MSSVs total.
@@ -37,14 +122,16 @@ Transports steam from the four steam generators to the turbine-generator and oth
 
 (UFSAR 10.3, TS Table 3.7-4)
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q42</div>
-MSSVs will start to open when main steam line pressure FIRST exceeds <span class="hi-exam"><span class="val-trip">1070 psig</span></span> (the lowest lift setting, xMS15). <span class="hi-trap">Trap: 1100 psig (xMS14) is the second lowest — the lowest is 1070 psig.</span> LCO 3.7.1.1 purpose: limit secondary system pressure to within <span class="hi-exam">110% of design pressure AND protect against overpressurization of the Reactor Coolant Pressure boundary</span>. <span class="hi-trap">It is NOT only for secondary overpressure protection — the MSSVs also protect the RCS pressure boundary.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q26</div>
 Each SG has <span class="hi-exam">five</span> safety valves with lift setpoints of <span class="hi-exam"><span class="val-trip">1070, 1100, 1110, 1120, 1125 psig</span></span> (confirms the xMS11–xMS15 table above). Count valves whose setpoint is at or below the SG pressure: at <span class="hi-exam">1115 psig</span>, the 1070, 1100, and 1110 psig valves are open = <span class="hi-exam">3 safety valves</span>. <span class="hi-trap">Trap: the 1120 and 1125 psig valves are above 1115 psig and stay shut. Only the affected SG (the one at 1115 psig) is considered — a MSLI isolates the other SGs.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q42</div>
+MSSVs will start to open when main steam line pressure FIRST exceeds <span class="hi-exam"><span class="val-trip">1070 psig</span></span> (the lowest lift setting, xMS15). <span class="hi-trap">Trap: 1100 psig (xMS14) is the second lowest — the lowest is 1070 psig.</span> LCO 3.7.1.1 purpose: limit secondary system pressure to within <span class="hi-exam">110% of design pressure AND protect against overpressurization of the Reactor Coolant Pressure boundary</span>. <span class="hi-trap">It is NOT only for secondary overpressure protection — the MSSVs also protect the RCS pressure boundary.</span>
 </div>
 
 ## Atmospheric Relief Valves (MS10s)
@@ -54,38 +141,9 @@ Each SG has <span class="hi-exam">five</span> safety valves with lift setpoints 
 - Total flow at no-load steam pressure: 390147 lb/hr at 1005 psig
 - Controllable from the control room; backup nitrogen bottle racks for loss of control air
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q43</div>
-Each MS10 (SG Atmospheric Relief Valve) has a design capacity of <span class="hi-exam">2.5% rated steam flow</span> (total for all 4 valves is <span class="hi-exam">10% rated steam flow at no-load steam pressure — 390147 lb/hr at 1005 psig</span>). <span class="hi-trap">Common trap: 10% is the total design capacity for all 4 valves, not the capacity of a single valve.</span> Per AB.STM-0001, if an MS10 fails open and MSLI does not isolate the leak, a manual SI is required.
-</div>
+**Exam & operating coverage:**
 
-## Steam Dump System
-
-See [[Steam Dumps]] for condenser steam dump valve operation, interlocks (C-9, P-12), and cooldown mode.
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q12</div>
-MSLI actuation setpoints: High steam flow (<span class="val-trip">>40%</span>) coincident with either <span class="hi-exam">Low-Low Tavg (<span class="val-trip">≤543°F</span> on 2/4 loops) OR Low SG Pressure (<span class="val-trip"><600 psig</span>)</span>. Also actuates on Containment Pressure <span class="val-trip">>15 psig</span>. <span class="hi-trap">SG Pressure differential >100 psig between one SG and the others actuates SI only (not MSLI) — different signals.</span>
-</div>
-
-## Tech Spec LCOs
-
-- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.1 MSSVs, TS 3.7.1.5 MSIVs
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q77</div>
-MS10 atmospheric dump valves during EOP-LOPA-1 (Loss of All AC Power): on loss of all control air, CA330s fail closed isolating air to containment. MS10s remain operable from the control room via <span class="hi-exam">DC battery power for controls and nitrogen bottle racks (4 bottles >=2000 psig per MS10) for the air operator</span>. Bottle rack capacity: <span class="hi-exam">minimum 72 hours</span> of MS10 operation. Maximum cooldown rate per EOP-LOPA-1 step 17.2 is <span class="hi-exam">100F/hr</span>. <span class="hi-trap">50F/hr is the cooldown rate for EOP-TRIP-6 (Nat Circ without RVLIS above 500F), NOT EOP-LOPA-1.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #3</div>
-Main turbine fails to auto trip AND fails to manually trip following reactor trip from AB.RCP-0001. MSLI fails to auto actuate. <span class="hi-exam">CT#1 (CT-12): crew manually actuates MSLI using Fast Close pushbuttons on 2CC2</span> (or Loops 21-24 MSLI on 2CC1 Safeguards bezels). Failure to close MSIVs causes uncontrolled depressurization of all SGs, excessive RCS cooldown, and challenges to Integrity and Subcriticality CSFs. MS10 atmospheric dump valves used in EOP-FRHS-1 to depressurize selected SG to < <span class="hi-exam">575 psig</span> for condensate feed recovery.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 Sim-g</div>
-EOP-SGTR-1 RCS cooldown with steam dumps unavailable (permissive light NOT illuminated on 2RP4): Step 10 directs cooldown using <span class="hi-exam">MS10 atmospheric relief valves on intact SGs (21, 22, 23)</span>. Table B determines target temperature based on ruptured SG pressure — <span class="hi-exam">1045 psi → 503°F target</span>. Lower MS10 setpoints on intact SGs to fully open for maximum-rate cooldown. When hottest CET reaches 503°F, stop cooldown by matching MS10 setpoints to current SG pressures. Do NOT dump steam from the ruptured 24 SG.
-</div>
+### MS10 Design & Setpoints
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q15</div>
@@ -93,8 +151,42 @@ MS10 setpoint adjustment during SG tube leak: IAW AB.SG-0001 Step 3.31, the affe
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q16</div>
-Main Steam warmup (S2.OP-SO.MS-0001): <span class="hi-exam">MS7 drain valves are opened BEFORE MSIVs (MS167)</span> to prevent water hammer from pressurized steam forcing residual water in the piping. MSIVs are opened when less than a MAXIMUM of <span class="hi-exam">50 psid</span> across each valve. <span class="hi-trap">Trap: 15 psig is used for other MS Header pressure steps in SO.MS-0001, not the MSIV opening delta-P criterion.</span>
+<div class="callout-label">Exam — 2020 Q43</div>
+Each MS10 (SG Atmospheric Relief Valve) has a design capacity of <span class="hi-exam">2.5% rated steam flow</span> (total for all 4 valves is <span class="hi-exam">10% rated steam flow at no-load steam pressure — 390147 lb/hr at 1005 psig</span>). <span class="hi-trap">Common trap: 10% is the total design capacity for all 4 valves, not the capacity of a single valve.</span> Per AB.STM-0001, if an MS10 fails open and MSLI does not isolate the leak, a manual SI is required.
+</div>
+
+### MS10 in Cooldown & Heat Removal
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q51</div>
+If the Main Steam Dumps fail to ARM on a turbine-trip-induced reactor trip, core heat drops rapidly and the <span class="hi-exam">SG Atmospheric Relief Valves (MS10s) open to establish RCS temperature ~551-552°F</span>. RCS pressure does NOT rise enough to open the PORVs or PZR Safeties — <span class="hi-exam">PZR spray opens rapidly and fully to keep RCS pressure below ~2335 psig</span>. See [[Steam Dumps]], [[Pressurizer & PRT]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q77</div>
+MS10 atmospheric dump valves during EOP-LOPA-1 (Loss of All AC Power): on loss of all control air, CA330s fail closed isolating air to containment. MS10s remain operable from the control room via <span class="hi-exam">DC battery power for controls and nitrogen bottle racks (4 bottles >=2000 psig per MS10) for the air operator</span>. Bottle rack capacity: <span class="hi-exam">minimum 72 hours</span> of MS10 operation. Maximum cooldown rate per EOP-LOPA-1 step 17.2 is <span class="hi-exam">100F/hr</span>. <span class="hi-trap">50F/hr is the cooldown rate for EOP-TRIP-6 (Nat Circ without RVLIS above 500F), NOT EOP-LOPA-1.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-h</div>
+The <span class="hi-exam">MS10 atmospheric steam dump valves</span> provide the heat removal path during a forced flow / natural circulation cooldown when RHR is lost (AB.RHR-0001 Attachment 10): with SGs fed to wide-range level &gt;77%, <span class="hi-exam">operate the appropriate MS10s to maintain Core Exit Thermocouples stable or lowering</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-g</div>
+EOP-SGTR-1 RCS cooldown with steam dumps unavailable (permissive light NOT illuminated on 2RP4): Step 10 directs cooldown using <span class="hi-exam">MS10 atmospheric relief valves on intact SGs (21, 22, 23)</span>. Table B determines target temperature based on ruptured SG pressure — <span class="hi-exam">1045 psi → 503°F target</span>. Lower MS10 setpoints on intact SGs to fully open for maximum-rate cooldown. When hottest CET reaches 503°F, stop cooldown by matching MS10 setpoints to current SG pressures. Do NOT dump steam from the ruptured 24 SG.
+</div>
+
+### MS10 in SGTR/SG Leak Isolation
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+The <span class="hi-exam">21 MS10 atmospheric steam dump fails ~33% open in auto</span>; the PO places 21 MS10 in manual and shuts it (or raises the steam pressure setpoint so the valve responds), entering [[AB.STM-0001 — Excessive Steam Flow]]. Later, during the LBLOCA response, <span class="hi-exam">MSLI is initiated manually</span> in [[EOP-TRIP-1 — Reactor Trip or Safety Injection]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #2</div>
+SGTR isolation: the <span class="hi-exam">23MS10 setpoint is raised to 1045 psig</span> and 23MS167/23MS7/23MS18 are shut to isolate the ruptured 23 SG. After the loss of offsite power the RCS cooldown is re-established using the intact-SG atmospheric reliefs — the <span class="hi-exam">21/22/24 MS10s fully open</span> (steam dumps are unavailable with no condenser/offsite power).
 </div>
 
 <div class="callout callout-scenario">
@@ -102,44 +194,15 @@ Main Steam warmup (S2.OP-SO.MS-0001): <span class="hi-exam">MS7 drain valves are
 During EOP-SGTR-1 for 24 SG tube rupture: PO isolates steam from 24 SG by closing <span class="hi-exam">24MS10 (set at 1045 psig), 24MS167, 24MS18, 24MS7, 24GB4</span>. RCS cooldown initiated using steam dumps at 25% demand in MS Pressure Control or <span class="hi-exam">intact MS10s</span> (may have initiated MSLI during TRIP-2 based on uncontrolled RCS temperatures). CT#2: stop cooldown when hottest CETs < 503 F target.
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2018 #2</div>
-21MS167 drifts from full open position at 40% power. OHA G-34 (21-24 MS167 VALVES NOT FULL OPEN). PO reports CRT and board indication. Recovery: <span class="hi-exam">depress open pushbutton to re-open 21MS167</span> per ARP S2.OP-AR.ZZ-0007.
-</div>
+## Steam Dump System
+
+See [[Steam Dumps]] for condenser steam dump valve operation, interlocks (C-9, P-12), and cooldown mode.
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q16</div>
-Steam line rupture upstream of 24MS167 with reactor tripped, MSLI performed, and feed isolated to 24 SG: as the <span class="hi-exam">faulted SG pressure lowers due to the steam break, break flow lowers</span>, and the <span class="hi-exam">RCS cooldown rate lowers</span> as a result. <span class="hi-trap">A static break does NOT pass the same lbm of steam flow during the entire event — break flow is a function of upstream SG pressure. Initiating AFW to the ruptured SG is only directed in EOP-LOSC-2 if ALL SGs are faulted, not in this single-line-break scenario.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q49</div>
-Small (0.1%) steam leak from a single SG with reactor at <span class="hi-exam">1×10⁻⁸ Amps (exactly critical, below POAH)</span>: positive reactivity from the cooldown causes <span class="hi-exam">Rx power to rise until it stabilizes after reaching the Point Of Adding Heat (POAH)</span>. <span class="hi-exam">Below POAH there is NO temperature-coefficient feedback</span> — power simply rises with the steam-induced cooldown. Once power reaches POAH, the negative MTC adds enough negative reactivity to <span class="hi-exam">offset the positive reactivity from the steam leak</span> and power stabilizes. <span class="hi-trap">No reactor trip occurs — both OT/DT and Power Range high-flux (low setpoint) trips are plausible distractors but neither actuates because power stabilizes well below their setpoints.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q12</div>
-Initial Tavg response (before automatic protective actions) — large steam line break vs large feed line break: a <span class="hi-exam">steam line break draws MORE steam from the SG → Tcold lowers → Tavg LOWERS</span>; a <span class="hi-exam">feed line break sends LESS cold feed into the SG → Tcold rises → Tavg RISES</span>. <span class="hi-trap">A main feedwater line break depressurizes the SG similarly to a steam line break, so diverse/alternate indications are needed to discern the actual SG condition.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #3</div>
-21 SG steam leak inside containment escalates to a rupture on a manual reactor trip. <span class="hi-exam">Both auto MSLI signals (RP0279A/B) and manual MSLI fail to close any of the four MSIVs</span> (21-24MS167 fail open). MSLI failure leaves the steam leak unisolated → CRS directs manual SI per AB.STM CAS / TRIP-1 Step 11. Local operators are dispatched to <span class="hi-exam">place valves from Table D in safeguards position</span> (locally close MSIVs). All SGs depressurize uncontrollably → EOP-LOSC-1 → EOP-LOSC-2. Local operators successfully shut <span class="hi-exam">23MS167</span> later in the event; pressure rise in 23 SG drives transition back to LOSC-1.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q27</div>
-During a LOCA, <span class="hi-exam">Main Steamline Isolation occurs at 15 psig</span> containment pressure. It is the only automatic action that newly actuates as containment pressure rises from 12 to 18 psig — Phase A, Feedwater Isolation, and Containment Ventilation isolation already occurred on the earlier SI signal.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q51</div>
-Per AB.STM-0001 (Excessive Steam Flow), uncontrollably rising steam flow with no apparent cause drives reactor power up at <span class="hi-exam">the same rate as the steam flow</span>; the Continuous Action Summary (Step 1.1) directs the crew to <span class="hi-exam">trip the reactor, confirm the trip, then initiate MSLI</span> to determine if SI is required. See [[AB.STM-0001 — Excessive Steam Flow]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]].
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 Sim-h</div>
-The <span class="hi-exam">MS10 atmospheric steam dump valves</span> provide the heat removal path during a forced flow / natural circulation cooldown when RHR is lost (AB.RHR-0001 Attachment 10): with SGs fed to wide-range level &gt;77%, <span class="hi-exam">operate the appropriate MS10s to maintain Core Exit Thermocouples stable or lowering</span>.
+<div class="callout-label">Exam — 2012 Q50</div>
+With Main Steam Dumps in AUTO MS Pressure control during a startup (18% power, generator rolling unloaded), <span class="hi-exam">lowering the MS Dump pressure setpoint 5 psig causes the dumps to open to lower header pressure to the new setpoint → higher steam flow, lower Tavg → positive reactivity → reactor power rises above 18%</span>. <span class="hi-trap">Control rods are NOT in auto until &gt;P-2 (15% Turbine power, not yet online), so rods stay in manual with no operator action.</span> See [[Steam Dumps]].
 </div>
 
 <div class="callout callout-exam">
@@ -152,50 +215,9 @@ All Main Steam Dumps failing full open at 20% power generates an automatic Main 
 With steam dumps in MS Pressure control (AUTO) during a startup at 18% with the generator rolling unloaded, <span class="hi-exam">raising the MS Dump Pressure setpoint 5 psig causes the dumps to SHUT</span> to raise header pressure to setpoint → lower steam flow, higher Tavg → <span class="hi-exam">Rx power lowers (&lt;18%)</span>. Rods stay in MANUAL (auto rod control not enabled until &gt;P-2 / 15% turbine power).
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q55</div>
-A spurious MSLI closes the MSIVs AND the <span class="hi-exam">11-14MS18 (MS STOP BYP) valves</span>, removing the main-steam supply to the operating SGFP (which had been placed on main steam prior to 5% power). The SGFP coasts down — it does not trip.
-</div>
+## Tech Spec LCOs
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q65</div>
-A <span class="hi-exam">Main Steamline rupture in containment with failure of MSLI</span> causes ALL SGs to blow down and containment pressure to rise above <span class="val-trip">15 psig</span>, generating the Phase B containment isolation that isolates ALL containment penetrations not supporting ECCS. <span class="hi-trap">Phase A isolation occurs at <span class="val-trip">4 psig</span> (non-essential penetrations); Phase B isolates the remaining non-ECCS penetrations.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q42</div>
-<span class="hi-exam">The 24MS167 Main Steamline Isolation Valve receives a SHUT signal from the Hi-Hi containment pressure (15 psig) MSLI signal</span> on a LOCA — so a 24MS167 indicating OPEN after such an event means it failed to reposition. See [[ESF & Design]], [[RPS/SSPS]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q49</div>
-11MS167 hydraulic stop valve (logic dwgs 239916/239917): the FAST/Emergency CLOSE signal acts like a Safeguards Train MSLI or High Steam Line Flow SI. <span class="hi-exam">SV-1 closes (had directed hydraulic pressure to the bottom of the piston); SV-3 opens to equalize hydraulic pressure on both sides of the operating piston</span> (hydraulic fluid acts as a buffer to prevent slamming); the <span class="hi-exam">solenoids for vent valves 11MS169 and 11MS171 open, venting air so those vent valves open and main steam pressure on the lower operating piston drives the disc closed</span>. The hydraulic pump immediately stops running. A FAST close issued after a NORMAL close is already in progress drives the valve closed via this Emergency Trip path.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q50</div>
-With Main Steam Dumps in AUTO MS Pressure control during a startup (18% power, generator rolling unloaded), <span class="hi-exam">lowering the MS Dump pressure setpoint 5 psig causes the dumps to open to lower header pressure to the new setpoint → higher steam flow, lower Tavg → positive reactivity → reactor power rises above 18%</span>. <span class="hi-trap">Control rods are NOT in auto until &gt;P-2 (15% Turbine power, not yet online), so rods stay in manual with no operator action.</span> See [[Steam Dumps]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q51</div>
-If the Main Steam Dumps fail to ARM on a turbine-trip-induced reactor trip, core heat drops rapidly and the <span class="hi-exam">SG Atmospheric Relief Valves (MS10s) open to establish RCS temperature ~551-552°F</span>. RCS pressure does NOT rise enough to open the PORVs or PZR Safeties — <span class="hi-exam">PZR spray opens rapidly and fully to keep RCS pressure below ~2335 psig</span>. See [[Steam Dumps]], [[Pressurizer & PRT]].
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 Sim-e</div>
-A Main Steam Line Isolation (MSLI) is performed by depressing all 4 MSLI PBs on either Safeguards bezel. <span class="hi-trap">Outside the EOP network, initiating a MSLI to trip the turbine BEFORE tripping the reactor is incorrect — a MSLI renders the Main Steam Dumps inoperable and prematurely isolates the SGFPs, and with Rx power &gt;P-10 (10%) and steam dumps unavailable, the CAS then requires a reactor trip. In TRIP-1 the steps to trip the Rx precede tripping the Turbine, and a MSLI is only used as the last turbine-trip method (after the trip handle and Turbine Trip bezel fail).</span> In this JPM, initiating a MSLI before the reactor trip is failure criteria due to the possible challenge to SG safeties.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #1</div>
-The <span class="hi-exam">21 MS10 atmospheric steam dump fails ~33% open in auto</span>; the PO places 21 MS10 in manual and shuts it (or raises the steam pressure setpoint so the valve responds), entering [[AB.STM-0001 — Excessive Steam Flow]]. Later, during the LBLOCA response, <span class="hi-exam">MSLI is initiated manually</span> in [[EOP-TRIP-1 — Reactor Trip or Safety Injection]].
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #2</div>
-SGTR isolation: the <span class="hi-exam">23MS10 setpoint is raised to 1045 psig</span> and 23MS167/23MS7/23MS18 are shut to isolate the ruptured 23 SG. After the loss of offsite power the RCS cooldown is re-established using the intact-SG atmospheric reliefs — the <span class="hi-exam">21/22/24 MS10s fully open</span> (steam dumps are unavailable with no condenser/offsite power).
-</div>
+- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.1 MSSVs, TS 3.7.1.5 MSIVs
 
 ## Connections
 

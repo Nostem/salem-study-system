@@ -29,6 +29,13 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
 | Maximum Spray Rate | 800 gpm | UFSAR T5.2-4 |
 | Surge Line Nozzle Diameter | 14 in | UFSAR T5.2-4 |
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q29</div>
+<span class="hi-exam">The PZR Cold Calibrated level 0% reference is at the 108' 11" elevation in containment</span>. During refueling cavity fill, once cavity water rises above that elevation (e.g., 110') the PZR cold cal indication reads on-scale (a small positive value, ~3%), not off-scale.
+</div>
+
 ## Construction
 
 - Vertical, cylindrical vessel with hemispherical top and bottom heads
@@ -38,9 +45,16 @@ The pressurizer provides a point in the RCS where liquid and vapor are maintaine
 - Surge line attached to bottom, connects to hot leg of one RCS loop
 - (UFSAR 5.1)
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2014 IP-j</div>
 On a loss of power to the group buses, the PZR backup heater groups can be re-energized from their <span class="hi-exam">emergency power supply (460V Vital Bus, EDG-backed)</span> per S2.OP-SO.PZR-0010 Section 5.3. To stay within the emergency bus capacity, <span class="hi-exam">only three of the fourteen heater disconnects remain ON</span> (eleven placed OFF) when fed from the emergency supply. A Corry key interlock between the normal main breaker (2EX1EP2EPX) and the emergency feed breaker (2AX1AX14X) prevents both supplies from being aligned to the heater bus simultaneously.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 IP-i</div>
+Transfer of 22 Backup Group PZR heaters to emergency power (2A 460V Vital Bus) per S2.OP-SO.PZR-0010 Section 5.3: place <span class="hi-exam">11 of 14 disconnects in OFF</span> (only 3 remain ON to limit load within emergency bus capacity), place <span class="hi-exam">2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH in ON</span> using JAM key, then insert interlock key and <span class="hi-exam">UNLOCK breaker 2AX1AX14X</span>.
 </div>
 
 ## Pressurizer Relief Tank
@@ -61,39 +75,11 @@ On a loss of power to the group buses, the PZR backup heater groups can be re-en
 - Internal spray and drain for cooling after a discharge
 - (UFSAR 5.1)
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q6</div>
-PRT cooling: accomplished by a <span class="hi-exam">manual-only feed and bleed</span> process — feed via <span class="hi-exam">2WR82</span> (Primary Water supply) and bleed via <span class="hi-exam">2PR14</span> (PRT drain). There is <span class="hi-exam">NO automatic PRT cooling function</span>. During PRT cooling, the PRT drains directly to the <span class="hi-exam">RCDT pump suction header</span> (NOT the RCDT tank itself). <span class="hi-trap">Trap: many other plant processes have automatic functions, but PRT cooling is entirely manual. Also, the drain path is to the RCDT pump suction header — a distinction from draining into the RCDT tank.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q8</div>
-PZR saturation determination using steam tables: at PZR Pressure 2005 psig (<span class="hi-exam">2020 psia</span>), saturation temperature is <span class="hi-exam">637&deg;F</span>. With PZR liquid temperature at 635&deg;F, the PZR is <span class="hi-exam">subcooled (NOT water saturated)</span>. Per 1-EOP-TRIP-6, the reason for establishing and maintaining saturation conditions in the PZR before RCP restart is to <span class="hi-exam">limit the PZR pressure DECREASE upon RCP restart</span>. <span class="hi-trap">Trap: steam tables are listed in psia, not psig — must add ~15 psi to convert. Also: the concern is pressure DECREASE (not increase) — pressure decrease occurs because cold water from the loop enters the PZR surge line when forced circulation is established.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q6</div>
-<span class="hi-exam">Reactor head vents drain to the PRT</span> and will cause PRT temperature to rise when the reactor is at power. Reactor Flange Leakoff is directed to the RCDT, NOT the PRT. Per S2.OP-SO.PZR-0003 Section 5.3 ("Reducing PRT Temperature by Feed and Bleed"), the liquid in the PRT will be pumped to the <span class="hi-exam">HUT (Hold-Up Tank) using an RCDT Pump</span>. <span class="hi-trap">The PRT drain is physically connected to the RCDT via piping with a check valve, but the PRT liquid is pumped to the HUT, not kept in the RCDT.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q7</div>
-Per LCO 3.4.10.2, maximum allowable PZR heatup rate is <span class="hi-exam"><span class="val-trip">100&deg;F/hr</span></span>. Maximum PZR cooldown rate is <span class="hi-exam">200&deg;F/hr</span> (common distractor — heatup and cooldown limits are different). Per S2.OP-SO.RC-0002 Section 5.4, during PZR degassing via 2PR1 (PZR PORV), maintain <span class="hi-exam">PRT pressure less than <span class="val-alarm">10 psig</span></span>.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q37</div>
 PRT response while drawing a PZR bubble after a vacuum refill (S2.OP-SO.RC-0002): operators perform a <span class="hi-exam">10-15 minute vent of the PZR while drawing the bubble (Step 5.3.28), with PZR level 40-60% (Step 5.3.5)</span>. There is minimal liquid carryover, but venting air/non-condensables by opening the PZR PORVs <span class="hi-exam">slowly raises PRT pressure</span>. <span class="hi-trap">The PORVs are controlled in MANUAL (they do NOT cycle automatically). RCP bumps are performed BEFORE a vacuum is used; PORVs are in auto during bumps but are opened after the RCP is secured for venting.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q10</div>
-PORV leak-by is a <span class="hi-exam">constant enthalpy (throttling) expansion</span> process. At PZR pressure 415 psig (430 psia) with PRT pressure 0 psig, h<sub>g</sub> &asymp; 1205 BTU/lbm. Following the constant enthalpy line on a Mollier diagram from 415 psig to 0 psig yields tailpipe temperature of approximately <span class="hi-exam">330&deg;F</span>. <span class="hi-trap">212&deg;F is the boiling point at 0 psig and 450&deg;F is for ~515 psig — both are plausible distractors but do not account for the throttling process.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q34</div>
-PRT has a <span class="hi-exam">rupture disc (NOT a relief valve)</span> rated at <span class="val-trip">100 psig</span>. 2PR15 (PRT Vent to RCDT) <span class="hi-exam">cannot be opened if PRT pressure ≥ <span class="val-alarm">10 psig</span></span> — interlock prevents opening. Per S2.OP-SO.PZR-0003, if PRT pressure ≥ 10 psig: drain PRT first via 2PR14 to lower level and pressure, then open 2PR15 to vent PRT to 3 psig. <span class="hi-trap">2PR15 is NOT available for venting when PRT pressure is above 10 psig — must drain first to clear the interlock.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -102,13 +88,49 @@ Confirms PRT vent valve interlock setpoints: <span class="hi-exam">2PR15 (PRT Ve
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q6</div>
+PRT cooling: accomplished by a <span class="hi-exam">manual-only feed and bleed</span> process — feed via <span class="hi-exam">2WR82</span> (Primary Water supply) and bleed via <span class="hi-exam">2PR14</span> (PRT drain). There is <span class="hi-exam">NO automatic PRT cooling function</span>. During PRT cooling, the PRT drains directly to the <span class="hi-exam">RCDT pump suction header</span> (NOT the RCDT tank itself). <span class="hi-trap">Trap: many other plant processes have automatic functions, but PRT cooling is entirely manual. Also, the drain path is to the RCDT pump suction header — a distinction from draining into the RCDT tank.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q6</div>
+<span class="hi-exam">Reactor head vents drain to the PRT</span> and will cause PRT temperature to rise when the reactor is at power. Reactor Flange Leakoff is directed to the RCDT, NOT the PRT. Per S2.OP-SO.PZR-0003 Section 5.3 ("Reducing PRT Temperature by Feed and Bleed"), the liquid in the PRT will be pumped to the <span class="hi-exam">HUT (Hold-Up Tank) using an RCDT Pump</span>. <span class="hi-trap">The PRT drain is physically connected to the RCDT via piping with a check valve, but the PRT liquid is pumped to the HUT, not kept in the RCDT.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q34</div>
+PRT has a <span class="hi-exam">rupture disc (NOT a relief valve)</span> rated at <span class="val-trip">100 psig</span>. 2PR15 (PRT Vent to RCDT) <span class="hi-exam">cannot be opened if PRT pressure ≥ <span class="val-alarm">10 psig</span></span> — interlock prevents opening. Per S2.OP-SO.PZR-0003, if PRT pressure ≥ 10 psig: drain PRT first via 2PR14 to lower level and pressure, then open 2PR15 to vent PRT to 3 psig. <span class="hi-trap">2PR15 is NOT available for venting when PRT pressure is above 10 psig — must drain first to clear the interlock.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q32</div>
 PRT drain path per S2.OP-SO.PZR-0003: open <span class="hi-exam">2PR14 to drain PRT to RCDT</span>, which automatically opens 2WL12 and starts the RCDT pump (defeats low level cutoff). RCDT pump discharge destinations: <span class="hi-exam">RWST, CVCS Hold-Up Tanks, or Waste Hold-Up Tanks</span>. PRT does NOT gravity drain — the RCDT pump is required.
 </div>
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-f</div>
+Same Section 5.1 fill evolution (2PR1 leaking, PRT level 55.9%, PRT pressure 9.8 psig, PRT Level Hi-Lo alarm in): raise PRT level to 60%. <span class="hi-exam">Task standard: raise PRT level to &gt;57% while maintaining PRT pressure &gt;3 and ≤10 psig.</span> Because pressure starts near the 10 psig maximum, the operator may perform the 2PR15 vent step before raising level, then throttle 2PR15 as level rises.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-f</div>
+PRT level adjust at 100% power with <span class="hi-exam">2PR1 leaking, 2PR6 shut with power applied, PRT level at 56.2%, PRT pressure 9.8 psig</span>. Per S2.OP-SO.PZR-0003 §5.1: start primary water pump (21 or 22), open 2WR80 (CONT PRI WATER STOP) and 2WR82 (PRT WATER SUPPLY) to fill, and operate 2PR15 (VENT) as needed to keep PRT pressure <span class="hi-exam">&gt;3 psig and ≤10 psig</span> while raising level. <span class="hi-trap">PRT Hi Pressure alarm locks out 2PR15 — pressure cannot be reduced via vent path once that alarm comes in. The 3 psig lower bound preserves a positive nitrogen overpressure to prevent oxygen ingress.</span>
+</div>
+
+## PORV Accumulators
+
+### Tailpipe Temperature & Throttling Physics
+
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q76</div>
-PZR vapor space leak (SBLOCA): at RCS pressure <span class="hi-exam">1450 psig</span> stable with subcooling 10°F and PZR level 30% rising, both <span class="hi-exam">charging and SI pumps are injecting</span>. SI termination criteria in EOP-LOCA-1 are met — transition to EOP-TRIP-3, not directly to EOP-LOCA-2. Ultimately: LOCA-1 → TRIP-3 → LOCA-2.
+<div class="callout-label">Exam — 2014 Q39</div>
+A stuck-open PZR safety (PR3) is a <span class="hi-exam">constant-enthalpy (throttling) process</span>, so the tailpipe fluid is saturated at PRT pressure. With PRT pressure <span class="val-normal">5 psig (= 20 psia)</span>, the steam-table saturation temperature is <span class="hi-exam">227.918°F ≈ 228°F</span> — the expected tailpipe temperature. <span class="hi-trap">Using 5 psia instead of 20 psia (mistaking psig for psia) gives the 162°F distractor.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q10</div>
+PORV leak-by is a <span class="hi-exam">constant enthalpy (throttling) expansion</span> process. At PZR pressure 415 psig (430 psia) with PRT pressure 0 psig, h<sub>g</sub> &asymp; 1205 BTU/lbm. Following the constant enthalpy line on a Mollier diagram from 415 psig to 0 psig yields tailpipe temperature of approximately <span class="hi-exam">330&deg;F</span>. <span class="hi-trap">212&deg;F is the boiling point at 0 psig and 450&deg;F is for ~515 psig — both are plausible distractors but do not account for the throttling process.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -117,8 +139,32 @@ PORV discharge temperature is determined by a <span class="hi-exam">constant ent
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q2</div>
+PZR safety valve leak is a <span class="hi-exam">throttling/constant enthalpy process</span>. Tailpipe temperature determined by following the enthalpy line on a Mollier diagram to PRT pressure. At RCS <span class="val-normal">1900 psig</span> (1915 psia, hg ~1140 BTU/lb), throttling to PRT <span class="val-normal">35 psig</span> (50 psia) yields tailpipe temperature of approximately <span class="hi-exam">282°F</span>.
+</div>
+
+### PORV Identification & Block Valve Isolation
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q36</div>
+For a 1PR1 PORV that opens and cannot be shut, the PRT pressurizes until the <span class="hi-exam">PRT rupture disk ruptures at <span class="val-trip">100 psig</span></span> if the 1PR6 block valve is not shut. <span class="hi-trap"><span class="val-alarm">10 psig</span> is the PRT HIGH-PRESSURE ALARM setpoint, NOT the rupture-disk setpoint.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q36</div>
+A <span class="hi-exam">PZR Safety Valve failing open pressurizes the PRT until its rupture disk ruptures</span>, continuously venting saturated steam to containment (rising containment humidity/pressure). See [[Containment]], [[RCS]].
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q11</div>
 PZR PORV and Safety discharge piping (drawing 203301): both PZR PORVs and the 3 PZR Safeties discharge into a <span class="hi-exam">single combined line going to the PRT</span>. Tailpipe temperature monitoring: <span class="hi-exam">each Safety has its own individual temperature sensor</span>, but the <span class="hi-exam">2 PORVs share ONE sensor on the common discharge line</span> — so PORV-to-PORV identification cannot be made from temperature alone. AB.PZR-0001 diagnostic method when both PORV Stops are closed and one PORV Stop (<span class="hi-exam">2PR8</span>) is re-opened: rising tailpipe temperature identifies the leaking PORV.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q25</div>
+Each PZR PORV has <span class="hi-exam">2 accumulators sized for 100 opening/closing cycles (50 per accumulator)</span>. With both CA330 (Containment Supply Inlet Valves) closed (e.g., on loss of control air), the PORVs <span class="hi-exam">CAN still be operated</span> using their accumulators. <span class="hi-trap">Trap: loss of containment air supply does NOT prevent PORV operation — the accumulators provide a self-contained air supply independent of the plant air headers.</span>
 </div>
 
 <div class="callout callout-jpm">
@@ -126,22 +172,19 @@ PZR PORV and Safety discharge piping (drawing 203301): both PZR PORVs and the 3 
 Leaking-PORV identification by sequential unisolation. AB.PZR-0001 directs <span class="hi-exam">CLOSE both 2PR6 and 2PR7, Pressurizer Relief Stop Valves</span> (step 3.47) to stop the leak and stabilize pressure. After pressure stabilizes, <span class="hi-exam">OPEN 2PR6</span> (tailpipe temperature does NOT rise → 2PR1 intact), then <span class="hi-exam">OPEN 2PR7</span> (tailpipe temperature RISES → identifies <span class="hi-exam">2PR2 as the leaking PORV</span>), then <span class="hi-exam">CLOSE 2PR7</span> (step 3.55) to isolate it. Initial diagnosis cue is PORV tailpipe temperature rising from normal to ~227°F with rising charging flow.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q2</div>
-PZR safety valve leak is a <span class="hi-exam">throttling/constant enthalpy process</span>. Tailpipe temperature determined by following the enthalpy line on a Mollier diagram to PRT pressure. At RCS <span class="val-normal">1900 psig</span> (1915 psia, hg ~1140 BTU/lb), throttling to PRT <span class="val-normal">35 psig</span> (50 psia) yields tailpipe temperature of approximately <span class="hi-exam">282°F</span>.
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-7</div>
+<span class="hi-exam">2PR2 PZR PORV develops a leak (~30 gpm)</span> during a power ascension. Crew identifies via lowering PZR pressure / rising PORV tailpipe temp / rising charging flow / lower spray valve demand / PRT indications. Diagnostic isolation: close <span class="hi-exam">both PORV stop valves (2PR6 and 2PR7)</span>, then open 2PR6 (tailpipe temps still lowering) → open 2PR7 (tailpipe temps rising) → confirms 2PR2 leaking. Close 2PR7 to isolate. CRS enters TSAS 3.4.5 action a (1-hour LCO).
 </div>
 
-## PORV Accumulators
+### EOP Depressurization with PORVs
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q25</div>
-Each PZR PORV has <span class="hi-exam">2 accumulators sized for 100 opening/closing cycles (50 per accumulator)</span>. With both CA330 (Containment Supply Inlet Valves) closed (e.g., on loss of control air), the PORVs <span class="hi-exam">CAN still be operated</span> using their accumulators. <span class="hi-trap">Trap: loss of containment air supply does NOT prevent PORV operation — the accumulators provide a self-contained air supply independent of the plant air headers.</span>
+**Exam & operating coverage:**
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-d</div>
+FRHS-1 Step 24 RCS bleed path: <span class="hi-exam">OPEN BOTH PZR PORV STOP VALVES (2PR6, 2PR7), then OPEN BOTH PZR PORVs (2PR1, 2PR2) in Manual</span>. Alternate path: 2PR2 fails to open in Manual → open <span class="hi-exam">2RC40 thru 2RC43 (Reactor Head Vents)</span> at 2RP3 backpanel using four key-locked switches. Reactor Head Vents are NOT part of the standard FRHS-1 bleed path — they are an authorized alternate when one PORV fails to open.
 </div>
-
-## Tech Spec LCOs
-
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.4]]** — Pressurizer (level and heater requirements)
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.3]]** — PORVs and Block Valves
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 Sim-c</div>
@@ -153,79 +196,13 @@ EOP-LOCA-2 Step 20 depressurization via Auxiliary Spray: open <span class="hi-ex
 EOP-FRHS-1 Bleed and Feed: if PORV 2PR2 fails to open, open <span class="hi-exam">reactor head vent valves 2RC40 through 2RC43</span> (key-locked on 2RP2 backpanel) as alternate bleed path. 2PR1 must already be open for the "bleed" portion.
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 IP-i</div>
-Transfer of 22 Backup Group PZR heaters to emergency power (2A 460V Vital Bus) per S2.OP-SO.PZR-0010 Section 5.3: place <span class="hi-exam">11 of 14 disconnects in OFF</span> (only 3 remain ON to limit load within emergency bus capacity), place <span class="hi-exam">2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH in ON</span> using JAM key, then insert interlock key and <span class="hi-exam">UNLOCK breaker 2AX1AX14X</span>.
-</div>
+### SGTR Depressurization & PORV Failures
+
+**Exam & operating coverage:**
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #4</div>
-PZR spray valve 2PS3 fails to close during SGTR-1 RCS depressurization. Both spray valves opened for depressurization per Table D criteria. When termination criteria met, RO closes both valves — <span class="hi-exam">2PS3 fails to close</span>. Recovery: <span class="hi-exam">stop 21 and 23 RCPs</span> to eliminate spray flow path (spray valves are in the RCP seal injection lines from the cold legs of loops 1 and 3). Also: earlier in scenario, 2PR2 PORV seat leakage diagnosed via tailpipe temperature and isolated by closing block valve <span class="hi-exam">2PR7</span>.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2020 #4</div>
-During SGTR-1 depressurization, normal PZR spray is NOT available (23 RCP stopped). RCS depressurization uses <span class="hi-exam">PZR PORVs</span> IAW Table E criteria. After depressurization termination criteria met, RO attempts to close PORV — <span class="hi-exam">PORV fails to close (stuck open)</span>. Recovery: close associated PZR PORV block valve (CT-10). Creates a small-break LOCA in addition to tube rupture if not promptly isolated.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 Sim-a</div>
-PZR pressure channel 1 fails high causing both spray valves to open fully and rapid RCS pressure decrease. Operator places MPC in manual and lowers demand. <span class="hi-exam">Alternate path: 2PS1 spray valve fails to close</span> when MPC demand is zeroed. Operator places <span class="hi-exam">2PS1 in MANUAL and closes</span>. If 2PS1 cannot be closed, CAS at <span class="val-trip">2000 psig</span> directs reactor trip and stopping <span class="hi-exam">21 and 23 RCPs</span> (spray is fed from Loops 1 and 3 cold legs).
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 Sim-c</div>
-At 4% power, PZR Spray Valve <span class="hi-exam">2PS1 fails open</span>, depressurizing the RCS. Per AB.PZR-0001 the operator places 2PS1 in MANUAL and depresses CLOSE, but <span class="hi-exam">2PS1 remains open</span> so pressure control cannot be regained. With RCS pressure dropping rapidly the operator <span class="hi-exam">trips the reactor</span>, then <span class="hi-exam">stops 21 and 23 RCPs</span> (whose Loop 1/3 cold-leg flow feeds the open spray path), and <span class="hi-exam">stops a second RCP (22 OR 24)</span> while pressure continues to drop, leaving one RCP running, then enters EOP-TRIP-1.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2018 #1</div>
-During startup at 3% power, controlling PZR Pressure Channel I fails high — de-energizes PZR heaters and <span class="hi-exam">fully opens both spray valves</span>. RO places Master Pressure Controller (MPC) in manual, lowers demand to close spray valves, selects <span class="hi-exam">Channel III</span> for control. RO closes <span class="hi-exam">2PR6</span> and places 2PR1 in Manual, WCC removes control power from 2PR6. Channel removed from service IAW S2.OP-SO.RPS-0003. Tech Specs entered: 3.3.1.1 Action 6, 3.3.2.1.b Action 19, <span class="hi-exam">3.4.5 Action b (1 hr LCO)</span>, 3.2.5 DNB (2 hr LCO).
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #2</div>
-EOP-SGTR-1 RCS depressurization path. Initially RO uses normal PZR spray (both <span class="hi-exam">2PS1 and 2PS2 spray valves</span> full open) to lower RCS pressure. <span class="hi-exam">23 RCP trip</span> mid-depressurization causes spray to lose effectiveness — RO shuts both PZR Spray valves and reviews depressurization criteria. Crew uses PZR PORVs: <span class="hi-exam">2PR1 fails to position 0-100% (will not open)</span>; RO opens <span class="hi-exam">2PR2</span> instead. After depressurization complete <span class="hi-exam">2PR2 fails to shut</span>; CRS directs closure of 2PR7 PZR PORV Block Valve, which fails 90% open (open limit extinguishes but closed limit does not illuminate). Loss of RCS inventory through stuck-open PORV path drives transition to EOP-SGTR-3, SGTR with LOCA — Subcooled Recovery.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2017 ESG-7</div>
-<span class="hi-exam">2PR2 PZR PORV develops a leak (~30 gpm)</span> during a power ascension. Crew identifies via lowering PZR pressure / rising PORV tailpipe temp / rising charging flow / lower spray valve demand / PRT indications. Diagnostic isolation: close <span class="hi-exam">both PORV stop valves (2PR6 and 2PR7)</span>, then open 2PR6 (tailpipe temps still lowering) → open 2PR7 (tailpipe temps rising) → confirms 2PR2 leaking. Close 2PR7 to isolate. CRS enters TSAS 3.4.5 action a (1-hour LCO).
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2017 ESG-8</div>
-RCS depressurization in EOP-SGTR-1 — 21 RCP electrical trip during PZR spray attempt eliminates spray flow path; crew shuts both spray valves and uses <span class="hi-exam">2PR2 PZR PORV</span> to depressurize RCS toward Table E termination criteria (2PR6 was shut with power removed pre-scenario after a 2PR1 control circuit problem). When termination criteria met, <span class="hi-exam">2PR2 fails to close after demand</span> — RO closes the PORV Block valve, RCS pressure rising. (Note: do NOT restore power to 2PR6 — breaker went trip free when shut.)
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 Sim-d</div>
-FRHS-1 Step 24 RCS bleed path: <span class="hi-exam">OPEN BOTH PZR PORV STOP VALVES (2PR6, 2PR7), then OPEN BOTH PZR PORVs (2PR1, 2PR2) in Manual</span>. Alternate path: 2PR2 fails to open in Manual → open <span class="hi-exam">2RC40 thru 2RC43 (Reactor Head Vents)</span> at 2RP3 backpanel using four key-locked switches. Reactor Head Vents are NOT part of the standard FRHS-1 bleed path — they are an authorized alternate when one PORV fails to open.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 Sim-f</div>
-PRT level adjust at 100% power with <span class="hi-exam">2PR1 leaking, 2PR6 shut with power applied, PRT level at 56.2%, PRT pressure 9.8 psig</span>. Per S2.OP-SO.PZR-0003 §5.1: start primary water pump (21 or 22), open 2WR80 (CONT PRI WATER STOP) and 2WR82 (PRT WATER SUPPLY) to fill, and operate 2PR15 (VENT) as needed to keep PRT pressure <span class="hi-exam">&gt;3 psig and ≤10 psig</span> while raising level. <span class="hi-trap">PRT Hi Pressure alarm locks out 2PR15 — pressure cannot be reduced via vent path once that alarm comes in. The 3 psig lower bound preserves a positive nitrogen overpressure to prevent oxygen ingress.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 Sim-f</div>
-Same Section 5.1 fill evolution (2PR1 leaking, PRT level 55.9%, PRT pressure 9.8 psig, PRT Level Hi-Lo alarm in): raise PRT level to 60%. <span class="hi-exam">Task standard: raise PRT level to &gt;57% while maintaining PRT pressure &gt;3 and ≤10 psig.</span> Because pressure starts near the 10 psig maximum, the operator may perform the 2PR15 vent step before raising level, then throttle 2PR15 as level rises.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q29</div>
-<span class="hi-exam">The PZR Cold Calibrated level 0% reference is at the 108' 11" elevation in containment</span>. During refueling cavity fill, once cavity water rises above that elevation (e.g., 110') the PZR cold cal indication reads on-scale (a small positive value, ~3%), not off-scale.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q36</div>
-A <span class="hi-exam">PZR Safety Valve failing open pressurizes the PRT until its rupture disk ruptures</span>, continuously venting saturated steam to containment (rising containment humidity/pressure). See [[Containment]], [[RCS]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q79</div>
-For RCP restart during SGTR recovery (RVLIS upper range &lt;100%), <span class="hi-exam">PZR level and saturated conditions in the PZR are required (in addition to RCS subcooling)</span> before a RCP is started. See [[RCPs]], [[RVLIS]].
+<div class="callout-label">Scenario — 2012 #2</div>
+SGTR <span class="hi-exam">without pressurizer pressure control</span>: PZR PORV 2PR1 is inoperable with its block valve <span class="hi-exam">2PR6 shut and deenergized per TSAS 3.4.5.b</span>, and the RCPs (normal spray) are lost on the preceding loss of offsite power. At the SGTR-1 RCS depressurization step the only available PORV (2PR2) <span class="hi-exam">fails to open</span>, leaving no depressurization path, so the CRS transitions to [[EOP-SGTR-5 — SGTR without Pressurizer Pressure Control]]. The crew maintains PZR level &gt;11% with RCS subcooling &gt;0°.
 </div>
 
 <div class="callout callout-scenario">
@@ -234,9 +211,30 @@ With Channels I and III PZR pressure failed low there is <span class="hi-exam">n
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #2</div>
-SGTR <span class="hi-exam">without pressurizer pressure control</span>: PZR PORV 2PR1 is inoperable with its block valve <span class="hi-exam">2PR6 shut and deenergized per TSAS 3.4.5.b</span>, and the RCPs (normal spray) are lost on the preceding loss of offsite power. At the SGTR-1 RCS depressurization step the only available PORV (2PR2) <span class="hi-exam">fails to open</span>, leaving no depressurization path, so the CRS transitions to [[EOP-SGTR-5 — SGTR without Pressurizer Pressure Control]]. The crew maintains PZR level &gt;11% with RCS subcooling &gt;0°.
+<div class="callout-label">Scenario — 2016 #2</div>
+EOP-SGTR-1 RCS depressurization path. Initially RO uses normal PZR spray (both <span class="hi-exam">2PS1 and 2PS2 spray valves</span> full open) to lower RCS pressure. <span class="hi-exam">23 RCP trip</span> mid-depressurization causes spray to lose effectiveness — RO shuts both PZR Spray valves and reviews depressurization criteria. Crew uses PZR PORVs: <span class="hi-exam">2PR1 fails to position 0-100% (will not open)</span>; RO opens <span class="hi-exam">2PR2</span> instead. After depressurization complete <span class="hi-exam">2PR2 fails to shut</span>; CRS directs closure of 2PR7 PZR PORV Block Valve, which fails 90% open (open limit extinguishes but closed limit does not illuminate). Loss of RCS inventory through stuck-open PORV path drives transition to EOP-SGTR-3, SGTR with LOCA — Subcooled Recovery.
 </div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-8</div>
+RCS depressurization in EOP-SGTR-1 — 21 RCP electrical trip during PZR spray attempt eliminates spray flow path; crew shuts both spray valves and uses <span class="hi-exam">2PR2 PZR PORV</span> to depressurize RCS toward Table E termination criteria (2PR6 was shut with power removed pre-scenario after a 2PR1 control circuit problem). When termination criteria met, <span class="hi-exam">2PR2 fails to close after demand</span> — RO closes the PORV Block valve, RCS pressure rising. (Note: do NOT restore power to 2PR6 — breaker went trip free when shut.)
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #4</div>
+During SGTR-1 depressurization, normal PZR spray is NOT available (23 RCP stopped). RCS depressurization uses <span class="hi-exam">PZR PORVs</span> IAW Table E criteria. After depressurization termination criteria met, RO attempts to close PORV — <span class="hi-exam">PORV fails to close (stuck open)</span>. Recovery: close associated PZR PORV block valve (CT-10). Creates a small-break LOCA in addition to tube rupture if not promptly isolated.
+</div>
+
+## Tech Spec LCOs
+
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.4]]** — Pressurizer (level and heater requirements)
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.3]]** — PORVs and Block Valves
+
+## Exam & Operating Coverage
+
+### PZR Saturation & Vapor Space
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q3</div>
@@ -244,18 +242,52 @@ PZR vapor space accident (one PZR safety valve fails full open): after the Rx tr
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q36</div>
-For a 1PR1 PORV that opens and cannot be shut, the PRT pressurizes until the <span class="hi-exam">PRT rupture disk ruptures at <span class="val-trip">100 psig</span></span> if the 1PR6 block valve is not shut. <span class="hi-trap"><span class="val-alarm">10 psig</span> is the PRT HIGH-PRESSURE ALARM setpoint, NOT the rupture-disk setpoint.</span>
+<div class="callout-label">Exam — 2015 Q79</div>
+For RCP restart during SGTR recovery (RVLIS upper range &lt;100%), <span class="hi-exam">PZR level and saturated conditions in the PZR are required (in addition to RCS subcooling)</span> before a RCP is started. See [[RCPs]], [[RVLIS]].
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q39</div>
-A stuck-open PZR safety (PR3) is a <span class="hi-exam">constant-enthalpy (throttling) process</span>, so the tailpipe fluid is saturated at PRT pressure. With PRT pressure <span class="val-normal">5 psig (= 20 psia)</span>, the steam-table saturation temperature is <span class="hi-exam">227.918°F ≈ 228°F</span> — the expected tailpipe temperature. <span class="hi-trap">Using 5 psia instead of 20 psia (mistaking psig for psia) gives the 162°F distractor.</span>
+<div class="callout-label">Exam — 2018 Q8</div>
+PZR saturation determination using steam tables: at PZR Pressure 2005 psig (<span class="hi-exam">2020 psia</span>), saturation temperature is <span class="hi-exam">637&deg;F</span>. With PZR liquid temperature at 635&deg;F, the PZR is <span class="hi-exam">subcooled (NOT water saturated)</span>. Per 1-EOP-TRIP-6, the reason for establishing and maintaining saturation conditions in the PZR before RCP restart is to <span class="hi-exam">limit the PZR pressure DECREASE upon RCP restart</span>. <span class="hi-trap">Trap: steam tables are listed in psia, not psig — must add ~15 psi to convert. Also: the concern is pressure DECREASE (not increase) — pressure decrease occurs because cold water from the loop enters the PZR surge line when forced circulation is established.</span>
 </div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q76</div>
+PZR vapor space leak (SBLOCA): at RCS pressure <span class="hi-exam">1450 psig</span> stable with subcooling 10°F and PZR level 30% rising, both <span class="hi-exam">charging and SI pumps are injecting</span>. SI termination criteria in EOP-LOCA-1 are met — transition to EOP-TRIP-3, not directly to EOP-LOCA-2. Ultimately: LOCA-1 → TRIP-3 → LOCA-2.
+</div>
+
+### Spray Valve Failures & Pressure Control
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q51</div>
 On a turbine-trip-induced reactor trip with the Steam Dumps failing to ARM, RCS pressure rises but <span class="hi-exam">PZR spray valves open rapidly and fully to keep RCS pressure below ~2335 psig</span> — so the PORVs do not open (and the PZR Safeties, sized to relieve a loss of load with the Rx still at power, do not lift). See [[Steam Dumps]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q7</div>
+Per LCO 3.4.10.2, maximum allowable PZR heatup rate is <span class="hi-exam"><span class="val-trip">100&deg;F/hr</span></span>. Maximum PZR cooldown rate is <span class="hi-exam">200&deg;F/hr</span> (common distractor — heatup and cooldown limits are different). Per S2.OP-SO.RC-0002 Section 5.4, during PZR degassing via 2PR1 (PZR PORV), maintain <span class="hi-exam">PRT pressure less than <span class="val-alarm">10 psig</span></span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-c</div>
+At 4% power, PZR Spray Valve <span class="hi-exam">2PS1 fails open</span>, depressurizing the RCS. Per AB.PZR-0001 the operator places 2PS1 in MANUAL and depresses CLOSE, but <span class="hi-exam">2PS1 remains open</span> so pressure control cannot be regained. With RCS pressure dropping rapidly the operator <span class="hi-exam">trips the reactor</span>, then <span class="hi-exam">stops 21 and 23 RCPs</span> (whose Loop 1/3 cold-leg flow feeds the open spray path), and <span class="hi-exam">stops a second RCP (22 OR 24)</span> while pressure continues to drop, leaving one RCP running, then enters EOP-TRIP-1.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-a</div>
+PZR pressure channel 1 fails high causing both spray valves to open fully and rapid RCS pressure decrease. Operator places MPC in manual and lowers demand. <span class="hi-exam">Alternate path: 2PS1 spray valve fails to close</span> when MPC demand is zeroed. Operator places <span class="hi-exam">2PS1 in MANUAL and closes</span>. If 2PS1 cannot be closed, CAS at <span class="val-trip">2000 psig</span> directs reactor trip and stopping <span class="hi-exam">21 and 23 RCPs</span> (spray is fed from Loops 1 and 3 cold legs).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #1</div>
+During startup at 3% power, controlling PZR Pressure Channel I fails high — de-energizes PZR heaters and <span class="hi-exam">fully opens both spray valves</span>. RO places Master Pressure Controller (MPC) in manual, lowers demand to close spray valves, selects <span class="hi-exam">Channel III</span> for control. RO closes <span class="hi-exam">2PR6</span> and places 2PR1 in Manual, WCC removes control power from 2PR6. Channel removed from service IAW S2.OP-SO.RPS-0003. Tech Specs entered: 3.3.1.1 Action 6, 3.3.2.1.b Action 19, <span class="hi-exam">3.4.5 Action b (1 hr LCO)</span>, 3.2.5 DNB (2 hr LCO).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #4</div>
+PZR spray valve 2PS3 fails to close during SGTR-1 RCS depressurization. Both spray valves opened for depressurization per Table D criteria. When termination criteria met, RO closes both valves — <span class="hi-exam">2PS3 fails to close</span>. Recovery: <span class="hi-exam">stop 21 and 23 RCPs</span> to eliminate spray flow path (spray valves are in the RCP seal injection lines from the cold legs of loops 1 and 3). Also: earlier in scenario, 2PR2 PORV seat leakage diagnosed via tailpipe temperature and isolated by closing block valve <span class="hi-exam">2PR7</span>.
 </div>
 
 ## Connections
