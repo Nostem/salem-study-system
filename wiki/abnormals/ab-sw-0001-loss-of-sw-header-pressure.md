@@ -14,8 +14,6 @@ Referenced in 2023 NRC Operating Exam simulator scenarios. Details to be backfil
 
 ## Key Actions / Information
 
-Referenced in 2023 NRC Operating Exam simulator scenarios. Details to be backfilled from source documents.
-
 **Exam & operating coverage:**
 
 ### Entry Conditions & Alarms
