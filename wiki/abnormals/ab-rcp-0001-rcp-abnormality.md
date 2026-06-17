@@ -14,6 +14,44 @@ Provides guidance for response to reactor coolant pump abnormal conditions.
 
 ## Continuous Action Summary (Attachment 1)
 
+### Entry Conditions
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q89</div>
+On a spurious <span class="hi-exam">OHA C-16 PHASE B CNTMT ISOL ACT</span> (e.g., during a containment pressure channel calibration), the Window C ARP directs an attempt to reset and open the Phase B isolation valves; <span class="hi-exam">if Phase B cannot be reset, GO TO S2.OP-AB.RCP-0001</span> because Phase B isolates CCW to the RCPs (loss of RCP cooling).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q30</div>
+Entry condition via loss of RCP bearing cooling water: the <span class="hi-exam">2C 4KV vital bus supplies the 23 CCW pump</span>. With 21 CCW pump out of service, a 2C bus lockout (Bus Differential) leaves no CCW flow to the RCP bearings, annunciating <span class="hi-exam">OHA D20-23 (RCP BRG CLG WTR FLO LO)</span> — which ALWAYS requires entry into AB.RCP-0001. <span class="hi-trap">A CCW surge tank rising level does NOT always require entry (other causes besides thermal-barrier rupture exist), and ~4 mils shaft vibration is NORMAL — flange vibration &gt;3 mils is the vibration entry condition.</span> (Note: the 2A bus supplies the 23 charging pump, not the 21.)
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #4</div>
+22 CCW pump trips with the standby (23) CCW pump failing to auto-start. After the crew manually starts 23 CCW pump and restores CCW pressure, AB.RCP-0001 (along with [[AB.CC-0001 — Loss of Component Cooling Water]]) is referenced to <span class="hi-exam">verify entry is NOT required</span> — RCP CCW-cooled parameters are confirmed trending back to normal values. See [[2015 Scenario 4]].
+</div>
+
+### CAS Trip Criteria (Attachment 1)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q30</div>
+AB.RCP-0001 directs a <span class="hi-exam">reactor trip only if BOTH RCP seal injection flow AND Thermal Barrier cooling flow are lost — not just one or the other</span>. With only seal injection lost (loss of all charging), <span class="hi-exam">flow from the RCS past the Thermal Barrier heat exchanger maintains RCP seal temperature</span>, allowing continued operation while attempting to restore charging.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q51</div>
+AB.RCP-0001 CAS: motor flange vibration > <span class="val-trip">5 mils</span> requires stopping the RCP (Attachment 2). After reactor trip from 75% power with one RCP stopped and RTB A closed but RTB B open, <span class="hi-exam">LCO 3.4.1.2 IS met</span> because with the rod control system de-energized (RTB B open, bypass breakers not racked in), only <span class="hi-exam">two RCS loops are required to be OPERABLE</span>. <span class="hi-trap">Trap: LCO 3.4.1.2 requires ALL loops OPERABLE only when rod control is ENERGIZED. Candidates confuse the energized vs de-energized requirements.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q55</div>
+CC131 thermal barrier isolation and RCP trip requirement: <span class="hi-exam">loss of thermal barrier CCW alone (with seal injection still normal) does NOT require securing ALL RCPs within 2 minutes</span>. The 2-minute CAS action applies only when <span class="hi-exam">BOTH seal injection AND thermal barrier CCW are lost concurrently</span>. CC131 auto-closure setpoint: <span class="val-trip">175 gpm</span> hi flow. <span class="hi-trap">Trap: candidates may confuse CC131 closure (thermal barrier loss only) with loss of ALL seal cooling, but seal injection via CVCS is a separate and independent cooling path.</span>
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q4</div>
 AB.RCP-0001 Attachment 2 CAS requires stopping RCPs for motor winding temp <span class="val-trip">>302°F</span>. Common distractors:<br>
@@ -41,14 +79,18 @@ Trip reactor and stop affected RCP if ANY of the following validated conditions 
 If vibration parameters are below Attachment 1 trip criteria (shaft <span class="val-trip">20 mils</span>, motor flange <span class="val-trip">5 mils</span>), do NOT immediately trip the RCP. Per Step 3.10, the <span class="hi-exam">CRS/SM determines if a controlled Unit shutdown is required</span> to remove the affected RCP from service. Example: shaft vibration at 16 mils and motor flange at 3 mils — both below trip limits, so prepare for controlled shutdown rather than immediate trip.
 </div>
 
+### Seal Failures
+
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q86</div>
-A <span class="hi-exam">#3 seal leak</span> is indicated by STANDPIPE LEVEL-LO alarm with #1 seal leakoff steady at 1.5 gpm (normal, indicating intact #2 seal). Action: <span class="hi-exam">make-up to the standpipe per the ARP; power operation may continue</span>. AB.RCP-0001 does not provide specific direction for a #3 seal leak. <span class="hi-trap">Trap: the orderly shutdown and stop RCP within 8 hours action applies to a degraded #2 seal, not a #3 seal leak.</span>
+<div class="callout-label">Exam — 2014 Q5</div>
+RCP thermal barrier rupture: RCS in-leaks into the thermal barrier CCW path, causing a <span class="hi-exam">momentary RCP Thermal Barrier DISCHARGE FLOW HI alarm</span> that clears when <span class="hi-exam">2CC131 (Thermal Barrier Return Valve) auto shuts on high flow</span>. RCS activity is seen on the <span class="hi-exam">CCW surge tank rad monitors 2R17A/2R17B</span>. <span class="hi-trap">The CC surge tank level RISES (from RCS in-leakage), not lowers — a lowering surge tank level would be the unexpected indication.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q5</div>
-Loss of CCW thermal barrier: if <span class="hi-exam">1CC190 closes (common return), ALL RCP thermal barriers lose CCW</span>. RCPs may continue running if charging flow is maintained. <span class="hi-trap">Trip RCP within 2 minutes only if BOTH CCW and charging are lost.</span>
+<div class="callout-label">Exam — 2020 Q28</div>
+RCP #2 seal failure diagnostics: standpipe level HIGH alarm combined with #1 seal leak-off flow LOWERED = <span class="hi-exam">#2 seal failure</span>. <span class="hi-trap">Standpipe level LOW alarm = #3 seal problem. Do not confuse standpipe high vs low alarm implications.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -56,19 +98,33 @@ Loss of CCW thermal barrier: if <span class="hi-exam">1CC190 closes (common retu
 Attachment 1: #1 seal leak-off flow <span class="hi-exam">>= 6 gpm</span> indicates a <span class="hi-exam">#1 seal failure</span> — go to Attachment 2 (Stopping RCPs). Attachment 2 directs: <span class="hi-exam">manual reactor trip, stop affected RCP, then 3-5 minutes after stopping close the CV104 valve</span>, then go to EOP-TRIP-1. <span class="hi-trap">High seal leak-off indicates #1 seal failure (not #2). An orderly shutdown within 8 hours applies to a degraded #2 seal (leak-off < 0.8 gpm or slowly approaching 6 gpm), NOT a failed #1 seal at >= 6 gpm.</span>
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q86</div>
+A <span class="hi-exam">#3 seal leak</span> is indicated by STANDPIPE LEVEL-LO alarm with #1 seal leakoff steady at 1.5 gpm (normal, indicating intact #2 seal). Action: <span class="hi-exam">make-up to the standpipe per the ARP; power operation may continue</span>. AB.RCP-0001 does not provide specific direction for a #3 seal leak. <span class="hi-trap">Trap: the orderly shutdown and stop RCP within 8 hours action applies to a degraded #2 seal, not a #3 seal leak.</span>
+</div>
+
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #3</div>
-23 RCP motor bearing oil level low. Motor bearing temperatures rising above <span class="hi-exam">175 degF</span> trip criterion and vibrations > <span class="hi-exam">5 mils</span> per AB.RCP-0001. CRS directs reactor trip and stop 23 RCP IAW Attachment 2. This initiates entry into EOP-TRIP-1 where the main turbine then fails to trip.
+<div class="callout-label">Scenario — 2014 #1</div>
+24 RCP #1 seal degrades with rising seal leakoff flow; the crew enters AB.RCP-0001 and trips the reactor, then 24 RCP, when seal leakoff exceeds 6 gpm. <strong>CT#1 (time-critical):</strong> close the 24 RCP seal leakoff isolation valve <span class="hi-exam">24CV104 within 3-5 minutes of tripping 24 RCP</span> — the ~3 min lower bound is the RCP coastdown time (static condition favors the #2 seal performing its backup function), and the 5 min upper bound limits RCS leakage; failure to isolate within 5 minutes raises the possibility of a #2 seal failure and subsequent LOCA. See [[2014 Scenario 1]].
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q55</div>
-CC131 thermal barrier isolation and RCP trip requirement: <span class="hi-exam">loss of thermal barrier CCW alone (with seal injection still normal) does NOT require securing ALL RCPs within 2 minutes</span>. The 2-minute CAS action applies only when <span class="hi-exam">BOTH seal injection AND thermal barrier CCW are lost concurrently</span>. CC131 auto-closure setpoint: <span class="val-trip">175 gpm</span> hi flow. <span class="hi-trap">Trap: candidates may confuse CC131 closure (thermal barrier loss only) with loss of ALL seal cooling, but seal injection via CVCS is a separate and independent cooling path.</span>
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #1</div>
+22 RCP #1 seal degradation: seal leakoff flow rises to <span class="hi-exam">~5.2 gpm</span> (stable). CRS enters AB.RCP-0001, uses P-250 to check 22 RCP conditions. CCW supply normal, winding temps normal, seal injection >6 gpm. CRS determines <span class="hi-exam">orderly shutdown required within 8 hours</span> (Step 3.6). Seal then fails — leakoff exceeds 6 gpm → Att 1 CAS and Att 2 (Stopping RCPs). CRS briefs trip actions, assigns <span class="hi-exam">22CV104 closure within 3-5 minutes</span> of stopping 22 RCP. Trip reactor, stop 22 RCP, close 22CV104 (CT#1).
 </div>
 
+### Stopping RCPs (Attachment 2)
+
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q28</div>
-RCP #2 seal failure diagnostics: standpipe level HIGH alarm combined with #1 seal leak-off flow LOWERED = <span class="hi-exam">#2 seal failure</span>. <span class="hi-trap">Standpipe level LOW alarm = #3 seal problem. Do not confuse standpipe high vs low alarm implications.</span>
+<div class="callout-label">Exam — 2018 Q79</div>
+Attachment 2 — concurrent loss of seal injection AND thermal barrier CCW (2CC131 closes AND CV pumps unavailable): with Seal Leakoff < <span class="hi-exam">6 gpm</span>, the crew is <span class="hi-exam">NOT required to close 21-24CV104s (SEAL LEAKOFF) within 3-5 minutes</span> after stopping RCPs (Step 1.4). At Attachment 2 Step 5.0, seal cooling method depends on RCP Seal Inlet Temperatures: if ALL temps are < <span class="val-alarm">225 &deg;F</span>, perform <span class="hi-exam">Attachment 4 (Re-establishing RCP Seal Cooling)</span>; if NOT ALL temps are < 225 &deg;F, perform <span class="hi-exam">S2.OP-AB.RC-0004 (Natural Circulation)</span> for seal cooling. <span class="hi-trap">Trap: 22 RCP at 227 &deg;F exceeds the 225 &deg;F threshold, so not ALL are less than 225 &deg;F. The procedure routes to Natural Circulation, not Attachment 4.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #1</div>
+22 RCP oil level low (Event 5). OHA D-13 for 22 RCP BRG OIL LVL LO. PO reports 22 RCP Upper Radial Bearing Oil Level Low — motor bearing temperatures rising to or exceed <span class="hi-exam">175 F</span>. CRS enters AB.RCP-0001 and implements <span class="hi-exam">Attachment 2</span> for stopping 22 RCP. Required action: <span class="hi-exam">trip the reactor, confirm the reactor trip, THEN stop 22 RCP</span>.
 </div>
 
 <div class="callout callout-scenario">
@@ -77,23 +133,8 @@ RCP #2 seal failure diagnostics: standpipe level HIGH alarm combined with #1 sea
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2019 #1</div>
-22 RCP oil level low (Event 5). OHA D-13 for 22 RCP BRG OIL LVL LO. PO reports 22 RCP Upper Radial Bearing Oil Level Low — motor bearing temperatures rising to or exceed <span class="hi-exam">175 F</span>. CRS enters AB.RCP-0001 and implements <span class="hi-exam">Attachment 2</span> for stopping 22 RCP. Required action: <span class="hi-exam">trip the reactor, confirm the reactor trip, THEN stop 22 RCP</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q51</div>
-AB.RCP-0001 CAS: motor flange vibration > <span class="val-trip">5 mils</span> requires stopping the RCP (Attachment 2). After reactor trip from 75% power with one RCP stopped and RTB A closed but RTB B open, <span class="hi-exam">LCO 3.4.1.2 IS met</span> because with the rod control system de-energized (RTB B open, bypass breakers not racked in), only <span class="hi-exam">two RCS loops are required to be OPERABLE</span>. <span class="hi-trap">Trap: LCO 3.4.1.2 requires ALL loops OPERABLE only when rod control is ENERGIZED. Candidates confuse the energized vs de-energized requirements.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q79</div>
-Attachment 2 — concurrent loss of seal injection AND thermal barrier CCW (2CC131 closes AND CV pumps unavailable): with Seal Leakoff < <span class="hi-exam">6 gpm</span>, the crew is <span class="hi-exam">NOT required to close 21-24CV104s (SEAL LEAKOFF) within 3-5 minutes</span> after stopping RCPs (Step 1.4). At Attachment 2 Step 5.0, seal cooling method depends on RCP Seal Inlet Temperatures: if ALL temps are < <span class="val-alarm">225 &deg;F</span>, perform <span class="hi-exam">Attachment 4 (Re-establishing RCP Seal Cooling)</span>; if NOT ALL temps are < 225 &deg;F, perform <span class="hi-exam">S2.OP-AB.RC-0004 (Natural Circulation)</span> for seal cooling. <span class="hi-trap">Trap: 22 RCP at 227 &deg;F exceeds the 225 &deg;F threshold, so not ALL are less than 225 &deg;F. The procedure routes to Natural Circulation, not Attachment 4.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2018 #1</div>
-22 RCP #1 seal degradation: seal leakoff flow rises to <span class="hi-exam">~5.2 gpm</span> (stable). CRS enters AB.RCP-0001, uses P-250 to check 22 RCP conditions. CCW supply normal, winding temps normal, seal injection >6 gpm. CRS determines <span class="hi-exam">orderly shutdown required within 8 hours</span> (Step 3.6). Seal then fails — leakoff exceeds 6 gpm → Att 1 CAS and Att 2 (Stopping RCPs). CRS briefs trip actions, assigns <span class="hi-exam">22CV104 closure within 3-5 minutes</span> of stopping 22 RCP. Trip reactor, stop 22 RCP, close 22CV104 (CT#1).
+<div class="callout-label">Scenario — 2022 #3</div>
+23 RCP motor bearing oil level low. Motor bearing temperatures rising above <span class="hi-exam">175 degF</span> trip criterion and vibrations > <span class="hi-exam">5 mils</span> per AB.RCP-0001. CRS directs reactor trip and stop 23 RCP IAW Attachment 2. This initiates entry into EOP-TRIP-1 where the main turbine then fails to trip.
 </div>
 
 <div class="callout callout-jpm">
@@ -101,34 +142,13 @@ Attachment 2 — concurrent loss of seal injection AND thermal barrier CCW (2CC1
 Total loss of Component Cooling Water to all RCPs (22 then 21 CCW pump trip, standby 23 fails to start). The OHA D20-D23 alarm response directs GO TO AB.RCP-0001 if RCP Motor Bearing Temperature reaches <span class="val-trip">175°F</span> or CCW flow can NOT be established within 5 minutes with temps trending up. On the validated total-loss conditions, Attachment 2 (Stopping Reactor Coolant Pumps) directs: <span class="hi-exam">IF RTBs CLOSED, TRIP the Reactor; STOP affected RCP(s)</span>; and for a total loss of CCW (including loss of CCW to the CVCS Letdown Heat Exchanger), simultaneously <span class="hi-exam">CLOSE 2CV2 AND 2CV277 (isolate letdown), OPEN 2SJ1 AND 2SJ2 (swap charging suction to RWST), CLOSE 2CV40 AND 2CV41 (isolate VCT)</span>, then GO TO EOP-TRIP-1. The "Stopping Reactor Coolant Pumps" attachment is identical to the one in AB.CC-0001. See [[CCW]], [[AB.CC-0001 — Loss of Component Cooling Water]].
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #4</div>
-22 CCW pump trips with the standby (23) CCW pump failing to auto-start. After the crew manually starts 23 CCW pump and restores CCW pressure, AB.RCP-0001 (along with [[AB.CC-0001 — Loss of Component Cooling Water]]) is referenced to <span class="hi-exam">verify entry is NOT required</span> — RCP CCW-cooled parameters are confirmed trending back to normal values. See [[2015 Scenario 4]].
-</div>
+### Thermal Barrier / CCW Loss
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2014 #1</div>
-24 RCP #1 seal degrades with rising seal leakoff flow; the crew enters AB.RCP-0001 and trips the reactor, then 24 RCP, when seal leakoff exceeds 6 gpm. <strong>CT#1 (time-critical):</strong> close the 24 RCP seal leakoff isolation valve <span class="hi-exam">24CV104 within 3-5 minutes of tripping 24 RCP</span> — the ~3 min lower bound is the RCP coastdown time (static condition favors the #2 seal performing its backup function), and the 5 min upper bound limits RCS leakage; failure to isolate within 5 minutes raises the possibility of a #2 seal failure and subsequent LOCA. See [[2014 Scenario 1]].
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q5</div>
-RCP thermal barrier rupture: RCS in-leaks into the thermal barrier CCW path, causing a <span class="hi-exam">momentary RCP Thermal Barrier DISCHARGE FLOW HI alarm</span> that clears when <span class="hi-exam">2CC131 (Thermal Barrier Return Valve) auto shuts on high flow</span>. RCS activity is seen on the <span class="hi-exam">CCW surge tank rad monitors 2R17A/2R17B</span>. <span class="hi-trap">The CC surge tank level RISES (from RCS in-leakage), not lowers — a lowering surge tank level would be the unexpected indication.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q30</div>
-Entry condition via loss of RCP bearing cooling water: the <span class="hi-exam">2C 4KV vital bus supplies the 23 CCW pump</span>. With 21 CCW pump out of service, a 2C bus lockout (Bus Differential) leaves no CCW flow to the RCP bearings, annunciating <span class="hi-exam">OHA D20-23 (RCP BRG CLG WTR FLO LO)</span> — which ALWAYS requires entry into AB.RCP-0001. <span class="hi-trap">A CCW surge tank rising level does NOT always require entry (other causes besides thermal-barrier rupture exist), and ~4 mils shaft vibration is NORMAL — flange vibration &gt;3 mils is the vibration entry condition.</span> (Note: the 2A bus supplies the 23 charging pump, not the 21.)
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q30</div>
-AB.RCP-0001 directs a <span class="hi-exam">reactor trip only if BOTH RCP seal injection flow AND Thermal Barrier cooling flow are lost — not just one or the other</span>. With only seal injection lost (loss of all charging), <span class="hi-exam">flow from the RCS past the Thermal Barrier heat exchanger maintains RCP seal temperature</span>, allowing continued operation while attempting to restore charging.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q89</div>
-On a spurious <span class="hi-exam">OHA C-16 PHASE B CNTMT ISOL ACT</span> (e.g., during a containment pressure channel calibration), the Window C ARP directs an attempt to reset and open the Phase B isolation valves; <span class="hi-exam">if Phase B cannot be reset, GO TO S2.OP-AB.RCP-0001</span> because Phase B isolates CCW to the RCPs (loss of RCP cooling).
+<div class="callout-label">Exam — 2022 Q5</div>
+Loss of CCW thermal barrier: if <span class="hi-exam">1CC190 closes (common return), ALL RCP thermal barriers lose CCW</span>. RCPs may continue running if charging flow is maintained. <span class="hi-trap">Trip RCP within 2 minutes only if BOTH CCW and charging are lost.</span>
 </div>
 
 ## Connections

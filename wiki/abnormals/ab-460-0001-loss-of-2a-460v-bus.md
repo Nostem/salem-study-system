@@ -35,6 +35,8 @@ Provides guidance for responding to a loss of the 2A 460V and/or 230V vital bus 
 - Start a centrifugal charging pump and restore PZR level
 - Re-establish letdown
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q45</div>
 An overcurrent fault on the 2A 460V MCC causes feeder breaker 2A4D to trip open, de-energizing both the 2A 460V and 230V MCCs. This results in <span class="hi-exam">loss of 23 charging pump and letdown isolation</span>. Per S2.OP-AB.460-0001, start a centrifugal charging pump and re-establish letdown.

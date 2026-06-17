@@ -16,6 +16,8 @@ Abnormal procedure for evacuation of the control room due to a fire in the Contr
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q75</div>
 The EDG FIRE EMERGENCY BYPASS keylock switches are directed to be placed in BYPASS by <span class="hi-exam">AB.CR-0002, Attachment 4 (Reactor Operator), pages 15, 19, and 22</span> — NOT by AB.FIRE-0001, AB.FIRE-0002, or AB.CR-0001. <span class="hi-exam">The bypass switches remove SEC (Sequencer) control from the EDG</span> and are only operated when the control room has been evacuated due to a fire and SEC operation may be aberrant.

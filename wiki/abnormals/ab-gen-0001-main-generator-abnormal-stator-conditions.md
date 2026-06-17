@@ -25,6 +25,8 @@ Provides operator actions for response to abnormal Main Generator stator conditi
 - If required to lower the RF Monitor < 50% or to mitigate elevated stator temperatures, direct a load reduction (using AB.LOAD-0001 or S2.OP-IO.ZZ-0004)
 - Reference S2.OP-PT.GEN-0003, Main Generator Stator Temperatures, for diagnostic data
 
+**Exam & operating coverage:**
+
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2015 #2</div>
 Entered on <span class="hi-exam">Aux Annunciator Point 0901, GEN RADIO FREQ HIGH</span>. Crew checks Stator T/C and RTD temperatures on SPDS and identifies the step 3.2 condition: <span class="hi-exam">3 sequential stator T/Cs exceed assigned temperature limits by &lt; 10°F</span>. Local RF Monitor reads just above 50% and is slowly rising. CRS determines a <span class="hi-exam">load reduction is necessary to lower the Radio Frequency Monitor to &lt; 50%</span> and enters AB.LOAD-0001, Rapid Load Reduction. During the downpower a Main Power Transformer Phase 1 Sudden Pressure / Fire Protection deluge actuation occurs, leading the CRS to order a reactor trip with power &gt; P-9.

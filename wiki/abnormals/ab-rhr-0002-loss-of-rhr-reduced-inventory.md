@@ -15,9 +15,11 @@ Provides operator actions for responding to a loss of Residual Heat Removal whil
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q87</div>
-AB.RHR-0002 entry criteria: applies when <span class="hi-exam">RCS is at Water Elevation of 101 feet or LESS</span>. At Water Elevation 103.5 feet, the plant is NOT at reduced inventory — AB.RHR-0001 (Loss of RHR) applies instead. <span class="hi-trap">Trap: with empty PZR and RCS at 103.5 feet, candidates may incorrectly select AB.RHR-0002 because the PZR is empty. The determining factor is RCS Water Elevation, not PZR level.</span>
+<div class="callout-label">Exam — 2015 Q78</div>
+On a loss of RHR at reduced inventory (RPV level &lt;97.5'), the <span class="hi-exam">in-service RHR pump is STOPPED to preclude pump damage</span>; a second RHR pump is NOT started (the procedure checks for a RHR pump already in service). See [[RHR]], [[AB.SW-0005 — Loss of All Service Water]].
 </div>
 
 <div class="callout callout-exam">
@@ -26,8 +28,8 @@ AB.RHR-0002 CAS: <span class="hi-exam">"IF AT ANY TIME, a Charging OR SI pump ca
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q78</div>
-On a loss of RHR at reduced inventory (RPV level &lt;97.5'), the <span class="hi-exam">in-service RHR pump is STOPPED to preclude pump damage</span>; a second RHR pump is NOT started (the procedure checks for a RHR pump already in service). See [[RHR]], [[AB.SW-0005 — Loss of All Service Water]].
+<div class="callout-label">Exam — 2019 Q87</div>
+AB.RHR-0002 entry criteria: applies when <span class="hi-exam">RCS is at Water Elevation of 101 feet or LESS</span>. At Water Elevation 103.5 feet, the plant is NOT at reduced inventory — AB.RHR-0001 (Loss of RHR) applies instead. <span class="hi-trap">Trap: with empty PZR and RCS at 103.5 feet, candidates may incorrectly select AB.RHR-0002 because the PZR is empty. The determining factor is RCS Water Elevation, not PZR level.</span>
 </div>
 
 ## Connections

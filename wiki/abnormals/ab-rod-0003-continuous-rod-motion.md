@@ -23,44 +23,40 @@ Provides operator actions for responding to uncontrolled or continuous rod motio
 - Step 3.10: Return PZR level to program (take Master Flow Controller to manual)
 - Steps 3.11-3.12: Defeat deviation alarms and select valid recorder channels
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 Sim-g</div>
-Failed high Tavg channel response: recognize unwarranted rod insertion (rods stepping in with no runback), take rods to manual. Restore Tavg within <span class="hi-exam">1.5F of Tprogram</span> by withdrawing rods. Stabilize PZR level by placing Master Flow Controller in manual. Defeat <span class="hi-exam">BOTH Differential Temperature AND Average Temperature</span> deviation alarms on 2CC2 for the affected loop, then select a valid recorder channel (Channel 2, 3, or 4) for both parameters.
+**Exam & operating coverage:**
+
+### Entry Conditions & Key Concepts
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q40</div>
+AB.ROD-0003 Attachments 1 and 2 give the PZR level program as a function of Tavg: <span class="hi-exam">at 20% power Tavg on program is 551.6°F → PZR program level ~28%</span>; no-load (547°F) → 22%; 80% power (569.5°F) → ~51%. Program PZR level is clipped at 59%. See [[Pressurizer Level & Press Control]].
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 Sim-a</div>
-During rod surveillance (S2.OP-ST.RCS-0001), after returning the rod bank selector switch to AUTO, if unexpected <span class="hi-exam">continuous rod insertion</span> occurs with no runback in progress — place switch in Manual. If rod motion does NOT stop, <span class="hi-exam">manually trip the reactor</span>.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 Sim-a</div>
-During rod surveillance (S2.OP-ST.RCS-0001), after placing rod bank selector switch in AUTO at step 4.1.11.3, uncontrolled rod insertion occurs (rods insert in <span class="hi-exam">both AUTO and MANUAL</span>). Applicant must recognize rods continue inserting after placing switch in Manual and <span class="hi-exam">manually trip the reactor</span>.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #1</div>
-Event 3: <span class="hi-exam">24 Loop Cold Leg RTD fails high</span> causing continuous rod insertion. RO verifies no turbine runback in progress and places rods in Manual. CRS enters AB.ROD-0003. RO places MFC in Manual, reports various 2CC2 console alarms (RC Loop Tavg Deviation, Tavg-Tref Deviation, RC Tavg Hi or Lo-Lo, RC Loops DT Dev). CRS directs RO to adjust rods to maintain Tavg within <span class="hi-exam">1.5 deg of T program</span>, stop dilution, and return PZR level to program. RO defeats 24 loop RC DT and Average Temperature on 2CC2, selects alternate channel. After restoring rods and placing in Auto, CRS enters <span class="hi-exam">TS 3.3.1.1 Action 6</span> and <span class="hi-exam">TS 3.3.2.1.b Action 19</span> (place channel in tripped condition within 72 hours). CRS initiates S2.OP-SO.RPS-0002.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2020 #2</div>
-Event 4: 24 Loop Cold Leg RTD fails high (value 630 F) causing continuous rod insertion. RO reports no turbine runback. Places rods in Manual — motion stops. CRS enters AB.ROD-0003. RO places MFC in Manual, reports 2CC2 console alarms (Tavg Deviation, Tavg-Tref Deviation, RC Tavg Hi/Lo-Lo, DT Dev). Defeats 24 loop DT and Tavg on 2CC2, selects operable channel. Restores rods to Auto after Tavg within <span class="hi-exam">1.5 degrees of Tref</span>. CRS enters <span class="hi-exam">TS 3.3.1.1 Action 6</span> and <span class="hi-exam">TS 3.3.2.1.b Action 19</span> (72 hours each). CRS initiates S2.OP-SO.RPS-0002.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2020 #5</div>
-<span class="hi-exam">2PT-505 turbine inlet pressure channel fails low</span> causing continuous rod insertion at 72 steps per minute. RO places rod control in Manual — rod motion stops. CRS enters AB.ROD-0003. RO maintains Tavg within <span class="hi-exam">1.5 F of Tref</span> using manual rod control. PO identifies PT-505 as the failed channel. PO places main steam dumps in MS Pressure Control-Auto. CRS enters <span class="hi-exam">TS 3.3.2.1.b Action 19 (72 hours)</span>. CRS initiates S2.OP-SO.RPS-0006 for turbine channel trip/restoration. RO withdraws control rods to ARO position.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 Sim-c</div>
-During rod surveillance at Step 5.1.11.C, when rod bank selector switch placed in AUTO, <span class="hi-exam">continuous rod insertion occurs in both AUTO and MANUAL</span>. Operator announces rods stepping in with no runback, places switch to Manual — rod motion does NOT stop. Recognizes situation and <span class="hi-exam">manually trips the reactor</span>. Same discriminating step concept tested across 2020, 2022, and 2023 exam cycles.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q76</div>
+With the Main Turbine online below P-2 (Permissive P-2 actuates at <span class="hi-exam">&lt;15% turbine load and prevents automatic rod withdrawal</span>), control rods should NOT be withdrawing in automatic. Unexpected automatic rod withdrawal is addressed by entering AB.ROD-0003 — <span class="hi-exam">place control rods in MANUAL and adjust control rods (not turbine load) to restore Tavg to within 1.5°F of program</span>. Rod control is normally placed in manual upon reaching 20% power in AB.LOAD-0001; the abnormal rod withdrawal is corrected with this procedure, not the load-reduction procedure. See [[Control Rod Drive]].
 </div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q67</div>
 Entry conditions: rods <span class="hi-exam">withdraw OR insert</span> a MINIMUM of <span class="hi-exam">3 steps</span> at steady state conditions. <span class="hi-trap">2 steps of rod motion can occur from process noise (per the AB.ROD-0003 basis) and does NOT warrant procedure entry. The entry threshold is 3 steps, not 2.</span> <span class="hi-trap">Entry applies to BOTH withdrawal and insertion — not withdrawal ONLY.</span>
+</div>
+
+### Failed Tavg Channel
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-g</div>
+Failed high Tavg channel response: recognize unwarranted rod insertion (rods stepping in with no runback), take rods to manual. Restore Tavg within <span class="hi-exam">1.5F of Tprogram</span> by withdrawing rods. Stabilize PZR level by placing Master Flow Controller in manual. Defeat <span class="hi-exam">BOTH Differential Temperature AND Average Temperature</span> deviation alarms on 2CC2 for the affected loop, then select a valid recorder channel (Channel 2, 3, or 4) for both parameters.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #2</div>
+The <span class="hi-exam">22 RC Loop Tavg channel fails high</span> with rod control in auto, driving control rods inward at 72 spm. RO verifies no runback in progress and <span class="hi-exam">places control rods in manual</span>; CRS enters AB.ROD-0003. RO adjusts rods in manual to hold Tavg within 1.5° of program (using Attachment 1), confirms 22 loop Tavg failed high with no dilution in progress, and restores PZR level on the master flow controller. CRS removes the failed channel from service and identifies the applicable Tech Specs.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+Event 2: <span class="hi-exam">Power Range NI Channel IV (2N44) fails high</span> during a power ascension, driving control rods to step IN at <span class="hi-exam">72 spm</span> (if rod control is in auto). RO verifies no load reject in progress and places rods in Manual. <span class="hi-trap">If rods were in auto, the crew may enter AB.ROD-0003 first, but transitions to AB.NIS-0001 because the root cause is a nuclear instrument failure, not a temperature/process channel.</span> The failed channel is then removed from service per S2.OP-SO.RPS-0001. See [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]].
 </div>
 
 <div class="callout callout-scenario">
@@ -74,9 +70,33 @@ Event 3: <span class="hi-exam">22 Hot Leg RTD Avg Sum fails high (value 650 F)</
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #1</div>
-Event 2: <span class="hi-exam">Power Range NI Channel IV (2N44) fails high</span> during a power ascension, driving control rods to step IN at <span class="hi-exam">72 spm</span> (if rod control is in auto). RO verifies no load reject in progress and places rods in Manual. <span class="hi-trap">If rods were in auto, the crew may enter AB.ROD-0003 first, but transitions to AB.NIS-0001 because the root cause is a nuclear instrument failure, not a temperature/process channel.</span> The failed channel is then removed from service per S2.OP-SO.RPS-0001. See [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]].
+<div class="callout-label">Scenario — 2020 #2</div>
+Event 4: 24 Loop Cold Leg RTD fails high (value 630 F) causing continuous rod insertion. RO reports no turbine runback. Places rods in Manual — motion stops. CRS enters AB.ROD-0003. RO places MFC in Manual, reports 2CC2 console alarms (Tavg Deviation, Tavg-Tref Deviation, RC Tavg Hi/Lo-Lo, DT Dev). Defeats 24 loop DT and Tavg on 2CC2, selects operable channel. Restores rods to Auto after Tavg within <span class="hi-exam">1.5 degrees of Tref</span>. CRS enters <span class="hi-exam">TS 3.3.1.1 Action 6</span> and <span class="hi-exam">TS 3.3.2.1.b Action 19</span> (72 hours each). CRS initiates S2.OP-SO.RPS-0002.
 </div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #1</div>
+Event 3: <span class="hi-exam">24 Loop Cold Leg RTD fails high</span> causing continuous rod insertion. RO verifies no turbine runback in progress and places rods in Manual. CRS enters AB.ROD-0003. RO places MFC in Manual, reports various 2CC2 console alarms (RC Loop Tavg Deviation, Tavg-Tref Deviation, RC Tavg Hi or Lo-Lo, RC Loops DT Dev). CRS directs RO to adjust rods to maintain Tavg within <span class="hi-exam">1.5 deg of T program</span>, stop dilution, and return PZR level to program. RO defeats 24 loop RC DT and Average Temperature on 2CC2, selects alternate channel. After restoring rods and placing in Auto, CRS enters <span class="hi-exam">TS 3.3.1.1 Action 6</span> and <span class="hi-exam">TS 3.3.2.1.b Action 19</span> (place channel in tripped condition within 72 hours). CRS initiates S2.OP-SO.RPS-0002.
+</div>
+
+### Manual Trip — Rods Continue in Manual
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-c</div>
+During rod surveillance at Step 5.1.11.C, when rod bank selector switch placed in AUTO, <span class="hi-exam">continuous rod insertion occurs in both AUTO and MANUAL</span>. Operator announces rods stepping in with no runback, places switch to Manual — rod motion does NOT stop. Recognizes situation and <span class="hi-exam">manually trips the reactor</span>. Same discriminating step concept tested across 2020, 2022, and 2023 exam cycles.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-a</div>
+During rod surveillance (S2.OP-ST.RCS-0001), after placing rod bank selector switch in AUTO at step 4.1.11.3, uncontrolled rod insertion occurs (rods insert in <span class="hi-exam">both AUTO and MANUAL</span>). Applicant must recognize rods continue inserting after placing switch in Manual and <span class="hi-exam">manually trip the reactor</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-a</div>
+During rod surveillance (S2.OP-ST.RCS-0001), after returning the rod bank selector switch to AUTO, if unexpected <span class="hi-exam">continuous rod insertion</span> occurs with no runback in progress — place switch in Manual. If rod motion does NOT stop, <span class="hi-exam">manually trip the reactor</span>.
+</div>
+
+### Failed Turbine Pressure Channel
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q76</div>
@@ -89,18 +109,8 @@ The Main Turbine inlet steam pressure transmitter <span class="hi-exam">PT-505 f
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #2</div>
-The <span class="hi-exam">22 RC Loop Tavg channel fails high</span> with rod control in auto, driving control rods inward at 72 spm. RO verifies no runback in progress and <span class="hi-exam">places control rods in manual</span>; CRS enters AB.ROD-0003. RO adjusts rods in manual to hold Tavg within 1.5° of program (using Attachment 1), confirms 22 loop Tavg failed high with no dilution in progress, and restores PZR level on the master flow controller. CRS removes the failed channel from service and identifies the applicable Tech Specs.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q40</div>
-AB.ROD-0003 Attachments 1 and 2 give the PZR level program as a function of Tavg: <span class="hi-exam">at 20% power Tavg on program is 551.6°F → PZR program level ~28%</span>; no-load (547°F) → 22%; 80% power (569.5°F) → ~51%. Program PZR level is clipped at 59%. See [[Pressurizer Level & Press Control]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q76</div>
-With the Main Turbine online below P-2 (Permissive P-2 actuates at <span class="hi-exam">&lt;15% turbine load and prevents automatic rod withdrawal</span>), control rods should NOT be withdrawing in automatic. Unexpected automatic rod withdrawal is addressed by entering AB.ROD-0003 — <span class="hi-exam">place control rods in MANUAL and adjust control rods (not turbine load) to restore Tavg to within 1.5°F of program</span>. Rod control is normally placed in manual upon reaching 20% power in AB.LOAD-0001; the abnormal rod withdrawal is corrected with this procedure, not the load-reduction procedure. See [[Control Rod Drive]].
+<div class="callout-label">Scenario — 2020 #5</div>
+<span class="hi-exam">2PT-505 turbine inlet pressure channel fails low</span> causing continuous rod insertion at 72 steps per minute. RO places rod control in Manual — rod motion stops. CRS enters AB.ROD-0003. RO maintains Tavg within <span class="hi-exam">1.5 F of Tref</span> using manual rod control. PO identifies PT-505 as the failed channel. PO places main steam dumps in MS Pressure Control-Auto. CRS enters <span class="hi-exam">TS 3.3.2.1.b Action 19 (72 hours)</span>. CRS initiates S2.OP-SO.RPS-0006 for turbine channel trip/restoration. RO withdraws control rods to ARO position.
 </div>
 
 ## Connections

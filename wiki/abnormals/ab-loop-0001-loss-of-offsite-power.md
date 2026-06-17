@@ -16,39 +16,25 @@ Provides operator actions for responding to a complete loss of offsite power (LO
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+### LOOP Entry and Battery Management
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q81</div>
+<span class="hi-trap">AB.LOOP-0001 is for a TOTAL loss of offsite power and is NOT entered for a single 500 KV bus section loss.</span> A 2-6 500 KV breaker fault that loses only bus section 2 (Group Buses still fed through the Aux Power Transformer) is a PARTIAL loss — the crew enters AB.LOOP-0003, with no demand for a reactor trip / EOP-TRIP-1.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q9</div>
 Battery capacity is 2 hours with no load shed performed, and 4 hours with LOPA-1 load shed completed.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q10</div>
-If ANY RCP seal inlet temperature is >=225 degrees F, seal injection is NOT permitted. Seal injection must be isolated before starting a cross-unit charging pump. Attachment 10 provides instructions for aligning 13 Charging Pump from Unit 1.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 IP-i</div>
-SBO Air Compressor start (SC.OP-SO.CA-0001): when all ECACs are unavailable during LOOP, start SBO diesel compressor. Critical sequence: keep <span class="hi-exam">BY-PASS VALVE pushbutton depressed</span> while starting engine, do NOT release until <span class="hi-exam">oil pressure >15 psig</span>. Align discharge: <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span>. Place UNLOADER VALVE in RUN to load.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 IP-i</div>
-During LOOP, CRS directs transfer of 22 Backup Group PZR heaters to emergency power supply per <span class="hi-exam">S2.OP-SO.PZR-0010 Section 5.3</span>. This is a manual field action requiring an NCO to physically manipulate disconnects and breakers at the 78 ft. and 84 ft. elevations.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2020 #1</div>
-LOPA-1 crew requests assistance to restore power IAW AB.LOOP-0001 while continuing with LOPA-1 CAS. Blackout coping actions in Attachment 2, Part A completed within 30 minutes.
-</div>
+### SEC Mode II — Blackout Sequencing
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q19</div>
-Attachment 3 of S1.OP-AB.LOOP-0001: with a LOOP and <span class="hi-exam">NO SI signal</span>, the SEC strips the 4KV vital bus breakers before sequencing on BLACKOUT loads — neither SI pump starts. Even if 11 SI Pump was running for IST when the LOOP occurred, it trips with the bus strip and is not auto-restarted. Both SI pumps would only restart on an <span class="hi-exam">accident signal coupled with the Blackout signal</span> (SEC Mode III). Bus mapping: <span class="hi-exam">11/12 SI pumps powered from 1A/1C 4KV Vital Buses</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q81</div>
-<span class="hi-trap">AB.LOOP-0001 is for a TOTAL loss of offsite power and is NOT entered for a single 500 KV bus section loss.</span> A 2-6 500 KV breaker fault that loses only bus section 2 (Group Buses still fed through the Aux Power Transformer) is a PARTIAL loss — the crew enters AB.LOOP-0003, with no demand for a reactor trip / EOP-TRIP-1.
+<div class="callout-label">Exam — 2012 Q11</div>
+The Station Blackout Compressor is started as part of the Blackout Coping Actions in <span class="hi-exam">Attachment 2 Part A of AB.LOOP-0001</span> (required within 60 minutes of Blackout). See [[EOP-LOPA-1 — Loss of All AC Power]].
 </div>
 
 <div class="callout callout-exam">
@@ -57,13 +43,37 @@ A loss of all offsite power with NO SI signal is a <span class="hi-exam">SEC MOD
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q11</div>
-The Station Blackout Compressor is started as part of the Blackout Coping Actions in <span class="hi-exam">Attachment 2 Part A of AB.LOOP-0001</span> (required within 60 minutes of Blackout). See [[EOP-LOPA-1 — Loss of All AC Power]].
+<div class="callout-label">Exam — 2016 Q19</div>
+Attachment 3 of S1.OP-AB.LOOP-0001: with a LOOP and <span class="hi-exam">NO SI signal</span>, the SEC strips the 4KV vital bus breakers before sequencing on BLACKOUT loads — neither SI pump starts. Even if 11 SI Pump was running for IST when the LOOP occurred, it trips with the bus strip and is not auto-restarted. Both SI pumps would only restart on an <span class="hi-exam">accident signal coupled with the Blackout signal</span> (SEC Mode III). Bus mapping: <span class="hi-exam">11/12 SI pumps powered from 1A/1C 4KV Vital Buses</span>.
 </div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #1</div>
+LOPA-1 crew requests assistance to restore power IAW AB.LOOP-0001 while continuing with LOPA-1 CAS. Blackout coping actions in Attachment 2, Part A completed within 30 minutes.
+</div>
+
+### SBO Diesel Control Air Compressor
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2012 IP-k</div>
 The SBO Diesel Control Air Compressor start (SC.OP-SO.CA-0001) is the local blackout coping action this procedure directs when both units have tripped on a loss of offsite power and no Emergency Control Air Compressors are running. Operator manually starts the SBO compressor and aligns <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span> to restore Control Air to the Aux Building 1A/2A headers. This JPM lists <span class="hi-exam">S2.OP-AB.LOOP-1, Loss of Off-Site Power, Rev 27</span> as a reference.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 IP-i</div>
+SBO Air Compressor start (SC.OP-SO.CA-0001): when all ECACs are unavailable during LOOP, start SBO diesel compressor. Critical sequence: keep <span class="hi-exam">BY-PASS VALVE pushbutton depressed</span> while starting engine, do NOT release until <span class="hi-exam">oil pressure >15 psig</span>. Align discharge: <span class="hi-exam">1CA1913 → 1CA1886 → 2CA584</span>. Place UNLOADER VALVE in RUN to load.
+</div>
+
+### Cross-Unit Equipment Alignment
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q10</div>
+If ANY RCP seal inlet temperature is >=225 degrees F, seal injection is NOT permitted. Seal injection must be isolated before starting a cross-unit charging pump. Attachment 10 provides instructions for aligning 13 Charging Pump from Unit 1.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 IP-i</div>
+During LOOP, CRS directs transfer of 22 Backup Group PZR heaters to emergency power supply per <span class="hi-exam">S2.OP-SO.PZR-0010 Section 5.3</span>. This is a manual field action requiring an NCO to physically manipulate disconnects and breakers at the 78 ft. and 84 ft. elevations.
 </div>
 
 ## Connections

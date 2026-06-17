@@ -16,9 +16,11 @@ Provides operator actions for responding to a loss of spent fuel pool cooling, i
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q92</div>
-Per S2.OP-AB.SF-0001: when SFP water is at the boiling point (212 &deg;F) and SFP level is at the Low Level alarm setpoint (<span class="hi-exam">128 feet, 0 inches</span>), the crew is required to initiate makeup to the Spent Fuel Pool until the <span class="hi-exam">HI LEVEL ALARM actuates</span> (not just until the LOW LEVEL ALARM clears). For makeup, the crew can perform <span class="hi-exam">S2.OP-SO.SF-0006 (Spent Fuel Pool Emergency Fill) OR S2.OP-SO.SF-0001 (Fill and Transfer of the Spent Fuel Pool)</span> to raise SFP level. <span class="hi-trap">Trap: The LOW LEVEL ALARM clears at 128 feet, 2 inches — above the current level — but the procedure requires makeup to continue until the HI LEVEL ALARM actuates. Also, both normal fill and emergency fill procedures are allowed, not just the emergency fill.</span>
+<div class="callout-label">Exam — 2014 Q90</div>
+Per AB.SF-0001 <span class="hi-exam">CAS item 2.0, the SFP demineralizer is MANUALLY removed from service when actual or projected SFP temperature is 130&deg;F</span> (the SFP demin does NOT auto-bypass). The <span class="hi-exam">CAUTION on top of page 2</span> notes that a pool heatup of ~14 degrees raises SFP level enough to cause the <span class="hi-exam">OHA C-27 SFP Lvl Hi (6" above normal)</span> to annunciate. <span class="hi-trap">The 136&deg;F auto-bypass is the CVCS demin, not the SFP demin.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -27,8 +29,8 @@ Per AB.SF-0001, an unrecoverable loss of SFP cooling with rising SFP temperature
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q90</div>
-Per AB.SF-0001 <span class="hi-exam">CAS item 2.0, the SFP demineralizer is MANUALLY removed from service when actual or projected SFP temperature is 130&deg;F</span> (the SFP demin does NOT auto-bypass). The <span class="hi-exam">CAUTION on top of page 2</span> notes that a pool heatup of ~14 degrees raises SFP level enough to cause the <span class="hi-exam">OHA C-27 SFP Lvl Hi (6" above normal)</span> to annunciate. <span class="hi-trap">The 136&deg;F auto-bypass is the CVCS demin, not the SFP demin.</span>
+<div class="callout-label">Exam — 2018 Q92</div>
+Per S2.OP-AB.SF-0001: when SFP water is at the boiling point (212 &deg;F) and SFP level is at the Low Level alarm setpoint (<span class="hi-exam">128 feet, 0 inches</span>), the crew is required to initiate makeup to the Spent Fuel Pool until the <span class="hi-exam">HI LEVEL ALARM actuates</span> (not just until the LOW LEVEL ALARM clears). For makeup, the crew can perform <span class="hi-exam">S2.OP-SO.SF-0006 (Spent Fuel Pool Emergency Fill) OR S2.OP-SO.SF-0001 (Fill and Transfer of the Spent Fuel Pool)</span> to raise SFP level. <span class="hi-trap">Trap: The LOW LEVEL ALARM clears at 128 feet, 2 inches — above the current level — but the procedure requires makeup to continue until the HI LEVEL ALARM actuates. Also, both normal fill and emergency fill procedures are allowed, not just the emergency fill.</span>
 </div>
 
 ## Connections

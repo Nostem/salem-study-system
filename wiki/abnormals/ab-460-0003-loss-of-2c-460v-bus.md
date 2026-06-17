@@ -24,6 +24,8 @@ Provides guidance for responding to a loss of the 2C 460V and/or 230V vital bus 
 
 ### Key Actions
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q62</div>
 With Unit 2 ECAC running loaded for testing, a trip of <span class="hi-exam">2C 4KV to 460V breaker 2C4D</span> de-energizes the 2C 460V Vital Bus and trips the running ECAC, affecting Control Air Header pressure. <span class="hi-trap">2A4D, 2E6D, and 2H5D supply Group buses (Station Air Compressor power), not ECAC power — Station Air Compressors are powered from Group buses, the ECAC is powered from the 2C 460V Vital Bus.</span>
