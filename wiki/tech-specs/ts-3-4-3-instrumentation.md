@@ -146,6 +146,33 @@ In Mode 2 below P-6, two OPERABLE SR channels ensure no single random failure di
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q87</div>
+TSAS 3.3.1.1 Functional Unit 5 (Intermediate Range Neutron Flux, ≤25% RTP, blocked above P-10): per <span class="hi-exam">Action 3.c, above 5% power, power operation may continue</span> with an IR channel condition. During a power ascension at 15% power, an IR bistable illuminating (at its 25% alarm setpoint) does not require lowering power — the ascension may continue while investigating the cause, because the IR Hi Flux trip is already blocked above P-10.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q12</div>
+TS Bases 3.3.1.1 generalizes that instrumentation OPERABILITY ensures <span class="hi-exam">(2) the specified coincidence logic and sufficient redundancy is maintained to permit a channel to be out of service... and (3) sufficient system functional capability is available from diverse parameters</span>. This bases supports maintaining power &lt;P-6 when one Source Range NI fails low during a startup: <span class="hi-trap">a single remaining SR channel cannot be relied upon for startup Rx power indication with no diverse channel to verify it against</span>. See [[Excore NIs]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q94</div>
+Intermediate Range NI operability per TSAS 3.3.1.1: there is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">ONE inoperable IR NI only — with BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). Supporting procedure facts (S1.OP-IO.ZZ-0003): <span class="hi-exam">at least a one-decade SR/IR overlap is required when raising power (step 5.2.33)</span>; with SR at ~30,000 counts the overlap should already be present, so each IR NI should read ~<span class="hi-exam">1x10-10A</span>; the <span class="hi-exam">SR Hi Flux trip is at 100,000 counts</span>. <span class="hi-trap">Trap: declaring only TSAS 3.3.1.1 entry (the one-channel action) when BOTH channels are inoperable — the correct entry is TS 3.0.3.</span> See [[Incores]], [[TS 3/4.0 — Applicability]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q89</div>
+IRNI channels: loss of a single IRNI channel is <span class="hi-trap">specifically excluded from LCO 3.0.3</span> (even though minimum operable = 2). <span class="hi-exam">Loss of the second IRNI channel enters TS 3.0.3 — Hot Standby within 6 hours (actions started within 1 hour)</span>. See [[Excore NIs]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q82</div>
+LCO 3.3.1.1 action for PZR Level Channel failure: with 2LT-459 (Channel I PZR Level) failed high at 100% power, the channel must be placed in the <span class="hi-exam">tripped condition within 72 hours</span>. PZR Level — High is a 3-channel trip function (Table 3.3-1) with 2/3 coincidence. When the controlling channel fails high, 22 Backup Heaters <span class="hi-exam">automatically energize</span> due to the +5% level deviation (L_ACTUAL - L_REF).
+</div>
+
 ---
 
 ## 3/4.3.2 — ESF Actuation System Instrumentation
@@ -271,6 +298,13 @@ See Functions 1 and 7 for all initiation functions.
 | RWST Level — Low | <span class="val-trip">15.25 ft</span> above instrument taps | 15.25 ±1 ft above taps | TS T3.3-4 |
 | Automatic Actuation Logic | N/A | N/A | TS T3.3-4 |
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q27</div>
+ESFAS containment-isolation actuation order tested: <span class="hi-exam">Phase A on SI (by 4 psig containment if not sooner), then Main Steamline Isolation at 15 psig</span>. Feedwater Isolation actuates on SI or SG NR level &gt;67%; Containment Ventilation isolation on SI, RMS alarm, or Phase B.
+</div>
+
 ### ESF Channels and Actions (Table 3.3-3, Selected)
 
 | Function | Total Channels | To Trip | Min OPERABLE | Modes | Action |
@@ -311,11 +345,6 @@ See Functions 1 and 7 for all initiation functions.
 | 21 | 1 less than min channels: restore within 72 hrs |
 | 23 | 1 channel inoperable: restore within 48 hrs or Hot Standby in 6 hrs + Hot Shutdown in 6 hrs |
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q88</div>
-TS 3.3.2.1 Action 16 applies to Hi-Hi Containment Pressure channels (CS, Phase B, steamline isolation): inoperable channel is placed in <span class="hi-exam">BYPASS (not tripped)</span>. This is because Containment Spray bistables are <span class="hi-exam">energized to actuate</span> — placing an inoperable channel in the tripped condition would move it closer to actuation, increasing the risk of spurious Containment Spray. <span class="hi-trap">Contrast with Action 19 (most other ESF functions): inoperable channels are placed in TRIP because those bistables are de-energized to trip.</span>
-</div>
-
 <div class="callout callout-trap">
 <div class="callout-label">SI vs Containment Spray Pressure Setpoints</div>
 Safety Injection actuates on Hi containment pressure of <span class="val-trip">4.0 psig</span> (2/3 coincidence). Containment Spray and Phase B isolation actuate on Hi-Hi containment pressure of <span class="val-trip">15.0 psig</span> (2/4 coincidence). Steam Line Isolation also actuates on <span class="val-trip">15.0 psig</span> Hi-Hi (2/4). These are different setpoints with different coincidence logic.
@@ -354,6 +383,13 @@ Response time verification ensures the ESF actuation associated with each channe
 *(TS Bases B 3/4 3-1 through B 3/4 3-1a, Amendment Nos. 294, 306)*
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q88</div>
+TS 3.3.2.1 Action 16 applies to Hi-Hi Containment Pressure channels (CS, Phase B, steamline isolation): inoperable channel is placed in <span class="hi-exam">BYPASS (not tripped)</span>. This is because Containment Spray bistables are <span class="hi-exam">energized to actuate</span> — placing an inoperable channel in the tripped condition would move it closer to actuation, increasing the risk of spurious Containment Spray. <span class="hi-trap">Contrast with Action 19 (most other ESF functions): inoperable channels are placed in TRIP because those bistables are de-energized to trip.</span>
+</div>
 
 ---
 
@@ -419,11 +455,6 @@ The radiation monitoring instrumentation channels shown in Table 3.3-6 shall be 
 
 *(Table 3.3-6, Amendment Nos. 245, 253, 278)*
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q96</div>
-LCO 3.3.3.1 Table 3.3-6 application during Containment Vacuum Relief (SRO question): <span class="hi-exam">2R12A is the credited monitor</span> for both 2.a.1.a (Containment Gaseous Activity — Purge &amp; PVR Isolation) and 2.a.1.b (Containment Gaseous Activity — RCS Leak Detection). During a Containment Vacuum Relief, <span class="hi-exam">2R41 (Plant Vent Noble Gas) can also be used to meet 2.a.1.a requirements</span> (per TS Bases). With <span class="hi-exam">2R12A AND 2R41D both failed</span>: (1) 2.a.1.b requirement is NOT met → <span class="hi-exam">Action 24</span>, and (2) 2.a.1.a requirement is NOT met (2R12A failed, and 2R41D which was serving as alternate is also failed) → <span class="hi-exam">Action 26</span>. Both actions required. <span class="hi-trap">Trap: candidates may think redundant monitors (2R12B/C or 2R41A/B) satisfy the requirement, but each Table 3.3-6 line item has its own minimum channel requirements. Multiple R12 or R41 channels exist but serve different functions per the bases.</span>
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.1 Radiation Monitoring</summary>
 <div class="callout callout-bases">
@@ -438,6 +469,23 @@ The OPERABILITY of the radiation monitoring channels ensures that: (1) radiation
 *(TS Bases B 3/4 3-2, TSBC S2013-057 and Amendment No. 301)*
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q68</div>
+Per TSAS 3.3.1.1, Table 3.3-6, <span class="hi-exam">only ONE of the two FHB (Fuel Handling Building) area radiation monitors is required to be OPERABLE</span> during fuel handling. <span class="hi-trap">Therefore 2R5 failing low does NOT, by itself, require suspension of fuel transfer in Mode 6 — the redundant monitor remains operable.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q89</div>
+LCO 3.3.3.1 (Radiation Monitoring Instrumentation) / Table 3.3-6 analysis: <span class="hi-exam">R12A is the credited monitor for BOTH Table 3.3-6 item 2.a.1.a (Containment Gaseous Activity — Purge & Pressure Vacuum Relief Isolation) AND 2.a.1.b (Containment Gaseous Activity — RCS Leak Detection)</span>. During containment vacuum relief operations, <span class="hi-exam">R41 (2R41A, B, D) can serve as alternate monitor for item 2.a.1.a only</span>. With R12A failed: LCO NOT met → <span class="hi-exam">Action 24 ONLY</span> (R41 satisfies 2.a.1.a, but nothing replaces R12A for 2.a.1.b → Action 24). <span class="hi-trap">Trap: candidates may think both Actions 24 AND 26 are required (forgetting R41 can substitute for 2.a.1.a during vacuum relief), or that LCO is met with R12A failed (it is not).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q96</div>
+LCO 3.3.3.1 Table 3.3-6 application during Containment Vacuum Relief (SRO question): <span class="hi-exam">2R12A is the credited monitor</span> for both 2.a.1.a (Containment Gaseous Activity — Purge &amp; PVR Isolation) and 2.a.1.b (Containment Gaseous Activity — RCS Leak Detection). During a Containment Vacuum Relief, <span class="hi-exam">2R41 (Plant Vent Noble Gas) can also be used to meet 2.a.1.a requirements</span> (per TS Bases). With <span class="hi-exam">2R12A AND 2R41D both failed</span>: (1) 2.a.1.b requirement is NOT met → <span class="hi-exam">Action 24</span>, and (2) 2.a.1.a requirement is NOT met (2R12A failed, and 2R41D which was serving as alternate is also failed) → <span class="hi-exam">Action 26</span>. Both actions required. <span class="hi-trap">Trap: candidates may think redundant monitors (2R12B/C or 2R41A/B) satisfy the requirement, but each Table 3.3-6 line item has its own minimum channel requirements. Multiple R12 or R41 channels exist but serve different functions per the bases.</span>
+</div>
 
 ---
 
@@ -490,11 +538,6 @@ The accident monitoring instrumentation channels shown in Table 3.3-11 shall be 
 **Action:** As shown in Table 3.3-11. Separate Condition entry is allowed for each Function.
 
 **SR 4.3.3.7:** CHANNEL CHECK, CHANNEL CALIBRATION, and CHANNEL FUNCTIONAL TEST per Surveillance Frequency Control Program unless otherwise noted in Table 4.3-11
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q80</div>
-The <span class="hi-exam">PZR Cold Cal level channel (LI-462) is NOT included in either the Reactor Trip System Instrumentation (TS 3.3.1.1) or the Accident Monitoring Instrumentation (TS 3.3.3.7)</span> — so its failure at 100% power requires <span class="hi-exam">NO Tech Spec entry</span>. (LI-462 is used when RCS temperature is <200°F, per [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]].) <span class="hi-trap">Trap: the bases statements in the distractors are themselves correct — 3.3.1.1 exists to provide overall reliability/redundancy/diversity for accident and transient mitigation; 3.3.3.7 exists to ensure sufficient post-accident information on selected plant parameters — but neither TS is entered because LI-462 is not one of their instruments. Tracking the failed channel is done per [[SC.OP-DL.ZZ-0010 — Control Room Instrumentation and Alarms]] (INFO sticker, not red translucent tape, since LI-462 is not an inoperable alarm).</span>
-</div>
 
 #### Accident Monitoring Channels (Table 3.3-11)
 
@@ -567,6 +610,13 @@ The Wide Range Neutron Flux Monitors are the Gamma-Metrics Post-Accident Neutron
 *(TS Bases B 3/4 3-3, Amendment No. 301)*
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q80</div>
+The <span class="hi-exam">PZR Cold Cal level channel (LI-462) is NOT included in either the Reactor Trip System Instrumentation (TS 3.3.1.1) or the Accident Monitoring Instrumentation (TS 3.3.3.7)</span> — so its failure at 100% power requires <span class="hi-exam">NO Tech Spec entry</span>. (LI-462 is used when RCS temperature is <200°F, per [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]].) <span class="hi-trap">Trap: the bases statements in the distractors are themselves correct — 3.3.1.1 exists to provide overall reliability/redundancy/diversity for accident and transient mitigation; 3.3.3.7 exists to ensure sufficient post-accident information on selected plant parameters — but neither TS is entered because LI-462 is not one of their instruments. Tracking the failed channel is done per [[SC.OP-DL.ZZ-0010 — Control Room Instrumentation and Alarms]] (INFO sticker, not red translucent tape, since LI-462 is not an inoperable alarm).</span>
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q47</div>
@@ -690,46 +740,6 @@ Between calibrations, the fidelity of the measured power distribution is maintai
 </details>
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-3.pdf" target="_blank">View Tech Spec PDF (61 pages — full tables)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-3.pdf" target="_blank">View Bases PDF</a>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q82</div>
-LCO 3.3.1.1 action for PZR Level Channel failure: with 2LT-459 (Channel I PZR Level) failed high at 100% power, the channel must be placed in the <span class="hi-exam">tripped condition within 72 hours</span>. PZR Level — High is a 3-channel trip function (Table 3.3-1) with 2/3 coincidence. When the controlling channel fails high, 22 Backup Heaters <span class="hi-exam">automatically energize</span> due to the +5% level deviation (L_ACTUAL - L_REF).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q89</div>
-LCO 3.3.3.1 (Radiation Monitoring Instrumentation) / Table 3.3-6 analysis: <span class="hi-exam">R12A is the credited monitor for BOTH Table 3.3-6 item 2.a.1.a (Containment Gaseous Activity — Purge & Pressure Vacuum Relief Isolation) AND 2.a.1.b (Containment Gaseous Activity — RCS Leak Detection)</span>. During containment vacuum relief operations, <span class="hi-exam">R41 (2R41A, B, D) can serve as alternate monitor for item 2.a.1.a only</span>. With R12A failed: LCO NOT met → <span class="hi-exam">Action 24 ONLY</span> (R41 satisfies 2.a.1.a, but nothing replaces R12A for 2.a.1.b → Action 24). <span class="hi-trap">Trap: candidates may think both Actions 24 AND 26 are required (forgetting R41 can substitute for 2.a.1.a during vacuum relief), or that LCO is met with R12A failed (it is not).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q27</div>
-ESFAS containment-isolation actuation order tested: <span class="hi-exam">Phase A on SI (by 4 psig containment if not sooner), then Main Steamline Isolation at 15 psig</span>. Feedwater Isolation actuates on SI or SG NR level &gt;67%; Containment Ventilation isolation on SI, RMS alarm, or Phase B.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q89</div>
-IRNI channels: loss of a single IRNI channel is <span class="hi-trap">specifically excluded from LCO 3.0.3</span> (even though minimum operable = 2). <span class="hi-exam">Loss of the second IRNI channel enters TS 3.0.3 — Hot Standby within 6 hours (actions started within 1 hour)</span>. See [[Excore NIs]], [[RPS/SSPS]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q12</div>
-TS Bases 3.3.1.1 generalizes that instrumentation OPERABILITY ensures <span class="hi-exam">(2) the specified coincidence logic and sufficient redundancy is maintained to permit a channel to be out of service... and (3) sufficient system functional capability is available from diverse parameters</span>. This bases supports maintaining power &lt;P-6 when one Source Range NI fails low during a startup: <span class="hi-trap">a single remaining SR channel cannot be relied upon for startup Rx power indication with no diverse channel to verify it against</span>. See [[Excore NIs]], [[RPS/SSPS]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q68</div>
-Per TSAS 3.3.1.1, Table 3.3-6, <span class="hi-exam">only ONE of the two FHB (Fuel Handling Building) area radiation monitors is required to be OPERABLE</span> during fuel handling. <span class="hi-trap">Therefore 2R5 failing low does NOT, by itself, require suspension of fuel transfer in Mode 6 — the redundant monitor remains operable.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q94</div>
-Intermediate Range NI operability per TSAS 3.3.1.1: there is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">ONE inoperable IR NI only — with BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). Supporting procedure facts (S1.OP-IO.ZZ-0003): <span class="hi-exam">at least a one-decade SR/IR overlap is required when raising power (step 5.2.33)</span>; with SR at ~30,000 counts the overlap should already be present, so each IR NI should read ~<span class="hi-exam">1x10-10A</span>; the <span class="hi-exam">SR Hi Flux trip is at 100,000 counts</span>. <span class="hi-trap">Trap: declaring only TSAS 3.3.1.1 entry (the one-channel action) when BOTH channels are inoperable — the correct entry is TS 3.0.3.</span> See [[Incores]], [[TS 3/4.0 — Applicability]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q87</div>
-TSAS 3.3.1.1 Functional Unit 5 (Intermediate Range Neutron Flux, ≤25% RTP, blocked above P-10): per <span class="hi-exam">Action 3.c, above 5% power, power operation may continue</span> with an IR channel condition. During a power ascension at 15% power, an IR bistable illuminating (at its 25% alarm setpoint) does not require lowering power — the ascension may continue while investigating the cause, because the IR Hi Flux trip is already blocked above P-10.
-</div>
 
 ## Connections
 

@@ -41,19 +41,21 @@ Administrative controls establish the organizational structure, staffing require
 
 The STA serves in an advisory capacity to the Senior Nuclear Shift Supervisor on engineering aspects of safe operation. (TS 6.2.3)
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q66</div>
 Per Table 6.2-1 (Minimum Shift Crew Composition), the minimum NCO requirement is reduced for the lower modes. During a refueling shutdown, <span class="hi-exam">Mode 5 is the EARLIEST point at which only ONE NCO is required to be in the control room</span> (Modes 1–4 require more than one NCO). The requirements are <span class="hi-exam">the same regardless of Unit</span>. (Salem Tech Specs Section 6.0, page 6-5)
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam -- 2023 Q94</div>
-Shift complement unexpected absence: per OP-AA-101-111, the shift complement may be <span class="hi-exam">one less than the minimum for up to 2 hours</span> to accommodate an unexpected absence, provided immediate action is taken to restore. <span class="hi-trap">This provision does NOT permit any shift position to be unmanned upon shift change</span> -- the on-duty member must remain until a relief is available. The preferred action is to hold the off-going shift personnel.
+<div class="callout-label">Exam — 2019 Q94</div>
+TS Table 6.2-1 STA staffing (SRO question): a licensed SRO who is also a qualified STA <span class="hi-exam">MAY fill the STA minimum staffing requirement on BOTH Unit 1 and Unit 2 concurrently</span>. Additionally, that person <span class="hi-exam">MAY fill the STA minimum staffing requirement on Unit 2 while concurrently filling the SRO minimum staffing requirement on Unit 2</span>. <span class="hi-trap">Trap: candidates may incorrectly believe the STA role must be dedicated to a single unit, or that an SRO cannot simultaneously fill the STA and SRO positions on the same unit.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q94</div>
-TS Table 6.2-1 STA staffing (SRO question): a licensed SRO who is also a qualified STA <span class="hi-exam">MAY fill the STA minimum staffing requirement on BOTH Unit 1 and Unit 2 concurrently</span>. Additionally, that person <span class="hi-exam">MAY fill the STA minimum staffing requirement on Unit 2 while concurrently filling the SRO minimum staffing requirement on Unit 2</span>. <span class="hi-trap">Trap: candidates may incorrectly believe the STA role must be dedicated to a single unit, or that an SRO cannot simultaneously fill the STA and SRO positions on the same unit.</span>
+<div class="callout-label">Exam -- 2023 Q94</div>
+Shift complement unexpected absence: per OP-AA-101-111, the shift complement may be <span class="hi-exam">one less than the minimum for up to 2 hours</span> to accommodate an unexpected absence, provided immediate action is taken to restore. <span class="hi-trap">This provision does NOT permit any shift position to be unmanned upon shift change</span> -- the on-duty member must remain until a relief is available. The preferred action is to hold the off-going shift personnel.
 </div>
 
 ## 6.6 — Reportable Event Action

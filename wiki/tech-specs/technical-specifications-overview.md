@@ -48,6 +48,8 @@ Note: Detailed Tech Spec articles will be populated during Phase 2 (Tech Spec in
 
 ## Surveillance Procedure Conventions
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q71</div>
 Dollar sign ($) in surveillance procedures: <span class="hi-exam">Steps identified with a dollar sign ($) are those items required to meet Technical Specification acceptance criteria.</span> Such steps, if not satisfactorily completed, may have reportability requirements and are to be brought to the <span class="hi-exam">immediate attention of the SM/CRS</span>. This convention appears in the Precautions and Limitations section of all surveillance procedures. <span class="hi-trap">Trap: the $ does NOT identify UFSAR criteria, Independent Verification hold points, or Reactivity Management SRO oversight requirements.</span>

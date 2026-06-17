@@ -26,6 +26,8 @@ aliases:
 
 **Action:** With less than required loops in operation, be in Hot Standby within <span class="val-trip">1 hour</span>.
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q28</div>
 Mode 2 RCP trip during startup at 4% power: with one RCS loop no longer in operation, LCO 3.4.1.1 requires the unit to <span class="hi-exam">be in Mode 3 within 1 hour</span>. <span class="hi-trap">Distinguish from: 15-minute timeline (wrong); "immediately initiate corrective action to return the loop to operable" (this is a Mode 4 / 3.4.1.3 action); "suspend boron dilution" (this is a Mode 3 / 3.4.1.2 action when no loop is in operation).</span>
@@ -56,9 +58,11 @@ The rod control system is de-energized when: (1) both Rod Drive MG set motor bre
 
 All RCPs may be de-energized for up to 1 hour provided: (1) no boron dilution, (2) core outlet temp maintained ≥10°F below saturation, (3) rod control system de-energized. SG secondary level must be ≥5% narrow range. *(Amendment No. 282)*
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q51</div>
-After a reactor trip from 75% with one RCP stopped: RTB B is open and both bypass breakers not racked in, so <span class="hi-exam">rod control system is de-energized</span>. LCO 3.4.1.2 only requires <span class="hi-exam">two loops OPERABLE</span> when de-energized. With three loops still running, <span class="hi-exam">LCO 3.4.1.2 IS met</span>. <span class="hi-trap">Trap: candidates may assume all four loops must be OPERABLE after a trip, forgetting the de-energized allowance.</span>
+<div class="callout-label">Exam — 2012 Q94</div>
+Mode 3 with 21 RDMG motor AND generator breakers closed and BOTH Reactor Trip Breakers A and B shut for rod control testing: fewer than 3 of the RTB/RTBBs are open, so <span class="hi-exam">rod control is ENERGIZED</span>. Per LCO 3.4.1.2.c, with rod control energized, <span class="hi-exam">all FOUR RCS loops must be in operation</span>, and the Bases (page B3/4 4-1) gives <span class="hi-exam">single failure considerations</span> as the reason. <span class="hi-trap">DNB is a Mode 1/2 bases (not Mode 3); the "one loop / mixing, prevent stratification, gradual reactivity changes" bases applies to when only ONE loop is required (rod control de-energized).</span>
 </div>
 
 <div class="callout callout-exam">
@@ -67,8 +71,8 @@ Mode 3 with 22 RDMG operating (motor & generator breakers shut), RTB "B" racked 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q94</div>
-Mode 3 with 21 RDMG motor AND generator breakers closed and BOTH Reactor Trip Breakers A and B shut for rod control testing: fewer than 3 of the RTB/RTBBs are open, so <span class="hi-exam">rod control is ENERGIZED</span>. Per LCO 3.4.1.2.c, with rod control energized, <span class="hi-exam">all FOUR RCS loops must be in operation</span>, and the Bases (page B3/4 4-1) gives <span class="hi-exam">single failure considerations</span> as the reason. <span class="hi-trap">DNB is a Mode 1/2 bases (not Mode 3); the "one loop / mixing, prevent stratification, gradual reactivity changes" bases applies to when only ONE loop is required (rod control de-energized).</span>
+<div class="callout-label">Exam — 2018 Q51</div>
+After a reactor trip from 75% with one RCP stopped: RTB B is open and both bypass breakers not racked in, so <span class="hi-exam">rod control system is de-energized</span>. LCO 3.4.1.2 only requires <span class="hi-exam">two loops OPERABLE</span> when de-energized. With three loops still running, <span class="hi-exam">LCO 3.4.1.2 IS met</span>. <span class="hi-trap">Trap: candidates may assume all four loops must be OPERABLE after a trip, forgetting the de-energized allowance.</span>
 </div>
 
 ### Hot Shutdown (3.4.1.3)
@@ -84,6 +88,8 @@ At least <span class="hi">two coolant loops</span> (RCS loops or RHR loops) shal
 <div class="callout-label">RCP Start Restriction</div>
 An RCP shall not be started with any RCS cold leg temp ≤ POPS enable temperature unless: (1) PZR water volume <1650 ft³ (~92% level), OR (2) SG secondary water temp <50°F above each RCS cold leg temp.
 </div>
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q1</div>
@@ -173,6 +179,13 @@ The pressurizer code safety valves operate to prevent the RCS from being pressur
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE PZR Code safety valve is permitted to be inoperable at a time</span>. With ALL THREE PZR Code Safety Valves having an actual lift pressure of <span class="hi-exam">2735 psig</span> (above the LCO acceptance band, due to a faulty test device used during the refueling outage), all three are inoperable simultaneously — no specific TS action exists for that condition, so <span class="hi-exam">LCO 3.0.3 applies</span>: 1 hour to begin shutdown + 6 hours to Hot Standby = <span class="hi-exam">7 hours total</span>. From a 1200 discovery, Hot Standby is required by <span class="hi-exam">1900</span>.
+</div>
+
 ---
 
 ## 3/4.4.4 — Pressurizer
@@ -236,17 +249,7 @@ The Surveillance Frequency is controlled under the Surveillance Frequency Contro
 When a PORV is inoperable due to seat leakage, the block valve is closed but power is MAINTAINED (so the block valve can be opened if needed for overpressure protection). When inoperable for other causes, the block valve is closed and power is REMOVED (isolating the failed-open path).
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 Sim-c</div>
-A <span class="hi-exam">leaking 2PR2 PZR PORV</span> (seat leakage) is isolated by AB.PZR-0001 by closing its block valve <span class="hi-exam">2PR7</span>. Because the cause is seat leakage, this is <span class="hi-exam">LCO 3.4.5 Condition 1 / Action a</span>: close the block valve <span class="hi-exam">with power MAINTAINED</span> (so it can be reopened for overpressure protection), within <span class="val-alarm">1 hour</span>. After isolating, the procedure directs notifying the SM/CRS to refer to TS 3.4.5 and the Event Classification Guide for Primary Leakage. The JPM diagnosis (sequential unisolation of 2PR6 then 2PR7 to find the rising-tailpipe valve) is the field method that identifies which PORV is the seat-leaker.
-</div>
-
 *Amendment No. 177*
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q95</div>
-LCO 3.4.5 PORV inoperable due to <span class="hi-exam">control circuitry failure</span> (not seat leakage): Required Action B directs closing the associated block valve (2PR7) and <span class="hi-exam">removing power</span> to 2PR7. Per OP-AA-108-101-1002, since removing power from the block valve is a <span class="hi-exam">1 hour or less TS REQUIRED ACTION</span>, configuration control is INITIALLY maintained with an <span class="hi-exam">Abnormal Component Position Sheet (ACPS)</span>. <span class="hi-trap">Trap: if the PORV were inoperable due to seat leakage, power would be MAINTAINED to the block valve. A WCD (Work Clearance Document) is hung as soon as practical AFTER the TS is entered, but the INITIAL configuration control tool for a 1-hour-or-less TSAS is an ACPS.</span>
-</div>
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.5 Relief Valves (PORVs and Block Valves)</summary>
@@ -270,6 +273,23 @@ PORV and block valve OPERABILITY is determined based on the ability to perform t
 *(Amendment No. 282)*
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q87</div>
+<span class="hi-exam">TS 3.4.5 action b: a PORV isolated by shutting its Block Valve (e.g., a failed-open 2PR1) requires a unit shutdown if the PORV is not restored to operable within 72 hours</span>. A leaking PORV isolated by its Block Valve (with power maintained to the Block Valve) does not require shutdown. See [[Pressurizer Level & Press Control]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q95</div>
+LCO 3.4.5 PORV inoperable due to <span class="hi-exam">control circuitry failure</span> (not seat leakage): Required Action B directs closing the associated block valve (2PR7) and <span class="hi-exam">removing power</span> to 2PR7. Per OP-AA-108-101-1002, since removing power from the block valve is a <span class="hi-exam">1 hour or less TS REQUIRED ACTION</span>, configuration control is INITIALLY maintained with an <span class="hi-exam">Abnormal Component Position Sheet (ACPS)</span>. <span class="hi-trap">Trap: if the PORV were inoperable due to seat leakage, power would be MAINTAINED to the block valve. A WCD (Work Clearance Document) is hung as soon as practical AFTER the TS is entered, but the INITIAL configuration control tool for a 1-hour-or-less TSAS is an ACPS.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-c</div>
+A <span class="hi-exam">leaking 2PR2 PZR PORV</span> (seat leakage) is isolated by AB.PZR-0001 by closing its block valve <span class="hi-exam">2PR7</span>. Because the cause is seat leakage, this is <span class="hi-exam">LCO 3.4.5 Condition 1 / Action a</span>: close the block valve <span class="hi-exam">with power MAINTAINED</span> (so it can be reopened for overpressure protection), within <span class="val-alarm">1 hour</span>. After isolating, the procedure directs notifying the SM/CRS to refer to TS 3.4.5 and the Event Classification Guide for Primary Leakage. The JPM diagnosis (sequential unisolation of 2PR6 then 2PR7 to find the rising-tailpipe valve) is the field method that identifies which PORV is the seat-leaker.
+</div>
 
 ---
 
@@ -345,21 +365,6 @@ f. <span class="hi">≤1 gpm</span> from any RCS Pressure Isolation Valve (at 22
 
 *Amendment No. 304*
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam -- 2023 Q97</div>
-CVCS leak vs. RCS operational leakage: a leak from 2CV6 (Letdown Relief Valve) is a <span class="hi-exam">CVCS auxiliary system leak, NOT RCS pressure boundary leakage</span>. TS 3.4.7.2 remains MET because CVCS piping is outside the RCS boundary. Once letdown is isolated and the leak stops, no TS action or Emergency Declaration is required. <span class="hi-trap">The CVCS is NOT part of the RCS -- it is an auxiliary system that interfaces with the RCS.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 RO-A1-1</div>
-S2.OP-SO.RC-0004 §5.3 Containment Sump leak-rate calculation following an unexpected OHA C-2 CNTMT SUMP PMP START. Quantified leak rate ~<span class="hi-exam">0.9 gpm</span> (320 minutes between sump-pump cycles per Attachment 3). The two action thresholds bracket the unidentified leakage limit: <span class="hi-exam">&gt; 0.85 gpm</span> initiates Section 5.6 trending only; <span class="hi-exam">&gt; 1.0 gpm</span> initiates S2.OP-ST.RC-0008 RCS Water Inventory Balance and refers to TS 3.4.7.2. At 0.9 gpm the unidentified-leakage LCO 3.4.7.2.b (≤1 gpm) is still MET, so no TS action time starts.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q86</div>
-The RCS Water Inventory Balance (Surveillance Requirement 4.4.7.2.1.d, performed via S2.OP-ST.RC-0008) is required in Modes 1–4, but <span class="hi-exam">SR 4.4.7.2.1.d specifically states the provisions of Tech Spec 4.0.4 are NOT applicable for entry into Mode 4</span>. Therefore an overdue balance does not bar entry into Mode 4 — per S2.OP-IO.ZZ-0002 P&amp;L 3.8 the surveillance need not be completed until <span class="hi-exam">12 hours after steady-state operation is established</span>. <span class="hi-trap">TS 4.0.3 (for missed/overdue surveillances) does not apply because 4.0.4 NA permits the mode change without performing the balance first.</span>
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.7 RCS Leakage</summary>
 <div class="callout callout-bases">
@@ -386,6 +391,28 @@ The RCS Water Inventory Balance (Surveillance Requirement 4.4.7.2.1.d, performed
 *(Amendment No. 304)*
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q86</div>
+The RCS Water Inventory Balance (Surveillance Requirement 4.4.7.2.1.d, performed via S2.OP-ST.RC-0008) is required in Modes 1–4, but <span class="hi-exam">SR 4.4.7.2.1.d specifically states the provisions of Tech Spec 4.0.4 are NOT applicable for entry into Mode 4</span>. Therefore an overdue balance does not bar entry into Mode 4 — per S2.OP-IO.ZZ-0002 P&amp;L 3.8 the surveillance need not be completed until <span class="hi-exam">12 hours after steady-state operation is established</span>. <span class="hi-trap">TS 4.0.3 (for missed/overdue surveillances) does not apply because 4.0.4 NA permits the mode change without performing the balance first.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam -- 2023 Q97</div>
+CVCS leak vs. RCS operational leakage: a leak from 2CV6 (Letdown Relief Valve) is a <span class="hi-exam">CVCS auxiliary system leak, NOT RCS pressure boundary leakage</span>. TS 3.4.7.2 remains MET because CVCS piping is outside the RCS boundary. Once letdown is isolated and the leak stops, no TS action or Emergency Declaration is required. <span class="hi-trap">The CVCS is NOT part of the RCS -- it is an auxiliary system that interfaces with the RCS.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A1-1</div>
+S2.OP-SO.RC-0004 §5.3 Containment Sump leak-rate calculation following an unexpected OHA C-2 CNTMT SUMP PMP START. Quantified leak rate ~<span class="hi-exam">0.9 gpm</span> (320 minutes between sump-pump cycles per Attachment 3). The two action thresholds bracket the unidentified leakage limit: <span class="hi-exam">&gt; 0.85 gpm</span> initiates Section 5.6 trending only; <span class="hi-exam">&gt; 1.0 gpm</span> initiates S2.OP-ST.RC-0008 RCS Water Inventory Balance and refers to TS 3.4.7.2. At 0.9 gpm the unidentified-leakage LCO 3.4.7.2.b (≤1 gpm) is still MET, so no TS action time starts.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+21 SG tube leak with leakage &gt;<span class="hi-exam">150 gpd primary-to-secondary</span> through a single SG. CRS enters <span class="hi-exam">LCO 3.4.7.2.c — Action Level 3</span> per AB.SG-0001: be &lt;50% power within 1 hour and Hot Standby within 6 hours. Leak escalates to a tube rupture before completion of the controlled shutdown.
+</div>
 
 ---
 
@@ -433,6 +460,8 @@ In Modes 1-4, operation within the LCO limits for DOSE EQUIVALENT I-131 and DOSE
 </div>
 </details>
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q86</div>
 DEI-131 at 8 μCi/gm (above the 1.0 μCi/gm LCO 3.4.9 limit but below the line of graph 3.4-1): per LCO 3.4.9 Action, <span class="hi-exam">operation can continue for 48 hours, then Hot Standby with Tavg &lt;500&deg;F in 6 hours</span>. Sample taken at 1000 on March 10 → 48 hours later = 1000 March 12 → +6 hours = 1600 March 12. Bases for the action: <span class="hi-exam">ensures the resulting 2-hour dose at the Site Area Boundary will not exceed an appropriately small fraction of Part 100 limits following an SGTR accident in conjunction with an assumed primary-to-secondary leakage rate of 1 gpm</span>. <span class="hi-trap">Trap: distractors substitute "Protected Area Boundary" for the correct "Site Area Boundary." Other trap: alternate bases statement (saturation pressure of primary coolant below atmospheric release lift pressure) describes the LCO LIMIT bases, not the time-clock action bases.</span>
@@ -453,21 +482,6 @@ c. Maximum temperature change per PTLR during hydrostatic testing above design p
 **Applicability:** At all times
 
 **Action:** With limits exceeded, restore within <span class="val-trip">30 minutes</span>; perform engineering evaluation on structural integrity; if unacceptable, Hot Standby in 6 hours and reduce to <200°F and <500 psig within 30 hours.
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q7</div>
-LCO 3.4.10.2 PZR heatup rate = <span class="hi-exam"><span class="val-trip">100&deg;F/hr</span></span> maximum. PZR cooldown rate = <span class="hi-exam">200&deg;F/hr</span> maximum. <span class="hi-trap">Heatup and cooldown limits are different — candidates confuse 100 vs 200. The cooldown limit is DOUBLE the heatup limit.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q23</div>
-The <span class="hi-exam">200&deg;F/hr PZR cooldown limit (TS 3.4.10.2.b)</span> appears as a distractor in the TRIP-5 natural-circulation cooldown timing problem: applying 200&deg;F/hr to drop RCS from 500&deg;F to 450&deg;F would give ~15 min, but the EOP-directed natural-circulation cooldown rate is <span class="hi-trap">&lt;100&deg;F/hr (NOT the TS PZR cooldown limit)</span>, giving 30 minutes. The RCS P/T cooldown limit is per the PTLR, not a fixed value.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q84</div>
-The TS RCS cooldown limit per PTLR is applied in EOP-LOCA-5 as <span class="hi-exam">&lt;100&deg;F/hr</span> when initiating a cooldown — this prevents an unwanted Thermal Shock condition that would complicate matters since CFSTs are still in effect in LOCA-5.
-</div>
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.10.2 — Pressurizer P/T Limits</div>
@@ -498,11 +512,6 @@ b. RCS depressurized with an RCS vent ≥ <span class="hi">3.14 square inches</s
 | One POPS inoperable (Modes 5-6, head installed) | Restore OR depressurize and vent | <span class="val-alarm">24 hours</span> then 8 hrs |
 | Both POPS inoperable | Depressurize and vent through ≥3.14 in² vent | <span class="val-trip">8 hours</span> |
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q91</div>
-Action "e": <span class="hi-exam">LCO 3.0.4.b is NOT applicable when entering MODE 4 from MODE 5</span> with an inoperable POPS channel. A risk assessment cannot be used to justify this mode change. The LTOP channel <span class="hi-exam">must be restored to OPERABLE status before entering Mode 4</span>. <span class="hi-trap">Do not confuse with actions "a" (7-day restore in Mode 4) or "b" (24-hour restore in Modes 5-6) — those apply AFTER entering the applicable mode, not for making the mode change.</span>
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.10 Pressure/Temperature Limits and POPS</summary>
 <div class="callout callout-bases">
@@ -528,24 +537,31 @@ Fracture toughness properties of ferritic reactor vessel materials are determine
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q23</div>
+The <span class="hi-exam">200&deg;F/hr PZR cooldown limit (TS 3.4.10.2.b)</span> appears as a distractor in the TRIP-5 natural-circulation cooldown timing problem: applying 200&deg;F/hr to drop RCS from 500&deg;F to 450&deg;F would give ~15 min, but the EOP-directed natural-circulation cooldown rate is <span class="hi-trap">&lt;100&deg;F/hr (NOT the TS PZR cooldown limit)</span>, giving 30 minutes. The RCS P/T cooldown limit is per the PTLR, not a fixed value.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q84</div>
+The TS RCS cooldown limit per PTLR is applied in EOP-LOCA-5 as <span class="hi-exam">&lt;100&deg;F/hr</span> when initiating a cooldown — this prevents an unwanted Thermal Shock condition that would complicate matters since CFSTs are still in effect in LOCA-5.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q7</div>
+LCO 3.4.10.2 PZR heatup rate = <span class="hi-exam"><span class="val-trip">100&deg;F/hr</span></span> maximum. PZR cooldown rate = <span class="hi-exam">200&deg;F/hr</span> maximum. <span class="hi-trap">Heatup and cooldown limits are different — candidates confuse 100 vs 200. The cooldown limit is DOUBLE the heatup limit.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q91</div>
+Action "e": <span class="hi-exam">LCO 3.0.4.b is NOT applicable when entering MODE 4 from MODE 5</span> with an inoperable POPS channel. A risk assessment cannot be used to justify this mode change. The LTOP channel <span class="hi-exam">must be restored to OPERABLE status before entering Mode 4</span>. <span class="hi-trap">Do not confuse with actions "a" (7-day restore in Mode 4) or "b" (24-hour restore in Modes 5-6) — those apply AFTER entering the applicable mode, not for making the mode change.</span>
+</div>
+
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-4-1.pdf" target="_blank">View Tech Spec PDF (Loops)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-3.pdf" target="_blank">View Tech Spec PDF (Safety Valves)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-5.pdf" target="_blank">View Tech Spec PDF (PORVs)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-7.pdf" target="_blank">View Tech Spec PDF (Leakage)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-4.pdf" target="_blank">View Bases PDF</a>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q96</div>
-LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE PZR Code safety valve is permitted to be inoperable at a time</span>. With ALL THREE PZR Code Safety Valves having an actual lift pressure of <span class="hi-exam">2735 psig</span> (above the LCO acceptance band, due to a faulty test device used during the refueling outage), all three are inoperable simultaneously — no specific TS action exists for that condition, so <span class="hi-exam">LCO 3.0.3 applies</span>: 1 hour to begin shutdown + 6 hours to Hot Standby = <span class="hi-exam">7 hours total</span>. From a 1200 discovery, Hot Standby is required by <span class="hi-exam">1900</span>.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #2</div>
-21 SG tube leak with leakage &gt;<span class="hi-exam">150 gpd primary-to-secondary</span> through a single SG. CRS enters <span class="hi-exam">LCO 3.4.7.2.c — Action Level 3</span> per AB.SG-0001: be &lt;50% power within 1 hour and Hot Standby within 6 hours. Leak escalates to a tube rupture before completion of the controlled shutdown.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q87</div>
-<span class="hi-exam">TS 3.4.5 action b: a PORV isolated by shutting its Block Valve (e.g., a failed-open 2PR1) requires a unit shutdown if the PORV is not restored to operable within 72 hours</span>. A leaking PORV isolated by its Block Valve (with power maintained to the Block Valve) does not require shutdown. See [[Pressurizer Level & Press Control]].
-</div>
 
 ## Connections
 

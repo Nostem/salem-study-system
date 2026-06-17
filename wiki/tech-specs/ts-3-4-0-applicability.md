@@ -72,11 +72,6 @@ When an LCO is not met and no applicable ACTION exists, within <span class="hi">
 LCO 3.0.3 is the "default" shutdown action when no specific ACTION applies. The 1-hour clock to BEGIN the shutdown starts when the LCO is not met. If corrective measures are completed, the ACTION may be taken per the specified time limits measured from the time of failure.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q14</div>
-LCO 3.0.3 applied to Service Water: with #2 SW Bay isolated (leak) AND 24 SWP C/Ted, <span class="hi-exam">both SW loops are inoperable</span>. TS 3.7.4 only addresses one inoperable loop. With no specific ACTION for two inoperable loops, <span class="hi-exam">LCO 3.0.3 applies</span>. Per S2.OP-SO.SW-0005 P&L 3.2: "When a Service Water Bay is removed from service in Modes 1-4, and the SW Pump fed from 'B' bus in the OPERABLE SW Bay is unavailable (23 or 24 SWP), then LCO 3.0.3 is applicable."
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — LCO 3.0.3 Default Shutdown Action</summary>
 <div class="callout callout-bases">
@@ -94,6 +89,48 @@ If remedial measures permitting continued operation under the provisions of the 
 
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q93</div>
+The <span class="hi-exam">LCO 3.0.3 bases</span> is "to ensure a <span class="hi-exam">timely unit shutdown is performed when plant operation cannot be maintained within the limits of safe operation</span> defined by the LCO and its action requirements." <span class="hi-trap">Trap: a question may pair a correct system-specific TS (e.g., TS 3.8.1.1.b.2 for an EDG fuel oil transfer pump) with this 3.0.3 bases — that pairing is WRONG. The electric power sources (EDG) bases is "ensures sufficient power for safe shutdown and for mitigation and control of accident conditions," NOT the 3.0.3 timely-shutdown bases.</span> See [[TS 3/4.8 — Electrical]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q94</div>
+TS 3.0.3 is the entry point when an LCO has <span class="hi-exam">no ACTION for the as-found inoperable condition</span>. There is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">only ONE inoperable Intermediate Range NI</span>; with <span class="hi-exam">BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). See [[TS 3/4.3 — Instrumentation]] and [[Incores]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q98</div>
+A Tech Spec 3.0.3 required shutdown is performed at <span class="hi-exam">20%/hr</span> (an example LCO 3.0.3 shutdown rate). Because this is a power change &gt;5%/hr, any concurrent containment entry requires Radiation Protection Supervisor approval per the containment entry procedures — see [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]] and [[RP-SA-102 — Containment Entries at Power]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+LCO 3.0.3 application — <span class="hi-exam">only ONE PZR Code Safety can be inoperable in MODES 1-3</span> per LCO 3.4.3. With all 3 PZR Code Safety valves having actual lift pressure of <span class="hi-exam">2735 psig</span> (above the LCO band), no specific TS action exists for that combined condition → <span class="hi-exam">LCO 3.0.3 applies: 1 hour to begin shutdown + 6 hours to Hot Standby = 7 hours total</span>. From discovery at 1200 → Hot Standby required by <span class="hi-exam">1900</span>. <span class="hi-trap">Trap: the other distractors all carry their own specific TS action with longer completion times (24 hours for an inoperable accumulator, 24 hours for an inoperable airlock, 2 hours + 6 hours = 8 hours for two inoperable EDGs starting at 1400) — none drive Hot-Standby-by-1900.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q97</div>
+TS 3.0.3 does NOT apply when the affected LCO has its own ACTION for the inoperable condition. With ECCS subsystem inoperable in MODE 4 (T-cold &lt; 312°F), <span class="hi-exam">LCO 3.5.3 Action a applies: restore at least one ECCS subsystem to operable status within 1 hour or be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap: the LCO 3.0.3 action ("within 1 hour, initiate action to place the unit in Cold Shutdown within the next 24 hours") is NOT applied here because LCO 3.5.3 has its own specific ACTION.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q86</div>
+LCO 3.0.3 application with 2 accumulators inoperable (boron OOS): LCO 3.5.1 has no action for > 1 accumulator inoperable → <span class="hi-exam">LCO 3.0.3 applies: 1 hour to initiate action + 6 hours to HOT STANDBY = 7 hours total</span>. <span class="hi-trap">78 hours (72 + 6) is the single-accumulator boron action — not applicable when 2 accumulators are simultaneously inoperable.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q88</div>
+LCO 3.0.3 exit and return to specific LCO action: when BOTH trains of Containment Spray are inoperable → LCO 3.0.3. When ONE train is restored → exit LCO 3.0.3, enter LCO 3.6.2.1 single-train-inoperable action. The <span class="hi-exam">72-hour clock starts from the time the LCO was first NOT met</span> (when both trains went inoperable), not from when one train was restored. Total time: 72 + 6 = 78 hours from initial entry.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q14</div>
+LCO 3.0.3 applied to Service Water: with #2 SW Bay isolated (leak) AND 24 SWP C/Ted, <span class="hi-exam">both SW loops are inoperable</span>. TS 3.7.4 only addresses one inoperable loop. With no specific ACTION for two inoperable loops, <span class="hi-exam">LCO 3.0.3 applies</span>. Per S2.OP-SO.SW-0005 P&L 3.2: "When a Service Water Bay is removed from service in Modes 1-4, and the SW Pump fed from 'B' bus in the OPERABLE SW Bay is unavailable (23 or 24 SWP), then LCO 3.0.3 is applicable."
+</div>
 
 ### LCO 3.0.4 (Mode Entry Restrictions)
 
@@ -127,6 +164,8 @@ Upon entry into a MODE with the LCO not met, LCO 3.0.1 and 3.0.2 require entry i
 
 </div>
 </details>
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q79</div>
@@ -189,6 +228,18 @@ The limitation is based on engineering judgment and the recognition that the mos
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q97</div>
+Bank parent of 2016 Q91 — identical scenario. Per SR 4.0.2, a MONTHLY (31 day) surveillance may be extended up to 25% (31 + 7.75 = <span class="hi-exam">38.75 days</span>). With the 2A EDG monthly surveillance last performed 33 days ago, 2A EDG is <span class="hi-exam">OPERABLE because the normal interval plus 25% extension has not been exceeded</span>. <span class="hi-trap">The 31-day requirement alone (INOPERABLE) ignores the 25% extension; the SR 4.0.3 24-hour delay is N/A because the SR 4.0.2 allowance is longer and 2A is not yet out of periodicity.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q91</div>
+SR 4.0.2 25% extension applied to a MONTHLY (31 day) EDG surveillance: <span class="hi-exam">31 + 7.75 days = 38.75 days total before the surveillance is required</span>. With the 2A EDG monthly surveillance last performed 33 days ago, 2A EDG remains <span class="hi-exam">OPERABLE</span> because the 25% extension has not been exceeded. <span class="hi-trap">Trap: SR 4.0.3's 24-hour delay time is from time of discovery, NOT from periodicity expiration; and SR 4.0.3 is N/A here because (a) the SR 4.0.2 allowable extension is longer and (b) 2A is not yet out of periodicity. 2B EDG being inoperable does not affect 2A's status.</span>
+</div>
+
 ### SR 4.0.3 (Missed Surveillance)
 
 <div class="callout callout-important">
@@ -218,6 +269,13 @@ Completion of the Surveillance within the delay period, or within the Completion
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q96</div>
+SR 4.0.3 missed surveillance delay calculation: delay time is <span class="hi-exam">24 hours OR up to the limit of the specified frequency, whichever is GREATEST</span>. For a MONTHLY (31 days) SR discovered missed on November 21st: November 21st + 31 days = <span class="hi-exam">December 22nd</span>. <span class="hi-trap">Trap: "whichever is LEAST" would give only 24 hours (Nov 22nd). Assuming a MONTH = 30 days gives Dec 21st. Adding SR 4.0.2's 25% extension to the delay period gives Dec 29th — but SR 4.0.3 does NOT include SR 4.0.2's 25% extension.</span> A risk assessment is required for delay periods greater than 24 hours.
+</div>
+
 ### SR 4.0.4
 Entry into a MODE shall only be made when surveillances have been met within their specified frequency, except as provided by SR 4.0.3.
 
@@ -242,56 +300,6 @@ The provisions of SR 4.0.4 shall NOT prevent entry into MODES required to comply
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-2-0.pdf" target="_blank">View Tech Spec PDF</a>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q96</div>
-SR 4.0.3 missed surveillance delay calculation: delay time is <span class="hi-exam">24 hours OR up to the limit of the specified frequency, whichever is GREATEST</span>. For a MONTHLY (31 days) SR discovered missed on November 21st: November 21st + 31 days = <span class="hi-exam">December 22nd</span>. <span class="hi-trap">Trap: "whichever is LEAST" would give only 24 hours (Nov 22nd). Assuming a MONTH = 30 days gives Dec 21st. Adding SR 4.0.2's 25% extension to the delay period gives Dec 29th — but SR 4.0.3 does NOT include SR 4.0.2's 25% extension.</span> A risk assessment is required for delay periods greater than 24 hours.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q86</div>
-LCO 3.0.3 application with 2 accumulators inoperable (boron OOS): LCO 3.5.1 has no action for > 1 accumulator inoperable → <span class="hi-exam">LCO 3.0.3 applies: 1 hour to initiate action + 6 hours to HOT STANDBY = 7 hours total</span>. <span class="hi-trap">78 hours (72 + 6) is the single-accumulator boron action — not applicable when 2 accumulators are simultaneously inoperable.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q88</div>
-LCO 3.0.3 exit and return to specific LCO action: when BOTH trains of Containment Spray are inoperable → LCO 3.0.3. When ONE train is restored → exit LCO 3.0.3, enter LCO 3.6.2.1 single-train-inoperable action. The <span class="hi-exam">72-hour clock starts from the time the LCO was first NOT met</span> (when both trains went inoperable), not from when one train was restored. Total time: 72 + 6 = 78 hours from initial entry.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q91</div>
-SR 4.0.2 25% extension applied to a MONTHLY (31 day) EDG surveillance: <span class="hi-exam">31 + 7.75 days = 38.75 days total before the surveillance is required</span>. With the 2A EDG monthly surveillance last performed 33 days ago, 2A EDG remains <span class="hi-exam">OPERABLE</span> because the 25% extension has not been exceeded. <span class="hi-trap">Trap: SR 4.0.3's 24-hour delay time is from time of discovery, NOT from periodicity expiration; and SR 4.0.3 is N/A here because (a) the SR 4.0.2 allowable extension is longer and (b) 2A is not yet out of periodicity. 2B EDG being inoperable does not affect 2A's status.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q97</div>
-Bank parent of 2016 Q91 — identical scenario. Per SR 4.0.2, a MONTHLY (31 day) surveillance may be extended up to 25% (31 + 7.75 = <span class="hi-exam">38.75 days</span>). With the 2A EDG monthly surveillance last performed 33 days ago, 2A EDG is <span class="hi-exam">OPERABLE because the normal interval plus 25% extension has not been exceeded</span>. <span class="hi-trap">The 31-day requirement alone (INOPERABLE) ignores the 25% extension; the SR 4.0.3 24-hour delay is N/A because the SR 4.0.2 allowance is longer and 2A is not yet out of periodicity.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q96</div>
-LCO 3.0.3 application — <span class="hi-exam">only ONE PZR Code Safety can be inoperable in MODES 1-3</span> per LCO 3.4.3. With all 3 PZR Code Safety valves having actual lift pressure of <span class="hi-exam">2735 psig</span> (above the LCO band), no specific TS action exists for that combined condition → <span class="hi-exam">LCO 3.0.3 applies: 1 hour to begin shutdown + 6 hours to Hot Standby = 7 hours total</span>. From discovery at 1200 → Hot Standby required by <span class="hi-exam">1900</span>. <span class="hi-trap">Trap: the other distractors all carry their own specific TS action with longer completion times (24 hours for an inoperable accumulator, 24 hours for an inoperable airlock, 2 hours + 6 hours = 8 hours for two inoperable EDGs starting at 1400) — none drive Hot-Standby-by-1900.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q97</div>
-TS 3.0.3 does NOT apply when the affected LCO has its own ACTION for the inoperable condition. With ECCS subsystem inoperable in MODE 4 (T-cold &lt; 312°F), <span class="hi-exam">LCO 3.5.3 Action a applies: restore at least one ECCS subsystem to operable status within 1 hour or be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap: the LCO 3.0.3 action ("within 1 hour, initiate action to place the unit in Cold Shutdown within the next 24 hours") is NOT applied here because LCO 3.5.3 has its own specific ACTION.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q98</div>
-A Tech Spec 3.0.3 required shutdown is performed at <span class="hi-exam">20%/hr</span> (an example LCO 3.0.3 shutdown rate). Because this is a power change &gt;5%/hr, any concurrent containment entry requires Radiation Protection Supervisor approval per the containment entry procedures — see [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]] and [[RP-SA-102 — Containment Entries at Power]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q93</div>
-The <span class="hi-exam">LCO 3.0.3 bases</span> is "to ensure a <span class="hi-exam">timely unit shutdown is performed when plant operation cannot be maintained within the limits of safe operation</span> defined by the LCO and its action requirements." <span class="hi-trap">Trap: a question may pair a correct system-specific TS (e.g., TS 3.8.1.1.b.2 for an EDG fuel oil transfer pump) with this 3.0.3 bases — that pairing is WRONG. The electric power sources (EDG) bases is "ensures sufficient power for safe shutdown and for mitigation and control of accident conditions," NOT the 3.0.3 timely-shutdown bases.</span> See [[TS 3/4.8 — Electrical]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q94</div>
-TS 3.0.3 is the entry point when an LCO has <span class="hi-exam">no ACTION for the as-found inoperable condition</span>. There is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">only ONE inoperable Intermediate Range NI</span>; with <span class="hi-exam">BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). See [[TS 3/4.3 — Instrumentation]] and [[Incores]].
-</div>
 
 ## Connections
 

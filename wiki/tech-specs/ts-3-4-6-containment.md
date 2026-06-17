@@ -37,6 +37,13 @@ Primary CONTAINMENT INTEGRITY shall be maintained.
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q65</div>
+Containment Integrity (TS 3.6.1.1, Modes 1-4) surveillance 4.6.1.1.d requires that the CFCU surveillance (4.6.2.3.a) — including <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — be met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified via Admin controls (4.6.1.1.a); the airlock may be opened for normal transit (3.6.1.3); CIVs have their own less-restrictive TS 3.6.3.</span> See [[Containment]], [[CFCUs]].
+</div>
+
 ### Containment Leakage (3.6.1.2)
 
 <div class="callout callout-important">
@@ -76,11 +83,6 @@ b. Overall air lock leakage rate per Containment Leakage Rate Testing Program
 |-----------|----------------|-----------------|
 | One air lock door inoperable | Verify OPERABLE door closed; lock closed | <span class="val-trip">1 hour</span>; then 24 hours |
 | Air lock interlock inoperable | Verify an OPERABLE door closed; lock closed | <span class="val-trip">1 hour</span>; then 24 hours |
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q28</div>
-Airlock interlock inoperable: REQUIRED ACTION B.1 = verify OPERABLE door is <span class="hi-exam">closed ONLY within 1 hour</span>. REQUIRED ACTION B.2 = <span class="hi-exam">lock the OPERABLE door closed within 24 hours</span>. <span class="hi-trap">Trap: "closed and locked" is NOT the 1-hour action — the immediate action is closed ONLY. Locking comes 24 hours later.</span>
-</div>
 | Air lock inoperable (other reasons) | Evaluate overall containment leakage; verify one door closed; restore | Immediately; 1 hour; <span class="val-alarm">24 hours</span> |
 | Unable to meet actions | Hot Standby in 6 hours, Cold Shutdown in 30 hours | 6 + 30 hrs |
 
@@ -104,6 +106,18 @@ Each air lock is OPERABLE when: (1) the interlock mechanism is OPERABLE, (2) the
 **Air lock interlock SR:** Periodic testing demonstrates the interlock prevents simultaneous opening of inner and outer doors. Frequency is controlled under the Surveillance Frequency Control Program.
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+LCO 3.6.1.3 (Containment Air Locks): when an airlock is declared inoperable due to an UNSAT local leak rate test (S2.OP-ST.CAN-0004), the completion time is <span class="hi-exam">24 hours</span> to restore the airlock — does NOT drive a same-shift Hot Standby. <span class="hi-trap">Trap: easy to confuse with the 1-hour completion time of LCO 3.6.1.1 (Containment Integrity) — the airlock LCO carries its own longer completion time.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q28</div>
+Airlock interlock inoperable: REQUIRED ACTION B.1 = verify OPERABLE door is <span class="hi-exam">closed ONLY within 1 hour</span>. REQUIRED ACTION B.2 = <span class="hi-exam">lock the OPERABLE door closed within 24 hours</span>. <span class="hi-trap">Trap: "closed and locked" is NOT the 1-hour action — the immediate action is closed ONLY. Locking comes 24 hours later.</span>
+</div>
 
 ### Internal Pressure (3.6.1.4)
 
@@ -130,19 +144,21 @@ The maximum peak pressure expected from a LOCA or steam line break event is appr
 </div>
 </details>
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q32</div>
 LCO 3.6.1.4 is NOT met when containment pressure exceeds <span class="hi-exam">+0.3 psig</span>. Restoration time: <span class="hi-exam">60 minutes</span> or place unit in HOT STANDBY within 6 hours. <span class="hi-trap">BEZEL Hi CNTMT Pressure Alarm setpoint is 0.2 psid — do not confuse with the TS limit of +0.3 psig. Other LCOs use 30-minute action times (3.2.1, 3.2.4, 3.4.10.2, 3.7.2) — LCO 3.6.1.4 is 60 minutes.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q54</div>
-<span class="hi-exam">Containment internal pressure limits: -1.5 to +0.3 psig (Modes 1-4).</span> If pressure exceeds +0.3 psig, containment design limits could be exceeded during a DBA. The upper limit ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during the limiting pipe break (LOCA or steam line break). The lower limit ensures the containment structure is prevented from exceeding its design negative pressure differential of <span class="val-trip">3.5 psig</span> with respect to outside atmosphere. Restoration time is <span class="hi-exam">1 hour</span>.
+<div class="callout-label">Exam — 2020 Q33</div>
+Calculation question: PRT rupture disk relieves to containment. Starting at 0 psig and rising 0.1 psig/5 min, after 1 hour: 0 + 1.2 = <span class="hi-exam">1.2 psig > +0.3 psig limit (LCO 3.6.1.4 exceeded)</span>. Starting at 99 &deg;F and rising 1 &deg;F/5 min, after 1 hour: 99 + 12 = <span class="hi-exam">111 &deg;F < 120 &deg;F limit (LCO 3.6.1.5 NOT exceeded)</span>. <span class="hi-trap">Distractors: the -1.5 psig is the NEGATIVE pressure limit — candidates may confuse it as a general 1.5 psig threshold. The 120 &deg;F air temp limit is commonly confused with 110 &deg;F.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q33</div>
-Calculation question: PRT rupture disk relieves to containment. Starting at 0 psig and rising 0.1 psig/5 min, after 1 hour: 0 + 1.2 = <span class="hi-exam">1.2 psig > +0.3 psig limit (LCO 3.6.1.4 exceeded)</span>. Starting at 99 &deg;F and rising 1 &deg;F/5 min, after 1 hour: 99 + 12 = <span class="hi-exam">111 &deg;F < 120 &deg;F limit (LCO 3.6.1.5 NOT exceeded)</span>. <span class="hi-trap">Distractors: the -1.5 psig is the NEGATIVE pressure limit — candidates may confuse it as a general 1.5 psig threshold. The 120 &deg;F air temp limit is commonly confused with 110 &deg;F.</span>
+<div class="callout-label">Exam — 2023 Q54</div>
+<span class="hi-exam">Containment internal pressure limits: -1.5 to +0.3 psig (Modes 1-4).</span> If pressure exceeds +0.3 psig, containment design limits could be exceeded during a DBA. The upper limit ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during the limiting pipe break (LOCA or steam line break). The lower limit ensures the containment structure is prevented from exceeding its design negative pressure differential of <span class="val-trip">3.5 psig</span> with respect to outside atmosphere. Restoration time is <span class="hi-exam">1 hour</span>.
 </div>
 
 ### Containment Air Temperature (3.6.1.5)
@@ -284,6 +300,13 @@ At least <span class="hi">three containment fan coil units</span> shall be OPERA
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q90</div>
+<span class="hi-exam">TS 3.6.2.3 (CFCUs): with two CFCUs inoperable, BOTH must be restored within 7 days of the FIRST CFCU being declared inoperable</span> (not from when the second became inoperable), or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours. See [[CFCUs]], [[Service Water]].
+</div>
+
 ---
 
 ## 3/4.6.3 — Containment Isolation Valves
@@ -319,6 +342,8 @@ Each containment isolation valve shall be OPERABLE.
 </div>
 </details>
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q27</div>
 LCO 3.6.3 applicability: containment isolation valves (including <span class="hi-exam">CA330 Control Air Isolation Valves</span>) are required to be OPERABLE in <span class="hi-exam">MODES 1-4 ONLY</span>. CA330s close on Phase A at <span class="hi-exam"><span class="val-trip">4 psig</span></span>. <span class="hi-trap">Trap: 15 psig is the Phase B setpoint. CA330s close on Phase A, not Phase B.</span>
@@ -327,6 +352,11 @@ LCO 3.6.3 applicability: containment isolation valves (including <span class="hi
 <div class="callout callout-exam">
 <div class="callout-label">Phase A vs Phase B Isolation</div>
 Phase A isolation valves actuate on Safety Injection signal ("T"). Phase B isolation valves actuate on Hi-Hi Containment Pressure (Containment Spray actuation signal, "P"). Containment purge valves are required to be closed and immobilized with control air isolated.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A3</div>
+TS LCO 3.6.3 containment isolation valve operability: <span class="hi-exam">2VC5 stroke time of 2.83 seconds is in the REQUIRED ACTION RANGE (> 2.0 seconds)</span> — immediately declare inoperable. Actions: (1a) TS action applicable, (1b) close and deactivate companion valve 2VC6 within <span class="hi-exam">4 hours</span>, OR (1c) isolate penetration within 4 hours, OR (1d) Hot Standby in 6 hours and Cold Shutdown in 30 hours.
 </div>
 
 ## 3/4.6.4 — Combustible Gas Control
@@ -340,26 +370,6 @@ Covered under SR 4.6.1.6.1 above.
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-6-1.pdf" target="_blank">View TS PDF (Containment)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-2.pdf" target="_blank">View TS PDF (Spray/Cooling)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-3.pdf" target="_blank">View TS PDF (Isolation)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-6.pdf" target="_blank">View Bases PDF</a>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 SRO-A3</div>
-TS LCO 3.6.3 containment isolation valve operability: <span class="hi-exam">2VC5 stroke time of 2.83 seconds is in the REQUIRED ACTION RANGE (> 2.0 seconds)</span> — immediately declare inoperable. Actions: (1a) TS action applicable, (1b) close and deactivate companion valve 2VC6 within <span class="hi-exam">4 hours</span>, OR (1c) isolate penetration within 4 hours, OR (1d) Hot Standby in 6 hours and Cold Shutdown in 30 hours.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q96</div>
-LCO 3.6.1.3 (Containment Air Locks): when an airlock is declared inoperable due to an UNSAT local leak rate test (S2.OP-ST.CAN-0004), the completion time is <span class="hi-exam">24 hours</span> to restore the airlock — does NOT drive a same-shift Hot Standby. <span class="hi-trap">Trap: easy to confuse with the 1-hour completion time of LCO 3.6.1.1 (Containment Integrity) — the airlock LCO carries its own longer completion time.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q65</div>
-Containment Integrity (TS 3.6.1.1, Modes 1-4) surveillance 4.6.1.1.d requires that the CFCU surveillance (4.6.2.3.a) — including <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — be met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified via Admin controls (4.6.1.1.a); the airlock may be opened for normal transit (3.6.1.3); CIVs have their own less-restrictive TS 3.6.3.</span> See [[Containment]], [[CFCUs]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q90</div>
-<span class="hi-exam">TS 3.6.2.3 (CFCUs): with two CFCUs inoperable, BOTH must be restored within 7 days of the FIRST CFCU being declared inoperable</span> (not from when the second became inoperable), or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours. See [[CFCUs]], [[Service Water]].
-</div>
 
 ## Connections
 

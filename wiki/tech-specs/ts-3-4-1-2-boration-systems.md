@@ -39,11 +39,6 @@ b. Two flow paths from RWST via charging pumps to RCS
 
 **Action:** With only one flow path OPERABLE, restore within <span class="val-alarm">72 hours</span> or be in Hot Standby and borated to SDM ≥ 1% delta k/k at 200°F within 6 hours. Restore within next 7 days or be in Cold Shutdown within 30 hours.
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 Sim-a</div>
-The boric acid flow-rate acceptance criterion of <span class="hi-exam">SR 4.1.2.2.d is 33 gpm</span>. The surveillance procedure S2.OP-ST.CVC-0011 (Boration Flow Rate Test) verifies <span class="hi-exam">≥36 gpm = the 33 gpm SR value + 3 gpm instrument uncertainty</span> (loops 2FT110 and 2FT113). The test confirms boration flow capability through the normal makeup flowpath (read on 2FI110A) and the rapid borate flowpath via 2CV175 (read on 2FI113A). See [[S2.OP-ST.CVC-0011 — Boration Flow Rate Test]].
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.2 Boration Systems (General)</summary>
 <div class="callout callout-bases">
@@ -73,6 +68,18 @@ The limits on contained water volume and boron concentration of the RWST also en
 
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-i</div>
+The boration flow path supplied by the boration system is locally established by opening <span class="hi-exam">1CV175 (Rapid Borate Stop Valve)</span> and raising charging flow to <span class="hi-exam">75 gpm above total RCP seal injection flow</span> (105 gpm with 30 gpm total seal flow). Closing the 11/12CV160 air supply isolation valves makes the CV160 recirc valves fail closed, directing all boric acid from the BASTs through the charging pump suction rather than recirculating — the boration system flow path credited by this LCO during a Control Room Evacuation emergency boration.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-a</div>
+The boric acid flow-rate acceptance criterion of <span class="hi-exam">SR 4.1.2.2.d is 33 gpm</span>. The surveillance procedure S2.OP-ST.CVC-0011 (Boration Flow Rate Test) verifies <span class="hi-exam">≥36 gpm = the 33 gpm SR value + 3 gpm instrument uncertainty</span> (loops 2FT110 and 2FT113). The test confirms boration flow capability through the normal makeup flowpath (read on 2FI110A) and the rapid borate flowpath via 2CV175 (read on 2FI113A). See [[S2.OP-ST.CVC-0011 — Boration Flow Rate Test]].
+</div>
 
 ---
 
@@ -106,6 +113,23 @@ At least <span class="hi">two charging pumps</span> shall be OPERABLE.
 **Applicability:** Modes 1, 2, and 3
 
 **Action:** With only one OPERABLE, restore within <span class="val-alarm">72 hours</span> or be in Hot Standby and borated to SDM ≥ 1% delta k/k at 200°F within 6 hours. Restore within 7 days or be in Cold Shutdown within 30 hours.
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q35</div>
+<span class="hi-trap">TS 3.1.2.4 (Charging Pumps - Operating) is NOT entered until 2 of 3 charging pumps are inoperable</span>, and TS 3.1.2.2 (Boration Flowpaths) remains satisfied (2 flow paths from the RWST through charging pumps, plus the Boric Acid tank flowpath with one BAT pump and one charging pump). A single 22 charging pump trip therefore makes the ECCS LCO (TS 3.5.2), not these boration LCOs, applicable. See [[CVCS]], [[ECCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q77</div>
+<span class="hi-trap">TS 3.1.2.2 (boration flowpaths) and 3.1.2.4 (charging pumps) are NOT entered for a single inoperable charging pump</span> — they are entered only when a SECOND charging pump becomes inoperable. A single charging pump trip in Modes 1-3 enters only the ECCS LCO (TS 3.5.2.a). See [[CVCS]], [[ECCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q77</div>
+Key distinction: loss of one centrifugal charging pump (21 CHP trips, 22 and 23 remain operable) does <span class="hi-exam">NOT</span> cause entry into TS 3.1.2.2 (Boration Flow Paths) or TS 3.1.2.4 (Charging Pumps). <span class="hi-exam">Two boration flow paths still exist</span> (BAT via BAT pump + remaining CHP; RWST via remaining CHP). <span class="hi-exam">23 Charging Pump (positive displacement) counts toward the TS 3.1.2.4 requirement</span> for reactivity addition capability — so two charging pumps remain operable (22 + 23). The only applicable entry is <span class="hi-exam">TS 3.5.2 (ECCS)</span>, because the tripped CHP is the high-head ECCS component. <span class="hi-trap">Trap: loss of two boration flow paths requires MODE 3 + borated to SDM ≥ 1% delta k/k at 200°F within 6 hours (78-hour total distractor in the exam).</span>
+</div>
 
 ---
 
@@ -166,24 +190,12 @@ Figure 3.1-2 ties acceptable boric acid tank volume to boron concentration and R
 
 *Amendment No. 309*
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 SRO-A2</div>
-Post-boration TS evaluation: with RWST at 2350 ppm and BAST at 6650 ppm, <span class="hi-exam">TS 3.1.2.6 Figure 3.1-2 requires combined BAST level > 96.5%</span>. After rapid boration for 3 stuck rods (4200 gal total), BASTs drop from 70% to 43% each (86% combined) — below required level. <span class="hi-exam">LCO 3.1.2.6.a.1 NOT met: restore boric acid storage system within 72 hours or Hot Standby in 6 hours.</span>
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q66</div>
+<span class="hi-exam">TS 3.1.2.6 borated water sources: the BASTs are normally cross-connected, so the COMBINED volume of both Boric Acid Tanks must meet the limit</span> (TS Figure 3.1-2 — Boric Acid Tank Contents). At RWST 2450 ppm and BATs at 6650 ppm the required total is ~93.5%; with one BAT at 43%, the other must be at least 50.5%. See [[CVCS]].
 </div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2019 RO-A2</div>
-Borated Water Sources surveillance (S2.OP-ST.CVC-0010): combined BAST level <span class="hi-exam">48% + 48% = 96%</span>. Per Figure 3.1-2 at 6650 ppm boron, required level is <span class="hi-exam">&gt;96.5%</span> — UNSAT by narrow margin. Similarly, BAST concentration of <span class="hi-exam">6650 ppm at 96% level requires ~6675 ppm</span> from Figure 3.1-2 — also UNSAT. Narrow margins designed to test precise figure reading.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 IP-i</div>
-The boration flow path supplied by the boration system is locally established by opening <span class="hi-exam">1CV175 (Rapid Borate Stop Valve)</span> and raising charging flow to <span class="hi-exam">75 gpm above total RCP seal injection flow</span> (105 gpm with 30 gpm total seal flow). Closing the 11/12CV160 air supply isolation valves makes the CV160 recirc valves fail closed, directing all boric acid from the BASTs through the charging pump suction rather than recirculating — the boration system flow path credited by this LCO during a Control Room Evacuation emergency boration.
-</div>
-
----
-
-<a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q8</div>
@@ -193,30 +205,24 @@ EOP-TRIP-2 stuck-rod boration uses two different times because the two available
 The longer RWST time compensates for the lower boron concentration.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q77</div>
-Key distinction: loss of one centrifugal charging pump (21 CHP trips, 22 and 23 remain operable) does <span class="hi-exam">NOT</span> cause entry into TS 3.1.2.2 (Boration Flow Paths) or TS 3.1.2.4 (Charging Pumps). <span class="hi-exam">Two boration flow paths still exist</span> (BAT via BAT pump + remaining CHP; RWST via remaining CHP). <span class="hi-exam">23 Charging Pump (positive displacement) counts toward the TS 3.1.2.4 requirement</span> for reactivity addition capability — so two charging pumps remain operable (22 + 23). The only applicable entry is <span class="hi-exam">TS 3.5.2 (ECCS)</span>, because the tripped CHP is the high-head ECCS component. <span class="hi-trap">Trap: loss of two boration flow paths requires MODE 3 + borated to SDM ≥ 1% delta k/k at 200°F within 6 hours (78-hour total distractor in the exam).</span>
-</div>
-
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2016 RO-A2</div>
 S2.OP-ST.CVC-0010 surveillance of borated water sources after a 21 BAT pump leak. Per TS 3.1.2.6.a / .b and Figure 3.1-2, with 21 and 22 BAST cross-connected each at <span class="hi-exam">49.5%</span> level and <span class="hi-exam">6610 ppm</span> boron concentration (combined ~99% / 6610 ppm), the operating point falls inside the acceptable region — surveillance result: <span class="hi-exam">SAT</span>. RWST also SAT (level CH I-IV 41.4-41.5 ft, temp 70°F, conc 2350 ppm). BAST temps 98.2 / 97.1°F (≥63°F SAT). Demonstrates the close margin between SAT and UNSAT on the Figure 3.1-2 curve — compare to 2019 RO-A2 case (96% / 6650 ppm) which was UNSAT.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q35</div>
-<span class="hi-trap">TS 3.1.2.4 (Charging Pumps - Operating) is NOT entered until 2 of 3 charging pumps are inoperable</span>, and TS 3.1.2.2 (Boration Flowpaths) remains satisfied (2 flow paths from the RWST through charging pumps, plus the Boric Acid tank flowpath with one BAT pump and one charging pump). A single 22 charging pump trip therefore makes the ECCS LCO (TS 3.5.2), not these boration LCOs, applicable. See [[CVCS]], [[ECCS]].
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 RO-A2</div>
+Borated Water Sources surveillance (S2.OP-ST.CVC-0010): combined BAST level <span class="hi-exam">48% + 48% = 96%</span>. Per Figure 3.1-2 at 6650 ppm boron, required level is <span class="hi-exam">&gt;96.5%</span> — UNSAT by narrow margin. Similarly, BAST concentration of <span class="hi-exam">6650 ppm at 96% level requires ~6675 ppm</span> from Figure 3.1-2 — also UNSAT. Narrow margins designed to test precise figure reading.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q66</div>
-<span class="hi-exam">TS 3.1.2.6 borated water sources: the BASTs are normally cross-connected, so the COMBINED volume of both Boric Acid Tanks must meet the limit</span> (TS Figure 3.1-2 — Boric Acid Tank Contents). At RWST 2450 ppm and BATs at 6650 ppm the required total is ~93.5%; with one BAT at 43%, the other must be at least 50.5%. See [[CVCS]].
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A2</div>
+Post-boration TS evaluation: with RWST at 2350 ppm and BAST at 6650 ppm, <span class="hi-exam">TS 3.1.2.6 Figure 3.1-2 requires combined BAST level > 96.5%</span>. After rapid boration for 3 stuck rods (4200 gal total), BASTs drop from 70% to 43% each (86% combined) — below required level. <span class="hi-exam">LCO 3.1.2.6.a.1 NOT met: restore boric acid storage system within 72 hours or Hot Standby in 6 hours.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q77</div>
-<span class="hi-trap">TS 3.1.2.2 (boration flowpaths) and 3.1.2.4 (charging pumps) are NOT entered for a single inoperable charging pump</span> — they are entered only when a SECOND charging pump becomes inoperable. A single charging pump trip in Modes 1-3 enters only the ECCS LCO (TS 3.5.2.a). See [[CVCS]], [[ECCS]].
-</div>
+---
+
+<a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 
