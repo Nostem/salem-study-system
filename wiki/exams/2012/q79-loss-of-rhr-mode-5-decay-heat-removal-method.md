@@ -10,7 +10,7 @@ aliases:
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
 <span style="color:#60a5fa;font-size:14px;font-weight:600;">Q79 — Loss of RHR MODE 5 Decay Heat Removal Method</span>
-<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">000025A205 / AA2.05 (RO 3.1 / SRO 3.5)</span>
+<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">025 AA2.05 (RO 3.4 / SRO 3.5)</span>
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">

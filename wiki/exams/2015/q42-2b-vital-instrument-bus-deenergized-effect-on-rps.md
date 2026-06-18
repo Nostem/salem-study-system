@@ -11,7 +11,7 @@ aliases:
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
 <span style="color:#60a5fa;font-size:14px;font-weight:600;">Q42 — Effect on the Reactor Protection System of Deenergizing the 2B Vital Instrument Bus</span>
-<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">012000 K2.01 (3.3/3.7)</span>
+<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">012 K2.01 (RO 4 / SRO 4)</span>
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
