@@ -67,6 +67,23 @@ The indicated AXIAL FLUX DIFFERENCE shall be maintained within the target band a
 
 *(Amendment No. 289)*
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q71</div>
+With Mode 1 at 75% power and AFD = -26%, the AFD is outside the "doghouse" shown in COLR Figure 2. TSAS 3.2.1 Action 2.a.2 allows continued power operation only if indicated AFD is within COLR limits; if not, <span class="hi-exam">reduce thermal power to &lt;50% within 30 minutes</span>. This <span class="hi-exam">30-minute action time is the SHORTEST</span> among the compared LCO situations (vs 1 hour for &lt;4 RCPs in Mode 2 per TS 3.4.1.1, 5 minutes only at 2735 psig per SL 2.1.2, and 1 hour to restore Containment Integrity per TS 3.6.1.1 then CSD in 30 hours).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q70</div>
+LCO 3.2.1 action a (>90% power) and action b (50-90% power) penalty-minute timing: <span class="hi-exam">Penalty Minutes accumulate 1 for every minute outside Target Band</span>. With <span class="hi-exam">40 penalty minutes already accumulated &lt;24 hours ago</span>, the cumulative limit of <span class="hi-exam">60 penalty minutes</span> is exceeded 20 minutes after AFD goes out of band. Once 60 penalty minutes is reached (still within COLR limits), <span class="hi-exam">Rx Thermal power must be reduced to &lt;50% within 30 minutes</span>. Example timeline (Q70): SGFP trip at 2300 → MT runback at 15%/min → Rx 87% at 2301 (AFD -9.1, in band at 87% Target -1.3 ±9 = -10.3); Rx 66% at 2303 (AFD -10.1, OUT of band at 66% Target -0.99 ±9 = -9.99) → 60 penalty min reached at <span class="hi-exam">2323</span> → must be &lt;50% by <span class="hi-exam">2353</span> (2323 + 30 min). <span class="hi-trap">Trap: distractors use the 15-minute action time required for &gt;90% power, or use the 2301 time as when AFD is out of band (plausible if -9 of Target Band is incorrectly used as the actual AFD/COLR limit).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q97</div>
+LCO 3.2.1 (AFD) action when NOT met at 95% power: reduce power to less than <span class="hi-exam">90% RTP within 15 minutes</span>. Once between 90-50%, reduce to <50% in the next <span class="hi-exam">30 minutes</span>. LCO 3.2.1 power reduction protects the <span class="hi-exam">F<sub>Q</sub>(Z) (Heat Flux Hot Channel Factor)</span> limit in the COLR. <span class="hi-trap">Trap: Radial Peaking Factor (F<sub>XY</sub>) is protected by a different LCO (3.2.3). The three Power Distribution LCOs protect three different hot channel factors: 3.2.1 → F<sub>Q</sub>(Z), 3.2.2 → F<sup>N</sup><sub>ΔH</sub>, 3.2.3 → Radial Peaking Factor.</span>
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.1 Axial Flux Difference</summary>
 <div class="callout callout-bases">
@@ -258,6 +275,18 @@ Action b (rod misalignment, QPTR >1.09) requires power reduction within <span cl
 | 4.2.4.1.b | Calculate QPTR during steady-state (alarm inoperable) | Per SFCP |
 | 4.2.4.2 | Confirm normalized symmetric power distribution with one Power Range channel inoperable, above 75% RTP | Per SFCP |
 
+**Exam & operating coverage:**
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 RO-A1-2 / SRO-A1-2</div>
+Manual QPTR following dropped rod 204: the calculated Maximum Power Tilt stays <span class="hi-exam">&lt; 1.02</span>, so the surveillance is <span class="hi-exam">SAT</span> and the LCO 3.2.4 QPTR limit remains MET — no Action a/b/c entry. Demonstrates that a dropped rod does not automatically violate the 1.02 limit; the data drives the determination. SRO-A1-2 is the independent review of the same calculation.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A3</div>
+Manual QPTR surveillance following dropped rod 2D4: calculated QPTR for N42 quadrant upper = <span class="hi-exam">1.041</span>, lower = <span class="hi-exam">1.032</span>, both exceeding the <span class="hi-exam">1.02 limit</span>. Surveillance marked UNSAT, TS LCO 3.2.4 NOT met. QPTR >1.02 but <1.09 → Action a applies: calculate QPTR hourly, restore within <span class="hi-exam">2 hours</span> or reduce power.
+</div>
+
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.4 Quadrant Power Tilt Ratio (QPTR)</summary>
 <div class="callout callout-bases">
@@ -322,31 +351,6 @@ The Surveillance Frequency is based on operating experience, equipment reliabili
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-2.pdf" target="_blank">View Bases PDF</a>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 RO-A3</div>
-Manual QPTR surveillance following dropped rod 2D4: calculated QPTR for N42 quadrant upper = <span class="hi-exam">1.041</span>, lower = <span class="hi-exam">1.032</span>, both exceeding the <span class="hi-exam">1.02 limit</span>. Surveillance marked UNSAT, TS LCO 3.2.4 NOT met. QPTR >1.02 but <1.09 → Action a applies: calculate QPTR hourly, restore within <span class="hi-exam">2 hours</span> or reduce power.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 RO-A1-2 / SRO-A1-2</div>
-Manual QPTR following dropped rod 204: the calculated Maximum Power Tilt stays <span class="hi-exam">&lt; 1.02</span>, so the surveillance is <span class="hi-exam">SAT</span> and the LCO 3.2.4 QPTR limit remains MET — no Action a/b/c entry. Demonstrates that a dropped rod does not automatically violate the 1.02 limit; the data drives the determination. SRO-A1-2 is the independent review of the same calculation.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q97</div>
-LCO 3.2.1 (AFD) action when NOT met at 95% power: reduce power to less than <span class="hi-exam">90% RTP within 15 minutes</span>. Once between 90-50%, reduce to <50% in the next <span class="hi-exam">30 minutes</span>. LCO 3.2.1 power reduction protects the <span class="hi-exam">F<sub>Q</sub>(Z) (Heat Flux Hot Channel Factor)</span> limit in the COLR. <span class="hi-trap">Trap: Radial Peaking Factor (F<sub>XY</sub>) is protected by a different LCO (3.2.3). The three Power Distribution LCOs protect three different hot channel factors: 3.2.1 → F<sub>Q</sub>(Z), 3.2.2 → F<sup>N</sup><sub>ΔH</sub>, 3.2.3 → Radial Peaking Factor.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q70</div>
-LCO 3.2.1 action a (>90% power) and action b (50-90% power) penalty-minute timing: <span class="hi-exam">Penalty Minutes accumulate 1 for every minute outside Target Band</span>. With <span class="hi-exam">40 penalty minutes already accumulated &lt;24 hours ago</span>, the cumulative limit of <span class="hi-exam">60 penalty minutes</span> is exceeded 20 minutes after AFD goes out of band. Once 60 penalty minutes is reached (still within COLR limits), <span class="hi-exam">Rx Thermal power must be reduced to &lt;50% within 30 minutes</span>. Example timeline (Q70): SGFP trip at 2300 → MT runback at 15%/min → Rx 87% at 2301 (AFD -9.1, in band at 87% Target -1.3 ±9 = -10.3); Rx 66% at 2303 (AFD -10.1, OUT of band at 66% Target -0.99 ±9 = -9.99) → 60 penalty min reached at <span class="hi-exam">2323</span> → must be &lt;50% by <span class="hi-exam">2353</span> (2323 + 30 min). <span class="hi-trap">Trap: distractors use the 15-minute action time required for &gt;90% power, or use the 2301 time as when AFD is out of band (plausible if -9 of Target Band is incorrectly used as the actual AFD/COLR limit).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q71</div>
-With Mode 1 at 75% power and AFD = -26%, the AFD is outside the "doghouse" shown in COLR Figure 2. TSAS 3.2.1 Action 2.a.2 allows continued power operation only if indicated AFD is within COLR limits; if not, <span class="hi-exam">reduce thermal power to &lt;50% within 30 minutes</span>. This <span class="hi-exam">30-minute action time is the SHORTEST</span> among the compared LCO situations (vs 1 hour for &lt;4 RCPs in Mode 2 per TS 3.4.1.1, 5 minutes only at 2735 psig per SL 2.1.2, and 1 hour to restore Containment Integrity per TS 3.6.1.1 then CSD in 30 hours).
-</div>
 
 ## Connections
 

@@ -37,16 +37,6 @@ RCS pressure shall not exceed <span class="hi">2735 psig</span>.
 - Modes 1 and 2: Be in Hot Standby with RCS pressure within limit within <span class="val-trip">1 hour</span>
 - Modes 3, 4, and 5: Reduce RCS pressure to within limit within <span class="val-trip">5 minutes</span>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q43</div>
-SL 2.1.2 RCS Pressure Safety Limit = <span class="hi-exam">2735 psig</span>. Mode 3 action: reduce RCS pressure within limit within <span class="hi-exam">5 minutes</span>. Modes 1 and 2 action: within <span class="hi-exam">1 hour</span> (60 minutes). <span class="hi-trap">Trap: 2485 psig is the PZR safety valve setpoint, NOT the RCS Safety Limit. Candidates confuse 5 minutes (Modes 3-5) with 60 minutes (Modes 1-2).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q70</div>
-After an inadvertent SI/Rx trip (plant in Mode 3), the LOWEST RCS pressure at which a Safety Limit is exceeded is <span class="hi-exam">2735 psig (SL 2.1.2)</span>, with <span class="hi-exam">5 minutes allowed to reduce pressure below that value</span> in Mode 3. <span class="hi-trap">Trap: 2440 psig is merely the top line of Figure 2.1-1 (reactor core SL), NOT the RCS pressure Safety Limit. The 1-hour restoration time applies only in Modes 1 and 2, not Mode 3.</span>
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 2.1 Safety Limits</summary>
 <div class="callout callout-bases">
@@ -69,6 +59,18 @@ The safety limit curves show loci of THERMAL POWER, RCS pressure, and average te
 The reactor pressure vessel and pressurizer are designed to Section III of the ASME Code for Nuclear Power Plant, which permits a maximum transient pressure of <span class="hi">110% (2735 psig) of design pressure</span>. RCS piping and fittings are designed to ANSI B 31.1 1955 Edition; valves are designed to ANSI B 16.5, MSS-SP-66-1964, or ASME Section III-1968, which permit maximum transient pressures of up to <span class="hi">120% (2985 psig)</span> of component design pressure. The entire RCS is hydrotested at <span class="hi">3107 psig (125% of design pressure)</span> to demonstrate integrity prior to initial operation. *(Amendment No. 197)*
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q70</div>
+After an inadvertent SI/Rx trip (plant in Mode 3), the LOWEST RCS pressure at which a Safety Limit is exceeded is <span class="hi-exam">2735 psig (SL 2.1.2)</span>, with <span class="hi-exam">5 minutes allowed to reduce pressure below that value</span> in Mode 3. <span class="hi-trap">Trap: 2440 psig is merely the top line of Figure 2.1-1 (reactor core SL), NOT the RCS pressure Safety Limit. The 1-hour restoration time applies only in Modes 1 and 2, not Mode 3.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q43</div>
+SL 2.1.2 RCS Pressure Safety Limit = <span class="hi-exam">2735 psig</span>. Mode 3 action: reduce RCS pressure within limit within <span class="hi-exam">5 minutes</span>. Modes 1 and 2 action: within <span class="hi-exam">1 hour</span> (60 minutes). <span class="hi-trap">Trap: 2485 psig is the PZR safety valve setpoint, NOT the RCS Safety Limit. Candidates confuse 5 minutes (Modes 3-5) with 60 minutes (Modes 1-2).</span>
+</div>
 
 ## 2.2 Reactor Trip System Instrumentation Setpoints (Table 2.2-1)
 

@@ -50,6 +50,13 @@ If a closed isolation valve cannot be immediately opened, <span class="hi-exam">
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+<span class="hi-exam">A 21 ECCS Accumulator with N2 cover-pressure lowered to 595 psig and unsuccessful initial attempts to restore</span> places the accumulator inoperable. Per LCO 3.5.1, the completion time is <span class="hi-exam">24 hours</span> to restore the accumulator to OPERABLE — does NOT drive a same-day Hot Standby requirement.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q86</div>
 Accumulator boron concentration limits: <span class="hi-exam">2200 - 2500 ppm</span>. Sample results: 21 at 2175 ppm (below 2200 → inoperable), 22 at 2550 ppm (above 2500 → inoperable), 23 at 2400 ppm (within limits → operable), 24 at 2350 ppm (within limits → operable). Result: <span class="hi-exam">2 accumulators inoperable</span>. LCO 3.5.1 action only addresses ONE accumulator inoperable due to boron (72 hrs + 6 hrs to Hot Standby). With TWO inoperable, no applicable action exists → <span class="hi-exam">LCO 3.0.3 applies: 1 hr + 6 hrs = 7 hours to HOT STANDBY</span>. <span class="hi-trap">78 hours (72 + 6) would only be correct if one accumulator were inoperable. With two inoperable, there is no action that addresses the condition and LCO 3.0.3 is the default.</span>
@@ -125,6 +132,28 @@ The RHR interlock (tested per SR 4.5.2.i) prevents opening the RHR suction isola
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q35</div>
+<span class="hi-exam">TS 3.5.2 (ECCS Subsystems &gt;350°F) requires 2 complete trains of ECCS</span>. The 22 charging pump is the hi-head ECCS pump for the B train, so its trip (with 23 charging pump out of service) makes TS 3.5.2 applicable. TS 3.5.4 (Seal Injection Flow) limits seal injection to 6-12 gpm/pump, not to exceed 40 gpm total. See [[ECCS]], [[CVCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q77</div>
+A <span class="hi-exam">single inoperable charging pump (hi-head ECCS) in Modes 1-3 enters TS 3.5.2.a only</span> — restore within 72 hours or be in Hot Shutdown within the next 12 hours. The boration LCOs are entered only on a second inoperable charging pump. See [[CVCS]], [[ECCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q96</div>
+SR 4.5.2.b.2 (Verify that ECCS Piping Is Full Of Water) has a MONTHLY surveillance frequency. Per SR 4.0.3, the missed surveillance delay is <span class="hi-exam">24 hours or the specified frequency (31 days), whichever is greatest</span> = <span class="hi-exam">31 days from discovery</span>. A risk assessment is required for delays >24 hours.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q77</div>
+Loss of one centrifugal charging pump: <span class="hi-exam">TS 3.5.2 applies — one ECCS subsystem inoperable</span> (the tripped CHP is the high-head component for that ECCS train). 72 hours to restore, then <span class="hi-exam">Hot Shutdown (MODE 4) within the next 12 hours</span> (total 84 hours from the pump trip). <span class="hi-trap">The 23 Charging Pump (positive displacement) does NOT count as an ECCS high-head pump — it counts only for TS 3.1.2.4 (Charging Pumps for reactivity control). TS 3.1.2.2 (Boration Flow Paths) and TS 3.1.2.4 are NOT entered because two boration flow paths and two charging pumps (22 + 23) remain operable.</span>
+</div>
+
 ---
 
 ## ECCS Subsystems — Tavg < 350°F
@@ -169,9 +198,16 @@ A maximum of one SI pump or one centrifugal charging pump shall be OPERABLE in M
 </div>
 </details>
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q97</div>
 Mode 4 with all RCS T-Colds at 280°F (below POPS enable temp): per LCO 3.5.3, <span class="hi-exam">only ONE charging pump is permitted OPERABLE</span> (other charging pumps and both SI pumps must be rendered inoperable). With 21 Charging in service and 23 Charging being tagged out, closing the suction valve to 21 Charging instead of 23 inadvertently <span class="hi-exam">renders the only OPERABLE charging pump inoperable — no OPERABLE ECCS subsystem remains</span>. LCO 3.5.3 Action a applies: <span class="hi-exam">restore at least one ECCS subsystem to OPERABLE status within 1 hour, or be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap A: restore-or-maintain-Tavg-&lt;350°F is the Action for the RHR pump/HX inoperability path, not the charging pump path. Trap B: only POSITIVE reactivity changes are suspended, not all boron changes. Trap C: TS 3.0.3 does NOT apply because LCO 3.5.3 provides a specific Action for no OPERABLE ECCS subsystem.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q97</div>
+LCO 3.5.3 (ECCS subsystems with RCS T-cold &lt; 312°F): <span class="hi-exam">one ECCS subsystem must be operable</span> with at least one charging pump capable of taking suction. <span class="hi-exam">Closing the suction valve of the only running charging pump renders the ECCS subsystem inoperable</span>. Per <span class="hi-exam">LCO 3.5.3 Action a</span>: <span class="hi-exam">restore at least one ECCS subsystem to operable status within 1 hour OR be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap: Action "restore one ECCS subsystem to operable or maintain RCS Tavg &lt;350°F" applies to a required-operable RHR pump becoming inoperable, NOT to charging-pump suction loss. TS 3.0.3 does NOT apply because LCO 3.5.3 has its own action for an inoperable ECCS subsystem.</span>
 </div>
 
 ---
@@ -199,6 +235,8 @@ The LCO is not strictly a flow limit but a <span class="hi-exam">flow limit base
 **Surveillance exemption:** SR 4.0.4 is exempt for up to <span class="hi">4 hours</span> after RCS pressure stabilizes within ±20 psig of normal operating pressure when entering Mode 3 — the exemption allows time to establish the conditions necessary to correctly set the manual throttle valves.
 </div>
 </details>
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam -- 2023 Q91</div>
@@ -246,36 +284,6 @@ The boron concentration limits also ensure a <span class="hi-exam">post-LOCA sum
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-5.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-5.pdf" target="_blank">View Bases PDF</a>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q77</div>
-Loss of one centrifugal charging pump: <span class="hi-exam">TS 3.5.2 applies — one ECCS subsystem inoperable</span> (the tripped CHP is the high-head component for that ECCS train). 72 hours to restore, then <span class="hi-exam">Hot Shutdown (MODE 4) within the next 12 hours</span> (total 84 hours from the pump trip). <span class="hi-trap">The 23 Charging Pump (positive displacement) does NOT count as an ECCS high-head pump — it counts only for TS 3.1.2.4 (Charging Pumps for reactivity control). TS 3.1.2.2 (Boration Flow Paths) and TS 3.1.2.4 are NOT entered because two boration flow paths and two charging pumps (22 + 23) remain operable.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q96</div>
-SR 4.5.2.b.2 (Verify that ECCS Piping Is Full Of Water) has a MONTHLY surveillance frequency. Per SR 4.0.3, the missed surveillance delay is <span class="hi-exam">24 hours or the specified frequency (31 days), whichever is greatest</span> = <span class="hi-exam">31 days from discovery</span>. A risk assessment is required for delays >24 hours.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q96</div>
-<span class="hi-exam">A 21 ECCS Accumulator with N2 cover-pressure lowered to 595 psig and unsuccessful initial attempts to restore</span> places the accumulator inoperable. Per LCO 3.5.1, the completion time is <span class="hi-exam">24 hours</span> to restore the accumulator to OPERABLE — does NOT drive a same-day Hot Standby requirement.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q97</div>
-LCO 3.5.3 (ECCS subsystems with RCS T-cold &lt; 312°F): <span class="hi-exam">one ECCS subsystem must be operable</span> with at least one charging pump capable of taking suction. <span class="hi-exam">Closing the suction valve of the only running charging pump renders the ECCS subsystem inoperable</span>. Per <span class="hi-exam">LCO 3.5.3 Action a</span>: <span class="hi-exam">restore at least one ECCS subsystem to operable status within 1 hour OR be in Cold Shutdown within the next 20 hours</span>. <span class="hi-trap">Trap: Action "restore one ECCS subsystem to operable or maintain RCS Tavg &lt;350°F" applies to a required-operable RHR pump becoming inoperable, NOT to charging-pump suction loss. TS 3.0.3 does NOT apply because LCO 3.5.3 has its own action for an inoperable ECCS subsystem.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q35</div>
-<span class="hi-exam">TS 3.5.2 (ECCS Subsystems &gt;350°F) requires 2 complete trains of ECCS</span>. The 22 charging pump is the hi-head ECCS pump for the B train, so its trip (with 23 charging pump out of service) makes TS 3.5.2 applicable. TS 3.5.4 (Seal Injection Flow) limits seal injection to 6-12 gpm/pump, not to exceed 40 gpm total. See [[ECCS]], [[CVCS]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q77</div>
-A <span class="hi-exam">single inoperable charging pump (hi-head ECCS) in Modes 1-3 enters TS 3.5.2.a only</span> — restore within 72 hours or be in Hot Shutdown within the next 12 hours. The boration LCOs are entered only on a second inoperable charging pump. See [[CVCS]], [[ECCS]].
-</div>
 
 ## Connections
 

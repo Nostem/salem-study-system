@@ -74,6 +74,38 @@ Control rod positions and OPERABILITY of the rod position indicators are require
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q1</div>
+TS 3.1.3.1 Action b: with <span class="hi-exam">more than one rod inoperable or misaligned beyond limits (&gt;18 steps from group demand at ≤85% RTP)</span>, <span class="hi-exam">be in Hot Standby within 6 hours</span>. AB.ROD-0001 step 3.37 directs placing the unit in Hot Standby for this case. <span class="hi-trap">A SINGLE misaligned rod has a different action (align remaining rods, or declare inoperable and reduce power &lt;75% RTP) — the "reduce to &lt;75%" distractor applies to one rod, not more than one.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q20</div>
+TS 3.1.3.1 action for more than one rod misaligned: <span class="hi-exam">be in Hot Standby within 6 hours</span>. AB.ROD-0001 implements this TS action. <span class="hi-trap">If only ONE rod is misaligned, the action is different — reduce power to &le;75% RTP within 1 hour (action c.3.d). Do not confuse the 1-rod and >1-rod actions.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A1-2</div>
+SDM calculation per TSAS 3.1.3.1 Action c.3 with rod 105 declared INOPERABLE (trippable, at 214 steps; bank D at 227 steps; 100% / 300 ppm / 10000 EFPH). Att. 3 §4.1.5 = 0 untrippable rods, §4.1.6 = 1 inoperable rod. §4.2.7 total rod worth = -5948 pcm; §4.3.5 final SDM = <span class="hi-exam">-2441 pcm</span> — SAT (more negative than -1300 pcm). The 1-hour SDM verification action is satisfied. Time-critical 50-minute administrative limit on the calculation itself.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 SRO-A2</div>
+Paired SRO review of the 2016 RO-A1-2 calculation. SRO must catch use of <span class="hi-exam">0 EFPH rod-worth values instead of 10000 EFPH values</span> in Att. 3 §4.2.1 / §4.2.2 — the error propagates through trippable rod worth, ten-percent rod-worth penalty, and final SDM. Even with corrections (§4.3.5 = -2441 pcm), SDM remains SAT against the -1300 pcm criterion. <span class="hi-exam">30-minute time limit</span> on the SRO review activity.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 RO-A1</div>
+SDM calculation per TSAS 3.1.3.1 Action c.3: with one inoperable trippable rod (1D5 at 214 steps, bank D at 225 steps), operator must verify SDM within <span class="hi-exam">1 hour</span> using SC.RE-ST.ZZ-0002 Attachment 3. Acceptance criteria: SDM must be equal to or more negative than <span class="hi-exam">-1300 pcm</span> in Modes 1 or 2. Calculated SDM = -2398 pcm (SAT).
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A1</div>
+SRO review of completed SDM calculation with <span class="hi-exam">two UNTRIPPABLE rods</span> (1D4 and 1D2). TS LCO 3.1.3.1 Action c.3 entered. Key distinction: the RO incorrectly treated rods as dropped/misaligned (step 4.1.6) instead of untrippable (step 4.1.5). Correct SDM = <span class="hi-exam">-269.5 pcm (UNSAT)</span>, requiring power reduction to <span class="hi-exam">~19% RTP</span>. <span class="hi-trap">Untrippable rods use a completely different calculation pathway than dropped/misaligned rods — the penalty (4330 pcm) and rod worth formula ("Trippable Rod Worth with Untrippable RCCA(s)") differ significantly.</span>
+</div>
+
 ---
 
 ## Position Indication Systems
@@ -95,11 +127,6 @@ Shutdown and control rod position indication (RPI) systems shall be OPERABLE, in
 
 *Amendment No. 311*
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q56</div>
-TS 3.1.3.2.1.b bases states: <span class="hi-exam">"either the control console group 1 demand step counter or the plant computer 'bank step' display is sufficient to comply with this specification for group 1 rod position."</span> Only Group 1 demand steps input into the Plant Computer — Group 2 demand position is NOT available on the Plant Computer. When a group demand step counter fails, the Plant Computer can satisfy the channel check surveillance for <span class="hi-trap">Group 1 only</span>.
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3.2.1 Position Indication Systems</summary>
 <div class="callout callout-bases">
@@ -117,6 +144,18 @@ Rod demand position is indicated on both the control console and plant computer.
 
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q88</div>
+With rod position indication failed (IRPIs dark), affected rods are conservatively assumed fully withdrawn; AB.ROD-0004 adds <span class="hi-exam">270 ppm boration per failed IRPI</span> before a shutdown if the IRPI is not operable. See [[Control Rod Drive]], [[CVCS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q56</div>
+TS 3.1.3.2.1.b bases states: <span class="hi-exam">"either the control console group 1 demand step counter or the plant computer 'bank step' display is sufficient to comply with this specification for group 1 rod position."</span> Only Group 1 demand steps input into the Plant Computer — Group 2 demand position is NOT available on the Plant Computer. When a group demand step counter fails, the Plant Computer can satisfy the channel check surveillance for <span class="hi-trap">Group 1 only</span>.
+</div>
 
 ---
 
@@ -186,41 +225,6 @@ Control banks shall be limited in physical insertion as specified in the <span c
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-3.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q20</div>
-TS 3.1.3.1 action for more than one rod misaligned: <span class="hi-exam">be in Hot Standby within 6 hours</span>. AB.ROD-0001 implements this TS action. <span class="hi-trap">If only ONE rod is misaligned, the action is different — reduce power to &le;75% RTP within 1 hour (action c.3.d). Do not confuse the 1-rod and >1-rod actions.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 RO-A1</div>
-SDM calculation per TSAS 3.1.3.1 Action c.3: with one inoperable trippable rod (1D5 at 214 steps, bank D at 225 steps), operator must verify SDM within <span class="hi-exam">1 hour</span> using SC.RE-ST.ZZ-0002 Attachment 3. Acceptance criteria: SDM must be equal to or more negative than <span class="hi-exam">-1300 pcm</span> in Modes 1 or 2. Calculated SDM = -2398 pcm (SAT).
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 SRO-A1</div>
-SRO review of completed SDM calculation with <span class="hi-exam">two UNTRIPPABLE rods</span> (1D4 and 1D2). TS LCO 3.1.3.1 Action c.3 entered. Key distinction: the RO incorrectly treated rods as dropped/misaligned (step 4.1.6) instead of untrippable (step 4.1.5). Correct SDM = <span class="hi-exam">-269.5 pcm (UNSAT)</span>, requiring power reduction to <span class="hi-exam">~19% RTP</span>. <span class="hi-trap">Untrippable rods use a completely different calculation pathway than dropped/misaligned rods — the penalty (4330 pcm) and rod worth formula ("Trippable Rod Worth with Untrippable RCCA(s)") differ significantly.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 RO-A1-2</div>
-SDM calculation per TSAS 3.1.3.1 Action c.3 with rod 105 declared INOPERABLE (trippable, at 214 steps; bank D at 227 steps; 100% / 300 ppm / 10000 EFPH). Att. 3 §4.1.5 = 0 untrippable rods, §4.1.6 = 1 inoperable rod. §4.2.7 total rod worth = -5948 pcm; §4.3.5 final SDM = <span class="hi-exam">-2441 pcm</span> — SAT (more negative than -1300 pcm). The 1-hour SDM verification action is satisfied. Time-critical 50-minute administrative limit on the calculation itself.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 SRO-A2</div>
-Paired SRO review of the 2016 RO-A1-2 calculation. SRO must catch use of <span class="hi-exam">0 EFPH rod-worth values instead of 10000 EFPH values</span> in Att. 3 §4.2.1 / §4.2.2 — the error propagates through trippable rod worth, ten-percent rod-worth penalty, and final SDM. Even with corrections (§4.3.5 = -2441 pcm), SDM remains SAT against the -1300 pcm criterion. <span class="hi-exam">30-minute time limit</span> on the SRO review activity.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q88</div>
-With rod position indication failed (IRPIs dark), affected rods are conservatively assumed fully withdrawn; AB.ROD-0004 adds <span class="hi-exam">270 ppm boration per failed IRPI</span> before a shutdown if the IRPI is not operable. See [[Control Rod Drive]], [[CVCS]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q1</div>
-TS 3.1.3.1 Action b: with <span class="hi-exam">more than one rod inoperable or misaligned beyond limits (&gt;18 steps from group demand at ≤85% RTP)</span>, <span class="hi-exam">be in Hot Standby within 6 hours</span>. AB.ROD-0001 step 3.37 directs placing the unit in Hot Standby for this case. <span class="hi-trap">A SINGLE misaligned rod has a different action (align remaining rods, or declare inoperable and reduce power &lt;75% RTP) — the "reduce to &lt;75%" distractor applies to one rod, not more than one.</span>
-</div>
 
 ## Connections
 

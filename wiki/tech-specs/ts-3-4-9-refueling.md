@@ -23,11 +23,6 @@ The boron concentration of the RCS, fuel storage pool, refueling canal, and refu
 
 **Surveillance:** Verify boron concentration within COLR limit per SFCP. *(Amendment No. 282)*
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q68</div>
-The <span class="hi-exam">COLR limit for refueling boron concentration is 2139 ppm</span>. A Rx Cavity reading of <span class="val-normal">2499 ppm</span> is well above the limit and does NOT require suspension of fuel movement. <span class="hi-trap">Trap: 2499 ppm is close to (but not below) the COLR limit; recognize that being above the COLR limit means the LCO is met.</span>
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.1 Boron Concentration</summary>
 <div class="callout callout-bases">
@@ -48,6 +43,13 @@ Suspension of CORE ALTERATIONS and positive reactivity additions does not preclu
 Once boration to restore concentration is initiated, it must be continued until the boron concentration is restored. The restoration time depends on the amount of boron that must be injected.
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q68</div>
+The <span class="hi-exam">COLR limit for refueling boron concentration is 2139 ppm</span>. A Rx Cavity reading of <span class="val-normal">2499 ppm</span> is well above the limit and does NOT require suspension of fuel movement. <span class="hi-trap">Trap: 2499 ppm is close to (but not below) the COLR limit; recognize that being above the COLR limit means the LCO is met.</span>
+</div>
 
 ## 3/4.9.2.1 — Unborated Water Source Isolation Valves
 
@@ -125,6 +127,13 @@ With one monitor inoperable: redundancy is lost; suspending positive reactivity 
 With no monitors OPERABLE: no direct means of detecting changes in core reactivity exists. However, since positive reactivity additions are not permitted, the core reactivity condition is stabilized. This stabilized condition is confirmed by performing SR 4.9.1 every 12 hours to ensure required boron concentration exists and adequate shutdown margin is maintained. *(Amendment No. 315)*
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q67</div>
+Core Alterations in Mode 6 require, among others, <span class="hi-exam">2 Source Range NIs operable (LCO 3.9.2)</span>. Less-restrictive related LCOs: 3.9.3.a (only 80 hours subcriticality Oct 15–May 15), 3.9.4.b (one airlock door per airlock capable of being closed), 3.9.8.1 (only one RHR loop in service). See [[Refueling]], [[Excore NIs]].
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q94</div>
@@ -323,6 +332,8 @@ b. <span class="hi">Capable of maintaining slightly negative pressure</span> in 
 
 LCO 3.0.3 not applicable.
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q80</div>
 With S2.OP-IO.ZZ-0010 (SFP Manipulations) in effect, a tubing break causes total loss of air to <span class="hi-exam">21 FHB Supply Fan Inlet Damper</span>. The Inlet Damper is <span class="hi-exam">interlocked to open when its Supply Fan is started, and fails closed on loss of air</span>. With no air supply, the supply fan must be considered <span class="hi-exam">inoperable even though it remains running</span>. Consequence: <span class="hi-exam">declare FHV inoperable based on not having ALL FHV fans operable</span>. Per LCO 3.9.12.a action a: <span class="hi-exam">suspend all operations involving movement of fuel within the storage pool</span> until FHV is restored to operable. <span class="hi-trap">Trap C/D: operability does NOT depend on FHB D/P becoming positive — with no air supply, the supply fan is inoperable regardless. With no supply fan and 2 exhaust fans in service, building pressure will remain negative, but the FHV system is still inoperable per Part a of the LCO.</span> <span class="hi-trap">Trap B/D: the LCO action suspends fuel movement within the STORAGE POOL — not all fuel movement in the Fuel Handling Building.</span>
@@ -332,19 +343,20 @@ With S2.OP-IO.ZZ-0010 (SFP Manipulations) in effect, a tubing break causes total
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-9.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-9.pdf" target="_blank">View Bases PDF</a>
 
+## Exam & Operating Coverage
+
+### TS 3/4.9.3 — Reactor Subcriticality
+
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q67</div>
-Core Alterations in Mode 6 require, among others, <span class="hi-exam">2 Source Range NIs operable (LCO 3.9.2)</span>. Less-restrictive related LCOs: 3.9.3.a (only 80 hours subcriticality Oct 15–May 15), 3.9.4.b (one airlock door per airlock capable of being closed), 3.9.8.1 (only one RHR loop in service). See [[Refueling]], [[Excore NIs]].
+<div class="callout-label">Exam — 2012 Q98</div>
+TSAS 3.9.3.a: for refueling outages <span class="hi-exam">Oct 15 – May 15 the reactor must be subcritical for 80 hours</span> prior to movement of irradiated fuel in the Reactor Pressure Vessel (ensures decay of short-lived fission products consistent with the fuel handling accident analysis, LAR S08-01). For a manual trip at 2000 on January 21st, the earliest fuel movement is <span class="hi-exam">80 hours later = 0400 on January 25th</span>. <span class="hi-trap">168 hours (May 16 – Oct 14) would give 2000 on January 28th — wrong season; 0400 on January 26th is the right time of day but one day late.</span>
 </div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q95</div>
 <span class="hi-trap">TSAS 3.9.3: the reactor need NOT be subcritical for 168 hours before moving fuel during Oct 15–May 15</span>; direct/continuous control-room↔refuel-floor communication is a CORE ALTERATION requirement. Head detensioning is not a core alteration. See [[Refueling]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q98</div>
-TSAS 3.9.3.a: for refueling outages <span class="hi-exam">Oct 15 – May 15 the reactor must be subcritical for 80 hours</span> prior to movement of irradiated fuel in the Reactor Pressure Vessel (ensures decay of short-lived fission products consistent with the fuel handling accident analysis, LAR S08-01). For a manual trip at 2000 on January 21st, the earliest fuel movement is <span class="hi-exam">80 hours later = 0400 on January 25th</span>. <span class="hi-trap">168 hours (May 16 – Oct 14) would give 2000 on January 28th — wrong season; 0400 on January 26th is the right time of day but one day late.</span>
 </div>
 
 ## Connections

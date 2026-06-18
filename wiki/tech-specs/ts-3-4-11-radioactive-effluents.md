@@ -99,11 +99,12 @@ The <span class="hi">2% oxygen limit</span> provides margin below the lower flam
 </div>
 </details>
 
----
+**Exam & operating coverage:**
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-11.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-11.pdf" target="_blank">View Bases PDF</a>
-
-## ODCM Compensatory Actions for Effluent Monitor Failures
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q59</div>
+<span class="hi-exam">TS 3.11.2.5 (Explosive Gas Mixture) limits oxygen concentration in the Waste Gas Holdup System to less than or equal to 2%</span> to prevent an explosive mixture. Hydrogen concentration is monitored but not addressed in Tech Specs. See [[Waste Gas]].
+</div>
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2016 SRO-A3</div>
@@ -115,10 +116,9 @@ SRO determines compensatory actions when 1R12A (Containment Noble Gas) and 1R41D
 </ul>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q59</div>
-<span class="hi-exam">TS 3.11.2.5 (Explosive Gas Mixture) limits oxygen concentration in the Waste Gas Holdup System to less than or equal to 2%</span> to prevent an explosive mixture. Hydrogen concentration is monitored but not addressed in Tech Specs. See [[Waste Gas]].
-</div>
+---
+
+<a href="/salem-study-system/ts-pdfs/ts-3-4-11.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-11.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

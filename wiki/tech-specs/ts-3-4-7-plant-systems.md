@@ -69,6 +69,8 @@ Following surveillance testing, valves must be reset to within <span class="hi">
 </div>
 </details>
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q42</div>
 MSSVs will FIRST start to open when main steam line pressure exceeds <span class="hi-exam"><span class="val-trip">1070 psig</span> (xMS15, the lowest lift setting)</span>. LCO 3.7.1.1 purpose is dual: <span class="hi-exam">limit secondary system pressure to within 110% of design pressure AND protect against overpressurization of the Reactor Coolant Pressure boundary</span>. <span class="hi-trap">Trap: the MSSVs protect both secondary AND primary pressure boundaries — not secondary only.</span>
@@ -116,9 +118,16 @@ The flow path to each steam generator is ensured by maintaining all manual maint
 </div>
 </details>
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q97</div>
 The TS 3.7.1.2 Bases reason for maintaining an OPERABLE AFW System in Modes 1-3 is that it <span class="hi-exam">ensures the RCS can be cooled down to &lt;<span class="hi">350°F</span> from normal conditions following a complete loss of off-site power</span>. <span class="hi-trap">Trap distractors not in the 3.7.1.2 Bases: the AFWST 8-hour HSB-with-atmospheric-steam-discharge value, the SGTR cooldown to &lt;500°F (which limits off-site dose), and the ATWT decay-heat-removal reason are all true facts elsewhere but are NOT the stated 3.7.1.2 operability bases.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+21 SG tube leak escalating to rupture. After 21MS45 is shut to isolate the 21 SG steam supply path to 23 AFW pump, CRS enters <span class="hi-exam">LCO 3.7.1.2</span> for less than 3 operable AFW pumps (23 AFW pump rendered inoperable by loss of steam supply).
 </div>
 
 ---
@@ -265,6 +274,8 @@ This complement of equipment assures adequate redundancy for <span class="hi-exa
 </div>
 </details>
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q37</div>
 Per the 3.7.3 bases, having <span class="hi-exam">2 operable CCW loops requires ALL 3 CCW pumps operable</span> (along with HXs and valves). The <span class="hi-exam">23 CCW pump is a BLACKOUT load, NOT an ACCIDENT load</span>. On a 2C 4KV bus undervoltage / SEC Mode II, the SEC opens the bus infeeds, starts the EDG, strips loads, and sequences blackout loads — but 23 CCW is not sequenced for this event, and the SEC <span class="hi-exam">locks out the AUTO/MAN function of the CCW pump start circuitry</span> so 23 CCW being in MANUAL has no effect. All 3 pumps remain operable → <span class="hi-trap">TSAS 3.7.3 is NOT entered.</span> See [[CCW]].
@@ -283,21 +294,6 @@ At least <span class="hi">two independent service water loops</span> shall be OP
 
 **Action:** With only one loop, restore within <span class="val-alarm">72 hours</span> or Hot Standby in 6 hours + Cold Shutdown in 30 hours.
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q14</div>
-SW loop OPERABILITY requires <span class="hi-exam">two SW pumps powered from separate buses</span>. Per S2.OP-SO.SW-0005 P&L 3.2: when a SW Bay is removed from service in Modes 1-4 and the "B" bus SW pump in the operable bay is unavailable, <span class="hi-exam">LCO 3.0.3 applies (not 3.7.4)</span>. With #2 Bay isolated (leak) AND 24 SWP C/Ted, both loops are inoperable. <span class="hi-trap">TS 3.7.4 only applies with one loop inoperable (72 hrs). When both loops are inoperable, no specific action exists in 3.7.4, so LCO 3.0.3 (default shutdown action) applies.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q92</div>
-TSAS 3.7.4 entry context: with 4 SW Bay isolated (leak on 25SW3), the unit is shut down in compliance with TSAS 3.7.4. <span class="hi-exam">SW pump bus alignment: 21/22/23 SW pumps are on AA/BB/CC vital buses; 24/25/26 SW pumps are unavailable when 4 SW Bay is isolated.</span> A 2A 4KV Vital Bus Differential <span class="hi-exam">opens the EDG output breaker AND prevents station-power infeed reclosure</span>, eliminating the only remaining SW power source — total loss of all SW results.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q82</div>
-A leak on 25SW3 (25 SW Pump Discharge Isolation Valve) isolates 4 SW Bay, and the difficulty of repair drives a shutdown <span class="hi-exam">to comply with TSAS 3.7.4</span> with 21 and 23 SW pumps in service. A subsequent 2A EDG output-breaker trip (Bus Differential) followed by the 23 SW pump tripping on overcurrent at runout leaves no SW pumps running — <span class="hi-exam">a loss of ALL service water, requiring entry to AB.SW-0005 (trip the Rx, stop RCPs to protect CCW and the RCP seals)</span>.
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.4 Service Water</summary>
 <div class="callout callout-bases">
@@ -308,6 +304,23 @@ A leak on 25SW3 (25 SW Pump Discharge Isolation Valve) isolates 4 SW Bay, and th
 *S20-04*
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q82</div>
+A leak on 25SW3 (25 SW Pump Discharge Isolation Valve) isolates 4 SW Bay, and the difficulty of repair drives a shutdown <span class="hi-exam">to comply with TSAS 3.7.4</span> with 21 and 23 SW pumps in service. A subsequent 2A EDG output-breaker trip (Bus Differential) followed by the 23 SW pump tripping on overcurrent at runout leaves no SW pumps running — <span class="hi-exam">a loss of ALL service water, requiring entry to AB.SW-0005 (trip the Rx, stop RCPs to protect CCW and the RCP seals)</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q92</div>
+TSAS 3.7.4 entry context: with 4 SW Bay isolated (leak on 25SW3), the unit is shut down in compliance with TSAS 3.7.4. <span class="hi-exam">SW pump bus alignment: 21/22/23 SW pumps are on AA/BB/CC vital buses; 24/25/26 SW pumps are unavailable when 4 SW Bay is isolated.</span> A 2A 4KV Vital Bus Differential <span class="hi-exam">opens the EDG output breaker AND prevents station-power infeed reclosure</span>, eliminating the only remaining SW power source — total loss of all SW results.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q14</div>
+SW loop OPERABILITY requires <span class="hi-exam">two SW pumps powered from separate buses</span>. Per S2.OP-SO.SW-0005 P&L 3.2: when a SW Bay is removed from service in Modes 1-4 and the "B" bus SW pump in the operable bay is unavailable, <span class="hi-exam">LCO 3.0.3 applies (not 3.7.4)</span>. With #2 Bay isolated (leak) AND 24 SWP C/Ted, both loops are inoperable. <span class="hi-trap">TS 3.7.4 only applies with one loop inoperable (72 hrs). When both loops are inoperable, no specific action exists in 3.7.4, so LCO 3.0.3 (default shutdown action) applies.</span>
+</div>
 
 ---
 
@@ -398,6 +411,8 @@ The CRE boundary may be opened intermittently under administrative controls (doo
 </div>
 </details>
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q68</div>
 TS Bases 3/4.7.6 (and S2.OP-SO.CAV-0001 P&L 3.6.3): when CAV is aligned to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, <span class="hi-exam">Core Alterations and movement of irradiated fuel are NOT permitted</span>. Pressing the Fire Outside Control Room pushbutton during fuel movement requires immediate suspension of fuel movement.
@@ -424,11 +439,6 @@ At least two supply fans and three exhaust fans shall be OPERABLE to maintain th
 | During CORE ALTERATIONS: Auxiliary Building not slightly negative | Restore slightly negative pressure or suspend CORE ALTERATIONS | 4 hrs |
 | At all times: Auxiliary Building not slightly negative | Suspend radioactive gaseous releases via the Auxiliary Building | Immediately |
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q82</div>
-This action (TS 3.7.7 action e) is the basis for terminating a gas decay tank release: if <span class="hi-exam">Auxiliary Building pressure turns positive</span> (loses its slightly-negative condition) during a radioactive gaseous release via the Aux Building, the release must be <span class="hi-exam">suspended immediately</span> to prevent an unmonitored release.
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.7 Auxiliary Building Ventilation System</summary>
 <div class="callout callout-bases">
@@ -448,6 +458,13 @@ The system also provides a containment purge flow path in Modes 5 and 6. Either 
 *Amendment No. 252*
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q82</div>
+This action (TS 3.7.7 action e) is the basis for terminating a gas decay tank release: if <span class="hi-exam">Auxiliary Building pressure turns positive</span> (loses its slightly-negative condition) during a radioactive gaseous release via the Aux Building, the release must be <span class="hi-exam">suspended immediately</span> to prevent an unmonitored release.
+</div>
 
 ---
 
@@ -515,6 +532,8 @@ The Auxiliary Building chilled water loop serving safety-related loads shall be 
 **Basis:** The chilled water system provides normal and accident heat removal for the control room area, relay rooms, equipment rooms, and other safety-related areas. The three possible configurations are analyzed separately: (a) three chillers required, (b) two chillers required from November 1 through April 30, and (c) units cross-tied. Removing non-essential heat loads keeps remaining loads within the available chiller capacity. Two-chiller and cross-tie configurations have additional restrictions because CREACS, ECAC, service water temperature, outside air temperature, and unit-to-unit dependencies affect the remaining cooling margin.
 
 <span class="hi-exam">Cross-tied chilled water requires both CREACS trains OPERABLE; CREACS single-filtration operation is not allowed in the cross-tie configuration.</span> During Modes 5/6 and irradiated fuel movement, chilled water components are not considered inoperable solely because the backup diesel generator is inoperable, except this does not apply to the cross-tie configuration.
+
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2014 SRO-A1-1</div>
@@ -594,11 +613,6 @@ Four Main Feedwater Isolation Valves (FIVs), four Main Feedwater Regulating Valv
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-7-1.pdf" target="_blank">View TS PDF (Turbine Cycle)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-3.pdf" target="_blank">View TS PDF (CCW)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-4.pdf" target="_blank">View TS PDF (SW)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-7.pdf" target="_blank">View TS PDF (3/4.7.7)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-8.pdf" target="_blank">View TS PDF (3/4.7.8)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-9.pdf" target="_blank">View TS PDF (3/4.7.9)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-10.pdf" target="_blank">View TS PDF (3/4.7.10)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-11.pdf" target="_blank">View TS PDF (3/4.7.11)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-12.pdf" target="_blank">View TS PDF (3/4.7.12)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-13.pdf" target="_blank">View TS PDF (3/4.7.13)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-7.pdf" target="_blank">View Bases PDF</a>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #2</div>
-21 SG tube leak escalating to rupture. After 21MS45 is shut to isolate the 21 SG steam supply path to 23 AFW pump, CRS enters <span class="hi-exam">LCO 3.7.1.2</span> for less than 3 operable AFW pumps (23 AFW pump rendered inoperable by loss of steam supply).
-</div>
 
 ## Connections
 

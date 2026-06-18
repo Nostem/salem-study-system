@@ -56,6 +56,18 @@ Core reactivity is verified by periodic comparisons of measured and predicted RC
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q91</div>
+When control rods go below the Rod Insertion Limit (ROD INSERT LIMIT LO-LO alarm present), <span class="hi-exam">SR 4.1.1.1.b is NOT met</span> because control banks are NOT within the COLR limits. With the SR not met, <span class="hi-exam">LCO 3.1.1.1 is also NOT met</span>. <span class="hi-trap">Trap: the candidate may think LCO 3.1.1.1 is met until a SDM calculation confirms inadequate SDM. But SR 4.1.1.1.b requires verifying control banks are within COLR limits — if they are not, the SR is not met, which means the LCO is not met regardless of actual SDM value.</span> Per the ROD INSERT LIMIT LO-LO Alarm Response Procedure, the crew will perform <span class="hi-exam">S2.OP-SO.CVC-0008 (Rapid Boration) ONLY</span> to restore rods above the RIL. <span class="hi-trap">Raising turbine power is NOT permitted — it would lower TAVG causing automatic rod withdrawal, but the alarm response procedure does not allow this corrective action.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 IP-i</div>
+SDM is restored by emergency boration when control rods remain stuck out after a trip. Locally borating the RCS (per AB.CR-0001 Att. 5, Step 10) injects boric acid by opening 1CV175 (Rapid Borate Stop Valve) and raising charging flow to <span class="hi-exam">75 gpm above existing total RCP seal injection flow</span> — the operator action that drives RCS boron concentration up to re-establish the SDM required by LCO 3.1.1.1 with rods not fully inserted.
+</div>
+
 ---
 
 ## Shutdown Margin — Tavg ≤ 200°F
@@ -162,22 +174,14 @@ With Tavg less than <span class="val-trip">541°F</span>, restore Tavg within <s
 </div>
 </details>
 
----
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q91</div>
 A stuck-open TB40 turbine bypass valve during a low-power startup cools the RCS until <span class="hi-exam">auctioneered high RCS Tavg falls below 541&deg;F</span> in Mode 2. TSAS 3.1.1.4 requires Tavg ≥ 541&deg;F; if not restored, the required action is <span class="hi-exam">restore Tavg to ≥541&deg;F within 15 minutes, or be in Hot Standby within the next 15 minutes (open the Rx Trip Breakers)</span>. The correct bases for the 541&deg;F minimum is that <span class="hi-exam">protective instrumentation is within its normal operating range</span> (one of the 5 listed bases). <span class="hi-trap">SDM margin / adequate shutdown margin is NOT one of the 5 bases for the minimum temperature for criticality; the PZR-pressure Tech Spec with a 1-hour restore / 4-hour power-reduction sequence is the wrong LCO and wrong time requirement.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q91</div>
-When control rods go below the Rod Insertion Limit (ROD INSERT LIMIT LO-LO alarm present), <span class="hi-exam">SR 4.1.1.1.b is NOT met</span> because control banks are NOT within the COLR limits. With the SR not met, <span class="hi-exam">LCO 3.1.1.1 is also NOT met</span>. <span class="hi-trap">Trap: the candidate may think LCO 3.1.1.1 is met until a SDM calculation confirms inadequate SDM. But SR 4.1.1.1.b requires verifying control banks are within COLR limits — if they are not, the SR is not met, which means the LCO is not met regardless of actual SDM value.</span> Per the ROD INSERT LIMIT LO-LO Alarm Response Procedure, the crew will perform <span class="hi-exam">S2.OP-SO.CVC-0008 (Rapid Boration) ONLY</span> to restore rods above the RIL. <span class="hi-trap">Raising turbine power is NOT permitted — it would lower TAVG causing automatic rod withdrawal, but the alarm response procedure does not allow this corrective action.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 IP-i</div>
-SDM is restored by emergency boration when control rods remain stuck out after a trip. Locally borating the RCS (per AB.CR-0001 Att. 5, Step 10) injects boric acid by opening 1CV175 (Rapid Borate Stop Valve) and raising charging flow to <span class="hi-exam">75 gpm above existing total RCP seal injection flow</span> — the operator action that drives RCS boron concentration up to re-establish the SDM required by LCO 3.1.1.1 with rods not fully inserted.
-</div>
+---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-1-1.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 

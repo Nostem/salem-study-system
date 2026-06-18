@@ -107,9 +107,45 @@ All voltages and frequencies in SR 4.8.1.1.2 are representative values — instr
 </div>
 </details>
 
+**Exam & operating coverage:**
+
+### LCO Actions
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q93</div>
+A tripped 21 Diesel Fuel Oil Transfer Pump breaker (Modes 1-4) requires entering <span class="hi-exam">TS 3.8.1.1.b.2</span> because <span class="hi-exam">BOTH Fuel Oil Transfer pumps are required to be OPERABLE</span> (each EDG has a separate fuel supply and day tank per LCO 3.8.1.1.b). The correct bases is the <span class="hi-exam">electric power sources bases — OPERABILITY of the AC electrical power sources ensures sufficient power is available for the safe shutdown of the plant and for the mitigation and control of accident conditions.</span> <span class="hi-trap">Trap: the "timely unit shutdown ... within the limits of safe operation" wording is the <span class="hi-exam">LCO 3.0.3 bases</span>, NOT the electric power sources bases — a correct TS paired with the 3.0.3 bases is a wrong answer. A tripped CCW pump does NOT make both loops of CCW inoperable, so TS 3.0.3 entry on a CCW basis is also wrong.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q96</div>
+<span class="hi-exam">Two EDGs inoperable in MODES 1-4 (LCO 3.8.1.1 ACTIONS): 2 hours to restore one DG to OPERABLE, then if not restored, 6 hours to Hot Standby</span>. With 2A EDG already inoperable since 1200 (24-hour clock running) and 2B EDG declared inoperable at 1400 (12-hour repair estimate), the controlling clock is 2 EDGs inoperable starting at 1400 → Hot Standby by <span class="hi-exam">1400 + 2 h + 6 h = 2200</span> (does NOT drive Hot Standby by 1900).
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q58</div>
 LCO 3.8.1.1 Action A — one independent AC circuit inoperable (Modes 1-4): with Orchard (5021) and New Freedom (5024) 500KV lines unavailable but Salem-Hope Creek Tie-Line (5037) still available, <span class="hi-exam">one independent AC circuit is inoperable</span>. The only <span class="hi-exam">1 hour or less required action is Action a.1: demonstrate OPERABILITY of the remaining independent A.C. circuit by performing SR 4.8.1.1.1.a within 1 hour</span>. <span class="hi-trap">Trap: Action 2 (demonstrate OPERABILITY of three DGs per SR 4.8.1.1.2.a.2 within 1 hour) is NOT required — that would apply to Action D (two offsite circuits inoperable) within 8 hours. Action 3 (suspend positive reactivity changes) applies in Modes 5/6 per LCO 3.8.1.2, NOT Modes 1-4.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q79</div>
+LCO 3.8.1.1 ACTION h: <span class="hi-exam">LCO 3.0.4.b is NOT applicable to DGs</span>. With one DG inoperable (and offsite power restored), a risk assessment CANNOT be used to justify a MODE change. Unit 2 <span class="hi-exam">can NOT go from MODE 4 to MODE 3 until the inoperable DG is restored to OPERABLE status</span>. <span class="hi-trap">Trap: LCO 3.0.4.b normally allows MODE changes with a risk assessment, but TS 3.8.1.1 specifically prohibits this exception for DGs.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #2</div>
+2C EDG Pre-Lube pump fails as the initial event with the 2C EDG Jacket Water heater already CIT. CRS recognizes 2C EDG inoperable with both Jacket Water heater AND Pre-lube pump inoperable, and enters <span class="hi-exam">LCO 3.8.1.1.b action b</span>. Determines <span class="hi-exam">S2.OP-ST.500-0001, Electrical Power Systems AC Sources Alignment, must be performed within one hour</span> to demonstrate operability of the independent AC Sources (action b.1).
+</div>
+
+### Surveillance Requirements
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q92</div>
+<span class="hi-exam">SR 4.8.1.2: certain EDG surveillances are NOT required to be performed to maintain EDG operability</span> (the bases preclude paralleling the EDG with offsite power or de-energizing a required ESF bus during the test). A missed 18-month Hot Restart surveillance keeps the EDG OPERABLE; per the bases it must be completed prior to entering Mode 4 if the frequency was exceeded. See [[EDGs]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q91</div>
+EDG monthly surveillance missed periodicity — applying SR 4.0.2: with the EDG monthly (31 day) SR last performed 33 days ago, the EDG remains <span class="hi-exam">OPERABLE</span> because <span class="hi-exam">31 + 7.75 days (25% extension) = 38.75 days has not yet been exceeded</span>. <span class="hi-trap">The 24-hour SR 4.0.3 delay time is from time of discovery and is N/A here since the SR 4.0.2 25% extension is the longer (and currently applicable) allowance.</span> A second EDG (2B) being out for scheduled maintenance does not affect 2A's surveillance-status determination.
 </div>
 
 <div class="callout callout-exam">
@@ -132,11 +168,6 @@ b. Two separate and independent diesel generators with fuel supply
 - **REQUIRED ACTION A:** With one or more required DGs inoperable, declare affected required features inoperable OR suspend CORE ALTERATIONS, handling of irradiated fuel, and operations with positive reactivity changes
 - **REQUIRED ACTION B:** With ALL REQUIRED EDGs inoperable, IMMEDIATELY suspend all operations involving positive reactivity changes
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q21</div>
-<span class="hi-exam">LCO 3.8.1.2 requires a minimum of TWO separate and independent diesel generators to be OPERABLE</span> in Modes 5 and 6. <span class="hi-trap">Trap: LCO 3.8.1.1 (Operating) requires THREE DGs — LCO 3.8.1.2 (Shutdown) requires only TWO.</span> REQUIRED ACTION A provides an option to only declare affected features inoperable, but <span class="hi-exam">REQUIRED ACTION B requires IMMEDIATELY suspending all operations involving positive reactivity changes when ALL REQUIRED EDGs are inoperable</span>.
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.1.2 AC Sources (Shutdown)</summary>
 <div class="callout callout-bases">
@@ -151,6 +182,13 @@ Specs 3.8.2.2, 3.8.2.4, and 3.8.2.6 include movement of irradiated fuel assembli
 <span class="hi-exam">With both required DGs inoperable, the minimum required diversity of AC power is not available — suspend CORE ALTERATIONS, irradiated fuel movement, and positive reactivity additions.</span>
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q21</div>
+<span class="hi-exam">LCO 3.8.1.2 requires a minimum of TWO separate and independent diesel generators to be OPERABLE</span> in Modes 5 and 6. <span class="hi-trap">Trap: LCO 3.8.1.1 (Operating) requires THREE DGs — LCO 3.8.1.2 (Shutdown) requires only TWO.</span> REQUIRED ACTION A provides an option to only declare affected features inoperable, but <span class="hi-exam">REQUIRED ACTION B requires IMMEDIATELY suspending all operations involving positive reactivity changes when ALL REQUIRED EDGs are inoperable</span>.
+</div>
 
 ---
 
@@ -174,11 +212,6 @@ b. Three 28-volt battery supplies for reactor trip breaker UV coils
 | 1 battery bank or charger inoperable | Restore | <span class="val-alarm">2 hrs</span> (battery) or <span class="val-alarm">24 hrs</span> (charger with spare) |
 | 1 of 3 28V supplies inoperable | Restore | <span class="val-alarm">48 hrs</span> |
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q15</div>
-Battery charger operating practice (per S2.OP-AR.ZZ-0002 OHA B-10 response): the 2B1 battery charger is normally in service; the <span class="hi-exam">2B2 (backup) charger is not normally in service and its use is limited to 7 days per Tech Specs</span>, with <span class="hi-exam">no automatic swap</span>. The required action on OHA B-10 (2B 125VDC CNTRL BUS VOLT LO) is to place the 2B2 charger in service; transferring 125 VDC loads to the alternate source is done only if 2B2 cannot be placed in service.
-</div>
-
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.2.1 DC Sources (Operating)</summary>
 <div class="callout callout-bases">
@@ -189,6 +222,28 @@ Battery charger operating practice (per S2.OP-AR.ZZ-0002 OHA B-10 response): the
 <span class="hi-exam">The three <span class="hi">28V</span> battery supplies power the reactor trip breaker undervoltage (UV) coils — loss of these supplies causes a reactor trip (fail-safe design).</span> The 48-hour completion time for one inoperable 28V supply reflects that the remaining two supplies maintain trip capability.
 </div>
 </details>
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q58</div>
+In Modes 1-4, the condition that ALWAYS requires entering <span class="hi-exam">TSAS 3.8.2.3</span> (125-Volt DC Distribution-Operating) for fewer than the three required 125 VDC Bus Trains OPERABLE is <span class="hi-exam">placing ANY of the backup 125 VDC battery chargers in service</span> (per LCO 3.8.2.3). <span class="hi-trap">Battery current of 0 amps is normal (charger carries the load), so it is NOT an entry condition; loss of power to a backup charger does not cause entry; a 90°F battery room temperature is below the electrolyte max temps (110°F / 120°F by battery type).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q15</div>
+Battery charger operating practice (per S2.OP-AR.ZZ-0002 OHA B-10 response): the 2B1 battery charger is normally in service; the <span class="hi-exam">2B2 (backup) charger is not normally in service and its use is limited to 7 days per Tech Specs</span>, with <span class="hi-exam">no automatic swap</span>. The required action on OHA B-10 (2B 125VDC CNTRL BUS VOLT LO) is to place the 2B2 charger in service; transferring 125 VDC loads to the alternate source is done only if 2B2 cannot be placed in service.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q89</div>
+LCO 3.8.2.1 with 2 inverters inoperable: LCO 3.8.2.1 only addresses one inverter inoperable. With <span class="hi-exam">2 inverters inoperable, no specific REQUIRED ACTION exists → LCO 3.0.3 applies</span>. LCO 3.0.3 clock starts at 1200 (when 2nd inverter declared inoperable): <span class="hi-exam">1 hour to begin + 6 hours to Hot Standby = 7 hours maximum → 1900</span>. <span class="hi-trap">Trap: do not use the LCO 3.8.2.1 REQUIRED ACTION B restoration time (30 hours) — with 2 inverters inoperable, there is no applicable REQUIRED ACTION so LCO 3.0.3 is the default.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q90</div>
+LCO 3.8.2.3 battery cell voltage: with 3 connected cells at 0 Volts, battery does not meet Category B and C limits. <span class="hi-exam">REQUIRED ACTIONS C, D, and F apply — D and F are most limiting: 2 hours to restore + 6 hours to Hot Standby = 8 hours maximum</span>. <span class="hi-trap">Trap: REQUIRED ACTION C allows 24 hours to restore, but D and F are more limiting at only 2 hours. Using the 24-hour restoration time incorrectly adds a full day.</span>
+</div>
 
 ### DC Sources — Shutdown (3.8.2.2)
 
@@ -240,51 +295,6 @@ Surveillance frequency is based on operating experience, equipment reliability, 
 ---
 
 <a href="/salem-study-system/ts-pdfs/ts-3-4-8-1.pdf" target="_blank">View TS PDF (AC Sources)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-8-2.pdf" target="_blank">View TS PDF (DC Sources)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-8-3.pdf" target="_blank">View TS PDF (Distribution)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-8.pdf" target="_blank">View Bases PDF</a>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q79</div>
-LCO 3.8.1.1 ACTION h: <span class="hi-exam">LCO 3.0.4.b is NOT applicable to DGs</span>. With one DG inoperable (and offsite power restored), a risk assessment CANNOT be used to justify a MODE change. Unit 2 <span class="hi-exam">can NOT go from MODE 4 to MODE 3 until the inoperable DG is restored to OPERABLE status</span>. <span class="hi-trap">Trap: LCO 3.0.4.b normally allows MODE changes with a risk assessment, but TS 3.8.1.1 specifically prohibits this exception for DGs.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q89</div>
-LCO 3.8.2.1 with 2 inverters inoperable: LCO 3.8.2.1 only addresses one inverter inoperable. With <span class="hi-exam">2 inverters inoperable, no specific REQUIRED ACTION exists → LCO 3.0.3 applies</span>. LCO 3.0.3 clock starts at 1200 (when 2nd inverter declared inoperable): <span class="hi-exam">1 hour to begin + 6 hours to Hot Standby = 7 hours maximum → 1900</span>. <span class="hi-trap">Trap: do not use the LCO 3.8.2.1 REQUIRED ACTION B restoration time (30 hours) — with 2 inverters inoperable, there is no applicable REQUIRED ACTION so LCO 3.0.3 is the default.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q90</div>
-LCO 3.8.2.3 battery cell voltage: with 3 connected cells at 0 Volts, battery does not meet Category B and C limits. <span class="hi-exam">REQUIRED ACTIONS C, D, and F apply — D and F are most limiting: 2 hours to restore + 6 hours to Hot Standby = 8 hours maximum</span>. <span class="hi-trap">Trap: REQUIRED ACTION C allows 24 hours to restore, but D and F are more limiting at only 2 hours. Using the 24-hour restoration time incorrectly adds a full day.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q91</div>
-EDG monthly surveillance missed periodicity — applying SR 4.0.2: with the EDG monthly (31 day) SR last performed 33 days ago, the EDG remains <span class="hi-exam">OPERABLE</span> because <span class="hi-exam">31 + 7.75 days (25% extension) = 38.75 days has not yet been exceeded</span>. <span class="hi-trap">The 24-hour SR 4.0.3 delay time is from time of discovery and is N/A here since the SR 4.0.2 25% extension is the longer (and currently applicable) allowance.</span> A second EDG (2B) being out for scheduled maintenance does not affect 2A's surveillance-status determination.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q96</div>
-<span class="hi-exam">Two EDGs inoperable in MODES 1-4 (LCO 3.8.1.1 ACTIONS): 2 hours to restore one DG to OPERABLE, then if not restored, 6 hours to Hot Standby</span>. With 2A EDG already inoperable since 1200 (24-hour clock running) and 2B EDG declared inoperable at 1400 (12-hour repair estimate), the controlling clock is 2 EDGs inoperable starting at 1400 → Hot Standby by <span class="hi-exam">1400 + 2 h + 6 h = 2200</span> (does NOT drive Hot Standby by 1900).
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #2</div>
-2C EDG Pre-Lube pump fails as the initial event with the 2C EDG Jacket Water heater already CIT. CRS recognizes 2C EDG inoperable with both Jacket Water heater AND Pre-lube pump inoperable, and enters <span class="hi-exam">LCO 3.8.1.1.b action b</span>. Determines <span class="hi-exam">S2.OP-ST.500-0001, Electrical Power Systems AC Sources Alignment, must be performed within one hour</span> to demonstrate operability of the independent AC Sources (action b.1).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q92</div>
-<span class="hi-exam">SR 4.8.1.2: certain EDG surveillances are NOT required to be performed to maintain EDG operability</span> (the bases preclude paralleling the EDG with offsite power or de-energizing a required ESF bus during the test). A missed 18-month Hot Restart surveillance keeps the EDG OPERABLE; per the bases it must be completed prior to entering Mode 4 if the frequency was exceeded. See [[EDGs]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q58</div>
-In Modes 1-4, the condition that ALWAYS requires entering <span class="hi-exam">TSAS 3.8.2.3</span> (125-Volt DC Distribution-Operating) for fewer than the three required 125 VDC Bus Trains OPERABLE is <span class="hi-exam">placing ANY of the backup 125 VDC battery chargers in service</span> (per LCO 3.8.2.3). <span class="hi-trap">Battery current of 0 amps is normal (charger carries the load), so it is NOT an entry condition; loss of power to a backup charger does not cause entry; a 90°F battery room temperature is below the electrolyte max temps (110°F / 120°F by battery type).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q93</div>
-A tripped 21 Diesel Fuel Oil Transfer Pump breaker (Modes 1-4) requires entering <span class="hi-exam">TS 3.8.1.1.b.2</span> because <span class="hi-exam">BOTH Fuel Oil Transfer pumps are required to be OPERABLE</span> (each EDG has a separate fuel supply and day tank per LCO 3.8.1.1.b). The correct bases is the <span class="hi-exam">electric power sources bases — OPERABILITY of the AC electrical power sources ensures sufficient power is available for the safe shutdown of the plant and for the mitigation and control of accident conditions.</span> <span class="hi-trap">Trap: the "timely unit shutdown ... within the limits of safe operation" wording is the <span class="hi-exam">LCO 3.0.3 bases</span>, NOT the electric power sources bases — a correct TS paired with the 3.0.3 bases is a wrong answer. A tripped CCW pump does NOT make both loops of CCW inoperable, so TS 3.0.3 entry on a CCW basis is also wrong.</span>
-</div>
 
 ## Connections
 
