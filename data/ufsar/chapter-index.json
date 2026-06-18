@@ -1,0 +1,128 @@
+[
+  {
+    "title": "Master TOC",
+    "start_page": 0,
+    "end_page": 4,
+    "pdf": "ch-master-toc.pdf"
+  },
+  {
+    "title": "LOES",
+    "start_page": 4,
+    "end_page": 21,
+    "pdf": "ch-loes.pdf"
+  },
+  {
+    "title": "Chapter 1",
+    "start_page": 21,
+    "end_page": 46,
+    "pdf": "ch-chapter-1.pdf"
+  },
+  {
+    "title": "Chapter 2",
+    "start_page": 46,
+    "end_page": 227,
+    "pdf": "ch-chapter-2.pdf"
+  },
+  {
+    "title": "Chapter 3",
+    "start_page": 227,
+    "end_page": 627,
+    "pdf": "ch-chapter-3.pdf"
+  },
+  {
+    "title": "Chapter 4",
+    "start_page": 627,
+    "end_page": 904,
+    "pdf": "ch-chapter-4.pdf"
+  },
+  {
+    "title": "Chapter 5",
+    "start_page": 904,
+    "end_page": 1124,
+    "pdf": "ch-chapter-5.pdf"
+  },
+  {
+    "title": "Chapter 6",
+    "start_page": 1124,
+    "end_page": 1322,
+    "pdf": "ch-chapter-6.pdf"
+  },
+  {
+    "title": "Chapter 7",
+    "start_page": 1322,
+    "end_page": 1545,
+    "pdf": "ch-chapter-7.pdf"
+  },
+  {
+    "title": "Chapter 8",
+    "start_page": 1545,
+    "end_page": 1585,
+    "pdf": "ch-chapter-8.pdf"
+  },
+  {
+    "title": "Chapter 9",
+    "start_page": 1585,
+    "end_page": 1828,
+    "pdf": "ch-chapter-9.pdf"
+  },
+  {
+    "title": "Chapter 10",
+    "start_page": 1828,
+    "end_page": 1896,
+    "pdf": "ch-chapter-10.pdf"
+  },
+  {
+    "title": "Chapter 11",
+    "start_page": 1896,
+    "end_page": 2002,
+    "pdf": "ch-chapter-11.pdf"
+  },
+  {
+    "title": "Chapter 12",
+    "start_page": 2002,
+    "end_page": 2029,
+    "pdf": "ch-chapter-12.pdf"
+  },
+  {
+    "title": "Chapter 13",
+    "start_page": 2029,
+    "end_page": 2050,
+    "pdf": "ch-chapter-13.pdf"
+  },
+  {
+    "title": "Chapter 14",
+    "start_page": 2050,
+    "end_page": 2095,
+    "pdf": "ch-chapter-14.pdf"
+  },
+  {
+    "title": "Chapter 15",
+    "start_page": 2095,
+    "end_page": 2607,
+    "pdf": "ch-chapter-15.pdf"
+  },
+  {
+    "title": "Chapter 16",
+    "start_page": 2607,
+    "end_page": 2608,
+    "pdf": "ch-chapter-16.pdf"
+  },
+  {
+    "title": "Chapter 17",
+    "start_page": 2608,
+    "end_page": 2613,
+    "pdf": "ch-chapter-17.pdf"
+  },
+  {
+    "title": "Appendix A",
+    "start_page": 2613,
+    "end_page": 2663,
+    "pdf": "ch-appendix-a.pdf"
+  },
+  {
+    "title": "Appendix B",
+    "start_page": 2663,
+    "end_page": 2759,
+    "pdf": "ch-appendix-b.pdf"
+  }
+]

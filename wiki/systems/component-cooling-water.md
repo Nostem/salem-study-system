@@ -6,27 +6,42 @@ status: draft
 
 # CCW
 
-## Function
+## Function & Design Basis
 
-Closed-loop cooling water system that provides an intermediate barrier between potentially radioactive systems and the service water system. Removes heat from various plant components and transfers it to the service water system. (UFSAR 9.2.2)
+73 active system K/As (catalog system 008). The Component Cooling System (CCS/CCW) is an independent, closed-loop intermediate cooling system — one provided for each unit (UFSAR §9.2.2). It is designed to remove residual and sensible heat from the Reactor Coolant System (RCS) via the Residual Heat Removal (RHR) System during plant shutdown, cool the spent fuel pool water and the letdown flow to the CVCS during power operation, and provide cooling to dissipate waste heat from various primary plant components (UFSAR §9.2.2.1). The system design is based on a maximum service water supply temperature of <span class="hi">90°F</span> (UFSAR §9.2.2.1).
 
-## Key Loads
+Because heat is transferred from the component cooling water to the service water, CCW serves as an intermediate system between the RCS and the SWS, ensuring any leakage of radioactive fluid from the components being cooled is contained within the plant (UFSAR §9.2.2.3). The surge tank accommodates expansion, contraction, and in-leakage of water and ensures a continuous component cooling water supply until a leaking cooling line can be isolated (UFSAR §9.2.2.3).
 
-- Reactor coolant pump thermal barriers and motor coolers
-- Residual heat removal heat exchangers (shutdown cooling)
-- Letdown heat exchanger (CVCS)
-- Excess letdown heat exchanger
-- Spent fuel pool heat exchangers
-- Sample coolers
-- Reactor support and nozzle cooling
+The CCW System is classified as an Engineered Safeguards System, since it is required for post-accident decay heat removal (UFSAR §9.2.2.3). It is designed to meet the single active or passive failure criteria: two mechanical safety trains are provided, each capable of satisfying the system safety function when operated independently, and any single active or passive failure in the system will not prevent the system from performing its design function (UFSAR §9.2.2.1, §9.2.2.3). Active system components vital to the cooling function are redundant (UFSAR §9.2.2.1).
+
+Water chemistry control is accomplished by chemical additions to the surge tank and by addition of demineralized water to the system through two lines connected to the suction header of the pumps; component cooling water contains a corrosion inhibitor to protect the carbon steel (UFSAR §9.2.2.2, §9.2.2.3).
 
 ## Key Components
 
-- **Component cooling heat exchangers:** Cooled by service water
-- **Component cooling pumps:** Circulate CCW through the closed loop
-- **Component cooling surge tank:** Maintains system filled, accommodates thermal expansion
+- **Component cooling heat exchangers:** Two per unit. Unit 1 has one tube-and-shell-type and one plate-type; Unit 2 has two tube-and-shell-type heat exchangers (UFSAR §9.2.2.4.1, Table 9.2-4). Service water circulates through the cold side while component cooling water circulates through the hot side. Each is designed to remove one-half of the heat load occurring 20 hours after plant shutdown, and one-half of the maximum heat removal load when the RHR System is first placed in operation during cooldown; one exchanger provides 100 percent standby capacity at full power (UFSAR §9.2.2.4.1). Shell-and-tube type design heat transfer is <span class="hi">44.2 x 10⁶ Btu/hr</span> with a shell-side design inlet/outlet temperature of <span class="hi">113.0°F</span>/<span class="hi">100.0°F</span> (CCW side) and a tube-side (SW side) inlet/outlet of <span class="hi">90°F</span>/<span class="hi">99.3°F</span>; SW-side tube material is titanium (UFSAR Table 9.2-4).
+- **Component cooling pumps:** Three per unit, horizontal centrifugal, of standard commercial construction; motors receive power from the 4160 V vital buses (UFSAR §9.2.2.4.2). Rated capacity (design point) <span class="val-normal">4600 gpm</span> at <span class="hi">200 ft H₂O</span> rated head; design pressure <span class="hi">150 psig</span>, design temperature <span class="hi">200°F</span>, available NPSH <span class="hi">25 ft</span>; material carbon steel (UFSAR Table 9.2-4).
+- **Component cooling surge tank:** One per unit, horizontal with an internal baffle (divider plate) creating two separate surge volumes; total volume <span class="hi">2000 gal</span>, normal water volume <span class="hi">1000 gal</span>, internal design pressure <span class="hi">100 psig</span> (UFSAR §9.2.2.4.3, Table 9.2-4). Connected to the suction side of the pumps; makeup water is supplied to the loop near the surge tank (UFSAR §9.2.2.3). The two-section arrangement provides redundancy for a passive failure during recirculation following a LOCA (UFSAR §9.2.2.4.3). Located on elevation 120 ft in the Auxiliary Building (UFSAR §9.2.2.3).
+- **Valves:** Self-actuated spring-loaded relief valves are provided for lines and components that could be pressurized to their design pressure by improper operation or malfunction; special leakage-prevention features are not provided since CCW is not normally radioactive (UFSAR §9.2.2.4.4).
+- **Piping:** Carbon steel (or substitutable chrome alloy material) with welded joints and connections except where component removal for maintenance is required; carbon steel is acceptable because the coolant contains a corrosion inhibitor (UFSAR §9.2.2.4.5).
 
-**Exam & operating coverage:**
+Pumps and heat exchangers are installed in two separate rooms on elevation 84 ft in the Auxiliary Building (UFSAR §9.2.2.3).
+
+## Power Supplies
+
+Power is supplied to each of the three component cooling pumps from separate 4160 V vital buses, normally supplied from separate diesel generators in the event of loss of offsite power (UFSAR §9.2.2.5.1). Upon power failure coincident with a LOCA, the component cooling pumps are manually loaded onto the vital buses; during a LOCA not coincident with loss of offsite power, the diesels start but are not loaded and power to the component cooling water pumps is not interrupted (UFSAR §9.2.2.5.1). The containment-isolation motor-operated valves are 230 V ac and are separated among the three vital 230 V ac buses; the CVCS seal-leakoff CV104 valves are 125 V dc solenoid-operated (UFSAR §9.2.2.8.5).
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q30</div>
+CCW pump bus power supplies: <span class="hi-exam">23 CCW pump is powered from the 2C 4KV vital bus</span>. With 21 CCW pump out of service, a 2C bus lockout removes CCW flow to the RCP bearings, annunciating OHA D20-23 (RCP BRG CLG WTR FLO LO) — requires entry into [[AB.RCP-0001 — RCP Abnormality]].
+</div>
+
+## Automatic Features & Setpoints
+
+The portion of CCW inside containment can be isolated following a LOCA (UFSAR §9.2.2.7). The lines to and from the excess letdown heat exchanger are isolated on Phase A isolation, and the lines to and from the reactor coolant pumps are isolated on Phase B (UFSAR §9.2.2.7). One-half of the component cooling (containment isolation) valves close on a containment isolation (Phase B) signal from protection Train A and the other half on the same signal from Train B; the CVCS valves close on Phase A signals from their respective protection trains, and a design basis LOCA results in closure of all valves to comply with containment isolation criteria (UFSAR §9.2.2.8.5).
+
+Radiation monitors on the component cooling heat exchanger discharge lines actuate alarms and automatically close the surge tank vent valve when the radiation level reaches a preset level above normal background (UFSAR §9.2.2.3, §9.2.2.4.3). Normally the surge tank is open to atmosphere, but if high radiation is detected in the recirculating system the vent line is automatically closed (UFSAR §9.2.2.4.3).
+
+The reactor coolant pump bearing temperature alarm is set at <span class="val-alarm">175°F</span>; the operator immediately executes the trip procedure upon receipt of this alarm (UFSAR §9.2.2.8.1). Bearing testing established a maximum test temperature of <span class="hi">185°F</span> (also the suggested alarm setpoint), with a suggested trip temperature of <span class="hi">195°F</span> (UFSAR §9.2.2.8.1). The rupture of a large pipe or other high-flow-demand event is indicated to the operator by decreasing pump header pressure shown on the main control panel, and low pump header pressure is alarmed to the control room (UFSAR §9.2.1.2 SWS discussion applies analogously; CCW header pressure indication per UFSAR §9.2.2.3).
 
 ### Containment Isolation Valves (CC113, CC215, CC131, CC190)
 
@@ -53,33 +68,6 @@ CCW containment isolation signals: <span class="hi-exam">CC131 and CC190 (RCP Th
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q5</div>
 <span class="hi-exam">1CC190 (CCW Thermal Barrier Isolation Valve) is on the COMMON CCW return line</span> — closing it isolates thermal barrier return from <span class="hi-exam">ALL RCPs</span> (not just one). <span class="hi-trap">Individual RCP isolation valves are the CC130s (one per RCP).</span> RCPs may continue operating as long as charging flow is maintained for seal injection.
-</div>
-
-### CCW Pumps & System Alignment
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 Sim-d</div>
-Each RHR heat exchanger is cooled by CCW through its own HX outlet valve (<span class="hi-exam">21CC16</span> for the 21 RHR HX, <span class="hi-exam">22CC16</span> for the 22 RHR HX). When restoring shutdown cooling on the alternate (22) RHR loop per AB.RHR-0001 Attachment 2, the operator <span class="hi-exam">closes 21CC16 and opens 22CC16</span> to line up CCW to the 22 RHR HX before starting the 22 RHR pump.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q42</div>
-<span class="hi-exam">22CC3 (the 21-23 header cross-over valve) is a normally open valve with NO automatic action</span> on SI, Phase B, or containment Hi-Hi — so 22CC3 indicating OPEN after a LOCA is NOT a failed-to-reposition condition. (Plausible distractor because other CCW valves DO reposition on SI/Phase B, and the SJ113 valves — which also carry "X-Over" designators — reposition on RWST lo-lo level.) See [[RPS/SSPS]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q30</div>
-CCW pump bus power supplies: <span class="hi-exam">23 CCW pump is powered from the 2C 4KV vital bus</span>. With 21 CCW pump out of service, a 2C bus lockout removes CCW flow to the RCP bearings, annunciating OHA D20-23 (RCP BRG CLG WTR FLO LO) — requires entry into [[AB.RCP-0001 — RCP Abnormality]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q31</div>
-The CCW supply to the RCPs is a single line feeding both <span class="hi-exam">bearing cooling and thermal-barrier cooling</span>. The thermal-barrier CCW has a separate return line isolated by <span class="hi-exam">2CC190 (RCP THERM BAR CC OUTLET V, inside containment)</span> and <span class="hi-exam">2CC131 (outside containment)</span>. Thermal-barrier CCW only cools reactor coolant rising through the thermal barrier upon a loss of seal injection. <span class="hi-trap">With normal seal injection, 2CC190 failing shut does NOT affect RCP temperatures.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q35</div>
-Normal CCW system alignment: <span class="hi-exam">2 CCW pumps running in MANUAL, and one CCW pump in AUTO and stopped</span>. The pump selected to AUTO will <span class="hi-exam">auto-start when either 21 or 22 CCW header pressure lowers to <span class="val-alarm">70 psig</span></span>. <span class="hi-trap">There is NO interlock based on CCW pump 4KV breaker positions (other systems do have a breaker anticipatory function — CCW does not). On a CCW pump trip, AB.CC-0001 could be entered but no actions are required other than ensuring the backup pump started.</span>
 </div>
 
 ### Surge Tank & Vent Valve (2CC149)
@@ -116,15 +104,17 @@ CC131 (RCP Thermal Barrier Valve) auto-closure setpoints: <span class="hi-exam">
 <span class="hi-exam">SW122 (SW Inlet Control Valve to CCW HX) fails OPEN on loss of air</span> (fails closed on loss of 125VDC). When SW122 fails open: increased SW flow through CCW HX → CCW temperature lowers → RHR HX outlet temperature lowers → <span class="hi-exam">RCS cooldown rate rises</span>. Per AB.CA-0001, SW122 can be manually operated.
 </div>
 
-## Key Design Points
+## Design Features & Interlocks
 
-- Closed loop prevents direct contact between potentially radioactive fluids and service water
-- Surge tank provides indication of system leakage (radioactivity monitoring on CCW)
-- Loss of CCW to RCPs requires RCP trip to protect seals and thermal barrier (UFSAR 5.5.1.3.14)
+Component cooling water is normally available to all components served by the system, even though one or more components may be isolated (UFSAR §9.2.2.3). All components served are arranged in three main headers with parallel flow circuits from each header: two isolable headers supply cooling water to essential safety equipment, and one header supplies cooling water to the other plant auxiliaries (UFSAR §9.2.2.3). With this arrangement, long-term cooling of the Engineered Safety Features under accident conditions is assured considering an active component failure or excessive leakage in one header (UFSAR §9.2.2.3). Motor-operated valves are used to provide the residual heat exchangers with cooling water should it become necessary to place them in service under LOCA conditions (UFSAR §9.2.2.3). The mechanical safety trains are normally cross-connected, with safety-related heat loads split between the two trains; redundant remote motor-operated valves, operated from the control room, allow the operator to establish two independent safety trains when necessary (UFSAR §9.2.2.3).
 
-**Exam & operating coverage:**
+**Surge tank design and chemistry homogenizing:** The surge tank has a flanged opening at the top for additions of chemical corrosion inhibitor; a recirculation line from the pump discharge is provided to homogenize this chemical with the rest of the system (UFSAR §9.2.2.4.3). The tank is connected to the system by two lines, both equipped with locked-open valves (UFSAR §9.2.2.4.3). The internal baffle divider provides two separate surge volumes for passive-failure redundancy during recirculation following a LOCA (UFSAR §9.2.2.4.3).
+
+**Leakage / contamination provisions:** Welded construction is used wherever possible. Component cooling water could become contaminated with radioactive water due to (1) a leak in any heat exchanger tube in the CVCS, Sampling System, RHR System, or Spent Fuel Pool Cooling System, or a cooling coil for the thermal barrier cooler on an RCP, or (2) a leak in the residual heat exchangers following an accident; tube or coil leaks in components being cooled are detected by radiation monitors on the component cooling heat exchanger outlet headers (UFSAR §9.2.2.6). The relief valves on the cooling water lines downstream of the sample, letdown, excess letdown, seal water, spent fuel pool, and residual heat exchangers are sized to relieve the volumetric expansion if the exchanger shell side is isolated and high-temperature coolant flows through the tube side; set pressure equals the design pressure of the shell side (UFSAR §9.2.2.6). The relief valve on the surge tank is sized to relieve the maximum flow of water entering the surge tank following a rupture of an RCP thermal barrier cooling coil, with discharge directed to the waste holdup tank (UFSAR §9.2.2.6).
 
 ### RCP Protection on Loss of CCW
+
+Component cooling water is provided to the RCP thermal barrier heat exchanger and to the upper and lower motor bearing oil coolers; seal injection flow is supplied to the pumps from the CVCS (UFSAR §9.2.2.8.1). Should a loss of CCW to the thermal barrier heat exchanger occur, seal injection flow is sufficient to prevent damage to the seals; conversely, if loss of seal injection occurs, the thermal barrier heat exchanger cools the reactor coolant before it enters the radial bearing and shaft seal area (UFSAR §9.2.2.8.1). The RCPs have been qualified by testing for 10-minute operation without component cooling water with no resultant damage — a bearing metal temperature of <span class="hi">185°F</span> was reached in approximately 10 minutes in two motor tests at hot (2230 psia, 552°F) conditions (UFSAR §9.2.2.8.1). Operating procedures direct that upon a valid low component cooling flow alarm to a single RCP, the operator trips that RCP within <span class="hi-exam">5 minutes</span> if flow cannot be restored; upon a valid low flow alarm to more than one RCP, the operator trips the reactor and affected RCPs within <span class="hi-exam">5 minutes</span> if flow cannot be restored — this action is performed prior to the motor bearing reaching its design operating temperature (UFSAR §9.2.2.8.2).
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q8</div>
@@ -145,10 +135,19 @@ Per AB.CC-0001 Attachment 1, three time-critical actions for RCP protection on l
 <span class="hi-trap">Trap: 2 minutes was previously the time to stop RCPs if BOTH seal injection and thermal barrier flow were lost concurrently — does not apply if only CCW is lost (seal injection still available from charging).</span>
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 Sim-g</div>
-Loss of CCW alternate path: 22 CCW pump trips, the standby (23) CCW pump <span class="hi-exam">fails to auto-start and cannot be manually started</span>, then 21 CCW pump trips <span class="hi-exam">1 minute 30 seconds later</span> — a <span class="hi-exam">TOTAL LOSS of Component Cooling Water to all RCPs</span>. OHA D20-D23 (21/22/23/24 RCP BRG CLG WTR FLO LO) directs GO TO AB.RCP-0001 if RCP Motor Bearing Temperature reaches <span class="val-trip">175°F</span> or CCW flow cannot be established within 5 minutes with temps trending up (bearing temps peak near ~157°F here). On total loss, AB.CC-0001 / AB.RCP-0001 "Stopping Reactor Coolant Pumps" directs: trip the reactor, stop 21-24 RCPs, and — because letdown CCW is lost — <span class="hi-exam">close 2CV2 AND 2CV277 (isolate letdown), open 2SJ1 AND 2SJ2 (swap charging suction to RWST), close 2CV40 AND 2CV41 (isolate VCT)</span>, then GO TO EOP-TRIP-1.
-</div>
+## Interconnections & Loads
+
+Component cooling water for the component cooling heat exchangers is supplied from the SWS, insuring a continuous source of cooling under all conditions (UFSAR §9.2.2.3). The service water flow through each component cooling heat exchanger is normally controlled by a cascade control system that simultaneously throttles both the inlet and outlet control valves with a common control air signal; the valves are throttled to maintain CCW outlet temperature as the primary parameter, with flow limited to a nominal operating value of <span class="val-normal">10000 gpm</span> as the secondary parameter (UFSAR §9.2.1.2). In certain post-accident alignments the original design HX flow of 10000 gpm may not be attainable for both heat exchangers; the currently evaluated design (minimum required) flow is <span class="hi">8000 gpm</span> with 90°F water for one CCHX in service (UFSAR §9.2.1.2, Table 9.2-1 note 2, Table 9.2-4 note 1).
+
+Component cooling is provided for the following heat sources (UFSAR §9.2.2.3): (1) residual heat exchangers; (2) reactor coolant pump motor bearing oil coolers and thermal barriers; (3) letdown heat exchanger; (4) excess letdown heat exchanger; (5) seal water heat exchanger; (6) spent fuel pool heat exchanger; (7) sample heat exchangers (Unit 1 CCW serves the sample heat exchangers for both units); (8) boric acid evaporator condenser and condensate cooler; (9) cooling for residual heat removal, safety injection, and charging pumps; and (10) Waste Disposal System components.
+
+Component-by-component design flow rates per loop are tabulated in UFSAR Table 9.2-3. Normal total per-loop CCW flow is <span class="hi">8437 gpm</span>; under the LOCA recirculation phase the per-loop totals are <span class="hi">4034 gpm</span> (loop A) and <span class="hi">4134 gpm</span> (loop B) (UFSAR Table 9.2-3). Selected normal flows: RCPs <span class="hi">760 gpm (min)</span>, residual heat removal pumps <span class="hi">20 gpm</span>, safety injection pumps <span class="hi">20 gpm</span>, letdown heat exchanger <span class="hi">1000 gpm</span>, spent fuel pool heat exchanger <span class="hi">3000 gpm</span>, seal water heat exchanger <span class="hi">210 gpm</span> (UFSAR Table 9.2-3). In the LOCA recirculation phase, residual heat exchangers require <span class="hi">4000 gpm</span> per loop (UFSAR Table 9.2-3). At the reactor coolant pump, component cooling water removes heat from both the motor bearing oil and the thermal barrier (UFSAR §9.2.2.3, Figure 9.2-5).
+
+## Effects of Loss / Malfunction
+
+A loss of component cooling water to the RCP motor bearing oil coolers results in an increase in oil temperature and a corresponding rise in motor bearing metal temperature; the RCPs incur no damage as a result of a CCW flow interruption of 10 minutes (UFSAR §9.2.2.8.1). Westinghouse contends that a single or multiple pump seizure as a result of loss of CCW to the RCPs is not a credible event, and an audit of the redundant electrical supplies confirmed there are no credible single electrical failures capable of causing total loss of cooling water to any RCP (UFSAR §9.2.2.8.3, §9.2.2.8.5). The malfunction analysis of pumps, heat exchangers, and valves is presented in UFSAR Table 9.2-5; pump-casing and heat-exchanger tube/shell ruptures are not considered credible because of the low operating pressures, and a single pump failure to start leaves one operating pump that supplies sufficient flow for any condition with redundancy (UFSAR §9.2.2.9, Table 9.2-5).
+
+The CV104 seal-leakoff valves are designed to fail open on loss of control power or air, and each valve control circuit is in a separate control grouping ensuring physical separation; an individual valve "hot-short" could cause loss of seal water flow to only one pump and could not cause coincident loss of component cooling flow (UFSAR §9.2.2.8.5).
 
 ### Thermal Barrier & CCW Leak Diagnostics
 
@@ -216,6 +215,11 @@ Start a CCW pump IAW EOP-APPX-1 during large break LOCA with loss of offsite pow
 
 ### Loss of CCW Scenarios
 
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-g</div>
+Loss of CCW alternate path: 22 CCW pump trips, the standby (23) CCW pump <span class="hi-exam">fails to auto-start and cannot be manually started</span>, then 21 CCW pump trips <span class="hi-exam">1 minute 30 seconds later</span> — a <span class="hi-exam">TOTAL LOSS of Component Cooling Water to all RCPs</span>. OHA D20-D23 (21/22/23/24 RCP BRG CLG WTR FLO LO) directs GO TO AB.RCP-0001 if RCP Motor Bearing Temperature reaches <span class="val-trip">175°F</span> or CCW flow cannot be established within 5 minutes with temps trending up (bearing temps peak near ~157°F here). On total loss, AB.CC-0001 / AB.RCP-0001 "Stopping Reactor Coolant Pumps" directs: trip the reactor, stop 21-24 RCPs, and — because letdown CCW is lost — <span class="hi-exam">close 2CV2 AND 2CV277 (isolate letdown), open 2SJ1 AND 2SJ2 (swap charging suction to RWST), close 2CV40 AND 2CV41 (isolate VCT)</span>, then GO TO EOP-TRIP-1.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q5</div>
 With NO CCW pumps running during EOP-LOCA-3 cold leg recirculation transfer, <span class="hi-exam">single-train recirculation</span> is the directed flowpath (LOCA-3 step 11.2 → step 124). CCW is required for ECCS pump cooling — losing CCW restricts recirculation to one train. <span class="hi-trap">There is no provision in LOCA-3 to transition to APPX-1 (CCW Restoration) or LOCA-5 (Loss of Emergency Coolant Recirculation) for a no-CCW condition during the recirc transfer.</span>
@@ -241,10 +245,39 @@ On the false-SI reactor trip the <span class="hi-exam">21 CCW pump trips and 23 
 23 CCW pump trips and the standby CCW pump <span class="hi-exam">fails to auto-start</span>. The crew <span class="hi-exam">manually starts 22 CCW pump</span> to restore system pressure, clearing all CCW and RCP system alarms, validates that alarms received were consistent with low CCW system pressure, and verifies RCP CCW-cooled parameters. CRS enters the appropriate Tech Spec. See [[2014 Scenario 1]], [[AB.CC-0001 — Loss of Component Cooling Water]].
 </div>
 
+## Control-Room Operation
+
+During normal full-power operation, one or two component cooling pumps and one component cooling heat exchanger accommodate the heat removal loads; the standby pump and standby heat exchanger provide backup (UFSAR §9.2.2.3). During plant cooldown all three pumps are operated, each circulating one-third of the total component cooling flow, and both heat exchangers are required for removing residual and sensible heat (UFSAR §9.2.2.3, §9.2.2.4.2). In the event of a LOCA, one pump and one heat exchanger are capable of fulfilling system requirements (UFSAR §9.2.2.3). The Component Cooling System instrumentation provides the required signals for safe, reliable, and efficient operation and control of the system; all alarms are located in the Control Room (UFSAR §9.2.2.7). Following an accident, the Control Room operator evaluates the status of available equipment and, if necessary, manually realigns the system to assure heat removal requirements are satisfied (UFSAR §9.2.2.3).
+
+The operation of the system is monitored with the following instrumentation (UFSAR §9.2.2.3): (1) temperature detectors in the inlet and outlet lines for each component cooling heat exchanger; (2) pressure detectors on the pump discharge headers; (3) a temperature indicator in the outlet line from each heat exchanger; (4) a radiation monitor in each component cooling heat exchanger discharge line; and (5) a level indicator and alarm on each side of the surge tank. The service water flow through each CCHX cascade control system has its indicating valve control mounted on an instrument panel in the Auxiliary Building near the heat exchanger; a flow transmitter alarms a service water high flow condition on the overhead annunciator in the Control Room (UFSAR §9.2.1.2).
+
+### CCW Pumps & System Alignment
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-d</div>
+Each RHR heat exchanger is cooled by CCW through its own HX outlet valve (<span class="hi-exam">21CC16</span> for the 21 RHR HX, <span class="hi-exam">22CC16</span> for the 22 RHR HX). When restoring shutdown cooling on the alternate (22) RHR loop per AB.RHR-0001 Attachment 2, the operator <span class="hi-exam">closes 21CC16 and opens 22CC16</span> to line up CCW to the 22 RHR HX before starting the 22 RHR pump.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q42</div>
+<span class="hi-exam">22CC3 (the 21-23 header cross-over valve) is a normally open valve with NO automatic action</span> on SI, Phase B, or containment Hi-Hi — so 22CC3 indicating OPEN after a LOCA is NOT a failed-to-reposition condition. (Plausible distractor because other CCW valves DO reposition on SI/Phase B, and the SJ113 valves — which also carry "X-Over" designators — reposition on RWST lo-lo level.) See [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q31</div>
+The CCW supply to the RCPs is a single line feeding both <span class="hi-exam">bearing cooling and thermal-barrier cooling</span>. The thermal-barrier CCW has a separate return line isolated by <span class="hi-exam">2CC190 (RCP THERM BAR CC OUTLET V, inside containment)</span> and <span class="hi-exam">2CC131 (outside containment)</span>. Thermal-barrier CCW only cools reactor coolant rising through the thermal barrier upon a loss of seal injection. <span class="hi-trap">With normal seal injection, 2CC190 failing shut does NOT affect RCP temperatures.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q35</div>
+Normal CCW system alignment: <span class="hi-exam">2 CCW pumps running in MANUAL, and one CCW pump in AUTO and stopped</span>. The pump selected to AUTO will <span class="hi-exam">auto-start when either 21 or 22 CCW header pressure lowers to <span class="val-alarm">70 psig</span></span>. <span class="hi-trap">There is NO interlock based on CCW pump 4KV breaker positions (other systems do have a breaker anticipatory function — CCW does not). On a CCW pump trip, AB.CC-0001 could be entered but no actions are required other than ensuring the backup pump started.</span>
+</div>
+
 ## Tech Spec LCOs
 
-- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.3 requires two independent CCW loops OPERABLE in Modes 1–4
-- 1 loop inoperable: 72 hours to restore, or Hot Standby in 6 hours + Cold Shutdown in 30 hours
+- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.3 requires two independent CCW loops OPERABLE in Modes 1–4 (TS 3/4.7.3)
+- 1 loop inoperable: 72 hours to restore, or Hot Standby in 6 hours + Cold Shutdown in 30 hours (TS 3/4.7.3)
+- An OPERABLE CCW loop consists of one mechanical train and one CCW pump; the system has two safeguards mechanical trains supplied by three pumps powered from separate vital buses (TS 3/4.7.3 Bases)
 
 **Exam & operating coverage:**
 

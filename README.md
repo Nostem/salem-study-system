@@ -247,8 +247,11 @@ The safe rule is: source Markdown/YAML/PDF data is authority; the four quiz-data
 │   ├── exams/                         # YAML exam metadata + extraction text (tracked)
 │   ├── ka-catalog/                    # PWR K/A catalog: pwr-ka-catalog.xlsx (source) + generated .json/.csv (NUREG-1122 Rev 3)
 │   ├── ka-audit/                      # K/A tag audit output: ka-audit-report.{md,csv} + human-review.md
-│   └── quiz-import/                   # audit/staging artifacts (gitignored, regenerated)
-├── docs/                              # planning, audits, release notes, architecture docs
+│   ├── quiz-import/                   # audit/staging artifacts (gitignored, regenerated)
+│   └── ufsar/                         # UFSAR pipeline data: chapter-index, system-map, ka-index/, gaps/
+├── docs/
+│   ├── ufsar-system-ingestion-guide.md  # step-by-step guide for enriching system articles from UFSAR
+│   └── …                              # planning, audits, release notes, architecture docs
 ├── raw/                               # local source PDFs; gitignored
 ├── scripts/
 │   ├── build_quiz_data.py             # one command: regenerate + validate all 4 quiz-data files
@@ -260,7 +263,10 @@ The safe rule is: source Markdown/YAML/PDF data is authority; the four quiz-data
 │   ├── audit_ka_tags.py               # normalize ingested K/A tags to the catalog (--report / --apply)
 │   ├── supabase_import_exam.py        # generate/apply/sync Supabase question data
 │   ├── wiki_index.py                  # local wiki index/query helper
-│   └── contact_feedback_to_github_issues.py
+│   ├── contact_feedback_to_github_issues.py
+│   ├── split_ufsar.py                 # split UFSAR PDF into per-chapter files for pipeline input
+│   ├── build_system_map.py            # build data/ufsar/system-map.json (article↔catalog↔UFSAR crosswalk)
+│   └── build_ka_index.py              # build per-system K/A topic index under data/ufsar/ka-index/
 ├── site/
 │   ├── package.json
 │   ├── public/
