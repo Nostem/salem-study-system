@@ -8,17 +8,78 @@ aliases:
   - rad protection
   - ALARA
   - shielding
+  - RMS
 ---
 
 # Radiation Monitoring
 
-## Function
+## Function & Design Basis
 
-Radiation monitoring systems detect and measure radiation levels throughout the plant for personnel protection, effluent control, and post-accident monitoring. Process radiation monitors provide automatic actuation of safety functions (e.g., containment vent isolation) and alarms. The radiation protection program ensures that occupational radiation exposures are maintained as low as reasonably achievable (ALARA) and within 10CFR20 limits. (UFSAR 7.6, UFSAR 12)
+The Radiation Monitoring System (RMS) provides instrument channels, located at selected points in and around the plant, to detect, compute, and record radiation levels. When a radiation level rises above a desired setpoint, an alarm is initiated in the Control Room. The RMS operates in conjunction with regular and special radiation surveys and with chemical analyses performed by the plant staff. (UFSAR §11.4.2)
 
-## Process Radiation Monitors
+Design objectives for the RMS are to: (1) warn of any radiation hazard which might develop; (2) give early warning of a plant malfunction which might lead to a radiation hazard or plant damage; (3) provide assurance that personnel exposure does not exceed 10CFR20 limits; (4) provide assurance that atmospheric releases will not exceed the design objectives of 10CFR50; (5) record the activity present at various plant locations; (6) provide data for radiological analyses and reports; and (7) monitor process system filters for radiation buildups. (UFSAR §11.4.1)
+
+The RMS is divided into three subsystems (UFSAR §11.4.2):
+
+1. **Process Radiation Monitoring System** — monitors gaseous and liquid streams for increasing radiation and monitors all identified effluent paths to establish the quantity of radioactivity discharged to the environment.
+2. **Process Filter Monitoring System** — monitors the buildup of radioactivity on various process filters to warn of unexpected radiation and indicate the need for changing or cleaning the filter.
+3. **Area Radiation Monitoring System** — monitors radiation levels in various plant locations to warn personnel of a deteriorating radiological condition and to assess the spread of radioactivity.
+
+The components of the RMS are designed to meet or exceed the requirements of normal and DBA conditions for temperature, humidity, pressure, and radiation as stated in the Salem Generating Station Environmental Design Criteria. The RMS signal processing equipment is centralized in six cabinets for Unit 1 and three cabinets for Unit 2. (UFSAR §11.4.2)
+
+The Unit 1 RMS consists primarily of analog channels, with many monitors (1R1B, 1R10B, 1R20B, 1R31A, 1R34, 1R41A/B/C/D, 1R53A/B/C/D, and others) having microprocessor-based electronics. The Unit 2 RMS is primarily a microprocessor-based digital monitoring system arranged as a two-tiered structure with local field units and remote units in the Control Equipment Room. The two systems perform essentially the same functions, with some differences in sensitivities, detector types, and monitoring channels. (UFSAR §11.4.2.1.1, §11.4.2.1.2)
+
+## Key Components
+
+| Channel(s) | Service | Notes / Source |
+|-----------|---------|----------------|
+| 1-R1B / 2-R1B | Control Room area intake duct (shared, dual-channel beta scintillation) | Redundant initiation of accident-pressurized (AP) ventilation mode; safety-related (UFSAR §11.4.2.2) |
+| 1-R1A / 2-R1A | Control Room area monitor | Non-safety, vital power supply; alarmed via annunciator (UFSAR §11.4.2.4) |
+| 1-R11A / 2-R11A | Containment air particulate | Beta scintillation, moving filter paper; leak detection & effluent (UFSAR §11.4.2.2) |
+| 1-R12A / 2-R12A | Containment / plant vent noble gas | Beta scintillator; high rad closes containment purge supply/exhaust & pressure-relief valves (UFSAR §11.4.2.2) |
+| 1-R12B / 2-R12B | Containment fixed-filter iodine | Charcoal cartridge, scintillation; high rad closes purge valves (UFSAR §11.4.2.2) |
+| 1-R13A,B / 2-R13A,B | Containment fan cooler radiation | Monitors SW from CFCUs (two monitors for five fan coolers) (UFSAR §11.4.2.2) |
+| 1-R15 / 2-R15 | Condenser air removal gas | Gamma scintillation; indicates primary-to-secondary leak (UFSAR §11.4.2.2) |
+| 1-R17A,B / 2-R17A,B | Component cooling liquid | Scintillation in inline well; high rad closes CCW surge-tank vent gas valve (UFSAR §11.4.2.2) |
+| 1-R18 / 2-R18 | Waste Disposal System liquid effluent | Scintillation in fixed volume; high rad initiates automatic valve closure (UFSAR §11.4.2.2) |
+| 1-R19A-D / 2-R19A-D | Steam generator blowdown liquid (four channels per unit) | Primary-to-secondary leak; high rad closes 12 (22) SG blowdown tank inlet valves & affected-SG blowdown isolation (UFSAR §11.4.2.2) |
+| 1-R26 / 2-R26 | Reactor coolant process filter | Process Filter Monitoring System (UFSAR §11.4.2.3) |
+| 1-R31A / 2-R31 | Letdown line (failed-fuel) | Gross gamma of letdown; detects fuel-clad failure (UFSAR §11.4.2.2) |
+| 1-R36 | Evaporator/feed preheater condensate | High rad closes evaporator condensate line valves (UFSAR §11.4.2.2) |
+| 2-R37 | Nonradwaste basin discharge | Offline sampler (UFSAR §11.4.2.2) |
+| 1-R40 / 2-R40 | Condensate process filter | Process Filter Monitoring System (UFSAR §11.4.2.3) |
+| 1-R41A/B/C/D / 2-R41A/B/C/D | Plant vent noble gas (low/intermediate/high/composite range) | High-range noble gas; composite channel computes release rate from on-range monitor × plant-vent flow (UFSAR §11.4.2.2) |
+| 1-R44A,B / 2-R44A,B | Containment area high range | Special ion-chamber, post-accident; 1 R/hr to 10⁷ R/hr; safety-related, vital power (UFSAR §11.4.2.2, §11.4.2.4) |
+| 1-R45 / 2-R45 | Plant vent high-range particulate & iodine sampling skids | NUREG-0737 II.F.1; sampling capability 10² µCi/cc (UFSAR §11.4.2.2) |
+| 1-R46A-D / 2-R46A-D | Main steam high range | NUREG-0737 II.F.1; detection capability 10³ µCi/cc; one per main steam line (UFSAR §11.4.2.2) |
+| 1-R53A-D / 2-R53A-D | Main steam line N-16 | High-temperature NaI(Tl) with Am-241 check source; trends primary-to-secondary leakage; used only in Mode 1 (UFSAR §11.4.2.2) |
+| Area monitors (R2, R3, R4, R5, R6A, R7, R9, R10A,B, R20B, R23, R32A,B, R34, R51) | Area Radiation Monitoring System | GM-tube or ion-chamber; see §11.4.2.4 |
+
+## Power Supplies
+
+Individual power supplies are contained in each analog channel drawer, furnishing the positive and negative voltages for the transistor circuits, relays, and alarm lights, and providing the high voltage for the detector. (UFSAR §11.4.2.1.1)
+
+Safety-related and special monitors are powered from vital supplies: the Control Room area monitors (2-R1A, 1-R1A) are non-safety units on a vital power supply; the Fuel Handling Building monitors (1-R5/2-R5, 1-R9/2-R9) are each on a separate vital power supply; and the Containment Area High Range monitors (1-R44A,B and 2-R44A,B) are safety-related units with a vital power supply. (UFSAR §11.4.2.4)
+
+## Automatic Features & Setpoints
+
+The RMS bistable circuits provide one alarm on high radiation (actuation point settable at any level over the instrument range) and one alarm on loss of signal (circuit failure). A high radiation signal actuates a light on the Control Room overhead annunciator and a yellow light on the RMS recorder panel indicating which channel; for digital channels, the Control Room alarm CRT provides discriminate channel alarms. (UFSAR §11.4.2.1.1)
+
+Automatic protective actions initiated by process monitor high-radiation signals (UFSAR §11.4.2.2):
+
+- **Containment ventilation isolation** — 1-R12A (noble gas) provides an alarm relay contact initiating closure of containment ventilation closure/isolation valves 1VC1, 4, 5, and 6 for Modes 1, 2, 3, 4 & 5; 1-R12B (iodine) likewise initiates closure of 1VC1, 4, 5, and 6. High radiation on the containment particulate/gas/iodine channels closes the containment purge supply and exhaust duct valves and the pressure relief line valves; for Unit 2, high radiation also closes the waste gas discharge valve.
+- **CCW surge-tank vent isolation** — a high radiation level on the component cooling liquid monitors (1-R17A,B / 2-R17A,B) initiates closure of the gas valve in the component cooling surge tank vent line to prevent gaseous radiation release.
+- **Liquid effluent isolation** — high radiation on the Waste Disposal System liquid effluent monitor (1-R18 / 2-R18) automatically initiates valve closure of the liquid release path.
+- **Steam generator blowdown isolation** — a high radiation alarm closes the No. 12 (22) steam generator blowdown tank inlet valves and the steam generator blowdown isolation valves on the affected steam generator.
+- **Condensate isolation** — a high radiation alarm on the evaporator/feed preheater condensate monitor (1-R36) automatically closes the condensate line valve for each unit's evaporator packages.
+- **Fuel Handling Building ventilation** — high radiation on the Fuel Handling Building monitors (Channels 1-R5/2-R5 and 1-R9/2-R9) initiates charcoal filtration of the FHB atmosphere; for Unit 2 the high radiation alarm also automatically starts the exhaust fans, and these units actuate an emergency evacuation horn and radiation alert lights outside the building.
+- **Containment high range / SMM** — the Containment Area High Range monitors (R44A/B) provide input to post-accident monitoring; their detectors are capable of indicating area radiation from 1 R/hr to 10⁷ R/hr (UFSAR §11.4.2.4).
+
+Indication scales: process monitor channels are calibrated logarithmically from 10¹ to 10⁶ counts per minute; area and filter monitor channels are calibrated in mR/hr. (UFSAR §11.4.2.1.1)
 
 **Exam & operating coverage:**
+
+### Process Radiation Monitors (general)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q72</div>
@@ -30,57 +91,9 @@ EOP-LOCA-1 step 16 checks for radiation outside containment using these monitors
 The <span class="hi-exam">R19 SGBD radiation monitors are NOT accurate immediately following a unit trip</span> — per the note under the AB.SG-0001 entry conditions, a 2R19 alarm right after a Rx trip should not be the sole basis for entering the SG tube leak procedure or for a manual SI. The proper response to OHA A-6 RMS HI RAD with 2R19C (23 SG Blowdown) in alarm is to <span class="hi-exam">enter AB.RAD-0001 to verify the alarm while continuing in EOP-TRIP-2</span>.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q49</div>
-SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: when the check source pushbutton is pressed, counts rise then <span class="hi-exam">return to the original reading</span> (not held high while button is pressed). During the check source, <span class="hi-exam">interlocks are NOT expected to actuate</span>. (Ref: S1.OP-ST.RM-0001)
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q62</div>
-1R1A (Control Room Area) radiation monitor in alarm: <span class="hi-trap">does NOT automatically actuate CAV in AP Mode</span>. Requires manual actuation — press ACCIDENT PRESSURIZED pushbutton at 1RP2 to actuate BOTH units' CAV into AP Mode. Emergency intake dampers open on the unaffected unit.
-</div>
-
-### Letdown Line Failed-Fuel Monitor (R31)
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q19</div>
-<span class="hi-exam">2R31 is the Letdown Line-Failed Fuel Process Rad Monitor</span> (RMS channel monitoring CVCS letdown for fuel-clad failure). A rising 2R31 trend indicates increasing RCS activity, but the monitor itself <span class="hi-trap">cannot distinguish a crud burst from failed fuel by its rate of rise</span> — there is no procedural guidance to judge the source by how fast the indication rises. Per AB.RC-0002, the cause is determined by having a <span class="hi-exam">Shift Chemistry Technician perform an isotopic (radiological) analysis of the RCS</span>: a crud burst shows different radionuclide concentrations than failed fuel. <span class="hi-trap">Maximizing letdown flow expedites cleanup of valid activity (not source determination); Radiation Protection surveys are for personnel protection/reposting (not source determination).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q98</div>
-On a 2R31 (Letdown Line Monitor) WARNING and entry into AB.RC-0002: the CRS <span class="hi-exam">directs a Radiation Protection Technician to take surveys to determine if radiation levels have changed access requirements</span> (so personnel are promptly notified). Chemistry sampling — not RP surveys — confirms the 2R31 rise; the hourly isotopic analysis is for gamma to determine DEI for trending.
-</div>
-
-### Plant Vent Effluent Monitor (R41)
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q70</div>
-The <span class="hi-exam">R41 plant-vent monitors in the control room have a trend function</span> (display historical data on 2RP1) that can confirm whether a gaseous release is actually in progress versus a tank-pressure instrument failure. If a release IS in progress through the plant vent, it is being monitored — so the release is <span class="hi-exam">unapproved, not unmonitored</span>. <span class="hi-trap">Area Monitors do NOT have local trend functions; only R4 and R34 are trended (on the P-250 computer) in the control room.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q60</div>
-When a Containment Pressure Relief is initiated with NORMAL containment radiation: <span class="hi-exam">1R12A (Containment Gas Effluent) stays constant (already sampling containment), 1R41B (Plant Vent Noble Gas Intermediate Range) stays constant (no sample flow until 1R41A nears full scale), and 1R41D (Plant Vent Noble Gas Release Rate) RISES</span> (computes release rate from on-range monitors × plant-vent flow; also auto-terminates release on high effluent).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q83</div>
-Gas Decay Tank (GDT) release path: <span class="hi-exam">11 GDT discharges to the plant vent</span>. An unplanned gaseous radioactive release from the 11 GDT will alarm on <span class="hi-exam">1R41D (Plant Vent Noble Gas Release Rate)</span> — NOT on 1R12A-B (Cont or Vent Gas Effluent/Iodine). Crew performs AB.RAD-0001 <span class="hi-exam">Attachment 1 (Process Radiation Monitors)</span> to stop the release. <span class="hi-trap">Trap: R12A-B IS a gaseous process radiation monitor, but it monitors containment vent gas, not the plant vent. Also, Attachment 2 (Process Filter Radiation Monitors) applies to filtered systems — the GDT release path to the plant vent is unfiltered.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q25</div>
-2R41 has 4 channels (A, B, C, D). <span class="hi-exam">2R41 Channel D is the ONLY control room indication that reads out in µCi/sec</span> and can be used to determine if a radiological release is in progress for notification to State and Local Agencies. <span class="hi-trap">Channels A, B, and C do not read out in µCi/sec — only Channel D provides release rate information.</span>
-</div>
-
 ### Steam Generator Blowdown Radiation Monitors (R19)
 
-**Exam & operating coverage:**
+A high radiation alarm signal closes the No. 12 (22) steam generator blowdown tank inlet valves and the steam generator blowdown isolation valves on the affected steam generator. (UFSAR §11.4.2.2)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q71</div>
@@ -102,9 +115,117 @@ R19 SGBD radiation monitor WARNING setpoint — unit difference confirmed: <span
 R19 SGBD radiation monitor WARNING setpoint: <span class="hi-exam">Unit 1 — NO automatic actuations (warning is early warning only). Unit 2 — automatically closes ALL GB10s, GB185s, and 2GB50.</span> <span class="hi-trap">Trap: R19 WARNING and ALARM actions differ. The ALARM setpoint on Unit 1 closes ALL GB4s, GB8s, GB10s, GB185s, and 1GB50. On Unit 2, ALARM isolates blowdown from the affected SGs by closing the associated GB4. Do not confuse warning vs alarm actions, and remember the unit difference at the warning level.</span>
 </div>
 
-### Main Steamline Monitors (R46, R53)
+## Design Features & Interlocks
+
+Each integrated RMS channel includes a level amplifier/discriminator, a log level amplifier (converting total pulse rate to a logarithmic analog signal), individual power supplies, test-calibration circuitry, a radiation level meter (logarithmic 10¹ to 10⁶ cpm for process monitors; mR/hr for area and filter monitors), indicating lights, two bistable circuits (high-radiation alarm and loss-of-signal alarm), and a check source. (UFSAR §11.4.2.1.1)
+
+**Check source** — a remotely-operated long half-life radiation check source is furnished in each channel, with energy emissions similar to the radiation energies being monitored. The source strength is sufficient to cause a visible increase in the meter indication. If insufficient count rate is achieved (check source count rate compared against a setpoint), a norm-failure alarm is provided. During checksource operation on the R1B channels, indication is frozen for both channels. (UFSAR §11.4.2.1.1)
+
+**Containment monitor (R11/R12A/R12B) common elements** — the containment radiation monitors share a flow control assembly with a pump unit (pump, flowmeter, flow control valve, low/high flow alarm assembly), selector valves to direct the sample or block flow for maintenance/purging, and a temperature sensor that automatically closes the inlet motor-operated valve on a high temperature condition. Containment isolation valves are provided for the sample piping; loss of both the regular and backup flow paths actuates a 1R11/12 loss-of-flow-path alarm. The containment particulate and gaseous monitors (1-R11A, 1-R12A, 2-R11A, 2-R12A) are also used as part of the Reactor Coolant Leak Detection System. (UFSAR §11.4.2.2)
+
+**Letdown line (failed-fuel) monitor desensitizing** — the Unit 1 ion-chamber detector measures up to 10² R/hr (saturation); the Unit 2 gamma scintillator measures up to 1 × 10⁹ cpm. Provision is made for desensitizing each system by two or more decades to compensate for permanent activity buildup from long-term normal operation, accomplished by inserting the detector into a lead shield (Unit 1) or a lead spacer (Unit 2). (UFSAR §11.4.2.2)
+
+**Process filter monitors** — area-type monitors are provided on liquid (process) filters to indicate when they should be replaced; a high radiation alarm is initiated in the Control Room with a local indicator and alarm light at the filter. Unit 1 process filter monitors are GM tubes with a range of 10⁻¹–10⁴ mR/hr; Unit 2 process filter monitors are ion chambers or GM detectors with a range of 10⁻¹–10⁶ mR/hr. They perform no control function. Monitored filters include reactor coolant filters (1-R26/2-R26) and condensate filters (1-R40/2-R40), plus seal water injection, seal water, liquid waste, spent fuel pool, spent fuel pool skimmer, refueling water purification, and ion exchange filters. (UFSAR §11.4.2.3)
+
+**Post-accident high-range monitors** — the Plant Vent High Range Noble Gas Monitors (1-R41B-D / 2-R41B-D) comply with NUREG-0737 II.F.1 and the intent of Reg. Guide 1.97 (type C & E, Category 2), with a sampling capability of 10⁵ µCi/cc for noble gases; the composite channel (R41D) computes effluent release rate from the on-range monitor (R41A, B, or C) and the plant vent flow rate. The Main Steam High Range Monitors (R46A-D) comply with NUREG-0737 II.F.1 and the intent of Reg. Guide 1.97, with a detection capability of 10³ µCi/cc. These monitors are safety grade and qualified for the post-accident environment. (UFSAR §11.4.2.2)
+
+**Main Steam Line N-16 monitors (R53A/B/C/D)** — each of four channels continuously monitors N-16 gamma radiation from one main steam line using a high-temperature NaI(Tl) gamma scintillator with an integral Am-241 check source, located upstream of the mixing bottle and as close to the main steam line as practical. The high energy window is sensitive only to N-16; because N-16 is present only during power operation, this monitor is used only during Mode 1. (UFSAR §11.4.2.2)
 
 **Exam & operating coverage:**
+
+### Containment High Range Monitors (R44A/B)
+
+Both units have containment monitors capable of indicating area radiation from 1 R/hr to 10⁷ R/hr; the Containment Area High Range channels (1-R44A,B and 2-R44A,B) use a special ion chamber detector for extended-range capability in a post-accident environment and are safety-related units on a vital power supply. (UFSAR §11.4.2.4)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q27</div>
+Confirms the SMM ADVERSE Mode logic: <span class="hi-exam">EITHER R44A OR R44B reaching 1E5 R/hr automatically shifts either channel of the Subcooling Margin Monitor to ADVERSE Mode</span> — only one of the two Containment High Range monitors is required. <span class="hi-trap">Other in-containment area monitors (R2 Containment 130', R7 In-Core Seal Table) do NOT input into the SMM.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q85</div>
+With a SAE already declared during a LBLOCA, <span class="hi-exam">containment radiation exceeding 2000 R/hr adds 2 points from the containment barrier — escalating the classification to a General Emergency</span>. The more-severe classification is what drives a subsequent NRC notification (required within 60 minutes, not 15).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q26</div>
+R44A/B containment high range monitors provide input to the Subcooling Margin Monitor for adverse containment determination. <span class="hi-exam">R44A/B > 1E05 R/HR triggers adverse containment conditions for the SMM.</span> Note: <span class="hi-trap">>1E06 R/HR is the integrated dose value used in procedures — the SMM adverse threshold is >1E05 R/HR.</span> R44A/B are also used in EOP-CFST-1 to determine entry into EOP-FRCE-3 when radiation exceeds 2 R/HR.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q83</div>
+Fission Product Barrier Table (EP-SA-325-123) and R44A/B containment high range radiation monitors: with <span class="hi-exam">R44A and R44B both reading >2000 R/hr</span> following a LBLOCA, the barrier assessment yields: <span class="hi-exam">FB2.L (fuel barrier loss, 5 pts) + RB1.L or RB2.L (RCS barrier loss, 5 pts) + CB2.P (containment barrier potential loss, 2 pts) = 12 points → General Emergency</span>. Classification: <span class="hi-exam">GE with Loss of 2 barriers and Potential Loss of the 3rd barrier</span>. <span class="hi-trap">This is NOT a loss of all 3 barriers — containment is a POTENTIAL loss (lowering pressure indicates containment is functioning).</span>
+</div>
+
+### Process Radiation Monitor Source Checks
+
+A remotely-operated long half-life check source is furnished in each channel; the source strength is sufficient to cause a visible increase in the meter indication, and a norm-failure alarm is provided if insufficient count rate is achieved. (UFSAR §11.4.2.1.1)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q49</div>
+SGBD radiation monitor (<span class="hi-exam">1R19A</span>) check source test: when the check source pushbutton is pressed, counts rise then <span class="hi-exam">return to the original reading</span> (not held high while button is pressed). During the check source, <span class="hi-exam">interlocks are NOT expected to actuate</span>. (Ref: S1.OP-ST.RM-0001)
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q60</div>
+Process radiation monitor Source Check duration: <span class="hi-exam">activate the source check for 30 seconds or less to prevent the solenoids from overheating</span>. Both the system operating procedure (S1.OP-SO.RM-0001) and the surveillance procedure (S1.OP-ST.RM-0001) contain this 30-second precaution. <span class="hi-trap">Traps: terminating "just until indication of rising level is detected" prolongs source life but is NOT the procedural rationale; alarm action functions are NOT automatically blocked on every monitor during a source check, but the cited reason for the 30-second limit is solenoid overheating; source check is not intended to raise rad levels outside the monitor.</span>
+</div>
+
+## Interconnections & Loads
+
+Process monitors are placed on every identified effluent and process path so that leakage from one system into another is detected. The RMS interconnects with, and monitors leakage from or releases through, the following systems (UFSAR §11.4.2.2):
+
+- **Liquid Radwaste System** — 1-R18 / 2-R18 monitors all Waste Disposal System liquid releases and initiates automatic valve closure on high radiation. See [[Waste Liquid]].
+- **Waste Gas System** — gaseous releases (e.g., Gas Decay Tank discharges) reach the plant vent and are monitored by the plant vent noble gas channels (R41A-D); for Unit 2 a high containment gas radiation also closes the waste gas discharge valve. See [[Waste Gas]].
+- **Steam Generator Blowdown** — 1-R19A-D / 2-R19A-D monitor SG blowdown liquid for primary-to-secondary leakage; in Unit 1 the monitors are in the Sampling Room (cooled blowdown sample) and in Unit 2 an offline sampling system is used. See [[Steam Generator & Blowdown]].
+- **Component Cooling Water** — 1-R17A,B / 2-R17A,B continuously monitor CCW for RCS/component leakage into the cooling water via an inline scintillation well; high radiation closes the CCW surge tank vent gas valve.
+- **Chemical & Volume Control (letdown)** — the letdown line monitors (1-R31A / 2-R31) detect fuel-clad failure by gamma emission of fission products in the continuously flowing letdown sample.
+- **Service Water** — the Containment Fan Cooler radiation monitors (1-R13A,B / 2-R13A,B) monitor the service water used as the CFCU cooling medium for contamination from a cooling-coil leak (two monitors for five fan coolers).
+- **Plant Vent System** — the plant vent is continuously monitored for gross radioactivity by the noble gas channels and the high-range particulate/iodine sampling skids (R45). See [[Containment]].
+
+**Exam & operating coverage:**
+
+### Letdown Line Failed-Fuel Monitor (R31)
+
+The Letdown Monitoring System for each unit consists of a single channel monitoring total gross activity of the letdown line concentration to detect failure of the cladding of one or more fuel elements by the gamma emission of fission products released into the reactor coolant. (UFSAR §11.4.2.2)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q19</div>
+<span class="hi-exam">2R31 is the Letdown Line-Failed Fuel Process Rad Monitor</span> (RMS channel monitoring CVCS letdown for fuel-clad failure). A rising 2R31 trend indicates increasing RCS activity, but the monitor itself <span class="hi-trap">cannot distinguish a crud burst from failed fuel by its rate of rise</span> — there is no procedural guidance to judge the source by how fast the indication rises. Per AB.RC-0002, the cause is determined by having a <span class="hi-exam">Shift Chemistry Technician perform an isotopic (radiological) analysis of the RCS</span>: a crud burst shows different radionuclide concentrations than failed fuel. <span class="hi-trap">Maximizing letdown flow expedites cleanup of valid activity (not source determination); Radiation Protection surveys are for personnel protection/reposting (not source determination).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q98</div>
+On a 2R31 (Letdown Line Monitor) WARNING and entry into AB.RC-0002: the CRS <span class="hi-exam">directs a Radiation Protection Technician to take surveys to determine if radiation levels have changed access requirements</span> (so personnel are promptly notified). Chemistry sampling — not RP surveys — confirms the 2R31 rise; the hourly isotopic analysis is for gamma to determine DEI for trending.
+</div>
+
+### Plant Vent Effluent Monitor (R41)
+
+The plant vent noble gas channels comprise low range (R41A), intermediate range (R41B), high range (R41C), and composite (R41D); the composite channel displays the effluent release rate based on low-, intermediate-, or high-range noble gas concentrations and the plant vent flow rate. (UFSAR §11.4.2.2)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q70</div>
+The <span class="hi-exam">R41 plant-vent monitors in the control room have a trend function</span> (display historical data on 2RP1) that can confirm whether a gaseous release is actually in progress versus a tank-pressure instrument failure. If a release IS in progress through the plant vent, it is being monitored — so the release is <span class="hi-exam">unapproved, not unmonitored</span>. <span class="hi-trap">Area Monitors do NOT have local trend functions; only R4 and R34 are trended (on the P-250 computer) in the control room.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q60</div>
+When a Containment Pressure Relief is initiated with NORMAL containment radiation: <span class="hi-exam">1R12A (Containment Gas Effluent) stays constant (already sampling containment), 1R41B (Plant Vent Noble Gas Intermediate Range) stays constant (no sample flow until 1R41A nears full scale), and 1R41D (Plant Vent Noble Gas Release Rate) RISES</span> (computes release rate from on-range monitors × plant-vent flow; also auto-terminates release on high effluent).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q83</div>
+Gas Decay Tank (GDT) release path: <span class="hi-exam">11 GDT discharges to the plant vent</span>. An unplanned gaseous radioactive release from the 11 GDT will alarm on <span class="hi-exam">1R41D (Plant Vent Noble Gas Release Rate)</span> — NOT on 1R12A-B (Cont or Vent Gas Effluent/Iodine). Crew performs AB.RAD-0001 <span class="hi-exam">Attachment 1 (Process Radiation Monitors)</span> to stop the release. <span class="hi-trap">Trap: R12A-B IS a gaseous process radiation monitor, but it monitors containment vent gas, not the plant vent. Also, Attachment 2 (Process Filter Radiation Monitors) applies to filtered systems — the GDT release path to the plant vent is unfiltered.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q25</div>
+2R41 has 4 channels (A, B, C, D). <span class="hi-exam">2R41 Channel D is the ONLY control room indication that reads out in µCi/sec</span> and can be used to determine if a radiological release is in progress for notification to State and Local Agencies. <span class="hi-trap">Channels A, B, and C do not read out in µCi/sec — only Channel D provides release rate information.</span>
+</div>
+
+### Main Steamline Monitors (R46, R53)
+
+The Main Steam Line N-16 monitors (R53A/B/C/D) continuously trend primary-to-secondary leakage and are used only during Mode 1 (N-16 is present only during power operation); the Main Steam High Range monitors (R46A-D) are post-accident, high-range channels (10³ µCi/cc detection capability). (UFSAR §11.4.2.2)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q14</div>
@@ -113,7 +234,7 @@ First indication of a Steam Generator tube leak at 100% power: <span class="hi-e
 
 ### Liquid Effluent Radiation Monitor (R18)
 
-**Exam & operating coverage:**
+The Waste Disposal System liquid effluent monitor (1-R18 / 2-R18) continuously monitors all Waste Disposal System liquid releases; automatic valve closure action is initiated by the monitor after a high radiation level is indicated and alarmed in the Control Room. A scintillation counter in a fixed-volume assembly monitors the effluent as it is discharged. (UFSAR §11.4.2.2)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q60</div>
@@ -145,9 +266,34 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
 During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam">2R18 radiation monitor</span> provides overwatch. At Step 5.5.8, operator reads 2R18 on 104 panel: <span class="hi-exam">105 CPM with High Radiation light illuminated</span>. Step 5.5.9: if 2R18 ALARMS, immediately direct NCO to <span class="hi-exam">CLOSE 2WL51 (LIQUID RELEASE STOP VALVE)</span> to terminate the release.
 </div>
 
-### Fuel Handling Building Radiation Monitors
+## Control-Room Operation
+
+The output from each detector is transmitted via cables to the RMS cabinets, where the radiation level is indicated on a meter in the Control Room and pre-selected channels are recorded on a multipoint recorder; for area monitors the radiation level is also indicated locally at the detector. High radiation level alarms are annunciated on the Control Room overhead annunciator and further identified at the RMS cabinets. (UFSAR §11.4.2.1.1)
+
+Unit 1 digital area channels (1R2, 1R3, 1R4, 1R5, 1R6A, 1R7, 1R9, 1R10A, 1R40) provide digital indication at the local and remote monitors; the local monitors provide Normal, Fail, and Alert indications and initiate a buzzer and beacon light on high alarm, while the remote monitors in the Control Equipment Room provide analog outputs to the plant computer (P250), indicators and high-radiation indication on Panel 1RP1, a High/Trouble alarm on the Overhead Annunciator, and interlock contacts when required. (UFSAR §11.4.2.4)
+
+For Unit 1, the containment-monitor flow control panel in the Control Room radiation monitoring racks permits remote operation of the flow control assembly (selecting either the containment or a local "clean" sample); for Unit 2 these controls are located on 2RP1 in the Control Room. (UFSAR §11.4.2.2)
 
 **Exam & operating coverage:**
+
+### Control Room Area Intake Monitors (R1A/R1B)
+
+The Control Room Intake Air Radiation Monitoring System is a shared, safety-related channel; the R1B monitors (dual-channel processors with beta scintillation detectors in each of the Unit 1 and Unit 2 Control Room intake ducts) provide redundant initiation signals to place the ventilation system into its accident-pressurized mode and continuously indicate, record, and annunciate in the Control Room. (UFSAR §11.4.2.2)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q62</div>
+1R1A (Control Room Area) radiation monitor in alarm: <span class="hi-trap">does NOT automatically actuate CAV in AP Mode</span>. Requires manual actuation — press ACCIDENT PRESSURIZED pushbutton at 1RP2 to actuate BOTH units' CAV into AP Mode. Emergency intake dampers open on the unaffected unit.
+</div>
+
+## Effects of Loss / Malfunction
+
+A bistable circuit on each channel alarms on loss of signal (circuit failure), providing the operator a distinct indication of a failed monitor versus a high-radiation condition. (UFSAR §11.4.2.1.1) The behavior of specific monitors on failure (high or low) is exam-critical and is captured in the callouts below.
+
+**Exam & operating coverage:**
+
+### Fuel Handling Building Radiation Monitors
+
+The Fuel Handling Building monitors (Channels 1-R5/2-R5 and 1-R9/2-R9) continuously monitor the fuel storage areas; a high radiation alarm from either unit initiates charcoal filtration of the FHB atmosphere (and, for Unit 2, automatically starts the exhaust fans). The Fuel Handling Accident in the FHB was analyzed without credit for filtration by the FHB Ventilation System. These units actuate an emergency evacuation horn and radiation alert lights outside the building. The Fuel Handling and Cask Handling Crane monitors (1-R32A,B / 2-R32A,B) are not connected to the central RMS and initiate a flashing beacon and alarm bell on the cranes. (UFSAR §11.4.2.4)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q67</div>
@@ -176,7 +322,7 @@ Confirms 2R32A behavior: with 2R32A failed high, <span class="hi-exam">ONLY cran
 
 ### Fuel Storage Area Monitor (2R9)
 
-**Exam & operating coverage:**
+The Fuel Storage Area channels (1-R9 / 2-R9) continuously monitor the fuel storage areas; a high radiation alarm from either unit automatically starts the exhaust fans (Unit 2) and initiates charcoal filtration of the FHB atmosphere. (UFSAR §11.4.2.4)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q73</div>
@@ -191,30 +337,6 @@ Area Radiation Monitors with automatic ventilation actions: <span class="hi-exam
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q36</div>
 2R9 (Fuel Storage Area Monitor) alarm response: <span class="hi-exam">BOTH Fuel Handling Area Exhaust Fans receive an auto start signal</span> (standby fan starts). <span class="hi-exam">21 HEPA ONLY Filter Unit ISOLATES</span> and <span class="hi-exam">22 HEPA PLUS CHAR filter unit automatically aligns</span>. After 2R9 alarm, both exhaust fans are running but only the charcoal filter unit is in service. <span class="hi-trap">Trap: 2R9 does NOT keep both HEPA units in service — the HEPA ONLY unit isolates and the HEPA PLUS CHAR unit takes over.</span>
-</div>
-
-### Containment High Range Monitors (R44A/B)
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q27</div>
-Confirms the SMM ADVERSE Mode logic: <span class="hi-exam">EITHER R44A OR R44B reaching 1E5 R/hr automatically shifts either channel of the Subcooling Margin Monitor to ADVERSE Mode</span> — only one of the two Containment High Range monitors is required. <span class="hi-trap">Other in-containment area monitors (R2 Containment 130', R7 In-Core Seal Table) do NOT input into the SMM.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q85</div>
-With a SAE already declared during a LBLOCA, <span class="hi-exam">containment radiation exceeding 2000 R/hr adds 2 points from the containment barrier — escalating the classification to a General Emergency</span>. The more-severe classification is what drives a subsequent NRC notification (required within 60 minutes, not 15).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q26</div>
-R44A/B containment high range monitors provide input to the Subcooling Margin Monitor for adverse containment determination. <span class="hi-exam">R44A/B > 1E05 R/HR triggers adverse containment conditions for the SMM.</span> Note: <span class="hi-trap">>1E06 R/HR is the integrated dose value used in procedures — the SMM adverse threshold is >1E05 R/HR.</span> R44A/B are also used in EOP-CFST-1 to determine entry into EOP-FRCE-3 when radiation exceeds 2 R/HR.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q83</div>
-Fission Product Barrier Table (EP-SA-325-123) and R44A/B containment high range radiation monitors: with <span class="hi-exam">R44A and R44B both reading >2000 R/hr</span> following a LBLOCA, the barrier assessment yields: <span class="hi-exam">FB2.L (fuel barrier loss, 5 pts) + RB1.L or RB2.L (RCS barrier loss, 5 pts) + CB2.P (containment barrier potential loss, 2 pts) = 12 points → General Emergency</span>. Classification: <span class="hi-exam">GE with Loss of 2 barriers and Potential Loss of the 3rd barrier</span>. <span class="hi-trap">This is NOT a loss of all 3 barriers — containment is a POTENTIAL loss (lowering pressure indicates containment is functioning).</span>
 </div>
 
 ## Shielding Design
@@ -271,19 +393,16 @@ Dose and stay time calculation for containment entry (RP-AA-300): from survey ma
 | Declared Pregnant Worker | 500 mrem/gestation | 10CFR20.1208 |
 | General Public (fence line) | 100 mrem/year | 10CFR20.1301 |
 
+## Sampling & Inservice Tests
+
+Samples are taken as required by the plant Technical Specifications. The plant vent is continuously monitored for gross radioactivity; a fixed paper particulate filter followed by a charcoal cartridge is installed and changed weekly, then analyzed by gamma spectroscopy within 48 hours from change-out. Gas decay tank releases and containment purges are analyzed isotopically on a batch basis. A supplemental Plant Vent Sampling System (west side of the Fuel Handling Building) is provided so that sampling can continue during a radiological emergency that might render the normal plant-vent sampling station uninhabitable. (UFSAR §11.4.3)
+
+Radiation monitors are initially calibrated to standards traceable to the National Bureau of Standards ("primary calibration"). Area monitors undergo a range calibration by exposing detectors to at least three radiation intensities from a Co-60 or Cs-137 source (the Containment High Range Area Monitors are calibrated with at least one intensity). Liquid and gas process monitors undergo "wet" isotopic calibrations with isotopes of an average energy comparable to those expected to be monitored. Beyond the initial primary calibration, detectors undergo point-source secondary/transfer calibrations in a fixture of repeatable geometry, and the check sources provided with each detector are used to indicate functional operability. Tests, functional checks, and calibrations are performed periodically per Technical Specification requirements and operating procedures. (UFSAR §11.4.4)
+
 ## Tech Spec LCOs
 
 - **[[TS 3/4.3 — Instrumentation|TS 3/4.3.3]]** — Monitoring Instrumentation (radiation monitors)
 - **[[TS 3/4.11 — Radioactive Effluents]]** — Effluent monitoring and release limits
-
-## Process Radiation Monitor Source Checks
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q60</div>
-Process radiation monitor Source Check duration: <span class="hi-exam">activate the source check for 30 seconds or less to prevent the solenoids from overheating</span>. Both the system operating procedure (S1.OP-SO.RM-0001) and the surveillance procedure (S1.OP-ST.RM-0001) contain this 30-second precaution. <span class="hi-trap">Traps: terminating "just until indication of rising level is detected" prolongs source life but is NOT the procedural rationale; alarm action functions are NOT automatically blocked on every monitor during a source check, but the cited reason for the 30-second limit is solenoid overheating; source check is not intended to raise rad levels outside the monitor.</span>
-</div>
 
 ## Connections
 

@@ -1,0 +1,5 @@
+# Gaps — waste-liquid (catalog system 068)
+
+- 068 K1.06 — Interconnection between LWS and the boron recovery system — checked UFSAR §11.2 (System Description / sources lists / interconnections), TS 3/4.11, existing exam/JPM callouts; UFSAR §11.2 describes the CVCS recycle train retaining the bulk of reactor-coolant liquids but does not describe a distinct "boron recovery system" interconnection by that name; no sourced value found
+- 068 K1.08 — Interconnection between LWS and the auxiliary steam system — checked UFSAR §11.2 (all subsections, component data), TS 3/4.11, existing callouts; UFSAR §11.2 does not describe an auxiliary-steam interconnection to the LWS; no sourced content found
+- 068 K5.07 — Operating concept: effect of loss of the secondary mixing (dilution) water system on liquid radwaste releases — checked UFSAR §11.2.4/§11.2.8 (dilution-flow verification and dilution factors), TS 3/4.11, existing callouts; UFSAR confirms dilution flow (via CW/SW) must be verified before release but does not address loss of a dedicated "secondary mixing water system"; no sourced value found
