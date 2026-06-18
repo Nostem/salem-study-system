@@ -7,6 +7,12 @@ Outputs next to the source:
   pwr-ka-catalog.json  -- object keyed by normalized K/A id (ka_full)
   pwr-ka-catalog.csv   -- flat, one row per K/A statement, grep-friendly
 
+The catalog lists each K/A under a system, an APE/EPE (by number, e.g. "022", or by
+vendor code, e.g. "BA01" = B&W APE 01), or as a generic "G2.x.x". The unique id for a
+row comes from the parenthetical that prefixes each active statement, e.g.
+"(022AA1.04)", "(BA01AA1.04)", "(007EA1.02)", "(G2.1.1)"; DELETED/MOVED rows (no
+parenthetical) fall back to the number in the name column.
+
 Run once after placing the xlsx; re-run only if NRC publishes a new revision.
 Requires openpyxl (see requirements-dev.txt).
 
@@ -27,6 +33,10 @@ EXPECTED_HEADER = ["SYS/E/APE", "SYS/E/APE Name", "K/A NO.", "K/A (CFR)", "RO_Im
 FIELDS = ["ka_full", "category", "system_number", "system_name",
           "ka_no", "statement", "ro_imp", "sro_imp", "status"]
 
+# Trailing K/A token inside a statement parenthetical, anchored at the end so the
+# leading system/vendor code (e.g. "BA01", "022", "007") is whatever precedes it.
+KA_TAIL = re.compile(r"(?:E[AK]|A[AK]|[AK])\d\.\d+[a-z]?$")
+
 
 def categorize(ka_no: str) -> str:
     s = ka_no.strip().upper()
@@ -42,11 +52,12 @@ def categorize(ka_no: str) -> str:
 
 
 def parse_number_name(name):
-    """Split the 'SYS/E/APE Name' cell into (system_number, system_name).
+    """Split 'SYS/E/APE Name' into (number, descriptive_name).
 
-    '003 (SF4P RCP) REACTOR COOLANT PUMP SYSTEM'      -> ('003', '(SF4P RCP) REACTOR ...')
-    '000008 (APE 8) Pressurizer Vapor Space Accident' -> ('008', '(APE 8) Pressurizer ...')
-    'G2.1 CONDUCT OF OPERATIONS'                       -> ('G2.1', 'CONDUCT OF OPERATIONS')
+    '003 (SF4P RCP) REACTOR COOLANT PUMP SYSTEM'  -> ('003', '(SF4P RCP) REACTOR ...')
+    '000022 (APE 22) Loss of Reactor Coolant ...' -> ('022', '(APE 22) Loss of ...')
+    '(BW A01) Plant Runback'                      -> ('',    '(BW A01) Plant Runback')
+    'G2.1 CONDUCT OF OPERATIONS'                   -> ('G2.1', 'CONDUCT OF OPERATIONS')
     """
     name = ("" if name is None else str(name)).strip()
     m = re.match(r"^(G2\.\d+|\d{3,6})\s+(.*)$", name)
@@ -58,6 +69,24 @@ def parse_number_name(name):
     return f"{int(num):03d}", rest
 
 
+def derive_ka(name_number: str, ka_no: str, statement: str):
+    """Return (system_number, ka_full). Prefer the unique code in the statement's
+    leading parenthetical; fall back to the name-column number for rows without one
+    (DELETED / MOVED / blank statements)."""
+    pm = re.match(r"^\(([^)]+)\)", statement.strip())
+    if pm:
+        code = pm.group(1).strip()
+        if code.startswith("G2."):
+            return name_number, code                       # generic, e.g. "G2.1.1"
+        tail = KA_TAIL.search(code)
+        if tail:
+            sysc = code[:tail.start()].strip()
+            return sysc, f"{sysc} {ka_no}".strip()          # e.g. "022 AA1.04", "BA01 AA1.04"
+    if name_number.startswith("G2."):
+        return name_number, ka_no
+    return name_number, (f"{name_number} {ka_no}".strip() if name_number else ka_no)
+
+
 def status_of(statement: str) -> str:
     s = statement.strip().upper()
     if s == "DELETED":
@@ -65,14 +94,6 @@ def status_of(statement: str) -> str:
     if "MOVED TO" in s:
         return "moved"
     return "active"
-
-
-def make_ka_full(system_number: str, ka_no: str) -> str:
-    if system_number.startswith("G2."):
-        return ka_no.strip()                       # e.g. "G2.1.1"
-    if system_number:
-        return f"{system_number} {ka_no.strip()}"  # e.g. "003 A1.01", "008 AA1.01", "007 EA1.02a"
-    return ka_no.strip()
 
 
 def main() -> int:
@@ -95,9 +116,10 @@ def main() -> int:
         if not ka_no:
             continue
         statement = ("" if statement is None else str(statement)).strip()
-        system_number, system_name = parse_number_name(name)
+        name_number, system_name = parse_number_name(name)
+        system_number, ka_full = derive_ka(name_number, ka_no, statement)
         records.append({
-            "ka_full": make_ka_full(system_number, ka_no),
+            "ka_full": ka_full,
             "category": categorize(ka_no),
             "system_number": system_number,
             "system_name": system_name,
@@ -126,7 +148,8 @@ def main() -> int:
 
     print(f"rows={len(records)} json_keys={len(by_key)} collisions={len(collisions)}")
     if collisions:
-        print("WARNING collisions (first 10):", sorted(set(collisions))[:10], file=sys.stderr)
+        print("NOTE: remaining collisions are duplicate rows with identical content "
+              f"({len(set(collisions))} keys).", file=sys.stderr)
     return 0
 
 
