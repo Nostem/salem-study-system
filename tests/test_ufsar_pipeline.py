@@ -60,3 +60,30 @@ class FrontMatterTest(unittest.TestCase):
         title, aliases = sysmap.front_matter(text)
         self.assertEqual(title, "Service Water")
         self.assertEqual(aliases, ["SW", "service water system"])
+
+
+kaidx = _load("build_ka_index", "scripts/build_ka_index.py")
+
+
+class SystemTopicTest(unittest.TestCase):
+    def t(self, stmt):
+        return kaidx.system_topic(stmt)
+
+    def test_topic_after_last_cfr_colon(self):
+        self.assertEqual(
+            self.t("(008K2.02) Knowledge of electrical power supplies to the following "
+                   "(CFR: 41.7): (SF8 CCW) COMPONENT COOLING WATER SYSTEM CCW pumps"),
+            "(SF8 CCW) COMPONENT COOLING WATER SYSTEM CCW pumps",
+        )
+
+    def test_topic_sentence_form(self):
+        self.assertEqual(
+            self.t("(008A3.01) Ability to monitor automatic features of the (SF8 CCW) "
+                   "COMPONENT COOLING WATER SYSTEM, including (CFR: 41.7 / 45.5): "
+                   "Setpoints for normal operations, warnings, and trips that are applicable to the CCWS"),
+            "Setpoints for normal operations, warnings, and trips that are applicable to the CCWS",
+        )
+
+    def test_group_of_ka_no(self):
+        self.assertEqual(kaidx.group_of("K2.02"), "K2")
+        self.assertEqual(kaidx.group_of("A3.01"), "A3")
