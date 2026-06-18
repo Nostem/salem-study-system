@@ -13,9 +13,19 @@ aliases:
 
 # RPS/SSPS
 
-## Function
+## Function & Design Basis
 
 Instrumentation and Control Systems provide the reactor operator with information and control capability to operate the station safely and efficiently. Safety-related logic circuitry and actuators execute equipment actions without operator action when safety functions are involved. Salem's Protection and ESF Actuation Systems are functionally identical to those in the D.C. Cook Plant. (UFSAR 7.1)
+
+The Reactor Trip System consists of all equipment from the sensors to the trip breakers or to the initiation circuits of engineered safety features; this entire chain is part of the protective system. The reactor trip breakers and the undervoltage attachment are safety-related. The Reactor Trip System is an aggregate lineup of the Nuclear Instrumentation System, the Process Control System, and the Solid State Protection System (SSPS), and is designed in accordance with IEEE Standard 279-1971. (UFSAR §7.2.1.1, §7.1.1.1)
+
+The Reactor Trip System, in conjunction with inherent plant characteristics, is designed to prevent anticipated abnormal conditions from exceeding the limits established in the safety analyses. If it receives signals indicative of an approach to unsafe operating conditions, it actuates alarms, prevents control rod withdrawal, initiates load cutback, and/or opens the reactor trip breakers. (UFSAR §7.2.1.10, §7.1.2.1)
+
+<span class="hi">Figure 7.2-1 illustrates the core limits and shows the maximum trip points used by the protection system.</span> The solid lines indicate a typical locus of departure from nucleate boiling ratio (DNBR) = <span class="val-normal">1.30</span>, and the dashed lines indicate the maximum permissible trip points for the Overtemperature Delta-T reactor trip. Actual setpoints (the safety limits are given in the Technical Specifications) are lower to allow for measurement and instrumentation errors. The Overpower Delta-T reactor trip limits the maximum core power independent of DNBR. Adequate margins exist between the maximum nominal steady-state operating point (including allowance for temperature, calorimetric, and pressure errors) and the required trip points to preclude a spurious trip during design transients. (UFSAR §7.2.1.1)
+
+### Protection vs DNB & Power Density (K5)
+
+<span class="hi">The Reactor Protection System protects the core against departure from nucleate boiling (DNB) and against excessive power density.</span> The plant variables affecting DNBR are: thermal power, coolant flow, coolant temperature, coolant pressure, and core power distribution. (UFSAR §7.2.3.1) Reactor trips on nuclear overpower and low reactor coolant flow provide direct, immediate protection against rapid changes in these parameters; in all cases where the calculated DNBR approaches <span class="val-normal">1.30</span>, an Overpower and/or Overtemperature Delta-T trip would also be actuated. For postulated abnormal conditions, the exact combination of conditions will not cause DNBR to go below 1.30 before a reactor trip; the simultaneous loss of power to all RCPs is the accident condition most likely to approach a DNBR of 1.30, and even then DNBR is near 1.30 for only a few seconds. (UFSAR §7.2.3.1) The Delta-T trip functions are based on the difference between measured hot-leg and cold-leg temperatures, which is proportional to core power, and are provided with a nuclear differential flux feedback to reflect axial power distribution and prevent an adverse axial distribution that could exceed allowable core conditions. (UFSAR §7.2.3.1)
 
 ## Reactor Trip Functions
 
@@ -42,6 +52,25 @@ Instrumentation and Control Systems provide the reactor operator with informatio
 | 5 | Intermediate Range Neutron Flux | ≤<span class="val-trip">25%</span> RTP | 1/2 | Interlocked with P-6 and P-10 | TS T2.2-1 |
 
 Note: Negative Flux Rate Trip has been removed per NRC License Amendment 278-261. (UFSAR T7.2-1)
+
+### Trip Functional Bases (K4.02)
+
+Each reactor trip exists for a defined protective purpose (UFSAR §7.2.2.5):
+
+- **High Neutron Flux (Power Range)** — two-out-of-four power range channels above setpoint. Two independent settings exist: the high setting provides protection during normal power operation and is always active; the low setting provides startup protection and can be manually blocked when 2/4 power range channels read above approximately 10% power (P-10), with three-out-of-four channels below 10% automatically reinstating the trip. (UFSAR §7.2.2.5)
+- **High Neutron Flux (Intermediate Range)** — 1/2 intermediate range channels; startup protection, manually blockable above P-10 and automatically reinstated when 3/4 power range channels drop below P-10. Intermediate channels (including detectors) are separate from the power range channels. (UFSAR §7.2.2.5)
+- **High Neutron Flux (Source Range)** — 1 of 2 source range channels; startup protection, manually blockable when one of two intermediate range channels reads above P-6, automatically reinstated below P-6, and automatically bypassed above P-10. (UFSAR §7.2.2.5)
+- **Overtemperature Delta-T** — protects the core against DNB; <span class="hi-exam">the four long ion chamber units separately feed each Overtemperature Delta-T trip channel, so a single failure neither defeats the function nor causes a spurious trip</span>. Changes in f(ΔΦ) can only lead to a decrease in trip setpoint. (UFSAR §7.2.2.5)
+- **High Positive Flux Rate** — trips on an abnormal rate of increase in nuclear power in 2/4 power range channels; provides protection against rod ejection accidents of low worth from mid-power and is always active. (UFSAR §7.2.2.5)
+- **Low Pressurizer Pressure** — protects against excessive core steam voids and limits the range of protection required from the Overtemperature Delta-T trip; 2/4 low pressurizer pressure signals (each lead-lag compensated), blocked below P-7. (UFSAR §7.2.2.5)
+- **High Pressurizer Pressure** — limits the range of Overtemperature Delta-T protection and protects against RCS overpressure; 2/4 high pressurizer pressure signals. (UFSAR §7.2.2.5)
+- **High Pressurizer Water Level** — backup to the high pressurizer pressure trip; 2/3 high level signals, blocked below P-7. (UFSAR §7.2.2.5)
+- **Low Reactor Coolant Flow** — protects the core from DNB following a loss of coolant flow. A loop low-flow signal is generated by 2/3 low-flow signals per loop; above P-7 low flow in any two loops trips the reactor, above P-8 low flow in any one loop trips the reactor, and all low-flow trips are blocked below P-7. (UFSAR §7.2.2.5)
+- **RCP Breaker Position** — opening of two reactor coolant pump breakers above the P-7 interlock, indicative of imminent loss-of-coolant flow, results in a reactor trip. (UFSAR §7.2.2.5)
+- **RCP Undervoltage / Underfrequency** — there is one undervoltage and one underfrequency sensor per bus. A 1/2-taken-twice underfrequency signal directly trips all RCPs and produces a direct reactor trip (interlocked by P-7); undervoltage trips the reactor above P-7 by 1/2-taken-twice logic. (UFSAR §7.2.2.5)
+- **Reactor Trip on Turbine Trip (Anticipatory)** — 2/3 low autostop oil pressure or all-closed turbine stop valve signals; a direct reactor trip above P-9. This anticipatory trip removes sensible heat via a controlled short-term steam release to the condenser, avoiding SG safety valve actuation. <span class="hi-exam">No credit is taken for this trip in any of the safety analyses.</span> (UFSAR §7.2.2.5)
+- **Low-Low SG Water Level** — prevents loss of the reactor's heat sink; 2/3 low-low level signals in any steam generator, with independent trip circuits for each SG. (UFSAR §7.2.2.5)
+- **Safety Injection Signal** — a reactor trip occurs whenever the SI system is actuated. (UFSAR §7.2.2.5)
 
 **Exam & operating coverage:**
 
@@ -391,6 +420,38 @@ Master Pressure Controller (MPC) controls PZR spray valves and backup heaters. I
 ## Reactor Trip Breakers
 
 Two reactor trip breakers (52/RTA and 52/RTB) in series, each with a bypass breaker (52/BYA and 52/BYB). Trip signal deenergizes undervoltage coils and actuates shunt trip. <span class="hi-exam">If a bypass breaker is closed for testing and the other train's bypass breaker is also closed, both trip breakers and bypass breakers are automatically tripped by the General Warning Alarm.</span> (UFSAR 7.2.2)
+
+Rapid reactivity shutdown is provided by the insertion of the rod cluster control assemblies by free fall. Duplicate series-connected circuit breakers supply all power to the control rod drive mechanisms; the rods must be energized to remain withdrawn, so automatic control rod insertion occurs upon loss of power to the control rods. <span class="hi-exam">The trip breakers are opened by both the undervoltage coils and the shunt trip coils on both breakers.</span> The undervoltage coils, which are normally energized, become deenergized by any one of the several trip signals; the shunt trip coil is energized by an interposing relay installed in parallel with the undervoltage coils. (UFSAR §7.2.2.5)
+
+Normally, reactor trip breakers 52/RTA and 52/RTB are in service and bypass breakers 52/BYA and 52/BYB are withdrawn (out of service). To test 52/RTA, bypass breaker BYA is placed in service — this closes switchgear relay 52/BYA and interrupts one of the two signals to the Train A "and box" necessary to actuate the downstream logic causing turbine trip, feedwater isolation, and safety injection block. A simulated trip signal applied to Train A only deenergizes undervoltage coil 52(UV)/RTA and the automatic shunt-trip interposing relay; the reactor is not tripped because the rods continue to receive rod-drive bus power via switchgears 52/BYA and 52/RTB. <span class="hi-exam">If a real trip signal occurs during testing of the 52/RTA breaker, Train B actuates the reactor trip and the logic following the Train B "and box."</span> (UFSAR §7.2.2.3)
+
+## Solid State Protection System (SSPS) Logic & Testing
+
+Both reactor trip and engineered safety features actuation functions are performed by the Solid State Protection System; non-protective control-type functions are also provided, several of which can be classified as equipment protection. <span class="hi">The two redundant reactor trip logic channels (trains) are physically separated and electrically isolated from one another</span>, and the Reactor Protection System is comprised of identifiable channels that are physically, electrically, and functionally separated and isolated. (UFSAR §7.2.2.2)
+
+The OPERABILITY of the protective and ESF instrumentation systems and interlocks ensures that (1) the associated ESF action or reactor trip is initiated when the monitored parameter exceeds its setpoint, (2) the specified coincidence logic and sufficient redundancy is maintained to permit a channel to be out of service for testing or maintenance while maintaining reliability, and (3) sufficient system functional capability is available from diverse parameters. (UFSAR §7.2.2.3)
+
+### Channel Bypass / Test & Calibration (A1.02, K4.01, K4.08)
+
+The system is designed to permit any one analog channel to be maintained, tested, or calibrated during power operation without a system trip; this does not include such backup trips as manual trip and reactor coolant pump breakers (open trip). During such operation the active parts of the system continue to meet the single-failure criterion, since the channel under test is either tripped or makes use of superimposed test signals that do not negate the process signal. <span class="hi-trap">Two exceptions exist: (1) "one-out-of-two" systems are permitted to violate the single-failure criterion during channel bypass provided acceptable reliability is otherwise demonstrated and the bypass time is short; (2) Containment Spray actuation channels are tested by bypassing or negating the channel under test — acceptable because there are four channels and the two-out-of-four trip logic reduces to two-out-of-three during the test.</span> (UFSAR §7.2.1.7)
+
+Test procedures require the bistable output relays of the channel under test to be placed in the tripped mode prior to the analog channel tests; this transfers the bistable output from the logic circuitry and connects it to a proving lamp. Upon completion, the bistable trip switches must be manually reset to operate — closing the test-panel cover will not transfer the switches from tripped to operate. (UFSAR §7.2.2.3) <span class="hi-exam">Power range channels are tested by superimposing the test signal (maintaining 2/4 logic) or by disconnecting the detector signal (reducing the trip logic to 2/3 during the surveillance)</span>; in the source and intermediate ranges, where the trip logic is one-out-of-two for each range, bypasses are provided for the testing procedure. (UFSAR §7.2.2.3) The Solid State Protection System logic is designed to be capable of testing at power. (UFSAR §7.2.2.3)
+
+### Separation of Control & Protection (K4.09)
+
+The Reactor Protection System uses four separate and independent channels of instrumentation to provide inputs to two separate logic systems, incorporating physical and electrical separation of the four channels from the sensing element to the logic systems; the logic systems' outputs are also separated to preserve the independence of redundant functions. Redundant instrumentation and control cables are routed through separate containment penetrations. (UFSAR §7.2.2.1) <span class="hi-exam">No analog signal required for initiation of reactor protection or ESF actuation is allowed to leave a set of protection channels; where protection signal intelligence is required for control functions, an isolation amplifier (part of the protection set) is used</span> to prevent perturbation of the protection channel input due to any disturbance of the isolated output. (UFSAR §7.2.1.4) The reactor control system uses the highest (auctioneered) of the four isolated T-avg signals, and four power-range nuclear flux channels provide auctioneered isolated outputs for automatic rod control; a channel that fails low is incapable of proper overpower protection, but 2/4 overpower trip logic ensures an overpower trip even with an independent failure in another channel. (UFSAR §7.2.3.2)
+
+### Protection Set Identification (A4.02, K6)
+
+Protection-rack-mounted equipment is identified by color-coded nameplates differentiating the four protection sets: <span class="hi">Protection Set I — Green; Set II — Gray; Set III — Blue; Set IV — Cocoa (all with white lettering)</span>. (UFSAR §7.2.1.5) Indication is provided in the Control Room if any part of the system has been administratively bypassed or taken out of service, and trips are indicated and identified down to the channel level. (UFSAR §7.2.1.9) Interlocks on the doors of each process-control analog rack in all four protection sets actuate a Control Room alarm if any door in any protection set is opened. (UFSAR §7.2.1.10)
+
+## Power Supplies (K2.01, K6.12)
+
+The primary power sources for the Reactor Protection System are described in Chapter 8; the source of electrical power for the measuring elements and the actuation circuits in the engineered safety features instrumentation is also from these buses. (UFSAR §7.2.2.4) The AC power feeds to the Solid State Logic System follow the split-bus concept of WCAP-7488-L. Salem-specific exceptions: (1) the fuse in series to the DC power supplies via a filter is not in series with the filter — the DC supplies are powered directly from the AC vital bus feeds, with the fuse in series with the input relays; (2) in Train A, vital instrument Buses I and IV (instead of I and II) power the DC supplies, while in Train B, Buses II and III (instead of III and IV) power the DC supplies; (3) in Train B, Bus II powers the slave relays (instead of Bus IV). (UFSAR §7.2.2.2)
+
+### Manual Actuation (A4.01)
+
+Means are provided for manual initiation of protective-system action; failure in the automatic system does not prevent manual actuation of protective functions, and manual actuation is designed to require operation of a minimum of equipment. (UFSAR §7.2.1.6) A manual trip signal is initiated by the Control Room operator depressing either one of two pushbuttons; since either button actuates both Train A and Train B logic, <span class="hi-exam">the manual trip is not testable at power</span>. (UFSAR §7.2.2.3) The manual actuating devices are independent of the automatic trip circuitry and are not subject to failures that make the automatic circuitry inoperable; actuating either of the two manual trip switches initiates a reactor trip and a turbine trip. (UFSAR §7.2.2.5)
 
 **Exam & operating coverage:**
 

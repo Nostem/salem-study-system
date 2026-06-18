@@ -10,9 +10,13 @@ aliases:
 
 # Incores
 
-## Function
+## Function & Design Basis
 
 Incore instrumentation systems provide core temperature and flux measurements for post-accident monitoring and core power distribution mapping. Includes Core Exit Thermocouples (CETs), the incore flux mapping system, and the Subcooling Margin Monitor. (UFSAR 7.6, 7.7)
+
+The In-Core Instrumentation System consists of <span class="hi-exam">58 flux thimbles</span> that run the length of selected fuel assemblies to permit measurement of the neutron flux distribution within the reactor core, and <span class="hi-exam">58 thermocouples located at the top of the flux thimbles</span> to measure coolant outlet temperature (UFSAR §7.7.3.6). The 58 locations are designated as Flux Thimble and Thermocouple locations; the minimum number of flux thimbles and thermocouples in use, as well as the minimum number per quadrant, is controlled by the Technical Specifications (UFSAR §7.7.3.6, Note 1). The high pressure seals for the thermocouples and flux thimbles are shown on UFSAR Figure 7.7-4.
+
+The data obtained from the in-core temperature and flux distribution instrumentation, in conjunction with previously determined analytical information, can be used to determine the fission power distribution in the core at any time throughout core life; this method is more accurate than calculational techniques alone (UFSAR §7.7.3.6). The in-core instrumentation provides information used to calculate the coolant enthalpy distribution, the fuel burnup distribution, and to estimate the coolant flow distribution. Both radial and azimuthal symmetry of power distributions may be evaluated by comparing the detector and thermocouple information from one quadrant with similar data obtained from the other three quadrants (UFSAR §7.7.3.6).
 
 ## Core Exit Thermocouples (CETs)
 
@@ -20,6 +24,8 @@ CETs measure coolant temperature at the exit of fuel assemblies. Used for:
 - Post-accident core cooling assessment (inadequate core cooling monitoring)
 - Input to the Subcooling Margin Monitor
 - Core power distribution verification
+
+The CETs are <span class="hi-exam">chromel-alumel thermocouples</span> routed through the annular area between the inside and outside tubes of the flux thimble; they terminate at the top of the flux thimble, which is at the top of core (UFSAR §7.7.3.6.1). Each of the 58 flux thimbles has a <span class="hi-exam">back-up thermocouple</span> to provide greater system availability. The thermocouples are integral with the flux thimbles; if both thermocouples fail, they can be replaced by replacing the flux thimbles (UFSAR §7.7.3.6.1). Thermocouple readings are monitored by the <span class="hi-exam">core exit thermocouple processor, SPDS, and the computer</span>; the core exit thermocouple system, including the processor, meets R.G. 1.97 requirements (UFSAR §7.7.3.6.1).
 
 **Exam & operating coverage:**
 
@@ -45,9 +51,19 @@ In-Core Temperature Monitoring (CET) System: reference junction box is located o
 
 ## Incore Flux Mapping System
 
-Moveable incore detectors are inserted into thimble tubes to map the core power distribution. Used for:
+Miniature neutron flux detectors, remotely positioned in the core, provide remote readout for flux mapping (UFSAR §7.7.3.6.2). The basic system for inserting these detectors is shown on UFSAR Figures 7.7-4 and 7.7-6. Used for:
 - Verification of power distribution limits (FQ, F-delta-H)
 - Calibration of excore nuclear instruments
+
+Retractable thimbles, into which the miniature detectors are driven, are pushed into the reactor core through conduits that extend from the bottom of the reactor vessel down through the concrete shield area to a thimble seal table (UFSAR §7.7.3.6.2). The thimbles are closed at the leading ends, are dry inside, and serve as the pressure barrier between the reactor water pressure and the atmosphere; mechanical seals between the retractable thimbles and the conduits are provided at the seal line. The thimbles are a <span class="hi-exam">tube within a tube</span>; the space between the inner and outer tube routes the thermocouple wires. Normally only the outside of the outer tube is exposed to reactor pressure, but on a failure of the outer tube the <span class="hi-exam">inner tube can withstand full reactor pressure</span> (UFSAR §7.7.3.6.2). During reactor operation the retractable thimbles are stationary; they are <span class="hi-exam">extracted downward from the core during refueling</span> to avoid interference within the core (UFSAR §7.7.3.6.2).
+
+The drive system consists of six combinations of drive assemblies, five-path rotary transfer devices, and ten-path rotary transfer devices (UFSAR Figure 7.7-6). The drive system pushes hollow helical-wrap drive cables into the core; miniature detectors are attached to the leading ends of the cables, with small diameter sheathed coaxial cables threaded through the hollow centers back to the ends of the drive cables (UFSAR §7.7.3.6.2). The Control and Readout System rapidly traverses the miniature detectors to and from the core while plotting thermal neutron flux versus detector position. One five-path group path selector routes the detector into one of the flux thimble groups or to storage, and a ten-path rotary transfer assembly routes a detector into any one of up to ten selectable thimbles (UFSAR §7.7.3.6.2). Each detector provides axial flux distribution data along the center of a fuel assembly; various radial positions of detectors are then compared to obtain a flux map for a region of the core (UFSAR §7.7.3.6.2).
+
+The thimbles are distributed nearly uniformly over the core, with about the same number of thimbles in each quadrant (UFSAR §7.7.3.6.2). NRC-approved methods for Westinghouse plants using the movable in-core fission chamber detector system statistically support a 4% nuclear enthalpy rise hot channel factor (F-delta-H) uncertainty; a 5% measurement uncertainty and a 3% manufacturing tolerance are approved for the local nuclear heat flux hot channel factor (FQ). Therefore the measured F-delta-H is increased by 4% for possible instrument error, while the measured FQ is increased by 8.15% (1.05 x 1.03) to allow for possible instrument error and manufacturing tolerances (UFSAR §7.7.3.6.2). This unit has the capability for using fixed in-core detectors, if required (UFSAR §7.7.3.6.2).
+
+## Design Features & Interlocks
+
+Manually-operated isolation valves on each thimble allow free passage of the detector and drive cable when open; when closed, these valves prevent steam leakage from the core in case of a thimble rupture (UFSAR §7.7.3.6.2). Provision is made to separately route each detector into a <span class="hi-exam">common flux thimble to permit cross calibration of the detectors</span> (UFSAR §7.7.3.6.2). Limit switches in each tubing run provide signals to the path display to indicate the active detector path during the flux mapping operation. In Unit 1 each gear box drives an encoder for position indication; in Unit 2 the system includes equipment to provide position indication for each detector (UFSAR §7.7.3.6.2).
 
 ## Subcooling Margin Monitor
 
