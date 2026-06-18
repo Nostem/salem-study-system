@@ -17,12 +17,16 @@ Provides direction for operating the 2C (swing) Emergency Diesel Generator, incl
 
 ### Section 5.8 — Unloading the 2C EDG (paralleled)
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2014 IP-i</div>
 With the 2C EDG paralleled on the 2C 4KV Vital Bus, unload it before opening the output breaker (Step 5.8.1): lower real load (KW) using the <span class="hi-exam">SPEED CONTROL SWITCH (GS)</span> and reactive load (KVAR) using the <span class="hi-exam">VOLTAGE CONTROL SWITCH (VCS)</span>, alternately going to LOWER while monitoring Generator KW and KVAR. The cover NOTE directs placing the GENERATOR CIRCUIT BREAKER SWITCH to TRIP <span class="hi-exam">as soon as EDG load is reduced to 200 KW</span> (KVAR to 50-100 KVAR OUT). Open the 2C output breaker (Step 5.8.3) by any of: open <span class="hi-exam">2CD1AX6D</span> (64' Swgr Rm), press the 2C BREAKER OPEN pushbutton (2CC3), or place <span class="hi-exam">2C-DF-GCP-3 GENERATOR CIRCUIT BREAKER SWITCH (BCS)</span> to TRIP at the 2C D/G Control Panel. With the breaker open, Generator KW and KVAR indicate 0 and Generator Voltage indicates 4160 VAC. Allow the diesel to run unloaded ≥ 3 minutes before stopping (Step 5.8.4).
 </div>
 
 ### Section 5.9 — Stopping the 2C EDG
+
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2014 IP-i</div>

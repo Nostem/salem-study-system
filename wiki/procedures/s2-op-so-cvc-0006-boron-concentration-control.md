@@ -15,9 +15,11 @@ Provides direction for boration and dilution operations, including RWST makeup c
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 RO-A1.b</div>
-Section 5.8.3 — RWST Makeup: determine boric acid flowrate from S2.RE-RA.ZZ-0012 figures based on RWST and BAST boron concentrations, then calculate time to raise RWST level to TS minimum using tank capacity curves and total makeup flow (boric acid + primary water).
+<div class="callout-label">JPM — 2015 Sim-b</div>
+Section 5.2 — Manual Makeup Mode, reached from AB.CVC-0001 after 2LT-112 fails high. Determine the Boric Acid Flow Setpoint from <span class="hi-exam">Figure 100A</span> (900 ppm RCS / 6700 ppm BAST, 62 gpm PW flow → slightly less than 10 gpm; 9-11 gpm allowable). Critical sequence: 5.2.3 press Makeup Control Mode Select <span class="hi-exam">STOP</span> → 5.2.4 place 2CV179 (PW) in MANUAL and CLOSE → 5.2.5 place 2CV172 (BA) in MANUAL and CLOSE → 5.2.6 open a makeup flowpath (2CV185 charging-pump-suction preferred, or 2CV181) → 5.2.7 start a Primary Water Pump and a Boric Acid Pump MANUAL/FAST → 5.2.8 set BA flow on FI110A → 5.2.10 set PW flow on FI111A to <span class="hi-exam">62 gpm +/- 2</span>. When makeup complete, 5.2.12 closes 2CV179/2CV172/2CV185/2CV181, stops the PW pump, and returns the BA pump to SLOW.
 </div>
 
 <div class="callout callout-jpm">
@@ -31,8 +33,8 @@ Section 5.2 — Manual Makeup Mode: with 900 ppm RCS boron and 6700 ppm BAST con
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 Sim-b</div>
-Section 5.2 — Manual Makeup Mode, reached from AB.CVC-0001 after 2LT-112 fails high. Determine the Boric Acid Flow Setpoint from <span class="hi-exam">Figure 100A</span> (900 ppm RCS / 6700 ppm BAST, 62 gpm PW flow → slightly less than 10 gpm; 9-11 gpm allowable). Critical sequence: 5.2.3 press Makeup Control Mode Select <span class="hi-exam">STOP</span> → 5.2.4 place 2CV179 (PW) in MANUAL and CLOSE → 5.2.5 place 2CV172 (BA) in MANUAL and CLOSE → 5.2.6 open a makeup flowpath (2CV185 charging-pump-suction preferred, or 2CV181) → 5.2.7 start a Primary Water Pump and a Boric Acid Pump MANUAL/FAST → 5.2.8 set BA flow on FI110A → 5.2.10 set PW flow on FI111A to <span class="hi-exam">62 gpm +/- 2</span>. When makeup complete, 5.2.12 closes 2CV179/2CV172/2CV185/2CV181, stops the PW pump, and returns the BA pump to SLOW.
+<div class="callout-label">JPM — 2023 RO-A1.b</div>
+Section 5.8.3 — RWST Makeup: determine boric acid flowrate from S2.RE-RA.ZZ-0012 figures based on RWST and BAST boron concentrations, then calculate time to raise RWST level to TS minimum using tank capacity curves and total makeup flow (boric acid + primary water).
 </div>
 
 ## Connections

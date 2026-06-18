@@ -22,6 +22,8 @@ Provides the procedure for releasing the contents of 22 Waste Gas Decay Tank to 
 - Step 5.2.13: Monitor during release — calculate average release rate every 10 minutes, record MET data, check for termination conditions (pressure downstream of 2WG38 >8.0 psig or 2WG41 closure)
 - Terminate when 22 GDT pressure reaches 10 psig: reduce Flow Bias to <0%, close 2WG41-SWT, close 22WG34
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2019 IP-k</div>
 22 GDT release per S2.OP-SO.WG-0009: same latch-and-set sequence as S2.OP-SO.WG-0008 (21 GDT). Key differences: discharge valves are <span class="hi-exam">22WG31 and 22WG34</span>, pressure instrument is <span class="hi-exam">PIS2037</span> (vs PIS1036 for 21 GDT). Release terminates at <span class="hi-exam">10 psig</span> tank pressure. 2WG38 downstream pressure >8.0 psig also requires termination. Monitoring during release includes calculating average release rate every <span class="hi-exam">10 minutes</span> and recording MET data.

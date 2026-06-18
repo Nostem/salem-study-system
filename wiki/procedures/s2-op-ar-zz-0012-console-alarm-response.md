@@ -22,6 +22,8 @@ Provides alarm response guidance for console alarms on Salem Unit 2, including t
 - Rods are held in position by the stationary gripper coil energized at reduced current
 - Moveable gripper coil is de-energized
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q55</div>
 Per S2.OP-AR.ZZ-0012, an <span class="hi-exam">Urgent Failure alarm prevents all rod motion in Manual or Automatic</span>. Rods are held in position by the stationary gripper coil energized at reduced current. Moveable gripper coil is de-energized.
@@ -33,6 +35,8 @@ Per S2.OP-AR.ZZ-0012, an <span class="hi-exam">Urgent Failure alarm prevents all
 - UV (undervoltage) coil is de-energized to trip — it remains functional
 - 2CC2 RTB pushbuttons ONLY energize the shunt trip coil — they are non-functional when shunt coil power is lost
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q38</div>
 "LOSS OF TRIPPING CAPABILITY" alarm on RTB "A": the <span class="hi-exam">shunt trip coil will NOT be capable of opening RTB "A"</span> because the alarm indicates loss of power to the shunt coil. <span class="hi-exam">UV trip coil remains functional</span> (it de-energizes to trip). <span class="hi-trap">2CC2 pushbuttons ONLY energize the shunt coil — with shunt coil power lost, they cannot trip the RTB.</span>
@@ -40,12 +44,16 @@ Per S2.OP-AR.ZZ-0012, an <span class="hi-exam">Urgent Failure alarm prevents all
 
 ### PRT VENT VALVE (2PR15) INTERLOCK
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q34</div>
 Page 51-52 — PRT vent valve interlock: <span class="hi-exam">2PR15 (PRT Vent Valve) is interlocked to receive a SHUT signal at <span class="val-alarm">10 psig</span> in PRT</span>. The PRT <span class="hi-exam">Rupture Diaphragm actuates at <span class="val-trip">100 psig</span></span> in the PRT (separate from the 2PR15 interlock setpoint). (Source: this procedure rev 39)
 </div>
 
 ### PRIMARY WATER FLOW DEVIATION
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q31</div>
@@ -58,6 +66,8 @@ Primary Water Flow Deviation Alarm setpoint: <span class="hi-exam"><span class="
 </div>
 
 ### VCT LEVEL HI-LO
+
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2015 Sim-b</div>

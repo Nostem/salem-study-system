@@ -15,9 +15,11 @@ Provides direction for performing periodic testing of the Emergency Control Air 
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q54</div>
-Testing per this procedure requires knowledge of ECAC power supplies. <span class="hi-exam">#1 ECAC is powered from the 1C 460V Vital Bus</span>. A trip of 1C 4KV to 460V breaker 1C4D would result in loss of the #1 ECAC. <span class="hi-trap">#1 Station Air Compressor (SAC) is powered from 1H 4KV Group Bus — do not confuse SAC power supplies with ECAC power supplies.</span>
+<div class="callout-label">Exam — 2015 Q62</div>
+PT.CA-001 P&amp;L 3.4 directs operators to <span class="hi-exam">manually trip the ECAC after 25 seconds of low oil pressure</span> — but this requires operator action, so with NO operator action assumed it does not apply (the ECAC remains running). See [[Control Air]].
 </div>
 
 <div class="callout callout-exam">
@@ -26,8 +28,8 @@ Testing the Unit 2 ECAC under this procedure: <span class="hi-exam">Unit 2 ECAC 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q62</div>
-PT.CA-001 P&amp;L 3.4 directs operators to <span class="hi-exam">manually trip the ECAC after 25 seconds of low oil pressure</span> — but this requires operator action, so with NO operator action assumed it does not apply (the ECAC remains running). See [[Control Air]].
+<div class="callout-label">Exam — 2020 Q54</div>
+Testing per this procedure requires knowledge of ECAC power supplies. <span class="hi-exam">#1 ECAC is powered from the 1C 460V Vital Bus</span>. A trip of 1C 4KV to 460V breaker 1C4D would result in loss of the #1 ECAC. <span class="hi-trap">#1 Station Air Compressor (SAC) is powered from 1H 4KV Group Bus — do not confuse SAC power supplies with ECAC power supplies.</span>
 </div>
 
 ## Connections

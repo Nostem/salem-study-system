@@ -15,9 +15,11 @@ Provides instructions for initiating and operating the Residual Heat Removal sys
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q31</div>
-To <span class="hi-exam">INCREASE the cooldown rate</span>: <span class="hi-exam">raise 21RH18 demand</span> (increases flow through RHR HX) and <span class="hi-exam">lower 2RH20 demand</span> (decreases RHR HX bypass flow). To LOWER the cooldown rate: lower RH18 demand and raise RH20 demand. RH18 is the RHR HX Flow Control Valve; RH20 is the RHR HX Bypass Valve.
+<div class="callout-label">Exam — 2012 Q33</div>
+To <span class="hi-exam">LOWER the cooldown rate</span> (Rev 27): throttle <span class="hi-exam">CLOSED on 21RH18 (RHR HX Flow Control valve)</span> while throttling <span class="hi-exam">OPEN on 2RH20 (RHR HX Bypass valve)</span> — less flow through the RHR HX while total RHR system flow is held constant. <span class="hi-trap">Throttling both RH18 and RH20 closed does NOT maintain constant flow.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -26,8 +28,8 @@ SDC mode temperature control: <span class="hi-exam">throttling 2RH20 (RHR HX Byp
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q33</div>
-To <span class="hi-exam">LOWER the cooldown rate</span> (Rev 27): throttle <span class="hi-exam">CLOSED on 21RH18 (RHR HX Flow Control valve)</span> while throttling <span class="hi-exam">OPEN on 2RH20 (RHR HX Bypass valve)</span> — less flow through the RHR HX while total RHR system flow is held constant. <span class="hi-trap">Throttling both RH18 and RH20 closed does NOT maintain constant flow.</span>
+<div class="callout-label">Exam — 2020 Q31</div>
+To <span class="hi-exam">INCREASE the cooldown rate</span>: <span class="hi-exam">raise 21RH18 demand</span> (increases flow through RHR HX) and <span class="hi-exam">lower 2RH20 demand</span> (decreases RHR HX bypass flow). To LOWER the cooldown rate: lower RH18 demand and raise RH20 demand. RH18 is the RHR HX Flow Control Valve; RH20 is the RHR HX Bypass Valve.
 </div>
 
 ## Connections

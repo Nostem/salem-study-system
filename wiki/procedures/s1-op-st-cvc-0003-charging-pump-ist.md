@@ -18,6 +18,8 @@ Quarterly (92-day) ASME inservice test (IST) surveillance for the 11 Centrifugal
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2015 RO-A2</div>
 Surveillance-review JPM. The applicant reviews a completed S1.OP-ST.CVC-0003 against the S1.RA-ST.CVC-0003 Acceptance Criteria (Step 5.3) and must catch two mis-classified data points:

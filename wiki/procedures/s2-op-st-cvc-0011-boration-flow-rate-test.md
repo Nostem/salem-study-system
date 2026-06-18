@@ -18,16 +18,18 @@ Surveillance procedure that demonstrates Boration Flow Capability to the RCS —
 
 ## Key Actions / Information
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 Sim-a</div>
-The ≥36 gpm Boric Acid Flow value specified throughout this procedure satisfies the <span class="hi-exam">33 gpm requirement of Technical Specification 4.1.2.2.d plus 3 gpm</span> for instrument uncertainty associated with instrument loops 2FT110 and 2FT113 (per PR#971016106). Section 5.1 verifies the normal makeup flowpath: the test is recorded <span class="hi-exam">SAT</span> when <span class="val-normal">2FI110A indicates ≥ 36 gpm</span>. Section 5.2 verifies the rapid borate flowpath via 2CV175 (RAPID BORATE STOP VALVE); test results are read on <span class="hi-exam">2FI113A</span>. Steps required to meet Technical Specification acceptance criteria are identified with dollar signs ($) and, if not satisfactorily completed, may have reportability requirements and shall be brought to the immediate attention of the SM/CRS.
-</div>
-
 ### Precautions & Limitations (from JPM steps)
 
 - Boron addition rate is essentially the same whether one or both Boric Acid Transfer Pumps are operating (due to system limitations).
 - Allow 2CV175, RAPID BORATE STOP VALVE, to full stroke prior to reversing direction.
 - ENSURE the Charging System is in service IAW S2.OP-SO.CVC-0001(Q), Charging, Letdown, and Seal Injection, before performing the test.
+
+**Exam & operating coverage:**
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-a</div>
+The ≥36 gpm Boric Acid Flow value specified throughout this procedure satisfies the <span class="hi-exam">33 gpm requirement of Technical Specification 4.1.2.2.d plus 3 gpm</span> for instrument uncertainty associated with instrument loops 2FT110 and 2FT113 (per PR#971016106). Section 5.1 verifies the normal makeup flowpath: the test is recorded <span class="hi-exam">SAT</span> when <span class="val-normal">2FI110A indicates ≥ 36 gpm</span>. Section 5.2 verifies the rapid borate flowpath via 2CV175 (RAPID BORATE STOP VALVE); test results are read on <span class="hi-exam">2FI113A</span>. Steps required to meet Technical Specification acceptance criteria are identified with dollar signs ($) and, if not satisfactorily completed, may have reportability requirements and shall be brought to the immediate attention of the SM/CRS.
+</div>
 
 ## Connections
 

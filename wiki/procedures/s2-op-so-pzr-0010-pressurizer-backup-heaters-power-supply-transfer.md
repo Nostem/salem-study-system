@@ -16,9 +16,21 @@ Provides direction for transferring the pressurizer backup heater groups between
 
 ### Section 5.3 — Transfer to Emergency Power Supply
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q39</div>
+Backup heater group emergency power supplies (the transfer this procedure performs): <span class="hi-exam">21 Backup Heater Group emergency-feeds from the 2C vital bus; 22 Backup Heater Group emergency-feeds from the 2A vital bus</span>. Control Group heaters (2G non-vital) have <span class="hi-exam">no emergency supply</span>. So if the <span class="hi-exam">2A 4KV Vital Bus fails to reenergize after a LOOP, only 21 Backup Heater Group can be made available</span> to maintain PZR pressure.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q11</div>
+Procedural caution: <span class="hi-exam">"Aligning pressurizer heaters to vital bus adds approximately 210 KW to bus load"</span>. Maximum diesel generator load is <span class="hi-exam"><span class="val-alarm">2750 KW</span> (2000 hr rating)</span>. To add PZR heaters without exceeding the 2000 hr limit, current DG loading must be adjusted to no greater than <span class="hi-exam">2750 - 210 = 2540 KW</span>.
+</div>
+
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 IP-i</div>
-Transfer of 22 Backup Group PZR heaters to emergency power (2A 460V Vital Bus) requires: verify 2AX1AX14X is OPEN, direct NCO to place 22 B/U Group in MANUAL and press OFF pushbutton, verify 2EX1EP2EPX is OPEN, remove interlock key from 2EX1EP2EPX, place <span class="hi-exam">11 of 14 disconnects in OFF</span> (only 3 remain ON to limit load within emergency bus capacity), place <span class="hi-exam">2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH in ON</span> using JAM key to unlock, then insert interlock key and <span class="hi-exam">UNLOCK breaker 2AX1AX14X</span>. This limits heater load to 3 of 14 heater groups to stay within the 460V Vital Bus capacity.
+<div class="callout-label">JPM — 2014 IP-j</div>
+Section 5.3 in-plant transfer of 22 Backup Group to emergency power (Rev 10; initial conditions: <span class="hi-exam">2A EDG carrying 2A Vital Bus loaded to 2400 KW</span>): verify 2AX1AX14X (84' Swgr Rm) OPEN; direct NCO to place 22 Backup Group in MANUAL and press the 22 BACKUP OFF pushbutton; verify 2EX1EP2EPX (78' Electrical Penetration) OPEN; <span class="hi-exam">remove interlock key from 2EX1EP2EPX</span> (tab must be pushed in to rotate key); place <span class="hi-exam">eleven of the fourteen PZR heater disconnects in OFF, leaving only three ON</span> and mark the remainder N/A (limits heater load within the 2A 460V Vital Bus capacity); place <span class="hi-exam">2AX1AX14X-1, 2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH in ON</span> (requires the JAM key); insert the interlock key and UNLOCK breaker 2AX1AX14X (Corry Key Interlock). Critical steps in this revision: <span class="hi-exam">5.3.1, 5.3.4, 5.3.5, 5.3.6, 5.3.7</span>. The key interlock prevents aligning both the normal and emergency supplies to the heater bus at once.
 </div>
 
 <div class="callout callout-jpm">
@@ -27,18 +39,8 @@ Section 5.3 in-plant transfer (initial conditions: <span class="hi-exam">2A EDG 
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 IP-j</div>
-Section 5.3 in-plant transfer of 22 Backup Group to emergency power (Rev 10; initial conditions: <span class="hi-exam">2A EDG carrying 2A Vital Bus loaded to 2400 KW</span>): verify 2AX1AX14X (84' Swgr Rm) OPEN; direct NCO to place 22 Backup Group in MANUAL and press the 22 BACKUP OFF pushbutton; verify 2EX1EP2EPX (78' Electrical Penetration) OPEN; <span class="hi-exam">remove interlock key from 2EX1EP2EPX</span> (tab must be pushed in to rotate key); place <span class="hi-exam">eleven of the fourteen PZR heater disconnects in OFF, leaving only three ON</span> and mark the remainder N/A (limits heater load within the 2A 460V Vital Bus capacity); place <span class="hi-exam">2AX1AX14X-1, 2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH in ON</span> (requires the JAM key); insert the interlock key and UNLOCK breaker 2AX1AX14X (Corry Key Interlock). Critical steps in this revision: <span class="hi-exam">5.3.1, 5.3.4, 5.3.5, 5.3.6, 5.3.7</span>. The key interlock prevents aligning both the normal and emergency supplies to the heater bus at once.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q11</div>
-Procedural caution: <span class="hi-exam">"Aligning pressurizer heaters to vital bus adds approximately 210 KW to bus load"</span>. Maximum diesel generator load is <span class="hi-exam"><span class="val-alarm">2750 KW</span> (2000 hr rating)</span>. To add PZR heaters without exceeding the 2000 hr limit, current DG loading must be adjusted to no greater than <span class="hi-exam">2750 - 210 = 2540 KW</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q39</div>
-Backup heater group emergency power supplies (the transfer this procedure performs): <span class="hi-exam">21 Backup Heater Group emergency-feeds from the 2C vital bus; 22 Backup Heater Group emergency-feeds from the 2A vital bus</span>. Control Group heaters (2G non-vital) have <span class="hi-exam">no emergency supply</span>. So if the <span class="hi-exam">2A 4KV Vital Bus fails to reenergize after a LOOP, only 21 Backup Heater Group can be made available</span> to maintain PZR pressure.
+<div class="callout-label">JPM — 2022 IP-i</div>
+Transfer of 22 Backup Group PZR heaters to emergency power (2A 460V Vital Bus) requires: verify 2AX1AX14X is OPEN, direct NCO to place 22 B/U Group in MANUAL and press OFF pushbutton, verify 2EX1EP2EPX is OPEN, remove interlock key from 2EX1EP2EPX, place <span class="hi-exam">11 of 14 disconnects in OFF</span> (only 3 remain ON to limit load within emergency bus capacity), place <span class="hi-exam">2EP PZR HTR BUS EMERGENCY FEED DISCONNECT SWITCH in ON</span> using JAM key to unlock, then insert interlock key and <span class="hi-exam">UNLOCK breaker 2AX1AX14X</span>. This limits heater load to 3 of 14 heater groups to stay within the 460V Vital Bus capacity.
 </div>
 
 ## Connections

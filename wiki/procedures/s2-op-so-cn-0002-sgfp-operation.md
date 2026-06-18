@@ -17,9 +17,11 @@ Provides guidance for operating the Steam Generator Feed Pumps (SGFPs) including
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q44</div>
-When an SGFP is removed from service per S2.OP-SO.CN-0002, the procedure ensures the pump is placed in the <span class="hi-exam">tripped condition</span>. This is significant because the "trip of both SGFPs" signal that generates an automatic MDAFW pump start requires both SGFPs to be in a tripped state. With 22 SGFP already tripped (removed from service), the trip of 21 SGFP satisfies the interlock and <span class="hi-exam">both MDAFW pumps start immediately</span>.
+<div class="callout-label">Exam — 2012 Q53</div>
+SG Feed Delta-P (the delta between feed pressure and SG pressure) is the controlled parameter — it is <span class="hi-exam">controlled by adjusting SGFP speed and is programmed based on total % Steam Flow</span> (actual SGFP rpm is a result, not a controlled parameter). Per Exhibit 1: <span class="hi-exam">minimum D/P is 50 psid from 0-15% steam flow</span>; <span class="hi-exam">100% D/P is 150 psid</span>. At <span class="hi-exam">40% steam flow the programmed SG Feed D/P is closest to 80 psid</span>. <span class="hi-trap">60 psid is the trap value from assuming a simple linear scale across 0-100% steam flow.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -28,8 +30,8 @@ SGFP Turbine Overspeed Trip setpoint: <span class="hi-exam">6080 rpm</span>. The
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q53</div>
-SG Feed Delta-P (the delta between feed pressure and SG pressure) is the controlled parameter — it is <span class="hi-exam">controlled by adjusting SGFP speed and is programmed based on total % Steam Flow</span> (actual SGFP rpm is a result, not a controlled parameter). Per Exhibit 1: <span class="hi-exam">minimum D/P is 50 psid from 0-15% steam flow</span>; <span class="hi-exam">100% D/P is 150 psid</span>. At <span class="hi-exam">40% steam flow the programmed SG Feed D/P is closest to 80 psid</span>. <span class="hi-trap">60 psid is the trap value from assuming a simple linear scale across 0-100% steam flow.</span>
+<div class="callout-label">Exam — 2020 Q44</div>
+When an SGFP is removed from service per S2.OP-SO.CN-0002, the procedure ensures the pump is placed in the <span class="hi-exam">tripped condition</span>. This is significant because the "trip of both SGFPs" signal that generates an automatic MDAFW pump start requires both SGFPs to be in a tripped state. With 22 SGFP already tripped (removed from service), the trip of 21 SGFP satisfies the interlock and <span class="hi-exam">both MDAFW pumps start immediately</span>.
 </div>
 
 ## Connections

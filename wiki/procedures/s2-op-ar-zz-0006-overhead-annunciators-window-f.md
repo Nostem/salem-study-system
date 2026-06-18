@@ -14,10 +14,7 @@ Alarm response procedure for Unit 2 overhead annunciator panel Window F, coverin
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q2</div>
-The "F" windows have <span class="hi-exam">dual backlights, red and white</span>. The first signal generated to trip the reactor is locked in <span class="hi-exam">RED</span>, and can <span class="hi-exam">only be reset with a keyswitch and SM permission</span>. The RED box indicates the <span class="hi-trap">first TRIP signal — NOT the first AUTO TRIP signal</span>. When both a manual trip is ordered and an auto trip setpoint is exceeded (e.g., SG NR level lowering past the 14% Lo-Lo auto trip setpoint while the manual trip is being carried out), the <span class="hi-exam">Sequence of Events Recorder (SER) on Control Console 2CC1 must be reviewed</span> to determine which signal reached the RPS first and whether an ATWT occurred. Example F windows: F-3/F-11/F-19/F-27 (21–24 SG LVL LO-LO), F-36 (TRB TRIP &amp; P-9), F-44 (MAN RX TRIP INITIATED).
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q52</div>
@@ -27,6 +24,11 @@ On a Unit 2 Main Turbine trip from 100% power, the <span class="hi-exam">automat
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q87</div>
 The <span class="hi-exam">OHA F-17 ARP covers blocking the Intermediate Range channels (BLOCK INTERMEDIATE RANGE A and B pushbuttons)</span>. <span class="hi-trap">Distractor trap: an IR bistable illuminating at 15% power is NOT the expected point to block both IR channels per F-17 — the IR Hi Flux trip was already blocked above P-10, and the bistable illumination at 15% is unexpected and is investigated, not reset by blocking IR.</span> See [[Excore NIs]], [[RPS/SSPS]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q2</div>
+The "F" windows have <span class="hi-exam">dual backlights, red and white</span>. The first signal generated to trip the reactor is locked in <span class="hi-exam">RED</span>, and can <span class="hi-exam">only be reset with a keyswitch and SM permission</span>. The RED box indicates the <span class="hi-trap">first TRIP signal — NOT the first AUTO TRIP signal</span>. When both a manual trip is ordered and an auto trip setpoint is exceeded (e.g., SG NR level lowering past the 14% Lo-Lo auto trip setpoint while the manual trip is being carried out), the <span class="hi-exam">Sequence of Events Recorder (SER) on Control Console 2CC1 must be reviewed</span> to determine which signal reached the RPS first and whether an ATWT occurred. Example F windows: F-3/F-11/F-19/F-27 (21–24 SG LVL LO-LO), F-36 (TRB TRIP &amp; P-9), F-44 (MAN RX TRIP INITIATED).
 </div>
 
 ## Connections

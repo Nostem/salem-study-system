@@ -31,6 +31,8 @@ Surveillance procedure for calculating Shutdown Margin (SDM) to satisfy TS 3/4.1
 | 4.4.2.A | Power defect for required SDM | Only if SDM is UNSAT |
 | 4.4.2.B | Required reactor power level | From Figure 17A / Table 2-1, using power defect and boron concentration |
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 SRO-A1</div>
 SRO review of completed SDM calculation with <span class="hi-exam">two untrippable rods (1D4 and 1D2)</span>. The RO's calculation contained cascading errors from treating rods as dropped/misaligned instead of untrippable: used step <span class="hi-exam">4.1.6 instead of 4.1.5</span>, step <span class="hi-exam">4.2.5 instead of 4.2.4 (penalty = 4330 pcm)</span>, and the wrong rod worth formula in step <span class="hi-exam">4.2.7 ("Trippable Rod Worth with Untrippable RCCA(s)" = -2327.8 pcm)</span>. Correct SDM = <span class="hi-exam">-269.5 pcm (UNSAT)</span>, requiring power reduction to approximately <span class="hi-exam">19% RTP</span>.

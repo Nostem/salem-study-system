@@ -15,14 +15,16 @@ Operating procedure for the Control Air System, including operation of the Emerg
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q62</div>
-The Emergency Control Air Compressor (ECAC): <span class="hi-exam">at 95 psig and above Control Air header pressure, the ECAC will NOT supply the CA header</span>; after any SEC start, the only remaining ECAC trip is motor overload. With both CA headers at 96 psig before and after, a SEC stop/restart of the ECAC has <span class="hi-exam">no effect on the CA headers</span> (the Station air headers supplying CA were not affected by the bus loading).
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q63</div>
 Normal Control Air (CA) header pressure and ECAC auto-start: when supplied from Station Air through the dryers, CA runs ~5 psig below SA and cycles with the SA cycle, so <span class="hi-exam">CA normally runs between 95 and 105 psig (≈100 psig)</span>; the <span class="hi-exam">ECAC auto-starts if CA pressure drops to 85 psig</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q62</div>
+The Emergency Control Air Compressor (ECAC): <span class="hi-exam">at 95 psig and above Control Air header pressure, the ECAC will NOT supply the CA header</span>; after any SEC start, the only remaining ECAC trip is motor overload. With both CA headers at 96 psig before and after, a SEC stop/restart of the ECAC has <span class="hi-exam">no effect on the CA headers</span> (the Station air headers supplying CA were not affected by the bus loading).
 </div>
 
 ## Connections

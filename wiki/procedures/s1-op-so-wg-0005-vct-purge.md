@@ -15,14 +15,16 @@ Procedure for purging the Volume Control Tank (VCT) gas space to the plant vent 
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q98</div>
-Per step 1 of the VCT Purge Radioactive Gaseous Release Form, <span class="hi-exam">VCT purge is allowed during a GDT release</span>. The VCT Purge procedure does not prohibit concurrent operations with GDT releases.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q98</div>
 A VCT purge to the plant vent <span class="hi-exam">IS an allowed concurrent activity during a 14 WGDT release</span> per S1.OP-SO.WG-0011 page 16. Other concurrent waste-gas operations (second WGDT release, transfer between WGDTs, inter-unit waste-gas transfer) are prohibited — VCT purge is the exception.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q98</div>
+Per step 1 of the VCT Purge Radioactive Gaseous Release Form, <span class="hi-exam">VCT purge is allowed during a GDT release</span>. The VCT Purge procedure does not prohibit concurrent operations with GDT releases.
 </div>
 
 ## Connections

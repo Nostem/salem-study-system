@@ -15,6 +15,8 @@ System operating procedure for removing dissolved hydrogen from the Reactor Cool
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q33</div>
 Before opening the RCS for a refueling outage, hydrogen must be removed to prevent <span class="hi-exam">an explosive H2 concentration when oxygen is introduced to the system</span>. Both chemical (addition) and <span class="hi-exam">mechanical (replacement of H2 with N2) degasses are performed during a shutdown/cooldown</span>; mechanical degas is most effective at NOP/NOT. <span class="hi-trap">Chemical degas is performed when RCS temperature is less than 250°F (pre-req 3.1.7), and a chemical addition of H2O2 is used to initiate a controlled crud burst — not to remove hydrogen.</span>

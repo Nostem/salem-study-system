@@ -18,6 +18,8 @@ Transfer of waste gas between Waste Gas Decay Tanks (WGDTs) and between unit was
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q98</div>
 <span class="hi-exam">Waste GAS cannot be transferred from one unit to the other</span> — only waste LIQUID can be transferred between units. Waste-gas transfer between Unit 2 Vent Header and Unit 1 Waste Gas Compressor suction is NOT an allowed operation.

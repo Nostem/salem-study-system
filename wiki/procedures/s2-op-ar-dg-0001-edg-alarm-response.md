@@ -15,6 +15,8 @@ Provides alarm response guidance for Emergency Diesel Generator alarms, includin
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q79</div>
 EDG Engine Lube Oil Header Low Pressure trip setpoint: <span class="hi-exam">EDG trips when lube oil header pressure FIRST lowers below <span class="val-trip">40 psig</span></span>. <span class="hi-trap">Trap: the EDG ENGINE LUBE OIL HEADER LOW PRESSURE ALARM actuates at <span class="val-alarm">60 psig</span> — this is the alarm, not the trip. The trip occurs at 40 psig, 20 psi below the alarm.</span>

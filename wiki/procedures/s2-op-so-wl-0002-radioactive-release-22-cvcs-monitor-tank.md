@@ -14,6 +14,8 @@ Controls the release of the contents of the 22 CVCS Monitor Tank to the Delaware
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q100</div>
 A 22 CVCS Monitor Tank release was performed and secured per this procedure, but later sample review found the isotopic concentration exceeded the <span class="hi-exam">ECG EAL RU1.3 Unusual Event threshold of 2X the ODCM for &gt;60 minutes</span>. Because the condition was identified more than one hour after it occurred and the release was already secured (condition no longer exists), it is an <span class="hi-exam">after-the-fact event</span> — no emergency declaration is required; a non-emergency One-Hour Report is initiated per Salem ECG Section 8.6.

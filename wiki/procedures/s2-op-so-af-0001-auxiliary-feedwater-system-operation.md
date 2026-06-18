@@ -18,6 +18,8 @@ Provides guidance for operation of the Salem Unit 2 Auxiliary Feedwater (AFW) sy
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q53</div>
 Section 5.10 — Alternate Sources Alignment: alternate water sources can be aligned to the AFW pump suction header through the <span class="hi-exam">normally jacked-closed AF52 Alternate Suction Valves</span> from <span class="hi-exam">Demin Water, Fresh Water / Fire Protection, and Service Water</span>. During alignment, operators are instructed to <span class="hi-exam">ensure open the Auto Vent Isolation Valves 21-23AF140</span>. The <span class="hi-exam">21-23AF141 Auto Vent Release valves</span> allow the alternate suction line to <span class="hi-exam">fill and vent through the auto vents, which close when the line is vented</span> — preventing AFW line voiding and water hammer prior to AFW pump start on the alternate source.

@@ -15,6 +15,13 @@ Procedure for releasing the contents of 14 Waste Gas Decay Tank (WGDT) to the pl
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q98</div>
+During a 14 WGDT release IAW S1.OP-SO.WG-0011: <span class="hi-exam">only a single WGDT is allowed to be released at a time</span> (page 3); <span class="hi-exam">the release procedure specifically allows a VCT purge to plant vent to occur during the WGDT release</span> (page 16); <span class="hi-exam">the release procedure specifically disallows transfer of gas between tanks when another tank is being released</span> (page 3). Waste LIQUID can be transferred between units, but waste GAS cannot.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q98</div>
 During a GDT release, the following restrictions apply:
@@ -23,11 +30,6 @@ During a GDT release, the following restrictions apply:
 <li>P&L 3.3: <span class="hi-exam">"DO NOT transfer Waste Gas from one GDT to another during the GDT Release."</span></li>
 </ul>
 A VCT Purge to the plant vent IS allowed during a GDT release — the discharge procedure does not prohibit it. <span class="hi-trap">Trap: waste gas cannot be transferred between units or between GDTs during a release, but VCT purge is permitted.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q98</div>
-During a 14 WGDT release IAW S1.OP-SO.WG-0011: <span class="hi-exam">only a single WGDT is allowed to be released at a time</span> (page 3); <span class="hi-exam">the release procedure specifically allows a VCT purge to plant vent to occur during the WGDT release</span> (page 16); <span class="hi-exam">the release procedure specifically disallows transfer of gas between tanks when another tank is being released</span> (page 3). Waste LIQUID can be transferred between units, but waste GAS cannot.
 </div>
 
 <div class="callout callout-jpm">

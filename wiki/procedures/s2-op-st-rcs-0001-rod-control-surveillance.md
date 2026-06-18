@@ -23,19 +23,11 @@ Performs quarterly surveillance test of control rod assemblies to verify each ro
 - Step 4.1.10.9: Restore Control Bank D to pre-test position (ARO)
 - Step 4.1.11.3: Place Bank Selector Switch in AUTO and verify normal rod control
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 Sim-a</div>
-After completing the surveillance and placing the rod bank selector switch in AUTO, an <span class="hi-exam">uncontrolled rod insertion malfunction</span> activates. Rods step in with no runback. Place switch in Manual — if rod motion does NOT stop, <span class="hi-exam">manually trip the reactor</span>. Verify turbine power >15% before returning to AUTO.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 Sim-a</div>
-Same rod surveillance procedure. At step 4.1.11.3, uncontrolled rod insertion in <span class="hi-exam">both AUTO and MANUAL</span> (MALF RD0045). After placing switch in Manual and rods NOT stopping, <span class="hi-exam">manually trip the reactor</span>. Operator may reference AB.ROD-0003 for Rx trip direction.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 Sim-c</div>
-Same rod surveillance. Step 5.1.10.B-G: place Bank Selector in CBD, insert <span class="hi-exam">15 steps</span>, verify all rods moved at least 10 steps on P-250, record SAT, restore to ARO. At Step 5.1.11.C, place switch in AUTO (Turbine Power >15%). Uncontrolled rod insertion activates (MALF RD0045). Rods insert in <span class="hi-exam">both AUTO and MANUAL</span>. Operator <span class="hi-exam">manually trips the reactor</span>. Same discriminating step tested across 2020, 2022, and 2023 exams.
+<div class="callout-label">JPM — 2012 Sim-a</div>
+Rev. 20 Shutdown Bank operability verification at steady-state 100% power. Insert Shutdown Bank A (Step 5.1.2): Bank Selector in <span class="hi-exam">SBA</span>, GRP. SELECT "C" lights at Power Cabinets <span class="hi-exam">21AC and 22AC</span>, maneuver ≥10 steps, verify on P-250, restore to ARO. Insert Shutdown Bank B (Step 5.1.3): Bank Selector in <span class="hi-exam">SBB</span>, Power Cabinets <span class="hi-exam">21BD and 22BD</span>, maneuver ≥10 steps. <span class="hi-exam">Alternate path: while checking rod position after SBB insertion, 21 SGFP trips — operator must manually trip the reactor per P&L 3.13</span>; moving the Rod Bank Selector Switch to MAN or AUTO under these conditions is failure criteria.
 </div>
 
 <div class="callout callout-jpm">
@@ -44,8 +36,18 @@ Rev. 22 (Section 5.1) Shutdown Bank operability verification — different alter
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 Sim-a</div>
-Rev. 20 Shutdown Bank operability verification at steady-state 100% power. Insert Shutdown Bank A (Step 5.1.2): Bank Selector in <span class="hi-exam">SBA</span>, GRP. SELECT "C" lights at Power Cabinets <span class="hi-exam">21AC and 22AC</span>, maneuver ≥10 steps, verify on P-250, restore to ARO. Insert Shutdown Bank B (Step 5.1.3): Bank Selector in <span class="hi-exam">SBB</span>, Power Cabinets <span class="hi-exam">21BD and 22BD</span>, maneuver ≥10 steps. <span class="hi-exam">Alternate path: while checking rod position after SBB insertion, 21 SGFP trips — operator must manually trip the reactor per P&L 3.13</span>; moving the Rod Bank Selector Switch to MAN or AUTO under these conditions is failure criteria.
+<div class="callout-label">JPM — 2020 Sim-c</div>
+Same rod surveillance. Step 5.1.10.B-G: place Bank Selector in CBD, insert <span class="hi-exam">15 steps</span>, verify all rods moved at least 10 steps on P-250, record SAT, restore to ARO. At Step 5.1.11.C, place switch in AUTO (Turbine Power >15%). Uncontrolled rod insertion activates (MALF RD0045). Rods insert in <span class="hi-exam">both AUTO and MANUAL</span>. Operator <span class="hi-exam">manually trips the reactor</span>. Same discriminating step tested across 2020, 2022, and 2023 exams.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-a</div>
+Same rod surveillance procedure. At step 4.1.11.3, uncontrolled rod insertion in <span class="hi-exam">both AUTO and MANUAL</span> (MALF RD0045). After placing switch in Manual and rods NOT stopping, <span class="hi-exam">manually trip the reactor</span>. Operator may reference AB.ROD-0003 for Rx trip direction.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 Sim-a</div>
+After completing the surveillance and placing the rod bank selector switch in AUTO, an <span class="hi-exam">uncontrolled rod insertion malfunction</span> activates. Rods step in with no runback. Place switch in Manual — if rod motion does NOT stop, <span class="hi-exam">manually trip the reactor</span>. Verify turbine power >15% before returning to AUTO.
 </div>
 
 ## Connections

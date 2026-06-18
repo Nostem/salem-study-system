@@ -14,14 +14,35 @@ Alarm response procedure for Unit 2 overhead annunciator panel Window E, coverin
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+### ROD INSERT / ROD BOTTOM Alarms (E-8, E-16, E-48)
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q56</div>
-OHA E-8 (ROD INSERT LMT LO) alarms when rods are <span class="hi-exam">10 steps from the Rod Insertion Limit</span>. The RIL from the COLR has NOT been exceeded at this point. The required response is to <span class="hi-exam">initiate a normal boration IAW S2.OP-SO.CVC-0006, Boron Concentration Control</span>, to restore rods to their normal band. <span class="hi-trap">Emergency boration (S2.OP-SO.CVC-0008) was previously required when OHA E-16 (ROD INSERT LO-LO) alarmed, but this requirement has been removed from the OHA alarm procedures.</span>
+<div class="callout-label">Exam — 2012 Q88</div>
+OHA E-48 (ROD BOTTOM) <span class="hi-exam">clears once Control Bank A is withdrawn past 20 steps</span> during a startup (Banks B/C/D bypassed below 35 steps). E-48 reappearing and locking in as Control Bank B is withdrawn past 20 steps — with no other alarms — is <span class="hi-exam">unexpected</span> (the alarm was already clear). Place the startup on hold and enter AB.ROD-0002 (directs entry into AB.ROD-0004) or AB.ROD-0004. <span class="hi-trap">Opening the Reactor Trip Breakers is not required — IOP-3 step 5.2.19 gives a 4 hour window to terminate the startup.</span> See [[Control Rod Drive]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0004 — Rod Position Indication Failure]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q28</div>
+OHA E-48 (ROD BOTTOM): illuminates when all rod banks are on bottom; during a reactor startup it <span class="hi-exam">clears once Control Bank A is withdrawn past 20 steps</span>. Control Banks B, C, and D are bypassed by their Rod Bottom Bypass Bistable Modules below 35 steps. See [[Control Rod Drive]].
 </div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q19</div>
 During dropped rod recovery (AB.ROD-0002): after the P/A converter is reset to zero, <span class="hi-exam">OHA E-8 (RIL LO) and E-16 (RIL LO-LO) WILL annunciate</span> — these are expected alarms. OHA E-40 (ROD BANK URGENT FAILURE) will annunciate following rod withdrawal due to Power Cabinet Regulation failure with lift coil disconnect switches in OFF position. <span class="hi-trap">Resetting the group step counter to zero does NOT cause these alarms — it is the P/A converter reset that triggers the RIL alarms.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q56</div>
+OHA E-8 (ROD INSERT LMT LO) alarms when rods are <span class="hi-exam">10 steps from the Rod Insertion Limit</span>. The RIL from the COLR has NOT been exceeded at this point. The required response is to <span class="hi-exam">initiate a normal boration IAW S2.OP-SO.CVC-0006, Boron Concentration Control</span>, to restore rods to their normal band. <span class="hi-trap">Emergency boration (S2.OP-SO.CVC-0008) was previously required when OHA E-16 (ROD INSERT LO-LO) alarmed, but this requirement has been removed from the OHA alarm procedures.</span>
+</div>
+
+### SR & IR Trip Bypass Alarms (E-5, E-29)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q46</div>
+OHA <span class="hi-exam">E-5, "SR DET VOLT TRBL,"</span> is NOT expected to be in alarm 25 minutes after a trip — it indicates the Source Range instruments are energized when they should not be (with respect to turbine power above/below 15%). <span class="hi-exam">Source Range channels automatically energize ~15-18 minutes following a trip</span>, and the transition out of EOP-TRIP-1 is ~15 minutes, so the SR alarm clears. See [[Excore NIs]].
 </div>
 
 <div class="callout callout-exam">
@@ -34,20 +55,7 @@ OHA E-29 (SR &amp; IR TRIP BYP) annunciation cause during 1N35 IR channel remova
 OHA E-29 (SR & IR TRIP BYP): annunciates when <span class="hi-exam">the LEVEL TRIP switch has been placed in bypass</span> during IR channel removal from service per S2.OP-SO.RPS-0001. This alarm is expected and verified as part of the procedural steps for removing an IR channel.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q82</div>
-OHA E-20 (PZR HTR ON LVL HI): alarms when PZR level is <span class="hi-exam">5% or more above program level</span>, energizing backup PZR heaters. The ARP for E-20 directs crew to <span class="hi-exam">REDUCE charging IAW S2.OP-SO.CVC-0001</span> (normal operations procedure, NOT AB.CVC-0001). <span class="hi-trap">AB.CVC-0001 (Loss of Charging) addresses charging flow being REDUCED, not increased. A failed-high Charging Master Flow Controller causing increasing charging flow is addressed by the normal SOP, not the abnormal.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q28</div>
-OHA E-48 (ROD BOTTOM): illuminates when all rod banks are on bottom; during a reactor startup it <span class="hi-exam">clears once Control Bank A is withdrawn past 20 steps</span>. Control Banks B, C, and D are bypassed by their Rod Bottom Bypass Bistable Modules below 35 steps. See [[Control Rod Drive]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q88</div>
-OHA E-48 (ROD BOTTOM) <span class="hi-exam">clears once Control Bank A is withdrawn past 20 steps</span> during a startup (Banks B/C/D bypassed below 35 steps). E-48 reappearing and locking in as Control Bank B is withdrawn past 20 steps — with no other alarms — is <span class="hi-exam">unexpected</span> (the alarm was already clear). Place the startup on hold and enter AB.ROD-0002 (directs entry into AB.ROD-0004) or AB.ROD-0004. <span class="hi-trap">Opening the Reactor Trip Breakers is not required — IOP-3 step 5.2.19 gives a 4 hour window to terminate the startup.</span> See [[Control Rod Drive]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0004 — Rod Position Indication Failure]].
-</div>
+### PZR Level / Heater Alarms (E-20)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q38</div>
@@ -55,13 +63,15 @@ OHA E-20 (PZR HTR ON LVL HI) energizes backup PZR heaters at 5% above program. W
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q32</div>
-OHA E-41 (per S2.OP-AR.ZZ-0005 Window E-41) relates to the Letdown HX outlet high temperature. The <span class="hi-exam">2CV21 Letdown Demin Bypass Valve auto-diverts to bypass the CVCS demineralizers at 136°F</span> Letdown HX outlet temperature. See [[CVCS]], [[S2.OP-SO.CVC-0012 — Letdown HX Temperature Control]].
+<div class="callout-label">Exam — 2019 Q82</div>
+OHA E-20 (PZR HTR ON LVL HI): alarms when PZR level is <span class="hi-exam">5% or more above program level</span>, energizing backup PZR heaters. The ARP for E-20 directs crew to <span class="hi-exam">REDUCE charging IAW S2.OP-SO.CVC-0001</span> (normal operations procedure, NOT AB.CVC-0001). <span class="hi-trap">AB.CVC-0001 (Loss of Charging) addresses charging flow being REDUCED, not increased. A failed-high Charging Master Flow Controller causing increasing charging flow is addressed by the normal SOP, not the abnormal.</span>
 </div>
 
+### Letdown / CVCS Alarms (E-41)
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q46</div>
-OHA <span class="hi-exam">E-5, "SR DET VOLT TRBL,"</span> is NOT expected to be in alarm 25 minutes after a trip — it indicates the Source Range instruments are energized when they should not be (with respect to turbine power above/below 15%). <span class="hi-exam">Source Range channels automatically energize ~15-18 minutes following a trip</span>, and the transition out of EOP-TRIP-1 is ~15 minutes, so the SR alarm clears. See [[Excore NIs]].
+<div class="callout-label">Exam — 2012 Q32</div>
+OHA E-41 (per S2.OP-AR.ZZ-0005 Window E-41) relates to the Letdown HX outlet high temperature. The <span class="hi-exam">2CV21 Letdown Demin Bypass Valve auto-diverts to bypass the CVCS demineralizers at 136°F</span> Letdown HX outlet temperature. See [[CVCS]], [[S2.OP-SO.CVC-0012 — Letdown HX Temperature Control]].
 </div>
 
 ## Connections
