@@ -120,6 +120,25 @@ def first_tag(text):
 
 # ---- classification ----------------------------------------------------------
 
+def is_numeric(v):
+    try:
+        float(v)
+        return True
+    except (TypeError, ValueError):
+        return False
+
+
+def canonical_rating(e):
+    """Build the importance display, omitting a side the catalog marks non-numeric (N/A).
+    Both numeric -> '(RO x / SRO y)'; SRO-only -> '(SRO y)'; RO-only -> '(RO x)'."""
+    parts = []
+    if is_numeric(e["ro_imp"]):
+        parts.append(f"RO {fmt_rating(e['ro_imp'])}")
+    if is_numeric(e["sro_imp"]):
+        parts.append(f"SRO {fmt_rating(e['sro_imp'])}")
+    return "(" + " / ".join(parts) + ")" if parts else "(N/A)"
+
+
 def classify(body, catalog):
     name, imp = strip_importance(body)
     key = normalize_ka(name)
@@ -127,8 +146,7 @@ def classify(body, catalog):
         return "UNPARSEABLE", None, None
     if key not in catalog:
         return "NUMBER_NOT_IN_CATALOG", key, None
-    e = catalog[key]
-    canonical = f"{key} (RO {fmt_rating(e['ro_imp'])} / SRO {fmt_rating(e['sro_imp'])})"
+    canonical = f"{key} {canonical_rating(catalog[key])}"
     return "RESOLVED", key, canonical
 
 

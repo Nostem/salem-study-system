@@ -4,7 +4,7 @@ wiki/exams/2012/jpm-ip-j-start-synchronize-edg.md,064 A2.09 (3.1/3.3),064 A2.09,
 wiki/exams/2012/jpm-ip-k-loss-of-all-ac-power-sbo-diesel.md,G2.1.23 (4.3/4.4),G2.1.23,RESOLVED,G2.1.23 (RO 4.3 / SRO 4.4),In-Plant | RO/SRO | 
 wiki/exams/2012/jpm-ro-a1-1-calculate-shutdown-margin.md,2.1.25 (3.9),G2.1.25,RESOLVED,G2.1.25 (RO 3.9 / SRO 4.2),Admin | RO | 
 wiki/exams/2012/jpm-ro-a1-2-manual-afd-calculation.md,2.1.18 (3.6),G2.1.18,RESOLVED,G2.1.18 (RO 3.6 / SRO 3.8),Admin | RO | 
-wiki/exams/2012/jpm-ro-a2-rwst-operability.md,2.2.37 (3.6/4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),Admin | RO | 
+wiki/exams/2012/jpm-ro-a2-rwst-operability.md,2.2.37 (3.6/4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),Admin | RO | 
 wiki/exams/2012/jpm-ro-a3-stay-time-calculation.md,2.3.4 (3.2),G2.3.4,RESOLVED,G2.3.4 (RO 0 / SRO 0),Admin | RO | 
 wiki/exams/2012/jpm-sim-a-control-rod-operability-verification.md,001 A4.03 (4.0/3.7),001 A4.03,RESOLVED,001 A4.03 (RO 3.7 / SRO 3.7),Simulator | RO/SRO | 
 wiki/exams/2012/jpm-sim-b-forward-flow-ist-eccs-accumulator.md,006 A4.02 (4.0/3.8),006 A4.02,RESOLVED,006 A4.02 (RO 4.2 / SRO 4.2),Simulator | RO/SRO | 
@@ -15,19 +15,19 @@ wiki/exams/2012/jpm-sim-f-adjust-prt-level-pressure.md,007 A4.04 (2.6/2.6),007 A
 wiki/exams/2012/jpm-sim-g-loss-of-control-air.md,APE 065 AA2.06 (3.6/4.2),065 AA2.06,RESOLVED,065 AA2.06 (RO 0 / SRO 0),Simulator | RO/SRO | 
 wiki/exams/2012/jpm-sim-h-authorized-liquid-release.md,068 A4.03 (3.9/3.8),068 A4.03,RESOLVED,068 A4.03 (RO 3.5 / SRO 3.5),Simulator | RO/SRO | 
 wiki/exams/2012/jpm-sro-a1-1-review-surveillance-operability.md,Alternate Path,,UNPARSEABLE,,Admin | SRO | 2.1.25 (4.2) | 
-wiki/exams/2012/jpm-sro-a1-2-direct-spent-fuel-movement.md,2.1.42 (3.4),G2.1.42,RESOLVED,G2.1.42 (RO N/A / SRO 3.4),Admin | SRO | 
+wiki/exams/2012/jpm-sro-a1-2-direct-spent-fuel-movement.md,2.1.42 (3.4),G2.1.42,RESOLVED,G2.1.42 (SRO 3.4),Admin | SRO | 
 wiki/exams/2012/jpm-sro-a2-review-otsc.md,Alternate Path,,UNPARSEABLE,,Admin | SRO | 2.2.6 (3.6) | 
 wiki/exams/2012/jpm-sro-a3-radioactive-release-actions.md,2.3.11 (4.3),G2.3.11,RESOLVED,G2.3.11 (RO 3.8 / SRO 4.3),Admin | SRO | 
-wiki/exams/2012/jpm-sro-a4-1-esg1-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
-wiki/exams/2012/jpm-sro-a4-2-esg2-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
-wiki/exams/2012/jpm-sro-a4-3-esg3-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
+wiki/exams/2012/jpm-sro-a4-1-esg1-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
+wiki/exams/2012/jpm-sro-a4-2-esg2-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
+wiki/exams/2012/jpm-sro-a4-3-esg3-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
 wiki/exams/2012/q1-dropped-rod-recovery-expected-alarms.md,000003K206 / AK2.05 (RO 2.5 / SRO 2.8),003 AK2.05,RESOLVED,003 AK2.05 (RO 0 / SRO 0),
 wiki/exams/2012/q10-sgfp-trip-unexpected-alarm.md,000054G446 / 2.4.46 (RO 4.2 / SRO 4.2),G2.4.46,RESOLVED,G2.4.46 (RO 4.2 / SRO 4.2),
 wiki/exams/2012/q100-after-the-fact-radiological-release-emergency-classification.md,194001G429 / 2.4.29 (RO 3.1 / SRO 4.4),G2.4.29,RESOLVED,G2.4.29 (RO 3.1 / SRO 4.4),
 wiki/exams/2012/q11-sbo-action-before-energizing-2b-vital-bus.md,000055A203 / EA2.03 (RO 3.9 / SRO 4.7),055 EA2.03,RESOLVED,055 EA2.03 (RO 0 / SRO 0),
 wiki/exams/2012/q12-loop-directs-loss-of-rhr-initiation.md,000056K302 / AK3.02 (RO 4.4 / SRO 4.7),056 AK3.02,RESOLVED,056 AK3.02 (RO 4.1 / SRO 4.1),
 wiki/exams/2012/q13-loss-of-1d-vital-instrument-bus-indications.md,000057A203 / AA2.03 (RO 3.7 / SRO 3.9),057 AA2.03,RESOLVED,057 AA2.03 (RO 3.4 / SRO 3.8),
-wiki/exams/2012/q14-loss-of-control-air-action.md,000065G314 / 2.3.14 (RO 3.4 / SRO 3.8),G2.3.14,RESOLVED,G2.3.14 (RO N/A / SRO 3.8),
+wiki/exams/2012/q14-loss-of-control-air-action.md,000065G314 / 2.3.14 (RO 3.4 / SRO 3.8),G2.3.14,RESOLVED,G2.3.14 (SRO 3.8),
 wiki/exams/2012/q15-frcc-1-rcp-stop-criterion.md,000074K304 / EK3.04 (RO 3.9 / SRO 4.2),074 EK3.04,RESOLVED,074 EK3.04 (RO 0 / SRO 0),
 wiki/exams/2012/q16-failed-fuel-first-rad-monitor.md,000076A104 / AA1.04 (RO 3.2 / SRO 3.4),076 AA1.04,RESOLVED,076 AA1.04 (RO 3.2 / SRO 3.2),
 wiki/exams/2012/q17-abnormal-grid-rapid-load-reduction.md,000077A102 / AA1.02 (RO 3.8 / SRO 3.7),077 AA1.02,RESOLVED,077 AA1.02 (RO 3.6 / SRO 3.6),
@@ -90,7 +90,7 @@ wiki/exams/2012/q68-dollar-sign-significance-surveillance-procedure.md,194001G21
 wiki/exams/2012/q69-2cv35-troubleshooting-first-action.md,194001G220 / 2.2.20 (RO 2.6 / SRO 3.8),G2.2.20,RESOLVED,G2.2.20 (RO 2.6 / SRO 3.8),
 wiki/exams/2012/q7-pzr-master-pressure-controller-fails-high.md,000027A101 / AA1.01 (RO 4.0 / SRO 3.9),027 AA1.01,RESOLVED,027 AA1.01 (RO 3.8 / SRO 3.8),
 wiki/exams/2012/q70-gdt-pressure-lowering-confirmation.md,194001G244 / 2.2.44 (RO 4.2 / SRO 4.4),G2.2.44,RESOLVED,G2.2.44 (RO 4.2 / SRO 4.4),
-wiki/exams/2012/q71-2r19a-sg-blowdown-isol-valve-response.md,194001G314 / 2.3.14 (RO 3.4 / SRO 3.8),G2.3.14,RESOLVED,G2.3.14 (RO N/A / SRO 3.8),
+wiki/exams/2012/q71-2r19a-sg-blowdown-isol-valve-response.md,194001G314 / 2.3.14 (RO 3.4 / SRO 3.8),G2.3.14,RESOLVED,G2.3.14 (SRO 3.8),
 wiki/exams/2012/q72-loca-1-area-rad-monitor-outside-containment.md,194001G315 / 2.3.15 (RO 2.9 / SRO 3.1),G2.3.15,RESOLVED,G2.3.15 (RO 0 / SRO 0),
 wiki/exams/2012/q73-cfst-1-rcs-saturation-temp-determination.md,194001G403 / 2.4.3 (RO 3.7 / SRO 3.9),G2.4.3,RESOLVED,G2.4.3 (RO 3.7 / SRO 3.9),
 wiki/exams/2012/q74-eop-conditional-actions-applicable-all-times.md,194001G419 / 2.4.19 (RO 3.4 / SRO 4.1),G2.4.19,RESOLVED,G2.4.19 (RO 3.4 / SRO 4.1),
@@ -108,7 +108,7 @@ wiki/exams/2012/q84-mslb-losc-2-sg-pressure-rise-transition.md,00WE12A201 / EA2.
 wiki/exams/2012/q85-sae-subsequent-nrc-notification-condition-and-time.md,00WE16G430 / 2.4.30 (RO 2.7 / SRO 4.1),G2.4.30,RESOLVED,G2.4.30 (RO 2.7 / SRO 4.1),
 wiki/exams/2012/q86-second-rcp-start-rhr-pressure-transient-response.md,005000A202 / A2.02 (RO 3.5 / SRO 3.7),005 A2.02,RESOLVED,005 A2.02 (RO 4 / SRO 3.9),
 wiki/exams/2012/q87-ir-channel-i-bistable-illumination-power-ascension.md,012000A201 / A2.01 (RO 3.1 / SRO 3.6),012 A2.01,RESOLVED,012 A2.01 (RO 3.8 / SRO 3.6),
-wiki/exams/2012/q88-rod-bottom-e-48-alarm-during-startup-crs-response.md,016000G237 / 2.2.37 (RO 3.6 / SRO 4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),
+wiki/exams/2012/q88-rod-bottom-e-48-alarm-during-startup-crs-response.md,016000G237 / 2.2.37 (RO 3.6 / SRO 4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),
 wiki/exams/2012/q89-cntmt-press-channel-iv-calibration-phase-b-isolation.md,026000G450 / 2.4.50 (RO 4.2 / SRO 4.0),G2.4.50,RESOLVED,G2.4.50 (RO 4.2 / SRO 4),
 wiki/exams/2012/q9-sg-tube-leak-shutdown-stuck-rod-action.md,000038G408 / 2.4.8 (RO 3.8 / SRO 4.5),G2.4.8,RESOLVED,G2.4.8 (RO 0 / SRO 0),
 wiki/exams/2012/q90-dropped-fuel-assembly-fhb-ventilation-response.md,034000A201 / A2.01 (RO 3.6 / SRO 4.4),034 A2.01,RESOLVED,034 A2.01 (RO 4 / SRO 3.6),
@@ -116,9 +116,9 @@ wiki/exams/2012/q91-23tb40-steam-dump-fails-open-mode-3.md,039000A204 / A2.04 (R
 wiki/exams/2012/q92-inadvertent-deluge-turbine-building-fire-protection-response.md,086000A203 / A2.03 (RO 2.7 / SRO 2.9),086 A2.03,RESOLVED,086 A2.03 (RO 3.1 / SRO 2.9),
 wiki/exams/2012/q93-loca-purple-containment-path-cs-pump-procedure.md,103000G422 / 2.4.22 (RO 3.6 / SRO 4.4),G2.4.22,RESOLVED,G2.4.22 (RO 3.6 / SRO 4.4),
 wiki/exams/2012/q94-rcs-loops-required-hot-standby-bases.md,194001G132 / 2.1.32 (RO 3.8 / SRO 4.0),G2.1.32,RESOLVED,G2.1.32 (RO 3.8 / SRO 4),
-wiki/exams/2012/q95-sfp-manipulation-sro-supervision-requirement.md,194001G135 / 2.1.35 (RO 2.2 / SRO 3.9),G2.1.35,RESOLVED,G2.1.35 (RO N/A / SRO 3.9),
+wiki/exams/2012/q95-sfp-manipulation-sro-supervision-requirement.md,194001G135 / 2.1.35 (RO 2.2 / SRO 3.9),G2.1.35,RESOLVED,G2.1.35 (SRO 3.9),
 wiki/exams/2012/q96-temporary-configuration-change-approval-authority.md,194001G211 / 2.2.11 (RO 2.3 / SRO 3.3),G2.2.11,RESOLVED,G2.2.11 (RO 0 / SRO 0),
-wiki/exams/2012/q97-2a-edg-missed-surveillance-operability.md,194001G237 / 2.2.37 (RO 3.6 / SRO 4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),
+wiki/exams/2012/q97-2a-edg-missed-surveillance-operability.md,194001G237 / 2.2.37 (RO 3.6 / SRO 4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),
 wiki/exams/2012/q98-refueling-decay-time-earliest-fuel-movement.md,194001G313 / 2.3.13 (RO 3.4 / SRO 3.8),G2.3.13,RESOLVED,G2.3.13 (RO 0 / SRO 0),
 wiki/exams/2012/q99-offsite-fire-assistance-authorization-radiological-emergency.md,194001G426 / 2.4.26 (RO 3.1 / SRO 3.6),G2.4.26,RESOLVED,G2.4.26 (RO 3.1 / SRO 3.6),
 wiki/exams/2014/jpm-ip-i-unload-and-stop-edg.md,064 A2.03 (3.1/3.1),064 A2.03,RESOLVED,064 A2.03 (RO 0 / SRO 0),In-Plant | RO/SRO | 
@@ -127,7 +127,7 @@ wiki/exams/2014/jpm-ip-k-high-radiation-alarm-during-gas-release.md,2.3.11 (3.8/
 wiki/exams/2014/jpm-ro-a1-1-measure-leakage-to-containment-sump.md,2.1.25 (3.9/4.2),G2.1.25,RESOLVED,G2.1.25 (RO 3.9 / SRO 4.2),Admin | RO/SRO | 
 wiki/exams/2014/jpm-ro-a1-2-perform-qptr.md,2.1.43 (4.1),G2.1.43,RESOLVED,G2.1.43 (RO 4.1 / SRO 4.3),Admin | RO/SRO | 
 wiki/exams/2014/jpm-ro-a2-prepare-manual-tagout.md,2.2.13 (4.1),G2.2.13,RESOLVED,G2.2.13 (RO 4.1 / SRO 4.3),Admin | RO | 
-wiki/exams/2014/jpm-ro-a4-secondary-communicator-alert.md,2.4.39 (3.9),G2.4.39,RESOLVED,G2.4.39 (RO 3.9 / SRO N/A),Admin | RO | 
+wiki/exams/2014/jpm-ro-a4-secondary-communicator-alert.md,2.4.39 (3.9),G2.4.39,RESOLVED,G2.4.39 (RO 3.9),Admin | RO | 
 wiki/exams/2014/jpm-sim-a-boration-flow-capability-surveillance.md,004 A4.18 (4.3/4.4),004 A4.18,RESOLVED,004 A4.18 (RO 4.2 / SRO 4.2),Simulator | RO/SRO | 
 wiki/exams/2014/jpm-sim-b-transfer-to-cold-leg-recirc.md,E011 EA1.11 (4.2/4.2),,UNPARSEABLE,,Simulator | RO/SRO | 
 wiki/exams/2014/jpm-sim-c-pzr-pressure-malfunction-isolate-porv.md,APE 027 AA1.01 (4.0/3.9),027 AA1.01,RESOLVED,027 AA1.01 (RO 3.8 / SRO 3.8),Simulator | RO/SRO | 
@@ -172,7 +172,7 @@ wiki/exams/2014/q33-rhr-pump-4kv-vital-power-supplies.md,005000 K2.01 (RO 3.0 / 
 wiki/exams/2014/q34-small-break-loca-with-1a-bus-lockout-containment-response.md,006000 A4.01 (RO 4.1 / SRO 3.9),006 A4.01,RESOLVED,006 A4.01 (RO 4.3 / SRO 4.3),
 wiki/exams/2014/q35-unexpected-overhead-alarm-during-loca.md,006000 2.4.46 (RO 4.2 / SRO 4.2),G2.4.46,RESOLVED,G2.4.46 (RO 4.2 / SRO 4.2),
 wiki/exams/2014/q36-1pr1-porv-stuck-open-effect-and-ab-pzr-actions.md,007000 A2.01 (RO 3.9 / SRO 4.2),007 A2.01,RESOLVED,007 A2.01 (RO 4.5 / SRO 4.1),
-wiki/exams/2014/q37-ccw-tech-spec-consequence-after-2c-undervoltage.md,008000 2.2.37 (RO 3.6 / SRO 4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),
+wiki/exams/2014/q37-ccw-tech-spec-consequence-after-2c-undervoltage.md,008000 2.2.37 (RO 3.6 / SRO 4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),
 wiki/exams/2014/q38-2ps3-spray-valve-demand-fails-to-50.md,010000 K3.01 (RO 3.8 / SRO 3.9),010 K3.01,RESOLVED,010 K3.01 (RO 4.1 / SRO 4.1),
 wiki/exams/2014/q39-pr3-safety-tailpipe-temperature-constant-enthalpy.md,010000 K5.02 (RO 2.6 / SRO 3.0),010 K5.02,RESOLVED,010 K5.02 (RO 3.5 / SRO 3.5),
 wiki/exams/2014/q4-eop-loca-4-hot-leg-recirc-purpose.md,EK3.12 (RO 4.4 / SRO 4.6),,UNPARSEABLE,,
@@ -206,7 +206,7 @@ wiki/exams/2014/q64-loss-of-control-air-both-units-rx-trip.md,078000 K1.02 (RO 2
 wiki/exams/2014/q65-containment-penetration-eccs-isolation.md,103000 K4.06 (RO 3.1 / SRO 3.7),103 K4.06,RESOLVED,103 K4.06 (RO 4.1 / SRO 4.1),
 wiki/exams/2014/q66-earliest-mode-one-nco-refueling-shutdown.md,2.1.2 (RO 4.1 / SRO 4.4),G2.1.2,RESOLVED,G2.1.2 (RO 4.1 / SRO 4.4),
 wiki/exams/2014/q67-amsac-purpose-prevent-excessive.md,2.1.27 (RO 3.9 / SRO 4.0),G2.1.27,RESOLVED,G2.1.27 (RO 3.9 / SRO 4),
-wiki/exams/2014/q68-event-requiring-suspension-of-fuel-transfer.md,2.1.42 (RO 2.5 / SRO 3.4),G2.1.42,RESOLVED,G2.1.42 (RO N/A / SRO 3.4),
+wiki/exams/2014/q68-event-requiring-suspension-of-fuel-transfer.md,2.1.42 (RO 2.5 / SRO 3.4),G2.1.42,RESOLVED,G2.1.42 (SRO 3.4),
 wiki/exams/2014/q69-bezel-red-blocking-tag-sole-isolation.md,2.2.13 (RO 4.1 / SRO 4.3),G2.2.13,RESOLVED,G2.2.13 (RO 4.1 / SRO 4.3),
 wiki/exams/2014/q7-rapid-boration-alternate-method-2cv175.md,AK2.01 (RO 2.7 / SRO 2.7),,UNPARSEABLE,,
 wiki/exams/2014/q70-lowest-rcs-pressure-safety-limit-exceeded.md,2.2.22 (RO 4.0 / SRO 4.7),G2.2.22,RESOLVED,G2.2.22 (RO 4 / SRO 4.7),
@@ -218,7 +218,7 @@ wiki/exams/2014/q75-secondary-communicator-action-during-alert.md,2.4.29 (RO 3.1
 wiki/exams/2014/q76-continuous-rod-withdrawal-cause-and-response.md,000001A205 (SRO 4.6),001 A2.05,RESOLVED,001 A2.05 (RO 2 / SRO 2.3),
 wiki/exams/2014/q77-dropped-rod-recovery-procedure-transition.md,000003A201 (SRO 3.9),003 A2.01,RESOLVED,003 A2.01 (RO 4 / SRO 4),
 wiki/exams/2014/q78-offline-notification-recipients.md,000007G2.4.30 (SRO 4.1),G2.4.30,RESOLVED,G2.4.30 (RO 2.7 / SRO 4.1),
-wiki/exams/2014/q79-highest-ecg-classification.md,000029G2.4.41 (SRO 4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),
+wiki/exams/2014/q79-highest-ecg-classification.md,000029G2.4.41 (SRO 4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),
 wiki/exams/2014/q8-loss-of-rhr-preferred-restart-flow-rate.md,AK2.02 (RO 3.2 / SRO 3.2),,UNPARSEABLE,,
 wiki/exams/2014/q80-fuel-handling-incident-response.md,000036G2.4.11 (SRO 4.2),G2.4.11,RESOLVED,G2.4.11 (RO 0 / SRO 0),
 wiki/exams/2014/q81-500kv-breaker-fault-crs-response.md,000056G2.1.7 (SRO 4.7),G2.1.7,RESOLVED,G2.1.7 (RO 4.4 / SRO 4.7),
@@ -238,7 +238,7 @@ wiki/exams/2014/q93-edg-fuel-oil-transfer-pump-ts-entry.md,064000 G2.2.22 (RO 4.
 wiki/exams/2014/q94-ir-ni-status-and-required-action.md,194001 G2.1.20 (RO 4.6 / SRO 4.6),G2.1.20,RESOLVED,G2.1.20 (RO 4.6 / SRO 4.6),
 wiki/exams/2014/q95-pzr-cold-cal-level-charging-flow.md,194001 G2.1.25 (RO 3.9 / SRO 4.2),G2.1.25,RESOLVED,G2.1.25 (RO 3.9 / SRO 4.2),
 wiki/exams/2014/q96-tccp-to-permanent-change-process.md,194001 G2.2.11 (RO 2.3 / SRO 3.3),G2.2.11,RESOLVED,G2.2.11 (RO 0 / SRO 0),
-wiki/exams/2014/q97-afw-operability-bases-modes-1-3.md,194001 G2.2.25 (RO 3.2 / SRO 4.2),G2.2.25,RESOLVED,G2.2.25 (RO N/A / SRO 4.2),
+wiki/exams/2014/q97-afw-operability-bases-modes-1-3.md,194001 G2.2.25 (RO 3.2 / SRO 4.2),G2.2.25,RESOLVED,G2.2.25 (SRO 4.2),
 wiki/exams/2014/q98-containment-entry-power-limit-and-authorization.md,194001 G2.3.12 (RO 3.2 / SRO 3.7),G2.3.12,RESOLVED,G2.3.12 (RO 3.2 / SRO 3.7),
 wiki/exams/2014/q99-condition-requiring-suspending-frp.md,194001 G2.4.18 (RO 3.3 / SRO 4.0),G2.4.18,RESOLVED,G2.4.18 (RO 3.3 / SRO 4),
 wiki/exams/2015/jpm-ip-i-containment-spray-valve-verification.md,026 2.2.12 (3.7),G2.2.12,RESOLVED,G2.2.12 (RO 3.7 / SRO 4.1),In-Plant | RO/SRO | 
@@ -246,7 +246,7 @@ wiki/exams/2015/jpm-ip-j-rcp-seal-cooling-restoration.md,039 A1.09 (2.8),039 A1.
 wiki/exams/2015/jpm-ip-k-authorized-waste-gas-release.md,071 Gen 2.3.11 (3.8),G2.3.11,RESOLVED,G2.3.11 (RO 3.8 / SRO 4.3),In-Plant | RO/SRO | 
 wiki/exams/2015/jpm-ro-a1a-tcaf-adverse-environmental-conditions.md,G2.1.25 (3.9),G2.1.25,RESOLVED,G2.1.25 (RO 3.9 / SRO 4.2),Admin | RO/SRO | 
 wiki/exams/2015/jpm-ro-a1b-csd-boron-natural-circ-cooldown.md,G2.1.43 (4.1),G2.1.43,RESOLVED,G2.1.43 (RO 4.1 / SRO 4.3),Admin | RO | 
-wiki/exams/2015/jpm-ro-a2-charging-pump-operability-surveillance.md,G2.2.37 (3.9),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),Admin | RO/SRO | 
+wiki/exams/2015/jpm-ro-a2-charging-pump-operability-surveillance.md,G2.2.37 (3.9),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),Admin | RO/SRO | 
 wiki/exams/2015/jpm-ro-a4-secondary-communicator-log.md,G2.4.43 (3.2),G2.4.43,RESOLVED,G2.4.43 (RO 3.2 / SRO 3.8),Admin | RO | 
 wiki/exams/2015/jpm-sim-a-dropped-control-rod-corrective-actions.md,003 AA2.03 (3.6),003 AA2.03,RESOLVED,003 AA2.03 (RO 0 / SRO 0),Simulator | RO/SRO | 
 wiki/exams/2015/jpm-sim-b-vct-level-instrument-loss-manual-makeup.md,APE 022 AA1.01 (3.4),022 AA1.01,RESOLVED,022 AA1.01 (RO 3.8 / SRO 3.8),Simulator | RO/SRO | 
@@ -258,14 +258,14 @@ wiki/exams/2015/jpm-sim-g-ccw-system-abnormality-corrective-action.md,008 A4.01 
 wiki/exams/2015/jpm-sim-h-tcaf-loss-of-rhr-cooling.md,APE025 AA1.01/AA1.03 (3.6/3.4),025 AA1.03,RESOLVED,025 AA1.03 (RO 4 / SRO 4),Simulator | RO/SRO | 
 wiki/exams/2015/jpm-sro-a1a-secondary-chemistry-action-levels.md,2.1.34 (3.5),G2.1.34,RESOLVED,G2.1.34 (RO 2.7 / SRO 3.5),Admin | SRO | 
 wiki/exams/2015/jpm-sro-a1b-dropped-rod-tsas-log.md,2.1.18 (3.8),G2.1.18,RESOLVED,G2.1.18 (RO 3.6 / SRO 3.8),Admin | SRO | 
-wiki/exams/2015/jpm-sro-a2-component-operability-ist-results.md,2.2.37 (4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),Admin | RO/SRO | 
+wiki/exams/2015/jpm-sro-a2-component-operability-ist-results.md,2.2.37 (4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),Admin | RO/SRO | 
 wiki/exams/2015/jpm-sro-a3-liquid-waste-release-path.md,2.3.6 (3.8),G2.3.6,RESOLVED,G2.3.6 (RO 2 / SRO 3.8),Admin | SRO | 
-wiki/exams/2015/jpm-sro-a4-1-esg1-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
-wiki/exams/2015/jpm-sro-a4-2-esg2-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
-wiki/exams/2015/jpm-sro-a4-3-esg3-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
+wiki/exams/2015/jpm-sro-a4-1-esg1-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
+wiki/exams/2015/jpm-sro-a4-2-esg2-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
+wiki/exams/2015/jpm-sro-a4-3-esg3-emergency-classification-icmf.md,2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
 wiki/exams/2015/q1-rod-control-turbine-pressure-transmitter-failure.md,000001 AK1.05 (3.5/3.0),001 AK1.05,RESOLVED,001 AK1.05 (RO 3.7 / SRO 3.7),
 wiki/exams/2015/q10-sg-tube-leak-2r19c-alarm-post-trip.md,000037 AA2.01 (3.0/3.4),037 AA2.01,RESOLVED,037 AA2.01 (RO 3.6 / SRO 3.6),
-wiki/exams/2015/q100-sro-condition-requiring-par-before-tsc-eof-activation.md,194001 2.4.44 (2.4/4.4) — SRO,G2.4.44,RESOLVED,G2.4.44 (RO N/A / SRO 4.4),
+wiki/exams/2015/q100-sro-condition-requiring-par-before-tsc-eof-activation.md,194001 2.4.44 (2.4/4.4) — SRO,G2.4.44,RESOLVED,G2.4.44 (SRO 4.4),
 wiki/exams/2015/q11-sgtr-single-stuck-rod-boration.md,000038 2.4.16 (3.5/4.4),G2.4.16,RESOLVED,G2.4.16 (RO 3.5 / SRO 4.4),
 wiki/exams/2015/q12-slb-vs-flb-tavg-response.md,000054 AK1.01 (4.1/4.3),054 AK1.01,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2015/q13-sbo-rhr-valve-fail-position-loss-of-air.md,000055 EA2.01 (3.4/3.7),055 EA2.01,RESOLVED,055 EA2.01 (RO 3.5 / SRO 3.6),
@@ -327,7 +327,7 @@ wiki/exams/2015/q63-fire-protection-water-alignment-to-system.md,086000 K1.03 (3
 wiki/exams/2015/q65-condition-containment-integrity-lco-not-met.md,103000 2.2.40 (3.4/4.7),G2.2.40,RESOLVED,G2.2.40 (RO 3.4 / SRO 4.7),
 wiki/exams/2015/q66-lowest-21-bat-level-for-operability.md,194001 2.1.25 (3.9/4.2),G2.1.25,RESOLVED,G2.1.25 (RO 3.9 / SRO 4.2),
 wiki/exams/2015/q67-condition-preventing-core-alterations-mode-6.md,194001 2.1.36 (3.0/4.1),G2.1.36,RESOLVED,G2.1.36 (RO 3 / SRO 4.1),
-wiki/exams/2015/q68-sfp-fuel-movement-sro-requirement.md,194001 2.1.42 (2.5/3.4),G2.1.42,RESOLVED,G2.1.42 (RO N/A / SRO 3.4),
+wiki/exams/2015/q68-sfp-fuel-movement-sro-requirement.md,194001 2.1.42 (2.5/3.4),G2.1.42,RESOLVED,G2.1.42 (SRO 3.4),
 wiki/exams/2015/q69-sw-pumps-running-after-loop-and-si-unit1.md,194001 2.2.3 (3.8/3.9),G2.2.3,RESOLVED,G2.2.3 (RO 3.8 / SRO 3.9),
 wiki/exams/2015/q7-pressurizer-pressure-malfunction-procedure-selection.md,000027 2.1.7 (4.4/4.7),G2.1.7,RESOLVED,G2.1.7 (RO 4.4 / SRO 4.7),
 wiki/exams/2015/q70-iv-longest-time-before-hands-on-waived-dose.md,194001 2.2.14 (3.9/4.3),G2.2.14,RESOLVED,G2.2.14 (RO 3.9 / SRO 4.3),
@@ -360,14 +360,14 @@ wiki/exams/2015/q94-sro-predicted-critical-rod-height-vs-ecc-startup-action.md,1
 wiki/exams/2015/q95-sro-prerequisites-before-rx-head-detensioning-refueling.md,194001 2.1.41 (2.8/3.7) — SRO,G2.1.41,RESOLVED,G2.1.41 (RO 2.8 / SRO 3.7),
 wiki/exams/2015/q96-sro-condition-preventing-fuel-movement-into-reactor.md,194001 2.2.1 (4.5/4.4) — SRO,G2.2.1,RESOLVED,G2.2.1 (RO 4.5 / SRO 4.4),
 wiki/exams/2015/q97-sro-salem-event-requiring-15-minute-notification.md,194001 2.2.38 (3.6/4.5) — SRO,G2.2.38,RESOLVED,G2.2.38 (RO 3.6 / SRO 4.5),
-wiki/exams/2015/q98-sro-required-action-basis-2r31-warning-ab-rc-0002.md,194001 2.3.14 (3.4/3.8) — SRO,G2.3.14,RESOLVED,G2.3.14 (RO N/A / SRO 3.8),
+wiki/exams/2015/q98-sro-required-action-basis-2r31-warning-ab-rc-0002.md,194001 2.3.14 (3.4/3.8) — SRO,G2.3.14,RESOLVED,G2.3.14 (SRO 3.8),
 wiki/exams/2015/q99-sro-ecg-classification-timing-loss-of-all-annunciators.md,194001 2.4.32 (3.6/4.0) — SRO,G2.4.32,RESOLVED,G2.4.32 (RO 3.6 / SRO 4),
 wiki/exams/2016/jpm-ip-i-pzr-bu-heaters-emergency-power.md,010 A4.02 (3.6/3.4),010 A4.02,RESOLVED,010 A4.02 (RO 3.6 / SRO 3.6),In-Plant | RO/SRO | 
 wiki/exams/2016/jpm-ip-j-afw-backleakage-test.md,061 K1.02 (3.4/3.7),061 K1.02,RESOLVED,061 K1.02 (RO 3.9 / SRO 3.9),In-Plant | RO/SRO | 
 wiki/exams/2016/jpm-ip-k-edg-start-and-sync.md,064 A2.09 (3.1/3.3),064 A2.09,RESOLVED,064 A2.09 (RO 0 / SRO 0),In-Plant | RO/SRO | 
 wiki/exams/2016/jpm-ro-a1a-containment-sump-leakage.md,G2.1.25 (3.9/4.2),G2.1.25,RESOLVED,G2.1.25 (RO 3.9 / SRO 4.2),Admin | RO/SRO | 
 wiki/exams/2016/jpm-ro-a1b-shutdown-margin-calc.md,G2.1.43 (4.1),G2.1.43,RESOLVED,G2.1.43 (RO 4.1 / SRO 4.3),Admin | RO/SRO | 
-wiki/exams/2016/jpm-ro-a2-borated-water-sources.md,G2.2.37 (3.6/4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),Admin | RO/SRO | 
+wiki/exams/2016/jpm-ro-a2-borated-water-sources.md,G2.2.37 (3.6/4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),Admin | RO/SRO | 
 wiki/exams/2016/jpm-ro-a3-stay-time-emergency.md,G2.3.4 (3.2),G2.3.4,RESOLVED,G2.3.4 (RO 0 / SRO 0),Admin | RO/SRO | 
 wiki/exams/2016/jpm-sim-a-rod-operability-verification.md,001 A4.03 (4.0/3.7),001 A4.03,RESOLVED,001 A4.03 (RO 3.7 / SRO 3.7),Sim | RO/SRO | 
 wiki/exams/2016/jpm-sim-b-containment-sump-blockage.md,G2.4.4 (4.5/4.7),G2.4.4,RESOLVED,G2.4.4 (RO 4.5 / SRO 4.7),Sim | RO/SRO | 
@@ -378,11 +378,11 @@ wiki/exams/2016/jpm-sim-f-prt-level-pressure-adjust.md,007 A4.04 (2.6/2.6),007 A
 wiki/exams/2016/jpm-sim-g-energize-4kv-bus-from-spt.md,EPE 055 EA1.07 (4.3/4.5),055 EA1.07,RESOLVED,055 EA1.07 (RO 4.1 / SRO 4.1),Sim | RO/SRO | 
 wiki/exams/2016/jpm-sim-h-loss-of-control-air.md,APE 065 AA2.06 (3.6/4.2),065 AA2.06,RESOLVED,065 AA2.06 (RO 0 / SRO 0),Sim | RO/SRO | 
 wiki/exams/2016/jpm-sro-a1a-cfcu-surveillance-review.md,G2.1.25 (4.2),G2.1.25,RESOLVED,G2.1.25 (RO 3.9 / SRO 4.2),Admin | RO/SRO | 
-wiki/exams/2016/jpm-sro-a1b-spent-fuel-movement-equipment-oos.md,G2.1.42 (3.4),G2.1.42,RESOLVED,G2.1.42 (RO N/A / SRO 3.4),Admin | SRO | 
+wiki/exams/2016/jpm-sro-a1b-spent-fuel-movement-equipment-oos.md,G2.1.42 (3.4),G2.1.42,RESOLVED,G2.1.42 (SRO 3.4),Admin | SRO | 
 wiki/exams/2016/jpm-sro-a2-shutdown-margin-review.md,G2.2.12 (4.1),G2.2.12,RESOLVED,G2.2.12 (RO 3.7 / SRO 4.1),Admin | SRO | 
 wiki/exams/2016/jpm-sro-a3-effluent-monitor-failure-release-actions.md,G2.3.11 (4.3),G2.3.11,RESOLVED,G2.3.11 (RO 3.8 / SRO 4.3),Admin | SRO | 
-wiki/exams/2016/jpm-sro-a4-esg1-classify-event-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
-wiki/exams/2016/jpm-sro-a4-esg2-classify-event-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
+wiki/exams/2016/jpm-sro-a4-esg1-classify-event-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
+wiki/exams/2016/jpm-sro-a4-esg2-classify-event-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
 wiki/exams/2016/q01-vct-auto-makeup-rod-withdrawal.md,000001 A2.02 (4.2),001 A2.02,RESOLVED,001 A2.02 (RO 3.6 / SRO 3.9),
 wiki/exams/2016/q02-rod-control-failure-single-rod-drop.md,000003 K2.05 (2.5),003 K2.05,RESOLVED,003 K2.05 (RO 0 / SRO 0),
 wiki/exams/2016/q03-rtb-failure-manual-actions-after-rdmg-trip.md,000007 K2.02 (2.6),007 K2.02,NUMBER_NOT_IN_CATALOG,,
@@ -460,16 +460,16 @@ wiki/exams/2016/q73-eop-loca-5-entry-conditions-rwst-low.md,194001G404 (4.5),,UN
 wiki/exams/2016/q74-aop-reentry-after-eop-trip-1.md,194001G411 (4.0),,UNPARSEABLE,,
 wiki/exams/2016/q75-loss-of-all-oha-control-room-response.md,194001G432 (3.6),,UNPARSEABLE,,
 wiki/exams/2016/q76-trip-2-pressure-override-failure-frhs-1-bleed-feed.md,000007 A2.02 (SRO 4.6),007 A2.02,RESOLVED,007 A2.02 (RO 3.6 / SRO 3.1),
-wiki/exams/2016/q77-mode-3-rcp-trip-tech-spec-loops-bases.md,000015 G2.2.37 (SRO 4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),
+wiki/exams/2016/q77-mode-3-rcp-trip-tech-spec-loops-bases.md,000015 G2.2.37 (SRO 4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),
 wiki/exams/2016/q78-atws-4-percent-mode-2-trip-2-vs-frsm-1.md,000029 G2.2.44 (SRO 4.4),G2.2.44,RESOLVED,G2.2.44 (RO 4.2 / SRO 4.4),
 wiki/exams/2016/q79-sgtr-water-solid-continue-sgtr-1-terminate-si.md,000037 AA2.14 (SRO 4.4),037 AA2.14,RESOLVED,037 AA2.14 (RO 3.9 / SRO 3.8),
-wiki/exams/2016/q80-sfp-manipulations-21-fhb-supply-fan-inlet-damper-air-loss.md,000065 G2.1.42 (SRO 3.4),G2.1.42,RESOLVED,G2.1.42 (RO N/A / SRO 3.4),
-wiki/exams/2016/q81-loca-ecg-classification-rcs-and-containment-barrier-loss.md,000069G441 2.4.41 (SRO 4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),
+wiki/exams/2016/q80-sfp-manipulations-21-fhb-supply-fan-inlet-damper-air-loss.md,000065 G2.1.42 (SRO 3.4),G2.1.42,RESOLVED,G2.1.42 (SRO 3.4),
+wiki/exams/2016/q81-loca-ecg-classification-rcs-and-containment-barrier-loss.md,000069G441 2.4.41 (SRO 4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),
 wiki/exams/2016/q82-loca-2-step-19-1-rno-step-34-bypass-pump-reduction.md,00WE03A201 EA2.1 (SRO 4.2),WE03 EA2.01,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2016/q83-mslb-pre-sync-cfst-frts-1-purple-vs-frsm-2-yellow.md,00WE03G406 2.4.6 (SRO 4.7),G2.4.6,RESOLVED,G2.4.6 (RO 3.7 / SRO 4.7),
 wiki/exams/2016/q84-loca-5-rcs-cooldown-tech-spec-limit-no-rhr-no-loca-3-cas.md,00WE11A202 EA2.2 (SRO 4.2),WE11 EA2.02,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2016/q85-mslb-mixing-bottle-losc-2-cas-after-step-20-go-to-losc-1.md,00WE12A201 EA2.1 (SRO 4.0),WE12 EA2.01,NUMBER_NOT_IN_CATALOG,,
-wiki/exams/2016/q86-rcs-specific-activity-de-i-131-action-time.md,002000G225 2.2.25 (4.2),G2.2.25,RESOLVED,G2.2.25 (RO N/A / SRO 4.2),
+wiki/exams/2016/q86-rcs-specific-activity-de-i-131-action-time.md,002000G225 2.2.25 (4.2),G2.2.25,RESOLVED,G2.2.25 (SRO 4.2),
 wiki/exams/2016/q87-eop-loca-2-accumulator-isolation-criteria.md,006000A212 A2.12 (4.8),006 A2.12,RESOLVED,006 A2.12 (RO 4.1 / SRO 4.5),
 wiki/exams/2016/q88-fhb-fuel-handling-incident-2r5-charcoal-filter-swap.md,034000A201 A2.01 (4.4),034 A2.01,RESOLVED,034 A2.01 (RO 4 / SRO 3.6),
 wiki/exams/2016/q89-condensate-pump-trip-21a-condenser-level-rise-cn108-bypass.md,056000A204 A2.04 (2.8),056 A2.04,RESOLVED,056 A2.04 (RO 4 / SRO 3.7),
@@ -477,10 +477,10 @@ wiki/exams/2016/q90-loss-of-control-air-7-percent-23-afw-2ms132-fail-open.md,061
 wiki/exams/2016/q91-2a-edg-missed-monthly-surveillance-sr-402-25-percent-extension.md,064000G2.40 2.2.40 (4.7),G2.2.40,RESOLVED,G2.2.40 (RO 3.4 / SRO 4.7),
 wiki/exams/2016/q92-23-sw-pump-trip-2a-edg-bus-differential-loss-of-all-sw.md,076000A2.01 A2.01 (3.7),076 A2.01,RESOLVED,076 A2.01 (RO 0 / SRO 0),
 wiki/exams/2016/q93-containment-purge-reinstatement-cvi-signal-short-duration.md,103000G2.1.23 2.1.23 (4.4),G2.1.23,RESOLVED,G2.1.23 (RO 4.3 / SRO 4.4),
-wiki/exams/2016/q94-spent-fuel-pool-manipulations-sro-supervision-requirements.md,194001G2.1.35 2.1.35 (3.9),G2.1.35,RESOLVED,G2.1.35 (RO N/A / SRO 3.9),
+wiki/exams/2016/q94-spent-fuel-pool-manipulations-sro-supervision-requirements.md,194001G2.1.35 2.1.35 (3.9),G2.1.35,RESOLVED,G2.1.35 (SRO 3.9),
 wiki/exams/2016/q95-mode-6-entry-defueled-to-refueling-first-fuel-assembly-lowered.md,194001G2.1.36 2.1.36 (4.1),G2.1.36,RESOLVED,G2.1.36 (RO 3 / SRO 4.1),
 wiki/exams/2016/q96-tech-spec-action-times-hot-standby-by-1900.md,194001G2.2.22 2.2.22 (4.7),G2.2.22,RESOLVED,G2.2.22 (RO 4 / SRO 4.7),
-wiki/exams/2016/q97-mode-4-charging-pump-suction-eccs-operability.md,194001G2.2.37 2.2.37 (4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),
+wiki/exams/2016/q97-mode-4-charging-pump-suction-eccs-operability.md,194001G2.2.37 2.2.37 (4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),
 wiki/exams/2016/q98-14-wgdt-release-allowed-concurrent-activities.md,194001G2.3.11 2.3.11 (4.3),G2.3.11,RESOLVED,G2.3.11 (RO 3.8 / SRO 4.3),
 wiki/exams/2016/q99-frcc-2-frts-1-priority-cfst-transition.md,194001G2.4.4 2.4.4 (4.7),G2.4.4,RESOLVED,G2.4.4 (RO 4.5 / SRO 4.7),
 wiki/exams/2018/jpm-ip-i-shed-dc-loads-lopa1.md,EPE 055 EA1.04 (3.5/3.9),055 EA1.04,RESOLVED,055 EA1.04 (RO 4 / SRO 4),In-Plant | RO/SRO | 
@@ -502,7 +502,7 @@ wiki/exams/2018/jpm-sro-a1-chill-water-heat-load-isolation.md,G2.1.25 (4.2),G2.1
 wiki/exams/2018/jpm-sro-a2-heat-stress-requirements.md,G2.1.26 (3.6),G2.1.26,RESOLVED,G2.1.26 (RO 0 / SRO 0),Admin | SRO | 
 wiki/exams/2018/jpm-sro-a3-tagging-request-tech-specs.md,G2.2.13 (4.3),G2.2.13,RESOLVED,G2.2.13 (RO 4.1 / SRO 4.3),Admin | SRO | 
 wiki/exams/2018/jpm-sro-a4-gas-release-authorization.md,G2.3.6 (3.8),G2.3.6,RESOLVED,G2.3.6 (RO 2 / SRO 3.8),Admin | SRO | 
-wiki/exams/2018/jpm-sro-a5-event-classification-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
+wiki/exams/2018/jpm-sro-a5-event-classification-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
 wiki/exams/2018/q1-rcp-shaft-shear.md,003 RCPS-K3.01 (3.7),003 K3.01,RESOLVED,003 K3.01 (RO 4.2 / SRO 4.2),
 wiki/exams/2018/q10-rps-pzr-press-channel-failure.md,012 RPS-K4.05 (2.7),012 K4.05,RESOLVED,012 K4.05 (RO 3.7 / SRO 3.7),
 wiki/exams/2018/q11-rcp-undervoltage-trip.md,013 ESFAS-K1.02 (3.2),013 K1.02,RESOLVED,013 K1.02 (RO 3.5 / SRO 3.5),
@@ -543,7 +543,7 @@ wiki/exams/2018/q42-edg-load-test-values.md,G2.2.21 (2.9),G2.2.21,RESOLVED,G2.2.
 wiki/exams/2018/q43-rcs-safety-limit-pressure.md,G2.2.38 (3.6),G2.2.38,RESOLVED,G2.2.38 (RO 3.6 / SRO 4.5),
 wiki/exams/2018/q44-high-radiation-area-dosimetry.md,G2.3.7 (3.6),G2.3.7,RESOLVED,G2.3.7 (RO 0 / SRO 0),
 wiki/exams/2018/q45-lhra-controls.md,G2.3.13 (3.4),G2.3.13,RESOLVED,G2.3.13 (RO 0 / SRO 0),
-wiki/exams/2018/q46-control-room-ventilation-rad-monitor.md,G2.3.14 (3.4),G2.3.14,RESOLVED,G2.3.14 (RO N/A / SRO 3.8),
+wiki/exams/2018/q46-control-room-ventilation-rad-monitor.md,G2.3.14 (3.4),G2.3.14,RESOLVED,G2.3.14 (SRO 3.8),
 wiki/exams/2018/q47-csf-priority-and-monitoring.md,G2.4.23 (3.6),G2.4.23,RESOLVED,G2.4.23 (RO 3.4 / SRO 4.4),
 wiki/exams/2018/q48-eccs-flow-evaluation.md,G2.4.47 (4.2),G2.4.47,RESOLVED,G2.4.47 (RO 4.2 / SRO 4.2),
 wiki/exams/2018/q49-trip-1-immediate-actions.md,EPE: 007 EK2.02 (2.6),007 EK2.02,RESOLVED,007 EK2.02 (RO 0 / SRO 0),
@@ -566,7 +566,7 @@ wiki/exams/2018/q63-loca-outside-containment-rh19-isolation.md,EPE: LOCA Outside
 wiki/exams/2018/q64-frhs1-bleed-feed-eccs-requirements.md,W/E05 Loss of Secondary Heat Sink-EK2.2 (3.9),WE05 EK2.02,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2018/q65-loca5-rcs-depress-upper-head-voiding.md,W/E11 Loss of Emergency Coolant Recirculation-EK1.1 (3.7),WE11 EK1.01,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2018/q66-losc2-afw-steam-isolation-flow-control.md,W/E12 Uncontrolled Depressurization of all Steam Generators-EK1.1 (3.4),WE12 EK1.01,NUMBER_NOT_IN_CATALOG,,
-wiki/exams/2018/q67-cr-evacuation-emergency-boration-cv55.md,APE: 024 Emergency Boration-G2.4.34 (4.2),G2.4.34,RESOLVED,G2.4.34 (RO 4.2 / SRO N/A),
+wiki/exams/2018/q67-cr-evacuation-emergency-boration-cv55.md,APE: 024 Emergency Boration-G2.4.34 (4.2),G2.4.34,RESOLVED,G2.4.34 (RO 4.2),
 wiki/exams/2018/q68-sg-tube-leak-letdown-si.md,APE: 037 Steam Generator (S/G) Tube Leak-AA1.07 (3.1),037 AA1.07,RESOLVED,037 AA1.07 (RO 3.4 / SRO 3.4),
 wiki/exams/2018/q69-high-rcs-activity-charging-letdown.md,APE: 076 High Reactor Coolant Activity-AA2.02 (2.8),076 AA2.02,RESOLVED,076 AA2.02 (RO 0 / SRO 0),
 wiki/exams/2018/q7-ccw-rad-monitor-surge-tank.md,008 CCWS-A2.04 (3.3),008 A2.04,RESOLVED,008 A2.04 (RO 2.7 / SRO 3.1),
@@ -578,11 +578,11 @@ wiki/exams/2018/q74-eop-frce2-containment-sump-cfcu-isolation.md,W/E15 Containme
 wiki/exams/2018/q75-eop-frce3-containment-radiation-cfcu-speed.md,W/E16 High Containment Radiation-EK1.2 (2.7),WE16 EK1.02,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2018/q76-eop-frci3-pzr-vapor-space-loca.md,APE: 008 PZR Vapor Space Accident-AA2.29 (4.2),008 AA2.29,RESOLVED,008 AA2.29 (RO 0 / SRO 0),
 wiki/exams/2018/q77-eop-loca1-h2-recombiner-hot-leg-recirc-timing.md,EPE: 011 Large Break LOCA-G2.1.2 (4.4),G2.1.2,RESOLVED,G2.1.2 (RO 4.1 / SRO 4.4),
-wiki/exams/2018/q78-ab-cn-0001-peer-checks-polisher-bypass.md,APE: 054 Loss of Main Feedwater (MFW)-G2.1.6 (4.8),G2.1.6,RESOLVED,G2.1.6 (RO N/A / SRO 4.8),
+wiki/exams/2018/q78-ab-cn-0001-peer-checks-polisher-bypass.md,APE: 054 Loss of Main Feedwater (MFW)-G2.1.6 (4.8),G2.1.6,RESOLVED,G2.1.6 (SRO 4.8),
 wiki/exams/2018/q79-ab-rcp-0001-seal-cooling-loss-nat-circ.md,015/017 RCP Malfunctions-AA2.10 (3.7),015 AA2.10,RESOLVED,015 AA2.10 (RO 3.4 / SRO 3.8),
 wiki/exams/2018/q8-pzr-saturation-rcp-restart.md,010 PZR PCS-K5.01 (3.5),010 K5.01,RESOLVED,010 K5.01 (RO 3.6 / SRO 3.6),
 wiki/exams/2018/q80-eop-frhs1-entry-conditions-return-to-procedure.md,W/E05-EA2.1 (4.4),WE05 EA2.01,NUMBER_NOT_IN_CATALOG,,
-wiki/exams/2018/q81-loca-5-rwst-makeup-sg-level.md,W/E11 Loss of Emergency Coolant Recirculation-G2.1.9 (4.5),G2.1.9,RESOLVED,G2.1.9 (RO N/A / SRO 4.5),
+wiki/exams/2018/q81-loca-5-rwst-makeup-sg-level.md,W/E11 Loss of Emergency Coolant Recirculation-G2.1.9 (4.5),G2.1.9,RESOLVED,G2.1.9 (SRO 4.5),
 wiki/exams/2018/q82-pzr-level-channel-fail-high-ts.md,028 PZR Level Control Malfunction-AA2.12 (3.5),028 AA2.12,RESOLVED,028 AA2.12 (RO 0 / SRO 0),
 wiki/exams/2018/q83-gaseous-release-gdt-rad-monitor.md,060 Accidental Gaseous-Waste Release-AA2.04 (3.4),060 AA2.04,RESOLVED,060 AA2.04 (RO 0 / SRO 0),
 wiki/exams/2018/q84-loss-of-rhr-containment-closure.md,APE: 069 Loss of Containment Integrity-G2.4.6 (4.7),G2.4.6,RESOLVED,G2.4.6 (RO 3.7 / SRO 4.7),
@@ -598,7 +598,7 @@ wiki/exams/2018/q92-sfp-loss-of-cooling-makeup.md,033 SFPCS-G2.1.20 (4.6),G2.1.2
 wiki/exams/2018/q93-loss-of-control-air-ecac-attachment-12.md,079 SAS-A2.01 (3.2),079 A2.01,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2018/q94-nrc-license-maintenance-shift-hours.md,G2.1.4 (3.8),G2.1.4,RESOLVED,G2.1.4 (RO 3.3 / SRO 3.8),
 wiki/exams/2018/q95-ccw-abnormality-rcp-brg-clg-wtr-flo-lo.md,G2.1.7 (4.7),G2.1.7,RESOLVED,G2.1.7 (RO 4.4 / SRO 4.7),
-wiki/exams/2018/q96-sr-403-missed-surveillance-delay.md,G2.2.25 (4.2),G2.2.25,RESOLVED,G2.2.25 (RO N/A / SRO 4.2),
+wiki/exams/2018/q96-sr-403-missed-surveillance-delay.md,G2.2.25 (4.2),G2.2.25,RESOLVED,G2.2.25 (SRO 4.2),
 wiki/exams/2018/q97-lco-321-afd-power-reduction.md,G2.2.39 (4.5),G2.2.39,RESOLVED,G2.2.39 (RO 3.9 / SRO 4.5),
 wiki/exams/2018/q98-trip-1-atws-frsm1-transition.md,G2.4.21 (4.6),G2.4.21,RESOLVED,G2.4.21 (RO 4 / SRO 4.6),
 wiki/exams/2018/q99-liquid-radwaste-release-2r18-inoperable.md,G2.3.6 (3.8),G2.3.6,RESOLVED,G2.3.6 (RO 2 / SRO 3.8),
@@ -606,7 +606,7 @@ wiki/exams/2019/jpm-ip-i-locally-borate-rcs.md,004 A4.18 (4.3/4.1),004 A4.18,RES
 wiki/exams/2019/jpm-ip-j-startup-parallel-rdmg.md,012 A4.07 (3.9/3.9),012 A4.07,RESOLVED,012 A4.07 (RO 3.8 / SRO 3.8),In-Plant | RO/SRO | 
 wiki/exams/2019/jpm-ip-k-waste-gas-release.md,071 A4.26 (3.1/3.9),071 A4.26,RESOLVED,071 A4.26 (RO 3.6 / SRO 3.6),In-Plant (RCA) | RO/SRO | 
 wiki/exams/2019/jpm-ro-a1-max-vent-time-frci3.md,G2.1.25 (3.9),G2.1.25,RESOLVED,G2.1.25 (RO 3.9 / SRO 4.2),Admin | RO/SRO | 
-wiki/exams/2019/jpm-ro-a2-borated-water-source-surveillance.md,G2.2.37 (3.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),Admin | RO/SRO | 
+wiki/exams/2019/jpm-ro-a2-borated-water-source-surveillance.md,G2.2.37 (3.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),Admin | RO/SRO | 
 wiki/exams/2019/jpm-ro-a3-personnel-exposure-requirements.md,G2.3.4 (3.2),G2.3.4,RESOLVED,G2.3.4 (RO 0 / SRO 0),Admin | RO/SRO | 
 wiki/exams/2019/jpm-ro-a4-primary-communicator-notifications.md,G2.4.43 (3.2),G2.4.43,RESOLVED,G2.4.43 (RO 3.2 / SRO 3.8),Admin | RO/SRO | 
 wiki/exams/2019/jpm-sim-a-loss-crd-vent-fans.md,001 A2.01 (3.1/3.7),001 A2.01,RESOLVED,001 A2.01 (RO 3.3 / SRO 3.3),Simulator | RO/SRO | 
@@ -621,7 +621,7 @@ wiki/exams/2019/jpm-sro-a1-eccs-pumps-minimum-flow.md,G2.1.7 (4.7),G2.1.7,RESOLV
 wiki/exams/2019/jpm-sro-a2-heat-stress-containment-entry.md,G2.1.26 (3.6),G2.1.26,RESOLVED,G2.1.26 (RO 0 / SRO 0),Admin | SRO | 
 wiki/exams/2019/jpm-sro-a3-ts-action-inoperable-component.md,G2.2.40 (4.7),G2.2.40,RESOLVED,G2.2.40 (RO 3.4 / SRO 4.7),Admin | SRO | 
 wiki/exams/2019/jpm-sro-a4-personnel-exposure-hra-entry.md,G2.3.4 (3.7),G2.3.4,RESOLVED,G2.3.4 (RO 0 / SRO 0),Admin | SRO | 
-wiki/exams/2019/jpm-sro-a5-event-classification-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
+wiki/exams/2019/jpm-sro-a5-event-classification-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
 wiki/exams/2019/q1-rcp-starting-requirements.md,003 RCPS-K6.14 (2.6),003 K6.14,RESOLVED,003 K6.14 (RO 0 / SRO 0),
 wiki/exams/2019/q10-porv-constant-enthalpy.md,010 PZR PCS-K5.02 (2.6),010 K5.02,RESOLVED,010 K5.02 (RO 3.5 / SRO 3.5),
 wiki/exams/2019/q100-emergency-par-default.md,G2.4.38 (4.4),G2.4.38,RESOLVED,G2.4.38 (RO 2.4 / SRO 4.4),
@@ -659,7 +659,7 @@ wiki/exams/2019/q39-pertinent-information-standing-order.md,G2.1.15 (2.7),G2.1.1
 wiki/exams/2019/q4-rhr-solid-plant-pressure.md,005 RHRS-K5.05 (2.7),005 K5.05,RESOLVED,005 K5.05 (RO 3.7 / SRO 3.7),
 wiki/exams/2019/q40-steam-dump-bypass-valve-failure.md,G2.1.28 (4.1),G2.1.28,RESOLVED,G2.1.28 (RO 4.1 / SRO 4.1),
 wiki/exams/2019/q41-troubleshooting-conduct.md,G2.2.20 (2.6),G2.2.20,RESOLVED,G2.2.20 (RO 2.6 / SRO 3.8),
-wiki/exams/2019/q42-mssv-setpoints-lco-bases.md,G2.2.25 (3.2),G2.2.25,RESOLVED,G2.2.25 (RO N/A / SRO 4.2),
+wiki/exams/2019/q42-mssv-setpoints-lco-bases.md,G2.2.25 (3.2),G2.2.25,RESOLVED,G2.2.25 (SRO 4.2),
 wiki/exams/2019/q43-cvcs-monitor-tank-release.md,G2.3.11 (3.2),G2.3.11,RESOLVED,G2.3.11 (RO 3.8 / SRO 4.3),
 wiki/exams/2019/q44-high-radiation-area-rwp.md,G2.3.7 (3.6),G2.3.7,RESOLVED,G2.3.7 (RO 0 / SRO 0),
 wiki/exams/2019/q45-emergency-dose-limits.md,G2.3.4 (3.9),G2.3.4,RESOLVED,G2.3.4 (RO 0 / SRO 0),
@@ -681,7 +681,7 @@ wiki/exams/2019/q59-loss-of-2a-125vdc-edg-impact.md,APE: 058 Loss of DC Power-AA
 wiki/exams/2019/q6-prt-temperature-cooling.md,007 PRTS-A1.03 (2.6),007 A1.03,RESOLVED,007 A1.03 (RO 3 / SRO 3),
 wiki/exams/2019/q60-sw-nuclear-header-leak-location.md,APE: 062 Loss of Nuclear Service Water-A2.02 (2.9),062 A2.02,RESOLVED,062 A2.02 (RO 3.3 / SRO 3.1),
 wiki/exams/2019/q61-ecac-start-bf19-control-air.md,APE: 065 Loss of Instrument Air-AK3.04 (3.0),065 AK3.04,RESOLVED,065 AK3.04 (RO 0 / SRO 0),
-wiki/exams/2019/q62-500kv-line-operability-grid.md,077 Generator Voltage and Electric Grid Disturbances-G2.2.37 (3.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),
+wiki/exams/2019/q62-500kv-line-operability-grid.md,077 Generator Voltage and Electric Grid Disturbances-G2.2.37 (3.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),
 wiki/exams/2019/q63-loca-6-rhr-piping-isolation.md,WE04 LOCA Outside Containment (3.6),,UNPARSEABLE,,
 wiki/exams/2019/q64-frhs1-bleed-feed-eccs-requirement.md,WE05 Loss of Secondary Heat Sink-EK1.3 (3.9),WE05 EK1.03,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2019/q65-loca-5-rcs-depress-upper-head-void.md,W/E11 Loss of Emergency Coolant Recirculation-EA1.3 (3.7),WE11 EA1.03,NUMBER_NOT_IN_CATALOG,,
@@ -707,7 +707,7 @@ wiki/exams/2019/q82-pzr-level-control-malfunction-charging.md,028 PZR Level Cont
 wiki/exams/2019/q83-edg-lube-oil-trip-sr-4811.md,068 Control Room Evacuation - G2.4.50 (4.2),G2.4.50,RESOLVED,G2.4.50 (RO 4.2 / SRO 4),
 wiki/exams/2019/q84-rcs-specific-activity-lco-304c.md,076 High Reactor Coolant Activity - AA2.03 (3.0),076 AA2.03,RESOLVED,076 AA2.03 (RO 3 / SRO 3.5),
 wiki/exams/2019/q85-nat-circ-rvlis-cooldown-rate.md,WE10 Nat Circ with Steam Void - G2.4.46 (4.2),G2.4.46,RESOLVED,G2.4.46 (RO 4.2 / SRO 4.2),
-wiki/exams/2019/q86-loss-of-rhr-eal-ca41.md,005 RHR System - G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),
+wiki/exams/2019/q86-loss-of-rhr-eal-ca41.md,005 RHR System - G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),
 wiki/exams/2019/q87-ccw-pump-trip-mode5-procedures.md,008 CCW System - A2.01 (3.3),008 A2.01,RESOLVED,008 A2.01 (RO 4.3 / SRO 4),
 wiki/exams/2019/q88-containment-sump-blockage-cs-dp.md,026 Containment Spray System - A2.07 (3.9),026 A2.07,RESOLVED,026 A2.07 (RO 4 / SRO 3.9),
 wiki/exams/2019/q89-vital-bus-inverter-lco-303.md,062 AC Electrical Distribution - G2.2.42 (4.6),G2.2.42,RESOLVED,G2.2.42 (RO 3.9 / SRO 4.6),
@@ -739,9 +739,9 @@ wiki/exams/2020/jpm-sim-g-rcs-cooldown-ms10s.md,039 A4.07 (2.8/2.9),039 A4.07,RE
 wiki/exams/2020/jpm-sim-h-4kv-group-bus-transfer.md,062 A2.04 (3.1/3.4),062 A2.04,RESOLVED,062 A2.04 (RO 0 / SRO 0),Sim | RO/SRO | 
 wiki/exams/2020/jpm-sro-a1-review-shutdown-margin.md,G2.1.43 (4.3),G2.1.43,RESOLVED,G2.1.43 (RO 4.1 / SRO 4.3),Admin | SRO | 
 wiki/exams/2020/jpm-sro-a2-shift-staffing.md,G2.1.5 (3.9),G2.1.5,RESOLVED,G2.1.5 (RO 2.9 / SRO 3.9),Admin | SRO | 
-wiki/exams/2020/jpm-sro-a3-component-operability.md,G2.2.37 (4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),Admin | SRO | 
+wiki/exams/2020/jpm-sro-a3-component-operability.md,G2.2.37 (4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),Admin | SRO | 
 wiki/exams/2020/jpm-sro-a4-radwaste-release-path.md,G2.3.6 (3.8),G2.3.6,RESOLVED,G2.3.6 (RO 2 / SRO 3.8),Admin | SRO | 
-wiki/exams/2020/jpm-sro-a5-event-classification-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
+wiki/exams/2020/jpm-sro-a5-event-classification-icmf.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
 wiki/exams/2020/q1-reactor-trip-status-panel.md,000007EK2.03 (3.5),007 EK2.03,RESOLVED,007 EK2.03 (RO 4.1 / SRO 4.1),
 wiki/exams/2020/q10-loss-of-mfw-dry-sg.md,000054AK1.02 (3.6),054 AK1.02,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2020/q100-eop-trip-1-frhs-1-transition.md,G2.4.14 (4.5),G2.4.14,RESOLVED,G2.4.14 (RO 3.8 / SRO 4.5),
@@ -812,7 +812,7 @@ wiki/exams/2020/q69-component-configuration-control.md,G2.2.14 (3.9),G2.2.14,RES
 wiki/exams/2020/q7-pzr-porv-fails-open.md,000027AK3.03 (3.7),027 AK3.03,RESOLVED,027 AK3.03 (RO 3.9 / SRO 3.9),
 wiki/exams/2020/q70-breaker-tagging-removal.md,G2.2.13 (4.1),G2.2.13,RESOLVED,G2.2.13 (RO 4.1 / SRO 4.3),
 wiki/exams/2020/q71-surveillance-dollar-sign.md,G2.2.12 Knowledge of surveillance procedures (3.7),G2.2.12,RESOLVED,G2.2.12 (RO 3.7 / SRO 4.1),
-wiki/exams/2020/q72-radwaste-release-rp-support.md,G2.3.14 Knowledge of radiation/contamination hazards (3.4),G2.3.14,RESOLVED,G2.3.14 (RO N/A / SRO 3.8),
+wiki/exams/2020/q72-radwaste-release-rp-support.md,G2.3.14 Knowledge of radiation/contamination hazards (3.4),G2.3.14,RESOLVED,G2.3.14 (SRO 3.8),
 wiki/exams/2020/q73-emergency-dose-extension-alert.md,G2.3.4 Knowledge of radiation exposure limits (3.2),G2.3.4,RESOLVED,G2.3.4 (RO 0 / SRO 0),
 wiki/exams/2020/q74-eop-continuous-action-verbs.md,G2.4.17 Knowledge of EOP terms and definitions (3.9),G2.4.17,RESOLVED,G2.4.17 (RO 3.9 / SRO 4.3),
 wiki/exams/2020/q75-containment-fire-2fp147.md,G2.4.25 Knowledge of fire protection procedures (3.3),G2.4.25,RESOLVED,G2.4.25 (RO 3.3 / SRO 3.7),
@@ -827,7 +827,7 @@ wiki/exams/2020/q82-fuel-handling-incident-mast-tube.md,000036G2.1.32 (4.0),G2.1
 wiki/exams/2020/q83-relay-room-fire-porv-block-valve.md,000067AA2.04 (4.3),067 AA2.04,RESOLVED,067 AA2.04 (RO 3.8 / SRO 3.8),
 wiki/exams/2020/q84-nat-circ-cooldown-rates-rvlis.md,00WE10EA2.2 (3.9),WE10 EA2.02,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2020/q85-frts1-entry-rcs-pressure-below-300.md,00WE08EA2.2 (4.1),WE08 EA2.02,NUMBER_NOT_IN_CATALOG,,
-wiki/exams/2020/q86-cr-evacuation-seal-injection.md,003G2.4.34 (4.1),G2.4.34,RESOLVED,G2.4.34 (RO 4.2 / SRO N/A),
+wiki/exams/2020/q86-cr-evacuation-seal-injection.md,003G2.4.34 (4.1),G2.4.34,RESOLVED,G2.4.34 (RO 4.2),
 wiki/exams/2020/q87-loca-sump-blockage-eccs-flow.md,006G2.4.47 (4.2),G2.4.47,RESOLVED,G2.4.47 (RO 4.2 / SRO 4.2),
 wiki/exams/2020/q88-loss-of-vib-esfas-phase-b-logic.md,013A2.04 (4.2),013 A2.04,RESOLVED,013 A2.04 (RO 3.5 / SRO 3.7),
 wiki/exams/2020/q89-sw-cfcu-isolation-water-hammer.md,022A2.04 (3.2),022 A2.04,RESOLVED,022 A2.04 (RO 3.7 / SRO 3.4),
@@ -861,7 +861,7 @@ wiki/exams/2022/jpm-sro-a1-chill-water-heat-load-isolation.md,G2.1.7 (4.7),G2.1.
 wiki/exams/2022/jpm-sro-a2-boration-time-bast-levels.md,G2.1.20 (4.6),G2.1.20,RESOLVED,G2.1.20 (RO 4.6 / SRO 4.6),Admin | SRO | 
 wiki/exams/2022/jpm-sro-a3-containment-vent-valve-surveillance.md,G2.2.12 (4.1),G2.2.12,RESOLVED,G2.2.12 (RO 3.7 / SRO 4.1),Admin | SRO | 
 wiki/exams/2022/jpm-sro-a4-containment-entry-exposure.md,G2.3.4 (3.7),G2.3.4,RESOLVED,G2.3.4 (RO 0 / SRO 0),Admin | SRO | 
-wiki/exams/2022/jpm-sro-a5-emergency-classification-pars.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),Admin | SRO | 
+wiki/exams/2022/jpm-sro-a5-emergency-classification-pars.md,G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),Admin | SRO | 
 wiki/exams/2022/q1-reactor-trip-breakers-ssps.md,EPE07 EK2.02 (2.6),007 EK2.02,RESOLVED,007 EK2.02 (RO 0 / SRO 0),
 wiki/exams/2022/q10-eop-frsm1-atws-actions.md,EPE 29 G2.4.6 (3.7),G2.4.6,RESOLVED,G2.4.6 (RO 3.7 / SRO 4.7),
 wiki/exams/2022/q100-emergency-accountability-timing.md,G 2.4.38 (4.4),G2.4.38,RESOLVED,G2.4.38 (RO 2.4 / SRO 4.4),
@@ -934,17 +934,17 @@ wiki/exams/2022/q70-red-blocking-tag-emergency.md,G2.2.13 (4.1),G2.2.13,RESOLVED
 wiki/exams/2022/q71-emergency-exposure-stay-time.md,G 2.3.4 (3.2),G2.3.4,RESOLVED,G2.3.4 (RO 0 / SRO 0),
 wiki/exams/2022/q72-locked-high-radiation-area-posting.md,G 2.3.12 (3.2),G2.3.12,RESOLVED,G2.3.12 (RO 3.2 / SRO 3.7),
 wiki/exams/2022/q73-eop-continuous-caution-definition.md,G 2.4.17 (3.9),G2.4.17,RESOLVED,G2.4.17 (RO 3.9 / SRO 4.3),
-wiki/exams/2022/q74-emergency-notification-timing.md,G 2.4.39 (3.9),G2.4.39,RESOLVED,G2.4.39 (RO 3.9 / SRO N/A),
+wiki/exams/2022/q74-emergency-notification-timing.md,G 2.4.39 (3.9),G2.4.39,RESOLVED,G2.4.39 (RO 3.9),
 wiki/exams/2022/q75-emergency-communications-nets-phone.md,G 2.4.43 (3.2),G2.4.43,RESOLVED,G2.4.43 (RO 3.2 / SRO 3.8),
 wiki/exams/2022/q76-eop-frsm1-rcp-trip-atws.md,EPE 29 G2.4.18 (4.0),G2.4.18,RESOLVED,G2.4.18 (RO 3.3 / SRO 4),
 wiki/exams/2022/q77-eop-lopa1-ms10-cooldown-rate.md,EPE 55 EA2.04 (4.1),055 EA2.04,RESOLVED,055 EA2.04 (RO 4.1 / SRO 3.9),
-wiki/exams/2022/q78-ts-3922-source-range-gamma-metrics.md,APE 57 G2.2.25 (4.2),G2.2.25,RESOLVED,G2.2.25 (RO N/A / SRO 4.2),
+wiki/exams/2022/q78-ts-3922-source-range-gamma-metrics.md,APE 57 G2.2.25 (4.2),G2.2.25,RESOLVED,G2.2.25 (SRO 4.2),
 wiki/exams/2022/q79-loss-of-air-tdafw-pump-overpower.md,APE 65 G2.4.31 (4.1),G2.4.31,RESOLVED,G2.4.31 (RO 4.2 / SRO 4.1),
 wiki/exams/2022/q8-ccw-rcp-motor-bearing-temp.md,APE 26 AA2.04 (2.5),026 AA2.04,RESOLVED,026 AA2.04 (RO 2.8 / SRO 3.3),
 wiki/exams/2022/q80-eop-loca5-containment-spray-frce1.md,W E11 EA2.1 (4.2),WE11 EA2.01,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2022/q81-eop-frhs1-heat-sink-established.md,W E05 EA2.2 (3.7),WE05 EA2.02,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2022/q82-ir-nis-ts-3311-startup.md,APE 33 AA2.08 (3.4),033 AA2.08,RESOLVED,033 AA2.08 (RO 3.3 / SRO 3.6),
-wiki/exams/2022/q83-lbloca-emergency-classification.md,W E16 G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (RO N/A / SRO 4.6),
+wiki/exams/2022/q83-lbloca-emergency-classification.md,W E16 G2.4.41 (4.6),G2.4.41,RESOLVED,G2.4.41 (SRO 4.6),
 wiki/exams/2022/q84-eop-trip6-nat-circ-cooldown-no-rvlis.md,W E10 EA2.2 (3.9),WE10 EA2.02,NUMBER_NOT_IN_CATALOG,,
 wiki/exams/2022/q85-cfst-priority-frts1-thermal-shock.md,W E08 G2.4.21 (4.6),G2.4.21,RESOLVED,G2.4.21 (RO 4 / SRO 4.6),
 wiki/exams/2022/q86-rcp-seal-failure-ab-rcp-actions.md,003 A2.02 (3.9) SRO,003 A2.02,RESOLVED,003 A2.02 (RO 3.5 / SRO 3.8),
@@ -956,7 +956,7 @@ wiki/exams/2022/q90-loss-of-all-sw-bus-lockout.md,076 A2.01 (3.7) SRO,076 A2.01,
 wiki/exams/2022/q91-ts-pops-mode4-entry.md,002 G2.2.40 (4.7),G2.2.40,RESOLVED,G2.2.40 (RO 3.4 / SRO 4.7),
 wiki/exams/2022/q92-misaligned-rod-power-reduction.md,014 A2.04 (3.9),014 A2.04,RESOLVED,014 A2.04 (RO 3.9 / SRO 3.9),
 wiki/exams/2022/q93-fire-brigade-minimum-staffing.md,086 G2.2.38 (4.5),G2.2.38,RESOLVED,G2.2.38 (RO 3.6 / SRO 4.5),
-wiki/exams/2022/q94-defueling-core-alteration-sro.md,G2.1.35 (3.9),G2.1.35,RESOLVED,G2.1.35 (RO N/A / SRO 3.9),
+wiki/exams/2022/q94-defueling-core-alteration-sro.md,G2.1.35 (3.9),G2.1.35,RESOLVED,G2.1.35 (SRO 3.9),
 wiki/exams/2022/q95-reactivity-management-sro.md,G2.1.37 (4.6),G2.1.37,RESOLVED,G2.1.37 (RO 4.3 / SRO 4.6),
 wiki/exams/2022/q96-temporary-configuration-changes.md,G 2.2.11 (3.3),G2.2.11,RESOLVED,G2.2.11 (RO 0 / SRO 0),
 wiki/exams/2022/q97-avr-esoc-notification.md,G 2.2.17 (3.8),G2.2.17,RESOLVED,G2.2.17 (RO 2.6 / SRO 3.8),
@@ -980,8 +980,8 @@ wiki/exams/2023/jpm-sim-h-containment-pressure-relief.md,A2.02 (3.0/3.0),,UNPARS
 wiki/exams/2023/jpm-sro-a1a-eccs-injection-flow.md,G2.1.7 (4.4/4.7),G2.1.7,RESOLVED,G2.1.7 (RO 4.4 / SRO 4.7),Admin | SRO | 
 wiki/exams/2023/jpm-sro-a1b-overtime-restrictions.md,G2.1.5 (2.9/3.9),G2.1.5,RESOLVED,G2.1.5 (RO 2.9 / SRO 3.9),Admin | SRO | 
 wiki/exams/2023/jpm-sro-a2-surveillance-test-review.md,G2.2.12 (3.7/4.1),G2.2.12,RESOLVED,G2.2.12 (RO 3.7 / SRO 4.1),Admin | SRO | 
-wiki/exams/2023/jpm-sro-a3-emergency-radiation-volunteer.md,G2.3.14 (N/A/3.8),G2.3.14,RESOLVED,G2.3.14 (RO N/A / SRO 3.8),Admin | SRO | 
-wiki/exams/2023/jpm-sro-a4-icmf-review.md,G2.4.40 (N/A/4.5),G2.4.40,RESOLVED,G2.4.40 (RO N/A / SRO 4.5),Admin | SRO | 
+wiki/exams/2023/jpm-sro-a3-emergency-radiation-volunteer.md,G2.3.14 (N/A/3.8),G2.3.14,RESOLVED,G2.3.14 (SRO 3.8),Admin | SRO | 
+wiki/exams/2023/jpm-sro-a4-icmf-review.md,G2.4.40 (N/A/4.5),G2.4.40,RESOLVED,G2.4.40 (SRO 4.5),Admin | SRO | 
 wiki/exams/2023/q01-rcs-low-flow-p7-p8-logic.md,EPE 7 EA2.08 (3.0),007 EA2.08,RESOLVED,007 EA2.08 (RO 3 / SRO 3.7),
 wiki/exams/2023/q02-small-break-loca-rcs-heat-removal.md,EPE 9 EK1.03 (4.0),009 EK1.03,RESOLVED,009 EK1.03 (RO 4 / SRO 4),
 wiki/exams/2023/q03-cvcs-cv71-seal-backpressure.md,APE 22 AA1.05 (3.3),022 AA1.05,RESOLVED,022 AA1.05 (RO 3.3 / SRO 3.3),
@@ -1070,14 +1070,14 @@ wiki/exams/2023/q84-frcc1-sg-depress-rcp-start.md,T1G2 EPE 74 EA2.12 (3.8),074 E
 wiki/exams/2023/q85-sg-overpressure-security-redacted.md,T1G2 W E13 G2.4.28 (4.1),G2.4.28,RESOLVED,G2.4.28 (RO 3.2 / SRO 4.1),
 wiki/exams/2023/q86-rcp-seal-failure-standpipe-level.md,T2G1 003 A2.01 (4.0),003 A2.01,RESOLVED,003 A2.01 (RO 4 / SRO 4),
 wiki/exams/2023/q87-trip4-loss-pzr-level-si-actuation.md,T2G1 006 A2.12 (4.5),006 A2.12,RESOLVED,006 A2.12 (RO 4.1 / SRO 4.5),
-wiki/exams/2023/q88-grid-disturbance-solar-magnetic.md,T2G1 062 G2.1.6 (4.8),G2.1.6,RESOLVED,G2.1.6 (RO N/A / SRO 4.8),
-wiki/exams/2023/q89-edg-common-mode-failure-surveillance.md,T2G1 064 G2.1.9 (4.5),G2.1.9,RESOLVED,G2.1.9 (RO N/A / SRO 4.5),
+wiki/exams/2023/q88-grid-disturbance-solar-magnetic.md,T2G1 062 G2.1.6 (4.8),G2.1.6,RESOLVED,G2.1.6 (SRO 4.8),
+wiki/exams/2023/q89-edg-common-mode-failure-surveillance.md,T2G1 064 G2.1.9 (4.5),G2.1.9,RESOLVED,G2.1.9 (SRO 4.5),
 wiki/exams/2023/q90-containment-pressure-relief-r12a-odcm.md,T2G1 073 A2.01 (3.1),073 A2.01,RESOLVED,073 A2.01 (RO 3.9 / SRO 3.1),
-wiki/exams/2023/q91-rcp-seal-injection-flow-ts-354.md,T2G2 002 G2.2.37 (4.6),G2.2.37,RESOLVED,G2.2.37 (RO N/A / SRO 4.6),
+wiki/exams/2023/q91-rcp-seal-injection-flow-ts-354.md,T2G2 002 G2.2.37 (4.6),G2.2.37,RESOLVED,G2.2.37 (SRO 4.6),
 wiki/exams/2023/q92-pzr-pressure-channel-failure-nrc-reportability.md,T2G2 016 A2.01 (3.4),016 A2.01,RESOLVED,016 A2.01 (RO 3.3 / SRO 3.4),
 wiki/exams/2023/q93-cw-bus-loss-circulator-trip.md,T2G2 075 A2.02 (3.4),075 A2.02,RESOLVED,075 A2.02 (RO 3.9 / SRO 3.4),
 wiki/exams/2023/q94-shift-complement-unexpected-absence.md,T3 G2.1.5 (3.9),G2.1.5,RESOLVED,G2.1.5 (RO 2.9 / SRO 3.9),
-wiki/exams/2023/q95-fhb-bldg-air-dp-lo-fuel-handling.md,T3 G2.1.35 (3.9),G2.1.35,RESOLVED,G2.1.35 (RO N/A / SRO 3.9),
+wiki/exams/2023/q95-fhb-bldg-air-dp-lo-fuel-handling.md,T3 G2.1.35 (3.9),G2.1.35,RESOLVED,G2.1.35 (SRO 3.9),
 wiki/exams/2023/q96-online-work-management-sm-responsibilities.md,T3 G2.2.19 (3.4),G2.2.19,RESOLVED,G2.2.19 (RO 2.3 / SRO 3.4),
 wiki/exams/2023/q97-rcs-leak-cvcs-2cv6-ts-3472.md,T3 G2.2.44 (4.4),G2.2.44,RESOLVED,G2.2.44 (RO 4.2 / SRO 4.4),
 wiki/exams/2023/q98-cvcs-monitor-tank-release-2r18-inoperable.md,T3 G2.3.6 (3.8),G2.3.6,RESOLVED,G2.3.6 (RO 2 / SRO 3.8),

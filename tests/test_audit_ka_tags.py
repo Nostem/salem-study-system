@@ -46,5 +46,16 @@ class NormalizeKaTest(unittest.TestCase):
     def test_malformed_generic(self):   self.assertIsNone(mod.normalize_ka("G4.09"))
 
 
+class CanonicalRatingTest(unittest.TestCase):
+    def test_both_numeric(self):
+        self.assertEqual(mod.canonical_rating({"ro_imp": "3.7", "sro_imp": "3.7"}), "(RO 3.7 / SRO 3.7)")
+    def test_integer(self):
+        self.assertEqual(mod.canonical_rating({"ro_imp": "4", "sro_imp": "4.2"}), "(RO 4 / SRO 4.2)")
+    def test_sro_only(self):
+        self.assertEqual(mod.canonical_rating({"ro_imp": "N/A", "sro_imp": "4.6"}), "(SRO 4.6)")
+    def test_ro_only(self):
+        self.assertEqual(mod.canonical_rating({"ro_imp": "3.1", "sro_imp": "N/A"}), "(RO 3.1)")
+
+
 if __name__ == "__main__":
     unittest.main()
