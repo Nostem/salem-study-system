@@ -1,0 +1,488 @@
+[
+  {
+    "article": "115v-ac.md",
+    "slug": "115v-ac",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "13kv.md",
+    "slug": "13kv",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "460-230v-ac.md",
+    "slug": "460-230v-ac",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "4kv.md",
+    "slug": "4kv",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "500kv.md",
+    "slug": "500kv",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "abv.md",
+    "slug": "abv",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "amsac.md",
+    "slug": "amsac",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "annunciators.md",
+    "slug": "annunciators",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "auxiliary-feedwater.md",
+    "slug": "auxiliary-feedwater",
+    "catalog_system": "061",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "cav.md",
+    "slug": "cav",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "chemical-and-volume-control-system.md",
+    "slug": "chemical-and-volume-control-system",
+    "catalog_system": "004",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "chill-water.md",
+    "slug": "chill-water",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.2 (locate chilled-water subsection via the Ch 9 TOC)",
+    "salem_na": false
+  },
+  {
+    "article": "circ-water.md",
+    "slug": "circ-water",
+    "catalog_system": "075",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "component-cooling-water.md",
+    "slug": "component-cooling-water",
+    "catalog_system": "008",
+    "mode": "ka_index",
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.2.2",
+    "salem_na": false
+  },
+  {
+    "article": "condenser-air-removal.md",
+    "slug": "condenser-air-removal",
+    "catalog_system": "055",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "containment-fan-coil-units.md",
+    "slug": "containment-fan-coil-units",
+    "catalog_system": "022",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "containment-spray.md",
+    "slug": "containment-spray",
+    "catalog_system": "026",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "containment-systems.md",
+    "slug": "containment-systems",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "control-air.md",
+    "slug": "control-air",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "control-rod-drive.md",
+    "slug": "control-rod-drive",
+    "catalog_system": "001",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "dc-power.md",
+    "slug": "dc-power",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "demin-water.md",
+    "slug": "demin-water",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "diesel-generators.md",
+    "slug": "diesel-generators",
+    "catalog_system": "064",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "emergency-core-cooling-systems.md",
+    "slug": "emergency-core-cooling-systems",
+    "catalog_system": "006",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "esf-and-design.md",
+    "slug": "esf-and-design",
+    "catalog_system": "013",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "excore-nis.md",
+    "slug": "excore-nis",
+    "catalog_system": "015",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "feedwater-and-condensate.md",
+    "slug": "feedwater-and-condensate",
+    "catalog_system": "059",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "fhv.md",
+    "slug": "fhv",
+    "catalog_system": "034",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "fire-protection.md",
+    "slug": "fire-protection",
+    "catalog_system": "086",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "incores.md",
+    "slug": "incores",
+    "catalog_system": "017",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "main-steam.md",
+    "slug": "main-steam",
+    "catalog_system": "039",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "mtlo.md",
+    "slug": "mtlo",
+    "catalog_system": "045",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "pressurizer-level-and-press-control.md",
+    "slug": "pressurizer-level-and-press-control",
+    "catalog_system": "011",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "pressurizer.md",
+    "slug": "pressurizer",
+    "catalog_system": "010",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "radiation-monitoring.md",
+    "slug": "radiation-monitoring",
+    "catalog_system": "073",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "reactor-coolant-pumps.md",
+    "slug": "reactor-coolant-pumps",
+    "catalog_system": "003",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "reactor-coolant-system.md",
+    "slug": "reactor-coolant-system",
+    "catalog_system": "002",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "refueling.md",
+    "slug": "refueling",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "residual-heat-removal.md",
+    "slug": "residual-heat-removal",
+    "catalog_system": "005",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "rps-ssps.md",
+    "slug": "rps-ssps",
+    "catalog_system": "012",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "rvlis.md",
+    "slug": "rvlis",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "rx-vessel-and-internals.md",
+    "slug": "rx-vessel-and-internals",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "secs.md",
+    "slug": "secs",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "service-water.md",
+    "slug": "service-water",
+    "catalog_system": "076",
+    "mode": "ka_index",
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.2.1",
+    "salem_na": false
+  },
+  {
+    "article": "spav.md",
+    "slug": "spav",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "spent-fuel-pool.md",
+    "slug": "spent-fuel-pool",
+    "catalog_system": "033",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "stator-cooling-water.md",
+    "slug": "stator-cooling-water",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "steam-dumps.md",
+    "slug": "steam-dumps",
+    "catalog_system": "041",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "steam-generators.md",
+    "slug": "steam-generators",
+    "catalog_system": "035",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "tac.md",
+    "slug": "tac",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "tga-ventilation.md",
+    "slug": "tga-ventilation",
+    "catalog_system": null,
+    "mode": "ufsar_structure",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "turbine-generator.md",
+    "slug": "turbine-generator",
+    "catalog_system": "045",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "waste-gas.md",
+    "slug": "waste-gas",
+    "catalog_system": "071",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  },
+  {
+    "article": "waste-liquid.md",
+    "slug": "waste-liquid",
+    "catalog_system": "068",
+    "mode": "ka_index",
+    "ufsar_chapter": null,
+    "ufsar_section": null,
+    "salem_na": false
+  }
+]
