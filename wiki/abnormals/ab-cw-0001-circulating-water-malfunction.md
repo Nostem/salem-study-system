@@ -16,6 +16,18 @@ Provides operator actions for responding to circulating water system malfunction
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q81</div>
+When a 500 KV bus section loss trips multiple circulators (13 KV ring bus south Section A de-energized → 3 circulators lost), AB.CW-0001 directs opening the <span class="hi-exam">Turbine Hood Spray Bypass valves 11-13MC62s on the affected condensers</span> (all of them). <span class="hi-trap">A power reduction is NOT required as long as at least one circulator remains running on each waterbox.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q93</div>
+On a loss of circulators (23 SPT lost → 3 of 4 circulators off): <span class="hi-exam">the reactor remains at power</span> (the CAS Rx trip applies only with 4 circulators O/S above P-9). AB.CW-0001 (page 5) allows/directs <span class="hi-exam">manually establishing Low Pressure Turbine Hood Spray</span> (normally secured &gt;15% power). See [[Circ Water]], [[Main Turbine]].
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q37</div>
 CAS guidance: with <span class="hi-exam">4 or more circulators out of service AND Reactor Power >= P-10 (10%)</span>, crew is required to <span class="hi-exam">TRIP the Reactor</span>. At 25% power with intake structure damage taking 4 circulators out of service, reactor trip is required — not rapid load reduction, controlled shutdown, or turbine trip. <span class="hi-trap">CAS also contains guidance for Rapid Power Reduction (to stabilize backpressure), Turbine Trip (backpressure outside limits with power < P-9/49%), and Immediate Controlled Turbine Shutdown (Attachment 7) — but 4+ circulators OOS above P-10 = reactor trip.</span>
@@ -27,8 +39,8 @@ Per Attachment 1: with <span class="hi-exam">4 or more circulators out of servic
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #4</div>
-High DP across 23A CW Traveling Screen. Entry cue: OHA K-1 (21-23 A CW SCRNWSH TRBL). 23A traveling screen running in Fast Speed with heavy grass/debris. Attachment 1 step 9 provides CW pump trip criteria based on screen DP: <span class="hi-exam">stop CW pump when DP > 6 feet, emergency trip when DP > 8 feet</span>. PO stops or emergency trips 23A CW pump.
+<div class="callout-label">Scenario — 2019 #1</div>
+21A condenser tube leak (Event 4). Crew enters both AB.CHEM-0001 and AB.CW-0001. PO identifies rising secondary chemistry on 2RP5 recorders — 21A condenser is affected hotwell. PO reports Gross Condenser Tube Failure conditions met and <span class="hi-exam">Emergency Trips 21A CW pump</span> (waits ~1 minute before pressing Stop PB to allow water to drain from waterbox).
 </div>
 
 <div class="callout callout-scenario">
@@ -37,18 +49,8 @@ Loss of #4 SPT causes 23 CW Bus de-energization — 21A-23A CW pumps trip. Conde
 </div>
 
 <div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2019 #1</div>
-21A condenser tube leak (Event 4). Crew enters both AB.CHEM-0001 and AB.CW-0001. PO identifies rising secondary chemistry on 2RP5 recorders — 21A condenser is affected hotwell. PO reports Gross Condenser Tube Failure conditions met and <span class="hi-exam">Emergency Trips 21A CW pump</span> (waits ~1 minute before pressing Stop PB to allow water to drain from waterbox).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q93</div>
-On a loss of circulators (23 SPT lost → 3 of 4 circulators off): <span class="hi-exam">the reactor remains at power</span> (the CAS Rx trip applies only with 4 circulators O/S above P-9). AB.CW-0001 (page 5) allows/directs <span class="hi-exam">manually establishing Low Pressure Turbine Hood Spray</span> (normally secured &gt;15% power). See [[Circ Water]], [[Main Turbine]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q81</div>
-When a 500 KV bus section loss trips multiple circulators (13 KV ring bus south Section A de-energized → 3 circulators lost), AB.CW-0001 directs opening the <span class="hi-exam">Turbine Hood Spray Bypass valves 11-13MC62s on the affected condensers</span> (all of them). <span class="hi-trap">A power reduction is NOT required as long as at least one circulator remains running on each waterbox.</span>
+<div class="callout-label">Scenario — 2022 #4</div>
+High DP across 23A CW Traveling Screen. Entry cue: OHA K-1 (21-23 A CW SCRNWSH TRBL). 23A traveling screen running in Fast Speed with heavy grass/debris. Attachment 1 step 9 provides CW pump trip criteria based on screen DP: <span class="hi-exam">stop CW pump when DP > 6 feet, emergency trip when DP > 8 feet</span>. PO stops or emergency trips 23A CW pump.
 </div>
 
 ## Connections

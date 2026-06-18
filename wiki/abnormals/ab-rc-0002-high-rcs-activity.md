@@ -15,14 +15,21 @@ Provides operator actions for responding to elevated radioactivity levels in the
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q20</div>
+Method of monitoring for failed fuel under abnormal lineups (not the TS failed-fuel-monitoring-equipment definition): with normal letdown out of service (2CV18 shut) and Excess Letdown in service, a large fission-product release shows first on <span class="hi-exam">2R4 (Charging Pump Room Area Monitor)</span> — the excess letdown line returns to the charging pump suction, raising area radiation around the pumps. <span class="hi-trap">Excess letdown bypasses 2R31 (Letdown HX Monitor); with normal letdown secured the 2R26 (RC Filter Monitor) sees no mixed-bed demin flow; with no primary-to-secondary leak the 2R19 SG Blowdown Monitors are unaffected.</span>
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q19</div>
 To differentiate a <span class="hi-exam">crud burst</span> from <span class="hi-exam">failed fuel</span> as the cause of a rising 2R31 (Letdown Line-Failed Fuel Process Rad Monitor) indication, AB.RC-0002 directs <span class="hi-exam">requesting a Shift Chemistry Technician perform a radiological analysis (isotopic) of the RCS</span> — a crud burst shows different concentrations of certain radionuclides than failed fuel. <span class="hi-trap">Traps: (1) there is NO procedural guidance to judge the source by how fast the indication rises (rate of rise on 2R31); (2) maximizing letdown flow is done to expedite RCS cleanup for valid elevated activity, NOT to determine the cause; (3) Radiation Protection is dispatched to survey/repost areas for personnel protection, NOT to determine the source of activity.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q22</div>
-Following confirmation of elevated activity below Tech Spec limits, maximize letdown flow to accelerate RCS cleanup through the demineralizers.
+<div class="callout-label">Exam — 2015 Q98</div>
+On a 2R31 WARNING, AB.RC-0002 requires the CRS to <span class="hi-exam">direct an RP Technician to take surveys to determine if radiation levels have changed access requirements</span> (for prompt identification/notification of plant personnel). The hourly isotopic analysis is for gamma to determine DEI for trending (Step 3.18). See [[Radiation Monitoring]].
 </div>
 
 <div class="callout callout-exam">
@@ -36,13 +43,8 @@ Per AB.RC-0002 Step 3.14, crew is required to have a <span class="hi-exam">Centr
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q98</div>
-On a 2R31 WARNING, AB.RC-0002 requires the CRS to <span class="hi-exam">direct an RP Technician to take surveys to determine if radiation levels have changed access requirements</span> (for prompt identification/notification of plant personnel). The hourly isotopic analysis is for gamma to determine DEI for trending (Step 3.18). See [[Radiation Monitoring]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q20</div>
-Method of monitoring for failed fuel under abnormal lineups (not the TS failed-fuel-monitoring-equipment definition): with normal letdown out of service (2CV18 shut) and Excess Letdown in service, a large fission-product release shows first on <span class="hi-exam">2R4 (Charging Pump Room Area Monitor)</span> — the excess letdown line returns to the charging pump suction, raising area radiation around the pumps. <span class="hi-trap">Excess letdown bypasses 2R31 (Letdown HX Monitor); with normal letdown secured the 2R26 (RC Filter Monitor) sees no mixed-bed demin flow; with no primary-to-secondary leak the 2R19 SG Blowdown Monitors are unaffected.</span>
+<div class="callout-label">Exam — 2023 Q22</div>
+Following confirmation of elevated activity below Tech Spec limits, maximize letdown flow to accelerate RCS cleanup through the demineralizers.
 </div>
 
 ## Connections

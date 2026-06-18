@@ -15,59 +15,13 @@ Provides operator actions for responding to malfunctions in the pressurizer pres
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q5</div>
-When a PZR pressure channel fails high, actual RCS pressure lowers. This causes the OT Delta-T setpoint to lower. The OT Delta-T trip actuates first (before the low PZR pressure trip) because the OT Delta-T setpoint is moving toward the actual Delta-T value.
-</div>
+**Exam & operating coverage:**
+
+### Pressure Channel Failures
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q9</div>
-With PZR spray valve failed open and heaters energized but unable to maintain pressure: manual reactor trip directed at <span class="hi-exam">RCS pressure 2000 psig and lowering</span>. <span class="hi-trap">Basis: prevent challenging automatic reactor trip on OT&Delta;T — not the low PZR pressure trip at 1865 psig rate-compensated.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 Sim-c</div>
-2PR2 PZR PORV leak isolation. Initial diagnosis is rising PORV tailpipe temperature (~227°F) and rising charging flow → enter S2.OP-AB.RC-0001, then transition to AB.PZR-0001 (the RC CAS Item 3.0 directs AB.PZR-0001 when leakage is identified from a PORV or a PZR Code Safety Valve). The PZR diagnostic logic clears POPS, controlling channel, Master Pressure Controller, and spray-valve failures, then at step 3.46 confirms elevated PORV tailpipe temps. Isolation method: <span class="hi-exam">CLOSE both 2PR6 and 2PR7 (step 3.47)</span>; when pressure stabilizes OPEN 2PR6 (tailpipe not rising) → OPEN 2PR7 (tailpipe rises, identifying 2PR2) → <span class="hi-exam">CLOSE 2PR7 to isolate 2PR2 (step 3.55)</span>. Then notify SM/CRS to refer to TS 3.4.5 and the Event Classification Guide for Primary Leakage.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 Sim-c</div>
-Spray-valve failure branch (step 3.17). PZR Spray Valve <span class="hi-exam">2PS1 fails open</span> at 4% power. Entry via lowering PZR pressure / OHA E-28 PZR HTR ON PRESS LO. Diagnostic logic clears POPS (3.2), controlling channel (3.3), and Master Pressure Controller (3.11); step 3.17 identifies <span class="hi-exam">2PS1 failed open</span>. Place 2PS1 in MANUAL (3.18) and CLOSE (3.19) — <span class="hi-exam">2PS1 remains open</span>, so pressure control is not regained (3.21). With RCS pressure dropping rapidly (3.22) and RTBs closed (3.23), step 3.24 directs: <span class="hi-exam">TRIP the Reactor (3.24.A)</span>, <span class="hi-exam">STOP 21 and 23 RCPs (3.24.C)</span>, and <span class="hi-exam">STOP all but one RCP if pressure continues to drop (3.24.D)</span>, then GO TO 2-EOP-TRIP-1.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #4</div>
-2PR2 PZR PORV seat leakage. Entry cue: OHA E-28 PZR HTR ON PRESS LO with rising PORV tailpipe temperature. Diagnostic method: close both block valves (2PR6, 2PR7), stabilize RCS pressure, then open each block valve individually — the one causing tailpipe temp to rise identifies the leaking PORV (<span class="hi-exam">2PR2 via 2PR7</span>). CRS enters <span class="hi-exam">TS 3.4.5 action a</span> (1 hour to close PORV block valve with power maintained) and evaluates TS 3.2.5.b if RCS pressure below <span class="hi-exam">2200 psia [2185 psig]</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q7</div>
-PORV fails open, cannot close in manual: <span class="hi-exam">next required action is CLOSE the associated block valve</span>. <span class="hi-trap">Opening the control power breaker is only done if the block valve FAILS to close.</span> CAS: if RCS pressure drops to <span class="val-trip">2000 psig</span> and continues to drop, TRIP the reactor. Basis: simulator scenarios showed reactor tripped at <span class="hi-exam">1950 psig on OT&Delta;T</span>, so 2000 psig value was chosen to prevent automatic trip. <span class="hi-trap">1900 psig distractor: low pressure reactor trip setpoint is 1865 psig (rate-compensated) — 1900 psig is plausible but not the procedure value.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 Sim-a</div>
-PZR pressure channel 1 fails high → MPC drives both spray valves fully open. Operator takes MPC to manual and lowers demand. <span class="hi-exam">Alternate path: 2PS1 fails to close when MPC demand zeroed</span>. Procedure path: Step 3.3 YES (controlling channel failed) → 3.5 MPC to MANUAL → 3.6 adjust per Attachment 2 → 3.17 spray valve(s) failed YES → <span class="hi-exam">3.18 place 2PS1 in MANUAL → 3.19 close 2PS1</span>. CAS: if RCS pressure drops to <span class="val-trip">2000 psig</span> and continues to drop → trip reactor and stop <span class="hi-exam">21 and 23 RCPs</span>.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2019 #1</div>
-PZR Pressure Channel I fails high at 4% power (Event 2). RO places MPC in Manual, restores pressure by selecting Channel III, returns MPC to Auto. CRS enters TSAS for <span class="hi-exam">3.3.3.1 Action 6, 3.3.2.1 Action b.19, 3.4.5 Action b (1 hour), and 3.2.5.b (2 hour if RCS < 2200 psia)</span>. RO places 2PR1 in Manual and closes <span class="hi-exam">2PR6 Block Valve</span>. WCC removes control power to 2PR6.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2019 #4</div>
-2PR2 PORV leaks at 88% power (Event 1). Crew recognizes from elevated PORV tailpipe temperatures. Isolates by opening both block valves sequentially: 2PR6 tailpipe temps stable, 2PR7 tailpipe temps rising → <span class="hi-exam">close 2PR7 to isolate 2PR2</span>. CRS enters TSAS <span class="hi-exam">3.4.5 Action a (1 hour LCO)</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q11</div>
-With lowering PZR pressure, AB.PZR-0001 directs closing <span class="hi-exam">BOTH PZR PORV Stop valves</span> when attempting to determine if the PORVs are the source of the pressure reduction. Per drawing 203301, both PZR PORVs and Safeties discharge into a single line going to the PRT. The <span class="hi-exam">3 Safeties each have their own individual tailpipe temperature sensor, while the 2 PORVs share one sensor on a common discharge line</span> — so there is no way to distinguish which PORV is leaking from temperature alone. Closing both PORV Stops, then re-opening one (<span class="hi-exam">2PR8</span>), allows the leaking valve to be identified by tailpipe temperature response. <span class="hi-trap">Trap: Rx Head Vent leakage is NOT addressed in AB.PZR-0001 — head vent leaks are diagnosed as RCS leaks, not via the PORV/Safety discharge logic.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2018 #1</div>
-PZR Pressure Channel I fails high during startup at ~6% power. Both spray valves fully open, PZR heaters de-energize. RO places MPC in manual, lowers demand to close spray valves. Selects <span class="hi-exam">Channel III</span> for control, returns MPC to Auto. Closes <span class="hi-exam">2PR6</span>, places 2PR1 in Manual. WCC removes control power from 2PR6. PO removes failed channel IAW <span class="hi-exam">S2.OP-SO.RPS-0003</span>. Tech Specs: 3.3.1.1 Action 6, 3.3.2.1.b Action 19, <span class="hi-exam">3.4.5 Action b (1 hr LCO)</span>, 3.2.5 DNB (2 hr LCO).
+<div class="callout-label">Exam — 2014 Q10</div>
+Controlling PZR Pressure channel (Channel III / PT-457) fails low: Master Pressure Controller senses low pressure, output goes to 0%, <span class="hi-exam">all auto PZR heaters energize and spray valves shut</span> (and stay shut — MPC still sees low pressure). RCS pressure rises slowly. The PZR PORVs require <span class="hi-exam">2/2 coincidence: 2PR1 from channels I/III, 2PR2 from channels II/IV</span> (per the question answer key). With Channel III failed low, <span class="hi-trap">2PR1 will NOT open; only ONE PORV (2PR2) opens — at <span class="val-alarm">2335 psig</span>.</span> (Note: the 2014 Q10 answer key's closing sentence states "2PR2 will open when channels I and III sense 2335 psig," which conflicts with its own II/IV assignment for 2PR2 — preserved verbatim in the question article.)
 </div>
 
 <div class="callout callout-exam">
@@ -76,23 +30,13 @@ After a 21 SGFP trip at 100% MOL (no operator action, no Rx trip), an UNEXPECTED
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q36</div>
-2PS1 PZR Spray Valve fails open at 4% power during a startup hold (cannot be shut). With NO operator action, RCS pressure decreases. Below P-10 the <span class="hi-exam">Low PZR Pressure reactor trip is BLOCKED</span> — the FIRST automatic protective action is <span class="hi-exam">SI on Low PZR Pressure</span>. Low PZR Pressure SI is reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span> (P-11). PZR level does not rise to the high-level Rx trip setpoint (the leak path depressurizes through the spray line). OT/DT trip would not initiate at 4% power.
+<div class="callout-label">Exam — 2023 Q5</div>
+When a PZR pressure channel fails high, actual RCS pressure lowers. This causes the OT Delta-T setpoint to lower. The OT Delta-T trip actuates first (before the low PZR pressure trip) because the OT Delta-T setpoint is moving toward the actual Delta-T value.
 </div>
 
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2017 ESG-7</div>
-2PR2 PZR PORV develops a leak (~30 gpm) during a 76%→89% power ascension. Crew identifies the leak from <span class="hi-exam">lowering PZR pressure / rising PORV tailpipe temp / rising charging flow / lower spray valve demand / PRT indications</span>. Diagnostic isolation: RO closes <span class="hi-exam">both PORV stop valves (2PR6 and 2PR7)</span>, then opens 2PR6 (tailpipe temps still lowering), then opens 2PR7 (tailpipe temps rising) — confirms <span class="hi-exam">2PR2 leaking</span>. RO closes 2PR7 to isolate. CRS enters <span class="hi-exam">TSAS 3.4.5 action a</span> (1-hour LCO).
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2016 #3</div>
-PZR Pressure Channel I (PT-455) fails HIGH during a 2% power ascension. PZR heaters de-energize, both PZR Spray valves drive fully open. RO places Master Pressure Controller in manual and lowers demand to close sprays. Selects <span class="hi-exam">Channel III</span> for control, matches MPC demand to current pressure, returns MPC to AUTO. Shuts <span class="hi-exam">2PR6</span> and dispatches WCC to remove power from 2PR6 within <span class="hi-exam">one hour of the channel failure IAW Tech Specs</span>. PO removes failed channel from service IAW <span class="hi-exam">S2.OP-SO.RPS-0003</span>. CRS enters TSAS <span class="hi-exam">3.3.1.1 Action 6, 3.3.2.1.b Action 19*, 3.4.5.b, and 3.2.5</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q87</div>
-For a PORV (2PR1) failing open: MPC output lowers as PZR pressure drops; the PORV is isolated by shutting its Block Valve. <span class="hi-exam">A failed-open PORV isolated by its Block Valve requires a unit shutdown if not restored within 72 hours (TS 3.4.5.b)</span>; a leaking PORV isolated by its Block Valve (power maintained) does NOT require shutdown. See [[Pressurizer Level & Press Control]], [[TS 3/4.4 — Reactor Coolant System]].
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-a</div>
+PZR pressure channel 1 fails high → MPC drives both spray valves fully open. Operator takes MPC to manual and lowers demand. <span class="hi-exam">Alternate path: 2PS1 fails to close when MPC demand zeroed</span>. Procedure path: Step 3.3 YES (controlling channel failed) → 3.5 MPC to MANUAL → 3.6 adjust per Attachment 2 → 3.17 spray valve(s) failed YES → <span class="hi-exam">3.18 place 2PS1 in MANUAL → 3.19 close 2PS1</span>. CAS: if RCS pressure drops to <span class="val-trip">2000 psig</span> and continues to drop → trip reactor and stop <span class="hi-exam">21 and 23 RCPs</span>.
 </div>
 
 <div class="callout callout-scenario">
@@ -100,9 +44,48 @@ For a PORV (2PR1) failing open: MPC output lowers as PZR pressure drops; the POR
 Entered on a controlling PZR Pressure channel (Channel I / PT455) failing low (<span class="hi-exam">OHAs D-16 RC PRESS LO, E-12 PZR PRESS LO, E-28 PZR HTR ON PRESS LOW</span>). Crew places Master Pressure Controller in MANUAL, adjusts demand per Attachment 2, <span class="hi-exam">selects PZR Pressure Channel III for control</span>, restores Master Controller to AUTO, then removes the failed channel from service. CRS enters TSAS <span class="hi-exam">3.3.1.1 Action 6, 3.3.2.1.b Action 19, and 3.4.5 Action b</span> and directs closing/de-energizing 2PR6 PORV block valve.
 </div>
 
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2016 #3</div>
+PZR Pressure Channel I (PT-455) fails HIGH during a 2% power ascension. PZR heaters de-energize, both PZR Spray valves drive fully open. RO places Master Pressure Controller in manual and lowers demand to close sprays. Selects <span class="hi-exam">Channel III</span> for control, matches MPC demand to current pressure, returns MPC to AUTO. Shuts <span class="hi-exam">2PR6</span> and dispatches WCC to remove power from 2PR6 within <span class="hi-exam">one hour of the channel failure IAW Tech Specs</span>. PO removes failed channel from service IAW <span class="hi-exam">S2.OP-SO.RPS-0003</span>. CRS enters TSAS <span class="hi-exam">3.3.1.1 Action 6, 3.3.2.1.b Action 19*, 3.4.5.b, and 3.2.5</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #1</div>
+PZR Pressure Channel I fails high during startup at ~6% power. Both spray valves fully open, PZR heaters de-energize. RO places MPC in manual, lowers demand to close spray valves. Selects <span class="hi-exam">Channel III</span> for control, returns MPC to Auto. Closes <span class="hi-exam">2PR6</span>, places 2PR1 in Manual. WCC removes control power from 2PR6. PO removes failed channel IAW <span class="hi-exam">S2.OP-SO.RPS-0003</span>. Tech Specs: 3.3.1.1 Action 6, 3.3.2.1.b Action 19, <span class="hi-exam">3.4.5 Action b (1 hr LCO)</span>, 3.2.5 DNB (2 hr LCO).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #1</div>
+PZR Pressure Channel I fails high at 4% power (Event 2). RO places MPC in Manual, restores pressure by selecting Channel III, returns MPC to Auto. CRS enters TSAS for <span class="hi-exam">3.3.3.1 Action 6, 3.3.2.1 Action b.19, 3.4.5 Action b (1 hour), and 3.2.5.b (2 hour if RCS < 2200 psia)</span>. RO places 2PR1 in Manual and closes <span class="hi-exam">2PR6 Block Valve</span>. WCC removes control power to 2PR6.
+</div>
+
+### Spray Valve Failures
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q10</div>
-Controlling PZR Pressure channel (Channel III / PT-457) fails low: Master Pressure Controller senses low pressure, output goes to 0%, <span class="hi-exam">all auto PZR heaters energize and spray valves shut</span> (and stay shut — MPC still sees low pressure). RCS pressure rises slowly. The PZR PORVs require <span class="hi-exam">2/2 coincidence: 2PR1 from channels I/III, 2PR2 from channels II/IV</span> (per the question answer key). With Channel III failed low, <span class="hi-trap">2PR1 will NOT open; only ONE PORV (2PR2) opens — at <span class="val-alarm">2335 psig</span>.</span> (Note: the 2014 Q10 answer key's closing sentence states "2PR2 will open when channels I and III sense 2335 psig," which conflicts with its own II/IV assignment for 2PR2 — preserved verbatim in the question article.)
+<div class="callout-label">Exam — 2014 Q38</div>
+With 2PS3 PZR spray valve demand failing to 50%, actual spray flow roughly <span class="hi-exam">doubles</span> (normal demand is ~13% per valve since Salem runs one B/U heater set in MANUAL ON). 2PS1 WILL shut, but excess spray remains (2PS3 is the dominant spray flow), so PZR pressure lowers and the <span class="hi-exam">backup heaters in AUTO energize at <span class="val-normal">2210 psig</span> (turn off at <span class="val-normal">2218 psig</span>)</span>. <span class="hi-trap">Control group heaters cannot hold pressure against 50% spray demand.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q36</div>
+2PS1 PZR Spray Valve fails open at 4% power during a startup hold (cannot be shut). With NO operator action, RCS pressure decreases. Below P-10 the <span class="hi-exam">Low PZR Pressure reactor trip is BLOCKED</span> — the FIRST automatic protective action is <span class="hi-exam">SI on Low PZR Pressure</span>. Low PZR Pressure SI is reinstated during heatup/pressurization when RCS pressure was &gt;<span class="val-normal">1915 psig</span> (P-11). PZR level does not rise to the high-level Rx trip setpoint (the leak path depressurizes through the spray line). OT/DT trip would not initiate at 4% power.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q9</div>
+With PZR spray valve failed open and heaters energized but unable to maintain pressure: manual reactor trip directed at <span class="hi-exam">RCS pressure 2000 psig and lowering</span>. <span class="hi-trap">Basis: prevent challenging automatic reactor trip on OT&Delta;T — not the low PZR pressure trip at 1865 psig rate-compensated.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-c</div>
+Spray-valve failure branch (step 3.17). PZR Spray Valve <span class="hi-exam">2PS1 fails open</span> at 4% power. Entry via lowering PZR pressure / OHA E-28 PZR HTR ON PRESS LO. Diagnostic logic clears POPS (3.2), controlling channel (3.3), and Master Pressure Controller (3.11); step 3.17 identifies <span class="hi-exam">2PS1 failed open</span>. Place 2PS1 in MANUAL (3.18) and CLOSE (3.19) — <span class="hi-exam">2PS1 remains open</span>, so pressure control is not regained (3.21). With RCS pressure dropping rapidly (3.22) and RTBs closed (3.23), step 3.24 directs: <span class="hi-exam">TRIP the Reactor (3.24.A)</span>, <span class="hi-exam">STOP 21 and 23 RCPs (3.24.C)</span>, and <span class="hi-exam">STOP all but one RCP if pressure continues to drop (3.24.D)</span>, then GO TO 2-EOP-TRIP-1.
+</div>
+
+### PORV Failures and Leaks
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q86</div>
+When a second RCP is started in Mode 5 with RHR in service and RCS pressure momentarily rises to 390 psig, the PZR PORVs open — enter AB.PZR-0001 and use <span class="hi-exam">Attachment 3 to ensure any PZR PORV that opened has shut</span>. The 1RH3 RHR relief also lifts at 375 psig but is not apparent in the control room.
 </div>
 
 <div class="callout callout-exam">
@@ -111,18 +94,43 @@ For a PORV (1PR1) that opens in automatic and cannot be shut, AB.PZR directs <sp
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q38</div>
-With 2PS3 PZR spray valve demand failing to 50%, actual spray flow roughly <span class="hi-exam">doubles</span> (normal demand is ~13% per valve since Salem runs one B/U heater set in MANUAL ON). 2PS1 WILL shut, but excess spray remains (2PS3 is the dominant spray flow), so PZR pressure lowers and the <span class="hi-exam">backup heaters in AUTO energize at <span class="val-normal">2210 psig</span> (turn off at <span class="val-normal">2218 psig</span>)</span>. <span class="hi-trap">Control group heaters cannot hold pressure against 50% spray demand.</span>
-</div>
-
-<div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q87</div>
 With RHR in service in Mode 5, an RCS pressure transient to &gt;375 psig opens the PZR PORVs (and the 1RH3 RHR relief, which is not apparent in the control room). The crew enters AB.PZR-0001 and uses <span class="hi-exam">Attachment 3 to ensure any PZR PORV that opened in response to the pressure has shut</span>. <span class="hi-trap">AB.LOCA-0001 (Shutdown LOCA) is NOT entered in Mode 5 — it applies to Modes 3/4 with accumulators isolated.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q86</div>
-When a second RCP is started in Mode 5 with RHR in service and RCS pressure momentarily rises to 390 psig, the PZR PORVs open — enter AB.PZR-0001 and use <span class="hi-exam">Attachment 3 to ensure any PZR PORV that opened has shut</span>. The 1RH3 RHR relief also lifts at 375 psig but is not apparent in the control room.
+<div class="callout-label">Exam — 2015 Q87</div>
+For a PORV (2PR1) failing open: MPC output lowers as PZR pressure drops; the PORV is isolated by shutting its Block Valve. <span class="hi-exam">A failed-open PORV isolated by its Block Valve requires a unit shutdown if not restored within 72 hours (TS 3.4.5.b)</span>; a leaking PORV isolated by its Block Valve (power maintained) does NOT require shutdown. See [[Pressurizer Level & Press Control]], [[TS 3/4.4 — Reactor Coolant System]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q11</div>
+With lowering PZR pressure, AB.PZR-0001 directs closing <span class="hi-exam">BOTH PZR PORV Stop valves</span> when attempting to determine if the PORVs are the source of the pressure reduction. Per drawing 203301, both PZR PORVs and Safeties discharge into a single line going to the PRT. The <span class="hi-exam">3 Safeties each have their own individual tailpipe temperature sensor, while the 2 PORVs share one sensor on a common discharge line</span> — so there is no way to distinguish which PORV is leaking from temperature alone. Closing both PORV Stops, then re-opening one (<span class="hi-exam">2PR8</span>), allows the leaking valve to be identified by tailpipe temperature response. <span class="hi-trap">Trap: Rx Head Vent leakage is NOT addressed in AB.PZR-0001 — head vent leaks are diagnosed as RCS leaks, not via the PORV/Safety discharge logic.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q7</div>
+PORV fails open, cannot close in manual: <span class="hi-exam">next required action is CLOSE the associated block valve</span>. <span class="hi-trap">Opening the control power breaker is only done if the block valve FAILS to close.</span> CAS: if RCS pressure drops to <span class="val-trip">2000 psig</span> and continues to drop, TRIP the reactor. Basis: simulator scenarios showed reactor tripped at <span class="hi-exam">1950 psig on OT&Delta;T</span>, so 2000 psig value was chosen to prevent automatic trip. <span class="hi-trap">1900 psig distractor: low pressure reactor trip setpoint is 1865 psig (rate-compensated) — 1900 psig is plausible but not the procedure value.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-c</div>
+2PR2 PZR PORV leak isolation. Initial diagnosis is rising PORV tailpipe temperature (~227°F) and rising charging flow → enter S2.OP-AB.RC-0001, then transition to AB.PZR-0001 (the RC CAS Item 3.0 directs AB.PZR-0001 when leakage is identified from a PORV or a PZR Code Safety Valve). The PZR diagnostic logic clears POPS, controlling channel, Master Pressure Controller, and spray-valve failures, then at step 3.46 confirms elevated PORV tailpipe temps. Isolation method: <span class="hi-exam">CLOSE both 2PR6 and 2PR7 (step 3.47)</span>; when pressure stabilizes OPEN 2PR6 (tailpipe not rising) → OPEN 2PR7 (tailpipe rises, identifying 2PR2) → <span class="hi-exam">CLOSE 2PR7 to isolate 2PR2 (step 3.55)</span>. Then notify SM/CRS to refer to TS 3.4.5 and the Event Classification Guide for Primary Leakage.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2017 ESG-7</div>
+2PR2 PZR PORV develops a leak (~30 gpm) during a 76%→89% power ascension. Crew identifies the leak from <span class="hi-exam">lowering PZR pressure / rising PORV tailpipe temp / rising charging flow / lower spray valve demand / PRT indications</span>. Diagnostic isolation: RO closes <span class="hi-exam">both PORV stop valves (2PR6 and 2PR7)</span>, then opens 2PR6 (tailpipe temps still lowering), then opens 2PR7 (tailpipe temps rising) — confirms <span class="hi-exam">2PR2 leaking</span>. RO closes 2PR7 to isolate. CRS enters <span class="hi-exam">TSAS 3.4.5 action a</span> (1-hour LCO).
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2019 #4</div>
+2PR2 PORV leaks at 88% power (Event 1). Crew recognizes from elevated PORV tailpipe temperatures. Isolates by opening both block valves sequentially: 2PR6 tailpipe temps stable, 2PR7 tailpipe temps rising → <span class="hi-exam">close 2PR7 to isolate 2PR2</span>. CRS enters TSAS <span class="hi-exam">3.4.5 Action a (1 hour LCO)</span>.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #4</div>
+2PR2 PZR PORV seat leakage. Entry cue: OHA E-28 PZR HTR ON PRESS LO with rising PORV tailpipe temperature. Diagnostic method: close both block valves (2PR6, 2PR7), stabilize RCS pressure, then open each block valve individually — the one causing tailpipe temp to rise identifies the leaking PORV (<span class="hi-exam">2PR2 via 2PR7</span>). CRS enters <span class="hi-exam">TS 3.4.5 action a</span> (1 hour to close PORV block valve with power maintained) and evaluates TS 3.2.5.b if RCS pressure below <span class="hi-exam">2200 psia [2185 psig]</span>.
 </div>
 
 ## Connections

@@ -16,6 +16,8 @@ Provides operator actions for responding to a loss of service water when a servi
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q53</div>
 <span class="hi-trap">AB.SW-0004 is for OUTAGE situations only.</span> When a SW Bay is cleared and tagged (isolated) and a subsequent event occurs (e.g., SW pump trip + 4KV bus differential), the correct procedure entry depends on the actual impact to SW flow — <span class="hi-exam">AB.SW-0004 is NOT the correct entry when the plant is at power and the event does not result from the header outage itself</span>. In the 2020 Q53 scenario, the correct entry is AB.4KV-0001 because the 1A bus differential does not affect operating SW pumps (15 and 16 SW Pumps powered from 1A Bus are already C/Ted).

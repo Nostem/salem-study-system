@@ -16,6 +16,13 @@ Provides operator actions for responding to malfunctions of the fire protection 
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q92</div>
+For a valid deluge actuation, FP header pressure lowers until the <span class="hi-exam">#1 Fire Pump starts at 85 psig</span> and restores header pressure; the <span class="hi-exam">second Fire Pump (auto-start set at 75 psig) does NOT start</span>, since each pump is rated to supply all fire protection needs. <span class="hi-trap">Trap: AB.FP-0001 is NOT entered for a valid deluge actuation (no malfunction indication). AB.FP-0001 would direct stopping the unit startup only if both normal and backup fire protection systems are unavailable.</span> OHA A-15 annunciates when EITHER (or both) Fire Pumps start.
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q65</div>
 Both fire pumps running with no fire actuations and header pressure stable at 135 psig: cause is <span class="hi-exam">loss of normal AC power to BOTH fire pump battery chargers</span>. The diesel-driven fire pumps normally start on low header pressure (<span class="val-alarm"><85 psig</span> and time-delayed <span class="val-alarm"><75 psig</span>), but also include an <span class="hi-exam">independent battery that auto-starts both fire pumps on loss of normal AC power</span>.
@@ -24,11 +31,6 @@ Both fire pumps running with no fire actuations and header pressure stable at 13
 <div class="callout callout-exam">
 <div class="callout-label">Exam -- 2023 Q100</div>
 If both Salem fire pumps are inoperable (at least one fire pump and one fire pump water supply NOT available), per S2.OP-AB.FIRE-0002 step 3.5: <span class="hi-exam">open the backup fire suppression water supply cross-tie valves from Hope Creek</span>. If the Hope Creek cross-tie cannot be established within <span class="hi-exam">24 hours</span>, then the unit must be in <span class="hi-exam">Hot Standby within 6 hours</span>, Hot Shutdown within the following 6 hours, and Cold Shutdown within the subsequent 24 hours. <span class="hi-trap">Hot Standby (not Hot Shutdown) is the first required mode within 6 hours of the 24-hour action time expiring.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q92</div>
-For a valid deluge actuation, FP header pressure lowers until the <span class="hi-exam">#1 Fire Pump starts at 85 psig</span> and restores header pressure; the <span class="hi-exam">second Fire Pump (auto-start set at 75 psig) does NOT start</span>, since each pump is rated to supply all fire protection needs. <span class="hi-trap">Trap: AB.FP-0001 is NOT entered for a valid deluge actuation (no malfunction indication). AB.FP-0001 would direct stopping the unit startup only if both normal and backup fire protection systems are unavailable.</span> OHA A-15 annunciates when EITHER (or both) Fire Pumps start.
 </div>
 
 ## Connections

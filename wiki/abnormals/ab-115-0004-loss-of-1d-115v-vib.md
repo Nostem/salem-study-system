@@ -16,6 +16,8 @@ Provides operator actions for a loss of the 1D 115V Vital Instrument Bus, includ
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q13</div>
 With Unit 1 in MODE 2 at 4% power, a loss of 1D 115V Vital Instrument Bus (inverter output breaker trip) causes the <span class="hi-exam">Yellow High Flux PRNI CH IV lamp to illuminate on Reactor Status Panel 1RP4 for BOTH the High Power and Low Power High Flux trip bistables</span> (one minute after the loss, with no operator action). <span class="hi-trap">No Reactor Trip results — the loss of one VIB / one NIS channel gives no trip demand (the High Flux trip is 2/4 coincidence).</span> <span class="hi-trap">The Over Power Rod Stop Manual Bypass for CH IV is NOT automatic — it must be manually aligned. The "H" bus RCP UV lamp is associated with the "G" 4KV RCP group bus (group buses H, E, F, G feed 11, 12, 13, 14 RCPs), not the loss of D VIB.</span>

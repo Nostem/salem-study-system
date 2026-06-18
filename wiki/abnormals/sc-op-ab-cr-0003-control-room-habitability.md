@@ -16,6 +16,8 @@ Abnormal procedure for a loss of control room habitability (e.g., a toxic gas re
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q81</div>
 For a toxic-gas control room evacuation, AB.CR-0003 directs evacuation via AB.CR-0001. The field actions to stabilize the plant come from AB.CR-0001: <span class="hi-exam">PZR level is determined at the Hot Shutdown Panel 213, and controlled by establishing local control of the CV55 CHARGING FLOW CONTROL VLV to maintain PZR level 22%–77%</span> — positive manual field control is established (rather than relying on the Master Flow Controller).

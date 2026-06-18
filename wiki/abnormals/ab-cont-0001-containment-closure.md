@@ -18,6 +18,8 @@ Provides guidance for establishing containment closure during shutdown condition
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q84</div>
 AB.CONT-0001 containment closure timing depends on the initiating event:<br>

@@ -15,10 +15,9 @@ Provides operator actions for responding to grid disturbances, including voltage
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q20</div>
-Allowable Main Generator loading after a 500KV grid disturbance is read from the <span class="hi-exam">generator capability curve in A-5-500-EEE-1686 (Artificial Island Operating Guide)</span>. Curve selection depends on plant/grid lineup: with <span class="hi-exam">Unit 1 offline AND the Hope Creek 5-6 breaker out of service, the applicable curve is 2S2H-5-6 (p. 291)</span>. When <span class="hi-exam">both units' Power System Stabilizers (PSS) are out of service, the red dashed line</span> defines the allowable generator excitation (MVAR) limit (a PSS in service on either unit would allow the higher solid-line limit). For this lineup the loading point <span class="hi-exam val-trip">1100 Mwe with 150 MVAR out</span> falls OUTSIDE the allowable region. <span class="hi-trap">Traps: 575 MVAR-out points are within the limit on this curve; the answer is not a direct lookup because Mwe and MVAR each vary high/low across the choices — both coordinates must be plotted against the correct (PSS-out, red dashed) curve.</span>
-</div>
+**Exam & operating coverage:**
+
+### Artificial Island Operating Guide
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q21</div>
@@ -26,19 +25,11 @@ Original (13-01) form of the same Artificial Island Operating Guide lookup. Same
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q15</div>
-Loss of a Salem unit causes 500KV voltage to lower. The remaining unit's MVARs rise as it picks up a greater share of the reactive load on the grid.
+<div class="callout-label">Exam — 2015 Q20</div>
+Allowable Main Generator loading after a 500KV grid disturbance is read from the <span class="hi-exam">generator capability curve in A-5-500-EEE-1686 (Artificial Island Operating Guide)</span>. Curve selection depends on plant/grid lineup: with <span class="hi-exam">Unit 1 offline AND the Hope Creek 5-6 breaker out of service, the applicable curve is 2S2H-5-6 (p. 291)</span>. When <span class="hi-exam">both units' Power System Stabilizers (PSS) are out of service, the red dashed line</span> defines the allowable generator excitation (MVAR) limit (a PSS in service on either unit would allow the higher solid-line limit). For this lineup the loading point <span class="hi-exam val-trip">1100 Mwe with 150 MVAR out</span> falls OUTSIDE the allowable region. <span class="hi-trap">Traps: 575 MVAR-out points are within the limit on this curve; the answer is not a direct lookup because Mwe and MVAR each vary high/low across the choices — both coordinates must be plotted against the correct (PSS-out, red dashed) curve.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q88</div>
-Solar Magnetic Disturbance (SMD) > K-5 intensity with excess MVAR condition: per AB.GRID-0001 step 1.3, enter <span class="hi-exam">Attachment 2 (Solar Magnetic Disturbance)</span> and initiate load reduction to <span class="hi-exam"><= 77.6% (942 MWe)</span> at <span class="hi-exam">15% per min</span> using <span class="hi-exam">AB.LOAD-0001</span>. <span class="hi-trap">Trap: a reactor trip is NOT required for SMD conditions (trip is directed per Attachment 1 for frequency <= 57.55 Hz, which is a different condition). Also, AB.GRID-0001 alone is not sufficient — AB.LOAD-0001 must also be performed.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q81</div>
-<span class="hi-exam">Attachment 3 (Salem 500 KV Switchyard Low Voltage)</span>: if 500 KV Switchyard Voltage is <span class="hi-exam val-trip">&lt; 493 KV</span>, declare the associated off-site power source inoperable and initiate <span class="hi-exam">Station Load Curtailment</span> IAW OP-AA-108-107-1001. <span class="hi-trap">Trap: Attachment 4 (500 KV Grid Instability) directs Generator Load Reduction at 15%/min max as specified by the ESO — this is a different condition from low switchyard voltage. Only lines with voltage below 493 KV are declared inoperable (e.g., 492 KV is inoperable, 495 KV is not).</span>
-</div>
+### 500KV Switchyard Voltage
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q62</div>
@@ -46,13 +37,32 @@ Per AB.GRID-0001 CAS: 500 KV Switchyard voltage <span class="hi-exam val-trip">&
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q81</div>
+<span class="hi-exam">Attachment 3 (Salem 500 KV Switchyard Low Voltage)</span>: if 500 KV Switchyard Voltage is <span class="hi-exam val-trip">&lt; 493 KV</span>, declare the associated off-site power source inoperable and initiate <span class="hi-exam">Station Load Curtailment</span> IAW OP-AA-108-107-1001. <span class="hi-trap">Trap: Attachment 4 (500 KV Grid Instability) directs Generator Load Reduction at 15%/min max as specified by the ESO — this is a different condition from low switchyard voltage. Only lines with voltage below 493 KV are declared inoperable (e.g., 492 KV is inoperable, 495 KV is not).</span>
+</div>
+
+### Solar Magnetic Disturbance
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q62</div>
 AB.GRID-0001 Attachment 2 (Solar Magnetic Disturbance) turbine load reduction: with turbine controls in OPERATOR MODE - AUTO, the PO will depress <span class="hi-exam">SMD#1 RUNBACK then GO</span> on the TURBINE E-H CONTROL & STATUS touch screen monitor to initiate the generator load reduction to &lt; 942 MW (~77.6% RTP) at 15%/min. <span class="hi-trap">SMD#1 RUNBACK alone is NOT sufficient — the GO button must also be depressed because SMD#1 RUNBACK is a preset setter position/ramp rate. Also, SMD#2 RUNBACK is a different preset — not used for this Attachment 2 evolution.</span>
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q88</div>
+Solar Magnetic Disturbance (SMD) > K-5 intensity with excess MVAR condition: per AB.GRID-0001 step 1.3, enter <span class="hi-exam">Attachment 2 (Solar Magnetic Disturbance)</span> and initiate load reduction to <span class="hi-exam"><= 77.6% (942 MWe)</span> at <span class="hi-exam">15% per min</span> using <span class="hi-exam">AB.LOAD-0001</span>. <span class="hi-trap">Trap: a reactor trip is NOT required for SMD conditions (trip is directed per Attachment 1 for frequency <= 57.55 Hz, which is a different condition). Also, AB.GRID-0001 alone is not sufficient — AB.LOAD-0001 must also be performed.</span>
+</div>
+
+### Grid Load / Reactive Response
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q17</div>
 For an ESO-directed rapid load reduction due to grid instability, AB.GRID-0001 Attachment 4 directs the PO at the EHC Console to depress <span class="hi-exam">SMD #2 RUNBACK and GO PBs</span> if the required end point is <span class="hi-exam">&gt;765 MW AND &lt;942 MW</span>, then depress <span class="hi-exam">HOLD</span> when Main Generator load lowers to less than or equal to the MW value directed by the ESO. <span class="hi-trap">Trap: depressing the GO pushbutton alone would functionally work (MT is normally set up for a 15%/min runback to ~66% turbine load / ~810 MWe), but the procedure Note on Att 4 directs the specific SMD #2 method to ensure consistency amongst crews — so the GO-only and "runback stops automatically at ~66%" answers are wrong.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q15</div>
+Loss of a Salem unit causes 500KV voltage to lower. The remaining unit's MVARs rise as it picks up a greater share of the reactive load on the grid.
 </div>
 
 ## Connections

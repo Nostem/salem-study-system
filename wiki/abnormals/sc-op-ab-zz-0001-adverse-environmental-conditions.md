@@ -27,6 +27,8 @@ The procedure (Attachment 3, Circulating Water Degradation Index) tallies points
 - **Wind Speed Points** — accrue each hour that sustained wind speeds of >30 mph from sector between 140 degrees (SE) and 240 degrees (WSW) are predicted to occur within the next 8 hours.
 - **River Level Points** — based on predicted river level each hour.
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2015 RO-A1.a</div>
 TCAF (Take Corrective Action For) adverse environmental conditions. Entry/protective-action logic verified by the JPM:

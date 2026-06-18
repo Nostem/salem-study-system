@@ -16,14 +16,16 @@ Abnormal procedure for a failure of the Rod Position Indication System (IRPIs). 
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q88</div>
-When IRPIs fail (rod position unknown), the affected rods are <span class="hi-exam">assumed to remain fully withdrawn (their reactivity unavailable for shutdown)</span>. AB.ROD-0004 CAS action 2.0 requires <span class="hi-exam">an additional 270 ppm boration for EACH failed IRPI</span> if a shutdown is performed before the IRPI is declared operable (so two failed Control Bank D IRPIs → 540 ppm). <span class="hi-trap">Boration to Cold Shutdown SDM is NOT required for a shutdown to Hot Standby.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q88</div>
 An <span class="hi-exam">unexpected OHA E-48 ROD BOTTOM during a startup</span> (Control Bank A already &gt;20 steps, so the alarm had cleared and this is not a reflash) is investigated by placing the startup on hold and entering AB.ROD-0004 directly, or via AB.ROD-0002 which directs entry into AB.ROD-0004. <span class="hi-trap">Opening the Reactor Trip Breakers is not required — IOP-3 step 5.2.19 gives a 4 hour window to terminate the startup.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q88</div>
+When IRPIs fail (rod position unknown), the affected rods are <span class="hi-exam">assumed to remain fully withdrawn (their reactivity unavailable for shutdown)</span>. AB.ROD-0004 CAS action 2.0 requires <span class="hi-exam">an additional 270 ppm boration for EACH failed IRPI</span> if a shutdown is performed before the IRPI is declared operable (so two failed Control Bank D IRPIs → 540 ppm). <span class="hi-trap">Boration to Cold Shutdown SDM is NOT required for a shutdown to Hot Standby.</span>
 </div>
 
 ## Connections

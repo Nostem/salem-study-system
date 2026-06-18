@@ -14,35 +14,9 @@ Provides guidance for response to a loss of Residual Heat Removal while in shutd
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q79</div>
-Per OP-SA-108-106-1001 (Equipment Control and Large Motor Starting Criteria) step 4.2.2: during an <span class="hi-exam">emergency condition</span> (as determined by SM/CRS), if a breaker fails to close, the <span class="hi-exam">Shift Manager</span> can authorize <span class="hi-exam">one attempt at reclosure without an investigation</span> if that piece of equipment is essential for maintaining plant stability. No STA concurrence or Plant Manager authorization is required. This applies to 4KV breakers for safety-related pumps such as RHR pumps.
-</div>
+**Exam & operating coverage:**
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q78</div>
-AB.RHR-0001 CAS procedure transitions based on MODE and inventory status: in <span class="hi-exam">MODE 4 with RCS inventory loss (PZR level lowering, containment particulate monitor rising)</span>, the CAS directs the crew to <span class="hi-exam">IMMEDIATELY GO TO AB.LOCA-0001 (Shutdown LOCA)</span>. <span class="hi-trap">Trap: Attachment 9 (SG Reflux Cooling) applies when all vital buses are lost. AB.RHR-0002 (Loss of RHR at Reduced Inventory) applies when RCS is aligned for operation &lt;101 ft elevation. Continuing in AB.RHR-0001 main body (start SI/Charging, control PZR level 5-50%) applies in MODE 5 or 6.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q6</div>
-<span class="hi-trap">AB.RHR-0001 in Mode 4 directs per CAS to AB.LOCA-0001 (Shutdown LOCA)</span> for an uncontrolled reduction in PZR level. AB.RHR-0001 actions (isolate letdown, start SI and charging pumps, maintain PZR level 5-50%) apply to Modes 5 or 6 affecting RHR — NOT Mode 4.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 Sim-b</div>
-Mode 5 with RCS depressurized/vented: 21 RHR Pump trips on electrical fault, <span class="hi-exam">22 RHR Pump trips shortly after starting (alternate path)</span>. Procedure path: 3.3 No (not reduced inventory) → 3.5 Yes (mechanical/electrical failure) → 3.50 Yes (heat sink available) → 3.51 Yes → 3.52 Attachment 3 (22 RHR trips) → re-enter → 3.7-3.25 (no RHR running) → 3.30-3.32 → <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (core exit TCs &lt;200°F). Key valve lineup: <span class="hi-exam">open 2SJ1/2SJ2 (RWST to charging), close 2CV40/2CV41 (VCT to charging), open 2SJ4/2SJ5 and 2SJ12/2SJ13 (BIT), close 2CV68/2CV69 (charging discharge)</span>. Also isolates: stop RHR L/D Booster Pump, close 2CV8.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 Sim-d</div>
-MODE 4, RCS at 315 psig, 21 RHR loop in SDC and 22 RHR loop aligned for ECCS. The in-service <span class="hi-exam">21 RHR pump trips</span>. Procedure path: 3.2 N/A (not vented) → 3.3 No (not reduced inventory) → <span class="hi-exam">3.5 Yes — loss is a mechanical failure / loss of power to the in-service pump</span> → 3.6 GO TO 3.50 (answering 3.5 NO incorrectly routes to the system-problem path) → 3.50 Yes (CCW/SW heat sink available) → 3.51 Yes (22 loop available) → 3.52 <span class="hi-exam">Attachment 2, Aligning RHR Loop From ECCS To Shutdown Cooling</span>. Att. 2 critical actions: locally open 22RH12 / 22RH17 / 22RH18-NS; in the control room close 22RH18, 21RH18, 2RH20, <span class="hi-exam">21CC16</span> and open <span class="hi-exam">22CC16</span>; START 22 RHR pump; throttle 22RH18 / 2RH20. Final acceptance (step 3.68): RHR flow <span class="hi-exam">stable 1800-3000 gpm</span> with RCS temperature stable or lowering.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q86</div>
-Heatup rate during loss of RHR: per AB.RHR-0001 Attachment 5 (Heatup Rate for Loss of RHR Cooling), <span class="hi-exam">2 days after shutdown (before offload) at 10% PZR Level, heatup rate is 5 &deg;F per minute</span>. With TAVG at 150 &deg;F, time to reach 200 &deg;F (MODE 4) = (200 - 150) / 5 = <span class="hi-exam">10 minutes</span>. EAL#CA4.1 criteria for ALERT with RCS intact: <span class="hi-exam">RCS must be &gt; 200 &deg;F for 60 minutes</span>. Earliest ALERT at 0810 (0700 + 10 min heatup + 60 min duration). <span class="hi-trap">Trap: using the wrong heatup curve (after offload = 3.4 &deg;F/min) gives incorrect time to 200 &deg;F. Must use before offload curve since the plant has only entered MODE 3 for a planned outage — no fuel has been offloaded.</span>
-</div>
+### CAS routing, mode-based transitions, and cooldown rate
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q87</div>
@@ -54,19 +28,21 @@ AB.RHR-0001 CAS for loss of RCS inventory in <span class="hi-exam">MODE 5</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q6</div>
-Restoring SDC flow after the running RHR pump trips (MODE 4, one loop in SDC, other aligned for ECCS): with a single loop of RHR in service for SDC the <span class="hi-exam">loop cross-tie valves 21/22RH19 remain open</span> (they are only shut when BOTH loops are in SDC to split the loops for minimum-flow verification per S2.OP-SO.RHR-0001). Attachment 2 of AB.RHR-0001 gives <span class="hi-exam">no direction to close the cross-tie or the SJ49 RHR-to-RCS valves</span>, since cooling flow to all 4 RCS loops is desired. The <span class="hi-exam">tripped-loop HX outlet valve (21RH18) is closed (Att. 2 step 2.0.D)</span> to terminate flow through that HX — so the standby pump supplies SDC flow through the <span class="hi-exam">other RHR HX and BOTH SJ49 discharge valves</span>.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 Sim-h</div>
-Loss of RHR with the RCS intact, filled, and pressurized (CETs &gt;200°F): the in-service 21 RHR pump trips on loss of power. Procedure path: <span class="hi-exam">3.3 No (not reduced inventory, &gt;101 ft elevation) → 3.5 No (electrical power loss) → 3.50 Yes (heat sink available: CCW to RHR, SW to CCW) → 3.51 No (no RHR loop available — 22 RHR loop aligned for ECCS, breaker racked down) → 3.31/3.32</span>. At Step 3.32 the crew selects the alternate decay heat removal method: <span class="hi-exam">Attachment 10, Forced Flow Or Natural Circulation Cooldown</span> (RCS intact and filled, CETs &gt;200°F). Attachment 10: <span class="hi-exam">FEED available SGs to wide-range level &gt;77% with AFW (or Condensate), then operate the appropriate MS10s to keep Core Exit Thermocouples stable or lowering</span> (or drain SGs to &lt;95% WR if fill rate is maintaining CETs). Contrast Attachments 7/8 (feed-and-bleed, when RCS not intact or CETs &lt;200°F), 9 (reflux cooling, RCS depressurized), 11 (SFP cooling, head removed).
+<div class="callout-label">Exam — 2019 Q78</div>
+AB.RHR-0001 CAS procedure transitions based on MODE and inventory status: in <span class="hi-exam">MODE 4 with RCS inventory loss (PZR level lowering, containment particulate monitor rising)</span>, the CAS directs the crew to <span class="hi-exam">IMMEDIATELY GO TO AB.LOCA-0001 (Shutdown LOCA)</span>. <span class="hi-trap">Trap: Attachment 9 (SG Reflux Cooling) applies when all vital buses are lost. AB.RHR-0002 (Loss of RHR at Reduced Inventory) applies when RCS is aligned for operation &lt;101 ft elevation. Continuing in AB.RHR-0001 main body (start SI/Charging, control PZR level 5-50%) applies in MODE 5 or 6.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q8</div>
-When restarting an RHR pump after a loss of RHR and when <span class="hi-exam">time allows normal restoration and local venting</span>, the preferred flow rate is a <span class="hi-exam">LOWER flow rate</span> — to limit initial sudden cooldown and to minimize level loss caused by collapsing voids (per the AB.RHR-0001 CAUTION). <span class="hi-trap">A HIGHER flow rate to sweep entrained air is used only when time does NOT allow a normal venting.</span>
+<div class="callout-label">Exam — 2019 Q86</div>
+Heatup rate during loss of RHR: per AB.RHR-0001 Attachment 5 (Heatup Rate for Loss of RHR Cooling), <span class="hi-exam">2 days after shutdown (before offload) at 10% PZR Level, heatup rate is 5 &deg;F per minute</span>. With TAVG at 150 &deg;F, time to reach 200 &deg;F (MODE 4) = (200 - 150) / 5 = <span class="hi-exam">10 minutes</span>. EAL#CA4.1 criteria for ALERT with RCS intact: <span class="hi-exam">RCS must be &gt; 200 &deg;F for 60 minutes</span>. Earliest ALERT at 0810 (0700 + 10 min heatup + 60 min duration). <span class="hi-trap">Trap: using the wrong heatup curve (after offload = 3.4 &deg;F/min) gives incorrect time to 200 &deg;F. Must use before offload curve since the plant has only entered MODE 3 for a planned outage — no fuel has been offloaded.</span>
 </div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q6</div>
+<span class="hi-trap">AB.RHR-0001 in Mode 4 directs per CAS to AB.LOCA-0001 (Shutdown LOCA)</span> for an uncontrolled reduction in PZR level. AB.RHR-0001 actions (isolate letdown, start SI and charging pumps, maintain PZR level 5-50%) apply to Modes 5 or 6 affecting RHR — NOT Mode 4.
+</div>
+
+### Restoring flow and alternate decay heat removal
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q12</div>
@@ -76,6 +52,36 @@ In MODE 4 with 21 RHR pump in shutdown cooling and 22 RHR aligned for ECCS, a lo
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q79</div>
 After normal restoration and local venting, RHR flow must be <span class="hi-exam">stable between 1800-3000 gpm</span> (with all other RHR parameters normal) to exit AB.RHR-0001. RHR flow <span class="hi-exam">oscillating 1500-3000 gpm fails this criterion</span>, so the exit step is answered NO. The procedure then <span class="hi-exam">directs stopping ANY running RHR pump (Step 3.30) and initiating an alternate method of Decay Heat Removal (Step 3.32)</span>. With the highest CET <200°F and the RCS intact, the preferred alternate method is <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (Attachment 7, Hot Leg Injection, is not preferred with the RCS intact and CETs <200°F). <span class="hi-trap">Trap: because the procedure stops all RHR pumps, restarting the idle 21 RHR pump is NOT directed.</span> See [[RHR]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q8</div>
+When restarting an RHR pump after a loss of RHR and when <span class="hi-exam">time allows normal restoration and local venting</span>, the preferred flow rate is a <span class="hi-exam">LOWER flow rate</span> — to limit initial sudden cooldown and to minimize level loss caused by collapsing voids (per the AB.RHR-0001 CAUTION). <span class="hi-trap">A HIGHER flow rate to sweep entrained air is used only when time does NOT allow a normal venting.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q6</div>
+Restoring SDC flow after the running RHR pump trips (MODE 4, one loop in SDC, other aligned for ECCS): with a single loop of RHR in service for SDC the <span class="hi-exam">loop cross-tie valves 21/22RH19 remain open</span> (they are only shut when BOTH loops are in SDC to split the loops for minimum-flow verification per S2.OP-SO.RHR-0001). Attachment 2 of AB.RHR-0001 gives <span class="hi-exam">no direction to close the cross-tie or the SJ49 RHR-to-RCS valves</span>, since cooling flow to all 4 RCS loops is desired. The <span class="hi-exam">tripped-loop HX outlet valve (21RH18) is closed (Att. 2 step 2.0.D)</span> to terminate flow through that HX — so the standby pump supplies SDC flow through the <span class="hi-exam">other RHR HX and BOTH SJ49 discharge valves</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q79</div>
+Per OP-SA-108-106-1001 (Equipment Control and Large Motor Starting Criteria) step 4.2.2: during an <span class="hi-exam">emergency condition</span> (as determined by SM/CRS), if a breaker fails to close, the <span class="hi-exam">Shift Manager</span> can authorize <span class="hi-exam">one attempt at reclosure without an investigation</span> if that piece of equipment is essential for maintaining plant stability. No STA concurrence or Plant Manager authorization is required. This applies to 4KV breakers for safety-related pumps such as RHR pumps.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-d</div>
+MODE 4, RCS at 315 psig, 21 RHR loop in SDC and 22 RHR loop aligned for ECCS. The in-service <span class="hi-exam">21 RHR pump trips</span>. Procedure path: 3.2 N/A (not vented) → 3.3 No (not reduced inventory) → <span class="hi-exam">3.5 Yes — loss is a mechanical failure / loss of power to the in-service pump</span> → 3.6 GO TO 3.50 (answering 3.5 NO incorrectly routes to the system-problem path) → 3.50 Yes (CCW/SW heat sink available) → 3.51 Yes (22 loop available) → 3.52 <span class="hi-exam">Attachment 2, Aligning RHR Loop From ECCS To Shutdown Cooling</span>. Att. 2 critical actions: locally open 22RH12 / 22RH17 / 22RH18-NS; in the control room close 22RH18, 21RH18, 2RH20, <span class="hi-exam">21CC16</span> and open <span class="hi-exam">22CC16</span>; START 22 RHR pump; throttle 22RH18 / 2RH20. Final acceptance (step 3.68): RHR flow <span class="hi-exam">stable 1800-3000 gpm</span> with RCS temperature stable or lowering.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-h</div>
+Loss of RHR with the RCS intact, filled, and pressurized (CETs &gt;200°F): the in-service 21 RHR pump trips on loss of power. Procedure path: <span class="hi-exam">3.3 No (not reduced inventory, &gt;101 ft elevation) → 3.5 No (electrical power loss) → 3.50 Yes (heat sink available: CCW to RHR, SW to CCW) → 3.51 No (no RHR loop available — 22 RHR loop aligned for ECCS, breaker racked down) → 3.31/3.32</span>. At Step 3.32 the crew selects the alternate decay heat removal method: <span class="hi-exam">Attachment 10, Forced Flow Or Natural Circulation Cooldown</span> (RCS intact and filled, CETs &gt;200°F). Attachment 10: <span class="hi-exam">FEED available SGs to wide-range level &gt;77% with AFW (or Condensate), then operate the appropriate MS10s to keep Core Exit Thermocouples stable or lowering</span> (or drain SGs to &lt;95% WR if fill rate is maintaining CETs). Contrast Attachments 7/8 (feed-and-bleed, when RCS not intact or CETs &lt;200°F), 9 (reflux cooling, RCS depressurized), 11 (SFP cooling, head removed).
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 Sim-b</div>
+Mode 5 with RCS depressurized/vented: 21 RHR Pump trips on electrical fault, <span class="hi-exam">22 RHR Pump trips shortly after starting (alternate path)</span>. Procedure path: 3.3 No (not reduced inventory) → 3.5 Yes (mechanical/electrical failure) → 3.50 Yes (heat sink available) → 3.51 Yes → 3.52 Attachment 3 (22 RHR trips) → re-enter → 3.7-3.25 (no RHR running) → 3.30-3.32 → <span class="hi-exam">Attachment 8, Cold Leg Injection</span> (core exit TCs &lt;200°F). Key valve lineup: <span class="hi-exam">open 2SJ1/2SJ2 (RWST to charging), close 2CV40/2CV41 (VCT to charging), open 2SJ4/2SJ5 and 2SJ12/2SJ13 (BIT), close 2CV68/2CV69 (charging discharge)</span>. Also isolates: stop RHR L/D Booster Pump, close 2CV8.
 </div>
 
 ## Connections

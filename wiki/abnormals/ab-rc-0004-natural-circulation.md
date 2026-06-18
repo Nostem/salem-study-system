@@ -16,6 +16,8 @@ Provides operator actions for establishing and maintaining natural circulation o
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q79</div>
 AB.RC-0004 is used to cool RCP seals following a concurrent loss of seal injection and thermal barrier CCW when RCP Seal Inlet Temperatures are <span class="hi-exam">NOT ALL less than 225 &deg;F</span>. IAW AB.RCP-0001 Attachment 2 Step 5.0, if any RCP Seal Inlet Temperature is &ge; <span class="val-alarm">225 &deg;F</span>, the crew performs AB.RC-0004 for seal cooling via natural circulation. <span class="hi-trap">If ALL RCP Seal Inlet Temperatures ARE less than 225 &deg;F, the crew performs AB.RCP-0001 Attachment 4 (Re-establishing RCP Seal Cooling) instead.</span>

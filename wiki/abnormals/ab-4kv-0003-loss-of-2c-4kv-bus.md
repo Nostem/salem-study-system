@@ -16,6 +16,8 @@ Provides operator actions for response to a loss of the 2C 4KV vital bus. The 2C
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q29</div>
 Charging pump power supply alignment following loss of 2C 4KV bus: <span class="hi-exam">22 CV Pump is supplied from the 2C 4KV bus</span> and is lost. Available charging pumps: <span class="hi-exam">21 CV Pump (2B 4KV bus) and 23 CV Pump (2A 460V bus)</span>. If 22 CV Pump was in service, place either 21 or 23 CV Pump in service. <span class="hi-trap">23 CV Pump is powered from the 2A 460V bus, NOT from 2C 4KV — it remains available on loss of 2C.</span>
