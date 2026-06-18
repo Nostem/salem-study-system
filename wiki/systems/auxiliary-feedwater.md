@@ -9,11 +9,37 @@ aliases:
 
 # AFW
 
-## Function
+## Function & Design Basis
 
-Provides feedwater to steam generators when the main feedwater system is unavailable. Ensures decay heat removal via the steam generators following reactor trip, loss of main feedwater, or loss of offsite power. Safety-related. (UFSAR 10.4.9)
+The Auxiliary Feedwater (AFW) System serves as a backup system for supplying feedwater to the secondary side of the steam generators at times when the Main Feedwater System is not available. It is relied upon to prevent core damage and system overpressurization in the event of accidents such as a loss of normal feedwater or a secondary system pipe rupture, and to provide a means for plant cooldown (UFSAR §10.4.7.2.1). The system is capable of functioning for extended periods, allowing time either to restore normal feedwater flow or to proceed with an orderly cooldown of the plant to the design temperature of the Residual Heat Removal (RHR) System; the AFW flow and water supply capacity is sufficient to remove core decay heat, reactor coolant pump heat, and sensible heat during the plant cooldown (UFSAR §10.4.7.2.1). Provisions are made to limit or terminate auxiliary feedwater flow to the affected loop in the case of a feedwater line break (to ensure adequate flow to the effective steam generators) and in the case of a steam line break inside containment (to also limit the containment pressure) (UFSAR §10.4.7.2.1). The Auxiliary Feedwater System is designed as a Class 1E Safety Grade System, and its pumps, drives, valves, tanks, piping, and appurtenances are designed as Seismic Category I components (UFSAR §10.4.7.2.2).
 
-## Pumps
+The plant conditions that form the basis for AFW System performance requirements are: loss of main feedwater transient (with and without offsite power); feedline rupture; steamline rupture; loss of all ac power; loss-of-coolant accident (LOCA); and plant cooldown (UFSAR §10.4.7.2.1). For mitigation of a design basis event (small break LOCA, loss-of-offsite-power, loss of normal feedwater, feedwater line break, main steam line break), <span class="hi-exam">two pumps are required</span> (UFSAR §10.4.7.2.2). The single-failure analysis (summarized in UFSAR Table 10.4-2) verified that the flow required to meet system performance objectives will be delivered with two pumps, considering a single failure of a pump (UFSAR §10.4.7.2.3).
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q18</div>
+AFW flow defines an adequate <span class="hi-exam">secondary heat sink</span> in EOP-FRCC-1 (Step 13) prior to SG depressurization for accumulator injection: <span class="hi-exam">total AFW flow &gt; <span class="val-normal">22E4 lbm/hr</span></span> satisfies the criterion when no SG NR level is &gt; 9% (the criterion is <span class="hi-exam">9% NR level OR &gt; 22E4 lbm/hr</span>, not both). At 2 psig containment (below 4 psig adverse), the normal 9% NR value applies, <span class="hi-trap">not the 15% adverse value</span>.
+</div>
+
+## Key Components
+
+Each unit is equipped with one turbine-driven and two motor-driven auxiliary feed pumps (UFSAR §10.4.7.2.2). The turbine-driven auxiliary feed pump is nominally rated at <span class="hi">880 gpm</span> (plus <span class="hi">100 gpm</span> continuous recirculation flow) and <span class="hi">1550 psid at 3840 rpm</span>, and the motor-driven auxiliary feed pumps are nominally rated at <span class="hi">440 gpm and 1300 psid</span>, receiving suction from the 220000-gallon auxiliary feedwater storage tank (UFSAR §10.4.7.2.2). (Per UFSAR footnote, the No. 22 motor-driven auxiliary feedwater pump is rated at <span class="hi">450 gpm and 1175 psi</span>.) The motor-driven pumps receive power from the 4 KV vital buses (UFSAR §10.4.7.2.2). Steam for the turbine-driven pump is taken from two of the four main steam lines upstream of the MSIVs, with separate isolation valves provided for these connections (UFSAR §10.4.7.2.2). The steam supply line up to the stop-start valve is continuously warmed by main steam; the turbine is a single-inlet, single-stage unit of rugged design such that water impingement will not impair its operation (UFSAR §10.4.7.2.2).
+
+Each motor-driven pump discharges to two steam generators, with a normally isolated cross-connect line joining the motor-driven pump discharge headers; the turbine-driven pump feeds all four steam generators (UFSAR §10.4.7.2.2). Feedwater flow is controlled from the Control Room by remotely operated flow control valves in the supply lines to each steam generator, and for Units 1 and 2 reduced-capacity trim has been installed on all eight flow control valves (AF11 and AF21) to limit the maximum flow under certain plant conditions (UFSAR §10.4.7.2.2). Safety-grade indication of auxiliary feedwater flow to each steam generator is provided in the Control Room (UFSAR §10.4.7.2.2).
+
+The minimum performance limits required for the auxiliary feedwater pumps to satisfy the design bases analyses, as verified during Technical Specification Inservice Testing (these values account for test instrumentation uncertainties), are (UFSAR §10.4.7.2.2):
+
+| Pump | IST Minimum Performance |
+|------|--------------------------|
+| 11 motor-driven AFWP | <span class="hi">160 gpm and 1361 psid</span> |
+| 12 motor-driven AFWP | <span class="hi">160 gpm and 1361 psid</span> |
+| 13 turbine-driven AFWP | <span class="hi">400 gpm and 1395 psid at 3450 rpm</span> |
+| 21 motor-driven AFWP | <span class="hi">160 gpm and 1369 psid</span> |
+| 22 motor-driven AFWP | <span class="hi">160 gpm and 1389 psid</span> |
+| 23 turbine-driven AFWP | <span class="hi">400 gpm and 1506 psid at 3600 rpm</span> |
+
+The AFW System piping and components are designed to ANSI B31.1 (system piping), ASME Section III sub-section N.D. (auxiliary feed storage tank), ASME Section III (auxiliary feed pumps except No. 22, and system valves), and Hydraulic Institute standards (No. 22 auxiliary feed pump) (UFSAR §10.4.7.2.2). At the AFW System seismic boundary, valves AF-71 and AF-72 are anchored to the Seismic Category I Auxiliary Building wall and protected from debris by a steel protective structure that also provides seismic guides (UFSAR §10.4.7.2.2).
 
 | Parameter | Motor-Driven (2) | Turbine-Driven (1) |
 |-----------|------------------|---------------------|
@@ -40,16 +66,6 @@ MDAFW pump power supply confirmation: <span class="hi-exam">11 AFW Pump is power
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q20</div>
-AFW Pressure Override Runout Protection: with PRESSURE OVERRIDE NORMAL light illuminated, runout protection is enabled. <span class="hi-exam">When 21 AFW Pump trips, discharge pressure goes to 0 psig → 23AF21 and 24AF21 AUTOMATICALLY close</span> (runout protection closes AF21 valves when discharge pressure < <span class="val-trip">1085 psig</span>). AFW flow to 23 and 24 SGs goes to 0 LBM/HR. <span class="hi-trap">If PRESSURE OVERRIDE DEFEAT had been selected, the AF21 valves would NOT have auto-closed — they would remain in position and AFW flow would still drop to zero (no pump running) but the valves would stay open.</span> Trip of a MDAFW pump does NOT cause automatic start of 23 TDAFW.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q46</div>
-2PA-3450 (AFW pump discharge pressure transmitter) fails to zero: runout protection circuit <span class="hi-exam">closes AF21 valves (flow control)</span> to protect pump from runout. To recover: place <span class="hi-exam">PRESS OVERRIDE DEFEAT switch to DEFEAT</span> to bypass the runout protection circuit and allow operator control of AF21s. <span class="hi-trap">LOCAL MANUAL is indication only in the control room (no auto-start signals) — it does NOT allow manual control of the AF21 valves. PRESS OVERRIDE DEFEAT is the correct recovery action.</span>
-</div>
-
-<div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q41</div>
 23 AFW Turbine-Driven pump governor maintains <span class="hi-exam">constant turbine speed</span> as SG pressure lowers (designed to operate with SG pressures as low as 100 psig). As SG pressure decreases, the differential pressure across the feedpump discharge and the SG increases, so <span class="hi-exam">AFW flow RISES even though turbine speed remains constant</span>.
 </div>
@@ -59,12 +75,22 @@ AFW Pressure Override Runout Protection: with PRESSURE OVERRIDE NORMAL light ill
 <strong>AFW Backleakage Surveillance (S1.OP-PT.AF-0002):</strong> performed <span class="hi-exam">30–60 min after an AFW Pump shutdown</span> (per P&L 3.1) to detect hot-feedwater backleakage that can <span class="hi-exam">vapor (steam) bind</span> motor-driven AFW pumps. Read AFW line temperatures from <span class="hi-exam">1TA165551</span> (4 line readings, one per AFW supply line). Acceptance logic: SAT only when each line &lt; 120 °F AND ΔT (highest − average) ≤ 10 °F; vent required when any line ≥ 160 °F. Vent locations on 11 AFW Pump: <span class="hi-exam">11AF83 (AF PUMP VENT)</span> and <span class="hi-exam">11AF114 (AF PUMP DISCH VENT)</span> — slowly throttle open until a solid stream of water is observed, then close. Reference: SOER 84-3.
 </div>
 
-## Actuation Signals
+## Power Supplies
+
+The motor-driven pumps receive power from the 4 KV vital buses (one motor-driven AFW pump per vital bus), and the AFW System circuits and initiation signals receive power from unit vital buses (UFSAR §10.4.7.2.2). The motor-driven auxiliary feedwater pumps are among the loads included in the diesel generator's automatic loading sequence (UFSAR §10.4.7.2.2). The turbine-driven pump requires no ac power, taking its motive steam from the main steam lines (UFSAR §10.4.7.2.2). The exam-bank 4KV bus → MDAFW pump mapping (1A 4KV → 11 AFP / 1B 4KV → 12 AFP on Unit 1; 2A 4KV → 21 AFP / 2B 4KV → 22 AFP on Unit 2) is documented in the Exam — 2018 Q66 and Exam — 2019 Q19 callouts above and below (see Exam — 2018 Q66).
+
+## Automatic Features & Setpoints
+
+The AFW pumps are capable of being started in either the manual or automatic mode; manually, the pumps can be started at their local control panel or from the main Control Room, and manual start circuits are designed for single failure, so that failure of the automatic initiation signals or circuits will not affect the capability for manual starting (UFSAR §10.4.7.2.2). For the pumps to start in automatic mode, the REMOTE-LOCAL MANUAL switch located on the local panel must be in the REMOTE position (UFSAR §10.4.7.2.2).
+
+The motor-driven auxiliary feedwater pumps are started automatically by any of the following conditions: <span class="hi-exam">loss of offsite power, loss of main feedwater system, safeguards sequence signal, or low-low level signal from any one steam generator</span> (UFSAR §10.4.7.2.2). The turbine-driven auxiliary feedpump is started automatically by either of the following conditions: <span class="hi-exam">low-low level in two of the four steam generators, or undervoltage on the reactor coolant pump group buses using 1/2 twice logic</span> (UFSAR §10.4.7.2.2).
+
+When either motor-driven pump is started automatically, a signal is sent to close Steam Generator Blowdown and Sampling Systems' isolation valves; the isolation signal to the Sampling System isolation valves can be bypassed by the use of a keylock switch located on the control room console, allowing operators to open the Sampling System isolation valves when sampling is required by the EOPs in the event a faulted steam generator with a low-low level condition is experienced (UFSAR §10.4.7.2.2). When the turbine-driven pump is started automatically, Steam Generator Blowdown System valves and Sampling System valves are automatically closed in the same manner (UFSAR §10.4.7.2.2).
 
 | Pump | Actuation Signals | Source |
 |------|------------------|--------|
-| Turbine-Driven | 2/3 Lo-Lo level in any 2 SGs; OR RCP bus undervoltage (1/2 twice); OR manual (local and remote) | UFSAR T7.2-1 |
-| Motor-Driven | 2/3 Lo-Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence signal; OR blackout sequence signal; OR manual (local and remote) | UFSAR T7.2-1 |
+| Turbine-Driven | 2/3 Lo-Lo level in any 2 SGs; OR RCP bus undervoltage (1/2 twice); OR manual (local and remote) | UFSAR T7.2-1; UFSAR §10.4.7.2.2 |
+| Motor-Driven | 2/3 Lo-Lo level in any SG; OR trip of both main FW pumps; OR safeguards sequence signal; OR blackout sequence signal; OR manual (local and remote) | UFSAR T7.2-1; UFSAR §10.4.7.2.2 |
 
 **Exam & operating coverage:**
 
@@ -117,7 +143,64 @@ AFW pump start behavior with controllers in LOCAL MANUAL: <span class="hi-exam">
 AMSAC AFW pump start mapping: <span class="hi-exam">AMSAC Train A starts 21 AFW pump (motor-driven). AMSAC Train B starts 22 AFW pump (motor-driven). Either train starts 23 AFW pump (turbine-driven).</span> A spurious actuation of ONLY Train A starts 21 and 23 AFW pumps. <span class="hi-trap">Trap: 22 AFW does NOT start on Train A — it only starts on Train B. The turbine-driven pump (23) starts on either train.</span>
 </div>
 
+### Automatic Blowdown / Sample Isolation (SS94s)
+
+On automatic start of either a motor-driven or the turbine-driven AFW pump, a signal is sent to close Steam Generator Blowdown and Sampling Systems' isolation valves; the Sampling System isolation signal can be bypassed via a keylock switch on the control room console so that operators can open the Sampling System isolation valves when EOP sampling of a faulted steam generator with a low-low level condition is required (UFSAR §10.4.7.2.2). (The exam-bank SS94 interaction is documented in the Exam — 2016 Q65 callout above.)
+
+## Design Features & Interlocks
+
+Each of the two motor-driven pumps is provided with a minimum-flow recirculation system to prevent damage to the pumps from low flow (UFSAR §10.4.7.2.2). In order to prevent a runout of the motor-driven pumps, the steam generator level control valves (AF21s) are throttled back when pump discharge pressure drops below <span class="val-alarm">1350 psig</span> and are closed at <span class="val-trip">1150 psig</span>; this runout protection feature can be overridden in the Control Room (UFSAR §10.4.7.2.2). Per the UFSAR footnote, the runout setpoints for the control valves of the No. 22 motor-driven pump (Valves 21 & 22AF21) are <span class="val-alarm">1200 psig</span> (throttle) and <span class="val-trip">1000 psig</span> (close), and for the No. 21 motor-driven pump (Valves 23AF21 & 24AF21) they are <span class="val-alarm">1285 psig</span> (throttle) and <span class="val-trip">1085 psig</span> (close) (UFSAR §10.4.7.2.2, footnote). The steam-turbine-driven pump is protected from operation with insufficient flow by a continuous recirculation flow, the required margin of <span class="hi">100 gpm</span> being built into the pump rated flow (UFSAR §10.4.7.2.2).
+
+All auxiliary feed pumps normally take suction from the auxiliary feed storage tank, which is protected against the effects of earthquakes, tornado wind loads, and floods (UFSAR §10.4.7.2.2). A safety-grade, automatic low-pressure trip is provided as backup protection for each pump in the event tornado missile damage to the auxiliary feedwater storage tank results in loss of suction pressure; to protect against spurious activation, this trip is made operable only during "tornado warnings" issued by the National Weather Service (UFSAR §10.4.7.2.2). The tank has sufficient capacity to allow residual heat removal for <span class="hi">8 hours</span> (UFSAR §10.4.7.2.2). The Unit 1 and Unit 2 auxiliary feedwater storage tanks are provided with a nitrogen purge/blanket system, each with a dedicated nitrogen source, to control the dissolved oxygen concentration in the water (UFSAR §10.4.7.2.2).
+
+The AFW tank has low and low-low level alarms which alert the operator to align pump suction to an alternate source; the low level alarm sounds at a level of <span class="val-alarm">100000 gallons</span> and the low-low level alarm sounds at <span class="val-trip">30000 gallons</span> (UFSAR §10.4.7.2.2). The AFW tank has redundant channels of level indication, and the demineralized water makeup supply valve to the AFW storage tank can be opened from the Control Room (UFSAR §10.4.7.2.2). To provide assurance that inadvertent failure (or closure) of the suction valve from the AFW storage tank will not degrade the AFW System, the valve was radiographed to ensure an open flow path, then drilled and pinned in the open position with the handwheel removed and the stem left in place for visual indication (UFSAR §10.4.7.2.2).
+
+**Backup water sources / priority of use:** the backup water sources for the auxiliary feed pumps are the two demineralized water storage tanks (<span class="hi">500000 gallons</span> capacity each), the two fire protection and domestic water storage tanks (<span class="hi">350000 gallons</span> capacity each), and the station Service Water System, which must first have a spectacle flange rotated into place; the quality of water from these sources is lower and is therefore intended for use only in emergency situations (UFSAR §10.4.7.2.2). The use of service water for a long-term makeup source is evaluated for the case where, following plant trip and loss of offsite power, AFW is initially provided from the 220000-gallon AFW storage tank (AFST) and, when that supply is depleted, AFW pump suction is transferred to the Service Water System (UFSAR §10.4.7.2.4).
+
+There is adequate redundancy in the AFW System to provide reactor cooldown capability when necessary; during normal plant cooldown, each pump has the capacity to remove heat from the steam generators at a sufficient rate, and feedwater flow can be stopped when the reactor coolant has been cooled to approximately <span class="hi">350°F</span> and <span class="hi">400 psig</span>, at which time the RHR System is used to continue the cooldown (UFSAR §10.4.7.2.2). The RCS is cooled down at a rate of <span class="hi">50°F/hr</span> once the normal steam generator level is re-established (UFSAR §10.4.7.2.2).
+
+A Non Safety-Related (NSR) Mitigating Safety Performance Index (MSPI) AFW System supplies water to the steam generators for reactor decay heat removal if the normal feedwater sources and the safety-related AFW sources are unavailable, possibly during a Station Blackout; it consists of one diesel generator and one motor-driven auxiliary feed pump configured to supply either Salem Unit 1 or 2, is manually started and operated from a remote start panel on Elevation 120' within the Unit 1 Turbine Generator Area, takes suction from the demineralized water storage tanks (500000 gallons each), and is designed as Seismic Category III (UFSAR §10.4.7.3.1).
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q63</div>
+AFW can be supplied from the fire-protection system: <span class="hi-exam">Fire Protection / Fresh Water Storage Tank water can be aligned to AFW through a normally disconnected spool piece</span>. See [[Fire Protection]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q53</div>
+<span class="hi-exam">21-23AF141 (AUX FDWTR PMP INLET AUTO VENT RLSE) valves</span> design purpose: <span class="hi-exam">to facilitate filling lines upon aligning alternate water sources to the suction header</span>. Alternate sources align through the <span class="hi-exam">normally jacked-closed AF52 Alternate Suction Valves</span> from <span class="hi-exam">Demin Water, Fresh Water / Fire Protection, and Service Water</span>. Per S2.OP-SO.AF-0001 Section 5.10 (Alternate Sources Alignment), operators ensure <span class="hi-exam">21-23AF140 Auto Vent Isolation Valves</span> are open, allowing the alternate suction line to fill and vent through the <span class="hi-exam">AF141 auto vents, which close when the line is vented</span>. Prevents AFW line voiding and water hammer prior to AFW pump start on alternate source.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q44</div>
+<span class="hi-exam">2DR6 (AFW Tank Makeup Valve) fails OPEN on loss of air</span>. This causes the AFW storage tank level to rise and potentially overflow. Per S2.OP-AB.CA-0001, Attachment 2, the <span class="hi-exam">2DR6 can be manually operated from the field</span> to control tank level.
+</div>
+
+### Key Design Points
+
+- Turbine-driven pump is available during station blackout (no AC power required)
+- Motor-driven pumps auto-start on lower SG level setpoint than turbine-driven pump
+- Turbine-driven pump requires steam pressure >680 psig for IST testing
+
+## Effects of Loss / Malfunction
+
+A total loss of AFW flow eliminates the secondary heat sink and drives the crew into EOP-FRHS-1 (feed and bleed). Pressure-override (runout protection) failures, control-air failures affecting the AFW steam inlet and discharge valves, and pump trips (overcurrent, overspeed, loss of vital bus) are the dominant AFW malfunction modes in the exam bank.
+
+**Exam & operating coverage:**
+
 ### Control-Air Valve Failures & Manual-Start Recovery
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q20</div>
+AFW Pressure Override Runout Protection: with PRESSURE OVERRIDE NORMAL light illuminated, runout protection is enabled. <span class="hi-exam">When 21 AFW Pump trips, discharge pressure goes to 0 psig → 23AF21 and 24AF21 AUTOMATICALLY close</span> (runout protection closes AF21 valves when discharge pressure < <span class="val-trip">1085 psig</span>). AFW flow to 23 and 24 SGs goes to 0 LBM/HR. <span class="hi-trap">If PRESSURE OVERRIDE DEFEAT had been selected, the AF21 valves would NOT have auto-closed — they would remain in position and AFW flow would still drop to zero (no pump running) but the valves would stay open.</span> Trip of a MDAFW pump does NOT cause automatic start of 23 TDAFW.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q46</div>
+2PA-3450 (AFW pump discharge pressure transmitter) fails to zero: runout protection circuit <span class="hi-exam">closes AF21 valves (flow control)</span> to protect pump from runout. To recover: place <span class="hi-exam">PRESS OVERRIDE DEFEAT switch to DEFEAT</span> to bypass the runout protection circuit and allow operator control of AF21s. <span class="hi-trap">LOCAL MANUAL is indication only in the control room (no auto-start signals) — it does NOT allow manual control of the AF21 valves. PRESS OVERRIDE DEFEAT is the correct recovery action.</span>
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q90</div>
@@ -139,36 +222,45 @@ Post-trip, <span class="hi-exam">21 AFW pump runs with no discharge flow and 22/
 After manual reactor trip and SI for SBLOCA, <span class="hi-exam">21 and 22 AFW pumps fail to auto-start</span> because SEC loading on 2A and 2B vital buses does not complete; <span class="hi-exam">23 AFW pump starts but provides no AFW flow</span>. CT#1 (CT-4) recovery — establish at least <span class="hi-exam">22E4 lbm/hr AFW flow</span> (or &ge;9% NR level in at least one SG) before transition to FRHS-1 is required: crew blocks 2A/2B SECs, attempts reset, <span class="hi-trap">2A SEC will not reset</span>, dispatches operator to deenergize 2A SEC, then RO manually starts 22 AFW pump (and 21 AFW pump). PO subsequently maintains 19-33% SG NR level.
 </div>
 
-## Water Sources
+### Loss of AFW / FRHS-1
 
-- **Primary:** Condensate storage tank
-- **Backup:** Service water system (safety-related, unlimited supply from Delaware River)
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q83</div>
+On a MSLB/SI with no AFW flow (11 AFP C/T, 12/13 AFP tripped) and SG WR levels dropping: a <span class="hi-exam">RED path of no AFW flow and SG WR level &lt;9% drives transition to EOP-FRHS-1 (Loss of Secondary Heat Sink), where feed-and-bleed is initiated immediately</span>. Bleed-and-feed criteria are SG WR levels &lt;36% (adverse), not 32%. See [[Steam Generator & Blowdown]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #3</div>
+After the manual reactor trip on loss of the only operating SGFP, <span class="hi-exam">no AFW flow is present</span>: 22 AFW pump trips after starting, 23 AFW pump does not auto-start, and 21 AFW pump runs with no flow but adequate discharge pressure because its <span class="hi-exam">pressure-override circuit has failed</span>. In EOP-TRIP-2 the crew starts 23 AFW pump and depresses the 21 AFW pump pressure-override defeat to establish <span class="hi-exam">≥22E4 lbm/hr AFW flow (CT#1)</span>. The last AFW pump (23) then develops a speed-control failure that drives its speed demand to zero, producing total AFW flow &lt;22E4 lbm/hr with all SG NR levels &lt;9% — a Heat Sink RED path leading to FRHS-1.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #2</div>
+<span class="hi-exam">Loss of all AFW</span> after a post-trip transient: 22 AFW pump trips shortly after the post-trip AFW flow reduction, 23 AFW pump trips ~5 min later, and 21 AFW pump has no power (2A vital bus locked out). With less than <span class="hi-exam">22E4 lbm/hr</span> AFW available and no AFW pumps running, the crew transitions out of TRIP-1 to FRHS-1 and, with the SGFPs also unavailable, performs a <span class="hi-exam">Condensate pump recovery</span> to re-establish SG feed flow before RCS Bleed and Feed (CT#2). See [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #3</div>
+Cascading <span class="hi-exam">loss of all AFW</span> after the reactor trip: 22 AFW pump fails to start on SEC; 21 charging pump (for charging) also lost; <span class="hi-exam">21 AFW pump trips 4 minutes after the Rx trip</span>, leaving 23 AFW pump as the only operating aux feed pump; then <span class="hi-exam">23 AFW pump overspeeds and trips</span> when SG NR levels recover but remain &lt;9%. With AFW flow &lt;22E4 lbm/hr and ALL SG NR levels &lt;9%, the crew validates a CFST Heat Sink <span class="hi-exam">RED path</span> and transitions to FRHS-1. See [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #5</div>
+Complete loss of all AFW following reactor trip: <span class="hi-exam">21 AFP trips on overcurrent</span> (overcurrent relay flag up), <span class="hi-exam">22 MDAFW pump lost with 2B 4KV bus</span> (bus differential protection), <span class="hi-exam">23 AFP trips on overspeed</span>, <span class="hi-exam">MSPI AFW pump fails on overspeed</span>. No SG NR levels >9% (15% adverse), total AFW flow <22E4 lbm/hr → transition to EOP-FRHS-1. CT-43: establish condensate feed flow before bleed and feed required. Bleed and feed criteria: 3 WR levels <20% (25% adverse). Caution: steam 21 and 23 SGs last to maximize 23 AFW pump steam supply availability.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2022 #3</div>
+Loss of all AFW: 21 AFP C/T for oil bubbler replacement (initial condition). 23 AFP fails to auto start on SI — PO manually starts. <span class="hi-exam">22 AFP trips on overcurrent</span>. <span class="hi-exam">23 AFP trips on overspeed</span>. No SG NR levels > 9% (15% adverse), total AFW flow < 22E4 lbm/hr. CFST Heat Sink Red Path → transition to EOP-FRHS-1. <span class="hi-exam">CT#2 (CT-43): Establish feed flow to one SG before bleed and feed is required.</span> Recovery via condensate system (MS10 depressurization + BF40/BF19 bypass).
+</div>
+
+## Control-Room Operation
+
+The AFW pumps can be started manually from their local control panel or from the main Control Room, and the AFW pumps are placed in automatic by setting the REMOTE-LOCAL MANUAL switch on the local panel to REMOTE (UFSAR §10.4.7.2.2). Feedwater flow to each steam generator is controlled from the Control Room by remotely operated flow control valves (the AF11 S/G level control valves and AF21 flow control valves), and safety-grade indication of auxiliary feedwater flow to each steam generator is provided in the Control Room (UFSAR §10.4.7.2.2). The demineralized water makeup supply valve to the AFW storage tank can also be opened from the Control Room, and AFW storage tank level has redundant channels of control-room indication with low (<span class="val-alarm">100000 gallons</span>) and low-low (<span class="val-trip">30000 gallons</span>) level alarms (UFSAR §10.4.7.2.2).
 
 **Exam & operating coverage:**
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q18</div>
-AFW flow defines an adequate <span class="hi-exam">secondary heat sink</span> in EOP-FRCC-1 (Step 13) prior to SG depressurization for accumulator injection: <span class="hi-exam">total AFW flow &gt; <span class="val-normal">22E4 lbm/hr</span></span> satisfies the criterion when no SG NR level is &gt; 9% (the criterion is <span class="hi-exam">9% NR level OR &gt; 22E4 lbm/hr</span>, not both). At 2 psig containment (below 4 psig adverse), the normal 9% NR value applies, <span class="hi-trap">not the 15% adverse value</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q63</div>
-AFW can be supplied from the fire-protection system: <span class="hi-exam">Fire Protection / Fresh Water Storage Tank water can be aligned to AFW through a normally disconnected spool piece</span>. See [[Fire Protection]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q53</div>
-<span class="hi-exam">21-23AF141 (AUX FDWTR PMP INLET AUTO VENT RLSE) valves</span> design purpose: <span class="hi-exam">to facilitate filling lines upon aligning alternate water sources to the suction header</span>. Alternate sources align through the <span class="hi-exam">normally jacked-closed AF52 Alternate Suction Valves</span> from <span class="hi-exam">Demin Water, Fresh Water / Fire Protection, and Service Water</span>. Per S2.OP-SO.AF-0001 Section 5.10 (Alternate Sources Alignment), operators ensure <span class="hi-exam">21-23AF140 Auto Vent Isolation Valves</span> are open, allowing the alternate suction line to fill and vent through the <span class="hi-exam">AF141 auto vents, which close when the line is vented</span>. Prevents AFW line voiding and water hammer prior to AFW pump start on alternate source.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q44</div>
-<span class="hi-exam">2DR6 (AFW Tank Makeup Valve) fails OPEN on loss of air</span>. This causes the AFW storage tank level to rise and potentially overflow. Per S2.OP-AB.CA-0001, Attachment 2, the <span class="hi-exam">2DR6 can be manually operated from the field</span> to control tank level.
-</div>
-
-## Pump-to-SG Alignment
-
-**Exam & operating coverage:**
+### Pump-to-SG Alignment
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q56</div>
@@ -195,18 +287,12 @@ AFW Pressure Override circuit (runout protection) — pump-to-AF21 mapping: the 
 21 SG tube leak escalating to rupture. After 21 SG identified as the affected SG, CRS dispatches operator to <span class="hi-exam">shut 21MS45 — the steam supply to 23 AFW pump</span>; this renders 23 AFW inoperable and the CRS enters <span class="hi-exam">LCO 3.7.1.2 (less than 3 operable AFW pumps)</span>. After the manual trip and SI for the SGTR, <span class="hi-exam">21 AFW pump trips</span> (4-minute delay simulator trigger) — PO redistributes flow between 22 AFW pump (supplies 21/22 SGs) and 23 AFW pump (supplies all SGs). In EOP-SGTR-1, isolating feed flow to 21 SG is part of <span class="hi-exam">CT#1 (CT-18)</span>: PO closes <span class="hi-exam">21AF11 and 21AF21</span> (and later trips 23 AFW pump after 21 SG is fully isolated). Pump-to-SG mapping: 21 AFW pp → 23/24 SGs; 22 AFW pp → 21/22 SGs; 23 AFW pump → all SGs.
 </div>
 
-## Key Design Points
-
-- Turbine-driven pump is available during station blackout (no AC power required)
-- Motor-driven pumps auto-start on lower SG level setpoint than turbine-driven pump
-- Turbine-driven pump requires steam pressure >680 psig for IST testing
-
 ## Tech Spec LCOs
 
-- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.2 requires three independent AFW pumps OPERABLE in Modes 1, 2, and 3
-- 1 pump inoperable: 72 hours to restore
-- 2 pumps inoperable: Hot Standby in 6 hours
-- 3 pumps inoperable: immediately restore at least one
+- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.2 requires three independent AFW pumps OPERABLE in Modes 1, 2, and 3 (two motor-driven, each from a separate vital bus; one turbine-driven from an OPERABLE steam supply) (TS 3/4.7.1.2)
+- 1 pump inoperable: 72 hours to restore (TS 3/4.7.1.2)
+- 2 pumps inoperable: Hot Standby in 6 hours (TS 3/4.7.1.2)
+- 3 pumps inoperable: immediately restore at least one (TS 3/4.7.1.2)
 
 **Exam & operating coverage:**
 
@@ -274,38 +360,6 @@ On a loss of RHR with no RHR loop available, AFW provides the secondary heat sin
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2014 #1</div>
 After the reactor trip, steam leak in containment, and MSLI failure, the RCS cools down rapidly (cooldown rate &gt; 100°F/hr). <span class="hi-exam">CT#3 (CT-33): reduce AFW flow to no less than 1.0E4 lbm/hr to each SG</span> to minimize the RCS cooldown, performed in FRCE-1 prior to exit (and consistent with the LOSC-2 cooldown-minimization criterion). AFW pumps not needed for SG level control (e.g., 23 AFW pump) are tripped/stopped. See [[2014 Scenario 1]].
-</div>
-
-### Loss of AFW / FRHS-1
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q83</div>
-On a MSLB/SI with no AFW flow (11 AFP C/T, 12/13 AFP tripped) and SG WR levels dropping: a <span class="hi-exam">RED path of no AFW flow and SG WR level &lt;9% drives transition to EOP-FRHS-1 (Loss of Secondary Heat Sink), where feed-and-bleed is initiated immediately</span>. Bleed-and-feed criteria are SG WR levels &lt;36% (adverse), not 32%. See [[Steam Generator & Blowdown]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #3</div>
-After the manual reactor trip on loss of the only operating SGFP, <span class="hi-exam">no AFW flow is present</span>: 22 AFW pump trips after starting, 23 AFW pump does not auto-start, and 21 AFW pump runs with no flow but adequate discharge pressure because its <span class="hi-exam">pressure-override circuit has failed</span>. In EOP-TRIP-2 the crew starts 23 AFW pump and depresses the 21 AFW pump pressure-override defeat to establish <span class="hi-exam">≥22E4 lbm/hr AFW flow (CT#1)</span>. The last AFW pump (23) then develops a speed-control failure that drives its speed demand to zero, producing total AFW flow &lt;22E4 lbm/hr with all SG NR levels &lt;9% — a Heat Sink RED path leading to FRHS-1.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2014 #2</div>
-<span class="hi-exam">Loss of all AFW</span> after a post-trip transient: 22 AFW pump trips shortly after the post-trip AFW flow reduction, 23 AFW pump trips ~5 min later, and 21 AFW pump has no power (2A vital bus locked out). With less than <span class="hi-exam">22E4 lbm/hr</span> AFW available and no AFW pumps running, the crew transitions out of TRIP-1 to FRHS-1 and, with the SGFPs also unavailable, performs a <span class="hi-exam">Condensate pump recovery</span> to re-establish SG feed flow before RCS Bleed and Feed (CT#2). See [[2014 Scenario 2 — Steam Dump Failure / Failure of Auto SI / Loss of All AFW]].
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #3</div>
-Cascading <span class="hi-exam">loss of all AFW</span> after the reactor trip: 22 AFW pump fails to start on SEC; 21 charging pump (for charging) also lost; <span class="hi-exam">21 AFW pump trips 4 minutes after the Rx trip</span>, leaving 23 AFW pump as the only operating aux feed pump; then <span class="hi-exam">23 AFW pump overspeeds and trips</span> when SG NR levels recover but remain &lt;9%. With AFW flow &lt;22E4 lbm/hr and ALL SG NR levels &lt;9%, the crew validates a CFST Heat Sink <span class="hi-exam">RED path</span> and transitions to FRHS-1. See [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]].
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2020 #5</div>
-Complete loss of all AFW following reactor trip: <span class="hi-exam">21 AFP trips on overcurrent</span> (overcurrent relay flag up), <span class="hi-exam">22 MDAFW pump lost with 2B 4KV bus</span> (bus differential protection), <span class="hi-exam">23 AFP trips on overspeed</span>, <span class="hi-exam">MSPI AFW pump fails on overspeed</span>. No SG NR levels >9% (15% adverse), total AFW flow <22E4 lbm/hr → transition to EOP-FRHS-1. CT-43: establish condensate feed flow before bleed and feed required. Bleed and feed criteria: 3 WR levels <20% (25% adverse). Caution: steam 21 and 23 SGs last to maximize 23 AFW pump steam supply availability.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2022 #3</div>
-Loss of all AFW: 21 AFP C/T for oil bubbler replacement (initial condition). 23 AFP fails to auto start on SI — PO manually starts. <span class="hi-exam">22 AFP trips on overcurrent</span>. <span class="hi-exam">23 AFP trips on overspeed</span>. No SG NR levels > 9% (15% adverse), total AFW flow < 22E4 lbm/hr. CFST Heat Sink Red Path → transition to EOP-FRHS-1. <span class="hi-exam">CT#2 (CT-43): Establish feed flow to one SG before bleed and feed is required.</span> Recovery via condensate system (MS10 depressurization + BF40/BF19 bypass).
 </div>
 
 ## Connections

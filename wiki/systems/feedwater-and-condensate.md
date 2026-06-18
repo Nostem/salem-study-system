@@ -12,29 +12,42 @@ aliases:
 
 # Feed & Condensate
 
-## Function
+## Function & Design Basis
 
-The feedwater system supplies heated feedwater from the condensate system to the steam generators. The condensate system collects condensed steam from the main condensers and pumps it through feedwater heaters to the feedwater pumps. (UFSAR 10.4)
+The Steam and Power Conversion System operates as a closed, condensing cycle with six stages of regenerative feedwater heating; turbine exhaust steam is condensed in a triple-shell, surface-type condenser and returned to the steam generators through two stages of feedwater pumping (UFSAR §10.1). The condensate system collects condensed steam from the main condensers and pumps it through the feedwater heaters to the steam generator feed pumps (SGFPs), which deliver heated feedwater to the steam generators (UFSAR §10.4.7.1.1). The SGFPs are designed for normal full-load operating conditions and are also capable of supplying the required feedwater flow to the steam generators under transient load-rejection conditions; auxiliary feed pumps are provided to ensure complete reactor decay heat removal under all fault conditions including loss of power (UFSAR §10.1).
 
-## Main Feedwater
+Steam generator level is maintained during startup and low-power operation by each feedwater control valve being positioned by its own three-element control of feedwater flow (UFSAR §10.4.7.1.1). All feedwater piping downstream from, and including, the isolating motor-operated stop check valve is designed to meet Class I seismic requirements (UFSAR §10.4.7.1.1). The possible effects of a postulated rupture of a feedwater line have been minimized by judicious pipe routing and adequate pipe whip restraint; to ensure their integrity, the main and auxiliary feedwater lines inside the containment (out to their respective isolation valves) were constructed with materials, fabrication, inspection, and quality control in accordance with Nuclear Class 1 standards (UFSAR §10.4.7.1.2).
 
-- Feedwater pumps (turbine-driven) supply feedwater through feedwater regulating valves to steam generators
-- Feedwater temperature at full power: 432.8°F
-- SG level controlled by feedwater regulating valves
+## Key Components
+
+- **Condensate pumps:** Three motor-driven, multi-stage, vertical centrifugal pumps, each rated <span class="val-normal">8000 gpm</span> at <span class="hi">575 psi TDH</span> (1328 ft); shutoff pressure 693 psig; driven by 4000-hp, 4160-V motors at 1170 rpm (UFSAR §10.4.7.1.1, Table 10.4-1). Condensate is withdrawn from the condenser hotwells through a common suction header; the pumps discharge into a common header carrying condensate through the first five stages of feedwater heating, with 900 gpm taken off to supply the steam generator blowdown heat exchanger and returned ahead of the first feedwater heater (UFSAR §10.4.7.1.1). A low-flow recirculation line on each condensate pump discharge maintains a minimum flow of <span class="hi">1800 gpm</span> for pump protection (UFSAR §10.4.7.1.1).
+- **Steam generator feed pumps (SGFPs):** Two one-half-capacity, high-speed, barrel-type pumps taking suction from a common header receiving feedwater from the discharge of the No. 5 heater; they discharge through the No. 6 high-pressure feedwater heater into a collecting header (UFSAR §10.4.7.1.1). Each is designed for <span class="hi">18600 gpm</span> and a total developed head of <span class="hi">884 psi</span> (Table 10.4-1 lists 18613 gpm and 2320 ft / 884 psi at 370°F), based on the maximum calculated turbine load plus allowance for pump wear and steam generator blowdown (UFSAR §10.4.7.1.1, Table 10.4-1). Maximum discharge pressure is limited by a trip for high discharge pressure at <span class="val-trip">1620 psig</span> (UFSAR Table 10.4-1). A low-flow recirculation line on each SGFP discharge maintains a minimum flow of <span class="hi">2300 gpm</span> at design conditions for pump protection (UFSAR §10.4.7.1.1).
+- **SGFP drive turbines:** Two variable-speed steam turbines (DeLaval, 9-double-flow exhaust, 2.0 in. Hg abs exhaust), each rated <span class="hi">10970 hp at 5530 rpm</span> (UFSAR §10.4.7.1.1, Table 10.4-1). Throttle steam is supplied from the reheater outlet for normal two-pump operation and from the Main Steam System during periods of low load; during startup, steam is supplied from the station heating steam system. Each SGFP turbine exhausts separately into one of the three condenser shells (UFSAR §10.4.7.1.1).
+- **Feedwater heaters:** Six stages of closed feedwater heaters. All are horizontal "U"-tube, one-third-size units (three strings), with each heater string capable of satisfactory operation at <span class="hi">150 percent</span> of its design feedwater flow; the heaters and piping are arranged to allow balanced turbine operation under forced load limitation due to heater system outages (UFSAR §10.4.7.1.1). Bleed (extraction) steam sources by heater number (UFSAR §10.4.7.1.1):
+
+| Heater No. | Extraction Source |
+|------------|-------------------|
+| 6 | High-pressure (HP) turbine bleed |
+| 5 | HP turbine exhaust |
+| 4 | Low-pressure (LP) turbine bleed |
+| 3 | LP turbine bleed |
+| 2 | LP turbine bleed |
+| 1 | LP turbine bleed |
+
+  Drains from heaters No. 5 and 6 go to the drain tanks; three heater drain pumps take suction from the drain tanks and discharge to the feed pump suction. Drains from the four LP heaters cascade in sequence to the condenser (UFSAR §10.4.7.1.1).
+- **Feedwater distribution / feedring (Unit 2 RSGs):** The AREVA NP Model 61/19T feedwater distribution system is a split-ring design connected via a T-section to a "helix" assembly welded to the thermal sleeve in the feedwater piping; the J-tube discharge is oriented to preclude direct impingement of feedwater on internal surfaces, reducing erosion, and feedwater is distributed 50 percent to the cold side and 50 percent to the hot side (UFSAR §10.4.7.1.2, Figures 10.4-7, 10.4-8). The "helix" allows the upstream feedwater piping to rapidly fill even during feeding with cold feedwater at low flow, minimizing thermal stratification damage and blowdown during a feedwater line break (UFSAR §10.4.7.1.2). The Unit 1 Model FSG feedring is a typical feed-ring/J-tube arrangement; with the J-nozzles on top, the feedring fills first and refilling will not cause depressurization inside the feedring, so no operating occurrences are expected that would allow steam to become trapped in the feedring and feedwater piping after a drop in steam generator water level below the feedring (UFSAR §10.4.7.1.2, Figure 10.4-8A).
+
+Full design parameters for the Main Condensate and Feedwater System equipment are listed in Table 10.4-1 (UFSAR §10.4.7.1.1, Table 10.4-1).
+
+## Power Supplies
+
+Group bus undervoltage protection (<span class="hi">68 percent</span> of nominal) automatically trips the condensate pump 4-kV breaker upon sensing an undervoltage (loss-of-voltage) condition on its respective 4-kV group bus (1E, 1F, 1G, and 1H) using 1/1 logic taken once (UFSAR §10.4.7.1.2). The condensate pump motors are 4000-hp, 4160-V machines (UFSAR Table 10.4-1).
+
+## Automatic Features & Setpoints
+
+Steam generator level is controlled by the feedwater regulating valves: below P-7 (low power) single-element control (SG level only) is used, and above P-7 (at power) three-element control (steam flow, feed flow, SG level) is used (UFSAR §7.7.2.6). Each feedwater control valve is positioned by its own three-element control of feedwater flow to maintain steam generator level during startup and low-power operation (UFSAR §10.4.7.1.1). Feedwater temperature at full power is 432.8°F (see Exam — 2018 Q37, 2023 Q8 for the reactivity effect of feedwater temperature changes).
 
 **Exam & operating coverage:**
-
-### Feed Line Break
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q12</div>
-A large <span class="hi-exam">main feedwater line break depressurizes the SG (similar to a steam line break)</span>. Initial Tavg response (before automatic protective actions): a <span class="hi-exam">feed line break sends LESS cold feed into the SG → Tcold rises → Tavg RISES</span>, whereas a <span class="hi-exam">steam line break draws MORE steam → Tcold lowers → Tavg LOWERS</span>. <span class="hi-trap">Because an FLB depressurizes the SG like an SLB, the operator must use diverse/alternate indication to discern what is actually happening to the SG.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q13</div>
-Main feedwater line break vs steam line break: FW line break causes SG levels to <span class="hi-exam">lower FASTER</span> (direct loss of feedwater inventory). RCS cooldown is <span class="hi-exam">LESS than an equivalent steam line break</span> (loss of FW doesn't involve removal of latent heat as steam break does). FW break generates <span class="hi-exam">Low-Low SG Level reactor trip</span>; post-trip RCS Tavg rises due to decreased heat transfer in the affected SG.
-</div>
 
 ### SGFP Operation and Trips
 
@@ -88,13 +101,7 @@ Loss of SGFP at >70% power: auto turbine runback <span class="hi-exam">fails</sp
 21 SGFP trips on high thrust bearing oil pressure at 2% power. CRS enters AB.CN-0001. PO reports first-out annunciator: thrust bearing oil pressure high trip locked in and will not clear. RO reduces reactor power to <4% by inserting control rods. AFW auto-start fails — crew manually starts motor-driven AFW pumps.
 </div>
 
-## SG Level Control
-
-- **Below P-7 (low power):** Single-element control (SG level only)
-- **Above P-7 (at power):** Three-element control (steam flow, feed flow, SG level)
-(UFSAR 7.7.2.6)
-
-**Exam & operating coverage:**
+### SG Level Control
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q50</div>
@@ -116,14 +123,11 @@ SG program level above 20% power is <span class="hi-exam"><span class="val-norma
 Ovation (ADFCS) steam pressure channel failure: Ovation uses <span class="hi-exam">one pressure channel from each SG (4 total) into a Medium Signal Select (MSS) algorithm</span>. If one SG steam pressure channel fails HIGH, the <span class="hi-exam">associated MS10 (atmospheric dump) loop switches to MANUAL</span> control (OHAs G-7 ADFCS Alternate Action and G-15 ADFCS TRBL). The MSS algorithm selects a good input for the remaining MS10 loops — <span class="hi-exam">other MS10s remain in AUTO</span>. <span class="hi-trap">A single pressure channel failure does NOT open the MS10 or cause ALL MS10s to swap to manual.</span>
 </div>
 
-## Feedwater Isolation
+## Design Features & Interlocks
 
-Actuated by:
-1. Safety Injection signal
-2. 2/3 Hi-Hi SG level (P-14) — trips all FW pumps, closes FW valves, trips turbine
-3. Low auctioneered Tavg AND reactor trip (P-4)
+Feedwater isolation is actuated by (1) a Safety Injection signal, (2) 2/3 Hi-Hi SG level (P-14) — which trips all FW pumps, closes the FW valves, and trips the turbine, or (3) low auctioneered Tavg AND reactor trip (P-4). It closes the main FW control valves (fast closure), the bypass valves, and the inlet stop valves (UFSAR Table 7.2-1). The feedwater isolation and feedwater regulating/bypass valves are governed by [[TS 3/4.7 — Plant Systems]] LCO 3.7.13, which credits FIV closure in 32 seconds for certain feedwater malfunction and steam-line-break cases, FRV/FRVBV closure in 10 seconds for non-faulted steam generators after SI, and SGFP trip in 7 seconds for the containment mass/energy analysis (TS 3/4.7.13, Amend 310).
 
-Closes main FW control valves (fast closure), bypass valves, and inlet stop valves. (UFSAR T7.2-1)
+The feedwater heater strings provide regenerative heating to raise feedwater temperature before admission to the steam generators; each one-third-size string can pass 150 percent of its design feedwater flow, so loss of a heater string lowers feedwater temperature and adds positive reactivity via the moderator temperature coefficient (UFSAR §10.4.7.1.1; see Exam — 2018 Q37, 2023 Q8). The feedring/J-tube and "helix" distribution design minimizes thermal stratification, water hammer, and erosion, and prevents trapping of steam in the feedring after a level drop below the feedring (UFSAR §10.4.7.1.2).
 
 **Exam & operating coverage:**
 
@@ -196,14 +200,29 @@ The <span class="hi-exam">21-24BF19 Feed Reg Valves are air-operated and fail CL
 <span class="hi-exam">23BF19 feedwater reg valve fails closed</span> (ramped over 1 minute) at 85% power. OHA alarms: G-15 ADFCS TRBL, G-23 21/22 SGFP SPEED DEVIATION, 23 SG Program Setpoint Deviation. Manual control attempts unsuccessful. Both SGFPs trip on SI actuation following reactor trip — <span class="hi-exam">SGFPs NOT available during EOP-FRHS-1</span>. Condensate recovery path: open selected SG BF40 or BF19 locally (120 ft elevation TGA), open BF13, open <span class="hi-exam">21 and 22 CN48 (SGFP bypass valves)</span>, close <span class="hi-exam">21 and 22 CN32 (SGFP suction valves)</span>. Feed flow established when SG pressure depressurized to <575 psig.
 </div>
 
-## Condenser and Condensate
+## Interconnections & Loads
 
-- Main condensers receive exhaust steam from turbine and steam dump
-- Condensate pumps deliver condensate through feedwater heaters to feedwater pumps
-- Condenser serves as heat sink for steam dump during load rejection
-(UFSAR 10.4)
+The condensate system collects condensed steam from the main condensers and pumps it through the feedwater heaters to the SGFPs, which supply heated feedwater to the steam generators (UFSAR §10.4.7.1.1). The condensate pump discharge supplies 900 gpm to the steam generator blowdown heat exchanger, which returns to the condensate header ahead of the first feedwater heater (UFSAR §10.4.7.1.1). Bleed (extraction) steam from the HP and LP turbines feeds the six stages of feedwater heaters; drains from heaters No. 5 and 6 go to drain tanks (three heater drain pumps discharge to feed pump suction), and drains from the four LP heaters cascade in sequence to the condenser (UFSAR §10.4.7.1.1).
+
+**Condensate Polishing System (CPS).** From the hotwells, condensate is directed through a full-flow, high-pressure, deep-bed demineralizer CPS by the three condensate pumps; the polisher reduces dissolved solids in the Steam Generator Feed and Condensate System by ion exchange and filters out scale and particulate matter (UFSAR §10.4.6.2). The CPS handles condensate at temperatures from <span class="hi">50°F to 130°F</span> at pressures to <span class="hi">700 psig</span>, with normal operating pressure about <span class="hi">475 psig</span> (UFSAR §10.4.6.2). It is designed for a normal continuous flow of <span class="val-normal">22000 gpm</span> and a maximum continuous flow of <span class="hi">24000 gpm</span>, with five of the six demineralizers operating in parallel (UFSAR §10.4.6.2). The CPS together with the Condensate Bypass System allows flushing of feedwater lines and recirculation back to the condenser during startup; secondary system cleaning may also be done by the Steam Generator Blowdown System, and the CPS may be bypassed (UFSAR §10.4.6.1, §10.4.6.2). When in full-flow operation, the operator is alerted to partial bypass of the CPS when valve 1(2)CN-109 is open and either 11(21)CN-108, 12(22)CN-108, or 13(23)CN-108 is not fully shut (UFSAR §10.4.6.2). Molar Ratio Control (MRC) using ammonium chloride controls the cation-to-anion balance to achieve near-neutral crevice pH in steam generator blowdown, thereby controlling steam generator corrosion; sodium minimization is the primary control (UFSAR §10.4.6.2).
+
+## Effects of Loss / Malfunction
+
+The SGFP design requires adequate condensate flow and suction pressure; loss of condensate-pump flow lowers SGFP suction pressure toward the low-suction-pressure trip setpoints (see Exam — 2018 Q17). The low-flow recirculation lines (1800 gpm on each condensate pump, 2300 gpm on each SGFP) protect the pumps from low-flow damage (UFSAR §10.4.7.1.1). Loss of a feedwater heater string lowers feedwater temperature, adding positive reactivity (see Exam — 2018 Q37, 2023 Q8). The condensate system also serves as the alternate secondary heat-sink feed path in [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]] when both AFW and Main Feed are lost.
 
 **Exam & operating coverage:**
+
+### Feed Line Break
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q12</div>
+A large <span class="hi-exam">main feedwater line break depressurizes the SG (similar to a steam line break)</span>. Initial Tavg response (before automatic protective actions): a <span class="hi-exam">feed line break sends LESS cold feed into the SG → Tcold rises → Tavg RISES</span>, whereas a <span class="hi-exam">steam line break draws MORE steam → Tcold lowers → Tavg LOWERS</span>. <span class="hi-trap">Because an FLB depressurizes the SG like an SLB, the operator must use diverse/alternate indication to discern what is actually happening to the SG.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q13</div>
+Main feedwater line break vs steam line break: FW line break causes SG levels to <span class="hi-exam">lower FASTER</span> (direct loss of feedwater inventory). RCS cooldown is <span class="hi-exam">LESS than an equivalent steam line break</span> (loss of FW doesn't involve removal of latent heat as steam break does). FW break generates <span class="hi-exam">Low-Low SG Level reactor trip</span>; post-trip RCS Tavg rises due to decreased heat transfer in the affected SG.
+</div>
 
 ### Condensate Pump Trips and SGFP Suction
 

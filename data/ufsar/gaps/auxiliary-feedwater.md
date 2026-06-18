@@ -1,0 +1,13 @@
+# Gaps — auxiliary-feedwater (catalog system 061)
+
+K/A topics not answered by any of UFSAR §10.4.7.2 (incl. §10.4.7.3), TS 3/4.7.1.2, the AFW system-operating/abnormal procedures referenced in the article, or the existing exam-bank callouts. Recorded honestly per the ingestion guide; no values fabricated to cover a topic.
+
+- 061 A1.10 — AFW pump discharge temperature (as a monitored parameter / instrument) — checked UFSAR §10.4.7.2.2, TS 3/4.7.1.2, existing callouts; the UFSAR describes backleakage temperature monitoring (folded into Key Components via the 2018 Q18 / 2016 IP-j callouts) but no sourced discharge-temperature indication/setpoint value found
+- 061 K1.06 — Cooling water for AFW components (component cooling source for AFW pumps/bearings) — checked UFSAR §10.4.7.2; no dedicated AFW component-cooling-water source identified in the section; not sourced
+- 061 K1.10 — Diesel fuel oil system interconnection (for NSR MSPI AFW diesel) — checked UFSAR §10.4.7.3.1; the NSR MSPI AFW diesel generator is described but no fuel-oil-system interconnection detail sourced
+- 061 K4.09 — Crossties between multi-unit stations — checked UFSAR §10.4.7.2.2; a normally isolated cross-connect line joins the two motor-driven pump discharge headers within a unit, but no inter-unit (Unit 1 ↔ Unit 2) AFW crosstie is described; not sourced (note: the NSR MSPI AFW pump in §10.4.7.3.1 is configured to supply EITHER unit, but this is a shared standby pump, not a crosstie)
+- 061 K4.13 — Initiation of cooling water and lube oil (auto-initiation of AFW pump support systems on start) — checked UFSAR §10.4.7.2.2; not sourced
+- 061 K6.07 — AFW pump lube oil system and cooling (effect of malfunction) — checked UFSAR §10.4.7.2; not sourced (2022 #3 callout references an oil-bubbler C/T as an initial condition but no design/malfunction detail)
+- 061 K6.08 — Bearing oil supply for turbine-driven pumps (effect of malfunction) — checked UFSAR §10.4.7.2.2; TDAFW pump turbine described as single-inlet single-stage rugged design, but no bearing-oil-supply detail sourced
+- 061 K6.09 — AFW turbine drain(s) or heat tracing — checked UFSAR §10.4.7.2.2; UFSAR states the steam supply line is continuously warmed by main steam and traps/strainers/orifices remove condensate from turbine steam piping, but no specific turbine drain valve list or heat-tracing detail sourced
+- 061 A1.09 / K5.06 — Natural circulation flow (as monitored parameter / operating concept) — checked UFSAR §10.4.7.2 and existing callouts; AFW supports decay heat removal but natural-circulation flow indication/concept is not described in the AFW UFSAR section (lives in RCS/EOP material); not sourced here
