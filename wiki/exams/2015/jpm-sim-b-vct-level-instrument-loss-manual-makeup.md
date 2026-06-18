@@ -9,7 +9,7 @@ aliases:
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
 <span style="color:#34d399;font-size:14px;font-weight:600;">JPM Sim-b — Respond to Loss of VCT Level Instrument / Manual Makeup to VCT</span>
-<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">Simulator | RO/SRO | APE 022 AA1.01 (3.4)</span>
+<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">Simulator | RO/SRO | 022 AA1.01 (RO 3.8 / SRO 3.8)</span>
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">

@@ -12,7 +12,7 @@ aliases:
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
 <span style="color:#60a5fa;font-size:14px;font-weight:600;">Q83 (SRO 8) — Procedure and Action Transitioning Out of EOP-TRIP-1 With No Heat Sink (MSLB/SI)</span>
-<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">00WE05 EA2.02 (3.7/4.3) — SRO</span>
+<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">WE05 EA2.02 (3.7/4.3)</span>
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">

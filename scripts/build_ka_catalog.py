@@ -37,6 +37,17 @@ FIELDS = ["ka_full", "category", "system_number", "system_name",
 # leading system/vendor code (e.g. "BA01", "022", "007") is whatever precedes it.
 KA_TAIL = re.compile(r"(?:E[AK]|A[AK]|[AK])\d\.\d+[a-z]?$")
 
+# Vendor APE/EPE codes embedded in a merged name, e.g. "(BW E08; W E03) LOCA Cooldown".
+VENDOR_TAG = re.compile(r"\b(BW|CE|W)\s+([AE]\d{2})\b")
+_VENDOR_LETTER = {"BW": "B", "CE": "C", "W": "W"}
+
+
+def vendor_codes(name):
+    """Return the vendor APE/EPE codes named in a merged row, e.g. '(BW E08; W E03) ...'
+    -> ['BE08', 'WE03']. DELETED/MOVED rows carry no statement parenthetical, so the vendor
+    code can only be recovered here, from the name."""
+    return [f"{_VENDOR_LETTER[v]}{code}" for v, code in VENDOR_TAG.findall(name or "")]
+
 
 def categorize(ka_no: str) -> str:
     s = ka_no.strip().upper()
@@ -118,17 +129,31 @@ def main() -> int:
         statement = ("" if statement is None else str(statement)).strip()
         name_number, system_name = parse_number_name(name)
         system_number, ka_full = derive_ka(name_number, ka_no, statement)
-        records.append({
-            "ka_full": ka_full,
-            "category": categorize(ka_no),
-            "system_number": system_number,
-            "system_name": system_name,
-            "ka_no": ka_no,
-            "statement": statement,
-            "ro_imp": "" if ro is None else str(ro),
-            "sro_imp": "" if sro is None else str(sro),
-            "status": status_of(statement),
-        })
+        status = status_of(statement)
+        # DELETED/MOVED rows carry no parenthetical code, so derive_ka can't recover their
+        # vendor prefix — a merged row keyed only by its bare ka_no ('EA2.02') or its APE
+        # number ('040 EA2.01') drops the vendor form ('WE12 EA2.01') the exams actually cite.
+        # Recover the vendor code(s) from the name and emit a retired entry per vendor (plus the
+        # APE-number form when the name had one) so the catalog faithfully mirrors the xlsx.
+        vcodes = vendor_codes(system_name) if status != "active" else []
+        if vcodes:
+            targets = [(c, f"{c} {ka_no}") for c in vcodes]
+            if system_number:
+                targets.append((system_number, ka_full))
+        else:
+            targets = [(system_number, ka_full)]
+        for sysc, full in targets:
+            records.append({
+                "ka_full": full,
+                "category": categorize(ka_no),
+                "system_number": sysc,
+                "system_name": system_name,
+                "ka_no": ka_no,
+                "statement": statement,
+                "ro_imp": "" if ro is None else str(ro),
+                "sro_imp": "" if sro is None else str(sro),
+                "status": status,
+            })
 
     records.sort(key=lambda r: (r["category"], r["ka_full"]))
 

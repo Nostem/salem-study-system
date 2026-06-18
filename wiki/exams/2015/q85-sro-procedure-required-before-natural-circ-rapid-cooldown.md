@@ -17,7 +17,7 @@ Flag for reconciliation. -->
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
 <span style="color:#60a5fa;font-size:14px;font-weight:600;">Q85 (SRO 10) — Procedure Required Before Transitioning to Natural Circulation Rapid Cooldown</span>
-<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">00WE10 EA2.02 (3.4/3.9) — SRO</span>
+<span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">WE10 EA2.02 (3.4/3.9) — SRO</span>
 </div>
 
 <div style="font-size:13px;color:#9ca3af;margin-bottom:14px;line-height:1.7;">
