@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Split raw/ufsar/salem-ufsar.pdf into per-chapter PDFs using its top-level bookmarks.
 
-Writes raw/ufsar/ch-NN-<slug>.pdf (raw/ is gitignored) and the tracked index
+Writes raw/ufsar/ch-<slug>.pdf (raw/ is gitignored) and the tracked index
 data/ufsar/chapter-index.json. Page numbers are 0-indexed. Re-run only if the source
 UFSAR PDF is replaced.
 

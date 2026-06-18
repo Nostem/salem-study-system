@@ -265,7 +265,7 @@ The safe rule is: source Markdown/YAML/PDF data is authority; the four quiz-data
 │   ├── wiki_index.py                  # local wiki index/query helper
 │   ├── contact_feedback_to_github_issues.py
 │   ├── split_ufsar.py                 # split UFSAR PDF into per-chapter files for pipeline input
-│   ├── build_system_map.py            # build data/ufsar/system-map.json from chapter-index
+│   ├── build_system_map.py            # build data/ufsar/system-map.json (article↔catalog↔UFSAR crosswalk)
 │   └── build_ka_index.py              # build per-system K/A topic index under data/ufsar/ka-index/
 ├── site/
 │   ├── package.json
