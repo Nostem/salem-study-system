@@ -12,11 +12,34 @@ aliases:
 
 # DC Power
 
-## Function
+## Function & Design Basis
 
-Provides DC electrical power for control functions, instrumentation, diesel generator starting, reactor trip breaker operation, and emergency lighting. (UFSAR 8.3.2)
+Separate 125-V and 250-V dc sources supply power for operation of switchgear, annunciators, vital instrument buses, inverters, emergency lighting, communications, and turbine generator emergency auxiliaries. <span class="hi">Three independent 125-V dc sources provide power to the engineered safety features</span> (UFSAR §8.3.2.1). Safety-related loads are identified by the symbols <span class="hi">A, B, C, D</span> on the feeders (UFSAR §8.3.2.1).
 
-## 125V DC System
+Each unit has a 125-V dc power system to provide power to safeguards loads, which also supplies power through inverters to the 115-V ac instrument buses; in addition each unit has a 250-V dc power system and a 28-V dc control system — together these constitute the station dc sources (UFSAR §8.1.2). The station dc systems provide a continuous source of power for operation of circuit breakers, valve controls, inverters, etc.; <span class="hi-exam">no initiation or control is required to connect the batteries to the dc buses</span> (UFSAR §8.3.2.1).
+
+DC power is critical for safety functions because it provides control power independent of AC. The 28-V dc supplies power the reactor trip breaker undervoltage coils, so loss of a 28-V supply directly trips the associated reactor trip breaker (fail-safe design) (see [[TS 3/4.8 — Electrical]]). Battery OPERABILITY is verified by regular capacity testing, and surveillance requirements are set forth in the Technical Specifications (UFSAR §8.3.2.3).
+
+## Key Components
+
+As shown on the referenced plant drawings, <span class="hi">three 125-V batteries are provided for each unit</span> to supply an independent source of control power for each of the three 4160-V and 460-V vital buses and for the 125-V distribution cabinets; a backup source of control power for each of these buses is provided via <span class="hi-exam">manually operated breakers under administrative control</span> (UFSAR §8.3.2.1). The four No. 1 Vital Instrument Buses (1A, 1B, 1C, 1D) each receive a battery feed and a 230-V CC feed from power-supply trains A, B, C, and B respectively (UFSAR Table 8.3-1).
+
+Two separate non-safety related 125-V dc batteries serve the <span class="hi">4160 V CW switchgear, 13 kV south bus section breakers, SCADA systems, and portions of switchgear relaying systems</span> (UFSAR §8.3.2.1). These are located in the Circulating Water Switchgear Building (UFSAR §8.1.2, §8.3.2.4).
+
+The Station Battery System includes <span class="hi-exam">one non-vital 250-V, three vital 125-V, and two vital 28-V batteries</span>, static battery chargers for each battery, and a ground detection system and undervoltage alarm relay for each bus (UFSAR §8.3.2.2). The batteries are mounted on corrosion-resistant, seismically designed steel racks in separately ventilated and isolated areas (UFSAR §8.3.2.2).
+
+### Battery Ratings
+
+| Battery | Ampere-hour rating (8-hour rate) | Source |
+|---------|----------------------------------|--------|
+| 250-V (non-vital, one) | <span class="hi">1326 Ah</span> | UFSAR §8.3.2.2 |
+| 125-V (vital, three) | <span class="hi">2320 Ah</span> | UFSAR §8.3.2.2 |
+| 28-V (vital, two) | <span class="hi">800 Ah</span> | UFSAR §8.3.2.2 |
+| CW Switchgear 125-V (non-vital, one per system) | <span class="hi">960 Ah</span> | UFSAR §8.3.2.4 |
+
+The 28-V dc battery total load cycle ranges from <span class="val-normal">~120.7 to 172.8 amperes</span> over the 0-to-120-minute duty cycle, depending on battery and time interval (UFSAR Table 8.3-5).
+
+### 125V DC System
 
 - Three 125V battery banks with associated chargers per unit
 - Provides control power for: switchgear operation, diesel generator field flashing and starting, vital instrumentation, emergency lighting, PORV and block valve control
@@ -24,21 +47,9 @@ Provides DC electrical power for control functions, instrumentation, diesel gene
 - Battery chargers maintain batteries on float charge during normal operation
 (UFSAR 8.3.2.1, 8.3.2.2)
 
-**Exam & operating coverage:**
-
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q58</div>
 Unit 1 Vital 125 VDC loads include: the <span class="hi-exam">1D Vital Instrument Bus Inverter (from 1B 125 VDC bus)</span>; <span class="hi-exam">1H 4KV Group Bus control power (1A 125 VDC regular, 1B 125 VDC emergency)</span>; and the <span class="hi-exam">Gland Sealing Steam Annunciator Panel (from the 1ADC Distribution Cabinet)</span>. <span class="hi-trap">The Supervisory Control and Data Acquisition (SCADA) System is powered from the Circ Water 125 VDC system — NOT the vital 125 VDC system.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q15</div>
-Per S2.OP-AR.ZZ-0002 (Overhead Annunciators Window B), the required response to <span class="hi-exam">OHA B-10, 2B 125VDC CNTRL BUS VOLT LO</span> is to <span class="hi-exam">place the 2B2 Battery Charger in service</span>. The 2B1 battery charger is normally in service; the 2B2 (backup) charger is NOT normally in service and its use is <span class="hi-exam">limited to 7 days per Tech Specs</span>. There is <span class="hi-exam">no automatic swap</span> between chargers. <span class="hi-trap">Trap: transferring 125 VDC bus loads to their alternate source is done ONLY if the backup (2B2) charger cannot be placed in service — it is not the first action. There is also no auto-energization of 2B2 to "ensure" it has started.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q57</div>
-4KV Group bus breaker control power is supplied from the DC system. <span class="hi-trap">If a 4KV group bus loses its 125 VDC control power, a running RCP breaker continues to run but will NOT trip when required</span> — 4KV breakers cannot be tripped remotely without 125VDC to energize the trip coil, and the alternate DC supply does NOT auto-transfer (it is transferred manually). See [[4KV]], [[RCPs]].
 </div>
 
 <div class="callout callout-exam">
@@ -51,40 +62,46 @@ Confirms 2020 Q13: with OHA B-2 "2A 125 VDC CNTRL BUS VOLT LO" and 2A Vital 125 
 Loss of 2A 125 VDC Bus loads: <span class="hi-exam">2A EDG is NOT available for start</span> (EDG starting circuits require 125 VDC). #1 SGFP Emergency Oil Pump and Main Turbine Emergency Oil Pump are NOT powered from the 2A 125 VDC bus — they are powered from other DC voltage levels (250 VDC or 28 VDC). <span class="hi-trap">All three malfunctions listed (SGFP Emergency Oil Pump, Turbine Emergency Oil Pump, EDG start) can be caused by loss of SOME DC bus, but only the EDG start is affected by loss of the 2A 125 VDC bus specifically. Know which loads are on which DC bus voltage level.</span>
 </div>
 
-## 250V DC System
+### 250V DC System
 
 - Provides power for turbine turning gear and other large DC loads
 (UFSAR 8.3.2.1)
-
-**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q20</div>
 250 VDC system loads: the <span class="hi-exam">Main Turbine Emergency Oil Pump is powered from the 250 VDC Battery and Charger System</span>. The following are powered from the <span class="hi-exam">125 VDC</span> system (NOT 250 VDC): Field Excitation Circuitry for the EDGs, Vital Instrument Bus Inverters, and Emergency Lighting Inverters. <span class="hi-trap">Know which loads are on each DC voltage level (28V, 125V, 250V). The 250V system primarily powers large DC motors like the turbine turning gear and the Main Turbine Emergency Oil Pump.</span>
 </div>
 
-## 28V DC System
+### 28V DC System
 
 - Three 28V battery supplies per unit
 - Provides power for reactor trip breaker undervoltage coils
 - Loss of 28V DC supply causes reactor trip breaker to open (fail-safe design)
 (UFSAR 8.3.2.1)
 
-**Exam & operating coverage:**
-
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q56</div>
 Purpose of the 28 VDC Control Power System is to provide DC electrical power under normal, transient, and accident conditions to: <span class="hi-exam">(a) Switchgear, (b) Main Control Room Control Console Bezel controls, (c) Annunciators, (d) Vital Instrument Buses, (e) Non safety-related equipment, (f) Status panel RP4 in the main control room</span>. Loss of the 1A 28 VDC bus therefore <span class="hi-exam">de-energizes 1RP4 status panel — all indication on 1RP4 is lost</span>. <span class="hi-trap">Traps: 13 AFW pump auto-start on MS132 fail-open is a 125 VDC (not 28 VDC) control-power loss effect; OHA G-6 11 SGFP TRBL alarm panel functions are powered from 115 VAC; control room emergency lighting is supplied from 125 VDC — none are effects of losing the 28 VDC bus.</span>
 </div>
 
-## Station Battery Capacity
+### CW Switchgear Batteries
+
+Each CW Switchgear Battery System includes one 125-V battery, two static battery chargers, ground detection and metering cabinet, located in the Circulating Water Switchgear Building (UFSAR §8.3.2.4). The battery is connected to its associated 125-V distribution panel through protective fuses and a manual transfer switch; <span class="hi-exam">the manual transfer switch allows either 125-V distribution panel to be switched to the other battery if its own battery is out of service</span> (UFSAR §8.3.2.4). On loss of AC power to the battery chargers and the P250 computer inverter, the battery can supply the <span class="hi">full P250 inverter load of 15KVA for up to 2 hours and the remaining DC loads for up to 4 hours</span> (UFSAR §8.3.2.4). (Unit 2 only, the Unit 1 Plant Computer Inverter is abandoned and all loads are moved to the SPDS Inverter.) (UFSAR §8.3.2.4)
+
+## Operation
+
+During normal operation, the dc load is fed from the battery chargers with the batteries floating on the system; upon loss of dc power from a battery charger, the dc load is drawn from the batteries (UFSAR §8.3.2.2). Each charger maintains a floating charge on its associated battery and is capable of supplying the required equalizing charge when necessary (UFSAR §8.3.2.2). Protection against overcharging is provided within the charger itself, which is a <span class="hi">constant voltage-current limited device</span> (UFSAR §8.3.2.3).
+
+Two chargers, each capable of <span class="hi">100-percent normal load</span>, are provided for each 28-V and 125-V dc battery; the 28-V and 125-V chargers are fed from the vital ac buses, and each 28-V and 125-V battery is fed from two separate vital buses (UFSAR §8.3.2.3). <span class="hi-exam">One charger is under administrative control to assure that the 230-V ac buses will not become interconnected</span> (UFSAR §8.3.2.3). One 250-V dc charger is provided due to the nature of the 250-V dc loads, with a provision to tie in the other unit's 250-V charger if needed (UFSAR §8.3.2.3). Each 125-VDC battery is connected to its associated switchgear through a disconnect switch and protective fuses; the 250-V and 28-VDC batteries are connected to their associated switchgear through protective fuses (UFSAR §8.3.2.2).
+
+### Station Battery Capacity
+
+The batteries are sized for <span class="val-normal">2 hours of operation after a loss of ac power</span>, based upon the required operation of the dc emergency equipment (UFSAR §8.3.2.2). If all offsite power is lost, the battery chargers are energized from the emergency diesel generators and resume their function automatically (UFSAR §8.3.2.2).
 
 | Condition | Battery Duration | Source |
 |-----------|-----------------|--------|
-| Worst case, no load shed | <span class="hi">2 hours</span> | VTD 314204 |
+| Worst case, no load shed | <span class="hi">2 hours</span> | UFSAR §8.3.2.2; VTD 314204 |
 | With EOP-LOPA-1 load shedding | <span class="hi">4 hours</span> (SBO coping duration) | VTD 314204 |
-
-**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q13</div>
@@ -116,18 +133,26 @@ Battery discharge indication on 2RP9: during normal "float charge" mode, volt me
 Station Blackout 125VDC Load Shed per EOP-LOPA-1 Checkoff Sheet 3 (COS 3-1 thru 3-3). Operator must locate DC distribution panels across two elevations and open ONLY the specific breakers listed. <span class="hi-exam">64 ft elevation</span>: 2A 125VDC Bus, 2ADC 125VDC Distribution Panel, 2B 125VDC Bus, 2DDC and 2CDC 125VDC Distribution Panels. <span class="hi-exam">100 ft elevation switchgear room</span>: 2AADC, 2BBDC, 2CCDC 125VDC Distribution Panels. Field labeling discrepancies: <span class="hi-exam">2ADC3AX29</span> labeled "Source #1 125 VDC to AVR Excitation Cab" (procedure calls it "2 Generator Exciter Voltage Regulator"); <span class="hi-exam">2DDC2AX28</span> labeled "21SJ162, 2SJ166, 22SJ162, 22SJ166, 2SJ158" (procedure calls it "Safety Injection Test Line Valves").
 </div>
 
-## Ground Detection
+### Station Battery Monitoring
 
-**Exam & operating coverage:**
+Each of the 6 batteries per unit is continuously monitored in the Control Room for voltage and discharge current (UFSAR §8.3.2.3). Monitoring and alarm devices include: a <span class="hi">Battery Voltmeter</span> (dc bus voltage, continuous Control Room readout); a <span class="hi">Battery Load Ammeter</span> (discharge current); <span class="hi">Ground Detectors</span> (leakage from positive and negative buses to station ground, with a local ground detection circuit adjacent to each charger for test purposes); an <span class="hi">Undervoltage Alarm</span> that alarms in the Control Room when bus voltage drops below a preset value; a <span class="hi">Charger Voltmeter</span> (charger output voltage at the charger cabinet); a <span class="hi">Charger Alarm</span> on loss of ac input to the chargers; a <span class="hi">DC Distribution Cabinet Undervoltage Alarm</span> on each 28-V and 125-V distribution cabinet; and a <span class="hi">Blown Fuse Alarm</span> on each battery fuse (UFSAR §8.3.2.3). Each 28-VDC charger is equipped with an ac failure relay, and loss of ac input and/or dc output is annunciated in the Control Room; each Unit 2 125-VDC charger is equipped with a summary trouble alarm indicating <span class="hi-exam">AC Power Failure, High Voltage Shutdown, No Charge, and High/Low Voltage</span>; the 250-VDC chargers also have an overvoltage alarm in the Control Room (UFSAR §8.3.2.2, §8.3.2.3). Alarms from both Unit 1 and Unit 2 battery chargers are printed in the Control Room (UFSAR §8.3.2.2).
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q46</div>
 125VDC ground detection: <span class="hi-exam">resistance ≤50K ohms = ground detected; >50K ohms = normal (no ground)</span>. Per S2.OP-SO.125-0004, when a ground is detected, breakers are <span class="hi-exam">opened one at a time</span> until resistance reads >50K ohms, isolating the ground source. Breakers are NOT all opened at once.
 </div>
 
-## Bus Transfer Interlocks
+### Bus Transfer & Charger Interlocks
 
-**Exam & operating coverage:**
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q15</div>
+Per S2.OP-AR.ZZ-0002 (Overhead Annunciators Window B), the required response to <span class="hi-exam">OHA B-10, 2B 125VDC CNTRL BUS VOLT LO</span> is to <span class="hi-exam">place the 2B2 Battery Charger in service</span>. The 2B1 battery charger is normally in service; the 2B2 (backup) charger is NOT normally in service and its use is <span class="hi-exam">limited to 7 days per Tech Specs</span>. There is <span class="hi-exam">no automatic swap</span> between chargers. <span class="hi-trap">Trap: transferring 125 VDC bus loads to their alternate source is done ONLY if the backup (2B2) charger cannot be placed in service — it is not the first action. There is also no auto-energization of 2B2 to "ensure" it has started.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q57</div>
+4KV Group bus breaker control power is supplied from the DC system. <span class="hi-trap">If a 4KV group bus loses its 125 VDC control power, a running RCP breaker continues to run but will NOT trip when required</span> — 4KV breakers cannot be tripped remotely without 125VDC to energize the trip coil, and the alternate DC supply does NOT auto-transfer (it is transferred manually). See [[4KV]], [[RCPs]].
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q15</div>
@@ -148,13 +173,6 @@ Loss of 2C 125 VDC: all breakers powered by 2C DC <span class="hi-exam">remain A
 <div class="callout-label">Exam — 2023 Q47</div>
 125VDC distribution includes a <span class="hi-exam">mechanical interlock preventing normal and backup bus paralleling</span>. The interlock requires the normal supply breaker to be OPEN before the backup (emergency) breaker can close. <span class="hi-exam">Transfer to backup DC bus is ONLY permitted during Modes 5, 6, or defueled</span> — paralleling in Modes 1-4 would make DC buses inoperable.
 </div>
-
-## Key Design Points
-
-- DC power is critical for safety functions — provides control power independent of AC
-- 125V batteries sized for station blackout coping duration (4 hours with load shedding)
-- Battery OPERABILITY verified by regular capacity testing
-- Loss of a 28V supply directly trips the associated reactor trip breaker
 
 ## Tech Spec LCOs
 

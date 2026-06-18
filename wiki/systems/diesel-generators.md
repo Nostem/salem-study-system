@@ -12,16 +12,26 @@ aliases:
 
 # EDGs
 
-## Function
+## Function & Design Basis
 
-Provide standby AC power to vital buses on loss of offsite power or upon receipt of a safety injection signal. Three separate and independent diesel generators per unit, each with a separate fuel supply and day tank. (UFSAR 8.3.1.5)
+The standby AC power source consists of <span class="hi">three automatically starting diesel generators</span> per unit. Each diesel generator set supplies power to one 4160-V vital bus in the event of a loss of offsite power, so that the three separate and independent units, each with its own fuel supply and day tank, back up the three vital load groups (UFSAR §8.3.1.5). The units are sized to handle the loads necessary for a design-basis LOCA coincident with the loss of all offsite power (UFSAR §8.3.1.5).
 
-## Auto-Start Signals
+The nameplate continuous rating of each diesel generator is <span class="hi-exam"><span class="val-normal">2600 kW</span>, 900 rpm, 4160-V, 3 phase, 60 cycles</span> (UFSAR §8.3.1.5). The diesel generators are designed to be ready to accept load <span class="hi-exam">within <span class="val-normal">13 seconds</span> after receipt of a signal to start</span> (UFSAR §8.3.1.5); they have the capability to attain rated speed and voltage within 13 seconds and to accept load in the sequence shown in Tables 8.3-2 and 8.3-3 (UFSAR §8.3.1.5.2). Safety analyses that credit the diesel generators conservatively assume start and load delay times that bound these values as well as any value specified by Technical Specifications (UFSAR §8.3.1.5.2).
 
-- Safety Injection signal
-- Loss of voltage on vital buses
-- Degraded voltage on vital buses
-(UFSAR 8.3.1.5)
+> **Two distinct start milestones (13 s vs <10 s — not a conflict):** the UFSAR design basis (§8.3.1.5, §8.3.1.5.2) is **13 seconds** to attain rated speed/voltage and be ready to accept load — this is the exam-critical figure. The separate "<10 second" value in the exam bank (2020 Q50) refers to the time for the air start motors to **crank and start the engine** (engine fires), a narrower step that precedes reaching rated speed/voltage. Both are correct for different milestones.
+
+**Redundancy / single-failure (GDC-18):** Any two of the diesel generators and their associated vital buses can supply sufficient power for operation of the required safeguards equipment for a design-basis LOCA coincident with a loss of offsite power. Sufficient redundancy is provided in the safety features and their assignment to the vital buses so that failure to energize any one vital bus does not prevent operation of the required minimum safety equipment (UFSAR §8.3.1.5). These design provisions satisfy General Design Criterion 18 (UFSAR §8.3.1.6).
+
+Each diesel generator unit is rated as follows (UFSAR §8.3.1.5.1):
+
+| Time | kW | PF | KVAR | KVA |
+|------|----|----|------|-----|
+| ½ HR | <span class="val-trip">≤3100</span> | 0.8 | 2325 | 3875 |
+| 2 HRS | ≤2860 | 0.8 | 2145 | 3575 |
+| 2000 HRS | <span class="val-alarm">≤2750</span> | 0.8 | 2063 | 3438 |
+| CONT | <span class="val-normal">≤2600</span> | 0.8 | 1950 | 3250 |
+
+A detailed loading study (Calculation ES-9.002[Q]) confirms that, for the design-basis LOPA, LOCA-coincident-with-LOPA, and LOCA-coincident-with-LOPA-plus-single-failure cases, all expected loads are within the diesel generator ratings above and the auto-connected loads do not exceed the short-time (2-hour) rating defined in Reg Guide 1.9 Rev. 2 and IEEE STD 387-1977 (UFSAR §8.3.1.5.1).
 
 **Exam & operating coverage:**
 
@@ -30,13 +40,175 @@ Provide standby AC power to vital buses on loss of offsite power or upon receipt
 <span class="hi-exam">EDG starting circuits are supplied from 125 VDC power.</span> On loss of the associated 125V DC bus, the EDG will NOT start automatically from SI/SEC signal or remotely from the control room. The SI signal goes to the SEC (powered by vital instrument power), which sends a start signal to the EDG start circuitry (DC powered). Without DC, the start circuit cannot function.
 </div>
 
-## Key Design Points
+## Key Components
 
-- Each vital 4160V bus has a dedicated diesel generator
-- 10-second start to rated speed and voltage
-- Safeguards loads sequenced onto DGs after start to prevent overloading
-- 7-day fuel oil supply required for OPERABILITY
-- Each DG independent with separate fuel supply, starting air, and cooling
+- **Diesel generator units (3 per unit):** located in the Auxiliary Building at Elevation 100 feet; isolated from each other and from other equipment by fire walls and fire doors (UFSAR §8.3.1.5). Each unit has its own lube-oil jacket cooling, ventilation, and dual air starting system; cooling water is supplied by the Service Water System (UFSAR §8.3.1.5).
+- **Fuel oil day tank:** one per diesel generator, <span class="hi-exam"><span class="val-normal">550-gallon</span> capacity</span>, mounted above the unit for gravity feed of fuel at startup (UFSAR §8.3.1.5).
+- **Diesel Fuel Oil Storage Tanks (DFOSTs):** two <span class="hi-exam"><span class="val-normal">30000-gallon</span></span> fuel-oil storage tanks located below the diesels at Elevation 84 feet (UFSAR §8.3.1.5).
+- **Safeguards Equipment Control (SEC) System:** controls the loading of the diesel generators; control power for the controller in each train (A, B, and C) is supplied from the 115-V AC instrument bus in that train (UFSAR §8.3.1.5.1). Described in the SEC article.
+
+In addition to the emergency diesel generators, a gas turbine generator rated at approximately 40 MW is installed at the site for peaking; it is currently interim abandoned and isolated via procedural controls, and can be paralleled with the normal plant startup or standby power source on the 13-kV ring bus (UFSAR §8.3.1.5).
+
+## Power Supplies
+
+EDG starting circuits and control circuitry are supplied from <span class="hi-exam">125 VDC</span> power; loss of the associated 125 VDC bus disables automatic and remote starting (see Exam — 2023 Q12, above). A DC control-voltage failure is alarmed locally and in the Control Room and includes loss of DC power to the engine control, generator field, unit trip circuit, and local alarm system (UFSAR §8.3.1.5.3).
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q48</div>
+EDG starting air compressor power supplies: <span class="hi-exam">both 21A and 21B starting air compressors for 2A EDG are powered from the same 2A 230V Vital Bus</span> (NOT from separate buses). Each EDG's two starting air compressors are supplied from its own associated 230V vital bus.
+</div>
+
+## Automatic Features & Setpoints
+
+### Auto-Start Signals
+
+The diesel generators are started automatically by (UFSAR §8.3.1.5.2):
+
+- the <span class="hi-exam">safety injection signal</span>, or
+- indication of a <span class="hi-exam">loss of all offsite power to the 4160-V vital buses</span>, determined using <span class="hi-exam">2/3 logic</span> (degraded/loss-of-voltage on the vital buses).
+
+The latter (undervoltage) signal initiates the loading sequence for each vital bus, trips the vital-bus in-feed breakers and all motor feeder breakers, closes the diesel generator breaker after the unit comes up to its speed and voltage permissive setpoints, and connects the required safeguard loads in a predetermined sequence. The loading sequence logic for each vital bus is separate and independent of that for the other buses; the loading sequences under emergency conditions are discussed in Section 7 (UFSAR §8.3.1.5.2). Group bus undervoltage protection (68 percent of nominal) automatically trips the reactor coolant and condensate pump 4-kV breakers upon sensing an undervoltage condition on its respective 4-kV group bus (UFSAR §8.3.1.2).
+
+### Load Sequencing (Tables 8.3-2 / 8.3-3)
+
+On an auto-start the Loading Control System automatically energizes the required loads within <span class="hi-exam">35 seconds</span> (UFSAR §8.3.1.5.2). Loads are connected in the sequence and at the time delays (seconds after sequence start) shown in UFSAR Tables 8.3-2 (Loss of Offsite Power **with** Accident) and 8.3-3 (Loss of Offsite Power only). Key Unit 2 sequence times (UFSAR Table 8.3-2, LOOP + Accident):
+
+| Step | Load | 2A sec | 2B sec | 2C sec |
+|------|------|--------|--------|--------|
+| 0 | 230 V / 460 V Vital Buses | 00 | 00 | 00 |
+| 1 | Safety Inj Chrg Pmp | — | 01 | 01 |
+| 2 | Safety Injection Pmp | 01 | — | 05 |
+| 3 | Residual Heat Removal Pmp | 05 | 05 | — |
+| 4 | Containment Spray Pmp | 09-10; 30 | — | 09-10; 26 |
+| 5 | Service Water Pump | 13 | 09 | 13 |
+| 6 | CFCUs (Low Speed) | 22 | 18 | 22 |
+| 7 | Aux Feedwater Pmp | 26 | 22 | — |
+| 8 | Control Rm A/C (Chillers) | 30 | 26 | 26 |
+
+(UFSAR Table 8.3-2). The component cooling pumps, containment fan cooler units, reciprocating charging pump, and other non-essential equipment are manually energized only after prior reduction of diesel load by manual shutdown of equipment not required for long-term operation; prior to closing the vital-bus breaker supplying the pressurizer backup heaters, the operator verifies the additional load will not exceed the 2000-hour rating (2750 kW) of the diesel generator (UFSAR Tables 8.3-2, 8.3-3).
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q43</div>
+On a 2/3 4KV vital-bus UV, all EDGs start and (SEC Mode II) sequence blackout loads. When an SI then occurs, <span class="hi-exam">SEC Mode III opens any running EDG output breaker, strips loads, recloses the EDG breaker, then sequences safeguards loads</span>. See [[SECs]], [[4KV]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q55</div>
+EDG loading after SI/SEC reset on a single SPT degradation: with all SECs already reset and EDGs running unloaded, a single bus sustained degraded voltage (e.g., <span class="val-alarm">3600V</span> on 24 SPT, &lt;95% relay setpoint) actuates that bus's SEC in Mode II*. The <span class="hi-exam">EDG output breaker closes onto the stripped 4KV vital bus and the SEC sequences BLACKOUT loads</span> — not Accident loads (Mode III requires an active SI signal, which has been reset).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q22</div>
+Following a Reactor Trip + SI coincident with LOOP at Unit 2 with <span class="hi-exam">EDG 2B unable to start</span>: 2A and 2C Vital Buses are powered from EDG 2A and EDG 2C. 15 minutes later, ECCS loads have been sequenced onto the running EDGs. <span class="hi-exam">22 RHR Pump (2B bus) is stopped; 22 SI Pump (2C bus) is running.</span> <span class="hi-trap">Pump number does NOT always match bus letter — 22 RHR is on B bus, 22 SI is on C bus.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q60</div>
+EDG paralleled to grid during surveillance (ST.DG-0003) + LOOP: <span class="hi-exam">2C EDG Output Breaker will OPEN then reclose</span>. Even though 2C EDG was already running and loaded, when the LOOP causes 2A and 2B buses to sense Instantaneous UV, all three SECs enter Mode II (Blackout Only). Mode II strips all loads and opens the EDG output breaker before reclosing it and sequencing blackout loads. <span class="hi-trap">Trap: the breaker does NOT remain closed — Mode II requires a full strip-and-reload cycle even for the already-running EDG.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 Sim-g</div>
+Start and load 2C EDG during LOPA per EOP-LOPA-1: all three EDGs initially unavailable (2A tripped, 2B bus locked out on Bus Differential, 2C was C/T). After 2C EDG restored from maintenance: start EDG, verify <span class="hi-exam">FREQUENCY >= 60 Hz and VOLTS >= 4.15 KV</span>, close output breaker via MIMIC PB sequence (select 2C DG 4KV BKR 2CDD → verify Yellow → close breaker). <span class="hi-exam">2C TROUBLE console alarm will be illuminated</span> due to loss of bus voltage — this is expected and should not delay breaker closure. Must start one SW pump (25 or 26) for EDG cooling and close <span class="hi-exam">23SW20</span> before loading C bus loads.
+</div>
+
+### EDG Lube Oil Setpoints
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q79</div>
+EDG Engine Lube Oil Header Low Pressure: <span class="hi-exam">alarm at <span class="val-alarm">60 psig</span>, trip at <span class="val-trip">40 psig</span></span>. Per S2.OP-AR.DG-0001, the EDG trips when lube oil header pressure FIRST lowers below 40 psig. <span class="hi-trap">Trap: the alarm actuates at 60 psig — 20 psi above the trip setpoint. The trip is at 40, not 60.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q83</div>
+EDG Lube Oil Hi Temp: local alarm at <span class="val-alarm">190 &deg;F</span>, EDG <span class="hi-exam">trips at <span class="val-trip">205 &deg;F</span></span>. Per 2B DG Alarm Response Manual, the EDG tripped when Lube Oil Temperature FIRST exceeded 205 &deg;F. <span class="hi-trap">Trap: 190 &deg;F is the alarm setpoint, not the trip setpoint. The trip occurs at 205 &deg;F.</span>
+</div>
+
+### Fuel Oil Day Tank — Transfer Pumps
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q59</div>
+DFOST design-basis capacity (Salem FSAR Section 9.5.4): "The <span class="hi-exam">combined volume of both 30000 gallon fuel oil storage tanks</span> contains sufficient fuel oil at the Technical Specification minimum volume to supply <span class="hi-exam">two diesel generators</span>, operating at the most limiting accident mitigation profile for LOCA with loss of offsite power, for approximately <span class="hi-exam">4.5 days</span>." <span class="hi-trap">It is the COMBINED volume of BOTH tanks (not EACH tank) supplying TWO EDGs (not three).</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q58</div>
+The Diesel Fuel Oil Storage Tanks are <span class="hi-exam">normally isolated from each other on the outlet side (2DF35 X-CONN VALVE closed); each DFOST is supplied by its own transfer pump</span>. With 21 DFOST emptied, the 21 (Regular) transfer pump still gets a start signal at 33" but has no fuel; as Day Tank level lowers further the <span class="hi-exam">22 (Backup) pump starts at 27" and supplies from 22 DFOST</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q57</div>
+EDG Fuel Oil Day Tank transfer pump operation: <span class="hi-exam">REGULAR pump start setpoint = 33"</span>, <span class="hi-exam">BACKUP pump start setpoint = 27"</span>. Once started by low level, <span class="hi-exam">both pumps continue to run until the FULL level (43") is reached</span> — the BACKUP does NOT turn off when level recovers above the normal start setpoint (33"). The Backup pump turns off at the same level as the Regular pump. With level recovering through 35" after both started, <span class="hi-exam">both REGULAR and BACKUP transfer pumps are still running</span>. <span class="hi-trap">Trap: candidates assume the Backup secures when normal level is restored — it does not. The exact backup-stop setpoint is not required knowledge, only that it is substantially higher than the Regular start setpoint and equal to the Regular stop level (44").</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q93</div>
+A tripped 21 Diesel Fuel Oil Transfer Pump breaker requires entering <span class="hi-exam">TS 3.8.1.1.b.2 (EDG Fuel Oil, Modes 1-4) because BOTH Fuel Oil Transfer pumps are required to be OPERABLE</span>. The controlling Tech Spec bases is the <span class="hi-exam">electric power sources bases — OPERABILITY of the AC electrical power sources ensures sufficient power for the safe shutdown of the plant and for the mitigation and control of accident conditions.</span> <span class="hi-trap">Trap: pairing the correct TS with the LCO 3.0.3 "timely unit shutdown" bases is wrong; and a single tripped CCW pump does NOT make both loops of CCW inoperable, so a TS 3.0.3 / CCW basis is also wrong.</span> See [[TS 3/4.8 — Electrical]].
+</div>
+
+## Design Features & Interlocks
+
+### Trip Functions
+
+Following an automatic start (by loss of normal auxiliary power or by an accident signal), the following automatic protective devices are in service during emergency startup and operation of the diesel generator (UFSAR §8.3.1.5.2):
+
+1. Shut down the diesel generator **and** trip the diesel generator breaker due to:
+   - Mechanical: <span class="hi-exam">engine overspeed</span>; <span class="hi-exam">lube oil pressure low</span>.
+   - Electrical: generator differential current relays.
+2. Trip the diesel generator breaker only due to: 4 kV bus differential (electrical).
+
+Following a **manual** start, the protective devices in service are broader (UFSAR §8.3.1.5.2):
+
+1. Shut down the diesel generator and trip its 4-kV circuit breaker due to — Mechanical: engine overspeed, lube oil pressure low, <span class="hi-exam">jacket water temperature high</span>, <span class="hi-exam">lube oil temperature high</span>, engine overcrank; Electrical: generator differential current relays, loss of generator excitation, diesel generator breaker failure protection.
+2. Trip the diesel generator breaker only due to — Electrical: <span class="hi-exam">overcurrent relay</span>, <span class="hi-exam">reverse power relay</span>.
+3. Prevent the Diesel Generator Circuit Breaker from closing only due to — the <span class="hi-exam">syncrocloser check relay</span>, which provides a permissive to allow the operator to synchronize the diesel generator with its vital bus. The permissive is enabled during a specific closing phase-angle range, slip limit (ΔF limit), and voltage range, and is blocked when out of these ranges and when the breaker control switch at the Diesel Generator Control Panel is intentionally held closed prior to achieving synchronization.
+
+Elimination of trips could cause damage to the diesel generators if a trip condition were to occur (UFSAR §8.3.1.5.2). The bypass of the emergency-start trips (so the DG remains running when needed) is described in the preserved callout below.
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q75</div>
+The EDG <span class="hi-exam">FIRE EMERGENCY BYPASS keylock switches remove SEC (Sequencer) control from the EDG</span>. They are directed to be placed in BYPASS only by <span class="hi-exam">AB.CR-0002 (Control Room Evacuation Due to Fire), Attachment 4, pages 15, 19, 22</span> — operated when the control room has been evacuated due to a fire and SEC operation may be aberrant. <span class="hi-trap">AB.FIRE-0001, AB.FIRE-0002, and AB.CR-0001 do NOT contain this step.</span>
+</div>
+
+### Starting Air System
+
+Each diesel generator unit has a dual air starting system (UFSAR §8.3.1.5). Air receiver No. 1 and No. 2 low-pressure conditions are alarmed locally (UFSAR §8.3.1.5.3). Sizing and start-attempt counts are detailed in the preserved callouts below.
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q58</div>
+Salem FSAR section 9.5.6: <span class="hi-exam">"Each receiver is sized to hold sufficient air for three cold diesel starts"</span>. Each EDG has 2 receivers (6 total starts). With one air receiver C/T (1 receiver available = 3 starts) and one starting air compressor C/T plus the operable compressor's power source isolated by LOOP (no recharge available), <span class="hi-exam">after the first start attempt has been used, the minimum number of remaining start attempts is 2</span>. <span class="hi-trap">Trap: 4 or 5 would assume both receivers were available; 3 would forget that one start has already been used by the initial trip.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q50</div>
+Each EDG has <span class="hi-exam">4 air start motors total</span>, supplied by <span class="hi-exam">2 starting air receivers</span>. Each receiver supplies <span class="hi-exam">2 air start motors (one train)</span>. Each receiver is capable of <span class="hi-exam">3 cold starts</span>. Two air start motors start the diesel in <span class="hi-exam">&lt; 10 seconds</span>. Just one air start motor can start the diesel within <span class="hi-exam">14 seconds</span>. Rated speed is <span class="hi-exam">900 RPM</span>. With one air receiver isolated, the remaining receiver and its 2 motors <span class="hi-exam">will start the EDG and achieve rated speed in &le; 13 seconds</span>. <span class="hi-trap">Each receiver supplies only 2 of the 4 air start motors — NOT all four. Loss of one receiver does not prevent EDG start.</span>
+</div>
+
+### Fire Protection
+
+The diesel generators are located in the Auxiliary Building at Elevation 100 feet, isolated from each other and from other equipment by fire walls and fire doors; a Manual Fire Protection System is installed for the protection of the CO2 diesel generator equipment, with separate detectors in each compartment so that only the area containing the fire is blanketed (UFSAR §8.3.1.5).
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q64</div>
+EDG room fire protection: each EDG room is protected by a <span class="hi-exam">CO2 fire suppression system</span>. Originally automatic, this system was permanently changed to <span class="hi-exam">MANUAL activation</span> under Salem DCP 80115237. On a fire detected in the EDG room, the operator <span class="hi-exam">exits the EDG room to the vestibule area and manually activates CO2</span>; there is a <span class="hi-exam">13 second delay</span> after activation before the system dumps. <span class="hi-trap">Trap: EDG rooms use CO2, NOT Halon. The 13-second delay is post-activation (allows personnel to clear the area), not pre-automatic discharge.</span>
+</div>
+
+## Interconnections & Loads
+
+The Diesel Generator Support Systems are described in the following UFSAR sections (UFSAR §8.3.1.5.4):
+
+- **Fuel Storage and Transfer System** — Section 9.5.4
+- **Jacket Water Cooling System** — Section 9.5.5
+- **Starting Air System** — Section 9.5.6
+- **Lube Oil System** — Section 9.5.7
+
+Cooling water for each diesel generator is supplied by the Service Water System (UFSAR §8.3.1.5). EDG room ventilation maintains the diesel area within its design temperature limit during operation (see the 2019 Q24 callout below). Loss-of-DC-power and DC control-voltage-failure conditions are alarmed locally and in the Control Room (UFSAR §8.3.1.5.3). Fire protection of the EDG compartments is provided by the Manual CO2 system.
 
 **Exam & operating coverage:**
 
@@ -45,21 +217,50 @@ Provide standby AC power to vital buses on loss of offsite power or upon receipt
 2A 4KV Vital Bus Differential effects on EDG output breaker and station-power infeed: <span class="hi-exam">a Bus Differential signal opens the EDG output breaker AND prevents the vital-bus station-power infeed breakers from closing</span>. With 4 SW Bay isolated (24/25/26 SW pumps unavailable) and 21/23 SW pumps powered from AA/BB/CC vital buses, the 23 SW pump trip plus the 2A 4KV bus de-energization results in <span class="hi-exam">no SW pumps running — total loss of all SW</span>. <span class="hi-trap">22 SW pump cannot auto-start on low SW header pressure because its bus has no power.</span>
 </div>
 
-## EDG Room Ventilation
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q64</div>
-EDG room fire protection: each EDG room is protected by a <span class="hi-exam">CO2 fire suppression system</span>. Originally automatic, this system was permanently changed to <span class="hi-exam">MANUAL activation</span> under Salem DCP 80115237. On a fire detected in the EDG room, the operator <span class="hi-exam">exits the EDG room to the vestibule area and manually activates CO2</span>; there is a <span class="hi-exam">13 second delay</span> after activation before the system dumps. <span class="hi-trap">Trap: EDG rooms use CO2, NOT Halon. The 13-second delay is post-activation (allows personnel to clear the area), not pre-automatic discharge.</span>
-</div>
-
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q24</div>
 During EDG operation, the Diesel Area Ventilation will ensure the EDG Room does not exceed a MAXIMUM of <span class="hi-exam"><span class="val-alarm">120 °F</span></span>. <span class="hi-trap">Trap: 90 °F is a plausible distractor but is NOT the correct limit. The actual ventilation design limit is 120 °F.</span>
 </div>
 
-## EDG Controls When Paralleled
+## Effects of Loss / Malfunction
+
+A loss of starting air, fuel oil supply, EDG room ventilation, DC power, or AC distribution can render a diesel generator inoperable or prevent its start; the local and Control Room alarms (DG Trouble common alarm and DG Urgent Trouble single alarm) annunciate the underlying conditions — jacket water temperature high, lube oil temperature high, engine lube oil header pressure low, air receiver pressure low, pre-lube pump failure, generator ground fault, and turbo air receivers low pressure (UFSAR §8.3.1.5.3). The station blackout / loss-of-all-AC scenarios and individual malfunction responses are captured in the preserved callouts below.
+
+**Exam & operating coverage:**
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #1</div>
+A large air leak on the 2C EDG starting air supply line lowers Air Start Tank pressure with both air start compressors running (OHA J-20, 2C DG URGENT). The CRS determines <span class="hi-exam">2C EDG is inoperable based on lower-than-required Air Start Tank pressure</span> and enters the appropriate Tech Spec. See [[2014 Scenario 1]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2012 #1</div>
+On the false-SI reactor trip the <span class="hi-exam">2C 4KV vital bus de-energizes on undervoltage and the 2C EDG carries the 2C bus</span> via its SEC. The 2C EDG continues to power the 2C bus through the LBLOCA response, including the transfer to cold leg recirculation in [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2014 #3</div>
+On a LOOP with 2A/2B EDGs running and the <span class="hi-exam">2C SEC failed to initiate</span>, the crew manually starts 2C EDG and shuts its output breaker to energize the 2C vital bus. Because the 2C SEC sent no breaker trip signals, equipment that was running on the 2C bus before the LOOP will restart when the EDG breaker is shut, so the crew <span class="hi-exam">opens the C-bus equipment breakers first to avoid stalling the 2C EDG</span>. CT#1 requires starting at least one SW pump so the running EDGs have cooling. See [[2014 Scenario 3]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2020 #1</div>
+2C EDG C/T for governor oil replacement and fuel rack lube (initial condition, 68 hours remaining in TSAS). Following LOOP: <span class="hi-exam">2A 4KV Vital Bus lost on Bus Differential protection, 2B EDG trips on overspeed (bent fuel rack linkage)</span>. All three 4KV Vital Buses de-energized — station blackout. Crew must identify 2C EDG as the only recovery path, have maintenance return it from C/T, start 2C EDG, close output breaker to energize 2C 4KV Vital Bus <span class="hi-exam">(CT-24)</span>, then immediately start one SW pump for EDG cooling <span class="hi-exam">(CT-25)</span>.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A5</div>
+Loss of ALL AC power to Unit 2 — General Emergency classification: <span class="hi-exam">2A EDG tripped on overspeed (bent fuel rack linkage, 5 hrs to repair), 2B 4KV Vital Bus damaged (ground fault), 2C EDG engine failure (piston failure)</span>. Combined with loss of both offsite sources (23 SPT in maintenance, 24 SPT internal fault), this constitutes <span class="hi-exam">EAL SG1.1 — Loss of AC Power at GE level</span>. AC power cannot be restored within the EAL timeframe.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 IP-i</div>
+SBO Diesel Control Air Compressor: backup control air source when all ECACs are unavailable during LOOP. Located in SBO Compressor Building (outside RCA, requires L-3 key). Discharge valves <span class="hi-exam">1CA1913, 1CA1886, and 2CA584</span> pressurize Control Air and Aux Building headers.
+</div>
+
+## Control-Room Operation
+
+Manual diesel generator control is provided at the local diesel generator control panels and in the Control Room (UFSAR §8.3.1.5.2). Local controls include the diesel generator "START-STOP" selector switch, "EMERGENCY STOP" pushbutton, key-operated "LOCK-OUT" switch, "AUTO-MANUAL" mode selector, breaker "TRIP–CLOSE" selector, generator voltage "RAISE–LOWER" switch, speed "RAISE–LOWER" switch, regulator "MANUAL–AUTO" switch, unit trip relay "RESET", fuel transfer pump "OFF–AUTO–RUN" and "REGULAR–BACKUP" selector switches, starting air compressor "OFF–AUTO–RUN" selector switch, and turbo air compressor "OFF–AUTO–RUN" selector switch. In the Control Room: diesel generator "START-STOP" pushbuttons and "CLOSE–TRIP" pushbuttons (UFSAR §8.3.1.5.2). Local instrumentation to facilitate control includes a generator ammeter, wattmeter, voltmeter, frequency meter, varmeter, field ammeter/voltmeter, synchroscope, synchronizing lights, synchroscope switch, 4-kV bus voltmeter, running-time meter, and RPM meter; Control Room indications are diesel generator voltage, frequency, watts, and amps (UFSAR §8.3.1.5.3).
 
 **Exam & operating coverage:**
 
@@ -124,130 +325,6 @@ PZR Backup Heater Group transfer to emergency power adds heater load to a vital 
 <strong>EDG-to-SPT swap during LOPA recovery (EOP-LOPA-1 Step 16):</strong> when off-site power has been restored after a loss of all AC power, S2.OP-SO.DG-0001 §5.8 directs swapping each running EDG-fed vital bus back to a Station Power Transformer source. Steps: confirm 2A EDG is NOT paralleled on 2A 4KV Vital Bus; place redundant equipment in service to support deenergizing 2A Vital Bus (e.g., 22 CCW pump); stop all 2A Vital Bus loads via Attachment 1; <span class="hi-exam">open 2A DIESEL GENERATOR BREAKER by one of three methods (open 2AD1AX6D locally, press 2A BREAKER OPEN PB on 2CC3, or place 2A-DF-GCP-3 to TRIP)</span>; <span class="hi-exam">allow Diesel to run unloaded for ≥ 3 minutes prior to stopping the EDG</span> (cooldown).
 </div>
 
-## Starting Air System
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q58</div>
-Salem FSAR section 9.5.6: <span class="hi-exam">"Each receiver is sized to hold sufficient air for three cold diesel starts"</span>. Each EDG has 2 receivers (6 total starts). With one air receiver C/T (1 receiver available = 3 starts) and one starting air compressor C/T plus the operable compressor's power source isolated by LOOP (no recharge available), <span class="hi-exam">after the first start attempt has been used, the minimum number of remaining start attempts is 2</span>. <span class="hi-trap">Trap: 4 or 5 would assume both receivers were available; 3 would forget that one start has already been used by the initial trip.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q50</div>
-Each EDG has <span class="hi-exam">4 air start motors total</span>, supplied by <span class="hi-exam">2 starting air receivers</span>. Each receiver supplies <span class="hi-exam">2 air start motors (one train)</span>. Each receiver is capable of <span class="hi-exam">3 cold starts</span>. Two air start motors start the diesel in <span class="hi-exam">&lt; 10 seconds</span>. Just one air start motor can start the diesel within <span class="hi-exam">14 seconds</span>. Rated speed is <span class="hi-exam">900 RPM</span>. With one air receiver isolated, the remaining receiver and its 2 motors <span class="hi-exam">will start the EDG and achieve rated speed in &le; 13 seconds</span>. <span class="hi-trap">Each receiver supplies only 2 of the 4 air start motors — NOT all four. Loss of one receiver does not prevent EDG start.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q48</div>
-EDG starting air compressor power supplies: <span class="hi-exam">both 21A and 21B starting air compressors for 2A EDG are powered from the same 2A 230V Vital Bus</span> (NOT from separate buses). Each EDG's two starting air compressors are supplied from its own associated 230V vital bus.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2014 #1</div>
-A large air leak on the 2C EDG starting air supply line lowers Air Start Tank pressure with both air start compressors running (OHA J-20, 2C DG URGENT). The CRS determines <span class="hi-exam">2C EDG is inoperable based on lower-than-required Air Start Tank pressure</span> and enters the appropriate Tech Spec. See [[2014 Scenario 1]].
-</div>
-
-## Fuel Oil Day Tank — Transfer Pumps
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q59</div>
-DFOST design-basis capacity (Salem FSAR Section 9.5.4): "The <span class="hi-exam">combined volume of both 30000 gallon fuel oil storage tanks</span> contains sufficient fuel oil at the Technical Specification minimum volume to supply <span class="hi-exam">two diesel generators</span>, operating at the most limiting accident mitigation profile for LOCA with loss of offsite power, for approximately <span class="hi-exam">4.5 days</span>." <span class="hi-trap">It is the COMBINED volume of BOTH tanks (not EACH tank) supplying TWO EDGs (not three).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q58</div>
-The Diesel Fuel Oil Storage Tanks are <span class="hi-exam">normally isolated from each other on the outlet side (2DF35 X-CONN VALVE closed); each DFOST is supplied by its own transfer pump</span>. With 21 DFOST emptied, the 21 (Regular) transfer pump still gets a start signal at 33" but has no fuel; as Day Tank level lowers further the <span class="hi-exam">22 (Backup) pump starts at 27" and supplies from 22 DFOST</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q57</div>
-EDG Fuel Oil Day Tank transfer pump operation: <span class="hi-exam">REGULAR pump start setpoint = 33"</span>, <span class="hi-exam">BACKUP pump start setpoint = 27"</span>. Once started by low level, <span class="hi-exam">both pumps continue to run until the FULL level (43") is reached</span> — the BACKUP does NOT turn off when level recovers above the normal start setpoint (33"). The Backup pump turns off at the same level as the Regular pump. With level recovering through 35" after both started, <span class="hi-exam">both REGULAR and BACKUP transfer pumps are still running</span>. <span class="hi-trap">Trap: candidates assume the Backup secures when normal level is restored — it does not. The exact backup-stop setpoint is not required knowledge, only that it is substantially higher than the Regular start setpoint and equal to the Regular stop level (44").</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q93</div>
-A tripped 21 Diesel Fuel Oil Transfer Pump breaker requires entering <span class="hi-exam">TS 3.8.1.1.b.2 (EDG Fuel Oil, Modes 1-4) because BOTH Fuel Oil Transfer pumps are required to be OPERABLE</span>. The controlling Tech Spec bases is the <span class="hi-exam">electric power sources bases — OPERABILITY of the AC electrical power sources ensures sufficient power for the safe shutdown of the plant and for the mitigation and control of accident conditions.</span> <span class="hi-trap">Trap: pairing the correct TS with the LCO 3.0.3 "timely unit shutdown" bases is wrong; and a single tripped CCW pump does NOT make both loops of CCW inoperable, so a TS 3.0.3 / CCW basis is also wrong.</span> See [[TS 3/4.8 — Electrical]].
-</div>
-
-## EDG Lube Oil Setpoints
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q79</div>
-EDG Engine Lube Oil Header Low Pressure: <span class="hi-exam">alarm at <span class="val-alarm">60 psig</span>, trip at <span class="val-trip">40 psig</span></span>. Per S2.OP-AR.DG-0001, the EDG trips when lube oil header pressure FIRST lowers below 40 psig. <span class="hi-trap">Trap: the alarm actuates at 60 psig — 20 psi above the trip setpoint. The trip is at 40, not 60.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q83</div>
-EDG Lube Oil Hi Temp: local alarm at <span class="val-alarm">190 &deg;F</span>, EDG <span class="hi-exam">trips at <span class="val-trip">205 &deg;F</span></span>. Per 2B DG Alarm Response Manual, the EDG tripped when Lube Oil Temperature FIRST exceeded 205 &deg;F. <span class="hi-trap">Trap: 190 &deg;F is the alarm setpoint, not the trip setpoint. The trip occurs at 205 &deg;F.</span>
-</div>
-
-## Diesel Generator Trip Functions
-
-DGs have protective trips that are bypassed during emergency start (SI or loss of voltage) to ensure the DG remains running when needed. Only certain trips remain active during emergency operation. (UFSAR 8.3.1.5.2)
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q75</div>
-The EDG <span class="hi-exam">FIRE EMERGENCY BYPASS keylock switches remove SEC (Sequencer) control from the EDG</span>. They are directed to be placed in BYPASS only by <span class="hi-exam">AB.CR-0002 (Control Room Evacuation Due to Fire), Attachment 4, pages 15, 19, 22</span> — operated when the control room has been evacuated due to a fire and SEC operation may be aberrant. <span class="hi-trap">AB.FIRE-0001, AB.FIRE-0002, and AB.CR-0001 do NOT contain this step.</span>
-</div>
-
-## Safeguards Loading Sequence
-
-On SI signal with loss of offsite power:
-1. DGs auto-start
-2. Vital bus loads shed
-3. DGs connect to vital buses
-4. Safeguards loads sequenced on in prescribed order and time delays
-(UFSAR 7.3, 8.3)
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q43</div>
-On a 2/3 4KV vital-bus UV, all EDGs start and (SEC Mode II) sequence blackout loads. When an SI then occurs, <span class="hi-exam">SEC Mode III opens any running EDG output breaker, strips loads, recloses the EDG breaker, then sequences safeguards loads</span>. See [[SECs]], [[4KV]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q55</div>
-EDG loading after SI/SEC reset on a single SPT degradation: with all SECs already reset and EDGs running unloaded, a single bus sustained degraded voltage (e.g., <span class="val-alarm">3600V</span> on 24 SPT, &lt;95% relay setpoint) actuates that bus's SEC in Mode II*. The <span class="hi-exam">EDG output breaker closes onto the stripped 4KV vital bus and the SEC sequences BLACKOUT loads</span> — not Accident loads (Mode III requires an active SI signal, which has been reset).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q22</div>
-Following a Reactor Trip + SI coincident with LOOP at Unit 2 with <span class="hi-exam">EDG 2B unable to start</span>: 2A and 2C Vital Buses are powered from EDG 2A and EDG 2C. 15 minutes later, ECCS loads have been sequenced onto the running EDGs. <span class="hi-exam">22 RHR Pump (2B bus) is stopped; 22 SI Pump (2C bus) is running.</span> <span class="hi-trap">Pump number does NOT always match bus letter — 22 RHR is on B bus, 22 SI is on C bus.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q60</div>
-EDG paralleled to grid during surveillance (ST.DG-0003) + LOOP: <span class="hi-exam">2C EDG Output Breaker will OPEN then reclose</span>. Even though 2C EDG was already running and loaded, when the LOOP causes 2A and 2B buses to sense Instantaneous UV, all three SECs enter Mode II (Blackout Only). Mode II strips all loads and opens the EDG output breaker before reclosing it and sequencing blackout loads. <span class="hi-trap">Trap: the breaker does NOT remain closed — Mode II requires a full strip-and-reload cycle even for the already-running EDG.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2019 Sim-g</div>
-Start and load 2C EDG during LOPA per EOP-LOPA-1: all three EDGs initially unavailable (2A tripped, 2B bus locked out on Bus Differential, 2C was C/T). After 2C EDG restored from maintenance: start EDG, verify <span class="hi-exam">FREQUENCY >= 60 Hz and VOLTS >= 4.15 KV</span>, close output breaker via MIMIC PB sequence (select 2C DG 4KV BKR 2CDD → verify Yellow → close breaker). <span class="hi-exam">2C TROUBLE console alarm will be illuminated</span> due to loss of bus voltage — this is expected and should not delay breaker closure. Must start one SW pump (25 or 26) for EDG cooling and close <span class="hi-exam">23SW20</span> before loading C bus loads.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2012 #1</div>
-On the false-SI reactor trip the <span class="hi-exam">2C 4KV vital bus de-energizes on undervoltage and the 2C EDG carries the 2C bus</span> via its SEC. The 2C EDG continues to power the 2C bus through the LBLOCA response, including the transfer to cold leg recirculation in [[EOP-LOCA-3 — Transfer to Cold Leg Recirculation]].
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2014 #3</div>
-On a LOOP with 2A/2B EDGs running and the <span class="hi-exam">2C SEC failed to initiate</span>, the crew manually starts 2C EDG and shuts its output breaker to energize the 2C vital bus. Because the 2C SEC sent no breaker trip signals, equipment that was running on the 2C bus before the LOOP will restart when the EDG breaker is shut, so the crew <span class="hi-exam">opens the C-bus equipment breakers first to avoid stalling the 2C EDG</span>. CT#1 requires starting at least one SW pump so the running EDGs have cooling. See [[2014 Scenario 3]].
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2020 #1</div>
-2C EDG C/T for governor oil replacement and fuel rack lube (initial condition, 68 hours remaining in TSAS). Following LOOP: <span class="hi-exam">2A 4KV Vital Bus lost on Bus Differential protection, 2B EDG trips on overspeed (bent fuel rack linkage)</span>. All three 4KV Vital Buses de-energized — station blackout. Crew must identify 2C EDG as the only recovery path, have maintenance return it from C/T, start 2C EDG, close output breaker to energize 2C 4KV Vital Bus <span class="hi-exam">(CT-24)</span>, then immediately start one SW pump for EDG cooling <span class="hi-exam">(CT-25)</span>.
-</div>
-
 ## Tech Spec LCOs
 
 - **[[TS 3/4.8 — Electrical]]** — TS 3.8.1.1 requires 3 DGs OPERABLE in Modes 1–4; TS 3.8.1.2 requires 2 DGs OPERABLE in Modes 5–6
@@ -307,18 +384,6 @@ EDG operability with degraded SW: 1A EDG fails surveillance and declared INOPERA
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2022 #3</div>
 2A EDG running unloaded for maintenance run (initial condition). 2A EDG emergency trips during scenario. CRS evaluates <span class="hi-exam">TS 3.8.1.1 action b.1 (1 hour line surveillance)</span> and <span class="hi-exam">action b.4 (72 hours to restore EDG to Operable status)</span>. No impact to plant operations.
-</div>
-
-### Station Blackout / Loss of All AC
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 SRO-A5</div>
-Loss of ALL AC power to Unit 2 — General Emergency classification: <span class="hi-exam">2A EDG tripped on overspeed (bent fuel rack linkage, 5 hrs to repair), 2B 4KV Vital Bus damaged (ground fault), 2C EDG engine failure (piston failure)</span>. Combined with loss of both offsite sources (23 SPT in maintenance, 24 SPT internal fault), this constitutes <span class="hi-exam">EAL SG1.1 — Loss of AC Power at GE level</span>. AC power cannot be restored within the EAL timeframe.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 IP-i</div>
-SBO Diesel Control Air Compressor: backup control air source when all ECACs are unavailable during LOOP. Located in SBO Compressor Building (outside RCA, requires L-3 key). Discharge valves <span class="hi-exam">1CA1913, 1CA1886, and 2CA584</span> pressurize Control Air and Aux Building headers.
 </div>
 
 ## Connections
