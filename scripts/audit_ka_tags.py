@@ -99,7 +99,10 @@ def normalize_ka(name):
 
 def fmt_rating(v):
     """Catalog importance string -> display: '4' or '4.0' -> '4', '3.7' -> '3.7'."""
-    f = float(v)
+    try:
+        f = float(v)
+    except (TypeError, ValueError):
+        return str(v)
     return str(int(f)) if f == int(f) else f"{f:g}"
 
 # ---- extraction --------------------------------------------------------------
