@@ -15,14 +15,16 @@ Provides direction for performing prompt recovery of a Steam Generator Feed Pump
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q76</div>
-Cited as a possible recovery action in EOP-FRHS-1 (Loss of Secondary Heat Sink) — performing SGFP Prompt Recovery IAW S2.OP-SO.CN-0007 to restore main feed flow. Per Q76, the FRHS-1 transition is INCORRECT when the crew is in EOP-TRIP-2 step 3 with all 11–13 AFW pumps unable to feed (Pressure Override circuit malfunctioning, keeping AF21 valves shut) — the immediate action is to <span class="hi-exam">establish AFW flow IAW EOP-TRIP-2</span> (start AFW pumps, defeat Pressure Override) before considering FRHS-1 / SGFP Prompt Recovery. FRHS-1 entry on SPDS alone (without primary 1E indication verification) is NOT authorized.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q52</div>
 When relatching a SGFP during Rapid SGFP Recovery, <span class="hi-exam">the pump speed will not automatically rise to minimum (1100 rpm idle) if speed was &gt;160 rpm when the latch pushbutton was depressed</span>. See [[Feed & Condensate]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q76</div>
+Cited as a possible recovery action in EOP-FRHS-1 (Loss of Secondary Heat Sink) — performing SGFP Prompt Recovery IAW S2.OP-SO.CN-0007 to restore main feed flow. Per Q76, the FRHS-1 transition is INCORRECT when the crew is in EOP-TRIP-2 step 3 with all 11–13 AFW pumps unable to feed (Pressure Override circuit malfunctioning, keeping AF21 valves shut) — the immediate action is to <span class="hi-exam">establish AFW flow IAW EOP-TRIP-2</span> (start AFW pumps, defeat Pressure Override) before considering FRHS-1 / SGFP Prompt Recovery. FRHS-1 entry on SPDS alone (without primary 1E indication verification) is NOT authorized.
 </div>
 
 ## Connections

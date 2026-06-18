@@ -15,10 +15,7 @@ Provides guidance for transitioning the plant from Cold Shutdown (Mode 5) to Hot
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q07</div>
-During RCS heat up, 2RH1 and 2RH2 (RHR Suction Isolation Valves) must be <span class="hi-exam">manually closed</span> to prevent exceeding the design pressure of the RHR suction piping (<span class="val-trip">450 psig</span>). These valves do NOT auto-close on high RCS pressure — they are only interlocked to <span class="hi-exam">prevent opening</span> until PT-403 and PT-405 are less than 375 psig.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q41</div>
@@ -28,6 +25,11 @@ SI block sequence during the return-to-service heatup: the general Auto SI Block
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q86</div>
 IOP-2 <span class="hi-exam">P&amp;L 3.8</span> states that performance of S2.OP-ST.RC-0008(Q), RCS Water Inventory Balance, required by T/S 4.4.7.2.1.d, is <span class="hi-exam">NOT required to enter Mode 4</span> — the surveillance is not required to be completed until <span class="hi-exam">12 hours after establishment of steady state operation</span>. So with the balance overdue (>72 hr) the crew may continue to Mode 4 without performing it; the provisions of Tech Spec 4.0.4 are not applicable, and 4.0.3 does not apply (it covers missed/overdue surveillances). <span class="hi">P&amp;L 3.15: a routine balance to satisfy 4.4.7.2.1.d is normally performed over a 2-hour duration; P&amp;L 3.16: for other reasons the interval is at SM/CRS discretion.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q07</div>
+During RCS heat up, 2RH1 and 2RH2 (RHR Suction Isolation Valves) must be <span class="hi-exam">manually closed</span> to prevent exceeding the design pressure of the RHR suction piping (<span class="val-trip">450 psig</span>). These valves do NOT auto-close on high RCS pressure — they are only interlocked to <span class="hi-exam">prevent opening</span> until PT-403 and PT-405 are less than 375 psig.
 </div>
 
 ## Connections

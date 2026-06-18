@@ -15,14 +15,16 @@ Provides direction for controlling letdown heat exchanger outlet temperature, in
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q29</div>
-Auto-divert at <span class="hi-exam">136 degrees F</span> (2CV21 diverts to VCT). Letdown HX outlet temperature limit of <span class="hi-exam">140 degrees F</span> to prevent resin damage.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q32</div>
 2CV21 (Letdown Demin Bypass Valve) repositions to bypass the CVCS Mixed Bed Demineralizers at a Letdown HX outlet temperature of <span class="hi-exam">136°F</span>. <span class="hi-trap">120°F is the Letdown HX outlet Hi Temp Alarm; 127°F is the Letdown HX design cooldown outlet; 130°F is nominal charging temp entering the Regen HX.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q29</div>
+Auto-divert at <span class="hi-exam">136 degrees F</span> (2CV21 diverts to VCT). Letdown HX outlet temperature limit of <span class="hi-exam">140 degrees F</span> to prevent resin damage.
 </div>
 
 ## Connections

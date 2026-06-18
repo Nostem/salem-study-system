@@ -15,10 +15,9 @@ Provides requirements and directions for fuel handling operations, including sup
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q95</div>
-If BLDG AIR D/P LO alarm is invalid and will not clear, <span class="hi-exam">the local indicator may be used to continuously monitor FHB D/P</span> — fuel moves may resume with continuous local monitoring. <span class="hi-trap">Fuel moves are NOT prohibited when the console alarm is inoperable, as long as compensatory monitoring is in place.</span>
-</div>
+**Exam & operating coverage:**
+
+### FHB Operations & Ventilation
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q47</div>
@@ -31,8 +30,20 @@ Procedure purpose: "Provide instructions to ensure all required systems AND equi
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q94</div>
-Per Precautions and Limitations 2.2: <span class="hi-exam">a Reactor Engineer OR a qualified SRO must be assigned for Spent Fuel Pool manipulations</span>. The assigned SRO supervises from the area — <span class="hi-trap">NOT specifically from the crane trolley, NOT contingent on SFP boron concentration, NOT located in the Fuel Handling Building, and NOT optional when a Qualified Reactor Engineer is present (the requirement is RE OR SRO, satisfied by either).</span>
+<div class="callout-label">Exam — 2023 Q95</div>
+If BLDG AIR D/P LO alarm is invalid and will not clear, <span class="hi-exam">the local indicator may be used to continuously monitor FHB D/P</span> — fuel moves may resume with continuous local monitoring. <span class="hi-trap">Fuel moves are NOT prohibited when the console alarm is inoperable, as long as compensatory monitoring is in place.</span>
+</div>
+
+### SFP Cooling & Equipment Availability
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q90</div>
+Per <span class="hi-exam">P&amp;L 3.4, transfer of spent fuel into the SFP is suspended until BOTH SFP cooling pumps are OPERABLE</span>. With one SFP cooling pump tripped on motor overload and not restartable, the failed pump <span class="hi-exam">must be restored to operable status</span> before the remaining fuel bundles can be transferred into the pool. <span class="hi-trap">Verifying normal/emergency power supply availability of the in-service pump does not satisfy P&amp;L 3.4 — both pumps must be OPERABLE.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q49</div>
+During SFP Manipulations, a loss of SFP cooling (both SFP pumps unavailable, SFP heating up) leads to <span class="hi-exam">spent-fuel off-gassing and increased FHB charcoal filter radiation</span> as SFP temperature rises toward 150°F. See [[Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]].
 </div>
 
 <div class="callout callout-jpm">
@@ -45,9 +56,11 @@ SRO determines which scheduled shift activities may proceed during ongoing irrad
 The blocking constraint that defeats new fuel delivery: <span class="hi-trap">opening the FHB Truck Bay Door for new fuel receipt would breach FHB ventilation boundary required for the SFP fuel-movement dose analysis.</span> 22 SW pump packing, 2A EDG tagout, and 21 Chiller oil change all PASS the equipment-availability test (TSAS 3.7.4 / 3.8.1.2 / 3.7.10 respectively).
 </div>
 
+### SRO / Supervision Requirements
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q49</div>
-During SFP Manipulations, a loss of SFP cooling (both SFP pumps unavailable, SFP heating up) leads to <span class="hi-exam">spent-fuel off-gassing and increased FHB charcoal filter radiation</span> as SFP temperature rises toward 150°F. See [[Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]].
+<div class="callout-label">Exam — 2012 Q95</div>
+Precautions and Limitations, Section 2.2: a <span class="hi-exam">Reactor Engineer OR a qualified Senior Reactor Operator must be assigned for Spent Fuel Pool manipulations</span> (so the SRO is NOT required to observe if a Qualified Reactor Engineer is present). <span class="hi-trap">Even when a SRO is assigned, they supervise from the area, not specifically on the crane trolley. SFP boron concentration (&gt;2000 ppm) is not a prerequisite that removes the supervision requirement.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -56,13 +69,8 @@ P&amp;L 2.2: spent fuel manipulations require assigning <span class="hi-exam">Re
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q90</div>
-Per <span class="hi-exam">P&amp;L 3.4, transfer of spent fuel into the SFP is suspended until BOTH SFP cooling pumps are OPERABLE</span>. With one SFP cooling pump tripped on motor overload and not restartable, the failed pump <span class="hi-exam">must be restored to operable status</span> before the remaining fuel bundles can be transferred into the pool. <span class="hi-trap">Verifying normal/emergency power supply availability of the in-service pump does not satisfy P&amp;L 3.4 — both pumps must be OPERABLE.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q95</div>
-Precautions and Limitations, Section 2.2: a <span class="hi-exam">Reactor Engineer OR a qualified Senior Reactor Operator must be assigned for Spent Fuel Pool manipulations</span> (so the SRO is NOT required to observe if a Qualified Reactor Engineer is present). <span class="hi-trap">Even when a SRO is assigned, they supervise from the area, not specifically on the crane trolley. SFP boron concentration (&gt;2000 ppm) is not a prerequisite that removes the supervision requirement.</span>
+<div class="callout-label">Exam — 2016 Q94</div>
+Per Precautions and Limitations 2.2: <span class="hi-exam">a Reactor Engineer OR a qualified SRO must be assigned for Spent Fuel Pool manipulations</span>. The assigned SRO supervises from the area — <span class="hi-trap">NOT specifically from the crane trolley, NOT contingent on SFP boron concentration, NOT located in the Fuel Handling Building, and NOT optional when a Qualified Reactor Engineer is present (the requirement is RE OR SRO, satisfied by either).</span>
 </div>
 
 ## Connections

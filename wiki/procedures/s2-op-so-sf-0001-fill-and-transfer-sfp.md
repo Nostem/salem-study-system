@@ -14,14 +14,11 @@ Provides direction for filling and transferring water to/from the Unit 2 Spent F
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q33</div>
-Per S2.OP-SO.SF-0001, the following water sources are allowed for <span class="hi-exam">ROUTINE makeup</span> to the Spent Fuel Pool: <span class="hi-exam">1) Demineralized Water System, 2) Primary Water Storage Tank, 3) CVCS Holdup Tanks, 4) Refueling Water Storage Tank</span>. The <span class="hi-trap">Fresh Water and Fire Protection Water Storage Tank is NOT an allowed ROUTINE makeup source</span>.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q92</div>
-Per S2.OP-AB.SF-0001, during loss of SFP cooling with the pool boiling: <span class="hi-exam">S2.OP-SO.SF-0001 (Fill and Transfer) is an acceptable alternative to S2.OP-SO.SF-0006 (Emergency Fill)</span> for raising Spent Fuel Pool level.
+<div class="callout-label">Exam — 2014 Q50</div>
+The preferred source to establish or restore SFP boron concentration (≥ <span class="hi-exam">2127 ppm</span>, Unit 2 Cycle 21 COLR) if it falls below required is the <span class="hi-exam">CVCS Holdup Tanks</span>. <span class="hi-trap">Demineralized water is the normal SFP makeup source but has NO boron, so it cannot RAISE boron concentration; the RWST is not the preferred boron makeup source.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -30,8 +27,13 @@ SFP makeup ordered preference list per <span class="hi-exam">Prerequisite 2.3</s
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q50</div>
-The preferred source to establish or restore SFP boron concentration (≥ <span class="hi-exam">2127 ppm</span>, Unit 2 Cycle 21 COLR) if it falls below required is the <span class="hi-exam">CVCS Holdup Tanks</span>. <span class="hi-trap">Demineralized water is the normal SFP makeup source but has NO boron, so it cannot RAISE boron concentration; the RWST is not the preferred boron makeup source.</span>
+<div class="callout-label">Exam — 2018 Q33</div>
+Per S2.OP-SO.SF-0001, the following water sources are allowed for <span class="hi-exam">ROUTINE makeup</span> to the Spent Fuel Pool: <span class="hi-exam">1) Demineralized Water System, 2) Primary Water Storage Tank, 3) CVCS Holdup Tanks, 4) Refueling Water Storage Tank</span>. The <span class="hi-trap">Fresh Water and Fire Protection Water Storage Tank is NOT an allowed ROUTINE makeup source</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q92</div>
+Per S2.OP-AB.SF-0001, during loss of SFP cooling with the pool boiling: <span class="hi-exam">S2.OP-SO.SF-0001 (Fill and Transfer) is an acceptable alternative to S2.OP-SO.SF-0006 (Emergency Fill)</span> for raising Spent Fuel Pool level.
 </div>
 
 ## Connections

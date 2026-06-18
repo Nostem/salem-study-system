@@ -14,14 +14,16 @@ Provides direction for performing Reactor Protection System surveillance testing
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q39</div>
-Referenced in 2022 NRC exam for RPS surveillance testing knowledge.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q41</div>
 RPS-0005 includes Placing a Containment Pressure Channel in the Tripped Condition. <span class="hi-exam">Containment Pressure Channel I only feeds the Containment Hi-Hi (Spray actuation) circuits — NOT the Containment Hi (SI) circuits.</span> The Spray bistables are energized-to-actuate, so removing Channel I from service removes it from the Spray 2/3 coincidence (so a remaining single channel failing high cannot cause an inadvertent Spray actuation). SI coincidence remains 2/3 on Channels I, II, III. With Channel I tripped, a single failed-high Channel IV produces <span class="hi-exam">no actuation — only channel-related alarms</span>. See [[Containment Spray]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q39</div>
+Referenced in 2022 NRC exam for RPS surveillance testing knowledge.
 </div>
 
 ## Connections

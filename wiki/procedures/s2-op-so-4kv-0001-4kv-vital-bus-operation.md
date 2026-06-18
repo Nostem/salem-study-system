@@ -24,6 +24,8 @@ System operating procedure for normal and recovery operation of the 4KV Vital Bu
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2016 Sim-g</div>
 <strong>Section 5.3.6 — Energize 2A 4KV Vital Bus from 24 SPT</strong> (after EDG-to-SPT swap per S2.OP-SO.DG-0001 Section 5.8):<br>

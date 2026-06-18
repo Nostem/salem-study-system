@@ -31,14 +31,11 @@ Step-by-step determination of heat loads to isolate:
 - Step 1.G: Sum isolation column values for Total Isolation value.
 - Step 1.H: Verify Total Isolation (Table B) exceeds Total Heat Load Isolation (Step 1.C).
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2018 SRO-A1</div>
-Identical scenario to 2022 SRO-A1. Both chillers tripped, inlet water temp 85.1°F (83.6°F + 1.5°F uncertainty), EACS out of service, Maintenance Mode: <span class="hi-exam">Table A yields 902.8 kBTU/HR required isolation</span>. SM directs ECAC NOT isolated. Selected loads (21/22/23 PACU, Secondary Lab, Primary Lab, Counting Room, PASS) total <span class="hi-exam">906.6 kBTU/HR</span> — just exceeds the 902.8 kBTU/HR requirement. T/S 3.7.10 action 'b' entered at 1600 for both chillers inoperable.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 SRO-A1</div>
-With both chillers inoperable, inlet water temp 85.1°F (83.6°F + 1.5°F uncertainty), EACS out of service, and Maintenance Mode: <span class="hi-exam">Table A yields 902.8 kBTU/HR required isolation</span>. ECAC kept available per SM direction. Selected loads (21/22/23 PACU, Secondary Lab, Primary Lab, Counting Room, PASS) total <span class="hi-exam">906.6 kBTU/HR</span> — just exceeds the 902.8 kBTU/HR requirement.
+<div class="callout-label">JPM — 2014 SRO-A1-1</div>
+Non-essential heat-load isolation per Attachment 2 after both chillers trip (TS 3.7.10.a Action b.1). Highest inlet water temp 73.5°F + 1.5°F instrument uncertainty = <span class="hi-exam">75.0°F</span>, sitting at a Table A category boundary. Per the Att 2 NOTE, because outside air temperature is rising (81°F → 99°F) the SRO must conservatively use the next-higher inlet-temperature category (&gt; 75°F), giving a Total Heat Load Isolation of <span class="hi-exam">999.1 kBTU/hr</span>; then select any Table B combination of non-essential loads exceeding that total.
 </div>
 
 <div class="callout callout-jpm">
@@ -47,8 +44,13 @@ SRO determination during fuel movement: 21 Chiller compressor oil change MAY be 
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 SRO-A1-1</div>
-Non-essential heat-load isolation per Attachment 2 after both chillers trip (TS 3.7.10.a Action b.1). Highest inlet water temp 73.5°F + 1.5°F instrument uncertainty = <span class="hi-exam">75.0°F</span>, sitting at a Table A category boundary. Per the Att 2 NOTE, because outside air temperature is rising (81°F → 99°F) the SRO must conservatively use the next-higher inlet-temperature category (&gt; 75°F), giving a Total Heat Load Isolation of <span class="hi-exam">999.1 kBTU/hr</span>; then select any Table B combination of non-essential loads exceeding that total.
+<div class="callout-label">JPM — 2018 SRO-A1</div>
+Identical scenario to 2022 SRO-A1. Both chillers tripped, inlet water temp 85.1°F (83.6°F + 1.5°F uncertainty), EACS out of service, Maintenance Mode: <span class="hi-exam">Table A yields 902.8 kBTU/HR required isolation</span>. SM directs ECAC NOT isolated. Selected loads (21/22/23 PACU, Secondary Lab, Primary Lab, Counting Room, PASS) total <span class="hi-exam">906.6 kBTU/HR</span> — just exceeds the 902.8 kBTU/HR requirement. T/S 3.7.10 action 'b' entered at 1600 for both chillers inoperable.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A1</div>
+With both chillers inoperable, inlet water temp 85.1°F (83.6°F + 1.5°F uncertainty), EACS out of service, and Maintenance Mode: <span class="hi-exam">Table A yields 902.8 kBTU/HR required isolation</span>. ECAC kept available per SM direction. Selected loads (21/22/23 PACU, Secondary Lab, Primary Lab, Counting Room, PASS) total <span class="hi-exam">906.6 kBTU/HR</span> — just exceeds the 902.8 kBTU/HR requirement.
 </div>
 
 ## Connections

@@ -15,6 +15,8 @@ Provides guidance for monitoring and determining auxiliary feedwater system back
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q18</div>
 Per P&L 3.1, this procedure shall be performed <span class="hi-exam">30 to 60 minutes</span> after an AFW Pump is shutdown in Modes 1-3. Per SOER 84-3, backleakage of hot feedwater has disabled AFW pumps due to <span class="hi-exam">steam binding (vapor binding)</span>. <span class="hi-trap">Trap: the procedure is NOT required to be performed immediately — the 30-60 minute window allows time for backleakage to develop and become detectable. Backward rotation is a concern for RCPs (which have Anti-Reverse-Rotation Devices), not AFW pumps — the AFW failure mode is vapor binding.</span>

@@ -15,6 +15,8 @@ Operating procedure for starting, stopping, and aligning the Service Water pumps
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q61</div>
 Normal at-power SW lineup has <span class="hi-exam">one SW pump in AUTO and the rest in manual</span>. On a single 4KV vital-bus UV / Bus Differential lockout, only that bus loads in blackout sequencing; the SW pumps on the lost bus stop, header pressure drops, and the AUTO pump starts. <span class="hi-trap">Unit 1 SW pump power supplies are reversed from Unit 2 (Unit 2: 21/22 on A bus, 25/26 on C bus).</span>

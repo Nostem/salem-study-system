@@ -20,14 +20,16 @@ Performs inservice testing (IST) of containment ventilation isolation valves per
 - Step 5.4.3.C: Valves in REQUIRED EVALUATION RANGE — immediately retest OR declare inoperable
 - Step 5.4.3.D: Valves in REQUIRED ACTION RANGE — immediately declare inoperable and evaluate Tech Specs
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 SRO-A2</div>
-Surveillance test review catches two errors: <span class="hi-exam">2VC13 stroke time is in the REQUIRED ACTION RANGE</span> (not SAT) — declare inoperable, enter TS LCO 3.6.3 (4 hours to restore, close 2VC14, isolate penetration, or begin shutdown). <span class="hi-exam">2VC12 stroke time is in the REQUIRED EVALUATION RANGE</span> (not SAT) — must immediately retest with results evaluated by IST Implementation Engineer, or declare inoperable.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2022 SRO-A3</div>
 Surveillance review catches <span class="hi-exam">2VC5 stroke time of 2.83 seconds in the REQUIRED ACTION RANGE (> 2.0 seconds)</span> — immediately declare 2VC5 inoperable, enter TS LCO 3.6.3. Actions: close and deactivate companion valve 2VC6 within 4 hours (action 1.b), OR isolate penetration within 4 hours (action 1.c), OR Hot Standby in 6 hours and Cold Shutdown in 30 hours (action 1.d).
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2023 SRO-A2</div>
+Surveillance test review catches two errors: <span class="hi-exam">2VC13 stroke time is in the REQUIRED ACTION RANGE</span> (not SAT) — declare inoperable, enter TS LCO 3.6.3 (4 hours to restore, close 2VC14, isolate penetration, or begin shutdown). <span class="hi-exam">2VC12 stroke time is in the REQUIRED EVALUATION RANGE</span> (not SAT) — must immediately retest with results evaluated by IST Implementation Engineer, or declare inoperable.
 </div>
 
 ## Connections

@@ -18,6 +18,8 @@ Local leak rate test of the containment personnel air lock (100' elevation airlo
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q96</div>
 If the containment 100' elevation airlock LLRT is UNSAT IAW S2.OP-ST.CAN-0004, the airlock is declared inoperable. <span class="hi-exam">TS 3.6.1.3 provides a 24-hour action time</span> to restore the air lock — therefore an UNSAT airlock LLRT does NOT drive a same-shift Hot Standby requirement when the current time is 1200 (24 h ≫ 7 h to 1900). <span class="hi-trap">Trap: easy to confuse with the 1-hour containment integrity action of TS 3.6.1.1 — the airlock LCO carries its own longer completion time.</span>

@@ -18,6 +18,8 @@ Reactor engineering reference document containing reactivity tables, AFD target 
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q70</div>
 Per Rev. 18 of Tables, the <span class="hi-exam">100% AFD Target is -1.5 with a target band of +6, -9</span>. The target is <span class="hi-exam">adjusted for Rx power</span> — at 87% power Target = -1.3 (band -9 = -10.3, AFD of -9.1 is in band); at 66% power Target = -0.99 (band -9 = -9.99, AFD of -10.1 is OUT of band). <span class="hi-trap">The -9 of the Target Band is NOT the actual AFD limit (COLR limit). Using -9 as the limit is a distracter trap that places AFD as out-of-band one minute too early.</span>

@@ -15,6 +15,8 @@ Provides direction for recording control room logs during Modes 1-4, including c
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q56</div>
 For Control Rod Counter channel checks, <span class="hi-exam">either the Group Demand Counter or Plant Computer will satisfy the surveillance for Group 1 only</span>. Only the Group 1 Demand Steps input into the Plant Computer. TS 3.1.3.2.1.b bases states: "either the control console group 1 demand step counter or the plant computer 'bank step' display is sufficient to comply with this specification for group 1 rod position."

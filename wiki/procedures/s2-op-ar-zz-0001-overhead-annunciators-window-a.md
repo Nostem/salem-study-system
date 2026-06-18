@@ -14,19 +14,11 @@ Alarm response procedure for Unit 2 overhead annunciator panel Window A, coverin
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q51</div>
-OHA A-6 (RMS HI RAD OR TRBL): When 2R1B-1 (Control Room Intake Radiation Monitor Channel 1) goes into ALARM, both units' CAV systems should automatically actuate to AP (Accident Pressurize) Mode. If automatic actuation fails, <span class="hi-exam">manually initiate AP Mode from Unit 2</span> (the unit with the high radiation signal). <span class="hi-trap">Manually actuating from Unit 1 would open Unit 2 intake dampers, which is the wrong response since Unit 2 is the unit with the potential radiological release.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q25</div>
-OHA A-6 (RMS HI RAD OR TRBL) due to 2R41D Plant Vent Effluent: during SI termination (EOP-TRIP-3), this alarm in combination with <span class="hi-exam">C-34 (22 RHR SUMP OVRFLO) and RHR sump pump starts indicates a LOCA outside containment</span>. Leads to EOP-TRIP-3 CAS → EOP-LOCA-1 → EOP-LOCA-6.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q36</div>
-OHA A-6 (RMS HI RAD OR TRBL) due to 2R9 (Fuel Storage Area Monitor) alarm: <span class="hi-exam">both FHB Exhaust Fans receive auto start signal, 21 HEPA ONLY Filter Unit isolates, HEPA 22 PLUS CHAR automatically aligns</span>.
+<div class="callout-label">Exam — 2012 Q64</div>
+<span class="hi-exam">OHA A-7, FIRE PROT FIRE</span> annunciates when an early-warning Smoke/Fire Detector zone actuates (along with the zone lamp and group "FIRE" lamp on the 2RP5 Fire Protection Panel and the coded fire alarm over the PA). The alarm reflects a fire-detector actuation, NOT an active suppression system actuation. See [[Fire Protection]].
 </div>
 
 <div class="callout callout-exam">
@@ -40,8 +32,18 @@ OHA A-34 (SSPS TRN A TRBL) alarms on loss of 1 of 2 45VDC power supplies to the 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q64</div>
-<span class="hi-exam">OHA A-7, FIRE PROT FIRE</span> annunciates when an early-warning Smoke/Fire Detector zone actuates (along with the zone lamp and group "FIRE" lamp on the 2RP5 Fire Protection Panel and the coded fire alarm over the PA). The alarm reflects a fire-detector actuation, NOT an active suppression system actuation. See [[Fire Protection]].
+<div class="callout-label">Exam — 2019 Q36</div>
+OHA A-6 (RMS HI RAD OR TRBL) due to 2R9 (Fuel Storage Area Monitor) alarm: <span class="hi-exam">both FHB Exhaust Fans receive auto start signal, 21 HEPA ONLY Filter Unit isolates, HEPA 22 PLUS CHAR automatically aligns</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q25</div>
+OHA A-6 (RMS HI RAD OR TRBL) due to 2R41D Plant Vent Effluent: during SI termination (EOP-TRIP-3), this alarm in combination with <span class="hi-exam">C-34 (22 RHR SUMP OVRFLO) and RHR sump pump starts indicates a LOCA outside containment</span>. Leads to EOP-TRIP-3 CAS → EOP-LOCA-1 → EOP-LOCA-6.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q51</div>
+OHA A-6 (RMS HI RAD OR TRBL): When 2R1B-1 (Control Room Intake Radiation Monitor Channel 1) goes into ALARM, both units' CAV systems should automatically actuate to AP (Accident Pressurize) Mode. If automatic actuation fails, <span class="hi-exam">manually initiate AP Mode from Unit 2</span> (the unit with the high radiation signal). <span class="hi-trap">Manually actuating from Unit 1 would open Unit 2 intake dampers, which is the wrong response since Unit 2 is the unit with the potential radiological release.</span>
 </div>
 
 <div class="callout callout-jpm">

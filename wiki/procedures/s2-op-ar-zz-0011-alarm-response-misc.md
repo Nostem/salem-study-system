@@ -14,14 +14,16 @@ Provides operator response actions for miscellaneous control room alarms, includ
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q95</div>
-BLDG AIR D/P LO alarm response: if movement of irradiated fuel assemblies is in progress, <span class="hi-exam">first action is to suspend movement of irradiated fuel assemblies in the FHB</span>. Then validate the alarm by checking the local indicator. <span class="hi-trap">Suspending fuel moves is the FIRST action — validating the alarm comes AFTER, not before.</span> If the alarm is invalid and will not clear, the local indicator may be used to continuously monitor FHB D/P per S2.OP-IO.ZZ-0010.
+<div class="callout-label">Exam — 2015 Q86</div>
+On a SURGE TANK LEVEL HI-LO (2CC1) alarm with rising level: <span class="hi-exam">stop WHUT processing and locally drain the CC Surge Tank to keep level &lt;100%</span> (also directed by AB.CC-0001). See [[CCW]], [[AB.CC-0001 — Loss of Component Cooling Water]].
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 Sim-d</div>
-Page 138 — RCP Standpipe Level Low alarm: causes include <span class="hi-exam">low seal flow across #2 seal or excessive #3 seal flow</span>. Key decision at Step 3.1: if standpipe low AND seal water leakoff flow alarm together → go to AB.RCP-0001. If standpipe low only → fill standpipe: open 2WR80, open affected standpipe supply valve (21WR62 for 21 RCP). When hi level alarm, close all.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q35</div>
+Page 92 — CCW header pressure low / CCW pump auto-start: normal alignment is <span class="hi-exam">2 CCW pumps running in MANUAL with one CCW pump in AUTO and stopped</span>. The AUTO-aligned standby pump <span class="hi-exam">auto-starts when 21 or 22 CCW header pressure lowers to <span class="val-alarm">70 psig</span></span>. There is no breaker-position-based interlock for CCW pump auto-start. (Source: this procedure rev 60)
 </div>
 
 <div class="callout callout-exam">
@@ -35,15 +37,13 @@ CCW pump status after SEC Mode III (Blackout + SI) loading: all CCW pumps are <s
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q35</div>
-Page 92 — CCW header pressure low / CCW pump auto-start: normal alignment is <span class="hi-exam">2 CCW pumps running in MANUAL with one CCW pump in AUTO and stopped</span>. The AUTO-aligned standby pump <span class="hi-exam">auto-starts when 21 or 22 CCW header pressure lowers to <span class="val-alarm">70 psig</span></span>. There is no breaker-position-based interlock for CCW pump auto-start. (Source: this procedure rev 60)
+<div class="callout-label">Exam — 2023 Q95</div>
+BLDG AIR D/P LO alarm response: if movement of irradiated fuel assemblies is in progress, <span class="hi-exam">first action is to suspend movement of irradiated fuel assemblies in the FHB</span>. Then validate the alarm by checking the local indicator. <span class="hi-trap">Suspending fuel moves is the FIRST action — validating the alarm comes AFTER, not before.</span> If the alarm is invalid and will not clear, the local indicator may be used to continuously monitor FHB D/P per S2.OP-IO.ZZ-0010.
 </div>
 
-### Page 13 — Rod Drive Vent Fans AIR FLOW LO
-
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2019 Sim-a</div>
-AIR FLOW LO alarm with SEQUENCE COMPLETE extinguished: cause is fan discharge pressure &lt; 2.0 INWC. CAUTION: operating with less than two Rod Drive Vent Fans in service could <span class="hi-exam">degrade the Rod Drive Coils</span> — operability determination required. Step 3.2: if SEQUENCE COMPLETE extinguished, <span class="hi-exam">immediately SWAP to standby Rod Drive Vent Fan</span> (STOP affected fan, START standby). Step 3.2.D: if <span class="hi-exam">NO Rod Drive Vent Fans in operation, TRIP the Reactor</span> and GO TO 2-EOP-TRIP-1. <span class="hi-trap">In the alternate path scenario, the standby fan initially starts successfully but then both remaining fans trip — step 3.2.D (previously N/A) becomes applicable and the reactor must be tripped.</span>
+<div class="callout-label">JPM — 2015 Sim-g</div>
+2CC1 alarm response for a CCW pump trip: on <span class="hi-exam">21 (22) CC HDR PRESSURE LO</span>, the automatic action is to start the standby CC pump; ENSURE the CC Pump is RUNNING or START the standby CC Pump. <span class="hi-exam">IF the low pressure alarm remains, THEN GO TO S2.OP-AB.CC-0001 (Component Cooling system Abnormality)</span>. In this JPM the standby (23) CCW pump fails to auto-start and cannot be manually started, leading to a total loss of CCW. See [[CCW]], [[AB.CC-0001 — Loss of Component Cooling Water]].
 </div>
 
 <div class="callout callout-jpm">
@@ -51,14 +51,18 @@ AIR FLOW LO alarm with SEQUENCE COMPLETE extinguished: cause is fan discharge pr
 Pages 118-128 — <span class="hi-exam">COMPR 2 TROUBLE alarm response (Loss of Control Air entry path)</span>: ARP Step 3.1 — IF SAC 2 trips, THEN: A. Coordinate (as necessary) with Unit 1; B. Ensure operating OR start at least one SAC IAW SC.OP-SO.SA-0001, Station Air System Operation. ARP Step 3.2 — <span class="hi-exam">IF AT ANY TIME Station Air pressure cannot be maintained ≥100 psig, THEN GO TO S2.OP-AB.CA-0001 (Loss of Control Air)</span>. <span class="hi-trap">Note: The #1 and #3 Compressor Trouble alarms on 2CC1 do NOT have audible or flash capabilities (this procedure page 120) — diagnosis of #1 SAC trip relies on the plant page announcement, not the local annunciator.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q86</div>
-On a SURGE TANK LEVEL HI-LO (2CC1) alarm with rising level: <span class="hi-exam">stop WHUT processing and locally drain the CC Surge Tank to keep level &lt;100%</span> (also directed by AB.CC-0001). See [[CCW]], [[AB.CC-0001 — Loss of Component Cooling Water]].
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-d</div>
+Page 138 — RCP Standpipe Level Low alarm: causes include <span class="hi-exam">low seal flow across #2 seal or excessive #3 seal flow</span>. Key decision at Step 3.1: if standpipe low AND seal water leakoff flow alarm together → go to AB.RCP-0001. If standpipe low only → fill standpipe: open 2WR80, open affected standpipe supply valve (21WR62 for 21 RCP). When hi level alarm, close all.
 </div>
 
+### Page 13 — Rod Drive Vent Fans AIR FLOW LO
+
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 Sim-g</div>
-2CC1 alarm response for a CCW pump trip: on <span class="hi-exam">21 (22) CC HDR PRESSURE LO</span>, the automatic action is to start the standby CC pump; ENSURE the CC Pump is RUNNING or START the standby CC Pump. <span class="hi-exam">IF the low pressure alarm remains, THEN GO TO S2.OP-AB.CC-0001 (Component Cooling system Abnormality)</span>. In this JPM the standby (23) CCW pump fails to auto-start and cannot be manually started, leading to a total loss of CCW. See [[CCW]], [[AB.CC-0001 — Loss of Component Cooling Water]].
+<div class="callout-label">JPM — 2019 Sim-a</div>
+AIR FLOW LO alarm with SEQUENCE COMPLETE extinguished: cause is fan discharge pressure &lt; 2.0 INWC. CAUTION: operating with less than two Rod Drive Vent Fans in service could <span class="hi-exam">degrade the Rod Drive Coils</span> — operability determination required. Step 3.2: if SEQUENCE COMPLETE extinguished, <span class="hi-exam">immediately SWAP to standby Rod Drive Vent Fan</span> (STOP affected fan, START standby). Step 3.2.D: if <span class="hi-exam">NO Rod Drive Vent Fans in operation, TRIP the Reactor</span> and GO TO 2-EOP-TRIP-1. <span class="hi-trap">In the alternate path scenario, the standby fan initially starts successfully but then both remaining fans trip — step 3.2.D (previously N/A) becomes applicable and the reactor must be tripped.</span>
 </div>
 
 ## Connections

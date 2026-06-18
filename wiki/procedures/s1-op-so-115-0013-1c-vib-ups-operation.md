@@ -18,6 +18,8 @@ Governs operation of the 1C Vital Instrument Bus (VIB) Uninterruptible Power Sup
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q57</div>
 A <span class="hi-exam">latched transfer of a VIB inverter takes 2/3 of one cycle (11.1 milli-seconds)</span> — not enough time for control room instrumentation to respond, so instrumentation powered from the bus is <span class="hi-exam">unaffected by the transfer</span>. The VIB and its powered instrumentation <span class="hi-exam">remain OPERABLE as long as the inverter is powering the Vital Bus</span> (P&L 3.5). The transfer does not require declaring instrumentation inoperable, and indication is not lost. <span class="hi-trap">1D VIB is powered from the 1B bus — the C and D VIB inverters are NOT powered from a common 230 VAC source.</span>

@@ -23,6 +23,8 @@ The CRS must verify:
 
 The release path goes from the CVCS Monitor Tank through the selected CCHX to the CW system, where circulator (CW pump) flow provides dilution before discharge.
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 SRO-A4</div>
 Release path selection with degraded equipment: Unit 2 circulators all OOS, 22 CCHX removed and drained, 12A Circulator C/T. Candidate selects <span class="hi-exam">21 CCHX to 12A AND/OR 12B CW Pumps</span> as the release flow path for 12 CVCS Monitor Tank release. Chemistry required minimum dilution flow of <span class="hi-exam">100000 gpm</span>.
