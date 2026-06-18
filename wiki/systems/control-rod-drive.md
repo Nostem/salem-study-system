@@ -9,9 +9,68 @@ aliases:
 
 # Control Rod Drive
 
-## Function
+## Function & Design Basis
 
 The Control Rod Drive Mechanism (CRDM) provides the means for inserting, withdrawing, and holding control rod assemblies. Rod motion is controlled by energizing and de-energizing the lift coil, moveable gripper coil, and stationary gripper coil in a programmed sequence. Rod control interlocks (rod stops) prevent unsafe rod withdrawal conditions. (UFSAR 7.7)
+
+The CRDM is the primary means of fast, fine reactivity control: its primary function is to insert or withdraw rod control clusters within the core to control average core temperature and to shut down the reactor. (UFSAR §4.2.3.2.2) The rod cluster control assemblies (RCCAs) are the only kinetic (moving) parts in the reactor and are the most effective reactivity control components, providing reactivity control for shutdown, for reactivity changes due to coolant temperature changes in the power range, for reactivity changes associated with the power coefficient of reactivity, and for reactivity changes due to void formation. (UFSAR §4.2.3.2) Slow, long-term reactivity changes (fuel depletion and fission-product buildup, cold-to-hot zero-power reactivity, xenon/samarium transients, burnable-absorber depletion) are controlled by soluble boron rather than by rods. (UFSAR §4.2.3.2)
+
+The CRDMs are Class I components designed to meet the stress requirements for normal operating conditions of Section III of the ASME Boiler and Pressure Vessel Code, and a dynamic seismic analysis confirms the mechanism can meet ASME allowable stresses and can trip when subjected to a seismic disturbance. (UFSAR §4.2.3.1.4) The control rods provide adequate shutdown margin, defined as the amount by which the core would be subcritical at hot shutdown if all RCCAs are tripped, assuming the highest-worth assembly remains fully withdrawn and assuming no change in xenon or boron concentration. (UFSAR §4.2.3.2.1)
+
+### CRDM Operational Requirements (Design Basis)
+
+The basic operational requirements imposed on the CRDM (UFSAR §4.2.3.1.4) — these are the design-basis numbers behind the rod-control values used in the exam callouts below:
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Step length | <span class="hi-exam">5/8 inch</span> | UFSAR §4.2.3.1.4, §4.2.3.3.2 |
+| Total rod travel | 150 inches | UFSAR §4.2.3.1.4 |
+| Maximum load (incl. drive rod weight) | 360 pounds | UFSAR §4.2.3.1.4, §4.2.3.2.2 |
+| Maximum step rate | <span class="val-normal">45 inches/minute (72 steps/minute)</span> | UFSAR §4.2.3.1.4, §4.2.3.2.2 |
+| Trip delay (start of free fall after power interruption) | <span class="val-trip">less than 150 ms</span> | UFSAR §4.2.3.1.4 |
+| Design life | 40 years with normal refurbishment | UFSAR §4.2.3.1.4 |
+| Design travel excursions | 28000 complete travel excursions (13 × 10⁶ steps) with normal refurbishment | UFSAR §4.2.3.1.4 |
+
+The 72 steps/minute (45 inches/minute) figure is the CRDM *mechanical* design ceiling, set by the magnetic-jack step rate; the actual commanded rod speeds by selector-switch position (AUTO 8–72 SPM, Shutdown Banks 64 SPM, Control Banks 48 SPM) are set by the rod-control electronics in UFSAR §7.7 and are captured in the speed callouts below.
+
+## Key Components
+
+The reactivity control components are subdivided into permanent devices used to control or monitor the core and a temporary component. (UFSAR §4.2.3.1.3) The permanent components are the rod cluster control assemblies, control rod drive mechanisms, neutron source assemblies, and thimble plug assemblies; the temporary component is the burnable absorber assembly. (UFSAR §4.2.3.1.3)
+
+- **Rod Cluster Control Assembly (RCCA)** — a group of individual neutron absorber rods fastened at the top to a common spider assembly. (UFSAR §4.2.3.2.1) The absorber material is single-piece silver-indium-cadmium (Ag-In-Cd), essentially "black" to thermal neutrons, sealed in cold-worked stainless-steel tubing with welded Type 308L end plugs; bottom plugs are bullet-nosed to reduce hydraulic drag during trip and guide into the dashpot. (UFSAR §4.2.3.2.1) RCCAs are divided into control groups (compensate for reactivity changes from power/temperature variations) and shutdown groups (provide shutdown margin). (UFSAR §4.2.3.2.1) The absorber material temperature is not to exceed its melting temperature of 1470°F for Ag-In-Cd. (UFSAR §4.2.3.1.3)
+- **Spider assembly** — a one-piece machined CF3M cast 316 stainless-steel central hub with radial vanes from which the absorber rods are suspended; an internal coil spring absorbs the impact energy at the end of a trip insertion. (UFSAR §4.2.3.2.1)
+- **Control Rod Drive Mechanism (CRDM)** — a magnetically operated jack located on the dome of the reactor vessel, coupled to a rod control cluster over the full length of the control rods. (UFSAR §4.2.3.2.2) Four subassemblies: the **pressure vessel** (latch housing + rod travel housing), the **coil stack assembly** (three operating coils — stationary gripper, moveable gripper, lift), the **latch assembly** (guide tube, stationary/moveable pole pieces, moveable-gripper latch and stationary-gripper latch), and the **drive rod assembly** (flexible coupling, drive rod with 5/8-inch grooves, disconnect button, disconnect rod, locking button). (UFSAR §4.2.3.2.2) The coil stack slides over the latch housing and rests on its base with no mechanical attachment. (UFSAR §4.2.3.2.2)
+- **Rod Position Indicator (RPI) assembly** — slides over the CRDM rod travel housing and detects drive-rod position by means of <span class="hi-exam">42 discrete coils</span> that magnetically sense the entry and presence of the ferro-magnetic drive rod over the normal length of travel. (UFSAR §4.2.3.2.2, §4.2.3.3.2)
+- **Neutron source assemblies** — provide a base neutron level to monitor core multiplication when subcritical; primary source rods (Californium) for initial loading/startup and secondary source rods (antimony-beryllium, Sb-Be; ¹²⁴Sb 60.2-day half-life) for subsequent operation, sized to provide greater than 1 cps on the source range monitors in Mode 3 prior to approach to critical. (UFSAR §4.2.3.2.1)
+- **Burnable absorber assemblies** — static temporary reactivity control; either borosilicate-glass (PYREX) or Wet Annular Burnable Absorber (WABA, Al₂O₃–B₄C) rods attached to a holddown assembly that bears against the upper core plate. (UFSAR §4.2.3.2.1)
+- **Thimble plug assemblies** — optional flat base plate with short rods that limit bypass flow through guide thimbles not occupied by control, source, or burnable-absorber rods. (UFSAR §4.2.3.2.1)
+
+## CRDM Magnetic-Jack Mechanism & Stepping Sequence
+
+The CRDM is a magnetically operated jack: an arrangement of three electromagnets energized in a controlled sequence by a power cycler to insert or withdraw rod control clusters in discrete steps. (UFSAR §4.2.3.2.2) The three operating coils are the **stationary gripper coil (A)**, the **moveable gripper coil (B)**, and the **lift coil (C)**; energizing the coils moves the pole pieces and latches that engage 5/8-inch grooves in the drive rod. (UFSAR §4.2.3.2.2) Withdrawal of the rod control cluster is accomplished by magnetic forces while insertion is by gravity. (UFSAR §4.2.3.2.2)
+
+During most of plant operation the CRDMs hold the control rods withdrawn in a static position; in the holding mode <span class="hi-exam">only the stationary gripper coil (A) is energized</span>, and the drive rod and attached control rod hang suspended from the three latches. (UFSAR §4.2.3.3 — Holding and Tripping of the Control Rods) The pressure vessel is designed for 650°F / 2500 psia reactor coolant, and the three operating coils are designed to operate at 392°F with forced air cooling required to maintain that temperature. (UFSAR §4.2.3.2.2) This forced-air-cooling requirement is the design basis for the CRD vent fans covered below.
+
+**Withdrawal step sequence** (one step = one cycle = 5/8-inch travel; repeated up to 72 steps/minute, giving a withdrawal rate up to 45 inches/minute) (UFSAR §4.2.3.2.2):
+
+1. Moveable gripper coil (B) ON — moveable gripper latches swing into a drive-rod groove (1/16-inch axial clearance).
+2. Stationary gripper coil (A) OFF — load transfers to the moveable gripper latches; stationary latches swing out (gravity moves the assembly down 1/16 inch).
+3. Lift coil (C) ON — the 5/8-inch gap closes; drive rod raises one step length (5/8 inch).
+4. Stationary gripper coil (A) ON — stationary latches re-engage and lift the drive rod 1/16 inch, transferring the load back to the stationary gripper.
+5. Moveable gripper coil (B) OFF — moveable latches swing out of the groove.
+6. Lift coil (C) OFF — moveable gripper latches drop 5/8 inch adjacent to the next groove.
+
+**Insertion** uses the same sequence except the timing of lift coil (C) ON/OFF is changed to permit lowering the control rod; insertion is by gravity and likewise proceeds up to 72 steps/minute for a 45-inch/minute insertion rate. (UFSAR §4.2.3.2.2)
+
+**Tripping:** the CRDM is a trip design — tripping can occur during any part of the power-cycler sequencing if power to the coils is interrupted. (UFSAR §4.2.3.2.2) If power to the stationary gripper coil is cut off, the combined weight of the drive rod assembly and RCCA moves the latches out of the groove and the control rod <span class="hi-exam">falls by gravity into the core</span>; after release the drive rod falls freely until the control rods enter the buffer (dashpot) section of their thimble tubes. (UFSAR §4.2.3.3 — Holding and Tripping of the Control Rods) The CRDM is designed for a trip delay of less than 150 ms — free fall of the drive rod assembly begins less than 150 ms after power interruption regardless of the holding or stepping action in progress, with any load and coolant temperatures of 100°F to 550°F. (UFSAR §4.2.3.1.4) The single-coil-energized holding logic is the mechanistic basis for the gripper-coil failure modes in the exam callouts below — a loss of stationary-gripper power (e.g., a blown fuse with no movement demand) releases the rod.
+
+## CRDM Materials, Trip Time & Inspection (Design Evaluation)
+
+All postulated failures of the drive rod assemblies, by fracture or uncoupling, lead to the fail-safe condition: any portion remaining coupled falls with and is guided by the RCCA, always resulting in a reactivity decrease. (UFSAR §4.2.3.3.2) Magnetic flux is carried by 400-series (Type 410) stainless steel; magnetic pole pieces are Type 410 stainless steel, cobalt-based alloys (Haynes 25) are used for pins and latch tips, latch arm tips are Stellite-clad for wear, springs are Inconel-X, and Type 304 stainless steel is used for pressure-containing parts. (UFSAR §4.2.3.2.2, §4.2.3.3.2) The coils are wound with double glass-insulated copper wire on molded Dow Corning 302 bobbins, vacuum-impregnated with silicon varnish and wrapped with mica sheet, producing a coil capable of sustained operation at 200°C. (UFSAR §4.2.3.3.2)
+
+CRDM internals subjected to wear will withstand a minimum of 3000000 steps without refurbishment as confirmed by life tests. (UFSAR §4.2.3.3.2) The CRDMs are designed to meet a radiation requirement of 10 Rads/Hr (1.753 × 10⁶ Rads in 20 years). (UFSAR §4.2.3.3.2)
+
+**Trip-time design requirement and testing** (UFSAR §4.2.3.4.2): the trip time achieved by the CRDMs meets the design requirement of <span class="val-trip">2.7 seconds</span> from the beginning of decay of stationary gripper coil voltage to dashpot entry; a Technical Specification ensures the trip-time requirement is met. Partial-movement checks are performed on every RCCA at least every 31 days during reactor critical operation, and periodic drop tests of the full-length RCCAs are performed at each refueling shutdown to confirm continued ability to meet trip-time requirements; the acceptable drop time of each assembly is not greater than 2.7 seconds at full flow and operating temperature. (UFSAR §4.2.3.4.2) Prototype testing demonstrated control-rod free-fall against 125 percent of nominal flow of less than 1.5 seconds to the dashpot over about 10 feet of travel. (UFSAR §4.2.3.4.2) This 2.7-second design value is the basis for the rod-drop-time limit in [[TS 3/4.1.3 — Movable Control Assemblies]]. If an RCCA cannot be moved by its mechanism, boron-concentration adjustments ensure adequate shutdown margin following a trip; the number of inoperable RCCAs is limited to one. (UFSAR §4.2.3.4.1, §4.2.3.4.2)
 
 ## Rod Control Interlocks (Rod Stops)
 
