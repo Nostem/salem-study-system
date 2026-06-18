@@ -127,6 +127,13 @@ git commit -m "build(#72): add openpyxl for K/A catalog conversion"
 
 - [ ] **Step 1: Write the converter**
 
+> **Correction (applied during execution, commit `0fbee23`):** the code block below was the
+> initial draft. It collapsed vendor-specific APE/EPE entries (e.g. `BA01`, `BE02`) onto bare
+> keys and lost data. The **authoritative converter** derives `system_number`/`ka_full` from
+> the unique parenthetical prefixing each active statement via a `KA_TAIL` regex + `derive_ka()`
+> (replacing the old `make_ka_full`). The committed `scripts/build_ka_catalog.py` is the source
+> of truth; see Step 2/3 expected values below.
+
 Create `scripts/build_ka_catalog.py` with EXACTLY this content:
 
 ```python
@@ -269,7 +276,12 @@ if __name__ == "__main__":
 - [ ] **Step 2: Run the converter**
 
 Run: `python3 scripts/build_ka_catalog.py`
-Expected: a line like `rows=9421 json_keys=<N> collisions=<small>` and exit 0. (Row count should be ~9421; collisions should be 0 or a small number — if large, investigate before continuing.)
+Expected: `rows=9421 json_keys=9016 collisions=405` and exit 0. (`collisions` counts duplicate
+rows — 405 rows over 76 keys; all are byte-identical duplicate entries, NOT distinct K/As
+losing data. The key is derived from the unique parenthetical that prefixes each active
+statement, e.g. `(022AA1.04)`, `(BA01AA1.04)` — this is what makes vendor-specific APE/EPE
+entries distinct. If any colliding key has *differing* content, that is a real bug — see the
+check in Step 3.)
 
 - [ ] **Step 3: Spot-check the output**
 
@@ -284,10 +296,19 @@ print("003 A1.01:", d["003 A1.01"]["category"], d["003 A1.01"]["statement"][:40]
 cats = {}
 for v in d.values(): cats[v["category"]] = cats.get(v["category"],0)+1
 print("categories:", cats)
+# critical: no colliding key may have DIFFERING content (that would be lost data)
+import csv as _csv
+from collections import defaultdict as _dd
+by = _dd(list)
+for r in _csv.DictReader(open("data/ka-catalog/pwr-ka-catalog.csv", encoding="utf-8")):
+    by[r["ka_full"]].append(r)
+bad = sum(1 for v in by.values() if len(v) > 1 and len({(r["statement"], r["ro_imp"], r["sro_imp"]) for r in v}) > 1)
+print("colliding keys with DIFFERING content (must be 0):", bad)
+for k in ["G2.1.1", "003 A1.01", "022 AA1.04", "BA01 AA1.04", "BE02 EA1.04a"]:
+    print(k, "->", "OK" if k in d else "MISSING")
 EOF
-grep -m2 'G2.1.25' data/ka-catalog/pwr-ka-catalog.csv
 ```
-Expected: `G2.1.1` is `generic` with RO `3.8` / SRO `4.2` and statement starting "CONDUCT OF OPERATIONS"; `003 A1.01` is `system` mentioning "RCP vibration"; categories include `system`, `ape`, `epe`, `generic` (and possibly `other`).
+Expected: `G2.1.1` is `generic` with RO `3.8` / SRO `4.2` and statement starting "CONDUCT OF OPERATIONS"; `003 A1.01` is `system` mentioning "RCP vibration"; categories include `system`, `ape`, `epe`, `generic` (and `other`); **`colliding keys with DIFFERING content (must be 0): 0`**; all five spot-check keys `OK` (the vendor-specific `BA01`/`BE02` keys confirm the parenthetical-based derivation works).
 
 - [ ] **Step 4: Commit converter only (generated files committed in Task 4)**
 
