@@ -37,6 +37,18 @@ The standardized form for initial notification to offsite agencies (NRC, state, 
 
 The event description must match the Table 1 barrier assessment terminology from EP-SA-325-102. For an SGTR, the correct description is "Loss of the Reactor Coolant System Barrier."
 
+**Exam & operating coverage:**
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A5</div>
+General Emergency classification and ICMF completion (time-critical, <span class="hi-exam">15/15 minutes</span>): Large Break LOCA with ECCS in cold leg recirc, all three fission product barriers lost. <span class="hi-exam">GE — 13 points: RB1.L or RB2.L (5 pts), FB2.L (5 pts), CB2.L or CB3.L (3 pts)</span>. Key indicators: 2R44A/B at <span class="hi-exam">305 R/Hr</span> (fuel damage), 21SJ44 failed to close (unisolable containment sump leak), 2R41D at <span class="hi-exam">5.12E+6 &micro;Ci/sec</span> (release in progress). Uses EP-SA-325-F4 (Attachment 4). Escalated from existing ALERT.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A5</div>
+Emergency classification and ICMF completion (time-critical, <span class="hi-exam">15/15 minutes</span>): loss of all AC power to Unit 2 (3 EDGs + 2 SPTs lost) classifies as <span class="hi-exam">GENERAL EMERGENCY per EAL SG1.1 (Section S — System Malfunction, S1 Loss of AC Power)</span>. ICMF Attachment 4 (EP-SA-325-F4) Sections I-V. PAR determination via Appendix 1: not based on loss of 3 fission product barriers, not hostile action — select <span class="hi-exam">Default PAR (No RPSA): Evacuate 0-5 miles, Monitor & Prepare 5-10 miles</span>.
+</div>
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 SRO-A4</div>
 ICMF peer check (time-critical, <span class="hi-exam">15-minute limit</span>): three errors to identify — (1) declaration time incorrect (should be 1100), (2) event description wrong (should be <span class="hi-exam">"Loss of the Reactor Coolant System Barrier"</span> per Table 1 of EP-SA-325-102 for SGTR), and (3) release IS in progress because the <span class="hi-exam">TD AFW pump takes steam from 21 and 23 SGs (23 SG is ruptured)</span> and no actions have been taken to close 23MS45 — with no radiation monitor on this release path, it is an unmonitored release.
@@ -46,9 +58,11 @@ ICMF peer check (time-critical, <span class="hi-exam">15-minute limit</span>): t
 
 Requirements and forms for State and Local emergency notifications following declaration of an emergency classification. The Primary Communicator Log (EP-SA-111-F6) is the companion form used for tracking notification contacts.
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2019 RO-A4</div>
-Primary Communicator notifications during an ALERT (Unit 2 manual trip + SI for RCS leak). <span class="hi-exam">Time-critical: 15 minutes</span> to complete NJ and DE notifications. Alternate path: Delaware State Police cannot be reached on Primary (NETS 5406), Secondary (302-659-2341), or NAWAS backup — operator must recognize notification is <span class="hi-exam">NOT SUCCESSFULLY COMPLETED</span> and contact Delaware counties (New Castle County NETS 5408, Kent County NETS 5409) directly. Must read <span class="hi-exam">sections I thru V of the ICMF form</span> correctly to each contacted organization.
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q85</div>
+Notification timing: the State notifications (DE/NJ) are made within <span class="hi-trap">15 minutes</span>, while the <span class="hi-exam">NRC notification (and subsequent notification on a classification upgrade) is required within 60 minutes</span>. A subsequent NRC notification is triggered by a more-severe E-plan classification (e.g., SAE escalating to General Emergency when containment radiation exceeds 2000 R/hr).
 </div>
 
 <div class="callout callout-exam">
@@ -59,6 +73,11 @@ Primary Communicator notifications during an ALERT (Unit 2 manual trip + SI for 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q92</div>
 NRC reportability for spurious RPS actuation: when PZR pressure channel failures cause a reactor trip and SI (but actual RCS pressure was normal), the <span class="hi-exam">SI is NOT valid and NOT reportable</span> (RCS pressure was not actually low). The <span class="hi-exam">RPS actuation IS reportable under RAL 11.3.2 as a 4-hour report</span>. RAL 11.3.1 (4-hour, valid ECCS actuation) does not apply. RAL 11.3.3 (8-hour, ESF system listed in Technical Bases) does not apply because the event is already captured under RAL 11.3.2.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2019 RO-A4</div>
+Primary Communicator notifications during an ALERT (Unit 2 manual trip + SI for RCS leak). <span class="hi-exam">Time-critical: 15 minutes</span> to complete NJ and DE notifications. Alternate path: Delaware State Police cannot be reached on Primary (NETS 5406), Secondary (302-659-2341), or NAWAS backup — operator must recognize notification is <span class="hi-exam">NOT SUCCESSFULLY COMPLETED</span> and contact Delaware counties (New Castle County NETS 5408, Kent County NETS 5409) directly. Must read <span class="hi-exam">sections I thru V of the ICMF form</span> correctly to each contacted organization.
 </div>
 
 ## Form F8 — Secondary Communicator Log
@@ -73,19 +92,11 @@ Provides the Secondary Communicator with a structured log and checklist for emer
 - Confirm YES to connect, verify Status changes to "Transmitting Data"
 - Verify "Messages Sent" value increasing from zero
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q75</div>
 On the FIRST emergency classification (an ALERT), the Secondary Communicator (per Secondary Communicator Log, EP-SA-111-F8) is required to <span class="hi-exam">activate ERDS within 60 minutes of the ALERT declaration</span>. <span class="hi-trap">Trap: ERDS is NOT a 15-minute action (15 minutes is the offsite-agency notification time). The OSB Form is updated every 15 minutes if requested by the TSC (not every 60 minutes); the MEES Form is updated after a significant plant change or classification change (not every 15 minutes).</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2023 RO-A4</div>
-ERDS activation: must select the correct unit's <span class="hi-exam">CONNECT button on the appropriate Salem 1 or Salem 2 ERDS Link Control and Status Display Screen</span>. Selecting the wrong unit is a critical error. Verify successful activation by observing Status = "Transmitting Data" and "Messages Sent" value increasing above zero.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2018 RO-A4</div>
-ERDS activation during an ALERT (Unit 2 manual trip + SI for RCS leak): same discriminating step — must select <span class="hi-exam">Salem 2 CONNECT button</span>. Procedure referenced as EP-SA-111-F8 (Rev 6). Steps 1.2.b through 1.2.b.7 are all critical. Work Control NCO designated as Secondary Communicator performs activation within 60 minutes of emergency declaration.
 </div>
 
 <div class="callout callout-jpm">
@@ -94,28 +105,27 @@ Full Secondary Communicator Log during an ALERT (EP-SA-111-F8, Attachment 8). Ac
 </div>
 
 <div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 RO-A4</div>
+ERDS activation during an ALERT (Unit 2 manual trip + SI for RCS leak): same discriminating step — must select <span class="hi-exam">Salem 2 CONNECT button</span>. Procedure referenced as EP-SA-111-F8 (Rev 6). Steps 1.2.b through 1.2.b.7 are all critical. Work Control NCO designated as Secondary Communicator performs activation within 60 minutes of emergency declaration.
+</div>
+
+<div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 RO-A4</div>
 ERDS activation during an ALERT (Unit 2 manual trip + SI for RCS leak): same discriminating step as 2023 — must select <span class="hi-exam">Salem 2 CONNECT button</span>. Procedure EP-SA-325-F8 (R0). Steps 1.2.b.1 through 1.2.b.6 are all critical. Work Control NCO designated as Secondary Communicator performs activation within 60 minutes of emergency declaration.
 </div>
 
 <div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 SRO-A5</div>
-General Emergency classification and ICMF completion (time-critical, <span class="hi-exam">15/15 minutes</span>): Large Break LOCA with ECCS in cold leg recirc, all three fission product barriers lost. <span class="hi-exam">GE — 13 points: RB1.L or RB2.L (5 pts), FB2.L (5 pts), CB2.L or CB3.L (3 pts)</span>. Key indicators: 2R44A/B at <span class="hi-exam">305 R/Hr</span> (fuel damage), 21SJ44 failed to close (unisolable containment sump leak), 2R41D at <span class="hi-exam">5.12E+6 &micro;Ci/sec</span> (release in progress). Uses EP-SA-325-F4 (Attachment 4). Escalated from existing ALERT.
+<div class="callout-label">JPM — 2023 RO-A4</div>
+ERDS activation: must select the correct unit's <span class="hi-exam">CONNECT button on the appropriate Salem 1 or Salem 2 ERDS Link Control and Status Display Screen</span>. Selecting the wrong unit is a critical error. Verify successful activation by observing Status = "Transmitting Data" and "Messages Sent" value increasing above zero.
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 SRO-A5</div>
-Emergency classification and ICMF completion (time-critical, <span class="hi-exam">15/15 minutes</span>): loss of all AC power to Unit 2 (3 EDGs + 2 SPTs lost) classifies as <span class="hi-exam">GENERAL EMERGENCY per EAL SG1.1 (Section S — System Malfunction, S1 Loss of AC Power)</span>. ICMF Attachment 4 (EP-SA-325-F4) Sections I-V. PAR determination via Appendix 1: not based on loss of 3 fission product barriers, not hostile action — select <span class="hi-exam">Default PAR (No RPSA): Evacuate 0-5 miles, Monitor & Prepare 5-10 miles</span>.
-</div>
+## Exam & Operating Coverage
+
+### Emergency Action Levels
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q86</div>
 EAL#CA4.1 (ALERT — Loss of RHR): with RCS intact and RCS temperature &gt; <span class="hi-exam">200 &deg;F for 60 minutes</span>, criteria for declaring an ALERT are met. Key calculation: determine heatup rate from AB.RHR-0001 Attachment 5 (before or after offload curve based on plant status), calculate time to exceed 200 &deg;F, then add 60 minutes. <span class="hi-trap">Must use the correct heatup curve — before offload (5 &deg;F/min for 2 days after shutdown) vs after offload (3.4 &deg;F/min).</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q85</div>
-Notification timing: the State notifications (DE/NJ) are made within <span class="hi-trap">15 minutes</span>, while the <span class="hi-exam">NRC notification (and subsequent notification on a classification upgrade) is required within 60 minutes</span>. A subsequent NRC notification is triggered by a more-severe E-plan classification (e.g., SAE escalating to General Emergency when containment radiation exceeds 2000 R/hr).
 </div>
 
 ## Connections

@@ -25,14 +25,16 @@ Provides radiological posting requirements and access controls for High Radiatio
 | High Radiation Area (HRA) | > 100 mR/hr at 30 cm | RP-AA-460 |
 | Locked High Radiation Area (LHRA) | > 1000 mR/hr at 30 cm | RP-AA-460 Step 4.2 |
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q72</div>
-An area with <span class="hi-exam">1100 mR/hr</span> readings is a <span class="hi-exam">Locked High Radiation Area (LHRA)</span> (> 1000 mR/hr at 30 cm per Step 4.2). Per Step 4.2.5, access into a LHRA requires <span class="hi-exam">continuous</span> RP surveillance/coverage. <span class="hi-trap">Do not confuse HRA (> 100 mR/hr, periodic RP coverage) with LHRA (> 1000 mR/hr, continuous RP coverage).</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q98</div>
 LHRA definition confirmed (SRO question): per RP-AA-460, an LHRA has a MINIMUM dose rate of <span class="hi-exam">1000 mrem/hr @ 30 cm</span>. <span class="hi-trap">Trap: 100 mrem/hr is the threshold for a High Radiation Area (HRA), not a Locked High Radiation Area (LHRA). Do not confuse the two.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q72</div>
+An area with <span class="hi-exam">1100 mR/hr</span> readings is a <span class="hi-exam">Locked High Radiation Area (LHRA)</span> (> 1000 mR/hr at 30 cm per Step 4.2). Per Step 4.2.5, access into a LHRA requires <span class="hi-exam">continuous</span> RP surveillance/coverage. <span class="hi-trap">Do not confuse HRA (> 100 mR/hr, periodic RP coverage) with LHRA (> 1000 mR/hr, continuous RP coverage).</span>
 </div>
 
 <div class="callout callout-jpm">
@@ -46,6 +48,8 @@ Unit 1 Pipe Alley (Elevation 84 ft, Auxiliary Building) entry for locked valve s
 </div>
 
 ### Unlocked/Unmanned LHRA Response
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q45</div>

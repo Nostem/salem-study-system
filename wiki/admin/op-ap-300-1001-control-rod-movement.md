@@ -17,6 +17,8 @@ Provides requirements for manual control rod movements during non-transient cond
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q68</div>
 Per step 4.4.3, during non-transient conditions the RO shall STATE the <span class="hi-exam">selected control rod bank initial position, target control rod position, and the direction of movement</span> just prior to manually manipulating control rods. <span class="hi-trap">The minimum required information is bank position/target/direction — NOT T<sub>AVG</sub>, NOT NIS power level, NOT expected number of steps.</span>

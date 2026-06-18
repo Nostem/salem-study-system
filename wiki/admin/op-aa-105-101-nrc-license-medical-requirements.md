@@ -21,6 +21,8 @@ Administrative procedure governing NRC licensed operator license administration,
 - Common restrictions include corrective lenses, hearing aids, and medication compliance
 - An operator who cannot meet a medical restriction at the time of assuming licensed duties is NOT qualified to stand watch
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 RO-A2</div>
 Active license medical verification: <span class="hi-exam">RO #2 has an NRC Form 396 restriction requiring corrective lenses for licensed duties but stated he left his prescription eyeglasses at home</span> — RO #2 is NOT qualified. RO #3 has a medication restriction and stated he has his medication and has taken the prescribed dosage — RO #3 IS qualified. Used in conjunction with OP-AA-105-102 for shift hour requirements check.

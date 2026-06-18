@@ -31,6 +31,8 @@ Surveillance procedure for calculating shutdown margin (SDM) to verify complianc
 
 **References:** S2.RE-RA.ZZ-0016 Curve Book provides rod worth tables and figures.
 
+**Exam & operating coverage:**
+
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2020 RO-A1</div>
 SDM calculation with one inoperable (but trippable) rod (1D5 at 214 steps): Step <span class="hi-exam">4.2.6 rod bank penalty is based on the position of the rod BANK (225 steps = ARO), NOT the individual misaligned rod</span>. Since bank is at ARO, penalty = 0 pcm. Step 4.1.5 = 0 untrippable rods (1D5 is trippable). Step 4.1.6 = 1 inoperable rod. Calculated SDM = <span class="hi-exam">-2398 pcm</span>, which is more negative than acceptance criteria of -1300 pcm — SDM is SAT. Time critical: 60-minute limit.

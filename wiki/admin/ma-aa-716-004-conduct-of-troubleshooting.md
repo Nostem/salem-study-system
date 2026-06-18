@@ -22,6 +22,8 @@ Administrative procedure governing the conduct of troubleshooting activities at 
 | **Intrusive** | Activities that involve manipulation of plant equipment (e.g., valve manipulation, breaker operation, component operation) |
 | **Non-Intrusive** | Activities that do NOT involve manipulation of plant equipment (e.g., visual inspection, data collection without equipment manipulation) |
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q41</div>
 Per MA-AA-716-004, <span class="hi-exam">manipulation of CVCS valves to support a troubleshooting plan is considered an Intrusive activity</span> (even though valves are not being "broken into" — any valve manipulation is intrusive). <span class="hi-exam">Operations is responsible for ensuring the Troubleshooting Log adequately addresses the potential to affect core reactivity</span>. <span class="hi-trap">Trap: Engineering performs USQ screenings but is NOT responsible for the core reactivity assessment in the troubleshooting log — that responsibility belongs to Operations.</span>

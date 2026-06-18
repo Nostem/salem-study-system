@@ -18,14 +18,16 @@ Administrative procedure governing entry into, tracking of, and exit from Techni
 
 ## Key Actions / Information
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 SRO-A1.b</div>
-For a single inoperable rod (Shutdown Rod 2SA4 dropped fully at 100% power, EOL), the SRO logs <span class="hi-exam">three</span> Technical Specification Action Statements on Attachment 4-1: <span class="hi-exam">3.1.3.4.b, 3.1.3.1.c.3, and 3.2.4.a</span> — each with a <span class="hi-exam">1-hour</span> action time. The next consecutive LCO Index Number is <span class="hi-exam">15-234</span>. On Form 1, Section 1.0 the SRO records the LCO with the <span class="hi-exam">most limiting Action Time</span>, Status = Active, Planned = NO, Applicability = MODES 1 &amp; 2, and Date/Time Action Required = within one hour from entry. Because the inoperability will span beyond one shift (per stem) and computerized SAP LCO tracking is not in use, the manual Attachment 4-1 / Form 1 log path applies.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q71</div>
 When tracking an inoperable component (e.g., a SW pump expected to be out &gt; one shift), OP-SA-108-115-1001 requires updating the TS Action Statement Status Board, the TS Action Statement Log, and the Control Room Narrative Log. <span class="hi-trap">The Operational Status Board is NOT required by this procedure</span> (it is an emergency tool in the control room area). See [[Service Water]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 SRO-A1.b</div>
+For a single inoperable rod (Shutdown Rod 2SA4 dropped fully at 100% power, EOL), the SRO logs <span class="hi-exam">three</span> Technical Specification Action Statements on Attachment 4-1: <span class="hi-exam">3.1.3.4.b, 3.1.3.1.c.3, and 3.2.4.a</span> — each with a <span class="hi-exam">1-hour</span> action time. The next consecutive LCO Index Number is <span class="hi-exam">15-234</span>. On Form 1, Section 1.0 the SRO records the LCO with the <span class="hi-exam">most limiting Action Time</span>, Status = Active, Planned = NO, Applicability = MODES 1 &amp; 2, and Date/Time Action Required = within one hour from entry. Because the inoperability will span beyond one shift (per stem) and computerized SAP LCO tracking is not in use, the manual Attachment 4-1 / Form 1 log path applies.
 </div>
 
 ## Connections

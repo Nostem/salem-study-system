@@ -17,6 +17,8 @@ Provides requirements for safe entry into permit-required confined spaces, inclu
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q68</div>
 For a permitted confined space entry: (1) the <span class="hi-exam">Attendant</span> must always be present at the entry point while entrants are in the space, and (2) the <span class="hi-exam">Fire Brigade</span> serves as the rescue team for emergency rescue. <span class="hi-trap">The Entry Supervisor ensures personnel are qualified and briefed but is NOT required to remain present during the entry. The Site Safety Professional is NOT authorized for rescue entry.</span>

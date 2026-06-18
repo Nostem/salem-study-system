@@ -22,14 +22,11 @@ Station administrative procedure governing containment entries while the reactor
 - Survey maps must be current and reviewed for gamma and neutron dose rates.
 - Personnel dose calculations must account for both gamma and neutron contributions.
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 SRO-A4</div>
-Containment entry at power for 22 CFCU tag removal requires <span class="hi-exam">Radiation Protection Supervisor (RPS) authorization</span>. Dose calculation from survey map: gamma = 5 mrem/hr, neutron = 40 mrem/hr. For 12-minute entry: gamma dose = 1 mrem, neutron dose = 8 mrem, total = 9 mrem per operator. Operator A (1992 mrem year-to-date + 9 = <span class="hi-exam">2001 mrem) exceeds 2000 mrem Administrative Dose Control Limit</span>.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q72</div>
-Used in conjunction with SC.SA-ST.ZZ-0001 — <span class="hi-exam">RP Supervisor approval is required</span> to enter containment in Modes 1 or 2 during <span class="hi-exam">ANY reactor power change &gt;5% / hr</span>. Personnel limit is <span class="hi-exam">10 people per operable air lock (20 people total with both airlocks)</span>. <span class="hi-trap">Trap: the trigger applies to ANY power change &gt;5% / hr (ascension or descension), not power ascension only.</span>
+<div class="callout-label">Exam — 2014 Q98</div>
+Entry to the 78' elevation outside the bioshield during a 20%/hr power reduction: <span class="hi-exam">no Rx power limitation applies</span>, and the <span class="hi-exam">Radiation Protection Supervisor (RPS) approval is required</span> because power is being changed &gt;5%/hr (the SM/CRS/Designee normally authorizes access). <span class="hi-trap">Trap: the Operations Manager is not the specific required authorizer, and there is no Rx power &lt;50% limit.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -38,8 +35,13 @@ Containment entries at power: the SM/CRS authorizes access, but <span class="hi-
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q98</div>
-Entry to the 78' elevation outside the bioshield during a 20%/hr power reduction: <span class="hi-exam">no Rx power limitation applies</span>, and the <span class="hi-exam">Radiation Protection Supervisor (RPS) approval is required</span> because power is being changed &gt;5%/hr (the SM/CRS/Designee normally authorizes access). <span class="hi-trap">Trap: the Operations Manager is not the specific required authorizer, and there is no Rx power &lt;50% limit.</span>
+<div class="callout-label">Exam — 2016 Q72</div>
+Used in conjunction with SC.SA-ST.ZZ-0001 — <span class="hi-exam">RP Supervisor approval is required</span> to enter containment in Modes 1 or 2 during <span class="hi-exam">ANY reactor power change &gt;5% / hr</span>. Personnel limit is <span class="hi-exam">10 people per operable air lock (20 people total with both airlocks)</span>. <span class="hi-trap">Trap: the trigger applies to ANY power change &gt;5% / hr (ascension or descension), not power ascension only.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 SRO-A4</div>
+Containment entry at power for 22 CFCU tag removal requires <span class="hi-exam">Radiation Protection Supervisor (RPS) authorization</span>. Dose calculation from survey map: gamma = 5 mrem/hr, neutron = 40 mrem/hr. For 12-minute entry: gamma dose = 1 mrem, neutron dose = 8 mrem, total = 9 mrem per operator. Operator A (1992 mrem year-to-date + 9 = <span class="hi-exam">2001 mrem) exceeds 2000 mrem Administrative Dose Control Limit</span>.
 </div>
 
 ## Connections

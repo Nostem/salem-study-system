@@ -16,6 +16,13 @@ Administrative procedure governing the use of Emergency Operating Procedures and
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q74</div>
+EOPs have a <span class="hi-exam">Continuous Action Summary (CAS) in the upper-left corner of each flowchart sheet</span>. The CAS contains the conditional operator actions — including interprocedure transitions — that are <span class="hi-exam">applicable at all times while the procedure is being implemented</span>. <span class="hi-trap">It is the "Continuous Action Summary," NOT a "Conditional Action Summary," and not an individual conditional/continuous action step.</span>
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q23</div>
 The Concurrent Step symbol means initiate the stated action while continuing with the existing flow path. Other EOP flowchart symbols:
@@ -33,11 +40,6 @@ Per step 2.16.2: <span class="hi-exam">continuous action steps should NOT be per
 <div class="callout callout-exam">
 <div class="callout-label">Exam -- 2023 Q99</div>
 FRP rules of usage (yellow path): EOP-FRCE-3 (High Containment Radiation) is a <span class="hi-exam">yellow path procedure -- the CRS may elect to GO TO it, but is not required</span>. Red and orange path FRPs require mandatory entry. Yellow path FRPs are optional and performed at the CRS's discretion based on plant conditions.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q74</div>
-EOPs have a <span class="hi-exam">Continuous Action Summary (CAS) in the upper-left corner of each flowchart sheet</span>. The CAS contains the conditional operator actions — including interprocedure transitions — that are <span class="hi-exam">applicable at all times while the procedure is being implemented</span>. <span class="hi-trap">It is the "Continuous Action Summary," NOT a "Conditional Action Summary," and not an individual conditional/continuous action step.</span>
 </div>
 
 ## Connections

@@ -16,6 +16,8 @@ Defines the process for managing on-line (at-power) maintenance activities, incl
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q96</div>
 Shift Manager responsibilities for on-line maintenance (Step 3.6):<br>

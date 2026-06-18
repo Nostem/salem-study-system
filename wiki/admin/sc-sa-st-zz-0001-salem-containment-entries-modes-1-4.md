@@ -17,9 +17,11 @@ Station administrative procedure governing containment entries while the unit is
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q72</div>
-SC.SA-ST.ZZ-0001 (Rev. 5) requires <span class="hi-exam">prior RP Supervisor approval</span> to enter containment in Modes 1 or 2 during <span class="hi-exam">ANY reactor power change &gt;5% / hr</span> (not limited to power ascension). The procedure also limits entry to <span class="hi-exam">10 people per operable air lock</span>; with both airlocks operable this yields a maximum of <span class="hi-exam">20 people</span> in containment at one time. See steps 2.4 and 3.2. <span class="hi-trap">Trap: the &gt;5% / hr trigger applies to ANY power change (ascension OR descension), not power ascension only.</span>
+<div class="callout-label">Exam — 2014 Q98</div>
+For a containment entry to the 78' elevation outside the bioshield during a 20%/hr Tech Spec 3.0.3 shutdown: there is <span class="hi-exam">NO Rx power limitation</span> for the entry. Authorization is normally by the SM/CRS/Designee, but because power is being changed &gt;5%/hr, the <span class="hi-exam">Radiation Protection Supervisor (RPS) approval is required</span>. <span class="hi-trap">Trap: the Operations Manager is NOT the required authorizer — he/she signs the approval of all ops procedures, but that is not the specific approval the stem asks for. There is also no Rx power &lt;50% limitation.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -28,8 +30,8 @@ Containment access is normally authorized by the SM/CRS. <span class="hi-exam">T
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q98</div>
-For a containment entry to the 78' elevation outside the bioshield during a 20%/hr Tech Spec 3.0.3 shutdown: there is <span class="hi-exam">NO Rx power limitation</span> for the entry. Authorization is normally by the SM/CRS/Designee, but because power is being changed &gt;5%/hr, the <span class="hi-exam">Radiation Protection Supervisor (RPS) approval is required</span>. <span class="hi-trap">Trap: the Operations Manager is NOT the required authorizer — he/she signs the approval of all ops procedures, but that is not the specific approval the stem asks for. There is also no Rx power &lt;50% limitation.</span>
+<div class="callout-label">Exam — 2016 Q72</div>
+SC.SA-ST.ZZ-0001 (Rev. 5) requires <span class="hi-exam">prior RP Supervisor approval</span> to enter containment in Modes 1 or 2 during <span class="hi-exam">ANY reactor power change &gt;5% / hr</span> (not limited to power ascension). The procedure also limits entry to <span class="hi-exam">10 people per operable air lock</span>; with both airlocks operable this yields a maximum of <span class="hi-exam">20 people</span> in containment at one time. See steps 2.4 and 3.2. <span class="hi-trap">Trap: the &gt;5% / hr trigger applies to ANY power change (ascension OR descension), not power ascension only.</span>
 </div>
 
 ## Connections
