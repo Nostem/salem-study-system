@@ -16,73 +16,30 @@ Provides direction for transferring ECCS suction from the RWST to the containmen
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
+### Entry Conditions and RWST Level / Timing
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q3</div>
+The transfer to Cold Leg Recirculation is required when RWST level reaches the Lo alarm at <span class="hi-exam">15.2 ft (≈150000 gallons)</span>. For a LBLOCA at power with one RHR pump failed, all ECCS pumps inject at runout (<span class="hi-exam">charging 1120 + SI 1350 + one RHR 4500 + Containment Spray 5200 = 12170 gpm</span>); from an initial RWST level of 41.1 ft (370000 gal) it takes <span class="hi-exam">~18 minutes (≈19 min) to drain to the 15.2 ft swap level</span>. See [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q99</div>
+RWST level lowering to the low level setpoint <span class="hi-exam">only directs transition to EOP-LOCA-3 (Transfer to Cold Leg Recirculation) when so directed in the FRP/procedure in use</span>. <span class="hi-trap">It does NOT automatically suspend any FRP in progress — automatically going to LOCA-3 on low RWST level does not always occur regardless of where in any procedure you are. (The condition that ALWAYS requires suspending any FRP is a loss of all three vital buses → EOP-LOPA-1.)</span>
+</div>
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q24</div>
 A transfer to Cold Leg Recirculation is <span class="hi-exam">not initiated until RWST level is evaluated in [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]</span>. So when a train of recirculation capability is restored while in [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]], the crew returns to LOCA-1 (per the LOCA-5 Continuous Action Step) rather than transitioning directly to LOCA-3. <span class="hi-trap">Trap: jumping straight from LOCA-5 to LOCA-3 on restoration of a recirc train skips the LOCA-1 RWST-level evaluation that gates entry to LOCA-3.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q5</div>
-EOP-LOCA-3 <span class="hi-exam">Step 11.2</span> checks whether at least one CCW pump is running. With <span class="hi-exam">NO CCW pumps running</span>, operators are directed to <span class="hi-exam">go to Step 124 and align for single-train recirculation operation</span> (continue in LOCA-3 — single train without CCW). <span class="hi-trap">Trap matrix:<br>&bull; There is NO provision in LOCA-3 to transition to EOP-APPX-1 (CCW Restoration) or EOP-LOCA-5 (Loss of Emergency Coolant Recirculation) when no CCW pumps are running. LOCA-5 is for mechanical/electrical recirc failures, not loss of CCW.<br>&bull; The two-train alignment (BOTH RHR pumps + one SI + one charging) is the normal LOCA-3 flowpath when CCW IS available — not the "no CCW" path.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2023 #1</div>
-Transfer to cold leg recirculation during LBLOCA. Time-critical operator actions from RWST Lo Level alarm:<br>
-- <span class="hi-exam">Close 2SJ69 within 3.7 minutes</span><br>
-- <span class="hi-exam">Stop 22 CS pump within 5.5 minutes</span><br>
-- <span class="hi-exam">ECCS pumps verified in recirculation within 11.2 minutes</span><br>
-Key steps: depress SUMP AUTO ARMED PB for 21 and 22 SJ44s, remove lockouts from 2SJ67/68/69, verify SJ44s open, close 2SJ67/68, close 2RH1/2RH2, open 21 and 22 SJ45s. Failure to transfer before RWST Lo-Lo (1.2 feet) results in loss of all pumped safety injection and containment spray.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q87</div>
-During cold leg recirculation transfer: after sump valves open and RWST common suction (SJ69) closes, <span class="hi-exam">oscillating RHR pump amps, flows, and discharge pressures indicate cavitation from containment sump blockage</span>. The CRS transitions to <span class="hi-exam">EOP-APPX-7 (Containment Sump Blockage)</span>, NOT EOP-LOCA-5. <span class="hi-trap">LOCA-5 is for mechanical/electrical component failures causing loss of recirculation — sump blockage causing pump cavitation is APPX-7.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 SRO-A5</div>
-ECCS aligned for cold leg recirculation at the time of emergency classification escalation. Large Break LOCA with all three fission product barriers lost: 21SJ44 (Containment Sump Suction Valve) <span class="hi-exam">failed to close</span> when crew attempted to isolate RHR sump overflow — creating an <span class="hi-exam">unisolable leak path outside containment</span>. This is the basis for the Containment Barrier loss (CB2.L/CB3.L) in the General Emergency classification.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q52</div>
-After resetting ALL SECs in EOP-LOCA-3, <span class="hi-exam">the crew IS required to MANUALLY reset the 230V control centers</span> (even though 20 minutes after SEC actuation the lockout is automatically removed). If a subsequent blackout occurs on a 4KV vital bus with SI previously reset, <span class="hi-exam">ECCS pumps and safeguards equipment will NOT automatically start</span> — they must be <span class="hi-exam">manually operated</span> because different equipment is started on a SEC blackout loading than on a safeguards loading. <span class="hi-trap">Trap: A LBLOCA is in progress, so candidates may assume ECCS pumps will auto-start — but with SI/SECs reset, the SEC loads based on blackout loading, NOT safeguards loading.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q88</div>
-CAS transition for sump blockage: when ECCS pumps are aligned to sump and <span class="hi-exam">erratic flow/pressure on BOTH trains indicates cavitation → transition to EOP-APPX-7 (CONTAINMENT SUMP BLOCKAGE)</span>. <span class="hi-trap">EOP-LOCA-5 is only for loss of recirculation NOT related to sump blockage.</span> During recirculation, <span class="hi-exam">RHR pump discharge provides the D/P to drive Containment Spray</span> (CS pumps take suction from the outlet of the RHR HXs, not from SI pump discharge).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q4</div>
-ECCS realignment for cold leg recirculation is required as soon as the <span class="hi-exam">RWST Level LO alarm is FIRST validated</span> (IAW EOP-LOCA-1). 21SJ44 and 22SJ44 (Containment Sump Suction Valves) each serve a single RHR pump — <span class="hi-exam">with 21SJ44 closed, only 22 RHR pump can draw suction from the containment sump</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q33</div>
-EOP-LOCA-3 alignment when 21SJ44 fails to open: <span class="hi-exam">Step 5.2 directs stopping 21 RHR pump</span>, and 21 RHR pump remains stopped as long as 21SJ44 is shut. <span class="hi-exam">21SJ45 is interlocked with 21SJ44 — 21SJ45 cannot be opened with 21SJ44 shut</span>. The 21CS36 interlock is with 21RH1 and 21RH2 (must be SHUT before 21CS36 can be OPENED). With 22 RHR pump running at step 22, CS header flow is supplied by <span class="hi-exam">22CS36</span>. Final lineup: ALL containment sump recirculation flow goes through <span class="hi-exam">22SJ45 (to Charging/SI pump suctions) and 22CS36 (to spray headers)</span>; 22SJ49 (cold leg isolation) is shut whenever 22 RHR pump is running at the RWST lo-lo alarm. (Source procedure rev 30; ECCS Lesson Plan p.47, 52)
-</div>
+### Transfer Sequence and Valve Alignment
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q36</div>
 <span class="hi-exam">11SJ44/12SJ44 (Containment Sump Isolation) open in EOP-LOCA-3 during transfer to cold-leg recirc and provide NO ECCS injection flow</span> — so they are NOT among the valves whose failure to reposition on an SI signal would block injection. <span class="hi-trap">By contrast, the BIT outlet valves 1SJ12/1SJ13 are the SI-actuated injection valves whose failure to open blocks BIT injection.</span>
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2018 #2</div>
-Cold leg recirculation transfer after LBLOCA. <span class="hi-exam">CT#2 (CT-36) — time-critical</span>: (1) Open 21SJ44 and 22SJ44, depress sump auto arm pushbuttons when containment sump >62% lights lit. (2) Remove lockouts for 2SJ67, 2SJ68, 2SJ69. (3) <span class="hi-exam">Close 2SJ69 within ~3.7 min</span> of RWST lo alarm. (4) <span class="hi-exam">Stop 22 CS pump within ~5.5 min</span>. (5) Close 21 and 22RH19s. Select flow path for all 4KV vital buses energized → Step 11. Close 2SJ67 and 2SJ68. Open 22SJ45, then 21SJ45. Close 2SJ30, 2SJ1, 2SJ2. <span class="hi-exam">Place 21RH29 and 22RH29 in manual and ensure closed (Step 15) within ~11.2 min</span>. PO removes lockout from 2SJ30.
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #1</div>
-Cold leg recirculation transfer after LBLOCA with failure of RHR pumps to auto-start (CT#1 handled in TRIP-1). <span class="hi-exam">CT#2 (CT-36) — time-critical, three windows measured from the RWST lo level alarm (214 RWST = 15.2 ft)</span>: (1) initiate closed on <span class="hi-exam">2SJ69 within ≤3.7 min</span>; (2) stop <span class="hi-exam">one containment spray pump (22 CS) within ≤5.5 min</span>; (3) <span class="hi-exam">switchover complete — ECCS pumps verified running in recirc within ≤11.2 min</span> (includes restarting ECCS pumps if stopped on RWST lo-lo). Sequence: report containment sump lights >62%, depress SUMP AUTO ARMED PB for 21/22SJ44s, remove lockouts on 2SJ67/2SJ68/2SJ69, verify 21/22SJ44 open, close 2SJ69, reset SI/SECs/230V MCCs, stop 22 CS pump, close 21/22RH19s, shut 2SJ67/2SJ68, open 22SJ45 then 21SJ45, verify 21/22SJ113, confirm 21/22 SI + 21/22 charging pumps running. <span class="hi-trap">On RWST isolation (closing 2SJ30/2SJ1/2SJ2) both charging pumps cavitate — CT#3 is to trip the cavitating charging pumps before piping damage / LOCA outside containment.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 Sim-b</div>
-After waiting at LOCA-3 step 21 for RWST lo-lo level alarm with all ECCS running except 22 CS pump (stopped at step 8), <span class="hi-exam">both RHR pumps cavitate</span> as containment sump becomes blocked. Per the LOCA-3 Continuous Action Summary, the crew enters <span class="hi-exam">EOP-APPX-7</span> immediately (operator may go to EOP-LOCA-5 first, but Step 1 of LOCA-5 directs performance of APPX-7). The APPX-7 final task standard is to <span class="hi-exam">secure all ECCS pumps</span>, then re-establish recirculation flow with <span class="hi-exam">ONE RHR pump and ONE Charging OR SI pump</span> (single-pump per side, NOT the LOCA-3 two-train alignment).
 </div>
 
 <div class="callout callout-exam">
@@ -96,13 +53,20 @@ On the transfer to cold-leg recirc, the <span class="hi-exam">22 Containment Spr
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q89</div>
-When containment sump blockage causes loss of ECCS flow during LOCA-3, the CAS directs <span class="hi-exam">transition to [[EOP-APPX-7 — Containment Sump Blockage]] — NOT [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]</span>. The LOCA-3 CAS item directs LOCA-5 only if emergency recirculation cannot be established/maintained for a reason <span class="hi-trap">OTHER than containment sump blockage</span>; sump blockage transitions to APPX-7. LOCA-3 step sequence: <span class="hi-exam">22 CS pump stopped at step 8</span>; <span class="hi-exam">charging and SI pump suction isolated from RWST at step 14</span>; the crew <span class="hi-exam">waits at step 21 until RWST level lowers to 1.2'</span>, at which point the remaining (21) CS pump is stopped. With RWST above 1.2', the 21 CS pump still takes suction from the RWST, so <span class="hi-exam">CS flow remains above 0 gpm</span>.
+<div class="callout-label">Exam — 2016 Q33</div>
+EOP-LOCA-3 alignment when 21SJ44 fails to open: <span class="hi-exam">Step 5.2 directs stopping 21 RHR pump</span>, and 21 RHR pump remains stopped as long as 21SJ44 is shut. <span class="hi-exam">21SJ45 is interlocked with 21SJ44 — 21SJ45 cannot be opened with 21SJ44 shut</span>. The 21CS36 interlock is with 21RH1 and 21RH2 (must be SHUT before 21CS36 can be OPENED). With 22 RHR pump running at step 22, CS header flow is supplied by <span class="hi-exam">22CS36</span>. Final lineup: ALL containment sump recirculation flow goes through <span class="hi-exam">22SJ45 (to Charging/SI pump suctions) and 22CS36 (to spray headers)</span>; 22SJ49 (cold leg isolation) is shut whenever 22 RHR pump is running at the RWST lo-lo alarm. (Source procedure rev 30; ECCS Lesson Plan p.47, 52)
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q99</div>
-RWST level lowering to the low level setpoint <span class="hi-exam">only directs transition to EOP-LOCA-3 (Transfer to Cold Leg Recirculation) when so directed in the FRP/procedure in use</span>. <span class="hi-trap">It does NOT automatically suspend any FRP in progress — automatically going to LOCA-3 on low RWST level does not always occur regardless of where in any procedure you are. (The condition that ALWAYS requires suspending any FRP is a loss of all three vital buses → EOP-LOPA-1.)</span>
+<div class="callout-label">Exam — 2018 Q4</div>
+ECCS realignment for cold leg recirculation is required as soon as the <span class="hi-exam">RWST Level LO alarm is FIRST validated</span> (IAW EOP-LOCA-1). 21SJ44 and 22SJ44 (Containment Sump Suction Valves) each serve a single RHR pump — <span class="hi-exam">with 21SJ44 closed, only 22 RHR pump can draw suction from the containment sump</span>.
+</div>
+
+### Single-Train and Degraded Operation
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q5</div>
+EOP-LOCA-3 <span class="hi-exam">Step 11.2</span> checks whether at least one CCW pump is running. With <span class="hi-exam">NO CCW pumps running</span>, operators are directed to <span class="hi-exam">go to Step 124 and align for single-train recirculation operation</span> (continue in LOCA-3 — single train without CCW). <span class="hi-trap">Trap matrix:<br>&bull; There is NO provision in LOCA-3 to transition to EOP-APPX-1 (CCW Restoration) or EOP-LOCA-5 (Loss of Emergency Coolant Recirculation) when no CCW pumps are running. LOCA-5 is for mechanical/electrical recirc failures, not loss of CCW.<br>&bull; The two-train alignment (BOTH RHR pumps + one SI + one charging) is the normal LOCA-3 flowpath when CCW IS available — not the "no CCW" path.</span>
 </div>
 
 <div class="callout callout-jpm">
@@ -110,14 +74,64 @@ RWST level lowering to the low level setpoint <span class="hi-exam">only directs
 LOCA-3 transfer to cold leg recirculation with a <span class="hi-exam">single-train (alternate path)</span> alignment. Step 5 checks whether 21 and 22 SJ44 (Sump Valves) are open; with <span class="hi-exam">22 SJ44 failed shut and only 21 SJ44 open</span>, the crew runs the single-train branch — stop 22 RHR pump, close 2SJ69 (Common Suction), and do <span class="hi-exam">NOT start 22 RHR pump</span> (22 SJ44 will not open). The path is further degraded by support-system losses: <span class="hi-exam">only 2 of the required 3 SW pumps are running</span> (step 11.1), so 2 CFCUs are stopped and loads are shed (step 11B); and because <span class="hi-exam">22 CCW HX is unavailable (~196°F on 2CC2)</span>, RHR HX cooling is routed by opening 21CC16 and closing 22CC16. Final lineup runs 21 RHR pump with 21SJ45 (RHR Discharge to SI pump valve) open.
 </div>
 
+### Sump Blockage and Transitions to APPX-7
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q3</div>
-The transfer to Cold Leg Recirculation is required when RWST level reaches the Lo alarm at <span class="hi-exam">15.2 ft (≈150000 gallons)</span>. For a LBLOCA at power with one RHR pump failed, all ECCS pumps inject at runout (<span class="hi-exam">charging 1120 + SI 1350 + one RHR 4500 + Containment Spray 5200 = 12170 gpm</span>); from an initial RWST level of 41.1 ft (370000 gal) it takes <span class="hi-exam">~18 minutes (≈19 min) to drain to the 15.2 ft swap level</span>. See [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]].
+<div class="callout-label">Exam — 2014 Q89</div>
+When containment sump blockage causes loss of ECCS flow during LOCA-3, the CAS directs <span class="hi-exam">transition to [[EOP-APPX-7 — Containment Sump Blockage]] — NOT [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]</span>. The LOCA-3 CAS item directs LOCA-5 only if emergency recirculation cannot be established/maintained for a reason <span class="hi-trap">OTHER than containment sump blockage</span>; sump blockage transitions to APPX-7. LOCA-3 step sequence: <span class="hi-exam">22 CS pump stopped at step 8</span>; <span class="hi-exam">charging and SI pump suction isolated from RWST at step 14</span>; the crew <span class="hi-exam">waits at step 21 until RWST level lowers to 1.2'</span>, at which point the remaining (21) CS pump is stopped. With RWST above 1.2', the 21 CS pump still takes suction from the RWST, so <span class="hi-exam">CS flow remains above 0 gpm</span>.
 </div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q88</div>
+CAS transition for sump blockage: when ECCS pumps are aligned to sump and <span class="hi-exam">erratic flow/pressure on BOTH trains indicates cavitation → transition to EOP-APPX-7 (CONTAINMENT SUMP BLOCKAGE)</span>. <span class="hi-trap">EOP-LOCA-5 is only for loss of recirculation NOT related to sump blockage.</span> During recirculation, <span class="hi-exam">RHR pump discharge provides the D/P to drive Containment Spray</span> (CS pumps take suction from the outlet of the RHR HXs, not from SI pump discharge).
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q87</div>
+During cold leg recirculation transfer: after sump valves open and RWST common suction (SJ69) closes, <span class="hi-exam">oscillating RHR pump amps, flows, and discharge pressures indicate cavitation from containment sump blockage</span>. The CRS transitions to <span class="hi-exam">EOP-APPX-7 (Containment Sump Blockage)</span>, NOT EOP-LOCA-5. <span class="hi-trap">LOCA-5 is for mechanical/electrical component failures causing loss of recirculation — sump blockage causing pump cavitation is APPX-7.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-b</div>
+After waiting at LOCA-3 step 21 for RWST lo-lo level alarm with all ECCS running except 22 CS pump (stopped at step 8), <span class="hi-exam">both RHR pumps cavitate</span> as containment sump becomes blocked. Per the LOCA-3 Continuous Action Summary, the crew enters <span class="hi-exam">EOP-APPX-7</span> immediately (operator may go to EOP-LOCA-5 first, but Step 1 of LOCA-5 directs performance of APPX-7). The APPX-7 final task standard is to <span class="hi-exam">secure all ECCS pumps</span>, then re-establish recirculation flow with <span class="hi-exam">ONE RHR pump and ONE Charging OR SI pump</span> (single-pump per side, NOT the LOCA-3 two-train alignment).
+</div>
+
+### SEC Reset and Blackout Loading
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q52</div>
+After resetting ALL SECs in EOP-LOCA-3, <span class="hi-exam">the crew IS required to MANUALLY reset the 230V control centers</span> (even though 20 minutes after SEC actuation the lockout is automatically removed). If a subsequent blackout occurs on a 4KV vital bus with SI previously reset, <span class="hi-exam">ECCS pumps and safeguards equipment will NOT automatically start</span> — they must be <span class="hi-exam">manually operated</span> because different equipment is started on a SEC blackout loading than on a safeguards loading. <span class="hi-trap">Trap: A LBLOCA is in progress, so candidates may assume ECCS pumps will auto-start — but with SI/SECs reset, the SEC loads based on blackout loading, NOT safeguards loading.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 SRO-A5</div>
+ECCS aligned for cold leg recirculation at the time of emergency classification escalation. Large Break LOCA with all three fission product barriers lost: 21SJ44 (Containment Sump Suction Valve) <span class="hi-exam">failed to close</span> when crew attempted to isolate RHR sump overflow — creating an <span class="hi-exam">unisolable leak path outside containment</span>. This is the basis for the Containment Barrier loss (CB2.L/CB3.L) in the General Emergency classification.
+</div>
+
+### Full-Scenario Switchover
 
 <div class="callout callout-scenario">
 <div class="callout-label">Scenario — 2012 #1</div>
 Entered at <span class="hi-exam">RWST 15.2 ft</span> from [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]]. The <span class="hi-exam">CT#3 time-critical switchover windows measured from the RWST Lo level alarm</span> are: <span class="hi-exam">close 2SJ69 within 3.7 min, stop a Containment Spray pump within 5.5 min, and complete switchover within 11.2 min</span>. During the transfer the <span class="hi-exam">22 charging pump cavitates when 2SJ1 and 2SJ2 are shut</span>; CT#4 requires tripping it before pump/piping damage.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #1</div>
+Cold leg recirculation transfer after LBLOCA with failure of RHR pumps to auto-start (CT#1 handled in TRIP-1). <span class="hi-exam">CT#2 (CT-36) — time-critical, three windows measured from the RWST lo level alarm (214 RWST = 15.2 ft)</span>: (1) initiate closed on <span class="hi-exam">2SJ69 within ≤3.7 min</span>; (2) stop <span class="hi-exam">one containment spray pump (22 CS) within ≤5.5 min</span>; (3) <span class="hi-exam">switchover complete — ECCS pumps verified running in recirc within ≤11.2 min</span> (includes restarting ECCS pumps if stopped on RWST lo-lo). Sequence: report containment sump lights >62%, depress SUMP AUTO ARMED PB for 21/22SJ44s, remove lockouts on 2SJ67/2SJ68/2SJ69, verify 21/22SJ44 open, close 2SJ69, reset SI/SECs/230V MCCs, stop 22 CS pump, close 21/22RH19s, shut 2SJ67/2SJ68, open 22SJ45 then 21SJ45, verify 21/22SJ113, confirm 21/22 SI + 21/22 charging pumps running. <span class="hi-trap">On RWST isolation (closing 2SJ30/2SJ1/2SJ2) both charging pumps cavitate — CT#3 is to trip the cavitating charging pumps before piping damage / LOCA outside containment.</span>
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2018 #2</div>
+Cold leg recirculation transfer after LBLOCA. <span class="hi-exam">CT#2 (CT-36) — time-critical</span>: (1) Open 21SJ44 and 22SJ44, depress sump auto arm pushbuttons when containment sump >62% lights lit. (2) Remove lockouts for 2SJ67, 2SJ68, 2SJ69. (3) <span class="hi-exam">Close 2SJ69 within ~3.7 min</span> of RWST lo alarm. (4) <span class="hi-exam">Stop 22 CS pump within ~5.5 min</span>. (5) Close 21 and 22RH19s. Select flow path for all 4KV vital buses energized → Step 11. Close 2SJ67 and 2SJ68. Open 22SJ45, then 21SJ45. Close 2SJ30, 2SJ1, 2SJ2. <span class="hi-exam">Place 21RH29 and 22RH29 in manual and ensure closed (Step 15) within ~11.2 min</span>. PO removes lockout from 2SJ30.
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2023 #1</div>
+Transfer to cold leg recirculation during LBLOCA. Time-critical operator actions from RWST Lo Level alarm:<br>
+- <span class="hi-exam">Close 2SJ69 within 3.7 minutes</span><br>
+- <span class="hi-exam">Stop 22 CS pump within 5.5 minutes</span><br>
+- <span class="hi-exam">ECCS pumps verified in recirculation within 11.2 minutes</span><br>
+Key steps: depress SUMP AUTO ARMED PB for 21 and 22 SJ44s, remove lockouts from 2SJ67/68/69, verify SJ44s open, close 2SJ67/68, close 2RH1/2RH2, open 21 and 22 SJ45s. Failure to transfer before RWST Lo-Lo (1.2 feet) results in loss of all pumped safety injection and containment spray.
 </div>
 
 ## Connections

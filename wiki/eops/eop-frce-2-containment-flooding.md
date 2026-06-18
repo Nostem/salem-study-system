@@ -15,14 +15,11 @@ Provides operator actions for responding to containment flooding conditions, inc
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q24</div>
-Service Water from CFCUs is NOT isolated by Phase A or Phase B containment isolation. Following both Phase A and Phase B actuations, SW is the only remaining source of water into containment. Fire Protection is isolated on Phase A, CCW is isolated on Phase B, and Potable Water is isolated on Phase A.
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q75</div>
-FRCE-2 entry condition: <span class="hi-exam">Containment Sump level ~78% (75% ADVERSE)</span>. FRCE-2 is the containment flooding functional restoration procedure, entered from EOP-CFST-1 when the containment sump level threshold is exceeded. <span class="hi-trap">FRCE-2 is NOT entered on containment pressure or radiation — those conditions trigger FRCE-1 (Red or Purple) and FRCE-3 (Yellow) respectively.</span>
+<div class="callout-label">Exam — 2012 Q26</div>
+FRCE-2 checks several diverse sources to validate that an excessive containment sump level actually exists: <span class="hi-exam">CFCU SW flow, FP-to-containment isolation valve position, CCW Surge Tank level, Demin Water Storage Tank level, and Primary Water Storage Tank (PWST) level</span>. The validating indication is <span class="hi-exam">5 CFCUs running in low speed with SW flow of ~1000 gpm each</span> — each CFCU SW flow is normally ~1600 gpm, so a ~600 gpm-per-unit reduction across 5 CFCUs indicates a ~3000 gpm SW leak into containment is possible. <span class="hi-trap">Traps: a full PWST is only ~240000 gallons, so 200000 gallons cannot account for the level rise; Fire Protection Storage Tank level change is inadequate; and SW header pressure of 150 psig is expected with SW26 shut from the SEC (a LOWER SW header pressure would help identify a SW leak).</span>
 </div>
 
 <div class="callout callout-exam">
@@ -31,8 +28,13 @@ Step 1 — CFCU SW isolation for leaking CFCU: close <span class="hi-exam">BOTH 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q26</div>
-FRCE-2 checks several diverse sources to validate that an excessive containment sump level actually exists: <span class="hi-exam">CFCU SW flow, FP-to-containment isolation valve position, CCW Surge Tank level, Demin Water Storage Tank level, and Primary Water Storage Tank (PWST) level</span>. The validating indication is <span class="hi-exam">5 CFCUs running in low speed with SW flow of ~1000 gpm each</span> — each CFCU SW flow is normally ~1600 gpm, so a ~600 gpm-per-unit reduction across 5 CFCUs indicates a ~3000 gpm SW leak into containment is possible. <span class="hi-trap">Traps: a full PWST is only ~240000 gallons, so 200000 gallons cannot account for the level rise; Fire Protection Storage Tank level change is inadequate; and SW header pressure of 150 psig is expected with SW26 shut from the SEC (a LOWER SW header pressure would help identify a SW leak).</span>
+<div class="callout-label">Exam — 2019 Q75</div>
+FRCE-2 entry condition: <span class="hi-exam">Containment Sump level ~78% (75% ADVERSE)</span>. FRCE-2 is the containment flooding functional restoration procedure, entered from EOP-CFST-1 when the containment sump level threshold is exceeded. <span class="hi-trap">FRCE-2 is NOT entered on containment pressure or radiation — those conditions trigger FRCE-1 (Red or Purple) and FRCE-3 (Yellow) respectively.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q24</div>
+Service Water from CFCUs is NOT isolated by Phase A or Phase B containment isolation. Following both Phase A and Phase B actuations, SW is the only remaining source of water into containment. Fire Protection is isolated on Phase A, CCW is isolated on Phase B, and Potable Water is isolated on Phase A.
 </div>
 
 ## Connections

@@ -22,9 +22,11 @@ Provides operator actions to respond to steam generator overpressure conditions.
 - Attempt to depressurize affected SG using available means (MS10 relief valves, BF&O bypass, etc.)
 - If depressurization unsuccessful, transition to EOP-FRHS-3
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q85</div>
-This question was security-redacted. It tested SRO knowledge of actions during a SG overpressure event in conjunction with security procedures (K/A W/E13 G2.4.28). Reference: 2-EOP-FRHS-2 (R41).
+<div class="callout-label">Exam — 2018 Q72</div>
+Step 5 — permitted steam release paths include <span class="hi-exam">13 AFW Pump</span> (turbine-driven AFW). If MS18 (MS Warmup) and MS10 (Atmospheric Relief Valves) cannot be opened, the 13 AFW Pump is a valid release path because the affected SG is a source of steam for the turbine-driven pump. Step 9 — if unable to release steam from the affected SG, maintain <span class="hi-exam">RCS T-HOTs less than 540 &deg;F</span> using the UNAFFECTED SGs. <span class="hi-trap">Trap: establishing cool AFW flow to the affected SG does NOT reduce SG pressure — it adds inventory. The 13 AFW Pump works as a release path because it consumes steam from the affected SG.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -33,8 +35,8 @@ AFW should remain <span class="hi-exam">isolated to affected SG(s) until a steam
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q72</div>
-Step 5 — permitted steam release paths include <span class="hi-exam">13 AFW Pump</span> (turbine-driven AFW). If MS18 (MS Warmup) and MS10 (Atmospheric Relief Valves) cannot be opened, the 13 AFW Pump is a valid release path because the affected SG is a source of steam for the turbine-driven pump. Step 9 — if unable to release steam from the affected SG, maintain <span class="hi-exam">RCS T-HOTs less than 540 &deg;F</span> using the UNAFFECTED SGs. <span class="hi-trap">Trap: establishing cool AFW flow to the affected SG does NOT reduce SG pressure — it adds inventory. The 13 AFW Pump works as a release path because it consumes steam from the affected SG.</span>
+<div class="callout-label">Exam — 2023 Q85</div>
+This question was security-redacted. It tested SRO knowledge of actions during a SG overpressure event in conjunction with security procedures (K/A W/E13 G2.4.28). Reference: 2-EOP-FRHS-2 (R41).
 </div>
 
 ## Connections

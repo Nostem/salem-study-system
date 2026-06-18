@@ -18,9 +18,11 @@ Provides operator actions to respond to degraded core cooling conditions. This i
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q71</div>
-Step 12 — AFW suction shift and SG feeding priority: with only the <span class="hi-exam">AFWST LO LEVEL alarm</span> illuminated (not LO-LO), the crew is <span class="hi-exam">NOT required to shift AFW suction to an alternate source</span> — the LO-LO alarm is required to switch to the alternate suction source. If NO INTACT SG is available, the crew can feed a <span class="hi-exam">RUPTURED SG or a FAULTED SG</span>. <span class="hi-trap">Trap: EOP-FRHS-1 specifically forbids feeding a FAULTED SG if an INTACT or RUPTURED SG is available. EOP-FRCC-2 does NOT have this restriction — it allows feeding a FAULTED SG when no INTACT SG is available.</span>
+<div class="callout-label">Exam — 2015 Q84</div>
+While in FRCC-2 (degraded core cooling) injecting accumulators, <span class="hi-exam">do NOT transition to FRTS-1 on a RED Thermal Shock path until FRCC-2 is complete</span> — stopping the cooldown/depressurization to thermal-soak lets the core re-uncover (could become a RED Core Cooling path / FRCC-1). See [[ECCS]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]].
 </div>
 
 <div class="callout callout-exam">
@@ -29,8 +31,8 @@ FRCC-2 to FRTS-1 transition during accumulator-injection depressurization: <span
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q84</div>
-While in FRCC-2 (degraded core cooling) injecting accumulators, <span class="hi-exam">do NOT transition to FRTS-1 on a RED Thermal Shock path until FRCC-2 is complete</span> — stopping the cooldown/depressurization to thermal-soak lets the core re-uncover (could become a RED Core Cooling path / FRCC-1). See [[ECCS]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]].
+<div class="callout-label">Exam — 2018 Q71</div>
+Step 12 — AFW suction shift and SG feeding priority: with only the <span class="hi-exam">AFWST LO LEVEL alarm</span> illuminated (not LO-LO), the crew is <span class="hi-exam">NOT required to shift AFW suction to an alternate source</span> — the LO-LO alarm is required to switch to the alternate suction source. If NO INTACT SG is available, the crew can feed a <span class="hi-exam">RUPTURED SG or a FAULTED SG</span>. <span class="hi-trap">Trap: EOP-FRHS-1 specifically forbids feeding a FAULTED SG if an INTACT or RUPTURED SG is available. EOP-FRCC-2 does NOT have this restriction — it allows feeding a FAULTED SG when no INTACT SG is available.</span>
 </div>
 
 ## Connections

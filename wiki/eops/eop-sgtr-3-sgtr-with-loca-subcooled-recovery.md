@@ -15,6 +15,8 @@ Provides guidance for recovery from a steam generator tube rupture when a concur
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q79</div>
 Per EOP-SGTR-1 CAS: <span class="hi-exam">If SI has been terminated and RCS subcooling reaches 0°F, start ECCS pumps as necessary to restore subcooling and GO TO EOP-SGTR-3</span> (SGTR with LOCA – Subcooled Recovery). <span class="hi-trap">Do NOT confuse with EOP-SGTR-4 (Saturated Recovery) — SGTR-3 is the correct transition when ECCS pumps can restore subcooling. SGTR-4 applies when saturated conditions persist and subcooled recovery is not achievable.</span>

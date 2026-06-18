@@ -16,6 +16,8 @@ Functional Restoration procedure for the Core Cooling critical safety function i
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q24</div>
 The Basis Document identifies a minimum charging flow of <span class="hi-exam">100 gpm on the SI systems charging flow meter</span> as the indication that ECCS is injecting into the RCS. The procedure checks if RCS pressure is <span class="hi-exam">&lt; 1540 psig</span>; if it is NOT (e.g., 1600 psig), the step to check SI pump flow is skipped because SI flow is not expected above the SI pump shutoff head. <span class="hi-trap">At 1600 psig: SI pumps are above shutoff head (no flow), accumulators (normal 600-650 psig) cannot inject, and RHR pumps (shutoff head ~210 psid) cannot inject — only charging flow indicates injection.</span>

@@ -15,14 +15,16 @@ Provides guidance for cooldown following successful mitigation of a steam genera
 
 ## Key Actions / Information
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q79</div>
-EOP-SGTR-2 is a possible transition from EOP-SGTR-1 for post-SGTR cooldown. <span class="hi-trap">However, if SI has been terminated and RCS subcooling reaches 0°F, the correct transition is to EOP-SGTR-3 (Subcooled Recovery), NOT EOP-SGTR-2.</span>
-</div>
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q79</div>
 Listed as a Technical Reference for SGTR mitigation. When the ruptured SG goes water solid before SI termination during SGTR-1, the correct action is to <span class="hi-exam">continue in SGTR-1, terminate SI, and establish normal charging/letdown</span> — transition to SGTR-2 follows the normal SGTR-1 → SGTR-2 path only after SI termination is achieved.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q79</div>
+EOP-SGTR-2 is a possible transition from EOP-SGTR-1 for post-SGTR cooldown. <span class="hi-trap">However, if SI has been terminated and RCS subcooling reaches 0°F, the correct transition is to EOP-SGTR-3 (Subcooled Recovery), NOT EOP-SGTR-2.</span>
 </div>
 
 ## Connections

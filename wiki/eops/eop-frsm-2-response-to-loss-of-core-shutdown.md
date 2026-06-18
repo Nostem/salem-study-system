@@ -22,6 +22,8 @@ YELLOW path on the Subcriticality CFST. Per the Critical Safety Function Status 
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q83</div>
 FRSM-2 (Yellow Subcriticality path) actions include <span class="hi-exam">energizing Source Range channels and verifying SR SUR is 0 or negative</span>, and (in different conditions) establishing AFW flow and borating the RCS until IR SUR is negative. <span class="hi-trap">FRSM-2 is NOT the correct procedure when an FRTS PURPLE path also exists — FRTS-1 is a higher priority. With SR NIs not energized and IR SUR not more negative than -0.2 dpm, a YELLOW path exists for FRSM-2 alongside the FRTS-1 PURPLE path; FRTS-1 takes precedence.</span>

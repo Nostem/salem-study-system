@@ -16,6 +16,8 @@ Provides recovery actions after a loss of all AC power once a 4KV vital bus has 
 
 ## Key Actions / Information
 
+**Exam & operating coverage:**
+
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q16</div>
 During Loss of All AC recovery, equipment is restarted in a specific protective sequence. The <span class="hi-exam">22 CCW pump is not started until the Thermal Barrier return valve 2CC131 is shut</span>, and a charging (CVCS) pump is not started until the RCP seal inlet is isolated. The concern that defers the charging pump start is <span class="hi-trap">injecting cold seal injection water into a hot RCP seal (thermal shock) — not seal return (2CV116) isolation</span>.
