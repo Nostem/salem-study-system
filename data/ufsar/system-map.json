@@ -4,8 +4,8 @@
     "slug": "115v-ac",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 8",
+    "ufsar_section": "8.3.1.4 (115-Volt ac Instrumentation Power)",
     "salem_na": false
   },
   {
@@ -13,8 +13,8 @@
     "slug": "13kv",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 8",
+    "ufsar_section": "8.3.1.1 (Station Power and Auxiliary Power Transformers — 13 kV distribution; offsite tie in 8.2)",
     "salem_na": false
   },
   {
@@ -22,8 +22,8 @@
     "slug": "460-230v-ac",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 8",
+    "ufsar_section": "8.3.1.3 (460- and 230-Volt Systems)",
     "salem_na": false
   },
   {
@@ -31,8 +31,8 @@
     "slug": "4kv",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 8",
+    "ufsar_section": "8.3.1.2 (4160-Volt System)",
     "salem_na": false
   },
   {
@@ -40,8 +40,8 @@
     "slug": "500kv",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 8",
+    "ufsar_section": "8.2 (Offsite Power System; intro 8.1)",
     "salem_na": false
   },
   {
@@ -49,8 +49,8 @@
     "slug": "abv",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.4.2 (Auxiliary Building Ventilation System)",
     "salem_na": false
   },
   {
@@ -58,8 +58,8 @@
     "slug": "amsac",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 7",
+    "ufsar_section": "7.8 (ATWS Mitigation System Actuation Circuitry — AMSAC)",
     "salem_na": false
   },
   {
@@ -67,8 +67,8 @@
     "slug": "annunciators",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 7",
+    "ufsar_section": "7.7.2.10 (Plant Alarm and Annunciator Systems)",
     "salem_na": false
   },
   {
@@ -76,8 +76,8 @@
     "slug": "auxiliary-feedwater",
     "catalog_system": "061",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 10",
+    "ufsar_section": "10.4.7.2 (Auxiliary Feedwater System)",
     "salem_na": false
   },
   {
@@ -85,8 +85,8 @@
     "slug": "cav",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.4.1 (Control Area Air Conditioning System / CREACS)",
     "salem_na": false
   },
   {
@@ -94,8 +94,8 @@
     "slug": "chemical-and-volume-control-system",
     "catalog_system": "004",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.3.4 (Chemical and Volume Control System)",
     "salem_na": false
   },
   {
@@ -112,8 +112,8 @@
     "slug": "circ-water",
     "catalog_system": "075",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 10",
+    "ufsar_section": "10.4.5 (Circulating Water System)",
     "salem_na": false
   },
   {
@@ -130,8 +130,8 @@
     "slug": "condenser-air-removal",
     "catalog_system": "055",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 10",
+    "ufsar_section": "10.4.2 (Main Condenser Evacuation System)",
     "salem_na": false
   },
   {
@@ -139,8 +139,8 @@
     "slug": "containment-fan-coil-units",
     "catalog_system": "022",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 6",
+    "ufsar_section": "6.2.2.2 (Containment Fan Cooling System; also described as Fan Cooler Units in 9.4.4.2.1)",
     "salem_na": false
   },
   {
@@ -148,8 +148,8 @@
     "slug": "containment-spray",
     "catalog_system": "026",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 6",
+    "ufsar_section": "6.2.2.1 (Containment Spray System)",
     "salem_na": false
   },
   {
@@ -157,8 +157,8 @@
     "slug": "containment-systems",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 6",
+    "ufsar_section": "6.2 (Containment Systems; structure/isolation 6.2.1/6.2.4, criteria 6.1)",
     "salem_na": false
   },
   {
@@ -166,8 +166,8 @@
     "slug": "control-air",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.3.1 (Compressed Air System — Control Air / Station Air)",
     "salem_na": false
   },
   {
@@ -175,8 +175,8 @@
     "slug": "control-rod-drive",
     "catalog_system": "001",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 4",
+    "ufsar_section": "4.2.3 (Reactivity Control System / Control Rod Drive Mechanism; rod control electronics in 7.7.1/7.7.2)",
     "salem_na": false
   },
   {
@@ -184,8 +184,8 @@
     "slug": "dc-power",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 8",
+    "ufsar_section": "8.3.2 (DC Power — 250/125/28-Volt systems)",
     "salem_na": false
   },
   {
@@ -193,8 +193,8 @@
     "slug": "demin-water",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.2.3 (Demineralized Water Makeup System)",
     "salem_na": false
   },
   {
@@ -202,8 +202,8 @@
     "slug": "diesel-generators",
     "catalog_system": "064",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 8",
+    "ufsar_section": "8.3.1.5 (Diesel Generators — Standby Power Supplies)",
     "salem_na": false
   },
   {
@@ -211,8 +211,8 @@
     "slug": "emergency-core-cooling-systems",
     "catalog_system": "006",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 6",
+    "ufsar_section": "6.3 (Emergency Core Cooling System)",
     "salem_na": false
   },
   {
@@ -220,8 +220,8 @@
     "slug": "esf-and-design",
     "catalog_system": "013",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 15",
+    "ufsar_section": "15.1-15.5 (Accident Analyses; article covers Chapter 15 transient/accident analysis, not the ESFAS instrumentation of 7.3)",
     "salem_na": false
   },
   {
@@ -229,8 +229,8 @@
     "slug": "excore-nis",
     "catalog_system": "015",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 7",
+    "ufsar_section": "7.2.1.2 (Nuclear Instrumentation — excore detectors within the Reactor Trip System)",
     "salem_na": false
   },
   {
@@ -238,8 +238,8 @@
     "slug": "feedwater-and-condensate",
     "catalog_system": "059",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 10",
+    "ufsar_section": "10.4.7 (Condensate and Feedwater Systems; SG level control in 7.7.2.6)",
     "salem_na": false
   },
   {
@@ -247,8 +247,8 @@
     "slug": "fhv",
     "catalog_system": "034",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.4.3 (Fuel Handling Area Ventilation)",
     "salem_na": false
   },
   {
@@ -256,8 +256,8 @@
     "slug": "fire-protection",
     "catalog_system": "086",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.5.1 (Fire Protection)",
     "salem_na": false
   },
   {
@@ -265,8 +265,8 @@
     "slug": "incores",
     "catalog_system": "017",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 7",
+    "ufsar_section": "7.7.3.6 (In-core Instrumentation — thermocouples and movable detectors; article also cites 7.6)",
     "salem_na": false
   },
   {
@@ -274,8 +274,8 @@
     "slug": "main-steam",
     "catalog_system": "039",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 10",
+    "ufsar_section": "10.3 (Main Steam System)",
     "salem_na": false
   },
   {
@@ -283,8 +283,8 @@
     "slug": "mtlo",
     "catalog_system": "045",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 10",
+    "ufsar_section": "10.2 (part of Turbine Generator; no dedicated lube-oil subsection in the Ch 10 TOC — covered within 10.2.2 Turbine Generator description)",
     "salem_na": false
   },
   {
@@ -292,8 +292,8 @@
     "slug": "pressurizer-level-and-press-control",
     "catalog_system": "011",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 7",
+    "ufsar_section": "7.7.2.4 / 7.7.2.5 (Pressurizer Pressure Control / Pressurizer Level Control; setpoints from 5.5.10.3)",
     "salem_na": false
   },
   {
@@ -301,8 +301,8 @@
     "slug": "pressurizer",
     "catalog_system": "010",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 5",
+    "ufsar_section": "5.5.10 (Pressurizer; Pressurizer Relief Tank in 5.5.11)",
     "salem_na": false
   },
   {
@@ -310,8 +310,8 @@
     "slug": "radiation-monitoring",
     "catalog_system": "073",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 11",
+    "ufsar_section": "11.4 (Radiological Monitoring — Radiation Monitoring System; process/area channels in 11.4.2; shielding/rad protection in Ch 12)",
     "salem_na": false
   },
   {
@@ -319,8 +319,8 @@
     "slug": "reactor-coolant-pumps",
     "catalog_system": "003",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 5",
+    "ufsar_section": "5.5.1 (Reactor Coolant Pumps)",
     "salem_na": false
   },
   {
@@ -328,8 +328,8 @@
     "slug": "reactor-coolant-system",
     "catalog_system": "002",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 5",
+    "ufsar_section": "5.1 (Summary Description; RCPB integrity 5.2, thermal-hydraulic 5.3, components 5.5)",
     "salem_na": false
   },
   {
@@ -337,8 +337,8 @@
     "slug": "refueling",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.1.4 (Fuel Handling System — refueling operations; fuel storage/handling overall 9.1)",
     "salem_na": false
   },
   {
@@ -346,8 +346,8 @@
     "slug": "residual-heat-removal",
     "catalog_system": "005",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 5",
+    "ufsar_section": "5.5.7 (Residual Heat Removal System)",
     "salem_na": false
   },
   {
@@ -355,8 +355,8 @@
     "slug": "rps-ssps",
     "catalog_system": "012",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 7",
+    "ufsar_section": "7.2 (Reactor Trip System; intro 7.1)",
     "salem_na": false
   },
   {
@@ -364,8 +364,8 @@
     "slug": "rvlis",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 7",
+    "ufsar_section": "7.5 (Safety-Related Display Instrumentation — RVLIS; Reactor Vessel Water Level also in 5.6.5)",
     "salem_na": false
   },
   {
@@ -373,8 +373,8 @@
     "slug": "rx-vessel-and-internals",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 4",
+    "ufsar_section": "4.2.2 (Reactor Vessel Internals; the reactor vessel itself is in 5.4 Reactor Vessel and Appurtenances)",
     "salem_na": false
   },
   {
@@ -382,8 +382,8 @@
     "slug": "secs",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 7",
+    "ufsar_section": "7.3 (Engineered Safety Features Instrumentation — ESF Control / load sequencing 7.3.1.1.10; DG loading sequence also in 8.3)",
     "salem_na": false
   },
   {
@@ -400,8 +400,8 @@
     "slug": "spav",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.4.6 (Switchgear and Penetration Area (SPAV) Ventilation System)",
     "salem_na": false
   },
   {
@@ -409,8 +409,8 @@
     "slug": "spent-fuel-pool",
     "catalog_system": "033",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 9",
+    "ufsar_section": "9.1.3 (Spent Fuel Pool Cooling System; storage 9.1.2)",
     "salem_na": false
   },
   {
@@ -418,8 +418,8 @@
     "slug": "stator-cooling-water",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 10",
+    "ufsar_section": "10.2 (part of Turbine Generator — water-cooled stator windings; no dedicated stator-cooling subsection in the Ch 10 TOC, covered within 10.2.2 Turbine Generator description)",
     "salem_na": false
   },
   {
@@ -427,8 +427,8 @@
     "slug": "steam-dumps",
     "catalog_system": "041",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 7",
+    "ufsar_section": "7.7.2.7 (Steam Dump Control; turbine-bypass hardware in 10.4.4)",
     "salem_na": false
   },
   {
@@ -436,8 +436,8 @@
     "slug": "steam-generators",
     "catalog_system": "035",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 5",
+    "ufsar_section": "5.5.2 (Steam Generators; SG blowdown in 10.4.8, SG water level control in 7.7.2.6)",
     "salem_na": false
   },
   {
@@ -445,8 +445,8 @@
     "slug": "tac",
     "catalog_system": null,
     "mode": "ufsar_structure",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 10",
+    "ufsar_section": "10.2.7 (Turbine Auxiliaries Cooling System)",
     "salem_na": false
   },
   {
@@ -456,15 +456,16 @@
     "mode": "ufsar_structure",
     "ufsar_chapter": null,
     "ufsar_section": null,
-    "salem_na": false
+    "salem_na": false,
+    "note": "Turbine (TGA) building ventilation is non-safety-related and has no dedicated section in the Ch 9 HVAC TOC (9.4 covers control area, aux building, fuel handling, containment, diesel area, SPAV, and SW intake ventilation only). No UFSAR home located; confirm against plant ventilation drawings if a section is needed."
   },
   {
     "article": "turbine-generator.md",
     "slug": "turbine-generator",
     "catalog_system": "045",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 10",
+    "ufsar_section": "10.2 (Turbine Generator; hydrogen supply 10.2.6)",
     "salem_na": false
   },
   {
@@ -472,8 +473,8 @@
     "slug": "waste-gas",
     "catalog_system": "071",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 11",
+    "ufsar_section": "11.3 (Gaseous Waste System)",
     "salem_na": false
   },
   {
@@ -481,8 +482,8 @@
     "slug": "waste-liquid",
     "catalog_system": "068",
     "mode": "ka_index",
-    "ufsar_chapter": null,
-    "ufsar_section": null,
+    "ufsar_chapter": "Chapter 11",
+    "ufsar_section": "11.2 (Liquid Waste System; solid radwaste 11.5)",
     "salem_na": false
   }
 ]
