@@ -11,8 +11,6 @@ aliases:
 
 ## Function & Design Basis
 
-89 active system K/As (catalog system 076). Cover each topic from the UFSAR (then TS / system descriptions / exam bank); mark gaps, never guess.
-
 The Service Water System (SWS) is designed to supply an adequate supply of cooling water to the reactor safeguard and auxiliary equipment under all credible seismic, flood, drought, and storm conditions (UFSAR §9.2.1.1). Coolant flow is divided into two portions — the nuclear area and the turbine generator area (UFSAR §9.2.1.1). The Delaware River is the ultimate heat sink; the system is safety-related and designed for Class I (seismic) conditions except for the turbine area service water piping outside the service water intake structure, which is of non-Class I (seismic) design (UFSAR §9.2.1.2).
 
 The SWS is designed to remain operable under any one pump failure plus one pump under maintenance; any one pump failure plus two pumps under maintenance (provided no more than one pump per intake bay and no more than one pump per vital bus is removed from service); one main supply header failure; and a loss-of-coolant accident coincident with loss of offsite power and subsequent 4 kV vital bus failure (UFSAR §9.2.1.3). Failure or spurious actuation of a remotely operated, manually controlled, or power-operated valve that has no automatic actuation signal is not considered a credible failure; check valves failing to move to their intended position following an accident are treated as passive failures (UFSAR §9.2.1.3).

@@ -8,7 +8,7 @@ status: draft
 
 ## Function & Design Basis
 
-73 active system K/As (catalog system 008). The Component Cooling System (CCS/CCW) is an independent, closed-loop intermediate cooling system — one provided for each unit (UFSAR §9.2.2). It is designed to remove residual and sensible heat from the Reactor Coolant System (RCS) via the Residual Heat Removal (RHR) System during plant shutdown, cool the spent fuel pool water and the letdown flow to the CVCS during power operation, and provide cooling to dissipate waste heat from various primary plant components (UFSAR §9.2.2.1). The system design is based on a maximum service water supply temperature of <span class="hi">90°F</span> (UFSAR §9.2.2.1).
+The Component Cooling System (CCS/CCW) is an independent, closed-loop intermediate cooling system — one provided for each unit (UFSAR §9.2.2). It is designed to remove residual and sensible heat from the Reactor Coolant System (RCS) via the Residual Heat Removal (RHR) System during plant shutdown, cool the spent fuel pool water and the letdown flow to the CVCS during power operation, and provide cooling to dissipate waste heat from various primary plant components (UFSAR §9.2.2.1). The system design is based on a maximum service water supply temperature of <span class="hi">90°F</span> (UFSAR §9.2.2.1).
 
 Because heat is transferred from the component cooling water to the service water, CCW serves as an intermediate system between the RCS and the SWS, ensuring any leakage of radioactive fluid from the components being cooled is contained within the plant (UFSAR §9.2.2.3). The surge tank accommodates expansion, contraction, and in-leakage of water and ensures a continuous component cooling water supply until a leaking cooling line can be isolated (UFSAR §9.2.2.3).
 

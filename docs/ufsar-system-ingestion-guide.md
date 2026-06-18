@@ -45,7 +45,9 @@ Gather these before writing anything. Read them in this order.
    Operating Concepts (K5), Effect of Conditions/Malfunctions (K6). Each bullet is a
    topic you must try to cover, e.g. `008 A3.05 — Automatic isolation valves in the
    CCWS`. Every topic is either answered from a source (you write it) or recorded as a
-   gap (Section 6).
+   gap (Section 6). **The index's header/preamble lines (the `# K/A index — ...` title and
+   the `N active system K/As. Cover each topic...` instruction) are guidance to YOU — never
+   copy them into the article body.**
 
 4. **The UFSAR chapter PDF.** Look up the chapter named in your system-map row in
    `data/ufsar/chapter-index.json`; that file maps each chapter title to its PDF
@@ -118,7 +120,7 @@ group(s). Pull the engineering content from the UFSAR section first, then TS, th
 descriptions, then existing callouts (Section 2 priority).
 
 ```
-## Function & Design Basis      ← the preamble paragraph from the ka-index file (the line that reads 'N active system K/As. Cover each topic...') + UFSAR function/design-basis prose
+## Function & Design Basis      ← UFSAR function/design-basis prose (the system's purpose, safety function, design bases)
 ## Key Components                ← component list with function & location
 ## Power Supplies                ← K2 group (pump/valve power, swing-bus, EDG loading)
 ## Automatic Features & Setpoints ← A3 group (auto isolations, ESFAS actions, setpoints)
