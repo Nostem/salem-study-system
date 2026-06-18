@@ -9,19 +9,58 @@ aliases:
 
 # SECs
 
-## Function
+## Function & Design Basis
 
-Safeguards Equipment Controllers (SECs) automatically initiate and sequence safeguards loads onto vital buses following a Safety Injection signal or loss of offsite power. SECs ensure diesel generators are not overloaded during accident response by sequencing loads on in a prescribed order with time delays. (UFSAR 7.3, 8.3)
+Safeguards Equipment Controllers (SECs) automatically initiate and sequence safeguards loads onto the vital buses following a Safety Injection signal, a blackout (loss of offsite power), or both. SECs ensure the emergency diesel generators are not overloaded during accident response by sequencing loads on in a prescribed order with time delays. The UFSAR describes this function under "Engineered Safety Features Control" — the equipment required to keep the plant in a safe condition during safety injection, blackout, or both can be powered by three standby AC power systems per unit, and each unit has a separate and independent electrical system to provide power for Engineered Safeguards Systems (UFSAR §7.3.1.1.10).
 
-## Safeguards Sequence
+Each diesel generator is provided with an independent loading Control System which initiates the startup and/or loading of the diesel generators during four plant conditions: (1) safety injection only; (2) loss of all outside power (blackout); (3) safety injection coincident with loss of all outside power; and (4) safety injection coincident with undervoltage on the one 4 kV vital bus (UFSAR §7.3.1.1.10). The safeguards equipment required during an accident and blackout is automatically sequenced to start by the Safeguards Equipment Control (SEC) System (UFSAR §7.3.1.1.10.3).
 
-On SI signal with loss of offsite power:
-1. Diesel generators auto-start
-2. Vital bus loads shed
-3. Diesel generators connect to vital buses
-4. Safeguards loads sequenced on in prescribed order and time delays
-5. Ensures diesel generators not overloaded during accident response
-(UFSAR 7.3, 8.3)
+The Control System design meets the following criteria for all automatic startup/loading modes (UFSAR §7.3.1.1.10):
+
+1. <span class="hi-exam">Each vital bus control is independent of the other two.</span>
+2. <span class="hi-exam">Manual control of equipment is locked out until the automatic load sequencing is complete.</span>
+3. <span class="hi-exam">Safeguard actuation signals cannot be interrupted by any automatic device.</span>
+4. Manual initiation of the loading sequence is available to the operator.
+5. Off-normal diesel conditions are alarmed in the Control Room.
+6. <span class="hi-exam">Safety injection conditions take precedence over all other operating modes.</span>
+7. If a diesel is operating in TEST mode at the occurrence of a blackout or safety injection, the <span class="hi-exam">diesel output breaker is automatically tripped open</span>, then the diesel is reloaded according to prevailing conditions.
+8. <span class="hi-exam">No sequential loading can occur until the diesel generator ACB is closed onto the bus.</span>
+9. Inadvertent tripping of the diesel generator output breaker is precluded by locking out the shutdown relay when a safeguard initiation signal is present.
+
+## Key Components
+
+- **Safeguards Equipment Controllers (SECs):** one independent controller per 4 kV vital bus (A, B, C), each powered from its respective Vital Instrument Bus (VIB) and controlling the equipment powered from the respective 4 kV and 460 V buses (see Exam — 2016 Q39). Each vital bus control is independent of the other two (UFSAR §7.3.1.1.10).
+- **Emergency diesel generators:** three standby AC power systems per unit; each diesel has an independent loading Control System (UFSAR §7.3.1.1.10) (see Related systems below).
+- **Undervoltage relays:** a 70% undervoltage signal from each vital bus is combined in a two-out-of-three logic matrix per bus to develop the blackout loading signal (UFSAR §7.3.1.1.10.2). The TS loss-of-voltage trip setpoint is ≥<span class="val-trip">65%</span> of bus voltage (Allowable Value ≥70%) (TS Table 3.3-4, Amendment No. 310).
+- **Degraded-voltage relays:** the safeguards controllers also receive 95.1% (94.6% by Technical Specifications — the difference is relay calibration range) undervoltage signals from their respective vital buses through a <span class="hi-exam">13-second time delay relay</span> in a two-out-of-three logic (UFSAR §7.3.1.1.10.5). TS Sustained Degraded Voltage setpoint ≥<span class="val-trip">94%</span> of bus voltage for ≤15 sec (Allowable Value ≥94.6% for <13 sec) (TS Table 3.3-4, Amendment No. 310).
+- **Motor and valve control:** for starting pump and fan motors the control relays energize the closing coil on the breaker or motor starter; when circuit breakers are used the close/trip coils are supplied from a 125 V DC battery bus (UFSAR §7.3.2.2).
+- **Manual control interface:** manual control of ESF equipment from the main control console uses a 28 V DC logic interface system, powered by two 28 V batteries; all automatic operation of the ESF equipment requires no action in the 28 V circuitry (UFSAR §7.3.2.3).
+
+## Operation
+
+The four operating modes below are the UFSAR Engineered Safety Features Control modes (UFSAR §7.3.1.1.10.1 through §7.3.1.1.10.5). The wiki's existing exam/operating callouts use SEC "Mode" numbering (Mode I/1 = SI only, Mode II/2 = blackout only, Mode III/3 = SI + blackout, Mode II* = single bus degraded UV); these map onto the UFSAR-described modes.
+
+### Mode 1 — Safety Injection Only
+
+A safety injection signal initiates: (1) start the diesel generator units; (2) lock out manual control of equipment circuit breakers until the loads are connected; (3) connect all required accident loads (UFSAR §7.3.1.1.10.1). Because outside power is available in this mode, equipment not affected by the accident remains in service and required safeguards equipment is loaded immediately — except for the fan cooler units, which are started for low-speed operation as soon as they have coasted down from normal high-speed operation (<span class="hi">approximately 15 to 20 seconds</span>) (UFSAR §7.3.1.1.10.1). The diesel generators are started so as to be available if subsequently required, but are <span class="hi-exam">not automatically connected to the vital buses</span>; the operator may shut down the diesels once operation of the required equipment has been verified (UFSAR §7.3.1.1.10.1).
+
+### Mode 2 — Blackout Only
+
+A 70% undervoltage signal from each vital bus is combined in a two-out-of-three logic matrix per bus to develop a blackout loading signal for that bus. The blackout signal and associated Control System then, on each bus: (1) trip all 4160 V and selected 460 V vital bus breakers; (2) start the diesel generator; (3) lock out manual control of bus loads until diesel generator loading is complete; (4) connect the diesel generator to its bus; and (5) sequence the required blackout loads, provided an accident has not occurred and the diesel generator is ready to accept load (UFSAR §7.3.1.1.10.2). Manual control of individual breakers is prevented until automatic loading completes; after a time delay the operator can manually reset the loading sequence signal and restore manual control (UFSAR §7.3.1.1.10.2).
+
+### Mode 3 — Safety Injection Plus Blackout
+
+This mode differs from safety injection only in that circuit breakers of safety equipment cannot be closed until the diesel is ready to accept loads; these breakers are then closed sequentially. The logic recognizes the mode by the coincidence of safety injection and blackout signals, which trips selected 460 V and all 4 kV vital bus breakers (UFSAR §7.3.1.1.10.3). Manual control of individual loads is prevented by a time delay until diesel generator loading is complete, at which time the loading sequence control can be reset and manual control restored (UFSAR §7.3.1.1.10.3).
+
+Starting of the containment spray pumps requires a high-high containment pressure signal in addition to the SEC actuation signal. The CS pumps normally start approximately 20 seconds following an accident; if the pumps do not start at the required sequence time, the SEC actuation signal is delayed until the end of the loading sequence to prevent the spray pumps from starting when other equipment is required to start (UFSAR §7.3.1.1.10.3).
+
+### Mode 4 — Safety Injection Plus One 4 kV Vital Bus Undervoltage
+
+The bus undervoltage signal is derived from the same group of relays used for the blackout signal logic matrices. If an accident occurs in coincidence with a single bus undervoltage condition, the controller: (1) starts the diesel on the affected bus; (2) trips all vital bus equipment breakers; (3) sequences the accident loads when the diesel is ready for loading; and (4) locks out manual control of breakers on the affected bus until diesel generator loading is complete (UFSAR §7.3.1.1.10.4).
+
+### Sustained Degraded Vital Bus Voltage (Degraded Grid)
+
+On a sustained degraded-voltage condition the affected vital bus is separated from the offsite source and loaded onto its associated emergency diesel generator; the <span class="hi-exam">loading sequence is identical to that of the blackout sequence</span> (UFSAR §7.3.1.1.10.5). See **Mode II\*** callouts below.
 
 **Exam & operating coverage:**
 
@@ -95,10 +134,6 @@ After a containment-pressure hi-hi (Phase B / Spray) signal during a 21 SG steam
 <div class="callout-label">Scenario — 2018 #2</div>
 2B SEC fails to actuate on SI signal after LBLOCA. RO reports available equipment on 2B bus failed to start. Recovery: <span class="hi-exam">Block 2B SEC, reset 2B SEC, manually start safeguards loads for 2B bus using EOP-TRIP-1 Table A</span>. Also: 2SW26 NOT in required position — PO manually closes. After SI/Phase A/Phase B reset, <span class="hi-exam">2A and 2C SECs reset normally; 2B SEC is de-energized</span>.
 </div>
-
-## SEC Operating Modes
-
-**Exam & operating coverage:**
 
 ### Mode II (Blackout Only)
 
@@ -180,9 +215,7 @@ After SI and SEC reset, a subsequent LOOP causes EDGs to auto-start on blackout 
 SEC vital instrument bus mapping: <span class="hi-exam">A, B, C SECs are powered from their respective Vital Instrument Buses (VIB)</span> and control the equipment powered from the respective 4KV and 460V buses. Salem Unit 2 equipment mapping: <span class="hi-exam">21 Charging Pump = B vital bus (2BVIB27); 21 Safety Injection Pump = A vital bus (2AVIB24); #2 Emergency Air Compressor (ECAC) = C vital bus (2CVIB9)</span>. With SEC BLOCK switches on 2RP1 inoperable, the only way to start equipment that the SEC has not commanded to run is to deenergize the corresponding VIB — which removes the SEC inhibit. To start all three pieces of equipment requires deenergizing <span class="hi-exam">2AVIB24, 2BVIB27, AND 2CVIB9</span>. <span class="hi-trap">Trap: any answer with only two of the three buses misses one piece of equipment. Each pump/compressor is on a different vital bus, so all three VIBs must be deenergized.</span>
 </div>
 
-## 1RP4 Panel Relationship
-
-**Exam & operating coverage:**
+### 1RP4 Panel Relationship
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q23</div>

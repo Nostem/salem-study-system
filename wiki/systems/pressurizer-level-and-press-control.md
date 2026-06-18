@@ -9,7 +9,24 @@ aliases:
 
 # Pressurizer Level & Press Control
 
-## Pressure Control
+## Function & Design Basis
+
+The pressurizer pressure and level control systems are part of the Reactor Control System and are classified as control systems not required for safety (UFSAR §7.7). RCS pressure is maintained at a constant value by using either the immersion heaters (in the water region) or the spray (in the steam region of the pressurizer); the electrical immersion heaters are located near the bottom of the pressurizer (UFSAR §7.7.2.4). RCS pressure is controlled by the pressurizer whenever a steam bubble is present (UFSAR §5.5.10.3.1). Water inventory in the RCS is maintained by the CVCS, and pressurizer level is controlled by the charging flow controller; the pressurizer water level is programmed as a function of coolant average temperature so that the programmed level matches as nearly as possible the level changes resulting from the coolant temperature changes (UFSAR §7.7.2.5).
+
+The normal operating water volume at full-load conditions is approximately 60 percent of the free internal vessel volume; under part-load conditions the water volume is reduced for proportional reductions in plant load to approximately 25 percent of free vessel volume at zero power (UFSAR §5.5.10.3.2). The pressurizer water level decreases as load is reduced from full load — the result of coolant contraction following the programmed coolant-temperature reduction from full power to low power (UFSAR §7.7.2.5).
+
+## Key Components
+
+- **Electric immersion heaters** — located near the bottom of the pressurizer. A portion of the heater groups are *proportional* heaters used to control small pressure variations (due to heat losses, including the loss from the small continuous spray); the remaining *backup* heaters are turned on when the pressurizer pressure controller signal falls below a given value (UFSAR §7.7.2.4).
+- **Spray nozzles and spray valves** — spray nozzles are located on the top of the pressurizer; spray is initiated when the pressure-controller signal rises above a given setpoint, and the spray rate increases proportionally with increasing pressure until it reaches a maximum value. A small continuous spray is normally maintained through a manual bypass valve to reduce thermal stresses/shock and to help maintain uniform water chemistry and temperature in the pressurizer (UFSAR §7.7.2.4, §5.5.10.3.4).
+- **Power relief valves (PORVs)** — two power relief valves limit system pressure for large load-reduction transients (UFSAR §7.7.2.4).
+- **Spring-loaded safety valves** — limit system pressure should a complete loss of load occur without direct reactor trip or turbine bypass (UFSAR §7.7.2.4).
+- **Charging pump (level control element)** — the positive-displacement pump normally performs the charging function; the charging-flow controller controls the positive-displacement pump speed to produce the flow demanded by the pressurizer level controller (UFSAR §7.7.2.5).
+- **Flow control valve CV55 and flow transmitter FT128** — when a high-head safety injection pump is performing the charging function, level is controlled by the charging-flow controller modulating flow control valve CV55 in the discharge piping downstream of the charging pumps. Flow transmitter FT128 in the discharge header provides actual flow indication to the control-board bezel and to CV55; the desired-flow output from the pressurizer level controller is compared to the actual flow from FT128 and CV55 is positioned so that they match (UFSAR §7.7.2.5).
+
+## Automatic Features & Setpoints
+
+The RCS design and operating pressures, together with the safety, power-operated relief, and pressurizer spray valves' setpoints, are listed in UFSAR Table 5.2-1 (UFSAR §5.5.10.3.3). The numeric setpoints below are taken from that table:
 
 - **Pressure increase:** Spray valves open, condensing steam in the pressurizer steam space
   - Spray valves begin to open at <span class="val-normal">2260 psig</span>
@@ -116,6 +133,14 @@ PZR pressure channel fails HIGH: MPC output rises to 100% (spray valves open, he
 MPC fails low (0% output): <span class="hi-exam">spray valves close</span> (controlled by MPC) and <span class="hi-exam">backup heaters energize</span> → RCS pressure rises → PORVs open at <span class="val-trip">2335 psig</span>. <span class="hi-trap">PORVs are interlocked directly from PZR pressure, NOT from MPC output</span> — MPC failure does not prevent PORV actuation.
 </div>
 
+## Design Features & Interlocks
+
+A low-level heater cutout protects the immersion heaters: PZR heaters de-energize on PZR low level at <span class="val-trip">17%</span> (the low-level backup-heater cutoff), independent of the SI signal (see Exam — 2018 Q5; Exam — 2019 Q9). PZR level is programmed as a function of coolant average temperature, with the program designed to match as nearly as possible the level changes resulting from the coolant temperature changes; charging flow can be manually regulated from the main control room to permit manual control of level during startup and shutdown (UFSAR §7.7.2.5). The pressurizer volume itself is sized so the water volume keeps the heaters covered during a 10 percent step load increase and the steam volume accommodates the surge from a 50 percent load reduction with automatic reactor control and steam dump without reaching the high-level reactor trip (UFSAR §5.5.10.1.2).
+
+## Effects of Loss / Malfunction
+
+Loss of pressure-channel inputs or level-instrument inputs drives characteristic automatic responses (spray/heater demand and charging-flow demand), and the PORVs respond to actual pressure channels independent of the master controller. The reconstructed exam/scenario coverage below details these failure responses.
+
 ### Pressure Channel / Transmitter Failures
 
 <div class="callout callout-exam">
@@ -155,7 +180,9 @@ During an RCS leak in heatup with the Low PZR Pressure SI still blocked (RCS &lt
 PZR Safety Valve seat leakage response: PZR level lowers below program level → <span class="hi-exam">master flow controller automatically RAISES charging flow</span>. <span class="hi-trap">Trap: PZR safety valves are located on top of the PZR, so candidates may think level rises. In reality, steam leaking out reduces steam space pressure AND inventory → level drops.</span> As RCS pressure lowers from the leak, the <span class="hi-exam">OT&Delta;T reactor trip setpoint automatically lowers (K3 pressure coefficient)</span> and trips the reactor before the fixed low PZR pressure setpoint of <span class="val-trip">1865 psig</span> is reached. <span class="hi-trap">OP&Delta;T setpoint varies with AFD, NOT pressure — do not confuse OT&Delta;T (pressure-dependent) with OP&Delta;T (AFD-dependent).</span>
 </div>
 
-## Pressurizer Heater Power Supplies
+## Power Supplies
+
+Twenty banks of "backup" heaters can be powered from the Vital Distribution System, which provides assurance that pressure control for natural circulation can be maintained during a loss of offsite power (UFSAR §5.5.10.3.1). The control-room exam coverage below details the normal and emergency (Vital-bus, EDG-backed) power sources for each PZR heater group and the manual transfer to emergency power.
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q7</div>
@@ -192,7 +219,9 @@ PZR heaters de-energize based on <span class="hi-exam">PZR low level (at <span c
 During LOOP, PZR backup heaters are transferred to emergency power per S2.OP-SO.PZR-0010 Section 5.3. Transfer is <span class="hi-exam">MANUAL (not automatic)</span>. Group 22 transfers to <span class="hi-exam">2A 460V Vital Bus</span>. Only <span class="hi-exam">3 of 14 heater disconnects remain ON</span> to limit load within the emergency bus capacity.
 </div>
 
-## Exam & Operating Coverage
+## Control-Room Operation
+
+Pressurizer level is normally controlled automatically by the charging-flow controller modulating positive-displacement charging-pump speed (or flow control valve CV55 when a high-head SI pump is performing the charging function) to match the level-controller demand; to permit manual control of pressurizer level during startup and shutdown operations, the charging flow can be manually regulated from the main control room (UFSAR §7.7.2.5). The spray valves are automatically controlled but can also be operated manually by a switch in the control room (UFSAR §5.5.10.2.2). PZR level, pressure, and charging/letdown flow are indicated in the control room; the exam/JPM coverage below details level-indication behavior (hot- vs cold-calibrated channels, reference- and variable-leg leaks) and master-flow-controller operation.
 
 ### Level Instrumentation
 
