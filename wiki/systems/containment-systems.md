@@ -10,21 +10,31 @@ aliases:
 
 # Containment
 
-## Function
+## Function & Design Basis
 
-The containment systems ensure that fission product releases are limited following a LOCA or other design basis accident. The containment structure forms a virtually leak-tight barrier. Heat removal systems (spray and fan coolers) reduce containment pressure and temperature. The containment isolation system provides double barriers on all penetrating lines. (UFSAR 6.1, 6.2)
+The central safety objective is control of fission products. The Engineered Safety Features (ESF) embody two of the four methods used to assure that objective: retention of fission products by the containment for operational and accidental releases beyond the reactor coolant boundary, and limiting fission product dispersal to minimize population exposure. (UFSAR §6.1) The ESF at Salem are the steel-lined reinforced concrete containment (a virtually leak-tight barrier for a LOCA), the [[ECCS]] (borated water for core cooling), the Containment Spray System (pressure reduction and iodine removal), and the Containment Fan Cooling System (recirculation and cooling of the containment atmosphere). (UFSAR §6.1) The design philosophy for active ESF components is to provide duplicate equipment so maintenance is possible during operation without impairing the safety function. (UFSAR §6.1)
 
-## Containment Structure
+The reactor containment completely encloses the entire RCS and ensures that post-accident leakage is limited to a safe rate of <span class="hi">0.1 percent of the containment free volume per day at the design pressure of 47 psig</span>. A steel liner and leak-tight penetrations ensure the leakage limits are not exceeded, and the structure provides biological shielding for both normal and accident situations. (UFSAR §6.2.1.1) The containment is designed to safely withstand the loading combinations described in Section 3.8. (UFSAR §6.2.1.1)
+
+The design pressure and temperature equal or exceed the peak pressure and temperature occurring from complete blowdown of the reactor coolant through any rupture of the RCS up to and including complete severance of a reactor coolant pipe. Energy contribution from the steam generators (reverse heat transfer through the SG tubes) is included in the containment pressure transient calculation. Containment design pressure is not exceeded during any subsequent long-term pressure transient determined by the combined effects of heat sources such as residual heat and limited metal-water reactions, structural heat sinks, and operation of the engineered safeguards using only the emergency onsite electric power supply. (UFSAR §6.2.1.1) In a DBA, reactor coolant is released through a double-ended break of the largest reactor coolant pipe — the 29-inch inside diameter section — causing a rapid pressure rise in containment. (UFSAR §6.2.1.1) Additional energy release was considered from stored heat in the reactor core, stored heat in the reactor vessel piping and other RCS components, residual heat production, and limited metal-water reaction energy with resulting hydrogen-oxygen reaction energy; details of mass and energy releases are in Section 15.4.8. (UFSAR §6.2.1.1)
+
+The containment is also designed to withstand credible external pressures. A bounding calculation of the maximum outside-to-inside differential assumed the containment initially at 120°F, at 14.7 psia, and 100 percent relative humidity, with inadvertent spray at 40°F. As air temperature is reduced from 120°F to 40°F, a containment equilibrium pressure of 11.25 psia is produced, causing a differential pressure (d/p) of <span class="hi">3.45 psi</span> across the containment shell, with no credit taken for the Pressure-Vacuum Relief System. The d/p between the design and maximum calculated negative pressure is 0.05 psi. (UFSAR §6.2.1.2) The containment design provides limited access through personnel hatches with the reactor at power; opening of the equipment hatch or both doors in the personnel locks is limited by the Technical Specifications. (UFSAR §6.2.1.2) After shutdown, the containment is purged to reduce the concentration of radioactive gases and airborne particulates to an exposure of less than 40 Derived Air Concentration-Hours (DAC-Hours) in a 40-hour occupational work week, within 2 hours after shutdown, based on 1-percent fuel defects; purge air passes through a high-efficiency filter before release to the plant vent. (UFSAR §6.2.1.2)
+
+### Containment Structure
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
-| Type | Steel-lined reinforced concrete | UFSAR 6.2.1.1 |
-| <span class="hi">Design Pressure</span> | <span class="hi">47 psig</span> | UFSAR 6.2.1.1 |
-| Maximum Allowable Leakage Rate | 0.1% of free volume per day at design pressure | UFSAR 6.2.1.1 |
-| Liner | Steel | UFSAR 6.2.1.1 |
+| Type | Steel-lined reinforced concrete | UFSAR §6.2.1.1 |
+| <span class="hi">Design Pressure</span> | <span class="hi">47 psig at 271°F</span> | UFSAR §6.2.1.1, §6.2.4.1 |
+| Maximum Allowable Leakage Rate | 0.1% of free volume per day at design pressure | UFSAR §6.2.1.1 |
+| Penetration combined leakage limit | < 0.06% of free volume per day | UFSAR §6.2.1.4.1 |
+| Liner | Steel | UFSAR §6.2.1.1 |
+| Maximum calculated negative d/p | 3.45 psi (0.05 psi margin to design) | UFSAR §6.2.1.2 |
 | Seismic Design | Class I | UFSAR 3.8 |
 
-Designed to withstand complete blowdown of reactor coolant through any rupture of the RCS up to and including circumferential severance of an RCS pipe. (UFSAR 6.2.1.1)
+Designed to withstand complete blowdown of reactor coolant through any rupture of the RCS up to and including circumferential severance of an RCS pipe. (UFSAR §6.2.1.1)
+
+The completed containment structure was verified by a Containment Structural Acceptance Test: an air pressure test of <span class="hi">54 psig, equivalent to 115 percent of the design pressure</span>, held for 1 hour, satisfying Regulatory Guide 1.18. Pressurization proceeded in incremental steps to 12, 24, 36, 47, and a final test pressure of 54 psig. (UFSAR §6.2.1.2.2) Overall integrated leakage rate tests (Type A, 10CFR50 Appendix J) are performed at a peak pressure of 47 psig; penetration leakage rate tests (Type B) had a combined limit of less than 0.06 percent of containment free volume per day. (UFSAR §6.2.1.3, §6.2.1.4.1)
 
 **Exam & operating coverage:**
 
@@ -48,12 +58,30 @@ Following a LBLOCA with RCS pressure at 35 psig, a <span class="hi-exam">stable 
 Containment-sump auto pump-down provides the leak-detection signal used to quantify unidentified RCS leakage to containment. OHA C-2 CNTMT SUMP PMP START is the front-panel indication; the Aux typewriter logs sump-pump start/stop events. Per S2.OP-SO.RC-0004 §5.3, the elapsed time between successive sump-pump cycles is converted to a leak rate via Attachment 3. Action thresholds: 0.85 gpm (Section 5.6 trending) and 1.0 gpm (TS 3.4.7.2 unidentified-leakage LCO).
 </div>
 
-## Containment Spray System
+### Engineered Safety Features Summary
 
-### Function
+| ESF System | Function | Source |
+|-----------|----------|--------|
+| Containment Structure | Leak-tight barrier for fission products | UFSAR §6.1 |
+| [[ECCS]] | Borated water injection for core cooling | UFSAR §6.3 |
+| Containment Spray | Pressure reduction + iodine removal | UFSAR §6.2.2.1 |
+| [[CFCUs]] | Atmosphere recirculation and cooling | UFSAR §6.2.2.2 |
+| Containment Isolation | Double barriers on penetrations | UFSAR §6.2.4 |
+
+Adequate post-accident heat removal capability for the containment is provided by two separate ESF Systems — the Containment Spray System and the Containment Fan Cooling System — which use different engineering principles and serve as independent sources of containment cooling to assure that post-accident containment atmospheric temperature and pressure do not rise beyond their design basis values. (UFSAR §6.2.2) A minimum of three containment fan coil units in operation with a single containment spray train is capable of maintaining post-accident containment temperature and pressure below their design basis values, assuming a worst-case single active failure. (UFSAR §6.2.2)
+
+## Key Components
+
+### Containment Spray System
+
+The primary purpose of the Containment Spray System is to spray cool water into the containment atmosphere following a LOCA so that containment pressure does not exceed the design value of <span class="val-trip">47 psig at 271°F</span> (100 percent relative humidity), for all pipe break sizes up to and including the hypothetical instantaneous circumferential rupture of a reactor coolant pipe. (UFSAR §6.2.2.1.1) The system is designed to spray at least <span class="hi">2600 gpm</span> of borated water into the Containment Building whenever two out of four (hi-hi) containment pressure signals occur or a manual signal is given; either of two subsystems (a pump and associated valving and spray headers) is independently capable of delivering 2600 gpm. (UFSAR §6.2.2.1.1) A second purpose, including the recirculation phase, is to remove fission products (primarily iodine) from the containment atmosphere. (UFSAR §6.2.2.1.1)
+
+The principal components are two pumps, one spray additive tank, two eductors, spray ring headers and nozzles, and the necessary piping and valves. The containment spray pumps and the spray additive tank are located in the Auxiliary Building, and the spray pump suctions are normally lined up to the RWST. (UFSAR §6.2.2.1.2) All associated components, piping, structures, and power supplies are designed to Class I (seismic) criteria, and the two spray pumps are horizontal centrifugal type driven by electric motors that can be supplied from the standby AC power supply. (UFSAR §6.2.2.1.2) The system piping is designed for 250 psig at 150°F. (UFSAR §6.2.2.1.2) The Spray Additive Tank holds a sodium hydroxide solution whose concentration assures the injection spray pH will be at least <span class="hi">8.5</span>, and whose capacity is sufficient to bring the containment sump to a pH greater than <span class="hi">7.0</span> on mixing with refueling water, boric acid (BIT — Unit 2 only), accumulator water, and primary coolant — assuring retention of absorbed iodine in the sump and minimizing chloride-induced stress corrosion cracking of stainless steel. (UFSAR §6.2.2.1.2)
+
+#### Function
 Reduces containment pressure and removes iodine from the containment atmosphere by spraying chemically treated (NaOH) water. (UFSAR 6.2.2.1)
 
-### Spray Nozzles
+#### Spray Nozzles
 - Hollow-cone pressure nozzle design, no internal parts subject to clogging
 - 3/8-inch diameter orifice, stainless steel
 - Sauter mean drop size < 1000 microns at design conditions
@@ -61,17 +89,23 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 - Screened through 1/12-inch (2.1 mm) holes during recirculation
 (UFSAR 6.2.2.1)
 
-### Operation
+The four 360-degree ring headers have diameters of 101 feet (Elevation 244 feet-6 inches), 96 feet (Elevation 247 feet-0 inch), 53 feet (Elevation 266 feet-6 inches), and 48 feet (Elevation 269 feet-0 inch); the headers and nozzles are oriented to maximize coverage of the containment volume. (UFSAR §6.2.2.1.2) Unit 2 uses a Containment Dome Access System (an orbital inclined service bridge and supporting structure, seismic Class I, combined weight 394000 lb) that both supports the spray ring header piping and provides access for inspection of the dome liner. (UFSAR §6.2.2.1.2)
+
+#### Operation
 
 **Injection Phase:**
 - Containment spray pumps take suction from RWST
 - NaOH from spray additive tank mixed with spray flow
 - Spray actuated on High-High containment pressure signal
 
+The actuating signal (2/4 hi-hi containment pressure, or manual) energizes the pumps and opens the discharge valves to the spray headers; the spray additive tank valves are opened on the same signal. (UFSAR §6.2.2.1.2) The starting sequence is designed so that delivery of the required spray into the containment is reached in <span class="hi">85 seconds</span> following the appropriate initiating trip signal, accounting for signal delay, assumed loss of offsite power, diesel start time, breaker closure, SEC sequencing, and the time for the spray pumps to reach full speed and fill the headers and piping. (UFSAR §6.2.2.1.3)
+
 **Recirculation Phase:**
 - Spray pumps realigned to containment sump via RHR heat exchangers
 - Cooled recirculated water sprayed into containment
 (UFSAR 6.2.2.1)
+
+After the injection operation, spray pump flow is discontinued when the RWST is depleted; containment pressure control is then maintained with the RHR System functioning through the containment spray headers, with a portion of the recirculation flow from the RHR heat exchanger discharge diverted to the spray header. (UFSAR §6.2.2.1.2) The minimum droplet fall path is approximately 116 feet from the lowest spray ring headers to the operating deck; heat-transfer calculations show the spray water reaches essentially the containment saturation temperature within the first few feet of fall. (UFSAR §6.2.2.1.3) The total quantity of water released to containment at the beginning of recirculation, assuming a DBA with reactor coolant loop piping half full of water, is approximately 275000 gallons, of which approximately 190000 gallons is available at the suction of the RHR pump used for containment spray. (UFSAR §6.2.2.1.3)
 
 **Exam & operating coverage:**
 
@@ -80,7 +114,9 @@ Reduces containment pressure and removes iodine from the containment atmosphere 
 During the LBLOCA, <span class="hi-exam">Phase B / Containment Spray actuation fails</span> and containment pressure rises. <span class="hi-exam">MSLI is initiated at 15 psig</span> and a CFST Containment Environment <span class="hi-exam">PURPLE path (containment pressure &gt; 15 psig)</span> drives [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]. The CFCUs are verified running in low speed.
 </div>
 
-## Containment Fan Coil Units (CFCUs)
+### Containment Fan Coil Units (CFCUs)
+
+The Containment Fan Cooling System recirculates and cools the containment atmosphere following a LOCA so that containment pressure will not exceed its design value of <span class="val-trip">47 psig at 271°F</span> (100-percent relative humidity), designed conservatively assuming core residual heat is released to containment as steam. (UFSAR §6.2.2.2.1) The fan cooler units continue to remove heat after a LOCA and reduce containment pressure close to atmospheric within the first 24 hours. (UFSAR §6.2.2.2.1) Each of the five fan-cooler units is normally capable of transferring heat at the rate of at least <span class="hi">44 x 10⁶ Btu/hr</span> from the containment atmosphere at post-accident peak conditions (a saturated air-stream mixture of 43.5 psig and 265.9°F). (UFSAR §6.2.2.2.1)
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
@@ -103,52 +139,99 @@ Each unit includes: motor, fan, motor heat exchanger, cooling coils, roughing fi
 21 SG steam leak inside containment first cued by <span class="hi-exam">CFCU leak-detection alarms</span>: OHA <span class="hi-exam">C-38 CFCU LK DET HI</span>, then <span class="hi-exam">C-30 CFCU LK DET HI-HI</span>. Diagnostic indications of an in-containment steam leak: containment pressure rising; Tavg slowly lowering; rising steam flows on all loops; steam dump demand lowering. Crew enters AB.STM-0001. Containment pressure exceeds the <span class="hi-exam">15 psig Phase B/Spray setpoint</span>; both Containment Spray pumps fail to auto-start (CT#1 → manual start). After cooldown, when containment pressure is &lt;13 psig, RO resets Spray actuation, stops both CS pumps, and shuts 21 and 22CS2 CS pump discharge valves.
 </div>
 
-## Containment Internal Pressure Limits
+### Containment Atmosphere Iodine Removal
 
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Upper Pressure Limit | <span class="val-alarm">+0.3 psig</span> | TS 3.6.1.4 |
-| Lower Pressure Limit | <span class="val-alarm">-1.5 psig</span> | TS 3.6.1.4 |
-| Design Pressure | <span class="val-trip">47 psig</span> | UFSAR 6.2.1.1 |
-| Design Negative Differential | <span class="val-trip">3.5 psig</span> | TS 3.6.1.4 Bases |
-| Restoration Time | <span class="val-trip">1 hour</span> | TS 3.6.1.4 |
+- Chemically treated spray (NaOH solution) removes elemental iodine vapor by washing action
+- Recirculation through HEPA filter units removes particulates
+- Sump pH maintained 7.0–10.0 to minimize iodine re-evolution and chloride stress corrosion cracking
+(UFSAR 6.2.3)
+
+One containment spray pump and recirculation spray provide sufficient iodine scrubbing capability to ensure that post-accident fission product leakage (based on Regulatory Guide 1.183 release fractions) would not result in doses exceeding the limits of 10CFR50.67. (UFSAR §6.2.2.1.3) The iodine partition coefficient required to maintain a decontamination factor of 100 in the vapor phase (4.3 x 10³) is exceeded at all times during the recirculation phase. (UFSAR §6.2.3)
 
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q36</div>
-Rising containment humidity and pressure ~5 minutes after a trip/SI with no operator action indicates a <span class="hi-exam">PZR Safety Valve failed open → PRT rupture disk ruptures → saturated steam vented to containment</span>. An RCP #1 seal failure would show as rising RCDT level (closed system), not in containment. See [[Pressurizer & PRT]].
+<div class="callout-label">Exam — 2012 Q47</div>
+<span class="hi-exam">Both Containment Iodine Removal Units (IRUs) are powered from G and E non-vital 460VAC</span> (per Aux Building 460-230V one-lines 207916/207919). On a loss of offsite power the non-vital busses are de-energized, so <span class="hi-exam">NEITHER 11 nor 12 IRU is available</span> — the loading state of a vital bus (or its lockout) has no bearing on IRU operation. See [[460/230V AC]].
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q32</div>
-LCO 3.6.1.4 (CONTAINMENT INTERNAL PRESSURE) is NOT met when containment pressure exceeds <span class="hi-exam"><span class="val-alarm">+0.3 psig</span></span>. Restoration time is <span class="hi-exam"><span class="val-trip">60 minutes</span> (1 hour)</span> or place the Unit in HOT STANDBY within 6 hours. <span class="hi-trap">Trap: BEZEL Hi CNTMT Pressure Alarm is 0.2 psid — do not confuse the alarm setpoint (0.2) with the TS limit (+0.3 psig). Other LCOs have 30-minute restoration times (LCOs 3.2.1, 3.2.4, 3.4.10.2, 3.7.2) — do not confuse with the 60-minute LCO 3.6.1.4 time.</span>
+<div class="callout-label">Exam — 2015 Q47</div>
+<span class="hi-exam">Containment Iodine Removal Units (IRUs) are powered from G and E non-vital 460VAC</span>; on a loss of offsite power neither 11 nor 12 IRU is available. See [[460/230V AC]].
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q33</div>
-PRT rupture disk relief to containment raises containment pressure and temperature. After one hour at 0.1 psig/5 min rise: 0 + 1.2 = <span class="hi-exam">1.2 psig exceeds the +0.3 psig upper limit</span> (LCO 3.6.1.4). At 1 &deg;F/5 min rise: 99 + 12 = <span class="hi-exam">111 &deg;F does NOT exceed the 120 &deg;F limit</span> (LCO 3.6.1.5). <span class="hi-trap">Trap: the -1.5 psig is the NEGATIVE pressure limit, not a general magnitude — the positive limit is only 0.3 psig. Also: containment air temperature limit is 120 &deg;F, not 110 &deg;F.</span>
+<div class="callout-label">Exam — 2022 Q59</div>
+Containment Iodine Removal Units (IRUs): should only be placed in service when <span class="hi-exam">directed by Radiation Protection</span> (or at the discretion of SM/CRS for testing). IRUs can <span class="hi-exam">ONLY be operated from the main control room</span> — NOT from the Hot Shutdown Panel. <span class="hi-trap">IRUs are NOT directed by EOPs — they are placed in service at Radiation Protection's request when iodine is present in containment.</span>
+</div>
+
+### Combustible Gas Control
+
+- Hydrogen generated post-LOCA from: zirconium-water reaction, corrosion of aluminum/zinc, radiolysis
+- Hydrogen monitoring provided in containment
+- Hydrogen purge capability
+(UFSAR 6.2.5)
+
+The potential sources of post-DBA hydrogen are the zirconium-water reaction (the zircaloy-water reaction is limited to 1 percent by weight of the total zirconium in the core), corrosion of construction materials (aluminum and zinc), and radiolytic decomposition of the emergency core cooling solution (both core solution and sump solution radiolysis). (UFSAR §6.2.5.1, §6.2.5.1.1) The source of hydrogen from the CVCS (Chemical and Volume Control System) is automatically cut off upon receipt of a safety injection signal. (UFSAR §6.2.5.1.6) The requirements for a hydrogen control system to mitigate a hydrogen release were eliminated when 10CFR50.44 was revised and it no longer defined a design-basis LOCA hydrogen release; the hydrogen recombiner sections of the UFSAR were deleted based on <span class="hi">Technical Specification Amendments 281 (DPR-70) and 264 (DPR-75)</span>. (UFSAR §6.2.5.1.7, §6.2.5.2)
+
+A Hydrogen Monitoring System provides continuous measurement of hydrogen concentration at two sample locations within containment, designed per NUREG-0737 and Regulatory Guide 1.97; the analyzing unit is mounted inside containment, all components are seismically designed and powered from vital sources. (UFSAR §6.2.5.3) The range of measurement is 0 to 10 volume percent with an accuracy of 2 percent of full scale, displayed in the Control Room with alarms for high hydrogen concentration, power failure, system error, and calibration mode. Hydrogen concentration may also be determined by grab sample using the containment air particulate detector (APD) skid. (UFSAR §6.2.5.3)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q48</div>
+Post-LOCA, H2 Recombiners are placed in service (per the EOPs) with containment H2 between 2-4% and use electric heating elements to raise containment-atmosphere temperature. <span class="hi-exam">As containment pressure rises at a constant power setting the recombiner becomes LESS effective; the power correction factor curve directs RAISING the power setpoint</span> (S2.OP-SO.CAN-0001). See [[S2.OP-SO.CAN-0001 — Hydrogen Recombiner Operation]].
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q54</div>
-<span class="hi-exam">TS 3.6.1.4 requires containment internal pressure between -1.5 and +0.3 psig during Modes 1-4.</span> The upper limit (+0.3 psig) ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during a DBA (LOCA or steam line break). The lower limit (-1.5 psig) ensures the design negative pressure differential of <span class="val-trip">3.5 psig</span> is not exceeded. If outside limits, must restore within <span class="val-trip">1 hour</span>.
+<div class="callout-label">Exam — 2019 Q32</div>
+Hydrogen recombiner reference powers: <span class="hi-exam">21 Recombiner = 43.68 KW, 22 Recombiner = 42.63 KW</span>. With CURRENT pressure 4.0 psig and PRIOR-to-LOCA temperature 90°F → Cp = 1.21 → 21 Recombiner power setting = 43.68 x 1.21 = 52.85 → rounded to <span class="hi-exam">54 KW</span>.
 </div>
 
-## Containment Isolation System
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q92</div>
+Per EOP-LOCA-1 Step 24, hydrogen concentration decision points: <span class="hi-exam">0.5% to 4.0% → start only ONE recombiner</span>. <span class="hi-exam">≥ 4.0% → consult TSC</span>. <span class="hi-trap">S2.OP-SO.CAN-0001 (normal operating procedure) starts two recombiners if H2 is 2.0% and rising. The EOP limits to one recombiner — do not confuse the two procedures.</span>
+</div>
 
-### Design Basis
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q60</div>
+Hydrogen recombiner power setting calculation (per S2.OP-SO.CAN-0001): <span class="hi-exam">Power Setting = Cp (pressure correction factor) x Reference Power</span>. Use the <span class="hi-exam">CURRENT containment pressure</span> and the <span class="hi-exam">PRIOR-to-LOCA containment temperature</span> to select Cp from Attachment 2. Round up to the <span class="hi-exam">next higher setting readable on the meter</span>. Example: 22 Hydrogen Recombiner at 5 psig and 90F pre-LOCA: Cp=1.24, Ref Power=42.63 KW → 52.86 KW → rounded to <span class="hi-exam">54 KW</span>. <span class="hi-trap">Use pre-LOCA temperature (not current), and current pressure (not peak) for Cp selection.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q58</div>
+Hydrogen Recombiner System: per EOP-LOCA-1 step 17, <span class="hi-exam">only one hydrogen recombiner is allowed in service</span> when containment hydrogen concentration is between >0.5% and <4%. Operation of both hydrogen recombiners is not permitted. The purpose is to reduce hydrogen concentration to prevent formation of a flammable mixture that could ignite and cause a pressure excursion challenging containment integrity.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 RO-A1</div>
+EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free volume at STP: <span class="hi-exam">V = 2.62E06 x Tfact</span> where Tfact = 492/Tabs. At 140F containment temp: Tabs = 600R, Tfact = 0.82, V = 2148400 ft3. Maximum allowable hydrogen concentration is <span class="hi-exam">3.0%</span> — vent volume limited to (3.0% - current H2%) x V / 100%.
+</div>
+
+## Operation
+
+### Containment Isolation System
+
+The Containment Isolation System provides the means of isolating the containment atmosphere and RCS as required to prevent the release of radioactivity to the outside environment in the event of a LOCA. (UFSAR §6.2.4) Its design assures that subsequent to an accident there will be <span class="hi">two barriers</span> between the atmosphere outside containment and the containment atmosphere, per the acceptance methods of General Design Criteria 55 and 56 and ANS N271-1976/ANS 56.2. (UFSAR §6.2.4.1) The design parameters of all piping and connected equipment within the isolated boundaries are equal to or greater than the DBA environment of the containment, <span class="val-trip">47 psig, 271°F</span>; all isolation valves and equipment are designed to Class I seismic criteria, and lines that must remain in service after certain accidents have at minimum one manual isolation valve outside containment. (UFSAR §6.2.4.1)
+
+Four classes of piping arrangement are provided: **Class A** (connected to a normally closed system outside, separated from RCS/atmosphere by a closed system inside — no additional isolation valves required); **Class B** (open systems outside, connected to RCS or open to atmosphere — two auto-trip valves, one inside and one outside, or a check valve inside and auto-trip outside); **Class C** (open systems outside, separated from RCS/atmosphere by a closed system — same as Class B); and **Class D** (closed system outside, connected to RCS or open to atmosphere — one auto-trip or check valve inside, no valve outside). (UFSAR §6.2.4.2) The fuel transfer tube is a 20-inch inside diameter tube sealed with a blind flange inside containment; redundant isolation is a double o-ring seal on the flange, and the terminus outside containment is closed by a gate valve that is not a containment isolation valve. (UFSAR §6.2.4.2)
+
+#### Design Basis
 Provides double barriers for each line penetrating containment. Automatic isolation on containment isolation signals. (UFSAR 6.2.4)
 
-### Isolation Signals
+The design pressure of all piping and connecting components within the isolation boundary is not less than the design pressure of the containment, 47 psig; valves used for containment isolation are capable of tight shutoff against gas leakage from containment design pressure down to zero psig. (UFSAR §6.2.4.3) Automatic isolation valves can be opened only upon manual reset of the solid state logic without cessation of the actuating signal, and once opened by a safety injection signal can only be closed upon cessation and manual reset of the actuating signal. (UFSAR §6.2.4.3) Air-operated automatic isolation valves are air-to-open, spring-return, and fail closed on loss of voltage or control air, providing a fail-safe design; the air-operated isolation valves inside containment function properly under all accident conditions. (UFSAR §6.2.4.3) The closure-time analysis (with loss of offsite power coincident with LOCA) assumes diesel-generators ready for loading in 13 seconds plus 10 seconds for motor-operated valve closure (total 23 seconds); air-operated valve closure is conservatively estimated at 10 seconds, with operation initiated at a containment pressure of 4.0 psig (reached in a conservative 3 seconds) for a total of 13 seconds; the containment pressure-vacuum relief valve has a 2-second closure time (total 5 seconds). (UFSAR §6.2.4.3)
+
+#### Isolation Signals
 - **Phase A** — initiated by SI signal. Closes majority of automatic containment isolation valves.
 - **Phase B** — initiated by High-High containment pressure (Containment Spray actuation). Closes remaining isolation valves.
 - **Containment Ventilation Isolation (CVI)** — closes containment purge isolation valves (VC1, VC4) AND pressure/vacuum relief valves (VC5, VC6).
 (UFSAR 6.3.2, 6.2.4)
 
+A safety injection signal generates the Phase A isolation signal, which closes all trip valves in lines connected to the reactor coolant loops that penetrate containment; a rise in containment pressure to the high containment pressure setpoint also generates the Phase A signal. (UFSAR §6.2.4.2) A further rise to the high-high containment pressure setpoint generates both the containment spray and the containment isolation Phase B signal, closing all normally open lines not closed by Phase A; normally open motor-operated Containment Spray System valves are opened by the high-high signal. (UFSAR §6.2.4.2) The CV68 and CV69 valves do not receive containment isolation signals (Phase A or Phase B) — they get a close signal on a Safety Injection (SI) signal. (UFSAR §6.2.4.2) The CA330 control-air outside-containment isolation valves (11, 12, 21, 22CA330) fail closed on loss of air but fail as-is on loss of vital DC power. (UFSAR §6.2.4.3)
+
 **Exam & operating coverage:**
 
-### Phase A & B Isolation Signals
+##### Phase A & B Isolation Signals
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q65</div>
@@ -188,7 +271,7 @@ Phase A containment isolation valves: <span class="hi-exam">CC113 and CC215 (Exc
 Manually initiating <span class="hi-exam">Phase B and Spray Actuation</span> from the Control Room Console also actuates a Containment Ventilation Isolation (CVI) signal. CVI closes <span class="hi-exam">ALL purge AND pressure/vacuum relief valves: VC1, VC4, VC5, and VC6</span>. <span class="hi-trap">Phase A Isolation does NOT generate a CVI signal. CVI closes all four valves (VC1, 4, 5, 6) — not just the purge isolation valves (VC1, 4).</span>
 </div>
 
-### Control Air Isolation (CA330)
+##### Control Air Isolation (CA330)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2019 Q27</div>
@@ -200,7 +283,7 @@ CA330 (Control Air Isolation Valve) operability: IAW <span class="hi-exam">LCO 3
 <span class="hi-exam">CA330 Instrument Air Containment Isolation valves close on Phase A signal ONLY — NOT on SI or Phase B.</span> 21 CA330 supplies the 2A control air header; 22 CA330 supplies the 2B control air header. <span class="hi-exam">BOTH CA330s must be closed</span> to fully isolate instrument air to containment (each is in a separate air supply line with its own check valve). Backup air receivers inside containment provide PORV air supply during EOP actions.
 </div>
 
-### Containment Ventilation & Purge
+##### Containment Ventilation & Purge
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q93</div>
@@ -222,7 +305,41 @@ IST containment ventilation valve surveillance review: <span class="hi-exam">2VC
 Containment pressure relief: upon <span class="hi-exam">OHA A-6 (RMS HI RAD OR TRBL) alarm on 2R41D</span> with automatic isolation defeated, must <span class="hi-exam">manually close PRESSURE RELIEF DAMPER, 2VC6, and 2VC5</span> to isolate the radiological release.
 </div>
 
-## Containment Air Locks
+### Containment Internal Pressure Limits
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Upper Pressure Limit | <span class="val-alarm">+0.3 psig</span> | TS 3.6.1.4 |
+| Lower Pressure Limit | <span class="val-alarm">-1.5 psig</span> | TS 3.6.1.4 |
+| Design Pressure | <span class="val-trip">47 psig</span> | UFSAR 6.2.1.1 |
+| Design Negative Differential | <span class="val-trip">3.5 psig</span> | TS 3.6.1.4 Bases |
+| Restoration Time | <span class="val-trip">1 hour</span> | TS 3.6.1.4 |
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q36</div>
+Rising containment humidity and pressure ~5 minutes after a trip/SI with no operator action indicates a <span class="hi-exam">PZR Safety Valve failed open → PRT rupture disk ruptures → saturated steam vented to containment</span>. An RCP #1 seal failure would show as rising RCDT level (closed system), not in containment. See [[Pressurizer & PRT]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q32</div>
+LCO 3.6.1.4 (CONTAINMENT INTERNAL PRESSURE) is NOT met when containment pressure exceeds <span class="hi-exam"><span class="val-alarm">+0.3 psig</span></span>. Restoration time is <span class="hi-exam"><span class="val-trip">60 minutes</span> (1 hour)</span> or place the Unit in HOT STANDBY within 6 hours. <span class="hi-trap">Trap: BEZEL Hi CNTMT Pressure Alarm is 0.2 psid — do not confuse the alarm setpoint (0.2) with the TS limit (+0.3 psig). Other LCOs have 30-minute restoration times (LCOs 3.2.1, 3.2.4, 3.4.10.2, 3.7.2) — do not confuse with the 60-minute LCO 3.6.1.4 time.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q33</div>
+PRT rupture disk relief to containment raises containment pressure and temperature. After one hour at 0.1 psig/5 min rise: 0 + 1.2 = <span class="hi-exam">1.2 psig exceeds the +0.3 psig upper limit</span> (LCO 3.6.1.4). At 1 &deg;F/5 min rise: 99 + 12 = <span class="hi-exam">111 &deg;F does NOT exceed the 120 &deg;F limit</span> (LCO 3.6.1.5). <span class="hi-trap">Trap: the -1.5 psig is the NEGATIVE pressure limit, not a general magnitude — the positive limit is only 0.3 psig. Also: containment air temperature limit is 120 &deg;F, not 110 &deg;F.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q54</div>
+<span class="hi-exam">TS 3.6.1.4 requires containment internal pressure between -1.5 and +0.3 psig during Modes 1-4.</span> The upper limit (+0.3 psig) ensures peak pressure does not exceed the <span class="val-trip">47 psig</span> design pressure during a DBA (LOCA or steam line break). The lower limit (-1.5 psig) ensures the design negative pressure differential of <span class="val-trip">3.5 psig</span> is not exceeded. If outside limits, must restore within <span class="val-trip">1 hour</span>.
+</div>
+
+### Containment Air Locks
+
+The containment design provides limited access through personnel hatches with the reactor at power, intended primarily for inspection and maintenance; opening the equipment hatch (door, under administrative control) or both doors in the personnel locks is limited by the Technical Specifications, and no instrumentation is provided for the equipment hatch. (UFSAR §6.2.1.2, §6.2.4.2)
 
 **Exam & operating coverage:**
 
@@ -231,96 +348,7 @@ Containment pressure relief: upon <span class="hi-exam">OHA A-6 (RMS HI RAD OR T
 IAW LCO 3.6.1.3 (Containment Air Locks), the containment airlock interlock mechanisms for BOTH containment airlocks are required to be OPERABLE in <span class="hi-exam">MODES 1-4 ONLY</span>. If a containment airlock with ONLY the interlock mechanism inoperable: REQUIRED ACTION B.1 requires verifying an OPERABLE door is <span class="hi-exam">closed ONLY (not locked)</span> in the affected air lock within <span class="hi-exam">1 hour</span>. REQUIRED ACTION B.2 then requires <span class="hi-exam">locking the OPERABLE door closed within 24 hours</span>. <span class="hi-trap">Trap: "closed and locked" is the 24-hour action (B.2), not the 1-hour action (B.1). The immediate 1-hour requirement is closed ONLY.</span>
 </div>
 
-## Containment Atmosphere Iodine Removal
-
-- Chemically treated spray (NaOH solution) removes elemental iodine vapor by washing action
-- Recirculation through HEPA filter units removes particulates
-- Sump pH maintained 7.0–10.0 to minimize iodine re-evolution and chloride stress corrosion cracking
-(UFSAR 6.2.3)
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q47</div>
-<span class="hi-exam">Both Containment Iodine Removal Units (IRUs) are powered from G and E non-vital 460VAC</span> (per Aux Building 460-230V one-lines 207916/207919). On a loss of offsite power the non-vital busses are de-energized, so <span class="hi-exam">NEITHER 11 nor 12 IRU is available</span> — the loading state of a vital bus (or its lockout) has no bearing on IRU operation. See [[460/230V AC]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q47</div>
-<span class="hi-exam">Containment Iodine Removal Units (IRUs) are powered from G and E non-vital 460VAC</span>; on a loss of offsite power neither 11 nor 12 IRU is available. See [[460/230V AC]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q59</div>
-Containment Iodine Removal Units (IRUs): should only be placed in service when <span class="hi-exam">directed by Radiation Protection</span> (or at the discretion of SM/CRS for testing). IRUs can <span class="hi-exam">ONLY be operated from the main control room</span> — NOT from the Hot Shutdown Panel. <span class="hi-trap">IRUs are NOT directed by EOPs — they are placed in service at Radiation Protection's request when iodine is present in containment.</span>
-</div>
-
-## Combustible Gas Control
-
-- Hydrogen generated post-LOCA from: zirconium-water reaction, corrosion of aluminum/zinc, radiolysis
-- Hydrogen monitoring provided in containment
-- Hydrogen purge capability
-(UFSAR 6.2.5)
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q48</div>
-Post-LOCA, H2 Recombiners are placed in service (per the EOPs) with containment H2 between 2-4% and use electric heating elements to raise containment-atmosphere temperature. <span class="hi-exam">As containment pressure rises at a constant power setting the recombiner becomes LESS effective; the power correction factor curve directs RAISING the power setpoint</span> (S2.OP-SO.CAN-0001). See [[S2.OP-SO.CAN-0001 — Hydrogen Recombiner Operation]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q32</div>
-Hydrogen recombiner reference powers: <span class="hi-exam">21 Recombiner = 43.68 KW, 22 Recombiner = 42.63 KW</span>. With CURRENT pressure 4.0 psig and PRIOR-to-LOCA temperature 90°F → Cp = 1.21 → 21 Recombiner power setting = 43.68 x 1.21 = 52.85 → rounded to <span class="hi-exam">54 KW</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q92</div>
-Per EOP-LOCA-1 Step 24, hydrogen concentration decision points: <span class="hi-exam">0.5% to 4.0% → start only ONE recombiner</span>. <span class="hi-exam">≥ 4.0% → consult TSC</span>. <span class="hi-trap">S2.OP-SO.CAN-0001 (normal operating procedure) starts two recombiners if H2 is 2.0% and rising. The EOP limits to one recombiner — do not confuse the two procedures.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q60</div>
-Hydrogen recombiner power setting calculation (per S2.OP-SO.CAN-0001): <span class="hi-exam">Power Setting = Cp (pressure correction factor) x Reference Power</span>. Use the <span class="hi-exam">CURRENT containment pressure</span> and the <span class="hi-exam">PRIOR-to-LOCA containment temperature</span> to select Cp from Attachment 2. Round up to the <span class="hi-exam">next higher setting readable on the meter</span>. Example: 22 Hydrogen Recombiner at 5 psig and 90F pre-LOCA: Cp=1.24, Ref Power=42.63 KW → 52.86 KW → rounded to <span class="hi-exam">54 KW</span>. <span class="hi-trap">Use pre-LOCA temperature (not current), and current pressure (not peak) for Cp selection.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q58</div>
-Hydrogen Recombiner System: per EOP-LOCA-1 step 17, <span class="hi-exam">only one hydrogen recombiner is allowed in service</span> when containment hydrogen concentration is between >0.5% and <4%. Operation of both hydrogen recombiners is not permitted. The purpose is to reduce hydrogen concentration to prevent formation of a flammable mixture that could ignite and cause a pressure excursion challenging containment integrity.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 RO-A1</div>
-EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free volume at STP: <span class="hi-exam">V = 2.62E06 x Tfact</span> where Tfact = 492/Tabs. At 140F containment temp: Tabs = 600R, Tfact = 0.82, V = 2148400 ft3. Maximum allowable hydrogen concentration is <span class="hi-exam">3.0%</span> — vent volume limited to (3.0% - current H2%) x V / 100%.
-</div>
-
-## Engineered Safety Features Summary
-
-| ESF System | Function | Source |
-|-----------|----------|--------|
-| Containment Structure | Leak-tight barrier for fission products | UFSAR 6.1 |
-| [[ECCS]] | Borated water injection for core cooling | UFSAR 6.3 |
-| Containment Spray | Pressure reduction + iodine removal | UFSAR 6.2.2.1 |
-| [[CFCUs]] | Atmosphere recirculation and cooling | UFSAR 6.2.2.2 |
-| Containment Isolation | Double barriers on penetrations | UFSAR 6.2.4 |
-
-## Tech Spec LCOs
-
-- **[[TS 3/4.6 — Containment]]** — Containment integrity, leakage
-- **[[TS 3/4.6 — Containment|TS 3/4.6.1]]** — Containment Integrity
-- **[[TS 3/4.6 — Containment|TS 3/4.6.2]]** — Depressurization and Cooling Systems (spray, fan coolers)
-- **[[TS 3/4.6 — Containment|TS 3/4.6.3]]** — Containment Isolation Valves
-- **[[TS 3/4.6 — Containment|TS 3/4.6.4]]** — Combustible Gas Control
-- **[[TS 3/4.6 — Containment|TS 3/4.6.5]]** — Containment Structural Integrity
-
-**Exam & operating coverage:**
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q65</div>
-Containment Integrity (TS 3.6.1.1) surveillance 4.6.1.1.d invokes the CFCU surveillance (4.6.2.3.a), which includes <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — so a SW Accumulator nitrogen cover-gas pressure below minimum makes Containment Integrity NOT met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified by Admin controls (4.6.1.1.a); opening the airlock for transit is allowed; and CIVs have their own less-restrictive TS 3.6.3, not in the 3.6.1.1 surveillances.</span> See [[CFCUs]], [[TS 3/4.6 — Containment]].
-</div>
-
-## Fire Protection
+### Fire Protection
 
 - Fire detection and alarm system throughout the plant
 - Water supply (fire water pumps, sprinklers, standpipes)
@@ -346,26 +374,26 @@ Fire Protection Containment Isolation (2FP147): on a valid fire detected inside 
 Fire protection: with both Salem fire pumps inoperable, per AB.FP-0001: <span class="hi-exam">open backup fire suppression water supply cross-tie valves from Hope Creek</span>. If cross-tie cannot be established within <span class="hi-exam">24 hours</span>, unit must be in <span class="hi-exam">Hot Standby within 6 hours</span>, then Hot Shutdown within the following 6 hours, then Cold Shutdown within the subsequent 24 hours.
 </div>
 
-## Adverse Containment Conditions
+### Adverse Containment Conditions
 
-### Definition
+#### Definition
 Adverse containment conditions exist when containment pressure is elevated above normal, typically >= 4 psig. This affects multiple EOP setpoints and action criteria because elevated containment pressure degrades instrument accuracy and changes thermal-hydraulic behavior.
 
-### Adverse Containment Triggers for SMM
+#### Adverse Containment Triggers for SMM
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q26</div>
 Adverse containment conditions for the Subcooling Margin Monitor (SMM) are triggered by <span class="hi-exam">EITHER containment pressure > 4 psig OR containment radiation (R44A/B) > 1E05 R/HR</span> — only one condition is required. Pressure-driven adverse signal auto-resets when pressure drops below 3 psig. <span class="hi-trap">Radiation-driven adverse signal does NOT auto-reset — requires manual action even after radiation levels drop below the adverse threshold.</span>
 </div>
 
-### Impact on EOP Parameters
+#### Impact on EOP Parameters
 When adverse containment conditions exist, EOP setpoints for level instruments are adjusted upward to account for the effect of containment pressure on instrument readings:
 
 | Parameter | Normal Containment | Adverse Containment |
 |---|---|---|
 | SG NR level for RCP start (EOP-FRCC-1) | >= 9% | >= 15% |
 
-### Why It Matters
+#### Why It Matters
 - SG narrow range level transmitters are affected by containment pressure because the reference leg is inside containment
 - Higher containment pressure depresses the indicated level reading
 - EOPs use higher setpoint values under adverse containment to ensure actual conditions support the intended action
@@ -374,8 +402,6 @@ When adverse containment conditions exist, EOP setpoints for level instruments a
 <div class="callout-label">Exam — 2023 Q84</div>
 With containment pressure at <span class="hi-exam">5 psig</span> (adverse conditions), the required SG NR level for RCP start in EOP-FRCC-1 is <span class="hi-exam">>= 15%</span> instead of the normal 9%. <span class="hi-trap">Trap: using normal containment criteria when adverse conditions exist will overestimate the number of available RCPs.</span>
 </div>
-
-## Exam & Operating Coverage
 
 ### Containment Entries
 
@@ -389,6 +415,22 @@ Containment entries are governed by SC.SA-ST.ZZ-0001 and RP-SA-102; the SM/CRS a
 <div class="callout callout-exam">
 <div class="callout-label">Exam -- 2023 Q95</div>
 FHB BLDG AIR D/P LO alarm during fuel moves: per S2.OP-AR.ZZ-0011, the <span class="hi-exam">FIRST action is to suspend movement of irradiated fuel assemblies</span>, THEN validate the alarm using the local indicator. If the alarm is invalid and will not clear, per S2.OP-IO.ZZ-0010, the <span class="hi-exam">local indicator MAY be used to continuously monitor FHB D/P</span> as a compensatory measure -- fuel moves may resume with continuous local monitoring. <span class="hi-trap">Trap: validating the alarm is performed AFTER suspending fuel moves, not before.</span>
+</div>
+
+## Tech Spec LCOs
+
+- **[[TS 3/4.6 — Containment]]** — Containment integrity, leakage
+- **[[TS 3/4.6 — Containment|TS 3/4.6.1]]** — Containment Integrity
+- **[[TS 3/4.6 — Containment|TS 3/4.6.2]]** — Depressurization and Cooling Systems (spray, fan coolers)
+- **[[TS 3/4.6 — Containment|TS 3/4.6.3]]** — Containment Isolation Valves
+- **[[TS 3/4.6 — Containment|TS 3/4.6.4]]** — Combustible Gas Control
+- **[[TS 3/4.6 — Containment|TS 3/4.6.5]]** — Containment Structural Integrity
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q65</div>
+Containment Integrity (TS 3.6.1.1) surveillance 4.6.1.1.d invokes the CFCU surveillance (4.6.2.3.a), which includes <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — so a SW Accumulator nitrogen cover-gas pressure below minimum makes Containment Integrity NOT met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified by Admin controls (4.6.1.1.a); opening the airlock for transit is allowed; and CIVs have their own less-restrictive TS 3.6.3, not in the 3.6.1.1 surveillances.</span> See [[CFCUs]], [[TS 3/4.6 — Containment]].
 </div>
 
 ## Connections

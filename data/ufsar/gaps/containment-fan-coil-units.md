@@ -1,0 +1,9 @@
+# Gaps — containment-fan-coil-units (catalog system 022)
+
+K/A-index topics not answered by UFSAR §6.2.2.2, TS 3/4.6, system descriptions, or existing exam callouts.
+
+- 022 K1.03 — Auxiliary steam interconnection to the Containment Cooling System — checked UFSAR §6.2.2.2 (Containment Fan Cooling System), TS 3/4.6, existing callouts; no auxiliary-steam interface to the CFCUs is described (the catalog topic reflects PWRs whose containment air handlers use steam heating coils; Salem CFCUs are service-water-cooled recirculation units with no steam coil in §6.2.2.2). No sourced value found.
+- 022 K2.02 — (SF5 CCS) Chillers power supply — checked UFSAR §6.2.2.2, TS 3/4.6, existing callouts; the Salem Containment Fan Cooling System uses service-water-cooled coils, not chillers, so no chiller power supply is described for the CFCUs in §6.2.2.2. No sourced value found.
+- 022 K4.04 — Cooling of CRDMs (Control Rod Drive Mechanisms) — checked UFSAR §6.2.2.2; CRDM cooling is not a function of the Containment Fan Cooling System per §6.2.2.2 (CRDM cooling is provided by a separate ventilation/cooling arrangement, not described in the ESF fan-cooler section). Not addressed in §6.2.2.2 or the existing callouts. No sourced value found.
+- 022 K4.06 — Containment pipe chase cooling — checked UFSAR §6.2.2.2; the ESF fan-cooler section describes ventilation of the polar-crane-rail periphery, steam-generator areas, and dome but does not specifically address pipe-chase cooling as a CFCU function. No sourced value found.
+- 022 K5.04 — Effects of accident conditions on containment instrumentation — checked UFSAR §6.2.2.2; the section addresses fan-cooler motor insulation, bearings, and component qualification for the accident environment but does not characterize effects on containment instrumentation generally. No sourced value found.

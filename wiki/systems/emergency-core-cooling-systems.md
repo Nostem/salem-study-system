@@ -9,9 +9,20 @@ aliases:
 
 # ECCS
 
-## Function
+## Function & Design Basis
 
 The ECCS provides borated water to cool the reactor core in the event of a loss-of-coolant accident (LOCA). It injects borated water into the RCS to: (1) terminate any reactivity increase, (2) provide initial core cooling and reflooding, and (3) replenish coolant lost from the primary system. The boron in the injected water combined with control rods ensures shutdown reactivity. (UFSAR 6.1, 6.3)
+
+The ECCS automatically delivers cooling water to the core to limit fuel clad temperature and keep the core substantially intact, with its essential heat-transfer geometry preserved, for the following design-basis events (UFSAR §6.3.1.1):
+
+1. All RCS pipe break sizes/locations up to and including the hypothetical instantaneous circumferential rupture of a reactor coolant loop, assuming unobstructed discharge from both ends.
+2. A loss of coolant associated with the rod ejection accident.
+3. Steam-system pipe breaks up to and including the instantaneous circumferential rupture of the largest pipe.
+4. A steam generator tube rupture.
+
+The most critical accident for shutdown capability is the steam line break: continued secondary blowdown cools the RCS and inserts positive reactivity, but breaks large enough to return to criticality also depressurize and shrink the coolant enough to initiate SI, and the <span class="hi">high-pressure delivery of concentrated boric acid by the centrifugal charging pumps</span> re-establishes adequate shutdown margin even with the highest-worth rod stuck fully withdrawn (UFSAR §6.3.1.3). The LOCA acceptance criteria themselves are defined in Section 15.
+
+**Single-failure / power design basis (UFSAR §6.3.1.4):** the ECCS is designed to tolerate a single active failure during the short term immediately following an accident, or a single active *or* passive failure during the long term, and to meet its minimum required performance on either onsite (emergency) power with offsite power unavailable, or offsite power, assuming a single failure. Components located inside containment are designed to operate under the most adverse accident conditions without maintenance, and the ECCS performs its function under simultaneous safe-shutdown-earthquake loading.
 
 ## Safety Injection Actuation Signals
 
@@ -240,6 +251,10 @@ RHR pumps deliver when RCS depressurizes to ~170 psig. Inject via accumulator di
 
 Provides suction source for all ECCS pumps during injection phase. Minimum volume based on refueling canal fill requirement. (UFSAR 6.3.2)
 
+The RWST is the normal water supply for the ECCS: during normal power operation it is valved to the suction of the SI, RHR, and containment-spray pumps, and a safety injection signal automatically valves the suction of the centrifugal charging pumps to the RWST (UFSAR §6.3.2.2, §6.3.3.6). The <span class="hi">364500 gal minimum volume</span> (UFSAR Table 6.3-4) is set by the refueling-canal fill requirement and also provides enough borated water for the injection phase, to raise recirculation-water concentration to no-return-to-criticality at cold shutdown with all rods but the most reactive inserted, to fill the containment sump for recirculation, and to fulfill spray requirements (UFSAR §6.3.2.2). The water is borated to assure shutdown by ~5 percent Δk/k. The minimum volume required to provide adequate RHR NPSH and strainer submergence before switchover is <span class="hi">193000 gal</span> (UFSAR §6.3.2.6). <span class="hi-exam">Anti-vortex plates are installed in the containment-spray suction line from the RWST</span> (UFSAR §6.3.2.2). RWST level is continuously measured by two instrument channels on Unit 1 and <span class="hi-exam">four instrument channels on Unit 2</span>, with switchover alarms set at the proper level (UFSAR §6.3.5.4).
+
+A Circulating and Heating System automatically prevents the RWST water from dropping below 32°F: it draws water through the SI and containment-spray suction pipes, pumps it through a heat exchanger in the Auxiliary Building, and returns it via the refueling-water purification pump return line; the actuating instrument senses temperature in the SI suction pipe (monitored and alarmed in the Control Room). <span class="hi-exam">Electrical heat tracing is provided for the instrument connections and the tank drain piping that could otherwise freeze</span> (UFSAR §6.3.2.2). Valves 1SJ30 and 1SJ69 (in the RWST suction line to the ECCS pumps) have the same redundant position indication as the accumulator discharge valves (UFSAR §6.3.2.2).
+
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
@@ -251,6 +266,20 @@ RWST level reference: <span class="hi-exam">20 ft = 190000 gallons</span>. With 
 <div class="callout-label">Exam — 2023 Q29</div>
 Automatic swapover of charging pump suction from VCT to RWST requires <span class="hi-exam">2/2 coincidence (LT-112 AND LT-114) at low-low VCT level</span>. If LT-112 fails high, the 2/2 logic is not satisfied and no auto swapover occurs — the VCT drains and the charging pump loses suction. See [[CVCS]] for full VCT level control logic.
 </div>
+
+### Boron Injection Tank (BIT — Unit 2 Only)
+
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Number | 1 | UFSAR Table 6.3-3 |
+| Total / useable volume | 900 gal | UFSAR Table 6.3-3 |
+| Design Pressure | 2825 psig | UFSAR Table 6.3-3 |
+| Design Temperature | 150–180°F | UFSAR Table 6.3-3 |
+| Boric acid concentration | 0–2500 ppm | UFSAR 6.3.2.2 |
+| Material | SS-clad carbon steel | UFSAR Table 6.3-3 |
+| Code | ASME III Class C | UFSAR Table 6.3-3 |
+
+The BIT (Unit 2 only) is connected to the discharge of the centrifugal charging pumps; on an SI signal the charging-pump flow is routed through the BIT into the RCS. <span class="hi-exam">Although the BIT is part of the SI pressure boundary, its diluted boric acid is NOT credited for accident mitigation</span> — Chapter 15 accident analysis conservatively assumes the BIT is filled with unborated (0-ppm) water. The BIT is kept 100% full administratively by periodic fill/vent under procedural controls, with the parallel motor-operated gate valves at its inlet and outlet normally closed; BIT pressure is monitored from the Control Room. Because of the low boric acid concentration, <span class="hi-trap">BIT heaters and line heat tracing are NOT required</span> (UFSAR §6.3.2.2). (The BIT on Unit 2 functions only as part of the pressure boundary within the SI path — see the [[ECCS]] 2012 Q36 callout discussion of the BIT inlet/outlet valves 2SJ4/5 and 2SJ12/13.)
 
 ## ECCS Operation Phases
 
@@ -464,6 +493,47 @@ EOP-LOCA-4 hot leg recirc with two alternate paths: (1) <span class="hi-exam">21
 <div class="callout-label">JPM — 2023 Sim-b</div>
 EOP-LOCA-4 hot leg recirculation: realign 21 SI pump from cold leg to hot leg injection — <span class="hi-exam">STOP pump → CLOSE 21SJ134 (cold leg discharge) → OPEN 21SJ40 (hot leg discharge, key-locked) → START pump</span>.
 </div>
+
+## Automatic Features & Setpoints
+
+On a safety injection signal the active SIS components automatically actuate (UFSAR §6.3.2.2): the SI signal trips the reactor, starts the diesel generators, initiates the safeguards sequence, and produces a Phase A containment isolation that closes the majority of the automatic containment isolation valves. The active components serve three injection-phase functions — rapid injection of borated water as a shutdown chemical, completing the reflood for large-area ruptures initially refilled by the accumulators, and providing injection for small-area ruptures where RCS pressure stays above accumulator pressure.
+
+**Centrifugal-charging-pump miniflow logic (A3 / K4.06 / K4.12):** because the centrifugal charging pumps run continuously during normal operation as well as during SI, the miniflow isolation valves <span class="hi-exam">1(2)CV139 and CV140 are open at all times</span> unless a procedure directs otherwise, and <span class="hi-exam">the SI initiation signal was removed from CV139/CV140 to prevent automatic termination of miniflow</span> (UFSAR §6.3.2.10, §6.3.2.16). On an SI initiation, manual valve CV197 (RCP seal-water return to CCP suction) is locked closed and manual CV130 is locked open, routing RCP sealwater return and CCP miniflow to the VCT; the VCT fills solid and relief valve CV241 opens, directing miniflow to the CVCS holdup tanks. Procedurally, with the high-head SI pumps operating in ECCS mode the operator is directed to <span class="hi-exam">terminate miniflow below an RCS pressure of 1500 psig and re-establish miniflow if RCS pressure rises again to 2000 psig</span> (UFSAR §6.3.2.16). The SI pumps (UFSAR §6.3.2.2) and RHR pumps each have an automatically isolating min-flow bypass line that closes once flow is established to the RCS.
+
+**SI / accumulator valve actuation (A3 / K4.09):** accumulator-discharge motor-operated isolation valves are normally open with motive power locked out at power, and a safety injection signal automatically initiates their opening (UFSAR §6.3.2.15). Charging/SI cold-leg injection is normally isolated from the cold legs by redundant double-isolation MOV gate valves that receive an SI signal to open; the SI signal also operates MOVs that transfer CCP suction from the VCT to the RWST (UFSAR §6.3.2.2). The accumulators inject passively (no power or signal) when RCS pressure falls below ~600 psig (UFSAR §6.3.2.2, §6.3.2.7).
+
+## Design Features & Interlocks
+
+**Accumulators (K4 / K5):** each accumulator is isolated from the RCS by two check valves in series; should RCS pressure fall below accumulator pressure the check valves open and nitrogen-pressurized borated water is forced into the cold leg — <span class="hi">mechanical operation of the swing-disc check valves is the only action required</span>, making the accumulators passive engineered safety features needing no external power or signal (UFSAR §6.3.2.2). The design margin between the <span class="hi">595.5 psig minimum operating pressure and the 700 psig design pressure</span> (UFSAR Table 6.3-2) gives the operator a band wide enough to minimize the frequency of gas/liquid adjustments for leakage. Accumulator water level can be adjusted remotely during power operation (filled with a safety injection pump, drained to the CVCS holdup tanks). Each accumulator gas relief valve is sized to pass nitrogen above the gas fill-line delivery rate, protecting the tank from over-pressure (UFSAR §6.3.2.10).
+
+**Recirculation cross-tie / piggyback (K4.14 / K5.17):** to ensure each RHR pump can deliver to all four cold-leg injection points, the <span class="hi-exam">RHR discharge cross-tie valves RH-19 are required open during the injection phase</span> (UFSAR §6.3.2.2, §6.3.2.11). During recirculation the low-head RHR pumps take suction from the containment sump and feed the suction of the high-head charging and SI pumps (the "piggyback" cross-tie via RHR pump discharge / CCP-SI suction cross-tie); this crosstie from the charging-pump suction to the SI-pump suction assures that, with either a passive or an active failure, at least one charging and one SI pump (or two of either) will deliver (UFSAR §6.3.2.11). RHR pumps deliver only when the RCS is depressurized to about 170 psig.
+
+**Containment-sump suction interlock (K4.17, Unit 1):** on Unit 1 the containment-sump isolation valves (SJ44) cannot be opened unless the RWST/RHR isolation valve (RH4) is closed, precluding a direct RWST-to-sump drain path; the sump valves are normally closed with control-power lockouts and electrical interlocks, and are exercised only after closing the associated RHR pump suction isolation valve (UFSAR §6.3.2.16, §6.3.4.1, §6.3.2.13). On Unit 2 the semi-automatic switchover instead arms and auto-aligns the RHR suction to the sump.
+
+**System venting / NPSH / recirculation leakage (K4.04 / K6.05 / A2.06):** SI suction piping from the RWST is designed for low pressure loss to meet pump NPSH; the high-pressure SI branch lines are sized for high pressure loss to limit blowdown out the branch if a line ruptures so the break will not violate ECCS design criteria (UFSAR §6.3.2.2 Piping). The accumulators and SI piping up to the final isolation valve are kept full of borated water at refueling-water concentration during operation, refilled as needed with a SI pump, which guards against gas accumulation/water hammer (UFSAR §6.3.2.2). Recirculation-loop leakage is administratively limited to 0.45 gpm total; the RHR pumps and heat exchangers sit in individual 200 ft³ compartments sized to hold a 50-gpm leak for 30 minutes, and means are provided to detect and isolate an ECCS-flowpath leak within 30 minutes (UFSAR §6.3.2.2, §6.3.3.6). A minimum sump-liquid pH of 7.0 to 10.0 (additives suppliable within 48 hours of switchover) minimizes chloride-induced stress-corrosion cracking of stainless components (UFSAR §6.3.2.1).
+
+## Interconnections & Loads
+
+The ECCS operates in conjunction with several support systems (UFSAR §6.3.3.6, "Dependence on Other Systems"):
+
+- The **Component Cooling System** cools the residual heat exchangers during recirculation and supplies cooling water to the RHR pumps during injection and recirculation.
+- The **Service Water System** supplies the component cooling heat exchangers and the safety injection pumps.
+- The **Electrical System** provides normal and emergency power.
+- The **Engineered Safety Features Actuation System (ESFAS)** generates the ECCS initiation signal (see [[ECCS]] actuation-signal table above and the [[ECCS]] 2019 Q12 / 2022 Q14 / 2016 Q19 power-supply callouts).
+- The **Auxiliary Feedwater System** supplies feedwater to the steam generators.
+
+The two RHR pumps and residual heat exchangers are shared dual-function components — normally used for the latter stages of cooldown and for cold-shutdown decay-heat removal, but aligned to the low-head injection function during all other operating periods (UFSAR §6.3.3.6). The RWST likewise serves refueling-canal fill, spent-fuel-pit makeup, and emergency RCS makeup via the CVCS charging pumps, yet remains aligned to the SI/RHR/CS-pump suctions during power operation so no operator action is required to place it in its accident alignment. One of the two centrifugal charging pumps may provide normal continuous charging during power operation while remaining aligned for its high-head safety-injection function.
+
+## Control-Room Operation
+
+All ECCS initiation/isolation valves have remote position indication in the Control Room and all ECCS alarms are annunciated there (UFSAR §6.3.2.13, §6.3.5). Control-room indications include (UFSAR §6.3.5):
+
+- **Temperature:** residual heat exchanger outlet temperature (recorded).
+- **Pressure:** Charging/SI flow-path pressure (with a high-pressure alarm), SI header pressure, RHR pump discharge pressure (with high-pressure alarm), and duplicate accumulator pressure channels (each with high and low alarms).
+- **Flow:** SI pump header flow, SI pump min-flow line flow, RHR pump flow (injection or recirculation), and local leak-test-line flow for accumulator check-valve seating verification.
+- **Level:** RWST level (two channels Unit 1 / four channels Unit 2, with switchover alarms), accumulator level (two channels each, high/low alarm), boric-acid-tank level, and containment recirculation-sump level (two redundant indicators plus two redundant level switches that light separate console bezel lamps when minimum sump level for recirculation is reached).
+
+**Valve position indication (K4.10 / K4.27):** control-board valve indication uses a "normal-off" scheme — if a valve is not in its proper position a <span class="hi-exam">bright white monitor light is lit</span>, giving the operator a highly visible misalignment indication (UFSAR §6.3.5.5). The accumulator MOVs additionally carry red (open) / green (closed) lights energized from independent power, plus an off-normal monitor light and an annunciator point per valve that is activated whenever the accumulator is not fully open (i.e., at the pressure where the SI block is unblocked); the motor-operator limit-switch alarm recycles at ~1-hour intervals to remind the operator of an improper lineup (UFSAR §6.3.5.5). Valves in redundant/non-redundant ECCS flow paths (e.g., 11/12RH4, 11/12SJ33, 11/12SJ134) carry both main-console position indication and Auxiliary Annunciator System "off-normal" indication (UFSAR §6.3.2.16). Manual switchover from injection to cold-leg recirculation, and subsequently to hot-leg recirculation, is performed by the operator from the Control Room per the changeover sequence (UFSAR §6.3.2.1, Table 6.3-6); no manual action is required during the injection phase itself (UFSAR §6.3.2.17).
 
 ## Single Failure Criteria
 
