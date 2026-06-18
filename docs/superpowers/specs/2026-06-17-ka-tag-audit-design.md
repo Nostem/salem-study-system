@@ -26,8 +26,14 @@ that rule across the already-ingested corpus.
    ratings* against the catalog.
 2. **Reconcile to the Rev 3 catalog** as ground truth (even where an older exam may have used
    NUREG-1122 Rev 2 — the wiki is made uniform to the single catalog we host).
-3. **Fields in scope:** K/A number (validate/normalize) + RO/SRO importance ratings only.
-   The human-written K/A statement/description text is left untouched.
+3. **Canonicalize the whole K/A tag** (revised after planning revealed the tags are
+   pervasively *inconsistently formatted*, not just mis-rated). Each tag is rewritten to ONE
+   canonical form built from the catalog: the catalog's canonical number + K/A, and the
+   catalog's RO/SRO importance, e.g. `076 K4.01 (RO 2.5 / SRO 2.9)`. The human-written K/A
+   *statement/description* prose is still left untouched — only the tag (number + ratings) is
+   normalized. Because the canonical form always shows both catalog ratings, the earlier
+   "JPM single-rating where RO≠SRO" ambiguity dissolves (we always render RO + SRO from the
+   catalog).
 4. **Deterministic tool** with a dry-run (report) mode and an apply (fix) mode; no LLM in the
    core. Clear importance mismatches are auto-fixed; everything the tool cannot resolve
    mechanically is flagged.
@@ -57,56 +63,67 @@ and (in apply mode) edits only the rating substrings. The core is fully determin
 
 The footer `K/A:` line (number + statement, no rating) is used only to cross-check the number.
 
-**Normalization — map wiki number forms to a catalog key.** Observed wiki forms include
-`000057 AA1.01`, `057 AA1.01`, `APE 022 AA1.01`, `EPE 007 EA1.05`, `G2.1.43`, `Gen 2.3.11`,
-`045 2.1.23`. Rules:
-- strip `APE` / `EPE` / `Gen` prefixes,
-- normalize the leading system number to the catalog's 3-digit form (`000057` → `057`),
-- route generic `2.x.x` / `Gen 2.x.x` / `G2.x.x` to the `G2.x.x` key,
-- the K/A part (`AA1.01`, `EA1.05`, `A1.09`, `2.1.43`) joins the number to form the lookup key
-  (e.g. `057 AA1.01`, `G2.1.43`).
+**Normalization — map the wiki's many tag forms to a catalog key.** A planning prototype over
+all 1,083 tags found the data is pervasively inconsistent; the normalizer must handle at least:
+- 6-digit **system** numbers ending in `000` → 3-digit: `076000 K4.01` → `076 K4.01`;
+- 6-digit **APE/EPE** numbers starting `000` → 3-digit: `000040 AK1.01` → `040 AK1.01`;
+- numbers **glued** to the K/A: `005000A2.02`, `000007EK2.03`;
+- **vendor** APE/EPE codes (Babcock `BA`/`BE`, CE `CA`/`CE`, Westinghouse `WA`/`WE`):
+  `00WE08 EA2.2` → `WE08 …`;
+- **packed** K/A tokens: `A203` → `A2.03`; and zero-padded decimals: `EA2.2` → `EA2.02`;
+- **dual** forms `packed / normalized`: `000001A203 / AA2.03` → use the normalized half + number;
+- **generics** in every shape: `G2.1.43`, `2.1.43`, `Gen 2.3.11`, and system-prefixed
+  `002000G2.1.20` → `G2.1.20`;
+- `APE`/`EPE`/`Gen` word prefixes stripped.
 
-Anything that does not resolve to a catalog key is classified **UNPARSEABLE** — never guessed.
-The exact regexes/forms are finalized against the corpus during implementation (the tool is
-driven by the observed forms, with UNPARSEABLE as the safety net for anything unexpected).
+The catalog key (`ka_full`, e.g. `076 K4.01`, `WE08 EA1.05`, `G2.1.43`) is the lookup target and
+the canonical number for the rewrite. Anything that does not resolve to a catalog key is
+**UNPARSEABLE** — never guessed. The normalizer is built iteratively against the corpus (each
+form handled with a documented rule + a unit test) to a target of ≈95% auto-resolution; the
+residue is flagged.
 
-## Section 3 — Classification & fix policy
+**Canonical tag form (the rewrite target):** `<catalog number+K/A> (RO <ro_imp> / SRO <sro_imp>)`,
+e.g. `076 K4.01 (RO 2.5 / SRO 2.9)`, using the catalog entry's exact `ro_imp`/`sro_imp`. For JPM
+card spans the `<Type> | <Applic> |` prefix is preserved; the JPM YAML `ka_importance_ro/sro` are
+set to the catalog values.
 
-Per importance location, exactly one of:
-- **OK** — number resolves; importance matches the catalog (numeric compare, `4` == `4.0`).
-  Counted, untouched.
-- **IMPORTANCE_MISMATCH** — number resolves but a rating differs. **Auto-fix in `--apply`:**
-  rewrite only the rating substring (the `(RO/SRO)` pair, the JPM single rating, or the YAML
-  `ka_importance_*` value) to the catalog value, in the wiki's existing number format.
-- **NUMBER_NOT_IN_CATALOG** — the normalized number is not a catalog entry (typo, deleted
-  K/A, or a form the tool could not map). **Flagged** (not auto-fixed).
-- **UNPARSEABLE** — the tag/rating could not be parsed. **Flagged**.
-- **JPM single-rating ambiguity** — the JPM card shows one rating but the catalog's RO ≠ SRO.
-  **Flagged** (the tool does not auto-pick which value the single rating should be).
+## Section 3 — Classification & rewrite policy
 
-K/A statement text is never modified.
+Per K/A tag, exactly one of:
+- **RESOLVED** — the tag normalizes to a catalog key. In `--apply`, the **whole tag is
+  rewritten to the canonical form** (catalog number + K/A + `(RO <ro> / SRO <sro>)`). If the tag
+  already equals its canonical form, it is left byte-identical (no-op). This both fixes wrong
+  ratings and standardizes the format in one pass.
+- **NUMBER_NOT_IN_CATALOG** — the tag normalized to a key that is not in the catalog (typo, a
+  K/A genuinely absent from Rev 3, or a vendor entry that does not match). **Flagged**, not
+  rewritten.
+- **UNPARSEABLE** — the tag could not be normalized to any key (e.g. a bare K/A with no system
+  number, a malformed generic like `G4.09`). **Flagged**, not rewritten.
+
+Only the K/A tag itself (the card span text and the JPM YAML `ka_importance_*` values) is
+rewritten. The K/A statement/description prose, question stems, answers, justifications, and all
+other content are never modified.
 
 ## Section 4 — Report & safety
 
 - **Audit report** (committed): a markdown summary (counts by category and by exam year) plus a
   CSV (`data/ka-audit/ka-audit-report.csv`) with one row per importance location: file, item id,
   raw tag, parsed number, parsed RO/SRO, catalog key, catalog RO/SRO, classification, action.
-- **Safety guard:** apply mode must change *only* rating values. A check (in the spirit of the
-  #70 guard) re-parses each changed file and asserts that everything except the targeted rating
-  substrings/YAML values is byte-identical to the pre-apply version. Then
-  `python3 scripts/check-wikilinks.py` (0 broken) and `cd site && npm run build` (clean) — the
-  edits are intra-file value changes with no link impact, and do not touch question/JPM
-  *articles'* slugs.
-- **Quiz-bank note:** importance ratings are not part of the quiz-bank's correctness data, but
-  the four generated quiz files are regenerated and validated per the project's deploy gate as a
-  final step if any question article changed.
-- **Idempotent:** re-running `--report` after `--apply` shows zero `IMPORTANCE_MISMATCH`; only
-  the (resolved or human-flagged) residue remains.
+- **Safety guard:** apply mode must change *only* the K/A tag. A check (in the spirit of the
+  #70 guard) re-parses each changed file and asserts that everything except the K/A tag span
+  text (and the JPM YAML `ka_importance_*` values) is byte-identical to the pre-apply version.
+  Then `python3 scripts/check-wikilinks.py` (0 broken) and `cd site && npm run build` (clean) —
+  the edits are intra-file tag rewrites with no link impact and do not touch article slugs.
+- **Quiz-bank note:** K/A tags are not part of the quiz-bank's correctness data, but the four
+  generated quiz files are regenerated and validated per the project's deploy gate as a final
+  step if any question article changed.
+- **Idempotent:** re-running `--report` after `--apply` shows every `RESOLVED` tag already in
+  canonical form (no further changes); only the flagged residue remains.
 
 ## Section 5 — Agent review of the flagged residue
 
 After the mechanical apply, the agent works the flagged list (`NUMBER_NOT_IN_CATALOG`,
-`UNPARSEABLE`, JPM single-rating ambiguity). For each item:
+`UNPARSEABLE`). For each item:
 1. Read the source exam PDF (`site/public/exam-pdfs/<year>-…pdf`) — the JPM cover / written
    worksheet states the exam's assigned K/A and rating.
 2. Cross-check the catalog for the correct entry and RO/SRO importance.
