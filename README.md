@@ -246,6 +246,7 @@ The safe rule is: source Markdown/YAML/PDF data is authority; the four quiz-data
 ├── data/
 │   ├── exams/                         # YAML exam metadata + extraction text (tracked)
 │   ├── ka-catalog/                    # PWR K/A catalog: pwr-ka-catalog.xlsx (source) + generated .json/.csv (NUREG-1122 Rev 3)
+│   ├── ka-audit/                      # K/A tag audit output: ka-audit-report.{md,csv} + human-review.md
 │   └── quiz-import/                   # audit/staging artifacts (gitignored, regenerated)
 ├── docs/                              # planning, audits, release notes, architecture docs
 ├── raw/                               # local source PDFs; gitignored
@@ -256,6 +257,7 @@ The safe rule is: source Markdown/YAML/PDF data is authority; the four quiz-data
 │   ├── build_structured_quiz_bank.py  # generate structured quiz-bank-v2.json
 │   ├── validate_structured_quiz_bank.py  # validate the structured bank (CI gate)
 │   ├── build_ka_catalog.py            # one-off xlsx→json/csv converter for NUREG-1122; re-run only on new revision
+│   ├── audit_ka_tags.py               # normalize ingested K/A tags to the catalog (--report / --apply)
 │   ├── supabase_import_exam.py        # generate/apply/sync Supabase question data
 │   ├── wiki_index.py                  # local wiki index/query helper
 │   └── contact_feedback_to_github_issues.py

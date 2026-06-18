@@ -43,7 +43,66 @@ class NormalizeKaTest(unittest.TestCase):
     def test_glued_vendor(self):      self.t("00WE12EA2.1", "WE12 EA2.01")
     def test_dual_ape_colon_name(self): self.t("APE: 015/017 RCP Malfunctions-AK1.04", "015 AK1.04")
     def test_bare_ka_unparseable(self): self.assertIsNone(mod.normalize_ka("AK2.08"))
-    def test_malformed_generic(self):   self.assertIsNone(mod.normalize_ka("G4.09"))
+    # Generic group notation: older exams abbreviate the four generic groups (2.1–2.4) as
+    # G1.x–G4.x. Decode Gn.mm -> 2.n.mm (third component unpadded, matching the catalog).
+    def test_generic_group_dot(self):    self.t("000009 G4.18", "G2.4.18")
+    def test_generic_group_dot2(self):   self.t("012000G4.09", "G2.4.9")
+    def test_generic_group_bareform(self): self.t("G4.09", "G2.4.9")
+    def test_generic_group_glued(self):  self.t("194001G432", "G2.4.32")
+    def test_generic_group_glued_pad(self): self.t("194001G404", "G2.4.4")
+    def test_generic_group_glued_g1(self): self.t("194001G140", "G2.1.40")
+    # Dual form whose left half carries the vendor code (00WE02K201 / EK2.1): keep the vendor
+    # prefix from the left, the E-prefixed token from the right -> WE02 EK2.01.
+    # Generic-knowledge tier (19xxxx) with a subject infix, e.g. '191001 CVS.K1.04' — keep the infix.
+    def test_generic_knowledge_infix(self):  self.t("T2G1 191001 CVS.K1.04", "191001 CVS.K1.04")
+    def test_generic_knowledge_infix2(self): self.t("T4 193009 TTL.K1.07", "193009 TTL.K1.07")
+    def test_dual_form_vendor_left(self): self.t("00WE02K201 / EK2.1", "WE02 EK2.01")
+    def test_dual_form_vendor_left2(self): self.t("00WE10A102 / EA1.2", "WE10 EA1.02")
+
+
+class FirstTagTest(unittest.TestCase):
+    def t(self, content, expected_ka):
+        text = f'<span style="...;border-radius:3px;">{content}</span>'
+        m, span_content, ka = mod.first_tag(text)
+        self.assertIsNotNone(m)
+        self.assertEqual(span_content, content)
+        self.assertEqual(ka, expected_ka)
+
+    def test_plain_written(self):   self.t("076000 K4.01 (3.7/3.7)", "076000 K4.01 (3.7/3.7)")
+    def test_jpm_three_part(self):  self.t("Simulator | RO/SRO | 003 AA2.03 (3.6)", "003 AA2.03 (3.6)")
+    def test_jpm_badge_alt_path(self): self.t("Admin | SRO | 2.1.25 (4.2) | Alternate Path", "2.1.25 (4.2)")
+    def test_jpm_badge_time_crit(self): self.t("Admin | SRO | 2.4.44 (4.4) | Time-Critical", "2.4.44 (4.4)")
+    def test_jpm_badge_generic_g(self): self.t("Admin | RO/SRO | G2.1.43 (4.1) | Alternate Path", "G2.1.43 (4.1)")
+
+
+class ClassifyTest(unittest.TestCase):
+    CAT = {
+        "076 K4.01": {"statement": "(076K4.01) Knowledge...", "ro_imp": "2.5", "sro_imp": "2.9"},
+        "045 K3.01": {"statement": "DELETED", "ro_imp": "0", "sro_imp": "0"},
+        "039 A4.04": {"statement": "(039A4.04) some text", "ro_imp": "0", "sro_imp": "0"},
+    }
+
+    def c(self, body):
+        return mod.classify(body, self.CAT)
+
+    def test_active_uses_catalog_rating(self):
+        self.assertEqual(self.c("076000 K4.01 (3.7/3.7)"),
+                         ("RESOLVED", "076 K4.01", "076 K4.01 (RO 2.5 / SRO 2.9)"))
+
+    def test_deleted_keeps_exam_importance(self):
+        # DELETED catalog entry: canonicalize the number, keep the exam's own rating verbatim.
+        self.assertEqual(self.c("APE 045 MTG-K3.01 (2.7/2.7)"),
+                         ("DELETED_IN_REV3", "045 K3.01", "045 K3.01 (2.7/2.7)"))
+
+    def test_zero_importance_treated_as_deleted(self):
+        self.assertEqual(self.c("039 A4.04 (3.8)"),
+                         ("DELETED_IN_REV3", "039 A4.04", "039 A4.04 (3.8)"))
+
+    def test_absent_flagged(self):
+        self.assertEqual(self.c("999 K9.99 (3.0)"), ("NUMBER_NOT_IN_CATALOG", "999 K9.99", None))
+
+    def test_unparseable(self):
+        self.assertEqual(self.c("Alternate Path"), ("UNPARSEABLE", None, None))
 
 
 class CanonicalRatingTest(unittest.TestCase):

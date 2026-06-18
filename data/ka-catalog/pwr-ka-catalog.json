@@ -16519,141 +16519,31 @@
     "sro_imp": "3.8",
     "status": "active"
   },
-  "AA1.01": {
+  "BA01 AA1.01": {
     "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
     "ka_no": "AA1.01",
     "statement": "DELETED",
     "ro_imp": "0",
     "sro_imp": "0",
     "status": "deleted"
   },
-  "AA1.02": {
+  "BA01 AA1.02": {
     "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
     "ka_no": "AA1.02",
     "statement": "DELETED",
     "ro_imp": "0",
     "sro_imp": "0",
     "status": "deleted"
   },
-  "AA1.03": {
+  "BA01 AA1.03": {
     "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
     "ka_no": "AA1.03",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AA2.01": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(BW A05) Emergency Diesel Actuation",
-    "ka_no": "AA2.01",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AA2.02": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(BW A05) Emergency Diesel Actuation",
-    "ka_no": "AA2.02",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AK1.01": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
-    "ka_no": "AK1.01",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AK1.02": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
-    "ka_no": "AK1.02",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AK1.03": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
-    "ka_no": "AK1.03",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AK2.01": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
-    "ka_no": "AK2.01",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AK2.02": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
-    "ka_no": "AK2.02",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AK3.01": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
-    "ka_no": "AK3.01",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AK3.02": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
-    "ka_no": "AK3.02",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AK3.03": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
-    "ka_no": "AK3.03",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "AK3.04": {
-    "category": "ape",
-    "system_number": "",
-    "system_name": "(CE A16) Excess RCS Leakage",
-    "ka_no": "AK3.04",
     "statement": "DELETED",
     "ro_imp": "0",
     "sro_imp": "0",
@@ -16869,6 +16759,36 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "BA01 AK1.01": {
+    "category": "ape",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
+    "ka_no": "AK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA01 AK1.02": {
+    "category": "ape",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
+    "ka_no": "AK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA01 AK1.03": {
+    "category": "ape",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
+    "ka_no": "AK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA01 AK1.04": {
     "category": "ape",
     "system_number": "BA01",
@@ -16938,6 +16858,26 @@
     "ro_imp": "3.8",
     "sro_imp": "3.8",
     "status": "active"
+  },
+  "BA01 AK2.01": {
+    "category": "ape",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA01 AK2.02": {
+    "category": "ape",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA01 AK2.03": {
     "category": "ape",
@@ -17019,6 +16959,46 @@
     "sro_imp": "3.5",
     "status": "active"
   },
+  "BA01 AK3.01": {
+    "category": "ape",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
+    "ka_no": "AK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA01 AK3.02": {
+    "category": "ape",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
+    "ka_no": "AK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA01 AK3.03": {
+    "category": "ape",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
+    "ka_no": "AK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA01 AK3.04": {
+    "category": "ape",
+    "system_number": "BA01",
+    "system_name": "(BW A01) Plant Runback",
+    "ka_no": "AK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA01 AK3.05": {
     "category": "ape",
     "system_number": "BA01",
@@ -17089,6 +17069,36 @@
     "sro_imp": "3.2",
     "status": "active"
   },
+  "BA02 AA1.01": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA02 AA1.02": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA02 AA1.03": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA02 AA1.04": {
     "category": "ape",
     "system_number": "BA02",
@@ -17148,6 +17158,26 @@
     "ro_imp": "4.3",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "BA02 AA2.01": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA02 AA2.02": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA02 AA2.03": {
     "category": "ape",
@@ -17279,6 +17309,36 @@
     "sro_imp": "4",
     "status": "active"
   },
+  "BA02 AK1.01": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA02 AK1.02": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA02 AK1.03": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA02 AK1.04": {
     "category": "ape",
     "system_number": "BA02",
@@ -17328,6 +17388,26 @@
     "ro_imp": "4",
     "sro_imp": "4",
     "status": "active"
+  },
+  "BA02 AK2.01": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA02 AK2.02": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA02 AK2.03": {
     "category": "ape",
@@ -17388,6 +17468,46 @@
     "ro_imp": "3.8",
     "sro_imp": "3.8",
     "status": "active"
+  },
+  "BA02 AK3.01": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA02 AK3.02": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA02 AK3.03": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA02 AK3.04": {
+    "category": "ape",
+    "system_number": "BA02",
+    "system_name": "(BW A02 & A03) Loss of NNI-X/Y",
+    "ka_no": "AK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA02 AK3.05": {
     "category": "ape",
@@ -17599,6 +17719,36 @@
     "sro_imp": "3.2",
     "status": "active"
   },
+  "BA04 AA1.01": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA04 AA1.02": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA04 AA1.03": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA04 AA1.04": {
     "category": "ape",
     "system_number": "BA04",
@@ -17658,6 +17808,26 @@
     "ro_imp": "3.1",
     "sro_imp": "3.1",
     "status": "active"
+  },
+  "BA04 AA2.01": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA04 AA2.02": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA04 AA2.03": {
     "category": "ape",
@@ -17759,6 +17929,36 @@
     "sro_imp": "2.5",
     "status": "active"
   },
+  "BA04 AK1.01": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA04 AK1.02": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA04 AK1.03": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA04 AK1.04": {
     "category": "ape",
     "system_number": "BA04",
@@ -17808,6 +18008,26 @@
     "ro_imp": "4.1",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "BA04 AK2.01": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA04 AK2.02": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA04 AK2.03": {
     "category": "ape",
@@ -17868,6 +18088,46 @@
     "ro_imp": "3.5",
     "sro_imp": "3.5",
     "status": "active"
+  },
+  "BA04 AK3.01": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA04 AK3.02": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA04 AK3.03": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA04 AK3.04": {
+    "category": "ape",
+    "system_number": "BA04",
+    "system_name": "(BW A04) Turbine Trip",
+    "ka_no": "AK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA04 AK3.05": {
     "category": "ape",
@@ -17979,6 +18239,36 @@
     "sro_imp": "2.6",
     "status": "active"
   },
+  "BA05 AA1.01": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA05 AA1.02": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA05 AA1.03": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA05 AA1.04": {
     "category": "ape",
     "system_number": "BA05",
@@ -18088,6 +18378,26 @@
     "ro_imp": "3.3",
     "sro_imp": "3.3",
     "status": "active"
+  },
+  "BA05 AA2.01": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA05 AA2.02": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA05 AA2.03": {
     "category": "ape",
@@ -18259,6 +18569,36 @@
     "sro_imp": "4",
     "status": "active"
   },
+  "BA05 AK1.01": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA05 AK1.02": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA05 AK1.03": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA05 AK1.04": {
     "category": "ape",
     "system_number": "BA05",
@@ -18399,6 +18739,26 @@
     "sro_imp": "2.8",
     "status": "active"
   },
+  "BA05 AK2.01": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA05 AK2.02": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA05 AK2.03": {
     "category": "ape",
     "system_number": "BA05",
@@ -18508,6 +18868,46 @@
     "ro_imp": "3.4",
     "sro_imp": "3.4",
     "status": "active"
+  },
+  "BA05 AK3.01": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA05 AK3.02": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA05 AK3.03": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA05 AK3.04": {
+    "category": "ape",
+    "system_number": "BA05",
+    "system_name": "(BW A05) Emergency Diesel Actuation",
+    "ka_no": "AK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA05 AK3.05": {
     "category": "ape",
@@ -18819,6 +19219,36 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "BA06 AA1.01": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.02": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.03": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AA1.04a": {
     "category": "ape",
     "system_number": "BA06",
@@ -18849,6 +19279,16 @@
     "sro_imp": "3.9",
     "status": "active"
   },
+  "BA06 AA1.07": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.07",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AA1.07a": {
     "category": "ape",
     "system_number": "BA06",
@@ -18859,6 +19299,16 @@
     "sro_imp": "3.9",
     "status": "active"
   },
+  "BA06 AA1.08": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.08",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AA1.08a": {
     "category": "ape",
     "system_number": "BA06",
@@ -18868,6 +19318,16 @@
     "ro_imp": "3.2",
     "sro_imp": "3.2",
     "status": "active"
+  },
+  "BA06 AA1.09": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.09",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA06 AA1.09a": {
     "category": "ape",
@@ -18919,6 +19379,16 @@
     "sro_imp": "2.7",
     "status": "active"
   },
+  "BA06 AA1.14": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.14",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AA1.14a": {
     "category": "ape",
     "system_number": "BA06",
@@ -18928,6 +19398,146 @@
     "ro_imp": "3.9",
     "sro_imp": "3.9",
     "status": "active"
+  },
+  "BA06 AA1.15": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.15",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.16": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.16",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.17": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.17",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.18": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.18",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.20": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.20",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.21": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.21",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.23": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.23",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.24": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.24",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.25": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.25",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.27": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.27",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.29": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.29",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA1.32": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA1.32",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA2.01": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AA2.02": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA06 AA2.03a": {
     "category": "ape",
@@ -18979,6 +19589,16 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "BA06 AA2.08": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AA2.08",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AA2.08a": {
     "category": "ape",
     "system_number": "BA06",
@@ -19008,6 +19628,36 @@
     "ro_imp": "4",
     "sro_imp": "4.2",
     "status": "active"
+  },
+  "BA06 AK1.01": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AK1.02": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AK1.03": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA06 AK1.04a": {
     "category": "ape",
@@ -19089,6 +19739,36 @@
     "sro_imp": "4.3",
     "status": "active"
   },
+  "BA06 AK2.01": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AK2.02": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AK2.03": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK2.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AK2.03a": {
     "category": "ape",
     "system_number": "BA06",
@@ -19098,6 +19778,16 @@
     "ro_imp": "3.5",
     "sro_imp": "3.5",
     "status": "active"
+  },
+  "BA06 AK2.04": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK2.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA06 AK2.04a": {
     "category": "ape",
@@ -19109,6 +19799,16 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "BA06 AK2.05": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK2.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AK2.05a": {
     "category": "ape",
     "system_number": "BA06",
@@ -19118,6 +19818,16 @@
     "ro_imp": "3.8",
     "sro_imp": "3.8",
     "status": "active"
+  },
+  "BA06 AK2.06": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK2.06",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA06 AK2.06a": {
     "category": "ape",
@@ -19199,6 +19909,56 @@
     "sro_imp": "3.7",
     "status": "active"
   },
+  "BA06 AK3.01": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AK3.02": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AK3.03": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AK3.04": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA06 AK3.05": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK3.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AK3.05a": {
     "category": "ape",
     "system_number": "BA06",
@@ -19259,6 +20019,16 @@
     "sro_imp": "4.2",
     "status": "active"
   },
+  "BA06 AK3.11": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK3.11",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AK3.11a": {
     "category": "ape",
     "system_number": "BA06",
@@ -19268,6 +20038,16 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "BA06 AK3.12": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK3.12",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA06 AK3.12a": {
     "category": "ape",
@@ -19289,6 +20069,16 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "BA06 AK3.14": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK3.14",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA06 AK3.14a": {
     "category": "ape",
     "system_number": "BA06",
@@ -19298,6 +20088,16 @@
     "ro_imp": "4.1",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "BA06 AK3.15": {
+    "category": "ape",
+    "system_number": "BA06",
+    "system_name": "(APE 68; BW A06) Control Room Evacuation",
+    "ka_no": "AK3.15",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA06 AK3.15a": {
     "category": "ape",
@@ -19378,6 +20178,36 @@
     "ro_imp": "2.6",
     "sro_imp": "2.6",
     "status": "active"
+  },
+  "BA07 AA1.01": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA07 AA1.02": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA07 AA1.03": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA07 AA1.04": {
     "category": "ape",
@@ -19549,6 +20379,36 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "BA07 AK1.01": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA07 AK1.02": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA07 AK1.03": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BA07 AK1.04": {
     "category": "ape",
     "system_number": "BA07",
@@ -19588,6 +20448,26 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "BA07 AK2.01": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA07 AK2.02": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA07 AK2.03": {
     "category": "ape",
@@ -19668,6 +20548,46 @@
     "ro_imp": "3.3",
     "sro_imp": "3.3",
     "status": "active"
+  },
+  "BA07 AK3.01": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA07 AK3.02": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA07 AK3.03": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BA07 AK3.04": {
+    "category": "ape",
+    "system_number": "BA07",
+    "system_name": "(BW A07) Flooding",
+    "ka_no": "AK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BA07 AK3.05": {
     "category": "ape",
@@ -19999,6 +20919,16 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "BE05 AA1.04": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE05 AA1.04a": {
     "category": "ape",
     "system_number": "BE05",
@@ -20029,6 +20959,16 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "BE05 AA1.07": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.07",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE05 AA1.07a": {
     "category": "ape",
     "system_number": "BE05",
@@ -20038,6 +20978,16 @@
     "ro_imp": "3.5",
     "sro_imp": "3.5",
     "status": "active"
+  },
+  "BE05 AA1.08": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.08",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE05 AA1.08a": {
     "category": "ape",
@@ -20088,6 +21038,26 @@
     "ro_imp": "3.2",
     "sro_imp": "3.2",
     "status": "active"
+  },
+  "BE05 AA1.22": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.22",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 AA1.23": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.23",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE05 AA2.03a": {
     "category": "ape",
@@ -20219,6 +21189,16 @@
     "sro_imp": "3.7",
     "status": "active"
   },
+  "BE05 AK1.04": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK1.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE05 AK1.04a": {
     "category": "ape",
     "system_number": "BE05",
@@ -20309,6 +21289,36 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "BE05 AK2.01": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 AK2.02": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 AK2.03": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE05 AK2.03a": {
     "category": "ape",
     "system_number": "BE05",
@@ -20318,6 +21328,16 @@
     "ro_imp": "4.2",
     "sro_imp": "4.2",
     "status": "active"
+  },
+  "BE05 AK2.04": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE05 AK2.04a": {
     "category": "ape",
@@ -20329,6 +21349,16 @@
     "sro_imp": "3.2",
     "status": "active"
   },
+  "BE05 AK2.05": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE05 AK2.05a": {
     "category": "ape",
     "system_number": "BE05",
@@ -20338,6 +21368,16 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "BE05 AK2.06": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.06",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE05 AK2.06a": {
     "category": "ape",
@@ -20388,6 +21428,16 @@
     "ro_imp": "4.1",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "BE05 AK3.05": {
+    "category": "ape",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK3.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE05 AK3.05a": {
     "category": "ape",
@@ -20528,6 +21578,36 @@
     "ro_imp": "3.3",
     "sro_imp": "3.3",
     "status": "active"
+  },
+  "CA16 AA1.01": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA16 AA1.02": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA16 AA1.03": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CA16 AA1.04": {
     "category": "ape",
@@ -20829,6 +21909,36 @@
     "sro_imp": "3.9",
     "status": "active"
   },
+  "CA16 AK1.01": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA16 AK1.02": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA16 AK1.03": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CA16 AK1.04": {
     "category": "ape",
     "system_number": "CA16",
@@ -20908,6 +22018,26 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "CA16 AK2.01": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA16 AK2.02": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CA16 AK2.03": {
     "category": "ape",
@@ -21049,6 +22179,46 @@
     "sro_imp": "3.4",
     "status": "active"
   },
+  "CA16 AK3.01": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA16 AK3.02": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA16 AK3.03": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA16 AK3.04": {
+    "category": "ape",
+    "system_number": "CA16",
+    "system_name": "(CE A16) Excess RCS Leakage",
+    "ka_no": "AK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CA16 AK3.05": {
     "category": "ape",
     "system_number": "CA16",
@@ -21119,6 +22289,16 @@
     "sro_imp": "3.5",
     "status": "active"
   },
+  "CE05 AA1.04": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE05 AA1.04b": {
     "category": "ape",
     "system_number": "CE05",
@@ -21149,6 +22329,16 @@
     "sro_imp": "3.5",
     "status": "active"
   },
+  "CE05 AA1.07": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.07",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE05 AA1.07b": {
     "category": "ape",
     "system_number": "CE05",
@@ -21158,6 +22348,16 @@
     "ro_imp": "3.6",
     "sro_imp": "3.6",
     "status": "active"
+  },
+  "CE05 AA1.08": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.08",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE05 AA1.08b": {
     "category": "ape",
@@ -21238,6 +22438,26 @@
     "ro_imp": "3.2",
     "sro_imp": "3.2",
     "status": "active"
+  },
+  "CE05 AA1.22": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.22",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 AA1.23": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.23",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE05 AA2.01b": {
     "category": "ape",
@@ -21399,6 +22619,16 @@
     "sro_imp": "3.5",
     "status": "active"
   },
+  "CE05 AK1.04": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK1.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE05 AK1.04b": {
     "category": "ape",
     "system_number": "CE05",
@@ -21509,6 +22739,36 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "CE05 AK2.01": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 AK2.02": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 AK2.03": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE05 AK2.03b": {
     "category": "ape",
     "system_number": "CE05",
@@ -21518,6 +22778,16 @@
     "ro_imp": "3.9",
     "sro_imp": "3.9",
     "status": "active"
+  },
+  "CE05 AK2.04": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE05 AK2.04b": {
     "category": "ape",
@@ -21529,6 +22799,16 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "CE05 AK2.05": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE05 AK2.05b": {
     "category": "ape",
     "system_number": "CE05",
@@ -21538,6 +22818,16 @@
     "ro_imp": "3.8",
     "sro_imp": "3.8",
     "status": "active"
+  },
+  "CE05 AK2.06": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.06",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE05 AK2.06b": {
     "category": "ape",
@@ -21588,6 +22878,16 @@
     "ro_imp": "3.5",
     "sro_imp": "3.5",
     "status": "active"
+  },
+  "CE05 AK3.05": {
+    "category": "ape",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK3.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE05 AK3.05b": {
     "category": "ape",
@@ -21688,6 +22988,26 @@
     "ro_imp": "3.2",
     "sro_imp": "3.2",
     "status": "active"
+  },
+  "CE06 AA1.02": {
+    "category": "ape",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "AA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 AA1.03": {
+    "category": "ape",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "AA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE06 AA1.04a": {
     "category": "ape",
@@ -21839,6 +23159,16 @@
     "sro_imp": "4.3",
     "status": "active"
   },
+  "CE06 AA2.02": {
+    "category": "ape",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "AA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE06 AA2.02a": {
     "category": "ape",
     "system_number": "CE06",
@@ -21879,6 +23209,16 @@
     "sro_imp": "4",
     "status": "active"
   },
+  "CE06 AA2.06": {
+    "category": "ape",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "AA2.06",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE06 AA2.06a": {
     "category": "ape",
     "system_number": "CE06",
@@ -21888,6 +23228,16 @@
     "ro_imp": "3.7",
     "sro_imp": "3.9",
     "status": "active"
+  },
+  "CE06 AA2.07": {
+    "category": "ape",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "AA2.07",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE06 AA2.07a": {
     "category": "ape",
@@ -22049,6 +23399,16 @@
     "sro_imp": "3.9",
     "status": "active"
   },
+  "CE06 AK2.04": {
+    "category": "ape",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "AK2.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE06 AK2.04a": {
     "category": "ape",
     "system_number": "CE06",
@@ -22058,6 +23418,16 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "CE06 AK2.05": {
+    "category": "ape",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "AK2.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE06 AK2.05a": {
     "category": "ape",
@@ -22069,6 +23439,16 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "CE06 AK2.06": {
+    "category": "ape",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "AK2.06",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE06 AK2.06a": {
     "category": "ape",
     "system_number": "CE06",
@@ -22078,6 +23458,16 @@
     "ro_imp": "4.3",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "CE06 AK2.07": {
+    "category": "ape",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "AK2.07",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE06 AK2.07a": {
     "category": "ape",
@@ -22229,6 +23619,16 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "WE12 AA1.04": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE12 AA1.04c": {
     "category": "ape",
     "system_number": "WE12",
@@ -22259,6 +23659,16 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "WE12 AA1.07": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.07",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE12 AA1.07c": {
     "category": "ape",
     "system_number": "WE12",
@@ -22268,6 +23678,16 @@
     "ro_imp": "3.5",
     "sro_imp": "3.5",
     "status": "active"
+  },
+  "WE12 AA1.08": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.08",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE12 AA1.08c": {
     "category": "ape",
@@ -22409,6 +23829,16 @@
     "sro_imp": "3.3",
     "status": "active"
   },
+  "WE12 AA1.22": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.22",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE12 AA1.22a": {
     "category": "ape",
     "system_number": "WE12",
@@ -22418,6 +23848,16 @@
     "ro_imp": "3",
     "sro_imp": "3",
     "status": "active"
+  },
+  "WE12 AA1.23": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AA1.23",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE12 AA1.23a": {
     "category": "ape",
@@ -22619,6 +24059,16 @@
     "sro_imp": "3.9",
     "status": "active"
   },
+  "WE12 AK1.04": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK1.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE12 AK1.04c": {
     "category": "ape",
     "system_number": "WE12",
@@ -22649,6 +24099,36 @@
     "sro_imp": "3.5",
     "status": "active"
   },
+  "WE12 AK2.01": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 AK2.02": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 AK2.03": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE12 AK2.03c": {
     "category": "ape",
     "system_number": "WE12",
@@ -22658,6 +24138,16 @@
     "ro_imp": "3.2",
     "sro_imp": "3.2",
     "status": "active"
+  },
+  "WE12 AK2.04": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE12 AK2.04c": {
     "category": "ape",
@@ -22669,6 +24159,16 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "WE12 AK2.05": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE12 AK2.05c": {
     "category": "ape",
     "system_number": "WE12",
@@ -22678,6 +24178,16 @@
     "ro_imp": "4.1",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "WE12 AK2.06": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK2.06",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE12 AK2.06c": {
     "category": "ape",
@@ -22868,6 +24378,16 @@
     "ro_imp": "2.7",
     "sro_imp": "2.7",
     "status": "active"
+  },
+  "WE12 AK3.05": {
+    "category": "ape",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "AK3.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE12 AK3.05c": {
     "category": "ape",
@@ -29629,6 +31149,36 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "BE02 EA1.01": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EA1.02": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EA1.03": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE02 EA1.04a": {
     "category": "epe",
     "system_number": "BE02",
@@ -29718,6 +31268,46 @@
     "ro_imp": "4.3",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "BE02 EA1.16": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA1.16",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EA2.01": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EA2.02": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EA2.03": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA2.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE02 EA2.03a": {
     "category": "epe",
@@ -29869,6 +31459,36 @@
     "sro_imp": "4.3",
     "status": "active"
   },
+  "BE02 EK1.01": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EK1.02": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EK1.03": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE02 EK1.04a": {
     "category": "epe",
     "system_number": "BE02",
@@ -29878,6 +31498,16 @@
     "ro_imp": "4.1",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "BE02 EK1.05": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK1.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE02 EK1.05a": {
     "category": "epe",
@@ -29949,6 +31579,26 @@
     "sro_imp": "4.2",
     "status": "active"
   },
+  "BE02 EK2.01": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EK2.02": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE02 EK2.03a": {
     "category": "epe",
     "system_number": "BE02",
@@ -29958,6 +31608,16 @@
     "ro_imp": "4.3",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "BE02 EK2.04": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK2.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE02 EK2.04a": {
     "category": "epe",
@@ -30019,6 +31679,16 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "BE02 EK2.10": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK2.10",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE02 EK2.10a": {
     "category": "epe",
     "system_number": "BE02",
@@ -30038,6 +31708,46 @@
     "ro_imp": "4.2",
     "sro_imp": "4.2",
     "status": "active"
+  },
+  "BE02 EK3.01": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EK3.02": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EK3.03": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE02 EK3.04": {
+    "category": "epe",
+    "system_number": "BE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE02 EK3.05a": {
     "category": "epe",
@@ -30229,6 +31939,36 @@
     "sro_imp": "4.3",
     "status": "active"
   },
+  "BE03 EA1.01": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE03 EA1.02": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE03 EA1.03": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE03 EA1.04": {
     "category": "epe",
     "system_number": "BE03",
@@ -30298,6 +32038,26 @@
     "ro_imp": "4.3",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "BE03 EA2.01": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE03 EA2.02": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE03 EA2.03": {
     "category": "epe",
@@ -30409,6 +32169,36 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "BE03 EK1.01": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE03 EK1.02": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE03 EK1.03": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE03 EK1.04": {
     "category": "epe",
     "system_number": "BE03",
@@ -30499,6 +32289,26 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "BE03 EK2.01": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE03 EK2.02": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE03 EK2.03": {
     "category": "epe",
     "system_number": "BE03",
@@ -30568,6 +32378,46 @@
     "ro_imp": "4",
     "sro_imp": "4",
     "status": "active"
+  },
+  "BE03 EK3.01": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE03 EK3.02": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE03 EK3.03": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE03 EK3.04": {
+    "category": "epe",
+    "system_number": "BE03",
+    "system_name": "(BW E03) Inadequate Subcooling Margin",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE03 EK3.05": {
     "category": "epe",
@@ -30739,6 +32589,36 @@
     "sro_imp": "3.3",
     "status": "active"
   },
+  "BE04 EA1.01": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE04 EA1.02": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE04 EA1.03": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE04 EA1.04": {
     "category": "epe",
     "system_number": "BE04",
@@ -30839,6 +32719,16 @@
     "sro_imp": "4",
     "status": "active"
   },
+  "BE04 EA2.01": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE04 EA2.01a": {
     "category": "epe",
     "system_number": "BE04",
@@ -30848,6 +32738,16 @@
     "ro_imp": "4.1",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "BE04 EA2.02": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE04 EA2.02a": {
     "category": "epe",
@@ -31019,6 +32919,36 @@
     "sro_imp": "3.7",
     "status": "active"
   },
+  "BE04 EK1.01": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE04 EK1.02": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE04 EK1.03": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE04 EK1.04": {
     "category": "epe",
     "system_number": "BE04",
@@ -31119,6 +33049,26 @@
     "sro_imp": "3.9",
     "status": "active"
   },
+  "BE04 EK2.01": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE04 EK2.02": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE04 EK2.03": {
     "category": "epe",
     "system_number": "BE04",
@@ -31218,6 +33168,46 @@
     "ro_imp": "3.9",
     "sro_imp": "3.9",
     "status": "active"
+  },
+  "BE04 EK3.01": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE04 EK3.02": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE04 EK3.03": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE04 EK3.04": {
+    "category": "epe",
+    "system_number": "BE04",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE04 EK3.05": {
     "category": "epe",
@@ -31399,6 +33389,186 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "BE05 EA1.01": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EA1.02": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EA1.03": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EA2.01": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EA2.02": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK1.01": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK1.02": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK1.03": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK2.01": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK2.02": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK3.01": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK3.02": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK3.03": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK3.04": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE05 EK3.16": {
+    "category": "epe",
+    "system_number": "BE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.16",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE08 EA1.01": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE08 EA1.02": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE08 EA1.03": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE08 EA1.04": {
     "category": "epe",
     "system_number": "BE08",
@@ -31519,6 +33689,16 @@
     "sro_imp": "3.3",
     "status": "active"
   },
+  "BE08 EA2.01": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE08 EA2.01a": {
     "category": "epe",
     "system_number": "BE08",
@@ -31528,6 +33708,16 @@
     "ro_imp": "3.9",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "BE08 EA2.02": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE08 EA2.02a": {
     "category": "epe",
@@ -31679,6 +33869,36 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "BE08 EK1.01": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE08 EK1.02": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE08 EK1.03": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE08 EK1.04": {
     "category": "epe",
     "system_number": "BE08",
@@ -31748,6 +33968,26 @@
     "ro_imp": "4.1",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "BE08 EK2.01": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE08 EK2.02": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE08 EK2.03": {
     "category": "epe",
@@ -31868,6 +34108,46 @@
     "ro_imp": "3.6",
     "sro_imp": "3.6",
     "status": "active"
+  },
+  "BE08 EK3.01": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE08 EK3.02": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE08 EK3.03": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE08 EK3.04": {
+    "category": "epe",
+    "system_number": "BE08",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE08 EK3.05": {
     "category": "epe",
@@ -32039,6 +34319,36 @@
     "sro_imp": "3.4",
     "status": "active"
   },
+  "BE09 EA1.01": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE09 EA1.02": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE09 EA1.03": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE09 EA1.04": {
     "category": "epe",
     "system_number": "BE09",
@@ -32129,6 +34439,16 @@
     "sro_imp": "4.5",
     "status": "active"
   },
+  "BE09 EA2.01": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE09 EA2.01a": {
     "category": "epe",
     "system_number": "BE09",
@@ -32138,6 +34458,16 @@
     "ro_imp": "3.5",
     "sro_imp": "4.5",
     "status": "active"
+  },
+  "BE09 EA2.02": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE09 EA2.02a": {
     "category": "epe",
@@ -32319,6 +34649,36 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "BE09 EK1.01": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE09 EK1.02": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE09 EK1.03": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE09 EK1.04": {
     "category": "epe",
     "system_number": "BE09",
@@ -32429,6 +34789,26 @@
     "sro_imp": "4.2",
     "status": "active"
   },
+  "BE09 EK2.01": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE09 EK2.02": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE09 EK2.03": {
     "category": "epe",
     "system_number": "BE09",
@@ -32518,6 +34898,46 @@
     "ro_imp": "4.5",
     "sro_imp": "4.5",
     "status": "active"
+  },
+  "BE09 EK3.01": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE09 EK3.02": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE09 EK3.03": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE09 EK3.04": {
+    "category": "epe",
+    "system_number": "BE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE09 EK3.05": {
     "category": "epe",
@@ -33309,6 +35729,36 @@
     "sro_imp": "4.4",
     "status": "active"
   },
+  "BE13 EA1.01": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE13 EA1.02": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE13 EA1.03": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE13 EA1.04": {
     "category": "epe",
     "system_number": "BE13",
@@ -33378,6 +35828,26 @@
     "ro_imp": "4.3",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "BE13 EA2.01": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE13 EA2.02": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE13 EA2.03": {
     "category": "epe",
@@ -33488,6 +35958,36 @@
     "ro_imp": "4.6",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "BE13 EK1.01": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE13 EK1.02": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE13 EK1.03": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE13 EK1.04": {
     "category": "epe",
@@ -33619,6 +36119,26 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "BE13 EK2.01": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE13 EK2.02": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "BE13 EK2.03": {
     "category": "epe",
     "system_number": "BE13",
@@ -33688,6 +36208,46 @@
     "ro_imp": "4.1",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "BE13 EK3.01": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE13 EK3.02": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE13 EK3.03": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "BE13 EK3.04": {
+    "category": "epe",
+    "system_number": "BE13",
+    "system_name": "(BW E13 & E14) EOP Rules and Enclosures",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "BE13 EK3.05": {
     "category": "epe",
@@ -34989,6 +37549,316 @@
     "sro_imp": "4.4",
     "status": "active"
   },
+  "CA11 EA1.01": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EA1.02": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EA1.03": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EA2.01": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EA2.02": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EK1.01": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EK1.02": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EK1.03": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EK2.01": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EK2.02": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EK3.01": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EK3.02": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EK3.03": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA11 EK3.04": {
+    "category": "epe",
+    "system_number": "CA11",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EA1.01": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EA1.02": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EA1.03": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EA2.01": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EA2.02": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EK1.01": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EK1.02": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EK1.03": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EK2.01": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EK2.02": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EK3.01": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EK3.02": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EK3.03": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CA13 EK3.04": {
+    "category": "epe",
+    "system_number": "CA13",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE02 EA1.01": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE02 EA1.02": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE02 EA1.03": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE02 EA1.04c": {
     "category": "epe",
     "system_number": "CE02",
@@ -35109,6 +37979,16 @@
     "sro_imp": "4",
     "status": "active"
   },
+  "CE02 EA1.16": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA1.16",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE02 EA1.16a": {
     "category": "epe",
     "system_number": "CE02",
@@ -35169,6 +38049,16 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "CE02 EA2.01": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE02 EA2.01b": {
     "category": "epe",
     "system_number": "CE02",
@@ -35179,6 +38069,16 @@
     "sro_imp": "4.2",
     "status": "active"
   },
+  "CE02 EA2.02": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE02 EA2.02b": {
     "category": "epe",
     "system_number": "CE02",
@@ -35188,6 +38088,16 @@
     "ro_imp": "4.5",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "CE02 EA2.03": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EA2.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE02 EA2.03c": {
     "category": "epe",
@@ -35289,6 +38199,36 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "CE02 EK1.01": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE02 EK1.02": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE02 EK1.03": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE02 EK1.04c": {
     "category": "epe",
     "system_number": "CE02",
@@ -35298,6 +38238,16 @@
     "ro_imp": "3.6",
     "sro_imp": "3.6",
     "status": "active"
+  },
+  "CE02 EK1.05": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK1.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE02 EK1.05c": {
     "category": "epe",
@@ -35379,6 +38329,26 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "CE02 EK2.01": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE02 EK2.02": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE02 EK2.03c": {
     "category": "epe",
     "system_number": "CE02",
@@ -35388,6 +38358,16 @@
     "ro_imp": "4.2",
     "sro_imp": "4.2",
     "status": "active"
+  },
+  "CE02 EK2.04": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK2.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE02 EK2.04c": {
     "category": "epe",
@@ -35448,6 +38428,16 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "CE02 EK2.10": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK2.10",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE02 EK2.10c": {
     "category": "epe",
@@ -35518,6 +38508,46 @@
     "ro_imp": "3.9",
     "sro_imp": "3.9",
     "status": "active"
+  },
+  "CE02 EK3.01": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE02 EK3.02": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE02 EK3.03": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE02 EK3.04": {
+    "category": "epe",
+    "system_number": "CE02",
+    "system_name": "(EPE 7; BW E02 & E10; CE E02) Reactor Trip, Stabilization, Recovery",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE02 EK3.05c": {
     "category": "epe",
@@ -35658,6 +38688,306 @@
     "ro_imp": "3.8",
     "sro_imp": "3.8",
     "status": "active"
+  },
+  "CE05 EA1.01": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EA1.02": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EA1.03": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EA2.01": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EA2.02": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK1.01": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK1.02": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK1.03": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK2.01": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK2.02": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK3.01": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK3.02": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK3.03": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK3.04": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE05 EK3.16": {
+    "category": "epe",
+    "system_number": "CE05",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.16",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EA1.01": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EA1.02": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EA1.03": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EK1.01": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EK1.02": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EK1.03": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EK2.01": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EK2.02": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EK3.01": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EK3.02": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EK3.03": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE06 EK3.04": {
+    "category": "epe",
+    "system_number": "CE06",
+    "system_name": "(APE 54; CE E06) Loss of Main Feedwater",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE09 EA1.01": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE09 EA1.02": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE09 EA1.03": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE09 EA1.04": {
     "category": "epe",
@@ -36059,6 +39389,36 @@
     "sro_imp": "3.9",
     "status": "active"
   },
+  "CE09 EK1.01": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE09 EK1.02": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE09 EK1.03": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE09 EK1.04": {
     "category": "epe",
     "system_number": "CE09",
@@ -36148,6 +39508,26 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "CE09 EK2.01": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE09 EK2.02": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE09 EK2.03": {
     "category": "epe",
@@ -36368,6 +39748,46 @@
     "ro_imp": "4.3",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "CE09 EK3.01": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE09 EK3.02": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE09 EK3.03": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE09 EK3.04": {
+    "category": "epe",
+    "system_number": "CE09",
+    "system_name": "(CE E09) Functional Recovery",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE09 EK3.05": {
     "category": "epe",
@@ -36639,6 +40059,36 @@
     "sro_imp": "3.4",
     "status": "active"
   },
+  "CE13 EA1.01": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE13 EA1.02": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE13 EA1.03": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE13 EA1.04": {
     "category": "epe",
     "system_number": "CE13",
@@ -36869,6 +40319,36 @@
     "sro_imp": "3.3",
     "status": "active"
   },
+  "CE13 EK1.01": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE13 EK1.02": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE13 EK1.03": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE13 EK1.04": {
     "category": "epe",
     "system_number": "CE13",
@@ -36958,6 +40438,26 @@
     "ro_imp": "3.9",
     "sro_imp": "3.9",
     "status": "active"
+  },
+  "CE13 EK2.01": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE13 EK2.02": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "CE13 EK2.03": {
     "category": "epe",
@@ -37069,6 +40569,46 @@
     "sro_imp": "3",
     "status": "active"
   },
+  "CE13 EK3.01": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE13 EK3.02": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE13 EK3.03": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "CE13 EK3.04": {
+    "category": "epe",
+    "system_number": "CE13",
+    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "CE13 EK3.05": {
     "category": "epe",
     "system_number": "CE13",
@@ -37129,141 +40669,31 @@
     "sro_imp": "3.8",
     "status": "active"
   },
-  "EA1.01": {
+  "WE01 EA1.01": {
     "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
     "ka_no": "EA1.01",
     "statement": "DELETED",
     "ro_imp": "0",
     "sro_imp": "0",
     "status": "deleted"
   },
-  "EA1.02": {
+  "WE01 EA1.02": {
     "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
     "ka_no": "EA1.02",
     "statement": "DELETED",
     "ro_imp": "0",
     "sro_imp": "0",
     "status": "deleted"
   },
-  "EA1.03": {
+  "WE01 EA1.03": {
     "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
     "ka_no": "EA1.03",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EA2.01": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
-    "ka_no": "EA2.01",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EA2.02": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
-    "ka_no": "EA2.02",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EK1.01": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
-    "ka_no": "EK1.01",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EK1.02": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
-    "ka_no": "EK1.02",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EK1.03": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
-    "ka_no": "EK1.03",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EK2.01": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
-    "ka_no": "EK2.01",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EK2.02": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
-    "ka_no": "EK2.02",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EK3.01": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
-    "ka_no": "EK3.01",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EK3.02": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
-    "ka_no": "EK3.02",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EK3.03": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
-    "ka_no": "EK3.03",
-    "statement": "DELETED",
-    "ro_imp": "0",
-    "sro_imp": "0",
-    "status": "deleted"
-  },
-  "EK3.04": {
-    "category": "epe",
-    "system_number": "",
-    "system_name": "(CE E13*) Loss of Forced Circulation/LOOP/Blackout",
-    "ka_no": "EK3.04",
     "statement": "DELETED",
     "ro_imp": "0",
     "sro_imp": "0",
@@ -37318,6 +40748,26 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "WE01 EA2.01": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE01 EA2.02": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE01 EA2.03": {
     "category": "epe",
@@ -37389,6 +40839,36 @@
     "sro_imp": "4",
     "status": "active"
   },
+  "WE01 EK1.01": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE01 EK1.02": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE01 EK1.03": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE01 EK1.04": {
     "category": "epe",
     "system_number": "WE01",
@@ -37418,6 +40898,26 @@
     "ro_imp": "4.2",
     "sro_imp": "4.2",
     "status": "active"
+  },
+  "WE01 EK2.01": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE01 EK2.02": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE01 EK2.03": {
     "category": "epe",
@@ -37468,6 +40968,46 @@
     "ro_imp": "3.6",
     "sro_imp": "3.6",
     "status": "active"
+  },
+  "WE01 EK3.01": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE01 EK3.02": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE01 EK3.03": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE01 EK3.04": {
+    "category": "epe",
+    "system_number": "WE01",
+    "system_name": "(W E01 & E02) Rediagnosis & SI Termination",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE02 EA1.04a": {
     "category": "epe",
@@ -38259,6 +41799,36 @@
     "sro_imp": "3.1",
     "status": "active"
   },
+  "WE03 EA1.01": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE03 EA1.02": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE03 EA1.03": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE03 EA1.04a": {
     "category": "epe",
     "system_number": "WE03",
@@ -38449,6 +42019,26 @@
     "sro_imp": "2.9",
     "status": "active"
   },
+  "WE03 EA2.01": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE03 EA2.02": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE03 EA2.03a": {
     "category": "epe",
     "system_number": "WE03",
@@ -38579,6 +42169,36 @@
     "sro_imp": "3.1",
     "status": "active"
   },
+  "WE03 EK1.01": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE03 EK1.02": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE03 EK1.03": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE03 EK1.04a": {
     "category": "epe",
     "system_number": "WE03",
@@ -38638,6 +42258,26 @@
     "ro_imp": "3",
     "sro_imp": "3",
     "status": "active"
+  },
+  "WE03 EK2.01": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE03 EK2.02": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE03 EK2.03a": {
     "category": "epe",
@@ -38829,6 +42469,46 @@
     "sro_imp": "2.8",
     "status": "active"
   },
+  "WE03 EK3.01": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE03 EK3.02": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE03 EK3.03": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE03 EK3.04": {
+    "category": "epe",
+    "system_number": "WE03",
+    "system_name": "(BW E08; W E03) LOCA Cooldown – Depressurization",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE03 EK3.05a": {
     "category": "epe",
     "system_number": "WE03",
@@ -38989,6 +42669,36 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "WE04 EA1.01": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE04 EA1.02": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE04 EA1.03": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE04 EA1.04": {
     "category": "epe",
     "system_number": "WE04",
@@ -39009,6 +42719,26 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "WE04 EA2.01": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE04 EA2.02": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE04 EA2.03": {
     "category": "epe",
     "system_number": "WE04",
@@ -39018,6 +42748,36 @@
     "ro_imp": "3.9",
     "sro_imp": "3.8",
     "status": "active"
+  },
+  "WE04 EK1.01": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE04 EK1.02": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE04 EK1.03": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE04 EK1.04": {
     "category": "epe",
@@ -39038,6 +42798,26 @@
     "ro_imp": "3.6",
     "sro_imp": "3.6",
     "status": "active"
+  },
+  "WE04 EK2.01": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE04 EK2.02": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE04 EK2.03": {
     "category": "epe",
@@ -39069,6 +42849,46 @@
     "sro_imp": "4",
     "status": "active"
   },
+  "WE04 EK3.01": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE04 EK3.02": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE04 EK3.03": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE04 EK3.04": {
+    "category": "epe",
+    "system_number": "WE04",
+    "system_name": "(W E04) LOCA Outside Containment",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE04 EK3.05": {
     "category": "epe",
     "system_number": "WE04",
@@ -39088,6 +42908,36 @@
     "ro_imp": "4.3",
     "sro_imp": "4.3",
     "status": "active"
+  },
+  "WE05 EA1.01": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE05 EA1.02": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE05 EA1.03": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE05 EA1.04a": {
     "category": "epe",
@@ -39319,6 +43169,26 @@
     "sro_imp": "2.6",
     "status": "active"
   },
+  "WE05 EA2.01": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE05 EA2.02": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE05 EA2.03a": {
     "category": "epe",
     "system_number": "WE05",
@@ -39449,6 +43319,36 @@
     "sro_imp": "3.2",
     "status": "active"
   },
+  "WE05 EK1.01": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE05 EK1.02": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE05 EK1.03": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE05 EK1.04a": {
     "category": "epe",
     "system_number": "WE05",
@@ -39528,6 +43428,26 @@
     "ro_imp": "4",
     "sro_imp": "4",
     "status": "active"
+  },
+  "WE05 EK2.01": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE05 EK2.02": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE05 EK2.03a": {
     "category": "epe",
@@ -39759,6 +43679,46 @@
     "sro_imp": "2.6",
     "status": "active"
   },
+  "WE05 EK3.01": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE05 EK3.02": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE05 EK3.03": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE05 EK3.04": {
+    "category": "epe",
+    "system_number": "WE05",
+    "system_name": "(BW E04; W E05) Inadequate Heat Transfer – Loss of Secondary Heat Sink",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE05 EK3.05a": {
     "category": "epe",
     "system_number": "WE05",
@@ -39929,6 +43889,36 @@
     "sro_imp": "3.1",
     "status": "active"
   },
+  "WE06 EA1.01": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.02": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.03": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EA1.04a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40009,6 +43999,16 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "WE06 EA1.12": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.12",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EA1.12a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40029,6 +44029,16 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "WE06 EA1.14": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.14",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EA1.14a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40038,6 +44048,16 @@
     "ro_imp": "3.9",
     "sro_imp": "3.9",
     "status": "active"
+  },
+  "WE06 EA1.15": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.15",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE06 EA1.15a": {
     "category": "epe",
@@ -40059,6 +44079,16 @@
     "sro_imp": "3.2",
     "status": "active"
   },
+  "WE06 EA1.17": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.17",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EA1.17a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40068,6 +44098,116 @@
     "ro_imp": "2.8",
     "sro_imp": "2.8",
     "status": "active"
+  },
+  "WE06 EA1.18": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.18",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.19": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.19",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.20": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.20",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.22": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.22",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.24": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.24",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.25": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.25",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.26": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.26",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.27": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.27",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA1.28": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA1.28",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA2.01": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EA2.02": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE06 EA2.03a": {
     "category": "epe",
@@ -40229,6 +44369,46 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "WE06 EK1.01": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EK1.02": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EK1.03": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EK1.04": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK1.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EK1.04a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40238,6 +44418,16 @@
     "ro_imp": "4.1",
     "sro_imp": "4.1",
     "status": "active"
+  },
+  "WE06 EK1.05": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK1.05",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE06 EK1.05a": {
     "category": "epe",
@@ -40249,6 +44439,16 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "WE06 EK1.06": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK1.06",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EK1.06a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40259,6 +44459,16 @@
     "sro_imp": "3.9",
     "status": "active"
   },
+  "WE06 EK1.07": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK1.07",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EK1.07a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40268,6 +44478,16 @@
     "ro_imp": "3.6",
     "sro_imp": "3.6",
     "status": "active"
+  },
+  "WE06 EK1.08": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK1.08",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE06 EK1.08a": {
     "category": "epe",
@@ -40298,6 +44518,26 @@
     "ro_imp": "3.9",
     "sro_imp": "3.9",
     "status": "active"
+  },
+  "WE06 EK2.01": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EK2.02": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE06 EK2.03a": {
     "category": "epe",
@@ -40349,6 +44589,16 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "WE06 EK2.08": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK2.08",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EK2.08a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40358,6 +44608,16 @@
     "ro_imp": "3.6",
     "sro_imp": "3.6",
     "status": "active"
+  },
+  "WE06 EK2.09": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK2.09",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE06 EK2.09a": {
     "category": "epe",
@@ -40369,6 +44629,16 @@
     "sro_imp": "4.1",
     "status": "active"
   },
+  "WE06 EK2.10": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK2.10",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EK2.10a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40378,6 +44648,16 @@
     "ro_imp": "3.8",
     "sro_imp": "3.8",
     "status": "active"
+  },
+  "WE06 EK2.11": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK2.11",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE06 EK2.11a": {
     "category": "epe",
@@ -40389,6 +44669,16 @@
     "sro_imp": "3.3",
     "status": "active"
   },
+  "WE06 EK2.12": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK2.12",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EK2.12a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40398,6 +44688,16 @@
     "ro_imp": "3.6",
     "sro_imp": "3.6",
     "status": "active"
+  },
+  "WE06 EK2.13": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK2.13",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE06 EK2.13a": {
     "category": "epe",
@@ -40449,6 +44749,46 @@
     "sro_imp": "3.3",
     "status": "active"
   },
+  "WE06 EK3.01": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EK3.02": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EK3.03": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE06 EK3.04": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE06 EK3.05a": {
     "category": "epe",
     "system_number": "WE06",
@@ -40478,6 +44818,16 @@
     "ro_imp": "3.6",
     "sro_imp": "3.6",
     "status": "active"
+  },
+  "WE06 EK3.08": {
+    "category": "epe",
+    "system_number": "WE06",
+    "system_name": "(EPE 74; W E06 & E07) Inadequate Core Cooling",
+    "ka_no": "EK3.08",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE06 EK3.08a": {
     "category": "epe",
@@ -40749,6 +45099,36 @@
     "sro_imp": "3.8",
     "status": "active"
   },
+  "WE08 EA1.01": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE08 EA1.02": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE08 EA1.03": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE08 EA1.04": {
     "category": "epe",
     "system_number": "WE08",
@@ -40919,6 +45299,26 @@
     "sro_imp": "2.7",
     "status": "active"
   },
+  "WE08 EA2.01": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE08 EA2.02": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE08 EA2.03": {
     "category": "epe",
     "system_number": "WE08",
@@ -41019,6 +45419,36 @@
     "sro_imp": "2.8",
     "status": "active"
   },
+  "WE08 EK1.01": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE08 EK1.02": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE08 EK1.03": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE08 EK1.04": {
     "category": "epe",
     "system_number": "WE08",
@@ -41078,6 +45508,26 @@
     "ro_imp": "3.9",
     "sro_imp": "3.9",
     "status": "active"
+  },
+  "WE08 EK2.01": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE08 EK2.02": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE08 EK2.03": {
     "category": "epe",
@@ -41249,6 +45699,46 @@
     "sro_imp": "2.7",
     "status": "active"
   },
+  "WE08 EK3.01": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE08 EK3.02": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE08 EK3.03": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE08 EK3.04": {
+    "category": "epe",
+    "system_number": "WE08",
+    "system_name": "(CE A11**; W E08) RCS Overcooling – Pressurized Thermal Shock",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE08 EK3.05": {
     "category": "epe",
     "system_number": "WE08",
@@ -41348,6 +45838,36 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "WE09 EA1.01": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE09 EA1.02": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE09 EA1.03": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE09 EA1.04a": {
     "category": "epe",
@@ -41519,6 +46039,26 @@
     "sro_imp": "3",
     "status": "active"
   },
+  "WE09 EA2.01": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE09 EA2.02": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE09 EA2.03a": {
     "category": "epe",
     "system_number": "WE09",
@@ -41639,6 +46179,36 @@
     "sro_imp": "3.6",
     "status": "active"
   },
+  "WE09 EK1.01": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE09 EK1.02": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE09 EK1.03": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE09 EK1.04a": {
     "category": "epe",
     "system_number": "WE09",
@@ -41668,6 +46238,26 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "WE09 EK2.01": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE09 EK2.02": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE09 EK2.03a": {
     "category": "epe",
@@ -41828,6 +46418,46 @@
     "ro_imp": "3.2",
     "sro_imp": "3.2",
     "status": "active"
+  },
+  "WE09 EK3.01": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE09 EK3.02": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE09 EK3.03": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE09 EK3.04": {
+    "category": "epe",
+    "system_number": "WE09",
+    "system_name": "(BW E09; CE A13**; W E09 & E10) Natural Circulation",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE09 EK3.05a": {
     "category": "epe",
@@ -42459,6 +47089,36 @@
     "sro_imp": "3.3",
     "status": "active"
   },
+  "WE11 EA1.01": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE11 EA1.02": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE11 EA1.03": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE11 EA1.04": {
     "category": "epe",
     "system_number": "WE11",
@@ -42649,6 +47309,26 @@
     "sro_imp": "3.3",
     "status": "active"
   },
+  "WE11 EA2.01": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE11 EA2.02": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE11 EA2.03": {
     "category": "epe",
     "system_number": "WE11",
@@ -42809,6 +47489,36 @@
     "sro_imp": "3.1",
     "status": "active"
   },
+  "WE11 EK1.01": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE11 EK1.02": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE11 EK1.03": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE11 EK1.04": {
     "category": "epe",
     "system_number": "WE11",
@@ -42868,6 +47578,26 @@
     "ro_imp": "4.2",
     "sro_imp": "4.2",
     "status": "active"
+  },
+  "WE11 EK2.01": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE11 EK2.02": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE11 EK2.03": {
     "category": "epe",
@@ -43038,6 +47768,46 @@
     "ro_imp": "3.2",
     "sro_imp": "3.2",
     "status": "active"
+  },
+  "WE11 EK3.01": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE11 EK3.02": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE11 EK3.03": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE11 EK3.04": {
+    "category": "epe",
+    "system_number": "WE11",
+    "system_name": "(W E11) Loss of Emergency Coolant Recirculation",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE11 EK3.05": {
     "category": "epe",
@@ -43219,6 +47989,186 @@
     "sro_imp": "3.2",
     "status": "active"
   },
+  "WE12 EA1.01": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EA1.02": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EA1.03": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EA2.01": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EA2.02": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EA2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK1.01": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK1.02": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK1.03": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK2.01": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK2.02": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK3.01": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK3.02": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK3.03": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK3.04": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE12 EK3.16": {
+    "category": "epe",
+    "system_number": "WE12",
+    "system_name": "(APE 40; BW E05; CE E05; W E12) Steam Line Rupture – Excessive Heat Transfer",
+    "ka_no": "EK3.16",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE13 EA1.01": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE13 EA1.02": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE13 EA1.03": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE13 EA1.04": {
     "category": "epe",
     "system_number": "WE13",
@@ -43339,6 +48289,36 @@
     "sro_imp": "3.5",
     "status": "active"
   },
+  "WE13 EK1.01": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE13 EK1.02": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE13 EK1.03": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE13 EK1.04": {
     "category": "epe",
     "system_number": "WE13",
@@ -43348,6 +48328,26 @@
     "ro_imp": "3.2",
     "sro_imp": "3.2",
     "status": "active"
+  },
+  "WE13 EK2.01": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE13 EK2.02": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE13 EK2.03": {
     "category": "epe",
@@ -43409,6 +48409,46 @@
     "sro_imp": "3.3",
     "status": "active"
   },
+  "WE13 EK3.01": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE13 EK3.02": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE13 EK3.03": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE13 EK3.04": {
+    "category": "epe",
+    "system_number": "WE13",
+    "system_name": "(W E13) Steam Generator Overpressure",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE13 EK3.05": {
     "category": "epe",
     "system_number": "WE13",
@@ -43468,6 +48508,156 @@
     "ro_imp": "3.7",
     "sro_imp": "3.7",
     "status": "active"
+  },
+  "WE14 EA1.01": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EA1.02": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EA1.03": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EK1.01": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EK1.02": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EK1.03": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EK2.01": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EK2.02": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EK3.01": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EK3.02": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EK3.03": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE14 EK3.04": {
+    "category": "epe",
+    "system_number": "WE14",
+    "system_name": "(APE 69; W E14) Loss of Containment Integrity",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE15 EA1.01": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE15 EA1.02": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE15 EA1.03": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE15 EA1.04": {
     "category": "epe",
@@ -43629,6 +48819,36 @@
     "sro_imp": "3.1",
     "status": "active"
   },
+  "WE15 EK1.01": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EK1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE15 EK1.02": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE15 EK1.03": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE15 EK1.04": {
     "category": "epe",
     "system_number": "WE15",
@@ -43638,6 +48858,26 @@
     "ro_imp": "3.1",
     "sro_imp": "3.1",
     "status": "active"
+  },
+  "WE15 EK2.01": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE15 EK2.02": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE15 EK2.03": {
     "category": "epe",
@@ -43699,6 +48939,46 @@
     "sro_imp": "2.9",
     "status": "active"
   },
+  "WE15 EK3.01": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE15 EK3.02": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE15 EK3.03": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE15 EK3.04": {
+    "category": "epe",
+    "system_number": "WE15",
+    "system_name": "(W E15) Containment Flooding",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE15 EK3.05": {
     "category": "epe",
     "system_number": "WE15",
@@ -43718,6 +48998,36 @@
     "ro_imp": "3.1",
     "sro_imp": "3.1",
     "status": "active"
+  },
+  "WE16 EA1.01": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EA1.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE16 EA1.02": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EA1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE16 EA1.03": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EA1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE16 EA1.04": {
     "category": "epe",
@@ -43809,6 +49119,46 @@
     "sro_imp": "3.4",
     "status": "active"
   },
+  "WE16 EK1.02": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EK1.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE16 EK1.03": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EK1.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE16 EK2.01": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EK2.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE16 EK2.02": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EK2.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
   "WE16 EK2.03": {
     "category": "epe",
     "system_number": "WE16",
@@ -43838,6 +49188,46 @@
     "ro_imp": "3.4",
     "sro_imp": "3.4",
     "status": "active"
+  },
+  "WE16 EK3.01": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EK3.01",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE16 EK3.02": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EK3.02",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE16 EK3.03": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EK3.03",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
+  },
+  "WE16 EK3.04": {
+    "category": "epe",
+    "system_number": "WE16",
+    "system_name": "(W E16) High Containment Radiation",
+    "ka_no": "EK3.04",
+    "statement": "DELETED",
+    "ro_imp": "0",
+    "sro_imp": "0",
+    "status": "deleted"
   },
   "WE16 EK3.05": {
     "category": "epe",

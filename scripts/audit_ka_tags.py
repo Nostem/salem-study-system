@@ -75,11 +75,29 @@ def normalize_ka(name):
     g = re.search(r"2\.(\d+)\.(\d+)", s)
     if g and (re.search(r"G\s*2\.", s) or re.search(r"(?:^|[^0-9.])2\.\d", s)):
         return f"G2.{int(g.group(1))}.{int(g.group(2))}"
-    # dual form 'first / second': number from the left, K/A token from the right
+    # generic group notation Gn.mm / G<grp><nn>: older exams abbreviate the four generic
+    # groups (catalog 2.1–2.4) as G1.x–G4.x. Decode to 2.<grp>.<item>, third part unpadded.
+    gm = re.search(r"G([1-4])\.(\d{1,2})(?!\d)", s)            # G4.18, G4.09 (dotted)
+    if gm:
+        return f"G2.{int(gm.group(1))}.{int(gm.group(2))}"
+    gm = re.search(r"G([1-4])(\d{2})(?=\D|$)", s)              # 194001G432, G411 (glued)
+    if gm:
+        return f"G2.{int(gm.group(1))}.{int(gm.group(2))}"
+    # generic-knowledge tier (19xxxx) carries a subject infix the catalog keeps, e.g.
+    # '191001 CVS.K1.04' -> key '191001 CVS.K1.04' (do not drop the 'CVS.').
+    im = re.match(r"^(\d{6})\s+([A-Z]{2,4})\.([AK]\d\.\d+[a-z]?)$", s)
+    if im:
+        return f"{im.group(1)} {im.group(2)}.{im.group(3)}"
+    # dual form 'first / second': K/A token from the right; number — or, when the left half
+    # carries a vendor code (00WE02K201 / EK2.1), the vendor prefix — from the left.
     if "/" in s:
         left, right = (p.strip() for p in s.split("/", 1))
-        dm = re.match(r"\d{1,6}", left)
         km = re.search(r"[EA]?[AK]\d\.?\d*[a-z]?$", right)
+        lv = re.match(r"^([BCW][AE]\d{2})",
+                      re.sub(r"^0*([BCW])\s*([AE])\s*(\d{2})", r"\1\2\3", left))
+        if lv and km:
+            return f"{lv.group(1)} {normalize_token(km.group(0))}"
+        dm = re.match(r"\d{1,6}", left)
         if dm and km:
             return f"{normalize_number(dm.group(0))} {normalize_token(km.group(0))}"
     # vendor APE/EPE (optionally with an embedded system name): WE08 …EA1.05.  No \b after the
@@ -108,15 +126,26 @@ def fmt_rating(v):
 # ---- extraction --------------------------------------------------------------
 
 def first_tag(text):
-    """Return (match, prefix, tag_body) for the first K/A card span, or (None, '', '')."""
+    """Return (match, span_content, ka_segment) for the first K/A card span, or (None,'','').
+
+    The span content is either a plain tag ('076000 K4.01 (3.7/3.7)') or a pipe-delimited JPM
+    badge ('Type | Applic | <K/A> | Alternate Path'). The K/A is the pipe segment that both
+    carries an importance parenthetical and normalizes to a key; surrounding segments (incl. a
+    trailing 'Alternate Path' / 'Time-Critical' badge) are preserved verbatim on rewrite."""
     m = SPAN.search(text)
     if not m:
         return None, "", ""
-    content = m.group(2).strip()
-    if "|" in content:                # JPM: 'Type | Applic | <tag>'
-        prefix, body = content.rsplit("|", 1)
-        return m, prefix.strip() + " | ", body.strip()
-    return m, "", content
+    content = m.group(2)
+    if "|" not in content:
+        return m, content, content.strip()
+    ka = None
+    for seg in content.split("|"):
+        name, imp = strip_importance(seg.strip())
+        if imp is not None and normalize_ka(name) is not None:
+            ka = seg.strip()          # rightmost qualifying segment wins
+    if ka is None:
+        ka = content.split("|")[-1].strip()
+    return m, content, ka
 
 # ---- classification ----------------------------------------------------------
 
@@ -139,6 +168,12 @@ def canonical_rating(e):
     return "(" + " / ".join(parts) + ")" if parts else "(N/A)"
 
 
+def is_deleted_entry(e):
+    """A catalog row retired in Rev 3: statement 'DELETED' or 0/0 importance (no usable rating)."""
+    return ("DELET" in str(e.get("statement", "")).upper()
+            or (str(e["ro_imp"]) in ("0", "0.0") and str(e["sro_imp"]) in ("0", "0.0")))
+
+
 def classify(body, catalog):
     name, imp = strip_importance(body)
     key = normalize_ka(name)
@@ -146,6 +181,11 @@ def classify(body, catalog):
         return "UNPARSEABLE", None, None
     if key not in catalog:
         return "NUMBER_NOT_IN_CATALOG", key, None
+    if is_deleted_entry(catalog[key]):
+        # Valid exam K/A retired in Rev 3 (no Rev 3 rating): canonicalize the number, keep the
+        # exam's own importance verbatim. Flagged so the deletion is recorded for human review.
+        kept = f"{key} ({imp})" if imp else key
+        return "DELETED_IN_REV3", key, kept
     canonical = f"{key} {canonical_rating(catalog[key])}"
     return "RESOLVED", key, canonical
 
@@ -154,21 +194,23 @@ def main():
     apply = "--apply" in sys.argv[1:]
     catalog = json.loads(CATALOG.read_text(encoding="utf-8"))
     files = sorted(glob.glob("wiki/exams/*/q*.md") + glob.glob("wiki/exams/*/jpm-*.md"))
-    rows, counts = [], {"RESOLVED": 0, "NUMBER_NOT_IN_CATALOG": 0, "UNPARSEABLE": 0, "NO_TAG": 0}
+    rows, counts = [], {"RESOLVED": 0, "DELETED_IN_REV3": 0,
+                        "NUMBER_NOT_IN_CATALOG": 0, "UNPARSEABLE": 0, "NO_TAG": 0}
     for f in files:
         text = Path(f).read_text(encoding="utf-8")
-        m, prefix, body = first_tag(text)
+        m, content, body = first_tag(text)
         if m is None:
             counts["NO_TAG"] += 1
             rows.append((f, "", "", "NO_TAG", "", ""))
             continue
         status, key, canonical = classify(body, catalog)
         counts[status] += 1
+        prefix = content[:content.find(body)] if body and body in content else ""
         rows.append((f, body, key or "", status, canonical or "", prefix))
-        if apply and status == "RESOLVED":
-            new_content = f"{prefix}{canonical}"
-            new_span = f"{m.group(1)}{new_content}{m.group(3)}"
-            if new_span != m.group(0):
+        if apply and status in ("RESOLVED", "DELETED_IN_REV3"):
+            new_content = content.replace(body, canonical, 1)
+            if new_content != content:
+                new_span = f"{m.group(1)}{new_content}{m.group(3)}"
                 Path(f).write_text(text.replace(m.group(0), new_span, 1), encoding="utf-8")
 
     REPORT_CSV.parent.mkdir(parents=True, exist_ok=True)
@@ -185,12 +227,16 @@ def main():
     lines = [f"# K/A tag audit report\n", f"Total tags: {len(rows)}\n"]
     for k, v in counts.items():
         lines.append(f"- {k}: {v}")
-    lines.append("\n## By year\n\n| year | RESOLVED | NUMBER_NOT_IN_CATALOG | UNPARSEABLE | NO_TAG |")
-    lines.append("|------|---------:|----------------------:|------------:|-------:|")
+    lines.append("\n## By year\n\n| year | RESOLVED | DELETED_IN_REV3 | NUMBER_NOT_IN_CATALOG | UNPARSEABLE | NO_TAG |")
+    lines.append("|------|---------:|----------------:|----------------------:|------------:|-------:|")
     for yr in sorted(by_year):
         d = by_year[yr]
-        lines.append(f"| {yr} | {d.get('RESOLVED',0)} | {d.get('NUMBER_NOT_IN_CATALOG',0)} "
-                     f"| {d.get('UNPARSEABLE',0)} | {d.get('NO_TAG',0)} |")
+        lines.append(f"| {yr} | {d.get('RESOLVED',0)} | {d.get('DELETED_IN_REV3',0)} "
+                     f"| {d.get('NUMBER_NOT_IN_CATALOG',0)} | {d.get('UNPARSEABLE',0)} | {d.get('NO_TAG',0)} |")
+    lines.append("\n## Deleted in Rev 3 (importance retained from exam)\n")
+    for f, body, key, status, canonical, *_ in rows:
+        if status == "DELETED_IN_REV3":
+            lines.append(f"- {f} — tag `{body}` → `{canonical}`")
     lines.append("\n## Flagged items (need review)\n")
     for f, body, key, status, *_ in rows:
         if status in ("NUMBER_NOT_IN_CATALOG", "UNPARSEABLE"):
