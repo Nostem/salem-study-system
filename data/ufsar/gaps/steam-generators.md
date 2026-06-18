@@ -1,0 +1,15 @@
+# Gaps — steam-generators (catalog system 035)
+
+K/A-index topics not answered by any sourced document. UFSAR §5.5.2 (Steam Generators) is a component-design section; SG blowdown is in UFSAR §10.4.8 and SG water-level control logic is in UFSAR §7.7.2.6 (both outside the assigned §5.5.2). TS 3/4.4.6 (SG Tube Integrity, Amend 291) and the existing exam/JPM/scenario callouts were also checked. Values were never guessed; honest gaps recorded here.
+
+- 035 A1.05 / K1.10 / K3.04 — SG main-steam-line and blowdown radiation monitor sensor identities/setpoint values (R19 SGBD, R53 N-16) — checked UFSAR §5.5.2, §10.4.8 (referenced, not read), TS, callouts; callouts give qualitative isolation behavior (2012 Q71, 2015 Q10, 2020 Q51) but no sourced monitor setpoint value found in §5.5.2
+- 035 A3.05 / K4.03 / K3.06 — Automatic SG blowdown system and sample-line isolation logic, signals, and reset — checked UFSAR §5.5.2; this logic lives in UFSAR §10.4.8 / the RMS, not in §5.5.2; qualitative reset behavior is in the 2016 Q65 callout but the §5.5.2 source does not contain it
+- 035 A3.01 / A4.01 / K4.01 — SG water-level control system logic and manual/automatic transfer detail — checked UFSAR §5.5.2 (level taps/ranges only); the level-control logic is documented in UFSAR §7.7.2.6 (outside assigned section); program values are captured in the 2015 Q50 / 2016 Q48 callouts
+- 035 K1.16 / K6.16 — AMSAC interface and ATWS mitigation specifics — checked UFSAR §5.5.2, TS, callouts; AMSAC is not described in §5.5.2; no sourced value found
+- 035 K1.15 / K6.02 — SDS (steam dump system) interface and secondary PORV / atmospheric relief setpoints — checked UFSAR §5.5.2; MS10 atmospheric-relief setpoints appear only in exam callouts (2022 Q11), and main-steam safety lift setpoints are in [[Main Steam]] (UFSAR §5.5.13), not in §5.5.2
+- 035 K5.02 — Detailed SG secondary-side chemistry control program — checked UFSAR §5.5.2 (states reactor-side chemistry provides boron and minimizes corrosion; secondary chemistry program not detailed) and §11 (referenced for secondary activity, not read); no sourced secondary-chemistry-control value found in §5.5.2
+- 035 K4.13 — SG outlet flow restrictor quantitative throat/choke data — checked UFSAR §5.5.2.2.2 (describes the venturi flow-limiting device qualitatively) and §5.5.4 (Main Steam Line Flow Restrictors, referenced); no sourced quantitative restrictor value found in §5.5.2
+- 035 K4.05 — Quantitative reserve SG water inventory available for decay-heat removal — checked UFSAR §5.5.2 (natural-circulation capability and 560 in WR range given; no reserve-mass value), TS, callouts; no sourced reserve-inventory value found
+
+## Flagged for human verification (pre-existing, not introduced by enrichment)
+- Unit 1 tube wall thickness: the Key Design Parameters table shows `0.041 in (min)` cited to UFSAR T5.2-5A, but UFSAR §5.5.2.2.2 prose states `0.040 in nominal`. A minimum exceeding the nominal is contradictory — verify the correct value/label against Table 5.2-5A.

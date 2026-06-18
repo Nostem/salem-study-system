@@ -173,6 +173,26 @@ EOP-FRCI-3 Attachment 1 maximum vent time calculation for reactor vessel upper h
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.8]]** — Chemistry
 - **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.9]]** — Specific Activity
 
+## Overpressure Protection
+
+The RCS is protected against overpressure by control and protective circuits — principally the high-pressure reactor trip — and by the relief and safety valves connected to the top head of the pressurizer, which discharge into the pressurizer relief tank. (UFSAR §5.2.2.1) The three pressurizer code safety valves are sized to prevent system pressure from exceeding the design pressure (<span class="val-trip">2485 psig</span>) by more than 10 percent, per ASME Section III, and their combined capacity equals or exceeds the maximum surge rate resulting from a complete loss of load without a direct reactor trip, assuming the secondary safety valves open at the steam-plant safety valve setting. (UFSAR §5.2.2.1) The 2 PORVs lift at <span class="val-trip">2335 psig</span> (reset 2315 psig) to limit challenges to the code safeties. (UFSAR Table 5.2-8)
+
+**Low-temperature overpressure protection (LTOP / POPS):** During low-temperature operation, the RCS is protected by the Overpressure Protection System (POPS), discussed in Section 7. (UFSAR §5.2.2.3) An operating RHR loop connected to the RCS provides a diverse overpressure-relief path at low temperature, and an equivalent-size vent path may substitute for the code safeties in Mode 5. (TS 3/4.4.2 Bases, Amend 282) The RHR system cuts in for shutdown cooling at <span class="val-normal">350°F</span> RCS temperature and is placed in service when RCS pressure is reduced to the RHR cut-in pressure of <span class="val-normal">325 psig</span> (the saturation pressure below the cut-in temperature). (UFSAR Table 5.5-1, §5.3.7)
+
+## RCS Leakage Detection
+
+RCS components are built to specifications exceeding normal code requirements, so through-wall leakage is considered very unlikely; however, some leakage is permitted at the reactor coolant pump seals and a small integrated leakage from the many sealed joints is accepted. (UFSAR §5.2.7) Leakage from the RCS to containment is detected by one or more of the following methods (UFSAR §5.2.7.1):
+
+- **Containment air particulate monitor** — the most sensitive instrument, capable of detecting particulate radioactivity as low as <span class="val-alarm">1.0 × 10⁻⁹ µc/cc</span> of containment air. Using Fluorine-18 (F-18) particulate activity (whose production is proportional to reactor power and is independent of RCS activity from fuel defects), it can detect an RCS leakage of <span class="val-alarm">0.5 gpm</span> within one hour during normal operation. (UFSAR §5.2.7.1.1)
+- **Containment radiogas monitor** — less sensitive (threshold 10⁻⁶ µc/cc); useful only when significant coolant gaseous activity exists from fuel-cladding defects, serving as a backup to the air particulate monitor. (UFSAR §5.2.7.1.1)
+- **Humidity detector** — backup means sensitive to vapor from all sources (reactor coolant, steam, feedwater); sensitive to incremental leakage of roughly <span class="val-alarm">0.2 to 1.0 gpm</span>. A 0.2 gpm leak-rate increase raises containment dew point about 1°F. (UFSAR §5.2.7.1.2)
+- **Coolant makeup / sump level** — an increase in makeup water required to maintain normal pressurizer level shows as <span class="hi">increased charging flow</span>; gross leakage shows as rising containment sump level and periodic sump-pump operation. (UFSAR §5.2.7.1.3)
+- **Condensate Measuring System** — vertical standpipes with instrumentation beneath each of the unit's five CFCUs measure condensate collected in the drain pans; a high standpipe level alarms in the Main Control Room. With four CFCUs operating, detector response times are <span class="hi">32 seconds (0.53 min)</span> for a 5 gpm crack flow, <span class="hi">200 seconds (3.3 min)</span> for the 1 gpm TS allowable leakage, and <span class="hi">679 seconds (11.3 min)</span> for the 0.5 gpm leakage-detection flow rate — all within one hour per Reg Guide 1.45. (UFSAR §5.2.7.1.4)
+
+**Leak-Before-Break (LBB) basis:** The NRC approved applying LBB methodology to RCS piping 6 inches and larger and to the pressurizer surge line. The limiting leakage flaw is in the 6-inch SI piping and results in a leak rate of <span class="hi">5 gpm</span>; applying the SRP 3.6.3 factor of 10 requires a leakage-detection capability of <span class="hi">0.5 gpm</span>. The 1 gpm TS limit for unidentified leakage (Unit 1 TS 3.4.6.2 / Unit 2 TS 3.4.7.2) ensures the reactor can be shut down safely before pipe rupture. (UFSAR §5.2.7.1) The Operational Leakage LCO (TS 3/4.4.7, Amend 304) limits unidentified leakage to ≤1 gpm and identified leakage to ≤10 gpm; all leakage indications, with alarms, are provided in the control room. (UFSAR §5.2.7.2)
+
+**Intersystem leakage** is detected by radiation monitors on SG blowdown, each main steam line, and condenser air-removal effluent (SG tube leaks), and on the Component Cooling system (RCS-to-CCW leakage via the RHR heat exchangers, with CCW surge-tank level as an additional indicator). Accumulator and high-head SIS leakage is detected by pressure/level changes; RHR-to-RCS check-valve leakage causes relief-valve discharge to the containment sump. (UFSAR §5.2.7.1.5)
+
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
@@ -200,6 +220,39 @@ Containment Sump leak-rate quantification (S2.OP-SO.RC-0004 §5.3) following an 
 A 25 gpm RCS leak is diagnosed from <span class="hi-exam">rising charging flow, slowly lowering PZR level, rising 2R11A containment radiation, and OHA C-2 CNTMT SUMP PMP START</span>. Crew enters AB.RC-0001, quantifies the leak with S2.OP-ST.RC-0008 (RCS Water Inventory Balance), and enters <span class="hi-exam">TSAS 3.4.7.2.b (action b) for unidentified RCS leakage and 3.5.2.a (action a) for ECCS</span>. The leak then worsens into an SBLOCA requiring a reactor trip and SI. See [[2014 Scenario 3]].
 </div>
 
+## RCS Instrumentation
+
+Process-control instrumentation acquires data on the pressurizer and, on a per-loop basis, on the key RCS process parameters (including the RCP motors) and the RHR system, feeding the Reactor Trip System, the ESFAS, and nonsafety control/surveillance circuits. (UFSAR §5.6)
+
+- **Loop temperature:** One hot-leg and one cold-leg reading per loop are provided for protection by narrow-range thermowell RTDs. Each hot leg uses three dual-element RTDs in sampling scoops 120° apart (each scoop has five orifices); the three hot-leg readings are averaged for that loop's Thot. Cold-leg flow is well mixed by the RCPs, so a single thermowell dual-element RTD is used; <span class="hi">cold-leg streaming</span> (bulk cold-leg temperature differing slightly from the indicated value) is accounted for in the Chapter 15 analyses. Separate wide-range RTDs in each loop's hot and cold legs supply the wide-range temperature recorders used to control cooldown during startup and shutdown. (UFSAR §5.6.1)
+- **Pressurizer temperature:** Two detectors — one in the steam phase (alerts the operator if steam becomes superheated and confirms a water-solid pressurizer during fill) and one in the water phase (used on cooldown to verify PZR temperature tracks the RCS). Safety/relief-valve discharge-line temperatures are indicated and alarmed on high (an increase indicates seat leakage through the associated valve); spray-line temperatures alarm on low. (UFSAR §5.6.2)
+- **Pressure:** Four pressurizer pressure transmitters provide individual control-room indicators and inputs for the low-pressure trip, high-pressure reactor trip, alarms, and PZR heater/spray/PORV control. Three transmitters supply independent low-pressure SI signals (manual block during shutdown, automatic unblock on startup). Two wide-range transmitters cover the full operating range and provide the open-permissive and auto-closure signals for the RHR loop-isolation-valve interlock; two narrow-range and one wide-range differential-pressure transmitters monitor RCS level during mid-loop, reduced-inventory, and vacuum-fill operations. (UFSAR §5.6.3)
+- **Pressurizer water level:** Three liquid-level transmitters feed the Reactor Control and Protection System and CVCS; each provides a high-level reactor-trip signal (two-out-of-three trips the reactor) and a level indicator/recorder. On a low-level signal, PZR heaters trip off and the letdown isolation valves close. A fourth, independent transmitter is calibrated for low-temperature conditions to give level indication during startup, shutdown, and refueling. (UFSAR §5.6.4)
+- **Reactor vessel level (RVLIS):** Three sets of redundant d/p cells (two cells per set, different ranges) give three vessel-level measurements. The associated indicator displays "INVALID" if any RCP is operating (narrow- and full-range sets), and the dynamic head/void-fraction set displays "INVALID" when all pumps are off; the RVLIS-86 stores four expected void-fraction values keyed to the number of running RCPs. All d/p cells are located outside containment with hydraulic isolators that assure containment isolation on a sensing-line break. (UFSAR §5.6.5)
+- **Reactor coolant flow:** Each loop is monitored by three elbow-tap d/p measurements on a two-out-of-three coincidence circuit, providing a low-flow reactor-trip signal. Elbow-tap readout follows ΔP/ΔPo = (W/Wo)², with the full-flow reference set at initial startup and the low-flow trip extrapolated along the curve; expected channel accuracy is ±10 percent (field repeatability within ±1 percent). (UFSAR §5.6.6)
+- **RCP motor instrumentation:** A dual-purpose oil-lift switch alarms on low oil pressure and interlocks pump start until the oil-lift system is operating. Motor radial- and thrust-bearing oil-reservoir level switches give high/low-level alarms, and upper/lower thrust-bearing-shoe thermocouples feed a recorder and high-temperature alarm. The adopted RCP trip criterion assures pump trip for all losses of primary coolant requiring trip while still permitting pump operation during most non-LOCA events (including SGTR up to the design-basis double-ended rupture); the controlling parameter for trip actuation is <span class="hi-exam">RCS wide-range pressure</span>. (UFSAR §5.6.7)
+- **Loose Parts Monitoring (LPM):** A Westinghouse Metal Impact Monitoring System with twelve piezoelectric accelerometers mounted externally on the NSSS wall gives early detection of metallic debris or loose parts that, carried by the reactor coolant flow, could impact and damage the NSSS pressure boundary; impacts shock-excite the structure and are separated in the frequency domain from background, driving a threshold amplitude-detection alarm. (UFSAR §5.6.8)
+
+## Natural Circulation
+
+Salem is a "T-Hot" plant — the upper-head water temperature is assumed equal to the hot-leg temperature. With the CRDM cooling fans operating during a natural-circulation cooldown, the plant can be cooled to RHR conditions at <span class="val-normal">25°F per hour</span> with no void formation in the upper head, provided the operator maintains a minimum of <span class="hi">50°F subcooling</span> until primary pressure reaches 50 psi below the SI-block permissive. (UFSAR §5.3.7) After SI signals are blocked, the operator establishes <span class="hi">200°F subcooling</span> (about 430°F in the hot leg) and maintains at least 200°F subcooling (or the more restrictive TS limit) down to a primary pressure of 1200 psig, where depressurization is stopped; cooldown continues until primary temperature is below 350°F. The operator then waits about 8 hours for the upper head to cool (to a saturation temperature below the 325 psig RHR cut-in pressure) before depressurizing to 325 psig and placing RHR in service. (UFSAR §5.3.7) Unit 1's Model F and Unit 2's AREVA NP Model 61/19T steam generators both have adequate natural-circulation capability to remove decay heat. (UFSAR §5.3.7, §5.5.2.3.1)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2014 Sim-e</div>
+During a TRIP-4 natural-circulation cooldown, RCS is depressurized with <span class="hi-exam">ONE PZR PORV (2PR1 or 2PR2) to 1865 psig</span> while charging is maintained <span class="hi-exam">≥87 gpm</span> and letdown restored. <span class="hi-exam">Alternate path: the PORV sticks open and its block valve also fails — the unisolable depressurization requires manual Safety Injection before RCS subcooling is lost (~3 min after the PORV opens), because automatic SI is failed.</span> SG NR level is held 9-33% and RCS Thots driven &lt;543°F before blocking HI STEAM LINE FLOW SI.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q85</div>
+Before transitioning to a Natural Circulation Rapid Cooldown (EOP-TRIP-5 / TRIP-6), <span class="hi-exam">EOP-TRIP-4 (Natural Circulation Cooldown) steps 3-17 must be completed</span> — establishing adequate SDM and upper-head cooling, blocking SI signals, and performing the initial cooldown/depressurization (per the Step 1 caution in TRIP-5/6). See [[EOP-TRIP-4 — Natural Circulation]].
+</div>
+
+## Mid-Loop & Partial Loop Operation
+
+During partial-drain (mid-loop) operations, adequate RCS inventory, level control, and RHR pump NPSH must be maintained. When RCS level is lowered to drain the SG tubes, RHR flow through each loop is throttled back to prevent vortexing and air entrainment at the pump suction. (UFSAR §5.5.15) Draining proceeds to a stable, predetermined level — usually the elevation of the reactor-vessel-nozzle centerline (mid-loop) — after which coolant level is continuously monitored to keep the RHR inlet lines covered; makeup, if needed, is supplied by the CVCS centrifugal charging pumps. (UFSAR §5.5.15) RHR-pump suction pressure during mid-loop is monitored by two RHR pressure transmitters (PI631/PI632), and dedicated narrow- and wide-range d/p transmitters on the No.1 and No.3 hot legs provide RCS level indication during mid-loop, reduced-inventory, and vacuum-fill. (UFSAR §5.6.3, §5.6.4) During refueling, the reactor head and RVLIS piping are removed and the sensing line is realigned to atmosphere; the RVLIS-86 then re-scales to give reduced-inventory level from 97.3 ft to 106.0 ft and refueling-cavity level from 104 ft to 130 ft. (UFSAR §5.6.5) The Outage Equipment Hatch may remain open during mid-loop in Modes 5/6 provided containment closure can be established before core boiling following a loss of RHR, satisfying NRC Generic Letter 88-17. (UFSAR §5.5.15)
+
 ## Related EOPs
 
 - [[EOP-TRIP-1 — Reactor Trip or Safety Injection]] — verify RCS pressure control
@@ -223,18 +276,6 @@ EOP-FRHS-1 Bleed and Feed (Steps 21-25): loss of all AFW, 3 SG WR levels &lt; 32
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2023 Sim-d</div>
 EOP-FRHS-1 Bleed and Feed: actuate SI, open PZR PORVs. If 2PR2 fails to open, open <span class="hi-exam">reactor head vent valves 2RC40 through 2RC43</span> (key-locked on 2RP2 backpanel) as alternate bleed path. Requires going to backpanel to insert key and turn each valve individually.
-</div>
-
-### Natural Circulation / Cooldown
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2014 Sim-e</div>
-During a TRIP-4 natural-circulation cooldown, RCS is depressurized with <span class="hi-exam">ONE PZR PORV (2PR1 or 2PR2) to 1865 psig</span> while charging is maintained <span class="hi-exam">≥87 gpm</span> and letdown restored. <span class="hi-exam">Alternate path: the PORV sticks open and its block valve also fails — the unisolable depressurization requires manual Safety Injection before RCS subcooling is lost (~3 min after the PORV opens), because automatic SI is failed.</span> SG NR level is held 9-33% and RCS Thots driven &lt;543°F before blocking HI STEAM LINE FLOW SI.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q85</div>
-Before transitioning to a Natural Circulation Rapid Cooldown (EOP-TRIP-5 / TRIP-6), <span class="hi-exam">EOP-TRIP-4 (Natural Circulation Cooldown) steps 3-17 must be completed</span> — establishing adequate SDM and upper-head cooling, blocking SI signals, and performing the initial cooldown/depressurization (per the Step 1 caution in TRIP-5/6). See [[EOP-TRIP-4 — Natural Circulation]].
 </div>
 
 ### LOCA / Post-LOCA

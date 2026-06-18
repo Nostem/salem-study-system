@@ -9,9 +9,11 @@ aliases:
 
 # Steam Generator & Blowdown
 
-## Function
+## Function & Design Basis
 
-The steam generators transfer heat from the reactor coolant (primary side) to the feedwater (secondary side) to produce steam for the turbine-generator. They are vertical shell and U-tube evaporators with integral moisture separating equipment. (UFSAR 5.1, 5.5.2)
+The steam generators transfer heat from the reactor coolant (primary side) to the feedwater (secondary side) to produce steam for the turbine-generator. They are vertical shell and U-tube evaporators with integral moisture separating equipment. (UFSAR 5.1, §5.5.2)
+
+**Design bases.** The internal moisture separation equipment is designed to assure that moisture carryover does not exceed 0.25 percent by weight for Unit 1 and 0.1 percent by weight for Unit 2 under: (1) steady-state operation up to 105 percent of full-load steam flow with water at the normal operating level, (2) loading/unloading at 5 percent of full-power steam flow per minute over the 15-to-105 percent range, and (3) a 10 percent step load change of full power in the 15-to-105 percent range (UFSAR §5.5.2.1). The steam generator tube sheet complex meets the stress, limitation, and fatigue criteria specified, and the design maximizes integrity against hydrodynamic excitation and vibration failure of the tubes for plant life (UFSAR §5.5.2.1). Reactor-side water chemistry is selected to provide the necessary boron content for reactivity control and to minimize corrosion of RCS surfaces (UFSAR §5.5.2.1). Rupture of a steam generator tube is analyzed in UFSAR Section 15; anticipated secondary-side radioactivity levels and their bases are given in UFSAR Section 11 (UFSAR §5.5.2.1).
 
 **Exam & operating coverage:**
 
@@ -79,7 +81,58 @@ Initial Tavg response (before automatic protective actions) for breaks on the SG
 | Primary cladding | Austenitic SS (channel heads), Inconel (tubesheet) | Austenitic SS (Type 308L/309L) or Inconel 600 |
 | Max Moisture Carryover | 0.25 wt% | < 0.1 wt% |
 
-## SG Blowdown Radiation Monitoring
+## Key Components
+
+The Unit 2 steam generator (Figure 5.1-3) is an AREVA NP Model 61/19T vertical shell and U-tube evaporator with integral moisture separating equipment; the Unit 1 Model-F (Figure 5.1-3a) is very similar to the original Series 51 generator except in tube dimensions, number of tubes, and separators (UFSAR §5.5.2.2).
+
+**Primary side / head.** Reactor coolant flows through the inverted U-tubes, entering and leaving through the nozzles located in the hemispherical bottom head. The head is divided into inlet and outlet chambers by a vertical partition plate extending from the head to the tube sheet. Manways are provided for access to both sides of the divided head. The interior surfaces of the channel heads and nozzles are clad with austenitic stainless steel; on Unit 2 the primary side of the tube sheet is weld clad with Inconel 600 (UFSAR §5.5.2.2.1). On the Unit 1 Model-F the tube ends are expanded the full depth of the tube plate and welded to the Inconel cladding on the primary face of the tube plate (UFSAR §5.5.2.2.2).
+
+**Tube bundle.** Unit 2 heat-transfer tubes are Inconel 690 thermally treated and the divider plate is Inconel 690 (UFSAR §5.5.2.2.1). The Unit 1 Model-F tube bundle consists of 5626 thermally-treated U-tubes of ASME SB-163 (Inconel), tube OD 0.688 in with a nominal tube wall thickness of 0.040 in; the bundle extends approximately 348 in above the secondary face of the tube plate (UFSAR §5.5.2.2.2).
+
+**Secondary side / moisture separation.** Feedwater flows into the annulus formed by the shell and tube-bundle wrapper before entering the boiler section; the water-steam mixture then flows upward through the tube bundle into the steam drum. A set of centrifugal moisture separators above the tube bundle removes most of the entrained water, and steam dryers raise steam quality to a minimum of 99.90 percent (0.10 percent moisture) on Unit 2; the separators recirculate flow mixed with feedwater through the shell/wrapper annulus (UFSAR §5.5.2.2.1). The Unit 1 Model-F uses two-stage moisture separators: a first-stage assembly directly above the tube bundle, approximately 10 ft high, containing sixteen 20-in-diameter swirl-vane assemblies, followed by second-stage banks of contoured vanes (UFSAR §5.5.2.2.2). Steam generated on the shell side flows upward through the separators to the outlet nozzle at the top; the units are primarily carbon steel (UFSAR 5.1, §5.5.2.2.1).
+
+**Steam outlet nozzle & flow restrictor.** On the Unit 1 Model-F the steam outlet nozzle has an ID of 29 in, located at the apex of the upper elliptical head, and contains a <span class="hi-exam">flow-limiting device operating on the venturi principle to choke flow in the event of a steam line break</span> (UFSAR §5.5.2.2.2). See [[Main Steam]] (UFSAR §5.5.4 Main Steam Line Flow Restrictors).
+
+**Level taps & nozzles.** Model-F steam generators are equipped with a blowdown nozzle (2 in dia) and a drain nozzle (2 in dia). Liquid-level connections provide openings for narrow- and wide-range water-level instrumentation used for feedwater control and reactor protection: <span class="hi-exam">wide-range taps provide a range of 560 in and narrow-range taps a range of 128 in</span>. A 2-in-nominal sampling nozzle is provided in the Unit 1 Model-F generators (UFSAR §5.5.2.2.2).
+
+## Automatic Features & Setpoints
+
+SG narrow-range and wide-range level taps feed feedwater control and the reactor protection system; the secondary boiler section is generated on the shell side and the level is held to a power-dependent program (UFSAR §5.5.2.2.2). The internal moisture separation equipment holds carryover within design limits across the loading conditions in the Function & Design Basis section above (UFSAR §5.5.2.1). SG water level control logic is documented in UFSAR §7.7.2.6 (not duplicated here).
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q50</div>
+SG narrow-range level is programmed from 33–44% up to 100% power. With one NR channel already in calibration, <span class="hi-exam">a second 11 SG NR level channel failing to 30% swaps only the 11BF19/11BF40 feed valves to manual (not the SGFPs)</span>; during a continuing downpower the held manual demand overfeeds, so <span class="hi-exam">11 SG level rises higher than program</span>. See [[Feed & Condensate]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q48</div>
+SG NR level startup program (ADFCS): the SG NR level setpoint is programmed against <span class="hi-exam">Turbine Steamline Inlet Pressure</span> (i.e. Turbine power), ramping from <span class="val-normal">33% NR at 0% TP</span> to <span class="val-normal">44% NR at 20% TP</span>, then held flat at <span class="val-normal">44% NR</span> from 20-100% TP on Unit 2. At 10% TP the program is <span class="hi-exam">38.5% NR</span>; at 60% TP it is <span class="hi-exam">44% NR</span>. <span class="hi-trap">Unit 1 only: ramp continues 44→48% NR from 20-100% TP. Do not apply Unit 1 ramp to Unit 2.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q42</div>
+SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG</span> → main turbine trip → reactor trip. FW Isolation closes BF13, BF19, BF40 and trips SGFPs. If BF19 fails open, SG level continues to rise until trip on high level.
+</div>
+
+## Design Features & Interlocks
+
+**Natural circulation capability.** The steam generators (which provide a heat sink) are at a higher elevation than the reactor core (the heat source); thus natural circulation is assured for the removal of decay heat (UFSAR §5.5.2.3.1).
+
+**Flow-induced vibration.** The tube support system is designed to preclude detrimental flow-induced vibration (FIV) in three regions: downcomer-feed entrance to the tube bundle (cross flow), the straight tube sections (parallel flow), and the U-bend (cross flow) (UFSAR §5.5.2.3.4). Three cross-flow FIV mechanisms are addressed — fluid elastic instability, vortex shedding resonance, and random turbulence; for design the fluid-elastic stability ratio is kept with some margin below 1.0. Vortex shedding resonance has never been observed in SG tube bundles with pitch/tube-OD ratios below 1.46; the ratio is <span class="hi-exam">1.43 for Unit 1 and 1.44 for Unit 2 RSGs</span>, both below 1.46 (UFSAR §5.5.2.3.4).
+
+**Tube-thinning margin (LOCA).** Analysis of LOCA blowdown forces on the as-fabricated U-tubes shows the maximum bending-load elastic stress intensity is well below the faulted-condition limit; at minimum, at least <span class="hi-exam">2 1/2 mils (per wall)</span> of thinning can be tolerated without exceeding the allowable stress limits, and vibration effects are negligible during normal operation (UFSAR §5.5.2.3.4).
+
+**Fouling allowance.** The limiting heat-transfer case is the "Nominal 100 Percent Design" case with a conservative tube-fouling allowance; the fouling-factor resistance of 0.00005 hr-ft²-°F/Btu is selected to account for measured-versus-calculated heat-transfer differences and to provide margin, with adequate tube area selected to assure the full design heat-removal rate (UFSAR §5.5.2.3.2). Water hammer is precluded by routing feedwater-ring header flow through the top of the headers; the Unit 2 RSG design adds J-tubes and an all-welded thermal-sleeve/ring assembly that eliminates steam leakage into the feed ring (UFSAR §5.5.2.3.2; see Section 10.4).
+
+**Secondary-side overpressure protection.** Each SG is protected by main steam safety valves on its associated steam line; see [[Main Steam]] for the per-loop lift setpoints. The exam treatment is captured under SG Overpressure & LOCA Interface below.
+
+## Interconnections & Loads
+
+The steam generator interfaces the RCS (primary), the main and auxiliary feedwater systems on the secondary side, main steam ([[Main Steam]]), the SG blowdown system (UFSAR §10.4.8), the secondary sampling system, the reactor protection and engineered safety features actuation systems (level/pressure inputs), and the radiation monitoring system on the blowdown and main-steam lines ([[Radiation Monitoring]]). SG blowdown removes secondary impurities and is isolated automatically on high blowdown-line radiation (UFSAR §10.4.8). The blowdown rad-monitor automatic isolation behavior is below.
+
+### SG Blowdown Radiation Monitoring
 
 **Exam & operating coverage:**
 
@@ -98,26 +151,22 @@ The <span class="hi-exam">R19 SGBD radiation monitors are NOT accurate immediate
 R19 SGBD radiation monitor WARNING setpoint — <span class="hi-exam">unit difference</span>: <span class="hi-exam">Unit 1 WARNING causes NO automatic actuations</span>. <span class="hi-exam">Unit 2 WARNING automatically closes ALL GB10s, GB185s, and 2GB50</span>. At the ALARM setpoint: Unit 1 closes ALL GB4s, GB8s, GB10s, GB185s, and 1GB50; Unit 2 isolates blowdown from the affected SGs by closing the associated GB4. <span class="hi-trap">Do not confuse WARNING actions (unit-specific, limited) with ALARM actions (more extensive isolation on both units).</span>
 </div>
 
-## Construction
+## Effects of Loss / Malfunction
 
-- Reactor coolant flows through inverted U-tubes, entering and leaving through nozzles in the hemispherical bottom head
-- Bottom head divided into inlet and outlet chambers by vertical partition plate
-- Manways provided for access to both sides of divided head
-- Steam generated on shell side flows upward through moisture separators to outlet nozzle at top
-- Units are primarily carbon steel
-- (UFSAR 5.1)
+A reduction in RCS flow through the SG tubes reduces heat transfer to the secondary and changes apparent SG level (shrink/swell). On a faulted, leaking, or ruptured SG the crew isolates the affected generator and uses the remaining intact SGs as the heat sink (see the SGTR Isolation and Secondary Heat Sink sub-subsections below).
 
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q50</div>
-SG narrow-range level is programmed from 33–44% up to 100% power. With one NR channel already in calibration, <span class="hi-exam">a second 11 SG NR level channel failing to 30% swaps only the 11BF19/11BF40 feed valves to manual (not the SGFPs)</span>; during a continuing downpower the held manual demand overfeeds, so <span class="hi-exam">11 SG level rises higher than program</span>. See [[Feed & Condensate]].
+<div class="callout-label">Exam — 2019 Q53</div>
+SG shrink/swell on RCP shaft shear: when 13 RCP shaft shears at 25% power, <span class="hi-exam">steam flow from 13 SG lowers significantly</span> (reduced RCS flow through the SG tubes means less heat transfer to the secondary). The reduction in steam production causes <span class="hi-exam">13 SG NR Level to initially SHRINK</span> (reduced voiding in the SG → apparent level drop). <span class="hi-trap">Trap: swell occurs when steam flow INCREASES (e.g., turbine trip reduces steam demand → pressure rise → less boiling initially, but more commonly steam flow increase causes more voiding). In this case, steam flow DECREASES, causing shrink.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q48</div>
-SG NR level startup program (ADFCS): the SG NR level setpoint is programmed against <span class="hi-exam">Turbine Steamline Inlet Pressure</span> (i.e. Turbine power), ramping from <span class="val-normal">33% NR at 0% TP</span> to <span class="val-normal">44% NR at 20% TP</span>, then held flat at <span class="val-normal">44% NR</span> from 20-100% TP on Unit 2. At 10% TP the program is <span class="hi-exam">38.5% NR</span>; at 60% TP it is <span class="hi-exam">44% NR</span>. <span class="hi-trap">Unit 1 only: ramp continues 44→48% NR from 20-100% TP. Do not apply Unit 1 ramp to Unit 2.</span>
-</div>
+## Control-Room Operation
+
+SG controls may be shifted between manual and automatic; SG level, pressure, feed/steam flow, and the blowdown rad monitors are the primary control-room indications. During natural circulation the operator controls SG pressure (via the atmospheric relief / MS10 setpoints) to maintain RCS T-cold at the saturation temperature for SG pressure, confirming primary-to-secondary heat transfer (see callouts).
+
+**Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q11</div>
@@ -129,14 +178,9 @@ Natural circulation monitoring (EOP-SGTR-1 step 38.1): RCS T-Cold in unaffected 
 Natural circulation verification: <span class="hi-exam">RCS subcooling >0°F</span> (T-sat at RCS pressure minus highest CET), <span class="hi-exam">SG pressures stable or lowering</span>, T-hots stable or dropping, CETs lowering, <span class="hi-exam">T-colds at saturation temperature for SG pressure</span>. RCS T-cold matching SG saturation temp confirms heat transfer from primary to secondary through SG tubes is established.
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q42</div>
-SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG</span> → main turbine trip → reactor trip. FW Isolation closes BF13, BF19, BF40 and trips SGFPs. If BF19 fails open, SG level continues to rise until trip on high level.
-</div>
-
 ## Tech Spec LCOs
 
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators (tube integrity, inspection requirements)
+- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.6]]** — Steam Generator Tube Integrity: SG tube integrity shall be maintained and all tubes satisfying plugging criteria plugged per the Steam Generator Program; if not maintained, Hot Standby within 6 hours and Cold Shutdown within 30 hours (TS 3/4.4.6, Amend 291).
 
 **Exam & operating coverage:**
 
@@ -145,11 +189,6 @@ SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG<
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q51</div>
 <span class="hi-trap">Distractor trap: a single SG NR level rising above 67% generates a P-14 (Hi-Hi SG level) feedwater isolation and turbine trip — NOT a Main Steamline Isolation signal.</span> Main Steamline Isolation is generated by the Hi Steam Flow + Lo Tavg/Lo Steam Pressure logic (see Q51).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q53</div>
-SG shrink/swell on RCP shaft shear: when 13 RCP shaft shears at 25% power, <span class="hi-exam">steam flow from 13 SG lowers significantly</span> (reduced RCS flow through the SG tubes means less heat transfer to the secondary). The reduction in steam production causes <span class="hi-exam">13 SG NR Level to initially SHRINK</span> (reduced voiding in the SG → apparent level drop). <span class="hi-trap">Trap: swell occurs when steam flow INCREASES (e.g., turbine trip reduces steam demand → pressure rise → less boiling initially, but more commonly steam flow increase causes more voiding). In this case, steam flow DECREASES, causing shrink.</span>
 </div>
 
 <div class="callout callout-exam">

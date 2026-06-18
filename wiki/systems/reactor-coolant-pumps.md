@@ -10,9 +10,11 @@ aliases:
 
 # RCPs
 
-## Function
+## Function & Design Basis
 
 Each reactor coolant loop contains a vertical, single-stage, mixed-flow pump with a controlled leakage seal assembly. The pumps circulate reactor coolant through the core, piping, and steam generators. (UFSAR 5.1, 5.5.1)
+
+The RCP design basis is to ensure an adequate core cooling flow rate for sufficient heat transfer to maintain a departure-from-nucleate-boiling ratio (DNBR) greater than <span class="hi-exam">1.3</span> within the parameters of operation; the required NPSH is, by conservative pump design, always less than that available by system design and operation (UFSAR §5.5.1.1). Sufficient rotational inertia is provided by a flywheel, motor rotor, and pump rotating parts to provide adequate flow during coastdown — this forced flow following an assumed loss of pump power, and the subsequent natural-circulation effect, provides the core with adequate cooling (UFSAR §5.5.1.1). The RCP motor is capable of operation without mechanical damage at overspeeds up to and including <span class="hi-exam">125 percent</span> of normal speed (UFSAR §5.5.1.1). The reactor trip system ensures pump operation stays within the assumptions used for loss-of-coolant-flow analyses and assures adequate core cooling to permit an orderly power reduction if flow from an RCP is lost during operation (UFSAR §5.5.1.3.1).
 
 ## Key Design Parameters
 
@@ -50,17 +52,37 @@ Each reactor coolant loop contains a vertical, single-stage, mixed-flow pump wit
 | Input (cold reactor coolant) | 5690 kW | UFSAR T5.2-6 |
 | Insulation | Class B Thermalastic Epoxy | UFSAR T5.2-6 |
 
-## Design Features
+The motor is an air-cooled, Class B thermelastic-epoxy-insulated, squirrel-cage induction motor; integral vanes on each rotor end draw air in through cooling slots in the motor frame, pass it through the motor (emphasizing the stator end turns), and exhaust it to the containment environment (UFSAR §5.5.1.2). <span class="hi-exam">Six resistance temperature detectors</span> are located throughout the stator to sense winding temperature (UFSAR §5.5.1.2). Component cooling water is supplied to the two oil coolers on the pump motor (UFSAR §5.5.1.2).
 
-- **Flow path:** Coolant drawn up through impeller, discharged through diffuser passages and out discharge nozzle
-- **Maintenance:** Rotor-impeller can be removed without removing casing from piping
-- **Materials:** All parts in contact with reactor coolant are austenitic stainless steel or equivalent corrosion-resistant materials
-- **Controlled leakage seal assembly:** Three-stage seal with seal water injection from CVCS (8 gpm in, 3 gpm return)
-- **Flywheel:** Provides coastdown flow during loss of power (moment of inertia 82000 lb-ft²)
-- **Anti-reverse rotation device:** Prevents reverse rotation on loss of power
-- (UFSAR 5.1, 5.5.1)
+**Vibration monitoring (K1.07 / A1.01):** Each RCP is continuously monitored for shaft and frame vibration. Shaft vibration is measured by two relative shaft probes mounted on top of the pump seal housing — one in line with pump discharge and one perpendicular to it, in the same horizontal plane near the shaft. Frame vibration is measured by two velocity seismoprobes located 90 degrees apart at the top of the motor support stand. Proximeters and converters provide a linear output displayed in the control room, with both caution and danger limits indicated (UFSAR §5.5.1.2).
+
+## Design Features & Interlocks
+
+The RCP is a vertical, single-stage, centrifugal shaft-seal pump with three areas from bottom to top: the hydraulics, the shaft seals, and the motor (UFSAR §5.5.1.2). The hydraulic section consists of an impeller, diffuser, casing, thermal barrier heat exchanger, lower radial (pump) bearing, main flange, motor stand, and pump shaft. The shaft-seal section consists of the No. 1 controlled-leakage film-riding face seal, a shutdown seal (SDS) assembly, and the No. 2 and No. 3 rubbing face seals, all contained within the main flange and seal housing. The motor section consists of a vertical solid shaft, a squirrel-cage induction motor, an oil-lubricated double Kingsbury-type thrust bearing, two oil-lubricated radial bearings, and a flywheel (UFSAR §5.5.1.2).
+
+- **Flow path:** Coolant drawn up through impeller, discharged through diffuser passages and out the discharge nozzle in the side of the casing (UFSAR §5.5.1.2)
+- **Maintenance:** Pump internals, motor, and motor stand can be removed from the casing as a unit without disturbing the reactor coolant piping; the flywheel is available for inspection by removing the flywheel cover (UFSAR §5.5.1.2)
+- **Materials:** All parts of the pump in contact with reactor coolant are austenitic stainless steel, except for seals, bearings, and special parts (UFSAR §5.5.1.2)
+- **Controlled leakage seal assembly:** Three shaft seals in series with seal water injection from CVCS (8 gpm in, 3 gpm return per Table 5.2-6); a minimum differential pressure of approximately <span class="hi-exam">200 psi</span> across the Number 1 seal is required for the controlled-leakage seal to operate correctly (UFSAR §5.5.1.3.8)
+- **Flywheel:** Provides coastdown flow during loss of power (moment of inertia 82000 lb-ft²); the rotating inertia of pump, motor, and flywheel continues reactor coolant flow during the coastdown period (UFSAR §5.5.1.3.2). The Pump Motor System is designed for the safe-shutdown earthquake (SSE), so coastdown capability is maintained even for the bounding case of a blackout coincident with the SSE (UFSAR §5.5.1.3.2)
+- **Anti-reverse rotation device:** Located at the top of the motor; consists of pawls mounted on the flywheel OD, a serrated ratchet plate on the motor frame, a spring return, and two shock absorbers. After the motor slows and stops, the dropped pawls engage the ratchet plate so reverse rotation is arrested by the shock absorbers; the pawls lift and ride free once the motor reaches sufficient forward speed (UFSAR §5.5.1.3.10)
+- **Critical speed:** Shaft operating speed is below its first critical speed (UFSAR §5.5.1.3.6)
+- **Bearing design:** Motor radial bearings are segmented-pad type and the thrust bearings are tilting-pad Kingsbury bearings, all oil-lubricated; the lower radial and thrust bearings are submerged in oil and the upper radial bearing is oil-fed from an impeller integral with the thrust runner. The water-lubricated journal-type pump (lower radial) bearing has a self-aligning spherical seat (UFSAR §5.5.1.2). Babbitt metal's low melting point on the pad surfaces ensures no sudden bearing seizure on a bearing failure (UFSAR §5.5.1.3.4)
+- **Locked rotor / shaft seizure:** On an assumed instantaneous impeller seizure, the pump shaft fails in torsion just below the coupling to the motor, disengaging the flywheel and motor from the shaft (a loss-of-coolant-flow in that loop); the motor continues to run without overspeed and the flywheel keeps its integrity. Bearing seizure is precluded by graphite in the bearing, and any seizure in the seals shears the anti-rotation pin in the seal ring (UFSAR §5.5.1.3.5)
+
+### Shutdown Seal (SDS)
+
+The SDS is a passive device housed within the No. 1 seal area, actuated by high temperature resulting from a loss of seal injection AND CCW cooling to the thermal barrier heat exchanger (UFSAR §5.5.1.3.1, §5.5.1.3.11). It deploys via retraction of a thermal actuator, which constricts the SDS piston ring around the No. 1 seal sleeve, controlling shaft seal leakage and limiting loss of reactor coolant through the RCP seal package. A normal loss of offsite power is NOT expected to cause the elevated seal temperatures that actuate the SDS, and SDS deployment has no measurable impact on RCP coastdown or on the pump's capability to provide cooling flow to the core (UFSAR §5.5.1.3.2, §5.5.1.3.13).
+
+### Pump Overspeed Protection
+
+For turbine trips actuated by the Reactor Trip System or the Turbine Protection System, the generator breaker disconnects the generator while permitting the RCPs to remain connected to the external network for 30 seconds to prevent pump overspeed (UFSAR §5.5.1.3.9). On an electrical fault requiring immediate generator/turbine trip, the Turbine Control System and intercept valves limit overspeed to less than 120 percent, with a mechanical overspeed trip (typically ~110 percent) as backup. If a generator trip de-energizes the pump buses, the RCP motors are transferred to offsite power within <span class="hi-exam">six to ten cycles</span> (UFSAR §5.5.1.3.9).
 
 ## RCP Seal System
+
+During normal operation, leakage along the RCP shaft is controlled by three shaft seals arranged in series. Charging flow reaches each RCP via a seal water injection filter, entering between the pump shaft bearing and the pump seals; the flow splits — a portion flows down the shaft, through and around the lower radial bearing, past the thermal barrier heat exchanger, and into the RCS, while the remainder flows up the pump shaft annulus to provide back pressure on the Number 1 seal and a controlled flow through it (UFSAR §5.5.1.3.11). Most of that upward flow leaves the pump via the Number 1 seal leak-off line; minor flow passes through the Number 2 and Number 3 seals and their leak-off lines (UFSAR §5.5.1.3.11). Number 1 seal discharge is reduced to volume-control-tank pressure and routed through the seal water return filter and seal water heat exchanger; the Number 2 and Number 3 leak-off lines dump to the reactor coolant drain tank (UFSAR §5.5.1.3.12). High-pressure seal injection water is introduced through a connection on the thermal barrier (UFSAR §5.5.1.2).
+
+The Number 1 seal is a controlled-leakage, film-riding face seal whose stationary member (seal ring) is supported to allow large axial and tilting deflections while maintaining its controlled gap; even with all bearing graphite removed the shaft could not deflect far enough to open the controlled-leakage gap (UFSAR §5.5.1.3.1). Testing with the Number 1 seal entirely removed (full system pressure on the Number 2 seal) shows relatively small leakage rates are maintained long enough to secure the pump; the operator is warned of Number 1 seal damage by the rise in Number 1 seal leakoff rate and should then close the Number 1 seal leak-off line and secure the pump so that gross leakage does not occur (UFSAR §5.5.1.3.1).
 
 - **Seal inlet temp limit:** <span class="val-trip">≥225°F</span> — do not restore seal injection (prevents #1 seal thermal shock damage)
 - **Seal outlet temp limit:** <span class="val-trip">190°F</span> — monitored to prevent Safe Shutdown Seal actuation
@@ -194,6 +216,8 @@ Per S2.OP-SO.RC-0001 Limitations, with one or more RCS Cold Leg temperatures &le
 
 On loss of offsite AC power, reactor coolant pumps are tripped. The flywheel moment of inertia (82000 lb-ft²) provides coastdown flow sufficient to prevent fuel damage. (UFSAR 5.5.1.3.13)
 
+During normal operation seal injection from CVCS cools the RCP seals and CCW flow to the thermal barrier heat exchanger limits heat transfer from the reactor coolant to the RCP internals. On loss of offsite power the RCP is de-energized and both cooling supplies are terminated; however, the diesel generators auto-start and <span class="hi-exam">either seal injection flow OR component cooling water to the thermal barrier heat exchanger is automatically restored within seconds</span>. Either supply alone is adequate to provide seal cooling and prevent seal failure due to loss of seal cooling for at least <span class="hi-exam">2 hours</span> (UFSAR §5.5.1.3.13). A normal LOOP is not expected to cause the elevated seal temperatures that would actuate the SDS (UFSAR §5.5.1.3.13).
+
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
@@ -229,6 +253,8 @@ On a loss of all AC power (station blackout), seal injection and thermal-barrier
 ## Loss of Component Cooling Water
 
 Loss of CCW to the RCPs requires pump trip to protect the seals and thermal barrier. (UFSAR 5.5.1.3.14)
+
+The thermal barrier heat exchanger sits above the impeller and limits heat transfer between hot system water and seal injection water; component cooling water is supplied to it (UFSAR §5.5.1.2). Seal injection water flows down the shaft, through and around the lower radial bearing and the thermal barrier, acting as a buffer to prevent system water from entering the radial bearing and seal section before passing into the RCS. The thermal barrier heat exchanger thereby provides a means of cooling reactor coolant to an acceptable level in the event seal injection flow is lost (UFSAR §5.5.1.2). The specific effects of a loss of component cooling water on the RCP are addressed in UFSAR Section 9.2 (UFSAR §5.5.1.3.14).
 
 **Exam & operating coverage:**
 

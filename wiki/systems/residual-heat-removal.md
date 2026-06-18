@@ -8,11 +8,17 @@ aliases:
 
 # RHR
 
-## Function
+## Function & Design Basis
 
-The Residual Heat Removal (RHR) system removes decay heat from the reactor core during plant shutdown and cooldown. It reduces RCS temperature from 350°F to 140°F (cold shutdown/refueling). During a LOCA, the RHR pumps function as low-head safety injection pumps for the ECCS. (UFSAR 5.5.7)
+The Residual Heat Removal (RHR) system is designed to remove residual and sensible heat from the core and reduce the temperature of the RCS during the second phase of plant cooldown. During the first phase of cooldown, RCS temperature is reduced by transferring heat from the RCS to the Steam and Power Conversion System. (UFSAR §5.5.7.1)
 
-## Key Design Parameters
+The RHR System is placed in operation approximately <span class="hi-exam">4 hours after reactor shutdown</span> when RCS pressure and temperature are less than <span class="val-normal">375 psig</span> and <span class="val-normal">350°F</span>, respectively. Under normal operating conditions it can reduce reactor coolant temperature to <span class="val-normal">140°F</span> within 22 hours following reactor shutdown. The design residual heat load is based on the residual heat fraction of full-core MW(thermal) power that exists at 20 hours following shutdown from an extended power run near full power. (UFSAR §5.5.7.1, Table 5.5-1)
+
+As a secondary function, the RHR System transfers refueling water between the refueling water storage tank and the refueling cavity at the beginning and end of refueling operations. Portions of the system are also utilized as parts of the ECCS and the Containment Spray System (analyses in Section 6); during a LOCA the RHR pumps function as low-head safety injection pumps for the ECCS. The system design precludes any significant reduction in overall design reactor shutdown margin when cooling water is introduced into the core for decay heat removal or during emergency core cooling recirculation. (UFSAR §5.5.7.1)
+
+The RHR System provides sufficient capability in the emergency operational mode to accommodate any single active or passive failure and still function in a manner that avoids risk to the public. Since the loop contains reactor coolant when in operation, austenitic stainless steel piping is employed. (UFSAR §5.5.7.1)
+
+### Key Design Parameters
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
@@ -24,7 +30,13 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 | RWST Boron Concentration | ~2000 ppm | UFSAR T5.5-1 |
 | Plant Design Life | 40 years | UFSAR T5.5-1 |
 
-## Heat Exchangers
+## Key Components
+
+The RHR System consists of <span class="hi-exam">two residual heat exchangers, two RHR pumps</span>, and associated piping, valves, and instrumentation. During system operation, coolant flows from the RCS to the RHR pumps, through the tube side of the residual heat exchangers, and back to the RCS. The inlet (suction) line begins at the hot leg of one reactor coolant loop and the return line is connected to the cold legs of two separate reactor coolant loops; heat loads are transferred by the residual heat exchangers to the component cooling water. (UFSAR §5.5.7.2)
+
+### Residual Heat Exchangers
+
+Two residual heat exchangers are installed, each designed to remove one-half of the residual heat load, so heat-removal capacity is only partially lost if one exchanger fails and one exchanger can be maintained while the other operates. They are of the <span class="hi-exam">shell-and-U-tube type</span>: reactor coolant circulates through the tubes while component cooling water circulates through the shell; the tubes are welded to the tube sheet to prevent leakage of reactor coolant. (UFSAR §5.5.7.2)
 
 | Parameter | Shell Side | Tube Side | Source |
 |-----------|-----------|-----------|--------|
@@ -38,7 +50,9 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 | Fluid | CCW | Reactor coolant (borated demin water) | UFSAR T5.5-1 |
 | Material | Carbon steel | Austenitic stainless steel | UFSAR T5.5-1 |
 
-## Pumps
+### RHR Pumps
+
+Two identical pumps are installed, each sized to deliver sufficient reactor coolant flow through the residual heat exchangers to meet plant cooldown requirements, so pumping capacity is only partially lost if one pump becomes inoperable. The pumps are <span class="hi-exam">vertical centrifugal units with mechanical seals</span> to prevent reactor coolant leakage to the atmosphere; all parts in contact with reactor coolant are austenitic stainless steel or equivalent corrosion-resistant material. In addition to RHR duty, the pumps transfer refueling water before and after refueling. (UFSAR §5.5.7.2)
 
 | Parameter | Value | Source |
 |-----------|-------|--------|
@@ -53,24 +67,11 @@ The Residual Heat Removal (RHR) system removes decay heat from the reactor core 
 | Fluid Temperature Range | 40–350°F | UFSAR T5.5-1 |
 | Material | Austenitic stainless steel | UFSAR T5.5-1 |
 
-**Exam & operating coverage:**
+NPSH was evaluated for a pump flow of <span class="hi-exam">4800 gpm</span> (greater than the maximum pump flow); under that condition available NPSH exceeds required NPSH. (UFSAR §5.5.7.3.5)
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 Sim-d</div>
-Restoring shutdown cooling after the in-service RHR pump trips (MODE 4): per AB.RHR-0001, place the alternate RHR loop (22, aligned for ECCS) in service via Attachment 2. Local actions open <span class="hi-exam">22RH12 (HX bypass isolation), 22RH17 (letdown isolation), and 22RH18-NS (letdown isolation air supply)</span>; control-room actions close 22RH18 / 21RH18 (pump flow control), 2RH20 (HX bypass), and <span class="hi-exam">21CC16</span> while opening <span class="hi-exam">22CC16</span> (HX CCW outlet), then START the 22 RHR pump and throttle 22RH18 / 2RH20 for flow. Acceptance: RHR flow <span class="hi-exam">stable 1800-3000 gpm</span> and RCS temperature stable or lowering; flow is summed as 21SJ49 + 22SJ49 RHR DISCH TO COLD LEGS flow.
-</div>
+### RHR Valves & Piping
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 RO-A3</div>
-22 RHR pump room radiological survey for emergency stay-time calculation. Highest dose-rate point in the pump room is <span class="hi-exam">40 mrem/hr</span> (the 250 mrem/hr point is in the 22 RHR HX area, which is OUTSIDE the work-scope boundary of the JPM and must be excluded). Work scope: a detailed pre-start inspection of 22 RHR pump room before starting the pump.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q33</div>
-RHR pump 4KV vital bus power supplies: <span class="hi-exam">11 RHR pump from A bus, 12 RHR pump from B bus</span>. <span class="hi-trap">Other ECCS pumps are powered differently: 11/12 SI and 11/12 CS are from A and C; charging pumps 21/22 are from B and C.</span> (Unit 2 SW pumps run in reverse order: 21/22 from C, 25/26 from A.)
-</div>
-
-## Piping Design
+The valves are constructed of austenitic stainless steel or equivalent corrosion-resistant material. Manual isolation valves isolate equipment for maintenance; <span class="hi-exam">throttle valves provide remote manual control of residual heat exchanger tube-side flow and of bypass flow</span>, and check valves prevent reverse flow through the RHR pumps. RHR System isolation is achieved with <span class="hi-exam">two remotely-operated series stop valves</span> in the line from the RCS to the RHR pump suction, and by two check valves in series in each line from the RHR pump discharge to the RCS, plus a remotely-operated stop valve in each discharge line. RHR System overpressure is relieved through a relief valve to the <span class="hi-exam">containment sump</span>. RHR piping is austenitic stainless steel, welded except where flanged connections are required for maintenance. (UFSAR §5.5.7.2, §5.5.7.3.2)
 
 | Section | Pressure | Temperature | Source |
 |---------|----------|-------------|--------|
@@ -83,33 +84,47 @@ RHR pump 4KV vital bus power supplies: <span class="hi-exam">11 RHR pump from A 
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q33</div>
-Confirms the cooldown-rate adjustment per S2.OP-SO.RHR-0001: to <span class="hi-exam">REDUCE the cooldown rate, throttle CLOSED on 21RH18 (RHR HX Flow Control valve) while throttling OPEN on 2RH20 (RHR HX Bypass valve)</span> — less water passes through the RHR HX while total RHR system flow stays constant. <span class="hi-trap">Throttling both RH18 and RH20 closed does NOT keep flow constant; throttling RH18 open (more HX flow) would raise the cooldown rate.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q22</div>
-EOP-LOCA-6 isolates a LOCA outside containment in the RHR/SI piping by closing/checking closed <span class="hi-exam">2RH1 OR 2RH2 (RHR common suction), 21 and 22 RH19s (RHR discharge X-CONN), 2RH26 (hot leg isolation), and 21 and 22 SJ49s (RHR DISCH TO COLD LEGS)</span>. A leak anywhere between the RH1/2 valves and the SJ49 valves is bounded by these isolations; the <span class="hi-trap">downstream/outlet side of the SJ49 valves cannot be isolated</span> because that section ties directly into the RCS cold leg. See [[EOP-LOCA-6 — LOCA Outside Containment]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q31</div>
-SDC operation with 21 RHR loop in service: <span class="hi-exam">throttling 2RH20 (RHR HX Bypass Valve) more OPEN bypasses flow around the in-service HX → water returning to the RCS RISES in temperature</span> (more warm RCS water mixed in with cooled RHR HX outlet water). Conversely, <span class="hi-exam">throttling 21RH18 (RHR HX FLOW CONT VALVE) more open increases flow through the HX → outlet temperature LOWERS</span>. With 22 RHR loop O/S aligned for ECCS (RH19s open), 21SJ49 shut still allows discharge through normally open 22SJ49. 22CC16 is normally shut and 22RH12 shut — no flow through 22 CCHX from 21 loop regardless. Per S2.OP-SO.RHR-0001.
-</div>
-
-<div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q3</div>
 RHR system physical connections: RHR Pumps take suction from the <span class="hi-exam">21 Hot Leg</span> and can be aligned to discharge into the <span class="hi-exam">23 and 24 Hot Legs</span>. The suction and discharge connections are NOT on the same loops — suction is from Loop 1, discharge is to Loops 3 and 4.
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q4</div>
-During solid plant operations in MODE 5, throttling 22RH18 (RHR HX Outlet Valve) more CLOSED and 2RH20 (RHR HX Bypass Valve) more OPEN reduces flow through the RHR HX → <span class="hi-exam">RCS temperature rises → RCS pressure rises</span> (water is incompressible in solid plant conditions). To restore pressure: <span class="hi-exam">throttle 2CV18 (Low Pressure Letdown Control Valve) more OPEN</span> to increase letdown flow. <span class="hi-trap">Solid plant pressure control is maintained by adjusting letdown (not charging). Throttling CV18 more closed would RAISE RCS pressure, not lower it.</span>
+<div class="callout-label">Exam — 2019 Q63</div>
+During LOCA outside containment (EOP-LOCA-6), the crew is MOST concerned with <span class="hi-exam">RHR piping connecting to the RCS</span> because it is only rated to <span class="hi-exam">600 psig</span> (vs RCS piping rated to 2500 psig). This is the basis for the leak isolation strategy in LOCA-6.
+</div>
+
+## Power Supplies
+
+To assure reliability, the two RHR pumps are connected to two separate buses so each pump receives power from a different source; each pump is connected to a separate emergency power supply so that a total loss of power while the system is in service can be accommodated. (UFSAR §5.5.7.3) On Unit 1, 11 RHR pump is powered from the A bus and 12 RHR pump from the B bus; on Unit 2, 22 RHR pump is powered from the 2B 4KV vital bus (see callouts). The "OPEN-CLOSED" position indication for the RH1 and RH2 suction isolation valves is powered from separate 125-Vdc buses, distinct from the source control power to the valve operators, ensuring indication is maintained even when control power is locked out. (UFSAR §5.5.7.3.2)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q33</div>
+RHR pump 4KV vital bus power supplies: <span class="hi-exam">11 RHR pump from A bus, 12 RHR pump from B bus</span>. <span class="hi-trap">Other ECCS pumps are powered differently: 11/12 SI and 11/12 CS are from A and C; charging pumps 21/22 are from B and C.</span> (Unit 2 SW pumps run in reverse order: 21/22 from C, 25/26 from A.)
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q63</div>
-During LOCA outside containment (EOP-LOCA-6), the crew is MOST concerned with <span class="hi-exam">RHR piping connecting to the RCS</span> because it is only rated to <span class="hi-exam">600 psig</span> (vs RCS piping rated to 2500 psig). This is the basis for the leak isolation strategy in LOCA-6.
+<div class="callout-label">Exam — 2019 Q12</div>
+RHR pump power supply: <span class="hi-exam">22 RHR Pump is powered from 2B 4KV Vital Bus</span> (NOT 2C). During a Reactor Trip + SI coincident with LOOP and EDG 2C unavailable, 22 RHR Pump is running because 2B bus is powered by EDG 2B. <span class="hi-trap">Common confusion: 22 SI Pump is on 2C bus, but 22 RHR Pump is on 2B bus — pump number does not indicate bus assignment.</span>
+</div>
+
+## Automatic Features & Setpoints
+
+The cooldown rate of the reactor is controlled by regulating the flow through the tube side of the residual heat exchangers. A bypass line with a remotely-operated control valve around the residual heat exchangers maintains a constant flow through the RHR System, so adjusting the split between tube-side flow and bypass flow changes heat removal (cooldown rate) at constant total RHR flow. (UFSAR §5.5.7.2) Coincident with plant cooldown, a portion of reactor coolant flow may be diverted to the CVCS for cleanup; regulating the diverted flow rate controls RCS pressure within the range dictated by the nil-ductility limits of the reactor vessel and the No. 1 seal differential pressure and NPSH requirement of the RCPs. (UFSAR §5.5.7.2)
+
+The RHR System has no ESFAS auto-actuation in its shutdown-cooling role; it is manually placed in service during cooldown. In its ECCS role the RHR (low-head SI) pumps start on the safeguards (SEC) sequence, and transfer to the containment-sump suction for recirculation is a manual ECCS realignment (see LOCA Recirculation Mode). Two control-room overhead alarms are provided for the suction isolation valves: the RH1 alarm and the RH2 alarm each annunciate when that valve is not fully closed in conjunction with high reactor pressure. (UFSAR §5.5.7.3.2)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q33</div>
+Confirms the cooldown-rate adjustment per S2.OP-SO.RHR-0001: to <span class="hi-exam">REDUCE the cooldown rate, throttle CLOSED on 21RH18 (RHR HX Flow Control valve) while throttling OPEN on 2RH20 (RHR HX Bypass valve)</span> — less water passes through the RHR HX while total RHR system flow stays constant. <span class="hi-trap">Throttling both RH18 and RH20 closed does NOT keep flow constant; throttling RH18 open (more HX flow) would raise the cooldown rate.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q31</div>
+SDC operation with 21 RHR loop in service: <span class="hi-exam">throttling 2RH20 (RHR HX Bypass Valve) more OPEN bypasses flow around the in-service HX → water returning to the RCS RISES in temperature</span> (more warm RCS water mixed in with cooled RHR HX outlet water). Conversely, <span class="hi-exam">throttling 21RH18 (RHR HX FLOW CONT VALVE) more open increases flow through the HX → outlet temperature LOWERS</span>. With 22 RHR loop O/S aligned for ECCS (RH19s open), 21SJ49 shut still allows discharge through normally open 22SJ49. 22CC16 is normally shut and 22RH12 shut — no flow through 22 CCHX from 21 loop regardless. Per S2.OP-SO.RHR-0001.
 </div>
 
 <div class="callout callout-exam">
@@ -122,7 +137,21 @@ RHR HX tube blockage from foreign material reduces heat transfer, lowering coold
 To <span class="hi-exam">LOWER the cooldown rate</span> while maintaining constant RHR flow: <span class="hi-exam">lower RH18 demand</span> (closes HX flow control valves, reducing flow through the RHR HX) and <span class="hi-exam">raise RH20 demand</span> (opens HX bypass valve, routing more flow around the HX). Total RHR flow stays constant but less passes through the heat exchanger. Reverse actions (raise RH18 / lower RH20) would increase cooldown rate.
 </div>
 
-## Valve Failure Modes
+## Design Features & Interlocks
+
+The RHR System is isolated from the RCS by two motor-operated isolation valves (RH1 and RH2) in series in the single letdown line connecting the low-pressure RHR System to the high-pressure RCS. RH1 is the upstream valve (closest to the RCS) and RH2 is the downstream valve. (UFSAR §5.5.7.3.2)
+
+The interlock system prevents opening these valves above RHR design pressure:
+
+1. RH1 is interlocked with a pressure-control signal derived from a pressure transmitter to <span class="hi-exam">prevent its opening whenever RCS pressure is greater than the RHR System design pressure</span>; that transmitter is connected into the RHR suction line inside containment.
+2. A second, independent pressure channel interlocks RH2 (located adjacent to the RHR System) against opening above RHR design pressure, via a separate connection into the RHR suction line inside containment — so the suction line carries two separate pressure-transmitter connections.
+3. The control for RH1 and RH2 is administratively locked to prevent inadvertent manual opening.
+
+These interlocks are designed to conform to IEEE Standard 279-1971, and the suction isolation valves are environmentally qualified for the steam-line-break environment. (UFSAR §5.5.7.3.2, §5.5.7.3.4) The valves have only an OPENING interlock; they do NOT auto-close on high RCS pressure and must be manually closed during RCS heatup (see callouts).
+
+System components whose design pressure and temperature are below the RCS design limits are provided with redundant isolation means and overpressure protection devices; RHR System overpressure is relieved to the containment sump. (UFSAR §5.5.7.1, §5.5.7.3.2) RHR participates in low-temperature overpressure protection during cold shutdown: the suction relief valve and the cross-tie to the PZR PORVs lift on the same high-pressure transient (see callouts for the as-operated 375 psig setpoints).
+
+The required shutdown margin is maintained throughout a cooldown without letdown and without taking the plant water solid, by following a makeup sequence that uses the boric acid tanks first (sole source until at least the technical-specification minimum volume has been charged) and then blended makeup or RWST makeup at the cold-shutdown concentration; the boric acid is <span class="hi-exam">3.75 to 4.0 weight percent</span>. (UFSAR §5.5.7.3.4)
 
 **Exam & operating coverage:**
 
@@ -142,23 +171,13 @@ On a loss of <span class="hi-exam">control air</span>, both 21RH18 (RHR HX FLOW 
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q12</div>
-RHR pump power supply: <span class="hi-exam">22 RHR Pump is powered from 2B 4KV Vital Bus</span> (NOT 2C). During a Reactor Trip + SI coincident with LOOP and EDG 2C unavailable, 22 RHR Pump is running because 2B bus is powered by EDG 2B. <span class="hi-trap">Common confusion: 22 SI Pump is on 2C bus, but 22 RHR Pump is on 2B bus — pump number does not indicate bus assignment.</span>
-</div>
-
-<div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q31</div>
 21RH18 (RHR HX Outlet Valve) fails <span class="hi-exam">OPEN on loss of 2A VIB</span> (115V Vital Instrument Bus) — increases flow through RHR HX, <span class="hi-exam">RCS temperature lowers</span>. 2RH20 (RHR HX Bypass Valve) fails <span class="hi-exam">OPEN on loss of 2D VIB</span> — independent power supply from 21RH18. <span class="hi-trap">Loss of 2A VIB only affects 21RH18, NOT 2RH20. 2RH20 remains as-is unless 2D VIB is lost.</span>
 </div>
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q32</div>
-Solid plant ops with RHR pump trip: RCS pressure <span class="hi-exam">rises</span> (charging continues adding inventory with no RHR pump to provide letdown path). Letdown line pressure <span class="hi-exam">lowers</span> (loss of RHR discharge pressure). 2CV18 throttles closed attempting to maintain letdown pressure at setpoint. 2CV6 (Letdown Relief Valve) opens at <span class="val-trip">600 psig</span> to protect downstream piping if pressure not controlled.
-</div>
+### RCS Isolation & Overpressure Protection
 
-## RCS Isolation
-
-The RHR system is isolated from the RCS by two normally closed motor-operated valves in each suction line. These valves are interlocked to prevent opening when RCS pressure is above the RHR system design pressure. (UFSAR 5.5.7.3.2)
+The RHR system is isolated from the RCS by two normally closed motor-operated valves in each suction line. These valves are interlocked to prevent opening when RCS pressure is above the RHR system design pressure. (UFSAR §5.5.7.3.2)
 
 **Exam & operating coverage:**
 
@@ -175,6 +194,42 @@ With RHR in service in Mode 5, an RCS pressure transient that exceeds <span clas
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q7</div>
 2RH1 and 2RH2 (RHR Suction Isolation Valves) are interlocked to <span class="hi-exam">PREVENT OPENING until PT-403 and PT-405 < <span class="val-normal">375 psig</span></span> — they do <span class="hi-trap">NOT auto-close on high RCS pressure. Must be manually closed during RCS heatup.</span> Design pressures: suction piping <span class="hi-exam">450 psig</span>, discharge piping <span class="hi-exam">600 psig</span> (design temp 400°F). Suction relief valve lifts at <span class="val-trip">350 psig</span>. POPs actuates at RCS > <span class="val-trip">375 psig</span> opening both PZR PORVs.
+</div>
+
+## Interconnections & Loads
+
+In the heat exchanger, residual heat is transferred from the reactor coolant to the <span class="hi-exam">Component Cooling System, which ultimately transfers the heat to the Service Water System</span>; both CCW and SW are Seismic Category I. Each RHR heat exchanger is cooled by a different component cooling loop, and each RHR pump is powered from a different emergency power train. (UFSAR §5.5.7.3.4) For single-failure tolerance, two redundant CCW subsystems and two redundant SW subsystems are provided — either CCW subsystem can provide sufficient heat removal via one RHR heat exchanger, and either SW subsystem can provide sufficient heat removal via one CCW heat exchanger. (UFSAR §5.5.7.3.4)
+
+Coincident with plant cooldown a portion of reactor coolant flow may be diverted to the <span class="hi-exam">CVCS</span> for cleanup, with the diverted-flow rate controlling RCS pressure; boration and makeup during cooldown are accomplished using portions of the CVCS (boric acid tanks and centrifugal charging pumps), and makeup beyond boric acid is drawn from the RWST. (UFSAR §5.5.7.2, §5.5.7.3.4) For its secondary function the RHR pumps transfer refueling water between the RWST and the refueling cavity. (UFSAR §5.5.7.1)
+
+The RHR pumps and heat exchangers are shared with the ECCS and Containment Spray System; during LOCA recirculation the RHR pumps take suction from the containment sump and supply both the cold-leg/hot-leg injection paths and (via the RHR-to-CS valves) the containment spray header. (UFSAR §5.5.7.1; see LOCA Recirculation Mode)
+
+## Effects of Loss / Malfunction
+
+If a leaking RHR heat exchanger could not be isolated from the Component Cooling System, the operator is alerted by a <span class="hi-exam">high or low water alarm on the component cooling surge tank</span> (the tank level rises or falls depending on which system pressure is higher), and a leak into the Component Cooling System is detected by a radiation monitor in each component cooling header. If the surge tank fills, an overflow-vent line discharges excess water to the Waste Disposal System; if the surge tank is drained, remote motor-operated valves in the CCW header cross-tie lines can be closed from the control room to split the two safety headers and keep at least one available for safe shutdown. (UFSAR §5.5.7.3.1) The design operating leakage rate of the RHR System is <span class="hi-exam">50 gpm</span> due to a pump seal failure; the two RHR pumps are in separate rooms each containing two sump pumps adequate to handle the 50 gpm, discharging to the Waste Disposal System. (UFSAR §5.5.7.3.1)
+
+If one RHR pump, one heat exchanger, or one pump and one heat exchanger is inoperable, safe cooldown is not compromised but the cooldown time is extended. (UFSAR §5.5.7.3) Spurious closure of a single normally open flow control valve (Unit 1 11RH18/12RH18, Unit 2 21RH18/22RH18) or of a normally open isolation valve (11RH4/12RH4) still leaves sufficient RHR cooling through the unaffected RHR train; the affected valve can be de-energized and opened with its handwheel. (UFSAR §5.5.7.3.3) Spurious closure of the normally-open, power-locked-out cold-leg isolation valves 11SJ49/12SJ49 is not credible from a single control-circuit failure, but an assumed closure would put the unit outside its design basis (three cold legs cannot be fed through a single SJ49); the resulting PCT penalty of 29°F can be accommodated without exceeding the 2200°F limit. (UFSAR §5.5.7.3.3)
+
+**Exam & operating coverage:**
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 Sim-d</div>
+Restoring shutdown cooling after the in-service RHR pump trips (MODE 4): per AB.RHR-0001, place the alternate RHR loop (22, aligned for ECCS) in service via Attachment 2. Local actions open <span class="hi-exam">22RH12 (HX bypass isolation), 22RH17 (letdown isolation), and 22RH18-NS (letdown isolation air supply)</span>; control-room actions close 22RH18 / 21RH18 (pump flow control), 2RH20 (HX bypass), and <span class="hi-exam">21CC16</span> while opening <span class="hi-exam">22CC16</span> (HX CCW outlet), then START the 22 RHR pump and throttle 22RH18 / 2RH20 for flow. Acceptance: RHR flow <span class="hi-exam">stable 1800-3000 gpm</span> and RCS temperature stable or lowering; flow is summed as 21SJ49 + 22SJ49 RHR DISCH TO COLD LEGS flow.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 RO-A3</div>
+22 RHR pump room radiological survey for emergency stay-time calculation. Highest dose-rate point in the pump room is <span class="hi-exam">40 mrem/hr</span> (the 250 mrem/hr point is in the 22 RHR HX area, which is OUTSIDE the work-scope boundary of the JPM and must be excluded). Work scope: a detailed pre-start inspection of 22 RHR pump room before starting the pump.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q4</div>
+During solid plant operations in MODE 5, throttling 22RH18 (RHR HX Outlet Valve) more CLOSED and 2RH20 (RHR HX Bypass Valve) more OPEN reduces flow through the RHR HX → <span class="hi-exam">RCS temperature rises → RCS pressure rises</span> (water is incompressible in solid plant conditions). To restore pressure: <span class="hi-exam">throttle 2CV18 (Low Pressure Letdown Control Valve) more OPEN</span> to increase letdown flow. <span class="hi-trap">Solid plant pressure control is maintained by adjusting letdown (not charging). Throttling CV18 more closed would RAISE RCS pressure, not lower it.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q32</div>
+Solid plant ops with RHR pump trip: RCS pressure <span class="hi-exam">rises</span> (charging continues adding inventory with no RHR pump to provide letdown path). Letdown line pressure <span class="hi-exam">lowers</span> (loss of RHR discharge pressure). 2CV18 throttles closed attempting to maintain letdown pressure at setpoint. 2CV6 (Letdown Relief Valve) opens at <span class="val-trip">600 psig</span> to protect downstream piping if pressure not controlled.
 </div>
 
 ## LOCA Recirculation Mode
@@ -256,6 +311,11 @@ EOP-LOCA-5 (Loss of Emergency Recirculation) is entered when no RHR pump is avai
 ### LOCA Outside Containment
 
 **Exam & operating coverage:**
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q22</div>
+EOP-LOCA-6 isolates a LOCA outside containment in the RHR/SI piping by closing/checking closed <span class="hi-exam">2RH1 OR 2RH2 (RHR common suction), 21 and 22 RH19s (RHR discharge X-CONN), 2RH26 (hot leg isolation), and 21 and 22 SJ49s (RHR DISCH TO COLD LEGS)</span>. A leak anywhere between the RH1/2 valves and the SJ49 valves is bounded by these isolations; the <span class="hi-trap">downstream/outlet side of the SJ49 valves cannot be isolated</span> because that section ties directly into the RCS cold leg. See [[EOP-LOCA-6 — LOCA Outside Containment]].
+</div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2018 Q63</div>
