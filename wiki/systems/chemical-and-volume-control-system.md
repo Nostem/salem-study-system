@@ -10,38 +10,62 @@ aliases:
 
 # CVCS
 
-## Function
+## Function & Design Basis
 
-Controls RCS chemistry, inventory, and boron concentration. Provides charging flow, letdown flow, RCP seal injection, boron concentration control, RCS chemistry control, and RCS inventory control. (UFSAR 9.3.4)
+The CVCS is used to (1) adjust the concentration of boric acid (the chemical neutron absorber for reactivity control), (2) maintain the proper water inventory in the RCS, (3) provide the required seal water flow for the reactor coolant pump shaft seals, (4) process reactor coolant letdown for reuse of boric acid and reactor makeup water, (5) maintain the proper concentration of corrosion-inhibiting chemicals in the reactor coolant, (6) maintain reactor coolant activities within design limits, and (7) provide borated water for safety injection. The system also fills and hydrostatically tests the RCS, and — through the cross-tied portions — provides reactivity management, normal RCS makeup, and RCP seal injection flow to support a safe shutdown of the opposite unit if it loses its charging capability due to a fire. (UFSAR §9.3.4)
 
-## Design Bases
+During normal operation the system also supplies regenerant chemicals to the evaporator condensate and deborating demineralizers, hydrogen to the volume control tank, nitrogen for purging the VCT, and hydrazine / hydrogen peroxide / lithium hydroxide (via the chemical mixing tank) to the charging pump suction. (UFSAR §9.3.4)
 
-- **Reactivity hold-down:** Compensates for fuel burnup and fission product poisoning by adjusting boron concentration
-- **Hot shutdown capability:** Can borate RCS to hot shutdown boron concentration
-- **Cold shutdown capability:** Can borate RCS to cold shutdown conditions
-- Provides seal water injection to RCPs (8 gpm per pump)
-(UFSAR 9.3.4.1)
+**Design bases (UFSAR §9.3.4.1):**
 
-## Major Components
+- **Redundancy of reactivity control (§9.3.4.1.1):** Two independent reactivity control systems are provided — the rod cluster control assemblies (RCCAs) and the CVCS, which regulates the boric acid neutron-absorber concentration in the RCS.
+- **Reactivity hold-down (§9.3.4.1.2):** Normal shutdown is by control rods, with boric acid injection compensating for the long-term xenon decay transient and plant cooldown. Any time the plant is at power, the boric acid held in the boric acid tanks ready for injection always exceeds the quantity required for normal cold shutdown (and exceeds the quantity required to reach hot shutdown and compensate for subsequent xenon decay). The system allows concurrent mixing and injection of boric acid, providing extended hold-down capability.
+- **Reactivity hot-shutdown (§9.3.4.1.3):** The chemical-shim control can make and hold the core subcritical from any hot standby or hot operating condition, as backup to the RCCAs.
+- **Reactivity shutdown (§9.3.4.1.4):** Boric acid is transferred from the boric acid tanks by the boric acid transfer pumps to the charging pump suction for injection into the RCS. Any charging pump and any boric acid transfer pump can be operated from diesel-generator power on loss of primary power, so boric acid injection affords backup shutdown capability independent of the control rods, including for long-term and reduced-temperature conditions.
+- **Codes & classifications (§9.3.4.1.5):** Pressure-retaining components exposed to reactor coolant comply with the codes in UFSAR Table 9.3-4. Pressure vessels are built to ASME Section III, Class C; valves/fittings/piping to ANSI B31.1 (design) with B31.7 fabrication/inspection. The regenerative heat exchanger and the tube side of the excess letdown heat exchanger are ASME III, Class C (each is isolable from the RCS, located inside containment, and protected by a missile barrier). System integrity is assured by use of austenitic stainless steel or other corrosion-resistant materials in contact with reactor coolant and boric acid. (UFSAR §9.3.4.1.5)
 
-- **Centrifugal Charging Pumps:** 2 per unit (21 and 22). Also serve as high-head SI pumps during LOCA. Design pressure 2800 psig, design flow 150 gpm, shutoff head 2670 psig. (UFSAR T6.3-5)
-- **Positive Displacement Charging Pump:** 1 per unit (23). Powered from 460V bus.
-- **Letdown Orifices:** Control letdown flow rate
-- **Letdown Heat Exchanger:** Cools letdown flow (via CCW) before processing
-- **Mixed Bed Demineralizers:** Remove ionic impurities and fission products. The Cation Demineralizer is used for Lithium removal and pH control (not the mixed bed).
-- **Cation Demineralizer:** Removes Lithium from the RCS and maintains RCS pH
-- **Volume Control Tank (VCT):** Surge volume for charging/letdown mismatch. Hydrogen cover gas for dissolved gas control.
-- **Boric Acid Tanks (BATs):** Store concentrated boric acid solution (6560–6990 ppm per TS). Solution temperature maintained ≥63°F to prevent precipitation.
-- **Boric Acid Transfer Pumps:** Transfer boric acid from BATs to RCS
-- **Excess Letdown Heat Exchanger:** Alternate letdown path
-(UFSAR 9.3.4.2)
+### Chemistry & Gas Control (oxygen, hydrogen, pH)
 
-**Exam & operating coverage:**
+Hydrogen overpressure maintained in the VCT controls the dissolved hydrogen concentration in the reactor coolant at <span class="val-normal">25 to 50 cc/kg of water (STP)</span>; hydrogen may be reduced to <span class="val-normal">15 cc/kg</span> 24 hours prior to a planned outage. (UFSAR §9.3.4.2.6, Volume Control Tank) The cation bed demineralizer (downstream of the mixed bed demineralizers) is used intermittently to control cesium activity and to remove excess lithium formed from the B-10 (n,α) Li-7 reaction. (UFSAR §9.3.4.2.1) The chemical mixing tank injects caustic (Li7OH) for pH control, hydrazine for oxygen scavenging, and hydrogen peroxide for chemical degassing and corrosion-product solubilization. (UFSAR §9.3.4.2.6, Chemical Mixing Tank) Before opening the RCS, dissolved hydrogen must be removed either by repeatedly raising/lowering VCT level to "burp" the hydrogen-rich gas space to the WDS (admitting fresh nitrogen on each lowering), or by adding hydrogen peroxide to react with dissolved hydrogen to form water. (UFSAR §9.3.4.2.1)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q33</div>
 Before a refueling outage, hydrogen is removed from the RCS by chemical and <span class="hi-exam">mechanical degassification (replacement of H2 with N2)</span> to prevent <span class="hi-exam">an explosive H2 concentration when oxygen is introduced to the system</span>. Mechanical degas is most effective at NOP/NOT. See [[S2.OP-SO.CVC-0011 — RCS Degassification]], [[RCS]].
 </div>
+
+## Key Components
+
+- **Centrifugal Charging Pumps:** 2 per unit (21 and 22). Horizontal centrifugal, constant-speed; flow controlled by a modulating valve in the discharge line. Also serve as high-head SI pumps during LOCA. Design pressure <span class="val-normal">2800 psig</span>, design flow <span class="val-normal">150 gpm</span>, shutoff head <span class="val-trip">2670 psi</span>, design head 5800 ft, required NPSH at 150 gpm 10 ft, normal suction temperature 127°F. (UFSAR Table 9.3-6; T6.3-5)
+- **Positive Displacement Charging Pump:** 1 per unit (23). Variable-speed drive; design flow <span class="val-normal">98 gpm</span> (at 130°F, 2500 psig), design pressure 3200 psig, design head 5800 ft. Provides full charging flow and RCP seal water supply, and is used to hydrotest the RCS. A suction stabilizer and pulsation dampener attenuate the reciprocating pressure pulsations. Powered from a 460V bus. (UFSAR Table 9.3-6; §9.3.4.2.6, Charging Pumps)
+- **Regenerative Heat Exchanger:** Recovers heat from letdown by reheating charging flow, eliminates reactivity effects from cold-water insertion, and reduces thermal shock on the charging penetrations. Multi-shell (three shells) U-tube, all-welded austenitic stainless steel; letdown on the shell, charging on the tubes. Heat transfer 10.28 × 10^6 Btu/hr; charging-side outlet (normal) 495°F. (UFSAR §9.3.4.2.6; Table 9.3-6)
+- **Letdown Orifices:** Three orifices; one 45 gpm and two 75 gpm. One orifice controls normal letdown and reduces pressure to a value compatible with the letdown HX. The third (standby) orifice can be paralleled with a normal orifice to maintain maximum purification flow, especially when RCS pressure is below normal. Each is an austenitic pipe with a bored corrosion/erosion-resistant insert; placed in/out of service by remote-manual operation of their isolation valves. Design pressure 2485 psig, ΔP at design flow 1900 psig. (UFSAR §9.3.4.2.6, Letdown Orifices; Table 9.3-6)
+- **Letdown Heat Exchanger:** Cools the letdown stream to the mixed-bed demineralizer operating temperature; reactor coolant in the tubes, component cooling water in the shell. Outlet temperature automatically controlled by a temperature control valve in the CCW outlet. Heat transfer (heatup) 14.8 × 10^6 Btu/hr. (UFSAR §9.3.4.2.6, Letdown Heat Exchanger; Table 9.3-6)
+- **Mixed Bed Demineralizers:** Two flushable units that remove fission and corrosion products (reduce ionic isotopes by a minimum factor of 10, except cesium/yttrium/molybdenum). The anion resin rapidly converts to a borate form and thereafter does not remove boron. Each is sized for maximum letdown flow and ~one core cycle with 1% defective fuel. (UFSAR §9.3.4.2.6, Mixed Bed Demineralizers) The Cation Demineralizer (not the mixed bed) is used for lithium removal and pH control.
+- **Cation Bed Demineralizer:** Located downstream of the mixed beds; used intermittently to control Li-7 buildup (from the B-10 (n,α) Li-7 reaction) and to hold cesium-137 below 1.0 µc/cc with 1% defective fuel. (UFSAR §9.3.4.2.6, Cation Bed Demineralizer)
+- **Deborating Demineralizers:** Two anion (regenerable) demineralizers that remove boric acid from the RCS near the end of a core cycle (or any time boron concentration is low). May also be used like the mixed beds or for lithium removal. (UFSAR §9.3.4.2.6, Deborating Demineralizers)
+- **Volume Control Tank (VCT):** Surge volume for charging/letdown mismatch, head tank for the charging pumps, and reservoir for RCP controlled-leakage seal return. Internal volume <span class="val-normal">400 ft³</span>, internal design pressure <span class="val-trip">75 psig</span>, operating pressure range <span class="val-normal">0–60 psig</span> (normal 15 psig). A spray nozzle on the reactor-coolant-filter inlet line equilibrates gas and liquid; a remotely operated vent valve to the WDS removes gaseous fission products. Hydrogen cover gas controls dissolved-gas content. (UFSAR §9.3.4.2.6, Volume Control Tank; Table 9.3-6)
+- **Boric Acid Tanks (BATs):** Two per unit; each holds <span class="val-normal">8000 gallons</span> of boric acid at 3.75–4.0 weight percent (<span class="val-normal">6560–6990 ppm</span> boron). Solution temperature maintained high enough to prevent precipitation (4.0 wt% solubility limit is reached at 58°F). Electric immersion heaters (four per unit, 7.5 kW each) remain for manual/automatic operation if Aux Building ambient falls below the TS requirement. (UFSAR §9.3.4.2.6, Boric Acid Tanks / BAT Heaters; Table 9.3-6) Minimum volume/concentration are per TS Figure 3.1-2.
+- **Boric Acid Transfer Pumps:** Two two-speed horizontal centrifugal pumps. One runs continuously at low speed for recirculation; the other is standby. Original rated flow was 75 gpm; the IST program verifies a minimum of <span class="val-normal">45 gpm</span> at rated head. Safety requirements are met with <span class="val-normal">33 gpm</span> of 3.75–4.0 wt% boric acid (a 132 ppm/hour boration rate, set by the Westinghouse maximum xenon-burnout rate per GDC 26). Each pump can take suction from either BAT, and is powered from a separate 460V vital bus backed by the associated diesel generator. (UFSAR §9.3.4.2.6, Boric Acid Transfer Pumps; Table 9.3-6)
+- **Excess Letdown Heat Exchanger:** Alternate letdown path that cools coolant equal to the RCP labyrinth-seal injection rate when normal letdown is unavailable. Cools the letdown stream from cold-leg temperature to 195°F; reactor coolant on the tube side, CCW on the shell. Tube side ASME III, Class C. (UFSAR §9.3.4.2.6, Excess Letdown Heat Exchanger; Table 9.3-6)
+- **Seal Water Heat Exchanger:** Removes heat from the RCP seal-water return, the excess letdown HX discharge, and the centrifugal charging pump bypass flow; reactor coolant on the tubes, CCW on the shell. (UFSAR §9.3.4.2.6, Seal Water Heat Exchanger)
+- **Reactor Coolant Filter, Seal Water Filter, Seal Injection Filters (2, parallel), Boric Acid Filter:** Disposable synthetic-element filters; the reactor coolant filter nominal capacity equals maximum purification flow. (UFSAR §9.3.4.2.6)
+- **Batching Tank & Boric Acid Blender:** Boric acid is dissolved in the steam-jacketed batching tank to 3.75–4.0 weight percent and transferred to the BATs by a boric acid transfer pump; the blender (a pipe tee) mixes metered boric acid with primary water for the makeup circuit. (UFSAR §9.3.4.2.1; §9.3.4.2.6, Boric Acid Blender)
+- **Holdup Tanks, Gas Stripper / Boric Acid Evaporator Train:** Three holdup tanks (Unit 1 has two; No. 12 abandoned in place) with nitrogen cover gas store letdown effluent (total capacity ~two RCS volumes); the recycle train (gas stripper feed pumps → evaporator feed ion exchangers → gas stripper / boric acid evaporator package) strips gases and concentrates boric acid to ~12 weight percent. (UFSAR §9.3.4.2.1; §9.3.4.2.6)
+
+**Key design flow parameters (UFSAR Table 9.3-5, nominal at 130°F / 2350 psig):**
+
+| Parameter | Value | Source |
+|---|---|---|
+| Seal water supply flow — normal / max | <span class="val-normal">32</span> / 113 gpm | UFSAR Table 9.3-5 |
+| Seal water return flow — normal / max | 12 / 93 gpm | UFSAR Table 9.3-5 |
+| Letdown flow — normal / min / max | <span class="val-normal">75</span> / 45 / 120 gpm | UFSAR Table 9.3-5 |
+| Charging flow — normal / min / max | <span class="val-normal">55</span> / 25 / 100 gpm | UFSAR Table 9.3-5 |
+| Letdown coolant temp entering system at full power | 542.7°F | UFSAR Table 9.3-5 |
+| Centrifugal pump miniflow | 60 gpm each | UFSAR Table 9.3-5 |
+| Normal charging temp to RCS | 495°F | UFSAR Table 9.3-5 |
+| Effluent temp to holdup tanks | 127°F | UFSAR Table 9.3-5 |
+
+**Exam & operating coverage:**
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2015 RO-A2</div>
@@ -53,16 +77,49 @@ Reviewing a completed 11 Charging Pump IST (S1.OP-ST.CVC-0003): the <span class=
 Tagging review for 11 Charging pump removal on Unit 1: DWG 205228 Sheet 2 missing three blocking points per S1.OP-SO.CVC-0002: (1) <span class="hi-exam">1CV81 (DISCH VALVE) — must be CLOSED</span> (step 4.9.4.2), (2) <span class="hi-exam">1CV136 (RECIRC STOP VALVE) — must be CLOSED</span> (step 4.9.4.4; 1CV135 is a check valve, insufficient isolation), (3) <span class="hi-exam">1CV356 (SUCT VENT) — must be OPEN</span> (step 4.9.4.7). Applicable Tech Spec: <span class="hi-exam">TS 3.5.2</span> — charging pumps are ECCS components.
 </div>
 
-## Reactor Makeup Control Modes
+## Power Supplies
 
-- **Dilution:** Increases primary water supply flow, decreases boron concentration
-- **Boration:** Transfers boric acid from BATs to charging pump suction
-- **Automatic Makeup:** Maintains VCT level by automatically adjusting primary water and boric acid flows
-(UFSAR 9.3.4.2.4)
+| Pump | Power Supply | Source |
+|---|---|---|
+| 21 CV Pump | <span class="hi">2B 4KV Vital Bus</span> | NOS05CVCS00-17 |
+| 22 CV Pump | <span class="hi">2C 4KV Vital Bus</span> | NOS05CVCS00-17 |
+| 23 CV Pump | <span class="hi">2A 460V Bus</span> | NOS05CVCS00-17 |
+
+Each boric acid transfer pump is powered from a separate 460V vital bus that can be supplied by the associated diesel generator on loss of offsite power; any charging pump and any boric acid transfer pump can be operated from diesel-generator power, preserving boric acid injection capability. (UFSAR §9.3.4.1.4; §9.3.4.2.6, Boric Acid Transfer Pumps)
 
 **Exam & operating coverage:**
 
-### CV-179 Primary Water Valve and Auto Makeup Reactivity Effects
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q29</div>
+Confirms charging pump power supplies: <span class="hi-exam">21 Centrifugal Charging Pump — 2B 4KV Vital Bus; 22 Centrifugal Charging Pump — 2C 4KV Vital Bus</span>. With three 4KV Vital Buses powering two trains of ECCS pumps, the bus-to-pump mapping must be memorized — pump number does NOT always correspond to bus letter.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q29</div>
+On loss of 2C 4KV bus (bus differential): <span class="hi-exam">22 CV Pump is lost (powered from 2C)</span>. Available charging pumps: <span class="hi-exam">21 CV Pump (2B 4KV bus) and 23 CV Pump (2A 460V bus)</span>. <span class="hi-trap">23 CV Pump is powered from the 2A 460V bus, NOT 2C 4KV — a common distractor. It remains available on loss of 2C.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q45</div>
+<span class="hi-exam">23 charging pump is supplied from the 2A 460V bus.</span> Loss of the 2A 460V MCC de-energizes 23 charging pump, causing loss of charging flow and letdown isolation. Per S2.OP-AB.460-0001: start a centrifugal charging pump and restore PZR level, then re-establish letdown.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2016 Sim-e</div>
+On a total loss of all SW, AB.SW-0005 Step 3.6 directs swapping to <span class="hi-exam">23 Charging Pump (positive displacement)</span> to maintain charging without CCW cooling on the centrifugal pumps. The 23 Charging Pump start sequence is unique: <span class="hi-exam">place in MANUAL → set Speed Demand to 10–12% BEFORE start → start pump → immediately raise Speed Demand to ~20% to couple the pump → adjust for desired flow → ensure Seal Injection Flow 6–12 gpm per RCP, total ≤40 gpm → stop 21 and 22 Centrifugal Charging Pumps</span>. Letdown is isolated by closing 2CV3/4/5 (orifice isolation valves) and 2CC131 (RCP THERMAL BARRIER) is placed in MANUAL.
+</div>
+
+## Automatic Features & Setpoints
+
+### Reactor Makeup Control Modes
+
+Reactor makeup is operated from the control room by manually preselecting the makeup composition delivered to the charging-pump suction header or the VCT, to maintain VCT inventory and adjust boron concentration. The operator can stop makeup at any time by closing the makeup stop valves or depressing the makeup mode-selector stop pushbutton. Makeup sources are the primary water storage tank (dilution), the boric acid tanks (boration), the refueling water storage tank (emergency makeup), and the chemical mixing tank (chemistry additions). (UFSAR §9.3.4.2.4)
+
+- **Automatic Makeup:** Matches boric acid to the RCS boron concentration and compensates for minor leakage. With the equipment set to AUTO and the start pushbutton depressed, a VCT low-level signal switches the boric acid transfer pump to high speed and starts the primary water makeup pump, switches the boric acid flow control valve to its controller, unblocks the primary water flow control valve, and opens the charging-suction makeup valve; the controllers blend to the preset concentration. After VCT level is restored the primary water valve closes, the transfer pump returns to low speed, and the charging-suction makeup valve closes. On a VCT low-low level signal, charging-pump suction is automatically aligned to the RWST. (UFSAR §9.3.4.2.4)
+- **Dilution / Alternate Dilution:** "Dilute" adds a preselected quantity of primary water at a preselected rate to the VCT (then to charging suction). "Alternate dilute" opens both the charging-suction makeup valve and the VCT makeup valve for a more rapid boron reduction; closing CV181 directs all dilution flow to the charging-pump suction for an even faster rate. (UFSAR §9.3.4.2.4)
+- **Boration:** Adds a preselected quantity of 3.75–4.0 wt% boric acid at a preselected rate to the charging-pump suction. Maximum boration rate with two centrifugal charging pumps drawing 2000 ppm RWST water is <span class="val-normal">9 ppm/min</span> (compensates for a 2°F/min cooldown at most-negative MTC). Boration with 45 gpm from a boric acid transfer pump to charging suction is <span class="val-normal">4.8 ppm/min</span>. Primary-water and boric-acid flow-rate deviations from setpoint are alarmed on the main control board. (UFSAR §9.3.4.2.4)
+
+The VCT level is controlled by a three-way valve that normally modulates flow between the VCT and the holdup tanks via a level controller; on abnormally high level the entire flow is diverted to the holdup tanks. (UFSAR §9.3.4.2.4)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q76</div>
@@ -106,65 +163,110 @@ VCT level monitoring and overpressure protection: <span class="hi-exam">LT-114 i
 VCT level control logic: <span class="hi-exam">only LT-112 actuates automatic make-up</span>. Automatic swapover to RWST requires <span class="hi-exam">2/2 coincidence (LT-112 AND LT-114) at low-low VCT level</span>. CV35 (high level divert valve) opens on LT-112 high signal. If LT-112 fails HIGH: CV35 opens and drains the VCT, auto make-up will NOT actuate (controller sees high level), and auto swapover to RWST will NOT occur (2/2 coincidence not met with LT-112 failed high). The charging pump loses suction as VCT empties, resulting in <span class="hi-exam">charging pump cavitation and damage</span>.
 </div>
 
-### Manual Makeup Operations
+### Letdown Isolation, Orifices & Path Interlocks
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 Sim-b</div>
-A VCT level transmitter failing high (<span class="hi-exam">2LT-112 fails high</span>) automatically shifts the <span class="hi-exam">2CV35 VCT 3-way inlet valve to FLOW TO HUT</span>, diverting letdown to the Holdup Tank even though actual VCT level is not high. AB.CVC-0001 step 3.64 directs <span class="hi-exam">taking manual control of 2CV35 and positioning it back to the VCT</span>. Manual makeup (S2.OP-SO.CVC-0006 Section 5.2): STOP makeup mode, place 2CV179 (PW) and 2CV172 (BA) in manual/closed, open a makeup flowpath (2CV185 charging-pump-suction preferred, or 2CV181), start a Primary Water Pump and a Boric Acid Pump (FAST), then adjust boric-acid flow to the setpoint and PW flow to <span class="hi-exam">62 gpm +/- 2</span>. See [[AB.CVC-0001 — Loss of Charging]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]].
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2018 Sim-b</div>
-Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): entered AB.CVC-0001 due to 2LT112 failing high. With 900 ppm RCS boron and 6700 ppm BAST concentration, determine boric acid flow setpoint using <span class="hi-exam">Figure 100A</span> from S2.RE-RA.ZZ-0012 for 62 gpm PW flow — setpoint is <span class="hi-exam">~9.6 gpm (9-11 gpm acceptable)</span>. <span class="hi-trap">Figure 100C is WRONG (9000 ppm boron). Figure 105 (temperature correction) is N/A at 100% power.</span> Place 2CV179 and 2CV172 in MANUAL/CLOSE — note 2CV179 will initially go full open when placed in MANUAL. Align blender outlet via <span class="hi-exam">2CV185 (preferred — charging pump suction)</span>. Start PW pump MANUAL, BA pump MANUAL/FAST. Adjust flows on FI110A and FI111A. When VCT at 53%, secure all and return BA pump to SLOW speed.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 Sim-b</div>
-Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and 6700 ppm BAST concentration, determine boric acid flow setpoint using <span class="hi-exam">Figure 100A</span> from S2.RE-RA.ZZ-0012 for 62 gpm PW flow — setpoint is <span class="hi-exam">~9.6 gpm (9-11 gpm acceptable)</span>. Place 2CV179 and 2CV172 in MANUAL/CLOSE, align blender outlet via <span class="hi-exam">2CV185 (preferred — to charging pump suction)</span> or 2CV181. Start PW pump in MANUAL, BA pump in MANUAL/FAST. Adjust BA flow on FI110A, PW flow on FI111A to 62 gpm. When VCT at 53%, secure makeup.
-</div>
-
-## Charging Pump Power Supplies
-
-| Pump | Power Supply | Source |
-|---|---|---|
-| 21 CV Pump | <span class="hi">2B 4KV Vital Bus</span> | NOS05CVCS00-17 |
-| 22 CV Pump | <span class="hi">2C 4KV Vital Bus</span> | NOS05CVCS00-17 |
-| 23 CV Pump | <span class="hi">2A 460V Bus</span> | NOS05CVCS00-17 |
-
-**Exam & operating coverage:**
+The letdown orifice isolation valves and the low-pressure letdown valve are air-operated; on loss of control air they drift toward their fail positions and letdown is manually isolated. Letdown orifice isolation valves close automatically on Phase A isolation, PZR level <17%, or the letdown isolation valves (CV2/CV277) shutting; CV2/CV277 themselves close on low PZR level (not on Phase A). (UFSAR §9.3.4.2.6, Letdown Orifices; existing exam callouts)
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q29</div>
-Confirms charging pump power supplies: <span class="hi-exam">21 Centrifugal Charging Pump — 2B 4KV Vital Bus; 22 Centrifugal Charging Pump — 2C 4KV Vital Bus</span>. With three 4KV Vital Buses powering two trains of ECCS pumps, the bus-to-pump mapping must be memorized — pump number does NOT always correspond to bus letter.
+<div class="callout-label">Exam — 2015 Q32</div>
+<span class="hi-exam">1CV2 (Letdown Isolation Valve) closing is interlocked to auto-shut the open letdown orifice isolation valve 1CV4</span> — closing 1CV2 causes any of the 3 open orifice isolation valves to shut.
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q29</div>
-On loss of 2C 4KV bus (bus differential): <span class="hi-exam">22 CV Pump is lost (powered from 2C)</span>. Available charging pumps: <span class="hi-exam">21 CV Pump (2B 4KV bus) and 23 CV Pump (2A 460V bus)</span>. <span class="hi-trap">23 CV Pump is powered from the 2A 460V bus, NOT 2C 4KV — a common distractor. It remains available on loss of 2C.</span>
+<div class="callout-label">Exam — 2016 Q37</div>
+Letdown Orifice Isolation Valves (2CV3, 2CV4, 2CV5) close automatically on: Phase A isolation, PZR level &lt;<span class="val-trip">17%</span>, or 2CV2/2CV277 (Letdown Isolation Valve) shut from 2CC2. <span class="hi-exam">2CV7 (Letdown Line Containment Isolation Valve) is NOT interlocked with the Orifice Isolation Valves</span> — closing 2CV7 isolates letdown to containment but does NOT auto-shut the orifice valves. <span class="hi-trap">Trap: candidates may assume any upstream/downstream letdown path closure auto-shuts the orifices. The orifice closure logic ties to Phase A, low PZR level, all-charging-pump trip, and CV2/CV277 — but NOT to CV7.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q45</div>
-<span class="hi-exam">23 charging pump is supplied from the 2A 460V bus.</span> Loss of the 2A 460V MCC de-energizes 23 charging pump, causing loss of charging flow and letdown isolation. Per S2.OP-AB.460-0001: start a centrifugal charging pump and restore PZR level, then re-establish letdown.
+<div class="callout-label">Exam — 2018 Q28</div>
+Spurious Phase A Containment Isolation at 100% power with 1CV5 (75 GPM ORIFICE) in service: <span class="hi-exam">1CV284 & 1CV116 (RCP Seal Water Return Horizontal Stop Valves) close on Phase A</span>, blocking the normal seal return path to the VCT. Seal return flow is redirected to the <span class="hi-exam">PRT via Relief Valve 1CV15</span>. Letdown is isolated by closing <span class="hi-exam">1CV5 and 1CV7</span> (Phase A isolation valves). <span class="hi-trap">Trap: 1CV2 and 1CV277 (Letdown Line Isolation Valves) close on LOW PZR LEVEL — NOT on Phase A. Do not confuse CV2/CV277 interlocks with the letdown orifice (CV5) and HX inlet (CV7) Phase A isolation.</span>
 </div>
 
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2016 Sim-e</div>
-On a total loss of all SW, AB.SW-0005 Step 3.6 directs swapping to <span class="hi-exam">23 Charging Pump (positive displacement)</span> to maintain charging without CCW cooling on the centrifugal pumps. The 23 Charging Pump start sequence is unique: <span class="hi-exam">place in MANUAL → set Speed Demand to 10–12% BEFORE start → start pump → immediately raise Speed Demand to ~20% to couple the pump → adjust for desired flow → ensure Seal Injection Flow 6–12 gpm per RCP, total ≤40 gpm → stop 21 and 22 Centrifugal Charging Pumps</span>. Letdown is isolated by closing 2CV3/4/5 (orifice isolation valves) and 2CC131 (RCP THERMAL BARRIER) is placed in MANUAL.
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q54</div>
+Letdown orifice isolation valves (CV3, CV4, CV5) close on: <span class="hi-exam">Phase A signal, CV2 or CV277 closing, PZR level <17%, trip all charging pumps, or manual Phase A actuation from the safeguards bezel</span>. CV4 receives a closure signal <span class="hi-exam">directly from Phase A</span> (not directly from SI). SI actuates Phase A, which then closes CV4. <span class="hi-trap">CV2 and CV277 (letdown isolation valves) close on PZR low level <17% — NOT directly on SI or Phase A. Do not confuse CV2/CV277 interlocks with the letdown orifice valve (CV4) Phase A closure signal.</span>
 </div>
 
-## Charging Flow Paths and SI Isolation
+### Letdown Temperature Auto-Divert & Demineralizer Effects
 
-**Exam & operating coverage:**
+The letdown HX outlet temperature is automatically controlled by a temperature control valve (2CC71/1CC71) in the CCW outlet stream. Boron affinity of the demineralizer resin depends on letdown temperature — at lower temperatures the resin removes more boron, at higher temperatures less — so a letdown-temperature excursion releases boron into or strips boron from the RCS. (UFSAR §9.3.4.2.6, Letdown Heat Exchanger; existing exam callouts)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q32</div>
+Confirms the 2CV21 (Letdown Demin Bypass Valve) auto-divert temperature: <span class="hi-exam"><span class="val-alarm">136°F</span> Letdown HX outlet</span>. <span class="hi-trap">Distractor temperatures: 120°F = Letdown HX outlet Hi Temp Alarm (computer point T0145A; TE-130B); 127°F = Letdown HX design cooldown outlet (380°F → 127°F with 95°F CCW inlet at 1000 gpm); 130°F = nominal charging temp entering the Regen HX.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q32</div>
+Boron affinity of the demineralizer resin bed depends on letdown temperature: at <span class="hi-exam">LOWER temperatures the resin removes boron MORE efficiently</span> (borate ion bonds with three boron atoms); at higher temperatures it is less efficient (one boron atom). If <span class="hi-exam">1CC71 (Letdown HX CC Control Valve) fails 50% open</span>, letdown temperature LOWERS, so the resins strip MORE boron from the coolant → RCS boron concentration drops → <span class="hi-exam">RCS temperature rises</span>. Corrective action: <span class="hi-exam">borate the RCS as required to restore Tavg to program</span>. <span class="hi-trap">Letdown temperature lowers (not rises), so the demineralizers are not bypassed on a high-temperature setpoint.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2018 Q2</div>
+Mixed bed demineralizer function: <span class="hi-exam">removes chemical impurities from the RCS</span> (NOT Lithium control — the Cation Demineralizer provides Lithium removal and pH control). <span class="hi-exam">Boron removal is more efficient at lower temperatures.</span> When 2CC71 malfunctions and letdown temperature rises to 130&deg;F, the demineralizer <span class="hi-exam">releases boron into the RCS</span> → negative reactivity insertion → <span class="hi-exam">RCS TAVG lowers</span> (with Rod Bank Selector in MANUAL, no automatic rod withdrawal to compensate). <span class="hi-trap">Trap: candidates may think the demineralizer absorbs more boron at higher temps (it does the opposite). Also: Cation Demin is for Lithium/pH, not mixed bed.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q29</div>
+Letdown temperature auto-divert: 2CV21 automatically diverts letdown flow to VCT (bypassing mixed bed demineralizers) at <span class="hi-exam"><span class="val-alarm">136°F</span></span>. Procedural limit per S2.OP-SO.CVC-0012 is <span class="hi-exam"><span class="val-trip">140°F</span></span> to prevent resin damage. Rising letdown temperature causes demineralizers to <span class="hi-exam">release boron into the RCS</span> (RCS boron concentration rises). <span class="hi-trap">2CV35 diverts to Hold-Up Tanks on high VCT level — it is downstream of the demineralizers and does NOT bypass them.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2023 Q28</div>
+If <span class="hi-exam">2TE-130 (temperature detector for 2CC71, Letdown HX Temp Control Valve) fails LOW</span>, the controller sees low temperature and drives 2CC71 closed (reduces CCW cooling flow through the letdown HX). With less cooling, <span class="hi-exam">letdown HX outlet temperature rises</span>. Hotter letdown water flowing through the mixed bed demineralizers <span class="hi-exam">causes boron release into the RCS</span> (boration effect), which <span class="hi-exam">lowers Tavg</span>.
+</div>
+
+### Charging Flow Control & Master Flow Controller
+
+The centrifugal pumps are constant-speed; charging flow is set by a modulating valve (CV55) in the discharge line, controlled by a charging-line flow transmitter upstream of the regenerative HX with a pressurizer-level error signal resetting the setpoint. The PD pump instead controls flow by varying pump speed (CV55 wide open when the PD pump runs), and has a low-speed stop that guarantees minimum flow for RCP seal injection. The charging-line modulating-valve response is intentionally slow to damp short-term PZR level transients. (UFSAR §9.3.4.2.5)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q40</div>
+SEAL WATER FLOW LO on ALL 4 RCPs traced to the Charging System <span class="hi-exam">Master Flow Controller demand failing to 20%</span>. Normal MFC demand is ~40%, so 20% gives ~1/2 of normal charging flow; <span class="hi-exam">normal charging flow is ~<span class="val-normal">90 gpm</span></span>. The Master Flow Controller controls the PDP charging pump speed (and hence its flow) when the PD pump is in service, and controls charging FCV <span class="hi-exam">CV-55</span> when a centrifugal pump is in service. <span class="hi-trap">2CV71 (CHG HDR PCV) failing shut would direct full flow to the seals (seal flow rises, not lo); a PZR level program failing high keeps charging ~constant; 2CV115 (Seal Return Relief) lifting would tend to raise seal injection flow — none lower seal water flow to all 4 RCPs.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2016 Q30</div>
+VCT pressure / NPSH effect on charging flow: with the Charging System Master Flow Controller in MANUAL, raising VCT pressure (e.g., from 25 to 35 psig due to H2 pressure regulator malfunction) <span class="hi-exam">raises NPSH available to the charging pumps → charging flow rises</span>. Static suction pressure for a centrifugal pump is increased by any of: <span class="hi-exam">rise in surge tank level, rise in pressure above the liquid in the surge tank, rise in booster pump output, or opening of the pump suction valve</span>. <span class="hi-trap">Letdown flow is unchanged — the letdown pressure control valve responds in automatic and holds letdown flow constant. With MFC in AUTO instead, charging flow would not change because the controller would close 2CV55 to maintain demand.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2019 Q50</div>
+PZR Safety Valve seat leakage (vapor space LOCA): actual PZR level lowers below program level → <span class="hi-exam">master flow controller automatically raises charging flow</span> to compensate. <span class="hi-trap">Trap: PZR Safety Valves are on top of the PZR — steam leaking out reduces steam space volume, which lowers level. Candidates may incorrectly think level rises because the leak is "at the top."</span> As RCS pressure lowers, the <span class="hi-exam">OT&Delta;T trip setpoint automatically lowers (pressure-dependent variable setpoint)</span>, causing the first automatic reactor trip before reaching the fixed low PZR pressure trip at <span class="val-trip">1865 psig</span>.
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2022 Q6</div>
+23 Charging Pump speed controller has a low speed stop maintaining <span class="hi-exam">minimum charging flow of <span class="val-normal">47 gpm</span> for RCP seal injection</span>. When MFC demand lowers, charging flow stops at 47 gpm (not zero). Per AB.CVC-0001 step 3.109, if MFC malfunction with 23 Charging Pump in service, <span class="hi-exam">take manual control of 23 Charging Pump Speed Controller</span>. <span class="hi-trap">Not 2CV55 — 2CV55 only controls flow with centrifugal charging pumps, not the positive displacement 23 Charging Pump.</span>
+</div>
+
+## Design Features & Interlocks
+
+- **Charging/letdown flow paths (§9.3.4.2.1):** Reactor coolant is taken from a loop cold leg on the RCP suction side through the letdown line and returned through the charging line to a different loop cold leg; an alternate charging return to a third loop is provided. Letdown is cooled in the regenerative HX shell, dropped in pressure through a letdown orifice, cooled again in the letdown HX, dropped again through the low-pressure letdown valve, purified in a demineralizer, filtered, and returned to the VCT through a spray nozzle. Charging takes suction from the VCT, is raised above RCS pressure by a charging pump, and is reheated in the regenerative HX tubes before returning to the RCS. (UFSAR §9.3.4.2.1)
+- **RCP seal injection split (§9.3.4.2.1):** A portion of high-pressure charging flow is filtered and injected into each RCP between the impeller and the shaft seal. Part of that flow cools the lower radial bearing and enters the RCS through a shaft labyrinth seal; the remainder (shaft-seal leakage) is filtered, cooled in the seal water HX, and returned to the charging-pump suction (alternate path returns it to the VCT). Coolant injected through the labyrinth seals joins the RCS, and an equal amount returns to the VCT via the normal letdown path. (UFSAR §9.3.4.2.1)
+- **Centrifugal-pump miniflow (recirculation):** Each centrifugal charging pump has a 60 gpm miniflow (recirculation) line to protect the pump at low/no demand. (UFSAR Table 9.3-5)
+- **PD-pump suction stabilizer / pulsation dampener (desurger):** A suction stabilizer and a discharge pulsation dampener attenuate the pressure pulsations inherent to the reciprocating positive-displacement pump. (UFSAR §9.3.4.2.6, Charging Pumps)
+- **Boric acid tank minimum-temperature design:** The 4.0 wt% boric acid solubility limit is reached at 58°F; immersion heaters (with the batching tank steam jacket heating to >80°F) keep the solution above precipitation temperature. (UFSAR §9.3.4.2.6, BAT Heaters / Batching Tank)
+- **Regenerative HX purpose:** Eliminates reactivity effects from cold-water insertion and reduces thermal shock on the charging penetrations, in addition to recovering letdown heat. (UFSAR §9.3.4.2.6)
+- **Letdown line temperature/pressure control:** Letdown pressure is held by the low-pressure letdown valve / CV18 and the letdown HX temperature by the CCW temperature control valve, protecting the ion-exchange resin (procedural limit 140°F; auto-divert at 136°F per exam callouts). (UFSAR §9.3.4.2.6; existing exam callouts)
+- **VCT overpressure / hydrogen control:** VCT relief (CV241) is set at 75 psig to the CVCS HUT; hydrogen overpressure controls dissolved hydrogen at 25–50 cc/kg. (UFSAR §9.3.4.2.6, Volume Control Tank; existing exam callouts)
+
+## Interconnections & Loads
+
+CVCS interfaces with the RCS and PZR (charging, letdown, seal injection, makeup), the RCPs (seal injection and seal return), the RHR system (during cooldown, a flow path from the residual heat exchangers passes through the letdown HX, demineralizers, reactor coolant filter, and VCT, then is pumped back to the RCS through the regenerative HX), the ECCS/RWST and BIT (the centrifugal charging pumps are the high-head SI pumps and align to the RWST), component cooling water (cools the letdown, excess letdown, and seal water heat exchangers), the primary water and boric acid supply, and the WDS/holdup tanks (letdown effluent processing). (UFSAR §9.3.4; §9.3.4.2.1)
+
+**Cross-unit charging (§9.3.4.2.1 / §9.3.4.2.5):** The charging and BAST cross-ties between units are normally isolated (by a check valve and a normally shut MOV) to maintain unit separation. They let one unit's CVCS be an alternate source of high-pressure borated water to the opposite unit — even on a total loss of that unit's own charging pumps — satisfying reactivity management, normal RCS makeup, and RCP seal injection for a safe shutdown. The PD pump can be separated to charge the opposite unit (taking suction from the RWST or, via the BAST cross-tie, from the unit-being-shutdown's BAST) while the providing unit's centrifugal/SI pumps keep it at power. (UFSAR §9.3.4.2.1; §9.3.4.2.5)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q91</div>
+Per AB.CVC-0001 step 3.50, with <span class="hi-exam">no Unit 2 Charging Pumps available</span>: "COORDINATE with Unit 1 to place <span class="hi-exam">13 Charging Pump</span> in service using <span class="hi-exam">U/1 RWST</span>." This cross-unit alignment provides charging flow when all three Unit 2 pumps (21, 22, 23 CV Pumps) are unavailable. <span class="hi-trap">Trap: Tripping the reactor and initiating SI is NOT the directed action for total loss of charging at 8% power — AB.CVC-0001 provides the cross-unit recovery path first.</span>
+</div>
+
+### Charging Flow Paths & SI Isolation
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2020 Q30</div>
 Post-SI effect on CV71 (Seal Pressure Control Valve): <span class="hi-exam">CV-68 and CV-69 (Charging Header Isolation Valves) go CLOSED on an SI signal</span>. These valves are in series with the CV-71 flow path to the charging header/regenerative HX. Therefore, <span class="hi-exam">throttling CV-71 after SI has NO effect on charging pump discharge pressure or total charging flow</span> — the flow path through CV-71 is already isolated by CV-68/69. <span class="hi-trap">During normal power alignment, throttling CV-71 closed would raise charging pump discharge pressure and redirect flow to RCP seals. After SI, this relationship does not apply because the downstream path is isolated.</span>
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2022 IP-j</div>
-During Unit 1 Control Room Evacuation (AB.CR-0001 Att. 5), after locally opening all four reactor trip/bypass breakers: open <span class="hi-exam">1AX1AX7X (#13 Charging Pump breaker)</span> to stop uncontrolled charging, and open <span class="hi-exam">1CY2AX4I (1CV175 Rapid Borate Stop Valve breaker)</span> to de-energize the valve and stop potential uncontrolled boration.
 </div>
 
 <div class="callout callout-jpm">
@@ -192,72 +294,157 @@ During the 20 gpm RCS leak, the RO swaps to a centrifugal charging pump (Step 3.
 The <span class="hi-exam">22 charging pump fails to auto start on the SEC</span> after the trip and is manually started for high-head ECCS (21 charging pump trips 15 min after the reactor trip). During the transfer to cold leg recirculation, the <span class="hi-exam">22 charging pump cavitates when 2SJ1 and 2SJ2 are shut</span> (oscillating amperage, discharge/BIT flow, and discharge pressure); <span class="hi-exam">CT#4 requires tripping it before pump/piping damage</span> — otherwise a LOCA outside containment results. In the earlier Stator Water runback event, the crew emergency-borates via [[S2.OP-SO.CVC-0008 — Rapid Boration]] if OHA E-16 RIL Lo-Lo annunciates.
 </div>
 
-## Charging and Letdown
+### RCP Seal Injection & Seal-Water Flow
 
-- **Normal charging flow:** One charging pump maintains RCS inventory and PZR level
-- **Seal injection:** 8 gpm per RCP (32 gpm total for 4 RCPs)
-- **Seal return:** 3 gpm per RCP
-- **CV55 (Charging Flow Control Valve):** Controls total charging flow to the RCS
-- **CV71 (Charging Header PCV):** Backpressure control valve downstream of seal injection takeoff
-- **CV73 (Seal Injection Pressure Control Bypass Valve):** Manual bypass around CV71, used during Control Room Evacuation
-
-- **Letdown:** Controlled by letdown orifices, cooled by letdown HX, processed through demineralizers
-- **Excess letdown:** Alternate path available if normal letdown is unavailable
-
-**Exam & operating coverage:**
-
-### Letdown Temperature Control & Demineralizer Effects
+Normal seal injection is ~8 gpm per RCP (about 32 gpm total for four RCPs) per Table 9.3-5 (normal seal water supply 32 gpm); seal return is ~3 gpm per RCP. CV71 (Charging Header PCV) is the backpressure valve downstream of the seal-injection takeoff; CV73 is the seal-injection pressure-control bypass used during Control Room Evacuation. (UFSAR Table 9.3-5; existing exam callouts)
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q32</div>
-Confirms the 2CV21 (Letdown Demin Bypass Valve) auto-divert temperature: <span class="hi-exam"><span class="val-alarm">136°F</span> Letdown HX outlet</span>. <span class="hi-trap">Distractor temperatures: 120°F = Letdown HX outlet Hi Temp Alarm (computer point T0145A; TE-130B); 127°F = Letdown HX design cooldown outlet (380°F → 127°F with 95°F CCW inlet at 1000 gpm); 130°F = nominal charging temp entering the Regen HX.</span>
+<div class="callout-label">Exam — 2015 Q30</div>
+RCP seal bypass valve (1CV114) prerequisites include <span class="hi-exam">RCP seal leakoff flow &lt;1 gpm, SEAL LEAKOFF valves (11-14CV104) open, and seal water flow at least 6 gpm to each RCP</span> (S1.OP-SO.RC-0001 step 5.2.1).
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q32</div>
-Boron affinity of the demineralizer resin bed depends on letdown temperature: at <span class="hi-exam">LOWER temperatures the resin removes boron MORE efficiently</span> (borate ion bonds with three boron atoms); at higher temperatures it is less efficient (one boron atom). If <span class="hi-exam">1CC71 (Letdown HX CC Control Valve) fails 50% open</span>, letdown temperature LOWERS, so the resins strip MORE boron from the coolant → RCS boron concentration drops → <span class="hi-exam">RCS temperature rises</span>. Corrective action: <span class="hi-exam">borate the RCS as required to restore Tavg to program</span>. <span class="hi-trap">Letdown temperature lowers (not rises), so the demineralizers are not bypassed on a high-temperature setpoint.</span>
+<div class="callout-label">Exam — 2018 Q52</div>
+Charging line leak diagnosis: <span class="hi-exam">seal injection flow lowering + PZR level lowering + 2R41 (Plant Radiation Monitor) rising + letdown line flashing</span> = charging line leak (not letdown line). The key discriminator is <span class="hi-exam">seal injection flow lowering</span> — a charging line leak upstream of the seal injection takeoff reduces seal injection flow. A letdown line leak does not affect seal injection flow. <span class="hi-exam">A charging line leak IS an entry condition for AB.CVC-0001.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q2</div>
-Mixed bed demineralizer function: <span class="hi-exam">removes chemical impurities from the RCS</span> (NOT Lithium control — the Cation Demineralizer provides Lithium removal and pH control). <span class="hi-exam">Boron removal is more efficient at lower temperatures.</span> When 2CC71 malfunctions and letdown temperature rises to 130&deg;F, the demineralizer <span class="hi-exam">releases boron into the RCS</span> → negative reactivity insertion → <span class="hi-exam">RCS TAVG lowers</span> (with Rod Bank Selector in MANUAL, no automatic rod withdrawal to compensate). <span class="hi-trap">Trap: candidates may think the demineralizer absorbs more boron at higher temps (it does the opposite). Also: Cation Demin is for Lithium/pH, not mixed bed.</span>
+<div class="callout-label">Exam — 2023 Q3</div>
+CV71 acts as a backpressure control valve affecting both charging and seal injection flows. <span class="hi-exam">Throttling CV71 CLOSED raises backpressure → seal injection flow RISES and charging flow LOWERS. Throttling CV71 OPEN lowers backpressure → seal injection flow LOWERS and charging flow RISES.</span> This relationship is critical during RCS leak response when adjusting charging to stabilize PZR level.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 IP-j</div>
+RCP seal cooling local isolation during a station blackout (EOP-LOPA-1 Step 27): the seal-water injection filter valves <span class="hi-exam">CV83, CV89 (SEAL WATER FILTER INLET) and CV95 (SEAL WATER FILTER BYPASS)</span> are in the 84 ft Aux Bldg Seal Water Injection Filter Valve Room (handwheel CW to close). <span class="hi-exam">CV116 (SEAL WATER TO VCT)</span> and the thermal-barrier valve CC131 are in the 78 ft Mech Pen Area SG B/D HX roped-off area; CV116 is motor-operated and requires depressing/holding the declutch lever before turning the handwheel CW.
+</div>
+
+### Excess Letdown
+
+The excess letdown HX provides an alternate letdown path equal to the RCP labyrinth-seal injection rate when normal letdown is unavailable, cooling the stream from cold-leg temperature to 195°F; on loss of cooling its temperature/pressure rise and the path is secured. (UFSAR §9.3.4.2.6, Excess Letdown Heat Exchanger; existing exam callouts)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q37</div>
+On loss of control air the Excess Letdown HX CC isolation valves <span class="hi-exam">2CC113 (outlet) and 2CC215 (inlet) fail closed (air and power)</span>. With excess letdown in service and no cooling flow, temperature and pressure rise; <span class="hi-exam">SO.CVC-3 P&amp;L 3.3 directs maintaining excess letdown pressure &lt;150 psig to prevent lifting the seal return relief</span> — operators secure excess letdown. See [[CCW]], [[Control Air]].
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q29</div>
-Letdown temperature auto-divert: 2CV21 automatically diverts letdown flow to VCT (bypassing mixed bed demineralizers) at <span class="hi-exam"><span class="val-alarm">136°F</span></span>. Procedural limit per S2.OP-SO.CVC-0012 is <span class="hi-exam"><span class="val-trip">140°F</span></span> to prevent resin damage. Rising letdown temperature causes demineralizers to <span class="hi-exam">release boron into the RCS</span> (RCS boron concentration rises). <span class="hi-trap">2CV35 diverts to Hold-Up Tanks on high VCT level — it is downstream of the demineralizers and does NOT bypass them.</span>
+<div class="callout-label">Exam — 2020 Q5</div>
+Excess letdown flow path during SI: <span class="hi-exam">Excess Letdown Isolation Valves (2CV278, 2CV131) do NOT receive automatic closure signals</span> on SI/Phase A. <span class="hi-exam">Seal Return Isolation Valves (2CV284, 2CV116) close automatically on Phase A</span>. After SI, seal return path is blocked → excess letdown flow continues through CV278/CV131 but downstream path is closed → <span class="hi-exam">CV115 (Seal Return Relief Valve) cycles, relieving flow to the PRT (not RCDT)</span>. CV134 (3-way valve directing excess letdown to VCT or RCDT) <span class="hi-exam">fails to VCT on loss of power and air</span>. <span class="hi-trap">Trap: eventually control air bleeddown from Phase A CA-330 isolation may fail CV278/CV131 closed, but this takes considerable time — the immediate effect is continued flow relieving to PRT via CV115.</span>
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q28</div>
-If <span class="hi-exam">2TE-130 (temperature detector for 2CC71, Letdown HX Temp Control Valve) fails LOW</span>, the controller sees low temperature and drives 2CC71 closed (reduces CCW cooling flow through the letdown HX). With less cooling, <span class="hi-exam">letdown HX outlet temperature rises</span>. Hotter letdown water flowing through the mixed bed demineralizers <span class="hi-exam">causes boron release into the RCS</span> (boration effect), which <span class="hi-exam">lowers Tavg</span>.
+<div class="callout-label">Exam — 2020 Q55</div>
+Excess Letdown CCW isolation on Phase A: <span class="hi-exam">CC113 and CC215 (Excess Letdown Component Cooling Valves) receive a Phase A signal to close</span>. This is distinct from normal letdown isolation — <span class="hi-trap">CV2 and CV277 (Letdown Isolation Valves) do NOT close on Phase A; they close only on low PZR level. CV2/CV277 are NOT containment isolation valves.</span> The Phase A letdown isolation valves for normal letdown are <span class="hi-exam">CV3, CV4, CV5, and CV7</span>.
 </div>
 
-### Letdown Orifices, Path Isolation & Restoration
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q32</div>
-<span class="hi-exam">1CV2 (Letdown Isolation Valve) closing is interlocked to auto-shut the open letdown orifice isolation valve 1CV4</span> — closing 1CV2 causes any of the 3 open orifice isolation valves to shut.
-</div>
+### Service Water / RHR Interface
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q37</div>
-Letdown Orifice Isolation Valves (2CV3, 2CV4, 2CV5) close automatically on: Phase A isolation, PZR level &lt;<span class="val-trip">17%</span>, or 2CV2/2CV277 (Letdown Isolation Valve) shut from 2CC2. <span class="hi-exam">2CV7 (Letdown Line Containment Isolation Valve) is NOT interlocked with the Orifice Isolation Valves</span> — closing 2CV7 isolates letdown to containment but does NOT auto-shut the orifice valves. <span class="hi-trap">Trap: candidates may assume any upstream/downstream letdown path closure auto-shuts the orifices. The orifice closure logic ties to Phase A, low PZR level, all-charging-pump trip, and CV2/CV277 — but NOT to CV7.</span>
+<div class="callout-label">Exam — 2015 Q78</div>
+On a complete loss of Service Water in Mode 5 with RHR in service, AB.SW-0005 directs going to AB.RHR; <span class="hi-exam">21 charging pump WILL be stopped — but not before letdown is isolated</span>. (23 charging pump is not placed in service because it would require CCW, which is also lost.) See [[Service Water]], [[RHR]].
+</div>
+
+## Effects of Loss / Malfunction
+
+To evaluate system safety, failures or malfunctions were assumed concurrent with a LOCA (UFSAR Table 9.3-7 and Section 15). A rupture between the reactor coolant loop and the first isolation/check valve produces an uncontrolled LOCA (analyzed in Section 15); a rupture beyond the first check or remotely operated isolation valve is limited by valve actuation, with the VCT contents being the largest source of releasable radioactive gases/fluid for a rupture outside containment. When the reactor is subcritical, neutron-source multiplication is continuously monitored by BF3 counters and count-rate indicators so that even the maximum physical boron-dilution rate is slow enough to allow corrective action. (UFSAR §9.3.4.3.5)
+
+### Loss of Charging
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q30</div>
+Loss of all charging (all 3 charging pump breakers open): <span class="hi-exam">letdown orifice isolation valves automatically shut, so letdown flow is zero</span> and the charging pumps use no VCT capacity. <span class="hi-exam">Seal return continues to the VCT, so VCT level RISES</span> (not lowers). With seal injection lost, <span class="hi-exam">flow from the RCS past the Thermal Barrier heat exchanger maintains RCP seal temperature</span>, allowing time to restore charging. <span class="hi-trap">Traps: per AB.RCP-0001, a reactor trip is directed only if BOTH seal injection AND Thermal Barrier flow are lost, not just one. TS 3.0.3 applies when no charging pumps are available, but the procedure allows time to attempt restoration.</span>
+</div>
+
+### VCT Level, Makeup & PZR Level Interface
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q31</div>
+With rising VCT level and pressure (CVCS makeup failure, MFC in manual): the higher VCT pressure increases charging-pump NPSH and discharge pressure, so <span class="hi-exam">charging flow RISES</span> while <span class="hi-exam">letdown flow LOWERS</span> (increased VCT backpressure). VCT divert/vent setpoints: <span class="hi-exam">1CV35 (VCT 3-WAY INLET valve) trips to full divert to the CVCS HUT at 87% rising level</span>; the <span class="hi-exam"><span class="val-alarm">VCT high-pressure alarm is 50 psig</span></span> (at which point the VCT vent 1CV243 would open). See [[S1.OP-AR.ZZ-0012 — Control Console CC2]].
 </div>
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q28</div>
-Spurious Phase A Containment Isolation at 100% power with 1CV5 (75 GPM ORIFICE) in service: <span class="hi-exam">1CV284 & 1CV116 (RCP Seal Water Return Horizontal Stop Valves) close on Phase A</span>, blocking the normal seal return path to the VCT. Seal return flow is redirected to the <span class="hi-exam">PRT via Relief Valve 1CV15</span>. Letdown is isolated by closing <span class="hi-exam">1CV5 and 1CV7</span> (Phase A isolation valves). <span class="hi-trap">Trap: 1CV2 and 1CV277 (Letdown Line Isolation Valves) close on LOW PZR LEVEL — NOT on Phase A. Do not confuse CV2/CV277 interlocks with the letdown orifice (CV5) and HX inlet (CV7) Phase A isolation.</span>
+<div class="callout-label">Exam — 2012 Q69</div>
+<span class="hi-exam">2CV35 is the VCT 3 Way Inlet Valve</span> (directs charging-pump-suction makeup between the VCT and the HUT/Flow to HUT path). <span class="hi-trap">Excess Letdown does NOT flow through 2CV35 — so an unexpected 2CV35 swap with Excess Letdown in service does not affect RCS letdown, and AB.CVC-0001 does not apply.</span> The proper response to the unexpected swap (briefed as not going to occur) is to stop work per OOPS / HU-AA-101.
 </div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q21</div>
+During an EOP-LOCA-2 post-LOCA depressurization with the SI pumps stopped, normal <span class="hi-exam">charging is the only RCS makeup source</span> and provides only <span class="hi-exam">minimal makeup</span>. Because of this limited makeup, the depressurization strategy is to minimize RCS subcooling to reduce break flow. See [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q38</div>
+On a controlling PZR level channel failing low: an <span class="hi-exam">automatic letdown isolation occurs</span> and charging continues to raise PZR level. Either a level alarm or a control channel failing low <span class="hi-exam">deenergizes all PZR heaters</span>, and the PZR low-level cutoff (17%) keeps backup heaters OFF. See [[Pressurizer Level & Press Control]], [[AB.CVC-0001 — Loss of Charging]].
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q40</div>
+If the Charging Master Flow Controller is returned to auto before restoring PZR level (after a level-channel-failed-low transient), charging flow is forced LOW; <span class="hi-exam">below ~60 gpm the regenerative HX cannot adequately cool letdown, causing letdown-line flashing</span>. The 2CC71 LTDWN HX CC CONT VALVE (normally ~10% open) has ample margin to open and would not reach Mixed Bed Demin isolation temperatures. See [[Pressurizer Level & Press Control]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-g</div>
+On a total loss of Component Cooling Water (which also removes cooling from the CVCS Letdown Heat Exchanger), the "Stopping Reactor Coolant Pumps" attachment directs isolating letdown and swapping charging suction to the RWST: <span class="hi-exam">CLOSE 2CV2 AND 2CV277 to isolate letdown, OPEN 2SJ1 AND 2SJ2 to swap charging pump suction to the RWST, and CLOSE 2CV40 AND 2CV41 to isolate the VCT</span>. See [[CCW]].
+</div>
+
+<div class="callout callout-scenario">
+<div class="callout-label">Scenario — 2015 #2</div>
+Inadvertent SI termination per EOP-TRIP-3: <span class="hi-exam">CT#1 — stop all but 21 or 22 charging pump within 23 minutes of SI initiation</span>; align charging suction to RWST, ensure 2CV139/2CV140 mini-flow open, shut BIT isolation valves 2SJ4/2SJ5/2SJ12/2SJ13, shut 2CV55, open 2CV68/2CV69, adjust 2CV55 to maintain PZR level &gt; 25%. With RCS pressure &gt; 1540 psig stable, <span class="hi-exam">CT#2 — re-establish normal letdown within 45 minutes of the inadvertent SI</span> (raise charging flow ≥ 87 gpm, place one letdown orifice in service at 300 psig, 2CV18 in auto, CVCS auto makeup in Auto). Both CTs are time-critical. See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]].
+</div>
+
+## Control-Room Operation
+
+The charging-suction makeup valve, primary water flow control valve, boric acid flow control valve, and makeup mode selector are all operated from the control room; the operator preselects makeup composition and rate and depresses the mode-selector start pushbutton. Charging flow is controlled via CV55 (centrifugal pumps) or the PD pump speed controller; during Control Room Evacuation, charging and PZR level are controlled locally at Panel 216. (UFSAR §9.3.4.2.4; existing exam/JPM callouts)
+
+### Manual Makeup Operations
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2015 Sim-b</div>
+A VCT level transmitter failing high (<span class="hi-exam">2LT-112 fails high</span>) automatically shifts the <span class="hi-exam">2CV35 VCT 3-way inlet valve to FLOW TO HUT</span>, diverting letdown to the Holdup Tank even though actual VCT level is not high. AB.CVC-0001 step 3.64 directs <span class="hi-exam">taking manual control of 2CV35 and positioning it back to the VCT</span>. Manual makeup (S2.OP-SO.CVC-0006 Section 5.2): STOP makeup mode, place 2CV179 (PW) and 2CV172 (BA) in manual/closed, open a makeup flowpath (2CV185 charging-pump-suction preferred, or 2CV181), start a Primary Water Pump and a Boric Acid Pump (FAST), then adjust boric-acid flow to the setpoint and PW flow to <span class="hi-exam">62 gpm +/- 2</span>. See [[AB.CVC-0001 — Loss of Charging]], [[S2.OP-SO.CVC-0006 — Boron Concentration Control]].
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 Sim-b</div>
+Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): entered AB.CVC-0001 due to 2LT112 failing high. With 900 ppm RCS boron and 6700 ppm BAST concentration, determine boric acid flow setpoint using <span class="hi-exam">Figure 100A</span> from S2.RE-RA.ZZ-0012 for 62 gpm PW flow — setpoint is <span class="hi-exam">~9.6 gpm (9-11 gpm acceptable)</span>. <span class="hi-trap">Figure 100C is WRONG (9000 ppm boron). Figure 105 (temperature correction) is N/A at 100% power.</span> Place 2CV179 and 2CV172 in MANUAL/CLOSE — note 2CV179 will initially go full open when placed in MANUAL. Align blender outlet via <span class="hi-exam">2CV185 (preferred — charging pump suction)</span>. Start PW pump MANUAL, BA pump MANUAL/FAST. Adjust flows on FI110A and FI111A. When VCT at 53%, secure all and return BA pump to SLOW speed.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 Sim-b</div>
+Manual makeup to VCT (S2.OP-SO.CVC-0006 Section 5.2): with 900 ppm RCS boron and 6700 ppm BAST concentration, determine boric acid flow setpoint using <span class="hi-exam">Figure 100A</span> from S2.RE-RA.ZZ-0012 for 62 gpm PW flow — setpoint is <span class="hi-exam">~9.6 gpm (9-11 gpm acceptable)</span>. Place 2CV179 and 2CV172 in MANUAL/CLOSE, align blender outlet via <span class="hi-exam">2CV185 (preferred — to charging pump suction)</span> or 2CV181. Start PW pump in MANUAL, BA pump in MANUAL/FAST. Adjust BA flow on FI110A, PW flow on FI111A to 62 gpm. When VCT at 53%, secure makeup.
+</div>
+
+### Local Charging & Seal-Injection Control (Control Room Evacuation)
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2020 Q86</div>
+Seal injection control during CR evacuation (AB.CR-0001): <span class="hi-exam">CV-71 is isolated (by closing CV-70) and CV-73 (seal injection pressure control bypass valve) is opened and manually adjusted</span>. Charging flow is then controlled locally at <span class="hi-exam">CV-55 local controller in Panel 216</span> using a centrifugal charging pump. <span class="hi-trap">23 Charging Pump (PD pump) is tripped by the procedure once a centrifugal pump is verified running — do NOT use the 23 Charging Pump scoop tube for flow control during CR evacuation.</span>
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2022 IP-j</div>
+During Unit 1 Control Room Evacuation (AB.CR-0001 Att. 5), after locally opening all four reactor trip/bypass breakers: open <span class="hi-exam">1AX1AX7X (#13 Charging Pump breaker)</span> to stop uncontrolled charging, and open <span class="hi-exam">1CY2AX4I (1CV175 Rapid Borate Stop Valve breaker)</span> to de-energize the valve and stop potential uncontrolled boration.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2018 IP-j</div>
+Control Room Evacuation local charging flow control: at <span class="hi-exam">Panel 216-1 (Unit 1 Chg Pmps FL & PR Inst Pnl)</span> in 84 ft El. Aux Bldg Charging Valve Alley. Available indications: <span class="hi-exam">1CV55 AUTO/MANUAL Selector Switch</span>, 1CV55 Manual HAND/AIR Regulator Control, <span class="hi-exam">1FI-128A (Charging Pump Flow Indication)</span>, 1PI-142B (11/12 Charging Pump Pressure), 1LT-114 (VCT Level). Typical charging flow ~87-89 gpm. <span class="hi-exam">1CV55 is fail-open (air-to-close)</span>: lower air pressure (counterclockwise on hand sender) = OPEN valve = RAISE flow. Raising air pressure (clockwise) = CLOSE valve = LOWER flow.
+</div>
+
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2020 IP-i</div>
+Control Room Evacuation local charging flow control (AB.CR-0001 Attachment 5 Step 8.0): at <span class="hi-exam">Panel 216-1 (Chg Pmps FL & PR Inst Pnl)</span> in Unit 2 RCA, place <span class="hi-exam">E/P Bypass Line Selector Valve in MAN</span>, read <span class="hi-exam">2FI-128A</span>, then use the <span class="hi-exam">MANUAL hand air operator</span> to adjust 2CV55 charging flow to 70 gpm. <span class="hi-trap">2CV55 is air-to-close (fails open on loss of air) — clockwise on the hand air operator raises air pressure and LOWERS flow.</span>
+</div>
+
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2015 Q81</div>
+During a toxic-gas control room evacuation, <span class="hi-exam">PZR level is controlled locally by establishing control of the CV55 CHARGING FLOW CONTROL VLV to maintain PZR level 22%-77%</span> (positive manual field control, not the Master Flow Controller). See [[Pressurizer Level & Press Control]], [[AB.CR-0001 — Control Room Evacuation]].
+</div>
+
+### Letdown Path Isolation & Restoration
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2022 Q30</div>
 2CV3 letdown orifice = <span class="hi-exam">45 gpm</span>. When placing second orifice in service, letdown pressure and flow rise. 2CV18 (Letdown Pressure Control Valve) must be <span class="hi-exam">manually throttled OPEN</span> to maintain letdown pressure at target ~<span class="val-normal">300 psig</span>. 2CV6 (Letdown Relief Valve) setpoint = <span class="val-trip">600 psig</span>. 2CC71 (Letdown HX Temp Control Valve) auto-modulates OPEN to increase CCW flow through the letdown HX as temperature rises.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q54</div>
-Letdown orifice isolation valves (CV3, CV4, CV5) close on: <span class="hi-exam">Phase A signal, CV2 or CV277 closing, PZR level <17%, trip all charging pumps, or manual Phase A actuation from the safeguards bezel</span>. CV4 receives a closure signal <span class="hi-exam">directly from Phase A</span> (not directly from SI). SI actuates Phase A, which then closes CV4. <span class="hi-trap">CV2 and CV277 (letdown isolation valves) close on PZR low level <17% — NOT directly on SI or Phase A. Do not confuse CV2/CV277 interlocks with the letdown orifice valve (CV4) Phase A closure signal.</span>
 </div>
 
 <div class="callout callout-exam">
@@ -302,132 +489,9 @@ Per AB.RC-0002 during high RCS activity: Step 3.14 requires a <span class="hi-ex
 During high RCS activity (below TS limits), per AB.RC-0002: <span class="hi-exam">maximize letdown flow to accelerate RCS cleanup through the demineralizers</span>. Do NOT reduce letdown — increasing letdown is the correct response to accelerate cleanup.
 </div>
 
-### Normal Charging Flow Control & Master Flow Controller
+### Rapid Boration & Emergency Boration
 
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q30</div>
-Loss of all charging (all 3 charging pump breakers open): <span class="hi-exam">letdown orifice isolation valves automatically shut, so letdown flow is zero</span> and the charging pumps use no VCT capacity. <span class="hi-exam">Seal return continues to the VCT, so VCT level RISES</span> (not lowers). With seal injection lost, <span class="hi-exam">flow from the RCS past the Thermal Barrier heat exchanger maintains RCP seal temperature</span>, allowing time to restore charging. <span class="hi-trap">Traps: per AB.RCP-0001, a reactor trip is directed only if BOTH seal injection AND Thermal Barrier flow are lost, not just one. TS 3.0.3 applies when no charging pumps are available, but the procedure allows time to attempt restoration.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q40</div>
-SEAL WATER FLOW LO on ALL 4 RCPs traced to the Charging System <span class="hi-exam">Master Flow Controller demand failing to 20%</span>. Normal MFC demand is ~40%, so 20% gives ~1/2 of normal charging flow; <span class="hi-exam">normal charging flow is ~<span class="val-normal">90 gpm</span></span>. The Master Flow Controller controls the PDP charging pump speed (and hence its flow) when the PD pump is in service, and controls charging FCV <span class="hi-exam">CV-55</span> when a centrifugal pump is in service. <span class="hi-trap">2CV71 (CHG HDR PCV) failing shut would direct full flow to the seals (seal flow rises, not lo); a PZR level program failing high keeps charging ~constant; 2CV115 (Seal Return Relief) lifting would tend to raise seal injection flow — none lower seal water flow to all 4 RCPs.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2016 Q30</div>
-VCT pressure / NPSH effect on charging flow: with the Charging System Master Flow Controller in MANUAL, raising VCT pressure (e.g., from 25 to 35 psig due to H2 pressure regulator malfunction) <span class="hi-exam">raises NPSH available to the charging pumps → charging flow rises</span>. Static suction pressure for a centrifugal pump is increased by any of: <span class="hi-exam">rise in surge tank level, rise in pressure above the liquid in the surge tank, rise in booster pump output, or opening of the pump suction valve</span>. <span class="hi-trap">Letdown flow is unchanged — the letdown pressure control valve responds in automatic and holds letdown flow constant. With MFC in AUTO instead, charging flow would not change because the controller would close 2CV55 to maintain demand.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2019 Q50</div>
-PZR Safety Valve seat leakage (vapor space LOCA): actual PZR level lowers below program level → <span class="hi-exam">master flow controller automatically raises charging flow</span> to compensate. <span class="hi-trap">Trap: PZR Safety Valves are on top of the PZR — steam leaking out reduces steam space volume, which lowers level. Candidates may incorrectly think level rises because the leak is "at the top."</span> As RCS pressure lowers, the <span class="hi-exam">OT&Delta;T trip setpoint automatically lowers (pressure-dependent variable setpoint)</span>, causing the first automatic reactor trip before reaching the fixed low PZR pressure trip at <span class="val-trip">1865 psig</span>.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2022 Q6</div>
-23 Charging Pump speed controller has a low speed stop maintaining <span class="hi-exam">minimum charging flow of <span class="val-normal">47 gpm</span> for RCP seal injection</span>. When MFC demand lowers, charging flow stops at 47 gpm (not zero). Per AB.CVC-0001 step 3.109, if MFC malfunction with 23 Charging Pump in service, <span class="hi-exam">take manual control of 23 Charging Pump Speed Controller</span>. <span class="hi-trap">Not 2CV55 — 2CV55 only controls flow with centrifugal charging pumps, not the positive displacement 23 Charging Pump.</span>
-</div>
-
-### RCP Seal Injection & Seal-Water Flow
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q30</div>
-RCP seal bypass valve (1CV114) prerequisites include <span class="hi-exam">RCP seal leakoff flow &lt;1 gpm, SEAL LEAKOFF valves (11-14CV104) open, and seal water flow at least 6 gpm to each RCP</span> (S1.OP-SO.RC-0001 step 5.2.1).
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2018 Q52</div>
-Charging line leak diagnosis: <span class="hi-exam">seal injection flow lowering + PZR level lowering + 2R41 (Plant Radiation Monitor) rising + letdown line flashing</span> = charging line leak (not letdown line). The key discriminator is <span class="hi-exam">seal injection flow lowering</span> — a charging line leak upstream of the seal injection takeoff reduces seal injection flow. A letdown line leak does not affect seal injection flow. <span class="hi-exam">A charging line leak IS an entry condition for AB.CVC-0001.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q86</div>
-Seal injection control during CR evacuation (AB.CR-0001): <span class="hi-exam">CV-71 is isolated (by closing CV-70) and CV-73 (seal injection pressure control bypass valve) is opened and manually adjusted</span>. Charging flow is then controlled locally at <span class="hi-exam">CV-55 local controller in Panel 216</span> using a centrifugal charging pump. <span class="hi-trap">23 Charging Pump (PD pump) is tripped by the procedure once a centrifugal pump is verified running — do NOT use the 23 Charging Pump scoop tube for flow control during CR evacuation.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2023 Q3</div>
-CV71 acts as a backpressure control valve affecting both charging and seal injection flows. <span class="hi-exam">Throttling CV71 CLOSED raises backpressure → seal injection flow RISES and charging flow LOWERS. Throttling CV71 OPEN lowers backpressure → seal injection flow LOWERS and charging flow RISES.</span> This relationship is critical during RCS leak response when adjusting charging to stabilize PZR level.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 IP-j</div>
-RCP seal cooling local isolation during a station blackout (EOP-LOPA-1 Step 27): the seal-water injection filter valves <span class="hi-exam">CV83, CV89 (SEAL WATER FILTER INLET) and CV95 (SEAL WATER FILTER BYPASS)</span> are in the 84 ft Aux Bldg Seal Water Injection Filter Valve Room (handwheel CW to close). <span class="hi-exam">CV116 (SEAL WATER TO VCT)</span> and the thermal-barrier valve CC131 are in the 78 ft Mech Pen Area SG B/D HX roped-off area; CV116 is motor-operated and requires depressing/holding the declutch lever before turning the handwheel CW.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2018 IP-j</div>
-Control Room Evacuation local charging flow control: at <span class="hi-exam">Panel 216-1 (Unit 1 Chg Pmps FL & PR Inst Pnl)</span> in 84 ft El. Aux Bldg Charging Valve Alley. Available indications: <span class="hi-exam">1CV55 AUTO/MANUAL Selector Switch</span>, 1CV55 Manual HAND/AIR Regulator Control, <span class="hi-exam">1FI-128A (Charging Pump Flow Indication)</span>, 1PI-142B (11/12 Charging Pump Pressure), 1LT-114 (VCT Level). Typical charging flow ~87-89 gpm. <span class="hi-exam">1CV55 is fail-open (air-to-close)</span>: lower air pressure (counterclockwise on hand sender) = OPEN valve = RAISE flow. Raising air pressure (clockwise) = CLOSE valve = LOWER flow.
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2020 IP-i</div>
-Control Room Evacuation local charging flow control (AB.CR-0001 Attachment 5 Step 8.0): at <span class="hi-exam">Panel 216-1 (Chg Pmps FL & PR Inst Pnl)</span> in Unit 2 RCA, place <span class="hi-exam">E/P Bypass Line Selector Valve in MAN</span>, read <span class="hi-exam">2FI-128A</span>, then use the <span class="hi-exam">MANUAL hand air operator</span> to adjust 2CV55 charging flow to 70 gpm. <span class="hi-trap">2CV55 is air-to-close (fails open on loss of air) — clockwise on the hand air operator raises air pressure and LOWERS flow.</span>
-</div>
-
-### Excess Letdown
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q37</div>
-On loss of control air the Excess Letdown HX CC isolation valves <span class="hi-exam">2CC113 (outlet) and 2CC215 (inlet) fail closed (air and power)</span>. With excess letdown in service and no cooling flow, temperature and pressure rise; <span class="hi-exam">SO.CVC-3 P&amp;L 3.3 directs maintaining excess letdown pressure &lt;150 psig to prevent lifting the seal return relief</span> — operators secure excess letdown. See [[CCW]], [[Control Air]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q5</div>
-Excess letdown flow path during SI: <span class="hi-exam">Excess Letdown Isolation Valves (2CV278, 2CV131) do NOT receive automatic closure signals</span> on SI/Phase A. <span class="hi-exam">Seal Return Isolation Valves (2CV284, 2CV116) close automatically on Phase A</span>. After SI, seal return path is blocked → excess letdown flow continues through CV278/CV131 but downstream path is closed → <span class="hi-exam">CV115 (Seal Return Relief Valve) cycles, relieving flow to the PRT (not RCDT)</span>. CV134 (3-way valve directing excess letdown to VCT or RCDT) <span class="hi-exam">fails to VCT on loss of power and air</span>. <span class="hi-trap">Trap: eventually control air bleeddown from Phase A CA-330 isolation may fail CV278/CV131 closed, but this takes considerable time — the immediate effect is continued flow relieving to PRT via CV115.</span>
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q55</div>
-Excess Letdown CCW isolation on Phase A: <span class="hi-exam">CC113 and CC215 (Excess Letdown Component Cooling Valves) receive a Phase A signal to close</span>. This is distinct from normal letdown isolation — <span class="hi-trap">CV2 and CV277 (Letdown Isolation Valves) do NOT close on Phase A; they close only on low PZR level. CV2/CV277 are NOT containment isolation valves.</span> The Phase A letdown isolation valves for normal letdown are <span class="hi-exam">CV3, CV4, CV5, and CV7</span>.
-</div>
-
-### VCT Level, Makeup & PZR Level Interface
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q31</div>
-With rising VCT level and pressure (CVCS makeup failure, MFC in manual): the higher VCT pressure increases charging-pump NPSH and discharge pressure, so <span class="hi-exam">charging flow RISES</span> while <span class="hi-exam">letdown flow LOWERS</span> (increased VCT backpressure). VCT divert/vent setpoints: <span class="hi-exam">1CV35 (VCT 3-WAY INLET valve) trips to full divert to the CVCS HUT at 87% rising level</span>; the <span class="hi-exam"><span class="val-alarm">VCT high-pressure alarm is 50 psig</span></span> (at which point the VCT vent 1CV243 would open). See [[S1.OP-AR.ZZ-0012 — Control Console CC2]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2012 Q69</div>
-<span class="hi-exam">2CV35 is the VCT 3 Way Inlet Valve</span> (directs charging-pump-suction makeup between the VCT and the HUT/Flow to HUT path). <span class="hi-trap">Excess Letdown does NOT flow through 2CV35 — so an unexpected 2CV35 swap with Excess Letdown in service does not affect RCS letdown, and AB.CVC-0001 does not apply.</span> The proper response to the unexpected swap (briefed as not going to occur) is to stop work per OOPS / HU-AA-101.
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q21</div>
-During an EOP-LOCA-2 post-LOCA depressurization with the SI pumps stopped, normal <span class="hi-exam">charging is the only RCS makeup source</span> and provides only <span class="hi-exam">minimal makeup</span>. Because of this limited makeup, the depressurization strategy is to minimize RCS subcooling to reduce break flow. See [[EOP-LOCA-2 — Post LOCA Cooldown and Depressurization]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q38</div>
-On a controlling PZR level channel failing low: an <span class="hi-exam">automatic letdown isolation occurs</span> and charging continues to raise PZR level. Either a level alarm or a control channel failing low <span class="hi-exam">deenergizes all PZR heaters</span>, and the PZR low-level cutoff (17%) keeps backup heaters OFF. See [[Pressurizer Level & Press Control]], [[AB.CVC-0001 — Loss of Charging]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q40</div>
-If the Charging Master Flow Controller is returned to auto before restoring PZR level (after a level-channel-failed-low transient), charging flow is forced LOW; <span class="hi-exam">below ~60 gpm the regenerative HX cannot adequately cool letdown, causing letdown-line flashing</span>. The 2CC71 LTDWN HX CC CONT VALVE (normally ~10% open) has ample margin to open and would not reach Mixed Bed Demin isolation temperatures. See [[Pressurizer Level & Press Control]].
-</div>
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q81</div>
-During a toxic-gas control room evacuation, <span class="hi-exam">PZR level is controlled locally by establishing control of the CV55 CHARGING FLOW CONTROL VLV to maintain PZR level 22%-77%</span> (positive manual field control, not the Master Flow Controller). See [[Pressurizer Level & Press Control]], [[AB.CR-0001 — Control Room Evacuation]].
-</div>
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2015 Sim-g</div>
-On a total loss of Component Cooling Water (which also removes cooling from the CVCS Letdown Heat Exchanger), the "Stopping Reactor Coolant Pumps" attachment directs isolating letdown and swapping charging suction to the RWST: <span class="hi-exam">CLOSE 2CV2 AND 2CV277 to isolate letdown, OPEN 2SJ1 AND 2SJ2 to swap charging pump suction to the RWST, and CLOSE 2CV40 AND 2CV41 to isolate the VCT</span>. See [[CCW]].
-</div>
-
-<div class="callout callout-scenario">
-<div class="callout-label">Scenario — 2015 #2</div>
-Inadvertent SI termination per EOP-TRIP-3: <span class="hi-exam">CT#1 — stop all but 21 or 22 charging pump within 23 minutes of SI initiation</span>; align charging suction to RWST, ensure 2CV139/2CV140 mini-flow open, shut BIT isolation valves 2SJ4/2SJ5/2SJ12/2SJ13, shut 2CV55, open 2CV68/2CV69, adjust 2CV55 to maintain PZR level &gt; 25%. With RCS pressure &gt; 1540 psig stable, <span class="hi-exam">CT#2 — re-establish normal letdown within 45 minutes of the inadvertent SI</span> (raise charging flow ≥ 87 gpm, place one letdown orifice in service at 300 psig, 2CV18 in auto, CVCS auto makeup in Auto). Both CTs are time-critical. See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]].
-</div>
-
-## Rapid Boration
-
-**Exam & operating coverage:**
+The maximum boration rate with two centrifugal charging pumps from the RWST (2000 ppm) is 9 ppm/min; with 45 gpm from a boric acid transfer pump to charging suction it is 4.8 ppm/min. For emergency boration, boric acid is supplied to the charging-pump suction by manually selecting fast/slow speed and actuating either or both transfer pumps; on VCT low-low level, charging suction automatically aligns to the RWST. (UFSAR §9.3.4.2.4; §9.3.4.2.6, Boric Acid Transfer Pumps)
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2023 Q19</div>
@@ -464,13 +528,18 @@ Locally borate during CR Evacuation (AB.CR-0001, Att. 5, Step 10): the charging-
 Determining the boration needed to reach Cold Shutdown boron concentration for a natural-circulation cooldown (EOP-TRIP-4 Step 4). With Core Burnup 5000 EFPH and RCS boron 1050 ppm: read the <span class="hi-exam">K<sub>eff</sub>=0.95 (All Rods In)</span> line of Figure 20A — 1914 ppm — then <span class="hi-exam">add 50 ppm</span> for a required CSD concentration of 1964 ppm (1950-1970 ppm band). The boration required is <span class="hi-exam">11563 gallons</span> (11370-11646 gal). <span class="hi-trap">Trap: using the K<sub>eff</sub>=0.99 line gives ~1452 ppm (wrong); omitting the +50 ppm adder gives 10876 gal (wrong); the Figure 105 temperature correction is N/A because boration is done before the cooldown with Tc still 547&deg;F.</span>
 </div>
 
-## Cross-Unit Charging
+### Shutdown Margin Calculations
 
-**Exam & operating coverage:**
+<div class="callout callout-jpm">
+<div class="callout-label">JPM — 2012 RO-A1-1</div>
+Calculate Shutdown Margin (SC.RE-ST.ZZ-0002) with Control Rod 1D5 inoperable at 75% power, Bank D at 170 steps, 100 ppm, 11890 EFPH. With a rod inoperable in Mode 1, the correct path is Attachment 3, which adjusts for the inoperable rod. The discriminating step is comparing the calculated SDM against the Mode 1/2 acceptance criterion of <span class="hi-exam">-1300 pcm</span>; the acceptable answer band is <span class="hi-exam">-2513.7 to -2645.2 pcm</span> (≈ -2597.8 pcm), so SDM is SAT.
+</div>
+
+### Radioactive Waste / ODCM
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2020 Q91</div>
-Per AB.CVC-0001 step 3.50, with <span class="hi-exam">no Unit 2 Charging Pumps available</span>: "COORDINATE with Unit 1 to place <span class="hi-exam">13 Charging Pump</span> in service using <span class="hi-exam">U/1 RWST</span>." This cross-unit alignment provides charging flow when all three Unit 2 pumps (21, 22, 23 CV Pumps) are unavailable. <span class="hi-trap">Trap: Tripping the reactor and initiating SI is NOT the directed action for total loss of charging at 8% power — AB.CVC-0001 provides the cross-unit recovery path first.</span>
+<div class="callout-label">Exam -- 2023 Q98</div>
+CVCS Monitor Tank release with 2R18 inoperable: the <span class="hi-exam">SM/CRS authorizes the liquid radioactive waste release</span> (not the Radiation Protection Manager). Per ODCM 3.3.8, with 2R18 inoperable, Action 26 requires <span class="hi-exam">at least two independent samples analyzed AND at least two technically qualified staff independently verify release rate calculations and discharge line valving</span>.
 </div>
 
 ## Tech Spec LCOs
@@ -518,29 +587,6 @@ S2.OP-ST.CVC-0010 Borated Water Sources surveillance (Att. 2) following a 21 BAT
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2012 RO-A2</div>
 Demonstrate RWST/BAST Operability via S2.OP-ST.CVC-0010 (Borated Water Sources). The discriminating actions are the BAST volume (49.5% level) and boron-concentration (<span class="hi-exam">6610 ppm</span>) determinations against <span class="hi-exam">TS 3.1.2.6.a/3.1.2.6.b and Figure 3.1-2</span>. RWST records: level CH I–III 41.4 / CH IV 41.5, temp 70°F (P-250 point T0650A), boron <span class="hi-exam">2350 ppm</span>. All Acceptance Criteria met → surveillance SAT.
-</div>
-
-## Exam & Operating Coverage
-
-### Radioactive Waste / ODCM
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam -- 2023 Q98</div>
-CVCS Monitor Tank release with 2R18 inoperable: the <span class="hi-exam">SM/CRS authorizes the liquid radioactive waste release</span> (not the Radiation Protection Manager). Per ODCM 3.3.8, with 2R18 inoperable, Action 26 requires <span class="hi-exam">at least two independent samples analyzed AND at least two technically qualified staff independently verify release rate calculations and discharge line valving</span>.
-</div>
-
-### Service Water / RHR Interface
-
-<div class="callout callout-exam">
-<div class="callout-label">Exam — 2015 Q78</div>
-On a complete loss of Service Water in Mode 5 with RHR in service, AB.SW-0005 directs going to AB.RHR; <span class="hi-exam">21 charging pump WILL be stopped — but not before letdown is isolated</span>. (23 charging pump is not placed in service because it would require CCW, which is also lost.) See [[Service Water]], [[RHR]].
-</div>
-
-### Shutdown Margin Calculations
-
-<div class="callout callout-jpm">
-<div class="callout-label">JPM — 2012 RO-A1-1</div>
-Calculate Shutdown Margin (SC.RE-ST.ZZ-0002) with Control Rod 1D5 inoperable at 75% power, Bank D at 170 steps, 100 ppm, 11890 EFPH. With a rod inoperable in Mode 1, the correct path is Attachment 3, which adjusts for the inoperable rod. The discriminating step is comparing the calculated SDM against the Mode 1/2 acceptance criterion of <span class="hi-exam">-1300 pcm</span>; the acceptable answer band is <span class="hi-exam">-2513.7 to -2645.2 pcm</span> (≈ -2597.8 pcm), so SDM is SAT.
 </div>
 
 ## Connections
