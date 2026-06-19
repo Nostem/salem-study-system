@@ -4,7 +4,9 @@ A source-traceable study system for Salem Nuclear Generating Station NRC RO/SRO 
 
 The project combines a large Markdown knowledge base, a static Astro study site, an imported written-exam quiz bank, an account-backed progress/history layer, and a graph-based study map. It is built for serious exam prep: public NRC source material, traceable question metadata, searchable articles, targeted quizzes, review history, and mobile-friendly learner flows.
 
-**Live site:** <https://nostem.github.io/salem-study-system/>
+**Live site:** <https://salem-study-system.vercel.app/>
+
+The former GitHub Pages URL redirects to Vercel for backwards-compatible old links.
 
 ## Current scope
 
@@ -451,7 +453,7 @@ fails the deploy on real data problems (e.g. a malformed `✓ <LETTER>. Correct.
 
 ## Supabase sync and Edge Functions
 
-GitHub Pages deploys the static Astro site only. Supabase migrations and Edge Function deploys are separate.
+Vercel deploys the static Astro site. Supabase migrations and Edge Function deploys are separate.
 
 Typical safe sequence:
 
@@ -459,7 +461,7 @@ Typical safe sequence:
 2. Apply migrations with `psql "$SUPABASE_DB_URL"` or `npx supabase db query --db-url "$SUPABASE_DB_URL"`.
 3. Deploy changed functions with `npx supabase functions deploy <name> --project-ref "$PROJECT_REF"`.
 4. Verify expected validation/auth responses without logging credentials.
-5. Push frontend/static changes and watch GitHub Pages.
+5. Push frontend/static changes and watch the Vercel deployment.
 
 Do not print or commit:
 
@@ -472,19 +474,30 @@ Do not print or commit:
 
 ## Deployment
 
-The production site deploys to GitHub Pages from `main`.
+The production site deploys to Vercel from `main`:
 
-The deploy workflow needs public Supabase build-time environment values:
+- production URL: <https://salem-study-system.vercel.app/>
+- Vercel project: `salem-study-system`
+- build command: `cd site && npm run build`
+- output directory: `site/dist`
 
-- `PUBLIC_SUPABASE_URL` as a GitHub repo variable,
-- `PUBLIC_SUPABASE_ANON_KEY` as a GitHub secret.
+Vercel must have these public Supabase environment variables configured for Production and Preview:
 
-After pushing to `main`, verify the GitHub Actions Pages run and then smoke-check the live pages:
+- `PUBLIC_SUPABASE_URL`
+- `PUBLIC_SUPABASE_ANON_KEY`
 
-- <https://nostem.github.io/salem-study-system/study/>
-- <https://nostem.github.io/salem-study-system/quiz/>
-- <https://nostem.github.io/salem-study-system/graph-v2/>
-- <https://nostem.github.io/salem-study-system/history/>
+`requirements-dev.txt` is installed during Vercel's install step because the Astro build regenerates quiz data with Python (`PyYAML` is required). Do not add direct database URLs to Vercel unless the app grows Vercel server-side code; the current browser app talks to Supabase through the public client and Edge Functions.
+
+GitHub Pages no longer hosts the app. Its workflow publishes only a small redirect artifact so old `https://nostem.github.io/salem-study-system/...` links continue to land on the matching Vercel path.
+
+After pushing to `main`, verify the Vercel deployment and then smoke-check the live pages:
+
+- <https://salem-study-system.vercel.app/study/>
+- <https://salem-study-system.vercel.app/quiz/>
+- <https://salem-study-system.vercel.app/graph-v2/>
+- <https://salem-study-system.vercel.app/history/>
+
+Also check at least one old GitHub Pages deep link redirects to the same path on Vercel.
 
 ## Development conventions
 
