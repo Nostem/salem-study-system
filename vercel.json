@@ -10,15 +10,31 @@
   },
   "headers": [
     {
-      "source": "/pagefind/wasm.(.+)\\.pagefind",
+      "source": "/pagefind/:path*.pagefind",
       "headers": [
-        { "key": "Content-Type", "value": "application/wasm" }
+        { "key": "Content-Type", "value": "application/wasm" },
+        { "key": "X-Pagefind-Asset", "value": "wasm" }
       ]
     },
     {
-      "source": "/pagefind/(.*)\\.(pf_meta|pf_index|pf_fragment)",
+      "source": "/pagefind/:path*.pf_meta",
       "headers": [
-        { "key": "Content-Type", "value": "application/octet-stream" }
+        { "key": "Content-Type", "value": "application/octet-stream" },
+        { "key": "X-Pagefind-Asset", "value": "meta" }
+      ]
+    },
+    {
+      "source": "/pagefind/:path*.pf_index",
+      "headers": [
+        { "key": "Content-Type", "value": "application/octet-stream" },
+        { "key": "X-Pagefind-Asset", "value": "index" }
+      ]
+    },
+    {
+      "source": "/pagefind/:path*.pf_fragment",
+      "headers": [
+        { "key": "Content-Type", "value": "application/octet-stream" },
+        { "key": "X-Pagefind-Asset", "value": "fragment" }
       ]
     }
   ]
