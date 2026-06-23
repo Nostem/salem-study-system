@@ -7,5 +7,19 @@
   "env": {
     "PUBLIC_BASE_PATH": "/",
     "PUBLIC_SITE_URL": "https://salem-study-system.vercel.app"
-  }
+  },
+  "headers": [
+    {
+      "source": "/pagefind/wasm.(.+)\\.pagefind",
+      "headers": [
+        { "key": "Content-Type", "value": "application/wasm" }
+      ]
+    },
+    {
+      "source": "/pagefind/(.*)\\.(pf_meta|pf_index|pf_fragment)",
+      "headers": [
+        { "key": "Content-Type", "value": "application/octet-stream" }
+      ]
+    }
+  ]
 }
