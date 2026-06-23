@@ -12,7 +12,8 @@
     {
       "source": "/pagefind/:path*.pagefind",
       "headers": [
-        { "key": "Content-Type", "value": "application/wasm" },
+        { "key": "Content-Type", "value": "application/octet-stream" },
+        { "key": "Cache-Control", "value": "public, max-age=3600, no-transform" },
         { "key": "X-Pagefind-Asset", "value": "wasm" }
       ]
     },
@@ -20,6 +21,7 @@
       "source": "/pagefind/:path*.pf_meta",
       "headers": [
         { "key": "Content-Type", "value": "application/octet-stream" },
+        { "key": "Cache-Control", "value": "public, max-age=3600, no-transform" },
         { "key": "X-Pagefind-Asset", "value": "meta" }
       ]
     },
@@ -27,6 +29,7 @@
       "source": "/pagefind/:path*.pf_index",
       "headers": [
         { "key": "Content-Type", "value": "application/octet-stream" },
+        { "key": "Cache-Control", "value": "public, max-age=3600, no-transform" },
         { "key": "X-Pagefind-Asset", "value": "index" }
       ]
     },
@@ -34,6 +37,7 @@
       "source": "/pagefind/:path*.pf_fragment",
       "headers": [
         { "key": "Content-Type", "value": "application/octet-stream" },
+        { "key": "Cache-Control", "value": "public, max-age=3600, no-transform" },
         { "key": "X-Pagefind-Asset", "value": "fragment" }
       ]
     }
