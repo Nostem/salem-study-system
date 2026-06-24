@@ -28,9 +28,21 @@ test('contact trigger collapses on mobile so it does not cover study content', a
 test('contact form submits feedback with current page context', async ({ page }) => {
   const submittedBodies: any[] = [];
   await page.route('**/functions/v1/contact-feedback', async (route) => {
+    if (route.request().method() === 'OPTIONS') {
+      await route.fulfill({
+        status: 204,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        },
+      });
+      return;
+    }
     submittedBodies.push(route.request().postDataJSON());
     await route.fulfill({
       status: 200,
+      headers: { 'Access-Control-Allow-Origin': '*' },
       contentType: 'application/json',
       body: JSON.stringify({ ok: true, feedbackId: '44444444-4444-4444-8444-444444444444' }),
     });

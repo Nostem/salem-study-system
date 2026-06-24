@@ -57,6 +57,7 @@ export type ContactFeedbackPayload = {
 export type ContactFeedbackResponse = {
   ok: boolean;
   feedbackId: string | null;
+  issueUrl?: string;
 };
 
 export type SubmitQuizResultsPayload = {
