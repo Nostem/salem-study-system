@@ -328,15 +328,18 @@ The frontend calls:
 supabase/functions/contact-feedback/index.ts
 ```
 
-The function validates origin, method, category, message length, optional reply email, honeypot, and rate limit metadata, then inserts with service-role access.
+The function validates origin, method, category, message length, optional reply email, honeypot, and rate limit metadata, then inserts with service-role access. After the Supabase row is stored, the same Edge Function creates a GitHub issue using the server-side `GITHUB_TOKEN`, records `metadata.github_issue`, sets `status = 'archived'`, and returns success. If GitHub is temporarily unavailable or the token is missing, the feedback row remains `status = 'new'` with `metadata.github_issue_error` so the submission is not lost.
 
-A separate script can triage feedback into GitHub issues:
+Required Edge Function secrets:
 
 ```bash
-python3 scripts/contact_feedback_to_github_issues.py
+npx supabase secrets set GITHUB_TOKEN=...
+npx supabase secrets set GITHUB_REPO=Nostem/salem-study-system
 ```
 
-Public GitHub issues should not expose submitter reply emails. They should only say whether a reply email was present.
+Public GitHub issues must not expose submitter reply emails. They should only say whether a reply email was present and include the hidden `contact_message_id:<uuid>` marker for idempotency/recovery.
+
+The old `scripts/contact_feedback_to_github_issues.py` script is retained only as a manual recovery/backfill tool. It should not run as a recurring cron while direct Edge Function issue creation is enabled.
 
 ## Build and test commands
 
@@ -455,7 +458,40 @@ fails the deploy on real data problems (e.g. a malformed `✓ <LETTER>. Correct.
 
 Vercel deploys the static Astro site. Supabase migrations and Edge Function deploys are separate.
 
-Typical safe sequence:
+### Question-bank database sync
+
+Question-bank source changes under `wiki/exams/`, `data/exams/`, and topic/import scripts are synchronized to Supabase by the GitHub Actions workflow:
+
+```text
+.github/workflows/question-bank-sync.yml
+```
+
+Workflow behavior:
+
+- Pull requests run quiz-data generation plus a Supabase sync dry-run only.
+- Pushes to `main` run the same dry-run, then apply the sync only when `scripts/check_supabase_sync_report.py --mode safe-to-apply` confirms there are no answer-key changes or manual-review blockers.
+- After applying on `main`, the workflow verifies the apply report and a second dry-run are clean.
+- Reports are uploaded as workflow artifacts, including `/tmp/salem-sync-dry-run.json` and `data/quiz-import/audit-all.json`.
+
+Required GitHub Actions secret:
+
+```text
+SUPABASE_DB_URL
+```
+
+Manual local equivalent:
+
+```bash
+python3 scripts/build_quiz_data.py
+python3 scripts/supabase_import_exam.py sync \
+  --bundle data/quiz-import/supabase-staging-all.json \
+  --out /tmp/salem-sync-dry-run.json
+python3 scripts/check_supabase_sync_report.py /tmp/salem-sync-dry-run.json --mode safe-to-apply
+```
+
+### Manual migrations and Edge Functions
+
+Typical safe sequence for schema/function changes:
 
 1. Load ignored `.env` locally without printing secrets.
 2. Apply migrations with `psql "$SUPABASE_DB_URL"` or `npx supabase db query --db-url "$SUPABASE_DB_URL"`.

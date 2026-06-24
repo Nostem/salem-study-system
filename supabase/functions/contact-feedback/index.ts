@@ -1,4 +1,5 @@
 import { bearerToken, createAdminClient, jsonResponse, readJsonBody, requestIp, requireAllowedOrigin, requirePost, sha256Hex } from '../_shared/http.ts';
+import { buildIssueBody, buildIssueTitle, buildLabels, createGitHubIssue } from './github.ts';
 
 type ContactFeedbackBody = {
   category?: string;
@@ -101,10 +102,84 @@ Deno.serve(async (req) => {
       user_agent: userAgent,
       metadata: { rate_key: rateKey },
     })
-    .select('id')
+    .select('id, created_at')
     .single();
 
   if (insertError || !inserted) return jsonResponse({ error: 'feedback_insert_failed' }, 500, req);
 
-  return jsonResponse({ ok: true, feedbackId: inserted.id }, 200, req);
+  const githubToken = Deno.env.get('GITHUB_TOKEN')?.trim();
+  const githubRepo = Deno.env.get('GITHUB_REPO')?.trim() || 'Nostem/salem-study-system';
+  const githubIssuesEnabled = !['0', 'false', 'no'].includes((Deno.env.get('GITHUB_ISSUES_ENABLED') ?? 'true').toLowerCase());
+
+  if (!githubIssuesEnabled || !githubToken) {
+    const attemptedAt = new Date().toISOString();
+    await admin
+      .from('contact_messages')
+      .update({
+        metadata: {
+          rate_key: rateKey,
+          github_issue_error: {
+            attempted_at: attemptedAt,
+            message: githubIssuesEnabled ? 'github_token_missing' : 'github_issues_disabled',
+          },
+        },
+      })
+      .eq('id', inserted.id);
+    return jsonResponse({ ok: true, feedbackId: inserted.id }, 200, req);
+  }
+
+  try {
+    const issueInput = {
+      id: inserted.id,
+      category,
+      message,
+      name,
+      email,
+      pageUrl,
+      createdAt: inserted.created_at,
+    };
+    const issue = await createGitHubIssue({
+      repo: githubRepo,
+      token: githubToken,
+      title: buildIssueTitle(issueInput),
+      body: buildIssueBody(issueInput),
+      labels: buildLabels(issueInput),
+    });
+    const archivedAt = new Date().toISOString();
+    await admin
+      .from('contact_messages')
+      .update({
+        status: 'archived',
+        reviewed_at: archivedAt,
+        metadata: {
+          rate_key: rateKey,
+          github_issue: {
+            number: issue.number,
+            url: issue.html_url,
+            created_at: issue.created_at,
+            archived_at: archivedAt,
+          },
+        },
+      })
+      .eq('id', inserted.id);
+
+    return jsonResponse({ ok: true, feedbackId: inserted.id, issueUrl: issue.html_url }, 200, req);
+  } catch (error) {
+    const attemptedAt = new Date().toISOString();
+    await admin
+      .from('contact_messages')
+      .update({
+        status: 'new',
+        metadata: {
+          rate_key: rateKey,
+          github_issue_error: {
+            attempted_at: attemptedAt,
+            message: (error instanceof Error ? error.message : String(error)).slice(0, 500),
+          },
+        },
+      })
+      .eq('id', inserted.id);
+
+    return jsonResponse({ ok: true, feedbackId: inserted.id }, 200, req);
+  }
 });
