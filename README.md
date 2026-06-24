@@ -458,7 +458,40 @@ fails the deploy on real data problems (e.g. a malformed `✓ <LETTER>. Correct.
 
 Vercel deploys the static Astro site. Supabase migrations and Edge Function deploys are separate.
 
-Typical safe sequence:
+### Question-bank database sync
+
+Question-bank source changes under `wiki/exams/`, `data/exams/`, and topic/import scripts are synchronized to Supabase by the GitHub Actions workflow:
+
+```text
+.github/workflows/question-bank-sync.yml
+```
+
+Workflow behavior:
+
+- Pull requests run quiz-data generation plus a Supabase sync dry-run only.
+- Pushes to `main` run the same dry-run, then apply the sync only when `scripts/check_supabase_sync_report.py --mode safe-to-apply` confirms there are no answer-key changes or manual-review blockers.
+- After applying on `main`, the workflow verifies the apply report and a second dry-run are clean.
+- Reports are uploaded as workflow artifacts, including `/tmp/salem-sync-dry-run.json` and `data/quiz-import/audit-all.json`.
+
+Required GitHub Actions secret:
+
+```text
+SUPABASE_DB_URL
+```
+
+Manual local equivalent:
+
+```bash
+python3 scripts/build_quiz_data.py
+python3 scripts/supabase_import_exam.py sync \
+  --bundle data/quiz-import/supabase-staging-all.json \
+  --out /tmp/salem-sync-dry-run.json
+python3 scripts/check_supabase_sync_report.py /tmp/salem-sync-dry-run.json --mode safe-to-apply
+```
+
+### Manual migrations and Edge Functions
+
+Typical safe sequence for schema/function changes:
 
 1. Load ignored `.env` locally without printing secrets.
 2. Apply migrations with `psql "$SUPABASE_DB_URL"` or `npx supabase db query --db-url "$SUPABASE_DB_URL"`.

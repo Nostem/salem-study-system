@@ -1,0 +1,116 @@
+name: Sync Question Bank to Supabase
+
+on:
+  pull_request:
+    paths:
+      - "wiki/exams/**"
+      - "data/exams/**"
+      - "data/topic-map.yaml"
+      - "scripts/build_quiz_data.py"
+      - "scripts/exam_question_import.py"
+      - "scripts/build_static_quiz_bank.py"
+      - "scripts/build_structured_quiz_bank.py"
+      - "scripts/validate_structured_quiz_bank.py"
+      - "scripts/supabase_import_exam.py"
+      - "scripts/check_supabase_sync_report.py"
+      - "supabase/migrations/**"
+      - ".github/workflows/question-bank-sync.yml"
+  push:
+    branches: [main]
+    paths:
+      - "wiki/exams/**"
+      - "data/exams/**"
+      - "data/topic-map.yaml"
+      - "scripts/build_quiz_data.py"
+      - "scripts/exam_question_import.py"
+      - "scripts/build_static_quiz_bank.py"
+      - "scripts/build_structured_quiz_bank.py"
+      - "scripts/validate_structured_quiz_bank.py"
+      - "scripts/supabase_import_exam.py"
+      - "scripts/check_supabase_sync_report.py"
+      - "supabase/migrations/**"
+      - ".github/workflows/question-bank-sync.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: question-bank-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-question-bank:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Install system dependencies
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Install Python dependencies
+        run: python3 -m pip install -r requirements-dev.txt
+
+      - name: Verify Supabase DB secret is configured
+        run: |
+          if [ -z "${SUPABASE_DB_URL}" ]; then
+            echo "SUPABASE_DB_URL GitHub secret is required for question-bank sync." >&2
+            exit 1
+          fi
+
+      - name: Generate and validate quiz data
+        run: python3 scripts/build_quiz_data.py
+
+      - name: Dry-run Supabase sync
+        run: |
+          python3 scripts/supabase_import_exam.py sync \
+            --bundle data/quiz-import/supabase-staging-all.json \
+            --psql-bin psql \
+            --out /tmp/salem-sync-dry-run.json
+
+      - name: Check dry-run is safe to apply
+        run: python3 scripts/check_supabase_sync_report.py /tmp/salem-sync-dry-run.json --mode safe-to-apply
+
+      - name: Apply Supabase sync
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          python3 scripts/supabase_import_exam.py sync \
+            --bundle data/quiz-import/supabase-staging-all.json \
+            --psql-bin psql \
+            --out /tmp/salem-sync-apply.json \
+            --apply
+
+      - name: Verify apply left no drift
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: python3 scripts/check_supabase_sync_report.py /tmp/salem-sync-apply.json --mode clean
+
+      - name: Post-apply dry-run verification
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: |
+          python3 scripts/supabase_import_exam.py sync \
+            --bundle data/quiz-import/supabase-staging-all.json \
+            --psql-bin psql \
+            --out /tmp/salem-sync-after.json
+          python3 scripts/check_supabase_sync_report.py /tmp/salem-sync-after.json --mode clean
+
+      - name: Upload sync reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: question-bank-sync-reports
+          if-no-files-found: ignore
+          path: |
+            /tmp/salem-sync-dry-run.json
+            /tmp/salem-sync-apply.json
+            /tmp/salem-sync-after.json
+            data/quiz-import/audit-all.json
