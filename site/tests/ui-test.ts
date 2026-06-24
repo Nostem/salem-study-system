@@ -130,7 +130,7 @@ test('search trigger button opens modal', async ({ page }) => {
   await expect(input).toBeFocused();
 });
 
-test('search returns results from Pagefind index', async ({ page }) => {
+test('search returns results from a cache-busted Pagefind index', async ({ page }) => {
   await page.goto(BASE + 'systems/reactor-coolant-system/');
   await page.waitForLoadState('networkidle');
 
@@ -140,6 +140,15 @@ test('search returns results from Pagefind index', async ({ page }) => {
   const firstResult = page.locator('#search-results a').first();
   await expect(firstResult).toBeVisible();
   await expect(firstResult).toContainText(/reactor coolant/i);
+
+  const pagefindResources = await page.evaluate(() =>
+    performance
+      .getEntriesByType('resource')
+      .map((entry) => entry.name)
+      .filter((name) => name.includes('/pagefind'))
+  );
+  expect(pagefindResources.some((name) => /\/pagefind-(?:current|[a-f0-9]{8})\/pagefind\.js/.test(name))).toBe(true);
+  expect(pagefindResources.some((name) => /\/pagefind-(?:current|[a-f0-9]{8})\/wasm\.en\.pagefind/.test(name))).toBe(true);
 });
 
 test('desktop and mobile sidebars use distinct IDs', async ({ page }) => {

@@ -10,7 +10,7 @@
     "predev": "npm run data",
     "dev": "astro dev",
     "build:astro": "astro build",
-    "build:search": "pagefind --site dist --glob '**/*.html'",
+    "build:search": "pagefind --site dist --glob '**/*.html' && node scripts/copy-pagefind-version.mjs",
     "prebuild": "npm run data",
     "build": "npm run build:astro && npm run build:search",
     "check": "astro sync && tsc --noEmit --project tsconfig.json",
