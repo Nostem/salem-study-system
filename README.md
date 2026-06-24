@@ -363,7 +363,13 @@ This runs Astro and Pagefind through the local npm-installed binaries:
 npm run build:astro && npm run build:search
 ```
 
-Use `npm run build:astro` when a check only needs rendered pages and does not need Pagefind search indexing.
+`build:search` runs Pagefind and then copies `dist/pagefind` to a cache-busted directory used by the search modal:
+
+- Vercel builds use `dist/pagefind-<commit-sha-prefix>/` from `VERCEL_GIT_COMMIT_SHA`.
+- Local builds use `dist/pagefind-current/`.
+- `PUBLIC_PAGEFIND_ASSET_DIR` can override the directory when needed.
+
+This prevents a browser from reusing stale/corrupted Pagefind binary assets after a Vercel deploy. Use `npm run build:astro` when a check only needs rendered pages and does not need Pagefind search indexing.
 
 ### Run Node tests
 
