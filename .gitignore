@@ -19,3 +19,4 @@ site/test-results/
 /data/quiz-import/supabase-staging-all.json
 /site/src/data/quiz-bank.json
 /site/src/data/quiz-bank-v2.json
+.vercel
