@@ -328,15 +328,18 @@ The frontend calls:
 supabase/functions/contact-feedback/index.ts
 ```
 
-The function validates origin, method, category, message length, optional reply email, honeypot, and rate limit metadata, then inserts with service-role access.
+The function validates origin, method, category, message length, optional reply email, honeypot, and rate limit metadata, then inserts with service-role access. After the Supabase row is stored, the same Edge Function creates a GitHub issue using the server-side `GITHUB_TOKEN`, records `metadata.github_issue`, sets `status = 'archived'`, and returns success. If GitHub is temporarily unavailable or the token is missing, the feedback row remains `status = 'new'` with `metadata.github_issue_error` so the submission is not lost.
 
-A separate script can triage feedback into GitHub issues:
+Required Edge Function secrets:
 
 ```bash
-python3 scripts/contact_feedback_to_github_issues.py
+npx supabase secrets set GITHUB_TOKEN=...
+npx supabase secrets set GITHUB_REPO=Nostem/salem-study-system
 ```
 
-Public GitHub issues should not expose submitter reply emails. They should only say whether a reply email was present.
+Public GitHub issues must not expose submitter reply emails. They should only say whether a reply email was present and include the hidden `contact_message_id:<uuid>` marker for idempotency/recovery.
+
+The old `scripts/contact_feedback_to_github_issues.py` script is retained only as a manual recovery/backfill tool. It should not run as a recurring cron while direct Edge Function issue creation is enabled.
 
 ## Build and test commands
 

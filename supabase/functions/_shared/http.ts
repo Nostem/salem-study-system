@@ -2,6 +2,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.105.1';
 
 const FALLBACK_ALLOWED_ORIGINS = [
   'https://nostem.github.io',
+  'https://salem-study-system.vercel.app',
   'http://localhost:4321',
   'http://127.0.0.1:4321',
 ];
