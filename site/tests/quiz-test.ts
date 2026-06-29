@@ -23,9 +23,12 @@ async function expectedFilterSummary(page: Page): Promise<string> {
     return groups;
   });
   const groups = Object.values(topicGroups).filter((slugs) => slugs.length > 0);
+  const includeDraft = await page.locator('#include-draft').isChecked();
+  const includeOutdated = await page.locator('#include-outdated').isChecked();
   const matches = quizBank.questions.filter((question: any) => {
     if (!isPracticeEligible(question)) return false;
-    if (question.status === 'outdated') return false; // page default: includeOutdated = false
+    if (!includeDraft && question.status === 'draft') return false;
+    if (!includeOutdated && question.status === 'outdated') return false;
     if (groups.length === 0) return true;
     const questionTopicSlugs = new Set(question.topics.map((t: any) => t.slug));
     return groups.every((slugs) => slugs.some((slug) => questionTopicSlugs.has(slug)));
@@ -149,12 +152,12 @@ test('two-part fill-in markers are highlighted in stems and answer choices', asy
 
 test('quiz stem preserves imported table cell boundaries', async ({ page }) => {
   await authenticateQuizUser(page);
-  // Seed 72 puts draft 2018 Q61 first under the default quiz filters.
+  // Seed 72 puts draft 2018 Q61 first when draft imported questions are included.
   await page.goto('quiz/?seed=72');
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await expect(page.getByLabel('Include draft imported questions')).toBeChecked();
+  await page.getByLabel('Include draft imported questions').check();
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.getByTestId('question-meta')).toContainText('2018 Q61');
@@ -171,7 +174,7 @@ test('quiz stem renders source images needed to answer image-based questions', a
 
   await page.getByLabel('Exam year').selectOption('2023');
   await page.getByLabel('Question count').fill('1');
-  await expect(page.getByLabel('Include draft imported questions')).toBeChecked();
+  await page.getByLabel('Include draft imported questions').check();
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.getByTestId('question-meta')).toContainText('2023 Q23');
@@ -183,12 +186,12 @@ test('quiz stem renders source images needed to answer image-based questions', a
 
 test('quiz stem preserves blank cells in imported tables', async ({ page }) => {
   await authenticateQuizUser(page);
-  // Seed 6 puts draft 2018 Q10 first under the default quiz filters.
+  // Seed 6 puts draft 2018 Q10 first when draft imported questions are included.
   await page.goto('quiz/?seed=6');
 
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
-  await expect(page.getByLabel('Include draft imported questions')).toBeChecked();
+  await page.getByLabel('Include draft imported questions').check();
   await page.getByRole('button', { name: /Start quiz/i }).click();
 
   await expect(page.getByTestId('question-meta')).toContainText('2018 Q10');
@@ -337,6 +340,36 @@ test('completed quiz review submits results for persistent progress tracking', a
   expect(submittedBodies[0].questions).toHaveLength(2);
   expect(submittedBodies[0].questions[0]).toMatchObject({ position: 1, selectedLabel: 'A' });
   expect(submittedBodies[0].questions[1]).toMatchObject({ position: 2, selectedLabel: 'B' });
+});
+
+test('default saved quiz pool excludes draft questions that the backend rejects', async ({ page }) => {
+  await authenticateQuizUser(page);
+  const submittedBodies: any[] = [];
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    submittedBodies.push(route.request().postDataJSON());
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, quizSessionId: '44444444-4444-4444-8444-444444444444', attemptsInserted: 1 }),
+    });
+  });
+
+  // Seed 1 previously selected a draft imported question first because the
+  // draft checkbox was checked by default. That produced an Edge Function 400
+  // (`unknown_question_slug`) and surfaced as "Could not reach the server".
+  await page.goto('quiz/?seed=1');
+  await expect(page.getByLabel('Include draft imported questions')).not.toBeChecked();
+  await page.getByLabel('Question count').fill('1');
+  await page.locator('#quiz-mode').selectOption('blind');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await page.getByRole('button', { name: /^A\./ }).click();
+  await page.getByRole('button', { name: /Review results/i }).click();
+
+  await expect(page.getByTestId('progress-save-status')).toContainText(/Progress saved/i);
+  expect(submittedBodies).toHaveLength(1);
+  const submittedQuestion = quizBank.questions.find((question: any) => question.slug === submittedBodies[0].questions[0].slug);
+  expect(submittedQuestion?.status).toBe('active');
+  expect(submittedQuestion?.quizEligible).toBe(true);
 });
 
 test('unfinished blind quiz can be resumed after reload with answers and position restored', async ({ page }) => {

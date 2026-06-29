@@ -175,7 +175,7 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
         <div class="space-y-2 mb-4">
           <label class="quiz-check"><input id="include-reference" type="checkbox" checked /> Include reference-required</label>
           <label class="quiz-check"><input id="include-edited" type="checkbox" checked /> Include edited questions</label>
-          <label class="quiz-check"><input id="include-draft" type="checkbox" checked /> Include draft imported questions</label>
+          <label class="quiz-check"><input id="include-draft" type="checkbox" /> Include draft imported questions</label>
           <label class="quiz-check"><input id="include-outdated" type="checkbox" /> Include outdated questions</label>
         </div>
 
@@ -660,6 +660,11 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
           setSaveStatus(
             'Your login session expired before this attempt could be saved. Your answers are still on this device — log back in and click Retry save to keep them.',
             'error'
+          );
+        } else if (error instanceof EdgeFunctionError && error.code === 'unknown_question_slug') {
+          setSaveStatus(
+            'This quiz included a draft, outdated, or otherwise unsaved question that is not eligible for saved progress yet. Your answers are still on this device — rebuild the quiz without draft/outdated questions to save progress.',
+            'warn'
           );
         } else {
           setSaveStatus(

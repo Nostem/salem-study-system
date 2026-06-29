@@ -51,7 +51,7 @@ It supports:
 - basic system/admin topic selectors,
 - advanced topic filters for Tech Specs, EOPs, abnormal procedures, operating/admin/alarm procedures, and targeted pools,
 - reference-required include/exclude behavior,
-- draft/outdated/edited question inclusion controls,
+- edited question inclusion controls, plus opt-in draft/outdated controls for review-only practice,
 - feedback mode with immediate right/wrong explanation,
 - blind mode with final scoring and review,
 - local unfinished-quiz resume in browser `localStorage`,
@@ -85,11 +85,11 @@ site/src/data/quiz-bank.json
 
 A question is eligible if:
 
-- `quizEligible` is true, or it is a safe fallback item with choices and accepted answers,
+- `quizEligible` is true for the normal saved-progress pool,
 - it is not redacted/security-excluded,
 - it matches the selected exam year if one is selected,
 - it matches selected topics; multiple selections within the same filter group are ORed, while selections across different groups are ANDed,
-- it passes the reference/draft/outdated/edited switches.
+- it passes the reference/draft/outdated/edited switches. Draft imported and outdated questions are excluded by default so normal quizzes use the same backend-eligible pool that can be saved to learner progress.
 
 Example: selecting the CVCS filter first narrows the pool to questions tagged with the CVCS topic slugs.
 
