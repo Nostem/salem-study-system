@@ -1,7 +1,7 @@
 ---
 title: "2015 Q1 — Rod Control Response to 2-PT-505 Turbine Pressure Transmitter Failure"
 category: exams
-status: draft
+status: outdated
 reference: no
 aliases:
   - 2015 Q1

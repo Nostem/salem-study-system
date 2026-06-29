@@ -1,7 +1,7 @@
 ---
 title: "2015 Q24 — Mitigation Strategy When Recirculation Capability Is Restored in EOP-LOCA-5"
 category: exams
-status: draft
+status: edited
 reference: no
 aliases:
   - 2015 Q24
@@ -36,7 +36,7 @@ Based on current plant conditions, which of the following describes the mitigati
 <details>
 <summary style="cursor:pointer;color:#60a5fa;font-size:12px;font-weight:600;padding:8px 0;">▶ Show Answer & Explanation</summary>
 <div style="margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;">
-<div style="padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;"><strong style="color:#22c55e;">✓ B. Correct.</strong> <em>(55.41.b(10))</em> B is correct because Continuous action step states that if any train of emergency recirculation capability is restored then the crew should return to the procedure and step in effect. This is consistent with the organization of the EOPs.</div>
+<div style="padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;"><strong style="color:#22c55e;">✓ B. Correct.</strong> <em>(55.41.b(10))</em> B is correct because Caution C1-1 states that if any train of emergency recirculation capability is restored then the crew should return to the procedure and step in effect. This is consistent with the organization of the EOPs.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ C.</strong> C is incorrect because Continuous action Step 6.1 directs return to evaluate train status and a return to the procedure in effect;</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ A.</strong> A is incorrect because continuation of the cooldown in LOCA-5 is not required. The purpose of the procedure is mitigation and recovery of recirculation capability.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ D.</strong> D is incorrect because a transfer to LOCA-3 is not initiated until RWST level is evaluated in LOCA-1. This question is not considered SRO level based on only requiring general mitigative actions.</div>

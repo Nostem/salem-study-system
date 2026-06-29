@@ -19,7 +19,7 @@ aliases:
 <strong>Given:</strong><br>
 Given the following conditions:<br>
 &bull; Unit 2 is conducting a rapid plant shutdown due to a loss of condenser vacuum.<br>
-&bull; Two IRPIs in control bank D go dark, and their P-250 readings are 0 steps.<br>
+&bull; Two IRPIs in control bank D go dark, and their plant computer readings are 0 steps.<br>
 &bull; Maintenance Controls Dept. will be unable to repair the IRPIs until after shutdown.<br>
 &bull; Rx Engineering has made no specific recommendations outside of procedural direction regarding boration.<br><br>
 Which action is required when the plant is placed in Hot Standby?

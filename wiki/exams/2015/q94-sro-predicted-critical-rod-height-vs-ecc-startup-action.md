@@ -2,7 +2,7 @@
 title: "2015 Q94 — Action Required for a Predicted Critical Rod Height vs ECC During a Startup (SRO)"
 category: exams
 status: draft
-reference: no
+reference: yes
 aliases:
   - 2015 Q94
   - 2015-Q94

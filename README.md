@@ -18,8 +18,8 @@ The repository contains public/non-proprietary study material only. It does not 
 | Systems | 54 system articles |
 | Tech Specs | 19 Tech Spec articles plus public PDF references |
 | Exam/wiki question pages | ~1,135 exam-related Markdown pages (written questions, JPMs, scenarios) |
-| Static quiz bank | 898 imported written exam questions (562 quiz-eligible) |
-| Quiz years | 2016, 2018, 2019, 2020, 2022, 2023 (quiz-eligible); 2012, 2014, 2015 imported as drafts pending review |
+| Static quiz bank | 898 imported written exam questions (564 quiz-eligible) |
+| Quiz years | 2016, 2018, 2019, 2020, 2022, 2023 (quiz-eligible); 2012, 2014, 2015 imported as drafts pending review (2015 has 2 reviewed/edited questions now quiz-eligible) |
 | Quiz topics | 295 normalized topic records, including connection-derived EOP/abnormal/procedure/admin filters |
 | EOP/abnormal/procedure/admin articles | EOPs, abnormal procedures, normal procedures, surveillance/alarm/admin topics |
 

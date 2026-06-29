@@ -2,7 +2,7 @@
 title: "2015 Q92 — 2A EDG Status and Hot Restart Surveillance Timing With a Missed Periodicity (SRO)"
 category: exams
 status: draft
-reference: no
+reference: yes
 aliases:
   - 2015 Q92
   - 2015-Q92
