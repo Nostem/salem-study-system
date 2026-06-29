@@ -21,6 +21,21 @@ type SubmitQuizBody = {
   questions?: SubmittedQuestion[];
 };
 
+type QuestionRow = {
+  id: string;
+  slug: string;
+  status: string;
+  quiz_eligible: boolean;
+  is_redacted: boolean;
+};
+
+type ChoiceRow = {
+  id: string;
+  question_id: string;
+  label: string;
+  is_correct: boolean;
+};
+
 function normalizeFeedbackMode(value: unknown): 'immediate' | 'blind' {
   return value === 'blind' ? 'blind' : 'immediate';
 }
@@ -31,6 +46,8 @@ function normalizeCompletionMode(value: unknown): 'completed' | 'early' {
 
 const QUIZ_TYPES = ['classic', 'custom', 'topic', 'graph', 'review', 'missed', 'weak_area', 'exam_sim', 'global_hard'] as const;
 type QuizType = typeof QUIZ_TYPES[number];
+
+const QUIZ_SUBMITTABLE_STATUSES = ['active', 'draft', 'outdated'] as const;
 
 function normalizeQuizType(value: unknown): QuizType | null {
   return typeof value === 'string' && (QUIZ_TYPES as readonly string[]).includes(value) ? value as QuizType : null;
@@ -107,31 +124,48 @@ Deno.serve(async (req) => {
   const slugs = [...new Set(submittedQuestions.map((question) => question.slug))];
   const { data: questionRows, error: questionsError } = await admin
     .from('questions')
-    .select('id, slug')
+    .select('id, slug, status, quiz_eligible, is_redacted')
     .in('slug', slugs)
-    .eq('status', 'active')
-    .eq('quiz_eligible', true)
+    .in('status', [...QUIZ_SUBMITTABLE_STATUSES])
     .eq('is_redacted', false);
   if (questionsError) return jsonResponse({ error: 'question_lookup_failed' }, 500, req);
 
-  const questionBySlug = new Map((questionRows ?? []).map((question) => [question.slug, question]));
+  const submitCandidateQuestions = (questionRows ?? []) as QuestionRow[];
+  const questionBySlug = new Map(submitCandidateQuestions.map((question) => [question.slug, question]));
   const missingSlugs = slugs.filter((slug) => !questionBySlug.has(slug));
   if (missingSlugs.length > 0) return jsonResponse({ error: 'unknown_question_slug', count: missingSlugs.length }, 400, req);
 
-  const questionIds = submittedQuestions.map((question) => questionBySlug.get(question.slug)!.id);
+  const questionIds = slugs.map((slug) => questionBySlug.get(slug)!.id);
   const { data: choiceRows, error: choicesError } = await admin
     .from('choices')
     .select('id, question_id, label, is_correct')
     .in('question_id', questionIds);
   if (choicesError) return jsonResponse({ error: 'choice_lookup_failed' }, 500, req);
 
+  const candidateChoices = (choiceRows ?? []) as ChoiceRow[];
+
   const choiceByQuestionAndLabel = new Map<string, { id: string; is_correct: boolean }>();
-  for (const choice of choiceRows ?? []) {
+  for (const choice of candidateChoices) {
     choiceByQuestionAndLabel.set(`${choice.question_id}:${String(choice.label).toUpperCase()}`, {
       id: choice.id,
       is_correct: Boolean(choice.is_correct),
     });
   }
+
+  const choiceStatsByQuestion = new Map<string, { choices: number; correct: number }>();
+  for (const choice of candidateChoices) {
+    const stats = choiceStatsByQuestion.get(choice.question_id) ?? { choices: 0, correct: 0 };
+    stats.choices += 1;
+    if (choice.is_correct) stats.correct += 1;
+    choiceStatsByQuestion.set(choice.question_id, stats);
+  }
+
+  const ineligibleQuestionCount = submitCandidateQuestions.filter((question) => {
+    if (question.quiz_eligible) return false;
+    const stats = choiceStatsByQuestion.get(question.id) ?? { choices: 0, correct: 0 };
+    return stats.choices < 2 || stats.correct < 1;
+  }).length;
+  if (ineligibleQuestionCount > 0) return jsonResponse({ error: 'ineligible_question_slug', count: ineligibleQuestionCount }, 400, req);
 
   const feedbackMode = normalizeFeedbackMode(body.feedbackMode);
   const completionMode = normalizeCompletionMode(body.completionMode);

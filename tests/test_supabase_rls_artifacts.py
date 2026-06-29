@@ -77,8 +77,11 @@ class SupabaseRlsArtifactTests(unittest.TestCase):
             self.assertIn(quiz_type, function_source)
             self.assertIn(quiz_type, client_source)
         self.assertIn("invalid_quiz_type", function_source)
-        self.assertRegex(function_source, r"\.eq\('status',\s*'active'\)")
-        self.assertRegex(function_source, r"\.eq\('quiz_eligible',\s*true\)")
+        self.assertIn("QUIZ_SUBMITTABLE_STATUSES", function_source)
+        for status in ("active", "draft", "outdated"):
+            self.assertIn(status, function_source)
+        self.assertIn("ineligible_question_slug", function_source)
+        self.assertIn("choiceStatsByQuestion", function_source)
         self.assertRegex(function_source, r"\.eq\('is_redacted',\s*false\)")
 
 
