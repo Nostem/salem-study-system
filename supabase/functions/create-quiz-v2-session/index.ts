@@ -221,5 +221,5 @@ Deno.serve(async (req) => {
       totalEligible: eligible.length,
       generatedAt: insertedSession.started_at,
     },
-  });
+  }, 200, req);
 });
