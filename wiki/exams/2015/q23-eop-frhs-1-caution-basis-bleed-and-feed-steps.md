@@ -1,7 +1,7 @@
 ---
 title: "2015 Q23 — Basis for the EOP-FRHS-1 CAUTION to Perform Bleed and Feed Steps Without Interruption"
 category: exams
-status: draft
+status: edited
 reference: no
 aliases:
   - 2015 Q23
@@ -19,7 +19,7 @@ aliases:
 Given the following conditions:<br>
 &bull; The crew is in 2-EOP-FRHS-1, RESPONSE TO LOSS OF SECONDARY HEAT SINK, and the criteria for initiating RCS bleed and feed has been met.<br>
 &bull; Prior to the actual procedure steps there is a CAUTION statement that reads:<br>
-TO ESTABLISH RCS HEAT REMOVAL BY RCS BLEED AND FEED, STEPS 24 THRU 29 MUST BE PERFORMED QUICKLY AND WITHOUT INTERRUPTION.<br><br>
+TO ESTABLISH RCS HEAT REMOVAL BY RCS BLEED AND FEED, STEPS 11 THRU 14 MUST BE PERFORMED QUICKLY AND WITHOUT INTERRUPTION.<br><br>
 Which of the following describes the basis for that statement?
 </div>
 

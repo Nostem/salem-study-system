@@ -41,6 +41,6 @@ At <span class="blank">_(1)_</span>, the rapid boration will insert more reactiv
 
 ## Connections
 
-- Related systems: [[AMSAC]], [[Control Rod Drive]]
 - Related procedures: [[curve book]]
+- Related EOPs: [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
 - Related exam: [[2015 NRC Written Exam]]

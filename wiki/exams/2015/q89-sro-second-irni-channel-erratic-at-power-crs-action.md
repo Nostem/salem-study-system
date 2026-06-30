@@ -1,7 +1,7 @@
 ---
 title: "2015 Q89 — CRS Action for a Second IRNI Channel Failing Erratically at Power (SRO)"
 category: exams
-status: draft
+status: outdated
 reference: no
 aliases:
   - 2015 Q89

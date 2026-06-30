@@ -85,6 +85,6 @@ ATWS following two dropped rods at ~89% power. Rod speed controller fails at <sp
 
 - Related systems: [[Main Turbine]], [[RPS/SSPS]], [[RCPs]], [[AFW]], [[Steam Generator & Blowdown]], [[Control Rod Drive]], [[CVCS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related exam questions: [[2016 Q78]], [[2016 Q83]], [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]], [[2012 Q87]]
+- Related exam questions: [[2015 Q9]], [[2016 Q78]], [[2016 Q83]], [[2018 Q56]], [[2018 Q98]], [[2019 Q56]], [[2020 Q100]], [[2022 Q10]], [[2022 Q73]], [[2022 Q76]], [[2023 Q80]], [[2012 Q87]]
 - Related scenarios: [[2016 Scenario 2 — 2C EDG Pre-Lube Failure / Condensate Pump Trip / 21 SGTL → SGTR / Stuck-Open PORV]], [[2017 Scenario 7]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]], [[2023 Scenario 3 — ATWS / Stuck-Open PORV]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2012 NRC Written Exam]]
+- Related exam: [[2015 NRC Written Exam]], [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2017 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2019 NRC Written Exam]], [[2019 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2012 NRC Written Exam]]

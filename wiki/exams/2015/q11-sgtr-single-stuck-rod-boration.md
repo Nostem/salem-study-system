@@ -42,5 +42,5 @@ Which of the following identifies the action, if any, the crew will perform in r
 
 - Related systems: [[Steam Generator & Blowdown]], [[Control Rod Drive]]
 - Related procedures: [[AB.SG-0001 — Steam Generator Tube Leak]], [[S2.OP-SO.CVC-0008 — Rapid Boration]]
-- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-2 — Reactor Trip Response]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]]
+- Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exam: [[2015 NRC Written Exam]]

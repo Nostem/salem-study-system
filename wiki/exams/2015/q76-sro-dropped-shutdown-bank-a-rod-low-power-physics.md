@@ -1,7 +1,7 @@
 ---
 title: "2015 Q76 — CRS Direction for a Dropped Shutdown Bank A Rod During Low Power Physics Testing"
 category: exams
-status: draft
+status: outdated
 reference: no
 aliases:
   - 2015 Q76

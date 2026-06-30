@@ -1,7 +1,7 @@
 ---
 title: "2015 Q67 — Condition That Would Prevent Commencing Core Alterations in Mode 6"
 category: exams
-status: draft
+status: outdated
 reference: no
 aliases:
   - 2015 Q67

@@ -2,7 +2,7 @@
 title: "2015 Q20 — Main Generator Loading Outside the Allowable Capability Curve After a 500KV Grid Disturbance"
 category: exams
 status: draft
-reference: no
+reference: yes
 aliases:
   - 2015 Q20
   - 2015-Q20

@@ -1,7 +1,7 @@
 ---
 title: "2015 Q83 — Procedure and Action Transitioning Out of EOP-TRIP-1 With No Heat Sink (MSLB/SI) (SRO)"
 category: exams
-status: draft
+status: outdated
 reference: no
 aliases:
   - 2015 Q83
