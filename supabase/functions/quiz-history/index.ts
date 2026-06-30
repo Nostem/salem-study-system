@@ -1,5 +1,23 @@
 import { createAdminClient, jsonResponse, requireAllowedOrigin, requirePost, requireUser } from '../_shared/http.ts';
-  IMPORT_MARKER
+
+type QuestionSnapshot = {
+  version?: number;
+  slug?: string;
+  examYear?: number;
+  questionNumber?: number;
+  track?: string | null;
+  title?: string | null;
+  displayTitle?: string;
+  status?: string;
+  quizEligible?: boolean;
+  isRedacted?: boolean;
+  acceptedLabels?: string[];
+  explanationText?: string | null;
+  selectedLabel?: string | null;
+  selectedOriginalLabel?: string | null;
+  isCorrect?: boolean;
+  choiceOrder?: Record<string, string> | string[] | null;
+};
 
 type QuizSessionRow = {
   id: string;
@@ -16,6 +34,7 @@ type QuizSessionRow = {
 type SessionQuestionRow = {
   position: number;
   choice_order: Record<string, string> | string[] | null;
+  question_snapshot?: QuestionSnapshot | null;
   questions: QuestionRow | null;
 };
 
@@ -69,8 +88,24 @@ function displayTitle(question: QuestionRow): string {
   return `${question.exam_year} Q${question.question_number}`;
 }
 
-function isLearnerSafeQuestion(question: QuestionRow): boolean {
-  return question.status === 'active' && question.quiz_eligible === true && question.is_redacted !== true;
+function snapshotDisplayTitle(snapshot: QuestionSnapshot): string {
+  if (typeof snapshot.displayTitle === 'string' && snapshot.displayTitle.trim()) return snapshot.displayTitle;
+  if (typeof snapshot.examYear === 'number' && typeof snapshot.questionNumber === 'number') {
+    return `${snapshot.examYear} Q${snapshot.questionNumber}`;
+  }
+  return typeof snapshot.slug === 'string' ? snapshot.slug : 'Saved question';
+}
+
+function hasSnapshotData(snapshot: QuestionSnapshot | null | undefined): snapshot is QuestionSnapshot {
+  return Boolean(snapshot && typeof snapshot === 'object' && typeof snapshot.slug === 'string' && snapshot.slug.length > 0);
+}
+
+function isHistorySafeSnapshot(snapshot: QuestionSnapshot): boolean {
+  return snapshot.isRedacted !== true;
+}
+
+function isHistorySafeQuestion(question: QuestionRow): boolean {
+  return question.is_redacted !== true;
 }
 
 function normalizeScore(value: number | string | null): number {
@@ -195,6 +230,7 @@ Deno.serve(async (req) => {
       quiz_session_questions(
         position,
         choice_order,
+        question_snapshot,
         questions(
           id,
           slug,
@@ -239,17 +275,24 @@ Deno.serve(async (req) => {
 
     const questions = sessionQuestions.map((sessionQuestion) => {
       const question = sessionQuestion.questions;
-      if (!question) return null;
-      if (!isLearnerSafeQuestion(question)) return null;
-      const attempt = attemptsByQuestion.get(question.id);
-      const selectedLabel = attempt?.choices?.label ?? null;
-      const selectedOriginalLabel = originalLabelFromChoiceOrder(selectedLabel, sessionQuestion.choice_order);
-      const isAnswered = Boolean(attempt?.selected_choice_id);
-      const isCorrect = Boolean(attempt?.is_correct);
+      const snapshot = hasSnapshotData(sessionQuestion.question_snapshot) ? sessionQuestion.question_snapshot : null;
+      if (snapshot) {
+        if (!isHistorySafeSnapshot(snapshot)) return null;
+      } else {
+        if (!question) return null;
+        if (!isHistorySafeQuestion(question)) return null;
+      }
+
+      const attempt = question ? attemptsByQuestion.get(question.id) : undefined;
+      const choiceOrder = snapshot?.choiceOrder ?? sessionQuestion.choice_order;
+      const selectedLabel = snapshot?.selectedLabel ?? attempt?.choices?.label ?? null;
+      const selectedOriginalLabel = snapshot?.selectedOriginalLabel ?? originalLabelFromChoiceOrder(selectedLabel, choiceOrder);
+      const isAnswered = Boolean(snapshot?.selectedLabel || snapshot?.selectedOriginalLabel || attempt?.selected_choice_id);
+      const isCorrect = Boolean(snapshot?.isCorrect ?? attempt?.is_correct);
       if (isAnswered) {
         totalAnswered += 1;
         if (isCorrect) totalCorrect += 1;
-        for (const link of question.question_topics ?? []) {
+        for (const link of question?.question_topics ?? []) {
           if (!link.topics) continue;
           const current = topicStats.get(link.topics.slug) ?? { slug: link.topics.slug, title: link.topics.title, attempts: 0, misses: 0 };
           current.attempts += 1;
@@ -257,21 +300,22 @@ Deno.serve(async (req) => {
           topicStats.set(link.topics.slug, current);
         }
       }
-      const acceptedLabels = question.accepted_answer_labels ?? [];
-      const acceptedDisplayLabels = acceptedLabels.map((label) => displayLabelFromChoiceOrder(label, sessionQuestion.choice_order));
+      const acceptedLabels = snapshot?.acceptedLabels ?? question?.accepted_answer_labels ?? [];
+      const acceptedDisplayLabels = acceptedLabels.map((label) => displayLabelFromChoiceOrder(label, choiceOrder));
       return {
         position: sessionQuestion.position,
-        displayTitle: displayTitle(question),
-        slug: question.slug,
-        track: question.track,
+        displayTitle: snapshot ? snapshotDisplayTitle(snapshot) : displayTitle(question!),
+        slug: snapshot?.slug ?? question!.slug,
+        track: snapshot?.track ?? question?.track ?? null,
+        sourceStatus: snapshot?.status ?? question?.status ?? null,
         selectedLabel,
         selectedOriginalLabel,
         acceptedLabels,
         acceptedDisplayLabels,
         isCorrect,
         status: isAnswered ? (isCorrect ? 'correct' : 'incorrect') : 'unanswered',
-        explanationText: question.explanation_text,
-        choiceOrder: sessionQuestion.choice_order,
+        explanationText: snapshot?.explanationText ?? question?.explanation_text ?? null,
+        choiceOrder,
       };
     }).filter((question): question is NonNullable<typeof question> => question !== null);
 

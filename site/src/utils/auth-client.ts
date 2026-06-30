@@ -84,6 +84,7 @@ export type QuizHistoryQuestion = {
   displayTitle: string;
   slug: string;
   track?: string | null;
+  sourceStatus?: string | null;
   selectedLabel?: string | null;
   selectedOriginalLabel?: string | null;
   acceptedLabels: string[];

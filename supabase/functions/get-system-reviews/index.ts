@@ -1,5 +1,4 @@
 import { createAdminClient, jsonResponse, requireAllowedOrigin, requirePost, requireUser } from '../_shared/http.ts';
-  IMPORT_MARKER
 
 Deno.serve(async (req) => {
   const methodError = requirePost(req);

@@ -65,7 +65,7 @@ Study Map is a graph/topic-oriented route for exploring systems, procedures, Tec
 
 ### My Progress — `/history/`
 
-My Progress shows saved quiz attempts and review/history data for the logged-in learner. Quiz attempts are saved through Supabase Edge Functions, not direct anonymous browser writes.
+My Progress shows saved quiz attempts and review/history data for the logged-in learner. Quiz attempts are saved through Supabase Edge Functions, not direct anonymous browser writes. Historical review uses the saved session/question snapshot, so later edits to question text, accepted answers, or draft/active status do not rewrite what the learner saw when completing the quiz.
 
 ### Review flow — `/quiz-v2/review/`
 
@@ -160,7 +160,7 @@ Important tables include:
 - `choices` — source answer choices.
 - `topics` and `question_topics` — normalized filter/graph/analytics topics.
 - `quiz_sessions` — saved quiz sessions and their filter/config snapshot.
-- `quiz_session_questions` — exact question order snapshot for a session.
+- `quiz_session_questions` — exact question order plus immutable question/answer display snapshots for each saved session.
 - `question_attempts` — immutable per-question attempt events.
 - `user_question_state` — current learner/question summary and review scheduling state.
 - `question_review_events` — whole-question review events used by the review flow.
@@ -179,7 +179,7 @@ The function:
 1. validates the learner JWT,
 2. resolves submitted question slugs and selected source labels server-side,
 3. creates/updates `quiz_sessions`,
-4. snapshots `quiz_session_questions`,
+4. snapshots `quiz_session_questions` with exact order, choice order, accepted-answer labels, explanations, and selected-label metadata as they existed at completion time,
 5. inserts immutable `question_attempts`,
 6. upserts `user_question_state`.
 

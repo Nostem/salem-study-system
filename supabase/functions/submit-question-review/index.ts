@@ -1,6 +1,5 @@
 import { scheduleWholeQuestionReview, type ReviewRating } from '../_shared/fsrs-whole-question.ts';
 import { createAdminClient, jsonResponse, readJsonBody, requireAllowedOrigin, requirePost, requireUser } from '../_shared/http.ts';
-  IMPORT_MARKER
 
 function normalizeRating(value: unknown): ReviewRating | null {
   return value === 'again' || value === 'hard' || value === 'good' || value === 'easy' ? value : null;

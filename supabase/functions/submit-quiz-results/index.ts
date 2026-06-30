@@ -24,16 +24,49 @@ type SubmitQuizBody = {
 type QuestionRow = {
   id: string;
   slug: string;
+  exam_year: number;
+  question_number: number;
+  track: string | null;
+  title: string;
   status: string;
   quiz_eligible: boolean;
   is_redacted: boolean;
+  accepted_answer_labels: string[] | null;
+  explanation_text: string | null;
 };
 
 type ChoiceRow = {
   id: string;
   question_id: string;
   label: string;
+  choice_text: string | null;
   is_correct: boolean;
+  explanation_text: string | null;
+};
+
+type QuestionSnapshot = {
+  version: 1;
+  slug: string;
+  examYear: number;
+  questionNumber: number;
+  track: string | null;
+  title: string;
+  displayTitle: string;
+  status: string;
+  quizEligible: boolean;
+  isRedacted: boolean;
+  acceptedLabels: string[];
+  explanationText: string | null;
+  selectedLabel: string | null;
+  selectedOriginalLabel: string | null;
+  isCorrect: boolean;
+  choiceOrder: Record<string, string> | string[] | null;
+  choices: Array<{
+    label: string;
+    text: string | null;
+    isCorrect: boolean;
+    explanationText: string | null;
+  }>;
 };
 
 function normalizeFeedbackMode(value: unknown): 'immediate' | 'blind' {
@@ -82,6 +115,44 @@ function originalLabelFromSubmittedChoice(selectedLabel: string | null, selected
   return selectedLabel;
 }
 
+function questionSnapshot(
+  question: QuestionRow,
+  choices: ChoiceRow[],
+  submitted: {
+    selectedLabel: string | null;
+    selectedOriginalLabel: string | null;
+    choiceOrder: Record<string, string> | string[] | null;
+    is_correct: boolean;
+  }
+): QuestionSnapshot {
+  return {
+    version: 1,
+    slug: question.slug,
+    examYear: question.exam_year,
+    questionNumber: question.question_number,
+    track: question.track,
+    title: question.title,
+    displayTitle: `${question.exam_year} Q${question.question_number}`,
+    status: question.status,
+    quizEligible: Boolean(question.quiz_eligible),
+    isRedacted: Boolean(question.is_redacted),
+    acceptedLabels: question.accepted_answer_labels ?? [],
+    explanationText: question.explanation_text,
+    selectedLabel: submitted.selectedLabel,
+    selectedOriginalLabel: submitted.selectedOriginalLabel,
+    isCorrect: submitted.is_correct,
+    choiceOrder: submitted.choiceOrder,
+    choices: [...choices]
+      .sort((a, b) => a.label.localeCompare(b.label))
+      .map((choice) => ({
+        label: choice.label,
+        text: choice.choice_text,
+        isCorrect: Boolean(choice.is_correct),
+        explanationText: choice.explanation_text,
+      })),
+  };
+}
+
 function nextReviewAt(nowIso: string, correct: number, incorrect: number): string {
   const base = new Date(nowIso);
   const days = incorrect > 0 ? 1 : correct >= 2 ? 14 : 3;
@@ -124,7 +195,7 @@ Deno.serve(async (req) => {
   const slugs = [...new Set(submittedQuestions.map((question) => question.slug))];
   const { data: questionRows, error: questionsError } = await admin
     .from('questions')
-    .select('id, slug, status, quiz_eligible, is_redacted')
+    .select('id, slug, exam_year, question_number, track, title, status, quiz_eligible, is_redacted, accepted_answer_labels, explanation_text')
     .in('slug', slugs)
     .in('status', [...QUIZ_SUBMITTABLE_STATUSES])
     .eq('is_redacted', false);
@@ -138,11 +209,17 @@ Deno.serve(async (req) => {
   const questionIds = slugs.map((slug) => questionBySlug.get(slug)!.id);
   const { data: choiceRows, error: choicesError } = await admin
     .from('choices')
-    .select('id, question_id, label, is_correct')
+    .select('id, question_id, label, choice_text, is_correct, explanation_text')
     .in('question_id', questionIds);
   if (choicesError) return jsonResponse({ error: 'choice_lookup_failed' }, 500, req);
 
   const candidateChoices = (choiceRows ?? []) as ChoiceRow[];
+  const choicesByQuestion = new Map<string, ChoiceRow[]>();
+  for (const choice of candidateChoices) {
+    const choices = choicesByQuestion.get(choice.question_id) ?? [];
+    choices.push(choice);
+    choicesByQuestion.set(choice.question_id, choices);
+  }
 
   const choiceByQuestionAndLabel = new Map<string, { id: string; is_correct: boolean }>();
   for (const choice of candidateChoices) {
@@ -251,12 +328,16 @@ Deno.serve(async (req) => {
   }
 
   const { error: sessionQuestionsError } = await admin.from('quiz_session_questions').insert(
-    resolvedQuestions.map((question) => ({
-      quiz_session_id: session.id,
-      question_id: question.questionId,
-      position: question.position,
-      choice_order: question.choiceOrder,
-    }))
+    resolvedQuestions.map((question) => {
+      const questionRow = questionBySlug.get(question.slug)!;
+      return {
+        quiz_session_id: session.id,
+        question_id: question.questionId,
+        position: question.position,
+        choice_order: question.choiceOrder,
+        question_snapshot: questionSnapshot(questionRow, choicesByQuestion.get(question.questionId) ?? [], question),
+      };
+    })
   );
   if (sessionQuestionsError) return jsonResponse({ error: 'quiz_session_questions_insert_failed' }, 500, req);
 

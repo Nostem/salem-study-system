@@ -251,7 +251,10 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
           <div class="rounded-lg border border-border bg-bg p-3">
             <div class="flex flex-wrap items-center justify-between gap-2">
               <h3 class="font-semibold text-text-primary">${question.position}. ${escapeHtml(question.displayTitle)}</h3>
-              <span class="rounded-full border px-2 py-0.5 text-[11px] uppercase ${question.status === 'correct' ? 'border-mastery-ok text-mastery-ok' : question.status === 'incorrect' ? 'border-mastery-weak text-mastery-weak' : 'border-border-hi text-text-body'}">${escapeHtml(question.status === 'correct' ? 'Correct' : question.status)}</span>
+              <div class="flex flex-wrap gap-2">
+                ${question.sourceStatus && question.sourceStatus !== 'active' ? `<span class="rounded-full border border-accent-amber px-2 py-0.5 text-[11px] uppercase text-accent-amber">${escapeHtml(question.sourceStatus)}</span>` : ''}
+                <span class="rounded-full border px-2 py-0.5 text-[11px] uppercase ${question.status === 'correct' ? 'border-mastery-ok text-mastery-ok' : question.status === 'incorrect' ? 'border-mastery-weak text-mastery-weak' : 'border-border-hi text-text-body'}">${escapeHtml(question.status === 'correct' ? 'Correct' : question.status)}</span>
+              </div>
             </div>
             <div class="mt-2 text-sm text-text-body">Selected: ${escapeHtml(question.selectedLabel ?? '—')}${question.selectedOriginalLabel ? ` · Original: ${escapeHtml(question.selectedOriginalLabel)}` : ''}</div>
             <div class="mt-1 text-xs text-text-muted">Accepted: ${escapeHtml((question.acceptedDisplayLabels?.length ? question.acceptedDisplayLabels : question.acceptedLabels).join(', ') || '—')}${question.acceptedDisplayLabels?.length && question.acceptedLabels.join(', ') !== question.acceptedDisplayLabels.join(', ') ? ` · Original: ${escapeHtml(question.acceptedLabels.join(', '))}` : ''}</div>

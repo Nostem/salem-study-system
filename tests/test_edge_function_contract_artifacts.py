@@ -40,7 +40,6 @@ class EdgeFunctionContractArtifactTests(unittest.TestCase):
 
     def test_review_functions_enforce_learner_safe_question_boundary(self):
         for relative_path in (
-            "quiz-history/index.ts",
             "quiz-review-queue/index.ts",
             "submit-question-review/index.ts",
         ):
@@ -49,6 +48,27 @@ class EdgeFunctionContractArtifactTests(unittest.TestCase):
                 self.assertRegex(source, r"status[\w\W]*active|\.eq\('status',\s*'active'\)")
                 self.assertRegex(source, r"quiz_eligible[\w\W]*true|\.eq\('quiz_eligible',\s*true\)")
                 self.assertRegex(source, r"is_redacted[\w\W]*(?:!==|===|false)|\.eq\('is_redacted',\s*false\)")
+
+    def test_quiz_history_uses_historical_session_boundary_not_current_practice_pool(self):
+        source = (FUNCTIONS / "quiz-history/index.ts").read_text()
+
+        self.assertIn("question_snapshot", source)
+        self.assertIn("isHistorySafeQuestion", source)
+        self.assertIn("return question.is_redacted !== true", source)
+        self.assertNotIn("isLearnerSafeQuestion", source)
+        self.assertNotIn("question.status === 'active' && question.quiz_eligible === true", source)
+        self.assertIn("sourceStatus", source)
+
+    def test_submit_quiz_results_snapshots_question_answer_state(self):
+        source = (FUNCTIONS / "submit-quiz-results/index.ts").read_text()
+        migrations = "\n".join(path.read_text() for path in sorted((ROOT / "supabase/migrations").glob("*.sql")))
+
+        self.assertIn("questionSnapshot", source)
+        self.assertIn("accepted_answer_labels", source)
+        self.assertIn("explanation_text", source)
+        self.assertIn("question_snapshot", source)
+        self.assertIn("selectedOriginalLabel", source)
+        self.assertIn("add column if not exists question_snapshot jsonb", migrations.lower())
 
     def test_submit_question_review_uses_shared_json_body_validation(self):
         source = (FUNCTIONS / "submit-question-review/index.ts").read_text()
