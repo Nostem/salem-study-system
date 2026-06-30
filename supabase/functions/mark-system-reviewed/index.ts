@@ -1,5 +1,4 @@
 import { createAdminClient, jsonResponse, readJsonBody, requireAllowedOrigin, requirePost, requireUser } from '../_shared/http.ts';
-  IMPORT_MARKER
 
 type MarkReviewedBody = { slug?: string };
 

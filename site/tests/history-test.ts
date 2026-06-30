@@ -68,6 +68,7 @@ const historyResponse = {
           position: 1,
           displayTitle: '2018 Q10',
           slug: 'q10-rps-pzr-press-channel-failure',
+          sourceStatus: 'active',
           selectedLabel: 'A',
           selectedOriginalLabel: 'C',
           acceptedLabels: ['A'],
@@ -76,6 +77,20 @@ const historyResponse = {
           status: 'correct',
           explanationText: 'Pressurizer channel failure explanation.',
           choiceOrder: { A: 'C', B: 'A', C: 'B', D: 'D' },
+        },
+        {
+          position: 2,
+          displayTitle: '2023 Q72',
+          slug: 'q72-containment-entry-additional-approval-during-shutdown',
+          sourceStatus: 'draft',
+          selectedLabel: 'B',
+          selectedOriginalLabel: 'D',
+          acceptedLabels: ['D'],
+          acceptedDisplayLabels: ['B'],
+          isCorrect: true,
+          status: 'correct',
+          explanationText: 'Draft imported questions remain visible in historical review.',
+          choiceOrder: { A: 'A', B: 'D', C: 'B', D: 'C' },
         },
       ],
     },
@@ -151,6 +166,9 @@ test('history page renders summary cards, quiz attempts, weak topics, and prior 
   await expect(page.getByTestId('history-review')).toContainText('Correct');
   await expect(page.getByTestId('history-review')).toContainText('Study Builder');
   await expect(page.getByTestId('history-review')).toContainText('Pressurizer channel failure explanation.');
+  await expect(page.getByTestId('history-review')).toContainText('2023 Q72');
+  await expect(page.getByTestId('history-review')).toContainText('Draft imported questions remain visible in historical review.');
+  await expect(page.getByTestId('history-review')).toContainText('draft');
   await expect.poll(() => requests.length).toBe(1);
   expect(requests[0].authorization).toBe('Bearer playwright-access-token');
 });
