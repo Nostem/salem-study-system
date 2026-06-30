@@ -38,6 +38,13 @@ class SupabaseImportExamTests(unittest.TestCase):
         self.assertIn("on conflict (question_id, topic_id, relationship_type) do nothing", sql)
         self.assertIn("insert into public.question_references", sql)
         self.assertIn("where not exists", sql.lower())
+        # Apply reconciles link tables: prune removed question_topics / references,
+        # scoped to questions in the bundle.
+        self.assertIn("delete from public.question_topics qt", sql)
+        self.assertIn("delete from public.question_references qr", sql)
+        self.assertIn("q.slug in (select slug from _salem_questions_raw)", sql)
+        self.assertIn("question_topic reconcile mismatch", sql)
+        self.assertIn("question_reference reconcile mismatch", sql)
         self.assertIn("q35-steam-dump-load-rejection-controller", sql)
         self.assertIn("nrc-written-2018", sql)
         self.assertNotIn("SUPABASE_SERVICE_ROLE_KEY", sql)
@@ -73,7 +80,7 @@ class SupabaseImportExamTests(unittest.TestCase):
         self.assertIn("public.questions", report["required_schema_objects"])
         self.assertIn("import_sql_missing", report["issues"])
 
-    def test_build_sync_plan_reports_new_changed_answer_changes_and_missing_without_deleting(self):
+    def test_build_sync_plan_blocks_on_missing_question_and_answer_key_change(self):
         bundle = {
             "summary": {"question_count": 2},
             "sources": [
@@ -120,9 +127,55 @@ class SupabaseImportExamTests(unittest.TestCase):
         self.assertEqual(plan["choices"]["changed"], 2)
         self.assertEqual(plan["answer_key_changes"], ["q1-changed"])
         self.assertEqual(plan["links"]["question_topics_removed_from_source"], 1)
+        # Unsafe here because a whole question is missing + answer key changed,
+        # NOT because of the removed link (apply reconciles links).
         self.assertFalse(plan["safe_to_apply"])
         self.assertIn("missing_from_source", plan["review_required"])
-        self.assertTrue(plan["deletes_performed_by_apply"] is False)
+        self.assertNotIn("links_removed_from_source", plan["review_required"])
+        # A removed link means apply will prune it.
+        self.assertTrue(plan["deletes_performed_by_apply"])
+
+    def test_build_sync_plan_removed_link_only_is_safe_to_apply(self):
+        # A PR that only removes a question<->topic link (no missing questions,
+        # no answer-key change) must be safe to apply — apply prunes the link.
+        bundle = {
+            "summary": {"question_count": 1},
+            "sources": [
+                {"source_key": "nrc-written-2099", "title": "2099 NRC Written Exam", "source_type": "nrc_exam", "exam_year": 2099, "public_access": True}
+            ],
+            "topics": [
+                {"slug": "reactor-coolant", "title": "Reactor Coolant", "topic_type": "system", "wiki_slug": "reactor-coolant"}
+            ],
+            "questions": [
+                {"source_key": "nrc-written-2099", "exam_year": 2099, "exam_type": "written", "question_number": 1, "title": "Q1", "slug": "q1", "stem_text": "stem", "official_answer_label": "A", "accepted_answer_labels": ["A"], "status": "active", "is_edited": False, "is_redacted": False, "quiz_eligible": True},
+            ],
+            "choices": [
+                {"question_slug": "q1", "label": "A", "choice_text": "right", "is_correct": True},
+            ],
+            "question_references": [],
+            "question_topics": [],
+        }
+        db_snapshot = {
+            "sources": [{"source_key": "nrc-written-2099", "title": "2099 NRC Written Exam", "source_type": "nrc_exam", "exam_year": 2099, "public_access": True}],
+            "topics": [{"slug": "reactor-coolant", "title": "Reactor Coolant", "topic_type": "system", "wiki_slug": "reactor-coolant"}],
+            "questions": [
+                {"slug": "q1", "title": "Q1", "stem_text": "stem", "official_answer_label": "A", "accepted_answer_labels": ["A"], "status": "active", "is_edited": False, "is_redacted": False, "quiz_eligible": True},
+            ],
+            "choices": [
+                {"question_slug": "q1", "label": "A", "choice_text": "right", "is_correct": True},
+            ],
+            "question_references": [],
+            "question_topics": [
+                {"question_slug": "q1", "topic_slug": "reactor-coolant", "relationship_type": "tests"},
+            ],
+        }
+
+        plan = build_sync_plan(bundle, db_snapshot)
+
+        self.assertEqual(plan["links"]["question_topics_removed_from_source"], 1)
+        self.assertEqual(plan["review_required"], [])
+        self.assertTrue(plan["safe_to_apply"])
+        self.assertTrue(plan["deletes_performed_by_apply"])
 
     def test_generate_sync_snapshot_sql_outputs_json_without_env_or_password_names(self):
         bundle = load_staging_bundle(ROOT / "data/quiz-import/supabase-staging-2018.json")

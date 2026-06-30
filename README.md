@@ -476,6 +476,7 @@ Workflow behavior:
 
 - Pull requests run quiz-data generation plus a Supabase sync dry-run only.
 - Pushes to `main` run the same dry-run, then apply the sync only when `scripts/check_supabase_sync_report.py --mode safe-to-apply` confirms there are no answer-key changes or manual-review blockers.
+- Removed question↔topic / question↔reference links are **not** blockers: apply reconciles them by pruning the orphaned join-table rows (scoped to questions in the bundle; questions and learner-progress rows are never deleted). A whole question missing from source and any answer-key change remain manual-review blockers.
 - After applying on `main`, the workflow verifies the apply report and a second dry-run are clean.
 - Reports are uploaded as workflow artifacts, including `/tmp/salem-sync-dry-run.json` and `data/quiz-import/audit-all.json`.
 

@@ -113,9 +113,6 @@ questions:
     answer: A
     cognitive_level: "Fundamental/Memory"
     source: "New"
-    systems:
-      - amsac
-      - control-rod-drive
     procedures:
       - s2-re-ra-zz-0016-curve-book
     ka: "000029AK1.03"

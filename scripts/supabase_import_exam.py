@@ -331,6 +331,38 @@ where not exists (
     and existing.reference_note is not distinct from r.reference_note
 );
 
+-- Reconcile link tables for the synced questions: prune question_topics and
+-- question_references rows that are no longer present in source. Scoped to the
+-- questions in this bundle, so a question missing entirely from source (and the
+-- learner-progress tables that reference it) is never touched here.
+delete from public.question_topics qt
+using public.questions q
+where qt.question_id = q.id
+  and q.slug in (select slug from _salem_questions_raw)
+  and not exists (
+    select 1
+    from _salem_question_topics raw
+    join public.topics t on t.slug = raw.topic_slug
+    where raw.question_slug = q.slug
+      and t.id = qt.topic_id
+      and raw.relationship_type = qt.relationship_type
+  );
+
+delete from public.question_references qr
+using public.questions q
+where qr.question_id = q.id
+  and q.slug in (select slug from _salem_questions_raw)
+  and not exists (
+    select 1
+    from _salem_question_references raw
+    join _salem_sources ss on ss.source_key = raw.source_key
+    join public.sources s on s.source_type = ss.source_type and s.exam_year = ss.exam_year and s.title = ss.title
+    where raw.question_slug = q.slug
+      and s.id = qr.source_id
+      and raw.reference_type = qr.reference_type
+      and raw.reference_note is not distinct from qr.reference_note
+  );
+
 -- Import sanity checks. These raise errors before commit if natural-key resolution failed.
 do $$
 begin
@@ -344,6 +376,15 @@ begin
 
   if (select count(*) from public.question_topics qt join public.questions q on q.id = qt.question_id join public.topics t on t.id = qt.topic_id join _salem_question_topics raw on raw.question_slug = q.slug and raw.topic_slug = t.slug and raw.relationship_type = qt.relationship_type) <> (select count(*) from _salem_question_topics) then
     raise exception 'question_topic import count mismatch';
+  end if;
+
+  -- After reconcile, scoped link tables must match source exactly (no orphans).
+  if (select count(*) from public.question_topics qt join public.questions q on q.id = qt.question_id where q.slug in (select slug from _salem_questions_raw)) <> (select count(*) from _salem_question_topics) then
+    raise exception 'question_topic reconcile mismatch: orphan links remain after prune';
+  end if;
+
+  if (select count(*) from public.question_references qr join public.questions q on q.id = qr.question_id where q.slug in (select slug from _salem_questions_raw)) <> (select count(*) from _salem_question_references) then
+    raise exception 'question_reference reconcile mismatch: orphan links remain after prune';
   end if;
 end $$;
 
@@ -489,8 +530,11 @@ def _diff_section(
 def build_sync_plan(bundle: Mapping[str, Any], db_snapshot: Mapping[str, Any]) -> Dict[str, Any]:
     """Compare a wiki-derived staging bundle with current DB content.
 
-    The plan is intentionally non-destructive: missing rows and removed links are
-    reported for review, but apply never deletes learner-progress-related rows.
+    Apply reconciles link tables: question_topics / question_references rows that
+    are no longer in source are pruned (scoped to questions in the bundle), so
+    removed links are safe to apply and not a review blocker. Whole questions
+    missing from source and answer-key changes remain manual-review blockers —
+    apply never deletes questions or learner-progress rows.
     """
     validate_staging_bundle(bundle)
     for section in REQUIRED_BUNDLE_KEYS:
@@ -511,11 +555,14 @@ def build_sync_plan(bundle: Mapping[str, Any], db_snapshot: Mapping[str, Any]) -
         if _canonical(desired.get("accepted_answer_labels")) != _canonical(current.get("accepted_answer_labels")) or desired.get("official_answer_label") != current.get("official_answer_label"):
             answer_key_changes.append(key[0])
 
+    links_removed = (
+        sections["question_topics"]["missing_from_source"]
+        + sections["question_references"]["missing_from_source"]
+    )
+
     review_required: List[str] = []
     if sections["questions"]["missing_from_source"]:
         review_required.append("missing_from_source")
-    if sections["question_topics"]["missing_from_source"] or sections["question_references"]["missing_from_source"]:
-        review_required.append("links_removed_from_source")
     if answer_key_changes:
         review_required.append("answer_key_changes")
 
@@ -534,7 +581,7 @@ def build_sync_plan(bundle: Mapping[str, Any], db_snapshot: Mapping[str, Any]) -
         "answer_key_changes": answer_key_changes[:50],
         "review_required": review_required,
         "safe_to_apply": not review_required,
-        "deletes_performed_by_apply": False,
+        "deletes_performed_by_apply": bool(links_removed),
     }
 
 
@@ -728,7 +775,10 @@ def run_sync(
     after_snapshot = fetch_db_snapshot(bundle, env, psql_bin)
     report["after"] = build_sync_plan(bundle, after_snapshot)
     report["applied"] = True
-    report["deletes_performed_by_apply"] = False
+    report["deletes_performed_by_apply"] = bool(
+        before["links"]["question_topics_removed_from_source"]
+        or before["links"]["question_references_removed_from_source"]
+    )
     return report
 
 
