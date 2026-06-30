@@ -110,5 +110,5 @@ Deno.serve(async (req) => {
     scheduledDays: review.scheduledDays,
     fsrsDifficulty: review.fsrsDifficulty,
     fsrsStability: review.fsrsStability,
-  });
+  }, 200, req);
 });

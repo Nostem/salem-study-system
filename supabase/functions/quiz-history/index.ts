@@ -374,5 +374,5 @@ Deno.serve(async (req) => {
     },
     weakTopics,
     sessions,
-  });
+  }, 200, req);
 });

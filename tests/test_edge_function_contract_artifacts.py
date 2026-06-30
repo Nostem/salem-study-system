@@ -70,6 +70,25 @@ class EdgeFunctionContractArtifactTests(unittest.TestCase):
         self.assertIn("selectedOriginalLabel", source)
         self.assertIn("add column if not exists question_snapshot jsonb", migrations.lower())
 
+    def test_success_responses_preserve_request_origin_for_cors(self):
+        for function_path in sorted(FUNCTIONS.glob("*/index.ts")):
+            source = function_path.read_text()
+            rel = function_path.relative_to(ROOT).as_posix()
+            lines = source.splitlines()
+            for index, line in enumerate(lines):
+                if "return jsonResponse({" not in line:
+                    continue
+                chunk_lines = []
+                for candidate in lines[index:index + 60]:
+                    chunk_lines.append(candidate)
+                    if ");" in candidate:
+                        break
+                chunk = "\n".join(chunk_lines)
+                if "ok: true" not in chunk:
+                    continue
+                with self.subTest(function=rel, line=index + 1):
+                    self.assertIn(", req", chunk, "successful browser-callable responses must include req so CORS echoes the request Origin")
+
     def test_submit_question_review_uses_shared_json_body_validation(self):
         source = (FUNCTIONS / "submit-question-review/index.ts").read_text()
 

@@ -28,7 +28,7 @@ Deno.serve(async (req) => {
 
   const questionIds = [...new Set((states ?? []).map((state) => state.question_id).filter(Boolean))];
   if (questionIds.length === 0) {
-    return jsonResponse({ ok: true, dueSlugs: [], allSlugs: [], states: {} });
+    return jsonResponse({ ok: true, dueSlugs: [], allSlugs: [], states: {} }, 200, req);
   }
 
   const { data: questions, error: questionError } = await admin
@@ -73,5 +73,5 @@ Deno.serve(async (req) => {
     dueSlugs: dueRows.map((state) => state.slug),
     allSlugs: rows.map((state) => state.slug),
     states: stateBySlug,
-  });
+  }, 200, req);
 });
