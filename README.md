@@ -273,6 +273,7 @@ The safe rule is: source Markdown/YAML/PDF data is authority; the four quiz-data
 │   ├── package.json
 │   ├── public/
 │   │   └── reference-pdfs/            # self-hosted NRC reference PDFs (NUREG-1021, NUREG-1122) + K/A xlsx; linked from homepage
+│   ├── scripts/                       # site build helpers, including Pagefind cache-bust copy + static asset link check
 │   ├── src/
 │   │   ├── components/                # UI components
 │   │   ├── data/                      # generated quiz/graph data (quiz-bank*.json gitignored)
@@ -357,11 +358,13 @@ cd site
 npm run build
 ```
 
-This runs Astro and Pagefind through the local npm-installed binaries:
+This runs Astro, validates rendered static PDF/XLSX links, and then builds Pagefind through the local npm-installed binaries:
 
 ```text
-npm run build:astro && npm run build:search
+npm run build:astro && npm run check:static-assets && npm run build:search
 ```
+
+`check:static-assets` scans `dist/**/*.html`, verifies linked exam/Tech Spec/reference PDFs and xlsx files exist in the built output, and rejects stale `/salem-study-system/...` asset links in root-hosted Vercel builds.
 
 `build:search` runs Pagefind and then copies `dist/pagefind` to a cache-busted directory used by the search modal:
 
@@ -378,7 +381,7 @@ cd site
 npm run test:node
 ```
 
-This covers quiz-session generation, backend-session payloads, review logic, FSRS scheduling, and quiz personalization.
+This covers quiz-session generation, backend-session payloads, review logic, FSRS scheduling, quiz personalization, and static asset link normalization.
 
 ### Run frontend type checks
 
