@@ -8,6 +8,13 @@
     "PUBLIC_BASE_PATH": "/",
     "PUBLIC_SITE_URL": "https://salem-study-system.vercel.app"
   },
+  "redirects": [
+    {
+      "source": "/salem-study-system/:path*",
+      "destination": "/:path*",
+      "permanent": false
+    }
+  ],
   "headers": [
     {
       "source": "/pagefind/:path*.pagefind",

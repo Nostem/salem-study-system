@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import { buildWikilinkMap } from './src/utils/wikilink-map';
 import remarkWikilinks from './src/plugins/remark-wikilinks';
+import remarkStaticAssetLinks, { rehypeStaticAssetLinks } from './src/plugins/remark-static-asset-links';
 
 const isVercel = process.env.VERCEL === '1' || process.env.VERCEL === 'true';
 const configuredBasePath = process.env.PUBLIC_BASE_PATH ?? (isVercel ? '/' : '/salem-study-system');
@@ -26,7 +27,11 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [
+      [remarkStaticAssetLinks, { basePath }],
       [remarkWikilinks, { wikilinkMap, basePath }],
+    ],
+    rehypePlugins: [
+      [rehypeStaticAssetLinks, { basePath }],
     ],
   },
 });
