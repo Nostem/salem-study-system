@@ -7,6 +7,7 @@ Usage: python3 scripts/build_ka_index.py
 """
 import json
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 
@@ -24,8 +25,12 @@ GROUP_TITLES = {
 
 
 def group_of(ka_no):
-    """'K2.02' -> 'K2', 'A3.01' -> 'A3'."""
-    return re.match(r"^([A-Z]+\d)", ka_no).group(1)
+    """'K2.02' -> 'K2', 'A3.01' -> 'A3'; None (with a stderr warning) if malformed."""
+    m = re.match(r"^([A-Z]+\d)", ka_no)
+    if m is None:
+        print(f"WARNING: skipping malformed ka_no {ka_no!r}", file=sys.stderr)
+        return None
+    return m.group(1)
 
 
 def system_topic(statement):
@@ -55,7 +60,9 @@ def main():
                    and v.get("status") == "active"]
         by_group = defaultdict(list)
         for v in entries:
-            by_group[group_of(v["ka_no"])].append(v)
+            g = group_of(v["ka_no"])
+            if g is not None:
+                by_group[g].append(v)
         lines = [f"# K/A index — {row['slug']} (catalog system {num})\n",
                  f"UFSAR: {row.get('ufsar_chapter')} {row.get('ufsar_section') or ''}".rstrip(),
                  f"\n{len(entries)} active system K/As. Cover each topic from the UFSAR "
@@ -72,5 +79,4 @@ def main():
 
 
 if __name__ == "__main__":
-    import sys
     sys.exit(main())

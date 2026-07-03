@@ -23,7 +23,7 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
       </p>
       <div class="mt-4 flex flex-wrap items-center gap-3">
         <a href={loginHref} class="study-button study-button--accent">Log in</a>
-        <span class="text-xs text-text-muted">Need access? Use Contact / Feedback and ask the site administrator for a Salem Study beta account.</span>
+        <span class="text-xs text-text-muted">Need access? Use the <button type="button" class="contact-inline-link" data-open-contact>Contact / Feedback form</button> and ask the site administrator for a Salem Study beta account.</span>
       </div>
     </div>
 
@@ -135,7 +135,7 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
     }
 
     function escapeHtml(value: unknown): string {
-      return String(value ?? '').replace(/[&<>"]/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[char] ?? char));
+      return String(value ?? '').replace(/[&<>"']/g, (char) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char] ?? char));
     }
 
     function formatDate(value: string | null): string {

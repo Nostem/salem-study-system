@@ -6,7 +6,7 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="global-header__inner">
     <div class="global-header__brand-group">
-      <button class="global-header__menu" type="button" aria-label="Open navigation" onclick="openMobileNav()">☰</button>
+      <button class="global-header__menu" type="button" aria-label="Open navigation" hidden>☰</button>
       <a href={base} class="global-header__brand" aria-label="Salem Study System home">
         <span class="global-header__mark" aria-hidden="true"><span></span></span>
         <span class="global-header__title">SALEM STUDY SYSTEM</span>
@@ -155,10 +155,31 @@ const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL :
     }
   }
 
+  function initMobileMenu(): void {
+    // The drawer (MobileNav) only exists on article pages. Show the hamburger
+    // only where it can actually open something; study-flow pages have the
+    // pill nav row instead.
+    const menu = document.querySelector<HTMLButtonElement>('.global-header__menu');
+    if (!menu) return;
+    const opener = (window as Window & { openMobileNav?: () => void }).openMobileNav;
+    if (typeof opener !== 'function') {
+      menu.hidden = true;
+      return;
+    }
+    menu.hidden = false;
+    if (menu.dataset.menuBound === 'true') return;
+    menu.dataset.menuBound = 'true';
+    menu.addEventListener('click', () => {
+      (window as Window & { openMobileNav?: () => void }).openMobileNav?.();
+    });
+  }
+
   initThemeToggle();
   initAuthStatus();
+  initMobileMenu();
   document.addEventListener('astro:page-load', () => {
     initThemeToggle();
     initAuthStatus();
+    initMobileMenu();
   });
 </script>

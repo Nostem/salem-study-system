@@ -1,5 +1,5 @@
 import { cpSync, existsSync, rmSync } from 'node:fs';
-import { join } from 'node:path';
+import { join, resolve } from 'node:path';
 
 function pagefindAssetDir() {
   const explicit = process.env.PUBLIC_PAGEFIND_ASSET_DIR?.trim();
@@ -11,8 +11,15 @@ function pagefindAssetDir() {
   return 'pagefind-current';
 }
 
+const assetDir = pagefindAssetDir();
 const source = join('dist', 'pagefind');
-const target = join('dist', pagefindAssetDir());
+const target = join('dist', assetDir);
+
+if (!assetDir || resolve(target) === resolve(source)) {
+  throw new Error(
+    `Refusing to remove pagefind source: target "${target}" resolves to the source "${source}" (check PUBLIC_PAGEFIND_ASSET_DIR)`,
+  );
+}
 
 if (!existsSync(source)) {
   throw new Error(`Pagefind output not found: ${source}`);

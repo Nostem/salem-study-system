@@ -70,7 +70,10 @@ class InviteAuthArtifactTests(unittest.TestCase):
         self.assertIn("createAdminClient", function_source)
         self.assertIn("requireUser", function_source)
         self.assertIn("quiz_sessions", function_source)
-        self.assertIn("quiz_session_questions", function_source)
+        # Destructive writes (session-question snapshots, attempts, state)
+        # go through the atomic replace_quiz_session_writes RPC; assert the
+        # function still produces all three payloads plus the RPC call.
+        self.assertIn("replace_quiz_session_writes", function_source)
         self.assertIn("question_attempts", function_source)
         self.assertIn("question_snapshot", function_source)
         self.assertIn("user_question_state", function_source)

@@ -452,19 +452,9 @@ for (const pg of pages) {
   });
 }
 
-// --- 6. Inline Highlighter ---
-
-// The #edit-toggle button referenced by the next three tests was never
-// shipped in any layout — HighlightToolbar renders the highlight tooltip and
-// token modal, but not the toggle. Skip until the toolbar is finished or the
-// tests are deleted; otherwise the smoke job blocks the Pages deploy.
-test.skip('edit toggle button is visible', async ({ page }) => {
-  await page.goto(BASE + 'systems/reactor-coolant-system/');
-  await page.waitForLoadState('networkidle');
-
-  const toggle = page.locator('#edit-toggle');
-  await expect(toggle).toBeVisible();
-});
+// The inline maintainer highlighter (HighlightToolbar + highlighter.ts) was
+// removed from the public bundle in the 2026-07 audit: its #edit-toggle was
+// never shipped, and it threw on every article page load.
 
 test('article element has data-slug attribute', async ({ page }) => {
   await page.goto(BASE + 'systems/reactor-coolant-system/');
@@ -473,58 +463,4 @@ test('article element has data-slug attribute', async ({ page }) => {
   const article = page.locator('article.prose');
   const slug = await article.getAttribute('data-slug');
   expect(slug).toBe('systems/reactor-coolant-system');
-});
-
-test('highlight tooltip is hidden by default', async ({ page }) => {
-  await page.goto(BASE + 'systems/reactor-coolant-system/');
-  await page.waitForLoadState('networkidle');
-
-  const tooltip = page.locator('#highlight-tooltip');
-  await expect(tooltip).toBeHidden();
-});
-
-test('token modal is hidden by default', async ({ page }) => {
-  await page.goto(BASE + 'systems/reactor-coolant-system/');
-  await page.waitForLoadState('networkidle');
-
-  const modal = page.locator('#token-modal');
-  await expect(modal).toBeHidden();
-});
-
-test.skip('edit toggle activates edit mode styling', async ({ page }) => {
-  await page.goto(BASE + 'systems/reactor-coolant-system/');
-  await page.waitForLoadState('networkidle');
-
-  // Set a fake token so edit mode doesn't prompt
-  await page.evaluate(() => localStorage.setItem('github-token', 'fake-token'));
-
-  const toggle = page.locator('#edit-toggle');
-  await toggle.click();
-
-  // Toggle should have accent color
-  const color = await toggle.evaluate(el => el.style.color);
-  expect(color).toBe('rgb(96, 165, 250)');
-
-  // Click again to deactivate
-  await toggle.click();
-  const colorAfter = await toggle.evaluate(el => el.style.color);
-  expect(colorAfter).toBe('');
-});
-
-test.skip('token modal appears when no token stored', async ({ page }) => {
-  await page.goto(BASE + 'systems/reactor-coolant-system/');
-  await page.waitForLoadState('networkidle');
-
-  // Clear any existing token
-  await page.evaluate(() => localStorage.removeItem('github-token'));
-
-  const toggle = page.locator('#edit-toggle');
-  await toggle.click();
-
-  const modal = page.locator('#token-modal');
-  await expect(modal).toBeVisible();
-
-  // Cancel
-  await page.locator('#token-cancel').click();
-  await expect(modal).toBeHidden();
 });

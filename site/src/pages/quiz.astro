@@ -30,9 +30,11 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
       </p>
       <div class="flex flex-wrap gap-3">
         <a class="quiz-primary no-underline" href={`${base}login/`}>Log in</a>
+        <a class="quiz-secondary no-underline" href={`${base}quiz-v2/play/`}>Try a practice set without an account</a>
       </div>
       <p class="mt-5 text-sm text-text-muted">
-        If you do not have an account, contact site administrator through the Contact / Feedback form.
+        If you do not have an account, ask the site administrator through the
+        <button type="button" class="contact-inline-link" data-open-contact>Contact / Feedback form</button>.
       </p>
     </div>
   </section>
@@ -411,9 +413,15 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
       return ordered.slice(0, Math.max(1, Math.min(filters.count, ordered.length)));
     }
 
+    let summaryTimer;
     function updateSummary() {
-      const matches = filteredQuestions(currentFilters(), false);
-      filterSummary.textContent = `${matches.length} eligible questions match current filters`;
+      // Debounced: this re-filters the whole bank, and the form fires it on
+      // every keystroke in the count field.
+      clearTimeout(summaryTimer);
+      summaryTimer = setTimeout(() => {
+        const matches = filteredQuestions(currentFilters(), false);
+        filterSummary.textContent = `${matches.length} eligible questions match current filters`;
+      }, 120);
     }
 
     function badge(text, variant = 'default') {
@@ -552,11 +560,13 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
 
       const choiceList = document.getElementById('choice-list');
       choiceList.innerHTML = '';
+      const answerLocked = state.mode !== 'blind' && state.answers.has(question.slug);
       question.choices.forEach((choice) => {
         const button = document.createElement('button');
         button.type = 'button';
         button.className = 'quiz-choice';
         if (selected === choice.displayLabel) button.classList.add('quiz-choice-selected');
+        if (answerLocked && selected !== choice.displayLabel) button.disabled = true;
         button.innerHTML = `<span class="quiz-choice-label">${choice.displayLabel}.</span> ${renderBlankMarkers(choice.text)}`;
         button.addEventListener('click', () => selectAnswer(question, choice.displayLabel));
         choiceList.appendChild(button);
@@ -571,6 +581,10 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     }
 
     function selectAnswer(question, label) {
+      // Feedback mode reveals right/wrong immediately, so the first pick must
+      // be final — otherwise "see Incorrect, click the right choice" records
+      // the corrected answer and corrupts scoring and mastery state.
+      if (state.mode !== 'blind' && state.answers.has(question.slug)) return;
       state.answers.set(question.slug, label);
       saveDraft();
       renderQuestion();
@@ -742,7 +756,10 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
       const filters = currentFilters();
       const seedOverride = parseSeedFromUrl();
       filters.seed = seedOverride !== null ? seedOverride : generateSeed();
-      const personalizationStates = await loadPersonalizationStates();
+      // A URL seed means "replay this exact quiz" — personalization ordering
+      // depends on mastery buckets and Date.now(), so it must be bypassed or
+      // the same seed yields a different question set later.
+      const personalizationStates = seedOverride !== null ? null : await loadPersonalizationStates();
       state.questions = filteredQuestions(filters, true, personalizationStates).map((question, index) =>
         withShuffledChoices(question, filters.seed + index + 1)
       );
