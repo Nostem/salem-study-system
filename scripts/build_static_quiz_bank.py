@@ -13,13 +13,13 @@ import json
 import re
 import sys
 from pathlib import Path
-from typing import Any, Dict, Iterable, List
+from typing import Any, Dict, Iterable, List, Tuple
 
 ROOT_FOR_IMPORTS = Path(__file__).resolve().parents[1]
 if str(ROOT_FOR_IMPORTS) not in sys.path:
     sys.path.insert(0, str(ROOT_FOR_IMPORTS))
 
-from scripts.exam_question_import import parse_frontmatter, slugify, strip_html
+from scripts.exam_question_import import load_wiki_files, parse_frontmatter, slugify, strip_html
 
 
 DEFAULT_BUNDLE = Path("data/quiz-import/supabase-staging-all.json")
@@ -42,10 +42,11 @@ def _slug_aliases(value: str) -> set[str]:
     return {alias for alias in aliases if alias}
 
 
-def _wiki_title_index(root: Path) -> Dict[str, str]:
+def _wiki_title_index(root: Path, wiki_files: List[Tuple[Path, str]] | None = None) -> Dict[str, str]:
     titles: Dict[str, str] = {}
-    for path in sorted((root / "wiki").rglob("*.md")):
-        raw = path.read_text(encoding="utf-8")
+    if wiki_files is None:
+        wiki_files = load_wiki_files(root)
+    for path, raw in wiki_files:
         frontmatter, _ = parse_frontmatter(raw)
         title = frontmatter.get("title")
         if not title:
@@ -206,11 +207,11 @@ def _topic_links_by_question(question_topics: Iterable[Dict[str, Any]], topics: 
     return by_question
 
 
-def build_quiz_bank(root: Path, bundle_path: Path) -> Dict[str, Any]:
+def build_quiz_bank(root: Path, bundle_path: Path, wiki_files: List[Tuple[Path, str]] | None = None) -> Dict[str, Any]:
     root = root.resolve()
     bundle_path = bundle_path if bundle_path.is_absolute() else root / bundle_path
     bundle = _load_json(bundle_path)
-    title_index = _wiki_title_index(root)
+    title_index = _wiki_title_index(root, wiki_files=wiki_files)
     topics_by_slug = _topic_rows(bundle.get("topics", []), title_index)
     choices_by_question = _choice_rows_by_question(bundle.get("choices", []))
     topics_by_question = _topic_links_by_question(bundle.get("question_topics", []), topics_by_slug)
