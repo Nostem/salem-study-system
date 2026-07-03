@@ -8,6 +8,10 @@ aliases:
   - operational modes
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-1-0.pdf" target="_blank">View Tech Spec PDF</a>
+</div>
+
 # TS 1.0 — Definitions
 
 Key definitions used throughout the Technical Specifications. All defined terms appear in CAPITALIZED TYPE.
@@ -73,9 +77,7 @@ Key definitions used throughout the Technical Specifications. All defined terms 
 OPERABILITY requires both the component itself AND all necessary support systems (power, cooling, actuation signals) to be capable of performing their functions. A component with an inoperable support system is itself inoperable.
 </div>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-1-0.pdf" target="_blank">View Tech Spec PDF</a>
 
 ## Connections
 

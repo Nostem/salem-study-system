@@ -8,6 +8,10 @@ aliases:
   - explosive gas mixture
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-11.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-11.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 3/4.11 — Radioactive Effluents
 
 Most original TS 3/4.11 specifications have been deleted and relocated to the Offsite Dose Calculation Manual (ODCM) and other programs. The remaining active specifications are:
@@ -116,9 +120,7 @@ SRO determines compensatory actions when 1R12A (Containment Noble Gas) and 1R41D
 </ul>
 </div>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-11.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-11.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

@@ -10,6 +10,10 @@ aliases:
   - TS 3.5.4
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-5.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-5.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 3/4.5 — Emergency Core Cooling Systems
 
 ## Accumulators
@@ -281,9 +285,7 @@ The boron concentration limits also ensure a <span class="hi-exam">post-LOCA sum
 </div>
 </details>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-5.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-5.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

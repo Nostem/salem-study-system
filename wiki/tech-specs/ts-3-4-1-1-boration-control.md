@@ -10,6 +10,10 @@ aliases:
   - boration control
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-1-1.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 3/4.1.1 — Boration Control
 
 ## Shutdown Margin — Tavg > 200°F
@@ -181,9 +185,7 @@ With Tavg less than <span class="val-trip">541°F</span>, restore Tavg within <s
 A stuck-open TB40 turbine bypass valve during a low-power startup cools the RCS until <span class="hi-exam">auctioneered high RCS Tavg falls below 541&deg;F</span> in Mode 2. TSAS 3.1.1.4 requires Tavg ≥ 541&deg;F; if not restored, the required action is <span class="hi-exam">restore Tavg to ≥541&deg;F within 15 minutes, or be in Hot Standby within the next 15 minutes (open the Rx Trip Breakers)</span>. The correct bases for the 541&deg;F minimum is that <span class="hi-exam">protective instrumentation is within its normal operating range</span> (one of the 5 listed bases). <span class="hi-trap">SDM margin / adequate shutdown margin is NOT one of the 5 bases for the minimum temperature for criticality; the PZR-pressure Tech Spec with a 1-hour restore / 4-hour power-reduction sequence is the wrong LCO and wrong time requirement.</span>
 </div>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-1-1.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

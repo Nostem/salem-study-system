@@ -10,6 +10,10 @@ aliases:
   - TS bases control
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-1-0.pdf" target="_blank">View Tech Spec PDF (Section 6 in TS document)</a>
+</div>
+
 # TS 6.0 — Administrative Controls
 
 ## 6.1 — Responsibility
@@ -167,9 +171,7 @@ Changes to the Bases can be made <span class="hi">without prior NRC approval</sp
 
 Ensures CRE occupants can control the reactor safely under normal conditions and maintain safe condition following a radiological event, hazardous chemical release, or smoke challenge. DBA dose limit: <span class="hi">5 rem TEDE</span> for the duration of the accident. Includes CRE boundary definition, configuration control, unfiltered air inleakage testing per Reg Guide 1.197, and CRE pressure measurement. (TS 6.17)
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-1-0.pdf" target="_blank">View Tech Spec PDF (Section 6 in TS document)</a>
 
 ## Connections
 

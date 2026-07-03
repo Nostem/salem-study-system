@@ -9,6 +9,10 @@ aliases:
   - diesel generator TS
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-8-1.pdf" target="_blank">View TS PDF (AC Sources)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-8-2.pdf" target="_blank">View TS PDF (DC Sources)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-8-3.pdf" target="_blank">View TS PDF (Distribution)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-8.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 3/4.8 — Electrical Power Systems
 
 ## 3/4.8.1 — AC Sources
@@ -292,9 +296,7 @@ Surveillance frequency is based on operating experience, equipment reliability, 
 </div>
 </details>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-8-1.pdf" target="_blank">View TS PDF (AC Sources)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-8-2.pdf" target="_blank">View TS PDF (DC Sources)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-8-3.pdf" target="_blank">View TS PDF (Distribution)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-8.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

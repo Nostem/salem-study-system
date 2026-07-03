@@ -8,6 +8,10 @@ aliases:
   - refueling RHR
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-9.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-9.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 3/4.9 — Refueling Operations
 
 ## 3/4.9.1 — Boron Concentration
@@ -339,9 +343,7 @@ LCO 3.0.3 not applicable.
 With S2.OP-IO.ZZ-0010 (SFP Manipulations) in effect, a tubing break causes total loss of air to <span class="hi-exam">21 FHB Supply Fan Inlet Damper</span>. The Inlet Damper is <span class="hi-exam">interlocked to open when its Supply Fan is started, and fails closed on loss of air</span>. With no air supply, the supply fan must be considered <span class="hi-exam">inoperable even though it remains running</span>. Consequence: <span class="hi-exam">declare FHV inoperable based on not having ALL FHV fans operable</span>. Per LCO 3.9.12.a action a: <span class="hi-exam">suspend all operations involving movement of fuel within the storage pool</span> until FHV is restored to operable. <span class="hi-trap">Trap C/D: operability does NOT depend on FHB D/P becoming positive — with no air supply, the supply fan is inoperable regardless. With no supply fan and 2 exhaust fans in service, building pressure will remain negative, but the FHV system is still inoperable per Part a of the LCO.</span> <span class="hi-trap">Trap B/D: the LCO action suspends fuel movement within the STORAGE POOL — not all fuel movement in the Fuel Handling Building.</span>
 </div>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-9.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-9.pdf" target="_blank">View Bases PDF</a>
 
 ## Exam & Operating Coverage
 

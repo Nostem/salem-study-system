@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 import { buildWikilinkMap } from './src/utils/wikilink-map';
 import remarkWikilinks from './src/plugins/remark-wikilinks';
+import remarkStripFirstH1 from './src/plugins/remark-strip-first-h1';
 import remarkStaticAssetLinks, { rehypeStaticAssetLinks } from './src/plugins/remark-static-asset-links';
 
 const isVercel = process.env.VERCEL === '1' || process.env.VERCEL === 'true';
@@ -27,6 +28,7 @@ export default defineConfig({
   },
   markdown: {
     remarkPlugins: [
+      remarkStripFirstH1,
       [remarkStaticAssetLinks, { basePath }],
       [remarkWikilinks, { wikilinkMap, basePath }],
     ],

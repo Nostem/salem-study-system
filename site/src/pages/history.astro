@@ -156,6 +156,15 @@ const loginHref = `${base}login/?next=${encodeURIComponent(historyPath)}`;
       document.querySelector<HTMLElement>('[data-history-summary="average"]')!.textContent = formatPercent(data.summary.averageScore);
       document.querySelector<HTMLElement>('[data-history-summary="pass-rate"]')!.textContent = formatPercent(data.summary.passRate);
       document.querySelector<HTMLElement>('[data-history-summary="last"]')!.textContent = data.summary.lastCompletedAt ? formatDate(data.summary.lastCompletedAt) : '—';
+      // An all-dashes/zero dashboard is indistinguishable from a real zero
+      // state — hide the block entirely when the backend omits the optional
+      // analytics fields.
+      const analyticsSection = document.querySelector<HTMLElement>('[data-testid="history-personal-analytics"]');
+      const hasAnalytics = data.summary.overallAccuracy != null
+        || data.summary.dueReviewCount != null
+        || data.summary.shakyCount != null
+        || data.summary.masteredCount != null;
+      analyticsSection?.classList.toggle('hidden', !hasAnalytics);
       document.querySelector<HTMLElement>('[data-history-analytics="accuracy"]')!.textContent = data.summary.overallAccuracy == null ? '—' : formatPercent(data.summary.overallAccuracy);
       document.querySelector<HTMLElement>('[data-history-analytics="due"]')!.textContent = String(data.summary.dueReviewCount ?? 0);
       document.querySelector<HTMLElement>('[data-history-analytics="shaky"]')!.textContent = String(data.summary.shakyCount ?? 0);
