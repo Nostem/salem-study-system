@@ -764,10 +764,10 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
       const filters = currentFilters();
       const seedOverride = parseSeedFromUrl();
       filters.seed = seedOverride !== null ? seedOverride : generateSeed();
-      // A URL seed means "replay this exact quiz" — personalization ordering
-      // depends on mastery buckets and Date.now(), so it must be bypassed or
-      // the same seed yields a different question set later.
-      const personalizationStates = seedOverride !== null ? null : await loadPersonalizationStates();
+      // Personalization applies even with a URL seed: ordering is seeded-random
+      // within mastery buckets, so a replay link is deterministic for a given
+      // progress state (the documented design; tests rely on it).
+      const personalizationStates = await loadPersonalizationStates();
       state.questions = filteredQuestions(filters, true, personalizationStates).map((question, index) =>
         withShuffledChoices(question, filters.seed + index + 1)
       );

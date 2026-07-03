@@ -178,11 +178,13 @@ schedules. *Fix:* pick one owner of `next_review_at` (route quiz results
 through the FSRS scheduler as good/again, or don't touch scheduling from the
 quiz path when FSRS state exists).
 
-**C-7. Seeded replays aren't reproducible.** `quiz.astro:743-746` always
-loads personalization state and applies it even when the URL carries a
-`seed`; bucket ordering depends on mastery + `Date.now()`, so a "replay this
-exact quiz" link yields different questions later. *Fix:* bypass
-personalization when a URL seed is present.
+**C-7 (withdrawn — intended behavior).** Seeded replays incorporate
+personalization by design: a seed makes ordering deterministic *for a given
+progress state* (README "How Quick Quiz chooses questions"; the Playwright
+personalization tests inject states and assert seeded order on top). A
+bypass was tried during the fix pass and reverted after it broke the
+documented design. If exact long-term replay is ever wanted, add an explicit
+`replay=1` flag rather than changing seed semantics.
 
 **C-8. The canonical data build reads the whole wiki 3×.**
 `build_quiz_data.py` shells out to 5 CLIs; `audit`, `stage`, and
