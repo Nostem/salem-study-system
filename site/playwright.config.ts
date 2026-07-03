@@ -6,6 +6,11 @@ export default defineConfig({
   timeout: 30000,
   use: {
     baseURL: 'http://localhost:4321/salem-study-system/',
+    // Sandboxed environments with a pre-installed Chromium (and no access to
+    // cdn.playwright.dev) can point tests at it instead of downloading.
+    launchOptions: process.env.PLAYWRIGHT_CHROMIUM_PATH
+      ? { executablePath: process.env.PLAYWRIGHT_CHROMIUM_PATH }
+      : {},
   },
   webServer: {
     // Serve the already-built dist/ (do NOT rebuild here). CI builds once before the smoke
