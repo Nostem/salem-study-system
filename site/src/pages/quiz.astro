@@ -1,6 +1,5 @@
 ---
 import StudyLayout from '../layouts/StudyLayout.astro';
-import { safeInlineJson } from '../utils/safe-json';
 import { buildQuizSummary, getExamYears, getQuizTopicGroups, quizBank } from '../utils/quiz-data';
 
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
@@ -39,7 +38,7 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     </div>
   </section>
 
-  <main id="quiz-app" data-testid="quiz-app" class="hidden max-w-[1180px] mx-auto px-6 py-8 lg:py-10">
+  <main id="quiz-app" data-testid="quiz-app" data-bank-url={`${base}data/quiz-bank-client.json`} class="hidden max-w-[1180px] mx-auto px-6 py-8 lg:py-10">
     <header class="flex flex-col gap-4 border-b border-border pb-6 mb-6 lg:flex-row lg:items-end lg:justify-between">
       <div>
         <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
@@ -239,8 +238,6 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     </section>
   </main>
 
-  <script type="application/json" id="quiz-bank-json" set:html={safeInlineJson(quizBank)} />
-
   <script>
     import { getCurrentSession, hasSupabaseConfig } from '../utils/auth-client';
 
@@ -270,7 +267,18 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     import { getQuizReviewQueue, submitQuizResults, getActiveSession, EdgeFunctionError } from '../utils/auth-client';
     import { personalizeQuestionOrder } from '../utils/quiz-personalization';
 
-    const bank = JSON.parse(document.getElementById('quiz-bank-json').textContent);
+    // The bank ships as a separately-cacheable static asset instead of ~5 MB
+    // of JSON inlined into this page's HTML.
+    async function loadQuizBank() {
+      const url = document.getElementById('quiz-app')?.dataset.bankUrl ?? '/data/quiz-bank-client.json';
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`quiz bank fetch failed: ${response.status}`);
+      return response.json();
+    }
+    const bank = await loadQuizBank().catch((error) => {
+      console.error('Quick Quiz bank failed to load:', error);
+      return { questions: [] };
+    });
     const form = document.getElementById('quiz-builder');
     const emptyState = document.getElementById('quiz-empty-state');
     const draftResumeEl = document.getElementById('quiz-draft-resume');
