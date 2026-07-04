@@ -59,3 +59,5 @@ jobs:
           order by created_at desc
           limit 5;
           SQL
+
+# Touched 2026-07-04 to re-run verification after the post-deploy test quiz.
