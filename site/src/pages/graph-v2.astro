@@ -44,6 +44,30 @@ const topicCards = graph.nodes
   .filter((entry) => entry.quizHref && entry.eligibleQuestions.length > 0)
   .sort((a, b) => b.eligibleQuestions.length - a.eligibleQuestions.length || a.node.title.localeCompare(b.node.title));
 
+// ~250 equally-weighted cards in one grid is choice paralysis. Group them by
+// topic type into collapsible sections; the first is open by default and
+// searching opens every group with a match.
+const TOPIC_GROUPS: { key: string; label: string }[] = [
+  { key: 'system', label: 'Systems' },
+  { key: 'eop', label: 'EOPs' },
+  { key: 'abnormal', label: 'Abnormal procedures' },
+  { key: 'tech_spec', label: 'Tech Specs' },
+  { key: 'procedure', label: 'Operating procedures' },
+  { key: 'admin', label: 'Admin & programs' },
+];
+const groupedTopicCards = TOPIC_GROUPS
+  .map((group) => ({
+    ...group,
+    cards: topicCards.filter((entry) => (entry.node.subcategory ?? '') === group.key),
+  }))
+  .filter((group) => group.cards.length > 0);
+const ungroupedTopicCards = topicCards.filter(
+  (entry) => !TOPIC_GROUPS.some((group) => group.key === (entry.node.subcategory ?? ''))
+);
+if (ungroupedTopicCards.length > 0) {
+  groupedTopicCards.push({ key: 'other', label: 'Other topics', cards: ungroupedTopicCards });
+}
+
 ---
 
 <StudyLayout title="Study Map" active="map">
@@ -84,34 +108,48 @@ const topicCards = graph.nodes
           />
         </label>
       </div>
-      <div class="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
-        {topicCards.map(({ node, openHref, quizHref, eligibleQuestions }) => (
-          <article
-            class="gv2-topic-card rounded-lg border border-border bg-bg-card p-4 shadow-sm"
-            data-testid={`gv2-topic-card-${node.id}`}
-            data-search={`${node.title} ${node.slug} ${node.subcategory ?? ''}`.toLowerCase()}
+      <div class="flex flex-col gap-3">
+        {groupedTopicCards.map((group, groupIndex) => (
+          <details
+            class="gv2-topic-group rounded-lg border border-border bg-bg-surface"
+            data-testid={`gv2-topic-group-${group.key}`}
+            open={groupIndex === 0}
           >
-            <div class="flex items-start justify-between gap-3">
-              <div class="min-w-0">
-                <h3 class="text-base font-semibold text-text-primary leading-snug">{node.title}</h3>
-                <p class="mt-1 text-sm text-text-muted">{eligibleQuestions.length} practice question{eligibleQuestions.length === 1 ? '' : 's'}</p>
-              </div>
-              <label class="shrink-0 rounded border border-border bg-bg/60 px-2 py-1 text-[11px] text-text-muted">
-                <input
-                  type="checkbox"
-                  data-gv2-builder-toggle={node.id}
-                  data-pool={eligibleQuestions.map((q) => q.slug).join(',')}
-                  class="mr-1 align-middle"
-                  aria-label={`Add ${node.title} to combined practice`}
-                />
-                Add
-              </label>
+            <summary class="flex cursor-pointer items-center justify-between gap-3 px-4 py-3">
+              <span class="text-base font-semibold text-text-primary">{group.label}</span>
+              <span class="font-mono text-[11px] uppercase tracking-wider text-text-muted">{group.cards.length} topics</span>
+            </summary>
+            <div class="grid grid-cols-1 gap-3 px-4 pb-4 sm:grid-cols-2 lg:grid-cols-3">
+              {group.cards.map(({ node, openHref, quizHref, eligibleQuestions }) => (
+                <article
+                  class="gv2-topic-card rounded-lg border border-border bg-bg-card p-4 shadow-sm"
+                  data-testid={`gv2-topic-card-${node.id}`}
+                  data-search={`${node.title} ${node.slug} ${node.subcategory ?? ''}`.toLowerCase()}
+                >
+                  <div class="flex items-start justify-between gap-3">
+                    <div class="min-w-0">
+                      <h3 class="text-base font-semibold text-text-primary leading-snug">{node.title}</h3>
+                      <p class="mt-1 text-sm text-text-muted">{eligibleQuestions.length} practice question{eligibleQuestions.length === 1 ? '' : 's'}</p>
+                    </div>
+                    <label class="shrink-0 rounded border border-border bg-bg/60 px-2 py-1 text-[11px] text-text-muted">
+                      <input
+                        type="checkbox"
+                        data-gv2-builder-toggle={node.id}
+                        data-pool={eligibleQuestions.map((q) => q.slug).join(',')}
+                        class="mr-1 align-middle"
+                        aria-label={`Add ${node.title} to combined practice`}
+                      />
+                      Add
+                    </label>
+                  </div>
+                  <div class="mt-4 flex flex-wrap gap-2 text-sm">
+                    <a href={quizHref} class="rounded border border-accent-blue/70 px-3 py-2 text-accent-blue no-underline hover:bg-accent-blue/10">Practice this topic</a>
+                    {openHref && <a href={openHref} class="rounded border border-border px-3 py-2 text-text-primary no-underline hover:border-accent-blue hover:text-accent-blue">Read wiki page</a>}
+                  </div>
+                </article>
+              ))}
             </div>
-            <div class="mt-4 flex flex-wrap gap-2 text-sm">
-              <a href={quizHref} class="rounded border border-accent-blue/70 px-3 py-2 text-accent-blue no-underline hover:bg-accent-blue/10">Practice this topic</a>
-              {openHref && <a href={openHref} class="rounded border border-border px-3 py-2 text-text-primary no-underline hover:border-accent-blue hover:text-accent-blue">Read wiki page</a>}
-            </div>
-          </article>
+          </details>
         ))}
       </div>
       <p id="gv2-topic-no-results" data-testid="gv2-topic-no-results" class="hidden mt-3 rounded border border-border bg-bg-card px-3 py-2 text-sm text-text-muted">No practice-ready topics match that search.</p>
@@ -741,6 +779,15 @@ const topicCards = graph.nodes
         card.classList.toggle('hidden', !matches);
         if (matches) visible++;
       });
+      // A search should look across every group: open groups with matches,
+      // hide groups without any. Clearing the search restores default state
+      // (first group open).
+      document.querySelectorAll<HTMLDetailsElement>('.gv2-topic-group').forEach((group, index) => {
+        const matchesInGroup = group.querySelectorAll('.gv2-topic-card:not(.hidden)').length;
+        group.classList.toggle('hidden', search.length > 0 && matchesInGroup === 0);
+        if (search) group.open = matchesInGroup > 0;
+        else group.open = index === 0;
+      });
       document.getElementById('gv2-topic-no-results')?.classList.toggle('hidden', visible !== 0);
     });
 
@@ -776,7 +823,7 @@ const topicCards = graph.nodes
     background: var(--color-bg, transparent);
     border-left: 3px solid var(--color-accent-blue, #4aa);
   }
-  .gv2-item.hidden, .gv2-topic-card.hidden { display: none; }
+  .gv2-item.hidden, .gv2-topic-card.hidden, .gv2-topic-group.hidden { display: none; }
   @media (max-width: 640px) {
     #gv2-list { max-height: 42vh; }
     #gv2-search, #gv2-kind, #gv2-edge-type { min-height: 44px; }

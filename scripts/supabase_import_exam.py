@@ -12,6 +12,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 import tempfile
 from pathlib import Path
@@ -20,6 +21,9 @@ from typing import Any, Dict, Iterable, List, Mapping, Tuple
 
 class ImportReadinessError(ValueError):
     """Raised when a staging bundle cannot be safely imported."""
+
+
+PSQL_BIN_DEFAULT = shutil.which("psql") or "psql"
 
 
 REQUIRED_BUNDLE_KEYS = (
@@ -743,7 +747,7 @@ def _run_psql_file(path: Path, env: Mapping[str, str], psql_bin: str) -> None:
         raise ImportReadinessError(_redact_process_output(proc.stderr.strip() or proc.stdout.strip()))
 
 
-def fetch_db_snapshot(bundle: Mapping[str, Any], env: Mapping[str, str] | None = None, psql_bin: str = "/opt/homebrew/opt/libpq/bin/psql") -> Dict[str, Any]:
+def fetch_db_snapshot(bundle: Mapping[str, Any], env: Mapping[str, str] | None = None, psql_bin: str = PSQL_BIN_DEFAULT) -> Dict[str, Any]:
     output = _run_psql_sql(generate_sync_snapshot_sql(bundle), env or os.environ, psql_bin)
     try:
         return json.loads(output)
@@ -756,7 +760,7 @@ def run_sync(
     db_snapshot: Mapping[str, Any] | None = None,
     apply: bool = False,
     env: Mapping[str, str] | None = None,
-    psql_bin: str = "/opt/homebrew/opt/libpq/bin/psql",
+    psql_bin: str = PSQL_BIN_DEFAULT,
 ) -> Dict[str, Any]:
     snapshot = db_snapshot or fetch_db_snapshot(bundle, env, psql_bin)
     before = build_sync_plan(bundle, snapshot)
@@ -810,7 +814,7 @@ def main(argv: List[str] | None = None) -> int:
     sync.add_argument("--snapshot", help="Optional offline DB snapshot JSON; when omitted, psql reads Supabase")
     sync.add_argument("--out", help="Optional JSON report path")
     sync.add_argument("--apply", action="store_true", help="Apply the generated import/upsert SQL after producing the dry-run plan")
-    sync.add_argument("--psql-bin", default="/opt/homebrew/opt/libpq/bin/psql", help="psql binary path for live sync")
+    sync.add_argument("--psql-bin", default=PSQL_BIN_DEFAULT, help="psql binary path for live sync")
 
     snapshot_sql = subparsers.add_parser("snapshot-sql", help="Generate SQL that returns the current DB content snapshot as JSON.")
     snapshot_sql.add_argument("--bundle", required=True, help="Path to supabase-staging-*.json")

@@ -19,8 +19,22 @@ for (const edge of fullGraph.edges) {
   if (edge.target === currentSlug) connectedSlugs.add(edge.source);
 }
 
-const localNodes = fullGraph.nodes.filter(n => connectedSlugs.has(n.id));
-const localEdges = fullGraph.edges.filter(e => connectedSlugs.has(e.source) && connectedSlugs.has(e.target));
+// Hub articles (RCS, big EOPs) have hundreds of 1-hop neighbors — rendered
+// raw, the mini-graph is an unreadable hairball. Keep the strongest ~24
+// neighbors (wiki articles over exam-question dots, then by connectivity)
+// and point to the full Study Map for the rest.
+const MAX_NEIGHBORS = 24;
+const nodeById = new Map(fullGraph.nodes.map(n => [n.id, n]));
+const rankedNeighbors = [...connectedSlugs]
+  .filter(slug => slug !== currentSlug)
+  .map(slug => nodeById.get(slug))
+  .filter((node): node is NonNullable<typeof node> => Boolean(node))
+  .sort((a, b) => Number(a.isExam) - Number(b.isExam) || b.connections - a.connections);
+const keptSlugs = new Set([currentSlug, ...rankedNeighbors.slice(0, MAX_NEIGHBORS).map(n => n.id)]);
+const truncatedCount = Math.max(0, rankedNeighbors.length - MAX_NEIGHBORS);
+
+const localNodes = fullGraph.nodes.filter(n => keptSlugs.has(n.id));
+const localEdges = fullGraph.edges.filter(e => keptSlugs.has(e.source) && keptSlugs.has(e.target));
 
 const localGraph = { nodes: localNodes, edges: localEdges, currentSlug };
 ---
@@ -31,6 +45,12 @@ const localGraph = { nodes: localNodes, edges: localEdges, currentSlug };
       Connections
     </div>
     <div id="local-graph" class="w-full rounded-md border border-[#1a2035] bg-[#0a0e17]" style="aspect-ratio: 1 / 1;"></div>
+    {truncatedCount > 0 && (
+      <div class="mt-1.5 text-[10px] text-[#8b95a5]">
+        Showing the {MAX_NEIGHBORS} strongest connections ({truncatedCount} more) —
+        <a href={`${base}graph-v2/`} class="text-[#60a5fa] no-underline hover:underline">open Study Map</a>
+      </div>
+    )}
   </div>
 )}
 

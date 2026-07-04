@@ -39,13 +39,11 @@ type ChoiceRow = {
   id: string;
   question_id: string;
   label: string;
-  choice_text: string | null;
   is_correct: boolean;
-  explanation_text: string | null;
 };
 
 type QuestionSnapshot = {
-  version: 1;
+  version: 2;
   slug: string;
   examYear: number;
   questionNumber: number;
@@ -61,12 +59,10 @@ type QuestionSnapshot = {
   selectedOriginalLabel: string | null;
   isCorrect: boolean;
   choiceOrder: Record<string, string> | string[] | null;
-  choices: Array<{
-    label: string;
-    text: string | null;
-    isCorrect: boolean;
-    explanationText: string | null;
-  }>;
+  // Topic slugs let history keep weak-topic stats even after the live
+  // question row is deleted. Full choice rows are deliberately NOT stored:
+  // history never reads them and they dominated snapshot size (v1).
+  topicSlugs: string[];
 };
 
 function normalizeFeedbackMode(value: unknown): 'immediate' | 'blind' {
@@ -117,7 +113,7 @@ function originalLabelFromSubmittedChoice(selectedLabel: string | null, selected
 
 function questionSnapshot(
   question: QuestionRow,
-  choices: ChoiceRow[],
+  topicSlugs: string[],
   submitted: {
     selectedLabel: string | null;
     selectedOriginalLabel: string | null;
@@ -126,7 +122,7 @@ function questionSnapshot(
   }
 ): QuestionSnapshot {
   return {
-    version: 1,
+    version: 2,
     slug: question.slug,
     examYear: question.exam_year,
     questionNumber: question.question_number,
@@ -142,14 +138,7 @@ function questionSnapshot(
     selectedOriginalLabel: submitted.selectedOriginalLabel,
     isCorrect: submitted.is_correct,
     choiceOrder: submitted.choiceOrder,
-    choices: [...choices]
-      .sort((a, b) => a.label.localeCompare(b.label))
-      .map((choice) => ({
-        label: choice.label,
-        text: choice.choice_text,
-        isCorrect: Boolean(choice.is_correct),
-        explanationText: choice.explanation_text,
-      })),
+    topicSlugs,
   };
 }
 
@@ -193,6 +182,9 @@ Deno.serve(async (req) => {
   }
 
   const slugs = [...new Set(submittedQuestions.map((question) => question.slug))];
+  if (slugs.length !== submittedQuestions.length) {
+    return jsonResponse({ error: 'duplicate_question_slug' }, 400, req);
+  }
   const { data: questionRows, error: questionsError } = await admin
     .from('questions')
     .select('id, slug, exam_year, question_number, track, title, status, quiz_eligible, is_redacted, accepted_answer_labels, explanation_text')
@@ -209,16 +201,23 @@ Deno.serve(async (req) => {
   const questionIds = slugs.map((slug) => questionBySlug.get(slug)!.id);
   const { data: choiceRows, error: choicesError } = await admin
     .from('choices')
-    .select('id, question_id, label, choice_text, is_correct, explanation_text')
+    .select('id, question_id, label, is_correct')
     .in('question_id', questionIds);
   if (choicesError) return jsonResponse({ error: 'choice_lookup_failed' }, 500, req);
 
   const candidateChoices = (choiceRows ?? []) as ChoiceRow[];
-  const choicesByQuestion = new Map<string, ChoiceRow[]>();
-  for (const choice of candidateChoices) {
-    const choices = choicesByQuestion.get(choice.question_id) ?? [];
-    choices.push(choice);
-    choicesByQuestion.set(choice.question_id, choices);
+
+  const { data: topicRows, error: topicsError } = await admin
+    .from('question_topics')
+    .select('question_id, topics(slug)')
+    .in('question_id', questionIds);
+  if (topicsError) return jsonResponse({ error: 'topic_lookup_failed' }, 500, req);
+  const topicSlugsByQuestion = new Map<string, string[]>();
+  for (const row of (topicRows ?? []) as Array<{ question_id: string; topics: { slug: string } | null }>) {
+    if (!row.topics?.slug) continue;
+    const slugsForQuestion = topicSlugsByQuestion.get(row.question_id) ?? [];
+    if (!slugsForQuestion.includes(row.topics.slug)) slugsForQuestion.push(row.topics.slug);
+    topicSlugsByQuestion.set(row.question_id, slugsForQuestion);
   }
 
   const choiceByQuestionAndLabel = new Map<string, { id: string; is_correct: boolean }>();
@@ -269,7 +268,7 @@ Deno.serve(async (req) => {
   const score = scoringQuestions.length > 0 ? correctCount / scoringQuestions.length : 0;
 
   let session: { id: string };
-  let questionsSnapshotted = resolvedQuestions.length;
+  const questionsSnapshotted = resolvedQuestions.length;
   const requestedSessionId = typeof body.quizSessionId === 'string' && body.quizSessionId.trim()
     ? body.quizSessionId.trim()
     : null;
@@ -303,12 +302,6 @@ Deno.serve(async (req) => {
       .eq('user_id', userId);
     if (updateSessionError) return jsonResponse({ error: 'quiz_session_update_failed' }, 500, req);
     session = { id: requestedSessionId };
-
-    const { error: deleteSnapshotError } = await admin
-      .from('quiz_session_questions')
-      .delete()
-      .eq('quiz_session_id', requestedSessionId);
-    if (deleteSnapshotError) return jsonResponse({ error: 'quiz_session_questions_refresh_failed' }, 500, req);
   } else {
     const { data: insertedSession, error: sessionError } = await admin
       .from('quiz_sessions')
@@ -327,24 +320,20 @@ Deno.serve(async (req) => {
     session = insertedSession;
   }
 
-  const { error: sessionQuestionsError } = await admin.from('quiz_session_questions').insert(
-    resolvedQuestions.map((question) => {
-      const questionRow = questionBySlug.get(question.slug)!;
-      return {
-        quiz_session_id: session.id,
-        question_id: question.questionId,
-        position: question.position,
-        choice_order: question.choiceOrder,
-        question_snapshot: questionSnapshot(questionRow, choicesByQuestion.get(question.questionId) ?? [], question),
-      };
-    })
-  );
-  if (sessionQuestionsError) return jsonResponse({ error: 'quiz_session_questions_insert_failed' }, 500, req);
+  const snapshotRows = resolvedQuestions.map((question) => {
+    const questionRow = questionBySlug.get(question.slug)!;
+    return {
+      question_id: question.questionId,
+      position: question.position,
+      choice_order: question.choiceOrder,
+      question_snapshot: questionSnapshot(questionRow, topicSlugsByQuestion.get(question.questionId) ?? [], question),
+    };
+  });
 
   // Idempotency: a client retry on the same quizSessionId must not double-count.
-  // Load any prior question_attempts for this session, subtract them from the
-  // cumulative user_question_state counters, then delete the rows before
-  // re-inserting fresh attempts below.
+  // Read any prior question_attempts for this session (read-only here — the
+  // atomic RPC below replaces them) and subtract them from the cumulative
+  // user_question_state baselines.
   const priorAttemptCounts = new Map<string, { attempts: number; correct: number; incorrect: number }>();
   if (requestedSessionId) {
     const { data: priorAttempts, error: priorAttemptsError } = await admin
@@ -360,20 +349,10 @@ Deno.serve(async (req) => {
       else counts.incorrect += 1;
       priorAttemptCounts.set(prior.question_id, counts);
     }
-    if ((priorAttempts ?? []).length > 0) {
-      const { error: deleteAttemptsError } = await admin
-        .from('question_attempts')
-        .delete()
-        .eq('quiz_session_id', requestedSessionId)
-        .eq('user_id', userId);
-      if (deleteAttemptsError) return jsonResponse({ error: 'question_attempts_refresh_failed' }, 500, req);
-    }
   }
 
   const attemptSourceQuestions = completionMode === 'early' ? answeredQuestions : resolvedQuestions;
   const attemptRows = attemptSourceQuestions.map((question) => ({
-    user_id: userId,
-    quiz_session_id: session.id,
     question_id: question.questionId,
     selected_choice_id: question.selectedChoiceId,
     is_correct: question.is_correct,
@@ -381,26 +360,19 @@ Deno.serve(async (req) => {
     submitted_at: now,
   }));
 
-  let attempts: { id: string; question_id: string; is_correct: boolean }[] = [];
-  if (attemptRows.length > 0) {
-    const { data: insertedAttempts, error: attemptsError } = await admin
-      .from('question_attempts')
-      .insert(attemptRows)
-      .select('id, question_id, is_correct');
-    if (attemptsError) return jsonResponse({ error: 'question_attempts_insert_failed' }, 500, req);
-    attempts = insertedAttempts ?? [];
-  }
-
+  // Include prior-attempt question ids: a re-submission with a different
+  // question set must reconcile (not zero) state for dropped questions.
+  const stateQuestionIds = [...new Set([...questionIds, ...priorAttemptCounts.keys()])];
   const { data: existingStates, error: stateLookupError } = await admin
     .from('user_question_state')
-    .select('question_id, attempts_count, correct_count, incorrect_count, last_correct_at, flagged, review_lapses')
+    .select('question_id, attempts_count, correct_count, incorrect_count, last_correct_at, flagged, review_lapses, review_reps, fsrs_stability, next_review_at')
     .eq('user_id', userId)
-    .in('question_id', questionIds);
+    .in('question_id', stateQuestionIds);
   if (stateLookupError) return jsonResponse({ error: 'state_lookup_failed' }, 500, req);
 
   const existingByQuestion = new Map((existingStates ?? []).map((state) => [state.question_id, state]));
   const attemptCounts = new Map<string, { attempts: number; correct: number; incorrect: number }>();
-  for (const attempt of attempts ?? []) {
+  for (const attempt of attemptRows) {
     const counts = attemptCounts.get(attempt.question_id) ?? { attempts: 0, correct: 0, incorrect: 0 };
     counts.attempts += 1;
     if (attempt.is_correct) counts.correct += 1;
@@ -421,6 +393,10 @@ Deno.serve(async (req) => {
     const correctCountForQuestion = baselineCorrect + counts.correct;
     const incorrectCountForQuestion = baselineIncorrect + counts.incorrect;
     const lapsesForQuestion = Number(existing?.review_lapses ?? 0);
+    // FSRS owns scheduling once a question has real review state: quiz answers
+    // must not clobber a schedule that submit-question-review computed. Only
+    // fall back to the coarse quiz formula for questions FSRS has never seen.
+    const hasFsrsSchedule = Number(existing?.review_reps ?? 0) > 0 || existing?.fsrs_stability != null;
     return {
       user_id: userId,
       question_id: questionId,
@@ -431,23 +407,30 @@ Deno.serve(async (req) => {
       last_correct_at: counts.correct > 0 ? now : (existing?.last_correct_at ?? null),
       flagged: Boolean(existing?.flagged ?? false),
       mastery_state: masteryState(attemptsCount, correctCountForQuestion, incorrectCountForQuestion, lapsesForQuestion),
-      next_review_at: nextReviewAt(now, counts.correct, counts.incorrect),
+      next_review_at: hasFsrsSchedule
+        ? (existing?.next_review_at ?? null)
+        : nextReviewAt(now, counts.correct, counts.incorrect),
       updated_at: now,
     };
   });
 
-  if (stateRows.length > 0) {
-    const { error: upsertStateError } = await admin
-      .from('user_question_state')
-      .upsert(stateRows, { onConflict: 'user_id,question_id' });
-    if (upsertStateError) return jsonResponse({ error: 'user_question_state_upsert_failed' }, 500, req);
-  }
+  // All destructive writes happen in one transaction: replace this session's
+  // snapshots and attempts, then upsert learner state. A mid-way failure can
+  // no longer leave the session half-written with the prior data already gone.
+  const { error: writeError } = await admin.rpc('replace_quiz_session_writes', {
+    p_user_id: userId,
+    p_session_id: session.id,
+    p_snapshots: snapshotRows,
+    p_attempts: attemptRows,
+    p_states: stateRows,
+  });
+  if (writeError) return jsonResponse({ error: 'quiz_session_write_failed' }, 500, req);
 
   return jsonResponse({
     ok: true,
     quizSessionId: session.id,
     questionsSnapshotted,
-    attemptsInserted: attempts?.length ?? 0,
+    attemptsInserted: attemptRows.length,
     score,
   }, 200, req);
 });

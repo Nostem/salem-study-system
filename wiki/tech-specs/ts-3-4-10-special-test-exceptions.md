@@ -8,6 +8,10 @@ aliases:
   - no flow tests
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-10.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-10.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 3/4.10 — Special Test Exceptions
 
 ## 3/4.10.1 — Shutdown Margin
@@ -166,9 +170,7 @@ Power is limited below the P-7 interlock setpoint to ensure automatic reactor tr
 </div>
 </details>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-10.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-10.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

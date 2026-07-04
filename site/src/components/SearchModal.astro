@@ -111,6 +111,25 @@ const pagefindAssetDir = explicitPagefindAssetDir
   }
   document.addEventListener('astro:page-load', bindSearchTriggers);
 
+  // Pagefind excerpts are HTML with <mark> highlights. Build them as text
+  // nodes + real <mark> elements (never innerHTML — excerpts derive from
+  // article content) and strip any other tags.
+  function appendExcerpt(container, excerptHtml) {
+    const stripTags = (value) => value.replace(/<[^>]*>/g, '');
+    const parts = String(excerptHtml).split(/<mark>([\s\S]*?)<\/mark>/g);
+    parts.forEach((part, index) => {
+      const text = stripTags(part);
+      if (!text) return;
+      if (index % 2 === 1) {
+        const mark = document.createElement('mark');
+        mark.textContent = text;
+        container.appendChild(mark);
+      } else {
+        container.appendChild(document.createTextNode(text));
+      }
+    });
+  }
+
   function renderSearchResults(results, items) {
     clearResults(results);
     for (const item of items) {
@@ -125,7 +144,7 @@ const pagefindAssetDir = explicitPagefindAssetDir
 
       const excerpt = document.createElement('div');
       excerpt.className = 'text-xs text-[#8b95a5] mt-0.5 line-clamp-2';
-      excerpt.textContent = item.excerpt || '';
+      appendExcerpt(excerpt, item.excerpt || '');
 
       link.appendChild(title);
       link.appendChild(excerpt);

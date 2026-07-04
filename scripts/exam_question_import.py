@@ -541,13 +541,25 @@ def _topic_map_target_resolves(
     return any(variant in known_wiki_slugs for variant in slug_variants(target))
 
 
-def build_wiki_slug_index(root: str | Path) -> set[str]:
+def load_wiki_files(root: str | Path) -> List[Tuple[Path, str]]:
+    """Read every wiki markdown file once so index builders can share one scan."""
+    root = Path(root)
+    return [
+        (path, path.read_text(encoding="utf-8"))
+        for path in sorted((root / "wiki").rglob("*.md"))
+    ]
+
+
+def build_wiki_slug_index(
+    root: str | Path, wiki_files: List[Tuple[Path, str]] | None = None
+) -> set[str]:
     """Build a slug/alias index for resolving Obsidian-style wikilinks."""
     root = Path(root)
+    if wiki_files is None:
+        wiki_files = load_wiki_files(root)
     slugs: set[str] = set()
-    for path in (root / "wiki").rglob("*.md"):
+    for path, raw in wiki_files:
         slugs.update(slug_variants(path.stem))
-        raw = path.read_text(encoding="utf-8")
         frontmatter, _ = parse_frontmatter(raw)
         title = frontmatter.get("title")
         if title:
@@ -557,14 +569,22 @@ def build_wiki_slug_index(root: str | Path) -> set[str]:
     return {slug for slug in slugs if slug}
 
 
-def build_wiki_section_slug_index(root: str | Path, section: str) -> set[str]:
+def build_wiki_section_slug_index(
+    root: str | Path, section: str, wiki_files: List[Tuple[Path, str]] | None = None
+) -> set[str]:
     """Build a slug/alias index for one top-level wiki section."""
     root = Path(root)
     section_root = root / "wiki" / section
+    if wiki_files is None:
+        wiki_files = [
+            (path, path.read_text(encoding="utf-8"))
+            for path in section_root.rglob("*.md")
+        ]
     slugs: set[str] = set()
-    for path in section_root.rglob("*.md"):
+    for path, raw in wiki_files:
+        if not path.is_relative_to(section_root):
+            continue
         slugs.update(slug_variants(path.stem))
-        raw = path.read_text(encoding="utf-8")
         frontmatter, _ = parse_frontmatter(raw)
         title = frontmatter.get("title")
         if title:
@@ -594,7 +614,9 @@ def _wiki_section_topic_type(section: str) -> str | None:
     }.get(section)
 
 
-def build_wiki_topic_link_index(root: str | Path) -> Dict[str, Dict[str, str]]:
+def build_wiki_topic_link_index(
+    root: str | Path, wiki_files: List[Tuple[Path, str]] | None = None
+) -> Dict[str, Dict[str, str]]:
     """Map wiki link text/title/aliases to canonical quiz topic metadata.
 
     Question pages already carry rich Obsidian connections. This index resolves
@@ -603,15 +625,16 @@ def build_wiki_topic_link_index(root: str | Path) -> Dict[str, Dict[str, str]]:
     slug and topic type so the quiz bank can expose them as stable filters.
     """
     root = Path(root)
+    if wiki_files is None:
+        wiki_files = load_wiki_files(root)
     links: Dict[str, Dict[str, str]] = {}
-    for path in sorted((root / "wiki").rglob("*.md")):
+    for path, raw in wiki_files:
         rel = path.relative_to(root / "wiki")
         section = rel.parts[0] if rel.parts else ""
         topic_type = _wiki_section_topic_type(section)
         if topic_type is None:
             continue
 
-        raw = path.read_text(encoding="utf-8")
         frontmatter, _ = parse_frontmatter(raw)
         title = str(frontmatter.get("title") or path.stem).strip()
         metadata = {
@@ -815,7 +838,11 @@ def _question_row(record: Dict[str, Any], question_slug: str | None = None) -> D
     }
 
 
-def build_supabase_staging_bundle(records: List[Dict[str, Any]], root: str | Path | None = None) -> Dict[str, Any]:
+def build_supabase_staging_bundle(
+    records: List[Dict[str, Any]],
+    root: str | Path | None = None,
+    wiki_files: List[Tuple[Path, str]] | None = None,
+) -> Dict[str, Any]:
     """Split normalized records into deterministic natural-key rows for Supabase staging."""
     years = sorted({record.get("exam_year") for record in records if record.get("exam_year") is not None})
     sources = [
@@ -835,8 +862,8 @@ def build_supabase_staging_bundle(records: List[Dict[str, Any]], root: str | Pat
     choices: List[Dict[str, Any]] = []
     question_references: List[Dict[str, Any]] = []
     question_topics: List[Dict[str, Any]] = []
-    admin_slug_index = build_wiki_section_slug_index(root, "admin") if root is not None else set()
-    wiki_topic_links = build_wiki_topic_link_index(root) if root is not None else None
+    admin_slug_index = build_wiki_section_slug_index(root, "admin", wiki_files=wiki_files) if root is not None else set()
+    wiki_topic_links = build_wiki_topic_link_index(root, wiki_files=wiki_files) if root is not None else None
 
     sorted_records = sorted(records, key=lambda item: (item.get("exam_year") or 0, item.get("question_number") or 0, item.get("slug") or ""))
     slug_counts = Counter(record.get("slug") for record in sorted_records)

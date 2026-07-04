@@ -9,6 +9,10 @@ aliases:
   - borated water sources
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 3/4.1.2 — Boration Systems
 
 ## Flow Paths — Shutdown
@@ -220,9 +224,7 @@ Borated Water Sources surveillance (S2.OP-ST.CVC-0010): combined BAST level <spa
 Post-boration TS evaluation: with RWST at 2350 ppm and BAST at 6650 ppm, <span class="hi-exam">TS 3.1.2.6 Figure 3.1-2 requires combined BAST level > 96.5%</span>. After rapid boration for 3 stuck rods (4200 gal total), BASTs drop from 70% to 43% each (86% combined) — below required level. <span class="hi-exam">LCO 3.1.2.6.a.1 NOT met: restore boric acid storage system within 72 hours or Hot Standby in 6 hours.</span>
 </div>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

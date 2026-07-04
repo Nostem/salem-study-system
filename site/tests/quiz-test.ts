@@ -94,7 +94,7 @@ test('quiz page requires login before showing the quiz builder', async ({ page }
   await expect(page.getByTestId('quiz-login-required').getByRole('link', { name: /Log in/i })).toBeVisible();
   await expect(page.getByRole('link', { name: /Create account/i })).toHaveCount(0);
   await expect(page.getByText(/do not have an account/i)).toBeVisible();
-  await expect(page.getByText(/contact site administrator/i)).toBeVisible();
+  await expect(page.getByText(/ask the site administrator/i)).toBeVisible();
   await expect(page.getByRole('button', { name: /Start quiz/i })).toBeHidden();
 });
 

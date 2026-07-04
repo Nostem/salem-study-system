@@ -11,6 +11,10 @@ aliases:
   - TS 3.4.7.2
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-4-1.pdf" target="_blank">View Tech Spec PDF (Loops)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-3.pdf" target="_blank">View Tech Spec PDF (Safety Valves)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-5.pdf" target="_blank">View Tech Spec PDF (PORVs)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-7.pdf" target="_blank">View Tech Spec PDF (Leakage)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-4.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 3/4.4 — Reactor Coolant System
 
 ## 3/4.4.1 — Reactor Coolant Loops and Coolant Circulation
@@ -559,9 +563,7 @@ LCO 3.4.10.2 PZR heatup rate = <span class="hi-exam"><span class="val-trip">100&
 Action "e": <span class="hi-exam">LCO 3.0.4.b is NOT applicable when entering MODE 4 from MODE 5</span> with an inoperable POPS channel. A risk assessment cannot be used to justify this mode change. The LTOP channel <span class="hi-exam">must be restored to OPERABLE status before entering Mode 4</span>. <span class="hi-trap">Do not confuse with actions "a" (7-day restore in Mode 4) or "b" (24-hour restore in Modes 5-6) — those apply AFTER entering the applicable mode, not for making the mode change.</span>
 </div>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-4-1.pdf" target="_blank">View Tech Spec PDF (Loops)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-3.pdf" target="_blank">View Tech Spec PDF (Safety Valves)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-5.pdf" target="_blank">View Tech Spec PDF (PORVs)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-7.pdf" target="_blank">View Tech Spec PDF (Leakage)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-4.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

@@ -17,6 +17,7 @@ type QuestionSnapshot = {
   selectedOriginalLabel?: string | null;
   isCorrect?: boolean;
   choiceOrder?: Record<string, string> | string[] | null;
+  topicSlugs?: string[];
 };
 
 type QuizSessionRow = {
@@ -276,11 +277,14 @@ Deno.serve(async (req) => {
     const questions = sessionQuestions.map((sessionQuestion) => {
       const question = sessionQuestion.questions;
       const snapshot = hasSnapshotData(sessionQuestion.question_snapshot) ? sessionQuestion.question_snapshot : null;
+      // Redaction applied after a session was recorded must still reach
+      // history: when the live row exists, its is_redacted wins even for
+      // snapshotted questions.
+      if (question && !isHistorySafeQuestion(question)) return null;
       if (snapshot) {
         if (!isHistorySafeSnapshot(snapshot)) return null;
-      } else {
-        if (!question) return null;
-        if (!isHistorySafeQuestion(question)) return null;
+      } else if (!question) {
+        return null;
       }
 
       const attempt = question ? attemptsByQuestion.get(question.id) : undefined;
@@ -292,12 +296,19 @@ Deno.serve(async (req) => {
       if (isAnswered) {
         totalAnswered += 1;
         if (isCorrect) totalCorrect += 1;
-        for (const link of question?.question_topics ?? []) {
-          if (!link.topics) continue;
-          const current = topicStats.get(link.topics.slug) ?? { slug: link.topics.slug, title: link.topics.title, attempts: 0, misses: 0 };
+        const liveTopics = (question?.question_topics ?? [])
+          .filter((link) => link.topics)
+          .map((link) => ({ slug: link.topics!.slug, title: link.topics!.title }));
+        // Fall back to snapshot topic slugs so weak-topic stats survive
+        // deletion of the live question row (titles fall back to the slug).
+        const statTopics = liveTopics.length > 0
+          ? liveTopics
+          : (snapshot?.topicSlugs ?? []).map((slug) => ({ slug, title: slug }));
+        for (const topic of statTopics) {
+          const current = topicStats.get(topic.slug) ?? { slug: topic.slug, title: topic.title, attempts: 0, misses: 0 };
           current.attempts += 1;
           if (!isCorrect) current.misses += 1;
-          topicStats.set(link.topics.slug, current);
+          topicStats.set(topic.slug, current);
         }
       }
       const acceptedLabels = snapshot?.acceptedLabels ?? question?.accepted_answer_labels ?? [];

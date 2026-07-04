@@ -9,6 +9,10 @@ aliases:
   - containment isolation TS
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-6-1.pdf" target="_blank">View TS PDF (Containment)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-2.pdf" target="_blank">View TS PDF (Spray/Cooling)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-3.pdf" target="_blank">View TS PDF (Isolation)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-6.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 3/4.6 — Containment Systems
 
 ## 3/4.6.1 — Primary Containment
@@ -367,9 +371,7 @@ Pages 3/4 6-16 through 6-22 are intentionally blank. This section has been delet
 
 Covered under SR 4.6.1.6.1 above.
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-3-4-6-1.pdf" target="_blank">View TS PDF (Containment)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-2.pdf" target="_blank">View TS PDF (Spray/Cooling)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-3.pdf" target="_blank">View TS PDF (Isolation)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-6.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

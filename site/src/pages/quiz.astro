@@ -1,6 +1,5 @@
 ---
 import StudyLayout from '../layouts/StudyLayout.astro';
-import { safeInlineJson } from '../utils/safe-json';
 import { buildQuizSummary, getExamYears, getQuizTopicGroups, quizBank } from '../utils/quiz-data';
 
 const base = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
@@ -30,14 +29,16 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
       </p>
       <div class="flex flex-wrap gap-3">
         <a class="quiz-primary no-underline" href={`${base}login/`}>Log in</a>
+        <a class="quiz-secondary no-underline" href={`${base}quiz-v2/play/`}>Try a practice set without an account</a>
       </div>
       <p class="mt-5 text-sm text-text-muted">
-        If you do not have an account, contact site administrator through the Contact / Feedback form.
+        If you do not have an account, ask the site administrator through the
+        <button type="button" class="contact-inline-link" data-open-contact>Contact / Feedback form</button>.
       </p>
     </div>
   </section>
 
-  <main id="quiz-app" data-testid="quiz-app" class="hidden max-w-[1180px] mx-auto px-6 py-8 lg:py-10">
+  <main id="quiz-app" data-testid="quiz-app" data-bank-url={`${base}data/quiz-bank-client.json`} class="hidden max-w-[1180px] mx-auto px-6 py-8 lg:py-10">
     <header class="flex flex-col gap-4 border-b border-border pb-6 mb-6 lg:flex-row lg:items-end lg:justify-between">
       <div>
         <a href={`${base}study/`} class="text-[11px] font-mono text-text-muted no-underline hover:text-accent-blue">&lsaquo; Study</a>
@@ -237,8 +238,6 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     </section>
   </main>
 
-  <script type="application/json" id="quiz-bank-json" set:html={safeInlineJson(quizBank)} />
-
   <script>
     import { getCurrentSession, hasSupabaseConfig } from '../utils/auth-client';
 
@@ -268,7 +267,18 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     import { getQuizReviewQueue, submitQuizResults, getActiveSession, EdgeFunctionError } from '../utils/auth-client';
     import { personalizeQuestionOrder } from '../utils/quiz-personalization';
 
-    const bank = JSON.parse(document.getElementById('quiz-bank-json').textContent);
+    // The bank ships as a separately-cacheable static asset instead of ~5 MB
+    // of JSON inlined into this page's HTML.
+    async function loadQuizBank() {
+      const url = document.getElementById('quiz-app')?.dataset.bankUrl ?? '/data/quiz-bank-client.json';
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`quiz bank fetch failed: ${response.status}`);
+      return response.json();
+    }
+    const bank = await loadQuizBank().catch((error) => {
+      console.error('Quick Quiz bank failed to load:', error);
+      return { questions: [] };
+    });
     const form = document.getElementById('quiz-builder');
     const emptyState = document.getElementById('quiz-empty-state');
     const draftResumeEl = document.getElementById('quiz-draft-resume');
@@ -411,9 +421,15 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
       return ordered.slice(0, Math.max(1, Math.min(filters.count, ordered.length)));
     }
 
+    let summaryTimer;
     function updateSummary() {
-      const matches = filteredQuestions(currentFilters(), false);
-      filterSummary.textContent = `${matches.length} eligible questions match current filters`;
+      // Debounced: this re-filters the whole bank, and the form fires it on
+      // every keystroke in the count field.
+      clearTimeout(summaryTimer);
+      summaryTimer = setTimeout(() => {
+        const matches = filteredQuestions(currentFilters(), false);
+        filterSummary.textContent = `${matches.length} eligible questions match current filters`;
+      }, 120);
     }
 
     function badge(text, variant = 'default') {
@@ -552,11 +568,13 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
 
       const choiceList = document.getElementById('choice-list');
       choiceList.innerHTML = '';
+      const answerLocked = state.mode !== 'blind' && state.answers.has(question.slug);
       question.choices.forEach((choice) => {
         const button = document.createElement('button');
         button.type = 'button';
         button.className = 'quiz-choice';
         if (selected === choice.displayLabel) button.classList.add('quiz-choice-selected');
+        if (answerLocked && selected !== choice.displayLabel) button.disabled = true;
         button.innerHTML = `<span class="quiz-choice-label">${choice.displayLabel}.</span> ${renderBlankMarkers(choice.text)}`;
         button.addEventListener('click', () => selectAnswer(question, choice.displayLabel));
         choiceList.appendChild(button);
@@ -571,6 +589,10 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     }
 
     function selectAnswer(question, label) {
+      // Feedback mode reveals right/wrong immediately, so the first pick must
+      // be final — otherwise "see Incorrect, click the right choice" records
+      // the corrected answer and corrupts scoring and mastery state.
+      if (state.mode !== 'blind' && state.answers.has(question.slug)) return;
       state.answers.set(question.slug, label);
       saveDraft();
       renderQuestion();
@@ -742,6 +764,9 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
       const filters = currentFilters();
       const seedOverride = parseSeedFromUrl();
       filters.seed = seedOverride !== null ? seedOverride : generateSeed();
+      // Personalization applies even with a URL seed: ordering is seeded-random
+      // within mastery buckets, so a replay link is deterministic for a given
+      // progress state (the documented design; tests rely on it).
       const personalizationStates = await loadPersonalizationStates();
       state.questions = filteredQuestions(filters, true, personalizationStates).map((question, index) =>
         withShuffledChoices(question, filters.seed + index + 1)

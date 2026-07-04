@@ -334,6 +334,15 @@ select:focus-visible {
 
 /* Tables */
 .prose table { width: 100%; font-size: 0.75rem; border-collapse: collapse; }
+/* Wide setpoint tables caused horizontal page overflow at phone widths. */
+.prose { overflow-wrap: break-word; }
+@media (max-width: 640px) {
+  .prose table { display: block; max-width: 100%; overflow-x: auto; }
+}
+/* Question cards embed their own literal arrow in <summary>; hide the native
+   disclosure marker so the control doesn't read as a doubled glyph. */
+.prose details > summary { list-style: none; }
+.prose details > summary::-webkit-details-marker { display: none; }
 .prose th { text-align: left; padding: 0.5rem 0.75rem; color: var(--color-text-muted); font-weight: 500; border-bottom: 1px solid var(--color-border); }
 .prose td { padding: 0.5rem 0.75rem; color: var(--color-text-body); border-bottom: 1px solid var(--color-bg-card); }
 .prose td code, .prose .value { color: var(--color-accent-green); font-family: var(--font-mono); }
@@ -373,9 +382,13 @@ select:focus-visible {
 }
 
 /* Scrollbar styling */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 12px; }
 ::-webkit-scrollbar-track { background: var(--color-bg); }
-::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-hi);
+  border: 3px solid var(--color-bg);
+  border-radius: 6px;
+}
 ::-webkit-scrollbar-thumb:hover { background: var(--color-text-muted); }
 
 /* Setpoint value color coding */
@@ -650,6 +663,29 @@ select:focus-visible {
 }
 .quiz-primary:hover { background: var(--button-primary-hover-bg); border-color: var(--button-primary-hover-bg); color: var(--button-primary-hover-fg); }
 .quiz-primary:disabled { cursor: not-allowed; opacity: 0.45; }
+
+/* Source-PDF callout pinned to the top of tech-spec articles (issue #74). */
+.prose .ts-source-pdfs {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent-green);
+  border-radius: 0.375rem;
+  font-size: 0.8125rem;
+  margin: 1rem 0 1.25rem;
+  padding: 0.6rem 0.9rem;
+}
+
+/* Inline text button that opens the contact/feedback modal from page copy. */
+.contact-inline-link {
+  background: none;
+  border: 0;
+  color: var(--color-accent-blue);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+}
+
 .quiz-secondary {
   background: transparent;
   border: 1px solid var(--color-border);
@@ -896,18 +932,30 @@ html[data-theme='light'] .hover\:bg-\[\#102033\]:hover { background-color: var(-
 
 @media (max-width: 900px) {
   .global-header__inner { padding: 0 0.75rem; }
-  .global-header__menu { display: inline-flex; align-items: center; justify-content: center; }
-  .global-header__title { font-size: 0.62rem; letter-spacing: 0.14em; }
+  .global-header__menu:not([hidden]) { display: inline-flex; align-items: center; justify-content: center; }
+  .global-header__title {
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    max-width: 32vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
   .global-header__search { min-height: 2.75rem; min-width: 2.75rem; width: auto; padding-inline: 0.65rem; }
   .global-header__search-label { display: none; }
   .theme-toggle__option { padding-inline: 0.45rem; }
   .auth-status__name { display: none; }
+  .auth-status__login,
+  .auth-status__logout { white-space: nowrap; }
   .home-shell { padding: 1.5rem 1rem; }
 }
 
 @media (max-width: 640px) {
   .global-header__mark { display: none; }
   .global-header__actions { gap: 0.35rem; }
+  /* The ⌘K shortcut chip is meaningless on touch — show a search glyph. */
+  .global-header__kbd { display: none; }
+  .global-header__search::before { content: '⌕'; font-size: 1.15rem; line-height: 1; }
   .theme-toggle { font-size: 0.6875rem; }
   .theme-toggle__option { padding: 0.32rem 0.38rem; }
   .auth-status__logout,

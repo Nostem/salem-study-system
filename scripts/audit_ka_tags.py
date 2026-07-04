@@ -208,7 +208,12 @@ def main():
         prefix = content[:content.find(body)] if body and body in content else ""
         rows.append((f, body, key or "", status, canonical or "", prefix))
         if apply and status in ("RESOLVED", "DELETED_IN_REV3"):
-            new_content = content.replace(body, canonical, 1)
+            # Rewrite the identified pipe segment by index — first-substring-match can hit
+            # an earlier segment when the K/A text also appears there.
+            segs = content.split("|")
+            idx = max(i for i, seg in enumerate(segs) if seg.strip() == body)
+            segs[idx] = segs[idx].replace(body, canonical, 1)
+            new_content = "|".join(segs)
             if new_content != content:
                 new_span = f"{m.group(1)}{new_content}{m.group(3)}"
                 Path(f).write_text(text.replace(m.group(0), new_span, 1), encoding="utf-8")

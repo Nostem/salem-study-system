@@ -46,14 +46,23 @@ def main():
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     INDEX.parent.mkdir(parents=True, exist_ok=True)
     index = []
+    used = set()
     for title, start, end in chapter_ranges(bookmarks, total):
-        name = f"ch-{slug(title)}.pdf"
+        # Titles differing only in punctuation slug identically; suffix -2, -3, ...
+        # so every index entry points at its own file.
+        base = f"ch-{slug(title)}"
+        name, n = f"{base}.pdf", 2
+        while name in used:
+            name = f"{base}-{n}.pdf"
+            n += 1
+        used.add(name)
         writer = pypdf.PdfWriter()
         for p in range(start, end):
             writer.add_page(reader.pages[p])
         with (OUT_DIR / name).open("wb") as fh:
             writer.write(fh)
         index.append({"title": title, "start_page": start, "end_page": end, "pdf": name})
+    assert len({e["pdf"] for e in index}) == len(index), "chapter PDF filenames must be unique"
     INDEX.write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")
     print(f"wrote {len(index)} chapter PDFs + {INDEX}")
     return 0

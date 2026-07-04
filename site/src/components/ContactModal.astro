@@ -122,6 +122,14 @@
       button.addEventListener('click', closeContact);
     });
 
+    // Inline "Contact / Feedback" mentions in page copy (login wall, history
+    // gate, quiz gate) open the same modal instead of being dead text.
+    document.querySelectorAll('[data-open-contact]').forEach((button) => {
+      if (button.dataset.contactBound === 'true') return;
+      button.dataset.contactBound = 'true';
+      button.addEventListener('click', openContact);
+    });
+
     if (!form || form.dataset.contactBound === 'true') return;
     form.dataset.contactBound = 'true';
     form.addEventListener('submit', async (event) => {

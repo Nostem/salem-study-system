@@ -52,7 +52,7 @@ It supports:
 - advanced topic filters for Tech Specs, EOPs, abnormal procedures, operating/admin/alarm procedures, and targeted pools,
 - reference-required include/exclude behavior,
 - draft/outdated/edited question inclusion controls,
-- feedback mode with immediate right/wrong explanation,
+- feedback mode with immediate right/wrong explanation (the first answer locks — it cannot be changed after the reveal),
 - blind mode with final scoring and review,
 - local unfinished-quiz resume in browser `localStorage`,
 - seeded question order for reproducible tests/replays,
@@ -77,7 +77,9 @@ Question generation follows a **filter first, personalize second, randomize with
 
 ### 1. Build the eligible pool
 
-The browser starts from the static quiz bank in:
+The browser fetches a slim, cacheable client bank at `/data/quiz-bank-client.json`
+(generated at build time from the static quiz bank below, keeping only the fields
+the quiz client reads — the full bank is no longer inlined into the page HTML):
 
 ```text
 site/src/data/quiz-bank.json

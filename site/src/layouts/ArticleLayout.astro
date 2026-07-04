@@ -6,7 +6,6 @@ import LocalGraph from '../components/LocalGraph.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import DraftBadge from '../components/DraftBadge.astro';
 import MobileNav from '../components/MobileNav.astro';
-import HighlightToolbar from '../components/HighlightToolbar.astro';
 import ReviewPill from '../components/ReviewPill.astro';
 
 interface Props {
@@ -22,10 +21,6 @@ const { title, category, status, slug, headings, wide = false } = Astro.props;
 ---
 
 <BaseLayout title={title}>
-  <div data-pagefind-ignore>
-    <HighlightToolbar />
-  </div>
-
   <!-- Mobile nav drawer -->
   <div class="lg:hidden" data-pagefind-ignore>
     <MobileNav>
@@ -67,5 +62,4 @@ const { title, category, status, slug, headings, wide = false } = Astro.props;
     )}
   </div>
 
-  <script src="../scripts/highlighter.ts"></script>
 </BaseLayout>

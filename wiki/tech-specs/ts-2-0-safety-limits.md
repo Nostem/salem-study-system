@@ -9,6 +9,10 @@ aliases:
   - trip setpoint table
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-2-0.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-2.pdf" target="_blank">View Bases PDF</a>
+</div>
+
 # TS 2.0 — Safety Limits and Limiting Safety System Settings
 
 ## 2.1 Safety Limits
@@ -161,9 +165,7 @@ The actual nominal Trip Setpoint entered into the bistable is more conservative 
 </div>
 </details>
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-2-0.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-2.pdf" target="_blank">View Bases PDF</a>
 
 ## Connections
 

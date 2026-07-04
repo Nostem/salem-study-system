@@ -9,6 +9,10 @@ aliases:
   - SR 4.0
 ---
 
+<div class="ts-source-pdfs">
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-2-0.pdf" target="_blank">View Tech Spec PDF</a>
+</div>
+
 # TS 3/4.0 — Applicability
 
 ## LCO Applicability Rules
@@ -297,9 +301,7 @@ The provisions of SR 4.0.4 shall NOT prevent entry into MODES required to comply
 
 *(Amendment No. 308)*
 
----
 
-<a href="/salem-study-system/ts-pdfs/ts-2-0.pdf" target="_blank">View Tech Spec PDF</a>
 
 ## Connections
 
