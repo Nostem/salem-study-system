@@ -94,3 +94,6 @@ revoke execute on function public.replace_quiz_session_writes(uuid, uuid, jsonb,
 -- login/signup insert sequential-scanned the ledger.
 create index if not exists auth_rate_limit_attempted_at_idx
   on public.auth_rate_limit (attempted_at);
+
+-- Touched on 2026-07-04 so the push-triggered db-migrate workflow applies
+-- this file on merge (the function/index statements above are re-run-safe).

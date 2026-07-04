@@ -1,10 +1,15 @@
 name: Apply Supabase Migration
 
-# Manually-triggered, one migration file at a time. Uses the same
-# SUPABASE_DB_URL secret as question-bank-sync. Migrations in this repo are
-# written to be safe to re-run (create or replace / if not exists), but this
-# workflow still refuses paths outside supabase/migrations/.
+# Two triggers:
+# - push to main touching supabase/migrations/**: applies exactly the .sql
+#   files changed in that push, in filename order. Migrations in this repo
+#   are written re-run-safe (create or replace / if not exists).
+# - workflow_dispatch: apply one named file manually (backfill/re-run).
 on:
+  push:
+    branches: [main]
+    paths:
+      - "supabase/migrations/**.sql"
   workflow_dispatch:
     inputs:
       migration_file:
@@ -27,31 +32,50 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Install postgresql client
         run: sudo apt-get update && sudo apt-get install -y postgresql-client
 
-      - name: Validate inputs
+      - name: Verify Supabase DB secret is configured
         run: |
-          set -euo pipefail
           if [ -z "${SUPABASE_DB_URL}" ]; then
             echo "SUPABASE_DB_URL secret is required." >&2
             exit 1
           fi
-          case "${{ inputs.migration_file }}" in
-            supabase/migrations/*.sql) ;;
-            *)
-              echo "Refusing: migration_file must be under supabase/migrations/ and end in .sql" >&2
-              exit 1
-              ;;
-          esac
-          if [ ! -f "${{ inputs.migration_file }}" ]; then
-            echo "Refusing: ${{ inputs.migration_file }} does not exist in the repo." >&2
-            exit 1
-          fi
 
-      - name: Apply migration
+      - name: Resolve migration files
+        id: files
         run: |
           set -euo pipefail
-          psql "${SUPABASE_DB_URL}" -v ON_ERROR_STOP=1 -X -f "${{ inputs.migration_file }}"
-          echo "Applied ${{ inputs.migration_file }}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            case "${{ inputs.migration_file }}" in
+              supabase/migrations/*.sql) ;;
+              *)
+                echo "Refusing: migration_file must be under supabase/migrations/ and end in .sql" >&2
+                exit 1
+                ;;
+            esac
+            printf '%s\n' "${{ inputs.migration_file }}" > /tmp/migrations.txt
+          else
+            git diff --name-only --diff-filter=AM "${{ github.event.before }}" "${{ github.sha }}" -- 'supabase/migrations/*.sql' | sort > /tmp/migrations.txt
+          fi
+          if [ ! -s /tmp/migrations.txt ]; then
+            echo "No migration files to apply."
+          fi
+          cat /tmp/migrations.txt
+
+      - name: Apply migrations
+        run: |
+          set -euo pipefail
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            if [ ! -f "$file" ]; then
+              echo "Refusing: $file does not exist in the repo." >&2
+              exit 1
+            fi
+            echo "=== Applying $file ==="
+            psql "${SUPABASE_DB_URL}" -v ON_ERROR_STOP=1 -X -f "$file"
+          done < /tmp/migrations.txt
+          echo "Done."
