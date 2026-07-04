@@ -1,0 +1,61 @@
+name: Verify DB Deploy State
+
+# Read-only health check against the live database: confirms the migration
+# artifacts exist and that the newest quiz-session snapshots were written by
+# the current submit-quiz-results code (snapshot version 2). Runs on pushes
+# that touch this file (so merging a touch-PR triggers it) and on manual
+# dispatch. Prints no user data — only object names, booleans, and counts.
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/db-verify.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+    steps:
+      - name: Install postgresql client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Verify migration artifacts
+        run: |
+          set -euo pipefail
+          psql "${SUPABASE_DB_URL}" -v ON_ERROR_STOP=1 -X -A -t <<'SQL'
+          select 'rpc_exists=' || exists(
+            select 1 from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+            where n.nspname = 'public' and p.proname = 'replace_quiz_session_writes');
+          select 'auth_rate_limit_table=' || exists(
+            select 1 from pg_tables where schemaname = 'public' and tablename = 'auth_rate_limit');
+          select 'idx_' || indexname || '=true' from pg_indexes
+          where schemaname = 'public' and indexname in (
+            'auth_rate_limit_attempted_at_idx',
+            'question_attempts_session_question_idx',
+            'quiz_sessions_user_completed_idx')
+          order by indexname;
+          select 'system_reviews_fk_to_profiles=' || exists(
+            select 1 from pg_constraint c
+            join pg_class t on t.oid = c.conrelid
+            join pg_class r on r.oid = c.confrelid
+            where t.relname = 'system_reviews' and c.contype = 'f' and r.relname = 'profiles');
+          SQL
+
+      - name: Verify newest snapshots are v2 (new function code serving)
+        run: |
+          set -euo pipefail
+          psql "${SUPABASE_DB_URL}" -v ON_ERROR_STOP=1 -X -A -t <<'SQL'
+          select
+            'snapshot created_at=' || created_at
+            || ' version=' || coalesce(question_snapshot->>'version', 'none')
+            || ' has_choices=' || (question_snapshot ? 'choices')
+            || ' has_topicSlugs=' || (question_snapshot ? 'topicSlugs')
+          from public.quiz_session_questions
+          order by created_at desc
+          limit 5;
+          SQL
