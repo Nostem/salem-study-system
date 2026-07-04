@@ -1,0 +1,57 @@
+name: Apply Supabase Migration
+
+# Manually-triggered, one migration file at a time. Uses the same
+# SUPABASE_DB_URL secret as question-bank-sync. Migrations in this repo are
+# written to be safe to re-run (create or replace / if not exists), but this
+# workflow still refuses paths outside supabase/migrations/.
+on:
+  workflow_dispatch:
+    inputs:
+      migration_file:
+        description: "Path under supabase/migrations/ (e.g. supabase/migrations/20260703_atomic_quiz_submit.sql)"
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: db-migrate
+  cancel-in-progress: false
+
+jobs:
+  apply-migration:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Install postgresql client
+        run: sudo apt-get update && sudo apt-get install -y postgresql-client
+
+      - name: Validate inputs
+        run: |
+          set -euo pipefail
+          if [ -z "${SUPABASE_DB_URL}" ]; then
+            echo "SUPABASE_DB_URL secret is required." >&2
+            exit 1
+          fi
+          case "${{ inputs.migration_file }}" in
+            supabase/migrations/*.sql) ;;
+            *)
+              echo "Refusing: migration_file must be under supabase/migrations/ and end in .sql" >&2
+              exit 1
+              ;;
+          esac
+          if [ ! -f "${{ inputs.migration_file }}" ]; then
+            echo "Refusing: ${{ inputs.migration_file }} does not exist in the repo." >&2
+            exit 1
+          fi
+
+      - name: Apply migration
+        run: |
+          set -euo pipefail
+          psql "${SUPABASE_DB_URL}" -v ON_ERROR_STOP=1 -X -f "${{ inputs.migration_file }}"
+          echo "Applied ${{ inputs.migration_file }}"
