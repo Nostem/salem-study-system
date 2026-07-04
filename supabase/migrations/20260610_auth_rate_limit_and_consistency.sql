@@ -47,3 +47,11 @@ alter table public.system_reviews
 create unique index if not exists question_attempts_session_question_idx
   on public.question_attempts (quiz_session_id, question_id)
   where quiz_session_id is not null;
+
+-- Touched on 2026-07-04: never applied to the live DB (discovered when the
+-- 20260703 migration failed on the missing auth_rate_limit table). Applied
+-- via the push-triggered db-migrate workflow.
+
+-- Touched on 2026-07-04: never applied to the live DB (discovered when the
+-- 20260703 migration failed on the missing auth_rate_limit table). Applied
+-- via the push-triggered db-migrate workflow.

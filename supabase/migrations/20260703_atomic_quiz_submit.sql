@@ -97,3 +97,6 @@ create index if not exists auth_rate_limit_attempted_at_idx
 
 -- Touched on 2026-07-04 so the push-triggered db-migrate workflow applies
 -- this file on merge (the function/index statements above are re-run-safe).
+
+-- Re-touched 2026-07-04: re-run after the June migrations so the
+-- auth_rate_limit(attempted_at) index can be created.
