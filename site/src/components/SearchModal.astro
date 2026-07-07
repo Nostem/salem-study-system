@@ -1,13 +1,9 @@
 ---
 // Pagefind search modal — initialized client-side
+import { resolvePagefindAssetDir } from '../../scripts/pagefind-assets.mjs';
+
 const base = import.meta.env.BASE_URL;
-const explicitPagefindAssetDir = import.meta.env.PUBLIC_PAGEFIND_ASSET_DIR;
-const commitSha = process.env.VERCEL_GIT_COMMIT_SHA;
-const pagefindAssetDir = explicitPagefindAssetDir
-  ? explicitPagefindAssetDir.replace(/^\/+|\/+$/g, '')
-  : commitSha
-    ? `pagefind-${commitSha.slice(0, 8)}`
-    : 'pagefind-current';
+const pagefindAssetDir = resolvePagefindAssetDir();
 ---
 
 <div id="search-modal" class="fixed inset-0 z-50 hidden" role="dialog" aria-modal="true" aria-labelledby="search-modal-title" hidden data-pagefind-ignore>
@@ -160,7 +156,67 @@ const pagefindAssetDir = explicitPagefindAssetDir
     results.appendChild(error);
   }
 
-  function attachInputHandlers(pagefind) {
+  let pagefindModule = null;
+  let pagefindReadyPromise = null;
+
+  function pagefindErrorDetail(err) {
+    return (err && (err.message || err.toString())) || 'unknown';
+  }
+
+  function isPagefindPointerError(err) {
+    return /WASM Error|No pointer/i.test(pagefindErrorDetail(err));
+  }
+
+  function staleSearchMessage() {
+    return 'Search index cache is stale. Refresh this page, then search again.';
+  }
+
+  async function loadPagefind({ cacheBust = false } = {}) {
+    const importPath = cacheBust ? `${pagefindModulePath}?retry=${Date.now()}` : pagefindModulePath;
+    const pagefind = await import(importPath);
+    await pagefind.init();
+    pagefindModule = pagefind;
+    return pagefindModule;
+  }
+
+  function getPagefindReady() {
+    if (!pagefindReadyPromise) {
+      pagefindReadyPromise = loadPagefind().catch((err) => {
+        pagefindReadyPromise = null;
+        throw err;
+      });
+    }
+    return pagefindReadyPromise;
+  }
+
+  function retryPagefindReady() {
+    pagefindModule = null;
+    pagefindReadyPromise = loadPagefind({ cacheBust: true }).catch((err) => {
+      pagefindReadyPromise = null;
+      throw err;
+    });
+    return pagefindReadyPromise;
+  }
+
+  async function searchPagefind(query) {
+    const pagefind = await getPagefindReady();
+    try {
+      return await pagefind.search(query);
+    } catch (err) {
+      if (!isPagefindPointerError(err)) throw err;
+
+      console.warn('Pagefind search pointer failed; retrying with a fresh module:', err);
+      const freshPagefind = await retryPagefindReady();
+      try {
+        return await freshPagefind.search(query);
+      } catch (retryErr) {
+        retryErr.pagefindCacheRetryFailed = true;
+        throw retryErr;
+      }
+    }
+  }
+
+  function attachInputHandlers() {
     const { input, results, modal } = getSearchElements();
     if (!input || !results || !modal || input.dataset.pagefindBound === 'true') return;
 
@@ -215,15 +271,18 @@ const pagefindAssetDir = explicitPagefindAssetDir
       clearTimeout(debounceTimer);
       debounceTimer = setTimeout(async () => {
         try {
-          const search = await pagefind.search(query);
+          const search = await searchPagefind(query);
           const items = await Promise.all(search.results.slice(0, 10).map(r => r.data()));
           renderSearchResults(results, items);
         } catch (err) {
           // Without this catch the rejection is swallowed inside the
           // setTimeout async callback and the user sees no feedback.
           console.warn('Pagefind search failed:', err);
-          const detail = (err && (err.message || err.toString())) || 'unknown';
-          renderSearchError(results, `Search failed: ${detail}`);
+          const detail = pagefindErrorDetail(err);
+          const message = err?.pagefindCacheRetryFailed && isPagefindPointerError(err)
+            ? staleSearchMessage()
+            : `Search failed: ${detail}`;
+          renderSearchError(results, message);
         }
       }, 150);
     });
@@ -234,16 +293,20 @@ const pagefindAssetDir = explicitPagefindAssetDir
     const { results } = getSearchElements();
     if (!results) return;
 
+    attachInputHandlers();
+
     try {
-      const pagefind = await import(pagefindModulePath);
-      await pagefind.init();
-      attachInputHandlers(pagefind);
+      await getPagefindReady();
     } catch (e) {
-      if (window.location.hostname !== 'localhost') {
-        const detail = (e && (e.message || e.toString())) || 'unknown';
-        renderSearchError(results, `Search index failed to load: ${detail}`);
+      try {
+        await retryPagefindReady();
+      } catch (retryErr) {
+        if (window.location.hostname !== 'localhost') {
+          const detail = pagefindErrorDetail(retryErr);
+          renderSearchError(results, `Search index failed to load: ${detail}`);
+        }
+        console.warn('Pagefind not loaded:', retryErr);
       }
-      console.warn('Pagefind not loaded:', e);
     }
   }
 
