@@ -1,17 +1,9 @@
 import { cpSync, existsSync, rmSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 
-function pagefindAssetDir() {
-  const explicit = process.env.PUBLIC_PAGEFIND_ASSET_DIR?.trim();
-  if (explicit) return explicit.replace(/^\/+|\/+$/g, '');
+import { resolvePagefindAssetDir } from './pagefind-assets.mjs';
 
-  const sha = process.env.VERCEL_GIT_COMMIT_SHA?.trim();
-  if (sha) return `pagefind-${sha.slice(0, 8)}`;
-
-  return 'pagefind-current';
-}
-
-const assetDir = pagefindAssetDir();
+const assetDir = resolvePagefindAssetDir();
 const source = join('dist', 'pagefind');
 const target = join('dist', assetDir);
 

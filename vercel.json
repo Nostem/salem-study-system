@@ -49,10 +49,26 @@
       ]
     },
     {
+      "source": "/pagefind-:version/pagefind.js",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable, no-transform" },
+        { "key": "X-Pagefind-Asset", "value": "bundle" }
+      ]
+    },
+    {
+      "source": "/pagefind-:version/pagefind-entry.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json; charset=utf-8" },
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable, no-transform" },
+        { "key": "X-Pagefind-Asset", "value": "entry" }
+      ]
+    },
+    {
       "source": "/pagefind-:version/:path*.pagefind",
       "headers": [
         { "key": "Content-Type", "value": "application/octet-stream" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, no-transform" },
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable, no-transform" },
         { "key": "X-Pagefind-Asset", "value": "wasm" }
       ]
     },
@@ -60,7 +76,7 @@
       "source": "/pagefind-:version/:path*.pf_meta",
       "headers": [
         { "key": "Content-Type", "value": "application/octet-stream" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, no-transform" },
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable, no-transform" },
         { "key": "X-Pagefind-Asset", "value": "meta" }
       ]
     },
@@ -68,7 +84,7 @@
       "source": "/pagefind-:version/:path*.pf_index",
       "headers": [
         { "key": "Content-Type", "value": "application/octet-stream" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, no-transform" },
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable, no-transform" },
         { "key": "X-Pagefind-Asset", "value": "index" }
       ]
     },
@@ -76,7 +92,7 @@
       "source": "/pagefind-:version/:path*.pf_fragment",
       "headers": [
         { "key": "Content-Type", "value": "application/octet-stream" },
-        { "key": "Cache-Control", "value": "public, max-age=3600, no-transform" },
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable, no-transform" },
         { "key": "X-Pagefind-Asset", "value": "fragment" }
       ]
     }

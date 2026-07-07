@@ -140,6 +140,7 @@ test('search returns results from a cache-busted Pagefind index', async ({ page 
   const firstResult = page.locator('#search-results a').first();
   await expect(firstResult).toBeVisible();
   await expect(firstResult).toContainText(/reactor coolant/i);
+  await expect(page.locator('#search-results')).not.toContainText(/Search failed|WASM Error|No pointer/i);
 
   const pagefindResources = await page.evaluate(() =>
     performance
@@ -147,8 +148,50 @@ test('search returns results from a cache-busted Pagefind index', async ({ page 
       .map((entry) => entry.name)
       .filter((name) => name.includes('/pagefind'))
   );
-  expect(pagefindResources.some((name) => /\/pagefind-(?:current|[a-f0-9]{8})\/pagefind\.js/.test(name))).toBe(true);
-  expect(pagefindResources.some((name) => /\/pagefind-(?:current|[a-f0-9]{8})\/wasm\.en\.pagefind/.test(name))).toBe(true);
+  expect(pagefindResources.some((name) => /\/pagefind-(?:current|[a-f0-9]{8}(?:-[a-f0-9]{8})?)\/pagefind\.js/.test(name))).toBe(true);
+  expect(pagefindResources.some((name) => /\/pagefind-(?:current|[a-f0-9]{8}(?:-[a-f0-9]{8})?)\/wasm\.en\.pagefind/.test(name))).toBe(true);
+});
+
+test('search retries once when Pagefind reports a stale WASM pointer', async ({ page }) => {
+  await page.route('**/pagefind-*/pagefind.js**', async (route) => {
+    const url = route.request().url();
+    const body = url.includes('retry=')
+      ? `
+        export async function init() {}
+        export async function search(query) {
+          return {
+            results: [{
+              data: async () => ({
+                url: '/salem-study-system/systems/reactor-coolant-system/',
+                meta: { title: 'Recovered Search Result' },
+                excerpt: 'Recovered <mark>' + query + '</mark>'
+              })
+            }]
+          };
+        }
+      `
+      : `
+        export async function init() {}
+        export async function search() {
+          throw new Error('Pagefind: WASM Error (No pointer)');
+        }
+      `;
+
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/javascript',
+      body,
+    });
+  });
+
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  await page.locator('#search-trigger').click();
+  await page.locator('#search-input').fill('reactor coolant');
+
+  await expect(page.locator('#search-results a').first()).toContainText('Recovered Search Result');
+  await expect(page.locator('#search-results')).not.toContainText(/Search failed|WASM Error|No pointer/i);
 });
 
 test('desktop and mobile sidebars use distinct IDs', async ({ page }) => {

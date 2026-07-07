@@ -370,11 +370,11 @@ npm run build:astro && npm run check:static-assets && npm run build:search
 
 `build:search` runs Pagefind and then copies `dist/pagefind` to a cache-busted directory used by the search modal:
 
-- Vercel builds use `dist/pagefind-<commit-sha-prefix>/` from `VERCEL_GIT_COMMIT_SHA`.
+- Vercel builds use `dist/pagefind-<commit-sha-prefix>-<deployment-hash>/` from `VERCEL_GIT_COMMIT_SHA` plus the deployment URL/ID when available, so same-commit redeploys do not reuse a stale browser/proxy cache.
 - Local builds use `dist/pagefind-current/`.
 - `PUBLIC_PAGEFIND_ASSET_DIR` can override the directory when needed.
 
-This prevents a browser from reusing stale/corrupted Pagefind binary assets after a Vercel deploy. Use `npm run build:astro` when a check only needs rendered pages and does not need Pagefind search indexing.
+This prevents a browser from reusing stale/corrupted Pagefind binary assets after a Vercel deploy. The search modal also retries once with a cache-busted Pagefind module if Pagefind reports a stale WASM pointer. Use `npm run build:astro` when a check only needs rendered pages and does not need Pagefind search indexing.
 
 ### Run Node tests
 
