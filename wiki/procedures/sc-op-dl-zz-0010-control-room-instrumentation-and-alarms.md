@@ -25,6 +25,6 @@ An instrument that is NOT credited by a Tech Spec (e.g., the PZR Cold Cal level 
 ## Connections
 
 - Related procedures: [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam questions: [[2012 Q80]]
 - Related exam: [[2012 NRC Written Exam]]

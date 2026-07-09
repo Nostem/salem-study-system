@@ -46,5 +46,5 @@ Which action is required when the plant is placed in Hot Standby?
 
 - Related systems: [[Control Rod Drive]], [[CVCS]]
 - Related procedures: [[AB.ROD-0004 — Rod Position Indication Failure]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related exam: [[2015 NRC Written Exam]]

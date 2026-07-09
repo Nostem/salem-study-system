@@ -121,7 +121,7 @@ The Unit 2 CRS has directed you to start the Station Blackout Compressor (SBO) I
 </div>
 
 <div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">
-Ref: SC.OP-SO.CA-0001 (Rev 14), SBO Diesel Control Air Compressor, Section 5.1; 2-EOP-LOPA-1 (Rev 27); S2.OP-AB.LOOP-1 (Rev 27); S2.OP-AB.CA-0001 (Rev 17) | Task: N1150140501 | K/A: G2.1.23 — Ability to perform specific system and integrated plant procedures during all modes of operation (4.3/4.4) | Source: New | <a href="/salem-study-system/exam-pdfs/2012-jpm-ip-k.pdf" target="_blank" style="color:#60a5fa;">View JPM PDF</a>
+Ref: SC.OP-SO.CA-0001 (Rev 14), SBO Diesel Control Air Compressor, Section 5.1; 2-EOP-LOPA-1 (Rev 27); S2.OP-AB.LOOP-1 (Rev 27); S2.OP-AB.CA-0001 (Rev 17) | Task: N1150140501 | K/A: G2.1.23 — Ability to perform specific system and integrated plant procedures during all modes of operation (4.3.4) | Source: New | <a href="/salem-study-system/exam-pdfs/2012-jpm-ip-k.pdf" target="_blank" style="color:#60a5fa;">View JPM PDF</a>
 </div>
 </div>
 </details>

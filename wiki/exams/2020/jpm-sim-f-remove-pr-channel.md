@@ -109,5 +109,5 @@ Ref: S2.OP-SO.RPS-0001 (R6) | Task: N1140230401 | K/A: 015 A4.03 — Ability to 
 
 - Related systems: [[Excore NIs]], [[RPS/SSPS]]
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2020 NRC Operating Exam]]

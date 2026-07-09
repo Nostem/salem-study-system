@@ -301,16 +301,16 @@ Xenon-135 following a reactor trip from 100% power: Xe-135 concentration peaks a
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.9]]** — RCS Specific Activity
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.9]]** — RCS Specific Activity
 - Pressure-temperature limits governed by Appendix G analysis
-- **TS 3/4.1** — [[TS 3/4.1.1 — Boration Control]] (shutdown margin, rod operability, rod insertion limits)
-- **TS 3/4.2** — [[TS 3/4.2 — Power Distribution]] (FQ, F-delta-H, axial flux difference)
-- **TS 3/4.1.1** — Shutdown Margin
-- **TS 3/4.1.2** — Boration Systems ([[CVCS]])
-- **TS 3/4.1.3** — Movable Control Assemblies
-- **TS 3/4.2.1** — Axial Flux Difference
-- **TS 3/4.2.2** — Heat Flux Hot Channel Factor (FQ)
-- **TS 3/4.2.3** — Nuclear Enthalpy Rise Hot Channel Factor (F-delta-H)
+- **TS 3.1** — [[TS 3.1.1 — Boration Control]] (shutdown margin, rod operability, rod insertion limits)
+- **TS 3.2** — [[TS 3.2 — Power Distribution]] (FQ, F-delta-H, axial flux difference)
+- **TS 3.1.1** — Shutdown Margin
+- **TS 3.1.2** — Boration Systems ([[CVCS]])
+- **TS 3.1.3** — Movable Control Assemblies
+- **TS 3.2.1** — Axial Flux Difference
+- **TS 3.2.2** — Heat Flux Hot Channel Factor (FQ)
+- **TS 3.2.3** — Nuclear Enthalpy Rise Hot Channel Factor (F-delta-H)
 
 ## Connections
 

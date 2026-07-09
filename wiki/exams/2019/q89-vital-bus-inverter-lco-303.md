@@ -53,5 +53,5 @@ If BOTH Inverters remain inoperable, then ___ is the LATEST Time / Date that Uni
 ## Connections
 
 - Related systems: [[115V AC]]
-- Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.8 — Electrical]], [[TS 3.0 — Applicability]]
 - Related exam: [[2019 NRC Written Exam]]

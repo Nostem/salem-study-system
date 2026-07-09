@@ -71,7 +71,7 @@ For a 1PR1 PORV that opens with no demand and cannot be shut, AB.PZR-0001 direct
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q87</div>
-On a 2PR1 PORV failing open at power: PZR pressure lowers, so the <span class="hi-exam">PZR Master Pressure Controller (MPC) output LOWERS</span> (turning on heaters and closing spray valves). Per AB.PZR-0001 the PORV is isolated by shutting its Block Valve; <span class="hi-trap">if the PORV is not restored within 72 hours, a unit shutdown is required (TS 3.4.5 action b)</span> — distinct from a leaking PORV (isolated with power maintained to the Block Valve, no shutdown). See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[TS 3/4.4 — Reactor Coolant System]].
+On a 2PR1 PORV failing open at power: PZR pressure lowers, so the <span class="hi-exam">PZR Master Pressure Controller (MPC) output LOWERS</span> (turning on heaters and closing spray valves). Per AB.PZR-0001 the PORV is isolated by shutting its Block Valve; <span class="hi-trap">if the PORV is not restored within 72 hours, a unit shutdown is required (TS 3.4.5 action b)</span> — distinct from a leaking PORV (isolated with power maintained to the Block Valve, no shutdown). See [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[TS 3.4 — Reactor Coolant System]].
 </div>
 
 <div class="callout callout-exam">

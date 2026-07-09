@@ -158,7 +158,7 @@ Loss of 2C 125 VDC: all breakers powered by 2C DC <span class="hi-exam">remain A
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.8 — Electrical]]** — TS 3.8.2.1 requires three 125V battery banks and three 28V supplies OPERABLE
+- **[[TS 3.8 — Electrical]]** — TS 3.8.2.1 requires three 125V battery banks and three 28V supplies OPERABLE
 - 1 battery bank inoperable: 2 hours to restore
 - 1 charger inoperable: 24 hours (with spare charger)
 - 1 of 3 28V supplies inoperable: 48 hours
@@ -185,7 +185,7 @@ Shortly after watch turnover the <span class="hi-exam">2A1 125VDC Battery Charge
 - Related systems: [[115V AC]], [[RHR]], [[Control Air]], [[EDGs]]
 - Related procedures: [[S2.OP-SO.115-0012 — 2B Vital Instrument Bus UPS System Operation]]
 - Related EOPs: [[EOP-LOPA-1 — Loss of All AC Power]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related exam questions: [[2015 Q13]], [[2015 Q14]], [[2015 Q15]], [[2016 Q56]], [[2018 Q20]], [[2019 Q22]], [[2019 Q23]], [[2019 Q59]], [[2019 Q90]], [[2020 Q13]], [[2020 Q49]], [[2023 Q9]], [[2023 Q46]], [[2023 Q47]], [[2022 Q15]], [[2022 Q48]], [[2022 Q49]], [[2015 Q56]], [[2015 Q57]], [[2014 Q18]], [[2014 Q58]], [[2012 Q11]], [[2012 Q58]]
 - Related JPMs: [[2018 JPM IP-i]]
 - Related scenarios: [[2012 Scenario 3]]

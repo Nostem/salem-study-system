@@ -50,5 +50,5 @@ Assume the 2 inoperable control rods will NOT be restored to operable status, an
 
 - Related systems: [[Control Rod Drive]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related exam: [[2014 NRC Written Exam]]

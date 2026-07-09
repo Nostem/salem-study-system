@@ -45,5 +45,5 @@ Which of the following describes the LOWEST level for 21 BAT that meets or excee
 ## Connections
 
 - Related systems: [[CVCS]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]]
 - Related exam: [[2015 NRC Written Exam]]

@@ -112,5 +112,5 @@ Source: 20-01 NRC ESG-3 | <a href="/salem-study-system/exam-pdfs/2022-scenario-0
 - Related systems: [[RCS]], [[RCPs]], [[CVCS]], [[Main Steam]], [[AFW]], [[Feed & Condensate]], [[EDGs]], [[Control Rod Drive]], [[Pressurizer Level & Press Control]], [[Main Turbine]], [[Steam Dumps]], [[Containment Spray]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]]
 - Related procedures: [[AB.CVC-0001 — Loss of Charging]], [[AB.CN-0001 — Condensate System Abnormality]], [[AB.RCP-0001 — RCP Abnormality]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]], [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.3 — Instrumentation]], [[TS 3.8 — Electrical]]
 - Related exam: [[2022 NRC Operating Exam]]

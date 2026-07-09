@@ -51,5 +51,5 @@ At 12:00 and in accordance with Technical Specifications, the crew <span class="
 ## Connections
 
 - Related systems: [[CVCS]], [[Radiation Monitoring]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]], [[TS 3.0 — Applicability]]
 - Related exam: [[2019 NRC Written Exam]]

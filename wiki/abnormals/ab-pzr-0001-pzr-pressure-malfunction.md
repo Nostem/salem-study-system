@@ -100,7 +100,7 @@ With RHR in service in Mode 5, an RCS pressure transient to &gt;375 psig opens t
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q87</div>
-For a PORV (2PR1) failing open: MPC output lowers as PZR pressure drops; the PORV is isolated by shutting its Block Valve. <span class="hi-exam">A failed-open PORV isolated by its Block Valve requires a unit shutdown if not restored within 72 hours (TS 3.4.5.b)</span>; a leaking PORV isolated by its Block Valve (power maintained) does NOT require shutdown. See [[Pressurizer Level & Press Control]], [[TS 3/4.4 — Reactor Coolant System]].
+For a PORV (2PR1) failing open: MPC output lowers as PZR pressure drops; the PORV is isolated by shutting its Block Valve. <span class="hi-exam">A failed-open PORV isolated by its Block Valve requires a unit shutdown if not restored within 72 hours (TS 3.4.5.b)</span>; a leaking PORV isolated by its Block Valve (power maintained) does NOT require shutdown. See [[Pressurizer Level & Press Control]], [[TS 3.4 — Reactor Coolant System]].
 </div>
 
 <div class="callout callout-exam">

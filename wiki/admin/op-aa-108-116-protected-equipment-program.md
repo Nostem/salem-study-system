@@ -39,6 +39,6 @@ The <span class="hi-exam">Shift Manager has overall authority of the protected e
 
 - Related systems: [[CVCS]]
 - Related procedures: [[OP-AA-109-115 — Equipment Tagging]], [[WC-AA-101 — On-Line Work Management Process]]
-- Related tech specs: [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.0 — Applicability]]
 - Related exam questions: [[2020 Q97]]
 - Related exam: [[2020 NRC Written Exam]]

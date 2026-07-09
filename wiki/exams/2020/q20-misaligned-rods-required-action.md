@@ -54,5 +54,5 @@ In accordance with S2.OP-AB.ROD-0001, and assuming the two control rods will not
 
 - Related systems: [[Control Rod Drive]], [[Stator Cooling Water]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]], [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]], [[TS 3.2 — Power Distribution]]
 - Related exam: [[2020 NRC Written Exam]]

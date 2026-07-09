@@ -1,5 +1,5 @@
 ---
-title: "TS 3/4.6 — Containment"
+title: "TS 3.6 — Containment"
 category: tech-specs
 status: draft
 aliases:
@@ -13,9 +13,9 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-6.pdf" target="_blank">View TS 3.6 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-6.pdf" target="_blank">View Bases 3.6 PDF</a>
 </div>
 
-# TS 3/4.6 — Containment Systems
+# TS 3.6 — Containment Systems
 
-## 3/4.6.1 — Primary Containment
+## 3.6.1 — Primary Containment
 
 ### Containment Integrity (3.6.1.1)
 
@@ -29,9 +29,9 @@ Primary CONTAINMENT INTEGRITY shall be maintained.
 **Action:** Without CONTAINMENT INTEGRITY, restore within <span class="val-trip">1 hour</span> or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.1.1 Containment Integrity</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.1.1 Containment Integrity</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.1.1</div>
+<div class="callout-label">Bases — 3.6.1.1</div>
 
 <span class="hi-exam">Primary CONTAINMENT INTEGRITY restricts release of radioactive materials to those leakage paths and leak rates assumed in the accident analyses</span>, limiting site boundary doses to within 10 CFR 100 limits during accident conditions.
 
@@ -60,9 +60,9 @@ b. Combined leakage rate for Type B and C tests per Containment Leakage Rate Tes
 **Action:** If leakage not within limits, restore prior to increasing RCS temperature above 200°F.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.1.2 Containment Leakage</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.1.2 Containment Leakage</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.1.2</div>
+<div class="callout-label">Bases — 3.6.1.2</div>
 
 The leakage rate limitations ensure total containment leakage does not exceed the value assumed in the accident analyses at peak accident pressure (P<sub>a</sub>). <span class="hi-exam">The measured overall integrated leakage rate (Type A) is further limited to ≤0.75 L<sub>a</sub> or ≤0.75 L<sub>t</sub> (as applicable) during periodic testing</span>, providing conservatism to account for possible degradation of containment leakage barriers between leakage tests.
 
@@ -93,9 +93,9 @@ b. Overall air lock leakage rate per Containment Leakage Rate Testing Program
 **Notes:** Entry/exit permitted for repairs. Separate condition entry allowed for each air lock.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.1.3 Containment Air Locks</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.1.3 Containment Air Locks</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.1.3</div>
+<div class="callout-label">Bases — 3.6.1.3</div>
 
 Air locks form part of the containment pressure boundary and provide personnel access in all Modes. Each is nominally a <span class="hi">10-foot diameter right circular cylinder</span> with a door at each end. The doors are interlocked to prevent simultaneous opening during normal operation; <span class="hi-exam">closure of a single door supports containment OPERABILITY</span>. Each door has double-gasketed seals and local leak rate testing capability. The design uses <span class="hi-exam">pressure-seated doors — increased containment pressure results in increased sealing force</span>.
 
@@ -135,9 +135,9 @@ Primary containment internal pressure shall be maintained between <span class="v
 **Action:** With containment internal pressure not within limits, restore within <span class="val-trip">1 hour</span> or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.1.4 Internal Pressure</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.1.4 Internal Pressure</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.1.4</div>
+<div class="callout-label">Bases — 3.6.1.4</div>
 
 Two separate limits, two separate failure modes:
 
@@ -177,9 +177,9 @@ Primary containment average air temperature shall not exceed <span class="val-al
 **Action:** With average air temperature > 120°F, reduce to within limit within <span class="val-alarm">8 hours</span>, or Hot Standby in 6 hours and Cold Shutdown in 30 hours.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.1.5 Air Temperature</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.1.5 Air Temperature</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.1.5</div>
+<div class="callout-label">Bases — 3.6.1.5</div>
 
 <span class="hi-exam">The 120°F limit ensures the containment average air temperature does not exceed the initial temperature condition assumed in the accident analysis</span> for a LOCA or steam line break. Average temperature is calculated using measurements at locations within containment selected to provide a representative sample of the overall containment atmosphere.
 </div>
@@ -201,9 +201,9 @@ The structural integrity of the containment shall be maintained at a level consi
 - 4.6.1.6.2 — Any abnormal degradation evaluated for reportability per 10CFR50.72/50.73
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.1.6 Structural Integrity</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.1.6 Structural Integrity</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.1.6</div>
+<div class="callout-label">Bases — 3.6.1.6</div>
 
 <span class="hi-exam">Structural integrity is required to ensure containment withstands the design pressure.</span> Visual inspections of concrete, liner, and the Type A leakage test (both per the Containment Leakage Rate Testing Program) are sufficient to demonstrate this capability. The limitation ensures structural integrity is maintained comparable to original design standards for the life of the facility.
 </div>
@@ -211,7 +211,7 @@ The structural integrity of the containment shall be maintained at a level consi
 
 ---
 
-## 3/4.6.2 — Depressurization and Cooling Systems
+## 3.6.2 — Depressurization and Cooling Systems
 
 ### Containment Spray (3.6.2.1)
 
@@ -227,9 +227,9 @@ The structural integrity of the containment shall be maintained at a level consi
 **Key SR:** Each spray pump differential pressure ≥204 psid per IST program.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.2.1 Containment Spray</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.2.1 Containment Spray</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.2.1</div>
+<div class="callout-label">Bases — 3.6.2.1</div>
 
 <span class="hi-exam">Two independent containment spray systems ensure pressure reduction and iodine removal following a LOCA even with a single active failure.</span> The system works in conjunction with the Containment Cooling System — together they provide containment depressurization and cooling. The lower containment pressure and resultant lower leakage rate are consistent with accident analysis assumptions.
 
@@ -257,9 +257,9 @@ b. Two spray additive eductors OPERABLE
 **Key SR:** Spray additive tank eductor flow shall be 35 ±3.5 gpm to each containment spray system.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.2.2 Spray Additive System</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.2.2 Spray Additive System</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.2.2</div>
+<div class="callout-label">Bases — 3.6.2.2</div>
 
 The NaOH spray additive ensures sufficient base is added to the containment spray to achieve two goals following a LOCA:
 
@@ -282,9 +282,9 @@ At least <span class="hi">three containment fan coil units</span> shall be OPERA
 **Action:** With one fan cooler inoperable, restore within <span class="val-alarm">7 days</span>. With two inoperable, restore one within <span class="val-alarm">72 hours</span>. Otherwise Hot Standby in 6 hours and Cold Shutdown in 30 hours.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.2.3 Containment Fan Coolers</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.2.3 Containment Fan Coolers</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.2.3</div>
+<div class="callout-label">Bases — 3.6.2.3</div>
 
 <span class="hi-exam">Three of five CFCUs provide sufficient post-LOCA heat removal capacity (132 × 10⁶ Btu/hr) to reduce containment pressure below design limits</span> when operated in conjunction with the containment spray systems.
 
@@ -313,7 +313,7 @@ At least <span class="hi">three containment fan coil units</span> shall be OPERA
 
 ---
 
-## 3/4.6.3 — Containment Isolation Valves
+## 3.6.3 — Containment Isolation Valves
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.6.3</div>
@@ -330,9 +330,9 @@ Each containment isolation valve shall be OPERABLE.
 | Unable to isolate | Be in Hot Standby, then Cold Shutdown | 6 hrs + 30 hrs |
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.6.3 Containment Isolation Valves</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.3 Containment Isolation Valves</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.6.3</div>
+<div class="callout-label">Bases — 3.6.3</div>
 
 <span class="hi-exam">Containment isolation valves isolate the containment atmosphere from the outside environment in the event of radioactive material release to containment or containment pressurization.</span> Isolation within specified time limits ensures release of radioactive material to the environment is consistent with LOCA analysis assumptions.
 
@@ -363,11 +363,11 @@ Phase A isolation valves actuate on Safety Injection signal ("T"). Phase B isola
 TS LCO 3.6.3 containment isolation valve operability: <span class="hi-exam">2VC5 stroke time of 2.83 seconds is in the REQUIRED ACTION RANGE (> 2.0 seconds)</span> — immediately declare inoperable. Actions: (1a) TS action applicable, (1b) close and deactivate companion valve 2VC6 within <span class="hi-exam">4 hours</span>, OR (1c) isolate penetration within 4 hours, OR (1d) Hot Standby in 6 hours and Cold Shutdown in 30 hours.
 </div>
 
-## 3/4.6.4 — Combustible Gas Control
+## 3.6.4 — Combustible Gas Control
 
 Pages 3/4 6-16 through 6-22 are intentionally blank. This section has been deleted/relocated from Technical Specifications.
 
-## 3/4.6.5 — Containment Structural Integrity (Visual Inspection)
+## 3.6.5 — Containment Structural Integrity (Visual Inspection)
 
 Covered under SR 4.6.1.6.1 above.
 

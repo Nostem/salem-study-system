@@ -39,5 +39,5 @@ Which of the following Unit 2 situations has the LEAST amount of time to respond
 
 ## Connections
 
-- Related tech specs: [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.2 — Power Distribution]]
 - Related exam: [[2014 NRC Written Exam]]

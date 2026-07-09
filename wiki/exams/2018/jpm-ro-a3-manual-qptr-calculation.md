@@ -114,5 +114,5 @@ Ref: S2.OP-ST.NIS-0002 (Rev 14), S2.RE-RA.ZZ-0011 Salem 2 Cycle 23 REM (Rev 17),
 
 - Related systems: [[Excore NIs]]
 - Related procedures: [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[AB.ROD-0002 — Dropped Rod]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]], [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.2 — Power Distribution]], [[TS 3.1.3 — Movable Control Assemblies]]
 - Related exam: [[2018 NRC Operating Exam]]

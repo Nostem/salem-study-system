@@ -49,6 +49,6 @@ Maximum allowable RCS cooldown rate with RVLIS available: <span class="hi-exam">
 
 - Related systems: [[RVLIS]], [[RCS]]
 - Related EOPs: [[EOP-TRIP-4 — Natural Circulation]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam questions: [[2016 Q25]], [[2022 Q84]], [[2020 Q84]], [[2015 Q85]], [[2012 Q23]]
 - Related exam: [[2016 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]

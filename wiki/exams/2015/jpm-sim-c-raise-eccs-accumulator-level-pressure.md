@@ -171,5 +171,5 @@ Ref: S2.OP-SO.SJ-0002 (Rev 24) | Task: 0065010101 | K/A: 006 A4.07 — ECCS: abi
 
 - Related systems: [[ECCS]]
 - Related procedures: [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.5 — ECCS]]
 - Related exam: [[2015 NRC Operating Exam]]

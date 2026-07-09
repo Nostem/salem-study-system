@@ -52,5 +52,5 @@ If the inoperable Accumulator(s) can NOT be restored to OPERABLE status, then th
 ## Connections
 
 - Related systems: [[ECCS]]
-- Related tech specs: [[TS 3/4.5 — ECCS]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.5 — ECCS]], [[TS 3.0 — Applicability]]
 - Related exam: [[2018 NRC Written Exam]]

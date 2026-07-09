@@ -74,5 +74,5 @@ Ref: S2.OP-ST.CBV-0003 (Rev. 19) | Task: N1230300302 | K/A: G2.1.25 — Ability 
 
 - Related systems: [[CFCUs]], [[Service Water]]
 - Related procedures: [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]]
-- Related tech specs: [[TS 3/4.6 — Containment]]
+- Related tech specs: [[TS 3.6 — Containment]]
 - Related exam: [[2016 NRC Operating Exam]]

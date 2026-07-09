@@ -78,7 +78,7 @@ During the power ascension under this procedure, the 4KV Group Buses are <span c
 
 - Related systems: [[Control Rod Drive]], [[Excore NIs]], [[Main Turbine]], [[AFW]], [[Main Steam]], [[RPS/SSPS]]
 - Related procedures: [[S2.OP-SO.TRB-0001 — Turbine-Generator Startup Operations]], [[AB.ROD-0002 — Dropped Rod]], [[AB.ROD-0004 — Rod Position Indication Failure]], [[S2.OP-AR.ZZ-0006 — Overhead Annunciators Window F]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam questions: [[2016 Q69]], [[2018 Q39]], [[2015 Q76]], [[2015 Q94]], [[2014 Q55]], [[2012 Q13]], [[2012 Q87]], [[2012 Q88]], [[2012 Q91]]
 - Related JPMs: [[2018 JPM Sim-e]], [[2015 JPM Sim-e]], [[2014 JPM Sim-g]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]]

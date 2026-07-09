@@ -47,5 +47,5 @@ Which of the following identifies how the CRS is required to respond?
 ## Connections
 
 - Related systems: [[ECCS]], [[CVCS]], [[RHR]]
-- Related tech specs: [[TS 3/4.5 — ECCS]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.5 — ECCS]], [[TS 3.0 — Applicability]]
 - Related exam: [[2016 NRC Written Exam]]

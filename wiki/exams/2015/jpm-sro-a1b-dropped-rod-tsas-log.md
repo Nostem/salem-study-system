@@ -92,5 +92,5 @@ Ref: Salem Tech Specs, OP-SA-108-115-1001 (Rev 7) | Task: 1120700302 | K/A: 2.1.
 
 - Related systems: [[Control Rod Drive]]
 - Related procedures: [[AB.ROD-0002 — Dropped Rod]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[OP-SA-108-115-1001 — Operability Assessment and Equipment Control Program]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]], [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]], [[TS 3.2 — Power Distribution]]
 - Related exam: [[2015 NRC Operating Exam]]

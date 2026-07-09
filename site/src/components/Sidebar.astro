@@ -48,7 +48,7 @@ for (const article of articles) {
   categories[category].push({ title, slug, status, depth });
 }
 
-// Natural numeric sort — handles "TS 3/4.1" before "TS 3/4.10", "Q1" before "Q10"
+// Natural numeric sort — handles "TS 3.1" before "TS 3.10", "Q1" before "Q10"
 function naturalSort(a: string, b: string): number {
   const re = /(\d+)|(\D+)/g;
   const aParts = a.match(re) || [];

@@ -44,5 +44,5 @@ Which of the following identifies how this affects the PZR Master Pressure Contr
 
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2015 NRC Written Exam]]

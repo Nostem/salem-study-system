@@ -42,5 +42,5 @@ In accordance with Unit 2 LCO 3.3.3.7 (ACCIDENT MONITORING INSTRUMENTATION), 2PT
 ## Connections
 
 - Related systems: [[RVLIS]], [[Pressurizer Level & Press Control]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2019 NRC Written Exam]]

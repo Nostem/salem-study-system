@@ -49,5 +49,5 @@ In addition to 1CV4, the crew will also place <span class="blank">_(2)_</span> i
 
 - Related systems: [[CVCS]]
 - Related procedures: [[AB.RC-0002 — High Activity in the RCS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2019 NRC Written Exam]]

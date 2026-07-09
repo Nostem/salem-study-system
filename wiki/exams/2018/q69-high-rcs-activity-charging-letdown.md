@@ -52,5 +52,5 @@ In addition to 1CV4, the crew <span class="blank">_(2)_</span> required to also 
 
 - Related systems: [[CVCS]]
 - Related procedures: [[AB.RC-0002 — High Activity in the RCS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2018 NRC Written Exam]]

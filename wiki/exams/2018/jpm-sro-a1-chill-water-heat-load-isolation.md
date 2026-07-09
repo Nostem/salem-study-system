@@ -104,5 +104,5 @@ Ref: S2.OP-SO.CH-0001 (Rev 34), S2.OP-SO.CA-0001, SC.OP-DL.ZZ-0008(Q) | Task: 09
 
 - Related systems: [[Chill Water]], [[Control Air]], [[Service Water]]
 - Related procedures: [[S2.OP-SO.CH-0001 — Chilled Water System Operation]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related exam: [[2018 NRC Operating Exam]]

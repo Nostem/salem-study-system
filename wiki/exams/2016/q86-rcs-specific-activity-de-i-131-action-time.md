@@ -47,5 +47,5 @@ Be in at least Mode 3 with Tavg &lt;500&deg;F by....
 ## Connections
 
 - Related systems: [[RCS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2016 NRC Written Exam]]

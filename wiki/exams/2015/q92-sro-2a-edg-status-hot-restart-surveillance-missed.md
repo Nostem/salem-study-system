@@ -47,5 +47,5 @@ Which of the following describes:<br>
 ## Connections
 
 - Related systems: [[EDGs]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related exam: [[2015 NRC Written Exam]]

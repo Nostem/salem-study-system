@@ -227,8 +227,8 @@ During SGTR-1 depressurization, normal PZR spray is NOT available (23 RCP stoppe
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.4]]** — Pressurizer (level and heater requirements)
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.3]]** — PORVs and Block Valves
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.4]]** — Pressurizer (level and heater requirements)
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.3]]** — PORVs and Block Valves
 
 ## Exam & Operating Coverage
 

@@ -42,6 +42,6 @@ Manual QPTR calculation procedure: for each upper and lower detector (N41-N44), 
 
 - Related systems: [[Excore NIs]]
 - Related procedures: [[AB.ROD-0002 — Dropped Rod]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.2 — Power Distribution]]
 - Related JPMs: [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]]
 - Related exam: [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]]

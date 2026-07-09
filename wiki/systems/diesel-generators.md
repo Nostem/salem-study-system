@@ -169,7 +169,7 @@ EDG Fuel Oil Day Tank transfer pump operation: <span class="hi-exam">REGULAR pum
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q93</div>
-A tripped 21 Diesel Fuel Oil Transfer Pump breaker requires entering <span class="hi-exam">TS 3.8.1.1.b.2 (EDG Fuel Oil, Modes 1-4) because BOTH Fuel Oil Transfer pumps are required to be OPERABLE</span>. The controlling Tech Spec bases is the <span class="hi-exam">electric power sources bases — OPERABILITY of the AC electrical power sources ensures sufficient power for the safe shutdown of the plant and for the mitigation and control of accident conditions.</span> <span class="hi-trap">Trap: pairing the correct TS with the LCO 3.0.3 "timely unit shutdown" bases is wrong; and a single tripped CCW pump does NOT make both loops of CCW inoperable, so a TS 3.0.3 / CCW basis is also wrong.</span> See [[TS 3/4.8 — Electrical]].
+A tripped 21 Diesel Fuel Oil Transfer Pump breaker requires entering <span class="hi-exam">TS 3.8.1.1.b.2 (EDG Fuel Oil, Modes 1-4) because BOTH Fuel Oil Transfer pumps are required to be OPERABLE</span>. The controlling Tech Spec bases is the <span class="hi-exam">electric power sources bases — OPERABILITY of the AC electrical power sources ensures sufficient power for the safe shutdown of the plant and for the mitigation and control of accident conditions.</span> <span class="hi-trap">Trap: pairing the correct TS with the LCO 3.0.3 "timely unit shutdown" bases is wrong; and a single tripped CCW pump does NOT make both loops of CCW inoperable, so a TS 3.0.3 / CCW basis is also wrong.</span> See [[TS 3.8 — Electrical]].
 </div>
 
 ## EDG Lube Oil Setpoints
@@ -250,7 +250,7 @@ On a LOOP with 2A/2B EDGs running and the <span class="hi-exam">2C SEC failed to
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.8 — Electrical]]** — TS 3.8.1.1 requires 3 DGs OPERABLE in Modes 1–4; TS 3.8.1.2 requires 2 DGs OPERABLE in Modes 5–6
+- **[[TS 3.8 — Electrical]]** — TS 3.8.1.1 requires 3 DGs OPERABLE in Modes 1–4; TS 3.8.1.2 requires 2 DGs OPERABLE in Modes 5–6
 - 1 DG inoperable: 72 hours; demonstrate OPERABILITY of remaining DGs within 24 hours
 - 1 DG AND 1 offsite circuit inoperable: 12 hours
 
@@ -260,7 +260,7 @@ On a LOOP with 2A/2B EDGs running and the <span class="hi-exam">2C SEC failed to
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q92</div>
-EDG TS surveillances: SR 4.8.1.2 specifies that certain surveillances are NOT required to maintain EDG operability (to avoid paralleling the EDG with offsite power or de-energizing an ESF bus during the test). <span class="hi-exam">A missed 18-month Hot Restart surveillance does NOT make 2A EDG inoperable; the test must be completed prior to entering Mode 4</span>. See [[TS 3/4.8 — Electrical]].
+EDG TS surveillances: SR 4.8.1.2 specifies that certain surveillances are NOT required to maintain EDG operability (to avoid paralleling the EDG with offsite power or de-energizing an ESF bus during the test). <span class="hi-exam">A missed 18-month Hot Restart surveillance does NOT make 2A EDG inoperable; the test must be completed prior to entering Mode 4</span>. See [[TS 3.8 — Electrical]].
 </div>
 
 <div class="callout callout-exam">
@@ -324,7 +324,7 @@ SBO Diesel Control Air Compressor: backup control air source when all ECACs are 
 ## Connections
 
 - Related systems: [[Fire Protection]]
-- Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.8 — Electrical]], [[TS 3.0 — Applicability]]
 - Related exam questions: [[2015 Q13]], [[2016 Q55]], [[2016 Q57]], [[2016 Q58]], [[2016 Q64]], [[2016 Q91]], [[2016 Q92]], [[2018 Q21]], [[2018 Q22]], [[2018 Q42]], [[2018 Q60]], [[2019 Q12]], [[2019 Q21]], [[2019 Q24]], [[2019 Q79]], [[2019 Q83]], [[2020 Q11]], [[2020 Q13]], [[2020 Q17]], [[2020 Q47]], [[2020 Q48]], [[2020 Q50]], [[2020 Q52]], [[2020 Q53]], [[2023 Q12]], [[2023 Q48]], [[2023 Q89]], [[2022 Q50]], [[2022 Q89]], [[2015 Q43]], [[2015 Q55]], [[2015 Q58]], [[2015 Q92]], [[2014 Q59]], [[2014 Q83]], [[2014 Q93]], [[2012 Q11]], [[2012 Q12]], [[2012 Q59]], [[2012 Q62]], [[2012 Q75]], [[2012 Q82]], [[2012 Q97]]
 - Related procedures: [[S2.OP-ST.DG-0001 — Emergency Diesel Generator Surveillance Test]], [[S2.OP-ST.DG-0002 — 2B Diesel Generator Surveillance Test]], [[SC.OP-SO.CA-0001 — SBO Diesel Control Air Compressor]], [[AB.LOOP-0001 — Loss of All Offsite Power]], [[EP-SA-325 — Emergency Plan Implementing Procedures]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[AB.CA-0001 — Loss of Control Air]], [[S2.OP-ST.DG-0003 — 2C Diesel Generator Surveillance Test]], [[S2.OP-ST.DG-0014 — 2C Diesel Generator Endurance Run]], [[S2.OP-SO.DG-0003 — 2C Diesel Generator Operation]], [[S2.OP-AR.DG-0003 — 2C Diesel Generator Alarm Response]]
 - Related JPMs: [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-g]], [[2016 JPM IP-i]], [[2016 JPM IP-k]], [[2019 JPM SRO-A3]], [[2019 JPM Sim-g]], [[2020 JPM IP-j]], [[2020 JPM SRO-A3]], [[2023 JPM IP-i]], [[2022 JPM SRO-A5]], [[2014 JPM IP-i]], [[2012 JPM IP-j]], [[2012 JPM IP-k]]

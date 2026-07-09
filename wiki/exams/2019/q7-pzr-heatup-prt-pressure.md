@@ -49,5 +49,5 @@ During the Pressurizer degassing, the crew will open and close 2PR1 to maintain 
 
 - Related systems: [[Pressurizer & PRT]]
 - Related procedures: [[S2.OP-SO.RC-0002 — Vacuum Refill of the RCS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2019 NRC Written Exam]]

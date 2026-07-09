@@ -42,5 +42,5 @@ Which of the following identifies a condition which would require termination of
 
 - Related systems: [[Waste Gas]]
 - Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related exam: [[2014 NRC Written Exam]]

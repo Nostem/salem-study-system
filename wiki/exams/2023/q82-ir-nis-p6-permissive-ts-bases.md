@@ -49,6 +49,6 @@ Which of the following completes both statements?<br><br>
 ## Connections
 
 - Related systems: [[RPS/SSPS]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
 - Related exam: [[2023 NRC Written Exam]]

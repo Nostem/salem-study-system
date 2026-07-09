@@ -51,5 +51,5 @@ LCO 3.4.1.2 (Reactor Coolant Loops And Coolant Circulation Hot Standby) <span cl
 
 - Related systems: [[RCPs]]
 - Related procedures: [[AB.RCP-0001 — RCP Abnormality]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2018 NRC Written Exam]]

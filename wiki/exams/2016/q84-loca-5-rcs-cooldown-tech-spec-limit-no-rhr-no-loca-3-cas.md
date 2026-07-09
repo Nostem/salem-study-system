@@ -49,5 +49,5 @@ Which of the following describes how the CRS is required to proceed?
 
 - Related systems: [[RCS]], [[RHR]], [[ECCS]], [[Containment]], [[CVCS]]
 - Related EOPs: [[EOP-LOCA-1 — Loss of Reactor or Secondary Coolant]], [[EOP-LOCA-3]], [[EOP-LOCA-5 — Loss of Emergency Coolant Recirculation]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2016 NRC Written Exam]]

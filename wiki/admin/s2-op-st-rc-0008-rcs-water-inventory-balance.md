@@ -34,6 +34,6 @@ Performance of S2.OP-ST.RC-0008(Q), RCS Water Inventory Balance, required by T/S
 
 - Related systems: [[RCS]]
 - Related procedures: [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam questions: [[2014 Q86]]
 - Related exam: [[2014 NRC Written Exam]]

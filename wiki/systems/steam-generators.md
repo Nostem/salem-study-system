@@ -136,7 +136,7 @@ SG high level trip (P-14): <span class="hi-exam">2/3 NR levels ≥67% on any SG<
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators (tube integrity, inspection requirements)
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.5]]** — Steam Generators (tube integrity, inspection requirements)
 
 **Exam & operating coverage:**
 

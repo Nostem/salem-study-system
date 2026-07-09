@@ -292,7 +292,7 @@ TS 3.5.4 limits total RCP seal injection flow to <span class="hi-exam">&le;40 gp
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (minimum loops in operation by mode)
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.1]]** — Reactor Coolant Loops (minimum loops in operation by mode)
 
 **Exam & operating coverage:**
 

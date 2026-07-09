@@ -1,5 +1,5 @@
 ---
-title: "TS 3/4.0 — Applicability"
+title: "TS 3.0 — Applicability"
 category: tech-specs
 status: draft
 aliases:
@@ -13,14 +13,14 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-2-0.pdf" target="_blank">View Tech Spec PDF</a>
 </div>
 
-# TS 3/4.0 — Applicability
+# TS 3.0 — Applicability
 
 ## LCO Applicability Rules
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.0 General Applicability (10 CFR 50.36)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.0 General Applicability (10 CFR 50.36)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.0 General</div>
+<div class="callout-label">Bases — 3.0 General</div>
 
 Specifications 3.0.1 through 3.0.4 establish general requirements applicable to Limiting Conditions for Operation. These requirements are based on 10 CFR 50.36(c)(2): <span class="hi-exam">"Limiting conditions for operation are the lowest functional capability or performance levels of equipment required for safe operation of the facility. When a limiting condition for operation of a nuclear reactor is not met, the licensee shall shut down the reactor or follow any remedial action permitted by the technical specification until the condition can be met."</span>
 
@@ -98,12 +98,12 @@ If remedial measures permitting continued operation under the provisions of the 
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q93</div>
-The <span class="hi-exam">LCO 3.0.3 bases</span> is "to ensure a <span class="hi-exam">timely unit shutdown is performed when plant operation cannot be maintained within the limits of safe operation</span> defined by the LCO and its action requirements." <span class="hi-trap">Trap: a question may pair a correct system-specific TS (e.g., TS 3.8.1.1.b.2 for an EDG fuel oil transfer pump) with this 3.0.3 bases — that pairing is WRONG. The electric power sources (EDG) bases is "ensures sufficient power for safe shutdown and for mitigation and control of accident conditions," NOT the 3.0.3 timely-shutdown bases.</span> See [[TS 3/4.8 — Electrical]].
+The <span class="hi-exam">LCO 3.0.3 bases</span> is "to ensure a <span class="hi-exam">timely unit shutdown is performed when plant operation cannot be maintained within the limits of safe operation</span> defined by the LCO and its action requirements." <span class="hi-trap">Trap: a question may pair a correct system-specific TS (e.g., TS 3.8.1.1.b.2 for an EDG fuel oil transfer pump) with this 3.0.3 bases — that pairing is WRONG. The electric power sources (EDG) bases is "ensures sufficient power for safe shutdown and for mitigation and control of accident conditions," NOT the 3.0.3 timely-shutdown bases.</span> See [[TS 3.8 — Electrical]].
 </div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q94</div>
-TS 3.0.3 is the entry point when an LCO has <span class="hi-exam">no ACTION for the as-found inoperable condition</span>. There is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">only ONE inoperable Intermediate Range NI</span>; with <span class="hi-exam">BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). See [[TS 3/4.3 — Instrumentation]] and [[Incores]].
+TS 3.0.3 is the entry point when an LCO has <span class="hi-exam">no ACTION for the as-found inoperable condition</span>. There is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">only ONE inoperable Intermediate Range NI</span>; with <span class="hi-exam">BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). See [[TS 3.3 — Instrumentation]] and [[Incores]].
 </div>
 
 <div class="callout callout-exam">

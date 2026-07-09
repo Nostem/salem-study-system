@@ -223,7 +223,7 @@ Per Salem FSAR Sections 6 and 15, the <span class="hi-exam">minimum complement f
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.6 — Containment]]** — TS 3.6.2.1 (Spray System), TS 3.6.2.2 (Spray Additive)
+- **[[TS 3.6 — Containment]]** — TS 3.6.2.1 (Spray System), TS 3.6.2.2 (Spray Additive)
 - 1 spray system inoperable: 72 hours, then 48 more hours, or Cold Shutdown
 
 **Exam & operating coverage:**

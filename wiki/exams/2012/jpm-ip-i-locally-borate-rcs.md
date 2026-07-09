@@ -117,5 +117,5 @@ Ref: S1.OP-AB.CR-0001 (Rev 17), Control Room Evacuation, Attachment 5, Step 10 |
 
 - Related systems: [[CVCS]]
 - Related procedures: [[AB.CR-0001 — Control Room Evacuation]]
-- Related tech specs: [[TS 3/4.1.1 — Boration Control]], [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.1.1 — Boration Control]], [[TS 3.1.2 — Boration Systems]]
 - Related exam: [[2012 NRC Operating Exam]]

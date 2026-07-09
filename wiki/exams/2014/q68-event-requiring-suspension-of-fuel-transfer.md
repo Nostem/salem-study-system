@@ -41,5 +41,5 @@ Which of the following events would require the transfer of spent fuel elements 
 
 - Related systems: [[Spent Fuel Pool]]
 - Related procedures: [[S2.OP-SO.SF-0009 — Refueling Operations]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2014 NRC Written Exam]]

@@ -53,6 +53,6 @@ Borated Water Sources surveillance with narrow-margin UNSAT results. Combined BA
 
 - Related systems: [[CVCS]]
 - Related procedures: [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]]
 - Related JPMs: [[2019 JPM RO-A2]], [[2016 JPM RO-A2]], [[2012 JPM RO-A2]]
 - Related exam: [[2019 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Operating Exam]]

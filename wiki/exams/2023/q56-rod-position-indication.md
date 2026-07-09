@@ -50,5 +50,5 @@ In accordance with S2.OP-DL.ZZ-0003, Control Room Logs, which of the following c
 
 - Related systems: [[RPS/SSPS]]
 - Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related exam: [[2023 NRC Written Exam]]

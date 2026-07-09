@@ -45,5 +45,5 @@ Which of the following Tech Spec LCO's would be applicable if 22 charging pump w
 ## Connections
 
 - Related systems: [[ECCS]], [[CVCS]]
-- Related tech specs: [[TS 3/4.5 — ECCS]], [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.5 — ECCS]], [[TS 3.1.2 — Boration Systems]]
 - Related exam: [[2015 NRC Written Exam]]

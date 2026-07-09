@@ -72,7 +72,7 @@ Power Range NI Channel IV (2N44) fails high during a power ascension (Event 2). 
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related procedures: [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[AB.ROD-0003 — Continuous Rod Motion]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
 - Related exam questions: [[2016 Q13]], [[2019 Q30]], [[2023 Q82]], [[2020 Q22]], [[2015 Q89]], [[2014 Q76]]

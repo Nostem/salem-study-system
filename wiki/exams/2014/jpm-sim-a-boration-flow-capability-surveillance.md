@@ -141,7 +141,7 @@ You are the Reactor Operator. Perform S2.OP-ST.CVC-0011, Boration Flow Rate Test
 </div>
 
 <div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">
-Ref: S2.OP-ST.CVC-0011 (Rev 7) | Task: N0040430201 | K/A: 004 A4.18 — CVCS: Ability to manually operate and/or monitor in the control room (4.3/4.4) | Source: New | <a href="/salem-study-system/exam-pdfs/2014-jpm-sim-a.pdf" target="_blank" style="color:#60a5fa;">View JPM PDF</a>
+Ref: S2.OP-ST.CVC-0011 (Rev 7) | Task: N0040430201 | K/A: 004 A4.18 — CVCS: Ability to manually operate and/or monitor in the control room (4.3.4) | Source: New | <a href="/salem-study-system/exam-pdfs/2014-jpm-sim-a.pdf" target="_blank" style="color:#60a5fa;">View JPM PDF</a>
 </div>
 </div>
 </details>
@@ -151,5 +151,5 @@ Ref: S2.OP-ST.CVC-0011 (Rev 7) | Task: N0040430201 | K/A: 004 A4.18 — CVCS: Ab
 
 - Related systems: [[CVCS]]
 - Related procedures: [[S2.OP-ST.CVC-0011 — Boration Flow Rate Test]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]]
 - Related exam: [[2014 NRC Operating Exam]]

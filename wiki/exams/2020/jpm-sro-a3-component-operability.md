@@ -76,5 +76,5 @@ Ref: S1.OP-SO.DG-0005 (R10), S1.OP-SO.SW-0005 (R47), Salem Unit 1 Tech Specs 3.8
 
 - Related systems: [[EDGs]], [[Service Water]]
 - Related procedures: [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.8 — Electrical]], [[TS 3.7 — Plant Systems]]
 - Related exam: [[2020 NRC Operating Exam]]

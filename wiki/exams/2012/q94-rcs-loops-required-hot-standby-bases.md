@@ -35,7 +35,7 @@ Which of the following identifies how many Reactor Coolant loops are REQUIRED to
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ B.</strong> B is incorrect because 4 loops are required with rod control energized; the single PZR pressure control bases is not the governing requirement here.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ C.</strong> C is incorrect because DNB is not a bases for Mode 3 RCP operation; it is a Mode 1 and 2 bases.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ D.</strong> D is incorrect because it is one RCP, but has the correct bases for when only one RCP is required (not the four-loop requirement with rod control energized).</div>
-<div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">Ref: Salem Tech Specs 3/4.1.2 (page 3/4 4-2, Rev 44); Salem Tech Specs Bases 3/4.4.1 (page B3/4 4-1, Rev 197) | LO: RCPUMPE010 | Source: Facility Exam Bank (Significantly Modified — Vision Q27905, candidate must determine rod control energized then how many RCPs required) | Cognitive: Memory</div>
+<div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">Ref: Salem Tech Specs 3.1.2 (page 3/4 4-2, Rev 44); Salem Tech Specs Bases 3.4.1 (page B3/4 4-1, Rev 197) | LO: RCPUMPE010 | Source: Facility Exam Bank (Significantly Modified — Vision Q27905, candidate must determine rod control energized then how many RCPs required) | Cognitive: Memory</div>
 </div>
 </details>
 </div>
@@ -43,5 +43,5 @@ Which of the following identifies how many Reactor Coolant loops are REQUIRED to
 ## Connections
 
 - Related systems: [[Reactor Coolant Pumps]], [[RCS]], [[Control Rod Drive]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2012 NRC Written Exam]]

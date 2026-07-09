@@ -46,5 +46,5 @@ The LCO 3.2.1 REQUIRED power reduction will ensure <span class="blank">_(2)_</sp
 
 ## Connections
 
-- Related tech specs: [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.2 — Power Distribution]]
 - Related exam: [[2018 NRC Written Exam]]

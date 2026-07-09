@@ -162,16 +162,16 @@ EOP-FRCI-3 Attachment 1 maximum vent time calculation for reactor vessel upper h
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.4 — Reactor Coolant System]]** — RCS pressure, temperature, flow limits
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.1]]** — Reactor Coolant Loops (Modes 1-4)
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.2]]** — Safety Valves
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.3]]** — PORVs and Block Valves
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.4]]** — Pressurizer
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.5]]** — Steam Generators
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.6]]** — RCS Leakage Detection
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.7]]** — RCS Leakage
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.8]]** — Chemistry
-- **[[TS 3/4.4 — Reactor Coolant System|TS 3/4.4.9]]** — Specific Activity
+- **[[TS 3.4 — Reactor Coolant System]]** — RCS pressure, temperature, flow limits
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.1]]** — Reactor Coolant Loops (Modes 1-4)
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.2]]** — Safety Valves
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.3]]** — PORVs and Block Valves
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.4]]** — Pressurizer
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.5]]** — Steam Generators
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.6]]** — RCS Leakage Detection
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.7]]** — RCS Leakage
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.8]]** — Chemistry
+- **[[TS 3.4 — Reactor Coolant System|TS 3.4.9]]** — Specific Activity
 
 **Exam & operating coverage:**
 
@@ -396,10 +396,10 @@ When the SMM is inoperable, RCS saturation/subcooling is determined per EOP-CFST
 
 ### Thermal-Hydraulic Tech Spec LCOs
 
-- **TS 3/4.2.1** — Axial Flux Difference (delta-I)
-- **TS 3/4.2.2** — Heat Flux Hot Channel Factor (FQ)
-- **TS 3/4.2.3** — Nuclear Enthalpy Rise Hot Channel Factor (F-delta-H)
-- **TS 3/4.2.5** — DNB Parameters (pressurizer pressure, RCS Tavg, RCS flow)
+- **TS 3.2.1** — Axial Flux Difference (delta-I)
+- **TS 3.2.2** — Heat Flux Hot Channel Factor (FQ)
+- **TS 3.2.3** — Nuclear Enthalpy Rise Hot Channel Factor (F-delta-H)
+- **TS 3.2.5** — DNB Parameters (pressurizer pressure, RCS Tavg, RCS flow)
 
 **Exam & operating coverage:**
 

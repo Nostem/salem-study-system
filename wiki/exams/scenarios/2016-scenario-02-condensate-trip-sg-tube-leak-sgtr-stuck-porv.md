@@ -109,5 +109,5 @@ Source: 15-01 NRC ESG-2 (Rev 00, 8-3-16) | <a href="/salem-study-system/exam-pdf
 - Related systems: [[EDGs]], [[Feed & Condensate]], [[CVCS]], [[Pressurizer Level & Press Control]], [[Pressurizer & PRT]], [[RCS]], [[ECCS]], [[AFW]], [[SECs]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Steam Dumps]], [[Radiation Monitoring]], [[RCPs]], [[RPS/SSPS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-SGTR-1 — Steam Generator Tube Rupture]], [[EOP-SGTR-3 — SGTR with LOCA Subcooled Recovery]], [[EOP-FRTS-1 — Response to Imminent Pressurized Thermal Shock]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]]
 - Related procedures: [[AB.CN-0001 — Condensate System Abnormality]], [[AB.LOAD-0001 — Rapid Load Reduction]], [[AB.CVC-0001 — Loss of Charging]], [[AB.SG-0001 — Steam Generator Tube Leak]], [[AB.RAD-0001 — Radiation Monitor Abnormality]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]], [[TS 3/4.8 — Electrical]], [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.7 — Plant Systems]], [[TS 3.8 — Electrical]], [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2016 NRC Operating Exam]]

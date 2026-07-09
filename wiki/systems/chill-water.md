@@ -83,11 +83,11 @@ Non-essential heat load isolation per S2.OP-SO.CH-0001 Attachment 2: with both c
 
 ## Tech Spec LCOs
 
-- **TS 3/4.7.10** — Chilled Water System (Auxiliary Building Subsystem): the Auxiliary Building chilled water loop serving safety-related loads shall be OPERABLE in one of three configurations — three chillers/two pumps (Config A), two chillers/two pumps during November–April with additional restrictions (Config B), or a cross-tied configuration with three chillers/two pumps from either unit (Config C). With both required chillers inoperable in Modes 1–4, TS 3.7.10.a Action b.1 requires removing non-essential heat loads within <span class="val-trip">4 hrs</span> (TS 3/4.7.10, Amend 297). See [[TS 3/4.7 — Plant Systems]] for the full action table and bases.
+- **TS 3.7.10** — Chilled Water System (Auxiliary Building Subsystem): the Auxiliary Building chilled water loop serving safety-related loads shall be OPERABLE in one of three configurations — three chillers/two pumps (Config A), two chillers/two pumps during November–April with additional restrictions (Config B), or a cross-tied configuration with three chillers/two pumps from either unit (Config C). With both required chillers inoperable in Modes 1–4, TS 3.7.10.a Action b.1 requires removing non-essential heat loads within <span class="val-trip">4 hrs</span> (TS 3.7.10, Amend 297). See [[TS 3.7 — Plant Systems]] for the full action table and bases.
 
 ## Connections
 
 - Related procedures: [[S2.OP-SO.CH-0001 — Chilled Water System Operation]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related JPMs: [[2016 JPM SRO-A1-2]], [[2018 JPM SRO-A1]], [[2022 JPM SRO-A1]], [[2014 JPM SRO-A1-1]]
 - Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]]

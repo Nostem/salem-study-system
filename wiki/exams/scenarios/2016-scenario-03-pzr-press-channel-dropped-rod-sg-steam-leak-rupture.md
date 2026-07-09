@@ -104,5 +104,5 @@ Source: 15-01 NRC ESG-3 (Rev 00, 8-11-16) | <a href="/salem-study-system/exam-pd
 - Related systems: [[Pressurizer Level & Press Control]], [[Pressurizer & PRT]], [[Control Rod Drive]], [[RCS]], [[RCPs]], [[ECCS]], [[AFW]], [[SECs]], [[Steam Generator & Blowdown]], [[Main Steam]], [[Steam Dumps]], [[Containment Spray]], [[Containment]], [[CFCUs]], [[RPS/SSPS]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-LOSC-1 — Loss of Secondary Coolant]], [[EOP-LOSC-2 — Uncontrolled Depressurization of All Steam Generators]], [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[AB.ROD-0002 — Dropped Rod]], [[AB.STM-0001 — Excessive Steam Flow]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]], [[TS 3/4.4 — Reactor Coolant System]], [[TS 3/4.2 — Power Distribution]], [[TS 3/4.6 — Containment]]
+- Related tech specs: [[TS 3.3 — Instrumentation]], [[TS 3.4 — Reactor Coolant System]], [[TS 3.2 — Power Distribution]], [[TS 3.6 — Containment]]
 - Related exam: [[2016 NRC Operating Exam]]

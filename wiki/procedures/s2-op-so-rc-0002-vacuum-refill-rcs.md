@@ -30,6 +30,6 @@ Per S2.OP-SO.RC-0002 Section 5.4 ("Establishing Pressurizer Steam Bubble Without
 ## Connections
 
 - Related systems: [[Pressurizer & PRT]], [[RCS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam questions: [[2019 Q7]], [[2012 Q37]]
 - Related exam: [[2019 NRC Written Exam]], [[2012 NRC Written Exam]]

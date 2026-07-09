@@ -48,5 +48,5 @@ Both IR NI's...
 
 - Related systems: [[Incores]]
 - Related procedures: [[S2.OP-IO.ZZ-0003 — Hot Standby to Minimum Load]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.3 — Instrumentation]], [[TS 3.0 — Applicability]]
 - Related exam: [[2014 NRC Written Exam]]

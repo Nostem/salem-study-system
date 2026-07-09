@@ -40,5 +40,5 @@ Which of the following describes the bases for maintaining an OPERABLE Auxiliary
 ## Connections
 
 - Related systems: [[AFW]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related exam: [[2014 NRC Written Exam]]

@@ -118,6 +118,6 @@ Ref: SC.RE-ST.ZZ-0002 (R23), S2.RE-RA.ZZ-0016 Curve Book (R8) | Task: N120003030
 ## Connections
 
 - Related procedures: [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related systems: [[Control Rod Drive]]
 - Related exam: [[2016 NRC Operating Exam]]

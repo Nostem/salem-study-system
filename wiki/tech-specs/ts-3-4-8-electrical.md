@@ -1,5 +1,5 @@
 ---
-title: "TS 3/4.8 — Electrical"
+title: "TS 3.8 — Electrical"
 category: tech-specs
 status: draft
 aliases:
@@ -13,9 +13,9 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-8.pdf" target="_blank">View TS 3.8 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-8.pdf" target="_blank">View Bases 3.8 PDF</a>
 </div>
 
-# TS 3/4.8 — Electrical Power Systems
+# TS 3.8 — Electrical Power Systems
 
-## 3/4.8.1 — AC Sources
+## 3.8.1 — AC Sources
 
 ### AC Sources — Operating (3.8.1.1)
 
@@ -43,9 +43,9 @@ When one DG is inoperable, the OPERABILITY of the remaining DGs must be demonstr
 </div>
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.1.1 AC Sources (Operating)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.8.1.1 AC Sources (Operating)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.8.1.1</div>
+<div class="callout-label">Bases — 3.8.1.1</div>
 
 **OPERABILITY Basis**
 
@@ -173,9 +173,9 @@ b. Two separate and independent diesel generators with fuel supply
 - **REQUIRED ACTION B:** With ALL REQUIRED EDGs inoperable, IMMEDIATELY suspend all operations involving positive reactivity changes
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.1.2 AC Sources (Shutdown)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.8.1.2 AC Sources (Shutdown)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.8.1.2</div>
+<div class="callout-label">Bases — 3.8.1.2</div>
 
 <span class="hi-exam">The minimum specified AC and DC sources during shutdown and refueling ensure: (1) the facility can be maintained in a shutdown or refueling condition for extended periods, and (2) sufficient instrumentation and control capability is available for monitoring.</span>
 
@@ -196,7 +196,7 @@ Specs 3.8.2.2, 3.8.2.4, and 3.8.2.6 include movement of irradiated fuel assembli
 
 ---
 
-## 3/4.8.2 — DC Sources
+## 3.8.2 — DC Sources
 
 ### DC Sources — Operating (3.8.2.1)
 
@@ -217,9 +217,9 @@ b. Three 28-volt battery supplies for reactor trip breaker UV coils
 | 1 of 3 28V supplies inoperable | Restore | <span class="val-alarm">48 hrs</span> |
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.2.1 DC Sources (Operating)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.8.2.1 DC Sources (Operating)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.8.2.1</div>
+<div class="callout-label">Bases — 3.8.2.1</div>
 
 <span class="hi-exam">The 125V DC batteries provide control power for switchgear operation, diesel generator starting, reactor trip breaker control, and emergency instrumentation.</span> OPERABILITY of the DC sources ensures sufficient power for safe shutdown and accident mitigation, consistent with GDC 17. The 2-hour completion time for a battery reflects the critical importance of DC power for safety functions.
 
@@ -260,9 +260,9 @@ One 125-volt battery bank with associated charger
 **Applicability:** Modes 5 and 6
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.2.2 DC Sources (Shutdown)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.8.2.2 DC Sources (Shutdown)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.8.2.2</div>
+<div class="callout-label">Bases — 3.8.2.2</div>
 
 <span class="hi-exam">The minimum specified DC source during shutdown and refueling ensures sufficient instrumentation and control capability for monitoring and maintaining the facility in a safe shutdown condition for extended periods.</span> Requirements in Specs 3.8.2.2, 3.8.2.4, and 3.8.2.6 that address movement of irradiated fuel assemblies ensure adequate electrical power for Fuel Handling Building ventilation.
 </div>
@@ -270,7 +270,7 @@ One 125-volt battery bank with associated charger
 
 ---
 
-## 3/4.8.3 — Onsite Power Distribution
+## 3.8.3 — Onsite Power Distribution
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.8.3.1</div>
@@ -286,9 +286,9 @@ The following electrical busses shall be energized and OPERABLE:<br>
 **Action:** With one bus inoperable, restore within <span class="val-alarm">8 hours</span> or be in Hot Standby within 6 hours and Hot Shutdown within 6 hours.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.8.3 Onsite Power Distribution</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.8.3 Onsite Power Distribution</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.8.3</div>
+<div class="callout-label">Bases — 3.8.3</div>
 
 <span class="hi-exam">Containment electrical penetrations and penetration conductors are protected by either deenergizing circuits not required during reactor operation, or by demonstrating OPERABILITY of primary and backup overcurrent protection circuit breakers during periodic surveillance.</span>
 

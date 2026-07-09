@@ -45,5 +45,5 @@ Which of the following identifies the Rx power limitation, if any, IAW SC.SA-ST.
 ## Connections
 
 - Related procedures: [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]], [[RP-SA-102 — Containment Entries at Power]]
-- Related tech specs: [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.0 — Applicability]]
 - Related exam: [[2014 NRC Written Exam]]

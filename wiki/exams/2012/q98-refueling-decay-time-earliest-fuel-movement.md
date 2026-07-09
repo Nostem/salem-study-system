@@ -42,5 +42,5 @@ If all other requirements are met, which of the following is the EARLIEST time t
 ## Connections
 
 - Related systems: [[Refueling]], [[Spent Fuel Pool]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]]
 - Related exam: [[2012 NRC Written Exam]]

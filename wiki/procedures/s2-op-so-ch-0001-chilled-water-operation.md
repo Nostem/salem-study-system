@@ -56,6 +56,6 @@ With both chillers inoperable, inlet water temp 85.1°F (83.6°F + 1.5°F uncert
 ## Connections
 
 - Related systems: [[Chill Water]], [[Control Air]], [[Service Water]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related JPMs: [[2016 JPM SRO-A1-2]], [[2018 JPM SRO-A1]], [[2022 JPM SRO-A1]], [[2014 JPM SRO-A1-1]]
 - Related exam: [[2016 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2014 NRC Operating Exam]]

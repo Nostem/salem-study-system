@@ -45,5 +45,5 @@ IV. Unit CRS AND SM approval.
 
 - Related systems: [[Refueling]]
 - Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]]
 - Related exam: [[2015 NRC Written Exam]]

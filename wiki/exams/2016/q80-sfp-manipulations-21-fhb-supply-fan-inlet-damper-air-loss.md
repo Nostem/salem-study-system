@@ -45,6 +45,6 @@ Which of the following describes how the CRS is required to proceed?
 ## Connections
 
 - Related systems: [[FHV]], [[Spent Fuel Pool]], [[Control Air]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]]
 - Related exam: [[2016 NRC Written Exam]]

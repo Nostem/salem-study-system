@@ -50,5 +50,5 @@ Select from the choices below that contains ONLY actions directed to be performe
 
 - Related systems: [[Refueling]]
 - Related procedures: [[S2.OP-IO.ZZ-0007 — Cold Shutdown to Refueling]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]]
 - Related exam: [[2020 NRC Written Exam]]

@@ -93,5 +93,5 @@ Ref: S2.OP-SO.RC-0004 (R16), S2.OP-AR.ZZ-0003 Window C (R19) | Task: N0020080101
 
 - Related systems: [[RCS]], [[Containment]]
 - Related procedures: [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2016 NRC Operating Exam]]

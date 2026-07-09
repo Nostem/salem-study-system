@@ -83,6 +83,6 @@ Ref: S2.OP-SO.CVC-0006, S2.RE-RA.ZZ-0012, S2.OP-TM.ZZ-0002 | Task: N0040170101 |
 ## Connections
 
 - Related systems: [[ECCS]], [[CVCS]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.5 — ECCS]]
 - Related procedures: [[S2.OP-SO.CVC-0006 — Boron Concentration Control]]
 - Related exam: [[2023 NRC Operating Exam]]

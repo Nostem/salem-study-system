@@ -46,5 +46,5 @@ Complete the following statements concerning the expected response to the instru
 
 - Related systems: [[Radiation Monitoring]], [[Waste Liquid]]
 - Related procedures: [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2020 NRC Written Exam]]

@@ -39,5 +39,5 @@ An explosive mixture is prevented from being present in the Waste Gas Holdup Sys
 ## Connections
 
 - Related systems: [[Waste Gas]]
-- Related tech specs: [[TS 3/4.11 — Radioactive Effluents]]
+- Related tech specs: [[TS 3.11 — Radioactive Effluents]]
 - Related exam: [[2015 NRC Written Exam]]

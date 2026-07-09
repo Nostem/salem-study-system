@@ -79,5 +79,5 @@ Ref: Salem ODCM (Table 3.3-13, Actions 31 &amp; 37); Salem Tech Specs; S1.OP-SO.
 
 - Related systems: [[Waste Gas]], [[Waste Liquid]], [[Containment]]
 - Related procedures: [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related tech specs: [[TS 3/4.11 — Radioactive Effluents]]
+- Related tech specs: [[TS 3.11 — Radioactive Effluents]]
 - Related exam: [[2012 NRC Operating Exam]]

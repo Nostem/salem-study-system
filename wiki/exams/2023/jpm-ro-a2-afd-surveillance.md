@@ -107,6 +107,6 @@ Ref: S2.OP-ST.NIS-0001, Salem 2 Cycle 26 REM (R21), Salem 2 Cycle 26 COLR | Task
 ## Connections
 
 - Related systems: [[RPS/SSPS]], [[Rx Vessel & Internals]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]], [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.2 — Power Distribution]], [[TS 3.1.3 — Movable Control Assemblies]]
 - Related concepts: [[Rx Vessel & Internals]]
 - Related exam: [[2023 NRC Operating Exam]]

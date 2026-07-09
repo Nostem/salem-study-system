@@ -12,7 +12,7 @@ aliases:
 
 ## Purpose
 
-Surveillance procedure for calculating Shutdown Margin (SDM) to satisfy TS 3/4.1.3 requirements. Used whenever control rod position or operability changes require verification of adequate shutdown margin.
+Surveillance procedure for calculating Shutdown Margin (SDM) to satisfy TS 3.1.3 requirements. Used whenever control rod position or operability changes require verification of adequate shutdown margin.
 
 ## Key Calculation Steps
 
@@ -41,6 +41,6 @@ SRO review of completed SDM calculation with <span class="hi-exam">two untrippab
 ## Connections
 
 - Related systems: [[Control Rod Drive]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related JPMs: [[2020 JPM SRO-A1]]
 - Related exam: [[2020 NRC Operating Exam]]

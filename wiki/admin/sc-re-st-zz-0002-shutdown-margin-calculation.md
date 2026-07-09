@@ -50,7 +50,7 @@ SRO review of a marked-up SDM calculation under the same plant conditions as the
 
 ## Connections
 
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related systems: [[Control Rod Drive]]
 - Related JPMs: [[2020 JPM RO-A1]], [[2016 JPM RO-A1-2]], [[2016 JPM SRO-A2]], [[2012 JPM RO-A1-1]]
 - Related exam: [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Operating Exam]]

@@ -98,5 +98,5 @@ Ref: S2.OP-SO.SJ-0002 (R24) | Task: N0060040101 | K/A: 006 A4.07 — Ability to 
 
 - Related systems: [[ECCS]]
 - Related procedures: [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.5 — ECCS]]
 - Related exam: [[2020 NRC Operating Exam]]

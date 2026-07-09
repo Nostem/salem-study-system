@@ -94,5 +94,5 @@ Ref: 2-EOP-TRIP-2 (Rev 40), S2.OP-TM.ZZ-0002 (Rev 8), TS 3.1.2.6 | Task: N115051
 
 - Related systems: [[CVCS]]
 - Related procedures: [[EOP-TRIP-2 — Reactor Trip Response]], [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]]
 - Related exam: [[2022 NRC Operating Exam]]

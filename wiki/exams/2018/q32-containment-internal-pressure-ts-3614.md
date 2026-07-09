@@ -46,5 +46,5 @@ When LCO 3.6.1.4 is NOT met, the crew is required to restore containment interna
 ## Connections
 
 - Related systems: [[Containment]]
-- Related tech specs: [[TS 3/4.6 — Containment]]
+- Related tech specs: [[TS 3.6 — Containment]]
 - Related exam: [[2018 NRC Written Exam]]

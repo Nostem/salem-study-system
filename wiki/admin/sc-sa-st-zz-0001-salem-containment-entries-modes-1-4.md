@@ -38,6 +38,6 @@ SC.SA-ST.ZZ-0001 (Rev. 5) requires <span class="hi-exam">prior RP Supervisor app
 
 - Related systems: [[Containment]]
 - Related procedures: [[RP-SA-102 — Containment Entries at Power]]
-- Related tech specs: [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.0 — Applicability]]
 - Related exam questions: [[2016 Q72]], [[2015 Q72]], [[2014 Q98]]
 - Related exam: [[2016 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

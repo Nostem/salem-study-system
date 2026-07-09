@@ -45,7 +45,7 @@ In accordance with LCO 3.4.5 and after 2PR7 has been closed, power will be <span
 
 ## Connections
 
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related procedures: [[OP-AA-108-101-1002 — Independent/Concurrent Verification]]
 - Related systems: [[Pressurizer & PRT]]
 - Related exam: [[2019 NRC Written Exam]]

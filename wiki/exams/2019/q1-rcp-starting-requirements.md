@@ -50,5 +50,5 @@ Starting 23 RCP when the start criteria are NOT met will result in <span class="
 
 - Related systems: [[RCPs]], [[RCS]]
 - Related procedures: [[S2.OP-SO.RC-0001 — Reactor Coolant Pump Operation]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2019 NRC Written Exam]]

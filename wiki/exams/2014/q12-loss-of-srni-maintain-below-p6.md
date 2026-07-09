@@ -44,5 +44,5 @@ Which of the following identifies why power must be maintained less than P-6?
 ## Connections
 
 - Related systems: [[Excore NIs]], [[RPS/SSPS]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2014 NRC Written Exam]]

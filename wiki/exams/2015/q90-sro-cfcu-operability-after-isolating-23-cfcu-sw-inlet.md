@@ -45,5 +45,5 @@ After the 21SW52 is shut and the leak isolated, which of the following describes
 
 - Related systems: [[CFCUs]], [[Service Water]]
 - Related procedures: [[S2.OP-SO.SW-0005 — Service Water System Operation]]
-- Related tech specs: [[TS 3/4.6 — Containment]]
+- Related tech specs: [[TS 3.6 — Containment]]
 - Related exam: [[2015 NRC Written Exam]]

@@ -51,5 +51,5 @@ Assuming containment pressure and temperature trends remain constant, which ONE 
 
 - Related systems: [[Containment]], [[Pressurizer & PRT]]
 - Related procedures: [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
-- Related tech specs: [[TS 3/4.6 — Containment]]
+- Related tech specs: [[TS 3.6 — Containment]]
 - Related exam: [[2020 NRC Written Exam]]

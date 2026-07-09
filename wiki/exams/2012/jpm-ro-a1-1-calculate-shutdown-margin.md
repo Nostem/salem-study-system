@@ -83,5 +83,5 @@ Ref: SC.RE-ST.ZZ-0002(Q) (Rev 20) Shutdown Margin Calculation; S1.RE-RA.ZZ-0016(
 
 - Related systems: [[CVCS]]
 - Related procedures: [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
-- Related tech specs: [[TS 3/4.1.1 — Boration Control]], [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.1 — Boration Control]], [[TS 3.1.3 — Movable Control Assemblies]]
 - Related exam: [[2012 NRC Operating Exam]]
