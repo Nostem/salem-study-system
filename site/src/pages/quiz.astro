@@ -211,6 +211,8 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
           <div id="question-meta" data-testid="question-meta" class="flex flex-wrap gap-2 text-[11px] font-mono"></div>
         </div>
 
+        <p id="personalization-notice" data-testid="personalization-notice" class="hidden text-[11px] text-accent-amber mb-4"></p>
+
         <div id="question-stem" class="whitespace-pre-line text-text-body text-base leading-7 mb-5"></div>
         <div id="choice-list" class="grid gap-3 mb-5"></div>
 
@@ -286,26 +288,45 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     const sessionEl = document.getElementById('quiz-session');
     const reviewEl = document.getElementById('quiz-review');
     const filterSummary = document.getElementById('filter-summary');
+    const personalizationNotice = document.getElementById('personalization-notice');
     const draftStorageKey = 'salem-study-quiz-draft-v1';
     const personalizationTimeoutMs = 1500;
-    const personalization = { loaded: false, states: null };
+    // status: 'unknown' before first load, then 'personalized' (progress loaded and
+    // used to prioritize), 'no-history' (loaded, but nothing attempted yet), or
+    // 'unavailable' (fetch failed/timed out — ordering fell back to random).
+    const personalization = { loaded: false, states: null, status: 'unknown' };
     const state = { questions: [], index: 0, answers: new Map(), mode: 'feedback', filters: {}, startedAt: Date.now(), progressSaved: false, completionMode: 'completed' };
 
     async function loadPersonalizationStates() {
       if (personalization.loaded) return personalization.states;
-      try {
-        const timeout = new Promise((resolve) => setTimeout(() => resolve(null), personalizationTimeoutMs));
-        const response = await Promise.race([
-          getQuizReviewQueue().catch(() => null),
-          timeout,
-        ]);
-        const states = response?.states && typeof response.states === 'object' ? response.states : null;
-        personalization.states = states && Object.keys(states).length > 0 ? states : null;
-      } catch {
-        personalization.states = null;
+      const timeout = new Promise((resolve) => setTimeout(() => resolve(null), personalizationTimeoutMs));
+      const response = await Promise.race([
+        getQuizReviewQueue().catch(() => null),
+        timeout,
+      ]);
+      if (!response || typeof response !== 'object') {
+        // Timed out or failed. Do NOT cache this as loaded: caching a failure
+        // would leave every later quiz in this page visit stuck on the random
+        // fallback. Leaving it uncached lets the next Start retry the fetch.
+        personalization.status = 'unavailable';
+        return personalization.states;
       }
+      const states = response.states && typeof response.states === 'object' ? response.states : null;
+      personalization.states = states && Object.keys(states).length > 0 ? states : null;
+      personalization.status = personalization.states ? 'personalized' : 'no-history';
       personalization.loaded = true;
       return personalization.states;
+    }
+
+    function updatePersonalizationNotice() {
+      if (!personalizationNotice) return;
+      if (personalization.status === 'unavailable') {
+        personalizationNotice.textContent =
+          'Your progress could not be loaded, so this set is in random order rather than prioritizing questions you have not seen. Reload the page to try again.';
+        personalizationNotice.classList.remove('hidden');
+      } else {
+        personalizationNotice.classList.add('hidden');
+      }
     }
 
     function parseSeedFromUrl() {
@@ -415,10 +436,21 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
         return true;
       });
       if (!useCount) return matches;
-      const ordered = personalizationStates
+      const usedPersonalization = Boolean(personalizationStates);
+      const ordered = usedPersonalization
         ? personalizeQuestionOrder(matches, personalizationStates, { seed: filters.seed })
         : Number.isFinite(filters.seed) ? shuffleWithRng(matches, mulberry32(filters.seed)) : matches;
-      return ordered.slice(0, Math.max(1, Math.min(filters.count, ordered.length)));
+      const selected = ordered.slice(0, Math.max(1, Math.min(filters.count, ordered.length)));
+      // The personalized order leads with unseen/least-seen questions, so every
+      // quiz would otherwise open with the same "all-new-first" run. Shuffle only
+      // the already-selected set: the *selection* still prefers unseen, but the
+      // *presentation order* feels mixed. Seed-derived so replay links stay
+      // deterministic. The non-personalized branch is already a uniform shuffle,
+      // so it is left as-is (keeps the seed->first-question fixtures stable).
+      if (usedPersonalization && Number.isFinite(filters.seed)) {
+        return shuffleWithRng(selected, mulberry32((filters.seed ^ 0x9e3779b9) >>> 0));
+      }
+      return selected;
     }
 
     let summaryTimer;
@@ -768,6 +800,7 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
       // within mastery buckets, so a replay link is deterministic for a given
       // progress state (the documented design; tests rely on it).
       const personalizationStates = await loadPersonalizationStates();
+      updatePersonalizationNotice();
       state.questions = filteredQuestions(filters, true, personalizationStates).map((question, index) =>
         withShuffledChoices(question, filters.seed + index + 1)
       );
