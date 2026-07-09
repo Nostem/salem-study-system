@@ -3,6 +3,7 @@ title: "TS 3.0 — Applicability"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.0 — Applicability
   - applicability
   - LCO 3.0.3
   - LCO 3.0.4

@@ -3,6 +3,7 @@ title: "TS 3.4 — Reactor Coolant System"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.4 — Reactor Coolant System
   - RCS tech specs
   - RCS loops TS
   - PORVs tech specs

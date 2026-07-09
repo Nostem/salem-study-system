@@ -3,6 +3,7 @@ title: "TS 3.2 — Power Distribution"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.2 — Power Distribution
   - power distribution limits
   - FQ
   - F delta H

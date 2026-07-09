@@ -3,6 +3,7 @@ title: "TS 3.1.1 — Boration Control"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.1.1 — Boration Control
   - shutdown margin
   - SDM
   - MTC

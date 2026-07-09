@@ -3,6 +3,7 @@ title: "TS 3.5 — ECCS"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.5 — ECCS
   - ECCS tech specs
   - accumulators TS
   - RWST tech specs

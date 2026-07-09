@@ -3,6 +3,7 @@ title: "TS 3.1.3 — Movable Control Assemblies"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.1.3 — Movable Control Assemblies
   - movable control assemblies
   - rod insertion limits
   - rod drop time

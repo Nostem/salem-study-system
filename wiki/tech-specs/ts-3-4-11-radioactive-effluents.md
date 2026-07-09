@@ -3,6 +3,7 @@ title: "TS 3.11 — Radioactive Effluents"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.11 — Radioactive Effluents
   - radioactive effluents TS
   - liquid holdup tanks
   - explosive gas mixture

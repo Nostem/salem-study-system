@@ -249,7 +249,7 @@ test('topic filter keeps common systems simple and moves advanced procedure node
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('Abnormal Procedures');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('Operating, admin, and alarm procedures');
   await page.getByTestId('advanced-topic-filters').locator('summary').click();
-  await expect(page.getByTestId('advanced-topic-filters')).toContainText('TS 3/4.4 — Reactor Coolant System');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('TS 3.4 — Reactor Coolant System');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('AB.CW-0001 — Circulating Water Malfunction');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('EOP-TRIP-1 — Reactor Trip or Safety Injection');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('OP-AA-101-111-1003 — Use of Procedures');
@@ -381,10 +381,13 @@ test('default saved quiz pool includes draft imported questions and submits them
     });
   });
 
-  // Seed 1 selects a draft imported question first under the default pool. The
+  // Seed 4 selects a draft imported question first under the default pool. The
   // backend contract must accept this, because draft imported questions are part
-  // of the intended practice set.
-  await page.goto('quiz/?seed=1');
+  // of the intended practice set. (Seed choice is bank-dependent and goes stale
+  // when the pool changes: pick a seed whose first Fisher-Yates question over
+  // the default pool — eligible, outdated excluded — has status 'draft' and
+  // quizEligible false.)
+  await page.goto('quiz/?seed=4');
   await expect(page.getByLabel('Include draft imported questions')).toBeChecked();
   await page.getByLabel('Question count').fill('1');
   await page.locator('#quiz-mode').selectOption('blind');

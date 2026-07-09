@@ -3,6 +3,7 @@ title: "TS 3.7 — Plant Systems"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.7 — Plant Systems
   - plant systems TS
   - AFW tech specs
   - MSSVs tech specs

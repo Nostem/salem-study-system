@@ -3,6 +3,7 @@ title: "TS 3.1.2 — Boration Systems"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.1.2 — Boration Systems
   - boration systems
   - boron injection flow paths
   - charging pumps TS

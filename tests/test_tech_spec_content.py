@@ -24,25 +24,25 @@ def test_tech_spec_style_guide_exists_for_future_audits():
         assert term in guide
 
 
-def test_homepage_links_split_ts_3_7_7_through_3_7_13_pdfs():
+def test_homepage_links_one_pdf_per_major_ts_section():
     index = read(INDEX)
 
     expected_labels = {
-        "ts-3-4-7-7": "TS 3/4.7.7 Auxiliary Building Ventilation",
-        "ts-3-4-7-8": "TS 3/4.7.8 Sealed Source Contamination",
-        "ts-3-4-7-9": "TS 3/4.7.9 Snubbers",
-        "ts-3-4-7-10": "TS 3/4.7.10 Chilled Water",
-        "ts-3-4-7-11": "TS 3/4.7.11 Fuel Storage Pool Boron",
-        "ts-3-4-7-12": "TS 3/4.7.12",
-        "ts-3-4-7-13": "TS 3/4.7.13",
+        "ts-3-4": "TS 3.4 Reactor Coolant System",
+        "ts-3-7": "TS 3.7 Plant Systems",
     }
 
     for slug, label in expected_labels.items():
         assert f"'{slug}'" in index
         assert label in index
-        assert (PDF_DIR / f"{slug}.pdf").exists(), f"missing split PDF {slug}.pdf"
 
-    assert "'ts-3-4-7-7': 'TS 3/4.7.7 Snubbers'" not in index
+    for n in range(1, 12):
+        assert (PDF_DIR / f"ts-3-{n}.pdf").exists(), f"missing section PDF ts-3-{n}.pdf"
+        assert (PDF_DIR / f"bases-3-{n}.pdf").exists(), f"missing bases PDF bases-3-{n}.pdf"
+
+    # subsection-level PDFs were consolidated into full sections (issue #81)
+    assert "ts-3-4-7-7" not in index
+    assert not list(PDF_DIR.glob("ts-3-4-*.pdf"))
 
 
 def test_ts_3_3_high_trip_directions_are_not_reversed():
@@ -81,16 +81,16 @@ def test_ts_3_1_2_6_has_expanded_63f_figure_basis():
 def test_ts_3_7_article_covers_3_7_7_through_3_7_13_lco_actions_basis():
     text = read(WIKI / "ts-3-4-7-plant-systems.md")
     sections = {
-        "3/4.7.7": "Auxiliary Building Ventilation",
-        "3/4.7.8": "Sealed Source Contamination",
-        "3/4.7.9": "Snubbers",
-        "3/4.7.10": "Chilled Water",
-        "3/4.7.11": "Fuel Storage Pool Boron",
-        "3/4.7.12": None,
-        "3/4.7.13": None,
+        "3.7.7": "Auxiliary Building Ventilation",
+        "3.7.8": "Sealed Source Contamination",
+        "3.7.9": "Snubbers",
+        "3.7.10": "Chilled Water",
+        "3.7.11": "Fuel Storage Pool Boron",
+        "3.7.12": None,
+        "3.7.13": None,
     }
     for lco, title in sections.items():
-        pattern = rf"## {re.escape(lco)}.*?(?=\n---\n|\n## 3/4\.7|\Z)"
+        pattern = rf"## {re.escape(lco)}.*?(?=\n---\n|\n## 3\.7|\Z)"
         match = re.search(pattern, text, re.S)
         assert match, f"missing section {lco}"
         section = match.group(0)

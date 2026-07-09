@@ -243,15 +243,15 @@ Keep this list current. When the UFSAR, tech specs, and exams use different name
 for the same thing, map them here so articles stay unified.
 
 ```
-Chemical and Volume Control System = CVCS = Boration Systems (TS 3/4.1.2) = charging and letdown
-Reactor Coolant System = RCS = TS 3/4.4
-Emergency Core Cooling Systems = ECCS = TS 3/4.5 = safety injection
+Chemical and Volume Control System = CVCS = Boration Systems (TS 3.1.2, formerly 3/4.1.2) = charging and letdown
+Reactor Coolant System = RCS = TS 3.4 = TS 3/4.4 (old notation)
+Emergency Core Cooling Systems = ECCS = TS 3.5 = TS 3/4.5 (old notation) = safety injection
 Containment Fan Coil Units = CFCUs = containment cooling
 Residual Heat Removal = RHR = shutdown cooling
-Component Cooling Water = CCW = TS 3/4.7.3
-Service Water = SW = TS 3/4.7.4
-Auxiliary Feedwater = AFW = TS 3/4.7.1.2
-Power Operated Relief Valves = PORVs = TS 3/4.4.3
+Component Cooling Water = CCW = TS 3.7.3 = TS 3/4.7.3 (old notation)
+Service Water = SW = TS 3.7.4 = TS 3/4.7.4 (old notation)
+Auxiliary Feedwater = AFW = TS 3.7.1.2 = TS 3/4.7.1.2 (old notation)
+Power Operated Relief Valves = PORVs = TS 3.4.3 = TS 3/4.4.3 (old notation)
 ```
 
 ## Quality Rules

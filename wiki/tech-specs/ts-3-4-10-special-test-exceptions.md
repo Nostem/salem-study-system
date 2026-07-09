@@ -3,6 +3,7 @@ title: "TS 3.10 — Special Test Exceptions"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.10 — Special Test Exceptions
   - special test exceptions
   - physics tests
   - no flow tests

@@ -27,7 +27,7 @@ class StaticQuizBankBuilderTests(unittest.TestCase):
         self.assertTrue(q82["isEdited"])
         self.assertEqual(q82["status"], "active")
         self.assertIn("72 hours", q82["explanationText"])
-        self.assertIn("TS 3/4.3 — Instrumentation", [topic["title"] for topic in q82["topics"]])
+        self.assertIn("TS 3.3 — Instrumentation", [topic["title"] for topic in q82["topics"]])
 
     def test_build_quiz_bank_preserves_stem_images_from_wiki_markdown(self):
         bank = build_quiz_bank(ROOT, ROOT / "data/quiz-import/supabase-staging-all.json")
