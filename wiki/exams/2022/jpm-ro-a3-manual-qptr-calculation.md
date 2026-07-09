@@ -126,6 +126,6 @@ Ref: S2.OP-ST.NIS-0002 (Rev 15), REM Salem 2 Cycle 25 (Rev 33) | Task: N01500202
 ## Connections
 
 - Related systems: [[Excore NIs]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.2 — Power Distribution]]
 - Related procedures: [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[AB.ROD-0002 — Dropped Rod]]
 - Related exam: [[2022 NRC Operating Exam]]

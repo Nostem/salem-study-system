@@ -1,5 +1,5 @@
 ---
-title: "TS 3/4.1.2 — Boration Systems"
+title: "TS 3.1.2 — Boration Systems"
 category: tech-specs
 status: draft
 aliases:
@@ -13,7 +13,7 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-1.pdf" target="_blank">View TS 3.1 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-1.pdf" target="_blank">View Bases 3.1 PDF</a>
 </div>
 
-# TS 3/4.1.2 — Boration Systems
+# TS 3.1.2 — Boration Systems
 
 ## Flow Paths — Shutdown
 
@@ -44,9 +44,9 @@ b. Two flow paths from RWST via charging pumps to RCS
 **Action:** With only one flow path OPERABLE, restore within <span class="val-alarm">72 hours</span> or be in Hot Standby and borated to SDM ≥ 1% delta k/k at 200°F within 6 hours. Restore within next 7 days or be in Cold Shutdown within 30 hours.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.2 Boration Systems (General)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.2 Boration Systems (General)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.2 General</div>
+<div class="callout-label">Bases — 3.1.2 General</div>
 
 The boron injection system ensures that negative reactivity control is available during each mode of facility operation. The components required include: (1) borated water sources, (2) charging pumps, (3) separate flow paths, (4) boric acid transfer pumps, and (5) offsite power or an emergency power supply from OPERABLE diesel generators.
 
@@ -60,9 +60,9 @@ The boron injection system ensures that negative reactivity control is available
 </details>
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.2 Boric Acid Temperature and RWST pH</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.2 Boric Acid Temperature and RWST pH</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.2 BAT Temperature / RWST pH</div>
+<div class="callout-label">Bases — 3.1.2 BAT Temperature / RWST pH</div>
 
 The boric acid tanks, pumps, valves, and piping contain a boric acid solution concentration of between <span class="hi">3.75% and 4% by weight</span>. To ensure the boric acid remains in solution, tank fluid temperature and process pipe wall temperatures are monitored to ensure a temperature of <span class="hi">63°F or above</span> is maintained. <span class="hi-exam">A 5°F margin is provided to ensure the boron will not precipitate out.</span> The tank fluid and pipe wall temperatures are monitored in the main control room.
 
@@ -151,9 +151,9 @@ b. RWST: ≥ <span class="val-normal">37000 gal</span>, ≥ <span class="val-nor
 **Action:** With no borated water source OPERABLE, suspend CORE ALTERATIONS or positive reactivity changes.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.2.5 Borated Water Sources (Shutdown)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.2.5 Borated Water Sources (Shutdown)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.2.5</div>
+<div class="callout-label">Bases — 3.1.2.5</div>
 
 <span class="hi-exam">The boron capability required below 200°F is sufficient to provide a SHUTDOWN MARGIN of 1% delta k/k after xenon decay and cooldown from 200°F to 140°F.</span> This condition requires either <span class="hi">2600 gallons of 6560 ppm</span> borated water from the boric acid storage tanks or <span class="hi">7100 gallons of 2300 ppm</span> borated water from the RWST.
 

@@ -131,7 +131,7 @@ PR channel 2N41 removal from service (S2.OP-SO.RPS-0001): at NI Rack No. 81, fiv
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.3 — Instrumentation|TS 3/4.3.1]]** — Reactor Trip System Instrumentation (NIS channels)
+- **[[TS 3.3 — Instrumentation|TS 3.3.1]]** — Reactor Trip System Instrumentation (NIS channels)
 
 **Exam & operating coverage:**
 
@@ -183,7 +183,7 @@ Manual QPTR calculation (S2.OP-ST.NIS-0002): for each Power Range detector (N41-
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q67</div>
-For Mode 6 Core Alterations, <span class="hi-exam">LCO 3.9.2 requires 2 Source Range NIs operable</span>; one inoperable Source Range NI prevents commencing core alterations. See [[Refueling]], [[TS 3/4.9 — Refueling Operations]].
+For Mode 6 Core Alterations, <span class="hi-exam">LCO 3.9.2 requires 2 Source Range NIs operable</span>; one inoperable Source Range NI prevents commencing core alterations. See [[Refueling]], [[TS 3.9 — Refueling Operations]].
 </div>
 
 <div class="callout callout-exam">
@@ -204,7 +204,7 @@ During an automatic RCS makeup in Mode 3 with 2CV179 (PRIMARY WATER FLOW) failed
 
 - Related systems: [[RPS/SSPS]], [[Incores]], [[Control Rod Drive]], [[115V AC]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]], [[AB.115-0004 — Loss of 1D 115V Vital Instrument Bus]], [[S2.OP-IO.ZZ-0003 — Hot Standby to Minimum Load]], [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related JPMs: [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]], [[2014 JPM Sim-g]], [[2012 JPM RO-A1-2]]
 - Related exam questions: [[2014 Q12]], [[2014 Q17]], [[2014 Q42]], [[2014 Q44]], [[2012 Q13]], [[2012 Q43]], [[2012 Q87]]
 - Related exams: [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2023 NRC Written Exam]], [[2022 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

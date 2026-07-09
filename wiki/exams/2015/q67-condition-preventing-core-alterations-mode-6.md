@@ -42,5 +42,5 @@ With Salem Unit 2 in Mode 6 on November 20th, which of the following conditions 
 ## Connections
 
 - Related systems: [[Refueling]], [[Excore NIs]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]]
 - Related exam: [[2015 NRC Written Exam]]

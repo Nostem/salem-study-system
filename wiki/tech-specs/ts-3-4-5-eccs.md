@@ -1,5 +1,5 @@
 ---
-title: "TS 3/4.5 — ECCS"
+title: "TS 3.5 — ECCS"
 category: tech-specs
 status: draft
 aliases:
@@ -14,7 +14,7 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-5.pdf" target="_blank">View TS 3.5 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-5.pdf" target="_blank">View Bases 3.5 PDF</a>
 </div>
 
-# TS 3/4.5 — Emergency Core Cooling Systems
+# TS 3.5 — Emergency Core Cooling Systems
 
 ## Accumulators
 
@@ -40,9 +40,9 @@ d. Nitrogen cover-pressure: <span class="hi">595.5–647.5 psig</span>
 *Amendment No. 282*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.5.1 Accumulators</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.5.1 Accumulators</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.5.1</div>
+<div class="callout-label">Bases — 3.5.1</div>
 
 <span class="hi-exam">Each accumulator provides a passive, immediate surge of borated water into the core through each cold leg when RCS pressure falls below accumulator pressure.</span> No electrical power or actuation signal is required — this initial surge provides the critical first cooling mechanism during large RCS pipe ruptures.
 
@@ -118,9 +118,9 @@ c. One RHR pump + RHR HX + flow path (cold leg injection)
 *Amendment No. 282*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.5.2 ECCS Subsystems (Tavg ≥ 350°F)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.5.2 ECCS Subsystems (Tavg ≥ 350°F)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.5.2</div>
+<div class="callout-label">Bases — 3.5.2</div>
 
 <span class="hi-exam">Two independent ECCS subsystems ensure that sufficient emergency core cooling capability is available assuming any single active failure in either subsystem.</span> Either subsystem operating in conjunction with the accumulators is capable of supplying sufficient core cooling to limit peak cladding temperatures within acceptable limits for <span class="hi-exam">all postulated break sizes, from double-ended break of the largest RCS cold leg pipe downward</span>. Each subsystem also provides long-term core cooling capability in the recirculation mode during accident recovery.
 
@@ -186,9 +186,9 @@ A maximum of one SI pump or one centrifugal charging pump shall be OPERABLE in M
 *Amendment No. 328*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.5.3 ECCS Subsystems (Tavg &lt; 350°F)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.5.3 ECCS Subsystems (Tavg &lt; 350°F)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.5.3</div>
+<div class="callout-label">Bases — 3.5.3</div>
 
 <span class="hi-exam">With RCS temperature below 350°F, one OPERABLE ECCS subsystem is acceptable without single-failure consideration</span> on the basis of the stable reactivity condition of the reactor and the limited core cooling requirements in Mode 4.
 
@@ -228,9 +228,9 @@ RCP seal injection flow shall be <span class="hi">≤40 gpm</span> with charging
 **Action:** Adjust manual seal injection throttle valves within <span class="val-alarm">4 hrs</span>, or Hot Standby in 6 hrs + Hot Shutdown in 6 hrs.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.5.4 Seal Injection Flow</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.5.4 Seal Injection Flow</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.5.4</div>
+<div class="callout-label">Bases — 3.5.4</div>
 
 <span class="hi-exam">RCP seal injection flow is restricted because it is NOT isolated during Safety Injection (SI) actuation</span> — any flow diverted to the RCP seals is diverted from the ECCS injection path. The limit is therefore based on safety analysis assumptions for flow diversion.
 
@@ -271,9 +271,9 @@ c. Temperature: <span class="hi">≥35°F and ≤100°F</span>
 *Amendment No. 309*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.5.5 RWST</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.5.5 RWST</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.5.5</div>
+<div class="callout-label">Bases — 3.5.5</div>
 
 The RWST minimum volume and boron concentration limits ensure three things simultaneously:
 

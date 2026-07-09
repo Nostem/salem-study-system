@@ -179,7 +179,7 @@ Reactor startup rod withdrawal to criticality (S2.OP-IO.ZZ-0003 Step 5.3.18.D): 
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
+- **[[TS 3.1.3 — Movable Control Assemblies]]** — Rod operability, alignment, insertion limits
 
 **Exam & operating coverage:**
 

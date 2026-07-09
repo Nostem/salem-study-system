@@ -126,5 +126,5 @@ Ref: S2.OP-ST.SJ-0006 (Rev 13) | Task: N0060160201 | K/A: 006 A4.02 — Emergenc
 
 - Related systems: [[ECCS]]
 - Related procedures: [[S2.OP-ST.SJ-0006 — Inservice Testing Safety Injection Valves Mode 6]], [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.5 — ECCS]]
 - Related exam: [[2012 NRC Operating Exam]]

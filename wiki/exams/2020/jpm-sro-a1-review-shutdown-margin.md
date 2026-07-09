@@ -117,5 +117,5 @@ Ref: SC.RE-ST.ZZ-0002 (R24), S2.RE-RA.ZZ-0016 (R12) | Task: N1200030301 | K/A: G
 ## Connections
 
 - Related procedures: [[SC.RE-ST.ZZ-0002 — Shutdown Margin Calculation]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related exam: [[2020 NRC Operating Exam]]

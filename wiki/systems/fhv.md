@@ -38,7 +38,7 @@ On a <span class="hi-exam">2R9 (New Fuel Storage) Area Radiation Monitor High Ra
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.9 — Refueling Operations|TS 3.9.12]]** — FHV operability requirements during irradiated fuel movement in the storage pool
+- **[[TS 3.9 — Refueling Operations|TS 3.9.12]]** — FHV operability requirements during irradiated fuel movement in the storage pool
 
 ## Inlet Damper Air Supply
 
@@ -61,7 +61,7 @@ SRO must recognize that <span class="hi-exam">FHB Truck Bay Door is required to 
 ## Connections
 
 - Related systems: [[Spent Fuel Pool]], [[Radiation Monitoring]], [[Control Air]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-AR.ZZ-0001 — Overhead Annunciators Window A]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[AB.FUEL-0001 — Fuel Handling Incident]]
 - Related exam questions: [[2016 Q80]], [[2016 Q88]], [[2019 Q33]], [[2019 Q36]], [[2015 Q73]], [[2012 Q90]]
 - Related JPMs: [[2016 JPM SRO-A1-2]]

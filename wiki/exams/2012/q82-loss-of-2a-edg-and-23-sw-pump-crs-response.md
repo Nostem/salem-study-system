@@ -48,5 +48,5 @@ Which of the following describes how the control room crew will respond if 2A ED
 - Related systems: [[Service Water]], [[EDGs]], [[RCPs]], [[CCW]]
 - Related procedures: [[AB.SW-0005 — Loss of All Service Water]], [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.TRB-0001 — Main Turbine Abnormality]]
 - Related EOPs: [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related exam: [[2012 NRC Written Exam]]

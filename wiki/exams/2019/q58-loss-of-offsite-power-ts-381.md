@@ -51,5 +51,5 @@ At 15:00 and in accordance with Unit 2 LCO 3.8.1.1 (A.C. Sources - Operating), t
 ## Connections
 
 - Related systems: [[500KV]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related exam: [[2019 NRC Written Exam]]

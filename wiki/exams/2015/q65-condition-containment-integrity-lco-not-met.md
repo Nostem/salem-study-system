@@ -42,5 +42,5 @@ Which of the following identifies a condition in which the Unit 2 LCO for Contai
 ## Connections
 
 - Related systems: [[Containment]], [[CFCUs]]
-- Related tech specs: [[TS 3/4.6 — Containment]]
+- Related tech specs: [[TS 3.6 — Containment]]
 - Related exam: [[2015 NRC Written Exam]]

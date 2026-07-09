@@ -46,5 +46,5 @@ Which ONE of the following completes both statements?<br><br>
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.2 — Power Distribution]]
 - Related exam: [[2022 NRC Written Exam]]

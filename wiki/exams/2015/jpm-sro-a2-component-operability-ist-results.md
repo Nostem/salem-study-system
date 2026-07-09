@@ -91,5 +91,5 @@ Ref: S1.OP-ST.CVC-0003 (Rev 25), S1.RA-ST.CVC-0003 (Rev 13), Salem Tech Specs | 
 
 - Related systems: [[CVCS]]
 - Related procedures: [[S1.OP-ST.CVC-0003 — Inservice Testing, 11 Charging Pump]], [[S2.OP-SO.CVC-0002 — Charging Pump Operation]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.5 — ECCS]]
 - Related exam: [[2015 NRC Operating Exam]]

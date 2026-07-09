@@ -83,5 +83,5 @@ Ref: S2.OP-ST.CBV-0001 (Rev 9), S2.RA-ST.CBV-0001 (Rev 7) | Task: N1230010302 | 
 
 - Related systems: [[Containment]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]]
-- Related tech specs: [[TS 3/4.6 — Containment]]
+- Related tech specs: [[TS 3.6 — Containment]]
 - Related exam: [[2022 NRC Operating Exam]]

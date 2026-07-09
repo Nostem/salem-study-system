@@ -56,5 +56,5 @@ In accordance with Technical Specifications, Unit 2 <span class="blank">_(2)_</s
 
 - Related systems: [[EDGs]]
 - Related procedures: [[S2.OP-AR.DG-0001 — EDG Alarm Response]]
-- Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.8 — Electrical]], [[TS 3.0 — Applicability]]
 - Related exam: [[2019 NRC Written Exam]]

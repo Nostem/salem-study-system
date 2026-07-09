@@ -34,6 +34,6 @@ The ≥36 gpm Boric Acid Flow value specified throughout this procedure satisfie
 ## Connections
 
 - Related systems: [[CVCS]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]]
 - Related JPMs: [[2014 JPM Sim-a]]
 - Related exam: [[2014 NRC Operating Exam]]

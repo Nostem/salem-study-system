@@ -86,5 +86,5 @@ Ref: S1.OP-ST.NIS-0001(Q) (Rev 9) Power Distribution – Axial Flux Difference; 
 
 - Related systems: [[Excore NIs]]
 - Related procedures: [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.2 — Power Distribution]]
 - Related exam: [[2012 NRC Operating Exam]]

@@ -45,5 +45,5 @@ Which of the following describes how this bistables current condition will affec
 
 - Related systems: [[Excore NIs]], [[RPS/SSPS]]
 - Related procedures: [[S2.OP-IO.ZZ-0003 — Hot Standby to Minimum Load]], [[S2.OP-IO.ZZ-0004 — Power Operation]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]], [[EOP-FRSM-1 — Response to Nuclear Power Generation]], [[S2.OP-AR.ZZ-0006 — Overhead Annunciators Window F]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2012 NRC Written Exam]]

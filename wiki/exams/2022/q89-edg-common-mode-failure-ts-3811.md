@@ -47,5 +47,5 @@ In accordance with Technical Specification, which ONE of the following is the re
 ## Connections
 
 - Related systems: [[EDGs]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related exam: [[2022 NRC Written Exam]]

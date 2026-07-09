@@ -22,7 +22,7 @@ Provides the procedure for transitioning Unit 2 from Hot Standby (Mode 3) to Col
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q80</div>
-The <span class="hi-exam">PZR Cold Cal level channel (LI-462) is used when RCS temperature is <200°F</span>, as directed in IOP-6 during the cooldown to cold shutdown. Because it is a shutdown-only indication, <span class="hi-exam">LI-462 is NOT credited in TS 3.3.1.1 (Reactor Trip System Instrumentation) or TS 3.3.3.7 (Accident Monitoring)</span> — its failure at 100% power requires no Tech Spec entry. See [[TS 3/4.3 — Instrumentation]], [[SC.OP-DL.ZZ-0010 — Control Room Instrumentation and Alarms]].
+The <span class="hi-exam">PZR Cold Cal level channel (LI-462) is used when RCS temperature is <200°F</span>, as directed in IOP-6 during the cooldown to cold shutdown. Because it is a shutdown-only indication, <span class="hi-exam">LI-462 is NOT credited in TS 3.3.1.1 (Reactor Trip System Instrumentation) or TS 3.3.3.7 (Accident Monitoring)</span> — its failure at 100% power requires no Tech Spec entry. See [[TS 3.3 — Instrumentation]], [[SC.OP-DL.ZZ-0010 — Control Room Instrumentation and Alarms]].
 </div>
 
 <div class="callout callout-exam">
@@ -55,6 +55,6 @@ Per IOP-6, when reducing RCS temperature below 350°F, the letdown line is reali
 - Related systems: [[RPS/SSPS]], [[Containment]], [[RCS]], [[Pressurizer Level & Press Control]]
 - Related procedures: [[AB.LOCA-0001 — Shutdown LOCA]], [[AB.RC-0001 — Reactor Coolant System Leak]], [[SC.OP-DL.ZZ-0010 — Control Room Instrumentation and Alarms]]
 - Related EOPs: [[EOP-TRIP-4 — Natural Circulation]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam questions: [[2016 Q100]], [[2020 Q39]], [[2022 Q32]], [[2014 Q88]], [[2014 Q95]], [[2012 Q80]], [[2012 Q91]]
 - Related exam: [[2016 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

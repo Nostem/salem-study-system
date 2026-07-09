@@ -44,5 +44,5 @@ Which of the following describes how the CRS should respond, and why?
 
 - Related systems: [[Pressurizer Level & Press Control]]
 - Related procedures: [[SC.OP-DL.ZZ-0010 — Control Room Instrumentation and Alarms]], [[S2.OP-IO.ZZ-0006 — Hot Standby to Cold Shutdown]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2012 NRC Written Exam]]

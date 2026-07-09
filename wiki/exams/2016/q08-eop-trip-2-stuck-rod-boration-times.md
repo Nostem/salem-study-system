@@ -43,5 +43,5 @@ When responding to multiple stuck rods during the performance of EOP-TRIP-2, Rea
 
 - Related systems: [[CVCS]]
 - Related EOPs: [[EOP-TRIP-2 — Reactor Trip Response]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]]
 - Related exam: [[2016 NRC Written Exam]]

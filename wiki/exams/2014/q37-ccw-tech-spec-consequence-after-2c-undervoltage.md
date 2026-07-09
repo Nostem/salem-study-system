@@ -46,5 +46,5 @@ TSAS 3.7.3, Component Cooling System is...
 ## Connections
 
 - Related systems: [[CCW]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related exam: [[2014 NRC Written Exam]]

@@ -40,7 +40,7 @@ If ALL 3 connected battery cells continue to have a Float Voltage of 0 Volts, th
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; A.</strong> Incorrect but plausible. 2000 on January 8th is the time/date if the candidate incorrectly applies the 24 hours to restore the battery to OPERABLE status IAW LCO 3.8.2.3 REQUIRED ACTION C then applies the 8 hours to place the Unit in HOT SHUTDOWN per LCO 3.8.2.3 REQUIRED ACTION F (if ALL 3 connected battery cells continue to have a Float Voltage of 0 Volts).</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; B.</strong> Incorrect but plausible. 1800 on January 8th is the time/date if the candidate incorrectly applies the 24 hours to restore the battery to OPERABLE status IAW LCO 3.8.2.3 REQUIRED ACTION C then incorrectly applies 6 hours to place the Unit in HOT SHUTDOWN per LCO 3.8.2.3 REQUIRED ACTION F (if ALL 3 connected battery cells continue to have a Float Voltage of 0 Volts).</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; D.</strong> Incorrect but plausible. 1800 on January 7th is the time/date if the candidate incorrectly interprets LCO 3.8.2.3 REQUIRED ACTION F to only have 6 hours maximum to place the Unit in HOT STANDBY (if ALL 3 connected battery cells continue to have a Float Voltage of 0 Volts).</div>
-<div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">Ref: LCO 3.8.2.3 | LO: NOS05TECHSPEC-12 — Describe the general component and parameter categories addressed by TS Sections 3/4.1 through 3/4.12 | Source: New | Cognitive: Higher</div>
+<div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">Ref: LCO 3.8.2.3 | LO: NOS05TECHSPEC-12 — Describe the general component and parameter categories addressed by TS Sections 3.1 through 3.12 | Source: New | Cognitive: Higher</div>
 </div>
 </details>
 </div>
@@ -48,5 +48,5 @@ If ALL 3 connected battery cells continue to have a Float Voltage of 0 Volts, th
 ## Connections
 
 - Related systems: [[DC Power]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related exam: [[2019 NRC Written Exam]]

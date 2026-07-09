@@ -56,6 +56,6 @@ Note: 3.1.2.2, Reactivity Control Systems – Boration Flow Paths<br>
 ## Connections
 
 - Related systems: [[CVCS]], [[ECCS]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]], [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]], [[TS 3.5 — ECCS]]
 - Related procedures: [[AB.CVC-0001 — Loss of Charging]]
 - Related exam: [[2020 NRC Written Exam]]

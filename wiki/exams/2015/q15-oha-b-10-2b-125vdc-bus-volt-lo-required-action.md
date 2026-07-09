@@ -45,5 +45,5 @@ In accordance with S2.OP-AR.ZZ-0002, Overhead Annunciators Window B, which of th
 
 - Related systems: [[DC Power]]
 - Related procedures: [[S2.OP-AR.ZZ-0002 — Overhead Annunciators Window B]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related exam: [[2015 NRC Written Exam]]

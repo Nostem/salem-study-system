@@ -45,5 +45,5 @@ Which of the following describes the Tech Spec entry required and its Bases?
 ## Connections
 
 - Related systems: [[Diesel Generators]], [[CCW]]
-- Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.8 — Electrical]], [[TS 3.0 — Applicability]]
 - Related exam: [[2014 NRC Written Exam]]

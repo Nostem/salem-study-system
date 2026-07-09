@@ -86,5 +86,5 @@ Ref: S2.OP-ST.RCS-0001 (Rev. 22), OP-AP-300-1001 | Task: N0010070101 | K/A: 001 
 
 - Related systems: [[Control Rod Drive]], [[Feed & Condensate]]
 - Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related exam: [[2016 NRC Operating Exam]]

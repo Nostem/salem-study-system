@@ -45,5 +45,5 @@ If a Containment Airlock with only the Containment Airlock interlock mechanism i
 ## Connections
 
 - Related systems: [[Containment]]
-- Related tech specs: [[TS 3/4.6 — Containment]]
+- Related tech specs: [[TS 3.6 — Containment]]
 - Related exam: [[2019 NRC Written Exam]]

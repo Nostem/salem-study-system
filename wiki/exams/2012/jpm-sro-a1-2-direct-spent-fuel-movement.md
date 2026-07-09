@@ -79,5 +79,5 @@ Ref: S2.OP-IO.ZZ-0010 (Rev 31) Spent Fuel Pool Manipulations; S2.OP-SO.SW-0005 (
 
 - Related systems: [[Spent Fuel Pool]], [[Refueling]]
 - Related procedures: [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]], [[TS 3/4.8 — Electrical]], [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.7 — Plant Systems]], [[TS 3.8 — Electrical]], [[TS 3.9 — Refueling Operations]]
 - Related exam: [[2012 NRC Operating Exam]]

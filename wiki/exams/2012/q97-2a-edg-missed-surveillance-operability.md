@@ -46,5 +46,5 @@ Which of the following identifies the status of 2A EDG IAW Tech Specs, and why?<
 ## Connections
 
 - Related systems: [[EDGs]]
-- Related tech specs: [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.0 — Applicability]]
 - Related exam: [[2012 NRC Written Exam]]

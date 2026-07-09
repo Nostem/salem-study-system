@@ -120,7 +120,7 @@ The two series accumulator discharge check valves (xxSJ55 / xxSJ56) are forward-
 
 <div class="callout callout-jpm">
 <div class="callout-label">JPM — 2015 Sim-c</div>
-Raising accumulator level and pressure per S2.OP-SO.SJ-0002: P&amp;L 3.1 requires <span class="hi-exam">level be adjusted before pressure</span>. Level is raised with a Safety Injection Pump (fill lineup: START 21 SI pump → OPEN 2SJ53 → OPEN 2SJ123 → OPEN the accumulator fill valve 24SJ20), closing the fill valve when level reaches the target on 2LI935D/2LI934D, then restoring the lineup. Pressure is raised with N2 (OPEN 2NT32 N2 SUPPLY, then 24SJ93 N2 SUPPLY) — <span class="hi-exam">accumulator pressure rises very rapidly</span>, so the N2 supply valve is closed promptly at the target pressure on 2PI936D/2PI937D. Step 5.2.2 N/As 21SJ134 because RCS pressure is &gt;2000 psig. See [[S2.OP-SO.SJ-0002 — Accumulator Operations]], [[TS 3/4.5 — ECCS]].
+Raising accumulator level and pressure per S2.OP-SO.SJ-0002: P&amp;L 3.1 requires <span class="hi-exam">level be adjusted before pressure</span>. Level is raised with a Safety Injection Pump (fill lineup: START 21 SI pump → OPEN 2SJ53 → OPEN 2SJ123 → OPEN the accumulator fill valve 24SJ20), closing the fill valve when level reaches the target on 2LI935D/2LI934D, then restoring the lineup. Pressure is raised with N2 (OPEN 2NT32 N2 SUPPLY, then 24SJ93 N2 SUPPLY) — <span class="hi-exam">accumulator pressure rises very rapidly</span>, so the N2 supply valve is closed promptly at the target pressure on 2PI936D/2PI937D. Step 5.2.2 N/As 21SJ134 because RCS pressure is &gt;2000 psig. See [[S2.OP-SO.SJ-0002 — Accumulator Operations]], [[TS 3.5 — ECCS]].
 </div>
 
 <div class="callout callout-jpm">
@@ -481,22 +481,22 @@ ECCS is the system ESFAS actuates; <span class="hi-exam">10 CFR 50.46(b)</span> 
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.5 — ECCS]]** — ECCS subsystem operability
-- **[[TS 3/4.5 — ECCS|TS 3/4.5.1]]** — Accumulators (Modes 1, 2, 3 with pressurizer pressure ≥1000 psig)
-- **[[TS 3/4.5 — ECCS|TS 3/4.5.2]]** — ECCS Subsystems (Tavg ≥350°F)
-- **[[TS 3/4.5 — ECCS|TS 3/4.5.3]]** — ECCS Subsystems (Tavg <350°F)
-- **[[TS 3/4.5 — ECCS|TS 3/4.5.4]]** — RWST
+- **[[TS 3.5 — ECCS]]** — ECCS subsystem operability
+- **[[TS 3.5 — ECCS|TS 3.5.1]]** — Accumulators (Modes 1, 2, 3 with pressurizer pressure ≥1000 psig)
+- **[[TS 3.5 — ECCS|TS 3.5.2]]** — ECCS Subsystems (Tavg ≥350°F)
+- **[[TS 3.5 — ECCS|TS 3.5.3]]** — ECCS Subsystems (Tavg <350°F)
+- **[[TS 3.5 — ECCS|TS 3.5.4]]** — RWST
 
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q35</div>
-ECCS LCO <span class="hi-exam">TS 3.5.2 requires 2 complete trains of ECCS</span>; the <span class="hi-exam">22 charging pump (hi-head ECCS) is required for the B train</span>, so its trip makes TS 3.5.2 applicable. See [[TS 3/4.5 — ECCS]], [[CVCS]].
+ECCS LCO <span class="hi-exam">TS 3.5.2 requires 2 complete trains of ECCS</span>; the <span class="hi-exam">22 charging pump (hi-head ECCS) is required for the B train</span>, so its trip makes TS 3.5.2 applicable. See [[TS 3.5 — ECCS]], [[CVCS]].
 </div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q77</div>
-A single inoperable charging pump (hi-head ECCS) in Modes 1-3 enters <span class="hi-exam">ONLY the ECCS LCO (TS 3.5.2.a)</span> — 72 hours to restore or be in Hot Shutdown within the next 12 hours. See [[CVCS]], [[TS 3/4.5 — ECCS]].
+A single inoperable charging pump (hi-head ECCS) in Modes 1-3 enters <span class="hi-exam">ONLY the ECCS LCO (TS 3.5.2.a)</span> — 72 hours to restore or be in Hot Shutdown within the next 12 hours. See [[CVCS]], [[TS 3.5 — ECCS]].
 </div>
 
 <div class="callout callout-exam">

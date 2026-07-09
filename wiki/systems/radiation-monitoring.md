@@ -151,7 +151,7 @@ During liquid radwaste release (S2.OP-SO.WL-0001 Sec 5.5), <span class="hi-exam"
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2012 Q67</div>
-Containment Radiation Monitors (e.g., 2R12A) are <span class="hi-exam">NOT required to be operable for Mode 6, Fuel Movement, or Core Alterations</span> per Tech Specs — a failure causing a Containment Ventilation Isolation does not by itself require suspending fuel movement. The condition that DOES require suspension: aligning Control Area Ventilation to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, which prohibits Core Alterations and movement of irradiated fuel (T/S Bases 3/4.7.6, SO.CAV P&amp;L 3.6.3).
+Containment Radiation Monitors (e.g., 2R12A) are <span class="hi-exam">NOT required to be operable for Mode 6, Fuel Movement, or Core Alterations</span> per Tech Specs — a failure causing a Containment Ventilation Isolation does not by itself require suspending fuel movement. The condition that DOES require suspension: aligning Control Area Ventilation to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, which prohibits Core Alterations and movement of irradiated fuel (T/S Bases 3.7.6, SO.CAV P&amp;L 3.6.3).
 </div>
 
 <div class="callout callout-exam">
@@ -273,8 +273,8 @@ Dose and stay time calculation for containment entry (RP-AA-300): from survey ma
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.3 — Instrumentation|TS 3/4.3.3]]** — Monitoring Instrumentation (radiation monitors)
-- **[[TS 3/4.11 — Radioactive Effluents]]** — Effluent monitoring and release limits
+- **[[TS 3.3 — Instrumentation|TS 3.3.3]]** — Monitoring Instrumentation (radiation monitors)
+- **[[TS 3.11 — Radioactive Effluents]]** — Effluent monitoring and release limits
 
 ## Process Radiation Monitor Source Checks
 

@@ -117,7 +117,7 @@ Main turbine fails to auto trip following reactor trip (23BF19 failure). <span c
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.3 — Instrumentation]]** — Turbine trip reactor trip interlock
+- **[[TS 3.3 — Instrumentation]]** — Turbine trip reactor trip interlock
 
 **Exam & operating coverage:**
 

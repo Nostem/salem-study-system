@@ -81,13 +81,13 @@ SMM adverse containment logic: <span class="hi-exam">either containment pressure
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q94</div>
-IR NI compensating-voltage faults: <span class="hi-exam">UNDER-compensation causes a HIGHER-than-expected reading; OVER-compensation causes a LOWER-than-expected reading.</span> With a startup at SR ~30,000 counts there should already be one decade of SR/IR overlap, so both IR NIs (N35/N36) <span class="hi-exam">should be reading ~1x10-10A</span> — both flashing at 1x10-11A (low) after both detectors were just replaced means both IR NIs should be declared <span class="hi-exam">INOPERABLE</span>. <span class="hi-trap">Trap: do not call this overcompensation and try to block the SR Hi Flux trip via P-6 — P-6 cannot be blocked unless power is above the P-6 interlock; with both NIs reading low, P-6 is not satisfied.</span> See [[TS 3/4.3 — Instrumentation]].
+IR NI compensating-voltage faults: <span class="hi-exam">UNDER-compensation causes a HIGHER-than-expected reading; OVER-compensation causes a LOWER-than-expected reading.</span> With a startup at SR ~30,000 counts there should already be one decade of SR/IR overlap, so both IR NIs (N35/N36) <span class="hi-exam">should be reading ~1x10-10A</span> — both flashing at 1x10-11A (low) after both detectors were just replaced means both IR NIs should be declared <span class="hi-exam">INOPERABLE</span>. <span class="hi-trap">Trap: do not call this overcompensation and try to block the SR Hi Flux trip via P-6 — P-6 cannot be blocked unless power is above the P-6 interlock; with both NIs reading low, P-6 is not satisfied.</span> See [[TS 3.3 — Instrumentation]].
 </div>
 
 ## Connections
 
 - Related systems: [[Excore NIs]], [[RCS]], [[RPS/SSPS]], [[Containment]], [[Radiation Monitoring]], [[RVLIS]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.3 — Instrumentation]], [[TS 3.0 — Applicability]]
 - Related EOPs: [[EOP-CFST-1 — Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]]
 - Related exam questions: [[2020 Q26]], [[2020 Q58]], [[2023 Q57]], [[2015 Q44]], [[2014 Q45]], [[2014 Q94]], [[2012 Q44]]
 - Related exams: [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

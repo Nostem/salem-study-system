@@ -1,5 +1,5 @@
 ---
-title: "TS 3/4.9 — Refueling Operations"
+title: "TS 3.9 — Refueling Operations"
 category: tech-specs
 status: draft
 aliases:
@@ -12,9 +12,9 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-9.pdf" target="_blank">View TS 3.9 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-9.pdf" target="_blank">View Bases 3.9 PDF</a>
 </div>
 
-# TS 3/4.9 — Refueling Operations
+# TS 3.9 — Refueling Operations
 
-## 3/4.9.1 — Boron Concentration
+## 3.9.1 — Boron Concentration
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.9.1</div>
@@ -28,9 +28,9 @@ The boron concentration of the RCS, fuel storage pool, refueling canal, and refu
 **Surveillance:** Verify boron concentration within COLR limit per SFCP. *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.1 Boron Concentration</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.9.1 Boron Concentration</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.9.1</div>
+<div class="callout-label">Bases — 3.9.1</div>
 
 <span class="hi-exam">The soluble boron concentration offsets core reactivity and is measured by chemical analysis of a representative sample of coolant in each volume.</span> The COLR limit ensures overall core reactivity of <span class="hi">Keff ≤ 0.95</span> during fuel handling, with control rods and fuel assemblies in the most adverse configuration (least negative reactivity) allowed by plant procedures.
 
@@ -55,7 +55,7 @@ Once boration to restore concentration is initiated, it must be continued until 
 The <span class="hi-exam">COLR limit for refueling boron concentration is 2139 ppm</span>. A Rx Cavity reading of <span class="val-normal">2499 ppm</span> is well above the limit and does NOT require suspension of fuel movement. <span class="hi-trap">Trap: 2499 ppm is close to (but not below) the COLR limit; recognize that being above the COLR limit means the LCO is met.</span>
 </div>
 
-## 3/4.9.2.1 — Unborated Water Source Isolation Valves
+## 3.9.2.1 — Unborated Water Source Isolation Valves
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.9.2.1</div>
@@ -74,9 +74,9 @@ Each valve used to isolate unborated water sources shall be <span class="hi">sec
 **Surveillance:** Verify each unborated water source isolation valve is secured closed per SFCP. *(Amendment No. 292)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.2.1 Unborated Water Source Isolation Valves</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.9.2.1 Unborated Water Source Isolation Valves</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.9.2.1</div>
+<div class="callout-label">Bases — 3.9.2.1</div>
 
 <span class="hi-exam">All isolation valves for reactor makeup water sources containing unborated water connected to the RCS must be closed during Mode 6 to prevent unplanned boron dilution. The valves must be secured (not just closed) in the closed position.</span>
 
@@ -88,7 +88,7 @@ The surveillance is performed via system walkdown. Frequency is controlled under
 </div>
 </details>
 
-## 3/4.9.2.2 — Source Range Instrumentation
+## 3.9.2.2 — Source Range Instrumentation
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.9.2.2</div>
@@ -116,9 +116,9 @@ LCO 3.0.3 not applicable.
 *(Amendment No. 292)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.2.2 Source Range Instrumentation</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.9.2.2 Source Range Instrumentation</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.9.2.2</div>
+<div class="callout-label">Bases — 3.9.2.2</div>
 
 <span class="hi-exam">Source range neutron flux monitors are used during refueling to determine core reactivity condition and alert operators to unexpected changes in core reactivity such as a boron dilution event. Two OPERABLE monitors are required to ensure redundant monitoring capability.</span>
 
@@ -144,7 +144,7 @@ Core Alterations in Mode 6 require, among others, <span class="hi-exam">2 Source
 MODE 6 entry (de-tensioning) requires <span class="hi-exam">TS 3.9.2.1 (unborated water source isolation valves secured closed) and TS 3.9.2.2 (two source range neutron monitors OPERABLE)</span>. <span class="hi-trap">TS 3.9.3 (reactor subcritical time: 168 hours May 16 – Oct 14, 80 hours Oct 15 – May 15) applies to IRRADIATED FUEL MOVEMENT, not de-tensioning. Continuous CR-to-refuel-floor communications is required 1 hour prior to CORE ALTERATIONS, not de-tensioning.</span>
 </div>
 
-## 3/4.9.4 — Containment Building Penetrations
+## 3.9.4 — Containment Building Penetrations
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.9.4</div>
@@ -174,9 +174,9 @@ The equipment hatch does not need to be closed during irradiated fuel movement �
 *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.4 Containment Building Penetrations</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.9.4 Containment Building Penetrations</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.9.4</div>
+<div class="callout-label">Bases — 3.9.4</div>
 
 <span class="hi-exam">The containment closure requirements during irradiated fuel movement ensure that a release of fission product radioactivity will not exceed the guidelines and dose calculations of Regulatory Guide 1.183 (Alternative Radiological Source Term). In Mode 6, containment pressurization from an accident is not likely, so requirements can be less stringent than Mode 1–4 CONTAINMENT INTEGRITY.</span>
 
@@ -184,7 +184,7 @@ The equipment hatch does not need to be closed during irradiated fuel movement �
 
 **Equipment Hatch:** May be open during irradiated fuel movement provided: (1) inside door (or equivalent closure device) capable of being closed with <span class="hi">four bolts within 1 hour</span> by designated personnel; (2) either Containment Purge System or Auxiliary Building Ventilation System taking suction from containment is operating; and (3) plant is in Mode 6 with <span class="hi">at least 23 feet of water above the reactor pressure vessel flange</span>. Good engineering practice dictates the four bolts are approximately equally spaced.
 
-An equivalent closure device may be installed in place of the equipment hatch inside door. Penetrations incorporated into such a device are considered part of the containment boundary and subject to TS 3/4.9.4 requirements.
+An equivalent closure device may be installed in place of the equipment hatch inside door. Penetrations incorporated into such a device are considered part of the containment boundary and subject to TS 3.9.4 requirements.
 
 **Air Locks:** The door interlock mechanism may remain disabled with both doors of each airlock open during irradiated fuel movement if: (1) at least one door of each airlock is capable of being closed within 1 hour by dedicated personnel; (2) either Containment Purge or Auxiliary Building Ventilation taking suction from containment is operating; and (3) Mode 6 with at least 23 feet above RPV flange.
 
@@ -194,7 +194,7 @@ SR 4.9.4.2 demonstrates that necessary hardware, tools, and equipment are availa
 </div>
 </details>
 
-## 3/4.9.8 — Residual Heat Removal and Coolant Circulation
+## 3.9.8 — Residual Heat Removal and Coolant Circulation
 
 ### All Water Levels (3.9.8.1)
 
@@ -243,9 +243,9 @@ Two RHR loops are required when water level drops below 23 feet (reduced invento
 *(Amendment No. 300)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.8 RHR and Coolant Circulation</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.9.8 RHR and Coolant Circulation</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.9.8</div>
+<div class="callout-label">Bases — 3.9.8</div>
 
 <span class="hi-exam">One RHR loop in operation ensures: (1) sufficient cooling capacity to remove decay heat and maintain reactor pressure vessel water below <span class="hi">140°F</span> as required during the REFUELING MODE, and (2) sufficient coolant circulation through the reactor core to minimize effects of a boron dilution incident and prevent boron stratification. A minimum flow rate of <span class="hi">1000 gpm</span> is required.</span>
 
@@ -263,7 +263,7 @@ With the reactor vessel head removed and 23 feet of water above the RPV flange, 
 </div>
 </details>
 
-## 3/4.9.10 — Water Level — Reactor Vessel
+## 3.9.10 — Water Level — Reactor Vessel
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.9.10</div>
@@ -283,17 +283,17 @@ At least <span class="hi">23 feet of water</span> shall be maintained over the t
 *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.10 Water Level — Reactor Vessel</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.9.10 Water Level — Reactor Vessel</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.9.10</div>
+<div class="callout-label">Bases — 3.9.10</div>
 
 <span class="hi-exam">The minimum water level restriction ensures sufficient water depth is available to remove <span class="hi">99% of the assumed 10% iodine gap activity</span> released from the rupture of an irradiated fuel assembly. The minimum water depth is consistent with the assumptions of the accident analysis.</span>
 
-The 23-foot minimum also satisfies the precondition referenced in TS 3/4.9.4 for relaxed containment closure requirements during irradiated fuel movement. *(Amendment No. 315)*
+The 23-foot minimum also satisfies the precondition referenced in TS 3.9.4 for relaxed containment closure requirements during irradiated fuel movement. *(Amendment No. 315)*
 </div>
 </details>
 
-## 3/4.9.11 — Storage Pool Water Level
+## 3.9.11 — Storage Pool Water Level
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.9.11</div>
@@ -307,17 +307,17 @@ At least <span class="hi">23 feet of water</span> shall be maintained over the t
 **Surveillance:** Verify water level per SFCP when irradiated fuel assemblies are in the pool. *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.9.11 Storage Pool Water Level</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.9.11 Storage Pool Water Level</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.9.11</div>
+<div class="callout-label">Bases — 3.9.11</div>
 
 <span class="hi-exam">The minimum water level restriction ensures sufficient water depth is available to remove <span class="hi">99% of the assumed 10% iodine gap activity</span> released from the rupture of an irradiated fuel assembly seated in the storage racks. The minimum water depth is consistent with the assumptions of the accident analysis.</span>
 
-The bases for 3/4.9.10 (reactor vessel) and 3/4.9.11 (storage pool) share a common technical basis: both 23-foot requirements come from the same iodine scrubbing calculation in the fuel handling accident analysis. *(Amendment No. 315)*
+The bases for 3.9.10 (reactor vessel) and 3.9.11 (storage pool) share a common technical basis: both 23-foot requirements come from the same iodine scrubbing calculation in the fuel handling accident analysis. *(Amendment No. 315)*
 </div>
 </details>
 
-## 3/4.9.12 — Fuel Handling Ventilation System
+## 3.9.12 — Fuel Handling Ventilation System
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.9.12</div>
@@ -347,7 +347,7 @@ With S2.OP-IO.ZZ-0010 (SFP Manipulations) in effect, a tubing break causes total
 
 ## Exam & Operating Coverage
 
-### TS 3/4.9.3 — Reactor Subcriticality
+### TS 3.9.3 — Reactor Subcriticality
 
 **Exam & operating coverage:**
 

@@ -111,5 +111,5 @@ Ref: S2.OP-SO.WG-0003 (Rev 11), Section 5.2, Gaseous Waste Disposal System Opera
 
 - Related systems: [[Waste Gas]]
 - Related procedures: [[S2.OP-SO.WG-0003 — Gaseous Waste Disposal System Operation]], [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]]
-- Related tech specs: [[TS 3/4.11 — Radioactive Effluents]]
+- Related tech specs: [[TS 3.11 — Radioactive Effluents]]
 - Related exam: [[2015 NRC Operating Exam]]

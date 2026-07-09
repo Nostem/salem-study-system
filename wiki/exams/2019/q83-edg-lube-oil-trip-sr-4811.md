@@ -46,7 +46,7 @@ The SECOND performance of SR 4.8.1.1.1.a must be completed within a MAXIMUM of <
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; A.</strong> Incorrect but plausible. For Part 1, the local "LUBE OIL HI TEMP" comes in at 190 &deg;F. Consequently, the candidate could incorrectly determine that the EDG tripped when the local "LUBE OIL HI TEMP" actuates. For Part 2, the candidate could incorrectly conclude that Surveillance Requirement 4.8.1.1.1.a needs to be performed every 24 hours after it was initially performed (25 hours from entering the LCO).</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; B.</strong> Incorrect but plausible. For Part 1, the local "LUBE OIL HI TEMP" comes in at 190 &deg;F. Consequently, the candidate could incorrectly determine that the EDG tripped when the local "LUBE OIL HI TEMP" actuates. Part 2 is correct.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; C.</strong> Incorrect but plausible. Part 1 is correct. For Part 2, the candidate could incorrectly conclude that Surveillance Requirement 4.8.1.1.1.a needs to be performed every 24 hours after it was initially performed (25 hours from entering the LCO).</div>
-<div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">Ref: S2.OP-AR-DG-0002 Alarms Manual | LO: NOS05TECHSPEC-12 — Describe the general component and parameter categories addressed by TS Sections 3/4.1 through 3/4.12 | Source: New | Cognitive: Higher</div>
+<div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">Ref: S2.OP-AR-DG-0002 Alarms Manual | LO: NOS05TECHSPEC-12 — Describe the general component and parameter categories addressed by TS Sections 3.1 through 3.12 | Source: New | Cognitive: Higher</div>
 </div>
 </details>
 </div>
@@ -54,6 +54,6 @@ The SECOND performance of SR 4.8.1.1.1.a must be completed within a MAXIMUM of <
 ## Connections
 
 - Related systems: [[EDGs]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related abnormals: [[AB.CR-0001 — Control Room Evacuation]]
 - Related exam: [[2019 NRC Written Exam]]

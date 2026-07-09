@@ -80,5 +80,5 @@ Ref: S1.OP-SO.DG-0005 (Rev 9), Salem Unit 1 Tech Specs | Task: 112670302 | K/A: 
 
 - Related systems: [[EDGs]], [[ECCS]], [[CVCS]]
 - Related procedures: [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[AB.CVC-0001 — Loss of Charging]]
-- Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.8 — Electrical]], [[TS 3.5 — ECCS]]
 - Related exam: [[2019 NRC Operating Exam]]

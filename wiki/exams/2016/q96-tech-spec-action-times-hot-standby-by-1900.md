@@ -45,6 +45,6 @@ Which of the following would require the Unit to be in Hot Standby by 1900?
 ## Connections
 
 - Related systems: [[EDGs]], [[ECCS]], [[Containment]], [[Pressurizer]]
-- Related tech specs: [[TS 3/4.8 — Electrical]], [[TS 3/4.5 — ECCS]], [[TS 3/4.6 — Containment]], [[TS 3/4.4 — Reactor Coolant System]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.8 — Electrical]], [[TS 3.5 — ECCS]], [[TS 3.6 — Containment]], [[TS 3.4 — Reactor Coolant System]], [[TS 3.0 — Applicability]]
 - Related procedures: [[S2.OP-ST.CAN-0004 — Containment Air Lock Local Leak Rate Test]]
 - Related exam: [[2016 NRC Written Exam]]

@@ -123,7 +123,7 @@ After a LOOP + manual SI on Unit 2 with the 2B EDG output breaker failing to clo
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q16</div>
-Confirms the 21/22SW122 (CC HX SW Inlet Valves) actuation: normally open, they operate in conjunction with the CCW HX SW outlet valves <span class="hi-exam">SW127</span>, and <span class="hi-exam">close on a SI signal coincident with a LOOP (SEC Mode III)</span> — NOT on SI alone — to prevent SW pump runout with all CFCUs in service and only two SW pumps available (EDG/SEC single failure). The SW122s <span class="hi-exam">must stroke closed in less than 30 seconds to ensure the CFCUs are operational within 60 seconds</span> following Mode III initiation (Tech. Spec. 3/4.3.2 Table 3.3-5).
+Confirms the 21/22SW122 (CC HX SW Inlet Valves) actuation: normally open, they operate in conjunction with the CCW HX SW outlet valves <span class="hi-exam">SW127</span>, and <span class="hi-exam">close on a SI signal coincident with a LOOP (SEC Mode III)</span> — NOT on SI alone — to prevent SW pump runout with all CFCUs in service and only two SW pumps available (EDG/SEC single failure). The SW122s <span class="hi-exam">must stroke closed in less than 30 seconds to ensure the CFCUs are operational within 60 seconds</span> following Mode III initiation (Tech. Spec. 3.3.2 Table 3.3-5).
 </div>
 
 <div class="callout callout-exam">
@@ -256,8 +256,8 @@ The <span class="hi-exam">TGA (Turbine Generator Area) SW header pressure is reg
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.4 requires at least two independent service water loops OPERABLE in Modes 1–4 (TS 3/4.7.4)
-- 1 loop inoperable: 72 hours to restore, or Hot Standby in 6 hours + Cold Shutdown in 30 hours (TS 3/4.7.4)
+- **[[TS 3.7 — Plant Systems]]** — TS 3.7.4 requires at least two independent service water loops OPERABLE in Modes 1–4 (TS 3.7.4)
+- 1 loop inoperable: 72 hours to restore, or Hot Standby in 6 hours + Cold Shutdown in 30 hours (TS 3.7.4)
 
 **Exam & operating coverage:**
 
@@ -303,7 +303,7 @@ A #2 SW Bay leak with 24 SW pump already C/T leaves <span class="hi-exam">no ope
 
 ## Connections
 
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[AB.SW-0005 — Loss of All Service Water]], [[S2.OP-SO.SW-0005 — Service Water System Operation]], [[S2.OP-ST.CBV-0003 — Containment Cooling Systems Surveillance]], [[S2.OP-ST.SW-0010 — IST CFCU SW Valves]], [[S1.OP-SO.DG-0005 — EDG Operability Determination]], [[S1.OP-SO.SW-0001 — Service Water Pump Operation]], [[AB.SW-0002 — Loss of Service Water-Turbine Header]]
 - Related exam questions: [[2015 Q16]], [[2016 Q42]], [[2016 Q61]], [[2016 Q92]], [[2018 Q24]], [[2019 Q26]], [[2019 Q60]], [[2020 Q14]], [[2020 Q40]], [[2020 Q52]], [[2020 Q53]], [[2020 Q89]], [[2023 Q24]], [[2023 Q50]], [[2023 Q51]], [[2022 Q16]], [[2022 Q52]], [[2022 Q90]], [[2015 Q61]], [[2015 Q69]], [[2015 Q71]], [[2015 Q78]], [[2015 Q80]], [[2015 Q90]], [[2014 Q16]], [[2014 Q46]], [[2014 Q47]], [[2014 Q53]], [[2014 Q63]], [[2014 Q83]], [[2012 Q26]], [[2012 Q42]], [[2012 Q62]], [[2012 Q82]]
 - Related JPMs: [[2016 JPM SRO-A1-1]], [[2016 JPM SRO-A1-2]], [[2016 JPM Sim-e]], [[2023 JPM Sim-f]], [[2020 JPM RO-A3]], [[2020 JPM SRO-A3]], [[2015 JPM RO-A1-1]], [[2014 JPM SRO-A1-1]], [[2014 JPM Sim-f]]

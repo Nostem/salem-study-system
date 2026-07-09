@@ -12,7 +12,7 @@ aliases:
 
 ## Purpose
 
-Performs quarterly surveillance test of control rod assemblies to verify each rod moves at least 10 steps, verifying rod control system operability per TS 3/4.1.3.
+Performs quarterly surveillance test of control rod assemblies to verify each rod moves at least 10 steps, verifying rod control system operability per TS 3.1.3.
 
 ## Key Actions / Information
 
@@ -54,6 +54,6 @@ After completing the surveillance and placing the rod bank selector switch in AU
 
 - Related systems: [[RPS/SSPS]], [[Control Rod Drive]]
 - Related procedures: [[AB.ROD-0003 — Continuous Rod Motion]], [[OP-AP-300-1001 — PWR Control Rod Movement Requirements]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related JPMs: [[2023 JPM Sim-a]], [[2022 JPM Sim-a]], [[2020 JPM Sim-c]], [[2016 JPM Sim-a]], [[2012 JPM Sim-a]]
 - Related exam: [[2023 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2020 NRC Operating Exam]], [[2016 NRC Operating Exam]], [[2012 NRC Operating Exam]]

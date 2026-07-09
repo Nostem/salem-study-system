@@ -45,7 +45,7 @@ LCO 3.3.3.1 (RADIATION MONITORING INSTRUMENTATION) is __
 
 ## Connections
 
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related procedures: [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]]
 - Related systems: [[Radiation Monitoring]], [[Containment]]
 - Related exam: [[2019 NRC Written Exam]]

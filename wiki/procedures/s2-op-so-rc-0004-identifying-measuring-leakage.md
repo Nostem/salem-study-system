@@ -62,6 +62,6 @@ At 0015 OHA C-2 CNTMT SUMP PMP START annunciates with the previous sump pump sto
 
 - Related systems: [[RCS]], [[Containment]]
 - Related procedures: [[AB.RC-0001 — Reactor Coolant System Leak]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related JPMs: [[2016 JPM RO-A1-1]], [[2014 JPM RO-A1-1]]
 - Related exam: [[2016 NRC Operating Exam]], [[2014 NRC Operating Exam]]

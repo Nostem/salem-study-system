@@ -43,6 +43,6 @@ Seven Day AFD surveillance (Section 4.1) at 73% power: AFD Target = -2.0, Target
 ## Connections
 
 - Related systems: [[Excore NIs]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]], [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.2 — Power Distribution]], [[TS 3.1.3 — Movable Control Assemblies]]
 - Related JPMs: [[2023 JPM RO-A2]], [[2018 JPM RO-A1]], [[2012 JPM RO-A1-2]]
 - Related exam: [[2023 NRC Operating Exam]], [[2018 NRC Operating Exam]], [[2012 NRC Operating Exam]]

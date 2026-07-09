@@ -48,6 +48,6 @@ Note: RTP &ndash; Reactor Thermal Power
 ## Connections
 
 - Related systems: [[Excore NIs]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]]
 - Related exam: [[2022 NRC Written Exam]]

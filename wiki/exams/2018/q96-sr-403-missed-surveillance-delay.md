@@ -46,5 +46,5 @@ Assuming ALL other administrative requirements have been met, at 13:00:00 is the
 
 ## Connections
 
-- Related tech specs: [[TS 3/4.0 — Applicability]], [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.0 — Applicability]], [[TS 3.5 — ECCS]]
 - Related exam: [[2018 NRC Written Exam]]

@@ -50,5 +50,5 @@ Assume no auto Rx trip setpoints are reached.
 ## Connections
 
 - Related systems: [[Steam Dumps]], [[Main Steam]], [[Pressurizer Level & Press Control]]
-- Related tech specs: [[TS 3/4.1.1 — Boration Control]]
+- Related tech specs: [[TS 3.1.1 — Boration Control]]
 - Related exam: [[2014 NRC Written Exam]]

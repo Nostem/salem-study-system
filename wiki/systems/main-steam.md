@@ -217,7 +217,7 @@ With steam dumps in MS Pressure control (AUTO) during a startup at 18% with the 
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.1 MSSVs, TS 3.7.1.5 MSIVs
+- **[[TS 3.7 — Plant Systems]]** — TS 3.7.1.1 MSSVs, TS 3.7.1.5 MSIVs
 
 ## Connections
 

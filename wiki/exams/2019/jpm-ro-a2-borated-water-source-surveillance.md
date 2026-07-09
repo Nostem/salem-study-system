@@ -111,5 +111,5 @@ Ref: S2.OP-ST.CVC-0010 (Rev 10) | Task: N0040420201 | K/A: G2.2.37 — Ability t
 
 - Related systems: [[CVCS]]
 - Related procedures: [[S2.OP-ST.CVC-0010 — Borated Water Sources]], [[S2.OP-TM.ZZ-0002 — Tank Capacity Data]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]]
 - Related exam: [[2019 NRC Operating Exam]]

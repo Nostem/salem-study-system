@@ -43,6 +43,6 @@ Starting an RCP when the start criteria are NOT met will result in <span class="
 ## Connections
 
 - Related systems: [[RCPs]], [[RCS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam questions: [[2019 Q1]], [[2015 Q30]], [[2015 Q31]], [[2015 Q79]]
 - Related exam: [[2019 NRC Written Exam]], [[2015 NRC Written Exam]]

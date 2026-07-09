@@ -88,5 +88,5 @@ Ref: EP-SA-325-114 (Section S1, Rev 00), EP-SA-325-F4 (GE, Rev 01) | Task: 12400
 
 - Related systems: [[EDGs]], [[4KV]], [[500KV]]
 - Related procedures: [[EP-SA-325 — Emergency Plan Implementing Procedures]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related exam: [[2022 NRC Operating Exam]]

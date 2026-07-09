@@ -16,7 +16,7 @@ Provides ventilation, heating, cooling, and filtration for the control room and 
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q68</div>
-Per S2.OP-SO.CAV-0001 P&L 3.6.3 and TS Bases 3/4.7.6: when CAV is aligned to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, <span class="hi-exam">Core Alterations and movement of irradiated fuel are NOT permitted</span>. Pressing the Fire Outside Control Room (FOCR) pushbutton on Unit 2 CAV during fuel movement requires immediate suspension of fuel movement.
+Per S2.OP-SO.CAV-0001 P&L 3.6.3 and TS Bases 3.7.6: when CAV is aligned to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, <span class="hi-exam">Core Alterations and movement of irradiated fuel are NOT permitted</span>. Pressing the Fire Outside Control Room (FOCR) pushbutton on Unit 2 CAV during fuel movement requires immediate suspension of fuel movement.
 </div>
 
 <div class="callout callout-exam">
@@ -40,6 +40,6 @@ A single control room intake radiation monitor channel alarm (e.g. 2R1B-1) shoul
 
 - Related systems: [[RPS/SSPS]], [[Radiation Monitoring]]
 - Related procedures: [[S1.OP-SO.CAV-0001 — Control Room Ventilation Operation]], [[SC.OP-AB.CR-0003 — Control Room Habitability]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related exam questions: [[2016 Q68]], [[2018 Q46]], [[2022 Q51]], [[2012 Q92]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2022 NRC Written Exam]], [[2012 NRC Written Exam]]

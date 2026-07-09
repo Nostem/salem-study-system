@@ -42,5 +42,5 @@ The purpose of LCO 3.7.1.1 is to limit the secondary system pressure to within 1
 ## Connections
 
 - Related systems: [[Main Steam]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related exam: [[2019 NRC Written Exam]]

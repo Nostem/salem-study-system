@@ -105,7 +105,7 @@ If the Steam Dumps fail to ARM on a turbine-trip-induced reactor trip, core heat
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q91</div>
-A <span class="hi-exam">23TB40 turbine bypass valve failing 50% open during a 6% startup</span> (steam dumps in MS Pressure control - Manual) dumps excess steam and <span class="hi-exam">slowly cools the RCS — auctioneered high RCS Tavg drops below 541&deg;F</span>. This is the Tech Spec trigger: TSAS 3.1.1.4 requires Tavg ≥ 541&deg;F in Modes 1/2, so the crew must <span class="hi-exam">restore Tavg ≥541&deg;F within 15 minutes or be in Hot Standby within the next 15 minutes</span> (open the RTBs). See [[TS 3/4.1.1 — Boration Control]]. <span class="hi-trap">PZR pressure (1984 psig and lowering) is a distractor — the controlling Tech Spec is minimum temperature for criticality, not a PZR-pressure LCO.</span>
+A <span class="hi-exam">23TB40 turbine bypass valve failing 50% open during a 6% startup</span> (steam dumps in MS Pressure control - Manual) dumps excess steam and <span class="hi-exam">slowly cools the RCS — auctioneered high RCS Tavg drops below 541&deg;F</span>. This is the Tech Spec trigger: TSAS 3.1.1.4 requires Tavg ≥ 541&deg;F in Modes 1/2, so the crew must <span class="hi-exam">restore Tavg ≥541&deg;F within 15 minutes or be in Hot Standby within the next 15 minutes</span> (open the RTBs). See [[TS 3.1.1 — Boration Control]]. <span class="hi-trap">PZR pressure (1984 psig and lowering) is a distractor — the controlling Tech Spec is minimum temperature for criticality, not a PZR-pressure LCO.</span>
 </div>
 
 <div class="callout callout-exam">

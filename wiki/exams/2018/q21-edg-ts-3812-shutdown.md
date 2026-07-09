@@ -42,5 +42,5 @@ If ALL REQUIRED EDGs are inoperable, the crew <span class="blank">_(2)_</span> r
 ## Connections
 
 - Related systems: [[EDGs]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related exam: [[2018 NRC Written Exam]]

@@ -96,5 +96,5 @@ Ref: S2.OP-SO.CH-0001 (Rev 30), SC.OP-DL.ZZ-0008(Q) Circulating / Service Water 
 
 - Related systems: [[Chill Water]], [[Service Water]]
 - Related procedures: [[S2.OP-SO.CH-0001 — Chilled Water System Operation]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related exam: [[2014 NRC Operating Exam]]

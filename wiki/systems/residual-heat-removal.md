@@ -269,8 +269,8 @@ LOCA outside containment indication from RHR piping: <span class="hi-exam">OHA C
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.5 — ECCS]]** — RHR subsystems as part of ECCS
-- **[[TS 3/4.9 — Refueling Operations|TS 3/4.9]]** — RHR requirements during refueling
+- **[[TS 3.5 — ECCS]]** — RHR subsystems as part of ECCS
+- **[[TS 3.9 — Refueling Operations|TS 3.9]]** — RHR requirements during refueling
 
 **Exam & operating coverage:**
 

@@ -44,5 +44,5 @@ Which of the following identifies the <u>Tech Spec required</u> action for the R
 ## Connections
 
 - Related systems: [[RCPs]], [[RCS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2016 NRC Written Exam]]

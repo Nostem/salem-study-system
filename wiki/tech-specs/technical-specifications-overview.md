@@ -19,18 +19,18 @@ UFSAR Chapter 16 states that the Technical Specifications exist as separate docu
 |---------|-------|----------------------|
 | 1.0 | Definitions | [[TS 1.0 — Definitions]] |
 | 2.0 | Safety Limits and LSSS | [[TS 2.0 — Safety Limits and LSSS]] |
-| 3/4.0 | Applicability | [[TS 3/4.0 — Applicability]] |
-| 3/4.1 | Reactivity Control | [[TS 3/4.1.1 — Boration Control]] |
-| 3/4.2 | Power Distribution | [[TS 3/4.2 — Power Distribution]] |
-| 3/4.3 | Instrumentation | [[TS 3/4.3 — Instrumentation]] |
-| 3/4.4 | Reactor Coolant System | [[TS 3/4.4 — Reactor Coolant System]] |
-| 3/4.5 | ECCS | [[TS 3/4.5 — ECCS]] |
-| 3/4.6 | Containment | [[TS 3/4.6 — Containment]] |
-| 3/4.7 | Plant Systems | [[TS 3/4.7 — Plant Systems]] |
-| 3/4.8 | Electrical | [[TS 3/4.8 — Electrical]] |
-| 3/4.9 | Refueling Operations | [[TS 3/4.9 — Refueling Operations]] |
-| 3/4.10 | Special Test Exceptions | [[TS 3/4.10 — Special Test Exceptions]] |
-| 3/4.11 | Radioactive Effluents | [[TS 3/4.11 — Radioactive Effluents]] |
+| 3.0 | Applicability | [[TS 3.0 — Applicability]] |
+| 3.1 | Reactivity Control | [[TS 3.1.1 — Boration Control]] |
+| 3.2 | Power Distribution | [[TS 3.2 — Power Distribution]] |
+| 3.3 | Instrumentation | [[TS 3.3 — Instrumentation]] |
+| 3.4 | Reactor Coolant System | [[TS 3.4 — Reactor Coolant System]] |
+| 3.5 | ECCS | [[TS 3.5 — ECCS]] |
+| 3.6 | Containment | [[TS 3.6 — Containment]] |
+| 3.7 | Plant Systems | [[TS 3.7 — Plant Systems]] |
+| 3.8 | Electrical | [[TS 3.8 — Electrical]] |
+| 3.9 | Refueling Operations | [[TS 3.9 — Refueling Operations]] |
+| 3.10 | Special Test Exceptions | [[TS 3.10 — Special Test Exceptions]] |
+| 3.11 | Radioactive Effluents | [[TS 3.11 — Radioactive Effluents]] |
 | 6.0 | Administrative Controls | [[TS 6.0 — Administrative Controls]] |
 
 ## Modes of Operation
@@ -58,6 +58,6 @@ Dollar sign ($) in surveillance procedures: <span class="hi-exam">Steps identifi
 ## Connections
 
 - Related systems: All plant systems
-- Related concepts: [[ESF & Design]], [[TS 3/4.0 — Applicability]]
+- Related concepts: [[ESF & Design]], [[TS 3.0 — Applicability]]
 - Related exam questions: [[2020 Q71]]
 - Related exam: [[2020 NRC Written Exam]]

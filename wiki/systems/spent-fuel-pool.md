@@ -151,7 +151,7 @@ The Unit 2 Cycle 21 SFP boron concentration limit of <span class="hi-exam">≥ <
 ## Connections
 
 - Related systems: [[FHV]], [[Refueling]], [[CCW]], [[CVCS]], [[Demin Water]], [[Radiation Monitoring]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]]
 - Related procedures: [[S2.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[S1.OP-SO.SF-0001 — Fill and Transfer of Spent Fuel Pool]], [[AB.SF-0001 — Loss of Spent Fuel Pool Cooling]], [[S2.OP-SO.SF-0006 — Spent Fuel Pool Emergency Fill]], [[S2.OP-SO.SF-0009 — Refueling Operations]], [[S2.OP-IO.ZZ-0010 — Spent Fuel Pool Manipulations]], [[S2.OP-IO.ZZ-0009 — Defueled to Refueling]], [[AB.FUEL-0001 — Fuel Handling Incident]], [[AB.CC-0001 — Loss of Component Cooling Water]]
 - Related exam questions: [[2014 Q9]], [[2014 Q13]], [[2014 Q50]], [[2014 Q68]], [[2016 Q46]], [[2016 Q47]], [[2016 Q80]], [[2016 Q88]], [[2016 Q94]], [[2016 Q95]], [[2018 Q33]], [[2018 Q92]], [[2020 Q62]], [[2022 Q61]], [[2015 Q49]], [[2015 Q68]], [[2014 Q80]], [[2014 Q90]], [[2012 Q48]], [[2012 Q90]], [[2012 Q95]], [[2012 Q98]]
 - Related JPMs: [[2016 JPM SRO-A1-2]], [[2012 JPM SRO-A1-2]]

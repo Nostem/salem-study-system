@@ -1,5 +1,5 @@
 ---
-title: "TS 3/4.3 — Instrumentation"
+title: "TS 3.3 — Instrumentation"
 category: tech-specs
 status: draft
 aliases:
@@ -14,9 +14,9 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-3.pdf" target="_blank">View TS 3.3 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-3.pdf" target="_blank">View Bases 3.3 PDF</a>
 </div>
 
-# TS 3/4.3 — Instrumentation
+# TS 3.3 — Instrumentation
 
-## 3/4.3.1 — Reactor Trip System Instrumentation
+## 3.3.1 — Reactor Trip System Instrumentation
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.3.1.1</div>
@@ -108,9 +108,9 @@ Action 2 applies only to Power Range Neutron Flux channels and includes <span cl
 </div>
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.1 RTS Instrumentation</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.3.1 RTS Instrumentation</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.3.1</div>
+<div class="callout-label">Bases — 3.3.1</div>
 
 **OPERABILITY Requirements**
 
@@ -164,7 +164,7 @@ TS Bases 3.3.1.1 generalizes that instrumentation OPERABILITY ensures <span clas
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q94</div>
-Intermediate Range NI operability per TSAS 3.3.1.1: there is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">ONE inoperable IR NI only — with BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). Supporting procedure facts (S1.OP-IO.ZZ-0003): <span class="hi-exam">at least a one-decade SR/IR overlap is required when raising power (step 5.2.33)</span>; with SR at ~30,000 counts the overlap should already be present, so each IR NI should read ~<span class="hi-exam">1x10-10A</span>; the <span class="hi-exam">SR Hi Flux trip is at 100,000 counts</span>. <span class="hi-trap">Trap: declaring only TSAS 3.3.1.1 entry (the one-channel action) when BOTH channels are inoperable — the correct entry is TS 3.0.3.</span> See [[Incores]], [[TS 3/4.0 — Applicability]].
+Intermediate Range NI operability per TSAS 3.3.1.1: there is an ACTION in TSAS 3.3.1.1 for <span class="hi-exam">ONE inoperable IR NI only — with BOTH IR NIs inoperable, TS 3.0.3 is entered</span> (no two-channel ACTION exists). Supporting procedure facts (S1.OP-IO.ZZ-0003): <span class="hi-exam">at least a one-decade SR/IR overlap is required when raising power (step 5.2.33)</span>; with SR at ~30,000 counts the overlap should already be present, so each IR NI should read ~<span class="hi-exam">1x10-10A</span>; the <span class="hi-exam">SR Hi Flux trip is at 100,000 counts</span>. <span class="hi-trap">Trap: declaring only TSAS 3.3.1.1 entry (the one-channel action) when BOTH channels are inoperable — the correct entry is TS 3.0.3.</span> See [[Incores]], [[TS 3.0 — Applicability]].
 </div>
 
 <div class="callout callout-exam">
@@ -179,7 +179,7 @@ LCO 3.3.1.1 action for PZR Level Channel failure: with 2LT-459 (Channel I PZR Le
 
 ---
 
-## 3/4.3.2 — ESF Actuation System Instrumentation
+## 3.3.2 — ESF Actuation System Instrumentation
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.3.2.1</div>
@@ -360,9 +360,9 @@ Motor-driven AFW pumps start on Lo-Lo level in ANY 1 steam generator (2/3 per SG
 </div>
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.2 ESF Actuation Instrumentation</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.3.2 ESF Actuation Instrumentation</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.3.2</div>
+<div class="callout-label">Bases — 3.3.2</div>
 
 **OPERABILITY Requirements**
 
@@ -397,7 +397,7 @@ TS 3.3.2.1 Action 16 applies to Hi-Hi Containment Pressure channels (CS, Phase B
 
 ---
 
-## 3/4.3.3 — Monitoring Instrumentation
+## 3.3.3 — Monitoring Instrumentation
 
 ### Radiation Monitoring Instrumentation (3.3.3.1)
 
@@ -460,9 +460,9 @@ The radiation monitoring instrumentation channels shown in Table 3.3-6 shall be 
 *(Table 3.3-6, Amendment Nos. 245, 253, 278)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.1 Radiation Monitoring</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.3.3.1 Radiation Monitoring</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.3.3.1</div>
+<div class="callout-label">Bases — 3.3.3.1</div>
 
 The OPERABILITY of the radiation monitoring channels ensures that: (1) radiation levels are continually measured in the areas served by the individual channels, and (2) the alarm or automatic action is initiated when the radiation level trip setpoint is exceeded.
 
@@ -518,9 +518,9 @@ The remote shutdown monitoring instrumentation channels shown in Table 3.3-9 sha
 *(Table 3.3-9, Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.5 Remote Shutdown Instrumentation</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.3.3.5 Remote Shutdown Instrumentation</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.3.3.5</div>
+<div class="callout-label">Bases — 3.3.3.5</div>
 
 <span class="hi-exam">The OPERABILITY of the remote shutdown instrumentation ensures that sufficient capability is available to permit shutdown and maintenance of HOT STANDBY from locations outside the control room.</span> This capability is required in the event control room habitability is lost and is consistent with <span class="hi">General Design Criterion 19 of 10 CFR 50</span>.
 
@@ -603,9 +603,9 @@ The accident monitoring instrumentation channels shown in Table 3.3-11 shall be 
 *(Table 3.3-11, Table 4.3-11, Amendment No. 301)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.7 Accident Monitoring Instrumentation</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.3.3.7 Accident Monitoring Instrumentation</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.3.3.7</div>
+<div class="callout-label">Bases — 3.3.3.7</div>
 
 <span class="hi-exam">The OPERABILITY of the accident monitoring instrumentation ensures that sufficient information is available on selected plant parameters to monitor and assess these variables following an accident.</span> This capability is consistent with the recommendations of <span class="hi">Regulatory Guide 1.97</span>, "Instrumentation for Light-Water-Cooled Nuclear Power Plants to Assess Plant Conditions During and Following an Accident" (December 1975) and <span class="hi">NUREG-0578</span>, "TMI-2 Lessons Learned Task Force Status Report and Short-Term Recommendations."
 
@@ -657,9 +657,9 @@ The radioactive liquid effluent monitoring instrumentation channels shown in Tab
 *(Table 3.3-12, Table 4.3-12, Amendment Nos. 215, 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.8 Radioactive Liquid Effluent Monitoring</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.3.3.8 Radioactive Liquid Effluent Monitoring</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.3.3.8</div>
+<div class="callout-label">Bases — 3.3.3.8</div>
 
 The purpose of tank level indicating devices is to assure the detection and control of leaks that, if not controlled, could potentially result in the transport of radioactive materials to unrestricted areas.
 
@@ -713,9 +713,9 @@ The Power Distribution Monitoring System (PDMS) shall be OPERABLE with: (a) mini
 *(Table 3.3-14, Amendment Nos. 218, 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.3.3.14 Power Distribution Monitoring System (PDMS)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.3.3.14 Power Distribution Monitoring System (PDMS)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.3.3.14</div>
+<div class="callout-label">Bases — 3.3.3.14</div>
 
 <span class="hi-exam">The PDMS provides continuous core power distribution measurement using a highly accurate 3-D nodal simulation of the current reactor power distribution.</span> The simulated distribution is continuously adjusted by nodal and thermocouple calibration factors derived from incore power distribution measurements using the incore movable detectors. Nodal calibration factors are updated in accordance with the Surveillance Frequency Control Program.
 

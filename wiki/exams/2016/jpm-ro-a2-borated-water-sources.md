@@ -122,6 +122,6 @@ Ref: S2.OP-ST.CVC-0010 (R10) | Task: N0040420201 | K/A: G2.2.37 — Ability to d
 ## Connections
 
 - Related procedures: [[S2.OP-ST.CVC-0010 — Borated Water Sources]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]]
 - Related systems: [[CVCS]]
 - Related exam: [[2016 NRC Operating Exam]]

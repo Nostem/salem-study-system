@@ -49,6 +49,6 @@ NOTE:<br>
 ## Connections
 
 - Related systems: [[Main Turbine]], [[Control Rod Drive]]
-- Related tech specs: [[TS 3/4.1.1 — Boration Control]], [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.1 — Boration Control]], [[TS 3.1.3 — Movable Control Assemblies]]
 - Related procedures: [[S2.OP-SO.CVC-0008 — Rapid Boration]]
 - Related exam: [[2018 NRC Written Exam]]

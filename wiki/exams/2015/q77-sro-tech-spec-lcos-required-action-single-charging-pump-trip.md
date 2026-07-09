@@ -50,5 +50,5 @@ The CRS will enter.....
 
 - Related systems: [[CVCS]], [[ECCS]]
 - Related procedures: [[AB.CVC-0001 — Loss of Charging]]
-- Related tech specs: [[TS 3/4.5 — ECCS]], [[TS 3/4.1.2 — Boration Systems]]
+- Related tech specs: [[TS 3.5 — ECCS]], [[TS 3.1.2 — Boration Systems]]
 - Related exam: [[2015 NRC Written Exam]]

@@ -44,5 +44,5 @@ Which of the following identifies how the CRS should proceed?
 
 - Related systems: [[RCS]]
 - Related procedures: [[S2.OP-IO.ZZ-0002 — Cold Shutdown to Hot Standby]], [[S2.OP-ST.RC-0008 — RCS Water Inventory Balance]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2014 NRC Written Exam]]

@@ -47,5 +47,5 @@ Assume the cooldown will start at 1300 and instantaneously be at the maximum rat
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]]
 - Related procedures: [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2012 NRC Written Exam]]

@@ -50,5 +50,5 @@ Complete the following statements concerning the implementation of OP-AA-108-116
 
 - Related systems: [[CVCS]]
 - Related procedures: [[OP-AA-108-116 — Protected Equipment Program]]
-- Related tech specs: [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.0 — Applicability]]
 - Related exam: [[2020 NRC Written Exam]]

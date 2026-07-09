@@ -55,5 +55,5 @@ Which Abnormal Operating Procedure will isolate the identified service water lea
 
 - Related systems: [[Service Water]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0003 — Service Water Bay Leak]], [[S2.OP-SO.SW-0005 — Service Water System Operation]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.7 — Plant Systems]], [[TS 3.0 — Applicability]]
 - Related exam: [[2020 NRC Written Exam]]

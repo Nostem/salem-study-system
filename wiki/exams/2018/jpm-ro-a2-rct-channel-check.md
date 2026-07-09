@@ -99,5 +99,5 @@ Ref: S2.OP-DL.ZZ-0003 (Rev 109), Salem 2 Cycle 23 REM (Rev 17) | Task: S30200011
 
 - Related systems: [[RCS]]
 - Related procedures: [[S2.OP-DL.ZZ-0003 — Control Room Logs]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]], [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.3 — Instrumentation]], [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2018 NRC Operating Exam]]

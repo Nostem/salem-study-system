@@ -37,7 +37,7 @@ In accordance with <span class="hi">Technical Specification 3.4.10.3</span>, Ove
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; A.</strong> Incorrect. Plausible because the SRO may incorrectly apply TS 3.4.10.3 action "a" and believe that you can make the mode change so long as you restore the channel within 7 days following entering Mode 4. Mode change cannot be performed until the channel is restored to operable status.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; B.</strong> Incorrect. Plausible because TS 3.0.4.b does allow the use of a risk assessment to make a mode change. However, this is prohibited by TS 3.4.10.3 action "e".</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; C.</strong> Incorrect. Plausible because the SRO may incorrectly apply TS 3.4.10.3 action "b" and believe that you can make the mode change so long as you restore the channel within 24 hours following entering Mode 4. Mode change cannot be performed until the channel is restored to operable status.</div>
-<div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">Ref: TS 3.4.10.3 and bases | LO: NOS05TECHSPEC-14, Obj 14 — Describe the general component and parameter categories that are addressed by Technical Specification Sections 3/4.1 through 3/4.12 | Source: New | Cognitive: Comprehension/Analysis</div>
+<div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">Ref: TS 3.4.10.3 and bases | LO: NOS05TECHSPEC-14, Obj 14 — Describe the general component and parameter categories that are addressed by Technical Specification Sections 3.1 through 3.12 | Source: New | Cognitive: Comprehension/Analysis</div>
 </div>
 </details>
 </div>
@@ -45,5 +45,5 @@ In accordance with <span class="hi">Technical Specification 3.4.10.3</span>, Ove
 ## Connections
 
 - Related systems: [[RCS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2022 NRC Written Exam]]

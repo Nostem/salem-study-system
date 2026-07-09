@@ -40,5 +40,5 @@ When in Modes 1-4, which of the following describes a condition which would ALWA
 ## Connections
 
 - Related systems: [[DC Power]]
-- Related tech specs: [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.8 — Electrical]]
 - Related exam: [[2014 NRC Written Exam]]

@@ -36,6 +36,6 @@ During RCS heat up, 2RH1 and 2RH2 (RHR Suction Isolation Valves) must be <span c
 
 - Related systems: [[RHR]], [[RCS]], [[RPS/SSPS]]
 - Related procedures: [[S2.OP-ST.RC-0008 — RCS Water Inventory Balance]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam questions: [[2022 Q07]], [[2014 Q41]], [[2014 Q86]]
 - Related exam: [[2022 NRC Written Exam]], [[2014 NRC Written Exam]]

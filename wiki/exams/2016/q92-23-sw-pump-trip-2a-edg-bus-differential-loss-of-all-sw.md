@@ -54,6 +54,6 @@ Which of the following identifies:<br>
 ## Connections
 
 - Related systems: [[Service Water]], [[EDGs]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related procedures: [[AB.SW-0001 — Loss of SW Header Pressure]], [[AB.SW-0005 — Loss of All Service Water]]
 - Related exam: [[2016 NRC Written Exam]]

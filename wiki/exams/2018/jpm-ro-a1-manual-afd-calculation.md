@@ -100,5 +100,5 @@ Ref: S2.OP-ST.NIS-0001 (Rev 13), Salem 2 Cycle 23 REM (Rev 17), Salem Unit 2 COL
 
 - Related systems: [[Excore NIs]]
 - Related procedures: [[S2.OP-ST.NIS-0001 — Power Distribution AFD Surveillance]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]], [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.2 — Power Distribution]], [[TS 3.1.3 — Movable Control Assemblies]]
 - Related exam: [[2018 NRC Operating Exam]]

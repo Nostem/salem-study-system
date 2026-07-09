@@ -203,7 +203,7 @@ AFW Pressure Override circuit (runout protection) — pump-to-AF21 mapping: the 
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.2 requires three independent AFW pumps OPERABLE in Modes 1, 2, and 3
+- **[[TS 3.7 — Plant Systems]]** — TS 3.7.1.2 requires three independent AFW pumps OPERABLE in Modes 1, 2, and 3
 - 1 pump inoperable: 72 hours to restore
 - 2 pumps inoperable: Hot Standby in 6 hours
 - 3 pumps inoperable: immediately restore at least one

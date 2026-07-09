@@ -49,5 +49,5 @@ Which of the following identifies how Tech Specs will be applied if a RCP were t
 ## Connections
 
 - Related systems: [[RCPs]], [[RCS]], [[Control Rod Drive]], [[RPS/SSPS]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2016 NRC Written Exam]]

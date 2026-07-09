@@ -100,5 +100,5 @@ Ref: S2.OP-ST.CVC-0010 (Rev 9) Borated Water Sources; Salem Tech Specs (TS 3.1.2
 
 - Related systems: [[CVCS]]
 - Related procedures: [[S2.OP-ST.CVC-0010 — Borated Water Sources]]
-- Related tech specs: [[TS 3/4.1.2 — Boration Systems]], [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.1.2 — Boration Systems]], [[TS 3.5 — ECCS]]
 - Related exam: [[2012 NRC Operating Exam]]

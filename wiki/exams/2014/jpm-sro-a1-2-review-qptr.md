@@ -99,5 +99,5 @@ Ref: S1.OP-ST.NIS-0002 (Rev 15), S1.RE-RA.ZZ-0011 (Rev 383), Tech Spec 3.2.4 | T
 
 - Related systems: [[Excore NIs]]
 - Related procedures: [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.RE-RA.ZZ-0011 — Tables]], [[AB.ROD-0002 — Dropped Rod]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.2 — Power Distribution]]
 - Related exam: [[2014 NRC Operating Exam]]

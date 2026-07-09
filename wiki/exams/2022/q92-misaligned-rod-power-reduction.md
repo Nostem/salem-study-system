@@ -50,5 +50,5 @@ Which ONE of the following describes the required action per S2.OP-AB.ROD-0001?
 - Related systems: [[Control Rod Drive]]
 - Related abnormals: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]]
 - Related procedures: [[S2.OP-ST.RCS-0001 — Rod Control Assemblies Surveillance]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]]
 - Related exam: [[2022 NRC Written Exam]]

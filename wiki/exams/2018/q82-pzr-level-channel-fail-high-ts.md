@@ -50,5 +50,5 @@ In accordance LCO 3.3.1.1 (REACTOR TRIP SYSTEM INSTRUMENTATION), 2LT-459 must be
 ## Connections
 
 - Related systems: [[Pressurizer Level & Press Control]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2018 NRC Written Exam]]

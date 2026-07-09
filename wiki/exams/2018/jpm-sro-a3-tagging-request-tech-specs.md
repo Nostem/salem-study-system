@@ -94,5 +94,5 @@ Ref: OP-AA-109-115 (Rev. 12), S1.OP-SO.CVC-0002 (Rev. 41), DWG 205228 Sheet 2 (R
 
 - Related systems: [[CVCS]], [[ECCS]]
 - Related procedures: [[OP-AA-109-115 — Equipment Tagging]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.5 — ECCS]]
 - Related exam: [[2018 NRC Operating Exam]]

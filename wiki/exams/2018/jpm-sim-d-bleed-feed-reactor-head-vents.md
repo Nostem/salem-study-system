@@ -103,7 +103,7 @@ aliases:
 </div>
 
 <div style="margin-top:10px;padding-top:8px;border-top:1px solid #1a2035;font-size:10px;color:#6b7280;">
-Ref: 2-EOP-FRHS-1 (Rev 33) | Task: N1150290501 | K/A: 002 A2.04 — Ability to (a) predict the impacts of the following malfunctions or operations on the RCS; and (b) based on those predictions, use procedures to correct, control, or mitigate the consequences (4.3/4.6) | Source: Modified | <a href="/salem-study-system/exam-pdfs/2018-jpm-sim-d.pdf" target="_blank" style="color:#60a5fa;">View JPM PDF</a>
+Ref: 2-EOP-FRHS-1 (Rev 33) | Task: N1150290501 | K/A: 002 A2.04 — Ability to (a) predict the impacts of the following malfunctions or operations on the RCS; and (b) based on those predictions, use procedures to correct, control, or mitigate the consequences (4.3.6) | Source: Modified | <a href="/salem-study-system/exam-pdfs/2018-jpm-sim-d.pdf" target="_blank" style="color:#60a5fa;">View JPM PDF</a>
 </div>
 </div>
 </details>

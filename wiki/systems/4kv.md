@@ -189,7 +189,7 @@ Key loads on the 2C 4KV Vital Bus include: <span class="hi-exam">22 Charging Pum
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.8 — Electrical]]** — TS 3.8.3.1 requires vital buses energized and OPERABLE
+- **[[TS 3.8 — Electrical]]** — TS 3.8.3.1 requires vital buses energized and OPERABLE
 
 ## Exam & Operating Coverage
 
@@ -222,7 +222,7 @@ PZR backup heater emergency feeds from the 4KV vital buses (via 460V): <span cla
 
 ## Connections
 
-- Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3/4.8 — Electrical]]
+- Related systems: [[500KV]], [[460/230V AC]], [[EDGs]], [[SECs]], [[TS 3.8 — Electrical]]
 - Related procedures: [[AB.CW-0001 — Circulating Water Malfunction]], [[AB.4KV-0001 — Loss of 4KV Vital Bus]], [[AB.4KV-0003 — Loss of 2C 4KV Bus]], [[S2.OP-SO.4KV-0008 — 4KV Group Buses Power Supply Transfer]], [[S2.OP-SO.4KV-0001 — 4KV Vital Bus Operation]], [[S2.OP-SO.DG-0001 — Diesel Generator Operation]], [[S2.OP-SO.PZR-0010 — Pressurizer Backup Heaters Power Supply Transfer]]
 - Related exam questions: [[2016 Q55]], [[2018 Q11]], [[2018 Q14]], [[2018 Q19]], [[2018 Q22]], [[2018 Q29]], [[2018 Q66]], [[2019 Q12]], [[2019 Q13]], [[2019 Q19]], [[2019 Q21]], [[2020 Q9]], [[2020 Q29]], [[2020 Q47]], [[2020 Q48]], [[2020 Q53]], [[2023 Q88]], [[2023 Q93]], [[2022 Q47]], [[2015 Q31]], [[2015 Q43]], [[2015 Q57]], [[2015 Q61]], [[2015 Q69]], [[2014 Q49]], [[2014 Q57]], [[2012 Q11]], [[2012 Q39]], [[2012 Q52]]
 - Related JPMs: [[2016 JPM Sim-g]], [[2016 JPM IP-k]], [[2018 JPM Sim-g]], [[2022 JPM Sim-g]], [[2020 JPM Sim-h]], [[2015 JPM Sim-e]]

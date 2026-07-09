@@ -49,5 +49,5 @@ In accordance with Technical Specifications, which ONE of the following complete
 ## Connections
 
 - Related systems: [[Containment Spray]]
-- Related tech specs: [[TS 3/4.6 — Containment]], [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.6 — Containment]], [[TS 3.0 — Applicability]]
 - Related exam: [[2018 NRC Written Exam]]

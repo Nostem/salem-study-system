@@ -47,5 +47,5 @@ Complete the following statements concerning an impact on Engineered Safety Feat
 
 - Related systems: [[RPS/SSPS]], [[Containment Spray]], [[115V AC]]
 - Related procedures: [[AB.115-0002 — Loss of 2B 115V Vital Instrument Bus]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2020 NRC Written Exam]]

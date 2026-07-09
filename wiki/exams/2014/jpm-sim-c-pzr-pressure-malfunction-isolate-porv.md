@@ -121,5 +121,5 @@ Ref: S2.OP-AB.RC-0001 (Rev 11), S2.OP-AB.PZR-0001 (Rev 18) | Task: N1140240401 |
 
 - Related systems: [[Pressurizer & PRT]]
 - Related procedures: [[AB.PZR-0001 — Pressurizer Pressure Control Malfunction]], [[AB.RC-0001 — Reactor Coolant System Leak]]
-- Related tech specs: [[TS 3/4.4 — Reactor Coolant System]]
+- Related tech specs: [[TS 3.4 — Reactor Coolant System]]
 - Related exam: [[2014 NRC Operating Exam]]

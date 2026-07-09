@@ -49,5 +49,5 @@ Which of the following identifies how Bleed and Feed of the RCS will be accompli
 
 - Related systems: [[RCS]], [[Pressurizer & PRT]], [[CVCS]], [[ECCS]]
 - Related EOPs: [[EOP-FRHS-1 — Response to Loss of Secondary Heat Sink]], [[EOP-TRIP-1 — Reactor Trip or Safety Injection]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.5 — ECCS]]
 - Related exam: [[2014 NRC Written Exam]]

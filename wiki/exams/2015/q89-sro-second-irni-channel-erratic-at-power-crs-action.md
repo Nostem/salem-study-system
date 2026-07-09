@@ -47,5 +47,5 @@ The CRS shall...
 
 - Related systems: [[Excore NIs]], [[RPS/SSPS]]
 - Related procedures: [[AB.NIS-0001 — Nuclear Instrumentation System Malfunction]], [[S2.OP-SO.RPS-0001 — Nuclear Instrumentation Channel Trip / Restoration]]
-- Related tech specs: [[TS 3/4.3 — Instrumentation]]
+- Related tech specs: [[TS 3.3 — Instrumentation]]
 - Related exam: [[2015 NRC Written Exam]]
