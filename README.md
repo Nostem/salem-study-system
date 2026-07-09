@@ -374,7 +374,7 @@ npm run build:astro && npm run check:static-assets && npm run build:search
 - Local builds use `dist/pagefind-current/`.
 - `PUBLIC_PAGEFIND_ASSET_DIR` can override the directory when needed.
 
-This prevents a browser from reusing stale/corrupted Pagefind binary assets after a Vercel deploy. The search modal also retries once with a cache-busted Pagefind module if Pagefind reports a stale WASM pointer. Use `npm run build:astro` when a check only needs rendered pages and does not need Pagefind search indexing.
+This prevents a browser from reusing stale/corrupted Pagefind binary assets after a Vercel deploy. The Pagefind assets are served with `no-transform` (they are pre-gzipped and decompressed in JS) and a revalidatable `Cache-Control` (`max-age`/`stale-while-revalidate`, **not** `immutable`) so a page reload can recover a bad cache entry — `immutable` would tell the browser to reuse the cached copy even on refresh. If Pagefind reports a stale WASM pointer, the search modal retries once with a cache-busted module, and if that still fails it surfaces a one-click **Reload page** action (a fresh load resets Pagefind's in-memory state and revalidates the assets). Use `npm run build:astro` when a check only needs rendered pages and does not need Pagefind search indexing.
 
 ### Run Node tests
 
