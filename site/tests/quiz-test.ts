@@ -56,14 +56,7 @@ function supabaseAuthStorageKey(): string {
   return `sb-${projectRef}-auth-token`;
 }
 
-async function authenticateQuizUser(page: Page): Promise<void> {
-  await page.route('**/functions/v1/quiz-review-queue', async (route) => {
-    await route.fulfill({
-      status: 200,
-      contentType: 'application/json',
-      body: JSON.stringify({ ok: true, dueSlugs: [], allSlugs: [], states: {} }),
-    });
-  });
+async function setQuizAuth(page: Page): Promise<void> {
   await page.addInitScript(([storageKey]) => {
     window.localStorage.setItem(
       storageKey,
@@ -84,6 +77,40 @@ async function authenticateQuizUser(page: Page): Promise<void> {
       })
     );
   }, [supabaseAuthStorageKey()]);
+}
+
+async function authenticateQuizUser(page: Page): Promise<void> {
+  await page.route('**/functions/v1/quiz-review-queue', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, dueSlugs: [], allSlugs: [], states: {} }),
+    });
+  });
+  await setQuizAuth(page);
+}
+
+function masteredStatesFor(slugs: string[]): Record<string, unknown> {
+  const states: Record<string, unknown> = {};
+  for (const slug of slugs) {
+    states[slug] = {
+      attemptsCount: 4,
+      correctCount: 4,
+      incorrectCount: 0,
+      masteryState: 'mastered',
+      nextReviewAt: '2026-07-01T00:00:00.000Z',
+    };
+  }
+  return states;
+}
+
+async function startQuizFirstTitle(page: Page, seed: number, year: string, count: number): Promise<string> {
+  await page.goto(`quiz/?seed=${seed}`);
+  await page.getByLabel('Exam year').selectOption(year);
+  await page.getByLabel('Question count').fill(String(count));
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+  await expect(page.getByTestId('quiz-session')).toBeVisible();
+  return (await page.locator('#question-title').textContent())?.trim() ?? '';
 }
 
 test('quiz page requires login before showing the quiz builder', async ({ page }) => {
@@ -759,4 +786,68 @@ test('starting a new quiz after a failed save preserves the unsaved draft for re
   await expect(page.getByTestId('quiz-draft-resume')).toContainText('2 questions');
   const draftAfterNewQuiz = await page.evaluate(() => window.localStorage.getItem('salem-study-quiz-draft-v1'));
   expect(draftAfterNewQuiz).not.toBeNull();
+});
+
+test('a failed progress fetch shows a random-order notice and the next quiz retries personalization', async ({ page }) => {
+  const y2018Slugs = questionsForYear(2018).map((question) => question.slug);
+  let reviewQueueCalls = 0;
+  await page.route('**/functions/v1/quiz-review-queue', async (route) => {
+    reviewQueueCalls += 1;
+    if (reviewQueueCalls === 1) {
+      // First attempt fails: ordering must fall back to random AND the failure
+      // must NOT be cached, so a later Start retries instead of staying random.
+      await route.fulfill({ status: 500, contentType: 'application/json', body: JSON.stringify({ error: 'boom' }) });
+    } else {
+      await route.fulfill({
+        status: 200,
+        contentType: 'application/json',
+        body: JSON.stringify({ ok: true, dueSlugs: [], allSlugs: y2018Slugs, states: masteredStatesFor(y2018Slugs) }),
+      });
+    }
+  });
+  // Keep the completion round-trip clean so "Build another quiz" resets fully.
+  await page.route('**/functions/v1/submit-quiz-results', async (route) => {
+    await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ ok: true }) });
+  });
+  await setQuizAuth(page);
+
+  await page.goto('quiz/?seed=41');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.getByTestId('quiz-session')).toBeVisible();
+  await expect(page.getByTestId('personalization-notice')).toBeVisible();
+  await expect(page.getByTestId('personalization-notice')).toContainText(/random order/i);
+  expect(reviewQueueCalls).toBe(1);
+
+  // Rebuild in the same page visit (count=1 shows "Review results" immediately).
+  await page.getByRole('button', { name: /Review results/i }).click();
+  await page.getByRole('button', { name: /Build another quiz/i }).click();
+  await page.getByLabel('Question count').fill('1');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.getByTestId('quiz-session')).toBeVisible();
+  // Retry happened (not stuck on the cached failure) and it succeeded, so the notice clears.
+  expect(reviewQueueCalls).toBeGreaterThanOrEqual(2);
+  await expect(page.getByTestId('personalization-notice')).toBeHidden();
+});
+
+test('personalized quiz ordering stays deterministic for a given seed (replay links)', async ({ page }) => {
+  const y2018Slugs = questionsForYear(2018).map((question) => question.slug);
+  await page.route('**/functions/v1/quiz-review-queue', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, dueSlugs: [], allSlugs: y2018Slugs, states: masteredStatesFor(y2018Slugs) }),
+    });
+  });
+  await setQuizAuth(page);
+
+  // Same seed + same progress state must yield the same first question even
+  // though the personalized selection is reshuffled for presentation variety.
+  const firstRun = await startQuizFirstTitle(page, 41, '2018', 3);
+  const secondRun = await startQuizFirstTitle(page, 41, '2018', 3);
+  expect(secondRun).toBe(firstRun);
+  expect(firstRun.length).toBeGreaterThan(0);
 });
