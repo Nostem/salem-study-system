@@ -300,23 +300,30 @@ edits. Dispatch one batch, let it finish, verify, then dispatch the next.
 
 ## Quiz Bank & Deploy Gate (CRITICAL — do this before finishing any exam ingestion)
 
-The GitHub Pages deploy (`.github/workflows/deploy.yml`, step "Verify generated quiz data is
-current") regenerates the quiz bank from ALL question articles and **fails the deploy** if the
-committed data is stale or invalid. After ingesting ANY questions — including `status: draft`
-ones (drafts ARE included in the bank and validated) — you MUST regenerate and commit the four
-generated files as the LAST step of the ingestion branch:
+**The four generated quiz-data files are gitignored and rebuilt at deploy — do NOT commit them.**
+They are `data/quiz-import/audit-all.json`, `data/quiz-import/supabase-staging-all.json`,
+`site/src/data/quiz-bank.json`, and `site/src/data/quiz-bank-v2.json` (see `.gitignore`). There is
+no committed-artifact / `git diff --exit-code` gate anymore.
+
+Production is **Vercel** (`.github/workflows/deploy.yml` only redirects GitHub Pages there). Vercel's
+`buildCommand` (root `vercel.json`) puts `.venv/bin` on PATH and runs `npm run build`, whose
+`prebuild` hook runs `npm run data` → `python3 scripts/build_quiz_data.py`. That script is the single
+source of truth: it regenerates the four files from ALL question articles (audit → stage → build →
+build-v2 → validate) and **fails the deploy** if any question is invalid. So the source content —
+`wiki/exams/**` question articles, `data/exams/*.yaml`, `data/topic-map.yaml` — must be clean.
+
+After ingesting or editing ANY questions — including `status: draft` ones (drafts ARE included and
+validated) — run the orchestrator locally as the LAST step and confirm it prints
+**"OK — all quiz-data files regenerated and validated"** (the validate step must say "OK: no errors"):
 
 ```bash
-python3 scripts/exam_question_import.py audit  --out data/quiz-import/audit-all.json
-python3 scripts/exam_question_import.py stage  --out data/quiz-import/supabase-staging-all.json
-python3 scripts/build_static_quiz_bank.py     --bundle data/quiz-import/supabase-staging-all.json --out site/src/data/quiz-bank.json
-python3 scripts/build_structured_quiz_bank.py --in site/src/data/quiz-bank.json --out site/src/data/quiz-bank-v2.json
-python3 scripts/validate_structured_quiz_bank.py --in site/src/data/quiz-bank-v2.json --exam-images site/public/exam-images
-git diff --exit-code -- data/quiz-import/audit-all.json data/quiz-import/supabase-staging-all.json site/src/data/quiz-bank.json site/src/data/quiz-bank-v2.json
+.venv/bin/python scripts/build_quiz_data.py
 ```
 
-`validate_*` must print **"OK: no errors"** (exit 0); commit the regenerated files so the final
-`git diff --exit-code` is clean. Skipping this is what broke the deploys after the 2014/2012 merges.
+Use `.venv/bin/python` — the SYSTEM `python3` lacks PyYAML and the import/build scripts will crash with
+`ModuleNotFoundError: No module named 'yaml'`. Nothing to commit afterward (the outputs are gitignored);
+the point is to catch a validation failure before it breaks the Vercel build. A broken green marker or
+invalid question here is what broke the deploys after the 2014/2012 merges.
 
 **The `✓ <LETTER>. Correct.` marker is machine-parsed and load-bearing.** The importer
 (`exam_question_import.py` `CORRECT_RE`) detects each question's correct choice from the EXACT
@@ -326,8 +333,10 @@ goes in a SEPARATE amber callout ABOVE the green block; the green marker stays `
 Deviating (e.g. `✓ B. (keyed answer).`) yields `isCorrect=[]`, fails validation, and breaks the deploy.
 
 ## Tooling Notes
-- `pdfplumber` is in the SYSTEM `python3`; `pypdf` is ONLY in `.venv/bin/python`. Use
-  `.venv/bin/python` for PDF splitting, system `python3` for pdfplumber extraction + the importer/quiz scripts.
+- `pdfplumber` is in the SYSTEM `python3`; `pypdf` and `PyYAML` are ONLY in `.venv/bin/python`. Use
+  `.venv/bin/python` for PDF splitting AND the importer/quiz scripts (they `import yaml`, so system
+  `python3` crashes with `ModuleNotFoundError: No module named 'yaml'`); use system `python3` only for
+  pdfplumber text extraction.
 - JPM/scenario cover K/As and titles often garble in pdfplumber text but are legible as page
   IMAGES — read the cover image (Read tool, `pages:`) to resolve them and to fix any wrong YAML
   recon placeholder (e.g. "gas" vs "liquid" release). Mark `TBD` only if truly illegible; never fabricate.
