@@ -36,6 +36,7 @@ const pagefindAssetDir = resolvePagefindAssetDir();
   const normalizedBase = base.endsWith('/') ? base : `${base}/`;
   const normalizedPagefindAssetDir = pagefindAssetDir.replace(/^\/+|\/+$/g, '');
   const pagefindModulePath = `${normalizedBase}${normalizedPagefindAssetDir}/pagefind.js`;
+  const searchFallbackPath = `${normalizedBase}search-fallback.json`;
   let lastSearchTrigger = null;
 
   function getSearchElements() {
@@ -126,8 +127,21 @@ const pagefindAssetDir = resolvePagefindAssetDir();
     });
   }
 
-  function renderSearchResults(results, items) {
+  function renderSearchResults(results, items, { degraded = false } = {}) {
     clearResults(results);
+    if (degraded) {
+      const notice = document.createElement('div');
+      notice.className = 'px-3 py-2 text-[11px] text-[#8b95a5] border-b border-[#1a2035] mb-1';
+      notice.textContent = 'Basic search — the fast index could not load on this network.';
+      results.appendChild(notice);
+    }
+    if (degraded && items.length === 0) {
+      const empty = document.createElement('div');
+      empty.className = 'px-3 py-3 text-xs text-[#8b95a5]';
+      empty.textContent = 'No matches.';
+      results.appendChild(empty);
+      return;
+    }
     for (const item of items) {
       const href = typeof item.url === 'string' ? item.url : '#';
       const link = document.createElement('a');
@@ -234,6 +248,96 @@ const pagefindAssetDir = resolvePagefindAssetDir();
     }
   }
 
+  // --- Plain-JSON fallback search ---------------------------------------------
+  // Pagefind's binary WASM/index assets get corrupted or blocked by some
+  // proxies/extensions (search works on other networks/phones but not there).
+  // When Pagefind fails, search a text-only index instead. Mirrors
+  // rankFallbackMatches in src/utils/search-fallback.ts (unit-tested there;
+  // integration-tested in tests/ui-test.ts). This runs inline, so it cannot
+  // import that module — keep the two in sync.
+  let pagefindUnavailable = false;
+  let fallbackIndexPromise = null;
+
+  function loadFallbackIndex() {
+    if (!fallbackIndexPromise) {
+      fallbackIndexPromise = fetch(searchFallbackPath)
+        .then((response) => {
+          if (!response.ok) throw new Error(`fallback index ${response.status}`);
+          return response.json();
+        })
+        .then((data) => (Array.isArray(data?.entries) ? data.entries : []))
+        .catch((err) => {
+          fallbackIndexPromise = null;
+          throw err;
+        });
+    }
+    return fallbackIndexPromise;
+  }
+
+  function fallbackExcerpt(text, tokens) {
+    const lower = text.toLowerCase();
+    let pos = -1;
+    let matched = '';
+    for (const token of tokens) {
+      const i = lower.indexOf(token);
+      if (i !== -1 && (pos === -1 || i < pos)) {
+        pos = i;
+        matched = token;
+      }
+    }
+    if (pos === -1) return text.slice(0, 160);
+    const start = Math.max(0, pos - 60);
+    const end = Math.min(text.length, pos + matched.length + 110);
+    const lead = start > 0 ? '…' : '';
+    const tail = end < text.length ? '…' : '';
+    const hit = text.slice(pos, pos + matched.length);
+    return `${lead}${text.slice(start, pos)}<mark>${hit}</mark>${text.slice(pos + matched.length, end)}${tail}`;
+  }
+
+  function rankFallbackMatches(entries, query, limit) {
+    const tokens = query.toLowerCase().split(/\s+/).filter(Boolean);
+    if (tokens.length === 0) return [];
+    const scored = [];
+    for (const entry of entries) {
+      const title = String(entry.title || '').toLowerCase();
+      const text = String(entry.text || '').toLowerCase();
+      if (!tokens.every((token) => title.includes(token) || text.includes(token))) continue;
+      let score = 0;
+      for (const token of tokens) {
+        if (title.includes(token)) score += 10;
+        if (text.includes(token)) score += 1;
+      }
+      scored.push({ entry, score });
+    }
+    scored.sort((a, b) => b.score - a.score || String(a.entry.title).localeCompare(String(b.entry.title)));
+    return scored.slice(0, limit).map(({ entry }) => ({
+      url: entry.url,
+      meta: { title: entry.title },
+      excerpt: fallbackExcerpt(String(entry.text || ''), tokens),
+    }));
+  }
+
+  async function fallbackSearch(query) {
+    const entries = await loadFallbackIndex();
+    return rankFallbackMatches(entries, query, 10);
+  }
+
+  // Try Pagefind first; on failure, transparently use the fallback and mark the
+  // results as degraded. Once Pagefind is known-broken this session, skip it.
+  async function runSearch(query) {
+    if (!pagefindUnavailable) {
+      try {
+        const search = await searchPagefind(query);
+        const items = await Promise.all(search.results.slice(0, 10).map((result) => result.data()));
+        return { items, degraded: false };
+      } catch (err) {
+        console.warn('Pagefind unavailable; using fallback search:', err);
+        pagefindUnavailable = true;
+      }
+    }
+    return { items: await fallbackSearch(query), degraded: true };
+  }
+
   function attachInputHandlers() {
     const { input, results, modal } = getSearchElements();
     if (!input || !results || !modal || input.dataset.pagefindBound === 'true') return;
@@ -289,17 +393,14 @@ const pagefindAssetDir = resolvePagefindAssetDir();
       clearTimeout(debounceTimer);
       debounceTimer = setTimeout(async () => {
         try {
-          const search = await searchPagefind(query);
-          const items = await Promise.all(search.results.slice(0, 10).map(r => r.data()));
-          renderSearchResults(results, items);
+          const { items, degraded } = await runSearch(query);
+          renderSearchResults(results, items, { degraded });
         } catch (err) {
-          // Without this catch the rejection is swallowed inside the
-          // setTimeout async callback and the user sees no feedback.
-          console.warn('Pagefind search failed:', err);
-          const detail = pagefindErrorDetail(err);
-          const isStale = err?.pagefindCacheRetryFailed && isPagefindPointerError(err);
-          const message = isStale ? staleSearchMessage() : `Search failed: ${detail}`;
-          renderSearchError(results, message, { recoverable: isStale });
+          // Both Pagefind and the JSON fallback failed. Without this catch the
+          // rejection is swallowed inside the setTimeout async callback and the
+          // user sees no feedback.
+          console.warn('Search failed (Pagefind and fallback):', err);
+          renderSearchError(results, staleSearchMessage(), { recoverable: true });
         }
       }, 150);
     });
@@ -318,11 +419,10 @@ const pagefindAssetDir = resolvePagefindAssetDir();
       try {
         await retryPagefindReady();
       } catch (retryErr) {
-        if (window.location.hostname !== 'localhost') {
-          const detail = pagefindErrorDetail(retryErr);
-          renderSearchError(results, `Search index failed to load: ${detail}`, { recoverable: true });
-        }
-        console.warn('Pagefind not loaded:', retryErr);
+        // Pagefind won't load here (corrupted/blocked assets). Don't surface an
+        // error — mark it unavailable so the first query uses the JSON fallback.
+        pagefindUnavailable = true;
+        console.warn('Pagefind not loaded; falling back to JSON search:', retryErr);
       }
     }
   }

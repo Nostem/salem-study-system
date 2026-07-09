@@ -17,7 +17,7 @@
     "check": "astro sync && tsc --noEmit --project tsconfig.json",
     "preview": "astro preview",
     "astro": "astro",
-    "test:node": "node --test tests/safe-json.node.test.ts tests/auth-client-contract.node.test.ts tests/static-asset-links.node.test.ts tests/static-asset-checker.node.test.ts tests/pagefind-assets.node.test.ts tests/quiz-v2-session.node.test.ts tests/quiz-v2-session-golden.node.test.ts tests/quiz-v2-backend-session.node.test.ts tests/quiz-v2-review.node.test.ts tests/quiz-v2-progress.node.test.ts tests/fsrs-whole-question.node.test.ts tests/quiz-personalization.node.test.ts",
+    "test:node": "node --test tests/safe-json.node.test.ts tests/auth-client-contract.node.test.ts tests/static-asset-links.node.test.ts tests/static-asset-checker.node.test.ts tests/pagefind-assets.node.test.ts tests/quiz-v2-session.node.test.ts tests/quiz-v2-session-golden.node.test.ts tests/quiz-v2-backend-session.node.test.ts tests/quiz-v2-review.node.test.ts tests/quiz-v2-progress.node.test.ts tests/fsrs-whole-question.node.test.ts tests/quiz-personalization.node.test.ts tests/search-fallback.node.test.ts",
     "test:ui:run": "playwright test tests/study-test.ts tests/navigation-test.ts tests/history-test.ts tests/quiz-test.ts tests/quiz-v2-test.ts tests/quiz-v2-play-test.ts tests/quiz-v2-review-test.ts tests/graph-v2-test.ts tests/ui-test.ts --reporter=line",
     "test:ui:smoke": "npm run build && npm run test:ui:run",
     "test:ui": "npm run build && playwright test",
