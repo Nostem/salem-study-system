@@ -11,7 +11,7 @@ aliases:
 ---
 
 <div class="ts-source-pdfs">
-<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-3.pdf" target="_blank">View Tech Spec PDF (61 pages — full tables)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-3.pdf" target="_blank">View Bases PDF</a>
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-3.pdf" target="_blank">View TS 3.3 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-3.pdf" target="_blank">View Bases 3.3 PDF</a>
 </div>
 
 # TS 3/4.3 — Instrumentation

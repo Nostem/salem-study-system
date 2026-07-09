@@ -11,7 +11,7 @@ aliases:
 ---
 
 <div class="ts-source-pdfs">
-<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-5.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-5.pdf" target="_blank">View Bases PDF</a>
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-5.pdf" target="_blank">View TS 3.5 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-5.pdf" target="_blank">View Bases 3.5 PDF</a>
 </div>
 
 # TS 3/4.5 — Emergency Core Cooling Systems

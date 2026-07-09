@@ -12,7 +12,7 @@ aliases:
 ---
 
 <div class="ts-source-pdfs">
-<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-4-1.pdf" target="_blank">View Tech Spec PDF (Loops)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-3.pdf" target="_blank">View Tech Spec PDF (Safety Valves)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-5.pdf" target="_blank">View Tech Spec PDF (PORVs)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-4-7.pdf" target="_blank">View Tech Spec PDF (Leakage)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-4.pdf" target="_blank">View Bases PDF</a>
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4.pdf" target="_blank">View TS 3.4 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4.pdf" target="_blank">View Bases 3.4 PDF</a>
 </div>
 
 # TS 3/4.4 — Reactor Coolant System

@@ -10,7 +10,7 @@ aliases:
 ---
 
 <div class="ts-source-pdfs">
-<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-1-2.pdf" target="_blank">View Tech Spec PDF</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-1.pdf" target="_blank">View Bases PDF</a>
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-1.pdf" target="_blank">View TS 3.1 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-1.pdf" target="_blank">View Bases 3.1 PDF</a>
 </div>
 
 # TS 3/4.1.2 — Boration Systems
