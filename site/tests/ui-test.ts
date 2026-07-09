@@ -194,6 +194,32 @@ test('search retries once when Pagefind reports a stale WASM pointer', async ({ 
   await expect(page.locator('#search-results')).not.toContainText(/Search failed|WASM Error|No pointer/i);
 });
 
+test('search surfaces a one-click reload when the cache-busted retry still fails', async ({ page }) => {
+  // Both the initial load and the ?retry= reload throw a pointer error, so the
+  // recovery is exhausted and the user is offered a reload instead of dead text.
+  await page.route('**/pagefind-*/pagefind.js**', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/javascript',
+      body: `
+        export async function init() {}
+        export async function search() {
+          throw new Error('Pagefind: WASM Error (No pointer)');
+        }
+      `,
+    });
+  });
+
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  await page.locator('#search-trigger').click();
+  await page.locator('#search-input').fill('reactor coolant');
+
+  await expect(page.locator('#search-results')).toContainText(/cache is stale/i);
+  await expect(page.locator('#search-results button', { hasText: 'Reload page' })).toBeVisible();
+});
+
 test('desktop and mobile sidebars use distinct IDs', async ({ page }) => {
   await page.goto(BASE + 'systems/reactor-coolant-system/');
   await page.waitForLoadState('networkidle');
