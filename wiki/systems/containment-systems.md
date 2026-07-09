@@ -306,18 +306,18 @@ EOP-FRCI-3 Attachment 1 hydrogen vent time calculation uses containment free vol
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.6 — Containment]]** — Containment integrity, leakage
-- **[[TS 3/4.6 — Containment|TS 3/4.6.1]]** — Containment Integrity
-- **[[TS 3/4.6 — Containment|TS 3/4.6.2]]** — Depressurization and Cooling Systems (spray, fan coolers)
-- **[[TS 3/4.6 — Containment|TS 3/4.6.3]]** — Containment Isolation Valves
-- **[[TS 3/4.6 — Containment|TS 3/4.6.4]]** — Combustible Gas Control
-- **[[TS 3/4.6 — Containment|TS 3/4.6.5]]** — Containment Structural Integrity
+- **[[TS 3.6 — Containment]]** — Containment integrity, leakage
+- **[[TS 3.6 — Containment|TS 3.6.1]]** — Containment Integrity
+- **[[TS 3.6 — Containment|TS 3.6.2]]** — Depressurization and Cooling Systems (spray, fan coolers)
+- **[[TS 3.6 — Containment|TS 3.6.3]]** — Containment Isolation Valves
+- **[[TS 3.6 — Containment|TS 3.6.4]]** — Combustible Gas Control
+- **[[TS 3.6 — Containment|TS 3.6.5]]** — Containment Structural Integrity
 
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q65</div>
-Containment Integrity (TS 3.6.1.1) surveillance 4.6.1.1.d invokes the CFCU surveillance (4.6.2.3.a), which includes <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — so a SW Accumulator nitrogen cover-gas pressure below minimum makes Containment Integrity NOT met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified by Admin controls (4.6.1.1.a); opening the airlock for transit is allowed; and CIVs have their own less-restrictive TS 3.6.3, not in the 3.6.1.1 surveillances.</span> See [[CFCUs]], [[TS 3/4.6 — Containment]].
+Containment Integrity (TS 3.6.1.1) surveillance 4.6.1.1.d invokes the CFCU surveillance (4.6.2.3.a), which includes <span class="hi-exam">SW Accumulator level, pressure, and temperature</span> — so a SW Accumulator nitrogen cover-gas pressure below minimum makes Containment Integrity NOT met. <span class="hi-trap">A high-rad-area manual valve/blind flange may be verified by Admin controls (4.6.1.1.a); opening the airlock for transit is allowed; and CIVs have their own less-restrictive TS 3.6.3, not in the 3.6.1.1 surveillances.</span> See [[CFCUs]], [[TS 3.6 — Containment]].
 </div>
 
 ## Fire Protection
@@ -393,7 +393,7 @@ FHB BLDG AIR D/P LO alarm during fuel moves: per S2.OP-AR.ZZ-0011, the <span cla
 
 ## Connections
 
-- Related tech specs: [[TS 3/4.6 — Containment]]
+- Related tech specs: [[TS 3.6 — Containment]]
 - Related EOPs: [[EOP-LOCA Series]], [[Critical Safety Function Status Trees]], [[EOP-FRCC-1 — Response to Inadequate Core Cooling]], [[EOP-FRCI-3 — Response to Void in Reactor Vessel]], [[EOP-FRCE-1 — Response to Excessive Containment Pressure]]
 - Related procedures: [[S2.OP-ST.CBV-0001 — Inservice Testing Containment Ventilation Valves]], [[S2.OP-SO.CBV-0002 — Containment Pressure Vacuum Relief System Operation]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]], [[S2.OP-SO.RC-0004 — Identifying and Measuring Leakage]]
 - Related exam questions: [[2016 Q9]], [[2016 Q10]], [[2016 Q27]], [[2016 Q72]], [[2016 Q81]], [[2016 Q84]], [[2016 Q93]], [[2018 Q32]], [[2019 Q27]], [[2019 Q28]], [[2019 Q32]], [[2020 Q26]], [[2020 Q33]], [[2020 Q39]], [[2020 Q40]], [[2020 Q55]], [[2020 Q59]], [[2020 Q72]], [[2020 Q75]], [[2020 Q92]], [[2023 Q52]], [[2023 Q54]], [[2023 Q58]], [[2023 Q63]], [[2023 Q84]], [[2023 Q90]], [[2023 Q95]], [[2023 Q100]], [[2022 Q59]], [[2022 Q60]], [[2015 Q27]], [[2015 Q36]], [[2015 Q47]], [[2015 Q48]], [[2015 Q65]], [[2015 Q72]], [[2014 Q41]], [[2014 Q65]], [[2012 Q35]], [[2012 Q47]], [[2012 Q65]], [[2012 Q83]], [[2012 Q85]], [[2012 Q89]], [[2012 Q93]]

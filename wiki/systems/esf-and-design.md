@@ -101,11 +101,11 @@ Analysis per 10CFR50.62 demonstrates that AMSAC (backup turbine trip and AFW act
 ## Tech Spec LCOs
 
 Accident analyses provide the bases for many Tech Spec limits including:
-- Trip setpoints and response times ([[TS 3/4.3 — Instrumentation]])
-- Shutdown margin requirements ([[TS 3/4.1.1 — Boration Control]])
-- Power distribution limits ([[TS 3/4.2 — Power Distribution]])
-- ECCS operability ([[TS 3/4.5 — ECCS]])
-- Containment integrity ([[TS 3/4.6 — Containment]])
+- Trip setpoints and response times ([[TS 3.3 — Instrumentation]])
+- Shutdown margin requirements ([[TS 3.1.1 — Boration Control]])
+- Power distribution limits ([[TS 3.2 — Power Distribution]])
+- ECCS operability ([[TS 3.5 — ECCS]])
+- Containment integrity ([[TS 3.6 — Containment]])
 
 ## Connections
 

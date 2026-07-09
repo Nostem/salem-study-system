@@ -1,8 +1,9 @@
 ---
-title: "TS 3/4.11 — Radioactive Effluents"
+title: "TS 3.11 — Radioactive Effluents"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.11 — Radioactive Effluents
   - radioactive effluents TS
   - liquid holdup tanks
   - explosive gas mixture
@@ -12,11 +13,11 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-11.pdf" target="_blank">View TS 3.11 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-11.pdf" target="_blank">View Bases 3.11 PDF</a>
 </div>
 
-# TS 3/4.11 — Radioactive Effluents
+# TS 3.11 — Radioactive Effluents
 
-Most original TS 3/4.11 specifications have been deleted and relocated to the Offsite Dose Calculation Manual (ODCM) and other programs. The remaining active specifications are:
+Most original TS 3.11 specifications have been deleted and relocated to the Offsite Dose Calculation Manual (ODCM) and other programs. The remaining active specifications are:
 
-## 3/4.11.1.4 — Liquid Holdup Tanks
+## 3.11.1.4 — Liquid Holdup Tanks
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.11.1.4</div>
@@ -44,9 +45,9 @@ LCO 3.0.3 not applicable.
 *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.11.1.4 Liquid Holdup Tanks</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.11.1.4 Liquid Holdup Tanks</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.11.1.4</div>
+<div class="callout-label">Bases — 3.11.1.4</div>
 
 <span class="hi-exam">The tanks included in this specification are all outdoor tanks that are not surrounded by liners, dikes, or walls capable of holding the tank contents, and that do not have tank overflows and surrounding area drains connected to the liquid radwaste treatment system.</span>
 
@@ -56,7 +57,7 @@ LCO 3.0.3 not applicable.
 
 ---
 
-## 3/4.11.2.5 — Explosive Gas Mixture
+## 3.11.2.5 — Explosive Gas Mixture
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.11.2.5</div>
@@ -91,9 +92,9 @@ The 2% oxygen limit prevents formation of a flammable/explosive gas mixture. Hyd
 *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.11.2.5 Explosive Gas Mixture</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.11.2.5 Explosive Gas Mixture</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.11.2.5</div>
+<div class="callout-label">Bases — 3.11.2.5</div>
 
 <span class="hi-exam">This specification ensures that the concentration of potentially explosive gas mixtures in the waste gas holdup system is maintained below the flammability limits for hydrogen and oxygen. Maintaining the oxygen concentration below the specified values provides assurance that releases of radioactive materials will be controlled in conformance with General Design Criterion 60 of 10 CFR Part 50, Appendix A.</span>
 

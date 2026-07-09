@@ -22,7 +22,7 @@ Environmental monitoring program samples air, water, soil, vegetation, fish, and
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.11 — Radioactive Effluents]]** — Liquid effluent limits, monitoring
+- **[[TS 3.11 — Radioactive Effluents]]** — Liquid effluent limits, monitoring
 
 **Exam & operating coverage:**
 

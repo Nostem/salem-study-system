@@ -82,7 +82,7 @@ Two dropped control rods at ~89% power during load reduction (Event 5). Reactor 
 
 - Related systems: [[RPS/SSPS]], [[Excore NIs]], [[Control Rod Drive]], [[Annunciators]]
 - Related procedures: [[AB.ROD-0001 — Immovable/Misaligned Control Rods]], [[AB.ROD-0003 — Continuous Rod Motion]], [[AB.ROD-0004 — Rod Position Indication Failure]], [[S2.OP-ST.NIS-0002 — Power Distribution QPTR Surveillance]], [[S2.OP-AR.ZZ-0005 — Overhead Annunciators Window E]], [[S2.OP-IO.ZZ-0003 — Hot Standby to Minimum Load]], [[OP-AA-101-111-1003 — Use of Procedures]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.2 — Power Distribution]]
 - Related exam questions: [[2018 Q30]], [[2020 Q19]], [[2022 Q19]], [[2015 Q76]], [[2014 Q77]], [[2012 Q1]], [[2012 Q88]]
 - Related JPMs: [[2018 JPM RO-A3]], [[2022 JPM RO-A3]], [[2015 JPM Sim-a]], [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]]
 - Related scenarios: [[2016 Scenario 3]], [[2019 Scenario 3 — ATWS / Stuck-Open PORV]]

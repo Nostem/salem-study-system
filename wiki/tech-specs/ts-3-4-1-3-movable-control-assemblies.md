@@ -1,8 +1,9 @@
 ---
-title: "TS 3/4.1.3 — Movable Control Assemblies"
+title: "TS 3.1.3 — Movable Control Assemblies"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.1.3 — Movable Control Assemblies
   - movable control assemblies
   - rod insertion limits
   - rod drop time
@@ -14,7 +15,7 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-1.pdf" target="_blank">View TS 3.1 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-1.pdf" target="_blank">View Bases 3.1 PDF</a>
 </div>
 
-# TS 3/4.1.3 — Movable Control Assemblies
+# TS 3.1.3 — Movable Control Assemblies
 
 ## Group Height (Rod Alignment)
 
@@ -50,9 +51,9 @@ All full length rods shall be OPERABLE and positioned within:<br>
 *Amendment No. 311*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3 Movable Control Assemblies (General)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.3 Movable Control Assemblies (General)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.3 General</div>
+<div class="callout-label">Bases — 3.1.3 General</div>
 
 The specifications of this section ensure that: (1) acceptable power distribution limits are maintained, (2) the minimum SHUTDOWN MARGIN is maintained, and (3) the potential effects of rod misalignment on associated accident analyses are limited. OPERABILITY of the control rod position indicators is required to determine control rod positions and thereby ensure compliance with the control rod alignment and insertion limits.
 
@@ -67,9 +68,9 @@ Comparison of the group demand counters to the bank insertion limits with verifi
 </details>
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3.1 Group Height (Rod Alignment)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.3.1 Group Height (Rod Alignment)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.3.1</div>
+<div class="callout-label">Bases — 3.1.3.1</div>
 
 <span class="hi-exam">The ACTION statements which permit limited variation from the basic requirements are accompanied by additional restrictions that ensure the original criteria are met. Misalignment of a rod requires measurement of peaking factors or a restriction in THERMAL POWER — either provides assurance of fuel rod integrity during continued operation.</span> The reactivity worth of a misaligned rod is limited for the remainder of the fuel cycle to prevent exceeding the assumption used in the accident analysis.
 
@@ -132,9 +133,9 @@ Shutdown and control rod position indication (RPI) systems shall be OPERABLE, in
 *Amendment No. 311*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3.2.1 Position Indication Systems</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.3.2.1 Position Indication Systems</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.3.2.1</div>
+<div class="callout-label">Bases — 3.1.3.2.1</div>
 
 <span class="hi-exam">The terms "Shutdown Rod Position Indicator," "Analog Rod Position Indicator," "Control Rod Position Indicator," and "Rod Position Indicator" are all used in these bases and all refer to indication driven by the output of the Analog Rod Position Indication (ARPI) system.</span>
 
@@ -177,9 +178,9 @@ Rod drop time from 230 steps withdrawn to dashpot entry shall be <span class="hi
 **Surveillance:** Measure rod drop time prior to reactor criticality: after each head removal, after maintenance affecting specific rods, and per SFCP.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.3.3 Rod Drop Time</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.3.3 Rod Drop Time</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.3.3</div>
+<div class="callout-label">Bases — 3.1.3.3</div>
 
 <span class="hi-exam">The maximum rod drop time restriction of ≤2.7 seconds is consistent with the assumed rod drop time used in the accident analyses.</span> <span class="hi-exam">Measurement with Tavg >541°F and with all reactor coolant pumps operating ensures that the measured drop times will be representative of insertion times experienced during a reactor trip at operating conditions.</span>
 

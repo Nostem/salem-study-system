@@ -33,6 +33,6 @@ Per page 8, the <span class="hi-exam">100' elevation containment airlock doors a
 ## Connections
 
 - Related systems: [[Refueling]], [[Containment]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]]
 - Related exam questions: [[2016 Q68]], [[2012 Q67]]
 - Related exam: [[2016 NRC Written Exam]], [[2012 NRC Written Exam]]

@@ -222,7 +222,7 @@ test('topic filter keeps common systems simple and moves advanced procedure node
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('Abnormal Procedures');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('Operating, admin, and alarm procedures');
   await page.getByTestId('advanced-topic-filters').locator('summary').click();
-  await expect(page.getByTestId('advanced-topic-filters')).toContainText('TS 3/4.4 — Reactor Coolant System');
+  await expect(page.getByTestId('advanced-topic-filters')).toContainText('TS 3.4 — Reactor Coolant System');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('AB.CW-0001 — Circulating Water Malfunction');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('EOP-TRIP-1 — Reactor Trip or Safety Injection');
   await expect(page.getByTestId('advanced-topic-filters')).toContainText('OP-AA-101-111-1003 — Use of Procedures');

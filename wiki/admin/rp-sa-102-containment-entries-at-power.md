@@ -48,7 +48,7 @@ Containment entry at power for 22 CFCU tag removal requires <span class="hi-exam
 
 - Related systems: [[Containment]], [[CFCUs]]
 - Related procedures: [[SC.SA-ST.ZZ-0001 — Salem Containment Entries in Modes 1 through 4]], [[RP-AA-203 — Exposure Control and Authorization]], [[RP-AA-300 — Radiological Survey Program]]
-- Related tech specs: [[TS 3/4.0 — Applicability]]
+- Related tech specs: [[TS 3.0 — Applicability]]
 - Related exam questions: [[2016 Q72]], [[2015 Q72]], [[2014 Q98]]
 - Related JPMs: [[2018 JPM SRO-A2]], [[2022 JPM SRO-A4]]
 - Related exam: [[2016 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]

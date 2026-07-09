@@ -1,8 +1,9 @@
 ---
-title: "TS 3/4.1.1 — Boration Control"
+title: "TS 3.1.1 — Boration Control"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.1.1 — Boration Control
   - shutdown margin
   - SDM
   - MTC
@@ -14,7 +15,7 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-1.pdf" target="_blank">View TS 3.1 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-1.pdf" target="_blank">View Bases 3.1 PDF</a>
 </div>
 
-# TS 3/4.1.1 — Boration Control
+# TS 3.1.1 — Boration Control
 
 ## Shutdown Margin — Tavg > 200°F
 
@@ -43,9 +44,9 @@ With the SHUTDOWN MARGIN less than <span class="val-trip">1.3% delta k/k</span>,
 *\*See Special Test Exception 3.10.1 | Amendment No. 282*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.1.1 Shutdown Margin (Tavg > 200°F)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.1.1 Shutdown Margin (Tavg > 200°F)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.1.1</div>
+<div class="callout-label">Bases — 3.1.1.1</div>
 
 A sufficient SHUTDOWN MARGIN ensures that: (1) the reactor can be made subcritical from all operating conditions, (2) reactivity transients from postulated accidents are controllable within acceptable limits, and (3) the reactor is maintained sufficiently subcritical to preclude inadvertent criticality in the shutdown condition.
 
@@ -90,9 +91,9 @@ With the SHUTDOWN MARGIN less than <span class="val-trip">1.0% delta k/k</span>,
 *Amendment No. 282*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.1.2 Shutdown Margin (Tavg ≤ 200°F)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.1.2 Shutdown Margin (Tavg ≤ 200°F)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.1.2</div>
+<div class="callout-label">Bases — 3.1.1.2</div>
 
 <span class="hi-exam">With Tavg ≤ 200°F, the reactivity transients resulting from a postulated steam line break cooldown are minimal, and a <span class="hi">1% Δk/k</span> shutdown margin provides adequate protection.</span> The lower SDM requirement reflects the reduced severity of reactivity excursions at cold conditions compared to the EOL condition that governs the 1.3% limit above 200°F.
 
@@ -131,9 +132,9 @@ If the 300 ppm comparison shows MTC more negative than the surveillance limit, r
 *\*With keff ≥ 1.0 | See Special Test Exception 3.10.3 | Amendment No. 197*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.1.3 Moderator Temperature Coefficient</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.1.3 Moderator Temperature Coefficient</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.1.3</div>
+<div class="callout-label">Bases — 3.1.1.3</div>
 
 The limitations on MTC are provided to ensure that the value of this coefficient remains within the limiting condition assumed in the accident and transient analyses. <span class="hi-exam">The MTC values of this specification are applicable to a specific set of plant conditions; accordingly, verification of MTC values at conditions other than those explicitly stated will require extrapolation to those conditions in order to permit an accurate comparison.</span>
 
@@ -169,9 +170,9 @@ With Tavg less than <span class="val-trip">541°F</span>, restore Tavg within <s
 *See Special Test Exception 3.10.3*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.1.1.4 Minimum Temperature for Criticality</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.1.1.4 Minimum Temperature for Criticality</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.1.1.4</div>
+<div class="callout-label">Bases — 3.1.1.4</div>
 
 <span class="hi-exam">The 541°F minimum ensures: (1) MTC is within its analyzed range, (2) protective instrumentation is within normal operating range, (3) P-12 interlock is above its setpoint, (4) pressurizer is capable of being OPERABLE with a steam bubble, and (5) reactor vessel is above its minimum RTNDT temperature.</span>
 

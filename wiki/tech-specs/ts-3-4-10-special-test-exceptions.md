@@ -1,8 +1,9 @@
 ---
-title: "TS 3/4.10 — Special Test Exceptions"
+title: "TS 3.10 — Special Test Exceptions"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.10 — Special Test Exceptions
   - special test exceptions
   - physics tests
   - no flow tests
@@ -12,9 +13,9 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-10.pdf" target="_blank">View TS 3.10 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-10.pdf" target="_blank">View Bases 3.10 PDF</a>
 </div>
 
-# TS 3/4.10 — Special Test Exceptions
+# TS 3.10 — Special Test Exceptions
 
-## 3/4.10.1 — Shutdown Margin
+## 3.10.1 — Shutdown Margin
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.10.1</div>
@@ -40,9 +41,9 @@ The SHUTDOWN MARGIN requirement of Spec 3.1.1.1 may be suspended for measurement
 *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.1 Shutdown Margin</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.10.1 Shutdown Margin</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.10.1</div>
+<div class="callout-label">Bases — 3.10.1</div>
 
 <span class="hi-exam">This special test exception provides that a minimum amount of control rod worth is immediately available for reactivity control when tests are performed for control rod worth measurement. This exception is required to permit the periodic verification of the actual versus predicted core reactivity condition occurring as a result of fuel burnup or fuel cycling operations.</span>
 
@@ -52,7 +53,7 @@ The exception maintains protection by requiring the reactivity equivalent to at 
 
 ---
 
-## 3/4.10.2 — Group Height, Insertion and Power Distribution Limits
+## 3.10.2 — Group Height, Insertion and Power Distribution Limits
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.10.2</div>
@@ -78,9 +79,9 @@ b. Limits of Specs 3.2.2 (FQ) and 3.2.3 (F-delta-H) are maintained
 *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.2 Group Height, Insertion and Power Distribution Limits</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.10.2 Group Height, Insertion and Power Distribution Limits</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.10.2</div>
+<div class="callout-label">Bases — 3.10.2</div>
 
 <span class="hi-exam">This special test exception permits individual control rods to be positioned outside of their normal group heights and insertion limits during PHYSICS TESTS such as those required to: (1) measure control rod worth, and (2) determine the reactor stability index and damping factor under xenon oscillation conditions.</span>
 
@@ -90,7 +91,7 @@ The compensating requirements — power ≤ 85% RTP and maintained FQ/F-delta-H 
 
 ---
 
-## 3/4.10.3 — Physics Tests
+## 3.10.3 — Physics Tests
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.10.3</div>
@@ -125,9 +126,9 @@ The minimum temperature for physics tests is <span class="hi">531°F</span> (TS 
 *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.3 Physics Tests</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.10.3 Physics Tests</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.10.3</div>
+<div class="callout-label">Bases — 3.10.3</div>
 
 <span class="hi-exam">This special test exception permits PHYSICS TESTS to be performed at ≤ 5% of RATED THERMAL POWER with the RCS Tavg slightly lower than normally allowed, so that fundamental nuclear characteristics of the reactor core and related instrumentation can be verified. At times, it is necessary to operate outside normal TS restrictions to accurately measure certain characteristics.</span>
 
@@ -137,7 +138,7 @@ Example: to measure the moderator temperature coefficient (MTC) at BOL, it is ne
 
 ---
 
-## 3/4.10.4 — No Flow Tests
+## 3.10.4 — No Flow Tests
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.10.4</div>
@@ -160,9 +161,9 @@ b. Intermediate and Power Range trip setpoints set ≤ <span class="hi">25% RTP<
 *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.10.4 No Flow Tests</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.10.4 No Flow Tests</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.10.4</div>
+<div class="callout-label">Bases — 3.10.4</div>
 
 <span class="hi-exam">This special test exception permits reactor criticality under no flow conditions and is required to perform certain startup and PHYSICS TESTS while at low THERMAL POWER levels.</span>
 

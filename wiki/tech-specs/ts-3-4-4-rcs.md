@@ -1,8 +1,9 @@
 ---
-title: "TS 3/4.4 — Reactor Coolant System"
+title: "TS 3.4 — Reactor Coolant System"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.4 — Reactor Coolant System
   - RCS tech specs
   - RCS loops TS
   - PORVs tech specs
@@ -15,9 +16,9 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4.pdf" target="_blank">View TS 3.4 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4.pdf" target="_blank">View Bases 3.4 PDF</a>
 </div>
 
-# TS 3/4.4 — Reactor Coolant System
+# TS 3.4 — Reactor Coolant System
 
-## 3/4.4.1 — Reactor Coolant Loops and Coolant Circulation
+## 3.4.1 — Reactor Coolant Loops and Coolant Circulation
 
 ### Startup and Power Operation (3.4.1.1)
 
@@ -114,9 +115,9 @@ Per S2.OP-SO.RC-0001, with RCS Cold Leg temps &le;312&deg;F, <span class="hi-exa
 One RHR loop may be inoperable for up to 2 hours for surveillance testing if the other is OPERABLE and in operation. Four filled RCS loops with ≥2 SGs at ≥5% NR level may substitute for one RHR loop. *(Amendment No. 328)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.1 Reactor Coolant Loops and Coolant Circulation</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.4.1 Reactor Coolant Loops and Coolant Circulation</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.4.1</div>
+<div class="callout-label">Bases — 3.4.1</div>
 
 **Modes 1 and 2:** The plant is designed to operate with <span class="hi-exam">all reactor coolant loops in operation</span> to meet DNB design criteria during all normal operations and anticipated transients. With less than all loops operating, the plant must be in at least Hot Standby within 1 hour.
 
@@ -140,7 +141,7 @@ One RHR loop may be inoperable for up to 2 hours for surveillance testing if the
 
 ---
 
-## 3/4.4.2 & 3/4.4.3 — Safety Valves
+## 3.4.2 & 3.4.3 — Safety Valves
 
 ### Safety Valves — Shutdown (3.4.2)
 
@@ -167,9 +168,9 @@ A minimum of one pressurizer code safety valve shall be OPERABLE with a lift set
 *Amendment No. 300*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.2 & 3/4.4.3 Safety Valves</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.4.2 & 3.4.3 Safety Valves</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.4.2 & 3/4.4.3</div>
+<div class="callout-label">Bases — 3.4.2 & 3.4.3</div>
 
 The pressurizer code safety valves operate to prevent the RCS from being pressurized above its Safety Limit of <span class="hi">2735 psig</span>. <span class="hi-exam">Each safety valve is designed to relieve 420000 lbs/hr of saturated steam at the valve setpoint.</span>
 
@@ -192,7 +193,7 @@ LCO 3.4.3 (PZR Code Safety Valves): in MODES 1-3 <span class="hi-exam">only ONE 
 
 ---
 
-## 3/4.4.4 — Pressurizer
+## 3.4.4 — Pressurizer
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.4</div>
@@ -213,9 +214,9 @@ The pressurizer shall be OPERABLE with:<br>
 *Amendment No. 282*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.4 Pressurizer</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.4.4 Pressurizer</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.4.4</div>
+<div class="callout-label">Bases — 3.4.4</div>
 
 The limit on maximum water volume ensures the parameter is maintained within the normal steady-state envelope of operation assumed in the SAR. <span class="hi-exam">The maximum water volume also ensures that a steam bubble is formed and the RCS is not a hydraulically solid system.</span>
 
@@ -229,7 +230,7 @@ The Surveillance Frequency is controlled under the Surveillance Frequency Contro
 
 ---
 
-## 3/4.4.5 — Relief Valves (PORVs and Block Valves)
+## 3.4.5 — Relief Valves (PORVs and Block Valves)
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.5</div>
@@ -256,9 +257,9 @@ When a PORV is inoperable due to seat leakage, the block valve is closed but pow
 *Amendment No. 177*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.5 Relief Valves (PORVs and Block Valves)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.4.5 Relief Valves (PORVs and Block Valves)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.4.5</div>
+<div class="callout-label">Bases — 3.4.5</div>
 
 PORV and block valve OPERABILITY is determined based on the ability to perform these functions:
 
@@ -297,7 +298,7 @@ A <span class="hi-exam">leaking 2PR2 PZR PORV</span> (seat leakage) is isolated 
 
 ---
 
-## 3/4.4.6 — Steam Generator Tube Integrity
+## 3.4.6 — Steam Generator Tube Integrity
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.6</div>
@@ -309,9 +310,9 @@ SG tube integrity shall be maintained and all tubes satisfying plugging criteria
 **Action:** If tube integrity not maintained, be in Hot Standby within 6 hours and Cold Shutdown within 30 hours. *(Amendment No. 291)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.6 Steam Generator Tube Integrity</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.4.6 Steam Generator Tube Integrity</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.4.6</div>
+<div class="callout-label">Bases — 3.4.6</div>
 
 The LCO requires SG tube integrity be maintained and all tubes satisfying plugging criteria be plugged per the Steam Generator Program. <span class="hi-exam">A SG tube is defined as the entire length of the tube, including the tube wall, between the tube-to-tubesheet weld at the tube inlet and the tube-to-tubesheet weld at the tube outlet. The tube-to-tubesheet weld is not considered part of the tube.</span>
 
@@ -331,7 +332,7 @@ Actions may be entered independently for each SG tube (per Note). If tube integr
 
 ---
 
-## 3/4.4.7 — RCS Leakage
+## 3.4.7 — RCS Leakage
 
 ### Leakage Detection Systems (3.4.7.1)
 
@@ -370,13 +371,13 @@ f. <span class="hi">≤1 gpm</span> from any RCS Pressure Isolation Valve (at 22
 *Amendment No. 304*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.7 RCS Leakage</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.4.7 RCS Leakage</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.4.7</div>
+<div class="callout-label">Bases — 3.4.7</div>
 
-**3/4.4.7.1 Leakage Detection Systems:** The RCS leakage detection systems monitor and detect leakage from the RCPB, consistent with the recommendations of <span class="hi">Regulatory Guide 1.45</span>, "Reactor Coolant Pressure Boundary Leakage Detection Systems" (May 1973).
+**3.4.7.1 Leakage Detection Systems:** The RCS leakage detection systems monitor and detect leakage from the RCPB, consistent with the recommendations of <span class="hi">Regulatory Guide 1.45</span>, "Reactor Coolant Pressure Boundary Leakage Detection Systems" (May 1973).
 
-**3/4.4.7.2 Operational Leakage:**
+**3.4.7.2 Operational Leakage:**
 
 *Unidentified leakage:* Industry experience shows the unidentified portion of RCS leakage can be reduced to a threshold value of <span class="hi-exam">less than 1 gpm, sufficiently low to ensure early detection of additional leakage</span>.
 
@@ -420,7 +421,7 @@ S2.OP-SO.RC-0004 §5.3 Containment Sump leak-rate calculation following an unexp
 
 ---
 
-## 3/4.4.9 — Specific Activity
+## 3.4.9 — Specific Activity
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.9</div>
@@ -442,9 +443,9 @@ b. ≤ <span class="val-alarm">600 μCi/gram</span> DOSE EQUIVALENT XE-133.
 **Note:** SR 4.4.9.1 not required in Mode 4; not required in Mode 3 until 24 hours after Tavg > 500°F.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.9 Specific Activity</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.4.9 Specific Activity</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.4.9</div>
+<div class="callout-label">Bases — 3.4.9</div>
 
 In Modes 1-4, operation within the LCO limits for DOSE EQUIVALENT I-131 and DOSE EQUIVALENT XE-133 is necessary to <span class="hi-exam">limit the potential consequences of a steam line break (SLB) or steam generator tube rupture (SGTR) to within acceptance criteria</span>. Violation of the LCO may result in coolant radioactivity levels that could, in the event of an SLB or SGTR, lead to doses exceeding acceptance criteria.
 
@@ -473,7 +474,7 @@ DEI-131 at 8 μCi/gm (above the 1.0 μCi/gm LCO 3.4.9 limit but below the line o
 
 ---
 
-## 3/4.4.10 — Pressure/Temperature Limits
+## 3.4.10 — Pressure/Temperature Limits
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.4.10.1 — RCS P/T Limits</div>
@@ -517,9 +518,9 @@ b. RCS depressurized with an RCS vent ≥ <span class="hi">3.14 square inches</s
 | Both POPS inoperable | Depressurize and vent through ≥3.14 in² vent | <span class="val-trip">8 hours</span> |
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.4.10 Pressure/Temperature Limits and POPS</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.4.10 Pressure/Temperature Limits and POPS</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.4.10</div>
+<div class="callout-label">Bases — 3.4.10</div>
 
 **P/T Limits (3.4.10.1):** Temperature and pressure changes during heatup and cooldown are limited per ASME Boiler and Pressure Vessel Code, Section XI, Appendix G. Allowable combinations of pressure and temperature for specific rate changes are below and to the right of the PTLR limit lines. Cooldown rate limits between those presented may be obtained by interpolation.
 

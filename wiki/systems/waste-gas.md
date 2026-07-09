@@ -113,13 +113,13 @@ During a 24 GDT release per S2.OP-SO.WG-0011, <span class="hi-exam">2R41 Channel
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.11 — Radioactive Effluents]]** — Gaseous effluent limits, monitoring
+- **[[TS 3.11 — Radioactive Effluents]]** — Gaseous effluent limits, monitoring
 
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q59</div>
-TS LCO 3.11.2.5 prevents an explosive mixture in the Waste Gas Holdup System by maintaining <span class="hi-exam">oxygen concentration less than or equal to 2%</span>. Hydrogen concentration is monitored but is not addressed by Tech Specs. See [[TS 3/4.11 — Radioactive Effluents]].
+TS LCO 3.11.2.5 prevents an explosive mixture in the Waste Gas Holdup System by maintaining <span class="hi-exam">oxygen concentration less than or equal to 2%</span>. Hydrogen concentration is monitored but is not addressed by Tech Specs. See [[TS 3.11 — Radioactive Effluents]].
 </div>
 
 <div class="callout callout-exam">
@@ -146,7 +146,7 @@ Of the Radioactive Liquid Waste System tanks, <span class="hi-exam">ONLY the RCD
 - Related concepts: [[Radiation Monitoring]], [[Containment]]
 - Related systems: [[Control Air]]
 - Related procedures: [[S2.OP-SO.WG-0008 — 21 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0009 — Discharge of 22 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0011 — Discharge of 24 Gas Decay Tank to Plant Vent]], [[S1.OP-SO.WG-0011 — Discharge of 14 Gas Decay Tank]], [[S1.OP-SO.WG-0007 — Transfer of Waste Gas]], [[S1.OP-SO.WG-0005 — VCT Purge to the Plant Vent]], [[S1.OP-SO.WG-0010 — Discharge of 13 Gas Decay Tank to Plant Vent]], [[S2.OP-SO.WG-0006 — Containment Purge to Plant Vent]], [[S2.OP-SO.WG-0003 — Gaseous Waste Disposal System Operation]], [[AB.CA-0001 — Loss of Control Air]]
-- Related tech specs: [[TS 3/4.11 — Radioactive Effluents]], [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.11 — Radioactive Effluents]], [[TS 3.7 — Plant Systems]]
 - Related exam questions: [[2014 Q49]], [[2016 Q93]], [[2016 Q98]], [[2018 Q38]], [[2019 Q35]], [[2020 Q59]], [[2020 Q98]], [[2023 Q90]], [[2022 Q23]], [[2015 Q59]], [[2014 Q82]]
 - Related JPMs: [[2016 JPM SRO-A3]], [[2016 JPM Sim-h]], [[2018 JPM SRO-A4]], [[2023 JPM IP-k]], [[2019 JPM IP-k]], [[2015 JPM IP-k]], [[2014 JPM SRO-A3]], [[2012 JPM SRO-A3]], [[2012 JPM Sim-g]]
 - Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2023 NRC Written Exam]], [[2023 NRC Operating Exam]], [[2019 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Operating Exam]]

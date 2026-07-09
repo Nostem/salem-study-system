@@ -278,7 +278,7 @@ Condensate recovery in EOP-FRHS-1 after loss of all AFW. Both SGFPs tripped due 
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.1.3 (Auxiliary Feed Storage Tank), TS 3.7.13 (FW Isolation Valves)
+- **[[TS 3.7 — Plant Systems]]** — TS 3.7.1.3 (Auxiliary Feed Storage Tank), TS 3.7.13 (FW Isolation Valves)
 
 ## Connections
 

@@ -52,6 +52,6 @@ Before de-tensioning the first Rx Head Stud (entering MODE 6), IOP-7 Attachment 
 ## Connections
 
 - Related systems: [[Refueling]], [[Control Rod Drive]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]]
 - Related exam questions: [[2022 Q94]], [[2020 Q94]], [[2015 Q95]]
 - Related exam: [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]]

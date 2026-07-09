@@ -56,7 +56,7 @@ Waste gas release sequence: the <span class="hi-exam">latch-and-set (step 5.2.11
 ## Connections
 
 - Related systems: [[Waste Gas]]
-- Related tech specs: [[TS 3/4.7 — Plant Systems]]
+- Related tech specs: [[TS 3.7 — Plant Systems]]
 - Related exam questions: [[2014 Q82]]
 - Related JPMs: [[2023 JPM IP-k]], [[2015 JPM IP-k]]
 - Related exam: [[2023 NRC Operating Exam]], [[2015 NRC Operating Exam]], [[2014 NRC Written Exam]]

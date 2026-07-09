@@ -475,24 +475,24 @@ Per AB.CVC-0001 step 3.50, with <span class="hi-exam">no Unit 2 Charging Pumps a
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.1.2 — Boration Systems]]** — Flow paths, charging pumps, borated water sources
-- **[[TS 3/4.1.1 — Boration Control]]** — Shutdown margin (boration requirements)
+- **[[TS 3.1.2 — Boration Systems]]** — Flow paths, charging pumps, borated water sources
+- **[[TS 3.1.1 — Boration Control]]** — Shutdown margin (boration requirements)
 
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q35</div>
-Seal Injection Flow (TS 3.5.4) is set by manual seal injection throttle valves to <span class="hi-exam">6-12 gpm per pump, not to exceed 40 gpm total</span>. The charging pumps are hi-head ECCS: <span class="hi-exam">22 charging pump is required for the B train of ECCS</span> (TS 3.5.2). See [[ECCS]], [[TS 3/4.5 — ECCS]].
+Seal Injection Flow (TS 3.5.4) is set by manual seal injection throttle valves to <span class="hi-exam">6-12 gpm per pump, not to exceed 40 gpm total</span>. The charging pumps are hi-head ECCS: <span class="hi-exam">22 charging pump is required for the B train of ECCS</span> (TS 3.5.2). See [[ECCS]], [[TS 3.5 — ECCS]].
 </div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q66</div>
-BAT operability for borated water sources (TS 3.1.2.6): the <span class="hi-exam">BASTs are normally cross-connected, so the TOTAL volume of both Boric Acid Tanks must exceed the limit</span>. From TS Figure 3.1-2 with RWST 2450 ppm and both BATs at 6650 ppm, the required total intersection is ~93.5%; with 22 BAT at 43%, 21 BAT must be at least 50.5% (the keyed answer 54% includes margin). See [[TS 3/4.1.2 — Boration Systems]].
+BAT operability for borated water sources (TS 3.1.2.6): the <span class="hi-exam">BASTs are normally cross-connected, so the TOTAL volume of both Boric Acid Tanks must exceed the limit</span>. From TS Figure 3.1-2 with RWST 2450 ppm and both BATs at 6650 ppm, the required total intersection is ~93.5%; with 22 BAT at 43%, 21 BAT must be at least 50.5% (the keyed answer 54% includes margin). See [[TS 3.1.2 — Boration Systems]].
 </div>
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q77</div>
-Inoperability of a <span class="hi-exam">single charging pump in Modes 1-3 enters ONLY the ECCS LCO (TS 3.5.2.a)</span>; required action is restore within 72 hours or be in Hot Shutdown (Mode 4) within the next 12 hours (84 hours total). The boration LCOs (3.1.2.2, 3.1.2.4) are entered only upon a SECOND charging pump becoming inoperable. See [[ECCS]], [[TS 3/4.5 — ECCS]].
+Inoperability of a <span class="hi-exam">single charging pump in Modes 1-3 enters ONLY the ECCS LCO (TS 3.5.2.a)</span>; required action is restore within 72 hours or be in Hot Shutdown (Mode 4) within the next 12 hours (84 hours total). The boration LCOs (3.1.2.2, 3.1.2.4) are entered only upon a SECOND charging pump becoming inoperable. See [[ECCS]], [[TS 3.5 — ECCS]].
 </div>
 
 <div class="callout callout-exam">

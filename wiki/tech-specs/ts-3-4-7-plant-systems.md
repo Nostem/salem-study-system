@@ -1,8 +1,9 @@
 ---
-title: "TS 3/4.7 — Plant Systems"
+title: "TS 3.7 — Plant Systems"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.7 — Plant Systems
   - plant systems TS
   - AFW tech specs
   - MSSVs tech specs
@@ -14,9 +15,9 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-7.pdf" target="_blank">View TS 3.7 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-7.pdf" target="_blank">View Bases 3.7 PDF</a>
 </div>
 
-# TS 3/4.7 — Plant Systems
+# TS 3.7 — Plant Systems
 
-## 3/4.7.1.1 — Main Steam Safety Valves
+## 3.7.1.1 — Main Steam Safety Valves
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.1.1</div>
@@ -55,9 +56,9 @@ All main steam line code safety valves (MSSVs) associated with each steam genera
 *Amendment No. 259*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.1.1 Main Steam Safety Valves</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.1.1 Main Steam Safety Valves</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.1.1</div>
+<div class="callout-label">Bases — 3.7.1.1</div>
 
 <span class="hi-exam">The MSSVs ensure secondary system pressure is limited to within <span class="hi">110%</span> of the design pressure of <span class="hi">1085 psig</span> during the most severe anticipated transient.</span> They also protect against overpressurization of the RCS pressure boundary by providing a heat sink for energy removal when the preferred heat sink is unavailable.
 
@@ -82,7 +83,7 @@ MSSVs will FIRST start to open when main steam line pressure exceeds <span class
 
 ---
 
-## 3/4.7.1.2 — Auxiliary Feedwater System
+## 3.7.1.2 — Auxiliary Feedwater System
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.1.2</div>
@@ -106,9 +107,9 @@ b. One turbine-driven pump, powered from an OPERABLE steam supply
 *LCO 3.0.4.b is not applicable (cannot defer entry into the applicable mode).*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.1.2 Auxiliary Feedwater System</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.1.2 Auxiliary Feedwater System</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.1.2</div>
+<div class="callout-label">Bases — 3.7.1.2</div>
 
 <span class="hi-exam">The AFW system ensures the RCS can be cooled down to less than <span class="hi">350°F</span> from normal operating conditions in the event of a total loss of offsite power.</span>
 
@@ -136,7 +137,7 @@ The TS 3.7.1.2 Bases reason for maintaining an OPERABLE AFW System in Modes 1-3 
 
 ---
 
-## 3/4.7.1.3 — Auxiliary Feed Storage Tank
+## 3.7.1.3 — Auxiliary Feed Storage Tank
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.1.3</div>
@@ -156,9 +157,9 @@ The auxiliary feed storage tank (AFST) shall be OPERABLE with a contained volume
 **Backup water sources:** Demineralized water storage tank (≥200000 gallons) or fire protection/domestic water storage tank (≥200000 gallons), with proper valve alignment verified.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.1.3 Auxiliary Feed Storage Tank</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.1.3 Auxiliary Feed Storage Tank</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.1.3</div>
+<div class="callout-label">Bases — 3.7.1.3</div>
 
 <span class="hi-exam">The minimum water volume of <span class="hi">200000 gallons</span> ensures sufficient water is available to maintain the RCS at HOT STANDBY conditions for <span class="hi">8 hours</span> with steam discharge to the atmosphere concurrent with a total loss of offsite power.</span> The contained water volume limit includes an allowance for water not usable because of tank discharge line location or other physical characteristics.
 
@@ -168,7 +169,7 @@ The auxiliary feed storage tank (AFST) shall be OPERABLE with a contained volume
 
 ---
 
-## 3/4.7.1.4 — Secondary Coolant Activity
+## 3.7.1.4 — Secondary Coolant Activity
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.1.4</div>
@@ -182,9 +183,9 @@ The specific activity of the secondary coolant system shall be ≤ <span class="
 **SR:** Per Table 4.7-2 sampling and analysis program (gross activity per SFCP; isotopic analysis when gross activity >10% of limit).
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.1.4 Secondary Coolant Activity</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.1.4 Secondary Coolant Activity</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.1.4</div>
+<div class="callout-label">Bases — 3.7.1.4</div>
 
 <span class="hi-exam">The secondary specific activity limit ensures the resultant offsite radiation dose is limited to a small fraction of 10 CFR Part 100 limits in the event of a steam line rupture.</span> The dose calculation includes the effects of a coincident <span class="hi">1.0 GPM</span> primary-to-secondary tube leak in the steam generator of the affected steam line. These values are consistent with the assumptions used in the accident analyses.
 </div>
@@ -192,7 +193,7 @@ The specific activity of the secondary coolant system shall be ≤ <span class="
 
 ---
 
-## 3/4.7.1.5 — Main Steam Line Isolation Valves
+## 3.7.1.5 — Main Steam Line Isolation Valves
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.1.5</div>
@@ -212,9 +213,9 @@ Each main steam line isolation valve shall be OPERABLE.
 **Key SR:** Verify full closure within <span class="hi">5 seconds</span> per Inservice Testing Program.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.1.5 Main Steam Line Isolation Valves</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.1.5 Main Steam Line Isolation Valves</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.1.5</div>
+<div class="callout-label">Bases — 3.7.1.5</div>
 
 <span class="hi-exam">MSIV OPERABILITY ensures no more than one steam generator will blow down in the event of a steam line rupture.</span> This restriction is required to: 1) minimize the positive reactivity effects of the RCS cooldown associated with the blowdown, and 2) limit the pressure rise within containment if the rupture occurs inside containment.
 
@@ -230,7 +231,7 @@ SR 4.7.1.5 testing is performed prior to opening MSIVs for power operation. Only
 
 ---
 
-## 3/4.7.2 — SG Pressure/Temperature Limitation
+## 3.7.2 — SG Pressure/Temperature Limitation
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.2</div>
@@ -242,9 +243,9 @@ Primary and secondary coolant temperatures in the SGs shall be <span class="hi">
 **Action:** Reduce applicable SG pressure to ≤200 psig within 30 minutes. Perform engineering evaluation before increasing temperature above 200°F.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.2 Steam Generator Pressure/Temperature Limitation</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.2 Steam Generator Pressure/Temperature Limitation</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.2</div>
+<div class="callout-label">Bases — 3.7.2</div>
 
 <span class="hi-exam">The limitation ensures that pressure-induced stresses in the steam generators do not exceed the maximum allowable fracture toughness stress limits.</span> The limits of <span class="hi">70°F</span> and <span class="hi">200 psig</span> are based on average steam generator impact values taken at <span class="hi">10°F</span> and are sufficient to prevent brittle fracture.
 </div>
@@ -252,7 +253,7 @@ Primary and secondary coolant temperatures in the SGs shall be <span class="hi">
 
 ---
 
-## 3/4.7.3 — Component Cooling Water
+## 3.7.3 — Component Cooling Water
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.3</div>
@@ -264,9 +265,9 @@ At least <span class="hi">two independent CCW loops</span> shall be OPERABLE.
 **Action:** With only one loop, restore within <span class="val-alarm">72 hours</span> or Hot Standby in 6 hours + Cold Shutdown in 30 hours.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.3 Component Cooling Water</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.3 Component Cooling Water</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.3</div>
+<div class="callout-label">Bases — 3.7.3</div>
 
 <span class="hi-exam">The CCW loops are independent of each other — each has separate controls and power supplies, and the operation of one does not depend on the other.</span> The system consists of <span class="hi">two safeguards mechanical trains</span> supplied by <span class="hi">three pumps</span> powered from separate vital buses.
 
@@ -287,7 +288,7 @@ Per the 3.7.3 bases, having <span class="hi-exam">2 operable CCW loops requires 
 
 ---
 
-## 3/4.7.4 — Service Water
+## 3.7.4 — Service Water
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.4</div>
@@ -299,9 +300,9 @@ At least <span class="hi">two independent service water loops</span> shall be OP
 **Action:** With only one loop, restore within <span class="val-alarm">72 hours</span> or Hot Standby in 6 hours + Cold Shutdown in 30 hours.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.4 Service Water</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.4 Service Water</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.4</div>
+<div class="callout-label">Bases — 3.7.4</div>
 
 <span class="hi-exam">The service water system ensures sufficient cooling capacity for continued operation of safety-related equipment during normal and accident conditions.</span> The redundant cooling capacity of this system, assuming a single failure, is consistent with the assumptions used in the accident analyses to maintain conditions within acceptable limits.
 
@@ -328,7 +329,7 @@ SW loop OPERABILITY requires <span class="hi-exam">two SW pumps powered from sep
 
 ---
 
-## 3/4.7.5 — Flood Protection
+## 3.7.5 — Flood Protection
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.5</div>
@@ -345,9 +346,9 @@ Flood protection shall be provided for all safety related systems, components an
 | Water level > 11.5 ft MSL | Hot Standby in 6 hours, Cold Shutdown in 30 hours | 6 + 30 hrs |
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.5 Flood Protection</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.5 Flood Protection</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.5</div>
+<div class="callout-label">Bases — 3.7.5</div>
 
 The limitation on flood protection ensures that facility protective actions will be taken and operation will be terminated in the event of flood conditions. <span class="hi-exam">The limit of elevation <span class="hi">10.5 ft</span> Mean Sea Level is the elevation above which facility flood control measures are required to provide protection to safety-related equipment.</span>
 </div>
@@ -355,7 +356,7 @@ The limitation on flood protection ensures that facility protective actions will
 
 ---
 
-## 3/4.7.6 — Control Room Emergency Air Conditioning System (CREACS)
+## 3.7.6 — Control Room Emergency Air Conditioning System (CREACS)
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.6</div>
@@ -381,9 +382,9 @@ c. Control room envelope (CRE) intact
 **Note:** CRE boundary may be opened intermittently under administrative control.
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.6 Control Room Emergency Air Conditioning System</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.6 Control Room Emergency Air Conditioning System</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.7.6</div>
+<div class="callout-label">Bases — 3.7.6</div>
 
 **Background:** The CREACS provides a protected environment from which occupants can control the unit following an uncontrolled release of radioactivity, hazardous chemicals, or smoke. It ensures: 1) ambient air temperature does not exceed the allowable continuous duty rating for equipment and instrumentation, and 2) the control room remains habitable during and following all credible accident conditions.
 
@@ -419,12 +420,12 @@ The CRE boundary may be opened intermittently under administrative controls (doo
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2016 Q68</div>
-TS Bases 3/4.7.6 (and S2.OP-SO.CAV-0001 P&L 3.6.3): when CAV is aligned to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, <span class="hi-exam">Core Alterations and movement of irradiated fuel are NOT permitted</span>. Pressing the Fire Outside Control Room pushbutton during fuel movement requires immediate suspension of fuel movement.
+TS Bases 3.7.6 (and S2.OP-SO.CAV-0001 P&L 3.6.3): when CAV is aligned to <span class="hi-exam">FIRE OUTSIDE CONTROL AREA (Recirculation Mode)</span>, <span class="hi-exam">Core Alterations and movement of irradiated fuel are NOT permitted</span>. Pressing the Fire Outside Control Room pushbutton during fuel movement requires immediate suspension of fuel movement.
 </div>
 
 ---
 
-## 3/4.7.7 — Auxiliary Building Ventilation System
+## 3.7.7 — Auxiliary Building Ventilation System
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.7</div>
@@ -444,9 +445,9 @@ At least two supply fans and three exhaust fans shall be OPERABLE to maintain th
 | At all times: Auxiliary Building not slightly negative | Suspend radioactive gaseous releases via the Auxiliary Building | Immediately |
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.7.7 Auxiliary Building Ventilation System</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.7.7 Auxiliary Building Ventilation System</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Basis — 3/4.7.7</div>
+<div class="callout-label">Basis — 3.7.7</div>
 
 The Auxiliary Building Ventilation System (ABVS) controls Auxiliary Building temperature during normal and emergency operation and contains airborne contamination by maintaining slightly negative pressure during a LOCA. It has two major subsystems:
 
@@ -472,7 +473,7 @@ This action (TS 3.7.7 action e) is the basis for terminating a gas decay tank re
 
 ---
 
-## 3/4.7.8 — Sealed Source Contamination
+## 3.7.8 — Sealed Source Contamination
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.8</div>
@@ -494,7 +495,7 @@ Each sealed source containing radioactive material in excess of 100 μCi beta/ga
 
 ---
 
-## 3/4.7.9 — Snubbers
+## 3.7.9 — Snubbers
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.9</div>
@@ -515,7 +516,7 @@ All snubbers shall be OPERABLE.
 
 ---
 
-## 3/4.7.10 — Chilled Water System — Auxiliary Building Subsystem
+## 3.7.10 — Chilled Water System — Auxiliary Building Subsystem
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.10</div>
@@ -548,7 +549,7 @@ With both required chillers inoperable in Modes 1-4, TS 3.7.10.a Action b.1 requ
 
 ---
 
-## 3/4.7.11 — Fuel Storage Pool Boron Concentration
+## 3.7.11 — Fuel Storage Pool Boron Concentration
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.11</div>
@@ -570,7 +571,7 @@ Fuel storage pool boron concentration shall be ≥ <span class="val-normal">800 
 
 ---
 
-## 3/4.7.12 — Fuel Assembly Storage in the Spent Fuel Pool
+## 3.7.12 — Fuel Assembly Storage in the Spent Fuel Pool
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.12</div>
@@ -592,7 +593,7 @@ The combination of initial enrichment, burnup, and Integral Fuel Burnable Absorb
 
 ---
 
-## 3/4.7.13 — Main Feedwater Isolation Valves, Regulating Valves, Bypass Valves, and SGFP Turbine Steam Stop Valves
+## 3.7.13 — Main Feedwater Isolation Valves, Regulating Valves, Bypass Valves, and SGFP Turbine Steam Stop Valves
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.7.13</div>

@@ -47,7 +47,7 @@ During a downpower (vacuum problem), a single Control Bank D rod (rod 202) <span
 
 - Related systems: [[RPS/SSPS]], [[Control Rod Drive]], [[Stator Cooling Water]]
 - Related procedures: [[AB.ROD-0003 — Continuous Rod Motion]], [[AB.ROD-0002 — Dropped Rod]], [[OP-AA-101-111-1003 — Use of Procedures]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]], [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]], [[TS 3.2 — Power Distribution]]
 - Related exam questions: [[2014 Q1]], [[2020 Q20]], [[2022 Q20]], [[2014 Q77]]
 - Related scenarios: [[2015 Scenario 3]]
 - Related exam: [[2014 NRC Written Exam]], [[2020 NRC Written Exam]], [[2022 NRC Written Exam]], [[2015 NRC Operating Exam]]

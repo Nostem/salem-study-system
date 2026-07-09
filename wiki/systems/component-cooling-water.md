@@ -275,9 +275,9 @@ Normal CCW system alignment: <span class="hi-exam">2 CCW pumps running in MANUAL
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.7 — Plant Systems]]** — TS 3.7.3 requires two independent CCW loops OPERABLE in Modes 1–4 (TS 3/4.7.3)
-- 1 loop inoperable: 72 hours to restore, or Hot Standby in 6 hours + Cold Shutdown in 30 hours (TS 3/4.7.3)
-- An OPERABLE CCW loop consists of one mechanical train and one CCW pump; the system has two safeguards mechanical trains supplied by three pumps powered from separate vital buses (TS 3/4.7.3 Bases)
+- **[[TS 3.7 — Plant Systems]]** — TS 3.7.3 requires two independent CCW loops OPERABLE in Modes 1–4 (TS 3.7.3)
+- 1 loop inoperable: 72 hours to restore, or Hot Standby in 6 hours + Cold Shutdown in 30 hours (TS 3.7.3)
+- An OPERABLE CCW loop consists of one mechanical train and one CCW pump; the system has two safeguards mechanical trains supplied by three pumps powered from separate vital buses (TS 3.7.3 Bases)
 
 **Exam & operating coverage:**
 
@@ -288,7 +288,7 @@ TSAS 3.7.3 requires <span class="hi-exam">2 independent loops of CCW</span>; per
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2014 Q93</div>
-Distractor trap: a single <span class="hi-exam">21 CCW pump trip does NOT make both loops of CCW inoperable</span>, so entering TS 3.0.3 "because all redundant equipment in the CCW system is not available" is wrong. (The tested action was the concurrent tripped EDG fuel oil transfer pump → TS 3.8.1.1.b.2; see [[Diesel Generators]] and [[TS 3/4.8 — Electrical]].)
+Distractor trap: a single <span class="hi-exam">21 CCW pump trip does NOT make both loops of CCW inoperable</span>, so entering TS 3.0.3 "because all redundant equipment in the CCW system is not available" is wrong. (The tested action was the concurrent tripped EDG fuel oil transfer pump → TS 3.8.1.1.b.2; see [[Diesel Generators]] and [[TS 3.8 — Electrical]].)
 </div>
 
 <div class="callout callout-exam">

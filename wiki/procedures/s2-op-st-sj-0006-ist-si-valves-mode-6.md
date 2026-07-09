@@ -27,6 +27,6 @@ Forward-flow test method per Attachments 2/3: close the accumulator outlet valve
 
 - Related systems: [[ECCS]]
 - Related procedures: [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
-- Related tech specs: [[TS 3/4.5 — ECCS]]
+- Related tech specs: [[TS 3.5 — ECCS]]
 - Related JPMs: [[2012 JPM Sim-b]]
 - Related exam: [[2012 NRC Operating Exam]]

@@ -33,7 +33,7 @@ For a single inoperable rod (Shutdown Rod 2SA4 dropped fully at 100% power, EOL)
 ## Connections
 
 - Related procedures: [[AB.ROD-0002 — Dropped Rod]]
-- Related tech specs: [[TS 3/4.1.3 — Movable Control Assemblies]], [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.1.3 — Movable Control Assemblies]], [[TS 3.2 — Power Distribution]]
 - Related exam questions: [[2015 Q71]]
 - Related JPMs: [[2015 JPM SRO-A1.b]]
 - Related exam: [[2015 NRC Operating Exam]], [[2015 NRC Written Exam]]

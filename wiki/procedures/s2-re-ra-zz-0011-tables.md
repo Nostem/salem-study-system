@@ -33,7 +33,7 @@ Tables (S1.RE-RA.ZZ-0011, Table 2) supplies the <span class="hi-exam">100% NI Cu
 ## Connections
 
 - Related systems: [[Excore NIs]]
-- Related tech specs: [[TS 3/4.2 — Power Distribution]]
+- Related tech specs: [[TS 3.2 — Power Distribution]]
 - Related exam questions: [[2016 Q70]]
 - Related JPMs: [[2014 JPM RO-A1-2]], [[2014 JPM SRO-A1-2]]
 - Related exam: [[2016 NRC Written Exam]], [[2014 NRC Operating Exam]]

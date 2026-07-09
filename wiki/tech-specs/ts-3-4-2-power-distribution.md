@@ -1,8 +1,9 @@
 ---
-title: "TS 3/4.2 — Power Distribution"
+title: "TS 3.2 — Power Distribution"
 category: tech-specs
 status: draft
 aliases:
+  - TS 3/4.2 — Power Distribution
   - power distribution limits
   - FQ
   - F delta H
@@ -16,12 +17,12 @@ aliases:
 <strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-2.pdf" target="_blank">View TS 3.2 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-2.pdf" target="_blank">View Bases 3.2 PDF</a>
 </div>
 
-# TS 3/4.2 — Power Distribution Limits
+# TS 3.2 — Power Distribution Limits
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2 General</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.2 General</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.2 General</div>
+<div class="callout-label">Bases — 3.2 General</div>
 
 The specifications of this section provide assurance of fuel integrity during <span class="hi-exam">Condition I (Normal Operation) and Condition II (Incidents of Moderate Frequency) events</span> by:
 
@@ -40,7 +41,7 @@ In addition, <span class="hi-exam">limiting the peak linear power density during
 </div>
 </details>
 
-## 3/4.2.1 — Axial Flux Difference (AFD)
+## 3.2.1 — Axial Flux Difference (AFD)
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.2.1</div>
@@ -89,9 +90,9 @@ LCO 3.2.1 (AFD) action when NOT met at 95% power: reduce power to less than <spa
 </div>
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.1 Axial Flux Difference</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.2.1 Axial Flux Difference</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.2.1</div>
+<div class="callout-label">Bases — 3.2.1</div>
 
 AFD limits assure that the <span class="hi">FQ(Z) upper bound envelope</span> specified in the COLR times the normalized axial peaking factor is not exceeded during either normal operation or xenon redistribution following power changes.
 
@@ -112,7 +113,7 @@ AFD limits assure that the <span class="hi">FQ(Z) upper bound envelope</span> sp
 
 ---
 
-## 3/4.2.2 — Heat Flux Hot Channel Factor FQ(Z)
+## 3.2.2 — Heat Flux Hot Channel Factor FQ(Z)
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.2.2</div>
@@ -145,9 +146,9 @@ Where FQ<sup>RTP</sup> = FQ limit at RTP per COLR, P = fraction of RTP, K(Z) = n
 *(Amendment No. 289)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.2 Heat Flux Hot Channel Factor FQ(Z)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.2.2 Heat Flux Hot Channel Factor FQ(Z)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.2.2</div>
+<div class="callout-label">Bases — 3.2.2</div>
 
 The limits on heat flux hot channel factor and RCS flow rate ensure that: (1) <span class="hi-exam">design limits on peak local power density and minimum DNBR are not exceeded</span>, and (2) <span class="hi-exam">in the event of a LOCA the peak fuel clad temperature will not exceed the <span class="hi">2200°F</span> ECCS acceptance criteria limit</span>.
 
@@ -177,7 +178,7 @@ FQ(Z) is measurable but will normally only be determined periodically as specifi
 
 ---
 
-## 3/4.2.3 — Nuclear Enthalpy Rise Hot Channel Factor F-delta-H
+## 3.2.3 — Nuclear Enthalpy Rise Hot Channel Factor F-delta-H
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.2.3</div>
@@ -207,9 +208,9 @@ Where F<sup>RTP</sup><sub>ΔH</sub> = limit at RTP per COLR, P<sub>FΔH</sub> = 
 *(Amendment No. 282)*
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.3 Nuclear Enthalpy Rise Hot Channel Factor F-delta-H</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.2.3 Nuclear Enthalpy Rise Hot Channel Factor F-delta-H</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.2.3</div>
+<div class="callout-label">Bases — 3.2.3</div>
 
 The limits on nuclear enthalpy hot channel factor ensure that design limits on minimum DNBR are not exceeded. Like FQ, F<sup>N</sup><sub>ΔH</sub> is measurable but normally only determined periodically per SR 4.2.3, subject to the same four periodic surveillance conditions (rod alignment, group sequencing, insertion limits, and AFD limits).
 
@@ -229,7 +230,7 @@ For measurements obtained using PDMS, the appropriate measurement uncertainty is
 
 ---
 
-## 3/4.2.4 — Quadrant Power Tilt Ratio (QPTR)
+## 3.2.4 — Quadrant Power Tilt Ratio (QPTR)
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.2.4</div>
@@ -292,9 +293,9 @@ Manual QPTR surveillance following dropped rod 2D4: calculated QPTR for N42 quad
 </div>
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.4 Quadrant Power Tilt Ratio (QPTR)</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.2.4 Quadrant Power Tilt Ratio (QPTR)</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.2.4</div>
+<div class="callout-label">Bases — 3.2.4</div>
 
 The QPTR limit assures that the radial power distribution satisfies the design values used in the power capability analysis. Radial power distribution measurements are made during startup testing and periodically during power operation.
 
@@ -308,7 +309,7 @@ The QPTR limit assures that the radial power distribution satisfies the design v
 
 ---
 
-## 3/4.2.5 — DNB Parameters
+## 3.2.5 — DNB Parameters
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.2.5</div>
@@ -340,9 +341,9 @@ c. RCS Total Flow Rate
 | 4.2.5.2 | Determine RCS total flow rate by precision heat balance ≥90% RTP, within 24 hrs after steady state | Per SFCP |
 
 <details>
-<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3/4.2.5 DNB Parameters</summary>
+<summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.2.5 DNB Parameters</summary>
 <div class="callout callout-bases">
-<div class="callout-label">Bases — 3/4.2.5</div>
+<div class="callout-label">Bases — 3.2.5</div>
 
 <span class="hi-exam">The limits on DNB related parameters assure that each parameter is maintained within the normal steady-state envelope of operation assumed in the transient and accident analyses.</span> The limits are consistent with the initial FSAR assumptions and have been <span class="hi-exam">analytically demonstrated adequate to maintain a minimum DNBR of the design DNBR value throughout each analyzed transient</span>.
 

@@ -441,9 +441,9 @@ Control Room Evacuation (Unit 1) — locally open reactor trip breakers per S1.O
 
 ## Tech Spec LCOs
 
-- **[[TS 3/4.3 — Instrumentation]]** — Trip setpoints, response times, channel operability
-- **[[TS 3/4.3 — Instrumentation|TS 3/4.3.1]]** — Reactor Trip System Instrumentation
-- **[[TS 3/4.3 — Instrumentation|TS 3/4.3.2]]** — ESF Actuation System Instrumentation
+- **[[TS 3.3 — Instrumentation]]** — Trip setpoints, response times, channel operability
+- **[[TS 3.3 — Instrumentation|TS 3.3.1]]** — Reactor Trip System Instrumentation
+- **[[TS 3.3 — Instrumentation|TS 3.3.2]]** — ESF Actuation System Instrumentation
 
 ## Connections
 

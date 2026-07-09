@@ -76,7 +76,7 @@ Per Precautions and Limitations 2.2: <span class="hi-exam">a Reactor Engineer OR
 ## Connections
 
 - Related systems: [[FHV]], [[Spent Fuel Pool]], [[Control Air]]
-- Related tech specs: [[TS 3/4.9 — Refueling Operations]], [[TS 3/4.7 — Plant Systems]], [[TS 3/4.8 — Electrical]]
+- Related tech specs: [[TS 3.9 — Refueling Operations]], [[TS 3.7 — Plant Systems]], [[TS 3.8 — Electrical]]
 - Related procedures: [[S2.OP-AR.ZZ-0011 — Alarm Response (2CC1)]]
 - Related exam questions: [[2016 Q47]], [[2016 Q80]], [[2016 Q94]], [[2023 Q95]], [[2015 Q49]], [[2015 Q68]], [[2014 Q90]], [[2012 Q95]]
 - Related JPMs: [[2016 JPM SRO-A1-2]], [[2012 JPM SRO-A1-2]]
