@@ -50,6 +50,47 @@ function questionsForYear(year: number): any[] {
   return quizBank.questions.filter((question: any) => question.examYear === year && isPracticeEligible(question));
 }
 
+// Mirror the page's fallback ordering (quiz.astro mulberry32/shuffleWithRng) so a
+// test can pick a seed that deterministically selects a given question first,
+// instead of hardcoding a magic seed that drifts as the bank grows.
+function mulberry32(seed: number): () => number {
+  let a = seed >>> 0;
+  return function () {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+function shuffleWithRng<T>(items: T[], rng: () => number): T[] {
+  const arr = items.slice();
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    const tmp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = tmp;
+  }
+  return arr;
+}
+
+// The default Quick Quiz pool: practice-eligible, all include-* boxes checked
+// except "outdated" (see quiz.astro defaults), no year/topic filter.
+function defaultQuizPool(): any[] {
+  return quizBank.questions.filter((question: any) => isPracticeEligible(question) && question.status !== 'outdated');
+}
+
+// Smallest seed whose first selected default-pool question matches the predicate.
+function seedSelectingFirst(predicate: (question: any) => boolean): number {
+  const pool = defaultQuizPool();
+  for (let seed = 1; seed < 100000; seed++) {
+    const first = shuffleWithRng(pool, mulberry32(seed))[0];
+    if (first && predicate(first)) return seed;
+  }
+  throw new Error('no seed selects a matching question first in the default pool');
+}
+
 function supabaseAuthStorageKey(): string {
   const url = process.env.PUBLIC_SUPABASE_URL || 'https://local-test.supabase.co';
   const projectRef = new URL(url).hostname.split('.')[0];
@@ -381,13 +422,13 @@ test('default saved quiz pool includes draft imported questions and submits them
     });
   });
 
-  // Seed 4 selects a draft imported question first under the default pool. The
-  // backend contract must accept this, because draft imported questions are part
-  // of the intended practice set. (Seed choice is bank-dependent and goes stale
-  // when the pool changes: pick a seed whose first Fisher-Yates question over
-  // the default pool — eligible, outdated excluded — has status 'draft' and
-  // quizEligible false.)
-  await page.goto('quiz/?seed=4');
+  // Pick a seed that puts a draft imported question (quizEligible=false) first in
+  // the default pool. Computed from the current bank instead of hardcoded, so the
+  // test doesn't go stale as ingestion shifts which seed lands on a draft. The
+  // backend contract must accept it, because draft imported questions are part of
+  // the intended practice set.
+  const draftSeed = seedSelectingFirst((question) => question.status === 'draft' && question.quizEligible === false);
+  await page.goto(`quiz/?seed=${draftSeed}`);
   await expect(page.getByLabel('Include draft imported questions')).toBeChecked();
   await page.getByLabel('Question count').fill('1');
   await page.locator('#quiz-mode').selectOption('blind');
