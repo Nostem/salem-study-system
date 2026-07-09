@@ -524,6 +524,12 @@ test('different seeds produce different question orderings for the same filters'
 
   const captureFirstQuestionMeta = async (seed: number): Promise<string> => {
     await page.goto(`quiz/?seed=${seed}`);
+    // The builder reveals and its submit handler binds only after the async
+    // bank fetch completes; without settling first, rapid sequential navigations
+    // across the six seeds race those and either time out on selectOption or
+    // click Start before the handler exists (native submit, no session).
+    await page.waitForLoadState('networkidle');
+    await expect(page.getByTestId('quiz-app')).toBeVisible();
     await page.getByLabel('Exam year').selectOption('2018');
     await page.getByLabel('Question count').fill('1');
     await page.locator('#quiz-mode').selectOption('blind');
