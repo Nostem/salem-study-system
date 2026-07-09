@@ -11,7 +11,7 @@ aliases:
 ---
 
 <div class="ts-source-pdfs">
-<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-7-1.pdf" target="_blank">View TS PDF (Turbine Cycle)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-3.pdf" target="_blank">View TS PDF (CCW)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-4.pdf" target="_blank">View TS PDF (SW)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-7.pdf" target="_blank">View TS PDF (3/4.7.7)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-8.pdf" target="_blank">View TS PDF (3/4.7.8)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-9.pdf" target="_blank">View TS PDF (3/4.7.9)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-10.pdf" target="_blank">View TS PDF (3/4.7.10)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-11.pdf" target="_blank">View TS PDF (3/4.7.11)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-12.pdf" target="_blank">View TS PDF (3/4.7.12)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-7-13.pdf" target="_blank">View TS PDF (3/4.7.13)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-7.pdf" target="_blank">View Bases PDF</a>
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-7.pdf" target="_blank">View TS 3.7 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-7.pdf" target="_blank">View Bases 3.7 PDF</a>
 </div>
 
 # TS 3/4.7 — Plant Systems

@@ -10,7 +10,7 @@ aliases:
 ---
 
 <div class="ts-source-pdfs">
-<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-4-6-1.pdf" target="_blank">View TS PDF (Containment)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-2.pdf" target="_blank">View TS PDF (Spray/Cooling)</a> | <a href="/salem-study-system/ts-pdfs/ts-3-4-6-3.pdf" target="_blank">View TS PDF (Isolation)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-4-6.pdf" target="_blank">View Bases PDF</a>
+<strong>Source PDFs:</strong> <a href="/salem-study-system/ts-pdfs/ts-3-6.pdf" target="_blank">View TS 3.6 PDF (Full Section)</a> | <a href="/salem-study-system/ts-pdfs/bases-3-6.pdf" target="_blank">View Bases 3.6 PDF</a>
 </div>
 
 # TS 3/4.6 — Containment Systems
