@@ -49,6 +49,14 @@ class EdgeFunctionContractArtifactTests(unittest.TestCase):
                 self.assertRegex(source, r"quiz_eligible[\w\W]*true|\.eq\('quiz_eligible',\s*true\)")
                 self.assertRegex(source, r"is_redacted[\w\W]*(?:!==|===|false)|\.eq\('is_redacted',\s*false\)")
 
+    def test_quiz_review_queue_does_not_put_every_progress_id_in_one_request(self):
+        source = (FUNCTIONS / "quiz-review-queue/index.ts").read_text()
+
+        self.assertIn("questions!inner(slug)", source)
+        self.assertIn(".order('question_id'", source)
+        self.assertIn(".range(pageStart, pageStart + pageSize - 1)", source)
+        self.assertNotIn(".in('id', questionIds)", source)
+
     def test_quiz_history_uses_historical_session_boundary_not_current_practice_pool(self):
         source = (FUNCTIONS / "quiz-history/index.ts").read_text()
 

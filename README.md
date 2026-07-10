@@ -97,7 +97,7 @@ Example: selecting the CVCS filter first narrows the pool to questions tagged wi
 
 ### 2. Load learner progress state
 
-When the learner starts a quiz, Quick Quiz calls the `quiz-review-queue` Edge Function and reads the current learner’s `states` map. That state comes from `public.user_question_state` and includes:
+While the authenticated learner reviews the builder, Quick Quiz prefetches the `quiz-review-queue` Edge Function and reuses that in-flight request when Start is clicked. The function reads `public.user_question_state` through a learner-safe joined question query, ordered and paginated in fixed-size pages so accounts with extensive history do not generate oversized UUID-list requests. The returned `states` map includes:
 
 - `attemptsCount`,
 - `correctCount`,
@@ -106,7 +106,7 @@ When the learner starts a quiz, Quick Quiz calls the `quiz-review-queue` Edge Fu
 - `nextReviewAt`,
 - last-attempt timestamps.
 
-If the progress lookup fails or returns no state, Quick Quiz falls back to normal seeded-random selection.
+An account with no progress state uses normal seeded-random selection without a warning. An actual progress-request failure also fails open to seeded-random selection, shows the random-order notice, and remains uncached so the next Start retries personalization.
 
 ### 3. Personalize inside the filtered pool
 
