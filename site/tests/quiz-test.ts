@@ -843,9 +843,9 @@ test('a failed progress fetch shows a random-order notice and the next quiz retr
   let reviewQueueCalls = 0;
   await page.route('**/functions/v1/quiz-review-queue', async (route) => {
     reviewQueueCalls += 1;
-    if (reviewQueueCalls === 1) {
-      // First attempt fails: ordering must fall back to random AND the failure
-      // must NOT be cached, so a later Start retries instead of staying random.
+    if (reviewQueueCalls <= 2) {
+      // Prefetch and the first Start both fail: ordering must fall back to random
+      // and the failure must remain uncached so a later Start retries.
       await route.fulfill({ status: 500, contentType: 'application/json', body: JSON.stringify({ error: 'boom' }) });
     } else {
       await route.fulfill({
@@ -862,6 +862,7 @@ test('a failed progress fetch shows a random-order notice and the next quiz retr
   await setQuizAuth(page);
 
   await page.goto('quiz/?seed=41');
+  await expect.poll(() => reviewQueueCalls).toBe(1);
   await page.getByLabel('Exam year').selectOption('2018');
   await page.getByLabel('Question count').fill('1');
   await page.getByRole('button', { name: /Start quiz/i }).click();
@@ -869,7 +870,7 @@ test('a failed progress fetch shows a random-order notice and the next quiz retr
   await expect(page.getByTestId('quiz-session')).toBeVisible();
   await expect(page.getByTestId('personalization-notice')).toBeVisible();
   await expect(page.getByTestId('personalization-notice')).toContainText(/random order/i);
-  expect(reviewQueueCalls).toBe(1);
+  expect(reviewQueueCalls).toBe(2);
 
   // Rebuild in the same page visit (count=1 shows "Review results" immediately).
   await page.getByRole('button', { name: /Review results/i }).click();
@@ -879,7 +880,31 @@ test('a failed progress fetch shows a random-order notice and the next quiz retr
 
   await expect(page.getByTestId('quiz-session')).toBeVisible();
   // Retry happened (not stuck on the cached failure) and it succeeded, so the notice clears.
-  expect(reviewQueueCalls).toBeGreaterThanOrEqual(2);
+  expect(reviewQueueCalls).toBeGreaterThanOrEqual(3);
+  await expect(page.getByTestId('personalization-notice')).toBeHidden();
+});
+
+test('a progress fetch slower than 1.5 seconds still personalizes the generated quiz', async ({ page }) => {
+  const pool = questionsForYear(2018);
+  const targetUnseen = pool[0];
+  const states = masteredStatesFor(pool.slice(1).map((question) => question.slug));
+  await page.route('**/functions/v1/quiz-review-queue', async (route) => {
+    await new Promise((resolve) => setTimeout(resolve, 1_800));
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ ok: true, dueSlugs: [], allSlugs: Object.keys(states), states }),
+    });
+  });
+  await setQuizAuth(page);
+
+  await page.goto('quiz/?seed=12345');
+  await page.getByLabel('Exam year').selectOption('2018');
+  await page.getByLabel('Question count').fill('1');
+  await page.getByRole('button', { name: /Start quiz/i }).click();
+
+  await expect(page.getByTestId('quiz-session')).toBeVisible();
+  await expect(page.getByTestId('question-meta')).toContainText(`2018 Q${targetUnseen.questionNumber}`);
   await expect(page.getByTestId('personalization-notice')).toBeHidden();
 });
 

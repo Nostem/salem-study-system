@@ -20,30 +20,58 @@ Deno.serve(async (req) => {
   const { error: authError, user } = await requireUser(req, admin);
   if (authError || !user) return authError;
 
-  const { data: states, error: stateError } = await admin
-    .from('user_question_state')
-    .select('question_id, attempts_count, correct_count, incorrect_count, last_attempt_at, last_correct_at, mastery_state, next_review_at, updated_at')
-    .eq('user_id', user.id);
-  if (stateError) return jsonResponse({ error: 'review_state_lookup_failed' }, 500, req);
+  // Join progress to its learner-safe question in fixed-size pages. The old
+  // two-query shape collected every question UUID and sent them through one
+  // `.in(...)` filter; high-progress learners could exceed the gateway's URL
+  // limit before PostgREST ever ran the question lookup.
+  const pageSize = 500;
+  const states: Array<{
+    question_id: string;
+    attempts_count: number;
+    correct_count: number;
+    incorrect_count: number;
+    last_attempt_at: string | null;
+    last_correct_at: string | null;
+    mastery_state: string;
+    next_review_at: string | null;
+    updated_at: string;
+    questions: { slug: string } | Array<{ slug: string }> | null;
+  }> = [];
 
-  const questionIds = [...new Set((states ?? []).map((state) => state.question_id).filter(Boolean))];
-  if (questionIds.length === 0) {
-    return jsonResponse({ ok: true, dueSlugs: [], allSlugs: [], states: {} }, 200, req);
+  for (let pageStart = 0; ; pageStart += pageSize) {
+    const { data: page, error: stateError } = await admin
+      .from('user_question_state')
+      .select(`
+        question_id,
+        attempts_count,
+        correct_count,
+        incorrect_count,
+        last_attempt_at,
+        last_correct_at,
+        mastery_state,
+        next_review_at,
+        updated_at,
+        questions!inner(slug)
+      `)
+      .eq('user_id', user.id)
+      .eq('questions.status', 'active')
+      .eq('questions.quiz_eligible', true)
+      .eq('questions.is_redacted', false)
+      .order('question_id', { ascending: true })
+      .range(pageStart, pageStart + pageSize - 1);
+    if (stateError) return jsonResponse({ error: 'review_state_lookup_failed' }, 500, req);
+
+    const pageRows = (page ?? []) as typeof states;
+    states.push(...pageRows);
+    if (pageRows.length < pageSize) break;
   }
 
-  const { data: questions, error: questionError } = await admin
-    .from('questions')
-    .select('id, slug')
-    .in('id', questionIds)
-    .eq('status', 'active')
-    .eq('quiz_eligible', true)
-    .eq('is_redacted', false);
-  if (questionError) return jsonResponse({ error: 'question_lookup_failed' }, 500, req);
-
-  const slugById = new Map((questions ?? []).map((question) => [question.id, question.slug]));
   const nowMs = Date.now();
-  const rows = (states ?? [])
-    .map((state) => ({ ...state, slug: slugById.get(state.question_id) }))
+  const rows = states
+    .map(({ questions, ...state }) => {
+      const question = Array.isArray(questions) ? questions[0] : questions;
+      return { ...state, slug: question?.slug };
+    })
     .filter((state): state is typeof state & { slug: string } => typeof state.slug === 'string' && state.slug.length > 0);
 
   const dueRows = rows

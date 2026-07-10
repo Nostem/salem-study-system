@@ -290,32 +290,39 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     const filterSummary = document.getElementById('filter-summary');
     const personalizationNotice = document.getElementById('personalization-notice');
     const draftStorageKey = 'salem-study-quiz-draft-v1';
-    const personalizationTimeoutMs = 1500;
     // status: 'unknown' before first load, then 'personalized' (progress loaded and
     // used to prioritize), 'no-history' (loaded, but nothing attempted yet), or
-    // 'unavailable' (fetch failed/timed out — ordering fell back to random).
-    const personalization = { loaded: false, states: null, status: 'unknown' };
+    // 'unavailable' (the request actually failed — ordering fell back to random).
+    // request holds the shared in-flight prefetch so Start never races a duplicate call.
+    const personalization = { loaded: false, states: null, status: 'unknown', request: null };
     const state = { questions: [], index: 0, answers: new Map(), mode: 'feedback', filters: {}, startedAt: Date.now(), progressSaved: false, completionMode: 'completed' };
 
     async function loadPersonalizationStates() {
       if (personalization.loaded) return personalization.states;
-      const timeout = new Promise((resolve) => setTimeout(() => resolve(null), personalizationTimeoutMs));
-      const response = await Promise.race([
-        getQuizReviewQueue().catch(() => null),
-        timeout,
-      ]);
-      if (!response || typeof response !== 'object') {
-        // Timed out or failed. Do NOT cache this as loaded: caching a failure
-        // would leave every later quiz in this page visit stuck on the random
-        // fallback. Leaving it uncached lets the next Start retry the fetch.
-        personalization.status = 'unavailable';
-        return personalization.states;
-      }
-      const states = response.states && typeof response.states === 'object' ? response.states : null;
-      personalization.states = states && Object.keys(states).length > 0 ? states : null;
-      personalization.status = personalization.states ? 'personalized' : 'no-history';
-      personalization.loaded = true;
-      return personalization.states;
+      if (personalization.request) return personalization.request;
+
+      personalization.request = (async () => {
+        try {
+          // Do not impose a 1.5-second client deadline here. Healthy Edge Function
+          // cold starts can exceed it, and Promise.race did not cancel the request.
+          const response = await getQuizReviewQueue();
+          if (!response || typeof response !== 'object') throw new Error('invalid_review_queue_response');
+          const states = response.states && typeof response.states === 'object' ? response.states : null;
+          personalization.states = states && Object.keys(states).length > 0 ? states : null;
+          personalization.status = personalization.states ? 'personalized' : 'no-history';
+          personalization.loaded = true;
+          return personalization.states;
+        } catch {
+          // Fail open for quiz generation, but do not cache the failure. A later
+          // Start retries and can restore personalized ordering without a reload.
+          personalization.status = 'unavailable';
+          return personalization.states;
+        } finally {
+          personalization.request = null;
+        }
+      })();
+
+      return personalization.request;
     }
 
     function updatePersonalizationNotice() {
@@ -864,5 +871,8 @@ const topicCount = (topic: { count?: number }) => typeof topic.count === 'number
     });
     updateSummary();
     showDraftResumeIfAvailable();
+    // Warm the personalized ordering while the learner reviews the builder. Start
+    // reuses this same promise; a real failure remains uncached and is retried.
+    void loadPersonalizationStates();
   </script>
 </StudyLayout>
