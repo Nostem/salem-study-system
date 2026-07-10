@@ -194,9 +194,9 @@ test('search retries once when Pagefind reports a stale WASM pointer', async ({ 
   await expect(page.locator('#search-results')).not.toContainText(/Search failed|WASM Error|No pointer/i);
 });
 
-test('search surfaces a one-click reload when the cache-busted retry still fails', async ({ page }) => {
-  // Both the initial load and the ?retry= reload throw a pointer error, so the
-  // recovery is exhausted and the user is offered a reload instead of dead text.
+test('search surfaces a one-click reload when Pagefind AND the fallback both fail', async ({ page }) => {
+  // Pagefind's retry throws a pointer error and the JSON fallback is also
+  // unreachable, so recovery is exhausted and the user is offered a reload.
   await page.route('**/pagefind-*/pagefind.js**', async (route) => {
     await route.fulfill({
       status: 200,
@@ -209,6 +209,7 @@ test('search surfaces a one-click reload when the cache-busted retry still fails
       `,
     });
   });
+  await page.route('**/search-fallback.json', (route) => route.abort());
 
   await page.goto(BASE + 'systems/reactor-coolant-system/');
   await page.waitForLoadState('networkidle');
@@ -218,6 +219,66 @@ test('search surfaces a one-click reload when the cache-busted retry still fails
 
   await expect(page.locator('#search-results')).toContainText(/cache is stale/i);
   await expect(page.locator('#search-results button', { hasText: 'Reload page' })).toBeVisible();
+});
+
+test('search falls back to the JSON index when Pagefind is unavailable', async ({ page }) => {
+  // Pagefind fails on every load/retry (simulates WASM corrupted/blocked by a proxy).
+  await page.route('**/pagefind-*/pagefind.js**', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/javascript',
+      body: `
+        export async function init() {}
+        export async function search() { throw new Error('Pagefind: WASM Error (No pointer)'); }
+      `,
+    });
+  });
+  // Controlled fallback index so the assertion is deterministic.
+  await page.route('**/search-fallback.json', async (route) => {
+    await route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({
+        entries: [
+          {
+            url: '/salem-study-system/systems/chemical-and-volume-control-system/',
+            title: 'Chemical and Volume Control System',
+            text: 'charging and letdown; boron control via the CVCS makeup system.',
+          },
+          { url: '/salem-study-system/systems/main-steam/', title: 'Main Steam', text: 'steam generators and MSIVs.' },
+        ],
+      }),
+    });
+  });
+
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  await page.locator('#search-trigger').click();
+  await page.locator('#search-input').fill('CVCS');
+
+  await expect(page.locator('#search-results')).toContainText(/Basic search/i);
+  const firstResult = page.locator('#search-results a').first();
+  await expect(firstResult).toContainText('Chemical and Volume Control System');
+  await expect(firstResult).toHaveAttribute('href', /chemical-and-volume-control-system/);
+  await expect(page.locator('#search-results')).not.toContainText('Main Steam');
+});
+
+test('fallback search works against the real built index when Pagefind is blocked', async ({ page }) => {
+  // Block the Pagefind bundle outright (as a proxy/extension would) and use the
+  // REAL /search-fallback.json emitted by the build — end-to-end proof.
+  await page.route('**/pagefind-*/pagefind.js**', (route) => route.abort());
+
+  await page.goto(BASE + 'systems/reactor-coolant-system/');
+  await page.waitForLoadState('networkidle');
+
+  await page.locator('#search-trigger').click();
+  await page.locator('#search-input').fill('reactor coolant');
+
+  await expect(page.locator('#search-results')).toContainText(/Basic search/i);
+  const firstResult = page.locator('#search-results a').first();
+  await expect(firstResult).toBeVisible();
+  await expect(page.locator('#search-results')).toContainText(/reactor|coolant/i);
 });
 
 test('desktop and mobile sidebars use distinct IDs', async ({ page }) => {
