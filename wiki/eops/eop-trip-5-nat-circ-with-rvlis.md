@@ -26,6 +26,11 @@ TRIP-5 natural-circulation rapid cooldown: the initial cooldown/depressurization
 </div>
 
 <div class="callout callout-exam">
+<div class="callout-label">Exam — 2014 Q26</div>
+During a natural-circulation rapid cooldown with RVLIS — administered as "2-EOP-TRIP-6 NATURAL CIRCULATION RAPID COOLDOWN WITH RVLIS" under the old EOP numbering (the with-RVLIS cooldown is now TRIP-5) — the <span class="hi-exam">MINIMUM RVLIS Full Range level was keyed as 74%</span> (a do-loop at Step 10 holds the cooldown until satisfied). <span class="hi">The setpoint was changed from 74% to 70% in the Dec 2015 EOP revision — see the 2016 Q25 callout below; the question is marked OUTDATED.</span> Its significance is to <span class="hi-exam">prevent steam from entering the RCS hot legs</span>: per the Bases Document, steam in the hot legs could reach the top of the SG U-tubes and disrupt the natural circulation flow circuit. <span class="hi-trap">The reason is preventing voids in the hot legs/SG U-tubes — not merely ensuring positive RCS level indication.</span>
+</div>
+
+<div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q85</div>
 TRIP-5 has a Step 1 caution that <span class="hi-exam">TRIP-4 steps 3-17 must be completed prior to entry</span> (adequate SDM/upper-head cooling, SI blocked, initial cooldown/depressurization performed). <em>[Note: the 2015 exam source labels TRIP-5 "Without RVLIS"; this wiki article is titled "With RVLIS" — flagged for reconciliation.]</em> See [[EOP-TRIP-4 — Natural Circulation]].
 </div>
@@ -50,5 +55,5 @@ Maximum allowable RCS cooldown rate with RVLIS available: <span class="hi-exam">
 - Related systems: [[RVLIS]], [[RCS]]
 - Related EOPs: [[EOP-TRIP-4 — Natural Circulation]], [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
 - Related tech specs: [[TS 3.4 — Reactor Coolant System]]
-- Related exam questions: [[2016 Q25]], [[2022 Q84]], [[2020 Q84]], [[2015 Q85]], [[2012 Q23]]
-- Related exam: [[2016 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2012 NRC Written Exam]]
+- Related exam questions: [[2016 Q25]], [[2022 Q84]], [[2020 Q84]], [[2015 Q85]], [[2014 Q26]], [[2012 Q23]]
+- Related exam: [[2016 NRC Written Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2012 NRC Written Exam]]

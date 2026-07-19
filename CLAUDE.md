@@ -344,10 +344,13 @@ Deviating (e.g. `✓ B. (keyed answer).`) yields `isCorrect=[]`, fails validatio
   `grep -rlE "</content>|</invoke>" wiki/` (must be empty).
 
 ## Known Wiki Reconciliations (open)
-- **EOP-TRIP-5 / EOP-TRIP-6 "With/Without RVLIS" article titles appear swapped.** Exam sources
-  label TRIP-6 as "...Rapid Cooldown WITH RVLIS" while the wiki article is titled "...Without RVLIS".
-  Recurs on 2012 Q23, 2014 Q26, 2015 Q85. Until reconciled, link by procedure number to the existing
-  article and add an inline note. Tracked in GitHub issue #92.
+- **EOP-TRIP-5 / EOP-TRIP-6 "With/Without RVLIS" — direction RESOLVED, partial cleanup left.**
+  The wiki article titles are CORRECT per current numbering (TRIP-5 = With RVLIS; confirmed by
+  operator feedback in issue #162 and the 2022 exam labeling). Older exam sources (2012, 2014,
+  2015, 2020) used the pre-renumbering labels (TRIP-6 = With RVLIS). When old-numbering questions
+  surface, sort their callouts/backlinks by CONTENT (with vs. without RVLIS), not by the old
+  procedure number. Done for 2014 Q26 (marked outdated, callout moved to the TRIP-5 article);
+  still to re-sort: the 2015 Q85 and 2012 Q23 callouts on both EOP articles. Tracked in issue #92.
 
 ## Branch & PR Workflow for Exams
 - One branch per exam (`ingest-YYYY-exam`), each stacked on the previous so it carries the latest wiki state.

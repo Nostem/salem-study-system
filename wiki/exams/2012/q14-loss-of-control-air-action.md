@@ -44,6 +44,6 @@ Which of the following identifies an action taken on Salem Unit 2 IAW S2.OP-AB.C
 
 ## Connections
 
-- Related systems: [[Control Air]], [[AFW]]
+- Related systems: [[Control Air]], [[AFW]], [[Waste Liquid]], [[Waste Gas]]
 - Related procedures: [[AB.CA-0001 — Loss of Control Air]]
 - Related exam: [[2012 NRC Written Exam]]

@@ -350,6 +350,11 @@ With S2.OP-IO.ZZ-0010 (SFP Manipulations) in effect, a tubing break causes total
 
 ### TS 3.9.3 — Reactor Subcriticality
 
+<div class="callout callout-important">
+<div class="callout-label">Superseded — no longer in current TS</div>
+The seasonal decay-time requirement below (subcritical 80 hours Oct 15 – May 15 / 168 hours otherwise before moving irradiated fuel in the vessel) is <strong>no longer in the current Salem Tech Specs</strong> — confirmed by operator feedback (GH #158). It reflects the 2011-vintage TS this article was sourced from; the exam callouts below are retained as historical exam coverage (2012 Q98 is marked OUTDATED).
+</div>
+
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">

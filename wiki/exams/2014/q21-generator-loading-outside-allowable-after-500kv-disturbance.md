@@ -2,6 +2,7 @@
 title: "2014 Q21 — Main Generator Loading Outside the Allowable Capability Curve After a 500KV Grid Disturbance"
 category: exams
 status: draft
+reference: yes
 aliases:
   - 2014 Q21
   - 2014-Q21

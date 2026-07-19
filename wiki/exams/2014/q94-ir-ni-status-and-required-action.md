@@ -1,7 +1,7 @@
 ---
-title: "2014 Q94 — IR NI Indication Status and Required Action"
+title: "2014 Q94 — IR NI Indication Status and Required Action [OUTDATED]"
 category: exams
-status: draft
+status: outdated
 aliases:
   - 2014 Q94
   - 2014-Q94
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q94 — IR NI Indication Status and Required Action</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q94 — IR NI Indication Status and Required Action [OUTDATED]</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">G2.1.20 (RO 4.6 / SRO 4.6)</span>
 </div>
 
@@ -35,6 +35,7 @@ Both IR NI's...
 <details>
 <summary style="cursor:pointer;color:#60a5fa;font-size:12px;font-weight:600;padding:8px 0;">▶ Show Answer &amp; Explanation</summary>
 <div style="margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;">
+<div style="padding:8px 12px;background:#451a03;border-left:3px solid #f59e0b;border-radius:0 4px 4px 0;margin-bottom:10px;color:#fbbf24;"><strong>⚠️ Outdated:</strong> This question is premised on the old analog IR NIs indicating in amps (1×10⁻¹¹A scale, compensating voltage). Salem has since replaced both IR NI detectors with the new digital IRNIs, which no longer indicate in amps — the stem and choices no longer reflect the current plant. Valid as administered in 2014 (reader feedback, GH #155/#160).</div>
 <div style="padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;"><strong style="color:#22c55e;">✓ A. Correct.</strong> There is at least a one decade overlap required between the SR and IR NI's when raising power (Step 5.2.33). With the SR indication at 30,000 counts, the decade of overlap should already be present, so the IR NI's should be reading ~1x10-10A. With the Hi Flux Trip at 100,000 counts, there can't be proper overlap. With no other information in the stem to provide inference of any other problems with the NI's EXCEPT that both IR detectors were replaced, the IR NI's should be declared INOPERABLE. With BOTH INOPERABLE, TS 3.0.3 is entered.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ B.</strong> B is incorrect because there is only an action in TSAS 3.3.1.1 for ONE INOPERABLE IR NI; with BOTH INOPERABLE, TS 3.0.3 is entered.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ C.</strong> C is incorrect because under compensation would cause a higher than expected reading, not the low reading observed.</div>

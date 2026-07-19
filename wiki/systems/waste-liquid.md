@@ -48,6 +48,11 @@ Direct release of CVCS Monitor Tank to Circulating Water System: requires <span 
 Liquid Radwaste Release (CVCS Monitor Tank): release path through CC Heat Exchanger and CW system. <span class="hi-exam">Only one circulator is required to be in service to allow a release to continue.</span> The 1R18 radiation monitor does not isolate/close the 1WL51 overboard valve on loss of flow.
 </div>
 
+<div class="callout callout-exam">
+<div class="callout-label">Exam — 2012 Q14</div>
+On a Loss of Control Air (AB.CA-0001), <span class="hi-exam">ALL radwaste releases in progress are terminated</span> — during a gradual depressurization of the Control Air system, a release must not be in progress while the <span class="hi-exam">dilution medium flowrate may be changing</span> (AB.CA-0001 bases, p. 8 of 12).
+</div>
+
 ### Radiation Monitoring & Automatic Isolation
 
 <div class="callout callout-exam">
@@ -135,6 +140,6 @@ Of the Radioactive Liquid Waste System tanks (RCDT, WHUTs, Chemical Drain Tank, 
 
 - Related concepts: [[Radiation Monitoring]], [[CVCS]]
 - Related procedures: [[S1.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S2.OP-SO.WL-0001 — Release of Radioactive Liquid Waste]], [[S1.OP-SO.WL-0002 — Release of Radioactive Liquid Waste (Unit 1 CCHX Path)]], [[S2.OP-SO.WL-0002 — Radioactive Release from 22 CVCS Monitor Tank]], [[S2.IC-CC.RM-0028 — 2R18 Liquid Waste Disposal Process Radiation Monitor]]
-- Related exam questions: [[2016 Q59]], [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]], [[2015 Q86]], [[2014 Q60]], [[2012 Q60]], [[2012 Q61]], [[2012 Q100]]
+- Related exam questions: [[2016 Q59]], [[2018 Q38]], [[2018 Q99]], [[2019 Q43]], [[2020 Q72]], [[2020 Q90]], [[2023 Q61]], [[2023 Q68]], [[2023 Q98]], [[2015 Q86]], [[2014 Q60]], [[2012 Q14]], [[2012 Q60]], [[2012 Q61]], [[2012 Q100]]
 - Related JPMs: [[2016 JPM SRO-A3]], [[2018 JPM IP-k]], [[2020 JPM IP-k]], [[2020 JPM SRO-A4]], [[2022 JPM IP-k]], [[2014 JPM IP-k]], [[2012 JPM SRO-A3]], [[2012 JPM Sim-h]]
-- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Operating Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2019 NRC Written Exam]], [[2020 NRC Written Exam]], [[2020 NRC Operating Exam]], [[2023 NRC Written Exam]], [[2022 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]], [[2014 NRC Operating Exam]], [[2012 NRC Written Exam]], [[2012 NRC Operating Exam]]

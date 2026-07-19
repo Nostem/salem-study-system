@@ -2,6 +2,7 @@
 title: "2012 Q24 — LOCA-5 Minimum SI Flow ECCS Pump Lineup"
 category: exams
 status: draft
+reference: yes
 aliases:
   - 2012 Q24
   - 2012-Q24

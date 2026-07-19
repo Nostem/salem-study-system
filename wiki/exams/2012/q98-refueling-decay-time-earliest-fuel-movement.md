@@ -1,7 +1,7 @@
 ---
-title: "2012 Q98 — Refueling Decay Time Earliest Fuel Movement"
+title: "2012 Q98 — Refueling Decay Time Earliest Fuel Movement [OUTDATED]"
 category: exams
-status: draft
+status: outdated
 aliases:
   - 2012 Q98
   - 2012-Q98
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q98 — Refueling Decay Time Earliest Fuel Movement</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q98 — Refueling Decay Time Earliest Fuel Movement [OUTDATED]</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">G2.3.13 (RO 3.4 / SRO 3.8)</span>
 </div>
 
@@ -30,6 +30,7 @@ If all other requirements are met, which of the following is the EARLIEST time t
 <details>
 <summary style="cursor:pointer;color:#60a5fa;font-size:12px;font-weight:600;padding:8px 0;">▶ Show Answer &amp; Explanation</summary>
 <div style="margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;">
+<div style="padding:8px 12px;background:#451a03;border-left:3px solid #f59e0b;border-radius:0 4px 4px 0;margin-bottom:10px;color:#fbbf24;"><strong>⚠️ Outdated:</strong> This question is based on the old TS 3.9.3 seasonal decay-time requirement (reactor subcritical 80 hours Oct 15 – May 15 / 168 hours otherwise before moving irradiated fuel in the vessel). The current Salem Tech Specs no longer contain this requirement — confirmed by operator feedback (GH #158). Valid as administered in 2012 against the TS of that era (Rev 273).</div>
 <div style="padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;"><strong style="color:#22c55e;">✓ B. Correct.</strong> TSAS 3.9.3.a states that for refueling outages between Oct. 15- May 15th, the reactor shall be subcritical for 80 hours. 80 hours from 2000 on January 21 is 0400 on January 25th. Per Tech Specs Bases, the minimum requirement for Rx subcriticality prior to movement of irradiated fuel assemblies in the Reactor Pressure Vessel ensures sufficient decay time has elapsed to allow the radioactive decay of the short lived fission products. The 80 hour decay time (LAR S08-01) is consistent with the assumptions used in the fuel handling accident analysis. When outside these months, 168 hour decay is required, which is Jan 28th 2000 distracter. The 0400 on Jan 26th is correct time of day but one day late.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ A.</strong> 2000 on January 24th is only 72 hours after the trip; the required subcritical decay time for this period (Oct 15 – May 15) is 80 hours.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ C.</strong> The 0400 on Jan 26th is the correct time of day but one day late (96 hours, exceeding the 80 hour minimum by a day).</div>
