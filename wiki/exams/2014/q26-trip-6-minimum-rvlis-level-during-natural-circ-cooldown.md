@@ -1,7 +1,7 @@
 ---
-title: "2014 Q26 — EOP-TRIP-6 Minimum RVLIS Level During Natural Circulation Cooldown"
+title: "2014 Q26 — EOP-TRIP-6 Minimum RVLIS Level During Natural Circulation Cooldown [OUTDATED]"
 category: exams
-status: draft
+status: outdated
 aliases:
   - 2014 Q26
   - 2014-Q26
@@ -9,7 +9,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q26 — EOP-TRIP-6 Minimum RVLIS Level During Natural Circulation Cooldown</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q26 — EOP-TRIP-6 Minimum RVLIS Level During Natural Circulation Cooldown [OUTDATED]</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">WE09 EA1.03 (RO 3.4 / SRO 3.7)</span>
 </div>
 
@@ -31,6 +31,7 @@ Which choice identifies the MINIMUM RVLIS Full Range level required to be mainta
 <details>
 <summary style="cursor:pointer;color:#60a5fa;font-size:12px;font-weight:600;padding:8px 0;">▶ Show Answer &amp; Explanation</summary>
 <div style="margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;">
+<div style="padding:8px 12px;background:#451a03;border-left:3px solid #f59e0b;border-radius:0 4px 4px 0;margin-bottom:10px;color:#fbbf24;"><strong>⚠️ Outdated:</strong> Administered under the old EOP numbering, in which TRIP-6 was "NATURAL CIRCULATION RAPID COOLDOWN WITH RVLIS" — the with-RVLIS rapid cooldown is now 2-EOP-TRIP-5. The Step 10 minimum RVLIS Full Range setpoint was also changed from 74% to 70% in the Dec 2015 EOP revision. See 2016 Q25 for the exam authors' modernized version of this question (TRIP-5, 70%). (Reader feedback, GH #162.)</div>
 <div style="padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;"><strong style="color:#22c55e;">✓ C. Correct.</strong> 74% is minimum allowed at step 10, and get into a do loop until it is satisfied. The Bases Document states that if steam enters the hot legs, there may be some potential for it to reach the top of the SG U-tubes, thereby disrupting the natural circulation flow circuit. By monitoring RVLIS and limiting the void growth to the top of the hot legs, the potential for introducing voids into the SG U-tubes is minimized.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ A.</strong> The minimum value (74%) is correct, but its significance is to prevent steam from entering the RCS hot legs (and thereby disrupting natural circulation), not merely to ensure positive level indication.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">✗ B.</strong> The minimum RVLIS Full Range level required is 74% (per step 10), not 100%, and the significance is to prevent steam from entering the hot legs.</div>
@@ -43,5 +44,5 @@ Which choice identifies the MINIMUM RVLIS Full Range level required to be mainta
 ## Connections
 
 - Related systems: [[RVLIS]], [[RCS]], [[Steam Generator & Blowdown]]
-- Related EOPs: [[EOP-TRIP-6 — Natural Circulation Cooldown Without RVLIS]]
+- Related EOPs: [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]]
 - Related exam: [[2014 NRC Written Exam]]

@@ -20,11 +20,6 @@ Provides guidance for natural circulation cooldown with steam voids in the vesse
 **Exam & operating coverage:**
 
 <div class="callout callout-exam">
-<div class="callout-label">Exam — 2014 Q26</div>
-During a TRIP-6 natural-circulation rapid cooldown, the <span class="hi-exam">MINIMUM RVLIS Full Range level to be maintained is 74%</span> (a do-loop at Step 10 holds the cooldown until satisfied). Its significance is to <span class="hi-exam">prevent steam from entering the RCS hot legs</span>: per the Bases Document, steam in the hot legs could reach the top of the SG U-tubes and disrupt the natural circulation flow circuit. <span class="hi-trap">The value is 74% (not 100%), and the reason is preventing voids in the hot legs/SG U-tubes — not merely ensuring positive RCS level indication. [Note: the 2014 exam labels TRIP-6 "RAPID COOLDOWN WITH RVLIS"; this article is titled "Without RVLIS" — flagged for reconciliation.]</span>
-</div>
-
-<div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q85</div>
 TRIP-6 has a Step 1 caution that <span class="hi-exam">TRIP-4 steps 3-17 must be completed prior to entry</span>. <em>[Note: the 2015 exam source labels TRIP-6 "With RVLIS"; this wiki article is titled "Without RVLIS" — flagged for reconciliation.]</em> See [[EOP-TRIP-4 — Natural Circulation]].
 </div>
@@ -59,6 +54,6 @@ Step 12 — SI Accumulator Isolation during natural circulation cooldown with RC
 - Related systems: [[RVLIS]], [[RCS]], [[ECCS]], [[Steam Generator & Blowdown]]
 - Related EOPs: [[EOP-TRIP-4 — Natural Circulation]], [[EOP-TRIP-5 — Natural Circulation Cooldown With RVLIS]]
 - Related procedures: [[S2.OP-SO.SJ-0002 — Accumulator Operations]]
-- Related exam questions: [[2018 Q8]], [[2022 Q84]], [[2020 Q84]], [[2015 Q85]], [[2014 Q26]]
+- Related exam questions: [[2018 Q8]], [[2022 Q84]], [[2020 Q84]], [[2015 Q85]]
 - Related JPMs: [[2018 JPM Sim-c]], [[2016 JPM Sim-c]]
-- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]], [[2014 NRC Written Exam]]
+- Related exam: [[2016 NRC Written Exam]], [[2018 NRC Written Exam]], [[2018 NRC Operating Exam]], [[2022 NRC Written Exam]], [[2020 NRC Written Exam]], [[2016 NRC Operating Exam]], [[2015 NRC Written Exam]]

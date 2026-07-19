@@ -544,8 +544,8 @@ questions:
     type: RO
     tier_group: "Tier 2/Group 2"
   - number: 41
-    topic: "RCS leak during heatup at 1850 psig — Low PZR Pressure SI still blocked (<1915 psig/P-11); SI actually occurs on Containment High Pressure (>=4 psig). Answer-key flag: box keyed B, rationale supports A"
-    answer: B
+    topic: "RCS leak during heatup at 1850 psig — Low PZR Pressure SI still blocked (<1915 psig/P-11); SI actually occurs on Containment High Pressure (>=4 psig). Worksheet Answer field reads 'a' (verified from page image, GH #159); earlier 'keyed B' flag was an OCR misread"
+    answer: A
     cognitive_level: "Application"
     source: "New"
     systems:

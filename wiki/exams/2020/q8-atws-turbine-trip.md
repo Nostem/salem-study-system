@@ -1,7 +1,7 @@
 ---
-title: "2020 Q8 — ATWS Turbine Trip (POTENTIALLY OUTDATED)"
+title: "2020 Q8 — ATWS Turbine Trip [OUTDATED]"
 category: exams
-status: verified
+status: outdated
 reference: no
 aliases:
   - 2020 Q8
@@ -12,7 +12,7 @@ aliases:
 
 <div style="background:#111827;border:1px solid #1a2035;border-radius:8px;padding:20px;margin-bottom:24px;">
 <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
-<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q8 — ATWS Turbine Trip</span>
+<span style="color:#60a5fa;font-size:14px;font-weight:600;">Q8 — ATWS Turbine Trip [OUTDATED]</span>
 <span style="font-size:10px;padding:2px 8px;background:#0d1220;color:#6b7280;border-radius:3px;">029 EK3.12 (RO 4.3 / SRO 4.3)</span>
 </div>
 
@@ -41,6 +41,7 @@ In accordance with 2-EOP-TRIP-1, which one of the following is the NEXT required
 <details>
 <summary style="cursor:pointer;color:#60a5fa;font-size:12px;font-weight:600;padding:8px 0;">&#9654; Show Answer & Explanation</summary>
 <div style="margin-top:10px;padding:16px;background:#0a0e17;border:1px solid #1a2035;border-radius:6px;font-size:12px;">
+<div style="padding:8px 12px;background:#451a03;border-left:3px solid #f59e0b;border-radius:0 4px 4px 0;margin-bottom:10px;color:#fbbf24;"><strong>⚠️ Outdated:</strong> The current EOP-TRIP-1 directs INITIATING ROD INSERTION as the next action when the reactor fails to trip — the turbine trip comes later in the sequence. Confirmed by operator feedback (GH #154). The keyed answer (trip the turbine) reflects the TRIP-1 revision in effect when this question was administered in 2020.</div>
 <div style="padding:8px 12px;background:#052e16;border-left:3px solid #22c55e;border-radius:0 4px 4px 0;margin-bottom:10px;color:#c8cdd5;"><strong style="color:#22c55e;">&#10003; A. Correct.</strong> Although the step is included in 2-EOP-TRIP-1 as an immediate action, the bases documents for 2-EOP-FRSM-1 states that; "The turbine is tripped to prevent an uncontrolled cooldown of the RCS due to steam flow that the turbine would require. For an ATWS event where a loss of normal feedwater has occurred, analyses have shown that a turbine trip is necessary (within 30 seconds) to maintain SG inventory." The first action in TRIP-1 if the reactor trip is not confirmed is to trip the turbine.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; B.</strong> Plausible because the first step of 2-EOP-FRSM-1 is to initiate auxiliary feedwater and the candidate may believe it is first in TRIP-1 as well. The second part of the answer regarding the bases is correct. Incorrect the turbine is tripped in TRIP-1 prior to transition to FRSM-1 for an ATWS condition.</div>
 <div style="padding:8px 12px;border-left:3px solid #f87171;border-radius:0 4px 4px 0;margin-bottom:6px;color:#9ca3af;"><strong style="color:#f87171;">&#10007; C.</strong> Plausible because the initiation of rod insertion is a step in TRIP-1 prior to transitioning to FRSM-1. Incorrect as the step is after tripping the turbine. The second part of the answer regarding the bases is correct.</div>

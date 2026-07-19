@@ -172,7 +172,7 @@ CFCU SW flow via 2SW223: mechanical stop limits valve travel to <span class="hi-
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q90</div>
-Per SO.SW-5 Attachment 2: <span class="hi-exam">in Modes 1-3, isolating CFCU #23 from either SW supply header (closing manual cross-connect 21SW52 or 22SW52) makes that CFCU inoperable — TS 3.6.2.3 action</span>. With 21 CFCU also C/T, two CFCUs (21 and 23 ONLY; not 22) are inoperable; <span class="hi-exam">BOTH must be restored within 7 days of the FIRST CFCU being declared inoperable</span>. See [[Service Water]], [[TS 3.6 — Containment]].
+Per SO.SW-5 Attachment 2: <span class="hi-exam">in Modes 1-3, isolating CFCU #23 from either SW supply header (closing manual cross-connect 21SW52 or 22SW52) makes that CFCU inoperable — TS 3.6.2.3 action</span>. With 21 CFCU also C/T, two CFCUs (21 and 23 ONLY; not 22) are inoperable; <span class="hi-exam">BOTH must be restored within 7 days of the FIRST CFCU being declared inoperable</span>. <span class="hi-trap">Outdated: current TS 3.6.2.3 Action a (Amendment 302) allows 14 days, not 7 — question marked OUTDATED (GH #140).</span> See [[Service Water]], [[TS 3.6 — Containment]].
 </div>
 
 <div class="callout callout-exam">
@@ -216,9 +216,9 @@ Factors affecting CFCU heat removal and containment temperature:<br>
 
 ## Tech Spec LCOs
 
-- **[[TS 3.6 — Containment]]** — TS 3.6.2.3 requires at least 3 CFCUs OPERABLE
-- 1 inoperable (of required 3): 7 days to restore
-- 2 inoperable: 72 hours to restore
+- **[[TS 3.6 — Containment]]** — TS 3.6.2.3 requires five containment cooling fans OPERABLE (Amendment 302)
+- 1 or 2 inoperable: 14 days to restore
+- 3 or more inoperable: restore at least three within 1 hour; remaining within 14 days of initial loss
 
 **Exam & operating coverage:**
 

@@ -275,12 +275,19 @@ The volume and concentration limits (2568–4000 gal of 30–32% NaOH by weight)
 
 <div class="callout callout-important">
 <div class="callout-label">LCO 3.6.2.3</div>
-At least <span class="hi">three containment fan coil units</span> shall be OPERABLE.
+<span class="hi">Five containment cooling fans</span> shall be OPERABLE. (Amendment 302)
 </div>
 
 **Applicability:** Modes 1, 2, 3, and 4
 
-**Action:** With one fan cooler inoperable, restore within <span class="val-alarm">7 days</span>. With two inoperable, restore one within <span class="val-alarm">72 hours</span>. Otherwise Hot Standby in 6 hours and Cold Shutdown in 30 hours.
+**Action:**
+- a. With one or two of the required containment cooling fans inoperable, restore the inoperable cooling fan(s) to OPERABLE status within <span class="val-alarm">14 days</span> or be in at least Hot Standby within the next 6 hours and in Cold Shutdown within the following 30 hours.
+- b. With three or more of the required containment cooling fans inoperable, restore at least three cooling fans to OPERABLE status within <span class="val-alarm">1 hour</span> or be in at least Hot Standby within the next 6 hours and in Cold Shutdown within the following 30 hours. Restore the remaining inoperable cooling fans to OPERABLE status within <span class="val-alarm">14 days of initial loss</span> or be in at least Hot Standby within the next 6 hours and in Cold Shutdown within the following 30 hours.
+
+<div class="callout callout-important">
+<div class="callout-label">Superseded values</div>
+Earlier revisions of this TS (2011-vintage source; era of 2015 Q90) required restoration within <strong>7 days</strong> with one/two CFCUs inoperable. The completion time is <strong>14 days</strong> in the current TS (Amendment 302) — confirmed against the linked TS PDF (GH #140).
+</div>
 
 <details>
 <summary style="cursor:pointer;color:#a78bfa;font-size:12px;font-weight:600;padding:8px 0;">▶ Bases — 3.6.2.3 Containment Fan Coolers</summary>
@@ -309,7 +316,7 @@ At least <span class="hi">three containment fan coil units</span> shall be OPERA
 
 <div class="callout callout-exam">
 <div class="callout-label">Exam — 2015 Q90</div>
-<span class="hi-exam">TS 3.6.2.3 (CFCUs): with two CFCUs inoperable, BOTH must be restored within 7 days of the FIRST CFCU being declared inoperable</span> (not from when the second became inoperable), or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours. See [[CFCUs]], [[Service Water]].
+<span class="hi-exam">TS 3.6.2.3 (CFCUs): with two CFCUs inoperable, BOTH must be restored within 7 days of the FIRST CFCU being declared inoperable</span> (not from when the second became inoperable), or be in Hot Standby within 6 hours and Cold Shutdown within 30 hours. <span class="hi-trap">Outdated: the current TS 3.6.2.3 Action a (Amendment 302) allows 14 days, not 7 — the question is marked OUTDATED (GH #140).</span> See [[CFCUs]], [[Service Water]].
 </div>
 
 ---
