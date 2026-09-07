@@ -335,6 +335,9 @@ class WorkflowGateTests(unittest.TestCase):
     def test_pr_ci_has_server_tools_and_no_production_secrets(self):
         config = workflow("db-gate-tests.yml")
         self.assertIn("pull_request", config["on"])
+        for event in ("pull_request", "push"):
+            with self.subTest(event=event):
+                self.assertIn("supabase/migrations/**.sql", config["on"][event]["paths"])
         serialized = json.dumps(config)
         self.assertNotIn("secrets.", serialized)
         self.assertIn("PG_BIN", serialized)

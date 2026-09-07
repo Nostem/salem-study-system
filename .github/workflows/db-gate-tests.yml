@@ -5,12 +5,14 @@ on:
     paths:
       - "scripts/verify_db_deploy.sql"
       - "tests/test_db_deploy_verification.py"
+      - "supabase/migrations/**.sql"
       - ".github/workflows/db-*.yml"
   push:
     branches: [main]
     paths:
       - "scripts/verify_db_deploy.sql"
       - "tests/test_db_deploy_verification.py"
+      - "supabase/migrations/**.sql"
       - ".github/workflows/db-*.yml"
   workflow_dispatch:
 
