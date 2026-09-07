@@ -79,3 +79,9 @@ jobs:
             psql "${SUPABASE_DB_URL}" -v ON_ERROR_STOP=1 -X -f "$file"
           done < /tmp/migrations.txt
           echo "Done."
+
+      - name: Verify database deployment after migrations
+        run: |
+          set -euo pipefail
+          psql "${SUPABASE_DB_URL}" -X -v ON_ERROR_STOP=1 \
+            -v check_snapshots=false -f scripts/verify_db_deploy.sql

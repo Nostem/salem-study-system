@@ -1,0 +1,37 @@
+name: DB Verification Gate Tests
+
+on:
+  pull_request:
+    paths:
+      - "scripts/verify_db_deploy.sql"
+      - "tests/test_db_deploy_verification.py"
+      - ".github/workflows/db-*.yml"
+  push:
+    branches: [main]
+    paths:
+      - "scripts/verify_db_deploy.sql"
+      - "tests/test_db_deploy_verification.py"
+      - ".github/workflows/db-*.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  isolated-postgres:
+    runs-on: ubuntu-latest
+    env:
+      DB_GATE_INTEGRATION: "1"
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.14"
+      - name: Install PostgreSQL server tools and test dependency
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y postgresql postgresql-client libpq-dev
+          python -m pip install PyYAML
+          printf 'PG_BIN=%s\n' "$(pg_config --bindir)" >> "$GITHUB_ENV"
+      - name: Run isolated regression tests (no deployed database or secrets)
+        run: python -m unittest discover -s tests -p test_db_deploy_verification.py -v
