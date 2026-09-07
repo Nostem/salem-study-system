@@ -513,10 +513,18 @@ not a migration-history ledger; migrations must remain re-run-safe. After apply,
 This read-only gate does not roll back migrations that have already committed.
 
 The shared gate uses a read-only transaction, a 15-second statement/idle timeout,
-and a 5-second lock timeout. It requires the exact
+and a 5-second lock timeout. Both live verification steps also set
+`PGCONNECT_TIMEOUT=10` for connection setup and `timeout-minutes: 2` for an overall
+step bound; these limits do not apply to the migration-application step. It requires the exact
 `public.replace_quiz_session_writes(uuid, uuid, jsonb, jsonb, jsonb) returns void`
-function, `public.auth_rate_limit`, all three named valid indexes on their expected
+function, `public.auth_rate_limit`, all three named valid B-tree indexes on their expected
 public tables, and a validated `system_reviews.user_id` FK to `public.profiles.id`.
+Index checks require the migration-defined uniqueness, ordered key columns, sort/null
+ordering, and partial predicates: notably, the attempts index must be UNIQUE on
+`(quiz_session_id, question_id) WHERE quiz_session_id IS NOT NULL`. Predicate checks
+normalize catalog-deparser whitespace/parentheses, not arbitrary logically equivalent SQL.
+An existing same-named but wrong-definition index fails; re-running `CREATE INDEX
+IF NOT EXISTS` does not repair it.
 It does not invoke the write RPC or modify learner data.
 
 `.github/workflows/db-verify.yml` is a **manual, standalone** read-only check using
@@ -545,9 +553,10 @@ Typical safe sequence for schema/function changes:
 Authorized local read-only equivalent (load ignored credentials without printing):
 
 ```bash
-psql "$SUPABASE_DB_URL" -X -v ON_ERROR_STOP=1 \
+PGCONNECT_TIMEOUT=10 psql "$SUPABASE_DB_URL" -X -v ON_ERROR_STOP=1 \
   -v check_snapshots=false -f scripts/verify_db_deploy.sql
 # Set check_snapshots=true only when the optional stored sample is required.
+# The two-minute overall step bound is enforced by Actions, not this local command.
 ```
 
 PR-safe regression tests use synthetic fixtures in a temporary private PostgreSQL

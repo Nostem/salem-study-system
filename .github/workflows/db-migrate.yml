@@ -81,6 +81,9 @@ jobs:
           echo "Done."
 
       - name: Verify database deployment after migrations
+        timeout-minutes: 2
+        env:
+          PGCONNECT_TIMEOUT: "10"
         run: |
           set -euo pipefail
           psql "${SUPABASE_DB_URL}" -X -v ON_ERROR_STOP=1 \

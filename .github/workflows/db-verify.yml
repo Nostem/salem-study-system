@@ -28,7 +28,9 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y postgresql-client
 
       - name: Verify database deployment
+        timeout-minutes: 2
         env:
+          PGCONNECT_TIMEOUT: "10"
           CHECK_SNAPSHOTS: ${{ inputs.check_snapshots || false }}
         run: |
           set -euo pipefail

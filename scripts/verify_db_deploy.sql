@@ -31,20 +31,41 @@ BEGIN
   END IF;
 
   FOR expected IN SELECT * FROM (VALUES
-    ('auth_rate_limit_attempted_at_idx', 'auth_rate_limit'),
-    ('question_attempts_session_question_idx', 'question_attempts'),
-    ('quiz_sessions_user_completed_idx', 'quiz_sessions')
-  ) AS required(index_name, table_name)
+    ('auth_rate_limit_attempted_at_idx', 'auth_rate_limit', false,
+      ARRAY['attempted_at'], ARRAY[0]::smallint[], NULL::text),
+    ('question_attempts_session_question_idx', 'question_attempts', true,
+      ARRAY['quiz_session_id', 'question_id'], ARRAY[0, 0]::smallint[], 'quiz_session_id'),
+    ('quiz_sessions_user_completed_idx', 'quiz_sessions', false,
+      ARRAY['user_id', 'completed_at'], ARRAY[0, 3]::smallint[], 'completed_at')
+  ) AS required(index_name, table_name, is_unique, key_columns, key_options, not_null_column)
   LOOP
     IF NOT EXISTS (
       SELECT 1 FROM pg_index i
       JOIN pg_class t ON t.oid = i.indrelid
+      JOIN pg_class idx ON idx.oid = i.indexrelid
+      JOIN pg_am am ON am.oid = idx.relam
       WHERE i.indexrelid = to_regclass('public.' || expected.index_name)
         AND i.indrelid = to_regclass('public.' || expected.table_name)
         AND t.relkind IN ('r', 'p')
         AND i.indisvalid AND i.indisready AND i.indislive
+        AND am.amname = 'btree' AND i.indisunique = expected.is_unique
+        AND i.indexprs IS NULL
+        AND i.indnkeyatts = cardinality(expected.key_columns)
+        AND i.indnatts = i.indnkeyatts
+        AND ARRAY(
+          SELECT a.attname::text FROM unnest(i.indkey) WITH ORDINALITY AS k(attnum, position)
+          JOIN pg_attribute a ON a.attrelid = i.indrelid AND a.attnum = k.attnum
+          WHERE NOT a.attisdropped ORDER BY k.position
+        ) = expected.key_columns
+        -- B-tree indoption bits: 0 = ASC NULLS LAST; 3 = DESC NULLS FIRST.
+        AND ARRAY(SELECT unnest(i.indoption)) = expected.key_options
+        -- These migrations use only single-column IS NOT NULL predicates (or none).
+        -- Deparse the catalog expression, ignoring whitespace/parenthesis formatting;
+        -- fail closed on other expressions instead of guessing logical equivalence.
+        AND regexp_replace(pg_get_expr(i.indpred, i.indrelid), '[[:space:]()]', '', 'g')
+          IS NOT DISTINCT FROM expected.not_null_column || 'ISNOTNULL'
     ) THEN
-      RAISE EXCEPTION 'db_gate: missing, invalid or misplaced index %', expected.index_name;
+      RAISE EXCEPTION 'db_gate: missing, invalid, misplaced or wrong-definition index %', expected.index_name;
     END IF;
   END LOOP;
 

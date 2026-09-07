@@ -2,6 +2,7 @@
 import json
 import os
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import tempfile
@@ -34,7 +35,8 @@ CREATE TABLE public.quiz_session_questions (
     id integer GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
     created_at timestamptz NOT NULL, question_snapshot jsonb);
 CREATE INDEX auth_rate_limit_attempted_at_idx ON public.auth_rate_limit(attempted_at);
-CREATE INDEX question_attempts_session_question_idx ON public.question_attempts(quiz_session_id, question_id);
+CREATE UNIQUE INDEX question_attempts_session_question_idx ON public.question_attempts(quiz_session_id, question_id)
+    WHERE quiz_session_id IS NOT NULL;
 CREATE INDEX quiz_sessions_user_completed_idx ON public.quiz_sessions(user_id, completed_at DESC)
     WHERE completed_at IS NOT NULL;
 CREATE FUNCTION public.replace_quiz_session_writes(uuid,uuid,jsonb,jsonb,jsonb)
@@ -104,7 +106,7 @@ class DatabaseGateTests(unittest.TestCase):
     def setUp(self):
         self.sql(FIXTURE)
 
-    def gate(self, snapshots=False):
+    def gate(self, snapshots: object = False):
         return subprocess.run(self.client + ["-v", "check_snapshots=" + str(snapshots).lower(),
                                              "-f", str(GATE)],
                               env=self.env, text=True, capture_output=True, timeout=40)
@@ -160,6 +162,77 @@ class DatabaseGateTests(unittest.TestCase):
                     self.sql(FIXTURE + mutation)
                     self.assertNotEqual(self.gate().returncode, 0)
 
+    def test_actual_migration_indexes_pass(self):
+        migrations = {
+            "auth_rate_limit_attempted_at_idx": "20260703_atomic_quiz_submit.sql",
+            "question_attempts_session_question_idx": "20260610_auth_rate_limit_and_consistency.sql",
+            "quiz_sessions_user_completed_idx": "20260610_quiz_history_index.sql",
+        }
+        for name, filename in migrations.items():
+            sql = (ROOT / "supabase/migrations" / filename).read_text()
+            # Execute only the real index statement on synthetic tables, not the migration.
+            statements = re.findall(
+                r"create\s+(?:unique\s+)?index\s+if\s+not\s+exists\s+" + re.escape(name) + r"\s+[^;]+;",
+                sql, re.IGNORECASE,
+            )
+            self.assertEqual(len(statements), 1)
+            self.sql("DROP INDEX public." + name + ";" + statements[0])
+        result = self.gate()
+        self.assertEqual(result.returncode, 0, result.stderr)
+
+    def test_each_index_wrong_semantics_fails(self):
+        cases = {
+            "auth_rate_limit_attempted_at_idx": [
+                "CREATE UNIQUE INDEX {name} ON public.auth_rate_limit(attempted_at)",
+                "CREATE INDEX {name} ON public.auth_rate_limit(attempted_at DESC)",
+                "CREATE INDEX {name} ON public.auth_rate_limit(attempted_at) WHERE attempted_at IS NOT NULL",
+                "CREATE INDEX {name} ON public.auth_rate_limit USING hash(attempted_at)",
+            ],
+            "question_attempts_session_question_idx": [
+                "CREATE INDEX {name} ON public.question_attempts(quiz_session_id, question_id) WHERE quiz_session_id IS NOT NULL",
+                "CREATE UNIQUE INDEX {name} ON public.question_attempts(question_id, quiz_session_id) WHERE quiz_session_id IS NOT NULL",
+                "CREATE UNIQUE INDEX {name} ON public.question_attempts(quiz_session_id) INCLUDE (question_id) WHERE quiz_session_id IS NOT NULL",
+                "CREATE UNIQUE INDEX {name} ON public.question_attempts(quiz_session_id, question_id) WHERE quiz_session_id IS NULL",
+                "CREATE UNIQUE INDEX {name} ON public.question_attempts(quiz_session_id, question_id) WHERE question_id IS NOT NULL",
+                "CREATE UNIQUE INDEX {name} ON public.question_attempts(quiz_session_id, question_id) WHERE quiz_session_id IS NOT NULL AND question_id IS NULL",
+                "CREATE UNIQUE INDEX {name} ON public.question_attempts(quiz_session_id, question_id)",
+            ],
+            "quiz_sessions_user_completed_idx": [
+                "CREATE INDEX {name} ON public.quiz_sessions(completed_at DESC, user_id) WHERE completed_at IS NOT NULL",
+                "CREATE INDEX {name} ON public.quiz_sessions(user_id, completed_at) WHERE completed_at IS NOT NULL",
+                "CREATE INDEX {name} ON public.quiz_sessions(user_id, completed_at DESC)",
+                "CREATE INDEX {name} ON public.quiz_sessions(user_id, completed_at DESC) WHERE completed_at IS NULL",
+            ],
+        }
+        for name, replacements in cases.items():
+            for replacement in replacements:
+                with self.subTest(index=name, replacement=replacement):
+                    self.sql(FIXTURE + "DROP INDEX public." + name + ";" + replacement.format(name=name) + ";")
+                    result = self.gate()
+                    self.assertNotEqual(result.returncode, 0, result.stdout + result.stderr)
+                    self.assertIn(name, result.stderr)
+                    self.assertNotIn("schema_gate=passed", result.stdout + result.stderr)
+
+    def test_empty_or_malformed_snapshot_option_fails(self):
+        for value in ("", "not-a-boolean"):
+            with self.subTest(value=value):
+                result = self.gate(snapshots=value)
+                self.assertNotEqual(result.returncode, 0)
+                self.assertIn("invalid input syntax for type boolean", result.stderr)
+                self.assertNotIn("snapshot_gate=skipped", result.stdout + result.stderr)
+
+    def test_mixed_latest_five_sample_fails_without_leaking(self):
+        valid = {"version": 2, "choices": [], "topicSlugs": [], "private": "LEARNER_MARKER"}
+        # The older malformed row is excluded; exactly one of the latest five is invalid.
+        self.insert_snapshot({**valid, "version": 1})
+        for age in range(1, 6):
+            self.insert_snapshot({**valid, "version": 1 if age == 3 else 2}, age)
+        result = self.gate(snapshots=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("snapshot_sample_count=5 invalid_count=1", result.stdout + result.stderr)
+        self.assertNotIn("LEARNER_MARKER", result.stdout + result.stderr)
+        self.assertNotIn("2000-01-01", result.stdout + result.stderr)
+
     def insert_snapshot(self, snapshot, age=0):
         value = "NULL" if snapshot is None else "'" + json.dumps(snapshot).replace("'", "''") + "'::jsonb"
         self.sql("INSERT INTO public.quiz_session_questions(created_at,question_snapshot) VALUES "
@@ -209,6 +282,24 @@ class DatabaseGateTests(unittest.TestCase):
 
 
 class WorkflowGateTests(unittest.TestCase):
+    def test_live_verification_timeouts_are_step_scoped(self):
+        for filename, job_name in (("db-verify.yml", "verify"), ("db-migrate.yml", "apply-migration")):
+            with self.subTest(workflow=filename):
+                job = workflow(filename)["jobs"][job_name]
+                self.assertNotIn("timeout-minutes", job)
+                self.assertNotIn("PGCONNECT_TIMEOUT", job.get("env", {}))
+                gate = next(step for step in job["steps"]
+                            if "scripts/verify_db_deploy.sql" in step.get("run", ""))
+                # Keep separate subtests so RED proves both missing limits in both workflows.
+                with self.subTest(limit="step"):
+                    self.assertEqual(gate.get("timeout-minutes"), "2")
+                with self.subTest(limit="connection"):
+                    self.assertEqual(gate.get("env", {}).get("PGCONNECT_TIMEOUT"), "10")
+                for step in job["steps"]:
+                    if step is not gate:
+                        self.assertNotIn("PGCONNECT_TIMEOUT", step.get("env", {}))
+                        self.assertNotIn("timeout-minutes", step)
+
     def test_shared_gate_runs_after_migrations_and_manual_snapshot_is_optional(self):
         verify = workflow("db-verify.yml")
         migrate = workflow("db-migrate.yml")
@@ -231,10 +322,12 @@ class WorkflowGateTests(unittest.TestCase):
             # Execute the actual workflow shell with a failing psql, not a text-only assertion.
             with tempfile.TemporaryDirectory(prefix="salem-gate-shell-", dir="/tmp") as tmp:
                 psql = Path(tmp) / "psql"
-                psql.write_text("#!/bin/sh\nexit 37\n")
+                psql.write_text('#!/bin/sh\n[ "$PGCONNECT_TIMEOUT" = "10" ] || exit 38\nexit 37\n')
                 psql.chmod(0o700)
                 env = {"PATH": tmp + os.pathsep + os.defpath,
                        "SUPABASE_DB_URL": "synthetic-unused", "CHECK_SNAPSHOTS": "false"}
+                if "PGCONNECT_TIMEOUT" in gate.get("env", {}):
+                    env["PGCONNECT_TIMEOUT"] = gate["env"]["PGCONNECT_TIMEOUT"]
                 result = subprocess.run(["bash", "-c", gate["run"]], env=env,
                                         cwd=ROOT, capture_output=True, text=True)
                 self.assertEqual(result.returncode, 37, result.stderr)
