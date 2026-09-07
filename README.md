@@ -503,15 +503,75 @@ python3 scripts/supabase_import_exam.py sync \
 python3 scripts/check_supabase_sync_report.py /tmp/salem-sync-dry-run.json --mode safe-to-apply
 ```
 
-### Manual migrations and Edge Functions
+### Database migrations, verification, and Edge Functions
+
+`.github/workflows/db-migrate.yml` automatically applies added/modified SQL migration
+files in a push to `main`, in filename order. Its manual dispatch applies one named
+migration file for backfill/re-run. Migration selection is based on the push diff,
+not a migration-history ledger; migrations must remain re-run-safe. After apply,
+**the same job** runs `scripts/verify_db_deploy.sql`; a failed invariant fails the job.
+This read-only gate does not roll back migrations that have already committed.
+
+The shared gate uses a read-only transaction, a 15-second statement/idle timeout,
+and a 5-second lock timeout. Both live verification steps also set
+`PGCONNECT_TIMEOUT=10` for connection setup and `timeout-minutes: 2` for an overall
+step bound; these limits do not apply to the migration-application step. It requires the exact
+`public.replace_quiz_session_writes(uuid, uuid, jsonb, jsonb, jsonb) returns void`
+function, `public.auth_rate_limit`, all three named valid B-tree indexes on their expected
+public tables, and a validated `system_reviews.user_id` FK to `public.profiles.id`.
+Index checks require the migration-defined uniqueness, ordered key columns, sort/null
+ordering, and partial predicates: notably, the attempts index must be UNIQUE on
+`(quiz_session_id, question_id) WHERE quiz_session_id IS NOT NULL`. Predicate checks
+normalize catalog-deparser whitespace/parentheses, not arbitrary logically equivalent SQL.
+An existing same-named but wrong-definition index fails; re-running `CREATE INDEX
+IF NOT EXISTS` does not repair it.
+It does not invoke the write RPC or modify learner data.
+
+`.github/workflows/db-verify.yml` is a **manual, standalone** read-only check using
+the same SQL. Set its boolean `check_snapshots` input only when stored-sample
+validation is wanted (default: false). It checks at most the latest five stored
+snapshots, requires a nonempty sample, numeric version 2, and array-valued
+`choices` and `topicSlugs` (missing/null/wrong types fail). Only fixed labels and
+aggregate counts are logged, never learner timestamps or snapshot payloads.
+**Stored-sample checks do not prove current Edge Function invocation or deployment**;
+old samples can pass while current function code is wrong. Schema-only verification
+permits an empty snapshot table because DB migrations and Edge Function deployments
+are separate.
 
 Typical safe sequence for schema/function changes:
 
-1. Load ignored `.env` locally without printing secrets.
-2. Apply migrations with `psql "$SUPABASE_DB_URL"` or `npx supabase db query --db-url "$SUPABASE_DB_URL"`.
-3. Deploy changed functions with `npx supabase functions deploy <name> --project-ref "$PROJECT_REF"`.
-4. Verify expected validation/auth responses without logging credentials.
-5. Push frontend/static changes and watch the Vercel deployment.
+1. Merge migrations and wait for **Apply Supabase Migration** to finish, including
+   its schema gate; or manually dispatch it for an existing named migration.
+2. Deploy changed Edge Functions separately with
+   `npx supabase functions deploy <name> --project-ref "$PROJECT_REF"`.
+3. Verify expected validation/auth responses without logging credentials; perform
+   an authorized end-to-end function test separately when runtime proof is needed.
+4. Optionally dispatch **Verify DB Deploy State** with `check_snapshots: true`
+   after a known test submission. This is additional stored-data evidence only.
+5. Watch the frontend/static Vercel deployment independently.
+
+Authorized local read-only equivalent (load ignored credentials without printing):
+
+```bash
+PGCONNECT_TIMEOUT=10 psql "$SUPABASE_DB_URL" -X -v ON_ERROR_STOP=1 \
+  -v check_snapshots=false -f scripts/verify_db_deploy.sql
+# Set check_snapshots=true only when the optional stored sample is required.
+# The two-minute overall step bound is enforced by Actions, not this local command.
+```
+
+PR-safe regression tests use synthetic fixtures in a temporary private PostgreSQL
+cluster under `/tmp`, Unix socket only, with explicit socket/database/user for every
+client. They never load `.env` or use `SUPABASE_DB_URL` and stop/remove the cluster
+afterward. Install PostgreSQL **server** tools (not just libpq/psql), then run:
+
+```bash
+PG_BIN="$(pg_config --bindir)" python3 -m unittest discover \
+  -s tests -p test_db_deploy_verification.py -v
+```
+
+Tool discovery uses `PG_BIN`, `pg_config`, or `PATH`. Missing server tools skip locally
+but fail in CI (or with `DB_GATE_INTEGRATION=1`). **DB Verification Gate Tests**
+installs server tools and PyYAML on pull requests without production secrets.
 
 Do not print or commit:
 
